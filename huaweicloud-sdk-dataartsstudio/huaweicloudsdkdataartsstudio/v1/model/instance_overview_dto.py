@@ -61,7 +61,7 @@ class InstanceOverviewDTO:
     }
 
     def __init__(self, id=None, name=None, description=None, external_address=None, intranet_address=None, intranet_address_ipv6=None, public_zone_id=None, public_zone_name=None, private_zone_id=None, private_zone_name=None, enterprise_project_id=None, create_time=None, create_user=None, current_namespace_publish_api_num=None, all_namespace_publish_api_num=None, api_publishable_num=None, deletable=None, charge_status=None, order_id=None):
-        """InstanceOverviewDTO
+        r"""InstanceOverviewDTO
 
         The model defined in huaweicloud sdk
 
@@ -169,7 +169,7 @@ class InstanceOverviewDTO:
 
     @property
     def id(self):
-        """Gets the id of this InstanceOverviewDTO.
+        r"""Gets the id of this InstanceOverviewDTO.
 
         集群ID。
 
@@ -180,7 +180,7 @@ class InstanceOverviewDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this InstanceOverviewDTO.
+        r"""Sets the id of this InstanceOverviewDTO.
 
         集群ID。
 
@@ -191,7 +191,7 @@ class InstanceOverviewDTO:
 
     @property
     def name(self):
-        """Gets the name of this InstanceOverviewDTO.
+        r"""Gets the name of this InstanceOverviewDTO.
 
         集群名称。
 
@@ -202,7 +202,7 @@ class InstanceOverviewDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this InstanceOverviewDTO.
+        r"""Sets the name of this InstanceOverviewDTO.
 
         集群名称。
 
@@ -213,7 +213,7 @@ class InstanceOverviewDTO:
 
     @property
     def description(self):
-        """Gets the description of this InstanceOverviewDTO.
+        r"""Gets the description of this InstanceOverviewDTO.
 
         集群描述信息。
 
@@ -224,7 +224,7 @@ class InstanceOverviewDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this InstanceOverviewDTO.
+        r"""Sets the description of this InstanceOverviewDTO.
 
         集群描述信息。
 
@@ -235,7 +235,7 @@ class InstanceOverviewDTO:
 
     @property
     def external_address(self):
-        """Gets the external_address of this InstanceOverviewDTO.
+        r"""Gets the external_address of this InstanceOverviewDTO.
 
         公网IP地址。
 
@@ -246,7 +246,7 @@ class InstanceOverviewDTO:
 
     @external_address.setter
     def external_address(self, external_address):
-        """Sets the external_address of this InstanceOverviewDTO.
+        r"""Sets the external_address of this InstanceOverviewDTO.
 
         公网IP地址。
 
@@ -257,7 +257,7 @@ class InstanceOverviewDTO:
 
     @property
     def intranet_address(self):
-        """Gets the intranet_address of this InstanceOverviewDTO.
+        r"""Gets the intranet_address of this InstanceOverviewDTO.
 
         内网IPv4地址。
 
@@ -268,7 +268,7 @@ class InstanceOverviewDTO:
 
     @intranet_address.setter
     def intranet_address(self, intranet_address):
-        """Sets the intranet_address of this InstanceOverviewDTO.
+        r"""Sets the intranet_address of this InstanceOverviewDTO.
 
         内网IPv4地址。
 
@@ -279,7 +279,7 @@ class InstanceOverviewDTO:
 
     @property
     def intranet_address_ipv6(self):
-        """Gets the intranet_address_ipv6 of this InstanceOverviewDTO.
+        r"""Gets the intranet_address_ipv6 of this InstanceOverviewDTO.
 
         内网IPv6地址。
 
@@ -290,7 +290,7 @@ class InstanceOverviewDTO:
 
     @intranet_address_ipv6.setter
     def intranet_address_ipv6(self, intranet_address_ipv6):
-        """Sets the intranet_address_ipv6 of this InstanceOverviewDTO.
+        r"""Sets the intranet_address_ipv6 of this InstanceOverviewDTO.
 
         内网IPv6地址。
 
@@ -301,7 +301,7 @@ class InstanceOverviewDTO:
 
     @property
     def public_zone_id(self):
-        """Gets the public_zone_id of this InstanceOverviewDTO.
+        r"""Gets the public_zone_id of this InstanceOverviewDTO.
 
         公网域名ID。
 
@@ -312,7 +312,7 @@ class InstanceOverviewDTO:
 
     @public_zone_id.setter
     def public_zone_id(self, public_zone_id):
-        """Sets the public_zone_id of this InstanceOverviewDTO.
+        r"""Sets the public_zone_id of this InstanceOverviewDTO.
 
         公网域名ID。
 
@@ -323,7 +323,7 @@ class InstanceOverviewDTO:
 
     @property
     def public_zone_name(self):
-        """Gets the public_zone_name of this InstanceOverviewDTO.
+        r"""Gets the public_zone_name of this InstanceOverviewDTO.
 
         公网域名名称。
 
@@ -334,7 +334,7 @@ class InstanceOverviewDTO:
 
     @public_zone_name.setter
     def public_zone_name(self, public_zone_name):
-        """Sets the public_zone_name of this InstanceOverviewDTO.
+        r"""Sets the public_zone_name of this InstanceOverviewDTO.
 
         公网域名名称。
 
@@ -345,7 +345,7 @@ class InstanceOverviewDTO:
 
     @property
     def private_zone_id(self):
-        """Gets the private_zone_id of this InstanceOverviewDTO.
+        r"""Gets the private_zone_id of this InstanceOverviewDTO.
 
         内网域名ID。
 
@@ -356,7 +356,7 @@ class InstanceOverviewDTO:
 
     @private_zone_id.setter
     def private_zone_id(self, private_zone_id):
-        """Sets the private_zone_id of this InstanceOverviewDTO.
+        r"""Sets the private_zone_id of this InstanceOverviewDTO.
 
         内网域名ID。
 
@@ -367,7 +367,7 @@ class InstanceOverviewDTO:
 
     @property
     def private_zone_name(self):
-        """Gets the private_zone_name of this InstanceOverviewDTO.
+        r"""Gets the private_zone_name of this InstanceOverviewDTO.
 
         内网域名名称。
 
@@ -378,7 +378,7 @@ class InstanceOverviewDTO:
 
     @private_zone_name.setter
     def private_zone_name(self, private_zone_name):
-        """Sets the private_zone_name of this InstanceOverviewDTO.
+        r"""Sets the private_zone_name of this InstanceOverviewDTO.
 
         内网域名名称。
 
@@ -389,7 +389,7 @@ class InstanceOverviewDTO:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this InstanceOverviewDTO.
+        r"""Gets the enterprise_project_id of this InstanceOverviewDTO.
 
         企业项目ID。
 
@@ -400,7 +400,7 @@ class InstanceOverviewDTO:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this InstanceOverviewDTO.
+        r"""Sets the enterprise_project_id of this InstanceOverviewDTO.
 
         企业项目ID。
 
@@ -411,7 +411,7 @@ class InstanceOverviewDTO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this InstanceOverviewDTO.
+        r"""Gets the create_time of this InstanceOverviewDTO.
 
         创建时间。
 
@@ -422,7 +422,7 @@ class InstanceOverviewDTO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this InstanceOverviewDTO.
+        r"""Sets the create_time of this InstanceOverviewDTO.
 
         创建时间。
 
@@ -433,7 +433,7 @@ class InstanceOverviewDTO:
 
     @property
     def create_user(self):
-        """Gets the create_user of this InstanceOverviewDTO.
+        r"""Gets the create_user of this InstanceOverviewDTO.
 
         创建人。
 
@@ -444,7 +444,7 @@ class InstanceOverviewDTO:
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this InstanceOverviewDTO.
+        r"""Sets the create_user of this InstanceOverviewDTO.
 
         创建人。
 
@@ -455,7 +455,7 @@ class InstanceOverviewDTO:
 
     @property
     def current_namespace_publish_api_num(self):
-        """Gets the current_namespace_publish_api_num of this InstanceOverviewDTO.
+        r"""Gets the current_namespace_publish_api_num of this InstanceOverviewDTO.
 
         当前工作空间已发布的API数量。
 
@@ -466,7 +466,7 @@ class InstanceOverviewDTO:
 
     @current_namespace_publish_api_num.setter
     def current_namespace_publish_api_num(self, current_namespace_publish_api_num):
-        """Sets the current_namespace_publish_api_num of this InstanceOverviewDTO.
+        r"""Sets the current_namespace_publish_api_num of this InstanceOverviewDTO.
 
         当前工作空间已发布的API数量。
 
@@ -477,7 +477,7 @@ class InstanceOverviewDTO:
 
     @property
     def all_namespace_publish_api_num(self):
-        """Gets the all_namespace_publish_api_num of this InstanceOverviewDTO.
+        r"""Gets the all_namespace_publish_api_num of this InstanceOverviewDTO.
 
         所有工作空间已发布的API数量。
 
@@ -488,7 +488,7 @@ class InstanceOverviewDTO:
 
     @all_namespace_publish_api_num.setter
     def all_namespace_publish_api_num(self, all_namespace_publish_api_num):
-        """Sets the all_namespace_publish_api_num of this InstanceOverviewDTO.
+        r"""Sets the all_namespace_publish_api_num of this InstanceOverviewDTO.
 
         所有工作空间已发布的API数量。
 
@@ -499,7 +499,7 @@ class InstanceOverviewDTO:
 
     @property
     def api_publishable_num(self):
-        """Gets the api_publishable_num of this InstanceOverviewDTO.
+        r"""Gets the api_publishable_num of this InstanceOverviewDTO.
 
         集群API总配额。
 
@@ -510,7 +510,7 @@ class InstanceOverviewDTO:
 
     @api_publishable_num.setter
     def api_publishable_num(self, api_publishable_num):
-        """Sets the api_publishable_num of this InstanceOverviewDTO.
+        r"""Sets the api_publishable_num of this InstanceOverviewDTO.
 
         集群API总配额。
 
@@ -521,7 +521,7 @@ class InstanceOverviewDTO:
 
     @property
     def deletable(self):
-        """Gets the deletable of this InstanceOverviewDTO.
+        r"""Gets the deletable of this InstanceOverviewDTO.
 
         集群是否可以删除。
 
@@ -532,7 +532,7 @@ class InstanceOverviewDTO:
 
     @deletable.setter
     def deletable(self, deletable):
-        """Sets the deletable of this InstanceOverviewDTO.
+        r"""Sets the deletable of this InstanceOverviewDTO.
 
         集群是否可以删除。
 
@@ -543,7 +543,7 @@ class InstanceOverviewDTO:
 
     @property
     def charge_status(self):
-        """Gets the charge_status of this InstanceOverviewDTO.
+        r"""Gets the charge_status of this InstanceOverviewDTO.
 
         集群计费状态，NO_CHARGE：未计费、CHARGED：已计费，GRACE：宽限期、RETENTION：保留期。
 
@@ -554,7 +554,7 @@ class InstanceOverviewDTO:
 
     @charge_status.setter
     def charge_status(self, charge_status):
-        """Sets the charge_status of this InstanceOverviewDTO.
+        r"""Sets the charge_status of this InstanceOverviewDTO.
 
         集群计费状态，NO_CHARGE：未计费、CHARGED：已计费，GRACE：宽限期、RETENTION：保留期。
 
@@ -565,7 +565,7 @@ class InstanceOverviewDTO:
 
     @property
     def order_id(self):
-        """Gets the order_id of this InstanceOverviewDTO.
+        r"""Gets the order_id of this InstanceOverviewDTO.
 
         订单ID。
 
@@ -576,7 +576,7 @@ class InstanceOverviewDTO:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this InstanceOverviewDTO.
+        r"""Sets the order_id of this InstanceOverviewDTO.
 
         订单ID。
 

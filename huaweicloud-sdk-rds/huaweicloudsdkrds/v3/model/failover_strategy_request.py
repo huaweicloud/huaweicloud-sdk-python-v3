@@ -25,7 +25,7 @@ class FailoverStrategyRequest:
     }
 
     def __init__(self, repair_strategy=None):
-        """FailoverStrategyRequest
+        r"""FailoverStrategyRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class FailoverStrategyRequest:
 
     @property
     def repair_strategy(self):
-        """Gets the repair_strategy of this FailoverStrategyRequest.
+        r"""Gets the repair_strategy of this FailoverStrategyRequest.
 
         可用性策略，可选择如下方式： - reliability：可靠性优先，数据库应该尽可能保障数据的可靠性，即数据丢失量最少。对于数据一致性要求较高的业务，建议选择该策略。 - availability：可用性优先，数据库应该可快恢复服务，即可用时间最长。对于数据库在线时间要求较高的业务，建议选择该策略。
 
@@ -53,7 +53,7 @@ class FailoverStrategyRequest:
 
     @repair_strategy.setter
     def repair_strategy(self, repair_strategy):
-        """Sets the repair_strategy of this FailoverStrategyRequest.
+        r"""Sets the repair_strategy of this FailoverStrategyRequest.
 
         可用性策略，可选择如下方式： - reliability：可靠性优先，数据库应该尽可能保障数据的可靠性，即数据丢失量最少。对于数据一致性要求较高的业务，建议选择该策略。 - availability：可用性优先，数据库应该可快恢复服务，即可用时间最长。对于数据库在线时间要求较高的业务，建议选择该策略。
 

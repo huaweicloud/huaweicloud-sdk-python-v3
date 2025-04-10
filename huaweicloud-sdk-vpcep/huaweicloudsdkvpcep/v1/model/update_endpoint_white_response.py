@@ -64,7 +64,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
     }
 
     def __init__(self, id=None, service_type=None, status=None, ip=None, active_status=None, endpoint_service_name=None, marker_id=None, endpoint_service_id=None, enable_dns=None, dns_names=None, subnet_id=None, vpc_id=None, created_at=None, updated_at=None, project_id=None, tags=None, whitelist=None, enable_whitelist=None, policy_statement=None, policy_document=None):
-        """UpdateEndpointWhiteResponse
+        r"""UpdateEndpointWhiteResponse
 
         The model defined in huaweicloud sdk
 
@@ -177,7 +177,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateEndpointWhiteResponse.
+        r"""Gets the id of this UpdateEndpointWhiteResponse.
 
         终端节点的ID，唯一标识。
 
@@ -188,7 +188,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateEndpointWhiteResponse.
+        r"""Sets the id of this UpdateEndpointWhiteResponse.
 
         终端节点的ID，唯一标识。
 
@@ -199,7 +199,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
 
     @property
     def service_type(self):
-        """Gets the service_type of this UpdateEndpointWhiteResponse.
+        r"""Gets the service_type of this UpdateEndpointWhiteResponse.
 
         终端节点连接的终端节点服务类型。  - gateway：由运维人员配置，用户无需创建，可直接使用。  - interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过查询公共终端节点服务列表， 查看由运维人员配置的所有用户可见且可连接的终端节点服务， 并通过创建终端节点服务创建Interface类型的终端节点服务。
 
@@ -210,7 +210,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this UpdateEndpointWhiteResponse.
+        r"""Sets the service_type of this UpdateEndpointWhiteResponse.
 
         终端节点连接的终端节点服务类型。  - gateway：由运维人员配置，用户无需创建，可直接使用。  - interface：包括运维人员配置的云服务和用户自己创建的私有服务。 其中，运维人员配置的云服务无需创建，用户可直接使用。 您可以通过查询公共终端节点服务列表， 查看由运维人员配置的所有用户可见且可连接的终端节点服务， 并通过创建终端节点服务创建Interface类型的终端节点服务。
 
@@ -221,7 +221,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateEndpointWhiteResponse.
+        r"""Gets the status of this UpdateEndpointWhiteResponse.
 
         终端节点的连接状态。  - pendingAcceptance：待接受  - creating：创建中  - accepted：已接受  - rejected：已拒绝  - failed：失败  - deleting：删除中
 
@@ -232,7 +232,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateEndpointWhiteResponse.
+        r"""Sets the status of this UpdateEndpointWhiteResponse.
 
         终端节点的连接状态。  - pendingAcceptance：待接受  - creating：创建中  - accepted：已接受  - rejected：已拒绝  - failed：失败  - deleting：删除中
 
@@ -243,7 +243,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
 
     @property
     def ip(self):
-        """Gets the ip of this UpdateEndpointWhiteResponse.
+        r"""Gets the ip of this UpdateEndpointWhiteResponse.
 
         访问所连接的终端节点服务的IP。 仅当同时满足如下条件时，返回该参数：  - 当查询连接interface类型终端节点服务的终端节点时。  - 终端节点服务启用“连接审批”功能，且已经“接受”连接审批。 “status”可以是“accepted”或者“rejected（仅支持“接受”连接审批后再“拒绝”的情况）”。
 
@@ -254,7 +254,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this UpdateEndpointWhiteResponse.
+        r"""Sets the ip of this UpdateEndpointWhiteResponse.
 
         访问所连接的终端节点服务的IP。 仅当同时满足如下条件时，返回该参数：  - 当查询连接interface类型终端节点服务的终端节点时。  - 终端节点服务启用“连接审批”功能，且已经“接受”连接审批。 “status”可以是“accepted”或者“rejected（仅支持“接受”连接审批后再“拒绝”的情况）”。
 
@@ -265,7 +265,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
 
     @property
     def active_status(self):
-        """Gets the active_status of this UpdateEndpointWhiteResponse.
+        r"""Gets the active_status of this UpdateEndpointWhiteResponse.
 
         账号状态。  - frozen：冻结  - active：解冻
 
@@ -276,7 +276,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
 
     @active_status.setter
     def active_status(self, active_status):
-        """Sets the active_status of this UpdateEndpointWhiteResponse.
+        r"""Sets the active_status of this UpdateEndpointWhiteResponse.
 
         账号状态。  - frozen：冻结  - active：解冻
 
@@ -287,7 +287,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
 
     @property
     def endpoint_service_name(self):
-        """Gets the endpoint_service_name of this UpdateEndpointWhiteResponse.
+        r"""Gets the endpoint_service_name of this UpdateEndpointWhiteResponse.
 
         终端节点服务的名称。
 
@@ -298,7 +298,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
 
     @endpoint_service_name.setter
     def endpoint_service_name(self, endpoint_service_name):
-        """Sets the endpoint_service_name of this UpdateEndpointWhiteResponse.
+        r"""Sets the endpoint_service_name of this UpdateEndpointWhiteResponse.
 
         终端节点服务的名称。
 
@@ -309,7 +309,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
 
     @property
     def marker_id(self):
-        """Gets the marker_id of this UpdateEndpointWhiteResponse.
+        r"""Gets the marker_id of this UpdateEndpointWhiteResponse.
 
         终端节点的报文标识。
 
@@ -320,7 +320,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
 
     @marker_id.setter
     def marker_id(self, marker_id):
-        """Sets the marker_id of this UpdateEndpointWhiteResponse.
+        r"""Sets the marker_id of this UpdateEndpointWhiteResponse.
 
         终端节点的报文标识。
 
@@ -331,7 +331,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
 
     @property
     def endpoint_service_id(self):
-        """Gets the endpoint_service_id of this UpdateEndpointWhiteResponse.
+        r"""Gets the endpoint_service_id of this UpdateEndpointWhiteResponse.
 
         终端节点服务的ID。
 
@@ -342,7 +342,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
 
     @endpoint_service_id.setter
     def endpoint_service_id(self, endpoint_service_id):
-        """Sets the endpoint_service_id of this UpdateEndpointWhiteResponse.
+        r"""Sets the endpoint_service_id of this UpdateEndpointWhiteResponse.
 
         终端节点服务的ID。
 
@@ -353,7 +353,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
 
     @property
     def enable_dns(self):
-        """Gets the enable_dns of this UpdateEndpointWhiteResponse.
+        r"""Gets the enable_dns of this UpdateEndpointWhiteResponse.
 
         是否创建域名。  - true：创建域名  - false：不创建域名 说明 当创建gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
 
@@ -364,7 +364,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
 
     @enable_dns.setter
     def enable_dns(self, enable_dns):
-        """Sets the enable_dns of this UpdateEndpointWhiteResponse.
+        r"""Sets the enable_dns of this UpdateEndpointWhiteResponse.
 
         是否创建域名。  - true：创建域名  - false：不创建域名 说明 当创建gateway类型终端节点服务的终端节点时， “enable_dns”设置为true或者false，均不创建域名。
 
@@ -375,7 +375,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
 
     @property
     def dns_names(self):
-        """Gets the dns_names of this UpdateEndpointWhiteResponse.
+        r"""Gets the dns_names of this UpdateEndpointWhiteResponse.
 
         访问所连接的终端节点服务的域名。 当“enable_dns”为true时，该参数可见。
 
@@ -386,7 +386,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
 
     @dns_names.setter
     def dns_names(self, dns_names):
-        """Sets the dns_names of this UpdateEndpointWhiteResponse.
+        r"""Sets the dns_names of this UpdateEndpointWhiteResponse.
 
         访问所连接的终端节点服务的域名。 当“enable_dns”为true时，该参数可见。
 
@@ -397,7 +397,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this UpdateEndpointWhiteResponse.
+        r"""Gets the subnet_id of this UpdateEndpointWhiteResponse.
 
         vpc_id对应VPC下已创建的网络（network）的ID，UUID格式。
 
@@ -408,7 +408,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this UpdateEndpointWhiteResponse.
+        r"""Sets the subnet_id of this UpdateEndpointWhiteResponse.
 
         vpc_id对应VPC下已创建的网络（network）的ID，UUID格式。
 
@@ -419,7 +419,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this UpdateEndpointWhiteResponse.
+        r"""Gets the vpc_id of this UpdateEndpointWhiteResponse.
 
         终端节点所在的VPC的ID。
 
@@ -430,7 +430,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this UpdateEndpointWhiteResponse.
+        r"""Sets the vpc_id of this UpdateEndpointWhiteResponse.
 
         终端节点所在的VPC的ID。
 
@@ -441,7 +441,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this UpdateEndpointWhiteResponse.
+        r"""Gets the created_at of this UpdateEndpointWhiteResponse.
 
         终端节点的创建时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
@@ -452,7 +452,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this UpdateEndpointWhiteResponse.
+        r"""Sets the created_at of this UpdateEndpointWhiteResponse.
 
         终端节点的创建时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
@@ -463,7 +463,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this UpdateEndpointWhiteResponse.
+        r"""Gets the updated_at of this UpdateEndpointWhiteResponse.
 
         终端节点的更新时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
@@ -474,7 +474,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this UpdateEndpointWhiteResponse.
+        r"""Sets the updated_at of this UpdateEndpointWhiteResponse.
 
         终端节点的更新时间。 采用UTC时间格式，格式为：YYYY-MM-DDTHH:MM:SSZ
 
@@ -485,7 +485,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this UpdateEndpointWhiteResponse.
+        r"""Gets the project_id of this UpdateEndpointWhiteResponse.
 
         项目ID，获取方法请参见获取项目ID。
 
@@ -496,7 +496,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UpdateEndpointWhiteResponse.
+        r"""Sets the project_id of this UpdateEndpointWhiteResponse.
 
         项目ID，获取方法请参见获取项目ID。
 
@@ -507,7 +507,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this UpdateEndpointWhiteResponse.
+        r"""Gets the tags of this UpdateEndpointWhiteResponse.
 
         标签列表，没有标签默认为空数组。
 
@@ -518,7 +518,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this UpdateEndpointWhiteResponse.
+        r"""Sets the tags of this UpdateEndpointWhiteResponse.
 
         标签列表，没有标签默认为空数组。
 
@@ -529,7 +529,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
 
     @property
     def whitelist(self):
-        """Gets the whitelist of this UpdateEndpointWhiteResponse.
+        r"""Gets the whitelist of this UpdateEndpointWhiteResponse.
 
         控制访问终端节点的白名单。 若未创建，则返回空列表。 创建连接Interface类型终端节点服务的终端节点时，显示此参数。
 
@@ -540,7 +540,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
 
     @whitelist.setter
     def whitelist(self, whitelist):
-        """Sets the whitelist of this UpdateEndpointWhiteResponse.
+        r"""Sets the whitelist of this UpdateEndpointWhiteResponse.
 
         控制访问终端节点的白名单。 若未创建，则返回空列表。 创建连接Interface类型终端节点服务的终端节点时，显示此参数。
 
@@ -551,7 +551,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
 
     @property
     def enable_whitelist(self):
-        """Gets the enable_whitelist of this UpdateEndpointWhiteResponse.
+        r"""Gets the enable_whitelist of this UpdateEndpointWhiteResponse.
 
         是否开启网络ACL隔离。  - true：开启网络ACL隔离  - false：不开启网络ACL隔离 若未指定，则返回false。 创建连接Interface类型终端节点服务的终端节点时，显示此参数。
 
@@ -562,7 +562,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
 
     @enable_whitelist.setter
     def enable_whitelist(self, enable_whitelist):
-        """Sets the enable_whitelist of this UpdateEndpointWhiteResponse.
+        r"""Sets the enable_whitelist of this UpdateEndpointWhiteResponse.
 
         是否开启网络ACL隔离。  - true：开启网络ACL隔离  - false：不开启网络ACL隔离 若未指定，则返回false。 创建连接Interface类型终端节点服务的终端节点时，显示此参数。
 
@@ -573,7 +573,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
 
     @property
     def policy_statement(self):
-        """Gets the policy_statement of this UpdateEndpointWhiteResponse.
+        r"""Gets the policy_statement of this UpdateEndpointWhiteResponse.
 
         Gateway类型终端节点策略信息，仅限OBS、SFS的终端节点服务的enable_policy值为true时支持该参数。
 
@@ -584,7 +584,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
 
     @policy_statement.setter
     def policy_statement(self, policy_statement):
-        """Sets the policy_statement of this UpdateEndpointWhiteResponse.
+        r"""Sets the policy_statement of this UpdateEndpointWhiteResponse.
 
         Gateway类型终端节点策略信息，仅限OBS、SFS的终端节点服务的enable_policy值为true时支持该参数。
 
@@ -595,7 +595,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
 
     @property
     def policy_document(self):
-        """Gets the policy_document of this UpdateEndpointWhiteResponse.
+        r"""Gets the policy_document of this UpdateEndpointWhiteResponse.
 
         终端节点策略信息，仅当终端节点服务的enable_policy值为true时支持该参数，默认值为完全访问权限。（OBS、SFS的终端节点服务暂不支持该参数）
 
@@ -606,7 +606,7 @@ class UpdateEndpointWhiteResponse(SdkResponse):
 
     @policy_document.setter
     def policy_document(self, policy_document):
-        """Sets the policy_document of this UpdateEndpointWhiteResponse.
+        r"""Sets the policy_document of this UpdateEndpointWhiteResponse.
 
         终端节点策略信息，仅当终端节点服务的enable_policy值为true时支持该参数，默认值为完全访问权限。（OBS、SFS的终端节点服务暂不支持该参数）
 

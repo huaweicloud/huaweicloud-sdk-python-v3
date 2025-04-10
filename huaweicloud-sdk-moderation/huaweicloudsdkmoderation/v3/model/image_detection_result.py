@@ -31,7 +31,7 @@ class ImageDetectionResult:
     }
 
     def __init__(self, suggestion=None, category=None, details=None, ocr_text=None):
-        """ImageDetectionResult
+        r"""ImageDetectionResult
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ImageDetectionResult:
 
     @property
     def suggestion(self):
-        """Gets the suggestion of this ImageDetectionResult.
+        r"""Gets the suggestion of this ImageDetectionResult.
 
         审核结果是否通过。  block：包含敏感信息，不通过  pass：不包含敏感信息，通过  review：需要人工复检
 
@@ -75,7 +75,7 @@ class ImageDetectionResult:
 
     @suggestion.setter
     def suggestion(self, suggestion):
-        """Sets the suggestion of this ImageDetectionResult.
+        r"""Sets the suggestion of this ImageDetectionResult.
 
         审核结果是否通过。  block：包含敏感信息，不通过  pass：不包含敏感信息，通过  review：需要人工复检
 
@@ -86,7 +86,7 @@ class ImageDetectionResult:
 
     @property
     def category(self):
-        """Gets the category of this ImageDetectionResult.
+        r"""Gets the category of this ImageDetectionResult.
 
         检测结果的一级标签。 支持category列表如下： terrorism: 暴恐 porn: 色情 image_text: 图文审核
 
@@ -97,7 +97,7 @@ class ImageDetectionResult:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ImageDetectionResult.
+        r"""Sets the category of this ImageDetectionResult.
 
         检测结果的一级标签。 支持category列表如下： terrorism: 暴恐 porn: 色情 image_text: 图文审核
 
@@ -108,7 +108,7 @@ class ImageDetectionResult:
 
     @property
     def details(self):
-        """Gets the details of this ImageDetectionResult.
+        r"""Gets the details of this ImageDetectionResult.
 
         检测详情
 
@@ -119,7 +119,7 @@ class ImageDetectionResult:
 
     @details.setter
     def details(self, details):
-        """Sets the details of this ImageDetectionResult.
+        r"""Sets the details of this ImageDetectionResult.
 
         检测详情
 
@@ -130,7 +130,7 @@ class ImageDetectionResult:
 
     @property
     def ocr_text(self):
-        """Gets the ocr_text of this ImageDetectionResult.
+        r"""Gets the ocr_text of this ImageDetectionResult.
 
         图文审核检测出的文本，只有在category参数配置image_text且检测出文本时展示该字段。
 
@@ -141,7 +141,7 @@ class ImageDetectionResult:
 
     @ocr_text.setter
     def ocr_text(self, ocr_text):
-        """Sets the ocr_text of this ImageDetectionResult.
+        r"""Sets the ocr_text of this ImageDetectionResult.
 
         图文审核检测出的文本，只有在category参数配置image_text且检测出文本时展示该字段。
 

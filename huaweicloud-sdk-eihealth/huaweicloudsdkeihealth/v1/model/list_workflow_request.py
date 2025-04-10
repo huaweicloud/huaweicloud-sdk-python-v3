@@ -29,7 +29,7 @@ class ListWorkflowRequest:
     }
 
     def __init__(self, eihealth_project_id=None, name=None, version=None):
-        """ListWorkflowRequest
+        r"""ListWorkflowRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListWorkflowRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this ListWorkflowRequest.
+        r"""Gets the eihealth_project_id of this ListWorkflowRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -67,7 +67,7 @@ class ListWorkflowRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this ListWorkflowRequest.
+        r"""Sets the eihealth_project_id of this ListWorkflowRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -78,7 +78,7 @@ class ListWorkflowRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListWorkflowRequest.
+        r"""Gets the name of this ListWorkflowRequest.
 
         流程名称
 
@@ -89,7 +89,7 @@ class ListWorkflowRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListWorkflowRequest.
+        r"""Sets the name of this ListWorkflowRequest.
 
         流程名称
 
@@ -100,7 +100,7 @@ class ListWorkflowRequest:
 
     @property
     def version(self):
-        """Gets the version of this ListWorkflowRequest.
+        r"""Gets the version of this ListWorkflowRequest.
 
         流程版本
 
@@ -111,7 +111,7 @@ class ListWorkflowRequest:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ListWorkflowRequest.
+        r"""Sets the version of this ListWorkflowRequest.
 
         流程版本
 

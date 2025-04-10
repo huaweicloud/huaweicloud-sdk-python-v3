@@ -35,7 +35,7 @@ class LoadBalancerStatusListener:
     }
 
     def __init__(self, name=None, provisioning_status=None, pools=None, l7policies=None, id=None, operating_status=None):
-        """LoadBalancerStatusListener
+        r"""LoadBalancerStatusListener
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class LoadBalancerStatusListener:
 
     @property
     def name(self):
-        """Gets the name of this LoadBalancerStatusListener.
+        r"""Gets the name of this LoadBalancerStatusListener.
 
         监听器的名称。
 
@@ -89,7 +89,7 @@ class LoadBalancerStatusListener:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this LoadBalancerStatusListener.
+        r"""Sets the name of this LoadBalancerStatusListener.
 
         监听器的名称。
 
@@ -100,7 +100,7 @@ class LoadBalancerStatusListener:
 
     @property
     def provisioning_status(self):
-        """Gets the provisioning_status of this LoadBalancerStatusListener.
+        r"""Gets the provisioning_status of this LoadBalancerStatusListener.
 
         监听器的配置状态。  取值： - ACTIVE：使用中。
 
@@ -111,7 +111,7 @@ class LoadBalancerStatusListener:
 
     @provisioning_status.setter
     def provisioning_status(self, provisioning_status):
-        """Sets the provisioning_status of this LoadBalancerStatusListener.
+        r"""Sets the provisioning_status of this LoadBalancerStatusListener.
 
         监听器的配置状态。  取值： - ACTIVE：使用中。
 
@@ -122,7 +122,7 @@ class LoadBalancerStatusListener:
 
     @property
     def pools(self):
-        """Gets the pools of this LoadBalancerStatusListener.
+        r"""Gets the pools of this LoadBalancerStatusListener.
 
         监听器下的后端主机组操作状态。
 
@@ -133,7 +133,7 @@ class LoadBalancerStatusListener:
 
     @pools.setter
     def pools(self, pools):
-        """Sets the pools of this LoadBalancerStatusListener.
+        r"""Sets the pools of this LoadBalancerStatusListener.
 
         监听器下的后端主机组操作状态。
 
@@ -144,7 +144,7 @@ class LoadBalancerStatusListener:
 
     @property
     def l7policies(self):
-        """Gets the l7policies of this LoadBalancerStatusListener.
+        r"""Gets the l7policies of this LoadBalancerStatusListener.
 
         监听器下的7层转发策略操作状态。
 
@@ -155,7 +155,7 @@ class LoadBalancerStatusListener:
 
     @l7policies.setter
     def l7policies(self, l7policies):
-        """Sets the l7policies of this LoadBalancerStatusListener.
+        r"""Sets the l7policies of this LoadBalancerStatusListener.
 
         监听器下的7层转发策略操作状态。
 
@@ -166,7 +166,7 @@ class LoadBalancerStatusListener:
 
     @property
     def id(self):
-        """Gets the id of this LoadBalancerStatusListener.
+        r"""Gets the id of this LoadBalancerStatusListener.
 
         监听器ID。
 
@@ -177,7 +177,7 @@ class LoadBalancerStatusListener:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this LoadBalancerStatusListener.
+        r"""Sets the id of this LoadBalancerStatusListener.
 
         监听器ID。
 
@@ -188,7 +188,7 @@ class LoadBalancerStatusListener:
 
     @property
     def operating_status(self):
-        """Gets the operating_status of this LoadBalancerStatusListener.
+        r"""Gets the operating_status of this LoadBalancerStatusListener.
 
         监听器的操作状态。  取值： - ONLINE：创建时默认状态，表示监听器正常运行。 - DEGRADED：该监听器下存在l7policy或l7rule的Provisioning_status=ERROR时返回这个状态。 或者状态树该监听器下存在member的operating_status=OFFLINE。 - DISABLED：负载均衡器或监听器的admin_state_up=false。  说明： DEGRADED和DISABLED状态仅在当前接口返回，查询监听器详情等其他接口返回字段operating_status不存在这两个状态值。
 
@@ -199,7 +199,7 @@ class LoadBalancerStatusListener:
 
     @operating_status.setter
     def operating_status(self, operating_status):
-        """Sets the operating_status of this LoadBalancerStatusListener.
+        r"""Sets the operating_status of this LoadBalancerStatusListener.
 
         监听器的操作状态。  取值： - ONLINE：创建时默认状态，表示监听器正常运行。 - DEGRADED：该监听器下存在l7policy或l7rule的Provisioning_status=ERROR时返回这个状态。 或者状态树该监听器下存在member的operating_status=OFFLINE。 - DISABLED：负载均衡器或监听器的admin_state_up=false。  说明： DEGRADED和DISABLED状态仅在当前接口返回，查询监听器详情等其他接口返回字段operating_status不存在这两个状态值。
 

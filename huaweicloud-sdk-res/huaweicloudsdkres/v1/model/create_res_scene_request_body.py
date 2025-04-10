@@ -37,7 +37,7 @@ class CreateResSceneRequestBody:
     }
 
     def __init__(self, category=None, datasource_id=None, ds_config=None, scene_name=None, specs_config=None, type=None, service_type=None):
-        """CreateResSceneRequestBody
+        r"""CreateResSceneRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class CreateResSceneRequestBody:
 
     @property
     def category(self):
-        """Gets the category of this CreateResSceneRequestBody.
+        r"""Gets the category of this CreateResSceneRequestBody.
 
         场景类型： - customize，自定义推荐
 
@@ -89,7 +89,7 @@ class CreateResSceneRequestBody:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this CreateResSceneRequestBody.
+        r"""Sets the category of this CreateResSceneRequestBody.
 
         场景类型： - customize，自定义推荐
 
@@ -100,7 +100,7 @@ class CreateResSceneRequestBody:
 
     @property
     def datasource_id(self):
-        """Gets the datasource_id of this CreateResSceneRequestBody.
+        r"""Gets the datasource_id of this CreateResSceneRequestBody.
 
         数据源id。
 
@@ -111,7 +111,7 @@ class CreateResSceneRequestBody:
 
     @datasource_id.setter
     def datasource_id(self, datasource_id):
-        """Sets the datasource_id of this CreateResSceneRequestBody.
+        r"""Sets the datasource_id of this CreateResSceneRequestBody.
 
         数据源id。
 
@@ -122,7 +122,7 @@ class CreateResSceneRequestBody:
 
     @property
     def ds_config(self):
-        """Gets the ds_config of this CreateResSceneRequestBody.
+        r"""Gets the ds_config of this CreateResSceneRequestBody.
 
         :return: The ds_config of this CreateResSceneRequestBody.
         :rtype: :class:`huaweicloudsdkres.v1.DsConfig`
@@ -131,7 +131,7 @@ class CreateResSceneRequestBody:
 
     @ds_config.setter
     def ds_config(self, ds_config):
-        """Sets the ds_config of this CreateResSceneRequestBody.
+        r"""Sets the ds_config of this CreateResSceneRequestBody.
 
         :param ds_config: The ds_config of this CreateResSceneRequestBody.
         :type ds_config: :class:`huaweicloudsdkres.v1.DsConfig`
@@ -140,7 +140,7 @@ class CreateResSceneRequestBody:
 
     @property
     def scene_name(self):
-        """Gets the scene_name of this CreateResSceneRequestBody.
+        r"""Gets the scene_name of this CreateResSceneRequestBody.
 
         场景名称，1-64位的字母、数字、下划线、中划线组合。
 
@@ -151,7 +151,7 @@ class CreateResSceneRequestBody:
 
     @scene_name.setter
     def scene_name(self, scene_name):
-        """Sets the scene_name of this CreateResSceneRequestBody.
+        r"""Sets the scene_name of this CreateResSceneRequestBody.
 
         场景名称，1-64位的字母、数字、下划线、中划线组合。
 
@@ -162,7 +162,7 @@ class CreateResSceneRequestBody:
 
     @property
     def specs_config(self):
-        """Gets the specs_config of this CreateResSceneRequestBody.
+        r"""Gets the specs_config of this CreateResSceneRequestBody.
 
         :return: The specs_config of this CreateResSceneRequestBody.
         :rtype: :class:`huaweicloudsdkres.v1.SpecsConfig`
@@ -171,7 +171,7 @@ class CreateResSceneRequestBody:
 
     @specs_config.setter
     def specs_config(self, specs_config):
-        """Sets the specs_config of this CreateResSceneRequestBody.
+        r"""Sets the specs_config of this CreateResSceneRequestBody.
 
         :param specs_config: The specs_config of this CreateResSceneRequestBody.
         :type specs_config: :class:`huaweicloudsdkres.v1.SpecsConfig`
@@ -180,7 +180,7 @@ class CreateResSceneRequestBody:
 
     @property
     def type(self):
-        """Gets the type of this CreateResSceneRequestBody.
+        r"""Gets the type of this CreateResSceneRequestBody.
 
         场景类型： - UI，基于用户推荐物品 - UU，基于用户推荐用户 - II，基于物品推荐物品 - IU，基于物品推荐用户
 
@@ -191,7 +191,7 @@ class CreateResSceneRequestBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateResSceneRequestBody.
+        r"""Sets the type of this CreateResSceneRequestBody.
 
         场景类型： - UI，基于用户推荐物品 - UU，基于用户推荐用户 - II，基于物品推荐物品 - IU，基于物品推荐用户
 
@@ -202,7 +202,7 @@ class CreateResSceneRequestBody:
 
     @property
     def service_type(self):
-        """Gets the service_type of this CreateResSceneRequestBody.
+        r"""Gets the service_type of this CreateResSceneRequestBody.
 
         服务类型： - rank，排序服务 - rec，推荐服务
 
@@ -213,7 +213,7 @@ class CreateResSceneRequestBody:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this CreateResSceneRequestBody.
+        r"""Sets the service_type of this CreateResSceneRequestBody.
 
         服务类型： - rank，排序服务 - rec，推荐服务
 

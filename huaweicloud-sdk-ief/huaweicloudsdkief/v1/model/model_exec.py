@@ -25,7 +25,7 @@ class ModelExec:
     }
 
     def __init__(self, command=None):
-        """ModelExec
+        r"""ModelExec
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ModelExec:
 
     @property
     def command(self):
-        """Gets the command of this ModelExec.
+        r"""Gets the command of this ModelExec.
 
         探针执行命令，最大长度10240个字符
 
@@ -53,7 +53,7 @@ class ModelExec:
 
     @command.setter
     def command(self, command):
-        """Sets the command of this ModelExec.
+        r"""Sets the command of this ModelExec.
 
         探针执行命令，最大长度10240个字符
 

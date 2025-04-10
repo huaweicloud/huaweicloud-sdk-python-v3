@@ -27,7 +27,7 @@ class KeystoneCreateUserTokenByPasswordRequest:
     }
 
     def __init__(self, nocatalog=None, body=None):
-        """KeystoneCreateUserTokenByPasswordRequest
+        r"""KeystoneCreateUserTokenByPasswordRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class KeystoneCreateUserTokenByPasswordRequest:
 
     @property
     def nocatalog(self):
-        """Gets the nocatalog of this KeystoneCreateUserTokenByPasswordRequest.
+        r"""Gets the nocatalog of this KeystoneCreateUserTokenByPasswordRequest.
 
         如果设置该参数，返回的响应体中将不显示catalog信息。任何非空字符串都将解释为true，并使该字段生效。
 
@@ -61,7 +61,7 @@ class KeystoneCreateUserTokenByPasswordRequest:
 
     @nocatalog.setter
     def nocatalog(self, nocatalog):
-        """Sets the nocatalog of this KeystoneCreateUserTokenByPasswordRequest.
+        r"""Sets the nocatalog of this KeystoneCreateUserTokenByPasswordRequest.
 
         如果设置该参数，返回的响应体中将不显示catalog信息。任何非空字符串都将解释为true，并使该字段生效。
 
@@ -72,7 +72,7 @@ class KeystoneCreateUserTokenByPasswordRequest:
 
     @property
     def body(self):
-        """Gets the body of this KeystoneCreateUserTokenByPasswordRequest.
+        r"""Gets the body of this KeystoneCreateUserTokenByPasswordRequest.
 
         :return: The body of this KeystoneCreateUserTokenByPasswordRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateUserTokenByPasswordRequestBody`
@@ -81,7 +81,7 @@ class KeystoneCreateUserTokenByPasswordRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this KeystoneCreateUserTokenByPasswordRequest.
+        r"""Sets the body of this KeystoneCreateUserTokenByPasswordRequest.
 
         :param body: The body of this KeystoneCreateUserTokenByPasswordRequest.
         :type body: :class:`huaweicloudsdkiam.v3.KeystoneCreateUserTokenByPasswordRequestBody`

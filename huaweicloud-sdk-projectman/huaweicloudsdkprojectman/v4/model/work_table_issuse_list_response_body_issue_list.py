@@ -79,7 +79,7 @@ class WorkTableIssuseListResponseBodyIssueList:
     }
 
     def __init__(self, id=None, subject=None, parent_issue_id=None, parent_issue=None, project=None, release_dev=None, find_release_dev=None, done_ratio=None, expected_work_hours=None, actual_work_hours=None, tracker=None, order=None, severity=None, priority=None, domain=None, position=None, module=None, assigned_to=None, author=None, developer=None, closeder=None, status=None, deleted=None, is_watcher=None, closed_flag=None, created_on=None, updated_on=None, due_date=None):
-        """WorkTableIssuseListResponseBodyIssueList
+        r"""WorkTableIssuseListResponseBodyIssueList
 
         The model defined in huaweicloud sdk
 
@@ -232,7 +232,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @property
     def id(self):
-        """Gets the id of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Gets the id of this WorkTableIssuseListResponseBodyIssueList.
 
         工作项id
 
@@ -243,7 +243,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Sets the id of this WorkTableIssuseListResponseBodyIssueList.
 
         工作项id
 
@@ -254,7 +254,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @property
     def subject(self):
-        """Gets the subject of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Gets the subject of this WorkTableIssuseListResponseBodyIssueList.
 
         工作项标题
 
@@ -265,7 +265,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @subject.setter
     def subject(self, subject):
-        """Sets the subject of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Sets the subject of this WorkTableIssuseListResponseBodyIssueList.
 
         工作项标题
 
@@ -276,7 +276,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @property
     def parent_issue_id(self):
-        """Gets the parent_issue_id of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Gets the parent_issue_id of this WorkTableIssuseListResponseBodyIssueList.
 
         父工作项id
 
@@ -287,7 +287,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @parent_issue_id.setter
     def parent_issue_id(self, parent_issue_id):
-        """Sets the parent_issue_id of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Sets the parent_issue_id of this WorkTableIssuseListResponseBodyIssueList.
 
         父工作项id
 
@@ -298,7 +298,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @property
     def parent_issue(self):
-        """Gets the parent_issue of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Gets the parent_issue of this WorkTableIssuseListResponseBodyIssueList.
 
         :return: The parent_issue of this WorkTableIssuseListResponseBodyIssueList.
         :rtype: :class:`huaweicloudsdkprojectman.v4.WorkTableIssuseListResponseBodyParentIssue`
@@ -307,7 +307,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @parent_issue.setter
     def parent_issue(self, parent_issue):
-        """Sets the parent_issue of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Sets the parent_issue of this WorkTableIssuseListResponseBodyIssueList.
 
         :param parent_issue: The parent_issue of this WorkTableIssuseListResponseBodyIssueList.
         :type parent_issue: :class:`huaweicloudsdkprojectman.v4.WorkTableIssuseListResponseBodyParentIssue`
@@ -316,7 +316,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @property
     def project(self):
-        """Gets the project of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Gets the project of this WorkTableIssuseListResponseBodyIssueList.
 
         :return: The project of this WorkTableIssuseListResponseBodyIssueList.
         :rtype: :class:`huaweicloudsdkprojectman.v4.WorkTableIssuseListResponseBodyProject`
@@ -325,7 +325,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @project.setter
     def project(self, project):
-        """Sets the project of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Sets the project of this WorkTableIssuseListResponseBodyIssueList.
 
         :param project: The project of this WorkTableIssuseListResponseBodyIssueList.
         :type project: :class:`huaweicloudsdkprojectman.v4.WorkTableIssuseListResponseBodyProject`
@@ -334,7 +334,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @property
     def release_dev(self):
-        """Gets the release_dev of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Gets the release_dev of this WorkTableIssuseListResponseBodyIssueList.
 
         发布版本
 
@@ -345,7 +345,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @release_dev.setter
     def release_dev(self, release_dev):
-        """Sets the release_dev of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Sets the release_dev of this WorkTableIssuseListResponseBodyIssueList.
 
         发布版本
 
@@ -356,7 +356,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @property
     def find_release_dev(self):
-        """Gets the find_release_dev of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Gets the find_release_dev of this WorkTableIssuseListResponseBodyIssueList.
 
         发现发布版本
 
@@ -367,7 +367,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @find_release_dev.setter
     def find_release_dev(self, find_release_dev):
-        """Sets the find_release_dev of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Sets the find_release_dev of this WorkTableIssuseListResponseBodyIssueList.
 
         发现发布版本
 
@@ -378,7 +378,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @property
     def done_ratio(self):
-        """Gets the done_ratio of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Gets the done_ratio of this WorkTableIssuseListResponseBodyIssueList.
 
         工作项完成度
 
@@ -389,7 +389,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @done_ratio.setter
     def done_ratio(self, done_ratio):
-        """Sets the done_ratio of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Sets the done_ratio of this WorkTableIssuseListResponseBodyIssueList.
 
         工作项完成度
 
@@ -400,7 +400,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @property
     def expected_work_hours(self):
-        """Gets the expected_work_hours of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Gets the expected_work_hours of this WorkTableIssuseListResponseBodyIssueList.
 
         预计工时
 
@@ -411,7 +411,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @expected_work_hours.setter
     def expected_work_hours(self, expected_work_hours):
-        """Sets the expected_work_hours of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Sets the expected_work_hours of this WorkTableIssuseListResponseBodyIssueList.
 
         预计工时
 
@@ -422,7 +422,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @property
     def actual_work_hours(self):
-        """Gets the actual_work_hours of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Gets the actual_work_hours of this WorkTableIssuseListResponseBodyIssueList.
 
         实际工时
 
@@ -433,7 +433,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @actual_work_hours.setter
     def actual_work_hours(self, actual_work_hours):
-        """Sets the actual_work_hours of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Sets the actual_work_hours of this WorkTableIssuseListResponseBodyIssueList.
 
         实际工时
 
@@ -444,7 +444,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @property
     def tracker(self):
-        """Gets the tracker of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Gets the tracker of this WorkTableIssuseListResponseBodyIssueList.
 
         :return: The tracker of this WorkTableIssuseListResponseBodyIssueList.
         :rtype: :class:`huaweicloudsdkprojectman.v4.WorkTableIssuseListResponseBodyTracker`
@@ -453,7 +453,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @tracker.setter
     def tracker(self, tracker):
-        """Sets the tracker of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Sets the tracker of this WorkTableIssuseListResponseBodyIssueList.
 
         :param tracker: The tracker of this WorkTableIssuseListResponseBodyIssueList.
         :type tracker: :class:`huaweicloudsdkprojectman.v4.WorkTableIssuseListResponseBodyTracker`
@@ -462,7 +462,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @property
     def order(self):
-        """Gets the order of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Gets the order of this WorkTableIssuseListResponseBodyIssueList.
 
         :return: The order of this WorkTableIssuseListResponseBodyIssueList.
         :rtype: :class:`huaweicloudsdkprojectman.v4.WorkTableIssuseListResponseBodyOrder`
@@ -471,7 +471,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Sets the order of this WorkTableIssuseListResponseBodyIssueList.
 
         :param order: The order of this WorkTableIssuseListResponseBodyIssueList.
         :type order: :class:`huaweicloudsdkprojectman.v4.WorkTableIssuseListResponseBodyOrder`
@@ -480,7 +480,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @property
     def severity(self):
-        """Gets the severity of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Gets the severity of this WorkTableIssuseListResponseBodyIssueList.
 
         :return: The severity of this WorkTableIssuseListResponseBodyIssueList.
         :rtype: :class:`huaweicloudsdkprojectman.v4.WorkTableIssuseListResponseBodySeverity`
@@ -489,7 +489,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Sets the severity of this WorkTableIssuseListResponseBodyIssueList.
 
         :param severity: The severity of this WorkTableIssuseListResponseBodyIssueList.
         :type severity: :class:`huaweicloudsdkprojectman.v4.WorkTableIssuseListResponseBodySeverity`
@@ -498,7 +498,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @property
     def priority(self):
-        """Gets the priority of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Gets the priority of this WorkTableIssuseListResponseBodyIssueList.
 
         :return: The priority of this WorkTableIssuseListResponseBodyIssueList.
         :rtype: :class:`huaweicloudsdkprojectman.v4.WorkTableIssuseListResponseBodyPriority`
@@ -507,7 +507,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Sets the priority of this WorkTableIssuseListResponseBodyIssueList.
 
         :param priority: The priority of this WorkTableIssuseListResponseBodyIssueList.
         :type priority: :class:`huaweicloudsdkprojectman.v4.WorkTableIssuseListResponseBodyPriority`
@@ -516,7 +516,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @property
     def domain(self):
-        """Gets the domain of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Gets the domain of this WorkTableIssuseListResponseBodyIssueList.
 
         :return: The domain of this WorkTableIssuseListResponseBodyIssueList.
         :rtype: :class:`huaweicloudsdkprojectman.v4.WorkTableIssuseListResponseBodyDomain`
@@ -525,7 +525,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Sets the domain of this WorkTableIssuseListResponseBodyIssueList.
 
         :param domain: The domain of this WorkTableIssuseListResponseBodyIssueList.
         :type domain: :class:`huaweicloudsdkprojectman.v4.WorkTableIssuseListResponseBodyDomain`
@@ -534,7 +534,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @property
     def position(self):
-        """Gets the position of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Gets the position of this WorkTableIssuseListResponseBodyIssueList.
 
         排序数值
 
@@ -545,7 +545,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @position.setter
     def position(self, position):
-        """Sets the position of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Sets the position of this WorkTableIssuseListResponseBodyIssueList.
 
         排序数值
 
@@ -556,7 +556,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @property
     def module(self):
-        """Gets the module of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Gets the module of this WorkTableIssuseListResponseBodyIssueList.
 
         :return: The module of this WorkTableIssuseListResponseBodyIssueList.
         :rtype: :class:`huaweicloudsdkprojectman.v4.WorkTableIssuseListResponseBodyModule`
@@ -565,7 +565,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @module.setter
     def module(self, module):
-        """Sets the module of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Sets the module of this WorkTableIssuseListResponseBodyIssueList.
 
         :param module: The module of this WorkTableIssuseListResponseBodyIssueList.
         :type module: :class:`huaweicloudsdkprojectman.v4.WorkTableIssuseListResponseBodyModule`
@@ -574,7 +574,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @property
     def assigned_to(self):
-        """Gets the assigned_to of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Gets the assigned_to of this WorkTableIssuseListResponseBodyIssueList.
 
         :return: The assigned_to of this WorkTableIssuseListResponseBodyIssueList.
         :rtype: :class:`huaweicloudsdkprojectman.v4.SimpleUserIn`
@@ -583,7 +583,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @assigned_to.setter
     def assigned_to(self, assigned_to):
-        """Sets the assigned_to of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Sets the assigned_to of this WorkTableIssuseListResponseBodyIssueList.
 
         :param assigned_to: The assigned_to of this WorkTableIssuseListResponseBodyIssueList.
         :type assigned_to: :class:`huaweicloudsdkprojectman.v4.SimpleUserIn`
@@ -592,7 +592,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @property
     def author(self):
-        """Gets the author of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Gets the author of this WorkTableIssuseListResponseBodyIssueList.
 
         :return: The author of this WorkTableIssuseListResponseBodyIssueList.
         :rtype: :class:`huaweicloudsdkprojectman.v4.SimpleUserIn`
@@ -601,7 +601,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @author.setter
     def author(self, author):
-        """Sets the author of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Sets the author of this WorkTableIssuseListResponseBodyIssueList.
 
         :param author: The author of this WorkTableIssuseListResponseBodyIssueList.
         :type author: :class:`huaweicloudsdkprojectman.v4.SimpleUserIn`
@@ -610,7 +610,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @property
     def developer(self):
-        """Gets the developer of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Gets the developer of this WorkTableIssuseListResponseBodyIssueList.
 
         :return: The developer of this WorkTableIssuseListResponseBodyIssueList.
         :rtype: :class:`huaweicloudsdkprojectman.v4.SimpleUserIn`
@@ -619,7 +619,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @developer.setter
     def developer(self, developer):
-        """Sets the developer of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Sets the developer of this WorkTableIssuseListResponseBodyIssueList.
 
         :param developer: The developer of this WorkTableIssuseListResponseBodyIssueList.
         :type developer: :class:`huaweicloudsdkprojectman.v4.SimpleUserIn`
@@ -628,7 +628,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @property
     def closeder(self):
-        """Gets the closeder of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Gets the closeder of this WorkTableIssuseListResponseBodyIssueList.
 
         :return: The closeder of this WorkTableIssuseListResponseBodyIssueList.
         :rtype: :class:`huaweicloudsdkprojectman.v4.SimpleUserIn`
@@ -637,7 +637,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @closeder.setter
     def closeder(self, closeder):
-        """Sets the closeder of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Sets the closeder of this WorkTableIssuseListResponseBodyIssueList.
 
         :param closeder: The closeder of this WorkTableIssuseListResponseBodyIssueList.
         :type closeder: :class:`huaweicloudsdkprojectman.v4.SimpleUserIn`
@@ -646,7 +646,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @property
     def status(self):
-        """Gets the status of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Gets the status of this WorkTableIssuseListResponseBodyIssueList.
 
         :return: The status of this WorkTableIssuseListResponseBodyIssueList.
         :rtype: :class:`huaweicloudsdkprojectman.v4.WorkTableIssuseListResponseBodyStatus`
@@ -655,7 +655,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Sets the status of this WorkTableIssuseListResponseBodyIssueList.
 
         :param status: The status of this WorkTableIssuseListResponseBodyIssueList.
         :type status: :class:`huaweicloudsdkprojectman.v4.WorkTableIssuseListResponseBodyStatus`
@@ -664,7 +664,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @property
     def deleted(self):
-        """Gets the deleted of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Gets the deleted of this WorkTableIssuseListResponseBodyIssueList.
 
         是否删除工作项
 
@@ -675,7 +675,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @deleted.setter
     def deleted(self, deleted):
-        """Sets the deleted of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Sets the deleted of this WorkTableIssuseListResponseBodyIssueList.
 
         是否删除工作项
 
@@ -686,7 +686,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @property
     def is_watcher(self):
-        """Gets the is_watcher of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Gets the is_watcher of this WorkTableIssuseListResponseBodyIssueList.
 
         是否关注工作项
 
@@ -697,7 +697,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @is_watcher.setter
     def is_watcher(self, is_watcher):
-        """Sets the is_watcher of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Sets the is_watcher of this WorkTableIssuseListResponseBodyIssueList.
 
         是否关注工作项
 
@@ -708,7 +708,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @property
     def closed_flag(self):
-        """Gets the closed_flag of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Gets the closed_flag of this WorkTableIssuseListResponseBodyIssueList.
 
         关闭标志
 
@@ -719,7 +719,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @closed_flag.setter
     def closed_flag(self, closed_flag):
-        """Sets the closed_flag of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Sets the closed_flag of this WorkTableIssuseListResponseBodyIssueList.
 
         关闭标志
 
@@ -730,7 +730,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @property
     def created_on(self):
-        """Gets the created_on of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Gets the created_on of this WorkTableIssuseListResponseBodyIssueList.
 
         工作项新建时间戳
 
@@ -741,7 +741,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @created_on.setter
     def created_on(self, created_on):
-        """Sets the created_on of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Sets the created_on of this WorkTableIssuseListResponseBodyIssueList.
 
         工作项新建时间戳
 
@@ -752,7 +752,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @property
     def updated_on(self):
-        """Gets the updated_on of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Gets the updated_on of this WorkTableIssuseListResponseBodyIssueList.
 
         工作项更新时间戳
 
@@ -763,7 +763,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @updated_on.setter
     def updated_on(self, updated_on):
-        """Sets the updated_on of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Sets the updated_on of this WorkTableIssuseListResponseBodyIssueList.
 
         工作项更新时间戳
 
@@ -774,7 +774,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @property
     def due_date(self):
-        """Gets the due_date of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Gets the due_date of this WorkTableIssuseListResponseBodyIssueList.
 
         工作项预计结束时间戳
 
@@ -785,7 +785,7 @@ class WorkTableIssuseListResponseBodyIssueList:
 
     @due_date.setter
     def due_date(self, due_date):
-        """Sets the due_date of this WorkTableIssuseListResponseBodyIssueList.
+        r"""Sets the due_date of this WorkTableIssuseListResponseBodyIssueList.
 
         工作项预计结束时间戳
 

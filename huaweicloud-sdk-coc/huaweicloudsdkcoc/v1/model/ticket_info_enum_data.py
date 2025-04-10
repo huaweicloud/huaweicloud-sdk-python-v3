@@ -31,7 +31,7 @@ class TicketInfoEnumData:
     }
 
     def __init__(self, filed_key=None, enum_key=None, name_zh=None, name_en=None):
-        """TicketInfoEnumData
+        r"""TicketInfoEnumData
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class TicketInfoEnumData:
 
     @property
     def filed_key(self):
-        """Gets the filed_key of this TicketInfoEnumData.
+        r"""Gets the filed_key of this TicketInfoEnumData.
 
         字段KEY 标识哪个字段
 
@@ -71,7 +71,7 @@ class TicketInfoEnumData:
 
     @filed_key.setter
     def filed_key(self, filed_key):
-        """Sets the filed_key of this TicketInfoEnumData.
+        r"""Sets the filed_key of this TicketInfoEnumData.
 
         字段KEY 标识哪个字段
 
@@ -82,7 +82,7 @@ class TicketInfoEnumData:
 
     @property
     def enum_key(self):
-        """Gets the enum_key of this TicketInfoEnumData.
+        r"""Gets the enum_key of this TicketInfoEnumData.
 
         枚举KEY
 
@@ -93,7 +93,7 @@ class TicketInfoEnumData:
 
     @enum_key.setter
     def enum_key(self, enum_key):
-        """Sets the enum_key of this TicketInfoEnumData.
+        r"""Sets the enum_key of this TicketInfoEnumData.
 
         枚举KEY
 
@@ -104,7 +104,7 @@ class TicketInfoEnumData:
 
     @property
     def name_zh(self):
-        """Gets the name_zh of this TicketInfoEnumData.
+        r"""Gets the name_zh of this TicketInfoEnumData.
 
         中文名称
 
@@ -115,7 +115,7 @@ class TicketInfoEnumData:
 
     @name_zh.setter
     def name_zh(self, name_zh):
-        """Sets the name_zh of this TicketInfoEnumData.
+        r"""Sets the name_zh of this TicketInfoEnumData.
 
         中文名称
 
@@ -126,7 +126,7 @@ class TicketInfoEnumData:
 
     @property
     def name_en(self):
-        """Gets the name_en of this TicketInfoEnumData.
+        r"""Gets the name_en of this TicketInfoEnumData.
 
         英文名称
 
@@ -137,7 +137,7 @@ class TicketInfoEnumData:
 
     @name_en.setter
     def name_en(self, name_en):
-        """Sets the name_en of this TicketInfoEnumData.
+        r"""Sets the name_en of this TicketInfoEnumData.
 
         英文名称
 

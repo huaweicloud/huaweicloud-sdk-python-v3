@@ -29,7 +29,7 @@ class CreateTuningRequest:
     }
 
     def __init__(self, connection_id=None, x_language=None, body=None):
-        """CreateTuningRequest
+        r"""CreateTuningRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateTuningRequest:
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this CreateTuningRequest.
+        r"""Gets the connection_id of this CreateTuningRequest.
 
         连接ID
 
@@ -67,7 +67,7 @@ class CreateTuningRequest:
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this CreateTuningRequest.
+        r"""Sets the connection_id of this CreateTuningRequest.
 
         连接ID
 
@@ -78,7 +78,7 @@ class CreateTuningRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreateTuningRequest.
+        r"""Gets the x_language of this CreateTuningRequest.
 
         语言
 
@@ -89,7 +89,7 @@ class CreateTuningRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreateTuningRequest.
+        r"""Sets the x_language of this CreateTuningRequest.
 
         语言
 
@@ -100,7 +100,7 @@ class CreateTuningRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateTuningRequest.
+        r"""Gets the body of this CreateTuningRequest.
 
         :return: The body of this CreateTuningRequest.
         :rtype: :class:`huaweicloudsdkdas.v3.CreateTuningReq`
@@ -109,7 +109,7 @@ class CreateTuningRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTuningRequest.
+        r"""Sets the body of this CreateTuningRequest.
 
         :param body: The body of this CreateTuningRequest.
         :type body: :class:`huaweicloudsdkdas.v3.CreateTuningReq`

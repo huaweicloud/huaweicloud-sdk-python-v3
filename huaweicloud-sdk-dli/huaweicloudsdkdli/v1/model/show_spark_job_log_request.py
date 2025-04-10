@@ -33,7 +33,7 @@ class ShowSparkJobLogRequest:
     }
 
     def __init__(self, batch_id=None, _from=None, index=None, size=None, type=None):
-        """ShowSparkJobLogRequest
+        r"""ShowSparkJobLogRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ShowSparkJobLogRequest:
 
     @property
     def batch_id(self):
-        """Gets the batch_id of this ShowSparkJobLogRequest.
+        r"""Gets the batch_id of this ShowSparkJobLogRequest.
 
         批处理作业的ID。
 
@@ -81,7 +81,7 @@ class ShowSparkJobLogRequest:
 
     @batch_id.setter
     def batch_id(self, batch_id):
-        """Sets the batch_id of this ShowSparkJobLogRequest.
+        r"""Sets the batch_id of this ShowSparkJobLogRequest.
 
         批处理作业的ID。
 
@@ -92,7 +92,7 @@ class ShowSparkJobLogRequest:
 
     @property
     def _from(self):
-        """Gets the _from of this ShowSparkJobLogRequest.
+        r"""Gets the _from of this ShowSparkJobLogRequest.
 
         起始日志的行号，默认显示最后100行日志。如果日志不足100行，从0行开始显示。
 
@@ -103,7 +103,7 @@ class ShowSparkJobLogRequest:
 
     @_from.setter
     def _from(self, _from):
-        """Sets the _from of this ShowSparkJobLogRequest.
+        r"""Sets the _from of this ShowSparkJobLogRequest.
 
         起始日志的行号，默认显示最后100行日志。如果日志不足100行，从0行开始显示。
 
@@ -114,7 +114,7 @@ class ShowSparkJobLogRequest:
 
     @property
     def index(self):
-        """Gets the index of this ShowSparkJobLogRequest.
+        r"""Gets the index of this ShowSparkJobLogRequest.
 
         当提交的作业进行重试时，会有多个driver日志。index用于指定driver日志的索引号，默认为0。需与type参数一起使用。
 
@@ -125,7 +125,7 @@ class ShowSparkJobLogRequest:
 
     @index.setter
     def index(self, index):
-        """Sets the index of this ShowSparkJobLogRequest.
+        r"""Sets the index of this ShowSparkJobLogRequest.
 
         当提交的作业进行重试时，会有多个driver日志。index用于指定driver日志的索引号，默认为0。需与type参数一起使用。
 
@@ -136,7 +136,7 @@ class ShowSparkJobLogRequest:
 
     @property
     def size(self):
-        """Gets the size of this ShowSparkJobLogRequest.
+        r"""Gets the size of this ShowSparkJobLogRequest.
 
         查询日志的数量。
 
@@ -147,7 +147,7 @@ class ShowSparkJobLogRequest:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ShowSparkJobLogRequest.
+        r"""Sets the size of this ShowSparkJobLogRequest.
 
         查询日志的数量。
 
@@ -158,7 +158,7 @@ class ShowSparkJobLogRequest:
 
     @property
     def type(self):
-        """Gets the type of this ShowSparkJobLogRequest.
+        r"""Gets the type of this ShowSparkJobLogRequest.
 
         当type填写driver时，输出Spark Driver日志。
 
@@ -169,7 +169,7 @@ class ShowSparkJobLogRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowSparkJobLogRequest.
+        r"""Sets the type of this ShowSparkJobLogRequest.
 
         当type填写driver时，输出Spark Driver日志。
 

@@ -30,7 +30,7 @@ class UpdateResWorkspaceResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, error_code=None):
-        """UpdateResWorkspaceResponse
+        r"""UpdateResWorkspaceResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class UpdateResWorkspaceResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this UpdateResWorkspaceResponse.
+        r"""Gets the is_success of this UpdateResWorkspaceResponse.
 
         是否成功。
 
@@ -69,7 +69,7 @@ class UpdateResWorkspaceResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this UpdateResWorkspaceResponse.
+        r"""Sets the is_success of this UpdateResWorkspaceResponse.
 
         是否成功。
 
@@ -80,7 +80,7 @@ class UpdateResWorkspaceResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this UpdateResWorkspaceResponse.
+        r"""Gets the message of this UpdateResWorkspaceResponse.
 
         返回消息。
 
@@ -91,7 +91,7 @@ class UpdateResWorkspaceResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this UpdateResWorkspaceResponse.
+        r"""Sets the message of this UpdateResWorkspaceResponse.
 
         返回消息。
 
@@ -102,7 +102,7 @@ class UpdateResWorkspaceResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this UpdateResWorkspaceResponse.
+        r"""Gets the error_code of this UpdateResWorkspaceResponse.
 
         错误码（请求成功时，不返回此字段）。
 
@@ -113,7 +113,7 @@ class UpdateResWorkspaceResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this UpdateResWorkspaceResponse.
+        r"""Sets the error_code of this UpdateResWorkspaceResponse.
 
         错误码（请求成功时，不返回此字段）。
 

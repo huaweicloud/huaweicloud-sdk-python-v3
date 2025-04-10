@@ -25,7 +25,7 @@ class CreateLogBackupRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """CreateLogBackupRequest
+        r"""CreateLogBackupRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateLogBackupRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CreateLogBackupRequest.
+        r"""Gets the cluster_id of this CreateLogBackupRequest.
 
         指定待备份日志的集群ID。
 
@@ -53,7 +53,7 @@ class CreateLogBackupRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CreateLogBackupRequest.
+        r"""Sets the cluster_id of this CreateLogBackupRequest.
 
         指定待备份日志的集群ID。
 

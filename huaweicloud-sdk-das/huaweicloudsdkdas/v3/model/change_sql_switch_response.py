@@ -26,7 +26,7 @@ class ChangeSqlSwitchResponse(SdkResponse):
     }
 
     def __init__(self, status=None):
-        """ChangeSqlSwitchResponse
+        r"""ChangeSqlSwitchResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ChangeSqlSwitchResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ChangeSqlSwitchResponse.
+        r"""Gets the status of this ChangeSqlSwitchResponse.
 
         开关状态。取值： Enabled：已开启， Disabled：已关闭， Switching：开关切换中
 
@@ -55,7 +55,7 @@ class ChangeSqlSwitchResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ChangeSqlSwitchResponse.
+        r"""Sets the status of this ChangeSqlSwitchResponse.
 
         开关状态。取值： Enabled：已开启， Disabled：已关闭， Switching：开关切换中
 

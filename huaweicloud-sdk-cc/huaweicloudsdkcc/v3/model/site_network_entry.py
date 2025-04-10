@@ -53,7 +53,7 @@ class SiteNetworkEntry:
     }
 
     def __init__(self, id=None, name=None, description=None, created_at=None, updated_at=None, domain_id=None, state=None, enterprise_project_id=None, apply_policy_id=None, tags=None, topology=None, connections=None, sites=None, hub_site=None, spoke_sites=None):
-        """SiteNetworkEntry
+        r"""SiteNetworkEntry
 
         The model defined in huaweicloud sdk
 
@@ -132,7 +132,7 @@ class SiteNetworkEntry:
 
     @property
     def id(self):
-        """Gets the id of this SiteNetworkEntry.
+        r"""Gets the id of this SiteNetworkEntry.
 
         实例ID。
 
@@ -143,7 +143,7 @@ class SiteNetworkEntry:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SiteNetworkEntry.
+        r"""Sets the id of this SiteNetworkEntry.
 
         实例ID。
 
@@ -154,7 +154,7 @@ class SiteNetworkEntry:
 
     @property
     def name(self):
-        """Gets the name of this SiteNetworkEntry.
+        r"""Gets the name of this SiteNetworkEntry.
 
         实例名字。
 
@@ -165,7 +165,7 @@ class SiteNetworkEntry:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SiteNetworkEntry.
+        r"""Sets the name of this SiteNetworkEntry.
 
         实例名字。
 
@@ -176,7 +176,7 @@ class SiteNetworkEntry:
 
     @property
     def description(self):
-        """Gets the description of this SiteNetworkEntry.
+        r"""Gets the description of this SiteNetworkEntry.
 
         实例描述。不支持 <>。
 
@@ -187,7 +187,7 @@ class SiteNetworkEntry:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this SiteNetworkEntry.
+        r"""Sets the description of this SiteNetworkEntry.
 
         实例描述。不支持 <>。
 
@@ -198,7 +198,7 @@ class SiteNetworkEntry:
 
     @property
     def created_at(self):
-        """Gets the created_at of this SiteNetworkEntry.
+        r"""Gets the created_at of this SiteNetworkEntry.
 
         实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -209,7 +209,7 @@ class SiteNetworkEntry:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this SiteNetworkEntry.
+        r"""Sets the created_at of this SiteNetworkEntry.
 
         实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -220,7 +220,7 @@ class SiteNetworkEntry:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this SiteNetworkEntry.
+        r"""Gets the updated_at of this SiteNetworkEntry.
 
         实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -231,7 +231,7 @@ class SiteNetworkEntry:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this SiteNetworkEntry.
+        r"""Sets the updated_at of this SiteNetworkEntry.
 
         实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -242,7 +242,7 @@ class SiteNetworkEntry:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this SiteNetworkEntry.
+        r"""Gets the domain_id of this SiteNetworkEntry.
 
         实例所属账号ID。
 
@@ -253,7 +253,7 @@ class SiteNetworkEntry:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this SiteNetworkEntry.
+        r"""Sets the domain_id of this SiteNetworkEntry.
 
         实例所属账号ID。
 
@@ -264,7 +264,7 @@ class SiteNetworkEntry:
 
     @property
     def state(self):
-        """Gets the state of this SiteNetworkEntry.
+        r"""Gets the state of this SiteNetworkEntry.
 
         :return: The state of this SiteNetworkEntry.
         :rtype: :class:`huaweicloudsdkcc.v3.SiteNetworkStateEnum`
@@ -273,7 +273,7 @@ class SiteNetworkEntry:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this SiteNetworkEntry.
+        r"""Sets the state of this SiteNetworkEntry.
 
         :param state: The state of this SiteNetworkEntry.
         :type state: :class:`huaweicloudsdkcc.v3.SiteNetworkStateEnum`
@@ -282,7 +282,7 @@ class SiteNetworkEntry:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this SiteNetworkEntry.
+        r"""Gets the enterprise_project_id of this SiteNetworkEntry.
 
         实例所属企业项目ID。
 
@@ -293,7 +293,7 @@ class SiteNetworkEntry:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this SiteNetworkEntry.
+        r"""Sets the enterprise_project_id of this SiteNetworkEntry.
 
         实例所属企业项目ID。
 
@@ -304,7 +304,7 @@ class SiteNetworkEntry:
 
     @property
     def apply_policy_id(self):
-        """Gets the apply_policy_id of this SiteNetworkEntry.
+        r"""Gets the apply_policy_id of this SiteNetworkEntry.
 
         实例ID。
 
@@ -315,7 +315,7 @@ class SiteNetworkEntry:
 
     @apply_policy_id.setter
     def apply_policy_id(self, apply_policy_id):
-        """Sets the apply_policy_id of this SiteNetworkEntry.
+        r"""Sets the apply_policy_id of this SiteNetworkEntry.
 
         实例ID。
 
@@ -326,7 +326,7 @@ class SiteNetworkEntry:
 
     @property
     def tags(self):
-        """Gets the tags of this SiteNetworkEntry.
+        r"""Gets the tags of this SiteNetworkEntry.
 
         实例标签。
 
@@ -337,7 +337,7 @@ class SiteNetworkEntry:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this SiteNetworkEntry.
+        r"""Sets the tags of this SiteNetworkEntry.
 
         实例标签。
 
@@ -348,7 +348,7 @@ class SiteNetworkEntry:
 
     @property
     def topology(self):
-        """Gets the topology of this SiteNetworkEntry.
+        r"""Gets the topology of this SiteNetworkEntry.
 
         :return: The topology of this SiteNetworkEntry.
         :rtype: :class:`huaweicloudsdkcc.v3.SiteNetworkTopologyEnum`
@@ -357,7 +357,7 @@ class SiteNetworkEntry:
 
     @topology.setter
     def topology(self, topology):
-        """Sets the topology of this SiteNetworkEntry.
+        r"""Sets the topology of this SiteNetworkEntry.
 
         :param topology: The topology of this SiteNetworkEntry.
         :type topology: :class:`huaweicloudsdkcc.v3.SiteNetworkTopologyEnum`
@@ -366,7 +366,7 @@ class SiteNetworkEntry:
 
     @property
     def connections(self):
-        """Gets the connections of this SiteNetworkEntry.
+        r"""Gets the connections of this SiteNetworkEntry.
 
         分支连接列表。
 
@@ -377,7 +377,7 @@ class SiteNetworkEntry:
 
     @connections.setter
     def connections(self, connections):
-        """Sets the connections of this SiteNetworkEntry.
+        r"""Sets the connections of this SiteNetworkEntry.
 
         分支连接列表。
 
@@ -388,7 +388,7 @@ class SiteNetworkEntry:
 
     @property
     def sites(self):
-        """Gets the sites of this SiteNetworkEntry.
+        r"""Gets the sites of this SiteNetworkEntry.
 
         p2p拓扑或者网状(mesh)拓扑中的节点。
 
@@ -399,7 +399,7 @@ class SiteNetworkEntry:
 
     @sites.setter
     def sites(self, sites):
-        """Sets the sites of this SiteNetworkEntry.
+        r"""Sets the sites of this SiteNetworkEntry.
 
         p2p拓扑或者网状(mesh)拓扑中的节点。
 
@@ -410,7 +410,7 @@ class SiteNetworkEntry:
 
     @property
     def hub_site(self):
-        """Gets the hub_site of this SiteNetworkEntry.
+        r"""Gets the hub_site of this SiteNetworkEntry.
 
         :return: The hub_site of this SiteNetworkEntry.
         :rtype: :class:`huaweicloudsdkcc.v3.SiteInformation`
@@ -419,7 +419,7 @@ class SiteNetworkEntry:
 
     @hub_site.setter
     def hub_site(self, hub_site):
-        """Sets the hub_site of this SiteNetworkEntry.
+        r"""Sets the hub_site of this SiteNetworkEntry.
 
         :param hub_site: The hub_site of this SiteNetworkEntry.
         :type hub_site: :class:`huaweicloudsdkcc.v3.SiteInformation`
@@ -428,7 +428,7 @@ class SiteNetworkEntry:
 
     @property
     def spoke_sites(self):
-        """Gets the spoke_sites of this SiteNetworkEntry.
+        r"""Gets the spoke_sites of this SiteNetworkEntry.
 
         分支列表。
 
@@ -439,7 +439,7 @@ class SiteNetworkEntry:
 
     @spoke_sites.setter
     def spoke_sites(self, spoke_sites):
-        """Sets the spoke_sites of this SiteNetworkEntry.
+        r"""Sets the spoke_sites of this SiteNetworkEntry.
 
         分支列表。
 

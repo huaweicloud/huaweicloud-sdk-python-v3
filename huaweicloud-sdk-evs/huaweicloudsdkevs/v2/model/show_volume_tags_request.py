@@ -25,7 +25,7 @@ class ShowVolumeTagsRequest:
     }
 
     def __init__(self, volume_id=None):
-        """ShowVolumeTagsRequest
+        r"""ShowVolumeTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowVolumeTagsRequest:
 
     @property
     def volume_id(self):
-        """Gets the volume_id of this ShowVolumeTagsRequest.
+        r"""Gets the volume_id of this ShowVolumeTagsRequest.
 
         云硬盘ID
 
@@ -53,7 +53,7 @@ class ShowVolumeTagsRequest:
 
     @volume_id.setter
     def volume_id(self, volume_id):
-        """Sets the volume_id of this ShowVolumeTagsRequest.
+        r"""Sets the volume_id of this ShowVolumeTagsRequest.
 
         云硬盘ID
 

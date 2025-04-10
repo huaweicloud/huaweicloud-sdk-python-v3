@@ -27,7 +27,7 @@ class DeleteInteractionRuleGroupRequest:
     }
 
     def __init__(self, group_id=None, x_app_user_id=None):
-        """DeleteInteractionRuleGroupRequest
+        r"""DeleteInteractionRuleGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteInteractionRuleGroupRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this DeleteInteractionRuleGroupRequest.
+        r"""Gets the group_id of this DeleteInteractionRuleGroupRequest.
 
         互动规则库ID。
 
@@ -60,7 +60,7 @@ class DeleteInteractionRuleGroupRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this DeleteInteractionRuleGroupRequest.
+        r"""Sets the group_id of this DeleteInteractionRuleGroupRequest.
 
         互动规则库ID。
 
@@ -71,7 +71,7 @@ class DeleteInteractionRuleGroupRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this DeleteInteractionRuleGroupRequest.
+        r"""Gets the x_app_user_id of this DeleteInteractionRuleGroupRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -82,7 +82,7 @@ class DeleteInteractionRuleGroupRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this DeleteInteractionRuleGroupRequest.
+        r"""Sets the x_app_user_id of this DeleteInteractionRuleGroupRequest.
 
         第三方用户ID。不允许输入中文。
 

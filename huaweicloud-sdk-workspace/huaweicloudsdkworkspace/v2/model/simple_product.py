@@ -37,7 +37,7 @@ class SimpleProduct:
     }
 
     def __init__(self, product_id=None, flavor_id=None, type=None, cpu=None, memory=None, descriptions=None, charge_mode=None):
-        """SimpleProduct
+        r"""SimpleProduct
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class SimpleProduct:
 
     @property
     def product_id(self):
-        """Gets the product_id of this SimpleProduct.
+        r"""Gets the product_id of this SimpleProduct.
 
         产品ID。
 
@@ -96,7 +96,7 @@ class SimpleProduct:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this SimpleProduct.
+        r"""Sets the product_id of this SimpleProduct.
 
         产品ID。
 
@@ -107,7 +107,7 @@ class SimpleProduct:
 
     @property
     def flavor_id(self):
-        """Gets the flavor_id of this SimpleProduct.
+        r"""Gets the flavor_id of this SimpleProduct.
 
         产品规格ID。
 
@@ -118,7 +118,7 @@ class SimpleProduct:
 
     @flavor_id.setter
     def flavor_id(self, flavor_id):
-        """Sets the flavor_id of this SimpleProduct.
+        r"""Sets the flavor_id of this SimpleProduct.
 
         产品规格ID。
 
@@ -129,7 +129,7 @@ class SimpleProduct:
 
     @property
     def type(self):
-        """Gets the type of this SimpleProduct.
+        r"""Gets the type of this SimpleProduct.
 
         产品类型。  - BASE：表示产品基础套餐，套餐镜像中不包括除操作系统之外的其他商业软件，私有镜像场景只能使用此类套餐。
 
@@ -140,7 +140,7 @@ class SimpleProduct:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SimpleProduct.
+        r"""Sets the type of this SimpleProduct.
 
         产品类型。  - BASE：表示产品基础套餐，套餐镜像中不包括除操作系统之外的其他商业软件，私有镜像场景只能使用此类套餐。
 
@@ -151,7 +151,7 @@ class SimpleProduct:
 
     @property
     def cpu(self):
-        """Gets the cpu of this SimpleProduct.
+        r"""Gets the cpu of this SimpleProduct.
 
         CPU
 
@@ -162,7 +162,7 @@ class SimpleProduct:
 
     @cpu.setter
     def cpu(self, cpu):
-        """Sets the cpu of this SimpleProduct.
+        r"""Sets the cpu of this SimpleProduct.
 
         CPU
 
@@ -173,7 +173,7 @@ class SimpleProduct:
 
     @property
     def memory(self):
-        """Gets the memory of this SimpleProduct.
+        r"""Gets the memory of this SimpleProduct.
 
         内存。
 
@@ -184,7 +184,7 @@ class SimpleProduct:
 
     @memory.setter
     def memory(self, memory):
-        """Sets the memory of this SimpleProduct.
+        r"""Sets the memory of this SimpleProduct.
 
         内存。
 
@@ -195,7 +195,7 @@ class SimpleProduct:
 
     @property
     def descriptions(self):
-        """Gets the descriptions of this SimpleProduct.
+        r"""Gets the descriptions of this SimpleProduct.
 
         产品描述。
 
@@ -206,7 +206,7 @@ class SimpleProduct:
 
     @descriptions.setter
     def descriptions(self, descriptions):
-        """Sets the descriptions of this SimpleProduct.
+        r"""Sets the descriptions of this SimpleProduct.
 
         产品描述。
 
@@ -217,7 +217,7 @@ class SimpleProduct:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this SimpleProduct.
+        r"""Gets the charge_mode of this SimpleProduct.
 
         周期套餐标识，0表示包周期，1表示按需。
 
@@ -228,7 +228,7 @@ class SimpleProduct:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this SimpleProduct.
+        r"""Sets the charge_mode of this SimpleProduct.
 
         周期套餐标识，0表示包周期，1表示按需。
 

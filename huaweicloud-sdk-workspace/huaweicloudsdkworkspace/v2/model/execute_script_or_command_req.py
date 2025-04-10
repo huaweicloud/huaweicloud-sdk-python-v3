@@ -49,7 +49,7 @@ class ExecuteScriptOrCommandReq:
     }
 
     def __init__(self, gray_count=None, resource_type=None, gray_resource_ids=None, gray_fail_threshold=None, resource_ids=None, script_ids=None, command=None, command_type=None, execution_timeout=None, pre_start=None, post_finish=None, resource_group_type=None, resource_group_id=None):
-        """ExecuteScriptOrCommandReq
+        r"""ExecuteScriptOrCommandReq
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class ExecuteScriptOrCommandReq:
 
     @property
     def gray_count(self):
-        """Gets the gray_count of this ExecuteScriptOrCommandReq.
+        r"""Gets the gray_count of this ExecuteScriptOrCommandReq.
 
         灰度资源数量。
 
@@ -138,7 +138,7 @@ class ExecuteScriptOrCommandReq:
 
     @gray_count.setter
     def gray_count(self, gray_count):
-        """Sets the gray_count of this ExecuteScriptOrCommandReq.
+        r"""Sets the gray_count of this ExecuteScriptOrCommandReq.
 
         灰度资源数量。
 
@@ -149,7 +149,7 @@ class ExecuteScriptOrCommandReq:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ExecuteScriptOrCommandReq.
+        r"""Gets the resource_type of this ExecuteScriptOrCommandReq.
 
         资源类型，如桌面(DESKTOP)。
 
@@ -160,7 +160,7 @@ class ExecuteScriptOrCommandReq:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ExecuteScriptOrCommandReq.
+        r"""Sets the resource_type of this ExecuteScriptOrCommandReq.
 
         资源类型，如桌面(DESKTOP)。
 
@@ -171,7 +171,7 @@ class ExecuteScriptOrCommandReq:
 
     @property
     def gray_resource_ids(self):
-        """Gets the gray_resource_ids of this ExecuteScriptOrCommandReq.
+        r"""Gets the gray_resource_ids of this ExecuteScriptOrCommandReq.
 
         灰度执行脚本的资源列表。
 
@@ -182,7 +182,7 @@ class ExecuteScriptOrCommandReq:
 
     @gray_resource_ids.setter
     def gray_resource_ids(self, gray_resource_ids):
-        """Sets the gray_resource_ids of this ExecuteScriptOrCommandReq.
+        r"""Sets the gray_resource_ids of this ExecuteScriptOrCommandReq.
 
         灰度执行脚本的资源列表。
 
@@ -193,7 +193,7 @@ class ExecuteScriptOrCommandReq:
 
     @property
     def gray_fail_threshold(self):
-        """Gets the gray_fail_threshold of this ExecuteScriptOrCommandReq.
+        r"""Gets the gray_fail_threshold of this ExecuteScriptOrCommandReq.
 
         灰度失败阈值，达到阈值后停止进行下一批资源执行脚本，小于gray_count。
 
@@ -204,7 +204,7 @@ class ExecuteScriptOrCommandReq:
 
     @gray_fail_threshold.setter
     def gray_fail_threshold(self, gray_fail_threshold):
-        """Sets the gray_fail_threshold of this ExecuteScriptOrCommandReq.
+        r"""Sets the gray_fail_threshold of this ExecuteScriptOrCommandReq.
 
         灰度失败阈值，达到阈值后停止进行下一批资源执行脚本，小于gray_count。
 
@@ -215,7 +215,7 @@ class ExecuteScriptOrCommandReq:
 
     @property
     def resource_ids(self):
-        """Gets the resource_ids of this ExecuteScriptOrCommandReq.
+        r"""Gets the resource_ids of this ExecuteScriptOrCommandReq.
 
         执行脚本的资源列表。
 
@@ -226,7 +226,7 @@ class ExecuteScriptOrCommandReq:
 
     @resource_ids.setter
     def resource_ids(self, resource_ids):
-        """Sets the resource_ids of this ExecuteScriptOrCommandReq.
+        r"""Sets the resource_ids of this ExecuteScriptOrCommandReq.
 
         执行脚本的资源列表。
 
@@ -237,7 +237,7 @@ class ExecuteScriptOrCommandReq:
 
     @property
     def script_ids(self):
-        """Gets the script_ids of this ExecuteScriptOrCommandReq.
+        r"""Gets the script_ids of this ExecuteScriptOrCommandReq.
 
         执行的脚本列表。
 
@@ -248,7 +248,7 @@ class ExecuteScriptOrCommandReq:
 
     @script_ids.setter
     def script_ids(self, script_ids):
-        """Sets the script_ids of this ExecuteScriptOrCommandReq.
+        r"""Sets the script_ids of this ExecuteScriptOrCommandReq.
 
         执行的脚本列表。
 
@@ -259,7 +259,7 @@ class ExecuteScriptOrCommandReq:
 
     @property
     def command(self):
-        """Gets the command of this ExecuteScriptOrCommandReq.
+        r"""Gets the command of this ExecuteScriptOrCommandReq.
 
         执行的命令行，与scripts二选一。
 
@@ -270,7 +270,7 @@ class ExecuteScriptOrCommandReq:
 
     @command.setter
     def command(self, command):
-        """Sets the command of this ExecuteScriptOrCommandReq.
+        r"""Sets the command of this ExecuteScriptOrCommandReq.
 
         执行的命令行，与scripts二选一。
 
@@ -281,7 +281,7 @@ class ExecuteScriptOrCommandReq:
 
     @property
     def command_type(self):
-        """Gets the command_type of this ExecuteScriptOrCommandReq.
+        r"""Gets the command_type of this ExecuteScriptOrCommandReq.
 
         命令行的类型（POWERSHELL，BAT，SHELL）。
 
@@ -292,7 +292,7 @@ class ExecuteScriptOrCommandReq:
 
     @command_type.setter
     def command_type(self, command_type):
-        """Sets the command_type of this ExecuteScriptOrCommandReq.
+        r"""Sets the command_type of this ExecuteScriptOrCommandReq.
 
         命令行的类型（POWERSHELL，BAT，SHELL）。
 
@@ -303,7 +303,7 @@ class ExecuteScriptOrCommandReq:
 
     @property
     def execution_timeout(self):
-        """Gets the execution_timeout of this ExecuteScriptOrCommandReq.
+        r"""Gets the execution_timeout of this ExecuteScriptOrCommandReq.
 
         执行脚本的超时时间，单位分钟。
 
@@ -314,7 +314,7 @@ class ExecuteScriptOrCommandReq:
 
     @execution_timeout.setter
     def execution_timeout(self, execution_timeout):
-        """Sets the execution_timeout of this ExecuteScriptOrCommandReq.
+        r"""Sets the execution_timeout of this ExecuteScriptOrCommandReq.
 
         执行脚本的超时时间，单位分钟。
 
@@ -325,7 +325,7 @@ class ExecuteScriptOrCommandReq:
 
     @property
     def pre_start(self):
-        """Gets the pre_start of this ExecuteScriptOrCommandReq.
+        r"""Gets the pre_start of this ExecuteScriptOrCommandReq.
 
         执行脚本前置步骤。
 
@@ -336,7 +336,7 @@ class ExecuteScriptOrCommandReq:
 
     @pre_start.setter
     def pre_start(self, pre_start):
-        """Sets the pre_start of this ExecuteScriptOrCommandReq.
+        r"""Sets the pre_start of this ExecuteScriptOrCommandReq.
 
         执行脚本前置步骤。
 
@@ -347,7 +347,7 @@ class ExecuteScriptOrCommandReq:
 
     @property
     def post_finish(self):
-        """Gets the post_finish of this ExecuteScriptOrCommandReq.
+        r"""Gets the post_finish of this ExecuteScriptOrCommandReq.
 
         执行脚本后置步骤(STOP,REBOOT)。
 
@@ -358,7 +358,7 @@ class ExecuteScriptOrCommandReq:
 
     @post_finish.setter
     def post_finish(self, post_finish):
-        """Sets the post_finish of this ExecuteScriptOrCommandReq.
+        r"""Sets the post_finish of this ExecuteScriptOrCommandReq.
 
         执行脚本后置步骤(STOP,REBOOT)。
 
@@ -369,7 +369,7 @@ class ExecuteScriptOrCommandReq:
 
     @property
     def resource_group_type(self):
-        """Gets the resource_group_type of this ExecuteScriptOrCommandReq.
+        r"""Gets the resource_group_type of this ExecuteScriptOrCommandReq.
 
         资源组类型，如桌面池(DESKTOP_POOL)。
 
@@ -380,7 +380,7 @@ class ExecuteScriptOrCommandReq:
 
     @resource_group_type.setter
     def resource_group_type(self, resource_group_type):
-        """Sets the resource_group_type of this ExecuteScriptOrCommandReq.
+        r"""Sets the resource_group_type of this ExecuteScriptOrCommandReq.
 
         资源组类型，如桌面池(DESKTOP_POOL)。
 
@@ -391,7 +391,7 @@ class ExecuteScriptOrCommandReq:
 
     @property
     def resource_group_id(self):
-        """Gets the resource_group_id of this ExecuteScriptOrCommandReq.
+        r"""Gets the resource_group_id of this ExecuteScriptOrCommandReq.
 
         资源组ID。
 
@@ -402,7 +402,7 @@ class ExecuteScriptOrCommandReq:
 
     @resource_group_id.setter
     def resource_group_id(self, resource_group_id):
-        """Sets the resource_group_id of this ExecuteScriptOrCommandReq.
+        r"""Sets the resource_group_id of this ExecuteScriptOrCommandReq.
 
         资源组ID。
 

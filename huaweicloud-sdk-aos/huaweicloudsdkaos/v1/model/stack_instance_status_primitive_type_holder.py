@@ -25,7 +25,7 @@ class StackInstanceStatusPrimitiveTypeHolder:
     }
 
     def __init__(self, status=None):
-        """StackInstanceStatusPrimitiveTypeHolder
+        r"""StackInstanceStatusPrimitiveTypeHolder
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class StackInstanceStatusPrimitiveTypeHolder:
 
     @property
     def status(self):
-        """Gets the status of this StackInstanceStatusPrimitiveTypeHolder.
+        r"""Gets the status of this StackInstanceStatusPrimitiveTypeHolder.
 
         资源栈实例的状态  * `WAIT_IN_PROGRESS` - 资源栈实例等待操作中 * `CANCEL_COMPLETE` - 资源栈实例操作取消完成 * `OPERATION_IN_PROGRESS` - 资源栈实例操作中 * `OPERATION_FAILED` - 资源栈实例操作失败 * `INOPERABLE` - 资源栈实例不可操作 * `OPERATION_COMPLETE` - 资源栈实例操作完成
 
@@ -54,7 +54,7 @@ class StackInstanceStatusPrimitiveTypeHolder:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this StackInstanceStatusPrimitiveTypeHolder.
+        r"""Sets the status of this StackInstanceStatusPrimitiveTypeHolder.
 
         资源栈实例的状态  * `WAIT_IN_PROGRESS` - 资源栈实例等待操作中 * `CANCEL_COMPLETE` - 资源栈实例操作取消完成 * `OPERATION_IN_PROGRESS` - 资源栈实例操作中 * `OPERATION_FAILED` - 资源栈实例操作失败 * `INOPERABLE` - 资源栈实例不可操作 * `OPERATION_COMPLETE` - 资源栈实例操作完成
 

@@ -47,7 +47,7 @@ class MenusRsp:
     }
 
     def __init__(self, menu_id=None, pub_id=None, pub_name=None, logo_img=None, logo_url=None, menu=None, menu_state=None, approve_state=None, online_time=None, oper_time=None, company_id=None, company_name=None):
-        """MenusRsp
+        r"""MenusRsp
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class MenusRsp:
 
     @property
     def menu_id(self):
-        """Gets the menu_id of this MenusRsp.
+        r"""Gets the menu_id of this MenusRsp.
 
         菜单ID。
 
@@ -131,7 +131,7 @@ class MenusRsp:
 
     @menu_id.setter
     def menu_id(self, menu_id):
-        """Sets the menu_id of this MenusRsp.
+        r"""Sets the menu_id of this MenusRsp.
 
         菜单ID。
 
@@ -142,7 +142,7 @@ class MenusRsp:
 
     @property
     def pub_id(self):
-        """Gets the pub_id of this MenusRsp.
+        r"""Gets the pub_id of this MenusRsp.
 
         服务号ID。
 
@@ -153,7 +153,7 @@ class MenusRsp:
 
     @pub_id.setter
     def pub_id(self, pub_id):
-        """Sets the pub_id of this MenusRsp.
+        r"""Sets the pub_id of this MenusRsp.
 
         服务号ID。
 
@@ -164,7 +164,7 @@ class MenusRsp:
 
     @property
     def pub_name(self):
-        """Gets the pub_name of this MenusRsp.
+        r"""Gets the pub_name of this MenusRsp.
 
         服务号名称。
 
@@ -175,7 +175,7 @@ class MenusRsp:
 
     @pub_name.setter
     def pub_name(self, pub_name):
-        """Sets the pub_name of this MenusRsp.
+        r"""Sets the pub_name of this MenusRsp.
 
         服务号名称。
 
@@ -186,7 +186,7 @@ class MenusRsp:
 
     @property
     def logo_img(self):
-        """Gets the logo_img of this MenusRsp.
+        r"""Gets the logo_img of this MenusRsp.
 
         LOGO图片资源ID。
 
@@ -197,7 +197,7 @@ class MenusRsp:
 
     @logo_img.setter
     def logo_img(self, logo_img):
-        """Sets the logo_img of this MenusRsp.
+        r"""Sets the logo_img of this MenusRsp.
 
         LOGO图片资源ID。
 
@@ -208,7 +208,7 @@ class MenusRsp:
 
     @property
     def logo_url(self):
-        """Gets the logo_url of this MenusRsp.
+        r"""Gets the logo_url of this MenusRsp.
 
         LOGO图片资源URL。
 
@@ -219,7 +219,7 @@ class MenusRsp:
 
     @logo_url.setter
     def logo_url(self, logo_url):
-        """Sets the logo_url of this MenusRsp.
+        r"""Sets the logo_url of this MenusRsp.
 
         LOGO图片资源URL。
 
@@ -230,7 +230,7 @@ class MenusRsp:
 
     @property
     def menu(self):
-        """Gets the menu of this MenusRsp.
+        r"""Gets the menu of this MenusRsp.
 
         :return: The menu of this MenusRsp.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.Menus`
@@ -239,7 +239,7 @@ class MenusRsp:
 
     @menu.setter
     def menu(self, menu):
-        """Sets the menu of this MenusRsp.
+        r"""Sets the menu of this MenusRsp.
 
         :param menu: The menu of this MenusRsp.
         :type menu: :class:`huaweicloudsdkkoomessage.v1.Menus`
@@ -248,7 +248,7 @@ class MenusRsp:
 
     @property
     def menu_state(self):
-        """Gets the menu_state of this MenusRsp.
+        r"""Gets the menu_state of this MenusRsp.
 
         资源状态。  - 1：未生效 - 2：已生效 - 3：已失效  - 4：已冻结  
 
@@ -259,7 +259,7 @@ class MenusRsp:
 
     @menu_state.setter
     def menu_state(self, menu_state):
-        """Sets the menu_state of this MenusRsp.
+        r"""Sets the menu_state of this MenusRsp.
 
         资源状态。  - 1：未生效 - 2：已生效 - 3：已失效  - 4：已冻结  
 
@@ -270,7 +270,7 @@ class MenusRsp:
 
     @property
     def approve_state(self):
-        """Gets the approve_state of this MenusRsp.
+        r"""Gets the approve_state of this MenusRsp.
 
         审核状态。 - 1：待审核  - 2：通过  - 3：驳回  
 
@@ -281,7 +281,7 @@ class MenusRsp:
 
     @approve_state.setter
     def approve_state(self, approve_state):
-        """Sets the approve_state of this MenusRsp.
+        r"""Sets the approve_state of this MenusRsp.
 
         审核状态。 - 1：待审核  - 2：通过  - 3：驳回  
 
@@ -292,7 +292,7 @@ class MenusRsp:
 
     @property
     def online_time(self):
-        """Gets the online_time of this MenusRsp.
+        r"""Gets the online_time of this MenusRsp.
 
         上线时间。格式为：2020-12-12T12:00:00Z。
 
@@ -303,7 +303,7 @@ class MenusRsp:
 
     @online_time.setter
     def online_time(self, online_time):
-        """Sets the online_time of this MenusRsp.
+        r"""Sets the online_time of this MenusRsp.
 
         上线时间。格式为：2020-12-12T12:00:00Z。
 
@@ -314,7 +314,7 @@ class MenusRsp:
 
     @property
     def oper_time(self):
-        """Gets the oper_time of this MenusRsp.
+        r"""Gets the oper_time of this MenusRsp.
 
         最新操作时间。格式为：2020-12-12T12:00:00Z。
 
@@ -325,7 +325,7 @@ class MenusRsp:
 
     @oper_time.setter
     def oper_time(self, oper_time):
-        """Sets the oper_time of this MenusRsp.
+        r"""Sets the oper_time of this MenusRsp.
 
         最新操作时间。格式为：2020-12-12T12:00:00Z。
 
@@ -336,7 +336,7 @@ class MenusRsp:
 
     @property
     def company_id(self):
-        """Gets the company_id of this MenusRsp.
+        r"""Gets the company_id of this MenusRsp.
 
         企业ID。
 
@@ -347,7 +347,7 @@ class MenusRsp:
 
     @company_id.setter
     def company_id(self, company_id):
-        """Sets the company_id of this MenusRsp.
+        r"""Sets the company_id of this MenusRsp.
 
         企业ID。
 
@@ -358,7 +358,7 @@ class MenusRsp:
 
     @property
     def company_name(self):
-        """Gets the company_name of this MenusRsp.
+        r"""Gets the company_name of this MenusRsp.
 
         企业名称。
 
@@ -369,7 +369,7 @@ class MenusRsp:
 
     @company_name.setter
     def company_name(self, company_name):
-        """Sets the company_name of this MenusRsp.
+        r"""Sets the company_name of this MenusRsp.
 
         企业名称。
 

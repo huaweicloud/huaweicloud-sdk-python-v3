@@ -37,7 +37,7 @@ class TableLineCompareResultInfo:
     }
 
     def __init__(self, source_table_name=None, source_row_num=None, target_table_name=None, target_row_num=None, difference_row_num=None, status=None, compare_line_config_filter=None):
-        """TableLineCompareResultInfo
+        r"""TableLineCompareResultInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class TableLineCompareResultInfo:
 
     @property
     def source_table_name(self):
-        """Gets the source_table_name of this TableLineCompareResultInfo.
+        r"""Gets the source_table_name of this TableLineCompareResultInfo.
 
         源库表名称
 
@@ -96,7 +96,7 @@ class TableLineCompareResultInfo:
 
     @source_table_name.setter
     def source_table_name(self, source_table_name):
-        """Sets the source_table_name of this TableLineCompareResultInfo.
+        r"""Sets the source_table_name of this TableLineCompareResultInfo.
 
         源库表名称
 
@@ -107,7 +107,7 @@ class TableLineCompareResultInfo:
 
     @property
     def source_row_num(self):
-        """Gets the source_row_num of this TableLineCompareResultInfo.
+        r"""Gets the source_row_num of this TableLineCompareResultInfo.
 
         源库表行数
 
@@ -118,7 +118,7 @@ class TableLineCompareResultInfo:
 
     @source_row_num.setter
     def source_row_num(self, source_row_num):
-        """Sets the source_row_num of this TableLineCompareResultInfo.
+        r"""Sets the source_row_num of this TableLineCompareResultInfo.
 
         源库表行数
 
@@ -129,7 +129,7 @@ class TableLineCompareResultInfo:
 
     @property
     def target_table_name(self):
-        """Gets the target_table_name of this TableLineCompareResultInfo.
+        r"""Gets the target_table_name of this TableLineCompareResultInfo.
 
         目标库表名称
 
@@ -140,7 +140,7 @@ class TableLineCompareResultInfo:
 
     @target_table_name.setter
     def target_table_name(self, target_table_name):
-        """Sets the target_table_name of this TableLineCompareResultInfo.
+        r"""Sets the target_table_name of this TableLineCompareResultInfo.
 
         目标库表名称
 
@@ -151,7 +151,7 @@ class TableLineCompareResultInfo:
 
     @property
     def target_row_num(self):
-        """Gets the target_row_num of this TableLineCompareResultInfo.
+        r"""Gets the target_row_num of this TableLineCompareResultInfo.
 
         目标库表行数
 
@@ -162,7 +162,7 @@ class TableLineCompareResultInfo:
 
     @target_row_num.setter
     def target_row_num(self, target_row_num):
-        """Sets the target_row_num of this TableLineCompareResultInfo.
+        r"""Sets the target_row_num of this TableLineCompareResultInfo.
 
         目标库表行数
 
@@ -173,7 +173,7 @@ class TableLineCompareResultInfo:
 
     @property
     def difference_row_num(self):
-        """Gets the difference_row_num of this TableLineCompareResultInfo.
+        r"""Gets the difference_row_num of this TableLineCompareResultInfo.
 
         行数差异值
 
@@ -184,7 +184,7 @@ class TableLineCompareResultInfo:
 
     @difference_row_num.setter
     def difference_row_num(self, difference_row_num):
-        """Sets the difference_row_num of this TableLineCompareResultInfo.
+        r"""Sets the difference_row_num of this TableLineCompareResultInfo.
 
         行数差异值
 
@@ -195,7 +195,7 @@ class TableLineCompareResultInfo:
 
     @property
     def status(self):
-        """Gets the status of this TableLineCompareResultInfo.
+        r"""Gets the status of this TableLineCompareResultInfo.
 
         对比状态。 - 0：对比不一致 - 2：对比一致 - 3：目标库表不存在 - 4：对比失败 - 5：正在对比中 - 6：等待对比中 - 7：任务已取消 - 8：源库为空 - 9：目标库为空 - 10：源库和目标库都为空 - 11：源表不存在 - 12：目标表不存在 - 13：原表和目标表都不存在 - 14：源数据库连接失败 - 15：目标库数据库连接失败 - 16：源数据库执行SQL超时 - 17：目标数据库执行SQL超时 - 18：源数据库执行SQL错误 - 19：目标数据库执行SQL错误 - 20：源库和目标库都不存在 - 21：源库不存在 - 22：目标库不存在 - 23：行数为亿行，未进行对比 - 27：超时
 
@@ -206,7 +206,7 @@ class TableLineCompareResultInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this TableLineCompareResultInfo.
+        r"""Sets the status of this TableLineCompareResultInfo.
 
         对比状态。 - 0：对比不一致 - 2：对比一致 - 3：目标库表不存在 - 4：对比失败 - 5：正在对比中 - 6：等待对比中 - 7：任务已取消 - 8：源库为空 - 9：目标库为空 - 10：源库和目标库都为空 - 11：源表不存在 - 12：目标表不存在 - 13：原表和目标表都不存在 - 14：源数据库连接失败 - 15：目标库数据库连接失败 - 16：源数据库执行SQL超时 - 17：目标数据库执行SQL超时 - 18：源数据库执行SQL错误 - 19：目标数据库执行SQL错误 - 20：源库和目标库都不存在 - 21：源库不存在 - 22：目标库不存在 - 23：行数为亿行，未进行对比 - 27：超时
 
@@ -217,7 +217,7 @@ class TableLineCompareResultInfo:
 
     @property
     def compare_line_config_filter(self):
-        """Gets the compare_line_config_filter of this TableLineCompareResultInfo.
+        r"""Gets the compare_line_config_filter of this TableLineCompareResultInfo.
 
         行过滤配置条件
 
@@ -228,7 +228,7 @@ class TableLineCompareResultInfo:
 
     @compare_line_config_filter.setter
     def compare_line_config_filter(self, compare_line_config_filter):
-        """Sets the compare_line_config_filter of this TableLineCompareResultInfo.
+        r"""Sets the compare_line_config_filter of this TableLineCompareResultInfo.
 
         行过滤配置条件
 

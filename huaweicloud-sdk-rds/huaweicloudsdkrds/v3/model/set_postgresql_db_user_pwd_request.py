@@ -29,7 +29,7 @@ class SetPostgresqlDbUserPwdRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """SetPostgresqlDbUserPwdRequest
+        r"""SetPostgresqlDbUserPwdRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class SetPostgresqlDbUserPwdRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this SetPostgresqlDbUserPwdRequest.
+        r"""Gets the x_language of this SetPostgresqlDbUserPwdRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class SetPostgresqlDbUserPwdRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this SetPostgresqlDbUserPwdRequest.
+        r"""Sets the x_language of this SetPostgresqlDbUserPwdRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class SetPostgresqlDbUserPwdRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SetPostgresqlDbUserPwdRequest.
+        r"""Gets the instance_id of this SetPostgresqlDbUserPwdRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class SetPostgresqlDbUserPwdRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SetPostgresqlDbUserPwdRequest.
+        r"""Sets the instance_id of this SetPostgresqlDbUserPwdRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class SetPostgresqlDbUserPwdRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetPostgresqlDbUserPwdRequest.
+        r"""Gets the body of this SetPostgresqlDbUserPwdRequest.
 
         :return: The body of this SetPostgresqlDbUserPwdRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.DbUserPwdRequest`
@@ -109,7 +109,7 @@ class SetPostgresqlDbUserPwdRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetPostgresqlDbUserPwdRequest.
+        r"""Sets the body of this SetPostgresqlDbUserPwdRequest.
 
         :param body: The body of this SetPostgresqlDbUserPwdRequest.
         :type body: :class:`huaweicloudsdkrds.v3.DbUserPwdRequest`

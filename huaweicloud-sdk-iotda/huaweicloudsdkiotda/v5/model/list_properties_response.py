@@ -32,7 +32,7 @@ class ListPropertiesResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, response=None, error_code=None, error_msg=None):
-        """ListPropertiesResponse
+        r"""ListPropertiesResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListPropertiesResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListPropertiesResponse.
+        r"""Gets the request_id of this ListPropertiesResponse.
 
         设备属性查询ID，用于唯一标识一条属性查询，在下发查询属性时由物联网平台分配获得。
 
@@ -76,7 +76,7 @@ class ListPropertiesResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListPropertiesResponse.
+        r"""Sets the request_id of this ListPropertiesResponse.
 
         设备属性查询ID，用于唯一标识一条属性查询，在下发查询属性时由物联网平台分配获得。
 
@@ -87,7 +87,7 @@ class ListPropertiesResponse(SdkResponse):
 
     @property
     def response(self):
-        """Gets the response of this ListPropertiesResponse.
+        r"""Gets the response of this ListPropertiesResponse.
 
         设备上报的属性执行结果。Json格式，具体格式需要应用和设备约定。
 
@@ -98,7 +98,7 @@ class ListPropertiesResponse(SdkResponse):
 
     @response.setter
     def response(self, response):
-        """Sets the response of this ListPropertiesResponse.
+        r"""Sets the response of this ListPropertiesResponse.
 
         设备上报的属性执行结果。Json格式，具体格式需要应用和设备约定。
 
@@ -109,7 +109,7 @@ class ListPropertiesResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ListPropertiesResponse.
+        r"""Gets the error_code of this ListPropertiesResponse.
 
         属性查询异常错误码。
 
@@ -120,7 +120,7 @@ class ListPropertiesResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ListPropertiesResponse.
+        r"""Sets the error_code of this ListPropertiesResponse.
 
         属性查询异常错误码。
 
@@ -131,7 +131,7 @@ class ListPropertiesResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ListPropertiesResponse.
+        r"""Gets the error_msg of this ListPropertiesResponse.
 
         属性查询异常错误信息。
 
@@ -142,7 +142,7 @@ class ListPropertiesResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ListPropertiesResponse.
+        r"""Sets the error_msg of this ListPropertiesResponse.
 
         属性查询异常错误信息。
 

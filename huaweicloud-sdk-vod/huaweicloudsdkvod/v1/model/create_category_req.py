@@ -27,7 +27,7 @@ class CreateCategoryReq:
     }
 
     def __init__(self, name=None, parent_id=None):
-        """CreateCategoryReq
+        r"""CreateCategoryReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateCategoryReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateCategoryReq.
+        r"""Gets the name of this CreateCategoryReq.
 
         媒资分类名称，最大64字节。
 
@@ -60,7 +60,7 @@ class CreateCategoryReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateCategoryReq.
+        r"""Sets the name of this CreateCategoryReq.
 
         媒资分类名称，最大64字节。
 
@@ -71,7 +71,7 @@ class CreateCategoryReq:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this CreateCategoryReq.
+        r"""Gets the parent_id of this CreateCategoryReq.
 
         父分类ID。  若不填，则默认生成一级分类。  根节点分类ID为0。
 
@@ -82,7 +82,7 @@ class CreateCategoryReq:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this CreateCategoryReq.
+        r"""Sets the parent_id of this CreateCategoryReq.
 
         父分类ID。  若不填，则默认生成一级分类。  根节点分类ID为0。
 

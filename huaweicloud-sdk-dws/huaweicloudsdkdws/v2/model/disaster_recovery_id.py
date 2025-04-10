@@ -25,7 +25,7 @@ class DisasterRecoveryId:
     }
 
     def __init__(self, id=None):
-        """DisasterRecoveryId
+        r"""DisasterRecoveryId
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DisasterRecoveryId:
 
     @property
     def id(self):
-        """Gets the id of this DisasterRecoveryId.
+        r"""Gets the id of this DisasterRecoveryId.
 
         容灾ID
 
@@ -54,7 +54,7 @@ class DisasterRecoveryId:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DisasterRecoveryId.
+        r"""Sets the id of this DisasterRecoveryId.
 
         容灾ID
 

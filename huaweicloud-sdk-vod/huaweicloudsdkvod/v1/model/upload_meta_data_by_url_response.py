@@ -26,7 +26,7 @@ class UploadMetaDataByUrlResponse(SdkResponse):
     }
 
     def __init__(self, upload_assets=None):
-        """UploadMetaDataByUrlResponse
+        r"""UploadMetaDataByUrlResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UploadMetaDataByUrlResponse(SdkResponse):
 
     @property
     def upload_assets(self):
-        """Gets the upload_assets of this UploadMetaDataByUrlResponse.
+        r"""Gets the upload_assets of this UploadMetaDataByUrlResponse.
 
         待拉取创建的媒资元数据
 
@@ -55,7 +55,7 @@ class UploadMetaDataByUrlResponse(SdkResponse):
 
     @upload_assets.setter
     def upload_assets(self, upload_assets):
-        """Sets the upload_assets of this UploadMetaDataByUrlResponse.
+        r"""Sets the upload_assets of this UploadMetaDataByUrlResponse.
 
         待拉取创建的媒资元数据
 

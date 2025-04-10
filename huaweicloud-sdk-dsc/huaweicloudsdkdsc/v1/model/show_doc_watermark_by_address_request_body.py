@@ -31,7 +31,7 @@ class ShowDocWatermarkByAddressRequestBody:
     }
 
     def __init__(self, region_id=None, doc_type=None, src_file=None, file_password=None):
-        """ShowDocWatermarkByAddressRequestBody
+        r"""ShowDocWatermarkByAddressRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ShowDocWatermarkByAddressRequestBody:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ShowDocWatermarkByAddressRequestBody.
+        r"""Gets the region_id of this ShowDocWatermarkByAddressRequestBody.
 
         项目所在region的id，如：xx-xx-1。
 
@@ -72,7 +72,7 @@ class ShowDocWatermarkByAddressRequestBody:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ShowDocWatermarkByAddressRequestBody.
+        r"""Sets the region_id of this ShowDocWatermarkByAddressRequestBody.
 
         项目所在region的id，如：xx-xx-1。
 
@@ -83,7 +83,7 @@ class ShowDocWatermarkByAddressRequestBody:
 
     @property
     def doc_type(self):
-        """Gets the doc_type of this ShowDocWatermarkByAddressRequestBody.
+        r"""Gets the doc_type of this ShowDocWatermarkByAddressRequestBody.
 
         待提取水印的文档类型
 
@@ -94,7 +94,7 @@ class ShowDocWatermarkByAddressRequestBody:
 
     @doc_type.setter
     def doc_type(self, doc_type):
-        """Sets the doc_type of this ShowDocWatermarkByAddressRequestBody.
+        r"""Sets the doc_type of this ShowDocWatermarkByAddressRequestBody.
 
         待提取水印的文档类型
 
@@ -105,7 +105,7 @@ class ShowDocWatermarkByAddressRequestBody:
 
     @property
     def src_file(self):
-        """Gets the src_file of this ShowDocWatermarkByAddressRequestBody.
+        r"""Gets the src_file of this ShowDocWatermarkByAddressRequestBody.
 
         待提取文字暗水印的文档的地址，当前只支持华为云OBS对象，格式为 **obs://bucket/object** ，其中bucket为和当前项目处于同一区域的OBS桶名称，object为对象全路径名。例如：**obs://hwbucket/hwinfo/hw.doc**，其中obs://表示OBS存储，hwbucket为桶名，hwinfo/hw.doc为对象全路径名。
 
@@ -116,7 +116,7 @@ class ShowDocWatermarkByAddressRequestBody:
 
     @src_file.setter
     def src_file(self, src_file):
-        """Sets the src_file of this ShowDocWatermarkByAddressRequestBody.
+        r"""Sets the src_file of this ShowDocWatermarkByAddressRequestBody.
 
         待提取文字暗水印的文档的地址，当前只支持华为云OBS对象，格式为 **obs://bucket/object** ，其中bucket为和当前项目处于同一区域的OBS桶名称，object为对象全路径名。例如：**obs://hwbucket/hwinfo/hw.doc**，其中obs://表示OBS存储，hwbucket为桶名，hwinfo/hw.doc为对象全路径名。
 
@@ -127,7 +127,7 @@ class ShowDocWatermarkByAddressRequestBody:
 
     @property
     def file_password(self):
-        """Gets the file_password of this ShowDocWatermarkByAddressRequestBody.
+        r"""Gets the file_password of this ShowDocWatermarkByAddressRequestBody.
 
         解密文件的密码， 最大支持长度256。如果Office文档有读密码或域控的权限密码，请输入读密码，或者有读权限的域控密码。
 
@@ -138,7 +138,7 @@ class ShowDocWatermarkByAddressRequestBody:
 
     @file_password.setter
     def file_password(self, file_password):
-        """Sets the file_password of this ShowDocWatermarkByAddressRequestBody.
+        r"""Sets the file_password of this ShowDocWatermarkByAddressRequestBody.
 
         解密文件的密码， 最大支持长度256。如果Office文档有读密码或域控的权限密码，请输入读密码，或者有读权限的域控密码。
 

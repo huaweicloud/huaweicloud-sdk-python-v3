@@ -27,7 +27,7 @@ class PlainMoleculeItem:
     }
 
     def __init__(self, smiles=None, props=None):
-        """PlainMoleculeItem
+        r"""PlainMoleculeItem
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class PlainMoleculeItem:
 
     @property
     def smiles(self):
-        """Gets the smiles of this PlainMoleculeItem.
+        r"""Gets the smiles of this PlainMoleculeItem.
 
         分子SMILES表达式
 
@@ -59,7 +59,7 @@ class PlainMoleculeItem:
 
     @smiles.setter
     def smiles(self, smiles):
-        """Sets the smiles of this PlainMoleculeItem.
+        r"""Sets the smiles of this PlainMoleculeItem.
 
         分子SMILES表达式
 
@@ -70,7 +70,7 @@ class PlainMoleculeItem:
 
     @property
     def props(self):
-        """Gets the props of this PlainMoleculeItem.
+        r"""Gets the props of this PlainMoleculeItem.
 
         分子ADMET属性值列表
 
@@ -81,7 +81,7 @@ class PlainMoleculeItem:
 
     @props.setter
     def props(self, props):
-        """Sets the props of this PlainMoleculeItem.
+        r"""Sets the props of this PlainMoleculeItem.
 
         分子ADMET属性值列表
 

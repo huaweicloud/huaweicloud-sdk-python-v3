@@ -37,7 +37,7 @@ class TraceTopologyLine:
     }
 
     def __init__(self, start_node_id=None, end_node_id=None, span_id=None, client_info=None, server_info=None, id=None, hint=None):
-        """TraceTopologyLine
+        r"""TraceTopologyLine
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class TraceTopologyLine:
 
     @property
     def start_node_id(self):
-        """Gets the start_node_id of this TraceTopologyLine.
+        r"""Gets the start_node_id of this TraceTopologyLine.
 
         开始节点id。
 
@@ -96,7 +96,7 @@ class TraceTopologyLine:
 
     @start_node_id.setter
     def start_node_id(self, start_node_id):
-        """Sets the start_node_id of this TraceTopologyLine.
+        r"""Sets the start_node_id of this TraceTopologyLine.
 
         开始节点id。
 
@@ -107,7 +107,7 @@ class TraceTopologyLine:
 
     @property
     def end_node_id(self):
-        """Gets the end_node_id of this TraceTopologyLine.
+        r"""Gets the end_node_id of this TraceTopologyLine.
 
         结束节点id。
 
@@ -118,7 +118,7 @@ class TraceTopologyLine:
 
     @end_node_id.setter
     def end_node_id(self, end_node_id):
-        """Sets the end_node_id of this TraceTopologyLine.
+        r"""Sets the end_node_id of this TraceTopologyLine.
 
         结束节点id。
 
@@ -129,7 +129,7 @@ class TraceTopologyLine:
 
     @property
     def span_id(self):
-        """Gets the span_id of this TraceTopologyLine.
+        r"""Gets the span_id of this TraceTopologyLine.
 
         调用跨度id。
 
@@ -140,7 +140,7 @@ class TraceTopologyLine:
 
     @span_id.setter
     def span_id(self, span_id):
-        """Sets the span_id of this TraceTopologyLine.
+        r"""Sets the span_id of this TraceTopologyLine.
 
         调用跨度id。
 
@@ -151,7 +151,7 @@ class TraceTopologyLine:
 
     @property
     def client_info(self):
-        """Gets the client_info of this TraceTopologyLine.
+        r"""Gets the client_info of this TraceTopologyLine.
 
         :return: The client_info of this TraceTopologyLine.
         :rtype: :class:`huaweicloudsdkapm.v1.TraceTopologyLineInfo`
@@ -160,7 +160,7 @@ class TraceTopologyLine:
 
     @client_info.setter
     def client_info(self, client_info):
-        """Sets the client_info of this TraceTopologyLine.
+        r"""Sets the client_info of this TraceTopologyLine.
 
         :param client_info: The client_info of this TraceTopologyLine.
         :type client_info: :class:`huaweicloudsdkapm.v1.TraceTopologyLineInfo`
@@ -169,7 +169,7 @@ class TraceTopologyLine:
 
     @property
     def server_info(self):
-        """Gets the server_info of this TraceTopologyLine.
+        r"""Gets the server_info of this TraceTopologyLine.
 
         :return: The server_info of this TraceTopologyLine.
         :rtype: :class:`huaweicloudsdkapm.v1.TraceTopologyLineInfo`
@@ -178,7 +178,7 @@ class TraceTopologyLine:
 
     @server_info.setter
     def server_info(self, server_info):
-        """Sets the server_info of this TraceTopologyLine.
+        r"""Sets the server_info of this TraceTopologyLine.
 
         :param server_info: The server_info of this TraceTopologyLine.
         :type server_info: :class:`huaweicloudsdkapm.v1.TraceTopologyLineInfo`
@@ -187,7 +187,7 @@ class TraceTopologyLine:
 
     @property
     def id(self):
-        """Gets the id of this TraceTopologyLine.
+        r"""Gets the id of this TraceTopologyLine.
 
         id。
 
@@ -198,7 +198,7 @@ class TraceTopologyLine:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TraceTopologyLine.
+        r"""Sets the id of this TraceTopologyLine.
 
         id。
 
@@ -209,7 +209,7 @@ class TraceTopologyLine:
 
     @property
     def hint(self):
-        """Gets the hint of this TraceTopologyLine.
+        r"""Gets the hint of this TraceTopologyLine.
 
         获取一条线的提示信息。
 
@@ -220,7 +220,7 @@ class TraceTopologyLine:
 
     @hint.setter
     def hint(self, hint):
-        """Sets the hint of this TraceTopologyLine.
+        r"""Sets the hint of this TraceTopologyLine.
 
         获取一条线的提示信息。
 

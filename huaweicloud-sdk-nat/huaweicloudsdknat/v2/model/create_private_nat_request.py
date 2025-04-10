@@ -25,7 +25,7 @@ class CreatePrivateNatRequest:
     }
 
     def __init__(self, body=None):
-        """CreatePrivateNatRequest
+        r"""CreatePrivateNatRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreatePrivateNatRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePrivateNatRequest.
+        r"""Gets the body of this CreatePrivateNatRequest.
 
         :return: The body of this CreatePrivateNatRequest.
         :rtype: :class:`huaweicloudsdknat.v2.CreatePrivateNatRequestBody`
@@ -52,7 +52,7 @@ class CreatePrivateNatRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePrivateNatRequest.
+        r"""Sets the body of this CreatePrivateNatRequest.
 
         :param body: The body of this CreatePrivateNatRequest.
         :type body: :class:`huaweicloudsdknat.v2.CreatePrivateNatRequestBody`

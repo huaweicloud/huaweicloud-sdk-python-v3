@@ -29,7 +29,7 @@ class CreateApplicationRequestBody:
     }
 
     def __init__(self, api_version=None, kind=None, metadata=None):
-        """CreateApplicationRequestBody
+        r"""CreateApplicationRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CreateApplicationRequestBody:
 
     @property
     def api_version(self):
-        """Gets the api_version of this CreateApplicationRequestBody.
+        r"""Gets the api_version of this CreateApplicationRequestBody.
 
         :return: The api_version of this CreateApplicationRequestBody.
         :rtype: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -63,7 +63,7 @@ class CreateApplicationRequestBody:
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this CreateApplicationRequestBody.
+        r"""Sets the api_version of this CreateApplicationRequestBody.
 
         :param api_version: The api_version of this CreateApplicationRequestBody.
         :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -72,7 +72,7 @@ class CreateApplicationRequestBody:
 
     @property
     def kind(self):
-        """Gets the kind of this CreateApplicationRequestBody.
+        r"""Gets the kind of this CreateApplicationRequestBody.
 
         :return: The kind of this CreateApplicationRequestBody.
         :rtype: :class:`huaweicloudsdkcae.v1.ApplicationKindObj`
@@ -81,7 +81,7 @@ class CreateApplicationRequestBody:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this CreateApplicationRequestBody.
+        r"""Sets the kind of this CreateApplicationRequestBody.
 
         :param kind: The kind of this CreateApplicationRequestBody.
         :type kind: :class:`huaweicloudsdkcae.v1.ApplicationKindObj`
@@ -90,7 +90,7 @@ class CreateApplicationRequestBody:
 
     @property
     def metadata(self):
-        """Gets the metadata of this CreateApplicationRequestBody.
+        r"""Gets the metadata of this CreateApplicationRequestBody.
 
         :return: The metadata of this CreateApplicationRequestBody.
         :rtype: :class:`huaweicloudsdkcae.v1.CreateApplicationRequestBodyMetadata`
@@ -99,7 +99,7 @@ class CreateApplicationRequestBody:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this CreateApplicationRequestBody.
+        r"""Sets the metadata of this CreateApplicationRequestBody.
 
         :param metadata: The metadata of this CreateApplicationRequestBody.
         :type metadata: :class:`huaweicloudsdkcae.v1.CreateApplicationRequestBodyMetadata`

@@ -26,7 +26,7 @@ class UpdateNodeByDeviceIdResponse(SdkResponse):
     }
 
     def __init__(self, update_nodes=None):
-        """UpdateNodeByDeviceIdResponse
+        r"""UpdateNodeByDeviceIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateNodeByDeviceIdResponse(SdkResponse):
 
     @property
     def update_nodes(self):
-        """Gets the update_nodes of this UpdateNodeByDeviceIdResponse.
+        r"""Gets the update_nodes of this UpdateNodeByDeviceIdResponse.
 
         :return: The update_nodes of this UpdateNodeByDeviceIdResponse.
         :rtype: :class:`huaweicloudsdkief.v1.NodeUpdateByDevice`
@@ -53,7 +53,7 @@ class UpdateNodeByDeviceIdResponse(SdkResponse):
 
     @update_nodes.setter
     def update_nodes(self, update_nodes):
-        """Sets the update_nodes of this UpdateNodeByDeviceIdResponse.
+        r"""Sets the update_nodes of this UpdateNodeByDeviceIdResponse.
 
         :param update_nodes: The update_nodes of this UpdateNodeByDeviceIdResponse.
         :type update_nodes: :class:`huaweicloudsdkief.v1.NodeUpdateByDevice`

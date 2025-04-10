@@ -26,7 +26,7 @@ class ListProjectDemandStaticV4Response(SdkResponse):
     }
 
     def __init__(self, demand_statistics=None):
-        """ListProjectDemandStaticV4Response
+        r"""ListProjectDemandStaticV4Response
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListProjectDemandStaticV4Response(SdkResponse):
 
     @property
     def demand_statistics(self):
-        """Gets the demand_statistics of this ListProjectDemandStaticV4Response.
+        r"""Gets the demand_statistics of this ListProjectDemandStaticV4Response.
 
         需求统计
 
@@ -55,7 +55,7 @@ class ListProjectDemandStaticV4Response(SdkResponse):
 
     @demand_statistics.setter
     def demand_statistics(self, demand_statistics):
-        """Sets the demand_statistics of this ListProjectDemandStaticV4Response.
+        r"""Sets the demand_statistics of this ListProjectDemandStaticV4Response.
 
         需求统计
 

@@ -25,7 +25,7 @@ class CreateDomainMappingRequest:
     }
 
     def __init__(self, body=None):
-        """CreateDomainMappingRequest
+        r"""CreateDomainMappingRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateDomainMappingRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDomainMappingRequest.
+        r"""Gets the body of this CreateDomainMappingRequest.
 
         :return: The body of this CreateDomainMappingRequest.
         :rtype: :class:`huaweicloudsdklive.v1.DomainMapping`
@@ -52,7 +52,7 @@ class CreateDomainMappingRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDomainMappingRequest.
+        r"""Sets the body of this CreateDomainMappingRequest.
 
         :param body: The body of this CreateDomainMappingRequest.
         :type body: :class:`huaweicloudsdklive.v1.DomainMapping`

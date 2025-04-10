@@ -27,7 +27,7 @@ class UpdateListenerRequest:
     }
 
     def __init__(self, listener_id=None, body=None):
-        """UpdateListenerRequest
+        r"""UpdateListenerRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateListenerRequest:
 
     @property
     def listener_id(self):
-        """Gets the listener_id of this UpdateListenerRequest.
+        r"""Gets the listener_id of this UpdateListenerRequest.
 
         监听器ID。
 
@@ -60,7 +60,7 @@ class UpdateListenerRequest:
 
     @listener_id.setter
     def listener_id(self, listener_id):
-        """Sets the listener_id of this UpdateListenerRequest.
+        r"""Sets the listener_id of this UpdateListenerRequest.
 
         监听器ID。
 
@@ -71,7 +71,7 @@ class UpdateListenerRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateListenerRequest.
+        r"""Gets the body of this UpdateListenerRequest.
 
         :return: The body of this UpdateListenerRequest.
         :rtype: :class:`huaweicloudsdkga.v1.UpdateListenerRequestBody`
@@ -80,7 +80,7 @@ class UpdateListenerRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateListenerRequest.
+        r"""Sets the body of this UpdateListenerRequest.
 
         :param body: The body of this UpdateListenerRequest.
         :type body: :class:`huaweicloudsdkga.v1.UpdateListenerRequestBody`

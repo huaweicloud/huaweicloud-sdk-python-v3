@@ -30,7 +30,7 @@ class ListFacialAnimationsDataResponse(SdkResponse):
     }
 
     def __init__(self, csv_file_download_url=None, state=None, error_message=None):
-        """ListFacialAnimationsDataResponse
+        r"""ListFacialAnimationsDataResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListFacialAnimationsDataResponse(SdkResponse):
 
     @property
     def csv_file_download_url(self):
-        """Gets the csv_file_download_url of this ListFacialAnimationsDataResponse.
+        r"""Gets the csv_file_download_url of this ListFacialAnimationsDataResponse.
 
         csv文件下载地址
 
@@ -69,7 +69,7 @@ class ListFacialAnimationsDataResponse(SdkResponse):
 
     @csv_file_download_url.setter
     def csv_file_download_url(self, csv_file_download_url):
-        """Sets the csv_file_download_url of this ListFacialAnimationsDataResponse.
+        r"""Sets the csv_file_download_url of this ListFacialAnimationsDataResponse.
 
         csv文件下载地址
 
@@ -80,7 +80,7 @@ class ListFacialAnimationsDataResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this ListFacialAnimationsDataResponse.
+        r"""Gets the state of this ListFacialAnimationsDataResponse.
 
         任务的状态。 * PROCESSING：处理中 * SUCCEED：成功 * FAILED：失败
 
@@ -91,7 +91,7 @@ class ListFacialAnimationsDataResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ListFacialAnimationsDataResponse.
+        r"""Sets the state of this ListFacialAnimationsDataResponse.
 
         任务的状态。 * PROCESSING：处理中 * SUCCEED：成功 * FAILED：失败
 
@@ -102,7 +102,7 @@ class ListFacialAnimationsDataResponse(SdkResponse):
 
     @property
     def error_message(self):
-        """Gets the error_message of this ListFacialAnimationsDataResponse.
+        r"""Gets the error_message of this ListFacialAnimationsDataResponse.
 
         失败任务描述
 
@@ -113,7 +113,7 @@ class ListFacialAnimationsDataResponse(SdkResponse):
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this ListFacialAnimationsDataResponse.
+        r"""Sets the error_message of this ListFacialAnimationsDataResponse.
 
         失败任务描述
 

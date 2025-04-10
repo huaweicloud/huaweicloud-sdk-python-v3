@@ -37,7 +37,7 @@ class ListRequestThrottlingPoliciesBindedToApiV2Request:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, api_id=None, throttle_id=None, throttle_name=None, env_id=None):
-        """ListRequestThrottlingPoliciesBindedToApiV2Request
+        r"""ListRequestThrottlingPoliciesBindedToApiV2Request
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class ListRequestThrottlingPoliciesBindedToApiV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListRequestThrottlingPoliciesBindedToApiV2Request.
+        r"""Gets the instance_id of this ListRequestThrottlingPoliciesBindedToApiV2Request.
 
         实例ID
 
@@ -94,7 +94,7 @@ class ListRequestThrottlingPoliciesBindedToApiV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListRequestThrottlingPoliciesBindedToApiV2Request.
+        r"""Sets the instance_id of this ListRequestThrottlingPoliciesBindedToApiV2Request.
 
         实例ID
 
@@ -105,7 +105,7 @@ class ListRequestThrottlingPoliciesBindedToApiV2Request:
 
     @property
     def offset(self):
-        """Gets the offset of this ListRequestThrottlingPoliciesBindedToApiV2Request.
+        r"""Gets the offset of this ListRequestThrottlingPoliciesBindedToApiV2Request.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -116,7 +116,7 @@ class ListRequestThrottlingPoliciesBindedToApiV2Request:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListRequestThrottlingPoliciesBindedToApiV2Request.
+        r"""Sets the offset of this ListRequestThrottlingPoliciesBindedToApiV2Request.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -127,7 +127,7 @@ class ListRequestThrottlingPoliciesBindedToApiV2Request:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRequestThrottlingPoliciesBindedToApiV2Request.
+        r"""Gets the limit of this ListRequestThrottlingPoliciesBindedToApiV2Request.
 
         每页显示的条目数量
 
@@ -138,7 +138,7 @@ class ListRequestThrottlingPoliciesBindedToApiV2Request:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRequestThrottlingPoliciesBindedToApiV2Request.
+        r"""Sets the limit of this ListRequestThrottlingPoliciesBindedToApiV2Request.
 
         每页显示的条目数量
 
@@ -149,7 +149,7 @@ class ListRequestThrottlingPoliciesBindedToApiV2Request:
 
     @property
     def api_id(self):
-        """Gets the api_id of this ListRequestThrottlingPoliciesBindedToApiV2Request.
+        r"""Gets the api_id of this ListRequestThrottlingPoliciesBindedToApiV2Request.
 
         API编号
 
@@ -160,7 +160,7 @@ class ListRequestThrottlingPoliciesBindedToApiV2Request:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this ListRequestThrottlingPoliciesBindedToApiV2Request.
+        r"""Sets the api_id of this ListRequestThrottlingPoliciesBindedToApiV2Request.
 
         API编号
 
@@ -171,7 +171,7 @@ class ListRequestThrottlingPoliciesBindedToApiV2Request:
 
     @property
     def throttle_id(self):
-        """Gets the throttle_id of this ListRequestThrottlingPoliciesBindedToApiV2Request.
+        r"""Gets the throttle_id of this ListRequestThrottlingPoliciesBindedToApiV2Request.
 
         流控策略的编号
 
@@ -182,7 +182,7 @@ class ListRequestThrottlingPoliciesBindedToApiV2Request:
 
     @throttle_id.setter
     def throttle_id(self, throttle_id):
-        """Sets the throttle_id of this ListRequestThrottlingPoliciesBindedToApiV2Request.
+        r"""Sets the throttle_id of this ListRequestThrottlingPoliciesBindedToApiV2Request.
 
         流控策略的编号
 
@@ -193,7 +193,7 @@ class ListRequestThrottlingPoliciesBindedToApiV2Request:
 
     @property
     def throttle_name(self):
-        """Gets the throttle_name of this ListRequestThrottlingPoliciesBindedToApiV2Request.
+        r"""Gets the throttle_name of this ListRequestThrottlingPoliciesBindedToApiV2Request.
 
         流控策略的名称
 
@@ -204,7 +204,7 @@ class ListRequestThrottlingPoliciesBindedToApiV2Request:
 
     @throttle_name.setter
     def throttle_name(self, throttle_name):
-        """Sets the throttle_name of this ListRequestThrottlingPoliciesBindedToApiV2Request.
+        r"""Sets the throttle_name of this ListRequestThrottlingPoliciesBindedToApiV2Request.
 
         流控策略的名称
 
@@ -215,7 +215,7 @@ class ListRequestThrottlingPoliciesBindedToApiV2Request:
 
     @property
     def env_id(self):
-        """Gets the env_id of this ListRequestThrottlingPoliciesBindedToApiV2Request.
+        r"""Gets the env_id of this ListRequestThrottlingPoliciesBindedToApiV2Request.
 
         绑定的环境编号
 
@@ -226,7 +226,7 @@ class ListRequestThrottlingPoliciesBindedToApiV2Request:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this ListRequestThrottlingPoliciesBindedToApiV2Request.
+        r"""Sets the env_id of this ListRequestThrottlingPoliciesBindedToApiV2Request.
 
         绑定的环境编号
 

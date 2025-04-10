@@ -30,7 +30,7 @@ class ListPortTagsResponse(SdkResponse):
     }
 
     def __init__(self, tags=None, request_id=None, total_count=None):
-        """ListPortTagsResponse
+        r"""ListPortTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListPortTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ListPortTagsResponse.
+        r"""Gets the tags of this ListPortTagsResponse.
 
         tag对象列表
 
@@ -69,7 +69,7 @@ class ListPortTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListPortTagsResponse.
+        r"""Sets the tags of this ListPortTagsResponse.
 
         tag对象列表
 
@@ -80,7 +80,7 @@ class ListPortTagsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListPortTagsResponse.
+        r"""Gets the request_id of this ListPortTagsResponse.
 
         请求ID
 
@@ -91,7 +91,7 @@ class ListPortTagsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListPortTagsResponse.
+        r"""Sets the request_id of this ListPortTagsResponse.
 
         请求ID
 
@@ -102,7 +102,7 @@ class ListPortTagsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListPortTagsResponse.
+        r"""Gets the total_count of this ListPortTagsResponse.
 
         资源数量
 
@@ -113,7 +113,7 @@ class ListPortTagsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListPortTagsResponse.
+        r"""Sets the total_count of this ListPortTagsResponse.
 
         资源数量
 

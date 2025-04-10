@@ -32,7 +32,7 @@ class ExportTableResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, job_id=None, job_mode=None):
-        """ExportTableResponse
+        r"""ExportTableResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ExportTableResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ExportTableResponse.
+        r"""Gets the is_success of this ExportTableResponse.
 
         请求发送是否成功。“true”表示请求发送成功。
 
@@ -76,7 +76,7 @@ class ExportTableResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ExportTableResponse.
+        r"""Sets the is_success of this ExportTableResponse.
 
         请求发送是否成功。“true”表示请求发送成功。
 
@@ -87,7 +87,7 @@ class ExportTableResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ExportTableResponse.
+        r"""Gets the message of this ExportTableResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -98,7 +98,7 @@ class ExportTableResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ExportTableResponse.
+        r"""Sets the message of this ExportTableResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -109,7 +109,7 @@ class ExportTableResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ExportTableResponse.
+        r"""Gets the job_id of this ExportTableResponse.
 
         此SQL将生成并提交一个新的作业，返回作业ID。用户可以使用作业ID来查询作业状态和获取作业结果。
 
@@ -120,7 +120,7 @@ class ExportTableResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ExportTableResponse.
+        r"""Sets the job_id of this ExportTableResponse.
 
         此SQL将生成并提交一个新的作业，返回作业ID。用户可以使用作业ID来查询作业状态和获取作业结果。
 
@@ -131,7 +131,7 @@ class ExportTableResponse(SdkResponse):
 
     @property
     def job_mode(self):
-        """Gets the job_mode of this ExportTableResponse.
+        r"""Gets the job_mode of this ExportTableResponse.
 
         作业执行方式，是同步还是异步执行
 
@@ -142,7 +142,7 @@ class ExportTableResponse(SdkResponse):
 
     @job_mode.setter
     def job_mode(self, job_mode):
-        """Sets the job_mode of this ExportTableResponse.
+        r"""Sets the job_mode of this ExportTableResponse.
 
         作业执行方式，是同步还是异步执行
 

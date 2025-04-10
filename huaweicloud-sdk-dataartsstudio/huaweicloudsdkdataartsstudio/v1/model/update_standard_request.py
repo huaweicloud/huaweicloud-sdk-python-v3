@@ -31,7 +31,7 @@ class UpdateStandardRequest:
     }
 
     def __init__(self, workspace=None, x_project_id=None, id=None, body=None):
-        """UpdateStandardRequest
+        r"""UpdateStandardRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class UpdateStandardRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this UpdateStandardRequest.
+        r"""Gets the workspace of this UpdateStandardRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -73,7 +73,7 @@ class UpdateStandardRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this UpdateStandardRequest.
+        r"""Sets the workspace of this UpdateStandardRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -84,7 +84,7 @@ class UpdateStandardRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this UpdateStandardRequest.
+        r"""Gets the x_project_id of this UpdateStandardRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -95,7 +95,7 @@ class UpdateStandardRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this UpdateStandardRequest.
+        r"""Sets the x_project_id of this UpdateStandardRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -106,7 +106,7 @@ class UpdateStandardRequest:
 
     @property
     def id(self):
-        """Gets the id of this UpdateStandardRequest.
+        r"""Gets the id of this UpdateStandardRequest.
 
         实体ID，ID字符串。
 
@@ -117,7 +117,7 @@ class UpdateStandardRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateStandardRequest.
+        r"""Sets the id of this UpdateStandardRequest.
 
         实体ID，ID字符串。
 
@@ -128,7 +128,7 @@ class UpdateStandardRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateStandardRequest.
+        r"""Gets the body of this UpdateStandardRequest.
 
         :return: The body of this UpdateStandardRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.StandElementValueVOList`
@@ -137,7 +137,7 @@ class UpdateStandardRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateStandardRequest.
+        r"""Sets the body of this UpdateStandardRequest.
 
         :param body: The body of this UpdateStandardRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.StandElementValueVOList`

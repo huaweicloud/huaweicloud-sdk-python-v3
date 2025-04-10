@@ -27,7 +27,7 @@ class SetHpcCacheBackendRequest:
     }
 
     def __init__(self, share_id=None, body=None):
-        """SetHpcCacheBackendRequest
+        r"""SetHpcCacheBackendRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SetHpcCacheBackendRequest:
 
     @property
     def share_id(self):
-        """Gets the share_id of this SetHpcCacheBackendRequest.
+        r"""Gets the share_id of this SetHpcCacheBackendRequest.
 
         文件系统ID
 
@@ -60,7 +60,7 @@ class SetHpcCacheBackendRequest:
 
     @share_id.setter
     def share_id(self, share_id):
-        """Sets the share_id of this SetHpcCacheBackendRequest.
+        r"""Sets the share_id of this SetHpcCacheBackendRequest.
 
         文件系统ID
 
@@ -71,7 +71,7 @@ class SetHpcCacheBackendRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetHpcCacheBackendRequest.
+        r"""Gets the body of this SetHpcCacheBackendRequest.
 
         :return: The body of this SetHpcCacheBackendRequest.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.ReqConfigHpcCacheBackend`
@@ -80,7 +80,7 @@ class SetHpcCacheBackendRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetHpcCacheBackendRequest.
+        r"""Sets the body of this SetHpcCacheBackendRequest.
 
         :param body: The body of this SetHpcCacheBackendRequest.
         :type body: :class:`huaweicloudsdksfsturbo.v1.ReqConfigHpcCacheBackend`

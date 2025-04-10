@@ -29,7 +29,7 @@ class UpdateAclAccountPassWordRequest:
     }
 
     def __init__(self, instance_id=None, account_id=None, body=None):
-        """UpdateAclAccountPassWordRequest
+        r"""UpdateAclAccountPassWordRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateAclAccountPassWordRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateAclAccountPassWordRequest.
+        r"""Gets the instance_id of this UpdateAclAccountPassWordRequest.
 
         实例ID。
 
@@ -66,7 +66,7 @@ class UpdateAclAccountPassWordRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateAclAccountPassWordRequest.
+        r"""Sets the instance_id of this UpdateAclAccountPassWordRequest.
 
         实例ID。
 
@@ -77,7 +77,7 @@ class UpdateAclAccountPassWordRequest:
 
     @property
     def account_id(self):
-        """Gets the account_id of this UpdateAclAccountPassWordRequest.
+        r"""Gets the account_id of this UpdateAclAccountPassWordRequest.
 
         ACL账号ID。
 
@@ -88,7 +88,7 @@ class UpdateAclAccountPassWordRequest:
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this UpdateAclAccountPassWordRequest.
+        r"""Sets the account_id of this UpdateAclAccountPassWordRequest.
 
         ACL账号ID。
 
@@ -99,7 +99,7 @@ class UpdateAclAccountPassWordRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAclAccountPassWordRequest.
+        r"""Gets the body of this UpdateAclAccountPassWordRequest.
 
         :return: The body of this UpdateAclAccountPassWordRequest.
         :rtype: :class:`huaweicloudsdkdcs.v2.AclAccountModifyPasswordBody`
@@ -108,7 +108,7 @@ class UpdateAclAccountPassWordRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAclAccountPassWordRequest.
+        r"""Sets the body of this UpdateAclAccountPassWordRequest.
 
         :param body: The body of this UpdateAclAccountPassWordRequest.
         :type body: :class:`huaweicloudsdkdcs.v2.AclAccountModifyPasswordBody`

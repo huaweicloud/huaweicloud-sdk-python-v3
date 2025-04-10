@@ -33,7 +33,7 @@ class Pipelines:
     }
 
     def __init__(self, name=None, status=None, keep_alive=None, events=None, update_at=None):
-        """Pipelines
+        r"""Pipelines
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class Pipelines:
 
     @property
     def name(self):
-        """Gets the name of this Pipelines.
+        r"""Gets the name of this Pipelines.
 
         配置文件名称。
 
@@ -82,7 +82,7 @@ class Pipelines:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Pipelines.
+        r"""Sets the name of this Pipelines.
 
         配置文件名称。
 
@@ -93,7 +93,7 @@ class Pipelines:
 
     @property
     def status(self):
-        """Gets the status of this Pipelines.
+        r"""Gets the status of this Pipelines.
 
         pipeline状态。
 
@@ -104,7 +104,7 @@ class Pipelines:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Pipelines.
+        r"""Sets the status of this Pipelines.
 
         pipeline状态。
 
@@ -115,7 +115,7 @@ class Pipelines:
 
     @property
     def keep_alive(self):
-        """Gets the keep_alive of this Pipelines.
+        r"""Gets the keep_alive of this Pipelines.
 
         是否开启常驻。
 
@@ -126,7 +126,7 @@ class Pipelines:
 
     @keep_alive.setter
     def keep_alive(self, keep_alive):
-        """Sets the keep_alive of this Pipelines.
+        r"""Sets the keep_alive of this Pipelines.
 
         是否开启常驻。
 
@@ -137,7 +137,7 @@ class Pipelines:
 
     @property
     def events(self):
-        """Gets the events of this Pipelines.
+        r"""Gets the events of this Pipelines.
 
         事件只有在“工作中”状态才可以实时查看（需要手动刷新），“已停止”状态请到output端查看迁移数据量。
 
@@ -148,7 +148,7 @@ class Pipelines:
 
     @events.setter
     def events(self, events):
-        """Sets the events of this Pipelines.
+        r"""Sets the events of this Pipelines.
 
         事件只有在“工作中”状态才可以实时查看（需要手动刷新），“已停止”状态请到output端查看迁移数据量。
 
@@ -159,7 +159,7 @@ class Pipelines:
 
     @property
     def update_at(self):
-        """Gets the update_at of this Pipelines.
+        r"""Gets the update_at of this Pipelines.
 
         更新时间。
 
@@ -170,7 +170,7 @@ class Pipelines:
 
     @update_at.setter
     def update_at(self, update_at):
-        """Sets the update_at of this Pipelines.
+        r"""Sets the update_at of this Pipelines.
 
         更新时间。
 

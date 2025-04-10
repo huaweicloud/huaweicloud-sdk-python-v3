@@ -27,7 +27,7 @@ class BatchDeleteZonesRequestBody:
     }
 
     def __init__(self, zone_type=None, zone_ids=None):
-        """BatchDeleteZonesRequestBody
+        r"""BatchDeleteZonesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchDeleteZonesRequestBody:
 
     @property
     def zone_type(self):
-        """Gets the zone_type of this BatchDeleteZonesRequestBody.
+        r"""Gets the zone_type of this BatchDeleteZonesRequestBody.
 
         待删除zone类型，当前仅支持 public 或 private。
 
@@ -59,7 +59,7 @@ class BatchDeleteZonesRequestBody:
 
     @zone_type.setter
     def zone_type(self, zone_type):
-        """Sets the zone_type of this BatchDeleteZonesRequestBody.
+        r"""Sets the zone_type of this BatchDeleteZonesRequestBody.
 
         待删除zone类型，当前仅支持 public 或 private。
 
@@ -70,7 +70,7 @@ class BatchDeleteZonesRequestBody:
 
     @property
     def zone_ids(self):
-        """Gets the zone_ids of this BatchDeleteZonesRequestBody.
+        r"""Gets the zone_ids of this BatchDeleteZonesRequestBody.
 
         待删除Zone ID列表。 最多支持50个。
 
@@ -81,7 +81,7 @@ class BatchDeleteZonesRequestBody:
 
     @zone_ids.setter
     def zone_ids(self, zone_ids):
-        """Sets the zone_ids of this BatchDeleteZonesRequestBody.
+        r"""Sets the zone_ids of this BatchDeleteZonesRequestBody.
 
         待删除Zone ID列表。 最多支持50个。
 

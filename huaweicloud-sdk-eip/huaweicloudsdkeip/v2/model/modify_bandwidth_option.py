@@ -31,7 +31,7 @@ class ModifyBandwidthOption:
     }
 
     def __init__(self, id=None, name=None, size=None, charge_mode=None):
-        """ModifyBandwidthOption
+        r"""ModifyBandwidthOption
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ModifyBandwidthOption:
 
     @property
     def id(self):
-        """Gets the id of this ModifyBandwidthOption.
+        r"""Gets the id of this ModifyBandwidthOption.
 
         - 功能说明：带宽唯一标识
 
@@ -74,7 +74,7 @@ class ModifyBandwidthOption:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ModifyBandwidthOption.
+        r"""Sets the id of this ModifyBandwidthOption.
 
         - 功能说明：带宽唯一标识
 
@@ -85,7 +85,7 @@ class ModifyBandwidthOption:
 
     @property
     def name(self):
-        """Gets the name of this ModifyBandwidthOption.
+        r"""Gets the name of this ModifyBandwidthOption.
 
         取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线），为空表示不修改名称  功能说明：带宽名称  约束：name、size必须有一个参数有值
 
@@ -96,7 +96,7 @@ class ModifyBandwidthOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ModifyBandwidthOption.
+        r"""Sets the name of this ModifyBandwidthOption.
 
         取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线），为空表示不修改名称  功能说明：带宽名称  约束：name、size必须有一个参数有值
 
@@ -107,7 +107,7 @@ class ModifyBandwidthOption:
 
     @property
     def size(self):
-        """Gets the size of this ModifyBandwidthOption.
+        r"""Gets the size of this ModifyBandwidthOption.
 
         取值范围：默认1Mbit/s~2000Mbit/s（具体范围以各区域配置为准，请参见控制台对应页面显示），不带此参数时表示不修改大小  功能说明：带宽大小，单位Mbit/s。  约束：name、size必须有一个参数有值  如果传入的参数为小数（如 10.2）或者字符类型（如“10”），会自动强制转换为整数。  约束：name、size必须要有一个参数有值。  调整带宽时的最小单位会根据带宽范围不同存在差异:  小于等于300Mbit/s：默认最小单位为1Mbit/s。  300Mbit/s~1000Mbit/s：默认最小单位为50Mbit/s。  大于1000Mbit/s：默认最小单位为500Mbit/s。
 
@@ -118,7 +118,7 @@ class ModifyBandwidthOption:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ModifyBandwidthOption.
+        r"""Sets the size of this ModifyBandwidthOption.
 
         取值范围：默认1Mbit/s~2000Mbit/s（具体范围以各区域配置为准，请参见控制台对应页面显示），不带此参数时表示不修改大小  功能说明：带宽大小，单位Mbit/s。  约束：name、size必须有一个参数有值  如果传入的参数为小数（如 10.2）或者字符类型（如“10”），会自动强制转换为整数。  约束：name、size必须要有一个参数有值。  调整带宽时的最小单位会根据带宽范围不同存在差异:  小于等于300Mbit/s：默认最小单位为1Mbit/s。  300Mbit/s~1000Mbit/s：默认最小单位为50Mbit/s。  大于1000Mbit/s：默认最小单位为500Mbit/s。
 
@@ -129,7 +129,7 @@ class ModifyBandwidthOption:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this ModifyBandwidthOption.
+        r"""Gets the charge_mode of this ModifyBandwidthOption.
 
         功能说明：按流量计费,按带宽计费还是按增强型95计费。  取值范围：bandwidth，traffic，95peak_plus(按增强型95计费)不返回或者为空时表示是bandwidth。  约束：只有共享带宽支持95peak_plus（按增强型95计费），按增强型95计费时需要指定保底百分比，默认是20%。
 
@@ -140,7 +140,7 @@ class ModifyBandwidthOption:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this ModifyBandwidthOption.
+        r"""Sets the charge_mode of this ModifyBandwidthOption.
 
         功能说明：按流量计费,按带宽计费还是按增强型95计费。  取值范围：bandwidth，traffic，95peak_plus(按增强型95计费)不返回或者为空时表示是bandwidth。  约束：只有共享带宽支持95peak_plus（按增强型95计费），按增强型95计费时需要指定保底百分比，默认是20%。
 

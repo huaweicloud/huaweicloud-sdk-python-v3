@@ -25,7 +25,7 @@ class NonRequiredCentralNetworkPlaneId:
     }
 
     def __init__(self, central_network_plane_id=None):
-        """NonRequiredCentralNetworkPlaneId
+        r"""NonRequiredCentralNetworkPlaneId
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class NonRequiredCentralNetworkPlaneId:
 
     @property
     def central_network_plane_id(self):
-        """Gets the central_network_plane_id of this NonRequiredCentralNetworkPlaneId.
+        r"""Gets the central_network_plane_id of this NonRequiredCentralNetworkPlaneId.
 
         中心网络平面ID。
 
@@ -54,7 +54,7 @@ class NonRequiredCentralNetworkPlaneId:
 
     @central_network_plane_id.setter
     def central_network_plane_id(self, central_network_plane_id):
-        """Sets the central_network_plane_id of this NonRequiredCentralNetworkPlaneId.
+        r"""Sets the central_network_plane_id of this NonRequiredCentralNetworkPlaneId.
 
         中心网络平面ID。
 

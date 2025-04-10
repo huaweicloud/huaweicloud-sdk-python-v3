@@ -29,7 +29,7 @@ class ValidityInterval:
     }
 
     def __init__(self, days=None, hours=None, minutes=None):
-        """ValidityInterval
+        r"""ValidityInterval
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ValidityInterval:
 
     @property
     def days(self):
-        """Gets the days of this ValidityInterval.
+        r"""Gets the days of this ValidityInterval.
 
         日
 
@@ -68,7 +68,7 @@ class ValidityInterval:
 
     @days.setter
     def days(self, days):
-        """Sets the days of this ValidityInterval.
+        r"""Sets the days of this ValidityInterval.
 
         日
 
@@ -79,7 +79,7 @@ class ValidityInterval:
 
     @property
     def hours(self):
-        """Gets the hours of this ValidityInterval.
+        r"""Gets the hours of this ValidityInterval.
 
         时
 
@@ -90,7 +90,7 @@ class ValidityInterval:
 
     @hours.setter
     def hours(self, hours):
-        """Sets the hours of this ValidityInterval.
+        r"""Sets the hours of this ValidityInterval.
 
         时
 
@@ -101,7 +101,7 @@ class ValidityInterval:
 
     @property
     def minutes(self):
-        """Gets the minutes of this ValidityInterval.
+        r"""Gets the minutes of this ValidityInterval.
 
         分
 
@@ -112,7 +112,7 @@ class ValidityInterval:
 
     @minutes.setter
     def minutes(self, minutes):
-        """Sets the minutes of this ValidityInterval.
+        r"""Sets the minutes of this ValidityInterval.
 
         分
 

@@ -30,7 +30,7 @@ class ListPrivateZonesResponse(SdkResponse):
     }
 
     def __init__(self, links=None, metadata=None, zones=None):
-        """ListPrivateZonesResponse
+        r"""ListPrivateZonesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListPrivateZonesResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this ListPrivateZonesResponse.
+        r"""Gets the links of this ListPrivateZonesResponse.
 
         :return: The links of this ListPrivateZonesResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -67,7 +67,7 @@ class ListPrivateZonesResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this ListPrivateZonesResponse.
+        r"""Sets the links of this ListPrivateZonesResponse.
 
         :param links: The links of this ListPrivateZonesResponse.
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -76,7 +76,7 @@ class ListPrivateZonesResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this ListPrivateZonesResponse.
+        r"""Gets the metadata of this ListPrivateZonesResponse.
 
         :return: The metadata of this ListPrivateZonesResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.Metadata`
@@ -85,7 +85,7 @@ class ListPrivateZonesResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ListPrivateZonesResponse.
+        r"""Sets the metadata of this ListPrivateZonesResponse.
 
         :param metadata: The metadata of this ListPrivateZonesResponse.
         :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`
@@ -94,7 +94,7 @@ class ListPrivateZonesResponse(SdkResponse):
 
     @property
     def zones(self):
-        """Gets the zones of this ListPrivateZonesResponse.
+        r"""Gets the zones of this ListPrivateZonesResponse.
 
         zone列表信息。
 
@@ -105,7 +105,7 @@ class ListPrivateZonesResponse(SdkResponse):
 
     @zones.setter
     def zones(self, zones):
-        """Sets the zones of this ListPrivateZonesResponse.
+        r"""Sets the zones of this ListPrivateZonesResponse.
 
         zone列表信息。
 

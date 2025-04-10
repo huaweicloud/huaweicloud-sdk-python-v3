@@ -24,7 +24,7 @@ class StartSystemEventResponse(SdkResponse):
     }
 
     def __init__(self):
-        """StartSystemEventResponse
+        r"""StartSystemEventResponse
 
         The model defined in huaweicloud sdk
 

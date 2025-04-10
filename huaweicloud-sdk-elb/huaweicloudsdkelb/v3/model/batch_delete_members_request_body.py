@@ -25,7 +25,7 @@ class BatchDeleteMembersRequestBody:
     }
 
     def __init__(self, members=None):
-        """BatchDeleteMembersRequestBody
+        r"""BatchDeleteMembersRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchDeleteMembersRequestBody:
 
     @property
     def members(self):
-        """Gets the members of this BatchDeleteMembersRequestBody.
+        r"""Gets the members of this BatchDeleteMembersRequestBody.
 
         批量删除后端服务器请求body。
 
@@ -53,7 +53,7 @@ class BatchDeleteMembersRequestBody:
 
     @members.setter
     def members(self, members):
-        """Sets the members of this BatchDeleteMembersRequestBody.
+        r"""Sets the members of this BatchDeleteMembersRequestBody.
 
         批量删除后端服务器请求body。
 

@@ -26,7 +26,7 @@ class CreateAlarmTemplateResponse(SdkResponse):
     }
 
     def __init__(self, template_id=None):
-        """CreateAlarmTemplateResponse
+        r"""CreateAlarmTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateAlarmTemplateResponse(SdkResponse):
 
     @property
     def template_id(self):
-        """Gets the template_id of this CreateAlarmTemplateResponse.
+        r"""Gets the template_id of this CreateAlarmTemplateResponse.
 
         自定义告警模板创建成功返回的ID，如：at1603252280799wLRyGLxnz。
 
@@ -55,7 +55,7 @@ class CreateAlarmTemplateResponse(SdkResponse):
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this CreateAlarmTemplateResponse.
+        r"""Sets the template_id of this CreateAlarmTemplateResponse.
 
         自定义告警模板创建成功返回的ID，如：at1603252280799wLRyGLxnz。
 

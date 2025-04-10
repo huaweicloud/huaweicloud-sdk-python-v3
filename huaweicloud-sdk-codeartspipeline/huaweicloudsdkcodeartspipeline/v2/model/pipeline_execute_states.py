@@ -45,7 +45,7 @@ class PipelineExecuteStates:
     }
 
     def __init__(self, result=None, status=None, stages=None, executor=None, pipeline_name=None, pipeline_id=None, build_id=None, detail_url=None, modify_url=None, start_time=None, end_time=None):
-        """PipelineExecuteStates
+        r"""PipelineExecuteStates
 
         The model defined in huaweicloud sdk
 
@@ -102,7 +102,7 @@ class PipelineExecuteStates:
 
     @property
     def result(self):
-        """Gets the result of this PipelineExecuteStates.
+        r"""Gets the result of this PipelineExecuteStates.
 
         流水线执行结果。取值及含义：success：成功；error：失败；aborted：终止
 
@@ -113,7 +113,7 @@ class PipelineExecuteStates:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this PipelineExecuteStates.
+        r"""Sets the result of this PipelineExecuteStates.
 
         流水线执行结果。取值及含义：success：成功；error：失败；aborted：终止
 
@@ -124,7 +124,7 @@ class PipelineExecuteStates:
 
     @property
     def status(self):
-        """Gets the status of this PipelineExecuteStates.
+        r"""Gets the status of this PipelineExecuteStates.
 
         流水线执行状态.取值和含义:waiting:等待;running:执行中;verifying:待审核;suspending:挂起;completed:完成
 
@@ -135,7 +135,7 @@ class PipelineExecuteStates:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PipelineExecuteStates.
+        r"""Sets the status of this PipelineExecuteStates.
 
         流水线执行状态.取值和含义:waiting:等待;running:执行中;verifying:待审核;suspending:挂起;completed:完成
 
@@ -146,7 +146,7 @@ class PipelineExecuteStates:
 
     @property
     def stages(self):
-        """Gets the stages of this PipelineExecuteStates.
+        r"""Gets the stages of this PipelineExecuteStates.
 
         阶段执行情况
 
@@ -157,7 +157,7 @@ class PipelineExecuteStates:
 
     @stages.setter
     def stages(self, stages):
-        """Sets the stages of this PipelineExecuteStates.
+        r"""Sets the stages of this PipelineExecuteStates.
 
         阶段执行情况
 
@@ -168,7 +168,7 @@ class PipelineExecuteStates:
 
     @property
     def executor(self):
-        """Gets the executor of this PipelineExecuteStates.
+        r"""Gets the executor of this PipelineExecuteStates.
 
         执行人
 
@@ -179,7 +179,7 @@ class PipelineExecuteStates:
 
     @executor.setter
     def executor(self, executor):
-        """Sets the executor of this PipelineExecuteStates.
+        r"""Sets the executor of this PipelineExecuteStates.
 
         执行人
 
@@ -190,7 +190,7 @@ class PipelineExecuteStates:
 
     @property
     def pipeline_name(self):
-        """Gets the pipeline_name of this PipelineExecuteStates.
+        r"""Gets the pipeline_name of this PipelineExecuteStates.
 
         流水线名字
 
@@ -201,7 +201,7 @@ class PipelineExecuteStates:
 
     @pipeline_name.setter
     def pipeline_name(self, pipeline_name):
-        """Sets the pipeline_name of this PipelineExecuteStates.
+        r"""Sets the pipeline_name of this PipelineExecuteStates.
 
         流水线名字
 
@@ -212,7 +212,7 @@ class PipelineExecuteStates:
 
     @property
     def pipeline_id(self):
-        """Gets the pipeline_id of this PipelineExecuteStates.
+        r"""Gets the pipeline_id of this PipelineExecuteStates.
 
         流水线ID
 
@@ -223,7 +223,7 @@ class PipelineExecuteStates:
 
     @pipeline_id.setter
     def pipeline_id(self, pipeline_id):
-        """Sets the pipeline_id of this PipelineExecuteStates.
+        r"""Sets the pipeline_id of this PipelineExecuteStates.
 
         流水线ID
 
@@ -234,7 +234,7 @@ class PipelineExecuteStates:
 
     @property
     def build_id(self):
-        """Gets the build_id of this PipelineExecuteStates.
+        r"""Gets the build_id of this PipelineExecuteStates.
 
         流水线执行ID
 
@@ -245,7 +245,7 @@ class PipelineExecuteStates:
 
     @build_id.setter
     def build_id(self, build_id):
-        """Sets the build_id of this PipelineExecuteStates.
+        r"""Sets the build_id of this PipelineExecuteStates.
 
         流水线执行ID
 
@@ -256,7 +256,7 @@ class PipelineExecuteStates:
 
     @property
     def detail_url(self):
-        """Gets the detail_url of this PipelineExecuteStates.
+        r"""Gets the detail_url of this PipelineExecuteStates.
 
         流水线详情页URL
 
@@ -267,7 +267,7 @@ class PipelineExecuteStates:
 
     @detail_url.setter
     def detail_url(self, detail_url):
-        """Sets the detail_url of this PipelineExecuteStates.
+        r"""Sets the detail_url of this PipelineExecuteStates.
 
         流水线详情页URL
 
@@ -278,7 +278,7 @@ class PipelineExecuteStates:
 
     @property
     def modify_url(self):
-        """Gets the modify_url of this PipelineExecuteStates.
+        r"""Gets the modify_url of this PipelineExecuteStates.
 
         流水线编辑页URL
 
@@ -289,7 +289,7 @@ class PipelineExecuteStates:
 
     @modify_url.setter
     def modify_url(self, modify_url):
-        """Sets the modify_url of this PipelineExecuteStates.
+        r"""Sets the modify_url of this PipelineExecuteStates.
 
         流水线编辑页URL
 
@@ -300,7 +300,7 @@ class PipelineExecuteStates:
 
     @property
     def start_time(self):
-        """Gets the start_time of this PipelineExecuteStates.
+        r"""Gets the start_time of this PipelineExecuteStates.
 
         开始执行时间
 
@@ -311,7 +311,7 @@ class PipelineExecuteStates:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this PipelineExecuteStates.
+        r"""Sets the start_time of this PipelineExecuteStates.
 
         开始执行时间
 
@@ -322,7 +322,7 @@ class PipelineExecuteStates:
 
     @property
     def end_time(self):
-        """Gets the end_time of this PipelineExecuteStates.
+        r"""Gets the end_time of this PipelineExecuteStates.
 
         结束执行时间
 
@@ -333,7 +333,7 @@ class PipelineExecuteStates:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this PipelineExecuteStates.
+        r"""Sets the end_time of this PipelineExecuteStates.
 
         结束执行时间
 

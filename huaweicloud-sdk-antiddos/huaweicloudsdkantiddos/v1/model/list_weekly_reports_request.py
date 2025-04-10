@@ -25,7 +25,7 @@ class ListWeeklyReportsRequest:
     }
 
     def __init__(self, period_start_date=None):
-        """ListWeeklyReportsRequest
+        r"""ListWeeklyReportsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListWeeklyReportsRequest:
 
     @property
     def period_start_date(self):
-        """Gets the period_start_date of this ListWeeklyReportsRequest.
+        r"""Gets the period_start_date of this ListWeeklyReportsRequest.
 
         每周的起始时间
 
@@ -54,7 +54,7 @@ class ListWeeklyReportsRequest:
 
     @period_start_date.setter
     def period_start_date(self, period_start_date):
-        """Sets the period_start_date of this ListWeeklyReportsRequest.
+        r"""Sets the period_start_date of this ListWeeklyReportsRequest.
 
         每周的起始时间
 

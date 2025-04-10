@@ -27,7 +27,7 @@ class AccessConfigFormatCreate:
     }
 
     def __init__(self, single=None, multi=None):
-        """AccessConfigFormatCreate
+        r"""AccessConfigFormatCreate
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AccessConfigFormatCreate:
 
     @property
     def single(self):
-        """Gets the single of this AccessConfigFormatCreate.
+        r"""Gets the single of this AccessConfigFormatCreate.
 
         :return: The single of this AccessConfigFormatCreate.
         :rtype: :class:`huaweicloudsdklts.v2.AccessConfigFormatSingleCreate`
@@ -59,7 +59,7 @@ class AccessConfigFormatCreate:
 
     @single.setter
     def single(self, single):
-        """Sets the single of this AccessConfigFormatCreate.
+        r"""Sets the single of this AccessConfigFormatCreate.
 
         :param single: The single of this AccessConfigFormatCreate.
         :type single: :class:`huaweicloudsdklts.v2.AccessConfigFormatSingleCreate`
@@ -68,7 +68,7 @@ class AccessConfigFormatCreate:
 
     @property
     def multi(self):
-        """Gets the multi of this AccessConfigFormatCreate.
+        r"""Gets the multi of this AccessConfigFormatCreate.
 
         :return: The multi of this AccessConfigFormatCreate.
         :rtype: :class:`huaweicloudsdklts.v2.AccessConfigFormatMutilCreate`
@@ -77,7 +77,7 @@ class AccessConfigFormatCreate:
 
     @multi.setter
     def multi(self, multi):
-        """Sets the multi of this AccessConfigFormatCreate.
+        r"""Sets the multi of this AccessConfigFormatCreate.
 
         :param multi: The multi of this AccessConfigFormatCreate.
         :type multi: :class:`huaweicloudsdklts.v2.AccessConfigFormatMutilCreate`

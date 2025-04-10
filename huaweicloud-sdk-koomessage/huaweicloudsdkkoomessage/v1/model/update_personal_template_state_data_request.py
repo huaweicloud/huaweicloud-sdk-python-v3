@@ -25,7 +25,7 @@ class UpdatePersonalTemplateStateDataRequest:
     }
 
     def __init__(self, tpl_state=None):
-        """UpdatePersonalTemplateStateDataRequest
+        r"""UpdatePersonalTemplateStateDataRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdatePersonalTemplateStateDataRequest:
 
     @property
     def tpl_state(self):
-        """Gets the tpl_state of this UpdatePersonalTemplateStateDataRequest.
+        r"""Gets the tpl_state of this UpdatePersonalTemplateStateDataRequest.
 
         状态。 - 0：禁用 - 1：启用 
 
@@ -54,7 +54,7 @@ class UpdatePersonalTemplateStateDataRequest:
 
     @tpl_state.setter
     def tpl_state(self, tpl_state):
-        """Sets the tpl_state of this UpdatePersonalTemplateStateDataRequest.
+        r"""Sets the tpl_state of this UpdatePersonalTemplateStateDataRequest.
 
         状态。 - 0：禁用 - 1：启用 
 

@@ -26,7 +26,7 @@ class CreateGovernancePolicyResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """CreateGovernancePolicyResponse
+        r"""CreateGovernancePolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateGovernancePolicyResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this CreateGovernancePolicyResponse.
+        r"""Gets the result of this CreateGovernancePolicyResponse.
 
         结果信息
 
@@ -55,7 +55,7 @@ class CreateGovernancePolicyResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this CreateGovernancePolicyResponse.
+        r"""Sets the result of this CreateGovernancePolicyResponse.
 
         结果信息
 

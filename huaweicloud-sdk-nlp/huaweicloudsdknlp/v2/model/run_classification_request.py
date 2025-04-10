@@ -25,7 +25,7 @@ class RunClassificationRequest:
     }
 
     def __init__(self, body=None):
-        """RunClassificationRequest
+        r"""RunClassificationRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RunClassificationRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunClassificationRequest.
+        r"""Gets the body of this RunClassificationRequest.
 
         :return: The body of this RunClassificationRequest.
         :rtype: :class:`huaweicloudsdknlp.v2.ClassificationReq`
@@ -52,7 +52,7 @@ class RunClassificationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunClassificationRequest.
+        r"""Sets the body of this RunClassificationRequest.
 
         :param body: The body of this RunClassificationRequest.
         :type body: :class:`huaweicloudsdknlp.v2.ClassificationReq`

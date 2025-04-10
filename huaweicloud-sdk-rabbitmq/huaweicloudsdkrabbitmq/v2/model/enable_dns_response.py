@@ -24,7 +24,7 @@ class EnableDnsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """EnableDnsResponse
+        r"""EnableDnsResponse
 
         The model defined in huaweicloud sdk
 

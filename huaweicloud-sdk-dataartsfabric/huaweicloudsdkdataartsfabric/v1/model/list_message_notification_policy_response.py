@@ -28,7 +28,7 @@ class ListMessageNotificationPolicyResponse(SdkResponse):
     }
 
     def __init__(self, total=None, policies=None):
-        """ListMessageNotificationPolicyResponse
+        r"""ListMessageNotificationPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListMessageNotificationPolicyResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListMessageNotificationPolicyResponse.
+        r"""Gets the total of this ListMessageNotificationPolicyResponse.
 
         符合条件的消息通知策略总数
 
@@ -62,7 +62,7 @@ class ListMessageNotificationPolicyResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListMessageNotificationPolicyResponse.
+        r"""Sets the total of this ListMessageNotificationPolicyResponse.
 
         符合条件的消息通知策略总数
 
@@ -73,7 +73,7 @@ class ListMessageNotificationPolicyResponse(SdkResponse):
 
     @property
     def policies(self):
-        """Gets the policies of this ListMessageNotificationPolicyResponse.
+        r"""Gets the policies of this ListMessageNotificationPolicyResponse.
 
         消息通知策略列表信息
 
@@ -84,7 +84,7 @@ class ListMessageNotificationPolicyResponse(SdkResponse):
 
     @policies.setter
     def policies(self, policies):
-        """Sets the policies of this ListMessageNotificationPolicyResponse.
+        r"""Sets the policies of this ListMessageNotificationPolicyResponse.
 
         消息通知策略列表信息
 

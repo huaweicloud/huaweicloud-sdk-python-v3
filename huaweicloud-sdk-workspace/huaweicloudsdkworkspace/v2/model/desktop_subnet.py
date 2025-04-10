@@ -29,7 +29,7 @@ class DesktopSubnet:
     }
 
     def __init__(self, id=None, name=None, cidr=None):
-        """DesktopSubnet
+        r"""DesktopSubnet
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class DesktopSubnet:
 
     @property
     def id(self):
-        """Gets the id of this DesktopSubnet.
+        r"""Gets the id of this DesktopSubnet.
 
         桌面所在子网Id
 
@@ -68,7 +68,7 @@ class DesktopSubnet:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DesktopSubnet.
+        r"""Sets the id of this DesktopSubnet.
 
         桌面所在子网Id
 
@@ -79,7 +79,7 @@ class DesktopSubnet:
 
     @property
     def name(self):
-        """Gets the name of this DesktopSubnet.
+        r"""Gets the name of this DesktopSubnet.
 
         桌面所在子网名称
 
@@ -90,7 +90,7 @@ class DesktopSubnet:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DesktopSubnet.
+        r"""Sets the name of this DesktopSubnet.
 
         桌面所在子网名称
 
@@ -101,7 +101,7 @@ class DesktopSubnet:
 
     @property
     def cidr(self):
-        """Gets the cidr of this DesktopSubnet.
+        r"""Gets the cidr of this DesktopSubnet.
 
         桌面所在子网网段
 
@@ -112,7 +112,7 @@ class DesktopSubnet:
 
     @cidr.setter
     def cidr(self, cidr):
-        """Sets the cidr of this DesktopSubnet.
+        r"""Sets the cidr of this DesktopSubnet.
 
         桌面所在子网网段
 

@@ -37,7 +37,7 @@ class VulCheckerRule:
     }
 
     def __init__(self, checker_rule=None, checker_entry=None, checker_result=None, checker_stack=None, privacy_policy_evidences=None, _pass=None, rectify_suggestion=None):
-        """VulCheckerRule
+        r"""VulCheckerRule
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class VulCheckerRule:
 
     @property
     def checker_rule(self):
-        """Gets the checker_rule of this VulCheckerRule.
+        r"""Gets the checker_rule of this VulCheckerRule.
 
         检测项
 
@@ -96,7 +96,7 @@ class VulCheckerRule:
 
     @checker_rule.setter
     def checker_rule(self, checker_rule):
-        """Sets the checker_rule of this VulCheckerRule.
+        r"""Sets the checker_rule of this VulCheckerRule.
 
         检测项
 
@@ -107,7 +107,7 @@ class VulCheckerRule:
 
     @property
     def checker_entry(self):
-        """Gets the checker_entry of this VulCheckerRule.
+        r"""Gets the checker_entry of this VulCheckerRule.
 
         规范检测项条目
 
@@ -118,7 +118,7 @@ class VulCheckerRule:
 
     @checker_entry.setter
     def checker_entry(self, checker_entry):
-        """Sets the checker_entry of this VulCheckerRule.
+        r"""Sets the checker_entry of this VulCheckerRule.
 
         规范检测项条目
 
@@ -129,7 +129,7 @@ class VulCheckerRule:
 
     @property
     def checker_result(self):
-        """Gets the checker_result of this VulCheckerRule.
+        r"""Gets the checker_result of this VulCheckerRule.
 
         规则检测项结果
 
@@ -140,7 +140,7 @@ class VulCheckerRule:
 
     @checker_result.setter
     def checker_result(self, checker_result):
-        """Sets the checker_result of this VulCheckerRule.
+        r"""Sets the checker_result of this VulCheckerRule.
 
         规则检测项结果
 
@@ -151,7 +151,7 @@ class VulCheckerRule:
 
     @property
     def checker_stack(self):
-        """Gets the checker_stack of this VulCheckerRule.
+        r"""Gets the checker_stack of this VulCheckerRule.
 
         调用栈信息
 
@@ -162,7 +162,7 @@ class VulCheckerRule:
 
     @checker_stack.setter
     def checker_stack(self, checker_stack):
-        """Sets the checker_stack of this VulCheckerRule.
+        r"""Sets the checker_stack of this VulCheckerRule.
 
         调用栈信息
 
@@ -173,7 +173,7 @@ class VulCheckerRule:
 
     @property
     def privacy_policy_evidences(self):
-        """Gets the privacy_policy_evidences of this VulCheckerRule.
+        r"""Gets the privacy_policy_evidences of this VulCheckerRule.
 
         隐私声明
 
@@ -184,7 +184,7 @@ class VulCheckerRule:
 
     @privacy_policy_evidences.setter
     def privacy_policy_evidences(self, privacy_policy_evidences):
-        """Sets the privacy_policy_evidences of this VulCheckerRule.
+        r"""Sets the privacy_policy_evidences of this VulCheckerRule.
 
         隐私声明
 
@@ -195,7 +195,7 @@ class VulCheckerRule:
 
     @property
     def _pass(self):
-        """Gets the _pass of this VulCheckerRule.
+        r"""Gets the _pass of this VulCheckerRule.
 
         是否通过
 
@@ -206,7 +206,7 @@ class VulCheckerRule:
 
     @_pass.setter
     def _pass(self, _pass):
-        """Sets the _pass of this VulCheckerRule.
+        r"""Sets the _pass of this VulCheckerRule.
 
         是否通过
 
@@ -217,7 +217,7 @@ class VulCheckerRule:
 
     @property
     def rectify_suggestion(self):
-        """Gets the rectify_suggestion of this VulCheckerRule.
+        r"""Gets the rectify_suggestion of this VulCheckerRule.
 
         修复建议
 
@@ -228,7 +228,7 @@ class VulCheckerRule:
 
     @rectify_suggestion.setter
     def rectify_suggestion(self, rectify_suggestion):
-        """Sets the rectify_suggestion of this VulCheckerRule.
+        r"""Sets the rectify_suggestion of this VulCheckerRule.
 
         修复建议
 

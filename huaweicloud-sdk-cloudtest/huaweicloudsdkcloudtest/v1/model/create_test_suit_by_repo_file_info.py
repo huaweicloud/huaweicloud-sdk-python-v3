@@ -31,7 +31,7 @@ class CreateTestSuitByRepoFileInfo:
     }
 
     def __init__(self, testsuite_name=None, repository_id=None, repository_branch=None, file_path=None):
-        """CreateTestSuitByRepoFileInfo
+        r"""CreateTestSuitByRepoFileInfo
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class CreateTestSuitByRepoFileInfo:
 
     @property
     def testsuite_name(self):
-        """Gets the testsuite_name of this CreateTestSuitByRepoFileInfo.
+        r"""Gets the testsuite_name of this CreateTestSuitByRepoFileInfo.
 
         要生成的测试套名称
 
@@ -71,7 +71,7 @@ class CreateTestSuitByRepoFileInfo:
 
     @testsuite_name.setter
     def testsuite_name(self, testsuite_name):
-        """Sets the testsuite_name of this CreateTestSuitByRepoFileInfo.
+        r"""Sets the testsuite_name of this CreateTestSuitByRepoFileInfo.
 
         要生成的测试套名称
 
@@ -82,7 +82,7 @@ class CreateTestSuitByRepoFileInfo:
 
     @property
     def repository_id(self):
-        """Gets the repository_id of this CreateTestSuitByRepoFileInfo.
+        r"""Gets the repository_id of this CreateTestSuitByRepoFileInfo.
 
         仓库id
 
@@ -93,7 +93,7 @@ class CreateTestSuitByRepoFileInfo:
 
     @repository_id.setter
     def repository_id(self, repository_id):
-        """Sets the repository_id of this CreateTestSuitByRepoFileInfo.
+        r"""Sets the repository_id of this CreateTestSuitByRepoFileInfo.
 
         仓库id
 
@@ -104,7 +104,7 @@ class CreateTestSuitByRepoFileInfo:
 
     @property
     def repository_branch(self):
-        """Gets the repository_branch of this CreateTestSuitByRepoFileInfo.
+        r"""Gets the repository_branch of this CreateTestSuitByRepoFileInfo.
 
         仓库分支
 
@@ -115,7 +115,7 @@ class CreateTestSuitByRepoFileInfo:
 
     @repository_branch.setter
     def repository_branch(self, repository_branch):
-        """Sets the repository_branch of this CreateTestSuitByRepoFileInfo.
+        r"""Sets the repository_branch of this CreateTestSuitByRepoFileInfo.
 
         仓库分支
 
@@ -126,7 +126,7 @@ class CreateTestSuitByRepoFileInfo:
 
     @property
     def file_path(self):
-        """Gets the file_path of this CreateTestSuitByRepoFileInfo.
+        r"""Gets the file_path of this CreateTestSuitByRepoFileInfo.
 
         仓库中yaml或json文件的相对路径，仅支持swagger 2.0版本的yaml和json文件
 
@@ -137,7 +137,7 @@ class CreateTestSuitByRepoFileInfo:
 
     @file_path.setter
     def file_path(self, file_path):
-        """Sets the file_path of this CreateTestSuitByRepoFileInfo.
+        r"""Sets the file_path of this CreateTestSuitByRepoFileInfo.
 
         仓库中yaml或json文件的相对路径，仅支持swagger 2.0版本的yaml和json文件
 

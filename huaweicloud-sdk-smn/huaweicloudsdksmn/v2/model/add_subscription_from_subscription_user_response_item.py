@@ -33,7 +33,7 @@ class AddSubscriptionFromSubscriptionUserResponseItem:
     }
 
     def __init__(self, http_code=None, request_id=None, subscription_urn=None, error_code=None, error_msg=None):
-        """AddSubscriptionFromSubscriptionUserResponseItem
+        r"""AddSubscriptionFromSubscriptionUserResponseItem
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class AddSubscriptionFromSubscriptionUserResponseItem:
 
     @property
     def http_code(self):
-        """Gets the http_code of this AddSubscriptionFromSubscriptionUserResponseItem.
+        r"""Gets the http_code of this AddSubscriptionFromSubscriptionUserResponseItem.
 
         返回码。
 
@@ -80,7 +80,7 @@ class AddSubscriptionFromSubscriptionUserResponseItem:
 
     @http_code.setter
     def http_code(self, http_code):
-        """Sets the http_code of this AddSubscriptionFromSubscriptionUserResponseItem.
+        r"""Sets the http_code of this AddSubscriptionFromSubscriptionUserResponseItem.
 
         返回码。
 
@@ -91,7 +91,7 @@ class AddSubscriptionFromSubscriptionUserResponseItem:
 
     @property
     def request_id(self):
-        """Gets the request_id of this AddSubscriptionFromSubscriptionUserResponseItem.
+        r"""Gets the request_id of this AddSubscriptionFromSubscriptionUserResponseItem.
 
         请求的唯一标识ID。
 
@@ -102,7 +102,7 @@ class AddSubscriptionFromSubscriptionUserResponseItem:
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this AddSubscriptionFromSubscriptionUserResponseItem.
+        r"""Sets the request_id of this AddSubscriptionFromSubscriptionUserResponseItem.
 
         请求的唯一标识ID。
 
@@ -113,7 +113,7 @@ class AddSubscriptionFromSubscriptionUserResponseItem:
 
     @property
     def subscription_urn(self):
-        """Gets the subscription_urn of this AddSubscriptionFromSubscriptionUserResponseItem.
+        r"""Gets the subscription_urn of this AddSubscriptionFromSubscriptionUserResponseItem.
 
         订阅者的唯一资源标识。
 
@@ -124,7 +124,7 @@ class AddSubscriptionFromSubscriptionUserResponseItem:
 
     @subscription_urn.setter
     def subscription_urn(self, subscription_urn):
-        """Sets the subscription_urn of this AddSubscriptionFromSubscriptionUserResponseItem.
+        r"""Sets the subscription_urn of this AddSubscriptionFromSubscriptionUserResponseItem.
 
         订阅者的唯一资源标识。
 
@@ -135,7 +135,7 @@ class AddSubscriptionFromSubscriptionUserResponseItem:
 
     @property
     def error_code(self):
-        """Gets the error_code of this AddSubscriptionFromSubscriptionUserResponseItem.
+        r"""Gets the error_code of this AddSubscriptionFromSubscriptionUserResponseItem.
 
         返回信息对应的代码。
 
@@ -146,7 +146,7 @@ class AddSubscriptionFromSubscriptionUserResponseItem:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this AddSubscriptionFromSubscriptionUserResponseItem.
+        r"""Sets the error_code of this AddSubscriptionFromSubscriptionUserResponseItem.
 
         返回信息对应的代码。
 
@@ -157,7 +157,7 @@ class AddSubscriptionFromSubscriptionUserResponseItem:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this AddSubscriptionFromSubscriptionUserResponseItem.
+        r"""Gets the error_msg of this AddSubscriptionFromSubscriptionUserResponseItem.
 
         服务异常错误信息描述。
 
@@ -168,7 +168,7 @@ class AddSubscriptionFromSubscriptionUserResponseItem:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this AddSubscriptionFromSubscriptionUserResponseItem.
+        r"""Sets the error_msg of this AddSubscriptionFromSubscriptionUserResponseItem.
 
         服务异常错误信息描述。
 

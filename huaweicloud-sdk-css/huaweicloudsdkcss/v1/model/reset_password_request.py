@@ -27,7 +27,7 @@ class ResetPasswordRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """ResetPasswordRequest
+        r"""ResetPasswordRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ResetPasswordRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ResetPasswordRequest.
+        r"""Gets the cluster_id of this ResetPasswordRequest.
 
         指定待修改集群密码的集群ID。
 
@@ -60,7 +60,7 @@ class ResetPasswordRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ResetPasswordRequest.
+        r"""Sets the cluster_id of this ResetPasswordRequest.
 
         指定待修改集群密码的集群ID。
 
@@ -71,7 +71,7 @@ class ResetPasswordRequest:
 
     @property
     def body(self):
-        """Gets the body of this ResetPasswordRequest.
+        r"""Gets the body of this ResetPasswordRequest.
 
         :return: The body of this ResetPasswordRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.ResetPasswordReq`
@@ -80,7 +80,7 @@ class ResetPasswordRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ResetPasswordRequest.
+        r"""Sets the body of this ResetPasswordRequest.
 
         :param body: The body of this ResetPasswordRequest.
         :type body: :class:`huaweicloudsdkcss.v1.ResetPasswordReq`

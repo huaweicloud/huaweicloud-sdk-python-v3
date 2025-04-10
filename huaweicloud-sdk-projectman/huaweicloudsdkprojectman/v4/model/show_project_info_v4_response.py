@@ -26,7 +26,7 @@ class ShowProjectInfoV4Response(SdkResponse):
     }
 
     def __init__(self, project=None):
-        """ShowProjectInfoV4Response
+        r"""ShowProjectInfoV4Response
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowProjectInfoV4Response(SdkResponse):
 
     @property
     def project(self):
-        """Gets the project of this ShowProjectInfoV4Response.
+        r"""Gets the project of this ShowProjectInfoV4Response.
 
         :return: The project of this ShowProjectInfoV4Response.
         :rtype: :class:`huaweicloudsdkprojectman.v4.GetProjectInfoV4ResultProject`
@@ -53,7 +53,7 @@ class ShowProjectInfoV4Response(SdkResponse):
 
     @project.setter
     def project(self, project):
-        """Sets the project of this ShowProjectInfoV4Response.
+        r"""Sets the project of this ShowProjectInfoV4Response.
 
         :param project: The project of this ShowProjectInfoV4Response.
         :type project: :class:`huaweicloudsdkprojectman.v4.GetProjectInfoV4ResultProject`

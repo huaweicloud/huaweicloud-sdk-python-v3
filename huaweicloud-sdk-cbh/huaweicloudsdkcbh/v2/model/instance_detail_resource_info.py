@@ -33,7 +33,7 @@ class InstanceDetailResourceInfo:
     }
 
     def __init__(self, specification=None, order_id=None, resource_id=None, data_disk_size=None, disk_resource_id=None):
-        """InstanceDetailResourceInfo
+        r"""InstanceDetailResourceInfo
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class InstanceDetailResourceInfo:
 
     @property
     def specification(self):
-        """Gets the specification of this InstanceDetailResourceInfo.
+        r"""Gets the specification of this InstanceDetailResourceInfo.
 
         云堡垒机实例规格。
 
@@ -77,7 +77,7 @@ class InstanceDetailResourceInfo:
 
     @specification.setter
     def specification(self, specification):
-        """Sets the specification of this InstanceDetailResourceInfo.
+        r"""Sets the specification of this InstanceDetailResourceInfo.
 
         云堡垒机实例规格。
 
@@ -88,7 +88,7 @@ class InstanceDetailResourceInfo:
 
     @property
     def order_id(self):
-        """Gets the order_id of this InstanceDetailResourceInfo.
+        r"""Gets the order_id of this InstanceDetailResourceInfo.
 
         订单id。
 
@@ -99,7 +99,7 @@ class InstanceDetailResourceInfo:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this InstanceDetailResourceInfo.
+        r"""Sets the order_id of this InstanceDetailResourceInfo.
 
         订单id。
 
@@ -110,7 +110,7 @@ class InstanceDetailResourceInfo:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this InstanceDetailResourceInfo.
+        r"""Gets the resource_id of this InstanceDetailResourceInfo.
 
         云堡垒机实例的资源id，UUID格式显示。
 
@@ -121,7 +121,7 @@ class InstanceDetailResourceInfo:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this InstanceDetailResourceInfo.
+        r"""Sets the resource_id of this InstanceDetailResourceInfo.
 
         云堡垒机实例的资源id，UUID格式显示。
 
@@ -132,7 +132,7 @@ class InstanceDetailResourceInfo:
 
     @property
     def data_disk_size(self):
-        """Gets the data_disk_size of this InstanceDetailResourceInfo.
+        r"""Gets the data_disk_size of this InstanceDetailResourceInfo.
 
         云堡垒机实例数据盘大小，单位TB。
 
@@ -143,7 +143,7 @@ class InstanceDetailResourceInfo:
 
     @data_disk_size.setter
     def data_disk_size(self, data_disk_size):
-        """Sets the data_disk_size of this InstanceDetailResourceInfo.
+        r"""Sets the data_disk_size of this InstanceDetailResourceInfo.
 
         云堡垒机实例数据盘大小，单位TB。
 
@@ -154,7 +154,7 @@ class InstanceDetailResourceInfo:
 
     @property
     def disk_resource_id(self):
-        """Gets the disk_resource_id of this InstanceDetailResourceInfo.
+        r"""Gets the disk_resource_id of this InstanceDetailResourceInfo.
 
         云堡垒机实例数据盘资源ID。
 
@@ -165,7 +165,7 @@ class InstanceDetailResourceInfo:
 
     @disk_resource_id.setter
     def disk_resource_id(self, disk_resource_id):
-        """Sets the disk_resource_id of this InstanceDetailResourceInfo.
+        r"""Sets the disk_resource_id of this InstanceDetailResourceInfo.
 
         云堡垒机实例数据盘资源ID。
 

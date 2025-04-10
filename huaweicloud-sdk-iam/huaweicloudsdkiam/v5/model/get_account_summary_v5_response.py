@@ -52,7 +52,7 @@ class GetAccountSummaryV5Response(SdkResponse):
     }
 
     def __init__(self, attached_policies_per_agency_quota=None, attached_policies_per_group_quota=None, attached_policies_per_user_quota=None, policies_quota=None, policy_size_quota=None, versions_per_policy_quota=None, policies=None, agencies=None, agencies_quota=None, users=None, users_quota=None, groups=None, groups_quota=None, root_user_mfa_enabled=None):
-        """GetAccountSummaryV5Response
+        r"""GetAccountSummaryV5Response
 
         The model defined in huaweicloud sdk
 
@@ -135,7 +135,7 @@ class GetAccountSummaryV5Response(SdkResponse):
 
     @property
     def attached_policies_per_agency_quota(self):
-        """Gets the attached_policies_per_agency_quota of this GetAccountSummaryV5Response.
+        r"""Gets the attached_policies_per_agency_quota of this GetAccountSummaryV5Response.
 
         附加到委托或信任委托上的身份策略的最大数量。
 
@@ -146,7 +146,7 @@ class GetAccountSummaryV5Response(SdkResponse):
 
     @attached_policies_per_agency_quota.setter
     def attached_policies_per_agency_quota(self, attached_policies_per_agency_quota):
-        """Sets the attached_policies_per_agency_quota of this GetAccountSummaryV5Response.
+        r"""Sets the attached_policies_per_agency_quota of this GetAccountSummaryV5Response.
 
         附加到委托或信任委托上的身份策略的最大数量。
 
@@ -157,7 +157,7 @@ class GetAccountSummaryV5Response(SdkResponse):
 
     @property
     def attached_policies_per_group_quota(self):
-        """Gets the attached_policies_per_group_quota of this GetAccountSummaryV5Response.
+        r"""Gets the attached_policies_per_group_quota of this GetAccountSummaryV5Response.
 
         附加到用户组上的身份策略的最大数量。
 
@@ -168,7 +168,7 @@ class GetAccountSummaryV5Response(SdkResponse):
 
     @attached_policies_per_group_quota.setter
     def attached_policies_per_group_quota(self, attached_policies_per_group_quota):
-        """Sets the attached_policies_per_group_quota of this GetAccountSummaryV5Response.
+        r"""Sets the attached_policies_per_group_quota of this GetAccountSummaryV5Response.
 
         附加到用户组上的身份策略的最大数量。
 
@@ -179,7 +179,7 @@ class GetAccountSummaryV5Response(SdkResponse):
 
     @property
     def attached_policies_per_user_quota(self):
-        """Gets the attached_policies_per_user_quota of this GetAccountSummaryV5Response.
+        r"""Gets the attached_policies_per_user_quota of this GetAccountSummaryV5Response.
 
         附加到IAM用户上的身份策略的最大数量。
 
@@ -190,7 +190,7 @@ class GetAccountSummaryV5Response(SdkResponse):
 
     @attached_policies_per_user_quota.setter
     def attached_policies_per_user_quota(self, attached_policies_per_user_quota):
-        """Sets the attached_policies_per_user_quota of this GetAccountSummaryV5Response.
+        r"""Sets the attached_policies_per_user_quota of this GetAccountSummaryV5Response.
 
         附加到IAM用户上的身份策略的最大数量。
 
@@ -201,7 +201,7 @@ class GetAccountSummaryV5Response(SdkResponse):
 
     @property
     def policies_quota(self):
-        """Gets the policies_quota of this GetAccountSummaryV5Response.
+        r"""Gets the policies_quota of this GetAccountSummaryV5Response.
 
         自定义身份策略的最大数量。
 
@@ -212,7 +212,7 @@ class GetAccountSummaryV5Response(SdkResponse):
 
     @policies_quota.setter
     def policies_quota(self, policies_quota):
-        """Sets the policies_quota of this GetAccountSummaryV5Response.
+        r"""Sets the policies_quota of this GetAccountSummaryV5Response.
 
         自定义身份策略的最大数量。
 
@@ -223,7 +223,7 @@ class GetAccountSummaryV5Response(SdkResponse):
 
     @property
     def policy_size_quota(self):
-        """Gets the policy_size_quota of this GetAccountSummaryV5Response.
+        r"""Gets the policy_size_quota of this GetAccountSummaryV5Response.
 
         身份策略及信任策略的策略文档的最大字符数，不包括空格。
 
@@ -234,7 +234,7 @@ class GetAccountSummaryV5Response(SdkResponse):
 
     @policy_size_quota.setter
     def policy_size_quota(self, policy_size_quota):
-        """Sets the policy_size_quota of this GetAccountSummaryV5Response.
+        r"""Sets the policy_size_quota of this GetAccountSummaryV5Response.
 
         身份策略及信任策略的策略文档的最大字符数，不包括空格。
 
@@ -245,7 +245,7 @@ class GetAccountSummaryV5Response(SdkResponse):
 
     @property
     def versions_per_policy_quota(self):
-        """Gets the versions_per_policy_quota of this GetAccountSummaryV5Response.
+        r"""Gets the versions_per_policy_quota of this GetAccountSummaryV5Response.
 
         自定义身份策略同一时刻保留的最大版本数量。
 
@@ -256,7 +256,7 @@ class GetAccountSummaryV5Response(SdkResponse):
 
     @versions_per_policy_quota.setter
     def versions_per_policy_quota(self, versions_per_policy_quota):
-        """Sets the versions_per_policy_quota of this GetAccountSummaryV5Response.
+        r"""Sets the versions_per_policy_quota of this GetAccountSummaryV5Response.
 
         自定义身份策略同一时刻保留的最大版本数量。
 
@@ -267,7 +267,7 @@ class GetAccountSummaryV5Response(SdkResponse):
 
     @property
     def policies(self):
-        """Gets the policies of this GetAccountSummaryV5Response.
+        r"""Gets the policies of this GetAccountSummaryV5Response.
 
         此账号中当前创建的自定义身份策略数量。
 
@@ -278,7 +278,7 @@ class GetAccountSummaryV5Response(SdkResponse):
 
     @policies.setter
     def policies(self, policies):
-        """Sets the policies of this GetAccountSummaryV5Response.
+        r"""Sets the policies of this GetAccountSummaryV5Response.
 
         此账号中当前创建的自定义身份策略数量。
 
@@ -289,7 +289,7 @@ class GetAccountSummaryV5Response(SdkResponse):
 
     @property
     def agencies(self):
-        """Gets the agencies of this GetAccountSummaryV5Response.
+        r"""Gets the agencies of this GetAccountSummaryV5Response.
 
         此账号中当前创建的委托及信任委托的总数量。
 
@@ -300,7 +300,7 @@ class GetAccountSummaryV5Response(SdkResponse):
 
     @agencies.setter
     def agencies(self, agencies):
-        """Sets the agencies of this GetAccountSummaryV5Response.
+        r"""Sets the agencies of this GetAccountSummaryV5Response.
 
         此账号中当前创建的委托及信任委托的总数量。
 
@@ -311,7 +311,7 @@ class GetAccountSummaryV5Response(SdkResponse):
 
     @property
     def agencies_quota(self):
-        """Gets the agencies_quota of this GetAccountSummaryV5Response.
+        r"""Gets the agencies_quota of this GetAccountSummaryV5Response.
 
         此账号能够创建的委托及信任委托的总数上限。
 
@@ -322,7 +322,7 @@ class GetAccountSummaryV5Response(SdkResponse):
 
     @agencies_quota.setter
     def agencies_quota(self, agencies_quota):
-        """Sets the agencies_quota of this GetAccountSummaryV5Response.
+        r"""Sets the agencies_quota of this GetAccountSummaryV5Response.
 
         此账号能够创建的委托及信任委托的总数上限。
 
@@ -333,7 +333,7 @@ class GetAccountSummaryV5Response(SdkResponse):
 
     @property
     def users(self):
-        """Gets the users of this GetAccountSummaryV5Response.
+        r"""Gets the users of this GetAccountSummaryV5Response.
 
         此账号当前创建的IAM用户数量，包括根用户。
 
@@ -344,7 +344,7 @@ class GetAccountSummaryV5Response(SdkResponse):
 
     @users.setter
     def users(self, users):
-        """Sets the users of this GetAccountSummaryV5Response.
+        r"""Sets the users of this GetAccountSummaryV5Response.
 
         此账号当前创建的IAM用户数量，包括根用户。
 
@@ -355,7 +355,7 @@ class GetAccountSummaryV5Response(SdkResponse):
 
     @property
     def users_quota(self):
-        """Gets the users_quota of this GetAccountSummaryV5Response.
+        r"""Gets the users_quota of this GetAccountSummaryV5Response.
 
         此账号能够创建的IAM用户数上限，包括根用户。
 
@@ -366,7 +366,7 @@ class GetAccountSummaryV5Response(SdkResponse):
 
     @users_quota.setter
     def users_quota(self, users_quota):
-        """Sets the users_quota of this GetAccountSummaryV5Response.
+        r"""Sets the users_quota of this GetAccountSummaryV5Response.
 
         此账号能够创建的IAM用户数上限，包括根用户。
 
@@ -377,7 +377,7 @@ class GetAccountSummaryV5Response(SdkResponse):
 
     @property
     def groups(self):
-        """Gets the groups of this GetAccountSummaryV5Response.
+        r"""Gets the groups of this GetAccountSummaryV5Response.
 
         此账号当前创建的用户组数量。
 
@@ -388,7 +388,7 @@ class GetAccountSummaryV5Response(SdkResponse):
 
     @groups.setter
     def groups(self, groups):
-        """Sets the groups of this GetAccountSummaryV5Response.
+        r"""Sets the groups of this GetAccountSummaryV5Response.
 
         此账号当前创建的用户组数量。
 
@@ -399,7 +399,7 @@ class GetAccountSummaryV5Response(SdkResponse):
 
     @property
     def groups_quota(self):
-        """Gets the groups_quota of this GetAccountSummaryV5Response.
+        r"""Gets the groups_quota of this GetAccountSummaryV5Response.
 
         此账号能够创建的用户组数上限。
 
@@ -410,7 +410,7 @@ class GetAccountSummaryV5Response(SdkResponse):
 
     @groups_quota.setter
     def groups_quota(self, groups_quota):
-        """Sets the groups_quota of this GetAccountSummaryV5Response.
+        r"""Sets the groups_quota of this GetAccountSummaryV5Response.
 
         此账号能够创建的用户组数上限。
 
@@ -421,7 +421,7 @@ class GetAccountSummaryV5Response(SdkResponse):
 
     @property
     def root_user_mfa_enabled(self):
-        """Gets the root_user_mfa_enabled of this GetAccountSummaryV5Response.
+        r"""Gets the root_user_mfa_enabled of this GetAccountSummaryV5Response.
 
         根用户绑定的已启用MFA的数量。
 
@@ -432,7 +432,7 @@ class GetAccountSummaryV5Response(SdkResponse):
 
     @root_user_mfa_enabled.setter
     def root_user_mfa_enabled(self, root_user_mfa_enabled):
-        """Sets the root_user_mfa_enabled of this GetAccountSummaryV5Response.
+        r"""Sets the root_user_mfa_enabled of this GetAccountSummaryV5Response.
 
         根用户绑定的已启用MFA的数量。
 

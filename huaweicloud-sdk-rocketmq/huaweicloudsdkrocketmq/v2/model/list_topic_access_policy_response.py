@@ -30,7 +30,7 @@ class ListTopicAccessPolicyResponse(SdkResponse):
     }
 
     def __init__(self, policies=None, total=None, name=None):
-        """ListTopicAccessPolicyResponse
+        r"""ListTopicAccessPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListTopicAccessPolicyResponse(SdkResponse):
 
     @property
     def policies(self):
-        """Gets the policies of this ListTopicAccessPolicyResponse.
+        r"""Gets the policies of this ListTopicAccessPolicyResponse.
 
         用户列表。
 
@@ -69,7 +69,7 @@ class ListTopicAccessPolicyResponse(SdkResponse):
 
     @policies.setter
     def policies(self, policies):
-        """Sets the policies of this ListTopicAccessPolicyResponse.
+        r"""Sets the policies of this ListTopicAccessPolicyResponse.
 
         用户列表。
 
@@ -80,7 +80,7 @@ class ListTopicAccessPolicyResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListTopicAccessPolicyResponse.
+        r"""Gets the total of this ListTopicAccessPolicyResponse.
 
         总用户个数。
 
@@ -91,7 +91,7 @@ class ListTopicAccessPolicyResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListTopicAccessPolicyResponse.
+        r"""Sets the total of this ListTopicAccessPolicyResponse.
 
         总用户个数。
 
@@ -102,7 +102,7 @@ class ListTopicAccessPolicyResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ListTopicAccessPolicyResponse.
+        r"""Gets the name of this ListTopicAccessPolicyResponse.
 
         主题或消费组名称。
 
@@ -113,7 +113,7 @@ class ListTopicAccessPolicyResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListTopicAccessPolicyResponse.
+        r"""Sets the name of this ListTopicAccessPolicyResponse.
 
         主题或消费组名称。
 

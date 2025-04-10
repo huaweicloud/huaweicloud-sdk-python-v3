@@ -27,7 +27,7 @@ class CreateSecretRequest:
     }
 
     def __init__(self, provider=None, body=None):
-        """CreateSecretRequest
+        r"""CreateSecretRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateSecretRequest:
 
     @property
     def provider(self):
-        """Gets the provider of this CreateSecretRequest.
+        r"""Gets the provider of this CreateSecretRequest.
 
         服务提供者：ief或hilens，选择设备纳管到不同的平台。不填默认为hilens平台
 
@@ -61,7 +61,7 @@ class CreateSecretRequest:
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this CreateSecretRequest.
+        r"""Sets the provider of this CreateSecretRequest.
 
         服务提供者：ief或hilens，选择设备纳管到不同的平台。不填默认为hilens平台
 
@@ -72,7 +72,7 @@ class CreateSecretRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSecretRequest.
+        r"""Gets the body of this CreateSecretRequest.
 
         :return: The body of this CreateSecretRequest.
         :rtype: :class:`huaweicloudsdkhilens.v3.SecretRequestBody`
@@ -81,7 +81,7 @@ class CreateSecretRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSecretRequest.
+        r"""Sets the body of this CreateSecretRequest.
 
         :param body: The body of this CreateSecretRequest.
         :type body: :class:`huaweicloudsdkhilens.v3.SecretRequestBody`

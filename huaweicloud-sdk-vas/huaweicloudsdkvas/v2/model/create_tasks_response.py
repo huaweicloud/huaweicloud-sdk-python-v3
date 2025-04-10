@@ -26,7 +26,7 @@ class CreateTasksResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """CreateTasksResponse
+        r"""CreateTasksResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateTasksResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this CreateTasksResponse.
+        r"""Gets the body of this CreateTasksResponse.
 
         :return: The body of this CreateTasksResponse.
         :rtype: list[:class:`huaweicloudsdkvas.v2.CreateResponseBody`]
@@ -53,7 +53,7 @@ class CreateTasksResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTasksResponse.
+        r"""Sets the body of this CreateTasksResponse.
 
         :param body: The body of this CreateTasksResponse.
         :type body: list[:class:`huaweicloudsdkvas.v2.CreateResponseBody`]

@@ -27,7 +27,7 @@ class DeleteGraphRequest:
     }
 
     def __init__(self, graph_id=None, keep_backup=None):
-        """DeleteGraphRequest
+        r"""DeleteGraphRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteGraphRequest:
 
     @property
     def graph_id(self):
-        """Gets the graph_id of this DeleteGraphRequest.
+        r"""Gets the graph_id of this DeleteGraphRequest.
 
         图ID。
 
@@ -60,7 +60,7 @@ class DeleteGraphRequest:
 
     @graph_id.setter
     def graph_id(self, graph_id):
-        """Sets the graph_id of this DeleteGraphRequest.
+        r"""Sets the graph_id of this DeleteGraphRequest.
 
         图ID。
 
@@ -71,7 +71,7 @@ class DeleteGraphRequest:
 
     @property
     def keep_backup(self):
-        """Gets the keep_backup of this DeleteGraphRequest.
+        r"""Gets the keep_backup of this DeleteGraphRequest.
 
         删除图后是否保留备份，默认保留1个自动备份和2个手动备份。该查询参数为空时，表示不保留。
 
@@ -82,7 +82,7 @@ class DeleteGraphRequest:
 
     @keep_backup.setter
     def keep_backup(self, keep_backup):
-        """Sets the keep_backup of this DeleteGraphRequest.
+        r"""Sets the keep_backup of this DeleteGraphRequest.
 
         删除图后是否保留备份，默认保留1个自动备份和2个手动备份。该查询参数为空时，表示不保留。
 

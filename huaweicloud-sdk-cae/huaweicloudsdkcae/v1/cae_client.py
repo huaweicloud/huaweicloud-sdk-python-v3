@@ -34,7 +34,7 @@ class CaeClient(Client):
         return client_builder
 
     def create_agency(self, request):
-        """创建委托
+        r"""创建委托
 
         创建委托。
         
@@ -99,7 +99,7 @@ class CaeClient(Client):
         return http_info
 
     def list_agencies(self, request):
-        """获取委托列表
+        r"""获取委托列表
 
         获取委托列表。
         
@@ -162,7 +162,7 @@ class CaeClient(Client):
         return http_info
 
     def create_application(self, request):
-        """创建应用
+        r"""创建应用
 
         创建应用。
         
@@ -231,7 +231,7 @@ class CaeClient(Client):
         return http_info
 
     def delete_application(self, request):
-        """删除应用
+        r"""删除应用
 
         删除应用。
         
@@ -300,7 +300,7 @@ class CaeClient(Client):
         return http_info
 
     def list_applications(self, request):
-        """获取应用列表
+        r"""获取应用列表
 
         获取应用列表。
         
@@ -367,7 +367,7 @@ class CaeClient(Client):
         return http_info
 
     def show_application(self, request):
-        """获取应用详情
+        r"""获取应用详情
 
         获取应用详情。
         
@@ -436,7 +436,7 @@ class CaeClient(Client):
         return http_info
 
     def create_certificate(self, request):
-        """创建证书
+        r"""创建证书
 
         创建证书。
         
@@ -505,7 +505,7 @@ class CaeClient(Client):
         return http_info
 
     def delete_certificate(self, request):
-        """删除证书
+        r"""删除证书
 
         删除证书。
         
@@ -574,7 +574,7 @@ class CaeClient(Client):
         return http_info
 
     def list_certificates(self, request):
-        """获取证书列表
+        r"""获取证书列表
 
         获取证书列表。
         
@@ -641,7 +641,7 @@ class CaeClient(Client):
         return http_info
 
     def update_certificate(self, request):
-        """修改证书
+        r"""修改证书
 
         修改证书。
         
@@ -712,7 +712,7 @@ class CaeClient(Client):
         return http_info
 
     def create_component(self, request):
-        """创建组件
+        r"""创建组件
 
         创建组件。
         
@@ -783,7 +783,7 @@ class CaeClient(Client):
         return http_info
 
     def create_component_with_configuration(self, request):
-        """创建、生效配置并部署组件
+        r"""创建、生效配置并部署组件
 
         创建、生效配置并部署组件。
         
@@ -854,7 +854,7 @@ class CaeClient(Client):
         return http_info
 
     def delete_component(self, request):
-        """删除组件
+        r"""删除组件
 
         删除组件。
         
@@ -925,7 +925,7 @@ class CaeClient(Client):
         return http_info
 
     def execute_action(self, request):
-        """操作组件
+        r"""操作组件
 
         对组件执行指定操作，如部署、升级、重启、停止、启动、伸缩、配置、回滚。
         
@@ -998,7 +998,7 @@ class CaeClient(Client):
         return http_info
 
     def list_component_instances(self, request):
-        """获取组件实例列表
+        r"""获取组件实例列表
 
         获取组件实例列表。
         
@@ -1069,7 +1069,7 @@ class CaeClient(Client):
         return http_info
 
     def list_component_snapshots(self, request):
-        """获取组件快照列表
+        r"""获取组件快照列表
 
         获取组件快照列表。
         
@@ -1140,7 +1140,7 @@ class CaeClient(Client):
         return http_info
 
     def list_components(self, request):
-        """获取组件列表
+        r"""获取组件列表
 
         获取组件列表。
         
@@ -1217,7 +1217,7 @@ class CaeClient(Client):
         return http_info
 
     def show_component(self, request):
-        """获取组件详情
+        r"""获取组件详情
 
         获取组件详情。
         
@@ -1288,7 +1288,7 @@ class CaeClient(Client):
         return http_info
 
     def update_component(self, request):
-        """更新组件
+        r"""更新组件
 
         更新组件。
         
@@ -1361,7 +1361,7 @@ class CaeClient(Client):
         return http_info
 
     def create_component_configuration(self, request):
-        """创建组件配置
+        r"""创建组件配置
 
         创建组件配置。
         
@@ -1434,7 +1434,7 @@ class CaeClient(Client):
         return http_info
 
     def delete_component_configuration(self, request):
-        """删除组件配置
+        r"""删除组件配置
 
         删除组件配置。
         
@@ -1505,7 +1505,7 @@ class CaeClient(Client):
         return http_info
 
     def list_component_configurations(self, request):
-        """获取组件配置列表
+        r"""获取组件配置列表
 
         获取组件配置列表。
         
@@ -1578,7 +1578,7 @@ class CaeClient(Client):
         return http_info
 
     def create_domain(self, request):
-        """创建域名
+        r"""创建域名
 
         创建域名。
         
@@ -1647,7 +1647,7 @@ class CaeClient(Client):
         return http_info
 
     def delete_domain(self, request):
-        """删除域名
+        r"""删除域名
 
         删除域名。
         
@@ -1716,7 +1716,7 @@ class CaeClient(Client):
         return http_info
 
     def list_domains(self, request):
-        """获取域名列表
+        r"""获取域名列表
 
         获取域名列表。
         
@@ -1783,7 +1783,7 @@ class CaeClient(Client):
         return http_info
 
     def list_eips(self, request):
-        """获取集群节点弹性公网IP列表
+        r"""获取集群节点弹性公网IP列表
 
         获取集群节点弹性公网IP列表。
         
@@ -1850,7 +1850,7 @@ class CaeClient(Client):
         return http_info
 
     def update_eip(self, request):
-        """修改出入网带宽以及开闭状态
+        r"""修改出入网带宽以及开闭状态
 
         修改出入网带宽以及开闭状态。
         
@@ -1919,7 +1919,7 @@ class CaeClient(Client):
         return http_info
 
     def create_environment(self, request):
-        """创建环境
+        r"""创建环境
 
         创建环境。
         
@@ -1986,7 +1986,7 @@ class CaeClient(Client):
         return http_info
 
     def delete_environment(self, request):
-        """删除环境
+        r"""删除环境
 
         删除环境。
         
@@ -2053,7 +2053,7 @@ class CaeClient(Client):
         return http_info
 
     def list_environments(self, request):
-        """获取环境列表
+        r"""获取环境列表
 
         获取环境列表。
         
@@ -2118,7 +2118,7 @@ class CaeClient(Client):
         return http_info
 
     def retry_job(self, request):
-        """重试任务
+        r"""重试任务
 
         重试任务。
         
@@ -2187,7 +2187,7 @@ class CaeClient(Client):
         return http_info
 
     def show_job(self, request):
-        """获取任务详情
+        r"""获取任务详情
 
         获取任务详情。
         
@@ -2256,7 +2256,7 @@ class CaeClient(Client):
         return http_info
 
     def create_monitor_system(self, request):
-        """创建监控系统配置
+        r"""创建监控系统配置
 
         创建监控系统配置。
         
@@ -2325,7 +2325,7 @@ class CaeClient(Client):
         return http_info
 
     def show_monitor_system(self, request):
-        """获取监控系统配置
+        r"""获取监控系统配置
 
         获取监控系统配置。
         
@@ -2392,7 +2392,7 @@ class CaeClient(Client):
         return http_info
 
     def update_monitor_system(self, request):
-        """更新监控系统配置
+        r"""更新监控系统配置
 
         更新监控系统配置。
         
@@ -2463,7 +2463,7 @@ class CaeClient(Client):
         return http_info
 
     def create_notice_rule(self, request):
-        """创建事件通知规则。
+        r"""创建事件通知规则。
 
         创建事件通知规则。
         
@@ -2530,7 +2530,7 @@ class CaeClient(Client):
         return http_info
 
     def delete_notice_rule(self, request):
-        """删除事件通知规则。
+        r"""删除事件通知规则。
 
         删除事件通知规则。
         
@@ -2597,7 +2597,7 @@ class CaeClient(Client):
         return http_info
 
     def list_notice_rules(self, request):
-        """查询事件通知规则列表。
+        r"""查询事件通知规则列表。
 
         查询事件通知规则列表。
         
@@ -2662,7 +2662,7 @@ class CaeClient(Client):
         return http_info
 
     def show_notice_rule(self, request):
-        """查询事件通知规则。
+        r"""查询事件通知规则。
 
         查询事件通知规则。
         
@@ -2729,7 +2729,7 @@ class CaeClient(Client):
         return http_info
 
     def update_notice_rule(self, request):
-        """修改事件通知规则。
+        r"""修改事件通知规则。
 
         修改事件通知规则。
         
@@ -2798,7 +2798,7 @@ class CaeClient(Client):
         return http_info
 
     def create_secret(self, request):
-        """关联租户已注册的凭据。
+        r"""关联租户已注册的凭据。
 
         关联租户已注册的凭据。
         
@@ -2867,7 +2867,7 @@ class CaeClient(Client):
         return http_info
 
     def delete_secret(self, request):
-        """删除用户已在DEW服务上注册的凭据。
+        r"""删除用户已在DEW服务上注册的凭据。
 
         删除用户已在DEW服务上注册的凭据。
         
@@ -2934,7 +2934,7 @@ class CaeClient(Client):
         return http_info
 
     def list_effective_components(self, request):
-        """获取当前正在使用对应凭据组件列表。
+        r"""获取当前正在使用对应凭据组件列表。
 
         获取当前正在使用的对应凭据组件列表。
         
@@ -3001,7 +3001,7 @@ class CaeClient(Client):
         return http_info
 
     def list_secrets(self, request):
-        """获取用户现有的凭据。
+        r"""获取用户现有的凭据。
 
         获取用户现有的凭据。
         
@@ -3066,7 +3066,7 @@ class CaeClient(Client):
         return http_info
 
     def update_secret(self, request):
-        """修改用户已在DEW服务上注册的凭据版本。
+        r"""修改用户已在DEW服务上注册的凭据版本。
 
         修改用户已在DEW服务上注册的凭据版本。
         
@@ -3135,7 +3135,7 @@ class CaeClient(Client):
         return http_info
 
     def create_volume(self, request):
-        """授权云存储
+        r"""授权云存储
 
         授权云存储。
         
@@ -3204,7 +3204,7 @@ class CaeClient(Client):
         return http_info
 
     def delete_volume(self, request):
-        """解绑云存储
+        r"""解绑云存储
 
         解绑云存储。
         
@@ -3273,7 +3273,7 @@ class CaeClient(Client):
         return http_info
 
     def list_volumes(self, request):
-        """获取云存储列表
+        r"""获取云存储列表
 
         获取云存储列表。
         
@@ -3342,7 +3342,7 @@ class CaeClient(Client):
         return http_info
 
     def create_vpc_egress(self, request):
-        """创建CAE环境访问VPC配置
+        r"""创建CAE环境访问VPC配置
 
         创建CAE环境访问VPC配置。
         
@@ -3411,7 +3411,7 @@ class CaeClient(Client):
         return http_info
 
     def delete_vpc_egress(self, request):
-        """删除CAE环境访问VPC配置
+        r"""删除CAE环境访问VPC配置
 
         删除CAE环境访问VPC配置。
         
@@ -3480,7 +3480,7 @@ class CaeClient(Client):
         return http_info
 
     def list_vpc_egress(self, request):
-        """获取CAE环境访问VPC配置
+        r"""获取CAE环境访问VPC配置
 
         获取CAE环境访问VPC配置。
         
@@ -3547,7 +3547,7 @@ class CaeClient(Client):
         return http_info
 
     def create_timer_rule(self, request):
-        """创建定时启停规则
+        r"""创建定时启停规则
 
         创建定时启停规则。
         
@@ -3616,7 +3616,7 @@ class CaeClient(Client):
         return http_info
 
     def delete_timer_rule(self, request):
-        """删除定时启停规则
+        r"""删除定时启停规则
 
         删除定时启停规则。
         
@@ -3685,7 +3685,7 @@ class CaeClient(Client):
         return http_info
 
     def list_timer_rules(self, request):
-        """获取定时启停规则列表
+        r"""获取定时启停规则列表
 
         获取定时启停规则列表。
         
@@ -3752,7 +3752,7 @@ class CaeClient(Client):
         return http_info
 
     def show_execution_result(self, request):
-        """获取上次定时启停规则的执行情况
+        r"""获取上次定时启停规则的执行情况
 
         获取上次定时启停规则的执行情况。
         
@@ -3821,7 +3821,7 @@ class CaeClient(Client):
         return http_info
 
     def update_timer_rule(self, request):
-        """修改定时启停规则
+        r"""修改定时启停规则
 
         修改定时启停规则。
         

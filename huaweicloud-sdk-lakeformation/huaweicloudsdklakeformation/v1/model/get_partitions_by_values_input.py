@@ -25,7 +25,7 @@ class GetPartitionsByValuesInput:
     }
 
     def __init__(self, values=None):
-        """GetPartitionsByValuesInput
+        r"""GetPartitionsByValuesInput
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class GetPartitionsByValuesInput:
 
     @property
     def values(self):
-        """Gets the values of this GetPartitionsByValuesInput.
+        r"""Gets the values of this GetPartitionsByValuesInput.
 
         获取的分区列表每个分区值列表代表一个分区
 
@@ -53,7 +53,7 @@ class GetPartitionsByValuesInput:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this GetPartitionsByValuesInput.
+        r"""Sets the values of this GetPartitionsByValuesInput.
 
         获取的分区列表每个分区值列表代表一个分区
 

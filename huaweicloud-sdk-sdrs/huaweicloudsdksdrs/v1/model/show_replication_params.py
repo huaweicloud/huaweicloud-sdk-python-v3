@@ -55,7 +55,7 @@ class ShowReplicationParams:
     }
 
     def __init__(self, id=None, name=None, description=None, status=None, volume_ids=None, attachment=None, created_at=None, updated_at=None, replication_model=None, progress=None, failure_detail=None, record_metadata=None, fault_level=None, server_group_id=None, priority_station=None, replication_status=None):
-        """ShowReplicationParams
+        r"""ShowReplicationParams
 
         The model defined in huaweicloud sdk
 
@@ -132,7 +132,7 @@ class ShowReplicationParams:
 
     @property
     def id(self):
-        """Gets the id of this ShowReplicationParams.
+        r"""Gets the id of this ShowReplicationParams.
 
         复制对的ID。
 
@@ -143,7 +143,7 @@ class ShowReplicationParams:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowReplicationParams.
+        r"""Sets the id of this ShowReplicationParams.
 
         复制对的ID。
 
@@ -154,7 +154,7 @@ class ShowReplicationParams:
 
     @property
     def name(self):
-        """Gets the name of this ShowReplicationParams.
+        r"""Gets the name of this ShowReplicationParams.
 
         复制对的名称。
 
@@ -165,7 +165,7 @@ class ShowReplicationParams:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowReplicationParams.
+        r"""Sets the name of this ShowReplicationParams.
 
         复制对的名称。
 
@@ -176,7 +176,7 @@ class ShowReplicationParams:
 
     @property
     def description(self):
-        """Gets the description of this ShowReplicationParams.
+        r"""Gets the description of this ShowReplicationParams.
 
         复制对的描述。
 
@@ -187,7 +187,7 @@ class ShowReplicationParams:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowReplicationParams.
+        r"""Sets the description of this ShowReplicationParams.
 
         复制对的描述。
 
@@ -198,7 +198,7 @@ class ShowReplicationParams:
 
     @property
     def status(self):
-        """Gets the status of this ShowReplicationParams.
+        r"""Gets the status of this ShowReplicationParams.
 
         复制对的状态。
 
@@ -209,7 +209,7 @@ class ShowReplicationParams:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowReplicationParams.
+        r"""Sets the status of this ShowReplicationParams.
 
         复制对的状态。
 
@@ -220,7 +220,7 @@ class ShowReplicationParams:
 
     @property
     def volume_ids(self):
-        """Gets the volume_ids of this ShowReplicationParams.
+        r"""Gets the volume_ids of this ShowReplicationParams.
 
         复制对使用的云硬盘ID。
 
@@ -231,7 +231,7 @@ class ShowReplicationParams:
 
     @volume_ids.setter
     def volume_ids(self, volume_ids):
-        """Sets the volume_ids of this ShowReplicationParams.
+        r"""Sets the volume_ids of this ShowReplicationParams.
 
         复制对使用的云硬盘ID。
 
@@ -242,7 +242,7 @@ class ShowReplicationParams:
 
     @property
     def attachment(self):
-        """Gets the attachment of this ShowReplicationParams.
+        r"""Gets the attachment of this ShowReplicationParams.
 
         挂载点。
 
@@ -253,7 +253,7 @@ class ShowReplicationParams:
 
     @attachment.setter
     def attachment(self, attachment):
-        """Sets the attachment of this ShowReplicationParams.
+        r"""Sets the attachment of this ShowReplicationParams.
 
         挂载点。
 
@@ -264,7 +264,7 @@ class ShowReplicationParams:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ShowReplicationParams.
+        r"""Gets the created_at of this ShowReplicationParams.
 
         创建时间。默认格式为：\"yyyy-MM-ddTHH:mm:ss.SSSZ\"，例如：\"2019-04-01T12:00:00.000Z\"
 
@@ -275,7 +275,7 @@ class ShowReplicationParams:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ShowReplicationParams.
+        r"""Sets the created_at of this ShowReplicationParams.
 
         创建时间。默认格式为：\"yyyy-MM-ddTHH:mm:ss.SSSZ\"，例如：\"2019-04-01T12:00:00.000Z\"
 
@@ -286,7 +286,7 @@ class ShowReplicationParams:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ShowReplicationParams.
+        r"""Gets the updated_at of this ShowReplicationParams.
 
         更新时间。默认格式为：\"yyyy-MM-ddTHH:mm:ss.SSSZ\"，例如：\"2019-04-01T12:00:00.000Z\"
 
@@ -297,7 +297,7 @@ class ShowReplicationParams:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ShowReplicationParams.
+        r"""Sets the updated_at of this ShowReplicationParams.
 
         更新时间。默认格式为：\"yyyy-MM-ddTHH:mm:ss.SSSZ\"，例如：\"2019-04-01T12:00:00.000Z\"
 
@@ -308,7 +308,7 @@ class ShowReplicationParams:
 
     @property
     def replication_model(self):
-        """Gets the replication_model of this ShowReplicationParams.
+        r"""Gets the replication_model of this ShowReplicationParams.
 
         复制对的复制类型。默认值为“hypermetro”，表示同步复制。
 
@@ -319,7 +319,7 @@ class ShowReplicationParams:
 
     @replication_model.setter
     def replication_model(self, replication_model):
-        """Sets the replication_model of this ShowReplicationParams.
+        r"""Sets the replication_model of this ShowReplicationParams.
 
         复制对的复制类型。默认值为“hypermetro”，表示同步复制。
 
@@ -330,7 +330,7 @@ class ShowReplicationParams:
 
     @property
     def progress(self):
-        """Gets the progress of this ShowReplicationParams.
+        r"""Gets the progress of this ShowReplicationParams.
 
         复制对的同步进度。单位：百分比（%）。
 
@@ -341,7 +341,7 @@ class ShowReplicationParams:
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this ShowReplicationParams.
+        r"""Sets the progress of this ShowReplicationParams.
 
         复制对的同步进度。单位：百分比（%）。
 
@@ -352,7 +352,7 @@ class ShowReplicationParams:
 
     @property
     def failure_detail(self):
-        """Gets the failure_detail of this ShowReplicationParams.
+        r"""Gets the failure_detail of this ShowReplicationParams.
 
         仅在复制对的状态“status”为“error”时，返回的错误码。
 
@@ -363,7 +363,7 @@ class ShowReplicationParams:
 
     @failure_detail.setter
     def failure_detail(self, failure_detail):
-        """Sets the failure_detail of this ShowReplicationParams.
+        r"""Sets the failure_detail of this ShowReplicationParams.
 
         仅在复制对的状态“status”为“error”时，返回的错误码。
 
@@ -374,7 +374,7 @@ class ShowReplicationParams:
 
     @property
     def record_metadata(self):
-        """Gets the record_metadata of this ShowReplicationParams.
+        r"""Gets the record_metadata of this ShowReplicationParams.
 
         :return: The record_metadata of this ShowReplicationParams.
         :rtype: :class:`huaweicloudsdksdrs.v1.ReplicationRecordMetadata`
@@ -383,7 +383,7 @@ class ShowReplicationParams:
 
     @record_metadata.setter
     def record_metadata(self, record_metadata):
-        """Sets the record_metadata of this ShowReplicationParams.
+        r"""Sets the record_metadata of this ShowReplicationParams.
 
         :param record_metadata: The record_metadata of this ShowReplicationParams.
         :type record_metadata: :class:`huaweicloudsdksdrs.v1.ReplicationRecordMetadata`
@@ -392,7 +392,7 @@ class ShowReplicationParams:
 
     @property
     def fault_level(self):
-        """Gets the fault_level of this ShowReplicationParams.
+        r"""Gets the fault_level of this ShowReplicationParams.
 
         复制对的故障等级。0：表示无故障。2：表示当前生产站点的云硬盘无读写数据权限，此时建议执行故障切换操作。5：表示复制链路已断，不能执行故障切换操作，需联系技术支持工程师。
 
@@ -403,7 +403,7 @@ class ShowReplicationParams:
 
     @fault_level.setter
     def fault_level(self, fault_level):
-        """Sets the fault_level of this ShowReplicationParams.
+        r"""Sets the fault_level of this ShowReplicationParams.
 
         复制对的故障等级。0：表示无故障。2：表示当前生产站点的云硬盘无读写数据权限，此时建议执行故障切换操作。5：表示复制链路已断，不能执行故障切换操作，需联系技术支持工程师。
 
@@ -414,7 +414,7 @@ class ShowReplicationParams:
 
     @property
     def server_group_id(self):
-        """Gets the server_group_id of this ShowReplicationParams.
+        r"""Gets the server_group_id of this ShowReplicationParams.
 
         保护组的ID。
 
@@ -425,7 +425,7 @@ class ShowReplicationParams:
 
     @server_group_id.setter
     def server_group_id(self, server_group_id):
-        """Sets the server_group_id of this ShowReplicationParams.
+        r"""Sets the server_group_id of this ShowReplicationParams.
 
         保护组的ID。
 
@@ -436,7 +436,7 @@ class ShowReplicationParams:
 
     @property
     def priority_station(self):
-        """Gets the priority_station of this ShowReplicationParams.
+        r"""Gets the priority_station of this ShowReplicationParams.
 
         标识复制对所在保护组的当前生产站点可用区。source：表示当前生产站点可用区为保护组source_availability_zone的值。target：表示当前生产站点可用区为保护组target_availability_zone的值。
 
@@ -447,7 +447,7 @@ class ShowReplicationParams:
 
     @priority_station.setter
     def priority_station(self, priority_station):
-        """Sets the priority_station of this ShowReplicationParams.
+        r"""Sets the priority_station of this ShowReplicationParams.
 
         标识复制对所在保护组的当前生产站点可用区。source：表示当前生产站点可用区为保护组source_availability_zone的值。target：表示当前生产站点可用区为保护组target_availability_zone的值。
 
@@ -458,7 +458,7 @@ class ShowReplicationParams:
 
     @property
     def replication_status(self):
-        """Gets the replication_status of this ShowReplicationParams.
+        r"""Gets the replication_status of this ShowReplicationParams.
 
         数据同步状态。active：表示数据已同步完成。inactive：表示数据未同步。copying：表示数据正在同步。active-stopped：表示数据已停止同步。
 
@@ -469,7 +469,7 @@ class ShowReplicationParams:
 
     @replication_status.setter
     def replication_status(self, replication_status):
-        """Sets the replication_status of this ShowReplicationParams.
+        r"""Sets the replication_status of this ShowReplicationParams.
 
         数据同步状态。active：表示数据已同步完成。inactive：表示数据未同步。copying：表示数据正在同步。active-stopped：表示数据已停止同步。
 

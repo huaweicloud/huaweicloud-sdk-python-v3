@@ -41,7 +41,7 @@ class ImageVulInfo:
     }
 
     def __init__(self, vul_id=None, repair_necessity=None, description=None, position=None, app_name=None, app_path=None, version=None, solution=None, url=None):
-        """ImageVulInfo
+        r"""ImageVulInfo
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ImageVulInfo:
 
     @property
     def vul_id(self):
-        """Gets the vul_id of this ImageVulInfo.
+        r"""Gets the vul_id of this ImageVulInfo.
 
         漏洞id
 
@@ -110,7 +110,7 @@ class ImageVulInfo:
 
     @vul_id.setter
     def vul_id(self, vul_id):
-        """Sets the vul_id of this ImageVulInfo.
+        r"""Sets the vul_id of this ImageVulInfo.
 
         漏洞id
 
@@ -121,7 +121,7 @@ class ImageVulInfo:
 
     @property
     def repair_necessity(self):
-        """Gets the repair_necessity of this ImageVulInfo.
+        r"""Gets the repair_necessity of this ImageVulInfo.
 
         修复紧急度，包含如下3种。   - immediate_repair ：高危。   - delay_repair ：中危。   - not_needed_repair ：低危。
 
@@ -132,7 +132,7 @@ class ImageVulInfo:
 
     @repair_necessity.setter
     def repair_necessity(self, repair_necessity):
-        """Sets the repair_necessity of this ImageVulInfo.
+        r"""Sets the repair_necessity of this ImageVulInfo.
 
         修复紧急度，包含如下3种。   - immediate_repair ：高危。   - delay_repair ：中危。   - not_needed_repair ：低危。
 
@@ -143,7 +143,7 @@ class ImageVulInfo:
 
     @property
     def description(self):
-        """Gets the description of this ImageVulInfo.
+        r"""Gets the description of this ImageVulInfo.
 
         漏洞描述
 
@@ -154,7 +154,7 @@ class ImageVulInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ImageVulInfo.
+        r"""Sets the description of this ImageVulInfo.
 
         漏洞描述
 
@@ -165,7 +165,7 @@ class ImageVulInfo:
 
     @property
     def position(self):
-        """Gets the position of this ImageVulInfo.
+        r"""Gets the position of this ImageVulInfo.
 
         漏洞所在镜像层
 
@@ -176,7 +176,7 @@ class ImageVulInfo:
 
     @position.setter
     def position(self, position):
-        """Sets the position of this ImageVulInfo.
+        r"""Sets the position of this ImageVulInfo.
 
         漏洞所在镜像层
 
@@ -187,7 +187,7 @@ class ImageVulInfo:
 
     @property
     def app_name(self):
-        """Gets the app_name of this ImageVulInfo.
+        r"""Gets the app_name of this ImageVulInfo.
 
         漏洞的软件名称
 
@@ -198,7 +198,7 @@ class ImageVulInfo:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ImageVulInfo.
+        r"""Sets the app_name of this ImageVulInfo.
 
         漏洞的软件名称
 
@@ -209,7 +209,7 @@ class ImageVulInfo:
 
     @property
     def app_path(self):
-        """Gets the app_path of this ImageVulInfo.
+        r"""Gets the app_path of this ImageVulInfo.
 
         应用软件的路径（只有应用漏洞有该字段）
 
@@ -220,7 +220,7 @@ class ImageVulInfo:
 
     @app_path.setter
     def app_path(self, app_path):
-        """Sets the app_path of this ImageVulInfo.
+        r"""Sets the app_path of this ImageVulInfo.
 
         应用软件的路径（只有应用漏洞有该字段）
 
@@ -231,7 +231,7 @@ class ImageVulInfo:
 
     @property
     def version(self):
-        """Gets the version of this ImageVulInfo.
+        r"""Gets the version of this ImageVulInfo.
 
         软件版本
 
@@ -242,7 +242,7 @@ class ImageVulInfo:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ImageVulInfo.
+        r"""Sets the version of this ImageVulInfo.
 
         软件版本
 
@@ -253,7 +253,7 @@ class ImageVulInfo:
 
     @property
     def solution(self):
-        """Gets the solution of this ImageVulInfo.
+        r"""Gets the solution of this ImageVulInfo.
 
         解决方案
 
@@ -264,7 +264,7 @@ class ImageVulInfo:
 
     @solution.setter
     def solution(self, solution):
-        """Sets the solution of this ImageVulInfo.
+        r"""Sets the solution of this ImageVulInfo.
 
         解决方案
 
@@ -275,7 +275,7 @@ class ImageVulInfo:
 
     @property
     def url(self):
-        """Gets the url of this ImageVulInfo.
+        r"""Gets the url of this ImageVulInfo.
 
         补丁地址
 
@@ -286,7 +286,7 @@ class ImageVulInfo:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ImageVulInfo.
+        r"""Sets the url of this ImageVulInfo.
 
         补丁地址
 

@@ -25,7 +25,7 @@ class DeleteStoredQueryRequest:
     }
 
     def __init__(self, query_id=None):
-        """DeleteStoredQueryRequest
+        r"""DeleteStoredQueryRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteStoredQueryRequest:
 
     @property
     def query_id(self):
-        """Gets the query_id of this DeleteStoredQueryRequest.
+        r"""Gets the query_id of this DeleteStoredQueryRequest.
 
         查询ID
 
@@ -53,7 +53,7 @@ class DeleteStoredQueryRequest:
 
     @query_id.setter
     def query_id(self, query_id):
-        """Sets the query_id of this DeleteStoredQueryRequest.
+        r"""Sets the query_id of this DeleteStoredQueryRequest.
 
         查询ID
 

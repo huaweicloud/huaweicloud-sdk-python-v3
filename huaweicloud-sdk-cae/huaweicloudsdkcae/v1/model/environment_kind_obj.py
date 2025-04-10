@@ -26,7 +26,7 @@ class EnvironmentKindObj:
     }
 
     def __init__(self):
-        """EnvironmentKindObj
+        r"""EnvironmentKindObj
 
         The model defined in huaweicloud sdk
 

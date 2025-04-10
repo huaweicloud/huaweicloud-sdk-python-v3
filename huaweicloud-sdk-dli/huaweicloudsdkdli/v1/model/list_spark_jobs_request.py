@@ -43,7 +43,7 @@ class ListSparkJobsRequest:
     }
 
     def __init__(self, cluster_name=None, end=None, _from=None, job_name=None, job_id=None, order=None, queue_name=None, size=None, start=None, state=None):
-        """ListSparkJobsRequest
+        r"""ListSparkJobsRequest
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ListSparkJobsRequest:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this ListSparkJobsRequest.
+        r"""Gets the cluster_name of this ListSparkJobsRequest.
 
         DLI队列名称，不填写则获取当前Project下所有批处理作业(不推荐使用)。
 
@@ -117,7 +117,7 @@ class ListSparkJobsRequest:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this ListSparkJobsRequest.
+        r"""Sets the cluster_name of this ListSparkJobsRequest.
 
         DLI队列名称，不填写则获取当前Project下所有批处理作业(不推荐使用)。
 
@@ -128,7 +128,7 @@ class ListSparkJobsRequest:
 
     @property
     def end(self):
-        """Gets the end of this ListSparkJobsRequest.
+        r"""Gets the end of this ListSparkJobsRequest.
 
         用于查询开始时间在该时间点之前的作业。时间格式为unix时间戳，单位：毫秒。
 
@@ -139,7 +139,7 @@ class ListSparkJobsRequest:
 
     @end.setter
     def end(self, end):
-        """Sets the end of this ListSparkJobsRequest.
+        r"""Sets the end of this ListSparkJobsRequest.
 
         用于查询开始时间在该时间点之前的作业。时间格式为unix时间戳，单位：毫秒。
 
@@ -150,7 +150,7 @@ class ListSparkJobsRequest:
 
     @property
     def _from(self):
-        """Gets the _from of this ListSparkJobsRequest.
+        r"""Gets the _from of this ListSparkJobsRequest.
 
         起始批处理作业的索引号，默认从0开始。
 
@@ -161,7 +161,7 @@ class ListSparkJobsRequest:
 
     @_from.setter
     def _from(self, _from):
-        """Sets the _from of this ListSparkJobsRequest.
+        r"""Sets the _from of this ListSparkJobsRequest.
 
         起始批处理作业的索引号，默认从0开始。
 
@@ -172,7 +172,7 @@ class ListSparkJobsRequest:
 
     @property
     def job_name(self):
-        """Gets the job_name of this ListSparkJobsRequest.
+        r"""Gets the job_name of this ListSparkJobsRequest.
 
         批处理作业的名称。
 
@@ -183,7 +183,7 @@ class ListSparkJobsRequest:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this ListSparkJobsRequest.
+        r"""Sets the job_name of this ListSparkJobsRequest.
 
         批处理作业的名称。
 
@@ -194,7 +194,7 @@ class ListSparkJobsRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ListSparkJobsRequest.
+        r"""Gets the job_id of this ListSparkJobsRequest.
 
         :return: The job_id of this ListSparkJobsRequest.
         :rtype: str
@@ -203,7 +203,7 @@ class ListSparkJobsRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ListSparkJobsRequest.
+        r"""Sets the job_id of this ListSparkJobsRequest.
 
         :param job_id: The job_id of this ListSparkJobsRequest.
         :type job_id: str
@@ -212,7 +212,7 @@ class ListSparkJobsRequest:
 
     @property
     def order(self):
-        """Gets the order of this ListSparkJobsRequest.
+        r"""Gets the order of this ListSparkJobsRequest.
 
         指定作业排序方式，默认为CREATE_TIME_DESC（作业提交时间降序），支持DURATION_DESC（作业运行时长降序）、DURATION_ASC（作业运行时长升序）、CREATE_TIME_DESC（作业提交时间降序）、CREATE_TIME_ASC（作业提交时间升序）四种排序方式。
 
@@ -223,7 +223,7 @@ class ListSparkJobsRequest:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this ListSparkJobsRequest.
+        r"""Sets the order of this ListSparkJobsRequest.
 
         指定作业排序方式，默认为CREATE_TIME_DESC（作业提交时间降序），支持DURATION_DESC（作业运行时长降序）、DURATION_ASC（作业运行时长升序）、CREATE_TIME_DESC（作业提交时间降序）、CREATE_TIME_ASC（作业提交时间升序）四种排序方式。
 
@@ -234,7 +234,7 @@ class ListSparkJobsRequest:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this ListSparkJobsRequest.
+        r"""Gets the queue_name of this ListSparkJobsRequest.
 
         :return: The queue_name of this ListSparkJobsRequest.
         :rtype: str
@@ -243,7 +243,7 @@ class ListSparkJobsRequest:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this ListSparkJobsRequest.
+        r"""Sets the queue_name of this ListSparkJobsRequest.
 
         :param queue_name: The queue_name of this ListSparkJobsRequest.
         :type queue_name: str
@@ -252,7 +252,7 @@ class ListSparkJobsRequest:
 
     @property
     def size(self):
-        """Gets the size of this ListSparkJobsRequest.
+        r"""Gets the size of this ListSparkJobsRequest.
 
         查询批处理作业的数量。
 
@@ -263,7 +263,7 @@ class ListSparkJobsRequest:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListSparkJobsRequest.
+        r"""Sets the size of this ListSparkJobsRequest.
 
         查询批处理作业的数量。
 
@@ -274,7 +274,7 @@ class ListSparkJobsRequest:
 
     @property
     def start(self):
-        """Gets the start of this ListSparkJobsRequest.
+        r"""Gets the start of this ListSparkJobsRequest.
 
         用于查询开始时间在该时间点之后的作业。时间格式为unix时间戳，单位：毫秒。
 
@@ -285,7 +285,7 @@ class ListSparkJobsRequest:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this ListSparkJobsRequest.
+        r"""Sets the start of this ListSparkJobsRequest.
 
         用于查询开始时间在该时间点之后的作业。时间格式为unix时间戳，单位：毫秒。
 
@@ -296,7 +296,7 @@ class ListSparkJobsRequest:
 
     @property
     def state(self):
-        """Gets the state of this ListSparkJobsRequest.
+        r"""Gets the state of this ListSparkJobsRequest.
 
         :return: The state of this ListSparkJobsRequest.
         :rtype: str
@@ -305,7 +305,7 @@ class ListSparkJobsRequest:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ListSparkJobsRequest.
+        r"""Sets the state of this ListSparkJobsRequest.
 
         :param state: The state of this ListSparkJobsRequest.
         :type state: str

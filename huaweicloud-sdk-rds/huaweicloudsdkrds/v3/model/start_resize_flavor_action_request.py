@@ -29,7 +29,7 @@ class StartResizeFlavorActionRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """StartResizeFlavorActionRequest
+        r"""StartResizeFlavorActionRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class StartResizeFlavorActionRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this StartResizeFlavorActionRequest.
+        r"""Gets the x_language of this StartResizeFlavorActionRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class StartResizeFlavorActionRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this StartResizeFlavorActionRequest.
+        r"""Sets the x_language of this StartResizeFlavorActionRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class StartResizeFlavorActionRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this StartResizeFlavorActionRequest.
+        r"""Gets the instance_id of this StartResizeFlavorActionRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class StartResizeFlavorActionRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this StartResizeFlavorActionRequest.
+        r"""Sets the instance_id of this StartResizeFlavorActionRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class StartResizeFlavorActionRequest:
 
     @property
     def body(self):
-        """Gets the body of this StartResizeFlavorActionRequest.
+        r"""Gets the body of this StartResizeFlavorActionRequest.
 
         :return: The body of this StartResizeFlavorActionRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.ResizeFlavorRequest`
@@ -109,7 +109,7 @@ class StartResizeFlavorActionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StartResizeFlavorActionRequest.
+        r"""Sets the body of this StartResizeFlavorActionRequest.
 
         :param body: The body of this StartResizeFlavorActionRequest.
         :type body: :class:`huaweicloudsdkrds.v3.ResizeFlavorRequest`

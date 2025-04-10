@@ -45,7 +45,7 @@ class ClusterNode:
     }
 
     def __init__(self, node_name=None, resource_id=None, node_group_name=None, node_type=None, billing_type=None, deployment_type=None, server_info=None, tags=None, node_detail=None, node_status=None, component_infos=None):
-        """ClusterNode
+        r"""ClusterNode
 
         The model defined in huaweicloud sdk
 
@@ -112,7 +112,7 @@ class ClusterNode:
 
     @property
     def node_name(self):
-        """Gets the node_name of this ClusterNode.
+        r"""Gets the node_name of this ClusterNode.
 
         节点名称，对应manager里的节点名称。
 
@@ -123,7 +123,7 @@ class ClusterNode:
 
     @node_name.setter
     def node_name(self, node_name):
-        """Sets the node_name of this ClusterNode.
+        r"""Sets the node_name of this ClusterNode.
 
         节点名称，对应manager里的节点名称。
 
@@ -134,7 +134,7 @@ class ClusterNode:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ClusterNode.
+        r"""Gets the resource_id of this ClusterNode.
 
         资源id。确定节点的唯一性，包周期节点可用于计费的查询。
 
@@ -145,7 +145,7 @@ class ClusterNode:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ClusterNode.
+        r"""Sets the resource_id of this ClusterNode.
 
         资源id。确定节点的唯一性，包周期节点可用于计费的查询。
 
@@ -156,7 +156,7 @@ class ClusterNode:
 
     @property
     def node_group_name(self):
-        """Gets the node_group_name of this ClusterNode.
+        r"""Gets the node_group_name of this ClusterNode.
 
         节点组名称。
 
@@ -167,7 +167,7 @@ class ClusterNode:
 
     @node_group_name.setter
     def node_group_name(self, node_group_name):
-        """Sets the node_group_name of this ClusterNode.
+        r"""Sets the node_group_name of this ClusterNode.
 
         节点组名称。
 
@@ -178,7 +178,7 @@ class ClusterNode:
 
     @property
     def node_type(self):
-        """Gets the node_type of this ClusterNode.
+        r"""Gets the node_type of this ClusterNode.
 
         节点类型。Task、Core、Master等。
 
@@ -189,7 +189,7 @@ class ClusterNode:
 
     @node_type.setter
     def node_type(self, node_type):
-        """Sets the node_type of this ClusterNode.
+        r"""Sets the node_type of this ClusterNode.
 
         节点类型。Task、Core、Master等。
 
@@ -200,7 +200,7 @@ class ClusterNode:
 
     @property
     def billing_type(self):
-        """Gets the billing_type of this ClusterNode.
+        r"""Gets the billing_type of this ClusterNode.
 
         on-period包周期或者on-quantity按需。
 
@@ -211,7 +211,7 @@ class ClusterNode:
 
     @billing_type.setter
     def billing_type(self, billing_type):
-        """Sets the billing_type of this ClusterNode.
+        r"""Sets the billing_type of this ClusterNode.
 
         on-period包周期或者on-quantity按需。
 
@@ -222,7 +222,7 @@ class ClusterNode:
 
     @property
     def deployment_type(self):
-        """Gets the deployment_type of this ClusterNode.
+        r"""Gets the deployment_type of this ClusterNode.
 
         部署类型。支持Server主机类型。
 
@@ -233,7 +233,7 @@ class ClusterNode:
 
     @deployment_type.setter
     def deployment_type(self, deployment_type):
-        """Sets the deployment_type of this ClusterNode.
+        r"""Sets the deployment_type of this ClusterNode.
 
         部署类型。支持Server主机类型。
 
@@ -244,7 +244,7 @@ class ClusterNode:
 
     @property
     def server_info(self):
-        """Gets the server_info of this ClusterNode.
+        r"""Gets the server_info of this ClusterNode.
 
         :return: The server_info of this ClusterNode.
         :rtype: :class:`huaweicloudsdkmrs.v2.ServerInfo`
@@ -253,7 +253,7 @@ class ClusterNode:
 
     @server_info.setter
     def server_info(self, server_info):
-        """Sets the server_info of this ClusterNode.
+        r"""Sets the server_info of this ClusterNode.
 
         :param server_info: The server_info of this ClusterNode.
         :type server_info: :class:`huaweicloudsdkmrs.v2.ServerInfo`
@@ -262,7 +262,7 @@ class ClusterNode:
 
     @property
     def tags(self):
-        """Gets the tags of this ClusterNode.
+        r"""Gets the tags of this ClusterNode.
 
         节点标签
 
@@ -273,7 +273,7 @@ class ClusterNode:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ClusterNode.
+        r"""Sets the tags of this ClusterNode.
 
         节点标签
 
@@ -284,7 +284,7 @@ class ClusterNode:
 
     @property
     def node_detail(self):
-        """Gets the node_detail of this ClusterNode.
+        r"""Gets the node_detail of this ClusterNode.
 
         :return: The node_detail of this ClusterNode.
         :rtype: :class:`huaweicloudsdkmrs.v2.NodeDetail`
@@ -293,7 +293,7 @@ class ClusterNode:
 
     @node_detail.setter
     def node_detail(self, node_detail):
-        """Sets the node_detail of this ClusterNode.
+        r"""Sets the node_detail of this ClusterNode.
 
         :param node_detail: The node_detail of this ClusterNode.
         :type node_detail: :class:`huaweicloudsdkmrs.v2.NodeDetail`
@@ -302,7 +302,7 @@ class ClusterNode:
 
     @property
     def node_status(self):
-        """Gets the node_status of this ClusterNode.
+        r"""Gets the node_status of this ClusterNode.
 
         节点状态。对应页面上的操作状态。
 
@@ -313,7 +313,7 @@ class ClusterNode:
 
     @node_status.setter
     def node_status(self, node_status):
-        """Sets the node_status of this ClusterNode.
+        r"""Sets the node_status of this ClusterNode.
 
         节点状态。对应页面上的操作状态。
 
@@ -324,7 +324,7 @@ class ClusterNode:
 
     @property
     def component_infos(self):
-        """Gets the component_infos of this ClusterNode.
+        r"""Gets the component_infos of this ClusterNode.
 
         组件实例信息数组。
 
@@ -335,7 +335,7 @@ class ClusterNode:
 
     @component_infos.setter
     def component_infos(self, component_infos):
-        """Sets the component_infos of this ClusterNode.
+        r"""Sets the component_infos of this ClusterNode.
 
         组件实例信息数组。
 

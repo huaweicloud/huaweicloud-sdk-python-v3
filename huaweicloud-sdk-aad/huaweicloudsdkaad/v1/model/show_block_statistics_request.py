@@ -25,7 +25,7 @@ class ShowBlockStatisticsRequest:
     }
 
     def __init__(self, domain_id=None):
-        """ShowBlockStatisticsRequest
+        r"""ShowBlockStatisticsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowBlockStatisticsRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ShowBlockStatisticsRequest.
+        r"""Gets the domain_id of this ShowBlockStatisticsRequest.
 
         租户id
 
@@ -53,7 +53,7 @@ class ShowBlockStatisticsRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ShowBlockStatisticsRequest.
+        r"""Sets the domain_id of this ShowBlockStatisticsRequest.
 
         租户id
 

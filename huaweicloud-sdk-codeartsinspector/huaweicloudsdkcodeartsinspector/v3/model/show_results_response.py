@@ -30,7 +30,7 @@ class ShowResultsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, data=None, statistics=None):
-        """ShowResultsResponse
+        r"""ShowResultsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowResultsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowResultsResponse.
+        r"""Gets the total of this ShowResultsResponse.
 
         网站漏洞总数
 
@@ -69,7 +69,7 @@ class ShowResultsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowResultsResponse.
+        r"""Sets the total of this ShowResultsResponse.
 
         网站漏洞总数
 
@@ -80,7 +80,7 @@ class ShowResultsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowResultsResponse.
+        r"""Gets the data of this ShowResultsResponse.
 
         网站漏洞信息列表
 
@@ -91,7 +91,7 @@ class ShowResultsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowResultsResponse.
+        r"""Sets the data of this ShowResultsResponse.
 
         网站漏洞信息列表
 
@@ -102,7 +102,7 @@ class ShowResultsResponse(SdkResponse):
 
     @property
     def statistics(self):
-        """Gets the statistics of this ShowResultsResponse.
+        r"""Gets the statistics of this ShowResultsResponse.
 
         :return: The statistics of this ShowResultsResponse.
         :rtype: :class:`huaweicloudsdkcodeartsinspector.v3.VulnsLevel`
@@ -111,7 +111,7 @@ class ShowResultsResponse(SdkResponse):
 
     @statistics.setter
     def statistics(self, statistics):
-        """Sets the statistics of this ShowResultsResponse.
+        r"""Sets the statistics of this ShowResultsResponse.
 
         :param statistics: The statistics of this ShowResultsResponse.
         :type statistics: :class:`huaweicloudsdkcodeartsinspector.v3.VulnsLevel`

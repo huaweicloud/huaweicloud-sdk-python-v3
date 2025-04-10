@@ -39,7 +39,7 @@ class ListJobs:
     }
 
     def __init__(self, id=None, action=None, status=None, error_task=None, error_code=None, error_message=None, start_time=None, end_time=None):
-        """ListJobs
+        r"""ListJobs
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ListJobs:
 
     @property
     def id(self):
-        """Gets the id of this ListJobs.
+        r"""Gets the id of this ListJobs.
 
         Job的ID
 
@@ -103,7 +103,7 @@ class ListJobs:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListJobs.
+        r"""Sets the id of this ListJobs.
 
         Job的ID
 
@@ -114,7 +114,7 @@ class ListJobs:
 
     @property
     def action(self):
-        """Gets the action of this ListJobs.
+        r"""Gets the action of this ListJobs.
 
         处理规则
 
@@ -125,7 +125,7 @@ class ListJobs:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ListJobs.
+        r"""Sets the action of this ListJobs.
 
         处理规则
 
@@ -136,7 +136,7 @@ class ListJobs:
 
     @property
     def status(self):
-        """Gets the status of this ListJobs.
+        r"""Gets the status of this ListJobs.
 
         状态
 
@@ -147,7 +147,7 @@ class ListJobs:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListJobs.
+        r"""Sets the status of this ListJobs.
 
         状态
 
@@ -158,7 +158,7 @@ class ListJobs:
 
     @property
     def error_task(self):
-        """Gets the error_task of this ListJobs.
+        r"""Gets the error_task of this ListJobs.
 
         error_task
 
@@ -169,7 +169,7 @@ class ListJobs:
 
     @error_task.setter
     def error_task(self, error_task):
-        """Sets the error_task of this ListJobs.
+        r"""Sets the error_task of this ListJobs.
 
         error_task
 
@@ -180,7 +180,7 @@ class ListJobs:
 
     @property
     def error_code(self):
-        """Gets the error_code of this ListJobs.
+        r"""Gets the error_code of this ListJobs.
 
         error_code
 
@@ -191,7 +191,7 @@ class ListJobs:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ListJobs.
+        r"""Sets the error_code of this ListJobs.
 
         error_code
 
@@ -202,7 +202,7 @@ class ListJobs:
 
     @property
     def error_message(self):
-        """Gets the error_message of this ListJobs.
+        r"""Gets the error_message of this ListJobs.
 
         error_message
 
@@ -213,7 +213,7 @@ class ListJobs:
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this ListJobs.
+        r"""Sets the error_message of this ListJobs.
 
         error_message
 
@@ -224,7 +224,7 @@ class ListJobs:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListJobs.
+        r"""Gets the start_time of this ListJobs.
 
         起始时间
 
@@ -235,7 +235,7 @@ class ListJobs:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListJobs.
+        r"""Sets the start_time of this ListJobs.
 
         起始时间
 
@@ -246,7 +246,7 @@ class ListJobs:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListJobs.
+        r"""Gets the end_time of this ListJobs.
 
         结束时间
 
@@ -257,7 +257,7 @@ class ListJobs:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListJobs.
+        r"""Sets the end_time of this ListJobs.
 
         结束时间
 

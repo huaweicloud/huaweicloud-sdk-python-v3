@@ -47,7 +47,7 @@ class PersistableModelQueryViewDTO:
     }
 
     def __init__(self, class_name=None, create_time=None, creator=None, disable_flag=None, ext_attr_map=None, ext_attrs=None, folder=None, id=None, last_update_time=None, modifier=None, rdm_extension_type=None, tenant=None):
-        """PersistableModelQueryViewDTO
+        r"""PersistableModelQueryViewDTO
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class PersistableModelQueryViewDTO:
 
     @property
     def class_name(self):
-        """Gets the class_name of this PersistableModelQueryViewDTO.
+        r"""Gets the class_name of this PersistableModelQueryViewDTO.
 
         **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -131,7 +131,7 @@ class PersistableModelQueryViewDTO:
 
     @class_name.setter
     def class_name(self, class_name):
-        """Sets the class_name of this PersistableModelQueryViewDTO.
+        r"""Sets the class_name of this PersistableModelQueryViewDTO.
 
         **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -142,7 +142,7 @@ class PersistableModelQueryViewDTO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this PersistableModelQueryViewDTO.
+        r"""Gets the create_time of this PersistableModelQueryViewDTO.
 
         **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -153,7 +153,7 @@ class PersistableModelQueryViewDTO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this PersistableModelQueryViewDTO.
+        r"""Sets the create_time of this PersistableModelQueryViewDTO.
 
         **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -164,7 +164,7 @@ class PersistableModelQueryViewDTO:
 
     @property
     def creator(self):
-        """Gets the creator of this PersistableModelQueryViewDTO.
+        r"""Gets the creator of this PersistableModelQueryViewDTO.
 
         **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -175,7 +175,7 @@ class PersistableModelQueryViewDTO:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this PersistableModelQueryViewDTO.
+        r"""Sets the creator of this PersistableModelQueryViewDTO.
 
         **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -186,7 +186,7 @@ class PersistableModelQueryViewDTO:
 
     @property
     def disable_flag(self):
-        """Gets the disable_flag of this PersistableModelQueryViewDTO.
+        r"""Gets the disable_flag of this PersistableModelQueryViewDTO.
 
         **参数解释：**  失效标识。   **取值范围：**  - true：失效。  - false：未失效。  **默认取值：**  false。 
 
@@ -197,7 +197,7 @@ class PersistableModelQueryViewDTO:
 
     @disable_flag.setter
     def disable_flag(self, disable_flag):
-        """Sets the disable_flag of this PersistableModelQueryViewDTO.
+        r"""Sets the disable_flag of this PersistableModelQueryViewDTO.
 
         **参数解释：**  失效标识。   **取值范围：**  - true：失效。  - false：未失效。  **默认取值：**  false。 
 
@@ -208,7 +208,7 @@ class PersistableModelQueryViewDTO:
 
     @property
     def ext_attr_map(self):
-        """Gets the ext_attr_map of this PersistableModelQueryViewDTO.
+        r"""Gets the ext_attr_map of this PersistableModelQueryViewDTO.
 
         **参数解释：**  扩展属性映射集。   **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -219,7 +219,7 @@ class PersistableModelQueryViewDTO:
 
     @ext_attr_map.setter
     def ext_attr_map(self, ext_attr_map):
-        """Sets the ext_attr_map of this PersistableModelQueryViewDTO.
+        r"""Sets the ext_attr_map of this PersistableModelQueryViewDTO.
 
         **参数解释：**  扩展属性映射集。   **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -230,7 +230,7 @@ class PersistableModelQueryViewDTO:
 
     @property
     def ext_attrs(self):
-        """Gets the ext_attrs of this PersistableModelQueryViewDTO.
+        r"""Gets the ext_attrs of this PersistableModelQueryViewDTO.
 
         **参数解释：**  扩展属性列表。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -241,7 +241,7 @@ class PersistableModelQueryViewDTO:
 
     @ext_attrs.setter
     def ext_attrs(self, ext_attrs):
-        """Sets the ext_attrs of this PersistableModelQueryViewDTO.
+        r"""Sets the ext_attrs of this PersistableModelQueryViewDTO.
 
         **参数解释：**  扩展属性列表。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -252,7 +252,7 @@ class PersistableModelQueryViewDTO:
 
     @property
     def folder(self):
-        """Gets the folder of this PersistableModelQueryViewDTO.
+        r"""Gets the folder of this PersistableModelQueryViewDTO.
 
         :return: The folder of this PersistableModelQueryViewDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.FolderQueryViewDTO`
@@ -261,7 +261,7 @@ class PersistableModelQueryViewDTO:
 
     @folder.setter
     def folder(self, folder):
-        """Sets the folder of this PersistableModelQueryViewDTO.
+        r"""Sets the folder of this PersistableModelQueryViewDTO.
 
         :param folder: The folder of this PersistableModelQueryViewDTO.
         :type folder: :class:`huaweicloudsdkidmeclassicapi.v1.FolderQueryViewDTO`
@@ -270,7 +270,7 @@ class PersistableModelQueryViewDTO:
 
     @property
     def id(self):
-        """Gets the id of this PersistableModelQueryViewDTO.
+        r"""Gets the id of this PersistableModelQueryViewDTO.
 
         **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -281,7 +281,7 @@ class PersistableModelQueryViewDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PersistableModelQueryViewDTO.
+        r"""Sets the id of this PersistableModelQueryViewDTO.
 
         **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -292,7 +292,7 @@ class PersistableModelQueryViewDTO:
 
     @property
     def last_update_time(self):
-        """Gets the last_update_time of this PersistableModelQueryViewDTO.
+        r"""Gets the last_update_time of this PersistableModelQueryViewDTO.
 
         **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -303,7 +303,7 @@ class PersistableModelQueryViewDTO:
 
     @last_update_time.setter
     def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this PersistableModelQueryViewDTO.
+        r"""Sets the last_update_time of this PersistableModelQueryViewDTO.
 
         **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -314,7 +314,7 @@ class PersistableModelQueryViewDTO:
 
     @property
     def modifier(self):
-        """Gets the modifier of this PersistableModelQueryViewDTO.
+        r"""Gets the modifier of this PersistableModelQueryViewDTO.
 
         **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -325,7 +325,7 @@ class PersistableModelQueryViewDTO:
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this PersistableModelQueryViewDTO.
+        r"""Sets the modifier of this PersistableModelQueryViewDTO.
 
         **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -336,7 +336,7 @@ class PersistableModelQueryViewDTO:
 
     @property
     def rdm_extension_type(self):
-        """Gets the rdm_extension_type of this PersistableModelQueryViewDTO.
+        r"""Gets the rdm_extension_type of this PersistableModelQueryViewDTO.
 
         **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -347,7 +347,7 @@ class PersistableModelQueryViewDTO:
 
     @rdm_extension_type.setter
     def rdm_extension_type(self, rdm_extension_type):
-        """Sets the rdm_extension_type of this PersistableModelQueryViewDTO.
+        r"""Sets the rdm_extension_type of this PersistableModelQueryViewDTO.
 
         **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -358,7 +358,7 @@ class PersistableModelQueryViewDTO:
 
     @property
     def tenant(self):
-        """Gets the tenant of this PersistableModelQueryViewDTO.
+        r"""Gets the tenant of this PersistableModelQueryViewDTO.
 
         :return: The tenant of this PersistableModelQueryViewDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.TenantQueryViewDTO`
@@ -367,7 +367,7 @@ class PersistableModelQueryViewDTO:
 
     @tenant.setter
     def tenant(self, tenant):
-        """Sets the tenant of this PersistableModelQueryViewDTO.
+        r"""Sets the tenant of this PersistableModelQueryViewDTO.
 
         :param tenant: The tenant of this PersistableModelQueryViewDTO.
         :type tenant: :class:`huaweicloudsdkidmeclassicapi.v1.TenantQueryViewDTO`

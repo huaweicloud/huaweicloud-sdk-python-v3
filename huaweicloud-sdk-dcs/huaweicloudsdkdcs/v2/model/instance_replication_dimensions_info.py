@@ -27,7 +27,7 @@ class InstanceReplicationDimensionsInfo:
     }
 
     def __init__(self, name=None, value=None):
-        """InstanceReplicationDimensionsInfo
+        r"""InstanceReplicationDimensionsInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class InstanceReplicationDimensionsInfo:
 
     @property
     def name(self):
-        """Gets the name of this InstanceReplicationDimensionsInfo.
+        r"""Gets the name of this InstanceReplicationDimensionsInfo.
 
         监控维度名称
 
@@ -61,7 +61,7 @@ class InstanceReplicationDimensionsInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this InstanceReplicationDimensionsInfo.
+        r"""Sets the name of this InstanceReplicationDimensionsInfo.
 
         监控维度名称
 
@@ -72,7 +72,7 @@ class InstanceReplicationDimensionsInfo:
 
     @property
     def value(self):
-        """Gets the value of this InstanceReplicationDimensionsInfo.
+        r"""Gets the value of this InstanceReplicationDimensionsInfo.
 
         维度取值
 
@@ -83,7 +83,7 @@ class InstanceReplicationDimensionsInfo:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this InstanceReplicationDimensionsInfo.
+        r"""Sets the value of this InstanceReplicationDimensionsInfo.
 
         维度取值
 

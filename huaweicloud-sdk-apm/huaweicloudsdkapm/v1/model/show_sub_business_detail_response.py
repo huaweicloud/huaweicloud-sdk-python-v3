@@ -52,7 +52,7 @@ class ShowSubBusinessDetailResponse(SdkResponse):
     }
 
     def __init__(self, id=None, gmt_create=None, gmt_modify=None, parent_id=None, name=None, display_name=None, business_id=None, inner_domain_id=None, creator_id=None, uuid=None, descp=None, create_time=None, modify_time=None, creator_name=None):
-        """ShowSubBusinessDetailResponse
+        r"""ShowSubBusinessDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -135,7 +135,7 @@ class ShowSubBusinessDetailResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowSubBusinessDetailResponse.
+        r"""Gets the id of this ShowSubBusinessDetailResponse.
 
         子应用id。
 
@@ -146,7 +146,7 @@ class ShowSubBusinessDetailResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowSubBusinessDetailResponse.
+        r"""Sets the id of this ShowSubBusinessDetailResponse.
 
         子应用id。
 
@@ -157,7 +157,7 @@ class ShowSubBusinessDetailResponse(SdkResponse):
 
     @property
     def gmt_create(self):
-        """Gets the gmt_create of this ShowSubBusinessDetailResponse.
+        r"""Gets the gmt_create of this ShowSubBusinessDetailResponse.
 
         创建时间。
 
@@ -168,7 +168,7 @@ class ShowSubBusinessDetailResponse(SdkResponse):
 
     @gmt_create.setter
     def gmt_create(self, gmt_create):
-        """Sets the gmt_create of this ShowSubBusinessDetailResponse.
+        r"""Sets the gmt_create of this ShowSubBusinessDetailResponse.
 
         创建时间。
 
@@ -179,7 +179,7 @@ class ShowSubBusinessDetailResponse(SdkResponse):
 
     @property
     def gmt_modify(self):
-        """Gets the gmt_modify of this ShowSubBusinessDetailResponse.
+        r"""Gets the gmt_modify of this ShowSubBusinessDetailResponse.
 
         修改时间。
 
@@ -190,7 +190,7 @@ class ShowSubBusinessDetailResponse(SdkResponse):
 
     @gmt_modify.setter
     def gmt_modify(self, gmt_modify):
-        """Sets the gmt_modify of this ShowSubBusinessDetailResponse.
+        r"""Sets the gmt_modify of this ShowSubBusinessDetailResponse.
 
         修改时间。
 
@@ -201,7 +201,7 @@ class ShowSubBusinessDetailResponse(SdkResponse):
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this ShowSubBusinessDetailResponse.
+        r"""Gets the parent_id of this ShowSubBusinessDetailResponse.
 
         父亲的子应用id。
 
@@ -212,7 +212,7 @@ class ShowSubBusinessDetailResponse(SdkResponse):
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this ShowSubBusinessDetailResponse.
+        r"""Sets the parent_id of this ShowSubBusinessDetailResponse.
 
         父亲的子应用id。
 
@@ -223,7 +223,7 @@ class ShowSubBusinessDetailResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowSubBusinessDetailResponse.
+        r"""Gets the name of this ShowSubBusinessDetailResponse.
 
         子应用的英文名称。
 
@@ -234,7 +234,7 @@ class ShowSubBusinessDetailResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowSubBusinessDetailResponse.
+        r"""Sets the name of this ShowSubBusinessDetailResponse.
 
         子应用的英文名称。
 
@@ -245,7 +245,7 @@ class ShowSubBusinessDetailResponse(SdkResponse):
 
     @property
     def display_name(self):
-        """Gets the display_name of this ShowSubBusinessDetailResponse.
+        r"""Gets the display_name of this ShowSubBusinessDetailResponse.
 
         子应用的展示名称。
 
@@ -256,7 +256,7 @@ class ShowSubBusinessDetailResponse(SdkResponse):
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this ShowSubBusinessDetailResponse.
+        r"""Sets the display_name of this ShowSubBusinessDetailResponse.
 
         子应用的展示名称。
 
@@ -267,7 +267,7 @@ class ShowSubBusinessDetailResponse(SdkResponse):
 
     @property
     def business_id(self):
-        """Gets the business_id of this ShowSubBusinessDetailResponse.
+        r"""Gets the business_id of this ShowSubBusinessDetailResponse.
 
         所属应用id。
 
@@ -278,7 +278,7 @@ class ShowSubBusinessDetailResponse(SdkResponse):
 
     @business_id.setter
     def business_id(self, business_id):
-        """Sets the business_id of this ShowSubBusinessDetailResponse.
+        r"""Sets the business_id of this ShowSubBusinessDetailResponse.
 
         所属应用id。
 
@@ -289,7 +289,7 @@ class ShowSubBusinessDetailResponse(SdkResponse):
 
     @property
     def inner_domain_id(self):
-        """Gets the inner_domain_id of this ShowSubBusinessDetailResponse.
+        r"""Gets the inner_domain_id of this ShowSubBusinessDetailResponse.
 
         内部租户id。
 
@@ -300,7 +300,7 @@ class ShowSubBusinessDetailResponse(SdkResponse):
 
     @inner_domain_id.setter
     def inner_domain_id(self, inner_domain_id):
-        """Sets the inner_domain_id of this ShowSubBusinessDetailResponse.
+        r"""Sets the inner_domain_id of this ShowSubBusinessDetailResponse.
 
         内部租户id。
 
@@ -311,7 +311,7 @@ class ShowSubBusinessDetailResponse(SdkResponse):
 
     @property
     def creator_id(self):
-        """Gets the creator_id of this ShowSubBusinessDetailResponse.
+        r"""Gets the creator_id of this ShowSubBusinessDetailResponse.
 
         创建者的userId。
 
@@ -322,7 +322,7 @@ class ShowSubBusinessDetailResponse(SdkResponse):
 
     @creator_id.setter
     def creator_id(self, creator_id):
-        """Sets the creator_id of this ShowSubBusinessDetailResponse.
+        r"""Sets the creator_id of this ShowSubBusinessDetailResponse.
 
         创建者的userId。
 
@@ -333,7 +333,7 @@ class ShowSubBusinessDetailResponse(SdkResponse):
 
     @property
     def uuid(self):
-        """Gets the uuid of this ShowSubBusinessDetailResponse.
+        r"""Gets the uuid of this ShowSubBusinessDetailResponse.
 
         应用的UUID。
 
@@ -344,7 +344,7 @@ class ShowSubBusinessDetailResponse(SdkResponse):
 
     @uuid.setter
     def uuid(self, uuid):
-        """Sets the uuid of this ShowSubBusinessDetailResponse.
+        r"""Sets the uuid of this ShowSubBusinessDetailResponse.
 
         应用的UUID。
 
@@ -355,7 +355,7 @@ class ShowSubBusinessDetailResponse(SdkResponse):
 
     @property
     def descp(self):
-        """Gets the descp of this ShowSubBusinessDetailResponse.
+        r"""Gets the descp of this ShowSubBusinessDetailResponse.
 
         应用描述说明。
 
@@ -366,7 +366,7 @@ class ShowSubBusinessDetailResponse(SdkResponse):
 
     @descp.setter
     def descp(self, descp):
-        """Sets the descp of this ShowSubBusinessDetailResponse.
+        r"""Sets the descp of this ShowSubBusinessDetailResponse.
 
         应用描述说明。
 
@@ -377,7 +377,7 @@ class ShowSubBusinessDetailResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowSubBusinessDetailResponse.
+        r"""Gets the create_time of this ShowSubBusinessDetailResponse.
 
         创建时间。
 
@@ -388,7 +388,7 @@ class ShowSubBusinessDetailResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowSubBusinessDetailResponse.
+        r"""Sets the create_time of this ShowSubBusinessDetailResponse.
 
         创建时间。
 
@@ -399,7 +399,7 @@ class ShowSubBusinessDetailResponse(SdkResponse):
 
     @property
     def modify_time(self):
-        """Gets the modify_time of this ShowSubBusinessDetailResponse.
+        r"""Gets the modify_time of this ShowSubBusinessDetailResponse.
 
         修改时间。
 
@@ -410,7 +410,7 @@ class ShowSubBusinessDetailResponse(SdkResponse):
 
     @modify_time.setter
     def modify_time(self, modify_time):
-        """Sets the modify_time of this ShowSubBusinessDetailResponse.
+        r"""Sets the modify_time of this ShowSubBusinessDetailResponse.
 
         修改时间。
 
@@ -421,7 +421,7 @@ class ShowSubBusinessDetailResponse(SdkResponse):
 
     @property
     def creator_name(self):
-        """Gets the creator_name of this ShowSubBusinessDetailResponse.
+        r"""Gets the creator_name of this ShowSubBusinessDetailResponse.
 
         创建者的用户名。
 
@@ -432,7 +432,7 @@ class ShowSubBusinessDetailResponse(SdkResponse):
 
     @creator_name.setter
     def creator_name(self, creator_name):
-        """Sets the creator_name of this ShowSubBusinessDetailResponse.
+        r"""Sets the creator_name of this ShowSubBusinessDetailResponse.
 
         创建者的用户名。
 

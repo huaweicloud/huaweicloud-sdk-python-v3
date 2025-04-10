@@ -161,7 +161,7 @@ class AggregationLogicTableVO:
     }
 
     def __init__(self, id=None, tb_name=None, tb_logic_name=None, l1_id=None, l2_id=None, l3_id=None, description=None, owner=None, secret_type=None, apply_bg=None, create_by=None, queue_name=None, dw_id=None, db_name=None, tb_id=None, schema=None, dw_name=None, status=None, tb_guid=None, tb_logic_guid=None, dw_type=None, l1=None, l2=None, l3=None, create_time=None, update_time=None, approval_info=None, new_biz=None, dimension_group=None, group_name=None, group_code=None, time_period=None, table_attributes=None, physical_table=None, dev_physical_table=None, technical_asset=None, business_asset=None, meta_data_link=None, data_quality=None, dlf_task=None, publish_to_dlm=None, summary_status=None, distribute=None, distribute_column=None, compression=None, obs_location=None, pre_combine_field=None, table_type=None, dlf_task_id=None, quality_id=None, reversed=None, table_version=None, partition_conf=None, dirty_out_switch=None, dirty_out_database=None, dirty_out_prefix=None, dirty_out_suffix=None, alias=None, configs=None, self_defined_fields=None, api_id=None, sql=None, dev_version=None, prod_version=None, dev_version_name=None, prod_version_name=None, env_type=None, model_id=None, model=None):
-        """AggregationLogicTableVO
+        r"""AggregationLogicTableVO
 
         The model defined in huaweicloud sdk
 
@@ -512,7 +512,7 @@ class AggregationLogicTableVO:
 
     @property
     def id(self):
-        """Gets the id of this AggregationLogicTableVO.
+        r"""Gets the id of this AggregationLogicTableVO.
 
         汇总表的唯一系统ID，更新时必填，创建时不须填写，ID字符串。
 
@@ -523,7 +523,7 @@ class AggregationLogicTableVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AggregationLogicTableVO.
+        r"""Sets the id of this AggregationLogicTableVO.
 
         汇总表的唯一系统ID，更新时必填，创建时不须填写，ID字符串。
 
@@ -534,7 +534,7 @@ class AggregationLogicTableVO:
 
     @property
     def tb_name(self):
-        """Gets the tb_name of this AggregationLogicTableVO.
+        r"""Gets the tb_name of this AggregationLogicTableVO.
 
         汇总表英文名称，对应实际的物理表名。
 
@@ -545,7 +545,7 @@ class AggregationLogicTableVO:
 
     @tb_name.setter
     def tb_name(self, tb_name):
-        """Sets the tb_name of this AggregationLogicTableVO.
+        r"""Sets the tb_name of this AggregationLogicTableVO.
 
         汇总表英文名称，对应实际的物理表名。
 
@@ -556,7 +556,7 @@ class AggregationLogicTableVO:
 
     @property
     def tb_logic_name(self):
-        """Gets the tb_logic_name of this AggregationLogicTableVO.
+        r"""Gets the tb_logic_name of this AggregationLogicTableVO.
 
         汇总表的中文名，用于展示使用。
 
@@ -567,7 +567,7 @@ class AggregationLogicTableVO:
 
     @tb_logic_name.setter
     def tb_logic_name(self, tb_logic_name):
-        """Sets the tb_logic_name of this AggregationLogicTableVO.
+        r"""Sets the tb_logic_name of this AggregationLogicTableVO.
 
         汇总表的中文名，用于展示使用。
 
@@ -578,7 +578,7 @@ class AggregationLogicTableVO:
 
     @property
     def l1_id(self):
-        """Gets the l1_id of this AggregationLogicTableVO.
+        r"""Gets the l1_id of this AggregationLogicTableVO.
 
         主题域分组ID，只读，创建和更新时无需填写，ID字符串。
 
@@ -589,7 +589,7 @@ class AggregationLogicTableVO:
 
     @l1_id.setter
     def l1_id(self, l1_id):
-        """Sets the l1_id of this AggregationLogicTableVO.
+        r"""Sets the l1_id of this AggregationLogicTableVO.
 
         主题域分组ID，只读，创建和更新时无需填写，ID字符串。
 
@@ -600,7 +600,7 @@ class AggregationLogicTableVO:
 
     @property
     def l2_id(self):
-        """Gets the l2_id of this AggregationLogicTableVO.
+        r"""Gets the l2_id of this AggregationLogicTableVO.
 
         主题域ID，只读，创建和更新时无需填写。
 
@@ -611,7 +611,7 @@ class AggregationLogicTableVO:
 
     @l2_id.setter
     def l2_id(self, l2_id):
-        """Sets the l2_id of this AggregationLogicTableVO.
+        r"""Sets the l2_id of this AggregationLogicTableVO.
 
         主题域ID，只读，创建和更新时无需填写。
 
@@ -622,7 +622,7 @@ class AggregationLogicTableVO:
 
     @property
     def l3_id(self):
-        """Gets the l3_id of this AggregationLogicTableVO.
+        r"""Gets the l3_id of this AggregationLogicTableVO.
 
         汇总表所属主题的ID，必填，ID字符串。
 
@@ -633,7 +633,7 @@ class AggregationLogicTableVO:
 
     @l3_id.setter
     def l3_id(self, l3_id):
-        """Sets the l3_id of this AggregationLogicTableVO.
+        r"""Sets the l3_id of this AggregationLogicTableVO.
 
         汇总表所属主题的ID，必填，ID字符串。
 
@@ -644,7 +644,7 @@ class AggregationLogicTableVO:
 
     @property
     def description(self):
-        """Gets the description of this AggregationLogicTableVO.
+        r"""Gets the description of this AggregationLogicTableVO.
 
         汇总表描述信息。
 
@@ -655,7 +655,7 @@ class AggregationLogicTableVO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AggregationLogicTableVO.
+        r"""Sets the description of this AggregationLogicTableVO.
 
         汇总表描述信息。
 
@@ -666,7 +666,7 @@ class AggregationLogicTableVO:
 
     @property
     def owner(self):
-        """Gets the owner of this AggregationLogicTableVO.
+        r"""Gets the owner of this AggregationLogicTableVO.
 
         汇总表的资产责任人。
 
@@ -677,7 +677,7 @@ class AggregationLogicTableVO:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this AggregationLogicTableVO.
+        r"""Sets the owner of this AggregationLogicTableVO.
 
         汇总表的资产责任人。
 
@@ -688,7 +688,7 @@ class AggregationLogicTableVO:
 
     @property
     def secret_type(self):
-        """Gets the secret_type of this AggregationLogicTableVO.
+        r"""Gets the secret_type of this AggregationLogicTableVO.
 
         :return: The secret_type of this AggregationLogicTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SecretTypeEnum`
@@ -697,7 +697,7 @@ class AggregationLogicTableVO:
 
     @secret_type.setter
     def secret_type(self, secret_type):
-        """Sets the secret_type of this AggregationLogicTableVO.
+        r"""Sets the secret_type of this AggregationLogicTableVO.
 
         :param secret_type: The secret_type of this AggregationLogicTableVO.
         :type secret_type: :class:`huaweicloudsdkdataartsstudio.v1.SecretTypeEnum`
@@ -706,7 +706,7 @@ class AggregationLogicTableVO:
 
     @property
     def apply_bg(self):
-        """Gets the apply_bg of this AggregationLogicTableVO.
+        r"""Gets the apply_bg of this AggregationLogicTableVO.
 
         :return: The apply_bg of this AggregationLogicTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ApplyBgEnum`
@@ -715,7 +715,7 @@ class AggregationLogicTableVO:
 
     @apply_bg.setter
     def apply_bg(self, apply_bg):
-        """Sets the apply_bg of this AggregationLogicTableVO.
+        r"""Sets the apply_bg of this AggregationLogicTableVO.
 
         :param apply_bg: The apply_bg of this AggregationLogicTableVO.
         :type apply_bg: :class:`huaweicloudsdkdataartsstudio.v1.ApplyBgEnum`
@@ -724,7 +724,7 @@ class AggregationLogicTableVO:
 
     @property
     def create_by(self):
-        """Gets the create_by of this AggregationLogicTableVO.
+        r"""Gets the create_by of this AggregationLogicTableVO.
 
         汇总表的创建人，只读，创建和更新时无需填写。
 
@@ -735,7 +735,7 @@ class AggregationLogicTableVO:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this AggregationLogicTableVO.
+        r"""Sets the create_by of this AggregationLogicTableVO.
 
         汇总表的创建人，只读，创建和更新时无需填写。
 
@@ -746,7 +746,7 @@ class AggregationLogicTableVO:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this AggregationLogicTableVO.
+        r"""Gets the queue_name of this AggregationLogicTableVO.
 
         dli数据连接执行sql所需的队列，数据连接类型为DLI时必须填写。
 
@@ -757,7 +757,7 @@ class AggregationLogicTableVO:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this AggregationLogicTableVO.
+        r"""Sets the queue_name of this AggregationLogicTableVO.
 
         dli数据连接执行sql所需的队列，数据连接类型为DLI时必须填写。
 
@@ -768,7 +768,7 @@ class AggregationLogicTableVO:
 
     @property
     def dw_id(self):
-        """Gets the dw_id of this AggregationLogicTableVO.
+        r"""Gets the dw_id of this AggregationLogicTableVO.
 
         汇总表所在的数据连接ID，为32位十六进制数字。
 
@@ -779,7 +779,7 @@ class AggregationLogicTableVO:
 
     @dw_id.setter
     def dw_id(self, dw_id):
-        """Sets the dw_id of this AggregationLogicTableVO.
+        r"""Sets the dw_id of this AggregationLogicTableVO.
 
         汇总表所在的数据连接ID，为32位十六进制数字。
 
@@ -790,7 +790,7 @@ class AggregationLogicTableVO:
 
     @property
     def db_name(self):
-        """Gets the db_name of this AggregationLogicTableVO.
+        r"""Gets the db_name of this AggregationLogicTableVO.
 
         汇总表所在的数据库名。
 
@@ -801,7 +801,7 @@ class AggregationLogicTableVO:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this AggregationLogicTableVO.
+        r"""Sets the db_name of this AggregationLogicTableVO.
 
         汇总表所在的数据库名。
 
@@ -812,7 +812,7 @@ class AggregationLogicTableVO:
 
     @property
     def tb_id(self):
-        """Gets the tb_id of this AggregationLogicTableVO.
+        r"""Gets the tb_id of this AggregationLogicTableVO.
 
         汇总表创建的表ID，是服务内部ID，只读，创建和更新时无需填写
 
@@ -823,7 +823,7 @@ class AggregationLogicTableVO:
 
     @tb_id.setter
     def tb_id(self, tb_id):
-        """Sets the tb_id of this AggregationLogicTableVO.
+        r"""Sets the tb_id of this AggregationLogicTableVO.
 
         汇总表创建的表ID，是服务内部ID，只读，创建和更新时无需填写
 
@@ -834,7 +834,7 @@ class AggregationLogicTableVO:
 
     @property
     def schema(self):
-        """Gets the schema of this AggregationLogicTableVO.
+        r"""Gets the schema of this AggregationLogicTableVO.
 
         汇总表所在的Schema名，DWS类型必须填写。
 
@@ -845,7 +845,7 @@ class AggregationLogicTableVO:
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this AggregationLogicTableVO.
+        r"""Sets the schema of this AggregationLogicTableVO.
 
         汇总表所在的Schema名，DWS类型必须填写。
 
@@ -856,7 +856,7 @@ class AggregationLogicTableVO:
 
     @property
     def dw_name(self):
-        """Gets the dw_name of this AggregationLogicTableVO.
+        r"""Gets the dw_name of this AggregationLogicTableVO.
 
         数据连接名称，只读，创建和更新时无需填写。
 
@@ -867,7 +867,7 @@ class AggregationLogicTableVO:
 
     @dw_name.setter
     def dw_name(self, dw_name):
-        """Sets the dw_name of this AggregationLogicTableVO.
+        r"""Sets the dw_name of this AggregationLogicTableVO.
 
         数据连接名称，只读，创建和更新时无需填写。
 
@@ -878,7 +878,7 @@ class AggregationLogicTableVO:
 
     @property
     def status(self):
-        """Gets the status of this AggregationLogicTableVO.
+        r"""Gets the status of this AggregationLogicTableVO.
 
         :return: The status of this AggregationLogicTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
@@ -887,7 +887,7 @@ class AggregationLogicTableVO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AggregationLogicTableVO.
+        r"""Sets the status of this AggregationLogicTableVO.
 
         :param status: The status of this AggregationLogicTableVO.
         :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
@@ -896,7 +896,7 @@ class AggregationLogicTableVO:
 
     @property
     def tb_guid(self):
-        """Gets the tb_guid of this AggregationLogicTableVO.
+        r"""Gets the tb_guid of this AggregationLogicTableVO.
 
         表发布后，创建的数据目录技术资产guid，只读，创建和更新时无需填写。
 
@@ -907,7 +907,7 @@ class AggregationLogicTableVO:
 
     @tb_guid.setter
     def tb_guid(self, tb_guid):
-        """Sets the tb_guid of this AggregationLogicTableVO.
+        r"""Sets the tb_guid of this AggregationLogicTableVO.
 
         表发布后，创建的数据目录技术资产guid，只读，创建和更新时无需填写。
 
@@ -918,7 +918,7 @@ class AggregationLogicTableVO:
 
     @property
     def tb_logic_guid(self):
-        """Gets the tb_logic_guid of this AggregationLogicTableVO.
+        r"""Gets the tb_logic_guid of this AggregationLogicTableVO.
 
         表发布后，创建的数据目录业务资产guid，只读，创建和更新时无需填写。
 
@@ -929,7 +929,7 @@ class AggregationLogicTableVO:
 
     @tb_logic_guid.setter
     def tb_logic_guid(self, tb_logic_guid):
-        """Sets the tb_logic_guid of this AggregationLogicTableVO.
+        r"""Sets the tb_logic_guid of this AggregationLogicTableVO.
 
         表发布后，创建的数据目录业务资产guid，只读，创建和更新时无需填写。
 
@@ -940,7 +940,7 @@ class AggregationLogicTableVO:
 
     @property
     def dw_type(self):
-        """Gets the dw_type of this AggregationLogicTableVO.
+        r"""Gets the dw_type of this AggregationLogicTableVO.
 
         数据连接类型，对应表所在的数仓类型，取值可以为DLI、DWS、MRS_HIVE、POSTGRESQL、MRS_SPARK、CLICKHOUSE、MYSQL、ORACLE和DORIS等。
 
@@ -951,7 +951,7 @@ class AggregationLogicTableVO:
 
     @dw_type.setter
     def dw_type(self, dw_type):
-        """Sets the dw_type of this AggregationLogicTableVO.
+        r"""Sets the dw_type of this AggregationLogicTableVO.
 
         数据连接类型，对应表所在的数仓类型，取值可以为DLI、DWS、MRS_HIVE、POSTGRESQL、MRS_SPARK、CLICKHOUSE、MYSQL、ORACLE和DORIS等。
 
@@ -962,7 +962,7 @@ class AggregationLogicTableVO:
 
     @property
     def l1(self):
-        """Gets the l1 of this AggregationLogicTableVO.
+        r"""Gets the l1 of this AggregationLogicTableVO.
 
         主题域分组中文名，只读，创建和更新时无需填写。
 
@@ -973,7 +973,7 @@ class AggregationLogicTableVO:
 
     @l1.setter
     def l1(self, l1):
-        """Sets the l1 of this AggregationLogicTableVO.
+        r"""Sets the l1 of this AggregationLogicTableVO.
 
         主题域分组中文名，只读，创建和更新时无需填写。
 
@@ -984,7 +984,7 @@ class AggregationLogicTableVO:
 
     @property
     def l2(self):
-        """Gets the l2 of this AggregationLogicTableVO.
+        r"""Gets the l2 of this AggregationLogicTableVO.
 
         主题域中文名，只读，创建和更新时无需填写。
 
@@ -995,7 +995,7 @@ class AggregationLogicTableVO:
 
     @l2.setter
     def l2(self, l2):
-        """Sets the l2 of this AggregationLogicTableVO.
+        r"""Sets the l2 of this AggregationLogicTableVO.
 
         主题域中文名，只读，创建和更新时无需填写。
 
@@ -1006,7 +1006,7 @@ class AggregationLogicTableVO:
 
     @property
     def l3(self):
-        """Gets the l3 of this AggregationLogicTableVO.
+        r"""Gets the l3 of this AggregationLogicTableVO.
 
         业务对象中文名，只读，创建和更新时无需填写。
 
@@ -1017,7 +1017,7 @@ class AggregationLogicTableVO:
 
     @l3.setter
     def l3(self, l3):
-        """Sets the l3 of this AggregationLogicTableVO.
+        r"""Sets the l3 of this AggregationLogicTableVO.
 
         业务对象中文名，只读，创建和更新时无需填写。
 
@@ -1028,7 +1028,7 @@ class AggregationLogicTableVO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this AggregationLogicTableVO.
+        r"""Gets the create_time of this AggregationLogicTableVO.
 
         创建时间，只读，创建和更新时无需填写。
 
@@ -1039,7 +1039,7 @@ class AggregationLogicTableVO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AggregationLogicTableVO.
+        r"""Sets the create_time of this AggregationLogicTableVO.
 
         创建时间，只读，创建和更新时无需填写。
 
@@ -1050,7 +1050,7 @@ class AggregationLogicTableVO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this AggregationLogicTableVO.
+        r"""Gets the update_time of this AggregationLogicTableVO.
 
         更新时间，只读，创建和更新时无需填写。
 
@@ -1061,7 +1061,7 @@ class AggregationLogicTableVO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this AggregationLogicTableVO.
+        r"""Sets the update_time of this AggregationLogicTableVO.
 
         更新时间，只读，创建和更新时无需填写。
 
@@ -1072,7 +1072,7 @@ class AggregationLogicTableVO:
 
     @property
     def approval_info(self):
-        """Gets the approval_info of this AggregationLogicTableVO.
+        r"""Gets the approval_info of this AggregationLogicTableVO.
 
         :return: The approval_info of this AggregationLogicTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalVO`
@@ -1081,7 +1081,7 @@ class AggregationLogicTableVO:
 
     @approval_info.setter
     def approval_info(self, approval_info):
-        """Sets the approval_info of this AggregationLogicTableVO.
+        r"""Sets the approval_info of this AggregationLogicTableVO.
 
         :param approval_info: The approval_info of this AggregationLogicTableVO.
         :type approval_info: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalVO`
@@ -1090,7 +1090,7 @@ class AggregationLogicTableVO:
 
     @property
     def new_biz(self):
-        """Gets the new_biz of this AggregationLogicTableVO.
+        r"""Gets the new_biz of this AggregationLogicTableVO.
 
         :return: The new_biz of this AggregationLogicTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizVersionManageVO`
@@ -1099,7 +1099,7 @@ class AggregationLogicTableVO:
 
     @new_biz.setter
     def new_biz(self, new_biz):
-        """Sets the new_biz of this AggregationLogicTableVO.
+        r"""Sets the new_biz of this AggregationLogicTableVO.
 
         :param new_biz: The new_biz of this AggregationLogicTableVO.
         :type new_biz: :class:`huaweicloudsdkdataartsstudio.v1.BizVersionManageVO`
@@ -1108,7 +1108,7 @@ class AggregationLogicTableVO:
 
     @property
     def dimension_group(self):
-        """Gets the dimension_group of this AggregationLogicTableVO.
+        r"""Gets the dimension_group of this AggregationLogicTableVO.
 
         颗粒度ID。
 
@@ -1119,7 +1119,7 @@ class AggregationLogicTableVO:
 
     @dimension_group.setter
     def dimension_group(self, dimension_group):
-        """Sets the dimension_group of this AggregationLogicTableVO.
+        r"""Sets the dimension_group of this AggregationLogicTableVO.
 
         颗粒度ID。
 
@@ -1130,7 +1130,7 @@ class AggregationLogicTableVO:
 
     @property
     def group_name(self):
-        """Gets the group_name of this AggregationLogicTableVO.
+        r"""Gets the group_name of this AggregationLogicTableVO.
 
         颗粒度名称，只读。
 
@@ -1141,7 +1141,7 @@ class AggregationLogicTableVO:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this AggregationLogicTableVO.
+        r"""Sets the group_name of this AggregationLogicTableVO.
 
         颗粒度名称，只读。
 
@@ -1152,7 +1152,7 @@ class AggregationLogicTableVO:
 
     @property
     def group_code(self):
-        """Gets the group_code of this AggregationLogicTableVO.
+        r"""Gets the group_code of this AggregationLogicTableVO.
 
         颗粒度编码，只读。
 
@@ -1163,7 +1163,7 @@ class AggregationLogicTableVO:
 
     @group_code.setter
     def group_code(self, group_code):
-        """Sets the group_code of this AggregationLogicTableVO.
+        r"""Sets the group_code of this AggregationLogicTableVO.
 
         颗粒度编码，只读。
 
@@ -1174,7 +1174,7 @@ class AggregationLogicTableVO:
 
     @property
     def time_period(self):
-        """Gets the time_period of this AggregationLogicTableVO.
+        r"""Gets the time_period of this AggregationLogicTableVO.
 
         :return: The time_period of this AggregationLogicTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.AggregationLogicTableAttributeVO`
@@ -1183,7 +1183,7 @@ class AggregationLogicTableVO:
 
     @time_period.setter
     def time_period(self, time_period):
-        """Sets the time_period of this AggregationLogicTableVO.
+        r"""Sets the time_period of this AggregationLogicTableVO.
 
         :param time_period: The time_period of this AggregationLogicTableVO.
         :type time_period: :class:`huaweicloudsdkdataartsstudio.v1.AggregationLogicTableAttributeVO`
@@ -1192,7 +1192,7 @@ class AggregationLogicTableVO:
 
     @property
     def table_attributes(self):
-        """Gets the table_attributes of this AggregationLogicTableVO.
+        r"""Gets the table_attributes of this AggregationLogicTableVO.
 
         汇总表属性信息，依据attribute_type判断类型。
 
@@ -1203,7 +1203,7 @@ class AggregationLogicTableVO:
 
     @table_attributes.setter
     def table_attributes(self, table_attributes):
-        """Sets the table_attributes of this AggregationLogicTableVO.
+        r"""Sets the table_attributes of this AggregationLogicTableVO.
 
         汇总表属性信息，依据attribute_type判断类型。
 
@@ -1214,7 +1214,7 @@ class AggregationLogicTableVO:
 
     @property
     def physical_table(self):
-        """Gets the physical_table of this AggregationLogicTableVO.
+        r"""Gets the physical_table of this AggregationLogicTableVO.
 
         :return: The physical_table of this AggregationLogicTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1223,7 +1223,7 @@ class AggregationLogicTableVO:
 
     @physical_table.setter
     def physical_table(self, physical_table):
-        """Sets the physical_table of this AggregationLogicTableVO.
+        r"""Sets the physical_table of this AggregationLogicTableVO.
 
         :param physical_table: The physical_table of this AggregationLogicTableVO.
         :type physical_table: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1232,7 +1232,7 @@ class AggregationLogicTableVO:
 
     @property
     def dev_physical_table(self):
-        """Gets the dev_physical_table of this AggregationLogicTableVO.
+        r"""Gets the dev_physical_table of this AggregationLogicTableVO.
 
         :return: The dev_physical_table of this AggregationLogicTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1241,7 +1241,7 @@ class AggregationLogicTableVO:
 
     @dev_physical_table.setter
     def dev_physical_table(self, dev_physical_table):
-        """Sets the dev_physical_table of this AggregationLogicTableVO.
+        r"""Sets the dev_physical_table of this AggregationLogicTableVO.
 
         :param dev_physical_table: The dev_physical_table of this AggregationLogicTableVO.
         :type dev_physical_table: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1250,7 +1250,7 @@ class AggregationLogicTableVO:
 
     @property
     def technical_asset(self):
-        """Gets the technical_asset of this AggregationLogicTableVO.
+        r"""Gets the technical_asset of this AggregationLogicTableVO.
 
         :return: The technical_asset of this AggregationLogicTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1259,7 +1259,7 @@ class AggregationLogicTableVO:
 
     @technical_asset.setter
     def technical_asset(self, technical_asset):
-        """Sets the technical_asset of this AggregationLogicTableVO.
+        r"""Sets the technical_asset of this AggregationLogicTableVO.
 
         :param technical_asset: The technical_asset of this AggregationLogicTableVO.
         :type technical_asset: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1268,7 +1268,7 @@ class AggregationLogicTableVO:
 
     @property
     def business_asset(self):
-        """Gets the business_asset of this AggregationLogicTableVO.
+        r"""Gets the business_asset of this AggregationLogicTableVO.
 
         :return: The business_asset of this AggregationLogicTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1277,7 +1277,7 @@ class AggregationLogicTableVO:
 
     @business_asset.setter
     def business_asset(self, business_asset):
-        """Sets the business_asset of this AggregationLogicTableVO.
+        r"""Sets the business_asset of this AggregationLogicTableVO.
 
         :param business_asset: The business_asset of this AggregationLogicTableVO.
         :type business_asset: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1286,7 +1286,7 @@ class AggregationLogicTableVO:
 
     @property
     def meta_data_link(self):
-        """Gets the meta_data_link of this AggregationLogicTableVO.
+        r"""Gets the meta_data_link of this AggregationLogicTableVO.
 
         :return: The meta_data_link of this AggregationLogicTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1295,7 +1295,7 @@ class AggregationLogicTableVO:
 
     @meta_data_link.setter
     def meta_data_link(self, meta_data_link):
-        """Sets the meta_data_link of this AggregationLogicTableVO.
+        r"""Sets the meta_data_link of this AggregationLogicTableVO.
 
         :param meta_data_link: The meta_data_link of this AggregationLogicTableVO.
         :type meta_data_link: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1304,7 +1304,7 @@ class AggregationLogicTableVO:
 
     @property
     def data_quality(self):
-        """Gets the data_quality of this AggregationLogicTableVO.
+        r"""Gets the data_quality of this AggregationLogicTableVO.
 
         :return: The data_quality of this AggregationLogicTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1313,7 +1313,7 @@ class AggregationLogicTableVO:
 
     @data_quality.setter
     def data_quality(self, data_quality):
-        """Sets the data_quality of this AggregationLogicTableVO.
+        r"""Sets the data_quality of this AggregationLogicTableVO.
 
         :param data_quality: The data_quality of this AggregationLogicTableVO.
         :type data_quality: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1322,7 +1322,7 @@ class AggregationLogicTableVO:
 
     @property
     def dlf_task(self):
-        """Gets the dlf_task of this AggregationLogicTableVO.
+        r"""Gets the dlf_task of this AggregationLogicTableVO.
 
         :return: The dlf_task of this AggregationLogicTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1331,7 +1331,7 @@ class AggregationLogicTableVO:
 
     @dlf_task.setter
     def dlf_task(self, dlf_task):
-        """Sets the dlf_task of this AggregationLogicTableVO.
+        r"""Sets the dlf_task of this AggregationLogicTableVO.
 
         :param dlf_task: The dlf_task of this AggregationLogicTableVO.
         :type dlf_task: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1340,7 +1340,7 @@ class AggregationLogicTableVO:
 
     @property
     def publish_to_dlm(self):
-        """Gets the publish_to_dlm of this AggregationLogicTableVO.
+        r"""Gets the publish_to_dlm of this AggregationLogicTableVO.
 
         :return: The publish_to_dlm of this AggregationLogicTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1349,7 +1349,7 @@ class AggregationLogicTableVO:
 
     @publish_to_dlm.setter
     def publish_to_dlm(self, publish_to_dlm):
-        """Sets the publish_to_dlm of this AggregationLogicTableVO.
+        r"""Sets the publish_to_dlm of this AggregationLogicTableVO.
 
         :param publish_to_dlm: The publish_to_dlm of this AggregationLogicTableVO.
         :type publish_to_dlm: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1358,7 +1358,7 @@ class AggregationLogicTableVO:
 
     @property
     def summary_status(self):
-        """Gets the summary_status of this AggregationLogicTableVO.
+        r"""Gets the summary_status of this AggregationLogicTableVO.
 
         :return: The summary_status of this AggregationLogicTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1367,7 +1367,7 @@ class AggregationLogicTableVO:
 
     @summary_status.setter
     def summary_status(self, summary_status):
-        """Sets the summary_status of this AggregationLogicTableVO.
+        r"""Sets the summary_status of this AggregationLogicTableVO.
 
         :param summary_status: The summary_status of this AggregationLogicTableVO.
         :type summary_status: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1376,7 +1376,7 @@ class AggregationLogicTableVO:
 
     @property
     def distribute(self):
-        """Gets the distribute of this AggregationLogicTableVO.
+        r"""Gets the distribute of this AggregationLogicTableVO.
 
         DISTRIBUTE BY [HASH(column)|REPLICATION]。 枚举值：   - HASH: 对指定的列进行Hash，通过映射，把数据分布到指定DN   - REPLICATION: 表的每一行存在所有数据节点（DN）中，即每个数据节点都有完整的表数据 
 
@@ -1387,7 +1387,7 @@ class AggregationLogicTableVO:
 
     @distribute.setter
     def distribute(self, distribute):
-        """Sets the distribute of this AggregationLogicTableVO.
+        r"""Sets the distribute of this AggregationLogicTableVO.
 
         DISTRIBUTE BY [HASH(column)|REPLICATION]。 枚举值：   - HASH: 对指定的列进行Hash，通过映射，把数据分布到指定DN   - REPLICATION: 表的每一行存在所有数据节点（DN）中，即每个数据节点都有完整的表数据 
 
@@ -1398,7 +1398,7 @@ class AggregationLogicTableVO:
 
     @property
     def distribute_column(self):
-        """Gets the distribute_column of this AggregationLogicTableVO.
+        r"""Gets the distribute_column of this AggregationLogicTableVO.
 
         DISTRIBUTE BY HASH column.
 
@@ -1409,7 +1409,7 @@ class AggregationLogicTableVO:
 
     @distribute_column.setter
     def distribute_column(self, distribute_column):
-        """Sets the distribute_column of this AggregationLogicTableVO.
+        r"""Sets the distribute_column of this AggregationLogicTableVO.
 
         DISTRIBUTE BY HASH column.
 
@@ -1420,7 +1420,7 @@ class AggregationLogicTableVO:
 
     @property
     def compression(self):
-        """Gets the compression of this AggregationLogicTableVO.
+        r"""Gets the compression of this AggregationLogicTableVO.
 
         DWS数据压缩等级，列压缩等级为no/low/middle/high，行压缩等级为no/yes。 枚举值：   - \"NO\": 不压缩   - \"YES\": 压缩   - \"LOW\": 低等级压缩   - \"MIDDLE\": 中等级压缩   - \"HIGH\": 高等级压缩 
 
@@ -1431,7 +1431,7 @@ class AggregationLogicTableVO:
 
     @compression.setter
     def compression(self, compression):
-        """Sets the compression of this AggregationLogicTableVO.
+        r"""Sets the compression of this AggregationLogicTableVO.
 
         DWS数据压缩等级，列压缩等级为no/low/middle/high，行压缩等级为no/yes。 枚举值：   - \"NO\": 不压缩   - \"YES\": 压缩   - \"LOW\": 低等级压缩   - \"MIDDLE\": 中等级压缩   - \"HIGH\": 高等级压缩 
 
@@ -1442,7 +1442,7 @@ class AggregationLogicTableVO:
 
     @property
     def obs_location(self):
-        """Gets the obs_location of this AggregationLogicTableVO.
+        r"""Gets the obs_location of this AggregationLogicTableVO.
 
         外表路径。
 
@@ -1453,7 +1453,7 @@ class AggregationLogicTableVO:
 
     @obs_location.setter
     def obs_location(self, obs_location):
-        """Sets the obs_location of this AggregationLogicTableVO.
+        r"""Sets the obs_location of this AggregationLogicTableVO.
 
         外表路径。
 
@@ -1464,7 +1464,7 @@ class AggregationLogicTableVO:
 
     @property
     def pre_combine_field(self):
-        """Gets the pre_combine_field of this AggregationLogicTableVO.
+        r"""Gets the pre_combine_field of this AggregationLogicTableVO.
 
         版本字段。
 
@@ -1475,7 +1475,7 @@ class AggregationLogicTableVO:
 
     @pre_combine_field.setter
     def pre_combine_field(self, pre_combine_field):
-        """Sets the pre_combine_field of this AggregationLogicTableVO.
+        r"""Sets the pre_combine_field of this AggregationLogicTableVO.
 
         版本字段。
 
@@ -1486,7 +1486,7 @@ class AggregationLogicTableVO:
 
     @property
     def table_type(self):
-        """Gets the table_type of this AggregationLogicTableVO.
+        r"""Gets the table_type of this AggregationLogicTableVO.
 
         表类型。
 
@@ -1497,7 +1497,7 @@ class AggregationLogicTableVO:
 
     @table_type.setter
     def table_type(self, table_type):
-        """Sets the table_type of this AggregationLogicTableVO.
+        r"""Sets the table_type of this AggregationLogicTableVO.
 
         表类型。
 
@@ -1508,7 +1508,7 @@ class AggregationLogicTableVO:
 
     @property
     def dlf_task_id(self):
-        """Gets the dlf_task_id of this AggregationLogicTableVO.
+        r"""Gets the dlf_task_id of this AggregationLogicTableVO.
 
         DLF作业ID。
 
@@ -1519,7 +1519,7 @@ class AggregationLogicTableVO:
 
     @dlf_task_id.setter
     def dlf_task_id(self, dlf_task_id):
-        """Sets the dlf_task_id of this AggregationLogicTableVO.
+        r"""Sets the dlf_task_id of this AggregationLogicTableVO.
 
         DLF作业ID。
 
@@ -1530,7 +1530,7 @@ class AggregationLogicTableVO:
 
     @property
     def quality_id(self):
-        """Gets the quality_id of this AggregationLogicTableVO.
+        r"""Gets the quality_id of this AggregationLogicTableVO.
 
         质量ID，ID字符串。
 
@@ -1541,7 +1541,7 @@ class AggregationLogicTableVO:
 
     @quality_id.setter
     def quality_id(self, quality_id):
-        """Sets the quality_id of this AggregationLogicTableVO.
+        r"""Sets the quality_id of this AggregationLogicTableVO.
 
         质量ID，ID字符串。
 
@@ -1552,7 +1552,7 @@ class AggregationLogicTableVO:
 
     @property
     def reversed(self):
-        """Gets the reversed of this AggregationLogicTableVO.
+        r"""Gets the reversed of this AggregationLogicTableVO.
 
         是否是逆向的，只读。
 
@@ -1563,7 +1563,7 @@ class AggregationLogicTableVO:
 
     @reversed.setter
     def reversed(self, reversed):
-        """Sets the reversed of this AggregationLogicTableVO.
+        r"""Sets the reversed of this AggregationLogicTableVO.
 
         是否是逆向的，只读。
 
@@ -1574,7 +1574,7 @@ class AggregationLogicTableVO:
 
     @property
     def table_version(self):
-        """Gets the table_version of this AggregationLogicTableVO.
+        r"""Gets the table_version of this AggregationLogicTableVO.
 
         为2时，表示汇总表是汇总生成的，只读。
 
@@ -1585,7 +1585,7 @@ class AggregationLogicTableVO:
 
     @table_version.setter
     def table_version(self, table_version):
-        """Sets the table_version of this AggregationLogicTableVO.
+        r"""Sets the table_version of this AggregationLogicTableVO.
 
         为2时，表示汇总表是汇总生成的，只读。
 
@@ -1596,7 +1596,7 @@ class AggregationLogicTableVO:
 
     @property
     def partition_conf(self):
-        """Gets the partition_conf of this AggregationLogicTableVO.
+        r"""Gets the partition_conf of this AggregationLogicTableVO.
 
         分区表达式。
 
@@ -1607,7 +1607,7 @@ class AggregationLogicTableVO:
 
     @partition_conf.setter
     def partition_conf(self, partition_conf):
-        """Sets the partition_conf of this AggregationLogicTableVO.
+        r"""Sets the partition_conf of this AggregationLogicTableVO.
 
         分区表达式。
 
@@ -1618,7 +1618,7 @@ class AggregationLogicTableVO:
 
     @property
     def dirty_out_switch(self):
-        """Gets the dirty_out_switch of this AggregationLogicTableVO.
+        r"""Gets the dirty_out_switch of this AggregationLogicTableVO.
 
         异常数据输出开关。
 
@@ -1629,7 +1629,7 @@ class AggregationLogicTableVO:
 
     @dirty_out_switch.setter
     def dirty_out_switch(self, dirty_out_switch):
-        """Sets the dirty_out_switch of this AggregationLogicTableVO.
+        r"""Sets the dirty_out_switch of this AggregationLogicTableVO.
 
         异常数据输出开关。
 
@@ -1640,7 +1640,7 @@ class AggregationLogicTableVO:
 
     @property
     def dirty_out_database(self):
-        """Gets the dirty_out_database of this AggregationLogicTableVO.
+        r"""Gets the dirty_out_database of this AggregationLogicTableVO.
 
         异常数据输出库。
 
@@ -1651,7 +1651,7 @@ class AggregationLogicTableVO:
 
     @dirty_out_database.setter
     def dirty_out_database(self, dirty_out_database):
-        """Sets the dirty_out_database of this AggregationLogicTableVO.
+        r"""Sets the dirty_out_database of this AggregationLogicTableVO.
 
         异常数据输出库。
 
@@ -1662,7 +1662,7 @@ class AggregationLogicTableVO:
 
     @property
     def dirty_out_prefix(self):
-        """Gets the dirty_out_prefix of this AggregationLogicTableVO.
+        r"""Gets the dirty_out_prefix of this AggregationLogicTableVO.
 
         异常表前缀。
 
@@ -1673,7 +1673,7 @@ class AggregationLogicTableVO:
 
     @dirty_out_prefix.setter
     def dirty_out_prefix(self, dirty_out_prefix):
-        """Sets the dirty_out_prefix of this AggregationLogicTableVO.
+        r"""Sets the dirty_out_prefix of this AggregationLogicTableVO.
 
         异常表前缀。
 
@@ -1684,7 +1684,7 @@ class AggregationLogicTableVO:
 
     @property
     def dirty_out_suffix(self):
-        """Gets the dirty_out_suffix of this AggregationLogicTableVO.
+        r"""Gets the dirty_out_suffix of this AggregationLogicTableVO.
 
         异常表后缀。
 
@@ -1695,7 +1695,7 @@ class AggregationLogicTableVO:
 
     @dirty_out_suffix.setter
     def dirty_out_suffix(self, dirty_out_suffix):
-        """Sets the dirty_out_suffix of this AggregationLogicTableVO.
+        r"""Sets the dirty_out_suffix of this AggregationLogicTableVO.
 
         异常表后缀。
 
@@ -1706,7 +1706,7 @@ class AggregationLogicTableVO:
 
     @property
     def alias(self):
-        """Gets the alias of this AggregationLogicTableVO.
+        r"""Gets the alias of this AggregationLogicTableVO.
 
         别名。
 
@@ -1717,7 +1717,7 @@ class AggregationLogicTableVO:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this AggregationLogicTableVO.
+        r"""Sets the alias of this AggregationLogicTableVO.
 
         别名。
 
@@ -1728,7 +1728,7 @@ class AggregationLogicTableVO:
 
     @property
     def configs(self):
-        """Gets the configs of this AggregationLogicTableVO.
+        r"""Gets the configs of this AggregationLogicTableVO.
 
         其他配置。
 
@@ -1739,7 +1739,7 @@ class AggregationLogicTableVO:
 
     @configs.setter
     def configs(self, configs):
-        """Sets the configs of this AggregationLogicTableVO.
+        r"""Sets the configs of this AggregationLogicTableVO.
 
         其他配置。
 
@@ -1750,7 +1750,7 @@ class AggregationLogicTableVO:
 
     @property
     def self_defined_fields(self):
-        """Gets the self_defined_fields of this AggregationLogicTableVO.
+        r"""Gets the self_defined_fields of this AggregationLogicTableVO.
 
         自定义项。
 
@@ -1761,7 +1761,7 @@ class AggregationLogicTableVO:
 
     @self_defined_fields.setter
     def self_defined_fields(self, self_defined_fields):
-        """Sets the self_defined_fields of this AggregationLogicTableVO.
+        r"""Sets the self_defined_fields of this AggregationLogicTableVO.
 
         自定义项。
 
@@ -1772,7 +1772,7 @@ class AggregationLogicTableVO:
 
     @property
     def api_id(self):
-        """Gets the api_id of this AggregationLogicTableVO.
+        r"""Gets the api_id of this AggregationLogicTableVO.
 
         API ID。
 
@@ -1783,7 +1783,7 @@ class AggregationLogicTableVO:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this AggregationLogicTableVO.
+        r"""Sets the api_id of this AggregationLogicTableVO.
 
         API ID。
 
@@ -1794,7 +1794,7 @@ class AggregationLogicTableVO:
 
     @property
     def sql(self):
-        """Gets the sql of this AggregationLogicTableVO.
+        r"""Gets the sql of this AggregationLogicTableVO.
 
         汇总表绑定的SQL。
 
@@ -1805,7 +1805,7 @@ class AggregationLogicTableVO:
 
     @sql.setter
     def sql(self, sql):
-        """Sets the sql of this AggregationLogicTableVO.
+        r"""Sets the sql of this AggregationLogicTableVO.
 
         汇总表绑定的SQL。
 
@@ -1816,7 +1816,7 @@ class AggregationLogicTableVO:
 
     @property
     def dev_version(self):
-        """Gets the dev_version of this AggregationLogicTableVO.
+        r"""Gets the dev_version of this AggregationLogicTableVO.
 
         开发环境版本，ID字符串。
 
@@ -1827,7 +1827,7 @@ class AggregationLogicTableVO:
 
     @dev_version.setter
     def dev_version(self, dev_version):
-        """Sets the dev_version of this AggregationLogicTableVO.
+        r"""Sets the dev_version of this AggregationLogicTableVO.
 
         开发环境版本，ID字符串。
 
@@ -1838,7 +1838,7 @@ class AggregationLogicTableVO:
 
     @property
     def prod_version(self):
-        """Gets the prod_version of this AggregationLogicTableVO.
+        r"""Gets the prod_version of this AggregationLogicTableVO.
 
         生产环境版本，ID字符串。
 
@@ -1849,7 +1849,7 @@ class AggregationLogicTableVO:
 
     @prod_version.setter
     def prod_version(self, prod_version):
-        """Sets the prod_version of this AggregationLogicTableVO.
+        r"""Sets the prod_version of this AggregationLogicTableVO.
 
         生产环境版本，ID字符串。
 
@@ -1860,7 +1860,7 @@ class AggregationLogicTableVO:
 
     @property
     def dev_version_name(self):
-        """Gets the dev_version_name of this AggregationLogicTableVO.
+        r"""Gets the dev_version_name of this AggregationLogicTableVO.
 
         开发环境版本名称
 
@@ -1871,7 +1871,7 @@ class AggregationLogicTableVO:
 
     @dev_version_name.setter
     def dev_version_name(self, dev_version_name):
-        """Sets the dev_version_name of this AggregationLogicTableVO.
+        r"""Sets the dev_version_name of this AggregationLogicTableVO.
 
         开发环境版本名称
 
@@ -1882,7 +1882,7 @@ class AggregationLogicTableVO:
 
     @property
     def prod_version_name(self):
-        """Gets the prod_version_name of this AggregationLogicTableVO.
+        r"""Gets the prod_version_name of this AggregationLogicTableVO.
 
         生产环境版本名称
 
@@ -1893,7 +1893,7 @@ class AggregationLogicTableVO:
 
     @prod_version_name.setter
     def prod_version_name(self, prod_version_name):
-        """Sets the prod_version_name of this AggregationLogicTableVO.
+        r"""Sets the prod_version_name of this AggregationLogicTableVO.
 
         生产环境版本名称
 
@@ -1904,7 +1904,7 @@ class AggregationLogicTableVO:
 
     @property
     def env_type(self):
-        """Gets the env_type of this AggregationLogicTableVO.
+        r"""Gets the env_type of this AggregationLogicTableVO.
 
         :return: The env_type of this AggregationLogicTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.EnvTypeEnum`
@@ -1913,7 +1913,7 @@ class AggregationLogicTableVO:
 
     @env_type.setter
     def env_type(self, env_type):
-        """Sets the env_type of this AggregationLogicTableVO.
+        r"""Sets the env_type of this AggregationLogicTableVO.
 
         :param env_type: The env_type of this AggregationLogicTableVO.
         :type env_type: :class:`huaweicloudsdkdataartsstudio.v1.EnvTypeEnum`
@@ -1922,7 +1922,7 @@ class AggregationLogicTableVO:
 
     @property
     def model_id(self):
-        """Gets the model_id of this AggregationLogicTableVO.
+        r"""Gets the model_id of this AggregationLogicTableVO.
 
         所属模型ID，ID字符串。
 
@@ -1933,7 +1933,7 @@ class AggregationLogicTableVO:
 
     @model_id.setter
     def model_id(self, model_id):
-        """Sets the model_id of this AggregationLogicTableVO.
+        r"""Sets the model_id of this AggregationLogicTableVO.
 
         所属模型ID，ID字符串。
 
@@ -1944,7 +1944,7 @@ class AggregationLogicTableVO:
 
     @property
     def model(self):
-        """Gets the model of this AggregationLogicTableVO.
+        r"""Gets the model of this AggregationLogicTableVO.
 
         :return: The model of this AggregationLogicTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.WorkspaceVO`
@@ -1953,7 +1953,7 @@ class AggregationLogicTableVO:
 
     @model.setter
     def model(self, model):
-        """Sets the model of this AggregationLogicTableVO.
+        r"""Sets the model of this AggregationLogicTableVO.
 
         :param model: The model of this AggregationLogicTableVO.
         :type model: :class:`huaweicloudsdkdataartsstudio.v1.WorkspaceVO`

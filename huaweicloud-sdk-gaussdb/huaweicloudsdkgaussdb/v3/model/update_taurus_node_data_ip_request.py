@@ -31,7 +31,7 @@ class UpdateTaurusNodeDataIpRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, node_id=None, body=None):
-        """UpdateTaurusNodeDataIpRequest
+        r"""UpdateTaurusNodeDataIpRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class UpdateTaurusNodeDataIpRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateTaurusNodeDataIpRequest.
+        r"""Gets the x_language of this UpdateTaurusNodeDataIpRequest.
 
         **参数解释**：               请求语言类型。   **约束限制**：   不涉及。   **取值范围**：  - en-us  - zh-cn   **默认值**：   en-us。
 
@@ -73,7 +73,7 @@ class UpdateTaurusNodeDataIpRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateTaurusNodeDataIpRequest.
+        r"""Sets the x_language of this UpdateTaurusNodeDataIpRequest.
 
         **参数解释**：               请求语言类型。   **约束限制**：   不涉及。   **取值范围**：  - en-us  - zh-cn   **默认值**：   en-us。
 
@@ -84,7 +84,7 @@ class UpdateTaurusNodeDataIpRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateTaurusNodeDataIpRequest.
+        r"""Gets the instance_id of this UpdateTaurusNodeDataIpRequest.
 
         **参数解释**：  实例ID，此参数是实例的唯一标识。  **约束限制**：  不涉及。  **取值范围**：  只能由英文字母、数字组成，后缀为in07，长度为36个字符。  **默认取值**：  不涉及。
 
@@ -95,7 +95,7 @@ class UpdateTaurusNodeDataIpRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateTaurusNodeDataIpRequest.
+        r"""Sets the instance_id of this UpdateTaurusNodeDataIpRequest.
 
         **参数解释**：  实例ID，此参数是实例的唯一标识。  **约束限制**：  不涉及。  **取值范围**：  只能由英文字母、数字组成，后缀为in07，长度为36个字符。  **默认取值**：  不涉及。
 
@@ -106,7 +106,7 @@ class UpdateTaurusNodeDataIpRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this UpdateTaurusNodeDataIpRequest.
+        r"""Gets the node_id of this UpdateTaurusNodeDataIpRequest.
 
         **参数解释**：  节点ID。  **约束限制**：  不涉及。  **取值范围**：  只能由英文字母、数字组成，前面为UUID，后缀为no07，长度为36个字符。  **默认取值**：  不涉及。 
 
@@ -117,7 +117,7 @@ class UpdateTaurusNodeDataIpRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this UpdateTaurusNodeDataIpRequest.
+        r"""Sets the node_id of this UpdateTaurusNodeDataIpRequest.
 
         **参数解释**：  节点ID。  **约束限制**：  不涉及。  **取值范围**：  只能由英文字母、数字组成，前面为UUID，后缀为no07，长度为36个字符。  **默认取值**：  不涉及。 
 
@@ -128,7 +128,7 @@ class UpdateTaurusNodeDataIpRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateTaurusNodeDataIpRequest.
+        r"""Gets the body of this UpdateTaurusNodeDataIpRequest.
 
         :return: The body of this UpdateTaurusNodeDataIpRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ModifyNodeDataIpRequest`
@@ -137,7 +137,7 @@ class UpdateTaurusNodeDataIpRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateTaurusNodeDataIpRequest.
+        r"""Sets the body of this UpdateTaurusNodeDataIpRequest.
 
         :param body: The body of this UpdateTaurusNodeDataIpRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.ModifyNodeDataIpRequest`

@@ -25,7 +25,7 @@ class AddOtTemplatesRequest:
     }
 
     def __init__(self, body=None):
-        """AddOtTemplatesRequest
+        r"""AddOtTemplatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AddOtTemplatesRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddOtTemplatesRequest.
+        r"""Gets the body of this AddOtTemplatesRequest.
 
         :return: The body of this AddOtTemplatesRequest.
         :rtype: :class:`huaweicloudsdkiotedge.v2.CreateOtTemplatesReqDTO`
@@ -52,7 +52,7 @@ class AddOtTemplatesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddOtTemplatesRequest.
+        r"""Sets the body of this AddOtTemplatesRequest.
 
         :param body: The body of this AddOtTemplatesRequest.
         :type body: :class:`huaweicloudsdkiotedge.v2.CreateOtTemplatesReqDTO`

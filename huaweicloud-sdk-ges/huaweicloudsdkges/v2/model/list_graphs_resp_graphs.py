@@ -115,7 +115,7 @@ class ListGraphsRespGraphs:
     }
 
     def __init__(self, id=None, name=None, created_by=None, is_multi_az=None, region_code=None, az_code=None, schema_path=None, edgeset_path=None, vertexset_path=None, edgeset_format=None, edgeset_default_label=None, vertexset_format=None, vertexset_default_label=None, data_store_version=None, sys_tags=None, status=None, action_progress=None, graph_size_type_index=None, vpc_id=None, subnet_id=None, security_group_id=None, replication=None, created=None, updated=None, private_ip=None, public_ip=None, arch=None, encrypted=None, master_key_id=None, master_key_name=None, enable_rbac=None, enable_full_text_index=None, enable_hyg=None, traffic_ip_list=None, crypt_algorithm=None, enable_https=None, tags=None, product_type=None, vertex_id_type=None, origin_graph_size_type_index=None, expand_time=None, resize_time=None, enable_multi_label=None, capacity_ratio=None, sort_key_type=None, enable_lts=None):
-        """ListGraphsRespGraphs
+        r"""ListGraphsRespGraphs
 
         The model defined in huaweicloud sdk
 
@@ -358,7 +358,7 @@ class ListGraphsRespGraphs:
 
     @property
     def id(self):
-        """Gets the id of this ListGraphsRespGraphs.
+        r"""Gets the id of this ListGraphsRespGraphs.
 
         图ID。
 
@@ -369,7 +369,7 @@ class ListGraphsRespGraphs:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListGraphsRespGraphs.
+        r"""Sets the id of this ListGraphsRespGraphs.
 
         图ID。
 
@@ -380,7 +380,7 @@ class ListGraphsRespGraphs:
 
     @property
     def name(self):
-        """Gets the name of this ListGraphsRespGraphs.
+        r"""Gets the name of this ListGraphsRespGraphs.
 
         图名称。
 
@@ -391,7 +391,7 @@ class ListGraphsRespGraphs:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListGraphsRespGraphs.
+        r"""Sets the name of this ListGraphsRespGraphs.
 
         图名称。
 
@@ -402,7 +402,7 @@ class ListGraphsRespGraphs:
 
     @property
     def created_by(self):
-        """Gets the created_by of this ListGraphsRespGraphs.
+        r"""Gets the created_by of this ListGraphsRespGraphs.
 
         图的创建人账号。
 
@@ -413,7 +413,7 @@ class ListGraphsRespGraphs:
 
     @created_by.setter
     def created_by(self, created_by):
-        """Sets the created_by of this ListGraphsRespGraphs.
+        r"""Sets the created_by of this ListGraphsRespGraphs.
 
         图的创建人账号。
 
@@ -424,7 +424,7 @@ class ListGraphsRespGraphs:
 
     @property
     def is_multi_az(self):
-        """Gets the is_multi_az of this ListGraphsRespGraphs.
+        r"""Gets the is_multi_az of this ListGraphsRespGraphs.
 
         是否支持跨AZ高可用。
 
@@ -435,7 +435,7 @@ class ListGraphsRespGraphs:
 
     @is_multi_az.setter
     def is_multi_az(self, is_multi_az):
-        """Sets the is_multi_az of this ListGraphsRespGraphs.
+        r"""Sets the is_multi_az of this ListGraphsRespGraphs.
 
         是否支持跨AZ高可用。
 
@@ -446,7 +446,7 @@ class ListGraphsRespGraphs:
 
     @property
     def region_code(self):
-        """Gets the region_code of this ListGraphsRespGraphs.
+        r"""Gets the region_code of this ListGraphsRespGraphs.
 
         域编码。
 
@@ -457,7 +457,7 @@ class ListGraphsRespGraphs:
 
     @region_code.setter
     def region_code(self, region_code):
-        """Sets the region_code of this ListGraphsRespGraphs.
+        r"""Sets the region_code of this ListGraphsRespGraphs.
 
         域编码。
 
@@ -468,7 +468,7 @@ class ListGraphsRespGraphs:
 
     @property
     def az_code(self):
-        """Gets the az_code of this ListGraphsRespGraphs.
+        r"""Gets the az_code of this ListGraphsRespGraphs.
 
         可用区编码。
 
@@ -479,7 +479,7 @@ class ListGraphsRespGraphs:
 
     @az_code.setter
     def az_code(self, az_code):
-        """Sets the az_code of this ListGraphsRespGraphs.
+        r"""Sets the az_code of this ListGraphsRespGraphs.
 
         可用区编码。
 
@@ -490,7 +490,7 @@ class ListGraphsRespGraphs:
 
     @property
     def schema_path(self):
-        """Gets the schema_path of this ListGraphsRespGraphs.
+        r"""Gets the schema_path of this ListGraphsRespGraphs.
 
         元数据文件路径。
 
@@ -501,7 +501,7 @@ class ListGraphsRespGraphs:
 
     @schema_path.setter
     def schema_path(self, schema_path):
-        """Sets the schema_path of this ListGraphsRespGraphs.
+        r"""Sets the schema_path of this ListGraphsRespGraphs.
 
         元数据文件路径。
 
@@ -512,7 +512,7 @@ class ListGraphsRespGraphs:
 
     @property
     def edgeset_path(self):
-        """Gets the edgeset_path of this ListGraphsRespGraphs.
+        r"""Gets the edgeset_path of this ListGraphsRespGraphs.
 
         边数据集OBS路径。
 
@@ -523,7 +523,7 @@ class ListGraphsRespGraphs:
 
     @edgeset_path.setter
     def edgeset_path(self, edgeset_path):
-        """Sets the edgeset_path of this ListGraphsRespGraphs.
+        r"""Sets the edgeset_path of this ListGraphsRespGraphs.
 
         边数据集OBS路径。
 
@@ -534,7 +534,7 @@ class ListGraphsRespGraphs:
 
     @property
     def vertexset_path(self):
-        """Gets the vertexset_path of this ListGraphsRespGraphs.
+        r"""Gets the vertexset_path of this ListGraphsRespGraphs.
 
         点数据集OBS路径。
 
@@ -545,7 +545,7 @@ class ListGraphsRespGraphs:
 
     @vertexset_path.setter
     def vertexset_path(self, vertexset_path):
-        """Sets the vertexset_path of this ListGraphsRespGraphs.
+        r"""Sets the vertexset_path of this ListGraphsRespGraphs.
 
         点数据集OBS路径。
 
@@ -556,7 +556,7 @@ class ListGraphsRespGraphs:
 
     @property
     def edgeset_format(self):
-        """Gets the edgeset_format of this ListGraphsRespGraphs.
+        r"""Gets the edgeset_format of this ListGraphsRespGraphs.
 
         边数据集文件格式。
 
@@ -567,7 +567,7 @@ class ListGraphsRespGraphs:
 
     @edgeset_format.setter
     def edgeset_format(self, edgeset_format):
-        """Sets the edgeset_format of this ListGraphsRespGraphs.
+        r"""Sets the edgeset_format of this ListGraphsRespGraphs.
 
         边数据集文件格式。
 
@@ -578,7 +578,7 @@ class ListGraphsRespGraphs:
 
     @property
     def edgeset_default_label(self):
-        """Gets the edgeset_default_label of this ListGraphsRespGraphs.
+        r"""Gets the edgeset_default_label of this ListGraphsRespGraphs.
 
         边数据集文件默认Label。
 
@@ -589,7 +589,7 @@ class ListGraphsRespGraphs:
 
     @edgeset_default_label.setter
     def edgeset_default_label(self, edgeset_default_label):
-        """Sets the edgeset_default_label of this ListGraphsRespGraphs.
+        r"""Sets the edgeset_default_label of this ListGraphsRespGraphs.
 
         边数据集文件默认Label。
 
@@ -600,7 +600,7 @@ class ListGraphsRespGraphs:
 
     @property
     def vertexset_format(self):
-        """Gets the vertexset_format of this ListGraphsRespGraphs.
+        r"""Gets the vertexset_format of this ListGraphsRespGraphs.
 
         点数据集文件格式。
 
@@ -611,7 +611,7 @@ class ListGraphsRespGraphs:
 
     @vertexset_format.setter
     def vertexset_format(self, vertexset_format):
-        """Sets the vertexset_format of this ListGraphsRespGraphs.
+        r"""Sets the vertexset_format of this ListGraphsRespGraphs.
 
         点数据集文件格式。
 
@@ -622,7 +622,7 @@ class ListGraphsRespGraphs:
 
     @property
     def vertexset_default_label(self):
-        """Gets the vertexset_default_label of this ListGraphsRespGraphs.
+        r"""Gets the vertexset_default_label of this ListGraphsRespGraphs.
 
         点数据集文件默认Label。
 
@@ -633,7 +633,7 @@ class ListGraphsRespGraphs:
 
     @vertexset_default_label.setter
     def vertexset_default_label(self, vertexset_default_label):
-        """Sets the vertexset_default_label of this ListGraphsRespGraphs.
+        r"""Sets the vertexset_default_label of this ListGraphsRespGraphs.
 
         点数据集文件默认Label。
 
@@ -644,7 +644,7 @@ class ListGraphsRespGraphs:
 
     @property
     def data_store_version(self):
-        """Gets the data_store_version of this ListGraphsRespGraphs.
+        r"""Gets the data_store_version of this ListGraphsRespGraphs.
 
         图版本。
 
@@ -655,7 +655,7 @@ class ListGraphsRespGraphs:
 
     @data_store_version.setter
     def data_store_version(self, data_store_version):
-        """Sets the data_store_version of this ListGraphsRespGraphs.
+        r"""Sets the data_store_version of this ListGraphsRespGraphs.
 
         图版本。
 
@@ -666,7 +666,7 @@ class ListGraphsRespGraphs:
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this ListGraphsRespGraphs.
+        r"""Gets the sys_tags of this ListGraphsRespGraphs.
 
         企业项目信息，如果未指定则不开启，默认不开启。
 
@@ -677,7 +677,7 @@ class ListGraphsRespGraphs:
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this ListGraphsRespGraphs.
+        r"""Sets the sys_tags of this ListGraphsRespGraphs.
 
         企业项目信息，如果未指定则不开启，默认不开启。
 
@@ -688,7 +688,7 @@ class ListGraphsRespGraphs:
 
     @property
     def status(self):
-        """Gets the status of this ListGraphsRespGraphs.
+        r"""Gets the status of this ListGraphsRespGraphs.
 
         图的状态码。  - 100：准备中 - 200：运行中 - 201：升级中 - 202：导入中 - 203：回滚中 - 204：导出中 - 205：清空中 - 206：扩容准备中 - 207：扩容中 - 208：扩容回退中 - 210：扩副本准备中 - 211：扩副本中 - 300：故障 - 303：创建失败 - 400：被删除 - 800：已冻结 - 900：停止 - 901：停止中 - 920：启动中
 
@@ -699,7 +699,7 @@ class ListGraphsRespGraphs:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListGraphsRespGraphs.
+        r"""Sets the status of this ListGraphsRespGraphs.
 
         图的状态码。  - 100：准备中 - 200：运行中 - 201：升级中 - 202：导入中 - 203：回滚中 - 204：导出中 - 205：清空中 - 206：扩容准备中 - 207：扩容中 - 208：扩容回退中 - 210：扩副本准备中 - 211：扩副本中 - 300：故障 - 303：创建失败 - 400：被删除 - 800：已冻结 - 900：停止 - 901：停止中 - 920：启动中
 
@@ -710,7 +710,7 @@ class ListGraphsRespGraphs:
 
     @property
     def action_progress(self):
-        """Gets the action_progress of this ListGraphsRespGraphs.
+        r"""Gets the action_progress of this ListGraphsRespGraphs.
 
         图创建进度百分比。 > 只有图状态码为100时返回该字段。
 
@@ -721,7 +721,7 @@ class ListGraphsRespGraphs:
 
     @action_progress.setter
     def action_progress(self, action_progress):
-        """Sets the action_progress of this ListGraphsRespGraphs.
+        r"""Sets the action_progress of this ListGraphsRespGraphs.
 
         图创建进度百分比。 > 只有图状态码为100时返回该字段。
 
@@ -732,7 +732,7 @@ class ListGraphsRespGraphs:
 
     @property
     def graph_size_type_index(self):
-        """Gets the graph_size_type_index of this ListGraphsRespGraphs.
+        r"""Gets the graph_size_type_index of this ListGraphsRespGraphs.
 
         图规模类型索引。  - 0：一万边 - 1：百万边 - 2：千万边 - 3：一亿边 - 4：十亿边 - 5：百亿边 - 6：千亿边 - 401：十亿增强边
 
@@ -743,7 +743,7 @@ class ListGraphsRespGraphs:
 
     @graph_size_type_index.setter
     def graph_size_type_index(self, graph_size_type_index):
-        """Sets the graph_size_type_index of this ListGraphsRespGraphs.
+        r"""Sets the graph_size_type_index of this ListGraphsRespGraphs.
 
         图规模类型索引。  - 0：一万边 - 1：百万边 - 2：千万边 - 3：一亿边 - 4：十亿边 - 5：百亿边 - 6：千亿边 - 401：十亿增强边
 
@@ -754,7 +754,7 @@ class ListGraphsRespGraphs:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ListGraphsRespGraphs.
+        r"""Gets the vpc_id of this ListGraphsRespGraphs.
 
         虚拟私有云ID。
 
@@ -765,7 +765,7 @@ class ListGraphsRespGraphs:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ListGraphsRespGraphs.
+        r"""Sets the vpc_id of this ListGraphsRespGraphs.
 
         虚拟私有云ID。
 
@@ -776,7 +776,7 @@ class ListGraphsRespGraphs:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ListGraphsRespGraphs.
+        r"""Gets the subnet_id of this ListGraphsRespGraphs.
 
         指定虚拟私有云下的子网ID。
 
@@ -787,7 +787,7 @@ class ListGraphsRespGraphs:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ListGraphsRespGraphs.
+        r"""Sets the subnet_id of this ListGraphsRespGraphs.
 
         指定虚拟私有云下的子网ID。
 
@@ -798,7 +798,7 @@ class ListGraphsRespGraphs:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this ListGraphsRespGraphs.
+        r"""Gets the security_group_id of this ListGraphsRespGraphs.
 
         安全组ID。
 
@@ -809,7 +809,7 @@ class ListGraphsRespGraphs:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this ListGraphsRespGraphs.
+        r"""Sets the security_group_id of this ListGraphsRespGraphs.
 
         安全组ID。
 
@@ -820,7 +820,7 @@ class ListGraphsRespGraphs:
 
     @property
     def replication(self):
-        """Gets the replication of this ListGraphsRespGraphs.
+        r"""Gets the replication of this ListGraphsRespGraphs.
 
         副本个数，默认为1。
 
@@ -831,7 +831,7 @@ class ListGraphsRespGraphs:
 
     @replication.setter
     def replication(self, replication):
-        """Sets the replication of this ListGraphsRespGraphs.
+        r"""Sets the replication of this ListGraphsRespGraphs.
 
         副本个数，默认为1。
 
@@ -842,7 +842,7 @@ class ListGraphsRespGraphs:
 
     @property
     def created(self):
-        """Gets the created of this ListGraphsRespGraphs.
+        r"""Gets the created of this ListGraphsRespGraphs.
 
         图创建时间。
 
@@ -853,7 +853,7 @@ class ListGraphsRespGraphs:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this ListGraphsRespGraphs.
+        r"""Sets the created of this ListGraphsRespGraphs.
 
         图创建时间。
 
@@ -864,7 +864,7 @@ class ListGraphsRespGraphs:
 
     @property
     def updated(self):
-        """Gets the updated of this ListGraphsRespGraphs.
+        r"""Gets the updated of this ListGraphsRespGraphs.
 
         图更新时间。
 
@@ -875,7 +875,7 @@ class ListGraphsRespGraphs:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ListGraphsRespGraphs.
+        r"""Sets the updated of this ListGraphsRespGraphs.
 
         图更新时间。
 
@@ -886,7 +886,7 @@ class ListGraphsRespGraphs:
 
     @property
     def private_ip(self):
-        """Gets the private_ip of this ListGraphsRespGraphs.
+        r"""Gets the private_ip of this ListGraphsRespGraphs.
 
         图实例私有网络访问浮动IP地址，通过该IP用户可以通过私有网络中已部署的弹性云服务器对图实例进行访问。
 
@@ -897,7 +897,7 @@ class ListGraphsRespGraphs:
 
     @private_ip.setter
     def private_ip(self, private_ip):
-        """Sets the private_ip of this ListGraphsRespGraphs.
+        r"""Sets the private_ip of this ListGraphsRespGraphs.
 
         图实例私有网络访问浮动IP地址，通过该IP用户可以通过私有网络中已部署的弹性云服务器对图实例进行访问。
 
@@ -908,7 +908,7 @@ class ListGraphsRespGraphs:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this ListGraphsRespGraphs.
+        r"""Gets the public_ip of this ListGraphsRespGraphs.
 
         图实例公网访问地址，通过该IP用户可以从互联网对图实例进行访问。
 
@@ -919,7 +919,7 @@ class ListGraphsRespGraphs:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this ListGraphsRespGraphs.
+        r"""Sets the public_ip of this ListGraphsRespGraphs.
 
         图实例公网访问地址，通过该IP用户可以从互联网对图实例进行访问。
 
@@ -930,7 +930,7 @@ class ListGraphsRespGraphs:
 
     @property
     def arch(self):
-        """Gets the arch of this ListGraphsRespGraphs.
+        r"""Gets the arch of this ListGraphsRespGraphs.
 
         图实例CPU架构类型，取值为x86_64和aarch64。
 
@@ -941,7 +941,7 @@ class ListGraphsRespGraphs:
 
     @arch.setter
     def arch(self, arch):
-        """Sets the arch of this ListGraphsRespGraphs.
+        r"""Sets the arch of this ListGraphsRespGraphs.
 
         图实例CPU架构类型，取值为x86_64和aarch64。
 
@@ -952,7 +952,7 @@ class ListGraphsRespGraphs:
 
     @property
     def encrypted(self):
-        """Gets the encrypted of this ListGraphsRespGraphs.
+        r"""Gets the encrypted of this ListGraphsRespGraphs.
 
         是否加密。默认值为“false”，默认不加密。
 
@@ -963,7 +963,7 @@ class ListGraphsRespGraphs:
 
     @encrypted.setter
     def encrypted(self, encrypted):
-        """Sets the encrypted of this ListGraphsRespGraphs.
+        r"""Sets the encrypted of this ListGraphsRespGraphs.
 
         是否加密。默认值为“false”，默认不加密。
 
@@ -974,7 +974,7 @@ class ListGraphsRespGraphs:
 
     @property
     def master_key_id(self):
-        """Gets the master_key_id of this ListGraphsRespGraphs.
+        r"""Gets the master_key_id of this ListGraphsRespGraphs.
 
         用户主密钥ID。
 
@@ -985,7 +985,7 @@ class ListGraphsRespGraphs:
 
     @master_key_id.setter
     def master_key_id(self, master_key_id):
-        """Sets the master_key_id of this ListGraphsRespGraphs.
+        r"""Sets the master_key_id of this ListGraphsRespGraphs.
 
         用户主密钥ID。
 
@@ -996,7 +996,7 @@ class ListGraphsRespGraphs:
 
     @property
     def master_key_name(self):
-        """Gets the master_key_name of this ListGraphsRespGraphs.
+        r"""Gets the master_key_name of this ListGraphsRespGraphs.
 
         用户主密钥名称。
 
@@ -1007,7 +1007,7 @@ class ListGraphsRespGraphs:
 
     @master_key_name.setter
     def master_key_name(self, master_key_name):
-        """Sets the master_key_name of this ListGraphsRespGraphs.
+        r"""Sets the master_key_name of this ListGraphsRespGraphs.
 
         用户主密钥名称。
 
@@ -1018,7 +1018,7 @@ class ListGraphsRespGraphs:
 
     @property
     def enable_rbac(self):
-        """Gets the enable_rbac of this ListGraphsRespGraphs.
+        r"""Gets the enable_rbac of this ListGraphsRespGraphs.
 
         是否启用细粒度权限控制。
 
@@ -1029,7 +1029,7 @@ class ListGraphsRespGraphs:
 
     @enable_rbac.setter
     def enable_rbac(self, enable_rbac):
-        """Sets the enable_rbac of this ListGraphsRespGraphs.
+        r"""Sets the enable_rbac of this ListGraphsRespGraphs.
 
         是否启用细粒度权限控制。
 
@@ -1040,7 +1040,7 @@ class ListGraphsRespGraphs:
 
     @property
     def enable_full_text_index(self):
-        """Gets the enable_full_text_index of this ListGraphsRespGraphs.
+        r"""Gets the enable_full_text_index of this ListGraphsRespGraphs.
 
         是否启用全文索引。
 
@@ -1051,7 +1051,7 @@ class ListGraphsRespGraphs:
 
     @enable_full_text_index.setter
     def enable_full_text_index(self, enable_full_text_index):
-        """Sets the enable_full_text_index of this ListGraphsRespGraphs.
+        r"""Sets the enable_full_text_index of this ListGraphsRespGraphs.
 
         是否启用全文索引。
 
@@ -1062,7 +1062,7 @@ class ListGraphsRespGraphs:
 
     @property
     def enable_hyg(self):
-        """Gets the enable_hyg of this ListGraphsRespGraphs.
+        r"""Gets the enable_hyg of this ListGraphsRespGraphs.
 
         是否启用HyG，该参数只对千亿规格图生效。
 
@@ -1073,7 +1073,7 @@ class ListGraphsRespGraphs:
 
     @enable_hyg.setter
     def enable_hyg(self, enable_hyg):
-        """Sets the enable_hyg of this ListGraphsRespGraphs.
+        r"""Sets the enable_hyg of this ListGraphsRespGraphs.
 
         是否启用HyG，该参数只对千亿规格图生效。
 
@@ -1084,7 +1084,7 @@ class ListGraphsRespGraphs:
 
     @property
     def traffic_ip_list(self):
-        """Gets the traffic_ip_list of this ListGraphsRespGraphs.
+        r"""Gets the traffic_ip_list of this ListGraphsRespGraphs.
 
         图实例私有网络访问物理地址列表。为了防止浮动IP切换造成业务闪断，我们推荐您通过轮询的方式使用物理IP访问图实例。
 
@@ -1095,7 +1095,7 @@ class ListGraphsRespGraphs:
 
     @traffic_ip_list.setter
     def traffic_ip_list(self, traffic_ip_list):
-        """Sets the traffic_ip_list of this ListGraphsRespGraphs.
+        r"""Sets the traffic_ip_list of this ListGraphsRespGraphs.
 
         图实例私有网络访问物理地址列表。为了防止浮动IP切换造成业务闪断，我们推荐您通过轮询的方式使用物理IP访问图实例。
 
@@ -1106,7 +1106,7 @@ class ListGraphsRespGraphs:
 
     @property
     def crypt_algorithm(self):
-        """Gets the crypt_algorithm of this ListGraphsRespGraphs.
+        r"""Gets the crypt_algorithm of this ListGraphsRespGraphs.
 
         图实例加密算法，取值为：  - generalCipher：国密算法 - SMcompatible：商密算法（兼容国际）
 
@@ -1117,7 +1117,7 @@ class ListGraphsRespGraphs:
 
     @crypt_algorithm.setter
     def crypt_algorithm(self, crypt_algorithm):
-        """Sets the crypt_algorithm of this ListGraphsRespGraphs.
+        r"""Sets the crypt_algorithm of this ListGraphsRespGraphs.
 
         图实例加密算法，取值为：  - generalCipher：国密算法 - SMcompatible：商密算法（兼容国际）
 
@@ -1128,7 +1128,7 @@ class ListGraphsRespGraphs:
 
     @property
     def enable_https(self):
-        """Gets the enable_https of this ListGraphsRespGraphs.
+        r"""Gets the enable_https of this ListGraphsRespGraphs.
 
         是否开启安全模式，开启安全模式会对性能有较大影响
 
@@ -1139,7 +1139,7 @@ class ListGraphsRespGraphs:
 
     @enable_https.setter
     def enable_https(self, enable_https):
-        """Sets the enable_https of this ListGraphsRespGraphs.
+        r"""Sets the enable_https of this ListGraphsRespGraphs.
 
         是否开启安全模式，开启安全模式会对性能有较大影响
 
@@ -1150,7 +1150,7 @@ class ListGraphsRespGraphs:
 
     @property
     def tags(self):
-        """Gets the tags of this ListGraphsRespGraphs.
+        r"""Gets the tags of this ListGraphsRespGraphs.
 
         标签列表，每个标签用<key,value>键值对表示。
 
@@ -1161,7 +1161,7 @@ class ListGraphsRespGraphs:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListGraphsRespGraphs.
+        r"""Sets the tags of this ListGraphsRespGraphs.
 
         标签列表，每个标签用<key,value>键值对表示。
 
@@ -1172,7 +1172,7 @@ class ListGraphsRespGraphs:
 
     @property
     def product_type(self):
-        """Gets the product_type of this ListGraphsRespGraphs.
+        r"""Gets the product_type of this ListGraphsRespGraphs.
 
         图产品类型，取值为InMemory和Persistence，默认为InMemory，当graph_size_type_index取值为\"6\"时，默认为Persistence。  - InMemory：内存版 - Persistence：持久化版
 
@@ -1183,7 +1183,7 @@ class ListGraphsRespGraphs:
 
     @product_type.setter
     def product_type(self, product_type):
-        """Sets the product_type of this ListGraphsRespGraphs.
+        r"""Sets the product_type of this ListGraphsRespGraphs.
 
         图产品类型，取值为InMemory和Persistence，默认为InMemory，当graph_size_type_index取值为\"6\"时，默认为Persistence。  - InMemory：内存版 - Persistence：持久化版
 
@@ -1194,7 +1194,7 @@ class ListGraphsRespGraphs:
 
     @property
     def vertex_id_type(self):
-        """Gets the vertex_id_type of this ListGraphsRespGraphs.
+        r"""Gets the vertex_id_type of this ListGraphsRespGraphs.
 
         :return: The vertex_id_type of this ListGraphsRespGraphs.
         :rtype: :class:`huaweicloudsdkges.v2.ListGraphsRespVertexIdType`
@@ -1203,7 +1203,7 @@ class ListGraphsRespGraphs:
 
     @vertex_id_type.setter
     def vertex_id_type(self, vertex_id_type):
-        """Sets the vertex_id_type of this ListGraphsRespGraphs.
+        r"""Sets the vertex_id_type of this ListGraphsRespGraphs.
 
         :param vertex_id_type: The vertex_id_type of this ListGraphsRespGraphs.
         :type vertex_id_type: :class:`huaweicloudsdkges.v2.ListGraphsRespVertexIdType`
@@ -1212,7 +1212,7 @@ class ListGraphsRespGraphs:
 
     @property
     def origin_graph_size_type_index(self):
-        """Gets the origin_graph_size_type_index of this ListGraphsRespGraphs.
+        r"""Gets the origin_graph_size_type_index of this ListGraphsRespGraphs.
 
         图的初始规格。该参数从2.3.15版本后开始支持。
 
@@ -1223,7 +1223,7 @@ class ListGraphsRespGraphs:
 
     @origin_graph_size_type_index.setter
     def origin_graph_size_type_index(self, origin_graph_size_type_index):
-        """Sets the origin_graph_size_type_index of this ListGraphsRespGraphs.
+        r"""Sets the origin_graph_size_type_index of this ListGraphsRespGraphs.
 
         图的初始规格。该参数从2.3.15版本后开始支持。
 
@@ -1234,7 +1234,7 @@ class ListGraphsRespGraphs:
 
     @property
     def expand_time(self):
-        """Gets the expand_time of this ListGraphsRespGraphs.
+        r"""Gets the expand_time of this ListGraphsRespGraphs.
 
         图扩副本的时间。
 
@@ -1245,7 +1245,7 @@ class ListGraphsRespGraphs:
 
     @expand_time.setter
     def expand_time(self, expand_time):
-        """Sets the expand_time of this ListGraphsRespGraphs.
+        r"""Sets the expand_time of this ListGraphsRespGraphs.
 
         图扩副本的时间。
 
@@ -1256,7 +1256,7 @@ class ListGraphsRespGraphs:
 
     @property
     def resize_time(self):
-        """Gets the resize_time of this ListGraphsRespGraphs.
+        r"""Gets the resize_time of this ListGraphsRespGraphs.
 
         图扩容的时间。
 
@@ -1267,7 +1267,7 @@ class ListGraphsRespGraphs:
 
     @resize_time.setter
     def resize_time(self, resize_time):
-        """Sets the resize_time of this ListGraphsRespGraphs.
+        r"""Sets the resize_time of this ListGraphsRespGraphs.
 
         图扩容的时间。
 
@@ -1278,7 +1278,7 @@ class ListGraphsRespGraphs:
 
     @property
     def enable_multi_label(self):
-        """Gets the enable_multi_label of this ListGraphsRespGraphs.
+        r"""Gets the enable_multi_label of this ListGraphsRespGraphs.
 
         是否启用多标签。
 
@@ -1289,7 +1289,7 @@ class ListGraphsRespGraphs:
 
     @enable_multi_label.setter
     def enable_multi_label(self, enable_multi_label):
-        """Sets the enable_multi_label of this ListGraphsRespGraphs.
+        r"""Sets the enable_multi_label of this ListGraphsRespGraphs.
 
         是否启用多标签。
 
@@ -1300,7 +1300,7 @@ class ListGraphsRespGraphs:
 
     @property
     def capacity_ratio(self):
-        """Gets the capacity_ratio of this ListGraphsRespGraphs.
+        r"""Gets the capacity_ratio of this ListGraphsRespGraphs.
 
         图的容量倍率。只有持久化版百亿规格图支持该参数，该参数从2.3.18版本后开始支持。
 
@@ -1311,7 +1311,7 @@ class ListGraphsRespGraphs:
 
     @capacity_ratio.setter
     def capacity_ratio(self, capacity_ratio):
-        """Sets the capacity_ratio of this ListGraphsRespGraphs.
+        r"""Sets the capacity_ratio of this ListGraphsRespGraphs.
 
         图的容量倍率。只有持久化版百亿规格图支持该参数，该参数从2.3.18版本后开始支持。
 
@@ -1322,7 +1322,7 @@ class ListGraphsRespGraphs:
 
     @property
     def sort_key_type(self):
-        """Gets the sort_key_type of this ListGraphsRespGraphs.
+        r"""Gets the sort_key_type of this ListGraphsRespGraphs.
 
         图的sortKey类型，内存版图无此值。
 
@@ -1333,7 +1333,7 @@ class ListGraphsRespGraphs:
 
     @sort_key_type.setter
     def sort_key_type(self, sort_key_type):
-        """Sets the sort_key_type of this ListGraphsRespGraphs.
+        r"""Sets the sort_key_type of this ListGraphsRespGraphs.
 
         图的sortKey类型，内存版图无此值。
 
@@ -1344,7 +1344,7 @@ class ListGraphsRespGraphs:
 
     @property
     def enable_lts(self):
-        """Gets the enable_lts of this ListGraphsRespGraphs.
+        r"""Gets the enable_lts of this ListGraphsRespGraphs.
 
         对接云服务LTS日志开启状态。  - true：日志对接开启中。 - false：日志对接关闭中。
 
@@ -1355,7 +1355,7 @@ class ListGraphsRespGraphs:
 
     @enable_lts.setter
     def enable_lts(self, enable_lts):
-        """Sets the enable_lts of this ListGraphsRespGraphs.
+        r"""Sets the enable_lts of this ListGraphsRespGraphs.
 
         对接云服务LTS日志开启状态。  - true：日志对接开启中。 - false：日志对接关闭中。
 

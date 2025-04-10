@@ -24,7 +24,7 @@ class ChangeShareNameResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ChangeShareNameResponse
+        r"""ChangeShareNameResponse
 
         The model defined in huaweicloud sdk
 

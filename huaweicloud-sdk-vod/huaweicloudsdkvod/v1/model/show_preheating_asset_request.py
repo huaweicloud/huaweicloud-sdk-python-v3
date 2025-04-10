@@ -25,7 +25,7 @@ class ShowPreheatingAssetRequest:
     }
 
     def __init__(self, task_id=None):
-        """ShowPreheatingAssetRequest
+        r"""ShowPreheatingAssetRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowPreheatingAssetRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowPreheatingAssetRequest.
+        r"""Gets the task_id of this ShowPreheatingAssetRequest.
 
         任务ID
 
@@ -53,7 +53,7 @@ class ShowPreheatingAssetRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowPreheatingAssetRequest.
+        r"""Sets the task_id of this ShowPreheatingAssetRequest.
 
         任务ID
 

@@ -29,7 +29,7 @@ class NodeResult:
     }
 
     def __init__(self, node_id=None, error_message=None, error_code=None):
-        """NodeResult
+        r"""NodeResult
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class NodeResult:
 
     @property
     def node_id(self):
-        """Gets the node_id of this NodeResult.
+        r"""Gets the node_id of this NodeResult.
 
         部署的节点ID
 
@@ -67,7 +67,7 @@ class NodeResult:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this NodeResult.
+        r"""Sets the node_id of this NodeResult.
 
         部署的节点ID
 
@@ -78,7 +78,7 @@ class NodeResult:
 
     @property
     def error_message(self):
-        """Gets the error_message of this NodeResult.
+        r"""Gets the error_message of this NodeResult.
 
         部署到该节点失败时，返回的错误信息
 
@@ -89,7 +89,7 @@ class NodeResult:
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this NodeResult.
+        r"""Sets the error_message of this NodeResult.
 
         部署到该节点失败时，返回的错误信息
 
@@ -100,7 +100,7 @@ class NodeResult:
 
     @property
     def error_code(self):
-        """Gets the error_code of this NodeResult.
+        r"""Gets the error_code of this NodeResult.
 
         部署到该节点失败时，返回的错误码
 
@@ -111,7 +111,7 @@ class NodeResult:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this NodeResult.
+        r"""Sets the error_code of this NodeResult.
 
         部署到该节点失败时，返回的错误码
 

@@ -26,7 +26,7 @@ class CreateNextflowJobResponse(SdkResponse):
     }
 
     def __init__(self, id=None):
-        """CreateNextflowJobResponse
+        r"""CreateNextflowJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateNextflowJobResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateNextflowJobResponse.
+        r"""Gets the id of this CreateNextflowJobResponse.
 
         作业id
 
@@ -55,7 +55,7 @@ class CreateNextflowJobResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateNextflowJobResponse.
+        r"""Sets the id of this CreateNextflowJobResponse.
 
         作业id
 

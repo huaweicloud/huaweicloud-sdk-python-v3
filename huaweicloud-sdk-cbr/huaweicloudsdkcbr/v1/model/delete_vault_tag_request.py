@@ -27,7 +27,7 @@ class DeleteVaultTagRequest:
     }
 
     def __init__(self, key=None, vault_id=None):
-        """DeleteVaultTagRequest
+        r"""DeleteVaultTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteVaultTagRequest:
 
     @property
     def key(self):
-        """Gets the key of this DeleteVaultTagRequest.
+        r"""Gets the key of this DeleteVaultTagRequest.
 
         不能为空或空字符串，不检查长度和字符集，去掉key前后的空格后检查，去掉key前后的空格后使用。 即使底层存在非法的tag也要能删。
 
@@ -59,7 +59,7 @@ class DeleteVaultTagRequest:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this DeleteVaultTagRequest.
+        r"""Sets the key of this DeleteVaultTagRequest.
 
         不能为空或空字符串，不检查长度和字符集，去掉key前后的空格后检查，去掉key前后的空格后使用。 即使底层存在非法的tag也要能删。
 
@@ -70,7 +70,7 @@ class DeleteVaultTagRequest:
 
     @property
     def vault_id(self):
-        """Gets the vault_id of this DeleteVaultTagRequest.
+        r"""Gets the vault_id of this DeleteVaultTagRequest.
 
         资源id
 
@@ -81,7 +81,7 @@ class DeleteVaultTagRequest:
 
     @vault_id.setter
     def vault_id(self, vault_id):
-        """Sets the vault_id of this DeleteVaultTagRequest.
+        r"""Sets the vault_id of this DeleteVaultTagRequest.
 
         资源id
 

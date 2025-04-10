@@ -34,7 +34,7 @@ class UpdateBasicAwByIdResponse(SdkResponse):
     }
 
     def __init__(self, code=None, error=None, reason=None, result=None, status=None):
-        """UpdateBasicAwByIdResponse
+        r"""UpdateBasicAwByIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class UpdateBasicAwByIdResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this UpdateBasicAwByIdResponse.
+        r"""Gets the code of this UpdateBasicAwByIdResponse.
 
         错误码
 
@@ -83,7 +83,7 @@ class UpdateBasicAwByIdResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this UpdateBasicAwByIdResponse.
+        r"""Sets the code of this UpdateBasicAwByIdResponse.
 
         错误码
 
@@ -94,7 +94,7 @@ class UpdateBasicAwByIdResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this UpdateBasicAwByIdResponse.
+        r"""Gets the error of this UpdateBasicAwByIdResponse.
 
         :return: The error of this UpdateBasicAwByIdResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CommonResponseErrorObject`
@@ -103,7 +103,7 @@ class UpdateBasicAwByIdResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this UpdateBasicAwByIdResponse.
+        r"""Sets the error of this UpdateBasicAwByIdResponse.
 
         :param error: The error of this UpdateBasicAwByIdResponse.
         :type error: :class:`huaweicloudsdkcloudtest.v1.CommonResponseErrorObject`
@@ -112,7 +112,7 @@ class UpdateBasicAwByIdResponse(SdkResponse):
 
     @property
     def reason(self):
-        """Gets the reason of this UpdateBasicAwByIdResponse.
+        r"""Gets the reason of this UpdateBasicAwByIdResponse.
 
         失败原因
 
@@ -123,7 +123,7 @@ class UpdateBasicAwByIdResponse(SdkResponse):
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this UpdateBasicAwByIdResponse.
+        r"""Sets the reason of this UpdateBasicAwByIdResponse.
 
         失败原因
 
@@ -134,7 +134,7 @@ class UpdateBasicAwByIdResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this UpdateBasicAwByIdResponse.
+        r"""Gets the result of this UpdateBasicAwByIdResponse.
 
         结果
 
@@ -145,7 +145,7 @@ class UpdateBasicAwByIdResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this UpdateBasicAwByIdResponse.
+        r"""Sets the result of this UpdateBasicAwByIdResponse.
 
         结果
 
@@ -156,7 +156,7 @@ class UpdateBasicAwByIdResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateBasicAwByIdResponse.
+        r"""Gets the status of this UpdateBasicAwByIdResponse.
 
         状态
 
@@ -167,7 +167,7 @@ class UpdateBasicAwByIdResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateBasicAwByIdResponse.
+        r"""Sets the status of this UpdateBasicAwByIdResponse.
 
         状态
 

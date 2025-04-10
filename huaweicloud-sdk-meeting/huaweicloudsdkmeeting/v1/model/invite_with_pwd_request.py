@@ -27,7 +27,7 @@ class InviteWithPwdRequest:
     }
 
     def __init__(self, conference_id=None, body=None):
-        """InviteWithPwdRequest
+        r"""InviteWithPwdRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class InviteWithPwdRequest:
 
     @property
     def conference_id(self):
-        """Gets the conference_id of this InviteWithPwdRequest.
+        r"""Gets the conference_id of this InviteWithPwdRequest.
 
         会议ID。
 
@@ -60,7 +60,7 @@ class InviteWithPwdRequest:
 
     @conference_id.setter
     def conference_id(self, conference_id):
-        """Sets the conference_id of this InviteWithPwdRequest.
+        r"""Sets the conference_id of this InviteWithPwdRequest.
 
         会议ID。
 
@@ -71,7 +71,7 @@ class InviteWithPwdRequest:
 
     @property
     def body(self):
-        """Gets the body of this InviteWithPwdRequest.
+        r"""Gets the body of this InviteWithPwdRequest.
 
         :return: The body of this InviteWithPwdRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RestInviteWithPwdReqBody`
@@ -80,7 +80,7 @@ class InviteWithPwdRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this InviteWithPwdRequest.
+        r"""Sets the body of this InviteWithPwdRequest.
 
         :param body: The body of this InviteWithPwdRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.RestInviteWithPwdReqBody`

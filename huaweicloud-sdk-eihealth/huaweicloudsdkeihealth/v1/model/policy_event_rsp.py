@@ -29,7 +29,7 @@ class PolicyEventRsp:
     }
 
     def __init__(self, time=None, name=None, event_type=None):
-        """PolicyEventRsp
+        r"""PolicyEventRsp
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class PolicyEventRsp:
 
     @property
     def time(self):
-        """Gets the time of this PolicyEventRsp.
+        r"""Gets the time of this PolicyEventRsp.
 
         事件产生时间
 
@@ -65,7 +65,7 @@ class PolicyEventRsp:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this PolicyEventRsp.
+        r"""Sets the time of this PolicyEventRsp.
 
         事件产生时间
 
@@ -76,7 +76,7 @@ class PolicyEventRsp:
 
     @property
     def name(self):
-        """Gets the name of this PolicyEventRsp.
+        r"""Gets the name of this PolicyEventRsp.
 
         事件名称
 
@@ -87,7 +87,7 @@ class PolicyEventRsp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PolicyEventRsp.
+        r"""Sets the name of this PolicyEventRsp.
 
         事件名称
 
@@ -98,7 +98,7 @@ class PolicyEventRsp:
 
     @property
     def event_type(self):
-        """Gets the event_type of this PolicyEventRsp.
+        r"""Gets the event_type of this PolicyEventRsp.
 
         事件类型
 
@@ -109,7 +109,7 @@ class PolicyEventRsp:
 
     @event_type.setter
     def event_type(self, event_type):
-        """Sets the event_type of this PolicyEventRsp.
+        r"""Sets the event_type of this PolicyEventRsp.
 
         事件类型
 

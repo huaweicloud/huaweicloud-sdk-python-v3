@@ -33,7 +33,7 @@ class AppDetail:
     }
 
     def __init__(self, name=None, alias=None, description=None, icon_url=None, tags=None):
-        """AppDetail
+        r"""AppDetail
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class AppDetail:
 
     @property
     def name(self):
-        """Gets the name of this AppDetail.
+        r"""Gets the name of this AppDetail.
 
         应用模板名称，只允许英文小写字母、数字、中划线，最大长度32， 英文小写字母或数字开头和结尾 Name为必填字段
 
@@ -81,7 +81,7 @@ class AppDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AppDetail.
+        r"""Sets the name of this AppDetail.
 
         应用模板名称，只允许英文小写字母、数字、中划线，最大长度32， 英文小写字母或数字开头和结尾 Name为必填字段
 
@@ -92,7 +92,7 @@ class AppDetail:
 
     @property
     def alias(self):
-        """Gets the alias of this AppDetail.
+        r"""Gets the alias of this AppDetail.
 
         应用模板别名，中文英文字母、数字、中划线、下划线，最大64字符
 
@@ -103,7 +103,7 @@ class AppDetail:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this AppDetail.
+        r"""Sets the alias of this AppDetail.
 
         应用模板别名，中文英文字母、数字、中划线、下划线，最大64字符
 
@@ -114,7 +114,7 @@ class AppDetail:
 
     @property
     def description(self):
-        """Gets the description of this AppDetail.
+        r"""Gets the description of this AppDetail.
 
         应用模板描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -125,7 +125,7 @@ class AppDetail:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AppDetail.
+        r"""Sets the description of this AppDetail.
 
         应用模板描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -136,7 +136,7 @@ class AppDetail:
 
     @property
     def icon_url(self):
-        """Gets the icon_url of this AppDetail.
+        r"""Gets the icon_url of this AppDetail.
 
         应用图标存储url地址，最大长度2083
 
@@ -147,7 +147,7 @@ class AppDetail:
 
     @icon_url.setter
     def icon_url(self, icon_url):
-        """Sets the icon_url of this AppDetail.
+        r"""Sets the icon_url of this AppDetail.
 
         应用图标存储url地址，最大长度2083
 
@@ -158,7 +158,7 @@ class AppDetail:
 
     @property
     def tags(self):
-        """Gets the tags of this AppDetail.
+        r"""Gets the tags of this AppDetail.
 
         应用模板标签
 
@@ -169,7 +169,7 @@ class AppDetail:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this AppDetail.
+        r"""Sets the tags of this AppDetail.
 
         应用模板标签
 

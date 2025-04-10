@@ -27,7 +27,7 @@ class GroupedResourceCount:
     }
 
     def __init__(self, group_name=None, resource_count=None):
-        """GroupedResourceCount
+        r"""GroupedResourceCount
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class GroupedResourceCount:
 
     @property
     def group_name(self):
-        """Gets the group_name of this GroupedResourceCount.
+        r"""Gets the group_name of this GroupedResourceCount.
 
         分组名称。
 
@@ -61,7 +61,7 @@ class GroupedResourceCount:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this GroupedResourceCount.
+        r"""Sets the group_name of this GroupedResourceCount.
 
         分组名称。
 
@@ -72,7 +72,7 @@ class GroupedResourceCount:
 
     @property
     def resource_count(self):
-        """Gets the resource_count of this GroupedResourceCount.
+        r"""Gets the resource_count of this GroupedResourceCount.
 
         资源数量。
 
@@ -83,7 +83,7 @@ class GroupedResourceCount:
 
     @resource_count.setter
     def resource_count(self, resource_count):
-        """Sets the resource_count of this GroupedResourceCount.
+        r"""Sets the resource_count of this GroupedResourceCount.
 
         资源数量。
 

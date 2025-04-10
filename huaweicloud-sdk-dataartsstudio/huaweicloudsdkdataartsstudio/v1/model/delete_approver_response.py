@@ -26,7 +26,7 @@ class DeleteApproverResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """DeleteApproverResponse
+        r"""DeleteApproverResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteApproverResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this DeleteApproverResponse.
+        r"""Gets the data of this DeleteApproverResponse.
 
         :return: The data of this DeleteApproverResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteResultData`
@@ -53,7 +53,7 @@ class DeleteApproverResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this DeleteApproverResponse.
+        r"""Sets the data of this DeleteApproverResponse.
 
         :param data: The data of this DeleteApproverResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.DeleteResultData`

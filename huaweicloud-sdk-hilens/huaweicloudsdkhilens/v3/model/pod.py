@@ -51,7 +51,7 @@ class Pod:
     }
 
     def __init__(self, configs=None, reason=None, host_ip=None, created_at=None, cluster_id=None, updated_at=None, project_id=None, name=None, id=None, deployment_id=None, affinity=None, apps=None, node_id=None, status=None):
-        """Pod
+        r"""Pod
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class Pod:
 
     @property
     def configs(self):
-        """Gets the configs of this Pod.
+        r"""Gets the configs of this Pod.
 
         :return: The configs of this Pod.
         :rtype: :class:`huaweicloudsdkhilens.v3.PodConfig`
@@ -143,7 +143,7 @@ class Pod:
 
     @configs.setter
     def configs(self, configs):
-        """Sets the configs of this Pod.
+        r"""Sets the configs of this Pod.
 
         :param configs: The configs of this Pod.
         :type configs: :class:`huaweicloudsdkhilens.v3.PodConfig`
@@ -152,7 +152,7 @@ class Pod:
 
     @property
     def reason(self):
-        """Gets the reason of this Pod.
+        r"""Gets the reason of this Pod.
 
         部署失败的原因
 
@@ -163,7 +163,7 @@ class Pod:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this Pod.
+        r"""Sets the reason of this Pod.
 
         部署失败的原因
 
@@ -174,7 +174,7 @@ class Pod:
 
     @property
     def host_ip(self):
-        """Gets the host_ip of this Pod.
+        r"""Gets the host_ip of this Pod.
 
         对应网卡地址
 
@@ -185,7 +185,7 @@ class Pod:
 
     @host_ip.setter
     def host_ip(self, host_ip):
-        """Sets the host_ip of this Pod.
+        r"""Sets the host_ip of this Pod.
 
         对应网卡地址
 
@@ -196,7 +196,7 @@ class Pod:
 
     @property
     def created_at(self):
-        """Gets the created_at of this Pod.
+        r"""Gets the created_at of this Pod.
 
         创建时间
 
@@ -207,7 +207,7 @@ class Pod:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Pod.
+        r"""Sets the created_at of this Pod.
 
         创建时间
 
@@ -218,7 +218,7 @@ class Pod:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this Pod.
+        r"""Gets the cluster_id of this Pod.
 
         集群ID
 
@@ -229,7 +229,7 @@ class Pod:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this Pod.
+        r"""Sets the cluster_id of this Pod.
 
         集群ID
 
@@ -240,7 +240,7 @@ class Pod:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this Pod.
+        r"""Gets the updated_at of this Pod.
 
         更新时间
 
@@ -251,7 +251,7 @@ class Pod:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this Pod.
+        r"""Sets the updated_at of this Pod.
 
         更新时间
 
@@ -262,7 +262,7 @@ class Pod:
 
     @property
     def project_id(self):
-        """Gets the project_id of this Pod.
+        r"""Gets the project_id of this Pod.
 
         项目ID
 
@@ -273,7 +273,7 @@ class Pod:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this Pod.
+        r"""Sets the project_id of this Pod.
 
         项目ID
 
@@ -284,7 +284,7 @@ class Pod:
 
     @property
     def name(self):
-        """Gets the name of this Pod.
+        r"""Gets the name of this Pod.
 
         实例名字
 
@@ -295,7 +295,7 @@ class Pod:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Pod.
+        r"""Sets the name of this Pod.
 
         实例名字
 
@@ -306,7 +306,7 @@ class Pod:
 
     @property
     def id(self):
-        """Gets the id of this Pod.
+        r"""Gets the id of this Pod.
 
         实例ID
 
@@ -317,7 +317,7 @@ class Pod:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Pod.
+        r"""Sets the id of this Pod.
 
         实例ID
 
@@ -328,7 +328,7 @@ class Pod:
 
     @property
     def deployment_id(self):
-        """Gets the deployment_id of this Pod.
+        r"""Gets the deployment_id of this Pod.
 
         部署ID
 
@@ -339,7 +339,7 @@ class Pod:
 
     @deployment_id.setter
     def deployment_id(self, deployment_id):
-        """Sets the deployment_id of this Pod.
+        r"""Sets the deployment_id of this Pod.
 
         部署ID
 
@@ -350,7 +350,7 @@ class Pod:
 
     @property
     def affinity(self):
-        """Gets the affinity of this Pod.
+        r"""Gets the affinity of this Pod.
 
         :return: The affinity of this Pod.
         :rtype: :class:`huaweicloudsdkhilens.v3.PodAffinity`
@@ -359,7 +359,7 @@ class Pod:
 
     @affinity.setter
     def affinity(self, affinity):
-        """Sets the affinity of this Pod.
+        r"""Sets the affinity of this Pod.
 
         :param affinity: The affinity of this Pod.
         :type affinity: :class:`huaweicloudsdkhilens.v3.PodAffinity`
@@ -368,7 +368,7 @@ class Pod:
 
     @property
     def apps(self):
-        """Gets the apps of this Pod.
+        r"""Gets the apps of this Pod.
 
         应用部署信息
 
@@ -379,7 +379,7 @@ class Pod:
 
     @apps.setter
     def apps(self, apps):
-        """Sets the apps of this Pod.
+        r"""Sets the apps of this Pod.
 
         应用部署信息
 
@@ -390,7 +390,7 @@ class Pod:
 
     @property
     def node_id(self):
-        """Gets the node_id of this Pod.
+        r"""Gets the node_id of this Pod.
 
         节点ID
 
@@ -401,7 +401,7 @@ class Pod:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this Pod.
+        r"""Sets the node_id of this Pod.
 
         节点ID
 
@@ -412,7 +412,7 @@ class Pod:
 
     @property
     def status(self):
-        """Gets the status of this Pod.
+        r"""Gets the status of this Pod.
 
         状态，状态包括，Pending，表示挂起，Running表示pod已经被调到到某节点，Succeeded表示Pod已经被成功终止，Failed表示左右容器都已终止，Unkonwn表示无法取得Pod状态
 
@@ -423,7 +423,7 @@ class Pod:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Pod.
+        r"""Sets the status of this Pod.
 
         状态，状态包括，Pending，表示挂起，Running表示pod已经被调到到某节点，Succeeded表示Pod已经被成功终止，Failed表示左右容器都已终止，Unkonwn表示无法取得Pod状态
 

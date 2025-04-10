@@ -24,7 +24,7 @@ class DisableTrustedServiceResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DisableTrustedServiceResponse
+        r"""DisableTrustedServiceResponse
 
         The model defined in huaweicloud sdk
 

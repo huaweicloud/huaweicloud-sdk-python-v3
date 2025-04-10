@@ -23,7 +23,7 @@ class ConditionKey:
     }
 
     def __init__(self):
-        """ConditionKey
+        r"""ConditionKey
 
         The model defined in huaweicloud sdk
 

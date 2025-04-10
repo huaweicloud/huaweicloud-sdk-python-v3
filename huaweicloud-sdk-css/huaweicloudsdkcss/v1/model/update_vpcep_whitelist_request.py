@@ -27,7 +27,7 @@ class UpdateVpcepWhitelistRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """UpdateVpcepWhitelistRequest
+        r"""UpdateVpcepWhitelistRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateVpcepWhitelistRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdateVpcepWhitelistRequest.
+        r"""Gets the cluster_id of this UpdateVpcepWhitelistRequest.
 
         指定待更改的集群ID。
 
@@ -60,7 +60,7 @@ class UpdateVpcepWhitelistRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdateVpcepWhitelistRequest.
+        r"""Sets the cluster_id of this UpdateVpcepWhitelistRequest.
 
         指定待更改的集群ID。
 
@@ -71,7 +71,7 @@ class UpdateVpcepWhitelistRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateVpcepWhitelistRequest.
+        r"""Gets the body of this UpdateVpcepWhitelistRequest.
 
         :return: The body of this UpdateVpcepWhitelistRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateVpcepWhitelistReq`
@@ -80,7 +80,7 @@ class UpdateVpcepWhitelistRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateVpcepWhitelistRequest.
+        r"""Sets the body of this UpdateVpcepWhitelistRequest.
 
         :param body: The body of this UpdateVpcepWhitelistRequest.
         :type body: :class:`huaweicloudsdkcss.v1.UpdateVpcepWhitelistReq`

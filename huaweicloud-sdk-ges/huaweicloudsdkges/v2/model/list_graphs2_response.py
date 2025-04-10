@@ -28,7 +28,7 @@ class ListGraphs2Response(SdkResponse):
     }
 
     def __init__(self, graph_count=None, graphs=None):
-        """ListGraphs2Response
+        r"""ListGraphs2Response
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListGraphs2Response(SdkResponse):
 
     @property
     def graph_count(self):
-        """Gets the graph_count of this ListGraphs2Response.
+        r"""Gets the graph_count of this ListGraphs2Response.
 
         图总个数。请求失败时为空。
 
@@ -62,7 +62,7 @@ class ListGraphs2Response(SdkResponse):
 
     @graph_count.setter
     def graph_count(self, graph_count):
-        """Sets the graph_count of this ListGraphs2Response.
+        r"""Sets the graph_count of this ListGraphs2Response.
 
         图总个数。请求失败时为空。
 
@@ -73,7 +73,7 @@ class ListGraphs2Response(SdkResponse):
 
     @property
     def graphs(self):
-        """Gets the graphs of this ListGraphs2Response.
+        r"""Gets the graphs of this ListGraphs2Response.
 
         图列表。请求失败时为空。
 
@@ -84,7 +84,7 @@ class ListGraphs2Response(SdkResponse):
 
     @graphs.setter
     def graphs(self, graphs):
-        """Sets the graphs of this ListGraphs2Response.
+        r"""Sets the graphs of this ListGraphs2Response.
 
         图列表。请求失败时为空。
 

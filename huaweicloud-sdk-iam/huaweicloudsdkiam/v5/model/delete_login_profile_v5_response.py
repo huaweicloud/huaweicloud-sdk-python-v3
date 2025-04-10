@@ -24,7 +24,7 @@ class DeleteLoginProfileV5Response(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteLoginProfileV5Response
+        r"""DeleteLoginProfileV5Response
 
         The model defined in huaweicloud sdk
 

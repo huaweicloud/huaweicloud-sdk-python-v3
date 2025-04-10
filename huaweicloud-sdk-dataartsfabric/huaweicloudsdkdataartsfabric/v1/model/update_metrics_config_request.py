@@ -27,7 +27,7 @@ class UpdateMetricsConfigRequest:
     }
 
     def __init__(self, workspace_id=None, body=None):
-        """UpdateMetricsConfigRequest
+        r"""UpdateMetricsConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateMetricsConfigRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this UpdateMetricsConfigRequest.
+        r"""Gets the workspace_id of this UpdateMetricsConfigRequest.
 
         Workspace的ID
 
@@ -60,7 +60,7 @@ class UpdateMetricsConfigRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this UpdateMetricsConfigRequest.
+        r"""Sets the workspace_id of this UpdateMetricsConfigRequest.
 
         Workspace的ID
 
@@ -71,7 +71,7 @@ class UpdateMetricsConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateMetricsConfigRequest.
+        r"""Gets the body of this UpdateMetricsConfigRequest.
 
         :return: The body of this UpdateMetricsConfigRequest.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.UpdateMetricsConfigInput`
@@ -80,7 +80,7 @@ class UpdateMetricsConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateMetricsConfigRequest.
+        r"""Sets the body of this UpdateMetricsConfigRequest.
 
         :param body: The body of this UpdateMetricsConfigRequest.
         :type body: :class:`huaweicloudsdkdataartsfabric.v1.UpdateMetricsConfigInput`

@@ -27,7 +27,7 @@ class BatchCreateDeleteTransitIpTagsRequest:
     }
 
     def __init__(self, resource_id=None, body=None):
-        """BatchCreateDeleteTransitIpTagsRequest
+        r"""BatchCreateDeleteTransitIpTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchCreateDeleteTransitIpTagsRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this BatchCreateDeleteTransitIpTagsRequest.
+        r"""Gets the resource_id of this BatchCreateDeleteTransitIpTagsRequest.
 
         中转IP的ID。
 
@@ -60,7 +60,7 @@ class BatchCreateDeleteTransitIpTagsRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this BatchCreateDeleteTransitIpTagsRequest.
+        r"""Sets the resource_id of this BatchCreateDeleteTransitIpTagsRequest.
 
         中转IP的ID。
 
@@ -71,7 +71,7 @@ class BatchCreateDeleteTransitIpTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateDeleteTransitIpTagsRequest.
+        r"""Gets the body of this BatchCreateDeleteTransitIpTagsRequest.
 
         :return: The body of this BatchCreateDeleteTransitIpTagsRequest.
         :rtype: :class:`huaweicloudsdknat.v2.BatchOperateResourceTagsRequestBody`
@@ -80,7 +80,7 @@ class BatchCreateDeleteTransitIpTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateDeleteTransitIpTagsRequest.
+        r"""Sets the body of this BatchCreateDeleteTransitIpTagsRequest.
 
         :param body: The body of this BatchCreateDeleteTransitIpTagsRequest.
         :type body: :class:`huaweicloudsdknat.v2.BatchOperateResourceTagsRequestBody`

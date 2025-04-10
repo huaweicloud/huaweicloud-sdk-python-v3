@@ -25,7 +25,7 @@ class ListProjectTagsRequest:
     }
 
     def __init__(self, resource_type=None):
-        """ListProjectTagsRequest
+        r"""ListProjectTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListProjectTagsRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ListProjectTagsRequest.
+        r"""Gets the resource_type of this ListProjectTagsRequest.
 
         - 专线服务资源类型，包括dc-directconnect/dc-vgw/dc-vif - dc-directconnect: 专线物理连接 - dc-vgw： 虚拟网关 - dc-vif： 虚拟接口
 
@@ -53,7 +53,7 @@ class ListProjectTagsRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ListProjectTagsRequest.
+        r"""Sets the resource_type of this ListProjectTagsRequest.
 
         - 专线服务资源类型，包括dc-directconnect/dc-vgw/dc-vif - dc-directconnect: 专线物理连接 - dc-vgw： 虚拟网关 - dc-vif： 虚拟接口
 

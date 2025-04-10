@@ -29,7 +29,7 @@ class ChangeIpsProtectModeRequest:
     }
 
     def __init__(self, enterprise_project_id=None, fw_instance_id=None, body=None):
-        """ChangeIpsProtectModeRequest
+        r"""ChangeIpsProtectModeRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ChangeIpsProtectModeRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ChangeIpsProtectModeRequest.
+        r"""Gets the enterprise_project_id of this ChangeIpsProtectModeRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -68,7 +68,7 @@ class ChangeIpsProtectModeRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ChangeIpsProtectModeRequest.
+        r"""Sets the enterprise_project_id of this ChangeIpsProtectModeRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -79,7 +79,7 @@ class ChangeIpsProtectModeRequest:
 
     @property
     def fw_instance_id(self):
-        """Gets the fw_instance_id of this ChangeIpsProtectModeRequest.
+        r"""Gets the fw_instance_id of this ChangeIpsProtectModeRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -90,7 +90,7 @@ class ChangeIpsProtectModeRequest:
 
     @fw_instance_id.setter
     def fw_instance_id(self, fw_instance_id):
-        """Sets the fw_instance_id of this ChangeIpsProtectModeRequest.
+        r"""Sets the fw_instance_id of this ChangeIpsProtectModeRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -101,7 +101,7 @@ class ChangeIpsProtectModeRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeIpsProtectModeRequest.
+        r"""Gets the body of this ChangeIpsProtectModeRequest.
 
         :return: The body of this ChangeIpsProtectModeRequest.
         :rtype: :class:`huaweicloudsdkcfw.v1.IpsProtectDTO`
@@ -110,7 +110,7 @@ class ChangeIpsProtectModeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeIpsProtectModeRequest.
+        r"""Sets the body of this ChangeIpsProtectModeRequest.
 
         :param body: The body of this ChangeIpsProtectModeRequest.
         :type body: :class:`huaweicloudsdkcfw.v1.IpsProtectDTO`

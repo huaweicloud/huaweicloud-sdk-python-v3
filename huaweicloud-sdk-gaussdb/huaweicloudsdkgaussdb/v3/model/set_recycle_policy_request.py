@@ -27,7 +27,7 @@ class SetRecyclePolicyRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """SetRecyclePolicyRequest
+        r"""SetRecyclePolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SetRecyclePolicyRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this SetRecyclePolicyRequest.
+        r"""Gets the x_language of this SetRecyclePolicyRequest.
 
         语言。
 
@@ -61,7 +61,7 @@ class SetRecyclePolicyRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this SetRecyclePolicyRequest.
+        r"""Sets the x_language of this SetRecyclePolicyRequest.
 
         语言。
 
@@ -72,7 +72,7 @@ class SetRecyclePolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetRecyclePolicyRequest.
+        r"""Gets the body of this SetRecyclePolicyRequest.
 
         :return: The body of this SetRecyclePolicyRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.SetRecyclePolicyRequestBody`
@@ -81,7 +81,7 @@ class SetRecyclePolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetRecyclePolicyRequest.
+        r"""Sets the body of this SetRecyclePolicyRequest.
 
         :param body: The body of this SetRecyclePolicyRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.SetRecyclePolicyRequestBody`

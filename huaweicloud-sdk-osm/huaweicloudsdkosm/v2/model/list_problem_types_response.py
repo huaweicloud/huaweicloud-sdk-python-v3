@@ -28,7 +28,7 @@ class ListProblemTypesResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, incident_business_type_list=None):
-        """ListProblemTypesResponse
+        r"""ListProblemTypesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListProblemTypesResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListProblemTypesResponse.
+        r"""Gets the total_count of this ListProblemTypesResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class ListProblemTypesResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListProblemTypesResponse.
+        r"""Sets the total_count of this ListProblemTypesResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class ListProblemTypesResponse(SdkResponse):
 
     @property
     def incident_business_type_list(self):
-        """Gets the incident_business_type_list of this ListProblemTypesResponse.
+        r"""Gets the incident_business_type_list of this ListProblemTypesResponse.
 
         问题类型列表
 
@@ -84,7 +84,7 @@ class ListProblemTypesResponse(SdkResponse):
 
     @incident_business_type_list.setter
     def incident_business_type_list(self, incident_business_type_list):
-        """Sets the incident_business_type_list of this ListProblemTypesResponse.
+        r"""Sets the incident_business_type_list of this ListProblemTypesResponse.
 
         问题类型列表
 

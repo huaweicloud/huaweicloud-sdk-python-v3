@@ -41,7 +41,7 @@ class CreateTableRequestBody:
     }
 
     def __init__(self, table_name=None, bill_mode=None, provisioned_throughput=None, primary_key_schema=None, local_secondary_index_schema=None, global_secondary_index_schema=None, pre_split_key_options=None, ttl_specification=None, sse_specification=None):
-        """CreateTableRequestBody
+        r"""CreateTableRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -97,7 +97,7 @@ class CreateTableRequestBody:
 
     @property
     def table_name(self):
-        """Gets the table_name of this CreateTableRequestBody.
+        r"""Gets the table_name of this CreateTableRequestBody.
 
         表名，仓内唯一。
 
@@ -108,7 +108,7 @@ class CreateTableRequestBody:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this CreateTableRequestBody.
+        r"""Sets the table_name of this CreateTableRequestBody.
 
         表名，仓内唯一。
 
@@ -119,7 +119,7 @@ class CreateTableRequestBody:
 
     @property
     def bill_mode(self):
-        """Gets the bill_mode of this CreateTableRequestBody.
+        r"""Gets the bill_mode of this CreateTableRequestBody.
 
         表计费模式，可为\"provisioned\"或\"on_demand\" - 预置模式：provisioned - 按需模式：on_demand
 
@@ -130,7 +130,7 @@ class CreateTableRequestBody:
 
     @bill_mode.setter
     def bill_mode(self, bill_mode):
-        """Sets the bill_mode of this CreateTableRequestBody.
+        r"""Sets the bill_mode of this CreateTableRequestBody.
 
         表计费模式，可为\"provisioned\"或\"on_demand\" - 预置模式：provisioned - 按需模式：on_demand
 
@@ -141,7 +141,7 @@ class CreateTableRequestBody:
 
     @property
     def provisioned_throughput(self):
-        """Gets the provisioned_throughput of this CreateTableRequestBody.
+        r"""Gets the provisioned_throughput of this CreateTableRequestBody.
 
         :return: The provisioned_throughput of this CreateTableRequestBody.
         :rtype: :class:`huaweicloudsdkkvs.v1.ProvisionedThroughput`
@@ -150,7 +150,7 @@ class CreateTableRequestBody:
 
     @provisioned_throughput.setter
     def provisioned_throughput(self, provisioned_throughput):
-        """Sets the provisioned_throughput of this CreateTableRequestBody.
+        r"""Sets the provisioned_throughput of this CreateTableRequestBody.
 
         :param provisioned_throughput: The provisioned_throughput of this CreateTableRequestBody.
         :type provisioned_throughput: :class:`huaweicloudsdkkvs.v1.ProvisionedThroughput`
@@ -159,7 +159,7 @@ class CreateTableRequestBody:
 
     @property
     def primary_key_schema(self):
-        """Gets the primary_key_schema of this CreateTableRequestBody.
+        r"""Gets the primary_key_schema of this CreateTableRequestBody.
 
         :return: The primary_key_schema of this CreateTableRequestBody.
         :rtype: :class:`huaweicloudsdkkvs.v1.PrimaryKeySchema`
@@ -168,7 +168,7 @@ class CreateTableRequestBody:
 
     @primary_key_schema.setter
     def primary_key_schema(self, primary_key_schema):
-        """Sets the primary_key_schema of this CreateTableRequestBody.
+        r"""Sets the primary_key_schema of this CreateTableRequestBody.
 
         :param primary_key_schema: The primary_key_schema of this CreateTableRequestBody.
         :type primary_key_schema: :class:`huaweicloudsdkkvs.v1.PrimaryKeySchema`
@@ -177,7 +177,7 @@ class CreateTableRequestBody:
 
     @property
     def local_secondary_index_schema(self):
-        """Gets the local_secondary_index_schema of this CreateTableRequestBody.
+        r"""Gets the local_secondary_index_schema of this CreateTableRequestBody.
 
         本地二级索引模板，可以多个。
 
@@ -188,7 +188,7 @@ class CreateTableRequestBody:
 
     @local_secondary_index_schema.setter
     def local_secondary_index_schema(self, local_secondary_index_schema):
-        """Sets the local_secondary_index_schema of this CreateTableRequestBody.
+        r"""Sets the local_secondary_index_schema of this CreateTableRequestBody.
 
         本地二级索引模板，可以多个。
 
@@ -199,7 +199,7 @@ class CreateTableRequestBody:
 
     @property
     def global_secondary_index_schema(self):
-        """Gets the global_secondary_index_schema of this CreateTableRequestBody.
+        r"""Gets the global_secondary_index_schema of this CreateTableRequestBody.
 
         全局二级索引模板。
 
@@ -210,7 +210,7 @@ class CreateTableRequestBody:
 
     @global_secondary_index_schema.setter
     def global_secondary_index_schema(self, global_secondary_index_schema):
-        """Sets the global_secondary_index_schema of this CreateTableRequestBody.
+        r"""Sets the global_secondary_index_schema of this CreateTableRequestBody.
 
         全局二级索引模板。
 
@@ -221,7 +221,7 @@ class CreateTableRequestBody:
 
     @property
     def pre_split_key_options(self):
-        """Gets the pre_split_key_options of this CreateTableRequestBody.
+        r"""Gets the pre_split_key_options of this CreateTableRequestBody.
 
         :return: The pre_split_key_options of this CreateTableRequestBody.
         :rtype: :class:`huaweicloudsdkkvs.v1.PreSplitKeyOptions`
@@ -230,7 +230,7 @@ class CreateTableRequestBody:
 
     @pre_split_key_options.setter
     def pre_split_key_options(self, pre_split_key_options):
-        """Sets the pre_split_key_options of this CreateTableRequestBody.
+        r"""Sets the pre_split_key_options of this CreateTableRequestBody.
 
         :param pre_split_key_options: The pre_split_key_options of this CreateTableRequestBody.
         :type pre_split_key_options: :class:`huaweicloudsdkkvs.v1.PreSplitKeyOptions`
@@ -239,7 +239,7 @@ class CreateTableRequestBody:
 
     @property
     def ttl_specification(self):
-        """Gets the ttl_specification of this CreateTableRequestBody.
+        r"""Gets the ttl_specification of this CreateTableRequestBody.
 
         :return: The ttl_specification of this CreateTableRequestBody.
         :rtype: :class:`huaweicloudsdkkvs.v1.TtlSpecification`
@@ -248,7 +248,7 @@ class CreateTableRequestBody:
 
     @ttl_specification.setter
     def ttl_specification(self, ttl_specification):
-        """Sets the ttl_specification of this CreateTableRequestBody.
+        r"""Sets the ttl_specification of this CreateTableRequestBody.
 
         :param ttl_specification: The ttl_specification of this CreateTableRequestBody.
         :type ttl_specification: :class:`huaweicloudsdkkvs.v1.TtlSpecification`
@@ -257,7 +257,7 @@ class CreateTableRequestBody:
 
     @property
     def sse_specification(self):
-        """Gets the sse_specification of this CreateTableRequestBody.
+        r"""Gets the sse_specification of this CreateTableRequestBody.
 
         :return: The sse_specification of this CreateTableRequestBody.
         :rtype: :class:`huaweicloudsdkkvs.v1.SseSpecification`
@@ -266,7 +266,7 @@ class CreateTableRequestBody:
 
     @sse_specification.setter
     def sse_specification(self, sse_specification):
-        """Sets the sse_specification of this CreateTableRequestBody.
+        r"""Sets the sse_specification of this CreateTableRequestBody.
 
         :param sse_specification: The sse_specification of this CreateTableRequestBody.
         :type sse_specification: :class:`huaweicloudsdkkvs.v1.SseSpecification`

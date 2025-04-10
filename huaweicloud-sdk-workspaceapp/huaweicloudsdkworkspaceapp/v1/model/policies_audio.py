@@ -33,7 +33,7 @@ class PoliciesAudio:
     }
 
     def __init__(self, audio_redirection_enable=None, play_redirection_enable=None, play_classification=None, record_redirection_enable=None, record_classification=None):
-        """PoliciesAudio
+        r"""PoliciesAudio
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class PoliciesAudio:
 
     @property
     def audio_redirection_enable(self):
-        """Gets the audio_redirection_enable of this PoliciesAudio.
+        r"""Gets the audio_redirection_enable of this PoliciesAudio.
 
         是否开启音频重定向。取值为： false：表示关闭。 true：表示开启。
 
@@ -82,7 +82,7 @@ class PoliciesAudio:
 
     @audio_redirection_enable.setter
     def audio_redirection_enable(self, audio_redirection_enable):
-        """Sets the audio_redirection_enable of this PoliciesAudio.
+        r"""Sets the audio_redirection_enable of this PoliciesAudio.
 
         是否开启音频重定向。取值为： false：表示关闭。 true：表示开启。
 
@@ -93,7 +93,7 @@ class PoliciesAudio:
 
     @property
     def play_redirection_enable(self):
-        """Gets the play_redirection_enable of this PoliciesAudio.
+        r"""Gets the play_redirection_enable of this PoliciesAudio.
 
         是否开启播音重定向。取值为： false：表示关闭。 true：表示开启。
 
@@ -104,7 +104,7 @@ class PoliciesAudio:
 
     @play_redirection_enable.setter
     def play_redirection_enable(self, play_redirection_enable):
-        """Sets the play_redirection_enable of this PoliciesAudio.
+        r"""Sets the play_redirection_enable of this PoliciesAudio.
 
         是否开启播音重定向。取值为： false：表示关闭。 true：表示开启。
 
@@ -115,7 +115,7 @@ class PoliciesAudio:
 
     @property
     def play_classification(self):
-        """Gets the play_classification of this PoliciesAudio.
+        r"""Gets the play_classification of this PoliciesAudio.
 
         播音场景。取值为： 无损播音：LossLess。 语音通话：Speech Call。 音乐播音：Music Play。 自动识别：Automatic Identification。
 
@@ -126,7 +126,7 @@ class PoliciesAudio:
 
     @play_classification.setter
     def play_classification(self, play_classification):
-        """Sets the play_classification of this PoliciesAudio.
+        r"""Sets the play_classification of this PoliciesAudio.
 
         播音场景。取值为： 无损播音：LossLess。 语音通话：Speech Call。 音乐播音：Music Play。 自动识别：Automatic Identification。
 
@@ -137,7 +137,7 @@ class PoliciesAudio:
 
     @property
     def record_redirection_enable(self):
-        """Gets the record_redirection_enable of this PoliciesAudio.
+        r"""Gets the record_redirection_enable of this PoliciesAudio.
 
         是否开启录音重定向。取值为： false：表示关闭。 true：表示开启。
 
@@ -148,7 +148,7 @@ class PoliciesAudio:
 
     @record_redirection_enable.setter
     def record_redirection_enable(self, record_redirection_enable):
-        """Sets the record_redirection_enable of this PoliciesAudio.
+        r"""Sets the record_redirection_enable of this PoliciesAudio.
 
         是否开启录音重定向。取值为： false：表示关闭。 true：表示开启。
 
@@ -159,7 +159,7 @@ class PoliciesAudio:
 
     @property
     def record_classification(self):
-        """Gets the record_classification of this PoliciesAudio.
+        r"""Gets the record_classification of this PoliciesAudio.
 
         录音场景。取值为： 无损录音：LossLess。 语音通话：Speech Call。 音乐录音：Music Record。 自动识别：Automatic Identification。
 
@@ -170,7 +170,7 @@ class PoliciesAudio:
 
     @record_classification.setter
     def record_classification(self, record_classification):
-        """Sets the record_classification of this PoliciesAudio.
+        r"""Sets the record_classification of this PoliciesAudio.
 
         录音场景。取值为： 无损录音：LossLess。 语音通话：Speech Call。 音乐录音：Music Record。 自动识别：Automatic Identification。
 

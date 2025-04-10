@@ -29,7 +29,7 @@ class ResetMessageOffsetWithEngineRequest:
     }
 
     def __init__(self, instance_id=None, group=None, body=None):
-        """ResetMessageOffsetWithEngineRequest
+        r"""ResetMessageOffsetWithEngineRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ResetMessageOffsetWithEngineRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ResetMessageOffsetWithEngineRequest.
+        r"""Gets the instance_id of this ResetMessageOffsetWithEngineRequest.
 
         实例ID。
 
@@ -66,7 +66,7 @@ class ResetMessageOffsetWithEngineRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ResetMessageOffsetWithEngineRequest.
+        r"""Sets the instance_id of this ResetMessageOffsetWithEngineRequest.
 
         实例ID。
 
@@ -77,7 +77,7 @@ class ResetMessageOffsetWithEngineRequest:
 
     @property
     def group(self):
-        """Gets the group of this ResetMessageOffsetWithEngineRequest.
+        r"""Gets the group of this ResetMessageOffsetWithEngineRequest.
 
         消费组名称。
 
@@ -88,7 +88,7 @@ class ResetMessageOffsetWithEngineRequest:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this ResetMessageOffsetWithEngineRequest.
+        r"""Sets the group of this ResetMessageOffsetWithEngineRequest.
 
         消费组名称。
 
@@ -99,7 +99,7 @@ class ResetMessageOffsetWithEngineRequest:
 
     @property
     def body(self):
-        """Gets the body of this ResetMessageOffsetWithEngineRequest.
+        r"""Gets the body of this ResetMessageOffsetWithEngineRequest.
 
         :return: The body of this ResetMessageOffsetWithEngineRequest.
         :rtype: :class:`huaweicloudsdkkafka.v2.ResetMessageOffsetReq`
@@ -108,7 +108,7 @@ class ResetMessageOffsetWithEngineRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ResetMessageOffsetWithEngineRequest.
+        r"""Sets the body of this ResetMessageOffsetWithEngineRequest.
 
         :param body: The body of this ResetMessageOffsetWithEngineRequest.
         :type body: :class:`huaweicloudsdkkafka.v2.ResetMessageOffsetReq`

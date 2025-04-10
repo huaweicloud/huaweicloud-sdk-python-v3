@@ -30,7 +30,7 @@ class UpdateSslSwitchResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, instance_id=None, result=None):
-        """UpdateSslSwitchResponse
+        r"""UpdateSslSwitchResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class UpdateSslSwitchResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateSslSwitchResponse.
+        r"""Gets the job_id of this UpdateSslSwitchResponse.
 
         DCS任务ID。
 
@@ -69,7 +69,7 @@ class UpdateSslSwitchResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateSslSwitchResponse.
+        r"""Sets the job_id of this UpdateSslSwitchResponse.
 
         DCS任务ID。
 
@@ -80,7 +80,7 @@ class UpdateSslSwitchResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateSslSwitchResponse.
+        r"""Gets the instance_id of this UpdateSslSwitchResponse.
 
         实例ID。
 
@@ -91,7 +91,7 @@ class UpdateSslSwitchResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateSslSwitchResponse.
+        r"""Sets the instance_id of this UpdateSslSwitchResponse.
 
         实例ID。
 
@@ -102,7 +102,7 @@ class UpdateSslSwitchResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this UpdateSslSwitchResponse.
+        r"""Gets the result of this UpdateSslSwitchResponse.
 
         执行结果。
 
@@ -113,7 +113,7 @@ class UpdateSslSwitchResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this UpdateSslSwitchResponse.
+        r"""Sets the result of this UpdateSslSwitchResponse.
 
         执行结果。
 

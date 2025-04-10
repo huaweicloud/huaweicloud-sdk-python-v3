@@ -27,7 +27,7 @@ class UpdateSparkJobTemplateRequest:
     }
 
     def __init__(self, template_id=None, body=None):
-        """UpdateSparkJobTemplateRequest
+        r"""UpdateSparkJobTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateSparkJobTemplateRequest:
 
     @property
     def template_id(self):
-        """Gets the template_id of this UpdateSparkJobTemplateRequest.
+        r"""Gets the template_id of this UpdateSparkJobTemplateRequest.
 
         :return: The template_id of this UpdateSparkJobTemplateRequest.
         :rtype: str
@@ -58,7 +58,7 @@ class UpdateSparkJobTemplateRequest:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this UpdateSparkJobTemplateRequest.
+        r"""Sets the template_id of this UpdateSparkJobTemplateRequest.
 
         :param template_id: The template_id of this UpdateSparkJobTemplateRequest.
         :type template_id: str
@@ -67,7 +67,7 @@ class UpdateSparkJobTemplateRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSparkJobTemplateRequest.
+        r"""Gets the body of this UpdateSparkJobTemplateRequest.
 
         :return: The body of this UpdateSparkJobTemplateRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateSparkJobTemplateRequestBody`
@@ -76,7 +76,7 @@ class UpdateSparkJobTemplateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSparkJobTemplateRequest.
+        r"""Sets the body of this UpdateSparkJobTemplateRequest.
 
         :param body: The body of this UpdateSparkJobTemplateRequest.
         :type body: :class:`huaweicloudsdkdli.v1.UpdateSparkJobTemplateRequestBody`

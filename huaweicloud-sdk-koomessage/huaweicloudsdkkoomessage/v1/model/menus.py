@@ -25,7 +25,7 @@ class Menus:
     }
 
     def __init__(self, menu_items=None):
-        """Menus
+        r"""Menus
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class Menus:
 
     @property
     def menu_items(self):
-        """Gets the menu_items of this Menus.
+        r"""Gets the menu_items of this Menus.
 
         各子菜单项配置。 
 
@@ -53,7 +53,7 @@ class Menus:
 
     @menu_items.setter
     def menu_items(self, menu_items):
-        """Sets the menu_items of this Menus.
+        r"""Sets the menu_items of this Menus.
 
         各子菜单项配置。 
 

@@ -73,7 +73,7 @@ class BackupResp:
     }
 
     def __init__(self, checkpoint_id=None, created_at=None, description=None, expired_at=None, extend_info=None, id=None, image_type=None, name=None, parent_id=None, project_id=None, protected_at=None, resource_az=None, resource_id=None, resource_name=None, resource_size=None, resource_type=None, status=None, updated_at=None, vault_id=None, replication_records=None, enterprise_project_id=None, provider_id=None, children=None, incremental=None, version=None):
-        """BackupResp
+        r"""BackupResp
 
         The model defined in huaweicloud sdk
 
@@ -191,7 +191,7 @@ class BackupResp:
 
     @property
     def checkpoint_id(self):
-        """Gets the checkpoint_id of this BackupResp.
+        r"""Gets the checkpoint_id of this BackupResp.
 
         还原点ID
 
@@ -202,7 +202,7 @@ class BackupResp:
 
     @checkpoint_id.setter
     def checkpoint_id(self, checkpoint_id):
-        """Sets the checkpoint_id of this BackupResp.
+        r"""Sets the checkpoint_id of this BackupResp.
 
         还原点ID
 
@@ -213,7 +213,7 @@ class BackupResp:
 
     @property
     def created_at(self):
-        """Gets the created_at of this BackupResp.
+        r"""Gets the created_at of this BackupResp.
 
         创建时间，例如:\"2020-02-05T10:38:34.209782\"
 
@@ -224,7 +224,7 @@ class BackupResp:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this BackupResp.
+        r"""Sets the created_at of this BackupResp.
 
         创建时间，例如:\"2020-02-05T10:38:34.209782\"
 
@@ -235,7 +235,7 @@ class BackupResp:
 
     @property
     def description(self):
-        """Gets the description of this BackupResp.
+        r"""Gets the description of this BackupResp.
 
         备份描述
 
@@ -246,7 +246,7 @@ class BackupResp:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this BackupResp.
+        r"""Sets the description of this BackupResp.
 
         备份描述
 
@@ -257,7 +257,7 @@ class BackupResp:
 
     @property
     def expired_at(self):
-        """Gets the expired_at of this BackupResp.
+        r"""Gets the expired_at of this BackupResp.
 
         过期时间，例如:\"2020-02-05T10:38:34.209782\"
 
@@ -268,7 +268,7 @@ class BackupResp:
 
     @expired_at.setter
     def expired_at(self, expired_at):
-        """Sets the expired_at of this BackupResp.
+        r"""Sets the expired_at of this BackupResp.
 
         过期时间，例如:\"2020-02-05T10:38:34.209782\"
 
@@ -279,7 +279,7 @@ class BackupResp:
 
     @property
     def extend_info(self):
-        """Gets the extend_info of this BackupResp.
+        r"""Gets the extend_info of this BackupResp.
 
         :return: The extend_info of this BackupResp.
         :rtype: :class:`huaweicloudsdkcbr.v1.BackupExtendInfo`
@@ -288,7 +288,7 @@ class BackupResp:
 
     @extend_info.setter
     def extend_info(self, extend_info):
-        """Sets the extend_info of this BackupResp.
+        r"""Sets the extend_info of this BackupResp.
 
         :param extend_info: The extend_info of this BackupResp.
         :type extend_info: :class:`huaweicloudsdkcbr.v1.BackupExtendInfo`
@@ -297,7 +297,7 @@ class BackupResp:
 
     @property
     def id(self):
-        """Gets the id of this BackupResp.
+        r"""Gets the id of this BackupResp.
 
         备份ID
 
@@ -308,7 +308,7 @@ class BackupResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BackupResp.
+        r"""Sets the id of this BackupResp.
 
         备份ID
 
@@ -319,7 +319,7 @@ class BackupResp:
 
     @property
     def image_type(self):
-        """Gets the image_type of this BackupResp.
+        r"""Gets the image_type of this BackupResp.
 
         [备份类型。取值为backup和replication。](tag:hws,hws_hk,ocb) [备份类型。取值为backup。](tag:g42,hk_g42,sbc,dt,fcs_vm,ctc,tm,tlf,cmcc,hcso_dt)
 
@@ -330,7 +330,7 @@ class BackupResp:
 
     @image_type.setter
     def image_type(self, image_type):
-        """Sets the image_type of this BackupResp.
+        r"""Sets the image_type of this BackupResp.
 
         [备份类型。取值为backup和replication。](tag:hws,hws_hk,ocb) [备份类型。取值为backup。](tag:g42,hk_g42,sbc,dt,fcs_vm,ctc,tm,tlf,cmcc,hcso_dt)
 
@@ -341,7 +341,7 @@ class BackupResp:
 
     @property
     def name(self):
-        """Gets the name of this BackupResp.
+        r"""Gets the name of this BackupResp.
 
         备份名称
 
@@ -352,7 +352,7 @@ class BackupResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BackupResp.
+        r"""Sets the name of this BackupResp.
 
         备份名称
 
@@ -363,7 +363,7 @@ class BackupResp:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this BackupResp.
+        r"""Gets the parent_id of this BackupResp.
 
         父备份ID
 
@@ -374,7 +374,7 @@ class BackupResp:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this BackupResp.
+        r"""Sets the parent_id of this BackupResp.
 
         父备份ID
 
@@ -385,7 +385,7 @@ class BackupResp:
 
     @property
     def project_id(self):
-        """Gets the project_id of this BackupResp.
+        r"""Gets the project_id of this BackupResp.
 
         项目ID
 
@@ -396,7 +396,7 @@ class BackupResp:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this BackupResp.
+        r"""Sets the project_id of this BackupResp.
 
         项目ID
 
@@ -407,7 +407,7 @@ class BackupResp:
 
     @property
     def protected_at(self):
-        """Gets the protected_at of this BackupResp.
+        r"""Gets the protected_at of this BackupResp.
 
         备份时间
 
@@ -418,7 +418,7 @@ class BackupResp:
 
     @protected_at.setter
     def protected_at(self, protected_at):
-        """Sets the protected_at of this BackupResp.
+        r"""Sets the protected_at of this BackupResp.
 
         备份时间
 
@@ -429,7 +429,7 @@ class BackupResp:
 
     @property
     def resource_az(self):
-        """Gets the resource_az of this BackupResp.
+        r"""Gets the resource_az of this BackupResp.
 
         资源可用区
 
@@ -440,7 +440,7 @@ class BackupResp:
 
     @resource_az.setter
     def resource_az(self, resource_az):
-        """Sets the resource_az of this BackupResp.
+        r"""Sets the resource_az of this BackupResp.
 
         资源可用区
 
@@ -451,7 +451,7 @@ class BackupResp:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this BackupResp.
+        r"""Gets the resource_id of this BackupResp.
 
         资源ID
 
@@ -462,7 +462,7 @@ class BackupResp:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this BackupResp.
+        r"""Sets the resource_id of this BackupResp.
 
         资源ID
 
@@ -473,7 +473,7 @@ class BackupResp:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this BackupResp.
+        r"""Gets the resource_name of this BackupResp.
 
         资源名称
 
@@ -484,7 +484,7 @@ class BackupResp:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this BackupResp.
+        r"""Sets the resource_name of this BackupResp.
 
         资源名称
 
@@ -495,7 +495,7 @@ class BackupResp:
 
     @property
     def resource_size(self):
-        """Gets the resource_size of this BackupResp.
+        r"""Gets the resource_size of this BackupResp.
 
         资源大小，单位为GB
 
@@ -506,7 +506,7 @@ class BackupResp:
 
     @resource_size.setter
     def resource_size(self, resource_size):
-        """Sets the resource_size of this BackupResp.
+        r"""Sets the resource_size of this BackupResp.
 
         资源大小，单位为GB
 
@@ -517,7 +517,7 @@ class BackupResp:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this BackupResp.
+        r"""Gets the resource_type of this BackupResp.
 
         [资源类型: OS::Nova::Server, OS::Cinder::Volume, OS::Ironic::BareMetalServer, OS::Native::Server, OS::Sfs::Turbo, OS::Workspace::DesktopV2](tag:hws,hws_hk) [资源类型: OS::Nova::Server, OS::Cinder::Volume, OS::Sfs::Turbo](tag:hk_g42,sbc,dt) [资源类型: OS::Nova::Server, OS::Cinder::Volume, OS::Ironic::BareMetalServer, OS::Sfs::Turbo](tag:fcs_vm,ctc,ocb,tm) [资源类型: OS::Nova::Server, OS::Cinder::Volume](tag:tlf,cmcc,hcso_dt) [资源类型: OS::Nova::Server, OS::Cinder::Volume, OS::Sfs::Turbo, OS::Workspace::DesktopV2](tag:g42)
 
@@ -528,7 +528,7 @@ class BackupResp:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this BackupResp.
+        r"""Sets the resource_type of this BackupResp.
 
         [资源类型: OS::Nova::Server, OS::Cinder::Volume, OS::Ironic::BareMetalServer, OS::Native::Server, OS::Sfs::Turbo, OS::Workspace::DesktopV2](tag:hws,hws_hk) [资源类型: OS::Nova::Server, OS::Cinder::Volume, OS::Sfs::Turbo](tag:hk_g42,sbc,dt) [资源类型: OS::Nova::Server, OS::Cinder::Volume, OS::Ironic::BareMetalServer, OS::Sfs::Turbo](tag:fcs_vm,ctc,ocb,tm) [资源类型: OS::Nova::Server, OS::Cinder::Volume](tag:tlf,cmcc,hcso_dt) [资源类型: OS::Nova::Server, OS::Cinder::Volume, OS::Sfs::Turbo, OS::Workspace::DesktopV2](tag:g42)
 
@@ -539,7 +539,7 @@ class BackupResp:
 
     @property
     def status(self):
-        """Gets the status of this BackupResp.
+        r"""Gets the status of this BackupResp.
 
         备份状态 - available: 可用 - protecting: 保护中 - deleting: 删除中 - restoring: 恢复中 - error: 异常 - waiting_protect: 等待保护 - waiting_delete: 等待删除 - waiting_restore: 等待恢复
 
@@ -550,7 +550,7 @@ class BackupResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this BackupResp.
+        r"""Sets the status of this BackupResp.
 
         备份状态 - available: 可用 - protecting: 保护中 - deleting: 删除中 - restoring: 恢复中 - error: 异常 - waiting_protect: 等待保护 - waiting_delete: 等待删除 - waiting_restore: 等待恢复
 
@@ -561,7 +561,7 @@ class BackupResp:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this BackupResp.
+        r"""Gets the updated_at of this BackupResp.
 
         更新时间，例如:\"2020-02-05T10:38:34.209782\"
 
@@ -572,7 +572,7 @@ class BackupResp:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this BackupResp.
+        r"""Sets the updated_at of this BackupResp.
 
         更新时间，例如:\"2020-02-05T10:38:34.209782\"
 
@@ -583,7 +583,7 @@ class BackupResp:
 
     @property
     def vault_id(self):
-        """Gets the vault_id of this BackupResp.
+        r"""Gets the vault_id of this BackupResp.
 
         存储库ID
 
@@ -594,7 +594,7 @@ class BackupResp:
 
     @vault_id.setter
     def vault_id(self, vault_id):
-        """Sets the vault_id of this BackupResp.
+        r"""Sets the vault_id of this BackupResp.
 
         存储库ID
 
@@ -605,7 +605,7 @@ class BackupResp:
 
     @property
     def replication_records(self):
-        """Gets the replication_records of this BackupResp.
+        r"""Gets the replication_records of this BackupResp.
 
         复制记录
 
@@ -616,7 +616,7 @@ class BackupResp:
 
     @replication_records.setter
     def replication_records(self, replication_records):
-        """Sets the replication_records of this BackupResp.
+        r"""Sets the replication_records of this BackupResp.
 
         复制记录
 
@@ -627,7 +627,7 @@ class BackupResp:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this BackupResp.
+        r"""Gets the enterprise_project_id of this BackupResp.
 
         企业项目id,默认为‘0’。
 
@@ -638,7 +638,7 @@ class BackupResp:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this BackupResp.
+        r"""Sets the enterprise_project_id of this BackupResp.
 
         企业项目id,默认为‘0’。
 
@@ -649,7 +649,7 @@ class BackupResp:
 
     @property
     def provider_id(self):
-        """Gets the provider_id of this BackupResp.
+        r"""Gets the provider_id of this BackupResp.
 
         备份提供商ID，用于区分备份对象。当前取值包含： [0daac4c5-6707-4851-97ba-169e36266b66，该值代表备份对象为云服务器。d1603440-187d-4516-af25-121250c7cc97，该值代表备份对象为云硬盘。3f3c3220-245c-4805-b811-758870015881， 该值代表备份对象为SFS Turbo。a13639de-00be-4e94-af30-26912d75e4a2，该值代表备份对象为混合云VMware备份。](tag:hws,hws_hk) [0daac4c5-6707-4851-97ba-169e36266b66，该值代表备份对象为云服务器。d1603440-187d-4516-af25-121250c7cc97，该值代表备份对象为云硬盘。3f3c3220-245c-4805-b811-758870015881，该值代表备份对象为SFS Turbo。](tag:ocb,tlf,sbc,fcs_vm,g42,tm,dt,cmcc) [0daac4c5-6707-4851-97ba-169e36266b66，该值代表备份对象为云服务器。d1603440-187d-4516-af25-121250c7cc97，该值代表备份对象为云硬盘。3f3c3220-245c-4805-b811-758870015881，该值代表备份对象为SFS Turbo。86a80900-71bf-4961-956a-d52df944f84a，该值代表备份对象为Workspace。](tag:ctc) [0daac4c5-6707-4851-97ba-169e36266b66，该值代表备份对象为云服务器。d1603440-187d-4516-af25-121250c7cc97，该值代表备份对象为云硬盘。](tag:hcso_dt)
 
@@ -660,7 +660,7 @@ class BackupResp:
 
     @provider_id.setter
     def provider_id(self, provider_id):
-        """Sets the provider_id of this BackupResp.
+        r"""Sets the provider_id of this BackupResp.
 
         备份提供商ID，用于区分备份对象。当前取值包含： [0daac4c5-6707-4851-97ba-169e36266b66，该值代表备份对象为云服务器。d1603440-187d-4516-af25-121250c7cc97，该值代表备份对象为云硬盘。3f3c3220-245c-4805-b811-758870015881， 该值代表备份对象为SFS Turbo。a13639de-00be-4e94-af30-26912d75e4a2，该值代表备份对象为混合云VMware备份。](tag:hws,hws_hk) [0daac4c5-6707-4851-97ba-169e36266b66，该值代表备份对象为云服务器。d1603440-187d-4516-af25-121250c7cc97，该值代表备份对象为云硬盘。3f3c3220-245c-4805-b811-758870015881，该值代表备份对象为SFS Turbo。](tag:ocb,tlf,sbc,fcs_vm,g42,tm,dt,cmcc) [0daac4c5-6707-4851-97ba-169e36266b66，该值代表备份对象为云服务器。d1603440-187d-4516-af25-121250c7cc97，该值代表备份对象为云硬盘。3f3c3220-245c-4805-b811-758870015881，该值代表备份对象为SFS Turbo。86a80900-71bf-4961-956a-d52df944f84a，该值代表备份对象为Workspace。](tag:ctc) [0daac4c5-6707-4851-97ba-169e36266b66，该值代表备份对象为云服务器。d1603440-187d-4516-af25-121250c7cc97，该值代表备份对象为云硬盘。](tag:hcso_dt)
 
@@ -671,7 +671,7 @@ class BackupResp:
 
     @property
     def children(self):
-        """Gets the children of this BackupResp.
+        r"""Gets the children of this BackupResp.
 
         子副本列表
 
@@ -682,7 +682,7 @@ class BackupResp:
 
     @children.setter
     def children(self, children):
-        """Sets the children of this BackupResp.
+        r"""Sets the children of this BackupResp.
 
         子副本列表
 
@@ -693,7 +693,7 @@ class BackupResp:
 
     @property
     def incremental(self):
-        """Gets the incremental of this BackupResp.
+        r"""Gets the incremental of this BackupResp.
 
         是否是增备
 
@@ -704,7 +704,7 @@ class BackupResp:
 
     @incremental.setter
     def incremental(self, incremental):
-        """Sets the incremental of this BackupResp.
+        r"""Sets the incremental of this BackupResp.
 
         是否是增备
 
@@ -715,7 +715,7 @@ class BackupResp:
 
     @property
     def version(self):
-        """Gets the version of this BackupResp.
+        r"""Gets the version of this BackupResp.
 
         备份副本快照类型
 
@@ -726,7 +726,7 @@ class BackupResp:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this BackupResp.
+        r"""Sets the version of this BackupResp.
 
         备份副本快照类型
 

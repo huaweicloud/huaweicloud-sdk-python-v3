@@ -26,7 +26,7 @@ class ShowBucketListResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ShowBucketListResponse
+        r"""ShowBucketListResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowBucketListResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ShowBucketListResponse.
+        r"""Gets the body of this ShowBucketListResponse.
 
         :return: The body of this ShowBucketListResponse.
         :rtype: list[str]
@@ -53,7 +53,7 @@ class ShowBucketListResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowBucketListResponse.
+        r"""Sets the body of this ShowBucketListResponse.
 
         :param body: The body of this ShowBucketListResponse.
         :type body: list[str]

@@ -35,7 +35,7 @@ class FlameLineTreeInfo:
     }
 
     def __init__(self, _from=None, to=None, type=None, instance_id=None, api=None, region=None):
-        """FlameLineTreeInfo
+        r"""FlameLineTreeInfo
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class FlameLineTreeInfo:
 
     @property
     def _from(self):
-        """Gets the _from of this FlameLineTreeInfo.
+        r"""Gets the _from of this FlameLineTreeInfo.
 
         开始时间，比如1704271204595
 
@@ -83,7 +83,7 @@ class FlameLineTreeInfo:
 
     @_from.setter
     def _from(self, _from):
-        """Sets the _from of this FlameLineTreeInfo.
+        r"""Sets the _from of this FlameLineTreeInfo.
 
         开始时间，比如1704271204595
 
@@ -94,7 +94,7 @@ class FlameLineTreeInfo:
 
     @property
     def to(self):
-        """Gets the to of this FlameLineTreeInfo.
+        r"""Gets the to of this FlameLineTreeInfo.
 
         结束时间, 比如1704275169491
 
@@ -105,7 +105,7 @@ class FlameLineTreeInfo:
 
     @to.setter
     def to(self, to):
-        """Sets the to of this FlameLineTreeInfo.
+        r"""Sets the to of this FlameLineTreeInfo.
 
         结束时间, 比如1704275169491
 
@@ -116,7 +116,7 @@ class FlameLineTreeInfo:
 
     @property
     def type(self):
-        """Gets the type of this FlameLineTreeInfo.
+        r"""Gets the type of this FlameLineTreeInfo.
 
         数据类型, CPU 或者 LATENCY
 
@@ -127,7 +127,7 @@ class FlameLineTreeInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this FlameLineTreeInfo.
+        r"""Sets the type of this FlameLineTreeInfo.
 
         数据类型, CPU 或者 LATENCY
 
@@ -138,7 +138,7 @@ class FlameLineTreeInfo:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this FlameLineTreeInfo.
+        r"""Gets the instance_id of this FlameLineTreeInfo.
 
         实例id
 
@@ -149,7 +149,7 @@ class FlameLineTreeInfo:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this FlameLineTreeInfo.
+        r"""Sets the instance_id of this FlameLineTreeInfo.
 
         实例id
 
@@ -160,7 +160,7 @@ class FlameLineTreeInfo:
 
     @property
     def api(self):
-        """Gets the api of this FlameLineTreeInfo.
+        r"""Gets the api of this FlameLineTreeInfo.
 
         api的url,比如: GET_/user/{id}
 
@@ -171,7 +171,7 @@ class FlameLineTreeInfo:
 
     @api.setter
     def api(self, api):
-        """Sets the api of this FlameLineTreeInfo.
+        r"""Sets the api of this FlameLineTreeInfo.
 
         api的url,比如: GET_/user/{id}
 
@@ -182,7 +182,7 @@ class FlameLineTreeInfo:
 
     @property
     def region(self):
-        """Gets the region of this FlameLineTreeInfo.
+        r"""Gets the region of this FlameLineTreeInfo.
 
         实例所在区域
 
@@ -193,7 +193,7 @@ class FlameLineTreeInfo:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this FlameLineTreeInfo.
+        r"""Sets the region of this FlameLineTreeInfo.
 
         实例所在区域
 

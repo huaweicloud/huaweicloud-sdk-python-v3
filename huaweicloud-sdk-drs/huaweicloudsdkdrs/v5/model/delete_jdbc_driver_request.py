@@ -27,7 +27,7 @@ class DeleteJdbcDriverRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """DeleteJdbcDriverRequest
+        r"""DeleteJdbcDriverRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DeleteJdbcDriverRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this DeleteJdbcDriverRequest.
+        r"""Gets the x_language of this DeleteJdbcDriverRequest.
 
         请求语言类型。
 
@@ -61,7 +61,7 @@ class DeleteJdbcDriverRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this DeleteJdbcDriverRequest.
+        r"""Sets the x_language of this DeleteJdbcDriverRequest.
 
         请求语言类型。
 
@@ -72,7 +72,7 @@ class DeleteJdbcDriverRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteJdbcDriverRequest.
+        r"""Gets the body of this DeleteJdbcDriverRequest.
 
         :return: The body of this DeleteJdbcDriverRequest.
         :rtype: :class:`huaweicloudsdkdrs.v5.DeleteDriverReq`
@@ -81,7 +81,7 @@ class DeleteJdbcDriverRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteJdbcDriverRequest.
+        r"""Sets the body of this DeleteJdbcDriverRequest.
 
         :param body: The body of this DeleteJdbcDriverRequest.
         :type body: :class:`huaweicloudsdkdrs.v5.DeleteDriverReq`

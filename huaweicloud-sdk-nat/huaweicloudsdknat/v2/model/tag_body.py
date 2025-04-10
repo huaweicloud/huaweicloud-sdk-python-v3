@@ -27,7 +27,7 @@ class TagBody:
     }
 
     def __init__(self, key=None, value=None):
-        """TagBody
+        r"""TagBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class TagBody:
 
     @property
     def key(self):
-        """Gets the key of this TagBody.
+        r"""Gets the key of this TagBody.
 
         键。最大长度128个unicode字符。key不能为空。不能包含非打印字符ASCII(0-31)，“=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”
 
@@ -59,7 +59,7 @@ class TagBody:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this TagBody.
+        r"""Sets the key of this TagBody.
 
         键。最大长度128个unicode字符。key不能为空。不能包含非打印字符ASCII(0-31)，“=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”
 
@@ -70,7 +70,7 @@ class TagBody:
 
     @property
     def value(self):
-        """Gets the value of this TagBody.
+        r"""Gets the value of this TagBody.
 
         值。每个值最大长度255个unicode字符，可以为空字符串。不能包含非打印字符ASCII(0-31)，“=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”
 
@@ -81,7 +81,7 @@ class TagBody:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this TagBody.
+        r"""Sets the value of this TagBody.
 
         值。每个值最大长度255个unicode字符，可以为空字符串。不能包含非打印字符ASCII(0-31)，“=”,“*”,“<”,“>”,“\\”,“,”,“|”,“/”
 

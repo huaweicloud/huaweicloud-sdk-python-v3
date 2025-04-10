@@ -25,7 +25,7 @@ class BatchUpdateMembersRequestBody:
     }
 
     def __init__(self, members=None):
-        """BatchUpdateMembersRequestBody
+        r"""BatchUpdateMembersRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchUpdateMembersRequestBody:
 
     @property
     def members(self):
-        """Gets the members of this BatchUpdateMembersRequestBody.
+        r"""Gets the members of this BatchUpdateMembersRequestBody.
 
         后端服务器对象。
 
@@ -53,7 +53,7 @@ class BatchUpdateMembersRequestBody:
 
     @members.setter
     def members(self, members):
-        """Sets the members of this BatchUpdateMembersRequestBody.
+        r"""Sets the members of this BatchUpdateMembersRequestBody.
 
         后端服务器对象。
 

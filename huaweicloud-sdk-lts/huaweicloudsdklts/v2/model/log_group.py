@@ -33,7 +33,7 @@ class LogGroup:
     }
 
     def __init__(self, creation_time=None, log_group_name=None, log_group_id=None, ttl_in_days=None, tag=None):
-        """LogGroup
+        r"""LogGroup
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class LogGroup:
 
     @property
     def creation_time(self):
-        """Gets the creation_time of this LogGroup.
+        r"""Gets the creation_time of this LogGroup.
 
         创建时间 
 
@@ -78,7 +78,7 @@ class LogGroup:
 
     @creation_time.setter
     def creation_time(self, creation_time):
-        """Sets the creation_time of this LogGroup.
+        r"""Sets the creation_time of this LogGroup.
 
         创建时间 
 
@@ -89,7 +89,7 @@ class LogGroup:
 
     @property
     def log_group_name(self):
-        """Gets the log_group_name of this LogGroup.
+        r"""Gets the log_group_name of this LogGroup.
 
         日志组名称 
 
@@ -100,7 +100,7 @@ class LogGroup:
 
     @log_group_name.setter
     def log_group_name(self, log_group_name):
-        """Sets the log_group_name of this LogGroup.
+        r"""Sets the log_group_name of this LogGroup.
 
         日志组名称 
 
@@ -111,7 +111,7 @@ class LogGroup:
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this LogGroup.
+        r"""Gets the log_group_id of this LogGroup.
 
         日志组ID 
 
@@ -122,7 +122,7 @@ class LogGroup:
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this LogGroup.
+        r"""Sets the log_group_id of this LogGroup.
 
         日志组ID 
 
@@ -133,7 +133,7 @@ class LogGroup:
 
     @property
     def ttl_in_days(self):
-        """Gets the ttl_in_days of this LogGroup.
+        r"""Gets the ttl_in_days of this LogGroup.
 
         日志存储时间 天 
 
@@ -144,7 +144,7 @@ class LogGroup:
 
     @ttl_in_days.setter
     def ttl_in_days(self, ttl_in_days):
-        """Sets the ttl_in_days of this LogGroup.
+        r"""Sets the ttl_in_days of this LogGroup.
 
         日志存储时间 天 
 
@@ -155,7 +155,7 @@ class LogGroup:
 
     @property
     def tag(self):
-        """Gets the tag of this LogGroup.
+        r"""Gets the tag of this LogGroup.
 
         日志流所属标签
 
@@ -166,7 +166,7 @@ class LogGroup:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this LogGroup.
+        r"""Sets the tag of this LogGroup.
 
         日志流所属标签
 

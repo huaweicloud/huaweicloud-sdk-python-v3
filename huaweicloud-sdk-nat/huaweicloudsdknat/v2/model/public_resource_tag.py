@@ -27,7 +27,7 @@ class PublicResourceTag:
     }
 
     def __init__(self, key=None, value=None):
-        """PublicResourceTag
+        r"""PublicResourceTag
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class PublicResourceTag:
 
     @property
     def key(self):
-        """Gets the key of this PublicResourceTag.
+        r"""Gets the key of this PublicResourceTag.
 
         键。最大长度128个unicode字符。key不能为空。不能包含非打印字符ASCII(0-31)，*,<,>,\\\\,=
 
@@ -59,7 +59,7 @@ class PublicResourceTag:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this PublicResourceTag.
+        r"""Sets the key of this PublicResourceTag.
 
         键。最大长度128个unicode字符。key不能为空。不能包含非打印字符ASCII(0-31)，*,<,>,\\\\,=
 
@@ -70,7 +70,7 @@ class PublicResourceTag:
 
     @property
     def value(self):
-        """Gets the value of this PublicResourceTag.
+        r"""Gets the value of this PublicResourceTag.
 
         值。每个值最大长度255个unicode字符，可以为空字符串。不能包含非打印字符ASCII(0-31), *,<,>,\\\\,=
 
@@ -81,7 +81,7 @@ class PublicResourceTag:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this PublicResourceTag.
+        r"""Sets the value of this PublicResourceTag.
 
         值。每个值最大长度255个unicode字符，可以为空字符串。不能包含非打印字符ASCII(0-31), *,<,>,\\\\,=
 

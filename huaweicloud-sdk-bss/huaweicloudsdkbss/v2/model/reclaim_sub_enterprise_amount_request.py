@@ -25,7 +25,7 @@ class ReclaimSubEnterpriseAmountRequest:
     }
 
     def __init__(self, body=None):
-        """ReclaimSubEnterpriseAmountRequest
+        r"""ReclaimSubEnterpriseAmountRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ReclaimSubEnterpriseAmountRequest:
 
     @property
     def body(self):
-        """Gets the body of this ReclaimSubEnterpriseAmountRequest.
+        r"""Gets the body of this ReclaimSubEnterpriseAmountRequest.
 
         :return: The body of this ReclaimSubEnterpriseAmountRequest.
         :rtype: :class:`huaweicloudsdkbss.v2.RetrieveEnterpriseMultiAccountReq`
@@ -52,7 +52,7 @@ class ReclaimSubEnterpriseAmountRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ReclaimSubEnterpriseAmountRequest.
+        r"""Sets the body of this ReclaimSubEnterpriseAmountRequest.
 
         :param body: The body of this ReclaimSubEnterpriseAmountRequest.
         :type body: :class:`huaweicloudsdkbss.v2.RetrieveEnterpriseMultiAccountReq`

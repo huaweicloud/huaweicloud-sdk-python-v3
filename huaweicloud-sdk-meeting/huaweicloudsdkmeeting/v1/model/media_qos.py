@@ -27,7 +27,7 @@ class MediaQos:
     }
 
     def __init__(self, up_list=None, down_list=None):
-        """MediaQos
+        r"""MediaQos
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class MediaQos:
 
     @property
     def up_list(self):
-        """Gets the up_list of this MediaQos.
+        r"""Gets the up_list of this MediaQos.
 
         客户端-->服务器方向QoS
 
@@ -61,7 +61,7 @@ class MediaQos:
 
     @up_list.setter
     def up_list(self, up_list):
-        """Sets the up_list of this MediaQos.
+        r"""Sets the up_list of this MediaQos.
 
         客户端-->服务器方向QoS
 
@@ -72,7 +72,7 @@ class MediaQos:
 
     @property
     def down_list(self):
-        """Gets the down_list of this MediaQos.
+        r"""Gets the down_list of this MediaQos.
 
         服务器-->客户端方向QoS
 
@@ -83,7 +83,7 @@ class MediaQos:
 
     @down_list.setter
     def down_list(self, down_list):
-        """Sets the down_list of this MediaQos.
+        r"""Sets the down_list of this MediaQos.
 
         服务器-->客户端方向QoS
 

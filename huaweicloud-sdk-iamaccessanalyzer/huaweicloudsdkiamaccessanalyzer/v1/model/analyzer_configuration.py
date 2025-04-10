@@ -25,7 +25,7 @@ class AnalyzerConfiguration:
     }
 
     def __init__(self, unused_access=None):
-        """AnalyzerConfiguration
+        r"""AnalyzerConfiguration
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AnalyzerConfiguration:
 
     @property
     def unused_access(self):
-        """Gets the unused_access of this AnalyzerConfiguration.
+        r"""Gets the unused_access of this AnalyzerConfiguration.
 
         :return: The unused_access of this AnalyzerConfiguration.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.AnalyzerConfigurationUnusedAccess`
@@ -52,7 +52,7 @@ class AnalyzerConfiguration:
 
     @unused_access.setter
     def unused_access(self, unused_access):
-        """Sets the unused_access of this AnalyzerConfiguration.
+        r"""Sets the unused_access of this AnalyzerConfiguration.
 
         :param unused_access: The unused_access of this AnalyzerConfiguration.
         :type unused_access: :class:`huaweicloudsdkiamaccessanalyzer.v1.AnalyzerConfigurationUnusedAccess`

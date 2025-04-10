@@ -30,7 +30,7 @@ class ListMergeChangesResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """ListMergeChangesResponse
+        r"""ListMergeChangesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListMergeChangesResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ListMergeChangesResponse.
+        r"""Gets the error of this ListMergeChangesResponse.
 
         :return: The error of this ListMergeChangesResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class ListMergeChangesResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ListMergeChangesResponse.
+        r"""Sets the error of this ListMergeChangesResponse.
 
         :param error: The error of this ListMergeChangesResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class ListMergeChangesResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListMergeChangesResponse.
+        r"""Gets the result of this ListMergeChangesResponse.
 
         :return: The result of this ListMergeChangesResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.ResponseMergeRequestChanges`
@@ -85,7 +85,7 @@ class ListMergeChangesResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListMergeChangesResponse.
+        r"""Sets the result of this ListMergeChangesResponse.
 
         :param result: The result of this ListMergeChangesResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.ResponseMergeRequestChanges`
@@ -94,7 +94,7 @@ class ListMergeChangesResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListMergeChangesResponse.
+        r"""Gets the status of this ListMergeChangesResponse.
 
         响应状态
 
@@ -105,7 +105,7 @@ class ListMergeChangesResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListMergeChangesResponse.
+        r"""Sets the status of this ListMergeChangesResponse.
 
         响应状态
 

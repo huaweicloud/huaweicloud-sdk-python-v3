@@ -25,7 +25,7 @@ class ShowAppCountRequest:
     }
 
     def __init__(self, region=None):
-        """ShowAppCountRequest
+        r"""ShowAppCountRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowAppCountRequest:
 
     @property
     def region(self):
-        """Gets the region of this ShowAppCountRequest.
+        r"""Gets the region of this ShowAppCountRequest.
 
         地域 1. cn：国内 2. intl：国际
 
@@ -53,7 +53,7 @@ class ShowAppCountRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ShowAppCountRequest.
+        r"""Sets the region of this ShowAppCountRequest.
 
         地域 1. cn：国内 2. intl：国际
 

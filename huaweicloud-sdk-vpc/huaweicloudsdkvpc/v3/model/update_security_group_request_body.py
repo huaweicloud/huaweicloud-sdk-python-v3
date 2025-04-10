@@ -27,7 +27,7 @@ class UpdateSecurityGroupRequestBody:
     }
 
     def __init__(self, dry_run=None, security_group=None):
-        """UpdateSecurityGroupRequestBody
+        r"""UpdateSecurityGroupRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateSecurityGroupRequestBody:
 
     @property
     def dry_run(self):
-        """Gets the dry_run of this UpdateSecurityGroupRequestBody.
+        r"""Gets the dry_run of this UpdateSecurityGroupRequestBody.
 
         功能说明：是否只预检此次请求 取值范围： -true：发送检查请求，不会更新安全组。检查项包括是否填写了必需参数、请求格式、业务限制。如果检查不通过，则返回对应错误。如果检查通过，则返回响应码202。 -false（默认值）：发送正常请求，并直接更新安全组。
 
@@ -60,7 +60,7 @@ class UpdateSecurityGroupRequestBody:
 
     @dry_run.setter
     def dry_run(self, dry_run):
-        """Sets the dry_run of this UpdateSecurityGroupRequestBody.
+        r"""Sets the dry_run of this UpdateSecurityGroupRequestBody.
 
         功能说明：是否只预检此次请求 取值范围： -true：发送检查请求，不会更新安全组。检查项包括是否填写了必需参数、请求格式、业务限制。如果检查不通过，则返回对应错误。如果检查通过，则返回响应码202。 -false（默认值）：发送正常请求，并直接更新安全组。
 
@@ -71,7 +71,7 @@ class UpdateSecurityGroupRequestBody:
 
     @property
     def security_group(self):
-        """Gets the security_group of this UpdateSecurityGroupRequestBody.
+        r"""Gets the security_group of this UpdateSecurityGroupRequestBody.
 
         :return: The security_group of this UpdateSecurityGroupRequestBody.
         :rtype: :class:`huaweicloudsdkvpc.v3.UpdateSecurityGroupOption`
@@ -80,7 +80,7 @@ class UpdateSecurityGroupRequestBody:
 
     @security_group.setter
     def security_group(self, security_group):
-        """Sets the security_group of this UpdateSecurityGroupRequestBody.
+        r"""Sets the security_group of this UpdateSecurityGroupRequestBody.
 
         :param security_group: The security_group of this UpdateSecurityGroupRequestBody.
         :type security_group: :class:`huaweicloudsdkvpc.v3.UpdateSecurityGroupOption`

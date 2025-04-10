@@ -27,7 +27,7 @@ class UpdateBigkeyAutoscanConfigRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """UpdateBigkeyAutoscanConfigRequest
+        r"""UpdateBigkeyAutoscanConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateBigkeyAutoscanConfigRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateBigkeyAutoscanConfigRequest.
+        r"""Gets the instance_id of this UpdateBigkeyAutoscanConfigRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class UpdateBigkeyAutoscanConfigRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateBigkeyAutoscanConfigRequest.
+        r"""Sets the instance_id of this UpdateBigkeyAutoscanConfigRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class UpdateBigkeyAutoscanConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateBigkeyAutoscanConfigRequest.
+        r"""Gets the body of this UpdateBigkeyAutoscanConfigRequest.
 
         :return: The body of this UpdateBigkeyAutoscanConfigRequest.
         :rtype: :class:`huaweicloudsdkdcs.v2.AutoscanConfigRequest`
@@ -80,7 +80,7 @@ class UpdateBigkeyAutoscanConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateBigkeyAutoscanConfigRequest.
+        r"""Sets the body of this UpdateBigkeyAutoscanConfigRequest.
 
         :param body: The body of this UpdateBigkeyAutoscanConfigRequest.
         :type body: :class:`huaweicloudsdkdcs.v2.AutoscanConfigRequest`

@@ -27,7 +27,7 @@ class PostgreSQLRestoreDatabase:
     }
 
     def __init__(self, database=None, schemas=None):
-        """PostgreSQLRestoreDatabase
+        r"""PostgreSQLRestoreDatabase
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PostgreSQLRestoreDatabase:
 
     @property
     def database(self):
-        """Gets the database of this PostgreSQLRestoreDatabase.
+        r"""Gets the database of this PostgreSQLRestoreDatabase.
 
         数据库名
 
@@ -61,7 +61,7 @@ class PostgreSQLRestoreDatabase:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this PostgreSQLRestoreDatabase.
+        r"""Sets the database of this PostgreSQLRestoreDatabase.
 
         数据库名
 
@@ -72,7 +72,7 @@ class PostgreSQLRestoreDatabase:
 
     @property
     def schemas(self):
-        """Gets the schemas of this PostgreSQLRestoreDatabase.
+        r"""Gets the schemas of this PostgreSQLRestoreDatabase.
 
         模式信息
 
@@ -83,7 +83,7 @@ class PostgreSQLRestoreDatabase:
 
     @schemas.setter
     def schemas(self, schemas):
-        """Sets the schemas of this PostgreSQLRestoreDatabase.
+        r"""Sets the schemas of this PostgreSQLRestoreDatabase.
 
         模式信息
 

@@ -24,7 +24,7 @@ class DeleteEcnWithErResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteEcnWithErResponse
+        r"""DeleteEcnWithErResponse
 
         The model defined in huaweicloud sdk
 

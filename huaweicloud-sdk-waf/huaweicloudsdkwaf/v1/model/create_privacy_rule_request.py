@@ -29,7 +29,7 @@ class CreatePrivacyRuleRequest:
     }
 
     def __init__(self, enterprise_project_id=None, policy_id=None, body=None):
-        """CreatePrivacyRuleRequest
+        r"""CreatePrivacyRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreatePrivacyRuleRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreatePrivacyRuleRequest.
+        r"""Gets the enterprise_project_id of this CreatePrivacyRuleRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -67,7 +67,7 @@ class CreatePrivacyRuleRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreatePrivacyRuleRequest.
+        r"""Sets the enterprise_project_id of this CreatePrivacyRuleRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -78,7 +78,7 @@ class CreatePrivacyRuleRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this CreatePrivacyRuleRequest.
+        r"""Gets the policy_id of this CreatePrivacyRuleRequest.
 
         防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
 
@@ -89,7 +89,7 @@ class CreatePrivacyRuleRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this CreatePrivacyRuleRequest.
+        r"""Sets the policy_id of this CreatePrivacyRuleRequest.
 
         防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
 
@@ -100,7 +100,7 @@ class CreatePrivacyRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePrivacyRuleRequest.
+        r"""Gets the body of this CreatePrivacyRuleRequest.
 
         :return: The body of this CreatePrivacyRuleRequest.
         :rtype: :class:`huaweicloudsdkwaf.v1.CreatePrivacyRuleRequestBody`
@@ -109,7 +109,7 @@ class CreatePrivacyRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePrivacyRuleRequest.
+        r"""Sets the body of this CreatePrivacyRuleRequest.
 
         :param body: The body of this CreatePrivacyRuleRequest.
         :type body: :class:`huaweicloudsdkwaf.v1.CreatePrivacyRuleRequestBody`

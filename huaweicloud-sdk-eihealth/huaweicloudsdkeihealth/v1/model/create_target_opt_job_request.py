@@ -27,7 +27,7 @@ class CreateTargetOptJobRequest:
     }
 
     def __init__(self, eihealth_project_id=None, body=None):
-        """CreateTargetOptJobRequest
+        r"""CreateTargetOptJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateTargetOptJobRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this CreateTargetOptJobRequest.
+        r"""Gets the eihealth_project_id of this CreateTargetOptJobRequest.
 
         平台项目ID。
 
@@ -60,7 +60,7 @@ class CreateTargetOptJobRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this CreateTargetOptJobRequest.
+        r"""Sets the eihealth_project_id of this CreateTargetOptJobRequest.
 
         平台项目ID。
 
@@ -71,7 +71,7 @@ class CreateTargetOptJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateTargetOptJobRequest.
+        r"""Gets the body of this CreateTargetOptJobRequest.
 
         :return: The body of this CreateTargetOptJobRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateTargetOptJobReq`
@@ -80,7 +80,7 @@ class CreateTargetOptJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTargetOptJobRequest.
+        r"""Sets the body of this CreateTargetOptJobRequest.
 
         :param body: The body of this CreateTargetOptJobRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.CreateTargetOptJobReq`

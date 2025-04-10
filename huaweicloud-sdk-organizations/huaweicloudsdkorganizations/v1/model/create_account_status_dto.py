@@ -37,7 +37,7 @@ class CreateAccountStatusDto:
     }
 
     def __init__(self, account_id=None, account_name=None, completed_at=None, created_at=None, id=None, state=None, failure_reason=None):
-        """CreateAccountStatusDto
+        r"""CreateAccountStatusDto
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class CreateAccountStatusDto:
 
     @property
     def account_id(self):
-        """Gets the account_id of this CreateAccountStatusDto.
+        r"""Gets the account_id of this CreateAccountStatusDto.
 
         如果账号创建成功，则为新账号的唯一标识符（ID）。
 
@@ -90,7 +90,7 @@ class CreateAccountStatusDto:
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this CreateAccountStatusDto.
+        r"""Sets the account_id of this CreateAccountStatusDto.
 
         如果账号创建成功，则为新账号的唯一标识符（ID）。
 
@@ -101,7 +101,7 @@ class CreateAccountStatusDto:
 
     @property
     def account_name(self):
-        """Gets the account_name of this CreateAccountStatusDto.
+        r"""Gets the account_name of this CreateAccountStatusDto.
 
         账号名称
 
@@ -112,7 +112,7 @@ class CreateAccountStatusDto:
 
     @account_name.setter
     def account_name(self, account_name):
-        """Sets the account_name of this CreateAccountStatusDto.
+        r"""Sets the account_name of this CreateAccountStatusDto.
 
         账号名称
 
@@ -123,7 +123,7 @@ class CreateAccountStatusDto:
 
     @property
     def completed_at(self):
-        """Gets the completed_at of this CreateAccountStatusDto.
+        r"""Gets the completed_at of this CreateAccountStatusDto.
 
         创建账号和完成请求的日期和时间。
 
@@ -134,7 +134,7 @@ class CreateAccountStatusDto:
 
     @completed_at.setter
     def completed_at(self, completed_at):
-        """Sets the completed_at of this CreateAccountStatusDto.
+        r"""Sets the completed_at of this CreateAccountStatusDto.
 
         创建账号和完成请求的日期和时间。
 
@@ -145,7 +145,7 @@ class CreateAccountStatusDto:
 
     @property
     def created_at(self):
-        """Gets the created_at of this CreateAccountStatusDto.
+        r"""Gets the created_at of this CreateAccountStatusDto.
 
         请求创建账号的日期和时间。
 
@@ -156,7 +156,7 @@ class CreateAccountStatusDto:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this CreateAccountStatusDto.
+        r"""Sets the created_at of this CreateAccountStatusDto.
 
         请求创建账号的日期和时间。
 
@@ -167,7 +167,7 @@ class CreateAccountStatusDto:
 
     @property
     def id(self):
-        """Gets the id of this CreateAccountStatusDto.
+        r"""Gets the id of this CreateAccountStatusDto.
 
         请求的唯一标识符（ID）。您可以从创建账号的初始CreateAccount请求的响应中获得此值。
 
@@ -178,7 +178,7 @@ class CreateAccountStatusDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateAccountStatusDto.
+        r"""Sets the id of this CreateAccountStatusDto.
 
         请求的唯一标识符（ID）。您可以从创建账号的初始CreateAccount请求的响应中获得此值。
 
@@ -189,7 +189,7 @@ class CreateAccountStatusDto:
 
     @property
     def state(self):
-        """Gets the state of this CreateAccountStatusDto.
+        r"""Gets the state of this CreateAccountStatusDto.
 
         创建账号的异步请求的状态，in_progress：处理中，succeeded：成功，failed：失败。
 
@@ -200,7 +200,7 @@ class CreateAccountStatusDto:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this CreateAccountStatusDto.
+        r"""Sets the state of this CreateAccountStatusDto.
 
         创建账号的异步请求的状态，in_progress：处理中，succeeded：成功，failed：失败。
 
@@ -211,7 +211,7 @@ class CreateAccountStatusDto:
 
     @property
     def failure_reason(self):
-        """Gets the failure_reason of this CreateAccountStatusDto.
+        r"""Gets the failure_reason of this CreateAccountStatusDto.
 
         如果请求失败，则说明失败原因。
 
@@ -222,7 +222,7 @@ class CreateAccountStatusDto:
 
     @failure_reason.setter
     def failure_reason(self, failure_reason):
-        """Sets the failure_reason of this CreateAccountStatusDto.
+        r"""Sets the failure_reason of this CreateAccountStatusDto.
 
         如果请求失败，则说明失败原因。
 

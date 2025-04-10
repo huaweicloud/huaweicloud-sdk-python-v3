@@ -30,7 +30,7 @@ class ListDiagnoseItemsResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_msg=None, item_results=None):
-        """ListDiagnoseItemsResponse
+        r"""ListDiagnoseItemsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListDiagnoseItemsResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ListDiagnoseItemsResponse.
+        r"""Gets the error_code of this ListDiagnoseItemsResponse.
 
         错误码
 
@@ -69,7 +69,7 @@ class ListDiagnoseItemsResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ListDiagnoseItemsResponse.
+        r"""Sets the error_code of this ListDiagnoseItemsResponse.
 
         错误码
 
@@ -80,7 +80,7 @@ class ListDiagnoseItemsResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ListDiagnoseItemsResponse.
+        r"""Gets the error_msg of this ListDiagnoseItemsResponse.
 
         错误描述
 
@@ -91,7 +91,7 @@ class ListDiagnoseItemsResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ListDiagnoseItemsResponse.
+        r"""Sets the error_msg of this ListDiagnoseItemsResponse.
 
         错误描述
 
@@ -102,7 +102,7 @@ class ListDiagnoseItemsResponse(SdkResponse):
 
     @property
     def item_results(self):
-        """Gets the item_results of this ListDiagnoseItemsResponse.
+        r"""Gets the item_results of this ListDiagnoseItemsResponse.
 
         检查项结果列表
 
@@ -113,7 +113,7 @@ class ListDiagnoseItemsResponse(SdkResponse):
 
     @item_results.setter
     def item_results(self, item_results):
-        """Sets the item_results of this ListDiagnoseItemsResponse.
+        r"""Sets the item_results of this ListDiagnoseItemsResponse.
 
         检查项结果列表
 

@@ -29,7 +29,7 @@ class ListGlobalEipFilterTagsRequest:
     }
 
     def __init__(self, limit=None, offset=None, body=None):
-        """ListGlobalEipFilterTagsRequest
+        r"""ListGlobalEipFilterTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListGlobalEipFilterTagsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListGlobalEipFilterTagsRequest.
+        r"""Gets the limit of this ListGlobalEipFilterTagsRequest.
 
         :return: The limit of this ListGlobalEipFilterTagsRequest.
         :rtype: list[int]
@@ -66,7 +66,7 @@ class ListGlobalEipFilterTagsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListGlobalEipFilterTagsRequest.
+        r"""Sets the limit of this ListGlobalEipFilterTagsRequest.
 
         :param limit: The limit of this ListGlobalEipFilterTagsRequest.
         :type limit: list[int]
@@ -75,7 +75,7 @@ class ListGlobalEipFilterTagsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListGlobalEipFilterTagsRequest.
+        r"""Gets the offset of this ListGlobalEipFilterTagsRequest.
 
         :return: The offset of this ListGlobalEipFilterTagsRequest.
         :rtype: list[int]
@@ -84,7 +84,7 @@ class ListGlobalEipFilterTagsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListGlobalEipFilterTagsRequest.
+        r"""Sets the offset of this ListGlobalEipFilterTagsRequest.
 
         :param offset: The offset of this ListGlobalEipFilterTagsRequest.
         :type offset: list[int]
@@ -93,7 +93,7 @@ class ListGlobalEipFilterTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListGlobalEipFilterTagsRequest.
+        r"""Gets the body of this ListGlobalEipFilterTagsRequest.
 
         :return: The body of this ListGlobalEipFilterTagsRequest.
         :rtype: :class:`huaweicloudsdkgeip.v3.ListResourcesByTagsRequestBody`
@@ -102,7 +102,7 @@ class ListGlobalEipFilterTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListGlobalEipFilterTagsRequest.
+        r"""Sets the body of this ListGlobalEipFilterTagsRequest.
 
         :param body: The body of this ListGlobalEipFilterTagsRequest.
         :type body: :class:`huaweicloudsdkgeip.v3.ListResourcesByTagsRequestBody`

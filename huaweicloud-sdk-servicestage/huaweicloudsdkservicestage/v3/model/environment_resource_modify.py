@@ -25,7 +25,7 @@ class EnvironmentResourceModify:
     }
 
     def __init__(self, resources=None):
-        """EnvironmentResourceModify
+        r"""EnvironmentResourceModify
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class EnvironmentResourceModify:
 
     @property
     def resources(self):
-        """Gets the resources of this EnvironmentResourceModify.
+        r"""Gets the resources of this EnvironmentResourceModify.
 
         for custom type
 
@@ -53,7 +53,7 @@ class EnvironmentResourceModify:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this EnvironmentResourceModify.
+        r"""Sets the resources of this EnvironmentResourceModify.
 
         for custom type
 

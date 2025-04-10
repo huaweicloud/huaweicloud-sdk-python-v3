@@ -27,7 +27,7 @@ class CreateNatGatewayTagRequest:
     }
 
     def __init__(self, nat_gateway_id=None, body=None):
-        """CreateNatGatewayTagRequest
+        r"""CreateNatGatewayTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateNatGatewayTagRequest:
 
     @property
     def nat_gateway_id(self):
-        """Gets the nat_gateway_id of this CreateNatGatewayTagRequest.
+        r"""Gets the nat_gateway_id of this CreateNatGatewayTagRequest.
 
         所属公网NAT网关的id。
 
@@ -60,7 +60,7 @@ class CreateNatGatewayTagRequest:
 
     @nat_gateway_id.setter
     def nat_gateway_id(self, nat_gateway_id):
-        """Sets the nat_gateway_id of this CreateNatGatewayTagRequest.
+        r"""Sets the nat_gateway_id of this CreateNatGatewayTagRequest.
 
         所属公网NAT网关的id。
 
@@ -71,7 +71,7 @@ class CreateNatGatewayTagRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateNatGatewayTagRequest.
+        r"""Gets the body of this CreateNatGatewayTagRequest.
 
         :return: The body of this CreateNatGatewayTagRequest.
         :rtype: :class:`huaweicloudsdknat.v2.CreateNatTagRequestBody`
@@ -80,7 +80,7 @@ class CreateNatGatewayTagRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateNatGatewayTagRequest.
+        r"""Sets the body of this CreateNatGatewayTagRequest.
 
         :param body: The body of this CreateNatGatewayTagRequest.
         :type body: :class:`huaweicloudsdknat.v2.CreateNatTagRequestBody`

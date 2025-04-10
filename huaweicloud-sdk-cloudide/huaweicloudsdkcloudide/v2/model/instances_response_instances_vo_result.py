@@ -31,7 +31,7 @@ class InstancesResponseInstancesVOResult:
     }
 
     def __init__(self, link=None, arch=None, id=None, private=None):
-        """InstancesResponseInstancesVOResult
+        r"""InstancesResponseInstancesVOResult
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class InstancesResponseInstancesVOResult:
 
     @property
     def link(self):
-        """Gets the link of this InstancesResponseInstancesVOResult.
+        r"""Gets the link of this InstancesResponseInstancesVOResult.
 
         链接
 
@@ -75,7 +75,7 @@ class InstancesResponseInstancesVOResult:
 
     @link.setter
     def link(self, link):
-        """Sets the link of this InstancesResponseInstancesVOResult.
+        r"""Sets the link of this InstancesResponseInstancesVOResult.
 
         链接
 
@@ -86,7 +86,7 @@ class InstancesResponseInstancesVOResult:
 
     @property
     def arch(self):
-        """Gets the arch of this InstancesResponseInstancesVOResult.
+        r"""Gets the arch of this InstancesResponseInstancesVOResult.
 
         cpu架构 x86|arm
 
@@ -97,7 +97,7 @@ class InstancesResponseInstancesVOResult:
 
     @arch.setter
     def arch(self, arch):
-        """Sets the arch of this InstancesResponseInstancesVOResult.
+        r"""Sets the arch of this InstancesResponseInstancesVOResult.
 
         cpu架构 x86|arm
 
@@ -108,7 +108,7 @@ class InstancesResponseInstancesVOResult:
 
     @property
     def id(self):
-        """Gets the id of this InstancesResponseInstancesVOResult.
+        r"""Gets the id of this InstancesResponseInstancesVOResult.
 
         实例id
 
@@ -119,7 +119,7 @@ class InstancesResponseInstancesVOResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this InstancesResponseInstancesVOResult.
+        r"""Sets the id of this InstancesResponseInstancesVOResult.
 
         实例id
 
@@ -130,7 +130,7 @@ class InstancesResponseInstancesVOResult:
 
     @property
     def private(self):
-        """Gets the private of this InstancesResponseInstancesVOResult.
+        r"""Gets the private of this InstancesResponseInstancesVOResult.
 
         是否私有平台
 
@@ -141,7 +141,7 @@ class InstancesResponseInstancesVOResult:
 
     @private.setter
     def private(self, private):
-        """Sets the private of this InstancesResponseInstancesVOResult.
+        r"""Sets the private of this InstancesResponseInstancesVOResult.
 
         是否私有平台
 

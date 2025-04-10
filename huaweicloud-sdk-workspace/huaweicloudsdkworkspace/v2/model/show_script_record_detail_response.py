@@ -56,7 +56,7 @@ class ShowScriptRecordDetailResponse(SdkResponse):
     }
 
     def __init__(self, id=None, script_id=None, script_name=None, script_task_id=None, resource_id=None, resource_name=None, resource_type=None, start_time=None, end_time=None, status=None, execute_order=None, command_content=None, command_type=None, result_code=None, reason=None, output=None):
-        """ShowScriptRecordDetailResponse
+        r"""ShowScriptRecordDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -149,7 +149,7 @@ class ShowScriptRecordDetailResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowScriptRecordDetailResponse.
+        r"""Gets the id of this ShowScriptRecordDetailResponse.
 
         脚本执行记录ID。
 
@@ -160,7 +160,7 @@ class ShowScriptRecordDetailResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowScriptRecordDetailResponse.
+        r"""Sets the id of this ShowScriptRecordDetailResponse.
 
         脚本执行记录ID。
 
@@ -171,7 +171,7 @@ class ShowScriptRecordDetailResponse(SdkResponse):
 
     @property
     def script_id(self):
-        """Gets the script_id of this ShowScriptRecordDetailResponse.
+        r"""Gets the script_id of this ShowScriptRecordDetailResponse.
 
         脚本ID。
 
@@ -182,7 +182,7 @@ class ShowScriptRecordDetailResponse(SdkResponse):
 
     @script_id.setter
     def script_id(self, script_id):
-        """Sets the script_id of this ShowScriptRecordDetailResponse.
+        r"""Sets the script_id of this ShowScriptRecordDetailResponse.
 
         脚本ID。
 
@@ -193,7 +193,7 @@ class ShowScriptRecordDetailResponse(SdkResponse):
 
     @property
     def script_name(self):
-        """Gets the script_name of this ShowScriptRecordDetailResponse.
+        r"""Gets the script_name of this ShowScriptRecordDetailResponse.
 
         脚本名称。
 
@@ -204,7 +204,7 @@ class ShowScriptRecordDetailResponse(SdkResponse):
 
     @script_name.setter
     def script_name(self, script_name):
-        """Sets the script_name of this ShowScriptRecordDetailResponse.
+        r"""Sets the script_name of this ShowScriptRecordDetailResponse.
 
         脚本名称。
 
@@ -215,7 +215,7 @@ class ShowScriptRecordDetailResponse(SdkResponse):
 
     @property
     def script_task_id(self):
-        """Gets the script_task_id of this ShowScriptRecordDetailResponse.
+        r"""Gets the script_task_id of this ShowScriptRecordDetailResponse.
 
         脚本执行的任务ID。
 
@@ -226,7 +226,7 @@ class ShowScriptRecordDetailResponse(SdkResponse):
 
     @script_task_id.setter
     def script_task_id(self, script_task_id):
-        """Sets the script_task_id of this ShowScriptRecordDetailResponse.
+        r"""Sets the script_task_id of this ShowScriptRecordDetailResponse.
 
         脚本执行的任务ID。
 
@@ -237,7 +237,7 @@ class ShowScriptRecordDetailResponse(SdkResponse):
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ShowScriptRecordDetailResponse.
+        r"""Gets the resource_id of this ShowScriptRecordDetailResponse.
 
         执行脚本的资源ID，如桌面ID。
 
@@ -248,7 +248,7 @@ class ShowScriptRecordDetailResponse(SdkResponse):
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ShowScriptRecordDetailResponse.
+        r"""Sets the resource_id of this ShowScriptRecordDetailResponse.
 
         执行脚本的资源ID，如桌面ID。
 
@@ -259,7 +259,7 @@ class ShowScriptRecordDetailResponse(SdkResponse):
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this ShowScriptRecordDetailResponse.
+        r"""Gets the resource_name of this ShowScriptRecordDetailResponse.
 
         执行脚本的资源名称，如桌面名称。
 
@@ -270,7 +270,7 @@ class ShowScriptRecordDetailResponse(SdkResponse):
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this ShowScriptRecordDetailResponse.
+        r"""Sets the resource_name of this ShowScriptRecordDetailResponse.
 
         执行脚本的资源名称，如桌面名称。
 
@@ -281,7 +281,7 @@ class ShowScriptRecordDetailResponse(SdkResponse):
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ShowScriptRecordDetailResponse.
+        r"""Gets the resource_type of this ShowScriptRecordDetailResponse.
 
         资源类型，如桌面(DESKTOP)。
 
@@ -292,7 +292,7 @@ class ShowScriptRecordDetailResponse(SdkResponse):
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ShowScriptRecordDetailResponse.
+        r"""Sets the resource_type of this ShowScriptRecordDetailResponse.
 
         资源类型，如桌面(DESKTOP)。
 
@@ -303,7 +303,7 @@ class ShowScriptRecordDetailResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowScriptRecordDetailResponse.
+        r"""Gets the start_time of this ShowScriptRecordDetailResponse.
 
         脚本执行开始时间。
 
@@ -314,7 +314,7 @@ class ShowScriptRecordDetailResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowScriptRecordDetailResponse.
+        r"""Sets the start_time of this ShowScriptRecordDetailResponse.
 
         脚本执行开始时间。
 
@@ -325,7 +325,7 @@ class ShowScriptRecordDetailResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowScriptRecordDetailResponse.
+        r"""Gets the end_time of this ShowScriptRecordDetailResponse.
 
         脚本执行结束时间。
 
@@ -336,7 +336,7 @@ class ShowScriptRecordDetailResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowScriptRecordDetailResponse.
+        r"""Sets the end_time of this ShowScriptRecordDetailResponse.
 
         脚本执行结束时间。
 
@@ -347,7 +347,7 @@ class ShowScriptRecordDetailResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowScriptRecordDetailResponse.
+        r"""Gets the status of this ShowScriptRecordDetailResponse.
 
         脚本执行状态。
 
@@ -358,7 +358,7 @@ class ShowScriptRecordDetailResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowScriptRecordDetailResponse.
+        r"""Sets the status of this ShowScriptRecordDetailResponse.
 
         脚本执行状态。
 
@@ -369,7 +369,7 @@ class ShowScriptRecordDetailResponse(SdkResponse):
 
     @property
     def execute_order(self):
-        """Gets the execute_order of this ShowScriptRecordDetailResponse.
+        r"""Gets the execute_order of this ShowScriptRecordDetailResponse.
 
         执行批次（默认：0，灰度：1，非灰度：2）。
 
@@ -380,7 +380,7 @@ class ShowScriptRecordDetailResponse(SdkResponse):
 
     @execute_order.setter
     def execute_order(self, execute_order):
-        """Sets the execute_order of this ShowScriptRecordDetailResponse.
+        r"""Sets the execute_order of this ShowScriptRecordDetailResponse.
 
         执行批次（默认：0，灰度：1，非灰度：2）。
 
@@ -391,7 +391,7 @@ class ShowScriptRecordDetailResponse(SdkResponse):
 
     @property
     def command_content(self):
-        """Gets the command_content of this ShowScriptRecordDetailResponse.
+        r"""Gets the command_content of this ShowScriptRecordDetailResponse.
 
         命令行内容。
 
@@ -402,7 +402,7 @@ class ShowScriptRecordDetailResponse(SdkResponse):
 
     @command_content.setter
     def command_content(self, command_content):
-        """Sets the command_content of this ShowScriptRecordDetailResponse.
+        r"""Sets the command_content of this ShowScriptRecordDetailResponse.
 
         命令行内容。
 
@@ -413,7 +413,7 @@ class ShowScriptRecordDetailResponse(SdkResponse):
 
     @property
     def command_type(self):
-        """Gets the command_type of this ShowScriptRecordDetailResponse.
+        r"""Gets the command_type of this ShowScriptRecordDetailResponse.
 
         命令行类型(POWERSHELL/BAT/SHELL)。
 
@@ -424,7 +424,7 @@ class ShowScriptRecordDetailResponse(SdkResponse):
 
     @command_type.setter
     def command_type(self, command_type):
-        """Sets the command_type of this ShowScriptRecordDetailResponse.
+        r"""Sets the command_type of this ShowScriptRecordDetailResponse.
 
         命令行类型(POWERSHELL/BAT/SHELL)。
 
@@ -435,7 +435,7 @@ class ShowScriptRecordDetailResponse(SdkResponse):
 
     @property
     def result_code(self):
-        """Gets the result_code of this ShowScriptRecordDetailResponse.
+        r"""Gets the result_code of this ShowScriptRecordDetailResponse.
 
         错误码。
 
@@ -446,7 +446,7 @@ class ShowScriptRecordDetailResponse(SdkResponse):
 
     @result_code.setter
     def result_code(self, result_code):
-        """Sets the result_code of this ShowScriptRecordDetailResponse.
+        r"""Sets the result_code of this ShowScriptRecordDetailResponse.
 
         错误码。
 
@@ -457,7 +457,7 @@ class ShowScriptRecordDetailResponse(SdkResponse):
 
     @property
     def reason(self):
-        """Gets the reason of this ShowScriptRecordDetailResponse.
+        r"""Gets the reason of this ShowScriptRecordDetailResponse.
 
         原因。
 
@@ -468,7 +468,7 @@ class ShowScriptRecordDetailResponse(SdkResponse):
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this ShowScriptRecordDetailResponse.
+        r"""Sets the reason of this ShowScriptRecordDetailResponse.
 
         原因。
 
@@ -479,7 +479,7 @@ class ShowScriptRecordDetailResponse(SdkResponse):
 
     @property
     def output(self):
-        """Gets the output of this ShowScriptRecordDetailResponse.
+        r"""Gets the output of this ShowScriptRecordDetailResponse.
 
         脚本执行的输出。
 
@@ -490,7 +490,7 @@ class ShowScriptRecordDetailResponse(SdkResponse):
 
     @output.setter
     def output(self, output):
-        """Sets the output of this ShowScriptRecordDetailResponse.
+        r"""Sets the output of this ShowScriptRecordDetailResponse.
 
         脚本执行的输出。
 

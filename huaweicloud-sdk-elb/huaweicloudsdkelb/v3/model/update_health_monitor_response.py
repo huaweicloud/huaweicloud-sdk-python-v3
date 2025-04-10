@@ -28,7 +28,7 @@ class UpdateHealthMonitorResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, healthmonitor=None):
-        """UpdateHealthMonitorResponse
+        r"""UpdateHealthMonitorResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateHealthMonitorResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this UpdateHealthMonitorResponse.
+        r"""Gets the request_id of this UpdateHealthMonitorResponse.
 
         请求ID。  注：自动生成 。
 
@@ -62,7 +62,7 @@ class UpdateHealthMonitorResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this UpdateHealthMonitorResponse.
+        r"""Sets the request_id of this UpdateHealthMonitorResponse.
 
         请求ID。  注：自动生成 。
 
@@ -73,7 +73,7 @@ class UpdateHealthMonitorResponse(SdkResponse):
 
     @property
     def healthmonitor(self):
-        """Gets the healthmonitor of this UpdateHealthMonitorResponse.
+        r"""Gets the healthmonitor of this UpdateHealthMonitorResponse.
 
         :return: The healthmonitor of this UpdateHealthMonitorResponse.
         :rtype: :class:`huaweicloudsdkelb.v3.HealthMonitor`
@@ -82,7 +82,7 @@ class UpdateHealthMonitorResponse(SdkResponse):
 
     @healthmonitor.setter
     def healthmonitor(self, healthmonitor):
-        """Sets the healthmonitor of this UpdateHealthMonitorResponse.
+        r"""Sets the healthmonitor of this UpdateHealthMonitorResponse.
 
         :param healthmonitor: The healthmonitor of this UpdateHealthMonitorResponse.
         :type healthmonitor: :class:`huaweicloudsdkelb.v3.HealthMonitor`

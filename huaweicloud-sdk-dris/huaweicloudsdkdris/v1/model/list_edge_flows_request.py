@@ -35,7 +35,7 @@ class ListEdgeFlowsRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, from_date=None, to_date=None, edge_id=None):
-        """ListEdgeFlowsRequest
+        r"""ListEdgeFlowsRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListEdgeFlowsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListEdgeFlowsRequest.
+        r"""Gets the instance_id of this ListEdgeFlowsRequest.
 
         \"**参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和横杠（-）的组合，长度36。\"
 
@@ -89,7 +89,7 @@ class ListEdgeFlowsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListEdgeFlowsRequest.
+        r"""Sets the instance_id of this ListEdgeFlowsRequest.
 
         \"**参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和横杠（-）的组合，长度36。\"
 
@@ -100,7 +100,7 @@ class ListEdgeFlowsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListEdgeFlowsRequest.
+        r"""Gets the offset of this ListEdgeFlowsRequest.
 
         **参数说明**：分页查询时的页码。
 
@@ -111,7 +111,7 @@ class ListEdgeFlowsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListEdgeFlowsRequest.
+        r"""Sets the offset of this ListEdgeFlowsRequest.
 
         **参数说明**：分页查询时的页码。
 
@@ -122,7 +122,7 @@ class ListEdgeFlowsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListEdgeFlowsRequest.
+        r"""Gets the limit of this ListEdgeFlowsRequest.
 
         **参数说明**：分页查询时每页显示的记录数。
 
@@ -133,7 +133,7 @@ class ListEdgeFlowsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEdgeFlowsRequest.
+        r"""Sets the limit of this ListEdgeFlowsRequest.
 
         **参数说明**：分页查询时每页显示的记录数。
 
@@ -144,7 +144,7 @@ class ListEdgeFlowsRequest:
 
     @property
     def from_date(self):
-        """Gets the from_date of this ListEdgeFlowsRequest.
+        r"""Gets the from_date of this ListEdgeFlowsRequest.
 
         **参数说明**：查询此时间后达到平台的消息。  格式：yyyy-MM-dd'T'HH:mm:ss.SSS'Z'。  例如 2020-09-01T01:37:01.000Z。  **取值范围**：携带edge_id参数查询时，from_date和to_date的时间范围不能超过24小时；未携带edge_id参数查询时，from_date和to_date的时间范围不能超过1小时。 
 
@@ -155,7 +155,7 @@ class ListEdgeFlowsRequest:
 
     @from_date.setter
     def from_date(self, from_date):
-        """Sets the from_date of this ListEdgeFlowsRequest.
+        r"""Sets the from_date of this ListEdgeFlowsRequest.
 
         **参数说明**：查询此时间后达到平台的消息。  格式：yyyy-MM-dd'T'HH:mm:ss.SSS'Z'。  例如 2020-09-01T01:37:01.000Z。  **取值范围**：携带edge_id参数查询时，from_date和to_date的时间范围不能超过24小时；未携带edge_id参数查询时，from_date和to_date的时间范围不能超过1小时。 
 
@@ -166,7 +166,7 @@ class ListEdgeFlowsRequest:
 
     @property
     def to_date(self):
-        """Gets the to_date of this ListEdgeFlowsRequest.
+        r"""Gets the to_date of this ListEdgeFlowsRequest.
 
         **参数说明**：查询此时间前达到平台的消息。  格式：yyyy-MM-dd'T'HH:mm:ss.SSS'Z'。  例如 2020-09-02T01:37:01.000Z。  **取值范围**：携带edge_id参数查询时，from_date和to_date的时间范围不能超过24小时；未携带edge_id参数查询时，from_date和to_date的时间范围不能超过1小时。 
 
@@ -177,7 +177,7 @@ class ListEdgeFlowsRequest:
 
     @to_date.setter
     def to_date(self, to_date):
-        """Sets the to_date of this ListEdgeFlowsRequest.
+        r"""Sets the to_date of this ListEdgeFlowsRequest.
 
         **参数说明**：查询此时间前达到平台的消息。  格式：yyyy-MM-dd'T'HH:mm:ss.SSS'Z'。  例如 2020-09-02T01:37:01.000Z。  **取值范围**：携带edge_id参数查询时，from_date和to_date的时间范围不能超过24小时；未携带edge_id参数查询时，from_date和to_date的时间范围不能超过1小时。 
 
@@ -188,7 +188,7 @@ class ListEdgeFlowsRequest:
 
     @property
     def edge_id(self):
-        """Gets the edge_id of this ListEdgeFlowsRequest.
+        r"""Gets the edge_id of this ListEdgeFlowsRequest.
 
         **参数说明**：Edge ID，用于唯一标识一个Edge。  **取值范围**：数字，a至f的小写字母，横杠（-），长度为36的组合。 
 
@@ -199,7 +199,7 @@ class ListEdgeFlowsRequest:
 
     @edge_id.setter
     def edge_id(self, edge_id):
-        """Sets the edge_id of this ListEdgeFlowsRequest.
+        r"""Sets the edge_id of this ListEdgeFlowsRequest.
 
         **参数说明**：Edge ID，用于唯一标识一个Edge。  **取值范围**：数字，a至f的小写字母，横杠（-），长度为36的组合。 
 

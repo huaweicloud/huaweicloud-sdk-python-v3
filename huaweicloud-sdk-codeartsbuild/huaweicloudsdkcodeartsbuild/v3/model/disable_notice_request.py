@@ -27,7 +27,7 @@ class DisableNoticeRequest:
     }
 
     def __init__(self, job_id=None, notice_type=None):
-        """DisableNoticeRequest
+        r"""DisableNoticeRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DisableNoticeRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this DisableNoticeRequest.
+        r"""Gets the job_id of this DisableNoticeRequest.
 
         构建的任务ID； 编辑构建任务时，浏览器URL末尾的32位数字、字母组合的字符串。
 
@@ -59,7 +59,7 @@ class DisableNoticeRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DisableNoticeRequest.
+        r"""Sets the job_id of this DisableNoticeRequest.
 
         构建的任务ID； 编辑构建任务时，浏览器URL末尾的32位数字、字母组合的字符串。
 
@@ -70,7 +70,7 @@ class DisableNoticeRequest:
 
     @property
     def notice_type(self):
-        """Gets the notice_type of this DisableNoticeRequest.
+        r"""Gets the notice_type of this DisableNoticeRequest.
 
         通知的类型,分为消息，邮件和钉钉
 
@@ -81,7 +81,7 @@ class DisableNoticeRequest:
 
     @notice_type.setter
     def notice_type(self, notice_type):
-        """Sets the notice_type of this DisableNoticeRequest.
+        r"""Sets the notice_type of this DisableNoticeRequest.
 
         通知的类型,分为消息，邮件和钉钉
 

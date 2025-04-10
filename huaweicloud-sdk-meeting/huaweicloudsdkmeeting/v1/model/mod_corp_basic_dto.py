@@ -37,7 +37,7 @@ class ModCorpBasicDTO:
     }
 
     def __init__(self, name=None, phone=None, country=None, fax=None, email=None, address=None, description=None):
-        """ModCorpBasicDTO
+        r"""ModCorpBasicDTO
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ModCorpBasicDTO:
 
     @property
     def name(self):
-        """Gets the name of this ModCorpBasicDTO.
+        r"""Gets the name of this ModCorpBasicDTO.
 
         企业名称，格式必须满足^[^#%&'+;<>=\\\"'？?\\\\\\\\……/]*$。
 
@@ -96,7 +96,7 @@ class ModCorpBasicDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ModCorpBasicDTO.
+        r"""Sets the name of this ModCorpBasicDTO.
 
         企业名称，格式必须满足^[^#%&'+;<>=\\\"'？?\\\\\\\\……/]*$。
 
@@ -107,7 +107,7 @@ class ModCorpBasicDTO:
 
     @property
     def phone(self):
-        """Gets the phone of this ModCorpBasicDTO.
+        r"""Gets the phone of this ModCorpBasicDTO.
 
         手机号，必须加上国家码，例如中国大陆手机+86xxxxxxx，当填写手机号时“country”参数必填，手机格式必须满足(^$|^[+]?[0-9]+$)。
 
@@ -118,7 +118,7 @@ class ModCorpBasicDTO:
 
     @phone.setter
     def phone(self, phone):
-        """Sets the phone of this ModCorpBasicDTO.
+        r"""Sets the phone of this ModCorpBasicDTO.
 
         手机号，必须加上国家码，例如中国大陆手机+86xxxxxxx，当填写手机号时“country”参数必填，手机格式必须满足(^$|^[+]?[0-9]+$)。
 
@@ -129,7 +129,7 @@ class ModCorpBasicDTO:
 
     @property
     def country(self):
-        """Gets the country of this ModCorpBasicDTO.
+        r"""Gets the country of this ModCorpBasicDTO.
 
         [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
@@ -140,7 +140,7 @@ class ModCorpBasicDTO:
 
     @country.setter
     def country(self, country):
-        """Sets the country of this ModCorpBasicDTO.
+        r"""Sets the country of this ModCorpBasicDTO.
 
         [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
@@ -151,7 +151,7 @@ class ModCorpBasicDTO:
 
     @property
     def fax(self):
-        """Gets the fax of this ModCorpBasicDTO.
+        r"""Gets the fax of this ModCorpBasicDTO.
 
         传真号码,格式必须满足(^$|^[+]?[0-9]+$)。
 
@@ -162,7 +162,7 @@ class ModCorpBasicDTO:
 
     @fax.setter
     def fax(self, fax):
-        """Sets the fax of this ModCorpBasicDTO.
+        r"""Sets the fax of this ModCorpBasicDTO.
 
         传真号码,格式必须满足(^$|^[+]?[0-9]+$)。
 
@@ -173,7 +173,7 @@ class ModCorpBasicDTO:
 
     @property
     def email(self):
-        """Gets the email of this ModCorpBasicDTO.
+        r"""Gets the email of this ModCorpBasicDTO.
 
         邮箱地址,格式必须满足(^$|^[\\\\w-+]+(\\\\.[\\\\w-+]+)*@[\\\\w-]+(\\\\.[\\\\w-]+)*(\\\\.[\\\\w-]{1,})$)。
 
@@ -184,7 +184,7 @@ class ModCorpBasicDTO:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this ModCorpBasicDTO.
+        r"""Sets the email of this ModCorpBasicDTO.
 
         邮箱地址,格式必须满足(^$|^[\\\\w-+]+(\\\\.[\\\\w-+]+)*@[\\\\w-]+(\\\\.[\\\\w-]+)*(\\\\.[\\\\w-]{1,})$)。
 
@@ -195,7 +195,7 @@ class ModCorpBasicDTO:
 
     @property
     def address(self):
-        """Gets the address of this ModCorpBasicDTO.
+        r"""Gets the address of this ModCorpBasicDTO.
 
         地址。
 
@@ -206,7 +206,7 @@ class ModCorpBasicDTO:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this ModCorpBasicDTO.
+        r"""Sets the address of this ModCorpBasicDTO.
 
         地址。
 
@@ -217,7 +217,7 @@ class ModCorpBasicDTO:
 
     @property
     def description(self):
-        """Gets the description of this ModCorpBasicDTO.
+        r"""Gets the description of this ModCorpBasicDTO.
 
         备注。
 
@@ -228,7 +228,7 @@ class ModCorpBasicDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ModCorpBasicDTO.
+        r"""Sets the description of this ModCorpBasicDTO.
 
         备注。
 

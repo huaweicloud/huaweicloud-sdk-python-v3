@@ -27,7 +27,7 @@ class DownloadAssetArchiveRequest:
     }
 
     def __init__(self, instance_id=None, archive_id=None):
-        """DownloadAssetArchiveRequest
+        r"""DownloadAssetArchiveRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DownloadAssetArchiveRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DownloadAssetArchiveRequest.
+        r"""Gets the instance_id of this DownloadAssetArchiveRequest.
 
         实例ID
 
@@ -59,7 +59,7 @@ class DownloadAssetArchiveRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DownloadAssetArchiveRequest.
+        r"""Sets the instance_id of this DownloadAssetArchiveRequest.
 
         实例ID
 
@@ -70,7 +70,7 @@ class DownloadAssetArchiveRequest:
 
     @property
     def archive_id(self):
-        """Gets the archive_id of this DownloadAssetArchiveRequest.
+        r"""Gets the archive_id of this DownloadAssetArchiveRequest.
 
         作业执行成功后，查询作业进度返回的entities.archive_id字段
 
@@ -81,7 +81,7 @@ class DownloadAssetArchiveRequest:
 
     @archive_id.setter
     def archive_id(self, archive_id):
-        """Sets the archive_id of this DownloadAssetArchiveRequest.
+        r"""Sets the archive_id of this DownloadAssetArchiveRequest.
 
         作业执行成功后，查询作业进度返回的entities.archive_id字段
 

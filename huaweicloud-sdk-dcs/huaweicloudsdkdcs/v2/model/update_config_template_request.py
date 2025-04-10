@@ -27,7 +27,7 @@ class UpdateConfigTemplateRequest:
     }
 
     def __init__(self, template_id=None, body=None):
-        """UpdateConfigTemplateRequest
+        r"""UpdateConfigTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateConfigTemplateRequest:
 
     @property
     def template_id(self):
-        """Gets the template_id of this UpdateConfigTemplateRequest.
+        r"""Gets the template_id of this UpdateConfigTemplateRequest.
 
         模板ID
 
@@ -60,7 +60,7 @@ class UpdateConfigTemplateRequest:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this UpdateConfigTemplateRequest.
+        r"""Sets the template_id of this UpdateConfigTemplateRequest.
 
         模板ID
 
@@ -71,7 +71,7 @@ class UpdateConfigTemplateRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateConfigTemplateRequest.
+        r"""Gets the body of this UpdateConfigTemplateRequest.
 
         :return: The body of this UpdateConfigTemplateRequest.
         :rtype: :class:`huaweicloudsdkdcs.v2.UpdateCustomTemplateBody`
@@ -80,7 +80,7 @@ class UpdateConfigTemplateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateConfigTemplateRequest.
+        r"""Sets the body of this UpdateConfigTemplateRequest.
 
         :param body: The body of this UpdateConfigTemplateRequest.
         :type body: :class:`huaweicloudsdkdcs.v2.UpdateCustomTemplateBody`

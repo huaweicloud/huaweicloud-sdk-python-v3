@@ -25,7 +25,7 @@ class EventCreateReq:
     }
 
     def __init__(self, systemevent=None):
-        """EventCreateReq
+        r"""EventCreateReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class EventCreateReq:
 
     @property
     def systemevent(self):
-        """Gets the systemevent of this EventCreateReq.
+        r"""Gets the systemevent of this EventCreateReq.
 
         :return: The systemevent of this EventCreateReq.
         :rtype: :class:`huaweicloudsdkief.v1.EventCreateDetail`
@@ -52,7 +52,7 @@ class EventCreateReq:
 
     @systemevent.setter
     def systemevent(self, systemevent):
-        """Sets the systemevent of this EventCreateReq.
+        r"""Sets the systemevent of this EventCreateReq.
 
         :param systemevent: The systemevent of this EventCreateReq.
         :type systemevent: :class:`huaweicloudsdkief.v1.EventCreateDetail`

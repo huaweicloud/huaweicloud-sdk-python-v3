@@ -31,7 +31,7 @@ class GroupTreeResponse:
     }
 
     def __init__(self, id=None, name=None, parent_id=None, children=None):
-        """GroupTreeResponse
+        r"""GroupTreeResponse
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class GroupTreeResponse:
 
     @property
     def id(self):
-        """Gets the id of this GroupTreeResponse.
+        r"""Gets the id of this GroupTreeResponse.
 
         分组id
 
@@ -75,7 +75,7 @@ class GroupTreeResponse:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this GroupTreeResponse.
+        r"""Sets the id of this GroupTreeResponse.
 
         分组id
 
@@ -86,7 +86,7 @@ class GroupTreeResponse:
 
     @property
     def name(self):
-        """Gets the name of this GroupTreeResponse.
+        r"""Gets the name of this GroupTreeResponse.
 
         分组名称
 
@@ -97,7 +97,7 @@ class GroupTreeResponse:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GroupTreeResponse.
+        r"""Sets the name of this GroupTreeResponse.
 
         分组名称
 
@@ -108,7 +108,7 @@ class GroupTreeResponse:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this GroupTreeResponse.
+        r"""Gets the parent_id of this GroupTreeResponse.
 
         父分组id
 
@@ -119,7 +119,7 @@ class GroupTreeResponse:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this GroupTreeResponse.
+        r"""Sets the parent_id of this GroupTreeResponse.
 
         父分组id
 
@@ -130,7 +130,7 @@ class GroupTreeResponse:
 
     @property
     def children(self):
-        """Gets the children of this GroupTreeResponse.
+        r"""Gets the children of this GroupTreeResponse.
 
         子分组
 
@@ -141,7 +141,7 @@ class GroupTreeResponse:
 
     @children.setter
     def children(self, children):
-        """Sets the children of this GroupTreeResponse.
+        r"""Sets the children of this GroupTreeResponse.
 
         子分组
 

@@ -30,7 +30,7 @@ class UpdateVpnUserResponse(SdkResponse):
     }
 
     def __init__(self, user=None, request_id=None, header_response_token=None):
-        """UpdateVpnUserResponse
+        r"""UpdateVpnUserResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class UpdateVpnUserResponse(SdkResponse):
 
     @property
     def user(self):
-        """Gets the user of this UpdateVpnUserResponse.
+        r"""Gets the user of this UpdateVpnUserResponse.
 
         :return: The user of this UpdateVpnUserResponse.
         :rtype: :class:`huaweicloudsdkvpn.v5.VpnUser`
@@ -67,7 +67,7 @@ class UpdateVpnUserResponse(SdkResponse):
 
     @user.setter
     def user(self, user):
-        """Sets the user of this UpdateVpnUserResponse.
+        r"""Sets the user of this UpdateVpnUserResponse.
 
         :param user: The user of this UpdateVpnUserResponse.
         :type user: :class:`huaweicloudsdkvpn.v5.VpnUser`
@@ -76,7 +76,7 @@ class UpdateVpnUserResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this UpdateVpnUserResponse.
+        r"""Gets the request_id of this UpdateVpnUserResponse.
 
         请求ID
 
@@ -87,7 +87,7 @@ class UpdateVpnUserResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this UpdateVpnUserResponse.
+        r"""Sets the request_id of this UpdateVpnUserResponse.
 
         请求ID
 
@@ -98,7 +98,7 @@ class UpdateVpnUserResponse(SdkResponse):
 
     @property
     def header_response_token(self):
-        """Gets the header_response_token of this UpdateVpnUserResponse.
+        r"""Gets the header_response_token of this UpdateVpnUserResponse.
 
         :return: The header_response_token of this UpdateVpnUserResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class UpdateVpnUserResponse(SdkResponse):
 
     @header_response_token.setter
     def header_response_token(self, header_response_token):
-        """Sets the header_response_token of this UpdateVpnUserResponse.
+        r"""Sets the header_response_token of this UpdateVpnUserResponse.
 
         :param header_response_token: The header_response_token of this UpdateVpnUserResponse.
         :type header_response_token: str

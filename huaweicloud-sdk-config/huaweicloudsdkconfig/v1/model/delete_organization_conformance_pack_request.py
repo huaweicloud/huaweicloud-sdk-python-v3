@@ -27,7 +27,7 @@ class DeleteOrganizationConformancePackRequest:
     }
 
     def __init__(self, organization_id=None, conformance_pack_id=None):
-        """DeleteOrganizationConformancePackRequest
+        r"""DeleteOrganizationConformancePackRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteOrganizationConformancePackRequest:
 
     @property
     def organization_id(self):
-        """Gets the organization_id of this DeleteOrganizationConformancePackRequest.
+        r"""Gets the organization_id of this DeleteOrganizationConformancePackRequest.
 
         组织ID。
 
@@ -59,7 +59,7 @@ class DeleteOrganizationConformancePackRequest:
 
     @organization_id.setter
     def organization_id(self, organization_id):
-        """Sets the organization_id of this DeleteOrganizationConformancePackRequest.
+        r"""Sets the organization_id of this DeleteOrganizationConformancePackRequest.
 
         组织ID。
 
@@ -70,7 +70,7 @@ class DeleteOrganizationConformancePackRequest:
 
     @property
     def conformance_pack_id(self):
-        """Gets the conformance_pack_id of this DeleteOrganizationConformancePackRequest.
+        r"""Gets the conformance_pack_id of this DeleteOrganizationConformancePackRequest.
 
         合规规则包ID。
 
@@ -81,7 +81,7 @@ class DeleteOrganizationConformancePackRequest:
 
     @conformance_pack_id.setter
     def conformance_pack_id(self, conformance_pack_id):
-        """Sets the conformance_pack_id of this DeleteOrganizationConformancePackRequest.
+        r"""Sets the conformance_pack_id of this DeleteOrganizationConformancePackRequest.
 
         合规规则包ID。
 

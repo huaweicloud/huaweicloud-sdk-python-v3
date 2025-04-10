@@ -113,7 +113,7 @@ class VehicleCertificateResult:
     }
 
     def __init__(self, certificate_number=None, issue_date=None, manufacture_name=None, vehicle_brand=None, vehicle_name=None, vehicle_model=None, vin=None, vehicle_color=None, chassis_model=None, chassis_id=None, chassis_certificate_number=None, engine_model=None, engine_number=None, fuel_type=None, displacement=None, power=None, emission_standard=None, fuel_consumption=None, overall_dimension_length=None, overall_dimension_width=None, overall_dimension_height=None, container_dimension_length=None, container_dimension_width=None, container_dimension_height=None, spring_quantity=None, tire_quantity=None, tire_size=None, front_wheel_track=None, rear_wheel_track=None, wheelbase=None, axle_load=None, axle_quantity=None, steering_form=None, total_weight=None, equipment_weight=None, maximum_laden_mass=None, mass_utilization_coefficient=None, traction_weight=None, maximum_load_mass=None, cab_passenger_capacity=None, passenger_capacity=None, max_design_speed=None, manufacture_date=None, confidence=None, text_location=None):
-        """VehicleCertificateResult
+        r"""VehicleCertificateResult
 
         The model defined in huaweicloud sdk
 
@@ -351,7 +351,7 @@ class VehicleCertificateResult:
 
     @property
     def certificate_number(self):
-        """Gets the certificate_number of this VehicleCertificateResult.
+        r"""Gets the certificate_number of this VehicleCertificateResult.
 
         合格证编号。 
 
@@ -362,7 +362,7 @@ class VehicleCertificateResult:
 
     @certificate_number.setter
     def certificate_number(self, certificate_number):
-        """Sets the certificate_number of this VehicleCertificateResult.
+        r"""Sets the certificate_number of this VehicleCertificateResult.
 
         合格证编号。 
 
@@ -373,7 +373,7 @@ class VehicleCertificateResult:
 
     @property
     def issue_date(self):
-        """Gets the issue_date of this VehicleCertificateResult.
+        r"""Gets the issue_date of this VehicleCertificateResult.
 
         发证日期。 
 
@@ -384,7 +384,7 @@ class VehicleCertificateResult:
 
     @issue_date.setter
     def issue_date(self, issue_date):
-        """Sets the issue_date of this VehicleCertificateResult.
+        r"""Sets the issue_date of this VehicleCertificateResult.
 
         发证日期。 
 
@@ -395,7 +395,7 @@ class VehicleCertificateResult:
 
     @property
     def manufacture_name(self):
-        """Gets the manufacture_name of this VehicleCertificateResult.
+        r"""Gets the manufacture_name of this VehicleCertificateResult.
 
         车辆制造企业名称。 
 
@@ -406,7 +406,7 @@ class VehicleCertificateResult:
 
     @manufacture_name.setter
     def manufacture_name(self, manufacture_name):
-        """Sets the manufacture_name of this VehicleCertificateResult.
+        r"""Sets the manufacture_name of this VehicleCertificateResult.
 
         车辆制造企业名称。 
 
@@ -417,7 +417,7 @@ class VehicleCertificateResult:
 
     @property
     def vehicle_brand(self):
-        """Gets the vehicle_brand of this VehicleCertificateResult.
+        r"""Gets the vehicle_brand of this VehicleCertificateResult.
 
         车辆品牌。 
 
@@ -428,7 +428,7 @@ class VehicleCertificateResult:
 
     @vehicle_brand.setter
     def vehicle_brand(self, vehicle_brand):
-        """Sets the vehicle_brand of this VehicleCertificateResult.
+        r"""Sets the vehicle_brand of this VehicleCertificateResult.
 
         车辆品牌。 
 
@@ -439,7 +439,7 @@ class VehicleCertificateResult:
 
     @property
     def vehicle_name(self):
-        """Gets the vehicle_name of this VehicleCertificateResult.
+        r"""Gets the vehicle_name of this VehicleCertificateResult.
 
         车辆名称。 
 
@@ -450,7 +450,7 @@ class VehicleCertificateResult:
 
     @vehicle_name.setter
     def vehicle_name(self, vehicle_name):
-        """Sets the vehicle_name of this VehicleCertificateResult.
+        r"""Sets the vehicle_name of this VehicleCertificateResult.
 
         车辆名称。 
 
@@ -461,7 +461,7 @@ class VehicleCertificateResult:
 
     @property
     def vehicle_model(self):
-        """Gets the vehicle_model of this VehicleCertificateResult.
+        r"""Gets the vehicle_model of this VehicleCertificateResult.
 
         车辆型号。 
 
@@ -472,7 +472,7 @@ class VehicleCertificateResult:
 
     @vehicle_model.setter
     def vehicle_model(self, vehicle_model):
-        """Sets the vehicle_model of this VehicleCertificateResult.
+        r"""Sets the vehicle_model of this VehicleCertificateResult.
 
         车辆型号。 
 
@@ -483,7 +483,7 @@ class VehicleCertificateResult:
 
     @property
     def vin(self):
-        """Gets the vin of this VehicleCertificateResult.
+        r"""Gets the vin of this VehicleCertificateResult.
 
         车架号。 
 
@@ -494,7 +494,7 @@ class VehicleCertificateResult:
 
     @vin.setter
     def vin(self, vin):
-        """Sets the vin of this VehicleCertificateResult.
+        r"""Sets the vin of this VehicleCertificateResult.
 
         车架号。 
 
@@ -505,7 +505,7 @@ class VehicleCertificateResult:
 
     @property
     def vehicle_color(self):
-        """Gets the vehicle_color of this VehicleCertificateResult.
+        r"""Gets the vehicle_color of this VehicleCertificateResult.
 
         车身颜色。 
 
@@ -516,7 +516,7 @@ class VehicleCertificateResult:
 
     @vehicle_color.setter
     def vehicle_color(self, vehicle_color):
-        """Sets the vehicle_color of this VehicleCertificateResult.
+        r"""Sets the vehicle_color of this VehicleCertificateResult.
 
         车身颜色。 
 
@@ -527,7 +527,7 @@ class VehicleCertificateResult:
 
     @property
     def chassis_model(self):
-        """Gets the chassis_model of this VehicleCertificateResult.
+        r"""Gets the chassis_model of this VehicleCertificateResult.
 
         底盘型号。 
 
@@ -538,7 +538,7 @@ class VehicleCertificateResult:
 
     @chassis_model.setter
     def chassis_model(self, chassis_model):
-        """Sets the chassis_model of this VehicleCertificateResult.
+        r"""Sets the chassis_model of this VehicleCertificateResult.
 
         底盘型号。 
 
@@ -549,7 +549,7 @@ class VehicleCertificateResult:
 
     @property
     def chassis_id(self):
-        """Gets the chassis_id of this VehicleCertificateResult.
+        r"""Gets the chassis_id of this VehicleCertificateResult.
 
         底盘ID。 
 
@@ -560,7 +560,7 @@ class VehicleCertificateResult:
 
     @chassis_id.setter
     def chassis_id(self, chassis_id):
-        """Sets the chassis_id of this VehicleCertificateResult.
+        r"""Sets the chassis_id of this VehicleCertificateResult.
 
         底盘ID。 
 
@@ -571,7 +571,7 @@ class VehicleCertificateResult:
 
     @property
     def chassis_certificate_number(self):
-        """Gets the chassis_certificate_number of this VehicleCertificateResult.
+        r"""Gets the chassis_certificate_number of this VehicleCertificateResult.
 
         底盘合格证编号。 
 
@@ -582,7 +582,7 @@ class VehicleCertificateResult:
 
     @chassis_certificate_number.setter
     def chassis_certificate_number(self, chassis_certificate_number):
-        """Sets the chassis_certificate_number of this VehicleCertificateResult.
+        r"""Sets the chassis_certificate_number of this VehicleCertificateResult.
 
         底盘合格证编号。 
 
@@ -593,7 +593,7 @@ class VehicleCertificateResult:
 
     @property
     def engine_model(self):
-        """Gets the engine_model of this VehicleCertificateResult.
+        r"""Gets the engine_model of this VehicleCertificateResult.
 
         发动机型号。 
 
@@ -604,7 +604,7 @@ class VehicleCertificateResult:
 
     @engine_model.setter
     def engine_model(self, engine_model):
-        """Sets the engine_model of this VehicleCertificateResult.
+        r"""Sets the engine_model of this VehicleCertificateResult.
 
         发动机型号。 
 
@@ -615,7 +615,7 @@ class VehicleCertificateResult:
 
     @property
     def engine_number(self):
-        """Gets the engine_number of this VehicleCertificateResult.
+        r"""Gets the engine_number of this VehicleCertificateResult.
 
         发动机号。 
 
@@ -626,7 +626,7 @@ class VehicleCertificateResult:
 
     @engine_number.setter
     def engine_number(self, engine_number):
-        """Sets the engine_number of this VehicleCertificateResult.
+        r"""Sets the engine_number of this VehicleCertificateResult.
 
         发动机号。 
 
@@ -637,7 +637,7 @@ class VehicleCertificateResult:
 
     @property
     def fuel_type(self):
-        """Gets the fuel_type of this VehicleCertificateResult.
+        r"""Gets the fuel_type of this VehicleCertificateResult.
 
         燃料种类。 
 
@@ -648,7 +648,7 @@ class VehicleCertificateResult:
 
     @fuel_type.setter
     def fuel_type(self, fuel_type):
-        """Sets the fuel_type of this VehicleCertificateResult.
+        r"""Sets the fuel_type of this VehicleCertificateResult.
 
         燃料种类。 
 
@@ -659,7 +659,7 @@ class VehicleCertificateResult:
 
     @property
     def displacement(self):
-        """Gets the displacement of this VehicleCertificateResult.
+        r"""Gets the displacement of this VehicleCertificateResult.
 
         排量。 
 
@@ -670,7 +670,7 @@ class VehicleCertificateResult:
 
     @displacement.setter
     def displacement(self, displacement):
-        """Sets the displacement of this VehicleCertificateResult.
+        r"""Sets the displacement of this VehicleCertificateResult.
 
         排量。 
 
@@ -681,7 +681,7 @@ class VehicleCertificateResult:
 
     @property
     def power(self):
-        """Gets the power of this VehicleCertificateResult.
+        r"""Gets the power of this VehicleCertificateResult.
 
         功率。 
 
@@ -692,7 +692,7 @@ class VehicleCertificateResult:
 
     @power.setter
     def power(self, power):
-        """Sets the power of this VehicleCertificateResult.
+        r"""Sets the power of this VehicleCertificateResult.
 
         功率。 
 
@@ -703,7 +703,7 @@ class VehicleCertificateResult:
 
     @property
     def emission_standard(self):
-        """Gets the emission_standard of this VehicleCertificateResult.
+        r"""Gets the emission_standard of this VehicleCertificateResult.
 
         排放标准。 
 
@@ -714,7 +714,7 @@ class VehicleCertificateResult:
 
     @emission_standard.setter
     def emission_standard(self, emission_standard):
-        """Sets the emission_standard of this VehicleCertificateResult.
+        r"""Sets the emission_standard of this VehicleCertificateResult.
 
         排放标准。 
 
@@ -725,7 +725,7 @@ class VehicleCertificateResult:
 
     @property
     def fuel_consumption(self):
-        """Gets the fuel_consumption of this VehicleCertificateResult.
+        r"""Gets the fuel_consumption of this VehicleCertificateResult.
 
         油耗。 
 
@@ -736,7 +736,7 @@ class VehicleCertificateResult:
 
     @fuel_consumption.setter
     def fuel_consumption(self, fuel_consumption):
-        """Sets the fuel_consumption of this VehicleCertificateResult.
+        r"""Sets the fuel_consumption of this VehicleCertificateResult.
 
         油耗。 
 
@@ -747,7 +747,7 @@ class VehicleCertificateResult:
 
     @property
     def overall_dimension_length(self):
-        """Gets the overall_dimension_length of this VehicleCertificateResult.
+        r"""Gets the overall_dimension_length of this VehicleCertificateResult.
 
         外廓尺寸-长。 
 
@@ -758,7 +758,7 @@ class VehicleCertificateResult:
 
     @overall_dimension_length.setter
     def overall_dimension_length(self, overall_dimension_length):
-        """Sets the overall_dimension_length of this VehicleCertificateResult.
+        r"""Sets the overall_dimension_length of this VehicleCertificateResult.
 
         外廓尺寸-长。 
 
@@ -769,7 +769,7 @@ class VehicleCertificateResult:
 
     @property
     def overall_dimension_width(self):
-        """Gets the overall_dimension_width of this VehicleCertificateResult.
+        r"""Gets the overall_dimension_width of this VehicleCertificateResult.
 
         外廓尺寸-宽。 
 
@@ -780,7 +780,7 @@ class VehicleCertificateResult:
 
     @overall_dimension_width.setter
     def overall_dimension_width(self, overall_dimension_width):
-        """Sets the overall_dimension_width of this VehicleCertificateResult.
+        r"""Sets the overall_dimension_width of this VehicleCertificateResult.
 
         外廓尺寸-宽。 
 
@@ -791,7 +791,7 @@ class VehicleCertificateResult:
 
     @property
     def overall_dimension_height(self):
-        """Gets the overall_dimension_height of this VehicleCertificateResult.
+        r"""Gets the overall_dimension_height of this VehicleCertificateResult.
 
         外廓尺寸-高。 
 
@@ -802,7 +802,7 @@ class VehicleCertificateResult:
 
     @overall_dimension_height.setter
     def overall_dimension_height(self, overall_dimension_height):
-        """Sets the overall_dimension_height of this VehicleCertificateResult.
+        r"""Sets the overall_dimension_height of this VehicleCertificateResult.
 
         外廓尺寸-高。 
 
@@ -813,7 +813,7 @@ class VehicleCertificateResult:
 
     @property
     def container_dimension_length(self):
-        """Gets the container_dimension_length of this VehicleCertificateResult.
+        r"""Gets the container_dimension_length of this VehicleCertificateResult.
 
         货厢内部尺寸-长。 
 
@@ -824,7 +824,7 @@ class VehicleCertificateResult:
 
     @container_dimension_length.setter
     def container_dimension_length(self, container_dimension_length):
-        """Sets the container_dimension_length of this VehicleCertificateResult.
+        r"""Sets the container_dimension_length of this VehicleCertificateResult.
 
         货厢内部尺寸-长。 
 
@@ -835,7 +835,7 @@ class VehicleCertificateResult:
 
     @property
     def container_dimension_width(self):
-        """Gets the container_dimension_width of this VehicleCertificateResult.
+        r"""Gets the container_dimension_width of this VehicleCertificateResult.
 
         货厢内部尺寸-宽。 
 
@@ -846,7 +846,7 @@ class VehicleCertificateResult:
 
     @container_dimension_width.setter
     def container_dimension_width(self, container_dimension_width):
-        """Sets the container_dimension_width of this VehicleCertificateResult.
+        r"""Sets the container_dimension_width of this VehicleCertificateResult.
 
         货厢内部尺寸-宽。 
 
@@ -857,7 +857,7 @@ class VehicleCertificateResult:
 
     @property
     def container_dimension_height(self):
-        """Gets the container_dimension_height of this VehicleCertificateResult.
+        r"""Gets the container_dimension_height of this VehicleCertificateResult.
 
         货厢内部尺寸-高。 
 
@@ -868,7 +868,7 @@ class VehicleCertificateResult:
 
     @container_dimension_height.setter
     def container_dimension_height(self, container_dimension_height):
-        """Sets the container_dimension_height of this VehicleCertificateResult.
+        r"""Sets the container_dimension_height of this VehicleCertificateResult.
 
         货厢内部尺寸-高。 
 
@@ -879,7 +879,7 @@ class VehicleCertificateResult:
 
     @property
     def spring_quantity(self):
-        """Gets the spring_quantity of this VehicleCertificateResult.
+        r"""Gets the spring_quantity of this VehicleCertificateResult.
 
         钢板弹簧片数。 
 
@@ -890,7 +890,7 @@ class VehicleCertificateResult:
 
     @spring_quantity.setter
     def spring_quantity(self, spring_quantity):
-        """Sets the spring_quantity of this VehicleCertificateResult.
+        r"""Sets the spring_quantity of this VehicleCertificateResult.
 
         钢板弹簧片数。 
 
@@ -901,7 +901,7 @@ class VehicleCertificateResult:
 
     @property
     def tire_quantity(self):
-        """Gets the tire_quantity of this VehicleCertificateResult.
+        r"""Gets the tire_quantity of this VehicleCertificateResult.
 
         轮胎数。 
 
@@ -912,7 +912,7 @@ class VehicleCertificateResult:
 
     @tire_quantity.setter
     def tire_quantity(self, tire_quantity):
-        """Sets the tire_quantity of this VehicleCertificateResult.
+        r"""Sets the tire_quantity of this VehicleCertificateResult.
 
         轮胎数。 
 
@@ -923,7 +923,7 @@ class VehicleCertificateResult:
 
     @property
     def tire_size(self):
-        """Gets the tire_size of this VehicleCertificateResult.
+        r"""Gets the tire_size of this VehicleCertificateResult.
 
         轮胎规格。 
 
@@ -934,7 +934,7 @@ class VehicleCertificateResult:
 
     @tire_size.setter
     def tire_size(self, tire_size):
-        """Sets the tire_size of this VehicleCertificateResult.
+        r"""Sets the tire_size of this VehicleCertificateResult.
 
         轮胎规格。 
 
@@ -945,7 +945,7 @@ class VehicleCertificateResult:
 
     @property
     def front_wheel_track(self):
-        """Gets the front_wheel_track of this VehicleCertificateResult.
+        r"""Gets the front_wheel_track of this VehicleCertificateResult.
 
         轮距-前。 
 
@@ -956,7 +956,7 @@ class VehicleCertificateResult:
 
     @front_wheel_track.setter
     def front_wheel_track(self, front_wheel_track):
-        """Sets the front_wheel_track of this VehicleCertificateResult.
+        r"""Sets the front_wheel_track of this VehicleCertificateResult.
 
         轮距-前。 
 
@@ -967,7 +967,7 @@ class VehicleCertificateResult:
 
     @property
     def rear_wheel_track(self):
-        """Gets the rear_wheel_track of this VehicleCertificateResult.
+        r"""Gets the rear_wheel_track of this VehicleCertificateResult.
 
         轮距-后。 
 
@@ -978,7 +978,7 @@ class VehicleCertificateResult:
 
     @rear_wheel_track.setter
     def rear_wheel_track(self, rear_wheel_track):
-        """Sets the rear_wheel_track of this VehicleCertificateResult.
+        r"""Sets the rear_wheel_track of this VehicleCertificateResult.
 
         轮距-后。 
 
@@ -989,7 +989,7 @@ class VehicleCertificateResult:
 
     @property
     def wheelbase(self):
-        """Gets the wheelbase of this VehicleCertificateResult.
+        r"""Gets the wheelbase of this VehicleCertificateResult.
 
         轴距。 
 
@@ -1000,7 +1000,7 @@ class VehicleCertificateResult:
 
     @wheelbase.setter
     def wheelbase(self, wheelbase):
-        """Sets the wheelbase of this VehicleCertificateResult.
+        r"""Sets the wheelbase of this VehicleCertificateResult.
 
         轴距。 
 
@@ -1011,7 +1011,7 @@ class VehicleCertificateResult:
 
     @property
     def axle_load(self):
-        """Gets the axle_load of this VehicleCertificateResult.
+        r"""Gets the axle_load of this VehicleCertificateResult.
 
         轴荷。 
 
@@ -1022,7 +1022,7 @@ class VehicleCertificateResult:
 
     @axle_load.setter
     def axle_load(self, axle_load):
-        """Sets the axle_load of this VehicleCertificateResult.
+        r"""Sets the axle_load of this VehicleCertificateResult.
 
         轴荷。 
 
@@ -1033,7 +1033,7 @@ class VehicleCertificateResult:
 
     @property
     def axle_quantity(self):
-        """Gets the axle_quantity of this VehicleCertificateResult.
+        r"""Gets the axle_quantity of this VehicleCertificateResult.
 
         轴数。 
 
@@ -1044,7 +1044,7 @@ class VehicleCertificateResult:
 
     @axle_quantity.setter
     def axle_quantity(self, axle_quantity):
-        """Sets the axle_quantity of this VehicleCertificateResult.
+        r"""Sets the axle_quantity of this VehicleCertificateResult.
 
         轴数。 
 
@@ -1055,7 +1055,7 @@ class VehicleCertificateResult:
 
     @property
     def steering_form(self):
-        """Gets the steering_form of this VehicleCertificateResult.
+        r"""Gets the steering_form of this VehicleCertificateResult.
 
         转向形式。 
 
@@ -1066,7 +1066,7 @@ class VehicleCertificateResult:
 
     @steering_form.setter
     def steering_form(self, steering_form):
-        """Sets the steering_form of this VehicleCertificateResult.
+        r"""Sets the steering_form of this VehicleCertificateResult.
 
         转向形式。 
 
@@ -1077,7 +1077,7 @@ class VehicleCertificateResult:
 
     @property
     def total_weight(self):
-        """Gets the total_weight of this VehicleCertificateResult.
+        r"""Gets the total_weight of this VehicleCertificateResult.
 
         总质量。 
 
@@ -1088,7 +1088,7 @@ class VehicleCertificateResult:
 
     @total_weight.setter
     def total_weight(self, total_weight):
-        """Sets the total_weight of this VehicleCertificateResult.
+        r"""Sets the total_weight of this VehicleCertificateResult.
 
         总质量。 
 
@@ -1099,7 +1099,7 @@ class VehicleCertificateResult:
 
     @property
     def equipment_weight(self):
-        """Gets the equipment_weight of this VehicleCertificateResult.
+        r"""Gets the equipment_weight of this VehicleCertificateResult.
 
         整备质量。 
 
@@ -1110,7 +1110,7 @@ class VehicleCertificateResult:
 
     @equipment_weight.setter
     def equipment_weight(self, equipment_weight):
-        """Sets the equipment_weight of this VehicleCertificateResult.
+        r"""Sets the equipment_weight of this VehicleCertificateResult.
 
         整备质量。 
 
@@ -1121,7 +1121,7 @@ class VehicleCertificateResult:
 
     @property
     def maximum_laden_mass(self):
-        """Gets the maximum_laden_mass of this VehicleCertificateResult.
+        r"""Gets the maximum_laden_mass of this VehicleCertificateResult.
 
         额定载质量。 
 
@@ -1132,7 +1132,7 @@ class VehicleCertificateResult:
 
     @maximum_laden_mass.setter
     def maximum_laden_mass(self, maximum_laden_mass):
-        """Sets the maximum_laden_mass of this VehicleCertificateResult.
+        r"""Sets the maximum_laden_mass of this VehicleCertificateResult.
 
         额定载质量。 
 
@@ -1143,7 +1143,7 @@ class VehicleCertificateResult:
 
     @property
     def mass_utilization_coefficient(self):
-        """Gets the mass_utilization_coefficient of this VehicleCertificateResult.
+        r"""Gets the mass_utilization_coefficient of this VehicleCertificateResult.
 
         载质量利用系数。 
 
@@ -1154,7 +1154,7 @@ class VehicleCertificateResult:
 
     @mass_utilization_coefficient.setter
     def mass_utilization_coefficient(self, mass_utilization_coefficient):
-        """Sets the mass_utilization_coefficient of this VehicleCertificateResult.
+        r"""Sets the mass_utilization_coefficient of this VehicleCertificateResult.
 
         载质量利用系数。 
 
@@ -1165,7 +1165,7 @@ class VehicleCertificateResult:
 
     @property
     def traction_weight(self):
-        """Gets the traction_weight of this VehicleCertificateResult.
+        r"""Gets the traction_weight of this VehicleCertificateResult.
 
         准牵引总质量。 
 
@@ -1176,7 +1176,7 @@ class VehicleCertificateResult:
 
     @traction_weight.setter
     def traction_weight(self, traction_weight):
-        """Sets the traction_weight of this VehicleCertificateResult.
+        r"""Sets the traction_weight of this VehicleCertificateResult.
 
         准牵引总质量。 
 
@@ -1187,7 +1187,7 @@ class VehicleCertificateResult:
 
     @property
     def maximum_load_mass(self):
-        """Gets the maximum_load_mass of this VehicleCertificateResult.
+        r"""Gets the maximum_load_mass of this VehicleCertificateResult.
 
         半挂车鞍座最大允许总质量。 
 
@@ -1198,7 +1198,7 @@ class VehicleCertificateResult:
 
     @maximum_load_mass.setter
     def maximum_load_mass(self, maximum_load_mass):
-        """Sets the maximum_load_mass of this VehicleCertificateResult.
+        r"""Sets the maximum_load_mass of this VehicleCertificateResult.
 
         半挂车鞍座最大允许总质量。 
 
@@ -1209,7 +1209,7 @@ class VehicleCertificateResult:
 
     @property
     def cab_passenger_capacity(self):
-        """Gets the cab_passenger_capacity of this VehicleCertificateResult.
+        r"""Gets the cab_passenger_capacity of this VehicleCertificateResult.
 
         驾驶室准乘人数。 
 
@@ -1220,7 +1220,7 @@ class VehicleCertificateResult:
 
     @cab_passenger_capacity.setter
     def cab_passenger_capacity(self, cab_passenger_capacity):
-        """Sets the cab_passenger_capacity of this VehicleCertificateResult.
+        r"""Sets the cab_passenger_capacity of this VehicleCertificateResult.
 
         驾驶室准乘人数。 
 
@@ -1231,7 +1231,7 @@ class VehicleCertificateResult:
 
     @property
     def passenger_capacity(self):
-        """Gets the passenger_capacity of this VehicleCertificateResult.
+        r"""Gets the passenger_capacity of this VehicleCertificateResult.
 
         额定载客。 
 
@@ -1242,7 +1242,7 @@ class VehicleCertificateResult:
 
     @passenger_capacity.setter
     def passenger_capacity(self, passenger_capacity):
-        """Sets the passenger_capacity of this VehicleCertificateResult.
+        r"""Sets the passenger_capacity of this VehicleCertificateResult.
 
         额定载客。 
 
@@ -1253,7 +1253,7 @@ class VehicleCertificateResult:
 
     @property
     def max_design_speed(self):
-        """Gets the max_design_speed of this VehicleCertificateResult.
+        r"""Gets the max_design_speed of this VehicleCertificateResult.
 
         最高设计车速。 
 
@@ -1264,7 +1264,7 @@ class VehicleCertificateResult:
 
     @max_design_speed.setter
     def max_design_speed(self, max_design_speed):
-        """Sets the max_design_speed of this VehicleCertificateResult.
+        r"""Sets the max_design_speed of this VehicleCertificateResult.
 
         最高设计车速。 
 
@@ -1275,7 +1275,7 @@ class VehicleCertificateResult:
 
     @property
     def manufacture_date(self):
-        """Gets the manufacture_date of this VehicleCertificateResult.
+        r"""Gets the manufacture_date of this VehicleCertificateResult.
 
         车辆制造日期。 
 
@@ -1286,7 +1286,7 @@ class VehicleCertificateResult:
 
     @manufacture_date.setter
     def manufacture_date(self, manufacture_date):
-        """Sets the manufacture_date of this VehicleCertificateResult.
+        r"""Sets the manufacture_date of this VehicleCertificateResult.
 
         车辆制造日期。 
 
@@ -1297,7 +1297,7 @@ class VehicleCertificateResult:
 
     @property
     def confidence(self):
-        """Gets the confidence of this VehicleCertificateResult.
+        r"""Gets the confidence of this VehicleCertificateResult.
 
         字段的置信度，取值范围0~1。 置信度越大，本次识别的字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于字段的准确率。 
 
@@ -1308,7 +1308,7 @@ class VehicleCertificateResult:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this VehicleCertificateResult.
+        r"""Sets the confidence of this VehicleCertificateResult.
 
         字段的置信度，取值范围0~1。 置信度越大，本次识别的字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于字段的准确率。 
 
@@ -1319,7 +1319,7 @@ class VehicleCertificateResult:
 
     @property
     def text_location(self):
-        """Gets the text_location of this VehicleCertificateResult.
+        r"""Gets the text_location of this VehicleCertificateResult.
 
         对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -1330,7 +1330,7 @@ class VehicleCertificateResult:
 
     @text_location.setter
     def text_location(self, text_location):
-        """Sets the text_location of this VehicleCertificateResult.
+        r"""Sets the text_location of this VehicleCertificateResult.
 
         对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 

@@ -29,7 +29,7 @@ class ListNodeSessionsResult:
     }
 
     def __init__(self, node_id=None, total_count=None, sessions=None):
-        """ListNodeSessionsResult
+        r"""ListNodeSessionsResult
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListNodeSessionsResult:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ListNodeSessionsResult.
+        r"""Gets the node_id of this ListNodeSessionsResult.
 
         节点ID。
 
@@ -67,7 +67,7 @@ class ListNodeSessionsResult:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ListNodeSessionsResult.
+        r"""Sets the node_id of this ListNodeSessionsResult.
 
         节点ID。
 
@@ -78,7 +78,7 @@ class ListNodeSessionsResult:
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListNodeSessionsResult.
+        r"""Gets the total_count of this ListNodeSessionsResult.
 
         总会话数。
 
@@ -89,7 +89,7 @@ class ListNodeSessionsResult:
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListNodeSessionsResult.
+        r"""Sets the total_count of this ListNodeSessionsResult.
 
         总会话数。
 
@@ -100,7 +100,7 @@ class ListNodeSessionsResult:
 
     @property
     def sessions(self):
-        """Gets the sessions of this ListNodeSessionsResult.
+        r"""Gets the sessions of this ListNodeSessionsResult.
 
         节点会话详细信息列表。
 
@@ -111,7 +111,7 @@ class ListNodeSessionsResult:
 
     @sessions.setter
     def sessions(self, sessions):
-        """Sets the sessions of this ListNodeSessionsResult.
+        r"""Sets the sessions of this ListNodeSessionsResult.
 
         节点会话详细信息列表。
 

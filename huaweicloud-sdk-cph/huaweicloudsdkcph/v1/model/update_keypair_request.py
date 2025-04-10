@@ -25,7 +25,7 @@ class UpdateKeypairRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateKeypairRequest
+        r"""UpdateKeypairRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateKeypairRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateKeypairRequest.
+        r"""Gets the body of this UpdateKeypairRequest.
 
         :return: The body of this UpdateKeypairRequest.
         :rtype: :class:`huaweicloudsdkcph.v1.UpdateKeypairRequestBody`
@@ -52,7 +52,7 @@ class UpdateKeypairRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateKeypairRequest.
+        r"""Sets the body of this UpdateKeypairRequest.
 
         :param body: The body of this UpdateKeypairRequest.
         :type body: :class:`huaweicloudsdkcph.v1.UpdateKeypairRequestBody`

@@ -28,7 +28,7 @@ class BatchExecuteAssetActionResponse(SdkResponse):
     }
 
     def __init__(self, results=None, x_request_id=None):
-        """BatchExecuteAssetActionResponse
+        r"""BatchExecuteAssetActionResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchExecuteAssetActionResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this BatchExecuteAssetActionResponse.
+        r"""Gets the results of this BatchExecuteAssetActionResponse.
 
         批量操作结果
 
@@ -62,7 +62,7 @@ class BatchExecuteAssetActionResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this BatchExecuteAssetActionResponse.
+        r"""Sets the results of this BatchExecuteAssetActionResponse.
 
         批量操作结果
 
@@ -73,7 +73,7 @@ class BatchExecuteAssetActionResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this BatchExecuteAssetActionResponse.
+        r"""Gets the x_request_id of this BatchExecuteAssetActionResponse.
 
         :return: The x_request_id of this BatchExecuteAssetActionResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class BatchExecuteAssetActionResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this BatchExecuteAssetActionResponse.
+        r"""Sets the x_request_id of this BatchExecuteAssetActionResponse.
 
         :param x_request_id: The x_request_id of this BatchExecuteAssetActionResponse.
         :type x_request_id: str

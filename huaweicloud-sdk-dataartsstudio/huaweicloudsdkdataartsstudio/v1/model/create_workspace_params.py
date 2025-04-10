@@ -33,7 +33,7 @@ class CreateWorkspaceParams:
     }
 
     def __init__(self, bad_record_location_name=None, description=None, eps_id=None, job_log_location_name=None, name=None):
-        """CreateWorkspaceParams
+        r"""CreateWorkspaceParams
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class CreateWorkspaceParams:
 
     @property
     def bad_record_location_name(self):
-        """Gets the bad_record_location_name of this CreateWorkspaceParams.
+        r"""Gets the bad_record_location_name of this CreateWorkspaceParams.
 
         DLI脏数据OBS路径
 
@@ -80,7 +80,7 @@ class CreateWorkspaceParams:
 
     @bad_record_location_name.setter
     def bad_record_location_name(self, bad_record_location_name):
-        """Sets the bad_record_location_name of this CreateWorkspaceParams.
+        r"""Sets the bad_record_location_name of this CreateWorkspaceParams.
 
         DLI脏数据OBS路径
 
@@ -91,7 +91,7 @@ class CreateWorkspaceParams:
 
     @property
     def description(self):
-        """Gets the description of this CreateWorkspaceParams.
+        r"""Gets the description of this CreateWorkspaceParams.
 
         工作空间描述
 
@@ -102,7 +102,7 @@ class CreateWorkspaceParams:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateWorkspaceParams.
+        r"""Sets the description of this CreateWorkspaceParams.
 
         工作空间描述
 
@@ -113,7 +113,7 @@ class CreateWorkspaceParams:
 
     @property
     def eps_id(self):
-        """Gets the eps_id of this CreateWorkspaceParams.
+        r"""Gets the eps_id of this CreateWorkspaceParams.
 
         企业项目id，如果当前为公有云，且用户开启企业项目，则必选
 
@@ -124,7 +124,7 @@ class CreateWorkspaceParams:
 
     @eps_id.setter
     def eps_id(self, eps_id):
-        """Sets the eps_id of this CreateWorkspaceParams.
+        r"""Sets the eps_id of this CreateWorkspaceParams.
 
         企业项目id，如果当前为公有云，且用户开启企业项目，则必选
 
@@ -135,7 +135,7 @@ class CreateWorkspaceParams:
 
     @property
     def job_log_location_name(self):
-        """Gets the job_log_location_name of this CreateWorkspaceParams.
+        r"""Gets the job_log_location_name of this CreateWorkspaceParams.
 
         作业日志OBS路径
 
@@ -146,7 +146,7 @@ class CreateWorkspaceParams:
 
     @job_log_location_name.setter
     def job_log_location_name(self, job_log_location_name):
-        """Sets the job_log_location_name of this CreateWorkspaceParams.
+        r"""Sets the job_log_location_name of this CreateWorkspaceParams.
 
         作业日志OBS路径
 
@@ -157,7 +157,7 @@ class CreateWorkspaceParams:
 
     @property
     def name(self):
-        """Gets the name of this CreateWorkspaceParams.
+        r"""Gets the name of this CreateWorkspaceParams.
 
         工作空间名称
 
@@ -168,7 +168,7 @@ class CreateWorkspaceParams:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateWorkspaceParams.
+        r"""Sets the name of this CreateWorkspaceParams.
 
         工作空间名称
 

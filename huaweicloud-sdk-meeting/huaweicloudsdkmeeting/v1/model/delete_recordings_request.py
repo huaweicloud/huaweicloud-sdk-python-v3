@@ -31,7 +31,7 @@ class DeleteRecordingsRequest:
     }
 
     def __init__(self, conf_uui_ds=None, user_uuid=None, x_authorization_type=None, x_site_id=None):
-        """DeleteRecordingsRequest
+        r"""DeleteRecordingsRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class DeleteRecordingsRequest:
 
     @property
     def conf_uui_ds(self):
-        """Gets the conf_uui_ds of this DeleteRecordingsRequest.
+        r"""Gets the conf_uui_ds of this DeleteRecordingsRequest.
 
         会议UUID列表，多个会议UUID之间以英文逗号隔开。
 
@@ -74,7 +74,7 @@ class DeleteRecordingsRequest:
 
     @conf_uui_ds.setter
     def conf_uui_ds(self, conf_uui_ds):
-        """Sets the conf_uui_ds of this DeleteRecordingsRequest.
+        r"""Sets the conf_uui_ds of this DeleteRecordingsRequest.
 
         会议UUID列表，多个会议UUID之间以英文逗号隔开。
 
@@ -85,7 +85,7 @@ class DeleteRecordingsRequest:
 
     @property
     def user_uuid(self):
-        """Gets the user_uuid of this DeleteRecordingsRequest.
+        r"""Gets the user_uuid of this DeleteRecordingsRequest.
 
         用户的UUID。 > 该参数将废弃，请勿使用。 
 
@@ -96,7 +96,7 @@ class DeleteRecordingsRequest:
 
     @user_uuid.setter
     def user_uuid(self, user_uuid):
-        """Sets the user_uuid of this DeleteRecordingsRequest.
+        r"""Sets the user_uuid of this DeleteRecordingsRequest.
 
         用户的UUID。 > 该参数将废弃，请勿使用。 
 
@@ -107,7 +107,7 @@ class DeleteRecordingsRequest:
 
     @property
     def x_authorization_type(self):
-        """Gets the x_authorization_type of this DeleteRecordingsRequest.
+        r"""Gets the x_authorization_type of this DeleteRecordingsRequest.
 
         标识是否为第三方portal过来的请求。 > 该参数将废弃，请勿使用。 
 
@@ -118,7 +118,7 @@ class DeleteRecordingsRequest:
 
     @x_authorization_type.setter
     def x_authorization_type(self, x_authorization_type):
-        """Sets the x_authorization_type of this DeleteRecordingsRequest.
+        r"""Sets the x_authorization_type of this DeleteRecordingsRequest.
 
         标识是否为第三方portal过来的请求。 > 该参数将废弃，请勿使用。 
 
@@ -129,7 +129,7 @@ class DeleteRecordingsRequest:
 
     @property
     def x_site_id(self):
-        """Gets the x_site_id of this DeleteRecordingsRequest.
+        r"""Gets the x_site_id of this DeleteRecordingsRequest.
 
         用于区分到哪个HCSO站点鉴权。 > 该参数将废弃，请勿使用。 
 
@@ -140,7 +140,7 @@ class DeleteRecordingsRequest:
 
     @x_site_id.setter
     def x_site_id(self, x_site_id):
-        """Sets the x_site_id of this DeleteRecordingsRequest.
+        r"""Sets the x_site_id of this DeleteRecordingsRequest.
 
         用于区分到哪个HCSO站点鉴权。 > 该参数将废弃，请勿使用。 
 

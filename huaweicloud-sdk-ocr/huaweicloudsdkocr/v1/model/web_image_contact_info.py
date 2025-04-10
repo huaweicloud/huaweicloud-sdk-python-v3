@@ -35,7 +35,7 @@ class WebImageContactInfo:
     }
 
     def __init__(self, name=None, phone=None, province=None, city=None, district=None, detail_address=None):
-        """WebImageContactInfo
+        r"""WebImageContactInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class WebImageContactInfo:
 
     @property
     def name(self):
-        """Gets the name of this WebImageContactInfo.
+        r"""Gets the name of this WebImageContactInfo.
 
         传入contact_info时的返回，为姓名。 
 
@@ -89,7 +89,7 @@ class WebImageContactInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this WebImageContactInfo.
+        r"""Sets the name of this WebImageContactInfo.
 
         传入contact_info时的返回，为姓名。 
 
@@ -100,7 +100,7 @@ class WebImageContactInfo:
 
     @property
     def phone(self):
-        """Gets the phone of this WebImageContactInfo.
+        r"""Gets the phone of this WebImageContactInfo.
 
         传入contact_info时的返回，联系电话。 
 
@@ -111,7 +111,7 @@ class WebImageContactInfo:
 
     @phone.setter
     def phone(self, phone):
-        """Sets the phone of this WebImageContactInfo.
+        r"""Sets the phone of this WebImageContactInfo.
 
         传入contact_info时的返回，联系电话。 
 
@@ -122,7 +122,7 @@ class WebImageContactInfo:
 
     @property
     def province(self):
-        """Gets the province of this WebImageContactInfo.
+        r"""Gets the province of this WebImageContactInfo.
 
         传入contact_info时的返回，省。 
 
@@ -133,7 +133,7 @@ class WebImageContactInfo:
 
     @province.setter
     def province(self, province):
-        """Sets the province of this WebImageContactInfo.
+        r"""Sets the province of this WebImageContactInfo.
 
         传入contact_info时的返回，省。 
 
@@ -144,7 +144,7 @@ class WebImageContactInfo:
 
     @property
     def city(self):
-        """Gets the city of this WebImageContactInfo.
+        r"""Gets the city of this WebImageContactInfo.
 
         传入contact_info时的返回，市。 
 
@@ -155,7 +155,7 @@ class WebImageContactInfo:
 
     @city.setter
     def city(self, city):
-        """Sets the city of this WebImageContactInfo.
+        r"""Sets the city of this WebImageContactInfo.
 
         传入contact_info时的返回，市。 
 
@@ -166,7 +166,7 @@ class WebImageContactInfo:
 
     @property
     def district(self):
-        """Gets the district of this WebImageContactInfo.
+        r"""Gets the district of this WebImageContactInfo.
 
         传入contact_info时的返回，县区。 
 
@@ -177,7 +177,7 @@ class WebImageContactInfo:
 
     @district.setter
     def district(self, district):
-        """Sets the district of this WebImageContactInfo.
+        r"""Sets the district of this WebImageContactInfo.
 
         传入contact_info时的返回，县区。 
 
@@ -188,7 +188,7 @@ class WebImageContactInfo:
 
     @property
     def detail_address(self):
-        """Gets the detail_address of this WebImageContactInfo.
+        r"""Gets the detail_address of this WebImageContactInfo.
 
         传入contact_info时的返回，详细地址（不含省市区）。 
 
@@ -199,7 +199,7 @@ class WebImageContactInfo:
 
     @detail_address.setter
     def detail_address(self, detail_address):
-        """Sets the detail_address of this WebImageContactInfo.
+        r"""Sets the detail_address of this WebImageContactInfo.
 
         传入contact_info时的返回，详细地址（不含省市区）。 
 

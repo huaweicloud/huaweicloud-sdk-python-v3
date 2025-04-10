@@ -24,7 +24,7 @@ class AllowGuestUnmuteResponse(SdkResponse):
     }
 
     def __init__(self):
-        """AllowGuestUnmuteResponse
+        r"""AllowGuestUnmuteResponse
 
         The model defined in huaweicloud sdk
 

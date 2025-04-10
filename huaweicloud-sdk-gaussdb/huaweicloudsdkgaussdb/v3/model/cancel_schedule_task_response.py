@@ -26,7 +26,7 @@ class CancelScheduleTaskResponse(SdkResponse):
     }
 
     def __init__(self, job_ids=None):
-        """CancelScheduleTaskResponse
+        r"""CancelScheduleTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CancelScheduleTaskResponse(SdkResponse):
 
     @property
     def job_ids(self):
-        """Gets the job_ids of this CancelScheduleTaskResponse.
+        r"""Gets the job_ids of this CancelScheduleTaskResponse.
 
         任务ID，表示成功取消定时调度任务的ID。
 
@@ -55,7 +55,7 @@ class CancelScheduleTaskResponse(SdkResponse):
 
     @job_ids.setter
     def job_ids(self, job_ids):
-        """Sets the job_ids of this CancelScheduleTaskResponse.
+        r"""Sets the job_ids of this CancelScheduleTaskResponse.
 
         任务ID，表示成功取消定时调度任务的ID。
 

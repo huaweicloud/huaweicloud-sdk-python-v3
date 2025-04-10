@@ -30,7 +30,7 @@ class List2dModelTrainingJobResponse(SdkResponse):
     }
 
     def __init__(self, count=None, jobs=None, x_request_id=None):
-        """List2dModelTrainingJobResponse
+        r"""List2dModelTrainingJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class List2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this List2dModelTrainingJobResponse.
+        r"""Gets the count of this List2dModelTrainingJobResponse.
 
         分身数字人模型训练任务数量。
 
@@ -69,7 +69,7 @@ class List2dModelTrainingJobResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this List2dModelTrainingJobResponse.
+        r"""Sets the count of this List2dModelTrainingJobResponse.
 
         分身数字人模型训练任务数量。
 
@@ -80,7 +80,7 @@ class List2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def jobs(self):
-        """Gets the jobs of this List2dModelTrainingJobResponse.
+        r"""Gets the jobs of this List2dModelTrainingJobResponse.
 
         分身数字人模型训练任务列表。
 
@@ -91,7 +91,7 @@ class List2dModelTrainingJobResponse(SdkResponse):
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this List2dModelTrainingJobResponse.
+        r"""Sets the jobs of this List2dModelTrainingJobResponse.
 
         分身数字人模型训练任务列表。
 
@@ -102,7 +102,7 @@ class List2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this List2dModelTrainingJobResponse.
+        r"""Gets the x_request_id of this List2dModelTrainingJobResponse.
 
         :return: The x_request_id of this List2dModelTrainingJobResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class List2dModelTrainingJobResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this List2dModelTrainingJobResponse.
+        r"""Sets the x_request_id of this List2dModelTrainingJobResponse.
 
         :param x_request_id: The x_request_id of this List2dModelTrainingJobResponse.
         :type x_request_id: str

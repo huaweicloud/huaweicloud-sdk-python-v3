@@ -26,7 +26,7 @@ class UpdatePluginsResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """UpdatePluginsResponse
+        r"""UpdatePluginsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdatePluginsResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdatePluginsResponse.
+        r"""Gets the job_id of this UpdatePluginsResponse.
 
         后台任务ID。
 
@@ -55,7 +55,7 @@ class UpdatePluginsResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdatePluginsResponse.
+        r"""Sets the job_id of this UpdatePluginsResponse.
 
         后台任务ID。
 

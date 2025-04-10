@@ -25,7 +25,7 @@ class CreateCentralNetworkRequestBody:
     }
 
     def __init__(self, central_network=None):
-        """CreateCentralNetworkRequestBody
+        r"""CreateCentralNetworkRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateCentralNetworkRequestBody:
 
     @property
     def central_network(self):
-        """Gets the central_network of this CreateCentralNetworkRequestBody.
+        r"""Gets the central_network of this CreateCentralNetworkRequestBody.
 
         :return: The central_network of this CreateCentralNetworkRequestBody.
         :rtype: :class:`huaweicloudsdkcc.v3.CreateCentralNetwork`
@@ -51,7 +51,7 @@ class CreateCentralNetworkRequestBody:
 
     @central_network.setter
     def central_network(self, central_network):
-        """Sets the central_network of this CreateCentralNetworkRequestBody.
+        r"""Sets the central_network of this CreateCentralNetworkRequestBody.
 
         :param central_network: The central_network of this CreateCentralNetworkRequestBody.
         :type central_network: :class:`huaweicloudsdkcc.v3.CreateCentralNetwork`

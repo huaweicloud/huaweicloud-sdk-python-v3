@@ -29,7 +29,7 @@ class DataStoreList:
     }
 
     def __init__(self, datastore_name=None, version=None, mode=None):
-        """DataStoreList
+        r"""DataStoreList
 
         The model defined in huaweicloud sdk
 
@@ -37,7 +37,7 @@ class DataStoreList:
         :type datastore_name: str
         :param version: 数据库引擎版本。
         :type version: str
-        :param mode: 实例类型。 取值为“Cluster”，表示GeminiDB Cassandra、GeminiDB Influx、GeminiDB Redis集群实例类型。 取值为“InfluxdbSingle”，表示GeminiDB Influx单节点实例类型。 取值为“ReplicaSet”，表示GeminiDB Mongo副本集实例类型。
+        :param mode: 数据库实例类型。 取值范围： 取值为“Cluster”，表示GeminiDB Cassandra经典部署模式集群、GeminiDB Influx经典部署模式集群、GeminiDB Redis Proxy集群经典部署模式集群实例类型。 取值为“CloudNativeCluster”, 表示GeminiDB Cassandra云原生部署模式实例类型。 取值为“InfluxdbSingle”，表示GeminiDB Influx经典部署模式单节点类型实例类型。 取值为“ReplicaSet”，表示GeminiDB Mongo副本集实例类型。
         :type mode: str
         """
         
@@ -54,7 +54,7 @@ class DataStoreList:
 
     @property
     def datastore_name(self):
-        """Gets the datastore_name of this DataStoreList.
+        r"""Gets the datastore_name of this DataStoreList.
 
         数据库引擎。
 
@@ -65,7 +65,7 @@ class DataStoreList:
 
     @datastore_name.setter
     def datastore_name(self, datastore_name):
-        """Sets the datastore_name of this DataStoreList.
+        r"""Sets the datastore_name of this DataStoreList.
 
         数据库引擎。
 
@@ -76,7 +76,7 @@ class DataStoreList:
 
     @property
     def version(self):
-        """Gets the version of this DataStoreList.
+        r"""Gets the version of this DataStoreList.
 
         数据库引擎版本。
 
@@ -87,7 +87,7 @@ class DataStoreList:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this DataStoreList.
+        r"""Sets the version of this DataStoreList.
 
         数据库引擎版本。
 
@@ -98,9 +98,9 @@ class DataStoreList:
 
     @property
     def mode(self):
-        """Gets the mode of this DataStoreList.
+        r"""Gets the mode of this DataStoreList.
 
-        实例类型。 取值为“Cluster”，表示GeminiDB Cassandra、GeminiDB Influx、GeminiDB Redis集群实例类型。 取值为“InfluxdbSingle”，表示GeminiDB Influx单节点实例类型。 取值为“ReplicaSet”，表示GeminiDB Mongo副本集实例类型。
+        数据库实例类型。 取值范围： 取值为“Cluster”，表示GeminiDB Cassandra经典部署模式集群、GeminiDB Influx经典部署模式集群、GeminiDB Redis Proxy集群经典部署模式集群实例类型。 取值为“CloudNativeCluster”, 表示GeminiDB Cassandra云原生部署模式实例类型。 取值为“InfluxdbSingle”，表示GeminiDB Influx经典部署模式单节点类型实例类型。 取值为“ReplicaSet”，表示GeminiDB Mongo副本集实例类型。
 
         :return: The mode of this DataStoreList.
         :rtype: str
@@ -109,9 +109,9 @@ class DataStoreList:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this DataStoreList.
+        r"""Sets the mode of this DataStoreList.
 
-        实例类型。 取值为“Cluster”，表示GeminiDB Cassandra、GeminiDB Influx、GeminiDB Redis集群实例类型。 取值为“InfluxdbSingle”，表示GeminiDB Influx单节点实例类型。 取值为“ReplicaSet”，表示GeminiDB Mongo副本集实例类型。
+        数据库实例类型。 取值范围： 取值为“Cluster”，表示GeminiDB Cassandra经典部署模式集群、GeminiDB Influx经典部署模式集群、GeminiDB Redis Proxy集群经典部署模式集群实例类型。 取值为“CloudNativeCluster”, 表示GeminiDB Cassandra云原生部署模式实例类型。 取值为“InfluxdbSingle”，表示GeminiDB Influx经典部署模式单节点类型实例类型。 取值为“ReplicaSet”，表示GeminiDB Mongo副本集实例类型。
 
         :param mode: The mode of this DataStoreList.
         :type mode: str

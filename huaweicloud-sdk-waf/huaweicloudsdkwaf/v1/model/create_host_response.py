@@ -64,7 +64,7 @@ class CreateHostResponse(SdkResponse):
     }
 
     def __init__(self, id=None, hostname=None, policyid=None, access_code=None, protect_status=None, access_status=None, lb_algorithm=None, protocol=None, certificateid=None, certificatename=None, server=None, proxy=None, timestamp=None, exclusive_ip=None, web_tag=None, http2_enable=None, block_page=None, flag=None, extend=None, forward_header_map=None):
-        """CreateHostResponse
+        r"""CreateHostResponse
 
         The model defined in huaweicloud sdk
 
@@ -177,7 +177,7 @@ class CreateHostResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateHostResponse.
+        r"""Gets the id of this CreateHostResponse.
 
         域名id
 
@@ -188,7 +188,7 @@ class CreateHostResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateHostResponse.
+        r"""Sets the id of this CreateHostResponse.
 
         域名id
 
@@ -199,7 +199,7 @@ class CreateHostResponse(SdkResponse):
 
     @property
     def hostname(self):
-        """Gets the hostname of this CreateHostResponse.
+        r"""Gets the hostname of this CreateHostResponse.
 
         创建的云模式防护域名
 
@@ -210,7 +210,7 @@ class CreateHostResponse(SdkResponse):
 
     @hostname.setter
     def hostname(self, hostname):
-        """Sets the hostname of this CreateHostResponse.
+        r"""Sets the hostname of this CreateHostResponse.
 
         创建的云模式防护域名
 
@@ -221,7 +221,7 @@ class CreateHostResponse(SdkResponse):
 
     @property
     def policyid(self):
-        """Gets the policyid of this CreateHostResponse.
+        r"""Gets the policyid of this CreateHostResponse.
 
         策略id
 
@@ -232,7 +232,7 @@ class CreateHostResponse(SdkResponse):
 
     @policyid.setter
     def policyid(self, policyid):
-        """Sets the policyid of this CreateHostResponse.
+        r"""Sets the policyid of this CreateHostResponse.
 
         策略id
 
@@ -243,7 +243,7 @@ class CreateHostResponse(SdkResponse):
 
     @property
     def access_code(self):
-        """Gets the access_code of this CreateHostResponse.
+        r"""Gets the access_code of this CreateHostResponse.
 
         cname前缀
 
@@ -254,7 +254,7 @@ class CreateHostResponse(SdkResponse):
 
     @access_code.setter
     def access_code(self, access_code):
-        """Sets the access_code of this CreateHostResponse.
+        r"""Sets the access_code of this CreateHostResponse.
 
         cname前缀
 
@@ -265,7 +265,7 @@ class CreateHostResponse(SdkResponse):
 
     @property
     def protect_status(self):
-        """Gets the protect_status of this CreateHostResponse.
+        r"""Gets the protect_status of this CreateHostResponse.
 
         域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
 
@@ -276,7 +276,7 @@ class CreateHostResponse(SdkResponse):
 
     @protect_status.setter
     def protect_status(self, protect_status):
-        """Sets the protect_status of this CreateHostResponse.
+        r"""Sets the protect_status of this CreateHostResponse.
 
         域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
 
@@ -287,7 +287,7 @@ class CreateHostResponse(SdkResponse):
 
     @property
     def access_status(self):
-        """Gets the access_status of this CreateHostResponse.
+        r"""Gets the access_status of this CreateHostResponse.
 
         域名接入状态，0表示未接入，1表示已接入
 
@@ -298,7 +298,7 @@ class CreateHostResponse(SdkResponse):
 
     @access_status.setter
     def access_status(self, access_status):
-        """Sets the access_status of this CreateHostResponse.
+        r"""Sets the access_status of this CreateHostResponse.
 
         域名接入状态，0表示未接入，1表示已接入
 
@@ -309,7 +309,7 @@ class CreateHostResponse(SdkResponse):
 
     @property
     def lb_algorithm(self):
-        """Gets the lb_algorithm of this CreateHostResponse.
+        r"""Gets the lb_algorithm of this CreateHostResponse.
 
         LB负载均衡，仅专业版（原企业版）和铂金版（原旗舰版）支持配置负载均衡算法   - 源IP Hash：将某个IP的请求定向到同一个服务器   - 加权轮询：所有请求将按权重轮流分配给源站服务器   - Session Hash：将某个Session标识的请求定向到同一个源站服务器，请确保在域名添加完毕后配置攻击惩罚的流量标识，否则Session Hash配置不生效
 
@@ -320,7 +320,7 @@ class CreateHostResponse(SdkResponse):
 
     @lb_algorithm.setter
     def lb_algorithm(self, lb_algorithm):
-        """Sets the lb_algorithm of this CreateHostResponse.
+        r"""Sets the lb_algorithm of this CreateHostResponse.
 
         LB负载均衡，仅专业版（原企业版）和铂金版（原旗舰版）支持配置负载均衡算法   - 源IP Hash：将某个IP的请求定向到同一个服务器   - 加权轮询：所有请求将按权重轮流分配给源站服务器   - Session Hash：将某个Session标识的请求定向到同一个源站服务器，请确保在域名添加完毕后配置攻击惩罚的流量标识，否则Session Hash配置不生效
 
@@ -331,7 +331,7 @@ class CreateHostResponse(SdkResponse):
 
     @property
     def protocol(self):
-        """Gets the protocol of this CreateHostResponse.
+        r"""Gets the protocol of this CreateHostResponse.
 
         返回的客户端协议类型
 
@@ -342,7 +342,7 @@ class CreateHostResponse(SdkResponse):
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this CreateHostResponse.
+        r"""Sets the protocol of this CreateHostResponse.
 
         返回的客户端协议类型
 
@@ -353,7 +353,7 @@ class CreateHostResponse(SdkResponse):
 
     @property
     def certificateid(self):
-        """Gets the certificateid of this CreateHostResponse.
+        r"""Gets the certificateid of this CreateHostResponse.
 
         返回的证书id
 
@@ -364,7 +364,7 @@ class CreateHostResponse(SdkResponse):
 
     @certificateid.setter
     def certificateid(self, certificateid):
-        """Sets the certificateid of this CreateHostResponse.
+        r"""Sets the certificateid of this CreateHostResponse.
 
         返回的证书id
 
@@ -375,7 +375,7 @@ class CreateHostResponse(SdkResponse):
 
     @property
     def certificatename(self):
-        """Gets the certificatename of this CreateHostResponse.
+        r"""Gets the certificatename of this CreateHostResponse.
 
         证书名称
 
@@ -386,7 +386,7 @@ class CreateHostResponse(SdkResponse):
 
     @certificatename.setter
     def certificatename(self, certificatename):
-        """Sets the certificatename of this CreateHostResponse.
+        r"""Sets the certificatename of this CreateHostResponse.
 
         证书名称
 
@@ -397,7 +397,7 @@ class CreateHostResponse(SdkResponse):
 
     @property
     def server(self):
-        """Gets the server of this CreateHostResponse.
+        r"""Gets the server of this CreateHostResponse.
 
         防护域名的源站服务器配置信息
 
@@ -408,7 +408,7 @@ class CreateHostResponse(SdkResponse):
 
     @server.setter
     def server(self, server):
-        """Sets the server of this CreateHostResponse.
+        r"""Sets the server of this CreateHostResponse.
 
         防护域名的源站服务器配置信息
 
@@ -419,7 +419,7 @@ class CreateHostResponse(SdkResponse):
 
     @property
     def proxy(self):
-        """Gets the proxy of this CreateHostResponse.
+        r"""Gets the proxy of this CreateHostResponse.
 
         防护域名是否使用代理   - false：不使用代理   - true：使用代理
 
@@ -430,7 +430,7 @@ class CreateHostResponse(SdkResponse):
 
     @proxy.setter
     def proxy(self, proxy):
-        """Sets the proxy of this CreateHostResponse.
+        r"""Sets the proxy of this CreateHostResponse.
 
         防护域名是否使用代理   - false：不使用代理   - true：使用代理
 
@@ -441,7 +441,7 @@ class CreateHostResponse(SdkResponse):
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this CreateHostResponse.
+        r"""Gets the timestamp of this CreateHostResponse.
 
         创建防护域名的时间
 
@@ -452,7 +452,7 @@ class CreateHostResponse(SdkResponse):
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this CreateHostResponse.
+        r"""Sets the timestamp of this CreateHostResponse.
 
         创建防护域名的时间
 
@@ -463,7 +463,7 @@ class CreateHostResponse(SdkResponse):
 
     @property
     def exclusive_ip(self):
-        """Gets the exclusive_ip of this CreateHostResponse.
+        r"""Gets the exclusive_ip of this CreateHostResponse.
 
         是否使用独享ip   - true：使用独享ip   - false：不实用独享ip
 
@@ -474,7 +474,7 @@ class CreateHostResponse(SdkResponse):
 
     @exclusive_ip.setter
     def exclusive_ip(self, exclusive_ip):
-        """Sets the exclusive_ip of this CreateHostResponse.
+        r"""Sets the exclusive_ip of this CreateHostResponse.
 
         是否使用独享ip   - true：使用独享ip   - false：不实用独享ip
 
@@ -485,7 +485,7 @@ class CreateHostResponse(SdkResponse):
 
     @property
     def web_tag(self):
-        """Gets the web_tag of this CreateHostResponse.
+        r"""Gets the web_tag of this CreateHostResponse.
 
         网站名称，对应WAF控制台域名详情中的网站名称
 
@@ -496,7 +496,7 @@ class CreateHostResponse(SdkResponse):
 
     @web_tag.setter
     def web_tag(self, web_tag):
-        """Sets the web_tag of this CreateHostResponse.
+        r"""Sets the web_tag of this CreateHostResponse.
 
         网站名称，对应WAF控制台域名详情中的网站名称
 
@@ -507,7 +507,7 @@ class CreateHostResponse(SdkResponse):
 
     @property
     def http2_enable(self):
-        """Gets the http2_enable of this CreateHostResponse.
+        r"""Gets the http2_enable of this CreateHostResponse.
 
         是否支持http2   - true：表示支持http2   - false：表示不支持http2
 
@@ -518,7 +518,7 @@ class CreateHostResponse(SdkResponse):
 
     @http2_enable.setter
     def http2_enable(self, http2_enable):
-        """Sets the http2_enable of this CreateHostResponse.
+        r"""Sets the http2_enable of this CreateHostResponse.
 
         是否支持http2   - true：表示支持http2   - false：表示不支持http2
 
@@ -529,7 +529,7 @@ class CreateHostResponse(SdkResponse):
 
     @property
     def block_page(self):
-        """Gets the block_page of this CreateHostResponse.
+        r"""Gets the block_page of this CreateHostResponse.
 
         :return: The block_page of this CreateHostResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.BlockPage`
@@ -538,7 +538,7 @@ class CreateHostResponse(SdkResponse):
 
     @block_page.setter
     def block_page(self, block_page):
-        """Sets the block_page of this CreateHostResponse.
+        r"""Sets the block_page of this CreateHostResponse.
 
         :param block_page: The block_page of this CreateHostResponse.
         :type block_page: :class:`huaweicloudsdkwaf.v1.BlockPage`
@@ -547,7 +547,7 @@ class CreateHostResponse(SdkResponse):
 
     @property
     def flag(self):
-        """Gets the flag of this CreateHostResponse.
+        r"""Gets the flag of this CreateHostResponse.
 
         :return: The flag of this CreateHostResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.Flag`
@@ -556,7 +556,7 @@ class CreateHostResponse(SdkResponse):
 
     @flag.setter
     def flag(self, flag):
-        """Sets the flag of this CreateHostResponse.
+        r"""Sets the flag of this CreateHostResponse.
 
         :param flag: The flag of this CreateHostResponse.
         :type flag: :class:`huaweicloudsdkwaf.v1.Flag`
@@ -565,7 +565,7 @@ class CreateHostResponse(SdkResponse):
 
     @property
     def extend(self):
-        """Gets the extend of this CreateHostResponse.
+        r"""Gets the extend of this CreateHostResponse.
 
         扩展字段，用于保存防护域名的一些配置信息。
 
@@ -576,7 +576,7 @@ class CreateHostResponse(SdkResponse):
 
     @extend.setter
     def extend(self, extend):
-        """Sets the extend of this CreateHostResponse.
+        r"""Sets the extend of this CreateHostResponse.
 
         扩展字段，用于保存防护域名的一些配置信息。
 
@@ -587,7 +587,7 @@ class CreateHostResponse(SdkResponse):
 
     @property
     def forward_header_map(self):
-        """Gets the forward_header_map of this CreateHostResponse.
+        r"""Gets the forward_header_map of this CreateHostResponse.
 
         字段转发配置，WAF会将添加的字段插到header中，转给源站；Key不能跟nginx原生字段重复。Value支持的值包括:   - $time_local   - $request_id   - $connection_requests   - $tenant_id   - $project_id   - $remote_addr   - $remote_port   - $scheme   - $request_method   - $http_host   -$origin_uri   - $request_length   - $ssl_server_name   - $ssl_protocol   - $ssl_curves   - $ssl_session_reused
 
@@ -598,7 +598,7 @@ class CreateHostResponse(SdkResponse):
 
     @forward_header_map.setter
     def forward_header_map(self, forward_header_map):
-        """Sets the forward_header_map of this CreateHostResponse.
+        r"""Sets the forward_header_map of this CreateHostResponse.
 
         字段转发配置，WAF会将添加的字段插到header中，转给源站；Key不能跟nginx原生字段重复。Value支持的值包括:   - $time_local   - $request_id   - $connection_requests   - $tenant_id   - $project_id   - $remote_addr   - $remote_port   - $scheme   - $request_method   - $http_host   -$origin_uri   - $request_length   - $ssl_server_name   - $ssl_protocol   - $ssl_curves   - $ssl_session_reused
 

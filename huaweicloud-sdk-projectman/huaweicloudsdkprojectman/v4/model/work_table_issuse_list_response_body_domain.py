@@ -27,7 +27,7 @@ class WorkTableIssuseListResponseBodyDomain:
     }
 
     def __init__(self, id=None, name=None):
-        """WorkTableIssuseListResponseBodyDomain
+        r"""WorkTableIssuseListResponseBodyDomain
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class WorkTableIssuseListResponseBodyDomain:
 
     @property
     def id(self):
-        """Gets the id of this WorkTableIssuseListResponseBodyDomain.
+        r"""Gets the id of this WorkTableIssuseListResponseBodyDomain.
 
         领域id
 
@@ -61,7 +61,7 @@ class WorkTableIssuseListResponseBodyDomain:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this WorkTableIssuseListResponseBodyDomain.
+        r"""Sets the id of this WorkTableIssuseListResponseBodyDomain.
 
         领域id
 
@@ -72,7 +72,7 @@ class WorkTableIssuseListResponseBodyDomain:
 
     @property
     def name(self):
-        """Gets the name of this WorkTableIssuseListResponseBodyDomain.
+        r"""Gets the name of this WorkTableIssuseListResponseBodyDomain.
 
         领域名称
 
@@ -83,7 +83,7 @@ class WorkTableIssuseListResponseBodyDomain:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this WorkTableIssuseListResponseBodyDomain.
+        r"""Sets the name of this WorkTableIssuseListResponseBodyDomain.
 
         领域名称
 

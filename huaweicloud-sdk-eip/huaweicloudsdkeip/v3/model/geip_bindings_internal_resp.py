@@ -43,7 +43,7 @@ class GeipBindingsInternalResp:
     }
 
     def __init__(self, geip_id=None, geip_ip_address=None, public_border_group=None, created_at=None, updated_at=None, instance_type=None, instance_id=None, gcbandwidth=None, vnic=None, vn_list=None):
-        """GeipBindingsInternalResp
+        r"""GeipBindingsInternalResp
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class GeipBindingsInternalResp:
 
     @property
     def geip_id(self):
-        """Gets the geip_id of this GeipBindingsInternalResp.
+        r"""Gets the geip_id of this GeipBindingsInternalResp.
 
         GEIP的uuid
 
@@ -117,7 +117,7 @@ class GeipBindingsInternalResp:
 
     @geip_id.setter
     def geip_id(self, geip_id):
-        """Sets the geip_id of this GeipBindingsInternalResp.
+        r"""Sets the geip_id of this GeipBindingsInternalResp.
 
         GEIP的uuid
 
@@ -128,7 +128,7 @@ class GeipBindingsInternalResp:
 
     @property
     def geip_ip_address(self):
-        """Gets the geip_ip_address of this GeipBindingsInternalResp.
+        r"""Gets the geip_ip_address of this GeipBindingsInternalResp.
 
         GEIP的ip地址
 
@@ -139,7 +139,7 @@ class GeipBindingsInternalResp:
 
     @geip_ip_address.setter
     def geip_ip_address(self, geip_ip_address):
-        """Sets the geip_ip_address of this GeipBindingsInternalResp.
+        r"""Sets the geip_ip_address of this GeipBindingsInternalResp.
 
         GEIP的ip地址
 
@@ -150,7 +150,7 @@ class GeipBindingsInternalResp:
 
     @property
     def public_border_group(self):
-        """Gets the public_border_group of this GeipBindingsInternalResp.
+        r"""Gets the public_border_group of this GeipBindingsInternalResp.
 
         中心站点or边缘站点，默认展示
 
@@ -161,7 +161,7 @@ class GeipBindingsInternalResp:
 
     @public_border_group.setter
     def public_border_group(self, public_border_group):
-        """Sets the public_border_group of this GeipBindingsInternalResp.
+        r"""Sets the public_border_group of this GeipBindingsInternalResp.
 
         中心站点or边缘站点，默认展示
 
@@ -172,7 +172,7 @@ class GeipBindingsInternalResp:
 
     @property
     def created_at(self):
-        """Gets the created_at of this GeipBindingsInternalResp.
+        r"""Gets the created_at of this GeipBindingsInternalResp.
 
         创建时间
 
@@ -183,7 +183,7 @@ class GeipBindingsInternalResp:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this GeipBindingsInternalResp.
+        r"""Sets the created_at of this GeipBindingsInternalResp.
 
         创建时间
 
@@ -194,7 +194,7 @@ class GeipBindingsInternalResp:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this GeipBindingsInternalResp.
+        r"""Gets the updated_at of this GeipBindingsInternalResp.
 
         更新时间
 
@@ -205,7 +205,7 @@ class GeipBindingsInternalResp:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this GeipBindingsInternalResp.
+        r"""Sets the updated_at of this GeipBindingsInternalResp.
 
         更新时间
 
@@ -216,7 +216,7 @@ class GeipBindingsInternalResp:
 
     @property
     def instance_type(self):
-        """Gets the instance_type of this GeipBindingsInternalResp.
+        r"""Gets the instance_type of this GeipBindingsInternalResp.
 
         绑定实例的类型
 
@@ -227,7 +227,7 @@ class GeipBindingsInternalResp:
 
     @instance_type.setter
     def instance_type(self, instance_type):
-        """Sets the instance_type of this GeipBindingsInternalResp.
+        r"""Sets the instance_type of this GeipBindingsInternalResp.
 
         绑定实例的类型
 
@@ -238,7 +238,7 @@ class GeipBindingsInternalResp:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this GeipBindingsInternalResp.
+        r"""Gets the instance_id of this GeipBindingsInternalResp.
 
         绑定实例的id
 
@@ -249,7 +249,7 @@ class GeipBindingsInternalResp:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this GeipBindingsInternalResp.
+        r"""Sets the instance_id of this GeipBindingsInternalResp.
 
         绑定实例的id
 
@@ -260,7 +260,7 @@ class GeipBindingsInternalResp:
 
     @property
     def gcbandwidth(self):
-        """Gets the gcbandwidth of this GeipBindingsInternalResp.
+        r"""Gets the gcbandwidth of this GeipBindingsInternalResp.
 
         :return: The gcbandwidth of this GeipBindingsInternalResp.
         :rtype: :class:`huaweicloudsdkeip.v3.BackboneBandwidthResp`
@@ -269,7 +269,7 @@ class GeipBindingsInternalResp:
 
     @gcbandwidth.setter
     def gcbandwidth(self, gcbandwidth):
-        """Sets the gcbandwidth of this GeipBindingsInternalResp.
+        r"""Sets the gcbandwidth of this GeipBindingsInternalResp.
 
         :param gcbandwidth: The gcbandwidth of this GeipBindingsInternalResp.
         :type gcbandwidth: :class:`huaweicloudsdkeip.v3.BackboneBandwidthResp`
@@ -278,7 +278,7 @@ class GeipBindingsInternalResp:
 
     @property
     def vnic(self):
-        """Gets the vnic of this GeipBindingsInternalResp.
+        r"""Gets the vnic of this GeipBindingsInternalResp.
 
         :return: The vnic of this GeipBindingsInternalResp.
         :rtype: :class:`huaweicloudsdkeip.v3.InstanceVnicResp`
@@ -287,7 +287,7 @@ class GeipBindingsInternalResp:
 
     @vnic.setter
     def vnic(self, vnic):
-        """Sets the vnic of this GeipBindingsInternalResp.
+        r"""Sets the vnic of this GeipBindingsInternalResp.
 
         :param vnic: The vnic of this GeipBindingsInternalResp.
         :type vnic: :class:`huaweicloudsdkeip.v3.InstanceVnicResp`
@@ -296,7 +296,7 @@ class GeipBindingsInternalResp:
 
     @property
     def vn_list(self):
-        """Gets the vn_list of this GeipBindingsInternalResp.
+        r"""Gets the vn_list of this GeipBindingsInternalResp.
 
         GEIP实例的vn信息
 
@@ -307,7 +307,7 @@ class GeipBindingsInternalResp:
 
     @vn_list.setter
     def vn_list(self, vn_list):
-        """Sets the vn_list of this GeipBindingsInternalResp.
+        r"""Sets the vn_list of this GeipBindingsInternalResp.
 
         GEIP实例的vn信息
 

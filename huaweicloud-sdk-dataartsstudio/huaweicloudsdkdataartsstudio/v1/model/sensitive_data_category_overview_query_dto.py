@@ -37,7 +37,7 @@ class SensitiveDataCategoryOverviewQueryDTO:
     }
 
     def __init__(self, root_id=None, parent_id=None, category_id=None, category_name=None, category_path=None, count=None, children=None):
-        """SensitiveDataCategoryOverviewQueryDTO
+        r"""SensitiveDataCategoryOverviewQueryDTO
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class SensitiveDataCategoryOverviewQueryDTO:
 
     @property
     def root_id(self):
-        """Gets the root_id of this SensitiveDataCategoryOverviewQueryDTO.
+        r"""Gets the root_id of this SensitiveDataCategoryOverviewQueryDTO.
 
         当前分类节点的根节点id,根节点的
 
@@ -96,7 +96,7 @@ class SensitiveDataCategoryOverviewQueryDTO:
 
     @root_id.setter
     def root_id(self, root_id):
-        """Sets the root_id of this SensitiveDataCategoryOverviewQueryDTO.
+        r"""Sets the root_id of this SensitiveDataCategoryOverviewQueryDTO.
 
         当前分类节点的根节点id,根节点的
 
@@ -107,7 +107,7 @@ class SensitiveDataCategoryOverviewQueryDTO:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this SensitiveDataCategoryOverviewQueryDTO.
+        r"""Gets the parent_id of this SensitiveDataCategoryOverviewQueryDTO.
 
         当前分类节点的父节点id
 
@@ -118,7 +118,7 @@ class SensitiveDataCategoryOverviewQueryDTO:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this SensitiveDataCategoryOverviewQueryDTO.
+        r"""Sets the parent_id of this SensitiveDataCategoryOverviewQueryDTO.
 
         当前分类节点的父节点id
 
@@ -129,7 +129,7 @@ class SensitiveDataCategoryOverviewQueryDTO:
 
     @property
     def category_id(self):
-        """Gets the category_id of this SensitiveDataCategoryOverviewQueryDTO.
+        r"""Gets the category_id of this SensitiveDataCategoryOverviewQueryDTO.
 
         分类的Id
 
@@ -140,7 +140,7 @@ class SensitiveDataCategoryOverviewQueryDTO:
 
     @category_id.setter
     def category_id(self, category_id):
-        """Sets the category_id of this SensitiveDataCategoryOverviewQueryDTO.
+        r"""Sets the category_id of this SensitiveDataCategoryOverviewQueryDTO.
 
         分类的Id
 
@@ -151,7 +151,7 @@ class SensitiveDataCategoryOverviewQueryDTO:
 
     @property
     def category_name(self):
-        """Gets the category_name of this SensitiveDataCategoryOverviewQueryDTO.
+        r"""Gets the category_name of this SensitiveDataCategoryOverviewQueryDTO.
 
         分类的名称
 
@@ -162,7 +162,7 @@ class SensitiveDataCategoryOverviewQueryDTO:
 
     @category_name.setter
     def category_name(self, category_name):
-        """Sets the category_name of this SensitiveDataCategoryOverviewQueryDTO.
+        r"""Sets the category_name of this SensitiveDataCategoryOverviewQueryDTO.
 
         分类的名称
 
@@ -173,7 +173,7 @@ class SensitiveDataCategoryOverviewQueryDTO:
 
     @property
     def category_path(self):
-        """Gets the category_path of this SensitiveDataCategoryOverviewQueryDTO.
+        r"""Gets the category_path of this SensitiveDataCategoryOverviewQueryDTO.
 
         分类path
 
@@ -184,7 +184,7 @@ class SensitiveDataCategoryOverviewQueryDTO:
 
     @category_path.setter
     def category_path(self, category_path):
-        """Sets the category_path of this SensitiveDataCategoryOverviewQueryDTO.
+        r"""Sets the category_path of this SensitiveDataCategoryOverviewQueryDTO.
 
         分类path
 
@@ -195,7 +195,7 @@ class SensitiveDataCategoryOverviewQueryDTO:
 
     @property
     def count(self):
-        """Gets the count of this SensitiveDataCategoryOverviewQueryDTO.
+        r"""Gets the count of this SensitiveDataCategoryOverviewQueryDTO.
 
         当前分类下的敏感字段数量
 
@@ -206,7 +206,7 @@ class SensitiveDataCategoryOverviewQueryDTO:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this SensitiveDataCategoryOverviewQueryDTO.
+        r"""Sets the count of this SensitiveDataCategoryOverviewQueryDTO.
 
         当前分类下的敏感字段数量
 
@@ -217,7 +217,7 @@ class SensitiveDataCategoryOverviewQueryDTO:
 
     @property
     def children(self):
-        """Gets the children of this SensitiveDataCategoryOverviewQueryDTO.
+        r"""Gets the children of this SensitiveDataCategoryOverviewQueryDTO.
 
         当前分类的子节点
 
@@ -228,7 +228,7 @@ class SensitiveDataCategoryOverviewQueryDTO:
 
     @children.setter
     def children(self, children):
-        """Sets the children of this SensitiveDataCategoryOverviewQueryDTO.
+        r"""Sets the children of this SensitiveDataCategoryOverviewQueryDTO.
 
         当前分类的子节点
 

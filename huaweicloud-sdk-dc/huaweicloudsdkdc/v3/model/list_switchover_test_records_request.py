@@ -35,7 +35,7 @@ class ListSwitchoverTestRecordsRequest:
     }
 
     def __init__(self, limit=None, marker=None, fields=None, sort_dir=None, sort_key=None, resource_id=None):
-        """ListSwitchoverTestRecordsRequest
+        r"""ListSwitchoverTestRecordsRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListSwitchoverTestRecordsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSwitchoverTestRecordsRequest.
+        r"""Gets the limit of this ListSwitchoverTestRecordsRequest.
 
         每页返回的个数。 取值范围：1~2000。
 
@@ -89,7 +89,7 @@ class ListSwitchoverTestRecordsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSwitchoverTestRecordsRequest.
+        r"""Sets the limit of this ListSwitchoverTestRecordsRequest.
 
         每页返回的个数。 取值范围：1~2000。
 
@@ -100,7 +100,7 @@ class ListSwitchoverTestRecordsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListSwitchoverTestRecordsRequest.
+        r"""Gets the marker of this ListSwitchoverTestRecordsRequest.
 
         上一页最后一条资源记录的ID，为空时为查询第一页。 使用说明：必须与limit一起使用。
 
@@ -111,7 +111,7 @@ class ListSwitchoverTestRecordsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListSwitchoverTestRecordsRequest.
+        r"""Sets the marker of this ListSwitchoverTestRecordsRequest.
 
         上一页最后一条资源记录的ID，为空时为查询第一页。 使用说明：必须与limit一起使用。
 
@@ -122,7 +122,7 @@ class ListSwitchoverTestRecordsRequest:
 
     @property
     def fields(self):
-        """Gets the fields of this ListSwitchoverTestRecordsRequest.
+        r"""Gets the fields of this ListSwitchoverTestRecordsRequest.
 
         显示字段列表
 
@@ -133,7 +133,7 @@ class ListSwitchoverTestRecordsRequest:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this ListSwitchoverTestRecordsRequest.
+        r"""Sets the fields of this ListSwitchoverTestRecordsRequest.
 
         显示字段列表
 
@@ -144,7 +144,7 @@ class ListSwitchoverTestRecordsRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListSwitchoverTestRecordsRequest.
+        r"""Gets the sort_dir of this ListSwitchoverTestRecordsRequest.
 
         返回结果按照升序(asc)或降序(desc)排列，默认为asc
 
@@ -155,7 +155,7 @@ class ListSwitchoverTestRecordsRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListSwitchoverTestRecordsRequest.
+        r"""Sets the sort_dir of this ListSwitchoverTestRecordsRequest.
 
         返回结果按照升序(asc)或降序(desc)排列，默认为asc
 
@@ -166,7 +166,7 @@ class ListSwitchoverTestRecordsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListSwitchoverTestRecordsRequest.
+        r"""Gets the sort_key of this ListSwitchoverTestRecordsRequest.
 
         排序字段。
 
@@ -177,7 +177,7 @@ class ListSwitchoverTestRecordsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListSwitchoverTestRecordsRequest.
+        r"""Sets the sort_key of this ListSwitchoverTestRecordsRequest.
 
         排序字段。
 
@@ -188,7 +188,7 @@ class ListSwitchoverTestRecordsRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ListSwitchoverTestRecordsRequest.
+        r"""Gets the resource_id of this ListSwitchoverTestRecordsRequest.
 
         通过RESOURCE-ID过虑倒换测试记录信息
 
@@ -199,7 +199,7 @@ class ListSwitchoverTestRecordsRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ListSwitchoverTestRecordsRequest.
+        r"""Sets the resource_id of this ListSwitchoverTestRecordsRequest.
 
         通过RESOURCE-ID过虑倒换测试记录信息
 

@@ -29,7 +29,7 @@ class CreateMergeRequestDiscussionRequest:
     }
 
     def __init__(self, repository_id=None, merge_request_iid=None, body=None):
-        """CreateMergeRequestDiscussionRequest
+        r"""CreateMergeRequestDiscussionRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateMergeRequestDiscussionRequest:
 
     @property
     def repository_id(self):
-        """Gets the repository_id of this CreateMergeRequestDiscussionRequest.
+        r"""Gets the repository_id of this CreateMergeRequestDiscussionRequest.
 
         仓库短id
 
@@ -66,7 +66,7 @@ class CreateMergeRequestDiscussionRequest:
 
     @repository_id.setter
     def repository_id(self, repository_id):
-        """Sets the repository_id of this CreateMergeRequestDiscussionRequest.
+        r"""Sets the repository_id of this CreateMergeRequestDiscussionRequest.
 
         仓库短id
 
@@ -77,7 +77,7 @@ class CreateMergeRequestDiscussionRequest:
 
     @property
     def merge_request_iid(self):
-        """Gets the merge_request_iid of this CreateMergeRequestDiscussionRequest.
+        r"""Gets the merge_request_iid of this CreateMergeRequestDiscussionRequest.
 
         合并请求iid
 
@@ -88,7 +88,7 @@ class CreateMergeRequestDiscussionRequest:
 
     @merge_request_iid.setter
     def merge_request_iid(self, merge_request_iid):
-        """Sets the merge_request_iid of this CreateMergeRequestDiscussionRequest.
+        r"""Sets the merge_request_iid of this CreateMergeRequestDiscussionRequest.
 
         合并请求iid
 
@@ -99,7 +99,7 @@ class CreateMergeRequestDiscussionRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateMergeRequestDiscussionRequest.
+        r"""Gets the body of this CreateMergeRequestDiscussionRequest.
 
         :return: The body of this CreateMergeRequestDiscussionRequest.
         :rtype: :class:`huaweicloudsdkcodehub.v3.CreateMergeRequestDiscussionBodyDto`
@@ -108,7 +108,7 @@ class CreateMergeRequestDiscussionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateMergeRequestDiscussionRequest.
+        r"""Sets the body of this CreateMergeRequestDiscussionRequest.
 
         :param body: The body of this CreateMergeRequestDiscussionRequest.
         :type body: :class:`huaweicloudsdkcodehub.v3.CreateMergeRequestDiscussionBodyDto`

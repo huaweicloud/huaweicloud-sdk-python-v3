@@ -47,7 +47,7 @@ class ApiOverview:
     }
 
     def __init__(self, id=None, name=None, group_id=None, description=None, status=None, debug_status=None, publish_messages=None, type=None, manager=None, create_user=None, create_time=None, authorization_status=None):
-        """ApiOverview
+        r"""ApiOverview
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ApiOverview:
 
     @property
     def id(self):
-        """Gets the id of this ApiOverview.
+        r"""Gets the id of this ApiOverview.
 
         API ID
 
@@ -131,7 +131,7 @@ class ApiOverview:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ApiOverview.
+        r"""Sets the id of this ApiOverview.
 
         API ID
 
@@ -142,7 +142,7 @@ class ApiOverview:
 
     @property
     def name(self):
-        """Gets the name of this ApiOverview.
+        r"""Gets the name of this ApiOverview.
 
         API名称
 
@@ -153,7 +153,7 @@ class ApiOverview:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApiOverview.
+        r"""Sets the name of this ApiOverview.
 
         API名称
 
@@ -164,7 +164,7 @@ class ApiOverview:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ApiOverview.
+        r"""Gets the group_id of this ApiOverview.
 
         API分组ID（共享版）
 
@@ -175,7 +175,7 @@ class ApiOverview:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ApiOverview.
+        r"""Sets the group_id of this ApiOverview.
 
         API分组ID（共享版）
 
@@ -186,7 +186,7 @@ class ApiOverview:
 
     @property
     def description(self):
-        """Gets the description of this ApiOverview.
+        r"""Gets the description of this ApiOverview.
 
         API描述
 
@@ -197,7 +197,7 @@ class ApiOverview:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ApiOverview.
+        r"""Sets the description of this ApiOverview.
 
         API描述
 
@@ -208,7 +208,7 @@ class ApiOverview:
 
     @property
     def status(self):
-        """Gets the status of this ApiOverview.
+        r"""Gets the status of this ApiOverview.
 
         API状态（共享版）
 
@@ -219,7 +219,7 @@ class ApiOverview:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ApiOverview.
+        r"""Sets the status of this ApiOverview.
 
         API状态（共享版）
 
@@ -230,7 +230,7 @@ class ApiOverview:
 
     @property
     def debug_status(self):
-        """Gets the debug_status of this ApiOverview.
+        r"""Gets the debug_status of this ApiOverview.
 
         API调试状态（共享版）
 
@@ -241,7 +241,7 @@ class ApiOverview:
 
     @debug_status.setter
     def debug_status(self, debug_status):
-        """Sets the debug_status of this ApiOverview.
+        r"""Sets the debug_status of this ApiOverview.
 
         API调试状态（共享版）
 
@@ -252,7 +252,7 @@ class ApiOverview:
 
     @property
     def publish_messages(self):
-        """Gets the publish_messages of this ApiOverview.
+        r"""Gets the publish_messages of this ApiOverview.
 
         发布信息列表（专享版）
 
@@ -263,7 +263,7 @@ class ApiOverview:
 
     @publish_messages.setter
     def publish_messages(self, publish_messages):
-        """Sets the publish_messages of this ApiOverview.
+        r"""Sets the publish_messages of this ApiOverview.
 
         发布信息列表（专享版）
 
@@ -274,7 +274,7 @@ class ApiOverview:
 
     @property
     def type(self):
-        """Gets the type of this ApiOverview.
+        r"""Gets the type of this ApiOverview.
 
         API 类型
 
@@ -285,7 +285,7 @@ class ApiOverview:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ApiOverview.
+        r"""Sets the type of this ApiOverview.
 
         API 类型
 
@@ -296,7 +296,7 @@ class ApiOverview:
 
     @property
     def manager(self):
-        """Gets the manager of this ApiOverview.
+        r"""Gets the manager of this ApiOverview.
 
         API审核人
 
@@ -307,7 +307,7 @@ class ApiOverview:
 
     @manager.setter
     def manager(self, manager):
-        """Sets the manager of this ApiOverview.
+        r"""Sets the manager of this ApiOverview.
 
         API审核人
 
@@ -318,7 +318,7 @@ class ApiOverview:
 
     @property
     def create_user(self):
-        """Gets the create_user of this ApiOverview.
+        r"""Gets the create_user of this ApiOverview.
 
         API创建者
 
@@ -329,7 +329,7 @@ class ApiOverview:
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this ApiOverview.
+        r"""Sets the create_user of this ApiOverview.
 
         API创建者
 
@@ -340,7 +340,7 @@ class ApiOverview:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ApiOverview.
+        r"""Gets the create_time of this ApiOverview.
 
         API 创建时间
 
@@ -351,7 +351,7 @@ class ApiOverview:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ApiOverview.
+        r"""Sets the create_time of this ApiOverview.
 
         API 创建时间
 
@@ -362,7 +362,7 @@ class ApiOverview:
 
     @property
     def authorization_status(self):
-        """Gets the authorization_status of this ApiOverview.
+        r"""Gets the authorization_status of this ApiOverview.
 
         :return: The authorization_status of this ApiOverview.
         :rtype: str
@@ -371,7 +371,7 @@ class ApiOverview:
 
     @authorization_status.setter
     def authorization_status(self, authorization_status):
-        """Sets the authorization_status of this ApiOverview.
+        r"""Sets the authorization_status of this ApiOverview.
 
         :param authorization_status: The authorization_status of this ApiOverview.
         :type authorization_status: str

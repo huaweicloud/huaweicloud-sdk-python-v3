@@ -49,7 +49,7 @@ class ListPrivateZonesRequest:
     }
 
     def __init__(self, type=None, limit=None, marker=None, offset=None, tags=None, name=None, id=None, status=None, search_mode=None, sort_key=None, sort_dir=None, enterprise_project_id=None, router_id=None):
-        """ListPrivateZonesRequest
+        r"""ListPrivateZonesRequest
 
         The model defined in huaweicloud sdk
 
@@ -126,7 +126,7 @@ class ListPrivateZonesRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListPrivateZonesRequest.
+        r"""Gets the type of this ListPrivateZonesRequest.
 
         待查询的zone的类型。  取值范围：private。
 
@@ -137,7 +137,7 @@ class ListPrivateZonesRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListPrivateZonesRequest.
+        r"""Sets the type of this ListPrivateZonesRequest.
 
         待查询的zone的类型。  取值范围：private。
 
@@ -148,7 +148,7 @@ class ListPrivateZonesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPrivateZonesRequest.
+        r"""Gets the limit of this ListPrivateZonesRequest.
 
         每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
 
@@ -159,7 +159,7 @@ class ListPrivateZonesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPrivateZonesRequest.
+        r"""Sets the limit of this ListPrivateZonesRequest.
 
         每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
 
@@ -170,7 +170,7 @@ class ListPrivateZonesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListPrivateZonesRequest.
+        r"""Gets the marker of this ListPrivateZonesRequest.
 
         分页查询起始的资源ID，为空时为查询第一页。  默认值为空。
 
@@ -181,7 +181,7 @@ class ListPrivateZonesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListPrivateZonesRequest.
+        r"""Sets the marker of this ListPrivateZonesRequest.
 
         分页查询起始的资源ID，为空时为查询第一页。  默认值为空。
 
@@ -192,7 +192,7 @@ class ListPrivateZonesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPrivateZonesRequest.
+        r"""Gets the offset of this ListPrivateZonesRequest.
 
         分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
 
@@ -203,7 +203,7 @@ class ListPrivateZonesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPrivateZonesRequest.
+        r"""Sets the offset of this ListPrivateZonesRequest.
 
         分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
 
@@ -214,7 +214,7 @@ class ListPrivateZonesRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this ListPrivateZonesRequest.
+        r"""Gets the tags of this ListPrivateZonesRequest.
 
         资源标签。
 
@@ -225,7 +225,7 @@ class ListPrivateZonesRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListPrivateZonesRequest.
+        r"""Sets the tags of this ListPrivateZonesRequest.
 
         资源标签。
 
@@ -236,7 +236,7 @@ class ListPrivateZonesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListPrivateZonesRequest.
+        r"""Gets the name of this ListPrivateZonesRequest.
 
         Zone名称。  搜索模式默认为模糊搜索。
 
@@ -247,7 +247,7 @@ class ListPrivateZonesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListPrivateZonesRequest.
+        r"""Sets the name of this ListPrivateZonesRequest.
 
         Zone名称。  搜索模式默认为模糊搜索。
 
@@ -258,7 +258,7 @@ class ListPrivateZonesRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListPrivateZonesRequest.
+        r"""Gets the id of this ListPrivateZonesRequest.
 
         Zone ID。
 
@@ -269,7 +269,7 @@ class ListPrivateZonesRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListPrivateZonesRequest.
+        r"""Sets the id of this ListPrivateZonesRequest.
 
         Zone ID。
 
@@ -280,7 +280,7 @@ class ListPrivateZonesRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListPrivateZonesRequest.
+        r"""Gets the status of this ListPrivateZonesRequest.
 
         资源状态。
 
@@ -291,7 +291,7 @@ class ListPrivateZonesRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListPrivateZonesRequest.
+        r"""Sets the status of this ListPrivateZonesRequest.
 
         资源状态。
 
@@ -302,7 +302,7 @@ class ListPrivateZonesRequest:
 
     @property
     def search_mode(self):
-        """Gets the search_mode of this ListPrivateZonesRequest.
+        r"""Gets the search_mode of this ListPrivateZonesRequest.
 
         查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索
 
@@ -313,7 +313,7 @@ class ListPrivateZonesRequest:
 
     @search_mode.setter
     def search_mode(self, search_mode):
-        """Sets the search_mode of this ListPrivateZonesRequest.
+        r"""Sets the search_mode of this ListPrivateZonesRequest.
 
         查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索
 
@@ -324,7 +324,7 @@ class ListPrivateZonesRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListPrivateZonesRequest.
+        r"""Gets the sort_key of this ListPrivateZonesRequest.
 
         查询结果中zone列表的排序字段。  取值范围为：  name：域名 created_at：创建时间 updated_at：更新时间 默认值为空，表示不排序。
 
@@ -335,7 +335,7 @@ class ListPrivateZonesRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListPrivateZonesRequest.
+        r"""Sets the sort_key of this ListPrivateZonesRequest.
 
         查询结果中zone列表的排序字段。  取值范围为：  name：域名 created_at：创建时间 updated_at：更新时间 默认值为空，表示不排序。
 
@@ -346,7 +346,7 @@ class ListPrivateZonesRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListPrivateZonesRequest.
+        r"""Gets the sort_dir of this ListPrivateZonesRequest.
 
         查询结果中zone列表的排序方式。  取值范围：  desc：降序排序 asc：升序排序 默认值为空，表示不排序。
 
@@ -357,7 +357,7 @@ class ListPrivateZonesRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListPrivateZonesRequest.
+        r"""Sets the sort_dir of this ListPrivateZonesRequest.
 
         查询结果中zone列表的排序方式。  取值范围：  desc：降序排序 asc：升序排序 默认值为空，表示不排序。
 
@@ -368,7 +368,7 @@ class ListPrivateZonesRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListPrivateZonesRequest.
+        r"""Gets the enterprise_project_id of this ListPrivateZonesRequest.
 
         域名关联的企业项目ID，长度不超过36个字符。
 
@@ -379,7 +379,7 @@ class ListPrivateZonesRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListPrivateZonesRequest.
+        r"""Sets the enterprise_project_id of this ListPrivateZonesRequest.
 
         域名关联的企业项目ID，长度不超过36个字符。
 
@@ -390,7 +390,7 @@ class ListPrivateZonesRequest:
 
     @property
     def router_id(self):
-        """Gets the router_id of this ListPrivateZonesRequest.
+        r"""Gets the router_id of this ListPrivateZonesRequest.
 
         关联VPC的ID。
 
@@ -401,7 +401,7 @@ class ListPrivateZonesRequest:
 
     @router_id.setter
     def router_id(self, router_id):
-        """Sets the router_id of this ListPrivateZonesRequest.
+        r"""Sets the router_id of this ListPrivateZonesRequest.
 
         关联VPC的ID。
 

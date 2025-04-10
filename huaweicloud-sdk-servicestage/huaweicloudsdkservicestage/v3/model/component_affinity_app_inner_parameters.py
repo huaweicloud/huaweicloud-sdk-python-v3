@@ -27,7 +27,7 @@ class ComponentAffinityAppInnerParameters:
     }
 
     def __init__(self, display_name=None, name=None):
-        """ComponentAffinityAppInnerParameters
+        r"""ComponentAffinityAppInnerParameters
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ComponentAffinityAppInnerParameters:
 
     @property
     def display_name(self):
-        """Gets the display_name of this ComponentAffinityAppInnerParameters.
+        r"""Gets the display_name of this ComponentAffinityAppInnerParameters.
 
         :return: The display_name of this ComponentAffinityAppInnerParameters.
         :rtype: str
@@ -59,7 +59,7 @@ class ComponentAffinityAppInnerParameters:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this ComponentAffinityAppInnerParameters.
+        r"""Sets the display_name of this ComponentAffinityAppInnerParameters.
 
         :param display_name: The display_name of this ComponentAffinityAppInnerParameters.
         :type display_name: str
@@ -68,7 +68,7 @@ class ComponentAffinityAppInnerParameters:
 
     @property
     def name(self):
-        """Gets the name of this ComponentAffinityAppInnerParameters.
+        r"""Gets the name of this ComponentAffinityAppInnerParameters.
 
         :return: The name of this ComponentAffinityAppInnerParameters.
         :rtype: str
@@ -77,7 +77,7 @@ class ComponentAffinityAppInnerParameters:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ComponentAffinityAppInnerParameters.
+        r"""Sets the name of this ComponentAffinityAppInnerParameters.
 
         :param name: The name of this ComponentAffinityAppInnerParameters.
         :type name: str

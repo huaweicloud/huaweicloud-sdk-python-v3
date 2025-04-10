@@ -29,7 +29,7 @@ class ListTemplateRequest:
     }
 
     def __init__(self, template_id=None, page=None, size=None):
-        """ListTemplateRequest
+        r"""ListTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListTemplateRequest:
 
     @property
     def template_id(self):
-        """Gets the template_id of this ListTemplateRequest.
+        r"""Gets the template_id of this ListTemplateRequest.
 
         自定义转码模板ID，最多10个 
 
@@ -68,7 +68,7 @@ class ListTemplateRequest:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this ListTemplateRequest.
+        r"""Sets the template_id of this ListTemplateRequest.
 
         自定义转码模板ID，最多10个 
 
@@ -79,7 +79,7 @@ class ListTemplateRequest:
 
     @property
     def page(self):
-        """Gets the page of this ListTemplateRequest.
+        r"""Gets the page of this ListTemplateRequest.
 
         分页编号。查询指定“task_id”时，该参数无效。  默认值：0。 
 
@@ -90,7 +90,7 @@ class ListTemplateRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListTemplateRequest.
+        r"""Sets the page of this ListTemplateRequest.
 
         分页编号。查询指定“task_id”时，该参数无效。  默认值：0。 
 
@@ -101,7 +101,7 @@ class ListTemplateRequest:
 
     @property
     def size(self):
-        """Gets the size of this ListTemplateRequest.
+        r"""Gets the size of this ListTemplateRequest.
 
         每页记录数。取值范围：[1,100]，指定template_id时该参数无效 
 
@@ -112,7 +112,7 @@ class ListTemplateRequest:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListTemplateRequest.
+        r"""Sets the size of this ListTemplateRequest.
 
         每页记录数。取值范围：[1,100]，指定template_id时该参数无效 
 

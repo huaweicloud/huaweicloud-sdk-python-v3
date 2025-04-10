@@ -25,7 +25,7 @@ class DeleteScheduledTasksReq:
     }
 
     def __init__(self, task_ids=None):
-        """DeleteScheduledTasksReq
+        r"""DeleteScheduledTasksReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteScheduledTasksReq:
 
     @property
     def task_ids(self):
-        """Gets the task_ids of this DeleteScheduledTasksReq.
+        r"""Gets the task_ids of this DeleteScheduledTasksReq.
 
         待删除的任务ID列表。
 
@@ -54,7 +54,7 @@ class DeleteScheduledTasksReq:
 
     @task_ids.setter
     def task_ids(self, task_ids):
-        """Sets the task_ids of this DeleteScheduledTasksReq.
+        r"""Sets the task_ids of this DeleteScheduledTasksReq.
 
         待删除的任务ID列表。
 

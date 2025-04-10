@@ -27,7 +27,7 @@ class DeleteSecurityDataClassificationRuleGroupRequest:
     }
 
     def __init__(self, workspace=None, body=None):
-        """DeleteSecurityDataClassificationRuleGroupRequest
+        r"""DeleteSecurityDataClassificationRuleGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteSecurityDataClassificationRuleGroupRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this DeleteSecurityDataClassificationRuleGroupRequest.
+        r"""Gets the workspace of this DeleteSecurityDataClassificationRuleGroupRequest.
 
         DataArts Studio工作空间ID
 
@@ -60,7 +60,7 @@ class DeleteSecurityDataClassificationRuleGroupRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this DeleteSecurityDataClassificationRuleGroupRequest.
+        r"""Sets the workspace of this DeleteSecurityDataClassificationRuleGroupRequest.
 
         DataArts Studio工作空间ID
 
@@ -71,7 +71,7 @@ class DeleteSecurityDataClassificationRuleGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteSecurityDataClassificationRuleGroupRequest.
+        r"""Gets the body of this DeleteSecurityDataClassificationRuleGroupRequest.
 
         :return: The body of this DeleteSecurityDataClassificationRuleGroupRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BatchDeleteRuleGroupsBaseDTO`
@@ -80,7 +80,7 @@ class DeleteSecurityDataClassificationRuleGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteSecurityDataClassificationRuleGroupRequest.
+        r"""Sets the body of this DeleteSecurityDataClassificationRuleGroupRequest.
 
         :param body: The body of this DeleteSecurityDataClassificationRuleGroupRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.BatchDeleteRuleGroupsBaseDTO`

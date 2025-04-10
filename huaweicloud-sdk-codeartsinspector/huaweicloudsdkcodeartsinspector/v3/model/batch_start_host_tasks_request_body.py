@@ -27,7 +27,7 @@ class BatchStartHostTasksRequestBody:
     }
 
     def __init__(self, hosts=None, action=None):
-        """BatchStartHostTasksRequestBody
+        r"""BatchStartHostTasksRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchStartHostTasksRequestBody:
 
     @property
     def hosts(self):
-        """Gets the hosts of this BatchStartHostTasksRequestBody.
+        r"""Gets the hosts of this BatchStartHostTasksRequestBody.
 
         主机ID列表
 
@@ -61,7 +61,7 @@ class BatchStartHostTasksRequestBody:
 
     @hosts.setter
     def hosts(self, hosts):
-        """Sets the hosts of this BatchStartHostTasksRequestBody.
+        r"""Sets the hosts of this BatchStartHostTasksRequestBody.
 
         主机ID列表
 
@@ -72,7 +72,7 @@ class BatchStartHostTasksRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this BatchStartHostTasksRequestBody.
+        r"""Gets the action of this BatchStartHostTasksRequestBody.
 
         对扫描任务的操作:   * start - 启动   * cancel - 取消 
 
@@ -83,7 +83,7 @@ class BatchStartHostTasksRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this BatchStartHostTasksRequestBody.
+        r"""Sets the action of this BatchStartHostTasksRequestBody.
 
         对扫描任务的操作:   * start - 启动   * cancel - 取消 
 

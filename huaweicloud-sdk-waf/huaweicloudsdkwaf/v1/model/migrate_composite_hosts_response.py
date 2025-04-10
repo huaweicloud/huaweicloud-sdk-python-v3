@@ -30,7 +30,7 @@ class MigrateCompositeHostsResponse(SdkResponse):
     }
 
     def __init__(self, host_ids=None, policy_id=None, certificate_id=None):
-        """MigrateCompositeHostsResponse
+        r"""MigrateCompositeHostsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class MigrateCompositeHostsResponse(SdkResponse):
 
     @property
     def host_ids(self):
-        """Gets the host_ids of this MigrateCompositeHostsResponse.
+        r"""Gets the host_ids of this MigrateCompositeHostsResponse.
 
         host_id列表
 
@@ -69,7 +69,7 @@ class MigrateCompositeHostsResponse(SdkResponse):
 
     @host_ids.setter
     def host_ids(self, host_ids):
-        """Sets the host_ids of this MigrateCompositeHostsResponse.
+        r"""Sets the host_ids of this MigrateCompositeHostsResponse.
 
         host_id列表
 
@@ -80,7 +80,7 @@ class MigrateCompositeHostsResponse(SdkResponse):
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this MigrateCompositeHostsResponse.
+        r"""Gets the policy_id of this MigrateCompositeHostsResponse.
 
         策略ID（目标企业项目下的策略ID）
 
@@ -91,7 +91,7 @@ class MigrateCompositeHostsResponse(SdkResponse):
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this MigrateCompositeHostsResponse.
+        r"""Sets the policy_id of this MigrateCompositeHostsResponse.
 
         策略ID（目标企业项目下的策略ID）
 
@@ -102,7 +102,7 @@ class MigrateCompositeHostsResponse(SdkResponse):
 
     @property
     def certificate_id(self):
-        """Gets the certificate_id of this MigrateCompositeHostsResponse.
+        r"""Gets the certificate_id of this MigrateCompositeHostsResponse.
 
         证书ID（目标企业项目下的证书ID）
 
@@ -113,7 +113,7 @@ class MigrateCompositeHostsResponse(SdkResponse):
 
     @certificate_id.setter
     def certificate_id(self, certificate_id):
-        """Sets the certificate_id of this MigrateCompositeHostsResponse.
+        r"""Sets the certificate_id of this MigrateCompositeHostsResponse.
 
         证书ID（目标企业项目下的证书ID）
 

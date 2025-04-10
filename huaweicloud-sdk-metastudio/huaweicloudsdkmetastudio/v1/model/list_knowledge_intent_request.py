@@ -31,7 +31,7 @@ class ListKnowledgeIntentRequest:
     }
 
     def __init__(self, x_app_user_id=None, offset=None, limit=None, skill_id=None):
-        """ListKnowledgeIntentRequest
+        r"""ListKnowledgeIntentRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListKnowledgeIntentRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this ListKnowledgeIntentRequest.
+        r"""Gets the x_app_user_id of this ListKnowledgeIntentRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -74,7 +74,7 @@ class ListKnowledgeIntentRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this ListKnowledgeIntentRequest.
+        r"""Sets the x_app_user_id of this ListKnowledgeIntentRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -85,7 +85,7 @@ class ListKnowledgeIntentRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListKnowledgeIntentRequest.
+        r"""Gets the offset of this ListKnowledgeIntentRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -96,7 +96,7 @@ class ListKnowledgeIntentRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListKnowledgeIntentRequest.
+        r"""Sets the offset of this ListKnowledgeIntentRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -107,7 +107,7 @@ class ListKnowledgeIntentRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListKnowledgeIntentRequest.
+        r"""Gets the limit of this ListKnowledgeIntentRequest.
 
         每页显示的条目数量。
 
@@ -118,7 +118,7 @@ class ListKnowledgeIntentRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListKnowledgeIntentRequest.
+        r"""Sets the limit of this ListKnowledgeIntentRequest.
 
         每页显示的条目数量。
 
@@ -129,7 +129,7 @@ class ListKnowledgeIntentRequest:
 
     @property
     def skill_id(self):
-        """Gets the skill_id of this ListKnowledgeIntentRequest.
+        r"""Gets the skill_id of this ListKnowledgeIntentRequest.
 
         技能ID。
 
@@ -140,7 +140,7 @@ class ListKnowledgeIntentRequest:
 
     @skill_id.setter
     def skill_id(self, skill_id):
-        """Sets the skill_id of this ListKnowledgeIntentRequest.
+        r"""Sets the skill_id of this ListKnowledgeIntentRequest.
 
         技能ID。
 

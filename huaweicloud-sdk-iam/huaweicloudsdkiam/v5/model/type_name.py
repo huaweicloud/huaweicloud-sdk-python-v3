@@ -23,7 +23,7 @@ class TypeName:
     }
 
     def __init__(self):
-        """TypeName
+        r"""TypeName
 
         The model defined in huaweicloud sdk
 

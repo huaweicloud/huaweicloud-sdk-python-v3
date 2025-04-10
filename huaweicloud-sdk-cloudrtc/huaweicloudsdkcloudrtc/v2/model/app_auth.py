@@ -31,7 +31,7 @@ class AppAuth:
     }
 
     def __init__(self, enable=None, expire=None, app_key=None, update_time=None):
-        """AppAuth
+        r"""AppAuth
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class AppAuth:
 
     @property
     def enable(self):
-        """Gets the enable of this AppAuth.
+        r"""Gets the enable of this AppAuth.
 
         开启或关闭URL鉴权
 
@@ -75,7 +75,7 @@ class AppAuth:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this AppAuth.
+        r"""Sets the enable of this AppAuth.
 
         开启或关闭URL鉴权
 
@@ -86,7 +86,7 @@ class AppAuth:
 
     @property
     def expire(self):
-        """Gets the expire of this AppAuth.
+        r"""Gets the expire of this AppAuth.
 
         接入RTC建链认证时的signature的有效期。单位：秒。默认300秒。signature由app_key生成 
 
@@ -97,7 +97,7 @@ class AppAuth:
 
     @expire.setter
     def expire(self, expire):
-        """Sets the expire of this AppAuth.
+        r"""Sets the expire of this AppAuth.
 
         接入RTC建链认证时的signature的有效期。单位：秒。默认300秒。signature由app_key生成 
 
@@ -108,7 +108,7 @@ class AppAuth:
 
     @property
     def app_key(self):
-        """Gets the app_key of this AppAuth.
+        r"""Gets the app_key of this AppAuth.
 
         app鉴权秘钥
 
@@ -119,7 +119,7 @@ class AppAuth:
 
     @app_key.setter
     def app_key(self, app_key):
-        """Sets the app_key of this AppAuth.
+        r"""Sets the app_key of this AppAuth.
 
         app鉴权秘钥
 
@@ -130,7 +130,7 @@ class AppAuth:
 
     @property
     def update_time(self):
-        """Gets the update_time of this AppAuth.
+        r"""Gets the update_time of this AppAuth.
 
         app鉴权的更新时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
@@ -141,7 +141,7 @@ class AppAuth:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this AppAuth.
+        r"""Sets the update_time of this AppAuth.
 
         app鉴权的更新时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 

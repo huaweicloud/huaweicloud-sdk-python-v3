@@ -27,7 +27,7 @@ class ResourceInstanceTagRequestMatches:
     }
 
     def __init__(self, key=None, value=None):
-        """ResourceInstanceTagRequestMatches
+        r"""ResourceInstanceTagRequestMatches
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ResourceInstanceTagRequestMatches:
 
     @property
     def key(self):
-        """Gets the key of this ResourceInstanceTagRequestMatches.
+        r"""Gets the key of this ResourceInstanceTagRequestMatches.
 
         键，目前仅支持：resource_name
 
@@ -59,7 +59,7 @@ class ResourceInstanceTagRequestMatches:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ResourceInstanceTagRequestMatches.
+        r"""Sets the key of this ResourceInstanceTagRequestMatches.
 
         键，目前仅支持：resource_name
 
@@ -70,7 +70,7 @@ class ResourceInstanceTagRequestMatches:
 
     @property
     def value(self):
-        """Gets the value of this ResourceInstanceTagRequestMatches.
+        r"""Gets the value of this ResourceInstanceTagRequestMatches.
 
         值，需要匹配的资源名称
 
@@ -81,7 +81,7 @@ class ResourceInstanceTagRequestMatches:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ResourceInstanceTagRequestMatches.
+        r"""Sets the value of this ResourceInstanceTagRequestMatches.
 
         值，需要匹配的资源名称
 

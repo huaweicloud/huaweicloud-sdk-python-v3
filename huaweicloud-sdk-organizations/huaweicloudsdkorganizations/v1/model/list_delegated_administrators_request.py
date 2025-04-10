@@ -32,7 +32,7 @@ class ListDelegatedAdministratorsRequest:
     }
 
     def __init__(self, x_security_token=None, service_principal=None, limit=None, marker=None):
-        """ListDelegatedAdministratorsRequest
+        r"""ListDelegatedAdministratorsRequest
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListDelegatedAdministratorsRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this ListDelegatedAdministratorsRequest.
+        r"""Gets the x_security_token of this ListDelegatedAdministratorsRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -76,7 +76,7 @@ class ListDelegatedAdministratorsRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this ListDelegatedAdministratorsRequest.
+        r"""Sets the x_security_token of this ListDelegatedAdministratorsRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -87,7 +87,7 @@ class ListDelegatedAdministratorsRequest:
 
     @property
     def service_principal(self):
-        """Gets the service_principal of this ListDelegatedAdministratorsRequest.
+        r"""Gets the service_principal of this ListDelegatedAdministratorsRequest.
 
         服务主体的名称。
 
@@ -98,7 +98,7 @@ class ListDelegatedAdministratorsRequest:
 
     @service_principal.setter
     def service_principal(self, service_principal):
-        """Sets the service_principal of this ListDelegatedAdministratorsRequest.
+        r"""Sets the service_principal of this ListDelegatedAdministratorsRequest.
 
         服务主体的名称。
 
@@ -109,7 +109,7 @@ class ListDelegatedAdministratorsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDelegatedAdministratorsRequest.
+        r"""Gets the limit of this ListDelegatedAdministratorsRequest.
 
         页面中最大结果数量。
 
@@ -120,7 +120,7 @@ class ListDelegatedAdministratorsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDelegatedAdministratorsRequest.
+        r"""Sets the limit of this ListDelegatedAdministratorsRequest.
 
         页面中最大结果数量。
 
@@ -131,7 +131,7 @@ class ListDelegatedAdministratorsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListDelegatedAdministratorsRequest.
+        r"""Gets the marker of this ListDelegatedAdministratorsRequest.
 
         分页标记。
 
@@ -142,7 +142,7 @@ class ListDelegatedAdministratorsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListDelegatedAdministratorsRequest.
+        r"""Sets the marker of this ListDelegatedAdministratorsRequest.
 
         分页标记。
 

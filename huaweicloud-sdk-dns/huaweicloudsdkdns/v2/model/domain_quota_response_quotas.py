@@ -31,7 +31,7 @@ class DomainQuotaResponseQuotas:
     }
 
     def __init__(self, quota_key=None, quota_limit=None, used=None, unit=None):
-        """DomainQuotaResponseQuotas
+        r"""DomainQuotaResponseQuotas
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class DomainQuotaResponseQuotas:
 
     @property
     def quota_key(self):
-        """Gets the quota_key of this DomainQuotaResponseQuotas.
+        r"""Gets the quota_key of this DomainQuotaResponseQuotas.
 
         资源类型。
 
@@ -71,7 +71,7 @@ class DomainQuotaResponseQuotas:
 
     @quota_key.setter
     def quota_key(self, quota_key):
-        """Sets the quota_key of this DomainQuotaResponseQuotas.
+        r"""Sets the quota_key of this DomainQuotaResponseQuotas.
 
         资源类型。
 
@@ -82,7 +82,7 @@ class DomainQuotaResponseQuotas:
 
     @property
     def quota_limit(self):
-        """Gets the quota_limit of this DomainQuotaResponseQuotas.
+        r"""Gets the quota_limit of this DomainQuotaResponseQuotas.
 
         资源配额的最大值。
 
@@ -93,7 +93,7 @@ class DomainQuotaResponseQuotas:
 
     @quota_limit.setter
     def quota_limit(self, quota_limit):
-        """Sets the quota_limit of this DomainQuotaResponseQuotas.
+        r"""Sets the quota_limit of this DomainQuotaResponseQuotas.
 
         资源配额的最大值。
 
@@ -104,7 +104,7 @@ class DomainQuotaResponseQuotas:
 
     @property
     def used(self):
-        """Gets the used of this DomainQuotaResponseQuotas.
+        r"""Gets the used of this DomainQuotaResponseQuotas.
 
         配额已使用数量。
 
@@ -115,7 +115,7 @@ class DomainQuotaResponseQuotas:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this DomainQuotaResponseQuotas.
+        r"""Sets the used of this DomainQuotaResponseQuotas.
 
         配额已使用数量。
 
@@ -126,7 +126,7 @@ class DomainQuotaResponseQuotas:
 
     @property
     def unit(self):
-        """Gets the unit of this DomainQuotaResponseQuotas.
+        r"""Gets the unit of this DomainQuotaResponseQuotas.
 
         配额统计单位，取固定值“count”。
 
@@ -137,7 +137,7 @@ class DomainQuotaResponseQuotas:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this DomainQuotaResponseQuotas.
+        r"""Sets the unit of this DomainQuotaResponseQuotas.
 
         配额统计单位，取固定值“count”。
 

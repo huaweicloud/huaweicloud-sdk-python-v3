@@ -27,7 +27,7 @@ class FlinkSqlJobTemplateList:
     }
 
     def __init__(self, total_count=None, templates=None):
-        """FlinkSqlJobTemplateList
+        r"""FlinkSqlJobTemplateList
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class FlinkSqlJobTemplateList:
 
     @property
     def total_count(self):
-        """Gets the total_count of this FlinkSqlJobTemplateList.
+        r"""Gets the total_count of this FlinkSqlJobTemplateList.
 
         模板总数。
 
@@ -61,7 +61,7 @@ class FlinkSqlJobTemplateList:
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this FlinkSqlJobTemplateList.
+        r"""Sets the total_count of this FlinkSqlJobTemplateList.
 
         模板总数。
 
@@ -72,7 +72,7 @@ class FlinkSqlJobTemplateList:
 
     @property
     def templates(self):
-        """Gets the templates of this FlinkSqlJobTemplateList.
+        r"""Gets the templates of this FlinkSqlJobTemplateList.
 
         模板详细信息
 
@@ -83,7 +83,7 @@ class FlinkSqlJobTemplateList:
 
     @templates.setter
     def templates(self, templates):
-        """Sets the templates of this FlinkSqlJobTemplateList.
+        r"""Sets the templates of this FlinkSqlJobTemplateList.
 
         模板详细信息
 

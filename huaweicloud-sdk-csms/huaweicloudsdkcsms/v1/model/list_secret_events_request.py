@@ -27,7 +27,7 @@ class ListSecretEventsRequest:
     }
 
     def __init__(self, limit=None, marker=None):
-        """ListSecretEventsRequest
+        r"""ListSecretEventsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListSecretEventsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSecretEventsRequest.
+        r"""Gets the limit of this ListSecretEventsRequest.
 
         每页返回的个数。  默认值：50。
 
@@ -61,7 +61,7 @@ class ListSecretEventsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSecretEventsRequest.
+        r"""Sets the limit of this ListSecretEventsRequest.
 
         每页返回的个数。  默认值：50。
 
@@ -72,7 +72,7 @@ class ListSecretEventsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListSecretEventsRequest.
+        r"""Gets the marker of this ListSecretEventsRequest.
 
         分页查询起始的事件名称，为空时为查询第一页
 
@@ -83,7 +83,7 @@ class ListSecretEventsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListSecretEventsRequest.
+        r"""Sets the marker of this ListSecretEventsRequest.
 
         分页查询起始的事件名称，为空时为查询第一页
 

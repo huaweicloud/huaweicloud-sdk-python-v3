@@ -37,7 +37,7 @@ class ListResizeFlavorsRequest:
     }
 
     def __init__(self, instance_uuid=None, limit=None, marker=None, sort_dir=None, sort_key=None, source_flavor_id=None, source_flavor_name=None):
-        """ListResizeFlavorsRequest
+        r"""ListResizeFlavorsRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListResizeFlavorsRequest:
 
     @property
     def instance_uuid(self):
-        """Gets the instance_uuid of this ListResizeFlavorsRequest.
+        r"""Gets the instance_uuid of this ListResizeFlavorsRequest.
 
         进行规格切换的云服务器ID，UUID格式。(instance_uuid,source_flavor_id and source_flavor_name 不能都为空)
 
@@ -96,7 +96,7 @@ class ListResizeFlavorsRequest:
 
     @instance_uuid.setter
     def instance_uuid(self, instance_uuid):
-        """Sets the instance_uuid of this ListResizeFlavorsRequest.
+        r"""Sets the instance_uuid of this ListResizeFlavorsRequest.
 
         进行规格切换的云服务器ID，UUID格式。(instance_uuid,source_flavor_id and source_flavor_name 不能都为空)
 
@@ -107,7 +107,7 @@ class ListResizeFlavorsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListResizeFlavorsRequest.
+        r"""Gets the limit of this ListResizeFlavorsRequest.
 
         单页面可显示的flavor条数最大值，默认是1000。
 
@@ -118,7 +118,7 @@ class ListResizeFlavorsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListResizeFlavorsRequest.
+        r"""Sets the limit of this ListResizeFlavorsRequest.
 
         单页面可显示的flavor条数最大值，默认是1000。
 
@@ -129,7 +129,7 @@ class ListResizeFlavorsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListResizeFlavorsRequest.
+        r"""Gets the marker of this ListResizeFlavorsRequest.
 
         以单页最后一条flavor的ID作为分页标记。
 
@@ -140,7 +140,7 @@ class ListResizeFlavorsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListResizeFlavorsRequest.
+        r"""Sets the marker of this ListResizeFlavorsRequest.
 
         以单页最后一条flavor的ID作为分页标记。
 
@@ -151,7 +151,7 @@ class ListResizeFlavorsRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListResizeFlavorsRequest.
+        r"""Gets the sort_dir of this ListResizeFlavorsRequest.
 
         升序/降序排序，默认值为：asc。  取值范围：  - asc：表示升序。 - desc：表示降序
 
@@ -162,7 +162,7 @@ class ListResizeFlavorsRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListResizeFlavorsRequest.
+        r"""Sets the sort_dir of this ListResizeFlavorsRequest.
 
         升序/降序排序，默认值为：asc。  取值范围：  - asc：表示升序。 - desc：表示降序
 
@@ -173,7 +173,7 @@ class ListResizeFlavorsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListResizeFlavorsRequest.
+        r"""Gets the sort_key of this ListResizeFlavorsRequest.
 
         排序字段。默认值为“flavorid”。  key的取值范围：  - flavorid：表示规格ID。 - name：表示规格名称。 - memory_mb：表示内存大小。 - vcpus：表示CPU大小。 - root_gb：表示系统盘大小。
 
@@ -184,7 +184,7 @@ class ListResizeFlavorsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListResizeFlavorsRequest.
+        r"""Sets the sort_key of this ListResizeFlavorsRequest.
 
         排序字段。默认值为“flavorid”。  key的取值范围：  - flavorid：表示规格ID。 - name：表示规格名称。 - memory_mb：表示内存大小。 - vcpus：表示CPU大小。 - root_gb：表示系统盘大小。
 
@@ -195,7 +195,7 @@ class ListResizeFlavorsRequest:
 
     @property
     def source_flavor_id(self):
-        """Gets the source_flavor_id of this ListResizeFlavorsRequest.
+        r"""Gets the source_flavor_id of this ListResizeFlavorsRequest.
 
         进行规格切换的云服务器源规格ID。(instance_uuid,source_flavor_id and source_flavor_name 不能都为空)
 
@@ -206,7 +206,7 @@ class ListResizeFlavorsRequest:
 
     @source_flavor_id.setter
     def source_flavor_id(self, source_flavor_id):
-        """Sets the source_flavor_id of this ListResizeFlavorsRequest.
+        r"""Sets the source_flavor_id of this ListResizeFlavorsRequest.
 
         进行规格切换的云服务器源规格ID。(instance_uuid,source_flavor_id and source_flavor_name 不能都为空)
 
@@ -217,7 +217,7 @@ class ListResizeFlavorsRequest:
 
     @property
     def source_flavor_name(self):
-        """Gets the source_flavor_name of this ListResizeFlavorsRequest.
+        r"""Gets the source_flavor_name of this ListResizeFlavorsRequest.
 
         进行规格切换的云服务器源规格名称。(instance_uuid,source_flavor_id and source_flavor_name 不能都为空)
 
@@ -228,7 +228,7 @@ class ListResizeFlavorsRequest:
 
     @source_flavor_name.setter
     def source_flavor_name(self, source_flavor_name):
-        """Sets the source_flavor_name of this ListResizeFlavorsRequest.
+        r"""Sets the source_flavor_name of this ListResizeFlavorsRequest.
 
         进行规格切换的云服务器源规格名称。(instance_uuid,source_flavor_id and source_flavor_name 不能都为空)
 

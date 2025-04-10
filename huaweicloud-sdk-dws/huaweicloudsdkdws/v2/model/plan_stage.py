@@ -41,7 +41,7 @@ class PlanStage:
     }
 
     def __init__(self, month=None, day=None, plan_id=None, stage_id=None, stage_name=None, start_time=None, end_time=None, next_valid_time=None, queue_list=None):
-        """PlanStage
+        r"""PlanStage
 
         The model defined in huaweicloud sdk
 
@@ -94,7 +94,7 @@ class PlanStage:
 
     @property
     def month(self):
-        """Gets the month of this PlanStage.
+        r"""Gets the month of this PlanStage.
 
         计划月份。
 
@@ -105,7 +105,7 @@ class PlanStage:
 
     @month.setter
     def month(self, month):
-        """Sets the month of this PlanStage.
+        r"""Sets the month of this PlanStage.
 
         计划月份。
 
@@ -116,7 +116,7 @@ class PlanStage:
 
     @property
     def day(self):
-        """Gets the day of this PlanStage.
+        r"""Gets the day of this PlanStage.
 
         计划日期。
 
@@ -127,7 +127,7 @@ class PlanStage:
 
     @day.setter
     def day(self, day):
-        """Sets the day of this PlanStage.
+        r"""Sets the day of this PlanStage.
 
         计划日期。
 
@@ -138,7 +138,7 @@ class PlanStage:
 
     @property
     def plan_id(self):
-        """Gets the plan_id of this PlanStage.
+        r"""Gets the plan_id of this PlanStage.
 
         计划ID。
 
@@ -149,7 +149,7 @@ class PlanStage:
 
     @plan_id.setter
     def plan_id(self, plan_id):
-        """Sets the plan_id of this PlanStage.
+        r"""Sets the plan_id of this PlanStage.
 
         计划ID。
 
@@ -160,7 +160,7 @@ class PlanStage:
 
     @property
     def stage_id(self):
-        """Gets the stage_id of this PlanStage.
+        r"""Gets the stage_id of this PlanStage.
 
         计划阶段ID。
 
@@ -171,7 +171,7 @@ class PlanStage:
 
     @stage_id.setter
     def stage_id(self, stage_id):
-        """Sets the stage_id of this PlanStage.
+        r"""Sets the stage_id of this PlanStage.
 
         计划阶段ID。
 
@@ -182,7 +182,7 @@ class PlanStage:
 
     @property
     def stage_name(self):
-        """Gets the stage_name of this PlanStage.
+        r"""Gets the stage_name of this PlanStage.
 
         计划阶段名称。
 
@@ -193,7 +193,7 @@ class PlanStage:
 
     @stage_name.setter
     def stage_name(self, stage_name):
-        """Sets the stage_name of this PlanStage.
+        r"""Sets the stage_name of this PlanStage.
 
         计划阶段名称。
 
@@ -204,7 +204,7 @@ class PlanStage:
 
     @property
     def start_time(self):
-        """Gets the start_time of this PlanStage.
+        r"""Gets the start_time of this PlanStage.
 
         计划开始时间。
 
@@ -215,7 +215,7 @@ class PlanStage:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this PlanStage.
+        r"""Sets the start_time of this PlanStage.
 
         计划开始时间。
 
@@ -226,7 +226,7 @@ class PlanStage:
 
     @property
     def end_time(self):
-        """Gets the end_time of this PlanStage.
+        r"""Gets the end_time of this PlanStage.
 
         计划结束时间
 
@@ -237,7 +237,7 @@ class PlanStage:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this PlanStage.
+        r"""Sets the end_time of this PlanStage.
 
         计划结束时间
 
@@ -248,7 +248,7 @@ class PlanStage:
 
     @property
     def next_valid_time(self):
-        """Gets the next_valid_time of this PlanStage.
+        r"""Gets the next_valid_time of this PlanStage.
 
         下次校验时间
 
@@ -259,7 +259,7 @@ class PlanStage:
 
     @next_valid_time.setter
     def next_valid_time(self, next_valid_time):
-        """Sets the next_valid_time of this PlanStage.
+        r"""Sets the next_valid_time of this PlanStage.
 
         下次校验时间
 
@@ -270,7 +270,7 @@ class PlanStage:
 
     @property
     def queue_list(self):
-        """Gets the queue_list of this PlanStage.
+        r"""Gets the queue_list of this PlanStage.
 
         资源队列列表
 
@@ -281,7 +281,7 @@ class PlanStage:
 
     @queue_list.setter
     def queue_list(self, queue_list):
-        """Sets the queue_list of this PlanStage.
+        r"""Sets the queue_list of this PlanStage.
 
         资源队列列表
 

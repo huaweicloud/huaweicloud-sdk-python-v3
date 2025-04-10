@@ -51,7 +51,7 @@ class ListDevicesRequest:
     }
 
     def __init__(self, instance_id=None, limit=None, offset=None, app_id=None, product_id=None, product_name=None, device_name=None, client_id=None, node_id=None, node_type=None, online_status=None, created_date_start=None, created_date_end=None, tag=None):
-        """ListDevicesRequest
+        r"""ListDevicesRequest
 
         The model defined in huaweicloud sdk
 
@@ -133,7 +133,7 @@ class ListDevicesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListDevicesRequest.
+        r"""Gets the instance_id of this ListDevicesRequest.
 
         实例ID
 
@@ -144,7 +144,7 @@ class ListDevicesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListDevicesRequest.
+        r"""Sets the instance_id of this ListDevicesRequest.
 
         实例ID
 
@@ -155,7 +155,7 @@ class ListDevicesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDevicesRequest.
+        r"""Gets the limit of this ListDevicesRequest.
 
         每页显示条目数量，最大数量999，超过999后只返回999
 
@@ -166,7 +166,7 @@ class ListDevicesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDevicesRequest.
+        r"""Sets the limit of this ListDevicesRequest.
 
         每页显示条目数量，最大数量999，超过999后只返回999
 
@@ -177,7 +177,7 @@ class ListDevicesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDevicesRequest.
+        r"""Gets the offset of this ListDevicesRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -188,7 +188,7 @@ class ListDevicesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDevicesRequest.
+        r"""Sets the offset of this ListDevicesRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -199,7 +199,7 @@ class ListDevicesRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ListDevicesRequest.
+        r"""Gets the app_id of this ListDevicesRequest.
 
         应用ID
 
@@ -210,7 +210,7 @@ class ListDevicesRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ListDevicesRequest.
+        r"""Sets the app_id of this ListDevicesRequest.
 
         应用ID
 
@@ -221,7 +221,7 @@ class ListDevicesRequest:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ListDevicesRequest.
+        r"""Gets the product_id of this ListDevicesRequest.
 
         设备归属的产品ID
 
@@ -232,7 +232,7 @@ class ListDevicesRequest:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ListDevicesRequest.
+        r"""Sets the product_id of this ListDevicesRequest.
 
         设备归属的产品ID
 
@@ -243,7 +243,7 @@ class ListDevicesRequest:
 
     @property
     def product_name(self):
-        """Gets the product_name of this ListDevicesRequest.
+        r"""Gets the product_name of this ListDevicesRequest.
 
         设备归属的产品名称
 
@@ -254,7 +254,7 @@ class ListDevicesRequest:
 
     @product_name.setter
     def product_name(self, product_name):
-        """Sets the product_name of this ListDevicesRequest.
+        r"""Sets the product_name of this ListDevicesRequest.
 
         设备归属的产品名称
 
@@ -265,7 +265,7 @@ class ListDevicesRequest:
 
     @property
     def device_name(self):
-        """Gets the device_name of this ListDevicesRequest.
+        r"""Gets the device_name of this ListDevicesRequest.
 
         设备名称，支持中文、中文标点符号（）。；，：“”、？《》及英文大小写、数字及英文符号()_,#.?'-@%&!, 长度2-64
 
@@ -276,7 +276,7 @@ class ListDevicesRequest:
 
     @device_name.setter
     def device_name(self, device_name):
-        """Sets the device_name of this ListDevicesRequest.
+        r"""Sets the device_name of this ListDevicesRequest.
 
         设备名称，支持中文、中文标点符号（）。；，：“”、？《》及英文大小写、数字及英文符号()_,#.?'-@%&!, 长度2-64
 
@@ -287,7 +287,7 @@ class ListDevicesRequest:
 
     @property
     def client_id(self):
-        """Gets the client_id of this ListDevicesRequest.
+        r"""Gets the client_id of this ListDevicesRequest.
 
         设备客户端ID，平台生成的设备唯一标识
 
@@ -298,7 +298,7 @@ class ListDevicesRequest:
 
     @client_id.setter
     def client_id(self, client_id):
-        """Sets the client_id of this ListDevicesRequest.
+        r"""Sets the client_id of this ListDevicesRequest.
 
         设备客户端ID，平台生成的设备唯一标识
 
@@ -309,7 +309,7 @@ class ListDevicesRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ListDevicesRequest.
+        r"""Gets the node_id of this ListDevicesRequest.
 
         设备物理编号，通常使用MAC或者IMEI号，支持英文大小写，数字，下划线和中划线，长度2-64
 
@@ -320,7 +320,7 @@ class ListDevicesRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ListDevicesRequest.
+        r"""Sets the node_id of this ListDevicesRequest.
 
         设备物理编号，通常使用MAC或者IMEI号，支持英文大小写，数字，下划线和中划线，长度2-64
 
@@ -331,7 +331,7 @@ class ListDevicesRequest:
 
     @property
     def node_type(self):
-        """Gets the node_type of this ListDevicesRequest.
+        r"""Gets the node_type of this ListDevicesRequest.
 
         节点类型 0-直连 1-网关 2-子设备，不传默认查询所有
 
@@ -342,7 +342,7 @@ class ListDevicesRequest:
 
     @node_type.setter
     def node_type(self, node_type):
-        """Sets the node_type of this ListDevicesRequest.
+        r"""Sets the node_type of this ListDevicesRequest.
 
         节点类型 0-直连 1-网关 2-子设备，不传默认查询所有
 
@@ -353,7 +353,7 @@ class ListDevicesRequest:
 
     @property
     def online_status(self):
-        """Gets the online_status of this ListDevicesRequest.
+        r"""Gets the online_status of this ListDevicesRequest.
 
         是否在线 0-未连接 1-在线 2-离线，支持传入多个值以逗号分隔
 
@@ -364,7 +364,7 @@ class ListDevicesRequest:
 
     @online_status.setter
     def online_status(self, online_status):
-        """Sets the online_status of this ListDevicesRequest.
+        r"""Sets the online_status of this ListDevicesRequest.
 
         是否在线 0-未连接 1-在线 2-离线，支持传入多个值以逗号分隔
 
@@ -375,7 +375,7 @@ class ListDevicesRequest:
 
     @property
     def created_date_start(self):
-        """Gets the created_date_start of this ListDevicesRequest.
+        r"""Gets the created_date_start of this ListDevicesRequest.
 
         创建时间起始，格式timestamp(ms)，使用UTC时区
 
@@ -386,7 +386,7 @@ class ListDevicesRequest:
 
     @created_date_start.setter
     def created_date_start(self, created_date_start):
-        """Sets the created_date_start of this ListDevicesRequest.
+        r"""Sets the created_date_start of this ListDevicesRequest.
 
         创建时间起始，格式timestamp(ms)，使用UTC时区
 
@@ -397,7 +397,7 @@ class ListDevicesRequest:
 
     @property
     def created_date_end(self):
-        """Gets the created_date_end of this ListDevicesRequest.
+        r"""Gets the created_date_end of this ListDevicesRequest.
 
         创建时间截止，格式timestamp(ms)，使用UTC时区
 
@@ -408,7 +408,7 @@ class ListDevicesRequest:
 
     @created_date_end.setter
     def created_date_end(self, created_date_end):
-        """Sets the created_date_end of this ListDevicesRequest.
+        r"""Sets the created_date_end of this ListDevicesRequest.
 
         创建时间截止，格式timestamp(ms)，使用UTC时区
 
@@ -419,7 +419,7 @@ class ListDevicesRequest:
 
     @property
     def tag(self):
-        """Gets the tag of this ListDevicesRequest.
+        r"""Gets the tag of this ListDevicesRequest.
 
         标签
 
@@ -430,7 +430,7 @@ class ListDevicesRequest:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this ListDevicesRequest.
+        r"""Sets the tag of this ListDevicesRequest.
 
         标签
 

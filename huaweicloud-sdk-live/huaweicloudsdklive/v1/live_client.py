@@ -34,7 +34,7 @@ class LiveClient(Client):
         return client_builder
 
     def batch_show_ip_belongs(self, request):
-        """查询IP归属信息
+        r"""查询IP归属信息
 
         查询IP归属信息。
         
@@ -100,7 +100,7 @@ class LiveClient(Client):
         return http_info
 
     def create_domain(self, request):
-        """创建直播域名
+        r"""创建直播域名
 
         可单独创建直播播放域名或推流域名，每个租户最多可配置64条域名记录。
         
@@ -165,7 +165,7 @@ class LiveClient(Client):
         return http_info
 
     def create_domain_mapping(self, request):
-        """域名映射
+        r"""域名映射
 
         将用户已创建的播放域名和推流域名建立域名映射关系
         
@@ -230,7 +230,7 @@ class LiveClient(Client):
         return http_info
 
     def create_record_callback_config(self, request):
-        """创建录制回调配置
+        r"""创建录制回调配置
 
         创建录制回调配置接口
         
@@ -295,7 +295,7 @@ class LiveClient(Client):
         return http_info
 
     def create_record_index(self, request):
-        """创建录制视频索引文件
+        r"""创建录制视频索引文件
 
         Create Record Index
         
@@ -360,7 +360,7 @@ class LiveClient(Client):
         return http_info
 
     def create_record_rule(self, request):
-        """创建录制规则
+        r"""创建录制规则
 
         创建录制规则接口，录制规则对新推送的流生效，对已经推送中的流不生效
         
@@ -425,7 +425,7 @@ class LiveClient(Client):
         return http_info
 
     def create_schedule_record_tasks(self, request):
-        """创建计划录制任务
+        r"""创建计划录制任务
 
         通过使用指定录制模板ID对应的配置创建一个在指定时间启动、结束的录制任务。
         
@@ -490,7 +490,7 @@ class LiveClient(Client):
         return http_info
 
     def create_snapshot_config(self, request):
-        """创建直播截图配置
+        r"""创建直播截图配置
 
         创建直播截图配置接口
         
@@ -555,7 +555,7 @@ class LiveClient(Client):
         return http_info
 
     def create_stream_forbidden(self, request):
-        """禁止直播推流
+        r"""禁止直播推流
 
         禁止直播推流
         
@@ -620,7 +620,7 @@ class LiveClient(Client):
         return http_info
 
     def create_transcodings_template(self, request):
-        """创建直播转码模板
+        r"""创建直播转码模板
 
         创建直播转码模板
         
@@ -685,7 +685,7 @@ class LiveClient(Client):
         return http_info
 
     def create_url_authchain(self, request):
-        """生成URL鉴权串
+        r"""生成URL鉴权串
 
         生成URL鉴权串
         
@@ -750,7 +750,7 @@ class LiveClient(Client):
         return http_info
 
     def delete_domain(self, request):
-        """删除直播域名
+        r"""删除直播域名
 
         删除域名。只有在域名停用（off）状态时才能删除。
         
@@ -815,7 +815,7 @@ class LiveClient(Client):
         return http_info
 
     def delete_domain_key_chain(self, request):
-        """删除指定域名的Key防盗链配置
+        r"""删除指定域名的Key防盗链配置
 
         删除指定域名的Key防盗链配置
         
@@ -880,7 +880,7 @@ class LiveClient(Client):
         return http_info
 
     def delete_domain_mapping(self, request):
-        """删除直播域名映射关系
+        r"""删除直播域名映射关系
 
         将播放域名和推流域名的域名映射关系删除
         
@@ -947,7 +947,7 @@ class LiveClient(Client):
         return http_info
 
     def delete_publish_template(self, request):
-        """删除直播推流通知配置
+        r"""删除直播推流通知配置
 
         删除直播推流通知配置
         
@@ -1012,7 +1012,7 @@ class LiveClient(Client):
         return http_info
 
     def delete_record_callback_config(self, request):
-        """删除录制回调配置
+        r"""删除录制回调配置
 
         删除录制回调配置接口
         
@@ -1077,7 +1077,7 @@ class LiveClient(Client):
         return http_info
 
     def delete_record_rule(self, request):
-        """删除录制规则
+        r"""删除录制规则
 
         删除录制规则接口
         
@@ -1142,7 +1142,7 @@ class LiveClient(Client):
         return http_info
 
     def delete_referer_chain(self, request):
-        """删除Referer防盗链黑白名单
+        r"""删除Referer防盗链黑白名单
 
         删除Referer防盗链黑白名单
         
@@ -1207,7 +1207,7 @@ class LiveClient(Client):
         return http_info
 
     def delete_schedule_record_tasks(self, request):
-        """停止计划录制任务
+        r"""停止计划录制任务
 
         停止计划录制任务，当前的录制任务会中止并生产录制文件。
         
@@ -1272,7 +1272,7 @@ class LiveClient(Client):
         return http_info
 
     def delete_snapshot_config(self, request):
-        """删除直播截图配置
+        r"""删除直播截图配置
 
         删除直播截图配置接口
         
@@ -1339,7 +1339,7 @@ class LiveClient(Client):
         return http_info
 
     def delete_stream_forbidden(self, request):
-        """禁推恢复
+        r"""禁推恢复
 
         恢复直播推流接口
         
@@ -1408,7 +1408,7 @@ class LiveClient(Client):
         return http_info
 
     def delete_transcodings_template(self, request):
-        """删除直播转码模板
+        r"""删除直播转码模板
 
         删除直播转码模板
         
@@ -1475,7 +1475,7 @@ class LiveClient(Client):
         return http_info
 
     def list_delay_config(self, request):
-        """查询播放域名延时配置
+        r"""查询播放域名延时配置
 
         查询播放域名延时配置。
         
@@ -1540,7 +1540,7 @@ class LiveClient(Client):
         return http_info
 
     def list_geo_blocking_config(self, request):
-        """获取地域限制配置列表
+        r"""获取地域限制配置列表
 
         查询播放域名的地域限制列表。
         
@@ -1605,7 +1605,7 @@ class LiveClient(Client):
         return http_info
 
     def list_hls_config(self, request):
-        """查询域名HLS配置
+        r"""查询域名HLS配置
 
         查询域名HLS配置。
         
@@ -1670,7 +1670,7 @@ class LiveClient(Client):
         return http_info
 
     def list_ip_auth_list(self, request):
-        """查询IP黑/白名单
+        r"""查询IP黑/白名单
 
         查询推流/播放域名的IP黑/白名单。
         - 黑名单模式：禁止指定的IP或网段
@@ -1738,7 +1738,7 @@ class LiveClient(Client):
         return http_info
 
     def list_live_sample_logs(self, request):
-        """获取直播播放日志
+        r"""获取直播播放日志
 
         获取直播播放日志，基于域名以5分钟粒度进行打包，日志内容以 \&quot;|\&quot; 进行分隔。
         
@@ -1807,7 +1807,7 @@ class LiveClient(Client):
         return http_info
 
     def list_live_streams_online(self, request):
-        """查询直播中的流信息
+        r"""查询直播中的流信息
 
         查询直播中的流信息
         
@@ -1880,7 +1880,7 @@ class LiveClient(Client):
         return http_info
 
     def list_publish_template(self, request):
-        """查询直播推流通知配置
+        r"""查询直播推流通知配置
 
         查询直播推流通知配置
         
@@ -1945,7 +1945,7 @@ class LiveClient(Client):
         return http_info
 
     def list_record_callback_configs(self, request):
-        """查询录制回调配置列表
+        r"""查询录制回调配置列表
 
         查询录制回调配置列表接口。通过指定条件，查询满足条件的配置列表。
         
@@ -2016,7 +2016,7 @@ class LiveClient(Client):
         return http_info
 
     def list_record_contents(self, request):
-        """录制完成内容的查询
+        r"""录制完成内容的查询
 
         录制完成的内容查询
         
@@ -2095,7 +2095,7 @@ class LiveClient(Client):
         return http_info
 
     def list_record_rules(self, request):
-        """查询录制规则列表
+        r"""查询录制规则列表
 
         查询录制规则列表接口，通过指定条件，查询满足条件的录制规则列表。
         
@@ -2170,7 +2170,7 @@ class LiveClient(Client):
         return http_info
 
     def list_schedule_record_tasks(self, request):
-        """查询计划录制任务
+        r"""查询计划录制任务
 
         查询指定时间范围内启动和结束的计划录制任务列表。
         
@@ -2249,7 +2249,7 @@ class LiveClient(Client):
         return http_info
 
     def list_snapshot_configs(self, request):
-        """查询直播截图配置
+        r"""查询直播截图配置
 
         查询直播截图配置接口
         
@@ -2320,7 +2320,7 @@ class LiveClient(Client):
         return http_info
 
     def list_stream_forbidden(self, request):
-        """查询禁止直播推流列表
+        r"""查询禁止直播推流列表
 
         查询禁播黑名单列表
         
@@ -2393,7 +2393,7 @@ class LiveClient(Client):
         return http_info
 
     def run_record(self, request):
-        """提交录制控制命令
+        r"""提交录制控制命令
 
         对单条流的实时录制控制接口。
         
@@ -2460,7 +2460,7 @@ class LiveClient(Client):
         return http_info
 
     def set_referer_chain(self, request):
-        """设置Referer防盗链黑白名单
+        r"""设置Referer防盗链黑白名单
 
         设置Referer黑白名单，直播服务会根据配置的referer黑白名单，对访问者的身份进行识别和过滤，符合规则的可以顺利访问到该内容。如果不符合规则，该访问请求将会被禁止。
         
@@ -2525,7 +2525,7 @@ class LiveClient(Client):
         return http_info
 
     def show_domain(self, request):
-        """查询直播域名
+        r"""查询直播域名
 
         查询直播域名
         
@@ -2592,7 +2592,7 @@ class LiveClient(Client):
         return http_info
 
     def show_domain_key_chain(self, request):
-        """查询指定域名的Key防盗链配置
+        r"""查询指定域名的Key防盗链配置
 
         查询指定域名的Key防盗链配置
         
@@ -2657,7 +2657,7 @@ class LiveClient(Client):
         return http_info
 
     def show_pull_sources_config(self, request):
-        """查询直播拉流回源配置
+        r"""查询直播拉流回源配置
 
         查询直播拉流回源配置。
         
@@ -2722,7 +2722,7 @@ class LiveClient(Client):
         return http_info
 
     def show_record_callback_config(self, request):
-        """查询录制回调配置
+        r"""查询录制回调配置
 
         查询录制回调配置接口
         
@@ -2787,7 +2787,7 @@ class LiveClient(Client):
         return http_info
 
     def show_record_rule(self, request):
-        """查询录制规则配置
+        r"""查询录制规则配置
 
         查询录制规则接口
         
@@ -2852,7 +2852,7 @@ class LiveClient(Client):
         return http_info
 
     def show_referer_chain(self, request):
-        """查询Referer防盗链黑白名单
+        r"""查询Referer防盗链黑白名单
 
         查询Referer防盗链黑白名单
         
@@ -2917,7 +2917,7 @@ class LiveClient(Client):
         return http_info
 
     def show_transcodings_template(self, request):
-        """查询直播转码模板
+        r"""查询直播转码模板
 
         查询直播转码模板
         
@@ -2988,7 +2988,7 @@ class LiveClient(Client):
         return http_info
 
     def update_delay_config(self, request):
-        """修改播放域名延时配置
+        r"""修改播放域名延时配置
 
         修改播放域名延时配置。
         
@@ -3053,7 +3053,7 @@ class LiveClient(Client):
         return http_info
 
     def update_domain(self, request):
-        """修改直播域名
+        r"""修改直播域名
 
         修改直播播放、RTMP推流加速域名相关信息
         
@@ -3118,7 +3118,7 @@ class LiveClient(Client):
         return http_info
 
     def update_domain_ip6_switch(self, request):
-        """配置域名IPV6开关
+        r"""配置域名IPV6开关
 
         配置IPV6开关
         
@@ -3183,7 +3183,7 @@ class LiveClient(Client):
         return http_info
 
     def update_domain_key_chain(self, request):
-        """更新指定域名的Key防盗链配置
+        r"""更新指定域名的Key防盗链配置
 
         更新指定域名的Key防盗链配置
         
@@ -3250,7 +3250,7 @@ class LiveClient(Client):
         return http_info
 
     def update_geo_blocking_config(self, request):
-        """修改地域限制配置
+        r"""修改地域限制配置
 
         修改播放域名的地域限制，选中地域允许接入。
         
@@ -3317,7 +3317,7 @@ class LiveClient(Client):
         return http_info
 
     def update_hls_config(self, request):
-        """修改域名HLS配置
+        r"""修改域名HLS配置
 
         修改域名HLS配置。
         
@@ -3382,7 +3382,7 @@ class LiveClient(Client):
         return http_info
 
     def update_ip_auth_list(self, request):
-        """修改IP黑/白名单
+        r"""修改IP黑/白名单
 
         修改推流/播放域名的IP黑/白名单，当前仅支持ipv4。
         - 黑名单模式：禁止指定的IP或网段
@@ -3450,7 +3450,7 @@ class LiveClient(Client):
         return http_info
 
     def update_publish_template(self, request):
-        """新增、覆盖直播推流通知配置
+        r"""新增、覆盖直播推流通知配置
 
         新增、覆盖直播推流通知配置
         
@@ -3517,7 +3517,7 @@ class LiveClient(Client):
         return http_info
 
     def update_pull_sources_config(self, request):
-        """修改直播拉流回源配置
+        r"""修改直播拉流回源配置
 
         修改直播拉流回源配置。
         
@@ -3582,7 +3582,7 @@ class LiveClient(Client):
         return http_info
 
     def update_record_callback_config(self, request):
-        """修改录制回调配置
+        r"""修改录制回调配置
 
         修改录制回调配置接口
         
@@ -3649,7 +3649,7 @@ class LiveClient(Client):
         return http_info
 
     def update_record_rule(self, request):
-        """修改录制规则
+        r"""修改录制规则
 
         修改录制规则接口，如果规则修改后，修改后的规则对正在录制的流无效，对新的流有效。
         
@@ -3716,7 +3716,7 @@ class LiveClient(Client):
         return http_info
 
     def update_snapshot_config(self, request):
-        """修改直播截图配置
+        r"""修改直播截图配置
 
         修改直播截图配置接口
         
@@ -3781,7 +3781,7 @@ class LiveClient(Client):
         return http_info
 
     def update_stream_forbidden(self, request):
-        """修改禁推属性
+        r"""修改禁推属性
 
         修改禁推属性
         
@@ -3846,7 +3846,7 @@ class LiveClient(Client):
         return http_info
 
     def update_transcodings_template(self, request):
-        """配置直播转码模板
+        r"""配置直播转码模板
 
         修改直播转码模板
         
@@ -3911,7 +3911,7 @@ class LiveClient(Client):
         return http_info
 
     def delete_domain_https_cert(self, request):
-        """删除指定域名的https证书配置
+        r"""删除指定域名的https证书配置
 
         删除指定域名的https证书配置
         
@@ -3976,7 +3976,7 @@ class LiveClient(Client):
         return http_info
 
     def show_domain_https_cert(self, request):
-        """查询指定域名的https证书配置
+        r"""查询指定域名的https证书配置
 
         查询指定域名的https证书配置
         
@@ -4041,7 +4041,7 @@ class LiveClient(Client):
         return http_info
 
     def update_domain_https_cert(self, request):
-        """修改指定域名的https证书配置
+        r"""修改指定域名的https证书配置
 
         修改指定域名的https证书配置
         
@@ -4108,7 +4108,7 @@ class LiveClient(Client):
         return http_info
 
     def create_harvest_task(self, request):
-        """创建Live2VOD任务
+        r"""创建Live2VOD任务
 
         创建Live2VOD任务。
         
@@ -4177,7 +4177,7 @@ class LiveClient(Client):
         return http_info
 
     def delete_harvest_task(self, request):
-        """删除Live2VOD任务
+        r"""删除Live2VOD任务
 
         删除Live2VOD任务。
         
@@ -4246,7 +4246,7 @@ class LiveClient(Client):
         return http_info
 
     def list_harvest_task(self, request):
-        """查询Live2VOD任务
+        r"""查询Live2VOD任务
 
         查询Live2VOD任务，支持批量查询。
         
@@ -4331,7 +4331,7 @@ class LiveClient(Client):
         return http_info
 
     def modify_harvest_task(self, request):
-        """修改Live2VOD任务
+        r"""修改Live2VOD任务
 
         修改Live2VOD任务。
         
@@ -4400,7 +4400,7 @@ class LiveClient(Client):
         return http_info
 
     def update_harvest_job_status(self, request):
-        """修改Live2VOD任务状态
+        r"""修改Live2VOD任务状态
 
         修改Live2VOD任务状态。
         
@@ -4469,7 +4469,7 @@ class LiveClient(Client):
         return http_info
 
     def update_obs_bucket_authority_public(self, request):
-        """OBS桶授权及取消授权
+        r"""OBS桶授权及取消授权
 
         OBS桶授权及取消授权
         
@@ -4534,7 +4534,7 @@ class LiveClient(Client):
         return http_info
 
     def create_ott_channel_info(self, request):
-        """新建OTT频道
+        r"""新建OTT频道
 
         创建频道接口，支持创建OTT频道。
         
@@ -4603,7 +4603,7 @@ class LiveClient(Client):
         return http_info
 
     def delete_ott_channel_info(self, request):
-        """删除频道信息
+        r"""删除频道信息
 
         删除频道信息。
         
@@ -4676,7 +4676,7 @@ class LiveClient(Client):
         return http_info
 
     def list_ott_channel_info(self, request):
-        """查询频道信息
+        r"""查询频道信息
 
         查询频道信息，支持批量查询。
         
@@ -4753,7 +4753,7 @@ class LiveClient(Client):
         return http_info
 
     def modify_ott_channel_info_encoder_settings(self, request):
-        """修改频道转码模板信息
+        r"""修改频道转码模板信息
 
         修改频道转码模板信息。
         
@@ -4822,7 +4822,7 @@ class LiveClient(Client):
         return http_info
 
     def modify_ott_channel_info_end_points(self, request):
-        """修改频道打包信息
+        r"""修改频道打包信息
 
         修改频道打包信息。
         
@@ -4891,7 +4891,7 @@ class LiveClient(Client):
         return http_info
 
     def modify_ott_channel_info_general(self, request):
-        """修改频道通用信息
+        r"""修改频道通用信息
 
         修改频道通用信息。
         
@@ -4960,7 +4960,7 @@ class LiveClient(Client):
         return http_info
 
     def modify_ott_channel_info_input(self, request):
-        """修改频道入流信息
+        r"""修改频道入流信息
 
         修改频道入流信息。
         
@@ -5029,7 +5029,7 @@ class LiveClient(Client):
         return http_info
 
     def modify_ott_channel_info_record_settings(self, request):
-        """修改频道录制信息
+        r"""修改频道录制信息
 
         修改频道录制信息。
         
@@ -5098,7 +5098,7 @@ class LiveClient(Client):
         return http_info
 
     def modify_ott_channel_info_stats(self, request):
-        """修改频道状态
+        r"""修改频道状态
 
         修改频道状态。
         

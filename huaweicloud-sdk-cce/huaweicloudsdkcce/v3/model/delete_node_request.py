@@ -29,7 +29,7 @@ class DeleteNodeRequest:
     }
 
     def __init__(self, cluster_id=None, node_id=None, nodepool_scale_down=None):
-        """DeleteNodeRequest
+        r"""DeleteNodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteNodeRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this DeleteNodeRequest.
+        r"""Gets the cluster_id of this DeleteNodeRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -66,7 +66,7 @@ class DeleteNodeRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this DeleteNodeRequest.
+        r"""Sets the cluster_id of this DeleteNodeRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -77,7 +77,7 @@ class DeleteNodeRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this DeleteNodeRequest.
+        r"""Gets the node_id of this DeleteNodeRequest.
 
         节点ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -88,7 +88,7 @@ class DeleteNodeRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this DeleteNodeRequest.
+        r"""Sets the node_id of this DeleteNodeRequest.
 
         节点ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -99,7 +99,7 @@ class DeleteNodeRequest:
 
     @property
     def nodepool_scale_down(self):
-        """Gets the nodepool_scale_down of this DeleteNodeRequest.
+        r"""Gets the nodepool_scale_down of this DeleteNodeRequest.
 
         标明是否为nodepool下发的请求。若不为“NoScaleDown”将自动更新对应节点池的实例数
 
@@ -110,7 +110,7 @@ class DeleteNodeRequest:
 
     @nodepool_scale_down.setter
     def nodepool_scale_down(self, nodepool_scale_down):
-        """Sets the nodepool_scale_down of this DeleteNodeRequest.
+        r"""Sets the nodepool_scale_down of this DeleteNodeRequest.
 
         标明是否为nodepool下发的请求。若不为“NoScaleDown”将自动更新对应节点池的实例数
 

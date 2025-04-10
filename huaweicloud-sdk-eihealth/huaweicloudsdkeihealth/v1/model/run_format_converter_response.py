@@ -26,7 +26,7 @@ class RunFormatConverterResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """RunFormatConverterResponse
+        r"""RunFormatConverterResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RunFormatConverterResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this RunFormatConverterResponse.
+        r"""Gets the body of this RunFormatConverterResponse.
 
         :return: The body of this RunFormatConverterResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class RunFormatConverterResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunFormatConverterResponse.
+        r"""Sets the body of this RunFormatConverterResponse.
 
         :param body: The body of this RunFormatConverterResponse.
         :type body: str

@@ -25,7 +25,7 @@ class UpdateMyActionTemplateToDeprecatedRequest:
     }
 
     def __init__(self, template_name=None):
-        """UpdateMyActionTemplateToDeprecatedRequest
+        r"""UpdateMyActionTemplateToDeprecatedRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateMyActionTemplateToDeprecatedRequest:
 
     @property
     def template_name(self):
-        """Gets the template_name of this UpdateMyActionTemplateToDeprecatedRequest.
+        r"""Gets the template_name of this UpdateMyActionTemplateToDeprecatedRequest.
 
         申请禁用的三方算子名称。
 
@@ -53,7 +53,7 @@ class UpdateMyActionTemplateToDeprecatedRequest:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this UpdateMyActionTemplateToDeprecatedRequest.
+        r"""Sets the template_name of this UpdateMyActionTemplateToDeprecatedRequest.
 
         申请禁用的三方算子名称。
 

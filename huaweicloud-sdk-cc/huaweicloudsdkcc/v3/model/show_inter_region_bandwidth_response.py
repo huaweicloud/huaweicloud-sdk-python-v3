@@ -28,7 +28,7 @@ class ShowInterRegionBandwidthResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, inter_region_bandwidth=None):
-        """ShowInterRegionBandwidthResponse
+        r"""ShowInterRegionBandwidthResponse
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowInterRegionBandwidthResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowInterRegionBandwidthResponse.
+        r"""Gets the request_id of this ShowInterRegionBandwidthResponse.
 
         请求ID。
 
@@ -60,7 +60,7 @@ class ShowInterRegionBandwidthResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowInterRegionBandwidthResponse.
+        r"""Sets the request_id of this ShowInterRegionBandwidthResponse.
 
         请求ID。
 
@@ -71,7 +71,7 @@ class ShowInterRegionBandwidthResponse(SdkResponse):
 
     @property
     def inter_region_bandwidth(self):
-        """Gets the inter_region_bandwidth of this ShowInterRegionBandwidthResponse.
+        r"""Gets the inter_region_bandwidth of this ShowInterRegionBandwidthResponse.
 
         :return: The inter_region_bandwidth of this ShowInterRegionBandwidthResponse.
         :rtype: :class:`huaweicloudsdkcc.v3.InterRegionBandwidth`
@@ -80,7 +80,7 @@ class ShowInterRegionBandwidthResponse(SdkResponse):
 
     @inter_region_bandwidth.setter
     def inter_region_bandwidth(self, inter_region_bandwidth):
-        """Sets the inter_region_bandwidth of this ShowInterRegionBandwidthResponse.
+        r"""Sets the inter_region_bandwidth of this ShowInterRegionBandwidthResponse.
 
         :param inter_region_bandwidth: The inter_region_bandwidth of this ShowInterRegionBandwidthResponse.
         :type inter_region_bandwidth: :class:`huaweicloudsdkcc.v3.InterRegionBandwidth`

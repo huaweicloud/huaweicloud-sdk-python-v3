@@ -67,7 +67,7 @@ class Api:
     }
 
     def __init__(self, catalog_id=None, name=None, description=None, log_flag=None, api_type=None, auth_type=None, retention_period=None, manager=None, path=None, protocol=None, request_type=None, tags=None, visibility=None, publish_type=None, data_mask_switch=None, data_mask_paras=None, body=None, datasource_config_list=None, groovy_content=None, request_paras=None, datasource_config=None, backend_config=None):
-        """Api
+        r"""Api
 
         The model defined in huaweicloud sdk
 
@@ -190,7 +190,7 @@ class Api:
 
     @property
     def catalog_id(self):
-        """Gets the catalog_id of this Api.
+        r"""Gets the catalog_id of this Api.
 
         目录ID
 
@@ -201,7 +201,7 @@ class Api:
 
     @catalog_id.setter
     def catalog_id(self, catalog_id):
-        """Sets the catalog_id of this Api.
+        r"""Sets the catalog_id of this Api.
 
         目录ID
 
@@ -212,7 +212,7 @@ class Api:
 
     @property
     def name(self):
-        """Gets the name of this Api.
+        r"""Gets the name of this Api.
 
         api 名称
 
@@ -223,7 +223,7 @@ class Api:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Api.
+        r"""Sets the name of this Api.
 
         api 名称
 
@@ -234,7 +234,7 @@ class Api:
 
     @property
     def description(self):
-        """Gets the description of this Api.
+        r"""Gets the description of this Api.
 
         api 描述
 
@@ -245,7 +245,7 @@ class Api:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Api.
+        r"""Sets the description of this Api.
 
         api 描述
 
@@ -256,7 +256,7 @@ class Api:
 
     @property
     def log_flag(self):
-        """Gets the log_flag of this Api.
+        r"""Gets the log_flag of this Api.
 
         是否启用访问日志
 
@@ -267,7 +267,7 @@ class Api:
 
     @log_flag.setter
     def log_flag(self, log_flag):
-        """Sets the log_flag of this Api.
+        r"""Sets the log_flag of this Api.
 
         是否启用访问日志
 
@@ -278,7 +278,7 @@ class Api:
 
     @property
     def api_type(self):
-        """Gets the api_type of this Api.
+        r"""Gets the api_type of this Api.
 
         :return: The api_type of this Api.
         :rtype: str
@@ -287,7 +287,7 @@ class Api:
 
     @api_type.setter
     def api_type(self, api_type):
-        """Sets the api_type of this Api.
+        r"""Sets the api_type of this Api.
 
         :param api_type: The api_type of this Api.
         :type api_type: str
@@ -296,7 +296,7 @@ class Api:
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this Api.
+        r"""Gets the auth_type of this Api.
 
         :return: The auth_type of this Api.
         :rtype: str
@@ -305,7 +305,7 @@ class Api:
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this Api.
+        r"""Sets the auth_type of this Api.
 
         :param auth_type: The auth_type of this Api.
         :type auth_type: str
@@ -314,7 +314,7 @@ class Api:
 
     @property
     def retention_period(self):
-        """Gets the retention_period of this Api.
+        r"""Gets the retention_period of this Api.
 
         最低保留期限，单位小时。
 
@@ -325,7 +325,7 @@ class Api:
 
     @retention_period.setter
     def retention_period(self, retention_period):
-        """Sets the retention_period of this Api.
+        r"""Sets the retention_period of this Api.
 
         最低保留期限，单位小时。
 
@@ -336,7 +336,7 @@ class Api:
 
     @property
     def manager(self):
-        """Gets the manager of this Api.
+        r"""Gets the manager of this Api.
 
         API审核人。
 
@@ -347,7 +347,7 @@ class Api:
 
     @manager.setter
     def manager(self, manager):
-        """Sets the manager of this Api.
+        r"""Sets the manager of this Api.
 
         API审核人。
 
@@ -358,7 +358,7 @@ class Api:
 
     @property
     def path(self):
-        """Gets the path of this Api.
+        r"""Gets the path of this Api.
 
         API路径。
 
@@ -369,7 +369,7 @@ class Api:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this Api.
+        r"""Sets the path of this Api.
 
         API路径。
 
@@ -380,7 +380,7 @@ class Api:
 
     @property
     def protocol(self):
-        """Gets the protocol of this Api.
+        r"""Gets the protocol of this Api.
 
         :return: The protocol of this Api.
         :rtype: str
@@ -389,7 +389,7 @@ class Api:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this Api.
+        r"""Sets the protocol of this Api.
 
         :param protocol: The protocol of this Api.
         :type protocol: str
@@ -398,7 +398,7 @@ class Api:
 
     @property
     def request_type(self):
-        """Gets the request_type of this Api.
+        r"""Gets the request_type of this Api.
 
         :return: The request_type of this Api.
         :rtype: str
@@ -407,7 +407,7 @@ class Api:
 
     @request_type.setter
     def request_type(self, request_type):
-        """Sets the request_type of this Api.
+        r"""Sets the request_type of this Api.
 
         :param request_type: The request_type of this Api.
         :type request_type: str
@@ -416,7 +416,7 @@ class Api:
 
     @property
     def tags(self):
-        """Gets the tags of this Api.
+        r"""Gets the tags of this Api.
 
         标签。
 
@@ -427,7 +427,7 @@ class Api:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this Api.
+        r"""Sets the tags of this Api.
 
         标签。
 
@@ -438,7 +438,7 @@ class Api:
 
     @property
     def visibility(self):
-        """Gets the visibility of this Api.
+        r"""Gets the visibility of this Api.
 
         :return: The visibility of this Api.
         :rtype: str
@@ -447,7 +447,7 @@ class Api:
 
     @visibility.setter
     def visibility(self, visibility):
-        """Sets the visibility of this Api.
+        r"""Sets the visibility of this Api.
 
         :param visibility: The visibility of this Api.
         :type visibility: str
@@ -456,7 +456,7 @@ class Api:
 
     @property
     def publish_type(self):
-        """Gets the publish_type of this Api.
+        r"""Gets the publish_type of this Api.
 
         :return: The publish_type of this Api.
         :rtype: str
@@ -465,7 +465,7 @@ class Api:
 
     @publish_type.setter
     def publish_type(self, publish_type):
-        """Sets the publish_type of this Api.
+        r"""Sets the publish_type of this Api.
 
         :param publish_type: The publish_type of this Api.
         :type publish_type: str
@@ -474,7 +474,7 @@ class Api:
 
     @property
     def data_mask_switch(self):
-        """Gets the data_mask_switch of this Api.
+        r"""Gets the data_mask_switch of this Api.
 
         数据脱敏开关。
 
@@ -485,7 +485,7 @@ class Api:
 
     @data_mask_switch.setter
     def data_mask_switch(self, data_mask_switch):
-        """Sets the data_mask_switch of this Api.
+        r"""Sets the data_mask_switch of this Api.
 
         数据脱敏开关。
 
@@ -496,7 +496,7 @@ class Api:
 
     @property
     def data_mask_paras(self):
-        """Gets the data_mask_paras of this Api.
+        r"""Gets the data_mask_paras of this Api.
 
         数据脱敏配置。
 
@@ -507,7 +507,7 @@ class Api:
 
     @data_mask_paras.setter
     def data_mask_paras(self, data_mask_paras):
-        """Sets the data_mask_paras of this Api.
+        r"""Sets the data_mask_paras of this Api.
 
         数据脱敏配置。
 
@@ -518,7 +518,7 @@ class Api:
 
     @property
     def body(self):
-        """Gets the body of this Api.
+        r"""Gets the body of this Api.
 
         请求体内容描述，仅注册类API使用。
 
@@ -529,7 +529,7 @@ class Api:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this Api.
+        r"""Sets the body of this Api.
 
         请求体内容描述，仅注册类API使用。
 
@@ -540,7 +540,7 @@ class Api:
 
     @property
     def datasource_config_list(self):
-        """Gets the datasource_config_list of this Api.
+        r"""Gets the datasource_config_list of this Api.
 
         多数据源配置信息，仅Groovy类API使用。
 
@@ -551,7 +551,7 @@ class Api:
 
     @datasource_config_list.setter
     def datasource_config_list(self, datasource_config_list):
-        """Sets the datasource_config_list of this Api.
+        r"""Sets the datasource_config_list of this Api.
 
         多数据源配置信息，仅Groovy类API使用。
 
@@ -562,7 +562,7 @@ class Api:
 
     @property
     def groovy_content(self):
-        """Gets the groovy_content of this Api.
+        r"""Gets the groovy_content of this Api.
 
         Groovy文本，仅Groovy类API使用。
 
@@ -573,7 +573,7 @@ class Api:
 
     @groovy_content.setter
     def groovy_content(self, groovy_content):
-        """Sets the groovy_content of this Api.
+        r"""Sets the groovy_content of this Api.
 
         Groovy文本，仅Groovy类API使用。
 
@@ -584,7 +584,7 @@ class Api:
 
     @property
     def request_paras(self):
-        """Gets the request_paras of this Api.
+        r"""Gets the request_paras of this Api.
 
         API请求参数列表。
 
@@ -595,7 +595,7 @@ class Api:
 
     @request_paras.setter
     def request_paras(self, request_paras):
-        """Sets the request_paras of this Api.
+        r"""Sets the request_paras of this Api.
 
         API请求参数列表。
 
@@ -606,7 +606,7 @@ class Api:
 
     @property
     def datasource_config(self):
-        """Gets the datasource_config of this Api.
+        r"""Gets the datasource_config of this Api.
 
         :return: The datasource_config of this Api.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DatasourceConfig`
@@ -615,7 +615,7 @@ class Api:
 
     @datasource_config.setter
     def datasource_config(self, datasource_config):
-        """Sets the datasource_config of this Api.
+        r"""Sets the datasource_config of this Api.
 
         :param datasource_config: The datasource_config of this Api.
         :type datasource_config: :class:`huaweicloudsdkdataartsstudio.v1.DatasourceConfig`
@@ -624,7 +624,7 @@ class Api:
 
     @property
     def backend_config(self):
-        """Gets the backend_config of this Api.
+        r"""Gets the backend_config of this Api.
 
         :return: The backend_config of this Api.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BackendConfig`
@@ -633,7 +633,7 @@ class Api:
 
     @backend_config.setter
     def backend_config(self, backend_config):
-        """Sets the backend_config of this Api.
+        r"""Sets the backend_config of this Api.
 
         :param backend_config: The backend_config of this Api.
         :type backend_config: :class:`huaweicloudsdkdataartsstudio.v1.BackendConfig`

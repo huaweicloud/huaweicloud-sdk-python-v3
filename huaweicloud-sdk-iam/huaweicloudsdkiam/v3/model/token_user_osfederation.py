@@ -29,7 +29,7 @@ class TokenUserOsfederation:
     }
 
     def __init__(self, groups=None, identity_provider=None, protocol=None):
-        """TokenUserOsfederation
+        r"""TokenUserOsfederation
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class TokenUserOsfederation:
 
     @property
     def groups(self):
-        """Gets the groups of this TokenUserOsfederation.
+        r"""Gets the groups of this TokenUserOsfederation.
 
         用户组信息列表。
 
@@ -65,7 +65,7 @@ class TokenUserOsfederation:
 
     @groups.setter
     def groups(self, groups):
-        """Sets the groups of this TokenUserOsfederation.
+        r"""Sets the groups of this TokenUserOsfederation.
 
         用户组信息列表。
 
@@ -76,7 +76,7 @@ class TokenUserOsfederation:
 
     @property
     def identity_provider(self):
-        """Gets the identity_provider of this TokenUserOsfederation.
+        r"""Gets the identity_provider of this TokenUserOsfederation.
 
         :return: The identity_provider of this TokenUserOsfederation.
         :rtype: :class:`huaweicloudsdkiam.v3.OsfederationIdentityprovider`
@@ -85,7 +85,7 @@ class TokenUserOsfederation:
 
     @identity_provider.setter
     def identity_provider(self, identity_provider):
-        """Sets the identity_provider of this TokenUserOsfederation.
+        r"""Sets the identity_provider of this TokenUserOsfederation.
 
         :param identity_provider: The identity_provider of this TokenUserOsfederation.
         :type identity_provider: :class:`huaweicloudsdkiam.v3.OsfederationIdentityprovider`
@@ -94,7 +94,7 @@ class TokenUserOsfederation:
 
     @property
     def protocol(self):
-        """Gets the protocol of this TokenUserOsfederation.
+        r"""Gets the protocol of this TokenUserOsfederation.
 
         :return: The protocol of this TokenUserOsfederation.
         :rtype: :class:`huaweicloudsdkiam.v3.OsfederationProtocol`
@@ -103,7 +103,7 @@ class TokenUserOsfederation:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this TokenUserOsfederation.
+        r"""Sets the protocol of this TokenUserOsfederation.
 
         :param protocol: The protocol of this TokenUserOsfederation.
         :type protocol: :class:`huaweicloudsdkiam.v3.OsfederationProtocol`

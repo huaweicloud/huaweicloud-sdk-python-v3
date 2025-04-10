@@ -27,7 +27,7 @@ class DeleteRepoMemberRequest:
     }
 
     def __init__(self, member_id=None, repository_uuid=None):
-        """DeleteRepoMemberRequest
+        r"""DeleteRepoMemberRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteRepoMemberRequest:
 
     @property
     def member_id(self):
-        """Gets the member_id of this DeleteRepoMemberRequest.
+        r"""Gets the member_id of this DeleteRepoMemberRequest.
 
         仓库成员id
 
@@ -59,7 +59,7 @@ class DeleteRepoMemberRequest:
 
     @member_id.setter
     def member_id(self, member_id):
-        """Sets the member_id of this DeleteRepoMemberRequest.
+        r"""Sets the member_id of this DeleteRepoMemberRequest.
 
         仓库成员id
 
@@ -70,7 +70,7 @@ class DeleteRepoMemberRequest:
 
     @property
     def repository_uuid(self):
-        """Gets the repository_uuid of this DeleteRepoMemberRequest.
+        r"""Gets the repository_uuid of this DeleteRepoMemberRequest.
 
         仓库uuid(由CreateRepository接口返回)
 
@@ -81,7 +81,7 @@ class DeleteRepoMemberRequest:
 
     @repository_uuid.setter
     def repository_uuid(self, repository_uuid):
-        """Sets the repository_uuid of this DeleteRepoMemberRequest.
+        r"""Sets the repository_uuid of this DeleteRepoMemberRequest.
 
         仓库uuid(由CreateRepository接口返回)
 

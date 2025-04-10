@@ -27,7 +27,7 @@ class TagDTO:
     }
 
     def __init__(self, key=None, values=None):
-        """TagDTO
+        r"""TagDTO
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class TagDTO:
 
     @property
     def key(self):
-        """Gets the key of this TagDTO.
+        r"""Gets the key of this TagDTO.
 
         标签\"键\"的标识符或名称。您可以将标签的值设置为空字符串，但不能设置为null。
 
@@ -59,7 +59,7 @@ class TagDTO:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this TagDTO.
+        r"""Sets the key of this TagDTO.
 
         标签\"键\"的标识符或名称。您可以将标签的值设置为空字符串，但不能设置为null。
 
@@ -70,7 +70,7 @@ class TagDTO:
 
     @property
     def values(self):
-        """Gets the values of this TagDTO.
+        r"""Gets the values of this TagDTO.
 
         值列表。每个值最大长度255个字符。
 
@@ -81,7 +81,7 @@ class TagDTO:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this TagDTO.
+        r"""Sets the values of this TagDTO.
 
         值列表。每个值最大长度255个字符。
 

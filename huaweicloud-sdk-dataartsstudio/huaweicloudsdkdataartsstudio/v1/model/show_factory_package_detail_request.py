@@ -27,7 +27,7 @@ class ShowFactoryPackageDetailRequest:
     }
 
     def __init__(self, package_id=None, workspace=None):
-        """ShowFactoryPackageDetailRequest
+        r"""ShowFactoryPackageDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowFactoryPackageDetailRequest:
 
     @property
     def package_id(self):
-        """Gets the package_id of this ShowFactoryPackageDetailRequest.
+        r"""Gets the package_id of this ShowFactoryPackageDetailRequest.
 
         发布包ID
 
@@ -60,7 +60,7 @@ class ShowFactoryPackageDetailRequest:
 
     @package_id.setter
     def package_id(self, package_id):
-        """Sets the package_id of this ShowFactoryPackageDetailRequest.
+        r"""Sets the package_id of this ShowFactoryPackageDetailRequest.
 
         发布包ID
 
@@ -71,7 +71,7 @@ class ShowFactoryPackageDetailRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowFactoryPackageDetailRequest.
+        r"""Gets the workspace of this ShowFactoryPackageDetailRequest.
 
         工作空间ID，默认查询default
 
@@ -82,7 +82,7 @@ class ShowFactoryPackageDetailRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowFactoryPackageDetailRequest.
+        r"""Sets the workspace of this ShowFactoryPackageDetailRequest.
 
         工作空间ID，默认查询default
 

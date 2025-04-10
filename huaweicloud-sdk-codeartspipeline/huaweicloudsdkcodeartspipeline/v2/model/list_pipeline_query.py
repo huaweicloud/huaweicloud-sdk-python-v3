@@ -55,7 +55,7 @@ class ListPipelineQuery:
     }
 
     def __init__(self, project_ids=None, component_id=None, name=None, status=None, is_publish=None, creator_ids=None, executor_ids=None, start_time=None, end_time=None, offset=None, limit=None, sort_key=None, sort_dir=None, group_path_id=None, query_new=None, by_group=None):
-        """ListPipelineQuery
+        r"""ListPipelineQuery
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class ListPipelineQuery:
 
     @property
     def project_ids(self):
-        """Gets the project_ids of this ListPipelineQuery.
+        r"""Gets the project_ids of this ListPipelineQuery.
 
         项目ID列表
 
@@ -159,7 +159,7 @@ class ListPipelineQuery:
 
     @project_ids.setter
     def project_ids(self, project_ids):
-        """Sets the project_ids of this ListPipelineQuery.
+        r"""Sets the project_ids of this ListPipelineQuery.
 
         项目ID列表
 
@@ -170,7 +170,7 @@ class ListPipelineQuery:
 
     @property
     def component_id(self):
-        """Gets the component_id of this ListPipelineQuery.
+        r"""Gets the component_id of this ListPipelineQuery.
 
         组件ID
 
@@ -181,7 +181,7 @@ class ListPipelineQuery:
 
     @component_id.setter
     def component_id(self, component_id):
-        """Sets the component_id of this ListPipelineQuery.
+        r"""Sets the component_id of this ListPipelineQuery.
 
         组件ID
 
@@ -192,7 +192,7 @@ class ListPipelineQuery:
 
     @property
     def name(self):
-        """Gets the name of this ListPipelineQuery.
+        r"""Gets the name of this ListPipelineQuery.
 
         流水线名称
 
@@ -203,7 +203,7 @@ class ListPipelineQuery:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListPipelineQuery.
+        r"""Sets the name of this ListPipelineQuery.
 
         流水线名称
 
@@ -214,7 +214,7 @@ class ListPipelineQuery:
 
     @property
     def status(self):
-        """Gets the status of this ListPipelineQuery.
+        r"""Gets the status of this ListPipelineQuery.
 
         状态
 
@@ -225,7 +225,7 @@ class ListPipelineQuery:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListPipelineQuery.
+        r"""Sets the status of this ListPipelineQuery.
 
         状态
 
@@ -236,7 +236,7 @@ class ListPipelineQuery:
 
     @property
     def is_publish(self):
-        """Gets the is_publish of this ListPipelineQuery.
+        r"""Gets the is_publish of this ListPipelineQuery.
 
         是否为变更流水线
 
@@ -247,7 +247,7 @@ class ListPipelineQuery:
 
     @is_publish.setter
     def is_publish(self, is_publish):
-        """Sets the is_publish of this ListPipelineQuery.
+        r"""Sets the is_publish of this ListPipelineQuery.
 
         是否为变更流水线
 
@@ -258,7 +258,7 @@ class ListPipelineQuery:
 
     @property
     def creator_ids(self):
-        """Gets the creator_ids of this ListPipelineQuery.
+        r"""Gets the creator_ids of this ListPipelineQuery.
 
         创建人ID列表
 
@@ -269,7 +269,7 @@ class ListPipelineQuery:
 
     @creator_ids.setter
     def creator_ids(self, creator_ids):
-        """Sets the creator_ids of this ListPipelineQuery.
+        r"""Sets the creator_ids of this ListPipelineQuery.
 
         创建人ID列表
 
@@ -280,7 +280,7 @@ class ListPipelineQuery:
 
     @property
     def executor_ids(self):
-        """Gets the executor_ids of this ListPipelineQuery.
+        r"""Gets the executor_ids of this ListPipelineQuery.
 
         执行人ID列表
 
@@ -291,7 +291,7 @@ class ListPipelineQuery:
 
     @executor_ids.setter
     def executor_ids(self, executor_ids):
-        """Sets the executor_ids of this ListPipelineQuery.
+        r"""Sets the executor_ids of this ListPipelineQuery.
 
         执行人ID列表
 
@@ -302,7 +302,7 @@ class ListPipelineQuery:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListPipelineQuery.
+        r"""Gets the start_time of this ListPipelineQuery.
 
         开始时间
 
@@ -313,7 +313,7 @@ class ListPipelineQuery:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListPipelineQuery.
+        r"""Sets the start_time of this ListPipelineQuery.
 
         开始时间
 
@@ -324,7 +324,7 @@ class ListPipelineQuery:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListPipelineQuery.
+        r"""Gets the end_time of this ListPipelineQuery.
 
         结束时间
 
@@ -335,7 +335,7 @@ class ListPipelineQuery:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListPipelineQuery.
+        r"""Sets the end_time of this ListPipelineQuery.
 
         结束时间
 
@@ -346,7 +346,7 @@ class ListPipelineQuery:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPipelineQuery.
+        r"""Gets the offset of this ListPipelineQuery.
 
         起始偏移
 
@@ -357,7 +357,7 @@ class ListPipelineQuery:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPipelineQuery.
+        r"""Sets the offset of this ListPipelineQuery.
 
         起始偏移
 
@@ -368,7 +368,7 @@ class ListPipelineQuery:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPipelineQuery.
+        r"""Gets the limit of this ListPipelineQuery.
 
         查询数量
 
@@ -379,7 +379,7 @@ class ListPipelineQuery:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPipelineQuery.
+        r"""Sets the limit of this ListPipelineQuery.
 
         查询数量
 
@@ -390,7 +390,7 @@ class ListPipelineQuery:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListPipelineQuery.
+        r"""Gets the sort_key of this ListPipelineQuery.
 
         排序字段名称
 
@@ -401,7 +401,7 @@ class ListPipelineQuery:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListPipelineQuery.
+        r"""Sets the sort_key of this ListPipelineQuery.
 
         排序字段名称
 
@@ -412,7 +412,7 @@ class ListPipelineQuery:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListPipelineQuery.
+        r"""Gets the sort_dir of this ListPipelineQuery.
 
         排序规则
 
@@ -423,7 +423,7 @@ class ListPipelineQuery:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListPipelineQuery.
+        r"""Sets the sort_dir of this ListPipelineQuery.
 
         排序规则
 
@@ -434,7 +434,7 @@ class ListPipelineQuery:
 
     @property
     def group_path_id(self):
-        """Gets the group_path_id of this ListPipelineQuery.
+        r"""Gets the group_path_id of this ListPipelineQuery.
 
         流水线分组ID
 
@@ -445,7 +445,7 @@ class ListPipelineQuery:
 
     @group_path_id.setter
     def group_path_id(self, group_path_id):
-        """Sets the group_path_id of this ListPipelineQuery.
+        r"""Sets the group_path_id of this ListPipelineQuery.
 
         流水线分组ID
 
@@ -456,7 +456,7 @@ class ListPipelineQuery:
 
     @property
     def query_new(self):
-        """Gets the query_new of this ListPipelineQuery.
+        r"""Gets the query_new of this ListPipelineQuery.
 
         是否只查询新版流水线
 
@@ -467,7 +467,7 @@ class ListPipelineQuery:
 
     @query_new.setter
     def query_new(self, query_new):
-        """Sets the query_new of this ListPipelineQuery.
+        r"""Sets the query_new of this ListPipelineQuery.
 
         是否只查询新版流水线
 
@@ -478,7 +478,7 @@ class ListPipelineQuery:
 
     @property
     def by_group(self):
-        """Gets the by_group of this ListPipelineQuery.
+        r"""Gets the by_group of this ListPipelineQuery.
 
         是否分组查询
 
@@ -489,7 +489,7 @@ class ListPipelineQuery:
 
     @by_group.setter
     def by_group(self, by_group):
-        """Sets the by_group of this ListPipelineQuery.
+        r"""Sets the by_group of this ListPipelineQuery.
 
         是否分组查询
 

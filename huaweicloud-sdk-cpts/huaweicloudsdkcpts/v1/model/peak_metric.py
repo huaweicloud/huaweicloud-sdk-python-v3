@@ -33,7 +33,7 @@ class PeakMetric:
     }
 
     def __init__(self, vuser=None, rps=None, avg_rt=None, success_rate=None, peak_time=None):
-        """PeakMetric
+        r"""PeakMetric
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class PeakMetric:
 
     @property
     def vuser(self):
-        """Gets the vuser of this PeakMetric.
+        r"""Gets the vuser of this PeakMetric.
 
         虚拟用户数
 
@@ -82,7 +82,7 @@ class PeakMetric:
 
     @vuser.setter
     def vuser(self, vuser):
-        """Sets the vuser of this PeakMetric.
+        r"""Sets the vuser of this PeakMetric.
 
         虚拟用户数
 
@@ -93,7 +93,7 @@ class PeakMetric:
 
     @property
     def rps(self):
-        """Gets the rps of this PeakMetric.
+        r"""Gets the rps of this PeakMetric.
 
         每秒事务数
 
@@ -104,7 +104,7 @@ class PeakMetric:
 
     @rps.setter
     def rps(self, rps):
-        """Sets the rps of this PeakMetric.
+        r"""Sets the rps of this PeakMetric.
 
         每秒事务数
 
@@ -115,7 +115,7 @@ class PeakMetric:
 
     @property
     def avg_rt(self):
-        """Gets the avg_rt of this PeakMetric.
+        r"""Gets the avg_rt of this PeakMetric.
 
         平均响应时间
 
@@ -126,7 +126,7 @@ class PeakMetric:
 
     @avg_rt.setter
     def avg_rt(self, avg_rt):
-        """Sets the avg_rt of this PeakMetric.
+        r"""Sets the avg_rt of this PeakMetric.
 
         平均响应时间
 
@@ -137,7 +137,7 @@ class PeakMetric:
 
     @property
     def success_rate(self):
-        """Gets the success_rate of this PeakMetric.
+        r"""Gets the success_rate of this PeakMetric.
 
         成功率
 
@@ -148,7 +148,7 @@ class PeakMetric:
 
     @success_rate.setter
     def success_rate(self, success_rate):
-        """Sets the success_rate of this PeakMetric.
+        r"""Sets the success_rate of this PeakMetric.
 
         成功率
 
@@ -159,7 +159,7 @@ class PeakMetric:
 
     @property
     def peak_time(self):
-        """Gets the peak_time of this PeakMetric.
+        r"""Gets the peak_time of this PeakMetric.
 
         峰值时间
 
@@ -170,7 +170,7 @@ class PeakMetric:
 
     @peak_time.setter
     def peak_time(self, peak_time):
-        """Sets the peak_time of this PeakMetric.
+        r"""Sets the peak_time of this PeakMetric.
 
         峰值时间
 

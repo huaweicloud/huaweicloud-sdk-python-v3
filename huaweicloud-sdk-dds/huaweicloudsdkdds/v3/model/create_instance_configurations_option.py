@@ -27,7 +27,7 @@ class CreateInstanceConfigurationsOption:
     }
 
     def __init__(self, type=None, configuration_id=None):
-        """CreateInstanceConfigurationsOption
+        r"""CreateInstanceConfigurationsOption
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateInstanceConfigurationsOption:
 
     @property
     def type(self):
-        """Gets the type of this CreateInstanceConfigurationsOption.
+        r"""Gets the type of this CreateInstanceConfigurationsOption.
 
         节点类型。 取值：   - 集群实例包含mongos、shard和config节点，各节点下该参数取值分别为“mongos”、“shard”和“config”。   - 副本集实例下该参数取值为“replica”。   - 单节点实例下该参数取值为“single”。
 
@@ -59,7 +59,7 @@ class CreateInstanceConfigurationsOption:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateInstanceConfigurationsOption.
+        r"""Sets the type of this CreateInstanceConfigurationsOption.
 
         节点类型。 取值：   - 集群实例包含mongos、shard和config节点，各节点下该参数取值分别为“mongos”、“shard”和“config”。   - 副本集实例下该参数取值为“replica”。   - 单节点实例下该参数取值为“single”。
 
@@ -70,7 +70,7 @@ class CreateInstanceConfigurationsOption:
 
     @property
     def configuration_id(self):
-        """Gets the configuration_id of this CreateInstanceConfigurationsOption.
+        r"""Gets the configuration_id of this CreateInstanceConfigurationsOption.
 
         参数组id。
 
@@ -81,7 +81,7 @@ class CreateInstanceConfigurationsOption:
 
     @configuration_id.setter
     def configuration_id(self, configuration_id):
-        """Sets the configuration_id of this CreateInstanceConfigurationsOption.
+        r"""Sets the configuration_id of this CreateInstanceConfigurationsOption.
 
         参数组id。
 

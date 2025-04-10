@@ -27,7 +27,7 @@ class DeleteInternetBandwidthTagRequest:
     }
 
     def __init__(self, resource_id=None, tag_key=None):
-        """DeleteInternetBandwidthTagRequest
+        r"""DeleteInternetBandwidthTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteInternetBandwidthTagRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this DeleteInternetBandwidthTagRequest.
+        r"""Gets the resource_id of this DeleteInternetBandwidthTagRequest.
 
         :return: The resource_id of this DeleteInternetBandwidthTagRequest.
         :rtype: str
@@ -57,7 +57,7 @@ class DeleteInternetBandwidthTagRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this DeleteInternetBandwidthTagRequest.
+        r"""Sets the resource_id of this DeleteInternetBandwidthTagRequest.
 
         :param resource_id: The resource_id of this DeleteInternetBandwidthTagRequest.
         :type resource_id: str
@@ -66,7 +66,7 @@ class DeleteInternetBandwidthTagRequest:
 
     @property
     def tag_key(self):
-        """Gets the tag_key of this DeleteInternetBandwidthTagRequest.
+        r"""Gets the tag_key of this DeleteInternetBandwidthTagRequest.
 
         :return: The tag_key of this DeleteInternetBandwidthTagRequest.
         :rtype: str
@@ -75,7 +75,7 @@ class DeleteInternetBandwidthTagRequest:
 
     @tag_key.setter
     def tag_key(self, tag_key):
-        """Sets the tag_key of this DeleteInternetBandwidthTagRequest.
+        r"""Sets the tag_key of this DeleteInternetBandwidthTagRequest.
 
         :param tag_key: The tag_key of this DeleteInternetBandwidthTagRequest.
         :type tag_key: str

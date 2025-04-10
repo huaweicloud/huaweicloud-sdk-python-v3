@@ -33,7 +33,7 @@ class ProviderResponseBody:
     }
 
     def __init__(self, id=None, short_name=None, type=None, provider_value=None, description=None):
-        """ProviderResponseBody
+        r"""ProviderResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ProviderResponseBody:
 
     @property
     def id(self):
-        """Gets the id of this ProviderResponseBody.
+        r"""Gets the id of this ProviderResponseBody.
 
         运营商id
 
@@ -82,7 +82,7 @@ class ProviderResponseBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ProviderResponseBody.
+        r"""Sets the id of this ProviderResponseBody.
 
         运营商id
 
@@ -93,7 +93,7 @@ class ProviderResponseBody:
 
     @property
     def short_name(self):
-        """Gets the short_name of this ProviderResponseBody.
+        r"""Gets the short_name of this ProviderResponseBody.
 
         运营商简写
 
@@ -104,7 +104,7 @@ class ProviderResponseBody:
 
     @short_name.setter
     def short_name(self, short_name):
-        """Sets the short_name of this ProviderResponseBody.
+        r"""Sets the short_name of this ProviderResponseBody.
 
         运营商简写
 
@@ -115,7 +115,7 @@ class ProviderResponseBody:
 
     @property
     def type(self):
-        """Gets the type of this ProviderResponseBody.
+        r"""Gets the type of this ProviderResponseBody.
 
         运营商类型
 
@@ -126,7 +126,7 @@ class ProviderResponseBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ProviderResponseBody.
+        r"""Sets the type of this ProviderResponseBody.
 
         运营商类型
 
@@ -137,7 +137,7 @@ class ProviderResponseBody:
 
     @property
     def provider_value(self):
-        """Gets the provider_value of this ProviderResponseBody.
+        r"""Gets the provider_value of this ProviderResponseBody.
 
         :return: The provider_value of this ProviderResponseBody.
         :rtype: :class:`huaweicloudsdkdc.v3.ProviderValueBody`
@@ -146,7 +146,7 @@ class ProviderResponseBody:
 
     @provider_value.setter
     def provider_value(self, provider_value):
-        """Sets the provider_value of this ProviderResponseBody.
+        r"""Sets the provider_value of this ProviderResponseBody.
 
         :param provider_value: The provider_value of this ProviderResponseBody.
         :type provider_value: :class:`huaweicloudsdkdc.v3.ProviderValueBody`
@@ -155,7 +155,7 @@ class ProviderResponseBody:
 
     @property
     def description(self):
-        """Gets the description of this ProviderResponseBody.
+        r"""Gets the description of this ProviderResponseBody.
 
         运营商说明
 
@@ -166,7 +166,7 @@ class ProviderResponseBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ProviderResponseBody.
+        r"""Sets the description of this ProviderResponseBody.
 
         运营商说明
 

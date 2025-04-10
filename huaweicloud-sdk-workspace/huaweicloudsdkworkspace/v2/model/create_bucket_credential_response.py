@@ -34,7 +34,7 @@ class CreateBucketCredentialResponse(SdkResponse):
     }
 
     def __init__(self, server_end_point=None, bucket_name=None, object_path=None, policy=None, credential=None):
-        """CreateBucketCredentialResponse
+        r"""CreateBucketCredentialResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class CreateBucketCredentialResponse(SdkResponse):
 
     @property
     def server_end_point(self):
-        """Gets the server_end_point of this CreateBucketCredentialResponse.
+        r"""Gets the server_end_point of this CreateBucketCredentialResponse.
 
         访问的服务终端节点。
 
@@ -83,7 +83,7 @@ class CreateBucketCredentialResponse(SdkResponse):
 
     @server_end_point.setter
     def server_end_point(self, server_end_point):
-        """Sets the server_end_point of this CreateBucketCredentialResponse.
+        r"""Sets the server_end_point of this CreateBucketCredentialResponse.
 
         访问的服务终端节点。
 
@@ -94,7 +94,7 @@ class CreateBucketCredentialResponse(SdkResponse):
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this CreateBucketCredentialResponse.
+        r"""Gets the bucket_name of this CreateBucketCredentialResponse.
 
         存放的桶名称。
 
@@ -105,7 +105,7 @@ class CreateBucketCredentialResponse(SdkResponse):
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this CreateBucketCredentialResponse.
+        r"""Sets the bucket_name of this CreateBucketCredentialResponse.
 
         存放的桶名称。
 
@@ -116,7 +116,7 @@ class CreateBucketCredentialResponse(SdkResponse):
 
     @property
     def object_path(self):
-        """Gets the object_path of this CreateBucketCredentialResponse.
+        r"""Gets the object_path of this CreateBucketCredentialResponse.
 
         OBS对象路径。 注: path是对象在obs中的完整路径。 例如桶存在如下目录结构的数据。   Bucket:     ├─dir1     | ├─object1.txt     | └─object2.txt     └─object3.txt Object1的path: dir1/object1.txt Object2的path: dir1/object2.txt Object3的path: object3.txt
 
@@ -127,7 +127,7 @@ class CreateBucketCredentialResponse(SdkResponse):
 
     @object_path.setter
     def object_path(self, object_path):
-        """Sets the object_path of this CreateBucketCredentialResponse.
+        r"""Sets the object_path of this CreateBucketCredentialResponse.
 
         OBS对象路径。 注: path是对象在obs中的完整路径。 例如桶存在如下目录结构的数据。   Bucket:     ├─dir1     | ├─object1.txt     | └─object2.txt     └─object3.txt Object1的path: dir1/object1.txt Object2的path: dir1/object2.txt Object3的path: object3.txt
 
@@ -138,7 +138,7 @@ class CreateBucketCredentialResponse(SdkResponse):
 
     @property
     def policy(self):
-        """Gets the policy of this CreateBucketCredentialResponse.
+        r"""Gets the policy of this CreateBucketCredentialResponse.
 
         :return: The policy of this CreateBucketCredentialResponse.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ObsPolicy`
@@ -147,7 +147,7 @@ class CreateBucketCredentialResponse(SdkResponse):
 
     @policy.setter
     def policy(self, policy):
-        """Sets the policy of this CreateBucketCredentialResponse.
+        r"""Sets the policy of this CreateBucketCredentialResponse.
 
         :param policy: The policy of this CreateBucketCredentialResponse.
         :type policy: :class:`huaweicloudsdkworkspace.v2.ObsPolicy`
@@ -156,7 +156,7 @@ class CreateBucketCredentialResponse(SdkResponse):
 
     @property
     def credential(self):
-        """Gets the credential of this CreateBucketCredentialResponse.
+        r"""Gets the credential of this CreateBucketCredentialResponse.
 
         :return: The credential of this CreateBucketCredentialResponse.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ObsCredential`
@@ -165,7 +165,7 @@ class CreateBucketCredentialResponse(SdkResponse):
 
     @credential.setter
     def credential(self, credential):
-        """Sets the credential of this CreateBucketCredentialResponse.
+        r"""Sets the credential of this CreateBucketCredentialResponse.
 
         :param credential: The credential of this CreateBucketCredentialResponse.
         :type credential: :class:`huaweicloudsdkworkspace.v2.ObsCredential`

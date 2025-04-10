@@ -30,7 +30,7 @@ class ListPrivateNatsResponse(SdkResponse):
     }
 
     def __init__(self, gateways=None, request_id=None, page_info=None):
-        """ListPrivateNatsResponse
+        r"""ListPrivateNatsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListPrivateNatsResponse(SdkResponse):
 
     @property
     def gateways(self):
-        """Gets the gateways of this ListPrivateNatsResponse.
+        r"""Gets the gateways of this ListPrivateNatsResponse.
 
         查询私网NAT网关实例列表的响应体。 详见PrivateNat字段说明。
 
@@ -69,7 +69,7 @@ class ListPrivateNatsResponse(SdkResponse):
 
     @gateways.setter
     def gateways(self, gateways):
-        """Sets the gateways of this ListPrivateNatsResponse.
+        r"""Sets the gateways of this ListPrivateNatsResponse.
 
         查询私网NAT网关实例列表的响应体。 详见PrivateNat字段说明。
 
@@ -80,7 +80,7 @@ class ListPrivateNatsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListPrivateNatsResponse.
+        r"""Gets the request_id of this ListPrivateNatsResponse.
 
         请求ID。
 
@@ -91,7 +91,7 @@ class ListPrivateNatsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListPrivateNatsResponse.
+        r"""Sets the request_id of this ListPrivateNatsResponse.
 
         请求ID。
 
@@ -102,7 +102,7 @@ class ListPrivateNatsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListPrivateNatsResponse.
+        r"""Gets the page_info of this ListPrivateNatsResponse.
 
         :return: The page_info of this ListPrivateNatsResponse.
         :rtype: :class:`huaweicloudsdknat.v2.PageInfo`
@@ -111,7 +111,7 @@ class ListPrivateNatsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListPrivateNatsResponse.
+        r"""Sets the page_info of this ListPrivateNatsResponse.
 
         :param page_info: The page_info of this ListPrivateNatsResponse.
         :type page_info: :class:`huaweicloudsdknat.v2.PageInfo`

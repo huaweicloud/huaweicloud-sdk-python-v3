@@ -23,7 +23,7 @@ class Mapstringstring:
     }
 
     def __init__(self):
-        """Mapstringstring
+        r"""Mapstringstring
 
         The model defined in huaweicloud sdk
 

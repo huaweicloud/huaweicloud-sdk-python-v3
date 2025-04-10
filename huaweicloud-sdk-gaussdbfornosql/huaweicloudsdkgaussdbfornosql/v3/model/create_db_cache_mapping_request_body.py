@@ -27,7 +27,7 @@ class CreateDbCacheMappingRequestBody:
     }
 
     def __init__(self, source_instance_id=None, target_instance_id=None):
-        """CreateDbCacheMappingRequestBody
+        r"""CreateDbCacheMappingRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateDbCacheMappingRequestBody:
 
     @property
     def source_instance_id(self):
-        """Gets the source_instance_id of this CreateDbCacheMappingRequestBody.
+        r"""Gets the source_instance_id of this CreateDbCacheMappingRequestBody.
 
         内存加速源实例ID。当前支持云数据库RDS for MySQL和GaussDB(for MySQL)实例。
 
@@ -59,7 +59,7 @@ class CreateDbCacheMappingRequestBody:
 
     @source_instance_id.setter
     def source_instance_id(self, source_instance_id):
-        """Sets the source_instance_id of this CreateDbCacheMappingRequestBody.
+        r"""Sets the source_instance_id of this CreateDbCacheMappingRequestBody.
 
         内存加速源实例ID。当前支持云数据库RDS for MySQL和GaussDB(for MySQL)实例。
 
@@ -70,7 +70,7 @@ class CreateDbCacheMappingRequestBody:
 
     @property
     def target_instance_id(self):
-        """Gets the target_instance_id of this CreateDbCacheMappingRequestBody.
+        r"""Gets the target_instance_id of this CreateDbCacheMappingRequestBody.
 
         内存加速目标实例ID。当前仅支持GeminiDB Redis主备类型实例。
 
@@ -81,7 +81,7 @@ class CreateDbCacheMappingRequestBody:
 
     @target_instance_id.setter
     def target_instance_id(self, target_instance_id):
-        """Sets the target_instance_id of this CreateDbCacheMappingRequestBody.
+        r"""Sets the target_instance_id of this CreateDbCacheMappingRequestBody.
 
         内存加速目标实例ID。当前仅支持GeminiDB Redis主备类型实例。
 

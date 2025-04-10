@@ -60,7 +60,7 @@ class CreateVpnConnectionRequestBodyContent:
     }
 
     def __init__(self, name=None, vgw_id=None, vgw_ip=None, style=None, cgw_id=None, peer_subnets=None, tunnel_local_address=None, tunnel_peer_address=None, enable_nqa=None, enable_hub=None, psk=None, policy_rules=None, ikepolicy=None, ipsecpolicy=None, ha_role=None, tags=None, peer_subnets_v6=None, policy_rules_v6=None):
-        """CreateVpnConnectionRequestBodyContent
+        r"""CreateVpnConnectionRequestBodyContent
 
         The model defined in huaweicloud sdk
 
@@ -160,7 +160,7 @@ class CreateVpnConnectionRequestBodyContent:
 
     @property
     def name(self):
-        """Gets the name of this CreateVpnConnectionRequestBodyContent.
+        r"""Gets the name of this CreateVpnConnectionRequestBodyContent.
 
         VPN连接名称
 
@@ -171,7 +171,7 @@ class CreateVpnConnectionRequestBodyContent:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateVpnConnectionRequestBodyContent.
+        r"""Sets the name of this CreateVpnConnectionRequestBodyContent.
 
         VPN连接名称
 
@@ -182,7 +182,7 @@ class CreateVpnConnectionRequestBodyContent:
 
     @property
     def vgw_id(self):
-        """Gets the vgw_id of this CreateVpnConnectionRequestBodyContent.
+        r"""Gets the vgw_id of this CreateVpnConnectionRequestBodyContent.
 
         VPN网关ID
 
@@ -193,7 +193,7 @@ class CreateVpnConnectionRequestBodyContent:
 
     @vgw_id.setter
     def vgw_id(self, vgw_id):
-        """Sets the vgw_id of this CreateVpnConnectionRequestBodyContent.
+        r"""Sets the vgw_id of this CreateVpnConnectionRequestBodyContent.
 
         VPN网关ID
 
@@ -204,7 +204,7 @@ class CreateVpnConnectionRequestBodyContent:
 
     @property
     def vgw_ip(self):
-        """Gets the vgw_ip of this CreateVpnConnectionRequestBodyContent.
+        r"""Gets the vgw_ip of this CreateVpnConnectionRequestBodyContent.
 
         VGW IP
 
@@ -215,7 +215,7 @@ class CreateVpnConnectionRequestBodyContent:
 
     @vgw_ip.setter
     def vgw_ip(self, vgw_ip):
-        """Sets the vgw_ip of this CreateVpnConnectionRequestBodyContent.
+        r"""Sets the vgw_ip of this CreateVpnConnectionRequestBodyContent.
 
         VGW IP
 
@@ -226,7 +226,7 @@ class CreateVpnConnectionRequestBodyContent:
 
     @property
     def style(self):
-        """Gets the style of this CreateVpnConnectionRequestBodyContent.
+        r"""Gets the style of this CreateVpnConnectionRequestBodyContent.
 
         连接模式 允许范围[policy, static, bgp] policy: 策略模式 static: 静态路由模式 bgp: bgp路由模式
 
@@ -237,7 +237,7 @@ class CreateVpnConnectionRequestBodyContent:
 
     @style.setter
     def style(self, style):
-        """Sets the style of this CreateVpnConnectionRequestBodyContent.
+        r"""Sets the style of this CreateVpnConnectionRequestBodyContent.
 
         连接模式 允许范围[policy, static, bgp] policy: 策略模式 static: 静态路由模式 bgp: bgp路由模式
 
@@ -248,7 +248,7 @@ class CreateVpnConnectionRequestBodyContent:
 
     @property
     def cgw_id(self):
-        """Gets the cgw_id of this CreateVpnConnectionRequestBodyContent.
+        r"""Gets the cgw_id of this CreateVpnConnectionRequestBodyContent.
 
         对端网关ID
 
@@ -259,7 +259,7 @@ class CreateVpnConnectionRequestBodyContent:
 
     @cgw_id.setter
     def cgw_id(self, cgw_id):
-        """Sets the cgw_id of this CreateVpnConnectionRequestBodyContent.
+        r"""Sets the cgw_id of this CreateVpnConnectionRequestBodyContent.
 
         对端网关ID
 
@@ -270,7 +270,7 @@ class CreateVpnConnectionRequestBodyContent:
 
     @property
     def peer_subnets(self):
-        """Gets the peer_subnets of this CreateVpnConnectionRequestBodyContent.
+        r"""Gets the peer_subnets of this CreateVpnConnectionRequestBodyContent.
 
         对端子网
 
@@ -281,7 +281,7 @@ class CreateVpnConnectionRequestBodyContent:
 
     @peer_subnets.setter
     def peer_subnets(self, peer_subnets):
-        """Sets the peer_subnets of this CreateVpnConnectionRequestBodyContent.
+        r"""Sets the peer_subnets of this CreateVpnConnectionRequestBodyContent.
 
         对端子网
 
@@ -292,7 +292,7 @@ class CreateVpnConnectionRequestBodyContent:
 
     @property
     def tunnel_local_address(self):
-        """Gets the tunnel_local_address of this CreateVpnConnectionRequestBodyContent.
+        r"""Gets the tunnel_local_address of this CreateVpnConnectionRequestBodyContent.
 
         本端隧道口地址
 
@@ -303,7 +303,7 @@ class CreateVpnConnectionRequestBodyContent:
 
     @tunnel_local_address.setter
     def tunnel_local_address(self, tunnel_local_address):
-        """Sets the tunnel_local_address of this CreateVpnConnectionRequestBodyContent.
+        r"""Sets the tunnel_local_address of this CreateVpnConnectionRequestBodyContent.
 
         本端隧道口地址
 
@@ -314,7 +314,7 @@ class CreateVpnConnectionRequestBodyContent:
 
     @property
     def tunnel_peer_address(self):
-        """Gets the tunnel_peer_address of this CreateVpnConnectionRequestBodyContent.
+        r"""Gets the tunnel_peer_address of this CreateVpnConnectionRequestBodyContent.
 
         对端隧道口地址
 
@@ -325,7 +325,7 @@ class CreateVpnConnectionRequestBodyContent:
 
     @tunnel_peer_address.setter
     def tunnel_peer_address(self, tunnel_peer_address):
-        """Sets the tunnel_peer_address of this CreateVpnConnectionRequestBodyContent.
+        r"""Sets the tunnel_peer_address of this CreateVpnConnectionRequestBodyContent.
 
         对端隧道口地址
 
@@ -336,7 +336,7 @@ class CreateVpnConnectionRequestBodyContent:
 
     @property
     def enable_nqa(self):
-        """Gets the enable_nqa of this CreateVpnConnectionRequestBodyContent.
+        r"""Gets the enable_nqa of this CreateVpnConnectionRequestBodyContent.
 
         开启NQA检测
 
@@ -347,7 +347,7 @@ class CreateVpnConnectionRequestBodyContent:
 
     @enable_nqa.setter
     def enable_nqa(self, enable_nqa):
-        """Sets the enable_nqa of this CreateVpnConnectionRequestBodyContent.
+        r"""Sets the enable_nqa of this CreateVpnConnectionRequestBodyContent.
 
         开启NQA检测
 
@@ -358,7 +358,7 @@ class CreateVpnConnectionRequestBodyContent:
 
     @property
     def enable_hub(self):
-        """Gets the enable_hub of this CreateVpnConnectionRequestBodyContent.
+        r"""Gets the enable_hub of this CreateVpnConnectionRequestBodyContent.
 
         开启分支互联
 
@@ -369,7 +369,7 @@ class CreateVpnConnectionRequestBodyContent:
 
     @enable_hub.setter
     def enable_hub(self, enable_hub):
-        """Sets the enable_hub of this CreateVpnConnectionRequestBodyContent.
+        r"""Sets the enable_hub of this CreateVpnConnectionRequestBodyContent.
 
         开启分支互联
 
@@ -380,7 +380,7 @@ class CreateVpnConnectionRequestBodyContent:
 
     @property
     def psk(self):
-        """Gets the psk of this CreateVpnConnectionRequestBodyContent.
+        r"""Gets the psk of this CreateVpnConnectionRequestBodyContent.
 
         预共享密钥，只能包含大写字母、小写字母、数字和特殊字符(~!@#$%^()-_+={ },./:;)且至少包含四种字符的三种
 
@@ -391,7 +391,7 @@ class CreateVpnConnectionRequestBodyContent:
 
     @psk.setter
     def psk(self, psk):
-        """Sets the psk of this CreateVpnConnectionRequestBodyContent.
+        r"""Sets the psk of this CreateVpnConnectionRequestBodyContent.
 
         预共享密钥，只能包含大写字母、小写字母、数字和特殊字符(~!@#$%^()-_+={ },./:;)且至少包含四种字符的三种
 
@@ -402,7 +402,7 @@ class CreateVpnConnectionRequestBodyContent:
 
     @property
     def policy_rules(self):
-        """Gets the policy_rules of this CreateVpnConnectionRequestBodyContent.
+        r"""Gets the policy_rules of this CreateVpnConnectionRequestBodyContent.
 
         策略模式的策略规则组
 
@@ -413,7 +413,7 @@ class CreateVpnConnectionRequestBodyContent:
 
     @policy_rules.setter
     def policy_rules(self, policy_rules):
-        """Sets the policy_rules of this CreateVpnConnectionRequestBodyContent.
+        r"""Sets the policy_rules of this CreateVpnConnectionRequestBodyContent.
 
         策略模式的策略规则组
 
@@ -424,7 +424,7 @@ class CreateVpnConnectionRequestBodyContent:
 
     @property
     def ikepolicy(self):
-        """Gets the ikepolicy of this CreateVpnConnectionRequestBodyContent.
+        r"""Gets the ikepolicy of this CreateVpnConnectionRequestBodyContent.
 
         :return: The ikepolicy of this CreateVpnConnectionRequestBodyContent.
         :rtype: :class:`huaweicloudsdkvpn.v5.IkePolicy`
@@ -433,7 +433,7 @@ class CreateVpnConnectionRequestBodyContent:
 
     @ikepolicy.setter
     def ikepolicy(self, ikepolicy):
-        """Sets the ikepolicy of this CreateVpnConnectionRequestBodyContent.
+        r"""Sets the ikepolicy of this CreateVpnConnectionRequestBodyContent.
 
         :param ikepolicy: The ikepolicy of this CreateVpnConnectionRequestBodyContent.
         :type ikepolicy: :class:`huaweicloudsdkvpn.v5.IkePolicy`
@@ -442,7 +442,7 @@ class CreateVpnConnectionRequestBodyContent:
 
     @property
     def ipsecpolicy(self):
-        """Gets the ipsecpolicy of this CreateVpnConnectionRequestBodyContent.
+        r"""Gets the ipsecpolicy of this CreateVpnConnectionRequestBodyContent.
 
         :return: The ipsecpolicy of this CreateVpnConnectionRequestBodyContent.
         :rtype: :class:`huaweicloudsdkvpn.v5.IpsecPolicy`
@@ -451,7 +451,7 @@ class CreateVpnConnectionRequestBodyContent:
 
     @ipsecpolicy.setter
     def ipsecpolicy(self, ipsecpolicy):
-        """Sets the ipsecpolicy of this CreateVpnConnectionRequestBodyContent.
+        r"""Sets the ipsecpolicy of this CreateVpnConnectionRequestBodyContent.
 
         :param ipsecpolicy: The ipsecpolicy of this CreateVpnConnectionRequestBodyContent.
         :type ipsecpolicy: :class:`huaweicloudsdkvpn.v5.IpsecPolicy`
@@ -460,7 +460,7 @@ class CreateVpnConnectionRequestBodyContent:
 
     @property
     def ha_role(self):
-        """Gets the ha_role of this CreateVpnConnectionRequestBodyContent.
+        r"""Gets the ha_role of this CreateVpnConnectionRequestBodyContent.
 
         连接的HA角色
 
@@ -471,7 +471,7 @@ class CreateVpnConnectionRequestBodyContent:
 
     @ha_role.setter
     def ha_role(self, ha_role):
-        """Sets the ha_role of this CreateVpnConnectionRequestBodyContent.
+        r"""Sets the ha_role of this CreateVpnConnectionRequestBodyContent.
 
         连接的HA角色
 
@@ -482,7 +482,7 @@ class CreateVpnConnectionRequestBodyContent:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateVpnConnectionRequestBodyContent.
+        r"""Gets the tags of this CreateVpnConnectionRequestBodyContent.
 
         标签
 
@@ -493,7 +493,7 @@ class CreateVpnConnectionRequestBodyContent:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateVpnConnectionRequestBodyContent.
+        r"""Sets the tags of this CreateVpnConnectionRequestBodyContent.
 
         标签
 
@@ -504,7 +504,7 @@ class CreateVpnConnectionRequestBodyContent:
 
     @property
     def peer_subnets_v6(self):
-        """Gets the peer_subnets_v6 of this CreateVpnConnectionRequestBodyContent.
+        r"""Gets the peer_subnets_v6 of this CreateVpnConnectionRequestBodyContent.
 
         使能ipv6的对端子网
 
@@ -515,7 +515,7 @@ class CreateVpnConnectionRequestBodyContent:
 
     @peer_subnets_v6.setter
     def peer_subnets_v6(self, peer_subnets_v6):
-        """Sets the peer_subnets_v6 of this CreateVpnConnectionRequestBodyContent.
+        r"""Sets the peer_subnets_v6 of this CreateVpnConnectionRequestBodyContent.
 
         使能ipv6的对端子网
 
@@ -526,7 +526,7 @@ class CreateVpnConnectionRequestBodyContent:
 
     @property
     def policy_rules_v6(self):
-        """Gets the policy_rules_v6 of this CreateVpnConnectionRequestBodyContent.
+        r"""Gets the policy_rules_v6 of this CreateVpnConnectionRequestBodyContent.
 
         策略模式的ipv6策略规则组
 
@@ -537,7 +537,7 @@ class CreateVpnConnectionRequestBodyContent:
 
     @policy_rules_v6.setter
     def policy_rules_v6(self, policy_rules_v6):
-        """Sets the policy_rules_v6 of this CreateVpnConnectionRequestBodyContent.
+        r"""Sets the policy_rules_v6 of this CreateVpnConnectionRequestBodyContent.
 
         策略模式的ipv6策略规则组
 

@@ -25,7 +25,7 @@ class ShowJudgementDetailRequest:
     }
 
     def __init__(self, judgement_id=None):
-        """ShowJudgementDetailRequest
+        r"""ShowJudgementDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowJudgementDetailRequest:
 
     @property
     def judgement_id(self):
-        """Gets the judgement_id of this ShowJudgementDetailRequest.
+        r"""Gets the judgement_id of this ShowJudgementDetailRequest.
 
         判题任务ID
 
@@ -53,7 +53,7 @@ class ShowJudgementDetailRequest:
 
     @judgement_id.setter
     def judgement_id(self, judgement_id):
-        """Sets the judgement_id of this ShowJudgementDetailRequest.
+        r"""Sets the judgement_id of this ShowJudgementDetailRequest.
 
         判题任务ID
 

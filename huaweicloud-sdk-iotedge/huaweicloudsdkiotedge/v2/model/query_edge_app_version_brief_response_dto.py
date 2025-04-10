@@ -49,7 +49,7 @@ class QueryEdgeAppVersionBriefResponseDTO:
     }
 
     def __init__(self, edge_app_id=None, name=None, version=None, sdk_version=None, description=None, deploy_type=None, deploy_multi_instance=None, create_time=None, update_time=None, state=None, arch=None, publish_time=None, off_shelf_time=None):
-        """QueryEdgeAppVersionBriefResponseDTO
+        r"""QueryEdgeAppVersionBriefResponseDTO
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class QueryEdgeAppVersionBriefResponseDTO:
 
     @property
     def edge_app_id(self):
-        """Gets the edge_app_id of this QueryEdgeAppVersionBriefResponseDTO.
+        r"""Gets the edge_app_id of this QueryEdgeAppVersionBriefResponseDTO.
 
         应用ID
 
@@ -138,7 +138,7 @@ class QueryEdgeAppVersionBriefResponseDTO:
 
     @edge_app_id.setter
     def edge_app_id(self, edge_app_id):
-        """Sets the edge_app_id of this QueryEdgeAppVersionBriefResponseDTO.
+        r"""Sets the edge_app_id of this QueryEdgeAppVersionBriefResponseDTO.
 
         应用ID
 
@@ -149,7 +149,7 @@ class QueryEdgeAppVersionBriefResponseDTO:
 
     @property
     def name(self):
-        """Gets the name of this QueryEdgeAppVersionBriefResponseDTO.
+        r"""Gets the name of this QueryEdgeAppVersionBriefResponseDTO.
 
         应用名称
 
@@ -160,7 +160,7 @@ class QueryEdgeAppVersionBriefResponseDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this QueryEdgeAppVersionBriefResponseDTO.
+        r"""Sets the name of this QueryEdgeAppVersionBriefResponseDTO.
 
         应用名称
 
@@ -171,7 +171,7 @@ class QueryEdgeAppVersionBriefResponseDTO:
 
     @property
     def version(self):
-        """Gets the version of this QueryEdgeAppVersionBriefResponseDTO.
+        r"""Gets the version of this QueryEdgeAppVersionBriefResponseDTO.
 
         应用名称
 
@@ -182,7 +182,7 @@ class QueryEdgeAppVersionBriefResponseDTO:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this QueryEdgeAppVersionBriefResponseDTO.
+        r"""Sets the version of this QueryEdgeAppVersionBriefResponseDTO.
 
         应用名称
 
@@ -193,7 +193,7 @@ class QueryEdgeAppVersionBriefResponseDTO:
 
     @property
     def sdk_version(self):
-        """Gets the sdk_version of this QueryEdgeAppVersionBriefResponseDTO.
+        r"""Gets the sdk_version of this QueryEdgeAppVersionBriefResponseDTO.
 
         应用集成的边缘SDK版本
 
@@ -204,7 +204,7 @@ class QueryEdgeAppVersionBriefResponseDTO:
 
     @sdk_version.setter
     def sdk_version(self, sdk_version):
-        """Sets the sdk_version of this QueryEdgeAppVersionBriefResponseDTO.
+        r"""Sets the sdk_version of this QueryEdgeAppVersionBriefResponseDTO.
 
         应用集成的边缘SDK版本
 
@@ -215,7 +215,7 @@ class QueryEdgeAppVersionBriefResponseDTO:
 
     @property
     def description(self):
-        """Gets the description of this QueryEdgeAppVersionBriefResponseDTO.
+        r"""Gets the description of this QueryEdgeAppVersionBriefResponseDTO.
 
         应用描述
 
@@ -226,7 +226,7 @@ class QueryEdgeAppVersionBriefResponseDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this QueryEdgeAppVersionBriefResponseDTO.
+        r"""Sets the description of this QueryEdgeAppVersionBriefResponseDTO.
 
         应用描述
 
@@ -237,7 +237,7 @@ class QueryEdgeAppVersionBriefResponseDTO:
 
     @property
     def deploy_type(self):
-        """Gets the deploy_type of this QueryEdgeAppVersionBriefResponseDTO.
+        r"""Gets the deploy_type of this QueryEdgeAppVersionBriefResponseDTO.
 
         部署类型docker|process
 
@@ -248,7 +248,7 @@ class QueryEdgeAppVersionBriefResponseDTO:
 
     @deploy_type.setter
     def deploy_type(self, deploy_type):
-        """Sets the deploy_type of this QueryEdgeAppVersionBriefResponseDTO.
+        r"""Sets the deploy_type of this QueryEdgeAppVersionBriefResponseDTO.
 
         部署类型docker|process
 
@@ -259,7 +259,7 @@ class QueryEdgeAppVersionBriefResponseDTO:
 
     @property
     def deploy_multi_instance(self):
-        """Gets the deploy_multi_instance of this QueryEdgeAppVersionBriefResponseDTO.
+        r"""Gets the deploy_multi_instance of this QueryEdgeAppVersionBriefResponseDTO.
 
         是否允许部署多实例
 
@@ -270,7 +270,7 @@ class QueryEdgeAppVersionBriefResponseDTO:
 
     @deploy_multi_instance.setter
     def deploy_multi_instance(self, deploy_multi_instance):
-        """Sets the deploy_multi_instance of this QueryEdgeAppVersionBriefResponseDTO.
+        r"""Sets the deploy_multi_instance of this QueryEdgeAppVersionBriefResponseDTO.
 
         是否允许部署多实例
 
@@ -281,7 +281,7 @@ class QueryEdgeAppVersionBriefResponseDTO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this QueryEdgeAppVersionBriefResponseDTO.
+        r"""Gets the create_time of this QueryEdgeAppVersionBriefResponseDTO.
 
         创建时间
 
@@ -292,7 +292,7 @@ class QueryEdgeAppVersionBriefResponseDTO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this QueryEdgeAppVersionBriefResponseDTO.
+        r"""Sets the create_time of this QueryEdgeAppVersionBriefResponseDTO.
 
         创建时间
 
@@ -303,7 +303,7 @@ class QueryEdgeAppVersionBriefResponseDTO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this QueryEdgeAppVersionBriefResponseDTO.
+        r"""Gets the update_time of this QueryEdgeAppVersionBriefResponseDTO.
 
         最后一次修改时间
 
@@ -314,7 +314,7 @@ class QueryEdgeAppVersionBriefResponseDTO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this QueryEdgeAppVersionBriefResponseDTO.
+        r"""Sets the update_time of this QueryEdgeAppVersionBriefResponseDTO.
 
         最后一次修改时间
 
@@ -325,7 +325,7 @@ class QueryEdgeAppVersionBriefResponseDTO:
 
     @property
     def state(self):
-        """Gets the state of this QueryEdgeAppVersionBriefResponseDTO.
+        r"""Gets the state of this QueryEdgeAppVersionBriefResponseDTO.
 
         应用版本状态
 
@@ -336,7 +336,7 @@ class QueryEdgeAppVersionBriefResponseDTO:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this QueryEdgeAppVersionBriefResponseDTO.
+        r"""Sets the state of this QueryEdgeAppVersionBriefResponseDTO.
 
         应用版本状态
 
@@ -347,7 +347,7 @@ class QueryEdgeAppVersionBriefResponseDTO:
 
     @property
     def arch(self):
-        """Gets the arch of this QueryEdgeAppVersionBriefResponseDTO.
+        r"""Gets the arch of this QueryEdgeAppVersionBriefResponseDTO.
 
         架构
 
@@ -358,7 +358,7 @@ class QueryEdgeAppVersionBriefResponseDTO:
 
     @arch.setter
     def arch(self, arch):
-        """Sets the arch of this QueryEdgeAppVersionBriefResponseDTO.
+        r"""Sets the arch of this QueryEdgeAppVersionBriefResponseDTO.
 
         架构
 
@@ -369,7 +369,7 @@ class QueryEdgeAppVersionBriefResponseDTO:
 
     @property
     def publish_time(self):
-        """Gets the publish_time of this QueryEdgeAppVersionBriefResponseDTO.
+        r"""Gets the publish_time of this QueryEdgeAppVersionBriefResponseDTO.
 
         发布时间
 
@@ -380,7 +380,7 @@ class QueryEdgeAppVersionBriefResponseDTO:
 
     @publish_time.setter
     def publish_time(self, publish_time):
-        """Sets the publish_time of this QueryEdgeAppVersionBriefResponseDTO.
+        r"""Sets the publish_time of this QueryEdgeAppVersionBriefResponseDTO.
 
         发布时间
 
@@ -391,7 +391,7 @@ class QueryEdgeAppVersionBriefResponseDTO:
 
     @property
     def off_shelf_time(self):
-        """Gets the off_shelf_time of this QueryEdgeAppVersionBriefResponseDTO.
+        r"""Gets the off_shelf_time of this QueryEdgeAppVersionBriefResponseDTO.
 
         下线时间
 
@@ -402,7 +402,7 @@ class QueryEdgeAppVersionBriefResponseDTO:
 
     @off_shelf_time.setter
     def off_shelf_time(self, off_shelf_time):
-        """Sets the off_shelf_time of this QueryEdgeAppVersionBriefResponseDTO.
+        r"""Sets the off_shelf_time of this QueryEdgeAppVersionBriefResponseDTO.
 
         下线时间
 

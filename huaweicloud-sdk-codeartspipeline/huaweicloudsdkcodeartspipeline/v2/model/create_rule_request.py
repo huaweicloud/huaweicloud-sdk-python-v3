@@ -27,7 +27,7 @@ class CreateRuleRequest:
     }
 
     def __init__(self, domain_id=None, body=None):
-        """CreateRuleRequest
+        r"""CreateRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateRuleRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this CreateRuleRequest.
+        r"""Gets the domain_id of this CreateRuleRequest.
 
         租户ID
 
@@ -60,7 +60,7 @@ class CreateRuleRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this CreateRuleRequest.
+        r"""Sets the domain_id of this CreateRuleRequest.
 
         租户ID
 
@@ -71,7 +71,7 @@ class CreateRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateRuleRequest.
+        r"""Gets the body of this CreateRuleRequest.
 
         :return: The body of this CreateRuleRequest.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.CreateRuleReq`
@@ -80,7 +80,7 @@ class CreateRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateRuleRequest.
+        r"""Sets the body of this CreateRuleRequest.
 
         :param body: The body of this CreateRuleRequest.
         :type body: :class:`huaweicloudsdkcodeartspipeline.v2.CreateRuleReq`

@@ -27,7 +27,7 @@ class UpgradeClusterRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """UpgradeClusterRequest
+        r"""UpgradeClusterRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpgradeClusterRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpgradeClusterRequest.
+        r"""Gets the cluster_id of this UpgradeClusterRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -60,7 +60,7 @@ class UpgradeClusterRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpgradeClusterRequest.
+        r"""Sets the cluster_id of this UpgradeClusterRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -71,7 +71,7 @@ class UpgradeClusterRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpgradeClusterRequest.
+        r"""Gets the body of this UpgradeClusterRequest.
 
         :return: The body of this UpgradeClusterRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.UpgradeClusterRequestBody`
@@ -80,7 +80,7 @@ class UpgradeClusterRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpgradeClusterRequest.
+        r"""Sets the body of this UpgradeClusterRequest.
 
         :param body: The body of this UpgradeClusterRequest.
         :type body: :class:`huaweicloudsdkcce.v3.UpgradeClusterRequestBody`

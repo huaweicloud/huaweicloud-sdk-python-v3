@@ -47,7 +47,7 @@ class BillingCreate:
     }
 
     def __init__(self, cloud_type=None, consistent_level=None, object_type=None, protect_type=None, size=None, charging_mode=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None, console_url=None, is_multi_az=None):
-        """BillingCreate
+        r"""BillingCreate
 
         The model defined in huaweicloud sdk
 
@@ -116,7 +116,7 @@ class BillingCreate:
 
     @property
     def cloud_type(self):
-        """Gets the cloud_type of this BillingCreate.
+        r"""Gets the cloud_type of this BillingCreate.
 
         云平台，公有云或者混合云
 
@@ -127,7 +127,7 @@ class BillingCreate:
 
     @cloud_type.setter
     def cloud_type(self, cloud_type):
-        """Sets the cloud_type of this BillingCreate.
+        r"""Sets the cloud_type of this BillingCreate.
 
         云平台，公有云或者混合云
 
@@ -138,7 +138,7 @@ class BillingCreate:
 
     @property
     def consistent_level(self):
-        """Gets the consistent_level of this BillingCreate.
+        r"""Gets the consistent_level of this BillingCreate.
 
         规格，崩溃一致性（crash_consistent）或应用一致性（app_consistent）
 
@@ -149,7 +149,7 @@ class BillingCreate:
 
     @consistent_level.setter
     def consistent_level(self, consistent_level):
-        """Sets the consistent_level of this BillingCreate.
+        r"""Sets the consistent_level of this BillingCreate.
 
         规格，崩溃一致性（crash_consistent）或应用一致性（app_consistent）
 
@@ -160,7 +160,7 @@ class BillingCreate:
 
     @property
     def object_type(self):
-        """Gets the object_type of this BillingCreate.
+        r"""Gets the object_type of this BillingCreate.
 
         对象类型：云服务器（server），云硬盘（disk），文件系统（turbo），云桌面（workspace），VMware（vmware），关系型数据库（rds），文件（file）。
 
@@ -171,7 +171,7 @@ class BillingCreate:
 
     @object_type.setter
     def object_type(self, object_type):
-        """Sets the object_type of this BillingCreate.
+        r"""Sets the object_type of this BillingCreate.
 
         对象类型：云服务器（server），云硬盘（disk），文件系统（turbo），云桌面（workspace），VMware（vmware），关系型数据库（rds），文件（file）。
 
@@ -182,7 +182,7 @@ class BillingCreate:
 
     @property
     def protect_type(self):
-        """Gets the protect_type of this BillingCreate.
+        r"""Gets the protect_type of this BillingCreate.
 
         保护类型：备份（backup）、复制(replication)
 
@@ -193,7 +193,7 @@ class BillingCreate:
 
     @protect_type.setter
     def protect_type(self, protect_type):
-        """Sets the protect_type of this BillingCreate.
+        r"""Sets the protect_type of this BillingCreate.
 
         保护类型：备份（backup）、复制(replication)
 
@@ -204,7 +204,7 @@ class BillingCreate:
 
     @property
     def size(self):
-        """Gets the size of this BillingCreate.
+        r"""Gets the size of this BillingCreate.
 
         容量，单位GB
 
@@ -215,7 +215,7 @@ class BillingCreate:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this BillingCreate.
+        r"""Sets the size of this BillingCreate.
 
         容量，单位GB
 
@@ -226,7 +226,7 @@ class BillingCreate:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this BillingCreate.
+        r"""Gets the charging_mode of this BillingCreate.
 
         创建模式，按需：post_paid，包周期：pre_paid，默认为post_paid
 
@@ -237,7 +237,7 @@ class BillingCreate:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this BillingCreate.
+        r"""Sets the charging_mode of this BillingCreate.
 
         创建模式，按需：post_paid，包周期：pre_paid，默认为post_paid
 
@@ -248,7 +248,7 @@ class BillingCreate:
 
     @property
     def period_type(self):
-        """Gets the period_type of this BillingCreate.
+        r"""Gets the period_type of this BillingCreate.
 
         创建类型，charging_mode为pre_paid必填，按年(year)或者按月(month)
 
@@ -259,7 +259,7 @@ class BillingCreate:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this BillingCreate.
+        r"""Sets the period_type of this BillingCreate.
 
         创建类型，charging_mode为pre_paid必填，按年(year)或者按月(month)
 
@@ -270,7 +270,7 @@ class BillingCreate:
 
     @property
     def period_num(self):
-        """Gets the period_num of this BillingCreate.
+        r"""Gets the period_num of this BillingCreate.
 
         创建类型的数量，charging_mode为pre_paid必填
 
@@ -281,7 +281,7 @@ class BillingCreate:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this BillingCreate.
+        r"""Sets the period_num of this BillingCreate.
 
         创建类型的数量，charging_mode为pre_paid必填
 
@@ -292,7 +292,7 @@ class BillingCreate:
 
     @property
     def is_auto_renew(self):
-        """Gets the is_auto_renew of this BillingCreate.
+        r"""Gets the is_auto_renew of this BillingCreate.
 
         到期后是否自动续期，默认不续期
 
@@ -303,7 +303,7 @@ class BillingCreate:
 
     @is_auto_renew.setter
     def is_auto_renew(self, is_auto_renew):
-        """Sets the is_auto_renew of this BillingCreate.
+        r"""Sets the is_auto_renew of this BillingCreate.
 
         到期后是否自动续期，默认不续期
 
@@ -314,7 +314,7 @@ class BillingCreate:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this BillingCreate.
+        r"""Gets the is_auto_pay of this BillingCreate.
 
         是否自动付费，默认为不自动付费
 
@@ -325,7 +325,7 @@ class BillingCreate:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this BillingCreate.
+        r"""Sets the is_auto_pay of this BillingCreate.
 
         是否自动付费，默认为不自动付费
 
@@ -336,7 +336,7 @@ class BillingCreate:
 
     @property
     def console_url(self):
-        """Gets the console_url of this BillingCreate.
+        r"""Gets the console_url of this BillingCreate.
 
         跳转URL
 
@@ -347,7 +347,7 @@ class BillingCreate:
 
     @console_url.setter
     def console_url(self, console_url):
-        """Sets the console_url of this BillingCreate.
+        r"""Sets the console_url of this BillingCreate.
 
         跳转URL
 
@@ -358,7 +358,7 @@ class BillingCreate:
 
     @property
     def is_multi_az(self):
-        """Gets the is_multi_az of this BillingCreate.
+        r"""Gets the is_multi_az of this BillingCreate.
 
         存储库多az属性，默认为false
 
@@ -369,7 +369,7 @@ class BillingCreate:
 
     @is_multi_az.setter
     def is_multi_az(self, is_multi_az):
-        """Sets the is_multi_az of this BillingCreate.
+        r"""Sets the is_multi_az of this BillingCreate.
 
         存储库多az属性，默认为false
 

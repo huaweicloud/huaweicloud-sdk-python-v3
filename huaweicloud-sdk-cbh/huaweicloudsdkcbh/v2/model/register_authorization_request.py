@@ -25,7 +25,7 @@ class RegisterAuthorizationRequest:
     }
 
     def __init__(self, body=None):
-        """RegisterAuthorizationRequest
+        r"""RegisterAuthorizationRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RegisterAuthorizationRequest:
 
     @property
     def body(self):
-        """Gets the body of this RegisterAuthorizationRequest.
+        r"""Gets the body of this RegisterAuthorizationRequest.
 
         :return: The body of this RegisterAuthorizationRequest.
         :rtype: :class:`huaweicloudsdkcbh.v2.AuthorizeCsmsAndKmsRequestBody`
@@ -52,7 +52,7 @@ class RegisterAuthorizationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RegisterAuthorizationRequest.
+        r"""Sets the body of this RegisterAuthorizationRequest.
 
         :param body: The body of this RegisterAuthorizationRequest.
         :type body: :class:`huaweicloudsdkcbh.v2.AuthorizeCsmsAndKmsRequestBody`

@@ -27,7 +27,7 @@ class ExportCertificateRequest:
     }
 
     def __init__(self, certificate_id=None, body=None):
-        """ExportCertificateRequest
+        r"""ExportCertificateRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ExportCertificateRequest:
 
     @property
     def certificate_id(self):
-        """Gets the certificate_id of this ExportCertificateRequest.
+        r"""Gets the certificate_id of this ExportCertificateRequest.
 
         所要导出的私有证书ID。
 
@@ -60,7 +60,7 @@ class ExportCertificateRequest:
 
     @certificate_id.setter
     def certificate_id(self, certificate_id):
-        """Sets the certificate_id of this ExportCertificateRequest.
+        r"""Sets the certificate_id of this ExportCertificateRequest.
 
         所要导出的私有证书ID。
 
@@ -71,7 +71,7 @@ class ExportCertificateRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExportCertificateRequest.
+        r"""Gets the body of this ExportCertificateRequest.
 
         :return: The body of this ExportCertificateRequest.
         :rtype: :class:`huaweicloudsdkccm.v1.ExportCertificateRequestBody`
@@ -80,7 +80,7 @@ class ExportCertificateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExportCertificateRequest.
+        r"""Sets the body of this ExportCertificateRequest.
 
         :param body: The body of this ExportCertificateRequest.
         :type body: :class:`huaweicloudsdkccm.v1.ExportCertificateRequestBody`

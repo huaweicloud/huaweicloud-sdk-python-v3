@@ -25,7 +25,7 @@ class UpdateDomainMultiCertificatesRequestBody:
     }
 
     def __init__(self, https=None):
-        """UpdateDomainMultiCertificatesRequestBody
+        r"""UpdateDomainMultiCertificatesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateDomainMultiCertificatesRequestBody:
 
     @property
     def https(self):
-        """Gets the https of this UpdateDomainMultiCertificatesRequestBody.
+        r"""Gets the https of this UpdateDomainMultiCertificatesRequestBody.
 
         :return: The https of this UpdateDomainMultiCertificatesRequestBody.
         :rtype: :class:`huaweicloudsdkcdn.v2.UpdateDomainMultiCertificatesRequestBodyContent`
@@ -52,7 +52,7 @@ class UpdateDomainMultiCertificatesRequestBody:
 
     @https.setter
     def https(self, https):
-        """Sets the https of this UpdateDomainMultiCertificatesRequestBody.
+        r"""Sets the https of this UpdateDomainMultiCertificatesRequestBody.
 
         :param https: The https of this UpdateDomainMultiCertificatesRequestBody.
         :type https: :class:`huaweicloudsdkcdn.v2.UpdateDomainMultiCertificatesRequestBodyContent`

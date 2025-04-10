@@ -27,7 +27,7 @@ class CreateUserRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateUserRequest
+        r"""CreateUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateUserRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateUserRequest.
+        r"""Gets the instance_id of this CreateUserRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class CreateUserRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateUserRequest.
+        r"""Sets the instance_id of this CreateUserRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class CreateUserRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateUserRequest.
+        r"""Gets the body of this CreateUserRequest.
 
         :return: The body of this CreateUserRequest.
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.AMQPUser`
@@ -80,7 +80,7 @@ class CreateUserRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateUserRequest.
+        r"""Sets the body of this CreateUserRequest.
 
         :param body: The body of this CreateUserRequest.
         :type body: :class:`huaweicloudsdkrabbitmq.v2.AMQPUser`

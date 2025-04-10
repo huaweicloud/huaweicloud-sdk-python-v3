@@ -24,7 +24,7 @@ class UpdateConfigurationParameterResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateConfigurationParameterResponse
+        r"""UpdateConfigurationParameterResponse
 
         The model defined in huaweicloud sdk
 

@@ -34,7 +34,7 @@ class EipClient(Client):
         return client_builder
 
     def list_bandwidth(self, request):
-        """查询带宽列表
+        r"""查询带宽列表
 
         查询带宽列表
         
@@ -132,7 +132,7 @@ class EipClient(Client):
         return http_info
 
     def list_bandwidths_limit(self, request):
-        """查看租户带宽限制
+        r"""查看租户带宽限制
 
         获取EIP带宽限制列表
         
@@ -208,7 +208,7 @@ class EipClient(Client):
         return http_info
 
     def list_common_pools(self, request):
-        """查询公共池列表
+        r"""查询公共池列表
 
         查询公共池列表
         
@@ -282,7 +282,7 @@ class EipClient(Client):
         return http_info
 
     def list_eip_bandwidths(self, request):
-        """查询带宽列表
+        r"""查询带宽列表
 
         查询带宽列表
         
@@ -382,7 +382,7 @@ class EipClient(Client):
         return http_info
 
     def list_public_border_groups(self, request):
-        """查询公共池分组列表
+        r"""查询公共池分组列表
 
         查询公共池分组列表，包含名称和位置信息
         
@@ -447,7 +447,7 @@ class EipClient(Client):
         return http_info
 
     def list_publicip_pool(self, request):
-        """查询公网IP池列表
+        r"""查询公网IP池列表
 
         全量查询公网IP池列表
         
@@ -535,7 +535,7 @@ class EipClient(Client):
         return http_info
 
     def list_share_bandwidth_types(self, request):
-        """查询指定租户下的共享带宽类型列表
+        r"""查询指定租户下的共享带宽类型列表
 
         查询指定租户下的共享带宽类型列表
         
@@ -621,7 +621,7 @@ class EipClient(Client):
         return http_info
 
     def show_publicip_pool(self, request):
-        """查询公网IP池详情
+        r"""查询公网IP池详情
 
         查询公网IP池详情
         
@@ -689,7 +689,7 @@ class EipClient(Client):
         return http_info
 
     def list_project_geip_bindings(self, request):
-        """查询GEIP与实例绑定关系的租户列表
+        r"""查询GEIP与实例绑定关系的租户列表
 
         查询GEIP与实例绑定关系的租户列表
         
@@ -803,7 +803,7 @@ class EipClient(Client):
         return http_info
 
     def associate_publicips(self, request):
-        """绑定弹性公网IP
+        r"""绑定弹性公网IP
 
         绑定弹性公网IP
         
@@ -870,7 +870,7 @@ class EipClient(Client):
         return http_info
 
     def attach_batch_public_ip(self, request):
-        """共享带宽批量加入弹性公网IP
+        r"""共享带宽批量加入弹性公网IP
 
         共享带宽批量加入弹性公网IP
         
@@ -935,7 +935,7 @@ class EipClient(Client):
         return http_info
 
     def attach_share_bandwidth(self, request):
-        """共享带宽加入弹性公网IP
+        r"""共享带宽加入弹性公网IP
 
         共享带宽加入弹性公网IP
         
@@ -1002,7 +1002,7 @@ class EipClient(Client):
         return http_info
 
     def count_eip_available_resources(self, request):
-        """查询弹性公网IP可用数
+        r"""查询弹性公网IP可用数
 
         IP池用于查询公网可用ip个数
         
@@ -1067,7 +1067,7 @@ class EipClient(Client):
         return http_info
 
     def detach_batch_public_ip(self, request):
-        """共享带宽批量移出弹性公网IP
+        r"""共享带宽批量移出弹性公网IP
 
         共享带宽批量移出弹性公网IP
         
@@ -1132,7 +1132,7 @@ class EipClient(Client):
         return http_info
 
     def detach_share_bandwidth(self, request):
-        """共享带宽移出弹性公网IP
+        r"""共享带宽移出弹性公网IP
 
         共享带宽移出弹性公网IP
         
@@ -1199,7 +1199,7 @@ class EipClient(Client):
         return http_info
 
     def disable_nat64(self, request):
-        """弹性公网IP关闭NAT64
+        r"""弹性公网IP关闭NAT64
 
         弹性公网IP关闭NAT64
         
@@ -1264,7 +1264,7 @@ class EipClient(Client):
         return http_info
 
     def disassociate_publicips(self, request):
-        """解绑弹性公网IP
+        r"""解绑弹性公网IP
 
         解绑弹性公网IP
         
@@ -1329,7 +1329,7 @@ class EipClient(Client):
         return http_info
 
     def enable_nat64(self, request):
-        """弹性公网IP开启NAT64
+        r"""弹性公网IP开启NAT64
 
         弹性公网IP开启NAT64
         
@@ -1394,7 +1394,7 @@ class EipClient(Client):
         return http_info
 
     def list_publicips(self, request):
-        """全量查询弹性公网IP列表
+        r"""全量查询弹性公网IP列表
 
         查询弹性公网IP列表信息
         
@@ -1569,7 +1569,7 @@ class EipClient(Client):
         return http_info
 
     def show_publicip(self, request):
-        """查询弹性公网IP详情
+        r"""查询弹性公网IP详情
 
         查询弹性公网IP详情
         
@@ -1637,7 +1637,7 @@ class EipClient(Client):
         return http_info
 
     def update_publicip(self, request):
-        """更新弹性公网IP
+        r"""更新弹性公网IP
 
         更新弹性公网IP
         
@@ -1704,7 +1704,7 @@ class EipClient(Client):
         return http_info
 
     def create_tenant_vpc_igw(self, request):
-        """创建虚拟igw
+        r"""创建虚拟igw
 
         创建虚拟igw
         
@@ -1772,7 +1772,7 @@ class EipClient(Client):
         return http_info
 
     def delete_tenant_vpc_igw(self, request):
-        """删除虚拟igw
+        r"""删除虚拟igw
 
         删除虚拟igw
         
@@ -1837,7 +1837,7 @@ class EipClient(Client):
         return http_info
 
     def list_tenant_vpc_igws(self, request):
-        """查询指定租户下的虚拟igw列表
+        r"""查询指定租户下的虚拟igw列表
 
         查询指定租户下的虚拟igw列表
         
@@ -1919,7 +1919,7 @@ class EipClient(Client):
         return http_info
 
     def show_internal_vpc_igw(self, request):
-        """查询虚拟igw详情
+        r"""查询虚拟igw详情
 
         查询虚拟igw详情
         
@@ -1987,7 +1987,7 @@ class EipClient(Client):
         return http_info
 
     def update_tenant_vpc_igw(self, request):
-        """修改虚拟igw
+        r"""修改虚拟igw
 
         修改虚拟igw
         

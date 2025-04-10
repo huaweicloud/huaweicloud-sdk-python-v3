@@ -27,7 +27,7 @@ class ShowSpanSearchRequest:
     }
 
     def __init__(self, x_business_id=None, body=None):
-        """ShowSpanSearchRequest
+        r"""ShowSpanSearchRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowSpanSearchRequest:
 
     @property
     def x_business_id(self):
-        """Gets the x_business_id of this ShowSpanSearchRequest.
+        r"""Gets the x_business_id of this ShowSpanSearchRequest.
 
         应用id。
 
@@ -60,7 +60,7 @@ class ShowSpanSearchRequest:
 
     @x_business_id.setter
     def x_business_id(self, x_business_id):
-        """Sets the x_business_id of this ShowSpanSearchRequest.
+        r"""Sets the x_business_id of this ShowSpanSearchRequest.
 
         应用id。
 
@@ -71,7 +71,7 @@ class ShowSpanSearchRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowSpanSearchRequest.
+        r"""Gets the body of this ShowSpanSearchRequest.
 
         :return: The body of this ShowSpanSearchRequest.
         :rtype: :class:`huaweicloudsdkapm.v1.TraceSearchParam`
@@ -80,7 +80,7 @@ class ShowSpanSearchRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowSpanSearchRequest.
+        r"""Sets the body of this ShowSpanSearchRequest.
 
         :param body: The body of this ShowSpanSearchRequest.
         :type body: :class:`huaweicloudsdkapm.v1.TraceSearchParam`

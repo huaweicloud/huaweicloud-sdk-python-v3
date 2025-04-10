@@ -25,7 +25,7 @@ class RunGetFileTranslationResultRequest:
     }
 
     def __init__(self, job_id=None):
-        """RunGetFileTranslationResultRequest
+        r"""RunGetFileTranslationResultRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RunGetFileTranslationResultRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this RunGetFileTranslationResultRequest.
+        r"""Gets the job_id of this RunGetFileTranslationResultRequest.
 
         文档翻译任务标识符。通过文档翻译接口获取。
 
@@ -53,7 +53,7 @@ class RunGetFileTranslationResultRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this RunGetFileTranslationResultRequest.
+        r"""Sets the job_id of this RunGetFileTranslationResultRequest.
 
         文档翻译任务标识符。通过文档翻译接口获取。
 

@@ -85,7 +85,7 @@ class MysqlInstanceInfoDetail:
     }
 
     def __init__(self, id=None, name=None, project_id=None, status=None, port=None, alias=None, type=None, charge_info=None, node_count=None, datastore=None, backup_used_space=None, created=None, updated=None, private_write_ips=None, private_dns_names=None, public_ips=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, configuration_id=None, backup_strategy=None, nodes=None, enterprise_project_id=None, time_zone=None, az_mode=None, master_az_code=None, maintenance_window=None, tags=None, dedicated_resource_id=None, proxies=None):
-        """MysqlInstanceInfoDetail
+        r"""MysqlInstanceInfoDetail
 
         The model defined in huaweicloud sdk
 
@@ -250,7 +250,7 @@ class MysqlInstanceInfoDetail:
 
     @property
     def id(self):
-        """Gets the id of this MysqlInstanceInfoDetail.
+        r"""Gets the id of this MysqlInstanceInfoDetail.
 
         实例ID。
 
@@ -261,7 +261,7 @@ class MysqlInstanceInfoDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MysqlInstanceInfoDetail.
+        r"""Sets the id of this MysqlInstanceInfoDetail.
 
         实例ID。
 
@@ -272,7 +272,7 @@ class MysqlInstanceInfoDetail:
 
     @property
     def name(self):
-        """Gets the name of this MysqlInstanceInfoDetail.
+        r"""Gets the name of this MysqlInstanceInfoDetail.
 
         创建的实例名称。
 
@@ -283,7 +283,7 @@ class MysqlInstanceInfoDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MysqlInstanceInfoDetail.
+        r"""Sets the name of this MysqlInstanceInfoDetail.
 
         创建的实例名称。
 
@@ -294,7 +294,7 @@ class MysqlInstanceInfoDetail:
 
     @property
     def project_id(self):
-        """Gets the project_id of this MysqlInstanceInfoDetail.
+        r"""Gets the project_id of this MysqlInstanceInfoDetail.
 
         租户在某一region下的project ID。
 
@@ -305,7 +305,7 @@ class MysqlInstanceInfoDetail:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this MysqlInstanceInfoDetail.
+        r"""Sets the project_id of this MysqlInstanceInfoDetail.
 
         租户在某一region下的project ID。
 
@@ -316,7 +316,7 @@ class MysqlInstanceInfoDetail:
 
     @property
     def status(self):
-        """Gets the status of this MysqlInstanceInfoDetail.
+        r"""Gets the status of this MysqlInstanceInfoDetail.
 
         实例状态。  取值： - 值为“BUILD”，表示实例正在创建。 - 值为“ACTIVE”，表示实例正常。 - 值为“FAILED”，表示实例创建失败。 - 值为“FROZEN”，表示实例冻结。 - 值为“MODIFYING”，表示实例正在扩容。 - 值为“REBOOTING”，表示实例正在重启。 - 值为“RESTORING”，表示实例正在恢复。 - 值为“SWITCHOVER”，表示实例正在主备切换。 - 值为“MIGRATING”，表示实例正在迁移。 - 值为“BACKING UP”，表示实例正在进行备份。 - 值为“MODIFYING DATABASE PORT”，表示实例正在修改数据库端口。 - 值为“STORAGE FULL”，表示实例磁盘空间满。
 
@@ -327,7 +327,7 @@ class MysqlInstanceInfoDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this MysqlInstanceInfoDetail.
+        r"""Sets the status of this MysqlInstanceInfoDetail.
 
         实例状态。  取值： - 值为“BUILD”，表示实例正在创建。 - 值为“ACTIVE”，表示实例正常。 - 值为“FAILED”，表示实例创建失败。 - 值为“FROZEN”，表示实例冻结。 - 值为“MODIFYING”，表示实例正在扩容。 - 值为“REBOOTING”，表示实例正在重启。 - 值为“RESTORING”，表示实例正在恢复。 - 值为“SWITCHOVER”，表示实例正在主备切换。 - 值为“MIGRATING”，表示实例正在迁移。 - 值为“BACKING UP”，表示实例正在进行备份。 - 值为“MODIFYING DATABASE PORT”，表示实例正在修改数据库端口。 - 值为“STORAGE FULL”，表示实例磁盘空间满。
 
@@ -338,7 +338,7 @@ class MysqlInstanceInfoDetail:
 
     @property
     def port(self):
-        """Gets the port of this MysqlInstanceInfoDetail.
+        r"""Gets the port of this MysqlInstanceInfoDetail.
 
         数据库端口号。
 
@@ -349,7 +349,7 @@ class MysqlInstanceInfoDetail:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this MysqlInstanceInfoDetail.
+        r"""Sets the port of this MysqlInstanceInfoDetail.
 
         数据库端口号。
 
@@ -360,7 +360,7 @@ class MysqlInstanceInfoDetail:
 
     @property
     def alias(self):
-        """Gets the alias of this MysqlInstanceInfoDetail.
+        r"""Gets the alias of this MysqlInstanceInfoDetail.
 
         实例备注
 
@@ -371,7 +371,7 @@ class MysqlInstanceInfoDetail:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this MysqlInstanceInfoDetail.
+        r"""Sets the alias of this MysqlInstanceInfoDetail.
 
         实例备注
 
@@ -382,7 +382,7 @@ class MysqlInstanceInfoDetail:
 
     @property
     def type(self):
-        """Gets the type of this MysqlInstanceInfoDetail.
+        r"""Gets the type of this MysqlInstanceInfoDetail.
 
         实例类型，取值为“Cluster”。
 
@@ -393,7 +393,7 @@ class MysqlInstanceInfoDetail:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this MysqlInstanceInfoDetail.
+        r"""Sets the type of this MysqlInstanceInfoDetail.
 
         实例类型，取值为“Cluster”。
 
@@ -404,7 +404,7 @@ class MysqlInstanceInfoDetail:
 
     @property
     def charge_info(self):
-        """Gets the charge_info of this MysqlInstanceInfoDetail.
+        r"""Gets the charge_info of this MysqlInstanceInfoDetail.
 
         :return: The charge_info of this MysqlInstanceInfoDetail.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlInstanceChargeInfo`
@@ -413,7 +413,7 @@ class MysqlInstanceInfoDetail:
 
     @charge_info.setter
     def charge_info(self, charge_info):
-        """Sets the charge_info of this MysqlInstanceInfoDetail.
+        r"""Sets the charge_info of this MysqlInstanceInfoDetail.
 
         :param charge_info: The charge_info of this MysqlInstanceInfoDetail.
         :type charge_info: :class:`huaweicloudsdkgaussdb.v3.MysqlInstanceChargeInfo`
@@ -422,7 +422,7 @@ class MysqlInstanceInfoDetail:
 
     @property
     def node_count(self):
-        """Gets the node_count of this MysqlInstanceInfoDetail.
+        r"""Gets the node_count of this MysqlInstanceInfoDetail.
 
         节点个数。
 
@@ -433,7 +433,7 @@ class MysqlInstanceInfoDetail:
 
     @node_count.setter
     def node_count(self, node_count):
-        """Sets the node_count of this MysqlInstanceInfoDetail.
+        r"""Sets the node_count of this MysqlInstanceInfoDetail.
 
         节点个数。
 
@@ -444,7 +444,7 @@ class MysqlInstanceInfoDetail:
 
     @property
     def datastore(self):
-        """Gets the datastore of this MysqlInstanceInfoDetail.
+        r"""Gets the datastore of this MysqlInstanceInfoDetail.
 
         :return: The datastore of this MysqlInstanceInfoDetail.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastoreWithKernelVersion`
@@ -453,7 +453,7 @@ class MysqlInstanceInfoDetail:
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this MysqlInstanceInfoDetail.
+        r"""Sets the datastore of this MysqlInstanceInfoDetail.
 
         :param datastore: The datastore of this MysqlInstanceInfoDetail.
         :type datastore: :class:`huaweicloudsdkgaussdb.v3.MysqlDatastoreWithKernelVersion`
@@ -462,7 +462,7 @@ class MysqlInstanceInfoDetail:
 
     @property
     def backup_used_space(self):
-        """Gets the backup_used_space of this MysqlInstanceInfoDetail.
+        r"""Gets the backup_used_space of this MysqlInstanceInfoDetail.
 
         备份空间使用大小，单位为GB。
 
@@ -473,7 +473,7 @@ class MysqlInstanceInfoDetail:
 
     @backup_used_space.setter
     def backup_used_space(self, backup_used_space):
-        """Sets the backup_used_space of this MysqlInstanceInfoDetail.
+        r"""Sets the backup_used_space of this MysqlInstanceInfoDetail.
 
         备份空间使用大小，单位为GB。
 
@@ -484,7 +484,7 @@ class MysqlInstanceInfoDetail:
 
     @property
     def created(self):
-        """Gets the created of this MysqlInstanceInfoDetail.
+        r"""Gets the created of this MysqlInstanceInfoDetail.
 
         创建时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。  说明：创建时返回值为空，数据库实例创建成功后该值不为空。
 
@@ -495,7 +495,7 @@ class MysqlInstanceInfoDetail:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this MysqlInstanceInfoDetail.
+        r"""Sets the created of this MysqlInstanceInfoDetail.
 
         创建时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。  其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。  说明：创建时返回值为空，数据库实例创建成功后该值不为空。
 
@@ -506,7 +506,7 @@ class MysqlInstanceInfoDetail:
 
     @property
     def updated(self):
-        """Gets the updated of this MysqlInstanceInfoDetail.
+        r"""Gets the updated of this MysqlInstanceInfoDetail.
 
         更新时间，格式与\"created\"字段对应格式完全相同。说明：创建时返回值为空，数据库实例创建成功后该值不为空。
 
@@ -517,7 +517,7 @@ class MysqlInstanceInfoDetail:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this MysqlInstanceInfoDetail.
+        r"""Sets the updated of this MysqlInstanceInfoDetail.
 
         更新时间，格式与\"created\"字段对应格式完全相同。说明：创建时返回值为空，数据库实例创建成功后该值不为空。
 
@@ -528,7 +528,7 @@ class MysqlInstanceInfoDetail:
 
     @property
     def private_write_ips(self):
-        """Gets the private_write_ips of this MysqlInstanceInfoDetail.
+        r"""Gets the private_write_ips of this MysqlInstanceInfoDetail.
 
         实例的写内网IP。
 
@@ -539,7 +539,7 @@ class MysqlInstanceInfoDetail:
 
     @private_write_ips.setter
     def private_write_ips(self, private_write_ips):
-        """Sets the private_write_ips of this MysqlInstanceInfoDetail.
+        r"""Sets the private_write_ips of this MysqlInstanceInfoDetail.
 
         实例的写内网IP。
 
@@ -550,7 +550,7 @@ class MysqlInstanceInfoDetail:
 
     @property
     def private_dns_names(self):
-        """Gets the private_dns_names of this MysqlInstanceInfoDetail.
+        r"""Gets the private_dns_names of this MysqlInstanceInfoDetail.
 
         实例内网域名列表。实例创建成功后，需要手动申请内网域名，否则查询内网域名为空。
 
@@ -561,7 +561,7 @@ class MysqlInstanceInfoDetail:
 
     @private_dns_names.setter
     def private_dns_names(self, private_dns_names):
-        """Sets the private_dns_names of this MysqlInstanceInfoDetail.
+        r"""Sets the private_dns_names of this MysqlInstanceInfoDetail.
 
         实例内网域名列表。实例创建成功后，需要手动申请内网域名，否则查询内网域名为空。
 
@@ -572,7 +572,7 @@ class MysqlInstanceInfoDetail:
 
     @property
     def public_ips(self):
-        """Gets the public_ips of this MysqlInstanceInfoDetail.
+        r"""Gets the public_ips of this MysqlInstanceInfoDetail.
 
         实例的公网IP。
 
@@ -583,7 +583,7 @@ class MysqlInstanceInfoDetail:
 
     @public_ips.setter
     def public_ips(self, public_ips):
-        """Sets the public_ips of this MysqlInstanceInfoDetail.
+        r"""Sets the public_ips of this MysqlInstanceInfoDetail.
 
         实例的公网IP。
 
@@ -594,7 +594,7 @@ class MysqlInstanceInfoDetail:
 
     @property
     def db_user_name(self):
-        """Gets the db_user_name of this MysqlInstanceInfoDetail.
+        r"""Gets the db_user_name of this MysqlInstanceInfoDetail.
 
         默认用户名。
 
@@ -605,7 +605,7 @@ class MysqlInstanceInfoDetail:
 
     @db_user_name.setter
     def db_user_name(self, db_user_name):
-        """Sets the db_user_name of this MysqlInstanceInfoDetail.
+        r"""Sets the db_user_name of this MysqlInstanceInfoDetail.
 
         默认用户名。
 
@@ -616,7 +616,7 @@ class MysqlInstanceInfoDetail:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this MysqlInstanceInfoDetail.
+        r"""Gets the vpc_id of this MysqlInstanceInfoDetail.
 
         虚拟私有云ID。
 
@@ -627,7 +627,7 @@ class MysqlInstanceInfoDetail:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this MysqlInstanceInfoDetail.
+        r"""Sets the vpc_id of this MysqlInstanceInfoDetail.
 
         虚拟私有云ID。
 
@@ -638,7 +638,7 @@ class MysqlInstanceInfoDetail:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this MysqlInstanceInfoDetail.
+        r"""Gets the subnet_id of this MysqlInstanceInfoDetail.
 
         子网的网络ID信息。
 
@@ -649,7 +649,7 @@ class MysqlInstanceInfoDetail:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this MysqlInstanceInfoDetail.
+        r"""Sets the subnet_id of this MysqlInstanceInfoDetail.
 
         子网的网络ID信息。
 
@@ -660,7 +660,7 @@ class MysqlInstanceInfoDetail:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this MysqlInstanceInfoDetail.
+        r"""Gets the security_group_id of this MysqlInstanceInfoDetail.
 
         安全组ID。
 
@@ -671,7 +671,7 @@ class MysqlInstanceInfoDetail:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this MysqlInstanceInfoDetail.
+        r"""Sets the security_group_id of this MysqlInstanceInfoDetail.
 
         安全组ID。
 
@@ -682,7 +682,7 @@ class MysqlInstanceInfoDetail:
 
     @property
     def configuration_id(self):
-        """Gets the configuration_id of this MysqlInstanceInfoDetail.
+        r"""Gets the configuration_id of this MysqlInstanceInfoDetail.
 
         实例创建的模板ID，或者应用到实例的最新参数组模板ID。
 
@@ -693,7 +693,7 @@ class MysqlInstanceInfoDetail:
 
     @configuration_id.setter
     def configuration_id(self, configuration_id):
-        """Sets the configuration_id of this MysqlInstanceInfoDetail.
+        r"""Sets the configuration_id of this MysqlInstanceInfoDetail.
 
         实例创建的模板ID，或者应用到实例的最新参数组模板ID。
 
@@ -704,7 +704,7 @@ class MysqlInstanceInfoDetail:
 
     @property
     def backup_strategy(self):
-        """Gets the backup_strategy of this MysqlInstanceInfoDetail.
+        r"""Gets the backup_strategy of this MysqlInstanceInfoDetail.
 
         :return: The backup_strategy of this MysqlInstanceInfoDetail.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlBackupStrategy`
@@ -713,7 +713,7 @@ class MysqlInstanceInfoDetail:
 
     @backup_strategy.setter
     def backup_strategy(self, backup_strategy):
-        """Sets the backup_strategy of this MysqlInstanceInfoDetail.
+        r"""Sets the backup_strategy of this MysqlInstanceInfoDetail.
 
         :param backup_strategy: The backup_strategy of this MysqlInstanceInfoDetail.
         :type backup_strategy: :class:`huaweicloudsdkgaussdb.v3.MysqlBackupStrategy`
@@ -722,7 +722,7 @@ class MysqlInstanceInfoDetail:
 
     @property
     def nodes(self):
-        """Gets the nodes of this MysqlInstanceInfoDetail.
+        r"""Gets the nodes of this MysqlInstanceInfoDetail.
 
         :return: The nodes of this MysqlInstanceInfoDetail.
         :rtype: list[:class:`huaweicloudsdkgaussdb.v3.MysqlInstanceNodeInfo`]
@@ -731,7 +731,7 @@ class MysqlInstanceInfoDetail:
 
     @nodes.setter
     def nodes(self, nodes):
-        """Sets the nodes of this MysqlInstanceInfoDetail.
+        r"""Sets the nodes of this MysqlInstanceInfoDetail.
 
         :param nodes: The nodes of this MysqlInstanceInfoDetail.
         :type nodes: list[:class:`huaweicloudsdkgaussdb.v3.MysqlInstanceNodeInfo`]
@@ -740,7 +740,7 @@ class MysqlInstanceInfoDetail:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this MysqlInstanceInfoDetail.
+        r"""Gets the enterprise_project_id of this MysqlInstanceInfoDetail.
 
         企业项目ID。
 
@@ -751,7 +751,7 @@ class MysqlInstanceInfoDetail:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this MysqlInstanceInfoDetail.
+        r"""Sets the enterprise_project_id of this MysqlInstanceInfoDetail.
 
         企业项目ID。
 
@@ -762,7 +762,7 @@ class MysqlInstanceInfoDetail:
 
     @property
     def time_zone(self):
-        """Gets the time_zone of this MysqlInstanceInfoDetail.
+        r"""Gets the time_zone of this MysqlInstanceInfoDetail.
 
         时区。
 
@@ -773,7 +773,7 @@ class MysqlInstanceInfoDetail:
 
     @time_zone.setter
     def time_zone(self, time_zone):
-        """Sets the time_zone of this MysqlInstanceInfoDetail.
+        r"""Sets the time_zone of this MysqlInstanceInfoDetail.
 
         时区。
 
@@ -784,7 +784,7 @@ class MysqlInstanceInfoDetail:
 
     @property
     def az_mode(self):
-        """Gets the az_mode of this MysqlInstanceInfoDetail.
+        r"""Gets the az_mode of this MysqlInstanceInfoDetail.
 
         可用区模式，单可用区single或多可用区multi。
 
@@ -795,7 +795,7 @@ class MysqlInstanceInfoDetail:
 
     @az_mode.setter
     def az_mode(self, az_mode):
-        """Sets the az_mode of this MysqlInstanceInfoDetail.
+        r"""Sets the az_mode of this MysqlInstanceInfoDetail.
 
         可用区模式，单可用区single或多可用区multi。
 
@@ -806,7 +806,7 @@ class MysqlInstanceInfoDetail:
 
     @property
     def master_az_code(self):
-        """Gets the master_az_code of this MysqlInstanceInfoDetail.
+        r"""Gets the master_az_code of this MysqlInstanceInfoDetail.
 
         主可用区。
 
@@ -817,7 +817,7 @@ class MysqlInstanceInfoDetail:
 
     @master_az_code.setter
     def master_az_code(self, master_az_code):
-        """Sets the master_az_code of this MysqlInstanceInfoDetail.
+        r"""Sets the master_az_code of this MysqlInstanceInfoDetail.
 
         主可用区。
 
@@ -828,7 +828,7 @@ class MysqlInstanceInfoDetail:
 
     @property
     def maintenance_window(self):
-        """Gets the maintenance_window of this MysqlInstanceInfoDetail.
+        r"""Gets the maintenance_window of this MysqlInstanceInfoDetail.
 
         可维护时间窗，为UTC时间。
 
@@ -839,7 +839,7 @@ class MysqlInstanceInfoDetail:
 
     @maintenance_window.setter
     def maintenance_window(self, maintenance_window):
-        """Sets the maintenance_window of this MysqlInstanceInfoDetail.
+        r"""Sets the maintenance_window of this MysqlInstanceInfoDetail.
 
         可维护时间窗，为UTC时间。
 
@@ -850,7 +850,7 @@ class MysqlInstanceInfoDetail:
 
     @property
     def tags(self):
-        """Gets the tags of this MysqlInstanceInfoDetail.
+        r"""Gets the tags of this MysqlInstanceInfoDetail.
 
         实例标签。
 
@@ -861,7 +861,7 @@ class MysqlInstanceInfoDetail:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this MysqlInstanceInfoDetail.
+        r"""Sets the tags of this MysqlInstanceInfoDetail.
 
         实例标签。
 
@@ -872,7 +872,7 @@ class MysqlInstanceInfoDetail:
 
     @property
     def dedicated_resource_id(self):
-        """Gets the dedicated_resource_id of this MysqlInstanceInfoDetail.
+        r"""Gets the dedicated_resource_id of this MysqlInstanceInfoDetail.
 
         专属资源池ID，只有数据库实例属于专属资源池才会返回该参数。
 
@@ -883,7 +883,7 @@ class MysqlInstanceInfoDetail:
 
     @dedicated_resource_id.setter
     def dedicated_resource_id(self, dedicated_resource_id):
-        """Sets the dedicated_resource_id of this MysqlInstanceInfoDetail.
+        r"""Sets the dedicated_resource_id of this MysqlInstanceInfoDetail.
 
         专属资源池ID，只有数据库实例属于专属资源池才会返回该参数。
 
@@ -894,7 +894,7 @@ class MysqlInstanceInfoDetail:
 
     @property
     def proxies(self):
-        """Gets the proxies of this MysqlInstanceInfoDetail.
+        r"""Gets the proxies of this MysqlInstanceInfoDetail.
 
         :return: The proxies of this MysqlInstanceInfoDetail.
         :rtype: list[:class:`huaweicloudsdkgaussdb.v3.MysqlProxyInfo`]
@@ -903,7 +903,7 @@ class MysqlInstanceInfoDetail:
 
     @proxies.setter
     def proxies(self, proxies):
-        """Sets the proxies of this MysqlInstanceInfoDetail.
+        r"""Sets the proxies of this MysqlInstanceInfoDetail.
 
         :param proxies: The proxies of this MysqlInstanceInfoDetail.
         :type proxies: list[:class:`huaweicloudsdkgaussdb.v3.MysqlProxyInfo`]

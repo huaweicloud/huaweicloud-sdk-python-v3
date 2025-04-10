@@ -27,7 +27,7 @@ class DeleteNotifyPolicyRequest:
     }
 
     def __init__(self, topic_urn=None, notify_policy_id=None):
-        """DeleteNotifyPolicyRequest
+        r"""DeleteNotifyPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteNotifyPolicyRequest:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this DeleteNotifyPolicyRequest.
+        r"""Gets the topic_urn of this DeleteNotifyPolicyRequest.
 
         Topic的唯一的资源标识，可通过[查询主题列表](smn_api_51004.xml)获取该标识。
 
@@ -59,7 +59,7 @@ class DeleteNotifyPolicyRequest:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this DeleteNotifyPolicyRequest.
+        r"""Sets the topic_urn of this DeleteNotifyPolicyRequest.
 
         Topic的唯一的资源标识，可通过[查询主题列表](smn_api_51004.xml)获取该标识。
 
@@ -70,7 +70,7 @@ class DeleteNotifyPolicyRequest:
 
     @property
     def notify_policy_id(self):
-        """Gets the notify_policy_id of this DeleteNotifyPolicyRequest.
+        r"""Gets the notify_policy_id of this DeleteNotifyPolicyRequest.
 
         通知策略ID。
 
@@ -81,7 +81,7 @@ class DeleteNotifyPolicyRequest:
 
     @notify_policy_id.setter
     def notify_policy_id(self, notify_policy_id):
-        """Sets the notify_policy_id of this DeleteNotifyPolicyRequest.
+        r"""Sets the notify_policy_id of this DeleteNotifyPolicyRequest.
 
         通知策略ID。
 

@@ -27,7 +27,7 @@ class ComponentUpdateParam:
     }
 
     def __init__(self, description=None, name=None):
-        """ComponentUpdateParam
+        r"""ComponentUpdateParam
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ComponentUpdateParam:
 
     @property
     def description(self):
-        """Gets the description of this ComponentUpdateParam.
+        r"""Gets the description of this ComponentUpdateParam.
 
         组件描述
 
@@ -60,7 +60,7 @@ class ComponentUpdateParam:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ComponentUpdateParam.
+        r"""Sets the description of this ComponentUpdateParam.
 
         组件描述
 
@@ -71,7 +71,7 @@ class ComponentUpdateParam:
 
     @property
     def name(self):
-        """Gets the name of this ComponentUpdateParam.
+        r"""Gets the name of this ComponentUpdateParam.
 
         组件名称
 
@@ -82,7 +82,7 @@ class ComponentUpdateParam:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ComponentUpdateParam.
+        r"""Sets the name of this ComponentUpdateParam.
 
         组件名称
 

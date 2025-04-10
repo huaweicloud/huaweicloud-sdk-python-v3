@@ -29,7 +29,7 @@ class CreateMeshRequest:
     }
 
     def __init__(self, content_type=None, x_apply_project_id=None, body=None):
-        """CreateMeshRequest
+        r"""CreateMeshRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateMeshRequest:
 
     @property
     def content_type(self):
-        """Gets the content_type of this CreateMeshRequest.
+        r"""Gets the content_type of this CreateMeshRequest.
 
         消息体的类型（格式）
 
@@ -67,7 +67,7 @@ class CreateMeshRequest:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this CreateMeshRequest.
+        r"""Sets the content_type of this CreateMeshRequest.
 
         消息体的类型（格式）
 
@@ -78,7 +78,7 @@ class CreateMeshRequest:
 
     @property
     def x_apply_project_id(self):
-        """Gets the x_apply_project_id of this CreateMeshRequest.
+        r"""Gets the x_apply_project_id of this CreateMeshRequest.
 
         网格所属ProjectID
 
@@ -89,7 +89,7 @@ class CreateMeshRequest:
 
     @x_apply_project_id.setter
     def x_apply_project_id(self, x_apply_project_id):
-        """Sets the x_apply_project_id of this CreateMeshRequest.
+        r"""Sets the x_apply_project_id of this CreateMeshRequest.
 
         网格所属ProjectID
 
@@ -100,7 +100,7 @@ class CreateMeshRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateMeshRequest.
+        r"""Gets the body of this CreateMeshRequest.
 
         :return: The body of this CreateMeshRequest.
         :rtype: :class:`huaweicloudsdkasm.v1.Mesh`
@@ -109,7 +109,7 @@ class CreateMeshRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateMeshRequest.
+        r"""Sets the body of this CreateMeshRequest.
 
         :param body: The body of this CreateMeshRequest.
         :type body: :class:`huaweicloudsdkasm.v1.Mesh`

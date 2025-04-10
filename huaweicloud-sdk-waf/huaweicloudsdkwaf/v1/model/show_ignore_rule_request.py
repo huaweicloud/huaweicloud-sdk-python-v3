@@ -29,7 +29,7 @@ class ShowIgnoreRuleRequest:
     }
 
     def __init__(self, enterprise_project_id=None, policy_id=None, rule_id=None):
-        """ShowIgnoreRuleRequest
+        r"""ShowIgnoreRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowIgnoreRuleRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowIgnoreRuleRequest.
+        r"""Gets the enterprise_project_id of this ShowIgnoreRuleRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
@@ -66,7 +66,7 @@ class ShowIgnoreRuleRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowIgnoreRuleRequest.
+        r"""Sets the enterprise_project_id of this ShowIgnoreRuleRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
@@ -77,7 +77,7 @@ class ShowIgnoreRuleRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this ShowIgnoreRuleRequest.
+        r"""Gets the policy_id of this ShowIgnoreRuleRequest.
 
         防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
 
@@ -88,7 +88,7 @@ class ShowIgnoreRuleRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this ShowIgnoreRuleRequest.
+        r"""Sets the policy_id of this ShowIgnoreRuleRequest.
 
         防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
 
@@ -99,7 +99,7 @@ class ShowIgnoreRuleRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this ShowIgnoreRuleRequest.
+        r"""Gets the rule_id of this ShowIgnoreRuleRequest.
 
         误报屏蔽规则id，您可以通过查询误报屏蔽规则列表（ListIgnoreRule）接口的响应体中的id字段获取误报屏蔽规则id
 
@@ -110,7 +110,7 @@ class ShowIgnoreRuleRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this ShowIgnoreRuleRequest.
+        r"""Sets the rule_id of this ShowIgnoreRuleRequest.
 
         误报屏蔽规则id，您可以通过查询误报屏蔽规则列表（ListIgnoreRule）接口的响应体中的id字段获取误报屏蔽规则id
 

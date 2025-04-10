@@ -25,7 +25,7 @@ class NovaServerSecurityGroup:
     }
 
     def __init__(self, name=None):
-        """NovaServerSecurityGroup
+        r"""NovaServerSecurityGroup
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class NovaServerSecurityGroup:
 
     @property
     def name(self):
-        """Gets the name of this NovaServerSecurityGroup.
+        r"""Gets the name of this NovaServerSecurityGroup.
 
         安全组名称或者uuid。
 
@@ -54,7 +54,7 @@ class NovaServerSecurityGroup:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NovaServerSecurityGroup.
+        r"""Sets the name of this NovaServerSecurityGroup.
 
         安全组名称或者uuid。
 

@@ -27,7 +27,7 @@ class ShowBatchUpgradeCandidateVersionsRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """ShowBatchUpgradeCandidateVersionsRequest
+        r"""ShowBatchUpgradeCandidateVersionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ShowBatchUpgradeCandidateVersionsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowBatchUpgradeCandidateVersionsRequest.
+        r"""Gets the x_language of this ShowBatchUpgradeCandidateVersionsRequest.
 
         语言[zh-cn, en-us]。
 
@@ -61,7 +61,7 @@ class ShowBatchUpgradeCandidateVersionsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowBatchUpgradeCandidateVersionsRequest.
+        r"""Sets the x_language of this ShowBatchUpgradeCandidateVersionsRequest.
 
         语言[zh-cn, en-us]。
 
@@ -72,7 +72,7 @@ class ShowBatchUpgradeCandidateVersionsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowBatchUpgradeCandidateVersionsRequest.
+        r"""Gets the body of this ShowBatchUpgradeCandidateVersionsRequest.
 
         :return: The body of this ShowBatchUpgradeCandidateVersionsRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.UpgradeInstancesRequestBody`
@@ -81,7 +81,7 @@ class ShowBatchUpgradeCandidateVersionsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowBatchUpgradeCandidateVersionsRequest.
+        r"""Sets the body of this ShowBatchUpgradeCandidateVersionsRequest.
 
         :param body: The body of this ShowBatchUpgradeCandidateVersionsRequest.
         :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.UpgradeInstancesRequestBody`

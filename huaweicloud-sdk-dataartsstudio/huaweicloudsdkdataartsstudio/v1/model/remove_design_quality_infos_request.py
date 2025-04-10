@@ -31,7 +31,7 @@ class RemoveDesignQualityInfosRequest:
     }
 
     def __init__(self, workspace=None, x_project_id=None, table_id=None, table_type=None):
-        """RemoveDesignQualityInfosRequest
+        r"""RemoveDesignQualityInfosRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class RemoveDesignQualityInfosRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this RemoveDesignQualityInfosRequest.
+        r"""Gets the workspace of this RemoveDesignQualityInfosRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -72,7 +72,7 @@ class RemoveDesignQualityInfosRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this RemoveDesignQualityInfosRequest.
+        r"""Sets the workspace of this RemoveDesignQualityInfosRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -83,7 +83,7 @@ class RemoveDesignQualityInfosRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this RemoveDesignQualityInfosRequest.
+        r"""Gets the x_project_id of this RemoveDesignQualityInfosRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -94,7 +94,7 @@ class RemoveDesignQualityInfosRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this RemoveDesignQualityInfosRequest.
+        r"""Sets the x_project_id of this RemoveDesignQualityInfosRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -105,7 +105,7 @@ class RemoveDesignQualityInfosRequest:
 
     @property
     def table_id(self):
-        """Gets the table_id of this RemoveDesignQualityInfosRequest.
+        r"""Gets the table_id of this RemoveDesignQualityInfosRequest.
 
         表的ID，ID字符串。
 
@@ -116,7 +116,7 @@ class RemoveDesignQualityInfosRequest:
 
     @table_id.setter
     def table_id(self, table_id):
-        """Sets the table_id of this RemoveDesignQualityInfosRequest.
+        r"""Sets the table_id of this RemoveDesignQualityInfosRequest.
 
         表的ID，ID字符串。
 
@@ -127,7 +127,7 @@ class RemoveDesignQualityInfosRequest:
 
     @property
     def table_type(self):
-        """Gets the table_type of this RemoveDesignQualityInfosRequest.
+        r"""Gets the table_type of this RemoveDesignQualityInfosRequest.
 
         表类型，默认值是业务表。TABLE_MODEL(业务表(逻辑实体/物理表))、AGGREGATION_LOGIC_TABLE(汇总表)、FACT_LOGIC_TABLE(事实表)、DIMENSION_LOGIC_TABLE(维度表)。 - TABLE_MODEL - AGGREGATION_LOGIC_TABLE - FACT_LOGIC_TABLE - DIMENSION_LOGIC_TABLE
 
@@ -138,7 +138,7 @@ class RemoveDesignQualityInfosRequest:
 
     @table_type.setter
     def table_type(self, table_type):
-        """Sets the table_type of this RemoveDesignQualityInfosRequest.
+        r"""Sets the table_type of this RemoveDesignQualityInfosRequest.
 
         表类型，默认值是业务表。TABLE_MODEL(业务表(逻辑实体/物理表))、AGGREGATION_LOGIC_TABLE(汇总表)、FACT_LOGIC_TABLE(事实表)、DIMENSION_LOGIC_TABLE(维度表)。 - TABLE_MODEL - AGGREGATION_LOGIC_TABLE - FACT_LOGIC_TABLE - DIMENSION_LOGIC_TABLE
 

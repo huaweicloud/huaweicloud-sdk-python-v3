@@ -33,7 +33,7 @@ class ListEnterpriseResourceResult:
     }
 
     def __init__(self, resource_id=None, resource_detail=None, tags=None, sys_tags=None, resource_name=None):
-        """ListEnterpriseResourceResult
+        r"""ListEnterpriseResourceResult
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListEnterpriseResourceResult:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ListEnterpriseResourceResult.
+        r"""Gets the resource_id of this ListEnterpriseResourceResult.
 
         资源ID
 
@@ -82,7 +82,7 @@ class ListEnterpriseResourceResult:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ListEnterpriseResourceResult.
+        r"""Sets the resource_id of this ListEnterpriseResourceResult.
 
         资源ID
 
@@ -93,7 +93,7 @@ class ListEnterpriseResourceResult:
 
     @property
     def resource_detail(self):
-        """Gets the resource_detail of this ListEnterpriseResourceResult.
+        r"""Gets the resource_detail of this ListEnterpriseResourceResult.
 
         :return: The resource_detail of this ListEnterpriseResourceResult.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ListEnterpriseResourceDetail`
@@ -102,7 +102,7 @@ class ListEnterpriseResourceResult:
 
     @resource_detail.setter
     def resource_detail(self, resource_detail):
-        """Sets the resource_detail of this ListEnterpriseResourceResult.
+        r"""Sets the resource_detail of this ListEnterpriseResourceResult.
 
         :param resource_detail: The resource_detail of this ListEnterpriseResourceResult.
         :type resource_detail: :class:`huaweicloudsdkfunctiongraph.v2.ListEnterpriseResourceDetail`
@@ -111,7 +111,7 @@ class ListEnterpriseResourceResult:
 
     @property
     def tags(self):
-        """Gets the tags of this ListEnterpriseResourceResult.
+        r"""Gets the tags of this ListEnterpriseResourceResult.
 
         标签列表
 
@@ -122,7 +122,7 @@ class ListEnterpriseResourceResult:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListEnterpriseResourceResult.
+        r"""Sets the tags of this ListEnterpriseResourceResult.
 
         标签列表
 
@@ -133,7 +133,7 @@ class ListEnterpriseResourceResult:
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this ListEnterpriseResourceResult.
+        r"""Gets the sys_tags of this ListEnterpriseResourceResult.
 
         系统标签列表
 
@@ -144,7 +144,7 @@ class ListEnterpriseResourceResult:
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this ListEnterpriseResourceResult.
+        r"""Sets the sys_tags of this ListEnterpriseResourceResult.
 
         系统标签列表
 
@@ -155,7 +155,7 @@ class ListEnterpriseResourceResult:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this ListEnterpriseResourceResult.
+        r"""Gets the resource_name of this ListEnterpriseResourceResult.
 
         资源名称
 
@@ -166,7 +166,7 @@ class ListEnterpriseResourceResult:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this ListEnterpriseResourceResult.
+        r"""Sets the resource_name of this ListEnterpriseResourceResult.
 
         资源名称
 

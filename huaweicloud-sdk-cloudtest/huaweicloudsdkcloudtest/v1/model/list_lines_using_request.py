@@ -27,7 +27,7 @@ class ListLinesUsingRequest:
     }
 
     def __init__(self, service_id=None, body=None):
-        """ListLinesUsingRequest
+        r"""ListLinesUsingRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListLinesUsingRequest:
 
     @property
     def service_id(self):
-        """Gets the service_id of this ListLinesUsingRequest.
+        r"""Gets the service_id of this ListLinesUsingRequest.
 
         服务id
 
@@ -60,7 +60,7 @@ class ListLinesUsingRequest:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this ListLinesUsingRequest.
+        r"""Sets the service_id of this ListLinesUsingRequest.
 
         服务id
 
@@ -71,7 +71,7 @@ class ListLinesUsingRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListLinesUsingRequest.
+        r"""Gets the body of this ListLinesUsingRequest.
 
         :return: The body of this ListLinesUsingRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.DashboardDataQuery`
@@ -80,7 +80,7 @@ class ListLinesUsingRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListLinesUsingRequest.
+        r"""Sets the body of this ListLinesUsingRequest.
 
         :param body: The body of this ListLinesUsingRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.DashboardDataQuery`

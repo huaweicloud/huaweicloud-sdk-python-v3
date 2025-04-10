@@ -27,7 +27,7 @@ class ExecuteSecurityDiagnoseRequest:
     }
 
     def __init__(self, workspace=None, body=None):
-        """ExecuteSecurityDiagnoseRequest
+        r"""ExecuteSecurityDiagnoseRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ExecuteSecurityDiagnoseRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ExecuteSecurityDiagnoseRequest.
+        r"""Gets the workspace of this ExecuteSecurityDiagnoseRequest.
 
         DataArts Studio工作空间ID
 
@@ -60,7 +60,7 @@ class ExecuteSecurityDiagnoseRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ExecuteSecurityDiagnoseRequest.
+        r"""Sets the workspace of this ExecuteSecurityDiagnoseRequest.
 
         DataArts Studio工作空间ID
 
@@ -71,7 +71,7 @@ class ExecuteSecurityDiagnoseRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExecuteSecurityDiagnoseRequest.
+        r"""Gets the body of this ExecuteSecurityDiagnoseRequest.
 
         :return: The body of this ExecuteSecurityDiagnoseRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DiagnoseTypeDTO`
@@ -80,7 +80,7 @@ class ExecuteSecurityDiagnoseRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExecuteSecurityDiagnoseRequest.
+        r"""Sets the body of this ExecuteSecurityDiagnoseRequest.
 
         :param body: The body of this ExecuteSecurityDiagnoseRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.DiagnoseTypeDTO`

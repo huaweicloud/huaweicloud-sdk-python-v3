@@ -39,7 +39,7 @@ class ReleaseReqBodyParams:
     }
 
     def __init__(self, dry_run=None, name_template=None, no_hooks=None, replace=None, recreate=None, reset_values=None, release_version=None, include_hooks=None):
-        """ReleaseReqBodyParams
+        r"""ReleaseReqBodyParams
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ReleaseReqBodyParams:
 
     @property
     def dry_run(self):
-        """Gets the dry_run of this ReleaseReqBodyParams.
+        r"""Gets the dry_run of this ReleaseReqBodyParams.
 
         开启后，仅验证模板参数，不进行安装
 
@@ -103,7 +103,7 @@ class ReleaseReqBodyParams:
 
     @dry_run.setter
     def dry_run(self, dry_run):
-        """Sets the dry_run of this ReleaseReqBodyParams.
+        r"""Sets the dry_run of this ReleaseReqBodyParams.
 
         开启后，仅验证模板参数，不进行安装
 
@@ -114,7 +114,7 @@ class ReleaseReqBodyParams:
 
     @property
     def name_template(self):
-        """Gets the name_template of this ReleaseReqBodyParams.
+        r"""Gets the name_template of this ReleaseReqBodyParams.
 
         实例名称模板
 
@@ -125,7 +125,7 @@ class ReleaseReqBodyParams:
 
     @name_template.setter
     def name_template(self, name_template):
-        """Sets the name_template of this ReleaseReqBodyParams.
+        r"""Sets the name_template of this ReleaseReqBodyParams.
 
         实例名称模板
 
@@ -136,7 +136,7 @@ class ReleaseReqBodyParams:
 
     @property
     def no_hooks(self):
-        """Gets the no_hooks of this ReleaseReqBodyParams.
+        r"""Gets the no_hooks of this ReleaseReqBodyParams.
 
         安装时是否禁用hooks
 
@@ -147,7 +147,7 @@ class ReleaseReqBodyParams:
 
     @no_hooks.setter
     def no_hooks(self, no_hooks):
-        """Sets the no_hooks of this ReleaseReqBodyParams.
+        r"""Sets the no_hooks of this ReleaseReqBodyParams.
 
         安装时是否禁用hooks
 
@@ -158,7 +158,7 @@ class ReleaseReqBodyParams:
 
     @property
     def replace(self):
-        """Gets the replace of this ReleaseReqBodyParams.
+        r"""Gets the replace of this ReleaseReqBodyParams.
 
         是否替换同名实例
 
@@ -169,7 +169,7 @@ class ReleaseReqBodyParams:
 
     @replace.setter
     def replace(self, replace):
-        """Sets the replace of this ReleaseReqBodyParams.
+        r"""Sets the replace of this ReleaseReqBodyParams.
 
         是否替换同名实例
 
@@ -180,7 +180,7 @@ class ReleaseReqBodyParams:
 
     @property
     def recreate(self):
-        """Gets the recreate of this ReleaseReqBodyParams.
+        r"""Gets the recreate of this ReleaseReqBodyParams.
 
         是否重建实例
 
@@ -191,7 +191,7 @@ class ReleaseReqBodyParams:
 
     @recreate.setter
     def recreate(self, recreate):
-        """Sets the recreate of this ReleaseReqBodyParams.
+        r"""Sets the recreate of this ReleaseReqBodyParams.
 
         是否重建实例
 
@@ -202,7 +202,7 @@ class ReleaseReqBodyParams:
 
     @property
     def reset_values(self):
-        """Gets the reset_values of this ReleaseReqBodyParams.
+        r"""Gets the reset_values of this ReleaseReqBodyParams.
 
         更新时是否重置values
 
@@ -213,7 +213,7 @@ class ReleaseReqBodyParams:
 
     @reset_values.setter
     def reset_values(self, reset_values):
-        """Sets the reset_values of this ReleaseReqBodyParams.
+        r"""Sets the reset_values of this ReleaseReqBodyParams.
 
         更新时是否重置values
 
@@ -224,7 +224,7 @@ class ReleaseReqBodyParams:
 
     @property
     def release_version(self):
-        """Gets the release_version of this ReleaseReqBodyParams.
+        r"""Gets the release_version of this ReleaseReqBodyParams.
 
         回滚实例的版本
 
@@ -235,7 +235,7 @@ class ReleaseReqBodyParams:
 
     @release_version.setter
     def release_version(self, release_version):
-        """Sets the release_version of this ReleaseReqBodyParams.
+        r"""Sets the release_version of this ReleaseReqBodyParams.
 
         回滚实例的版本
 
@@ -246,7 +246,7 @@ class ReleaseReqBodyParams:
 
     @property
     def include_hooks(self):
-        """Gets the include_hooks of this ReleaseReqBodyParams.
+        r"""Gets the include_hooks of this ReleaseReqBodyParams.
 
         更新或者删除时启用hooks
 
@@ -257,7 +257,7 @@ class ReleaseReqBodyParams:
 
     @include_hooks.setter
     def include_hooks(self, include_hooks):
-        """Sets the include_hooks of this ReleaseReqBodyParams.
+        r"""Sets the include_hooks of this ReleaseReqBodyParams.
 
         更新或者删除时启用hooks
 

@@ -62,7 +62,7 @@ class ShowVideoScriptResponse(SdkResponse):
     }
 
     def __init__(self, script_name=None, script_description=None, view_mode=None, model_asset_id=None, model_asset_type=None, voice_config=None, video_config=None, scene_asset_id=None, priv_data=None, background_music_config=None, review_config=None, audio_files=None, action_config=None, shoot_scripts=None, script_id=None, create_time=None, update_time=None, script_cover_url=None, x_request_id=None):
-        """ShowVideoScriptResponse
+        r"""ShowVideoScriptResponse
 
         The model defined in huaweicloud sdk
 
@@ -170,7 +170,7 @@ class ShowVideoScriptResponse(SdkResponse):
 
     @property
     def script_name(self):
-        """Gets the script_name of this ShowVideoScriptResponse.
+        r"""Gets the script_name of this ShowVideoScriptResponse.
 
         **参数解释**： 剧本名称。 **约束限制**： 不涉及。 **取值范围**： 只能使用中英文字符，字符长度1-256位。 **默认取值**： 不涉及。
 
@@ -181,7 +181,7 @@ class ShowVideoScriptResponse(SdkResponse):
 
     @script_name.setter
     def script_name(self, script_name):
-        """Sets the script_name of this ShowVideoScriptResponse.
+        r"""Sets the script_name of this ShowVideoScriptResponse.
 
         **参数解释**： 剧本名称。 **约束限制**： 不涉及。 **取值范围**： 只能使用中英文字符，字符长度1-256位。 **默认取值**： 不涉及。
 
@@ -192,7 +192,7 @@ class ShowVideoScriptResponse(SdkResponse):
 
     @property
     def script_description(self):
-        """Gets the script_description of this ShowVideoScriptResponse.
+        r"""Gets the script_description of this ShowVideoScriptResponse.
 
         **参数解释**： 剧本描述。 **约束限制**： 不涉及。 **取值范围**： 字符长度0-1024位。 **默认取值**： 不涉及。
 
@@ -203,7 +203,7 @@ class ShowVideoScriptResponse(SdkResponse):
 
     @script_description.setter
     def script_description(self, script_description):
-        """Sets the script_description of this ShowVideoScriptResponse.
+        r"""Sets the script_description of this ShowVideoScriptResponse.
 
         **参数解释**： 剧本描述。 **约束限制**： 不涉及。 **取值范围**： 字符长度0-1024位。 **默认取值**： 不涉及。
 
@@ -214,7 +214,7 @@ class ShowVideoScriptResponse(SdkResponse):
 
     @property
     def view_mode(self):
-        """Gets the view_mode of this ShowVideoScriptResponse.
+        r"""Gets the view_mode of this ShowVideoScriptResponse.
 
         **参数解释**： 横竖屏类型。 **约束限制**： 不涉及。 **取值范围**： * LANDSCAPE：横屏。 * VERTICAL：竖屏。
 
@@ -225,7 +225,7 @@ class ShowVideoScriptResponse(SdkResponse):
 
     @view_mode.setter
     def view_mode(self, view_mode):
-        """Sets the view_mode of this ShowVideoScriptResponse.
+        r"""Sets the view_mode of this ShowVideoScriptResponse.
 
         **参数解释**： 横竖屏类型。 **约束限制**： 不涉及。 **取值范围**： * LANDSCAPE：横屏。 * VERTICAL：竖屏。
 
@@ -236,7 +236,7 @@ class ShowVideoScriptResponse(SdkResponse):
 
     @property
     def model_asset_id(self):
-        """Gets the model_asset_id of this ShowVideoScriptResponse.
+        r"""Gets the model_asset_id of this ShowVideoScriptResponse.
 
         **参数解释**： 数字人模型资产ID。 **约束限制**： 不涉及 **取值范围**： 字符长度0-64位。 **默认取值**： 不涉及
 
@@ -247,7 +247,7 @@ class ShowVideoScriptResponse(SdkResponse):
 
     @model_asset_id.setter
     def model_asset_id(self, model_asset_id):
-        """Sets the model_asset_id of this ShowVideoScriptResponse.
+        r"""Sets the model_asset_id of this ShowVideoScriptResponse.
 
         **参数解释**： 数字人模型资产ID。 **约束限制**： 不涉及 **取值范围**： 字符长度0-64位。 **默认取值**： 不涉及
 
@@ -258,7 +258,7 @@ class ShowVideoScriptResponse(SdkResponse):
 
     @property
     def model_asset_type(self):
-        """Gets the model_asset_type of this ShowVideoScriptResponse.
+        r"""Gets the model_asset_type of this ShowVideoScriptResponse.
 
         **参数解释**： 数字人模型类型。 **约束限制**： 不涉及 **取值范围**： * HUMAN_MODEL_2D：分身数字人 * HUMAN_MODEL_3D：3D数字人  **默认取值**： 不涉及
 
@@ -269,7 +269,7 @@ class ShowVideoScriptResponse(SdkResponse):
 
     @model_asset_type.setter
     def model_asset_type(self, model_asset_type):
-        """Sets the model_asset_type of this ShowVideoScriptResponse.
+        r"""Sets the model_asset_type of this ShowVideoScriptResponse.
 
         **参数解释**： 数字人模型类型。 **约束限制**： 不涉及 **取值范围**： * HUMAN_MODEL_2D：分身数字人 * HUMAN_MODEL_3D：3D数字人  **默认取值**： 不涉及
 
@@ -280,7 +280,7 @@ class ShowVideoScriptResponse(SdkResponse):
 
     @property
     def voice_config(self):
-        """Gets the voice_config of this ShowVideoScriptResponse.
+        r"""Gets the voice_config of this ShowVideoScriptResponse.
 
         :return: The voice_config of this ShowVideoScriptResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.VoiceConfig`
@@ -289,7 +289,7 @@ class ShowVideoScriptResponse(SdkResponse):
 
     @voice_config.setter
     def voice_config(self, voice_config):
-        """Sets the voice_config of this ShowVideoScriptResponse.
+        r"""Sets the voice_config of this ShowVideoScriptResponse.
 
         :param voice_config: The voice_config of this ShowVideoScriptResponse.
         :type voice_config: :class:`huaweicloudsdkmetastudio.v1.VoiceConfig`
@@ -298,7 +298,7 @@ class ShowVideoScriptResponse(SdkResponse):
 
     @property
     def video_config(self):
-        """Gets the video_config of this ShowVideoScriptResponse.
+        r"""Gets the video_config of this ShowVideoScriptResponse.
 
         :return: The video_config of this ShowVideoScriptResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.VideoConfig`
@@ -307,7 +307,7 @@ class ShowVideoScriptResponse(SdkResponse):
 
     @video_config.setter
     def video_config(self, video_config):
-        """Sets the video_config of this ShowVideoScriptResponse.
+        r"""Sets the video_config of this ShowVideoScriptResponse.
 
         :param video_config: The video_config of this ShowVideoScriptResponse.
         :type video_config: :class:`huaweicloudsdkmetastudio.v1.VideoConfig`
@@ -316,7 +316,7 @@ class ShowVideoScriptResponse(SdkResponse):
 
     @property
     def scene_asset_id(self):
-        """Gets the scene_asset_id of this ShowVideoScriptResponse.
+        r"""Gets the scene_asset_id of this ShowVideoScriptResponse.
 
         **参数解释**： 场景资产ID。 **约束限制**： 分身数字人视频制作不需要填写该参数。 **取值范围**： 字符长度0-64位 **默认取值**： 不涉及
 
@@ -327,7 +327,7 @@ class ShowVideoScriptResponse(SdkResponse):
 
     @scene_asset_id.setter
     def scene_asset_id(self, scene_asset_id):
-        """Sets the scene_asset_id of this ShowVideoScriptResponse.
+        r"""Sets the scene_asset_id of this ShowVideoScriptResponse.
 
         **参数解释**： 场景资产ID。 **约束限制**： 分身数字人视频制作不需要填写该参数。 **取值范围**： 字符长度0-64位 **默认取值**： 不涉及
 
@@ -338,7 +338,7 @@ class ShowVideoScriptResponse(SdkResponse):
 
     @property
     def priv_data(self):
-        """Gets the priv_data of this ShowVideoScriptResponse.
+        r"""Gets the priv_data of this ShowVideoScriptResponse.
 
         **参数解释**： 私有数据，用户填写，原样带回。 **约束限制**： 不涉及 **取值范围**： 字符长度0-8192位 **默认取值**： 不涉及
 
@@ -349,7 +349,7 @@ class ShowVideoScriptResponse(SdkResponse):
 
     @priv_data.setter
     def priv_data(self, priv_data):
-        """Sets the priv_data of this ShowVideoScriptResponse.
+        r"""Sets the priv_data of this ShowVideoScriptResponse.
 
         **参数解释**： 私有数据，用户填写，原样带回。 **约束限制**： 不涉及 **取值范围**： 字符长度0-8192位 **默认取值**： 不涉及
 
@@ -360,7 +360,7 @@ class ShowVideoScriptResponse(SdkResponse):
 
     @property
     def background_music_config(self):
-        """Gets the background_music_config of this ShowVideoScriptResponse.
+        r"""Gets the background_music_config of this ShowVideoScriptResponse.
 
         :return: The background_music_config of this ShowVideoScriptResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.BackgroundMusicConfig`
@@ -369,7 +369,7 @@ class ShowVideoScriptResponse(SdkResponse):
 
     @background_music_config.setter
     def background_music_config(self, background_music_config):
-        """Sets the background_music_config of this ShowVideoScriptResponse.
+        r"""Sets the background_music_config of this ShowVideoScriptResponse.
 
         :param background_music_config: The background_music_config of this ShowVideoScriptResponse.
         :type background_music_config: :class:`huaweicloudsdkmetastudio.v1.BackgroundMusicConfig`
@@ -378,7 +378,7 @@ class ShowVideoScriptResponse(SdkResponse):
 
     @property
     def review_config(self):
-        """Gets the review_config of this ShowVideoScriptResponse.
+        r"""Gets the review_config of this ShowVideoScriptResponse.
 
         :return: The review_config of this ShowVideoScriptResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
@@ -387,7 +387,7 @@ class ShowVideoScriptResponse(SdkResponse):
 
     @review_config.setter
     def review_config(self, review_config):
-        """Sets the review_config of this ShowVideoScriptResponse.
+        r"""Sets the review_config of this ShowVideoScriptResponse.
 
         :param review_config: The review_config of this ShowVideoScriptResponse.
         :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
@@ -396,7 +396,7 @@ class ShowVideoScriptResponse(SdkResponse):
 
     @property
     def audio_files(self):
-        """Gets the audio_files of this ShowVideoScriptResponse.
+        r"""Gets the audio_files of this ShowVideoScriptResponse.
 
         :return: The audio_files of this ShowVideoScriptResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ShootScriptAudioFiles`
@@ -405,7 +405,7 @@ class ShowVideoScriptResponse(SdkResponse):
 
     @audio_files.setter
     def audio_files(self, audio_files):
-        """Sets the audio_files of this ShowVideoScriptResponse.
+        r"""Sets the audio_files of this ShowVideoScriptResponse.
 
         :param audio_files: The audio_files of this ShowVideoScriptResponse.
         :type audio_files: :class:`huaweicloudsdkmetastudio.v1.ShootScriptAudioFiles`
@@ -414,7 +414,7 @@ class ShowVideoScriptResponse(SdkResponse):
 
     @property
     def action_config(self):
-        """Gets the action_config of this ShowVideoScriptResponse.
+        r"""Gets the action_config of this ShowVideoScriptResponse.
 
         :return: The action_config of this ShowVideoScriptResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ActionConfig`
@@ -423,7 +423,7 @@ class ShowVideoScriptResponse(SdkResponse):
 
     @action_config.setter
     def action_config(self, action_config):
-        """Sets the action_config of this ShowVideoScriptResponse.
+        r"""Sets the action_config of this ShowVideoScriptResponse.
 
         :param action_config: The action_config of this ShowVideoScriptResponse.
         :type action_config: :class:`huaweicloudsdkmetastudio.v1.ActionConfig`
@@ -432,7 +432,7 @@ class ShowVideoScriptResponse(SdkResponse):
 
     @property
     def shoot_scripts(self):
-        """Gets the shoot_scripts of this ShowVideoScriptResponse.
+        r"""Gets the shoot_scripts of this ShowVideoScriptResponse.
 
         拍摄脚本列表。
 
@@ -443,7 +443,7 @@ class ShowVideoScriptResponse(SdkResponse):
 
     @shoot_scripts.setter
     def shoot_scripts(self, shoot_scripts):
-        """Sets the shoot_scripts of this ShowVideoScriptResponse.
+        r"""Sets the shoot_scripts of this ShowVideoScriptResponse.
 
         拍摄脚本列表。
 
@@ -454,7 +454,7 @@ class ShowVideoScriptResponse(SdkResponse):
 
     @property
     def script_id(self):
-        """Gets the script_id of this ShowVideoScriptResponse.
+        r"""Gets the script_id of this ShowVideoScriptResponse.
 
         剧本ID。
 
@@ -465,7 +465,7 @@ class ShowVideoScriptResponse(SdkResponse):
 
     @script_id.setter
     def script_id(self, script_id):
-        """Sets the script_id of this ShowVideoScriptResponse.
+        r"""Sets the script_id of this ShowVideoScriptResponse.
 
         剧本ID。
 
@@ -476,7 +476,7 @@ class ShowVideoScriptResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowVideoScriptResponse.
+        r"""Gets the create_time of this ShowVideoScriptResponse.
 
         创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -487,7 +487,7 @@ class ShowVideoScriptResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowVideoScriptResponse.
+        r"""Sets the create_time of this ShowVideoScriptResponse.
 
         创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -498,7 +498,7 @@ class ShowVideoScriptResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowVideoScriptResponse.
+        r"""Gets the update_time of this ShowVideoScriptResponse.
 
         更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -509,7 +509,7 @@ class ShowVideoScriptResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowVideoScriptResponse.
+        r"""Sets the update_time of this ShowVideoScriptResponse.
 
         更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -520,7 +520,7 @@ class ShowVideoScriptResponse(SdkResponse):
 
     @property
     def script_cover_url(self):
-        """Gets the script_cover_url of this ShowVideoScriptResponse.
+        r"""Gets the script_cover_url of this ShowVideoScriptResponse.
 
         剧本封面下载url。
 
@@ -531,7 +531,7 @@ class ShowVideoScriptResponse(SdkResponse):
 
     @script_cover_url.setter
     def script_cover_url(self, script_cover_url):
-        """Sets the script_cover_url of this ShowVideoScriptResponse.
+        r"""Sets the script_cover_url of this ShowVideoScriptResponse.
 
         剧本封面下载url。
 
@@ -542,7 +542,7 @@ class ShowVideoScriptResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowVideoScriptResponse.
+        r"""Gets the x_request_id of this ShowVideoScriptResponse.
 
         :return: The x_request_id of this ShowVideoScriptResponse.
         :rtype: str
@@ -551,7 +551,7 @@ class ShowVideoScriptResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowVideoScriptResponse.
+        r"""Sets the x_request_id of this ShowVideoScriptResponse.
 
         :param x_request_id: The x_request_id of this ShowVideoScriptResponse.
         :type x_request_id: str

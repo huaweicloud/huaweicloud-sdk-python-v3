@@ -26,7 +26,7 @@ class DeleteAlarmRulesResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DeleteAlarmRulesResponse
+        r"""DeleteAlarmRulesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteAlarmRulesResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this DeleteAlarmRulesResponse.
+        r"""Gets the body of this DeleteAlarmRulesResponse.
 
         :return: The body of this DeleteAlarmRulesResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteAlarmRulesResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteAlarmRulesResponse.
+        r"""Sets the body of this DeleteAlarmRulesResponse.
 
         :param body: The body of this DeleteAlarmRulesResponse.
         :type body: str

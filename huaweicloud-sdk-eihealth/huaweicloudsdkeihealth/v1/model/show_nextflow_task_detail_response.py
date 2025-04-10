@@ -52,7 +52,7 @@ class ShowNextflowTaskDetailResponse(SdkResponse):
     }
 
     def __init__(self, id=None, command=None, status=None, error_action=None, exit=None, work_dir=None, environment=None, module=None, container=None, attempt=None, scratch=None, execution_time=None, resource_requested=None, resource_usage=None):
-        """ShowNextflowTaskDetailResponse
+        r"""ShowNextflowTaskDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -135,7 +135,7 @@ class ShowNextflowTaskDetailResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowNextflowTaskDetailResponse.
+        r"""Gets the id of this ShowNextflowTaskDetailResponse.
 
         task id
 
@@ -146,7 +146,7 @@ class ShowNextflowTaskDetailResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowNextflowTaskDetailResponse.
+        r"""Sets the id of this ShowNextflowTaskDetailResponse.
 
         task id
 
@@ -157,7 +157,7 @@ class ShowNextflowTaskDetailResponse(SdkResponse):
 
     @property
     def command(self):
-        """Gets the command of this ShowNextflowTaskDetailResponse.
+        r"""Gets the command of this ShowNextflowTaskDetailResponse.
 
         task执行命令
 
@@ -168,7 +168,7 @@ class ShowNextflowTaskDetailResponse(SdkResponse):
 
     @command.setter
     def command(self, command):
-        """Sets the command of this ShowNextflowTaskDetailResponse.
+        r"""Sets the command of this ShowNextflowTaskDetailResponse.
 
         task执行命令
 
@@ -179,7 +179,7 @@ class ShowNextflowTaskDetailResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowNextflowTaskDetailResponse.
+        r"""Gets the status of this ShowNextflowTaskDetailResponse.
 
         task状态
 
@@ -190,7 +190,7 @@ class ShowNextflowTaskDetailResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowNextflowTaskDetailResponse.
+        r"""Sets the status of this ShowNextflowTaskDetailResponse.
 
         task状态
 
@@ -201,7 +201,7 @@ class ShowNextflowTaskDetailResponse(SdkResponse):
 
     @property
     def error_action(self):
-        """Gets the error_action of this ShowNextflowTaskDetailResponse.
+        r"""Gets the error_action of this ShowNextflowTaskDetailResponse.
 
         task失败后的策略
 
@@ -212,7 +212,7 @@ class ShowNextflowTaskDetailResponse(SdkResponse):
 
     @error_action.setter
     def error_action(self, error_action):
-        """Sets the error_action of this ShowNextflowTaskDetailResponse.
+        r"""Sets the error_action of this ShowNextflowTaskDetailResponse.
 
         task失败后的策略
 
@@ -223,7 +223,7 @@ class ShowNextflowTaskDetailResponse(SdkResponse):
 
     @property
     def exit(self):
-        """Gets the exit of this ShowNextflowTaskDetailResponse.
+        r"""Gets the exit of this ShowNextflowTaskDetailResponse.
 
         task退出状态码
 
@@ -234,7 +234,7 @@ class ShowNextflowTaskDetailResponse(SdkResponse):
 
     @exit.setter
     def exit(self, exit):
-        """Sets the exit of this ShowNextflowTaskDetailResponse.
+        r"""Sets the exit of this ShowNextflowTaskDetailResponse.
 
         task退出状态码
 
@@ -245,7 +245,7 @@ class ShowNextflowTaskDetailResponse(SdkResponse):
 
     @property
     def work_dir(self):
-        """Gets the work_dir of this ShowNextflowTaskDetailResponse.
+        r"""Gets the work_dir of this ShowNextflowTaskDetailResponse.
 
         task执行路径
 
@@ -256,7 +256,7 @@ class ShowNextflowTaskDetailResponse(SdkResponse):
 
     @work_dir.setter
     def work_dir(self, work_dir):
-        """Sets the work_dir of this ShowNextflowTaskDetailResponse.
+        r"""Sets the work_dir of this ShowNextflowTaskDetailResponse.
 
         task执行路径
 
@@ -267,7 +267,7 @@ class ShowNextflowTaskDetailResponse(SdkResponse):
 
     @property
     def environment(self):
-        """Gets the environment of this ShowNextflowTaskDetailResponse.
+        r"""Gets the environment of this ShowNextflowTaskDetailResponse.
 
         task执行的环境变量值
 
@@ -278,7 +278,7 @@ class ShowNextflowTaskDetailResponse(SdkResponse):
 
     @environment.setter
     def environment(self, environment):
-        """Sets the environment of this ShowNextflowTaskDetailResponse.
+        r"""Sets the environment of this ShowNextflowTaskDetailResponse.
 
         task执行的环境变量值
 
@@ -289,7 +289,7 @@ class ShowNextflowTaskDetailResponse(SdkResponse):
 
     @property
     def module(self):
-        """Gets the module of this ShowNextflowTaskDetailResponse.
+        r"""Gets the module of this ShowNextflowTaskDetailResponse.
 
         子任务运行环境列表
 
@@ -300,7 +300,7 @@ class ShowNextflowTaskDetailResponse(SdkResponse):
 
     @module.setter
     def module(self, module):
-        """Sets the module of this ShowNextflowTaskDetailResponse.
+        r"""Sets the module of this ShowNextflowTaskDetailResponse.
 
         子任务运行环境列表
 
@@ -311,7 +311,7 @@ class ShowNextflowTaskDetailResponse(SdkResponse):
 
     @property
     def container(self):
-        """Gets the container of this ShowNextflowTaskDetailResponse.
+        r"""Gets the container of this ShowNextflowTaskDetailResponse.
 
         容器名称
 
@@ -322,7 +322,7 @@ class ShowNextflowTaskDetailResponse(SdkResponse):
 
     @container.setter
     def container(self, container):
-        """Sets the container of this ShowNextflowTaskDetailResponse.
+        r"""Sets the container of this ShowNextflowTaskDetailResponse.
 
         容器名称
 
@@ -333,7 +333,7 @@ class ShowNextflowTaskDetailResponse(SdkResponse):
 
     @property
     def attempt(self):
-        """Gets the attempt of this ShowNextflowTaskDetailResponse.
+        r"""Gets the attempt of this ShowNextflowTaskDetailResponse.
 
         执行次数
 
@@ -344,7 +344,7 @@ class ShowNextflowTaskDetailResponse(SdkResponse):
 
     @attempt.setter
     def attempt(self, attempt):
-        """Sets the attempt of this ShowNextflowTaskDetailResponse.
+        r"""Sets the attempt of this ShowNextflowTaskDetailResponse.
 
         执行次数
 
@@ -355,7 +355,7 @@ class ShowNextflowTaskDetailResponse(SdkResponse):
 
     @property
     def scratch(self):
-        """Gets the scratch of this ShowNextflowTaskDetailResponse.
+        r"""Gets the scratch of this ShowNextflowTaskDetailResponse.
 
         临时工作目录
 
@@ -366,7 +366,7 @@ class ShowNextflowTaskDetailResponse(SdkResponse):
 
     @scratch.setter
     def scratch(self, scratch):
-        """Sets the scratch of this ShowNextflowTaskDetailResponse.
+        r"""Sets the scratch of this ShowNextflowTaskDetailResponse.
 
         临时工作目录
 
@@ -377,7 +377,7 @@ class ShowNextflowTaskDetailResponse(SdkResponse):
 
     @property
     def execution_time(self):
-        """Gets the execution_time of this ShowNextflowTaskDetailResponse.
+        r"""Gets the execution_time of this ShowNextflowTaskDetailResponse.
 
         :return: The execution_time of this ShowNextflowTaskDetailResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.NextflowTaskExecutionTime`
@@ -386,7 +386,7 @@ class ShowNextflowTaskDetailResponse(SdkResponse):
 
     @execution_time.setter
     def execution_time(self, execution_time):
-        """Sets the execution_time of this ShowNextflowTaskDetailResponse.
+        r"""Sets the execution_time of this ShowNextflowTaskDetailResponse.
 
         :param execution_time: The execution_time of this ShowNextflowTaskDetailResponse.
         :type execution_time: :class:`huaweicloudsdkeihealth.v1.NextflowTaskExecutionTime`
@@ -395,7 +395,7 @@ class ShowNextflowTaskDetailResponse(SdkResponse):
 
     @property
     def resource_requested(self):
-        """Gets the resource_requested of this ShowNextflowTaskDetailResponse.
+        r"""Gets the resource_requested of this ShowNextflowTaskDetailResponse.
 
         :return: The resource_requested of this ShowNextflowTaskDetailResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.NextflowTaskResourceRequested`
@@ -404,7 +404,7 @@ class ShowNextflowTaskDetailResponse(SdkResponse):
 
     @resource_requested.setter
     def resource_requested(self, resource_requested):
-        """Sets the resource_requested of this ShowNextflowTaskDetailResponse.
+        r"""Sets the resource_requested of this ShowNextflowTaskDetailResponse.
 
         :param resource_requested: The resource_requested of this ShowNextflowTaskDetailResponse.
         :type resource_requested: :class:`huaweicloudsdkeihealth.v1.NextflowTaskResourceRequested`
@@ -413,7 +413,7 @@ class ShowNextflowTaskDetailResponse(SdkResponse):
 
     @property
     def resource_usage(self):
-        """Gets the resource_usage of this ShowNextflowTaskDetailResponse.
+        r"""Gets the resource_usage of this ShowNextflowTaskDetailResponse.
 
         :return: The resource_usage of this ShowNextflowTaskDetailResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.NextflowTaskResourceUsage`
@@ -422,7 +422,7 @@ class ShowNextflowTaskDetailResponse(SdkResponse):
 
     @resource_usage.setter
     def resource_usage(self, resource_usage):
-        """Sets the resource_usage of this ShowNextflowTaskDetailResponse.
+        r"""Sets the resource_usage of this ShowNextflowTaskDetailResponse.
 
         :param resource_usage: The resource_usage of this ShowNextflowTaskDetailResponse.
         :type resource_usage: :class:`huaweicloudsdkeihealth.v1.NextflowTaskResourceUsage`

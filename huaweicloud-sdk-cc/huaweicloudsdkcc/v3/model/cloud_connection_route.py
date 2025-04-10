@@ -39,7 +39,7 @@ class CloudConnectionRoute:
     }
 
     def __init__(self, id=None, cloud_connection_id=None, domain_id=None, instance_id=None, project_id=None, region_id=None, type=None, destination=None):
-        """CloudConnectionRoute
+        r"""CloudConnectionRoute
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class CloudConnectionRoute:
 
     @property
     def id(self):
-        """Gets the id of this CloudConnectionRoute.
+        r"""Gets the id of this CloudConnectionRoute.
 
         实例ID。
 
@@ -97,7 +97,7 @@ class CloudConnectionRoute:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CloudConnectionRoute.
+        r"""Sets the id of this CloudConnectionRoute.
 
         实例ID。
 
@@ -108,7 +108,7 @@ class CloudConnectionRoute:
 
     @property
     def cloud_connection_id(self):
-        """Gets the cloud_connection_id of this CloudConnectionRoute.
+        r"""Gets the cloud_connection_id of this CloudConnectionRoute.
 
         云连接实例ID。
 
@@ -119,7 +119,7 @@ class CloudConnectionRoute:
 
     @cloud_connection_id.setter
     def cloud_connection_id(self, cloud_connection_id):
-        """Sets the cloud_connection_id of this CloudConnectionRoute.
+        r"""Sets the cloud_connection_id of this CloudConnectionRoute.
 
         云连接实例ID。
 
@@ -130,7 +130,7 @@ class CloudConnectionRoute:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this CloudConnectionRoute.
+        r"""Gets the domain_id of this CloudConnectionRoute.
 
         实例所属账号ID。
 
@@ -141,7 +141,7 @@ class CloudConnectionRoute:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this CloudConnectionRoute.
+        r"""Sets the domain_id of this CloudConnectionRoute.
 
         实例所属账号ID。
 
@@ -152,7 +152,7 @@ class CloudConnectionRoute:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CloudConnectionRoute.
+        r"""Gets the instance_id of this CloudConnectionRoute.
 
         网络实例（VPC，VGW）的ID。
 
@@ -163,7 +163,7 @@ class CloudConnectionRoute:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CloudConnectionRoute.
+        r"""Sets the instance_id of this CloudConnectionRoute.
 
         网络实例（VPC，VGW）的ID。
 
@@ -174,7 +174,7 @@ class CloudConnectionRoute:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CloudConnectionRoute.
+        r"""Gets the project_id of this CloudConnectionRoute.
 
         实例所属项目ID。
 
@@ -185,7 +185,7 @@ class CloudConnectionRoute:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CloudConnectionRoute.
+        r"""Sets the project_id of this CloudConnectionRoute.
 
         实例所属项目ID。
 
@@ -196,7 +196,7 @@ class CloudConnectionRoute:
 
     @property
     def region_id(self):
-        """Gets the region_id of this CloudConnectionRoute.
+        r"""Gets the region_id of this CloudConnectionRoute.
 
         RegionID。
 
@@ -207,7 +207,7 @@ class CloudConnectionRoute:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this CloudConnectionRoute.
+        r"""Sets the region_id of this CloudConnectionRoute.
 
         RegionID。
 
@@ -218,7 +218,7 @@ class CloudConnectionRoute:
 
     @property
     def type(self):
-        """Gets the type of this CloudConnectionRoute.
+        r"""Gets the type of this CloudConnectionRoute.
 
         路由条目下一跳指向的网络实例的类型。 - VPC：虚拟私有云。 - VGW：虚拟网关。
 
@@ -229,7 +229,7 @@ class CloudConnectionRoute:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CloudConnectionRoute.
+        r"""Sets the type of this CloudConnectionRoute.
 
         路由条目下一跳指向的网络实例的类型。 - VPC：虚拟私有云。 - VGW：虚拟网关。
 
@@ -240,7 +240,7 @@ class CloudConnectionRoute:
 
     @property
     def destination(self):
-        """Gets the destination of this CloudConnectionRoute.
+        r"""Gets the destination of this CloudConnectionRoute.
 
         目的地址。
 
@@ -251,7 +251,7 @@ class CloudConnectionRoute:
 
     @destination.setter
     def destination(self, destination):
-        """Sets the destination of this CloudConnectionRoute.
+        r"""Sets the destination of this CloudConnectionRoute.
 
         目的地址。
 

@@ -25,7 +25,7 @@ class CreateQueueRequest:
     }
 
     def __init__(self, body=None):
-        """CreateQueueRequest
+        r"""CreateQueueRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateQueueRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateQueueRequest.
+        r"""Gets the body of this CreateQueueRequest.
 
         :return: The body of this CreateQueueRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.CreateQueueRequestBody`
@@ -52,7 +52,7 @@ class CreateQueueRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateQueueRequest.
+        r"""Sets the body of this CreateQueueRequest.
 
         :param body: The body of this CreateQueueRequest.
         :type body: :class:`huaweicloudsdkdli.v1.CreateQueueRequestBody`

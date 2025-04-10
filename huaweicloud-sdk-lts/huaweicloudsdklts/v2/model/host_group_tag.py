@@ -27,7 +27,7 @@ class HostGroupTag:
     }
 
     def __init__(self, key=None, value=None):
-        """HostGroupTag
+        r"""HostGroupTag
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class HostGroupTag:
 
     @property
     def key(self):
-        """Gets the key of this HostGroupTag.
+        r"""Gets the key of this HostGroupTag.
 
         标签Key
 
@@ -61,7 +61,7 @@ class HostGroupTag:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this HostGroupTag.
+        r"""Sets the key of this HostGroupTag.
 
         标签Key
 
@@ -72,7 +72,7 @@ class HostGroupTag:
 
     @property
     def value(self):
-        """Gets the value of this HostGroupTag.
+        r"""Gets the value of this HostGroupTag.
 
         标签Value
 
@@ -83,7 +83,7 @@ class HostGroupTag:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this HostGroupTag.
+        r"""Sets the value of this HostGroupTag.
 
         标签Value
 

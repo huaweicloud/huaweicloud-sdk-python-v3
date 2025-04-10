@@ -27,7 +27,7 @@ class TrustedServiceDto:
     }
 
     def __init__(self, service_principal=None, enabled_at=None):
-        """TrustedServiceDto
+        r"""TrustedServiceDto
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class TrustedServiceDto:
 
     @property
     def service_principal(self):
-        """Gets the service_principal of this TrustedServiceDto.
+        r"""Gets the service_principal of this TrustedServiceDto.
 
         可信服务的名称。
 
@@ -59,7 +59,7 @@ class TrustedServiceDto:
 
     @service_principal.setter
     def service_principal(self, service_principal):
-        """Sets the service_principal of this TrustedServiceDto.
+        r"""Sets the service_principal of this TrustedServiceDto.
 
         可信服务的名称。
 
@@ -70,7 +70,7 @@ class TrustedServiceDto:
 
     @property
     def enabled_at(self):
-        """Gets the enabled_at of this TrustedServiceDto.
+        r"""Gets the enabled_at of this TrustedServiceDto.
 
         可信服务与组织集成的日期。
 
@@ -81,7 +81,7 @@ class TrustedServiceDto:
 
     @enabled_at.setter
     def enabled_at(self, enabled_at):
-        """Sets the enabled_at of this TrustedServiceDto.
+        r"""Sets the enabled_at of this TrustedServiceDto.
 
         可信服务与组织集成的日期。
 

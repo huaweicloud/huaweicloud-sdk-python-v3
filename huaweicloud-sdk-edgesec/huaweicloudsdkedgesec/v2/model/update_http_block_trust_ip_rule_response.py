@@ -46,7 +46,7 @@ class UpdateHttpBlockTrustIpRuleResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, policy_id=None, policy_name=None, timestamp=None, description=None, status=None, addr=None, white=None, followed_action_id=None, ip_group=None):
-        """UpdateHttpBlockTrustIpRuleResponse
+        r"""UpdateHttpBlockTrustIpRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class UpdateHttpBlockTrustIpRuleResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateHttpBlockTrustIpRuleResponse.
+        r"""Gets the id of this UpdateHttpBlockTrustIpRuleResponse.
 
         规则id
 
@@ -125,7 +125,7 @@ class UpdateHttpBlockTrustIpRuleResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateHttpBlockTrustIpRuleResponse.
+        r"""Sets the id of this UpdateHttpBlockTrustIpRuleResponse.
 
         规则id
 
@@ -136,7 +136,7 @@ class UpdateHttpBlockTrustIpRuleResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateHttpBlockTrustIpRuleResponse.
+        r"""Gets the name of this UpdateHttpBlockTrustIpRuleResponse.
 
         规则名称
 
@@ -147,7 +147,7 @@ class UpdateHttpBlockTrustIpRuleResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateHttpBlockTrustIpRuleResponse.
+        r"""Sets the name of this UpdateHttpBlockTrustIpRuleResponse.
 
         规则名称
 
@@ -158,7 +158,7 @@ class UpdateHttpBlockTrustIpRuleResponse(SdkResponse):
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this UpdateHttpBlockTrustIpRuleResponse.
+        r"""Gets the policy_id of this UpdateHttpBlockTrustIpRuleResponse.
 
         规则所在策略id
 
@@ -169,7 +169,7 @@ class UpdateHttpBlockTrustIpRuleResponse(SdkResponse):
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this UpdateHttpBlockTrustIpRuleResponse.
+        r"""Sets the policy_id of this UpdateHttpBlockTrustIpRuleResponse.
 
         规则所在策略id
 
@@ -180,7 +180,7 @@ class UpdateHttpBlockTrustIpRuleResponse(SdkResponse):
 
     @property
     def policy_name(self):
-        """Gets the policy_name of this UpdateHttpBlockTrustIpRuleResponse.
+        r"""Gets the policy_name of this UpdateHttpBlockTrustIpRuleResponse.
 
         规则所在策略名称
 
@@ -191,7 +191,7 @@ class UpdateHttpBlockTrustIpRuleResponse(SdkResponse):
 
     @policy_name.setter
     def policy_name(self, policy_name):
-        """Sets the policy_name of this UpdateHttpBlockTrustIpRuleResponse.
+        r"""Sets the policy_name of this UpdateHttpBlockTrustIpRuleResponse.
 
         规则所在策略名称
 
@@ -202,7 +202,7 @@ class UpdateHttpBlockTrustIpRuleResponse(SdkResponse):
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this UpdateHttpBlockTrustIpRuleResponse.
+        r"""Gets the timestamp of this UpdateHttpBlockTrustIpRuleResponse.
 
         创建规则时间戳
 
@@ -213,7 +213,7 @@ class UpdateHttpBlockTrustIpRuleResponse(SdkResponse):
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this UpdateHttpBlockTrustIpRuleResponse.
+        r"""Sets the timestamp of this UpdateHttpBlockTrustIpRuleResponse.
 
         创建规则时间戳
 
@@ -224,7 +224,7 @@ class UpdateHttpBlockTrustIpRuleResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdateHttpBlockTrustIpRuleResponse.
+        r"""Gets the description of this UpdateHttpBlockTrustIpRuleResponse.
 
         规则描述
 
@@ -235,7 +235,7 @@ class UpdateHttpBlockTrustIpRuleResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateHttpBlockTrustIpRuleResponse.
+        r"""Sets the description of this UpdateHttpBlockTrustIpRuleResponse.
 
         规则描述
 
@@ -246,7 +246,7 @@ class UpdateHttpBlockTrustIpRuleResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateHttpBlockTrustIpRuleResponse.
+        r"""Gets the status of this UpdateHttpBlockTrustIpRuleResponse.
 
         规则开关： - 0：关闭 - 1：开启 
 
@@ -257,7 +257,7 @@ class UpdateHttpBlockTrustIpRuleResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateHttpBlockTrustIpRuleResponse.
+        r"""Sets the status of this UpdateHttpBlockTrustIpRuleResponse.
 
         规则开关： - 0：关闭 - 1：开启 
 
@@ -268,7 +268,7 @@ class UpdateHttpBlockTrustIpRuleResponse(SdkResponse):
 
     @property
     def addr(self):
-        """Gets the addr of this UpdateHttpBlockTrustIpRuleResponse.
+        r"""Gets the addr of this UpdateHttpBlockTrustIpRuleResponse.
 
         ip地址/地址段
 
@@ -279,7 +279,7 @@ class UpdateHttpBlockTrustIpRuleResponse(SdkResponse):
 
     @addr.setter
     def addr(self, addr):
-        """Sets the addr of this UpdateHttpBlockTrustIpRuleResponse.
+        r"""Sets the addr of this UpdateHttpBlockTrustIpRuleResponse.
 
         ip地址/地址段
 
@@ -290,7 +290,7 @@ class UpdateHttpBlockTrustIpRuleResponse(SdkResponse):
 
     @property
     def white(self):
-        """Gets the white of this UpdateHttpBlockTrustIpRuleResponse.
+        r"""Gets the white of this UpdateHttpBlockTrustIpRuleResponse.
 
         - 0：拦截 - 1：放行 - 2：仅记录 
 
@@ -301,7 +301,7 @@ class UpdateHttpBlockTrustIpRuleResponse(SdkResponse):
 
     @white.setter
     def white(self, white):
-        """Sets the white of this UpdateHttpBlockTrustIpRuleResponse.
+        r"""Sets the white of this UpdateHttpBlockTrustIpRuleResponse.
 
         - 0：拦截 - 1：放行 - 2：仅记录 
 
@@ -312,7 +312,7 @@ class UpdateHttpBlockTrustIpRuleResponse(SdkResponse):
 
     @property
     def followed_action_id(self):
-        """Gets the followed_action_id of this UpdateHttpBlockTrustIpRuleResponse.
+        r"""Gets the followed_action_id of this UpdateHttpBlockTrustIpRuleResponse.
 
         攻击惩罚规则id
 
@@ -323,7 +323,7 @@ class UpdateHttpBlockTrustIpRuleResponse(SdkResponse):
 
     @followed_action_id.setter
     def followed_action_id(self, followed_action_id):
-        """Sets the followed_action_id of this UpdateHttpBlockTrustIpRuleResponse.
+        r"""Sets the followed_action_id of this UpdateHttpBlockTrustIpRuleResponse.
 
         攻击惩罚规则id
 
@@ -334,7 +334,7 @@ class UpdateHttpBlockTrustIpRuleResponse(SdkResponse):
 
     @property
     def ip_group(self):
-        """Gets the ip_group of this UpdateHttpBlockTrustIpRuleResponse.
+        r"""Gets the ip_group of this UpdateHttpBlockTrustIpRuleResponse.
 
         :return: The ip_group of this UpdateHttpBlockTrustIpRuleResponse.
         :rtype: :class:`huaweicloudsdkedgesec.v2.HttpIpGroup`
@@ -343,7 +343,7 @@ class UpdateHttpBlockTrustIpRuleResponse(SdkResponse):
 
     @ip_group.setter
     def ip_group(self, ip_group):
-        """Sets the ip_group of this UpdateHttpBlockTrustIpRuleResponse.
+        r"""Sets the ip_group of this UpdateHttpBlockTrustIpRuleResponse.
 
         :param ip_group: The ip_group of this UpdateHttpBlockTrustIpRuleResponse.
         :type ip_group: :class:`huaweicloudsdkedgesec.v2.HttpIpGroup`

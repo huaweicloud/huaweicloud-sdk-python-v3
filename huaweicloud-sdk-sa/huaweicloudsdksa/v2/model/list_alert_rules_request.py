@@ -45,7 +45,7 @@ class ListAlertRulesRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, offset=None, limit=None, sort_key=None, sort_dir=None, pipe_id=None, rule_name=None, rule_id=None, status=None, severity=None):
-        """ListAlertRulesRequest
+        r"""ListAlertRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -109,7 +109,7 @@ class ListAlertRulesRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListAlertRulesRequest.
+        r"""Gets the project_id of this ListAlertRulesRequest.
 
         project_id
 
@@ -120,7 +120,7 @@ class ListAlertRulesRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListAlertRulesRequest.
+        r"""Sets the project_id of this ListAlertRulesRequest.
 
         project_id
 
@@ -131,7 +131,7 @@ class ListAlertRulesRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ListAlertRulesRequest.
+        r"""Gets the workspace_id of this ListAlertRulesRequest.
 
         workspace_id
 
@@ -142,7 +142,7 @@ class ListAlertRulesRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ListAlertRulesRequest.
+        r"""Sets the workspace_id of this ListAlertRulesRequest.
 
         workspace_id
 
@@ -153,7 +153,7 @@ class ListAlertRulesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAlertRulesRequest.
+        r"""Gets the offset of this ListAlertRulesRequest.
 
         offset
 
@@ -164,7 +164,7 @@ class ListAlertRulesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAlertRulesRequest.
+        r"""Sets the offset of this ListAlertRulesRequest.
 
         offset
 
@@ -175,7 +175,7 @@ class ListAlertRulesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAlertRulesRequest.
+        r"""Gets the limit of this ListAlertRulesRequest.
 
         limit
 
@@ -186,7 +186,7 @@ class ListAlertRulesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAlertRulesRequest.
+        r"""Sets the limit of this ListAlertRulesRequest.
 
         limit
 
@@ -197,7 +197,7 @@ class ListAlertRulesRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListAlertRulesRequest.
+        r"""Gets the sort_key of this ListAlertRulesRequest.
 
         sort_key
 
@@ -208,7 +208,7 @@ class ListAlertRulesRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListAlertRulesRequest.
+        r"""Sets the sort_key of this ListAlertRulesRequest.
 
         sort_key
 
@@ -219,7 +219,7 @@ class ListAlertRulesRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListAlertRulesRequest.
+        r"""Gets the sort_dir of this ListAlertRulesRequest.
 
         sort_dir. asc, desc
 
@@ -230,7 +230,7 @@ class ListAlertRulesRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListAlertRulesRequest.
+        r"""Sets the sort_dir of this ListAlertRulesRequest.
 
         sort_dir. asc, desc
 
@@ -241,7 +241,7 @@ class ListAlertRulesRequest:
 
     @property
     def pipe_id(self):
-        """Gets the pipe_id of this ListAlertRulesRequest.
+        r"""Gets the pipe_id of this ListAlertRulesRequest.
 
         pipe_id
 
@@ -252,7 +252,7 @@ class ListAlertRulesRequest:
 
     @pipe_id.setter
     def pipe_id(self, pipe_id):
-        """Sets the pipe_id of this ListAlertRulesRequest.
+        r"""Sets the pipe_id of this ListAlertRulesRequest.
 
         pipe_id
 
@@ -263,7 +263,7 @@ class ListAlertRulesRequest:
 
     @property
     def rule_name(self):
-        """Gets the rule_name of this ListAlertRulesRequest.
+        r"""Gets the rule_name of this ListAlertRulesRequest.
 
         rule_name
 
@@ -274,7 +274,7 @@ class ListAlertRulesRequest:
 
     @rule_name.setter
     def rule_name(self, rule_name):
-        """Sets the rule_name of this ListAlertRulesRequest.
+        r"""Sets the rule_name of this ListAlertRulesRequest.
 
         rule_name
 
@@ -285,7 +285,7 @@ class ListAlertRulesRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this ListAlertRulesRequest.
+        r"""Gets the rule_id of this ListAlertRulesRequest.
 
         rule_id
 
@@ -296,7 +296,7 @@ class ListAlertRulesRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this ListAlertRulesRequest.
+        r"""Sets the rule_id of this ListAlertRulesRequest.
 
         rule_id
 
@@ -307,7 +307,7 @@ class ListAlertRulesRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListAlertRulesRequest.
+        r"""Gets the status of this ListAlertRulesRequest.
 
         status. ENABLED, DISABLED
 
@@ -318,7 +318,7 @@ class ListAlertRulesRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListAlertRulesRequest.
+        r"""Sets the status of this ListAlertRulesRequest.
 
         status. ENABLED, DISABLED
 
@@ -329,7 +329,7 @@ class ListAlertRulesRequest:
 
     @property
     def severity(self):
-        """Gets the severity of this ListAlertRulesRequest.
+        r"""Gets the severity of this ListAlertRulesRequest.
 
         severity. TIPS, LOW, MEDIUM, HIGH, FATAL
 
@@ -340,7 +340,7 @@ class ListAlertRulesRequest:
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this ListAlertRulesRequest.
+        r"""Sets the severity of this ListAlertRulesRequest.
 
         severity. TIPS, LOW, MEDIUM, HIGH, FATAL
 

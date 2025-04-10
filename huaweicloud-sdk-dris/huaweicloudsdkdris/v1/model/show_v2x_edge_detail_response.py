@@ -62,7 +62,7 @@ class ShowV2xEdgeDetailResponse(SdkResponse):
     }
 
     def __init__(self, v2x_edge_id=None, name=None, description=None, esn=None, ip=None, port=None, hardware_type=None, position_description=None, location=None, cameras=None, radars=None, local_rsus=None, edge_general_config=None, edge_advance_config=None, status=None, channel_status=None, node_id=None, created_time=None, last_modified_time=None):
-        """ShowV2xEdgeDetailResponse
+        r"""ShowV2xEdgeDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -170,7 +170,7 @@ class ShowV2xEdgeDetailResponse(SdkResponse):
 
     @property
     def v2x_edge_id(self):
-        """Gets the v2x_edge_id of this ShowV2xEdgeDetailResponse.
+        r"""Gets the v2x_edge_id of this ShowV2xEdgeDetailResponse.
 
         **参数说明**：Edge ID，用于唯一标识一个Edge。
 
@@ -181,7 +181,7 @@ class ShowV2xEdgeDetailResponse(SdkResponse):
 
     @v2x_edge_id.setter
     def v2x_edge_id(self, v2x_edge_id):
-        """Sets the v2x_edge_id of this ShowV2xEdgeDetailResponse.
+        r"""Sets the v2x_edge_id of this ShowV2xEdgeDetailResponse.
 
         **参数说明**：Edge ID，用于唯一标识一个Edge。
 
@@ -192,7 +192,7 @@ class ShowV2xEdgeDetailResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowV2xEdgeDetailResponse.
+        r"""Gets the name of this ShowV2xEdgeDetailResponse.
 
         **参数说明**：名称。  **取值范围**：长度不超过128，只允许中文、字母、数字、以及_.-等字符的组合。
 
@@ -203,7 +203,7 @@ class ShowV2xEdgeDetailResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowV2xEdgeDetailResponse.
+        r"""Sets the name of this ShowV2xEdgeDetailResponse.
 
         **参数说明**：名称。  **取值范围**：长度不超过128，只允许中文、字母、数字、以及_.-等字符的组合。
 
@@ -214,7 +214,7 @@ class ShowV2xEdgeDetailResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowV2xEdgeDetailResponse.
+        r"""Gets the description of this ShowV2xEdgeDetailResponse.
 
         **参数说明**：Edge描述。
 
@@ -225,7 +225,7 @@ class ShowV2xEdgeDetailResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowV2xEdgeDetailResponse.
+        r"""Sets the description of this ShowV2xEdgeDetailResponse.
 
         **参数说明**：Edge描述。
 
@@ -236,7 +236,7 @@ class ShowV2xEdgeDetailResponse(SdkResponse):
 
     @property
     def esn(self):
-        """Gets the esn of this ShowV2xEdgeDetailResponse.
+        r"""Gets the esn of this ShowV2xEdgeDetailResponse.
 
         **参数说明**：序列号。  **取值范围**：长度不超过64，只允许字母、数字、以及_等字符的组合。
 
@@ -247,7 +247,7 @@ class ShowV2xEdgeDetailResponse(SdkResponse):
 
     @esn.setter
     def esn(self, esn):
-        """Sets the esn of this ShowV2xEdgeDetailResponse.
+        r"""Sets the esn of this ShowV2xEdgeDetailResponse.
 
         **参数说明**：序列号。  **取值范围**：长度不超过64，只允许字母、数字、以及_等字符的组合。
 
@@ -258,7 +258,7 @@ class ShowV2xEdgeDetailResponse(SdkResponse):
 
     @property
     def ip(self):
-        """Gets the ip of this ShowV2xEdgeDetailResponse.
+        r"""Gets the ip of this ShowV2xEdgeDetailResponse.
 
         **参数说明**：网络I，例如127.0.0.1。
 
@@ -269,7 +269,7 @@ class ShowV2xEdgeDetailResponse(SdkResponse):
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this ShowV2xEdgeDetailResponse.
+        r"""Sets the ip of this ShowV2xEdgeDetailResponse.
 
         **参数说明**：网络I，例如127.0.0.1。
 
@@ -280,7 +280,7 @@ class ShowV2xEdgeDetailResponse(SdkResponse):
 
     @property
     def port(self):
-        """Gets the port of this ShowV2xEdgeDetailResponse.
+        r"""Gets the port of this ShowV2xEdgeDetailResponse.
 
         ITS800,ATLAS 端口号
 
@@ -291,7 +291,7 @@ class ShowV2xEdgeDetailResponse(SdkResponse):
 
     @port.setter
     def port(self, port):
-        """Sets the port of this ShowV2xEdgeDetailResponse.
+        r"""Sets the port of this ShowV2xEdgeDetailResponse.
 
         ITS800,ATLAS 端口号
 
@@ -302,7 +302,7 @@ class ShowV2xEdgeDetailResponse(SdkResponse):
 
     @property
     def hardware_type(self):
-        """Gets the hardware_type of this ShowV2xEdgeDetailResponse.
+        r"""Gets the hardware_type of this ShowV2xEdgeDetailResponse.
 
         **参数说明**：硬件类型。  **取值范围**：ITS800 或者 ATLAS。
 
@@ -313,7 +313,7 @@ class ShowV2xEdgeDetailResponse(SdkResponse):
 
     @hardware_type.setter
     def hardware_type(self, hardware_type):
-        """Sets the hardware_type of this ShowV2xEdgeDetailResponse.
+        r"""Sets the hardware_type of this ShowV2xEdgeDetailResponse.
 
         **参数说明**：硬件类型。  **取值范围**：ITS800 或者 ATLAS。
 
@@ -324,7 +324,7 @@ class ShowV2xEdgeDetailResponse(SdkResponse):
 
     @property
     def position_description(self):
-        """Gets the position_description of this ShowV2xEdgeDetailResponse.
+        r"""Gets the position_description of this ShowV2xEdgeDetailResponse.
 
         **参数说明**：安装位置编码，由用户自定义。  **取值范围**：长度不低于1不超过128，只允许字母、数字、下划线（_）的组合。
 
@@ -335,7 +335,7 @@ class ShowV2xEdgeDetailResponse(SdkResponse):
 
     @position_description.setter
     def position_description(self, position_description):
-        """Sets the position_description of this ShowV2xEdgeDetailResponse.
+        r"""Sets the position_description of this ShowV2xEdgeDetailResponse.
 
         **参数说明**：安装位置编码，由用户自定义。  **取值范围**：长度不低于1不超过128，只允许字母、数字、下划线（_）的组合。
 
@@ -346,7 +346,7 @@ class ShowV2xEdgeDetailResponse(SdkResponse):
 
     @property
     def location(self):
-        """Gets the location of this ShowV2xEdgeDetailResponse.
+        r"""Gets the location of this ShowV2xEdgeDetailResponse.
 
         :return: The location of this ShowV2xEdgeDetailResponse.
         :rtype: :class:`huaweicloudsdkdris.v1.Location`
@@ -355,7 +355,7 @@ class ShowV2xEdgeDetailResponse(SdkResponse):
 
     @location.setter
     def location(self, location):
-        """Sets the location of this ShowV2xEdgeDetailResponse.
+        r"""Sets the location of this ShowV2xEdgeDetailResponse.
 
         :param location: The location of this ShowV2xEdgeDetailResponse.
         :type location: :class:`huaweicloudsdkdris.v1.Location`
@@ -364,7 +364,7 @@ class ShowV2xEdgeDetailResponse(SdkResponse):
 
     @property
     def cameras(self):
-        """Gets the cameras of this ShowV2xEdgeDetailResponse.
+        r"""Gets the cameras of this ShowV2xEdgeDetailResponse.
 
         **参数说明**：Edge关联的摄像头列表。
 
@@ -375,7 +375,7 @@ class ShowV2xEdgeDetailResponse(SdkResponse):
 
     @cameras.setter
     def cameras(self, cameras):
-        """Sets the cameras of this ShowV2xEdgeDetailResponse.
+        r"""Sets the cameras of this ShowV2xEdgeDetailResponse.
 
         **参数说明**：Edge关联的摄像头列表。
 
@@ -386,7 +386,7 @@ class ShowV2xEdgeDetailResponse(SdkResponse):
 
     @property
     def radars(self):
-        """Gets the radars of this ShowV2xEdgeDetailResponse.
+        r"""Gets the radars of this ShowV2xEdgeDetailResponse.
 
         **参数说明**：Edge关联的雷达列表。
 
@@ -397,7 +397,7 @@ class ShowV2xEdgeDetailResponse(SdkResponse):
 
     @radars.setter
     def radars(self, radars):
-        """Sets the radars of this ShowV2xEdgeDetailResponse.
+        r"""Sets the radars of this ShowV2xEdgeDetailResponse.
 
         **参数说明**：Edge关联的雷达列表。
 
@@ -408,7 +408,7 @@ class ShowV2xEdgeDetailResponse(SdkResponse):
 
     @property
     def local_rsus(self):
-        """Gets the local_rsus of this ShowV2xEdgeDetailResponse.
+        r"""Gets the local_rsus of this ShowV2xEdgeDetailResponse.
 
         **参数说明**：Edge关联的本地RSU列表。
 
@@ -419,7 +419,7 @@ class ShowV2xEdgeDetailResponse(SdkResponse):
 
     @local_rsus.setter
     def local_rsus(self, local_rsus):
-        """Sets the local_rsus of this ShowV2xEdgeDetailResponse.
+        r"""Sets the local_rsus of this ShowV2xEdgeDetailResponse.
 
         **参数说明**：Edge关联的本地RSU列表。
 
@@ -430,7 +430,7 @@ class ShowV2xEdgeDetailResponse(SdkResponse):
 
     @property
     def edge_general_config(self):
-        """Gets the edge_general_config of this ShowV2xEdgeDetailResponse.
+        r"""Gets the edge_general_config of this ShowV2xEdgeDetailResponse.
 
         :return: The edge_general_config of this ShowV2xEdgeDetailResponse.
         :rtype: :class:`huaweicloudsdkdris.v1.EdgeGeneralConfigInResponse`
@@ -439,7 +439,7 @@ class ShowV2xEdgeDetailResponse(SdkResponse):
 
     @edge_general_config.setter
     def edge_general_config(self, edge_general_config):
-        """Sets the edge_general_config of this ShowV2xEdgeDetailResponse.
+        r"""Sets the edge_general_config of this ShowV2xEdgeDetailResponse.
 
         :param edge_general_config: The edge_general_config of this ShowV2xEdgeDetailResponse.
         :type edge_general_config: :class:`huaweicloudsdkdris.v1.EdgeGeneralConfigInResponse`
@@ -448,7 +448,7 @@ class ShowV2xEdgeDetailResponse(SdkResponse):
 
     @property
     def edge_advance_config(self):
-        """Gets the edge_advance_config of this ShowV2xEdgeDetailResponse.
+        r"""Gets the edge_advance_config of this ShowV2xEdgeDetailResponse.
 
         **参数说明**：Edge高级配置，Json格式
 
@@ -459,7 +459,7 @@ class ShowV2xEdgeDetailResponse(SdkResponse):
 
     @edge_advance_config.setter
     def edge_advance_config(self, edge_advance_config):
-        """Sets the edge_advance_config of this ShowV2xEdgeDetailResponse.
+        r"""Sets the edge_advance_config of this ShowV2xEdgeDetailResponse.
 
         **参数说明**：Edge高级配置，Json格式
 
@@ -470,7 +470,7 @@ class ShowV2xEdgeDetailResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowV2xEdgeDetailResponse.
+        r"""Gets the status of this ShowV2xEdgeDetailResponse.
 
         **参数说明**：状态。  **取值范围**： - UNINSTALLED： 待部署 - INSTALLED：部署中 - OFFLINE：离线 - ONLINE：在线： - UPGRADING：升级中 - DELETING：删除中
 
@@ -481,7 +481,7 @@ class ShowV2xEdgeDetailResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowV2xEdgeDetailResponse.
+        r"""Sets the status of this ShowV2xEdgeDetailResponse.
 
         **参数说明**：状态。  **取值范围**： - UNINSTALLED： 待部署 - INSTALLED：部署中 - OFFLINE：离线 - ONLINE：在线： - UPGRADING：升级中 - DELETING：删除中
 
@@ -492,7 +492,7 @@ class ShowV2xEdgeDetailResponse(SdkResponse):
 
     @property
     def channel_status(self):
-        """Gets the channel_status of this ShowV2xEdgeDetailResponse.
+        r"""Gets the channel_status of this ShowV2xEdgeDetailResponse.
 
         **参数说明**：业务通道状态。  **取值范围**： - ONLINE：在线 - OFFLINE：离线 - INITIAL：初始化
 
@@ -503,7 +503,7 @@ class ShowV2xEdgeDetailResponse(SdkResponse):
 
     @channel_status.setter
     def channel_status(self, channel_status):
-        """Sets the channel_status of this ShowV2xEdgeDetailResponse.
+        r"""Sets the channel_status of this ShowV2xEdgeDetailResponse.
 
         **参数说明**：业务通道状态。  **取值范围**： - ONLINE：在线 - OFFLINE：离线 - INITIAL：初始化
 
@@ -514,7 +514,7 @@ class ShowV2xEdgeDetailResponse(SdkResponse):
 
     @property
     def node_id(self):
-        """Gets the node_id of this ShowV2xEdgeDetailResponse.
+        r"""Gets the node_id of this ShowV2xEdgeDetailResponse.
 
         **参数说明**：边缘管理服务返回的node_id，用于关联EdgeManager的资源。
 
@@ -525,7 +525,7 @@ class ShowV2xEdgeDetailResponse(SdkResponse):
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ShowV2xEdgeDetailResponse.
+        r"""Sets the node_id of this ShowV2xEdgeDetailResponse.
 
         **参数说明**：边缘管理服务返回的node_id，用于关联EdgeManager的资源。
 
@@ -536,7 +536,7 @@ class ShowV2xEdgeDetailResponse(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this ShowV2xEdgeDetailResponse.
+        r"""Gets the created_time of this ShowV2xEdgeDetailResponse.
 
         **参数说明**：创建时间。  格式：yyyy-MM-dd''T''HH:mm:ss''Z''。  例如 2020-09-01T01:37:01Z。
 
@@ -547,7 +547,7 @@ class ShowV2xEdgeDetailResponse(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this ShowV2xEdgeDetailResponse.
+        r"""Sets the created_time of this ShowV2xEdgeDetailResponse.
 
         **参数说明**：创建时间。  格式：yyyy-MM-dd''T''HH:mm:ss''Z''。  例如 2020-09-01T01:37:01Z。
 
@@ -558,7 +558,7 @@ class ShowV2xEdgeDetailResponse(SdkResponse):
 
     @property
     def last_modified_time(self):
-        """Gets the last_modified_time of this ShowV2xEdgeDetailResponse.
+        r"""Gets the last_modified_time of this ShowV2xEdgeDetailResponse.
 
         **参数说明**：创建时间。  格式：yyyy-MM-dd''T''HH:mm:ss''Z''。  例如 2020-09-01T01:37:01Z。
 
@@ -569,7 +569,7 @@ class ShowV2xEdgeDetailResponse(SdkResponse):
 
     @last_modified_time.setter
     def last_modified_time(self, last_modified_time):
-        """Sets the last_modified_time of this ShowV2xEdgeDetailResponse.
+        r"""Sets the last_modified_time of this ShowV2xEdgeDetailResponse.
 
         **参数说明**：创建时间。  格式：yyyy-MM-dd''T''HH:mm:ss''Z''。  例如 2020-09-01T01:37:01Z。
 

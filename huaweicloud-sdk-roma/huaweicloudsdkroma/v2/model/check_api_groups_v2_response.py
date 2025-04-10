@@ -24,7 +24,7 @@ class CheckApiGroupsV2Response(SdkResponse):
     }
 
     def __init__(self):
-        """CheckApiGroupsV2Response
+        r"""CheckApiGroupsV2Response
 
         The model defined in huaweicloud sdk
 

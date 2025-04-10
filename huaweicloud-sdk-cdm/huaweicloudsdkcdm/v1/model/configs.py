@@ -31,7 +31,7 @@ class Configs:
     }
 
     def __init__(self, inputs=None, name=None, id=None, type=None):
-        """Configs
+        r"""Configs
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class Configs:
 
     @property
     def inputs(self):
-        """Gets the inputs of this Configs.
+        r"""Gets the inputs of this Configs.
 
         输入参数列表，列表中的每个参数为“name,value”结构，请参考inputs数据结构参数说明。在“from-config-values”数据结构中，不同的源连接类型有不同的“inputs”参数列表，请参见源端作业参数说明下的章节。在“to-cofig-values”数据结构中，不同的目的连接类型有不同的“inputs”参数列表，请参见目的端作业参数说明下面的子章节。在“driver-config-values”数据结构中，“inputs”具体参数请参见作业任务参数说明。
 
@@ -73,7 +73,7 @@ class Configs:
 
     @inputs.setter
     def inputs(self, inputs):
-        """Sets the inputs of this Configs.
+        r"""Sets the inputs of this Configs.
 
         输入参数列表，列表中的每个参数为“name,value”结构，请参考inputs数据结构参数说明。在“from-config-values”数据结构中，不同的源连接类型有不同的“inputs”参数列表，请参见源端作业参数说明下的章节。在“to-cofig-values”数据结构中，不同的目的连接类型有不同的“inputs”参数列表，请参见目的端作业参数说明下面的子章节。在“driver-config-values”数据结构中，“inputs”具体参数请参见作业任务参数说明。
 
@@ -84,7 +84,7 @@ class Configs:
 
     @property
     def name(self):
-        """Gets the name of this Configs.
+        r"""Gets the name of this Configs.
 
         配置名称：源端作业的配置名称为“fromJobConfig”。目的端作业的配置名称为“toJobConfig”,连接的配置名称固定为“linkConfig”。
 
@@ -95,7 +95,7 @@ class Configs:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Configs.
+        r"""Sets the name of this Configs.
 
         配置名称：源端作业的配置名称为“fromJobConfig”。目的端作业的配置名称为“toJobConfig”,连接的配置名称固定为“linkConfig”。
 
@@ -106,7 +106,7 @@ class Configs:
 
     @property
     def id(self):
-        """Gets the id of this Configs.
+        r"""Gets the id of this Configs.
 
         配置ID
 
@@ -117,7 +117,7 @@ class Configs:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Configs.
+        r"""Sets the id of this Configs.
 
         配置ID
 
@@ -128,7 +128,7 @@ class Configs:
 
     @property
     def type(self):
-        """Gets the type of this Configs.
+        r"""Gets the type of this Configs.
 
         配置类型
 
@@ -139,7 +139,7 @@ class Configs:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Configs.
+        r"""Sets the type of this Configs.
 
         配置类型
 

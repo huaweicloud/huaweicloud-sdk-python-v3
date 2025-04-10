@@ -29,7 +29,7 @@ class UpdateModelDefinitionRequest:
     }
 
     def __init__(self, workspace_id=None, model_id=None, body=None):
-        """UpdateModelDefinitionRequest
+        r"""UpdateModelDefinitionRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateModelDefinitionRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this UpdateModelDefinitionRequest.
+        r"""Gets the workspace_id of this UpdateModelDefinitionRequest.
 
         工作空间ID
 
@@ -66,7 +66,7 @@ class UpdateModelDefinitionRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this UpdateModelDefinitionRequest.
+        r"""Sets the workspace_id of this UpdateModelDefinitionRequest.
 
         工作空间ID
 
@@ -77,7 +77,7 @@ class UpdateModelDefinitionRequest:
 
     @property
     def model_id(self):
-        """Gets the model_id of this UpdateModelDefinitionRequest.
+        r"""Gets the model_id of this UpdateModelDefinitionRequest.
 
         Service ID
 
@@ -88,7 +88,7 @@ class UpdateModelDefinitionRequest:
 
     @model_id.setter
     def model_id(self, model_id):
-        """Sets the model_id of this UpdateModelDefinitionRequest.
+        r"""Sets the model_id of this UpdateModelDefinitionRequest.
 
         Service ID
 
@@ -99,7 +99,7 @@ class UpdateModelDefinitionRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateModelDefinitionRequest.
+        r"""Gets the body of this UpdateModelDefinitionRequest.
 
         :return: The body of this UpdateModelDefinitionRequest.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.UpdateModelInput`
@@ -108,7 +108,7 @@ class UpdateModelDefinitionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateModelDefinitionRequest.
+        r"""Sets the body of this UpdateModelDefinitionRequest.
 
         :param body: The body of this UpdateModelDefinitionRequest.
         :type body: :class:`huaweicloudsdkdataartsfabric.v1.UpdateModelInput`

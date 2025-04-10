@@ -31,7 +31,7 @@ class CreateDockJobReq:
     }
 
     def __init__(self, basic_info=None, receptors=None, ligands=None, engine=None):
-        """CreateDockJobReq
+        r"""CreateDockJobReq
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class CreateDockJobReq:
 
     @property
     def basic_info(self):
-        """Gets the basic_info of this CreateDockJobReq.
+        r"""Gets the basic_info of this CreateDockJobReq.
 
         :return: The basic_info of this CreateDockJobReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateDrugJobBasicInfo`
@@ -70,7 +70,7 @@ class CreateDockJobReq:
 
     @basic_info.setter
     def basic_info(self, basic_info):
-        """Sets the basic_info of this CreateDockJobReq.
+        r"""Sets the basic_info of this CreateDockJobReq.
 
         :param basic_info: The basic_info of this CreateDockJobReq.
         :type basic_info: :class:`huaweicloudsdkeihealth.v1.CreateDrugJobBasicInfo`
@@ -79,7 +79,7 @@ class CreateDockJobReq:
 
     @property
     def receptors(self):
-        """Gets the receptors of this CreateDockJobReq.
+        r"""Gets the receptors of this CreateDockJobReq.
 
         受体文件列表
 
@@ -90,7 +90,7 @@ class CreateDockJobReq:
 
     @receptors.setter
     def receptors(self, receptors):
-        """Sets the receptors of this CreateDockJobReq.
+        r"""Sets the receptors of this CreateDockJobReq.
 
         受体文件列表
 
@@ -101,7 +101,7 @@ class CreateDockJobReq:
 
     @property
     def ligands(self):
-        """Gets the ligands of this CreateDockJobReq.
+        r"""Gets the ligands of this CreateDockJobReq.
 
         配体文件列表，当前仅支持1个
 
@@ -112,7 +112,7 @@ class CreateDockJobReq:
 
     @ligands.setter
     def ligands(self, ligands):
-        """Sets the ligands of this CreateDockJobReq.
+        r"""Sets the ligands of this CreateDockJobReq.
 
         配体文件列表，当前仅支持1个
 
@@ -123,7 +123,7 @@ class CreateDockJobReq:
 
     @property
     def engine(self):
-        """Gets the engine of this CreateDockJobReq.
+        r"""Gets the engine of this CreateDockJobReq.
 
         引擎，默认为AUTODOCK_VINA
 
@@ -134,7 +134,7 @@ class CreateDockJobReq:
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this CreateDockJobReq.
+        r"""Sets the engine of this CreateDockJobReq.
 
         引擎，默认为AUTODOCK_VINA
 

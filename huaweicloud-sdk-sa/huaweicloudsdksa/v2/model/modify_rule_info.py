@@ -25,7 +25,7 @@ class ModifyRuleInfo:
     }
 
     def __init__(self, rule=None):
-        """ModifyRuleInfo
+        r"""ModifyRuleInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ModifyRuleInfo:
 
     @property
     def rule(self):
-        """Gets the rule of this ModifyRuleInfo.
+        r"""Gets the rule of this ModifyRuleInfo.
 
         :return: The rule of this ModifyRuleInfo.
         :rtype: :class:`huaweicloudsdksa.v2.ConditionInfo`
@@ -52,7 +52,7 @@ class ModifyRuleInfo:
 
     @rule.setter
     def rule(self, rule):
-        """Sets the rule of this ModifyRuleInfo.
+        r"""Sets the rule of this ModifyRuleInfo.
 
         :param rule: The rule of this ModifyRuleInfo.
         :type rule: :class:`huaweicloudsdksa.v2.ConditionInfo`

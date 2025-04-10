@@ -33,7 +33,7 @@ class ListMemberJobRecordsRequest:
     }
 
     def __init__(self, job_id=None, exercise_id=None, member_id=None, offset=None, limit=None):
-        """ListMemberJobRecordsRequest
+        r"""ListMemberJobRecordsRequest
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class ListMemberJobRecordsRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ListMemberJobRecordsRequest.
+        r"""Gets the job_id of this ListMemberJobRecordsRequest.
 
         作业ID
 
@@ -79,7 +79,7 @@ class ListMemberJobRecordsRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ListMemberJobRecordsRequest.
+        r"""Sets the job_id of this ListMemberJobRecordsRequest.
 
         作业ID
 
@@ -90,7 +90,7 @@ class ListMemberJobRecordsRequest:
 
     @property
     def exercise_id(self):
-        """Gets the exercise_id of this ListMemberJobRecordsRequest.
+        r"""Gets the exercise_id of this ListMemberJobRecordsRequest.
 
         习题ID
 
@@ -101,7 +101,7 @@ class ListMemberJobRecordsRequest:
 
     @exercise_id.setter
     def exercise_id(self, exercise_id):
-        """Sets the exercise_id of this ListMemberJobRecordsRequest.
+        r"""Sets the exercise_id of this ListMemberJobRecordsRequest.
 
         习题ID
 
@@ -112,7 +112,7 @@ class ListMemberJobRecordsRequest:
 
     @property
     def member_id(self):
-        """Gets the member_id of this ListMemberJobRecordsRequest.
+        r"""Gets the member_id of this ListMemberJobRecordsRequest.
 
         用户ID
 
@@ -123,7 +123,7 @@ class ListMemberJobRecordsRequest:
 
     @member_id.setter
     def member_id(self, member_id):
-        """Sets the member_id of this ListMemberJobRecordsRequest.
+        r"""Sets the member_id of this ListMemberJobRecordsRequest.
 
         用户ID
 
@@ -134,7 +134,7 @@ class ListMemberJobRecordsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListMemberJobRecordsRequest.
+        r"""Gets the offset of this ListMemberJobRecordsRequest.
 
         信息记录的起始编号
 
@@ -145,7 +145,7 @@ class ListMemberJobRecordsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListMemberJobRecordsRequest.
+        r"""Sets the offset of this ListMemberJobRecordsRequest.
 
         信息记录的起始编号
 
@@ -156,7 +156,7 @@ class ListMemberJobRecordsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListMemberJobRecordsRequest.
+        r"""Gets the limit of this ListMemberJobRecordsRequest.
 
         每页包含的信息记录数
 
@@ -167,7 +167,7 @@ class ListMemberJobRecordsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListMemberJobRecordsRequest.
+        r"""Sets the limit of this ListMemberJobRecordsRequest.
 
         每页包含的信息记录数
 

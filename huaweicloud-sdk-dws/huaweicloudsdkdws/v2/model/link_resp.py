@@ -27,7 +27,7 @@ class LinkResp:
     }
 
     def __init__(self, rel=None, href=None):
-        """LinkResp
+        r"""LinkResp
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class LinkResp:
 
     @property
     def rel(self):
-        """Gets the rel of this LinkResp.
+        r"""Gets the rel of this LinkResp.
 
         关联
 
@@ -61,7 +61,7 @@ class LinkResp:
 
     @rel.setter
     def rel(self, rel):
-        """Sets the rel of this LinkResp.
+        r"""Sets the rel of this LinkResp.
 
         关联
 
@@ -72,7 +72,7 @@ class LinkResp:
 
     @property
     def href(self):
-        """Gets the href of this LinkResp.
+        r"""Gets the href of this LinkResp.
 
         连接
 
@@ -83,7 +83,7 @@ class LinkResp:
 
     @href.setter
     def href(self, href):
-        """Sets the href of this LinkResp.
+        r"""Sets the href of this LinkResp.
 
         连接
 

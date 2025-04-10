@@ -28,7 +28,7 @@ class ListDiagnoseResourcesResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, result=None):
-        """ListDiagnoseResourcesResponse
+        r"""ListDiagnoseResourcesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDiagnoseResourcesResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListDiagnoseResourcesResponse.
+        r"""Gets the total_count of this ListDiagnoseResourcesResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class ListDiagnoseResourcesResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListDiagnoseResourcesResponse.
+        r"""Sets the total_count of this ListDiagnoseResourcesResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class ListDiagnoseResourcesResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListDiagnoseResourcesResponse.
+        r"""Gets the result of this ListDiagnoseResourcesResponse.
 
         诊断记录列表
 
@@ -84,7 +84,7 @@ class ListDiagnoseResourcesResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListDiagnoseResourcesResponse.
+        r"""Sets the result of this ListDiagnoseResourcesResponse.
 
         诊断记录列表
 

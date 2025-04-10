@@ -27,7 +27,7 @@ class InstanceAction:
     }
 
     def __init__(self, action=None, parameters=None):
-        """InstanceAction
+        r"""InstanceAction
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class InstanceAction:
 
     @property
     def action(self):
-        """Gets the action of this InstanceAction.
+        r"""Gets the action of this InstanceAction.
 
         :return: The action of this InstanceAction.
         :rtype: :class:`huaweicloudsdkservicestage.v2.InstanceActionType`
@@ -58,7 +58,7 @@ class InstanceAction:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this InstanceAction.
+        r"""Sets the action of this InstanceAction.
 
         :param action: The action of this InstanceAction.
         :type action: :class:`huaweicloudsdkservicestage.v2.InstanceActionType`
@@ -67,7 +67,7 @@ class InstanceAction:
 
     @property
     def parameters(self):
-        """Gets the parameters of this InstanceAction.
+        r"""Gets the parameters of this InstanceAction.
 
         :return: The parameters of this InstanceAction.
         :rtype: :class:`huaweicloudsdkservicestage.v2.InstanceActionParameters`
@@ -76,7 +76,7 @@ class InstanceAction:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this InstanceAction.
+        r"""Sets the parameters of this InstanceAction.
 
         :param parameters: The parameters of this InstanceAction.
         :type parameters: :class:`huaweicloudsdkservicestage.v2.InstanceActionParameters`

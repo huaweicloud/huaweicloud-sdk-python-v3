@@ -27,7 +27,7 @@ class BatchDeleteSecurityGroupTagsRequest:
     }
 
     def __init__(self, security_group_id=None, body=None):
-        """BatchDeleteSecurityGroupTagsRequest
+        r"""BatchDeleteSecurityGroupTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeleteSecurityGroupTagsRequest:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this BatchDeleteSecurityGroupTagsRequest.
+        r"""Gets the security_group_id of this BatchDeleteSecurityGroupTagsRequest.
 
         安全组资源ID
 
@@ -60,7 +60,7 @@ class BatchDeleteSecurityGroupTagsRequest:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this BatchDeleteSecurityGroupTagsRequest.
+        r"""Sets the security_group_id of this BatchDeleteSecurityGroupTagsRequest.
 
         安全组资源ID
 
@@ -71,7 +71,7 @@ class BatchDeleteSecurityGroupTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteSecurityGroupTagsRequest.
+        r"""Gets the body of this BatchDeleteSecurityGroupTagsRequest.
 
         :return: The body of this BatchDeleteSecurityGroupTagsRequest.
         :rtype: :class:`huaweicloudsdkvpc.v2.BatchDeleteSecurityGroupTagsRequestBody`
@@ -80,7 +80,7 @@ class BatchDeleteSecurityGroupTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteSecurityGroupTagsRequest.
+        r"""Sets the body of this BatchDeleteSecurityGroupTagsRequest.
 
         :param body: The body of this BatchDeleteSecurityGroupTagsRequest.
         :type body: :class:`huaweicloudsdkvpc.v2.BatchDeleteSecurityGroupTagsRequestBody`

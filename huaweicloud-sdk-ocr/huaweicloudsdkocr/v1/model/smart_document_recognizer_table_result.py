@@ -27,7 +27,7 @@ class SmartDocumentRecognizerTableResult:
     }
 
     def __init__(self, table_count=None, table_list=None):
-        """SmartDocumentRecognizerTableResult
+        r"""SmartDocumentRecognizerTableResult
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SmartDocumentRecognizerTableResult:
 
     @property
     def table_count(self):
-        """Gets the table_count of this SmartDocumentRecognizerTableResult.
+        r"""Gets the table_count of this SmartDocumentRecognizerTableResult.
 
         模型识别到的表格数量。 
 
@@ -61,7 +61,7 @@ class SmartDocumentRecognizerTableResult:
 
     @table_count.setter
     def table_count(self, table_count):
-        """Sets the table_count of this SmartDocumentRecognizerTableResult.
+        r"""Sets the table_count of this SmartDocumentRecognizerTableResult.
 
         模型识别到的表格数量。 
 
@@ -72,7 +72,7 @@ class SmartDocumentRecognizerTableResult:
 
     @property
     def table_list(self):
-        """Gets the table_list of this SmartDocumentRecognizerTableResult.
+        r"""Gets the table_list of this SmartDocumentRecognizerTableResult.
 
         表格识别结果列表。 
 
@@ -83,7 +83,7 @@ class SmartDocumentRecognizerTableResult:
 
     @table_list.setter
     def table_list(self, table_list):
-        """Sets the table_list of this SmartDocumentRecognizerTableResult.
+        r"""Sets the table_list of this SmartDocumentRecognizerTableResult.
 
         表格识别结果列表。 
 

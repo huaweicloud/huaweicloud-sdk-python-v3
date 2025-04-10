@@ -28,7 +28,7 @@ class ListVulScanTaskHostResponse(SdkResponse):
     }
 
     def __init__(self, total_num=None, data_list=None):
-        """ListVulScanTaskHostResponse
+        r"""ListVulScanTaskHostResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListVulScanTaskHostResponse(SdkResponse):
 
     @property
     def total_num(self):
-        """Gets the total_num of this ListVulScanTaskHostResponse.
+        r"""Gets the total_num of this ListVulScanTaskHostResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class ListVulScanTaskHostResponse(SdkResponse):
 
     @total_num.setter
     def total_num(self, total_num):
-        """Sets the total_num of this ListVulScanTaskHostResponse.
+        r"""Sets the total_num of this ListVulScanTaskHostResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class ListVulScanTaskHostResponse(SdkResponse):
 
     @property
     def data_list(self):
-        """Gets the data_list of this ListVulScanTaskHostResponse.
+        r"""Gets the data_list of this ListVulScanTaskHostResponse.
 
         漏洞扫描任务对应的主机列表
 
@@ -84,7 +84,7 @@ class ListVulScanTaskHostResponse(SdkResponse):
 
     @data_list.setter
     def data_list(self, data_list):
-        """Sets the data_list of this ListVulScanTaskHostResponse.
+        r"""Sets the data_list of this ListVulScanTaskHostResponse.
 
         漏洞扫描任务对应的主机列表
 

@@ -25,7 +25,7 @@ class UpdateBackupOffsitePolicyRequestBody:
     }
 
     def __init__(self, backup_policy=None):
-        """UpdateBackupOffsitePolicyRequestBody
+        r"""UpdateBackupOffsitePolicyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateBackupOffsitePolicyRequestBody:
 
     @property
     def backup_policy(self):
-        """Gets the backup_policy of this UpdateBackupOffsitePolicyRequestBody.
+        r"""Gets the backup_policy of this UpdateBackupOffsitePolicyRequestBody.
 
         :return: The backup_policy of this UpdateBackupOffsitePolicyRequestBody.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateBackupOffsitePolicyInfo`
@@ -51,7 +51,7 @@ class UpdateBackupOffsitePolicyRequestBody:
 
     @backup_policy.setter
     def backup_policy(self, backup_policy):
-        """Sets the backup_policy of this UpdateBackupOffsitePolicyRequestBody.
+        r"""Sets the backup_policy of this UpdateBackupOffsitePolicyRequestBody.
 
         :param backup_policy: The backup_policy of this UpdateBackupOffsitePolicyRequestBody.
         :type backup_policy: :class:`huaweicloudsdkgaussdb.v3.UpdateBackupOffsitePolicyInfo`

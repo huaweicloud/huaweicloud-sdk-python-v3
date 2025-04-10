@@ -25,7 +25,7 @@ class DeleteReq:
     }
 
     def __init__(self, approvers=None):
-        """DeleteReq
+        r"""DeleteReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteReq:
 
     @property
     def approvers(self):
-        """Gets the approvers of this DeleteReq.
+        r"""Gets the approvers of this DeleteReq.
 
         在开启审批开关后，需要填写该字段，表示作业（或脚本）审批人。
 
@@ -54,7 +54,7 @@ class DeleteReq:
 
     @approvers.setter
     def approvers(self, approvers):
-        """Sets the approvers of this DeleteReq.
+        r"""Sets the approvers of this DeleteReq.
 
         在开启审批开关后，需要填写该字段，表示作业（或脚本）审批人。
 

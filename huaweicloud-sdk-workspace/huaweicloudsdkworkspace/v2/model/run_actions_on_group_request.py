@@ -27,7 +27,7 @@ class RunActionsOnGroupRequest:
     }
 
     def __init__(self, group_id=None, body=None):
-        """RunActionsOnGroupRequest
+        r"""RunActionsOnGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RunActionsOnGroupRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this RunActionsOnGroupRequest.
+        r"""Gets the group_id of this RunActionsOnGroupRequest.
 
         桌面用户组ID。
 
@@ -60,7 +60,7 @@ class RunActionsOnGroupRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this RunActionsOnGroupRequest.
+        r"""Sets the group_id of this RunActionsOnGroupRequest.
 
         桌面用户组ID。
 
@@ -71,7 +71,7 @@ class RunActionsOnGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunActionsOnGroupRequest.
+        r"""Gets the body of this RunActionsOnGroupRequest.
 
         :return: The body of this RunActionsOnGroupRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ActionsOfUsersInGroupRequest`
@@ -80,7 +80,7 @@ class RunActionsOnGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunActionsOnGroupRequest.
+        r"""Sets the body of this RunActionsOnGroupRequest.
 
         :param body: The body of this RunActionsOnGroupRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.ActionsOfUsersInGroupRequest`

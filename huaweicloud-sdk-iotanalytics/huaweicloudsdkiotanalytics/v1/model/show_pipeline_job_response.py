@@ -28,7 +28,7 @@ class ShowPipelineJobResponse(SdkResponse):
     }
 
     def __init__(self, pipeline_config=None, pipeline_info=None):
-        """ShowPipelineJobResponse
+        r"""ShowPipelineJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowPipelineJobResponse(SdkResponse):
 
     @property
     def pipeline_config(self):
-        """Gets the pipeline_config of this ShowPipelineJobResponse.
+        r"""Gets the pipeline_config of this ShowPipelineJobResponse.
 
         管道作业详细配置，每个作业可选择不同的算子进行组合，各算子的使用方法详见：数据管道算子配置指南。
 
@@ -62,7 +62,7 @@ class ShowPipelineJobResponse(SdkResponse):
 
     @pipeline_config.setter
     def pipeline_config(self, pipeline_config):
-        """Sets the pipeline_config of this ShowPipelineJobResponse.
+        r"""Sets the pipeline_config of this ShowPipelineJobResponse.
 
         管道作业详细配置，每个作业可选择不同的算子进行组合，各算子的使用方法详见：数据管道算子配置指南。
 
@@ -73,7 +73,7 @@ class ShowPipelineJobResponse(SdkResponse):
 
     @property
     def pipeline_info(self):
-        """Gets the pipeline_info of this ShowPipelineJobResponse.
+        r"""Gets the pipeline_info of this ShowPipelineJobResponse.
 
         :return: The pipeline_info of this ShowPipelineJobResponse.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.PipelineJobInfoDto`
@@ -82,7 +82,7 @@ class ShowPipelineJobResponse(SdkResponse):
 
     @pipeline_info.setter
     def pipeline_info(self, pipeline_info):
-        """Sets the pipeline_info of this ShowPipelineJobResponse.
+        r"""Sets the pipeline_info of this ShowPipelineJobResponse.
 
         :param pipeline_info: The pipeline_info of this ShowPipelineJobResponse.
         :type pipeline_info: :class:`huaweicloudsdkiotanalytics.v1.PipelineJobInfoDto`

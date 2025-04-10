@@ -25,7 +25,7 @@ class ServerIdSet:
     }
 
     def __init__(self, items=None):
-        """ServerIdSet
+        r"""ServerIdSet
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ServerIdSet:
 
     @property
     def items(self):
-        """Gets the items of this ServerIdSet.
+        r"""Gets the items of this ServerIdSet.
 
         批量请求的服务器ID列表，一次请求数量区间 [1, 20]。
 
@@ -53,7 +53,7 @@ class ServerIdSet:
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ServerIdSet.
+        r"""Sets the items of this ServerIdSet.
 
         批量请求的服务器ID列表，一次请求数量区间 [1, 20]。
 

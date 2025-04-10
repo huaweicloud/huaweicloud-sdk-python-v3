@@ -29,7 +29,7 @@ class InstancesMonitoredObject:
     }
 
     def __init__(self, dcs_instance_id=None, name=None, status=None):
-        """InstancesMonitoredObject
+        r"""InstancesMonitoredObject
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class InstancesMonitoredObject:
 
     @property
     def dcs_instance_id(self):
-        """Gets the dcs_instance_id of this InstancesMonitoredObject.
+        r"""Gets the dcs_instance_id of this InstancesMonitoredObject.
 
         测量对象ID，即实例的ID。
 
@@ -68,7 +68,7 @@ class InstancesMonitoredObject:
 
     @dcs_instance_id.setter
     def dcs_instance_id(self, dcs_instance_id):
-        """Sets the dcs_instance_id of this InstancesMonitoredObject.
+        r"""Sets the dcs_instance_id of this InstancesMonitoredObject.
 
         测量对象ID，即实例的ID。
 
@@ -79,7 +79,7 @@ class InstancesMonitoredObject:
 
     @property
     def name(self):
-        """Gets the name of this InstancesMonitoredObject.
+        r"""Gets the name of this InstancesMonitoredObject.
 
         测量对象名称，即实例名称。
 
@@ -90,7 +90,7 @@ class InstancesMonitoredObject:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this InstancesMonitoredObject.
+        r"""Sets the name of this InstancesMonitoredObject.
 
         测量对象名称，即实例名称。
 
@@ -101,7 +101,7 @@ class InstancesMonitoredObject:
 
     @property
     def status(self):
-        """Gets the status of this InstancesMonitoredObject.
+        r"""Gets the status of this InstancesMonitoredObject.
 
         测量对象状态，即实例状态。
 
@@ -112,7 +112,7 @@ class InstancesMonitoredObject:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this InstancesMonitoredObject.
+        r"""Sets the status of this InstancesMonitoredObject.
 
         测量对象状态，即实例状态。
 

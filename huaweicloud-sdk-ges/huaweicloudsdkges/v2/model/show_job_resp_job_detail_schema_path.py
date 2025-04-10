@@ -37,7 +37,7 @@ class ShowJobRespJobDetailSchemaPath:
     }
 
     def __init__(self, path=None, log=None, status=None, cause=None, total_lines=None, failed_lines=None, successful_lines=None):
-        """ShowJobRespJobDetailSchemaPath
+        r"""ShowJobRespJobDetailSchemaPath
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ShowJobRespJobDetailSchemaPath:
 
     @property
     def path(self):
-        """Gets the path of this ShowJobRespJobDetailSchemaPath.
+        r"""Gets the path of this ShowJobRespJobDetailSchemaPath.
 
         OBS文件路径。
 
@@ -96,7 +96,7 @@ class ShowJobRespJobDetailSchemaPath:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ShowJobRespJobDetailSchemaPath.
+        r"""Sets the path of this ShowJobRespJobDetailSchemaPath.
 
         OBS文件路径。
 
@@ -107,7 +107,7 @@ class ShowJobRespJobDetailSchemaPath:
 
     @property
     def log(self):
-        """Gets the log of this ShowJobRespJobDetailSchemaPath.
+        r"""Gets the log of this ShowJobRespJobDetailSchemaPath.
 
         OBS文件导入日志存储文件。
 
@@ -118,7 +118,7 @@ class ShowJobRespJobDetailSchemaPath:
 
     @log.setter
     def log(self, log):
-        """Sets the log of this ShowJobRespJobDetailSchemaPath.
+        r"""Sets the log of this ShowJobRespJobDetailSchemaPath.
 
         OBS文件导入日志存储文件。
 
@@ -129,7 +129,7 @@ class ShowJobRespJobDetailSchemaPath:
 
     @property
     def status(self):
-        """Gets the status of this ShowJobRespJobDetailSchemaPath.
+        r"""Gets the status of this ShowJobRespJobDetailSchemaPath.
 
         OBS文件导入状态。  - success：完全成功 - failed：完全失败 - partFailed：部分成功
 
@@ -140,7 +140,7 @@ class ShowJobRespJobDetailSchemaPath:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowJobRespJobDetailSchemaPath.
+        r"""Sets the status of this ShowJobRespJobDetailSchemaPath.
 
         OBS文件导入状态。  - success：完全成功 - failed：完全失败 - partFailed：部分成功
 
@@ -151,7 +151,7 @@ class ShowJobRespJobDetailSchemaPath:
 
     @property
     def cause(self):
-        """Gets the cause of this ShowJobRespJobDetailSchemaPath.
+        r"""Gets the cause of this ShowJobRespJobDetailSchemaPath.
 
         导入失败原因。
 
@@ -162,7 +162,7 @@ class ShowJobRespJobDetailSchemaPath:
 
     @cause.setter
     def cause(self, cause):
-        """Sets the cause of this ShowJobRespJobDetailSchemaPath.
+        r"""Sets the cause of this ShowJobRespJobDetailSchemaPath.
 
         导入失败原因。
 
@@ -173,7 +173,7 @@ class ShowJobRespJobDetailSchemaPath:
 
     @property
     def total_lines(self):
-        """Gets the total_lines of this ShowJobRespJobDetailSchemaPath.
+        r"""Gets the total_lines of this ShowJobRespJobDetailSchemaPath.
 
         导入总行数。其值为-1时表示当前版本没有返回该字段。
 
@@ -184,7 +184,7 @@ class ShowJobRespJobDetailSchemaPath:
 
     @total_lines.setter
     def total_lines(self, total_lines):
-        """Sets the total_lines of this ShowJobRespJobDetailSchemaPath.
+        r"""Sets the total_lines of this ShowJobRespJobDetailSchemaPath.
 
         导入总行数。其值为-1时表示当前版本没有返回该字段。
 
@@ -195,7 +195,7 @@ class ShowJobRespJobDetailSchemaPath:
 
     @property
     def failed_lines(self):
-        """Gets the failed_lines of this ShowJobRespJobDetailSchemaPath.
+        r"""Gets the failed_lines of this ShowJobRespJobDetailSchemaPath.
 
         导入失败行数。其值为-1时表示当前版本没有返回该字段。
 
@@ -206,7 +206,7 @@ class ShowJobRespJobDetailSchemaPath:
 
     @failed_lines.setter
     def failed_lines(self, failed_lines):
-        """Sets the failed_lines of this ShowJobRespJobDetailSchemaPath.
+        r"""Sets the failed_lines of this ShowJobRespJobDetailSchemaPath.
 
         导入失败行数。其值为-1时表示当前版本没有返回该字段。
 
@@ -217,7 +217,7 @@ class ShowJobRespJobDetailSchemaPath:
 
     @property
     def successful_lines(self):
-        """Gets the successful_lines of this ShowJobRespJobDetailSchemaPath.
+        r"""Gets the successful_lines of this ShowJobRespJobDetailSchemaPath.
 
         导入成功行数。其值为-1时表示当前版本没有返回该字段。
 
@@ -228,7 +228,7 @@ class ShowJobRespJobDetailSchemaPath:
 
     @successful_lines.setter
     def successful_lines(self, successful_lines):
-        """Sets the successful_lines of this ShowJobRespJobDetailSchemaPath.
+        r"""Sets the successful_lines of this ShowJobRespJobDetailSchemaPath.
 
         导入成功行数。其值为-1时表示当前版本没有返回该字段。
 

@@ -30,7 +30,7 @@ class ShowTemplateVideoThumbnailResponse(SdkResponse):
     }
 
     def __init__(self, status=None, message=None, data=None):
-        """ShowTemplateVideoThumbnailResponse
+        r"""ShowTemplateVideoThumbnailResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowTemplateVideoThumbnailResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowTemplateVideoThumbnailResponse.
+        r"""Gets the status of this ShowTemplateVideoThumbnailResponse.
 
         请求状态，固定200。
 
@@ -69,7 +69,7 @@ class ShowTemplateVideoThumbnailResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowTemplateVideoThumbnailResponse.
+        r"""Sets the status of this ShowTemplateVideoThumbnailResponse.
 
         请求状态，固定200。
 
@@ -80,7 +80,7 @@ class ShowTemplateVideoThumbnailResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowTemplateVideoThumbnailResponse.
+        r"""Gets the message of this ShowTemplateVideoThumbnailResponse.
 
         状态描述。
 
@@ -91,7 +91,7 @@ class ShowTemplateVideoThumbnailResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowTemplateVideoThumbnailResponse.
+        r"""Sets the message of this ShowTemplateVideoThumbnailResponse.
 
         状态描述。
 
@@ -102,7 +102,7 @@ class ShowTemplateVideoThumbnailResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowTemplateVideoThumbnailResponse.
+        r"""Gets the data of this ShowTemplateVideoThumbnailResponse.
 
         视频封面图列表。
 
@@ -113,7 +113,7 @@ class ShowTemplateVideoThumbnailResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowTemplateVideoThumbnailResponse.
+        r"""Sets the data of this ShowTemplateVideoThumbnailResponse.
 
         视频封面图列表。
 

@@ -33,7 +33,7 @@ class ShowInstanceTopicDetailRespReplicas:
     }
 
     def __init__(self, broker=None, leader=None, in_sync=None, size=None, lag=None):
-        """ShowInstanceTopicDetailRespReplicas
+        r"""ShowInstanceTopicDetailRespReplicas
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ShowInstanceTopicDetailRespReplicas:
 
     @property
     def broker(self):
-        """Gets the broker of this ShowInstanceTopicDetailRespReplicas.
+        r"""Gets the broker of this ShowInstanceTopicDetailRespReplicas.
 
         副本所在的节点ID。
 
@@ -82,7 +82,7 @@ class ShowInstanceTopicDetailRespReplicas:
 
     @broker.setter
     def broker(self, broker):
-        """Sets the broker of this ShowInstanceTopicDetailRespReplicas.
+        r"""Sets the broker of this ShowInstanceTopicDetailRespReplicas.
 
         副本所在的节点ID。
 
@@ -93,7 +93,7 @@ class ShowInstanceTopicDetailRespReplicas:
 
     @property
     def leader(self):
-        """Gets the leader of this ShowInstanceTopicDetailRespReplicas.
+        r"""Gets the leader of this ShowInstanceTopicDetailRespReplicas.
 
         该副本是否为leader。
 
@@ -104,7 +104,7 @@ class ShowInstanceTopicDetailRespReplicas:
 
     @leader.setter
     def leader(self, leader):
-        """Sets the leader of this ShowInstanceTopicDetailRespReplicas.
+        r"""Sets the leader of this ShowInstanceTopicDetailRespReplicas.
 
         该副本是否为leader。
 
@@ -115,7 +115,7 @@ class ShowInstanceTopicDetailRespReplicas:
 
     @property
     def in_sync(self):
-        """Gets the in_sync of this ShowInstanceTopicDetailRespReplicas.
+        r"""Gets the in_sync of this ShowInstanceTopicDetailRespReplicas.
 
         该副本是否在ISR副本中。
 
@@ -126,7 +126,7 @@ class ShowInstanceTopicDetailRespReplicas:
 
     @in_sync.setter
     def in_sync(self, in_sync):
-        """Sets the in_sync of this ShowInstanceTopicDetailRespReplicas.
+        r"""Sets the in_sync of this ShowInstanceTopicDetailRespReplicas.
 
         该副本是否在ISR副本中。
 
@@ -137,7 +137,7 @@ class ShowInstanceTopicDetailRespReplicas:
 
     @property
     def size(self):
-        """Gets the size of this ShowInstanceTopicDetailRespReplicas.
+        r"""Gets the size of this ShowInstanceTopicDetailRespReplicas.
 
         该副本当前日志大小。单位：Byte。
 
@@ -148,7 +148,7 @@ class ShowInstanceTopicDetailRespReplicas:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ShowInstanceTopicDetailRespReplicas.
+        r"""Sets the size of this ShowInstanceTopicDetailRespReplicas.
 
         该副本当前日志大小。单位：Byte。
 
@@ -159,7 +159,7 @@ class ShowInstanceTopicDetailRespReplicas:
 
     @property
     def lag(self):
-        """Gets the lag of this ShowInstanceTopicDetailRespReplicas.
+        r"""Gets the lag of this ShowInstanceTopicDetailRespReplicas.
 
         该副本当前落后hw的消息数。
 
@@ -170,7 +170,7 @@ class ShowInstanceTopicDetailRespReplicas:
 
     @lag.setter
     def lag(self, lag):
-        """Sets the lag of this ShowInstanceTopicDetailRespReplicas.
+        r"""Sets the lag of this ShowInstanceTopicDetailRespReplicas.
 
         该副本当前落后hw的消息数。
 

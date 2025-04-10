@@ -29,7 +29,7 @@ class StateDetails:
     }
 
     def __init__(self, register_stat=None, purchase_stat=None, purchase_error=None):
-        """StateDetails
+        r"""StateDetails
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class StateDetails:
 
     @property
     def register_stat(self):
-        """Gets the register_stat of this StateDetails.
+        r"""Gets the register_stat of this StateDetails.
 
         IEC/IES节点注册状态
 
@@ -68,7 +68,7 @@ class StateDetails:
 
     @register_stat.setter
     def register_stat(self, register_stat):
-        """Sets the register_stat of this StateDetails.
+        r"""Sets the register_stat of this StateDetails.
 
         IEC/IES节点注册状态
 
@@ -79,7 +79,7 @@ class StateDetails:
 
     @property
     def purchase_stat(self):
-        """Gets the purchase_stat of this StateDetails.
+        r"""Gets the purchase_stat of this StateDetails.
 
         IEC/IES节点状态
 
@@ -90,7 +90,7 @@ class StateDetails:
 
     @purchase_stat.setter
     def purchase_stat(self, purchase_stat):
-        """Sets the purchase_stat of this StateDetails.
+        r"""Sets the purchase_stat of this StateDetails.
 
         IEC/IES节点状态
 
@@ -101,7 +101,7 @@ class StateDetails:
 
     @property
     def purchase_error(self):
-        """Gets the purchase_error of this StateDetails.
+        r"""Gets the purchase_error of this StateDetails.
 
         IEC/IES节点错误信息
 
@@ -112,7 +112,7 @@ class StateDetails:
 
     @purchase_error.setter
     def purchase_error(self, purchase_error):
-        """Sets the purchase_error of this StateDetails.
+        r"""Sets the purchase_error of this StateDetails.
 
         IEC/IES节点错误信息
 

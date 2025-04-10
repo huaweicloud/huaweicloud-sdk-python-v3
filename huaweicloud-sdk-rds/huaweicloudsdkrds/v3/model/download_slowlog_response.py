@@ -30,7 +30,7 @@ class DownloadSlowlogResponse(SdkResponse):
     }
 
     def __init__(self, list=None, status=None, count=None):
-        """DownloadSlowlogResponse
+        r"""DownloadSlowlogResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class DownloadSlowlogResponse(SdkResponse):
 
     @property
     def list(self):
-        """Gets the list of this DownloadSlowlogResponse.
+        r"""Gets the list of this DownloadSlowlogResponse.
 
         慢日志下载链接列表
 
@@ -69,7 +69,7 @@ class DownloadSlowlogResponse(SdkResponse):
 
     @list.setter
     def list(self, list):
-        """Sets the list of this DownloadSlowlogResponse.
+        r"""Sets the list of this DownloadSlowlogResponse.
 
         慢日志下载链接列表
 
@@ -80,7 +80,7 @@ class DownloadSlowlogResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this DownloadSlowlogResponse.
+        r"""Gets the status of this DownloadSlowlogResponse.
 
         - 慢日志下载链接生成状态。FINISH，表示下载链接已经生成完成。CREATING，表示正在生成文件，准备下载链接。FAILED，表示存在日志文件准备失败。
 
@@ -91,7 +91,7 @@ class DownloadSlowlogResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DownloadSlowlogResponse.
+        r"""Sets the status of this DownloadSlowlogResponse.
 
         - 慢日志下载链接生成状态。FINISH，表示下载链接已经生成完成。CREATING，表示正在生成文件，准备下载链接。FAILED，表示存在日志文件准备失败。
 
@@ -102,7 +102,7 @@ class DownloadSlowlogResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this DownloadSlowlogResponse.
+        r"""Gets the count of this DownloadSlowlogResponse.
 
         - 慢日志链接数量。
 
@@ -113,7 +113,7 @@ class DownloadSlowlogResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this DownloadSlowlogResponse.
+        r"""Sets the count of this DownloadSlowlogResponse.
 
         - 慢日志链接数量。
 

@@ -27,7 +27,7 @@ class OperateSubscriptionRequest:
     }
 
     def __init__(self, enterprise_project_id=None, body=None):
-        """OperateSubscriptionRequest
+        r"""OperateSubscriptionRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class OperateSubscriptionRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this OperateSubscriptionRequest.
+        r"""Gets the enterprise_project_id of this OperateSubscriptionRequest.
 
         创建订阅时所使用的企业项目id
 
@@ -61,7 +61,7 @@ class OperateSubscriptionRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this OperateSubscriptionRequest.
+        r"""Sets the enterprise_project_id of this OperateSubscriptionRequest.
 
         创建订阅时所使用的企业项目id
 
@@ -72,7 +72,7 @@ class OperateSubscriptionRequest:
 
     @property
     def body(self):
-        """Gets the body of this OperateSubscriptionRequest.
+        r"""Gets the body of this OperateSubscriptionRequest.
 
         :return: The body of this OperateSubscriptionRequest.
         :rtype: :class:`huaweicloudsdkeg.v1.SubscriptionOperateReq`
@@ -81,7 +81,7 @@ class OperateSubscriptionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this OperateSubscriptionRequest.
+        r"""Sets the body of this OperateSubscriptionRequest.
 
         :param body: The body of this OperateSubscriptionRequest.
         :type body: :class:`huaweicloudsdkeg.v1.SubscriptionOperateReq`

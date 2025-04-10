@@ -27,7 +27,7 @@ class DeleteAliasRequestBody:
     }
 
     def __init__(self, aliases=None, key_id=None):
-        """DeleteAliasRequestBody
+        r"""DeleteAliasRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteAliasRequestBody:
 
     @property
     def aliases(self):
-        """Gets the aliases of this DeleteAliasRequestBody.
+        r"""Gets the aliases of this DeleteAliasRequestBody.
 
         待删除的别名
 
@@ -59,7 +59,7 @@ class DeleteAliasRequestBody:
 
     @aliases.setter
     def aliases(self, aliases):
-        """Sets the aliases of this DeleteAliasRequestBody.
+        r"""Sets the aliases of this DeleteAliasRequestBody.
 
         待删除的别名
 
@@ -70,7 +70,7 @@ class DeleteAliasRequestBody:
 
     @property
     def key_id(self):
-        """Gets the key_id of this DeleteAliasRequestBody.
+        r"""Gets the key_id of this DeleteAliasRequestBody.
 
         别名关联的密钥ID
 
@@ -81,7 +81,7 @@ class DeleteAliasRequestBody:
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this DeleteAliasRequestBody.
+        r"""Sets the key_id of this DeleteAliasRequestBody.
 
         别名关联的密钥ID
 

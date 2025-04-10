@@ -27,7 +27,7 @@ class ChangeOsRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """ChangeOsRequest
+        r"""ChangeOsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ChangeOsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ChangeOsRequest.
+        r"""Gets the instance_id of this ChangeOsRequest.
 
         边缘实例ID。
 
@@ -60,7 +60,7 @@ class ChangeOsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ChangeOsRequest.
+        r"""Sets the instance_id of this ChangeOsRequest.
 
         边缘实例ID。
 
@@ -71,7 +71,7 @@ class ChangeOsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeOsRequest.
+        r"""Gets the body of this ChangeOsRequest.
 
         :return: The body of this ChangeOsRequest.
         :rtype: :class:`huaweicloudsdkiec.v1.ChangeOsOption`
@@ -80,7 +80,7 @@ class ChangeOsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeOsRequest.
+        r"""Sets the body of this ChangeOsRequest.
 
         :param body: The body of this ChangeOsRequest.
         :type body: :class:`huaweicloudsdkiec.v1.ChangeOsOption`

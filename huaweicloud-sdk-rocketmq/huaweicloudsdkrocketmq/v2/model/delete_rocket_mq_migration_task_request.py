@@ -27,7 +27,7 @@ class DeleteRocketMqMigrationTaskRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """DeleteRocketMqMigrationTaskRequest
+        r"""DeleteRocketMqMigrationTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteRocketMqMigrationTaskRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteRocketMqMigrationTaskRequest.
+        r"""Gets the instance_id of this DeleteRocketMqMigrationTaskRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class DeleteRocketMqMigrationTaskRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteRocketMqMigrationTaskRequest.
+        r"""Sets the instance_id of this DeleteRocketMqMigrationTaskRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class DeleteRocketMqMigrationTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteRocketMqMigrationTaskRequest.
+        r"""Gets the body of this DeleteRocketMqMigrationTaskRequest.
 
         :return: The body of this DeleteRocketMqMigrationTaskRequest.
         :rtype: :class:`huaweicloudsdkrocketmq.v2.MetadataDeleteReq`
@@ -80,7 +80,7 @@ class DeleteRocketMqMigrationTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteRocketMqMigrationTaskRequest.
+        r"""Sets the body of this DeleteRocketMqMigrationTaskRequest.
 
         :param body: The body of this DeleteRocketMqMigrationTaskRequest.
         :type body: :class:`huaweicloudsdkrocketmq.v2.MetadataDeleteReq`

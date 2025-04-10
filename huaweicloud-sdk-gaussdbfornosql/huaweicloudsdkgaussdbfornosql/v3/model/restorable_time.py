@@ -27,7 +27,7 @@ class RestorableTime:
     }
 
     def __init__(self, start_time=None, end_time=None):
-        """RestorableTime
+        r"""RestorableTime
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class RestorableTime:
 
     @property
     def start_time(self):
-        """Gets the start_time of this RestorableTime.
+        r"""Gets the start_time of this RestorableTime.
 
         可恢复时间段的开始时间点，UNIX时间戳格式，单位是毫秒，时区是UTC。
 
@@ -59,7 +59,7 @@ class RestorableTime:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this RestorableTime.
+        r"""Sets the start_time of this RestorableTime.
 
         可恢复时间段的开始时间点，UNIX时间戳格式，单位是毫秒，时区是UTC。
 
@@ -70,7 +70,7 @@ class RestorableTime:
 
     @property
     def end_time(self):
-        """Gets the end_time of this RestorableTime.
+        r"""Gets the end_time of this RestorableTime.
 
         可恢复时间段的结束时间点， UNIX时间戳格式，单位是毫秒，时区是UTC。
 
@@ -81,7 +81,7 @@ class RestorableTime:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this RestorableTime.
+        r"""Sets the end_time of this RestorableTime.
 
         可恢复时间段的结束时间点， UNIX时间戳格式，单位是毫秒，时区是UTC。
 

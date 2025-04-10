@@ -27,7 +27,7 @@ class CreateFileRequest:
     }
 
     def __init__(self, x_app_user_id=None, body=None):
-        """CreateFileRequest
+        r"""CreateFileRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateFileRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this CreateFileRequest.
+        r"""Gets the x_app_user_id of this CreateFileRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -61,7 +61,7 @@ class CreateFileRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this CreateFileRequest.
+        r"""Sets the x_app_user_id of this CreateFileRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -72,7 +72,7 @@ class CreateFileRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateFileRequest.
+        r"""Gets the body of this CreateFileRequest.
 
         :return: The body of this CreateFileRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.FilesCreateReq`
@@ -81,7 +81,7 @@ class CreateFileRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateFileRequest.
+        r"""Sets the body of this CreateFileRequest.
 
         :param body: The body of this CreateFileRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.FilesCreateReq`

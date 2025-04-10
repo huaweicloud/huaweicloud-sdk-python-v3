@@ -25,7 +25,7 @@ class ListResourcesRequest:
     }
 
     def __init__(self, workspace=None):
-        """ListResourcesRequest
+        r"""ListResourcesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListResourcesRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListResourcesRequest.
+        r"""Gets the workspace of this ListResourcesRequest.
 
         工作空间id
 
@@ -54,7 +54,7 @@ class ListResourcesRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListResourcesRequest.
+        r"""Sets the workspace of this ListResourcesRequest.
 
         工作空间id
 

@@ -34,7 +34,7 @@ class ExecuteGetVideosListResponse(SdkResponse):
     }
 
     def __init__(self, quota=None, total=None, offset=None, count=None, videos=None):
-        """ExecuteGetVideosListResponse
+        r"""ExecuteGetVideosListResponse
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class ExecuteGetVideosListResponse(SdkResponse):
 
     @property
     def quota(self):
-        """Gets the quota of this ExecuteGetVideosListResponse.
+        r"""Gets the quota of this ExecuteGetVideosListResponse.
 
         配额
 
@@ -78,7 +78,7 @@ class ExecuteGetVideosListResponse(SdkResponse):
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this ExecuteGetVideosListResponse.
+        r"""Sets the quota of this ExecuteGetVideosListResponse.
 
         配额
 
@@ -89,7 +89,7 @@ class ExecuteGetVideosListResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ExecuteGetVideosListResponse.
+        r"""Gets the total of this ExecuteGetVideosListResponse.
 
         总数
 
@@ -100,7 +100,7 @@ class ExecuteGetVideosListResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ExecuteGetVideosListResponse.
+        r"""Sets the total of this ExecuteGetVideosListResponse.
 
         总数
 
@@ -111,7 +111,7 @@ class ExecuteGetVideosListResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ExecuteGetVideosListResponse.
+        r"""Gets the offset of this ExecuteGetVideosListResponse.
 
         偏移
 
@@ -122,7 +122,7 @@ class ExecuteGetVideosListResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ExecuteGetVideosListResponse.
+        r"""Sets the offset of this ExecuteGetVideosListResponse.
 
         偏移
 
@@ -133,7 +133,7 @@ class ExecuteGetVideosListResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ExecuteGetVideosListResponse.
+        r"""Gets the count of this ExecuteGetVideosListResponse.
 
         返回数量
 
@@ -144,7 +144,7 @@ class ExecuteGetVideosListResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ExecuteGetVideosListResponse.
+        r"""Sets the count of this ExecuteGetVideosListResponse.
 
         返回数量
 
@@ -155,7 +155,7 @@ class ExecuteGetVideosListResponse(SdkResponse):
 
     @property
     def videos(self):
-        """Gets the videos of this ExecuteGetVideosListResponse.
+        r"""Gets the videos of this ExecuteGetVideosListResponse.
 
         视频列表
 
@@ -166,7 +166,7 @@ class ExecuteGetVideosListResponse(SdkResponse):
 
     @videos.setter
     def videos(self, videos):
-        """Sets the videos of this ExecuteGetVideosListResponse.
+        r"""Sets the videos of this ExecuteGetVideosListResponse.
 
         视频列表
 

@@ -25,7 +25,7 @@ class ShowTempRequest:
     }
 
     def __init__(self, template_id=None):
-        """ShowTempRequest
+        r"""ShowTempRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowTempRequest:
 
     @property
     def template_id(self):
-        """Gets the template_id of this ShowTempRequest.
+        r"""Gets the template_id of this ShowTempRequest.
 
         事务id
 
@@ -53,7 +53,7 @@ class ShowTempRequest:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this ShowTempRequest.
+        r"""Sets the template_id of this ShowTempRequest.
 
         事务id
 

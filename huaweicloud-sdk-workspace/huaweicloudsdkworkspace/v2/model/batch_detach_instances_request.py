@@ -25,7 +25,7 @@ class BatchDetachInstancesRequest:
     }
 
     def __init__(self, body=None):
-        """BatchDetachInstancesRequest
+        r"""BatchDetachInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDetachInstancesRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDetachInstancesRequest.
+        r"""Gets the body of this BatchDetachInstancesRequest.
 
         :return: The body of this BatchDetachInstancesRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.BatchDetachInstancesReq`
@@ -52,7 +52,7 @@ class BatchDetachInstancesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDetachInstancesRequest.
+        r"""Sets the body of this BatchDetachInstancesRequest.
 
         :param body: The body of this BatchDetachInstancesRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.BatchDetachInstancesReq`

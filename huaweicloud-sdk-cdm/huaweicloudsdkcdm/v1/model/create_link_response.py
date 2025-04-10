@@ -28,7 +28,7 @@ class CreateLinkResponse(SdkResponse):
     }
 
     def __init__(self, name=None, validation_result=None):
-        """CreateLinkResponse
+        r"""CreateLinkResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateLinkResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateLinkResponse.
+        r"""Gets the name of this CreateLinkResponse.
 
         连接名称
 
@@ -62,7 +62,7 @@ class CreateLinkResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateLinkResponse.
+        r"""Sets the name of this CreateLinkResponse.
 
         连接名称
 
@@ -73,7 +73,7 @@ class CreateLinkResponse(SdkResponse):
 
     @property
     def validation_result(self):
-        """Gets the validation_result of this CreateLinkResponse.
+        r"""Gets the validation_result of this CreateLinkResponse.
 
         校验结构：如果创建连接失败，返回失败原因，请参见validation-result参数说明。如果创建成功，返回空列表。
 
@@ -84,7 +84,7 @@ class CreateLinkResponse(SdkResponse):
 
     @validation_result.setter
     def validation_result(self, validation_result):
-        """Sets the validation_result of this CreateLinkResponse.
+        r"""Sets the validation_result of this CreateLinkResponse.
 
         校验结构：如果创建连接失败，返回失败原因，请参见validation-result参数说明。如果创建成功，返回空列表。
 

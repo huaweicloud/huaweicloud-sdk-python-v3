@@ -24,7 +24,7 @@ class CinderDeleteVolumeTransferResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CinderDeleteVolumeTransferResponse
+        r"""CinderDeleteVolumeTransferResponse
 
         The model defined in huaweicloud sdk
 

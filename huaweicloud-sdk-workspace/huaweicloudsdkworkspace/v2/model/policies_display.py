@@ -55,7 +55,7 @@ class PoliciesDisplay:
     }
 
     def __init__(self, display_level=None, options=None, rendering_acceleration_enable=None, rendering_acceleration_options=None, adaptive_bitrate_control_enable=None, adaptive_bitrate_control_options=None, video_card_memory_size=None, configuration1_enable=None, driver_delegation_mode_enable=None, driver_delegation_latency=None, video_latency=None, change_resolution_vm=None, application_recognition=None, duplicate_display_enable=None, default_mapping_order=None, duplicate_display_mode=None):
-        """PoliciesDisplay
+        r"""PoliciesDisplay
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class PoliciesDisplay:
 
     @property
     def display_level(self):
-        """Gets the display_level of this PoliciesDisplay.
+        r"""Gets the display_level of this PoliciesDisplay.
 
         显示级别。取值为： LEVEL1：表示等级1。 LEVEL2：表示等级2。 LEVEL3：表示等级3。 LEVEL4：表示等级4（默认/推荐）。 LEVEL5：表示等级5。
 
@@ -159,7 +159,7 @@ class PoliciesDisplay:
 
     @display_level.setter
     def display_level(self, display_level):
-        """Sets the display_level of this PoliciesDisplay.
+        r"""Sets the display_level of this PoliciesDisplay.
 
         显示级别。取值为： LEVEL1：表示等级1。 LEVEL2：表示等级2。 LEVEL3：表示等级3。 LEVEL4：表示等级4（默认/推荐）。 LEVEL5：表示等级5。
 
@@ -170,7 +170,7 @@ class PoliciesDisplay:
 
     @property
     def options(self):
-        """Gets the options of this PoliciesDisplay.
+        r"""Gets the options of this PoliciesDisplay.
 
         :return: The options of this PoliciesDisplay.
         :rtype: :class:`huaweicloudsdkworkspace.v2.PoliciesDisplayOptions`
@@ -179,7 +179,7 @@ class PoliciesDisplay:
 
     @options.setter
     def options(self, options):
-        """Sets the options of this PoliciesDisplay.
+        r"""Sets the options of this PoliciesDisplay.
 
         :param options: The options of this PoliciesDisplay.
         :type options: :class:`huaweicloudsdkworkspace.v2.PoliciesDisplayOptions`
@@ -188,7 +188,7 @@ class PoliciesDisplay:
 
     @property
     def rendering_acceleration_enable(self):
-        """Gets the rendering_acceleration_enable of this PoliciesDisplay.
+        r"""Gets the rendering_acceleration_enable of this PoliciesDisplay.
 
         是否开启渲染加速。取值为： false：表示关闭。 true：表示开启。
 
@@ -199,7 +199,7 @@ class PoliciesDisplay:
 
     @rendering_acceleration_enable.setter
     def rendering_acceleration_enable(self, rendering_acceleration_enable):
-        """Sets the rendering_acceleration_enable of this PoliciesDisplay.
+        r"""Sets the rendering_acceleration_enable of this PoliciesDisplay.
 
         是否开启渲染加速。取值为： false：表示关闭。 true：表示开启。
 
@@ -210,7 +210,7 @@ class PoliciesDisplay:
 
     @property
     def rendering_acceleration_options(self):
-        """Gets the rendering_acceleration_options of this PoliciesDisplay.
+        r"""Gets the rendering_acceleration_options of this PoliciesDisplay.
 
         :return: The rendering_acceleration_options of this PoliciesDisplay.
         :rtype: :class:`huaweicloudsdkworkspace.v2.PoliciesDisplayRenderingAccelerationOptions`
@@ -219,7 +219,7 @@ class PoliciesDisplay:
 
     @rendering_acceleration_options.setter
     def rendering_acceleration_options(self, rendering_acceleration_options):
-        """Sets the rendering_acceleration_options of this PoliciesDisplay.
+        r"""Sets the rendering_acceleration_options of this PoliciesDisplay.
 
         :param rendering_acceleration_options: The rendering_acceleration_options of this PoliciesDisplay.
         :type rendering_acceleration_options: :class:`huaweicloudsdkworkspace.v2.PoliciesDisplayRenderingAccelerationOptions`
@@ -228,7 +228,7 @@ class PoliciesDisplay:
 
     @property
     def adaptive_bitrate_control_enable(self):
-        """Gets the adaptive_bitrate_control_enable of this PoliciesDisplay.
+        r"""Gets the adaptive_bitrate_control_enable of this PoliciesDisplay.
 
         是否开启自适应流控。取值为： false：表示关闭。 true：表示开启。
 
@@ -239,7 +239,7 @@ class PoliciesDisplay:
 
     @adaptive_bitrate_control_enable.setter
     def adaptive_bitrate_control_enable(self, adaptive_bitrate_control_enable):
-        """Sets the adaptive_bitrate_control_enable of this PoliciesDisplay.
+        r"""Sets the adaptive_bitrate_control_enable of this PoliciesDisplay.
 
         是否开启自适应流控。取值为： false：表示关闭。 true：表示开启。
 
@@ -250,7 +250,7 @@ class PoliciesDisplay:
 
     @property
     def adaptive_bitrate_control_options(self):
-        """Gets the adaptive_bitrate_control_options of this PoliciesDisplay.
+        r"""Gets the adaptive_bitrate_control_options of this PoliciesDisplay.
 
         :return: The adaptive_bitrate_control_options of this PoliciesDisplay.
         :rtype: :class:`huaweicloudsdkworkspace.v2.PoliciesDisplayAdaptiveBitrateControlOptions`
@@ -259,7 +259,7 @@ class PoliciesDisplay:
 
     @adaptive_bitrate_control_options.setter
     def adaptive_bitrate_control_options(self, adaptive_bitrate_control_options):
-        """Sets the adaptive_bitrate_control_options of this PoliciesDisplay.
+        r"""Sets the adaptive_bitrate_control_options of this PoliciesDisplay.
 
         :param adaptive_bitrate_control_options: The adaptive_bitrate_control_options of this PoliciesDisplay.
         :type adaptive_bitrate_control_options: :class:`huaweicloudsdkworkspace.v2.PoliciesDisplayAdaptiveBitrateControlOptions`
@@ -268,7 +268,7 @@ class PoliciesDisplay:
 
     @property
     def video_card_memory_size(self):
-        """Gets the video_card_memory_size of this PoliciesDisplay.
+        r"""Gets the video_card_memory_size of this PoliciesDisplay.
 
         显卡缓存（MB）。取值范围为[0-64]。默认：64。
 
@@ -279,7 +279,7 @@ class PoliciesDisplay:
 
     @video_card_memory_size.setter
     def video_card_memory_size(self, video_card_memory_size):
-        """Sets the video_card_memory_size of this PoliciesDisplay.
+        r"""Sets the video_card_memory_size of this PoliciesDisplay.
 
         显卡缓存（MB）。取值范围为[0-64]。默认：64。
 
@@ -290,7 +290,7 @@ class PoliciesDisplay:
 
     @property
     def configuration1_enable(self):
-        """Gets the configuration1_enable of this PoliciesDisplay.
+        r"""Gets the configuration1_enable of this PoliciesDisplay.
 
         是否开启配置项1。取值为： false：表示关闭。 true：表示开启。
 
@@ -301,7 +301,7 @@ class PoliciesDisplay:
 
     @configuration1_enable.setter
     def configuration1_enable(self, configuration1_enable):
-        """Sets the configuration1_enable of this PoliciesDisplay.
+        r"""Sets the configuration1_enable of this PoliciesDisplay.
 
         是否开启配置项1。取值为： false：表示关闭。 true：表示开启。
 
@@ -312,7 +312,7 @@ class PoliciesDisplay:
 
     @property
     def driver_delegation_mode_enable(self):
-        """Gets the driver_delegation_mode_enable of this PoliciesDisplay.
+        r"""Gets the driver_delegation_mode_enable of this PoliciesDisplay.
 
         是否开启驱动托管模式。取值为： false：表示关闭。 true：表示开启。
 
@@ -323,7 +323,7 @@ class PoliciesDisplay:
 
     @driver_delegation_mode_enable.setter
     def driver_delegation_mode_enable(self, driver_delegation_mode_enable):
-        """Sets the driver_delegation_mode_enable of this PoliciesDisplay.
+        r"""Sets the driver_delegation_mode_enable of this PoliciesDisplay.
 
         是否开启驱动托管模式。取值为： false：表示关闭。 true：表示开启。
 
@@ -334,7 +334,7 @@ class PoliciesDisplay:
 
     @property
     def driver_delegation_latency(self):
-        """Gets the driver_delegation_latency of this PoliciesDisplay.
+        r"""Gets the driver_delegation_latency of this PoliciesDisplay.
 
         驱动托管延时（*30ms）。取值范围为[1-100]。默认：80。
 
@@ -345,7 +345,7 @@ class PoliciesDisplay:
 
     @driver_delegation_latency.setter
     def driver_delegation_latency(self, driver_delegation_latency):
-        """Sets the driver_delegation_latency of this PoliciesDisplay.
+        r"""Sets the driver_delegation_latency of this PoliciesDisplay.
 
         驱动托管延时（*30ms）。取值范围为[1-100]。默认：80。
 
@@ -356,7 +356,7 @@ class PoliciesDisplay:
 
     @property
     def video_latency(self):
-        """Gets the video_latency of this PoliciesDisplay.
+        r"""Gets the video_latency of this PoliciesDisplay.
 
         驱动托管视频延时（*30ms）。取值范围为[1-100]。默认：80。
 
@@ -367,7 +367,7 @@ class PoliciesDisplay:
 
     @video_latency.setter
     def video_latency(self, video_latency):
-        """Sets the video_latency of this PoliciesDisplay.
+        r"""Sets the video_latency of this PoliciesDisplay.
 
         驱动托管视频延时（*30ms）。取值范围为[1-100]。默认：80。
 
@@ -378,7 +378,7 @@ class PoliciesDisplay:
 
     @property
     def change_resolution_vm(self):
-        """Gets the change_resolution_vm of this PoliciesDisplay.
+        r"""Gets the change_resolution_vm of this PoliciesDisplay.
 
         计算机修改分辨率：取值为： false：表示关闭。 true：表示开启。
 
@@ -389,7 +389,7 @@ class PoliciesDisplay:
 
     @change_resolution_vm.setter
     def change_resolution_vm(self, change_resolution_vm):
-        """Sets the change_resolution_vm of this PoliciesDisplay.
+        r"""Sets the change_resolution_vm of this PoliciesDisplay.
 
         计算机修改分辨率：取值为： false：表示关闭。 true：表示开启。
 
@@ -400,7 +400,7 @@ class PoliciesDisplay:
 
     @property
     def application_recognition(self):
-        """Gets the application_recognition of this PoliciesDisplay.
+        r"""Gets the application_recognition of this PoliciesDisplay.
 
         应用感知配置。
 
@@ -411,7 +411,7 @@ class PoliciesDisplay:
 
     @application_recognition.setter
     def application_recognition(self, application_recognition):
-        """Sets the application_recognition of this PoliciesDisplay.
+        r"""Sets the application_recognition of this PoliciesDisplay.
 
         应用感知配置。
 
@@ -422,7 +422,7 @@ class PoliciesDisplay:
 
     @property
     def duplicate_display_enable(self):
-        """Gets the duplicate_display_enable of this PoliciesDisplay.
+        r"""Gets the duplicate_display_enable of this PoliciesDisplay.
 
         同屏显示。取值为： false：表示关闭。 true：表示开启。
 
@@ -433,7 +433,7 @@ class PoliciesDisplay:
 
     @duplicate_display_enable.setter
     def duplicate_display_enable(self, duplicate_display_enable):
-        """Sets the duplicate_display_enable of this PoliciesDisplay.
+        r"""Sets the duplicate_display_enable of this PoliciesDisplay.
 
         同屏显示。取值为： false：表示关闭。 true：表示开启。
 
@@ -444,7 +444,7 @@ class PoliciesDisplay:
 
     @property
     def default_mapping_order(self):
-        """Gets the default_mapping_order of this PoliciesDisplay.
+        r"""Gets the default_mapping_order of this PoliciesDisplay.
 
         默认屏幕映射顺序。默认：1,2,3,4。
 
@@ -455,7 +455,7 @@ class PoliciesDisplay:
 
     @default_mapping_order.setter
     def default_mapping_order(self, default_mapping_order):
-        """Sets the default_mapping_order of this PoliciesDisplay.
+        r"""Sets the default_mapping_order of this PoliciesDisplay.
 
         默认屏幕映射顺序。默认：1,2,3,4。
 
@@ -466,7 +466,7 @@ class PoliciesDisplay:
 
     @property
     def duplicate_display_mode(self):
-        """Gets the duplicate_display_mode of this PoliciesDisplay.
+        r"""Gets the duplicate_display_mode of this PoliciesDisplay.
 
         同屏显示模式。取值为： One-to-One：表示仅支持单路。 One-to-Many：表示支持多路。
 
@@ -477,7 +477,7 @@ class PoliciesDisplay:
 
     @duplicate_display_mode.setter
     def duplicate_display_mode(self, duplicate_display_mode):
-        """Sets the duplicate_display_mode of this PoliciesDisplay.
+        r"""Sets the duplicate_display_mode of this PoliciesDisplay.
 
         同屏显示模式。取值为： One-to-One：表示仅支持单路。 One-to-Many：表示支持多路。
 

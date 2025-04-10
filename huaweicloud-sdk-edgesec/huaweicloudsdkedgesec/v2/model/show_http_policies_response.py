@@ -28,7 +28,7 @@ class ShowHttpPoliciesResponse(SdkResponse):
     }
 
     def __init__(self, total=None, items=None):
-        """ShowHttpPoliciesResponse
+        r"""ShowHttpPoliciesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowHttpPoliciesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowHttpPoliciesResponse.
+        r"""Gets the total of this ShowHttpPoliciesResponse.
 
         防护策略的数量
 
@@ -62,7 +62,7 @@ class ShowHttpPoliciesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowHttpPoliciesResponse.
+        r"""Sets the total of this ShowHttpPoliciesResponse.
 
         防护策略的数量
 
@@ -73,7 +73,7 @@ class ShowHttpPoliciesResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ShowHttpPoliciesResponse.
+        r"""Gets the items of this ShowHttpPoliciesResponse.
 
         防护策略的具体内容
 
@@ -84,7 +84,7 @@ class ShowHttpPoliciesResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ShowHttpPoliciesResponse.
+        r"""Sets the items of this ShowHttpPoliciesResponse.
 
         防护策略的具体内容
 

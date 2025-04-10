@@ -26,7 +26,7 @@ class BatchAddPeersToChannelResponse(SdkResponse):
     }
 
     def __init__(self, operation_id=None):
-        """BatchAddPeersToChannelResponse
+        r"""BatchAddPeersToChannelResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchAddPeersToChannelResponse(SdkResponse):
 
     @property
     def operation_id(self):
-        """Gets the operation_id of this BatchAddPeersToChannelResponse.
+        r"""Gets the operation_id of this BatchAddPeersToChannelResponse.
 
         操作记录id
 
@@ -55,7 +55,7 @@ class BatchAddPeersToChannelResponse(SdkResponse):
 
     @operation_id.setter
     def operation_id(self, operation_id):
-        """Sets the operation_id of this BatchAddPeersToChannelResponse.
+        r"""Sets the operation_id of this BatchAddPeersToChannelResponse.
 
         操作记录id
 

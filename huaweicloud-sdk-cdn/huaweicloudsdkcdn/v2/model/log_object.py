@@ -35,7 +35,7 @@ class LogObject:
     }
 
     def __init__(self, domain_name=None, start_time=None, end_time=None, name=None, size=None, link=None):
-        """LogObject
+        r"""LogObject
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class LogObject:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this LogObject.
+        r"""Gets the domain_name of this LogObject.
 
         域名名称。
 
@@ -89,7 +89,7 @@ class LogObject:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this LogObject.
+        r"""Sets the domain_name of this LogObject.
 
         域名名称。
 
@@ -100,7 +100,7 @@ class LogObject:
 
     @property
     def start_time(self):
-        """Gets the start_time of this LogObject.
+        r"""Gets the start_time of this LogObject.
 
         查询起始时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
 
@@ -111,7 +111,7 @@ class LogObject:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this LogObject.
+        r"""Sets the start_time of this LogObject.
 
         查询起始时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
 
@@ -122,7 +122,7 @@ class LogObject:
 
     @property
     def end_time(self):
-        """Gets the end_time of this LogObject.
+        r"""Gets the end_time of this LogObject.
 
         查询结束时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
 
@@ -133,7 +133,7 @@ class LogObject:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this LogObject.
+        r"""Sets the end_time of this LogObject.
 
         查询结束时间，相对于UTC 1970-01-01到当前时间相隔的毫秒数。
 
@@ -144,7 +144,7 @@ class LogObject:
 
     @property
     def name(self):
-        """Gets the name of this LogObject.
+        r"""Gets the name of this LogObject.
 
         日志文件名字。
 
@@ -155,7 +155,7 @@ class LogObject:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this LogObject.
+        r"""Sets the name of this LogObject.
 
         日志文件名字。
 
@@ -166,7 +166,7 @@ class LogObject:
 
     @property
     def size(self):
-        """Gets the size of this LogObject.
+        r"""Gets the size of this LogObject.
 
         文件大小(Byte)。
 
@@ -177,7 +177,7 @@ class LogObject:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this LogObject.
+        r"""Sets the size of this LogObject.
 
         文件大小(Byte)。
 
@@ -188,7 +188,7 @@ class LogObject:
 
     @property
     def link(self):
-        """Gets the link of this LogObject.
+        r"""Gets the link of this LogObject.
 
         下载链接。
 
@@ -199,7 +199,7 @@ class LogObject:
 
     @link.setter
     def link(self, link):
-        """Sets the link of this LogObject.
+        r"""Sets the link of this LogObject.
 
         下载链接。
 

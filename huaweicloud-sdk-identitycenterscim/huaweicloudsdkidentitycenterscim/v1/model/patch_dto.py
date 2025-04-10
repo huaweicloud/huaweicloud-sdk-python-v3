@@ -25,7 +25,7 @@ class PatchDto:
     }
 
     def __init__(self, supported=None):
-        """PatchDto
+        r"""PatchDto
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PatchDto:
 
     @property
     def supported(self):
-        """Gets the supported of this PatchDto.
+        r"""Gets the supported of this PatchDto.
 
         一个布尔值，表示服务提供商是否支持这种操作
 
@@ -54,7 +54,7 @@ class PatchDto:
 
     @supported.setter
     def supported(self, supported):
-        """Sets the supported of this PatchDto.
+        r"""Sets the supported of this PatchDto.
 
         一个布尔值，表示服务提供商是否支持这种操作
 

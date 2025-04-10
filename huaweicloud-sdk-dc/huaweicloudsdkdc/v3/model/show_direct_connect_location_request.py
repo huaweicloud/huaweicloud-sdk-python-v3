@@ -25,7 +25,7 @@ class ShowDirectConnectLocationRequest:
     }
 
     def __init__(self, direct_connect_location_id=None):
-        """ShowDirectConnectLocationRequest
+        r"""ShowDirectConnectLocationRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowDirectConnectLocationRequest:
 
     @property
     def direct_connect_location_id(self):
-        """Gets the direct_connect_location_id of this ShowDirectConnectLocationRequest.
+        r"""Gets the direct_connect_location_id of this ShowDirectConnectLocationRequest.
 
         direct-connect-locationID。
 
@@ -53,7 +53,7 @@ class ShowDirectConnectLocationRequest:
 
     @direct_connect_location_id.setter
     def direct_connect_location_id(self, direct_connect_location_id):
-        """Sets the direct_connect_location_id of this ShowDirectConnectLocationRequest.
+        r"""Sets the direct_connect_location_id of this ShowDirectConnectLocationRequest.
 
         direct-connect-locationID。
 

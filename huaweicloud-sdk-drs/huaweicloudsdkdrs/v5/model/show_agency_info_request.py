@@ -27,7 +27,7 @@ class ShowAgencyInfoRequest:
     }
 
     def __init__(self, x_language=None, agency_name=None):
-        """ShowAgencyInfoRequest
+        r"""ShowAgencyInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowAgencyInfoRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowAgencyInfoRequest.
+        r"""Gets the x_language of this ShowAgencyInfoRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -60,7 +60,7 @@ class ShowAgencyInfoRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowAgencyInfoRequest.
+        r"""Sets the x_language of this ShowAgencyInfoRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -71,7 +71,7 @@ class ShowAgencyInfoRequest:
 
     @property
     def agency_name(self):
-        """Gets the agency_name of this ShowAgencyInfoRequest.
+        r"""Gets the agency_name of this ShowAgencyInfoRequest.
 
         委托名称。
 
@@ -82,7 +82,7 @@ class ShowAgencyInfoRequest:
 
     @agency_name.setter
     def agency_name(self, agency_name):
-        """Sets the agency_name of this ShowAgencyInfoRequest.
+        r"""Sets the agency_name of this ShowAgencyInfoRequest.
 
         委托名称。
 

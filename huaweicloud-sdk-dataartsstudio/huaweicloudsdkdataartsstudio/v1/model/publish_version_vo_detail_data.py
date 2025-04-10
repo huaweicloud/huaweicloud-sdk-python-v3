@@ -25,7 +25,7 @@ class PublishVersionVODetailData:
     }
 
     def __init__(self, value=None):
-        """PublishVersionVODetailData
+        r"""PublishVersionVODetailData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PublishVersionVODetailData:
 
     @property
     def value(self):
-        """Gets the value of this PublishVersionVODetailData.
+        r"""Gets the value of this PublishVersionVODetailData.
 
         :return: The value of this PublishVersionVODetailData.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.PublishVersionVO`
@@ -52,7 +52,7 @@ class PublishVersionVODetailData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this PublishVersionVODetailData.
+        r"""Sets the value of this PublishVersionVODetailData.
 
         :param value: The value of this PublishVersionVODetailData.
         :type value: :class:`huaweicloudsdkdataartsstudio.v1.PublishVersionVO`

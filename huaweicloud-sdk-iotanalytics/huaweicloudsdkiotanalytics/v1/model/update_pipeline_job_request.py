@@ -29,7 +29,7 @@ class UpdatePipelineJobRequest:
     }
 
     def __init__(self, check=None, pipeline_id=None, body=None):
-        """UpdatePipelineJobRequest
+        r"""UpdatePipelineJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdatePipelineJobRequest:
 
     @property
     def check(self):
-        """Gets the check of this UpdatePipelineJobRequest.
+        r"""Gets the check of this UpdatePipelineJobRequest.
 
         是否需要校验配置是否正确
 
@@ -67,7 +67,7 @@ class UpdatePipelineJobRequest:
 
     @check.setter
     def check(self, check):
-        """Sets the check of this UpdatePipelineJobRequest.
+        r"""Sets the check of this UpdatePipelineJobRequest.
 
         是否需要校验配置是否正确
 
@@ -78,7 +78,7 @@ class UpdatePipelineJobRequest:
 
     @property
     def pipeline_id(self):
-        """Gets the pipeline_id of this UpdatePipelineJobRequest.
+        r"""Gets the pipeline_id of this UpdatePipelineJobRequest.
 
         管道ID
 
@@ -89,7 +89,7 @@ class UpdatePipelineJobRequest:
 
     @pipeline_id.setter
     def pipeline_id(self, pipeline_id):
-        """Sets the pipeline_id of this UpdatePipelineJobRequest.
+        r"""Sets the pipeline_id of this UpdatePipelineJobRequest.
 
         管道ID
 
@@ -100,7 +100,7 @@ class UpdatePipelineJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePipelineJobRequest.
+        r"""Gets the body of this UpdatePipelineJobRequest.
 
         管道作业详细配置，每个作业可选择不同的算子进行组合，各算子的使用方法详见：数据管道算子配置指南。
 
@@ -111,7 +111,7 @@ class UpdatePipelineJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePipelineJobRequest.
+        r"""Sets the body of this UpdatePipelineJobRequest.
 
         管道作业详细配置，每个作业可选择不同的算子进行组合，各算子的使用方法详见：数据管道算子配置指南。
 

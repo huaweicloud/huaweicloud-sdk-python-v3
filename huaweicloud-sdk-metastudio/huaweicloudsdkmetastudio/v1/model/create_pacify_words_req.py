@@ -33,7 +33,7 @@ class CreatePacifyWordsReq:
     }
 
     def __init__(self, robot_id=None, pacify_words_type=None, intent=None, pacify_words=None, language=None):
-        """CreatePacifyWordsReq
+        r"""CreatePacifyWordsReq
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class CreatePacifyWordsReq:
 
     @property
     def robot_id(self):
-        """Gets the robot_id of this CreatePacifyWordsReq.
+        r"""Gets the robot_id of this CreatePacifyWordsReq.
 
         应用ID。
 
@@ -78,7 +78,7 @@ class CreatePacifyWordsReq:
 
     @robot_id.setter
     def robot_id(self, robot_id):
-        """Sets the robot_id of this CreatePacifyWordsReq.
+        r"""Sets the robot_id of this CreatePacifyWordsReq.
 
         应用ID。
 
@@ -89,7 +89,7 @@ class CreatePacifyWordsReq:
 
     @property
     def pacify_words_type(self):
-        """Gets the pacify_words_type of this CreatePacifyWordsReq.
+        r"""Gets the pacify_words_type of this CreatePacifyWordsReq.
 
         安抚话术类型 > 0:通用安抚话术, 1:意图匹配安抚话术
 
@@ -100,7 +100,7 @@ class CreatePacifyWordsReq:
 
     @pacify_words_type.setter
     def pacify_words_type(self, pacify_words_type):
-        """Sets the pacify_words_type of this CreatePacifyWordsReq.
+        r"""Sets the pacify_words_type of this CreatePacifyWordsReq.
 
         安抚话术类型 > 0:通用安抚话术, 1:意图匹配安抚话术
 
@@ -111,7 +111,7 @@ class CreatePacifyWordsReq:
 
     @property
     def intent(self):
-        """Gets the intent of this CreatePacifyWordsReq.
+        r"""Gets the intent of this CreatePacifyWordsReq.
 
         意图名称
 
@@ -122,7 +122,7 @@ class CreatePacifyWordsReq:
 
     @intent.setter
     def intent(self, intent):
-        """Sets the intent of this CreatePacifyWordsReq.
+        r"""Sets the intent of this CreatePacifyWordsReq.
 
         意图名称
 
@@ -133,7 +133,7 @@ class CreatePacifyWordsReq:
 
     @property
     def pacify_words(self):
-        """Gets the pacify_words of this CreatePacifyWordsReq.
+        r"""Gets the pacify_words of this CreatePacifyWordsReq.
 
         安抚话术。
 
@@ -144,7 +144,7 @@ class CreatePacifyWordsReq:
 
     @pacify_words.setter
     def pacify_words(self, pacify_words):
-        """Sets the pacify_words of this CreatePacifyWordsReq.
+        r"""Sets the pacify_words of this CreatePacifyWordsReq.
 
         安抚话术。
 
@@ -155,7 +155,7 @@ class CreatePacifyWordsReq:
 
     @property
     def language(self):
-        """Gets the language of this CreatePacifyWordsReq.
+        r"""Gets the language of this CreatePacifyWordsReq.
 
         :return: The language of this CreatePacifyWordsReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
@@ -164,7 +164,7 @@ class CreatePacifyWordsReq:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this CreatePacifyWordsReq.
+        r"""Sets the language of this CreatePacifyWordsReq.
 
         :param language: The language of this CreatePacifyWordsReq.
         :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`

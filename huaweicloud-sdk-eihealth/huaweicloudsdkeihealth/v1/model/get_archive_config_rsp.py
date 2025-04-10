@@ -27,7 +27,7 @@ class GetArchiveConfigRsp:
     }
 
     def __init__(self, region_id=None, current_region=None):
-        """GetArchiveConfigRsp
+        r"""GetArchiveConfigRsp
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class GetArchiveConfigRsp:
 
     @property
     def region_id(self):
-        """Gets the region_id of this GetArchiveConfigRsp.
+        r"""Gets the region_id of this GetArchiveConfigRsp.
 
         华为云项目
 
@@ -61,7 +61,7 @@ class GetArchiveConfigRsp:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this GetArchiveConfigRsp.
+        r"""Sets the region_id of this GetArchiveConfigRsp.
 
         华为云项目
 
@@ -72,7 +72,7 @@ class GetArchiveConfigRsp:
 
     @property
     def current_region(self):
-        """Gets the current_region of this GetArchiveConfigRsp.
+        r"""Gets the current_region of this GetArchiveConfigRsp.
 
         该区域是否是当前设置的归档区域
 
@@ -83,7 +83,7 @@ class GetArchiveConfigRsp:
 
     @current_region.setter
     def current_region(self, current_region):
-        """Sets the current_region of this GetArchiveConfigRsp.
+        r"""Sets the current_region of this GetArchiveConfigRsp.
 
         该区域是否是当前设置的归档区域
 

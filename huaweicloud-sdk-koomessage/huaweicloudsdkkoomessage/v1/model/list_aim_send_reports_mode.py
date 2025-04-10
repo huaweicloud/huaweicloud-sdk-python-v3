@@ -27,7 +27,7 @@ class ListAimSendReportsMode:
     }
 
     def __init__(self, data_list=None, page_info=None):
-        """ListAimSendReportsMode
+        r"""ListAimSendReportsMode
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListAimSendReportsMode:
 
     @property
     def data_list(self):
-        """Gets the data_list of this ListAimSendReportsMode.
+        r"""Gets the data_list of this ListAimSendReportsMode.
 
         数据列表。
 
@@ -61,7 +61,7 @@ class ListAimSendReportsMode:
 
     @data_list.setter
     def data_list(self, data_list):
-        """Sets the data_list of this ListAimSendReportsMode.
+        r"""Sets the data_list of this ListAimSendReportsMode.
 
         数据列表。
 
@@ -72,7 +72,7 @@ class ListAimSendReportsMode:
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListAimSendReportsMode.
+        r"""Gets the page_info of this ListAimSendReportsMode.
 
         :return: The page_info of this ListAimSendReportsMode.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.Page`
@@ -81,7 +81,7 @@ class ListAimSendReportsMode:
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListAimSendReportsMode.
+        r"""Sets the page_info of this ListAimSendReportsMode.
 
         :param page_info: The page_info of this ListAimSendReportsMode.
         :type page_info: :class:`huaweicloudsdkkoomessage.v1.Page`

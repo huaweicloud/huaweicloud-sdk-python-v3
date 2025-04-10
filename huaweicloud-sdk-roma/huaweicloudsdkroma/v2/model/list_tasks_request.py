@@ -53,7 +53,7 @@ class ListTasksRequest:
     }
 
     def __init__(self, instance_id=None, limit=None, offset=None, task_id=None, name=None, status=None, task_type=None, source_datasource_id=None, target_datasource_id=None, sort_field=None, sort_type=None, execute_status=None, source_app_id=None, target_app_id=None, task_tag=None):
-        """ListTasksRequest
+        r"""ListTasksRequest
 
         The model defined in huaweicloud sdk
 
@@ -140,7 +140,7 @@ class ListTasksRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListTasksRequest.
+        r"""Gets the instance_id of this ListTasksRequest.
 
         实例ID
 
@@ -151,7 +151,7 @@ class ListTasksRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListTasksRequest.
+        r"""Sets the instance_id of this ListTasksRequest.
 
         实例ID
 
@@ -162,7 +162,7 @@ class ListTasksRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTasksRequest.
+        r"""Gets the limit of this ListTasksRequest.
 
         每页显示条目数量，最大数量999，超过999后只返回999
 
@@ -173,7 +173,7 @@ class ListTasksRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTasksRequest.
+        r"""Sets the limit of this ListTasksRequest.
 
         每页显示条目数量，最大数量999，超过999后只返回999
 
@@ -184,7 +184,7 @@ class ListTasksRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTasksRequest.
+        r"""Gets the offset of this ListTasksRequest.
 
         分页查询，分页的偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -195,7 +195,7 @@ class ListTasksRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTasksRequest.
+        r"""Sets the offset of this ListTasksRequest.
 
         分页查询，分页的偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -206,7 +206,7 @@ class ListTasksRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ListTasksRequest.
+        r"""Gets the task_id of this ListTasksRequest.
 
         任务ID，可为空
 
@@ -217,7 +217,7 @@ class ListTasksRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ListTasksRequest.
+        r"""Sets the task_id of this ListTasksRequest.
 
         任务ID，可为空
 
@@ -228,7 +228,7 @@ class ListTasksRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListTasksRequest.
+        r"""Gets the name of this ListTasksRequest.
 
         模糊匹配任务名称，可为空
 
@@ -239,7 +239,7 @@ class ListTasksRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListTasksRequest.
+        r"""Sets the name of this ListTasksRequest.
 
         模糊匹配任务名称，可为空
 
@@ -250,7 +250,7 @@ class ListTasksRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListTasksRequest.
+        r"""Gets the status of this ListTasksRequest.
 
         任务状态，可为空 - 0 （停止/未启动） - 1 （运行中）
 
@@ -261,7 +261,7 @@ class ListTasksRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListTasksRequest.
+        r"""Sets the status of this ListTasksRequest.
 
         任务状态，可为空 - 0 （停止/未启动） - 1 （运行中）
 
@@ -272,7 +272,7 @@ class ListTasksRequest:
 
     @property
     def task_type(self):
-        """Gets the task_type of this ListTasksRequest.
+        r"""Gets the task_type of this ListTasksRequest.
 
         任务类型 - realtime (实时) - timing (定时)
 
@@ -283,7 +283,7 @@ class ListTasksRequest:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this ListTasksRequest.
+        r"""Sets the task_type of this ListTasksRequest.
 
         任务类型 - realtime (实时) - timing (定时)
 
@@ -294,7 +294,7 @@ class ListTasksRequest:
 
     @property
     def source_datasource_id(self):
-        """Gets the source_datasource_id of this ListTasksRequest.
+        r"""Gets the source_datasource_id of this ListTasksRequest.
 
         源端数据源ID，可为空
 
@@ -305,7 +305,7 @@ class ListTasksRequest:
 
     @source_datasource_id.setter
     def source_datasource_id(self, source_datasource_id):
-        """Sets the source_datasource_id of this ListTasksRequest.
+        r"""Sets the source_datasource_id of this ListTasksRequest.
 
         源端数据源ID，可为空
 
@@ -316,7 +316,7 @@ class ListTasksRequest:
 
     @property
     def target_datasource_id(self):
-        """Gets the target_datasource_id of this ListTasksRequest.
+        r"""Gets the target_datasource_id of this ListTasksRequest.
 
         目标端数据源ID，可为空
 
@@ -327,7 +327,7 @@ class ListTasksRequest:
 
     @target_datasource_id.setter
     def target_datasource_id(self, target_datasource_id):
-        """Sets the target_datasource_id of this ListTasksRequest.
+        r"""Sets the target_datasource_id of this ListTasksRequest.
 
         目标端数据源ID，可为空
 
@@ -338,7 +338,7 @@ class ListTasksRequest:
 
     @property
     def sort_field(self):
-        """Gets the sort_field of this ListTasksRequest.
+        r"""Gets the sort_field of this ListTasksRequest.
 
         查询排序的条件
 
@@ -349,7 +349,7 @@ class ListTasksRequest:
 
     @sort_field.setter
     def sort_field(self, sort_field):
-        """Sets the sort_field of this ListTasksRequest.
+        r"""Sets the sort_field of this ListTasksRequest.
 
         查询排序的条件
 
@@ -360,7 +360,7 @@ class ListTasksRequest:
 
     @property
     def sort_type(self):
-        """Gets the sort_type of this ListTasksRequest.
+        r"""Gets the sort_type of this ListTasksRequest.
 
         排序类型，可为空 - ASC (升序) - DESC (降序)
 
@@ -371,7 +371,7 @@ class ListTasksRequest:
 
     @sort_type.setter
     def sort_type(self, sort_type):
-        """Sets the sort_type of this ListTasksRequest.
+        r"""Sets the sort_type of this ListTasksRequest.
 
         排序类型，可为空 - ASC (升序) - DESC (降序)
 
@@ -382,7 +382,7 @@ class ListTasksRequest:
 
     @property
     def execute_status(self):
-        """Gets the execute_status of this ListTasksRequest.
+        r"""Gets the execute_status of this ListTasksRequest.
 
         执行状态，可为空 - UNSTARTED (未启动) - WAITING (等待执行) - RUNNING (执行中) - SUCCESS (执行成功) - CANCELLED (任务取消) - ERROR (执行异常)
 
@@ -393,7 +393,7 @@ class ListTasksRequest:
 
     @execute_status.setter
     def execute_status(self, execute_status):
-        """Sets the execute_status of this ListTasksRequest.
+        r"""Sets the execute_status of this ListTasksRequest.
 
         执行状态，可为空 - UNSTARTED (未启动) - WAITING (等待执行) - RUNNING (执行中) - SUCCESS (执行成功) - CANCELLED (任务取消) - ERROR (执行异常)
 
@@ -404,7 +404,7 @@ class ListTasksRequest:
 
     @property
     def source_app_id(self):
-        """Gets the source_app_id of this ListTasksRequest.
+        r"""Gets the source_app_id of this ListTasksRequest.
 
         源端数据源所属集成应用ID，可为空
 
@@ -415,7 +415,7 @@ class ListTasksRequest:
 
     @source_app_id.setter
     def source_app_id(self, source_app_id):
-        """Sets the source_app_id of this ListTasksRequest.
+        r"""Sets the source_app_id of this ListTasksRequest.
 
         源端数据源所属集成应用ID，可为空
 
@@ -426,7 +426,7 @@ class ListTasksRequest:
 
     @property
     def target_app_id(self):
-        """Gets the target_app_id of this ListTasksRequest.
+        r"""Gets the target_app_id of this ListTasksRequest.
 
         目标端数据源所属集成应用ID，可为空
 
@@ -437,7 +437,7 @@ class ListTasksRequest:
 
     @target_app_id.setter
     def target_app_id(self, target_app_id):
-        """Sets the target_app_id of this ListTasksRequest.
+        r"""Sets the target_app_id of this ListTasksRequest.
 
         目标端数据源所属集成应用ID，可为空
 
@@ -448,7 +448,7 @@ class ListTasksRequest:
 
     @property
     def task_tag(self):
-        """Gets the task_tag of this ListTasksRequest.
+        r"""Gets the task_tag of this ListTasksRequest.
 
         任务标签，可为空
 
@@ -459,7 +459,7 @@ class ListTasksRequest:
 
     @task_tag.setter
     def task_tag(self, task_tag):
-        """Sets the task_tag of this ListTasksRequest.
+        r"""Sets the task_tag of this ListTasksRequest.
 
         任务标签，可为空
 

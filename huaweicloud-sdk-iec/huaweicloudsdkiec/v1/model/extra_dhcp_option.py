@@ -27,7 +27,7 @@ class ExtraDhcpOption:
     }
 
     def __init__(self, opt_name=None, opt_value=None):
-        """ExtraDhcpOption
+        r"""ExtraDhcpOption
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ExtraDhcpOption:
 
     @property
     def opt_name(self):
-        """Gets the opt_name of this ExtraDhcpOption.
+        r"""Gets the opt_name of this ExtraDhcpOption.
 
         Option名称
 
@@ -61,7 +61,7 @@ class ExtraDhcpOption:
 
     @opt_name.setter
     def opt_name(self, opt_name):
-        """Sets the opt_name of this ExtraDhcpOption.
+        r"""Sets the opt_name of this ExtraDhcpOption.
 
         Option名称
 
@@ -72,7 +72,7 @@ class ExtraDhcpOption:
 
     @property
     def opt_value(self):
-        """Gets the opt_value of this ExtraDhcpOption.
+        r"""Gets the opt_value of this ExtraDhcpOption.
 
         Option值
 
@@ -83,7 +83,7 @@ class ExtraDhcpOption:
 
     @opt_value.setter
     def opt_value(self, opt_value):
-        """Sets the opt_value of this ExtraDhcpOption.
+        r"""Sets the opt_value of this ExtraDhcpOption.
 
         Option值
 

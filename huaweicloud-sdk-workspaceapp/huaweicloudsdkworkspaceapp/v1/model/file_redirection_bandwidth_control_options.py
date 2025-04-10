@@ -25,7 +25,7 @@ class FileRedirectionBandwidthControlOptions:
     }
 
     def __init__(self, file_redirection_bandwidth_control_value=None):
-        """FileRedirectionBandwidthControlOptions
+        r"""FileRedirectionBandwidthControlOptions
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class FileRedirectionBandwidthControlOptions:
 
     @property
     def file_redirection_bandwidth_control_value(self):
-        """Gets the file_redirection_bandwidth_control_value of this FileRedirectionBandwidthControlOptions.
+        r"""Gets the file_redirection_bandwidth_control_value of this FileRedirectionBandwidthControlOptions.
 
         文件重定向带宽控制量（Kbps）。取值范围为[500-20000]。默认：10000。
 
@@ -54,7 +54,7 @@ class FileRedirectionBandwidthControlOptions:
 
     @file_redirection_bandwidth_control_value.setter
     def file_redirection_bandwidth_control_value(self, file_redirection_bandwidth_control_value):
-        """Sets the file_redirection_bandwidth_control_value of this FileRedirectionBandwidthControlOptions.
+        r"""Sets the file_redirection_bandwidth_control_value of this FileRedirectionBandwidthControlOptions.
 
         文件重定向带宽控制量（Kbps）。取值范围为[500-20000]。默认：10000。
 

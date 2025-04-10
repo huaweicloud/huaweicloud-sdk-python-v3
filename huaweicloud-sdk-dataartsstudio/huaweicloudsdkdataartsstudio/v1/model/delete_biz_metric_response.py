@@ -26,7 +26,7 @@ class DeleteBizMetricResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """DeleteBizMetricResponse
+        r"""DeleteBizMetricResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteBizMetricResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this DeleteBizMetricResponse.
+        r"""Gets the data of this DeleteBizMetricResponse.
 
         :return: The data of this DeleteBizMetricResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteResultData`
@@ -53,7 +53,7 @@ class DeleteBizMetricResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this DeleteBizMetricResponse.
+        r"""Sets the data of this DeleteBizMetricResponse.
 
         :param data: The data of this DeleteBizMetricResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.DeleteResultData`

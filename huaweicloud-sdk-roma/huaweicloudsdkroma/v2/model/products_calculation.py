@@ -27,7 +27,7 @@ class ProductsCalculation:
     }
 
     def __init__(self, normal_products_numbers=None, gateway_products_numbers=None):
-        """ProductsCalculation
+        r"""ProductsCalculation
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ProductsCalculation:
 
     @property
     def normal_products_numbers(self):
-        """Gets the normal_products_numbers of this ProductsCalculation.
+        r"""Gets the normal_products_numbers of this ProductsCalculation.
 
         普通产品数量
 
@@ -61,7 +61,7 @@ class ProductsCalculation:
 
     @normal_products_numbers.setter
     def normal_products_numbers(self, normal_products_numbers):
-        """Sets the normal_products_numbers of this ProductsCalculation.
+        r"""Sets the normal_products_numbers of this ProductsCalculation.
 
         普通产品数量
 
@@ -72,7 +72,7 @@ class ProductsCalculation:
 
     @property
     def gateway_products_numbers(self):
-        """Gets the gateway_products_numbers of this ProductsCalculation.
+        r"""Gets the gateway_products_numbers of this ProductsCalculation.
 
         网关产品数量
 
@@ -83,7 +83,7 @@ class ProductsCalculation:
 
     @gateway_products_numbers.setter
     def gateway_products_numbers(self, gateway_products_numbers):
-        """Sets the gateway_products_numbers of this ProductsCalculation.
+        r"""Sets the gateway_products_numbers of this ProductsCalculation.
 
         网关产品数量
 

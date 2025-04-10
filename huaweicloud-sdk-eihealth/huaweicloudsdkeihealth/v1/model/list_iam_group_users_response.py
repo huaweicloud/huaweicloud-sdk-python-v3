@@ -28,7 +28,7 @@ class ListIamGroupUsersResponse(SdkResponse):
     }
 
     def __init__(self, groups=None, count=None):
-        """ListIamGroupUsersResponse
+        r"""ListIamGroupUsersResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListIamGroupUsersResponse(SdkResponse):
 
     @property
     def groups(self):
-        """Gets the groups of this ListIamGroupUsersResponse.
+        r"""Gets the groups of this ListIamGroupUsersResponse.
 
         用户组列表
 
@@ -62,7 +62,7 @@ class ListIamGroupUsersResponse(SdkResponse):
 
     @groups.setter
     def groups(self, groups):
-        """Sets the groups of this ListIamGroupUsersResponse.
+        r"""Sets the groups of this ListIamGroupUsersResponse.
 
         用户组列表
 
@@ -73,7 +73,7 @@ class ListIamGroupUsersResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListIamGroupUsersResponse.
+        r"""Gets the count of this ListIamGroupUsersResponse.
 
         总数
 
@@ -84,7 +84,7 @@ class ListIamGroupUsersResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListIamGroupUsersResponse.
+        r"""Sets the count of this ListIamGroupUsersResponse.
 
         总数
 

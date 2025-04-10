@@ -26,7 +26,7 @@ class EipKindObj:
     }
 
     def __init__(self):
-        """EipKindObj
+        r"""EipKindObj
 
         The model defined in huaweicloud sdk
 

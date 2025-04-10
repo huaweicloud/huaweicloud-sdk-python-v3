@@ -27,7 +27,7 @@ class ShowSubmissionsRequest:
     }
 
     def __init__(self, cluster_id=None, jname=None):
-        """ShowSubmissionsRequest
+        r"""ShowSubmissionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowSubmissionsRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowSubmissionsRequest.
+        r"""Gets the cluster_id of this ShowSubmissionsRequest.
 
         集群ID
 
@@ -59,7 +59,7 @@ class ShowSubmissionsRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowSubmissionsRequest.
+        r"""Sets the cluster_id of this ShowSubmissionsRequest.
 
         集群ID
 
@@ -70,7 +70,7 @@ class ShowSubmissionsRequest:
 
     @property
     def jname(self):
-        """Gets the jname of this ShowSubmissionsRequest.
+        r"""Gets the jname of this ShowSubmissionsRequest.
 
         作业名称
 
@@ -81,7 +81,7 @@ class ShowSubmissionsRequest:
 
     @jname.setter
     def jname(self, jname):
-        """Sets the jname of this ShowSubmissionsRequest.
+        r"""Sets the jname of this ShowSubmissionsRequest.
 
         作业名称
 

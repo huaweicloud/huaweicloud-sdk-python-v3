@@ -29,7 +29,7 @@ class UpdateHttpBlockTrustIpRuleRequest:
     }
 
     def __init__(self, policy_id=None, rule_id=None, body=None):
-        """UpdateHttpBlockTrustIpRuleRequest
+        r"""UpdateHttpBlockTrustIpRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateHttpBlockTrustIpRuleRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this UpdateHttpBlockTrustIpRuleRequest.
+        r"""Gets the policy_id of this UpdateHttpBlockTrustIpRuleRequest.
 
         策略id
 
@@ -66,7 +66,7 @@ class UpdateHttpBlockTrustIpRuleRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this UpdateHttpBlockTrustIpRuleRequest.
+        r"""Sets the policy_id of this UpdateHttpBlockTrustIpRuleRequest.
 
         策略id
 
@@ -77,7 +77,7 @@ class UpdateHttpBlockTrustIpRuleRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this UpdateHttpBlockTrustIpRuleRequest.
+        r"""Gets the rule_id of this UpdateHttpBlockTrustIpRuleRequest.
 
         防护规则id
 
@@ -88,7 +88,7 @@ class UpdateHttpBlockTrustIpRuleRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this UpdateHttpBlockTrustIpRuleRequest.
+        r"""Sets the rule_id of this UpdateHttpBlockTrustIpRuleRequest.
 
         防护规则id
 
@@ -99,7 +99,7 @@ class UpdateHttpBlockTrustIpRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateHttpBlockTrustIpRuleRequest.
+        r"""Gets the body of this UpdateHttpBlockTrustIpRuleRequest.
 
         :return: The body of this UpdateHttpBlockTrustIpRuleRequest.
         :rtype: :class:`huaweicloudsdkedgesec.v2.UpdateHttpBlockTrustIpRuleRequestBody`
@@ -108,7 +108,7 @@ class UpdateHttpBlockTrustIpRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateHttpBlockTrustIpRuleRequest.
+        r"""Sets the body of this UpdateHttpBlockTrustIpRuleRequest.
 
         :param body: The body of this UpdateHttpBlockTrustIpRuleRequest.
         :type body: :class:`huaweicloudsdkedgesec.v2.UpdateHttpBlockTrustIpRuleRequestBody`

@@ -35,7 +35,7 @@ class ListUpComingWebinarsRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, offset=None, limit=None, search_key=None, sort_type=None):
-        """ListUpComingWebinarsRequest
+        r"""ListUpComingWebinarsRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListUpComingWebinarsRequest:
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListUpComingWebinarsRequest.
+        r"""Gets the x_request_id of this ListUpComingWebinarsRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -89,7 +89,7 @@ class ListUpComingWebinarsRequest:
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListUpComingWebinarsRequest.
+        r"""Sets the x_request_id of this ListUpComingWebinarsRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -100,7 +100,7 @@ class ListUpComingWebinarsRequest:
 
     @property
     def accept_language(self):
-        """Gets the accept_language of this ListUpComingWebinarsRequest.
+        r"""Gets the accept_language of this ListUpComingWebinarsRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -111,7 +111,7 @@ class ListUpComingWebinarsRequest:
 
     @accept_language.setter
     def accept_language(self, accept_language):
-        """Sets the accept_language of this ListUpComingWebinarsRequest.
+        r"""Sets the accept_language of this ListUpComingWebinarsRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -122,7 +122,7 @@ class ListUpComingWebinarsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListUpComingWebinarsRequest.
+        r"""Gets the offset of this ListUpComingWebinarsRequest.
 
         查询偏移量,若超过最大数量，则返回最后一页的数据。 默认值：0。 
 
@@ -133,7 +133,7 @@ class ListUpComingWebinarsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListUpComingWebinarsRequest.
+        r"""Sets the offset of this ListUpComingWebinarsRequest.
 
         查询偏移量,若超过最大数量，则返回最后一页的数据。 默认值：0。 
 
@@ -144,7 +144,7 @@ class ListUpComingWebinarsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListUpComingWebinarsRequest.
+        r"""Gets the limit of this ListUpComingWebinarsRequest.
 
         查询数量。 默认值：10。 
 
@@ -155,7 +155,7 @@ class ListUpComingWebinarsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListUpComingWebinarsRequest.
+        r"""Sets the limit of this ListUpComingWebinarsRequest.
 
         查询数量。 默认值：10。 
 
@@ -166,7 +166,7 @@ class ListUpComingWebinarsRequest:
 
     @property
     def search_key(self):
-        """Gets the search_key of this ListUpComingWebinarsRequest.
+        r"""Gets the search_key of this ListUpComingWebinarsRequest.
 
         搜索条件。支持帐号、SIP号码、名称、手机、邮箱模糊搜索。
 
@@ -177,7 +177,7 @@ class ListUpComingWebinarsRequest:
 
     @search_key.setter
     def search_key(self, search_key):
-        """Sets the search_key of this ListUpComingWebinarsRequest.
+        r"""Sets the search_key of this ListUpComingWebinarsRequest.
 
         搜索条件。支持帐号、SIP号码、名称、手机、邮箱模糊搜索。
 
@@ -188,7 +188,7 @@ class ListUpComingWebinarsRequest:
 
     @property
     def sort_type(self):
-        """Gets the sort_type of this ListUpComingWebinarsRequest.
+        r"""Gets the sort_type of this ListUpComingWebinarsRequest.
 
         查询结果排序。默认升序。 * ASC_StartTIME：按会议开始时间升序排序 * DSC_StartTIME：按会议开始时间降序排序 
 
@@ -199,7 +199,7 @@ class ListUpComingWebinarsRequest:
 
     @sort_type.setter
     def sort_type(self, sort_type):
-        """Sets the sort_type of this ListUpComingWebinarsRequest.
+        r"""Sets the sort_type of this ListUpComingWebinarsRequest.
 
         查询结果排序。默认升序。 * ASC_StartTIME：按会议开始时间升序排序 * DSC_StartTIME：按会议开始时间降序排序 
 

@@ -25,7 +25,7 @@ class ListSyntaxConversionProgressRequest:
     }
 
     def __init__(self, migration_project_id=None):
-        """ListSyntaxConversionProgressRequest
+        r"""ListSyntaxConversionProgressRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListSyntaxConversionProgressRequest:
 
     @property
     def migration_project_id(self):
-        """Gets the migration_project_id of this ListSyntaxConversionProgressRequest.
+        r"""Gets the migration_project_id of this ListSyntaxConversionProgressRequest.
 
         迁移项目ID。
 
@@ -53,7 +53,7 @@ class ListSyntaxConversionProgressRequest:
 
     @migration_project_id.setter
     def migration_project_id(self, migration_project_id):
-        """Sets the migration_project_id of this ListSyntaxConversionProgressRequest.
+        r"""Sets the migration_project_id of this ListSyntaxConversionProgressRequest.
 
         迁移项目ID。
 

@@ -31,7 +31,7 @@ class ListClassroomMembersRequest:
     }
 
     def __init__(self, classroom_id=None, offset=None, limit=None, filter=None):
-        """ListClassroomMembersRequest
+        r"""ListClassroomMembersRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListClassroomMembersRequest:
 
     @property
     def classroom_id(self):
-        """Gets the classroom_id of this ListClassroomMembersRequest.
+        r"""Gets the classroom_id of this ListClassroomMembersRequest.
 
         课堂ID
 
@@ -74,7 +74,7 @@ class ListClassroomMembersRequest:
 
     @classroom_id.setter
     def classroom_id(self, classroom_id):
-        """Sets the classroom_id of this ListClassroomMembersRequest.
+        r"""Sets the classroom_id of this ListClassroomMembersRequest.
 
         课堂ID
 
@@ -85,7 +85,7 @@ class ListClassroomMembersRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListClassroomMembersRequest.
+        r"""Gets the offset of this ListClassroomMembersRequest.
 
         信息记录的起始编号
 
@@ -96,7 +96,7 @@ class ListClassroomMembersRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListClassroomMembersRequest.
+        r"""Sets the offset of this ListClassroomMembersRequest.
 
         信息记录的起始编号
 
@@ -107,7 +107,7 @@ class ListClassroomMembersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListClassroomMembersRequest.
+        r"""Gets the limit of this ListClassroomMembersRequest.
 
         每页包含的信息记录数
 
@@ -118,7 +118,7 @@ class ListClassroomMembersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListClassroomMembersRequest.
+        r"""Sets the limit of this ListClassroomMembersRequest.
 
         每页包含的信息记录数
 
@@ -129,7 +129,7 @@ class ListClassroomMembersRequest:
 
     @property
     def filter(self):
-        """Gets the filter of this ListClassroomMembersRequest.
+        r"""Gets the filter of this ListClassroomMembersRequest.
 
         按照条件搜索学生，搜索字段会同时匹配姓名，学号，用户名，班级
 
@@ -140,7 +140,7 @@ class ListClassroomMembersRequest:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this ListClassroomMembersRequest.
+        r"""Sets the filter of this ListClassroomMembersRequest.
 
         按照条件搜索学生，搜索字段会同时匹配姓名，学号，用户名，班级
 

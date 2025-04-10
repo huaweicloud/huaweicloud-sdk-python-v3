@@ -24,7 +24,7 @@ class BatchDeleteCorpAdminsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchDeleteCorpAdminsResponse
+        r"""BatchDeleteCorpAdminsResponse
 
         The model defined in huaweicloud sdk
 

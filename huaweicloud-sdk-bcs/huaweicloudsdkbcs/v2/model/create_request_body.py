@@ -85,7 +85,7 @@ class CreateRequestBody:
     }
 
     def __init__(self, name=None, version_type=None, fabric_version=None, blockchain_type=None, consensus=None, sign_algorithm=None, enterprise_project_id=None, volume_type=None, evs_disk_type=None, org_disk_size=None, database_type=None, resource_password=None, orderer_node_number=None, use_eip=None, bandwidth_size=None, cluster_type=None, create_new_cluster=None, cce_cluster_info=None, cce_create_info=None, ief_deploy_mode=None, ief_nodes_info=None, peer_orgs=None, channels=None, couchdb_info=None, turbo_info=None, block_info=None, kafka_create_info=None, tc3_need=None, restful_api_support=None, is_invitee=None, invitor_infos=None):
-        """CreateRequestBody
+        r"""CreateRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -247,7 +247,7 @@ class CreateRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateRequestBody.
+        r"""Gets the name of this CreateRequestBody.
 
         区块链服务名称，支持英文，数字，中文字符和中划线(-)，不能以中划线(-)开头，长度4-24个字符。
 
@@ -258,7 +258,7 @@ class CreateRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateRequestBody.
+        r"""Sets the name of this CreateRequestBody.
 
         区块链服务名称，支持英文，数字，中文字符和中划线(-)，不能以中划线(-)开头，长度4-24个字符。
 
@@ -269,7 +269,7 @@ class CreateRequestBody:
 
     @property
     def version_type(self):
-        """Gets the version_type of this CreateRequestBody.
+        r"""Gets the version_type of this CreateRequestBody.
 
         BCS服务版本类型，可选：[基础版（4），专业版（2），企业版（3）](tag: hws)[基础版（4），专业版（2）](tag: hws_hk)。被邀请方创建时，和邀请方保持一致。
 
@@ -280,7 +280,7 @@ class CreateRequestBody:
 
     @version_type.setter
     def version_type(self, version_type):
-        """Sets the version_type of this CreateRequestBody.
+        r"""Sets the version_type of this CreateRequestBody.
 
         BCS服务版本类型，可选：[基础版（4），专业版（2），企业版（3）](tag: hws)[基础版（4），专业版（2）](tag: hws_hk)。被邀请方创建时，和邀请方保持一致。
 
@@ -291,7 +291,7 @@ class CreateRequestBody:
 
     @property
     def fabric_version(self):
-        """Gets the fabric_version of this CreateRequestBody.
+        r"""Gets the fabric_version of this CreateRequestBody.
 
         Fabric版本，当前邀请方以及私有链的创建仅可选：2.2 ;被邀请方创建时，和邀请方保持一致，1.4版本服务仅支持1.15及以下版本集群. 默认值为2.2.
 
@@ -302,7 +302,7 @@ class CreateRequestBody:
 
     @fabric_version.setter
     def fabric_version(self, fabric_version):
-        """Sets the fabric_version of this CreateRequestBody.
+        r"""Sets the fabric_version of this CreateRequestBody.
 
         Fabric版本，当前邀请方以及私有链的创建仅可选：2.2 ;被邀请方创建时，和邀请方保持一致，1.4版本服务仅支持1.15及以下版本集群. 默认值为2.2.
 
@@ -313,7 +313,7 @@ class CreateRequestBody:
 
     @property
     def blockchain_type(self):
-        """Gets the blockchain_type of this CreateRequestBody.
+        r"""Gets the blockchain_type of this CreateRequestBody.
 
         区块链类型，默认私有链，可选：联盟链（union），私有链（private）。被邀请方创建时，和邀请方保持一致。
 
@@ -324,7 +324,7 @@ class CreateRequestBody:
 
     @blockchain_type.setter
     def blockchain_type(self, blockchain_type):
-        """Sets the blockchain_type of this CreateRequestBody.
+        r"""Sets the blockchain_type of this CreateRequestBody.
 
         区块链类型，默认私有链，可选：联盟链（union），私有链（private）。被邀请方创建时，和邀请方保持一致。
 
@@ -335,7 +335,7 @@ class CreateRequestBody:
 
     @property
     def consensus(self):
-        """Gets the consensus of this CreateRequestBody.
+        r"""Gets the consensus of this CreateRequestBody.
 
         BCS服务的共识策略，Fabric1.4版本可选：测试策略（solo）、快速拜占庭容错算法（SFLIC）；Fabric2.2版本可选：raft共识算法（etcdraft）、快速拜占庭容错算法（SFLIC）。被邀请方创建时，和邀请方保持一致。
 
@@ -346,7 +346,7 @@ class CreateRequestBody:
 
     @consensus.setter
     def consensus(self, consensus):
-        """Sets the consensus of this CreateRequestBody.
+        r"""Sets the consensus of this CreateRequestBody.
 
         BCS服务的共识策略，Fabric1.4版本可选：测试策略（solo）、快速拜占庭容错算法（SFLIC）；Fabric2.2版本可选：raft共识算法（etcdraft）、快速拜占庭容错算法（SFLIC）。被邀请方创建时，和邀请方保持一致。
 
@@ -357,7 +357,7 @@ class CreateRequestBody:
 
     @property
     def sign_algorithm(self):
-        """Gets the sign_algorithm of this CreateRequestBody.
+        r"""Gets the sign_algorithm of this CreateRequestBody.
 
         BCS服务安全机制，可选：ECDSA（ECDSA），国密算法（sm2）
 
@@ -368,7 +368,7 @@ class CreateRequestBody:
 
     @sign_algorithm.setter
     def sign_algorithm(self, sign_algorithm):
-        """Sets the sign_algorithm of this CreateRequestBody.
+        r"""Sets the sign_algorithm of this CreateRequestBody.
 
         BCS服务安全机制，可选：ECDSA（ECDSA），国密算法（sm2）
 
@@ -379,7 +379,7 @@ class CreateRequestBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateRequestBody.
+        r"""Gets the enterprise_project_id of this CreateRequestBody.
 
         BCS服务所属企业项目ID
 
@@ -390,7 +390,7 @@ class CreateRequestBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateRequestBody.
+        r"""Sets the enterprise_project_id of this CreateRequestBody.
 
         BCS服务所属企业项目ID
 
@@ -401,7 +401,7 @@ class CreateRequestBody:
 
     @property
     def volume_type(self):
-        """Gets the volume_type of this CreateRequestBody.
+        r"""Gets the volume_type of this CreateRequestBody.
 
         CCE集群存储卷类型，根据实际环境可选：云硬盘存储卷（evs），文件存储卷（nfs）, 极速文件存储卷（efs）
 
@@ -412,7 +412,7 @@ class CreateRequestBody:
 
     @volume_type.setter
     def volume_type(self, volume_type):
-        """Sets the volume_type of this CreateRequestBody.
+        r"""Sets the volume_type of this CreateRequestBody.
 
         CCE集群存储卷类型，根据实际环境可选：云硬盘存储卷（evs），文件存储卷（nfs）, 极速文件存储卷（efs）
 
@@ -423,7 +423,7 @@ class CreateRequestBody:
 
     @property
     def evs_disk_type(self):
-        """Gets the evs_disk_type of this CreateRequestBody.
+        r"""Gets the evs_disk_type of this CreateRequestBody.
 
         云硬盘存储卷类型，volume_type选择evs时必填，可选：普通I/O（SATA），高I/O（SAS），超高I/O（SSD）
 
@@ -434,7 +434,7 @@ class CreateRequestBody:
 
     @evs_disk_type.setter
     def evs_disk_type(self, evs_disk_type):
-        """Sets the evs_disk_type of this CreateRequestBody.
+        r"""Sets the evs_disk_type of this CreateRequestBody.
 
         云硬盘存储卷类型，volume_type选择evs时必填，可选：普通I/O（SATA），高I/O（SAS），超高I/O（SSD）
 
@@ -445,7 +445,7 @@ class CreateRequestBody:
 
     @property
     def org_disk_size(self):
-        """Gets the org_disk_size of this CreateRequestBody.
+        r"""Gets the org_disk_size of this CreateRequestBody.
 
         节点组织存储容量，[基础版和专业版至少100GB，企业版至少500GB](tag: hws)[基础版和专业版至少100GB](tag: hws_hk)
 
@@ -456,7 +456,7 @@ class CreateRequestBody:
 
     @org_disk_size.setter
     def org_disk_size(self, org_disk_size):
-        """Sets the org_disk_size of this CreateRequestBody.
+        r"""Sets the org_disk_size of this CreateRequestBody.
 
         节点组织存储容量，[基础版和专业版至少100GB，企业版至少500GB](tag: hws)[基础版和专业版至少100GB](tag: hws_hk)
 
@@ -467,7 +467,7 @@ class CreateRequestBody:
 
     @property
     def database_type(self):
-        """Gets the database_type of this CreateRequestBody.
+        r"""Gets the database_type of this CreateRequestBody.
 
         BCS服务数据库类型，包括文件数据库（goleveldb），NoSQL（couchdb），选择couchdb需要填写couchdb_info字段中的信息
 
@@ -478,7 +478,7 @@ class CreateRequestBody:
 
     @database_type.setter
     def database_type(self, database_type):
-        """Sets the database_type of this CreateRequestBody.
+        r"""Sets the database_type of this CreateRequestBody.
 
         BCS服务数据库类型，包括文件数据库（goleveldb），NoSQL（couchdb），选择couchdb需要填写couchdb_info字段中的信息
 
@@ -489,7 +489,7 @@ class CreateRequestBody:
 
     @property
     def resource_password(self):
-        """Gets the resource_password of this CreateRequestBody.
+        r"""Gets the resource_password of this CreateRequestBody.
 
         BCS服务资源、区块链管理密码
 
@@ -500,7 +500,7 @@ class CreateRequestBody:
 
     @resource_password.setter
     def resource_password(self, resource_password):
-        """Sets the resource_password of this CreateRequestBody.
+        r"""Sets the resource_password of this CreateRequestBody.
 
         BCS服务资源、区块链管理密码
 
@@ -511,7 +511,7 @@ class CreateRequestBody:
 
     @property
     def orderer_node_number(self):
-        """Gets the orderer_node_number of this CreateRequestBody.
+        r"""Gets the orderer_node_number of this CreateRequestBody.
 
         共识组织节点数，被邀请方创实例时可不填。购买fabric2.2服务时必填，若共识策略为Raft（CFT），节点数为3；若共识策略为快速拜占庭容错共识算法（FBFT），节点数为4。
 
@@ -522,7 +522,7 @@ class CreateRequestBody:
 
     @orderer_node_number.setter
     def orderer_node_number(self, orderer_node_number):
-        """Sets the orderer_node_number of this CreateRequestBody.
+        r"""Sets the orderer_node_number of this CreateRequestBody.
 
         共识组织节点数，被邀请方创实例时可不填。购买fabric2.2服务时必填，若共识策略为Raft（CFT），节点数为3；若共识策略为快速拜占庭容错共识算法（FBFT），节点数为4。
 
@@ -533,7 +533,7 @@ class CreateRequestBody:
 
     @property
     def use_eip(self):
-        """Gets the use_eip of this CreateRequestBody.
+        r"""Gets the use_eip of this CreateRequestBody.
 
         是否使用集群节点弹性IP
 
@@ -544,7 +544,7 @@ class CreateRequestBody:
 
     @use_eip.setter
     def use_eip(self, use_eip):
-        """Sets the use_eip of this CreateRequestBody.
+        r"""Sets the use_eip of this CreateRequestBody.
 
         是否使用集群节点弹性IP
 
@@ -555,7 +555,7 @@ class CreateRequestBody:
 
     @property
     def bandwidth_size(self):
-        """Gets the bandwidth_size of this CreateRequestBody.
+        r"""Gets the bandwidth_size of this CreateRequestBody.
 
         弹性IP带宽
 
@@ -566,7 +566,7 @@ class CreateRequestBody:
 
     @bandwidth_size.setter
     def bandwidth_size(self, bandwidth_size):
-        """Sets the bandwidth_size of this CreateRequestBody.
+        r"""Sets the bandwidth_size of this CreateRequestBody.
 
         弹性IP带宽
 
@@ -577,7 +577,7 @@ class CreateRequestBody:
 
     @property
     def cluster_type(self):
-        """Gets the cluster_type of this CreateRequestBody.
+        r"""Gets the cluster_type of this CreateRequestBody.
 
         集群类型，可选：CCE集群 [,边缘集群ief](tag:hasief)。
 
@@ -588,7 +588,7 @@ class CreateRequestBody:
 
     @cluster_type.setter
     def cluster_type(self, cluster_type):
-        """Sets the cluster_type of this CreateRequestBody.
+        r"""Sets the cluster_type of this CreateRequestBody.
 
         集群类型，可选：CCE集群 [,边缘集群ief](tag:hasief)。
 
@@ -599,7 +599,7 @@ class CreateRequestBody:
 
     @property
     def create_new_cluster(self):
-        """Gets the create_new_cluster of this CreateRequestBody.
+        r"""Gets the create_new_cluster of this CreateRequestBody.
 
         是否创建新集群，使用已有集群需要填写cce_cluster_info字段中的信息，创建新集群需要填写cce_create_info字段中的信息
 
@@ -610,7 +610,7 @@ class CreateRequestBody:
 
     @create_new_cluster.setter
     def create_new_cluster(self, create_new_cluster):
-        """Sets the create_new_cluster of this CreateRequestBody.
+        r"""Sets the create_new_cluster of this CreateRequestBody.
 
         是否创建新集群，使用已有集群需要填写cce_cluster_info字段中的信息，创建新集群需要填写cce_create_info字段中的信息
 
@@ -621,7 +621,7 @@ class CreateRequestBody:
 
     @property
     def cce_cluster_info(self):
-        """Gets the cce_cluster_info of this CreateRequestBody.
+        r"""Gets the cce_cluster_info of this CreateRequestBody.
 
         :return: The cce_cluster_info of this CreateRequestBody.
         :rtype: :class:`huaweicloudsdkbcs.v2.CCEClusterInfo`
@@ -630,7 +630,7 @@ class CreateRequestBody:
 
     @cce_cluster_info.setter
     def cce_cluster_info(self, cce_cluster_info):
-        """Sets the cce_cluster_info of this CreateRequestBody.
+        r"""Sets the cce_cluster_info of this CreateRequestBody.
 
         :param cce_cluster_info: The cce_cluster_info of this CreateRequestBody.
         :type cce_cluster_info: :class:`huaweicloudsdkbcs.v2.CCEClusterInfo`
@@ -639,7 +639,7 @@ class CreateRequestBody:
 
     @property
     def cce_create_info(self):
-        """Gets the cce_create_info of this CreateRequestBody.
+        r"""Gets the cce_create_info of this CreateRequestBody.
 
         :return: The cce_create_info of this CreateRequestBody.
         :rtype: :class:`huaweicloudsdkbcs.v2.CCECreateInfo`
@@ -648,7 +648,7 @@ class CreateRequestBody:
 
     @cce_create_info.setter
     def cce_create_info(self, cce_create_info):
-        """Sets the cce_create_info of this CreateRequestBody.
+        r"""Sets the cce_create_info of this CreateRequestBody.
 
         :param cce_create_info: The cce_create_info of this CreateRequestBody.
         :type cce_create_info: :class:`huaweicloudsdkbcs.v2.CCECreateInfo`
@@ -657,7 +657,7 @@ class CreateRequestBody:
 
     @property
     def ief_deploy_mode(self):
-        """Gets the ief_deploy_mode of this CreateRequestBody.
+        r"""Gets the ief_deploy_mode of this CreateRequestBody.
 
         IEF集群部署方式，随机部署（0），组织节点绑定（1）。组织节点绑定模式时，peer_orgs 参数必填。组织名和IEF节点名必须一致。
 
@@ -668,7 +668,7 @@ class CreateRequestBody:
 
     @ief_deploy_mode.setter
     def ief_deploy_mode(self, ief_deploy_mode):
-        """Sets the ief_deploy_mode of this CreateRequestBody.
+        r"""Sets the ief_deploy_mode of this CreateRequestBody.
 
         IEF集群部署方式，随机部署（0），组织节点绑定（1）。组织节点绑定模式时，peer_orgs 参数必填。组织名和IEF节点名必须一致。
 
@@ -679,7 +679,7 @@ class CreateRequestBody:
 
     @property
     def ief_nodes_info(self):
-        """Gets the ief_nodes_info of this CreateRequestBody.
+        r"""Gets the ief_nodes_info of this CreateRequestBody.
 
         IEF集群节点列表，使用边缘集群模式部署时必填。
 
@@ -690,7 +690,7 @@ class CreateRequestBody:
 
     @ief_nodes_info.setter
     def ief_nodes_info(self, ief_nodes_info):
-        """Sets the ief_nodes_info of this CreateRequestBody.
+        r"""Sets the ief_nodes_info of this CreateRequestBody.
 
         IEF集群节点列表，使用边缘集群模式部署时必填。
 
@@ -701,7 +701,7 @@ class CreateRequestBody:
 
     @property
     def peer_orgs(self):
-        """Gets the peer_orgs of this CreateRequestBody.
+        r"""Gets the peer_orgs of this CreateRequestBody.
 
         节点组织列表。节点绑定模式中，组织名和IEF节点名必须一致。边缘集群模式时此字段必填。
 
@@ -712,7 +712,7 @@ class CreateRequestBody:
 
     @peer_orgs.setter
     def peer_orgs(self, peer_orgs):
-        """Sets the peer_orgs of this CreateRequestBody.
+        r"""Sets the peer_orgs of this CreateRequestBody.
 
         节点组织列表。节点绑定模式中，组织名和IEF节点名必须一致。边缘集群模式时此字段必填。
 
@@ -723,7 +723,7 @@ class CreateRequestBody:
 
     @property
     def channels(self):
-        """Gets the channels of this CreateRequestBody.
+        r"""Gets the channels of this CreateRequestBody.
 
         通道列表
 
@@ -734,7 +734,7 @@ class CreateRequestBody:
 
     @channels.setter
     def channels(self, channels):
-        """Sets the channels of this CreateRequestBody.
+        r"""Sets the channels of this CreateRequestBody.
 
         通道列表
 
@@ -745,7 +745,7 @@ class CreateRequestBody:
 
     @property
     def couchdb_info(self):
-        """Gets the couchdb_info of this CreateRequestBody.
+        r"""Gets the couchdb_info of this CreateRequestBody.
 
         :return: The couchdb_info of this CreateRequestBody.
         :rtype: :class:`huaweicloudsdkbcs.v2.CouchDb`
@@ -754,7 +754,7 @@ class CreateRequestBody:
 
     @couchdb_info.setter
     def couchdb_info(self, couchdb_info):
-        """Sets the couchdb_info of this CreateRequestBody.
+        r"""Sets the couchdb_info of this CreateRequestBody.
 
         :param couchdb_info: The couchdb_info of this CreateRequestBody.
         :type couchdb_info: :class:`huaweicloudsdkbcs.v2.CouchDb`
@@ -763,7 +763,7 @@ class CreateRequestBody:
 
     @property
     def turbo_info(self):
-        """Gets the turbo_info of this CreateRequestBody.
+        r"""Gets the turbo_info of this CreateRequestBody.
 
         :return: The turbo_info of this CreateRequestBody.
         :rtype: :class:`huaweicloudsdkbcs.v2.TurboInfo`
@@ -772,7 +772,7 @@ class CreateRequestBody:
 
     @turbo_info.setter
     def turbo_info(self, turbo_info):
-        """Sets the turbo_info of this CreateRequestBody.
+        r"""Sets the turbo_info of this CreateRequestBody.
 
         :param turbo_info: The turbo_info of this CreateRequestBody.
         :type turbo_info: :class:`huaweicloudsdkbcs.v2.TurboInfo`
@@ -781,7 +781,7 @@ class CreateRequestBody:
 
     @property
     def block_info(self):
-        """Gets the block_info of this CreateRequestBody.
+        r"""Gets the block_info of this CreateRequestBody.
 
         :return: The block_info of this CreateRequestBody.
         :rtype: :class:`huaweicloudsdkbcs.v2.CreateRequestBodyBlockInfo`
@@ -790,7 +790,7 @@ class CreateRequestBody:
 
     @block_info.setter
     def block_info(self, block_info):
-        """Sets the block_info of this CreateRequestBody.
+        r"""Sets the block_info of this CreateRequestBody.
 
         :param block_info: The block_info of this CreateRequestBody.
         :type block_info: :class:`huaweicloudsdkbcs.v2.CreateRequestBodyBlockInfo`
@@ -799,7 +799,7 @@ class CreateRequestBody:
 
     @property
     def kafka_create_info(self):
-        """Gets the kafka_create_info of this CreateRequestBody.
+        r"""Gets the kafka_create_info of this CreateRequestBody.
 
         :return: The kafka_create_info of this CreateRequestBody.
         :rtype: :class:`huaweicloudsdkbcs.v2.KafkaCreateInfo`
@@ -808,7 +808,7 @@ class CreateRequestBody:
 
     @kafka_create_info.setter
     def kafka_create_info(self, kafka_create_info):
-        """Sets the kafka_create_info of this CreateRequestBody.
+        r"""Sets the kafka_create_info of this CreateRequestBody.
 
         :param kafka_create_info: The kafka_create_info of this CreateRequestBody.
         :type kafka_create_info: :class:`huaweicloudsdkbcs.v2.KafkaCreateInfo`
@@ -817,7 +817,7 @@ class CreateRequestBody:
 
     @property
     def tc3_need(self):
-        """Gets the tc3_need of this CreateRequestBody.
+        r"""Gets the tc3_need of this CreateRequestBody.
 
         是否添加可信计算平台
 
@@ -828,7 +828,7 @@ class CreateRequestBody:
 
     @tc3_need.setter
     def tc3_need(self, tc3_need):
-        """Sets the tc3_need of this CreateRequestBody.
+        r"""Sets the tc3_need of this CreateRequestBody.
 
         是否添加可信计算平台
 
@@ -839,7 +839,7 @@ class CreateRequestBody:
 
     @property
     def restful_api_support(self):
-        """Gets the restful_api_support of this CreateRequestBody.
+        r"""Gets the restful_api_support of this CreateRequestBody.
 
         是否添加restful API支持
 
@@ -850,7 +850,7 @@ class CreateRequestBody:
 
     @restful_api_support.setter
     def restful_api_support(self, restful_api_support):
-        """Sets the restful_api_support of this CreateRequestBody.
+        r"""Sets the restful_api_support of this CreateRequestBody.
 
         是否添加restful API支持
 
@@ -861,7 +861,7 @@ class CreateRequestBody:
 
     @property
     def is_invitee(self):
-        """Gets the is_invitee of this CreateRequestBody.
+        r"""Gets the is_invitee of this CreateRequestBody.
 
         是否是创建被邀请方BCS服务实例，创建被邀请方实例需要同时填写invitor_infos字段中的信息
 
@@ -872,7 +872,7 @@ class CreateRequestBody:
 
     @is_invitee.setter
     def is_invitee(self, is_invitee):
-        """Sets the is_invitee of this CreateRequestBody.
+        r"""Sets the is_invitee of this CreateRequestBody.
 
         是否是创建被邀请方BCS服务实例，创建被邀请方实例需要同时填写invitor_infos字段中的信息
 
@@ -883,7 +883,7 @@ class CreateRequestBody:
 
     @property
     def invitor_infos(self):
-        """Gets the invitor_infos of this CreateRequestBody.
+        r"""Gets the invitor_infos of this CreateRequestBody.
 
         :return: The invitor_infos of this CreateRequestBody.
         :rtype: :class:`huaweicloudsdkbcs.v2.InvitorInfos`
@@ -892,7 +892,7 @@ class CreateRequestBody:
 
     @invitor_infos.setter
     def invitor_infos(self, invitor_infos):
-        """Sets the invitor_infos of this CreateRequestBody.
+        r"""Sets the invitor_infos of this CreateRequestBody.
 
         :param invitor_infos: The invitor_infos of this CreateRequestBody.
         :type invitor_infos: :class:`huaweicloudsdkbcs.v2.InvitorInfos`

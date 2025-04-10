@@ -26,7 +26,7 @@ class BatchPushCertificateResponse(SdkResponse):
     }
 
     def __init__(self, results=None):
-        """BatchPushCertificateResponse
+        r"""BatchPushCertificateResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchPushCertificateResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this BatchPushCertificateResponse.
+        r"""Gets the results of this BatchPushCertificateResponse.
 
         部署结果。
 
@@ -55,7 +55,7 @@ class BatchPushCertificateResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this BatchPushCertificateResponse.
+        r"""Sets the results of this BatchPushCertificateResponse.
 
         部署结果。
 

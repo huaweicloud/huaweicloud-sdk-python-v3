@@ -41,7 +41,7 @@ class ValidateRule:
     }
 
     def __init__(self, dependent_info=None, enabled=None, is_config_dep=None, is_dependent=None, message=None, result=None, special_char=None, special_char_valid=None, x_example=None):
-        """ValidateRule
+        r"""ValidateRule
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ValidateRule:
 
     @property
     def dependent_info(self):
-        """Gets the dependent_info of this ValidateRule.
+        r"""Gets the dependent_info of this ValidateRule.
 
         依赖信息列表
 
@@ -110,7 +110,7 @@ class ValidateRule:
 
     @dependent_info.setter
     def dependent_info(self, dependent_info):
-        """Sets the dependent_info of this ValidateRule.
+        r"""Sets the dependent_info of this ValidateRule.
 
         依赖信息列表
 
@@ -121,7 +121,7 @@ class ValidateRule:
 
     @property
     def enabled(self):
-        """Gets the enabled of this ValidateRule.
+        r"""Gets the enabled of this ValidateRule.
 
         是否启用的标识符
 
@@ -132,7 +132,7 @@ class ValidateRule:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this ValidateRule.
+        r"""Sets the enabled of this ValidateRule.
 
         是否启用的标识符
 
@@ -143,7 +143,7 @@ class ValidateRule:
 
     @property
     def is_config_dep(self):
-        """Gets the is_config_dep of this ValidateRule.
+        r"""Gets the is_config_dep of this ValidateRule.
 
         配置依赖的标识符
 
@@ -154,7 +154,7 @@ class ValidateRule:
 
     @is_config_dep.setter
     def is_config_dep(self, is_config_dep):
-        """Sets the is_config_dep of this ValidateRule.
+        r"""Sets the is_config_dep of this ValidateRule.
 
         配置依赖的标识符
 
@@ -165,7 +165,7 @@ class ValidateRule:
 
     @property
     def is_dependent(self):
-        """Gets the is_dependent of this ValidateRule.
+        r"""Gets the is_dependent of this ValidateRule.
 
         是否依赖的标识符
 
@@ -176,7 +176,7 @@ class ValidateRule:
 
     @is_dependent.setter
     def is_dependent(self, is_dependent):
-        """Sets the is_dependent of this ValidateRule.
+        r"""Sets the is_dependent of this ValidateRule.
 
         是否依赖的标识符
 
@@ -187,7 +187,7 @@ class ValidateRule:
 
     @property
     def message(self):
-        """Gets the message of this ValidateRule.
+        r"""Gets the message of this ValidateRule.
 
         消息
 
@@ -198,7 +198,7 @@ class ValidateRule:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ValidateRule.
+        r"""Sets the message of this ValidateRule.
 
         消息
 
@@ -209,7 +209,7 @@ class ValidateRule:
 
     @property
     def result(self):
-        """Gets the result of this ValidateRule.
+        r"""Gets the result of this ValidateRule.
 
         结果
 
@@ -220,7 +220,7 @@ class ValidateRule:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ValidateRule.
+        r"""Sets the result of this ValidateRule.
 
         结果
 
@@ -231,7 +231,7 @@ class ValidateRule:
 
     @property
     def special_char(self):
-        """Gets the special_char of this ValidateRule.
+        r"""Gets the special_char of this ValidateRule.
 
         特殊字符
 
@@ -242,7 +242,7 @@ class ValidateRule:
 
     @special_char.setter
     def special_char(self, special_char):
-        """Sets the special_char of this ValidateRule.
+        r"""Sets the special_char of this ValidateRule.
 
         特殊字符
 
@@ -253,7 +253,7 @@ class ValidateRule:
 
     @property
     def special_char_valid(self):
-        """Gets the special_char_valid of this ValidateRule.
+        r"""Gets the special_char_valid of this ValidateRule.
 
         特殊字符的有效性
 
@@ -264,7 +264,7 @@ class ValidateRule:
 
     @special_char_valid.setter
     def special_char_valid(self, special_char_valid):
-        """Sets the special_char_valid of this ValidateRule.
+        r"""Sets the special_char_valid of this ValidateRule.
 
         特殊字符的有效性
 
@@ -275,7 +275,7 @@ class ValidateRule:
 
     @property
     def x_example(self):
-        """Gets the x_example of this ValidateRule.
+        r"""Gets the x_example of this ValidateRule.
 
         示例
 
@@ -286,7 +286,7 @@ class ValidateRule:
 
     @x_example.setter
     def x_example(self, x_example):
-        """Sets the x_example of this ValidateRule.
+        r"""Sets the x_example of this ValidateRule.
 
         示例
 

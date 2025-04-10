@@ -26,7 +26,7 @@ class TagCentralNetworkResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """TagCentralNetworkResponse
+        r"""TagCentralNetworkResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class TagCentralNetworkResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this TagCentralNetworkResponse.
+        r"""Gets the x_request_id of this TagCentralNetworkResponse.
 
         :return: The x_request_id of this TagCentralNetworkResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class TagCentralNetworkResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this TagCentralNetworkResponse.
+        r"""Sets the x_request_id of this TagCentralNetworkResponse.
 
         :param x_request_id: The x_request_id of this TagCentralNetworkResponse.
         :type x_request_id: str

@@ -35,7 +35,7 @@ class UrlDomainBaseInfo:
     }
 
     def __init__(self, url_domain=None, id=None, status=None, min_ssl_version=None, is_http_redirect_to_https=None, verified_client_certificate_enabled=None):
-        """UrlDomainBaseInfo
+        r"""UrlDomainBaseInfo
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class UrlDomainBaseInfo:
 
     @property
     def url_domain(self):
-        """Gets the url_domain of this UrlDomainBaseInfo.
+        r"""Gets the url_domain of this UrlDomainBaseInfo.
 
         自定义域名
 
@@ -85,7 +85,7 @@ class UrlDomainBaseInfo:
 
     @url_domain.setter
     def url_domain(self, url_domain):
-        """Sets the url_domain of this UrlDomainBaseInfo.
+        r"""Sets the url_domain of this UrlDomainBaseInfo.
 
         自定义域名
 
@@ -96,7 +96,7 @@ class UrlDomainBaseInfo:
 
     @property
     def id(self):
-        """Gets the id of this UrlDomainBaseInfo.
+        r"""Gets the id of this UrlDomainBaseInfo.
 
         自定义域名的编号
 
@@ -107,7 +107,7 @@ class UrlDomainBaseInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UrlDomainBaseInfo.
+        r"""Sets the id of this UrlDomainBaseInfo.
 
         自定义域名的编号
 
@@ -118,7 +118,7 @@ class UrlDomainBaseInfo:
 
     @property
     def status(self):
-        """Gets the status of this UrlDomainBaseInfo.
+        r"""Gets the status of this UrlDomainBaseInfo.
 
         CNAME解析状态 - 1: 未解析 - 2: 解析中 - 3: 解析成功 - 4: 解析失败
 
@@ -129,7 +129,7 @@ class UrlDomainBaseInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UrlDomainBaseInfo.
+        r"""Sets the status of this UrlDomainBaseInfo.
 
         CNAME解析状态 - 1: 未解析 - 2: 解析中 - 3: 解析成功 - 4: 解析失败
 
@@ -140,7 +140,7 @@ class UrlDomainBaseInfo:
 
     @property
     def min_ssl_version(self):
-        """Gets the min_ssl_version of this UrlDomainBaseInfo.
+        r"""Gets the min_ssl_version of this UrlDomainBaseInfo.
 
         支持的最小SSL版本
 
@@ -151,7 +151,7 @@ class UrlDomainBaseInfo:
 
     @min_ssl_version.setter
     def min_ssl_version(self, min_ssl_version):
-        """Sets the min_ssl_version of this UrlDomainBaseInfo.
+        r"""Sets the min_ssl_version of this UrlDomainBaseInfo.
 
         支持的最小SSL版本
 
@@ -162,7 +162,7 @@ class UrlDomainBaseInfo:
 
     @property
     def is_http_redirect_to_https(self):
-        """Gets the is_http_redirect_to_https of this UrlDomainBaseInfo.
+        r"""Gets the is_http_redirect_to_https of this UrlDomainBaseInfo.
 
         是否开启http到https的重定向，false为关闭，true为开启，默认为false
 
@@ -173,7 +173,7 @@ class UrlDomainBaseInfo:
 
     @is_http_redirect_to_https.setter
     def is_http_redirect_to_https(self, is_http_redirect_to_https):
-        """Sets the is_http_redirect_to_https of this UrlDomainBaseInfo.
+        r"""Sets the is_http_redirect_to_https of this UrlDomainBaseInfo.
 
         是否开启http到https的重定向，false为关闭，true为开启，默认为false
 
@@ -184,7 +184,7 @@ class UrlDomainBaseInfo:
 
     @property
     def verified_client_certificate_enabled(self):
-        """Gets the verified_client_certificate_enabled of this UrlDomainBaseInfo.
+        r"""Gets the verified_client_certificate_enabled of this UrlDomainBaseInfo.
 
         是否开启客户端证书校验。只有绑定证书时，该参数才生效。当绑定证书存在trusted_root_ca时，默认开启；当绑定证书不存在trusted_root_ca时，默认关闭。
 
@@ -195,7 +195,7 @@ class UrlDomainBaseInfo:
 
     @verified_client_certificate_enabled.setter
     def verified_client_certificate_enabled(self, verified_client_certificate_enabled):
-        """Sets the verified_client_certificate_enabled of this UrlDomainBaseInfo.
+        r"""Sets the verified_client_certificate_enabled of this UrlDomainBaseInfo.
 
         是否开启客户端证书校验。只有绑定证书时，该参数才生效。当绑定证书存在trusted_root_ca时，默认开启；当绑定证书不存在trusted_root_ca时，默认关闭。
 

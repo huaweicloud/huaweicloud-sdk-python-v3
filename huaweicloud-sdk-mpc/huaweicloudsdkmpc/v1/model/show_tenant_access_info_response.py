@@ -28,7 +28,7 @@ class ShowTenantAccessInfoResponse(SdkResponse):
     }
 
     def __init__(self, is_open=None, agreement_version=None):
-        """ShowTenantAccessInfoResponse
+        r"""ShowTenantAccessInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowTenantAccessInfoResponse(SdkResponse):
 
     @property
     def is_open(self):
-        """Gets the is_open of this ShowTenantAccessInfoResponse.
+        r"""Gets the is_open of this ShowTenantAccessInfoResponse.
 
         是否已开通服务 - false：未开通 - true：已开通 
 
@@ -62,7 +62,7 @@ class ShowTenantAccessInfoResponse(SdkResponse):
 
     @is_open.setter
     def is_open(self, is_open):
-        """Sets the is_open of this ShowTenantAccessInfoResponse.
+        r"""Sets the is_open of this ShowTenantAccessInfoResponse.
 
         是否已开通服务 - false：未开通 - true：已开通 
 
@@ -73,7 +73,7 @@ class ShowTenantAccessInfoResponse(SdkResponse):
 
     @property
     def agreement_version(self):
-        """Gets the agreement_version of this ShowTenantAccessInfoResponse.
+        r"""Gets the agreement_version of this ShowTenantAccessInfoResponse.
 
         服务协议版本 
 
@@ -84,7 +84,7 @@ class ShowTenantAccessInfoResponse(SdkResponse):
 
     @agreement_version.setter
     def agreement_version(self, agreement_version):
-        """Sets the agreement_version of this ShowTenantAccessInfoResponse.
+        r"""Sets the agreement_version of this ShowTenantAccessInfoResponse.
 
         服务协议版本 
 

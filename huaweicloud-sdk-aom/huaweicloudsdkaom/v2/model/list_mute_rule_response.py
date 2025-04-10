@@ -26,7 +26,7 @@ class ListMuteRuleResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListMuteRuleResponse
+        r"""ListMuteRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListMuteRuleResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListMuteRuleResponse.
+        r"""Gets the body of this ListMuteRuleResponse.
 
         :return: The body of this ListMuteRuleResponse.
         :rtype: list[:class:`huaweicloudsdkaom.v2.MuteRule`]
@@ -53,7 +53,7 @@ class ListMuteRuleResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListMuteRuleResponse.
+        r"""Sets the body of this ListMuteRuleResponse.
 
         :param body: The body of this ListMuteRuleResponse.
         :type body: list[:class:`huaweicloudsdkaom.v2.MuteRule`]

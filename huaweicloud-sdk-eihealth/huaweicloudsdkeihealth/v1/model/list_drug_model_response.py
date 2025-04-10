@@ -28,7 +28,7 @@ class ListDrugModelResponse(SdkResponse):
     }
 
     def __init__(self, models=None, count=None):
-        """ListDrugModelResponse
+        r"""ListDrugModelResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDrugModelResponse(SdkResponse):
 
     @property
     def models(self):
-        """Gets the models of this ListDrugModelResponse.
+        r"""Gets the models of this ListDrugModelResponse.
 
         模型列表
 
@@ -62,7 +62,7 @@ class ListDrugModelResponse(SdkResponse):
 
     @models.setter
     def models(self, models):
-        """Sets the models of this ListDrugModelResponse.
+        r"""Sets the models of this ListDrugModelResponse.
 
         模型列表
 
@@ -73,7 +73,7 @@ class ListDrugModelResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListDrugModelResponse.
+        r"""Gets the count of this ListDrugModelResponse.
 
         模型总数
 
@@ -84,7 +84,7 @@ class ListDrugModelResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListDrugModelResponse.
+        r"""Sets the count of this ListDrugModelResponse.
 
         模型总数
 

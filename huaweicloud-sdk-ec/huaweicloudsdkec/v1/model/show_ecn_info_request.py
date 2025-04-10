@@ -25,7 +25,7 @@ class ShowEcnInfoRequest:
     }
 
     def __init__(self, ecn_id=None):
-        """ShowEcnInfoRequest
+        r"""ShowEcnInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowEcnInfoRequest:
 
     @property
     def ecn_id(self):
-        """Gets the ecn_id of this ShowEcnInfoRequest.
+        r"""Gets the ecn_id of this ShowEcnInfoRequest.
 
         企业连接网络ID
 
@@ -53,7 +53,7 @@ class ShowEcnInfoRequest:
 
     @ecn_id.setter
     def ecn_id(self, ecn_id):
-        """Sets the ecn_id of this ShowEcnInfoRequest.
+        r"""Sets the ecn_id of this ShowEcnInfoRequest.
 
         企业连接网络ID
 

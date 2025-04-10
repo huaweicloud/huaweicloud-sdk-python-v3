@@ -28,7 +28,7 @@ class ShowCgwResponse(SdkResponse):
     }
 
     def __init__(self, customer_gateway=None, request_id=None):
-        """ShowCgwResponse
+        r"""ShowCgwResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowCgwResponse(SdkResponse):
 
     @property
     def customer_gateway(self):
-        """Gets the customer_gateway of this ShowCgwResponse.
+        r"""Gets the customer_gateway of this ShowCgwResponse.
 
         :return: The customer_gateway of this ShowCgwResponse.
         :rtype: :class:`huaweicloudsdkvpn.v5.ResponseCustomerGateway`
@@ -60,7 +60,7 @@ class ShowCgwResponse(SdkResponse):
 
     @customer_gateway.setter
     def customer_gateway(self, customer_gateway):
-        """Sets the customer_gateway of this ShowCgwResponse.
+        r"""Sets the customer_gateway of this ShowCgwResponse.
 
         :param customer_gateway: The customer_gateway of this ShowCgwResponse.
         :type customer_gateway: :class:`huaweicloudsdkvpn.v5.ResponseCustomerGateway`
@@ -69,7 +69,7 @@ class ShowCgwResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowCgwResponse.
+        r"""Gets the request_id of this ShowCgwResponse.
 
         请求id
 
@@ -80,7 +80,7 @@ class ShowCgwResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowCgwResponse.
+        r"""Sets the request_id of this ShowCgwResponse.
 
         请求id
 

@@ -26,7 +26,7 @@ class SignPublishedAgreementResponse(SdkResponse):
     }
 
     def __init__(self, agreement_signed_record_id=None):
-        """SignPublishedAgreementResponse
+        r"""SignPublishedAgreementResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SignPublishedAgreementResponse(SdkResponse):
 
     @property
     def agreement_signed_record_id(self):
-        """Gets the agreement_signed_record_id of this SignPublishedAgreementResponse.
+        r"""Gets the agreement_signed_record_id of this SignPublishedAgreementResponse.
 
         签署记录id
 
@@ -55,7 +55,7 @@ class SignPublishedAgreementResponse(SdkResponse):
 
     @agreement_signed_record_id.setter
     def agreement_signed_record_id(self, agreement_signed_record_id):
-        """Sets the agreement_signed_record_id of this SignPublishedAgreementResponse.
+        r"""Sets the agreement_signed_record_id of this SignPublishedAgreementResponse.
 
         签署记录id
 

@@ -25,7 +25,7 @@ class KMSCmk:
     }
 
     def __init__(self, grants=None):
-        """KMSCmk
+        r"""KMSCmk
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class KMSCmk:
 
     @property
     def grants(self):
-        """Gets the grants of this KMSCmk.
+        r"""Gets the grants of this KMSCmk.
 
         用于加密密钥的授权。
 
@@ -53,7 +53,7 @@ class KMSCmk:
 
     @grants.setter
     def grants(self, grants):
-        """Sets the grants of this KMSCmk.
+        r"""Sets the grants of this KMSCmk.
 
         用于加密密钥的授权。
 

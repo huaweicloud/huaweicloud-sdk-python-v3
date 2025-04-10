@@ -25,7 +25,7 @@ class EventList:
     }
 
     def __init__(self, events=None):
-        """EventList
+        r"""EventList
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class EventList:
 
     @property
     def events(self):
-        """Gets the events of this EventList.
+        r"""Gets the events of this EventList.
 
         事件或者告警详情。
 
@@ -53,7 +53,7 @@ class EventList:
 
     @events.setter
     def events(self, events):
-        """Sets the events of this EventList.
+        r"""Sets the events of this EventList.
 
         事件或者告警详情。
 

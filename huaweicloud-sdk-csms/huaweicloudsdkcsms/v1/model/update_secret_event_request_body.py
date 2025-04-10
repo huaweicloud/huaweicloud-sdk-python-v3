@@ -29,7 +29,7 @@ class UpdateSecretEventRequestBody:
     }
 
     def __init__(self, state=None, event_types=None, notification=None):
-        """UpdateSecretEventRequestBody
+        r"""UpdateSecretEventRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateSecretEventRequestBody:
 
     @property
     def state(self):
-        """Gets the state of this UpdateSecretEventRequestBody.
+        r"""Gets the state of this UpdateSecretEventRequestBody.
 
         事件通知状态，取值如下。  ENABLED：表示启用状态 DISABLED：表示禁用状态
 
@@ -68,7 +68,7 @@ class UpdateSecretEventRequestBody:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this UpdateSecretEventRequestBody.
+        r"""Sets the state of this UpdateSecretEventRequestBody.
 
         事件通知状态，取值如下。  ENABLED：表示启用状态 DISABLED：表示禁用状态
 
@@ -79,7 +79,7 @@ class UpdateSecretEventRequestBody:
 
     @property
     def event_types(self):
-        """Gets the event_types of this UpdateSecretEventRequestBody.
+        r"""Gets the event_types of this UpdateSecretEventRequestBody.
 
         本次事件通知的基础事件列表，基础事件类型如下。  - SECRET_VERSION_CREATED:版本创建 - SECRET_VERSION_EXPIRED:版本过期 - SECRET_ROTATED:凭据轮转成功 - SECRET_DELETED:凭据删除 - SECRET_ROTATED_FAILED:凭据轮转失败  列表包含的基础事件类型不能重复。
 
@@ -90,7 +90,7 @@ class UpdateSecretEventRequestBody:
 
     @event_types.setter
     def event_types(self, event_types):
-        """Sets the event_types of this UpdateSecretEventRequestBody.
+        r"""Sets the event_types of this UpdateSecretEventRequestBody.
 
         本次事件通知的基础事件列表，基础事件类型如下。  - SECRET_VERSION_CREATED:版本创建 - SECRET_VERSION_EXPIRED:版本过期 - SECRET_ROTATED:凭据轮转成功 - SECRET_DELETED:凭据删除 - SECRET_ROTATED_FAILED:凭据轮转失败  列表包含的基础事件类型不能重复。
 
@@ -101,7 +101,7 @@ class UpdateSecretEventRequestBody:
 
     @property
     def notification(self):
-        """Gets the notification of this UpdateSecretEventRequestBody.
+        r"""Gets the notification of this UpdateSecretEventRequestBody.
 
         :return: The notification of this UpdateSecretEventRequestBody.
         :rtype: :class:`huaweicloudsdkcsms.v1.Notification`
@@ -110,7 +110,7 @@ class UpdateSecretEventRequestBody:
 
     @notification.setter
     def notification(self, notification):
-        """Sets the notification of this UpdateSecretEventRequestBody.
+        r"""Sets the notification of this UpdateSecretEventRequestBody.
 
         :param notification: The notification of this UpdateSecretEventRequestBody.
         :type notification: :class:`huaweicloudsdkcsms.v1.Notification`

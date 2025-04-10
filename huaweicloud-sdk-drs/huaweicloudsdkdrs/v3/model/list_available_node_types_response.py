@@ -26,7 +26,7 @@ class ListAvailableNodeTypesResponse(SdkResponse):
     }
 
     def __init__(self, node_types=None):
-        """ListAvailableNodeTypesResponse
+        r"""ListAvailableNodeTypesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListAvailableNodeTypesResponse(SdkResponse):
 
     @property
     def node_types(self):
-        """Gets the node_types of this ListAvailableNodeTypesResponse.
+        r"""Gets the node_types of this ListAvailableNodeTypesResponse.
 
         Node规格列表
 
@@ -55,7 +55,7 @@ class ListAvailableNodeTypesResponse(SdkResponse):
 
     @node_types.setter
     def node_types(self, node_types):
-        """Sets the node_types of this ListAvailableNodeTypesResponse.
+        r"""Sets the node_types of this ListAvailableNodeTypesResponse.
 
         Node规格列表
 

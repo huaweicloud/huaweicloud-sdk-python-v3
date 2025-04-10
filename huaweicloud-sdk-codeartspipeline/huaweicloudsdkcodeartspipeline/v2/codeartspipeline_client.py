@@ -34,7 +34,7 @@ class CodeArtsPipelineClient(Client):
         return client_builder
 
     def batch_move_pipeline_to_group(self, request):
-        """批量把流水线移动到分组下
+        r"""批量把流水线移动到分组下
 
         批量把流水线移动到分组下
         
@@ -101,7 +101,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def batch_show_pipelines_status(self, request):
-        """批量获取流水线状态
+        r"""批量获取流水线状态
 
         批量获取流水线状态和阶段信息
         
@@ -166,7 +166,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def create_basic_plugin(self, request):
-        """创建基础插件
+        r"""创建基础插件
 
         创建基础插件
         
@@ -233,7 +233,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def create_pipeline_by_template(self, request):
-        """基于模板快速创建流水线及流水线内任务
+        r"""基于模板快速创建流水线及流水线内任务
 
         基于模板快速创建流水线及流水线内任务
         
@@ -298,7 +298,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def create_pipeline_group(self, request):
-        """新建流水线分组
+        r"""新建流水线分组
 
         新建流水线分组
         
@@ -365,7 +365,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def create_plugin_draft(self, request):
-        """创建插件草稿版本
+        r"""创建插件草稿版本
 
         创建插件草稿版本
         
@@ -432,7 +432,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def create_plugin_version(self, request):
-        """创建插件版本
+        r"""创建插件版本
 
         创建插件版本
         
@@ -499,7 +499,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def create_publisher(self, request):
-        """创建发布商
+        r"""创建发布商
 
         创建发布商
         
@@ -566,7 +566,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def create_rule(self, request):
-        """创建规则
+        r"""创建规则
 
         创建规则
         
@@ -633,7 +633,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def create_strategy(self, request):
-        """创建策略
+        r"""创建策略
 
         创建策略
         
@@ -700,7 +700,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def delete_basic_plugin(self, request):
-        """删除基础插件
+        r"""删除基础插件
 
         删除基础插件
         
@@ -771,7 +771,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def delete_pipeline_group(self, request):
-        """删除流水线分组
+        r"""删除流水线分组
 
         删除流水线分组
         
@@ -838,7 +838,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def delete_plugin_draft(self, request):
-        """删除插件草稿
+        r"""删除插件草稿
 
         删除插件草稿
         
@@ -907,7 +907,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def delete_publisher(self, request):
-        """删除发布商
+        r"""删除发布商
 
         删除发布商
         
@@ -974,7 +974,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def delete_rule(self, request):
-        """删除规则
+        r"""删除规则
 
         删除规则
         
@@ -1041,7 +1041,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def delete_strategy(self, request):
-        """删除策略
+        r"""删除策略
 
         删除策略
         
@@ -1108,7 +1108,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def list_available_publisher(self, request):
-        """查询可用发布商
+        r"""查询可用发布商
 
         查询可用发布商
         
@@ -1173,7 +1173,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def list_base_plugins(self, request):
-        """查询基础插件列表
+        r"""查询基础插件列表
 
         查询基础插件列表
         
@@ -1244,7 +1244,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def list_base_plugins_new_post(self, request):
-        """分页查询可选插件列表
+        r"""分页查询可选插件列表
 
         分页查询可选插件列表
         
@@ -1315,7 +1315,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def list_p_lugin_version(self, request):
-        """查询插件所有版本信息
+        r"""查询插件所有版本信息
 
         查询插件所有版本信息
         
@@ -1386,7 +1386,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def list_pipeline_simple_info(self, request):
-        """获取流水线列表接口
+        r"""获取流水线列表接口
 
         获取流水线列表接口
         
@@ -1451,7 +1451,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def list_pipleine_build_result(self, request):
-        """获取项目下流水线执行状况
+        r"""获取项目下流水线执行状况
 
         获取项目下流水线执行状况
         
@@ -1524,7 +1524,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def list_plugin_version_number(self, request):
-        """查询插件版本号
+        r"""查询插件版本号
 
         查询插件版本号
         
@@ -1595,7 +1595,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def list_plugins(self, request):
-        """查询插件列表
+        r"""查询插件列表
 
         查询插件列表
         
@@ -1666,7 +1666,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def list_project_strategy(self, request):
-        """获取规则模板实例列表
+        r"""获取规则模板实例列表
 
         获取策略列表
         
@@ -1743,7 +1743,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def list_publisher(self, request):
-        """查询发布商列表
+        r"""查询发布商列表
 
         查询发布商列表
         
@@ -1814,7 +1814,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def list_rule(self, request):
-        """分页获取规则列表
+        r"""分页获取规则列表
 
         分页获取规则列表
         
@@ -1889,7 +1889,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def list_stage_plugins(self, request):
-        """查询可选插件列表
+        r"""查询可选插件列表
 
         查询可选插件列表
         
@@ -1956,7 +1956,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def list_strategy(self, request):
-        """获取策略列表
+        r"""获取策略列表
 
         获取策略列表
         
@@ -2035,7 +2035,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def list_templates(self, request):
-        """查询模板列表
+        r"""查询模板列表
 
         查询模板列表，支持分页查询,支持模板名字模糊查询
         
@@ -2112,7 +2112,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def publish_plugin(self, request):
-        """发布插件
+        r"""发布插件
 
         发布插件
         
@@ -2179,7 +2179,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def publish_plugin_bind(self, request):
-        """插件绑定发布商
+        r"""插件绑定发布商
 
         插件绑定发布商
         
@@ -2246,7 +2246,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def publish_plugin_draft(self, request):
-        """发布插件草稿
+        r"""发布插件草稿
 
         发布插件草稿
         
@@ -2313,7 +2313,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def remove_pipeline(self, request):
-        """删除流水线
+        r"""删除流水线
 
         根据id删除流水线
         
@@ -2378,7 +2378,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def show_basic_plugin(self, request):
-        """查询基础插件详情
+        r"""查询基础插件详情
 
         查询基础插件详情
         
@@ -2447,7 +2447,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def show_instance_status(self, request):
-        """检查流水线创建状态
+        r"""检查流水线创建状态
 
         检查流水线创建状态
         
@@ -2512,7 +2512,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def show_pipeline_detail(self, request):
-        """查询流水线详情
+        r"""查询流水线详情
 
         查询流水线详情
         
@@ -2579,7 +2579,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def show_pipeline_group_tree(self, request):
-        """查询流水线分组树
+        r"""查询流水线分组树
 
         查询流水线分组树
         
@@ -2644,7 +2644,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def show_pipleine_status(self, request):
-        """获取流水线状态
+        r"""获取流水线状态
 
         获取流水线状态,阶段及任务信息
         
@@ -2711,7 +2711,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def show_plugin_inputs(self, request):
-        """查询插件输入配置
+        r"""查询插件输入配置
 
         查询插件输入配置
         
@@ -2778,7 +2778,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def show_plugin_metrics(self, request):
-        """查询插件指标配置
+        r"""查询插件指标配置
 
         查询插件指标配置
         
@@ -2845,7 +2845,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def show_plugin_outputs(self, request):
-        """查询插件输出配置
+        r"""查询插件输出配置
 
         查询插件输出配置
         
@@ -2912,7 +2912,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def show_plugin_version(self, request):
-        """查询插件版本详情
+        r"""查询插件版本详情
 
         查询插件版本详情
         
@@ -2981,7 +2981,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def show_project_strategy(self, request):
-        """show_project_strategy
+        r"""show_project_strategy
 
         查询项目级策略详情
         
@@ -3048,7 +3048,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def show_publisher(self, request):
-        """查询发布商详情
+        r"""查询发布商详情
 
         查询发布商详情
         
@@ -3115,7 +3115,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def show_rule(self, request):
-        """获取单条规则详情
+        r"""获取单条规则详情
 
         获取单条规则详情
         
@@ -3184,7 +3184,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def show_strategy(self, request):
-        """获取策略详情
+        r"""获取策略详情
 
         获取策略详情
         
@@ -3253,7 +3253,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def show_template_detail(self, request):
-        """查询模板详情
+        r"""查询模板详情
 
         查询模板详情
         
@@ -3322,7 +3322,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def start_new_pipeline(self, request):
-        """启动流水线
+        r"""启动流水线
 
         启动流水线
         
@@ -3389,7 +3389,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def stop_pipeline_new(self, request):
-        """停止流水线
+        r"""停止流水线
 
         停止流水线
         
@@ -3456,7 +3456,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def switch_strategy(self, request):
-        """开关策略
+        r"""开关策略
 
         修改策略状态
         
@@ -3525,7 +3525,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def update_basic_plugin(self, request):
-        """更新基础插件
+        r"""更新基础插件
 
         更新基础插件
         
@@ -3592,7 +3592,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def update_pipeline_group(self, request):
-        """更新流水线分组
+        r"""更新流水线分组
 
         更新流水线分组
         
@@ -3659,7 +3659,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def update_pipeline_info(self, request):
-        """修改流水线信息
+        r"""修改流水线信息
 
         修改流水线信息
         
@@ -3730,7 +3730,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def update_plugin_base_info(self, request):
-        """更新插件基本信息
+        r"""更新插件基本信息
 
         更新插件基本信息
         
@@ -3797,7 +3797,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def update_plugin_draft(self, request):
-        """更新插件草稿
+        r"""更新插件草稿
 
         更新插件草稿
         
@@ -3864,7 +3864,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def update_rule(self, request):
-        """更新规则
+        r"""更新规则
 
         更新规则
         
@@ -3933,7 +3933,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def update_strategy(self, request):
-        """修改策略
+        r"""修改策略
 
         修改策略
         
@@ -4002,7 +4002,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def upload_basic_plugin(self, request):
-        """上传基础插件
+        r"""上传基础插件
 
         上传基础插件
         
@@ -4075,7 +4075,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def upload_plugin_icon(self, request):
-        """更新插件图标
+        r"""更新插件图标
 
         更新插件图标
         
@@ -4146,7 +4146,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def upload_publisher_icon(self, request):
-        """更新发布商图标
+        r"""更新发布商图标
 
         更新发布商图标
         
@@ -4217,7 +4217,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def accept_manual_review(self, request):
-        """通过人工审核
+        r"""通过人工审核
 
         通过人工审核
         
@@ -4290,7 +4290,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def batch_show_pipelines_latest_status(self, request):
-        """批量获取流水线状态
+        r"""批量获取流水线状态
 
         批量获取流水线状态
         
@@ -4357,7 +4357,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def create_pipeline_by_template_id(self, request):
-        """基于模板创建流水线
+        r"""基于模板创建流水线
 
         基于模板创建流水线
         
@@ -4428,7 +4428,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def create_pipeline_new(self, request):
-        """创建流水线
+        r"""创建流水线
 
         创建流水线
         
@@ -4497,7 +4497,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def create_pipeline_template(self, request):
-        """创建流水线模板
+        r"""创建流水线模板
 
         创建流水线模板
         
@@ -4564,7 +4564,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def delete_pipeline(self, request):
-        """删除流水线
+        r"""删除流水线
 
         删除流水线
         
@@ -4631,7 +4631,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def delete_pipeline_template(self, request):
-        """删除流水线模板
+        r"""删除流水线模板
 
         删除流水线模板
         
@@ -4698,7 +4698,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def list_pipeline_runs(self, request):
-        """获取流水线执行记录
+        r"""获取流水线执行记录
 
         获取流水线执行记录
         
@@ -4767,7 +4767,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def list_pipeline_templates(self, request):
-        """查询模板列表
+        r"""查询模板列表
 
         查询流水线模板列表
         
@@ -4834,7 +4834,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def list_pipelines(self, request):
-        """获取流水线列表/获取项目下流水线执行状况
+        r"""获取流水线列表/获取项目下流水线执行状况
 
         获取流水线列表/获取项目下流水线执行状况
         
@@ -4901,7 +4901,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def reject_manual_review(self, request):
-        """驳回人工审核
+        r"""驳回人工审核
 
         驳回人工审核
         
@@ -4974,7 +4974,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def retry_pipeline_run(self, request):
-        """重试运行流水线
+        r"""重试运行流水线
 
         重试运行流水线
         
@@ -5043,7 +5043,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def run_pipeline(self, request):
-        """启动流水线
+        r"""启动流水线
 
         启动流水线
         
@@ -5112,7 +5112,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def show_pipeline_artifacts(self, request):
-        """查询流水线上的构建产物
+        r"""查询流水线上的构建产物
 
         查询流水线上的构建产物
         
@@ -5181,7 +5181,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def show_pipeline_log(self, request):
-        """查询流水线日志
+        r"""查询流水线日志
 
         查询流水线日志
         
@@ -5256,7 +5256,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def show_pipeline_run_detail(self, request):
-        """获取流水线状态/获取流水线执行详情
+        r"""获取流水线状态/获取流水线执行详情
 
         获取流水线状态/获取流水线执行详情
         
@@ -5325,7 +5325,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def show_pipeline_template_detail(self, request):
-        """查询模板详情
+        r"""查询模板详情
 
         查询模板详情
         
@@ -5392,7 +5392,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def show_step_outputs(self, request):
-        """获取流水线步骤执行输出
+        r"""获取流水线步骤执行输出
 
         获取流水线步骤执行输出
         
@@ -5463,7 +5463,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def stop_pipeline_run(self, request):
-        """停止流水线
+        r"""停止流水线
 
         停止流水线
         
@@ -5532,7 +5532,7 @@ class CodeArtsPipelineClient(Client):
         return http_info
 
     def update_pipeline_template(self, request):
-        """更新流水线模板
+        r"""更新流水线模板
 
         更新流水线模板
         

@@ -28,7 +28,7 @@ class CreateMessageTemplateResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, message_template_id=None):
-        """CreateMessageTemplateResponse
+        r"""CreateMessageTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateMessageTemplateResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateMessageTemplateResponse.
+        r"""Gets the request_id of this CreateMessageTemplateResponse.
 
         请求的唯一标识ID。
 
@@ -62,7 +62,7 @@ class CreateMessageTemplateResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateMessageTemplateResponse.
+        r"""Sets the request_id of this CreateMessageTemplateResponse.
 
         请求的唯一标识ID。
 
@@ -73,7 +73,7 @@ class CreateMessageTemplateResponse(SdkResponse):
 
     @property
     def message_template_id(self):
-        """Gets the message_template_id of this CreateMessageTemplateResponse.
+        r"""Gets the message_template_id of this CreateMessageTemplateResponse.
 
         模板唯一的资源标识。
 
@@ -84,7 +84,7 @@ class CreateMessageTemplateResponse(SdkResponse):
 
     @message_template_id.setter
     def message_template_id(self, message_template_id):
-        """Sets the message_template_id of this CreateMessageTemplateResponse.
+        r"""Sets the message_template_id of this CreateMessageTemplateResponse.
 
         模板唯一的资源标识。
 

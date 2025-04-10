@@ -83,7 +83,7 @@ class MonthlyBillRecord:
     }
 
     def __init__(self, bill_cycle=None, customer_id=None, service_type_code=None, resource_type_code=None, service_type_name=None, resource_type_name=None, region_code=None, enterprise_project_id=None, enterprise_project_name=None, charging_mode=None, consume_time=None, trade_time=None, provider_type=None, trade_id=None, id=None, bill_type=None, status=None, official_amount=None, official_discount_amount=None, erase_amount=None, consume_amount=None, cash_amount=None, credit_amount=None, coupon_amount=None, flexipurchase_coupon_amount=None, stored_value_card_amount=None, bonus_amount=None, debt_amount=None, writeoff_amount=None, region_name=None):
-        """MonthlyBillRecord
+        r"""MonthlyBillRecord
 
         The model defined in huaweicloud sdk
 
@@ -246,7 +246,7 @@ class MonthlyBillRecord:
 
     @property
     def bill_cycle(self):
-        """Gets the bill_cycle of this MonthlyBillRecord.
+        r"""Gets the bill_cycle of this MonthlyBillRecord.
 
         流水账单所在账期，东八区时间，格式为YYYY-MM。
 
@@ -257,7 +257,7 @@ class MonthlyBillRecord:
 
     @bill_cycle.setter
     def bill_cycle(self, bill_cycle):
-        """Sets the bill_cycle of this MonthlyBillRecord.
+        r"""Sets the bill_cycle of this MonthlyBillRecord.
 
         流水账单所在账期，东八区时间，格式为YYYY-MM。
 
@@ -268,7 +268,7 @@ class MonthlyBillRecord:
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this MonthlyBillRecord.
+        r"""Gets the customer_id of this MonthlyBillRecord.
 
         消费的客户账号ID。 如果是普通客户或者企业子客户查询消费记录，只能查询到客户自己的消费记录，且此处显示的是客户自己的客户ID。如果是企业主查询消费记录，可以查询到企业主以及企业子客户的消费记录，此处为消费的实际客户ID。如果是企业主自己的消费记录，则为企业主ID；如果是某个企业子客户的消费记录，则此处为企业子账号ID。
 
@@ -279,7 +279,7 @@ class MonthlyBillRecord:
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this MonthlyBillRecord.
+        r"""Sets the customer_id of this MonthlyBillRecord.
 
         消费的客户账号ID。 如果是普通客户或者企业子客户查询消费记录，只能查询到客户自己的消费记录，且此处显示的是客户自己的客户ID。如果是企业主查询消费记录，可以查询到企业主以及企业子客户的消费记录，此处为消费的实际客户ID。如果是企业主自己的消费记录，则为企业主ID；如果是某个企业子客户的消费记录，则此处为企业子账号ID。
 
@@ -290,7 +290,7 @@ class MonthlyBillRecord:
 
     @property
     def service_type_code(self):
-        """Gets the service_type_code of this MonthlyBillRecord.
+        r"""Gets the service_type_code of this MonthlyBillRecord.
 
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
@@ -301,7 +301,7 @@ class MonthlyBillRecord:
 
     @service_type_code.setter
     def service_type_code(self, service_type_code):
-        """Sets the service_type_code of this MonthlyBillRecord.
+        r"""Sets the service_type_code of this MonthlyBillRecord.
 
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
@@ -312,7 +312,7 @@ class MonthlyBillRecord:
 
     @property
     def resource_type_code(self):
-        """Gets the resource_type_code of this MonthlyBillRecord.
+        r"""Gets the resource_type_code of this MonthlyBillRecord.
 
         资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
@@ -323,7 +323,7 @@ class MonthlyBillRecord:
 
     @resource_type_code.setter
     def resource_type_code(self, resource_type_code):
-        """Sets the resource_type_code of this MonthlyBillRecord.
+        r"""Sets the resource_type_code of this MonthlyBillRecord.
 
         资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
@@ -334,7 +334,7 @@ class MonthlyBillRecord:
 
     @property
     def service_type_name(self):
-        """Gets the service_type_name of this MonthlyBillRecord.
+        r"""Gets the service_type_name of this MonthlyBillRecord.
 
         云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
@@ -345,7 +345,7 @@ class MonthlyBillRecord:
 
     @service_type_name.setter
     def service_type_name(self, service_type_name):
-        """Sets the service_type_name of this MonthlyBillRecord.
+        r"""Sets the service_type_name of this MonthlyBillRecord.
 
         云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
@@ -356,7 +356,7 @@ class MonthlyBillRecord:
 
     @property
     def resource_type_name(self):
-        """Gets the resource_type_name of this MonthlyBillRecord.
+        r"""Gets the resource_type_name of this MonthlyBillRecord.
 
         资源类型名称。例如ECS的资源类型名称为“云主机”。
 
@@ -367,7 +367,7 @@ class MonthlyBillRecord:
 
     @resource_type_name.setter
     def resource_type_name(self, resource_type_name):
-        """Sets the resource_type_name of this MonthlyBillRecord.
+        r"""Sets the resource_type_name of this MonthlyBillRecord.
 
         资源类型名称。例如ECS的资源类型名称为“云主机”。
 
@@ -378,7 +378,7 @@ class MonthlyBillRecord:
 
     @property
     def region_code(self):
-        """Gets the region_code of this MonthlyBillRecord.
+        r"""Gets the region_code of this MonthlyBillRecord.
 
         云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
@@ -389,7 +389,7 @@ class MonthlyBillRecord:
 
     @region_code.setter
     def region_code(self, region_code):
-        """Sets the region_code of this MonthlyBillRecord.
+        r"""Sets the region_code of this MonthlyBillRecord.
 
         云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
@@ -400,7 +400,7 @@ class MonthlyBillRecord:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this MonthlyBillRecord.
+        r"""Gets the enterprise_project_id of this MonthlyBillRecord.
 
         企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：null其余项目对应ID获取方法请参见[如何获取企业项目ID](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
 
@@ -411,7 +411,7 @@ class MonthlyBillRecord:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this MonthlyBillRecord.
+        r"""Sets the enterprise_project_id of this MonthlyBillRecord.
 
         企业项目标识（企业项目ID）。 default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：null其余项目对应ID获取方法请参见[如何获取企业项目ID](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
 
@@ -422,7 +422,7 @@ class MonthlyBillRecord:
 
     @property
     def enterprise_project_name(self):
-        """Gets the enterprise_project_name of this MonthlyBillRecord.
+        r"""Gets the enterprise_project_name of this MonthlyBillRecord.
 
         企业项目的名称。
 
@@ -433,7 +433,7 @@ class MonthlyBillRecord:
 
     @enterprise_project_name.setter
     def enterprise_project_name(self, enterprise_project_name):
-        """Sets the enterprise_project_name of this MonthlyBillRecord.
+        r"""Sets the enterprise_project_name of this MonthlyBillRecord.
 
         企业项目的名称。
 
@@ -444,7 +444,7 @@ class MonthlyBillRecord:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this MonthlyBillRecord.
+        r"""Gets the charging_mode of this MonthlyBillRecord.
 
         计费模式。 1：包年/包月3：按需10：预留实例11：节省计划
 
@@ -455,7 +455,7 @@ class MonthlyBillRecord:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this MonthlyBillRecord.
+        r"""Sets the charging_mode of this MonthlyBillRecord.
 
         计费模式。 1：包年/包月3：按需10：预留实例11：节省计划
 
@@ -466,7 +466,7 @@ class MonthlyBillRecord:
 
     @property
     def consume_time(self):
-        """Gets the consume_time of this MonthlyBillRecord.
+        r"""Gets the consume_time of this MonthlyBillRecord.
 
         消费时间。 计费模式为包年/包月和预留实例场景时为订单的支付时间。计费模式为按需场景时为话单的生/失效时间。
 
@@ -477,7 +477,7 @@ class MonthlyBillRecord:
 
     @consume_time.setter
     def consume_time(self, consume_time):
-        """Sets the consume_time of this MonthlyBillRecord.
+        r"""Sets the consume_time of this MonthlyBillRecord.
 
         消费时间。 计费模式为包年/包月和预留实例场景时为订单的支付时间。计费模式为按需场景时为话单的生/失效时间。
 
@@ -488,7 +488,7 @@ class MonthlyBillRecord:
 
     @property
     def trade_time(self):
-        """Gets the trade_time of this MonthlyBillRecord.
+        r"""Gets the trade_time of this MonthlyBillRecord.
 
         交易时间，某条消费记录对应的扣费时间。
 
@@ -499,7 +499,7 @@ class MonthlyBillRecord:
 
     @trade_time.setter
     def trade_time(self, trade_time):
-        """Sets the trade_time of this MonthlyBillRecord.
+        r"""Sets the trade_time of this MonthlyBillRecord.
 
         交易时间，某条消费记录对应的扣费时间。
 
@@ -510,7 +510,7 @@ class MonthlyBillRecord:
 
     @property
     def provider_type(self):
-        """Gets the provider_type of this MonthlyBillRecord.
+        r"""Gets the provider_type of this MonthlyBillRecord.
 
         服务商。 1：华为云2：云商店
 
@@ -521,7 +521,7 @@ class MonthlyBillRecord:
 
     @provider_type.setter
     def provider_type(self, provider_type):
-        """Sets the provider_type of this MonthlyBillRecord.
+        r"""Sets the provider_type of this MonthlyBillRecord.
 
         服务商。 1：华为云2：云商店
 
@@ -532,7 +532,7 @@ class MonthlyBillRecord:
 
     @property
     def trade_id(self):
-        """Gets the trade_id of this MonthlyBillRecord.
+        r"""Gets the trade_id of this MonthlyBillRecord.
 
         订单ID或交易ID，扣费维度的唯一标识。
 
@@ -543,7 +543,7 @@ class MonthlyBillRecord:
 
     @trade_id.setter
     def trade_id(self, trade_id):
-        """Sets the trade_id of this MonthlyBillRecord.
+        r"""Sets the trade_id of this MonthlyBillRecord.
 
         订单ID或交易ID，扣费维度的唯一标识。
 
@@ -554,7 +554,7 @@ class MonthlyBillRecord:
 
     @property
     def id(self):
-        """Gets the id of this MonthlyBillRecord.
+        r"""Gets the id of this MonthlyBillRecord.
 
         唯一标识。 该字段为预留字段。
 
@@ -565,7 +565,7 @@ class MonthlyBillRecord:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MonthlyBillRecord.
+        r"""Sets the id of this MonthlyBillRecord.
 
         唯一标识。 该字段为预留字段。
 
@@ -576,7 +576,7 @@ class MonthlyBillRecord:
 
     @property
     def bill_type(self):
-        """Gets the bill_type of this MonthlyBillRecord.
+        r"""Gets the bill_type of this MonthlyBillRecord.
 
         账单类型。1：消费-新购 2：消费-续订 3：消费-变更 4：退款-退订 5：消费-使用 8：消费-自动续订 9：调账-补偿 14：消费-服务支持计划月末扣费 16：调账-扣费 18：消费-按月付费 20：退款-变更 23：消费-节省计划抵扣 24：退款-包年/包月转按需 103：消费-按年付费
 
@@ -587,7 +587,7 @@ class MonthlyBillRecord:
 
     @bill_type.setter
     def bill_type(self, bill_type):
-        """Sets the bill_type of this MonthlyBillRecord.
+        r"""Sets the bill_type of this MonthlyBillRecord.
 
         账单类型。1：消费-新购 2：消费-续订 3：消费-变更 4：退款-退订 5：消费-使用 8：消费-自动续订 9：调账-补偿 14：消费-服务支持计划月末扣费 16：调账-扣费 18：消费-按月付费 20：退款-变更 23：消费-节省计划抵扣 24：退款-包年/包月转按需 103：消费-按年付费
 
@@ -598,7 +598,7 @@ class MonthlyBillRecord:
 
     @property
     def status(self):
-        """Gets the status of this MonthlyBillRecord.
+        r"""Gets the status of this MonthlyBillRecord.
 
         支付状态。 1：已支付2：未结清3：未结算
 
@@ -609,7 +609,7 @@ class MonthlyBillRecord:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this MonthlyBillRecord.
+        r"""Sets the status of this MonthlyBillRecord.
 
         支付状态。 1：已支付2：未结清3：未结算
 
@@ -620,7 +620,7 @@ class MonthlyBillRecord:
 
     @property
     def official_amount(self):
-        """Gets the official_amount of this MonthlyBillRecord.
+        r"""Gets the official_amount of this MonthlyBillRecord.
 
         官网价。单位：元。  说明： official_amount = official_discount_amount + erase_amount + consume_amount
 
@@ -631,7 +631,7 @@ class MonthlyBillRecord:
 
     @official_amount.setter
     def official_amount(self, official_amount):
-        """Sets the official_amount of this MonthlyBillRecord.
+        r"""Sets the official_amount of this MonthlyBillRecord.
 
         官网价。单位：元。  说明： official_amount = official_discount_amount + erase_amount + consume_amount
 
@@ -642,7 +642,7 @@ class MonthlyBillRecord:
 
     @property
     def official_discount_amount(self):
-        """Gets the official_discount_amount of this MonthlyBillRecord.
+        r"""Gets the official_discount_amount of this MonthlyBillRecord.
 
         折扣金额。单位：元。
 
@@ -653,7 +653,7 @@ class MonthlyBillRecord:
 
     @official_discount_amount.setter
     def official_discount_amount(self, official_discount_amount):
-        """Sets the official_discount_amount of this MonthlyBillRecord.
+        r"""Sets the official_discount_amount of this MonthlyBillRecord.
 
         折扣金额。单位：元。
 
@@ -664,7 +664,7 @@ class MonthlyBillRecord:
 
     @property
     def erase_amount(self):
-        """Gets the erase_amount of this MonthlyBillRecord.
+        r"""Gets the erase_amount of this MonthlyBillRecord.
 
         抹零金额。单位：元。
 
@@ -675,7 +675,7 @@ class MonthlyBillRecord:
 
     @erase_amount.setter
     def erase_amount(self, erase_amount):
-        """Sets the erase_amount of this MonthlyBillRecord.
+        r"""Sets the erase_amount of this MonthlyBillRecord.
 
         抹零金额。单位：元。
 
@@ -686,7 +686,7 @@ class MonthlyBillRecord:
 
     @property
     def consume_amount(self):
-        """Gets the consume_amount of this MonthlyBillRecord.
+        r"""Gets the consume_amount of this MonthlyBillRecord.
 
         应付金额，包括现金券和储值卡和代金券金额。单位：元。  说明： consume_amount的值等于cash_amount，credit_amount，coupon_amount，flexipurchase_coupon_amount，stored_value_card_amount，bonus_amount，debt_amount，writeoff_amount的总和。
 
@@ -697,7 +697,7 @@ class MonthlyBillRecord:
 
     @consume_amount.setter
     def consume_amount(self, consume_amount):
-        """Sets the consume_amount of this MonthlyBillRecord.
+        r"""Sets the consume_amount of this MonthlyBillRecord.
 
         应付金额，包括现金券和储值卡和代金券金额。单位：元。  说明： consume_amount的值等于cash_amount，credit_amount，coupon_amount，flexipurchase_coupon_amount，stored_value_card_amount，bonus_amount，debt_amount，writeoff_amount的总和。
 
@@ -708,7 +708,7 @@ class MonthlyBillRecord:
 
     @property
     def cash_amount(self):
-        """Gets the cash_amount of this MonthlyBillRecord.
+        r"""Gets the cash_amount of this MonthlyBillRecord.
 
         现金支付金额。单位：元.
 
@@ -719,7 +719,7 @@ class MonthlyBillRecord:
 
     @cash_amount.setter
     def cash_amount(self, cash_amount):
-        """Sets the cash_amount of this MonthlyBillRecord.
+        r"""Sets the cash_amount of this MonthlyBillRecord.
 
         现金支付金额。单位：元.
 
@@ -730,7 +730,7 @@ class MonthlyBillRecord:
 
     @property
     def credit_amount(self):
-        """Gets the credit_amount of this MonthlyBillRecord.
+        r"""Gets the credit_amount of this MonthlyBillRecord.
 
         信用额度支付金额。单位：元。
 
@@ -741,7 +741,7 @@ class MonthlyBillRecord:
 
     @credit_amount.setter
     def credit_amount(self, credit_amount):
-        """Sets the credit_amount of this MonthlyBillRecord.
+        r"""Sets the credit_amount of this MonthlyBillRecord.
 
         信用额度支付金额。单位：元。
 
@@ -752,7 +752,7 @@ class MonthlyBillRecord:
 
     @property
     def coupon_amount(self):
-        """Gets the coupon_amount of this MonthlyBillRecord.
+        r"""Gets the coupon_amount of this MonthlyBillRecord.
 
         代金券支付金额。单位：元。
 
@@ -763,7 +763,7 @@ class MonthlyBillRecord:
 
     @coupon_amount.setter
     def coupon_amount(self, coupon_amount):
-        """Sets the coupon_amount of this MonthlyBillRecord.
+        r"""Sets the coupon_amount of this MonthlyBillRecord.
 
         代金券支付金额。单位：元。
 
@@ -774,7 +774,7 @@ class MonthlyBillRecord:
 
     @property
     def flexipurchase_coupon_amount(self):
-        """Gets the flexipurchase_coupon_amount of this MonthlyBillRecord.
+        r"""Gets the flexipurchase_coupon_amount of this MonthlyBillRecord.
 
         现金券支付金额。单位：元。
 
@@ -785,7 +785,7 @@ class MonthlyBillRecord:
 
     @flexipurchase_coupon_amount.setter
     def flexipurchase_coupon_amount(self, flexipurchase_coupon_amount):
-        """Sets the flexipurchase_coupon_amount of this MonthlyBillRecord.
+        r"""Sets the flexipurchase_coupon_amount of this MonthlyBillRecord.
 
         现金券支付金额。单位：元。
 
@@ -796,7 +796,7 @@ class MonthlyBillRecord:
 
     @property
     def stored_value_card_amount(self):
-        """Gets the stored_value_card_amount of this MonthlyBillRecord.
+        r"""Gets the stored_value_card_amount of this MonthlyBillRecord.
 
         储值卡支付金额。单位：元。
 
@@ -807,7 +807,7 @@ class MonthlyBillRecord:
 
     @stored_value_card_amount.setter
     def stored_value_card_amount(self, stored_value_card_amount):
-        """Sets the stored_value_card_amount of this MonthlyBillRecord.
+        r"""Sets the stored_value_card_amount of this MonthlyBillRecord.
 
         储值卡支付金额。单位：元。
 
@@ -818,7 +818,7 @@ class MonthlyBillRecord:
 
     @property
     def bonus_amount(self):
-        """Gets the bonus_amount of this MonthlyBillRecord.
+        r"""Gets the bonus_amount of this MonthlyBillRecord.
 
         奖励金支付金额（奖励金已经下线，目前用于现网客户未使用完的奖励金）。单位：元。
 
@@ -829,7 +829,7 @@ class MonthlyBillRecord:
 
     @bonus_amount.setter
     def bonus_amount(self, bonus_amount):
-        """Sets the bonus_amount of this MonthlyBillRecord.
+        r"""Sets the bonus_amount of this MonthlyBillRecord.
 
         奖励金支付金额（奖励金已经下线，目前用于现网客户未使用完的奖励金）。单位：元。
 
@@ -840,7 +840,7 @@ class MonthlyBillRecord:
 
     @property
     def debt_amount(self):
-        """Gets the debt_amount of this MonthlyBillRecord.
+        r"""Gets the debt_amount of this MonthlyBillRecord.
 
         欠费金额。单位：元。  说明： 对于月结客户，欠费金额即页面上的月度结算金额。
 
@@ -851,7 +851,7 @@ class MonthlyBillRecord:
 
     @debt_amount.setter
     def debt_amount(self, debt_amount):
-        """Sets the debt_amount of this MonthlyBillRecord.
+        r"""Sets the debt_amount of this MonthlyBillRecord.
 
         欠费金额。单位：元。  说明： 对于月结客户，欠费金额即页面上的月度结算金额。
 
@@ -862,7 +862,7 @@ class MonthlyBillRecord:
 
     @property
     def writeoff_amount(self):
-        """Gets the writeoff_amount of this MonthlyBillRecord.
+        r"""Gets the writeoff_amount of this MonthlyBillRecord.
 
         欠费核销金额。单位：元。
 
@@ -873,7 +873,7 @@ class MonthlyBillRecord:
 
     @writeoff_amount.setter
     def writeoff_amount(self, writeoff_amount):
-        """Sets the writeoff_amount of this MonthlyBillRecord.
+        r"""Sets the writeoff_amount of this MonthlyBillRecord.
 
         欠费核销金额。单位：元。
 
@@ -884,7 +884,7 @@ class MonthlyBillRecord:
 
     @property
     def region_name(self):
-        """Gets the region_name of this MonthlyBillRecord.
+        r"""Gets the region_name of this MonthlyBillRecord.
 
         云服务区名称，例如：“华北-北京一”。具体请参见地区和终端节点对应云服务的“区域名称”列的值。
 
@@ -895,7 +895,7 @@ class MonthlyBillRecord:
 
     @region_name.setter
     def region_name(self, region_name):
-        """Sets the region_name of this MonthlyBillRecord.
+        r"""Sets the region_name of this MonthlyBillRecord.
 
         云服务区名称，例如：“华北-北京一”。具体请参见地区和终端节点对应云服务的“区域名称”列的值。
 

@@ -29,7 +29,7 @@ class ListDependencyVersionRequest:
     }
 
     def __init__(self, depend_id=None, marker=None, maxitems=None):
-        """ListDependencyVersionRequest
+        r"""ListDependencyVersionRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListDependencyVersionRequest:
 
     @property
     def depend_id(self):
-        """Gets the depend_id of this ListDependencyVersionRequest.
+        r"""Gets the depend_id of this ListDependencyVersionRequest.
 
         依赖包的ID。
 
@@ -67,7 +67,7 @@ class ListDependencyVersionRequest:
 
     @depend_id.setter
     def depend_id(self, depend_id):
-        """Sets the depend_id of this ListDependencyVersionRequest.
+        r"""Sets the depend_id of this ListDependencyVersionRequest.
 
         依赖包的ID。
 
@@ -78,7 +78,7 @@ class ListDependencyVersionRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListDependencyVersionRequest.
+        r"""Gets the marker of this ListDependencyVersionRequest.
 
         上一次查询依赖包的最后记录位置，默认为\"0\"。
 
@@ -89,7 +89,7 @@ class ListDependencyVersionRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListDependencyVersionRequest.
+        r"""Sets the marker of this ListDependencyVersionRequest.
 
         上一次查询依赖包的最后记录位置，默认为\"0\"。
 
@@ -100,7 +100,7 @@ class ListDependencyVersionRequest:
 
     @property
     def maxitems(self):
-        """Gets the maxitems of this ListDependencyVersionRequest.
+        r"""Gets the maxitems of this ListDependencyVersionRequest.
 
         单次查询最大条数
 
@@ -111,7 +111,7 @@ class ListDependencyVersionRequest:
 
     @maxitems.setter
     def maxitems(self, maxitems):
-        """Sets the maxitems of this ListDependencyVersionRequest.
+        r"""Sets the maxitems of this ListDependencyVersionRequest.
 
         单次查询最大条数
 

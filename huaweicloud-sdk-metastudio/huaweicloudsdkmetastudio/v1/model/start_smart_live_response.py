@@ -38,7 +38,7 @@ class StartSmartLiveResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, rtc_room_info=None, live_event_report_url=None, live_event_callback_config=None, live_warning_info=None, limit_duration=None, x_request_id=None):
-        """StartSmartLiveResponse
+        r"""StartSmartLiveResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class StartSmartLiveResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this StartSmartLiveResponse.
+        r"""Gets the job_id of this StartSmartLiveResponse.
 
         直播任务ID。
 
@@ -97,7 +97,7 @@ class StartSmartLiveResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this StartSmartLiveResponse.
+        r"""Sets the job_id of this StartSmartLiveResponse.
 
         直播任务ID。
 
@@ -108,7 +108,7 @@ class StartSmartLiveResponse(SdkResponse):
 
     @property
     def rtc_room_info(self):
-        """Gets the rtc_room_info of this StartSmartLiveResponse.
+        r"""Gets the rtc_room_info of this StartSmartLiveResponse.
 
         :return: The rtc_room_info of this StartSmartLiveResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.RTCRoomInfoList`
@@ -117,7 +117,7 @@ class StartSmartLiveResponse(SdkResponse):
 
     @rtc_room_info.setter
     def rtc_room_info(self, rtc_room_info):
-        """Sets the rtc_room_info of this StartSmartLiveResponse.
+        r"""Sets the rtc_room_info of this StartSmartLiveResponse.
 
         :param rtc_room_info: The rtc_room_info of this StartSmartLiveResponse.
         :type rtc_room_info: :class:`huaweicloudsdkmetastudio.v1.RTCRoomInfoList`
@@ -126,7 +126,7 @@ class StartSmartLiveResponse(SdkResponse):
 
     @property
     def live_event_report_url(self):
-        """Gets the live_event_report_url of this StartSmartLiveResponse.
+        r"""Gets the live_event_report_url of this StartSmartLiveResponse.
 
         直播事件上报地址。用户将自行获取的直播间事件上报到此地址，用于触发智能互动，自动回复话术。
 
@@ -137,7 +137,7 @@ class StartSmartLiveResponse(SdkResponse):
 
     @live_event_report_url.setter
     def live_event_report_url(self, live_event_report_url):
-        """Sets the live_event_report_url of this StartSmartLiveResponse.
+        r"""Sets the live_event_report_url of this StartSmartLiveResponse.
 
         直播事件上报地址。用户将自行获取的直播间事件上报到此地址，用于触发智能互动，自动回复话术。
 
@@ -148,7 +148,7 @@ class StartSmartLiveResponse(SdkResponse):
 
     @property
     def live_event_callback_config(self):
-        """Gets the live_event_callback_config of this StartSmartLiveResponse.
+        r"""Gets the live_event_callback_config of this StartSmartLiveResponse.
 
         :return: The live_event_callback_config of this StartSmartLiveResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.LiveEventCallBackConfig`
@@ -157,7 +157,7 @@ class StartSmartLiveResponse(SdkResponse):
 
     @live_event_callback_config.setter
     def live_event_callback_config(self, live_event_callback_config):
-        """Sets the live_event_callback_config of this StartSmartLiveResponse.
+        r"""Sets the live_event_callback_config of this StartSmartLiveResponse.
 
         :param live_event_callback_config: The live_event_callback_config of this StartSmartLiveResponse.
         :type live_event_callback_config: :class:`huaweicloudsdkmetastudio.v1.LiveEventCallBackConfig`
@@ -166,7 +166,7 @@ class StartSmartLiveResponse(SdkResponse):
 
     @property
     def live_warning_info(self):
-        """Gets the live_warning_info of this StartSmartLiveResponse.
+        r"""Gets the live_warning_info of this StartSmartLiveResponse.
 
         开播风险告警列表。
 
@@ -177,7 +177,7 @@ class StartSmartLiveResponse(SdkResponse):
 
     @live_warning_info.setter
     def live_warning_info(self, live_warning_info):
-        """Sets the live_warning_info of this StartSmartLiveResponse.
+        r"""Sets the live_warning_info of this StartSmartLiveResponse.
 
         开播风险告警列表。
 
@@ -188,7 +188,7 @@ class StartSmartLiveResponse(SdkResponse):
 
     @property
     def limit_duration(self):
-        """Gets the limit_duration of this StartSmartLiveResponse.
+        r"""Gets the limit_duration of this StartSmartLiveResponse.
 
         **参数解释**： 配置的最大直播时长。单位小时。 0 为不限制。 **约束限制**： 停止直播逻辑配置为立即停止则直播停止误差在5分钟之内。其他逻辑则加上处理时长。 **默认取值**： 不设置则表示不限时。
 
@@ -199,7 +199,7 @@ class StartSmartLiveResponse(SdkResponse):
 
     @limit_duration.setter
     def limit_duration(self, limit_duration):
-        """Sets the limit_duration of this StartSmartLiveResponse.
+        r"""Sets the limit_duration of this StartSmartLiveResponse.
 
         **参数解释**： 配置的最大直播时长。单位小时。 0 为不限制。 **约束限制**： 停止直播逻辑配置为立即停止则直播停止误差在5分钟之内。其他逻辑则加上处理时长。 **默认取值**： 不设置则表示不限时。
 
@@ -210,7 +210,7 @@ class StartSmartLiveResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this StartSmartLiveResponse.
+        r"""Gets the x_request_id of this StartSmartLiveResponse.
 
         :return: The x_request_id of this StartSmartLiveResponse.
         :rtype: str
@@ -219,7 +219,7 @@ class StartSmartLiveResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this StartSmartLiveResponse.
+        r"""Sets the x_request_id of this StartSmartLiveResponse.
 
         :param x_request_id: The x_request_id of this StartSmartLiveResponse.
         :type x_request_id: str

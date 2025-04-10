@@ -52,7 +52,7 @@ class ShowDesktopMonitorDataResponse(SdkResponse):
     }
 
     def __init__(self, user_online_info=None, online_status=None, cpu_info=None, memory_info=None, disk_util_inband=None, disk_read_bytes_rate=None, disk_write_bytes_rate=None, disk_read_requests_rate=None, disk_write_requests_rate=None, network_incoming_bytes_rate_inband=None, network_outgoing_bytes_rate_inband=None, network_incoming_bytes_aggregate_rate=None, network_outgoing_bytes_aggregate_rate=None, network_vm_connections=None):
-        """ShowDesktopMonitorDataResponse
+        r"""ShowDesktopMonitorDataResponse
 
         The model defined in huaweicloud sdk
 
@@ -135,7 +135,7 @@ class ShowDesktopMonitorDataResponse(SdkResponse):
 
     @property
     def user_online_info(self):
-        """Gets the user_online_info of this ShowDesktopMonitorDataResponse.
+        r"""Gets the user_online_info of this ShowDesktopMonitorDataResponse.
 
         在线信息
 
@@ -146,7 +146,7 @@ class ShowDesktopMonitorDataResponse(SdkResponse):
 
     @user_online_info.setter
     def user_online_info(self, user_online_info):
-        """Sets the user_online_info of this ShowDesktopMonitorDataResponse.
+        r"""Sets the user_online_info of this ShowDesktopMonitorDataResponse.
 
         在线信息
 
@@ -157,7 +157,7 @@ class ShowDesktopMonitorDataResponse(SdkResponse):
 
     @property
     def online_status(self):
-        """Gets the online_status of this ShowDesktopMonitorDataResponse.
+        r"""Gets the online_status of this ShowDesktopMonitorDataResponse.
 
         计算机登录状态，在线信息没值的情况下，查看计算机登录状态 0 未登录， 1 登录中, 2登录状态同当前
 
@@ -168,7 +168,7 @@ class ShowDesktopMonitorDataResponse(SdkResponse):
 
     @online_status.setter
     def online_status(self, online_status):
-        """Sets the online_status of this ShowDesktopMonitorDataResponse.
+        r"""Sets the online_status of this ShowDesktopMonitorDataResponse.
 
         计算机登录状态，在线信息没值的情况下，查看计算机登录状态 0 未登录， 1 登录中, 2登录状态同当前
 
@@ -179,7 +179,7 @@ class ShowDesktopMonitorDataResponse(SdkResponse):
 
     @property
     def cpu_info(self):
-        """Gets the cpu_info of this ShowDesktopMonitorDataResponse.
+        r"""Gets the cpu_info of this ShowDesktopMonitorDataResponse.
 
         cpu使用率信息
 
@@ -190,7 +190,7 @@ class ShowDesktopMonitorDataResponse(SdkResponse):
 
     @cpu_info.setter
     def cpu_info(self, cpu_info):
-        """Sets the cpu_info of this ShowDesktopMonitorDataResponse.
+        r"""Sets the cpu_info of this ShowDesktopMonitorDataResponse.
 
         cpu使用率信息
 
@@ -201,7 +201,7 @@ class ShowDesktopMonitorDataResponse(SdkResponse):
 
     @property
     def memory_info(self):
-        """Gets the memory_info of this ShowDesktopMonitorDataResponse.
+        r"""Gets the memory_info of this ShowDesktopMonitorDataResponse.
 
         内存使用率信息
 
@@ -212,7 +212,7 @@ class ShowDesktopMonitorDataResponse(SdkResponse):
 
     @memory_info.setter
     def memory_info(self, memory_info):
-        """Sets the memory_info of this ShowDesktopMonitorDataResponse.
+        r"""Sets the memory_info of this ShowDesktopMonitorDataResponse.
 
         内存使用率信息
 
@@ -223,7 +223,7 @@ class ShowDesktopMonitorDataResponse(SdkResponse):
 
     @property
     def disk_util_inband(self):
-        """Gets the disk_util_inband of this ShowDesktopMonitorDataResponse.
+        r"""Gets the disk_util_inband of this ShowDesktopMonitorDataResponse.
 
         磁盘使用率
 
@@ -234,7 +234,7 @@ class ShowDesktopMonitorDataResponse(SdkResponse):
 
     @disk_util_inband.setter
     def disk_util_inband(self, disk_util_inband):
-        """Sets the disk_util_inband of this ShowDesktopMonitorDataResponse.
+        r"""Sets the disk_util_inband of this ShowDesktopMonitorDataResponse.
 
         磁盘使用率
 
@@ -245,7 +245,7 @@ class ShowDesktopMonitorDataResponse(SdkResponse):
 
     @property
     def disk_read_bytes_rate(self):
-        """Gets the disk_read_bytes_rate of this ShowDesktopMonitorDataResponse.
+        r"""Gets the disk_read_bytes_rate of this ShowDesktopMonitorDataResponse.
 
         磁盘读带宽
 
@@ -256,7 +256,7 @@ class ShowDesktopMonitorDataResponse(SdkResponse):
 
     @disk_read_bytes_rate.setter
     def disk_read_bytes_rate(self, disk_read_bytes_rate):
-        """Sets the disk_read_bytes_rate of this ShowDesktopMonitorDataResponse.
+        r"""Sets the disk_read_bytes_rate of this ShowDesktopMonitorDataResponse.
 
         磁盘读带宽
 
@@ -267,7 +267,7 @@ class ShowDesktopMonitorDataResponse(SdkResponse):
 
     @property
     def disk_write_bytes_rate(self):
-        """Gets the disk_write_bytes_rate of this ShowDesktopMonitorDataResponse.
+        r"""Gets the disk_write_bytes_rate of this ShowDesktopMonitorDataResponse.
 
         磁盘写带宽
 
@@ -278,7 +278,7 @@ class ShowDesktopMonitorDataResponse(SdkResponse):
 
     @disk_write_bytes_rate.setter
     def disk_write_bytes_rate(self, disk_write_bytes_rate):
-        """Sets the disk_write_bytes_rate of this ShowDesktopMonitorDataResponse.
+        r"""Sets the disk_write_bytes_rate of this ShowDesktopMonitorDataResponse.
 
         磁盘写带宽
 
@@ -289,7 +289,7 @@ class ShowDesktopMonitorDataResponse(SdkResponse):
 
     @property
     def disk_read_requests_rate(self):
-        """Gets the disk_read_requests_rate of this ShowDesktopMonitorDataResponse.
+        r"""Gets the disk_read_requests_rate of this ShowDesktopMonitorDataResponse.
 
         磁盘读IOPS
 
@@ -300,7 +300,7 @@ class ShowDesktopMonitorDataResponse(SdkResponse):
 
     @disk_read_requests_rate.setter
     def disk_read_requests_rate(self, disk_read_requests_rate):
-        """Sets the disk_read_requests_rate of this ShowDesktopMonitorDataResponse.
+        r"""Sets the disk_read_requests_rate of this ShowDesktopMonitorDataResponse.
 
         磁盘读IOPS
 
@@ -311,7 +311,7 @@ class ShowDesktopMonitorDataResponse(SdkResponse):
 
     @property
     def disk_write_requests_rate(self):
-        """Gets the disk_write_requests_rate of this ShowDesktopMonitorDataResponse.
+        r"""Gets the disk_write_requests_rate of this ShowDesktopMonitorDataResponse.
 
         磁盘写IOPS
 
@@ -322,7 +322,7 @@ class ShowDesktopMonitorDataResponse(SdkResponse):
 
     @disk_write_requests_rate.setter
     def disk_write_requests_rate(self, disk_write_requests_rate):
-        """Sets the disk_write_requests_rate of this ShowDesktopMonitorDataResponse.
+        r"""Sets the disk_write_requests_rate of this ShowDesktopMonitorDataResponse.
 
         磁盘写IOPS
 
@@ -333,7 +333,7 @@ class ShowDesktopMonitorDataResponse(SdkResponse):
 
     @property
     def network_incoming_bytes_rate_inband(self):
-        """Gets the network_incoming_bytes_rate_inband of this ShowDesktopMonitorDataResponse.
+        r"""Gets the network_incoming_bytes_rate_inband of this ShowDesktopMonitorDataResponse.
 
         带内网络流入速率
 
@@ -344,7 +344,7 @@ class ShowDesktopMonitorDataResponse(SdkResponse):
 
     @network_incoming_bytes_rate_inband.setter
     def network_incoming_bytes_rate_inband(self, network_incoming_bytes_rate_inband):
-        """Sets the network_incoming_bytes_rate_inband of this ShowDesktopMonitorDataResponse.
+        r"""Sets the network_incoming_bytes_rate_inband of this ShowDesktopMonitorDataResponse.
 
         带内网络流入速率
 
@@ -355,7 +355,7 @@ class ShowDesktopMonitorDataResponse(SdkResponse):
 
     @property
     def network_outgoing_bytes_rate_inband(self):
-        """Gets the network_outgoing_bytes_rate_inband of this ShowDesktopMonitorDataResponse.
+        r"""Gets the network_outgoing_bytes_rate_inband of this ShowDesktopMonitorDataResponse.
 
         带内网络流出速率
 
@@ -366,7 +366,7 @@ class ShowDesktopMonitorDataResponse(SdkResponse):
 
     @network_outgoing_bytes_rate_inband.setter
     def network_outgoing_bytes_rate_inband(self, network_outgoing_bytes_rate_inband):
-        """Sets the network_outgoing_bytes_rate_inband of this ShowDesktopMonitorDataResponse.
+        r"""Sets the network_outgoing_bytes_rate_inband of this ShowDesktopMonitorDataResponse.
 
         带内网络流出速率
 
@@ -377,7 +377,7 @@ class ShowDesktopMonitorDataResponse(SdkResponse):
 
     @property
     def network_incoming_bytes_aggregate_rate(self):
-        """Gets the network_incoming_bytes_aggregate_rate of this ShowDesktopMonitorDataResponse.
+        r"""Gets the network_incoming_bytes_aggregate_rate of this ShowDesktopMonitorDataResponse.
 
         带外网络流入速率
 
@@ -388,7 +388,7 @@ class ShowDesktopMonitorDataResponse(SdkResponse):
 
     @network_incoming_bytes_aggregate_rate.setter
     def network_incoming_bytes_aggregate_rate(self, network_incoming_bytes_aggregate_rate):
-        """Sets the network_incoming_bytes_aggregate_rate of this ShowDesktopMonitorDataResponse.
+        r"""Sets the network_incoming_bytes_aggregate_rate of this ShowDesktopMonitorDataResponse.
 
         带外网络流入速率
 
@@ -399,7 +399,7 @@ class ShowDesktopMonitorDataResponse(SdkResponse):
 
     @property
     def network_outgoing_bytes_aggregate_rate(self):
-        """Gets the network_outgoing_bytes_aggregate_rate of this ShowDesktopMonitorDataResponse.
+        r"""Gets the network_outgoing_bytes_aggregate_rate of this ShowDesktopMonitorDataResponse.
 
         带外网络流出速率
 
@@ -410,7 +410,7 @@ class ShowDesktopMonitorDataResponse(SdkResponse):
 
     @network_outgoing_bytes_aggregate_rate.setter
     def network_outgoing_bytes_aggregate_rate(self, network_outgoing_bytes_aggregate_rate):
-        """Sets the network_outgoing_bytes_aggregate_rate of this ShowDesktopMonitorDataResponse.
+        r"""Sets the network_outgoing_bytes_aggregate_rate of this ShowDesktopMonitorDataResponse.
 
         带外网络流出速率
 
@@ -421,7 +421,7 @@ class ShowDesktopMonitorDataResponse(SdkResponse):
 
     @property
     def network_vm_connections(self):
-        """Gets the network_vm_connections of this ShowDesktopMonitorDataResponse.
+        r"""Gets the network_vm_connections of this ShowDesktopMonitorDataResponse.
 
         网络连接数
 
@@ -432,7 +432,7 @@ class ShowDesktopMonitorDataResponse(SdkResponse):
 
     @network_vm_connections.setter
     def network_vm_connections(self, network_vm_connections):
-        """Sets the network_vm_connections of this ShowDesktopMonitorDataResponse.
+        r"""Sets the network_vm_connections of this ShowDesktopMonitorDataResponse.
 
         网络连接数
 

@@ -31,7 +31,7 @@ class ListPropertyActiveControlsRequest:
     }
 
     def __init__(self, edge_node_id=None, device_id=None, service_id=None, _property=None):
-        """ListPropertyActiveControlsRequest
+        r"""ListPropertyActiveControlsRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ListPropertyActiveControlsRequest:
 
     @property
     def edge_node_id(self):
-        """Gets the edge_node_id of this ListPropertyActiveControlsRequest.
+        r"""Gets the edge_node_id of this ListPropertyActiveControlsRequest.
 
         边缘节点ID
 
@@ -72,7 +72,7 @@ class ListPropertyActiveControlsRequest:
 
     @edge_node_id.setter
     def edge_node_id(self, edge_node_id):
-        """Sets the edge_node_id of this ListPropertyActiveControlsRequest.
+        r"""Sets the edge_node_id of this ListPropertyActiveControlsRequest.
 
         边缘节点ID
 
@@ -83,7 +83,7 @@ class ListPropertyActiveControlsRequest:
 
     @property
     def device_id(self):
-        """Gets the device_id of this ListPropertyActiveControlsRequest.
+        r"""Gets the device_id of this ListPropertyActiveControlsRequest.
 
         设备ID
 
@@ -94,7 +94,7 @@ class ListPropertyActiveControlsRequest:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this ListPropertyActiveControlsRequest.
+        r"""Sets the device_id of this ListPropertyActiveControlsRequest.
 
         设备ID
 
@@ -105,7 +105,7 @@ class ListPropertyActiveControlsRequest:
 
     @property
     def service_id(self):
-        """Gets the service_id of this ListPropertyActiveControlsRequest.
+        r"""Gets the service_id of this ListPropertyActiveControlsRequest.
 
         设备服务id。可选，在属性平铺场景不需要填，如果不填则表示service_id为空字符串
 
@@ -116,7 +116,7 @@ class ListPropertyActiveControlsRequest:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this ListPropertyActiveControlsRequest.
+        r"""Sets the service_id of this ListPropertyActiveControlsRequest.
 
         设备服务id。可选，在属性平铺场景不需要填，如果不填则表示service_id为空字符串
 
@@ -127,7 +127,7 @@ class ListPropertyActiveControlsRequest:
 
     @property
     def _property(self):
-        """Gets the _property of this ListPropertyActiveControlsRequest.
+        r"""Gets the _property of this ListPropertyActiveControlsRequest.
 
         设备属性。必选
 
@@ -138,7 +138,7 @@ class ListPropertyActiveControlsRequest:
 
     @_property.setter
     def _property(self, _property):
-        """Sets the _property of this ListPropertyActiveControlsRequest.
+        r"""Sets the _property of this ListPropertyActiveControlsRequest.
 
         设备属性。必选
 

@@ -28,7 +28,7 @@ class ShowIpInfoResponse(SdkResponse):
     }
 
     def __init__(self, cdn_ips=None, x_request_id=None):
-        """ShowIpInfoResponse
+        r"""ShowIpInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowIpInfoResponse(SdkResponse):
 
     @property
     def cdn_ips(self):
-        """Gets the cdn_ips of this ShowIpInfoResponse.
+        r"""Gets the cdn_ips of this ShowIpInfoResponse.
 
         IP归属信息列表。
 
@@ -62,7 +62,7 @@ class ShowIpInfoResponse(SdkResponse):
 
     @cdn_ips.setter
     def cdn_ips(self, cdn_ips):
-        """Sets the cdn_ips of this ShowIpInfoResponse.
+        r"""Sets the cdn_ips of this ShowIpInfoResponse.
 
         IP归属信息列表。
 
@@ -73,7 +73,7 @@ class ShowIpInfoResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowIpInfoResponse.
+        r"""Gets the x_request_id of this ShowIpInfoResponse.
 
         :return: The x_request_id of this ShowIpInfoResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class ShowIpInfoResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowIpInfoResponse.
+        r"""Sets the x_request_id of this ShowIpInfoResponse.
 
         :param x_request_id: The x_request_id of this ShowIpInfoResponse.
         :type x_request_id: str

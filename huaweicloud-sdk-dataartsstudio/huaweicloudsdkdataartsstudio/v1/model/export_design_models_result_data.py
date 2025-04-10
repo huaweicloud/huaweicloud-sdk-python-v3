@@ -25,7 +25,7 @@ class ExportDesignModelsResultData:
     }
 
     def __init__(self, uuid=None):
-        """ExportDesignModelsResultData
+        r"""ExportDesignModelsResultData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ExportDesignModelsResultData:
 
     @property
     def uuid(self):
-        """Gets the uuid of this ExportDesignModelsResultData.
+        r"""Gets the uuid of this ExportDesignModelsResultData.
 
         导入接口返回的唯一标识。
 
@@ -54,7 +54,7 @@ class ExportDesignModelsResultData:
 
     @uuid.setter
     def uuid(self, uuid):
-        """Sets the uuid of this ExportDesignModelsResultData.
+        r"""Sets the uuid of this ExportDesignModelsResultData.
 
         导入接口返回的唯一标识。
 

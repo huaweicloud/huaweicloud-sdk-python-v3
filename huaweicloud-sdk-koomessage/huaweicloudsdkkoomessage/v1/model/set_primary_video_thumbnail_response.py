@@ -30,7 +30,7 @@ class SetPrimaryVideoThumbnailResponse(SdkResponse):
     }
 
     def __init__(self, status=None, message=None, data=None):
-        """SetPrimaryVideoThumbnailResponse
+        r"""SetPrimaryVideoThumbnailResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class SetPrimaryVideoThumbnailResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this SetPrimaryVideoThumbnailResponse.
+        r"""Gets the status of this SetPrimaryVideoThumbnailResponse.
 
         请求状态，固定200。
 
@@ -69,7 +69,7 @@ class SetPrimaryVideoThumbnailResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SetPrimaryVideoThumbnailResponse.
+        r"""Sets the status of this SetPrimaryVideoThumbnailResponse.
 
         请求状态，固定200。
 
@@ -80,7 +80,7 @@ class SetPrimaryVideoThumbnailResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this SetPrimaryVideoThumbnailResponse.
+        r"""Gets the message of this SetPrimaryVideoThumbnailResponse.
 
         状态描述。
 
@@ -91,7 +91,7 @@ class SetPrimaryVideoThumbnailResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this SetPrimaryVideoThumbnailResponse.
+        r"""Sets the message of this SetPrimaryVideoThumbnailResponse.
 
         状态描述。
 
@@ -102,7 +102,7 @@ class SetPrimaryVideoThumbnailResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this SetPrimaryVideoThumbnailResponse.
+        r"""Gets the data of this SetPrimaryVideoThumbnailResponse.
 
         固定为null。
 
@@ -113,7 +113,7 @@ class SetPrimaryVideoThumbnailResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this SetPrimaryVideoThumbnailResponse.
+        r"""Sets the data of this SetPrimaryVideoThumbnailResponse.
 
         固定为null。
 

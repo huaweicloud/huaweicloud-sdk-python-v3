@@ -27,7 +27,7 @@ class Owner:
     }
 
     def __init__(self, id=None):
-        """Owner
+        r"""Owner
 
         The model defined in huaweicloud sdk
 
@@ -45,7 +45,7 @@ class Owner:
 
     @property
     def id(self):
-        """Gets the id of this Owner.
+        r"""Gets the id of this Owner.
 
         Domain ID (account ID)
 
@@ -56,7 +56,7 @@ class Owner:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Owner.
+        r"""Sets the id of this Owner.
 
         Domain ID (account ID)
 

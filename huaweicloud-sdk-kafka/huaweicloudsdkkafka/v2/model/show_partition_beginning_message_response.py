@@ -32,7 +32,7 @@ class ShowPartitionBeginningMessageResponse(SdkResponse):
     }
 
     def __init__(self, topic=None, partition=None, offset=None, timestamp=None):
-        """ShowPartitionBeginningMessageResponse
+        r"""ShowPartitionBeginningMessageResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowPartitionBeginningMessageResponse(SdkResponse):
 
     @property
     def topic(self):
-        """Gets the topic of this ShowPartitionBeginningMessageResponse.
+        r"""Gets the topic of this ShowPartitionBeginningMessageResponse.
 
         Topic名称。
 
@@ -76,7 +76,7 @@ class ShowPartitionBeginningMessageResponse(SdkResponse):
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this ShowPartitionBeginningMessageResponse.
+        r"""Sets the topic of this ShowPartitionBeginningMessageResponse.
 
         Topic名称。
 
@@ -87,7 +87,7 @@ class ShowPartitionBeginningMessageResponse(SdkResponse):
 
     @property
     def partition(self):
-        """Gets the partition of this ShowPartitionBeginningMessageResponse.
+        r"""Gets the partition of this ShowPartitionBeginningMessageResponse.
 
         分区编号。
 
@@ -98,7 +98,7 @@ class ShowPartitionBeginningMessageResponse(SdkResponse):
 
     @partition.setter
     def partition(self, partition):
-        """Sets the partition of this ShowPartitionBeginningMessageResponse.
+        r"""Sets the partition of this ShowPartitionBeginningMessageResponse.
 
         分区编号。
 
@@ -109,7 +109,7 @@ class ShowPartitionBeginningMessageResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ShowPartitionBeginningMessageResponse.
+        r"""Gets the offset of this ShowPartitionBeginningMessageResponse.
 
         最新消息位置。
 
@@ -120,7 +120,7 @@ class ShowPartitionBeginningMessageResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowPartitionBeginningMessageResponse.
+        r"""Sets the offset of this ShowPartitionBeginningMessageResponse.
 
         最新消息位置。
 
@@ -131,7 +131,7 @@ class ShowPartitionBeginningMessageResponse(SdkResponse):
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this ShowPartitionBeginningMessageResponse.
+        r"""Gets the timestamp of this ShowPartitionBeginningMessageResponse.
 
         生产消息的时间。 格式为Unix时间戳。单位为毫秒。
 
@@ -142,7 +142,7 @@ class ShowPartitionBeginningMessageResponse(SdkResponse):
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this ShowPartitionBeginningMessageResponse.
+        r"""Sets the timestamp of this ShowPartitionBeginningMessageResponse.
 
         生产消息的时间。 格式为Unix时间戳。单位为毫秒。
 

@@ -33,7 +33,7 @@ class HandleNotificationRequestBody:
     }
 
     def __init__(self, channel_name=None, status=None, invitor_info=None, invitee_info=None, invited_orgs=None):
-        """HandleNotificationRequestBody
+        r"""HandleNotificationRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class HandleNotificationRequestBody:
 
     @property
     def channel_name(self):
-        """Gets the channel_name of this HandleNotificationRequestBody.
+        r"""Gets the channel_name of this HandleNotificationRequestBody.
 
         邀请目标通道
 
@@ -79,7 +79,7 @@ class HandleNotificationRequestBody:
 
     @channel_name.setter
     def channel_name(self, channel_name):
-        """Sets the channel_name of this HandleNotificationRequestBody.
+        r"""Sets the channel_name of this HandleNotificationRequestBody.
 
         邀请目标通道
 
@@ -90,7 +90,7 @@ class HandleNotificationRequestBody:
 
     @property
     def status(self):
-        """Gets the status of this HandleNotificationRequestBody.
+        r"""Gets the status of this HandleNotificationRequestBody.
 
         处理邀请
 
@@ -101,7 +101,7 @@ class HandleNotificationRequestBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this HandleNotificationRequestBody.
+        r"""Sets the status of this HandleNotificationRequestBody.
 
         处理邀请
 
@@ -112,7 +112,7 @@ class HandleNotificationRequestBody:
 
     @property
     def invitor_info(self):
-        """Gets the invitor_info of this HandleNotificationRequestBody.
+        r"""Gets the invitor_info of this HandleNotificationRequestBody.
 
         :return: The invitor_info of this HandleNotificationRequestBody.
         :rtype: :class:`huaweicloudsdkbcs.v2.HandleNotificationInvitor`
@@ -121,7 +121,7 @@ class HandleNotificationRequestBody:
 
     @invitor_info.setter
     def invitor_info(self, invitor_info):
-        """Sets the invitor_info of this HandleNotificationRequestBody.
+        r"""Sets the invitor_info of this HandleNotificationRequestBody.
 
         :param invitor_info: The invitor_info of this HandleNotificationRequestBody.
         :type invitor_info: :class:`huaweicloudsdkbcs.v2.HandleNotificationInvitor`
@@ -130,7 +130,7 @@ class HandleNotificationRequestBody:
 
     @property
     def invitee_info(self):
-        """Gets the invitee_info of this HandleNotificationRequestBody.
+        r"""Gets the invitee_info of this HandleNotificationRequestBody.
 
         :return: The invitee_info of this HandleNotificationRequestBody.
         :rtype: :class:`huaweicloudsdkbcs.v2.HandleNotificationInvitee`
@@ -139,7 +139,7 @@ class HandleNotificationRequestBody:
 
     @invitee_info.setter
     def invitee_info(self, invitee_info):
-        """Sets the invitee_info of this HandleNotificationRequestBody.
+        r"""Sets the invitee_info of this HandleNotificationRequestBody.
 
         :param invitee_info: The invitee_info of this HandleNotificationRequestBody.
         :type invitee_info: :class:`huaweicloudsdkbcs.v2.HandleNotificationInvitee`
@@ -148,7 +148,7 @@ class HandleNotificationRequestBody:
 
     @property
     def invited_orgs(self):
-        """Gets the invited_orgs of this HandleNotificationRequestBody.
+        r"""Gets the invited_orgs of this HandleNotificationRequestBody.
 
         加入联盟的组织，同意加入时必填
 
@@ -159,7 +159,7 @@ class HandleNotificationRequestBody:
 
     @invited_orgs.setter
     def invited_orgs(self, invited_orgs):
-        """Sets the invited_orgs of this HandleNotificationRequestBody.
+        r"""Sets the invited_orgs of this HandleNotificationRequestBody.
 
         加入联盟的组织，同意加入时必填
 

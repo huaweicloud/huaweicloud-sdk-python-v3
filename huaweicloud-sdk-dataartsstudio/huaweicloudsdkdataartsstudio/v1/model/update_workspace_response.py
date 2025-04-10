@@ -26,7 +26,7 @@ class UpdateWorkspaceResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """UpdateWorkspaceResponse
+        r"""UpdateWorkspaceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateWorkspaceResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this UpdateWorkspaceResponse.
+        r"""Gets the data of this UpdateWorkspaceResponse.
 
         :return: The data of this UpdateWorkspaceResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateWorkspaceResultData`
@@ -53,7 +53,7 @@ class UpdateWorkspaceResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this UpdateWorkspaceResponse.
+        r"""Sets the data of this UpdateWorkspaceResponse.
 
         :param data: The data of this UpdateWorkspaceResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.CreateWorkspaceResultData`

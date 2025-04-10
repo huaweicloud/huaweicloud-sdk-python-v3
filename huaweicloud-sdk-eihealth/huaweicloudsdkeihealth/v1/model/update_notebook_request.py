@@ -29,7 +29,7 @@ class UpdateNotebookRequest:
     }
 
     def __init__(self, eihealth_project_id=None, notebook_id=None, body=None):
-        """UpdateNotebookRequest
+        r"""UpdateNotebookRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateNotebookRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this UpdateNotebookRequest.
+        r"""Gets the eihealth_project_id of this UpdateNotebookRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -66,7 +66,7 @@ class UpdateNotebookRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this UpdateNotebookRequest.
+        r"""Sets the eihealth_project_id of this UpdateNotebookRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -77,7 +77,7 @@ class UpdateNotebookRequest:
 
     @property
     def notebook_id(self):
-        """Gets the notebook_id of this UpdateNotebookRequest.
+        r"""Gets the notebook_id of this UpdateNotebookRequest.
 
         notebook id
 
@@ -88,7 +88,7 @@ class UpdateNotebookRequest:
 
     @notebook_id.setter
     def notebook_id(self, notebook_id):
-        """Sets the notebook_id of this UpdateNotebookRequest.
+        r"""Sets the notebook_id of this UpdateNotebookRequest.
 
         notebook id
 
@@ -99,7 +99,7 @@ class UpdateNotebookRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateNotebookRequest.
+        r"""Gets the body of this UpdateNotebookRequest.
 
         :return: The body of this UpdateNotebookRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateNotebookReq`
@@ -108,7 +108,7 @@ class UpdateNotebookRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateNotebookRequest.
+        r"""Sets the body of this UpdateNotebookRequest.
 
         :param body: The body of this UpdateNotebookRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.UpdateNotebookReq`

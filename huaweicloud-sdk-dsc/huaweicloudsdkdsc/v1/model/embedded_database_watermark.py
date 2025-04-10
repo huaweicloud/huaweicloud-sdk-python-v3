@@ -31,7 +31,7 @@ class EmbeddedDatabaseWatermark:
     }
 
     def __init__(self, watermark_content=None, watermark_key=None, columns=None, data=None):
-        """EmbeddedDatabaseWatermark
+        r"""EmbeddedDatabaseWatermark
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class EmbeddedDatabaseWatermark:
 
     @property
     def watermark_content(self):
-        """Gets the watermark_content of this EmbeddedDatabaseWatermark.
+        r"""Gets the watermark_content of this EmbeddedDatabaseWatermark.
 
         添加水印的内容
 
@@ -71,7 +71,7 @@ class EmbeddedDatabaseWatermark:
 
     @watermark_content.setter
     def watermark_content(self, watermark_content):
-        """Sets the watermark_content of this EmbeddedDatabaseWatermark.
+        r"""Sets the watermark_content of this EmbeddedDatabaseWatermark.
 
         添加水印的内容
 
@@ -82,7 +82,7 @@ class EmbeddedDatabaseWatermark:
 
     @property
     def watermark_key(self):
-        """Gets the watermark_key of this EmbeddedDatabaseWatermark.
+        r"""Gets the watermark_key of this EmbeddedDatabaseWatermark.
 
         水印密钥
 
@@ -93,7 +93,7 @@ class EmbeddedDatabaseWatermark:
 
     @watermark_key.setter
     def watermark_key(self, watermark_key):
-        """Sets the watermark_key of this EmbeddedDatabaseWatermark.
+        r"""Sets the watermark_key of this EmbeddedDatabaseWatermark.
 
         水印密钥
 
@@ -104,7 +104,7 @@ class EmbeddedDatabaseWatermark:
 
     @property
     def columns(self):
-        """Gets the columns of this EmbeddedDatabaseWatermark.
+        r"""Gets the columns of this EmbeddedDatabaseWatermark.
 
         字段类型列表，最大长度100。使用时，至少包含两个字段，一个“primary_key”为true表示主键，一个为false用来嵌入水印
 
@@ -115,7 +115,7 @@ class EmbeddedDatabaseWatermark:
 
     @columns.setter
     def columns(self, columns):
-        """Sets the columns of this EmbeddedDatabaseWatermark.
+        r"""Sets the columns of this EmbeddedDatabaseWatermark.
 
         字段类型列表，最大长度100。使用时，至少包含两个字段，一个“primary_key”为true表示主键，一个为false用来嵌入水印
 
@@ -126,7 +126,7 @@ class EmbeddedDatabaseWatermark:
 
     @property
     def data(self):
-        """Gets the data of this EmbeddedDatabaseWatermark.
+        r"""Gets the data of this EmbeddedDatabaseWatermark.
 
         嵌入可提取水印的行数限制1500-50000行。内容建议：数据具有随机性，内容重复率低
 
@@ -137,7 +137,7 @@ class EmbeddedDatabaseWatermark:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this EmbeddedDatabaseWatermark.
+        r"""Sets the data of this EmbeddedDatabaseWatermark.
 
         嵌入可提取水印的行数限制1500-50000行。内容建议：数据具有随机性，内容重复率低
 

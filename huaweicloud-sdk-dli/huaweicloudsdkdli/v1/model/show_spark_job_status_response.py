@@ -28,7 +28,7 @@ class ShowSparkJobStatusResponse(SdkResponse):
     }
 
     def __init__(self, id=None, state=None):
-        """ShowSparkJobStatusResponse
+        r"""ShowSparkJobStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowSparkJobStatusResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowSparkJobStatusResponse.
+        r"""Gets the id of this ShowSparkJobStatusResponse.
 
         批处理作业的ID，采用UUID（通用唯一识别码）格式。
 
@@ -62,7 +62,7 @@ class ShowSparkJobStatusResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowSparkJobStatusResponse.
+        r"""Sets the id of this ShowSparkJobStatusResponse.
 
         批处理作业的ID，采用UUID（通用唯一识别码）格式。
 
@@ -73,7 +73,7 @@ class ShowSparkJobStatusResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this ShowSparkJobStatusResponse.
+        r"""Gets the state of this ShowSparkJobStatusResponse.
 
         批处理作业的状态。starting：正在启动；running：正在执行任务；dead：session已退出；success：session停止成功；recovering：正在恢复。
 
@@ -84,7 +84,7 @@ class ShowSparkJobStatusResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ShowSparkJobStatusResponse.
+        r"""Sets the state of this ShowSparkJobStatusResponse.
 
         批处理作业的状态。starting：正在启动；running：正在执行任务；dead：session已退出；success：session停止成功；recovering：正在恢复。
 

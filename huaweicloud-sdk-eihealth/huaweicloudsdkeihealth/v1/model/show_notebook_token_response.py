@@ -26,7 +26,7 @@ class ShowNotebookTokenResponse(SdkResponse):
     }
 
     def __init__(self, token=None):
-        """ShowNotebookTokenResponse
+        r"""ShowNotebookTokenResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowNotebookTokenResponse(SdkResponse):
 
     @property
     def token(self):
-        """Gets the token of this ShowNotebookTokenResponse.
+        r"""Gets the token of this ShowNotebookTokenResponse.
 
         notebook鉴权信息
 
@@ -55,7 +55,7 @@ class ShowNotebookTokenResponse(SdkResponse):
 
     @token.setter
     def token(self, token):
-        """Sets the token of this ShowNotebookTokenResponse.
+        r"""Sets the token of this ShowNotebookTokenResponse.
 
         notebook鉴权信息
 

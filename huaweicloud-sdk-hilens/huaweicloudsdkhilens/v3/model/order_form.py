@@ -37,7 +37,7 @@ class OrderForm:
     }
 
     def __init__(self, amount=None, used_amount=None, cbc_order_id=None, device_type=None, id=None, order_update_time=None, status=None):
-        """OrderForm
+        r"""OrderForm
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class OrderForm:
 
     @property
     def amount(self):
-        """Gets the amount of this OrderForm.
+        r"""Gets the amount of this OrderForm.
 
         订单数量
 
@@ -89,7 +89,7 @@ class OrderForm:
 
     @amount.setter
     def amount(self, amount):
-        """Sets the amount of this OrderForm.
+        r"""Sets the amount of this OrderForm.
 
         订单数量
 
@@ -100,7 +100,7 @@ class OrderForm:
 
     @property
     def used_amount(self):
-        """Gets the used_amount of this OrderForm.
+        r"""Gets the used_amount of this OrderForm.
 
         订到已使用数量
 
@@ -111,7 +111,7 @@ class OrderForm:
 
     @used_amount.setter
     def used_amount(self, used_amount):
-        """Sets the used_amount of this OrderForm.
+        r"""Sets the used_amount of this OrderForm.
 
         订到已使用数量
 
@@ -122,7 +122,7 @@ class OrderForm:
 
     @property
     def cbc_order_id(self):
-        """Gets the cbc_order_id of this OrderForm.
+        r"""Gets the cbc_order_id of this OrderForm.
 
         cbc订单Id
 
@@ -133,7 +133,7 @@ class OrderForm:
 
     @cbc_order_id.setter
     def cbc_order_id(self, cbc_order_id):
-        """Sets the cbc_order_id of this OrderForm.
+        r"""Sets the cbc_order_id of this OrderForm.
 
         cbc订单Id
 
@@ -144,7 +144,7 @@ class OrderForm:
 
     @property
     def device_type(self):
-        """Gets the device_type of this OrderForm.
+        r"""Gets the device_type of this OrderForm.
 
         设备类别
 
@@ -155,7 +155,7 @@ class OrderForm:
 
     @device_type.setter
     def device_type(self, device_type):
-        """Sets the device_type of this OrderForm.
+        r"""Sets the device_type of this OrderForm.
 
         设备类别
 
@@ -166,7 +166,7 @@ class OrderForm:
 
     @property
     def id(self):
-        """Gets the id of this OrderForm.
+        r"""Gets the id of this OrderForm.
 
         订单Id
 
@@ -177,7 +177,7 @@ class OrderForm:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this OrderForm.
+        r"""Sets the id of this OrderForm.
 
         订单Id
 
@@ -188,7 +188,7 @@ class OrderForm:
 
     @property
     def order_update_time(self):
-        """Gets the order_update_time of this OrderForm.
+        r"""Gets the order_update_time of this OrderForm.
 
         订单更新时间
 
@@ -199,7 +199,7 @@ class OrderForm:
 
     @order_update_time.setter
     def order_update_time(self, order_update_time):
-        """Sets the order_update_time of this OrderForm.
+        r"""Sets the order_update_time of this OrderForm.
 
         订单更新时间
 
@@ -210,7 +210,7 @@ class OrderForm:
 
     @property
     def status(self):
-        """Gets the status of this OrderForm.
+        r"""Gets the status of this OrderForm.
 
         订单状态
 
@@ -221,7 +221,7 @@ class OrderForm:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this OrderForm.
+        r"""Sets the status of this OrderForm.
 
         订单状态
 

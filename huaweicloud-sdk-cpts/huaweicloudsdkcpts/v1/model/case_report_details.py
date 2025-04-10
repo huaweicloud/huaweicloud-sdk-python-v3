@@ -29,7 +29,7 @@ class CaseReportDetails:
     }
 
     def __init__(self, custom_transactions=None, detail_datas=None, performance=None):
-        """CaseReportDetails
+        r"""CaseReportDetails
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CaseReportDetails:
 
     @property
     def custom_transactions(self):
-        """Gets the custom_transactions of this CaseReportDetails.
+        r"""Gets the custom_transactions of this CaseReportDetails.
 
         用例下所有事务的基本性能数据信息
 
@@ -68,7 +68,7 @@ class CaseReportDetails:
 
     @custom_transactions.setter
     def custom_transactions(self, custom_transactions):
-        """Sets the custom_transactions of this CaseReportDetails.
+        r"""Sets the custom_transactions of this CaseReportDetails.
 
         用例下所有事务的基本性能数据信息
 
@@ -79,7 +79,7 @@ class CaseReportDetails:
 
     @property
     def detail_datas(self):
-        """Gets the detail_datas of this CaseReportDetails.
+        r"""Gets the detail_datas of this CaseReportDetails.
 
         用例下所有aw的基本性能数据信息
 
@@ -90,7 +90,7 @@ class CaseReportDetails:
 
     @detail_datas.setter
     def detail_datas(self, detail_datas):
-        """Sets the detail_datas of this CaseReportDetails.
+        r"""Sets the detail_datas of this CaseReportDetails.
 
         用例下所有aw的基本性能数据信息
 
@@ -101,7 +101,7 @@ class CaseReportDetails:
 
     @property
     def performance(self):
-        """Gets the performance of this CaseReportDetails.
+        r"""Gets the performance of this CaseReportDetails.
 
         :return: The performance of this CaseReportDetails.
         :rtype: :class:`huaweicloudsdkcpts.v1.CaseReportDetail`
@@ -110,7 +110,7 @@ class CaseReportDetails:
 
     @performance.setter
     def performance(self, performance):
-        """Sets the performance of this CaseReportDetails.
+        r"""Sets the performance of this CaseReportDetails.
 
         :param performance: The performance of this CaseReportDetails.
         :type performance: :class:`huaweicloudsdkcpts.v1.CaseReportDetail`

@@ -47,7 +47,7 @@ class ServiceProperty:
     }
 
     def __init__(self, property_name=None, data_type=None, required=None, enum_list=None, min=None, max=None, max_length=None, step=None, unit=None, method=None, description=None, default_value=None):
-        """ServiceProperty
+        r"""ServiceProperty
 
         The model defined in huaweicloud sdk
 
@@ -117,7 +117,7 @@ class ServiceProperty:
 
     @property
     def property_name(self):
-        """Gets the property_name of this ServiceProperty.
+        r"""Gets the property_name of this ServiceProperty.
 
         **参数说明**：设备属性名称。注：设备服务内不允许重复。属性名称作为设备影子JSON文档中的key不支持特殊字符：点(.)、dollar符号($)、空char(十六进制的ASCII码为00)，如果包含了以上特殊字符则无法正常刷新影子文档。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
@@ -128,7 +128,7 @@ class ServiceProperty:
 
     @property_name.setter
     def property_name(self, property_name):
-        """Sets the property_name of this ServiceProperty.
+        r"""Sets the property_name of this ServiceProperty.
 
         **参数说明**：设备属性名称。注：设备服务内不允许重复。属性名称作为设备影子JSON文档中的key不支持特殊字符：点(.)、dollar符号($)、空char(十六进制的ASCII码为00)，如果包含了以上特殊字符则无法正常刷新影子文档。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合。
 
@@ -139,7 +139,7 @@ class ServiceProperty:
 
     @property
     def data_type(self):
-        """Gets the data_type of this ServiceProperty.
+        r"""Gets the data_type of this ServiceProperty.
 
         **参数说明**：设备属性的数据类型。 **取值范围**：int，long，decimal，string，DateTime，jsonObject，enum，boolean，string list。
 
@@ -150,7 +150,7 @@ class ServiceProperty:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this ServiceProperty.
+        r"""Sets the data_type of this ServiceProperty.
 
         **参数说明**：设备属性的数据类型。 **取值范围**：int，long，decimal，string，DateTime，jsonObject，enum，boolean，string list。
 
@@ -161,7 +161,7 @@ class ServiceProperty:
 
     @property
     def required(self):
-        """Gets the required of this ServiceProperty.
+        r"""Gets the required of this ServiceProperty.
 
         **参数说明**：设备属性是否必选。默认为false。
 
@@ -172,7 +172,7 @@ class ServiceProperty:
 
     @required.setter
     def required(self, required):
-        """Sets the required of this ServiceProperty.
+        r"""Sets the required of this ServiceProperty.
 
         **参数说明**：设备属性是否必选。默认为false。
 
@@ -183,7 +183,7 @@ class ServiceProperty:
 
     @property
     def enum_list(self):
-        """Gets the enum_list of this ServiceProperty.
+        r"""Gets the enum_list of this ServiceProperty.
 
         **参数说明**：设备属性的枚举值列表。
 
@@ -194,7 +194,7 @@ class ServiceProperty:
 
     @enum_list.setter
     def enum_list(self, enum_list):
-        """Sets the enum_list of this ServiceProperty.
+        r"""Sets the enum_list of this ServiceProperty.
 
         **参数说明**：设备属性的枚举值列表。
 
@@ -205,7 +205,7 @@ class ServiceProperty:
 
     @property
     def min(self):
-        """Gets the min of this ServiceProperty.
+        r"""Gets the min of this ServiceProperty.
 
         **参数说明**：设备属性的最小值。 **取值范围**：长度1-16。
 
@@ -216,7 +216,7 @@ class ServiceProperty:
 
     @min.setter
     def min(self, min):
-        """Sets the min of this ServiceProperty.
+        r"""Sets the min of this ServiceProperty.
 
         **参数说明**：设备属性的最小值。 **取值范围**：长度1-16。
 
@@ -227,7 +227,7 @@ class ServiceProperty:
 
     @property
     def max(self):
-        """Gets the max of this ServiceProperty.
+        r"""Gets the max of this ServiceProperty.
 
         **参数说明**：设备属性的最大值。 **取值范围**：长度1-16。
 
@@ -238,7 +238,7 @@ class ServiceProperty:
 
     @max.setter
     def max(self, max):
-        """Sets the max of this ServiceProperty.
+        r"""Sets the max of this ServiceProperty.
 
         **参数说明**：设备属性的最大值。 **取值范围**：长度1-16。
 
@@ -249,7 +249,7 @@ class ServiceProperty:
 
     @property
     def max_length(self):
-        """Gets the max_length of this ServiceProperty.
+        r"""Gets the max_length of this ServiceProperty.
 
         **参数说明**：设备属性的最大长度。
 
@@ -260,7 +260,7 @@ class ServiceProperty:
 
     @max_length.setter
     def max_length(self, max_length):
-        """Sets the max_length of this ServiceProperty.
+        r"""Sets the max_length of this ServiceProperty.
 
         **参数说明**：设备属性的最大长度。
 
@@ -271,7 +271,7 @@ class ServiceProperty:
 
     @property
     def step(self):
-        """Gets the step of this ServiceProperty.
+        r"""Gets the step of this ServiceProperty.
 
         **参数说明**：设备属性的步长。
 
@@ -282,7 +282,7 @@ class ServiceProperty:
 
     @step.setter
     def step(self, step):
-        """Sets the step of this ServiceProperty.
+        r"""Sets the step of this ServiceProperty.
 
         **参数说明**：设备属性的步长。
 
@@ -293,7 +293,7 @@ class ServiceProperty:
 
     @property
     def unit(self):
-        """Gets the unit of this ServiceProperty.
+        r"""Gets the unit of this ServiceProperty.
 
         **参数说明**：设备属性的单位。 **取值范围**：长度不超过16。
 
@@ -304,7 +304,7 @@ class ServiceProperty:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this ServiceProperty.
+        r"""Sets the unit of this ServiceProperty.
 
         **参数说明**：设备属性的单位。 **取值范围**：长度不超过16。
 
@@ -315,7 +315,7 @@ class ServiceProperty:
 
     @property
     def method(self):
-        """Gets the method of this ServiceProperty.
+        r"""Gets the method of this ServiceProperty.
 
         **参数说明**：设备属性的访问模式。 **取值范围**：RWE，RW，RE，WE，E，W，R。 - R：属性值可读 - W：属性值可写 - E：属性值可订阅，即属性值变化时上报事件
 
@@ -326,7 +326,7 @@ class ServiceProperty:
 
     @method.setter
     def method(self, method):
-        """Sets the method of this ServiceProperty.
+        r"""Sets the method of this ServiceProperty.
 
         **参数说明**：设备属性的访问模式。 **取值范围**：RWE，RW，RE，WE，E，W，R。 - R：属性值可读 - W：属性值可写 - E：属性值可订阅，即属性值变化时上报事件
 
@@ -337,7 +337,7 @@ class ServiceProperty:
 
     @property
     def description(self):
-        """Gets the description of this ServiceProperty.
+        r"""Gets the description of this ServiceProperty.
 
         **参数说明**：设备属性的描述。 **取值范围**：长度不超过128，只允许中文、字母、数字、空白字符、以及_?'#().,;&%@!- ，、：；。/等字符的组合。
 
@@ -348,7 +348,7 @@ class ServiceProperty:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ServiceProperty.
+        r"""Sets the description of this ServiceProperty.
 
         **参数说明**：设备属性的描述。 **取值范围**：长度不超过128，只允许中文、字母、数字、空白字符、以及_?'#().,;&%@!- ，、：；。/等字符的组合。
 
@@ -359,7 +359,7 @@ class ServiceProperty:
 
     @property
     def default_value(self):
-        """Gets the default_value of this ServiceProperty.
+        r"""Gets the default_value of this ServiceProperty.
 
         **参数说明**：设备属性的默认值。如果设置了默认值，使用该产品创建设备时，会将该属性的默认值写入到该设备的设备影子预期数据中，待设备上线时将该属性默认值下发给设备。
 
@@ -370,7 +370,7 @@ class ServiceProperty:
 
     @default_value.setter
     def default_value(self, default_value):
-        """Sets the default_value of this ServiceProperty.
+        r"""Sets the default_value of this ServiceProperty.
 
         **参数说明**：设备属性的默认值。如果设置了默认值，使用该产品创建设备时，会将该属性的默认值写入到该设备的设备影子预期数据中，待设备上线时将该属性默认值下发给设备。
 

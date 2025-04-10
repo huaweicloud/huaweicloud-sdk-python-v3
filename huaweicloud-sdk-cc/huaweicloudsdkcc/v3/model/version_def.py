@@ -23,7 +23,7 @@ class VersionDef:
     }
 
     def __init__(self):
-        """VersionDef
+        r"""VersionDef
 
         The model defined in huaweicloud sdk
 

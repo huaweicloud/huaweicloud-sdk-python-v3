@@ -35,7 +35,7 @@ class ResourcesPlan:
     }
 
     def __init__(self, period_type=None, start_time=None, end_time=None, min_capacity=None, max_capacity=None, effective_days=None):
-        """ResourcesPlan
+        r"""ResourcesPlan
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class ResourcesPlan:
 
     @property
     def period_type(self):
-        """Gets the period_type of this ResourcesPlan.
+        r"""Gets the period_type of this ResourcesPlan.
 
         资源计划的周期类型，当前只允许以下类型：  daily
 
@@ -84,7 +84,7 @@ class ResourcesPlan:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this ResourcesPlan.
+        r"""Sets the period_type of this ResourcesPlan.
 
         资源计划的周期类型，当前只允许以下类型：  daily
 
@@ -95,7 +95,7 @@ class ResourcesPlan:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ResourcesPlan.
+        r"""Gets the start_time of this ResourcesPlan.
 
         资源计划的起始时间，格式为“hour:minute”，表示时间在0:00-23:59之间。
 
@@ -106,7 +106,7 @@ class ResourcesPlan:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ResourcesPlan.
+        r"""Sets the start_time of this ResourcesPlan.
 
         资源计划的起始时间，格式为“hour:minute”，表示时间在0:00-23:59之间。
 
@@ -117,7 +117,7 @@ class ResourcesPlan:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ResourcesPlan.
+        r"""Gets the end_time of this ResourcesPlan.
 
         资源计划的结束时间，格式与“start_time”相同，不早于start_time表示的时间，且与start_time间隔不小于30min。
 
@@ -128,7 +128,7 @@ class ResourcesPlan:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ResourcesPlan.
+        r"""Sets the end_time of this ResourcesPlan.
 
         资源计划的结束时间，格式与“start_time”相同，不早于start_time表示的时间，且与start_time间隔不小于30min。
 
@@ -139,7 +139,7 @@ class ResourcesPlan:
 
     @property
     def min_capacity(self):
-        """Gets the min_capacity of this ResourcesPlan.
+        r"""Gets the min_capacity of this ResourcesPlan.
 
         资源计划内该节点组的最小保留节点数。 取值范围：[0～500]
 
@@ -150,7 +150,7 @@ class ResourcesPlan:
 
     @min_capacity.setter
     def min_capacity(self, min_capacity):
-        """Sets the min_capacity of this ResourcesPlan.
+        r"""Sets the min_capacity of this ResourcesPlan.
 
         资源计划内该节点组的最小保留节点数。 取值范围：[0～500]
 
@@ -161,7 +161,7 @@ class ResourcesPlan:
 
     @property
     def max_capacity(self):
-        """Gets the max_capacity of this ResourcesPlan.
+        r"""Gets the max_capacity of this ResourcesPlan.
 
         资源计划内该节点组的最大保留节点数。 取值范围：[0～500]
 
@@ -172,7 +172,7 @@ class ResourcesPlan:
 
     @max_capacity.setter
     def max_capacity(self, max_capacity):
-        """Sets the max_capacity of this ResourcesPlan.
+        r"""Sets the max_capacity of this ResourcesPlan.
 
         资源计划内该节点组的最大保留节点数。 取值范围：[0～500]
 
@@ -183,7 +183,7 @@ class ResourcesPlan:
 
     @property
     def effective_days(self):
-        """Gets the effective_days of this ResourcesPlan.
+        r"""Gets the effective_days of this ResourcesPlan.
 
         资源计划的生效日期，为空时代表每日，另外也可为以下返回值：  MONDAY（周一）、TUESDAY（周二）、WEDNESDAY（周三）、THURSDAY（周四）、FRIDAY（周五）、SATURDAY（周六）、SUNDAY（周日）
 
@@ -194,7 +194,7 @@ class ResourcesPlan:
 
     @effective_days.setter
     def effective_days(self, effective_days):
-        """Sets the effective_days of this ResourcesPlan.
+        r"""Sets the effective_days of this ResourcesPlan.
 
         资源计划的生效日期，为空时代表每日，另外也可为以下返回值：  MONDAY（周一）、TUESDAY（周二）、WEDNESDAY（周三）、THURSDAY（周四）、FRIDAY（周五）、SATURDAY（周六）、SUNDAY（周日）
 

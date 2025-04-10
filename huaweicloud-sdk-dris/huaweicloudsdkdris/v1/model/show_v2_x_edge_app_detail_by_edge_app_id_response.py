@@ -32,7 +32,7 @@ class ShowV2XEdgeAppDetailByEdgeAppIdResponse(SdkResponse):
     }
 
     def __init__(self, v2x_edge_id=None, edge_app_id=None, app_version=None, status=None):
-        """ShowV2XEdgeAppDetailByEdgeAppIdResponse
+        r"""ShowV2XEdgeAppDetailByEdgeAppIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowV2XEdgeAppDetailByEdgeAppIdResponse(SdkResponse):
 
     @property
     def v2x_edge_id(self):
-        """Gets the v2x_edge_id of this ShowV2XEdgeAppDetailByEdgeAppIdResponse.
+        r"""Gets the v2x_edge_id of this ShowV2XEdgeAppDetailByEdgeAppIdResponse.
 
         **参数说明**：Edge ID，用于唯一标识一个Edge。
 
@@ -76,7 +76,7 @@ class ShowV2XEdgeAppDetailByEdgeAppIdResponse(SdkResponse):
 
     @v2x_edge_id.setter
     def v2x_edge_id(self, v2x_edge_id):
-        """Sets the v2x_edge_id of this ShowV2XEdgeAppDetailByEdgeAppIdResponse.
+        r"""Sets the v2x_edge_id of this ShowV2XEdgeAppDetailByEdgeAppIdResponse.
 
         **参数说明**：Edge ID，用于唯一标识一个Edge。
 
@@ -87,7 +87,7 @@ class ShowV2XEdgeAppDetailByEdgeAppIdResponse(SdkResponse):
 
     @property
     def edge_app_id(self):
-        """Gets the edge_app_id of this ShowV2XEdgeAppDetailByEdgeAppIdResponse.
+        r"""Gets the edge_app_id of this ShowV2XEdgeAppDetailByEdgeAppIdResponse.
 
         **参数说明**：用户自定义应用唯一ID。
 
@@ -98,7 +98,7 @@ class ShowV2XEdgeAppDetailByEdgeAppIdResponse(SdkResponse):
 
     @edge_app_id.setter
     def edge_app_id(self, edge_app_id):
-        """Sets the edge_app_id of this ShowV2XEdgeAppDetailByEdgeAppIdResponse.
+        r"""Sets the edge_app_id of this ShowV2XEdgeAppDetailByEdgeAppIdResponse.
 
         **参数说明**：用户自定义应用唯一ID。
 
@@ -109,7 +109,7 @@ class ShowV2XEdgeAppDetailByEdgeAppIdResponse(SdkResponse):
 
     @property
     def app_version(self):
-        """Gets the app_version of this ShowV2XEdgeAppDetailByEdgeAppIdResponse.
+        r"""Gets the app_version of this ShowV2XEdgeAppDetailByEdgeAppIdResponse.
 
         **参数说明**：应用版本，比如1.0.0。
 
@@ -120,7 +120,7 @@ class ShowV2XEdgeAppDetailByEdgeAppIdResponse(SdkResponse):
 
     @app_version.setter
     def app_version(self, app_version):
-        """Sets the app_version of this ShowV2XEdgeAppDetailByEdgeAppIdResponse.
+        r"""Sets the app_version of this ShowV2XEdgeAppDetailByEdgeAppIdResponse.
 
         **参数说明**：应用版本，比如1.0.0。
 
@@ -131,7 +131,7 @@ class ShowV2XEdgeAppDetailByEdgeAppIdResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowV2XEdgeAppDetailByEdgeAppIdResponse.
+        r"""Gets the status of this ShowV2XEdgeAppDetailByEdgeAppIdResponse.
 
         **参数说明**：应用部署状态。  **取值范围**：  - UNINSTALLED：待部署  - INSTALLED：部署中  - OFFLINE：离线  - ONLINE：在线  - UPGRADING：升级中  - DELETING：删除中  - RUNNING：运行中
 
@@ -142,7 +142,7 @@ class ShowV2XEdgeAppDetailByEdgeAppIdResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowV2XEdgeAppDetailByEdgeAppIdResponse.
+        r"""Sets the status of this ShowV2XEdgeAppDetailByEdgeAppIdResponse.
 
         **参数说明**：应用部署状态。  **取值范围**：  - UNINSTALLED：待部署  - INSTALLED：部署中  - OFFLINE：离线  - ONLINE：在线  - UPGRADING：升级中  - DELETING：删除中  - RUNNING：运行中
 

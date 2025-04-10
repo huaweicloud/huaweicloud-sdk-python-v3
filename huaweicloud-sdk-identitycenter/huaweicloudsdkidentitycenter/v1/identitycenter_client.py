@@ -34,7 +34,7 @@ class IdentityCenterClient(Client):
         return client_builder
 
     def create_account_assignment(self, request):
-        """创建账号分配
+        r"""创建账号分配
 
         使用指定的权限集为指定账号分配对应主体的访问权限，主体可为IAM身份中心用户或用户组。
         
@@ -103,7 +103,7 @@ class IdentityCenterClient(Client):
         return http_info
 
     def delete_account_assignment(self, request):
-        """删除账号分配
+        r"""删除账号分配
 
         使用指定的权限集从指定的账号删除主体的访问权限，主体可为IAM身份中心用户或用户组。
         
@@ -172,7 +172,7 @@ class IdentityCenterClient(Client):
         return http_info
 
     def describe_account_assignment_creation_status(self, request):
-        """查询账号分配创建状态详情
+        r"""查询账号分配创建状态详情
 
         根据请求ID，查询指定IAM身份中心实例下的账号分配创建状态详情信息。
         
@@ -241,7 +241,7 @@ class IdentityCenterClient(Client):
         return http_info
 
     def describe_account_assignment_deletion_status(self, request):
-        """查询账号分配删除状态详情
+        r"""查询账号分配删除状态详情
 
         根据请求ID，查询指定IAM身份中心实例下的账号分配删除状态详情信息。
         
@@ -310,7 +310,7 @@ class IdentityCenterClient(Client):
         return http_info
 
     def list_account_assignment_creation_status(self, request):
-        """列出账号分配创建状态
+        r"""列出账号分配创建状态
 
         查询指定IAM身份中心实例下的账号分配的创建状态列表。
         
@@ -383,7 +383,7 @@ class IdentityCenterClient(Client):
         return http_info
 
     def list_account_assignment_deletion_status(self, request):
-        """列出账号分配删除状态
+        r"""列出账号分配删除状态
 
         查询指定IAM身份中心实例下的账号分配的删除状态列表。
         
@@ -456,7 +456,7 @@ class IdentityCenterClient(Client):
         return http_info
 
     def list_account_assignments(self, request):
-        """列出账号和权限集关联的用户或用户组
+        r"""列出账号和权限集关联的用户或用户组
 
         列出与指定账号以及指定权限集关联的用户或用户组。
         
@@ -531,7 +531,7 @@ class IdentityCenterClient(Client):
         return http_info
 
     def list_instances(self, request):
-        """列出实例
+        r"""列出实例
 
         查询IAM身份中心的实例列表。
         
@@ -600,7 +600,7 @@ class IdentityCenterClient(Client):
         return http_info
 
     def create_instance_access_control_attribute_configuration(self, request):
-        """启用指定实例的访问控制功能
+        r"""启用指定实例的访问控制功能
 
         启用指定实例的访问控制功能。
         
@@ -669,7 +669,7 @@ class IdentityCenterClient(Client):
         return http_info
 
     def delete_instance_access_control_attribute_configuration(self, request):
-        """解除指定实例的访问控制属性配置
+        r"""解除指定实例的访问控制属性配置
 
         禁用指定IAM身份中心实例的基于属性的访问控制（ABAC）功能，并删除已配置的所有属性映射。
         
@@ -736,7 +736,7 @@ class IdentityCenterClient(Client):
         return http_info
 
     def describe_instance_access_control_attribute_configuration(self, request):
-        """获取指定实例的访问控制属性配置
+        r"""获取指定实例的访问控制属性配置
 
         返回已配置为与指定IAM身份中心实例的基于属性的访问控制（ABAC）一起使用的IAM身份中心身份源属性列表。
         
@@ -803,7 +803,7 @@ class IdentityCenterClient(Client):
         return http_info
 
     def update_instance_access_control_attribute_configuration(self, request):
-        """更新指定实例的访问控制属性配置
+        r"""更新指定实例的访问控制属性配置
 
         更新可与IAM身份中心实例一起使用的IAM身份中心身份源属性，以进行基于属性的访问控制（ABAC）。
         
@@ -872,7 +872,7 @@ class IdentityCenterClient(Client):
         return http_info
 
     def attach_managed_policy_to_permission_set(self, request):
-        """添加系统身份策略
+        r"""添加系统身份策略
 
         在指定的权限集中添加系统身份策略。
         
@@ -943,7 +943,7 @@ class IdentityCenterClient(Client):
         return http_info
 
     def create_permission_set(self, request):
-        """创建权限集
+        r"""创建权限集
 
         在指定的IAM身份中心实例中创建一个权限集。
         
@@ -1012,7 +1012,7 @@ class IdentityCenterClient(Client):
         return http_info
 
     def delete_custom_policy_from_permission_set(self, request):
-        """删除自定义身份策略
+        r"""删除自定义身份策略
 
         删除指定权限集中的自定义身份策略。
         
@@ -1081,7 +1081,7 @@ class IdentityCenterClient(Client):
         return http_info
 
     def delete_custom_role_from_permission_set(self, request):
-        """删除指定权限集中的自定义策略
+        r"""删除指定权限集中的自定义策略
 
         删除指定权限集中的自定义策略
         
@@ -1150,7 +1150,7 @@ class IdentityCenterClient(Client):
         return http_info
 
     def delete_permission_set(self, request):
-        """删除权限集
+        r"""删除权限集
 
         根据权限集ID，删除指定的权限集。
         
@@ -1219,7 +1219,7 @@ class IdentityCenterClient(Client):
         return http_info
 
     def describe_permission_set(self, request):
-        """查询权限集详情
+        r"""查询权限集详情
 
         根据权限集ID，查询指定权限集的详情信息。
         
@@ -1288,7 +1288,7 @@ class IdentityCenterClient(Client):
         return http_info
 
     def describe_permission_set_provisioning_status(self, request):
-        """查询权限集预分配状态详情
+        r"""查询权限集预分配状态详情
 
         根据请求ID，查询权限集预分配状态的详情信息。
         
@@ -1357,7 +1357,7 @@ class IdentityCenterClient(Client):
         return http_info
 
     def detach_managed_policy_from_permission_set(self, request):
-        """删除系统身份策略
+        r"""删除系统身份策略
 
         删除指定权限集中的系统身份策略。
         
@@ -1428,7 +1428,7 @@ class IdentityCenterClient(Client):
         return http_info
 
     def get_custom_policy_for_permission_set(self, request):
-        """查询自定义身份策略详情
+        r"""查询自定义身份策略详情
 
         查询指定权限集中的自定义身份策略详情。
         
@@ -1497,7 +1497,7 @@ class IdentityCenterClient(Client):
         return http_info
 
     def get_custom_role_for_permission_set(self, request):
-        """获取分配给权限集的自定义策略
+        r"""获取分配给权限集的自定义策略
 
         获取分配给权限集的自定义策略
         
@@ -1566,7 +1566,7 @@ class IdentityCenterClient(Client):
         return http_info
 
     def list_accounts_for_provisioned_permission_set(self, request):
-        """列出权限集关联的账号
+        r"""列出权限集关联的账号
 
         查询与指定权限集关联的账号列表。
         
@@ -1641,7 +1641,7 @@ class IdentityCenterClient(Client):
         return http_info
 
     def list_managed_policies_in_permission_set(self, request):
-        """列出系统身份策略
+        r"""列出系统身份策略
 
         获取添加到指定权限集中的系统身份策略列表。
         
@@ -1714,7 +1714,7 @@ class IdentityCenterClient(Client):
         return http_info
 
     def list_permission_set_provisioning_status(self, request):
-        """列出权限集预分配状态
+        r"""列出权限集预分配状态
 
         查询指定实例中的权限集预分配状态列表。
         
@@ -1787,7 +1787,7 @@ class IdentityCenterClient(Client):
         return http_info
 
     def list_permission_sets(self, request):
-        """列出权限集
+        r"""列出权限集
 
         查询指定实例下的权限集列表。
         
@@ -1864,7 +1864,7 @@ class IdentityCenterClient(Client):
         return http_info
 
     def list_permission_sets_provisioned_to_account(self, request):
-        """列出分配给账号的权限集
+        r"""列出分配给账号的权限集
 
         查询分配给指定账号的权限集列表。
         
@@ -1939,7 +1939,7 @@ class IdentityCenterClient(Client):
         return http_info
 
     def provision_permission_set(self, request):
-        """预分配权限集
+        r"""预分配权限集
 
         将指定权限集预分配给指定账号。
         
@@ -2010,7 +2010,7 @@ class IdentityCenterClient(Client):
         return http_info
 
     def put_custom_policy_to_permission_set(self, request):
-        """添加自定义身份策略
+        r"""添加自定义身份策略
 
         在指定的权限集中添加自定义身份策略。
         
@@ -2081,7 +2081,7 @@ class IdentityCenterClient(Client):
         return http_info
 
     def put_custom_role_to_permission_set(self, request):
-        """将自定义策略附加到权限集
+        r"""将自定义策略附加到权限集
 
         将自定义策略附加到权限集
         
@@ -2152,7 +2152,7 @@ class IdentityCenterClient(Client):
         return http_info
 
     def update_permission_set(self, request):
-        """更新权限集
+        r"""更新权限集
 
         根据权限集ID，更新指定权限集的属性。
         
@@ -2223,7 +2223,7 @@ class IdentityCenterClient(Client):
         return http_info
 
     def create_tag_resource(self, request):
-        """为指定资源添加标签
+        r"""为指定资源添加标签
 
         给指定的资源添加一个或多个标签。当前支持为权限集添加标签。
         
@@ -2294,7 +2294,7 @@ class IdentityCenterClient(Client):
         return http_info
 
     def delete_tag_resource(self, request):
-        """删除指定资源的指定标签
+        r"""删除指定资源的指定标签
 
         从指定资源中删除指定的标签。
         
@@ -2365,7 +2365,7 @@ class IdentityCenterClient(Client):
         return http_info
 
     def list_tag_resources(self, request):
-        """列出绑定到指定资源的标签
+        r"""列出绑定到指定资源的标签
 
         列出绑定到指定资源的标签。当前支持为权限集添加标签。
         
@@ -2438,7 +2438,7 @@ class IdentityCenterClient(Client):
         return http_info
 
     def attach_managed_role_to_permission_set(self, request):
-        """添加系统策略
+        r"""添加系统策略
 
         在指定的权限集中添加系统策略。
         
@@ -2509,7 +2509,7 @@ class IdentityCenterClient(Client):
         return http_info
 
     def detach_managed_role_from_permission_set(self, request):
-        """删除系统策略
+        r"""删除系统策略
 
         删除指定权限集中的系统策略。
         
@@ -2580,7 +2580,7 @@ class IdentityCenterClient(Client):
         return http_info
 
     def list_managed_roles_in_permission_set(self, request):
-        """列出系统策略
+        r"""列出系统策略
 
         获取添加到指定权限集中的系统策略列表。
         

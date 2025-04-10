@@ -69,7 +69,7 @@ class SmartConnectTaskRespSourceConfig:
     }
 
     def __init__(self, redis_address=None, redis_type=None, dcs_instance_id=None, sync_mode=None, full_sync_wait_ms=None, full_sync_max_retry=None, ratelimit=None, current_cluster_name=None, cluster_name=None, user_name=None, sasl_mechanism=None, instance_id=None, bootstrap_servers=None, security_protocol=None, direction=None, sync_consumer_offsets_enabled=None, replication_factor=None, task_num=None, rename_topic_enabled=None, provenance_header_enabled=None, consumer_strategy=None, compression_type=None, topics_mapping=None):
-        """SmartConnectTaskRespSourceConfig
+        r"""SmartConnectTaskRespSourceConfig
 
         The model defined in huaweicloud sdk
 
@@ -197,7 +197,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @property
     def redis_address(self):
-        """Gets the redis_address of this SmartConnectTaskRespSourceConfig.
+        r"""Gets the redis_address of this SmartConnectTaskRespSourceConfig.
 
         Redis实例地址。（仅源端类型为Redis时会显示）
 
@@ -208,7 +208,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @redis_address.setter
     def redis_address(self, redis_address):
-        """Sets the redis_address of this SmartConnectTaskRespSourceConfig.
+        r"""Sets the redis_address of this SmartConnectTaskRespSourceConfig.
 
         Redis实例地址。（仅源端类型为Redis时会显示）
 
@@ -219,7 +219,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @property
     def redis_type(self):
-        """Gets the redis_type of this SmartConnectTaskRespSourceConfig.
+        r"""Gets the redis_type of this SmartConnectTaskRespSourceConfig.
 
         Redis实例类型。（仅源端类型为Redis时会显示）
 
@@ -230,7 +230,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @redis_type.setter
     def redis_type(self, redis_type):
-        """Sets the redis_type of this SmartConnectTaskRespSourceConfig.
+        r"""Sets the redis_type of this SmartConnectTaskRespSourceConfig.
 
         Redis实例类型。（仅源端类型为Redis时会显示）
 
@@ -241,7 +241,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @property
     def dcs_instance_id(self):
-        """Gets the dcs_instance_id of this SmartConnectTaskRespSourceConfig.
+        r"""Gets the dcs_instance_id of this SmartConnectTaskRespSourceConfig.
 
         DCS实例ID。（仅源端类型为Redis时会显示）
 
@@ -252,7 +252,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @dcs_instance_id.setter
     def dcs_instance_id(self, dcs_instance_id):
-        """Sets the dcs_instance_id of this SmartConnectTaskRespSourceConfig.
+        r"""Sets the dcs_instance_id of this SmartConnectTaskRespSourceConfig.
 
         DCS实例ID。（仅源端类型为Redis时会显示）
 
@@ -263,7 +263,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @property
     def sync_mode(self):
-        """Gets the sync_mode of this SmartConnectTaskRespSourceConfig.
+        r"""Gets the sync_mode of this SmartConnectTaskRespSourceConfig.
 
         同步类型，“RDB_ONLY”为全量同步，“CUSTOM_OFFSET”为全量同步+增量同步。（仅源端类型为Redis时会显示）
 
@@ -274,7 +274,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @sync_mode.setter
     def sync_mode(self, sync_mode):
-        """Sets the sync_mode of this SmartConnectTaskRespSourceConfig.
+        r"""Sets the sync_mode of this SmartConnectTaskRespSourceConfig.
 
         同步类型，“RDB_ONLY”为全量同步，“CUSTOM_OFFSET”为全量同步+增量同步。（仅源端类型为Redis时会显示）
 
@@ -285,7 +285,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @property
     def full_sync_wait_ms(self):
-        """Gets the full_sync_wait_ms of this SmartConnectTaskRespSourceConfig.
+        r"""Gets the full_sync_wait_ms of this SmartConnectTaskRespSourceConfig.
 
         全量同步重试间隔时间，单位：毫秒。（仅源端类型为Redis时会显示）
 
@@ -296,7 +296,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @full_sync_wait_ms.setter
     def full_sync_wait_ms(self, full_sync_wait_ms):
-        """Sets the full_sync_wait_ms of this SmartConnectTaskRespSourceConfig.
+        r"""Sets the full_sync_wait_ms of this SmartConnectTaskRespSourceConfig.
 
         全量同步重试间隔时间，单位：毫秒。（仅源端类型为Redis时会显示）
 
@@ -307,7 +307,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @property
     def full_sync_max_retry(self):
-        """Gets the full_sync_max_retry of this SmartConnectTaskRespSourceConfig.
+        r"""Gets the full_sync_max_retry of this SmartConnectTaskRespSourceConfig.
 
         全量同步最大重试次数。（仅源端类型为Redis时会显示）
 
@@ -318,7 +318,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @full_sync_max_retry.setter
     def full_sync_max_retry(self, full_sync_max_retry):
-        """Sets the full_sync_max_retry of this SmartConnectTaskRespSourceConfig.
+        r"""Sets the full_sync_max_retry of this SmartConnectTaskRespSourceConfig.
 
         全量同步最大重试次数。（仅源端类型为Redis时会显示）
 
@@ -329,7 +329,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @property
     def ratelimit(self):
-        """Gets the ratelimit of this SmartConnectTaskRespSourceConfig.
+        r"""Gets the ratelimit of this SmartConnectTaskRespSourceConfig.
 
         限速，单位为KB/s。-1表示不限速（仅源端类型为Redis时会显示）
 
@@ -340,7 +340,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @ratelimit.setter
     def ratelimit(self, ratelimit):
-        """Sets the ratelimit of this SmartConnectTaskRespSourceConfig.
+        r"""Sets the ratelimit of this SmartConnectTaskRespSourceConfig.
 
         限速，单位为KB/s。-1表示不限速（仅源端类型为Redis时会显示）
 
@@ -351,7 +351,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @property
     def current_cluster_name(self):
-        """Gets the current_cluster_name of this SmartConnectTaskRespSourceConfig.
+        r"""Gets the current_cluster_name of this SmartConnectTaskRespSourceConfig.
 
         当前Kafka实例别名。（仅源端类型为Kafka时会显示）
 
@@ -362,7 +362,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @current_cluster_name.setter
     def current_cluster_name(self, current_cluster_name):
-        """Sets the current_cluster_name of this SmartConnectTaskRespSourceConfig.
+        r"""Sets the current_cluster_name of this SmartConnectTaskRespSourceConfig.
 
         当前Kafka实例别名。（仅源端类型为Kafka时会显示）
 
@@ -373,7 +373,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this SmartConnectTaskRespSourceConfig.
+        r"""Gets the cluster_name of this SmartConnectTaskRespSourceConfig.
 
         对端Kafka实例别名。（仅源端类型为Kafka时会显示）
 
@@ -384,7 +384,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this SmartConnectTaskRespSourceConfig.
+        r"""Sets the cluster_name of this SmartConnectTaskRespSourceConfig.
 
         对端Kafka实例别名。（仅源端类型为Kafka时会显示）
 
@@ -395,7 +395,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @property
     def user_name(self):
-        """Gets the user_name of this SmartConnectTaskRespSourceConfig.
+        r"""Gets the user_name of this SmartConnectTaskRespSourceConfig.
 
         对端Kafka用户名。（仅源端类型为Kafka时会显示）
 
@@ -406,7 +406,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this SmartConnectTaskRespSourceConfig.
+        r"""Sets the user_name of this SmartConnectTaskRespSourceConfig.
 
         对端Kafka用户名。（仅源端类型为Kafka时会显示）
 
@@ -417,7 +417,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @property
     def sasl_mechanism(self):
-        """Gets the sasl_mechanism of this SmartConnectTaskRespSourceConfig.
+        r"""Gets the sasl_mechanism of this SmartConnectTaskRespSourceConfig.
 
         对端Kafka认证机制。（仅源端类型为Kafka时会显示）
 
@@ -428,7 +428,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @sasl_mechanism.setter
     def sasl_mechanism(self, sasl_mechanism):
-        """Sets the sasl_mechanism of this SmartConnectTaskRespSourceConfig.
+        r"""Sets the sasl_mechanism of this SmartConnectTaskRespSourceConfig.
 
         对端Kafka认证机制。（仅源端类型为Kafka时会显示）
 
@@ -439,7 +439,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SmartConnectTaskRespSourceConfig.
+        r"""Gets the instance_id of this SmartConnectTaskRespSourceConfig.
 
         对端Kafka实例ID。（仅源端类型为Kafka时会显示）
 
@@ -450,7 +450,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SmartConnectTaskRespSourceConfig.
+        r"""Sets the instance_id of this SmartConnectTaskRespSourceConfig.
 
         对端Kafka实例ID。（仅源端类型为Kafka时会显示）
 
@@ -461,7 +461,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @property
     def bootstrap_servers(self):
-        """Gets the bootstrap_servers of this SmartConnectTaskRespSourceConfig.
+        r"""Gets the bootstrap_servers of this SmartConnectTaskRespSourceConfig.
 
         对端Kafka实例地址。（仅源端类型为Kafka时会显示）
 
@@ -472,7 +472,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @bootstrap_servers.setter
     def bootstrap_servers(self, bootstrap_servers):
-        """Sets the bootstrap_servers of this SmartConnectTaskRespSourceConfig.
+        r"""Sets the bootstrap_servers of this SmartConnectTaskRespSourceConfig.
 
         对端Kafka实例地址。（仅源端类型为Kafka时会显示）
 
@@ -483,7 +483,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @property
     def security_protocol(self):
-        """Gets the security_protocol of this SmartConnectTaskRespSourceConfig.
+        r"""Gets the security_protocol of this SmartConnectTaskRespSourceConfig.
 
         对端Kafka认证方式。（仅源端类型为Kafka时会显示）
 
@@ -494,7 +494,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @security_protocol.setter
     def security_protocol(self, security_protocol):
-        """Sets the security_protocol of this SmartConnectTaskRespSourceConfig.
+        r"""Sets the security_protocol of this SmartConnectTaskRespSourceConfig.
 
         对端Kafka认证方式。（仅源端类型为Kafka时会显示）
 
@@ -505,7 +505,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @property
     def direction(self):
-        """Gets the direction of this SmartConnectTaskRespSourceConfig.
+        r"""Gets the direction of this SmartConnectTaskRespSourceConfig.
 
         同步方向。（仅源端类型为Kafka时会显示）
 
@@ -516,7 +516,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @direction.setter
     def direction(self, direction):
-        """Sets the direction of this SmartConnectTaskRespSourceConfig.
+        r"""Sets the direction of this SmartConnectTaskRespSourceConfig.
 
         同步方向。（仅源端类型为Kafka时会显示）
 
@@ -527,7 +527,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @property
     def sync_consumer_offsets_enabled(self):
-        """Gets the sync_consumer_offsets_enabled of this SmartConnectTaskRespSourceConfig.
+        r"""Gets the sync_consumer_offsets_enabled of this SmartConnectTaskRespSourceConfig.
 
         是否同步消费进度。（仅源端类型为Kafka时会显示）
 
@@ -538,7 +538,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @sync_consumer_offsets_enabled.setter
     def sync_consumer_offsets_enabled(self, sync_consumer_offsets_enabled):
-        """Sets the sync_consumer_offsets_enabled of this SmartConnectTaskRespSourceConfig.
+        r"""Sets the sync_consumer_offsets_enabled of this SmartConnectTaskRespSourceConfig.
 
         是否同步消费进度。（仅源端类型为Kafka时会显示）
 
@@ -549,7 +549,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @property
     def replication_factor(self):
-        """Gets the replication_factor of this SmartConnectTaskRespSourceConfig.
+        r"""Gets the replication_factor of this SmartConnectTaskRespSourceConfig.
 
         副本数。（仅源端类型为Kafka时会显示）
 
@@ -560,7 +560,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @replication_factor.setter
     def replication_factor(self, replication_factor):
-        """Sets the replication_factor of this SmartConnectTaskRespSourceConfig.
+        r"""Sets the replication_factor of this SmartConnectTaskRespSourceConfig.
 
         副本数。（仅源端类型为Kafka时会显示）
 
@@ -571,7 +571,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @property
     def task_num(self):
-        """Gets the task_num of this SmartConnectTaskRespSourceConfig.
+        r"""Gets the task_num of this SmartConnectTaskRespSourceConfig.
 
         任务数。（仅源端类型为Kafka时会显示）
 
@@ -582,7 +582,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @task_num.setter
     def task_num(self, task_num):
-        """Sets the task_num of this SmartConnectTaskRespSourceConfig.
+        r"""Sets the task_num of this SmartConnectTaskRespSourceConfig.
 
         任务数。（仅源端类型为Kafka时会显示）
 
@@ -593,7 +593,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @property
     def rename_topic_enabled(self):
-        """Gets the rename_topic_enabled of this SmartConnectTaskRespSourceConfig.
+        r"""Gets the rename_topic_enabled of this SmartConnectTaskRespSourceConfig.
 
         是否重命名Topic。（仅源端类型为Kafka时会显示）
 
@@ -604,7 +604,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @rename_topic_enabled.setter
     def rename_topic_enabled(self, rename_topic_enabled):
-        """Sets the rename_topic_enabled of this SmartConnectTaskRespSourceConfig.
+        r"""Sets the rename_topic_enabled of this SmartConnectTaskRespSourceConfig.
 
         是否重命名Topic。（仅源端类型为Kafka时会显示）
 
@@ -615,7 +615,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @property
     def provenance_header_enabled(self):
-        """Gets the provenance_header_enabled of this SmartConnectTaskRespSourceConfig.
+        r"""Gets the provenance_header_enabled of this SmartConnectTaskRespSourceConfig.
 
         是否添加来源header。（仅源端类型为Kafka时会显示）
 
@@ -626,7 +626,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @provenance_header_enabled.setter
     def provenance_header_enabled(self, provenance_header_enabled):
-        """Sets the provenance_header_enabled of this SmartConnectTaskRespSourceConfig.
+        r"""Sets the provenance_header_enabled of this SmartConnectTaskRespSourceConfig.
 
         是否添加来源header。（仅源端类型为Kafka时会显示）
 
@@ -637,7 +637,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @property
     def consumer_strategy(self):
-        """Gets the consumer_strategy of this SmartConnectTaskRespSourceConfig.
+        r"""Gets the consumer_strategy of this SmartConnectTaskRespSourceConfig.
 
         启动偏移量，latest为获取最新的数据，earliest为获取最早的数据。（仅源端类型为Kafka时会显示）
 
@@ -648,7 +648,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @consumer_strategy.setter
     def consumer_strategy(self, consumer_strategy):
-        """Sets the consumer_strategy of this SmartConnectTaskRespSourceConfig.
+        r"""Sets the consumer_strategy of this SmartConnectTaskRespSourceConfig.
 
         启动偏移量，latest为获取最新的数据，earliest为获取最早的数据。（仅源端类型为Kafka时会显示）
 
@@ -659,7 +659,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @property
     def compression_type(self):
-        """Gets the compression_type of this SmartConnectTaskRespSourceConfig.
+        r"""Gets the compression_type of this SmartConnectTaskRespSourceConfig.
 
         压缩算法。（仅源端类型为Kafka时会显示）
 
@@ -670,7 +670,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @compression_type.setter
     def compression_type(self, compression_type):
-        """Sets the compression_type of this SmartConnectTaskRespSourceConfig.
+        r"""Sets the compression_type of this SmartConnectTaskRespSourceConfig.
 
         压缩算法。（仅源端类型为Kafka时会显示）
 
@@ -681,7 +681,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @property
     def topics_mapping(self):
-        """Gets the topics_mapping of this SmartConnectTaskRespSourceConfig.
+        r"""Gets the topics_mapping of this SmartConnectTaskRespSourceConfig.
 
         topic映射。（仅源端类型为Kafka时会显示）
 
@@ -692,7 +692,7 @@ class SmartConnectTaskRespSourceConfig:
 
     @topics_mapping.setter
     def topics_mapping(self, topics_mapping):
-        """Sets the topics_mapping of this SmartConnectTaskRespSourceConfig.
+        r"""Sets the topics_mapping of this SmartConnectTaskRespSourceConfig.
 
         topic映射。（仅源端类型为Kafka时会显示）
 

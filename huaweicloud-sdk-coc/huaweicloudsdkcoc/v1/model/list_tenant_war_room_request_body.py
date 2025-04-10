@@ -65,7 +65,7 @@ class ListTenantWarRoomRequestBody:
     }
 
     def __init__(self, limit=None, offset=None, current_users=None, war_room_nums=None, incident_num=None, title=None, region_code_list=None, incident_levels=None, impacted_application_ids=None, admin=None, status=None, triggered_start_time=None, triggered_end_time=None, occur_start_time=None, occur_end_time=None, recover_start_time=None, recover_end_time=None, notification_level=None, enterprise_project_ids=None, war_room_num=None, statistic_flag=None):
-        """ListTenantWarRoomRequestBody
+        r"""ListTenantWarRoomRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -183,7 +183,7 @@ class ListTenantWarRoomRequestBody:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTenantWarRoomRequestBody.
+        r"""Gets the limit of this ListTenantWarRoomRequestBody.
 
         limit
 
@@ -194,7 +194,7 @@ class ListTenantWarRoomRequestBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTenantWarRoomRequestBody.
+        r"""Sets the limit of this ListTenantWarRoomRequestBody.
 
         limit
 
@@ -205,7 +205,7 @@ class ListTenantWarRoomRequestBody:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTenantWarRoomRequestBody.
+        r"""Gets the offset of this ListTenantWarRoomRequestBody.
 
         查询数量 最小值0 最大值1000
 
@@ -216,7 +216,7 @@ class ListTenantWarRoomRequestBody:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTenantWarRoomRequestBody.
+        r"""Sets the offset of this ListTenantWarRoomRequestBody.
 
         查询数量 最小值0 最大值1000
 
@@ -227,7 +227,7 @@ class ListTenantWarRoomRequestBody:
 
     @property
     def current_users(self):
-        """Gets the current_users of this ListTenantWarRoomRequestBody.
+        r"""Gets the current_users of this ListTenantWarRoomRequestBody.
 
         用户id
 
@@ -238,7 +238,7 @@ class ListTenantWarRoomRequestBody:
 
     @current_users.setter
     def current_users(self, current_users):
-        """Sets the current_users of this ListTenantWarRoomRequestBody.
+        r"""Sets the current_users of this ListTenantWarRoomRequestBody.
 
         用户id
 
@@ -249,7 +249,7 @@ class ListTenantWarRoomRequestBody:
 
     @property
     def war_room_nums(self):
-        """Gets the war_room_nums of this ListTenantWarRoomRequestBody.
+        r"""Gets the war_room_nums of this ListTenantWarRoomRequestBody.
 
         WarRoom单号，当有这个筛选条件时，其他筛选条件忽略
 
@@ -260,7 +260,7 @@ class ListTenantWarRoomRequestBody:
 
     @war_room_nums.setter
     def war_room_nums(self, war_room_nums):
-        """Sets the war_room_nums of this ListTenantWarRoomRequestBody.
+        r"""Sets the war_room_nums of this ListTenantWarRoomRequestBody.
 
         WarRoom单号，当有这个筛选条件时，其他筛选条件忽略
 
@@ -271,7 +271,7 @@ class ListTenantWarRoomRequestBody:
 
     @property
     def incident_num(self):
-        """Gets the incident_num of this ListTenantWarRoomRequestBody.
+        r"""Gets the incident_num of this ListTenantWarRoomRequestBody.
 
         事件单号 精确查询
 
@@ -282,7 +282,7 @@ class ListTenantWarRoomRequestBody:
 
     @incident_num.setter
     def incident_num(self, incident_num):
-        """Sets the incident_num of this ListTenantWarRoomRequestBody.
+        r"""Sets the incident_num of this ListTenantWarRoomRequestBody.
 
         事件单号 精确查询
 
@@ -293,7 +293,7 @@ class ListTenantWarRoomRequestBody:
 
     @property
     def title(self):
-        """Gets the title of this ListTenantWarRoomRequestBody.
+        r"""Gets the title of this ListTenantWarRoomRequestBody.
 
         WarRoom名称 模糊查询
 
@@ -304,7 +304,7 @@ class ListTenantWarRoomRequestBody:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this ListTenantWarRoomRequestBody.
+        r"""Sets the title of this ListTenantWarRoomRequestBody.
 
         WarRoom名称 模糊查询
 
@@ -315,7 +315,7 @@ class ListTenantWarRoomRequestBody:
 
     @property
     def region_code_list(self):
-        """Gets the region_code_list of this ListTenantWarRoomRequestBody.
+        r"""Gets the region_code_list of this ListTenantWarRoomRequestBody.
 
         区域 多选
 
@@ -326,7 +326,7 @@ class ListTenantWarRoomRequestBody:
 
     @region_code_list.setter
     def region_code_list(self, region_code_list):
-        """Sets the region_code_list of this ListTenantWarRoomRequestBody.
+        r"""Sets the region_code_list of this ListTenantWarRoomRequestBody.
 
         区域 多选
 
@@ -337,7 +337,7 @@ class ListTenantWarRoomRequestBody:
 
     @property
     def incident_levels(self):
-        """Gets the incident_levels of this ListTenantWarRoomRequestBody.
+        r"""Gets the incident_levels of this ListTenantWarRoomRequestBody.
 
         事件级别 多选
 
@@ -348,7 +348,7 @@ class ListTenantWarRoomRequestBody:
 
     @incident_levels.setter
     def incident_levels(self, incident_levels):
-        """Sets the incident_levels of this ListTenantWarRoomRequestBody.
+        r"""Sets the incident_levels of this ListTenantWarRoomRequestBody.
 
         事件级别 多选
 
@@ -359,7 +359,7 @@ class ListTenantWarRoomRequestBody:
 
     @property
     def impacted_application_ids(self):
-        """Gets the impacted_application_ids of this ListTenantWarRoomRequestBody.
+        r"""Gets the impacted_application_ids of this ListTenantWarRoomRequestBody.
 
         影响应用id
 
@@ -370,7 +370,7 @@ class ListTenantWarRoomRequestBody:
 
     @impacted_application_ids.setter
     def impacted_application_ids(self, impacted_application_ids):
-        """Sets the impacted_application_ids of this ListTenantWarRoomRequestBody.
+        r"""Sets the impacted_application_ids of this ListTenantWarRoomRequestBody.
 
         影响应用id
 
@@ -381,7 +381,7 @@ class ListTenantWarRoomRequestBody:
 
     @property
     def admin(self):
-        """Gets the admin of this ListTenantWarRoomRequestBody.
+        r"""Gets the admin of this ListTenantWarRoomRequestBody.
 
         WarRoom管理员
 
@@ -392,7 +392,7 @@ class ListTenantWarRoomRequestBody:
 
     @admin.setter
     def admin(self, admin):
-        """Sets the admin of this ListTenantWarRoomRequestBody.
+        r"""Sets the admin of this ListTenantWarRoomRequestBody.
 
         WarRoom管理员
 
@@ -403,7 +403,7 @@ class ListTenantWarRoomRequestBody:
 
     @property
     def status(self):
-        """Gets the status of this ListTenantWarRoomRequestBody.
+        r"""Gets the status of this ListTenantWarRoomRequestBody.
 
         WarRoom状态
 
@@ -414,7 +414,7 @@ class ListTenantWarRoomRequestBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListTenantWarRoomRequestBody.
+        r"""Sets the status of this ListTenantWarRoomRequestBody.
 
         WarRoom状态
 
@@ -425,7 +425,7 @@ class ListTenantWarRoomRequestBody:
 
     @property
     def triggered_start_time(self):
-        """Gets the triggered_start_time of this ListTenantWarRoomRequestBody.
+        r"""Gets the triggered_start_time of this ListTenantWarRoomRequestBody.
 
         拉起开始时间 默认前30天
 
@@ -436,7 +436,7 @@ class ListTenantWarRoomRequestBody:
 
     @triggered_start_time.setter
     def triggered_start_time(self, triggered_start_time):
-        """Sets the triggered_start_time of this ListTenantWarRoomRequestBody.
+        r"""Sets the triggered_start_time of this ListTenantWarRoomRequestBody.
 
         拉起开始时间 默认前30天
 
@@ -447,7 +447,7 @@ class ListTenantWarRoomRequestBody:
 
     @property
     def triggered_end_time(self):
-        """Gets the triggered_end_time of this ListTenantWarRoomRequestBody.
+        r"""Gets the triggered_end_time of this ListTenantWarRoomRequestBody.
 
         拉起结束时间 默认当前时间
 
@@ -458,7 +458,7 @@ class ListTenantWarRoomRequestBody:
 
     @triggered_end_time.setter
     def triggered_end_time(self, triggered_end_time):
-        """Sets the triggered_end_time of this ListTenantWarRoomRequestBody.
+        r"""Sets the triggered_end_time of this ListTenantWarRoomRequestBody.
 
         拉起结束时间 默认当前时间
 
@@ -469,7 +469,7 @@ class ListTenantWarRoomRequestBody:
 
     @property
     def occur_start_time(self):
-        """Gets the occur_start_time of this ListTenantWarRoomRequestBody.
+        r"""Gets the occur_start_time of this ListTenantWarRoomRequestBody.
 
         发生开始时间
 
@@ -480,7 +480,7 @@ class ListTenantWarRoomRequestBody:
 
     @occur_start_time.setter
     def occur_start_time(self, occur_start_time):
-        """Sets the occur_start_time of this ListTenantWarRoomRequestBody.
+        r"""Sets the occur_start_time of this ListTenantWarRoomRequestBody.
 
         发生开始时间
 
@@ -491,7 +491,7 @@ class ListTenantWarRoomRequestBody:
 
     @property
     def occur_end_time(self):
-        """Gets the occur_end_time of this ListTenantWarRoomRequestBody.
+        r"""Gets the occur_end_time of this ListTenantWarRoomRequestBody.
 
         发生结束时间
 
@@ -502,7 +502,7 @@ class ListTenantWarRoomRequestBody:
 
     @occur_end_time.setter
     def occur_end_time(self, occur_end_time):
-        """Sets the occur_end_time of this ListTenantWarRoomRequestBody.
+        r"""Sets the occur_end_time of this ListTenantWarRoomRequestBody.
 
         发生结束时间
 
@@ -513,7 +513,7 @@ class ListTenantWarRoomRequestBody:
 
     @property
     def recover_start_time(self):
-        """Gets the recover_start_time of this ListTenantWarRoomRequestBody.
+        r"""Gets the recover_start_time of this ListTenantWarRoomRequestBody.
 
         恢复开始时间
 
@@ -524,7 +524,7 @@ class ListTenantWarRoomRequestBody:
 
     @recover_start_time.setter
     def recover_start_time(self, recover_start_time):
-        """Sets the recover_start_time of this ListTenantWarRoomRequestBody.
+        r"""Sets the recover_start_time of this ListTenantWarRoomRequestBody.
 
         恢复开始时间
 
@@ -535,7 +535,7 @@ class ListTenantWarRoomRequestBody:
 
     @property
     def recover_end_time(self):
-        """Gets the recover_end_time of this ListTenantWarRoomRequestBody.
+        r"""Gets the recover_end_time of this ListTenantWarRoomRequestBody.
 
         恢复结束时间
 
@@ -546,7 +546,7 @@ class ListTenantWarRoomRequestBody:
 
     @recover_end_time.setter
     def recover_end_time(self, recover_end_time):
-        """Sets the recover_end_time of this ListTenantWarRoomRequestBody.
+        r"""Sets the recover_end_time of this ListTenantWarRoomRequestBody.
 
         恢复结束时间
 
@@ -557,7 +557,7 @@ class ListTenantWarRoomRequestBody:
 
     @property
     def notification_level(self):
-        """Gets the notification_level of this ListTenantWarRoomRequestBody.
+        r"""Gets the notification_level of this ListTenantWarRoomRequestBody.
 
         通报级别
 
@@ -568,7 +568,7 @@ class ListTenantWarRoomRequestBody:
 
     @notification_level.setter
     def notification_level(self, notification_level):
-        """Sets the notification_level of this ListTenantWarRoomRequestBody.
+        r"""Sets the notification_level of this ListTenantWarRoomRequestBody.
 
         通报级别
 
@@ -579,7 +579,7 @@ class ListTenantWarRoomRequestBody:
 
     @property
     def enterprise_project_ids(self):
-        """Gets the enterprise_project_ids of this ListTenantWarRoomRequestBody.
+        r"""Gets the enterprise_project_ids of this ListTenantWarRoomRequestBody.
 
         企业项目id
 
@@ -590,7 +590,7 @@ class ListTenantWarRoomRequestBody:
 
     @enterprise_project_ids.setter
     def enterprise_project_ids(self, enterprise_project_ids):
-        """Sets the enterprise_project_ids of this ListTenantWarRoomRequestBody.
+        r"""Sets the enterprise_project_ids of this ListTenantWarRoomRequestBody.
 
         企业项目id
 
@@ -601,7 +601,7 @@ class ListTenantWarRoomRequestBody:
 
     @property
     def war_room_num(self):
-        """Gets the war_room_num of this ListTenantWarRoomRequestBody.
+        r"""Gets the war_room_num of this ListTenantWarRoomRequestBody.
 
         WarRoom 单号 前端使用
 
@@ -612,7 +612,7 @@ class ListTenantWarRoomRequestBody:
 
     @war_room_num.setter
     def war_room_num(self, war_room_num):
-        """Sets the war_room_num of this ListTenantWarRoomRequestBody.
+        r"""Sets the war_room_num of this ListTenantWarRoomRequestBody.
 
         WarRoom 单号 前端使用
 
@@ -623,7 +623,7 @@ class ListTenantWarRoomRequestBody:
 
     @property
     def statistic_flag(self):
-        """Gets the statistic_flag of this ListTenantWarRoomRequestBody.
+        r"""Gets the statistic_flag of this ListTenantWarRoomRequestBody.
 
         是否统计,false 返回基本信息;true接口只返回统计结果：total_num,running_num,closed_num
 
@@ -634,7 +634,7 @@ class ListTenantWarRoomRequestBody:
 
     @statistic_flag.setter
     def statistic_flag(self, statistic_flag):
-        """Sets the statistic_flag of this ListTenantWarRoomRequestBody.
+        r"""Sets the statistic_flag of this ListTenantWarRoomRequestBody.
 
         是否统计,false 返回基本信息;true接口只返回统计结果：total_num,running_num,closed_num
 

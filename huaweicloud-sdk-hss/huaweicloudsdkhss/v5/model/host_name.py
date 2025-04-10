@@ -23,7 +23,7 @@ class HostName:
     }
 
     def __init__(self):
-        """HostName
+        r"""HostName
 
         The model defined in huaweicloud sdk
 

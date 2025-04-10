@@ -26,7 +26,7 @@ class UploadDataResponse(SdkResponse):
     }
 
     def __init__(self, multipart_id=None):
-        """UploadDataResponse
+        r"""UploadDataResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UploadDataResponse(SdkResponse):
 
     @property
     def multipart_id(self):
-        """Gets the multipart_id of this UploadDataResponse.
+        r"""Gets the multipart_id of this UploadDataResponse.
 
         分段上传任务id
 
@@ -55,7 +55,7 @@ class UploadDataResponse(SdkResponse):
 
     @multipart_id.setter
     def multipart_id(self, multipart_id):
-        """Sets the multipart_id of this UploadDataResponse.
+        r"""Sets the multipart_id of this UploadDataResponse.
 
         分段上传任务id
 

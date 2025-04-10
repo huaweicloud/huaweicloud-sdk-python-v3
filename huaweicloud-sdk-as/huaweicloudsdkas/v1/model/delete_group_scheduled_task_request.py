@@ -27,7 +27,7 @@ class DeleteGroupScheduledTaskRequest:
     }
 
     def __init__(self, scaling_group_id=None, scheduled_task_id=None):
-        """DeleteGroupScheduledTaskRequest
+        r"""DeleteGroupScheduledTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteGroupScheduledTaskRequest:
 
     @property
     def scaling_group_id(self):
-        """Gets the scaling_group_id of this DeleteGroupScheduledTaskRequest.
+        r"""Gets the scaling_group_id of this DeleteGroupScheduledTaskRequest.
 
         伸缩组ID
 
@@ -59,7 +59,7 @@ class DeleteGroupScheduledTaskRequest:
 
     @scaling_group_id.setter
     def scaling_group_id(self, scaling_group_id):
-        """Sets the scaling_group_id of this DeleteGroupScheduledTaskRequest.
+        r"""Sets the scaling_group_id of this DeleteGroupScheduledTaskRequest.
 
         伸缩组ID
 
@@ -70,7 +70,7 @@ class DeleteGroupScheduledTaskRequest:
 
     @property
     def scheduled_task_id(self):
-        """Gets the scheduled_task_id of this DeleteGroupScheduledTaskRequest.
+        r"""Gets the scheduled_task_id of this DeleteGroupScheduledTaskRequest.
 
         计划任务ID
 
@@ -81,7 +81,7 @@ class DeleteGroupScheduledTaskRequest:
 
     @scheduled_task_id.setter
     def scheduled_task_id(self, scheduled_task_id):
-        """Sets the scheduled_task_id of this DeleteGroupScheduledTaskRequest.
+        r"""Sets the scheduled_task_id of this DeleteGroupScheduledTaskRequest.
 
         计划任务ID
 

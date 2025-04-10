@@ -30,7 +30,7 @@ class ShowBucketRegionResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, support=None):
-        """ShowBucketRegionResponse
+        r"""ShowBucketRegionResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowBucketRegionResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowBucketRegionResponse.
+        r"""Gets the id of this ShowBucketRegionResponse.
 
         region ID
 
@@ -69,7 +69,7 @@ class ShowBucketRegionResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowBucketRegionResponse.
+        r"""Sets the id of this ShowBucketRegionResponse.
 
         region ID
 
@@ -80,7 +80,7 @@ class ShowBucketRegionResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowBucketRegionResponse.
+        r"""Gets the name of this ShowBucketRegionResponse.
 
         region 名称
 
@@ -91,7 +91,7 @@ class ShowBucketRegionResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowBucketRegionResponse.
+        r"""Sets the name of this ShowBucketRegionResponse.
 
         region 名称
 
@@ -102,7 +102,7 @@ class ShowBucketRegionResponse(SdkResponse):
 
     @property
     def support(self):
-        """Gets the support of this ShowBucketRegionResponse.
+        r"""Gets the support of this ShowBucketRegionResponse.
 
         此region是否支持迁移
 
@@ -113,7 +113,7 @@ class ShowBucketRegionResponse(SdkResponse):
 
     @support.setter
     def support(self, support):
-        """Sets the support of this ShowBucketRegionResponse.
+        r"""Sets the support of this ShowBucketRegionResponse.
 
         此region是否支持迁移
 

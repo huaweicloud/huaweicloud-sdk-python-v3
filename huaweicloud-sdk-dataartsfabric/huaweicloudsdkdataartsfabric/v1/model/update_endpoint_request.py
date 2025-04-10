@@ -29,7 +29,7 @@ class UpdateEndpointRequest:
     }
 
     def __init__(self, workspace_id=None, endpoint_id=None, body=None):
-        """UpdateEndpointRequest
+        r"""UpdateEndpointRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateEndpointRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this UpdateEndpointRequest.
+        r"""Gets the workspace_id of this UpdateEndpointRequest.
 
         Workspace的ID
 
@@ -66,7 +66,7 @@ class UpdateEndpointRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this UpdateEndpointRequest.
+        r"""Sets the workspace_id of this UpdateEndpointRequest.
 
         Workspace的ID
 
@@ -77,7 +77,7 @@ class UpdateEndpointRequest:
 
     @property
     def endpoint_id(self):
-        """Gets the endpoint_id of this UpdateEndpointRequest.
+        r"""Gets the endpoint_id of this UpdateEndpointRequest.
 
         Endpoint的ID
 
@@ -88,7 +88,7 @@ class UpdateEndpointRequest:
 
     @endpoint_id.setter
     def endpoint_id(self, endpoint_id):
-        """Sets the endpoint_id of this UpdateEndpointRequest.
+        r"""Sets the endpoint_id of this UpdateEndpointRequest.
 
         Endpoint的ID
 
@@ -99,7 +99,7 @@ class UpdateEndpointRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateEndpointRequest.
+        r"""Gets the body of this UpdateEndpointRequest.
 
         :return: The body of this UpdateEndpointRequest.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.UpdateEndpointRequestBody`
@@ -108,7 +108,7 @@ class UpdateEndpointRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateEndpointRequest.
+        r"""Sets the body of this UpdateEndpointRequest.
 
         :param body: The body of this UpdateEndpointRequest.
         :type body: :class:`huaweicloudsdkdataartsfabric.v1.UpdateEndpointRequestBody`

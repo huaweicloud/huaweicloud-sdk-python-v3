@@ -28,7 +28,7 @@ class GetUserIdResponse(SdkResponse):
     }
 
     def __init__(self, identity_store_id=None, user_id=None):
-        """GetUserIdResponse
+        r"""GetUserIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class GetUserIdResponse(SdkResponse):
 
     @property
     def identity_store_id(self):
-        """Gets the identity_store_id of this GetUserIdResponse.
+        r"""Gets the identity_store_id of this GetUserIdResponse.
 
         身份源的全局唯一标识符（ID）
 
@@ -62,7 +62,7 @@ class GetUserIdResponse(SdkResponse):
 
     @identity_store_id.setter
     def identity_store_id(self, identity_store_id):
-        """Sets the identity_store_id of this GetUserIdResponse.
+        r"""Sets the identity_store_id of this GetUserIdResponse.
 
         身份源的全局唯一标识符（ID）
 
@@ -73,7 +73,7 @@ class GetUserIdResponse(SdkResponse):
 
     @property
     def user_id(self):
-        """Gets the user_id of this GetUserIdResponse.
+        r"""Gets the user_id of this GetUserIdResponse.
 
         身份源中IAM身份中心用户的全局唯一标识符（ID）
 
@@ -84,7 +84,7 @@ class GetUserIdResponse(SdkResponse):
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this GetUserIdResponse.
+        r"""Sets the user_id of this GetUserIdResponse.
 
         身份源中IAM身份中心用户的全局唯一标识符（ID）
 

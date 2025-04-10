@@ -28,7 +28,7 @@ class UpdateDigitalHumanBusinessCardResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, x_request_id=None):
-        """UpdateDigitalHumanBusinessCardResponse
+        r"""UpdateDigitalHumanBusinessCardResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateDigitalHumanBusinessCardResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateDigitalHumanBusinessCardResponse.
+        r"""Gets the job_id of this UpdateDigitalHumanBusinessCardResponse.
 
         任务ID。
 
@@ -62,7 +62,7 @@ class UpdateDigitalHumanBusinessCardResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateDigitalHumanBusinessCardResponse.
+        r"""Sets the job_id of this UpdateDigitalHumanBusinessCardResponse.
 
         任务ID。
 
@@ -73,7 +73,7 @@ class UpdateDigitalHumanBusinessCardResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdateDigitalHumanBusinessCardResponse.
+        r"""Gets the x_request_id of this UpdateDigitalHumanBusinessCardResponse.
 
         :return: The x_request_id of this UpdateDigitalHumanBusinessCardResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class UpdateDigitalHumanBusinessCardResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdateDigitalHumanBusinessCardResponse.
+        r"""Sets the x_request_id of this UpdateDigitalHumanBusinessCardResponse.
 
         :param x_request_id: The x_request_id of this UpdateDigitalHumanBusinessCardResponse.
         :type x_request_id: str

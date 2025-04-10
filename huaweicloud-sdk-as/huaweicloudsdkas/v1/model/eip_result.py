@@ -27,7 +27,7 @@ class EipResult:
     }
 
     def __init__(self, ip_type=None, bandwidth=None):
-        """EipResult
+        r"""EipResult
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class EipResult:
 
     @property
     def ip_type(self):
-        """Gets the ip_type of this EipResult.
+        r"""Gets the ip_type of this EipResult.
 
         IP地址类型。
 
@@ -61,7 +61,7 @@ class EipResult:
 
     @ip_type.setter
     def ip_type(self, ip_type):
-        """Sets the ip_type of this EipResult.
+        r"""Sets the ip_type of this EipResult.
 
         IP地址类型。
 
@@ -72,7 +72,7 @@ class EipResult:
 
     @property
     def bandwidth(self):
-        """Gets the bandwidth of this EipResult.
+        r"""Gets the bandwidth of this EipResult.
 
         :return: The bandwidth of this EipResult.
         :rtype: :class:`huaweicloudsdkas.v1.BandwidthResult`
@@ -81,7 +81,7 @@ class EipResult:
 
     @bandwidth.setter
     def bandwidth(self, bandwidth):
-        """Sets the bandwidth of this EipResult.
+        r"""Sets the bandwidth of this EipResult.
 
         :param bandwidth: The bandwidth of this EipResult.
         :type bandwidth: :class:`huaweicloudsdkas.v1.BandwidthResult`

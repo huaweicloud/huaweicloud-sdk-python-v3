@@ -28,7 +28,7 @@ class ResumeEventStreamingResponse(SdkResponse):
     }
 
     def __init__(self, event_streaming_id=None, x_request_id=None):
-        """ResumeEventStreamingResponse
+        r"""ResumeEventStreamingResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ResumeEventStreamingResponse(SdkResponse):
 
     @property
     def event_streaming_id(self):
-        """Gets the event_streaming_id of this ResumeEventStreamingResponse.
+        r"""Gets the event_streaming_id of this ResumeEventStreamingResponse.
 
         事件流ID
 
@@ -62,7 +62,7 @@ class ResumeEventStreamingResponse(SdkResponse):
 
     @event_streaming_id.setter
     def event_streaming_id(self, event_streaming_id):
-        """Sets the event_streaming_id of this ResumeEventStreamingResponse.
+        r"""Sets the event_streaming_id of this ResumeEventStreamingResponse.
 
         事件流ID
 
@@ -73,7 +73,7 @@ class ResumeEventStreamingResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ResumeEventStreamingResponse.
+        r"""Gets the x_request_id of this ResumeEventStreamingResponse.
 
         :return: The x_request_id of this ResumeEventStreamingResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class ResumeEventStreamingResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ResumeEventStreamingResponse.
+        r"""Sets the x_request_id of this ResumeEventStreamingResponse.
 
         :param x_request_id: The x_request_id of this ResumeEventStreamingResponse.
         :type x_request_id: str

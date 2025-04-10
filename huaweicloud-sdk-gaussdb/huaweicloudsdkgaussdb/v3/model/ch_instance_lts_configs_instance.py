@@ -39,7 +39,7 @@ class ChInstanceLtsConfigsInstance:
     }
 
     def __init__(self, id=None, name=None, mode=None, engine_name=None, engine_version=None, status=None, enterprise_project_id=None, enterprise_project_name=None):
-        """ChInstanceLtsConfigsInstance
+        r"""ChInstanceLtsConfigsInstance
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ChInstanceLtsConfigsInstance:
 
     @property
     def id(self):
-        """Gets the id of this ChInstanceLtsConfigsInstance.
+        r"""Gets the id of this ChInstanceLtsConfigsInstance.
 
         ClickHouse实例ID。
 
@@ -103,7 +103,7 @@ class ChInstanceLtsConfigsInstance:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ChInstanceLtsConfigsInstance.
+        r"""Sets the id of this ChInstanceLtsConfigsInstance.
 
         ClickHouse实例ID。
 
@@ -114,7 +114,7 @@ class ChInstanceLtsConfigsInstance:
 
     @property
     def name(self):
-        """Gets the name of this ChInstanceLtsConfigsInstance.
+        r"""Gets the name of this ChInstanceLtsConfigsInstance.
 
         实例名。
 
@@ -125,7 +125,7 @@ class ChInstanceLtsConfigsInstance:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ChInstanceLtsConfigsInstance.
+        r"""Sets the name of this ChInstanceLtsConfigsInstance.
 
         实例名。
 
@@ -136,7 +136,7 @@ class ChInstanceLtsConfigsInstance:
 
     @property
     def mode(self):
-        """Gets the mode of this ChInstanceLtsConfigsInstance.
+        r"""Gets the mode of this ChInstanceLtsConfigsInstance.
 
         实例主备状态。
 
@@ -147,7 +147,7 @@ class ChInstanceLtsConfigsInstance:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this ChInstanceLtsConfigsInstance.
+        r"""Sets the mode of this ChInstanceLtsConfigsInstance.
 
         实例主备状态。
 
@@ -158,7 +158,7 @@ class ChInstanceLtsConfigsInstance:
 
     @property
     def engine_name(self):
-        """Gets the engine_name of this ChInstanceLtsConfigsInstance.
+        r"""Gets the engine_name of this ChInstanceLtsConfigsInstance.
 
         引擎类型。
 
@@ -169,7 +169,7 @@ class ChInstanceLtsConfigsInstance:
 
     @engine_name.setter
     def engine_name(self, engine_name):
-        """Sets the engine_name of this ChInstanceLtsConfigsInstance.
+        r"""Sets the engine_name of this ChInstanceLtsConfigsInstance.
 
         引擎类型。
 
@@ -180,7 +180,7 @@ class ChInstanceLtsConfigsInstance:
 
     @property
     def engine_version(self):
-        """Gets the engine_version of this ChInstanceLtsConfigsInstance.
+        r"""Gets the engine_version of this ChInstanceLtsConfigsInstance.
 
         引擎版本。
 
@@ -191,7 +191,7 @@ class ChInstanceLtsConfigsInstance:
 
     @engine_version.setter
     def engine_version(self, engine_version):
-        """Sets the engine_version of this ChInstanceLtsConfigsInstance.
+        r"""Sets the engine_version of this ChInstanceLtsConfigsInstance.
 
         引擎版本。
 
@@ -202,7 +202,7 @@ class ChInstanceLtsConfigsInstance:
 
     @property
     def status(self):
-        """Gets the status of this ChInstanceLtsConfigsInstance.
+        r"""Gets the status of this ChInstanceLtsConfigsInstance.
 
         实例状态。
 
@@ -213,7 +213,7 @@ class ChInstanceLtsConfigsInstance:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ChInstanceLtsConfigsInstance.
+        r"""Sets the status of this ChInstanceLtsConfigsInstance.
 
         实例状态。
 
@@ -224,7 +224,7 @@ class ChInstanceLtsConfigsInstance:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ChInstanceLtsConfigsInstance.
+        r"""Gets the enterprise_project_id of this ChInstanceLtsConfigsInstance.
 
         企业project id。
 
@@ -235,7 +235,7 @@ class ChInstanceLtsConfigsInstance:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ChInstanceLtsConfigsInstance.
+        r"""Sets the enterprise_project_id of this ChInstanceLtsConfigsInstance.
 
         企业project id。
 
@@ -246,7 +246,7 @@ class ChInstanceLtsConfigsInstance:
 
     @property
     def enterprise_project_name(self):
-        """Gets the enterprise_project_name of this ChInstanceLtsConfigsInstance.
+        r"""Gets the enterprise_project_name of this ChInstanceLtsConfigsInstance.
 
         企业project名。
 
@@ -257,7 +257,7 @@ class ChInstanceLtsConfigsInstance:
 
     @enterprise_project_name.setter
     def enterprise_project_name(self, enterprise_project_name):
-        """Sets the enterprise_project_name of this ChInstanceLtsConfigsInstance.
+        r"""Sets the enterprise_project_name of this ChInstanceLtsConfigsInstance.
 
         企业project名。
 

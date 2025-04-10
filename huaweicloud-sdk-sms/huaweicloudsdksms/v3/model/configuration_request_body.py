@@ -25,7 +25,7 @@ class ConfigurationRequestBody:
     }
 
     def __init__(self, configurations=None):
-        """ConfigurationRequestBody
+        r"""ConfigurationRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ConfigurationRequestBody:
 
     @property
     def configurations(self):
-        """Gets the configurations of this ConfigurationRequestBody.
+        r"""Gets the configurations of this ConfigurationRequestBody.
 
         配置项列表
 
@@ -53,7 +53,7 @@ class ConfigurationRequestBody:
 
     @configurations.setter
     def configurations(self, configurations):
-        """Sets the configurations of this ConfigurationRequestBody.
+        r"""Sets the configurations of this ConfigurationRequestBody.
 
         配置项列表
 

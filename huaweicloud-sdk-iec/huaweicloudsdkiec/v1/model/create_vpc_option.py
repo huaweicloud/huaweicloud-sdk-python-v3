@@ -29,7 +29,7 @@ class CreateVpcOption:
     }
 
     def __init__(self, name=None, cidr=None, mode=None):
-        """CreateVpcOption
+        r"""CreateVpcOption
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CreateVpcOption:
 
     @property
     def name(self):
-        """Gets the name of this CreateVpcOption.
+        r"""Gets the name of this CreateVpcOption.
 
         虚拟私有云名称  取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）  约束：同一个帐号下的名称不能重复
 
@@ -65,7 +65,7 @@ class CreateVpcOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateVpcOption.
+        r"""Sets the name of this CreateVpcOption.
 
         虚拟私有云名称  取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）  约束：同一个帐号下的名称不能重复
 
@@ -76,7 +76,7 @@ class CreateVpcOption:
 
     @property
     def cidr(self):
-        """Gets the cidr of this CreateVpcOption.
+        r"""Gets the cidr of this CreateVpcOption.
 
         虚拟私有云下可用子网的范围。  约束： SYSTEM模式，cidr取值范围：10.0.0.0/8~10.255.0.0/16或者172.16.0.0/12 ~ 172.31.0.0/16或者192.168.0.0/16 。 [CUSTOMER模式，cidr的取值范围：10.0.0.0/8~10.255.255.0/24或者172.16.0.0/12 ~ 172.32.255.0/24或者192.168.0.0/16~192.168.255.0/24。](tag:internal)
 
@@ -87,7 +87,7 @@ class CreateVpcOption:
 
     @cidr.setter
     def cidr(self, cidr):
-        """Sets the cidr of this CreateVpcOption.
+        r"""Sets the cidr of this CreateVpcOption.
 
         虚拟私有云下可用子网的范围。  约束： SYSTEM模式，cidr取值范围：10.0.0.0/8~10.255.0.0/16或者172.16.0.0/12 ~ 172.31.0.0/16或者192.168.0.0/16 。 [CUSTOMER模式，cidr的取值范围：10.0.0.0/8~10.255.255.0/24或者172.16.0.0/12 ~ 172.32.255.0/24或者192.168.0.0/16~192.168.255.0/24。](tag:internal)
 
@@ -98,7 +98,7 @@ class CreateVpcOption:
 
     @property
     def mode(self):
-        """Gets the mode of this CreateVpcOption.
+        r"""Gets the mode of this CreateVpcOption.
 
         虚拟私有云的模式，支持的取值范围如下：  SYSTEM：该类型网络，系统会自动按照实际需要创建足够的子网。 CUSTOMER：该类型网络，用户需要完全按照自己站点的需要，去申请足够的子网。
 
@@ -109,7 +109,7 @@ class CreateVpcOption:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this CreateVpcOption.
+        r"""Sets the mode of this CreateVpcOption.
 
         虚拟私有云的模式，支持的取值范围如下：  SYSTEM：该类型网络，系统会自动按照实际需要创建足够的子网。 CUSTOMER：该类型网络，用户需要完全按照自己站点的需要，去申请足够的子网。
 

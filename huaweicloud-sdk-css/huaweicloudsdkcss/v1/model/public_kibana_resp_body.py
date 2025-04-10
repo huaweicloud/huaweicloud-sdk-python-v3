@@ -31,7 +31,7 @@ class PublicKibanaRespBody:
     }
 
     def __init__(self, eip_size=None, elb_white_list_resp=None, public_kibana_ip=None, bandwidth_resource_id=None):
-        """PublicKibanaRespBody
+        r"""PublicKibanaRespBody
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class PublicKibanaRespBody:
 
     @property
     def eip_size(self):
-        """Gets the eip_size of this PublicKibanaRespBody.
+        r"""Gets the eip_size of this PublicKibanaRespBody.
 
         带宽大小。单位：Mbit/s
 
@@ -75,7 +75,7 @@ class PublicKibanaRespBody:
 
     @eip_size.setter
     def eip_size(self, eip_size):
-        """Sets the eip_size of this PublicKibanaRespBody.
+        r"""Sets the eip_size of this PublicKibanaRespBody.
 
         带宽大小。单位：Mbit/s
 
@@ -86,7 +86,7 @@ class PublicKibanaRespBody:
 
     @property
     def elb_white_list_resp(self):
-        """Gets the elb_white_list_resp of this PublicKibanaRespBody.
+        r"""Gets the elb_white_list_resp of this PublicKibanaRespBody.
 
         :return: The elb_white_list_resp of this PublicKibanaRespBody.
         :rtype: :class:`huaweicloudsdkcss.v1.KibanaElbWhiteListResp`
@@ -95,7 +95,7 @@ class PublicKibanaRespBody:
 
     @elb_white_list_resp.setter
     def elb_white_list_resp(self, elb_white_list_resp):
-        """Sets the elb_white_list_resp of this PublicKibanaRespBody.
+        r"""Sets the elb_white_list_resp of this PublicKibanaRespBody.
 
         :param elb_white_list_resp: The elb_white_list_resp of this PublicKibanaRespBody.
         :type elb_white_list_resp: :class:`huaweicloudsdkcss.v1.KibanaElbWhiteListResp`
@@ -104,7 +104,7 @@ class PublicKibanaRespBody:
 
     @property
     def public_kibana_ip(self):
-        """Gets the public_kibana_ip of this PublicKibanaRespBody.
+        r"""Gets the public_kibana_ip of this PublicKibanaRespBody.
 
         kibana访问IP。
 
@@ -115,7 +115,7 @@ class PublicKibanaRespBody:
 
     @public_kibana_ip.setter
     def public_kibana_ip(self, public_kibana_ip):
-        """Sets the public_kibana_ip of this PublicKibanaRespBody.
+        r"""Sets the public_kibana_ip of this PublicKibanaRespBody.
 
         kibana访问IP。
 
@@ -126,7 +126,7 @@ class PublicKibanaRespBody:
 
     @property
     def bandwidth_resource_id(self):
-        """Gets the bandwidth_resource_id of this PublicKibanaRespBody.
+        r"""Gets the bandwidth_resource_id of this PublicKibanaRespBody.
 
         当前kibana公网对应的资源Id。
 
@@ -137,7 +137,7 @@ class PublicKibanaRespBody:
 
     @bandwidth_resource_id.setter
     def bandwidth_resource_id(self, bandwidth_resource_id):
-        """Sets the bandwidth_resource_id of this PublicKibanaRespBody.
+        r"""Sets the bandwidth_resource_id of this PublicKibanaRespBody.
 
         当前kibana公网对应的资源Id。
 

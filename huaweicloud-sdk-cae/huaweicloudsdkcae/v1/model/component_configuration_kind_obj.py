@@ -26,7 +26,7 @@ class ComponentConfigurationKindObj:
     }
 
     def __init__(self):
-        """ComponentConfigurationKindObj
+        r"""ComponentConfigurationKindObj
 
         The model defined in huaweicloud sdk
 

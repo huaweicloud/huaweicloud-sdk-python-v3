@@ -37,7 +37,7 @@ class TemplateJobInfo:
     }
 
     def __init__(self, application_name=None, template_id=None, project_name=None, repo_type=None, properties=None, template_dependencies=None, repo_info=None):
-        """TemplateJobInfo
+        r"""TemplateJobInfo
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class TemplateJobInfo:
 
     @property
     def application_name(self):
-        """Gets the application_name of this TemplateJobInfo.
+        r"""Gets the application_name of this TemplateJobInfo.
 
         应用名称
 
@@ -95,7 +95,7 @@ class TemplateJobInfo:
 
     @application_name.setter
     def application_name(self, application_name):
-        """Sets the application_name of this TemplateJobInfo.
+        r"""Sets the application_name of this TemplateJobInfo.
 
         应用名称
 
@@ -106,7 +106,7 @@ class TemplateJobInfo:
 
     @property
     def template_id(self):
-        """Gets the template_id of this TemplateJobInfo.
+        r"""Gets the template_id of this TemplateJobInfo.
 
         任务依赖的模板id
 
@@ -117,7 +117,7 @@ class TemplateJobInfo:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this TemplateJobInfo.
+        r"""Sets the template_id of this TemplateJobInfo.
 
         任务依赖的模板id
 
@@ -128,7 +128,7 @@ class TemplateJobInfo:
 
     @property
     def project_name(self):
-        """Gets the project_name of this TemplateJobInfo.
+        r"""Gets the project_name of this TemplateJobInfo.
 
         应用名称
 
@@ -139,7 +139,7 @@ class TemplateJobInfo:
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this TemplateJobInfo.
+        r"""Sets the project_name of this TemplateJobInfo.
 
         应用名称
 
@@ -150,7 +150,7 @@ class TemplateJobInfo:
 
     @property
     def repo_type(self):
-        """Gets the repo_type of this TemplateJobInfo.
+        r"""Gets the repo_type of this TemplateJobInfo.
 
         应用代码生成后的地址类型，目前支持0：codehub地址和1：压缩包下载地址
 
@@ -161,7 +161,7 @@ class TemplateJobInfo:
 
     @repo_type.setter
     def repo_type(self, repo_type):
-        """Sets the repo_type of this TemplateJobInfo.
+        r"""Sets the repo_type of this TemplateJobInfo.
 
         应用代码生成后的地址类型，目前支持0：codehub地址和1：压缩包下载地址
 
@@ -172,7 +172,7 @@ class TemplateJobInfo:
 
     @property
     def properties(self):
-        """Gets the properties of this TemplateJobInfo.
+        r"""Gets the properties of this TemplateJobInfo.
 
         应用的动态参数json
 
@@ -183,7 +183,7 @@ class TemplateJobInfo:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this TemplateJobInfo.
+        r"""Sets the properties of this TemplateJobInfo.
 
         应用的动态参数json
 
@@ -194,7 +194,7 @@ class TemplateJobInfo:
 
     @property
     def template_dependencies(self):
-        """Gets the template_dependencies of this TemplateJobInfo.
+        r"""Gets the template_dependencies of this TemplateJobInfo.
 
         模板 dependency ID 集合
 
@@ -205,7 +205,7 @@ class TemplateJobInfo:
 
     @template_dependencies.setter
     def template_dependencies(self, template_dependencies):
-        """Sets the template_dependencies of this TemplateJobInfo.
+        r"""Sets the template_dependencies of this TemplateJobInfo.
 
         模板 dependency ID 集合
 
@@ -216,7 +216,7 @@ class TemplateJobInfo:
 
     @property
     def repo_info(self):
-        """Gets the repo_info of this TemplateJobInfo.
+        r"""Gets the repo_info of this TemplateJobInfo.
 
         :return: The repo_info of this TemplateJobInfo.
         :rtype: :class:`huaweicloudsdkdevstar.v1.RepositoryInfo`
@@ -225,7 +225,7 @@ class TemplateJobInfo:
 
     @repo_info.setter
     def repo_info(self, repo_info):
-        """Sets the repo_info of this TemplateJobInfo.
+        r"""Sets the repo_info of this TemplateJobInfo.
 
         :param repo_info: The repo_info of this TemplateJobInfo.
         :type repo_info: :class:`huaweicloudsdkdevstar.v1.RepositoryInfo`

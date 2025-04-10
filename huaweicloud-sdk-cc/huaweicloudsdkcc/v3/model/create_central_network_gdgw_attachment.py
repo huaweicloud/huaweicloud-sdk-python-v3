@@ -41,7 +41,7 @@ class CreateCentralNetworkGdgwAttachment:
     }
 
     def __init__(self, name=None, description=None, enterprise_router_id=None, global_dc_gateway_id=None, global_dc_gateway_project_id=None, global_dc_gateway_region_id=None, enterprise_router_project_id=None, enterprise_router_region_id=None, central_network_plane_id=None):
-        """CreateCentralNetworkGdgwAttachment
+        r"""CreateCentralNetworkGdgwAttachment
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class CreateCentralNetworkGdgwAttachment:
 
     @property
     def name(self):
-        """Gets the name of this CreateCentralNetworkGdgwAttachment.
+        r"""Gets the name of this CreateCentralNetworkGdgwAttachment.
 
         实例名字。
 
@@ -103,7 +103,7 @@ class CreateCentralNetworkGdgwAttachment:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateCentralNetworkGdgwAttachment.
+        r"""Sets the name of this CreateCentralNetworkGdgwAttachment.
 
         实例名字。
 
@@ -114,7 +114,7 @@ class CreateCentralNetworkGdgwAttachment:
 
     @property
     def description(self):
-        """Gets the description of this CreateCentralNetworkGdgwAttachment.
+        r"""Gets the description of this CreateCentralNetworkGdgwAttachment.
 
         实例描述。不支持 <>。
 
@@ -125,7 +125,7 @@ class CreateCentralNetworkGdgwAttachment:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateCentralNetworkGdgwAttachment.
+        r"""Sets the description of this CreateCentralNetworkGdgwAttachment.
 
         实例描述。不支持 <>。
 
@@ -136,7 +136,7 @@ class CreateCentralNetworkGdgwAttachment:
 
     @property
     def enterprise_router_id(self):
-        """Gets the enterprise_router_id of this CreateCentralNetworkGdgwAttachment.
+        r"""Gets the enterprise_router_id of this CreateCentralNetworkGdgwAttachment.
 
         企业路由器的ID。
 
@@ -147,7 +147,7 @@ class CreateCentralNetworkGdgwAttachment:
 
     @enterprise_router_id.setter
     def enterprise_router_id(self, enterprise_router_id):
-        """Sets the enterprise_router_id of this CreateCentralNetworkGdgwAttachment.
+        r"""Sets the enterprise_router_id of this CreateCentralNetworkGdgwAttachment.
 
         企业路由器的ID。
 
@@ -158,7 +158,7 @@ class CreateCentralNetworkGdgwAttachment:
 
     @property
     def global_dc_gateway_id(self):
-        """Gets the global_dc_gateway_id of this CreateCentralNetworkGdgwAttachment.
+        r"""Gets the global_dc_gateway_id of this CreateCentralNetworkGdgwAttachment.
 
         Gdgw的ID。
 
@@ -169,7 +169,7 @@ class CreateCentralNetworkGdgwAttachment:
 
     @global_dc_gateway_id.setter
     def global_dc_gateway_id(self, global_dc_gateway_id):
-        """Sets the global_dc_gateway_id of this CreateCentralNetworkGdgwAttachment.
+        r"""Sets the global_dc_gateway_id of this CreateCentralNetworkGdgwAttachment.
 
         Gdgw的ID。
 
@@ -180,7 +180,7 @@ class CreateCentralNetworkGdgwAttachment:
 
     @property
     def global_dc_gateway_project_id(self):
-        """Gets the global_dc_gateway_project_id of this CreateCentralNetworkGdgwAttachment.
+        r"""Gets the global_dc_gateway_project_id of this CreateCentralNetworkGdgwAttachment.
 
         Gdgw的项目ID。
 
@@ -191,7 +191,7 @@ class CreateCentralNetworkGdgwAttachment:
 
     @global_dc_gateway_project_id.setter
     def global_dc_gateway_project_id(self, global_dc_gateway_project_id):
-        """Sets the global_dc_gateway_project_id of this CreateCentralNetworkGdgwAttachment.
+        r"""Sets the global_dc_gateway_project_id of this CreateCentralNetworkGdgwAttachment.
 
         Gdgw的项目ID。
 
@@ -202,7 +202,7 @@ class CreateCentralNetworkGdgwAttachment:
 
     @property
     def global_dc_gateway_region_id(self):
-        """Gets the global_dc_gateway_region_id of this CreateCentralNetworkGdgwAttachment.
+        r"""Gets the global_dc_gateway_region_id of this CreateCentralNetworkGdgwAttachment.
 
         Gdgw的RegionID。
 
@@ -213,7 +213,7 @@ class CreateCentralNetworkGdgwAttachment:
 
     @global_dc_gateway_region_id.setter
     def global_dc_gateway_region_id(self, global_dc_gateway_region_id):
-        """Sets the global_dc_gateway_region_id of this CreateCentralNetworkGdgwAttachment.
+        r"""Sets the global_dc_gateway_region_id of this CreateCentralNetworkGdgwAttachment.
 
         Gdgw的RegionID。
 
@@ -224,7 +224,7 @@ class CreateCentralNetworkGdgwAttachment:
 
     @property
     def enterprise_router_project_id(self):
-        """Gets the enterprise_router_project_id of this CreateCentralNetworkGdgwAttachment.
+        r"""Gets the enterprise_router_project_id of this CreateCentralNetworkGdgwAttachment.
 
         企业路由器的项目ID。
 
@@ -235,7 +235,7 @@ class CreateCentralNetworkGdgwAttachment:
 
     @enterprise_router_project_id.setter
     def enterprise_router_project_id(self, enterprise_router_project_id):
-        """Sets the enterprise_router_project_id of this CreateCentralNetworkGdgwAttachment.
+        r"""Sets the enterprise_router_project_id of this CreateCentralNetworkGdgwAttachment.
 
         企业路由器的项目ID。
 
@@ -246,7 +246,7 @@ class CreateCentralNetworkGdgwAttachment:
 
     @property
     def enterprise_router_region_id(self):
-        """Gets the enterprise_router_region_id of this CreateCentralNetworkGdgwAttachment.
+        r"""Gets the enterprise_router_region_id of this CreateCentralNetworkGdgwAttachment.
 
         ER路由器的regionID。
 
@@ -257,7 +257,7 @@ class CreateCentralNetworkGdgwAttachment:
 
     @enterprise_router_region_id.setter
     def enterprise_router_region_id(self, enterprise_router_region_id):
-        """Sets the enterprise_router_region_id of this CreateCentralNetworkGdgwAttachment.
+        r"""Sets the enterprise_router_region_id of this CreateCentralNetworkGdgwAttachment.
 
         ER路由器的regionID。
 
@@ -268,7 +268,7 @@ class CreateCentralNetworkGdgwAttachment:
 
     @property
     def central_network_plane_id(self):
-        """Gets the central_network_plane_id of this CreateCentralNetworkGdgwAttachment.
+        r"""Gets the central_network_plane_id of this CreateCentralNetworkGdgwAttachment.
 
         中心网络平面ID。
 
@@ -279,7 +279,7 @@ class CreateCentralNetworkGdgwAttachment:
 
     @central_network_plane_id.setter
     def central_network_plane_id(self, central_network_plane_id):
-        """Sets the central_network_plane_id of this CreateCentralNetworkGdgwAttachment.
+        r"""Sets the central_network_plane_id of this CreateCentralNetworkGdgwAttachment.
 
         中心网络平面ID。
 

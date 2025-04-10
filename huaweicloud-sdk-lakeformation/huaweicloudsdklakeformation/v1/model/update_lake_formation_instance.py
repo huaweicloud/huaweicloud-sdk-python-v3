@@ -27,7 +27,7 @@ class UpdateLakeFormationInstance:
     }
 
     def __init__(self, name=None, description=None):
-        """UpdateLakeFormationInstance
+        r"""UpdateLakeFormationInstance
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateLakeFormationInstance:
 
     @property
     def name(self):
-        """Gets the name of this UpdateLakeFormationInstance.
+        r"""Gets the name of this UpdateLakeFormationInstance.
 
         实例名称
 
@@ -60,7 +60,7 @@ class UpdateLakeFormationInstance:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateLakeFormationInstance.
+        r"""Sets the name of this UpdateLakeFormationInstance.
 
         实例名称
 
@@ -71,7 +71,7 @@ class UpdateLakeFormationInstance:
 
     @property
     def description(self):
-        """Gets the description of this UpdateLakeFormationInstance.
+        r"""Gets the description of this UpdateLakeFormationInstance.
 
         实例描述
 
@@ -82,7 +82,7 @@ class UpdateLakeFormationInstance:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateLakeFormationInstance.
+        r"""Sets the description of this UpdateLakeFormationInstance.
 
         实例描述
 

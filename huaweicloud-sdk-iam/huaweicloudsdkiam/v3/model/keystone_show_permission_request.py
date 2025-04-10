@@ -25,7 +25,7 @@ class KeystoneShowPermissionRequest:
     }
 
     def __init__(self, role_id=None):
-        """KeystoneShowPermissionRequest
+        r"""KeystoneShowPermissionRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class KeystoneShowPermissionRequest:
 
     @property
     def role_id(self):
-        """Gets the role_id of this KeystoneShowPermissionRequest.
+        r"""Gets the role_id of this KeystoneShowPermissionRequest.
 
         权限ID，获取方式请参见：[获取权限名、权限ID](https://support.huaweicloud.com/api-iam/iam_10_0001.html)。
 
@@ -53,7 +53,7 @@ class KeystoneShowPermissionRequest:
 
     @role_id.setter
     def role_id(self, role_id):
-        """Sets the role_id of this KeystoneShowPermissionRequest.
+        r"""Sets the role_id of this KeystoneShowPermissionRequest.
 
         权限ID，获取方式请参见：[获取权限名、权限ID](https://support.huaweicloud.com/api-iam/iam_10_0001.html)。
 

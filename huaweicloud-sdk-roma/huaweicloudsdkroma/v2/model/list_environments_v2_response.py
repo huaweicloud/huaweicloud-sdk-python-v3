@@ -30,7 +30,7 @@ class ListEnvironmentsV2Response(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, envs=None):
-        """ListEnvironmentsV2Response
+        r"""ListEnvironmentsV2Response
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListEnvironmentsV2Response(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListEnvironmentsV2Response.
+        r"""Gets the size of this ListEnvironmentsV2Response.
 
         本次返回的列表长度
 
@@ -67,7 +67,7 @@ class ListEnvironmentsV2Response(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListEnvironmentsV2Response.
+        r"""Sets the size of this ListEnvironmentsV2Response.
 
         本次返回的列表长度
 
@@ -78,7 +78,7 @@ class ListEnvironmentsV2Response(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListEnvironmentsV2Response.
+        r"""Gets the total of this ListEnvironmentsV2Response.
 
         满足条件的记录数
 
@@ -89,7 +89,7 @@ class ListEnvironmentsV2Response(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListEnvironmentsV2Response.
+        r"""Sets the total of this ListEnvironmentsV2Response.
 
         满足条件的记录数
 
@@ -100,7 +100,7 @@ class ListEnvironmentsV2Response(SdkResponse):
 
     @property
     def envs(self):
-        """Gets the envs of this ListEnvironmentsV2Response.
+        r"""Gets the envs of this ListEnvironmentsV2Response.
 
         本次返回的环境列表
 
@@ -111,7 +111,7 @@ class ListEnvironmentsV2Response(SdkResponse):
 
     @envs.setter
     def envs(self, envs):
-        """Sets the envs of this ListEnvironmentsV2Response.
+        r"""Sets the envs of this ListEnvironmentsV2Response.
 
         本次返回的环境列表
 

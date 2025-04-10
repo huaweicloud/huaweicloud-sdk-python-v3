@@ -27,7 +27,7 @@ class Error:
     }
 
     def __init__(self, message=None, code=None):
-        """Error
+        r"""Error
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Error:
 
     @property
     def message(self):
-        """Gets the message of this Error.
+        r"""Gets the message of this Error.
 
         任务异常错误信息描述
 
@@ -61,7 +61,7 @@ class Error:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this Error.
+        r"""Sets the message of this Error.
 
         任务异常错误信息描述
 
@@ -72,7 +72,7 @@ class Error:
 
     @property
     def code(self):
-        """Gets the code of this Error.
+        r"""Gets the code of this Error.
 
         任务异常错误信息编码
 
@@ -83,7 +83,7 @@ class Error:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this Error.
+        r"""Sets the code of this Error.
 
         任务异常错误信息编码
 

@@ -36,7 +36,7 @@ class ShowVulScanPolicyResponse(SdkResponse):
     }
 
     def __init__(self, scan_period=None, scan_vul_types=None, scan_range_type=None, host_ids=None, total_host_num=None, status=None):
-        """ShowVulScanPolicyResponse
+        r"""ShowVulScanPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ShowVulScanPolicyResponse(SdkResponse):
 
     @property
     def scan_period(self):
-        """Gets the scan_period of this ShowVulScanPolicyResponse.
+        r"""Gets the scan_period of this ShowVulScanPolicyResponse.
 
         扫描周期 - one_day : 每天 - three_day : 每三天 - one_week : 每周
 
@@ -90,7 +90,7 @@ class ShowVulScanPolicyResponse(SdkResponse):
 
     @scan_period.setter
     def scan_period(self, scan_period):
-        """Sets the scan_period of this ShowVulScanPolicyResponse.
+        r"""Sets the scan_period of this ShowVulScanPolicyResponse.
 
         扫描周期 - one_day : 每天 - three_day : 每三天 - one_week : 每周
 
@@ -101,7 +101,7 @@ class ShowVulScanPolicyResponse(SdkResponse):
 
     @property
     def scan_vul_types(self):
-        """Gets the scan_vul_types of this ShowVulScanPolicyResponse.
+        r"""Gets the scan_vul_types of this ShowVulScanPolicyResponse.
 
         扫描的漏洞类型列表
 
@@ -112,7 +112,7 @@ class ShowVulScanPolicyResponse(SdkResponse):
 
     @scan_vul_types.setter
     def scan_vul_types(self, scan_vul_types):
-        """Sets the scan_vul_types of this ShowVulScanPolicyResponse.
+        r"""Sets the scan_vul_types of this ShowVulScanPolicyResponse.
 
         扫描的漏洞类型列表
 
@@ -123,7 +123,7 @@ class ShowVulScanPolicyResponse(SdkResponse):
 
     @property
     def scan_range_type(self):
-        """Gets the scan_range_type of this ShowVulScanPolicyResponse.
+        r"""Gets the scan_range_type of this ShowVulScanPolicyResponse.
 
         扫描主机的范围，包含如下：   -all_host : 扫描全部主机   -specific_host : 扫描指定主机
 
@@ -134,7 +134,7 @@ class ShowVulScanPolicyResponse(SdkResponse):
 
     @scan_range_type.setter
     def scan_range_type(self, scan_range_type):
-        """Sets the scan_range_type of this ShowVulScanPolicyResponse.
+        r"""Sets the scan_range_type of this ShowVulScanPolicyResponse.
 
         扫描主机的范围，包含如下：   -all_host : 扫描全部主机   -specific_host : 扫描指定主机
 
@@ -145,7 +145,7 @@ class ShowVulScanPolicyResponse(SdkResponse):
 
     @property
     def host_ids(self):
-        """Gets the host_ids of this ShowVulScanPolicyResponse.
+        r"""Gets the host_ids of this ShowVulScanPolicyResponse.
 
         主机ID列表；当scan_range_type的值为specific_host时表示扫描的主机列表
 
@@ -156,7 +156,7 @@ class ShowVulScanPolicyResponse(SdkResponse):
 
     @host_ids.setter
     def host_ids(self, host_ids):
-        """Sets the host_ids of this ShowVulScanPolicyResponse.
+        r"""Sets the host_ids of this ShowVulScanPolicyResponse.
 
         主机ID列表；当scan_range_type的值为specific_host时表示扫描的主机列表
 
@@ -167,7 +167,7 @@ class ShowVulScanPolicyResponse(SdkResponse):
 
     @property
     def total_host_num(self):
-        """Gets the total_host_num of this ShowVulScanPolicyResponse.
+        r"""Gets the total_host_num of this ShowVulScanPolicyResponse.
 
         可进行漏洞扫描的主机总数
 
@@ -178,7 +178,7 @@ class ShowVulScanPolicyResponse(SdkResponse):
 
     @total_host_num.setter
     def total_host_num(self, total_host_num):
-        """Sets the total_host_num of this ShowVulScanPolicyResponse.
+        r"""Sets the total_host_num of this ShowVulScanPolicyResponse.
 
         可进行漏洞扫描的主机总数
 
@@ -189,7 +189,7 @@ class ShowVulScanPolicyResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowVulScanPolicyResponse.
+        r"""Gets the status of this ShowVulScanPolicyResponse.
 
         扫描策略状态，包含如下：   -open : 开启   -close : 关闭
 
@@ -200,7 +200,7 @@ class ShowVulScanPolicyResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowVulScanPolicyResponse.
+        r"""Sets the status of this ShowVulScanPolicyResponse.
 
         扫描策略状态，包含如下：   -open : 开启   -close : 关闭
 

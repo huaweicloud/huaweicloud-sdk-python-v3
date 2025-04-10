@@ -24,7 +24,7 @@ class DeleteDrugLigandSimilarityGraphTaskResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteDrugLigandSimilarityGraphTaskResponse
+        r"""DeleteDrugLigandSimilarityGraphTaskResponse
 
         The model defined in huaweicloud sdk
 

@@ -29,7 +29,7 @@ class UpdateFlavorByTypeReq:
     }
 
     def __init__(self, need_check_replica=None, new_flavor_id=None, is_auto_pay=None):
-        """UpdateFlavorByTypeReq
+        r"""UpdateFlavorByTypeReq
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateFlavorByTypeReq:
 
     @property
     def need_check_replica(self):
-        """Gets the need_check_replica of this UpdateFlavorByTypeReq.
+        r"""Gets the need_check_replica of this UpdateFlavorByTypeReq.
 
         是否需要检查副本，取值范围为true或false。默认开启校验。 - true: 开启副本校验。 - false: 忽略副本校验。  >Master和Client节点不是数据节点，因此不需要进行副本校验。即使选择true，也不会进行副本校验。
 
@@ -67,7 +67,7 @@ class UpdateFlavorByTypeReq:
 
     @need_check_replica.setter
     def need_check_replica(self, need_check_replica):
-        """Sets the need_check_replica of this UpdateFlavorByTypeReq.
+        r"""Sets the need_check_replica of this UpdateFlavorByTypeReq.
 
         是否需要检查副本，取值范围为true或false。默认开启校验。 - true: 开启副本校验。 - false: 忽略副本校验。  >Master和Client节点不是数据节点，因此不需要进行副本校验。即使选择true，也不会进行副本校验。
 
@@ -78,7 +78,7 @@ class UpdateFlavorByTypeReq:
 
     @property
     def new_flavor_id(self):
-        """Gets the new_flavor_id of this UpdateFlavorByTypeReq.
+        r"""Gets the new_flavor_id of this UpdateFlavorByTypeReq.
 
         变更后节点规格ID。 该参数通过[获取实例规格列表](ListFlavors.xml)接口获取，根据name属性所需要的规格，选择对应的flavor_id。 仅支持同一个Esasticsearch引擎版本下的节点规格变更。
 
@@ -89,7 +89,7 @@ class UpdateFlavorByTypeReq:
 
     @new_flavor_id.setter
     def new_flavor_id(self, new_flavor_id):
-        """Sets the new_flavor_id of this UpdateFlavorByTypeReq.
+        r"""Sets the new_flavor_id of this UpdateFlavorByTypeReq.
 
         变更后节点规格ID。 该参数通过[获取实例规格列表](ListFlavors.xml)接口获取，根据name属性所需要的规格，选择对应的flavor_id。 仅支持同一个Esasticsearch引擎版本下的节点规格变更。
 
@@ -100,7 +100,7 @@ class UpdateFlavorByTypeReq:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this UpdateFlavorByTypeReq.
+        r"""Gets the is_auto_pay of this UpdateFlavorByTypeReq.
 
         是否自动支付。下单订购后，是否自动从客户的华为云账户中支付，而不需要客户手动去进行支付。该参数适用于包周期集群。  - 1: 是（会自动选择折扣和优惠券进行优惠，然后自动从客户华为云账户中支付），自动支付失败后会生成订单成功(该订单应付金额是优惠后金额)、但订单状态为“待支付”，等待客户手动支付(手动支付时，客户还可以修改系统自动选择的折扣和优惠券)。  - 0: 否（需要客户手动去支付，客户可以选择折扣和优惠券）。默认值为“0”。
 
@@ -111,7 +111,7 @@ class UpdateFlavorByTypeReq:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this UpdateFlavorByTypeReq.
+        r"""Sets the is_auto_pay of this UpdateFlavorByTypeReq.
 
         是否自动支付。下单订购后，是否自动从客户的华为云账户中支付，而不需要客户手动去进行支付。该参数适用于包周期集群。  - 1: 是（会自动选择折扣和优惠券进行优惠，然后自动从客户华为云账户中支付），自动支付失败后会生成订单成功(该订单应付金额是优惠后金额)、但订单状态为“待支付”，等待客户手动支付(手动支付时，客户还可以修改系统自动选择的折扣和优惠券)。  - 0: 否（需要客户手动去支付，客户可以选择折扣和优惠券）。默认值为“0”。
 

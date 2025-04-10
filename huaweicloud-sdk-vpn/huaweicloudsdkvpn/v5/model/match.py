@@ -27,7 +27,7 @@ class Match:
     }
 
     def __init__(self, key=None, value=None):
-        """Match
+        r"""Match
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Match:
 
     @property
     def key(self):
-        """Gets the key of this Match.
+        r"""Gets the key of this Match.
 
         :return: The key of this Match.
         :rtype: str
@@ -57,7 +57,7 @@ class Match:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this Match.
+        r"""Sets the key of this Match.
 
         :param key: The key of this Match.
         :type key: str
@@ -66,7 +66,7 @@ class Match:
 
     @property
     def value(self):
-        """Gets the value of this Match.
+        r"""Gets the value of this Match.
 
         :return: The value of this Match.
         :rtype: str
@@ -75,7 +75,7 @@ class Match:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this Match.
+        r"""Sets the value of this Match.
 
         :param value: The value of this Match.
         :type value: str

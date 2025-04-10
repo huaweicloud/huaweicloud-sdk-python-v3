@@ -31,7 +31,7 @@ class Errors:
     }
 
     def __init__(self, error_code=None, error_msg=None, project_id=None, resource_type=None):
-        """Errors
+        r"""Errors
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class Errors:
 
     @property
     def error_code(self):
-        """Gets the error_code of this Errors.
+        r"""Gets the error_code of this Errors.
 
         错误码
 
@@ -75,7 +75,7 @@ class Errors:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this Errors.
+        r"""Sets the error_code of this Errors.
 
         错误码
 
@@ -86,7 +86,7 @@ class Errors:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this Errors.
+        r"""Gets the error_msg of this Errors.
 
         错误描述
 
@@ -97,7 +97,7 @@ class Errors:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this Errors.
+        r"""Sets the error_msg of this Errors.
 
         错误描述
 
@@ -108,7 +108,7 @@ class Errors:
 
     @property
     def project_id(self):
-        """Gets the project_id of this Errors.
+        r"""Gets the project_id of this Errors.
 
         ProjectID
 
@@ -119,7 +119,7 @@ class Errors:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this Errors.
+        r"""Sets the project_id of this Errors.
 
         ProjectID
 
@@ -130,7 +130,7 @@ class Errors:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this Errors.
+        r"""Gets the resource_type of this Errors.
 
         资源类型
 
@@ -141,7 +141,7 @@ class Errors:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this Errors.
+        r"""Sets the resource_type of this Errors.
 
         资源类型
 

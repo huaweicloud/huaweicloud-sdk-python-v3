@@ -33,7 +33,7 @@ class ListTableNamesRequest:
     }
 
     def __init__(self, instance_id=None, catalog_name=None, database_name=None, table_pattern=None, table_type=None):
-        """ListTableNamesRequest
+        r"""ListTableNamesRequest
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class ListTableNamesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListTableNamesRequest.
+        r"""Gets the instance_id of this ListTableNamesRequest.
 
         实例ID
 
@@ -79,7 +79,7 @@ class ListTableNamesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListTableNamesRequest.
+        r"""Sets the instance_id of this ListTableNamesRequest.
 
         实例ID
 
@@ -90,7 +90,7 @@ class ListTableNamesRequest:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this ListTableNamesRequest.
+        r"""Gets the catalog_name of this ListTableNamesRequest.
 
         catalog名字
 
@@ -101,7 +101,7 @@ class ListTableNamesRequest:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this ListTableNamesRequest.
+        r"""Sets the catalog_name of this ListTableNamesRequest.
 
         catalog名字
 
@@ -112,7 +112,7 @@ class ListTableNamesRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this ListTableNamesRequest.
+        r"""Gets the database_name of this ListTableNamesRequest.
 
         数据库名字
 
@@ -123,7 +123,7 @@ class ListTableNamesRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this ListTableNamesRequest.
+        r"""Sets the database_name of this ListTableNamesRequest.
 
         数据库名字
 
@@ -134,7 +134,7 @@ class ListTableNamesRequest:
 
     @property
     def table_pattern(self):
-        """Gets the table_pattern of this ListTableNamesRequest.
+        r"""Gets the table_pattern of this ListTableNamesRequest.
 
         表名通配符
 
@@ -145,7 +145,7 @@ class ListTableNamesRequest:
 
     @table_pattern.setter
     def table_pattern(self, table_pattern):
-        """Sets the table_pattern of this ListTableNamesRequest.
+        r"""Sets the table_pattern of this ListTableNamesRequest.
 
         表名通配符
 
@@ -156,7 +156,7 @@ class ListTableNamesRequest:
 
     @property
     def table_type(self):
-        """Gets the table_type of this ListTableNamesRequest.
+        r"""Gets the table_type of this ListTableNamesRequest.
 
         查询的表类型
 
@@ -167,7 +167,7 @@ class ListTableNamesRequest:
 
     @table_type.setter
     def table_type(self, table_type):
-        """Sets the table_type of this ListTableNamesRequest.
+        r"""Sets the table_type of this ListTableNamesRequest.
 
         查询的表类型
 

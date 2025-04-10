@@ -27,7 +27,7 @@ class CreatePictureModelingJobRequest:
     }
 
     def __init__(self, x_app_user_id=None, body=None):
-        """CreatePictureModelingJobRequest
+        r"""CreatePictureModelingJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreatePictureModelingJobRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this CreatePictureModelingJobRequest.
+        r"""Gets the x_app_user_id of this CreatePictureModelingJobRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -61,7 +61,7 @@ class CreatePictureModelingJobRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this CreatePictureModelingJobRequest.
+        r"""Sets the x_app_user_id of this CreatePictureModelingJobRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -72,7 +72,7 @@ class CreatePictureModelingJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePictureModelingJobRequest.
+        r"""Gets the body of this CreatePictureModelingJobRequest.
 
         :return: The body of this CreatePictureModelingJobRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CreatePictureModelingJobRequestBody`
@@ -81,7 +81,7 @@ class CreatePictureModelingJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePictureModelingJobRequest.
+        r"""Sets the body of this CreatePictureModelingJobRequest.
 
         :param body: The body of this CreatePictureModelingJobRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.CreatePictureModelingJobRequestBody`

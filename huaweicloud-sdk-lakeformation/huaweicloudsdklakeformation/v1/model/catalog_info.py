@@ -27,7 +27,7 @@ class CatalogInfo:
     }
 
     def __init__(self, databases=None, name=None):
-        """CatalogInfo
+        r"""CatalogInfo
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CatalogInfo:
 
     @property
     def databases(self):
-        """Gets the databases of this CatalogInfo.
+        r"""Gets the databases of this CatalogInfo.
 
         子数据库信息
 
@@ -60,7 +60,7 @@ class CatalogInfo:
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this CatalogInfo.
+        r"""Sets the databases of this CatalogInfo.
 
         子数据库信息
 
@@ -71,7 +71,7 @@ class CatalogInfo:
 
     @property
     def name(self):
-        """Gets the name of this CatalogInfo.
+        r"""Gets the name of this CatalogInfo.
 
         catalog名
 
@@ -82,7 +82,7 @@ class CatalogInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CatalogInfo.
+        r"""Sets the name of this CatalogInfo.
 
         catalog名
 

@@ -25,7 +25,7 @@ class ListVersionAliasesRequest:
     }
 
     def __init__(self, function_urn=None):
-        """ListVersionAliasesRequest
+        r"""ListVersionAliasesRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListVersionAliasesRequest:
 
     @property
     def function_urn(self):
-        """Gets the function_urn of this ListVersionAliasesRequest.
+        r"""Gets the function_urn of this ListVersionAliasesRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -53,7 +53,7 @@ class ListVersionAliasesRequest:
 
     @function_urn.setter
     def function_urn(self, function_urn):
-        """Sets the function_urn of this ListVersionAliasesRequest.
+        r"""Sets the function_urn of this ListVersionAliasesRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 

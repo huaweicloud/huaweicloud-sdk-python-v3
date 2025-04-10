@@ -31,7 +31,7 @@ class OrderAlertIncidentContentIncidentType:
     }
 
     def __init__(self, id=None, layout_id=None, incident_type=None, category=None):
-        """OrderAlertIncidentContentIncidentType
+        r"""OrderAlertIncidentContentIncidentType
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class OrderAlertIncidentContentIncidentType:
 
     @property
     def id(self):
-        """Gets the id of this OrderAlertIncidentContentIncidentType.
+        r"""Gets the id of this OrderAlertIncidentContentIncidentType.
 
         Id value
 
@@ -75,7 +75,7 @@ class OrderAlertIncidentContentIncidentType:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this OrderAlertIncidentContentIncidentType.
+        r"""Sets the id of this OrderAlertIncidentContentIncidentType.
 
         Id value
 
@@ -86,7 +86,7 @@ class OrderAlertIncidentContentIncidentType:
 
     @property
     def layout_id(self):
-        """Gets the layout_id of this OrderAlertIncidentContentIncidentType.
+        r"""Gets the layout_id of this OrderAlertIncidentContentIncidentType.
 
         Id value
 
@@ -97,7 +97,7 @@ class OrderAlertIncidentContentIncidentType:
 
     @layout_id.setter
     def layout_id(self, layout_id):
-        """Sets the layout_id of this OrderAlertIncidentContentIncidentType.
+        r"""Sets the layout_id of this OrderAlertIncidentContentIncidentType.
 
         Id value
 
@@ -108,7 +108,7 @@ class OrderAlertIncidentContentIncidentType:
 
     @property
     def incident_type(self):
-        """Gets the incident_type of this OrderAlertIncidentContentIncidentType.
+        r"""Gets the incident_type of this OrderAlertIncidentContentIncidentType.
 
         Id value
 
@@ -119,7 +119,7 @@ class OrderAlertIncidentContentIncidentType:
 
     @incident_type.setter
     def incident_type(self, incident_type):
-        """Sets the incident_type of this OrderAlertIncidentContentIncidentType.
+        r"""Sets the incident_type of this OrderAlertIncidentContentIncidentType.
 
         Id value
 
@@ -130,7 +130,7 @@ class OrderAlertIncidentContentIncidentType:
 
     @property
     def category(self):
-        """Gets the category of this OrderAlertIncidentContentIncidentType.
+        r"""Gets the category of this OrderAlertIncidentContentIncidentType.
 
         Id value
 
@@ -141,7 +141,7 @@ class OrderAlertIncidentContentIncidentType:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this OrderAlertIncidentContentIncidentType.
+        r"""Sets the category of this OrderAlertIncidentContentIncidentType.
 
         Id value
 

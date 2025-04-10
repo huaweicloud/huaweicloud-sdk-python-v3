@@ -25,7 +25,7 @@ class DeleteAliasRequest:
     }
 
     def __init__(self, body=None):
-        """DeleteAliasRequest
+        r"""DeleteAliasRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteAliasRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteAliasRequest.
+        r"""Gets the body of this DeleteAliasRequest.
 
         :return: The body of this DeleteAliasRequest.
         :rtype: :class:`huaweicloudsdkkms.v2.DeleteAliasRequestBody`
@@ -52,7 +52,7 @@ class DeleteAliasRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteAliasRequest.
+        r"""Sets the body of this DeleteAliasRequest.
 
         :param body: The body of this DeleteAliasRequest.
         :type body: :class:`huaweicloudsdkkms.v2.DeleteAliasRequestBody`

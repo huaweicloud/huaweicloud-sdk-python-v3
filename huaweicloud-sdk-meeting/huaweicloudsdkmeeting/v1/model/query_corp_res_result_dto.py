@@ -25,7 +25,7 @@ class QueryCorpResResultDTO:
     }
 
     def __init__(self, corp_vc_res=None):
-        """QueryCorpResResultDTO
+        r"""QueryCorpResResultDTO
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class QueryCorpResResultDTO:
 
     @property
     def corp_vc_res(self):
-        """Gets the corp_vc_res of this QueryCorpResResultDTO.
+        r"""Gets the corp_vc_res of this QueryCorpResResultDTO.
 
         :return: The corp_vc_res of this QueryCorpResResultDTO.
         :rtype: :class:`huaweicloudsdkmeeting.v1.QueryCorpVcResResultDTO`
@@ -52,7 +52,7 @@ class QueryCorpResResultDTO:
 
     @corp_vc_res.setter
     def corp_vc_res(self, corp_vc_res):
-        """Sets the corp_vc_res of this QueryCorpResResultDTO.
+        r"""Sets the corp_vc_res of this QueryCorpResResultDTO.
 
         :param corp_vc_res: The corp_vc_res of this QueryCorpResResultDTO.
         :type corp_vc_res: :class:`huaweicloudsdkmeeting.v1.QueryCorpVcResResultDTO`

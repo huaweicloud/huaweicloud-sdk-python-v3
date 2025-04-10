@@ -37,7 +37,7 @@ class ListUsersForEnterpriseProjectResUsers:
     }
 
     def __init__(self, domain_id=None, id=None, name=None, enabled=None, description=None, policy_num=None, lastest_policy_time=None):
-        """ListUsersForEnterpriseProjectResUsers
+        r"""ListUsersForEnterpriseProjectResUsers
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListUsersForEnterpriseProjectResUsers:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ListUsersForEnterpriseProjectResUsers.
+        r"""Gets the domain_id of this ListUsersForEnterpriseProjectResUsers.
 
         授权用户所属账号ID。
 
@@ -89,7 +89,7 @@ class ListUsersForEnterpriseProjectResUsers:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ListUsersForEnterpriseProjectResUsers.
+        r"""Sets the domain_id of this ListUsersForEnterpriseProjectResUsers.
 
         授权用户所属账号ID。
 
@@ -100,7 +100,7 @@ class ListUsersForEnterpriseProjectResUsers:
 
     @property
     def id(self):
-        """Gets the id of this ListUsersForEnterpriseProjectResUsers.
+        r"""Gets the id of this ListUsersForEnterpriseProjectResUsers.
 
         授权用户ID。
 
@@ -111,7 +111,7 @@ class ListUsersForEnterpriseProjectResUsers:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListUsersForEnterpriseProjectResUsers.
+        r"""Sets the id of this ListUsersForEnterpriseProjectResUsers.
 
         授权用户ID。
 
@@ -122,7 +122,7 @@ class ListUsersForEnterpriseProjectResUsers:
 
     @property
     def name(self):
-        """Gets the name of this ListUsersForEnterpriseProjectResUsers.
+        r"""Gets the name of this ListUsersForEnterpriseProjectResUsers.
 
         授权用户名。
 
@@ -133,7 +133,7 @@ class ListUsersForEnterpriseProjectResUsers:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListUsersForEnterpriseProjectResUsers.
+        r"""Sets the name of this ListUsersForEnterpriseProjectResUsers.
 
         授权用户名。
 
@@ -144,7 +144,7 @@ class ListUsersForEnterpriseProjectResUsers:
 
     @property
     def enabled(self):
-        """Gets the enabled of this ListUsersForEnterpriseProjectResUsers.
+        r"""Gets the enabled of this ListUsersForEnterpriseProjectResUsers.
 
         授权用户是否启用，true表示启用，false表示停用，默认为true。
 
@@ -155,7 +155,7 @@ class ListUsersForEnterpriseProjectResUsers:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this ListUsersForEnterpriseProjectResUsers.
+        r"""Sets the enabled of this ListUsersForEnterpriseProjectResUsers.
 
         授权用户是否启用，true表示启用，false表示停用，默认为true。
 
@@ -166,7 +166,7 @@ class ListUsersForEnterpriseProjectResUsers:
 
     @property
     def description(self):
-        """Gets the description of this ListUsersForEnterpriseProjectResUsers.
+        r"""Gets the description of this ListUsersForEnterpriseProjectResUsers.
 
         授权用户描述信息。
 
@@ -177,7 +177,7 @@ class ListUsersForEnterpriseProjectResUsers:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListUsersForEnterpriseProjectResUsers.
+        r"""Sets the description of this ListUsersForEnterpriseProjectResUsers.
 
         授权用户描述信息。
 
@@ -188,7 +188,7 @@ class ListUsersForEnterpriseProjectResUsers:
 
     @property
     def policy_num(self):
-        """Gets the policy_num of this ListUsersForEnterpriseProjectResUsers.
+        r"""Gets the policy_num of this ListUsersForEnterpriseProjectResUsers.
 
         授权用户的策略数。
 
@@ -199,7 +199,7 @@ class ListUsersForEnterpriseProjectResUsers:
 
     @policy_num.setter
     def policy_num(self, policy_num):
-        """Sets the policy_num of this ListUsersForEnterpriseProjectResUsers.
+        r"""Sets the policy_num of this ListUsersForEnterpriseProjectResUsers.
 
         授权用户的策略数。
 
@@ -210,7 +210,7 @@ class ListUsersForEnterpriseProjectResUsers:
 
     @property
     def lastest_policy_time(self):
-        """Gets the lastest_policy_time of this ListUsersForEnterpriseProjectResUsers.
+        r"""Gets the lastest_policy_time of this ListUsersForEnterpriseProjectResUsers.
 
         用户最近与企业项目关联策略的时间（毫秒）。
 
@@ -221,7 +221,7 @@ class ListUsersForEnterpriseProjectResUsers:
 
     @lastest_policy_time.setter
     def lastest_policy_time(self, lastest_policy_time):
-        """Sets the lastest_policy_time of this ListUsersForEnterpriseProjectResUsers.
+        r"""Sets the lastest_policy_time of this ListUsersForEnterpriseProjectResUsers.
 
         用户最近与企业项目关联策略的时间（毫秒）。
 

@@ -27,7 +27,7 @@ class ShowGetConfDetailRequest:
     }
 
     def __init__(self, cluster_id=None, name=None):
-        """ShowGetConfDetailRequest
+        r"""ShowGetConfDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowGetConfDetailRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowGetConfDetailRequest.
+        r"""Gets the cluster_id of this ShowGetConfDetailRequest.
 
         指定查询集群ID。
 
@@ -59,7 +59,7 @@ class ShowGetConfDetailRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowGetConfDetailRequest.
+        r"""Sets the cluster_id of this ShowGetConfDetailRequest.
 
         指定查询集群ID。
 
@@ -70,7 +70,7 @@ class ShowGetConfDetailRequest:
 
     @property
     def name(self):
-        """Gets the name of this ShowGetConfDetailRequest.
+        r"""Gets the name of this ShowGetConfDetailRequest.
 
         配置文件名称。
 
@@ -81,7 +81,7 @@ class ShowGetConfDetailRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowGetConfDetailRequest.
+        r"""Sets the name of this ShowGetConfDetailRequest.
 
         配置文件名称。
 

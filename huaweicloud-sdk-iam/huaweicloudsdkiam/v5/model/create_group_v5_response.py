@@ -26,7 +26,7 @@ class CreateGroupV5Response(SdkResponse):
     }
 
     def __init__(self, group=None):
-        """CreateGroupV5Response
+        r"""CreateGroupV5Response
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateGroupV5Response(SdkResponse):
 
     @property
     def group(self):
-        """Gets the group of this CreateGroupV5Response.
+        r"""Gets the group of this CreateGroupV5Response.
 
         :return: The group of this CreateGroupV5Response.
         :rtype: :class:`huaweicloudsdkiam.v5.Group`
@@ -53,7 +53,7 @@ class CreateGroupV5Response(SdkResponse):
 
     @group.setter
     def group(self, group):
-        """Sets the group of this CreateGroupV5Response.
+        r"""Sets the group of this CreateGroupV5Response.
 
         :param group: The group of this CreateGroupV5Response.
         :type group: :class:`huaweicloudsdkiam.v5.Group`

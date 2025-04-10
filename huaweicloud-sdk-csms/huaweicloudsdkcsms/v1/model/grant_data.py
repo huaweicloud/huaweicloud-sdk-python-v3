@@ -41,7 +41,7 @@ class GrantData:
     }
 
     def __init__(self, uuid=None, resource_id=None, type=None, grantee_user=None, create_time=None, update_time=None, validity_time=None, state=None, signature=None):
-        """GrantData
+        r"""GrantData
 
         The model defined in huaweicloud sdk
 
@@ -95,7 +95,7 @@ class GrantData:
 
     @property
     def uuid(self):
-        """Gets the uuid of this GrantData.
+        r"""Gets the uuid of this GrantData.
 
         授权id，授权给个人时存在
 
@@ -106,7 +106,7 @@ class GrantData:
 
     @uuid.setter
     def uuid(self, uuid):
-        """Sets the uuid of this GrantData.
+        r"""Sets the uuid of this GrantData.
 
         授权id，授权给个人时存在
 
@@ -117,7 +117,7 @@ class GrantData:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this GrantData.
+        r"""Gets the resource_id of this GrantData.
 
         资源id
 
@@ -128,7 +128,7 @@ class GrantData:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this GrantData.
+        r"""Sets the resource_id of this GrantData.
 
         资源id
 
@@ -139,7 +139,7 @@ class GrantData:
 
     @property
     def type(self):
-        """Gets the type of this GrantData.
+        r"""Gets the type of this GrantData.
 
         授权类型（SECRET，GROUP）
 
@@ -150,7 +150,7 @@ class GrantData:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this GrantData.
+        r"""Sets the type of this GrantData.
 
         授权类型（SECRET，GROUP）
 
@@ -161,7 +161,7 @@ class GrantData:
 
     @property
     def grantee_user(self):
-        """Gets the grantee_user of this GrantData.
+        r"""Gets the grantee_user of this GrantData.
 
         授权目标用户id
 
@@ -172,7 +172,7 @@ class GrantData:
 
     @grantee_user.setter
     def grantee_user(self, grantee_user):
-        """Sets the grantee_user of this GrantData.
+        r"""Sets the grantee_user of this GrantData.
 
         授权目标用户id
 
@@ -183,7 +183,7 @@ class GrantData:
 
     @property
     def create_time(self):
-        """Gets the create_time of this GrantData.
+        r"""Gets the create_time of this GrantData.
 
         创建时间
 
@@ -194,7 +194,7 @@ class GrantData:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this GrantData.
+        r"""Sets the create_time of this GrantData.
 
         创建时间
 
@@ -205,7 +205,7 @@ class GrantData:
 
     @property
     def update_time(self):
-        """Gets the update_time of this GrantData.
+        r"""Gets the update_time of this GrantData.
 
         更新时间
 
@@ -216,7 +216,7 @@ class GrantData:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this GrantData.
+        r"""Sets the update_time of this GrantData.
 
         更新时间
 
@@ -227,7 +227,7 @@ class GrantData:
 
     @property
     def validity_time(self):
-        """Gets the validity_time of this GrantData.
+        r"""Gets the validity_time of this GrantData.
 
         有效期
 
@@ -238,7 +238,7 @@ class GrantData:
 
     @validity_time.setter
     def validity_time(self, validity_time):
-        """Sets the validity_time of this GrantData.
+        r"""Sets the validity_time of this GrantData.
 
         有效期
 
@@ -249,7 +249,7 @@ class GrantData:
 
     @property
     def state(self):
-        """Gets the state of this GrantData.
+        r"""Gets the state of this GrantData.
 
         状态
 
@@ -260,7 +260,7 @@ class GrantData:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this GrantData.
+        r"""Sets the state of this GrantData.
 
         状态
 
@@ -271,7 +271,7 @@ class GrantData:
 
     @property
     def signature(self):
-        """Gets the signature of this GrantData.
+        r"""Gets the signature of this GrantData.
 
         签名
 
@@ -282,7 +282,7 @@ class GrantData:
 
     @signature.setter
     def signature(self, signature):
-        """Sets the signature of this GrantData.
+        r"""Sets the signature of this GrantData.
 
         签名
 

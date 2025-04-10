@@ -33,7 +33,7 @@ class ScheduledPolicy:
     }
 
     def __init__(self, launch_time=None, recurrence_type=None, recurrence_value=None, start_time=None, end_time=None):
-        """ScheduledPolicy
+        r"""ScheduledPolicy
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ScheduledPolicy:
 
     @property
     def launch_time(self):
-        """Gets the launch_time of this ScheduledPolicy.
+        r"""Gets the launch_time of this ScheduledPolicy.
 
         触发时间，遵循UTC时间。如果scaling_policy_type为SCHEDULED，则格式为：YYYY-MM-DDThh:mmZ。如果scaling_policy_type为RECURRENCE，则格式为：hh:mm。
 
@@ -81,7 +81,7 @@ class ScheduledPolicy:
 
     @launch_time.setter
     def launch_time(self, launch_time):
-        """Sets the launch_time of this ScheduledPolicy.
+        r"""Sets the launch_time of this ScheduledPolicy.
 
         触发时间，遵循UTC时间。如果scaling_policy_type为SCHEDULED，则格式为：YYYY-MM-DDThh:mmZ。如果scaling_policy_type为RECURRENCE，则格式为：hh:mm。
 
@@ -92,7 +92,7 @@ class ScheduledPolicy:
 
     @property
     def recurrence_type(self):
-        """Gets the recurrence_type of this ScheduledPolicy.
+        r"""Gets the recurrence_type of this ScheduledPolicy.
 
         周期触发类型，scaling_policy_type为RECURRENCE时该项必选。Daily：每天执行一次。Weekly：每周指定天执行一次。Monthly：每月指定天执行一次。
 
@@ -103,7 +103,7 @@ class ScheduledPolicy:
 
     @recurrence_type.setter
     def recurrence_type(self, recurrence_type):
-        """Sets the recurrence_type of this ScheduledPolicy.
+        r"""Sets the recurrence_type of this ScheduledPolicy.
 
         周期触发类型，scaling_policy_type为RECURRENCE时该项必选。Daily：每天执行一次。Weekly：每周指定天执行一次。Monthly：每月指定天执行一次。
 
@@ -114,7 +114,7 @@ class ScheduledPolicy:
 
     @property
     def recurrence_value(self):
-        """Gets the recurrence_value of this ScheduledPolicy.
+        r"""Gets the recurrence_value of this ScheduledPolicy.
 
         周期触发任务数值，scaling_policy_type为RECURRENCE时该项必选。类型为Daily时，该字段为null，表示每天执行类型为Weekly时，该字段取值范围为1-7，1表示星期日，以此类推，以”,”分割，例如：1,3,5。类型为Monthly时，该字段取值范围为1-31，分别表示每月的日期，以“,”分割，例如：1,10,13,28。说明：- 当recurrence_type类型为Daily时，recurrence_value参数不生效。
 
@@ -125,7 +125,7 @@ class ScheduledPolicy:
 
     @recurrence_value.setter
     def recurrence_value(self, recurrence_value):
-        """Sets the recurrence_value of this ScheduledPolicy.
+        r"""Sets the recurrence_value of this ScheduledPolicy.
 
         周期触发任务数值，scaling_policy_type为RECURRENCE时该项必选。类型为Daily时，该字段为null，表示每天执行类型为Weekly时，该字段取值范围为1-7，1表示星期日，以此类推，以”,”分割，例如：1,3,5。类型为Monthly时，该字段取值范围为1-31，分别表示每月的日期，以“,”分割，例如：1,10,13,28。说明：- 当recurrence_type类型为Daily时，recurrence_value参数不生效。
 
@@ -136,7 +136,7 @@ class ScheduledPolicy:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ScheduledPolicy.
+        r"""Gets the start_time of this ScheduledPolicy.
 
         周期策略重复执行开始时间，遵循UTC时间。默认为当前时间，格式为：YYYY-MM-DDThh：mZ
 
@@ -147,7 +147,7 @@ class ScheduledPolicy:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ScheduledPolicy.
+        r"""Sets the start_time of this ScheduledPolicy.
 
         周期策略重复执行开始时间，遵循UTC时间。默认为当前时间，格式为：YYYY-MM-DDThh：mZ
 
@@ -158,7 +158,7 @@ class ScheduledPolicy:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ScheduledPolicy.
+        r"""Gets the end_time of this ScheduledPolicy.
 
         周期策略重复执行结束时间，遵循UTC时间，scaling_policy_type为RECURRENCE时该项必选。当为周期类型策略时，不得早于当前时间和开始时间。格式为：YYYY-MM-DDThh：mmZ
 
@@ -169,7 +169,7 @@ class ScheduledPolicy:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ScheduledPolicy.
+        r"""Sets the end_time of this ScheduledPolicy.
 
         周期策略重复执行结束时间，遵循UTC时间，scaling_policy_type为RECURRENCE时该项必选。当为周期类型策略时，不得早于当前时间和开始时间。格式为：YYYY-MM-DDThh：mmZ
 

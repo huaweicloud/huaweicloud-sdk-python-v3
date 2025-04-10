@@ -27,7 +27,7 @@ class DomainTags:
     }
 
     def __init__(self, key=None, values=None):
-        """DomainTags
+        r"""DomainTags
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DomainTags:
 
     @property
     def key(self):
-        """Gets the key of this DomainTags.
+        r"""Gets the key of this DomainTags.
 
         标签键。 可用 UTF-8 格式表示的字母(包含中文、西班牙语、葡语等)、数字和空格，以及以下字符： _ . : = + - @
 
@@ -59,7 +59,7 @@ class DomainTags:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this DomainTags.
+        r"""Sets the key of this DomainTags.
 
         标签键。 可用 UTF-8 格式表示的字母(包含中文、西班牙语、葡语等)、数字和空格，以及以下字符： _ . : = + - @
 
@@ -70,7 +70,7 @@ class DomainTags:
 
     @property
     def values(self):
-        """Gets the values of this DomainTags.
+        r"""Gets the values of this DomainTags.
 
         标签值列表。 每个值可用 UTF-8 格式表示的字母(包含中文、西班牙语、葡语等)、数字和空格，以及以下字符： _ . : = + - @
 
@@ -81,7 +81,7 @@ class DomainTags:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this DomainTags.
+        r"""Sets the values of this DomainTags.
 
         标签值列表。 每个值可用 UTF-8 格式表示的字母(包含中文、西班牙语、葡语等)、数字和空格，以及以下字符： _ . : = + - @
 

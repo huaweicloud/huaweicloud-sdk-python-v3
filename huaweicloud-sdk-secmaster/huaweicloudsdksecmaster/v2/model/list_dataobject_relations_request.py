@@ -35,7 +35,7 @@ class ListDataobjectRelationsRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, dataclass_type=None, data_object_id=None, related_dataclass_type=None, body=None):
-        """ListDataobjectRelationsRequest
+        r"""ListDataobjectRelationsRequest
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class ListDataobjectRelationsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListDataobjectRelationsRequest.
+        r"""Gets the project_id of this ListDataobjectRelationsRequest.
 
         项目id
 
@@ -84,7 +84,7 @@ class ListDataobjectRelationsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListDataobjectRelationsRequest.
+        r"""Sets the project_id of this ListDataobjectRelationsRequest.
 
         项目id
 
@@ -95,7 +95,7 @@ class ListDataobjectRelationsRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ListDataobjectRelationsRequest.
+        r"""Gets the workspace_id of this ListDataobjectRelationsRequest.
 
         工作空间id
 
@@ -106,7 +106,7 @@ class ListDataobjectRelationsRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ListDataobjectRelationsRequest.
+        r"""Sets the workspace_id of this ListDataobjectRelationsRequest.
 
         工作空间id
 
@@ -117,7 +117,7 @@ class ListDataobjectRelationsRequest:
 
     @property
     def dataclass_type(self):
-        """Gets the dataclass_type of this ListDataobjectRelationsRequest.
+        r"""Gets the dataclass_type of this ListDataobjectRelationsRequest.
 
         关联主体dataobject所属数据类，小写复数，如告警为alerts，事件为incidents
 
@@ -128,7 +128,7 @@ class ListDataobjectRelationsRequest:
 
     @dataclass_type.setter
     def dataclass_type(self, dataclass_type):
-        """Sets the dataclass_type of this ListDataobjectRelationsRequest.
+        r"""Sets the dataclass_type of this ListDataobjectRelationsRequest.
 
         关联主体dataobject所属数据类，小写复数，如告警为alerts，事件为incidents
 
@@ -139,7 +139,7 @@ class ListDataobjectRelationsRequest:
 
     @property
     def data_object_id(self):
-        """Gets the data_object_id of this ListDataobjectRelationsRequest.
+        r"""Gets the data_object_id of this ListDataobjectRelationsRequest.
 
         关联主体dataobject的id
 
@@ -150,7 +150,7 @@ class ListDataobjectRelationsRequest:
 
     @data_object_id.setter
     def data_object_id(self, data_object_id):
-        """Sets the data_object_id of this ListDataobjectRelationsRequest.
+        r"""Sets the data_object_id of this ListDataobjectRelationsRequest.
 
         关联主体dataobject的id
 
@@ -161,7 +161,7 @@ class ListDataobjectRelationsRequest:
 
     @property
     def related_dataclass_type(self):
-        """Gets the related_dataclass_type of this ListDataobjectRelationsRequest.
+        r"""Gets the related_dataclass_type of this ListDataobjectRelationsRequest.
 
         被关联的dataobject所属数据类，小写复数，如告警为alerts，事件为incidents
 
@@ -172,7 +172,7 @@ class ListDataobjectRelationsRequest:
 
     @related_dataclass_type.setter
     def related_dataclass_type(self, related_dataclass_type):
-        """Sets the related_dataclass_type of this ListDataobjectRelationsRequest.
+        r"""Sets the related_dataclass_type of this ListDataobjectRelationsRequest.
 
         被关联的dataobject所属数据类，小写复数，如告警为alerts，事件为incidents
 
@@ -183,7 +183,7 @@ class ListDataobjectRelationsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListDataobjectRelationsRequest.
+        r"""Gets the body of this ListDataobjectRelationsRequest.
 
         :return: The body of this ListDataobjectRelationsRequest.
         :rtype: :class:`huaweicloudsdksecmaster.v2.DataobjectSearch`
@@ -192,7 +192,7 @@ class ListDataobjectRelationsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListDataobjectRelationsRequest.
+        r"""Sets the body of this ListDataobjectRelationsRequest.
 
         :param body: The body of this ListDataobjectRelationsRequest.
         :type body: :class:`huaweicloudsdksecmaster.v2.DataobjectSearch`

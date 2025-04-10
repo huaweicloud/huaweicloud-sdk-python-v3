@@ -27,7 +27,7 @@ class AddImageTagRequest:
     }
 
     def __init__(self, image_id=None, body=None):
-        """AddImageTagRequest
+        r"""AddImageTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AddImageTagRequest:
 
     @property
     def image_id(self):
-        """Gets the image_id of this AddImageTagRequest.
+        r"""Gets the image_id of this AddImageTagRequest.
 
         镜像ID。
 
@@ -60,7 +60,7 @@ class AddImageTagRequest:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this AddImageTagRequest.
+        r"""Sets the image_id of this AddImageTagRequest.
 
         镜像ID。
 
@@ -71,7 +71,7 @@ class AddImageTagRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddImageTagRequest.
+        r"""Gets the body of this AddImageTagRequest.
 
         :return: The body of this AddImageTagRequest.
         :rtype: :class:`huaweicloudsdkims.v2.AddImageTagRequestBody`
@@ -80,7 +80,7 @@ class AddImageTagRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddImageTagRequest.
+        r"""Sets the body of this AddImageTagRequest.
 
         :param body: The body of this AddImageTagRequest.
         :type body: :class:`huaweicloudsdkims.v2.AddImageTagRequestBody`

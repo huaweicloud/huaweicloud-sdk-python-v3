@@ -27,7 +27,7 @@ class ProgramItemRequestBase:
     }
 
     def __init__(self, material_id=None, play_time=None):
-        """ProgramItemRequestBase
+        r"""ProgramItemRequestBase
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ProgramItemRequestBase:
 
     @property
     def material_id(self):
-        """Gets the material_id of this ProgramItemRequestBase.
+        r"""Gets the material_id of this ProgramItemRequestBase.
 
         素材ID。
 
@@ -59,7 +59,7 @@ class ProgramItemRequestBase:
 
     @material_id.setter
     def material_id(self, material_id):
-        """Sets the material_id of this ProgramItemRequestBase.
+        r"""Sets the material_id of this ProgramItemRequestBase.
 
         素材ID。
 
@@ -70,7 +70,7 @@ class ProgramItemRequestBase:
 
     @property
     def play_time(self):
-        """Gets the play_time of this ProgramItemRequestBase.
+        r"""Gets the play_time of this ProgramItemRequestBase.
 
         播放时长。
 
@@ -81,7 +81,7 @@ class ProgramItemRequestBase:
 
     @play_time.setter
     def play_time(self, play_time):
-        """Sets the play_time of this ProgramItemRequestBase.
+        r"""Sets the play_time of this ProgramItemRequestBase.
 
         播放时长。
 

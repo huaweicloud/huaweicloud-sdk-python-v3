@@ -26,7 +26,7 @@ class BatchRestartOnlineMigrationTasksResponse(SdkResponse):
     }
 
     def __init__(self, migration_tasks=None):
-        """BatchRestartOnlineMigrationTasksResponse
+        r"""BatchRestartOnlineMigrationTasksResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchRestartOnlineMigrationTasksResponse(SdkResponse):
 
     @property
     def migration_tasks(self):
-        """Gets the migration_tasks of this BatchRestartOnlineMigrationTasksResponse.
+        r"""Gets the migration_tasks of this BatchRestartOnlineMigrationTasksResponse.
 
         数据迁移任务列表。
 
@@ -55,7 +55,7 @@ class BatchRestartOnlineMigrationTasksResponse(SdkResponse):
 
     @migration_tasks.setter
     def migration_tasks(self, migration_tasks):
-        """Sets the migration_tasks of this BatchRestartOnlineMigrationTasksResponse.
+        r"""Sets the migration_tasks of this BatchRestartOnlineMigrationTasksResponse.
 
         数据迁移任务列表。
 

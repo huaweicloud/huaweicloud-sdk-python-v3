@@ -35,7 +35,7 @@ class Components:
     }
 
     def __init__(self, id=None, role=None, status=None, distributed_id=None, type=None, detail=None):
-        """Components
+        r"""Components
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class Components:
 
     @property
     def id(self):
-        """Gets the id of this Components.
+        r"""Gets the id of this Components.
 
         组件id，当组件类型为DN，组件id为6001，则对应的值为dn_6001。
 
@@ -89,7 +89,7 @@ class Components:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Components.
+        r"""Sets the id of this Components.
 
         组件id，当组件类型为DN，组件id为6001，则对应的值为dn_6001。
 
@@ -100,7 +100,7 @@ class Components:
 
     @property
     def role(self):
-        """Gets the role of this Components.
+        r"""Gets the role of this Components.
 
         节点类型，取值为“master”、“slave”，分别对应于主节点、备节点。
 
@@ -111,7 +111,7 @@ class Components:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this Components.
+        r"""Sets the role of this Components.
 
         节点类型，取值为“master”、“slave”，分别对应于主节点、备节点。
 
@@ -122,7 +122,7 @@ class Components:
 
     @property
     def status(self):
-        """Gets the status of this Components.
+        r"""Gets the status of this Components.
 
         组件状态。 Primary：该组件为主。 Normal：该组件状态正常。 Down：该组件处于宕机状态。 Standby：该组件为备。 StateFollower：该ETCD为备。 StateLeader：该ETCD为主。 StateCandidate：该ETCD为仲裁。
 
@@ -133,7 +133,7 @@ class Components:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Components.
+        r"""Sets the status of this Components.
 
         组件状态。 Primary：该组件为主。 Normal：该组件状态正常。 Down：该组件处于宕机状态。 Standby：该组件为备。 StateFollower：该ETCD为备。 StateLeader：该ETCD为主。 StateCandidate：该ETCD为仲裁。
 
@@ -144,7 +144,7 @@ class Components:
 
     @property
     def distributed_id(self):
-        """Gets the distributed_id of this Components.
+        r"""Gets the distributed_id of this Components.
 
         分组id，只有dn组件有分组id，用于区分是否是同一个分片下的组件。其他组件为空字符串。
 
@@ -155,7 +155,7 @@ class Components:
 
     @distributed_id.setter
     def distributed_id(self, distributed_id):
-        """Sets the distributed_id of this Components.
+        r"""Sets the distributed_id of this Components.
 
         分组id，只有dn组件有分组id，用于区分是否是同一个分片下的组件。其他组件为空字符串。
 
@@ -166,7 +166,7 @@ class Components:
 
     @property
     def type(self):
-        """Gets the type of this Components.
+        r"""Gets the type of this Components.
 
         节点类型，包括：DN, CN, GTM, CM, ETCD。
 
@@ -177,7 +177,7 @@ class Components:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Components.
+        r"""Sets the type of this Components.
 
         节点类型，包括：DN, CN, GTM, CM, ETCD。
 
@@ -188,7 +188,7 @@ class Components:
 
     @property
     def detail(self):
-        """Gets the detail of this Components.
+        r"""Gets the detail of this Components.
 
         详情。
 
@@ -199,7 +199,7 @@ class Components:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this Components.
+        r"""Sets the detail of this Components.
 
         详情。
 

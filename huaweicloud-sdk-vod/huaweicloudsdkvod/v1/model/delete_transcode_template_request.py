@@ -25,7 +25,7 @@ class DeleteTranscodeTemplateRequest:
     }
 
     def __init__(self, group_id=None):
-        """DeleteTranscodeTemplateRequest
+        r"""DeleteTranscodeTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteTranscodeTemplateRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this DeleteTranscodeTemplateRequest.
+        r"""Gets the group_id of this DeleteTranscodeTemplateRequest.
 
         模板id 
 
@@ -53,7 +53,7 @@ class DeleteTranscodeTemplateRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this DeleteTranscodeTemplateRequest.
+        r"""Sets the group_id of this DeleteTranscodeTemplateRequest.
 
         模板id 
 

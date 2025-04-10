@@ -26,7 +26,7 @@ class DeleteHotWordsResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """DeleteHotWordsResponse
+        r"""DeleteHotWordsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteHotWordsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DeleteHotWordsResponse.
+        r"""Gets the x_request_id of this DeleteHotWordsResponse.
 
         :return: The x_request_id of this DeleteHotWordsResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteHotWordsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DeleteHotWordsResponse.
+        r"""Sets the x_request_id of this DeleteHotWordsResponse.
 
         :param x_request_id: The x_request_id of this DeleteHotWordsResponse.
         :type x_request_id: str

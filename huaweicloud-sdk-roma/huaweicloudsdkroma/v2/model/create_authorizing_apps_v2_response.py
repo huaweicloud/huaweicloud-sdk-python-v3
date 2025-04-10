@@ -26,7 +26,7 @@ class CreateAuthorizingAppsV2Response(SdkResponse):
     }
 
     def __init__(self, auths=None):
-        """CreateAuthorizingAppsV2Response
+        r"""CreateAuthorizingAppsV2Response
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateAuthorizingAppsV2Response(SdkResponse):
 
     @property
     def auths(self):
-        """Gets the auths of this CreateAuthorizingAppsV2Response.
+        r"""Gets the auths of this CreateAuthorizingAppsV2Response.
 
         API与APP的授权关系列表
 
@@ -55,7 +55,7 @@ class CreateAuthorizingAppsV2Response(SdkResponse):
 
     @auths.setter
     def auths(self, auths):
-        """Sets the auths of this CreateAuthorizingAppsV2Response.
+        r"""Sets the auths of this CreateAuthorizingAppsV2Response.
 
         API与APP的授权关系列表
 

@@ -27,7 +27,7 @@ class AddIpGroupIpRequest:
     }
 
     def __init__(self, ip_group_id=None, body=None):
-        """AddIpGroupIpRequest
+        r"""AddIpGroupIpRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AddIpGroupIpRequest:
 
     @property
     def ip_group_id(self):
-        """Gets the ip_group_id of this AddIpGroupIpRequest.
+        r"""Gets the ip_group_id of this AddIpGroupIpRequest.
 
         IP地址组ID。
 
@@ -60,7 +60,7 @@ class AddIpGroupIpRequest:
 
     @ip_group_id.setter
     def ip_group_id(self, ip_group_id):
-        """Sets the ip_group_id of this AddIpGroupIpRequest.
+        r"""Sets the ip_group_id of this AddIpGroupIpRequest.
 
         IP地址组ID。
 
@@ -71,7 +71,7 @@ class AddIpGroupIpRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddIpGroupIpRequest.
+        r"""Gets the body of this AddIpGroupIpRequest.
 
         :return: The body of this AddIpGroupIpRequest.
         :rtype: :class:`huaweicloudsdkga.v1.AddIpGroupIpRequestBody`
@@ -80,7 +80,7 @@ class AddIpGroupIpRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddIpGroupIpRequest.
+        r"""Sets the body of this AddIpGroupIpRequest.
 
         :param body: The body of this AddIpGroupIpRequest.
         :type body: :class:`huaweicloudsdkga.v1.AddIpGroupIpRequestBody`

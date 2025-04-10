@@ -26,7 +26,7 @@ class UpdateGaussMySqlInstanceInternalIpResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """UpdateGaussMySqlInstanceInternalIpResponse
+        r"""UpdateGaussMySqlInstanceInternalIpResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateGaussMySqlInstanceInternalIpResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateGaussMySqlInstanceInternalIpResponse.
+        r"""Gets the job_id of this UpdateGaussMySqlInstanceInternalIpResponse.
 
         任务ID。
 
@@ -55,7 +55,7 @@ class UpdateGaussMySqlInstanceInternalIpResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateGaussMySqlInstanceInternalIpResponse.
+        r"""Sets the job_id of this UpdateGaussMySqlInstanceInternalIpResponse.
 
         任务ID。
 

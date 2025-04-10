@@ -29,7 +29,7 @@ class ObsFileAddr:
     }
 
     def __init__(self, bucket=None, location=None, object=None):
-        """ObsFileAddr
+        r"""ObsFileAddr
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ObsFileAddr:
 
     @property
     def bucket(self):
-        """Gets the bucket of this ObsFileAddr.
+        r"""Gets the bucket of this ObsFileAddr.
 
         OBS的bucket名称
 
@@ -65,7 +65,7 @@ class ObsFileAddr:
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this ObsFileAddr.
+        r"""Sets the bucket of this ObsFileAddr.
 
         OBS的bucket名称
 
@@ -76,7 +76,7 @@ class ObsFileAddr:
 
     @property
     def location(self):
-        """Gets the location of this ObsFileAddr.
+        r"""Gets the location of this ObsFileAddr.
 
         OBS Bucket所在的区域，且必须保持与使用的直播服务区域保持一致。
 
@@ -87,7 +87,7 @@ class ObsFileAddr:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this ObsFileAddr.
+        r"""Sets the location of this ObsFileAddr.
 
         OBS Bucket所在的区域，且必须保持与使用的直播服务区域保持一致。
 
@@ -98,7 +98,7 @@ class ObsFileAddr:
 
     @property
     def object(self):
-        """Gets the object of this ObsFileAddr.
+        r"""Gets the object of this ObsFileAddr.
 
         OBS对象路径，遵守OSS Object定义 - 当用于指示input时，需要指定到具体对象 - 当用于指示output时，只需指定到转码结果期望存放的路径
 
@@ -109,7 +109,7 @@ class ObsFileAddr:
 
     @object.setter
     def object(self, object):
-        """Sets the object of this ObsFileAddr.
+        r"""Sets the object of this ObsFileAddr.
 
         OBS对象路径，遵守OSS Object定义 - 当用于指示input时，需要指定到具体对象 - 当用于指示output时，只需指定到转码结果期望存放的路径
 

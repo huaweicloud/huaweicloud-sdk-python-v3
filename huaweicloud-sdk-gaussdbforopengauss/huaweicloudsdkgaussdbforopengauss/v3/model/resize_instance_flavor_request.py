@@ -29,7 +29,7 @@ class ResizeInstanceFlavorRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """ResizeInstanceFlavorRequest
+        r"""ResizeInstanceFlavorRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ResizeInstanceFlavorRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ResizeInstanceFlavorRequest.
+        r"""Gets the x_language of this ResizeInstanceFlavorRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class ResizeInstanceFlavorRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ResizeInstanceFlavorRequest.
+        r"""Sets the x_language of this ResizeInstanceFlavorRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class ResizeInstanceFlavorRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ResizeInstanceFlavorRequest.
+        r"""Gets the instance_id of this ResizeInstanceFlavorRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class ResizeInstanceFlavorRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ResizeInstanceFlavorRequest.
+        r"""Sets the instance_id of this ResizeInstanceFlavorRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class ResizeInstanceFlavorRequest:
 
     @property
     def body(self):
-        """Gets the body of this ResizeInstanceFlavorRequest.
+        r"""Gets the body of this ResizeInstanceFlavorRequest.
 
         :return: The body of this ResizeInstanceFlavorRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussResizeRequest`
@@ -109,7 +109,7 @@ class ResizeInstanceFlavorRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ResizeInstanceFlavorRequest.
+        r"""Sets the body of this ResizeInstanceFlavorRequest.
 
         :param body: The body of this ResizeInstanceFlavorRequest.
         :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussResizeRequest`

@@ -26,7 +26,7 @@ class ShowBizCatalogDetailResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ShowBizCatalogDetailResponse
+        r"""ShowBizCatalogDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowBizCatalogDetailResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowBizCatalogDetailResponse.
+        r"""Gets the data of this ShowBizCatalogDetailResponse.
 
         :return: The data of this ShowBizCatalogDetailResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateCatalogResultData`
@@ -53,7 +53,7 @@ class ShowBizCatalogDetailResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowBizCatalogDetailResponse.
+        r"""Sets the data of this ShowBizCatalogDetailResponse.
 
         :param data: The data of this ShowBizCatalogDetailResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.CreateCatalogResultData`

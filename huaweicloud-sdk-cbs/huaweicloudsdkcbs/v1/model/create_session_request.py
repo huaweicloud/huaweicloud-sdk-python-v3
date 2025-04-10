@@ -25,7 +25,7 @@ class CreateSessionRequest:
     }
 
     def __init__(self, qabot_id=None):
-        """CreateSessionRequest
+        r"""CreateSessionRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateSessionRequest:
 
     @property
     def qabot_id(self):
-        """Gets the qabot_id of this CreateSessionRequest.
+        r"""Gets the qabot_id of this CreateSessionRequest.
 
         机器人标识符。
 
@@ -53,7 +53,7 @@ class CreateSessionRequest:
 
     @qabot_id.setter
     def qabot_id(self, qabot_id):
-        """Sets the qabot_id of this CreateSessionRequest.
+        r"""Sets the qabot_id of this CreateSessionRequest.
 
         机器人标识符。
 

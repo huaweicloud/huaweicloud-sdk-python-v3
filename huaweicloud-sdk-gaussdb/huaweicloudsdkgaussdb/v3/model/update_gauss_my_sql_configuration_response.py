@@ -26,7 +26,7 @@ class UpdateGaussMySqlConfigurationResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """UpdateGaussMySqlConfigurationResponse
+        r"""UpdateGaussMySqlConfigurationResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateGaussMySqlConfigurationResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateGaussMySqlConfigurationResponse.
+        r"""Gets the job_id of this UpdateGaussMySqlConfigurationResponse.
 
         修改参数模板的任务ID。
 
@@ -55,7 +55,7 @@ class UpdateGaussMySqlConfigurationResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateGaussMySqlConfigurationResponse.
+        r"""Sets the job_id of this UpdateGaussMySqlConfigurationResponse.
 
         修改参数模板的任务ID。
 

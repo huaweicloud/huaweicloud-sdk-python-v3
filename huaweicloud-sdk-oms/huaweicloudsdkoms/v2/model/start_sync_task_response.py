@@ -24,7 +24,7 @@ class StartSyncTaskResponse(SdkResponse):
     }
 
     def __init__(self):
-        """StartSyncTaskResponse
+        r"""StartSyncTaskResponse
 
         The model defined in huaweicloud sdk
 

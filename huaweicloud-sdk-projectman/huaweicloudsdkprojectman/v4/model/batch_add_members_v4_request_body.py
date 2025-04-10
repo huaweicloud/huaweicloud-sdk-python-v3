@@ -25,7 +25,7 @@ class BatchAddMembersV4RequestBody:
     }
 
     def __init__(self, users=None):
-        """BatchAddMembersV4RequestBody
+        r"""BatchAddMembersV4RequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchAddMembersV4RequestBody:
 
     @property
     def users(self):
-        """Gets the users of this BatchAddMembersV4RequestBody.
+        r"""Gets the users of this BatchAddMembersV4RequestBody.
 
         添加的用户信息
 
@@ -53,7 +53,7 @@ class BatchAddMembersV4RequestBody:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this BatchAddMembersV4RequestBody.
+        r"""Sets the users of this BatchAddMembersV4RequestBody.
 
         添加的用户信息
 

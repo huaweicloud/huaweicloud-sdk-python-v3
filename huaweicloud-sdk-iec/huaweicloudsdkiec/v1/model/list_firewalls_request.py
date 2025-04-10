@@ -31,7 +31,7 @@ class ListFirewallsRequest:
     }
 
     def __init__(self, limit=None, offset=None, id=None, name=None):
-        """ListFirewallsRequest
+        r"""ListFirewallsRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListFirewallsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListFirewallsRequest.
+        r"""Gets the limit of this ListFirewallsRequest.
 
         每页返回的个数  取值范围：0~1000
 
@@ -75,7 +75,7 @@ class ListFirewallsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListFirewallsRequest.
+        r"""Sets the limit of this ListFirewallsRequest.
 
         每页返回的个数  取值范围：0~1000
 
@@ -86,7 +86,7 @@ class ListFirewallsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListFirewallsRequest.
+        r"""Gets the offset of this ListFirewallsRequest.
 
         查询的偏移量。
 
@@ -97,7 +97,7 @@ class ListFirewallsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListFirewallsRequest.
+        r"""Sets the offset of this ListFirewallsRequest.
 
         查询的偏移量。
 
@@ -108,7 +108,7 @@ class ListFirewallsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListFirewallsRequest.
+        r"""Gets the id of this ListFirewallsRequest.
 
         通过ID过滤网络ACL。
 
@@ -119,7 +119,7 @@ class ListFirewallsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListFirewallsRequest.
+        r"""Sets the id of this ListFirewallsRequest.
 
         通过ID过滤网络ACL。
 
@@ -130,7 +130,7 @@ class ListFirewallsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListFirewallsRequest.
+        r"""Gets the name of this ListFirewallsRequest.
 
         通过name模糊匹配网络ACL。
 
@@ -141,7 +141,7 @@ class ListFirewallsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListFirewallsRequest.
+        r"""Sets the name of this ListFirewallsRequest.
 
         通过name模糊匹配网络ACL。
 

@@ -27,7 +27,7 @@ class UpdatePartitionCountRequest:
     }
 
     def __init__(self, stream_name=None, body=None):
-        """UpdatePartitionCountRequest
+        r"""UpdatePartitionCountRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdatePartitionCountRequest:
 
     @property
     def stream_name(self):
-        """Gets the stream_name of this UpdatePartitionCountRequest.
+        r"""Gets the stream_name of this UpdatePartitionCountRequest.
 
         需要变更分区数量的通道名称。
 
@@ -60,7 +60,7 @@ class UpdatePartitionCountRequest:
 
     @stream_name.setter
     def stream_name(self, stream_name):
-        """Sets the stream_name of this UpdatePartitionCountRequest.
+        r"""Sets the stream_name of this UpdatePartitionCountRequest.
 
         需要变更分区数量的通道名称。
 
@@ -71,7 +71,7 @@ class UpdatePartitionCountRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePartitionCountRequest.
+        r"""Gets the body of this UpdatePartitionCountRequest.
 
         :return: The body of this UpdatePartitionCountRequest.
         :rtype: :class:`huaweicloudsdkdis.v2.UpdatePartitionCountReq`
@@ -80,7 +80,7 @@ class UpdatePartitionCountRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePartitionCountRequest.
+        r"""Sets the body of this UpdatePartitionCountRequest.
 
         :param body: The body of this UpdatePartitionCountRequest.
         :type body: :class:`huaweicloudsdkdis.v2.UpdatePartitionCountReq`

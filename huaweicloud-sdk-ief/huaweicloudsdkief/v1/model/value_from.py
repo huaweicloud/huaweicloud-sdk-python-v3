@@ -27,7 +27,7 @@ class ValueFrom:
     }
 
     def __init__(self, secret=None, configmap=None):
-        """ValueFrom
+        r"""ValueFrom
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ValueFrom:
 
     @property
     def secret(self):
-        """Gets the secret of this ValueFrom.
+        r"""Gets the secret of this ValueFrom.
 
         :return: The secret of this ValueFrom.
         :rtype: :class:`huaweicloudsdkief.v1.Secrets`
@@ -59,7 +59,7 @@ class ValueFrom:
 
     @secret.setter
     def secret(self, secret):
-        """Sets the secret of this ValueFrom.
+        r"""Sets the secret of this ValueFrom.
 
         :param secret: The secret of this ValueFrom.
         :type secret: :class:`huaweicloudsdkief.v1.Secrets`
@@ -68,7 +68,7 @@ class ValueFrom:
 
     @property
     def configmap(self):
-        """Gets the configmap of this ValueFrom.
+        r"""Gets the configmap of this ValueFrom.
 
         :return: The configmap of this ValueFrom.
         :rtype: :class:`huaweicloudsdkief.v1.ConfigsMap`
@@ -77,7 +77,7 @@ class ValueFrom:
 
     @configmap.setter
     def configmap(self, configmap):
-        """Sets the configmap of this ValueFrom.
+        r"""Sets the configmap of this ValueFrom.
 
         :param configmap: The configmap of this ValueFrom.
         :type configmap: :class:`huaweicloudsdkief.v1.ConfigsMap`

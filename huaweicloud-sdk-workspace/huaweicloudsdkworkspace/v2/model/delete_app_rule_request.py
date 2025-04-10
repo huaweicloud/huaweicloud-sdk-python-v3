@@ -25,7 +25,7 @@ class DeleteAppRuleRequest:
     }
 
     def __init__(self, rule_id=None):
-        """DeleteAppRuleRequest
+        r"""DeleteAppRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteAppRuleRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this DeleteAppRuleRequest.
+        r"""Gets the rule_id of this DeleteAppRuleRequest.
 
         规则ID。
 
@@ -53,7 +53,7 @@ class DeleteAppRuleRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this DeleteAppRuleRequest.
+        r"""Sets the rule_id of this DeleteAppRuleRequest.
 
         规则ID。
 

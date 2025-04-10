@@ -28,7 +28,7 @@ class CreateBareMetalServersResponse(SdkResponse):
     }
 
     def __init__(self, order_id=None, job_id=None):
-        """CreateBareMetalServersResponse
+        r"""CreateBareMetalServersResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateBareMetalServersResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this CreateBareMetalServersResponse.
+        r"""Gets the order_id of this CreateBareMetalServersResponse.
 
         订单ID
 
@@ -62,7 +62,7 @@ class CreateBareMetalServersResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this CreateBareMetalServersResponse.
+        r"""Sets the order_id of this CreateBareMetalServersResponse.
 
         订单ID
 
@@ -73,7 +73,7 @@ class CreateBareMetalServersResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateBareMetalServersResponse.
+        r"""Gets the job_id of this CreateBareMetalServersResponse.
 
         任务ID
 
@@ -84,7 +84,7 @@ class CreateBareMetalServersResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateBareMetalServersResponse.
+        r"""Sets the job_id of this CreateBareMetalServersResponse.
 
         任务ID
 

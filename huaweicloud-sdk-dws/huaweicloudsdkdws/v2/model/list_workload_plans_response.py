@@ -32,7 +32,7 @@ class ListWorkloadPlansResponse(SdkResponse):
     }
 
     def __init__(self, workload_res_code=None, workload_res_str=None, plan_list=None, count=None):
-        """ListWorkloadPlansResponse
+        r"""ListWorkloadPlansResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListWorkloadPlansResponse(SdkResponse):
 
     @property
     def workload_res_code(self):
-        """Gets the workload_res_code of this ListWorkloadPlansResponse.
+        r"""Gets the workload_res_code of this ListWorkloadPlansResponse.
 
         结果状态码。
 
@@ -76,7 +76,7 @@ class ListWorkloadPlansResponse(SdkResponse):
 
     @workload_res_code.setter
     def workload_res_code(self, workload_res_code):
-        """Sets the workload_res_code of this ListWorkloadPlansResponse.
+        r"""Sets the workload_res_code of this ListWorkloadPlansResponse.
 
         结果状态码。
 
@@ -87,7 +87,7 @@ class ListWorkloadPlansResponse(SdkResponse):
 
     @property
     def workload_res_str(self):
-        """Gets the workload_res_str of this ListWorkloadPlansResponse.
+        r"""Gets the workload_res_str of this ListWorkloadPlansResponse.
 
         结果描述。
 
@@ -98,7 +98,7 @@ class ListWorkloadPlansResponse(SdkResponse):
 
     @workload_res_str.setter
     def workload_res_str(self, workload_res_str):
-        """Sets the workload_res_str of this ListWorkloadPlansResponse.
+        r"""Sets the workload_res_str of this ListWorkloadPlansResponse.
 
         结果描述。
 
@@ -109,7 +109,7 @@ class ListWorkloadPlansResponse(SdkResponse):
 
     @property
     def plan_list(self):
-        """Gets the plan_list of this ListWorkloadPlansResponse.
+        r"""Gets the plan_list of this ListWorkloadPlansResponse.
 
         资源池名称。
 
@@ -120,7 +120,7 @@ class ListWorkloadPlansResponse(SdkResponse):
 
     @plan_list.setter
     def plan_list(self, plan_list):
-        """Sets the plan_list of this ListWorkloadPlansResponse.
+        r"""Sets the plan_list of this ListWorkloadPlansResponse.
 
         资源池名称。
 
@@ -131,7 +131,7 @@ class ListWorkloadPlansResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListWorkloadPlansResponse.
+        r"""Gets the count of this ListWorkloadPlansResponse.
 
         总数量
 
@@ -142,7 +142,7 @@ class ListWorkloadPlansResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListWorkloadPlansResponse.
+        r"""Sets the count of this ListWorkloadPlansResponse.
 
         总数量
 

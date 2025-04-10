@@ -24,7 +24,7 @@ class BatchDisableMembersResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchDisableMembersResponse
+        r"""BatchDisableMembersResponse
 
         The model defined in huaweicloud sdk
 

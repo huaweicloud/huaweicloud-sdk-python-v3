@@ -25,7 +25,7 @@ class OperationIdPrimitiveTypeHolder:
     }
 
     def __init__(self, operation_id=None):
-        """OperationIdPrimitiveTypeHolder
+        r"""OperationIdPrimitiveTypeHolder
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class OperationIdPrimitiveTypeHolder:
 
     @property
     def operation_id(self):
-        """Gets the operation_id of this OperationIdPrimitiveTypeHolder.
+        r"""Gets the operation_id of this OperationIdPrimitiveTypeHolder.
 
         资源栈集操作Id。  此ID由资源编排服务在生成资源栈集操作的时候生成，为UUID。
 
@@ -54,7 +54,7 @@ class OperationIdPrimitiveTypeHolder:
 
     @operation_id.setter
     def operation_id(self, operation_id):
-        """Sets the operation_id of this OperationIdPrimitiveTypeHolder.
+        r"""Sets the operation_id of this OperationIdPrimitiveTypeHolder.
 
         资源栈集操作Id。  此ID由资源编排服务在生成资源栈集操作的时候生成，为UUID。
 

@@ -29,7 +29,7 @@ class AudioResponseOutputHosting:
     }
 
     def __init__(self, obs=None, result_json_overdue_at=None, check_obs_after_end_state=None):
-        """AudioResponseOutputHosting
+        r"""AudioResponseOutputHosting
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AudioResponseOutputHosting:
 
     @property
     def obs(self):
-        """Gets the obs of this AudioResponseOutputHosting.
+        r"""Gets the obs of this AudioResponseOutputHosting.
 
         结果文件result.json的OBS信息。
 
@@ -68,7 +68,7 @@ class AudioResponseOutputHosting:
 
     @obs.setter
     def obs(self, obs):
-        """Sets the obs of this AudioResponseOutputHosting.
+        r"""Sets the obs of this AudioResponseOutputHosting.
 
         结果文件result.json的OBS信息。
 
@@ -79,7 +79,7 @@ class AudioResponseOutputHosting:
 
     @property
     def result_json_overdue_at(self):
-        """Gets the result_json_overdue_at of this AudioResponseOutputHosting.
+        r"""Gets the result_json_overdue_at of this AudioResponseOutputHosting.
 
         托管文件result.json的过期日期，文件默认保存48小时。  result.json文件生成且未过期时，会有这个字段。 
 
@@ -90,7 +90,7 @@ class AudioResponseOutputHosting:
 
     @result_json_overdue_at.setter
     def result_json_overdue_at(self, result_json_overdue_at):
-        """Sets the result_json_overdue_at of this AudioResponseOutputHosting.
+        r"""Sets the result_json_overdue_at of this AudioResponseOutputHosting.
 
         托管文件result.json的过期日期，文件默认保存48小时。  result.json文件生成且未过期时，会有这个字段。 
 
@@ -101,7 +101,7 @@ class AudioResponseOutputHosting:
 
     @property
     def check_obs_after_end_state(self):
-        """Gets the check_obs_after_end_state of this AudioResponseOutputHosting.
+        r"""Gets the check_obs_after_end_state of this AudioResponseOutputHosting.
 
         True表示校验obs。
 
@@ -112,7 +112,7 @@ class AudioResponseOutputHosting:
 
     @check_obs_after_end_state.setter
     def check_obs_after_end_state(self, check_obs_after_end_state):
-        """Sets the check_obs_after_end_state of this AudioResponseOutputHosting.
+        r"""Sets the check_obs_after_end_state of this AudioResponseOutputHosting.
 
         True表示校验obs。
 

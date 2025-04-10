@@ -40,7 +40,7 @@ class ShowDedicatedResourceInfoResponse(SdkResponse):
     }
 
     def __init__(self, id=None, resource_name=None, engine_name=None, availability_zone_ids=None, architecture=None, status=None, dedicated_compute_info=None, dedicated_storage_info=None):
-        """ShowDedicatedResourceInfoResponse
+        r"""ShowDedicatedResourceInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ShowDedicatedResourceInfoResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowDedicatedResourceInfoResponse.
+        r"""Gets the id of this ShowDedicatedResourceInfoResponse.
 
         专属资源池ID。
 
@@ -104,7 +104,7 @@ class ShowDedicatedResourceInfoResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowDedicatedResourceInfoResponse.
+        r"""Sets the id of this ShowDedicatedResourceInfoResponse.
 
         专属资源池ID。
 
@@ -115,7 +115,7 @@ class ShowDedicatedResourceInfoResponse(SdkResponse):
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this ShowDedicatedResourceInfoResponse.
+        r"""Gets the resource_name of this ShowDedicatedResourceInfoResponse.
 
         专属资源池名称。
 
@@ -126,7 +126,7 @@ class ShowDedicatedResourceInfoResponse(SdkResponse):
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this ShowDedicatedResourceInfoResponse.
+        r"""Sets the resource_name of this ShowDedicatedResourceInfoResponse.
 
         专属资源池名称。
 
@@ -137,7 +137,7 @@ class ShowDedicatedResourceInfoResponse(SdkResponse):
 
     @property
     def engine_name(self):
-        """Gets the engine_name of this ShowDedicatedResourceInfoResponse.
+        r"""Gets the engine_name of this ShowDedicatedResourceInfoResponse.
 
         引擎名称。
 
@@ -148,7 +148,7 @@ class ShowDedicatedResourceInfoResponse(SdkResponse):
 
     @engine_name.setter
     def engine_name(self, engine_name):
-        """Sets the engine_name of this ShowDedicatedResourceInfoResponse.
+        r"""Sets the engine_name of this ShowDedicatedResourceInfoResponse.
 
         引擎名称。
 
@@ -159,7 +159,7 @@ class ShowDedicatedResourceInfoResponse(SdkResponse):
 
     @property
     def availability_zone_ids(self):
-        """Gets the availability_zone_ids of this ShowDedicatedResourceInfoResponse.
+        r"""Gets the availability_zone_ids of this ShowDedicatedResourceInfoResponse.
 
         可用区。
 
@@ -170,7 +170,7 @@ class ShowDedicatedResourceInfoResponse(SdkResponse):
 
     @availability_zone_ids.setter
     def availability_zone_ids(self, availability_zone_ids):
-        """Sets the availability_zone_ids of this ShowDedicatedResourceInfoResponse.
+        r"""Sets the availability_zone_ids of this ShowDedicatedResourceInfoResponse.
 
         可用区。
 
@@ -181,7 +181,7 @@ class ShowDedicatedResourceInfoResponse(SdkResponse):
 
     @property
     def architecture(self):
-        """Gets the architecture of this ShowDedicatedResourceInfoResponse.
+        r"""Gets the architecture of this ShowDedicatedResourceInfoResponse.
 
         资源规格类型。
 
@@ -192,7 +192,7 @@ class ShowDedicatedResourceInfoResponse(SdkResponse):
 
     @architecture.setter
     def architecture(self, architecture):
-        """Sets the architecture of this ShowDedicatedResourceInfoResponse.
+        r"""Sets the architecture of this ShowDedicatedResourceInfoResponse.
 
         资源规格类型。
 
@@ -203,7 +203,7 @@ class ShowDedicatedResourceInfoResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowDedicatedResourceInfoResponse.
+        r"""Gets the status of this ShowDedicatedResourceInfoResponse.
 
         专属资源池状态。
 
@@ -214,7 +214,7 @@ class ShowDedicatedResourceInfoResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowDedicatedResourceInfoResponse.
+        r"""Sets the status of this ShowDedicatedResourceInfoResponse.
 
         专属资源池状态。
 
@@ -225,7 +225,7 @@ class ShowDedicatedResourceInfoResponse(SdkResponse):
 
     @property
     def dedicated_compute_info(self):
-        """Gets the dedicated_compute_info of this ShowDedicatedResourceInfoResponse.
+        r"""Gets the dedicated_compute_info of this ShowDedicatedResourceInfoResponse.
 
         :return: The dedicated_compute_info of this ShowDedicatedResourceInfoResponse.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.DedicatedComputeInfo`
@@ -234,7 +234,7 @@ class ShowDedicatedResourceInfoResponse(SdkResponse):
 
     @dedicated_compute_info.setter
     def dedicated_compute_info(self, dedicated_compute_info):
-        """Sets the dedicated_compute_info of this ShowDedicatedResourceInfoResponse.
+        r"""Sets the dedicated_compute_info of this ShowDedicatedResourceInfoResponse.
 
         :param dedicated_compute_info: The dedicated_compute_info of this ShowDedicatedResourceInfoResponse.
         :type dedicated_compute_info: :class:`huaweicloudsdkgaussdb.v3.DedicatedComputeInfo`
@@ -243,7 +243,7 @@ class ShowDedicatedResourceInfoResponse(SdkResponse):
 
     @property
     def dedicated_storage_info(self):
-        """Gets the dedicated_storage_info of this ShowDedicatedResourceInfoResponse.
+        r"""Gets the dedicated_storage_info of this ShowDedicatedResourceInfoResponse.
 
         :return: The dedicated_storage_info of this ShowDedicatedResourceInfoResponse.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.DedicatedStorageInfo`
@@ -252,7 +252,7 @@ class ShowDedicatedResourceInfoResponse(SdkResponse):
 
     @dedicated_storage_info.setter
     def dedicated_storage_info(self, dedicated_storage_info):
-        """Sets the dedicated_storage_info of this ShowDedicatedResourceInfoResponse.
+        r"""Sets the dedicated_storage_info of this ShowDedicatedResourceInfoResponse.
 
         :param dedicated_storage_info: The dedicated_storage_info of this ShowDedicatedResourceInfoResponse.
         :type dedicated_storage_info: :class:`huaweicloudsdkgaussdb.v3.DedicatedStorageInfo`

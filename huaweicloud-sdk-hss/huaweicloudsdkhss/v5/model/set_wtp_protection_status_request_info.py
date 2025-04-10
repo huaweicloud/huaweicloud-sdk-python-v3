@@ -31,7 +31,7 @@ class SetWtpProtectionStatusRequestInfo:
     }
 
     def __init__(self, status=None, host_id_list=None, resource_id=None, charging_mode=None):
-        """SetWtpProtectionStatusRequestInfo
+        r"""SetWtpProtectionStatusRequestInfo
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class SetWtpProtectionStatusRequestInfo:
 
     @property
     def status(self):
-        """Gets the status of this SetWtpProtectionStatusRequestInfo.
+        r"""Gets the status of this SetWtpProtectionStatusRequestInfo.
 
         开启关闭状态，true表示enable， false表示disable
 
@@ -73,7 +73,7 @@ class SetWtpProtectionStatusRequestInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SetWtpProtectionStatusRequestInfo.
+        r"""Sets the status of this SetWtpProtectionStatusRequestInfo.
 
         开启关闭状态，true表示enable， false表示disable
 
@@ -84,7 +84,7 @@ class SetWtpProtectionStatusRequestInfo:
 
     @property
     def host_id_list(self):
-        """Gets the host_id_list of this SetWtpProtectionStatusRequestInfo.
+        r"""Gets the host_id_list of this SetWtpProtectionStatusRequestInfo.
 
         主机ID数组，不能为空
 
@@ -95,7 +95,7 @@ class SetWtpProtectionStatusRequestInfo:
 
     @host_id_list.setter
     def host_id_list(self, host_id_list):
-        """Sets the host_id_list of this SetWtpProtectionStatusRequestInfo.
+        r"""Sets the host_id_list of this SetWtpProtectionStatusRequestInfo.
 
         主机ID数组，不能为空
 
@@ -106,7 +106,7 @@ class SetWtpProtectionStatusRequestInfo:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this SetWtpProtectionStatusRequestInfo.
+        r"""Gets the resource_id of this SetWtpProtectionStatusRequestInfo.
 
         资源ID
 
@@ -117,7 +117,7 @@ class SetWtpProtectionStatusRequestInfo:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this SetWtpProtectionStatusRequestInfo.
+        r"""Sets the resource_id of this SetWtpProtectionStatusRequestInfo.
 
         资源ID
 
@@ -128,7 +128,7 @@ class SetWtpProtectionStatusRequestInfo:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this SetWtpProtectionStatusRequestInfo.
+        r"""Gets the charging_mode of this SetWtpProtectionStatusRequestInfo.
 
         计费模式   - packet_cycle: 包周期
 
@@ -139,7 +139,7 @@ class SetWtpProtectionStatusRequestInfo:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this SetWtpProtectionStatusRequestInfo.
+        r"""Sets the charging_mode of this SetWtpProtectionStatusRequestInfo.
 
         计费模式   - packet_cycle: 包周期
 

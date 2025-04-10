@@ -29,7 +29,7 @@ class OutputWebhook:
     }
 
     def __init__(self, url=None, headers=None, data_category=None):
-        """OutputWebhook
+        r"""OutputWebhook
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class OutputWebhook:
 
     @property
     def url(self):
-        """Gets the url of this OutputWebhook.
+        r"""Gets the url of this OutputWebhook.
 
         URL地址
 
@@ -68,7 +68,7 @@ class OutputWebhook:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this OutputWebhook.
+        r"""Sets the url of this OutputWebhook.
 
         URL地址
 
@@ -79,7 +79,7 @@ class OutputWebhook:
 
     @property
     def headers(self):
-        """Gets the headers of this OutputWebhook.
+        r"""Gets the headers of this OutputWebhook.
 
         header参数设置（键值均为用户设置）。
 
@@ -90,7 +90,7 @@ class OutputWebhook:
 
     @headers.setter
     def headers(self, headers):
-        """Sets the headers of this OutputWebhook.
+        r"""Sets the headers of this OutputWebhook.
 
         header参数设置（键值均为用户设置）。
 
@@ -101,7 +101,7 @@ class OutputWebhook:
 
     @property
     def data_category(self):
-        """Gets the data_category of this OutputWebhook.
+        r"""Gets the data_category of this OutputWebhook.
 
         作业输出数据类别的列表，默认值为[]。有这个列表时，表示希望这个输出结果中存放dataCategory列表内的数据。 取值范围为[FaceImage,OriginImage]。 - FaceImage：表示发送人脸图。 - OriginImage：表示发送原始图。
 
@@ -112,7 +112,7 @@ class OutputWebhook:
 
     @data_category.setter
     def data_category(self, data_category):
-        """Sets the data_category of this OutputWebhook.
+        r"""Sets the data_category of this OutputWebhook.
 
         作业输出数据类别的列表，默认值为[]。有这个列表时，表示希望这个输出结果中存放dataCategory列表内的数据。 取值范围为[FaceImage,OriginImage]。 - FaceImage：表示发送人脸图。 - OriginImage：表示发送原始图。
 

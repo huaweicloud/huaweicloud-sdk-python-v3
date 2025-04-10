@@ -25,7 +25,7 @@ class ShowHmReportRequest:
     }
 
     def __init__(self, task_id=None):
-        """ShowHmReportRequest
+        r"""ShowHmReportRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowHmReportRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowHmReportRequest.
+        r"""Gets the task_id of this ShowHmReportRequest.
 
         任务ID
 
@@ -54,7 +54,7 @@ class ShowHmReportRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowHmReportRequest.
+        r"""Sets the task_id of this ShowHmReportRequest.
 
         任务ID
 

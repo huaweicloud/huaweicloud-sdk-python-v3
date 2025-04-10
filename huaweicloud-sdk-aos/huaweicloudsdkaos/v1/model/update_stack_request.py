@@ -29,7 +29,7 @@ class UpdateStackRequest:
     }
 
     def __init__(self, client_request_id=None, stack_name=None, body=None):
-        """UpdateStackRequest
+        r"""UpdateStackRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateStackRequest:
 
     @property
     def client_request_id(self):
-        """Gets the client_request_id of this UpdateStackRequest.
+        r"""Gets the client_request_id of this UpdateStackRequest.
 
         用户指定的，对于此请求的唯一ID，用于定位某个请求，推荐使用UUID
 
@@ -66,7 +66,7 @@ class UpdateStackRequest:
 
     @client_request_id.setter
     def client_request_id(self, client_request_id):
-        """Sets the client_request_id of this UpdateStackRequest.
+        r"""Sets the client_request_id of this UpdateStackRequest.
 
         用户指定的，对于此请求的唯一ID，用于定位某个请求，推荐使用UUID
 
@@ -77,7 +77,7 @@ class UpdateStackRequest:
 
     @property
     def stack_name(self):
-        """Gets the stack_name of this UpdateStackRequest.
+        r"""Gets the stack_name of this UpdateStackRequest.
 
         资源栈的名称。此名字在domain_id+区域+project_id下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
@@ -88,7 +88,7 @@ class UpdateStackRequest:
 
     @stack_name.setter
     def stack_name(self, stack_name):
-        """Sets the stack_name of this UpdateStackRequest.
+        r"""Sets the stack_name of this UpdateStackRequest.
 
         资源栈的名称。此名字在domain_id+区域+project_id下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
@@ -99,7 +99,7 @@ class UpdateStackRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateStackRequest.
+        r"""Gets the body of this UpdateStackRequest.
 
         :return: The body of this UpdateStackRequest.
         :rtype: :class:`huaweicloudsdkaos.v1.UpdateStackRequestBody`
@@ -108,7 +108,7 @@ class UpdateStackRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateStackRequest.
+        r"""Sets the body of this UpdateStackRequest.
 
         :param body: The body of this UpdateStackRequest.
         :type body: :class:`huaweicloudsdkaos.v1.UpdateStackRequestBody`

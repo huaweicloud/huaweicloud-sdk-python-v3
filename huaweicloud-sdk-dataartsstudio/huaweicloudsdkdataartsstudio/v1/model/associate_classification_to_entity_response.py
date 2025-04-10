@@ -24,7 +24,7 @@ class AssociateClassificationToEntityResponse(SdkResponse):
     }
 
     def __init__(self):
-        """AssociateClassificationToEntityResponse
+        r"""AssociateClassificationToEntityResponse
 
         The model defined in huaweicloud sdk
 

@@ -27,7 +27,7 @@ class RevokePostgresqlDbPrivilegeRequestBody:
     }
 
     def __init__(self, db_name=None, users=None):
-        """RevokePostgresqlDbPrivilegeRequestBody
+        r"""RevokePostgresqlDbPrivilegeRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class RevokePostgresqlDbPrivilegeRequestBody:
 
     @property
     def db_name(self):
-        """Gets the db_name of this RevokePostgresqlDbPrivilegeRequestBody.
+        r"""Gets the db_name of this RevokePostgresqlDbPrivilegeRequestBody.
 
         数据库名称
 
@@ -59,7 +59,7 @@ class RevokePostgresqlDbPrivilegeRequestBody:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this RevokePostgresqlDbPrivilegeRequestBody.
+        r"""Sets the db_name of this RevokePostgresqlDbPrivilegeRequestBody.
 
         数据库名称
 
@@ -70,7 +70,7 @@ class RevokePostgresqlDbPrivilegeRequestBody:
 
     @property
     def users(self):
-        """Gets the users of this RevokePostgresqlDbPrivilegeRequestBody.
+        r"""Gets the users of this RevokePostgresqlDbPrivilegeRequestBody.
 
         用户信息，最大值50个
 
@@ -81,7 +81,7 @@ class RevokePostgresqlDbPrivilegeRequestBody:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this RevokePostgresqlDbPrivilegeRequestBody.
+        r"""Sets the users of this RevokePostgresqlDbPrivilegeRequestBody.
 
         用户信息，最大值50个
 

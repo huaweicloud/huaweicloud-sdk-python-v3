@@ -47,7 +47,7 @@ class ListGlobalEipsRequest:
     }
 
     def __init__(self, limit=None, offset=None, marker=None, page_reverse=None, fields=None, ext_fields=None, sort_key=None, sort_dir=None, connect_gateway_id=None, status=None, global_eip_id=None, global_eip_segment_id=None):
-        """ListGlobalEipsRequest
+        r"""ListGlobalEipsRequest
 
         The model defined in huaweicloud sdk
 
@@ -119,7 +119,7 @@ class ListGlobalEipsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListGlobalEipsRequest.
+        r"""Gets the limit of this ListGlobalEipsRequest.
 
         每页返回的个数。 取值范围：1~2000。
 
@@ -130,7 +130,7 @@ class ListGlobalEipsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListGlobalEipsRequest.
+        r"""Sets the limit of this ListGlobalEipsRequest.
 
         每页返回的个数。 取值范围：1~2000。
 
@@ -141,7 +141,7 @@ class ListGlobalEipsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListGlobalEipsRequest.
+        r"""Gets the offset of this ListGlobalEipsRequest.
 
         分页偏移量
 
@@ -152,7 +152,7 @@ class ListGlobalEipsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListGlobalEipsRequest.
+        r"""Sets the offset of this ListGlobalEipsRequest.
 
         分页偏移量
 
@@ -163,7 +163,7 @@ class ListGlobalEipsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListGlobalEipsRequest.
+        r"""Gets the marker of this ListGlobalEipsRequest.
 
         上一页最后一条资源记录的ID，为空时为查询第一页。 使用说明：必须与limit一起使用。
 
@@ -174,7 +174,7 @@ class ListGlobalEipsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListGlobalEipsRequest.
+        r"""Sets the marker of this ListGlobalEipsRequest.
 
         上一页最后一条资源记录的ID，为空时为查询第一页。 使用说明：必须与limit一起使用。
 
@@ -185,7 +185,7 @@ class ListGlobalEipsRequest:
 
     @property
     def page_reverse(self):
-        """Gets the page_reverse of this ListGlobalEipsRequest.
+        r"""Gets the page_reverse of this ListGlobalEipsRequest.
 
         分页参数
 
@@ -196,7 +196,7 @@ class ListGlobalEipsRequest:
 
     @page_reverse.setter
     def page_reverse(self, page_reverse):
-        """Sets the page_reverse of this ListGlobalEipsRequest.
+        r"""Sets the page_reverse of this ListGlobalEipsRequest.
 
         分页参数
 
@@ -207,7 +207,7 @@ class ListGlobalEipsRequest:
 
     @property
     def fields(self):
-        """Gets the fields of this ListGlobalEipsRequest.
+        r"""Gets the fields of this ListGlobalEipsRequest.
 
         显示字段列表
 
@@ -218,7 +218,7 @@ class ListGlobalEipsRequest:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this ListGlobalEipsRequest.
+        r"""Sets the fields of this ListGlobalEipsRequest.
 
         显示字段列表
 
@@ -229,7 +229,7 @@ class ListGlobalEipsRequest:
 
     @property
     def ext_fields(self):
-        """Gets the ext_fields of this ListGlobalEipsRequest.
+        r"""Gets the ext_fields of this ListGlobalEipsRequest.
 
         show response ext-fields
 
@@ -240,7 +240,7 @@ class ListGlobalEipsRequest:
 
     @ext_fields.setter
     def ext_fields(self, ext_fields):
-        """Sets the ext_fields of this ListGlobalEipsRequest.
+        r"""Sets the ext_fields of this ListGlobalEipsRequest.
 
         show response ext-fields
 
@@ -251,7 +251,7 @@ class ListGlobalEipsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListGlobalEipsRequest.
+        r"""Gets the sort_key of this ListGlobalEipsRequest.
 
         排序字段。
 
@@ -262,7 +262,7 @@ class ListGlobalEipsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListGlobalEipsRequest.
+        r"""Sets the sort_key of this ListGlobalEipsRequest.
 
         排序字段。
 
@@ -273,7 +273,7 @@ class ListGlobalEipsRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListGlobalEipsRequest.
+        r"""Gets the sort_dir of this ListGlobalEipsRequest.
 
         返回结果按照升序(asc)或降序(desc)排列，默认为asc
 
@@ -284,7 +284,7 @@ class ListGlobalEipsRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListGlobalEipsRequest.
+        r"""Sets the sort_dir of this ListGlobalEipsRequest.
 
         返回结果按照升序(asc)或降序(desc)排列，默认为asc
 
@@ -295,7 +295,7 @@ class ListGlobalEipsRequest:
 
     @property
     def connect_gateway_id(self):
-        """Gets the connect_gateway_id of this ListGlobalEipsRequest.
+        r"""Gets the connect_gateway_id of this ListGlobalEipsRequest.
 
         互联网关ID
 
@@ -306,7 +306,7 @@ class ListGlobalEipsRequest:
 
     @connect_gateway_id.setter
     def connect_gateway_id(self, connect_gateway_id):
-        """Sets the connect_gateway_id of this ListGlobalEipsRequest.
+        r"""Sets the connect_gateway_id of this ListGlobalEipsRequest.
 
         互联网关ID
 
@@ -317,7 +317,7 @@ class ListGlobalEipsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListGlobalEipsRequest.
+        r"""Gets the status of this ListGlobalEipsRequest.
 
         根椐资源状态过滤实例
 
@@ -328,7 +328,7 @@ class ListGlobalEipsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListGlobalEipsRequest.
+        r"""Sets the status of this ListGlobalEipsRequest.
 
         根椐资源状态过滤实例
 
@@ -339,7 +339,7 @@ class ListGlobalEipsRequest:
 
     @property
     def global_eip_id(self):
-        """Gets the global_eip_id of this ListGlobalEipsRequest.
+        r"""Gets the global_eip_id of this ListGlobalEipsRequest.
 
         全局弹性IP的ID
 
@@ -350,7 +350,7 @@ class ListGlobalEipsRequest:
 
     @global_eip_id.setter
     def global_eip_id(self, global_eip_id):
-        """Sets the global_eip_id of this ListGlobalEipsRequest.
+        r"""Sets the global_eip_id of this ListGlobalEipsRequest.
 
         全局弹性IP的ID
 
@@ -361,7 +361,7 @@ class ListGlobalEipsRequest:
 
     @property
     def global_eip_segment_id(self):
-        """Gets the global_eip_segment_id of this ListGlobalEipsRequest.
+        r"""Gets the global_eip_segment_id of this ListGlobalEipsRequest.
 
         全局弹性IP(有掩码)的ID
 
@@ -372,7 +372,7 @@ class ListGlobalEipsRequest:
 
     @global_eip_segment_id.setter
     def global_eip_segment_id(self, global_eip_segment_id):
-        """Sets the global_eip_segment_id of this ListGlobalEipsRequest.
+        r"""Sets the global_eip_segment_id of this ListGlobalEipsRequest.
 
         全局弹性IP(有掩码)的ID
 

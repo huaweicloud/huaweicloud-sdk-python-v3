@@ -26,7 +26,7 @@ class ShowClusterTagResponse(SdkResponse):
     }
 
     def __init__(self, tags=None):
-        """ShowClusterTagResponse
+        r"""ShowClusterTagResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowClusterTagResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowClusterTagResponse.
+        r"""Gets the tags of this ShowClusterTagResponse.
 
         集群标签列表。
 
@@ -55,7 +55,7 @@ class ShowClusterTagResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowClusterTagResponse.
+        r"""Sets the tags of this ShowClusterTagResponse.
 
         集群标签列表。
 

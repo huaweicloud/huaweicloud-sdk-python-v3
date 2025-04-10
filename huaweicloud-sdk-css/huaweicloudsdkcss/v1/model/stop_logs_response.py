@@ -24,7 +24,7 @@ class StopLogsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """StopLogsResponse
+        r"""StopLogsResponse
 
         The model defined in huaweicloud sdk
 

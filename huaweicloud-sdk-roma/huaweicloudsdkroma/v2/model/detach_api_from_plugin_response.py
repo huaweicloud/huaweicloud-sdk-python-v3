@@ -24,7 +24,7 @@ class DetachApiFromPluginResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DetachApiFromPluginResponse
+        r"""DetachApiFromPluginResponse
 
         The model defined in huaweicloud sdk
 

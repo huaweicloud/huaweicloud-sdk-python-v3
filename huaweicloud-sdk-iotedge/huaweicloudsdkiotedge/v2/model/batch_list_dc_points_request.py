@@ -39,7 +39,7 @@ class BatchListDcPointsRequest:
     }
 
     def __init__(self, edge_node_id=None, ds_id=None, point_id=None, name=None, _property=None, device_id=None, offset=None, limit=None):
-        """BatchListDcPointsRequest
+        r"""BatchListDcPointsRequest
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class BatchListDcPointsRequest:
 
     @property
     def edge_node_id(self):
-        """Gets the edge_node_id of this BatchListDcPointsRequest.
+        r"""Gets the edge_node_id of this BatchListDcPointsRequest.
 
         边缘节点ID
 
@@ -101,7 +101,7 @@ class BatchListDcPointsRequest:
 
     @edge_node_id.setter
     def edge_node_id(self, edge_node_id):
-        """Sets the edge_node_id of this BatchListDcPointsRequest.
+        r"""Sets the edge_node_id of this BatchListDcPointsRequest.
 
         边缘节点ID
 
@@ -112,7 +112,7 @@ class BatchListDcPointsRequest:
 
     @property
     def ds_id(self):
-        """Gets the ds_id of this BatchListDcPointsRequest.
+        r"""Gets the ds_id of this BatchListDcPointsRequest.
 
         采集数据源id，创建数据源配置时设置，节点下唯一。
 
@@ -123,7 +123,7 @@ class BatchListDcPointsRequest:
 
     @ds_id.setter
     def ds_id(self, ds_id):
-        """Sets the ds_id of this BatchListDcPointsRequest.
+        r"""Sets the ds_id of this BatchListDcPointsRequest.
 
         采集数据源id，创建数据源配置时设置，节点下唯一。
 
@@ -134,7 +134,7 @@ class BatchListDcPointsRequest:
 
     @property
     def point_id(self):
-        """Gets the point_id of this BatchListDcPointsRequest.
+        r"""Gets the point_id of this BatchListDcPointsRequest.
 
         采集点位表id，创建点位表时设置，数据源下唯一。
 
@@ -145,7 +145,7 @@ class BatchListDcPointsRequest:
 
     @point_id.setter
     def point_id(self, point_id):
-        """Sets the point_id of this BatchListDcPointsRequest.
+        r"""Sets the point_id of this BatchListDcPointsRequest.
 
         采集点位表id，创建点位表时设置，数据源下唯一。
 
@@ -156,7 +156,7 @@ class BatchListDcPointsRequest:
 
     @property
     def name(self):
-        """Gets the name of this BatchListDcPointsRequest.
+        r"""Gets the name of this BatchListDcPointsRequest.
 
         点位名称，允许中、数字、英文大小写、下划线、中划线、#%()*特殊字符.模糊查询
 
@@ -167,7 +167,7 @@ class BatchListDcPointsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BatchListDcPointsRequest.
+        r"""Sets the name of this BatchListDcPointsRequest.
 
         点位名称，允许中、数字、英文大小写、下划线、中划线、#%()*特殊字符.模糊查询
 
@@ -178,7 +178,7 @@ class BatchListDcPointsRequest:
 
     @property
     def _property(self):
-        """Gets the _property of this BatchListDcPointsRequest.
+        r"""Gets the _property of this BatchListDcPointsRequest.
 
         属性，允许中、数字、英文大小写、下划线、中划线，精确查询
 
@@ -189,7 +189,7 @@ class BatchListDcPointsRequest:
 
     @_property.setter
     def _property(self, _property):
-        """Sets the _property of this BatchListDcPointsRequest.
+        r"""Sets the _property of this BatchListDcPointsRequest.
 
         属性，允许中、数字、英文大小写、下划线、中划线，精确查询
 
@@ -200,7 +200,7 @@ class BatchListDcPointsRequest:
 
     @property
     def device_id(self):
-        """Gets the device_id of this BatchListDcPointsRequest.
+        r"""Gets the device_id of this BatchListDcPointsRequest.
 
         设备标识，精确查询
 
@@ -211,7 +211,7 @@ class BatchListDcPointsRequest:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this BatchListDcPointsRequest.
+        r"""Sets the device_id of this BatchListDcPointsRequest.
 
         设备标识，精确查询
 
@@ -222,7 +222,7 @@ class BatchListDcPointsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this BatchListDcPointsRequest.
+        r"""Gets the offset of this BatchListDcPointsRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -233,7 +233,7 @@ class BatchListDcPointsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this BatchListDcPointsRequest.
+        r"""Sets the offset of this BatchListDcPointsRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -244,7 +244,7 @@ class BatchListDcPointsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this BatchListDcPointsRequest.
+        r"""Gets the limit of this BatchListDcPointsRequest.
 
         每页记录数，默认值为10，取值区间为1-1000
 
@@ -255,7 +255,7 @@ class BatchListDcPointsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this BatchListDcPointsRequest.
+        r"""Sets the limit of this BatchListDcPointsRequest.
 
         每页记录数，默认值为10，取值区间为1-1000
 

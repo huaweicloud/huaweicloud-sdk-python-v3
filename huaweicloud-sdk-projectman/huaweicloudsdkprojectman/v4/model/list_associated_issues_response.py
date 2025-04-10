@@ -28,7 +28,7 @@ class ListAssociatedIssuesResponse(SdkResponse):
     }
 
     def __init__(self, issues=None, total=None):
-        """ListAssociatedIssuesResponse
+        r"""ListAssociatedIssuesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAssociatedIssuesResponse(SdkResponse):
 
     @property
     def issues(self):
-        """Gets the issues of this ListAssociatedIssuesResponse.
+        r"""Gets the issues of this ListAssociatedIssuesResponse.
 
         关联的工作项列表
 
@@ -62,7 +62,7 @@ class ListAssociatedIssuesResponse(SdkResponse):
 
     @issues.setter
     def issues(self, issues):
-        """Sets the issues of this ListAssociatedIssuesResponse.
+        r"""Sets the issues of this ListAssociatedIssuesResponse.
 
         关联的工作项列表
 
@@ -73,7 +73,7 @@ class ListAssociatedIssuesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListAssociatedIssuesResponse.
+        r"""Gets the total of this ListAssociatedIssuesResponse.
 
         总数
 
@@ -84,7 +84,7 @@ class ListAssociatedIssuesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListAssociatedIssuesResponse.
+        r"""Sets the total of this ListAssociatedIssuesResponse.
 
         总数
 

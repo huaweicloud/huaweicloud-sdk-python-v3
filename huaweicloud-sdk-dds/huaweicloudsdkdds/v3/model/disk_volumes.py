@@ -33,7 +33,7 @@ class DiskVolumes:
     }
 
     def __init__(self, entity_id=None, entity_name=None, group_type=None, used=None, size=None):
-        """DiskVolumes
+        r"""DiskVolumes
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class DiskVolumes:
 
     @property
     def entity_id(self):
-        """Gets the entity_id of this DiskVolumes.
+        r"""Gets the entity_id of this DiskVolumes.
 
         实例ID或组ID或节点ID。可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。 - 当变更的实例类型是集群，如果变更的是shard组或者config组的参数模板，传值为组ID。如果变更的是mongos节点的参数模板，传值为节点ID。 - 当变更的实例类型是副本集或单节点，传值为实例ID。
 
@@ -77,7 +77,7 @@ class DiskVolumes:
 
     @entity_id.setter
     def entity_id(self, entity_id):
-        """Sets the entity_id of this DiskVolumes.
+        r"""Sets the entity_id of this DiskVolumes.
 
         实例ID或组ID或节点ID。可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。 - 当变更的实例类型是集群，如果变更的是shard组或者config组的参数模板，传值为组ID。如果变更的是mongos节点的参数模板，传值为节点ID。 - 当变更的实例类型是副本集或单节点，传值为实例ID。
 
@@ -88,7 +88,7 @@ class DiskVolumes:
 
     @property
     def entity_name(self):
-        """Gets the entity_name of this DiskVolumes.
+        r"""Gets the entity_name of this DiskVolumes.
 
         实例名称或组名称或节点名称
 
@@ -99,7 +99,7 @@ class DiskVolumes:
 
     @entity_name.setter
     def entity_name(self, entity_name):
-        """Sets the entity_name of this DiskVolumes.
+        r"""Sets the entity_name of this DiskVolumes.
 
         实例名称或组名称或节点名称
 
@@ -110,7 +110,7 @@ class DiskVolumes:
 
     @property
     def group_type(self):
-        """Gets the group_type of this DiskVolumes.
+        r"""Gets the group_type of this DiskVolumes.
 
         group_type。取值范围： - mongos，表示集群mongos节点类型。 - shard，表示集群shard节点类型。 - config，表示集群config节点类型。 - replica，表示副本集类型。 - single，表示单节点类型。 - readonly，表示只读节点类型。
 
@@ -121,7 +121,7 @@ class DiskVolumes:
 
     @group_type.setter
     def group_type(self, group_type):
-        """Sets the group_type of this DiskVolumes.
+        r"""Sets the group_type of this DiskVolumes.
 
         group_type。取值范围： - mongos，表示集群mongos节点类型。 - shard，表示集群shard节点类型。 - config，表示集群config节点类型。 - replica，表示副本集类型。 - single，表示单节点类型。 - readonly，表示只读节点类型。
 
@@ -132,7 +132,7 @@ class DiskVolumes:
 
     @property
     def used(self):
-        """Gets the used of this DiskVolumes.
+        r"""Gets the used of this DiskVolumes.
 
         使用量，保留两位小数，单位(GB)
 
@@ -143,7 +143,7 @@ class DiskVolumes:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this DiskVolumes.
+        r"""Sets the used of this DiskVolumes.
 
         使用量，保留两位小数，单位(GB)
 
@@ -154,7 +154,7 @@ class DiskVolumes:
 
     @property
     def size(self):
-        """Gets the size of this DiskVolumes.
+        r"""Gets the size of this DiskVolumes.
 
         总大小，单位(GB)
 
@@ -165,7 +165,7 @@ class DiskVolumes:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this DiskVolumes.
+        r"""Sets the size of this DiskVolumes.
 
         总大小，单位(GB)
 

@@ -29,7 +29,7 @@ class SimpleResourceInfo:
     }
 
     def __init__(self, type=None, owner=None, resource_id=None):
-        """SimpleResourceInfo
+        r"""SimpleResourceInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class SimpleResourceInfo:
 
     @property
     def type(self):
-        """Gets the type of this SimpleResourceInfo.
+        r"""Gets the type of this SimpleResourceInfo.
 
         资源类型
 
@@ -68,7 +68,7 @@ class SimpleResourceInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SimpleResourceInfo.
+        r"""Sets the type of this SimpleResourceInfo.
 
         资源类型
 
@@ -79,7 +79,7 @@ class SimpleResourceInfo:
 
     @property
     def owner(self):
-        """Gets the owner of this SimpleResourceInfo.
+        r"""Gets the owner of this SimpleResourceInfo.
 
         资源责任人
 
@@ -90,7 +90,7 @@ class SimpleResourceInfo:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this SimpleResourceInfo.
+        r"""Sets the owner of this SimpleResourceInfo.
 
         资源责任人
 
@@ -101,7 +101,7 @@ class SimpleResourceInfo:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this SimpleResourceInfo.
+        r"""Gets the resource_id of this SimpleResourceInfo.
 
         资源id
 
@@ -112,7 +112,7 @@ class SimpleResourceInfo:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this SimpleResourceInfo.
+        r"""Sets the resource_id of this SimpleResourceInfo.
 
         资源id
 

@@ -28,7 +28,7 @@ class ListAccountAssignmentsResponse(SdkResponse):
     }
 
     def __init__(self, account_assignments=None, page_info=None):
-        """ListAccountAssignmentsResponse
+        r"""ListAccountAssignmentsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAccountAssignmentsResponse(SdkResponse):
 
     @property
     def account_assignments(self):
-        """Gets the account_assignments of this ListAccountAssignmentsResponse.
+        r"""Gets the account_assignments of this ListAccountAssignmentsResponse.
 
         满足查询条件的账号分配列表
 
@@ -62,7 +62,7 @@ class ListAccountAssignmentsResponse(SdkResponse):
 
     @account_assignments.setter
     def account_assignments(self, account_assignments):
-        """Sets the account_assignments of this ListAccountAssignmentsResponse.
+        r"""Sets the account_assignments of this ListAccountAssignmentsResponse.
 
         满足查询条件的账号分配列表
 
@@ -73,7 +73,7 @@ class ListAccountAssignmentsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListAccountAssignmentsResponse.
+        r"""Gets the page_info of this ListAccountAssignmentsResponse.
 
         :return: The page_info of this ListAccountAssignmentsResponse.
         :rtype: :class:`huaweicloudsdkidentitycenter.v1.PageInfoDto`
@@ -82,7 +82,7 @@ class ListAccountAssignmentsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListAccountAssignmentsResponse.
+        r"""Sets the page_info of this ListAccountAssignmentsResponse.
 
         :param page_info: The page_info of this ListAccountAssignmentsResponse.
         :type page_info: :class:`huaweicloudsdkidentitycenter.v1.PageInfoDto`

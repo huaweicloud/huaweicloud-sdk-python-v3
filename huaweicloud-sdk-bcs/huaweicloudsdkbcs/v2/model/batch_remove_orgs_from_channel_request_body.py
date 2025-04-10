@@ -25,7 +25,7 @@ class BatchRemoveOrgsFromChannelRequestBody:
     }
 
     def __init__(self, org_names=None):
-        """BatchRemoveOrgsFromChannelRequestBody
+        r"""BatchRemoveOrgsFromChannelRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchRemoveOrgsFromChannelRequestBody:
 
     @property
     def org_names(self):
-        """Gets the org_names of this BatchRemoveOrgsFromChannelRequestBody.
+        r"""Gets the org_names of this BatchRemoveOrgsFromChannelRequestBody.
 
         组织名称列表
 
@@ -53,7 +53,7 @@ class BatchRemoveOrgsFromChannelRequestBody:
 
     @org_names.setter
     def org_names(self, org_names):
-        """Sets the org_names of this BatchRemoveOrgsFromChannelRequestBody.
+        r"""Sets the org_names of this BatchRemoveOrgsFromChannelRequestBody.
 
         组织名称列表
 

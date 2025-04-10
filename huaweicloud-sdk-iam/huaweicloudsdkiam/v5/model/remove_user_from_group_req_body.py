@@ -25,7 +25,7 @@ class RemoveUserFromGroupReqBody:
     }
 
     def __init__(self, user_id=None):
-        """RemoveUserFromGroupReqBody
+        r"""RemoveUserFromGroupReqBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RemoveUserFromGroupReqBody:
 
     @property
     def user_id(self):
-        """Gets the user_id of this RemoveUserFromGroupReqBody.
+        r"""Gets the user_id of this RemoveUserFromGroupReqBody.
 
         IAM用户ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -53,7 +53,7 @@ class RemoveUserFromGroupReqBody:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this RemoveUserFromGroupReqBody.
+        r"""Sets the user_id of this RemoveUserFromGroupReqBody.
 
         IAM用户ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 

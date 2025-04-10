@@ -25,7 +25,7 @@ class TagResourceReqBody:
     }
 
     def __init__(self, tags=None):
-        """TagResourceReqBody
+        r"""TagResourceReqBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class TagResourceReqBody:
 
     @property
     def tags(self):
-        """Gets the tags of this TagResourceReqBody.
+        r"""Gets the tags of this TagResourceReqBody.
 
         要添加到指定资源的标签列表。
 
@@ -53,7 +53,7 @@ class TagResourceReqBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this TagResourceReqBody.
+        r"""Sets the tags of this TagResourceReqBody.
 
         要添加到指定资源的标签列表。
 

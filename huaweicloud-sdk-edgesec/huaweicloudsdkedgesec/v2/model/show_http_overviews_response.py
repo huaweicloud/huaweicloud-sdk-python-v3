@@ -34,7 +34,7 @@ class ShowHttpOverviewsResponse(SdkResponse):
     }
 
     def __init__(self, domain=None, attack_type=None, ip=None, url=None, geo=None):
-        """ShowHttpOverviewsResponse
+        r"""ShowHttpOverviewsResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowHttpOverviewsResponse(SdkResponse):
 
     @property
     def domain(self):
-        """Gets the domain of this ShowHttpOverviewsResponse.
+        r"""Gets the domain of this ShowHttpOverviewsResponse.
 
         :return: The domain of this ShowHttpOverviewsResponse.
         :rtype: :class:`huaweicloudsdkedgesec.v2.DomainClassificationItem`
@@ -81,7 +81,7 @@ class ShowHttpOverviewsResponse(SdkResponse):
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ShowHttpOverviewsResponse.
+        r"""Sets the domain of this ShowHttpOverviewsResponse.
 
         :param domain: The domain of this ShowHttpOverviewsResponse.
         :type domain: :class:`huaweicloudsdkedgesec.v2.DomainClassificationItem`
@@ -90,7 +90,7 @@ class ShowHttpOverviewsResponse(SdkResponse):
 
     @property
     def attack_type(self):
-        """Gets the attack_type of this ShowHttpOverviewsResponse.
+        r"""Gets the attack_type of this ShowHttpOverviewsResponse.
 
         :return: The attack_type of this ShowHttpOverviewsResponse.
         :rtype: :class:`huaweicloudsdkedgesec.v2.AttackTypeClassificationItem`
@@ -99,7 +99,7 @@ class ShowHttpOverviewsResponse(SdkResponse):
 
     @attack_type.setter
     def attack_type(self, attack_type):
-        """Sets the attack_type of this ShowHttpOverviewsResponse.
+        r"""Sets the attack_type of this ShowHttpOverviewsResponse.
 
         :param attack_type: The attack_type of this ShowHttpOverviewsResponse.
         :type attack_type: :class:`huaweicloudsdkedgesec.v2.AttackTypeClassificationItem`
@@ -108,7 +108,7 @@ class ShowHttpOverviewsResponse(SdkResponse):
 
     @property
     def ip(self):
-        """Gets the ip of this ShowHttpOverviewsResponse.
+        r"""Gets the ip of this ShowHttpOverviewsResponse.
 
         :return: The ip of this ShowHttpOverviewsResponse.
         :rtype: :class:`huaweicloudsdkedgesec.v2.IpClassificationItem`
@@ -117,7 +117,7 @@ class ShowHttpOverviewsResponse(SdkResponse):
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this ShowHttpOverviewsResponse.
+        r"""Sets the ip of this ShowHttpOverviewsResponse.
 
         :param ip: The ip of this ShowHttpOverviewsResponse.
         :type ip: :class:`huaweicloudsdkedgesec.v2.IpClassificationItem`
@@ -126,7 +126,7 @@ class ShowHttpOverviewsResponse(SdkResponse):
 
     @property
     def url(self):
-        """Gets the url of this ShowHttpOverviewsResponse.
+        r"""Gets the url of this ShowHttpOverviewsResponse.
 
         :return: The url of this ShowHttpOverviewsResponse.
         :rtype: :class:`huaweicloudsdkedgesec.v2.UrlClassificationItem`
@@ -135,7 +135,7 @@ class ShowHttpOverviewsResponse(SdkResponse):
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ShowHttpOverviewsResponse.
+        r"""Sets the url of this ShowHttpOverviewsResponse.
 
         :param url: The url of this ShowHttpOverviewsResponse.
         :type url: :class:`huaweicloudsdkedgesec.v2.UrlClassificationItem`
@@ -144,7 +144,7 @@ class ShowHttpOverviewsResponse(SdkResponse):
 
     @property
     def geo(self):
-        """Gets the geo of this ShowHttpOverviewsResponse.
+        r"""Gets the geo of this ShowHttpOverviewsResponse.
 
         :return: The geo of this ShowHttpOverviewsResponse.
         :rtype: :class:`huaweicloudsdkedgesec.v2.GeoClassificationItem`
@@ -153,7 +153,7 @@ class ShowHttpOverviewsResponse(SdkResponse):
 
     @geo.setter
     def geo(self, geo):
-        """Sets the geo of this ShowHttpOverviewsResponse.
+        r"""Sets the geo of this ShowHttpOverviewsResponse.
 
         :param geo: The geo of this ShowHttpOverviewsResponse.
         :type geo: :class:`huaweicloudsdkedgesec.v2.GeoClassificationItem`

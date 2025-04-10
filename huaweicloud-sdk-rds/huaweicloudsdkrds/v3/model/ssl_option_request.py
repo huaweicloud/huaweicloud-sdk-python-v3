@@ -25,7 +25,7 @@ class SslOptionRequest:
     }
 
     def __init__(self, ssl_option=None):
-        """SslOptionRequest
+        r"""SslOptionRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SslOptionRequest:
 
     @property
     def ssl_option(self):
-        """Gets the ssl_option of this SslOptionRequest.
+        r"""Gets the ssl_option of this SslOptionRequest.
 
         - true, 打开ssl开关。 - false, 关闭ssl开关。
 
@@ -53,7 +53,7 @@ class SslOptionRequest:
 
     @ssl_option.setter
     def ssl_option(self, ssl_option):
-        """Sets the ssl_option of this SslOptionRequest.
+        r"""Sets the ssl_option of this SslOptionRequest.
 
         - true, 打开ssl开关。 - false, 关闭ssl开关。
 

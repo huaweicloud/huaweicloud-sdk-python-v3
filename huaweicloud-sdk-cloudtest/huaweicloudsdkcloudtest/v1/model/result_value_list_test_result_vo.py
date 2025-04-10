@@ -35,7 +35,7 @@ class ResultValueListTestResultVo:
     }
 
     def __init__(self, total=None, value=None, reason=None, page_size=None, page_no=None, has_more=None):
-        """ResultValueListTestResultVo
+        r"""ResultValueListTestResultVo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ResultValueListTestResultVo:
 
     @property
     def total(self):
-        """Gets the total of this ResultValueListTestResultVo.
+        r"""Gets the total of this ResultValueListTestResultVo.
 
         起始记录数 大于 实际总条数时， 值为0， 分页请求才有此值
 
@@ -89,7 +89,7 @@ class ResultValueListTestResultVo:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ResultValueListTestResultVo.
+        r"""Sets the total of this ResultValueListTestResultVo.
 
         起始记录数 大于 实际总条数时， 值为0， 分页请求才有此值
 
@@ -100,7 +100,7 @@ class ResultValueListTestResultVo:
 
     @property
     def value(self):
-        """Gets the value of this ResultValueListTestResultVo.
+        r"""Gets the value of this ResultValueListTestResultVo.
 
         实际的数据类型：单个对象，集合 或 NULL
 
@@ -111,7 +111,7 @@ class ResultValueListTestResultVo:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ResultValueListTestResultVo.
+        r"""Sets the value of this ResultValueListTestResultVo.
 
         实际的数据类型：单个对象，集合 或 NULL
 
@@ -122,7 +122,7 @@ class ResultValueListTestResultVo:
 
     @property
     def reason(self):
-        """Gets the reason of this ResultValueListTestResultVo.
+        r"""Gets the reason of this ResultValueListTestResultVo.
 
         业务失败的提示内容，对内接口才有此值
 
@@ -133,7 +133,7 @@ class ResultValueListTestResultVo:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this ResultValueListTestResultVo.
+        r"""Sets the reason of this ResultValueListTestResultVo.
 
         业务失败的提示内容，对内接口才有此值
 
@@ -144,7 +144,7 @@ class ResultValueListTestResultVo:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ResultValueListTestResultVo.
+        r"""Gets the page_size of this ResultValueListTestResultVo.
 
         :return: The page_size of this ResultValueListTestResultVo.
         :rtype: int
@@ -153,7 +153,7 @@ class ResultValueListTestResultVo:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ResultValueListTestResultVo.
+        r"""Sets the page_size of this ResultValueListTestResultVo.
 
         :param page_size: The page_size of this ResultValueListTestResultVo.
         :type page_size: int
@@ -162,7 +162,7 @@ class ResultValueListTestResultVo:
 
     @property
     def page_no(self):
-        """Gets the page_no of this ResultValueListTestResultVo.
+        r"""Gets the page_no of this ResultValueListTestResultVo.
 
         :return: The page_no of this ResultValueListTestResultVo.
         :rtype: int
@@ -171,7 +171,7 @@ class ResultValueListTestResultVo:
 
     @page_no.setter
     def page_no(self, page_no):
-        """Sets the page_no of this ResultValueListTestResultVo.
+        r"""Sets the page_no of this ResultValueListTestResultVo.
 
         :param page_no: The page_no of this ResultValueListTestResultVo.
         :type page_no: int
@@ -180,7 +180,7 @@ class ResultValueListTestResultVo:
 
     @property
     def has_more(self):
-        """Gets the has_more of this ResultValueListTestResultVo.
+        r"""Gets the has_more of this ResultValueListTestResultVo.
 
         :return: The has_more of this ResultValueListTestResultVo.
         :rtype: bool
@@ -189,7 +189,7 @@ class ResultValueListTestResultVo:
 
     @has_more.setter
     def has_more(self, has_more):
-        """Sets the has_more of this ResultValueListTestResultVo.
+        r"""Sets the has_more of this ResultValueListTestResultVo.
 
         :param has_more: The has_more of this ResultValueListTestResultVo.
         :type has_more: bool

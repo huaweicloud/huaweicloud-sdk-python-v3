@@ -30,7 +30,7 @@ class ShowNodesInformationResponse(SdkResponse):
     }
 
     def __init__(self, instance_id=None, total=None, nodes=None):
-        """ShowNodesInformationResponse
+        r"""ShowNodesInformationResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowNodesInformationResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowNodesInformationResponse.
+        r"""Gets the instance_id of this ShowNodesInformationResponse.
 
         实例ID
 
@@ -69,7 +69,7 @@ class ShowNodesInformationResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowNodesInformationResponse.
+        r"""Sets the instance_id of this ShowNodesInformationResponse.
 
         实例ID
 
@@ -80,7 +80,7 @@ class ShowNodesInformationResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowNodesInformationResponse.
+        r"""Gets the total of this ShowNodesInformationResponse.
 
         节点数量
 
@@ -91,7 +91,7 @@ class ShowNodesInformationResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowNodesInformationResponse.
+        r"""Sets the total of this ShowNodesInformationResponse.
 
         节点数量
 
@@ -102,7 +102,7 @@ class ShowNodesInformationResponse(SdkResponse):
 
     @property
     def nodes(self):
-        """Gets the nodes of this ShowNodesInformationResponse.
+        r"""Gets the nodes of this ShowNodesInformationResponse.
 
         节点信息
 
@@ -113,7 +113,7 @@ class ShowNodesInformationResponse(SdkResponse):
 
     @nodes.setter
     def nodes(self, nodes):
-        """Sets the nodes of this ShowNodesInformationResponse.
+        r"""Sets the nodes of this ShowNodesInformationResponse.
 
         节点信息
 

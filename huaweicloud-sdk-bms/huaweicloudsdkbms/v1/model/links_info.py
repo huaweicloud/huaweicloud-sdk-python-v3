@@ -29,7 +29,7 @@ class LinksInfo:
     }
 
     def __init__(self, rel=None, href=None, type=None):
-        """LinksInfo
+        r"""LinksInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class LinksInfo:
 
     @property
     def rel(self):
-        """Gets the rel of this LinksInfo.
+        r"""Gets the rel of this LinksInfo.
 
         快捷链接标记名称。取值为：self：包含版本号的资源链接，需要立即跟踪时使用此类链接。bookmark：提供了适合长期存储的资源链接。
 
@@ -68,7 +68,7 @@ class LinksInfo:
 
     @rel.setter
     def rel(self, rel):
-        """Sets the rel of this LinksInfo.
+        r"""Sets the rel of this LinksInfo.
 
         快捷链接标记名称。取值为：self：包含版本号的资源链接，需要立即跟踪时使用此类链接。bookmark：提供了适合长期存储的资源链接。
 
@@ -79,7 +79,7 @@ class LinksInfo:
 
     @property
     def href(self):
-        """Gets the href of this LinksInfo.
+        r"""Gets the href of this LinksInfo.
 
         对应快捷链接
 
@@ -90,7 +90,7 @@ class LinksInfo:
 
     @href.setter
     def href(self, href):
-        """Sets the href of this LinksInfo.
+        r"""Sets the href of this LinksInfo.
 
         对应快捷链接
 
@@ -101,7 +101,7 @@ class LinksInfo:
 
     @property
     def type(self):
-        """Gets the type of this LinksInfo.
+        r"""Gets the type of this LinksInfo.
 
         快捷链接类型
 
@@ -112,7 +112,7 @@ class LinksInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this LinksInfo.
+        r"""Sets the type of this LinksInfo.
 
         快捷链接类型
 

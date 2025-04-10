@@ -31,7 +31,7 @@ class RegisterAuthorizedQueueRequestBody:
     }
 
     def __init__(self, queue_name=None, user_name=None, action=None, privileges=None):
-        """RegisterAuthorizedQueueRequestBody
+        r"""RegisterAuthorizedQueueRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class RegisterAuthorizedQueueRequestBody:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this RegisterAuthorizedQueueRequestBody.
+        r"""Gets the queue_name of this RegisterAuthorizedQueueRequestBody.
 
         队列名称。
 
@@ -71,7 +71,7 @@ class RegisterAuthorizedQueueRequestBody:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this RegisterAuthorizedQueueRequestBody.
+        r"""Sets the queue_name of this RegisterAuthorizedQueueRequestBody.
 
         队列名称。
 
@@ -82,7 +82,7 @@ class RegisterAuthorizedQueueRequestBody:
 
     @property
     def user_name(self):
-        """Gets the user_name of this RegisterAuthorizedQueueRequestBody.
+        r"""Gets the user_name of this RegisterAuthorizedQueueRequestBody.
 
         被赋权用户名称。给该用户赋使用队列的权限，回收其使用权限，或者更新其使用权限。
 
@@ -93,7 +93,7 @@ class RegisterAuthorizedQueueRequestBody:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this RegisterAuthorizedQueueRequestBody.
+        r"""Sets the user_name of this RegisterAuthorizedQueueRequestBody.
 
         被赋权用户名称。给该用户赋使用队列的权限，回收其使用权限，或者更新其使用权限。
 
@@ -104,7 +104,7 @@ class RegisterAuthorizedQueueRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this RegisterAuthorizedQueueRequestBody.
+        r"""Gets the action of this RegisterAuthorizedQueueRequestBody.
 
         指定赋权或回收。值为：grant，revoke或update。当用户同时拥有grant和revoke权限的时候才有权限使用update操作。 grant：赋权。 revoke：回收权限。 update：清空原来的所有权限，赋予本次提供的权限数组中的权限。
 
@@ -115,7 +115,7 @@ class RegisterAuthorizedQueueRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this RegisterAuthorizedQueueRequestBody.
+        r"""Sets the action of this RegisterAuthorizedQueueRequestBody.
 
         指定赋权或回收。值为：grant，revoke或update。当用户同时拥有grant和revoke权限的时候才有权限使用update操作。 grant：赋权。 revoke：回收权限。 update：清空原来的所有权限，赋予本次提供的权限数组中的权限。
 
@@ -126,7 +126,7 @@ class RegisterAuthorizedQueueRequestBody:
 
     @property
     def privileges(self):
-        """Gets the privileges of this RegisterAuthorizedQueueRequestBody.
+        r"""Gets the privileges of this RegisterAuthorizedQueueRequestBody.
 
         待赋权、回收或更新的权限列表。可操作的权限可以是以下三种权限中的一种或多种。 SUBMIT_JOB：提交作业 CANCEL_JOB ：取消作业 DROP_QUEUE ：删除队列 说明： 若需更新的权限列表为空，则表示回收用户在该队列的所有权限。
 
@@ -137,7 +137,7 @@ class RegisterAuthorizedQueueRequestBody:
 
     @privileges.setter
     def privileges(self, privileges):
-        """Sets the privileges of this RegisterAuthorizedQueueRequestBody.
+        r"""Sets the privileges of this RegisterAuthorizedQueueRequestBody.
 
         待赋权、回收或更新的权限列表。可操作的权限可以是以下三种权限中的一种或多种。 SUBMIT_JOB：提交作业 CANCEL_JOB ：取消作业 DROP_QUEUE ：删除队列 说明： 若需更新的权限列表为空，则表示回收用户在该队列的所有权限。
 

@@ -30,7 +30,7 @@ class CreateInstanceAccessControlAttributeConfigurationRequest:
     }
 
     def __init__(self, instance_id=None, x_security_token=None, body=None):
-        """CreateInstanceAccessControlAttributeConfigurationRequest
+        r"""CreateInstanceAccessControlAttributeConfigurationRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CreateInstanceAccessControlAttributeConfigurationRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateInstanceAccessControlAttributeConfigurationRequest.
+        r"""Gets the instance_id of this CreateInstanceAccessControlAttributeConfigurationRequest.
 
         IAM身份中心实例的全局唯一标识符（ID）。
 
@@ -68,7 +68,7 @@ class CreateInstanceAccessControlAttributeConfigurationRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateInstanceAccessControlAttributeConfigurationRequest.
+        r"""Sets the instance_id of this CreateInstanceAccessControlAttributeConfigurationRequest.
 
         IAM身份中心实例的全局唯一标识符（ID）。
 
@@ -79,7 +79,7 @@ class CreateInstanceAccessControlAttributeConfigurationRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this CreateInstanceAccessControlAttributeConfigurationRequest.
+        r"""Gets the x_security_token of this CreateInstanceAccessControlAttributeConfigurationRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -90,7 +90,7 @@ class CreateInstanceAccessControlAttributeConfigurationRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this CreateInstanceAccessControlAttributeConfigurationRequest.
+        r"""Sets the x_security_token of this CreateInstanceAccessControlAttributeConfigurationRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -101,7 +101,7 @@ class CreateInstanceAccessControlAttributeConfigurationRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateInstanceAccessControlAttributeConfigurationRequest.
+        r"""Gets the body of this CreateInstanceAccessControlAttributeConfigurationRequest.
 
         :return: The body of this CreateInstanceAccessControlAttributeConfigurationRequest.
         :rtype: :class:`huaweicloudsdkidentitycenter.v1.CreateInstanceAccessControlAttributeConfigurationReqBody`
@@ -110,7 +110,7 @@ class CreateInstanceAccessControlAttributeConfigurationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateInstanceAccessControlAttributeConfigurationRequest.
+        r"""Sets the body of this CreateInstanceAccessControlAttributeConfigurationRequest.
 
         :param body: The body of this CreateInstanceAccessControlAttributeConfigurationRequest.
         :type body: :class:`huaweicloudsdkidentitycenter.v1.CreateInstanceAccessControlAttributeConfigurationReqBody`

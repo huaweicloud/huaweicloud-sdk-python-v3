@@ -55,7 +55,7 @@ class BackendApi:
     }
 
     def __init__(self, authorizer_id=None, url_domain=None, req_protocol=None, remark=None, req_method=None, version=None, req_uri=None, timeout=None, enable_client_ssl=None, retry_count=None, id=None, status=None, register_time=None, update_time=None, vpc_channel_info=None, vpc_channel_status=None):
-        """BackendApi
+        r"""BackendApi
 
         The model defined in huaweicloud sdk
 
@@ -144,7 +144,7 @@ class BackendApi:
 
     @property
     def authorizer_id(self):
-        """Gets the authorizer_id of this BackendApi.
+        r"""Gets the authorizer_id of this BackendApi.
 
         后端自定义认证对象的ID
 
@@ -155,7 +155,7 @@ class BackendApi:
 
     @authorizer_id.setter
     def authorizer_id(self, authorizer_id):
-        """Sets the authorizer_id of this BackendApi.
+        r"""Sets the authorizer_id of this BackendApi.
 
         后端自定义认证对象的ID
 
@@ -166,7 +166,7 @@ class BackendApi:
 
     @property
     def url_domain(self):
-        """Gets the url_domain of this BackendApi.
+        r"""Gets the url_domain of this BackendApi.
 
         后端服务的地址。不使用vpc通道时,url_domain为必填。   由主机（IP或域名）和端口号组成，总长度不超过255。格式为主机:端口（如：apig.example.com:7443）。如果不写端口，则HTTPS默认端口号为443，HTTP默认端口号为80。   支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、下划线、中划线组成，且只能以英文开头
 
@@ -177,7 +177,7 @@ class BackendApi:
 
     @url_domain.setter
     def url_domain(self, url_domain):
-        """Sets the url_domain of this BackendApi.
+        r"""Sets the url_domain of this BackendApi.
 
         后端服务的地址。不使用vpc通道时,url_domain为必填。   由主机（IP或域名）和端口号组成，总长度不超过255。格式为主机:端口（如：apig.example.com:7443）。如果不写端口，则HTTPS默认端口号为443，HTTP默认端口号为80。   支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、下划线、中划线组成，且只能以英文开头
 
@@ -188,7 +188,7 @@ class BackendApi:
 
     @property
     def req_protocol(self):
-        """Gets the req_protocol of this BackendApi.
+        r"""Gets the req_protocol of this BackendApi.
 
         请求协议
 
@@ -199,7 +199,7 @@ class BackendApi:
 
     @req_protocol.setter
     def req_protocol(self, req_protocol):
-        """Sets the req_protocol of this BackendApi.
+        r"""Sets the req_protocol of this BackendApi.
 
         请求协议
 
@@ -210,7 +210,7 @@ class BackendApi:
 
     @property
     def remark(self):
-        """Gets the remark of this BackendApi.
+        r"""Gets the remark of this BackendApi.
 
         描述。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -221,7 +221,7 @@ class BackendApi:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this BackendApi.
+        r"""Sets the remark of this BackendApi.
 
         描述。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -232,7 +232,7 @@ class BackendApi:
 
     @property
     def req_method(self):
-        """Gets the req_method of this BackendApi.
+        r"""Gets the req_method of this BackendApi.
 
         请求方式
 
@@ -243,7 +243,7 @@ class BackendApi:
 
     @req_method.setter
     def req_method(self, req_method):
-        """Sets the req_method of this BackendApi.
+        r"""Sets the req_method of this BackendApi.
 
         请求方式
 
@@ -254,7 +254,7 @@ class BackendApi:
 
     @property
     def version(self):
-        """Gets the version of this BackendApi.
+        r"""Gets the version of this BackendApi.
 
         web后端版本，字符长度不超过16
 
@@ -265,7 +265,7 @@ class BackendApi:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this BackendApi.
+        r"""Sets the version of this BackendApi.
 
         web后端版本，字符长度不超过16
 
@@ -276,7 +276,7 @@ class BackendApi:
 
     @property
     def req_uri(self):
-        """Gets the req_uri of this BackendApi.
+        r"""Gets the req_uri of this BackendApi.
 
         请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ .等特殊字符，总长度不超过512，且满足URI规范。  支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。  > 需要服从URI规范。
 
@@ -287,7 +287,7 @@ class BackendApi:
 
     @req_uri.setter
     def req_uri(self, req_uri):
-        """Sets the req_uri of this BackendApi.
+        r"""Sets the req_uri of this BackendApi.
 
         请求地址。可以包含请求参数，用{}标识，比如/getUserInfo/{userId}，支持 * % - _ .等特殊字符，总长度不超过512，且满足URI规范。  支持环境变量，使用环境变量时，每个变量名的长度为3 ~ 32位的字符串，字符串由英文字母、数字、中划线、下划线组成，且只能以英文开头。  > 需要服从URI规范。
 
@@ -298,7 +298,7 @@ class BackendApi:
 
     @property
     def timeout(self):
-        """Gets the timeout of this BackendApi.
+        r"""Gets the timeout of this BackendApi.
 
         服务集成请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000  单位：毫秒。
 
@@ -309,7 +309,7 @@ class BackendApi:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this BackendApi.
+        r"""Sets the timeout of this BackendApi.
 
         服务集成请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000  单位：毫秒。
 
@@ -320,7 +320,7 @@ class BackendApi:
 
     @property
     def enable_client_ssl(self):
-        """Gets the enable_client_ssl of this BackendApi.
+        r"""Gets the enable_client_ssl of this BackendApi.
 
         是否开启双向认证
 
@@ -331,7 +331,7 @@ class BackendApi:
 
     @enable_client_ssl.setter
     def enable_client_ssl(self, enable_client_ssl):
-        """Sets the enable_client_ssl of this BackendApi.
+        r"""Sets the enable_client_ssl of this BackendApi.
 
         是否开启双向认证
 
@@ -342,7 +342,7 @@ class BackendApi:
 
     @property
     def retry_count(self):
-        """Gets the retry_count of this BackendApi.
+        r"""Gets the retry_count of this BackendApi.
 
         服务集成请求后端服务的重试次数，默认为-1，范围[-1,10]
 
@@ -353,7 +353,7 @@ class BackendApi:
 
     @retry_count.setter
     def retry_count(self, retry_count):
-        """Sets the retry_count of this BackendApi.
+        r"""Sets the retry_count of this BackendApi.
 
         服务集成请求后端服务的重试次数，默认为-1，范围[-1,10]
 
@@ -364,7 +364,7 @@ class BackendApi:
 
     @property
     def id(self):
-        """Gets the id of this BackendApi.
+        r"""Gets the id of this BackendApi.
 
         编号
 
@@ -375,7 +375,7 @@ class BackendApi:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BackendApi.
+        r"""Sets the id of this BackendApi.
 
         编号
 
@@ -386,7 +386,7 @@ class BackendApi:
 
     @property
     def status(self):
-        """Gets the status of this BackendApi.
+        r"""Gets the status of this BackendApi.
 
         后端状态   - 1： 有效
 
@@ -397,7 +397,7 @@ class BackendApi:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this BackendApi.
+        r"""Sets the status of this BackendApi.
 
         后端状态   - 1： 有效
 
@@ -408,7 +408,7 @@ class BackendApi:
 
     @property
     def register_time(self):
-        """Gets the register_time of this BackendApi.
+        r"""Gets the register_time of this BackendApi.
 
         注册时间
 
@@ -419,7 +419,7 @@ class BackendApi:
 
     @register_time.setter
     def register_time(self, register_time):
-        """Sets the register_time of this BackendApi.
+        r"""Sets the register_time of this BackendApi.
 
         注册时间
 
@@ -430,7 +430,7 @@ class BackendApi:
 
     @property
     def update_time(self):
-        """Gets the update_time of this BackendApi.
+        r"""Gets the update_time of this BackendApi.
 
         修改时间
 
@@ -441,7 +441,7 @@ class BackendApi:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this BackendApi.
+        r"""Sets the update_time of this BackendApi.
 
         修改时间
 
@@ -452,7 +452,7 @@ class BackendApi:
 
     @property
     def vpc_channel_info(self):
-        """Gets the vpc_channel_info of this BackendApi.
+        r"""Gets the vpc_channel_info of this BackendApi.
 
         :return: The vpc_channel_info of this BackendApi.
         :rtype: :class:`huaweicloudsdkroma.v2.VpcInfo`
@@ -461,7 +461,7 @@ class BackendApi:
 
     @vpc_channel_info.setter
     def vpc_channel_info(self, vpc_channel_info):
-        """Sets the vpc_channel_info of this BackendApi.
+        r"""Sets the vpc_channel_info of this BackendApi.
 
         :param vpc_channel_info: The vpc_channel_info of this BackendApi.
         :type vpc_channel_info: :class:`huaweicloudsdkroma.v2.VpcInfo`
@@ -470,7 +470,7 @@ class BackendApi:
 
     @property
     def vpc_channel_status(self):
-        """Gets the vpc_channel_status of this BackendApi.
+        r"""Gets the vpc_channel_status of this BackendApi.
 
         是否使用VPC通道 - 1：使用VPC通道 - 2：不使用VPC通道
 
@@ -481,7 +481,7 @@ class BackendApi:
 
     @vpc_channel_status.setter
     def vpc_channel_status(self, vpc_channel_status):
-        """Sets the vpc_channel_status of this BackendApi.
+        r"""Sets the vpc_channel_status of this BackendApi.
 
         是否使用VPC通道 - 1：使用VPC通道 - 2：不使用VPC通道
 

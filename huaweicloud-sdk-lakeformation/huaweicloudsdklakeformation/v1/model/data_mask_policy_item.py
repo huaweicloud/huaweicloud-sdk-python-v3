@@ -37,7 +37,7 @@ class DataMaskPolicyItem:
     }
 
     def __init__(self, accesses=None, conditions=None, data_mask_info=None, delegate_admin=None, groups=None, roles=None, users=None):
-        """DataMaskPolicyItem
+        r"""DataMaskPolicyItem
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class DataMaskPolicyItem:
 
     @property
     def accesses(self):
-        """Gets the accesses of this DataMaskPolicyItem.
+        r"""Gets the accesses of this DataMaskPolicyItem.
 
         访问数组
 
@@ -96,7 +96,7 @@ class DataMaskPolicyItem:
 
     @accesses.setter
     def accesses(self, accesses):
-        """Sets the accesses of this DataMaskPolicyItem.
+        r"""Sets the accesses of this DataMaskPolicyItem.
 
         访问数组
 
@@ -107,7 +107,7 @@ class DataMaskPolicyItem:
 
     @property
     def conditions(self):
-        """Gets the conditions of this DataMaskPolicyItem.
+        r"""Gets the conditions of this DataMaskPolicyItem.
 
         条件数组
 
@@ -118,7 +118,7 @@ class DataMaskPolicyItem:
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this DataMaskPolicyItem.
+        r"""Sets the conditions of this DataMaskPolicyItem.
 
         条件数组
 
@@ -129,7 +129,7 @@ class DataMaskPolicyItem:
 
     @property
     def data_mask_info(self):
-        """Gets the data_mask_info of this DataMaskPolicyItem.
+        r"""Gets the data_mask_info of this DataMaskPolicyItem.
 
         :return: The data_mask_info of this DataMaskPolicyItem.
         :rtype: :class:`huaweicloudsdklakeformation.v1.PolicyItemDataMaskInfo`
@@ -138,7 +138,7 @@ class DataMaskPolicyItem:
 
     @data_mask_info.setter
     def data_mask_info(self, data_mask_info):
-        """Sets the data_mask_info of this DataMaskPolicyItem.
+        r"""Sets the data_mask_info of this DataMaskPolicyItem.
 
         :param data_mask_info: The data_mask_info of this DataMaskPolicyItem.
         :type data_mask_info: :class:`huaweicloudsdklakeformation.v1.PolicyItemDataMaskInfo`
@@ -147,7 +147,7 @@ class DataMaskPolicyItem:
 
     @property
     def delegate_admin(self):
-        """Gets the delegate_admin of this DataMaskPolicyItem.
+        r"""Gets the delegate_admin of this DataMaskPolicyItem.
 
         是否支持传递
 
@@ -158,7 +158,7 @@ class DataMaskPolicyItem:
 
     @delegate_admin.setter
     def delegate_admin(self, delegate_admin):
-        """Sets the delegate_admin of this DataMaskPolicyItem.
+        r"""Sets the delegate_admin of this DataMaskPolicyItem.
 
         是否支持传递
 
@@ -169,7 +169,7 @@ class DataMaskPolicyItem:
 
     @property
     def groups(self):
-        """Gets the groups of this DataMaskPolicyItem.
+        r"""Gets the groups of this DataMaskPolicyItem.
 
         用户组
 
@@ -180,7 +180,7 @@ class DataMaskPolicyItem:
 
     @groups.setter
     def groups(self, groups):
-        """Sets the groups of this DataMaskPolicyItem.
+        r"""Sets the groups of this DataMaskPolicyItem.
 
         用户组
 
@@ -191,7 +191,7 @@ class DataMaskPolicyItem:
 
     @property
     def roles(self):
-        """Gets the roles of this DataMaskPolicyItem.
+        r"""Gets the roles of this DataMaskPolicyItem.
 
         角色
 
@@ -202,7 +202,7 @@ class DataMaskPolicyItem:
 
     @roles.setter
     def roles(self, roles):
-        """Sets the roles of this DataMaskPolicyItem.
+        r"""Sets the roles of this DataMaskPolicyItem.
 
         角色
 
@@ -213,7 +213,7 @@ class DataMaskPolicyItem:
 
     @property
     def users(self):
-        """Gets the users of this DataMaskPolicyItem.
+        r"""Gets the users of this DataMaskPolicyItem.
 
         用户
 
@@ -224,7 +224,7 @@ class DataMaskPolicyItem:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this DataMaskPolicyItem.
+        r"""Sets the users of this DataMaskPolicyItem.
 
         用户
 

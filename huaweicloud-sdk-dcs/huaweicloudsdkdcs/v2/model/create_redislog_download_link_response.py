@@ -30,7 +30,7 @@ class CreateRedislogDownloadLinkResponse(SdkResponse):
     }
 
     def __init__(self, id=None, backup_id=None, link=None):
-        """CreateRedislogDownloadLinkResponse
+        r"""CreateRedislogDownloadLinkResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateRedislogDownloadLinkResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateRedislogDownloadLinkResponse.
+        r"""Gets the id of this CreateRedislogDownloadLinkResponse.
 
         日志id
 
@@ -69,7 +69,7 @@ class CreateRedislogDownloadLinkResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateRedislogDownloadLinkResponse.
+        r"""Sets the id of this CreateRedislogDownloadLinkResponse.
 
         日志id
 
@@ -80,7 +80,7 @@ class CreateRedislogDownloadLinkResponse(SdkResponse):
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this CreateRedislogDownloadLinkResponse.
+        r"""Gets the backup_id of this CreateRedislogDownloadLinkResponse.
 
         后台任务id
 
@@ -91,7 +91,7 @@ class CreateRedislogDownloadLinkResponse(SdkResponse):
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this CreateRedislogDownloadLinkResponse.
+        r"""Sets the backup_id of this CreateRedislogDownloadLinkResponse.
 
         后台任务id
 
@@ -102,7 +102,7 @@ class CreateRedislogDownloadLinkResponse(SdkResponse):
 
     @property
     def link(self):
-        """Gets the link of this CreateRedislogDownloadLinkResponse.
+        r"""Gets the link of this CreateRedislogDownloadLinkResponse.
 
         日志下载链接，默认有效时间为24小时
 
@@ -113,7 +113,7 @@ class CreateRedislogDownloadLinkResponse(SdkResponse):
 
     @link.setter
     def link(self, link):
-        """Sets the link of this CreateRedislogDownloadLinkResponse.
+        r"""Sets the link of this CreateRedislogDownloadLinkResponse.
 
         日志下载链接，默认有效时间为24小时
 

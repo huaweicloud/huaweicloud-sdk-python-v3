@@ -25,7 +25,7 @@ class BatchDetachInternetBandwidthRequest:
     }
 
     def __init__(self, body=None):
-        """BatchDetachInternetBandwidthRequest
+        r"""BatchDetachInternetBandwidthRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDetachInternetBandwidthRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDetachInternetBandwidthRequest.
+        r"""Gets the body of this BatchDetachInternetBandwidthRequest.
 
         :return: The body of this BatchDetachInternetBandwidthRequest.
         :rtype: :class:`huaweicloudsdkgeip.v3.BatchDetachInternetBandwidthsGlobalEipRequestBody`
@@ -52,7 +52,7 @@ class BatchDetachInternetBandwidthRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDetachInternetBandwidthRequest.
+        r"""Sets the body of this BatchDetachInternetBandwidthRequest.
 
         :param body: The body of this BatchDetachInternetBandwidthRequest.
         :type body: :class:`huaweicloudsdkgeip.v3.BatchDetachInternetBandwidthsGlobalEipRequestBody`

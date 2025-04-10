@@ -39,7 +39,7 @@ class NodeResult:
     }
 
     def __init__(self, id=None, name=None, role=None, status=None, availability_zone=None, private_ip=None, public_ip=None, component_names=None):
-        """NodeResult
+        r"""NodeResult
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class NodeResult:
 
     @property
     def id(self):
-        """Gets the id of this NodeResult.
+        r"""Gets the id of this NodeResult.
 
         节点ID。
 
@@ -96,7 +96,7 @@ class NodeResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NodeResult.
+        r"""Sets the id of this NodeResult.
 
         节点ID。
 
@@ -107,7 +107,7 @@ class NodeResult:
 
     @property
     def name(self):
-        """Gets the name of this NodeResult.
+        r"""Gets the name of this NodeResult.
 
         节点名称。
 
@@ -118,7 +118,7 @@ class NodeResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NodeResult.
+        r"""Sets the name of this NodeResult.
 
         节点名称。
 
@@ -129,7 +129,7 @@ class NodeResult:
 
     @property
     def role(self):
-        """Gets the role of this NodeResult.
+        r"""Gets the role of this NodeResult.
 
         节点类型，取值为“master”、“slave”，分别对应于主节点、备节点。
 
@@ -140,7 +140,7 @@ class NodeResult:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this NodeResult.
+        r"""Sets the role of this NodeResult.
 
         节点类型，取值为“master”、“slave”，分别对应于主节点、备节点。
 
@@ -151,7 +151,7 @@ class NodeResult:
 
     @property
     def status(self):
-        """Gets the status of this NodeResult.
+        r"""Gets the status of this NodeResult.
 
         节点状态。
 
@@ -162,7 +162,7 @@ class NodeResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this NodeResult.
+        r"""Sets the status of this NodeResult.
 
         节点状态。
 
@@ -173,7 +173,7 @@ class NodeResult:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this NodeResult.
+        r"""Gets the availability_zone of this NodeResult.
 
         可用区。
 
@@ -184,7 +184,7 @@ class NodeResult:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this NodeResult.
+        r"""Sets the availability_zone of this NodeResult.
 
         可用区。
 
@@ -195,7 +195,7 @@ class NodeResult:
 
     @property
     def private_ip(self):
-        """Gets the private_ip of this NodeResult.
+        r"""Gets the private_ip of this NodeResult.
 
         节点内网IP。分布式实例类型下该参数仅针对CN节点有效，主备版实例类型下该参数对所有节点有效，且在弹性云服务器创建成功后参数值存在。
 
@@ -206,7 +206,7 @@ class NodeResult:
 
     @private_ip.setter
     def private_ip(self, private_ip):
-        """Sets the private_ip of this NodeResult.
+        r"""Sets the private_ip of this NodeResult.
 
         节点内网IP。分布式实例类型下该参数仅针对CN节点有效，主备版实例类型下该参数对所有节点有效，且在弹性云服务器创建成功后参数值存在。
 
@@ -217,7 +217,7 @@ class NodeResult:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this NodeResult.
+        r"""Gets the public_ip of this NodeResult.
 
         绑定的外网IP。分布式实例类型下该参数仅针对CN节点有效，主备版实例类型下该参数对所有节点有效，且在弹性云服务器创建成功并绑定弹性公网IP后参数值存在。
 
@@ -228,7 +228,7 @@ class NodeResult:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this NodeResult.
+        r"""Sets the public_ip of this NodeResult.
 
         绑定的外网IP。分布式实例类型下该参数仅针对CN节点有效，主备版实例类型下该参数对所有节点有效，且在弹性云服务器创建成功并绑定弹性公网IP后参数值存在。
 
@@ -239,7 +239,7 @@ class NodeResult:
 
     @property
     def component_names(self):
-        """Gets the component_names of this NodeResult.
+        r"""Gets the component_names of this NodeResult.
 
         节点上组件信息（例组件ID:分布式ID），多个组件信息用;隔开。
 
@@ -250,7 +250,7 @@ class NodeResult:
 
     @component_names.setter
     def component_names(self, component_names):
-        """Sets the component_names of this NodeResult.
+        r"""Sets the component_names of this NodeResult.
 
         节点上组件信息（例组件ID:分布式ID），多个组件信息用;隔开。
 

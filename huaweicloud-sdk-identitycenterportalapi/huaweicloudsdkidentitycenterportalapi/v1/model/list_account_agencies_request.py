@@ -32,7 +32,7 @@ class ListAccountAgenciesRequest:
     }
 
     def __init__(self, access_token=None, limit=None, marker=None, account_id=None):
-        """ListAccountAgenciesRequest
+        r"""ListAccountAgenciesRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListAccountAgenciesRequest:
 
     @property
     def access_token(self):
-        """Gets the access_token of this ListAccountAgenciesRequest.
+        r"""Gets the access_token of this ListAccountAgenciesRequest.
 
         创建令牌接口调用签发的访问令牌
 
@@ -74,7 +74,7 @@ class ListAccountAgenciesRequest:
 
     @access_token.setter
     def access_token(self, access_token):
-        """Sets the access_token of this ListAccountAgenciesRequest.
+        r"""Sets the access_token of this ListAccountAgenciesRequest.
 
         创建令牌接口调用签发的访问令牌
 
@@ -85,7 +85,7 @@ class ListAccountAgenciesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAccountAgenciesRequest.
+        r"""Gets the limit of this ListAccountAgenciesRequest.
 
         页面中最大结果数量。
 
@@ -96,7 +96,7 @@ class ListAccountAgenciesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAccountAgenciesRequest.
+        r"""Sets the limit of this ListAccountAgenciesRequest.
 
         页面中最大结果数量。
 
@@ -107,7 +107,7 @@ class ListAccountAgenciesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListAccountAgenciesRequest.
+        r"""Gets the marker of this ListAccountAgenciesRequest.
 
         分页标记。非分页的接口，不使用该值。
 
@@ -118,7 +118,7 @@ class ListAccountAgenciesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListAccountAgenciesRequest.
+        r"""Sets the marker of this ListAccountAgenciesRequest.
 
         分页标记。非分页的接口，不使用该值。
 
@@ -129,7 +129,7 @@ class ListAccountAgenciesRequest:
 
     @property
     def account_id(self):
-        """Gets the account_id of this ListAccountAgenciesRequest.
+        r"""Gets the account_id of this ListAccountAgenciesRequest.
 
         帐户的全局唯一标识符（ID）
 
@@ -140,7 +140,7 @@ class ListAccountAgenciesRequest:
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this ListAccountAgenciesRequest.
+        r"""Sets the account_id of this ListAccountAgenciesRequest.
 
         帐户的全局唯一标识符（ID）
 

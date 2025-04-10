@@ -25,7 +25,7 @@ class UpdateIndicatorRequestBody:
     }
 
     def __init__(self, data_object=None):
-        """UpdateIndicatorRequestBody
+        r"""UpdateIndicatorRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateIndicatorRequestBody:
 
     @property
     def data_object(self):
-        """Gets the data_object of this UpdateIndicatorRequestBody.
+        r"""Gets the data_object of this UpdateIndicatorRequestBody.
 
         :return: The data_object of this UpdateIndicatorRequestBody.
         :rtype: :class:`huaweicloudsdksecmaster.v2.IndicatorDataObjectDetail`
@@ -52,7 +52,7 @@ class UpdateIndicatorRequestBody:
 
     @data_object.setter
     def data_object(self, data_object):
-        """Sets the data_object of this UpdateIndicatorRequestBody.
+        r"""Sets the data_object of this UpdateIndicatorRequestBody.
 
         :param data_object: The data_object of this UpdateIndicatorRequestBody.
         :type data_object: :class:`huaweicloudsdksecmaster.v2.IndicatorDataObjectDetail`

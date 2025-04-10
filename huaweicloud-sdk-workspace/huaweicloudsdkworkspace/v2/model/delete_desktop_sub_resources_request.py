@@ -27,7 +27,7 @@ class DeleteDesktopSubResourcesRequest:
     }
 
     def __init__(self, service_transaction_id=None, body=None):
-        """DeleteDesktopSubResourcesRequest
+        r"""DeleteDesktopSubResourcesRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DeleteDesktopSubResourcesRequest:
 
     @property
     def service_transaction_id(self):
-        """Gets the service_transaction_id of this DeleteDesktopSubResourcesRequest.
+        r"""Gets the service_transaction_id of this DeleteDesktopSubResourcesRequest.
 
         CBC接口回调时，请求头里带上的业务ID
 
@@ -61,7 +61,7 @@ class DeleteDesktopSubResourcesRequest:
 
     @service_transaction_id.setter
     def service_transaction_id(self, service_transaction_id):
-        """Sets the service_transaction_id of this DeleteDesktopSubResourcesRequest.
+        r"""Sets the service_transaction_id of this DeleteDesktopSubResourcesRequest.
 
         CBC接口回调时，请求头里带上的业务ID
 
@@ -72,7 +72,7 @@ class DeleteDesktopSubResourcesRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteDesktopSubResourcesRequest.
+        r"""Gets the body of this DeleteDesktopSubResourcesRequest.
 
         :return: The body of this DeleteDesktopSubResourcesRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.DeleteDesktopSubResourcesReq`
@@ -81,7 +81,7 @@ class DeleteDesktopSubResourcesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteDesktopSubResourcesRequest.
+        r"""Sets the body of this DeleteDesktopSubResourcesRequest.
 
         :param body: The body of this DeleteDesktopSubResourcesRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.DeleteDesktopSubResourcesReq`

@@ -28,7 +28,7 @@ class DisableDomainResponse(SdkResponse):
     }
 
     def __init__(self, domain=None, x_request_id=None):
-        """DisableDomainResponse
+        r"""DisableDomainResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class DisableDomainResponse(SdkResponse):
 
     @property
     def domain(self):
-        """Gets the domain of this DisableDomainResponse.
+        r"""Gets the domain of this DisableDomainResponse.
 
         :return: The domain of this DisableDomainResponse.
         :rtype: :class:`huaweicloudsdkcdn.v2.DomainsWithPort`
@@ -60,7 +60,7 @@ class DisableDomainResponse(SdkResponse):
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this DisableDomainResponse.
+        r"""Sets the domain of this DisableDomainResponse.
 
         :param domain: The domain of this DisableDomainResponse.
         :type domain: :class:`huaweicloudsdkcdn.v2.DomainsWithPort`
@@ -69,7 +69,7 @@ class DisableDomainResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DisableDomainResponse.
+        r"""Gets the x_request_id of this DisableDomainResponse.
 
         :return: The x_request_id of this DisableDomainResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class DisableDomainResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DisableDomainResponse.
+        r"""Sets the x_request_id of this DisableDomainResponse.
 
         :param x_request_id: The x_request_id of this DisableDomainResponse.
         :type x_request_id: str

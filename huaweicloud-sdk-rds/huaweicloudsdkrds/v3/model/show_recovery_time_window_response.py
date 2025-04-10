@@ -28,7 +28,7 @@ class ShowRecoveryTimeWindowResponse(SdkResponse):
     }
 
     def __init__(self, recovery_min_time=None, recovery_max_time=None):
-        """ShowRecoveryTimeWindowResponse
+        r"""ShowRecoveryTimeWindowResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowRecoveryTimeWindowResponse(SdkResponse):
 
     @property
     def recovery_min_time(self):
-        """Gets the recovery_min_time of this ShowRecoveryTimeWindowResponse.
+        r"""Gets the recovery_min_time of this ShowRecoveryTimeWindowResponse.
 
         恢复时间窗左边界（不包含）
 
@@ -62,7 +62,7 @@ class ShowRecoveryTimeWindowResponse(SdkResponse):
 
     @recovery_min_time.setter
     def recovery_min_time(self, recovery_min_time):
-        """Sets the recovery_min_time of this ShowRecoveryTimeWindowResponse.
+        r"""Sets the recovery_min_time of this ShowRecoveryTimeWindowResponse.
 
         恢复时间窗左边界（不包含）
 
@@ -73,7 +73,7 @@ class ShowRecoveryTimeWindowResponse(SdkResponse):
 
     @property
     def recovery_max_time(self):
-        """Gets the recovery_max_time of this ShowRecoveryTimeWindowResponse.
+        r"""Gets the recovery_max_time of this ShowRecoveryTimeWindowResponse.
 
         恢复时间窗右边界（包含）
 
@@ -84,7 +84,7 @@ class ShowRecoveryTimeWindowResponse(SdkResponse):
 
     @recovery_max_time.setter
     def recovery_max_time(self, recovery_max_time):
-        """Sets the recovery_max_time of this ShowRecoveryTimeWindowResponse.
+        r"""Sets the recovery_max_time of this ShowRecoveryTimeWindowResponse.
 
         恢复时间窗右边界（包含）
 

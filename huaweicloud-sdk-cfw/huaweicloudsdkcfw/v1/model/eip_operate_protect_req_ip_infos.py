@@ -29,7 +29,7 @@ class EipOperateProtectReqIpInfos:
     }
 
     def __init__(self, id=None, public_ip=None, public_ipv6=None):
-        """EipOperateProtectReqIpInfos
+        r"""EipOperateProtectReqIpInfos
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class EipOperateProtectReqIpInfos:
 
     @property
     def id(self):
-        """Gets the id of this EipOperateProtectReqIpInfos.
+        r"""Gets the id of this EipOperateProtectReqIpInfos.
 
         弹性公网IP ID，可通过调用弹性IP列表查询接口获得，通过返回值中的data.records.id（.表示各对象之间层级的区分）获得。
 
@@ -68,7 +68,7 @@ class EipOperateProtectReqIpInfos:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EipOperateProtectReqIpInfos.
+        r"""Sets the id of this EipOperateProtectReqIpInfos.
 
         弹性公网IP ID，可通过调用弹性IP列表查询接口获得，通过返回值中的data.records.id（.表示各对象之间层级的区分）获得。
 
@@ -79,7 +79,7 @@ class EipOperateProtectReqIpInfos:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this EipOperateProtectReqIpInfos.
+        r"""Gets the public_ip of this EipOperateProtectReqIpInfos.
 
         弹性公网IP IPv4地址，可通过调用弹性IP列表查询接口获得，通过返回值中的data.records.public_ip（.表示各对象之间层级的区分）获得。
 
@@ -90,7 +90,7 @@ class EipOperateProtectReqIpInfos:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this EipOperateProtectReqIpInfos.
+        r"""Sets the public_ip of this EipOperateProtectReqIpInfos.
 
         弹性公网IP IPv4地址，可通过调用弹性IP列表查询接口获得，通过返回值中的data.records.public_ip（.表示各对象之间层级的区分）获得。
 
@@ -101,7 +101,7 @@ class EipOperateProtectReqIpInfos:
 
     @property
     def public_ipv6(self):
-        """Gets the public_ipv6 of this EipOperateProtectReqIpInfos.
+        r"""Gets the public_ipv6 of this EipOperateProtectReqIpInfos.
 
         弹性公网IP IPv6地址，可通过调用弹性IP列表查询接口获得，通过返回值中的data.records.public_ipv6（.表示各对象之间层级的区分）获得。
 
@@ -112,7 +112,7 @@ class EipOperateProtectReqIpInfos:
 
     @public_ipv6.setter
     def public_ipv6(self, public_ipv6):
-        """Sets the public_ipv6 of this EipOperateProtectReqIpInfos.
+        r"""Sets the public_ipv6 of this EipOperateProtectReqIpInfos.
 
         弹性公网IP IPv6地址，可通过调用弹性IP列表查询接口获得，通过返回值中的data.records.public_ipv6（.表示各对象之间层级的区分）获得。
 

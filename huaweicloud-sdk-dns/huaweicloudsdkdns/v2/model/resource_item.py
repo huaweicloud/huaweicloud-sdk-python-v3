@@ -31,7 +31,7 @@ class ResourceItem:
     }
 
     def __init__(self, resource_id=None, resource_detail=None, tags=None, resource_name=None):
-        """ResourceItem
+        r"""ResourceItem
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ResourceItem:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ResourceItem.
+        r"""Gets the resource_id of this ResourceItem.
 
         资源ID
 
@@ -75,7 +75,7 @@ class ResourceItem:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ResourceItem.
+        r"""Sets the resource_id of this ResourceItem.
 
         资源ID
 
@@ -86,7 +86,7 @@ class ResourceItem:
 
     @property
     def resource_detail(self):
-        """Gets the resource_detail of this ResourceItem.
+        r"""Gets the resource_detail of this ResourceItem.
 
         资源详情。资源对象，用于扩展，默认为空。
 
@@ -97,7 +97,7 @@ class ResourceItem:
 
     @resource_detail.setter
     def resource_detail(self, resource_detail):
-        """Sets the resource_detail of this ResourceItem.
+        r"""Sets the resource_detail of this ResourceItem.
 
         资源详情。资源对象，用于扩展，默认为空。
 
@@ -108,7 +108,7 @@ class ResourceItem:
 
     @property
     def tags(self):
-        """Gets the tags of this ResourceItem.
+        r"""Gets the tags of this ResourceItem.
 
         标签列表，没有标签默认为空数组。
 
@@ -119,7 +119,7 @@ class ResourceItem:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ResourceItem.
+        r"""Sets the tags of this ResourceItem.
 
         标签列表，没有标签默认为空数组。
 
@@ -130,7 +130,7 @@ class ResourceItem:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this ResourceItem.
+        r"""Gets the resource_name of this ResourceItem.
 
         资源名称，没有默认为空字符串
 
@@ -141,7 +141,7 @@ class ResourceItem:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this ResourceItem.
+        r"""Sets the resource_name of this ResourceItem.
 
         资源名称，没有默认为空字符串
 

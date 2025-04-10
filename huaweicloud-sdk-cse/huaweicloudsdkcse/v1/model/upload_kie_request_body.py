@@ -25,7 +25,7 @@ class UploadKieRequestBody:
     }
 
     def __init__(self, upload_file=None):
-        """UploadKieRequestBody
+        r"""UploadKieRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UploadKieRequestBody:
 
     @property
     def upload_file(self):
-        """Gets the upload_file of this UploadKieRequestBody.
+        r"""Gets the upload_file of this UploadKieRequestBody.
 
         导入文件内容的格式必须为键值对映射，例如:{\"data\":[{\"key1\":\"value1\",\"key2\":\"value2\"}]}}
 
@@ -53,7 +53,7 @@ class UploadKieRequestBody:
 
     @upload_file.setter
     def upload_file(self, upload_file):
-        """Sets the upload_file of this UploadKieRequestBody.
+        r"""Sets the upload_file of this UploadKieRequestBody.
 
         导入文件内容的格式必须为键值对映射，例如:{\"data\":[{\"key1\":\"value1\",\"key2\":\"value2\"}]}}
 

@@ -30,7 +30,7 @@ class ListMonitorInfosResponse(SdkResponse):
     }
 
     def __init__(self, total=None, size=None, entities=None):
-        """ListMonitorInfosResponse
+        r"""ListMonitorInfosResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListMonitorInfosResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListMonitorInfosResponse.
+        r"""Gets the total of this ListMonitorInfosResponse.
 
         总数
 
@@ -69,7 +69,7 @@ class ListMonitorInfosResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListMonitorInfosResponse.
+        r"""Sets the total of this ListMonitorInfosResponse.
 
         总数
 
@@ -80,7 +80,7 @@ class ListMonitorInfosResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListMonitorInfosResponse.
+        r"""Gets the size of this ListMonitorInfosResponse.
 
         当前页监控信息数量
 
@@ -91,7 +91,7 @@ class ListMonitorInfosResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListMonitorInfosResponse.
+        r"""Sets the size of this ListMonitorInfosResponse.
 
         当前页监控信息数量
 
@@ -102,7 +102,7 @@ class ListMonitorInfosResponse(SdkResponse):
 
     @property
     def entities(self):
-        """Gets the entities of this ListMonitorInfosResponse.
+        r"""Gets the entities of this ListMonitorInfosResponse.
 
         任务监控信息当前页元素
 
@@ -113,7 +113,7 @@ class ListMonitorInfosResponse(SdkResponse):
 
     @entities.setter
     def entities(self, entities):
-        """Sets the entities of this ListMonitorInfosResponse.
+        r"""Sets the entities of this ListMonitorInfosResponse.
 
         任务监控信息当前页元素
 

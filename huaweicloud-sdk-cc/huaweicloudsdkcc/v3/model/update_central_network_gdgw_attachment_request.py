@@ -29,7 +29,7 @@ class UpdateCentralNetworkGdgwAttachmentRequest:
     }
 
     def __init__(self, central_network_id=None, gdgw_attachment_id=None, body=None):
-        """UpdateCentralNetworkGdgwAttachmentRequest
+        r"""UpdateCentralNetworkGdgwAttachmentRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateCentralNetworkGdgwAttachmentRequest:
 
     @property
     def central_network_id(self):
-        """Gets the central_network_id of this UpdateCentralNetworkGdgwAttachmentRequest.
+        r"""Gets the central_network_id of this UpdateCentralNetworkGdgwAttachmentRequest.
 
         中心网络的ID。
 
@@ -66,7 +66,7 @@ class UpdateCentralNetworkGdgwAttachmentRequest:
 
     @central_network_id.setter
     def central_network_id(self, central_network_id):
-        """Sets the central_network_id of this UpdateCentralNetworkGdgwAttachmentRequest.
+        r"""Sets the central_network_id of this UpdateCentralNetworkGdgwAttachmentRequest.
 
         中心网络的ID。
 
@@ -77,7 +77,7 @@ class UpdateCentralNetworkGdgwAttachmentRequest:
 
     @property
     def gdgw_attachment_id(self):
-        """Gets the gdgw_attachment_id of this UpdateCentralNetworkGdgwAttachmentRequest.
+        r"""Gets the gdgw_attachment_id of this UpdateCentralNetworkGdgwAttachmentRequest.
 
         中心网络DGW附件ID。
 
@@ -88,7 +88,7 @@ class UpdateCentralNetworkGdgwAttachmentRequest:
 
     @gdgw_attachment_id.setter
     def gdgw_attachment_id(self, gdgw_attachment_id):
-        """Sets the gdgw_attachment_id of this UpdateCentralNetworkGdgwAttachmentRequest.
+        r"""Sets the gdgw_attachment_id of this UpdateCentralNetworkGdgwAttachmentRequest.
 
         中心网络DGW附件ID。
 
@@ -99,7 +99,7 @@ class UpdateCentralNetworkGdgwAttachmentRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateCentralNetworkGdgwAttachmentRequest.
+        r"""Gets the body of this UpdateCentralNetworkGdgwAttachmentRequest.
 
         :return: The body of this UpdateCentralNetworkGdgwAttachmentRequest.
         :rtype: :class:`huaweicloudsdkcc.v3.UpdateCentralNetworkGdgwAttachmentRequestBody`
@@ -108,7 +108,7 @@ class UpdateCentralNetworkGdgwAttachmentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateCentralNetworkGdgwAttachmentRequest.
+        r"""Sets the body of this UpdateCentralNetworkGdgwAttachmentRequest.
 
         :param body: The body of this UpdateCentralNetworkGdgwAttachmentRequest.
         :type body: :class:`huaweicloudsdkcc.v3.UpdateCentralNetworkGdgwAttachmentRequestBody`

@@ -30,7 +30,7 @@ class ListCentralNetworksResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, page_info=None, central_networks=None):
-        """ListCentralNetworksResponse
+        r"""ListCentralNetworksResponse
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListCentralNetworksResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListCentralNetworksResponse.
+        r"""Gets the request_id of this ListCentralNetworksResponse.
 
         请求ID。
 
@@ -67,7 +67,7 @@ class ListCentralNetworksResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListCentralNetworksResponse.
+        r"""Sets the request_id of this ListCentralNetworksResponse.
 
         请求ID。
 
@@ -78,7 +78,7 @@ class ListCentralNetworksResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListCentralNetworksResponse.
+        r"""Gets the page_info of this ListCentralNetworksResponse.
 
         :return: The page_info of this ListCentralNetworksResponse.
         :rtype: :class:`huaweicloudsdkcc.v3.PageInfo`
@@ -87,7 +87,7 @@ class ListCentralNetworksResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListCentralNetworksResponse.
+        r"""Sets the page_info of this ListCentralNetworksResponse.
 
         :param page_info: The page_info of this ListCentralNetworksResponse.
         :type page_info: :class:`huaweicloudsdkcc.v3.PageInfo`
@@ -96,7 +96,7 @@ class ListCentralNetworksResponse(SdkResponse):
 
     @property
     def central_networks(self):
-        """Gets the central_networks of this ListCentralNetworksResponse.
+        r"""Gets the central_networks of this ListCentralNetworksResponse.
 
         中心网络列表。
 
@@ -107,7 +107,7 @@ class ListCentralNetworksResponse(SdkResponse):
 
     @central_networks.setter
     def central_networks(self, central_networks):
-        """Sets the central_networks of this ListCentralNetworksResponse.
+        r"""Sets the central_networks of this ListCentralNetworksResponse.
 
         中心网络列表。
 

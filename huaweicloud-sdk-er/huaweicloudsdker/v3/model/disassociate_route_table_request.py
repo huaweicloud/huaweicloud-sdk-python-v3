@@ -29,7 +29,7 @@ class DisassociateRouteTableRequest:
     }
 
     def __init__(self, er_id=None, route_table_id=None, body=None):
-        """DisassociateRouteTableRequest
+        r"""DisassociateRouteTableRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DisassociateRouteTableRequest:
 
     @property
     def er_id(self):
-        """Gets the er_id of this DisassociateRouteTableRequest.
+        r"""Gets the er_id of this DisassociateRouteTableRequest.
 
         企业路由器实例ID
 
@@ -66,7 +66,7 @@ class DisassociateRouteTableRequest:
 
     @er_id.setter
     def er_id(self, er_id):
-        """Sets the er_id of this DisassociateRouteTableRequest.
+        r"""Sets the er_id of this DisassociateRouteTableRequest.
 
         企业路由器实例ID
 
@@ -77,7 +77,7 @@ class DisassociateRouteTableRequest:
 
     @property
     def route_table_id(self):
-        """Gets the route_table_id of this DisassociateRouteTableRequest.
+        r"""Gets the route_table_id of this DisassociateRouteTableRequest.
 
         路由表ID
 
@@ -88,7 +88,7 @@ class DisassociateRouteTableRequest:
 
     @route_table_id.setter
     def route_table_id(self, route_table_id):
-        """Sets the route_table_id of this DisassociateRouteTableRequest.
+        r"""Sets the route_table_id of this DisassociateRouteTableRequest.
 
         路由表ID
 
@@ -99,7 +99,7 @@ class DisassociateRouteTableRequest:
 
     @property
     def body(self):
-        """Gets the body of this DisassociateRouteTableRequest.
+        r"""Gets the body of this DisassociateRouteTableRequest.
 
         :return: The body of this DisassociateRouteTableRequest.
         :rtype: :class:`huaweicloudsdker.v3.AssociationRequestBody`
@@ -108,7 +108,7 @@ class DisassociateRouteTableRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DisassociateRouteTableRequest.
+        r"""Sets the body of this DisassociateRouteTableRequest.
 
         :param body: The body of this DisassociateRouteTableRequest.
         :type body: :class:`huaweicloudsdker.v3.AssociationRequestBody`

@@ -31,7 +31,7 @@ class ListAuditDatabasesRequest:
     }
 
     def __init__(self, instance_id=None, status=None, offset=None, limit=None):
-        """ListAuditDatabasesRequest
+        r"""ListAuditDatabasesRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListAuditDatabasesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListAuditDatabasesRequest.
+        r"""Gets the instance_id of this ListAuditDatabasesRequest.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 
@@ -74,7 +74,7 @@ class ListAuditDatabasesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListAuditDatabasesRequest.
+        r"""Sets the instance_id of this ListAuditDatabasesRequest.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 
@@ -85,7 +85,7 @@ class ListAuditDatabasesRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListAuditDatabasesRequest.
+        r"""Gets the status of this ListAuditDatabasesRequest.
 
         实例状态 - ON :开启 - OFF : 关闭
 
@@ -96,7 +96,7 @@ class ListAuditDatabasesRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListAuditDatabasesRequest.
+        r"""Sets the status of this ListAuditDatabasesRequest.
 
         实例状态 - ON :开启 - OFF : 关闭
 
@@ -107,7 +107,7 @@ class ListAuditDatabasesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAuditDatabasesRequest.
+        r"""Gets the offset of this ListAuditDatabasesRequest.
 
         偏移量，从第一条数据偏移offset条数据后开始查询，默认为0。
 
@@ -118,7 +118,7 @@ class ListAuditDatabasesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAuditDatabasesRequest.
+        r"""Sets the offset of this ListAuditDatabasesRequest.
 
         偏移量，从第一条数据偏移offset条数据后开始查询，默认为0。
 
@@ -129,7 +129,7 @@ class ListAuditDatabasesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAuditDatabasesRequest.
+        r"""Gets the limit of this ListAuditDatabasesRequest.
 
         查询记录数，默认为100。
 
@@ -140,7 +140,7 @@ class ListAuditDatabasesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAuditDatabasesRequest.
+        r"""Sets the limit of this ListAuditDatabasesRequest.
 
         查询记录数，默认为100。
 

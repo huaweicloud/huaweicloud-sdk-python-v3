@@ -41,7 +41,7 @@ class Urls:
     }
 
     def __init__(self, id=None, url=None, status=None, type=None, task_id=None, modify_time=None, create_time=None, file_type=None, mode=None):
-        """Urls
+        r"""Urls
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class Urls:
 
     @property
     def id(self):
-        """Gets the id of this Urls.
+        r"""Gets the id of this Urls.
 
         url id。
 
@@ -110,7 +110,7 @@ class Urls:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Urls.
+        r"""Sets the id of this Urls.
 
         url id。
 
@@ -121,7 +121,7 @@ class Urls:
 
     @property
     def url(self):
-        """Gets the url of this Urls.
+        r"""Gets the url of this Urls.
 
         url具体值。
 
@@ -132,7 +132,7 @@ class Urls:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this Urls.
+        r"""Sets the url of this Urls.
 
         url具体值。
 
@@ -143,7 +143,7 @@ class Urls:
 
     @property
     def status(self):
-        """Gets the status of this Urls.
+        r"""Gets the status of this Urls.
 
         url状态，状态类型：processing：处理中；succeed：完成；failed：失败；waiting：等待；refreshing：刷新中; preheating : 预热中。
 
@@ -154,7 +154,7 @@ class Urls:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Urls.
+        r"""Sets the status of this Urls.
 
         url状态，状态类型：processing：处理中；succeed：完成；failed：失败；waiting：等待；refreshing：刷新中; preheating : 预热中。
 
@@ -165,7 +165,7 @@ class Urls:
 
     @property
     def type(self):
-        """Gets the type of this Urls.
+        r"""Gets the type of this Urls.
 
         任务类型，REFRESH：刷新任务；PREHEATING：预热任务。
 
@@ -176,7 +176,7 @@ class Urls:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Urls.
+        r"""Sets the type of this Urls.
 
         任务类型，REFRESH：刷新任务；PREHEATING：预热任务。
 
@@ -187,7 +187,7 @@ class Urls:
 
     @property
     def task_id(self):
-        """Gets the task_id of this Urls.
+        r"""Gets the task_id of this Urls.
 
         任务id。
 
@@ -198,7 +198,7 @@ class Urls:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this Urls.
+        r"""Sets the task_id of this Urls.
 
         任务id。
 
@@ -209,7 +209,7 @@ class Urls:
 
     @property
     def modify_time(self):
-        """Gets the modify_time of this Urls.
+        r"""Gets the modify_time of this Urls.
 
         修改时间戳（毫秒）。
 
@@ -220,7 +220,7 @@ class Urls:
 
     @modify_time.setter
     def modify_time(self, modify_time):
-        """Sets the modify_time of this Urls.
+        r"""Sets the modify_time of this Urls.
 
         修改时间戳（毫秒）。
 
@@ -231,7 +231,7 @@ class Urls:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Urls.
+        r"""Gets the create_time of this Urls.
 
         创建时间戳（毫秒）。
 
@@ -242,7 +242,7 @@ class Urls:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Urls.
+        r"""Sets the create_time of this Urls.
 
         创建时间戳（毫秒）。
 
@@ -253,7 +253,7 @@ class Urls:
 
     @property
     def file_type(self):
-        """Gets the file_type of this Urls.
+        r"""Gets the file_type of this Urls.
 
         文件类型，directory：目录，或file：文件。
 
@@ -264,7 +264,7 @@ class Urls:
 
     @file_type.setter
     def file_type(self, file_type):
-        """Sets the file_type of this Urls.
+        r"""Sets the file_type of this Urls.
 
         文件类型，directory：目录，或file：文件。
 
@@ -275,7 +275,7 @@ class Urls:
 
     @property
     def mode(self):
-        """Gets the mode of this Urls.
+        r"""Gets the mode of this Urls.
 
         目录刷新方式，all：刷新目录下全部资源；detect_modify_refresh：刷新目录下已变更的资源，默认值为all。
 
@@ -286,7 +286,7 @@ class Urls:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this Urls.
+        r"""Sets the mode of this Urls.
 
         目录刷新方式，all：刷新目录下全部资源；detect_modify_refresh：刷新目录下已变更的资源，默认值为all。
 

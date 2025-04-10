@@ -37,7 +37,7 @@ class ListServiceItemsRequest:
     }
 
     def __init__(self, set_id=None, key_word=None, limit=None, offset=None, enterprise_project_id=None, fw_instance_id=None, query_service_set_type=None):
-        """ListServiceItemsRequest
+        r"""ListServiceItemsRequest
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class ListServiceItemsRequest:
 
     @property
     def set_id(self):
-        """Gets the set_id of this ListServiceItemsRequest.
+        r"""Gets the set_id of this ListServiceItemsRequest.
 
         服务组id，可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 
@@ -93,7 +93,7 @@ class ListServiceItemsRequest:
 
     @set_id.setter
     def set_id(self, set_id):
-        """Sets the set_id of this ListServiceItemsRequest.
+        r"""Sets the set_id of this ListServiceItemsRequest.
 
         服务组id，可通过[获取服务组列表接口](ListServiceSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 
@@ -104,7 +104,7 @@ class ListServiceItemsRequest:
 
     @property
     def key_word(self):
-        """Gets the key_word of this ListServiceItemsRequest.
+        r"""Gets the key_word of this ListServiceItemsRequest.
 
         查询字段，可为服务组成员名称或服务组成员描述的一部分。
 
@@ -115,7 +115,7 @@ class ListServiceItemsRequest:
 
     @key_word.setter
     def key_word(self, key_word):
-        """Sets the key_word of this ListServiceItemsRequest.
+        r"""Sets the key_word of this ListServiceItemsRequest.
 
         查询字段，可为服务组成员名称或服务组成员描述的一部分。
 
@@ -126,7 +126,7 @@ class ListServiceItemsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListServiceItemsRequest.
+        r"""Gets the limit of this ListServiceItemsRequest.
 
         每页显示个数，范围为1-1024
 
@@ -137,7 +137,7 @@ class ListServiceItemsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListServiceItemsRequest.
+        r"""Sets the limit of this ListServiceItemsRequest.
 
         每页显示个数，范围为1-1024
 
@@ -148,7 +148,7 @@ class ListServiceItemsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListServiceItemsRequest.
+        r"""Gets the offset of this ListServiceItemsRequest.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
@@ -159,7 +159,7 @@ class ListServiceItemsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListServiceItemsRequest.
+        r"""Sets the offset of this ListServiceItemsRequest.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
@@ -170,7 +170,7 @@ class ListServiceItemsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListServiceItemsRequest.
+        r"""Gets the enterprise_project_id of this ListServiceItemsRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -181,7 +181,7 @@ class ListServiceItemsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListServiceItemsRequest.
+        r"""Sets the enterprise_project_id of this ListServiceItemsRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -192,7 +192,7 @@ class ListServiceItemsRequest:
 
     @property
     def fw_instance_id(self):
-        """Gets the fw_instance_id of this ListServiceItemsRequest.
+        r"""Gets the fw_instance_id of this ListServiceItemsRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -203,7 +203,7 @@ class ListServiceItemsRequest:
 
     @fw_instance_id.setter
     def fw_instance_id(self, fw_instance_id):
-        """Sets the fw_instance_id of this ListServiceItemsRequest.
+        r"""Sets the fw_instance_id of this ListServiceItemsRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -214,7 +214,7 @@ class ListServiceItemsRequest:
 
     @property
     def query_service_set_type(self):
-        """Gets the query_service_set_type of this ListServiceItemsRequest.
+        r"""Gets the query_service_set_type of this ListServiceItemsRequest.
 
         查询服务组类型，0表示自定义服务组，1表示预定义服务组。仅当set_id为预定义服务组id时生效
 
@@ -225,7 +225,7 @@ class ListServiceItemsRequest:
 
     @query_service_set_type.setter
     def query_service_set_type(self, query_service_set_type):
-        """Sets the query_service_set_type of this ListServiceItemsRequest.
+        r"""Sets the query_service_set_type of this ListServiceItemsRequest.
 
         查询服务组类型，0表示自定义服务组，1表示预定义服务组。仅当set_id为预定义服务组id时生效
 

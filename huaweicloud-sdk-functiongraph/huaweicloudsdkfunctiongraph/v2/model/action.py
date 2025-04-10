@@ -25,7 +25,7 @@ class Action:
     }
 
     def __init__(self, function_ref=None):
-        """Action
+        r"""Action
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class Action:
 
     @property
     def function_ref(self):
-        """Gets the function_ref of this Action.
+        r"""Gets the function_ref of this Action.
 
         :return: The function_ref of this Action.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.FunctionRef`
@@ -52,7 +52,7 @@ class Action:
 
     @function_ref.setter
     def function_ref(self, function_ref):
-        """Sets the function_ref of this Action.
+        r"""Sets the function_ref of this Action.
 
         :param function_ref: The function_ref of this Action.
         :type function_ref: :class:`huaweicloudsdkfunctiongraph.v2.FunctionRef`

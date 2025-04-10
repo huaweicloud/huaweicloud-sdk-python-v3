@@ -41,7 +41,7 @@ class CreatePhotoDigitalHumanVideoReq:
     }
 
     def __init__(self, script_id=None, human_image=None, voice_config=None, video_config=None, shoot_scripts=None, output_asset_config=None, background_music_config=None, review_config=None, callback_config=None):
-        """CreatePhotoDigitalHumanVideoReq
+        r"""CreatePhotoDigitalHumanVideoReq
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class CreatePhotoDigitalHumanVideoReq:
 
     @property
     def script_id(self):
-        """Gets the script_id of this CreatePhotoDigitalHumanVideoReq.
+        r"""Gets the script_id of this CreatePhotoDigitalHumanVideoReq.
 
         剧本ID。 > * 如果shoot_scripts中shoot_script.script_type为\"TEXT\"，则台词以shoot_scripts中的文本为准； > * 如果shoot_scripts中shoot_script.script_type为\"AUDIO\"，则台词以script_id对应剧本中的音频为准。
 
@@ -107,7 +107,7 @@ class CreatePhotoDigitalHumanVideoReq:
 
     @script_id.setter
     def script_id(self, script_id):
-        """Sets the script_id of this CreatePhotoDigitalHumanVideoReq.
+        r"""Sets the script_id of this CreatePhotoDigitalHumanVideoReq.
 
         剧本ID。 > * 如果shoot_scripts中shoot_script.script_type为\"TEXT\"，则台词以shoot_scripts中的文本为准； > * 如果shoot_scripts中shoot_script.script_type为\"AUDIO\"，则台词以script_id对应剧本中的音频为准。
 
@@ -118,7 +118,7 @@ class CreatePhotoDigitalHumanVideoReq:
 
     @property
     def human_image(self):
-        """Gets the human_image of this CreatePhotoDigitalHumanVideoReq.
+        r"""Gets the human_image of this CreatePhotoDigitalHumanVideoReq.
 
         人物照片，需要Base64编码。照片分辨率不超过1080P。
 
@@ -129,7 +129,7 @@ class CreatePhotoDigitalHumanVideoReq:
 
     @human_image.setter
     def human_image(self, human_image):
-        """Sets the human_image of this CreatePhotoDigitalHumanVideoReq.
+        r"""Sets the human_image of this CreatePhotoDigitalHumanVideoReq.
 
         人物照片，需要Base64编码。照片分辨率不超过1080P。
 
@@ -140,7 +140,7 @@ class CreatePhotoDigitalHumanVideoReq:
 
     @property
     def voice_config(self):
-        """Gets the voice_config of this CreatePhotoDigitalHumanVideoReq.
+        r"""Gets the voice_config of this CreatePhotoDigitalHumanVideoReq.
 
         :return: The voice_config of this CreatePhotoDigitalHumanVideoReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.VoiceConfig`
@@ -149,7 +149,7 @@ class CreatePhotoDigitalHumanVideoReq:
 
     @voice_config.setter
     def voice_config(self, voice_config):
-        """Sets the voice_config of this CreatePhotoDigitalHumanVideoReq.
+        r"""Sets the voice_config of this CreatePhotoDigitalHumanVideoReq.
 
         :param voice_config: The voice_config of this CreatePhotoDigitalHumanVideoReq.
         :type voice_config: :class:`huaweicloudsdkmetastudio.v1.VoiceConfig`
@@ -158,7 +158,7 @@ class CreatePhotoDigitalHumanVideoReq:
 
     @property
     def video_config(self):
-        """Gets the video_config of this CreatePhotoDigitalHumanVideoReq.
+        r"""Gets the video_config of this CreatePhotoDigitalHumanVideoReq.
 
         :return: The video_config of this CreatePhotoDigitalHumanVideoReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.PhotoVideoConfig`
@@ -167,7 +167,7 @@ class CreatePhotoDigitalHumanVideoReq:
 
     @video_config.setter
     def video_config(self, video_config):
-        """Sets the video_config of this CreatePhotoDigitalHumanVideoReq.
+        r"""Sets the video_config of this CreatePhotoDigitalHumanVideoReq.
 
         :param video_config: The video_config of this CreatePhotoDigitalHumanVideoReq.
         :type video_config: :class:`huaweicloudsdkmetastudio.v1.PhotoVideoConfig`
@@ -176,7 +176,7 @@ class CreatePhotoDigitalHumanVideoReq:
 
     @property
     def shoot_scripts(self):
-        """Gets the shoot_scripts of this CreatePhotoDigitalHumanVideoReq.
+        r"""Gets the shoot_scripts of this CreatePhotoDigitalHumanVideoReq.
 
         剧本列表。照片数字人仅支持传入一个剧本shoot_script，剧本参数仅支持shoot_script.script_type、shoot_script.text_config；
 
@@ -187,7 +187,7 @@ class CreatePhotoDigitalHumanVideoReq:
 
     @shoot_scripts.setter
     def shoot_scripts(self, shoot_scripts):
-        """Sets the shoot_scripts of this CreatePhotoDigitalHumanVideoReq.
+        r"""Sets the shoot_scripts of this CreatePhotoDigitalHumanVideoReq.
 
         剧本列表。照片数字人仅支持传入一个剧本shoot_script，剧本参数仅支持shoot_script.script_type、shoot_script.text_config；
 
@@ -198,7 +198,7 @@ class CreatePhotoDigitalHumanVideoReq:
 
     @property
     def output_asset_config(self):
-        """Gets the output_asset_config of this CreatePhotoDigitalHumanVideoReq.
+        r"""Gets the output_asset_config of this CreatePhotoDigitalHumanVideoReq.
 
         :return: The output_asset_config of this CreatePhotoDigitalHumanVideoReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.OutputAssetConfig`
@@ -207,7 +207,7 @@ class CreatePhotoDigitalHumanVideoReq:
 
     @output_asset_config.setter
     def output_asset_config(self, output_asset_config):
-        """Sets the output_asset_config of this CreatePhotoDigitalHumanVideoReq.
+        r"""Sets the output_asset_config of this CreatePhotoDigitalHumanVideoReq.
 
         :param output_asset_config: The output_asset_config of this CreatePhotoDigitalHumanVideoReq.
         :type output_asset_config: :class:`huaweicloudsdkmetastudio.v1.OutputAssetConfig`
@@ -216,7 +216,7 @@ class CreatePhotoDigitalHumanVideoReq:
 
     @property
     def background_music_config(self):
-        """Gets the background_music_config of this CreatePhotoDigitalHumanVideoReq.
+        r"""Gets the background_music_config of this CreatePhotoDigitalHumanVideoReq.
 
         :return: The background_music_config of this CreatePhotoDigitalHumanVideoReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.BackgroundMusicConfig`
@@ -225,7 +225,7 @@ class CreatePhotoDigitalHumanVideoReq:
 
     @background_music_config.setter
     def background_music_config(self, background_music_config):
-        """Sets the background_music_config of this CreatePhotoDigitalHumanVideoReq.
+        r"""Sets the background_music_config of this CreatePhotoDigitalHumanVideoReq.
 
         :param background_music_config: The background_music_config of this CreatePhotoDigitalHumanVideoReq.
         :type background_music_config: :class:`huaweicloudsdkmetastudio.v1.BackgroundMusicConfig`
@@ -234,7 +234,7 @@ class CreatePhotoDigitalHumanVideoReq:
 
     @property
     def review_config(self):
-        """Gets the review_config of this CreatePhotoDigitalHumanVideoReq.
+        r"""Gets the review_config of this CreatePhotoDigitalHumanVideoReq.
 
         :return: The review_config of this CreatePhotoDigitalHumanVideoReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
@@ -243,7 +243,7 @@ class CreatePhotoDigitalHumanVideoReq:
 
     @review_config.setter
     def review_config(self, review_config):
-        """Sets the review_config of this CreatePhotoDigitalHumanVideoReq.
+        r"""Sets the review_config of this CreatePhotoDigitalHumanVideoReq.
 
         :param review_config: The review_config of this CreatePhotoDigitalHumanVideoReq.
         :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
@@ -252,7 +252,7 @@ class CreatePhotoDigitalHumanVideoReq:
 
     @property
     def callback_config(self):
-        """Gets the callback_config of this CreatePhotoDigitalHumanVideoReq.
+        r"""Gets the callback_config of this CreatePhotoDigitalHumanVideoReq.
 
         :return: The callback_config of this CreatePhotoDigitalHumanVideoReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CallBackConfig`
@@ -261,7 +261,7 @@ class CreatePhotoDigitalHumanVideoReq:
 
     @callback_config.setter
     def callback_config(self, callback_config):
-        """Sets the callback_config of this CreatePhotoDigitalHumanVideoReq.
+        r"""Sets the callback_config of this CreatePhotoDigitalHumanVideoReq.
 
         :param callback_config: The callback_config of this CreatePhotoDigitalHumanVideoReq.
         :type callback_config: :class:`huaweicloudsdkmetastudio.v1.CallBackConfig`

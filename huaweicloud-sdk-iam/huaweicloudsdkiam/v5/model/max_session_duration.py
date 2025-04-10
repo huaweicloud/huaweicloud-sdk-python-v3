@@ -23,7 +23,7 @@ class MaxSessionDuration:
     }
 
     def __init__(self):
-        """MaxSessionDuration
+        r"""MaxSessionDuration
 
         The model defined in huaweicloud sdk
 

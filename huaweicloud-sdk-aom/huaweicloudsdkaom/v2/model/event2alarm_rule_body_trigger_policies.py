@@ -37,7 +37,7 @@ class Event2alarmRuleBodyTriggerPolicies:
     }
 
     def __init__(self, id=None, name=None, trigger_type=None, period=None, operator=None, count=None, level=None):
-        """Event2alarmRuleBodyTriggerPolicies
+        r"""Event2alarmRuleBodyTriggerPolicies
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class Event2alarmRuleBodyTriggerPolicies:
 
     @property
     def id(self):
-        """Gets the id of this Event2alarmRuleBodyTriggerPolicies.
+        r"""Gets the id of this Event2alarmRuleBodyTriggerPolicies.
 
         自增编号
 
@@ -96,7 +96,7 @@ class Event2alarmRuleBodyTriggerPolicies:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Event2alarmRuleBodyTriggerPolicies.
+        r"""Sets the id of this Event2alarmRuleBodyTriggerPolicies.
 
         自增编号
 
@@ -107,7 +107,7 @@ class Event2alarmRuleBodyTriggerPolicies:
 
     @property
     def name(self):
-        """Gets the name of this Event2alarmRuleBodyTriggerPolicies.
+        r"""Gets the name of this Event2alarmRuleBodyTriggerPolicies.
 
         事件名称
 
@@ -118,7 +118,7 @@ class Event2alarmRuleBodyTriggerPolicies:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Event2alarmRuleBodyTriggerPolicies.
+        r"""Sets the name of this Event2alarmRuleBodyTriggerPolicies.
 
         事件名称
 
@@ -129,7 +129,7 @@ class Event2alarmRuleBodyTriggerPolicies:
 
     @property
     def trigger_type(self):
-        """Gets the trigger_type of this Event2alarmRuleBodyTriggerPolicies.
+        r"""Gets the trigger_type of this Event2alarmRuleBodyTriggerPolicies.
 
         触发类型。accumulative: 累计触发，immediately: 立即触发
 
@@ -140,7 +140,7 @@ class Event2alarmRuleBodyTriggerPolicies:
 
     @trigger_type.setter
     def trigger_type(self, trigger_type):
-        """Sets the trigger_type of this Event2alarmRuleBodyTriggerPolicies.
+        r"""Sets the trigger_type of this Event2alarmRuleBodyTriggerPolicies.
 
         触发类型。accumulative: 累计触发，immediately: 立即触发
 
@@ -151,7 +151,7 @@ class Event2alarmRuleBodyTriggerPolicies:
 
     @property
     def period(self):
-        """Gets the period of this Event2alarmRuleBodyTriggerPolicies.
+        r"""Gets the period of this Event2alarmRuleBodyTriggerPolicies.
 
         触发周期
 
@@ -162,7 +162,7 @@ class Event2alarmRuleBodyTriggerPolicies:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this Event2alarmRuleBodyTriggerPolicies.
+        r"""Sets the period of this Event2alarmRuleBodyTriggerPolicies.
 
         触发周期
 
@@ -173,7 +173,7 @@ class Event2alarmRuleBodyTriggerPolicies:
 
     @property
     def operator(self):
-        """Gets the operator of this Event2alarmRuleBodyTriggerPolicies.
+        r"""Gets the operator of this Event2alarmRuleBodyTriggerPolicies.
 
         比较符
 
@@ -184,7 +184,7 @@ class Event2alarmRuleBodyTriggerPolicies:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this Event2alarmRuleBodyTriggerPolicies.
+        r"""Sets the operator of this Event2alarmRuleBodyTriggerPolicies.
 
         比较符
 
@@ -195,7 +195,7 @@ class Event2alarmRuleBodyTriggerPolicies:
 
     @property
     def count(self):
-        """Gets the count of this Event2alarmRuleBodyTriggerPolicies.
+        r"""Gets the count of this Event2alarmRuleBodyTriggerPolicies.
 
         触发次数
 
@@ -206,7 +206,7 @@ class Event2alarmRuleBodyTriggerPolicies:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this Event2alarmRuleBodyTriggerPolicies.
+        r"""Sets the count of this Event2alarmRuleBodyTriggerPolicies.
 
         触发次数
 
@@ -217,7 +217,7 @@ class Event2alarmRuleBodyTriggerPolicies:
 
     @property
     def level(self):
-        """Gets the level of this Event2alarmRuleBodyTriggerPolicies.
+        r"""Gets the level of this Event2alarmRuleBodyTriggerPolicies.
 
         告警等级
 
@@ -228,7 +228,7 @@ class Event2alarmRuleBodyTriggerPolicies:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this Event2alarmRuleBodyTriggerPolicies.
+        r"""Sets the level of this Event2alarmRuleBodyTriggerPolicies.
 
         告警等级
 

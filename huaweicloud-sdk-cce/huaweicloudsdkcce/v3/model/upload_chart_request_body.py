@@ -27,7 +27,7 @@ class UploadChartRequestBody:
     }
 
     def __init__(self, parameters=None, content=None):
-        """UploadChartRequestBody
+        r"""UploadChartRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UploadChartRequestBody:
 
     @property
     def parameters(self):
-        """Gets the parameters of this UploadChartRequestBody.
+        r"""Gets the parameters of this UploadChartRequestBody.
 
         上传模板的配置参数，示例如下：\"{\\\"override\\\":true,\\\"skip_lint\\\":true,\\\"source\\\":\\\"package\\\"}\"  - skip_lint: 是否验证上传的模板 - override: 是否覆盖已存在的模板 - visible: 模板是否可见 
 
@@ -60,7 +60,7 @@ class UploadChartRequestBody:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this UploadChartRequestBody.
+        r"""Sets the parameters of this UploadChartRequestBody.
 
         上传模板的配置参数，示例如下：\"{\\\"override\\\":true,\\\"skip_lint\\\":true,\\\"source\\\":\\\"package\\\"}\"  - skip_lint: 是否验证上传的模板 - override: 是否覆盖已存在的模板 - visible: 模板是否可见 
 
@@ -71,7 +71,7 @@ class UploadChartRequestBody:
 
     @property
     def content(self):
-        """Gets the content of this UploadChartRequestBody.
+        r"""Gets the content of this UploadChartRequestBody.
 
         模板包文件
 
@@ -82,7 +82,7 @@ class UploadChartRequestBody:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this UploadChartRequestBody.
+        r"""Sets the content of this UploadChartRequestBody.
 
         模板包文件
 

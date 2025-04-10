@@ -37,7 +37,7 @@ class RunPipelineDTOParams:
     }
 
     def __init__(self, git_type=None, alias=None, codehub_id=None, default_branch=None, git_url=None, endpoint_id=None, build_params=None):
-        """RunPipelineDTOParams
+        r"""RunPipelineDTOParams
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class RunPipelineDTOParams:
 
     @property
     def git_type(self):
-        """Gets the git_type of this RunPipelineDTOParams.
+        r"""Gets the git_type of this RunPipelineDTOParams.
 
         代码仓类型
 
@@ -94,7 +94,7 @@ class RunPipelineDTOParams:
 
     @git_type.setter
     def git_type(self, git_type):
-        """Sets the git_type of this RunPipelineDTOParams.
+        r"""Sets the git_type of this RunPipelineDTOParams.
 
         代码仓类型
 
@@ -105,7 +105,7 @@ class RunPipelineDTOParams:
 
     @property
     def alias(self):
-        """Gets the alias of this RunPipelineDTOParams.
+        r"""Gets the alias of this RunPipelineDTOParams.
 
         代码仓别名
 
@@ -116,7 +116,7 @@ class RunPipelineDTOParams:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this RunPipelineDTOParams.
+        r"""Sets the alias of this RunPipelineDTOParams.
 
         代码仓别名
 
@@ -127,7 +127,7 @@ class RunPipelineDTOParams:
 
     @property
     def codehub_id(self):
-        """Gets the codehub_id of this RunPipelineDTOParams.
+        r"""Gets the codehub_id of this RunPipelineDTOParams.
 
         codehub代码库ID
 
@@ -138,7 +138,7 @@ class RunPipelineDTOParams:
 
     @codehub_id.setter
     def codehub_id(self, codehub_id):
-        """Sets the codehub_id of this RunPipelineDTOParams.
+        r"""Sets the codehub_id of this RunPipelineDTOParams.
 
         codehub代码库ID
 
@@ -149,7 +149,7 @@ class RunPipelineDTOParams:
 
     @property
     def default_branch(self):
-        """Gets the default_branch of this RunPipelineDTOParams.
+        r"""Gets the default_branch of this RunPipelineDTOParams.
 
         默认分支
 
@@ -160,7 +160,7 @@ class RunPipelineDTOParams:
 
     @default_branch.setter
     def default_branch(self, default_branch):
-        """Sets the default_branch of this RunPipelineDTOParams.
+        r"""Sets the default_branch of this RunPipelineDTOParams.
 
         默认分支
 
@@ -171,7 +171,7 @@ class RunPipelineDTOParams:
 
     @property
     def git_url(self):
-        """Gets the git_url of this RunPipelineDTOParams.
+        r"""Gets the git_url of this RunPipelineDTOParams.
 
         git仓库https地址
 
@@ -182,7 +182,7 @@ class RunPipelineDTOParams:
 
     @git_url.setter
     def git_url(self, git_url):
-        """Sets the git_url of this RunPipelineDTOParams.
+        r"""Sets the git_url of this RunPipelineDTOParams.
 
         git仓库https地址
 
@@ -193,7 +193,7 @@ class RunPipelineDTOParams:
 
     @property
     def endpoint_id(self):
-        """Gets the endpoint_id of this RunPipelineDTOParams.
+        r"""Gets the endpoint_id of this RunPipelineDTOParams.
 
         扩展点ID
 
@@ -204,7 +204,7 @@ class RunPipelineDTOParams:
 
     @endpoint_id.setter
     def endpoint_id(self, endpoint_id):
-        """Sets the endpoint_id of this RunPipelineDTOParams.
+        r"""Sets the endpoint_id of this RunPipelineDTOParams.
 
         扩展点ID
 
@@ -215,7 +215,7 @@ class RunPipelineDTOParams:
 
     @property
     def build_params(self):
-        """Gets the build_params of this RunPipelineDTOParams.
+        r"""Gets the build_params of this RunPipelineDTOParams.
 
         :return: The build_params of this RunPipelineDTOParams.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.RunPipelineDTOParamsBuildParams`
@@ -224,7 +224,7 @@ class RunPipelineDTOParams:
 
     @build_params.setter
     def build_params(self, build_params):
-        """Sets the build_params of this RunPipelineDTOParams.
+        r"""Sets the build_params of this RunPipelineDTOParams.
 
         :param build_params: The build_params of this RunPipelineDTOParams.
         :type build_params: :class:`huaweicloudsdkcodeartspipeline.v2.RunPipelineDTOParamsBuildParams`

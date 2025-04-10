@@ -30,7 +30,7 @@ class ListVariablesResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, variable_list=None):
-        """ListVariablesResponse
+        r"""ListVariablesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListVariablesResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ListVariablesResponse.
+        r"""Gets the code of this ListVariablesResponse.
 
         响应吗
 
@@ -69,7 +69,7 @@ class ListVariablesResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ListVariablesResponse.
+        r"""Sets the code of this ListVariablesResponse.
 
         响应吗
 
@@ -80,7 +80,7 @@ class ListVariablesResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListVariablesResponse.
+        r"""Gets the message of this ListVariablesResponse.
 
         响应消息
 
@@ -91,7 +91,7 @@ class ListVariablesResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListVariablesResponse.
+        r"""Sets the message of this ListVariablesResponse.
 
         响应消息
 
@@ -102,7 +102,7 @@ class ListVariablesResponse(SdkResponse):
 
     @property
     def variable_list(self):
-        """Gets the variable_list of this ListVariablesResponse.
+        r"""Gets the variable_list of this ListVariablesResponse.
 
         变量列表
 
@@ -113,7 +113,7 @@ class ListVariablesResponse(SdkResponse):
 
     @variable_list.setter
     def variable_list(self, variable_list):
-        """Sets the variable_list of this ListVariablesResponse.
+        r"""Sets the variable_list of this ListVariablesResponse.
 
         变量列表
 

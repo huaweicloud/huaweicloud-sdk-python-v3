@@ -25,7 +25,7 @@ class AuthorizeNa2NodesRequestDTO:
     }
 
     def __init__(self, node_ids=None):
-        """AuthorizeNa2NodesRequestDTO
+        r"""AuthorizeNa2NodesRequestDTO
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AuthorizeNa2NodesRequestDTO:
 
     @property
     def node_ids(self):
-        """Gets the node_ids of this AuthorizeNa2NodesRequestDTO.
+        r"""Gets the node_ids of this AuthorizeNa2NodesRequestDTO.
 
         授权北向NA信息到边缘节点的请求结构体
 
@@ -53,7 +53,7 @@ class AuthorizeNa2NodesRequestDTO:
 
     @node_ids.setter
     def node_ids(self, node_ids):
-        """Sets the node_ids of this AuthorizeNa2NodesRequestDTO.
+        r"""Sets the node_ids of this AuthorizeNa2NodesRequestDTO.
 
         授权北向NA信息到边缘节点的请求结构体
 

@@ -35,7 +35,7 @@ class CdmClusterAvailabilityZone:
     }
 
     def __init__(self, available_zone_id=None, available_zone_name=None, available_zone_code=None, az_status=None, type=None, tags=None):
-        """CdmClusterAvailabilityZone
+        r"""CdmClusterAvailabilityZone
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class CdmClusterAvailabilityZone:
 
     @property
     def available_zone_id(self):
-        """Gets the available_zone_id of this CdmClusterAvailabilityZone.
+        r"""Gets the available_zone_id of this CdmClusterAvailabilityZone.
 
         可用区ID。
 
@@ -89,7 +89,7 @@ class CdmClusterAvailabilityZone:
 
     @available_zone_id.setter
     def available_zone_id(self, available_zone_id):
-        """Sets the available_zone_id of this CdmClusterAvailabilityZone.
+        r"""Sets the available_zone_id of this CdmClusterAvailabilityZone.
 
         可用区ID。
 
@@ -100,7 +100,7 @@ class CdmClusterAvailabilityZone:
 
     @property
     def available_zone_name(self):
-        """Gets the available_zone_name of this CdmClusterAvailabilityZone.
+        r"""Gets the available_zone_name of this CdmClusterAvailabilityZone.
 
         可用区名称。
 
@@ -111,7 +111,7 @@ class CdmClusterAvailabilityZone:
 
     @available_zone_name.setter
     def available_zone_name(self, available_zone_name):
-        """Sets the available_zone_name of this CdmClusterAvailabilityZone.
+        r"""Sets the available_zone_name of this CdmClusterAvailabilityZone.
 
         可用区名称。
 
@@ -122,7 +122,7 @@ class CdmClusterAvailabilityZone:
 
     @property
     def available_zone_code(self):
-        """Gets the available_zone_code of this CdmClusterAvailabilityZone.
+        r"""Gets the available_zone_code of this CdmClusterAvailabilityZone.
 
         可用区码。
 
@@ -133,7 +133,7 @@ class CdmClusterAvailabilityZone:
 
     @available_zone_code.setter
     def available_zone_code(self, available_zone_code):
-        """Sets the available_zone_code of this CdmClusterAvailabilityZone.
+        r"""Sets the available_zone_code of this CdmClusterAvailabilityZone.
 
         可用区码。
 
@@ -144,7 +144,7 @@ class CdmClusterAvailabilityZone:
 
     @property
     def az_status(self):
-        """Gets the az_status of this CdmClusterAvailabilityZone.
+        r"""Gets the az_status of this CdmClusterAvailabilityZone.
 
         可用区状态。
 
@@ -155,7 +155,7 @@ class CdmClusterAvailabilityZone:
 
     @az_status.setter
     def az_status(self, az_status):
-        """Sets the az_status of this CdmClusterAvailabilityZone.
+        r"""Sets the az_status of this CdmClusterAvailabilityZone.
 
         可用区状态。
 
@@ -166,7 +166,7 @@ class CdmClusterAvailabilityZone:
 
     @property
     def type(self):
-        """Gets the type of this CdmClusterAvailabilityZone.
+        r"""Gets the type of this CdmClusterAvailabilityZone.
 
         可用区类型。
 
@@ -177,7 +177,7 @@ class CdmClusterAvailabilityZone:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CdmClusterAvailabilityZone.
+        r"""Sets the type of this CdmClusterAvailabilityZone.
 
         可用区类型。
 
@@ -188,7 +188,7 @@ class CdmClusterAvailabilityZone:
 
     @property
     def tags(self):
-        """Gets the tags of this CdmClusterAvailabilityZone.
+        r"""Gets the tags of this CdmClusterAvailabilityZone.
 
         可用区tag。
 
@@ -199,7 +199,7 @@ class CdmClusterAvailabilityZone:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CdmClusterAvailabilityZone.
+        r"""Sets the tags of this CdmClusterAvailabilityZone.
 
         可用区tag。
 

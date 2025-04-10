@@ -27,7 +27,7 @@ class SysTags:
     }
 
     def __init__(self, value=None, key=None):
-        """SysTags
+        r"""SysTags
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class SysTags:
 
     @property
     def value(self):
-        """Gets the value of this SysTags.
+        r"""Gets the value of this SysTags.
 
         企业项目ID
 
@@ -59,7 +59,7 @@ class SysTags:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this SysTags.
+        r"""Sets the value of this SysTags.
 
         企业项目ID
 
@@ -70,7 +70,7 @@ class SysTags:
 
     @property
     def key(self):
-        """Gets the key of this SysTags.
+        r"""Gets the key of this SysTags.
 
         该值目前固定为“_sys_enterprise_project_id”
 
@@ -81,7 +81,7 @@ class SysTags:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this SysTags.
+        r"""Sets the key of this SysTags.
 
         该值目前固定为“_sys_enterprise_project_id”
 

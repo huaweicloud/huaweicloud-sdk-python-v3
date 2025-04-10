@@ -28,7 +28,7 @@ class ShowBackupDownloadLinkResponse(SdkResponse):
     }
 
     def __init__(self, files=None, bucket=None):
-        """ShowBackupDownloadLinkResponse
+        r"""ShowBackupDownloadLinkResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowBackupDownloadLinkResponse(SdkResponse):
 
     @property
     def files(self):
-        """Gets the files of this ShowBackupDownloadLinkResponse.
+        r"""Gets the files of this ShowBackupDownloadLinkResponse.
 
         备份文件信息。
 
@@ -62,7 +62,7 @@ class ShowBackupDownloadLinkResponse(SdkResponse):
 
     @files.setter
     def files(self, files):
-        """Sets the files of this ShowBackupDownloadLinkResponse.
+        r"""Sets the files of this ShowBackupDownloadLinkResponse.
 
         备份文件信息。
 
@@ -73,7 +73,7 @@ class ShowBackupDownloadLinkResponse(SdkResponse):
 
     @property
     def bucket(self):
-        """Gets the bucket of this ShowBackupDownloadLinkResponse.
+        r"""Gets the bucket of this ShowBackupDownloadLinkResponse.
 
         OBS桶名。
 
@@ -84,7 +84,7 @@ class ShowBackupDownloadLinkResponse(SdkResponse):
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this ShowBackupDownloadLinkResponse.
+        r"""Sets the bucket of this ShowBackupDownloadLinkResponse.
 
         OBS桶名。
 

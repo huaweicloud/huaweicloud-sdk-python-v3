@@ -28,7 +28,7 @@ class DeleteEndpointResponse(SdkResponse):
     }
 
     def __init__(self, id=None, x_request_id=None):
-        """DeleteEndpointResponse
+        r"""DeleteEndpointResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class DeleteEndpointResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this DeleteEndpointResponse.
+        r"""Gets the id of this DeleteEndpointResponse.
 
         Endpoint的id
 
@@ -62,7 +62,7 @@ class DeleteEndpointResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteEndpointResponse.
+        r"""Sets the id of this DeleteEndpointResponse.
 
         Endpoint的id
 
@@ -73,7 +73,7 @@ class DeleteEndpointResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DeleteEndpointResponse.
+        r"""Gets the x_request_id of this DeleteEndpointResponse.
 
         :return: The x_request_id of this DeleteEndpointResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class DeleteEndpointResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DeleteEndpointResponse.
+        r"""Sets the x_request_id of this DeleteEndpointResponse.
 
         :param x_request_id: The x_request_id of this DeleteEndpointResponse.
         :type x_request_id: str

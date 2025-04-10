@@ -27,7 +27,7 @@ class SynchronizeDcConfigsRequest:
     }
 
     def __init__(self, edge_node_id=None, ds_id=None):
-        """SynchronizeDcConfigsRequest
+        r"""SynchronizeDcConfigsRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class SynchronizeDcConfigsRequest:
 
     @property
     def edge_node_id(self):
-        """Gets the edge_node_id of this SynchronizeDcConfigsRequest.
+        r"""Gets the edge_node_id of this SynchronizeDcConfigsRequest.
 
         边缘节点ID
 
@@ -59,7 +59,7 @@ class SynchronizeDcConfigsRequest:
 
     @edge_node_id.setter
     def edge_node_id(self, edge_node_id):
-        """Sets the edge_node_id of this SynchronizeDcConfigsRequest.
+        r"""Sets the edge_node_id of this SynchronizeDcConfigsRequest.
 
         边缘节点ID
 
@@ -70,7 +70,7 @@ class SynchronizeDcConfigsRequest:
 
     @property
     def ds_id(self):
-        """Gets the ds_id of this SynchronizeDcConfigsRequest.
+        r"""Gets the ds_id of this SynchronizeDcConfigsRequest.
 
         采集数据源id，创建数据源配置时设置，节点下唯一。
 
@@ -81,7 +81,7 @@ class SynchronizeDcConfigsRequest:
 
     @ds_id.setter
     def ds_id(self, ds_id):
-        """Sets the ds_id of this SynchronizeDcConfigsRequest.
+        r"""Sets the ds_id of this SynchronizeDcConfigsRequest.
 
         采集数据源id，创建数据源配置时设置，节点下唯一。
 

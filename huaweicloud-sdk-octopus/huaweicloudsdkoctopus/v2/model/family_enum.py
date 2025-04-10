@@ -30,7 +30,7 @@ class FamilyEnum:
     }
 
     def __init__(self):
-        """FamilyEnum
+        r"""FamilyEnum
 
         The model defined in huaweicloud sdk
 

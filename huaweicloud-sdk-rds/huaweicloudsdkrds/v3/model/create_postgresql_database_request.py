@@ -29,7 +29,7 @@ class CreatePostgresqlDatabaseRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """CreatePostgresqlDatabaseRequest
+        r"""CreatePostgresqlDatabaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreatePostgresqlDatabaseRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreatePostgresqlDatabaseRequest.
+        r"""Gets the x_language of this CreatePostgresqlDatabaseRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class CreatePostgresqlDatabaseRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreatePostgresqlDatabaseRequest.
+        r"""Sets the x_language of this CreatePostgresqlDatabaseRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class CreatePostgresqlDatabaseRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreatePostgresqlDatabaseRequest.
+        r"""Gets the instance_id of this CreatePostgresqlDatabaseRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class CreatePostgresqlDatabaseRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreatePostgresqlDatabaseRequest.
+        r"""Sets the instance_id of this CreatePostgresqlDatabaseRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class CreatePostgresqlDatabaseRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePostgresqlDatabaseRequest.
+        r"""Gets the body of this CreatePostgresqlDatabaseRequest.
 
         :return: The body of this CreatePostgresqlDatabaseRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.PostgresqlDatabaseForCreation`
@@ -109,7 +109,7 @@ class CreatePostgresqlDatabaseRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePostgresqlDatabaseRequest.
+        r"""Sets the body of this CreatePostgresqlDatabaseRequest.
 
         :param body: The body of this CreatePostgresqlDatabaseRequest.
         :type body: :class:`huaweicloudsdkrds.v3.PostgresqlDatabaseForCreation`

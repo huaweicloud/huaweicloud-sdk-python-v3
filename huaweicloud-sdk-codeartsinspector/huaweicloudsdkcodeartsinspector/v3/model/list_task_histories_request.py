@@ -29,7 +29,7 @@ class ListTaskHistoriesRequest:
     }
 
     def __init__(self, domain_id=None, offset=None, limit=None):
-        """ListTaskHistoriesRequest
+        r"""ListTaskHistoriesRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListTaskHistoriesRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ListTaskHistoriesRequest.
+        r"""Gets the domain_id of this ListTaskHistoriesRequest.
 
         网站域名ID
 
@@ -67,7 +67,7 @@ class ListTaskHistoriesRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ListTaskHistoriesRequest.
+        r"""Sets the domain_id of this ListTaskHistoriesRequest.
 
         网站域名ID
 
@@ -78,7 +78,7 @@ class ListTaskHistoriesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTaskHistoriesRequest.
+        r"""Gets the offset of this ListTaskHistoriesRequest.
 
         分页查询，偏移量，表示从此偏移量开始查询
 
@@ -89,7 +89,7 @@ class ListTaskHistoriesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTaskHistoriesRequest.
+        r"""Sets the offset of this ListTaskHistoriesRequest.
 
         分页查询，偏移量，表示从此偏移量开始查询
 
@@ -100,7 +100,7 @@ class ListTaskHistoriesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTaskHistoriesRequest.
+        r"""Gets the limit of this ListTaskHistoriesRequest.
 
         分页查询，每页显示的条目数量
 
@@ -111,7 +111,7 @@ class ListTaskHistoriesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTaskHistoriesRequest.
+        r"""Sets the limit of this ListTaskHistoriesRequest.
 
         分页查询，每页显示的条目数量
 

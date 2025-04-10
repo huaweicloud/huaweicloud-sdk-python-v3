@@ -29,7 +29,7 @@ class PutVolume:
     }
 
     def __init__(self, id=None, need_migration=None, adjust_size=None):
-        """PutVolume
+        r"""PutVolume
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PutVolume:
 
     @property
     def id(self):
-        """Gets the id of this PutVolume.
+        r"""Gets the id of this PutVolume.
 
         数据库ID
 
@@ -68,7 +68,7 @@ class PutVolume:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PutVolume.
+        r"""Sets the id of this PutVolume.
 
         数据库ID
 
@@ -79,7 +79,7 @@ class PutVolume:
 
     @property
     def need_migration(self):
-        """Gets the need_migration of this PutVolume.
+        r"""Gets the need_migration of this PutVolume.
 
         是否迁移
 
@@ -90,7 +90,7 @@ class PutVolume:
 
     @need_migration.setter
     def need_migration(self, need_migration):
-        """Sets the need_migration of this PutVolume.
+        r"""Sets the need_migration of this PutVolume.
 
         是否迁移
 
@@ -101,7 +101,7 @@ class PutVolume:
 
     @property
     def adjust_size(self):
-        """Gets the adjust_size of this PutVolume.
+        r"""Gets the adjust_size of this PutVolume.
 
         调整大小
 
@@ -112,7 +112,7 @@ class PutVolume:
 
     @adjust_size.setter
     def adjust_size(self, adjust_size):
-        """Sets the adjust_size of this PutVolume.
+        r"""Sets the adjust_size of this PutVolume.
 
         调整大小
 

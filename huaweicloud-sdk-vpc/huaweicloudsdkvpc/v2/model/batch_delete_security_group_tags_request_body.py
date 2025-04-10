@@ -27,7 +27,7 @@ class BatchDeleteSecurityGroupTagsRequestBody:
     }
 
     def __init__(self, action=None, tags=None):
-        """BatchDeleteSecurityGroupTagsRequestBody
+        r"""BatchDeleteSecurityGroupTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchDeleteSecurityGroupTagsRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this BatchDeleteSecurityGroupTagsRequestBody.
+        r"""Gets the action of this BatchDeleteSecurityGroupTagsRequestBody.
 
         功能说明：操作标识 取值范围：delete
 
@@ -59,7 +59,7 @@ class BatchDeleteSecurityGroupTagsRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this BatchDeleteSecurityGroupTagsRequestBody.
+        r"""Sets the action of this BatchDeleteSecurityGroupTagsRequestBody.
 
         功能说明：操作标识 取值范围：delete
 
@@ -70,7 +70,7 @@ class BatchDeleteSecurityGroupTagsRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchDeleteSecurityGroupTagsRequestBody.
+        r"""Gets the tags of this BatchDeleteSecurityGroupTagsRequestBody.
 
         标签列表
 
@@ -81,7 +81,7 @@ class BatchDeleteSecurityGroupTagsRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchDeleteSecurityGroupTagsRequestBody.
+        r"""Sets the tags of this BatchDeleteSecurityGroupTagsRequestBody.
 
         标签列表
 

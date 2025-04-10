@@ -26,7 +26,7 @@ class StartJobResponse(SdkResponse):
     }
 
     def __init__(self, submissions=None):
-        """StartJobResponse
+        r"""StartJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class StartJobResponse(SdkResponse):
 
     @property
     def submissions(self):
-        """Gets the submissions of this StartJobResponse.
+        r"""Gets the submissions of this StartJobResponse.
 
         作业运行信息，请参见submission参数说明
 
@@ -55,7 +55,7 @@ class StartJobResponse(SdkResponse):
 
     @submissions.setter
     def submissions(self, submissions):
-        """Sets the submissions of this StartJobResponse.
+        r"""Sets the submissions of this StartJobResponse.
 
         作业运行信息，请参见submission参数说明
 

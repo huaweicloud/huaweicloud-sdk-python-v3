@@ -25,7 +25,7 @@ class CancelScheduledTaskRequest:
     }
 
     def __init__(self, job_id=None):
-        """CancelScheduledTaskRequest
+        r"""CancelScheduledTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CancelScheduledTaskRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this CancelScheduledTaskRequest.
+        r"""Gets the job_id of this CancelScheduledTaskRequest.
 
         任务ID，取值为定时任务列表。
 
@@ -53,7 +53,7 @@ class CancelScheduledTaskRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CancelScheduledTaskRequest.
+        r"""Sets the job_id of this CancelScheduledTaskRequest.
 
         任务ID，取值为定时任务列表。
 

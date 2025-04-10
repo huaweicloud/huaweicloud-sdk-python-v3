@@ -29,7 +29,7 @@ class LifecycleManagedModelUpdateLifecycleStateDTO:
     }
 
     def __init__(self, id=None, lifecycle_state=None, modifier=None):
-        """LifecycleManagedModelUpdateLifecycleStateDTO
+        r"""LifecycleManagedModelUpdateLifecycleStateDTO
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class LifecycleManagedModelUpdateLifecycleStateDTO:
 
     @property
     def id(self):
-        """Gets the id of this LifecycleManagedModelUpdateLifecycleStateDTO.
+        r"""Gets the id of this LifecycleManagedModelUpdateLifecycleStateDTO.
 
         **参数解释：**  数据实例ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -66,7 +66,7 @@ class LifecycleManagedModelUpdateLifecycleStateDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this LifecycleManagedModelUpdateLifecycleStateDTO.
+        r"""Sets the id of this LifecycleManagedModelUpdateLifecycleStateDTO.
 
         **参数解释：**  数据实例ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -77,7 +77,7 @@ class LifecycleManagedModelUpdateLifecycleStateDTO:
 
     @property
     def lifecycle_state(self):
-        """Gets the lifecycle_state of this LifecycleManagedModelUpdateLifecycleStateDTO.
+        r"""Gets the lifecycle_state of this LifecycleManagedModelUpdateLifecycleStateDTO.
 
         :return: The lifecycle_state of this LifecycleManagedModelUpdateLifecycleStateDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
@@ -86,7 +86,7 @@ class LifecycleManagedModelUpdateLifecycleStateDTO:
 
     @lifecycle_state.setter
     def lifecycle_state(self, lifecycle_state):
-        """Sets the lifecycle_state of this LifecycleManagedModelUpdateLifecycleStateDTO.
+        r"""Sets the lifecycle_state of this LifecycleManagedModelUpdateLifecycleStateDTO.
 
         :param lifecycle_state: The lifecycle_state of this LifecycleManagedModelUpdateLifecycleStateDTO.
         :type lifecycle_state: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
@@ -95,7 +95,7 @@ class LifecycleManagedModelUpdateLifecycleStateDTO:
 
     @property
     def modifier(self):
-        """Gets the modifier of this LifecycleManagedModelUpdateLifecycleStateDTO.
+        r"""Gets the modifier of this LifecycleManagedModelUpdateLifecycleStateDTO.
 
         **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -106,7 +106,7 @@ class LifecycleManagedModelUpdateLifecycleStateDTO:
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this LifecycleManagedModelUpdateLifecycleStateDTO.
+        r"""Sets the modifier of this LifecycleManagedModelUpdateLifecycleStateDTO.
 
         **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 

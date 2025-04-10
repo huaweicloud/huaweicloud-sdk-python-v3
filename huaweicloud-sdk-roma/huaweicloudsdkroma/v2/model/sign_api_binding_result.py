@@ -25,7 +25,7 @@ class SignApiBindingResult:
     }
 
     def __init__(self, bindings=None):
-        """SignApiBindingResult
+        r"""SignApiBindingResult
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SignApiBindingResult:
 
     @property
     def bindings(self):
-        """Gets the bindings of this SignApiBindingResult.
+        r"""Gets the bindings of this SignApiBindingResult.
 
         API与签名密钥的绑定关系列表
 
@@ -54,7 +54,7 @@ class SignApiBindingResult:
 
     @bindings.setter
     def bindings(self, bindings):
-        """Sets the bindings of this SignApiBindingResult.
+        r"""Sets the bindings of this SignApiBindingResult.
 
         API与签名密钥的绑定关系列表
 

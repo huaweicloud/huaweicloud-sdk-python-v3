@@ -25,7 +25,7 @@ class MemberRef:
     }
 
     def __init__(self, id=None):
-        """MemberRef
+        r"""MemberRef
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class MemberRef:
 
     @property
     def id(self):
-        """Gets the id of this MemberRef.
+        r"""Gets the id of this MemberRef.
 
         参数解释：后端服务器ID。
 
@@ -53,7 +53,7 @@ class MemberRef:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MemberRef.
+        r"""Sets the id of this MemberRef.
 
         参数解释：后端服务器ID。
 

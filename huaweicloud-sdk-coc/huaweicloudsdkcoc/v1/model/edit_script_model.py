@@ -31,7 +31,7 @@ class EditScriptModel:
     }
 
     def __init__(self, description=None, content=None, properties=None, script_params=None):
-        """EditScriptModel
+        r"""EditScriptModel
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class EditScriptModel:
 
     @property
     def description(self):
-        """Gets the description of this EditScriptModel.
+        r"""Gets the description of this EditScriptModel.
 
         脚本描述
 
@@ -73,7 +73,7 @@ class EditScriptModel:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EditScriptModel.
+        r"""Sets the description of this EditScriptModel.
 
         脚本描述
 
@@ -84,7 +84,7 @@ class EditScriptModel:
 
     @property
     def content(self):
-        """Gets the content of this EditScriptModel.
+        r"""Gets the content of this EditScriptModel.
 
         脚本内容
 
@@ -95,7 +95,7 @@ class EditScriptModel:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this EditScriptModel.
+        r"""Sets the content of this EditScriptModel.
 
         脚本内容
 
@@ -106,7 +106,7 @@ class EditScriptModel:
 
     @property
     def properties(self):
-        """Gets the properties of this EditScriptModel.
+        r"""Gets the properties of this EditScriptModel.
 
         :return: The properties of this EditScriptModel.
         :rtype: :class:`huaweicloudsdkcoc.v1.ScriptPropertiesModel`
@@ -115,7 +115,7 @@ class EditScriptModel:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this EditScriptModel.
+        r"""Sets the properties of this EditScriptModel.
 
         :param properties: The properties of this EditScriptModel.
         :type properties: :class:`huaweicloudsdkcoc.v1.ScriptPropertiesModel`
@@ -124,7 +124,7 @@ class EditScriptModel:
 
     @property
     def script_params(self):
-        """Gets the script_params of this EditScriptModel.
+        r"""Gets the script_params of this EditScriptModel.
 
         脚本入参
 
@@ -135,7 +135,7 @@ class EditScriptModel:
 
     @script_params.setter
     def script_params(self, script_params):
-        """Sets the script_params of this EditScriptModel.
+        r"""Sets the script_params of this EditScriptModel.
 
         脚本入参
 

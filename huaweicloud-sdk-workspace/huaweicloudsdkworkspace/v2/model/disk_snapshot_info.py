@@ -27,7 +27,7 @@ class DiskSnapshotInfo:
     }
 
     def __init__(self, name=None, description=None):
-        """DiskSnapshotInfo
+        r"""DiskSnapshotInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DiskSnapshotInfo:
 
     @property
     def name(self):
-        """Gets the name of this DiskSnapshotInfo.
+        r"""Gets the name of this DiskSnapshotInfo.
 
         磁盘快照名称，批量操作时最终名称为：桌面名称+磁盘快照名称+时间戳。
 
@@ -61,7 +61,7 @@ class DiskSnapshotInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DiskSnapshotInfo.
+        r"""Sets the name of this DiskSnapshotInfo.
 
         磁盘快照名称，批量操作时最终名称为：桌面名称+磁盘快照名称+时间戳。
 
@@ -72,7 +72,7 @@ class DiskSnapshotInfo:
 
     @property
     def description(self):
-        """Gets the description of this DiskSnapshotInfo.
+        r"""Gets the description of this DiskSnapshotInfo.
 
         磁盘快照描述。
 
@@ -83,7 +83,7 @@ class DiskSnapshotInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DiskSnapshotInfo.
+        r"""Sets the description of this DiskSnapshotInfo.
 
         磁盘快照描述。
 

@@ -27,7 +27,7 @@ class SealWordsBlockList:
     }
 
     def __init__(self, words=None, words_confidence=None):
-        """SealWordsBlockList
+        r"""SealWordsBlockList
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SealWordsBlockList:
 
     @property
     def words(self):
-        """Gets the words of this SealWordsBlockList.
+        r"""Gets the words of this SealWordsBlockList.
 
         印章文本块。
 
@@ -61,7 +61,7 @@ class SealWordsBlockList:
 
     @words.setter
     def words(self, words):
-        """Sets the words of this SealWordsBlockList.
+        r"""Sets the words of this SealWordsBlockList.
 
         印章文本块。
 
@@ -72,7 +72,7 @@ class SealWordsBlockList:
 
     @property
     def words_confidence(self):
-        """Gets the words_confidence of this SealWordsBlockList.
+        r"""Gets the words_confidence of this SealWordsBlockList.
 
         印章文本块的置信度。
 
@@ -83,7 +83,7 @@ class SealWordsBlockList:
 
     @words_confidence.setter
     def words_confidence(self, words_confidence):
-        """Sets the words_confidence of this SealWordsBlockList.
+        r"""Sets the words_confidence of this SealWordsBlockList.
 
         印章文本块的置信度。
 

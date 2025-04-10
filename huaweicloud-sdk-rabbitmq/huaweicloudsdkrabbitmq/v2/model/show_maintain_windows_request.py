@@ -23,7 +23,7 @@ class ShowMaintainWindowsRequest:
     }
 
     def __init__(self):
-        """ShowMaintainWindowsRequest
+        r"""ShowMaintainWindowsRequest
 
         The model defined in huaweicloud sdk
 

@@ -25,7 +25,7 @@ class AddMaterialRequestBody:
     }
 
     def __init__(self, file=None):
-        """AddMaterialRequestBody
+        r"""AddMaterialRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AddMaterialRequestBody:
 
     @property
     def file(self):
-        """Gets the file of this AddMaterialRequestBody.
+        r"""Gets the file of this AddMaterialRequestBody.
 
         素材文件。 - 只能上传jpg/jpeg/png格式文件，分辨率比率16:9，最大分辨率为3840*2160（推荐） - 请先命名完图片名称再上传
 
@@ -53,7 +53,7 @@ class AddMaterialRequestBody:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this AddMaterialRequestBody.
+        r"""Sets the file of this AddMaterialRequestBody.
 
         素材文件。 - 只能上传jpg/jpeg/png格式文件，分辨率比率16:9，最大分辨率为3840*2160（推荐） - 请先命名完图片名称再上传
 

@@ -39,7 +39,7 @@ class UpdateAppReq:
     }
 
     def __init__(self, name=None, version=None, execute_path=None, work_path=None, description=None, command_param=None, state=None, sandbox_enable=None):
-        """UpdateAppReq
+        r"""UpdateAppReq
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class UpdateAppReq:
 
     @property
     def name(self):
-        """Gets the name of this UpdateAppReq.
+        r"""Gets the name of this UpdateAppReq.
 
         应用名称,名称需满足如下规则: 1. 名称允许可见字符或空格，不可为全空格。 2. 长度1~64个字符。
 
@@ -103,7 +103,7 @@ class UpdateAppReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateAppReq.
+        r"""Sets the name of this UpdateAppReq.
 
         应用名称,名称需满足如下规则: 1. 名称允许可见字符或空格，不可为全空格。 2. 长度1~64个字符。
 
@@ -114,7 +114,7 @@ class UpdateAppReq:
 
     @property
     def version(self):
-        """Gets the version of this UpdateAppReq.
+        r"""Gets the version of this UpdateAppReq.
 
         应用版本号。
 
@@ -125,7 +125,7 @@ class UpdateAppReq:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this UpdateAppReq.
+        r"""Sets the version of this UpdateAppReq.
 
         应用版本号。
 
@@ -136,7 +136,7 @@ class UpdateAppReq:
 
     @property
     def execute_path(self):
-        """Gets the execute_path of this UpdateAppReq.
+        r"""Gets the execute_path of this UpdateAppReq.
 
         执行路径。
 
@@ -147,7 +147,7 @@ class UpdateAppReq:
 
     @execute_path.setter
     def execute_path(self, execute_path):
-        """Sets the execute_path of this UpdateAppReq.
+        r"""Sets the execute_path of this UpdateAppReq.
 
         执行路径。
 
@@ -158,7 +158,7 @@ class UpdateAppReq:
 
     @property
     def work_path(self):
-        """Gets the work_path of this UpdateAppReq.
+        r"""Gets the work_path of this UpdateAppReq.
 
         应用工作目录。
 
@@ -169,7 +169,7 @@ class UpdateAppReq:
 
     @work_path.setter
     def work_path(self, work_path):
-        """Sets the work_path of this UpdateAppReq.
+        r"""Sets the work_path of this UpdateAppReq.
 
         应用工作目录。
 
@@ -180,7 +180,7 @@ class UpdateAppReq:
 
     @property
     def description(self):
-        """Gets the description of this UpdateAppReq.
+        r"""Gets the description of this UpdateAppReq.
 
         应用描述。
 
@@ -191,7 +191,7 @@ class UpdateAppReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateAppReq.
+        r"""Sets the description of this UpdateAppReq.
 
         应用描述。
 
@@ -202,7 +202,7 @@ class UpdateAppReq:
 
     @property
     def command_param(self):
-        """Gets the command_param of this UpdateAppReq.
+        r"""Gets the command_param of this UpdateAppReq.
 
         启动命令行参数。
 
@@ -213,7 +213,7 @@ class UpdateAppReq:
 
     @command_param.setter
     def command_param(self, command_param):
-        """Sets the command_param of this UpdateAppReq.
+        r"""Sets the command_param of this UpdateAppReq.
 
         启动命令行参数。
 
@@ -224,7 +224,7 @@ class UpdateAppReq:
 
     @property
     def state(self):
-        """Gets the state of this UpdateAppReq.
+        r"""Gets the state of this UpdateAppReq.
 
         :return: The state of this UpdateAppReq.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppStateEnum`
@@ -233,7 +233,7 @@ class UpdateAppReq:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this UpdateAppReq.
+        r"""Sets the state of this UpdateAppReq.
 
         :param state: The state of this UpdateAppReq.
         :type state: :class:`huaweicloudsdkworkspaceapp.v1.AppStateEnum`
@@ -242,7 +242,7 @@ class UpdateAppReq:
 
     @property
     def sandbox_enable(self):
-        """Gets the sandbox_enable of this UpdateAppReq.
+        r"""Gets the sandbox_enable of this UpdateAppReq.
 
         是否使用沙箱模式运行，取值为： - false: 表示不以沙箱模式运行 - true: 表示以沙箱模式运行
 
@@ -253,7 +253,7 @@ class UpdateAppReq:
 
     @sandbox_enable.setter
     def sandbox_enable(self, sandbox_enable):
-        """Sets the sandbox_enable of this UpdateAppReq.
+        r"""Sets the sandbox_enable of this UpdateAppReq.
 
         是否使用沙箱模式运行，取值为： - false: 表示不以沙箱模式运行 - true: 表示以沙箱模式运行
 

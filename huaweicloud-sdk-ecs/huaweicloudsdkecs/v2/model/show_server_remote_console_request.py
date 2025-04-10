@@ -27,7 +27,7 @@ class ShowServerRemoteConsoleRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """ShowServerRemoteConsoleRequest
+        r"""ShowServerRemoteConsoleRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowServerRemoteConsoleRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ShowServerRemoteConsoleRequest.
+        r"""Gets the server_id of this ShowServerRemoteConsoleRequest.
 
         云服务器ID。
 
@@ -60,7 +60,7 @@ class ShowServerRemoteConsoleRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ShowServerRemoteConsoleRequest.
+        r"""Sets the server_id of this ShowServerRemoteConsoleRequest.
 
         云服务器ID。
 
@@ -71,7 +71,7 @@ class ShowServerRemoteConsoleRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowServerRemoteConsoleRequest.
+        r"""Gets the body of this ShowServerRemoteConsoleRequest.
 
         :return: The body of this ShowServerRemoteConsoleRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.ShowServerRemoteConsoleRequestBody`
@@ -80,7 +80,7 @@ class ShowServerRemoteConsoleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowServerRemoteConsoleRequest.
+        r"""Sets the body of this ShowServerRemoteConsoleRequest.
 
         :param body: The body of this ShowServerRemoteConsoleRequest.
         :type body: :class:`huaweicloudsdkecs.v2.ShowServerRemoteConsoleRequestBody`

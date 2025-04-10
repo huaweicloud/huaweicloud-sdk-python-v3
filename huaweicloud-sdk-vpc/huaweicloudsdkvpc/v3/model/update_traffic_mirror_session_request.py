@@ -27,7 +27,7 @@ class UpdateTrafficMirrorSessionRequest:
     }
 
     def __init__(self, traffic_mirror_session_id=None, body=None):
-        """UpdateTrafficMirrorSessionRequest
+        r"""UpdateTrafficMirrorSessionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateTrafficMirrorSessionRequest:
 
     @property
     def traffic_mirror_session_id(self):
-        """Gets the traffic_mirror_session_id of this UpdateTrafficMirrorSessionRequest.
+        r"""Gets the traffic_mirror_session_id of this UpdateTrafficMirrorSessionRequest.
 
         流量镜像会话ID
 
@@ -60,7 +60,7 @@ class UpdateTrafficMirrorSessionRequest:
 
     @traffic_mirror_session_id.setter
     def traffic_mirror_session_id(self, traffic_mirror_session_id):
-        """Sets the traffic_mirror_session_id of this UpdateTrafficMirrorSessionRequest.
+        r"""Sets the traffic_mirror_session_id of this UpdateTrafficMirrorSessionRequest.
 
         流量镜像会话ID
 
@@ -71,7 +71,7 @@ class UpdateTrafficMirrorSessionRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateTrafficMirrorSessionRequest.
+        r"""Gets the body of this UpdateTrafficMirrorSessionRequest.
 
         :return: The body of this UpdateTrafficMirrorSessionRequest.
         :rtype: :class:`huaweicloudsdkvpc.v3.UpdateTrafficMirrorSessionRequestBody`
@@ -80,7 +80,7 @@ class UpdateTrafficMirrorSessionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateTrafficMirrorSessionRequest.
+        r"""Sets the body of this UpdateTrafficMirrorSessionRequest.
 
         :param body: The body of this UpdateTrafficMirrorSessionRequest.
         :type body: :class:`huaweicloudsdkvpc.v3.UpdateTrafficMirrorSessionRequestBody`

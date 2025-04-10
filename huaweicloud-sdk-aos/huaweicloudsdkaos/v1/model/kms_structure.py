@@ -27,7 +27,7 @@ class KmsStructure:
     }
 
     def __init__(self, id=None, cipher_text=None):
-        """KmsStructure
+        r"""KmsStructure
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class KmsStructure:
 
     @property
     def id(self):
-        """Gets the id of this KmsStructure.
+        r"""Gets the id of this KmsStructure.
 
         解密时，资源编排服务应该使用的KMS密钥的ID，通常是加密时所使用的密钥ID
 
@@ -59,7 +59,7 @@ class KmsStructure:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this KmsStructure.
+        r"""Sets the id of this KmsStructure.
 
         解密时，资源编排服务应该使用的KMS密钥的ID，通常是加密时所使用的密钥ID
 
@@ -70,7 +70,7 @@ class KmsStructure:
 
     @property
     def cipher_text(self):
-        """Gets the cipher_text of this KmsStructure.
+        r"""Gets the cipher_text of this KmsStructure.
 
         数据加密密钥所对应的密文
 
@@ -81,7 +81,7 @@ class KmsStructure:
 
     @cipher_text.setter
     def cipher_text(self, cipher_text):
-        """Sets the cipher_text of this KmsStructure.
+        r"""Sets the cipher_text of this KmsStructure.
 
         数据加密密钥所对应的密文
 

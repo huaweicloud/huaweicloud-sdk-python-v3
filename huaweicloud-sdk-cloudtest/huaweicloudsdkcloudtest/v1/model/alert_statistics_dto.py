@@ -35,7 +35,7 @@ class AlertStatisticsDto:
     }
 
     def __init__(self, block_alert_count=None, exception_alert_count=None, fail_alert_count=None, service_id=None, statistics_time=None, timeout_alert_count=None):
-        """AlertStatisticsDto
+        r"""AlertStatisticsDto
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class AlertStatisticsDto:
 
     @property
     def block_alert_count(self):
-        """Gets the block_alert_count of this AlertStatisticsDto.
+        r"""Gets the block_alert_count of this AlertStatisticsDto.
 
         阻塞告警次数
 
@@ -89,7 +89,7 @@ class AlertStatisticsDto:
 
     @block_alert_count.setter
     def block_alert_count(self, block_alert_count):
-        """Sets the block_alert_count of this AlertStatisticsDto.
+        r"""Sets the block_alert_count of this AlertStatisticsDto.
 
         阻塞告警次数
 
@@ -100,7 +100,7 @@ class AlertStatisticsDto:
 
     @property
     def exception_alert_count(self):
-        """Gets the exception_alert_count of this AlertStatisticsDto.
+        r"""Gets the exception_alert_count of this AlertStatisticsDto.
 
         异常告警次数
 
@@ -111,7 +111,7 @@ class AlertStatisticsDto:
 
     @exception_alert_count.setter
     def exception_alert_count(self, exception_alert_count):
-        """Sets the exception_alert_count of this AlertStatisticsDto.
+        r"""Sets the exception_alert_count of this AlertStatisticsDto.
 
         异常告警次数
 
@@ -122,7 +122,7 @@ class AlertStatisticsDto:
 
     @property
     def fail_alert_count(self):
-        """Gets the fail_alert_count of this AlertStatisticsDto.
+        r"""Gets the fail_alert_count of this AlertStatisticsDto.
 
         失败告警次数
 
@@ -133,7 +133,7 @@ class AlertStatisticsDto:
 
     @fail_alert_count.setter
     def fail_alert_count(self, fail_alert_count):
-        """Sets the fail_alert_count of this AlertStatisticsDto.
+        r"""Sets the fail_alert_count of this AlertStatisticsDto.
 
         失败告警次数
 
@@ -144,7 +144,7 @@ class AlertStatisticsDto:
 
     @property
     def service_id(self):
-        """Gets the service_id of this AlertStatisticsDto.
+        r"""Gets the service_id of this AlertStatisticsDto.
 
         服务id
 
@@ -155,7 +155,7 @@ class AlertStatisticsDto:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this AlertStatisticsDto.
+        r"""Sets the service_id of this AlertStatisticsDto.
 
         服务id
 
@@ -166,7 +166,7 @@ class AlertStatisticsDto:
 
     @property
     def statistics_time(self):
-        """Gets the statistics_time of this AlertStatisticsDto.
+        r"""Gets the statistics_time of this AlertStatisticsDto.
 
         统计时间
 
@@ -177,7 +177,7 @@ class AlertStatisticsDto:
 
     @statistics_time.setter
     def statistics_time(self, statistics_time):
-        """Sets the statistics_time of this AlertStatisticsDto.
+        r"""Sets the statistics_time of this AlertStatisticsDto.
 
         统计时间
 
@@ -188,7 +188,7 @@ class AlertStatisticsDto:
 
     @property
     def timeout_alert_count(self):
-        """Gets the timeout_alert_count of this AlertStatisticsDto.
+        r"""Gets the timeout_alert_count of this AlertStatisticsDto.
 
         超时告警次数
 
@@ -199,7 +199,7 @@ class AlertStatisticsDto:
 
     @timeout_alert_count.setter
     def timeout_alert_count(self, timeout_alert_count):
-        """Sets the timeout_alert_count of this AlertStatisticsDto.
+        r"""Sets the timeout_alert_count of this AlertStatisticsDto.
 
         超时告警次数
 

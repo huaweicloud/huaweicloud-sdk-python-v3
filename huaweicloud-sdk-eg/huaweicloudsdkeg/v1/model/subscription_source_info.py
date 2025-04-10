@@ -37,7 +37,7 @@ class SubscriptionSourceInfo:
     }
 
     def __init__(self, id=None, name=None, provider_type=None, detail=None, filter=None, created_time=None, updated_time=None):
-        """SubscriptionSourceInfo
+        r"""SubscriptionSourceInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class SubscriptionSourceInfo:
 
     @property
     def id(self):
-        """Gets the id of this SubscriptionSourceInfo.
+        r"""Gets the id of this SubscriptionSourceInfo.
 
         订阅源ID
 
@@ -96,7 +96,7 @@ class SubscriptionSourceInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SubscriptionSourceInfo.
+        r"""Sets the id of this SubscriptionSourceInfo.
 
         订阅源ID
 
@@ -107,7 +107,7 @@ class SubscriptionSourceInfo:
 
     @property
     def name(self):
-        """Gets the name of this SubscriptionSourceInfo.
+        r"""Gets the name of this SubscriptionSourceInfo.
 
         订阅的事件源名称
 
@@ -118,7 +118,7 @@ class SubscriptionSourceInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SubscriptionSourceInfo.
+        r"""Sets the name of this SubscriptionSourceInfo.
 
         订阅的事件源名称
 
@@ -129,7 +129,7 @@ class SubscriptionSourceInfo:
 
     @property
     def provider_type(self):
-        """Gets the provider_type of this SubscriptionSourceInfo.
+        r"""Gets the provider_type of this SubscriptionSourceInfo.
 
         订阅的事件源的提供方类型
 
@@ -140,7 +140,7 @@ class SubscriptionSourceInfo:
 
     @provider_type.setter
     def provider_type(self, provider_type):
-        """Sets the provider_type of this SubscriptionSourceInfo.
+        r"""Sets the provider_type of this SubscriptionSourceInfo.
 
         订阅的事件源的提供方类型
 
@@ -151,7 +151,7 @@ class SubscriptionSourceInfo:
 
     @property
     def detail(self):
-        """Gets the detail of this SubscriptionSourceInfo.
+        r"""Gets the detail of this SubscriptionSourceInfo.
 
         订阅的事件源参数列表
 
@@ -162,7 +162,7 @@ class SubscriptionSourceInfo:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this SubscriptionSourceInfo.
+        r"""Sets the detail of this SubscriptionSourceInfo.
 
         订阅的事件源参数列表
 
@@ -173,7 +173,7 @@ class SubscriptionSourceInfo:
 
     @property
     def filter(self):
-        """Gets the filter of this SubscriptionSourceInfo.
+        r"""Gets the filter of this SubscriptionSourceInfo.
 
         订阅事件源的匹配过滤规则
 
@@ -184,7 +184,7 @@ class SubscriptionSourceInfo:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this SubscriptionSourceInfo.
+        r"""Sets the filter of this SubscriptionSourceInfo.
 
         订阅事件源的匹配过滤规则
 
@@ -195,7 +195,7 @@ class SubscriptionSourceInfo:
 
     @property
     def created_time(self):
-        """Gets the created_time of this SubscriptionSourceInfo.
+        r"""Gets the created_time of this SubscriptionSourceInfo.
 
         创建时间
 
@@ -206,7 +206,7 @@ class SubscriptionSourceInfo:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this SubscriptionSourceInfo.
+        r"""Sets the created_time of this SubscriptionSourceInfo.
 
         创建时间
 
@@ -217,7 +217,7 @@ class SubscriptionSourceInfo:
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this SubscriptionSourceInfo.
+        r"""Gets the updated_time of this SubscriptionSourceInfo.
 
         更新时间
 
@@ -228,7 +228,7 @@ class SubscriptionSourceInfo:
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this SubscriptionSourceInfo.
+        r"""Sets the updated_time of this SubscriptionSourceInfo.
 
         更新时间
 

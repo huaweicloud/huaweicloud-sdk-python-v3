@@ -27,7 +27,7 @@ class AvailabilityZoneDetail:
     }
 
     def __init__(self, primary_availability_zone=None, secondary_availability_zone=None):
-        """AvailabilityZoneDetail
+        r"""AvailabilityZoneDetail
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AvailabilityZoneDetail:
 
     @property
     def primary_availability_zone(self):
-        """Gets the primary_availability_zone of this AvailabilityZoneDetail.
+        r"""Gets the primary_availability_zone of this AvailabilityZoneDetail.
 
         主可用区，应为单可用区且和备可用区不同
 
@@ -59,7 +59,7 @@ class AvailabilityZoneDetail:
 
     @primary_availability_zone.setter
     def primary_availability_zone(self, primary_availability_zone):
-        """Sets the primary_availability_zone of this AvailabilityZoneDetail.
+        r"""Sets the primary_availability_zone of this AvailabilityZoneDetail.
 
         主可用区，应为单可用区且和备可用区不同
 
@@ -70,7 +70,7 @@ class AvailabilityZoneDetail:
 
     @property
     def secondary_availability_zone(self):
-        """Gets the secondary_availability_zone of this AvailabilityZoneDetail.
+        r"""Gets the secondary_availability_zone of this AvailabilityZoneDetail.
 
         备可用区，应为单可用区且和主可用区不同
 
@@ -81,7 +81,7 @@ class AvailabilityZoneDetail:
 
     @secondary_availability_zone.setter
     def secondary_availability_zone(self, secondary_availability_zone):
-        """Sets the secondary_availability_zone of this AvailabilityZoneDetail.
+        r"""Sets the secondary_availability_zone of this AvailabilityZoneDetail.
 
         备可用区，应为单可用区且和主可用区不同
 

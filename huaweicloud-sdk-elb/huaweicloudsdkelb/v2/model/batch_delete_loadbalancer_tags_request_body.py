@@ -27,7 +27,7 @@ class BatchDeleteLoadbalancerTagsRequestBody:
     }
 
     def __init__(self, action=None, tags=None):
-        """BatchDeleteLoadbalancerTagsRequestBody
+        r"""BatchDeleteLoadbalancerTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchDeleteLoadbalancerTagsRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this BatchDeleteLoadbalancerTagsRequestBody.
+        r"""Gets the action of this BatchDeleteLoadbalancerTagsRequestBody.
 
         操作类型。 取值范围：delete - 删除标签。
 
@@ -59,7 +59,7 @@ class BatchDeleteLoadbalancerTagsRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this BatchDeleteLoadbalancerTagsRequestBody.
+        r"""Sets the action of this BatchDeleteLoadbalancerTagsRequestBody.
 
         操作类型。 取值范围：delete - 删除标签。
 
@@ -70,7 +70,7 @@ class BatchDeleteLoadbalancerTagsRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchDeleteLoadbalancerTagsRequestBody.
+        r"""Gets the tags of this BatchDeleteLoadbalancerTagsRequestBody.
 
         标签对象列表。
 
@@ -81,7 +81,7 @@ class BatchDeleteLoadbalancerTagsRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchDeleteLoadbalancerTagsRequestBody.
+        r"""Sets the tags of this BatchDeleteLoadbalancerTagsRequestBody.
 
         标签对象列表。
 

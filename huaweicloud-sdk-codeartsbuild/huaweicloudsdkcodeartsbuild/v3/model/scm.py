@@ -27,7 +27,7 @@ class Scm:
     }
 
     def __init__(self, build_tag=None, build_commit_id=None):
-        """Scm
+        r"""Scm
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Scm:
 
     @property
     def build_tag(self):
-        """Gets the build_tag of this Scm.
+        r"""Gets the build_tag of this Scm.
 
         代码Tag
 
@@ -61,7 +61,7 @@ class Scm:
 
     @build_tag.setter
     def build_tag(self, build_tag):
-        """Sets the build_tag of this Scm.
+        r"""Sets the build_tag of this Scm.
 
         代码Tag
 
@@ -72,7 +72,7 @@ class Scm:
 
     @property
     def build_commit_id(self):
-        """Gets the build_commit_id of this Scm.
+        r"""Gets the build_commit_id of this Scm.
 
         代码提交ID
 
@@ -83,7 +83,7 @@ class Scm:
 
     @build_commit_id.setter
     def build_commit_id(self, build_commit_id):
-        """Sets the build_commit_id of this Scm.
+        r"""Sets the build_commit_id of this Scm.
 
         代码提交ID
 

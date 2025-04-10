@@ -27,7 +27,7 @@ class UpdateEndpointConnectionsDescRequest:
     }
 
     def __init__(self, vpc_endpoint_service_id=None, body=None):
-        """UpdateEndpointConnectionsDescRequest
+        r"""UpdateEndpointConnectionsDescRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateEndpointConnectionsDescRequest:
 
     @property
     def vpc_endpoint_service_id(self):
-        """Gets the vpc_endpoint_service_id of this UpdateEndpointConnectionsDescRequest.
+        r"""Gets the vpc_endpoint_service_id of this UpdateEndpointConnectionsDescRequest.
 
         终端节点服务ID
 
@@ -60,7 +60,7 @@ class UpdateEndpointConnectionsDescRequest:
 
     @vpc_endpoint_service_id.setter
     def vpc_endpoint_service_id(self, vpc_endpoint_service_id):
-        """Sets the vpc_endpoint_service_id of this UpdateEndpointConnectionsDescRequest.
+        r"""Sets the vpc_endpoint_service_id of this UpdateEndpointConnectionsDescRequest.
 
         终端节点服务ID
 
@@ -71,7 +71,7 @@ class UpdateEndpointConnectionsDescRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateEndpointConnectionsDescRequest.
+        r"""Gets the body of this UpdateEndpointConnectionsDescRequest.
 
         :return: The body of this UpdateEndpointConnectionsDescRequest.
         :rtype: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointConnectionsDescRequestBody`
@@ -80,7 +80,7 @@ class UpdateEndpointConnectionsDescRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateEndpointConnectionsDescRequest.
+        r"""Sets the body of this UpdateEndpointConnectionsDescRequest.
 
         :param body: The body of this UpdateEndpointConnectionsDescRequest.
         :type body: :class:`huaweicloudsdkvpcep.v1.UpdateEndpointConnectionsDescRequestBody`

@@ -29,7 +29,7 @@ class CreateKnowledgeIntentReq:
     }
 
     def __init__(self, name=None, answer=None, skill_id=None):
-        """CreateKnowledgeIntentReq
+        r"""CreateKnowledgeIntentReq
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CreateKnowledgeIntentReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateKnowledgeIntentReq.
+        r"""Gets the name of this CreateKnowledgeIntentReq.
 
         主题。
 
@@ -65,7 +65,7 @@ class CreateKnowledgeIntentReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateKnowledgeIntentReq.
+        r"""Sets the name of this CreateKnowledgeIntentReq.
 
         主题。
 
@@ -76,7 +76,7 @@ class CreateKnowledgeIntentReq:
 
     @property
     def answer(self):
-        """Gets the answer of this CreateKnowledgeIntentReq.
+        r"""Gets the answer of this CreateKnowledgeIntentReq.
 
         问题答案。
 
@@ -87,7 +87,7 @@ class CreateKnowledgeIntentReq:
 
     @answer.setter
     def answer(self, answer):
-        """Sets the answer of this CreateKnowledgeIntentReq.
+        r"""Sets the answer of this CreateKnowledgeIntentReq.
 
         问题答案。
 
@@ -98,7 +98,7 @@ class CreateKnowledgeIntentReq:
 
     @property
     def skill_id(self):
-        """Gets the skill_id of this CreateKnowledgeIntentReq.
+        r"""Gets the skill_id of this CreateKnowledgeIntentReq.
 
         技能ID。
 
@@ -109,7 +109,7 @@ class CreateKnowledgeIntentReq:
 
     @skill_id.setter
     def skill_id(self, skill_id):
-        """Sets the skill_id of this CreateKnowledgeIntentReq.
+        r"""Sets the skill_id of this CreateKnowledgeIntentReq.
 
         技能ID。
 

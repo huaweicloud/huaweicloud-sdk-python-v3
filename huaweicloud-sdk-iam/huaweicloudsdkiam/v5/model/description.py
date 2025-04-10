@@ -27,7 +27,7 @@ class Description:
     }
 
     def __init__(self, en_us=None, zh_cn=None):
-        """Description
+        r"""Description
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Description:
 
     @property
     def en_us(self):
-        """Gets the en_us of this Description.
+        r"""Gets the en_us of this Description.
 
         英文描述。
 
@@ -59,7 +59,7 @@ class Description:
 
     @en_us.setter
     def en_us(self, en_us):
-        """Sets the en_us of this Description.
+        r"""Sets the en_us of this Description.
 
         英文描述。
 
@@ -70,7 +70,7 @@ class Description:
 
     @property
     def zh_cn(self):
-        """Gets the zh_cn of this Description.
+        r"""Gets the zh_cn of this Description.
 
         中文描述。
 
@@ -81,7 +81,7 @@ class Description:
 
     @zh_cn.setter
     def zh_cn(self, zh_cn):
-        """Sets the zh_cn of this Description.
+        r"""Sets the zh_cn of this Description.
 
         中文描述。
 

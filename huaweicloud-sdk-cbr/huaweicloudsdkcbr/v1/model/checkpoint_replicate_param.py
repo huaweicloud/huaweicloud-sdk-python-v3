@@ -35,7 +35,7 @@ class CheckpointReplicateParam:
     }
 
     def __init__(self, auto_trigger=None, destination_project_id=None, destination_region=None, destination_vault_id=None, enable_acceleration=None, vault_id=None):
-        """CheckpointReplicateParam
+        r"""CheckpointReplicateParam
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class CheckpointReplicateParam:
 
     @property
     def auto_trigger(self):
-        """Gets the auto_trigger of this CheckpointReplicateParam.
+        r"""Gets the auto_trigger of this CheckpointReplicateParam.
 
         本次复制是否自动触发，默认为false，代表手动触发
 
@@ -85,7 +85,7 @@ class CheckpointReplicateParam:
 
     @auto_trigger.setter
     def auto_trigger(self, auto_trigger):
-        """Sets the auto_trigger of this CheckpointReplicateParam.
+        r"""Sets the auto_trigger of this CheckpointReplicateParam.
 
         本次复制是否自动触发，默认为false，代表手动触发
 
@@ -96,7 +96,7 @@ class CheckpointReplicateParam:
 
     @property
     def destination_project_id(self):
-        """Gets the destination_project_id of this CheckpointReplicateParam.
+        r"""Gets the destination_project_id of this CheckpointReplicateParam.
 
         复制的目标项目ID
 
@@ -107,7 +107,7 @@ class CheckpointReplicateParam:
 
     @destination_project_id.setter
     def destination_project_id(self, destination_project_id):
-        """Sets the destination_project_id of this CheckpointReplicateParam.
+        r"""Sets the destination_project_id of this CheckpointReplicateParam.
 
         复制的目标项目ID
 
@@ -118,7 +118,7 @@ class CheckpointReplicateParam:
 
     @property
     def destination_region(self):
-        """Gets the destination_region of this CheckpointReplicateParam.
+        r"""Gets the destination_region of this CheckpointReplicateParam.
 
         复制的目标区域id
 
@@ -129,7 +129,7 @@ class CheckpointReplicateParam:
 
     @destination_region.setter
     def destination_region(self, destination_region):
-        """Sets the destination_region of this CheckpointReplicateParam.
+        r"""Sets the destination_region of this CheckpointReplicateParam.
 
         复制的目标区域id
 
@@ -140,7 +140,7 @@ class CheckpointReplicateParam:
 
     @property
     def destination_vault_id(self):
-        """Gets the destination_vault_id of this CheckpointReplicateParam.
+        r"""Gets the destination_vault_id of this CheckpointReplicateParam.
 
         目标区域存储库ID
 
@@ -151,7 +151,7 @@ class CheckpointReplicateParam:
 
     @destination_vault_id.setter
     def destination_vault_id(self, destination_vault_id):
-        """Sets the destination_vault_id of this CheckpointReplicateParam.
+        r"""Sets the destination_vault_id of this CheckpointReplicateParam.
 
         目标区域存储库ID
 
@@ -162,7 +162,7 @@ class CheckpointReplicateParam:
 
     @property
     def enable_acceleration(self):
-        """Gets the enable_acceleration of this CheckpointReplicateParam.
+        r"""Gets the enable_acceleration of this CheckpointReplicateParam.
 
         跨区域复制时，是否启用加速从而缩短复制的时间，如果不指定，默认不启用加速，如果启用加速，会额外收取加速的费用。
 
@@ -173,7 +173,7 @@ class CheckpointReplicateParam:
 
     @enable_acceleration.setter
     def enable_acceleration(self, enable_acceleration):
-        """Sets the enable_acceleration of this CheckpointReplicateParam.
+        r"""Sets the enable_acceleration of this CheckpointReplicateParam.
 
         跨区域复制时，是否启用加速从而缩短复制的时间，如果不指定，默认不启用加速，如果启用加速，会额外收取加速的费用。
 
@@ -184,7 +184,7 @@ class CheckpointReplicateParam:
 
     @property
     def vault_id(self):
-        """Gets the vault_id of this CheckpointReplicateParam.
+        r"""Gets the vault_id of this CheckpointReplicateParam.
 
         存储库ID: uuid
 
@@ -195,7 +195,7 @@ class CheckpointReplicateParam:
 
     @vault_id.setter
     def vault_id(self, vault_id):
-        """Sets the vault_id of this CheckpointReplicateParam.
+        r"""Sets the vault_id of this CheckpointReplicateParam.
 
         存储库ID: uuid
 

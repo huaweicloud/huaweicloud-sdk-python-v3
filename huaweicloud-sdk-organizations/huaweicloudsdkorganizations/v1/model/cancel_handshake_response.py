@@ -26,7 +26,7 @@ class CancelHandshakeResponse(SdkResponse):
     }
 
     def __init__(self, handshake=None):
-        """CancelHandshakeResponse
+        r"""CancelHandshakeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CancelHandshakeResponse(SdkResponse):
 
     @property
     def handshake(self):
-        """Gets the handshake of this CancelHandshakeResponse.
+        r"""Gets the handshake of this CancelHandshakeResponse.
 
         :return: The handshake of this CancelHandshakeResponse.
         :rtype: :class:`huaweicloudsdkorganizations.v1.HandshakeDto`
@@ -53,7 +53,7 @@ class CancelHandshakeResponse(SdkResponse):
 
     @handshake.setter
     def handshake(self, handshake):
-        """Sets the handshake of this CancelHandshakeResponse.
+        r"""Sets the handshake of this CancelHandshakeResponse.
 
         :param handshake: The handshake of this CancelHandshakeResponse.
         :type handshake: :class:`huaweicloudsdkorganizations.v1.HandshakeDto`

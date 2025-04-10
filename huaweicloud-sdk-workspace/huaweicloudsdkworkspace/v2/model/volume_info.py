@@ -33,7 +33,7 @@ class VolumeInfo:
     }
 
     def __init__(self, id=None, type=None, size=None, cluster_id=None, resource_spec_code=None):
-        """VolumeInfo
+        r"""VolumeInfo
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class VolumeInfo:
 
     @property
     def id(self):
-        """Gets the id of this VolumeInfo.
+        r"""Gets the id of this VolumeInfo.
 
         批量操作磁盘的磁盘集合id。
 
@@ -80,7 +80,7 @@ class VolumeInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VolumeInfo.
+        r"""Sets the id of this VolumeInfo.
 
         批量操作磁盘的磁盘集合id。
 
@@ -91,7 +91,7 @@ class VolumeInfo:
 
     @property
     def type(self):
-        """Gets the type of this VolumeInfo.
+        r"""Gets the type of this VolumeInfo.
 
         桌面数据盘对应的磁盘类型，需要与系统所提供的磁盘类型相匹配。 - SAS：高IO。 - SSD：超高IO。
 
@@ -102,7 +102,7 @@ class VolumeInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this VolumeInfo.
+        r"""Sets the type of this VolumeInfo.
 
         桌面数据盘对应的磁盘类型，需要与系统所提供的磁盘类型相匹配。 - SAS：高IO。 - SSD：超高IO。
 
@@ -113,7 +113,7 @@ class VolumeInfo:
 
     @property
     def size(self):
-        """Gets the size of this VolumeInfo.
+        r"""Gets the size of this VolumeInfo.
 
         磁盘容量，单位GB。
 
@@ -124,7 +124,7 @@ class VolumeInfo:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this VolumeInfo.
+        r"""Sets the size of this VolumeInfo.
 
         磁盘容量，单位GB。
 
@@ -135,7 +135,7 @@ class VolumeInfo:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this VolumeInfo.
+        r"""Gets the cluster_id of this VolumeInfo.
 
         云服务器系统盘对应的存储池的ID。
 
@@ -146,7 +146,7 @@ class VolumeInfo:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this VolumeInfo.
+        r"""Sets the cluster_id of this VolumeInfo.
 
         云服务器系统盘对应的存储池的ID。
 
@@ -157,7 +157,7 @@ class VolumeInfo:
 
     @property
     def resource_spec_code(self):
-        """Gets the resource_spec_code of this VolumeInfo.
+        r"""Gets the resource_spec_code of this VolumeInfo.
 
         规格
 
@@ -168,7 +168,7 @@ class VolumeInfo:
 
     @resource_spec_code.setter
     def resource_spec_code(self, resource_spec_code):
-        """Sets the resource_spec_code of this VolumeInfo.
+        r"""Sets the resource_spec_code of this VolumeInfo.
 
         规格
 

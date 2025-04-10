@@ -33,7 +33,7 @@ class ListDatabaseSchemasRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, db_name=None, offset=None, limit=None):
-        """ListDatabaseSchemasRequest
+        r"""ListDatabaseSchemasRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ListDatabaseSchemasRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListDatabaseSchemasRequest.
+        r"""Gets the x_language of this ListDatabaseSchemasRequest.
 
         语言
 
@@ -80,7 +80,7 @@ class ListDatabaseSchemasRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListDatabaseSchemasRequest.
+        r"""Sets the x_language of this ListDatabaseSchemasRequest.
 
         语言
 
@@ -91,7 +91,7 @@ class ListDatabaseSchemasRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListDatabaseSchemasRequest.
+        r"""Gets the instance_id of this ListDatabaseSchemasRequest.
 
         实例ID。
 
@@ -102,7 +102,7 @@ class ListDatabaseSchemasRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListDatabaseSchemasRequest.
+        r"""Sets the instance_id of this ListDatabaseSchemasRequest.
 
         实例ID。
 
@@ -113,7 +113,7 @@ class ListDatabaseSchemasRequest:
 
     @property
     def db_name(self):
-        """Gets the db_name of this ListDatabaseSchemasRequest.
+        r"""Gets the db_name of this ListDatabaseSchemasRequest.
 
         数据库名称。
 
@@ -124,7 +124,7 @@ class ListDatabaseSchemasRequest:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this ListDatabaseSchemasRequest.
+        r"""Sets the db_name of this ListDatabaseSchemasRequest.
 
         数据库名称。
 
@@ -135,7 +135,7 @@ class ListDatabaseSchemasRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDatabaseSchemasRequest.
+        r"""Gets the offset of this ListDatabaseSchemasRequest.
 
         偏移量表示从此偏移量开始查询, offset大于等于0。
 
@@ -146,7 +146,7 @@ class ListDatabaseSchemasRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDatabaseSchemasRequest.
+        r"""Sets the offset of this ListDatabaseSchemasRequest.
 
         偏移量表示从此偏移量开始查询, offset大于等于0。
 
@@ -157,7 +157,7 @@ class ListDatabaseSchemasRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDatabaseSchemasRequest.
+        r"""Gets the limit of this ListDatabaseSchemasRequest.
 
         每页显示的条目数量,取值范围[1, 100]。
 
@@ -168,7 +168,7 @@ class ListDatabaseSchemasRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDatabaseSchemasRequest.
+        r"""Sets the limit of this ListDatabaseSchemasRequest.
 
         每页显示的条目数量,取值范围[1, 100]。
 

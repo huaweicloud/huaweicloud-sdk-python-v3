@@ -30,7 +30,7 @@ class ListClouddcnSubnetsFilterTagsResponse(SdkResponse):
     }
 
     def __init__(self, resources=None, total_count=None, request_id=None):
-        """ListClouddcnSubnetsFilterTagsResponse
+        r"""ListClouddcnSubnetsFilterTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListClouddcnSubnetsFilterTagsResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ListClouddcnSubnetsFilterTagsResponse.
+        r"""Gets the resources of this ListClouddcnSubnetsFilterTagsResponse.
 
         资源列表
 
@@ -69,7 +69,7 @@ class ListClouddcnSubnetsFilterTagsResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ListClouddcnSubnetsFilterTagsResponse.
+        r"""Sets the resources of this ListClouddcnSubnetsFilterTagsResponse.
 
         资源列表
 
@@ -80,7 +80,7 @@ class ListClouddcnSubnetsFilterTagsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListClouddcnSubnetsFilterTagsResponse.
+        r"""Gets the total_count of this ListClouddcnSubnetsFilterTagsResponse.
 
         当前列表中资源数量。
 
@@ -91,7 +91,7 @@ class ListClouddcnSubnetsFilterTagsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListClouddcnSubnetsFilterTagsResponse.
+        r"""Sets the total_count of this ListClouddcnSubnetsFilterTagsResponse.
 
         当前列表中资源数量。
 
@@ -102,7 +102,7 @@ class ListClouddcnSubnetsFilterTagsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListClouddcnSubnetsFilterTagsResponse.
+        r"""Gets the request_id of this ListClouddcnSubnetsFilterTagsResponse.
 
         本次请求的编号
 
@@ -113,7 +113,7 @@ class ListClouddcnSubnetsFilterTagsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListClouddcnSubnetsFilterTagsResponse.
+        r"""Sets the request_id of this ListClouddcnSubnetsFilterTagsResponse.
 
         本次请求的编号
 

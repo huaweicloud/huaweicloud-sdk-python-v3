@@ -25,7 +25,7 @@ class ConfirmImageUploadRequest:
     }
 
     def __init__(self, body=None):
-        """ConfirmImageUploadRequest
+        r"""ConfirmImageUploadRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ConfirmImageUploadRequest:
 
     @property
     def body(self):
-        """Gets the body of this ConfirmImageUploadRequest.
+        r"""Gets the body of this ConfirmImageUploadRequest.
 
         :return: The body of this ConfirmImageUploadRequest.
         :rtype: :class:`huaweicloudsdkvod.v1.ConfirmImageUploadReq`
@@ -52,7 +52,7 @@ class ConfirmImageUploadRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ConfirmImageUploadRequest.
+        r"""Sets the body of this ConfirmImageUploadRequest.
 
         :param body: The body of this ConfirmImageUploadRequest.
         :type body: :class:`huaweicloudsdkvod.v1.ConfirmImageUploadReq`

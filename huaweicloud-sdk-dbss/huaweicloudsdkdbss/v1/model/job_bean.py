@@ -49,7 +49,7 @@ class JobBean:
     }
 
     def __init__(self, job_id=None, status=None, job_type=None, server_id=None, server_name=None, resource_id=None, begin_time=None, end_time=None, charge_mode=None, error_code=None, fail_reason=None, ha_id=None, ha_name=None):
-        """JobBean
+        r"""JobBean
 
         The model defined in huaweicloud sdk
 
@@ -118,7 +118,7 @@ class JobBean:
 
     @property
     def job_id(self):
-        """Gets the job_id of this JobBean.
+        r"""Gets the job_id of this JobBean.
 
         任务ID。
 
@@ -129,7 +129,7 @@ class JobBean:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this JobBean.
+        r"""Sets the job_id of this JobBean.
 
         任务ID。
 
@@ -140,7 +140,7 @@ class JobBean:
 
     @property
     def status(self):
-        """Gets the status of this JobBean.
+        r"""Gets the status of this JobBean.
 
         任务状态 - SUCCESS - RUNNING - FAIL - INIT - READY
 
@@ -151,7 +151,7 @@ class JobBean:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this JobBean.
+        r"""Sets the status of this JobBean.
 
         任务状态 - SUCCESS - RUNNING - FAIL - INIT - READY
 
@@ -162,7 +162,7 @@ class JobBean:
 
     @property
     def job_type(self):
-        """Gets the job_type of this JobBean.
+        r"""Gets the job_type of this JobBean.
 
         类型
 
@@ -173,7 +173,7 @@ class JobBean:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this JobBean.
+        r"""Sets the job_type of this JobBean.
 
         类型
 
@@ -184,7 +184,7 @@ class JobBean:
 
     @property
     def server_id(self):
-        """Gets the server_id of this JobBean.
+        r"""Gets the server_id of this JobBean.
 
         虚拟机ID
 
@@ -195,7 +195,7 @@ class JobBean:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this JobBean.
+        r"""Sets the server_id of this JobBean.
 
         虚拟机ID
 
@@ -206,7 +206,7 @@ class JobBean:
 
     @property
     def server_name(self):
-        """Gets the server_name of this JobBean.
+        r"""Gets the server_name of this JobBean.
 
         虚拟机名称
 
@@ -217,7 +217,7 @@ class JobBean:
 
     @server_name.setter
     def server_name(self, server_name):
-        """Sets the server_name of this JobBean.
+        r"""Sets the server_name of this JobBean.
 
         虚拟机名称
 
@@ -228,7 +228,7 @@ class JobBean:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this JobBean.
+        r"""Gets the resource_id of this JobBean.
 
         资源ID
 
@@ -239,7 +239,7 @@ class JobBean:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this JobBean.
+        r"""Sets the resource_id of this JobBean.
 
         资源ID
 
@@ -250,7 +250,7 @@ class JobBean:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this JobBean.
+        r"""Gets the begin_time of this JobBean.
 
         开始时间
 
@@ -261,7 +261,7 @@ class JobBean:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this JobBean.
+        r"""Sets the begin_time of this JobBean.
 
         开始时间
 
@@ -272,7 +272,7 @@ class JobBean:
 
     @property
     def end_time(self):
-        """Gets the end_time of this JobBean.
+        r"""Gets the end_time of this JobBean.
 
         结束时间
 
@@ -283,7 +283,7 @@ class JobBean:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this JobBean.
+        r"""Sets the end_time of this JobBean.
 
         结束时间
 
@@ -294,7 +294,7 @@ class JobBean:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this JobBean.
+        r"""Gets the charge_mode of this JobBean.
 
         计费模式 - Period:包周期计费 - Demand:按需计费
 
@@ -305,7 +305,7 @@ class JobBean:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this JobBean.
+        r"""Sets the charge_mode of this JobBean.
 
         计费模式 - Period:包周期计费 - Demand:按需计费
 
@@ -316,7 +316,7 @@ class JobBean:
 
     @property
     def error_code(self):
-        """Gets the error_code of this JobBean.
+        r"""Gets the error_code of this JobBean.
 
         错误码
 
@@ -327,7 +327,7 @@ class JobBean:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this JobBean.
+        r"""Sets the error_code of this JobBean.
 
         错误码
 
@@ -338,7 +338,7 @@ class JobBean:
 
     @property
     def fail_reason(self):
-        """Gets the fail_reason of this JobBean.
+        r"""Gets the fail_reason of this JobBean.
 
         失败原因
 
@@ -349,7 +349,7 @@ class JobBean:
 
     @fail_reason.setter
     def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this JobBean.
+        r"""Sets the fail_reason of this JobBean.
 
         失败原因
 
@@ -360,7 +360,7 @@ class JobBean:
 
     @property
     def ha_id(self):
-        """Gets the ha_id of this JobBean.
+        r"""Gets the ha_id of this JobBean.
 
         防护实例ID,该字段已废弃
 
@@ -371,7 +371,7 @@ class JobBean:
 
     @ha_id.setter
     def ha_id(self, ha_id):
-        """Sets the ha_id of this JobBean.
+        r"""Sets the ha_id of this JobBean.
 
         防护实例ID,该字段已废弃
 
@@ -382,7 +382,7 @@ class JobBean:
 
     @property
     def ha_name(self):
-        """Gets the ha_name of this JobBean.
+        r"""Gets the ha_name of this JobBean.
 
         防护实例名称，该字段已废弃
 
@@ -393,7 +393,7 @@ class JobBean:
 
     @ha_name.setter
     def ha_name(self, ha_name):
-        """Sets the ha_name of this JobBean.
+        r"""Sets the ha_name of this JobBean.
 
         防护实例名称，该字段已废弃
 

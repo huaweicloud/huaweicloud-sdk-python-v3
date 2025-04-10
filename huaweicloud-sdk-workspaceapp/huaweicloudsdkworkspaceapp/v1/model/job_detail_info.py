@@ -43,7 +43,7 @@ class JobDetailInfo:
     }
 
     def __init__(self, id=None, job_type=None, job_resource_info=None, begin_time=None, end_time=None, status=None, error_code=None, error_message=None, project_id=None, job_id=None):
-        """JobDetailInfo
+        r"""JobDetailInfo
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class JobDetailInfo:
 
     @property
     def id(self):
-        """Gets the id of this JobDetailInfo.
+        r"""Gets the id of this JobDetailInfo.
 
         子任务ID。
 
@@ -117,7 +117,7 @@ class JobDetailInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this JobDetailInfo.
+        r"""Sets the id of this JobDetailInfo.
 
         子任务ID。
 
@@ -128,7 +128,7 @@ class JobDetailInfo:
 
     @property
     def job_type(self):
-        """Gets the job_type of this JobDetailInfo.
+        r"""Gets the job_type of this JobDetailInfo.
 
         :return: The job_type of this JobDetailInfo.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.JobType`
@@ -137,7 +137,7 @@ class JobDetailInfo:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this JobDetailInfo.
+        r"""Sets the job_type of this JobDetailInfo.
 
         :param job_type: The job_type of this JobDetailInfo.
         :type job_type: :class:`huaweicloudsdkworkspaceapp.v1.JobType`
@@ -146,7 +146,7 @@ class JobDetailInfo:
 
     @property
     def job_resource_info(self):
-        """Gets the job_resource_info of this JobDetailInfo.
+        r"""Gets the job_resource_info of this JobDetailInfo.
 
         :return: The job_resource_info of this JobDetailInfo.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.JobResourceInfo`
@@ -155,7 +155,7 @@ class JobDetailInfo:
 
     @job_resource_info.setter
     def job_resource_info(self, job_resource_info):
-        """Sets the job_resource_info of this JobDetailInfo.
+        r"""Sets the job_resource_info of this JobDetailInfo.
 
         :param job_resource_info: The job_resource_info of this JobDetailInfo.
         :type job_resource_info: :class:`huaweicloudsdkworkspaceapp.v1.JobResourceInfo`
@@ -164,7 +164,7 @@ class JobDetailInfo:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this JobDetailInfo.
+        r"""Gets the begin_time of this JobDetailInfo.
 
         任务创建时间。
 
@@ -175,7 +175,7 @@ class JobDetailInfo:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this JobDetailInfo.
+        r"""Sets the begin_time of this JobDetailInfo.
 
         任务创建时间。
 
@@ -186,7 +186,7 @@ class JobDetailInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this JobDetailInfo.
+        r"""Gets the end_time of this JobDetailInfo.
 
         任务结束时间。
 
@@ -197,7 +197,7 @@ class JobDetailInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this JobDetailInfo.
+        r"""Sets the end_time of this JobDetailInfo.
 
         任务结束时间。
 
@@ -208,7 +208,7 @@ class JobDetailInfo:
 
     @property
     def status(self):
-        """Gets the status of this JobDetailInfo.
+        r"""Gets the status of this JobDetailInfo.
 
         :return: The status of this JobDetailInfo.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.JobDetailStatus`
@@ -217,7 +217,7 @@ class JobDetailInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this JobDetailInfo.
+        r"""Sets the status of this JobDetailInfo.
 
         :param status: The status of this JobDetailInfo.
         :type status: :class:`huaweicloudsdkworkspaceapp.v1.JobDetailStatus`
@@ -226,7 +226,7 @@ class JobDetailInfo:
 
     @property
     def error_code(self):
-        """Gets the error_code of this JobDetailInfo.
+        r"""Gets the error_code of this JobDetailInfo.
 
         任务执行失败时的错误码。
 
@@ -237,7 +237,7 @@ class JobDetailInfo:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this JobDetailInfo.
+        r"""Sets the error_code of this JobDetailInfo.
 
         任务执行失败时的错误码。
 
@@ -248,7 +248,7 @@ class JobDetailInfo:
 
     @property
     def error_message(self):
-        """Gets the error_message of this JobDetailInfo.
+        r"""Gets the error_message of this JobDetailInfo.
 
         任务失败原因。
 
@@ -259,7 +259,7 @@ class JobDetailInfo:
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this JobDetailInfo.
+        r"""Sets the error_message of this JobDetailInfo.
 
         任务失败原因。
 
@@ -270,7 +270,7 @@ class JobDetailInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this JobDetailInfo.
+        r"""Gets the project_id of this JobDetailInfo.
 
         项目ID。
 
@@ -281,7 +281,7 @@ class JobDetailInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this JobDetailInfo.
+        r"""Sets the project_id of this JobDetailInfo.
 
         项目ID。
 
@@ -292,7 +292,7 @@ class JobDetailInfo:
 
     @property
     def job_id(self):
-        """Gets the job_id of this JobDetailInfo.
+        r"""Gets the job_id of this JobDetailInfo.
 
         任务ID。
 
@@ -303,7 +303,7 @@ class JobDetailInfo:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this JobDetailInfo.
+        r"""Sets the job_id of this JobDetailInfo.
 
         任务ID。
 

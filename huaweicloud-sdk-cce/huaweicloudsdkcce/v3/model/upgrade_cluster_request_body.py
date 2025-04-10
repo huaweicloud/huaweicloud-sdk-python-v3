@@ -27,7 +27,7 @@ class UpgradeClusterRequestBody:
     }
 
     def __init__(self, metadata=None, spec=None):
-        """UpgradeClusterRequestBody
+        r"""UpgradeClusterRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UpgradeClusterRequestBody:
 
     @property
     def metadata(self):
-        """Gets the metadata of this UpgradeClusterRequestBody.
+        r"""Gets the metadata of this UpgradeClusterRequestBody.
 
         :return: The metadata of this UpgradeClusterRequestBody.
         :rtype: :class:`huaweicloudsdkcce.v3.UpgradeClusterRequestMetadata`
@@ -57,7 +57,7 @@ class UpgradeClusterRequestBody:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this UpgradeClusterRequestBody.
+        r"""Sets the metadata of this UpgradeClusterRequestBody.
 
         :param metadata: The metadata of this UpgradeClusterRequestBody.
         :type metadata: :class:`huaweicloudsdkcce.v3.UpgradeClusterRequestMetadata`
@@ -66,7 +66,7 @@ class UpgradeClusterRequestBody:
 
     @property
     def spec(self):
-        """Gets the spec of this UpgradeClusterRequestBody.
+        r"""Gets the spec of this UpgradeClusterRequestBody.
 
         :return: The spec of this UpgradeClusterRequestBody.
         :rtype: :class:`huaweicloudsdkcce.v3.UpgradeSpec`
@@ -75,7 +75,7 @@ class UpgradeClusterRequestBody:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this UpgradeClusterRequestBody.
+        r"""Sets the spec of this UpgradeClusterRequestBody.
 
         :param spec: The spec of this UpgradeClusterRequestBody.
         :type spec: :class:`huaweicloudsdkcce.v3.UpgradeSpec`

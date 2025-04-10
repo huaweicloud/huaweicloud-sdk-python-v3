@@ -35,7 +35,7 @@ class TaskGroupSrcNodeResp:
     }
 
     def __init__(self, bucket=None, cloud_type=None, region=None, app_id=None, object_key=None, list_file=None):
-        """TaskGroupSrcNodeResp
+        r"""TaskGroupSrcNodeResp
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class TaskGroupSrcNodeResp:
 
     @property
     def bucket(self):
-        """Gets the bucket of this TaskGroupSrcNodeResp.
+        r"""Gets the bucket of this TaskGroupSrcNodeResp.
 
         源端桶的名称。
 
@@ -89,7 +89,7 @@ class TaskGroupSrcNodeResp:
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this TaskGroupSrcNodeResp.
+        r"""Sets the bucket of this TaskGroupSrcNodeResp.
 
         源端桶的名称。
 
@@ -100,7 +100,7 @@ class TaskGroupSrcNodeResp:
 
     @property
     def cloud_type(self):
-        """Gets the cloud_type of this TaskGroupSrcNodeResp.
+        r"""Gets the cloud_type of this TaskGroupSrcNodeResp.
 
         源端云服务提供商。  可选值有AWS、AZURE、ALIYUN、TENCENT、HUAWEICLOUD、QINGCLOUD、KINGSOFTCLOUD、BAIDU、QINIU、GOOGLE、URLSOURCE或者UCLOUD。默认值为ALIYUN。
 
@@ -111,7 +111,7 @@ class TaskGroupSrcNodeResp:
 
     @cloud_type.setter
     def cloud_type(self, cloud_type):
-        """Sets the cloud_type of this TaskGroupSrcNodeResp.
+        r"""Sets the cloud_type of this TaskGroupSrcNodeResp.
 
         源端云服务提供商。  可选值有AWS、AZURE、ALIYUN、TENCENT、HUAWEICLOUD、QINGCLOUD、KINGSOFTCLOUD、BAIDU、QINIU、GOOGLE、URLSOURCE或者UCLOUD。默认值为ALIYUN。
 
@@ -122,7 +122,7 @@ class TaskGroupSrcNodeResp:
 
     @property
     def region(self):
-        """Gets the region of this TaskGroupSrcNodeResp.
+        r"""Gets the region of this TaskGroupSrcNodeResp.
 
         源端桶所处的区域。
 
@@ -133,7 +133,7 @@ class TaskGroupSrcNodeResp:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this TaskGroupSrcNodeResp.
+        r"""Sets the region of this TaskGroupSrcNodeResp.
 
         源端桶所处的区域。
 
@@ -144,7 +144,7 @@ class TaskGroupSrcNodeResp:
 
     @property
     def app_id(self):
-        """Gets the app_id of this TaskGroupSrcNodeResp.
+        r"""Gets the app_id of this TaskGroupSrcNodeResp.
 
         当源端为腾讯云时，会返回此参数。
 
@@ -155,7 +155,7 @@ class TaskGroupSrcNodeResp:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this TaskGroupSrcNodeResp.
+        r"""Sets the app_id of this TaskGroupSrcNodeResp.
 
         当源端为腾讯云时，会返回此参数。
 
@@ -166,7 +166,7 @@ class TaskGroupSrcNodeResp:
 
     @property
     def object_key(self):
-        """Gets the object_key of this TaskGroupSrcNodeResp.
+        r"""Gets the object_key of this TaskGroupSrcNodeResp.
 
         任务组类型为前缀迁移任务时，表示待迁移前缀。
 
@@ -177,7 +177,7 @@ class TaskGroupSrcNodeResp:
 
     @object_key.setter
     def object_key(self, object_key):
-        """Sets the object_key of this TaskGroupSrcNodeResp.
+        r"""Sets the object_key of this TaskGroupSrcNodeResp.
 
         任务组类型为前缀迁移任务时，表示待迁移前缀。
 
@@ -188,7 +188,7 @@ class TaskGroupSrcNodeResp:
 
     @property
     def list_file(self):
-        """Gets the list_file of this TaskGroupSrcNodeResp.
+        r"""Gets the list_file of this TaskGroupSrcNodeResp.
 
         :return: The list_file of this TaskGroupSrcNodeResp.
         :rtype: :class:`huaweicloudsdkoms.v2.ListFile`
@@ -197,7 +197,7 @@ class TaskGroupSrcNodeResp:
 
     @list_file.setter
     def list_file(self, list_file):
-        """Sets the list_file of this TaskGroupSrcNodeResp.
+        r"""Sets the list_file of this TaskGroupSrcNodeResp.
 
         :param list_file: The list_file of this TaskGroupSrcNodeResp.
         :type list_file: :class:`huaweicloudsdkoms.v2.ListFile`

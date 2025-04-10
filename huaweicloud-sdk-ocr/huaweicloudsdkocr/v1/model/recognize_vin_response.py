@@ -28,7 +28,7 @@ class RecognizeVinResponse(SdkResponse):
     }
 
     def __init__(self, result=None, x_request_id=None):
-        """RecognizeVinResponse
+        r"""RecognizeVinResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RecognizeVinResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RecognizeVinResponse.
+        r"""Gets the result of this RecognizeVinResponse.
 
         :return: The result of this RecognizeVinResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.VINResult`
@@ -60,7 +60,7 @@ class RecognizeVinResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RecognizeVinResponse.
+        r"""Sets the result of this RecognizeVinResponse.
 
         :param result: The result of this RecognizeVinResponse.
         :type result: :class:`huaweicloudsdkocr.v1.VINResult`
@@ -69,7 +69,7 @@ class RecognizeVinResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this RecognizeVinResponse.
+        r"""Gets the x_request_id of this RecognizeVinResponse.
 
         :return: The x_request_id of this RecognizeVinResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class RecognizeVinResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this RecognizeVinResponse.
+        r"""Sets the x_request_id of this RecognizeVinResponse.
 
         :param x_request_id: The x_request_id of this RecognizeVinResponse.
         :type x_request_id: str

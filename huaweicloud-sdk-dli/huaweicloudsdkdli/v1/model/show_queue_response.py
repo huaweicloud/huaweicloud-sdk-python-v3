@@ -76,7 +76,7 @@ class ShowQueueResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, queue_id=None, queue_name=None, description=None, owner=None, create_time=None, queue_type=None, cu_count=None, charging_mode=None, resource_id=None, resource_mode=None, enterprise_project_id=None, resource_type=None, cu_spec=None, cu_scale_out_limit=None, cu_scale_in_limit=None, elastic_resource_pool_name=None, support_spark_versions=None, default_spark_version=None, support_hetu_engine_versions=None, default_hetu_engine_version=None, support_flink_sql_versions=None, default_flink_sql_version=None, support_flink_jar_versions=None, default_flink_jar_version=None):
-        """ShowQueueResponse
+        r"""ShowQueueResponse
 
         The model defined in huaweicloud sdk
 
@@ -219,7 +219,7 @@ class ShowQueueResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ShowQueueResponse.
+        r"""Gets the is_success of this ShowQueueResponse.
 
         请求执行是否成功。“true”表示请求执行成功。
 
@@ -230,7 +230,7 @@ class ShowQueueResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ShowQueueResponse.
+        r"""Sets the is_success of this ShowQueueResponse.
 
         请求执行是否成功。“true”表示请求执行成功。
 
@@ -241,7 +241,7 @@ class ShowQueueResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowQueueResponse.
+        r"""Gets the message of this ShowQueueResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -252,7 +252,7 @@ class ShowQueueResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowQueueResponse.
+        r"""Sets the message of this ShowQueueResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -263,7 +263,7 @@ class ShowQueueResponse(SdkResponse):
 
     @property
     def queue_id(self):
-        """Gets the queue_id of this ShowQueueResponse.
+        r"""Gets the queue_id of this ShowQueueResponse.
 
         队列ID。
 
@@ -274,7 +274,7 @@ class ShowQueueResponse(SdkResponse):
 
     @queue_id.setter
     def queue_id(self, queue_id):
-        """Sets the queue_id of this ShowQueueResponse.
+        r"""Sets the queue_id of this ShowQueueResponse.
 
         队列ID。
 
@@ -285,7 +285,7 @@ class ShowQueueResponse(SdkResponse):
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this ShowQueueResponse.
+        r"""Gets the queue_name of this ShowQueueResponse.
 
         队列名称。说明：队列名称不区分大小写，系统会自动转换为小写。
 
@@ -296,7 +296,7 @@ class ShowQueueResponse(SdkResponse):
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this ShowQueueResponse.
+        r"""Sets the queue_name of this ShowQueueResponse.
 
         队列名称。说明：队列名称不区分大小写，系统会自动转换为小写。
 
@@ -307,7 +307,7 @@ class ShowQueueResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowQueueResponse.
+        r"""Gets the description of this ShowQueueResponse.
 
         队列描述信息。
 
@@ -318,7 +318,7 @@ class ShowQueueResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowQueueResponse.
+        r"""Sets the description of this ShowQueueResponse.
 
         队列描述信息。
 
@@ -329,7 +329,7 @@ class ShowQueueResponse(SdkResponse):
 
     @property
     def owner(self):
-        """Gets the owner of this ShowQueueResponse.
+        r"""Gets the owner of this ShowQueueResponse.
 
         创建队列的用户。
 
@@ -340,7 +340,7 @@ class ShowQueueResponse(SdkResponse):
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this ShowQueueResponse.
+        r"""Sets the owner of this ShowQueueResponse.
 
         创建队列的用户。
 
@@ -351,7 +351,7 @@ class ShowQueueResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowQueueResponse.
+        r"""Gets the create_time of this ShowQueueResponse.
 
         创建队列的时间。是单位为“毫秒”的时间戳。
 
@@ -362,7 +362,7 @@ class ShowQueueResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowQueueResponse.
+        r"""Sets the create_time of this ShowQueueResponse.
 
         创建队列的时间。是单位为“毫秒”的时间戳。
 
@@ -373,7 +373,7 @@ class ShowQueueResponse(SdkResponse):
 
     @property
     def queue_type(self):
-        """Gets the queue_type of this ShowQueueResponse.
+        r"""Gets the queue_type of this ShowQueueResponse.
 
         队列类型。sql/general/all, 如果不指定，默认为“sql”。
 
@@ -384,7 +384,7 @@ class ShowQueueResponse(SdkResponse):
 
     @queue_type.setter
     def queue_type(self, queue_type):
-        """Sets the queue_type of this ShowQueueResponse.
+        r"""Sets the queue_type of this ShowQueueResponse.
 
         队列类型。sql/general/all, 如果不指定，默认为“sql”。
 
@@ -395,7 +395,7 @@ class ShowQueueResponse(SdkResponse):
 
     @property
     def cu_count(self):
-        """Gets the cu_count of this ShowQueueResponse.
+        r"""Gets the cu_count of this ShowQueueResponse.
 
         与队列绑定的最小计算单元个数。设置值当前只支持16，64，256。
 
@@ -406,7 +406,7 @@ class ShowQueueResponse(SdkResponse):
 
     @cu_count.setter
     def cu_count(self, cu_count):
-        """Sets the cu_count of this ShowQueueResponse.
+        r"""Sets the cu_count of this ShowQueueResponse.
 
         与队列绑定的最小计算单元个数。设置值当前只支持16，64，256。
 
@@ -417,7 +417,7 @@ class ShowQueueResponse(SdkResponse):
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this ShowQueueResponse.
+        r"""Gets the charging_mode of this ShowQueueResponse.
 
         队列的收费模式。 “1”表示按照CU时收费。 “2”表示按照包年包月收费。
 
@@ -428,7 +428,7 @@ class ShowQueueResponse(SdkResponse):
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this ShowQueueResponse.
+        r"""Sets the charging_mode of this ShowQueueResponse.
 
         队列的收费模式。 “1”表示按照CU时收费。 “2”表示按照包年包月收费。
 
@@ -439,7 +439,7 @@ class ShowQueueResponse(SdkResponse):
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ShowQueueResponse.
+        r"""Gets the resource_id of this ShowQueueResponse.
 
         队列的资源ID。
 
@@ -450,7 +450,7 @@ class ShowQueueResponse(SdkResponse):
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ShowQueueResponse.
+        r"""Sets the resource_id of this ShowQueueResponse.
 
         队列的资源ID。
 
@@ -461,7 +461,7 @@ class ShowQueueResponse(SdkResponse):
 
     @property
     def resource_mode(self):
-        """Gets the resource_mode of this ShowQueueResponse.
+        r"""Gets the resource_mode of this ShowQueueResponse.
 
         队列类型。 0：共享队列 1：专属队列
 
@@ -472,7 +472,7 @@ class ShowQueueResponse(SdkResponse):
 
     @resource_mode.setter
     def resource_mode(self, resource_mode):
-        """Sets the resource_mode of this ShowQueueResponse.
+        r"""Sets the resource_mode of this ShowQueueResponse.
 
         队列类型。 0：共享队列 1：专属队列
 
@@ -483,7 +483,7 @@ class ShowQueueResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowQueueResponse.
+        r"""Gets the enterprise_project_id of this ShowQueueResponse.
 
         企业项目ID。\"0”表示default，即默认的企业项目。 说明： 开通了企业管理服务的用户可设置该参数绑定指定的项目。
 
@@ -494,7 +494,7 @@ class ShowQueueResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowQueueResponse.
+        r"""Sets the enterprise_project_id of this ShowQueueResponse.
 
         企业项目ID。\"0”表示default，即默认的企业项目。 说明： 开通了企业管理服务的用户可设置该参数绑定指定的项目。
 
@@ -505,7 +505,7 @@ class ShowQueueResponse(SdkResponse):
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ShowQueueResponse.
+        r"""Gets the resource_type of this ShowQueueResponse.
 
         资源类型。 vm：ecf集群 container：容器化集群（k8s）
 
@@ -516,7 +516,7 @@ class ShowQueueResponse(SdkResponse):
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ShowQueueResponse.
+        r"""Sets the resource_type of this ShowQueueResponse.
 
         资源类型。 vm：ecf集群 container：容器化集群（k8s）
 
@@ -527,7 +527,7 @@ class ShowQueueResponse(SdkResponse):
 
     @property
     def cu_spec(self):
-        """Gets the cu_spec of this ShowQueueResponse.
+        r"""Gets the cu_spec of this ShowQueueResponse.
 
         队列的规格大小。对于包周期队列，表示包周期部分的CU值；对于按需队列，表示用户购买队列时的初始值。
 
@@ -538,7 +538,7 @@ class ShowQueueResponse(SdkResponse):
 
     @cu_spec.setter
     def cu_spec(self, cu_spec):
-        """Sets the cu_spec of this ShowQueueResponse.
+        r"""Sets the cu_spec of this ShowQueueResponse.
 
         队列的规格大小。对于包周期队列，表示包周期部分的CU值；对于按需队列，表示用户购买队列时的初始值。
 
@@ -549,7 +549,7 @@ class ShowQueueResponse(SdkResponse):
 
     @property
     def cu_scale_out_limit(self):
-        """Gets the cu_scale_out_limit of this ShowQueueResponse.
+        r"""Gets the cu_scale_out_limit of this ShowQueueResponse.
 
         当前队列弹性扩缩容的CU值上限。
 
@@ -560,7 +560,7 @@ class ShowQueueResponse(SdkResponse):
 
     @cu_scale_out_limit.setter
     def cu_scale_out_limit(self, cu_scale_out_limit):
-        """Sets the cu_scale_out_limit of this ShowQueueResponse.
+        r"""Sets the cu_scale_out_limit of this ShowQueueResponse.
 
         当前队列弹性扩缩容的CU值上限。
 
@@ -571,7 +571,7 @@ class ShowQueueResponse(SdkResponse):
 
     @property
     def cu_scale_in_limit(self):
-        """Gets the cu_scale_in_limit of this ShowQueueResponse.
+        r"""Gets the cu_scale_in_limit of this ShowQueueResponse.
 
         当前队列弹性扩缩容的CU值下限。
 
@@ -582,7 +582,7 @@ class ShowQueueResponse(SdkResponse):
 
     @cu_scale_in_limit.setter
     def cu_scale_in_limit(self, cu_scale_in_limit):
-        """Sets the cu_scale_in_limit of this ShowQueueResponse.
+        r"""Sets the cu_scale_in_limit of this ShowQueueResponse.
 
         当前队列弹性扩缩容的CU值下限。
 
@@ -593,7 +593,7 @@ class ShowQueueResponse(SdkResponse):
 
     @property
     def elastic_resource_pool_name(self):
-        """Gets the elastic_resource_pool_name of this ShowQueueResponse.
+        r"""Gets the elastic_resource_pool_name of this ShowQueueResponse.
 
         弹性资源池名称。
 
@@ -604,7 +604,7 @@ class ShowQueueResponse(SdkResponse):
 
     @elastic_resource_pool_name.setter
     def elastic_resource_pool_name(self, elastic_resource_pool_name):
-        """Sets the elastic_resource_pool_name of this ShowQueueResponse.
+        r"""Sets the elastic_resource_pool_name of this ShowQueueResponse.
 
         弹性资源池名称。
 
@@ -615,7 +615,7 @@ class ShowQueueResponse(SdkResponse):
 
     @property
     def support_spark_versions(self):
-        """Gets the support_spark_versions of this ShowQueueResponse.
+        r"""Gets the support_spark_versions of this ShowQueueResponse.
 
         队列支持的Spark版本。
 
@@ -626,7 +626,7 @@ class ShowQueueResponse(SdkResponse):
 
     @support_spark_versions.setter
     def support_spark_versions(self, support_spark_versions):
-        """Sets the support_spark_versions of this ShowQueueResponse.
+        r"""Sets the support_spark_versions of this ShowQueueResponse.
 
         队列支持的Spark版本。
 
@@ -637,7 +637,7 @@ class ShowQueueResponse(SdkResponse):
 
     @property
     def default_spark_version(self):
-        """Gets the default_spark_version of this ShowQueueResponse.
+        r"""Gets the default_spark_version of this ShowQueueResponse.
 
         队列默认的Spark版本。
 
@@ -648,7 +648,7 @@ class ShowQueueResponse(SdkResponse):
 
     @default_spark_version.setter
     def default_spark_version(self, default_spark_version):
-        """Sets the default_spark_version of this ShowQueueResponse.
+        r"""Sets the default_spark_version of this ShowQueueResponse.
 
         队列默认的Spark版本。
 
@@ -659,7 +659,7 @@ class ShowQueueResponse(SdkResponse):
 
     @property
     def support_hetu_engine_versions(self):
-        """Gets the support_hetu_engine_versions of this ShowQueueResponse.
+        r"""Gets the support_hetu_engine_versions of this ShowQueueResponse.
 
         队列支持的HetuEngine版本。
 
@@ -670,7 +670,7 @@ class ShowQueueResponse(SdkResponse):
 
     @support_hetu_engine_versions.setter
     def support_hetu_engine_versions(self, support_hetu_engine_versions):
-        """Sets the support_hetu_engine_versions of this ShowQueueResponse.
+        r"""Sets the support_hetu_engine_versions of this ShowQueueResponse.
 
         队列支持的HetuEngine版本。
 
@@ -681,7 +681,7 @@ class ShowQueueResponse(SdkResponse):
 
     @property
     def default_hetu_engine_version(self):
-        """Gets the default_hetu_engine_version of this ShowQueueResponse.
+        r"""Gets the default_hetu_engine_version of this ShowQueueResponse.
 
         队列默认的HetuEngine版本。
 
@@ -692,7 +692,7 @@ class ShowQueueResponse(SdkResponse):
 
     @default_hetu_engine_version.setter
     def default_hetu_engine_version(self, default_hetu_engine_version):
-        """Sets the default_hetu_engine_version of this ShowQueueResponse.
+        r"""Sets the default_hetu_engine_version of this ShowQueueResponse.
 
         队列默认的HetuEngine版本。
 
@@ -703,7 +703,7 @@ class ShowQueueResponse(SdkResponse):
 
     @property
     def support_flink_sql_versions(self):
-        """Gets the support_flink_sql_versions of this ShowQueueResponse.
+        r"""Gets the support_flink_sql_versions of this ShowQueueResponse.
 
         队列支持的Flink SQL版本。
 
@@ -714,7 +714,7 @@ class ShowQueueResponse(SdkResponse):
 
     @support_flink_sql_versions.setter
     def support_flink_sql_versions(self, support_flink_sql_versions):
-        """Sets the support_flink_sql_versions of this ShowQueueResponse.
+        r"""Sets the support_flink_sql_versions of this ShowQueueResponse.
 
         队列支持的Flink SQL版本。
 
@@ -725,7 +725,7 @@ class ShowQueueResponse(SdkResponse):
 
     @property
     def default_flink_sql_version(self):
-        """Gets the default_flink_sql_version of this ShowQueueResponse.
+        r"""Gets the default_flink_sql_version of this ShowQueueResponse.
 
         队列默认的Flink SQL版本。
 
@@ -736,7 +736,7 @@ class ShowQueueResponse(SdkResponse):
 
     @default_flink_sql_version.setter
     def default_flink_sql_version(self, default_flink_sql_version):
-        """Sets the default_flink_sql_version of this ShowQueueResponse.
+        r"""Sets the default_flink_sql_version of this ShowQueueResponse.
 
         队列默认的Flink SQL版本。
 
@@ -747,7 +747,7 @@ class ShowQueueResponse(SdkResponse):
 
     @property
     def support_flink_jar_versions(self):
-        """Gets the support_flink_jar_versions of this ShowQueueResponse.
+        r"""Gets the support_flink_jar_versions of this ShowQueueResponse.
 
         队列支持的Flink JAR版本。
 
@@ -758,7 +758,7 @@ class ShowQueueResponse(SdkResponse):
 
     @support_flink_jar_versions.setter
     def support_flink_jar_versions(self, support_flink_jar_versions):
-        """Sets the support_flink_jar_versions of this ShowQueueResponse.
+        r"""Sets the support_flink_jar_versions of this ShowQueueResponse.
 
         队列支持的Flink JAR版本。
 
@@ -769,7 +769,7 @@ class ShowQueueResponse(SdkResponse):
 
     @property
     def default_flink_jar_version(self):
-        """Gets the default_flink_jar_version of this ShowQueueResponse.
+        r"""Gets the default_flink_jar_version of this ShowQueueResponse.
 
         队列默认的Flink JAR版本。
 
@@ -780,7 +780,7 @@ class ShowQueueResponse(SdkResponse):
 
     @default_flink_jar_version.setter
     def default_flink_jar_version(self, default_flink_jar_version):
-        """Sets the default_flink_jar_version of this ShowQueueResponse.
+        r"""Sets the default_flink_jar_version of this ShowQueueResponse.
 
         队列默认的Flink JAR版本。
 

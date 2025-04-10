@@ -31,7 +31,7 @@ class CreateAclAccountRequestBody:
     }
 
     def __init__(self, account_name=None, account_role=None, account_password=None, description=None):
-        """CreateAclAccountRequestBody
+        r"""CreateAclAccountRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class CreateAclAccountRequestBody:
 
     @property
     def account_name(self):
-        """Gets the account_name of this CreateAclAccountRequestBody.
+        r"""Gets the account_name of this CreateAclAccountRequestBody.
 
         账号名称 - 以字母开头。 - 内容由字母、数字、中划线、下划线组成。 - 长度范围[1~64]个字符。 
 
@@ -72,7 +72,7 @@ class CreateAclAccountRequestBody:
 
     @account_name.setter
     def account_name(self, account_name):
-        """Sets the account_name of this CreateAclAccountRequestBody.
+        r"""Sets the account_name of this CreateAclAccountRequestBody.
 
         账号名称 - 以字母开头。 - 内容由字母、数字、中划线、下划线组成。 - 长度范围[1~64]个字符。 
 
@@ -83,7 +83,7 @@ class CreateAclAccountRequestBody:
 
     @property
     def account_role(self):
-        """Gets the account_role of this CreateAclAccountRequestBody.
+        r"""Gets the account_role of this CreateAclAccountRequestBody.
 
         账号权限
 
@@ -94,7 +94,7 @@ class CreateAclAccountRequestBody:
 
     @account_role.setter
     def account_role(self, account_role):
-        """Sets the account_role of this CreateAclAccountRequestBody.
+        r"""Sets the account_role of this CreateAclAccountRequestBody.
 
         账号权限
 
@@ -105,7 +105,7 @@ class CreateAclAccountRequestBody:
 
     @property
     def account_password(self):
-        """Gets the account_password of this CreateAclAccountRequestBody.
+        r"""Gets the account_password of this CreateAclAccountRequestBody.
 
         账号密码 - 输入长度为8到64位的字符串。 - 不能包含正序逆序用户名。 - 必须包含如下四种字符中的三种组合（不允许包含冒号）：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（`~!@#$%^&*()-_=+\\|{},<.>/?） 
 
@@ -116,7 +116,7 @@ class CreateAclAccountRequestBody:
 
     @account_password.setter
     def account_password(self, account_password):
-        """Sets the account_password of this CreateAclAccountRequestBody.
+        r"""Sets the account_password of this CreateAclAccountRequestBody.
 
         账号密码 - 输入长度为8到64位的字符串。 - 不能包含正序逆序用户名。 - 必须包含如下四种字符中的三种组合（不允许包含冒号）：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（`~!@#$%^&*()-_=+\\|{},<.>/?） 
 
@@ -127,7 +127,7 @@ class CreateAclAccountRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateAclAccountRequestBody.
+        r"""Gets the description of this CreateAclAccountRequestBody.
 
         账号描述
 
@@ -138,7 +138,7 @@ class CreateAclAccountRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateAclAccountRequestBody.
+        r"""Sets the description of this CreateAclAccountRequestBody.
 
         账号描述
 

@@ -25,7 +25,7 @@ class CreateCloudConnectionRequest:
     }
 
     def __init__(self, body=None):
-        """CreateCloudConnectionRequest
+        r"""CreateCloudConnectionRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateCloudConnectionRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateCloudConnectionRequest.
+        r"""Gets the body of this CreateCloudConnectionRequest.
 
         :return: The body of this CreateCloudConnectionRequest.
         :rtype: :class:`huaweicloudsdkcc.v3.CreateCloudConnectionRequestBody`
@@ -52,7 +52,7 @@ class CreateCloudConnectionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateCloudConnectionRequest.
+        r"""Sets the body of this CreateCloudConnectionRequest.
 
         :param body: The body of this CreateCloudConnectionRequest.
         :type body: :class:`huaweicloudsdkcc.v3.CreateCloudConnectionRequestBody`

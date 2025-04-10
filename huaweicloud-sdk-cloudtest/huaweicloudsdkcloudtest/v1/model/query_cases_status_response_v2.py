@@ -25,7 +25,7 @@ class QueryCasesStatusResponseV2:
     }
 
     def __init__(self, cases_status_ja=None):
-        """QueryCasesStatusResponseV2
+        r"""QueryCasesStatusResponseV2
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class QueryCasesStatusResponseV2:
 
     @property
     def cases_status_ja(self):
-        """Gets the cases_status_ja of this QueryCasesStatusResponseV2.
+        r"""Gets the cases_status_ja of this QueryCasesStatusResponseV2.
 
         :return: The cases_status_ja of this QueryCasesStatusResponseV2.
         :rtype: list[object]
@@ -52,7 +52,7 @@ class QueryCasesStatusResponseV2:
 
     @cases_status_ja.setter
     def cases_status_ja(self, cases_status_ja):
-        """Sets the cases_status_ja of this QueryCasesStatusResponseV2.
+        r"""Sets the cases_status_ja of this QueryCasesStatusResponseV2.
 
         :param cases_status_ja: The cases_status_ja of this QueryCasesStatusResponseV2.
         :type cases_status_ja: list[object]

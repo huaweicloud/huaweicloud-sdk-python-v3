@@ -31,7 +31,7 @@ class FactoryInfo:
     }
 
     def __init__(self, factory_type=None, state=None, version=None, tpl_id=None):
-        """FactoryInfo
+        r"""FactoryInfo
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class FactoryInfo:
 
     @property
     def factory_type(self):
-        """Gets the factory_type of this FactoryInfo.
+        r"""Gets the factory_type of this FactoryInfo.
 
         厂商类型。  - HUAWEI：表示华为厂商 - XIAOMI：表示小米厂商 - OPPO：表示OPPO厂商 - VIVO：表示VIVO厂商 - MEIZU：表示魅族厂商 - SAMSUNG：表示三星厂商 
 
@@ -73,7 +73,7 @@ class FactoryInfo:
 
     @factory_type.setter
     def factory_type(self, factory_type):
-        """Sets the factory_type of this FactoryInfo.
+        r"""Sets the factory_type of this FactoryInfo.
 
         厂商类型。  - HUAWEI：表示华为厂商 - XIAOMI：表示小米厂商 - OPPO：表示OPPO厂商 - VIVO：表示VIVO厂商 - MEIZU：表示魅族厂商 - SAMSUNG：表示三星厂商 
 
@@ -84,7 +84,7 @@ class FactoryInfo:
 
     @property
     def state(self):
-        """Gets the state of this FactoryInfo.
+        r"""Gets the state of this FactoryInfo.
 
         模板状态。  - 1：激活  - 其他：未激活 
 
@@ -95,7 +95,7 @@ class FactoryInfo:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this FactoryInfo.
+        r"""Sets the state of this FactoryInfo.
 
         模板状态。  - 1：激活  - 其他：未激活 
 
@@ -106,7 +106,7 @@ class FactoryInfo:
 
     @property
     def version(self):
-        """Gets the version of this FactoryInfo.
+        r"""Gets the version of this FactoryInfo.
 
         厂商版本
 
@@ -117,7 +117,7 @@ class FactoryInfo:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this FactoryInfo.
+        r"""Sets the version of this FactoryInfo.
 
         厂商版本
 
@@ -128,7 +128,7 @@ class FactoryInfo:
 
     @property
     def tpl_id(self):
-        """Gets the tpl_id of this FactoryInfo.
+        r"""Gets the tpl_id of this FactoryInfo.
 
         智能信息模板ID
 
@@ -139,7 +139,7 @@ class FactoryInfo:
 
     @tpl_id.setter
     def tpl_id(self, tpl_id):
-        """Sets the tpl_id of this FactoryInfo.
+        r"""Sets the tpl_id of this FactoryInfo.
 
         智能信息模板ID
 

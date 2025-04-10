@@ -29,7 +29,7 @@ class AudioStreamCreateRequestData:
     }
 
     def __init__(self, url=None, language=None, return_all_results=None):
-        """AudioStreamCreateRequestData
+        r"""AudioStreamCreateRequestData
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class AudioStreamCreateRequestData:
 
     @property
     def url(self):
-        """Gets the url of this AudioStreamCreateRequestData.
+        r"""Gets the url of this AudioStreamCreateRequestData.
 
         音频流url地址，支持rtmp、rtmps、hls、http、https等主流协议。
 
@@ -67,7 +67,7 @@ class AudioStreamCreateRequestData:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this AudioStreamCreateRequestData.
+        r"""Sets the url of this AudioStreamCreateRequestData.
 
         音频流url地址，支持rtmp、rtmps、hls、http、https等主流协议。
 
@@ -78,7 +78,7 @@ class AudioStreamCreateRequestData:
 
     @property
     def language(self):
-        """Gets the language of this AudioStreamCreateRequestData.
+        r"""Gets the language of this AudioStreamCreateRequestData.
 
         指定音频流中语种类型 zh: 中文,默认值为zh
 
@@ -89,7 +89,7 @@ class AudioStreamCreateRequestData:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this AudioStreamCreateRequestData.
+        r"""Sets the language of this AudioStreamCreateRequestData.
 
         指定音频流中语种类型 zh: 中文,默认值为zh
 
@@ -100,7 +100,7 @@ class AudioStreamCreateRequestData:
 
     @property
     def return_all_results(self):
-        """Gets the return_all_results of this AudioStreamCreateRequestData.
+        r"""Gets the return_all_results of this AudioStreamCreateRequestData.
 
         返回音频片段结果的策略。可选值如下： false：返回风险等级为非pass的音频片段结果 true：返回所有风险等级的音频片段结果 说明： 1. 默认值为false； 2. 每隔10秒返回一次最近10秒音频流的审核结果。
 
@@ -111,7 +111,7 @@ class AudioStreamCreateRequestData:
 
     @return_all_results.setter
     def return_all_results(self, return_all_results):
-        """Sets the return_all_results of this AudioStreamCreateRequestData.
+        r"""Sets the return_all_results of this AudioStreamCreateRequestData.
 
         返回音频片段结果的策略。可选值如下： false：返回风险等级为非pass的音频片段结果 true：返回所有风险等级的音频片段结果 说明： 1. 默认值为false； 2. 每隔10秒返回一次最近10秒音频流的审核结果。
 

@@ -31,7 +31,7 @@ class LoadCustomThesaurusReq:
     }
 
     def __init__(self, bucket_name=None, main_object=None, stop_object=None, synonym_object=None):
-        """LoadCustomThesaurusReq
+        r"""LoadCustomThesaurusReq
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class LoadCustomThesaurusReq:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this LoadCustomThesaurusReq.
+        r"""Gets the bucket_name of this LoadCustomThesaurusReq.
 
         词库文件存放的OBS桶（桶类型必须为标准存储或者低频存储，不支持归档存储）。
 
@@ -74,7 +74,7 @@ class LoadCustomThesaurusReq:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this LoadCustomThesaurusReq.
+        r"""Sets the bucket_name of this LoadCustomThesaurusReq.
 
         词库文件存放的OBS桶（桶类型必须为标准存储或者低频存储，不支持归档存储）。
 
@@ -85,7 +85,7 @@ class LoadCustomThesaurusReq:
 
     @property
     def main_object(self):
-        """Gets the main_object of this LoadCustomThesaurusReq.
+        r"""Gets the main_object of this LoadCustomThesaurusReq.
 
         主词库文件对象，必须为UTF-8无BOM编码的文本文件，一行一个分词，文件大小最大支持100M。 mainObject, stopObject, synonymObject三个参数至少要填写一个。  >一次只能加载一个主词库，不支持同时加载多个主词库。
 
@@ -96,7 +96,7 @@ class LoadCustomThesaurusReq:
 
     @main_object.setter
     def main_object(self, main_object):
-        """Sets the main_object of this LoadCustomThesaurusReq.
+        r"""Sets the main_object of this LoadCustomThesaurusReq.
 
         主词库文件对象，必须为UTF-8无BOM编码的文本文件，一行一个分词，文件大小最大支持100M。 mainObject, stopObject, synonymObject三个参数至少要填写一个。  >一次只能加载一个主词库，不支持同时加载多个主词库。
 
@@ -107,7 +107,7 @@ class LoadCustomThesaurusReq:
 
     @property
     def stop_object(self):
-        """Gets the stop_object of this LoadCustomThesaurusReq.
+        r"""Gets the stop_object of this LoadCustomThesaurusReq.
 
         停词词库文件对象，必须为UTF-8无BOM编码的文本文件，一行一个分词，文件大小最大支持20M。  mainObject, stopObject, synonymObject三个参数至少要填写一个。
 
@@ -118,7 +118,7 @@ class LoadCustomThesaurusReq:
 
     @stop_object.setter
     def stop_object(self, stop_object):
-        """Sets the stop_object of this LoadCustomThesaurusReq.
+        r"""Sets the stop_object of this LoadCustomThesaurusReq.
 
         停词词库文件对象，必须为UTF-8无BOM编码的文本文件，一行一个分词，文件大小最大支持20M。  mainObject, stopObject, synonymObject三个参数至少要填写一个。
 
@@ -129,7 +129,7 @@ class LoadCustomThesaurusReq:
 
     @property
     def synonym_object(self):
-        """Gets the synonym_object of this LoadCustomThesaurusReq.
+        r"""Gets the synonym_object of this LoadCustomThesaurusReq.
 
         同义词词库文件，必须为UTF-8无BOM编码的文本文件，一行一组分词，文件大小最大支持20M。  mainObject, stopObject, synonymObject三个参数至少要填写一个。
 
@@ -140,7 +140,7 @@ class LoadCustomThesaurusReq:
 
     @synonym_object.setter
     def synonym_object(self, synonym_object):
-        """Sets the synonym_object of this LoadCustomThesaurusReq.
+        r"""Sets the synonym_object of this LoadCustomThesaurusReq.
 
         同义词词库文件，必须为UTF-8无BOM编码的文本文件，一行一组分词，文件大小最大支持20M。  mainObject, stopObject, synonymObject三个参数至少要填写一个。
 

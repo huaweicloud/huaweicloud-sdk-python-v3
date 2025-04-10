@@ -25,7 +25,7 @@ class BatchUpdateNotificationMaskTimeRequest:
     }
 
     def __init__(self, body=None):
-        """BatchUpdateNotificationMaskTimeRequest
+        r"""BatchUpdateNotificationMaskTimeRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchUpdateNotificationMaskTimeRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchUpdateNotificationMaskTimeRequest.
+        r"""Gets the body of this BatchUpdateNotificationMaskTimeRequest.
 
         :return: The body of this BatchUpdateNotificationMaskTimeRequest.
         :rtype: :class:`huaweicloudsdkces.v2.BatchUpdateNotificationMaskTimeRequestBody`
@@ -52,7 +52,7 @@ class BatchUpdateNotificationMaskTimeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchUpdateNotificationMaskTimeRequest.
+        r"""Sets the body of this BatchUpdateNotificationMaskTimeRequest.
 
         :param body: The body of this BatchUpdateNotificationMaskTimeRequest.
         :type body: :class:`huaweicloudsdkces.v2.BatchUpdateNotificationMaskTimeRequestBody`

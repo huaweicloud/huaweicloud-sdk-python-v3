@@ -27,7 +27,7 @@ class UpdateWelcomeSpeechReq:
     }
 
     def __init__(self, welcome_speech=None, enable_welcome_speech=None):
-        """UpdateWelcomeSpeechReq
+        r"""UpdateWelcomeSpeechReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateWelcomeSpeechReq:
 
     @property
     def welcome_speech(self):
-        """Gets the welcome_speech of this UpdateWelcomeSpeechReq.
+        r"""Gets the welcome_speech of this UpdateWelcomeSpeechReq.
 
         欢迎词。
 
@@ -61,7 +61,7 @@ class UpdateWelcomeSpeechReq:
 
     @welcome_speech.setter
     def welcome_speech(self, welcome_speech):
-        """Sets the welcome_speech of this UpdateWelcomeSpeechReq.
+        r"""Sets the welcome_speech of this UpdateWelcomeSpeechReq.
 
         欢迎词。
 
@@ -72,7 +72,7 @@ class UpdateWelcomeSpeechReq:
 
     @property
     def enable_welcome_speech(self):
-        """Gets the enable_welcome_speech of this UpdateWelcomeSpeechReq.
+        r"""Gets the enable_welcome_speech of this UpdateWelcomeSpeechReq.
 
         欢迎词功能开关。
 
@@ -83,7 +83,7 @@ class UpdateWelcomeSpeechReq:
 
     @enable_welcome_speech.setter
     def enable_welcome_speech(self, enable_welcome_speech):
-        """Sets the enable_welcome_speech of this UpdateWelcomeSpeechReq.
+        r"""Sets the enable_welcome_speech of this UpdateWelcomeSpeechReq.
 
         欢迎词功能开关。
 

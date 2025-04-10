@@ -29,7 +29,7 @@ class BatchListStructDetailRequest:
     }
 
     def __init__(self, type=None, x_language=None, body=None):
-        """BatchListStructDetailRequest
+        r"""BatchListStructDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class BatchListStructDetailRequest:
 
     @property
     def type(self):
-        """Gets the type of this BatchListStructDetailRequest.
+        r"""Gets the type of this BatchListStructDetailRequest.
 
         数据库支持迁移对象类型
 
@@ -67,7 +67,7 @@ class BatchListStructDetailRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this BatchListStructDetailRequest.
+        r"""Sets the type of this BatchListStructDetailRequest.
 
         数据库支持迁移对象类型
 
@@ -78,7 +78,7 @@ class BatchListStructDetailRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this BatchListStructDetailRequest.
+        r"""Gets the x_language of this BatchListStructDetailRequest.
 
         请求语言类型
 
@@ -89,7 +89,7 @@ class BatchListStructDetailRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this BatchListStructDetailRequest.
+        r"""Sets the x_language of this BatchListStructDetailRequest.
 
         请求语言类型
 
@@ -100,7 +100,7 @@ class BatchListStructDetailRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchListStructDetailRequest.
+        r"""Gets the body of this BatchListStructDetailRequest.
 
         :return: The body of this BatchListStructDetailRequest.
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchQueryJobReqPage`
@@ -109,7 +109,7 @@ class BatchListStructDetailRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchListStructDetailRequest.
+        r"""Sets the body of this BatchListStructDetailRequest.
 
         :param body: The body of this BatchListStructDetailRequest.
         :type body: :class:`huaweicloudsdkdrs.v3.BatchQueryJobReqPage`

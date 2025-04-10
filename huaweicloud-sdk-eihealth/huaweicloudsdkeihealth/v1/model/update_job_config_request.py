@@ -25,7 +25,7 @@ class UpdateJobConfigRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateJobConfigRequest
+        r"""UpdateJobConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateJobConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateJobConfigRequest.
+        r"""Gets the body of this UpdateJobConfigRequest.
 
         :return: The body of this UpdateJobConfigRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateJobConfigReq`
@@ -52,7 +52,7 @@ class UpdateJobConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateJobConfigRequest.
+        r"""Sets the body of this UpdateJobConfigRequest.
 
         :param body: The body of this UpdateJobConfigRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.UpdateJobConfigReq`

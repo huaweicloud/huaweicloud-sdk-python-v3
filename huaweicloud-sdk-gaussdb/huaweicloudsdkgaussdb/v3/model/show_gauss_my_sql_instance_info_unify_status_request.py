@@ -27,7 +27,7 @@ class ShowGaussMySqlInstanceInfoUnifyStatusRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None):
-        """ShowGaussMySqlInstanceInfoUnifyStatusRequest
+        r"""ShowGaussMySqlInstanceInfoUnifyStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowGaussMySqlInstanceInfoUnifyStatusRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowGaussMySqlInstanceInfoUnifyStatusRequest.
+        r"""Gets the x_language of this ShowGaussMySqlInstanceInfoUnifyStatusRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -60,7 +60,7 @@ class ShowGaussMySqlInstanceInfoUnifyStatusRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowGaussMySqlInstanceInfoUnifyStatusRequest.
+        r"""Sets the x_language of this ShowGaussMySqlInstanceInfoUnifyStatusRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -71,7 +71,7 @@ class ShowGaussMySqlInstanceInfoUnifyStatusRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowGaussMySqlInstanceInfoUnifyStatusRequest.
+        r"""Gets the instance_id of this ShowGaussMySqlInstanceInfoUnifyStatusRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -82,7 +82,7 @@ class ShowGaussMySqlInstanceInfoUnifyStatusRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowGaussMySqlInstanceInfoUnifyStatusRequest.
+        r"""Sets the instance_id of this ShowGaussMySqlInstanceInfoUnifyStatusRequest.
 
         实例ID，严格匹配UUID规则。
 

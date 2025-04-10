@@ -35,7 +35,7 @@ class Job:
     }
 
     def __init__(self, job_id=None, status=None, create_time=None, exceptions=None, metrics=None, plan=None):
-        """Job
+        r"""Job
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class Job:
 
     @property
     def job_id(self):
-        """Gets the job_id of this Job.
+        r"""Gets the job_id of this Job.
 
         作业ID
 
@@ -87,7 +87,7 @@ class Job:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this Job.
+        r"""Sets the job_id of this Job.
 
         作业ID
 
@@ -98,7 +98,7 @@ class Job:
 
     @property
     def status(self):
-        """Gets the status of this Job.
+        r"""Gets the status of this Job.
 
         作业状态
 
@@ -109,7 +109,7 @@ class Job:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Job.
+        r"""Sets the status of this Job.
 
         作业状态
 
@@ -120,7 +120,7 @@ class Job:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Job.
+        r"""Gets the create_time of this Job.
 
         时间戳
 
@@ -131,7 +131,7 @@ class Job:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Job.
+        r"""Sets the create_time of this Job.
 
         时间戳
 
@@ -142,7 +142,7 @@ class Job:
 
     @property
     def exceptions(self):
-        """Gets the exceptions of this Job.
+        r"""Gets the exceptions of this Job.
 
         作业异常信息
 
@@ -153,7 +153,7 @@ class Job:
 
     @exceptions.setter
     def exceptions(self, exceptions):
-        """Sets the exceptions of this Job.
+        r"""Sets the exceptions of this Job.
 
         作业异常信息
 
@@ -164,7 +164,7 @@ class Job:
 
     @property
     def metrics(self):
-        """Gets the metrics of this Job.
+        r"""Gets the metrics of this Job.
 
         作业指标信息
 
@@ -175,7 +175,7 @@ class Job:
 
     @metrics.setter
     def metrics(self, metrics):
-        """Sets the metrics of this Job.
+        r"""Sets the metrics of this Job.
 
         作业指标信息
 
@@ -186,7 +186,7 @@ class Job:
 
     @property
     def plan(self):
-        """Gets the plan of this Job.
+        r"""Gets the plan of this Job.
 
         作业执行计划
 
@@ -197,7 +197,7 @@ class Job:
 
     @plan.setter
     def plan(self, plan):
-        """Sets the plan of this Job.
+        r"""Sets the plan of this Job.
 
         作业执行计划
 

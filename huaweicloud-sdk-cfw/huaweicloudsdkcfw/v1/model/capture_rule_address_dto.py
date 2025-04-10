@@ -29,7 +29,7 @@ class CaptureRuleAddressDto:
     }
 
     def __init__(self, address=None, address_type=None, type=None):
-        """CaptureRuleAddressDto
+        r"""CaptureRuleAddressDto
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CaptureRuleAddressDto:
 
     @property
     def address(self):
-        """Gets the address of this CaptureRuleAddressDto.
+        r"""Gets the address of this CaptureRuleAddressDto.
 
         地址
 
@@ -65,7 +65,7 @@ class CaptureRuleAddressDto:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this CaptureRuleAddressDto.
+        r"""Sets the address of this CaptureRuleAddressDto.
 
         地址
 
@@ -76,7 +76,7 @@ class CaptureRuleAddressDto:
 
     @property
     def address_type(self):
-        """Gets the address_type of this CaptureRuleAddressDto.
+        r"""Gets the address_type of this CaptureRuleAddressDto.
 
         目的地址类型0 ipv4，1 ipv6
 
@@ -87,7 +87,7 @@ class CaptureRuleAddressDto:
 
     @address_type.setter
     def address_type(self, address_type):
-        """Sets the address_type of this CaptureRuleAddressDto.
+        r"""Sets the address_type of this CaptureRuleAddressDto.
 
         目的地址类型0 ipv4，1 ipv6
 
@@ -98,7 +98,7 @@ class CaptureRuleAddressDto:
 
     @property
     def type(self):
-        """Gets the type of this CaptureRuleAddressDto.
+        r"""Gets the type of this CaptureRuleAddressDto.
 
         输入地址类型，目前只支持0，手工输入类型
 
@@ -109,7 +109,7 @@ class CaptureRuleAddressDto:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CaptureRuleAddressDto.
+        r"""Sets the type of this CaptureRuleAddressDto.
 
         输入地址类型，目前只支持0，手工输入类型
 

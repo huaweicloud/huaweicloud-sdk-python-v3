@@ -33,7 +33,7 @@ class ListAdOuUsersRequest:
     }
 
     def __init__(self, ou_dn=None, user_name=None, has_existed=None, limit=None, offset=None):
-        """ListAdOuUsersRequest
+        r"""ListAdOuUsersRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListAdOuUsersRequest:
 
     @property
     def ou_dn(self):
-        """Gets the ou_dn of this ListAdOuUsersRequest.
+        r"""Gets the ou_dn of this ListAdOuUsersRequest.
 
         OU的域名地址
 
@@ -81,7 +81,7 @@ class ListAdOuUsersRequest:
 
     @ou_dn.setter
     def ou_dn(self, ou_dn):
-        """Sets the ou_dn of this ListAdOuUsersRequest.
+        r"""Sets the ou_dn of this ListAdOuUsersRequest.
 
         OU的域名地址
 
@@ -92,7 +92,7 @@ class ListAdOuUsersRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ListAdOuUsersRequest.
+        r"""Gets the user_name of this ListAdOuUsersRequest.
 
         用户名，支持模糊查询
 
@@ -103,7 +103,7 @@ class ListAdOuUsersRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ListAdOuUsersRequest.
+        r"""Sets the user_name of this ListAdOuUsersRequest.
 
         用户名，支持模糊查询
 
@@ -114,7 +114,7 @@ class ListAdOuUsersRequest:
 
     @property
     def has_existed(self):
-        """Gets the has_existed of this ListAdOuUsersRequest.
+        r"""Gets the has_existed of this ListAdOuUsersRequest.
 
         用户是否已存在
 
@@ -125,7 +125,7 @@ class ListAdOuUsersRequest:
 
     @has_existed.setter
     def has_existed(self, has_existed):
-        """Sets the has_existed of this ListAdOuUsersRequest.
+        r"""Sets the has_existed of this ListAdOuUsersRequest.
 
         用户是否已存在
 
@@ -136,7 +136,7 @@ class ListAdOuUsersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAdOuUsersRequest.
+        r"""Gets the limit of this ListAdOuUsersRequest.
 
         用于分页查询，返回桌面数量限制。如果不指定，则返回所有符合条件的桌面
 
@@ -147,7 +147,7 @@ class ListAdOuUsersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAdOuUsersRequest.
+        r"""Sets the limit of this ListAdOuUsersRequest.
 
         用于分页查询，返回桌面数量限制。如果不指定，则返回所有符合条件的桌面
 
@@ -158,7 +158,7 @@ class ListAdOuUsersRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAdOuUsersRequest.
+        r"""Gets the offset of this ListAdOuUsersRequest.
 
         用于分页查询，查询的起始记录序号，从0开始
 
@@ -169,7 +169,7 @@ class ListAdOuUsersRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAdOuUsersRequest.
+        r"""Sets the offset of this ListAdOuUsersRequest.
 
         用于分页查询，查询的起始记录序号，从0开始
 

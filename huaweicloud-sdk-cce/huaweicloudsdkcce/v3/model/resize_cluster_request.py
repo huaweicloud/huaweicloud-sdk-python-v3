@@ -27,7 +27,7 @@ class ResizeClusterRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """ResizeClusterRequest
+        r"""ResizeClusterRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ResizeClusterRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ResizeClusterRequest.
+        r"""Gets the cluster_id of this ResizeClusterRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -60,7 +60,7 @@ class ResizeClusterRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ResizeClusterRequest.
+        r"""Sets the cluster_id of this ResizeClusterRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -71,7 +71,7 @@ class ResizeClusterRequest:
 
     @property
     def body(self):
-        """Gets the body of this ResizeClusterRequest.
+        r"""Gets the body of this ResizeClusterRequest.
 
         :return: The body of this ResizeClusterRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.ResizeClusterRequestBody`
@@ -80,7 +80,7 @@ class ResizeClusterRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ResizeClusterRequest.
+        r"""Sets the body of this ResizeClusterRequest.
 
         :param body: The body of this ResizeClusterRequest.
         :type body: :class:`huaweicloudsdkcce.v3.ResizeClusterRequestBody`

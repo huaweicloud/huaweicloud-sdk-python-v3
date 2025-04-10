@@ -25,7 +25,7 @@ class BatchRestoreSnapshotReq:
     }
 
     def __init__(self, snapshot_ids=None):
-        """BatchRestoreSnapshotReq
+        r"""BatchRestoreSnapshotReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchRestoreSnapshotReq:
 
     @property
     def snapshot_ids(self):
-        """Gets the snapshot_ids of this BatchRestoreSnapshotReq.
+        r"""Gets the snapshot_ids of this BatchRestoreSnapshotReq.
 
         桌面快照记录id数组，最多支持100。
 
@@ -54,7 +54,7 @@ class BatchRestoreSnapshotReq:
 
     @snapshot_ids.setter
     def snapshot_ids(self, snapshot_ids):
-        """Sets the snapshot_ids of this BatchRestoreSnapshotReq.
+        r"""Sets the snapshot_ids of this BatchRestoreSnapshotReq.
 
         桌面快照记录id数组，最多支持100。
 

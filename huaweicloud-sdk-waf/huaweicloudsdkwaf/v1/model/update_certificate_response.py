@@ -32,7 +32,7 @@ class UpdateCertificateResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, expire_time=None, timestamp=None):
-        """UpdateCertificateResponse
+        r"""UpdateCertificateResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class UpdateCertificateResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateCertificateResponse.
+        r"""Gets the id of this UpdateCertificateResponse.
 
         证书ID
 
@@ -76,7 +76,7 @@ class UpdateCertificateResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateCertificateResponse.
+        r"""Sets the id of this UpdateCertificateResponse.
 
         证书ID
 
@@ -87,7 +87,7 @@ class UpdateCertificateResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateCertificateResponse.
+        r"""Gets the name of this UpdateCertificateResponse.
 
         证书名
 
@@ -98,7 +98,7 @@ class UpdateCertificateResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateCertificateResponse.
+        r"""Sets the name of this UpdateCertificateResponse.
 
         证书名
 
@@ -109,7 +109,7 @@ class UpdateCertificateResponse(SdkResponse):
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this UpdateCertificateResponse.
+        r"""Gets the expire_time of this UpdateCertificateResponse.
 
         证书过期时间戳
 
@@ -120,7 +120,7 @@ class UpdateCertificateResponse(SdkResponse):
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this UpdateCertificateResponse.
+        r"""Sets the expire_time of this UpdateCertificateResponse.
 
         证书过期时间戳
 
@@ -131,7 +131,7 @@ class UpdateCertificateResponse(SdkResponse):
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this UpdateCertificateResponse.
+        r"""Gets the timestamp of this UpdateCertificateResponse.
 
         时间戳
 
@@ -142,7 +142,7 @@ class UpdateCertificateResponse(SdkResponse):
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this UpdateCertificateResponse.
+        r"""Sets the timestamp of this UpdateCertificateResponse.
 
         时间戳
 

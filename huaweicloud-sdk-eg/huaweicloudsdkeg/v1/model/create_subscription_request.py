@@ -27,7 +27,7 @@ class CreateSubscriptionRequest:
     }
 
     def __init__(self, enterprise_project_id=None, body=None):
-        """CreateSubscriptionRequest
+        r"""CreateSubscriptionRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateSubscriptionRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateSubscriptionRequest.
+        r"""Gets the enterprise_project_id of this CreateSubscriptionRequest.
 
         创建订阅时所使用的企业项目id
 
@@ -61,7 +61,7 @@ class CreateSubscriptionRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateSubscriptionRequest.
+        r"""Sets the enterprise_project_id of this CreateSubscriptionRequest.
 
         创建订阅时所使用的企业项目id
 
@@ -72,7 +72,7 @@ class CreateSubscriptionRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSubscriptionRequest.
+        r"""Gets the body of this CreateSubscriptionRequest.
 
         :return: The body of this CreateSubscriptionRequest.
         :rtype: :class:`huaweicloudsdkeg.v1.SubscriptionCreateReq`
@@ -81,7 +81,7 @@ class CreateSubscriptionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSubscriptionRequest.
+        r"""Sets the body of this CreateSubscriptionRequest.
 
         :param body: The body of this CreateSubscriptionRequest.
         :type body: :class:`huaweicloudsdkeg.v1.SubscriptionCreateReq`

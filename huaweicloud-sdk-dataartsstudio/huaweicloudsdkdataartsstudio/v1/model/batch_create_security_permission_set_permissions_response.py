@@ -28,7 +28,7 @@ class BatchCreateSecurityPermissionSetPermissionsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, permissions=None):
-        """BatchCreateSecurityPermissionSetPermissionsResponse
+        r"""BatchCreateSecurityPermissionSetPermissionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchCreateSecurityPermissionSetPermissionsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this BatchCreateSecurityPermissionSetPermissionsResponse.
+        r"""Gets the total of this BatchCreateSecurityPermissionSetPermissionsResponse.
 
         总条数
 
@@ -62,7 +62,7 @@ class BatchCreateSecurityPermissionSetPermissionsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this BatchCreateSecurityPermissionSetPermissionsResponse.
+        r"""Sets the total of this BatchCreateSecurityPermissionSetPermissionsResponse.
 
         总条数
 
@@ -73,7 +73,7 @@ class BatchCreateSecurityPermissionSetPermissionsResponse(SdkResponse):
 
     @property
     def permissions(self):
-        """Gets the permissions of this BatchCreateSecurityPermissionSetPermissionsResponse.
+        r"""Gets the permissions of this BatchCreateSecurityPermissionSetPermissionsResponse.
 
         权限列表
 
@@ -84,7 +84,7 @@ class BatchCreateSecurityPermissionSetPermissionsResponse(SdkResponse):
 
     @permissions.setter
     def permissions(self, permissions):
-        """Sets the permissions of this BatchCreateSecurityPermissionSetPermissionsResponse.
+        r"""Sets the permissions of this BatchCreateSecurityPermissionSetPermissionsResponse.
 
         权限列表
 

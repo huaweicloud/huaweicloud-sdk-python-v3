@@ -29,7 +29,7 @@ class MonitorSystemRequestBody:
     }
 
     def __init__(self, api_version=None, kind=None, spec=None):
-        """MonitorSystemRequestBody
+        r"""MonitorSystemRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class MonitorSystemRequestBody:
 
     @property
     def api_version(self):
-        """Gets the api_version of this MonitorSystemRequestBody.
+        r"""Gets the api_version of this MonitorSystemRequestBody.
 
         :return: The api_version of this MonitorSystemRequestBody.
         :rtype: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -66,7 +66,7 @@ class MonitorSystemRequestBody:
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this MonitorSystemRequestBody.
+        r"""Sets the api_version of this MonitorSystemRequestBody.
 
         :param api_version: The api_version of this MonitorSystemRequestBody.
         :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -75,7 +75,7 @@ class MonitorSystemRequestBody:
 
     @property
     def kind(self):
-        """Gets the kind of this MonitorSystemRequestBody.
+        r"""Gets the kind of this MonitorSystemRequestBody.
 
         :return: The kind of this MonitorSystemRequestBody.
         :rtype: :class:`huaweicloudsdkcae.v1.MonitorSystemKindObj`
@@ -84,7 +84,7 @@ class MonitorSystemRequestBody:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this MonitorSystemRequestBody.
+        r"""Sets the kind of this MonitorSystemRequestBody.
 
         :param kind: The kind of this MonitorSystemRequestBody.
         :type kind: :class:`huaweicloudsdkcae.v1.MonitorSystemKindObj`
@@ -93,7 +93,7 @@ class MonitorSystemRequestBody:
 
     @property
     def spec(self):
-        """Gets the spec of this MonitorSystemRequestBody.
+        r"""Gets the spec of this MonitorSystemRequestBody.
 
         :return: The spec of this MonitorSystemRequestBody.
         :rtype: :class:`huaweicloudsdkcae.v1.MonitorSystemRequestBodySpec`
@@ -102,7 +102,7 @@ class MonitorSystemRequestBody:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this MonitorSystemRequestBody.
+        r"""Sets the spec of this MonitorSystemRequestBody.
 
         :param spec: The spec of this MonitorSystemRequestBody.
         :type spec: :class:`huaweicloudsdkcae.v1.MonitorSystemRequestBodySpec`

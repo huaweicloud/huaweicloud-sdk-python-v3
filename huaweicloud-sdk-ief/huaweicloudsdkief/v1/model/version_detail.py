@@ -47,7 +47,7 @@ class VersionDetail:
     }
 
     def __init__(self, version=None, image_url=None, envs=None, volumes=None, configs=None, resources=None, arch=None, command=None, args=None, liveness_probe=None, readiness_probe=None, npu_type=None):
-        """VersionDetail
+        r"""VersionDetail
 
         The model defined in huaweicloud sdk
 
@@ -118,7 +118,7 @@ class VersionDetail:
 
     @property
     def version(self):
-        """Gets the version of this VersionDetail.
+        r"""Gets the version of this VersionDetail.
 
         应用版本号
 
@@ -129,7 +129,7 @@ class VersionDetail:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this VersionDetail.
+        r"""Sets the version of this VersionDetail.
 
         应用版本号
 
@@ -140,7 +140,7 @@ class VersionDetail:
 
     @property
     def image_url(self):
-        """Gets the image_url of this VersionDetail.
+        r"""Gets the image_url of this VersionDetail.
 
         镜像存储地址
 
@@ -151,7 +151,7 @@ class VersionDetail:
 
     @image_url.setter
     def image_url(self, image_url):
-        """Sets the image_url of this VersionDetail.
+        r"""Sets the image_url of this VersionDetail.
 
         镜像存储地址
 
@@ -162,7 +162,7 @@ class VersionDetail:
 
     @property
     def envs(self):
-        """Gets the envs of this VersionDetail.
+        r"""Gets the envs of this VersionDetail.
 
         环境变量
 
@@ -173,7 +173,7 @@ class VersionDetail:
 
     @envs.setter
     def envs(self, envs):
-        """Sets the envs of this VersionDetail.
+        r"""Sets the envs of this VersionDetail.
 
         环境变量
 
@@ -184,7 +184,7 @@ class VersionDetail:
 
     @property
     def volumes(self):
-        """Gets the volumes of this VersionDetail.
+        r"""Gets the volumes of this VersionDetail.
 
         卷配置
 
@@ -195,7 +195,7 @@ class VersionDetail:
 
     @volumes.setter
     def volumes(self, volumes):
-        """Sets the volumes of this VersionDetail.
+        r"""Sets the volumes of this VersionDetail.
 
         卷配置
 
@@ -206,7 +206,7 @@ class VersionDetail:
 
     @property
     def configs(self):
-        """Gets the configs of this VersionDetail.
+        r"""Gets the configs of this VersionDetail.
 
         :return: The configs of this VersionDetail.
         :rtype: :class:`huaweicloudsdkief.v1.AppConfigs`
@@ -215,7 +215,7 @@ class VersionDetail:
 
     @configs.setter
     def configs(self, configs):
-        """Sets the configs of this VersionDetail.
+        r"""Sets the configs of this VersionDetail.
 
         :param configs: The configs of this VersionDetail.
         :type configs: :class:`huaweicloudsdkief.v1.AppConfigs`
@@ -224,7 +224,7 @@ class VersionDetail:
 
     @property
     def resources(self):
-        """Gets the resources of this VersionDetail.
+        r"""Gets the resources of this VersionDetail.
 
         :return: The resources of this VersionDetail.
         :rtype: :class:`huaweicloudsdkief.v1.Resources`
@@ -233,7 +233,7 @@ class VersionDetail:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this VersionDetail.
+        r"""Sets the resources of this VersionDetail.
 
         :param resources: The resources of this VersionDetail.
         :type resources: :class:`huaweicloudsdkief.v1.Resources`
@@ -242,7 +242,7 @@ class VersionDetail:
 
     @property
     def arch(self):
-        """Gets the arch of this VersionDetail.
+        r"""Gets the arch of this VersionDetail.
 
         架构
 
@@ -253,7 +253,7 @@ class VersionDetail:
 
     @arch.setter
     def arch(self, arch):
-        """Sets the arch of this VersionDetail.
+        r"""Sets the arch of this VersionDetail.
 
         架构
 
@@ -264,7 +264,7 @@ class VersionDetail:
 
     @property
     def command(self):
-        """Gets the command of this VersionDetail.
+        r"""Gets the command of this VersionDetail.
 
         启动命令
 
@@ -275,7 +275,7 @@ class VersionDetail:
 
     @command.setter
     def command(self, command):
-        """Sets the command of this VersionDetail.
+        r"""Sets the command of this VersionDetail.
 
         启动命令
 
@@ -286,7 +286,7 @@ class VersionDetail:
 
     @property
     def args(self):
-        """Gets the args of this VersionDetail.
+        r"""Gets the args of this VersionDetail.
 
         参数
 
@@ -297,7 +297,7 @@ class VersionDetail:
 
     @args.setter
     def args(self, args):
-        """Sets the args of this VersionDetail.
+        r"""Sets the args of this VersionDetail.
 
         参数
 
@@ -308,7 +308,7 @@ class VersionDetail:
 
     @property
     def liveness_probe(self):
-        """Gets the liveness_probe of this VersionDetail.
+        r"""Gets the liveness_probe of this VersionDetail.
 
         :return: The liveness_probe of this VersionDetail.
         :rtype: :class:`huaweicloudsdkief.v1.ProbeDetail`
@@ -317,7 +317,7 @@ class VersionDetail:
 
     @liveness_probe.setter
     def liveness_probe(self, liveness_probe):
-        """Sets the liveness_probe of this VersionDetail.
+        r"""Sets the liveness_probe of this VersionDetail.
 
         :param liveness_probe: The liveness_probe of this VersionDetail.
         :type liveness_probe: :class:`huaweicloudsdkief.v1.ProbeDetail`
@@ -326,7 +326,7 @@ class VersionDetail:
 
     @property
     def readiness_probe(self):
-        """Gets the readiness_probe of this VersionDetail.
+        r"""Gets the readiness_probe of this VersionDetail.
 
         :return: The readiness_probe of this VersionDetail.
         :rtype: :class:`huaweicloudsdkief.v1.ProbeDetail`
@@ -335,7 +335,7 @@ class VersionDetail:
 
     @readiness_probe.setter
     def readiness_probe(self, readiness_probe):
-        """Sets the readiness_probe of this VersionDetail.
+        r"""Sets the readiness_probe of this VersionDetail.
 
         :param readiness_probe: The readiness_probe of this VersionDetail.
         :type readiness_probe: :class:`huaweicloudsdkief.v1.ProbeDetail`
@@ -344,7 +344,7 @@ class VersionDetail:
 
     @property
     def npu_type(self):
-        """Gets the npu_type of this VersionDetail.
+        r"""Gets the npu_type of this VersionDetail.
 
         NPU类型，支持D310、D310B，支持填写： - D310：D310类型 - D310B：D310B类型 - 不填表示为D310类型。
 
@@ -355,7 +355,7 @@ class VersionDetail:
 
     @npu_type.setter
     def npu_type(self, npu_type):
-        """Sets the npu_type of this VersionDetail.
+        r"""Sets the npu_type of this VersionDetail.
 
         NPU类型，支持D310、D310B，支持填写： - D310：D310类型 - D310B：D310B类型 - 不填表示为D310类型。
 

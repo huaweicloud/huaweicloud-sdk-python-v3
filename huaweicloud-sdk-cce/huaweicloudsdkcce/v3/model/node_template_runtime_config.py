@@ -25,7 +25,7 @@ class NodeTemplateRuntimeConfig:
     }
 
     def __init__(self, runtime=None):
-        """NodeTemplateRuntimeConfig
+        r"""NodeTemplateRuntimeConfig
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class NodeTemplateRuntimeConfig:
 
     @property
     def runtime(self):
-        """Gets the runtime of this NodeTemplateRuntimeConfig.
+        r"""Gets the runtime of this NodeTemplateRuntimeConfig.
 
         :return: The runtime of this NodeTemplateRuntimeConfig.
         :rtype: :class:`huaweicloudsdkcce.v3.NodeTemplateRuntimeConfigRuntime`
@@ -52,7 +52,7 @@ class NodeTemplateRuntimeConfig:
 
     @runtime.setter
     def runtime(self, runtime):
-        """Sets the runtime of this NodeTemplateRuntimeConfig.
+        r"""Sets the runtime of this NodeTemplateRuntimeConfig.
 
         :param runtime: The runtime of this NodeTemplateRuntimeConfig.
         :type runtime: :class:`huaweicloudsdkcce.v3.NodeTemplateRuntimeConfigRuntime`

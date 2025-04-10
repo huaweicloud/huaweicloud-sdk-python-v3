@@ -38,7 +38,7 @@ class UpdateExpireAutoScanConfigResponse(SdkResponse):
     }
 
     def __init__(self, instance_id=None, enable_auto_scan=None, first_scan_at=None, interval=None, timeout=None, scan_keys_count=None, updated_at=None):
-        """UpdateExpireAutoScanConfigResponse
+        r"""UpdateExpireAutoScanConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class UpdateExpireAutoScanConfigResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateExpireAutoScanConfigResponse.
+        r"""Gets the instance_id of this UpdateExpireAutoScanConfigResponse.
 
         实例ID
 
@@ -97,7 +97,7 @@ class UpdateExpireAutoScanConfigResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateExpireAutoScanConfigResponse.
+        r"""Sets the instance_id of this UpdateExpireAutoScanConfigResponse.
 
         实例ID
 
@@ -108,7 +108,7 @@ class UpdateExpireAutoScanConfigResponse(SdkResponse):
 
     @property
     def enable_auto_scan(self):
-        """Gets the enable_auto_scan of this UpdateExpireAutoScanConfigResponse.
+        r"""Gets the enable_auto_scan of this UpdateExpireAutoScanConfigResponse.
 
         是否开启自动扫描
 
@@ -119,7 +119,7 @@ class UpdateExpireAutoScanConfigResponse(SdkResponse):
 
     @enable_auto_scan.setter
     def enable_auto_scan(self, enable_auto_scan):
-        """Sets the enable_auto_scan of this UpdateExpireAutoScanConfigResponse.
+        r"""Sets the enable_auto_scan of this UpdateExpireAutoScanConfigResponse.
 
         是否开启自动扫描
 
@@ -130,7 +130,7 @@ class UpdateExpireAutoScanConfigResponse(SdkResponse):
 
     @property
     def first_scan_at(self):
-        """Gets the first_scan_at of this UpdateExpireAutoScanConfigResponse.
+        r"""Gets the first_scan_at of this UpdateExpireAutoScanConfigResponse.
 
         首次扫描时间，例如：2023-07-07T15:00:05.000
 
@@ -141,7 +141,7 @@ class UpdateExpireAutoScanConfigResponse(SdkResponse):
 
     @first_scan_at.setter
     def first_scan_at(self, first_scan_at):
-        """Sets the first_scan_at of this UpdateExpireAutoScanConfigResponse.
+        r"""Sets the first_scan_at of this UpdateExpireAutoScanConfigResponse.
 
         首次扫描时间，例如：2023-07-07T15:00:05.000
 
@@ -152,7 +152,7 @@ class UpdateExpireAutoScanConfigResponse(SdkResponse):
 
     @property
     def interval(self):
-        """Gets the interval of this UpdateExpireAutoScanConfigResponse.
+        r"""Gets the interval of this UpdateExpireAutoScanConfigResponse.
 
         间隔时间(秒)
 
@@ -163,7 +163,7 @@ class UpdateExpireAutoScanConfigResponse(SdkResponse):
 
     @interval.setter
     def interval(self, interval):
-        """Sets the interval of this UpdateExpireAutoScanConfigResponse.
+        r"""Sets the interval of this UpdateExpireAutoScanConfigResponse.
 
         间隔时间(秒)
 
@@ -174,7 +174,7 @@ class UpdateExpireAutoScanConfigResponse(SdkResponse):
 
     @property
     def timeout(self):
-        """Gets the timeout of this UpdateExpireAutoScanConfigResponse.
+        r"""Gets the timeout of this UpdateExpireAutoScanConfigResponse.
 
         超时时间(秒)
 
@@ -185,7 +185,7 @@ class UpdateExpireAutoScanConfigResponse(SdkResponse):
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this UpdateExpireAutoScanConfigResponse.
+        r"""Sets the timeout of this UpdateExpireAutoScanConfigResponse.
 
         超时时间(秒)
 
@@ -196,7 +196,7 @@ class UpdateExpireAutoScanConfigResponse(SdkResponse):
 
     @property
     def scan_keys_count(self):
-        """Gets the scan_keys_count of this UpdateExpireAutoScanConfigResponse.
+        r"""Gets the scan_keys_count of this UpdateExpireAutoScanConfigResponse.
 
         扫描数
 
@@ -207,7 +207,7 @@ class UpdateExpireAutoScanConfigResponse(SdkResponse):
 
     @scan_keys_count.setter
     def scan_keys_count(self, scan_keys_count):
-        """Sets the scan_keys_count of this UpdateExpireAutoScanConfigResponse.
+        r"""Sets the scan_keys_count of this UpdateExpireAutoScanConfigResponse.
 
         扫描数
 
@@ -218,7 +218,7 @@ class UpdateExpireAutoScanConfigResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this UpdateExpireAutoScanConfigResponse.
+        r"""Gets the updated_at of this UpdateExpireAutoScanConfigResponse.
 
         更新时间，例如：2023-06-15T06:20:13.283Z
 
@@ -229,7 +229,7 @@ class UpdateExpireAutoScanConfigResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this UpdateExpireAutoScanConfigResponse.
+        r"""Sets the updated_at of this UpdateExpireAutoScanConfigResponse.
 
         更新时间，例如：2023-06-15T06:20:13.283Z
 

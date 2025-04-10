@@ -60,7 +60,7 @@ class ShowNextflowJobResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, priority=None, description=None, labels=None, status=None, has_ignore_failed_tasks=None, create_time=None, finish_time=None, failed_message=None, failed_reason=None, workflow_name=None, workflow_id=None, command_line=None, params=None, nextflow_parameters=None, config_files=None, config_context=None):
-        """ShowNextflowJobResponse
+        r"""ShowNextflowJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -163,7 +163,7 @@ class ShowNextflowJobResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowNextflowJobResponse.
+        r"""Gets the id of this ShowNextflowJobResponse.
 
         作业id
 
@@ -174,7 +174,7 @@ class ShowNextflowJobResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowNextflowJobResponse.
+        r"""Sets the id of this ShowNextflowJobResponse.
 
         作业id
 
@@ -185,7 +185,7 @@ class ShowNextflowJobResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowNextflowJobResponse.
+        r"""Gets the name of this ShowNextflowJobResponse.
 
         作业的名称
 
@@ -196,7 +196,7 @@ class ShowNextflowJobResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowNextflowJobResponse.
+        r"""Sets the name of this ShowNextflowJobResponse.
 
         作业的名称
 
@@ -207,7 +207,7 @@ class ShowNextflowJobResponse(SdkResponse):
 
     @property
     def priority(self):
-        """Gets the priority of this ShowNextflowJobResponse.
+        r"""Gets the priority of this ShowNextflowJobResponse.
 
         作业的优先级,取值范围[0,9]，0最低，默认数值0
 
@@ -218,7 +218,7 @@ class ShowNextflowJobResponse(SdkResponse):
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this ShowNextflowJobResponse.
+        r"""Sets the priority of this ShowNextflowJobResponse.
 
         作业的优先级,取值范围[0,9]，0最低，默认数值0
 
@@ -229,7 +229,7 @@ class ShowNextflowJobResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowNextflowJobResponse.
+        r"""Gets the description of this ShowNextflowJobResponse.
 
         作业的描述
 
@@ -240,7 +240,7 @@ class ShowNextflowJobResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowNextflowJobResponse.
+        r"""Sets the description of this ShowNextflowJobResponse.
 
         作业的描述
 
@@ -251,7 +251,7 @@ class ShowNextflowJobResponse(SdkResponse):
 
     @property
     def labels(self):
-        """Gets the labels of this ShowNextflowJobResponse.
+        r"""Gets the labels of this ShowNextflowJobResponse.
 
         作业标签
 
@@ -262,7 +262,7 @@ class ShowNextflowJobResponse(SdkResponse):
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this ShowNextflowJobResponse.
+        r"""Sets the labels of this ShowNextflowJobResponse.
 
         作业标签
 
@@ -273,7 +273,7 @@ class ShowNextflowJobResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowNextflowJobResponse.
+        r"""Gets the status of this ShowNextflowJobResponse.
 
         作业运行状态
 
@@ -284,7 +284,7 @@ class ShowNextflowJobResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowNextflowJobResponse.
+        r"""Sets the status of this ShowNextflowJobResponse.
 
         作业运行状态
 
@@ -295,7 +295,7 @@ class ShowNextflowJobResponse(SdkResponse):
 
     @property
     def has_ignore_failed_tasks(self):
-        """Gets the has_ignore_failed_tasks of this ShowNextflowJobResponse.
+        r"""Gets the has_ignore_failed_tasks of this ShowNextflowJobResponse.
 
         是否包含已被忽略的失败tasks
 
@@ -306,7 +306,7 @@ class ShowNextflowJobResponse(SdkResponse):
 
     @has_ignore_failed_tasks.setter
     def has_ignore_failed_tasks(self, has_ignore_failed_tasks):
-        """Sets the has_ignore_failed_tasks of this ShowNextflowJobResponse.
+        r"""Sets the has_ignore_failed_tasks of this ShowNextflowJobResponse.
 
         是否包含已被忽略的失败tasks
 
@@ -317,7 +317,7 @@ class ShowNextflowJobResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowNextflowJobResponse.
+        r"""Gets the create_time of this ShowNextflowJobResponse.
 
         作业创建时间
 
@@ -328,7 +328,7 @@ class ShowNextflowJobResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowNextflowJobResponse.
+        r"""Sets the create_time of this ShowNextflowJobResponse.
 
         作业创建时间
 
@@ -339,7 +339,7 @@ class ShowNextflowJobResponse(SdkResponse):
 
     @property
     def finish_time(self):
-        """Gets the finish_time of this ShowNextflowJobResponse.
+        r"""Gets the finish_time of this ShowNextflowJobResponse.
 
         作业完成时间
 
@@ -350,7 +350,7 @@ class ShowNextflowJobResponse(SdkResponse):
 
     @finish_time.setter
     def finish_time(self, finish_time):
-        """Sets the finish_time of this ShowNextflowJobResponse.
+        r"""Sets the finish_time of this ShowNextflowJobResponse.
 
         作业完成时间
 
@@ -361,7 +361,7 @@ class ShowNextflowJobResponse(SdkResponse):
 
     @property
     def failed_message(self):
-        """Gets the failed_message of this ShowNextflowJobResponse.
+        r"""Gets the failed_message of this ShowNextflowJobResponse.
 
         作业运行失败描述信息，当作业执行失败时会返回
 
@@ -372,7 +372,7 @@ class ShowNextflowJobResponse(SdkResponse):
 
     @failed_message.setter
     def failed_message(self, failed_message):
-        """Sets the failed_message of this ShowNextflowJobResponse.
+        r"""Sets the failed_message of this ShowNextflowJobResponse.
 
         作业运行失败描述信息，当作业执行失败时会返回
 
@@ -383,7 +383,7 @@ class ShowNextflowJobResponse(SdkResponse):
 
     @property
     def failed_reason(self):
-        """Gets the failed_reason of this ShowNextflowJobResponse.
+        r"""Gets the failed_reason of this ShowNextflowJobResponse.
 
         作业运行失败原因，当作业执行失败时会返回
 
@@ -394,7 +394,7 @@ class ShowNextflowJobResponse(SdkResponse):
 
     @failed_reason.setter
     def failed_reason(self, failed_reason):
-        """Sets the failed_reason of this ShowNextflowJobResponse.
+        r"""Sets the failed_reason of this ShowNextflowJobResponse.
 
         作业运行失败原因，当作业执行失败时会返回
 
@@ -405,7 +405,7 @@ class ShowNextflowJobResponse(SdkResponse):
 
     @property
     def workflow_name(self):
-        """Gets the workflow_name of this ShowNextflowJobResponse.
+        r"""Gets the workflow_name of this ShowNextflowJobResponse.
 
         流程名称
 
@@ -416,7 +416,7 @@ class ShowNextflowJobResponse(SdkResponse):
 
     @workflow_name.setter
     def workflow_name(self, workflow_name):
-        """Sets the workflow_name of this ShowNextflowJobResponse.
+        r"""Sets the workflow_name of this ShowNextflowJobResponse.
 
         流程名称
 
@@ -427,7 +427,7 @@ class ShowNextflowJobResponse(SdkResponse):
 
     @property
     def workflow_id(self):
-        """Gets the workflow_id of this ShowNextflowJobResponse.
+        r"""Gets the workflow_id of this ShowNextflowJobResponse.
 
         流程id
 
@@ -438,7 +438,7 @@ class ShowNextflowJobResponse(SdkResponse):
 
     @workflow_id.setter
     def workflow_id(self, workflow_id):
-        """Sets the workflow_id of this ShowNextflowJobResponse.
+        r"""Sets the workflow_id of this ShowNextflowJobResponse.
 
         流程id
 
@@ -449,7 +449,7 @@ class ShowNextflowJobResponse(SdkResponse):
 
     @property
     def command_line(self):
-        """Gets the command_line of this ShowNextflowJobResponse.
+        r"""Gets the command_line of this ShowNextflowJobResponse.
 
         nextflow执行命令
 
@@ -460,7 +460,7 @@ class ShowNextflowJobResponse(SdkResponse):
 
     @command_line.setter
     def command_line(self, command_line):
-        """Sets the command_line of this ShowNextflowJobResponse.
+        r"""Sets the command_line of this ShowNextflowJobResponse.
 
         nextflow执行命令
 
@@ -471,7 +471,7 @@ class ShowNextflowJobResponse(SdkResponse):
 
     @property
     def params(self):
-        """Gets the params of this ShowNextflowJobResponse.
+        r"""Gets the params of this ShowNextflowJobResponse.
 
         作业参数列表
 
@@ -482,7 +482,7 @@ class ShowNextflowJobResponse(SdkResponse):
 
     @params.setter
     def params(self, params):
-        """Sets the params of this ShowNextflowJobResponse.
+        r"""Sets the params of this ShowNextflowJobResponse.
 
         作业参数列表
 
@@ -493,7 +493,7 @@ class ShowNextflowJobResponse(SdkResponse):
 
     @property
     def nextflow_parameters(self):
-        """Gets the nextflow_parameters of this ShowNextflowJobResponse.
+        r"""Gets the nextflow_parameters of this ShowNextflowJobResponse.
 
         nextflow流程返回的全量参数列表
 
@@ -504,7 +504,7 @@ class ShowNextflowJobResponse(SdkResponse):
 
     @nextflow_parameters.setter
     def nextflow_parameters(self, nextflow_parameters):
-        """Sets the nextflow_parameters of this ShowNextflowJobResponse.
+        r"""Sets the nextflow_parameters of this ShowNextflowJobResponse.
 
         nextflow流程返回的全量参数列表
 
@@ -515,7 +515,7 @@ class ShowNextflowJobResponse(SdkResponse):
 
     @property
     def config_files(self):
-        """Gets the config_files of this ShowNextflowJobResponse.
+        r"""Gets the config_files of this ShowNextflowJobResponse.
 
         作业标签
 
@@ -526,7 +526,7 @@ class ShowNextflowJobResponse(SdkResponse):
 
     @config_files.setter
     def config_files(self, config_files):
-        """Sets the config_files of this ShowNextflowJobResponse.
+        r"""Sets the config_files of this ShowNextflowJobResponse.
 
         作业标签
 
@@ -537,7 +537,7 @@ class ShowNextflowJobResponse(SdkResponse):
 
     @property
     def config_context(self):
-        """Gets the config_context of this ShowNextflowJobResponse.
+        r"""Gets the config_context of this ShowNextflowJobResponse.
 
         nextflow config文件内容
 
@@ -548,7 +548,7 @@ class ShowNextflowJobResponse(SdkResponse):
 
     @config_context.setter
     def config_context(self, config_context):
-        """Sets the config_context of this ShowNextflowJobResponse.
+        r"""Sets the config_context of this ShowNextflowJobResponse.
 
         nextflow config文件内容
 

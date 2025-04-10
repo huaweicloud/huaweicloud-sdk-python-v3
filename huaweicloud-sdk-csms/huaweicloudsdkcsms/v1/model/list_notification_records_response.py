@@ -28,7 +28,7 @@ class ListNotificationRecordsResponse(SdkResponse):
     }
 
     def __init__(self, records=None, page_info=None):
-        """ListNotificationRecordsResponse
+        r"""ListNotificationRecordsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListNotificationRecordsResponse(SdkResponse):
 
     @property
     def records(self):
-        """Gets the records of this ListNotificationRecordsResponse.
+        r"""Gets the records of this ListNotificationRecordsResponse.
 
         Record对象。
 
@@ -62,7 +62,7 @@ class ListNotificationRecordsResponse(SdkResponse):
 
     @records.setter
     def records(self, records):
-        """Sets the records of this ListNotificationRecordsResponse.
+        r"""Sets the records of this ListNotificationRecordsResponse.
 
         Record对象。
 
@@ -73,7 +73,7 @@ class ListNotificationRecordsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListNotificationRecordsResponse.
+        r"""Gets the page_info of this ListNotificationRecordsResponse.
 
         :return: The page_info of this ListNotificationRecordsResponse.
         :rtype: :class:`huaweicloudsdkcsms.v1.PageInfo`
@@ -82,7 +82,7 @@ class ListNotificationRecordsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListNotificationRecordsResponse.
+        r"""Sets the page_info of this ListNotificationRecordsResponse.
 
         :param page_info: The page_info of this ListNotificationRecordsResponse.
         :type page_info: :class:`huaweicloudsdkcsms.v1.PageInfo`

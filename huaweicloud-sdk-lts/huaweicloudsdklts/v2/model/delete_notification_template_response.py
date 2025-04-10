@@ -24,7 +24,7 @@ class DeleteNotificationTemplateResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteNotificationTemplateResponse
+        r"""DeleteNotificationTemplateResponse
 
         The model defined in huaweicloud sdk
 

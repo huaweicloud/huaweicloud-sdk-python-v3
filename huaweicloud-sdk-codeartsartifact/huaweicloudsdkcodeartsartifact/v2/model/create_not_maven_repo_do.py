@@ -37,7 +37,7 @@ class CreateNotMavenRepoDO:
     }
 
     def __init__(self, format=None, type=None, repository_name=None, description=None, includes_pattern=None, project_id=None, share_right=None):
-        """CreateNotMavenRepoDO
+        r"""CreateNotMavenRepoDO
 
         The model defined in huaweicloud sdk
 
@@ -81,7 +81,7 @@ class CreateNotMavenRepoDO:
 
     @property
     def format(self):
-        """Gets the format of this CreateNotMavenRepoDO.
+        r"""Gets the format of this CreateNotMavenRepoDO.
 
         仓库格式
 
@@ -92,7 +92,7 @@ class CreateNotMavenRepoDO:
 
     @format.setter
     def format(self, format):
-        """Sets the format of this CreateNotMavenRepoDO.
+        r"""Sets the format of this CreateNotMavenRepoDO.
 
         仓库格式
 
@@ -103,7 +103,7 @@ class CreateNotMavenRepoDO:
 
     @property
     def type(self):
-        """Gets the type of this CreateNotMavenRepoDO.
+        r"""Gets the type of this CreateNotMavenRepoDO.
 
         仓库类型
 
@@ -114,7 +114,7 @@ class CreateNotMavenRepoDO:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateNotMavenRepoDO.
+        r"""Sets the type of this CreateNotMavenRepoDO.
 
         仓库类型
 
@@ -125,7 +125,7 @@ class CreateNotMavenRepoDO:
 
     @property
     def repository_name(self):
-        """Gets the repository_name of this CreateNotMavenRepoDO.
+        r"""Gets the repository_name of this CreateNotMavenRepoDO.
 
         仓库名称
 
@@ -136,7 +136,7 @@ class CreateNotMavenRepoDO:
 
     @repository_name.setter
     def repository_name(self, repository_name):
-        """Sets the repository_name of this CreateNotMavenRepoDO.
+        r"""Sets the repository_name of this CreateNotMavenRepoDO.
 
         仓库名称
 
@@ -147,7 +147,7 @@ class CreateNotMavenRepoDO:
 
     @property
     def description(self):
-        """Gets the description of this CreateNotMavenRepoDO.
+        r"""Gets the description of this CreateNotMavenRepoDO.
 
         仓库描述
 
@@ -158,7 +158,7 @@ class CreateNotMavenRepoDO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateNotMavenRepoDO.
+        r"""Sets the description of this CreateNotMavenRepoDO.
 
         仓库描述
 
@@ -169,7 +169,7 @@ class CreateNotMavenRepoDO:
 
     @property
     def includes_pattern(self):
-        """Gets the includes_pattern of this CreateNotMavenRepoDO.
+        r"""Gets the includes_pattern of this CreateNotMavenRepoDO.
 
         路径白名单
 
@@ -180,7 +180,7 @@ class CreateNotMavenRepoDO:
 
     @includes_pattern.setter
     def includes_pattern(self, includes_pattern):
-        """Sets the includes_pattern of this CreateNotMavenRepoDO.
+        r"""Sets the includes_pattern of this CreateNotMavenRepoDO.
 
         路径白名单
 
@@ -191,7 +191,7 @@ class CreateNotMavenRepoDO:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateNotMavenRepoDO.
+        r"""Gets the project_id of this CreateNotMavenRepoDO.
 
         项目id
 
@@ -202,7 +202,7 @@ class CreateNotMavenRepoDO:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateNotMavenRepoDO.
+        r"""Sets the project_id of this CreateNotMavenRepoDO.
 
         项目id
 
@@ -213,7 +213,7 @@ class CreateNotMavenRepoDO:
 
     @property
     def share_right(self):
-        """Gets the share_right of this CreateNotMavenRepoDO.
+        r"""Gets the share_right of this CreateNotMavenRepoDO.
 
         共享策略
 
@@ -224,7 +224,7 @@ class CreateNotMavenRepoDO:
 
     @share_right.setter
     def share_right(self, share_right):
-        """Sets the share_right of this CreateNotMavenRepoDO.
+        r"""Sets the share_right of this CreateNotMavenRepoDO.
 
         共享策略
 

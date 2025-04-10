@@ -27,7 +27,7 @@ class ChannelConfigBody:
     }
 
     def __init__(self, smn=None, obs=None):
-        """ChannelConfigBody
+        r"""ChannelConfigBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ChannelConfigBody:
 
     @property
     def smn(self):
-        """Gets the smn of this ChannelConfigBody.
+        r"""Gets the smn of this ChannelConfigBody.
 
         :return: The smn of this ChannelConfigBody.
         :rtype: :class:`huaweicloudsdkrms.v1.TrackerSMNChannelConfigBody`
@@ -59,7 +59,7 @@ class ChannelConfigBody:
 
     @smn.setter
     def smn(self, smn):
-        """Sets the smn of this ChannelConfigBody.
+        r"""Sets the smn of this ChannelConfigBody.
 
         :param smn: The smn of this ChannelConfigBody.
         :type smn: :class:`huaweicloudsdkrms.v1.TrackerSMNChannelConfigBody`
@@ -68,7 +68,7 @@ class ChannelConfigBody:
 
     @property
     def obs(self):
-        """Gets the obs of this ChannelConfigBody.
+        r"""Gets the obs of this ChannelConfigBody.
 
         :return: The obs of this ChannelConfigBody.
         :rtype: :class:`huaweicloudsdkrms.v1.TrackerOBSChannelConfigBody`
@@ -77,7 +77,7 @@ class ChannelConfigBody:
 
     @obs.setter
     def obs(self, obs):
-        """Sets the obs of this ChannelConfigBody.
+        r"""Sets the obs of this ChannelConfigBody.
 
         :param obs: The obs of this ChannelConfigBody.
         :type obs: :class:`huaweicloudsdkrms.v1.TrackerOBSChannelConfigBody`

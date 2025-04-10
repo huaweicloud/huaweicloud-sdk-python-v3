@@ -29,7 +29,7 @@ class SearchTaskData:
     }
 
     def __init__(self, smiles=None, databases=None, top_n=None):
-        """SearchTaskData
+        r"""SearchTaskData
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class SearchTaskData:
 
     @property
     def smiles(self):
-        """Gets the smiles of this SearchTaskData.
+        r"""Gets the smiles of this SearchTaskData.
 
         分子SMILES表达式
 
@@ -66,7 +66,7 @@ class SearchTaskData:
 
     @smiles.setter
     def smiles(self, smiles):
-        """Sets the smiles of this SearchTaskData.
+        r"""Sets the smiles of this SearchTaskData.
 
         分子SMILES表达式
 
@@ -77,7 +77,7 @@ class SearchTaskData:
 
     @property
     def databases(self):
-        """Gets the databases of this SearchTaskData.
+        r"""Gets the databases of this SearchTaskData.
 
         搜索使用到的数据库集合
 
@@ -88,7 +88,7 @@ class SearchTaskData:
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this SearchTaskData.
+        r"""Sets the databases of this SearchTaskData.
 
         搜索使用到的数据库集合
 
@@ -99,7 +99,7 @@ class SearchTaskData:
 
     @property
     def top_n(self):
-        """Gets the top_n of this SearchTaskData.
+        r"""Gets the top_n of this SearchTaskData.
 
         期望最大返回条目数（排序后取Top）
 
@@ -110,7 +110,7 @@ class SearchTaskData:
 
     @top_n.setter
     def top_n(self, top_n):
-        """Sets the top_n of this SearchTaskData.
+        r"""Sets the top_n of this SearchTaskData.
 
         期望最大返回条目数（排序后取Top）
 

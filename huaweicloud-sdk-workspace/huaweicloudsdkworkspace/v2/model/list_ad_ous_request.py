@@ -27,7 +27,7 @@ class ListAdOusRequest:
     }
 
     def __init__(self, limit=None, offset=None):
-        """ListAdOusRequest
+        r"""ListAdOusRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListAdOusRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAdOusRequest.
+        r"""Gets the limit of this ListAdOusRequest.
 
         用于分页查询，返回桌面数量限制。如果不指定，则返回所有符合条件的桌面
 
@@ -61,7 +61,7 @@ class ListAdOusRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAdOusRequest.
+        r"""Sets the limit of this ListAdOusRequest.
 
         用于分页查询，返回桌面数量限制。如果不指定，则返回所有符合条件的桌面
 
@@ -72,7 +72,7 @@ class ListAdOusRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAdOusRequest.
+        r"""Gets the offset of this ListAdOusRequest.
 
         用于分页查询，查询的起始记录序号，从0开始
 
@@ -83,7 +83,7 @@ class ListAdOusRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAdOusRequest.
+        r"""Sets the offset of this ListAdOusRequest.
 
         用于分页查询，查询的起始记录序号，从0开始
 

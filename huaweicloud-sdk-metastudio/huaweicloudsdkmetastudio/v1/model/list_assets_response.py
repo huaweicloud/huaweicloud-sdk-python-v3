@@ -30,7 +30,7 @@ class ListAssetsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, assets=None, x_request_id=None):
-        """ListAssetsResponse
+        r"""ListAssetsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListAssetsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListAssetsResponse.
+        r"""Gets the count of this ListAssetsResponse.
 
         资产总数。
 
@@ -69,7 +69,7 @@ class ListAssetsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListAssetsResponse.
+        r"""Sets the count of this ListAssetsResponse.
 
         资产总数。
 
@@ -80,7 +80,7 @@ class ListAssetsResponse(SdkResponse):
 
     @property
     def assets(self):
-        """Gets the assets of this ListAssetsResponse.
+        r"""Gets the assets of this ListAssetsResponse.
 
         资产信息列表。
 
@@ -91,7 +91,7 @@ class ListAssetsResponse(SdkResponse):
 
     @assets.setter
     def assets(self, assets):
-        """Sets the assets of this ListAssetsResponse.
+        r"""Sets the assets of this ListAssetsResponse.
 
         资产信息列表。
 
@@ -102,7 +102,7 @@ class ListAssetsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListAssetsResponse.
+        r"""Gets the x_request_id of this ListAssetsResponse.
 
         :return: The x_request_id of this ListAssetsResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListAssetsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListAssetsResponse.
+        r"""Sets the x_request_id of this ListAssetsResponse.
 
         :param x_request_id: The x_request_id of this ListAssetsResponse.
         :type x_request_id: str

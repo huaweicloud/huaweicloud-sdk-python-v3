@@ -31,7 +31,7 @@ class DeleteTaskRequest:
     }
 
     def __init__(self, x_apig_app_code=None, service_group=None, service_type=None, task_id=None):
-        """DeleteTaskRequest
+        r"""DeleteTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class DeleteTaskRequest:
 
     @property
     def x_apig_app_code(self):
-        """Gets the x_apig_app_code of this DeleteTaskRequest.
+        r"""Gets the x_apig_app_code of this DeleteTaskRequest.
 
         用户凭证
 
@@ -71,7 +71,7 @@ class DeleteTaskRequest:
 
     @x_apig_app_code.setter
     def x_apig_app_code(self, x_apig_app_code):
-        """Sets the x_apig_app_code of this DeleteTaskRequest.
+        r"""Sets the x_apig_app_code of this DeleteTaskRequest.
 
         用户凭证
 
@@ -82,7 +82,7 @@ class DeleteTaskRequest:
 
     @property
     def service_group(self):
-        """Gets the service_group of this DeleteTaskRequest.
+        r"""Gets the service_group of this DeleteTaskRequest.
 
         服务类别，针对不同服务类场景，为用户提前填充对应值，用户侧不需单独赋值；当前仅支持 二维切割 2dcut ，便于后续扩展
 
@@ -93,7 +93,7 @@ class DeleteTaskRequest:
 
     @service_group.setter
     def service_group(self, service_group):
-        """Sets the service_group of this DeleteTaskRequest.
+        r"""Sets the service_group of this DeleteTaskRequest.
 
         服务类别，针对不同服务类场景，为用户提前填充对应值，用户侧不需单独赋值；当前仅支持 二维切割 2dcut ，便于后续扩展
 
@@ -104,7 +104,7 @@ class DeleteTaskRequest:
 
     @property
     def service_type(self):
-        """Gets the service_type of this DeleteTaskRequest.
+        r"""Gets the service_type of this DeleteTaskRequest.
 
         子服务类型，针对不同服务，为用户提前填充对应值，用户侧不需单独赋值；服装切割固定为 irregular-textile，雕刻机切割固定为 engraving-machine-cutting， 板材切割固定为 regular-plate
 
@@ -115,7 +115,7 @@ class DeleteTaskRequest:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this DeleteTaskRequest.
+        r"""Sets the service_type of this DeleteTaskRequest.
 
         子服务类型，针对不同服务，为用户提前填充对应值，用户侧不需单独赋值；服装切割固定为 irregular-textile，雕刻机切割固定为 engraving-machine-cutting， 板材切割固定为 regular-plate
 
@@ -126,7 +126,7 @@ class DeleteTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this DeleteTaskRequest.
+        r"""Gets the task_id of this DeleteTaskRequest.
 
         任务id
 
@@ -137,7 +137,7 @@ class DeleteTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this DeleteTaskRequest.
+        r"""Sets the task_id of this DeleteTaskRequest.
 
         任务id
 

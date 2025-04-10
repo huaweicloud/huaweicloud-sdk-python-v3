@@ -27,7 +27,7 @@ class ShowCloudPhoneDetailResponseBodyMetadata:
     }
 
     def __init__(self, order_id=None, product_id=None):
-        """ShowCloudPhoneDetailResponseBodyMetadata
+        r"""ShowCloudPhoneDetailResponseBodyMetadata
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ShowCloudPhoneDetailResponseBodyMetadata:
 
     @property
     def order_id(self):
-        """Gets the order_id of this ShowCloudPhoneDetailResponseBodyMetadata.
+        r"""Gets the order_id of this ShowCloudPhoneDetailResponseBodyMetadata.
 
         订单ID，不超过64个字节。
 
@@ -61,7 +61,7 @@ class ShowCloudPhoneDetailResponseBodyMetadata:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ShowCloudPhoneDetailResponseBodyMetadata.
+        r"""Sets the order_id of this ShowCloudPhoneDetailResponseBodyMetadata.
 
         订单ID，不超过64个字节。
 
@@ -72,7 +72,7 @@ class ShowCloudPhoneDetailResponseBodyMetadata:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ShowCloudPhoneDetailResponseBodyMetadata.
+        r"""Gets the product_id of this ShowCloudPhoneDetailResponseBodyMetadata.
 
         产品ID，不超过64个字节。
 
@@ -83,7 +83,7 @@ class ShowCloudPhoneDetailResponseBodyMetadata:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ShowCloudPhoneDetailResponseBodyMetadata.
+        r"""Sets the product_id of this ShowCloudPhoneDetailResponseBodyMetadata.
 
         产品ID，不超过64个字节。
 

@@ -36,7 +36,7 @@ class ListOnDemandResourceRatingsResponse(SdkResponse):
     }
 
     def __init__(self, amount=None, discount_amount=None, official_website_amount=None, measure_id=None, currency=None, product_rating_results=None):
-        """ListOnDemandResourceRatingsResponse
+        r"""ListOnDemandResourceRatingsResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ListOnDemandResourceRatingsResponse(SdkResponse):
 
     @property
     def amount(self):
-        """Gets the amount of this ListOnDemandResourceRatingsResponse.
+        r"""Gets the amount of this ListOnDemandResourceRatingsResponse.
 
         折扣的金额。
 
@@ -90,7 +90,7 @@ class ListOnDemandResourceRatingsResponse(SdkResponse):
 
     @amount.setter
     def amount(self, amount):
-        """Sets the amount of this ListOnDemandResourceRatingsResponse.
+        r"""Sets the amount of this ListOnDemandResourceRatingsResponse.
 
         折扣的金额。
 
@@ -101,7 +101,7 @@ class ListOnDemandResourceRatingsResponse(SdkResponse):
 
     @property
     def discount_amount(self):
-        """Gets the discount_amount of this ListOnDemandResourceRatingsResponse.
+        r"""Gets the discount_amount of this ListOnDemandResourceRatingsResponse.
 
         优惠额（官网价和总价的差）。
 
@@ -112,7 +112,7 @@ class ListOnDemandResourceRatingsResponse(SdkResponse):
 
     @discount_amount.setter
     def discount_amount(self, discount_amount):
-        """Sets the discount_amount of this ListOnDemandResourceRatingsResponse.
+        r"""Sets the discount_amount of this ListOnDemandResourceRatingsResponse.
 
         优惠额（官网价和总价的差）。
 
@@ -123,7 +123,7 @@ class ListOnDemandResourceRatingsResponse(SdkResponse):
 
     @property
     def official_website_amount(self):
-        """Gets the official_website_amount of this ListOnDemandResourceRatingsResponse.
+        r"""Gets the official_website_amount of this ListOnDemandResourceRatingsResponse.
 
         按需产品的官网价。
 
@@ -134,7 +134,7 @@ class ListOnDemandResourceRatingsResponse(SdkResponse):
 
     @official_website_amount.setter
     def official_website_amount(self, official_website_amount):
-        """Sets the official_website_amount of this ListOnDemandResourceRatingsResponse.
+        r"""Sets the official_website_amount of this ListOnDemandResourceRatingsResponse.
 
         按需产品的官网价。
 
@@ -145,7 +145,7 @@ class ListOnDemandResourceRatingsResponse(SdkResponse):
 
     @property
     def measure_id(self):
-        """Gets the measure_id of this ListOnDemandResourceRatingsResponse.
+        r"""Gets the measure_id of this ListOnDemandResourceRatingsResponse.
 
         度量单位标识。 1：元
 
@@ -156,7 +156,7 @@ class ListOnDemandResourceRatingsResponse(SdkResponse):
 
     @measure_id.setter
     def measure_id(self, measure_id):
-        """Sets the measure_id of this ListOnDemandResourceRatingsResponse.
+        r"""Sets the measure_id of this ListOnDemandResourceRatingsResponse.
 
         度量单位标识。 1：元
 
@@ -167,7 +167,7 @@ class ListOnDemandResourceRatingsResponse(SdkResponse):
 
     @property
     def currency(self):
-        """Gets the currency of this ListOnDemandResourceRatingsResponse.
+        r"""Gets the currency of this ListOnDemandResourceRatingsResponse.
 
         币种。 USD：美元。 值为空代表美元。
 
@@ -178,7 +178,7 @@ class ListOnDemandResourceRatingsResponse(SdkResponse):
 
     @currency.setter
     def currency(self, currency):
-        """Sets the currency of this ListOnDemandResourceRatingsResponse.
+        r"""Sets the currency of this ListOnDemandResourceRatingsResponse.
 
         币种。 USD：美元。 值为空代表美元。
 
@@ -189,7 +189,7 @@ class ListOnDemandResourceRatingsResponse(SdkResponse):
 
     @property
     def product_rating_results(self):
-        """Gets the product_rating_results of this ListOnDemandResourceRatingsResponse.
+        r"""Gets the product_rating_results of this ListOnDemandResourceRatingsResponse.
 
         产品询价结果，具体参见表2。
 
@@ -200,7 +200,7 @@ class ListOnDemandResourceRatingsResponse(SdkResponse):
 
     @product_rating_results.setter
     def product_rating_results(self, product_rating_results):
-        """Sets the product_rating_results of this ListOnDemandResourceRatingsResponse.
+        r"""Sets the product_rating_results of this ListOnDemandResourceRatingsResponse.
 
         产品询价结果，具体参见表2。
 

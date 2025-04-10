@@ -28,7 +28,7 @@ class ShowIntelligentDiagnosisInstanceInfosPerMetricResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, instance_infos=None):
-        """ShowIntelligentDiagnosisInstanceInfosPerMetricResponse
+        r"""ShowIntelligentDiagnosisInstanceInfosPerMetricResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowIntelligentDiagnosisInstanceInfosPerMetricResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ShowIntelligentDiagnosisInstanceInfosPerMetricResponse.
+        r"""Gets the total_count of this ShowIntelligentDiagnosisInstanceInfosPerMetricResponse.
 
         当前指标的异常实例总数。
 
@@ -62,7 +62,7 @@ class ShowIntelligentDiagnosisInstanceInfosPerMetricResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ShowIntelligentDiagnosisInstanceInfosPerMetricResponse.
+        r"""Sets the total_count of this ShowIntelligentDiagnosisInstanceInfosPerMetricResponse.
 
         当前指标的异常实例总数。
 
@@ -73,7 +73,7 @@ class ShowIntelligentDiagnosisInstanceInfosPerMetricResponse(SdkResponse):
 
     @property
     def instance_infos(self):
-        """Gets the instance_infos of this ShowIntelligentDiagnosisInstanceInfosPerMetricResponse.
+        r"""Gets the instance_infos of this ShowIntelligentDiagnosisInstanceInfosPerMetricResponse.
 
         异常实例信息。
 
@@ -84,7 +84,7 @@ class ShowIntelligentDiagnosisInstanceInfosPerMetricResponse(SdkResponse):
 
     @instance_infos.setter
     def instance_infos(self, instance_infos):
-        """Sets the instance_infos of this ShowIntelligentDiagnosisInstanceInfosPerMetricResponse.
+        r"""Sets the instance_infos of this ShowIntelligentDiagnosisInstanceInfosPerMetricResponse.
 
         异常实例信息。
 

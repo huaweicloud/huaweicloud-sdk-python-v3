@@ -28,7 +28,7 @@ class ListCatalogListResponse(SdkResponse):
     }
 
     def __init__(self, total=None, catalogs=None):
-        """ListCatalogListResponse
+        r"""ListCatalogListResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListCatalogListResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListCatalogListResponse.
+        r"""Gets the total of this ListCatalogListResponse.
 
         符合条件的数据总数
 
@@ -62,7 +62,7 @@ class ListCatalogListResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListCatalogListResponse.
+        r"""Sets the total of this ListCatalogListResponse.
 
         符合条件的数据总数
 
@@ -73,7 +73,7 @@ class ListCatalogListResponse(SdkResponse):
 
     @property
     def catalogs(self):
-        """Gets the catalogs of this ListCatalogListResponse.
+        r"""Gets the catalogs of this ListCatalogListResponse.
 
         本次返回的APP列表
 
@@ -84,7 +84,7 @@ class ListCatalogListResponse(SdkResponse):
 
     @catalogs.setter
     def catalogs(self, catalogs):
-        """Sets the catalogs of this ListCatalogListResponse.
+        r"""Sets the catalogs of this ListCatalogListResponse.
 
         本次返回的APP列表
 

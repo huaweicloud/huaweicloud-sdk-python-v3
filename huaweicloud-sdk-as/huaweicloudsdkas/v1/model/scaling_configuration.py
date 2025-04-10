@@ -35,7 +35,7 @@ class ScalingConfiguration:
     }
 
     def __init__(self, scaling_configuration_id=None, tenant=None, scaling_configuration_name=None, instance_config=None, create_time=None, scaling_group_id=None):
-        """ScalingConfiguration
+        r"""ScalingConfiguration
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ScalingConfiguration:
 
     @property
     def scaling_configuration_id(self):
-        """Gets the scaling_configuration_id of this ScalingConfiguration.
+        r"""Gets the scaling_configuration_id of this ScalingConfiguration.
 
         伸缩配置ID，全局唯一。
 
@@ -89,7 +89,7 @@ class ScalingConfiguration:
 
     @scaling_configuration_id.setter
     def scaling_configuration_id(self, scaling_configuration_id):
-        """Sets the scaling_configuration_id of this ScalingConfiguration.
+        r"""Sets the scaling_configuration_id of this ScalingConfiguration.
 
         伸缩配置ID，全局唯一。
 
@@ -100,7 +100,7 @@ class ScalingConfiguration:
 
     @property
     def tenant(self):
-        """Gets the tenant of this ScalingConfiguration.
+        r"""Gets the tenant of this ScalingConfiguration.
 
         租户ID。
 
@@ -111,7 +111,7 @@ class ScalingConfiguration:
 
     @tenant.setter
     def tenant(self, tenant):
-        """Sets the tenant of this ScalingConfiguration.
+        r"""Sets the tenant of this ScalingConfiguration.
 
         租户ID。
 
@@ -122,7 +122,7 @@ class ScalingConfiguration:
 
     @property
     def scaling_configuration_name(self):
-        """Gets the scaling_configuration_name of this ScalingConfiguration.
+        r"""Gets the scaling_configuration_name of this ScalingConfiguration.
 
         伸缩配置名称。
 
@@ -133,7 +133,7 @@ class ScalingConfiguration:
 
     @scaling_configuration_name.setter
     def scaling_configuration_name(self, scaling_configuration_name):
-        """Sets the scaling_configuration_name of this ScalingConfiguration.
+        r"""Sets the scaling_configuration_name of this ScalingConfiguration.
 
         伸缩配置名称。
 
@@ -144,7 +144,7 @@ class ScalingConfiguration:
 
     @property
     def instance_config(self):
-        """Gets the instance_config of this ScalingConfiguration.
+        r"""Gets the instance_config of this ScalingConfiguration.
 
         :return: The instance_config of this ScalingConfiguration.
         :rtype: :class:`huaweicloudsdkas.v1.InstanceConfigResult`
@@ -153,7 +153,7 @@ class ScalingConfiguration:
 
     @instance_config.setter
     def instance_config(self, instance_config):
-        """Sets the instance_config of this ScalingConfiguration.
+        r"""Sets the instance_config of this ScalingConfiguration.
 
         :param instance_config: The instance_config of this ScalingConfiguration.
         :type instance_config: :class:`huaweicloudsdkas.v1.InstanceConfigResult`
@@ -162,7 +162,7 @@ class ScalingConfiguration:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ScalingConfiguration.
+        r"""Gets the create_time of this ScalingConfiguration.
 
         创建伸缩配置的时间，遵循UTC时间。
 
@@ -173,7 +173,7 @@ class ScalingConfiguration:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ScalingConfiguration.
+        r"""Sets the create_time of this ScalingConfiguration.
 
         创建伸缩配置的时间，遵循UTC时间。
 
@@ -184,7 +184,7 @@ class ScalingConfiguration:
 
     @property
     def scaling_group_id(self):
-        """Gets the scaling_group_id of this ScalingConfiguration.
+        r"""Gets the scaling_group_id of this ScalingConfiguration.
 
         绑定该伸缩配置的伸缩组ID
 
@@ -195,7 +195,7 @@ class ScalingConfiguration:
 
     @scaling_group_id.setter
     def scaling_group_id(self, scaling_group_id):
-        """Sets the scaling_group_id of this ScalingConfiguration.
+        r"""Sets the scaling_group_id of this ScalingConfiguration.
 
         绑定该伸缩配置的伸缩组ID
 

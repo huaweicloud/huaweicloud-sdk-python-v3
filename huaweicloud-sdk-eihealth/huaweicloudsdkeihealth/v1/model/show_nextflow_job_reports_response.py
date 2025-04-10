@@ -26,7 +26,7 @@ class ShowNextflowJobReportsResponse(SdkResponse):
     }
 
     def __init__(self, report_files=None):
-        """ShowNextflowJobReportsResponse
+        r"""ShowNextflowJobReportsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowNextflowJobReportsResponse(SdkResponse):
 
     @property
     def report_files(self):
-        """Gets the report_files of this ShowNextflowJobReportsResponse.
+        r"""Gets the report_files of this ShowNextflowJobReportsResponse.
 
         作业报告文件列表
 
@@ -55,7 +55,7 @@ class ShowNextflowJobReportsResponse(SdkResponse):
 
     @report_files.setter
     def report_files(self, report_files):
-        """Sets the report_files of this ShowNextflowJobReportsResponse.
+        r"""Sets the report_files of this ShowNextflowJobReportsResponse.
 
         作业报告文件列表
 

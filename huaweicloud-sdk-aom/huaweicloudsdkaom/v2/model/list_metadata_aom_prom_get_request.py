@@ -23,7 +23,7 @@ class ListMetadataAomPromGetRequest:
     }
 
     def __init__(self):
-        """ListMetadataAomPromGetRequest
+        r"""ListMetadataAomPromGetRequest
 
         The model defined in huaweicloud sdk
 

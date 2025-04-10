@@ -27,7 +27,7 @@ class InstancesWeight:
     }
 
     def __init__(self, instance_id=None, weight=None):
-        """InstancesWeight
+        r"""InstancesWeight
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class InstancesWeight:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this InstancesWeight.
+        r"""Gets the instance_id of this InstancesWeight.
 
         数据库实例ID。
 
@@ -59,7 +59,7 @@ class InstancesWeight:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this InstancesWeight.
+        r"""Sets the instance_id of this InstancesWeight.
 
         数据库实例ID。
 
@@ -70,7 +70,7 @@ class InstancesWeight:
 
     @property
     def weight(self):
-        """Gets the weight of this InstancesWeight.
+        r"""Gets the weight of this InstancesWeight.
 
         数据库代理读权重。
 
@@ -81,7 +81,7 @@ class InstancesWeight:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this InstancesWeight.
+        r"""Sets the weight of this InstancesWeight.
 
         数据库代理读权重。
 

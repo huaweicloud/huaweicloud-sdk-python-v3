@@ -27,7 +27,7 @@ class CreateFirewallOption:
     }
 
     def __init__(self, name=None, description=None):
-        """CreateFirewallOption
+        r"""CreateFirewallOption
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateFirewallOption:
 
     @property
     def name(self):
-        """Gets the name of this CreateFirewallOption.
+        r"""Gets the name of this CreateFirewallOption.
 
         中文字符、字母、数字、中划线和下划线组成，长度为1~64个字符
 
@@ -60,7 +60,7 @@ class CreateFirewallOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateFirewallOption.
+        r"""Sets the name of this CreateFirewallOption.
 
         中文字符、字母、数字、中划线和下划线组成，长度为1~64个字符
 
@@ -71,7 +71,7 @@ class CreateFirewallOption:
 
     @property
     def description(self):
-        """Gets the description of this CreateFirewallOption.
+        r"""Gets the description of this CreateFirewallOption.
 
         网络ACL描述。  取值范围：0-64
 
@@ -82,7 +82,7 @@ class CreateFirewallOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateFirewallOption.
+        r"""Sets the description of this CreateFirewallOption.
 
         网络ACL描述。  取值范围：0-64
 

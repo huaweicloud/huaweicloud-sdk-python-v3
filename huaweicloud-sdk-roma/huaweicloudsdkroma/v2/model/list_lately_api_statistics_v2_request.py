@@ -29,7 +29,7 @@ class ListLatelyApiStatisticsV2Request:
     }
 
     def __init__(self, instance_id=None, api_id=None, duration=None):
-        """ListLatelyApiStatisticsV2Request
+        r"""ListLatelyApiStatisticsV2Request
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ListLatelyApiStatisticsV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListLatelyApiStatisticsV2Request.
+        r"""Gets the instance_id of this ListLatelyApiStatisticsV2Request.
 
         实例ID
 
@@ -65,7 +65,7 @@ class ListLatelyApiStatisticsV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListLatelyApiStatisticsV2Request.
+        r"""Sets the instance_id of this ListLatelyApiStatisticsV2Request.
 
         实例ID
 
@@ -76,7 +76,7 @@ class ListLatelyApiStatisticsV2Request:
 
     @property
     def api_id(self):
-        """Gets the api_id of this ListLatelyApiStatisticsV2Request.
+        r"""Gets the api_id of this ListLatelyApiStatisticsV2Request.
 
         API的编号
 
@@ -87,7 +87,7 @@ class ListLatelyApiStatisticsV2Request:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this ListLatelyApiStatisticsV2Request.
+        r"""Sets the api_id of this ListLatelyApiStatisticsV2Request.
 
         API的编号
 
@@ -98,7 +98,7 @@ class ListLatelyApiStatisticsV2Request:
 
     @property
     def duration(self):
-        """Gets the duration of this ListLatelyApiStatisticsV2Request.
+        r"""Gets the duration of this ListLatelyApiStatisticsV2Request.
 
         最近统计时长，单位必须为h和m，比如1h和1m，分别代表最近1小时和最近1分钟
 
@@ -109,7 +109,7 @@ class ListLatelyApiStatisticsV2Request:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this ListLatelyApiStatisticsV2Request.
+        r"""Sets the duration of this ListLatelyApiStatisticsV2Request.
 
         最近统计时长，单位必须为h和m，比如1h和1m，分别代表最近1小时和最近1分钟
 

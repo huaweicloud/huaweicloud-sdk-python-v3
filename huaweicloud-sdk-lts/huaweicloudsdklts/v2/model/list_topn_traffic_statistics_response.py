@@ -26,7 +26,7 @@ class ListTopnTrafficStatisticsResponse(SdkResponse):
     }
 
     def __init__(self, results=None):
-        """ListTopnTrafficStatisticsResponse
+        r"""ListTopnTrafficStatisticsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListTopnTrafficStatisticsResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this ListTopnTrafficStatisticsResponse.
+        r"""Gets the results of this ListTopnTrafficStatisticsResponse.
 
         响应结果
 
@@ -55,7 +55,7 @@ class ListTopnTrafficStatisticsResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this ListTopnTrafficStatisticsResponse.
+        r"""Sets the results of this ListTopnTrafficStatisticsResponse.
 
         响应结果
 

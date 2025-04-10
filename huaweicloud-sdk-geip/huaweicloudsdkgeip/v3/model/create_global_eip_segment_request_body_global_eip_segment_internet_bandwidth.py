@@ -37,7 +37,7 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth:
     }
 
     def __init__(self, id=None, ingress_size=None, charge_mode=None, size=None, name=None, tags=None, type=None):
-        """CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth
+        r"""CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth:
 
     @property
     def id(self):
-        """Gets the id of this CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth.
+        r"""Gets the id of this CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth.
 
         全域公网带宽的ID
 
@@ -96,7 +96,7 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth.
+        r"""Sets the id of this CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth.
 
         全域公网带宽的ID
 
@@ -107,7 +107,7 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth:
 
     @property
     def ingress_size(self):
-        """Gets the ingress_size of this CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth.
+        r"""Gets the ingress_size of this CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth.
 
         全域公网带宽大小（入云方向）
 
@@ -118,7 +118,7 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth:
 
     @ingress_size.setter
     def ingress_size(self, ingress_size):
-        """Sets the ingress_size of this CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth.
+        r"""Sets the ingress_size of this CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth.
 
         全域公网带宽大小（入云方向）
 
@@ -129,7 +129,7 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth.
+        r"""Gets the charge_mode of this CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth.
 
         计费模式
 
@@ -140,7 +140,7 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth.
+        r"""Sets the charge_mode of this CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth.
 
         计费模式
 
@@ -151,7 +151,7 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth:
 
     @property
     def size(self):
-        """Gets the size of this CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth.
+        r"""Gets the size of this CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth.
 
         全域公网带宽大小（出云方向）
 
@@ -162,7 +162,7 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth.
+        r"""Sets the size of this CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth.
 
         全域公网带宽大小（出云方向）
 
@@ -173,7 +173,7 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth:
 
     @property
     def name(self):
-        """Gets the name of this CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth.
+        r"""Gets the name of this CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth.
 
         - 功能说明：全域公网带宽名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -184,7 +184,7 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth.
+        r"""Sets the name of this CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth.
 
         - 功能说明：全域公网带宽名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -195,7 +195,7 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth.
+        r"""Gets the tags of this CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth.
 
         全域弹性公网IP段标签
 
@@ -206,7 +206,7 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth.
+        r"""Sets the tags of this CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth.
 
         全域弹性公网IP段标签
 
@@ -217,7 +217,7 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth:
 
     @property
     def type(self):
-        """Gets the type of this CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth.
+        r"""Gets the type of this CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth.
 
         全域公网带宽类型
 
@@ -228,7 +228,7 @@ class CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth.
+        r"""Sets the type of this CreateGlobalEipSegmentRequestBodyGlobalEipSegmentInternetBandwidth.
 
         全域公网带宽类型
 

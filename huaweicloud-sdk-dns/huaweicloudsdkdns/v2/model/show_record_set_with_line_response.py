@@ -62,7 +62,7 @@ class ShowRecordSetWithLineResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, zone_id=None, zone_name=None, type=None, ttl=None, records=None, created_at=None, updated_at=None, status=None, default=None, project_id=None, links=None, line=None, weight=None, health_check_id=None, alias_target=None, bundle=None):
-        """ShowRecordSetWithLineResponse
+        r"""ShowRecordSetWithLineResponse
 
         The model defined in huaweicloud sdk
 
@@ -170,7 +170,7 @@ class ShowRecordSetWithLineResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowRecordSetWithLineResponse.
+        r"""Gets the id of this ShowRecordSetWithLineResponse.
 
         Record Set的ID。
 
@@ -181,7 +181,7 @@ class ShowRecordSetWithLineResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowRecordSetWithLineResponse.
+        r"""Sets the id of this ShowRecordSetWithLineResponse.
 
         Record Set的ID。
 
@@ -192,7 +192,7 @@ class ShowRecordSetWithLineResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowRecordSetWithLineResponse.
+        r"""Gets the name of this ShowRecordSetWithLineResponse.
 
         Record Set的名称。
 
@@ -203,7 +203,7 @@ class ShowRecordSetWithLineResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowRecordSetWithLineResponse.
+        r"""Sets the name of this ShowRecordSetWithLineResponse.
 
         Record Set的名称。
 
@@ -214,7 +214,7 @@ class ShowRecordSetWithLineResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowRecordSetWithLineResponse.
+        r"""Gets the description of this ShowRecordSetWithLineResponse.
 
         Record Set的描述信息。
 
@@ -225,7 +225,7 @@ class ShowRecordSetWithLineResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowRecordSetWithLineResponse.
+        r"""Sets the description of this ShowRecordSetWithLineResponse.
 
         Record Set的描述信息。
 
@@ -236,7 +236,7 @@ class ShowRecordSetWithLineResponse(SdkResponse):
 
     @property
     def zone_id(self):
-        """Gets the zone_id of this ShowRecordSetWithLineResponse.
+        r"""Gets the zone_id of this ShowRecordSetWithLineResponse.
 
         托管该记录的zone_id。
 
@@ -247,7 +247,7 @@ class ShowRecordSetWithLineResponse(SdkResponse):
 
     @zone_id.setter
     def zone_id(self, zone_id):
-        """Sets the zone_id of this ShowRecordSetWithLineResponse.
+        r"""Sets the zone_id of this ShowRecordSetWithLineResponse.
 
         托管该记录的zone_id。
 
@@ -258,7 +258,7 @@ class ShowRecordSetWithLineResponse(SdkResponse):
 
     @property
     def zone_name(self):
-        """Gets the zone_name of this ShowRecordSetWithLineResponse.
+        r"""Gets the zone_name of this ShowRecordSetWithLineResponse.
 
         托管该记录的zone_name。
 
@@ -269,7 +269,7 @@ class ShowRecordSetWithLineResponse(SdkResponse):
 
     @zone_name.setter
     def zone_name(self, zone_name):
-        """Sets the zone_name of this ShowRecordSetWithLineResponse.
+        r"""Sets the zone_name of this ShowRecordSetWithLineResponse.
 
         托管该记录的zone_name。
 
@@ -280,7 +280,7 @@ class ShowRecordSetWithLineResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowRecordSetWithLineResponse.
+        r"""Gets the type of this ShowRecordSetWithLineResponse.
 
         记录类型。
 
@@ -291,7 +291,7 @@ class ShowRecordSetWithLineResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowRecordSetWithLineResponse.
+        r"""Sets the type of this ShowRecordSetWithLineResponse.
 
         记录类型。
 
@@ -302,7 +302,7 @@ class ShowRecordSetWithLineResponse(SdkResponse):
 
     @property
     def ttl(self):
-        """Gets the ttl of this ShowRecordSetWithLineResponse.
+        r"""Gets the ttl of this ShowRecordSetWithLineResponse.
 
         解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
 
@@ -313,7 +313,7 @@ class ShowRecordSetWithLineResponse(SdkResponse):
 
     @ttl.setter
     def ttl(self, ttl):
-        """Sets the ttl of this ShowRecordSetWithLineResponse.
+        r"""Sets the ttl of this ShowRecordSetWithLineResponse.
 
         解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
 
@@ -324,7 +324,7 @@ class ShowRecordSetWithLineResponse(SdkResponse):
 
     @property
     def records(self):
-        """Gets the records of this ShowRecordSetWithLineResponse.
+        r"""Gets the records of this ShowRecordSetWithLineResponse.
 
         域名解析后的值。
 
@@ -335,7 +335,7 @@ class ShowRecordSetWithLineResponse(SdkResponse):
 
     @records.setter
     def records(self, records):
-        """Sets the records of this ShowRecordSetWithLineResponse.
+        r"""Sets the records of this ShowRecordSetWithLineResponse.
 
         域名解析后的值。
 
@@ -346,7 +346,7 @@ class ShowRecordSetWithLineResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this ShowRecordSetWithLineResponse.
+        r"""Gets the created_at of this ShowRecordSetWithLineResponse.
 
         创建时间。
 
@@ -357,7 +357,7 @@ class ShowRecordSetWithLineResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ShowRecordSetWithLineResponse.
+        r"""Sets the created_at of this ShowRecordSetWithLineResponse.
 
         创建时间。
 
@@ -368,7 +368,7 @@ class ShowRecordSetWithLineResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ShowRecordSetWithLineResponse.
+        r"""Gets the updated_at of this ShowRecordSetWithLineResponse.
 
         更新时间。
 
@@ -379,7 +379,7 @@ class ShowRecordSetWithLineResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ShowRecordSetWithLineResponse.
+        r"""Sets the updated_at of this ShowRecordSetWithLineResponse.
 
         更新时间。
 
@@ -390,7 +390,7 @@ class ShowRecordSetWithLineResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowRecordSetWithLineResponse.
+        r"""Gets the status of this ShowRecordSetWithLineResponse.
 
         资源状态。
 
@@ -401,7 +401,7 @@ class ShowRecordSetWithLineResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowRecordSetWithLineResponse.
+        r"""Sets the status of this ShowRecordSetWithLineResponse.
 
         资源状态。
 
@@ -412,7 +412,7 @@ class ShowRecordSetWithLineResponse(SdkResponse):
 
     @property
     def default(self):
-        """Gets the default of this ShowRecordSetWithLineResponse.
+        r"""Gets the default of this ShowRecordSetWithLineResponse.
 
         标识是否由系统默认生成，系统默认生成的Record Set不能删除。
 
@@ -423,7 +423,7 @@ class ShowRecordSetWithLineResponse(SdkResponse):
 
     @default.setter
     def default(self, default):
-        """Sets the default of this ShowRecordSetWithLineResponse.
+        r"""Sets the default of this ShowRecordSetWithLineResponse.
 
         标识是否由系统默认生成，系统默认生成的Record Set不能删除。
 
@@ -434,7 +434,7 @@ class ShowRecordSetWithLineResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowRecordSetWithLineResponse.
+        r"""Gets the project_id of this ShowRecordSetWithLineResponse.
 
         该Record Set所属的项目ID。
 
@@ -445,7 +445,7 @@ class ShowRecordSetWithLineResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowRecordSetWithLineResponse.
+        r"""Sets the project_id of this ShowRecordSetWithLineResponse.
 
         该Record Set所属的项目ID。
 
@@ -456,7 +456,7 @@ class ShowRecordSetWithLineResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this ShowRecordSetWithLineResponse.
+        r"""Gets the links of this ShowRecordSetWithLineResponse.
 
         :return: The links of this ShowRecordSetWithLineResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -465,7 +465,7 @@ class ShowRecordSetWithLineResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this ShowRecordSetWithLineResponse.
+        r"""Sets the links of this ShowRecordSetWithLineResponse.
 
         :param links: The links of this ShowRecordSetWithLineResponse.
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -474,7 +474,7 @@ class ShowRecordSetWithLineResponse(SdkResponse):
 
     @property
     def line(self):
-        """Gets the line of this ShowRecordSetWithLineResponse.
+        r"""Gets the line of this ShowRecordSetWithLineResponse.
 
         解析线路ID。
 
@@ -485,7 +485,7 @@ class ShowRecordSetWithLineResponse(SdkResponse):
 
     @line.setter
     def line(self, line):
-        """Sets the line of this ShowRecordSetWithLineResponse.
+        r"""Sets the line of this ShowRecordSetWithLineResponse.
 
         解析线路ID。
 
@@ -496,7 +496,7 @@ class ShowRecordSetWithLineResponse(SdkResponse):
 
     @property
     def weight(self):
-        """Gets the weight of this ShowRecordSetWithLineResponse.
+        r"""Gets the weight of this ShowRecordSetWithLineResponse.
 
         解析记录的权重。
 
@@ -507,7 +507,7 @@ class ShowRecordSetWithLineResponse(SdkResponse):
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this ShowRecordSetWithLineResponse.
+        r"""Sets the weight of this ShowRecordSetWithLineResponse.
 
         解析记录的权重。
 
@@ -518,7 +518,7 @@ class ShowRecordSetWithLineResponse(SdkResponse):
 
     @property
     def health_check_id(self):
-        """Gets the health_check_id of this ShowRecordSetWithLineResponse.
+        r"""Gets the health_check_id of this ShowRecordSetWithLineResponse.
 
         健康检查ID。
 
@@ -529,7 +529,7 @@ class ShowRecordSetWithLineResponse(SdkResponse):
 
     @health_check_id.setter
     def health_check_id(self, health_check_id):
-        """Sets the health_check_id of this ShowRecordSetWithLineResponse.
+        r"""Sets the health_check_id of this ShowRecordSetWithLineResponse.
 
         健康检查ID。
 
@@ -540,7 +540,7 @@ class ShowRecordSetWithLineResponse(SdkResponse):
 
     @property
     def alias_target(self):
-        """Gets the alias_target of this ShowRecordSetWithLineResponse.
+        r"""Gets the alias_target of this ShowRecordSetWithLineResponse.
 
         :return: The alias_target of this ShowRecordSetWithLineResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.AliasTarget`
@@ -549,7 +549,7 @@ class ShowRecordSetWithLineResponse(SdkResponse):
 
     @alias_target.setter
     def alias_target(self, alias_target):
-        """Sets the alias_target of this ShowRecordSetWithLineResponse.
+        r"""Sets the alias_target of this ShowRecordSetWithLineResponse.
 
         :param alias_target: The alias_target of this ShowRecordSetWithLineResponse.
         :type alias_target: :class:`huaweicloudsdkdns.v2.AliasTarget`
@@ -558,7 +558,7 @@ class ShowRecordSetWithLineResponse(SdkResponse):
 
     @property
     def bundle(self):
-        """Gets the bundle of this ShowRecordSetWithLineResponse.
+        r"""Gets the bundle of this ShowRecordSetWithLineResponse.
 
         规格，默认规格，保留字段。
 
@@ -569,7 +569,7 @@ class ShowRecordSetWithLineResponse(SdkResponse):
 
     @bundle.setter
     def bundle(self, bundle):
-        """Sets the bundle of this ShowRecordSetWithLineResponse.
+        r"""Sets the bundle of this ShowRecordSetWithLineResponse.
 
         规格，默认规格，保留字段。
 

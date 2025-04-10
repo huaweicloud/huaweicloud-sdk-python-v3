@@ -27,7 +27,7 @@ class DataEvent:
     }
 
     def __init__(self):
-        """DataEvent
+        r"""DataEvent
 
         The model defined in huaweicloud sdk
 

@@ -29,7 +29,7 @@ class SetDatabaseUserPrivilegeReqV3:
     }
 
     def __init__(self, all_users=None, user_name=None, readonly=None):
-        """SetDatabaseUserPrivilegeReqV3
+        r"""SetDatabaseUserPrivilegeReqV3
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class SetDatabaseUserPrivilegeReqV3:
 
     @property
     def all_users(self):
-        """Gets the all_users of this SetDatabaseUserPrivilegeReqV3.
+        r"""Gets the all_users of this SetDatabaseUserPrivilegeReqV3.
 
         是否设置所有用户。
 
@@ -66,7 +66,7 @@ class SetDatabaseUserPrivilegeReqV3:
 
     @all_users.setter
     def all_users(self, all_users):
-        """Sets the all_users of this SetDatabaseUserPrivilegeReqV3.
+        r"""Sets the all_users of this SetDatabaseUserPrivilegeReqV3.
 
         是否设置所有用户。
 
@@ -77,7 +77,7 @@ class SetDatabaseUserPrivilegeReqV3:
 
     @property
     def user_name(self):
-        """Gets the user_name of this SetDatabaseUserPrivilegeReqV3.
+        r"""Gets the user_name of this SetDatabaseUserPrivilegeReqV3.
 
         数据库用户名。
 
@@ -88,7 +88,7 @@ class SetDatabaseUserPrivilegeReqV3:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this SetDatabaseUserPrivilegeReqV3.
+        r"""Sets the user_name of this SetDatabaseUserPrivilegeReqV3.
 
         数据库用户名。
 
@@ -99,7 +99,7 @@ class SetDatabaseUserPrivilegeReqV3:
 
     @property
     def readonly(self):
-        """Gets the readonly of this SetDatabaseUserPrivilegeReqV3.
+        r"""Gets the readonly of this SetDatabaseUserPrivilegeReqV3.
 
         是否为只读权限。
 
@@ -110,7 +110,7 @@ class SetDatabaseUserPrivilegeReqV3:
 
     @readonly.setter
     def readonly(self, readonly):
-        """Sets the readonly of this SetDatabaseUserPrivilegeReqV3.
+        r"""Sets the readonly of this SetDatabaseUserPrivilegeReqV3.
 
         是否为只读权限。
 

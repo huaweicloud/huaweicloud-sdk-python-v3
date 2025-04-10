@@ -25,7 +25,7 @@ class DeleteMemberInviteRequest:
     }
 
     def __init__(self, body=None):
-        """DeleteMemberInviteRequest
+        r"""DeleteMemberInviteRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteMemberInviteRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteMemberInviteRequest.
+        r"""Gets the body of this DeleteMemberInviteRequest.
 
         :return: The body of this DeleteMemberInviteRequest.
         :rtype: :class:`huaweicloudsdkbcs.v2.DeleteMemberInviteRequestBody`
@@ -52,7 +52,7 @@ class DeleteMemberInviteRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteMemberInviteRequest.
+        r"""Sets the body of this DeleteMemberInviteRequest.
 
         :param body: The body of this DeleteMemberInviteRequest.
         :type body: :class:`huaweicloudsdkbcs.v2.DeleteMemberInviteRequestBody`

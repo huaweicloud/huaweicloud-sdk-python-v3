@@ -27,7 +27,7 @@ class GlanceDeleteImageMemberRequest:
     }
 
     def __init__(self, image_id=None, member_id=None):
-        """GlanceDeleteImageMemberRequest
+        r"""GlanceDeleteImageMemberRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class GlanceDeleteImageMemberRequest:
 
     @property
     def image_id(self):
-        """Gets the image_id of this GlanceDeleteImageMemberRequest.
+        r"""Gets the image_id of this GlanceDeleteImageMemberRequest.
 
         镜像id
 
@@ -59,7 +59,7 @@ class GlanceDeleteImageMemberRequest:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this GlanceDeleteImageMemberRequest.
+        r"""Sets the image_id of this GlanceDeleteImageMemberRequest.
 
         镜像id
 
@@ -70,7 +70,7 @@ class GlanceDeleteImageMemberRequest:
 
     @property
     def member_id(self):
-        """Gets the member_id of this GlanceDeleteImageMemberRequest.
+        r"""Gets the member_id of this GlanceDeleteImageMemberRequest.
 
         成员id
 
@@ -81,7 +81,7 @@ class GlanceDeleteImageMemberRequest:
 
     @member_id.setter
     def member_id(self, member_id):
-        """Sets the member_id of this GlanceDeleteImageMemberRequest.
+        r"""Sets the member_id of this GlanceDeleteImageMemberRequest.
 
         成员id
 

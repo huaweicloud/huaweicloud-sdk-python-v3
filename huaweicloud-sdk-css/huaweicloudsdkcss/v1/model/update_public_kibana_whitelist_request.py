@@ -27,7 +27,7 @@ class UpdatePublicKibanaWhitelistRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """UpdatePublicKibanaWhitelistRequest
+        r"""UpdatePublicKibanaWhitelistRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdatePublicKibanaWhitelistRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdatePublicKibanaWhitelistRequest.
+        r"""Gets the cluster_id of this UpdatePublicKibanaWhitelistRequest.
 
         指定修改kibana的访问权限的集群ID。
 
@@ -60,7 +60,7 @@ class UpdatePublicKibanaWhitelistRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdatePublicKibanaWhitelistRequest.
+        r"""Sets the cluster_id of this UpdatePublicKibanaWhitelistRequest.
 
         指定修改kibana的访问权限的集群ID。
 
@@ -71,7 +71,7 @@ class UpdatePublicKibanaWhitelistRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePublicKibanaWhitelistRequest.
+        r"""Gets the body of this UpdatePublicKibanaWhitelistRequest.
 
         :return: The body of this UpdatePublicKibanaWhitelistRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.UpdatePublicKibanaWhitelistReq`
@@ -80,7 +80,7 @@ class UpdatePublicKibanaWhitelistRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePublicKibanaWhitelistRequest.
+        r"""Sets the body of this UpdatePublicKibanaWhitelistRequest.
 
         :param body: The body of this UpdatePublicKibanaWhitelistRequest.
         :type body: :class:`huaweicloudsdkcss.v1.UpdatePublicKibanaWhitelistReq`

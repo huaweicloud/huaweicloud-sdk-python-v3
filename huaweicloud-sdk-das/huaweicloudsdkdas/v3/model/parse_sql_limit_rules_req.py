@@ -31,7 +31,7 @@ class ParseSqlLimitRulesReq:
     }
 
     def __init__(self, datastore_type=None, original_sql=None, use_template=None, keep_operators=None):
-        """ParseSqlLimitRulesReq
+        r"""ParseSqlLimitRulesReq
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ParseSqlLimitRulesReq:
 
     @property
     def datastore_type(self):
-        """Gets the datastore_type of this ParseSqlLimitRulesReq.
+        r"""Gets the datastore_type of this ParseSqlLimitRulesReq.
 
         数据库类型，目前支持MySQL、MariaDB、GaussDB(for MySQL)三种引擎。
 
@@ -71,7 +71,7 @@ class ParseSqlLimitRulesReq:
 
     @datastore_type.setter
     def datastore_type(self, datastore_type):
-        """Sets the datastore_type of this ParseSqlLimitRulesReq.
+        r"""Sets the datastore_type of this ParseSqlLimitRulesReq.
 
         数据库类型，目前支持MySQL、MariaDB、GaussDB(for MySQL)三种引擎。
 
@@ -82,7 +82,7 @@ class ParseSqlLimitRulesReq:
 
     @property
     def original_sql(self):
-        """Gets the original_sql of this ParseSqlLimitRulesReq.
+        r"""Gets the original_sql of this ParseSqlLimitRulesReq.
 
         原始SQL语句
 
@@ -93,7 +93,7 @@ class ParseSqlLimitRulesReq:
 
     @original_sql.setter
     def original_sql(self, original_sql):
-        """Sets the original_sql of this ParseSqlLimitRulesReq.
+        r"""Sets the original_sql of this ParseSqlLimitRulesReq.
 
         原始SQL语句
 
@@ -104,7 +104,7 @@ class ParseSqlLimitRulesReq:
 
     @property
     def use_template(self):
-        """Gets the use_template of this ParseSqlLimitRulesReq.
+        r"""Gets the use_template of this ParseSqlLimitRulesReq.
 
         是否校验SQL语句
 
@@ -115,7 +115,7 @@ class ParseSqlLimitRulesReq:
 
     @use_template.setter
     def use_template(self, use_template):
-        """Sets the use_template of this ParseSqlLimitRulesReq.
+        r"""Sets the use_template of this ParseSqlLimitRulesReq.
 
         是否校验SQL语句
 
@@ -126,7 +126,7 @@ class ParseSqlLimitRulesReq:
 
     @property
     def keep_operators(self):
-        """Gets the keep_operators of this ParseSqlLimitRulesReq.
+        r"""Gets the keep_operators of this ParseSqlLimitRulesReq.
 
         是否保留操作符
 
@@ -137,7 +137,7 @@ class ParseSqlLimitRulesReq:
 
     @keep_operators.setter
     def keep_operators(self, keep_operators):
-        """Sets the keep_operators of this ParseSqlLimitRulesReq.
+        r"""Sets the keep_operators of this ParseSqlLimitRulesReq.
 
         是否保留操作符
 

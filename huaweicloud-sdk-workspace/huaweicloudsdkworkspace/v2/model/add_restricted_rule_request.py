@@ -25,7 +25,7 @@ class AddRestrictedRuleRequest:
     }
 
     def __init__(self, body=None):
-        """AddRestrictedRuleRequest
+        r"""AddRestrictedRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AddRestrictedRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddRestrictedRuleRequest.
+        r"""Gets the body of this AddRestrictedRuleRequest.
 
         :return: The body of this AddRestrictedRuleRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.BatchOperateAppRulesReq`
@@ -52,7 +52,7 @@ class AddRestrictedRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddRestrictedRuleRequest.
+        r"""Sets the body of this AddRestrictedRuleRequest.
 
         :param body: The body of this AddRestrictedRuleRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.BatchOperateAppRulesReq`

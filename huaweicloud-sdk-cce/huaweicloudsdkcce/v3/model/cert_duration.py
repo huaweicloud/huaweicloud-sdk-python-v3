@@ -25,7 +25,7 @@ class CertDuration:
     }
 
     def __init__(self, duration=None):
-        """CertDuration
+        r"""CertDuration
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CertDuration:
 
     @property
     def duration(self):
-        """Gets the duration of this CertDuration.
+        r"""Gets the duration of this CertDuration.
 
         集群证书有效时间，单位为天，最小值为1，最大值为1825(5*365，1年固定计365天，忽略闰年影响)；若填-1则为最大值5年。 
 
@@ -53,7 +53,7 @@ class CertDuration:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this CertDuration.
+        r"""Sets the duration of this CertDuration.
 
         集群证书有效时间，单位为天，最小值为1，最大值为1825(5*365，1年固定计365天，忽略闰年影响)；若填-1则为最大值5年。 
 

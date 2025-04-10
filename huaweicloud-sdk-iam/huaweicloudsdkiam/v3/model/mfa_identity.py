@@ -29,7 +29,7 @@ class MfaIdentity:
     }
 
     def __init__(self, methods=None, password=None, totp=None):
-        """MfaIdentity
+        r"""MfaIdentity
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class MfaIdentity:
 
     @property
     def methods(self):
-        """Gets the methods of this MfaIdentity.
+        r"""Gets the methods of this MfaIdentity.
 
         认证方法，该字段内容为[\"password\", \"totp\"]。
 
@@ -65,7 +65,7 @@ class MfaIdentity:
 
     @methods.setter
     def methods(self, methods):
-        """Sets the methods of this MfaIdentity.
+        r"""Sets the methods of this MfaIdentity.
 
         认证方法，该字段内容为[\"password\", \"totp\"]。
 
@@ -76,7 +76,7 @@ class MfaIdentity:
 
     @property
     def password(self):
-        """Gets the password of this MfaIdentity.
+        r"""Gets the password of this MfaIdentity.
 
         :return: The password of this MfaIdentity.
         :rtype: :class:`huaweicloudsdkiam.v3.PwdPassword`
@@ -85,7 +85,7 @@ class MfaIdentity:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this MfaIdentity.
+        r"""Sets the password of this MfaIdentity.
 
         :param password: The password of this MfaIdentity.
         :type password: :class:`huaweicloudsdkiam.v3.PwdPassword`
@@ -94,7 +94,7 @@ class MfaIdentity:
 
     @property
     def totp(self):
-        """Gets the totp of this MfaIdentity.
+        r"""Gets the totp of this MfaIdentity.
 
         :return: The totp of this MfaIdentity.
         :rtype: :class:`huaweicloudsdkiam.v3.MfaTotp`
@@ -103,7 +103,7 @@ class MfaIdentity:
 
     @totp.setter
     def totp(self, totp):
-        """Sets the totp of this MfaIdentity.
+        r"""Sets the totp of this MfaIdentity.
 
         :param totp: The totp of this MfaIdentity.
         :type totp: :class:`huaweicloudsdkiam.v3.MfaTotp`

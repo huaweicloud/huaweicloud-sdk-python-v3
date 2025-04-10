@@ -25,7 +25,7 @@ class OsStopBody:
     }
 
     def __init__(self, os_stop=None):
-        """OsStopBody
+        r"""OsStopBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class OsStopBody:
 
     @property
     def os_stop(self):
-        """Gets the os_stop of this OsStopBody.
+        r"""Gets the os_stop of this OsStopBody.
 
         :return: The os_stop of this OsStopBody.
         :rtype: :class:`huaweicloudsdkbms.v1.OsStopBodyType`
@@ -51,7 +51,7 @@ class OsStopBody:
 
     @os_stop.setter
     def os_stop(self, os_stop):
-        """Sets the os_stop of this OsStopBody.
+        r"""Sets the os_stop of this OsStopBody.
 
         :param os_stop: The os_stop of this OsStopBody.
         :type os_stop: :class:`huaweicloudsdkbms.v1.OsStopBodyType`

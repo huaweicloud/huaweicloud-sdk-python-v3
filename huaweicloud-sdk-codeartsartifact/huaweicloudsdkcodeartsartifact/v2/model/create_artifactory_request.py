@@ -25,7 +25,7 @@ class CreateArtifactoryRequest:
     }
 
     def __init__(self, body=None):
-        """CreateArtifactoryRequest
+        r"""CreateArtifactoryRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateArtifactoryRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateArtifactoryRequest.
+        r"""Gets the body of this CreateArtifactoryRequest.
 
         :return: The body of this CreateArtifactoryRequest.
         :rtype: :class:`huaweicloudsdkcodeartsartifact.v2.CreateNotMavenRepoDO`
@@ -52,7 +52,7 @@ class CreateArtifactoryRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateArtifactoryRequest.
+        r"""Sets the body of this CreateArtifactoryRequest.
 
         :param body: The body of this CreateArtifactoryRequest.
         :type body: :class:`huaweicloudsdkcodeartsartifact.v2.CreateNotMavenRepoDO`

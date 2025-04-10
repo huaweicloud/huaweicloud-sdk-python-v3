@@ -30,7 +30,7 @@ class ListCentralNetworkErRouteTableAttachmentsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, page_info=None, central_network_er_route_table_attachments=None):
-        """ListCentralNetworkErRouteTableAttachmentsResponse
+        r"""ListCentralNetworkErRouteTableAttachmentsResponse
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListCentralNetworkErRouteTableAttachmentsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListCentralNetworkErRouteTableAttachmentsResponse.
+        r"""Gets the request_id of this ListCentralNetworkErRouteTableAttachmentsResponse.
 
         请求ID。
 
@@ -67,7 +67,7 @@ class ListCentralNetworkErRouteTableAttachmentsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListCentralNetworkErRouteTableAttachmentsResponse.
+        r"""Sets the request_id of this ListCentralNetworkErRouteTableAttachmentsResponse.
 
         请求ID。
 
@@ -78,7 +78,7 @@ class ListCentralNetworkErRouteTableAttachmentsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListCentralNetworkErRouteTableAttachmentsResponse.
+        r"""Gets the page_info of this ListCentralNetworkErRouteTableAttachmentsResponse.
 
         :return: The page_info of this ListCentralNetworkErRouteTableAttachmentsResponse.
         :rtype: :class:`huaweicloudsdkcc.v3.PageInfo`
@@ -87,7 +87,7 @@ class ListCentralNetworkErRouteTableAttachmentsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListCentralNetworkErRouteTableAttachmentsResponse.
+        r"""Sets the page_info of this ListCentralNetworkErRouteTableAttachmentsResponse.
 
         :param page_info: The page_info of this ListCentralNetworkErRouteTableAttachmentsResponse.
         :type page_info: :class:`huaweicloudsdkcc.v3.PageInfo`
@@ -96,7 +96,7 @@ class ListCentralNetworkErRouteTableAttachmentsResponse(SdkResponse):
 
     @property
     def central_network_er_route_table_attachments(self):
-        """Gets the central_network_er_route_table_attachments of this ListCentralNetworkErRouteTableAttachmentsResponse.
+        r"""Gets the central_network_er_route_table_attachments of this ListCentralNetworkErRouteTableAttachmentsResponse.
 
         创建路由表附件的返回体
 
@@ -107,7 +107,7 @@ class ListCentralNetworkErRouteTableAttachmentsResponse(SdkResponse):
 
     @central_network_er_route_table_attachments.setter
     def central_network_er_route_table_attachments(self, central_network_er_route_table_attachments):
-        """Sets the central_network_er_route_table_attachments of this ListCentralNetworkErRouteTableAttachmentsResponse.
+        r"""Sets the central_network_er_route_table_attachments of this ListCentralNetworkErRouteTableAttachmentsResponse.
 
         创建路由表附件的返回体
 

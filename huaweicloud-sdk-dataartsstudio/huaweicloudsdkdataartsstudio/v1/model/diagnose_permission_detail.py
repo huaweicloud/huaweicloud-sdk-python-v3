@@ -47,7 +47,7 @@ class DiagnosePermissionDetail:
     }
 
     def __init__(self, id=None, task_id=None, user_name=None, permission_type=None, permission_action=None, permission_source=None, datasource_type=None, cluster_name=None, database=None, schema=None, table=None, remark=None):
-        """DiagnosePermissionDetail
+        r"""DiagnosePermissionDetail
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class DiagnosePermissionDetail:
 
     @property
     def id(self):
-        """Gets the id of this DiagnosePermissionDetail.
+        r"""Gets the id of this DiagnosePermissionDetail.
 
         权限配置编号。
 
@@ -131,7 +131,7 @@ class DiagnosePermissionDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DiagnosePermissionDetail.
+        r"""Sets the id of this DiagnosePermissionDetail.
 
         权限配置编号。
 
@@ -142,7 +142,7 @@ class DiagnosePermissionDetail:
 
     @property
     def task_id(self):
-        """Gets the task_id of this DiagnosePermissionDetail.
+        r"""Gets the task_id of this DiagnosePermissionDetail.
 
         诊断任务id。
 
@@ -153,7 +153,7 @@ class DiagnosePermissionDetail:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this DiagnosePermissionDetail.
+        r"""Sets the task_id of this DiagnosePermissionDetail.
 
         诊断任务id。
 
@@ -164,7 +164,7 @@ class DiagnosePermissionDetail:
 
     @property
     def user_name(self):
-        """Gets the user_name of this DiagnosePermissionDetail.
+        r"""Gets the user_name of this DiagnosePermissionDetail.
 
         用户名。
 
@@ -175,7 +175,7 @@ class DiagnosePermissionDetail:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this DiagnosePermissionDetail.
+        r"""Sets the user_name of this DiagnosePermissionDetail.
 
         用户名。
 
@@ -186,7 +186,7 @@ class DiagnosePermissionDetail:
 
     @property
     def permission_type(self):
-        """Gets the permission_type of this DiagnosePermissionDetail.
+        r"""Gets the permission_type of this DiagnosePermissionDetail.
 
         权限类型。
 
@@ -197,7 +197,7 @@ class DiagnosePermissionDetail:
 
     @permission_type.setter
     def permission_type(self, permission_type):
-        """Sets the permission_type of this DiagnosePermissionDetail.
+        r"""Sets the permission_type of this DiagnosePermissionDetail.
 
         权限类型。
 
@@ -208,7 +208,7 @@ class DiagnosePermissionDetail:
 
     @property
     def permission_action(self):
-        """Gets the permission_action of this DiagnosePermissionDetail.
+        r"""Gets the permission_action of this DiagnosePermissionDetail.
 
         权限操作。
 
@@ -219,7 +219,7 @@ class DiagnosePermissionDetail:
 
     @permission_action.setter
     def permission_action(self, permission_action):
-        """Sets the permission_action of this DiagnosePermissionDetail.
+        r"""Sets the permission_action of this DiagnosePermissionDetail.
 
         权限操作。
 
@@ -230,7 +230,7 @@ class DiagnosePermissionDetail:
 
     @property
     def permission_source(self):
-        """Gets the permission_source of this DiagnosePermissionDetail.
+        r"""Gets the permission_source of this DiagnosePermissionDetail.
 
         权限来源。
 
@@ -241,7 +241,7 @@ class DiagnosePermissionDetail:
 
     @permission_source.setter
     def permission_source(self, permission_source):
-        """Sets the permission_source of this DiagnosePermissionDetail.
+        r"""Sets the permission_source of this DiagnosePermissionDetail.
 
         权限来源。
 
@@ -252,7 +252,7 @@ class DiagnosePermissionDetail:
 
     @property
     def datasource_type(self):
-        """Gets the datasource_type of this DiagnosePermissionDetail.
+        r"""Gets the datasource_type of this DiagnosePermissionDetail.
 
         数据源类型。
 
@@ -263,7 +263,7 @@ class DiagnosePermissionDetail:
 
     @datasource_type.setter
     def datasource_type(self, datasource_type):
-        """Sets the datasource_type of this DiagnosePermissionDetail.
+        r"""Sets the datasource_type of this DiagnosePermissionDetail.
 
         数据源类型。
 
@@ -274,7 +274,7 @@ class DiagnosePermissionDetail:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this DiagnosePermissionDetail.
+        r"""Gets the cluster_name of this DiagnosePermissionDetail.
 
         集群名称。
 
@@ -285,7 +285,7 @@ class DiagnosePermissionDetail:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this DiagnosePermissionDetail.
+        r"""Sets the cluster_name of this DiagnosePermissionDetail.
 
         集群名称。
 
@@ -296,7 +296,7 @@ class DiagnosePermissionDetail:
 
     @property
     def database(self):
-        """Gets the database of this DiagnosePermissionDetail.
+        r"""Gets the database of this DiagnosePermissionDetail.
 
         数据库名。
 
@@ -307,7 +307,7 @@ class DiagnosePermissionDetail:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this DiagnosePermissionDetail.
+        r"""Sets the database of this DiagnosePermissionDetail.
 
         数据库名。
 
@@ -318,7 +318,7 @@ class DiagnosePermissionDetail:
 
     @property
     def schema(self):
-        """Gets the schema of this DiagnosePermissionDetail.
+        r"""Gets the schema of this DiagnosePermissionDetail.
 
         schema名。
 
@@ -329,7 +329,7 @@ class DiagnosePermissionDetail:
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this DiagnosePermissionDetail.
+        r"""Sets the schema of this DiagnosePermissionDetail.
 
         schema名。
 
@@ -340,7 +340,7 @@ class DiagnosePermissionDetail:
 
     @property
     def table(self):
-        """Gets the table of this DiagnosePermissionDetail.
+        r"""Gets the table of this DiagnosePermissionDetail.
 
         表名。
 
@@ -351,7 +351,7 @@ class DiagnosePermissionDetail:
 
     @table.setter
     def table(self, table):
-        """Sets the table of this DiagnosePermissionDetail.
+        r"""Sets the table of this DiagnosePermissionDetail.
 
         表名。
 
@@ -362,7 +362,7 @@ class DiagnosePermissionDetail:
 
     @property
     def remark(self):
-        """Gets the remark of this DiagnosePermissionDetail.
+        r"""Gets the remark of this DiagnosePermissionDetail.
 
         备注。
 
@@ -373,7 +373,7 @@ class DiagnosePermissionDetail:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this DiagnosePermissionDetail.
+        r"""Sets the remark of this DiagnosePermissionDetail.
 
         备注。
 

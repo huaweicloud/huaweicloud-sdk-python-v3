@@ -34,7 +34,7 @@ class RocketMQAsyncClient(Client):
         return client_builder
 
     def batch_create_or_delete_rocketmq_tag_async(self, request):
-        """批量添加或删除实例标签
+        r"""批量添加或删除实例标签
 
         批量添加或删除实例标签。
         
@@ -101,7 +101,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def batch_delete_instances_async(self, request):
-        """批量删除实例
+        r"""批量删除实例
 
         批量删除实例。**实例删除后，实例中原有的数据将被删除，且没有备份，请谨慎操作。**
         
@@ -166,7 +166,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def batch_update_consumer_group_async(self, request):
-        """批量修改消费组
+        r"""批量修改消费组
 
         批量修改消费组。
         
@@ -233,7 +233,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def create_consumer_group_or_batch_delete_consumer_group_async(self, request):
-        """创建消费组或批量删除消费组
+        r"""创建消费组或批量删除消费组
 
         创建消费组或批量删除消费组。
         
@@ -302,7 +302,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def create_instance_by_engine_async(self, request):
-        """创建实例
+        r"""创建实例
 
         创建实例[，该接口支持创建按需和包周期两种计费方式的实例](tag:hws,hws_eu,hws_hk,ocb,hws_ocb,ctc,g42,hk_g42,tm,hk_tm)。
         
@@ -369,7 +369,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def create_post_paid_instance_async(self, request):
-        """创建实例（按需）
+        r"""创建实例（按需）
 
         创建实例，该接口创建的实例为按需计费的方式。
         
@@ -434,7 +434,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def create_rocket_mq_migration_task_async(self, request):
-        """新建元数据迁移任务
+        r"""新建元数据迁移任务
 
         新建元数据迁移任务。
         
@@ -507,7 +507,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def create_user_async(self, request):
-        """创建用户
+        r"""创建用户
 
         创建用户。
         
@@ -574,7 +574,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def delete_consumer_group_async(self, request):
-        """删除指定消费组
+        r"""删除指定消费组
 
         删除指定消费组。
         
@@ -641,7 +641,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def delete_instance_async(self, request):
-        """删除指定的实例
+        r"""删除指定的实例
 
         删除指定的实例，释放该实例的所有资源。
         
@@ -706,7 +706,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def delete_rocket_mq_migration_task_async(self, request):
-        """删除元数据迁移任务
+        r"""删除元数据迁移任务
 
         删除元数据迁移任务。
         
@@ -773,7 +773,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def delete_user_async(self, request):
-        """删除用户
+        r"""删除用户
 
         删除用户。
         
@@ -840,7 +840,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def export_dlq_message_async(self, request):
-        """导出死信消息
+        r"""导出死信消息
 
         导出死信消息。
         
@@ -907,7 +907,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def list_available_zones_async(self, request):
-        """查询可用区信息
+        r"""查询可用区信息
 
         在创建实例时，需要配置实例所在的可用区ID，可通过该接口查询可用区的ID。
         
@@ -970,7 +970,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def list_brokers_async(self, request):
-        """查询代理列表
+        r"""查询代理列表
 
         查询代理列表。
         
@@ -1035,7 +1035,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def list_consume_group_access_policy_async(self, request):
-        """查询消费组的授权用户列表
+        r"""查询消费组的授权用户列表
 
         查询消费组的授权用户列表。
         
@@ -1108,7 +1108,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def list_instance_consumer_groups_async(self, request):
-        """查询消费组列表
+        r"""查询消费组列表
 
         查询消费组列表。
         
@@ -1179,7 +1179,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def list_instances_async(self, request):
-        """查询所有实例列表
+        r"""查询所有实例列表
 
         查询租户的实例列表，支持按照条件查询。
         
@@ -1260,7 +1260,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def list_message_trace_async(self, request):
-        """查询消息轨迹
+        r"""查询消息轨迹
 
         查询消息轨迹。
         
@@ -1329,7 +1329,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def list_messages_async(self, request):
-        """查询消息
+        r"""查询消息
 
         查询消息。
         
@@ -1410,7 +1410,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def list_rocket_mq_migration_task_async(self, request):
-        """查询实例下所有迁移任务或查询指定迁移任务信息
+        r"""查询实例下所有迁移任务或查询指定迁移任务信息
 
         1. 查询实例下所有迁移任务
         2. 查询指定迁移任务信息
@@ -1486,7 +1486,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def list_topic_access_policy_async(self, request):
-        """查询主题的授权用户列表
+        r"""查询主题的授权用户列表
 
         查询主题的授权用户列表。
         
@@ -1557,7 +1557,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def list_user_async(self, request):
-        """查询用户列表
+        r"""查询用户列表
 
         查询用户列表。
         
@@ -1626,7 +1626,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def reset_consume_offset_async(self, request):
-        """重置消费进度
+        r"""重置消费进度
 
         重置消费进度。
         
@@ -1697,7 +1697,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def resize_instance_async(self, request):
-        """实例规格变更
+        r"""实例规格变更
 
         实例规格变更。
         
@@ -1768,7 +1768,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def send_dlq_message_async(self, request):
-        """重发死信消息
+        r"""重发死信消息
 
         重发死信消息。
         
@@ -1837,7 +1837,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def show_consumer_connections_async(self, request):
-        """查询消费者列表
+        r"""查询消费者列表
 
         查询消费组内消费者列表
         
@@ -1910,7 +1910,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def show_consumer_list_or_details_async(self, request):
-        """查询消费列表或详情
+        r"""查询消费列表或详情
 
         查询消费列表或详情。
         
@@ -1983,7 +1983,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def show_engine_instance_extend_product_info_async(self, request):
-        """查询实例的扩容规格列表
+        r"""查询实例的扩容规格列表
 
         查询实例的扩容规格列表。
         
@@ -2052,7 +2052,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def show_group_async(self, request):
-        """查询指定消费组
+        r"""查询指定消费组
 
         查询指定消费组详情。
         
@@ -2119,7 +2119,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def show_instance_async(self, request):
-        """查询指定实例
+        r"""查询指定实例
 
         查询指定实例的详细信息。
         
@@ -2184,7 +2184,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def show_rocket_mq_configs_async(self, request):
-        """查询RocketMQ配置
+        r"""查询RocketMQ配置
 
         该接口用于查询RocketMQ配置，若成功则返回配置的相关信息。
         
@@ -2249,7 +2249,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def show_rocketmq_project_tags_async(self, request):
-        """查询项目标签
+        r"""查询项目标签
 
         查询项目标签。
         
@@ -2312,7 +2312,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def show_rocketmq_tags_async(self, request):
-        """查询实例标签
+        r"""查询实例标签
 
         查询实例标签。
         
@@ -2377,7 +2377,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def show_user_async(self, request):
-        """查询用户详情
+        r"""查询用户详情
 
         查询用户详情。
         
@@ -2444,7 +2444,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def update_consumer_group_async(self, request):
-        """修改消费组
+        r"""修改消费组
 
         修改指定消费组参数。
         
@@ -2513,7 +2513,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def update_instance_async(self, request):
-        """修改实例信息
+        r"""修改实例信息
 
         修改实例的名称和描述信息。
         
@@ -2580,7 +2580,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def update_rocket_mq_configs_async(self, request):
-        """修改RocketMQ配置
+        r"""修改RocketMQ配置
 
         该接口用于修改RocketMQ配置。
         
@@ -2647,7 +2647,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def update_user_async(self, request):
-        """修改用户参数
+        r"""修改用户参数
 
         修改用户参数。
         
@@ -2716,7 +2716,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def validate_consumed_message_async(self, request):
-        """消费验证
+        r"""消费验证
 
         消费验证。
         
@@ -2785,7 +2785,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def create_topic_or_batch_delete_topic_async(self, request):
-        """创建主题或批量删除主题
+        r"""创建主题或批量删除主题
 
         创建主题或批量删除主题。
         
@@ -2854,7 +2854,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def delete_topic_async(self, request):
-        """删除指定主题
+        r"""删除指定主题
 
         删除指定主题。
         
@@ -2921,7 +2921,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def list_consumer_group_of_topic_async(self, request):
-        """查询主题消费组列表
+        r"""查询主题消费组列表
 
         查询主题消费组列表。
         
@@ -2992,7 +2992,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def list_rocket_instance_topics_async(self, request):
-        """查询主题列表
+        r"""查询主题列表
 
         该接口用于查询指定RocketMQ实例的Topic列表。
         
@@ -3061,7 +3061,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def show_one_topic_async(self, request):
-        """查询单个主题
+        r"""查询单个主题
 
         查询单个主题。
         
@@ -3128,7 +3128,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def show_topic_status_async(self, request):
-        """查询主题的消息数
+        r"""查询主题的消息数
 
         查询主题的消息数。
         
@@ -3195,7 +3195,7 @@ class RocketMQAsyncClient(Client):
         return http_info
 
     def update_topic_async(self, request):
-        """修改主题
+        r"""修改主题
 
         修改主题。
         

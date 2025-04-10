@@ -31,7 +31,7 @@ class ScaleGroupAutoscaling:
     }
 
     def __init__(self, enable=None, extension_priority=None, min_node_count=None, max_node_count=None):
-        """ScaleGroupAutoscaling
+        r"""ScaleGroupAutoscaling
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ScaleGroupAutoscaling:
 
     @property
     def enable(self):
-        """Gets the enable of this ScaleGroupAutoscaling.
+        r"""Gets the enable of this ScaleGroupAutoscaling.
 
         伸缩组弹性扩缩容启用开关，默认不开启
 
@@ -75,7 +75,7 @@ class ScaleGroupAutoscaling:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this ScaleGroupAutoscaling.
+        r"""Sets the enable of this ScaleGroupAutoscaling.
 
         伸缩组弹性扩缩容启用开关，默认不开启
 
@@ -86,7 +86,7 @@ class ScaleGroupAutoscaling:
 
     @property
     def extension_priority(self):
-        """Gets the extension_priority of this ScaleGroupAutoscaling.
+        r"""Gets the extension_priority of this ScaleGroupAutoscaling.
 
         伸缩组优先级，未设置则默认为0，数值越大优先级越高
 
@@ -97,7 +97,7 @@ class ScaleGroupAutoscaling:
 
     @extension_priority.setter
     def extension_priority(self, extension_priority):
-        """Sets the extension_priority of this ScaleGroupAutoscaling.
+        r"""Sets the extension_priority of this ScaleGroupAutoscaling.
 
         伸缩组优先级，未设置则默认为0，数值越大优先级越高
 
@@ -108,7 +108,7 @@ class ScaleGroupAutoscaling:
 
     @property
     def min_node_count(self):
-        """Gets the min_node_count of this ScaleGroupAutoscaling.
+        r"""Gets the min_node_count of this ScaleGroupAutoscaling.
 
         弹性伸缩时，伸缩组最少应保持的节点数量，必须大于0
 
@@ -119,7 +119,7 @@ class ScaleGroupAutoscaling:
 
     @min_node_count.setter
     def min_node_count(self, min_node_count):
-        """Sets the min_node_count of this ScaleGroupAutoscaling.
+        r"""Sets the min_node_count of this ScaleGroupAutoscaling.
 
         弹性伸缩时，伸缩组最少应保持的节点数量，必须大于0
 
@@ -130,7 +130,7 @@ class ScaleGroupAutoscaling:
 
     @property
     def max_node_count(self):
-        """Gets the max_node_count of this ScaleGroupAutoscaling.
+        r"""Gets the max_node_count of this ScaleGroupAutoscaling.
 
         弹性伸缩时，伸缩组最多可保持的节点数量，应大于等于 **minNodeCount**, 不可大于集群规格所允许的节点上限，不可大于节点池节点数量上限
 
@@ -141,7 +141,7 @@ class ScaleGroupAutoscaling:
 
     @max_node_count.setter
     def max_node_count(self, max_node_count):
-        """Sets the max_node_count of this ScaleGroupAutoscaling.
+        r"""Sets the max_node_count of this ScaleGroupAutoscaling.
 
         弹性伸缩时，伸缩组最多可保持的节点数量，应大于等于 **minNodeCount**, 不可大于集群规格所允许的节点上限，不可大于节点池节点数量上限
 

@@ -26,7 +26,7 @@ class UpdateEndpointConnectionsDescResponse(SdkResponse):
     }
 
     def __init__(self, connections=None):
-        """UpdateEndpointConnectionsDescResponse
+        r"""UpdateEndpointConnectionsDescResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateEndpointConnectionsDescResponse(SdkResponse):
 
     @property
     def connections(self):
-        """Gets the connections of this UpdateEndpointConnectionsDescResponse.
+        r"""Gets the connections of this UpdateEndpointConnectionsDescResponse.
 
         连接列表
 
@@ -55,7 +55,7 @@ class UpdateEndpointConnectionsDescResponse(SdkResponse):
 
     @connections.setter
     def connections(self, connections):
-        """Sets the connections of this UpdateEndpointConnectionsDescResponse.
+        r"""Sets the connections of this UpdateEndpointConnectionsDescResponse.
 
         连接列表
 

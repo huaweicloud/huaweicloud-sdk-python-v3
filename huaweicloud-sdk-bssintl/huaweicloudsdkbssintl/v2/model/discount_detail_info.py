@@ -31,7 +31,7 @@ class DiscountDetailInfo:
     }
 
     def __init__(self, promotion_type=None, discount_amount=None, promotion_id=None, measure_id=None):
-        """DiscountDetailInfo
+        r"""DiscountDetailInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class DiscountDetailInfo:
 
     @property
     def promotion_type(self):
-        """Gets the promotion_type of this DiscountDetailInfo.
+        r"""Gets the promotion_type of this DiscountDetailInfo.
 
         折扣类型。 500：代理订购指定折扣 501：代理订购指定减免 502：代理订购指定一口价 600：合同折扣返利 （商履折扣） 601：渠道框架合同折扣 602：专款专用合同折扣（特殊商务合同折扣） 603：线下直签合同折扣 604：电销授权合同折扣 605：商务合同折扣 606：渠道商务合同折扣 607：合作伙伴授权折扣 608：严选商品折扣 610：免单金额 700：促销折扣 （促销，只有包年/包月场景） 800：赠送奖励金
 
@@ -75,7 +75,7 @@ class DiscountDetailInfo:
 
     @promotion_type.setter
     def promotion_type(self, promotion_type):
-        """Sets the promotion_type of this DiscountDetailInfo.
+        r"""Sets the promotion_type of this DiscountDetailInfo.
 
         折扣类型。 500：代理订购指定折扣 501：代理订购指定减免 502：代理订购指定一口价 600：合同折扣返利 （商履折扣） 601：渠道框架合同折扣 602：专款专用合同折扣（特殊商务合同折扣） 603：线下直签合同折扣 604：电销授权合同折扣 605：商务合同折扣 606：渠道商务合同折扣 607：合作伙伴授权折扣 608：严选商品折扣 610：免单金额 700：促销折扣 （促销，只有包年/包月场景） 800：赠送奖励金
 
@@ -86,7 +86,7 @@ class DiscountDetailInfo:
 
     @property
     def discount_amount(self):
-        """Gets the discount_amount of this DiscountDetailInfo.
+        r"""Gets the discount_amount of this DiscountDetailInfo.
 
         折扣金额。
 
@@ -97,7 +97,7 @@ class DiscountDetailInfo:
 
     @discount_amount.setter
     def discount_amount(self, discount_amount):
-        """Sets the discount_amount of this DiscountDetailInfo.
+        r"""Sets the discount_amount of this DiscountDetailInfo.
 
         折扣金额。
 
@@ -108,7 +108,7 @@ class DiscountDetailInfo:
 
     @property
     def promotion_id(self):
-        """Gets the promotion_id of this DiscountDetailInfo.
+        r"""Gets the promotion_id of this DiscountDetailInfo.
 
         折扣类型对应的标识，可为合同ID或商务ID。
 
@@ -119,7 +119,7 @@ class DiscountDetailInfo:
 
     @promotion_id.setter
     def promotion_id(self, promotion_id):
-        """Sets the promotion_id of this DiscountDetailInfo.
+        r"""Sets the promotion_id of this DiscountDetailInfo.
 
         折扣类型对应的标识，可为合同ID或商务ID。
 
@@ -130,7 +130,7 @@ class DiscountDetailInfo:
 
     @property
     def measure_id(self):
-        """Gets the measure_id of this DiscountDetailInfo.
+        r"""Gets the measure_id of this DiscountDetailInfo.
 
         金额单位，1:元 3：分，默认3
 
@@ -141,7 +141,7 @@ class DiscountDetailInfo:
 
     @measure_id.setter
     def measure_id(self, measure_id):
-        """Sets the measure_id of this DiscountDetailInfo.
+        r"""Sets the measure_id of this DiscountDetailInfo.
 
         金额单位，1:元 3：分，默认3
 

@@ -26,7 +26,7 @@ class DeleteLdapConfigResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """DeleteLdapConfigResponse
+        r"""DeleteLdapConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteLdapConfigResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this DeleteLdapConfigResponse.
+        r"""Gets the job_id of this DeleteLdapConfigResponse.
 
         ldap异步任务的id。可通过查询job的状态详情接口查询job的执行状态。
 
@@ -55,7 +55,7 @@ class DeleteLdapConfigResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DeleteLdapConfigResponse.
+        r"""Sets the job_id of this DeleteLdapConfigResponse.
 
         ldap异步任务的id。可通过查询job的状态详情接口查询job的执行状态。
 

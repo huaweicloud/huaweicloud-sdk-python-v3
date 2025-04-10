@@ -24,7 +24,7 @@ class ResetAdministratorResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ResetAdministratorResponse
+        r"""ResetAdministratorResponse
 
         The model defined in huaweicloud sdk
 

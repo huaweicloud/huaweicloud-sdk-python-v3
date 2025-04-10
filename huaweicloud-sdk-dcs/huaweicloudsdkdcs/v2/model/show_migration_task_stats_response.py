@@ -38,7 +38,7 @@ class ShowMigrationTaskStatsResponse(SdkResponse):
     }
 
     def __init__(self, full_migration_progress=None, offset=None, source_dbsize=None, target_dbsize=None, target_input_kbps=None, target_ops=None, is_migrating=None):
-        """ShowMigrationTaskStatsResponse
+        r"""ShowMigrationTaskStatsResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ShowMigrationTaskStatsResponse(SdkResponse):
 
     @property
     def full_migration_progress(self):
-        """Gets the full_migration_progress of this ShowMigrationTaskStatsResponse.
+        r"""Gets the full_migration_progress of this ShowMigrationTaskStatsResponse.
 
         全量迁移进度百分比。
 
@@ -97,7 +97,7 @@ class ShowMigrationTaskStatsResponse(SdkResponse):
 
     @full_migration_progress.setter
     def full_migration_progress(self, full_migration_progress):
-        """Sets the full_migration_progress of this ShowMigrationTaskStatsResponse.
+        r"""Sets the full_migration_progress of this ShowMigrationTaskStatsResponse.
 
         全量迁移进度百分比。
 
@@ -108,7 +108,7 @@ class ShowMigrationTaskStatsResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ShowMigrationTaskStatsResponse.
+        r"""Gets the offset of this ShowMigrationTaskStatsResponse.
 
         增量迁移偏移量。
 
@@ -119,7 +119,7 @@ class ShowMigrationTaskStatsResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowMigrationTaskStatsResponse.
+        r"""Sets the offset of this ShowMigrationTaskStatsResponse.
 
         增量迁移偏移量。
 
@@ -130,7 +130,7 @@ class ShowMigrationTaskStatsResponse(SdkResponse):
 
     @property
     def source_dbsize(self):
-        """Gets the source_dbsize of this ShowMigrationTaskStatsResponse.
+        r"""Gets the source_dbsize of this ShowMigrationTaskStatsResponse.
 
         源redis键数量
 
@@ -141,7 +141,7 @@ class ShowMigrationTaskStatsResponse(SdkResponse):
 
     @source_dbsize.setter
     def source_dbsize(self, source_dbsize):
-        """Sets the source_dbsize of this ShowMigrationTaskStatsResponse.
+        r"""Sets the source_dbsize of this ShowMigrationTaskStatsResponse.
 
         源redis键数量
 
@@ -152,7 +152,7 @@ class ShowMigrationTaskStatsResponse(SdkResponse):
 
     @property
     def target_dbsize(self):
-        """Gets the target_dbsize of this ShowMigrationTaskStatsResponse.
+        r"""Gets the target_dbsize of this ShowMigrationTaskStatsResponse.
 
         目标redis键数量
 
@@ -163,7 +163,7 @@ class ShowMigrationTaskStatsResponse(SdkResponse):
 
     @target_dbsize.setter
     def target_dbsize(self, target_dbsize):
-        """Sets the target_dbsize of this ShowMigrationTaskStatsResponse.
+        r"""Sets the target_dbsize of this ShowMigrationTaskStatsResponse.
 
         目标redis键数量
 
@@ -174,7 +174,7 @@ class ShowMigrationTaskStatsResponse(SdkResponse):
 
     @property
     def target_input_kbps(self):
-        """Gets the target_input_kbps of this ShowMigrationTaskStatsResponse.
+        r"""Gets the target_input_kbps of this ShowMigrationTaskStatsResponse.
 
         目标redis键写入流量，单位KB/s
 
@@ -185,7 +185,7 @@ class ShowMigrationTaskStatsResponse(SdkResponse):
 
     @target_input_kbps.setter
     def target_input_kbps(self, target_input_kbps):
-        """Sets the target_input_kbps of this ShowMigrationTaskStatsResponse.
+        r"""Sets the target_input_kbps of this ShowMigrationTaskStatsResponse.
 
         目标redis键写入流量，单位KB/s
 
@@ -196,7 +196,7 @@ class ShowMigrationTaskStatsResponse(SdkResponse):
 
     @property
     def target_ops(self):
-        """Gets the target_ops of this ShowMigrationTaskStatsResponse.
+        r"""Gets the target_ops of this ShowMigrationTaskStatsResponse.
 
         目标redis每秒并发操作数
 
@@ -207,7 +207,7 @@ class ShowMigrationTaskStatsResponse(SdkResponse):
 
     @target_ops.setter
     def target_ops(self, target_ops):
-        """Sets the target_ops of this ShowMigrationTaskStatsResponse.
+        r"""Sets the target_ops of this ShowMigrationTaskStatsResponse.
 
         目标redis每秒并发操作数
 
@@ -218,7 +218,7 @@ class ShowMigrationTaskStatsResponse(SdkResponse):
 
     @property
     def is_migrating(self):
-        """Gets the is_migrating of this ShowMigrationTaskStatsResponse.
+        r"""Gets the is_migrating of this ShowMigrationTaskStatsResponse.
 
         迁移任务是否在进行
 
@@ -229,7 +229,7 @@ class ShowMigrationTaskStatsResponse(SdkResponse):
 
     @is_migrating.setter
     def is_migrating(self, is_migrating):
-        """Sets the is_migrating of this ShowMigrationTaskStatsResponse.
+        r"""Sets the is_migrating of this ShowMigrationTaskStatsResponse.
 
         迁移任务是否在进行
 

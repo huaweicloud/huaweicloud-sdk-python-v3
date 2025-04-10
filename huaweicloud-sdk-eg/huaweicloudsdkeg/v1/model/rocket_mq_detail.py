@@ -43,7 +43,7 @@ class RocketMqDetail:
     }
 
     def __init__(self, instance_id=None, group=None, topic=None, access_key=None, secret_key=None, vpc_id=None, subnet_id=None, namesrv_address=None, ssl_enable=None, enable_acl=None):
-        """RocketMqDetail
+        r"""RocketMqDetail
 
         The model defined in huaweicloud sdk
 
@@ -102,7 +102,7 @@ class RocketMqDetail:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this RocketMqDetail.
+        r"""Gets the instance_id of this RocketMqDetail.
 
         RocketMQ实例ID
 
@@ -113,7 +113,7 @@ class RocketMqDetail:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this RocketMqDetail.
+        r"""Sets the instance_id of this RocketMqDetail.
 
         RocketMQ实例ID
 
@@ -124,7 +124,7 @@ class RocketMqDetail:
 
     @property
     def group(self):
-        """Gets the group of this RocketMqDetail.
+        r"""Gets the group of this RocketMqDetail.
 
         消费组
 
@@ -135,7 +135,7 @@ class RocketMqDetail:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this RocketMqDetail.
+        r"""Sets the group of this RocketMqDetail.
 
         消费组
 
@@ -146,7 +146,7 @@ class RocketMqDetail:
 
     @property
     def topic(self):
-        """Gets the topic of this RocketMqDetail.
+        r"""Gets the topic of this RocketMqDetail.
 
         Topic
 
@@ -157,7 +157,7 @@ class RocketMqDetail:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this RocketMqDetail.
+        r"""Sets the topic of this RocketMqDetail.
 
         Topic
 
@@ -168,7 +168,7 @@ class RocketMqDetail:
 
     @property
     def access_key(self):
-        """Gets the access_key of this RocketMqDetail.
+        r"""Gets the access_key of this RocketMqDetail.
 
         用户名
 
@@ -179,7 +179,7 @@ class RocketMqDetail:
 
     @access_key.setter
     def access_key(self, access_key):
-        """Sets the access_key of this RocketMqDetail.
+        r"""Sets the access_key of this RocketMqDetail.
 
         用户名
 
@@ -190,7 +190,7 @@ class RocketMqDetail:
 
     @property
     def secret_key(self):
-        """Gets the secret_key of this RocketMqDetail.
+        r"""Gets the secret_key of this RocketMqDetail.
 
         密钥
 
@@ -201,7 +201,7 @@ class RocketMqDetail:
 
     @secret_key.setter
     def secret_key(self, secret_key):
-        """Sets the secret_key of this RocketMqDetail.
+        r"""Sets the secret_key of this RocketMqDetail.
 
         密钥
 
@@ -212,7 +212,7 @@ class RocketMqDetail:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this RocketMqDetail.
+        r"""Gets the vpc_id of this RocketMqDetail.
 
         虚拟私有云
 
@@ -223,7 +223,7 @@ class RocketMqDetail:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this RocketMqDetail.
+        r"""Sets the vpc_id of this RocketMqDetail.
 
         虚拟私有云
 
@@ -234,7 +234,7 @@ class RocketMqDetail:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this RocketMqDetail.
+        r"""Gets the subnet_id of this RocketMqDetail.
 
         子网
 
@@ -245,7 +245,7 @@ class RocketMqDetail:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this RocketMqDetail.
+        r"""Sets the subnet_id of this RocketMqDetail.
 
         子网
 
@@ -256,7 +256,7 @@ class RocketMqDetail:
 
     @property
     def namesrv_address(self):
-        """Gets the namesrv_address of this RocketMqDetail.
+        r"""Gets the namesrv_address of this RocketMqDetail.
 
         连接地址
 
@@ -267,7 +267,7 @@ class RocketMqDetail:
 
     @namesrv_address.setter
     def namesrv_address(self, namesrv_address):
-        """Sets the namesrv_address of this RocketMqDetail.
+        r"""Sets the namesrv_address of this RocketMqDetail.
 
         连接地址
 
@@ -278,7 +278,7 @@ class RocketMqDetail:
 
     @property
     def ssl_enable(self):
-        """Gets the ssl_enable of this RocketMqDetail.
+        r"""Gets the ssl_enable of this RocketMqDetail.
 
         SSL
 
@@ -289,7 +289,7 @@ class RocketMqDetail:
 
     @ssl_enable.setter
     def ssl_enable(self, ssl_enable):
-        """Sets the ssl_enable of this RocketMqDetail.
+        r"""Sets the ssl_enable of this RocketMqDetail.
 
         SSL
 
@@ -300,7 +300,7 @@ class RocketMqDetail:
 
     @property
     def enable_acl(self):
-        """Gets the enable_acl of this RocketMqDetail.
+        r"""Gets the enable_acl of this RocketMqDetail.
 
         ACL访问控制
 
@@ -311,7 +311,7 @@ class RocketMqDetail:
 
     @enable_acl.setter
     def enable_acl(self, enable_acl):
-        """Sets the enable_acl of this RocketMqDetail.
+        r"""Sets the enable_acl of this RocketMqDetail.
 
         ACL访问控制
 

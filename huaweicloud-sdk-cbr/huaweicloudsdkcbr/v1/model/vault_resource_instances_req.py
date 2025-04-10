@@ -47,7 +47,7 @@ class VaultResourceInstancesReq:
     }
 
     def __init__(self, without_any_tag=None, tags=None, tags_any=None, not_tags=None, not_tags_any=None, sys_tags=None, limit=None, offset=None, action=None, matches=None, cloud_type=None, object_type=None):
-        """VaultResourceInstancesReq
+        r"""VaultResourceInstancesReq
 
         The model defined in huaweicloud sdk
 
@@ -119,7 +119,7 @@ class VaultResourceInstancesReq:
 
     @property
     def without_any_tag(self):
-        """Gets the without_any_tag of this VaultResourceInstancesReq.
+        r"""Gets the without_any_tag of this VaultResourceInstancesReq.
 
         不包含任意一个标签，该字段为true时查询所有不带标签的资源，此时忽略 “tags”、“tags_any”、“not_tags”、“not_tags_any”字段。
 
@@ -130,7 +130,7 @@ class VaultResourceInstancesReq:
 
     @without_any_tag.setter
     def without_any_tag(self, without_any_tag):
-        """Sets the without_any_tag of this VaultResourceInstancesReq.
+        r"""Sets the without_any_tag of this VaultResourceInstancesReq.
 
         不包含任意一个标签，该字段为true时查询所有不带标签的资源，此时忽略 “tags”、“tags_any”、“not_tags”、“not_tags_any”字段。
 
@@ -141,7 +141,7 @@ class VaultResourceInstancesReq:
 
     @property
     def tags(self):
-        """Gets the tags of this VaultResourceInstancesReq.
+        r"""Gets the tags of this VaultResourceInstancesReq.
 
         包含标签。  tags不允许为空列表。  tags中最多包含10个key。  tags中key不允许重复。  tags中多个key之间是“与”的关系。  结果返回包含所有标签的资源列表，key之间是与的关系，key-value结构中value是或的关系。  无过滤条件时返回全量数据。
 
@@ -152,7 +152,7 @@ class VaultResourceInstancesReq:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this VaultResourceInstancesReq.
+        r"""Sets the tags of this VaultResourceInstancesReq.
 
         包含标签。  tags不允许为空列表。  tags中最多包含10个key。  tags中key不允许重复。  tags中多个key之间是“与”的关系。  结果返回包含所有标签的资源列表，key之间是与的关系，key-value结构中value是或的关系。  无过滤条件时返回全量数据。
 
@@ -163,7 +163,7 @@ class VaultResourceInstancesReq:
 
     @property
     def tags_any(self):
-        """Gets the tags_any of this VaultResourceInstancesReq.
+        r"""Gets the tags_any of this VaultResourceInstancesReq.
 
         包含任一标签。  tags不允许为空列表。  tags中最多包含10个key。  tags中key不允许重复。  结果返回包含任一标签的资源列表，key之间是或的关系，key-value结构中value是或的关系。  无过滤条件时返回全量数据。
 
@@ -174,7 +174,7 @@ class VaultResourceInstancesReq:
 
     @tags_any.setter
     def tags_any(self, tags_any):
-        """Sets the tags_any of this VaultResourceInstancesReq.
+        r"""Sets the tags_any of this VaultResourceInstancesReq.
 
         包含任一标签。  tags不允许为空列表。  tags中最多包含10个key。  tags中key不允许重复。  结果返回包含任一标签的资源列表，key之间是或的关系，key-value结构中value是或的关系。  无过滤条件时返回全量数据。
 
@@ -185,7 +185,7 @@ class VaultResourceInstancesReq:
 
     @property
     def not_tags(self):
-        """Gets the not_tags of this VaultResourceInstancesReq.
+        r"""Gets the not_tags of this VaultResourceInstancesReq.
 
         不包含标签。  tags不允许为空列表。  tags中最多包含10个key。  tags中key不允许重复。  结果返回不包含所有标签的资源列表，key之间是与的关系，key-value结构中value是或的关系。  无过滤条件时返回全量数据。
 
@@ -196,7 +196,7 @@ class VaultResourceInstancesReq:
 
     @not_tags.setter
     def not_tags(self, not_tags):
-        """Sets the not_tags of this VaultResourceInstancesReq.
+        r"""Sets the not_tags of this VaultResourceInstancesReq.
 
         不包含标签。  tags不允许为空列表。  tags中最多包含10个key。  tags中key不允许重复。  结果返回不包含所有标签的资源列表，key之间是与的关系，key-value结构中value是或的关系。  无过滤条件时返回全量数据。
 
@@ -207,7 +207,7 @@ class VaultResourceInstancesReq:
 
     @property
     def not_tags_any(self):
-        """Gets the not_tags_any of this VaultResourceInstancesReq.
+        r"""Gets the not_tags_any of this VaultResourceInstancesReq.
 
         不包含任一标签。  tags不允许为空列表。  tags中最多包含10个key。  tags中key不允许重复。  结果返回不包含任一标签的资源列表，key之间是或的关系，key-value结构张value是或的关系。  无过滤条件时返回全量数据。
 
@@ -218,7 +218,7 @@ class VaultResourceInstancesReq:
 
     @not_tags_any.setter
     def not_tags_any(self, not_tags_any):
-        """Sets the not_tags_any of this VaultResourceInstancesReq.
+        r"""Sets the not_tags_any of this VaultResourceInstancesReq.
 
         不包含任一标签。  tags不允许为空列表。  tags中最多包含10个key。  tags中key不允许重复。  结果返回不包含任一标签的资源列表，key之间是或的关系，key-value结构张value是或的关系。  无过滤条件时返回全量数据。
 
@@ -229,7 +229,7 @@ class VaultResourceInstancesReq:
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this VaultResourceInstancesReq.
+        r"""Gets the sys_tags of this VaultResourceInstancesReq.
 
         仅op_service权限可以使用此字段做资源实例过滤条件。  目前TMS调用时只包含一个tag结构体。  * key： _sys_enterprise_project_id  * values：企业项目id列表  目前TMS调用时，key下面只包含一个value，0表示默认企业项目。  sys_tags和租户标签过滤条件（tags、tags_any、not_tags、not_tags_any）不能同时使用。  无sys_tags时按照tag接口处理，无tag过滤条件时返回全量数据。  sys_tags不能为空列表
 
@@ -240,7 +240,7 @@ class VaultResourceInstancesReq:
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this VaultResourceInstancesReq.
+        r"""Sets the sys_tags of this VaultResourceInstancesReq.
 
         仅op_service权限可以使用此字段做资源实例过滤条件。  目前TMS调用时只包含一个tag结构体。  * key： _sys_enterprise_project_id  * values：企业项目id列表  目前TMS调用时，key下面只包含一个value，0表示默认企业项目。  sys_tags和租户标签过滤条件（tags、tags_any、not_tags、not_tags_any）不能同时使用。  无sys_tags时按照tag接口处理，无tag过滤条件时返回全量数据。  sys_tags不能为空列表
 
@@ -251,7 +251,7 @@ class VaultResourceInstancesReq:
 
     @property
     def limit(self):
-        """Gets the limit of this VaultResourceInstancesReq.
+        r"""Gets the limit of this VaultResourceInstancesReq.
 
         查询记录数（action为count时无此参数）如果action为filter时，默认为1000，limit最小值为1，limit最大值为1000, 不在范围内报错。返回的结果中记录数不超过limit。
 
@@ -262,7 +262,7 @@ class VaultResourceInstancesReq:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this VaultResourceInstancesReq.
+        r"""Sets the limit of this VaultResourceInstancesReq.
 
         查询记录数（action为count时无此参数）如果action为filter时，默认为1000，limit最小值为1，limit最大值为1000, 不在范围内报错。返回的结果中记录数不超过limit。
 
@@ -273,7 +273,7 @@ class VaultResourceInstancesReq:
 
     @property
     def offset(self):
-        """Gets the offset of this VaultResourceInstancesReq.
+        r"""Gets the offset of this VaultResourceInstancesReq.
 
         索引位置（action为count时无此参数）如果action为filter时，默认为0，offset最小值为0。返回的结果中第一条记录为符合查询条件的第offset+1条记录。
 
@@ -284,7 +284,7 @@ class VaultResourceInstancesReq:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this VaultResourceInstancesReq.
+        r"""Sets the offset of this VaultResourceInstancesReq.
 
         索引位置（action为count时无此参数）如果action为filter时，默认为0，offset最小值为0。返回的结果中第一条记录为符合查询条件的第offset+1条记录。
 
@@ -295,7 +295,7 @@ class VaultResourceInstancesReq:
 
     @property
     def action(self):
-        """Gets the action of this VaultResourceInstancesReq.
+        r"""Gets the action of this VaultResourceInstancesReq.
 
         操作标识取值范围为：\"filter\", \"count\"。如果是filter就是分页查询，如果是count只需按照条件将总条数返回即可
 
@@ -306,7 +306,7 @@ class VaultResourceInstancesReq:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this VaultResourceInstancesReq.
+        r"""Sets the action of this VaultResourceInstancesReq.
 
         操作标识取值范围为：\"filter\", \"count\"。如果是filter就是分页查询，如果是count只需按照条件将总条数返回即可
 
@@ -317,7 +317,7 @@ class VaultResourceInstancesReq:
 
     @property
     def matches(self):
-        """Gets the matches of this VaultResourceInstancesReq.
+        r"""Gets the matches of this VaultResourceInstancesReq.
 
         资源本身支持的查询条件。  matches中key不允许重复。  数组长度最大值为 1，后续再扩展。
 
@@ -328,7 +328,7 @@ class VaultResourceInstancesReq:
 
     @matches.setter
     def matches(self, matches):
-        """Sets the matches of this VaultResourceInstancesReq.
+        r"""Sets the matches of this VaultResourceInstancesReq.
 
         资源本身支持的查询条件。  matches中key不允许重复。  数组长度最大值为 1，后续再扩展。
 
@@ -339,7 +339,7 @@ class VaultResourceInstancesReq:
 
     @property
     def cloud_type(self):
-        """Gets the cloud_type of this VaultResourceInstancesReq.
+        r"""Gets the cloud_type of this VaultResourceInstancesReq.
 
         云类型
 
@@ -350,7 +350,7 @@ class VaultResourceInstancesReq:
 
     @cloud_type.setter
     def cloud_type(self, cloud_type):
-        """Sets the cloud_type of this VaultResourceInstancesReq.
+        r"""Sets the cloud_type of this VaultResourceInstancesReq.
 
         云类型
 
@@ -361,7 +361,7 @@ class VaultResourceInstancesReq:
 
     @property
     def object_type(self):
-        """Gets the object_type of this VaultResourceInstancesReq.
+        r"""Gets the object_type of this VaultResourceInstancesReq.
 
         资源类型
 
@@ -372,7 +372,7 @@ class VaultResourceInstancesReq:
 
     @object_type.setter
     def object_type(self, object_type):
-        """Sets the object_type of this VaultResourceInstancesReq.
+        r"""Sets the object_type of this VaultResourceInstancesReq.
 
         资源类型
 

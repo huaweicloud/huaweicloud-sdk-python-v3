@@ -27,7 +27,7 @@ class AddressBody:
     }
 
     def __init__(self, en_us=None, zh_cn=None):
-        """AddressBody
+        r"""AddressBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AddressBody:
 
     @property
     def en_us(self):
-        """Gets the en_us of this AddressBody.
+        r"""Gets the en_us of this AddressBody.
 
         英文名称。
 
@@ -61,7 +61,7 @@ class AddressBody:
 
     @en_us.setter
     def en_us(self, en_us):
-        """Sets the en_us of this AddressBody.
+        r"""Sets the en_us of this AddressBody.
 
         英文名称。
 
@@ -72,7 +72,7 @@ class AddressBody:
 
     @property
     def zh_cn(self):
-        """Gets the zh_cn of this AddressBody.
+        r"""Gets the zh_cn of this AddressBody.
 
         中文信息。
 
@@ -83,7 +83,7 @@ class AddressBody:
 
     @zh_cn.setter
     def zh_cn(self, zh_cn):
-        """Sets the zh_cn of this AddressBody.
+        r"""Sets the zh_cn of this AddressBody.
 
         中文信息。
 

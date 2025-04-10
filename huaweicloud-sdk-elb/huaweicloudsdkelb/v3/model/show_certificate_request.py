@@ -25,7 +25,7 @@ class ShowCertificateRequest:
     }
 
     def __init__(self, certificate_id=None):
-        """ShowCertificateRequest
+        r"""ShowCertificateRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowCertificateRequest:
 
     @property
     def certificate_id(self):
-        """Gets the certificate_id of this ShowCertificateRequest.
+        r"""Gets the certificate_id of this ShowCertificateRequest.
 
         证书ID。
 
@@ -53,7 +53,7 @@ class ShowCertificateRequest:
 
     @certificate_id.setter
     def certificate_id(self, certificate_id):
-        """Sets the certificate_id of this ShowCertificateRequest.
+        r"""Sets the certificate_id of this ShowCertificateRequest.
 
         证书ID。
 

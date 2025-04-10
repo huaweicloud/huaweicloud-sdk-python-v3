@@ -29,7 +29,7 @@ class ConnectionBandwidthChargeModeEnum:
     }
 
     def __init__(self):
-        """ConnectionBandwidthChargeModeEnum
+        r"""ConnectionBandwidthChargeModeEnum
 
         The model defined in huaweicloud sdk
 

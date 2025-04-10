@@ -31,7 +31,7 @@ class ListRedislogRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, log_type=None):
-        """ListRedislogRequest
+        r"""ListRedislogRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListRedislogRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListRedislogRequest.
+        r"""Gets the instance_id of this ListRedislogRequest.
 
         实例ID。
 
@@ -73,7 +73,7 @@ class ListRedislogRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListRedislogRequest.
+        r"""Sets the instance_id of this ListRedislogRequest.
 
         实例ID。
 
@@ -84,7 +84,7 @@ class ListRedislogRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListRedislogRequest.
+        r"""Gets the offset of this ListRedislogRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -95,7 +95,7 @@ class ListRedislogRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListRedislogRequest.
+        r"""Sets the offset of this ListRedislogRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -106,7 +106,7 @@ class ListRedislogRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRedislogRequest.
+        r"""Gets the limit of this ListRedislogRequest.
 
         每页显示的条目数量。
 
@@ -117,7 +117,7 @@ class ListRedislogRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRedislogRequest.
+        r"""Sets the limit of this ListRedislogRequest.
 
         每页显示的条目数量。
 
@@ -128,7 +128,7 @@ class ListRedislogRequest:
 
     @property
     def log_type(self):
-        """Gets the log_type of this ListRedislogRequest.
+        r"""Gets the log_type of this ListRedislogRequest.
 
         返回日志的类型，当前仅支持Redis运行日志，类型为run
 
@@ -139,7 +139,7 @@ class ListRedislogRequest:
 
     @log_type.setter
     def log_type(self, log_type):
-        """Sets the log_type of this ListRedislogRequest.
+        r"""Sets the log_type of this ListRedislogRequest.
 
         返回日志的类型，当前仅支持Redis运行日志，类型为run
 

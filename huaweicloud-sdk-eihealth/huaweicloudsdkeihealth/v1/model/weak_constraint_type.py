@@ -31,7 +31,7 @@ class WeakConstraintType:
     }
 
     def __init__(self):
-        """WeakConstraintType
+        r"""WeakConstraintType
 
         The model defined in huaweicloud sdk
 

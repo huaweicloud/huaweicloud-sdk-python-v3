@@ -29,7 +29,7 @@ class ExtensionStar:
     }
 
     def __init__(self, extension_id=None, comment=None, stars=None):
-        """ExtensionStar
+        r"""ExtensionStar
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ExtensionStar:
 
     @property
     def extension_id(self):
-        """Gets the extension_id of this ExtensionStar.
+        r"""Gets the extension_id of this ExtensionStar.
 
         插件id
 
@@ -66,7 +66,7 @@ class ExtensionStar:
 
     @extension_id.setter
     def extension_id(self, extension_id):
-        """Sets the extension_id of this ExtensionStar.
+        r"""Sets the extension_id of this ExtensionStar.
 
         插件id
 
@@ -77,7 +77,7 @@ class ExtensionStar:
 
     @property
     def comment(self):
-        """Gets the comment of this ExtensionStar.
+        r"""Gets the comment of this ExtensionStar.
 
         评星内容
 
@@ -88,7 +88,7 @@ class ExtensionStar:
 
     @comment.setter
     def comment(self, comment):
-        """Sets the comment of this ExtensionStar.
+        r"""Sets the comment of this ExtensionStar.
 
         评星内容
 
@@ -99,7 +99,7 @@ class ExtensionStar:
 
     @property
     def stars(self):
-        """Gets the stars of this ExtensionStar.
+        r"""Gets the stars of this ExtensionStar.
 
         评星总数
 
@@ -110,7 +110,7 @@ class ExtensionStar:
 
     @stars.setter
     def stars(self, stars):
-        """Sets the stars of this ExtensionStar.
+        r"""Sets the stars of this ExtensionStar.
 
         评星总数
 

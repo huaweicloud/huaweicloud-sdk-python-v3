@@ -59,7 +59,7 @@ class IndicatorDataObjectDetail:
     }
 
     def __init__(self, indicator_type=None, value=None, update_time=None, create_time=None, environment=None, data_source=None, first_report_time=None, is_deleted=None, last_report_time=None, granular_marking=None, name=None, id=None, project_id=None, revoked=None, status=None, verdict=None, workspace_id=None, confidence=None):
-        """IndicatorDataObjectDetail
+        r"""IndicatorDataObjectDetail
 
         The model defined in huaweicloud sdk
 
@@ -162,7 +162,7 @@ class IndicatorDataObjectDetail:
 
     @property
     def indicator_type(self):
-        """Gets the indicator_type of this IndicatorDataObjectDetail.
+        r"""Gets the indicator_type of this IndicatorDataObjectDetail.
 
         :return: The indicator_type of this IndicatorDataObjectDetail.
         :rtype: :class:`huaweicloudsdksecmaster.v2.IndicatorDataObjectDetailIndicatorType`
@@ -171,7 +171,7 @@ class IndicatorDataObjectDetail:
 
     @indicator_type.setter
     def indicator_type(self, indicator_type):
-        """Sets the indicator_type of this IndicatorDataObjectDetail.
+        r"""Sets the indicator_type of this IndicatorDataObjectDetail.
 
         :param indicator_type: The indicator_type of this IndicatorDataObjectDetail.
         :type indicator_type: :class:`huaweicloudsdksecmaster.v2.IndicatorDataObjectDetailIndicatorType`
@@ -180,7 +180,7 @@ class IndicatorDataObjectDetail:
 
     @property
     def value(self):
-        """Gets the value of this IndicatorDataObjectDetail.
+        r"""Gets the value of this IndicatorDataObjectDetail.
 
         值，如：ip url domain等
 
@@ -191,7 +191,7 @@ class IndicatorDataObjectDetail:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this IndicatorDataObjectDetail.
+        r"""Sets the value of this IndicatorDataObjectDetail.
 
         值，如：ip url domain等
 
@@ -202,7 +202,7 @@ class IndicatorDataObjectDetail:
 
     @property
     def update_time(self):
-        """Gets the update_time of this IndicatorDataObjectDetail.
+        r"""Gets the update_time of this IndicatorDataObjectDetail.
 
         更新时间
 
@@ -213,7 +213,7 @@ class IndicatorDataObjectDetail:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this IndicatorDataObjectDetail.
+        r"""Sets the update_time of this IndicatorDataObjectDetail.
 
         更新时间
 
@@ -224,7 +224,7 @@ class IndicatorDataObjectDetail:
 
     @property
     def create_time(self):
-        """Gets the create_time of this IndicatorDataObjectDetail.
+        r"""Gets the create_time of this IndicatorDataObjectDetail.
 
         创建时间
 
@@ -235,7 +235,7 @@ class IndicatorDataObjectDetail:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this IndicatorDataObjectDetail.
+        r"""Sets the create_time of this IndicatorDataObjectDetail.
 
         创建时间
 
@@ -246,7 +246,7 @@ class IndicatorDataObjectDetail:
 
     @property
     def environment(self):
-        """Gets the environment of this IndicatorDataObjectDetail.
+        r"""Gets the environment of this IndicatorDataObjectDetail.
 
         :return: The environment of this IndicatorDataObjectDetail.
         :rtype: :class:`huaweicloudsdksecmaster.v2.IndicatorDataObjectDetailEnvironment`
@@ -255,7 +255,7 @@ class IndicatorDataObjectDetail:
 
     @environment.setter
     def environment(self, environment):
-        """Sets the environment of this IndicatorDataObjectDetail.
+        r"""Sets the environment of this IndicatorDataObjectDetail.
 
         :param environment: The environment of this IndicatorDataObjectDetail.
         :type environment: :class:`huaweicloudsdksecmaster.v2.IndicatorDataObjectDetailEnvironment`
@@ -264,7 +264,7 @@ class IndicatorDataObjectDetail:
 
     @property
     def data_source(self):
-        """Gets the data_source of this IndicatorDataObjectDetail.
+        r"""Gets the data_source of this IndicatorDataObjectDetail.
 
         :return: The data_source of this IndicatorDataObjectDetail.
         :rtype: :class:`huaweicloudsdksecmaster.v2.IndicatorDataObjectDetailDataSource`
@@ -273,7 +273,7 @@ class IndicatorDataObjectDetail:
 
     @data_source.setter
     def data_source(self, data_source):
-        """Sets the data_source of this IndicatorDataObjectDetail.
+        r"""Sets the data_source of this IndicatorDataObjectDetail.
 
         :param data_source: The data_source of this IndicatorDataObjectDetail.
         :type data_source: :class:`huaweicloudsdksecmaster.v2.IndicatorDataObjectDetailDataSource`
@@ -282,7 +282,7 @@ class IndicatorDataObjectDetail:
 
     @property
     def first_report_time(self):
-        """Gets the first_report_time of this IndicatorDataObjectDetail.
+        r"""Gets the first_report_time of this IndicatorDataObjectDetail.
 
         首次发生时间
 
@@ -293,7 +293,7 @@ class IndicatorDataObjectDetail:
 
     @first_report_time.setter
     def first_report_time(self, first_report_time):
-        """Sets the first_report_time of this IndicatorDataObjectDetail.
+        r"""Sets the first_report_time of this IndicatorDataObjectDetail.
 
         首次发生时间
 
@@ -304,7 +304,7 @@ class IndicatorDataObjectDetail:
 
     @property
     def is_deleted(self):
-        """Gets the is_deleted of this IndicatorDataObjectDetail.
+        r"""Gets the is_deleted of this IndicatorDataObjectDetail.
 
         是否删除
 
@@ -315,7 +315,7 @@ class IndicatorDataObjectDetail:
 
     @is_deleted.setter
     def is_deleted(self, is_deleted):
-        """Sets the is_deleted of this IndicatorDataObjectDetail.
+        r"""Sets the is_deleted of this IndicatorDataObjectDetail.
 
         是否删除
 
@@ -326,7 +326,7 @@ class IndicatorDataObjectDetail:
 
     @property
     def last_report_time(self):
-        """Gets the last_report_time of this IndicatorDataObjectDetail.
+        r"""Gets the last_report_time of this IndicatorDataObjectDetail.
 
         最近发生时间
 
@@ -337,7 +337,7 @@ class IndicatorDataObjectDetail:
 
     @last_report_time.setter
     def last_report_time(self, last_report_time):
-        """Sets the last_report_time of this IndicatorDataObjectDetail.
+        r"""Sets the last_report_time of this IndicatorDataObjectDetail.
 
         最近发生时间
 
@@ -348,7 +348,7 @@ class IndicatorDataObjectDetail:
 
     @property
     def granular_marking(self):
-        """Gets the granular_marking of this IndicatorDataObjectDetail.
+        r"""Gets the granular_marking of this IndicatorDataObjectDetail.
 
         粒度（保密等级），由高到低：1（首次发现）、2（自产数据）、3（需购买）、4（外网直接查询）
 
@@ -359,7 +359,7 @@ class IndicatorDataObjectDetail:
 
     @granular_marking.setter
     def granular_marking(self, granular_marking):
-        """Sets the granular_marking of this IndicatorDataObjectDetail.
+        r"""Sets the granular_marking of this IndicatorDataObjectDetail.
 
         粒度（保密等级），由高到低：1（首次发现）、2（自产数据）、3（需购买）、4（外网直接查询）
 
@@ -370,7 +370,7 @@ class IndicatorDataObjectDetail:
 
     @property
     def name(self):
-        """Gets the name of this IndicatorDataObjectDetail.
+        r"""Gets the name of this IndicatorDataObjectDetail.
 
         名称
 
@@ -381,7 +381,7 @@ class IndicatorDataObjectDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this IndicatorDataObjectDetail.
+        r"""Sets the name of this IndicatorDataObjectDetail.
 
         名称
 
@@ -392,7 +392,7 @@ class IndicatorDataObjectDetail:
 
     @property
     def id(self):
-        """Gets the id of this IndicatorDataObjectDetail.
+        r"""Gets the id of this IndicatorDataObjectDetail.
 
         威胁情报ID
 
@@ -403,7 +403,7 @@ class IndicatorDataObjectDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this IndicatorDataObjectDetail.
+        r"""Sets the id of this IndicatorDataObjectDetail.
 
         威胁情报ID
 
@@ -414,7 +414,7 @@ class IndicatorDataObjectDetail:
 
     @property
     def project_id(self):
-        """Gets the project_id of this IndicatorDataObjectDetail.
+        r"""Gets the project_id of this IndicatorDataObjectDetail.
 
         项目ID
 
@@ -425,7 +425,7 @@ class IndicatorDataObjectDetail:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this IndicatorDataObjectDetail.
+        r"""Sets the project_id of this IndicatorDataObjectDetail.
 
         项目ID
 
@@ -436,7 +436,7 @@ class IndicatorDataObjectDetail:
 
     @property
     def revoked(self):
-        """Gets the revoked of this IndicatorDataObjectDetail.
+        r"""Gets the revoked of this IndicatorDataObjectDetail.
 
         是否作废
 
@@ -447,7 +447,7 @@ class IndicatorDataObjectDetail:
 
     @revoked.setter
     def revoked(self, revoked):
-        """Sets the revoked of this IndicatorDataObjectDetail.
+        r"""Sets the revoked of this IndicatorDataObjectDetail.
 
         是否作废
 
@@ -458,7 +458,7 @@ class IndicatorDataObjectDetail:
 
     @property
     def status(self):
-        """Gets the status of this IndicatorDataObjectDetail.
+        r"""Gets the status of this IndicatorDataObjectDetail.
 
         状态， Open--打开，Closed--关闭, Revoked--作废
 
@@ -469,7 +469,7 @@ class IndicatorDataObjectDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this IndicatorDataObjectDetail.
+        r"""Sets the status of this IndicatorDataObjectDetail.
 
         状态， Open--打开，Closed--关闭, Revoked--作废
 
@@ -480,7 +480,7 @@ class IndicatorDataObjectDetail:
 
     @property
     def verdict(self):
-        """Gets the verdict of this IndicatorDataObjectDetail.
+        r"""Gets the verdict of this IndicatorDataObjectDetail.
 
         威胁度， Black--黑,White--白，Gray--灰
 
@@ -491,7 +491,7 @@ class IndicatorDataObjectDetail:
 
     @verdict.setter
     def verdict(self, verdict):
-        """Sets the verdict of this IndicatorDataObjectDetail.
+        r"""Sets the verdict of this IndicatorDataObjectDetail.
 
         威胁度， Black--黑,White--白，Gray--灰
 
@@ -502,7 +502,7 @@ class IndicatorDataObjectDetail:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this IndicatorDataObjectDetail.
+        r"""Gets the workspace_id of this IndicatorDataObjectDetail.
 
         工作空间ID
 
@@ -513,7 +513,7 @@ class IndicatorDataObjectDetail:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this IndicatorDataObjectDetail.
+        r"""Sets the workspace_id of this IndicatorDataObjectDetail.
 
         工作空间ID
 
@@ -524,7 +524,7 @@ class IndicatorDataObjectDetail:
 
     @property
     def confidence(self):
-        """Gets the confidence of this IndicatorDataObjectDetail.
+        r"""Gets the confidence of this IndicatorDataObjectDetail.
 
         置信度，取值范围是80-100
 
@@ -535,7 +535,7 @@ class IndicatorDataObjectDetail:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this IndicatorDataObjectDetail.
+        r"""Sets the confidence of this IndicatorDataObjectDetail.
 
         置信度，取值范围是80-100
 

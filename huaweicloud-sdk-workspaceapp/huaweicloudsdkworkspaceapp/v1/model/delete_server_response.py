@@ -26,7 +26,7 @@ class DeleteServerResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """DeleteServerResponse
+        r"""DeleteServerResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteServerResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this DeleteServerResponse.
+        r"""Gets the job_id of this DeleteServerResponse.
 
         任务ID。
 
@@ -55,7 +55,7 @@ class DeleteServerResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DeleteServerResponse.
+        r"""Sets the job_id of this DeleteServerResponse.
 
         任务ID。
 

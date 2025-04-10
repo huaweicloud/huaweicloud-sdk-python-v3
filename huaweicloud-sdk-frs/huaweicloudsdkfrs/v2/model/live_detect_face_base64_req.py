@@ -25,7 +25,7 @@ class LiveDetectFaceBase64Req:
     }
 
     def __init__(self, image_base64=None):
-        """LiveDetectFaceBase64Req
+        r"""LiveDetectFaceBase64Req
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class LiveDetectFaceBase64Req:
 
     @property
     def image_base64(self):
-        """Gets the image_base64 of this LiveDetectFaceBase64Req.
+        r"""Gets the image_base64 of this LiveDetectFaceBase64Req.
 
         图像数据，Base64编码，要求： • Base64编码后大小不超过8MB。 • 图片编码格式： JPG、PNG、JPEG、BMP格式的图片。
 
@@ -53,7 +53,7 @@ class LiveDetectFaceBase64Req:
 
     @image_base64.setter
     def image_base64(self, image_base64):
-        """Sets the image_base64 of this LiveDetectFaceBase64Req.
+        r"""Sets the image_base64 of this LiveDetectFaceBase64Req.
 
         图像数据，Base64编码，要求： • Base64编码后大小不超过8MB。 • 图片编码格式： JPG、PNG、JPEG、BMP格式的图片。
 

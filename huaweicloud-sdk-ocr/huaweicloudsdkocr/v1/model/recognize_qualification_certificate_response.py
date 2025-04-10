@@ -28,7 +28,7 @@ class RecognizeQualificationCertificateResponse(SdkResponse):
     }
 
     def __init__(self, result=None, x_request_id=None):
-        """RecognizeQualificationCertificateResponse
+        r"""RecognizeQualificationCertificateResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RecognizeQualificationCertificateResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RecognizeQualificationCertificateResponse.
+        r"""Gets the result of this RecognizeQualificationCertificateResponse.
 
         :return: The result of this RecognizeQualificationCertificateResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.QualificationCertificateResult`
@@ -60,7 +60,7 @@ class RecognizeQualificationCertificateResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RecognizeQualificationCertificateResponse.
+        r"""Sets the result of this RecognizeQualificationCertificateResponse.
 
         :param result: The result of this RecognizeQualificationCertificateResponse.
         :type result: :class:`huaweicloudsdkocr.v1.QualificationCertificateResult`
@@ -69,7 +69,7 @@ class RecognizeQualificationCertificateResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this RecognizeQualificationCertificateResponse.
+        r"""Gets the x_request_id of this RecognizeQualificationCertificateResponse.
 
         :return: The x_request_id of this RecognizeQualificationCertificateResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class RecognizeQualificationCertificateResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this RecognizeQualificationCertificateResponse.
+        r"""Sets the x_request_id of this RecognizeQualificationCertificateResponse.
 
         :param x_request_id: The x_request_id of this RecognizeQualificationCertificateResponse.
         :type x_request_id: str

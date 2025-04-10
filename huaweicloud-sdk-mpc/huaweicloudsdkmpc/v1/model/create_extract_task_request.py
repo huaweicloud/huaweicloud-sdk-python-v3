@@ -25,7 +25,7 @@ class CreateExtractTaskRequest:
     }
 
     def __init__(self, body=None):
-        """CreateExtractTaskRequest
+        r"""CreateExtractTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateExtractTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateExtractTaskRequest.
+        r"""Gets the body of this CreateExtractTaskRequest.
 
         :return: The body of this CreateExtractTaskRequest.
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateExtractTaskReq`
@@ -52,7 +52,7 @@ class CreateExtractTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateExtractTaskRequest.
+        r"""Sets the body of this CreateExtractTaskRequest.
 
         :param body: The body of this CreateExtractTaskRequest.
         :type body: :class:`huaweicloudsdkmpc.v1.CreateExtractTaskReq`

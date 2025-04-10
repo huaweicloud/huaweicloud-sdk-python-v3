@@ -39,7 +39,7 @@ class BackupRestoreOptionInfo:
     }
 
     def __init__(self, is_cover=None, is_default_restore=None, is_last_backup=None, is_precheck=None, recovery_mode=None, db_names=None, reset_db_name_map=None, is_delete_backup_file=None):
-        """BackupRestoreOptionInfo
+        r"""BackupRestoreOptionInfo
 
         The model defined in huaweicloud sdk
 
@@ -89,7 +89,7 @@ class BackupRestoreOptionInfo:
 
     @property
     def is_cover(self):
-        """Gets the is_cover of this BackupRestoreOptionInfo.
+        r"""Gets the is_cover of this BackupRestoreOptionInfo.
 
         是否覆盖目标数据库，不填默认为false。  值为“true”表示覆盖。  值为“false”表示不覆盖。
 
@@ -100,7 +100,7 @@ class BackupRestoreOptionInfo:
 
     @is_cover.setter
     def is_cover(self, is_cover):
-        """Sets the is_cover of this BackupRestoreOptionInfo.
+        r"""Sets the is_cover of this BackupRestoreOptionInfo.
 
         是否覆盖目标数据库，不填默认为false。  值为“true”表示覆盖。  值为“false”表示不覆盖。
 
@@ -111,7 +111,7 @@ class BackupRestoreOptionInfo:
 
     @property
     def is_default_restore(self):
-        """Gets the is_default_restore of this BackupRestoreOptionInfo.
+        r"""Gets the is_default_restore of this BackupRestoreOptionInfo.
 
         是否默认恢复，默认恢复所有数据库。  “true”是代表默认恢复还原备份文件中的全部数据库。  “false”代表需要在db_names这个字段中指定需要恢复的数据库名。
 
@@ -122,7 +122,7 @@ class BackupRestoreOptionInfo:
 
     @is_default_restore.setter
     def is_default_restore(self, is_default_restore):
-        """Sets the is_default_restore of this BackupRestoreOptionInfo.
+        r"""Sets the is_default_restore of this BackupRestoreOptionInfo.
 
         是否默认恢复，默认恢复所有数据库。  “true”是代表默认恢复还原备份文件中的全部数据库。  “false”代表需要在db_names这个字段中指定需要恢复的数据库名。
 
@@ -133,7 +133,7 @@ class BackupRestoreOptionInfo:
 
     @property
     def is_last_backup(self):
-        """Gets the is_last_backup of this BackupRestoreOptionInfo.
+        r"""Gets the is_last_backup of this BackupRestoreOptionInfo.
 
         一次典型的增量恢复过程，会涉及多次恢复增量备份。每个增量备份恢复均会使目标数据库保持还原中状态，此时数据库不可读写，直至最后一个增量备份恢复完成后，数据库才能变成可用状态。此后数据库将无法继续进行增量恢复，所以确定为最后一个备份的场景有：  一次性全量迁移，后续将不再进行增量恢复时，设置该字段值为“true”。  增量恢复流程中，确定为最后割接阶段的最后一个增量备份时，设置该字段值为“false”。
 
@@ -144,7 +144,7 @@ class BackupRestoreOptionInfo:
 
     @is_last_backup.setter
     def is_last_backup(self, is_last_backup):
-        """Sets the is_last_backup of this BackupRestoreOptionInfo.
+        r"""Sets the is_last_backup of this BackupRestoreOptionInfo.
 
         一次典型的增量恢复过程，会涉及多次恢复增量备份。每个增量备份恢复均会使目标数据库保持还原中状态，此时数据库不可读写，直至最后一个增量备份恢复完成后，数据库才能变成可用状态。此后数据库将无法继续进行增量恢复，所以确定为最后一个备份的场景有：  一次性全量迁移，后续将不再进行增量恢复时，设置该字段值为“true”。  增量恢复流程中，确定为最后割接阶段的最后一个增量备份时，设置该字段值为“false”。
 
@@ -155,7 +155,7 @@ class BackupRestoreOptionInfo:
 
     @property
     def is_precheck(self):
-        """Gets the is_precheck of this BackupRestoreOptionInfo.
+        r"""Gets the is_precheck of this BackupRestoreOptionInfo.
 
         是否执行预校验。 true：执行。 false：不执行。
 
@@ -166,7 +166,7 @@ class BackupRestoreOptionInfo:
 
     @is_precheck.setter
     def is_precheck(self, is_precheck):
-        """Sets the is_precheck of this BackupRestoreOptionInfo.
+        r"""Sets the is_precheck of this BackupRestoreOptionInfo.
 
         是否执行预校验。 true：执行。 false：不执行。
 
@@ -177,7 +177,7 @@ class BackupRestoreOptionInfo:
 
     @property
     def recovery_mode(self):
-        """Gets the recovery_mode of this BackupRestoreOptionInfo.
+        r"""Gets the recovery_mode of this BackupRestoreOptionInfo.
 
         恢复模式：  “full”表示全量迁移。  “incre”表示增量迁移 。
 
@@ -188,7 +188,7 @@ class BackupRestoreOptionInfo:
 
     @recovery_mode.setter
     def recovery_mode(self, recovery_mode):
-        """Sets the recovery_mode of this BackupRestoreOptionInfo.
+        r"""Sets the recovery_mode of this BackupRestoreOptionInfo.
 
         恢复模式：  “full”表示全量迁移。  “incre”表示增量迁移 。
 
@@ -199,7 +199,7 @@ class BackupRestoreOptionInfo:
 
     @property
     def db_names(self):
-        """Gets the db_names of this BackupRestoreOptionInfo.
+        r"""Gets the db_names of this BackupRestoreOptionInfo.
 
         数据库名称。
 
@@ -210,7 +210,7 @@ class BackupRestoreOptionInfo:
 
     @db_names.setter
     def db_names(self, db_names):
-        """Sets the db_names of this BackupRestoreOptionInfo.
+        r"""Sets the db_names of this BackupRestoreOptionInfo.
 
         数据库名称。
 
@@ -221,7 +221,7 @@ class BackupRestoreOptionInfo:
 
     @property
     def reset_db_name_map(self):
-        """Gets the reset_db_name_map of this BackupRestoreOptionInfo.
+        r"""Gets the reset_db_name_map of this BackupRestoreOptionInfo.
 
         该字段为一个map，目前使用格式key是\"\"，value是新数据库名字。 该功能将忽略备份文件中原有的数据库名，通过DRS将其恢复为指定的新数据库名。 使用条件： - 备份文件中只有一个数据库。 - 备份文件是全量备份类型（待恢复备份类型选择：全量备份），且是一次性恢复（最后一个备份选择：是）。
 
@@ -232,7 +232,7 @@ class BackupRestoreOptionInfo:
 
     @reset_db_name_map.setter
     def reset_db_name_map(self, reset_db_name_map):
-        """Sets the reset_db_name_map of this BackupRestoreOptionInfo.
+        r"""Sets the reset_db_name_map of this BackupRestoreOptionInfo.
 
         该字段为一个map，目前使用格式key是\"\"，value是新数据库名字。 该功能将忽略备份文件中原有的数据库名，通过DRS将其恢复为指定的新数据库名。 使用条件： - 备份文件中只有一个数据库。 - 备份文件是全量备份类型（待恢复备份类型选择：全量备份），且是一次性恢复（最后一个备份选择：是）。
 
@@ -243,7 +243,7 @@ class BackupRestoreOptionInfo:
 
     @property
     def is_delete_backup_file(self):
-        """Gets the is_delete_backup_file of this BackupRestoreOptionInfo.
+        r"""Gets the is_delete_backup_file of this BackupRestoreOptionInfo.
 
         该参数控制使用OBS桶中备份文件恢复时，当任务结束时是否删除下载到RDS for SQL server磁盘中的OBS备份文件，默认删除。 - true 删除 - false 不删除
 
@@ -254,7 +254,7 @@ class BackupRestoreOptionInfo:
 
     @is_delete_backup_file.setter
     def is_delete_backup_file(self, is_delete_backup_file):
-        """Sets the is_delete_backup_file of this BackupRestoreOptionInfo.
+        r"""Sets the is_delete_backup_file of this BackupRestoreOptionInfo.
 
         该参数控制使用OBS桶中备份文件恢复时，当任务结束时是否删除下载到RDS for SQL server磁盘中的OBS备份文件，默认删除。 - true 删除 - false 不删除
 

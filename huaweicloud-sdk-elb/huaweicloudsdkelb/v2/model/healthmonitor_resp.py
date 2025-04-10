@@ -55,7 +55,7 @@ class HealthmonitorResp:
     }
 
     def __init__(self, id=None, project_id=None, tenant_id=None, name=None, admin_state_up=None, monitor_port=None, timeout=None, type=None, expected_codes=None, domain_name=None, url_path=None, http_method=None, delay=None, max_retries=None, pools=None, max_retries_down=None):
-        """HealthmonitorResp
+        r"""HealthmonitorResp
 
         The model defined in huaweicloud sdk
 
@@ -132,7 +132,7 @@ class HealthmonitorResp:
 
     @property
     def id(self):
-        """Gets the id of this HealthmonitorResp.
+        r"""Gets the id of this HealthmonitorResp.
 
         健康检查ID
 
@@ -143,7 +143,7 @@ class HealthmonitorResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this HealthmonitorResp.
+        r"""Sets the id of this HealthmonitorResp.
 
         健康检查ID
 
@@ -154,7 +154,7 @@ class HealthmonitorResp:
 
     @property
     def project_id(self):
-        """Gets the project_id of this HealthmonitorResp.
+        r"""Gets the project_id of this HealthmonitorResp.
 
         健康检查所在的项目ID。
 
@@ -165,7 +165,7 @@ class HealthmonitorResp:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this HealthmonitorResp.
+        r"""Sets the project_id of this HealthmonitorResp.
 
         健康检查所在的项目ID。
 
@@ -176,7 +176,7 @@ class HealthmonitorResp:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this HealthmonitorResp.
+        r"""Gets the tenant_id of this HealthmonitorResp.
 
         健康检查所在的项目ID。
 
@@ -187,7 +187,7 @@ class HealthmonitorResp:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this HealthmonitorResp.
+        r"""Sets the tenant_id of this HealthmonitorResp.
 
         健康检查所在的项目ID。
 
@@ -198,7 +198,7 @@ class HealthmonitorResp:
 
     @property
     def name(self):
-        """Gets the name of this HealthmonitorResp.
+        r"""Gets the name of this HealthmonitorResp.
 
         健康检查名称。
 
@@ -209,7 +209,7 @@ class HealthmonitorResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this HealthmonitorResp.
+        r"""Sets the name of this HealthmonitorResp.
 
         健康检查名称。
 
@@ -220,7 +220,7 @@ class HealthmonitorResp:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this HealthmonitorResp.
+        r"""Gets the admin_state_up of this HealthmonitorResp.
 
         健康检查的管理状态；该字段虽然支持创建、更新，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
 
@@ -231,7 +231,7 @@ class HealthmonitorResp:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this HealthmonitorResp.
+        r"""Sets the admin_state_up of this HealthmonitorResp.
 
         健康检查的管理状态；该字段虽然支持创建、更新，但实际取值决定于后端云服务器对应的弹性云服务器是否存在。若存在，该值为true，否则，该值为false。
 
@@ -242,7 +242,7 @@ class HealthmonitorResp:
 
     @property
     def monitor_port(self):
-        """Gets the monitor_port of this HealthmonitorResp.
+        r"""Gets the monitor_port of this HealthmonitorResp.
 
         健康检查端口号。默认为空，表示使用后端云服务器组的端口。
 
@@ -253,7 +253,7 @@ class HealthmonitorResp:
 
     @monitor_port.setter
     def monitor_port(self, monitor_port):
-        """Sets the monitor_port of this HealthmonitorResp.
+        r"""Sets the monitor_port of this HealthmonitorResp.
 
         健康检查端口号。默认为空，表示使用后端云服务器组的端口。
 
@@ -264,7 +264,7 @@ class HealthmonitorResp:
 
     @property
     def timeout(self):
-        """Gets the timeout of this HealthmonitorResp.
+        r"""Gets the timeout of this HealthmonitorResp.
 
         健康检查的超时时间。建议该值小于delay的值。
 
@@ -275,7 +275,7 @@ class HealthmonitorResp:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this HealthmonitorResp.
+        r"""Sets the timeout of this HealthmonitorResp.
 
         健康检查的超时时间。建议该值小于delay的值。
 
@@ -286,7 +286,7 @@ class HealthmonitorResp:
 
     @property
     def type(self):
-        """Gets the type of this HealthmonitorResp.
+        r"""Gets the type of this HealthmonitorResp.
 
         健康检查类型
 
@@ -297,7 +297,7 @@ class HealthmonitorResp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this HealthmonitorResp.
+        r"""Sets the type of this HealthmonitorResp.
 
         健康检查类型
 
@@ -308,7 +308,7 @@ class HealthmonitorResp:
 
     @property
     def expected_codes(self):
-        """Gets the expected_codes of this HealthmonitorResp.
+        r"""Gets the expected_codes of this HealthmonitorResp.
 
         期望HTTP响应状态码，指定下列值：单值，例如200；列表，例如200，202；区间，例如200-204。仅当type为HTTP时生效。该字段为预留字段，暂未启用。
 
@@ -319,7 +319,7 @@ class HealthmonitorResp:
 
     @expected_codes.setter
     def expected_codes(self, expected_codes):
-        """Sets the expected_codes of this HealthmonitorResp.
+        r"""Sets the expected_codes of this HealthmonitorResp.
 
         期望HTTP响应状态码，指定下列值：单值，例如200；列表，例如200，202；区间，例如200-204。仅当type为HTTP时生效。该字段为预留字段，暂未启用。
 
@@ -330,7 +330,7 @@ class HealthmonitorResp:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this HealthmonitorResp.
+        r"""Gets the domain_name of this HealthmonitorResp.
 
         功能说明：健康检查测试member健康状态时，发送的http请求的域名。仅当type为HTTP时生效。使用说明：默认为空，表示使用负载均衡器的vip作为http请求的目的地址。以数字或字母开头，只能包含数字、字母、’-’、’.’。
 
@@ -341,7 +341,7 @@ class HealthmonitorResp:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this HealthmonitorResp.
+        r"""Sets the domain_name of this HealthmonitorResp.
 
         功能说明：健康检查测试member健康状态时，发送的http请求的域名。仅当type为HTTP时生效。使用说明：默认为空，表示使用负载均衡器的vip作为http请求的目的地址。以数字或字母开头，只能包含数字、字母、’-’、’.’。
 
@@ -352,7 +352,7 @@ class HealthmonitorResp:
 
     @property
     def url_path(self):
-        """Gets the url_path of this HealthmonitorResp.
+        r"""Gets the url_path of this HealthmonitorResp.
 
         健康检查请求的请求路径。以\"/\"开头，默认为\"/\"。 支持使用字母、数字和短划线（-）、正斜线（/）、半角句号（.）、百分号（%）、半角问号（?）、井号（#）和and（&）以及扩展字符集_;~!()*[]@$^:',+  使用说明：当type为HTTP/HTTPS时生效。
 
@@ -363,7 +363,7 @@ class HealthmonitorResp:
 
     @url_path.setter
     def url_path(self, url_path):
-        """Sets the url_path of this HealthmonitorResp.
+        r"""Sets the url_path of this HealthmonitorResp.
 
         健康检查请求的请求路径。以\"/\"开头，默认为\"/\"。 支持使用字母、数字和短划线（-）、正斜线（/）、半角句号（.）、百分号（%）、半角问号（?）、井号（#）和and（&）以及扩展字符集_;~!()*[]@$^:',+  使用说明：当type为HTTP/HTTPS时生效。
 
@@ -374,7 +374,7 @@ class HealthmonitorResp:
 
     @property
     def http_method(self):
-        """Gets the http_method of this HealthmonitorResp.
+        r"""Gets the http_method of this HealthmonitorResp.
 
         HTTP方法，可以为GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH。仅当type为HTTP时生效。该字段为预留字段，暂未启用。
 
@@ -385,7 +385,7 @@ class HealthmonitorResp:
 
     @http_method.setter
     def http_method(self, http_method):
-        """Sets the http_method of this HealthmonitorResp.
+        r"""Sets the http_method of this HealthmonitorResp.
 
         HTTP方法，可以为GET、HEAD、POST、PUT、DELETE、TRACE、OPTIONS、CONNECT、PATCH。仅当type为HTTP时生效。该字段为预留字段，暂未启用。
 
@@ -396,7 +396,7 @@ class HealthmonitorResp:
 
     @property
     def delay(self):
-        """Gets the delay of this HealthmonitorResp.
+        r"""Gets the delay of this HealthmonitorResp.
 
         健康检查间隔，单位秒
 
@@ -407,7 +407,7 @@ class HealthmonitorResp:
 
     @delay.setter
     def delay(self, delay):
-        """Sets the delay of this HealthmonitorResp.
+        r"""Sets the delay of this HealthmonitorResp.
 
         健康检查间隔，单位秒
 
@@ -418,7 +418,7 @@ class HealthmonitorResp:
 
     @property
     def max_retries(self):
-        """Gets the max_retries of this HealthmonitorResp.
+        r"""Gets the max_retries of this HealthmonitorResp.
 
         最大重试次数
 
@@ -429,7 +429,7 @@ class HealthmonitorResp:
 
     @max_retries.setter
     def max_retries(self, max_retries):
-        """Sets the max_retries of this HealthmonitorResp.
+        r"""Sets the max_retries of this HealthmonitorResp.
 
         最大重试次数
 
@@ -440,7 +440,7 @@ class HealthmonitorResp:
 
     @property
     def pools(self):
-        """Gets the pools of this HealthmonitorResp.
+        r"""Gets the pools of this HealthmonitorResp.
 
         健康检查关联的后端云服务器组列表
 
@@ -451,7 +451,7 @@ class HealthmonitorResp:
 
     @pools.setter
     def pools(self, pools):
-        """Sets the pools of this HealthmonitorResp.
+        r"""Sets the pools of this HealthmonitorResp.
 
         健康检查关联的后端云服务器组列表
 
@@ -462,7 +462,7 @@ class HealthmonitorResp:
 
     @property
     def max_retries_down(self):
-        """Gets the max_retries_down of this HealthmonitorResp.
+        r"""Gets the max_retries_down of this HealthmonitorResp.
 
         健康检查连续失败多少次后，将后端服务器的健康检查状态由ONLINE判定为OFFLINE。取值范围：1-10。
 
@@ -473,7 +473,7 @@ class HealthmonitorResp:
 
     @max_retries_down.setter
     def max_retries_down(self, max_retries_down):
-        """Sets the max_retries_down of this HealthmonitorResp.
+        r"""Sets the max_retries_down of this HealthmonitorResp.
 
         健康检查连续失败多少次后，将后端服务器的健康检查状态由ONLINE判定为OFFLINE。取值范围：1-10。
 

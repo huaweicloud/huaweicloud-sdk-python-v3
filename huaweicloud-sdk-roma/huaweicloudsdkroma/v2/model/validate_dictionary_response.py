@@ -28,7 +28,7 @@ class ValidateDictionaryResponse(SdkResponse):
     }
 
     def __init__(self, name=None, code=None):
-        """ValidateDictionaryResponse
+        r"""ValidateDictionaryResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ValidateDictionaryResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ValidateDictionaryResponse.
+        r"""Gets the name of this ValidateDictionaryResponse.
 
         字典名称 - 字符集：中文、英文字母、数字、下划线和空格 - 约束：实例下唯一
 
@@ -62,7 +62,7 @@ class ValidateDictionaryResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ValidateDictionaryResponse.
+        r"""Sets the name of this ValidateDictionaryResponse.
 
         字典名称 - 字符集：中文、英文字母、数字、下划线和空格 - 约束：实例下唯一
 
@@ -73,7 +73,7 @@ class ValidateDictionaryResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ValidateDictionaryResponse.
+        r"""Gets the code of this ValidateDictionaryResponse.
 
         字典编码 - 字符集：英文字母、数字、下划线和空格 - 约束：实例下唯一
 
@@ -84,7 +84,7 @@ class ValidateDictionaryResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ValidateDictionaryResponse.
+        r"""Sets the code of this ValidateDictionaryResponse.
 
         字典编码 - 字符集：英文字母、数字、下划线和空格 - 约束：实例下唯一
 

@@ -69,7 +69,7 @@ class MergeRequestBasicDiscussionDto:
     }
 
     def __init__(self, id=None, individual_note=None, notes=None, project_id=None, noteable_type=None, commit_id=None, project_full_path=None, a_mode=None, b_mode=None, deleted_file=None, new_file=None, resolved=None, archived=None, review_categories=None, review_categories_cn=None, review_categories_en=None, review_modules=None, severity=None, severity_cn=None, severity_en=None, assignee=None, proposer=None, merge_request_version_params=None):
-        """MergeRequestBasicDiscussionDto
+        r"""MergeRequestBasicDiscussionDto
 
         The model defined in huaweicloud sdk
 
@@ -197,7 +197,7 @@ class MergeRequestBasicDiscussionDto:
 
     @property
     def id(self):
-        """Gets the id of this MergeRequestBasicDiscussionDto.
+        r"""Gets the id of this MergeRequestBasicDiscussionDto.
 
         评论id
 
@@ -208,7 +208,7 @@ class MergeRequestBasicDiscussionDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MergeRequestBasicDiscussionDto.
+        r"""Sets the id of this MergeRequestBasicDiscussionDto.
 
         评论id
 
@@ -219,7 +219,7 @@ class MergeRequestBasicDiscussionDto:
 
     @property
     def individual_note(self):
-        """Gets the individual_note of this MergeRequestBasicDiscussionDto.
+        r"""Gets the individual_note of this MergeRequestBasicDiscussionDto.
 
         individual_note
 
@@ -230,7 +230,7 @@ class MergeRequestBasicDiscussionDto:
 
     @individual_note.setter
     def individual_note(self, individual_note):
-        """Sets the individual_note of this MergeRequestBasicDiscussionDto.
+        r"""Sets the individual_note of this MergeRequestBasicDiscussionDto.
 
         individual_note
 
@@ -241,7 +241,7 @@ class MergeRequestBasicDiscussionDto:
 
     @property
     def notes(self):
-        """Gets the notes of this MergeRequestBasicDiscussionDto.
+        r"""Gets the notes of this MergeRequestBasicDiscussionDto.
 
         主评和回复列表
 
@@ -252,7 +252,7 @@ class MergeRequestBasicDiscussionDto:
 
     @notes.setter
     def notes(self, notes):
-        """Sets the notes of this MergeRequestBasicDiscussionDto.
+        r"""Sets the notes of this MergeRequestBasicDiscussionDto.
 
         主评和回复列表
 
@@ -263,7 +263,7 @@ class MergeRequestBasicDiscussionDto:
 
     @property
     def project_id(self):
-        """Gets the project_id of this MergeRequestBasicDiscussionDto.
+        r"""Gets the project_id of this MergeRequestBasicDiscussionDto.
 
         仓库id
 
@@ -274,7 +274,7 @@ class MergeRequestBasicDiscussionDto:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this MergeRequestBasicDiscussionDto.
+        r"""Sets the project_id of this MergeRequestBasicDiscussionDto.
 
         仓库id
 
@@ -285,7 +285,7 @@ class MergeRequestBasicDiscussionDto:
 
     @property
     def noteable_type(self):
-        """Gets the noteable_type of this MergeRequestBasicDiscussionDto.
+        r"""Gets the noteable_type of this MergeRequestBasicDiscussionDto.
 
         目标类型
 
@@ -296,7 +296,7 @@ class MergeRequestBasicDiscussionDto:
 
     @noteable_type.setter
     def noteable_type(self, noteable_type):
-        """Sets the noteable_type of this MergeRequestBasicDiscussionDto.
+        r"""Sets the noteable_type of this MergeRequestBasicDiscussionDto.
 
         目标类型
 
@@ -307,7 +307,7 @@ class MergeRequestBasicDiscussionDto:
 
     @property
     def commit_id(self):
-        """Gets the commit_id of this MergeRequestBasicDiscussionDto.
+        r"""Gets the commit_id of this MergeRequestBasicDiscussionDto.
 
         关联的提交id
 
@@ -318,7 +318,7 @@ class MergeRequestBasicDiscussionDto:
 
     @commit_id.setter
     def commit_id(self, commit_id):
-        """Sets the commit_id of this MergeRequestBasicDiscussionDto.
+        r"""Sets the commit_id of this MergeRequestBasicDiscussionDto.
 
         关联的提交id
 
@@ -329,7 +329,7 @@ class MergeRequestBasicDiscussionDto:
 
     @property
     def project_full_path(self):
-        """Gets the project_full_path of this MergeRequestBasicDiscussionDto.
+        r"""Gets the project_full_path of this MergeRequestBasicDiscussionDto.
 
         仓库路径
 
@@ -340,7 +340,7 @@ class MergeRequestBasicDiscussionDto:
 
     @project_full_path.setter
     def project_full_path(self, project_full_path):
-        """Sets the project_full_path of this MergeRequestBasicDiscussionDto.
+        r"""Sets the project_full_path of this MergeRequestBasicDiscussionDto.
 
         仓库路径
 
@@ -351,7 +351,7 @@ class MergeRequestBasicDiscussionDto:
 
     @property
     def a_mode(self):
-        """Gets the a_mode of this MergeRequestBasicDiscussionDto.
+        r"""Gets the a_mode of this MergeRequestBasicDiscussionDto.
 
         变更前文件模式
 
@@ -362,7 +362,7 @@ class MergeRequestBasicDiscussionDto:
 
     @a_mode.setter
     def a_mode(self, a_mode):
-        """Sets the a_mode of this MergeRequestBasicDiscussionDto.
+        r"""Sets the a_mode of this MergeRequestBasicDiscussionDto.
 
         变更前文件模式
 
@@ -373,7 +373,7 @@ class MergeRequestBasicDiscussionDto:
 
     @property
     def b_mode(self):
-        """Gets the b_mode of this MergeRequestBasicDiscussionDto.
+        r"""Gets the b_mode of this MergeRequestBasicDiscussionDto.
 
         变更后文件模式
 
@@ -384,7 +384,7 @@ class MergeRequestBasicDiscussionDto:
 
     @b_mode.setter
     def b_mode(self, b_mode):
-        """Sets the b_mode of this MergeRequestBasicDiscussionDto.
+        r"""Sets the b_mode of this MergeRequestBasicDiscussionDto.
 
         变更后文件模式
 
@@ -395,7 +395,7 @@ class MergeRequestBasicDiscussionDto:
 
     @property
     def deleted_file(self):
-        """Gets the deleted_file of this MergeRequestBasicDiscussionDto.
+        r"""Gets the deleted_file of this MergeRequestBasicDiscussionDto.
 
         此次变更是否删除文件
 
@@ -406,7 +406,7 @@ class MergeRequestBasicDiscussionDto:
 
     @deleted_file.setter
     def deleted_file(self, deleted_file):
-        """Sets the deleted_file of this MergeRequestBasicDiscussionDto.
+        r"""Sets the deleted_file of this MergeRequestBasicDiscussionDto.
 
         此次变更是否删除文件
 
@@ -417,7 +417,7 @@ class MergeRequestBasicDiscussionDto:
 
     @property
     def new_file(self):
-        """Gets the new_file of this MergeRequestBasicDiscussionDto.
+        r"""Gets the new_file of this MergeRequestBasicDiscussionDto.
 
         此次变更是否新增文件
 
@@ -428,7 +428,7 @@ class MergeRequestBasicDiscussionDto:
 
     @new_file.setter
     def new_file(self, new_file):
-        """Sets the new_file of this MergeRequestBasicDiscussionDto.
+        r"""Sets the new_file of this MergeRequestBasicDiscussionDto.
 
         此次变更是否新增文件
 
@@ -439,7 +439,7 @@ class MergeRequestBasicDiscussionDto:
 
     @property
     def resolved(self):
-        """Gets the resolved of this MergeRequestBasicDiscussionDto.
+        r"""Gets the resolved of this MergeRequestBasicDiscussionDto.
 
         检视意见是否解决
 
@@ -450,7 +450,7 @@ class MergeRequestBasicDiscussionDto:
 
     @resolved.setter
     def resolved(self, resolved):
-        """Sets the resolved of this MergeRequestBasicDiscussionDto.
+        r"""Sets the resolved of this MergeRequestBasicDiscussionDto.
 
         检视意见是否解决
 
@@ -461,7 +461,7 @@ class MergeRequestBasicDiscussionDto:
 
     @property
     def archived(self):
-        """Gets the archived of this MergeRequestBasicDiscussionDto.
+        r"""Gets the archived of this MergeRequestBasicDiscussionDto.
 
         检视意见是否存档
 
@@ -472,7 +472,7 @@ class MergeRequestBasicDiscussionDto:
 
     @archived.setter
     def archived(self, archived):
-        """Sets the archived of this MergeRequestBasicDiscussionDto.
+        r"""Sets the archived of this MergeRequestBasicDiscussionDto.
 
         检视意见是否存档
 
@@ -483,7 +483,7 @@ class MergeRequestBasicDiscussionDto:
 
     @property
     def review_categories(self):
-        """Gets the review_categories of this MergeRequestBasicDiscussionDto.
+        r"""Gets the review_categories of this MergeRequestBasicDiscussionDto.
 
         检视意见分类
 
@@ -494,7 +494,7 @@ class MergeRequestBasicDiscussionDto:
 
     @review_categories.setter
     def review_categories(self, review_categories):
-        """Sets the review_categories of this MergeRequestBasicDiscussionDto.
+        r"""Sets the review_categories of this MergeRequestBasicDiscussionDto.
 
         检视意见分类
 
@@ -505,7 +505,7 @@ class MergeRequestBasicDiscussionDto:
 
     @property
     def review_categories_cn(self):
-        """Gets the review_categories_cn of this MergeRequestBasicDiscussionDto.
+        r"""Gets the review_categories_cn of this MergeRequestBasicDiscussionDto.
 
         检视意见分类中文名
 
@@ -516,7 +516,7 @@ class MergeRequestBasicDiscussionDto:
 
     @review_categories_cn.setter
     def review_categories_cn(self, review_categories_cn):
-        """Sets the review_categories_cn of this MergeRequestBasicDiscussionDto.
+        r"""Sets the review_categories_cn of this MergeRequestBasicDiscussionDto.
 
         检视意见分类中文名
 
@@ -527,7 +527,7 @@ class MergeRequestBasicDiscussionDto:
 
     @property
     def review_categories_en(self):
-        """Gets the review_categories_en of this MergeRequestBasicDiscussionDto.
+        r"""Gets the review_categories_en of this MergeRequestBasicDiscussionDto.
 
         检视意见分类英文名
 
@@ -538,7 +538,7 @@ class MergeRequestBasicDiscussionDto:
 
     @review_categories_en.setter
     def review_categories_en(self, review_categories_en):
-        """Sets the review_categories_en of this MergeRequestBasicDiscussionDto.
+        r"""Sets the review_categories_en of this MergeRequestBasicDiscussionDto.
 
         检视意见分类英文名
 
@@ -549,7 +549,7 @@ class MergeRequestBasicDiscussionDto:
 
     @property
     def review_modules(self):
-        """Gets the review_modules of this MergeRequestBasicDiscussionDto.
+        r"""Gets the review_modules of this MergeRequestBasicDiscussionDto.
 
         检视意见模块
 
@@ -560,7 +560,7 @@ class MergeRequestBasicDiscussionDto:
 
     @review_modules.setter
     def review_modules(self, review_modules):
-        """Sets the review_modules of this MergeRequestBasicDiscussionDto.
+        r"""Sets the review_modules of this MergeRequestBasicDiscussionDto.
 
         检视意见模块
 
@@ -571,7 +571,7 @@ class MergeRequestBasicDiscussionDto:
 
     @property
     def severity(self):
-        """Gets the severity of this MergeRequestBasicDiscussionDto.
+        r"""Gets the severity of this MergeRequestBasicDiscussionDto.
 
         严重程度
 
@@ -582,7 +582,7 @@ class MergeRequestBasicDiscussionDto:
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this MergeRequestBasicDiscussionDto.
+        r"""Sets the severity of this MergeRequestBasicDiscussionDto.
 
         严重程度
 
@@ -593,7 +593,7 @@ class MergeRequestBasicDiscussionDto:
 
     @property
     def severity_cn(self):
-        """Gets the severity_cn of this MergeRequestBasicDiscussionDto.
+        r"""Gets the severity_cn of this MergeRequestBasicDiscussionDto.
 
         严重程度中文名
 
@@ -604,7 +604,7 @@ class MergeRequestBasicDiscussionDto:
 
     @severity_cn.setter
     def severity_cn(self, severity_cn):
-        """Sets the severity_cn of this MergeRequestBasicDiscussionDto.
+        r"""Sets the severity_cn of this MergeRequestBasicDiscussionDto.
 
         严重程度中文名
 
@@ -615,7 +615,7 @@ class MergeRequestBasicDiscussionDto:
 
     @property
     def severity_en(self):
-        """Gets the severity_en of this MergeRequestBasicDiscussionDto.
+        r"""Gets the severity_en of this MergeRequestBasicDiscussionDto.
 
         严重程度英文名
 
@@ -626,7 +626,7 @@ class MergeRequestBasicDiscussionDto:
 
     @severity_en.setter
     def severity_en(self, severity_en):
-        """Sets the severity_en of this MergeRequestBasicDiscussionDto.
+        r"""Sets the severity_en of this MergeRequestBasicDiscussionDto.
 
         严重程度英文名
 
@@ -637,7 +637,7 @@ class MergeRequestBasicDiscussionDto:
 
     @property
     def assignee(self):
-        """Gets the assignee of this MergeRequestBasicDiscussionDto.
+        r"""Gets the assignee of this MergeRequestBasicDiscussionDto.
 
         :return: The assignee of this MergeRequestBasicDiscussionDto.
         :rtype: :class:`huaweicloudsdkcodehub.v3.UserBasicDto`
@@ -646,7 +646,7 @@ class MergeRequestBasicDiscussionDto:
 
     @assignee.setter
     def assignee(self, assignee):
-        """Sets the assignee of this MergeRequestBasicDiscussionDto.
+        r"""Sets the assignee of this MergeRequestBasicDiscussionDto.
 
         :param assignee: The assignee of this MergeRequestBasicDiscussionDto.
         :type assignee: :class:`huaweicloudsdkcodehub.v3.UserBasicDto`
@@ -655,7 +655,7 @@ class MergeRequestBasicDiscussionDto:
 
     @property
     def proposer(self):
-        """Gets the proposer of this MergeRequestBasicDiscussionDto.
+        r"""Gets the proposer of this MergeRequestBasicDiscussionDto.
 
         :return: The proposer of this MergeRequestBasicDiscussionDto.
         :rtype: :class:`huaweicloudsdkcodehub.v3.UserBasicDto`
@@ -664,7 +664,7 @@ class MergeRequestBasicDiscussionDto:
 
     @proposer.setter
     def proposer(self, proposer):
-        """Sets the proposer of this MergeRequestBasicDiscussionDto.
+        r"""Sets the proposer of this MergeRequestBasicDiscussionDto.
 
         :param proposer: The proposer of this MergeRequestBasicDiscussionDto.
         :type proposer: :class:`huaweicloudsdkcodehub.v3.UserBasicDto`
@@ -673,7 +673,7 @@ class MergeRequestBasicDiscussionDto:
 
     @property
     def merge_request_version_params(self):
-        """Gets the merge_request_version_params of this MergeRequestBasicDiscussionDto.
+        r"""Gets the merge_request_version_params of this MergeRequestBasicDiscussionDto.
 
         :return: The merge_request_version_params of this MergeRequestBasicDiscussionDto.
         :rtype: :class:`huaweicloudsdkcodehub.v3.MergeRequestVersionParamsDto`
@@ -682,7 +682,7 @@ class MergeRequestBasicDiscussionDto:
 
     @merge_request_version_params.setter
     def merge_request_version_params(self, merge_request_version_params):
-        """Sets the merge_request_version_params of this MergeRequestBasicDiscussionDto.
+        r"""Sets the merge_request_version_params of this MergeRequestBasicDiscussionDto.
 
         :param merge_request_version_params: The merge_request_version_params of this MergeRequestBasicDiscussionDto.
         :type merge_request_version_params: :class:`huaweicloudsdkcodehub.v3.MergeRequestVersionParamsDto`

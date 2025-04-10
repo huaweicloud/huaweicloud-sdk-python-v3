@@ -41,7 +41,7 @@ class CreatePartnerCouponsReq:
     }
 
     def __init__(self, quota_id=None, customer_ids=None, face_value=None, valid_time=None, expire_time=None, cloud_service_types=None, product_ids=None, memo=None, indirect_partner_id=None):
-        """CreatePartnerCouponsReq
+        r"""CreatePartnerCouponsReq
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class CreatePartnerCouponsReq:
 
     @property
     def quota_id(self):
-        """Gets the quota_id of this CreatePartnerCouponsReq.
+        r"""Gets the quota_id of this CreatePartnerCouponsReq.
 
         优惠券额度ID。该值在查询优惠券额度接口的响应参数中获取。
 
@@ -107,7 +107,7 @@ class CreatePartnerCouponsReq:
 
     @quota_id.setter
     def quota_id(self, quota_id):
-        """Sets the quota_id of this CreatePartnerCouponsReq.
+        r"""Sets the quota_id of this CreatePartnerCouponsReq.
 
         优惠券额度ID。该值在查询优惠券额度接口的响应参数中获取。
 
@@ -118,7 +118,7 @@ class CreatePartnerCouponsReq:
 
     @property
     def customer_ids(self):
-        """Gets the customer_ids of this CreatePartnerCouponsReq.
+        r"""Gets the customer_ids of this CreatePartnerCouponsReq.
 
         客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/api-bpconsole/mc_00021.html)接口获取customer_id。
 
@@ -129,7 +129,7 @@ class CreatePartnerCouponsReq:
 
     @customer_ids.setter
     def customer_ids(self, customer_ids):
-        """Sets the customer_ids of this CreatePartnerCouponsReq.
+        r"""Sets the customer_ids of this CreatePartnerCouponsReq.
 
         客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/api-bpconsole/mc_00021.html)接口获取customer_id。
 
@@ -140,7 +140,7 @@ class CreatePartnerCouponsReq:
 
     @property
     def face_value(self):
-        """Gets the face_value of this CreatePartnerCouponsReq.
+        r"""Gets the face_value of this CreatePartnerCouponsReq.
 
         代金券面值。 单位：元。取值大于0且精确到小数点后2位。
 
@@ -151,7 +151,7 @@ class CreatePartnerCouponsReq:
 
     @face_value.setter
     def face_value(self, face_value):
-        """Sets the face_value of this CreatePartnerCouponsReq.
+        r"""Sets the face_value of this CreatePartnerCouponsReq.
 
         代金券面值。 单位：元。取值大于0且精确到小数点后2位。
 
@@ -162,7 +162,7 @@ class CreatePartnerCouponsReq:
 
     @property
     def valid_time(self):
-        """Gets the valid_time of this CreatePartnerCouponsReq.
+        r"""Gets the valid_time of this CreatePartnerCouponsReq.
 
         生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 此参数不携带或携带值为null时，赋值为发放优惠券额度的生效时间。
 
@@ -173,7 +173,7 @@ class CreatePartnerCouponsReq:
 
     @valid_time.setter
     def valid_time(self, valid_time):
-        """Sets the valid_time of this CreatePartnerCouponsReq.
+        r"""Sets the valid_time of this CreatePartnerCouponsReq.
 
         生效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 此参数不携带或携带值为null时，赋值为发放优惠券额度的生效时间。
 
@@ -184,7 +184,7 @@ class CreatePartnerCouponsReq:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this CreatePartnerCouponsReq.
+        r"""Gets the expire_time of this CreatePartnerCouponsReq.
 
         失效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 此参数不携带或携带值为null时，赋值为发放优惠券额度的失效时间。
 
@@ -195,7 +195,7 @@ class CreatePartnerCouponsReq:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this CreatePartnerCouponsReq.
+        r"""Sets the expire_time of this CreatePartnerCouponsReq.
 
         失效时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”。 此参数不携带或携带值为null时，赋值为发放优惠券额度的失效时间。
 
@@ -206,7 +206,7 @@ class CreatePartnerCouponsReq:
 
     @property
     def cloud_service_types(self):
-        """Gets the cloud_service_types of this CreatePartnerCouponsReq.
+        r"""Gets the cloud_service_types of this CreatePartnerCouponsReq.
 
         允许使用的云服务列表，您可以调用查询云服务类型列表接口获取。 多个云服务产品以“,”隔开，最多支持10个。 默认：空（继承额度上的限制）  说明： 如果额度上有限制云服务类型列表，则优惠券上的限制不能超过额度的限制。如果额度上没有限制，则优惠券上可以随意指定云服务类型。
 
@@ -217,7 +217,7 @@ class CreatePartnerCouponsReq:
 
     @cloud_service_types.setter
     def cloud_service_types(self, cloud_service_types):
-        """Sets the cloud_service_types of this CreatePartnerCouponsReq.
+        r"""Sets the cloud_service_types of this CreatePartnerCouponsReq.
 
         允许使用的云服务列表，您可以调用查询云服务类型列表接口获取。 多个云服务产品以“,”隔开，最多支持10个。 默认：空（继承额度上的限制）  说明： 如果额度上有限制云服务类型列表，则优惠券上的限制不能超过额度的限制。如果额度上没有限制，则优惠券上可以随意指定云服务类型。
 
@@ -228,7 +228,7 @@ class CreatePartnerCouponsReq:
 
     @property
     def product_ids(self):
-        """Gets the product_ids of this CreatePartnerCouponsReq.
+        r"""Gets the product_ids of this CreatePartnerCouponsReq.
 
         允许使用的产品列表。 多个产品以“,”隔开，最多支持10个。 默认：空（继承额度上的限制）  说明： 如果额度上有限制产品列表，则优惠券上的限制不能超过额度的限制。如果额度上没有限制，则优惠券上可以随意指定产品ID。 产品ID需要合作伙伴通过线下获得。
 
@@ -239,7 +239,7 @@ class CreatePartnerCouponsReq:
 
     @product_ids.setter
     def product_ids(self, product_ids):
-        """Sets the product_ids of this CreatePartnerCouponsReq.
+        r"""Sets the product_ids of this CreatePartnerCouponsReq.
 
         允许使用的产品列表。 多个产品以“,”隔开，最多支持10个。 默认：空（继承额度上的限制）  说明： 如果额度上有限制产品列表，则优惠券上的限制不能超过额度的限制。如果额度上没有限制，则优惠券上可以随意指定产品ID。 产品ID需要合作伙伴通过线下获得。
 
@@ -250,7 +250,7 @@ class CreatePartnerCouponsReq:
 
     @property
     def memo(self):
-        """Gets the memo of this CreatePartnerCouponsReq.
+        r"""Gets the memo of this CreatePartnerCouponsReq.
 
         发券时的备注信息。 此参数不携带或携带值为null时，不赋值；携带值为空串时，赋值空串。
 
@@ -261,7 +261,7 @@ class CreatePartnerCouponsReq:
 
     @memo.setter
     def memo(self, memo):
-        """Sets the memo of this CreatePartnerCouponsReq.
+        r"""Sets the memo of this CreatePartnerCouponsReq.
 
         发券时的备注信息。 此参数不携带或携带值为null时，不赋值；携带值为空串时，赋值空串。
 
@@ -272,7 +272,7 @@ class CreatePartnerCouponsReq:
 
     @property
     def indirect_partner_id(self):
-        """Gets the indirect_partner_id of this CreatePartnerCouponsReq.
+        r"""Gets the indirect_partner_id of this CreatePartnerCouponsReq.
 
         云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。云经销商给子客户发放优惠券时，需要携带该参数。除此之外，此参数不做处理。
 
@@ -283,7 +283,7 @@ class CreatePartnerCouponsReq:
 
     @indirect_partner_id.setter
     def indirect_partner_id(self, indirect_partner_id):
-        """Sets the indirect_partner_id of this CreatePartnerCouponsReq.
+        r"""Sets the indirect_partner_id of this CreatePartnerCouponsReq.
 
         云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。云经销商给子客户发放优惠券时，需要携带该参数。除此之外，此参数不做处理。
 

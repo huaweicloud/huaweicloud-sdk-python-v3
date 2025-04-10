@@ -38,7 +38,7 @@ class CreateQueueResponse(SdkResponse):
     }
 
     def __init__(self, name=None, auto_delete=None, durable=None, dead_letter_exchange=None, dead_letter_routing_key=None, message_ttl=None, lazy_mode=None):
-        """CreateQueueResponse
+        r"""CreateQueueResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class CreateQueueResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateQueueResponse.
+        r"""Gets the name of this CreateQueueResponse.
 
         Queue名称
 
@@ -97,7 +97,7 @@ class CreateQueueResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateQueueResponse.
+        r"""Sets the name of this CreateQueueResponse.
 
         Queue名称
 
@@ -108,7 +108,7 @@ class CreateQueueResponse(SdkResponse):
 
     @property
     def auto_delete(self):
-        """Gets the auto_delete of this CreateQueueResponse.
+        r"""Gets the auto_delete of this CreateQueueResponse.
 
         是否自动删除
 
@@ -119,7 +119,7 @@ class CreateQueueResponse(SdkResponse):
 
     @auto_delete.setter
     def auto_delete(self, auto_delete):
-        """Sets the auto_delete of this CreateQueueResponse.
+        r"""Sets the auto_delete of this CreateQueueResponse.
 
         是否自动删除
 
@@ -130,7 +130,7 @@ class CreateQueueResponse(SdkResponse):
 
     @property
     def durable(self):
-        """Gets the durable of this CreateQueueResponse.
+        r"""Gets the durable of this CreateQueueResponse.
 
         是否持久化[（AMQP版本默认持久化，不涉及此字段）](tag:hws,hws_hk)
 
@@ -141,7 +141,7 @@ class CreateQueueResponse(SdkResponse):
 
     @durable.setter
     def durable(self, durable):
-        """Sets the durable of this CreateQueueResponse.
+        r"""Sets the durable of this CreateQueueResponse.
 
         是否持久化[（AMQP版本默认持久化，不涉及此字段）](tag:hws,hws_hk)
 
@@ -152,7 +152,7 @@ class CreateQueueResponse(SdkResponse):
 
     @property
     def dead_letter_exchange(self):
-        """Gets the dead_letter_exchange of this CreateQueueResponse.
+        r"""Gets the dead_letter_exchange of this CreateQueueResponse.
 
         死信Exchange名称，消息被拒绝或过期时将重新发布到该Exchange。
 
@@ -163,7 +163,7 @@ class CreateQueueResponse(SdkResponse):
 
     @dead_letter_exchange.setter
     def dead_letter_exchange(self, dead_letter_exchange):
-        """Sets the dead_letter_exchange of this CreateQueueResponse.
+        r"""Sets the dead_letter_exchange of this CreateQueueResponse.
 
         死信Exchange名称，消息被拒绝或过期时将重新发布到该Exchange。
 
@@ -174,7 +174,7 @@ class CreateQueueResponse(SdkResponse):
 
     @property
     def dead_letter_routing_key(self):
-        """Gets the dead_letter_routing_key of this CreateQueueResponse.
+        r"""Gets the dead_letter_routing_key of this CreateQueueResponse.
 
         死信Exchange的RoutingKey，死信Exchange会发送死信消息到绑定对应RoutingKey的Queue上。
 
@@ -185,7 +185,7 @@ class CreateQueueResponse(SdkResponse):
 
     @dead_letter_routing_key.setter
     def dead_letter_routing_key(self, dead_letter_routing_key):
-        """Sets the dead_letter_routing_key of this CreateQueueResponse.
+        r"""Sets the dead_letter_routing_key of this CreateQueueResponse.
 
         死信Exchange的RoutingKey，死信Exchange会发送死信消息到绑定对应RoutingKey的Queue上。
 
@@ -196,7 +196,7 @@ class CreateQueueResponse(SdkResponse):
 
     @property
     def message_ttl(self):
-        """Gets the message_ttl of this CreateQueueResponse.
+        r"""Gets the message_ttl of this CreateQueueResponse.
 
         发布到Queue的消息在被丢弃之前可以存活多长时间
 
@@ -207,7 +207,7 @@ class CreateQueueResponse(SdkResponse):
 
     @message_ttl.setter
     def message_ttl(self, message_ttl):
-        """Sets the message_ttl of this CreateQueueResponse.
+        r"""Sets the message_ttl of this CreateQueueResponse.
 
         发布到Queue的消息在被丢弃之前可以存活多长时间
 
@@ -218,7 +218,7 @@ class CreateQueueResponse(SdkResponse):
 
     @property
     def lazy_mode(self):
-        """Gets the lazy_mode of this CreateQueueResponse.
+        r"""Gets the lazy_mode of this CreateQueueResponse.
 
         若设置惰性队列，请输入lazy。惰性队列模式会在磁盘上存储尽可能多的消息以减少内存使用；若不设置，队列将消息存储在内存缓存以尽可能快地传递消息。[（AMQP版本默认将消息存储到磁盘，不涉及此字段）](tag:hws,hws_hk)
 
@@ -229,7 +229,7 @@ class CreateQueueResponse(SdkResponse):
 
     @lazy_mode.setter
     def lazy_mode(self, lazy_mode):
-        """Sets the lazy_mode of this CreateQueueResponse.
+        r"""Sets the lazy_mode of this CreateQueueResponse.
 
         若设置惰性队列，请输入lazy。惰性队列模式会在磁盘上存储尽可能多的消息以减少内存使用；若不设置，队列将消息存储在内存缓存以尽可能快地传递消息。[（AMQP版本默认将消息存储到磁盘，不涉及此字段）](tag:hws,hws_hk)
 

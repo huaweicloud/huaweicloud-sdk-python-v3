@@ -31,7 +31,7 @@ class ShowSyncPolicyRequest:
     }
 
     def __init__(self, instance_id=None, last_known_version=None, supports_policy_deltas=None, is_return_policy_data=None):
-        """ShowSyncPolicyRequest
+        r"""ShowSyncPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ShowSyncPolicyRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowSyncPolicyRequest.
+        r"""Gets the instance_id of this ShowSyncPolicyRequest.
 
         instance id
 
@@ -74,7 +74,7 @@ class ShowSyncPolicyRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowSyncPolicyRequest.
+        r"""Sets the instance_id of this ShowSyncPolicyRequest.
 
         instance id
 
@@ -85,7 +85,7 @@ class ShowSyncPolicyRequest:
 
     @property
     def last_known_version(self):
-        """Gets the last_known_version of this ShowSyncPolicyRequest.
+        r"""Gets the last_known_version of this ShowSyncPolicyRequest.
 
         lastKnownVersion
 
@@ -96,7 +96,7 @@ class ShowSyncPolicyRequest:
 
     @last_known_version.setter
     def last_known_version(self, last_known_version):
-        """Sets the last_known_version of this ShowSyncPolicyRequest.
+        r"""Sets the last_known_version of this ShowSyncPolicyRequest.
 
         lastKnownVersion
 
@@ -107,7 +107,7 @@ class ShowSyncPolicyRequest:
 
     @property
     def supports_policy_deltas(self):
-        """Gets the supports_policy_deltas of this ShowSyncPolicyRequest.
+        r"""Gets the supports_policy_deltas of this ShowSyncPolicyRequest.
 
         supportsPolicyDeltas
 
@@ -118,7 +118,7 @@ class ShowSyncPolicyRequest:
 
     @supports_policy_deltas.setter
     def supports_policy_deltas(self, supports_policy_deltas):
-        """Sets the supports_policy_deltas of this ShowSyncPolicyRequest.
+        r"""Sets the supports_policy_deltas of this ShowSyncPolicyRequest.
 
         supportsPolicyDeltas
 
@@ -129,7 +129,7 @@ class ShowSyncPolicyRequest:
 
     @property
     def is_return_policy_data(self):
-        """Gets the is_return_policy_data of this ShowSyncPolicyRequest.
+        r"""Gets the is_return_policy_data of this ShowSyncPolicyRequest.
 
         isReturnPolicyData
 
@@ -140,7 +140,7 @@ class ShowSyncPolicyRequest:
 
     @is_return_policy_data.setter
     def is_return_policy_data(self, is_return_policy_data):
-        """Sets the is_return_policy_data of this ShowSyncPolicyRequest.
+        r"""Sets the is_return_policy_data of this ShowSyncPolicyRequest.
 
         isReturnPolicyData
 

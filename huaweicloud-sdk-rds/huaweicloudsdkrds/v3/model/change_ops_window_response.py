@@ -24,7 +24,7 @@ class ChangeOpsWindowResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ChangeOpsWindowResponse
+        r"""ChangeOpsWindowResponse
 
         The model defined in huaweicloud sdk
 

@@ -25,7 +25,7 @@ class ReferResourceCreateParameters:
     }
 
     def __init__(self, namespace=None):
-        """ReferResourceCreateParameters
+        r"""ReferResourceCreateParameters
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ReferResourceCreateParameters:
 
     @property
     def namespace(self):
-        """Gets the namespace of this ReferResourceCreateParameters.
+        r"""Gets the namespace of this ReferResourceCreateParameters.
 
         for cce resource type. default namespace is default.
 
@@ -54,7 +54,7 @@ class ReferResourceCreateParameters:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this ReferResourceCreateParameters.
+        r"""Sets the namespace of this ReferResourceCreateParameters.
 
         for cce resource type. default namespace is default.
 

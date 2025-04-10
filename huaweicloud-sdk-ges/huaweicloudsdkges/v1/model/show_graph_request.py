@@ -25,7 +25,7 @@ class ShowGraphRequest:
     }
 
     def __init__(self, graph_id=None):
-        """ShowGraphRequest
+        r"""ShowGraphRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowGraphRequest:
 
     @property
     def graph_id(self):
-        """Gets the graph_id of this ShowGraphRequest.
+        r"""Gets the graph_id of this ShowGraphRequest.
 
         图ID。
 
@@ -53,7 +53,7 @@ class ShowGraphRequest:
 
     @graph_id.setter
     def graph_id(self, graph_id):
-        """Sets the graph_id of this ShowGraphRequest.
+        r"""Sets the graph_id of this ShowGraphRequest.
 
         图ID。
 

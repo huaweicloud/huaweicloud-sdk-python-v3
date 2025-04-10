@@ -24,7 +24,7 @@ class BatchCancelAuthorizationInterfaceResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchCancelAuthorizationInterfaceResponse
+        r"""BatchCancelAuthorizationInterfaceResponse
 
         The model defined in huaweicloud sdk
 

@@ -28,7 +28,7 @@ class ShowSummaryResponse(SdkResponse):
     }
 
     def __init__(self, size=None, used_size=None):
-        """ShowSummaryResponse
+        r"""ShowSummaryResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowSummaryResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ShowSummaryResponse.
+        r"""Gets the size of this ShowSummaryResponse.
 
         总容量大小
 
@@ -62,7 +62,7 @@ class ShowSummaryResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ShowSummaryResponse.
+        r"""Sets the size of this ShowSummaryResponse.
 
         总容量大小
 
@@ -73,7 +73,7 @@ class ShowSummaryResponse(SdkResponse):
 
     @property
     def used_size(self):
-        """Gets the used_size of this ShowSummaryResponse.
+        r"""Gets the used_size of this ShowSummaryResponse.
 
         总使用量
 
@@ -84,7 +84,7 @@ class ShowSummaryResponse(SdkResponse):
 
     @used_size.setter
     def used_size(self, used_size):
-        """Sets the used_size of this ShowSummaryResponse.
+        r"""Sets the used_size of this ShowSummaryResponse.
 
         总使用量
 

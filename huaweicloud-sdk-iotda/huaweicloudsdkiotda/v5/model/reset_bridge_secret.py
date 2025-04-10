@@ -25,7 +25,7 @@ class ResetBridgeSecret:
     }
 
     def __init__(self, force_disconnect=None):
-        """ResetBridgeSecret
+        r"""ResetBridgeSecret
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ResetBridgeSecret:
 
     @property
     def force_disconnect(self):
-        """Gets the force_disconnect of this ResetBridgeSecret.
+        r"""Gets the force_disconnect of this ResetBridgeSecret.
 
         是否强制断开网桥的连接，当前仅限长连接。
 
@@ -54,7 +54,7 @@ class ResetBridgeSecret:
 
     @force_disconnect.setter
     def force_disconnect(self, force_disconnect):
-        """Sets the force_disconnect of this ResetBridgeSecret.
+        r"""Sets the force_disconnect of this ResetBridgeSecret.
 
         是否强制断开网桥的连接，当前仅限长连接。
 

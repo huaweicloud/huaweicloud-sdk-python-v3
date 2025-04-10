@@ -39,7 +39,7 @@ class HtapFlavorInfoFlavors:
     }
 
     def __init__(self, type=None, vcpus=None, ram=None, id=None, spec_code=None, version_name=None, instance_mode=None, az_status=None):
-        """HtapFlavorInfoFlavors
+        r"""HtapFlavorInfoFlavors
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class HtapFlavorInfoFlavors:
 
     @property
     def type(self):
-        """Gets the type of this HtapFlavorInfoFlavors.
+        r"""Gets the type of this HtapFlavorInfoFlavors.
 
         规格类型，取值为arm、x86和generalX86。  arm：独享型arm规格。  x86：独享型x86规格。  generalX86：通用型X86规格。
 
@@ -103,7 +103,7 @@ class HtapFlavorInfoFlavors:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this HtapFlavorInfoFlavors.
+        r"""Sets the type of this HtapFlavorInfoFlavors.
 
         规格类型，取值为arm、x86和generalX86。  arm：独享型arm规格。  x86：独享型x86规格。  generalX86：通用型X86规格。
 
@@ -114,7 +114,7 @@ class HtapFlavorInfoFlavors:
 
     @property
     def vcpus(self):
-        """Gets the vcpus of this HtapFlavorInfoFlavors.
+        r"""Gets the vcpus of this HtapFlavorInfoFlavors.
 
         CPU大小。例如：1表示1U。
 
@@ -125,7 +125,7 @@ class HtapFlavorInfoFlavors:
 
     @vcpus.setter
     def vcpus(self, vcpus):
-        """Sets the vcpus of this HtapFlavorInfoFlavors.
+        r"""Sets the vcpus of this HtapFlavorInfoFlavors.
 
         CPU大小。例如：1表示1U。
 
@@ -136,7 +136,7 @@ class HtapFlavorInfoFlavors:
 
     @property
     def ram(self):
-        """Gets the ram of this HtapFlavorInfoFlavors.
+        r"""Gets the ram of this HtapFlavorInfoFlavors.
 
         内存大小，单位为GB。
 
@@ -147,7 +147,7 @@ class HtapFlavorInfoFlavors:
 
     @ram.setter
     def ram(self, ram):
-        """Sets the ram of this HtapFlavorInfoFlavors.
+        r"""Sets the ram of this HtapFlavorInfoFlavors.
 
         内存大小，单位为GB。
 
@@ -158,7 +158,7 @@ class HtapFlavorInfoFlavors:
 
     @property
     def id(self):
-        """Gets the id of this HtapFlavorInfoFlavors.
+        r"""Gets the id of this HtapFlavorInfoFlavors.
 
         规格ID，该字段唯一。
 
@@ -169,7 +169,7 @@ class HtapFlavorInfoFlavors:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this HtapFlavorInfoFlavors.
+        r"""Sets the id of this HtapFlavorInfoFlavors.
 
         规格ID，该字段唯一。
 
@@ -180,7 +180,7 @@ class HtapFlavorInfoFlavors:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this HtapFlavorInfoFlavors.
+        r"""Gets the spec_code of this HtapFlavorInfoFlavors.
 
         资源规格编码，.同创建指定的flavor_ref。例如：gaussdb.sr-be.xlarge.x86.4。  “gaussdb.sr”代表产品。  “xlarge” 代表计算规格为4U。  “x86” 代表CPU架构为x86。  “4” 表示vCPU和内存为1:4。
 
@@ -191,7 +191,7 @@ class HtapFlavorInfoFlavors:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this HtapFlavorInfoFlavors.
+        r"""Sets the spec_code of this HtapFlavorInfoFlavors.
 
         资源规格编码，.同创建指定的flavor_ref。例如：gaussdb.sr-be.xlarge.x86.4。  “gaussdb.sr”代表产品。  “xlarge” 代表计算规格为4U。  “x86” 代表CPU架构为x86。  “4” 表示vCPU和内存为1:4。
 
@@ -202,7 +202,7 @@ class HtapFlavorInfoFlavors:
 
     @property
     def version_name(self):
-        """Gets the version_name of this HtapFlavorInfoFlavors.
+        r"""Gets the version_name of this HtapFlavorInfoFlavors.
 
         数据库版本号。
 
@@ -213,7 +213,7 @@ class HtapFlavorInfoFlavors:
 
     @version_name.setter
     def version_name(self, version_name):
-        """Sets the version_name of this HtapFlavorInfoFlavors.
+        r"""Sets the version_name of this HtapFlavorInfoFlavors.
 
         数据库版本号。
 
@@ -224,7 +224,7 @@ class HtapFlavorInfoFlavors:
 
     @property
     def instance_mode(self):
-        """Gets the instance_mode of this HtapFlavorInfoFlavors.
+        r"""Gets the instance_mode of this HtapFlavorInfoFlavors.
 
         实例类型。目前仅支持Cluster、Single。
 
@@ -235,7 +235,7 @@ class HtapFlavorInfoFlavors:
 
     @instance_mode.setter
     def instance_mode(self, instance_mode):
-        """Sets the instance_mode of this HtapFlavorInfoFlavors.
+        r"""Sets the instance_mode of this HtapFlavorInfoFlavors.
 
         实例类型。目前仅支持Cluster、Single。
 
@@ -246,7 +246,7 @@ class HtapFlavorInfoFlavors:
 
     @property
     def az_status(self):
-        """Gets the az_status of this HtapFlavorInfoFlavors.
+        r"""Gets the az_status of this HtapFlavorInfoFlavors.
 
         规格所在AZ的状态，包含以下状态：  normal：在售。  unsupported：暂不支持该规格。  sellout：售罄。
 
@@ -257,7 +257,7 @@ class HtapFlavorInfoFlavors:
 
     @az_status.setter
     def az_status(self, az_status):
-        """Sets the az_status of this HtapFlavorInfoFlavors.
+        r"""Sets the az_status of this HtapFlavorInfoFlavors.
 
         规格所在AZ的状态，包含以下状态：  normal：在售。  unsupported：暂不支持该规格。  sellout：售罄。
 

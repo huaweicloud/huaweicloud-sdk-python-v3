@@ -27,7 +27,7 @@ class UpdatePublicZoneStatusRequest:
     }
 
     def __init__(self, zone_id=None, body=None):
-        """UpdatePublicZoneStatusRequest
+        r"""UpdatePublicZoneStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdatePublicZoneStatusRequest:
 
     @property
     def zone_id(self):
-        """Gets the zone_id of this UpdatePublicZoneStatusRequest.
+        r"""Gets the zone_id of this UpdatePublicZoneStatusRequest.
 
         待设置状态Zone的ID
 
@@ -60,7 +60,7 @@ class UpdatePublicZoneStatusRequest:
 
     @zone_id.setter
     def zone_id(self, zone_id):
-        """Sets the zone_id of this UpdatePublicZoneStatusRequest.
+        r"""Sets the zone_id of this UpdatePublicZoneStatusRequest.
 
         待设置状态Zone的ID
 
@@ -71,7 +71,7 @@ class UpdatePublicZoneStatusRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePublicZoneStatusRequest.
+        r"""Gets the body of this UpdatePublicZoneStatusRequest.
 
         :return: The body of this UpdatePublicZoneStatusRequest.
         :rtype: :class:`huaweicloudsdkdns.v2.UpdatePublicZoneStatusRequestBody`
@@ -80,7 +80,7 @@ class UpdatePublicZoneStatusRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePublicZoneStatusRequest.
+        r"""Sets the body of this UpdatePublicZoneStatusRequest.
 
         :param body: The body of this UpdatePublicZoneStatusRequest.
         :type body: :class:`huaweicloudsdkdns.v2.UpdatePublicZoneStatusRequestBody`

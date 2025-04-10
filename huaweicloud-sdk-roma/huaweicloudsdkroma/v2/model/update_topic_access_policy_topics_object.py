@@ -31,7 +31,7 @@ class UpdateTopicAccessPolicyTopicsObject:
     }
 
     def __init__(self, name=None, policies=None, description=None, sensitive_word=None):
-        """UpdateTopicAccessPolicyTopicsObject
+        r"""UpdateTopicAccessPolicyTopicsObject
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class UpdateTopicAccessPolicyTopicsObject:
 
     @property
     def name(self):
-        """Gets the name of this UpdateTopicAccessPolicyTopicsObject.
+        r"""Gets the name of this UpdateTopicAccessPolicyTopicsObject.
 
         topic名称。
 
@@ -73,7 +73,7 @@ class UpdateTopicAccessPolicyTopicsObject:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateTopicAccessPolicyTopicsObject.
+        r"""Sets the name of this UpdateTopicAccessPolicyTopicsObject.
 
         topic名称。
 
@@ -84,7 +84,7 @@ class UpdateTopicAccessPolicyTopicsObject:
 
     @property
     def policies(self):
-        """Gets the policies of this UpdateTopicAccessPolicyTopicsObject.
+        r"""Gets the policies of this UpdateTopicAccessPolicyTopicsObject.
 
         权限列表。
 
@@ -95,7 +95,7 @@ class UpdateTopicAccessPolicyTopicsObject:
 
     @policies.setter
     def policies(self, policies):
-        """Sets the policies of this UpdateTopicAccessPolicyTopicsObject.
+        r"""Sets the policies of this UpdateTopicAccessPolicyTopicsObject.
 
         权限列表。
 
@@ -106,7 +106,7 @@ class UpdateTopicAccessPolicyTopicsObject:
 
     @property
     def description(self):
-        """Gets the description of this UpdateTopicAccessPolicyTopicsObject.
+        r"""Gets the description of this UpdateTopicAccessPolicyTopicsObject.
 
         描述。
 
@@ -117,7 +117,7 @@ class UpdateTopicAccessPolicyTopicsObject:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateTopicAccessPolicyTopicsObject.
+        r"""Sets the description of this UpdateTopicAccessPolicyTopicsObject.
 
         描述。
 
@@ -128,7 +128,7 @@ class UpdateTopicAccessPolicyTopicsObject:
 
     @property
     def sensitive_word(self):
-        """Gets the sensitive_word of this UpdateTopicAccessPolicyTopicsObject.
+        r"""Gets the sensitive_word of this UpdateTopicAccessPolicyTopicsObject.
 
         敏感字段。
 
@@ -139,7 +139,7 @@ class UpdateTopicAccessPolicyTopicsObject:
 
     @sensitive_word.setter
     def sensitive_word(self, sensitive_word):
-        """Sets the sensitive_word of this UpdateTopicAccessPolicyTopicsObject.
+        r"""Sets the sensitive_word of this UpdateTopicAccessPolicyTopicsObject.
 
         敏感字段。
 

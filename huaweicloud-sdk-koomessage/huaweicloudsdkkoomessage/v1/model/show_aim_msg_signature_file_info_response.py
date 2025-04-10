@@ -28,7 +28,7 @@ class ShowAimMsgSignatureFileInfoResponse(SdkResponse):
     }
 
     def __init__(self, file_id=None, file_name=None):
-        """ShowAimMsgSignatureFileInfoResponse
+        r"""ShowAimMsgSignatureFileInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowAimMsgSignatureFileInfoResponse(SdkResponse):
 
     @property
     def file_id(self):
-        """Gets the file_id of this ShowAimMsgSignatureFileInfoResponse.
+        r"""Gets the file_id of this ShowAimMsgSignatureFileInfoResponse.
 
         文件ID。
 
@@ -62,7 +62,7 @@ class ShowAimMsgSignatureFileInfoResponse(SdkResponse):
 
     @file_id.setter
     def file_id(self, file_id):
-        """Sets the file_id of this ShowAimMsgSignatureFileInfoResponse.
+        r"""Sets the file_id of this ShowAimMsgSignatureFileInfoResponse.
 
         文件ID。
 
@@ -73,7 +73,7 @@ class ShowAimMsgSignatureFileInfoResponse(SdkResponse):
 
     @property
     def file_name(self):
-        """Gets the file_name of this ShowAimMsgSignatureFileInfoResponse.
+        r"""Gets the file_name of this ShowAimMsgSignatureFileInfoResponse.
 
         文件名称。
 
@@ -84,7 +84,7 @@ class ShowAimMsgSignatureFileInfoResponse(SdkResponse):
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this ShowAimMsgSignatureFileInfoResponse.
+        r"""Sets the file_name of this ShowAimMsgSignatureFileInfoResponse.
 
         文件名称。
 

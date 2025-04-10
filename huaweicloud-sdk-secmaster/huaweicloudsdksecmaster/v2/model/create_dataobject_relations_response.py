@@ -42,7 +42,7 @@ class CreateDataobjectRelationsResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, request_id=None, total=None, limit=None, offset=None, success=None, data=None, x_request_id=None):
-        """CreateDataobjectRelationsResponse
+        r"""CreateDataobjectRelationsResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class CreateDataobjectRelationsResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this CreateDataobjectRelationsResponse.
+        r"""Gets the code of this CreateDataobjectRelationsResponse.
 
         错误码
 
@@ -111,7 +111,7 @@ class CreateDataobjectRelationsResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this CreateDataobjectRelationsResponse.
+        r"""Sets the code of this CreateDataobjectRelationsResponse.
 
         错误码
 
@@ -122,7 +122,7 @@ class CreateDataobjectRelationsResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this CreateDataobjectRelationsResponse.
+        r"""Gets the message of this CreateDataobjectRelationsResponse.
 
         错误信息
 
@@ -133,7 +133,7 @@ class CreateDataobjectRelationsResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CreateDataobjectRelationsResponse.
+        r"""Sets the message of this CreateDataobjectRelationsResponse.
 
         错误信息
 
@@ -144,7 +144,7 @@ class CreateDataobjectRelationsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateDataobjectRelationsResponse.
+        r"""Gets the request_id of this CreateDataobjectRelationsResponse.
 
         请求ID
 
@@ -155,7 +155,7 @@ class CreateDataobjectRelationsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateDataobjectRelationsResponse.
+        r"""Sets the request_id of this CreateDataobjectRelationsResponse.
 
         请求ID
 
@@ -166,7 +166,7 @@ class CreateDataobjectRelationsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this CreateDataobjectRelationsResponse.
+        r"""Gets the total of this CreateDataobjectRelationsResponse.
 
         总数
 
@@ -177,7 +177,7 @@ class CreateDataobjectRelationsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this CreateDataobjectRelationsResponse.
+        r"""Sets the total of this CreateDataobjectRelationsResponse.
 
         总数
 
@@ -188,7 +188,7 @@ class CreateDataobjectRelationsResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this CreateDataobjectRelationsResponse.
+        r"""Gets the limit of this CreateDataobjectRelationsResponse.
 
         分页大小
 
@@ -199,7 +199,7 @@ class CreateDataobjectRelationsResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this CreateDataobjectRelationsResponse.
+        r"""Sets the limit of this CreateDataobjectRelationsResponse.
 
         分页大小
 
@@ -210,7 +210,7 @@ class CreateDataobjectRelationsResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this CreateDataobjectRelationsResponse.
+        r"""Gets the offset of this CreateDataobjectRelationsResponse.
 
         偏移量
 
@@ -221,7 +221,7 @@ class CreateDataobjectRelationsResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this CreateDataobjectRelationsResponse.
+        r"""Sets the offset of this CreateDataobjectRelationsResponse.
 
         偏移量
 
@@ -232,7 +232,7 @@ class CreateDataobjectRelationsResponse(SdkResponse):
 
     @property
     def success(self):
-        """Gets the success of this CreateDataobjectRelationsResponse.
+        r"""Gets the success of this CreateDataobjectRelationsResponse.
 
         是否成功
 
@@ -243,7 +243,7 @@ class CreateDataobjectRelationsResponse(SdkResponse):
 
     @success.setter
     def success(self, success):
-        """Sets the success of this CreateDataobjectRelationsResponse.
+        r"""Sets the success of this CreateDataobjectRelationsResponse.
 
         是否成功
 
@@ -254,7 +254,7 @@ class CreateDataobjectRelationsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this CreateDataobjectRelationsResponse.
+        r"""Gets the data of this CreateDataobjectRelationsResponse.
 
         :return: The data of this CreateDataobjectRelationsResponse.
         :rtype: :class:`huaweicloudsdksecmaster.v2.BatchOperateDataobjectResult`
@@ -263,7 +263,7 @@ class CreateDataobjectRelationsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this CreateDataobjectRelationsResponse.
+        r"""Sets the data of this CreateDataobjectRelationsResponse.
 
         :param data: The data of this CreateDataobjectRelationsResponse.
         :type data: :class:`huaweicloudsdksecmaster.v2.BatchOperateDataobjectResult`
@@ -272,7 +272,7 @@ class CreateDataobjectRelationsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreateDataobjectRelationsResponse.
+        r"""Gets the x_request_id of this CreateDataobjectRelationsResponse.
 
         :return: The x_request_id of this CreateDataobjectRelationsResponse.
         :rtype: str
@@ -281,7 +281,7 @@ class CreateDataobjectRelationsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreateDataobjectRelationsResponse.
+        r"""Sets the x_request_id of this CreateDataobjectRelationsResponse.
 
         :param x_request_id: The x_request_id of this CreateDataobjectRelationsResponse.
         :type x_request_id: str

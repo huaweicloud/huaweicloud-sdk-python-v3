@@ -25,7 +25,7 @@ class InitializeStandardTemplateResultData:
     }
 
     def __init__(self, value=None):
-        """InitializeStandardTemplateResultData
+        r"""InitializeStandardTemplateResultData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class InitializeStandardTemplateResultData:
 
     @property
     def value(self):
-        """Gets the value of this InitializeStandardTemplateResultData.
+        r"""Gets the value of this InitializeStandardTemplateResultData.
 
         数据标准模板字段详情数组。
 
@@ -54,7 +54,7 @@ class InitializeStandardTemplateResultData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this InitializeStandardTemplateResultData.
+        r"""Sets the value of this InitializeStandardTemplateResultData.
 
         数据标准模板字段详情数组。
 

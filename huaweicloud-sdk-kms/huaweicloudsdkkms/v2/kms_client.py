@@ -34,7 +34,7 @@ class KmsClient(Client):
         return client_builder
 
     def associate_alias(self, request):
-        """associate_alias
+        r"""associate_alias
 
         关联别名。
         你可以将别名从原密钥关联到另一个新的密钥
@@ -100,7 +100,7 @@ class KmsClient(Client):
         return http_info
 
     def batch_create_kms_tags(self, request):
-        """批量添加删除密钥标签
+        r"""批量添加删除密钥标签
 
         - 功能介绍：批量添加删除密钥标签。
         
@@ -167,7 +167,7 @@ class KmsClient(Client):
         return http_info
 
     def cancel_grant(self, request):
-        """撤销授权
+        r"""撤销授权
 
         - 功能介绍：撤销授权，授权用户撤销被授权用户操作密钥的权限。
         - 说明：
@@ -234,7 +234,7 @@ class KmsClient(Client):
         return http_info
 
     def cancel_key_deletion(self, request):
-        """取消计划删除密钥
+        r"""取消计划删除密钥
 
         - 功能介绍：取消计划删除密钥。
         - 说明：密钥处于“计划删除”状态才能取消计划删除密钥。
@@ -300,7 +300,7 @@ class KmsClient(Client):
         return http_info
 
     def cancel_self_grant(self, request):
-        """退役授权
+        r"""退役授权
 
         - 功能介绍：退役授权，表示被授权用户不再具有授权密钥的操作权。
           例如：用户A授权用户B可以操作密钥A/key，同时授权用户C可以撤销该授权，
@@ -372,7 +372,7 @@ class KmsClient(Client):
         return http_info
 
     def create_alias(self, request):
-        """create_alias
+        r"""create_alias
 
         
         Please refer to HUAWEI cloud API Explorer for details.
@@ -436,7 +436,7 @@ class KmsClient(Client):
         return http_info
 
     def create_datakey(self, request):
-        """创建数据密钥
+        r"""创建数据密钥
 
         - 功能介绍：创建数据密钥，返回结果包含明文和密文。
         
@@ -501,7 +501,7 @@ class KmsClient(Client):
         return http_info
 
     def create_datakey_without_plaintext(self, request):
-        """创建不含明文数据密钥
+        r"""创建不含明文数据密钥
 
         - 功能介绍：创建数据密钥，返回结果只包含密文。
         
@@ -566,7 +566,7 @@ class KmsClient(Client):
         return http_info
 
     def create_ec_datakey_pair(self, request):
-        """创建EC数据密钥对
+        r"""创建EC数据密钥对
 
         - 功能介绍：创建EC数据密钥对，返回结果包含明文公钥和密文私钥，根据参数决定是否返回明文私钥。
         
@@ -631,7 +631,7 @@ class KmsClient(Client):
         return http_info
 
     def create_grant(self, request):
-        """创建授权
+        r"""创建授权
 
         - 功能介绍：创建授权，被授权用户可以对授权密钥进行操作。
         - 说明：
@@ -698,7 +698,7 @@ class KmsClient(Client):
         return http_info
 
     def create_key(self, request):
-        """创建密钥
+        r"""创建密钥
 
         创建用户主密钥，用户主密钥可以为对称密钥或非对称密钥。
         - 对称密钥为长度为256位AES密钥或者128位SM4密钥，可用于小量数据的加密或者用于加密数据密钥。
@@ -765,7 +765,7 @@ class KmsClient(Client):
         return http_info
 
     def create_key_store(self, request):
-        """创建专属密钥库
+        r"""创建专属密钥库
 
         - \&quot;创建租户专属密钥库，专属密钥库使用DHSM实例作为密钥的存储\&quot;
         
@@ -830,7 +830,7 @@ class KmsClient(Client):
         return http_info
 
     def create_kms_tag(self, request):
-        """添加密钥标签
+        r"""添加密钥标签
 
         - 功能介绍：添加密钥标签。
         
@@ -897,7 +897,7 @@ class KmsClient(Client):
         return http_info
 
     def create_parameters_for_import(self, request):
-        """获取密钥导入参数
+        r"""获取密钥导入参数
 
         - 功能介绍：获取导入密钥的必要参数，包括密钥导入令牌和密钥加密公钥。
         - 说明：返回的公钥类型默认为RSA_2048。
@@ -963,7 +963,7 @@ class KmsClient(Client):
         return http_info
 
     def create_random(self, request):
-        """创建随机数
+        r"""创建随机数
 
         - 功能介绍：
           生成8~8192bit范围内的随机数。
@@ -1029,7 +1029,7 @@ class KmsClient(Client):
         return http_info
 
     def create_rsa_datakey_pair(self, request):
-        """创建RSA数据密钥对
+        r"""创建RSA数据密钥对
 
         - 功能介绍：创建rsa数据密钥对，返回结果包含明文公钥和密文私钥，根据参数决定是否返回明文私钥。
         
@@ -1094,7 +1094,7 @@ class KmsClient(Client):
         return http_info
 
     def decrypt_data(self, request):
-        """解密数据
+        r"""解密数据
 
         - 功能介绍：解密数据。
         
@@ -1159,7 +1159,7 @@ class KmsClient(Client):
         return http_info
 
     def decrypt_datakey(self, request):
-        """解密数据密钥
+        r"""解密数据密钥
 
         - 功能介绍：解密数据密钥，用指定的主密钥解密数据密钥。
         
@@ -1224,7 +1224,7 @@ class KmsClient(Client):
         return http_info
 
     def delete_alias(self, request):
-        """delete_alias
+        r"""delete_alias
 
         删除别名
         
@@ -1289,7 +1289,7 @@ class KmsClient(Client):
         return http_info
 
     def delete_imported_key_material(self, request):
-        """删除密钥材料
+        r"""删除密钥材料
 
         - 功能介绍：删除密钥材料信息。
         
@@ -1354,7 +1354,7 @@ class KmsClient(Client):
         return http_info
 
     def delete_key(self, request):
-        """计划删除密钥
+        r"""计划删除密钥
 
         - 功能介绍：计划多少天后删除密钥，可设置7天～1096天内删除密钥。
         
@@ -1419,7 +1419,7 @@ class KmsClient(Client):
         return http_info
 
     def delete_key_store(self, request):
-        """删除专属密钥库
+        r"""删除专属密钥库
 
         删除租户专属密钥库
         
@@ -1484,7 +1484,7 @@ class KmsClient(Client):
         return http_info
 
     def delete_tag(self, request):
-        """删除密钥标签
+        r"""删除密钥标签
 
         - 功能介绍：删除密钥标签。
         
@@ -1551,7 +1551,7 @@ class KmsClient(Client):
         return http_info
 
     def disable_key(self, request):
-        """禁用密钥
+        r"""禁用密钥
 
         - 功能介绍：禁用密钥，密钥禁用后不可以使用。
         - 说明：密钥为启用状态才能禁用密钥。
@@ -1617,7 +1617,7 @@ class KmsClient(Client):
         return http_info
 
     def disable_key_rotation(self, request):
-        """关闭密钥轮换
+        r"""关闭密钥轮换
 
         - 功能介绍：关闭用户主密钥轮换。
         
@@ -1682,7 +1682,7 @@ class KmsClient(Client):
         return http_info
 
     def disable_key_store(self, request):
-        """禁用专属密钥库
+        r"""禁用专属密钥库
 
         禁用租户专属密钥库
         
@@ -1747,7 +1747,7 @@ class KmsClient(Client):
         return http_info
 
     def enable_key(self, request):
-        """启用密钥
+        r"""启用密钥
 
         - 功能介绍：启用密钥，密钥启用后才可以使用。
         - 说明：密钥为禁用状态才能启用密钥。
@@ -1813,7 +1813,7 @@ class KmsClient(Client):
         return http_info
 
     def enable_key_rotation(self, request):
-        """开启密钥轮换
+        r"""开启密钥轮换
 
         - 功能介绍：开启用户主密钥轮换。
         - 说明：
@@ -1881,7 +1881,7 @@ class KmsClient(Client):
         return http_info
 
     def enable_key_store(self, request):
-        """启用专属密钥库
+        r"""启用专属密钥库
 
         启用租户专属密钥库
         
@@ -1946,7 +1946,7 @@ class KmsClient(Client):
         return http_info
 
     def encrypt_data(self, request):
-        """加密数据
+        r"""加密数据
 
         - 功能介绍：加密数据，用指定的用户主密钥加密数据。
         
@@ -2011,7 +2011,7 @@ class KmsClient(Client):
         return http_info
 
     def encrypt_datakey(self, request):
-        """加密数据密钥
+        r"""加密数据密钥
 
         - 功能介绍：加密数据密钥，用指定的主密钥加密数据密钥。
         
@@ -2076,7 +2076,7 @@ class KmsClient(Client):
         return http_info
 
     def generate_mac(self, request):
-        """生成消息验证码
+        r"""生成消息验证码
 
         功能介绍：生成消息验证码
         
@@ -2141,7 +2141,7 @@ class KmsClient(Client):
         return http_info
 
     def import_key_material(self, request):
-        """导入密钥材料
+        r"""导入密钥材料
 
         - 功能介绍：导入密钥材料。
         
@@ -2206,7 +2206,7 @@ class KmsClient(Client):
         return http_info
 
     def list_aliases(self, request):
-        """list_aliases
+        r"""list_aliases
 
         查询一个密钥关联的所有别名
         
@@ -2275,7 +2275,7 @@ class KmsClient(Client):
         return http_info
 
     def list_grants(self, request):
-        """查询授权列表
+        r"""查询授权列表
 
         - 功能介绍：查询密钥的授权列表。
         
@@ -2340,7 +2340,7 @@ class KmsClient(Client):
         return http_info
 
     def list_key_detail(self, request):
-        """查询密钥信息
+        r"""查询密钥信息
 
         - 功能介绍：查询密钥详细信息。
         
@@ -2405,7 +2405,7 @@ class KmsClient(Client):
         return http_info
 
     def list_key_stores(self, request):
-        """查询专属密钥库列表
+        r"""查询专属密钥库列表
 
         查询租户专属密钥库列表
         
@@ -2472,7 +2472,7 @@ class KmsClient(Client):
         return http_info
 
     def list_keys(self, request):
-        """查询密钥列表
+        r"""查询密钥列表
 
         - 功能介绍：查询用户所有密钥列表。
         
@@ -2537,7 +2537,7 @@ class KmsClient(Client):
         return http_info
 
     def list_kms_by_tags(self, request):
-        """查询密钥实例
+        r"""查询密钥实例
 
         - 功能介绍：查询密钥实例。通过标签过滤，查询指定用户主密钥的详细信息。
         
@@ -2604,7 +2604,7 @@ class KmsClient(Client):
         return http_info
 
     def list_kms_tags(self, request):
-        """查询项目标签
+        r"""查询项目标签
 
         - 功能介绍：查询用户在指定项目下的所有标签集合。
         
@@ -2667,7 +2667,7 @@ class KmsClient(Client):
         return http_info
 
     def list_retirable_grants(self, request):
-        """查询可退役授权列表
+        r"""查询可退役授权列表
 
         - 功能介绍：查询用户可以退役的授权列表。
         
@@ -2732,7 +2732,7 @@ class KmsClient(Client):
         return http_info
 
     def list_support_regions(self, request):
-        """查询跨区域密钥所支持的区域
+        r"""查询跨区域密钥所支持的区域
 
         - 功能介绍：查询跨区域密钥所支持的区域。
         
@@ -2799,7 +2799,7 @@ class KmsClient(Client):
         return http_info
 
     def replicate_key(self, request):
-        """复制密钥到指定区域
+        r"""复制密钥到指定区域
 
         将本区域的密钥复制到指定区域。
         
@@ -2866,7 +2866,7 @@ class KmsClient(Client):
         return http_info
 
     def show_key_rotation_status(self, request):
-        """查询密钥轮换状态
+        r"""查询密钥轮换状态
 
         - 功能介绍：查询用户主密钥轮换状态。
         
@@ -2931,7 +2931,7 @@ class KmsClient(Client):
         return http_info
 
     def show_key_store(self, request):
-        """获取专属密钥库
+        r"""获取专属密钥库
 
         获取租户专属密钥库
         
@@ -2996,7 +2996,7 @@ class KmsClient(Client):
         return http_info
 
     def show_kms_tags(self, request):
-        """查询密钥标签
+        r"""查询密钥标签
 
         - 功能介绍：查询密钥标签。
         
@@ -3061,7 +3061,7 @@ class KmsClient(Client):
         return http_info
 
     def show_public_key(self, request):
-        """查询公钥信息
+        r"""查询公钥信息
 
         - 查询用户指定非对称密钥的公钥信息。
         
@@ -3126,7 +3126,7 @@ class KmsClient(Client):
         return http_info
 
     def show_user_instances(self, request):
-        """查询实例数
+        r"""查询实例数
 
         - 功能介绍：查询实例数，获取用户已经创建的用户主密钥数量。
         
@@ -3189,7 +3189,7 @@ class KmsClient(Client):
         return http_info
 
     def show_user_quotas(self, request):
-        """查询配额
+        r"""查询配额
 
         - 功能介绍：查询配额，查询用户可以创建的用户主密钥配额总数及当前使用量信息。
         
@@ -3252,7 +3252,7 @@ class KmsClient(Client):
         return http_info
 
     def sign(self, request):
-        """签名数据
+        r"""签名数据
 
         - 功能介绍：使用非对称密钥的私钥对消息或消息摘要进行数字签名。
         
@@ -3317,7 +3317,7 @@ class KmsClient(Client):
         return http_info
 
     def update_key_alias(self, request):
-        """修改密钥别名
+        r"""修改密钥别名
 
         - 功能介绍：修改用户主密钥别名。
         - 说明：
@@ -3385,7 +3385,7 @@ class KmsClient(Client):
         return http_info
 
     def update_key_description(self, request):
-        """修改密钥描述
+        r"""修改密钥描述
 
         - 功能介绍：修改用户主密钥描述信息。
         - 说明：
@@ -3453,7 +3453,7 @@ class KmsClient(Client):
         return http_info
 
     def update_key_rotation_interval(self, request):
-        """修改密钥轮换周期
+        r"""修改密钥轮换周期
 
         - 功能介绍：修改用户主密钥轮换周期。
         
@@ -3518,7 +3518,7 @@ class KmsClient(Client):
         return http_info
 
     def update_primary_region(self, request):
-        """修改密钥所属的主区域
+        r"""修改密钥所属的主区域
 
         修改密钥所属的主区域。修改后当前区域会变为副本区域。
         
@@ -3585,7 +3585,7 @@ class KmsClient(Client):
         return http_info
 
     def validate_signature(self, request):
-        """验证签名
+        r"""验证签名
 
         - 功能介绍：使用非对称密钥的私钥对消息或消息摘要进行签名验证。
         
@@ -3650,7 +3650,7 @@ class KmsClient(Client):
         return http_info
 
     def verify_mac(self, request):
-        """校验消息验证码
+        r"""校验消息验证码
 
         功能介绍：校验消息验证码
         
@@ -3715,7 +3715,7 @@ class KmsClient(Client):
         return http_info
 
     def show_version(self, request):
-        """查询指定版本信息
+        r"""查询指定版本信息
 
         - 功能介绍：查指定API版本信息。
         
@@ -3780,7 +3780,7 @@ class KmsClient(Client):
         return http_info
 
     def show_versions(self, request):
-        """查询版本信息列表
+        r"""查询版本信息列表
 
         - 功能介绍：查询API版本信息列表。
         

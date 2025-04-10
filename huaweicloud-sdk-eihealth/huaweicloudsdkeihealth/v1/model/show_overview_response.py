@@ -34,7 +34,7 @@ class ShowOverviewResponse(SdkResponse):
     }
 
     def __init__(self, id=None, storage=None, project_num=None, charge_mode=None, is_arrears=None):
-        """ShowOverviewResponse
+        r"""ShowOverviewResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowOverviewResponse.
+        r"""Gets the id of this ShowOverviewResponse.
 
         平台ID
 
@@ -83,7 +83,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowOverviewResponse.
+        r"""Sets the id of this ShowOverviewResponse.
 
         平台ID
 
@@ -94,7 +94,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @property
     def storage(self):
-        """Gets the storage of this ShowOverviewResponse.
+        r"""Gets the storage of this ShowOverviewResponse.
 
         存储量，单位：byte
 
@@ -105,7 +105,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @storage.setter
     def storage(self, storage):
-        """Sets the storage of this ShowOverviewResponse.
+        r"""Sets the storage of this ShowOverviewResponse.
 
         存储量，单位：byte
 
@@ -116,7 +116,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @property
     def project_num(self):
-        """Gets the project_num of this ShowOverviewResponse.
+        r"""Gets the project_num of this ShowOverviewResponse.
 
         项目总数
 
@@ -127,7 +127,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @project_num.setter
     def project_num(self, project_num):
-        """Sets the project_num of this ShowOverviewResponse.
+        r"""Sets the project_num of this ShowOverviewResponse.
 
         项目总数
 
@@ -138,7 +138,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this ShowOverviewResponse.
+        r"""Gets the charge_mode of this ShowOverviewResponse.
 
         计费模式
 
@@ -149,7 +149,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this ShowOverviewResponse.
+        r"""Sets the charge_mode of this ShowOverviewResponse.
 
         计费模式
 
@@ -160,7 +160,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @property
     def is_arrears(self):
-        """Gets the is_arrears of this ShowOverviewResponse.
+        r"""Gets the is_arrears of this ShowOverviewResponse.
 
         是否欠费
 
@@ -171,7 +171,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @is_arrears.setter
     def is_arrears(self, is_arrears):
-        """Sets the is_arrears of this ShowOverviewResponse.
+        r"""Sets the is_arrears of this ShowOverviewResponse.
 
         是否欠费
 

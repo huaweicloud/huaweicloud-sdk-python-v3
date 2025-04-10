@@ -27,7 +27,7 @@ class DeleteStorageClaimRequest:
     }
 
     def __init__(self, storage_id=None, body=None):
-        """DeleteStorageClaimRequest
+        r"""DeleteStorageClaimRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteStorageClaimRequest:
 
     @property
     def storage_id(self):
-        """Gets the storage_id of this DeleteStorageClaimRequest.
+        r"""Gets the storage_id of this DeleteStorageClaimRequest.
 
         WKS存储ID。
 
@@ -60,7 +60,7 @@ class DeleteStorageClaimRequest:
 
     @storage_id.setter
     def storage_id(self, storage_id):
-        """Sets the storage_id of this DeleteStorageClaimRequest.
+        r"""Sets the storage_id of this DeleteStorageClaimRequest.
 
         WKS存储ID。
 
@@ -71,7 +71,7 @@ class DeleteStorageClaimRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteStorageClaimRequest.
+        r"""Gets the body of this DeleteStorageClaimRequest.
 
         :return: The body of this DeleteStorageClaimRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.DeleteStorageClaimReq`
@@ -80,7 +80,7 @@ class DeleteStorageClaimRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteStorageClaimRequest.
+        r"""Sets the body of this DeleteStorageClaimRequest.
 
         :param body: The body of this DeleteStorageClaimRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.DeleteStorageClaimReq`

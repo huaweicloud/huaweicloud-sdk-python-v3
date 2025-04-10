@@ -35,7 +35,7 @@ class TaskEventRsp:
     }
 
     def __init__(self, type=None, count=None, reason=None, message=None, first_timestamp=None, last_timestamp=None):
-        """TaskEventRsp
+        r"""TaskEventRsp
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class TaskEventRsp:
 
     @property
     def type(self):
-        """Gets the type of this TaskEventRsp.
+        r"""Gets the type of this TaskEventRsp.
 
         任务启动事件类型
 
@@ -89,7 +89,7 @@ class TaskEventRsp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this TaskEventRsp.
+        r"""Sets the type of this TaskEventRsp.
 
         任务启动事件类型
 
@@ -100,7 +100,7 @@ class TaskEventRsp:
 
     @property
     def count(self):
-        """Gets the count of this TaskEventRsp.
+        r"""Gets the count of this TaskEventRsp.
 
         任务启动事件发生次数
 
@@ -111,7 +111,7 @@ class TaskEventRsp:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this TaskEventRsp.
+        r"""Sets the count of this TaskEventRsp.
 
         任务启动事件发生次数
 
@@ -122,7 +122,7 @@ class TaskEventRsp:
 
     @property
     def reason(self):
-        """Gets the reason of this TaskEventRsp.
+        r"""Gets the reason of this TaskEventRsp.
 
         任务启动事件状态
 
@@ -133,7 +133,7 @@ class TaskEventRsp:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this TaskEventRsp.
+        r"""Sets the reason of this TaskEventRsp.
 
         任务启动事件状态
 
@@ -144,7 +144,7 @@ class TaskEventRsp:
 
     @property
     def message(self):
-        """Gets the message of this TaskEventRsp.
+        r"""Gets the message of this TaskEventRsp.
 
         任务启动事件详细信息
 
@@ -155,7 +155,7 @@ class TaskEventRsp:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this TaskEventRsp.
+        r"""Sets the message of this TaskEventRsp.
 
         任务启动事件详细信息
 
@@ -166,7 +166,7 @@ class TaskEventRsp:
 
     @property
     def first_timestamp(self):
-        """Gets the first_timestamp of this TaskEventRsp.
+        r"""Gets the first_timestamp of this TaskEventRsp.
 
         任务启动事件首次上报时间
 
@@ -177,7 +177,7 @@ class TaskEventRsp:
 
     @first_timestamp.setter
     def first_timestamp(self, first_timestamp):
-        """Sets the first_timestamp of this TaskEventRsp.
+        r"""Sets the first_timestamp of this TaskEventRsp.
 
         任务启动事件首次上报时间
 
@@ -188,7 +188,7 @@ class TaskEventRsp:
 
     @property
     def last_timestamp(self):
-        """Gets the last_timestamp of this TaskEventRsp.
+        r"""Gets the last_timestamp of this TaskEventRsp.
 
         任务启动事件末次上报时间
 
@@ -199,7 +199,7 @@ class TaskEventRsp:
 
     @last_timestamp.setter
     def last_timestamp(self, last_timestamp):
-        """Sets the last_timestamp of this TaskEventRsp.
+        r"""Sets the last_timestamp of this TaskEventRsp.
 
         任务启动事件末次上报时间
 

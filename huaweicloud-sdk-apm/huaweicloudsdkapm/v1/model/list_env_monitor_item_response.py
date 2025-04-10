@@ -30,7 +30,7 @@ class ListEnvMonitorItemResponse(SdkResponse):
     }
 
     def __init__(self, monitor_item_list=None, total_count=None, total_page=None):
-        """ListEnvMonitorItemResponse
+        r"""ListEnvMonitorItemResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListEnvMonitorItemResponse(SdkResponse):
 
     @property
     def monitor_item_list(self):
-        """Gets the monitor_item_list of this ListEnvMonitorItemResponse.
+        r"""Gets the monitor_item_list of this ListEnvMonitorItemResponse.
 
         监控项列表。
 
@@ -69,7 +69,7 @@ class ListEnvMonitorItemResponse(SdkResponse):
 
     @monitor_item_list.setter
     def monitor_item_list(self, monitor_item_list):
-        """Sets the monitor_item_list of this ListEnvMonitorItemResponse.
+        r"""Sets the monitor_item_list of this ListEnvMonitorItemResponse.
 
         监控项列表。
 
@@ -80,7 +80,7 @@ class ListEnvMonitorItemResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListEnvMonitorItemResponse.
+        r"""Gets the total_count of this ListEnvMonitorItemResponse.
 
         总数。
 
@@ -91,7 +91,7 @@ class ListEnvMonitorItemResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListEnvMonitorItemResponse.
+        r"""Sets the total_count of this ListEnvMonitorItemResponse.
 
         总数。
 
@@ -102,7 +102,7 @@ class ListEnvMonitorItemResponse(SdkResponse):
 
     @property
     def total_page(self):
-        """Gets the total_page of this ListEnvMonitorItemResponse.
+        r"""Gets the total_page of this ListEnvMonitorItemResponse.
 
         总页数。
 
@@ -113,7 +113,7 @@ class ListEnvMonitorItemResponse(SdkResponse):
 
     @total_page.setter
     def total_page(self, total_page):
-        """Sets the total_page of this ListEnvMonitorItemResponse.
+        r"""Sets the total_page of this ListEnvMonitorItemResponse.
 
         总页数。
 

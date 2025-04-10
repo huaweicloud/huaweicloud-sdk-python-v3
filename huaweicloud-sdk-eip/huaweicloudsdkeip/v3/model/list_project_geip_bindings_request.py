@@ -73,7 +73,7 @@ class ListProjectGeipBindingsRequest:
     }
 
     def __init__(self, fields=None, geip_id=None, geip_ip_address=None, public_border_group=None, instance_type=None, instance_id=None, instance_vpc_id=None, gcbandwidth_id=None, gcbandwidth_admin_status=None, gcbandwidth_size=None, gcbandwidth_sla_level=None, gcbandwidth_dscp=None, vnic_private_ip_address=None, vnic_vpc_id=None, vnic_port_id=None, vnic_device_id=None, vnic_device_owner=None, vnic_device_owner_prefixlike=None, vnic_instance_type=None, vnic_instance_id=None, sort_key=None, sort_dir=None, limit=None, offset=None, marker=None):
-        """ListProjectGeipBindingsRequest
+        r"""ListProjectGeipBindingsRequest
 
         The model defined in huaweicloud sdk
 
@@ -211,7 +211,7 @@ class ListProjectGeipBindingsRequest:
 
     @property
     def fields(self):
-        """Gets the fields of this ListProjectGeipBindingsRequest.
+        r"""Gets the fields of this ListProjectGeipBindingsRequest.
 
         形式为\\\"fields=geip_id&fields=geip_ip_address&...\\\"，支持字段：geip_id/geip_ip_address/instance_type/instance_id/vnic/vn_list/public_border_group/gcbandwidth/version/created_at/updated_at/instance_vpc_id
 
@@ -222,7 +222,7 @@ class ListProjectGeipBindingsRequest:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this ListProjectGeipBindingsRequest.
+        r"""Sets the fields of this ListProjectGeipBindingsRequest.
 
         形式为\\\"fields=geip_id&fields=geip_ip_address&...\\\"，支持字段：geip_id/geip_ip_address/instance_type/instance_id/vnic/vn_list/public_border_group/gcbandwidth/version/created_at/updated_at/instance_vpc_id
 
@@ -233,7 +233,7 @@ class ListProjectGeipBindingsRequest:
 
     @property
     def geip_id(self):
-        """Gets the geip_id of this ListProjectGeipBindingsRequest.
+        r"""Gets the geip_id of this ListProjectGeipBindingsRequest.
 
         GEIP的uuid
 
@@ -244,7 +244,7 @@ class ListProjectGeipBindingsRequest:
 
     @geip_id.setter
     def geip_id(self, geip_id):
-        """Sets the geip_id of this ListProjectGeipBindingsRequest.
+        r"""Sets the geip_id of this ListProjectGeipBindingsRequest.
 
         GEIP的uuid
 
@@ -255,7 +255,7 @@ class ListProjectGeipBindingsRequest:
 
     @property
     def geip_ip_address(self):
-        """Gets the geip_ip_address of this ListProjectGeipBindingsRequest.
+        r"""Gets the geip_ip_address of this ListProjectGeipBindingsRequest.
 
         GEIP的ip地址
 
@@ -266,7 +266,7 @@ class ListProjectGeipBindingsRequest:
 
     @geip_ip_address.setter
     def geip_ip_address(self, geip_ip_address):
-        """Sets the geip_ip_address of this ListProjectGeipBindingsRequest.
+        r"""Sets the geip_ip_address of this ListProjectGeipBindingsRequest.
 
         GEIP的ip地址
 
@@ -277,7 +277,7 @@ class ListProjectGeipBindingsRequest:
 
     @property
     def public_border_group(self):
-        """Gets the public_border_group of this ListProjectGeipBindingsRequest.
+        r"""Gets the public_border_group of this ListProjectGeipBindingsRequest.
 
         GEIP所处的出口位置
 
@@ -288,7 +288,7 @@ class ListProjectGeipBindingsRequest:
 
     @public_border_group.setter
     def public_border_group(self, public_border_group):
-        """Sets the public_border_group of this ListProjectGeipBindingsRequest.
+        r"""Sets the public_border_group of this ListProjectGeipBindingsRequest.
 
         GEIP所处的出口位置
 
@@ -299,7 +299,7 @@ class ListProjectGeipBindingsRequest:
 
     @property
     def instance_type(self):
-        """Gets the instance_type of this ListProjectGeipBindingsRequest.
+        r"""Gets the instance_type of this ListProjectGeipBindingsRequest.
 
         绑定的实例类型
 
@@ -310,7 +310,7 @@ class ListProjectGeipBindingsRequest:
 
     @instance_type.setter
     def instance_type(self, instance_type):
-        """Sets the instance_type of this ListProjectGeipBindingsRequest.
+        r"""Sets the instance_type of this ListProjectGeipBindingsRequest.
 
         绑定的实例类型
 
@@ -321,7 +321,7 @@ class ListProjectGeipBindingsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListProjectGeipBindingsRequest.
+        r"""Gets the instance_id of this ListProjectGeipBindingsRequest.
 
         绑定的实例id
 
@@ -332,7 +332,7 @@ class ListProjectGeipBindingsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListProjectGeipBindingsRequest.
+        r"""Sets the instance_id of this ListProjectGeipBindingsRequest.
 
         绑定的实例id
 
@@ -343,7 +343,7 @@ class ListProjectGeipBindingsRequest:
 
     @property
     def instance_vpc_id(self):
-        """Gets the instance_vpc_id of this ListProjectGeipBindingsRequest.
+        r"""Gets the instance_vpc_id of this ListProjectGeipBindingsRequest.
 
         绑定的实例vpcid
 
@@ -354,7 +354,7 @@ class ListProjectGeipBindingsRequest:
 
     @instance_vpc_id.setter
     def instance_vpc_id(self, instance_vpc_id):
-        """Sets the instance_vpc_id of this ListProjectGeipBindingsRequest.
+        r"""Sets the instance_vpc_id of this ListProjectGeipBindingsRequest.
 
         绑定的实例vpcid
 
@@ -365,7 +365,7 @@ class ListProjectGeipBindingsRequest:
 
     @property
     def gcbandwidth_id(self):
-        """Gets the gcbandwidth_id of this ListProjectGeipBindingsRequest.
+        r"""Gets the gcbandwidth_id of this ListProjectGeipBindingsRequest.
 
         骨干带宽的uuid
 
@@ -376,7 +376,7 @@ class ListProjectGeipBindingsRequest:
 
     @gcbandwidth_id.setter
     def gcbandwidth_id(self, gcbandwidth_id):
-        """Sets the gcbandwidth_id of this ListProjectGeipBindingsRequest.
+        r"""Sets the gcbandwidth_id of this ListProjectGeipBindingsRequest.
 
         骨干带宽的uuid
 
@@ -387,7 +387,7 @@ class ListProjectGeipBindingsRequest:
 
     @property
     def gcbandwidth_admin_status(self):
-        """Gets the gcbandwidth_admin_status of this ListProjectGeipBindingsRequest.
+        r"""Gets the gcbandwidth_admin_status of this ListProjectGeipBindingsRequest.
 
         骨干带宽的状态
 
@@ -398,7 +398,7 @@ class ListProjectGeipBindingsRequest:
 
     @gcbandwidth_admin_status.setter
     def gcbandwidth_admin_status(self, gcbandwidth_admin_status):
-        """Sets the gcbandwidth_admin_status of this ListProjectGeipBindingsRequest.
+        r"""Sets the gcbandwidth_admin_status of this ListProjectGeipBindingsRequest.
 
         骨干带宽的状态
 
@@ -409,7 +409,7 @@ class ListProjectGeipBindingsRequest:
 
     @property
     def gcbandwidth_size(self):
-        """Gets the gcbandwidth_size of this ListProjectGeipBindingsRequest.
+        r"""Gets the gcbandwidth_size of this ListProjectGeipBindingsRequest.
 
         骨干带宽的大小
 
@@ -420,7 +420,7 @@ class ListProjectGeipBindingsRequest:
 
     @gcbandwidth_size.setter
     def gcbandwidth_size(self, gcbandwidth_size):
-        """Sets the gcbandwidth_size of this ListProjectGeipBindingsRequest.
+        r"""Sets the gcbandwidth_size of this ListProjectGeipBindingsRequest.
 
         骨干带宽的大小
 
@@ -431,7 +431,7 @@ class ListProjectGeipBindingsRequest:
 
     @property
     def gcbandwidth_sla_level(self):
-        """Gets the gcbandwidth_sla_level of this ListProjectGeipBindingsRequest.
+        r"""Gets the gcbandwidth_sla_level of this ListProjectGeipBindingsRequest.
 
         描述网络等级，从高到低分为铂金、金、银、铜
 
@@ -442,7 +442,7 @@ class ListProjectGeipBindingsRequest:
 
     @gcbandwidth_sla_level.setter
     def gcbandwidth_sla_level(self, gcbandwidth_sla_level):
-        """Sets the gcbandwidth_sla_level of this ListProjectGeipBindingsRequest.
+        r"""Sets the gcbandwidth_sla_level of this ListProjectGeipBindingsRequest.
 
         描述网络等级，从高到低分为铂金、金、银、铜
 
@@ -453,7 +453,7 @@ class ListProjectGeipBindingsRequest:
 
     @property
     def gcbandwidth_dscp(self):
-        """Gets the gcbandwidth_dscp of this ListProjectGeipBindingsRequest.
+        r"""Gets the gcbandwidth_dscp of this ListProjectGeipBindingsRequest.
 
         线路质量金银铜对应的DSCP值
 
@@ -464,7 +464,7 @@ class ListProjectGeipBindingsRequest:
 
     @gcbandwidth_dscp.setter
     def gcbandwidth_dscp(self, gcbandwidth_dscp):
-        """Sets the gcbandwidth_dscp of this ListProjectGeipBindingsRequest.
+        r"""Sets the gcbandwidth_dscp of this ListProjectGeipBindingsRequest.
 
         线路质量金银铜对应的DSCP值
 
@@ -475,7 +475,7 @@ class ListProjectGeipBindingsRequest:
 
     @property
     def vnic_private_ip_address(self):
-        """Gets the vnic_private_ip_address of this ListProjectGeipBindingsRequest.
+        r"""Gets the vnic_private_ip_address of this ListProjectGeipBindingsRequest.
 
         绑定实例的ip地址
 
@@ -486,7 +486,7 @@ class ListProjectGeipBindingsRequest:
 
     @vnic_private_ip_address.setter
     def vnic_private_ip_address(self, vnic_private_ip_address):
-        """Sets the vnic_private_ip_address of this ListProjectGeipBindingsRequest.
+        r"""Sets the vnic_private_ip_address of this ListProjectGeipBindingsRequest.
 
         绑定实例的ip地址
 
@@ -497,7 +497,7 @@ class ListProjectGeipBindingsRequest:
 
     @property
     def vnic_vpc_id(self):
-        """Gets the vnic_vpc_id of this ListProjectGeipBindingsRequest.
+        r"""Gets the vnic_vpc_id of this ListProjectGeipBindingsRequest.
 
         绑定实例所在的vpcid
 
@@ -508,7 +508,7 @@ class ListProjectGeipBindingsRequest:
 
     @vnic_vpc_id.setter
     def vnic_vpc_id(self, vnic_vpc_id):
-        """Sets the vnic_vpc_id of this ListProjectGeipBindingsRequest.
+        r"""Sets the vnic_vpc_id of this ListProjectGeipBindingsRequest.
 
         绑定实例所在的vpcid
 
@@ -519,7 +519,7 @@ class ListProjectGeipBindingsRequest:
 
     @property
     def vnic_port_id(self):
-        """Gets the vnic_port_id of this ListProjectGeipBindingsRequest.
+        r"""Gets the vnic_port_id of this ListProjectGeipBindingsRequest.
 
         绑定实例port的uuid
 
@@ -530,7 +530,7 @@ class ListProjectGeipBindingsRequest:
 
     @vnic_port_id.setter
     def vnic_port_id(self, vnic_port_id):
-        """Sets the vnic_port_id of this ListProjectGeipBindingsRequest.
+        r"""Sets the vnic_port_id of this ListProjectGeipBindingsRequest.
 
         绑定实例port的uuid
 
@@ -541,7 +541,7 @@ class ListProjectGeipBindingsRequest:
 
     @property
     def vnic_device_id(self):
-        """Gets the vnic_device_id of this ListProjectGeipBindingsRequest.
+        r"""Gets the vnic_device_id of this ListProjectGeipBindingsRequest.
 
         绑定实例port对应的实例id
 
@@ -552,7 +552,7 @@ class ListProjectGeipBindingsRequest:
 
     @vnic_device_id.setter
     def vnic_device_id(self, vnic_device_id):
-        """Sets the vnic_device_id of this ListProjectGeipBindingsRequest.
+        r"""Sets the vnic_device_id of this ListProjectGeipBindingsRequest.
 
         绑定实例port对应的实例id
 
@@ -563,7 +563,7 @@ class ListProjectGeipBindingsRequest:
 
     @property
     def vnic_device_owner(self):
-        """Gets the vnic_device_owner of this ListProjectGeipBindingsRequest.
+        r"""Gets the vnic_device_owner of this ListProjectGeipBindingsRequest.
 
         绑定实例port对应的实例所有者
 
@@ -574,7 +574,7 @@ class ListProjectGeipBindingsRequest:
 
     @vnic_device_owner.setter
     def vnic_device_owner(self, vnic_device_owner):
-        """Sets the vnic_device_owner of this ListProjectGeipBindingsRequest.
+        r"""Sets the vnic_device_owner of this ListProjectGeipBindingsRequest.
 
         绑定实例port对应的实例所有者
 
@@ -585,7 +585,7 @@ class ListProjectGeipBindingsRequest:
 
     @property
     def vnic_device_owner_prefixlike(self):
-        """Gets the vnic_device_owner_prefixlike of this ListProjectGeipBindingsRequest.
+        r"""Gets the vnic_device_owner_prefixlike of this ListProjectGeipBindingsRequest.
 
         绑定实例port对应的实例所有者的前缀
 
@@ -596,7 +596,7 @@ class ListProjectGeipBindingsRequest:
 
     @vnic_device_owner_prefixlike.setter
     def vnic_device_owner_prefixlike(self, vnic_device_owner_prefixlike):
-        """Sets the vnic_device_owner_prefixlike of this ListProjectGeipBindingsRequest.
+        r"""Sets the vnic_device_owner_prefixlike of this ListProjectGeipBindingsRequest.
 
         绑定实例port对应的实例所有者的前缀
 
@@ -607,7 +607,7 @@ class ListProjectGeipBindingsRequest:
 
     @property
     def vnic_instance_type(self):
-        """Gets the vnic_instance_type of this ListProjectGeipBindingsRequest.
+        r"""Gets the vnic_instance_type of this ListProjectGeipBindingsRequest.
 
         绑定实例port对应的实例类型
 
@@ -618,7 +618,7 @@ class ListProjectGeipBindingsRequest:
 
     @vnic_instance_type.setter
     def vnic_instance_type(self, vnic_instance_type):
-        """Sets the vnic_instance_type of this ListProjectGeipBindingsRequest.
+        r"""Sets the vnic_instance_type of this ListProjectGeipBindingsRequest.
 
         绑定实例port对应的实例类型
 
@@ -629,7 +629,7 @@ class ListProjectGeipBindingsRequest:
 
     @property
     def vnic_instance_id(self):
-        """Gets the vnic_instance_id of this ListProjectGeipBindingsRequest.
+        r"""Gets the vnic_instance_id of this ListProjectGeipBindingsRequest.
 
         绑定实例port对应的实例id
 
@@ -640,7 +640,7 @@ class ListProjectGeipBindingsRequest:
 
     @vnic_instance_id.setter
     def vnic_instance_id(self, vnic_instance_id):
-        """Sets the vnic_instance_id of this ListProjectGeipBindingsRequest.
+        r"""Sets the vnic_instance_id of this ListProjectGeipBindingsRequest.
 
         绑定实例port对应的实例id
 
@@ -651,7 +651,7 @@ class ListProjectGeipBindingsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListProjectGeipBindingsRequest.
+        r"""Gets the sort_key of this ListProjectGeipBindingsRequest.
 
         排序，形式为\"sort_key=geip_id&sort_dir=asc\"  支持字段：geip_id/version/public_border_group/ geip_ip_address/created_at/updated_at
 
@@ -662,7 +662,7 @@ class ListProjectGeipBindingsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListProjectGeipBindingsRequest.
+        r"""Sets the sort_key of this ListProjectGeipBindingsRequest.
 
         排序，形式为\"sort_key=geip_id&sort_dir=asc\"  支持字段：geip_id/version/public_border_group/ geip_ip_address/created_at/updated_at
 
@@ -673,7 +673,7 @@ class ListProjectGeipBindingsRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListProjectGeipBindingsRequest.
+        r"""Gets the sort_dir of this ListProjectGeipBindingsRequest.
 
         排序方向  取值范围：asc、desc
 
@@ -684,7 +684,7 @@ class ListProjectGeipBindingsRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListProjectGeipBindingsRequest.
+        r"""Sets the sort_dir of this ListProjectGeipBindingsRequest.
 
         排序方向  取值范围：asc、desc
 
@@ -695,7 +695,7 @@ class ListProjectGeipBindingsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListProjectGeipBindingsRequest.
+        r"""Gets the limit of this ListProjectGeipBindingsRequest.
 
         每页返回的个数取值范围：0~[2000]，其中2000为局点差异项，具体取值由局点决定
 
@@ -706,7 +706,7 @@ class ListProjectGeipBindingsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListProjectGeipBindingsRequest.
+        r"""Sets the limit of this ListProjectGeipBindingsRequest.
 
         每页返回的个数取值范围：0~[2000]，其中2000为局点差异项，具体取值由局点决定
 
@@ -717,7 +717,7 @@ class ListProjectGeipBindingsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListProjectGeipBindingsRequest.
+        r"""Gets the offset of this ListProjectGeipBindingsRequest.
 
         分页起始点
 
@@ -728,7 +728,7 @@ class ListProjectGeipBindingsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListProjectGeipBindingsRequest.
+        r"""Sets the offset of this ListProjectGeipBindingsRequest.
 
         分页起始点
 
@@ -739,7 +739,7 @@ class ListProjectGeipBindingsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListProjectGeipBindingsRequest.
+        r"""Gets the marker of this ListProjectGeipBindingsRequest.
 
         分页起始点
 
@@ -750,7 +750,7 @@ class ListProjectGeipBindingsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListProjectGeipBindingsRequest.
+        r"""Sets the marker of this ListProjectGeipBindingsRequest.
 
         分页起始点
 

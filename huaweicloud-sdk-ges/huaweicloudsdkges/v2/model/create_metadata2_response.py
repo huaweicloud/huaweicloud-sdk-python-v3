@@ -28,7 +28,7 @@ class CreateMetadata2Response(SdkResponse):
     }
 
     def __init__(self, id=None, name=None):
-        """CreateMetadata2Response
+        r"""CreateMetadata2Response
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateMetadata2Response(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateMetadata2Response.
+        r"""Gets the id of this CreateMetadata2Response.
 
         元数据ID。
 
@@ -62,7 +62,7 @@ class CreateMetadata2Response(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateMetadata2Response.
+        r"""Sets the id of this CreateMetadata2Response.
 
         元数据ID。
 
@@ -73,7 +73,7 @@ class CreateMetadata2Response(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateMetadata2Response.
+        r"""Gets the name of this CreateMetadata2Response.
 
         元数据名字。
 
@@ -84,7 +84,7 @@ class CreateMetadata2Response(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateMetadata2Response.
+        r"""Sets the name of this CreateMetadata2Response.
 
         元数据名字。
 

@@ -31,7 +31,7 @@ class ListEncryptdatasRequest:
     }
 
     def __init__(self, name=None, limit=None, offset=None, ief_instance_id=None):
-        """ListEncryptdatasRequest
+        r"""ListEncryptdatasRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListEncryptdatasRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListEncryptdatasRequest.
+        r"""Gets the name of this ListEncryptdatasRequest.
 
         加密数据名称
 
@@ -75,7 +75,7 @@ class ListEncryptdatasRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListEncryptdatasRequest.
+        r"""Sets the name of this ListEncryptdatasRequest.
 
         加密数据名称
 
@@ -86,7 +86,7 @@ class ListEncryptdatasRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListEncryptdatasRequest.
+        r"""Gets the limit of this ListEncryptdatasRequest.
 
         查询返回记录的数量限制
 
@@ -97,7 +97,7 @@ class ListEncryptdatasRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEncryptdatasRequest.
+        r"""Sets the limit of this ListEncryptdatasRequest.
 
         查询返回记录的数量限制
 
@@ -108,7 +108,7 @@ class ListEncryptdatasRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListEncryptdatasRequest.
+        r"""Gets the offset of this ListEncryptdatasRequest.
 
         偏移量，表示查询该偏移量后面的记录
 
@@ -119,7 +119,7 @@ class ListEncryptdatasRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListEncryptdatasRequest.
+        r"""Sets the offset of this ListEncryptdatasRequest.
 
         偏移量，表示查询该偏移量后面的记录
 
@@ -130,7 +130,7 @@ class ListEncryptdatasRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this ListEncryptdatasRequest.
+        r"""Gets the ief_instance_id of this ListEncryptdatasRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -141,7 +141,7 @@ class ListEncryptdatasRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this ListEncryptdatasRequest.
+        r"""Sets the ief_instance_id of this ListEncryptdatasRequest.
 
         铂金版实例ID，专业版实例为空值
 

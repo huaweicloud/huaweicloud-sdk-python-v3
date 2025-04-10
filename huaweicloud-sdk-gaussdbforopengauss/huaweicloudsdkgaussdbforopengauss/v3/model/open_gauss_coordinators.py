@@ -25,7 +25,7 @@ class OpenGaussCoordinators:
     }
 
     def __init__(self, az_code=None):
-        """OpenGaussCoordinators
+        r"""OpenGaussCoordinators
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class OpenGaussCoordinators:
 
     @property
     def az_code(self):
-        """Gets the az_code of this OpenGaussCoordinators.
+        r"""Gets the az_code of this OpenGaussCoordinators.
 
         新增CN横向扩容每个节点的可用区。如果需要扩容多个CN，请分别填写待扩容CN所在的可用区。  不同区域的可用区请参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)。  说明： 扩容后，实例中CN节点的数量必须小于或等于两倍的分片数量。
 
@@ -53,7 +53,7 @@ class OpenGaussCoordinators:
 
     @az_code.setter
     def az_code(self, az_code):
-        """Sets the az_code of this OpenGaussCoordinators.
+        r"""Sets the az_code of this OpenGaussCoordinators.
 
         新增CN横向扩容每个节点的可用区。如果需要扩容多个CN，请分别填写待扩容CN所在的可用区。  不同区域的可用区请参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)。  说明： 扩容后，实例中CN节点的数量必须小于或等于两倍的分片数量。
 

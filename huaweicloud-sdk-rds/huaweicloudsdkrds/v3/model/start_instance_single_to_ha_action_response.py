@@ -28,7 +28,7 @@ class StartInstanceSingleToHaActionResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, order_id=None):
-        """StartInstanceSingleToHaActionResponse
+        r"""StartInstanceSingleToHaActionResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class StartInstanceSingleToHaActionResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this StartInstanceSingleToHaActionResponse.
+        r"""Gets the job_id of this StartInstanceSingleToHaActionResponse.
 
         单机转主备的任务id。 仅按需实例单机转主备时会返回该参数。
 
@@ -62,7 +62,7 @@ class StartInstanceSingleToHaActionResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this StartInstanceSingleToHaActionResponse.
+        r"""Sets the job_id of this StartInstanceSingleToHaActionResponse.
 
         单机转主备的任务id。 仅按需实例单机转主备时会返回该参数。
 
@@ -73,7 +73,7 @@ class StartInstanceSingleToHaActionResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this StartInstanceSingleToHaActionResponse.
+        r"""Gets the order_id of this StartInstanceSingleToHaActionResponse.
 
         订单号，包年包月单机转主备时返回该参数。
 
@@ -84,7 +84,7 @@ class StartInstanceSingleToHaActionResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this StartInstanceSingleToHaActionResponse.
+        r"""Sets the order_id of this StartInstanceSingleToHaActionResponse.
 
         订单号，包年包月单机转主备时返回该参数。
 

@@ -26,7 +26,7 @@ class DeleteExternalEntityResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DeleteExternalEntityResponse
+        r"""DeleteExternalEntityResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteExternalEntityResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this DeleteExternalEntityResponse.
+        r"""Gets the body of this DeleteExternalEntityResponse.
 
         :return: The body of this DeleteExternalEntityResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteExternalEntityResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteExternalEntityResponse.
+        r"""Sets the body of this DeleteExternalEntityResponse.
 
         :param body: The body of this DeleteExternalEntityResponse.
         :type body: str

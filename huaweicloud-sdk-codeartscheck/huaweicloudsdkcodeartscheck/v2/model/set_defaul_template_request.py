@@ -29,7 +29,7 @@ class SetDefaulTemplateRequest:
     }
 
     def __init__(self, project_id=None, ruleset_id=None, language=None):
-        """SetDefaulTemplateRequest
+        r"""SetDefaulTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class SetDefaulTemplateRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this SetDefaulTemplateRequest.
+        r"""Gets the project_id of this SetDefaulTemplateRequest.
 
         项目ID
 
@@ -65,7 +65,7 @@ class SetDefaulTemplateRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this SetDefaulTemplateRequest.
+        r"""Sets the project_id of this SetDefaulTemplateRequest.
 
         项目ID
 
@@ -76,7 +76,7 @@ class SetDefaulTemplateRequest:
 
     @property
     def ruleset_id(self):
-        """Gets the ruleset_id of this SetDefaulTemplateRequest.
+        r"""Gets the ruleset_id of this SetDefaulTemplateRequest.
 
         规则集ID
 
@@ -87,7 +87,7 @@ class SetDefaulTemplateRequest:
 
     @ruleset_id.setter
     def ruleset_id(self, ruleset_id):
-        """Sets the ruleset_id of this SetDefaulTemplateRequest.
+        r"""Sets the ruleset_id of this SetDefaulTemplateRequest.
 
         规则集ID
 
@@ -98,7 +98,7 @@ class SetDefaulTemplateRequest:
 
     @property
     def language(self):
-        """Gets the language of this SetDefaulTemplateRequest.
+        r"""Gets the language of this SetDefaulTemplateRequest.
 
         规则集语言
 
@@ -109,7 +109,7 @@ class SetDefaulTemplateRequest:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this SetDefaulTemplateRequest.
+        r"""Sets the language of this SetDefaulTemplateRequest.
 
         规则集语言
 

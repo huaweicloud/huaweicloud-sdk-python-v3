@@ -31,7 +31,7 @@ class CreateMergeRequestDiscussionNoteRequest:
     }
 
     def __init__(self, repository_id=None, merge_request_iid=None, discussion_id=None, body=None):
-        """CreateMergeRequestDiscussionNoteRequest
+        r"""CreateMergeRequestDiscussionNoteRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class CreateMergeRequestDiscussionNoteRequest:
 
     @property
     def repository_id(self):
-        """Gets the repository_id of this CreateMergeRequestDiscussionNoteRequest.
+        r"""Gets the repository_id of this CreateMergeRequestDiscussionNoteRequest.
 
         仓库短id
 
@@ -72,7 +72,7 @@ class CreateMergeRequestDiscussionNoteRequest:
 
     @repository_id.setter
     def repository_id(self, repository_id):
-        """Sets the repository_id of this CreateMergeRequestDiscussionNoteRequest.
+        r"""Sets the repository_id of this CreateMergeRequestDiscussionNoteRequest.
 
         仓库短id
 
@@ -83,7 +83,7 @@ class CreateMergeRequestDiscussionNoteRequest:
 
     @property
     def merge_request_iid(self):
-        """Gets the merge_request_iid of this CreateMergeRequestDiscussionNoteRequest.
+        r"""Gets the merge_request_iid of this CreateMergeRequestDiscussionNoteRequest.
 
         合并请求iid
 
@@ -94,7 +94,7 @@ class CreateMergeRequestDiscussionNoteRequest:
 
     @merge_request_iid.setter
     def merge_request_iid(self, merge_request_iid):
-        """Sets the merge_request_iid of this CreateMergeRequestDiscussionNoteRequest.
+        r"""Sets the merge_request_iid of this CreateMergeRequestDiscussionNoteRequest.
 
         合并请求iid
 
@@ -105,7 +105,7 @@ class CreateMergeRequestDiscussionNoteRequest:
 
     @property
     def discussion_id(self):
-        """Gets the discussion_id of this CreateMergeRequestDiscussionNoteRequest.
+        r"""Gets the discussion_id of this CreateMergeRequestDiscussionNoteRequest.
 
         评论id
 
@@ -116,7 +116,7 @@ class CreateMergeRequestDiscussionNoteRequest:
 
     @discussion_id.setter
     def discussion_id(self, discussion_id):
-        """Sets the discussion_id of this CreateMergeRequestDiscussionNoteRequest.
+        r"""Sets the discussion_id of this CreateMergeRequestDiscussionNoteRequest.
 
         评论id
 
@@ -127,7 +127,7 @@ class CreateMergeRequestDiscussionNoteRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateMergeRequestDiscussionNoteRequest.
+        r"""Gets the body of this CreateMergeRequestDiscussionNoteRequest.
 
         :return: The body of this CreateMergeRequestDiscussionNoteRequest.
         :rtype: :class:`huaweicloudsdkcodehub.v3.CreateMergeRequestDiscussionNoteDto`
@@ -136,7 +136,7 @@ class CreateMergeRequestDiscussionNoteRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateMergeRequestDiscussionNoteRequest.
+        r"""Sets the body of this CreateMergeRequestDiscussionNoteRequest.
 
         :param body: The body of this CreateMergeRequestDiscussionNoteRequest.
         :type body: :class:`huaweicloudsdkcodehub.v3.CreateMergeRequestDiscussionNoteDto`

@@ -27,7 +27,7 @@ class TemplateInfo:
     }
 
     def __init__(self, template_id=None, template=None):
-        """TemplateInfo
+        r"""TemplateInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TemplateInfo:
 
     @property
     def template_id(self):
-        """Gets the template_id of this TemplateInfo.
+        r"""Gets the template_id of this TemplateInfo.
 
         转码模板ID。 
 
@@ -61,7 +61,7 @@ class TemplateInfo:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this TemplateInfo.
+        r"""Sets the template_id of this TemplateInfo.
 
         转码模板ID。 
 
@@ -72,7 +72,7 @@ class TemplateInfo:
 
     @property
     def template(self):
-        """Gets the template of this TemplateInfo.
+        r"""Gets the template of this TemplateInfo.
 
         :return: The template of this TemplateInfo.
         :rtype: :class:`huaweicloudsdkmpc.v1.QueryTransTemplate`
@@ -81,7 +81,7 @@ class TemplateInfo:
 
     @template.setter
     def template(self, template):
-        """Sets the template of this TemplateInfo.
+        r"""Sets the template of this TemplateInfo.
 
         :param template: The template of this TemplateInfo.
         :type template: :class:`huaweicloudsdkmpc.v1.QueryTransTemplate`

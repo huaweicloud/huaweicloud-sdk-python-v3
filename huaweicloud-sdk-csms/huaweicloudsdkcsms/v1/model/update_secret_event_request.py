@@ -27,7 +27,7 @@ class UpdateSecretEventRequest:
     }
 
     def __init__(self, event_name=None, body=None):
-        """UpdateSecretEventRequest
+        r"""UpdateSecretEventRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateSecretEventRequest:
 
     @property
     def event_name(self):
-        """Gets the event_name of this UpdateSecretEventRequest.
+        r"""Gets the event_name of this UpdateSecretEventRequest.
 
         事件通知名称。
 
@@ -60,7 +60,7 @@ class UpdateSecretEventRequest:
 
     @event_name.setter
     def event_name(self, event_name):
-        """Sets the event_name of this UpdateSecretEventRequest.
+        r"""Sets the event_name of this UpdateSecretEventRequest.
 
         事件通知名称。
 
@@ -71,7 +71,7 @@ class UpdateSecretEventRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSecretEventRequest.
+        r"""Gets the body of this UpdateSecretEventRequest.
 
         :return: The body of this UpdateSecretEventRequest.
         :rtype: :class:`huaweicloudsdkcsms.v1.UpdateSecretEventRequestBody`
@@ -80,7 +80,7 @@ class UpdateSecretEventRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSecretEventRequest.
+        r"""Sets the body of this UpdateSecretEventRequest.
 
         :param body: The body of this UpdateSecretEventRequest.
         :type body: :class:`huaweicloudsdkcsms.v1.UpdateSecretEventRequestBody`

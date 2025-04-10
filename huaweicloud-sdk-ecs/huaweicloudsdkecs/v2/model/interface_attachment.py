@@ -43,7 +43,7 @@ class InterfaceAttachment:
     }
 
     def __init__(self, fixed_ips=None, mac_addr=None, net_id=None, port_id=None, port_state=None, delete_on_termination=None, driver_mode=None, min_rate=None, multiqueue_num=None, pci_address=None):
-        """InterfaceAttachment
+        r"""InterfaceAttachment
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class InterfaceAttachment:
 
     @property
     def fixed_ips(self):
-        """Gets the fixed_ips of this InterfaceAttachment.
+        r"""Gets the fixed_ips of this InterfaceAttachment.
 
         网卡私网IP信息列表。
 
@@ -117,7 +117,7 @@ class InterfaceAttachment:
 
     @fixed_ips.setter
     def fixed_ips(self, fixed_ips):
-        """Sets the fixed_ips of this InterfaceAttachment.
+        r"""Sets the fixed_ips of this InterfaceAttachment.
 
         网卡私网IP信息列表。
 
@@ -128,7 +128,7 @@ class InterfaceAttachment:
 
     @property
     def mac_addr(self):
-        """Gets the mac_addr of this InterfaceAttachment.
+        r"""Gets the mac_addr of this InterfaceAttachment.
 
         网卡Mac地址信息。
 
@@ -139,7 +139,7 @@ class InterfaceAttachment:
 
     @mac_addr.setter
     def mac_addr(self, mac_addr):
-        """Sets the mac_addr of this InterfaceAttachment.
+        r"""Sets the mac_addr of this InterfaceAttachment.
 
         网卡Mac地址信息。
 
@@ -150,7 +150,7 @@ class InterfaceAttachment:
 
     @property
     def net_id(self):
-        """Gets the net_id of this InterfaceAttachment.
+        r"""Gets the net_id of this InterfaceAttachment.
 
         网卡端口所属网络ID。
 
@@ -161,7 +161,7 @@ class InterfaceAttachment:
 
     @net_id.setter
     def net_id(self, net_id):
-        """Sets the net_id of this InterfaceAttachment.
+        r"""Sets the net_id of this InterfaceAttachment.
 
         网卡端口所属网络ID。
 
@@ -172,7 +172,7 @@ class InterfaceAttachment:
 
     @property
     def port_id(self):
-        """Gets the port_id of this InterfaceAttachment.
+        r"""Gets the port_id of this InterfaceAttachment.
 
         网卡端口ID。
 
@@ -183,7 +183,7 @@ class InterfaceAttachment:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this InterfaceAttachment.
+        r"""Sets the port_id of this InterfaceAttachment.
 
         网卡端口ID。
 
@@ -194,7 +194,7 @@ class InterfaceAttachment:
 
     @property
     def port_state(self):
-        """Gets the port_state of this InterfaceAttachment.
+        r"""Gets the port_state of this InterfaceAttachment.
 
         网卡端口状态。
 
@@ -205,7 +205,7 @@ class InterfaceAttachment:
 
     @port_state.setter
     def port_state(self, port_state):
-        """Sets the port_state of this InterfaceAttachment.
+        r"""Sets the port_state of this InterfaceAttachment.
 
         网卡端口状态。
 
@@ -216,7 +216,7 @@ class InterfaceAttachment:
 
     @property
     def delete_on_termination(self):
-        """Gets the delete_on_termination of this InterfaceAttachment.
+        r"""Gets the delete_on_termination of this InterfaceAttachment.
 
         卸载网卡时，是否删除网卡。
 
@@ -227,7 +227,7 @@ class InterfaceAttachment:
 
     @delete_on_termination.setter
     def delete_on_termination(self, delete_on_termination):
-        """Sets the delete_on_termination of this InterfaceAttachment.
+        r"""Sets the delete_on_termination of this InterfaceAttachment.
 
         卸载网卡时，是否删除网卡。
 
@@ -238,7 +238,7 @@ class InterfaceAttachment:
 
     @property
     def driver_mode(self):
-        """Gets the driver_mode of this InterfaceAttachment.
+        r"""Gets the driver_mode of this InterfaceAttachment.
 
         从guest os中，网卡的驱动类型。可选值为virtio和hinic，默认为virtio
 
@@ -249,7 +249,7 @@ class InterfaceAttachment:
 
     @driver_mode.setter
     def driver_mode(self, driver_mode):
-        """Sets the driver_mode of this InterfaceAttachment.
+        r"""Sets the driver_mode of this InterfaceAttachment.
 
         从guest os中，网卡的驱动类型。可选值为virtio和hinic，默认为virtio
 
@@ -260,7 +260,7 @@ class InterfaceAttachment:
 
     @property
     def min_rate(self):
-        """Gets the min_rate of this InterfaceAttachment.
+        r"""Gets the min_rate of this InterfaceAttachment.
 
         网卡带宽下限。
 
@@ -271,7 +271,7 @@ class InterfaceAttachment:
 
     @min_rate.setter
     def min_rate(self, min_rate):
-        """Sets the min_rate of this InterfaceAttachment.
+        r"""Sets the min_rate of this InterfaceAttachment.
 
         网卡带宽下限。
 
@@ -282,7 +282,7 @@ class InterfaceAttachment:
 
     @property
     def multiqueue_num(self):
-        """Gets the multiqueue_num of this InterfaceAttachment.
+        r"""Gets the multiqueue_num of this InterfaceAttachment.
 
         网卡多队列个数。
 
@@ -293,7 +293,7 @@ class InterfaceAttachment:
 
     @multiqueue_num.setter
     def multiqueue_num(self, multiqueue_num):
-        """Sets the multiqueue_num of this InterfaceAttachment.
+        r"""Sets the multiqueue_num of this InterfaceAttachment.
 
         网卡多队列个数。
 
@@ -304,7 +304,7 @@ class InterfaceAttachment:
 
     @property
     def pci_address(self):
-        """Gets the pci_address of this InterfaceAttachment.
+        r"""Gets the pci_address of this InterfaceAttachment.
 
         弹性网卡在Linux GuestOS里的BDF号
 
@@ -315,7 +315,7 @@ class InterfaceAttachment:
 
     @pci_address.setter
     def pci_address(self, pci_address):
-        """Sets the pci_address of this InterfaceAttachment.
+        r"""Sets the pci_address of this InterfaceAttachment.
 
         弹性网卡在Linux GuestOS里的BDF号
 

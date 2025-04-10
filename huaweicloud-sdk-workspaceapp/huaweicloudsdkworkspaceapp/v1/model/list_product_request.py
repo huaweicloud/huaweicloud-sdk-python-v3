@@ -37,7 +37,7 @@ class ListProductRequest:
     }
 
     def __init__(self, product_id=None, flavor_id=None, availability_zone=None, os_type=None, charge_mode=None, architecture=None, package_type=None):
-        """ListProductRequest
+        r"""ListProductRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListProductRequest:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ListProductRequest.
+        r"""Gets the product_id of this ListProductRequest.
 
         如果不为空，将按产品ID进行过滤后返回。
 
@@ -96,7 +96,7 @@ class ListProductRequest:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ListProductRequest.
+        r"""Sets the product_id of this ListProductRequest.
 
         如果不为空，将按产品ID进行过滤后返回。
 
@@ -107,7 +107,7 @@ class ListProductRequest:
 
     @property
     def flavor_id(self):
-        """Gets the flavor_id of this ListProductRequest.
+        r"""Gets the flavor_id of this ListProductRequest.
 
         如果不为空，将按规格ID进行过滤后返回。
 
@@ -118,7 +118,7 @@ class ListProductRequest:
 
     @flavor_id.setter
     def flavor_id(self, flavor_id):
-        """Sets the flavor_id of this ListProductRequest.
+        r"""Sets the flavor_id of this ListProductRequest.
 
         如果不为空，将按规格ID进行过滤后返回。
 
@@ -129,7 +129,7 @@ class ListProductRequest:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this ListProductRequest.
+        r"""Gets the availability_zone of this ListProductRequest.
 
         可用分区，如果不为空，将按可用分区进行过滤后返回。 - 获取方式详见可用区管理ListAvailabilityZone：\"GET  /v1/{project_id}/availability-zone\"。
 
@@ -140,7 +140,7 @@ class ListProductRequest:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this ListProductRequest.
+        r"""Sets the availability_zone of this ListProductRequest.
 
         可用分区，如果不为空，将按可用分区进行过滤后返回。 - 获取方式详见可用区管理ListAvailabilityZone：\"GET  /v1/{project_id}/availability-zone\"。
 
@@ -151,7 +151,7 @@ class ListProductRequest:
 
     @property
     def os_type(self):
-        """Gets the os_type of this ListProductRequest.
+        r"""Gets the os_type of this ListProductRequest.
 
         产品套餐的操作系统类型，当前支持：Windows。 - Linux - Windows - Other
 
@@ -162,7 +162,7 @@ class ListProductRequest:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this ListProductRequest.
+        r"""Sets the os_type of this ListProductRequest.
 
         产品套餐的操作系统类型，当前支持：Windows。 - Linux - Windows - Other
 
@@ -173,7 +173,7 @@ class ListProductRequest:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this ListProductRequest.
+        r"""Gets the charge_mode of this ListProductRequest.
 
         套餐标识。 - 1：表示包周期。 - 0：表示按需。
 
@@ -184,7 +184,7 @@ class ListProductRequest:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this ListProductRequest.
+        r"""Sets the charge_mode of this ListProductRequest.
 
         套餐标识。 - 1：表示包周期。 - 0：表示按需。
 
@@ -195,7 +195,7 @@ class ListProductRequest:
 
     @property
     def architecture(self):
-        """Gets the architecture of this ListProductRequest.
+        r"""Gets the architecture of this ListProductRequest.
 
         架构类型，当前支持：x86。 - x86 - arm
 
@@ -206,7 +206,7 @@ class ListProductRequest:
 
     @architecture.setter
     def architecture(self, architecture):
-        """Sets the architecture of this ListProductRequest.
+        r"""Sets the architecture of this ListProductRequest.
 
         架构类型，当前支持：x86。 - x86 - arm
 
@@ -217,7 +217,7 @@ class ListProductRequest:
 
     @property
     def package_type(self):
-        """Gets the package_type of this ListProductRequest.
+        r"""Gets the package_type of this ListProductRequest.
 
         套餐类型： - general：表示产品通用套餐。 - dedicated：表示产品专属主机套餐。
 
@@ -228,7 +228,7 @@ class ListProductRequest:
 
     @package_type.setter
     def package_type(self, package_type):
-        """Sets the package_type of this ListProductRequest.
+        r"""Sets the package_type of this ListProductRequest.
 
         套餐类型： - general：表示产品通用套餐。 - dedicated：表示产品专属主机套餐。
 

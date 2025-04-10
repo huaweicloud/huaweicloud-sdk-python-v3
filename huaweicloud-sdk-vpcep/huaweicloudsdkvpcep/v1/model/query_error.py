@@ -27,7 +27,7 @@ class QueryError:
     }
 
     def __init__(self, error_code=None, error_message=None):
-        """QueryError
+        r"""QueryError
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class QueryError:
 
     @property
     def error_code(self):
-        """Gets the error_code of this QueryError.
+        r"""Gets the error_code of this QueryError.
 
         错误编码。
 
@@ -61,7 +61,7 @@ class QueryError:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this QueryError.
+        r"""Sets the error_code of this QueryError.
 
         错误编码。
 
@@ -72,7 +72,7 @@ class QueryError:
 
     @property
     def error_message(self):
-        """Gets the error_message of this QueryError.
+        r"""Gets the error_message of this QueryError.
 
         错误信息。
 
@@ -83,7 +83,7 @@ class QueryError:
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this QueryError.
+        r"""Sets the error_message of this QueryError.
 
         错误信息。
 

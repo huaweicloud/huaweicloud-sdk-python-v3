@@ -26,7 +26,7 @@ class CinderListAvailabilityZonesResponse(SdkResponse):
     }
 
     def __init__(self, availability_zone_info=None):
-        """CinderListAvailabilityZonesResponse
+        r"""CinderListAvailabilityZonesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CinderListAvailabilityZonesResponse(SdkResponse):
 
     @property
     def availability_zone_info(self):
-        """Gets the availability_zone_info of this CinderListAvailabilityZonesResponse.
+        r"""Gets the availability_zone_info of this CinderListAvailabilityZonesResponse.
 
         查询请求返回的可用分区列表，请参见• [availabilityZoneInfo参数说明](https://support.huaweicloud.com/api-evs/evs_04_2081.html#evs_04_2081__li19751007201910)。
 
@@ -55,7 +55,7 @@ class CinderListAvailabilityZonesResponse(SdkResponse):
 
     @availability_zone_info.setter
     def availability_zone_info(self, availability_zone_info):
-        """Sets the availability_zone_info of this CinderListAvailabilityZonesResponse.
+        r"""Sets the availability_zone_info of this CinderListAvailabilityZonesResponse.
 
         查询请求返回的可用分区列表，请参见• [availabilityZoneInfo参数说明](https://support.huaweicloud.com/api-evs/evs_04_2081.html#evs_04_2081__li19751007201910)。
 

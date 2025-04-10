@@ -27,7 +27,7 @@ class ExtraSessionTypeEnum:
     }
 
     def __init__(self):
-        """ExtraSessionTypeEnum
+        r"""ExtraSessionTypeEnum
 
         The model defined in huaweicloud sdk
 

@@ -37,7 +37,7 @@ class DbConfigCheckRequestV3:
     }
 
     def __init__(self, source_instance_id=None, source_node_id=None, source_database_name=None, target_database_name=None, task_name=None, db_configs=None, table_repl_config=None):
-        """DbConfigCheckRequestV3
+        r"""DbConfigCheckRequestV3
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class DbConfigCheckRequestV3:
 
     @property
     def source_instance_id(self):
-        """Gets the source_instance_id of this DbConfigCheckRequestV3.
+        r"""Gets the source_instance_id of this DbConfigCheckRequestV3.
 
         TaurusDB实例ID。
 
@@ -96,7 +96,7 @@ class DbConfigCheckRequestV3:
 
     @source_instance_id.setter
     def source_instance_id(self, source_instance_id):
-        """Sets the source_instance_id of this DbConfigCheckRequestV3.
+        r"""Sets the source_instance_id of this DbConfigCheckRequestV3.
 
         TaurusDB实例ID。
 
@@ -107,7 +107,7 @@ class DbConfigCheckRequestV3:
 
     @property
     def source_node_id(self):
-        """Gets the source_node_id of this DbConfigCheckRequestV3.
+        r"""Gets the source_node_id of this DbConfigCheckRequestV3.
 
         TaurusDB只读节点ID。如为空，则取TaurusDB主节点ID
 
@@ -118,7 +118,7 @@ class DbConfigCheckRequestV3:
 
     @source_node_id.setter
     def source_node_id(self, source_node_id):
-        """Sets the source_node_id of this DbConfigCheckRequestV3.
+        r"""Sets the source_node_id of this DbConfigCheckRequestV3.
 
         TaurusDB只读节点ID。如为空，则取TaurusDB主节点ID
 
@@ -129,7 +129,7 @@ class DbConfigCheckRequestV3:
 
     @property
     def source_database_name(self):
-        """Gets the source_database_name of this DbConfigCheckRequestV3.
+        r"""Gets the source_database_name of this DbConfigCheckRequestV3.
 
         TaurusDB数据库名。
 
@@ -140,7 +140,7 @@ class DbConfigCheckRequestV3:
 
     @source_database_name.setter
     def source_database_name(self, source_database_name):
-        """Sets the source_database_name of this DbConfigCheckRequestV3.
+        r"""Sets the source_database_name of this DbConfigCheckRequestV3.
 
         TaurusDB数据库名。
 
@@ -151,7 +151,7 @@ class DbConfigCheckRequestV3:
 
     @property
     def target_database_name(self):
-        """Gets the target_database_name of this DbConfigCheckRequestV3.
+        r"""Gets the target_database_name of this DbConfigCheckRequestV3.
 
         目标数据库名。字符长度限制3~128位，仅支持英文大小写字母、数字以及下划线_。
 
@@ -162,7 +162,7 @@ class DbConfigCheckRequestV3:
 
     @target_database_name.setter
     def target_database_name(self, target_database_name):
-        """Sets the target_database_name of this DbConfigCheckRequestV3.
+        r"""Sets the target_database_name of this DbConfigCheckRequestV3.
 
         目标数据库名。字符长度限制3~128位，仅支持英文大小写字母、数字以及下划线_。
 
@@ -173,7 +173,7 @@ class DbConfigCheckRequestV3:
 
     @property
     def task_name(self):
-        """Gets the task_name of this DbConfigCheckRequestV3.
+        r"""Gets the task_name of this DbConfigCheckRequestV3.
 
         同步任务名称。字符长度限制3~128位，仅支持英文大小写字母、数字以及下划线_。
 
@@ -184,7 +184,7 @@ class DbConfigCheckRequestV3:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this DbConfigCheckRequestV3.
+        r"""Sets the task_name of this DbConfigCheckRequestV3.
 
         同步任务名称。字符长度限制3~128位，仅支持英文大小写字母、数字以及下划线_。
 
@@ -195,7 +195,7 @@ class DbConfigCheckRequestV3:
 
     @property
     def db_configs(self):
-        """Gets the db_configs of this DbConfigCheckRequestV3.
+        r"""Gets the db_configs of this DbConfigCheckRequestV3.
 
         库配置列表。
 
@@ -206,7 +206,7 @@ class DbConfigCheckRequestV3:
 
     @db_configs.setter
     def db_configs(self, db_configs):
-        """Sets the db_configs of this DbConfigCheckRequestV3.
+        r"""Sets the db_configs of this DbConfigCheckRequestV3.
 
         库配置列表。
 
@@ -217,7 +217,7 @@ class DbConfigCheckRequestV3:
 
     @property
     def table_repl_config(self):
-        """Gets the table_repl_config of this DbConfigCheckRequestV3.
+        r"""Gets the table_repl_config of this DbConfigCheckRequestV3.
 
         :return: The table_repl_config of this DbConfigCheckRequestV3.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.TableReplConfig`
@@ -226,7 +226,7 @@ class DbConfigCheckRequestV3:
 
     @table_repl_config.setter
     def table_repl_config(self, table_repl_config):
-        """Sets the table_repl_config of this DbConfigCheckRequestV3.
+        r"""Sets the table_repl_config of this DbConfigCheckRequestV3.
 
         :param table_repl_config: The table_repl_config of this DbConfigCheckRequestV3.
         :type table_repl_config: :class:`huaweicloudsdkgaussdb.v3.TableReplConfig`

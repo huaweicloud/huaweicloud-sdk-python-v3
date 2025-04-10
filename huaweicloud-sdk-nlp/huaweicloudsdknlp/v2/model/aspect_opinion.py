@@ -37,7 +37,7 @@ class AspectOpinion:
     }
 
     def __init__(self, aspect_category=None, aspect_term=None, opinion_term=None, span=None, label=None, confidence=None, tag=None):
-        """AspectOpinion
+        r"""AspectOpinion
 
         The model defined in huaweicloud sdk
 
@@ -80,7 +80,7 @@ class AspectOpinion:
 
     @property
     def aspect_category(self):
-        """Gets the aspect_category of this AspectOpinion.
+        r"""Gets the aspect_category of this AspectOpinion.
 
         属性类别 手机领域：['整体','性价比', '赠品','分期', '配件', '活动', '品牌', '物流派送', '包装', '游戏性能', '系统性能', '芯片', '屏幕', '电池', '自拍', '拍照', '音质', '散热', '防水', '信号', '解锁', '外形设计', '握持手感', '质感', '颜色', '内存/容量', '客服/售后', '其他']
 
@@ -91,7 +91,7 @@ class AspectOpinion:
 
     @aspect_category.setter
     def aspect_category(self, aspect_category):
-        """Sets the aspect_category of this AspectOpinion.
+        r"""Sets the aspect_category of this AspectOpinion.
 
         属性类别 手机领域：['整体','性价比', '赠品','分期', '配件', '活动', '品牌', '物流派送', '包装', '游戏性能', '系统性能', '芯片', '屏幕', '电池', '自拍', '拍照', '音质', '散热', '防水', '信号', '解锁', '外形设计', '握持手感', '质感', '颜色', '内存/容量', '客服/售后', '其他']
 
@@ -102,7 +102,7 @@ class AspectOpinion:
 
     @property
     def aspect_term(self):
-        """Gets the aspect_term of this AspectOpinion.
+        r"""Gets the aspect_term of this AspectOpinion.
 
         属性词，与对应的描述词至少出现其中之一，可能为null。
 
@@ -113,7 +113,7 @@ class AspectOpinion:
 
     @aspect_term.setter
     def aspect_term(self, aspect_term):
-        """Sets the aspect_term of this AspectOpinion.
+        r"""Sets the aspect_term of this AspectOpinion.
 
         属性词，与对应的描述词至少出现其中之一，可能为null。
 
@@ -124,7 +124,7 @@ class AspectOpinion:
 
     @property
     def opinion_term(self):
-        """Gets the opinion_term of this AspectOpinion.
+        r"""Gets the opinion_term of this AspectOpinion.
 
         描述词，与对应的属性词至少出现其中之一，可能为null。
 
@@ -135,7 +135,7 @@ class AspectOpinion:
 
     @opinion_term.setter
     def opinion_term(self, opinion_term):
-        """Sets the opinion_term of this AspectOpinion.
+        r"""Sets the opinion_term of this AspectOpinion.
 
         描述词，与对应的属性词至少出现其中之一，可能为null。
 
@@ -146,7 +146,7 @@ class AspectOpinion:
 
     @property
     def span(self):
-        """Gets the span of this AspectOpinion.
+        r"""Gets the span of this AspectOpinion.
 
         共4个数字，分别表示属性词和描述词在文本中的起始位置和结束位置。若属性词为null，则1, 2两位不展示；若描述词为null，则3, 4位不展示。
 
@@ -157,7 +157,7 @@ class AspectOpinion:
 
     @span.setter
     def span(self, span):
-        """Sets the span of this AspectOpinion.
+        r"""Sets the span of this AspectOpinion.
 
         共4个数字，分别表示属性词和描述词在文本中的起始位置和结束位置。若属性词为null，则1, 2两位不展示；若描述词为null，则3, 4位不展示。
 
@@ -168,7 +168,7 @@ class AspectOpinion:
 
     @property
     def label(self):
-        """Gets the label of this AspectOpinion.
+        r"""Gets the label of this AspectOpinion.
 
         情感标签，0：负向，1：正向
 
@@ -179,7 +179,7 @@ class AspectOpinion:
 
     @label.setter
     def label(self, label):
-        """Sets the label of this AspectOpinion.
+        r"""Sets the label of this AspectOpinion.
 
         情感标签，0：负向，1：正向
 
@@ -190,7 +190,7 @@ class AspectOpinion:
 
     @property
     def confidence(self):
-        """Gets the confidence of this AspectOpinion.
+        r"""Gets the confidence of this AspectOpinion.
 
         情感标签置信度
 
@@ -201,7 +201,7 @@ class AspectOpinion:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this AspectOpinion.
+        r"""Sets the confidence of this AspectOpinion.
 
         情感标签置信度
 
@@ -212,7 +212,7 @@ class AspectOpinion:
 
     @property
     def tag(self):
-        """Gets the tag of this AspectOpinion.
+        r"""Gets the tag of this AspectOpinion.
 
         属性-描述词片段所对应的标签。若分类为'其他'，则不给出标签，返回null。
 
@@ -223,7 +223,7 @@ class AspectOpinion:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this AspectOpinion.
+        r"""Sets the tag of this AspectOpinion.
 
         属性-描述词片段所对应的标签。若分类为'其他'，则不给出标签，返回null。
 

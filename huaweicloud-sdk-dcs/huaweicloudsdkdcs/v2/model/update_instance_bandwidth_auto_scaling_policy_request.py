@@ -27,7 +27,7 @@ class UpdateInstanceBandwidthAutoScalingPolicyRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """UpdateInstanceBandwidthAutoScalingPolicyRequest
+        r"""UpdateInstanceBandwidthAutoScalingPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateInstanceBandwidthAutoScalingPolicyRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateInstanceBandwidthAutoScalingPolicyRequest.
+        r"""Gets the instance_id of this UpdateInstanceBandwidthAutoScalingPolicyRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class UpdateInstanceBandwidthAutoScalingPolicyRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateInstanceBandwidthAutoScalingPolicyRequest.
+        r"""Sets the instance_id of this UpdateInstanceBandwidthAutoScalingPolicyRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class UpdateInstanceBandwidthAutoScalingPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateInstanceBandwidthAutoScalingPolicyRequest.
+        r"""Gets the body of this UpdateInstanceBandwidthAutoScalingPolicyRequest.
 
         :return: The body of this UpdateInstanceBandwidthAutoScalingPolicyRequest.
         :rtype: :class:`huaweicloudsdkdcs.v2.UpdateInstanceBandwidthAutoScalingPolicyRequestBody`
@@ -80,7 +80,7 @@ class UpdateInstanceBandwidthAutoScalingPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateInstanceBandwidthAutoScalingPolicyRequest.
+        r"""Sets the body of this UpdateInstanceBandwidthAutoScalingPolicyRequest.
 
         :param body: The body of this UpdateInstanceBandwidthAutoScalingPolicyRequest.
         :type body: :class:`huaweicloudsdkdcs.v2.UpdateInstanceBandwidthAutoScalingPolicyRequestBody`

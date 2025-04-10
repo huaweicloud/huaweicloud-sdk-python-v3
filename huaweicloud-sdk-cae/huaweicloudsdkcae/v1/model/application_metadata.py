@@ -31,7 +31,7 @@ class ApplicationMetadata:
     }
 
     def __init__(self, id=None, name=None, created_at=None, updated_at=None):
-        """ApplicationMetadata
+        r"""ApplicationMetadata
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ApplicationMetadata:
 
     @property
     def id(self):
-        """Gets the id of this ApplicationMetadata.
+        r"""Gets the id of this ApplicationMetadata.
 
         应用ID。
 
@@ -75,7 +75,7 @@ class ApplicationMetadata:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ApplicationMetadata.
+        r"""Sets the id of this ApplicationMetadata.
 
         应用ID。
 
@@ -86,7 +86,7 @@ class ApplicationMetadata:
 
     @property
     def name(self):
-        """Gets the name of this ApplicationMetadata.
+        r"""Gets the name of this ApplicationMetadata.
 
         应用名称。
 
@@ -97,7 +97,7 @@ class ApplicationMetadata:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApplicationMetadata.
+        r"""Sets the name of this ApplicationMetadata.
 
         应用名称。
 
@@ -108,7 +108,7 @@ class ApplicationMetadata:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ApplicationMetadata.
+        r"""Gets the created_at of this ApplicationMetadata.
 
         创建时间。
 
@@ -119,7 +119,7 @@ class ApplicationMetadata:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ApplicationMetadata.
+        r"""Sets the created_at of this ApplicationMetadata.
 
         创建时间。
 
@@ -130,7 +130,7 @@ class ApplicationMetadata:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ApplicationMetadata.
+        r"""Gets the updated_at of this ApplicationMetadata.
 
         更新时间。
 
@@ -141,7 +141,7 @@ class ApplicationMetadata:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ApplicationMetadata.
+        r"""Sets the updated_at of this ApplicationMetadata.
 
         更新时间。
 

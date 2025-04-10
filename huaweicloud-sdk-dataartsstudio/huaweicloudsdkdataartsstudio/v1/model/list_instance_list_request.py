@@ -43,7 +43,7 @@ class ListInstanceListRequest:
     }
 
     def __init__(self, workspace=None, dlm_type=None, api_id=None, action=None, show_all=None, check_status=None, check_debug=None, app_id=None, limit=None, offset=None):
-        """ListInstanceListRequest
+        r"""ListInstanceListRequest
 
         The model defined in huaweicloud sdk
 
@@ -103,7 +103,7 @@ class ListInstanceListRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListInstanceListRequest.
+        r"""Gets the workspace of this ListInstanceListRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -114,7 +114,7 @@ class ListInstanceListRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListInstanceListRequest.
+        r"""Sets the workspace of this ListInstanceListRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -125,7 +125,7 @@ class ListInstanceListRequest:
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this ListInstanceListRequest.
+        r"""Gets the dlm_type of this ListInstanceListRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -136,7 +136,7 @@ class ListInstanceListRequest:
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this ListInstanceListRequest.
+        r"""Sets the dlm_type of this ListInstanceListRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -147,7 +147,7 @@ class ListInstanceListRequest:
 
     @property
     def api_id(self):
-        """Gets the api_id of this ListInstanceListRequest.
+        r"""Gets the api_id of this ListInstanceListRequest.
 
         api编号。
 
@@ -158,7 +158,7 @@ class ListInstanceListRequest:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this ListInstanceListRequest.
+        r"""Sets the api_id of this ListInstanceListRequest.
 
         api编号。
 
@@ -169,7 +169,7 @@ class ListInstanceListRequest:
 
     @property
     def action(self):
-        """Gets the action of this ListInstanceListRequest.
+        r"""Gets the action of this ListInstanceListRequest.
 
         api操作。
 
@@ -180,7 +180,7 @@ class ListInstanceListRequest:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ListInstanceListRequest.
+        r"""Sets the action of this ListInstanceListRequest.
 
         api操作。
 
@@ -191,7 +191,7 @@ class ListInstanceListRequest:
 
     @property
     def show_all(self):
-        """Gets the show_all of this ListInstanceListRequest.
+        r"""Gets the show_all of this ListInstanceListRequest.
 
         全部展示(包括不可执行当前操作的实例)。
 
@@ -202,7 +202,7 @@ class ListInstanceListRequest:
 
     @show_all.setter
     def show_all(self, show_all):
-        """Sets the show_all of this ListInstanceListRequest.
+        r"""Sets the show_all of this ListInstanceListRequest.
 
         全部展示(包括不可执行当前操作的实例)。
 
@@ -213,7 +213,7 @@ class ListInstanceListRequest:
 
     @property
     def check_status(self):
-        """Gets the check_status of this ListInstanceListRequest.
+        r"""Gets the check_status of this ListInstanceListRequest.
 
         校验api状态。
 
@@ -224,7 +224,7 @@ class ListInstanceListRequest:
 
     @check_status.setter
     def check_status(self, check_status):
-        """Sets the check_status of this ListInstanceListRequest.
+        r"""Sets the check_status of this ListInstanceListRequest.
 
         校验api状态。
 
@@ -235,7 +235,7 @@ class ListInstanceListRequest:
 
     @property
     def check_debug(self):
-        """Gets the check_debug of this ListInstanceListRequest.
+        r"""Gets the check_debug of this ListInstanceListRequest.
 
         校验api调试状态。
 
@@ -246,7 +246,7 @@ class ListInstanceListRequest:
 
     @check_debug.setter
     def check_debug(self, check_debug):
-        """Sets the check_debug of this ListInstanceListRequest.
+        r"""Sets the check_debug of this ListInstanceListRequest.
 
         校验api调试状态。
 
@@ -257,7 +257,7 @@ class ListInstanceListRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ListInstanceListRequest.
+        r"""Gets the app_id of this ListInstanceListRequest.
 
         app编号(用于判断授权操作app可选的实例)。
 
@@ -268,7 +268,7 @@ class ListInstanceListRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ListInstanceListRequest.
+        r"""Sets the app_id of this ListInstanceListRequest.
 
         app编号(用于判断授权操作app可选的实例)。
 
@@ -279,7 +279,7 @@ class ListInstanceListRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListInstanceListRequest.
+        r"""Gets the limit of this ListInstanceListRequest.
 
         limit。
 
@@ -290,7 +290,7 @@ class ListInstanceListRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListInstanceListRequest.
+        r"""Sets the limit of this ListInstanceListRequest.
 
         limit。
 
@@ -301,7 +301,7 @@ class ListInstanceListRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListInstanceListRequest.
+        r"""Gets the offset of this ListInstanceListRequest.
 
         offset。
 
@@ -312,7 +312,7 @@ class ListInstanceListRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListInstanceListRequest.
+        r"""Sets the offset of this ListInstanceListRequest.
 
         offset。
 

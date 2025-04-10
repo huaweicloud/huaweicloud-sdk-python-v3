@@ -26,7 +26,7 @@ class UpdateBatchAsyncJobsResponse(SdkResponse):
     }
 
     def __init__(self, jobs=None):
-        """UpdateBatchAsyncJobsResponse
+        r"""UpdateBatchAsyncJobsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateBatchAsyncJobsResponse(SdkResponse):
 
     @property
     def jobs(self):
-        """Gets the jobs of this UpdateBatchAsyncJobsResponse.
+        r"""Gets the jobs of this UpdateBatchAsyncJobsResponse.
 
         批量更新指定ID异步任务响应体。
 
@@ -55,7 +55,7 @@ class UpdateBatchAsyncJobsResponse(SdkResponse):
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this UpdateBatchAsyncJobsResponse.
+        r"""Sets the jobs of this UpdateBatchAsyncJobsResponse.
 
         批量更新指定ID异步任务响应体。
 

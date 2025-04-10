@@ -35,7 +35,7 @@ class HourPackageResource:
     }
 
     def __init__(self, period_type=None, period_num=None, is_auto_renew=None, used_up_policy=None, cloud_service_console_url=None, create_desktops=None):
-        """HourPackageResource
+        r"""HourPackageResource
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class HourPackageResource:
 
     @property
     def period_type(self):
-        """Gets the period_type of this HourPackageResource.
+        r"""Gets the period_type of this HourPackageResource.
 
         订购周期类型：2：月；3：年;必填
 
@@ -89,7 +89,7 @@ class HourPackageResource:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this HourPackageResource.
+        r"""Sets the period_type of this HourPackageResource.
 
         订购周期类型：2：月；3：年;必填
 
@@ -100,7 +100,7 @@ class HourPackageResource:
 
     @property
     def period_num(self):
-        """Gets the period_num of this HourPackageResource.
+        r"""Gets the period_num of this HourPackageResource.
 
         订购周期数
 
@@ -111,7 +111,7 @@ class HourPackageResource:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this HourPackageResource.
+        r"""Sets the period_num of this HourPackageResource.
 
         订购周期数
 
@@ -122,7 +122,7 @@ class HourPackageResource:
 
     @property
     def is_auto_renew(self):
-        """Gets the is_auto_renew of this HourPackageResource.
+        r"""Gets the is_auto_renew of this HourPackageResource.
 
         是否自动续订
 
@@ -133,7 +133,7 @@ class HourPackageResource:
 
     @is_auto_renew.setter
     def is_auto_renew(self, is_auto_renew):
-        """Sets the is_auto_renew of this HourPackageResource.
+        r"""Sets the is_auto_renew of this HourPackageResource.
 
         是否自动续订
 
@@ -144,7 +144,7 @@ class HourPackageResource:
 
     @property
     def used_up_policy(self):
-        """Gets the used_up_policy of this HourPackageResource.
+        r"""Gets the used_up_policy of this HourPackageResource.
 
         时长用尽策略：   - SHUTDOWN_OR_HIBERNATE：自动关机/休眠。 - PAY_PER_USE：自动按需计费。
 
@@ -155,7 +155,7 @@ class HourPackageResource:
 
     @used_up_policy.setter
     def used_up_policy(self, used_up_policy):
-        """Sets the used_up_policy of this HourPackageResource.
+        r"""Sets the used_up_policy of this HourPackageResource.
 
         时长用尽策略：   - SHUTDOWN_OR_HIBERNATE：自动关机/休眠。 - PAY_PER_USE：自动按需计费。
 
@@ -166,7 +166,7 @@ class HourPackageResource:
 
     @property
     def cloud_service_console_url(self):
-        """Gets the cloud_service_console_url of this HourPackageResource.
+        r"""Gets the cloud_service_console_url of this HourPackageResource.
 
         支付后跳转url
 
@@ -177,7 +177,7 @@ class HourPackageResource:
 
     @cloud_service_console_url.setter
     def cloud_service_console_url(self, cloud_service_console_url):
-        """Sets the cloud_service_console_url of this HourPackageResource.
+        r"""Sets the cloud_service_console_url of this HourPackageResource.
 
         支付后跳转url
 
@@ -188,7 +188,7 @@ class HourPackageResource:
 
     @property
     def create_desktops(self):
-        """Gets the create_desktops of this HourPackageResource.
+        r"""Gets the create_desktops of this HourPackageResource.
 
         :return: The create_desktops of this HourPackageResource.
         :rtype: :class:`huaweicloudsdkworkspace.v2.CreateDesktopReq`
@@ -197,7 +197,7 @@ class HourPackageResource:
 
     @create_desktops.setter
     def create_desktops(self, create_desktops):
-        """Sets the create_desktops of this HourPackageResource.
+        r"""Sets the create_desktops of this HourPackageResource.
 
         :param create_desktops: The create_desktops of this HourPackageResource.
         :type create_desktops: :class:`huaweicloudsdkworkspace.v2.CreateDesktopReq`

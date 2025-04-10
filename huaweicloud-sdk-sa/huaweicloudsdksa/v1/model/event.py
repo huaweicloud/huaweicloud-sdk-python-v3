@@ -79,7 +79,7 @@ class Event:
     }
 
     def __init__(self, version=None, environment=None, data_source=None, first_observed_time=None, last_observed_time=None, create_time=None, arrive_time=None, event_id=None, title=None, description=None, source_url=None, count=None, confidence=None, severity=None, criticality=None, type=None, compliance=None, network=None, vulnerability_patch=None, malware=None, threat_intel=None, resource=None, remediation=None, data_source_fields=None, verification_state=None, handle_status=None, phase=None, sla=None):
-        """Event
+        r"""Event
 
         The model defined in huaweicloud sdk
 
@@ -219,7 +219,7 @@ class Event:
 
     @property
     def version(self):
-        """Gets the version of this Event.
+        r"""Gets the version of this Event.
 
         SA数据对象版本号，数据接入时需携带版本号。版本号由SA服务团队负责更新，数据源只可填写SA给定的版本号。目前版本为1.0.0。
 
@@ -230,7 +230,7 @@ class Event:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this Event.
+        r"""Sets the version of this Event.
 
         SA数据对象版本号，数据接入时需携带版本号。版本号由SA服务团队负责更新，数据源只可填写SA给定的版本号。目前版本为1.0.0。
 
@@ -241,7 +241,7 @@ class Event:
 
     @property
     def environment(self):
-        """Gets the environment of this Event.
+        r"""Gets the environment of this Event.
 
         :return: The environment of this Event.
         :rtype: :class:`huaweicloudsdksa.v1.Environment`
@@ -250,7 +250,7 @@ class Event:
 
     @environment.setter
     def environment(self, environment):
-        """Sets the environment of this Event.
+        r"""Sets the environment of this Event.
 
         :param environment: The environment of this Event.
         :type environment: :class:`huaweicloudsdksa.v1.Environment`
@@ -259,7 +259,7 @@ class Event:
 
     @property
     def data_source(self):
-        """Gets the data_source of this Event.
+        r"""Gets the data_source of this Event.
 
         :return: The data_source of this Event.
         :rtype: :class:`huaweicloudsdksa.v1.DataSource`
@@ -268,7 +268,7 @@ class Event:
 
     @data_source.setter
     def data_source(self, data_source):
-        """Sets the data_source of this Event.
+        r"""Sets the data_source of this Event.
 
         :param data_source: The data_source of this Event.
         :type data_source: :class:`huaweicloudsdksa.v1.DataSource`
@@ -277,7 +277,7 @@ class Event:
 
     @property
     def first_observed_time(self):
-        """Gets the first_observed_time of this Event.
+        r"""Gets the first_observed_time of this Event.
 
         首次发现时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区。
 
@@ -288,7 +288,7 @@ class Event:
 
     @first_observed_time.setter
     def first_observed_time(self, first_observed_time):
-        """Sets the first_observed_time of this Event.
+        r"""Sets the first_observed_time of this Event.
 
         首次发现时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区。
 
@@ -299,7 +299,7 @@ class Event:
 
     @property
     def last_observed_time(self):
-        """Gets the last_observed_time of this Event.
+        r"""Gets the last_observed_time of this Event.
 
         最新发现时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区。
 
@@ -310,7 +310,7 @@ class Event:
 
     @last_observed_time.setter
     def last_observed_time(self, last_observed_time):
-        """Sets the last_observed_time of this Event.
+        r"""Sets the last_observed_time of this Event.
 
         最新发现时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区。
 
@@ -321,7 +321,7 @@ class Event:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Event.
+        r"""Gets the create_time of this Event.
 
         记录时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区。
 
@@ -332,7 +332,7 @@ class Event:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Event.
+        r"""Sets the create_time of this Event.
 
         记录时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区。
 
@@ -343,7 +343,7 @@ class Event:
 
     @property
     def arrive_time(self):
-        """Gets the arrive_time of this Event.
+        r"""Gets the arrive_time of this Event.
 
         数据接收时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区。  是指事件数据被SA侧接收的时间，由SA接收时填写，产品上报数据时不用填写。
 
@@ -354,7 +354,7 @@ class Event:
 
     @arrive_time.setter
     def arrive_time(self, arrive_time):
-        """Sets the arrive_time of this Event.
+        r"""Sets the arrive_time of this Event.
 
         数据接收时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区。  是指事件数据被SA侧接收的时间，由SA接收时填写，产品上报数据时不用填写。
 
@@ -365,7 +365,7 @@ class Event:
 
     @property
     def event_id(self):
-        """Gets the event_id of this Event.
+        r"""Gets the event_id of this Event.
 
         事件唯一标识，UUID格式。
 
@@ -376,7 +376,7 @@ class Event:
 
     @event_id.setter
     def event_id(self, event_id):
-        """Sets the event_id of this Event.
+        r"""Sets the event_id of this Event.
 
         事件唯一标识，UUID格式。
 
@@ -387,7 +387,7 @@ class Event:
 
     @property
     def title(self):
-        """Gets the title of this Event.
+        r"""Gets the title of this Event.
 
         事件标题，最大255字符。
 
@@ -398,7 +398,7 @@ class Event:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this Event.
+        r"""Sets the title of this Event.
 
         事件标题，最大255字符。
 
@@ -409,7 +409,7 @@ class Event:
 
     @property
     def description(self):
-        """Gets the description of this Event.
+        r"""Gets the description of this Event.
 
         事件描述信息，最大1024个字符
 
@@ -420,7 +420,7 @@ class Event:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Event.
+        r"""Sets the description of this Event.
 
         事件描述信息，最大1024个字符
 
@@ -431,7 +431,7 @@ class Event:
 
     @property
     def source_url(self):
-        """Gets the source_url of this Event.
+        r"""Gets the source_url of this Event.
 
         事件URL链接，指向数据源产品中有关当前事件说明的页面。
 
@@ -442,7 +442,7 @@ class Event:
 
     @source_url.setter
     def source_url(self, source_url):
-        """Sets the source_url of this Event.
+        r"""Sets the source_url of this Event.
 
         事件URL链接，指向数据源产品中有关当前事件说明的页面。
 
@@ -453,7 +453,7 @@ class Event:
 
     @property
     def count(self):
-        """Gets the count of this Event.
+        r"""Gets the count of this Event.
 
         事件发生次数，默认为1，必填。
 
@@ -464,7 +464,7 @@ class Event:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this Event.
+        r"""Sets the count of this Event.
 
         事件发生次数，默认为1，必填。
 
@@ -475,7 +475,7 @@ class Event:
 
     @property
     def confidence(self):
-        """Gets the confidence of this Event.
+        r"""Gets the confidence of this Event.
 
         事件的置信度。置信度的定义旨在说明识别的行为或问题的可能性。 取值范围：0-100，0表示置信度为0%，100表示置信度为100%。
 
@@ -486,7 +486,7 @@ class Event:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this Event.
+        r"""Sets the confidence of this Event.
 
         事件的置信度。置信度的定义旨在说明识别的行为或问题的可能性。 取值范围：0-100，0表示置信度为0%，100表示置信度为100%。
 
@@ -497,7 +497,7 @@ class Event:
 
     @property
     def severity(self):
-        """Gets the severity of this Event.
+        r"""Gets the severity of this Event.
 
         :return: The severity of this Event.
         :rtype: :class:`huaweicloudsdksa.v1.Severity`
@@ -506,7 +506,7 @@ class Event:
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this Event.
+        r"""Sets the severity of this Event.
 
         :param severity: The severity of this Event.
         :type severity: :class:`huaweicloudsdksa.v1.Severity`
@@ -515,7 +515,7 @@ class Event:
 
     @property
     def criticality(self):
-        """Gets the criticality of this Event.
+        r"""Gets the criticality of this Event.
 
         关键性，是指事件涉及的资源的重要性级别。 取值范围：0-100，0表示资源不关键，100表示最关键资源。
 
@@ -526,7 +526,7 @@ class Event:
 
     @criticality.setter
     def criticality(self, criticality):
-        """Sets the criticality of this Event.
+        r"""Sets the criticality of this Event.
 
         关键性，是指事件涉及的资源的重要性级别。 取值范围：0-100，0表示资源不关键，100表示最关键资源。
 
@@ -537,7 +537,7 @@ class Event:
 
     @property
     def type(self):
-        """Gets the type of this Event.
+        r"""Gets the type of this Event.
 
         :return: The type of this Event.
         :rtype: :class:`huaweicloudsdksa.v1.Type`
@@ -546,7 +546,7 @@ class Event:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Event.
+        r"""Sets the type of this Event.
 
         :param type: The type of this Event.
         :type type: :class:`huaweicloudsdksa.v1.Type`
@@ -555,7 +555,7 @@ class Event:
 
     @property
     def compliance(self):
-        """Gets the compliance of this Event.
+        r"""Gets the compliance of this Event.
 
         :return: The compliance of this Event.
         :rtype: :class:`huaweicloudsdksa.v1.Compliance`
@@ -564,7 +564,7 @@ class Event:
 
     @compliance.setter
     def compliance(self, compliance):
-        """Sets the compliance of this Event.
+        r"""Sets the compliance of this Event.
 
         :param compliance: The compliance of this Event.
         :type compliance: :class:`huaweicloudsdksa.v1.Compliance`
@@ -573,7 +573,7 @@ class Event:
 
     @property
     def network(self):
-        """Gets the network of this Event.
+        r"""Gets the network of this Event.
 
         :return: The network of this Event.
         :rtype: :class:`huaweicloudsdksa.v1.Network`
@@ -582,7 +582,7 @@ class Event:
 
     @network.setter
     def network(self, network):
-        """Sets the network of this Event.
+        r"""Sets the network of this Event.
 
         :param network: The network of this Event.
         :type network: :class:`huaweicloudsdksa.v1.Network`
@@ -591,7 +591,7 @@ class Event:
 
     @property
     def vulnerability_patch(self):
-        """Gets the vulnerability_patch of this Event.
+        r"""Gets the vulnerability_patch of this Event.
 
         :return: The vulnerability_patch of this Event.
         :rtype: :class:`huaweicloudsdksa.v1.VulnerabilityPatch`
@@ -600,7 +600,7 @@ class Event:
 
     @vulnerability_patch.setter
     def vulnerability_patch(self, vulnerability_patch):
-        """Sets the vulnerability_patch of this Event.
+        r"""Sets the vulnerability_patch of this Event.
 
         :param vulnerability_patch: The vulnerability_patch of this Event.
         :type vulnerability_patch: :class:`huaweicloudsdksa.v1.VulnerabilityPatch`
@@ -609,7 +609,7 @@ class Event:
 
     @property
     def malware(self):
-        """Gets the malware of this Event.
+        r"""Gets the malware of this Event.
 
         :return: The malware of this Event.
         :rtype: :class:`huaweicloudsdksa.v1.Malware`
@@ -618,7 +618,7 @@ class Event:
 
     @malware.setter
     def malware(self, malware):
-        """Sets the malware of this Event.
+        r"""Sets the malware of this Event.
 
         :param malware: The malware of this Event.
         :type malware: :class:`huaweicloudsdksa.v1.Malware`
@@ -627,7 +627,7 @@ class Event:
 
     @property
     def threat_intel(self):
-        """Gets the threat_intel of this Event.
+        r"""Gets the threat_intel of this Event.
 
         :return: The threat_intel of this Event.
         :rtype: :class:`huaweicloudsdksa.v1.ThreatIntel`
@@ -636,7 +636,7 @@ class Event:
 
     @threat_intel.setter
     def threat_intel(self, threat_intel):
-        """Sets the threat_intel of this Event.
+        r"""Sets the threat_intel of this Event.
 
         :param threat_intel: The threat_intel of this Event.
         :type threat_intel: :class:`huaweicloudsdksa.v1.ThreatIntel`
@@ -645,7 +645,7 @@ class Event:
 
     @property
     def resource(self):
-        """Gets the resource of this Event.
+        r"""Gets the resource of this Event.
 
         :return: The resource of this Event.
         :rtype: :class:`huaweicloudsdksa.v1.Resource`
@@ -654,7 +654,7 @@ class Event:
 
     @resource.setter
     def resource(self, resource):
-        """Sets the resource of this Event.
+        r"""Sets the resource of this Event.
 
         :param resource: The resource of this Event.
         :type resource: :class:`huaweicloudsdksa.v1.Resource`
@@ -663,7 +663,7 @@ class Event:
 
     @property
     def remediation(self):
-        """Gets the remediation of this Event.
+        r"""Gets the remediation of this Event.
 
         :return: The remediation of this Event.
         :rtype: :class:`huaweicloudsdksa.v1.Remediation`
@@ -672,7 +672,7 @@ class Event:
 
     @remediation.setter
     def remediation(self, remediation):
-        """Sets the remediation of this Event.
+        r"""Sets the remediation of this Event.
 
         :param remediation: The remediation of this Event.
         :type remediation: :class:`huaweicloudsdksa.v1.Remediation`
@@ -681,7 +681,7 @@ class Event:
 
     @property
     def data_source_fields(self):
-        """Gets the data_source_fields of this Event.
+        r"""Gets the data_source_fields of this Event.
 
         数据源自定义信息，最多支持50个key/value对，约束条件： 1、该对象不能包含冗余数据，并且不能与已定义的SSA事件格式字段冲突。 2、字段名称可以包含字母数字字符、空格和以下符号：_ . / = + \\ - @。 示例： \"data_source_fields\": {     \"key1\": \"value1\",     \"key2\", \"value2\",   }
 
@@ -692,7 +692,7 @@ class Event:
 
     @data_source_fields.setter
     def data_source_fields(self, data_source_fields):
-        """Sets the data_source_fields of this Event.
+        r"""Sets the data_source_fields of this Event.
 
         数据源自定义信息，最多支持50个key/value对，约束条件： 1、该对象不能包含冗余数据，并且不能与已定义的SSA事件格式字段冲突。 2、字段名称可以包含字母数字字符、空格和以下符号：_ . / = + \\ - @。 示例： \"data_source_fields\": {     \"key1\": \"value1\",     \"key2\", \"value2\",   }
 
@@ -703,7 +703,7 @@ class Event:
 
     @property
     def verification_state(self):
-        """Gets the verification_state of this Event.
+        r"""Gets the verification_state of this Event.
 
         事件验证状态，标识事件的准确性。 Unknown – 未知，默认 True_positive – 确认 False_positive – 误报。
 
@@ -714,7 +714,7 @@ class Event:
 
     @verification_state.setter
     def verification_state(self, verification_state):
-        """Sets the verification_state of this Event.
+        r"""Sets the verification_state of this Event.
 
         事件验证状态，标识事件的准确性。 Unknown – 未知，默认 True_positive – 确认 False_positive – 误报。
 
@@ -725,7 +725,7 @@ class Event:
 
     @property
     def handle_status(self):
-        """Gets the handle_status of this Event.
+        r"""Gets the handle_status of this Event.
 
         事件处理状态，New/Ignored/Resolved；默认New。
 
@@ -736,7 +736,7 @@ class Event:
 
     @handle_status.setter
     def handle_status(self, handle_status):
-        """Sets the handle_status of this Event.
+        r"""Sets the handle_status of this Event.
 
         事件处理状态，New/Ignored/Resolved；默认New。
 
@@ -747,7 +747,7 @@ class Event:
 
     @property
     def phase(self):
-        """Gets the phase of this Event.
+        r"""Gets the phase of this Event.
 
         阶段：Prepartion|Detection and Analysis|Containm，Eradication& Recovery| Post-Incident-Activity。
 
@@ -758,7 +758,7 @@ class Event:
 
     @phase.setter
     def phase(self, phase):
-        """Sets the phase of this Event.
+        r"""Sets the phase of this Event.
 
         阶段：Prepartion|Detection and Analysis|Containm，Eradication& Recovery| Post-Incident-Activity。
 
@@ -769,7 +769,7 @@ class Event:
 
     @property
     def sla(self):
-        """Gets the sla of this Event.
+        r"""Gets the sla of this Event.
 
         约束闭环时间：单位：天。
 
@@ -780,7 +780,7 @@ class Event:
 
     @sla.setter
     def sla(self, sla):
-        """Sets the sla of this Event.
+        r"""Sets the sla of this Event.
 
         约束闭环时间：单位：天。
 

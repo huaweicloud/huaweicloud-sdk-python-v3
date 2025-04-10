@@ -27,7 +27,7 @@ class ApplyConfigurationRequest:
     }
 
     def __init__(self, config_id=None, body=None):
-        """ApplyConfigurationRequest
+        r"""ApplyConfigurationRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ApplyConfigurationRequest:
 
     @property
     def config_id(self):
-        """Gets the config_id of this ApplyConfigurationRequest.
+        r"""Gets the config_id of this ApplyConfigurationRequest.
 
         参数模板ID。
 
@@ -60,7 +60,7 @@ class ApplyConfigurationRequest:
 
     @config_id.setter
     def config_id(self, config_id):
-        """Sets the config_id of this ApplyConfigurationRequest.
+        r"""Sets the config_id of this ApplyConfigurationRequest.
 
         参数模板ID。
 
@@ -71,7 +71,7 @@ class ApplyConfigurationRequest:
 
     @property
     def body(self):
-        """Gets the body of this ApplyConfigurationRequest.
+        r"""Gets the body of this ApplyConfigurationRequest.
 
         :return: The body of this ApplyConfigurationRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ApplyConfigurationRequestBody`
@@ -80,7 +80,7 @@ class ApplyConfigurationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ApplyConfigurationRequest.
+        r"""Sets the body of this ApplyConfigurationRequest.
 
         :param body: The body of this ApplyConfigurationRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.ApplyConfigurationRequestBody`

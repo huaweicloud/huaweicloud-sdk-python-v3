@@ -25,7 +25,7 @@ class ShowRepositoryByUuidRequest:
     }
 
     def __init__(self, repository_uuid=None):
-        """ShowRepositoryByUuidRequest
+        r"""ShowRepositoryByUuidRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowRepositoryByUuidRequest:
 
     @property
     def repository_uuid(self):
-        """Gets the repository_uuid of this ShowRepositoryByUuidRequest.
+        r"""Gets the repository_uuid of this ShowRepositoryByUuidRequest.
 
         仓库的uuid
 
@@ -53,7 +53,7 @@ class ShowRepositoryByUuidRequest:
 
     @repository_uuid.setter
     def repository_uuid(self, repository_uuid):
-        """Sets the repository_uuid of this ShowRepositoryByUuidRequest.
+        r"""Sets the repository_uuid of this ShowRepositoryByUuidRequest.
 
         仓库的uuid
 

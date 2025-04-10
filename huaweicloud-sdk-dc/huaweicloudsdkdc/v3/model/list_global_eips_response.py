@@ -32,7 +32,7 @@ class ListGlobalEipsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, global_eips=None, total_count=None, page_info=None):
-        """ListGlobalEipsResponse
+        r"""ListGlobalEipsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListGlobalEipsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListGlobalEipsResponse.
+        r"""Gets the request_id of this ListGlobalEipsResponse.
 
         请求ID
 
@@ -76,7 +76,7 @@ class ListGlobalEipsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListGlobalEipsResponse.
+        r"""Sets the request_id of this ListGlobalEipsResponse.
 
         请求ID
 
@@ -87,7 +87,7 @@ class ListGlobalEipsResponse(SdkResponse):
 
     @property
     def global_eips(self):
-        """Gets the global_eips of this ListGlobalEipsResponse.
+        r"""Gets the global_eips of this ListGlobalEipsResponse.
 
         全局弹性公网IP
 
@@ -98,7 +98,7 @@ class ListGlobalEipsResponse(SdkResponse):
 
     @global_eips.setter
     def global_eips(self, global_eips):
-        """Sets the global_eips of this ListGlobalEipsResponse.
+        r"""Sets the global_eips of this ListGlobalEipsResponse.
 
         全局弹性公网IP
 
@@ -109,7 +109,7 @@ class ListGlobalEipsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListGlobalEipsResponse.
+        r"""Gets the total_count of this ListGlobalEipsResponse.
 
         总记录数。
 
@@ -120,7 +120,7 @@ class ListGlobalEipsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListGlobalEipsResponse.
+        r"""Sets the total_count of this ListGlobalEipsResponse.
 
         总记录数。
 
@@ -131,7 +131,7 @@ class ListGlobalEipsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListGlobalEipsResponse.
+        r"""Gets the page_info of this ListGlobalEipsResponse.
 
         :return: The page_info of this ListGlobalEipsResponse.
         :rtype: :class:`huaweicloudsdkdc.v3.PageInfo`
@@ -140,7 +140,7 @@ class ListGlobalEipsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListGlobalEipsResponse.
+        r"""Sets the page_info of this ListGlobalEipsResponse.
 
         :param page_info: The page_info of this ListGlobalEipsResponse.
         :type page_info: :class:`huaweicloudsdkdc.v3.PageInfo`

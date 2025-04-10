@@ -47,7 +47,7 @@ class Agent:
     }
 
     def __init__(self, created_at=None, updated_at=None, agent_id=None, agent_version=None, agent_type=None, host_name=None, host_nickname=None, host_ip=None, host_os=None, status=None, last_active_time=None, paths=None):
-        """Agent
+        r"""Agent
 
         The model defined in huaweicloud sdk
 
@@ -119,7 +119,7 @@ class Agent:
 
     @property
     def created_at(self):
-        """Gets the created_at of this Agent.
+        r"""Gets the created_at of this Agent.
 
         客户端创建时间
 
@@ -130,7 +130,7 @@ class Agent:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Agent.
+        r"""Sets the created_at of this Agent.
 
         客户端创建时间
 
@@ -141,7 +141,7 @@ class Agent:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this Agent.
+        r"""Gets the updated_at of this Agent.
 
         客户端更新时间
 
@@ -152,7 +152,7 @@ class Agent:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this Agent.
+        r"""Sets the updated_at of this Agent.
 
         客户端更新时间
 
@@ -163,7 +163,7 @@ class Agent:
 
     @property
     def agent_id(self):
-        """Gets the agent_id of this Agent.
+        r"""Gets the agent_id of this Agent.
 
         客户端ID
 
@@ -174,7 +174,7 @@ class Agent:
 
     @agent_id.setter
     def agent_id(self, agent_id):
-        """Sets the agent_id of this Agent.
+        r"""Sets the agent_id of this Agent.
 
         客户端ID
 
@@ -185,7 +185,7 @@ class Agent:
 
     @property
     def agent_version(self):
-        """Gets the agent_version of this Agent.
+        r"""Gets the agent_version of this Agent.
 
         客户端版本号
 
@@ -196,7 +196,7 @@ class Agent:
 
     @agent_version.setter
     def agent_version(self, agent_version):
-        """Sets the agent_version of this Agent.
+        r"""Sets the agent_version of this Agent.
 
         客户端版本号
 
@@ -207,7 +207,7 @@ class Agent:
 
     @property
     def agent_type(self):
-        """Gets the agent_type of this Agent.
+        r"""Gets the agent_type of this Agent.
 
         客户端类型
 
@@ -218,7 +218,7 @@ class Agent:
 
     @agent_type.setter
     def agent_type(self, agent_type):
-        """Sets the agent_type of this Agent.
+        r"""Sets the agent_type of this Agent.
 
         客户端类型
 
@@ -229,7 +229,7 @@ class Agent:
 
     @property
     def host_name(self):
-        """Gets the host_name of this Agent.
+        r"""Gets the host_name of this Agent.
 
         客户端所在的主机名
 
@@ -240,7 +240,7 @@ class Agent:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this Agent.
+        r"""Sets the host_name of this Agent.
 
         客户端所在的主机名
 
@@ -251,7 +251,7 @@ class Agent:
 
     @property
     def host_nickname(self):
-        """Gets the host_nickname of this Agent.
+        r"""Gets the host_nickname of this Agent.
 
         客户端所在的主机昵称
 
@@ -262,7 +262,7 @@ class Agent:
 
     @host_nickname.setter
     def host_nickname(self, host_nickname):
-        """Sets the host_nickname of this Agent.
+        r"""Sets the host_nickname of this Agent.
 
         客户端所在的主机昵称
 
@@ -273,7 +273,7 @@ class Agent:
 
     @property
     def host_ip(self):
-        """Gets the host_ip of this Agent.
+        r"""Gets the host_ip of this Agent.
 
         客户端所在主机的IP
 
@@ -284,7 +284,7 @@ class Agent:
 
     @host_ip.setter
     def host_ip(self, host_ip):
-        """Sets the host_ip of this Agent.
+        r"""Sets the host_ip of this Agent.
 
         客户端所在主机的IP
 
@@ -295,7 +295,7 @@ class Agent:
 
     @property
     def host_os(self):
-        """Gets the host_os of this Agent.
+        r"""Gets the host_os of this Agent.
 
         客户端主机所在的操作系统
 
@@ -306,7 +306,7 @@ class Agent:
 
     @host_os.setter
     def host_os(self, host_os):
-        """Sets the host_os of this Agent.
+        r"""Sets the host_os of this Agent.
 
         客户端主机所在的操作系统
 
@@ -317,7 +317,7 @@ class Agent:
 
     @property
     def status(self):
-        """Gets the status of this Agent.
+        r"""Gets the status of this Agent.
 
         客户端状态
 
@@ -328,7 +328,7 @@ class Agent:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Agent.
+        r"""Sets the status of this Agent.
 
         客户端状态
 
@@ -339,7 +339,7 @@ class Agent:
 
     @property
     def last_active_time(self):
-        """Gets the last_active_time of this Agent.
+        r"""Gets the last_active_time of this Agent.
 
         客户端上次激活时间
 
@@ -350,7 +350,7 @@ class Agent:
 
     @last_active_time.setter
     def last_active_time(self, last_active_time):
-        """Sets the last_active_time of this Agent.
+        r"""Sets the last_active_time of this Agent.
 
         客户端上次激活时间
 
@@ -361,7 +361,7 @@ class Agent:
 
     @property
     def paths(self):
-        """Gets the paths of this Agent.
+        r"""Gets the paths of this Agent.
 
         客户端的备份路径
 
@@ -372,7 +372,7 @@ class Agent:
 
     @paths.setter
     def paths(self, paths):
-        """Sets the paths of this Agent.
+        r"""Sets the paths of this Agent.
 
         客户端的备份路径
 

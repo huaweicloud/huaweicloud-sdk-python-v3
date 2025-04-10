@@ -25,7 +25,7 @@ class ListLakeFormationInstanceTagsRequest:
     }
 
     def __init__(self, use_predefine_tags=None):
-        """ListLakeFormationInstanceTagsRequest
+        r"""ListLakeFormationInstanceTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListLakeFormationInstanceTagsRequest:
 
     @property
     def use_predefine_tags(self):
-        """Gets the use_predefine_tags of this ListLakeFormationInstanceTagsRequest.
+        r"""Gets the use_predefine_tags of this ListLakeFormationInstanceTagsRequest.
 
         使用预定义标签，true表示使用
 
@@ -53,7 +53,7 @@ class ListLakeFormationInstanceTagsRequest:
 
     @use_predefine_tags.setter
     def use_predefine_tags(self, use_predefine_tags):
-        """Sets the use_predefine_tags of this ListLakeFormationInstanceTagsRequest.
+        r"""Sets the use_predefine_tags of this ListLakeFormationInstanceTagsRequest.
 
         使用预定义标签，true表示使用
 

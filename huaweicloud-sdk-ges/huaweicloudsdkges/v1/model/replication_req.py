@@ -25,7 +25,7 @@ class ReplicationReq:
     }
 
     def __init__(self, replication=None):
-        """ReplicationReq
+        r"""ReplicationReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ReplicationReq:
 
     @property
     def replication(self):
-        """Gets the replication of this ReplicationReq.
+        r"""Gets the replication of this ReplicationReq.
 
         新扩副本数量。
 
@@ -53,7 +53,7 @@ class ReplicationReq:
 
     @replication.setter
     def replication(self, replication):
-        """Sets the replication of this ReplicationReq.
+        r"""Sets the replication of this ReplicationReq.
 
         新扩副本数量。
 

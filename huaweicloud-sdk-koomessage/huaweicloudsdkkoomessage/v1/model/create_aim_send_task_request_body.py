@@ -29,7 +29,7 @@ class CreateAimSendTaskRequestBody:
     }
 
     def __init__(self, task_name=None, sms_channel=None, resolve_task=None):
-        """CreateAimSendTaskRequestBody
+        r"""CreateAimSendTaskRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CreateAimSendTaskRequestBody:
 
     @property
     def task_name(self):
-        """Gets the task_name of this CreateAimSendTaskRequestBody.
+        r"""Gets the task_name of this CreateAimSendTaskRequestBody.
 
         智能信息发送任务名称。  > 不能为空白字符串。 
 
@@ -65,7 +65,7 @@ class CreateAimSendTaskRequestBody:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this CreateAimSendTaskRequestBody.
+        r"""Sets the task_name of this CreateAimSendTaskRequestBody.
 
         智能信息发送任务名称。  > 不能为空白字符串。 
 
@@ -76,7 +76,7 @@ class CreateAimSendTaskRequestBody:
 
     @property
     def sms_channel(self):
-        """Gets the sms_channel of this CreateAimSendTaskRequestBody.
+        r"""Gets the sms_channel of this CreateAimSendTaskRequestBody.
 
         :return: The sms_channel of this CreateAimSendTaskRequestBody.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.SmsChannel`
@@ -85,7 +85,7 @@ class CreateAimSendTaskRequestBody:
 
     @sms_channel.setter
     def sms_channel(self, sms_channel):
-        """Sets the sms_channel of this CreateAimSendTaskRequestBody.
+        r"""Sets the sms_channel of this CreateAimSendTaskRequestBody.
 
         :param sms_channel: The sms_channel of this CreateAimSendTaskRequestBody.
         :type sms_channel: :class:`huaweicloudsdkkoomessage.v1.SmsChannel`
@@ -94,7 +94,7 @@ class CreateAimSendTaskRequestBody:
 
     @property
     def resolve_task(self):
-        """Gets the resolve_task of this CreateAimSendTaskRequestBody.
+        r"""Gets the resolve_task of this CreateAimSendTaskRequestBody.
 
         :return: The resolve_task of this CreateAimSendTaskRequestBody.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.AIMResolveTask`
@@ -103,7 +103,7 @@ class CreateAimSendTaskRequestBody:
 
     @resolve_task.setter
     def resolve_task(self, resolve_task):
-        """Sets the resolve_task of this CreateAimSendTaskRequestBody.
+        r"""Sets the resolve_task of this CreateAimSendTaskRequestBody.
 
         :param resolve_task: The resolve_task of this CreateAimSendTaskRequestBody.
         :type resolve_task: :class:`huaweicloudsdkkoomessage.v1.AIMResolveTask`

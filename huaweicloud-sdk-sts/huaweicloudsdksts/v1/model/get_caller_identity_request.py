@@ -26,7 +26,7 @@ class GetCallerIdentityRequest:
     }
 
     def __init__(self, x_security_token=None):
-        """GetCallerIdentityRequest
+        r"""GetCallerIdentityRequest
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class GetCallerIdentityRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this GetCallerIdentityRequest.
+        r"""Gets the x_security_token of this GetCallerIdentityRequest.
 
         通过临时访问密钥调用接口时，需要提供“X-Security-Token”Http头，取值为临时访问密钥的security_token字段。
 
@@ -55,7 +55,7 @@ class GetCallerIdentityRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this GetCallerIdentityRequest.
+        r"""Sets the x_security_token of this GetCallerIdentityRequest.
 
         通过临时访问密钥调用接口时，需要提供“X-Security-Token”Http头，取值为临时访问密钥的security_token字段。
 

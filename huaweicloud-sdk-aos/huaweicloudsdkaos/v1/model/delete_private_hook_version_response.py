@@ -24,7 +24,7 @@ class DeletePrivateHookVersionResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeletePrivateHookVersionResponse
+        r"""DeletePrivateHookVersionResponse
 
         The model defined in huaweicloud sdk
 

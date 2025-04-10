@@ -25,7 +25,7 @@ class CreateTemporaryAccessKeyByAgencyRequestBody:
     }
 
     def __init__(self, auth=None):
-        """CreateTemporaryAccessKeyByAgencyRequestBody
+        r"""CreateTemporaryAccessKeyByAgencyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateTemporaryAccessKeyByAgencyRequestBody:
 
     @property
     def auth(self):
-        """Gets the auth of this CreateTemporaryAccessKeyByAgencyRequestBody.
+        r"""Gets the auth of this CreateTemporaryAccessKeyByAgencyRequestBody.
 
         :return: The auth of this CreateTemporaryAccessKeyByAgencyRequestBody.
         :rtype: :class:`huaweicloudsdkiam.v3.AgencyAuth`
@@ -51,7 +51,7 @@ class CreateTemporaryAccessKeyByAgencyRequestBody:
 
     @auth.setter
     def auth(self, auth):
-        """Sets the auth of this CreateTemporaryAccessKeyByAgencyRequestBody.
+        r"""Sets the auth of this CreateTemporaryAccessKeyByAgencyRequestBody.
 
         :param auth: The auth of this CreateTemporaryAccessKeyByAgencyRequestBody.
         :type auth: :class:`huaweicloudsdkiam.v3.AgencyAuth`

@@ -34,7 +34,7 @@ class ExecuteSessionResponse(SdkResponse):
     }
 
     def __init__(self, reply_type=None, qabot_answers=None, chat_answers=None, taskbot_answers=None, request_id=None):
-        """ExecuteSessionResponse
+        r"""ExecuteSessionResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ExecuteSessionResponse(SdkResponse):
 
     @property
     def reply_type(self):
-        """Gets the reply_type of this ExecuteSessionResponse.
+        r"""Gets the reply_type of this ExecuteSessionResponse.
 
         回复类型： 0   问答型机器人回复。 1   任务型机器人回复。 2   闲聊回复。
 
@@ -83,7 +83,7 @@ class ExecuteSessionResponse(SdkResponse):
 
     @reply_type.setter
     def reply_type(self, reply_type):
-        """Sets the reply_type of this ExecuteSessionResponse.
+        r"""Sets the reply_type of this ExecuteSessionResponse.
 
         回复类型： 0   问答型机器人回复。 1   任务型机器人回复。 2   闲聊回复。
 
@@ -94,7 +94,7 @@ class ExecuteSessionResponse(SdkResponse):
 
     @property
     def qabot_answers(self):
-        """Gets the qabot_answers of this ExecuteSessionResponse.
+        r"""Gets the qabot_answers of this ExecuteSessionResponse.
 
         :return: The qabot_answers of this ExecuteSessionResponse.
         :rtype: :class:`huaweicloudsdkcbs.v1.QaBotAnswers`
@@ -103,7 +103,7 @@ class ExecuteSessionResponse(SdkResponse):
 
     @qabot_answers.setter
     def qabot_answers(self, qabot_answers):
-        """Sets the qabot_answers of this ExecuteSessionResponse.
+        r"""Sets the qabot_answers of this ExecuteSessionResponse.
 
         :param qabot_answers: The qabot_answers of this ExecuteSessionResponse.
         :type qabot_answers: :class:`huaweicloudsdkcbs.v1.QaBotAnswers`
@@ -112,7 +112,7 @@ class ExecuteSessionResponse(SdkResponse):
 
     @property
     def chat_answers(self):
-        """Gets the chat_answers of this ExecuteSessionResponse.
+        r"""Gets the chat_answers of this ExecuteSessionResponse.
 
         :return: The chat_answers of this ExecuteSessionResponse.
         :rtype: :class:`huaweicloudsdkcbs.v1.ChatAnswers`
@@ -121,7 +121,7 @@ class ExecuteSessionResponse(SdkResponse):
 
     @chat_answers.setter
     def chat_answers(self, chat_answers):
-        """Sets the chat_answers of this ExecuteSessionResponse.
+        r"""Sets the chat_answers of this ExecuteSessionResponse.
 
         :param chat_answers: The chat_answers of this ExecuteSessionResponse.
         :type chat_answers: :class:`huaweicloudsdkcbs.v1.ChatAnswers`
@@ -130,7 +130,7 @@ class ExecuteSessionResponse(SdkResponse):
 
     @property
     def taskbot_answers(self):
-        """Gets the taskbot_answers of this ExecuteSessionResponse.
+        r"""Gets the taskbot_answers of this ExecuteSessionResponse.
 
         :return: The taskbot_answers of this ExecuteSessionResponse.
         :rtype: :class:`huaweicloudsdkcbs.v1.TaskBotAnswers`
@@ -139,7 +139,7 @@ class ExecuteSessionResponse(SdkResponse):
 
     @taskbot_answers.setter
     def taskbot_answers(self, taskbot_answers):
-        """Sets the taskbot_answers of this ExecuteSessionResponse.
+        r"""Sets the taskbot_answers of this ExecuteSessionResponse.
 
         :param taskbot_answers: The taskbot_answers of this ExecuteSessionResponse.
         :type taskbot_answers: :class:`huaweicloudsdkcbs.v1.TaskBotAnswers`
@@ -148,7 +148,7 @@ class ExecuteSessionResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ExecuteSessionResponse.
+        r"""Gets the request_id of this ExecuteSessionResponse.
 
         请求ID。
 
@@ -159,7 +159,7 @@ class ExecuteSessionResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ExecuteSessionResponse.
+        r"""Sets the request_id of this ExecuteSessionResponse.
 
         请求ID。
 

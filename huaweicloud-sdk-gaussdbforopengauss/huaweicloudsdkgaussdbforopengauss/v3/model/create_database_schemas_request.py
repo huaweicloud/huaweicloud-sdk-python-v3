@@ -29,7 +29,7 @@ class CreateDatabaseSchemasRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """CreateDatabaseSchemasRequest
+        r"""CreateDatabaseSchemasRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateDatabaseSchemasRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreateDatabaseSchemasRequest.
+        r"""Gets the x_language of this CreateDatabaseSchemasRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class CreateDatabaseSchemasRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreateDatabaseSchemasRequest.
+        r"""Sets the x_language of this CreateDatabaseSchemasRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class CreateDatabaseSchemasRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateDatabaseSchemasRequest.
+        r"""Gets the instance_id of this CreateDatabaseSchemasRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class CreateDatabaseSchemasRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateDatabaseSchemasRequest.
+        r"""Sets the instance_id of this CreateDatabaseSchemasRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class CreateDatabaseSchemasRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDatabaseSchemasRequest.
+        r"""Gets the body of this CreateDatabaseSchemasRequest.
 
         :return: The body of this CreateDatabaseSchemasRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.GaussDBforOpenGaussDatabaseSchemaReq`
@@ -109,7 +109,7 @@ class CreateDatabaseSchemasRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDatabaseSchemasRequest.
+        r"""Sets the body of this CreateDatabaseSchemasRequest.
 
         :param body: The body of this CreateDatabaseSchemasRequest.
         :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.GaussDBforOpenGaussDatabaseSchemaReq`

@@ -27,7 +27,7 @@ class SignApiBinding:
     }
 
     def __init__(self, sign_id=None, publish_ids=None):
-        """SignApiBinding
+        r"""SignApiBinding
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class SignApiBinding:
 
     @property
     def sign_id(self):
-        """Gets the sign_id of this SignApiBinding.
+        r"""Gets the sign_id of this SignApiBinding.
 
         签名密钥编号
 
@@ -59,7 +59,7 @@ class SignApiBinding:
 
     @sign_id.setter
     def sign_id(self, sign_id):
-        """Sets the sign_id of this SignApiBinding.
+        r"""Sets the sign_id of this SignApiBinding.
 
         签名密钥编号
 
@@ -70,7 +70,7 @@ class SignApiBinding:
 
     @property
     def publish_ids(self):
-        """Gets the publish_ids of this SignApiBinding.
+        r"""Gets the publish_ids of this SignApiBinding.
 
         API的发布记录编号
 
@@ -81,7 +81,7 @@ class SignApiBinding:
 
     @publish_ids.setter
     def publish_ids(self, publish_ids):
-        """Sets the publish_ids of this SignApiBinding.
+        r"""Sets the publish_ids of this SignApiBinding.
 
         API的发布记录编号
 

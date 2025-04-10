@@ -49,7 +49,7 @@ class StatisticForDashboard:
     }
 
     def __init__(self, log_time=None, call_num=None, success_num=None, fail_num=None, legal_num=None, illegal_num=None, cost_time_avg=None, success_cost_time_avg=None, fail_cost_time_avg=None, success_rate=None, fail_rate=None, legal_rate=None, illegal_rate=None):
-        """StatisticForDashboard
+        r"""StatisticForDashboard
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class StatisticForDashboard:
 
     @property
     def log_time(self):
-        """Gets the log_time of this StatisticForDashboard.
+        r"""Gets the log_time of this StatisticForDashboard.
 
         统计时间点(13位时间戳)
 
@@ -138,7 +138,7 @@ class StatisticForDashboard:
 
     @log_time.setter
     def log_time(self, log_time):
-        """Sets the log_time of this StatisticForDashboard.
+        r"""Sets the log_time of this StatisticForDashboard.
 
         统计时间点(13位时间戳)
 
@@ -149,7 +149,7 @@ class StatisticForDashboard:
 
     @property
     def call_num(self):
-        """Gets the call_num of this StatisticForDashboard.
+        r"""Gets the call_num of this StatisticForDashboard.
 
         调用总量
 
@@ -160,7 +160,7 @@ class StatisticForDashboard:
 
     @call_num.setter
     def call_num(self, call_num):
-        """Sets the call_num of this StatisticForDashboard.
+        r"""Sets the call_num of this StatisticForDashboard.
 
         调用总量
 
@@ -171,7 +171,7 @@ class StatisticForDashboard:
 
     @property
     def success_num(self):
-        """Gets the success_num of this StatisticForDashboard.
+        r"""Gets the success_num of this StatisticForDashboard.
 
         成功调用量(取数成功)
 
@@ -182,7 +182,7 @@ class StatisticForDashboard:
 
     @success_num.setter
     def success_num(self, success_num):
-        """Sets the success_num of this StatisticForDashboard.
+        r"""Sets the success_num of this StatisticForDashboard.
 
         成功调用量(取数成功)
 
@@ -193,7 +193,7 @@ class StatisticForDashboard:
 
     @property
     def fail_num(self):
-        """Gets the fail_num of this StatisticForDashboard.
+        r"""Gets the fail_num of this StatisticForDashboard.
 
         失败调用量(取数失败)
 
@@ -204,7 +204,7 @@ class StatisticForDashboard:
 
     @fail_num.setter
     def fail_num(self, fail_num):
-        """Sets the fail_num of this StatisticForDashboard.
+        r"""Sets the fail_num of this StatisticForDashboard.
 
         失败调用量(取数失败)
 
@@ -215,7 +215,7 @@ class StatisticForDashboard:
 
     @property
     def legal_num(self):
-        """Gets the legal_num of this StatisticForDashboard.
+        r"""Gets the legal_num of this StatisticForDashboard.
 
         合法调用量(通过校验)
 
@@ -226,7 +226,7 @@ class StatisticForDashboard:
 
     @legal_num.setter
     def legal_num(self, legal_num):
-        """Sets the legal_num of this StatisticForDashboard.
+        r"""Sets the legal_num of this StatisticForDashboard.
 
         合法调用量(通过校验)
 
@@ -237,7 +237,7 @@ class StatisticForDashboard:
 
     @property
     def illegal_num(self):
-        """Gets the illegal_num of this StatisticForDashboard.
+        r"""Gets the illegal_num of this StatisticForDashboard.
 
         非法调用量(无法通过校验)
 
@@ -248,7 +248,7 @@ class StatisticForDashboard:
 
     @illegal_num.setter
     def illegal_num(self, illegal_num):
-        """Sets the illegal_num of this StatisticForDashboard.
+        r"""Sets the illegal_num of this StatisticForDashboard.
 
         非法调用量(无法通过校验)
 
@@ -259,7 +259,7 @@ class StatisticForDashboard:
 
     @property
     def cost_time_avg(self):
-        """Gets the cost_time_avg of this StatisticForDashboard.
+        r"""Gets the cost_time_avg of this StatisticForDashboard.
 
         请求平均时长
 
@@ -270,7 +270,7 @@ class StatisticForDashboard:
 
     @cost_time_avg.setter
     def cost_time_avg(self, cost_time_avg):
-        """Sets the cost_time_avg of this StatisticForDashboard.
+        r"""Sets the cost_time_avg of this StatisticForDashboard.
 
         请求平均时长
 
@@ -281,7 +281,7 @@ class StatisticForDashboard:
 
     @property
     def success_cost_time_avg(self):
-        """Gets the success_cost_time_avg of this StatisticForDashboard.
+        r"""Gets the success_cost_time_avg of this StatisticForDashboard.
 
         成功请求平均时长
 
@@ -292,7 +292,7 @@ class StatisticForDashboard:
 
     @success_cost_time_avg.setter
     def success_cost_time_avg(self, success_cost_time_avg):
-        """Sets the success_cost_time_avg of this StatisticForDashboard.
+        r"""Sets the success_cost_time_avg of this StatisticForDashboard.
 
         成功请求平均时长
 
@@ -303,7 +303,7 @@ class StatisticForDashboard:
 
     @property
     def fail_cost_time_avg(self):
-        """Gets the fail_cost_time_avg of this StatisticForDashboard.
+        r"""Gets the fail_cost_time_avg of this StatisticForDashboard.
 
         失败请求平均时长
 
@@ -314,7 +314,7 @@ class StatisticForDashboard:
 
     @fail_cost_time_avg.setter
     def fail_cost_time_avg(self, fail_cost_time_avg):
-        """Sets the fail_cost_time_avg of this StatisticForDashboard.
+        r"""Sets the fail_cost_time_avg of this StatisticForDashboard.
 
         失败请求平均时长
 
@@ -325,7 +325,7 @@ class StatisticForDashboard:
 
     @property
     def success_rate(self):
-        """Gets the success_rate of this StatisticForDashboard.
+        r"""Gets the success_rate of this StatisticForDashboard.
 
         成功率
 
@@ -336,7 +336,7 @@ class StatisticForDashboard:
 
     @success_rate.setter
     def success_rate(self, success_rate):
-        """Sets the success_rate of this StatisticForDashboard.
+        r"""Sets the success_rate of this StatisticForDashboard.
 
         成功率
 
@@ -347,7 +347,7 @@ class StatisticForDashboard:
 
     @property
     def fail_rate(self):
-        """Gets the fail_rate of this StatisticForDashboard.
+        r"""Gets the fail_rate of this StatisticForDashboard.
 
         失败率
 
@@ -358,7 +358,7 @@ class StatisticForDashboard:
 
     @fail_rate.setter
     def fail_rate(self, fail_rate):
-        """Sets the fail_rate of this StatisticForDashboard.
+        r"""Sets the fail_rate of this StatisticForDashboard.
 
         失败率
 
@@ -369,7 +369,7 @@ class StatisticForDashboard:
 
     @property
     def legal_rate(self):
-        """Gets the legal_rate of this StatisticForDashboard.
+        r"""Gets the legal_rate of this StatisticForDashboard.
 
         合法率
 
@@ -380,7 +380,7 @@ class StatisticForDashboard:
 
     @legal_rate.setter
     def legal_rate(self, legal_rate):
-        """Sets the legal_rate of this StatisticForDashboard.
+        r"""Sets the legal_rate of this StatisticForDashboard.
 
         合法率
 
@@ -391,7 +391,7 @@ class StatisticForDashboard:
 
     @property
     def illegal_rate(self):
-        """Gets the illegal_rate of this StatisticForDashboard.
+        r"""Gets the illegal_rate of this StatisticForDashboard.
 
         非法率
 
@@ -402,7 +402,7 @@ class StatisticForDashboard:
 
     @illegal_rate.setter
     def illegal_rate(self, illegal_rate):
-        """Sets the illegal_rate of this StatisticForDashboard.
+        r"""Sets the illegal_rate of this StatisticForDashboard.
 
         非法率
 

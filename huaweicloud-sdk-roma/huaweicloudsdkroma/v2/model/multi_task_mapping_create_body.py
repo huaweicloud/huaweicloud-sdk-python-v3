@@ -39,7 +39,7 @@ class MultiTaskMappingCreateBody:
     }
 
     def __init__(self, ext_info=None, source_datasource_id=None, target_datasource_id=None, source_columns=None, target_columns=None, source_table=None, target_table=None, mapping_columns=None):
-        """MultiTaskMappingCreateBody
+        r"""MultiTaskMappingCreateBody
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class MultiTaskMappingCreateBody:
 
     @property
     def ext_info(self):
-        """Gets the ext_info of this MultiTaskMappingCreateBody.
+        r"""Gets the ext_info of this MultiTaskMappingCreateBody.
 
         :return: The ext_info of this MultiTaskMappingCreateBody.
         :rtype: :class:`huaweicloudsdkroma.v2.MultiTaskInitElementExtInfo`
@@ -99,7 +99,7 @@ class MultiTaskMappingCreateBody:
 
     @ext_info.setter
     def ext_info(self, ext_info):
-        """Sets the ext_info of this MultiTaskMappingCreateBody.
+        r"""Sets the ext_info of this MultiTaskMappingCreateBody.
 
         :param ext_info: The ext_info of this MultiTaskMappingCreateBody.
         :type ext_info: :class:`huaweicloudsdkroma.v2.MultiTaskInitElementExtInfo`
@@ -108,7 +108,7 @@ class MultiTaskMappingCreateBody:
 
     @property
     def source_datasource_id(self):
-        """Gets the source_datasource_id of this MultiTaskMappingCreateBody.
+        r"""Gets the source_datasource_id of this MultiTaskMappingCreateBody.
 
         源端数据源ID
 
@@ -119,7 +119,7 @@ class MultiTaskMappingCreateBody:
 
     @source_datasource_id.setter
     def source_datasource_id(self, source_datasource_id):
-        """Sets the source_datasource_id of this MultiTaskMappingCreateBody.
+        r"""Sets the source_datasource_id of this MultiTaskMappingCreateBody.
 
         源端数据源ID
 
@@ -130,7 +130,7 @@ class MultiTaskMappingCreateBody:
 
     @property
     def target_datasource_id(self):
-        """Gets the target_datasource_id of this MultiTaskMappingCreateBody.
+        r"""Gets the target_datasource_id of this MultiTaskMappingCreateBody.
 
         目标端数据源ID
 
@@ -141,7 +141,7 @@ class MultiTaskMappingCreateBody:
 
     @target_datasource_id.setter
     def target_datasource_id(self, target_datasource_id):
-        """Sets the target_datasource_id of this MultiTaskMappingCreateBody.
+        r"""Sets the target_datasource_id of this MultiTaskMappingCreateBody.
 
         目标端数据源ID
 
@@ -152,7 +152,7 @@ class MultiTaskMappingCreateBody:
 
     @property
     def source_columns(self):
-        """Gets the source_columns of this MultiTaskMappingCreateBody.
+        r"""Gets the source_columns of this MultiTaskMappingCreateBody.
 
         源端字段列表
 
@@ -163,7 +163,7 @@ class MultiTaskMappingCreateBody:
 
     @source_columns.setter
     def source_columns(self, source_columns):
-        """Sets the source_columns of this MultiTaskMappingCreateBody.
+        r"""Sets the source_columns of this MultiTaskMappingCreateBody.
 
         源端字段列表
 
@@ -174,7 +174,7 @@ class MultiTaskMappingCreateBody:
 
     @property
     def target_columns(self):
-        """Gets the target_columns of this MultiTaskMappingCreateBody.
+        r"""Gets the target_columns of this MultiTaskMappingCreateBody.
 
         目标端字段列表
 
@@ -185,7 +185,7 @@ class MultiTaskMappingCreateBody:
 
     @target_columns.setter
     def target_columns(self, target_columns):
-        """Sets the target_columns of this MultiTaskMappingCreateBody.
+        r"""Sets the target_columns of this MultiTaskMappingCreateBody.
 
         目标端字段列表
 
@@ -196,7 +196,7 @@ class MultiTaskMappingCreateBody:
 
     @property
     def source_table(self):
-        """Gets the source_table of this MultiTaskMappingCreateBody.
+        r"""Gets the source_table of this MultiTaskMappingCreateBody.
 
         源表名
 
@@ -207,7 +207,7 @@ class MultiTaskMappingCreateBody:
 
     @source_table.setter
     def source_table(self, source_table):
-        """Sets the source_table of this MultiTaskMappingCreateBody.
+        r"""Sets the source_table of this MultiTaskMappingCreateBody.
 
         源表名
 
@@ -218,7 +218,7 @@ class MultiTaskMappingCreateBody:
 
     @property
     def target_table(self):
-        """Gets the target_table of this MultiTaskMappingCreateBody.
+        r"""Gets the target_table of this MultiTaskMappingCreateBody.
 
         目标表名
 
@@ -229,7 +229,7 @@ class MultiTaskMappingCreateBody:
 
     @target_table.setter
     def target_table(self, target_table):
-        """Sets the target_table of this MultiTaskMappingCreateBody.
+        r"""Sets the target_table of this MultiTaskMappingCreateBody.
 
         目标表名
 
@@ -240,7 +240,7 @@ class MultiTaskMappingCreateBody:
 
     @property
     def mapping_columns(self):
-        """Gets the mapping_columns of this MultiTaskMappingCreateBody.
+        r"""Gets the mapping_columns of this MultiTaskMappingCreateBody.
 
         字段映射列表
 
@@ -251,7 +251,7 @@ class MultiTaskMappingCreateBody:
 
     @mapping_columns.setter
     def mapping_columns(self, mapping_columns):
-        """Sets the mapping_columns of this MultiTaskMappingCreateBody.
+        r"""Sets the mapping_columns of this MultiTaskMappingCreateBody.
 
         字段映射列表
 

@@ -23,7 +23,7 @@ class AssetExportTask:
     }
 
     def __init__(self):
-        """AssetExportTask
+        r"""AssetExportTask
 
         The model defined in huaweicloud sdk
 

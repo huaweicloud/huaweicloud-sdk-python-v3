@@ -25,7 +25,7 @@ class ResourceDeleteTag:
     }
 
     def __init__(self, key=None):
-        """ResourceDeleteTag
+        r"""ResourceDeleteTag
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ResourceDeleteTag:
 
     @property
     def key(self):
-        """Gets the key of this ResourceDeleteTag.
+        r"""Gets the key of this ResourceDeleteTag.
 
         Key值。 - 不能为空，最多支持128个字符 - 可用UTF-8格式表示的汉字、字母、数字和空格 - 支持部分特殊字符：_.:/=+-@ - 不能以\"\\_sys\\_\"开头
 
@@ -54,7 +54,7 @@ class ResourceDeleteTag:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ResourceDeleteTag.
+        r"""Sets the key of this ResourceDeleteTag.
 
         Key值。 - 不能为空，最多支持128个字符 - 可用UTF-8格式表示的汉字、字母、数字和空格 - 支持部分特殊字符：_.:/=+-@ - 不能以\"\\_sys\\_\"开头
 

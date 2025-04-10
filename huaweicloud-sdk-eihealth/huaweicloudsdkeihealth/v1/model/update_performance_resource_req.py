@@ -27,7 +27,7 @@ class UpdatePerformanceResourceReq:
     }
 
     def __init__(self, job_quota=None, schedulable=None):
-        """UpdatePerformanceResourceReq
+        r"""UpdatePerformanceResourceReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdatePerformanceResourceReq:
 
     @property
     def job_quota(self):
-        """Gets the job_quota of this UpdatePerformanceResourceReq.
+        r"""Gets the job_quota of this UpdatePerformanceResourceReq.
 
         运行的最大作业数量
 
@@ -61,7 +61,7 @@ class UpdatePerformanceResourceReq:
 
     @job_quota.setter
     def job_quota(self, job_quota):
-        """Sets the job_quota of this UpdatePerformanceResourceReq.
+        r"""Sets the job_quota of this UpdatePerformanceResourceReq.
 
         运行的最大作业数量
 
@@ -72,7 +72,7 @@ class UpdatePerformanceResourceReq:
 
     @property
     def schedulable(self):
-        """Gets the schedulable of this UpdatePerformanceResourceReq.
+        r"""Gets the schedulable of this UpdatePerformanceResourceReq.
 
         资源是否可调度
 
@@ -83,7 +83,7 @@ class UpdatePerformanceResourceReq:
 
     @schedulable.setter
     def schedulable(self, schedulable):
-        """Sets the schedulable of this UpdatePerformanceResourceReq.
+        r"""Sets the schedulable of this UpdatePerformanceResourceReq.
 
         资源是否可调度
 

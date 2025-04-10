@@ -27,7 +27,7 @@ class AssetReviewReq:
     }
 
     def __init__(self, asset_id=None, review=None):
-        """AssetReviewReq
+        r"""AssetReviewReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AssetReviewReq:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this AssetReviewReq.
+        r"""Gets the asset_id of this AssetReviewReq.
 
         媒资ID
 
@@ -59,7 +59,7 @@ class AssetReviewReq:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this AssetReviewReq.
+        r"""Sets the asset_id of this AssetReviewReq.
 
         媒资ID
 
@@ -70,7 +70,7 @@ class AssetReviewReq:
 
     @property
     def review(self):
-        """Gets the review of this AssetReviewReq.
+        r"""Gets the review of this AssetReviewReq.
 
         :return: The review of this AssetReviewReq.
         :rtype: :class:`huaweicloudsdkvod.v1.Review`
@@ -79,7 +79,7 @@ class AssetReviewReq:
 
     @review.setter
     def review(self, review):
-        """Sets the review of this AssetReviewReq.
+        r"""Sets the review of this AssetReviewReq.
 
         :param review: The review of this AssetReviewReq.
         :type review: :class:`huaweicloudsdkvod.v1.Review`

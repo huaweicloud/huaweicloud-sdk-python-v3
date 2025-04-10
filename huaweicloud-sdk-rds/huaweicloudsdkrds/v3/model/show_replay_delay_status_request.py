@@ -27,7 +27,7 @@ class ShowReplayDelayStatusRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None):
-        """ShowReplayDelayStatusRequest
+        r"""ShowReplayDelayStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowReplayDelayStatusRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowReplayDelayStatusRequest.
+        r"""Gets the instance_id of this ShowReplayDelayStatusRequest.
 
         实例id
 
@@ -60,7 +60,7 @@ class ShowReplayDelayStatusRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowReplayDelayStatusRequest.
+        r"""Sets the instance_id of this ShowReplayDelayStatusRequest.
 
         实例id
 
@@ -71,7 +71,7 @@ class ShowReplayDelayStatusRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowReplayDelayStatusRequest.
+        r"""Gets the x_language of this ShowReplayDelayStatusRequest.
 
         语言
 
@@ -82,7 +82,7 @@ class ShowReplayDelayStatusRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowReplayDelayStatusRequest.
+        r"""Sets the x_language of this ShowReplayDelayStatusRequest.
 
         语言
 

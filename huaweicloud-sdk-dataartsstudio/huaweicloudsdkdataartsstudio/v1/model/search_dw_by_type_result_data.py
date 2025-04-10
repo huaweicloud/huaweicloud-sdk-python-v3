@@ -25,7 +25,7 @@ class SearchDwByTypeResultData:
     }
 
     def __init__(self, value=None):
-        """SearchDwByTypeResultData
+        r"""SearchDwByTypeResultData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SearchDwByTypeResultData:
 
     @property
     def value(self):
-        """Gets the value of this SearchDwByTypeResultData.
+        r"""Gets the value of this SearchDwByTypeResultData.
 
         数据连接信息数组
 
@@ -54,7 +54,7 @@ class SearchDwByTypeResultData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this SearchDwByTypeResultData.
+        r"""Sets the value of this SearchDwByTypeResultData.
 
         数据连接信息数组
 

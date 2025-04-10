@@ -29,7 +29,7 @@ class AgencyAuthIdentity:
     }
 
     def __init__(self, methods=None, assume_role=None, policy=None):
-        """AgencyAuthIdentity
+        r"""AgencyAuthIdentity
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class AgencyAuthIdentity:
 
     @property
     def methods(self):
-        """Gets the methods of this AgencyAuthIdentity.
+        r"""Gets the methods of this AgencyAuthIdentity.
 
         认证方法，该字段内容为[\"assume_role\"]。
 
@@ -66,7 +66,7 @@ class AgencyAuthIdentity:
 
     @methods.setter
     def methods(self, methods):
-        """Sets the methods of this AgencyAuthIdentity.
+        r"""Sets the methods of this AgencyAuthIdentity.
 
         认证方法，该字段内容为[\"assume_role\"]。
 
@@ -77,7 +77,7 @@ class AgencyAuthIdentity:
 
     @property
     def assume_role(self):
-        """Gets the assume_role of this AgencyAuthIdentity.
+        r"""Gets the assume_role of this AgencyAuthIdentity.
 
         :return: The assume_role of this AgencyAuthIdentity.
         :rtype: :class:`huaweicloudsdkiam.v3.IdentityAssumerole`
@@ -86,7 +86,7 @@ class AgencyAuthIdentity:
 
     @assume_role.setter
     def assume_role(self, assume_role):
-        """Sets the assume_role of this AgencyAuthIdentity.
+        r"""Sets the assume_role of this AgencyAuthIdentity.
 
         :param assume_role: The assume_role of this AgencyAuthIdentity.
         :type assume_role: :class:`huaweicloudsdkiam.v3.IdentityAssumerole`
@@ -95,7 +95,7 @@ class AgencyAuthIdentity:
 
     @property
     def policy(self):
-        """Gets the policy of this AgencyAuthIdentity.
+        r"""Gets the policy of this AgencyAuthIdentity.
 
         :return: The policy of this AgencyAuthIdentity.
         :rtype: :class:`huaweicloudsdkiam.v3.ServicePolicy`
@@ -104,7 +104,7 @@ class AgencyAuthIdentity:
 
     @policy.setter
     def policy(self, policy):
-        """Sets the policy of this AgencyAuthIdentity.
+        r"""Sets the policy of this AgencyAuthIdentity.
 
         :param policy: The policy of this AgencyAuthIdentity.
         :type policy: :class:`huaweicloudsdkiam.v3.ServicePolicy`

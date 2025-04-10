@@ -28,7 +28,7 @@ class CreateP2PSiteNetworkResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, site_network=None):
-        """CreateP2PSiteNetworkResponse
+        r"""CreateP2PSiteNetworkResponse
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateP2PSiteNetworkResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateP2PSiteNetworkResponse.
+        r"""Gets the request_id of this CreateP2PSiteNetworkResponse.
 
         请求ID。
 
@@ -60,7 +60,7 @@ class CreateP2PSiteNetworkResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateP2PSiteNetworkResponse.
+        r"""Sets the request_id of this CreateP2PSiteNetworkResponse.
 
         请求ID。
 
@@ -71,7 +71,7 @@ class CreateP2PSiteNetworkResponse(SdkResponse):
 
     @property
     def site_network(self):
-        """Gets the site_network of this CreateP2PSiteNetworkResponse.
+        r"""Gets the site_network of this CreateP2PSiteNetworkResponse.
 
         :return: The site_network of this CreateP2PSiteNetworkResponse.
         :rtype: :class:`huaweicloudsdkcc.v3.SiteNetworkEntry`
@@ -80,7 +80,7 @@ class CreateP2PSiteNetworkResponse(SdkResponse):
 
     @site_network.setter
     def site_network(self, site_network):
-        """Sets the site_network of this CreateP2PSiteNetworkResponse.
+        r"""Sets the site_network of this CreateP2PSiteNetworkResponse.
 
         :param site_network: The site_network of this CreateP2PSiteNetworkResponse.
         :type site_network: :class:`huaweicloudsdkcc.v3.SiteNetworkEntry`

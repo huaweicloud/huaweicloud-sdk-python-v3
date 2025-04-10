@@ -27,7 +27,7 @@ class IpsItem:
     }
 
     def __init__(self, ips=None, update_time=None):
-        """IpsItem
+        r"""IpsItem
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class IpsItem:
 
     @property
     def ips(self):
-        """Gets the ips of this IpsItem.
+        r"""Gets the ips of this IpsItem.
 
         waf回源Ip
 
@@ -61,7 +61,7 @@ class IpsItem:
 
     @ips.setter
     def ips(self, ips):
-        """Sets the ips of this IpsItem.
+        r"""Sets the ips of this IpsItem.
 
         waf回源Ip
 
@@ -72,7 +72,7 @@ class IpsItem:
 
     @property
     def update_time(self):
-        """Gets the update_time of this IpsItem.
+        r"""Gets the update_time of this IpsItem.
 
         回源Ip更新时间
 
@@ -83,7 +83,7 @@ class IpsItem:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this IpsItem.
+        r"""Sets the update_time of this IpsItem.
 
         回源Ip更新时间
 

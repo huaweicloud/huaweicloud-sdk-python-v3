@@ -29,7 +29,7 @@ class LogList:
     }
 
     def __init__(self, content=None, date=None, level=None):
-        """LogList
+        r"""LogList
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class LogList:
 
     @property
     def content(self):
-        """Gets the content of this LogList.
+        r"""Gets the content of this LogList.
 
         日志内容。
 
@@ -68,7 +68,7 @@ class LogList:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this LogList.
+        r"""Sets the content of this LogList.
 
         日志内容。
 
@@ -79,7 +79,7 @@ class LogList:
 
     @property
     def date(self):
-        """Gets the date of this LogList.
+        r"""Gets the date of this LogList.
 
         日期。
 
@@ -90,7 +90,7 @@ class LogList:
 
     @date.setter
     def date(self, date):
-        """Sets the date of this LogList.
+        r"""Sets the date of this LogList.
 
         日期。
 
@@ -101,7 +101,7 @@ class LogList:
 
     @property
     def level(self):
-        """Gets the level of this LogList.
+        r"""Gets the level of this LogList.
 
         日志级别。
 
@@ -112,7 +112,7 @@ class LogList:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this LogList.
+        r"""Sets the level of this LogList.
 
         日志级别。
 

@@ -29,7 +29,7 @@ class CreateUserRequest:
     }
 
     def __init__(self, authorization=None, tenant_id=None, body=None):
-        """CreateUserRequest
+        r"""CreateUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateUserRequest:
 
     @property
     def authorization(self):
-        """Gets the authorization of this CreateUserRequest.
+        r"""Gets the authorization of this CreateUserRequest.
 
         承载令牌
 
@@ -66,7 +66,7 @@ class CreateUserRequest:
 
     @authorization.setter
     def authorization(self, authorization):
-        """Sets the authorization of this CreateUserRequest.
+        r"""Sets the authorization of this CreateUserRequest.
 
         承载令牌
 
@@ -77,7 +77,7 @@ class CreateUserRequest:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this CreateUserRequest.
+        r"""Gets the tenant_id of this CreateUserRequest.
 
         租户的全局唯一标识符（ID）
 
@@ -88,7 +88,7 @@ class CreateUserRequest:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this CreateUserRequest.
+        r"""Sets the tenant_id of this CreateUserRequest.
 
         租户的全局唯一标识符（ID）
 
@@ -99,7 +99,7 @@ class CreateUserRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateUserRequest.
+        r"""Gets the body of this CreateUserRequest.
 
         :return: The body of this CreateUserRequest.
         :rtype: :class:`huaweicloudsdkidentitycenterscim.v1.CreateUserReqBody`
@@ -108,7 +108,7 @@ class CreateUserRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateUserRequest.
+        r"""Sets the body of this CreateUserRequest.
 
         :param body: The body of this CreateUserRequest.
         :type body: :class:`huaweicloudsdkidentitycenterscim.v1.CreateUserReqBody`

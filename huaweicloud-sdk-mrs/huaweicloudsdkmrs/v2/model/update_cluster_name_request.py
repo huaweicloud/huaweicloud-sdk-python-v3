@@ -27,7 +27,7 @@ class UpdateClusterNameRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """UpdateClusterNameRequest
+        r"""UpdateClusterNameRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateClusterNameRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdateClusterNameRequest.
+        r"""Gets the cluster_id of this UpdateClusterNameRequest.
 
         集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
 
@@ -60,7 +60,7 @@ class UpdateClusterNameRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdateClusterNameRequest.
+        r"""Sets the cluster_id of this UpdateClusterNameRequest.
 
         集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
 
@@ -71,7 +71,7 @@ class UpdateClusterNameRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateClusterNameRequest.
+        r"""Gets the body of this UpdateClusterNameRequest.
 
         :return: The body of this UpdateClusterNameRequest.
         :rtype: :class:`huaweicloudsdkmrs.v2.UpdateClusterReq`
@@ -80,7 +80,7 @@ class UpdateClusterNameRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateClusterNameRequest.
+        r"""Sets the body of this UpdateClusterNameRequest.
 
         :param body: The body of this UpdateClusterNameRequest.
         :type body: :class:`huaweicloudsdkmrs.v2.UpdateClusterReq`

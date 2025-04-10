@@ -33,7 +33,7 @@ class ListEventTargetRequest:
     }
 
     def __init__(self, offset=None, limit=None, sort=None, fuzzy_label=None, support_types=None):
-        """ListEventTargetRequest
+        r"""ListEventTargetRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListEventTargetRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListEventTargetRequest.
+        r"""Gets the offset of this ListEventTargetRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量不能小于0
 
@@ -82,7 +82,7 @@ class ListEventTargetRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListEventTargetRequest.
+        r"""Sets the offset of this ListEventTargetRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量不能小于0
 
@@ -93,7 +93,7 @@ class ListEventTargetRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListEventTargetRequest.
+        r"""Gets the limit of this ListEventTargetRequest.
 
         每页显示的条目数量，不能小于1或大于1000
 
@@ -104,7 +104,7 @@ class ListEventTargetRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEventTargetRequest.
+        r"""Sets the limit of this ListEventTargetRequest.
 
         每页显示的条目数量，不能小于1或大于1000
 
@@ -115,7 +115,7 @@ class ListEventTargetRequest:
 
     @property
     def sort(self):
-        """Gets the sort of this ListEventTargetRequest.
+        r"""Gets the sort of this ListEventTargetRequest.
 
         指定查询排序
 
@@ -126,7 +126,7 @@ class ListEventTargetRequest:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this ListEventTargetRequest.
+        r"""Sets the sort of this ListEventTargetRequest.
 
         指定查询排序
 
@@ -137,7 +137,7 @@ class ListEventTargetRequest:
 
     @property
     def fuzzy_label(self):
-        """Gets the fuzzy_label of this ListEventTargetRequest.
+        r"""Gets the fuzzy_label of this ListEventTargetRequest.
 
         指定查询的事件目标标签，模糊匹配
 
@@ -148,7 +148,7 @@ class ListEventTargetRequest:
 
     @fuzzy_label.setter
     def fuzzy_label(self, fuzzy_label):
-        """Sets the fuzzy_label of this ListEventTargetRequest.
+        r"""Sets the fuzzy_label of this ListEventTargetRequest.
 
         指定查询的事件目标标签，模糊匹配
 
@@ -159,7 +159,7 @@ class ListEventTargetRequest:
 
     @property
     def support_types(self):
-        """Gets the support_types of this ListEventTargetRequest.
+        r"""Gets the support_types of this ListEventTargetRequest.
 
         事件目标支持方式：事件订阅：SUBSCRIPTION、事件流：FLOW
 
@@ -170,7 +170,7 @@ class ListEventTargetRequest:
 
     @support_types.setter
     def support_types(self, support_types):
-        """Sets the support_types of this ListEventTargetRequest.
+        r"""Sets the support_types of this ListEventTargetRequest.
 
         事件目标支持方式：事件订阅：SUBSCRIPTION、事件流：FLOW
 

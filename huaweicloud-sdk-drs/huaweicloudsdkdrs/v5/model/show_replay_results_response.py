@@ -40,7 +40,7 @@ class ShowReplayResultsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, shard_statics=None, slow_sqls=None, slow_sql_templates=None, error_sqls=None, error_sql_templates=None, replaying_sqls=None, error_classifications=None):
-        """ShowReplayResultsResponse
+        r"""ShowReplayResultsResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ShowReplayResultsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ShowReplayResultsResponse.
+        r"""Gets the total_count of this ShowReplayResultsResponse.
 
         数据总量
 
@@ -104,7 +104,7 @@ class ShowReplayResultsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ShowReplayResultsResponse.
+        r"""Sets the total_count of this ShowReplayResultsResponse.
 
         数据总量
 
@@ -115,7 +115,7 @@ class ShowReplayResultsResponse(SdkResponse):
 
     @property
     def shard_statics(self):
-        """Gets the shard_statics of this ShowReplayResultsResponse.
+        r"""Gets the shard_statics of this ShowReplayResultsResponse.
 
         回放基于时间统计详细信息列表，在type为shard_statistics时返回
 
@@ -126,7 +126,7 @@ class ShowReplayResultsResponse(SdkResponse):
 
     @shard_statics.setter
     def shard_statics(self, shard_statics):
-        """Sets the shard_statics of this ShowReplayResultsResponse.
+        r"""Sets the shard_statics of this ShowReplayResultsResponse.
 
         回放基于时间统计详细信息列表，在type为shard_statistics时返回
 
@@ -137,7 +137,7 @@ class ShowReplayResultsResponse(SdkResponse):
 
     @property
     def slow_sqls(self):
-        """Gets the slow_sqls of this ShowReplayResultsResponse.
+        r"""Gets the slow_sqls of this ShowReplayResultsResponse.
 
         慢SQL信息列表，在type为slow_sql时返回
 
@@ -148,7 +148,7 @@ class ShowReplayResultsResponse(SdkResponse):
 
     @slow_sqls.setter
     def slow_sqls(self, slow_sqls):
-        """Sets the slow_sqls of this ShowReplayResultsResponse.
+        r"""Sets the slow_sqls of this ShowReplayResultsResponse.
 
         慢SQL信息列表，在type为slow_sql时返回
 
@@ -159,7 +159,7 @@ class ShowReplayResultsResponse(SdkResponse):
 
     @property
     def slow_sql_templates(self):
-        """Gets the slow_sql_templates of this ShowReplayResultsResponse.
+        r"""Gets the slow_sql_templates of this ShowReplayResultsResponse.
 
         慢SQL统计信息列表，在type为slow_sql_template时返回
 
@@ -170,7 +170,7 @@ class ShowReplayResultsResponse(SdkResponse):
 
     @slow_sql_templates.setter
     def slow_sql_templates(self, slow_sql_templates):
-        """Sets the slow_sql_templates of this ShowReplayResultsResponse.
+        r"""Sets the slow_sql_templates of this ShowReplayResultsResponse.
 
         慢SQL统计信息列表，在type为slow_sql_template时返回
 
@@ -181,7 +181,7 @@ class ShowReplayResultsResponse(SdkResponse):
 
     @property
     def error_sqls(self):
-        """Gets the error_sqls of this ShowReplayResultsResponse.
+        r"""Gets the error_sqls of this ShowReplayResultsResponse.
 
         异常SQL信息列表，在type为error_sql时返回
 
@@ -192,7 +192,7 @@ class ShowReplayResultsResponse(SdkResponse):
 
     @error_sqls.setter
     def error_sqls(self, error_sqls):
-        """Sets the error_sqls of this ShowReplayResultsResponse.
+        r"""Sets the error_sqls of this ShowReplayResultsResponse.
 
         异常SQL信息列表，在type为error_sql时返回
 
@@ -203,7 +203,7 @@ class ShowReplayResultsResponse(SdkResponse):
 
     @property
     def error_sql_templates(self):
-        """Gets the error_sql_templates of this ShowReplayResultsResponse.
+        r"""Gets the error_sql_templates of this ShowReplayResultsResponse.
 
         异常SQL统计信息列表，在type为error_sql_template时返回
 
@@ -214,7 +214,7 @@ class ShowReplayResultsResponse(SdkResponse):
 
     @error_sql_templates.setter
     def error_sql_templates(self, error_sql_templates):
-        """Sets the error_sql_templates of this ShowReplayResultsResponse.
+        r"""Sets the error_sql_templates of this ShowReplayResultsResponse.
 
         异常SQL统计信息列表，在type为error_sql_template时返回
 
@@ -225,7 +225,7 @@ class ShowReplayResultsResponse(SdkResponse):
 
     @property
     def replaying_sqls(self):
-        """Gets the replaying_sqls of this ShowReplayResultsResponse.
+        r"""Gets the replaying_sqls of this ShowReplayResultsResponse.
 
         正在回放SQL信息列表，在type为replaying_sql时返回
 
@@ -236,7 +236,7 @@ class ShowReplayResultsResponse(SdkResponse):
 
     @replaying_sqls.setter
     def replaying_sqls(self, replaying_sqls):
-        """Sets the replaying_sqls of this ShowReplayResultsResponse.
+        r"""Sets the replaying_sqls of this ShowReplayResultsResponse.
 
         正在回放SQL信息列表，在type为replaying_sql时返回
 
@@ -247,7 +247,7 @@ class ShowReplayResultsResponse(SdkResponse):
 
     @property
     def error_classifications(self):
-        """Gets the error_classifications of this ShowReplayResultsResponse.
+        r"""Gets the error_classifications of this ShowReplayResultsResponse.
 
         回放异常SQL分类信息，在type为error_classification时返回
 
@@ -258,7 +258,7 @@ class ShowReplayResultsResponse(SdkResponse):
 
     @error_classifications.setter
     def error_classifications(self, error_classifications):
-        """Sets the error_classifications of this ShowReplayResultsResponse.
+        r"""Sets the error_classifications of this ShowReplayResultsResponse.
 
         回放异常SQL分类信息，在type为error_classification时返回
 

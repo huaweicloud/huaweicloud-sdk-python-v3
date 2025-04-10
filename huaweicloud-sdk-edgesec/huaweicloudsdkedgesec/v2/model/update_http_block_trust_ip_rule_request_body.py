@@ -37,7 +37,7 @@ class UpdateHttpBlockTrustIpRuleRequestBody:
     }
 
     def __init__(self, name=None, description=None, status=None, addr=None, white=None, followed_action_id=None, ip_group_id=None):
-        """UpdateHttpBlockTrustIpRuleRequestBody
+        r"""UpdateHttpBlockTrustIpRuleRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class UpdateHttpBlockTrustIpRuleRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateHttpBlockTrustIpRuleRequestBody.
+        r"""Gets the name of this UpdateHttpBlockTrustIpRuleRequestBody.
 
         规则名称
 
@@ -94,7 +94,7 @@ class UpdateHttpBlockTrustIpRuleRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateHttpBlockTrustIpRuleRequestBody.
+        r"""Sets the name of this UpdateHttpBlockTrustIpRuleRequestBody.
 
         规则名称
 
@@ -105,7 +105,7 @@ class UpdateHttpBlockTrustIpRuleRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateHttpBlockTrustIpRuleRequestBody.
+        r"""Gets the description of this UpdateHttpBlockTrustIpRuleRequestBody.
 
         规则描述，最长512字符
 
@@ -116,7 +116,7 @@ class UpdateHttpBlockTrustIpRuleRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateHttpBlockTrustIpRuleRequestBody.
+        r"""Sets the description of this UpdateHttpBlockTrustIpRuleRequestBody.
 
         规则描述，最长512字符
 
@@ -127,7 +127,7 @@ class UpdateHttpBlockTrustIpRuleRequestBody:
 
     @property
     def status(self):
-        """Gets the status of this UpdateHttpBlockTrustIpRuleRequestBody.
+        r"""Gets the status of this UpdateHttpBlockTrustIpRuleRequestBody.
 
         规则开关： - 0：关闭 - 1：开启 
 
@@ -138,7 +138,7 @@ class UpdateHttpBlockTrustIpRuleRequestBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateHttpBlockTrustIpRuleRequestBody.
+        r"""Sets the status of this UpdateHttpBlockTrustIpRuleRequestBody.
 
         规则开关： - 0：关闭 - 1：开启 
 
@@ -149,7 +149,7 @@ class UpdateHttpBlockTrustIpRuleRequestBody:
 
     @property
     def addr(self):
-        """Gets the addr of this UpdateHttpBlockTrustIpRuleRequestBody.
+        r"""Gets the addr of this UpdateHttpBlockTrustIpRuleRequestBody.
 
         ip地址/地址段；ip地址/地址段或者ip地址组id至少有一个
 
@@ -160,7 +160,7 @@ class UpdateHttpBlockTrustIpRuleRequestBody:
 
     @addr.setter
     def addr(self, addr):
-        """Sets the addr of this UpdateHttpBlockTrustIpRuleRequestBody.
+        r"""Sets the addr of this UpdateHttpBlockTrustIpRuleRequestBody.
 
         ip地址/地址段；ip地址/地址段或者ip地址组id至少有一个
 
@@ -171,7 +171,7 @@ class UpdateHttpBlockTrustIpRuleRequestBody:
 
     @property
     def white(self):
-        """Gets the white of this UpdateHttpBlockTrustIpRuleRequestBody.
+        r"""Gets the white of this UpdateHttpBlockTrustIpRuleRequestBody.
 
         - 0：拦截 - 1：放行 - 2：仅记录 
 
@@ -182,7 +182,7 @@ class UpdateHttpBlockTrustIpRuleRequestBody:
 
     @white.setter
     def white(self, white):
-        """Sets the white of this UpdateHttpBlockTrustIpRuleRequestBody.
+        r"""Sets the white of this UpdateHttpBlockTrustIpRuleRequestBody.
 
         - 0：拦截 - 1：放行 - 2：仅记录 
 
@@ -193,7 +193,7 @@ class UpdateHttpBlockTrustIpRuleRequestBody:
 
     @property
     def followed_action_id(self):
-        """Gets the followed_action_id of this UpdateHttpBlockTrustIpRuleRequestBody.
+        r"""Gets the followed_action_id of this UpdateHttpBlockTrustIpRuleRequestBody.
 
         攻击惩罚规则id
 
@@ -204,7 +204,7 @@ class UpdateHttpBlockTrustIpRuleRequestBody:
 
     @followed_action_id.setter
     def followed_action_id(self, followed_action_id):
-        """Sets the followed_action_id of this UpdateHttpBlockTrustIpRuleRequestBody.
+        r"""Sets the followed_action_id of this UpdateHttpBlockTrustIpRuleRequestBody.
 
         攻击惩罚规则id
 
@@ -215,7 +215,7 @@ class UpdateHttpBlockTrustIpRuleRequestBody:
 
     @property
     def ip_group_id(self):
-        """Gets the ip_group_id of this UpdateHttpBlockTrustIpRuleRequestBody.
+        r"""Gets the ip_group_id of this UpdateHttpBlockTrustIpRuleRequestBody.
 
         ip地址组id；ip地址/地址段或者ip地址组id至少有一个
 
@@ -226,7 +226,7 @@ class UpdateHttpBlockTrustIpRuleRequestBody:
 
     @ip_group_id.setter
     def ip_group_id(self, ip_group_id):
-        """Sets the ip_group_id of this UpdateHttpBlockTrustIpRuleRequestBody.
+        r"""Sets the ip_group_id of this UpdateHttpBlockTrustIpRuleRequestBody.
 
         ip地址组id；ip地址/地址段或者ip地址组id至少有一个
 

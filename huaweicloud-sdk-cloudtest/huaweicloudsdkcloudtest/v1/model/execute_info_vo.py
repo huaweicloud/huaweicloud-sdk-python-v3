@@ -35,7 +35,7 @@ class ExecuteInfoVo:
     }
 
     def __init__(self, time=None, timestamp=None, duration=None, user_id=None, user_name=None, execute_times=None):
-        """ExecuteInfoVo
+        r"""ExecuteInfoVo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ExecuteInfoVo:
 
     @property
     def time(self):
-        """Gets the time of this ExecuteInfoVo.
+        r"""Gets the time of this ExecuteInfoVo.
 
         执行开始时间
 
@@ -89,7 +89,7 @@ class ExecuteInfoVo:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this ExecuteInfoVo.
+        r"""Sets the time of this ExecuteInfoVo.
 
         执行开始时间
 
@@ -100,7 +100,7 @@ class ExecuteInfoVo:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this ExecuteInfoVo.
+        r"""Gets the timestamp of this ExecuteInfoVo.
 
         执行开始时间时间戳
 
@@ -111,7 +111,7 @@ class ExecuteInfoVo:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this ExecuteInfoVo.
+        r"""Sets the timestamp of this ExecuteInfoVo.
 
         执行开始时间时间戳
 
@@ -122,7 +122,7 @@ class ExecuteInfoVo:
 
     @property
     def duration(self):
-        """Gets the duration of this ExecuteInfoVo.
+        r"""Gets the duration of this ExecuteInfoVo.
 
         执行时长
 
@@ -133,7 +133,7 @@ class ExecuteInfoVo:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this ExecuteInfoVo.
+        r"""Sets the duration of this ExecuteInfoVo.
 
         执行时长
 
@@ -144,7 +144,7 @@ class ExecuteInfoVo:
 
     @property
     def user_id(self):
-        """Gets the user_id of this ExecuteInfoVo.
+        r"""Gets the user_id of this ExecuteInfoVo.
 
         用户ID
 
@@ -155,7 +155,7 @@ class ExecuteInfoVo:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ExecuteInfoVo.
+        r"""Sets the user_id of this ExecuteInfoVo.
 
         用户ID
 
@@ -166,7 +166,7 @@ class ExecuteInfoVo:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ExecuteInfoVo.
+        r"""Gets the user_name of this ExecuteInfoVo.
 
         用户名称
 
@@ -177,7 +177,7 @@ class ExecuteInfoVo:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ExecuteInfoVo.
+        r"""Sets the user_name of this ExecuteInfoVo.
 
         用户名称
 
@@ -188,7 +188,7 @@ class ExecuteInfoVo:
 
     @property
     def execute_times(self):
-        """Gets the execute_times of this ExecuteInfoVo.
+        r"""Gets the execute_times of this ExecuteInfoVo.
 
         执行次数
 
@@ -199,7 +199,7 @@ class ExecuteInfoVo:
 
     @execute_times.setter
     def execute_times(self, execute_times):
-        """Sets the execute_times of this ExecuteInfoVo.
+        r"""Sets the execute_times of this ExecuteInfoVo.
 
         执行次数
 

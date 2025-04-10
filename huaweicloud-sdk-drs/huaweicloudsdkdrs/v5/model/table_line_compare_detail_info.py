@@ -37,7 +37,7 @@ class TableLineCompareDetailInfo:
     }
 
     def __init__(self, source_table_name=None, source_row_num=None, target_table_name=None, target_row_num=None, difference_row_num=None, status=None, message=None):
-        """TableLineCompareDetailInfo
+        r"""TableLineCompareDetailInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class TableLineCompareDetailInfo:
 
     @property
     def source_table_name(self):
-        """Gets the source_table_name of this TableLineCompareDetailInfo.
+        r"""Gets the source_table_name of this TableLineCompareDetailInfo.
 
         源库表名称。
 
@@ -96,7 +96,7 @@ class TableLineCompareDetailInfo:
 
     @source_table_name.setter
     def source_table_name(self, source_table_name):
-        """Sets the source_table_name of this TableLineCompareDetailInfo.
+        r"""Sets the source_table_name of this TableLineCompareDetailInfo.
 
         源库表名称。
 
@@ -107,7 +107,7 @@ class TableLineCompareDetailInfo:
 
     @property
     def source_row_num(self):
-        """Gets the source_row_num of this TableLineCompareDetailInfo.
+        r"""Gets the source_row_num of this TableLineCompareDetailInfo.
 
         源库表行数。
 
@@ -118,7 +118,7 @@ class TableLineCompareDetailInfo:
 
     @source_row_num.setter
     def source_row_num(self, source_row_num):
-        """Sets the source_row_num of this TableLineCompareDetailInfo.
+        r"""Sets the source_row_num of this TableLineCompareDetailInfo.
 
         源库表行数。
 
@@ -129,7 +129,7 @@ class TableLineCompareDetailInfo:
 
     @property
     def target_table_name(self):
-        """Gets the target_table_name of this TableLineCompareDetailInfo.
+        r"""Gets the target_table_name of this TableLineCompareDetailInfo.
 
         目标库表名称。
 
@@ -140,7 +140,7 @@ class TableLineCompareDetailInfo:
 
     @target_table_name.setter
     def target_table_name(self, target_table_name):
-        """Sets the target_table_name of this TableLineCompareDetailInfo.
+        r"""Sets the target_table_name of this TableLineCompareDetailInfo.
 
         目标库表名称。
 
@@ -151,7 +151,7 @@ class TableLineCompareDetailInfo:
 
     @property
     def target_row_num(self):
-        """Gets the target_row_num of this TableLineCompareDetailInfo.
+        r"""Gets the target_row_num of this TableLineCompareDetailInfo.
 
         目标库表行数。
 
@@ -162,7 +162,7 @@ class TableLineCompareDetailInfo:
 
     @target_row_num.setter
     def target_row_num(self, target_row_num):
-        """Sets the target_row_num of this TableLineCompareDetailInfo.
+        r"""Sets the target_row_num of this TableLineCompareDetailInfo.
 
         目标库表行数。
 
@@ -173,7 +173,7 @@ class TableLineCompareDetailInfo:
 
     @property
     def difference_row_num(self):
-        """Gets the difference_row_num of this TableLineCompareDetailInfo.
+        r"""Gets the difference_row_num of this TableLineCompareDetailInfo.
 
         差异值。
 
@@ -184,7 +184,7 @@ class TableLineCompareDetailInfo:
 
     @difference_row_num.setter
     def difference_row_num(self, difference_row_num):
-        """Sets the difference_row_num of this TableLineCompareDetailInfo.
+        r"""Sets the difference_row_num of this TableLineCompareDetailInfo.
 
         差异值。
 
@@ -195,7 +195,7 @@ class TableLineCompareDetailInfo:
 
     @property
     def status(self):
-        """Gets the status of this TableLineCompareDetailInfo.
+        r"""Gets the status of this TableLineCompareDetailInfo.
 
         对比结果。取值： - CONSISTENT：一致。 - INCONSISTENT：不一致。 - COMPARING：正在对比。 - WAITING_FOR_COMPARISON：等待对比。 - FAILED_TO_COMPARE：对比失败。 - TARGET_DB_NOT_EXIST：目标库不存在。 - CAN_NOT_COMPARE：无法对比。
 
@@ -206,7 +206,7 @@ class TableLineCompareDetailInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this TableLineCompareDetailInfo.
+        r"""Sets the status of this TableLineCompareDetailInfo.
 
         对比结果。取值： - CONSISTENT：一致。 - INCONSISTENT：不一致。 - COMPARING：正在对比。 - WAITING_FOR_COMPARISON：等待对比。 - FAILED_TO_COMPARE：对比失败。 - TARGET_DB_NOT_EXIST：目标库不存在。 - CAN_NOT_COMPARE：无法对比。
 
@@ -217,7 +217,7 @@ class TableLineCompareDetailInfo:
 
     @property
     def message(self):
-        """Gets the message of this TableLineCompareDetailInfo.
+        r"""Gets the message of this TableLineCompareDetailInfo.
 
         信息。
 
@@ -228,7 +228,7 @@ class TableLineCompareDetailInfo:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this TableLineCompareDetailInfo.
+        r"""Sets the message of this TableLineCompareDetailInfo.
 
         信息。
 

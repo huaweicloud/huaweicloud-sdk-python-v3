@@ -33,7 +33,7 @@ class ListAuthorizedDbUsersRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, db_name=None, page=None, limit=None):
-        """ListAuthorizedDbUsersRequest
+        r"""ListAuthorizedDbUsersRequest
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class ListAuthorizedDbUsersRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListAuthorizedDbUsersRequest.
+        r"""Gets the x_language of this ListAuthorizedDbUsersRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class ListAuthorizedDbUsersRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListAuthorizedDbUsersRequest.
+        r"""Sets the x_language of this ListAuthorizedDbUsersRequest.
 
         语言
 
@@ -89,7 +89,7 @@ class ListAuthorizedDbUsersRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListAuthorizedDbUsersRequest.
+        r"""Gets the instance_id of this ListAuthorizedDbUsersRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class ListAuthorizedDbUsersRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListAuthorizedDbUsersRequest.
+        r"""Sets the instance_id of this ListAuthorizedDbUsersRequest.
 
         实例ID。
 
@@ -111,7 +111,7 @@ class ListAuthorizedDbUsersRequest:
 
     @property
     def db_name(self):
-        """Gets the db_name of this ListAuthorizedDbUsersRequest.
+        r"""Gets the db_name of this ListAuthorizedDbUsersRequest.
 
         数据库名。
 
@@ -122,7 +122,7 @@ class ListAuthorizedDbUsersRequest:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this ListAuthorizedDbUsersRequest.
+        r"""Sets the db_name of this ListAuthorizedDbUsersRequest.
 
         数据库名。
 
@@ -133,7 +133,7 @@ class ListAuthorizedDbUsersRequest:
 
     @property
     def page(self):
-        """Gets the page of this ListAuthorizedDbUsersRequest.
+        r"""Gets the page of this ListAuthorizedDbUsersRequest.
 
         分页页码，从1开始。
 
@@ -144,7 +144,7 @@ class ListAuthorizedDbUsersRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListAuthorizedDbUsersRequest.
+        r"""Sets the page of this ListAuthorizedDbUsersRequest.
 
         分页页码，从1开始。
 
@@ -155,7 +155,7 @@ class ListAuthorizedDbUsersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAuthorizedDbUsersRequest.
+        r"""Gets the limit of this ListAuthorizedDbUsersRequest.
 
         每页数据条数。取值范围[1, 100]。
 
@@ -166,7 +166,7 @@ class ListAuthorizedDbUsersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAuthorizedDbUsersRequest.
+        r"""Sets the limit of this ListAuthorizedDbUsersRequest.
 
         每页数据条数。取值范围[1, 100]。
 

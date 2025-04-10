@@ -27,7 +27,7 @@ class VulnRule:
     }
 
     def __init__(self, file_path=None, identity_info=None):
-        """VulnRule
+        r"""VulnRule
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class VulnRule:
 
     @property
     def file_path(self):
-        """Gets the file_path of this VulnRule.
+        r"""Gets the file_path of this VulnRule.
 
         问题文件
 
@@ -61,7 +61,7 @@ class VulnRule:
 
     @file_path.setter
     def file_path(self, file_path):
-        """Sets the file_path of this VulnRule.
+        r"""Sets the file_path of this VulnRule.
 
         问题文件
 
@@ -72,7 +72,7 @@ class VulnRule:
 
     @property
     def identity_info(self):
-        """Gets the identity_info of this VulnRule.
+        r"""Gets the identity_info of this VulnRule.
 
         特征信息
 
@@ -83,7 +83,7 @@ class VulnRule:
 
     @identity_info.setter
     def identity_info(self, identity_info):
-        """Sets the identity_info of this VulnRule.
+        r"""Sets the identity_info of this VulnRule.
 
         特征信息
 

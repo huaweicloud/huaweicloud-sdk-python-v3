@@ -70,7 +70,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
     }
 
     def __init__(self, id=None, enterprise_project_id=None, name=None, agency_name=None, trigger_time=None, version_no=None, task_type=None, associated_task_id=None, associated_task_name=None, associated_task_name_en=None, associated_task_type=None, runbook_instance_mode=None, risk_level=None, input_param=None, enable_approve=None, reviewer_notification=None, created_user_name=None, reviewer_user_name=None, approve_status=None, approve_comments=None, target_instances=None, enable_message_notification=None, message_notification=None):
-        """UpdateScheduledTaskResponse
+        r"""UpdateScheduledTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -198,7 +198,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateScheduledTaskResponse.
+        r"""Gets the id of this UpdateScheduledTaskResponse.
 
         任务ID
 
@@ -209,7 +209,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateScheduledTaskResponse.
+        r"""Sets the id of this UpdateScheduledTaskResponse.
 
         任务ID
 
@@ -220,7 +220,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this UpdateScheduledTaskResponse.
+        r"""Gets the enterprise_project_id of this UpdateScheduledTaskResponse.
 
         企业项目id
 
@@ -231,7 +231,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this UpdateScheduledTaskResponse.
+        r"""Sets the enterprise_project_id of this UpdateScheduledTaskResponse.
 
         企业项目id
 
@@ -242,7 +242,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateScheduledTaskResponse.
+        r"""Gets the name of this UpdateScheduledTaskResponse.
 
         任务名称
 
@@ -253,7 +253,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateScheduledTaskResponse.
+        r"""Sets the name of this UpdateScheduledTaskResponse.
 
         任务名称
 
@@ -264,7 +264,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @property
     def agency_name(self):
-        """Gets the agency_name of this UpdateScheduledTaskResponse.
+        r"""Gets the agency_name of this UpdateScheduledTaskResponse.
 
         委托名称
 
@@ -275,7 +275,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @agency_name.setter
     def agency_name(self, agency_name):
-        """Sets the agency_name of this UpdateScheduledTaskResponse.
+        r"""Sets the agency_name of this UpdateScheduledTaskResponse.
 
         委托名称
 
@@ -286,7 +286,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @property
     def trigger_time(self):
-        """Gets the trigger_time of this UpdateScheduledTaskResponse.
+        r"""Gets the trigger_time of this UpdateScheduledTaskResponse.
 
         :return: The trigger_time of this UpdateScheduledTaskResponse.
         :rtype: :class:`huaweicloudsdkcoc.v1.TriggerTime`
@@ -295,7 +295,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @trigger_time.setter
     def trigger_time(self, trigger_time):
-        """Sets the trigger_time of this UpdateScheduledTaskResponse.
+        r"""Sets the trigger_time of this UpdateScheduledTaskResponse.
 
         :param trigger_time: The trigger_time of this UpdateScheduledTaskResponse.
         :type trigger_time: :class:`huaweicloudsdkcoc.v1.TriggerTime`
@@ -304,7 +304,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @property
     def version_no(self):
-        """Gets the version_no of this UpdateScheduledTaskResponse.
+        r"""Gets the version_no of this UpdateScheduledTaskResponse.
 
         版本号
 
@@ -315,7 +315,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @version_no.setter
     def version_no(self, version_no):
-        """Sets the version_no of this UpdateScheduledTaskResponse.
+        r"""Sets the version_no of this UpdateScheduledTaskResponse.
 
         版本号
 
@@ -326,7 +326,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @property
     def task_type(self):
-        """Gets the task_type of this UpdateScheduledTaskResponse.
+        r"""Gets the task_type of this UpdateScheduledTaskResponse.
 
         任务类型
 
@@ -337,7 +337,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this UpdateScheduledTaskResponse.
+        r"""Sets the task_type of this UpdateScheduledTaskResponse.
 
         任务类型
 
@@ -348,7 +348,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @property
     def associated_task_id(self):
-        """Gets the associated_task_id of this UpdateScheduledTaskResponse.
+        r"""Gets the associated_task_id of this UpdateScheduledTaskResponse.
 
         关联任务ID（脚本ID/作业ID）
 
@@ -359,7 +359,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @associated_task_id.setter
     def associated_task_id(self, associated_task_id):
-        """Sets the associated_task_id of this UpdateScheduledTaskResponse.
+        r"""Sets the associated_task_id of this UpdateScheduledTaskResponse.
 
         关联任务ID（脚本ID/作业ID）
 
@@ -370,7 +370,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @property
     def associated_task_name(self):
-        """Gets the associated_task_name of this UpdateScheduledTaskResponse.
+        r"""Gets the associated_task_name of this UpdateScheduledTaskResponse.
 
         关联任务名称（脚本名称/作业名称）
 
@@ -381,7 +381,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @associated_task_name.setter
     def associated_task_name(self, associated_task_name):
-        """Sets the associated_task_name of this UpdateScheduledTaskResponse.
+        r"""Sets the associated_task_name of this UpdateScheduledTaskResponse.
 
         关联任务名称（脚本名称/作业名称）
 
@@ -392,7 +392,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @property
     def associated_task_name_en(self):
-        """Gets the associated_task_name_en of this UpdateScheduledTaskResponse.
+        r"""Gets the associated_task_name_en of this UpdateScheduledTaskResponse.
 
         关联任务名称(英文)（脚本名称/作业名称）
 
@@ -403,7 +403,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @associated_task_name_en.setter
     def associated_task_name_en(self, associated_task_name_en):
-        """Sets the associated_task_name_en of this UpdateScheduledTaskResponse.
+        r"""Sets the associated_task_name_en of this UpdateScheduledTaskResponse.
 
         关联任务名称(英文)（脚本名称/作业名称）
 
@@ -414,7 +414,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @property
     def associated_task_type(self):
-        """Gets the associated_task_type of this UpdateScheduledTaskResponse.
+        r"""Gets the associated_task_type of this UpdateScheduledTaskResponse.
 
         关联任务的类型
 
@@ -425,7 +425,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @associated_task_type.setter
     def associated_task_type(self, associated_task_type):
-        """Sets the associated_task_type of this UpdateScheduledTaskResponse.
+        r"""Sets the associated_task_type of this UpdateScheduledTaskResponse.
 
         关联任务的类型
 
@@ -436,7 +436,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @property
     def runbook_instance_mode(self):
-        """Gets the runbook_instance_mode of this UpdateScheduledTaskResponse.
+        r"""Gets the runbook_instance_mode of this UpdateScheduledTaskResponse.
 
         作业实例模式
 
@@ -447,7 +447,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @runbook_instance_mode.setter
     def runbook_instance_mode(self, runbook_instance_mode):
-        """Sets the runbook_instance_mode of this UpdateScheduledTaskResponse.
+        r"""Sets the runbook_instance_mode of this UpdateScheduledTaskResponse.
 
         作业实例模式
 
@@ -458,7 +458,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @property
     def risk_level(self):
-        """Gets the risk_level of this UpdateScheduledTaskResponse.
+        r"""Gets the risk_level of this UpdateScheduledTaskResponse.
 
         风险等级
 
@@ -469,7 +469,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @risk_level.setter
     def risk_level(self, risk_level):
-        """Sets the risk_level of this UpdateScheduledTaskResponse.
+        r"""Sets the risk_level of this UpdateScheduledTaskResponse.
 
         风险等级
 
@@ -480,7 +480,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @property
     def input_param(self):
-        """Gets the input_param of this UpdateScheduledTaskResponse.
+        r"""Gets the input_param of this UpdateScheduledTaskResponse.
 
         执行参数，值为json串
 
@@ -491,7 +491,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @input_param.setter
     def input_param(self, input_param):
-        """Sets the input_param of this UpdateScheduledTaskResponse.
+        r"""Sets the input_param of this UpdateScheduledTaskResponse.
 
         执行参数，值为json串
 
@@ -502,7 +502,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @property
     def enable_approve(self):
-        """Gets the enable_approve of this UpdateScheduledTaskResponse.
+        r"""Gets the enable_approve of this UpdateScheduledTaskResponse.
 
         是否开启入库人工审核
 
@@ -513,7 +513,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @enable_approve.setter
     def enable_approve(self, enable_approve):
-        """Sets the enable_approve of this UpdateScheduledTaskResponse.
+        r"""Sets the enable_approve of this UpdateScheduledTaskResponse.
 
         是否开启入库人工审核
 
@@ -524,7 +524,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @property
     def reviewer_notification(self):
-        """Gets the reviewer_notification of this UpdateScheduledTaskResponse.
+        r"""Gets the reviewer_notification of this UpdateScheduledTaskResponse.
 
         :return: The reviewer_notification of this UpdateScheduledTaskResponse.
         :rtype: :class:`huaweicloudsdkcoc.v1.MessageNotification`
@@ -533,7 +533,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @reviewer_notification.setter
     def reviewer_notification(self, reviewer_notification):
-        """Sets the reviewer_notification of this UpdateScheduledTaskResponse.
+        r"""Sets the reviewer_notification of this UpdateScheduledTaskResponse.
 
         :param reviewer_notification: The reviewer_notification of this UpdateScheduledTaskResponse.
         :type reviewer_notification: :class:`huaweicloudsdkcoc.v1.MessageNotification`
@@ -542,7 +542,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @property
     def created_user_name(self):
-        """Gets the created_user_name of this UpdateScheduledTaskResponse.
+        r"""Gets the created_user_name of this UpdateScheduledTaskResponse.
 
         创建人昵称
 
@@ -553,7 +553,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @created_user_name.setter
     def created_user_name(self, created_user_name):
-        """Sets the created_user_name of this UpdateScheduledTaskResponse.
+        r"""Sets the created_user_name of this UpdateScheduledTaskResponse.
 
         创建人昵称
 
@@ -564,7 +564,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @property
     def reviewer_user_name(self):
-        """Gets the reviewer_user_name of this UpdateScheduledTaskResponse.
+        r"""Gets the reviewer_user_name of this UpdateScheduledTaskResponse.
 
         审核人昵称
 
@@ -575,7 +575,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @reviewer_user_name.setter
     def reviewer_user_name(self, reviewer_user_name):
-        """Sets the reviewer_user_name of this UpdateScheduledTaskResponse.
+        r"""Sets the reviewer_user_name of this UpdateScheduledTaskResponse.
 
         审核人昵称
 
@@ -586,7 +586,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @property
     def approve_status(self):
-        """Gets the approve_status of this UpdateScheduledTaskResponse.
+        r"""Gets the approve_status of this UpdateScheduledTaskResponse.
 
         审批状态
 
@@ -597,7 +597,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @approve_status.setter
     def approve_status(self, approve_status):
-        """Sets the approve_status of this UpdateScheduledTaskResponse.
+        r"""Sets the approve_status of this UpdateScheduledTaskResponse.
 
         审批状态
 
@@ -608,7 +608,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @property
     def approve_comments(self):
-        """Gets the approve_comments of this UpdateScheduledTaskResponse.
+        r"""Gets the approve_comments of this UpdateScheduledTaskResponse.
 
         审批意见
 
@@ -619,7 +619,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @approve_comments.setter
     def approve_comments(self, approve_comments):
-        """Sets the approve_comments of this UpdateScheduledTaskResponse.
+        r"""Sets the approve_comments of this UpdateScheduledTaskResponse.
 
         审批意见
 
@@ -630,7 +630,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @property
     def target_instances(self):
-        """Gets the target_instances of this UpdateScheduledTaskResponse.
+        r"""Gets the target_instances of this UpdateScheduledTaskResponse.
 
         目标节点json串
 
@@ -641,7 +641,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @target_instances.setter
     def target_instances(self, target_instances):
-        """Sets the target_instances of this UpdateScheduledTaskResponse.
+        r"""Sets the target_instances of this UpdateScheduledTaskResponse.
 
         目标节点json串
 
@@ -652,7 +652,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @property
     def enable_message_notification(self):
-        """Gets the enable_message_notification of this UpdateScheduledTaskResponse.
+        r"""Gets the enable_message_notification of this UpdateScheduledTaskResponse.
 
         是否启用消息通知
 
@@ -663,7 +663,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @enable_message_notification.setter
     def enable_message_notification(self, enable_message_notification):
-        """Sets the enable_message_notification of this UpdateScheduledTaskResponse.
+        r"""Sets the enable_message_notification of this UpdateScheduledTaskResponse.
 
         是否启用消息通知
 
@@ -674,7 +674,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @property
     def message_notification(self):
-        """Gets the message_notification of this UpdateScheduledTaskResponse.
+        r"""Gets the message_notification of this UpdateScheduledTaskResponse.
 
         :return: The message_notification of this UpdateScheduledTaskResponse.
         :rtype: :class:`huaweicloudsdkcoc.v1.MessageNotification`
@@ -683,7 +683,7 @@ class UpdateScheduledTaskResponse(SdkResponse):
 
     @message_notification.setter
     def message_notification(self, message_notification):
-        """Sets the message_notification of this UpdateScheduledTaskResponse.
+        r"""Sets the message_notification of this UpdateScheduledTaskResponse.
 
         :param message_notification: The message_notification of this UpdateScheduledTaskResponse.
         :type message_notification: :class:`huaweicloudsdkcoc.v1.MessageNotification`

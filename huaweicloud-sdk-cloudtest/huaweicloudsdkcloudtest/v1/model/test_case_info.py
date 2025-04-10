@@ -229,7 +229,7 @@ class TestCaseInfo:
     }
 
     def __init__(self, steps=None, attachments=None, author=None, name=None, rank=None, owner=None, preparation=None, remark=None, stage=None, activity=None, keywords=None, market=None, designer=None, tags=None, region=None, relate_type=None, service_type=None, only_change_script=None, add_to_iterator=None, need_update_relation=None, creation_version_uri=None, number=None, case_type=None, platform_type=None, test_type=None, design_note=None, test_step=None, expect_output=None, env_type=None, exe_platform=None, testcase_project=None, svn_script_path=None, map_restrict=None, network_script_name=None, auto_type=None, to_be_auto_exec=None, last_result=None, last_result_uri=None, feature_uri=None, interface_name=None, snp_no=None, dr_relation_id=None, test_base_num=None, automatically_executed=None, first_execute_time=None, detect_type=None, execute_param=None, test_feature=None, is_contract_testcase=None, time_cost=None, custom_field_1=None, custom_field_2=None, custom_field_3=None, custom_field_4=None, custom_field_5=None, custom_field_6=None, custom_field_7=None, custom_field_8=None, custom_field_9=None, custom_field_10=None, custom_field_11=None, custom_field_12=None, custom_field_13=None, custom_field_14=None, custom_field_15=None, custom_field_16=None, custom_field_17=None, custom_field_18=None, custom_field_19=None, custom_field_20=None, custom_field_21=None, custom_field_22=None, custom_field_23=None, custom_field_24=None, custom_field_25=None, be_auto_type_time=None, compare_number=None, scene_flag=None, base_flag=None, para_validator=None, knet_node_id=None, last_exe_author=None, cloud_carrier=None, market_place=None, test_mind_id=None, test_mind_url=None, commit_url=None, test_pattern_number=None, test_factor_number=None, status_code=None, result_code=None, release_id=None, label_id=None, label_names=None, module_id=None, execute_latest_time=None, execute_duration=None, is_keyword=None, release_dev=None, new_created=None, execute_parameter=None, project_uuid=None, version_uri=None):
-        """TestCaseInfo
+        r"""TestCaseInfo
 
         The model defined in huaweicloud sdk
 
@@ -756,7 +756,7 @@ class TestCaseInfo:
 
     @property
     def steps(self):
-        """Gets the steps of this TestCaseInfo.
+        r"""Gets the steps of this TestCaseInfo.
 
         对外测试步骤
 
@@ -767,7 +767,7 @@ class TestCaseInfo:
 
     @steps.setter
     def steps(self, steps):
-        """Sets the steps of this TestCaseInfo.
+        r"""Sets the steps of this TestCaseInfo.
 
         对外测试步骤
 
@@ -778,7 +778,7 @@ class TestCaseInfo:
 
     @property
     def attachments(self):
-        """Gets the attachments of this TestCaseInfo.
+        r"""Gets the attachments of this TestCaseInfo.
 
         对外附件
 
@@ -789,7 +789,7 @@ class TestCaseInfo:
 
     @attachments.setter
     def attachments(self, attachments):
-        """Sets the attachments of this TestCaseInfo.
+        r"""Sets the attachments of this TestCaseInfo.
 
         对外附件
 
@@ -800,7 +800,7 @@ class TestCaseInfo:
 
     @property
     def author(self):
-        """Gets the author of this TestCaseInfo.
+        r"""Gets the author of this TestCaseInfo.
 
         创建人
 
@@ -811,7 +811,7 @@ class TestCaseInfo:
 
     @author.setter
     def author(self, author):
-        """Sets the author of this TestCaseInfo.
+        r"""Sets the author of this TestCaseInfo.
 
         创建人
 
@@ -822,7 +822,7 @@ class TestCaseInfo:
 
     @property
     def name(self):
-        """Gets the name of this TestCaseInfo.
+        r"""Gets the name of this TestCaseInfo.
 
         名称
 
@@ -833,7 +833,7 @@ class TestCaseInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TestCaseInfo.
+        r"""Sets the name of this TestCaseInfo.
 
         名称
 
@@ -844,7 +844,7 @@ class TestCaseInfo:
 
     @property
     def rank(self):
-        """Gets the rank of this TestCaseInfo.
+        r"""Gets the rank of this TestCaseInfo.
 
         用例等级
 
@@ -855,7 +855,7 @@ class TestCaseInfo:
 
     @rank.setter
     def rank(self, rank):
-        """Sets the rank of this TestCaseInfo.
+        r"""Sets the rank of this TestCaseInfo.
 
         用例等级
 
@@ -866,7 +866,7 @@ class TestCaseInfo:
 
     @property
     def owner(self):
-        """Gets the owner of this TestCaseInfo.
+        r"""Gets the owner of this TestCaseInfo.
 
         处理人
 
@@ -877,7 +877,7 @@ class TestCaseInfo:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this TestCaseInfo.
+        r"""Sets the owner of this TestCaseInfo.
 
         处理人
 
@@ -888,7 +888,7 @@ class TestCaseInfo:
 
     @property
     def preparation(self):
-        """Gets the preparation of this TestCaseInfo.
+        r"""Gets the preparation of this TestCaseInfo.
 
         前置条件
 
@@ -899,7 +899,7 @@ class TestCaseInfo:
 
     @preparation.setter
     def preparation(self, preparation):
-        """Sets the preparation of this TestCaseInfo.
+        r"""Sets the preparation of this TestCaseInfo.
 
         前置条件
 
@@ -910,7 +910,7 @@ class TestCaseInfo:
 
     @property
     def remark(self):
-        """Gets the remark of this TestCaseInfo.
+        r"""Gets the remark of this TestCaseInfo.
 
         备注
 
@@ -921,7 +921,7 @@ class TestCaseInfo:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this TestCaseInfo.
+        r"""Sets the remark of this TestCaseInfo.
 
         备注
 
@@ -932,7 +932,7 @@ class TestCaseInfo:
 
     @property
     def stage(self):
-        """Gets the stage of this TestCaseInfo.
+        r"""Gets the stage of this TestCaseInfo.
 
         测试阶段
 
@@ -943,7 +943,7 @@ class TestCaseInfo:
 
     @stage.setter
     def stage(self, stage):
-        """Sets the stage of this TestCaseInfo.
+        r"""Sets the stage of this TestCaseInfo.
 
         测试阶段
 
@@ -954,7 +954,7 @@ class TestCaseInfo:
 
     @property
     def activity(self):
-        """Gets the activity of this TestCaseInfo.
+        r"""Gets the activity of this TestCaseInfo.
 
         测试类型
 
@@ -965,7 +965,7 @@ class TestCaseInfo:
 
     @activity.setter
     def activity(self, activity):
-        """Sets the activity of this TestCaseInfo.
+        r"""Sets the activity of this TestCaseInfo.
 
         测试类型
 
@@ -976,7 +976,7 @@ class TestCaseInfo:
 
     @property
     def keywords(self):
-        """Gets the keywords of this TestCaseInfo.
+        r"""Gets the keywords of this TestCaseInfo.
 
         关键词
 
@@ -987,7 +987,7 @@ class TestCaseInfo:
 
     @keywords.setter
     def keywords(self, keywords):
-        """Sets the keywords of this TestCaseInfo.
+        r"""Sets the keywords of this TestCaseInfo.
 
         关键词
 
@@ -998,7 +998,7 @@ class TestCaseInfo:
 
     @property
     def market(self):
-        """Gets the market of this TestCaseInfo.
+        r"""Gets the market of this TestCaseInfo.
 
         apitest标记是否代码已提交
 
@@ -1009,7 +1009,7 @@ class TestCaseInfo:
 
     @market.setter
     def market(self, market):
-        """Sets the market of this TestCaseInfo.
+        r"""Sets the market of this TestCaseInfo.
 
         apitest标记是否代码已提交
 
@@ -1020,7 +1020,7 @@ class TestCaseInfo:
 
     @property
     def designer(self):
-        """Gets the designer of this TestCaseInfo.
+        r"""Gets the designer of this TestCaseInfo.
 
         设计者
 
@@ -1031,7 +1031,7 @@ class TestCaseInfo:
 
     @designer.setter
     def designer(self, designer):
-        """Sets the designer of this TestCaseInfo.
+        r"""Sets the designer of this TestCaseInfo.
 
         设计者
 
@@ -1042,7 +1042,7 @@ class TestCaseInfo:
 
     @property
     def tags(self):
-        """Gets the tags of this TestCaseInfo.
+        r"""Gets the tags of this TestCaseInfo.
 
         标签
 
@@ -1053,7 +1053,7 @@ class TestCaseInfo:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this TestCaseInfo.
+        r"""Sets the tags of this TestCaseInfo.
 
         标签
 
@@ -1064,7 +1064,7 @@ class TestCaseInfo:
 
     @property
     def region(self):
-        """Gets the region of this TestCaseInfo.
+        r"""Gets the region of this TestCaseInfo.
 
         逻辑region，外部使用公有云实际区域，内部使用默认值
 
@@ -1075,7 +1075,7 @@ class TestCaseInfo:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this TestCaseInfo.
+        r"""Sets the region of this TestCaseInfo.
 
         逻辑region，外部使用公有云实际区域，内部使用默认值
 
@@ -1086,7 +1086,7 @@ class TestCaseInfo:
 
     @property
     def relate_type(self):
-        """Gets the relate_type of this TestCaseInfo.
+        r"""Gets the relate_type of this TestCaseInfo.
 
         对外关联资源类型
 
@@ -1097,7 +1097,7 @@ class TestCaseInfo:
 
     @relate_type.setter
     def relate_type(self, relate_type):
-        """Sets the relate_type of this TestCaseInfo.
+        r"""Sets the relate_type of this TestCaseInfo.
 
         对外关联资源类型
 
@@ -1108,7 +1108,7 @@ class TestCaseInfo:
 
     @property
     def service_type(self):
-        """Gets the service_type of this TestCaseInfo.
+        r"""Gets the service_type of this TestCaseInfo.
 
         服务类型
 
@@ -1119,7 +1119,7 @@ class TestCaseInfo:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this TestCaseInfo.
+        r"""Sets the service_type of this TestCaseInfo.
 
         服务类型
 
@@ -1130,7 +1130,7 @@ class TestCaseInfo:
 
     @property
     def only_change_script(self):
-        """Gets the only_change_script of this TestCaseInfo.
+        r"""Gets the only_change_script of this TestCaseInfo.
 
         对外只更新接口用例的java脚本路径标识
 
@@ -1141,7 +1141,7 @@ class TestCaseInfo:
 
     @only_change_script.setter
     def only_change_script(self, only_change_script):
-        """Sets the only_change_script of this TestCaseInfo.
+        r"""Sets the only_change_script of this TestCaseInfo.
 
         对外只更新接口用例的java脚本路径标识
 
@@ -1152,7 +1152,7 @@ class TestCaseInfo:
 
     @property
     def add_to_iterator(self):
-        """Gets the add_to_iterator of this TestCaseInfo.
+        r"""Gets the add_to_iterator of this TestCaseInfo.
 
         对外需求添加到迭代标识
 
@@ -1163,7 +1163,7 @@ class TestCaseInfo:
 
     @add_to_iterator.setter
     def add_to_iterator(self, add_to_iterator):
-        """Sets the add_to_iterator of this TestCaseInfo.
+        r"""Sets the add_to_iterator of this TestCaseInfo.
 
         对外需求添加到迭代标识
 
@@ -1174,7 +1174,7 @@ class TestCaseInfo:
 
     @property
     def need_update_relation(self):
-        """Gets the need_update_relation of this TestCaseInfo.
+        r"""Gets the need_update_relation of this TestCaseInfo.
 
         是否修改关联关系
 
@@ -1185,7 +1185,7 @@ class TestCaseInfo:
 
     @need_update_relation.setter
     def need_update_relation(self, need_update_relation):
-        """Sets the need_update_relation of this TestCaseInfo.
+        r"""Sets the need_update_relation of this TestCaseInfo.
 
         是否修改关联关系
 
@@ -1196,7 +1196,7 @@ class TestCaseInfo:
 
     @property
     def creation_version_uri(self):
-        """Gets the creation_version_uri of this TestCaseInfo.
+        r"""Gets the creation_version_uri of this TestCaseInfo.
 
         创建版本Uri
 
@@ -1207,7 +1207,7 @@ class TestCaseInfo:
 
     @creation_version_uri.setter
     def creation_version_uri(self, creation_version_uri):
-        """Sets the creation_version_uri of this TestCaseInfo.
+        r"""Sets the creation_version_uri of this TestCaseInfo.
 
         创建版本Uri
 
@@ -1218,7 +1218,7 @@ class TestCaseInfo:
 
     @property
     def number(self):
-        """Gets the number of this TestCaseInfo.
+        r"""Gets the number of this TestCaseInfo.
 
         用例编号
 
@@ -1229,7 +1229,7 @@ class TestCaseInfo:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this TestCaseInfo.
+        r"""Sets the number of this TestCaseInfo.
 
         用例编号
 
@@ -1240,7 +1240,7 @@ class TestCaseInfo:
 
     @property
     def case_type(self):
-        """Gets the case_type of this TestCaseInfo.
+        r"""Gets the case_type of this TestCaseInfo.
 
         用例类型
 
@@ -1251,7 +1251,7 @@ class TestCaseInfo:
 
     @case_type.setter
     def case_type(self, case_type):
-        """Sets the case_type of this TestCaseInfo.
+        r"""Sets the case_type of this TestCaseInfo.
 
         用例类型
 
@@ -1262,7 +1262,7 @@ class TestCaseInfo:
 
     @property
     def platform_type(self):
-        """Gets the platform_type of this TestCaseInfo.
+        r"""Gets the platform_type of this TestCaseInfo.
 
         执行平台类型
 
@@ -1273,7 +1273,7 @@ class TestCaseInfo:
 
     @platform_type.setter
     def platform_type(self, platform_type):
-        """Sets the platform_type of this TestCaseInfo.
+        r"""Sets the platform_type of this TestCaseInfo.
 
         执行平台类型
 
@@ -1284,7 +1284,7 @@ class TestCaseInfo:
 
     @property
     def test_type(self):
-        """Gets the test_type of this TestCaseInfo.
+        r"""Gets the test_type of this TestCaseInfo.
 
         测试类型
 
@@ -1295,7 +1295,7 @@ class TestCaseInfo:
 
     @test_type.setter
     def test_type(self, test_type):
-        """Sets the test_type of this TestCaseInfo.
+        r"""Sets the test_type of this TestCaseInfo.
 
         测试类型
 
@@ -1306,7 +1306,7 @@ class TestCaseInfo:
 
     @property
     def design_note(self):
-        """Gets the design_note of this TestCaseInfo.
+        r"""Gets the design_note of this TestCaseInfo.
 
         设计描述
 
@@ -1317,7 +1317,7 @@ class TestCaseInfo:
 
     @design_note.setter
     def design_note(self, design_note):
-        """Sets the design_note of this TestCaseInfo.
+        r"""Sets the design_note of this TestCaseInfo.
 
         设计描述
 
@@ -1328,7 +1328,7 @@ class TestCaseInfo:
 
     @property
     def test_step(self):
-        """Gets the test_step of this TestCaseInfo.
+        r"""Gets the test_step of this TestCaseInfo.
 
         测试步骤
 
@@ -1339,7 +1339,7 @@ class TestCaseInfo:
 
     @test_step.setter
     def test_step(self, test_step):
-        """Sets the test_step of this TestCaseInfo.
+        r"""Sets the test_step of this TestCaseInfo.
 
         测试步骤
 
@@ -1350,7 +1350,7 @@ class TestCaseInfo:
 
     @property
     def expect_output(self):
-        """Gets the expect_output of this TestCaseInfo.
+        r"""Gets the expect_output of this TestCaseInfo.
 
         期望结果
 
@@ -1361,7 +1361,7 @@ class TestCaseInfo:
 
     @expect_output.setter
     def expect_output(self, expect_output):
-        """Sets the expect_output of this TestCaseInfo.
+        r"""Sets the expect_output of this TestCaseInfo.
 
         期望结果
 
@@ -1372,7 +1372,7 @@ class TestCaseInfo:
 
     @property
     def env_type(self):
-        """Gets the env_type of this TestCaseInfo.
+        r"""Gets the env_type of this TestCaseInfo.
 
         测试环境类型
 
@@ -1383,7 +1383,7 @@ class TestCaseInfo:
 
     @env_type.setter
     def env_type(self, env_type):
-        """Sets the env_type of this TestCaseInfo.
+        r"""Sets the env_type of this TestCaseInfo.
 
         测试环境类型
 
@@ -1394,7 +1394,7 @@ class TestCaseInfo:
 
     @property
     def exe_platform(self):
-        """Gets the exe_platform of this TestCaseInfo.
+        r"""Gets the exe_platform of this TestCaseInfo.
 
         执行平台
 
@@ -1405,7 +1405,7 @@ class TestCaseInfo:
 
     @exe_platform.setter
     def exe_platform(self, exe_platform):
-        """Sets the exe_platform of this TestCaseInfo.
+        r"""Sets the exe_platform of this TestCaseInfo.
 
         执行平台
 
@@ -1416,7 +1416,7 @@ class TestCaseInfo:
 
     @property
     def testcase_project(self):
-        """Gets the testcase_project of this TestCaseInfo.
+        r"""Gets the testcase_project of this TestCaseInfo.
 
         测试工程
 
@@ -1427,7 +1427,7 @@ class TestCaseInfo:
 
     @testcase_project.setter
     def testcase_project(self, testcase_project):
-        """Sets the testcase_project of this TestCaseInfo.
+        r"""Sets the testcase_project of this TestCaseInfo.
 
         测试工程
 
@@ -1438,7 +1438,7 @@ class TestCaseInfo:
 
     @property
     def svn_script_path(self):
-        """Gets the svn_script_path of this TestCaseInfo.
+        r"""Gets the svn_script_path of this TestCaseInfo.
 
         脚本路径
 
@@ -1449,7 +1449,7 @@ class TestCaseInfo:
 
     @svn_script_path.setter
     def svn_script_path(self, svn_script_path):
-        """Sets the svn_script_path of this TestCaseInfo.
+        r"""Sets the svn_script_path of this TestCaseInfo.
 
         脚本路径
 
@@ -1460,7 +1460,7 @@ class TestCaseInfo:
 
     @property
     def map_restrict(self):
-        """Gets the map_restrict of this TestCaseInfo.
+        r"""Gets the map_restrict of this TestCaseInfo.
 
         约束条件
 
@@ -1471,7 +1471,7 @@ class TestCaseInfo:
 
     @map_restrict.setter
     def map_restrict(self, map_restrict):
-        """Sets the map_restrict of this TestCaseInfo.
+        r"""Sets the map_restrict of this TestCaseInfo.
 
         约束条件
 
@@ -1482,7 +1482,7 @@ class TestCaseInfo:
 
     @property
     def network_script_name(self):
-        """Gets the network_script_name of this TestCaseInfo.
+        r"""Gets the network_script_name of this TestCaseInfo.
 
         网络脚本名
 
@@ -1493,7 +1493,7 @@ class TestCaseInfo:
 
     @network_script_name.setter
     def network_script_name(self, network_script_name):
-        """Sets the network_script_name of this TestCaseInfo.
+        r"""Sets the network_script_name of this TestCaseInfo.
 
         网络脚本名
 
@@ -1504,7 +1504,7 @@ class TestCaseInfo:
 
     @property
     def auto_type(self):
-        """Gets the auto_type of this TestCaseInfo.
+        r"""Gets the auto_type of this TestCaseInfo.
 
         自动化类型，非自动化:0, 是自动化:1
 
@@ -1515,7 +1515,7 @@ class TestCaseInfo:
 
     @auto_type.setter
     def auto_type(self, auto_type):
-        """Sets the auto_type of this TestCaseInfo.
+        r"""Sets the auto_type of this TestCaseInfo.
 
         自动化类型，非自动化:0, 是自动化:1
 
@@ -1526,7 +1526,7 @@ class TestCaseInfo:
 
     @property
     def to_be_auto_exec(self):
-        """Gets the to_be_auto_exec of this TestCaseInfo.
+        r"""Gets the to_be_auto_exec of this TestCaseInfo.
 
         被自动化执行
 
@@ -1537,7 +1537,7 @@ class TestCaseInfo:
 
     @to_be_auto_exec.setter
     def to_be_auto_exec(self, to_be_auto_exec):
-        """Sets the to_be_auto_exec of this TestCaseInfo.
+        r"""Sets the to_be_auto_exec of this TestCaseInfo.
 
         被自动化执行
 
@@ -1548,7 +1548,7 @@ class TestCaseInfo:
 
     @property
     def last_result(self):
-        """Gets the last_result of this TestCaseInfo.
+        r"""Gets the last_result of this TestCaseInfo.
 
         最后一次结果
 
@@ -1559,7 +1559,7 @@ class TestCaseInfo:
 
     @last_result.setter
     def last_result(self, last_result):
-        """Sets the last_result of this TestCaseInfo.
+        r"""Sets the last_result of this TestCaseInfo.
 
         最后一次结果
 
@@ -1570,7 +1570,7 @@ class TestCaseInfo:
 
     @property
     def last_result_uri(self):
-        """Gets the last_result_uri of this TestCaseInfo.
+        r"""Gets the last_result_uri of this TestCaseInfo.
 
         最后一次结果Uri
 
@@ -1581,7 +1581,7 @@ class TestCaseInfo:
 
     @last_result_uri.setter
     def last_result_uri(self, last_result_uri):
-        """Sets the last_result_uri of this TestCaseInfo.
+        r"""Sets the last_result_uri of this TestCaseInfo.
 
         最后一次结果Uri
 
@@ -1592,7 +1592,7 @@ class TestCaseInfo:
 
     @property
     def feature_uri(self):
-        """Gets the feature_uri of this TestCaseInfo.
+        r"""Gets the feature_uri of this TestCaseInfo.
 
         目录Uri
 
@@ -1603,7 +1603,7 @@ class TestCaseInfo:
 
     @feature_uri.setter
     def feature_uri(self, feature_uri):
-        """Sets the feature_uri of this TestCaseInfo.
+        r"""Sets the feature_uri of this TestCaseInfo.
 
         目录Uri
 
@@ -1614,7 +1614,7 @@ class TestCaseInfo:
 
     @property
     def interface_name(self):
-        """Gets the interface_name of this TestCaseInfo.
+        r"""Gets the interface_name of this TestCaseInfo.
 
         测试接口名
 
@@ -1625,7 +1625,7 @@ class TestCaseInfo:
 
     @interface_name.setter
     def interface_name(self, interface_name):
-        """Sets the interface_name of this TestCaseInfo.
+        r"""Sets the interface_name of this TestCaseInfo.
 
         测试接口名
 
@@ -1636,7 +1636,7 @@ class TestCaseInfo:
 
     @property
     def snp_no(self):
-        """Gets the snp_no of this TestCaseInfo.
+        r"""Gets the snp_no of this TestCaseInfo.
 
         网络问题ID
 
@@ -1647,7 +1647,7 @@ class TestCaseInfo:
 
     @snp_no.setter
     def snp_no(self, snp_no):
-        """Sets the snp_no of this TestCaseInfo.
+        r"""Sets the snp_no of this TestCaseInfo.
 
         网络问题ID
 
@@ -1658,7 +1658,7 @@ class TestCaseInfo:
 
     @property
     def dr_relation_id(self):
-        """Gets the dr_relation_id of this TestCaseInfo.
+        r"""Gets the dr_relation_id of this TestCaseInfo.
 
         关联需求编号
 
@@ -1669,7 +1669,7 @@ class TestCaseInfo:
 
     @dr_relation_id.setter
     def dr_relation_id(self, dr_relation_id):
-        """Sets the dr_relation_id of this TestCaseInfo.
+        r"""Sets the dr_relation_id of this TestCaseInfo.
 
         关联需求编号
 
@@ -1680,7 +1680,7 @@ class TestCaseInfo:
 
     @property
     def test_base_num(self):
-        """Gets the test_base_num of this TestCaseInfo.
+        r"""Gets the test_base_num of this TestCaseInfo.
 
         测试基数
 
@@ -1691,7 +1691,7 @@ class TestCaseInfo:
 
     @test_base_num.setter
     def test_base_num(self, test_base_num):
-        """Sets the test_base_num of this TestCaseInfo.
+        r"""Sets the test_base_num of this TestCaseInfo.
 
         测试基数
 
@@ -1702,7 +1702,7 @@ class TestCaseInfo:
 
     @property
     def automatically_executed(self):
-        """Gets the automatically_executed of this TestCaseInfo.
+        r"""Gets the automatically_executed of this TestCaseInfo.
 
         是否被自动化执行
 
@@ -1713,7 +1713,7 @@ class TestCaseInfo:
 
     @automatically_executed.setter
     def automatically_executed(self, automatically_executed):
-        """Sets the automatically_executed of this TestCaseInfo.
+        r"""Sets the automatically_executed of this TestCaseInfo.
 
         是否被自动化执行
 
@@ -1724,7 +1724,7 @@ class TestCaseInfo:
 
     @property
     def first_execute_time(self):
-        """Gets the first_execute_time of this TestCaseInfo.
+        r"""Gets the first_execute_time of this TestCaseInfo.
 
         第一次执行时间
 
@@ -1735,7 +1735,7 @@ class TestCaseInfo:
 
     @first_execute_time.setter
     def first_execute_time(self, first_execute_time):
-        """Sets the first_execute_time of this TestCaseInfo.
+        r"""Sets the first_execute_time of this TestCaseInfo.
 
         第一次执行时间
 
@@ -1746,7 +1746,7 @@ class TestCaseInfo:
 
     @property
     def detect_type(self):
-        """Gets the detect_type of this TestCaseInfo.
+        r"""Gets the detect_type of this TestCaseInfo.
 
         检测类型
 
@@ -1757,7 +1757,7 @@ class TestCaseInfo:
 
     @detect_type.setter
     def detect_type(self, detect_type):
-        """Sets the detect_type of this TestCaseInfo.
+        r"""Sets the detect_type of this TestCaseInfo.
 
         检测类型
 
@@ -1768,7 +1768,7 @@ class TestCaseInfo:
 
     @property
     def execute_param(self):
-        """Gets the execute_param of this TestCaseInfo.
+        r"""Gets the execute_param of this TestCaseInfo.
 
         执行参数
 
@@ -1779,7 +1779,7 @@ class TestCaseInfo:
 
     @execute_param.setter
     def execute_param(self, execute_param):
-        """Sets the execute_param of this TestCaseInfo.
+        r"""Sets the execute_param of this TestCaseInfo.
 
         执行参数
 
@@ -1790,7 +1790,7 @@ class TestCaseInfo:
 
     @property
     def test_feature(self):
-        """Gets the test_feature of this TestCaseInfo.
+        r"""Gets the test_feature of this TestCaseInfo.
 
         分析领域
 
@@ -1801,7 +1801,7 @@ class TestCaseInfo:
 
     @test_feature.setter
     def test_feature(self, test_feature):
-        """Sets the test_feature of this TestCaseInfo.
+        r"""Sets the test_feature of this TestCaseInfo.
 
         分析领域
 
@@ -1812,7 +1812,7 @@ class TestCaseInfo:
 
     @property
     def is_contract_testcase(self):
-        """Gets the is_contract_testcase of this TestCaseInfo.
+        r"""Gets the is_contract_testcase of this TestCaseInfo.
 
         是否是契约用例，0:表示非契约用例, 1：表示契约用例
 
@@ -1823,7 +1823,7 @@ class TestCaseInfo:
 
     @is_contract_testcase.setter
     def is_contract_testcase(self, is_contract_testcase):
-        """Sets the is_contract_testcase of this TestCaseInfo.
+        r"""Sets the is_contract_testcase of this TestCaseInfo.
 
         是否是契约用例，0:表示非契约用例, 1：表示契约用例
 
@@ -1834,7 +1834,7 @@ class TestCaseInfo:
 
     @property
     def time_cost(self):
-        """Gets the time_cost of this TestCaseInfo.
+        r"""Gets the time_cost of this TestCaseInfo.
 
         总共耗时
 
@@ -1845,7 +1845,7 @@ class TestCaseInfo:
 
     @time_cost.setter
     def time_cost(self, time_cost):
-        """Sets the time_cost of this TestCaseInfo.
+        r"""Sets the time_cost of this TestCaseInfo.
 
         总共耗时
 
@@ -1856,7 +1856,7 @@ class TestCaseInfo:
 
     @property
     def custom_field_1(self):
-        """Gets the custom_field_1 of this TestCaseInfo.
+        r"""Gets the custom_field_1 of this TestCaseInfo.
 
         自定义字段1
 
@@ -1867,7 +1867,7 @@ class TestCaseInfo:
 
     @custom_field_1.setter
     def custom_field_1(self, custom_field_1):
-        """Sets the custom_field_1 of this TestCaseInfo.
+        r"""Sets the custom_field_1 of this TestCaseInfo.
 
         自定义字段1
 
@@ -1878,7 +1878,7 @@ class TestCaseInfo:
 
     @property
     def custom_field_2(self):
-        """Gets the custom_field_2 of this TestCaseInfo.
+        r"""Gets the custom_field_2 of this TestCaseInfo.
 
         自定义字段2
 
@@ -1889,7 +1889,7 @@ class TestCaseInfo:
 
     @custom_field_2.setter
     def custom_field_2(self, custom_field_2):
-        """Sets the custom_field_2 of this TestCaseInfo.
+        r"""Sets the custom_field_2 of this TestCaseInfo.
 
         自定义字段2
 
@@ -1900,7 +1900,7 @@ class TestCaseInfo:
 
     @property
     def custom_field_3(self):
-        """Gets the custom_field_3 of this TestCaseInfo.
+        r"""Gets the custom_field_3 of this TestCaseInfo.
 
         自定义字段3
 
@@ -1911,7 +1911,7 @@ class TestCaseInfo:
 
     @custom_field_3.setter
     def custom_field_3(self, custom_field_3):
-        """Sets the custom_field_3 of this TestCaseInfo.
+        r"""Sets the custom_field_3 of this TestCaseInfo.
 
         自定义字段3
 
@@ -1922,7 +1922,7 @@ class TestCaseInfo:
 
     @property
     def custom_field_4(self):
-        """Gets the custom_field_4 of this TestCaseInfo.
+        r"""Gets the custom_field_4 of this TestCaseInfo.
 
         自定义字段4
 
@@ -1933,7 +1933,7 @@ class TestCaseInfo:
 
     @custom_field_4.setter
     def custom_field_4(self, custom_field_4):
-        """Sets the custom_field_4 of this TestCaseInfo.
+        r"""Sets the custom_field_4 of this TestCaseInfo.
 
         自定义字段4
 
@@ -1944,7 +1944,7 @@ class TestCaseInfo:
 
     @property
     def custom_field_5(self):
-        """Gets the custom_field_5 of this TestCaseInfo.
+        r"""Gets the custom_field_5 of this TestCaseInfo.
 
         自定义字段5
 
@@ -1955,7 +1955,7 @@ class TestCaseInfo:
 
     @custom_field_5.setter
     def custom_field_5(self, custom_field_5):
-        """Sets the custom_field_5 of this TestCaseInfo.
+        r"""Sets the custom_field_5 of this TestCaseInfo.
 
         自定义字段5
 
@@ -1966,7 +1966,7 @@ class TestCaseInfo:
 
     @property
     def custom_field_6(self):
-        """Gets the custom_field_6 of this TestCaseInfo.
+        r"""Gets the custom_field_6 of this TestCaseInfo.
 
         自定义字段6
 
@@ -1977,7 +1977,7 @@ class TestCaseInfo:
 
     @custom_field_6.setter
     def custom_field_6(self, custom_field_6):
-        """Sets the custom_field_6 of this TestCaseInfo.
+        r"""Sets the custom_field_6 of this TestCaseInfo.
 
         自定义字段6
 
@@ -1988,7 +1988,7 @@ class TestCaseInfo:
 
     @property
     def custom_field_7(self):
-        """Gets the custom_field_7 of this TestCaseInfo.
+        r"""Gets the custom_field_7 of this TestCaseInfo.
 
         自定义字段7
 
@@ -1999,7 +1999,7 @@ class TestCaseInfo:
 
     @custom_field_7.setter
     def custom_field_7(self, custom_field_7):
-        """Sets the custom_field_7 of this TestCaseInfo.
+        r"""Sets the custom_field_7 of this TestCaseInfo.
 
         自定义字段7
 
@@ -2010,7 +2010,7 @@ class TestCaseInfo:
 
     @property
     def custom_field_8(self):
-        """Gets the custom_field_8 of this TestCaseInfo.
+        r"""Gets the custom_field_8 of this TestCaseInfo.
 
         自定义字段8
 
@@ -2021,7 +2021,7 @@ class TestCaseInfo:
 
     @custom_field_8.setter
     def custom_field_8(self, custom_field_8):
-        """Sets the custom_field_8 of this TestCaseInfo.
+        r"""Sets the custom_field_8 of this TestCaseInfo.
 
         自定义字段8
 
@@ -2032,7 +2032,7 @@ class TestCaseInfo:
 
     @property
     def custom_field_9(self):
-        """Gets the custom_field_9 of this TestCaseInfo.
+        r"""Gets the custom_field_9 of this TestCaseInfo.
 
         自定义字段9
 
@@ -2043,7 +2043,7 @@ class TestCaseInfo:
 
     @custom_field_9.setter
     def custom_field_9(self, custom_field_9):
-        """Sets the custom_field_9 of this TestCaseInfo.
+        r"""Sets the custom_field_9 of this TestCaseInfo.
 
         自定义字段9
 
@@ -2054,7 +2054,7 @@ class TestCaseInfo:
 
     @property
     def custom_field_10(self):
-        """Gets the custom_field_10 of this TestCaseInfo.
+        r"""Gets the custom_field_10 of this TestCaseInfo.
 
         自定义字段10
 
@@ -2065,7 +2065,7 @@ class TestCaseInfo:
 
     @custom_field_10.setter
     def custom_field_10(self, custom_field_10):
-        """Sets the custom_field_10 of this TestCaseInfo.
+        r"""Sets the custom_field_10 of this TestCaseInfo.
 
         自定义字段10
 
@@ -2076,7 +2076,7 @@ class TestCaseInfo:
 
     @property
     def custom_field_11(self):
-        """Gets the custom_field_11 of this TestCaseInfo.
+        r"""Gets the custom_field_11 of this TestCaseInfo.
 
         自定义字段11
 
@@ -2087,7 +2087,7 @@ class TestCaseInfo:
 
     @custom_field_11.setter
     def custom_field_11(self, custom_field_11):
-        """Sets the custom_field_11 of this TestCaseInfo.
+        r"""Sets the custom_field_11 of this TestCaseInfo.
 
         自定义字段11
 
@@ -2098,7 +2098,7 @@ class TestCaseInfo:
 
     @property
     def custom_field_12(self):
-        """Gets the custom_field_12 of this TestCaseInfo.
+        r"""Gets the custom_field_12 of this TestCaseInfo.
 
         自定义字段12
 
@@ -2109,7 +2109,7 @@ class TestCaseInfo:
 
     @custom_field_12.setter
     def custom_field_12(self, custom_field_12):
-        """Sets the custom_field_12 of this TestCaseInfo.
+        r"""Sets the custom_field_12 of this TestCaseInfo.
 
         自定义字段12
 
@@ -2120,7 +2120,7 @@ class TestCaseInfo:
 
     @property
     def custom_field_13(self):
-        """Gets the custom_field_13 of this TestCaseInfo.
+        r"""Gets the custom_field_13 of this TestCaseInfo.
 
         自定义字段13
 
@@ -2131,7 +2131,7 @@ class TestCaseInfo:
 
     @custom_field_13.setter
     def custom_field_13(self, custom_field_13):
-        """Sets the custom_field_13 of this TestCaseInfo.
+        r"""Sets the custom_field_13 of this TestCaseInfo.
 
         自定义字段13
 
@@ -2142,7 +2142,7 @@ class TestCaseInfo:
 
     @property
     def custom_field_14(self):
-        """Gets the custom_field_14 of this TestCaseInfo.
+        r"""Gets the custom_field_14 of this TestCaseInfo.
 
         自定义字段14
 
@@ -2153,7 +2153,7 @@ class TestCaseInfo:
 
     @custom_field_14.setter
     def custom_field_14(self, custom_field_14):
-        """Sets the custom_field_14 of this TestCaseInfo.
+        r"""Sets the custom_field_14 of this TestCaseInfo.
 
         自定义字段14
 
@@ -2164,7 +2164,7 @@ class TestCaseInfo:
 
     @property
     def custom_field_15(self):
-        """Gets the custom_field_15 of this TestCaseInfo.
+        r"""Gets the custom_field_15 of this TestCaseInfo.
 
         自定义字段15
 
@@ -2175,7 +2175,7 @@ class TestCaseInfo:
 
     @custom_field_15.setter
     def custom_field_15(self, custom_field_15):
-        """Sets the custom_field_15 of this TestCaseInfo.
+        r"""Sets the custom_field_15 of this TestCaseInfo.
 
         自定义字段15
 
@@ -2186,7 +2186,7 @@ class TestCaseInfo:
 
     @property
     def custom_field_16(self):
-        """Gets the custom_field_16 of this TestCaseInfo.
+        r"""Gets the custom_field_16 of this TestCaseInfo.
 
         自定义字段16
 
@@ -2197,7 +2197,7 @@ class TestCaseInfo:
 
     @custom_field_16.setter
     def custom_field_16(self, custom_field_16):
-        """Sets the custom_field_16 of this TestCaseInfo.
+        r"""Sets the custom_field_16 of this TestCaseInfo.
 
         自定义字段16
 
@@ -2208,7 +2208,7 @@ class TestCaseInfo:
 
     @property
     def custom_field_17(self):
-        """Gets the custom_field_17 of this TestCaseInfo.
+        r"""Gets the custom_field_17 of this TestCaseInfo.
 
         自定义字段17
 
@@ -2219,7 +2219,7 @@ class TestCaseInfo:
 
     @custom_field_17.setter
     def custom_field_17(self, custom_field_17):
-        """Sets the custom_field_17 of this TestCaseInfo.
+        r"""Sets the custom_field_17 of this TestCaseInfo.
 
         自定义字段17
 
@@ -2230,7 +2230,7 @@ class TestCaseInfo:
 
     @property
     def custom_field_18(self):
-        """Gets the custom_field_18 of this TestCaseInfo.
+        r"""Gets the custom_field_18 of this TestCaseInfo.
 
         自定义字段18
 
@@ -2241,7 +2241,7 @@ class TestCaseInfo:
 
     @custom_field_18.setter
     def custom_field_18(self, custom_field_18):
-        """Sets the custom_field_18 of this TestCaseInfo.
+        r"""Sets the custom_field_18 of this TestCaseInfo.
 
         自定义字段18
 
@@ -2252,7 +2252,7 @@ class TestCaseInfo:
 
     @property
     def custom_field_19(self):
-        """Gets the custom_field_19 of this TestCaseInfo.
+        r"""Gets the custom_field_19 of this TestCaseInfo.
 
         自定义字段19
 
@@ -2263,7 +2263,7 @@ class TestCaseInfo:
 
     @custom_field_19.setter
     def custom_field_19(self, custom_field_19):
-        """Sets the custom_field_19 of this TestCaseInfo.
+        r"""Sets the custom_field_19 of this TestCaseInfo.
 
         自定义字段19
 
@@ -2274,7 +2274,7 @@ class TestCaseInfo:
 
     @property
     def custom_field_20(self):
-        """Gets the custom_field_20 of this TestCaseInfo.
+        r"""Gets the custom_field_20 of this TestCaseInfo.
 
         自定义字段20
 
@@ -2285,7 +2285,7 @@ class TestCaseInfo:
 
     @custom_field_20.setter
     def custom_field_20(self, custom_field_20):
-        """Sets the custom_field_20 of this TestCaseInfo.
+        r"""Sets the custom_field_20 of this TestCaseInfo.
 
         自定义字段20
 
@@ -2296,7 +2296,7 @@ class TestCaseInfo:
 
     @property
     def custom_field_21(self):
-        """Gets the custom_field_21 of this TestCaseInfo.
+        r"""Gets the custom_field_21 of this TestCaseInfo.
 
         自定义字段21
 
@@ -2307,7 +2307,7 @@ class TestCaseInfo:
 
     @custom_field_21.setter
     def custom_field_21(self, custom_field_21):
-        """Sets the custom_field_21 of this TestCaseInfo.
+        r"""Sets the custom_field_21 of this TestCaseInfo.
 
         自定义字段21
 
@@ -2318,7 +2318,7 @@ class TestCaseInfo:
 
     @property
     def custom_field_22(self):
-        """Gets the custom_field_22 of this TestCaseInfo.
+        r"""Gets the custom_field_22 of this TestCaseInfo.
 
         自定义字段22
 
@@ -2329,7 +2329,7 @@ class TestCaseInfo:
 
     @custom_field_22.setter
     def custom_field_22(self, custom_field_22):
-        """Sets the custom_field_22 of this TestCaseInfo.
+        r"""Sets the custom_field_22 of this TestCaseInfo.
 
         自定义字段22
 
@@ -2340,7 +2340,7 @@ class TestCaseInfo:
 
     @property
     def custom_field_23(self):
-        """Gets the custom_field_23 of this TestCaseInfo.
+        r"""Gets the custom_field_23 of this TestCaseInfo.
 
         自定义字段23
 
@@ -2351,7 +2351,7 @@ class TestCaseInfo:
 
     @custom_field_23.setter
     def custom_field_23(self, custom_field_23):
-        """Sets the custom_field_23 of this TestCaseInfo.
+        r"""Sets the custom_field_23 of this TestCaseInfo.
 
         自定义字段23
 
@@ -2362,7 +2362,7 @@ class TestCaseInfo:
 
     @property
     def custom_field_24(self):
-        """Gets the custom_field_24 of this TestCaseInfo.
+        r"""Gets the custom_field_24 of this TestCaseInfo.
 
         自定义字段24
 
@@ -2373,7 +2373,7 @@ class TestCaseInfo:
 
     @custom_field_24.setter
     def custom_field_24(self, custom_field_24):
-        """Sets the custom_field_24 of this TestCaseInfo.
+        r"""Sets the custom_field_24 of this TestCaseInfo.
 
         自定义字段24
 
@@ -2384,7 +2384,7 @@ class TestCaseInfo:
 
     @property
     def custom_field_25(self):
-        """Gets the custom_field_25 of this TestCaseInfo.
+        r"""Gets the custom_field_25 of this TestCaseInfo.
 
         自定义字段25
 
@@ -2395,7 +2395,7 @@ class TestCaseInfo:
 
     @custom_field_25.setter
     def custom_field_25(self, custom_field_25):
-        """Sets the custom_field_25 of this TestCaseInfo.
+        r"""Sets the custom_field_25 of this TestCaseInfo.
 
         自定义字段25
 
@@ -2406,7 +2406,7 @@ class TestCaseInfo:
 
     @property
     def be_auto_type_time(self):
-        """Gets the be_auto_type_time of this TestCaseInfo.
+        r"""Gets the be_auto_type_time of this TestCaseInfo.
 
         记录用例由非自动化变为自动化类型的时间
 
@@ -2417,7 +2417,7 @@ class TestCaseInfo:
 
     @be_auto_type_time.setter
     def be_auto_type_time(self, be_auto_type_time):
-        """Sets the be_auto_type_time of this TestCaseInfo.
+        r"""Sets the be_auto_type_time of this TestCaseInfo.
 
         记录用例由非自动化变为自动化类型的时间
 
@@ -2428,7 +2428,7 @@ class TestCaseInfo:
 
     @property
     def compare_number(self):
-        """Gets the compare_number of this TestCaseInfo.
+        r"""Gets the compare_number of this TestCaseInfo.
 
         配对用例编号
 
@@ -2439,7 +2439,7 @@ class TestCaseInfo:
 
     @compare_number.setter
     def compare_number(self, compare_number):
-        """Sets the compare_number of this TestCaseInfo.
+        r"""Sets the compare_number of this TestCaseInfo.
 
         配对用例编号
 
@@ -2450,7 +2450,7 @@ class TestCaseInfo:
 
     @property
     def scene_flag(self):
-        """Gets the scene_flag of this TestCaseInfo.
+        r"""Gets the scene_flag of this TestCaseInfo.
 
         场景标识
 
@@ -2461,7 +2461,7 @@ class TestCaseInfo:
 
     @scene_flag.setter
     def scene_flag(self, scene_flag):
-        """Sets the scene_flag of this TestCaseInfo.
+        r"""Sets the scene_flag of this TestCaseInfo.
 
         场景标识
 
@@ -2472,7 +2472,7 @@ class TestCaseInfo:
 
     @property
     def base_flag(self):
-        """Gets the base_flag of this TestCaseInfo.
+        r"""Gets the base_flag of this TestCaseInfo.
 
         场景标识
 
@@ -2483,7 +2483,7 @@ class TestCaseInfo:
 
     @base_flag.setter
     def base_flag(self, base_flag):
-        """Sets the base_flag of this TestCaseInfo.
+        r"""Sets the base_flag of this TestCaseInfo.
 
         场景标识
 
@@ -2494,7 +2494,7 @@ class TestCaseInfo:
 
     @property
     def para_validator(self):
-        """Gets the para_validator of this TestCaseInfo.
+        r"""Gets the para_validator of this TestCaseInfo.
 
         区别是否从yaml中生成的用例，默认false
 
@@ -2505,7 +2505,7 @@ class TestCaseInfo:
 
     @para_validator.setter
     def para_validator(self, para_validator):
-        """Sets the para_validator of this TestCaseInfo.
+        r"""Sets the para_validator of this TestCaseInfo.
 
         区别是否从yaml中生成的用例，默认false
 
@@ -2516,7 +2516,7 @@ class TestCaseInfo:
 
     @property
     def knet_node_id(self):
-        """Gets the knet_node_id of this TestCaseInfo.
+        r"""Gets the knet_node_id of this TestCaseInfo.
 
         knet节点id
 
@@ -2527,7 +2527,7 @@ class TestCaseInfo:
 
     @knet_node_id.setter
     def knet_node_id(self, knet_node_id):
-        """Sets the knet_node_id of this TestCaseInfo.
+        r"""Sets the knet_node_id of this TestCaseInfo.
 
         knet节点id
 
@@ -2538,7 +2538,7 @@ class TestCaseInfo:
 
     @property
     def last_exe_author(self):
-        """Gets the last_exe_author of this TestCaseInfo.
+        r"""Gets the last_exe_author of this TestCaseInfo.
 
         最后一次执行用户
 
@@ -2549,7 +2549,7 @@ class TestCaseInfo:
 
     @last_exe_author.setter
     def last_exe_author(self, last_exe_author):
-        """Sets the last_exe_author of this TestCaseInfo.
+        r"""Sets the last_exe_author of this TestCaseInfo.
 
         最后一次执行用户
 
@@ -2560,7 +2560,7 @@ class TestCaseInfo:
 
     @property
     def cloud_carrier(self):
-        """Gets the cloud_carrier of this TestCaseInfo.
+        r"""Gets the cloud_carrier of this TestCaseInfo.
 
         运营商
 
@@ -2571,7 +2571,7 @@ class TestCaseInfo:
 
     @cloud_carrier.setter
     def cloud_carrier(self, cloud_carrier):
-        """Sets the cloud_carrier of this TestCaseInfo.
+        r"""Sets the cloud_carrier of this TestCaseInfo.
 
         运营商
 
@@ -2582,7 +2582,7 @@ class TestCaseInfo:
 
     @property
     def market_place(self):
-        """Gets the market_place of this TestCaseInfo.
+        r"""Gets the market_place of this TestCaseInfo.
 
         应用市场
 
@@ -2593,7 +2593,7 @@ class TestCaseInfo:
 
     @market_place.setter
     def market_place(self, market_place):
-        """Sets the market_place of this TestCaseInfo.
+        r"""Sets the market_place of this TestCaseInfo.
 
         应用市场
 
@@ -2604,7 +2604,7 @@ class TestCaseInfo:
 
     @property
     def test_mind_id(self):
-        """Gets the test_mind_id of this TestCaseInfo.
+        r"""Gets the test_mind_id of this TestCaseInfo.
 
         脑图id
 
@@ -2615,7 +2615,7 @@ class TestCaseInfo:
 
     @test_mind_id.setter
     def test_mind_id(self, test_mind_id):
-        """Sets the test_mind_id of this TestCaseInfo.
+        r"""Sets the test_mind_id of this TestCaseInfo.
 
         脑图id
 
@@ -2626,7 +2626,7 @@ class TestCaseInfo:
 
     @property
     def test_mind_url(self):
-        """Gets the test_mind_url of this TestCaseInfo.
+        r"""Gets the test_mind_url of this TestCaseInfo.
 
         脑图url
 
@@ -2637,7 +2637,7 @@ class TestCaseInfo:
 
     @test_mind_url.setter
     def test_mind_url(self, test_mind_url):
-        """Sets the test_mind_url of this TestCaseInfo.
+        r"""Sets the test_mind_url of this TestCaseInfo.
 
         脑图url
 
@@ -2648,7 +2648,7 @@ class TestCaseInfo:
 
     @property
     def commit_url(self):
-        """Gets the commit_url of this TestCaseInfo.
+        r"""Gets the commit_url of this TestCaseInfo.
 
         git提交url
 
@@ -2659,7 +2659,7 @@ class TestCaseInfo:
 
     @commit_url.setter
     def commit_url(self, commit_url):
-        """Sets the commit_url of this TestCaseInfo.
+        r"""Sets the commit_url of this TestCaseInfo.
 
         git提交url
 
@@ -2670,7 +2670,7 @@ class TestCaseInfo:
 
     @property
     def test_pattern_number(self):
-        """Gets the test_pattern_number of this TestCaseInfo.
+        r"""Gets the test_pattern_number of this TestCaseInfo.
 
         测试模式编号
 
@@ -2681,7 +2681,7 @@ class TestCaseInfo:
 
     @test_pattern_number.setter
     def test_pattern_number(self, test_pattern_number):
-        """Sets the test_pattern_number of this TestCaseInfo.
+        r"""Sets the test_pattern_number of this TestCaseInfo.
 
         测试模式编号
 
@@ -2692,7 +2692,7 @@ class TestCaseInfo:
 
     @property
     def test_factor_number(self):
-        """Gets the test_factor_number of this TestCaseInfo.
+        r"""Gets the test_factor_number of this TestCaseInfo.
 
         测试因子编号
 
@@ -2703,7 +2703,7 @@ class TestCaseInfo:
 
     @test_factor_number.setter
     def test_factor_number(self, test_factor_number):
-        """Sets the test_factor_number of this TestCaseInfo.
+        r"""Sets the test_factor_number of this TestCaseInfo.
 
         测试因子编号
 
@@ -2714,7 +2714,7 @@ class TestCaseInfo:
 
     @property
     def status_code(self):
-        """Gets the status_code of this TestCaseInfo.
+        r"""Gets the status_code of this TestCaseInfo.
 
         状态Code
 
@@ -2725,7 +2725,7 @@ class TestCaseInfo:
 
     @status_code.setter
     def status_code(self, status_code):
-        """Sets the status_code of this TestCaseInfo.
+        r"""Sets the status_code of this TestCaseInfo.
 
         状态Code
 
@@ -2736,7 +2736,7 @@ class TestCaseInfo:
 
     @property
     def result_code(self):
-        """Gets the result_code of this TestCaseInfo.
+        r"""Gets the result_code of this TestCaseInfo.
 
         结果Code
 
@@ -2747,7 +2747,7 @@ class TestCaseInfo:
 
     @result_code.setter
     def result_code(self, result_code):
-        """Sets the result_code of this TestCaseInfo.
+        r"""Sets the result_code of this TestCaseInfo.
 
         结果Code
 
@@ -2758,7 +2758,7 @@ class TestCaseInfo:
 
     @property
     def release_id(self):
-        """Gets the release_id of this TestCaseInfo.
+        r"""Gets the release_id of this TestCaseInfo.
 
         迭代ID
 
@@ -2769,7 +2769,7 @@ class TestCaseInfo:
 
     @release_id.setter
     def release_id(self, release_id):
-        """Sets the release_id of this TestCaseInfo.
+        r"""Sets the release_id of this TestCaseInfo.
 
         迭代ID
 
@@ -2780,7 +2780,7 @@ class TestCaseInfo:
 
     @property
     def label_id(self):
-        """Gets the label_id of this TestCaseInfo.
+        r"""Gets the label_id of this TestCaseInfo.
 
         标签ID
 
@@ -2791,7 +2791,7 @@ class TestCaseInfo:
 
     @label_id.setter
     def label_id(self, label_id):
-        """Sets the label_id of this TestCaseInfo.
+        r"""Sets the label_id of this TestCaseInfo.
 
         标签ID
 
@@ -2802,7 +2802,7 @@ class TestCaseInfo:
 
     @property
     def label_names(self):
-        """Gets the label_names of this TestCaseInfo.
+        r"""Gets the label_names of this TestCaseInfo.
 
         对外用例操作时，标签名列表
 
@@ -2813,7 +2813,7 @@ class TestCaseInfo:
 
     @label_names.setter
     def label_names(self, label_names):
-        """Sets the label_names of this TestCaseInfo.
+        r"""Sets the label_names of this TestCaseInfo.
 
         对外用例操作时，标签名列表
 
@@ -2824,7 +2824,7 @@ class TestCaseInfo:
 
     @property
     def module_id(self):
-        """Gets the module_id of this TestCaseInfo.
+        r"""Gets the module_id of this TestCaseInfo.
 
         模块ID
 
@@ -2835,7 +2835,7 @@ class TestCaseInfo:
 
     @module_id.setter
     def module_id(self, module_id):
-        """Sets the module_id of this TestCaseInfo.
+        r"""Sets the module_id of this TestCaseInfo.
 
         模块ID
 
@@ -2846,7 +2846,7 @@ class TestCaseInfo:
 
     @property
     def execute_latest_time(self):
-        """Gets the execute_latest_time of this TestCaseInfo.
+        r"""Gets the execute_latest_time of this TestCaseInfo.
 
         最后执行时间
 
@@ -2857,7 +2857,7 @@ class TestCaseInfo:
 
     @execute_latest_time.setter
     def execute_latest_time(self, execute_latest_time):
-        """Sets the execute_latest_time of this TestCaseInfo.
+        r"""Sets the execute_latest_time of this TestCaseInfo.
 
         最后执行时间
 
@@ -2868,7 +2868,7 @@ class TestCaseInfo:
 
     @property
     def execute_duration(self):
-        """Gets the execute_duration of this TestCaseInfo.
+        r"""Gets the execute_duration of this TestCaseInfo.
 
         执行时长
 
@@ -2879,7 +2879,7 @@ class TestCaseInfo:
 
     @execute_duration.setter
     def execute_duration(self, execute_duration):
-        """Sets the execute_duration of this TestCaseInfo.
+        r"""Sets the execute_duration of this TestCaseInfo.
 
         执行时长
 
@@ -2890,7 +2890,7 @@ class TestCaseInfo:
 
     @property
     def is_keyword(self):
-        """Gets the is_keyword of this TestCaseInfo.
+        r"""Gets the is_keyword of this TestCaseInfo.
 
         是否关键用例
 
@@ -2901,7 +2901,7 @@ class TestCaseInfo:
 
     @is_keyword.setter
     def is_keyword(self, is_keyword):
-        """Sets the is_keyword of this TestCaseInfo.
+        r"""Sets the is_keyword of this TestCaseInfo.
 
         是否关键用例
 
@@ -2912,7 +2912,7 @@ class TestCaseInfo:
 
     @property
     def release_dev(self):
-        """Gets the release_dev of this TestCaseInfo.
+        r"""Gets the release_dev of this TestCaseInfo.
 
         测试版本号
 
@@ -2923,7 +2923,7 @@ class TestCaseInfo:
 
     @release_dev.setter
     def release_dev(self, release_dev):
-        """Sets the release_dev of this TestCaseInfo.
+        r"""Sets the release_dev of this TestCaseInfo.
 
         测试版本号
 
@@ -2934,7 +2934,7 @@ class TestCaseInfo:
 
     @property
     def new_created(self):
-        """Gets the new_created of this TestCaseInfo.
+        r"""Gets the new_created of this TestCaseInfo.
 
         是否用户新增用例
 
@@ -2945,7 +2945,7 @@ class TestCaseInfo:
 
     @new_created.setter
     def new_created(self, new_created):
-        """Sets the new_created of this TestCaseInfo.
+        r"""Sets the new_created of this TestCaseInfo.
 
         是否用户新增用例
 
@@ -2956,7 +2956,7 @@ class TestCaseInfo:
 
     @property
     def execute_parameter(self):
-        """Gets the execute_parameter of this TestCaseInfo.
+        r"""Gets the execute_parameter of this TestCaseInfo.
 
         执行参数
 
@@ -2967,7 +2967,7 @@ class TestCaseInfo:
 
     @execute_parameter.setter
     def execute_parameter(self, execute_parameter):
-        """Sets the execute_parameter of this TestCaseInfo.
+        r"""Sets the execute_parameter of this TestCaseInfo.
 
         执行参数
 
@@ -2978,7 +2978,7 @@ class TestCaseInfo:
 
     @property
     def project_uuid(self):
-        """Gets the project_uuid of this TestCaseInfo.
+        r"""Gets the project_uuid of this TestCaseInfo.
 
         项目ID，外部使用项目ID，内部使用默认值
 
@@ -2989,7 +2989,7 @@ class TestCaseInfo:
 
     @project_uuid.setter
     def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this TestCaseInfo.
+        r"""Sets the project_uuid of this TestCaseInfo.
 
         项目ID，外部使用项目ID，内部使用默认值
 
@@ -3000,7 +3000,7 @@ class TestCaseInfo:
 
     @property
     def version_uri(self):
-        """Gets the version_uri of this TestCaseInfo.
+        r"""Gets the version_uri of this TestCaseInfo.
 
         分支或者迭代uri
 
@@ -3011,7 +3011,7 @@ class TestCaseInfo:
 
     @version_uri.setter
     def version_uri(self, version_uri):
-        """Sets the version_uri of this TestCaseInfo.
+        r"""Sets the version_uri of this TestCaseInfo.
 
         分支或者迭代uri
 

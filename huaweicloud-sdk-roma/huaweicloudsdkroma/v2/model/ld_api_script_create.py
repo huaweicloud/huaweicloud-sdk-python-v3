@@ -27,7 +27,7 @@ class LdApiScriptCreate:
     }
 
     def __init__(self, api_type=None, scripts=None):
-        """LdApiScriptCreate
+        r"""LdApiScriptCreate
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class LdApiScriptCreate:
 
     @property
     def api_type(self):
-        """Gets the api_type of this LdApiScriptCreate.
+        r"""Gets the api_type of this LdApiScriptCreate.
 
         API类型 - data：数据API - function：函数API 
 
@@ -61,7 +61,7 @@ class LdApiScriptCreate:
 
     @api_type.setter
     def api_type(self, api_type):
-        """Sets the api_type of this LdApiScriptCreate.
+        r"""Sets the api_type of this LdApiScriptCreate.
 
         API类型 - data：数据API - function：函数API 
 
@@ -72,7 +72,7 @@ class LdApiScriptCreate:
 
     @property
     def scripts(self):
-        """Gets the scripts of this LdApiScriptCreate.
+        r"""Gets the scripts of this LdApiScriptCreate.
 
         API脚本信息列表
 
@@ -83,7 +83,7 @@ class LdApiScriptCreate:
 
     @scripts.setter
     def scripts(self, scripts):
-        """Sets the scripts of this LdApiScriptCreate.
+        r"""Sets the scripts of this LdApiScriptCreate.
 
         API脚本信息列表
 

@@ -29,7 +29,7 @@ class ExportKnowledgeSkillRequest:
     }
 
     def __init__(self, x_app_user_id=None, skill_id=None, export_type=None):
-        """ExportKnowledgeSkillRequest
+        r"""ExportKnowledgeSkillRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ExportKnowledgeSkillRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this ExportKnowledgeSkillRequest.
+        r"""Gets the x_app_user_id of this ExportKnowledgeSkillRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -66,7 +66,7 @@ class ExportKnowledgeSkillRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this ExportKnowledgeSkillRequest.
+        r"""Sets the x_app_user_id of this ExportKnowledgeSkillRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -77,7 +77,7 @@ class ExportKnowledgeSkillRequest:
 
     @property
     def skill_id(self):
-        """Gets the skill_id of this ExportKnowledgeSkillRequest.
+        r"""Gets the skill_id of this ExportKnowledgeSkillRequest.
 
         技能ID。
 
@@ -88,7 +88,7 @@ class ExportKnowledgeSkillRequest:
 
     @skill_id.setter
     def skill_id(self, skill_id):
-        """Sets the skill_id of this ExportKnowledgeSkillRequest.
+        r"""Sets the skill_id of this ExportKnowledgeSkillRequest.
 
         技能ID。
 
@@ -99,7 +99,7 @@ class ExportKnowledgeSkillRequest:
 
     @property
     def export_type(self):
-        """Gets the export_type of this ExportKnowledgeSkillRequest.
+        r"""Gets the export_type of this ExportKnowledgeSkillRequest.
 
         导出格式类型。0：科大讯飞
 
@@ -110,7 +110,7 @@ class ExportKnowledgeSkillRequest:
 
     @export_type.setter
     def export_type(self, export_type):
-        """Sets the export_type of this ExportKnowledgeSkillRequest.
+        r"""Sets the export_type of this ExportKnowledgeSkillRequest.
 
         导出格式类型。0：科大讯飞
 

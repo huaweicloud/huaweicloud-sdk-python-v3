@@ -41,7 +41,7 @@ class CreatePortOption:
     }
 
     def __init__(self, name=None, network_id=None, fixed_ips=None, device_owner=None, security_groups=None, admin_state_up=None, allowed_address_pairs=None, extra_dhcp_opts=None, tenant_id=None):
-        """CreatePortOption
+        r"""CreatePortOption
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class CreatePortOption:
 
     @property
     def name(self):
-        """Gets the name of this CreatePortOption.
+        r"""Gets the name of this CreatePortOption.
 
         功能说明：端口名称 取值范围：0~255个字符，支持中文、英文、字母、_(下划线)、-（中划线），默认为空
 
@@ -109,7 +109,7 @@ class CreatePortOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreatePortOption.
+        r"""Sets the name of this CreatePortOption.
 
         功能说明：端口名称 取值范围：0~255个字符，支持中文、英文、字母、_(下划线)、-（中划线），默认为空
 
@@ -120,7 +120,7 @@ class CreatePortOption:
 
     @property
     def network_id(self):
-        """Gets the network_id of this CreatePortOption.
+        r"""Gets the network_id of this CreatePortOption.
 
         功能说明：端口所属网络的ID 约束：必须是存在的网络ID
 
@@ -131,7 +131,7 @@ class CreatePortOption:
 
     @network_id.setter
     def network_id(self, network_id):
-        """Sets the network_id of this CreatePortOption.
+        r"""Sets the network_id of this CreatePortOption.
 
         功能说明：端口所属网络的ID 约束：必须是存在的网络ID
 
@@ -142,7 +142,7 @@ class CreatePortOption:
 
     @property
     def fixed_ips(self):
-        """Gets the fixed_ips of this CreatePortOption.
+        r"""Gets the fixed_ips of this CreatePortOption.
 
         功能说明：端口IP 例如：\"fixed_ips\": [{\"subnet_id\": \"4dc70db6-cb7f-4200-9790-a6a910776bba\", \"ip_address\": \"192.169.25.79\"}] 约束：ipv4场景下一个端口只支持一个fixed_ip，且不支持更新
 
@@ -153,7 +153,7 @@ class CreatePortOption:
 
     @fixed_ips.setter
     def fixed_ips(self, fixed_ips):
-        """Sets the fixed_ips of this CreatePortOption.
+        r"""Sets the fixed_ips of this CreatePortOption.
 
         功能说明：端口IP 例如：\"fixed_ips\": [{\"subnet_id\": \"4dc70db6-cb7f-4200-9790-a6a910776bba\", \"ip_address\": \"192.169.25.79\"}] 约束：ipv4场景下一个端口只支持一个fixed_ip，且不支持更新
 
@@ -164,7 +164,7 @@ class CreatePortOption:
 
     @property
     def device_owner(self):
-        """Gets the device_owner of this CreatePortOption.
+        r"""Gets the device_owner of this CreatePortOption.
 
         功能说明：端口设备所属 取值范围：目前只支持指定\"\"和\"neutron:VIP_PORT\"；neutron:VIP_PORT表示创建的是VIP
 
@@ -175,7 +175,7 @@ class CreatePortOption:
 
     @device_owner.setter
     def device_owner(self, device_owner):
-        """Sets the device_owner of this CreatePortOption.
+        r"""Sets the device_owner of this CreatePortOption.
 
         功能说明：端口设备所属 取值范围：目前只支持指定\"\"和\"neutron:VIP_PORT\"；neutron:VIP_PORT表示创建的是VIP
 
@@ -186,7 +186,7 @@ class CreatePortOption:
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this CreatePortOption.
+        r"""Gets the security_groups of this CreatePortOption.
 
         功能说明：安全组的ID列表；例如：\"security_groups\": [\"a0608cbf-d047-4f54-8b28-cd7b59853fff\"] 取值范围：默认值为系统默认安全组
 
@@ -197,7 +197,7 @@ class CreatePortOption:
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this CreatePortOption.
+        r"""Sets the security_groups of this CreatePortOption.
 
         功能说明：安全组的ID列表；例如：\"security_groups\": [\"a0608cbf-d047-4f54-8b28-cd7b59853fff\"] 取值范围：默认值为系统默认安全组
 
@@ -208,7 +208,7 @@ class CreatePortOption:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this CreatePortOption.
+        r"""Gets the admin_state_up of this CreatePortOption.
 
         功能说明：管理状态 取值范围：只支持true，默认为true
 
@@ -219,7 +219,7 @@ class CreatePortOption:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this CreatePortOption.
+        r"""Sets the admin_state_up of this CreatePortOption.
 
         功能说明：管理状态 取值范围：只支持true，默认为true
 
@@ -230,7 +230,7 @@ class CreatePortOption:
 
     @property
     def allowed_address_pairs(self):
-        """Gets the allowed_address_pairs of this CreatePortOption.
+        r"""Gets the allowed_address_pairs of this CreatePortOption.
 
         功能说明：IP/Mac对列表 约束：IP地址不允许为 “0.0.0.0/0” 如果配置的地址池较大（CIDR掩码小于24位），建议为该port配置一个单独的安全组。
 
@@ -241,7 +241,7 @@ class CreatePortOption:
 
     @allowed_address_pairs.setter
     def allowed_address_pairs(self, allowed_address_pairs):
-        """Sets the allowed_address_pairs of this CreatePortOption.
+        r"""Sets the allowed_address_pairs of this CreatePortOption.
 
         功能说明：IP/Mac对列表 约束：IP地址不允许为 “0.0.0.0/0” 如果配置的地址池较大（CIDR掩码小于24位），建议为该port配置一个单独的安全组。
 
@@ -252,7 +252,7 @@ class CreatePortOption:
 
     @property
     def extra_dhcp_opts(self):
-        """Gets the extra_dhcp_opts of this CreatePortOption.
+        r"""Gets the extra_dhcp_opts of this CreatePortOption.
 
         功能说明：DHCP的扩展Option(扩展属性)
 
@@ -263,7 +263,7 @@ class CreatePortOption:
 
     @extra_dhcp_opts.setter
     def extra_dhcp_opts(self, extra_dhcp_opts):
-        """Sets the extra_dhcp_opts of this CreatePortOption.
+        r"""Sets the extra_dhcp_opts of this CreatePortOption.
 
         功能说明：DHCP的扩展Option(扩展属性)
 
@@ -274,7 +274,7 @@ class CreatePortOption:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this CreatePortOption.
+        r"""Gets the tenant_id of this CreatePortOption.
 
         功能说明：端口所属项目ID
 
@@ -285,7 +285,7 @@ class CreatePortOption:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this CreatePortOption.
+        r"""Sets the tenant_id of this CreatePortOption.
 
         功能说明：端口所属项目ID
 

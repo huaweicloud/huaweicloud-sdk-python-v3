@@ -32,7 +32,7 @@ class ListPipelineRunsResponse(SdkResponse):
     }
 
     def __init__(self, offset=None, limit=None, total=None, pipeline_runs=None):
-        """ListPipelineRunsResponse
+        r"""ListPipelineRunsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListPipelineRunsResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListPipelineRunsResponse.
+        r"""Gets the offset of this ListPipelineRunsResponse.
 
         起始偏移
 
@@ -76,7 +76,7 @@ class ListPipelineRunsResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPipelineRunsResponse.
+        r"""Sets the offset of this ListPipelineRunsResponse.
 
         起始偏移
 
@@ -87,7 +87,7 @@ class ListPipelineRunsResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListPipelineRunsResponse.
+        r"""Gets the limit of this ListPipelineRunsResponse.
 
         查询大小
 
@@ -98,7 +98,7 @@ class ListPipelineRunsResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPipelineRunsResponse.
+        r"""Sets the limit of this ListPipelineRunsResponse.
 
         查询大小
 
@@ -109,7 +109,7 @@ class ListPipelineRunsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListPipelineRunsResponse.
+        r"""Gets the total of this ListPipelineRunsResponse.
 
         总数
 
@@ -120,7 +120,7 @@ class ListPipelineRunsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListPipelineRunsResponse.
+        r"""Sets the total of this ListPipelineRunsResponse.
 
         总数
 
@@ -131,7 +131,7 @@ class ListPipelineRunsResponse(SdkResponse):
 
     @property
     def pipeline_runs(self):
-        """Gets the pipeline_runs of this ListPipelineRunsResponse.
+        r"""Gets the pipeline_runs of this ListPipelineRunsResponse.
 
         流水线运行信息
 
@@ -142,7 +142,7 @@ class ListPipelineRunsResponse(SdkResponse):
 
     @pipeline_runs.setter
     def pipeline_runs(self, pipeline_runs):
-        """Sets the pipeline_runs of this ListPipelineRunsResponse.
+        r"""Sets the pipeline_runs of this ListPipelineRunsResponse.
 
         流水线运行信息
 

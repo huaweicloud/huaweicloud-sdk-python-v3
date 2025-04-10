@@ -26,7 +26,7 @@ class RegisterOrganizationalUnitResponse(SdkResponse):
     }
 
     def __init__(self, organizational_unit_operation_id=None):
-        """RegisterOrganizationalUnitResponse
+        r"""RegisterOrganizationalUnitResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RegisterOrganizationalUnitResponse(SdkResponse):
 
     @property
     def organizational_unit_operation_id(self):
-        """Gets the organizational_unit_operation_id of this RegisterOrganizationalUnitResponse.
+        r"""Gets the organizational_unit_operation_id of this RegisterOrganizationalUnitResponse.
 
         异步接口的操作ID。
 
@@ -55,7 +55,7 @@ class RegisterOrganizationalUnitResponse(SdkResponse):
 
     @organizational_unit_operation_id.setter
     def organizational_unit_operation_id(self, organizational_unit_operation_id):
-        """Sets the organizational_unit_operation_id of this RegisterOrganizationalUnitResponse.
+        r"""Sets the organizational_unit_operation_id of this RegisterOrganizationalUnitResponse.
 
         异步接口的操作ID。
 

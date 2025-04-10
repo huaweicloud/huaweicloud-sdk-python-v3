@@ -27,7 +27,7 @@ class ServiceResponse:
     }
 
     def __init__(self, authentication_failure=None, authentication_success=None):
-        """ServiceResponse
+        r"""ServiceResponse
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ServiceResponse:
 
     @property
     def authentication_failure(self):
-        """Gets the authentication_failure of this ServiceResponse.
+        r"""Gets the authentication_failure of this ServiceResponse.
 
         :return: The authentication_failure of this ServiceResponse.
         :rtype: :class:`huaweicloudsdkorgid.v1.CasServiceResponseAuthenticationFailure`
@@ -59,7 +59,7 @@ class ServiceResponse:
 
     @authentication_failure.setter
     def authentication_failure(self, authentication_failure):
-        """Sets the authentication_failure of this ServiceResponse.
+        r"""Sets the authentication_failure of this ServiceResponse.
 
         :param authentication_failure: The authentication_failure of this ServiceResponse.
         :type authentication_failure: :class:`huaweicloudsdkorgid.v1.CasServiceResponseAuthenticationFailure`
@@ -68,7 +68,7 @@ class ServiceResponse:
 
     @property
     def authentication_success(self):
-        """Gets the authentication_success of this ServiceResponse.
+        r"""Gets the authentication_success of this ServiceResponse.
 
         :return: The authentication_success of this ServiceResponse.
         :rtype: :class:`huaweicloudsdkorgid.v1.CasServiceResponseAuthenticationSuccess`
@@ -77,7 +77,7 @@ class ServiceResponse:
 
     @authentication_success.setter
     def authentication_success(self, authentication_success):
-        """Sets the authentication_success of this ServiceResponse.
+        r"""Sets the authentication_success of this ServiceResponse.
 
         :param authentication_success: The authentication_success of this ServiceResponse.
         :type authentication_success: :class:`huaweicloudsdkorgid.v1.CasServiceResponseAuthenticationSuccess`

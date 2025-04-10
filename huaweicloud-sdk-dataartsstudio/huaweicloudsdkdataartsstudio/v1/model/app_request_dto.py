@@ -33,7 +33,7 @@ class AppRequestDTO:
     }
 
     def __init__(self, app_type=None, name=None, description=None, apig_type=None, apig_instance_id=None):
-        """AppRequestDTO
+        r"""AppRequestDTO
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class AppRequestDTO:
 
     @property
     def app_type(self):
-        """Gets the app_type of this AppRequestDTO.
+        r"""Gets the app_type of this AppRequestDTO.
 
         应用类型
 
@@ -82,7 +82,7 @@ class AppRequestDTO:
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this AppRequestDTO.
+        r"""Sets the app_type of this AppRequestDTO.
 
         应用类型
 
@@ -93,7 +93,7 @@ class AppRequestDTO:
 
     @property
     def name(self):
-        """Gets the name of this AppRequestDTO.
+        r"""Gets the name of this AppRequestDTO.
 
         应用名称
 
@@ -104,7 +104,7 @@ class AppRequestDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AppRequestDTO.
+        r"""Sets the name of this AppRequestDTO.
 
         应用名称
 
@@ -115,7 +115,7 @@ class AppRequestDTO:
 
     @property
     def description(self):
-        """Gets the description of this AppRequestDTO.
+        r"""Gets the description of this AppRequestDTO.
 
         应用描述
 
@@ -126,7 +126,7 @@ class AppRequestDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AppRequestDTO.
+        r"""Sets the description of this AppRequestDTO.
 
         应用描述
 
@@ -137,7 +137,7 @@ class AppRequestDTO:
 
     @property
     def apig_type(self):
-        """Gets the apig_type of this AppRequestDTO.
+        r"""Gets the apig_type of this AppRequestDTO.
 
         网关类型
 
@@ -148,7 +148,7 @@ class AppRequestDTO:
 
     @apig_type.setter
     def apig_type(self, apig_type):
-        """Sets the apig_type of this AppRequestDTO.
+        r"""Sets the apig_type of this AppRequestDTO.
 
         网关类型
 
@@ -159,7 +159,7 @@ class AppRequestDTO:
 
     @property
     def apig_instance_id(self):
-        """Gets the apig_instance_id of this AppRequestDTO.
+        r"""Gets the apig_instance_id of this AppRequestDTO.
 
         网关实例编号
 
@@ -170,7 +170,7 @@ class AppRequestDTO:
 
     @apig_instance_id.setter
     def apig_instance_id(self, apig_instance_id):
-        """Sets the apig_instance_id of this AppRequestDTO.
+        r"""Sets the apig_instance_id of this AppRequestDTO.
 
         网关实例编号
 

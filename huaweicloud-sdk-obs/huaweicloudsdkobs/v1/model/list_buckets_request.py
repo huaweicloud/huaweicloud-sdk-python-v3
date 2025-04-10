@@ -29,7 +29,7 @@ class ListBucketsRequest:
     }
 
     def __init__(self, date=None, x_obs_bucket_type=None):
-        """ListBucketsRequest
+        r"""ListBucketsRequest
 
         The model defined in huaweicloud sdk
 
@@ -52,7 +52,7 @@ class ListBucketsRequest:
 
     @property
     def date(self):
-        """Gets the date of this ListBucketsRequest.
+        r"""Gets the date of this ListBucketsRequest.
 
         Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
@@ -63,7 +63,7 @@ class ListBucketsRequest:
 
     @date.setter
     def date(self, date):
-        """Sets the date of this ListBucketsRequest.
+        r"""Sets the date of this ListBucketsRequest.
 
         Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
@@ -74,7 +74,7 @@ class ListBucketsRequest:
 
     @property
     def x_obs_bucket_type(self):
-        """Gets the x_obs_bucket_type of this ListBucketsRequest.
+        r"""Gets the x_obs_bucket_type of this ListBucketsRequest.
 
         Specifies the content to obtain. Possible values: **OBJECT**: A list of all buckets is returned. **POSIX**: A list of all parallel file systems is returned. If this header is not carried, a list of all buckets and parallel file systems is returned.
 
@@ -85,7 +85,7 @@ class ListBucketsRequest:
 
     @x_obs_bucket_type.setter
     def x_obs_bucket_type(self, x_obs_bucket_type):
-        """Sets the x_obs_bucket_type of this ListBucketsRequest.
+        r"""Sets the x_obs_bucket_type of this ListBucketsRequest.
 
         Specifies the content to obtain. Possible values: **OBJECT**: A list of all buckets is returned. **POSIX**: A list of all parallel file systems is returned. If this header is not carried, a list of all buckets and parallel file systems is returned.
 

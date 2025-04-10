@@ -29,7 +29,7 @@ class UpdateVehicleRequest:
     }
 
     def __init__(self, instance_id=None, vehicle_id=None, body=None):
-        """UpdateVehicleRequest
+        r"""UpdateVehicleRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateVehicleRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateVehicleRequest.
+        r"""Gets the instance_id of this UpdateVehicleRequest.
 
         \"**参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和横杠（-）的组合，长度36。\"
 
@@ -67,7 +67,7 @@ class UpdateVehicleRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateVehicleRequest.
+        r"""Sets the instance_id of this UpdateVehicleRequest.
 
         \"**参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和横杠（-）的组合，长度36。\"
 
@@ -78,7 +78,7 @@ class UpdateVehicleRequest:
 
     @property
     def vehicle_id(self):
-        """Gets the vehicle_id of this UpdateVehicleRequest.
+        r"""Gets the vehicle_id of this UpdateVehicleRequest.
 
         **参数说明**：车辆唯一标识符。  **取值范围**：长度不超过128，只允许字母、数字、以及_-等字符的组合。 
 
@@ -89,7 +89,7 @@ class UpdateVehicleRequest:
 
     @vehicle_id.setter
     def vehicle_id(self, vehicle_id):
-        """Sets the vehicle_id of this UpdateVehicleRequest.
+        r"""Sets the vehicle_id of this UpdateVehicleRequest.
 
         **参数说明**：车辆唯一标识符。  **取值范围**：长度不超过128，只允许字母、数字、以及_-等字符的组合。 
 
@@ -100,7 +100,7 @@ class UpdateVehicleRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateVehicleRequest.
+        r"""Gets the body of this UpdateVehicleRequest.
 
         :return: The body of this UpdateVehicleRequest.
         :rtype: :class:`huaweicloudsdkdris.v1.ModifyVehicleRequestDTO`
@@ -109,7 +109,7 @@ class UpdateVehicleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateVehicleRequest.
+        r"""Sets the body of this UpdateVehicleRequest.
 
         :param body: The body of this UpdateVehicleRequest.
         :type body: :class:`huaweicloudsdkdris.v1.ModifyVehicleRequestDTO`

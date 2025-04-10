@@ -31,7 +31,7 @@ class CheckDataTransformationReq:
     }
 
     def __init__(self, job_id=None, object_info=None, transformation_info=None, config_transformation=None):
-        """CheckDataTransformationReq
+        r"""CheckDataTransformationReq
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class CheckDataTransformationReq:
 
     @property
     def job_id(self):
-        """Gets the job_id of this CheckDataTransformationReq.
+        r"""Gets the job_id of this CheckDataTransformationReq.
 
         任务id
 
@@ -74,7 +74,7 @@ class CheckDataTransformationReq:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CheckDataTransformationReq.
+        r"""Sets the job_id of this CheckDataTransformationReq.
 
         任务id
 
@@ -85,7 +85,7 @@ class CheckDataTransformationReq:
 
     @property
     def object_info(self):
-        """Gets the object_info of this CheckDataTransformationReq.
+        r"""Gets the object_info of this CheckDataTransformationReq.
 
         对象信息，生成加工规则时需要填写。
 
@@ -96,7 +96,7 @@ class CheckDataTransformationReq:
 
     @object_info.setter
     def object_info(self, object_info):
-        """Sets the object_info of this CheckDataTransformationReq.
+        r"""Sets the object_info of this CheckDataTransformationReq.
 
         对象信息，生成加工规则时需要填写。
 
@@ -107,7 +107,7 @@ class CheckDataTransformationReq:
 
     @property
     def transformation_info(self):
-        """Gets the transformation_info of this CheckDataTransformationReq.
+        r"""Gets the transformation_info of this CheckDataTransformationReq.
 
         :return: The transformation_info of this CheckDataTransformationReq.
         :rtype: :class:`huaweicloudsdkdrs.v3.TransformationInfo`
@@ -116,7 +116,7 @@ class CheckDataTransformationReq:
 
     @transformation_info.setter
     def transformation_info(self, transformation_info):
-        """Sets the transformation_info of this CheckDataTransformationReq.
+        r"""Sets the transformation_info of this CheckDataTransformationReq.
 
         :param transformation_info: The transformation_info of this CheckDataTransformationReq.
         :type transformation_info: :class:`huaweicloudsdkdrs.v3.TransformationInfo`
@@ -125,7 +125,7 @@ class CheckDataTransformationReq:
 
     @property
     def config_transformation(self):
-        """Gets the config_transformation of this CheckDataTransformationReq.
+        r"""Gets the config_transformation of this CheckDataTransformationReq.
 
         :return: The config_transformation of this CheckDataTransformationReq.
         :rtype: :class:`huaweicloudsdkdrs.v3.ConfigTransformationVo`
@@ -134,7 +134,7 @@ class CheckDataTransformationReq:
 
     @config_transformation.setter
     def config_transformation(self, config_transformation):
-        """Sets the config_transformation of this CheckDataTransformationReq.
+        r"""Sets the config_transformation of this CheckDataTransformationReq.
 
         :param config_transformation: The config_transformation of this CheckDataTransformationReq.
         :type config_transformation: :class:`huaweicloudsdkdrs.v3.ConfigTransformationVo`

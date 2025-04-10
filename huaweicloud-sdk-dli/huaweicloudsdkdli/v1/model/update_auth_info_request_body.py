@@ -41,7 +41,7 @@ class UpdateAuthInfoRequestBody:
     }
 
     def __init__(self, auth_info_name=None, user_name=None, password=None, krb5_conf=None, keytab=None, truststore_location=None, truststore_password=None, keystore_location=None, keystore_password=None):
-        """UpdateAuthInfoRequestBody
+        r"""UpdateAuthInfoRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class UpdateAuthInfoRequestBody:
 
     @property
     def auth_info_name(self):
-        """Gets the auth_info_name of this UpdateAuthInfoRequestBody.
+        r"""Gets the auth_info_name of this UpdateAuthInfoRequestBody.
 
         证书名
 
@@ -109,7 +109,7 @@ class UpdateAuthInfoRequestBody:
 
     @auth_info_name.setter
     def auth_info_name(self, auth_info_name):
-        """Sets the auth_info_name of this UpdateAuthInfoRequestBody.
+        r"""Sets the auth_info_name of this UpdateAuthInfoRequestBody.
 
         证书名
 
@@ -120,7 +120,7 @@ class UpdateAuthInfoRequestBody:
 
     @property
     def user_name(self):
-        """Gets the user_name of this UpdateAuthInfoRequestBody.
+        r"""Gets the user_name of this UpdateAuthInfoRequestBody.
 
         用户安全集群的新登录用户名
 
@@ -131,7 +131,7 @@ class UpdateAuthInfoRequestBody:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this UpdateAuthInfoRequestBody.
+        r"""Sets the user_name of this UpdateAuthInfoRequestBody.
 
         用户安全集群的新登录用户名
 
@@ -142,7 +142,7 @@ class UpdateAuthInfoRequestBody:
 
     @property
     def password(self):
-        """Gets the password of this UpdateAuthInfoRequestBody.
+        r"""Gets the password of this UpdateAuthInfoRequestBody.
 
         用户安全集群的新登录密码
 
@@ -153,7 +153,7 @@ class UpdateAuthInfoRequestBody:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this UpdateAuthInfoRequestBody.
+        r"""Sets the password of this UpdateAuthInfoRequestBody.
 
         用户安全集群的新登录密码
 
@@ -164,7 +164,7 @@ class UpdateAuthInfoRequestBody:
 
     @property
     def krb5_conf(self):
-        """Gets the krb5_conf of this UpdateAuthInfoRequestBody.
+        r"""Gets the krb5_conf of this UpdateAuthInfoRequestBody.
 
         krb5配置文件obs路径
 
@@ -175,7 +175,7 @@ class UpdateAuthInfoRequestBody:
 
     @krb5_conf.setter
     def krb5_conf(self, krb5_conf):
-        """Sets the krb5_conf of this UpdateAuthInfoRequestBody.
+        r"""Sets the krb5_conf of this UpdateAuthInfoRequestBody.
 
         krb5配置文件obs路径
 
@@ -186,7 +186,7 @@ class UpdateAuthInfoRequestBody:
 
     @property
     def keytab(self):
-        """Gets the keytab of this UpdateAuthInfoRequestBody.
+        r"""Gets the keytab of this UpdateAuthInfoRequestBody.
 
         keytab配置文件obs路径
 
@@ -197,7 +197,7 @@ class UpdateAuthInfoRequestBody:
 
     @keytab.setter
     def keytab(self, keytab):
-        """Sets the keytab of this UpdateAuthInfoRequestBody.
+        r"""Sets the keytab of this UpdateAuthInfoRequestBody.
 
         keytab配置文件obs路径
 
@@ -208,7 +208,7 @@ class UpdateAuthInfoRequestBody:
 
     @property
     def truststore_location(self):
-        """Gets the truststore_location of this UpdateAuthInfoRequestBody.
+        r"""Gets the truststore_location of this UpdateAuthInfoRequestBody.
 
         truststore配置文件obs路径
 
@@ -219,7 +219,7 @@ class UpdateAuthInfoRequestBody:
 
     @truststore_location.setter
     def truststore_location(self, truststore_location):
-        """Sets the truststore_location of this UpdateAuthInfoRequestBody.
+        r"""Sets the truststore_location of this UpdateAuthInfoRequestBody.
 
         truststore配置文件obs路径
 
@@ -230,7 +230,7 @@ class UpdateAuthInfoRequestBody:
 
     @property
     def truststore_password(self):
-        """Gets the truststore_password of this UpdateAuthInfoRequestBody.
+        r"""Gets the truststore_password of this UpdateAuthInfoRequestBody.
 
         truststore配置文件密码
 
@@ -241,7 +241,7 @@ class UpdateAuthInfoRequestBody:
 
     @truststore_password.setter
     def truststore_password(self, truststore_password):
-        """Sets the truststore_password of this UpdateAuthInfoRequestBody.
+        r"""Sets the truststore_password of this UpdateAuthInfoRequestBody.
 
         truststore配置文件密码
 
@@ -252,7 +252,7 @@ class UpdateAuthInfoRequestBody:
 
     @property
     def keystore_location(self):
-        """Gets the keystore_location of this UpdateAuthInfoRequestBody.
+        r"""Gets the keystore_location of this UpdateAuthInfoRequestBody.
 
         keystore配置文件obs路径
 
@@ -263,7 +263,7 @@ class UpdateAuthInfoRequestBody:
 
     @keystore_location.setter
     def keystore_location(self, keystore_location):
-        """Sets the keystore_location of this UpdateAuthInfoRequestBody.
+        r"""Sets the keystore_location of this UpdateAuthInfoRequestBody.
 
         keystore配置文件obs路径
 
@@ -274,7 +274,7 @@ class UpdateAuthInfoRequestBody:
 
     @property
     def keystore_password(self):
-        """Gets the keystore_password of this UpdateAuthInfoRequestBody.
+        r"""Gets the keystore_password of this UpdateAuthInfoRequestBody.
 
         keystore配置文件密码
 
@@ -285,7 +285,7 @@ class UpdateAuthInfoRequestBody:
 
     @keystore_password.setter
     def keystore_password(self, keystore_password):
-        """Sets the keystore_password of this UpdateAuthInfoRequestBody.
+        r"""Sets the keystore_password of this UpdateAuthInfoRequestBody.
 
         keystore配置文件密码
 

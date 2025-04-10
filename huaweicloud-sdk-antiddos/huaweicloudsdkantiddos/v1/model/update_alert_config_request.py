@@ -25,7 +25,7 @@ class UpdateAlertConfigRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateAlertConfigRequest
+        r"""UpdateAlertConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateAlertConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAlertConfigRequest.
+        r"""Gets the body of this UpdateAlertConfigRequest.
 
         :return: The body of this UpdateAlertConfigRequest.
         :rtype: :class:`huaweicloudsdkantiddos.v1.UpdateAlertConfigRequestBody`
@@ -52,7 +52,7 @@ class UpdateAlertConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAlertConfigRequest.
+        r"""Sets the body of this UpdateAlertConfigRequest.
 
         :param body: The body of this UpdateAlertConfigRequest.
         :type body: :class:`huaweicloudsdkantiddos.v1.UpdateAlertConfigRequestBody`

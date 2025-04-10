@@ -32,7 +32,7 @@ class ListEndpointPermissionsResponse(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, permissions=None, x_request_id=None):
-        """ListEndpointPermissionsResponse
+        r"""ListEndpointPermissionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListEndpointPermissionsResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListEndpointPermissionsResponse.
+        r"""Gets the size of this ListEndpointPermissionsResponse.
 
         本次返回的列表长度
 
@@ -74,7 +74,7 @@ class ListEndpointPermissionsResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListEndpointPermissionsResponse.
+        r"""Sets the size of this ListEndpointPermissionsResponse.
 
         本次返回的列表长度
 
@@ -85,7 +85,7 @@ class ListEndpointPermissionsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListEndpointPermissionsResponse.
+        r"""Gets the total of this ListEndpointPermissionsResponse.
 
         满足条件的记录数
 
@@ -96,7 +96,7 @@ class ListEndpointPermissionsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListEndpointPermissionsResponse.
+        r"""Sets the total of this ListEndpointPermissionsResponse.
 
         满足条件的记录数
 
@@ -107,7 +107,7 @@ class ListEndpointPermissionsResponse(SdkResponse):
 
     @property
     def permissions(self):
-        """Gets the permissions of this ListEndpointPermissionsResponse.
+        r"""Gets the permissions of this ListEndpointPermissionsResponse.
 
         白名单记录列表
 
@@ -118,7 +118,7 @@ class ListEndpointPermissionsResponse(SdkResponse):
 
     @permissions.setter
     def permissions(self, permissions):
-        """Sets the permissions of this ListEndpointPermissionsResponse.
+        r"""Sets the permissions of this ListEndpointPermissionsResponse.
 
         白名单记录列表
 
@@ -129,7 +129,7 @@ class ListEndpointPermissionsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListEndpointPermissionsResponse.
+        r"""Gets the x_request_id of this ListEndpointPermissionsResponse.
 
         :return: The x_request_id of this ListEndpointPermissionsResponse.
         :rtype: str
@@ -138,7 +138,7 @@ class ListEndpointPermissionsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListEndpointPermissionsResponse.
+        r"""Sets the x_request_id of this ListEndpointPermissionsResponse.
 
         :param x_request_id: The x_request_id of this ListEndpointPermissionsResponse.
         :type x_request_id: str

@@ -26,7 +26,7 @@ class ListOrderDiscountsResponse(SdkResponse):
     }
 
     def __init__(self, discounts=None):
-        """ListOrderDiscountsResponse
+        r"""ListOrderDiscountsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListOrderDiscountsResponse(SdkResponse):
 
     @property
     def discounts(self):
-        """Gets the discounts of this ListOrderDiscountsResponse.
+        r"""Gets the discounts of this ListOrderDiscountsResponse.
 
         可用的折扣列表。 具体请参见表2。
 
@@ -55,7 +55,7 @@ class ListOrderDiscountsResponse(SdkResponse):
 
     @discounts.setter
     def discounts(self, discounts):
-        """Sets the discounts of this ListOrderDiscountsResponse.
+        r"""Sets the discounts of this ListOrderDiscountsResponse.
 
         可用的折扣列表。 具体请参见表2。
 

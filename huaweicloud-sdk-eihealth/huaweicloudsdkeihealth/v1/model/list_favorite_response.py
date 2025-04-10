@@ -28,7 +28,7 @@ class ListFavoriteResponse(SdkResponse):
     }
 
     def __init__(self, favorites=None, count=None):
-        """ListFavoriteResponse
+        r"""ListFavoriteResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListFavoriteResponse(SdkResponse):
 
     @property
     def favorites(self):
-        """Gets the favorites of this ListFavoriteResponse.
+        r"""Gets the favorites of this ListFavoriteResponse.
 
         收藏列表。
 
@@ -62,7 +62,7 @@ class ListFavoriteResponse(SdkResponse):
 
     @favorites.setter
     def favorites(self, favorites):
-        """Sets the favorites of this ListFavoriteResponse.
+        r"""Sets the favorites of this ListFavoriteResponse.
 
         收藏列表。
 
@@ -73,7 +73,7 @@ class ListFavoriteResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListFavoriteResponse.
+        r"""Gets the count of this ListFavoriteResponse.
 
         收藏总数。
 
@@ -84,7 +84,7 @@ class ListFavoriteResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListFavoriteResponse.
+        r"""Sets the count of this ListFavoriteResponse.
 
         收藏总数。
 

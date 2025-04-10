@@ -27,7 +27,7 @@ class UpdateBandwidthOption:
     }
 
     def __init__(self, name=None, size=None):
-        """UpdateBandwidthOption
+        r"""UpdateBandwidthOption
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateBandwidthOption:
 
     @property
     def name(self):
-        """Gets the name of this UpdateBandwidthOption.
+        r"""Gets the name of this UpdateBandwidthOption.
 
         带宽名称。
 
@@ -61,7 +61,7 @@ class UpdateBandwidthOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateBandwidthOption.
+        r"""Sets the name of this UpdateBandwidthOption.
 
         带宽名称。
 
@@ -72,7 +72,7 @@ class UpdateBandwidthOption:
 
     @property
     def size(self):
-        """Gets the size of this UpdateBandwidthOption.
+        r"""Gets the size of this UpdateBandwidthOption.
 
         带宽大小。
 
@@ -83,7 +83,7 @@ class UpdateBandwidthOption:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this UpdateBandwidthOption.
+        r"""Sets the size of this UpdateBandwidthOption.
 
         带宽大小。
 

@@ -27,7 +27,7 @@ class AuditResultSystemAuditResult:
     }
 
     def __init__(self, audit_time=None, errors=None):
-        """AuditResultSystemAuditResult
+        r"""AuditResultSystemAuditResult
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AuditResultSystemAuditResult:
 
     @property
     def audit_time(self):
-        """Gets the audit_time of this AuditResultSystemAuditResult.
+        r"""Gets the audit_time of this AuditResultSystemAuditResult.
 
         操作时间。
 
@@ -61,7 +61,7 @@ class AuditResultSystemAuditResult:
 
     @audit_time.setter
     def audit_time(self, audit_time):
-        """Sets the audit_time of this AuditResultSystemAuditResult.
+        r"""Sets the audit_time of this AuditResultSystemAuditResult.
 
         操作时间。
 
@@ -72,7 +72,7 @@ class AuditResultSystemAuditResult:
 
     @property
     def errors(self):
-        """Gets the errors of this AuditResultSystemAuditResult.
+        r"""Gets the errors of this AuditResultSystemAuditResult.
 
         错误列表。
 
@@ -83,7 +83,7 @@ class AuditResultSystemAuditResult:
 
     @errors.setter
     def errors(self, errors):
-        """Sets the errors of this AuditResultSystemAuditResult.
+        r"""Sets the errors of this AuditResultSystemAuditResult.
 
         错误列表。
 

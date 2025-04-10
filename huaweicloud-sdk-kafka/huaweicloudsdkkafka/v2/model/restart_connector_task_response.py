@@ -24,7 +24,7 @@ class RestartConnectorTaskResponse(SdkResponse):
     }
 
     def __init__(self):
-        """RestartConnectorTaskResponse
+        r"""RestartConnectorTaskResponse
 
         The model defined in huaweicloud sdk
 

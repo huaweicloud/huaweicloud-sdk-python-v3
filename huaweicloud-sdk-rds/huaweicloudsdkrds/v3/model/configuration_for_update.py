@@ -29,7 +29,7 @@ class ConfigurationForUpdate:
     }
 
     def __init__(self, name=None, description=None, values=None):
-        """ConfigurationForUpdate
+        r"""ConfigurationForUpdate
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ConfigurationForUpdate:
 
     @property
     def name(self):
-        """Gets the name of this ConfigurationForUpdate.
+        r"""Gets the name of this ConfigurationForUpdate.
 
         参数模板名称。最长64个字符，只允许大写字母、小写字母、数字、和“-_.”特殊字符。
 
@@ -68,7 +68,7 @@ class ConfigurationForUpdate:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ConfigurationForUpdate.
+        r"""Sets the name of this ConfigurationForUpdate.
 
         参数模板名称。最长64个字符，只允许大写字母、小写字母、数字、和“-_.”特殊字符。
 
@@ -79,7 +79,7 @@ class ConfigurationForUpdate:
 
     @property
     def description(self):
-        """Gets the description of this ConfigurationForUpdate.
+        r"""Gets the description of this ConfigurationForUpdate.
 
         参数模板描述。最长256个字符，不支持>!<\"&'=特殊字符。默认为空。
 
@@ -90,7 +90,7 @@ class ConfigurationForUpdate:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ConfigurationForUpdate.
+        r"""Sets the description of this ConfigurationForUpdate.
 
         参数模板描述。最长256个字符，不支持>!<\"&'=特殊字符。默认为空。
 
@@ -101,7 +101,7 @@ class ConfigurationForUpdate:
 
     @property
     def values(self):
-        """Gets the values of this ConfigurationForUpdate.
+        r"""Gets the values of this ConfigurationForUpdate.
 
         参数值对象，用户基于默认参数模板自定义的参数值。为空时不修改参数值。  - key：参数名称，\"max_connections\":\"10\"。为空时不修改参数值，key不为空时value也不可为空。 - value：参数值，\"max_connections\":\"10\"。
 
@@ -112,7 +112,7 @@ class ConfigurationForUpdate:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this ConfigurationForUpdate.
+        r"""Sets the values of this ConfigurationForUpdate.
 
         参数值对象，用户基于默认参数模板自定义的参数值。为空时不修改参数值。  - key：参数名称，\"max_connections\":\"10\"。为空时不修改参数值，key不为空时value也不可为空。 - value：参数值，\"max_connections\":\"10\"。
 

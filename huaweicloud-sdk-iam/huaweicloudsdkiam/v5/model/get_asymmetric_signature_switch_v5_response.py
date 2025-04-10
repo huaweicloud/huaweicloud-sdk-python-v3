@@ -26,7 +26,7 @@ class GetAsymmetricSignatureSwitchV5Response(SdkResponse):
     }
 
     def __init__(self, asymmetric_signature=None):
-        """GetAsymmetricSignatureSwitchV5Response
+        r"""GetAsymmetricSignatureSwitchV5Response
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class GetAsymmetricSignatureSwitchV5Response(SdkResponse):
 
     @property
     def asymmetric_signature(self):
-        """Gets the asymmetric_signature of this GetAsymmetricSignatureSwitchV5Response.
+        r"""Gets the asymmetric_signature of this GetAsymmetricSignatureSwitchV5Response.
 
         :return: The asymmetric_signature of this GetAsymmetricSignatureSwitchV5Response.
         :rtype: :class:`huaweicloudsdkiam.v5.AsymmetricSignatureWithDomainId`
@@ -53,7 +53,7 @@ class GetAsymmetricSignatureSwitchV5Response(SdkResponse):
 
     @asymmetric_signature.setter
     def asymmetric_signature(self, asymmetric_signature):
-        """Sets the asymmetric_signature of this GetAsymmetricSignatureSwitchV5Response.
+        r"""Sets the asymmetric_signature of this GetAsymmetricSignatureSwitchV5Response.
 
         :param asymmetric_signature: The asymmetric_signature of this GetAsymmetricSignatureSwitchV5Response.
         :type asymmetric_signature: :class:`huaweicloudsdkiam.v5.AsymmetricSignatureWithDomainId`

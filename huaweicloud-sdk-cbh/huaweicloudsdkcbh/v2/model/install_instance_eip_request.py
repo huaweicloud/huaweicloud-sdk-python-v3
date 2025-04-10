@@ -27,7 +27,7 @@ class InstallInstanceEipRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """InstallInstanceEipRequest
+        r"""InstallInstanceEipRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class InstallInstanceEipRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this InstallInstanceEipRequest.
+        r"""Gets the server_id of this InstallInstanceEipRequest.
 
         云堡垒机实例ID，使用UUID格式表示。  获取方法详见用户指南里面的实例\"查看实例详情\"
 
@@ -60,7 +60,7 @@ class InstallInstanceEipRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this InstallInstanceEipRequest.
+        r"""Sets the server_id of this InstallInstanceEipRequest.
 
         云堡垒机实例ID，使用UUID格式表示。  获取方法详见用户指南里面的实例\"查看实例详情\"
 
@@ -71,7 +71,7 @@ class InstallInstanceEipRequest:
 
     @property
     def body(self):
-        """Gets the body of this InstallInstanceEipRequest.
+        r"""Gets the body of this InstallInstanceEipRequest.
 
         :return: The body of this InstallInstanceEipRequest.
         :rtype: :class:`huaweicloudsdkcbh.v2.OperateEipRequestBody`
@@ -80,7 +80,7 @@ class InstallInstanceEipRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this InstallInstanceEipRequest.
+        r"""Sets the body of this InstallInstanceEipRequest.
 
         :param body: The body of this InstallInstanceEipRequest.
         :type body: :class:`huaweicloudsdkcbh.v2.OperateEipRequestBody`

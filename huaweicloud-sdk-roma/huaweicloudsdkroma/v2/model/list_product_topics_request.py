@@ -31,7 +31,7 @@ class ListProductTopicsRequest:
     }
 
     def __init__(self, instance_id=None, product_id=None, limit=None, offset=None):
-        """ListProductTopicsRequest
+        r"""ListProductTopicsRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListProductTopicsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListProductTopicsRequest.
+        r"""Gets the instance_id of this ListProductTopicsRequest.
 
         实例ID
 
@@ -73,7 +73,7 @@ class ListProductTopicsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListProductTopicsRequest.
+        r"""Sets the instance_id of this ListProductTopicsRequest.
 
         实例ID
 
@@ -84,7 +84,7 @@ class ListProductTopicsRequest:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ListProductTopicsRequest.
+        r"""Gets the product_id of this ListProductTopicsRequest.
 
         产品ID
 
@@ -95,7 +95,7 @@ class ListProductTopicsRequest:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ListProductTopicsRequest.
+        r"""Sets the product_id of this ListProductTopicsRequest.
 
         产品ID
 
@@ -106,7 +106,7 @@ class ListProductTopicsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListProductTopicsRequest.
+        r"""Gets the limit of this ListProductTopicsRequest.
 
         每页显示条目数量，最大数量999，超过999后只返回999
 
@@ -117,7 +117,7 @@ class ListProductTopicsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListProductTopicsRequest.
+        r"""Sets the limit of this ListProductTopicsRequest.
 
         每页显示条目数量，最大数量999，超过999后只返回999
 
@@ -128,7 +128,7 @@ class ListProductTopicsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListProductTopicsRequest.
+        r"""Gets the offset of this ListProductTopicsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -139,7 +139,7 @@ class ListProductTopicsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListProductTopicsRequest.
+        r"""Sets the offset of this ListProductTopicsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 

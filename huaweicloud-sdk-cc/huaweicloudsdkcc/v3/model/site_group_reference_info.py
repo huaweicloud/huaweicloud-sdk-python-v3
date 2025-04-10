@@ -31,7 +31,7 @@ class SiteGroupReferenceInfo:
     }
 
     def __init__(self, id=None, description=None, name_en=None, name_cn=None):
-        """SiteGroupReferenceInfo
+        r"""SiteGroupReferenceInfo
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class SiteGroupReferenceInfo:
 
     @property
     def id(self):
-        """Gets the id of this SiteGroupReferenceInfo.
+        r"""Gets the id of this SiteGroupReferenceInfo.
 
         实例ID。
 
@@ -74,7 +74,7 @@ class SiteGroupReferenceInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SiteGroupReferenceInfo.
+        r"""Sets the id of this SiteGroupReferenceInfo.
 
         实例ID。
 
@@ -85,7 +85,7 @@ class SiteGroupReferenceInfo:
 
     @property
     def description(self):
-        """Gets the description of this SiteGroupReferenceInfo.
+        r"""Gets the description of this SiteGroupReferenceInfo.
 
         实例描述。不支持 <>。
 
@@ -96,7 +96,7 @@ class SiteGroupReferenceInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this SiteGroupReferenceInfo.
+        r"""Sets the description of this SiteGroupReferenceInfo.
 
         实例描述。不支持 <>。
 
@@ -107,7 +107,7 @@ class SiteGroupReferenceInfo:
 
     @property
     def name_en(self):
-        """Gets the name_en of this SiteGroupReferenceInfo.
+        r"""Gets the name_en of this SiteGroupReferenceInfo.
 
         功能说明：站点分组自定义的英文名字。 取值范围：1-255个字符。
 
@@ -118,7 +118,7 @@ class SiteGroupReferenceInfo:
 
     @name_en.setter
     def name_en(self, name_en):
-        """Sets the name_en of this SiteGroupReferenceInfo.
+        r"""Sets the name_en of this SiteGroupReferenceInfo.
 
         功能说明：站点分组自定义的英文名字。 取值范围：1-255个字符。
 
@@ -129,7 +129,7 @@ class SiteGroupReferenceInfo:
 
     @property
     def name_cn(self):
-        """Gets the name_cn of this SiteGroupReferenceInfo.
+        r"""Gets the name_cn of this SiteGroupReferenceInfo.
 
         功能说明：站点分组自定义的中文名字。 取值范围：1-64个字符。
 
@@ -140,7 +140,7 @@ class SiteGroupReferenceInfo:
 
     @name_cn.setter
     def name_cn(self, name_cn):
-        """Sets the name_cn of this SiteGroupReferenceInfo.
+        r"""Sets the name_cn of this SiteGroupReferenceInfo.
 
         功能说明：站点分组自定义的中文名字。 取值范围：1-64个字符。
 

@@ -39,7 +39,7 @@ class TemplateProductExt:
     }
 
     def __init__(self, id=None, productshort=None, product_name=None, home_link=None, api_link=None, sdk_link=None, doc_link=None, logo_link=None):
-        """TemplateProductExt
+        r"""TemplateProductExt
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class TemplateProductExt:
 
     @property
     def id(self):
-        """Gets the id of this TemplateProductExt.
+        r"""Gets the id of this TemplateProductExt.
 
         产品id。
 
@@ -103,7 +103,7 @@ class TemplateProductExt:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TemplateProductExt.
+        r"""Sets the id of this TemplateProductExt.
 
         产品id。
 
@@ -114,7 +114,7 @@ class TemplateProductExt:
 
     @property
     def productshort(self):
-        """Gets the productshort of this TemplateProductExt.
+        r"""Gets the productshort of this TemplateProductExt.
 
         产品短名。
 
@@ -125,7 +125,7 @@ class TemplateProductExt:
 
     @productshort.setter
     def productshort(self, productshort):
-        """Sets the productshort of this TemplateProductExt.
+        r"""Sets the productshort of this TemplateProductExt.
 
         产品短名。
 
@@ -136,7 +136,7 @@ class TemplateProductExt:
 
     @property
     def product_name(self):
-        """Gets the product_name of this TemplateProductExt.
+        r"""Gets the product_name of this TemplateProductExt.
 
         产品名。
 
@@ -147,7 +147,7 @@ class TemplateProductExt:
 
     @product_name.setter
     def product_name(self, product_name):
-        """Sets the product_name of this TemplateProductExt.
+        r"""Sets the product_name of this TemplateProductExt.
 
         产品名。
 
@@ -158,7 +158,7 @@ class TemplateProductExt:
 
     @property
     def home_link(self):
-        """Gets the home_link of this TemplateProductExt.
+        r"""Gets the home_link of this TemplateProductExt.
 
         首页链接。
 
@@ -169,7 +169,7 @@ class TemplateProductExt:
 
     @home_link.setter
     def home_link(self, home_link):
-        """Sets the home_link of this TemplateProductExt.
+        r"""Sets the home_link of this TemplateProductExt.
 
         首页链接。
 
@@ -180,7 +180,7 @@ class TemplateProductExt:
 
     @property
     def api_link(self):
-        """Gets the api_link of this TemplateProductExt.
+        r"""Gets the api_link of this TemplateProductExt.
 
         api调试链接。
 
@@ -191,7 +191,7 @@ class TemplateProductExt:
 
     @api_link.setter
     def api_link(self, api_link):
-        """Sets the api_link of this TemplateProductExt.
+        r"""Sets the api_link of this TemplateProductExt.
 
         api调试链接。
 
@@ -202,7 +202,7 @@ class TemplateProductExt:
 
     @property
     def sdk_link(self):
-        """Gets the sdk_link of this TemplateProductExt.
+        r"""Gets the sdk_link of this TemplateProductExt.
 
         sdk下载链接。
 
@@ -213,7 +213,7 @@ class TemplateProductExt:
 
     @sdk_link.setter
     def sdk_link(self, sdk_link):
-        """Sets the sdk_link of this TemplateProductExt.
+        r"""Sets the sdk_link of this TemplateProductExt.
 
         sdk下载链接。
 
@@ -224,7 +224,7 @@ class TemplateProductExt:
 
     @property
     def doc_link(self):
-        """Gets the doc_link of this TemplateProductExt.
+        r"""Gets the doc_link of this TemplateProductExt.
 
         文档链接。
 
@@ -235,7 +235,7 @@ class TemplateProductExt:
 
     @doc_link.setter
     def doc_link(self, doc_link):
-        """Sets the doc_link of this TemplateProductExt.
+        r"""Sets the doc_link of this TemplateProductExt.
 
         文档链接。
 
@@ -246,7 +246,7 @@ class TemplateProductExt:
 
     @property
     def logo_link(self):
-        """Gets the logo_link of this TemplateProductExt.
+        r"""Gets the logo_link of this TemplateProductExt.
 
         logo链接。
 
@@ -257,7 +257,7 @@ class TemplateProductExt:
 
     @logo_link.setter
     def logo_link(self, logo_link):
-        """Sets the logo_link of this TemplateProductExt.
+        r"""Sets the logo_link of this TemplateProductExt.
 
         logo链接。
 

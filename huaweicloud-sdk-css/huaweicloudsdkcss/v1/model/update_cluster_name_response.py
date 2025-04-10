@@ -24,7 +24,7 @@ class UpdateClusterNameResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateClusterNameResponse
+        r"""UpdateClusterNameResponse
 
         The model defined in huaweicloud sdk
 

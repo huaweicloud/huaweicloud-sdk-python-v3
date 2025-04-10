@@ -29,7 +29,7 @@ class AddTagsRequest:
     }
 
     def __init__(self, tag_name=None, ref=None, message=None):
-        """AddTagsRequest
+        r"""AddTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class AddTagsRequest:
 
     @property
     def tag_name(self):
-        """Gets the tag_name of this AddTagsRequest.
+        r"""Gets the tag_name of this AddTagsRequest.
 
         标签名称
 
@@ -66,7 +66,7 @@ class AddTagsRequest:
 
     @tag_name.setter
     def tag_name(self, tag_name):
-        """Sets the tag_name of this AddTagsRequest.
+        r"""Sets the tag_name of this AddTagsRequest.
 
         标签名称
 
@@ -77,7 +77,7 @@ class AddTagsRequest:
 
     @property
     def ref(self):
-        """Gets the ref of this AddTagsRequest.
+        r"""Gets the ref of this AddTagsRequest.
 
         分支名称
 
@@ -88,7 +88,7 @@ class AddTagsRequest:
 
     @ref.setter
     def ref(self, ref):
-        """Sets the ref of this AddTagsRequest.
+        r"""Sets the ref of this AddTagsRequest.
 
         分支名称
 
@@ -99,7 +99,7 @@ class AddTagsRequest:
 
     @property
     def message(self):
-        """Gets the message of this AddTagsRequest.
+        r"""Gets the message of this AddTagsRequest.
 
         备注
 
@@ -110,7 +110,7 @@ class AddTagsRequest:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this AddTagsRequest.
+        r"""Sets the message of this AddTagsRequest.
 
         备注
 

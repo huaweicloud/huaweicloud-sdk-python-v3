@@ -39,7 +39,7 @@ class IncidentMessageV2:
     }
 
     def __init__(self, type=None, replier=None, content=None, message_id=None, replier_name=None, create_time=None, is_first_message=None, accessory_list=None):
-        """IncidentMessageV2
+        r"""IncidentMessageV2
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class IncidentMessageV2:
 
     @property
     def type(self):
-        """Gets the type of this IncidentMessageV2.
+        r"""Gets the type of this IncidentMessageV2.
 
         类型，0客户留言 1华为工程师留言
 
@@ -103,7 +103,7 @@ class IncidentMessageV2:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this IncidentMessageV2.
+        r"""Sets the type of this IncidentMessageV2.
 
         类型，0客户留言 1华为工程师留言
 
@@ -114,7 +114,7 @@ class IncidentMessageV2:
 
     @property
     def replier(self):
-        """Gets the replier of this IncidentMessageV2.
+        r"""Gets the replier of this IncidentMessageV2.
 
         回复人ID
 
@@ -125,7 +125,7 @@ class IncidentMessageV2:
 
     @replier.setter
     def replier(self, replier):
-        """Sets the replier of this IncidentMessageV2.
+        r"""Sets the replier of this IncidentMessageV2.
 
         回复人ID
 
@@ -136,7 +136,7 @@ class IncidentMessageV2:
 
     @property
     def content(self):
-        """Gets the content of this IncidentMessageV2.
+        r"""Gets the content of this IncidentMessageV2.
 
         留言内容
 
@@ -147,7 +147,7 @@ class IncidentMessageV2:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this IncidentMessageV2.
+        r"""Sets the content of this IncidentMessageV2.
 
         留言内容
 
@@ -158,7 +158,7 @@ class IncidentMessageV2:
 
     @property
     def message_id(self):
-        """Gets the message_id of this IncidentMessageV2.
+        r"""Gets the message_id of this IncidentMessageV2.
 
         留言id
 
@@ -169,7 +169,7 @@ class IncidentMessageV2:
 
     @message_id.setter
     def message_id(self, message_id):
-        """Sets the message_id of this IncidentMessageV2.
+        r"""Sets the message_id of this IncidentMessageV2.
 
         留言id
 
@@ -180,7 +180,7 @@ class IncidentMessageV2:
 
     @property
     def replier_name(self):
-        """Gets the replier_name of this IncidentMessageV2.
+        r"""Gets the replier_name of this IncidentMessageV2.
 
         回复人名称
 
@@ -191,7 +191,7 @@ class IncidentMessageV2:
 
     @replier_name.setter
     def replier_name(self, replier_name):
-        """Sets the replier_name of this IncidentMessageV2.
+        r"""Sets the replier_name of this IncidentMessageV2.
 
         回复人名称
 
@@ -202,7 +202,7 @@ class IncidentMessageV2:
 
     @property
     def create_time(self):
-        """Gets the create_time of this IncidentMessageV2.
+        r"""Gets the create_time of this IncidentMessageV2.
 
         创建时间
 
@@ -213,7 +213,7 @@ class IncidentMessageV2:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this IncidentMessageV2.
+        r"""Sets the create_time of this IncidentMessageV2.
 
         创建时间
 
@@ -224,7 +224,7 @@ class IncidentMessageV2:
 
     @property
     def is_first_message(self):
-        """Gets the is_first_message of this IncidentMessageV2.
+        r"""Gets the is_first_message of this IncidentMessageV2.
 
         是否是第一条留言
 
@@ -235,7 +235,7 @@ class IncidentMessageV2:
 
     @is_first_message.setter
     def is_first_message(self, is_first_message):
-        """Sets the is_first_message of this IncidentMessageV2.
+        r"""Sets the is_first_message of this IncidentMessageV2.
 
         是否是第一条留言
 
@@ -246,7 +246,7 @@ class IncidentMessageV2:
 
     @property
     def accessory_list(self):
-        """Gets the accessory_list of this IncidentMessageV2.
+        r"""Gets the accessory_list of this IncidentMessageV2.
 
         附件列表
 
@@ -257,7 +257,7 @@ class IncidentMessageV2:
 
     @accessory_list.setter
     def accessory_list(self, accessory_list):
-        """Sets the accessory_list of this IncidentMessageV2.
+        r"""Sets the accessory_list of this IncidentMessageV2.
 
         附件列表
 

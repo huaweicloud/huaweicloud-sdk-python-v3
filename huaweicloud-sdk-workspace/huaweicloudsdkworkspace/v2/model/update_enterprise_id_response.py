@@ -26,7 +26,7 @@ class UpdateEnterpriseIdResponse(SdkResponse):
     }
 
     def __init__(self, enterprise_id=None):
-        """UpdateEnterpriseIdResponse
+        r"""UpdateEnterpriseIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateEnterpriseIdResponse(SdkResponse):
 
     @property
     def enterprise_id(self):
-        """Gets the enterprise_id of this UpdateEnterpriseIdResponse.
+        r"""Gets the enterprise_id of this UpdateEnterpriseIdResponse.
 
         企业ID
 
@@ -55,7 +55,7 @@ class UpdateEnterpriseIdResponse(SdkResponse):
 
     @enterprise_id.setter
     def enterprise_id(self, enterprise_id):
-        """Sets the enterprise_id of this UpdateEnterpriseIdResponse.
+        r"""Sets the enterprise_id of this UpdateEnterpriseIdResponse.
 
         企业ID
 

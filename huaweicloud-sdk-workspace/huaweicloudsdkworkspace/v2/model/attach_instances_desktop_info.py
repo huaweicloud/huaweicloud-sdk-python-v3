@@ -37,7 +37,7 @@ class AttachInstancesDesktopInfo:
     }
 
     def __init__(self, desktop_id=None, user_name=None, user_email=None, user_group=None, computer_name=None, is_clear_data=None, attach_user_infos=None):
-        """AttachInstancesDesktopInfo
+        r"""AttachInstancesDesktopInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class AttachInstancesDesktopInfo:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this AttachInstancesDesktopInfo.
+        r"""Gets the desktop_id of this AttachInstancesDesktopInfo.
 
         待分配的桌面ID。
 
@@ -96,7 +96,7 @@ class AttachInstancesDesktopInfo:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this AttachInstancesDesktopInfo.
+        r"""Sets the desktop_id of this AttachInstancesDesktopInfo.
 
         待分配的桌面ID。
 
@@ -107,7 +107,7 @@ class AttachInstancesDesktopInfo:
 
     @property
     def user_name(self):
-        """Gets the user_name of this AttachInstancesDesktopInfo.
+        r"""Gets the user_name of this AttachInstancesDesktopInfo.
 
         桌面所属的用户，当桌面分配成功后此用户可以登录该桌面。只允许输入大写字母、小写字母、数字、中划线（-）和下划线（_）。域类型为LITE_AD时，使用小写字母或者大写字母开头，长度范围为[1-20]。当域类型为LOCAL_AD时，用户名可以使用小写字母或者大写字母或者数字开头，长度范围为[1-32]。Windows桌面用户最长支持20个字符，Linux桌面用户最长支持32个字符。用户名不能与分配的机器名重名。 attach_user_infos为空时,必填,attach_user_infos优先级更高
 
@@ -118,7 +118,7 @@ class AttachInstancesDesktopInfo:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this AttachInstancesDesktopInfo.
+        r"""Sets the user_name of this AttachInstancesDesktopInfo.
 
         桌面所属的用户，当桌面分配成功后此用户可以登录该桌面。只允许输入大写字母、小写字母、数字、中划线（-）和下划线（_）。域类型为LITE_AD时，使用小写字母或者大写字母开头，长度范围为[1-20]。当域类型为LOCAL_AD时，用户名可以使用小写字母或者大写字母或者数字开头，长度范围为[1-32]。Windows桌面用户最长支持20个字符，Linux桌面用户最长支持32个字符。用户名不能与分配的机器名重名。 attach_user_infos为空时,必填,attach_user_infos优先级更高
 
@@ -129,7 +129,7 @@ class AttachInstancesDesktopInfo:
 
     @property
     def user_email(self):
-        """Gets the user_email of this AttachInstancesDesktopInfo.
+        r"""Gets the user_email of this AttachInstancesDesktopInfo.
 
         合法用户邮箱，桌面分配成功后系统会通过发送邮件的方式通知用户
 
@@ -140,7 +140,7 @@ class AttachInstancesDesktopInfo:
 
     @user_email.setter
     def user_email(self, user_email):
-        """Sets the user_email of this AttachInstancesDesktopInfo.
+        r"""Sets the user_email of this AttachInstancesDesktopInfo.
 
         合法用户邮箱，桌面分配成功后系统会通过发送邮件的方式通知用户
 
@@ -151,7 +151,7 @@ class AttachInstancesDesktopInfo:
 
     @property
     def user_group(self):
-        """Gets the user_group of this AttachInstancesDesktopInfo.
+        r"""Gets the user_group of this AttachInstancesDesktopInfo.
 
         桌面用户所属的用户组,attach_user_infos为空时,必填,attach_user_infos优先级更高。  - sudo：Linux管理员组。 - default：Linux默认用户组。 - administrators：Windows管理员组。管理员拥有对该桌面的完全访问权，可以做任何需要的更改（禁用操作除外）。 - users：Windows标准用户组。标准用户可以使用大多数软件，并可以更改不影响其他用户的系统设置。
 
@@ -162,7 +162,7 @@ class AttachInstancesDesktopInfo:
 
     @user_group.setter
     def user_group(self, user_group):
-        """Sets the user_group of this AttachInstancesDesktopInfo.
+        r"""Sets the user_group of this AttachInstancesDesktopInfo.
 
         桌面用户所属的用户组,attach_user_infos为空时,必填,attach_user_infos优先级更高。  - sudo：Linux管理员组。 - default：Linux默认用户组。 - administrators：Windows管理员组。管理员拥有对该桌面的完全访问权，可以做任何需要的更改（禁用操作除外）。 - users：Windows标准用户组。标准用户可以使用大多数软件，并可以更改不影响其他用户的系统设置。
 
@@ -173,7 +173,7 @@ class AttachInstancesDesktopInfo:
 
     @property
     def computer_name(self):
-        """Gets the computer_name of this AttachInstancesDesktopInfo.
+        r"""Gets the computer_name of this AttachInstancesDesktopInfo.
 
         桌面名，桌面名必须保证唯一。只允许输入大写字母、小写字母、数字、中划线（-）和下划线（_）；以字母开头且不允许以中划线（-）结尾；长度范围为[1-15]。
 
@@ -184,7 +184,7 @@ class AttachInstancesDesktopInfo:
 
     @computer_name.setter
     def computer_name(self, computer_name):
-        """Sets the computer_name of this AttachInstancesDesktopInfo.
+        r"""Sets the computer_name of this AttachInstancesDesktopInfo.
 
         桌面名，桌面名必须保证唯一。只允许输入大写字母、小写字母、数字、中划线（-）和下划线（_）；以字母开头且不允许以中划线（-）结尾；长度范围为[1-15]。
 
@@ -195,7 +195,7 @@ class AttachInstancesDesktopInfo:
 
     @property
     def is_clear_data(self):
-        """Gets the is_clear_data of this AttachInstancesDesktopInfo.
+        r"""Gets the is_clear_data of this AttachInstancesDesktopInfo.
 
         该字段只有当解绑和绑定为同一个用户时生效。表示绑定时是否清理桌面数据，true：清理，false：不清理，默认值为true。
 
@@ -206,7 +206,7 @@ class AttachInstancesDesktopInfo:
 
     @is_clear_data.setter
     def is_clear_data(self, is_clear_data):
-        """Sets the is_clear_data of this AttachInstancesDesktopInfo.
+        r"""Sets the is_clear_data of this AttachInstancesDesktopInfo.
 
         该字段只有当解绑和绑定为同一个用户时生效。表示绑定时是否清理桌面数据，true：清理，false：不清理，默认值为true。
 
@@ -217,7 +217,7 @@ class AttachInstancesDesktopInfo:
 
     @property
     def attach_user_infos(self):
-        """Gets the attach_user_infos of this AttachInstancesDesktopInfo.
+        r"""Gets the attach_user_infos of this AttachInstancesDesktopInfo.
 
         待分配的用户信息列表,只有多用户桌面分配多人时有效。
 
@@ -228,7 +228,7 @@ class AttachInstancesDesktopInfo:
 
     @attach_user_infos.setter
     def attach_user_infos(self, attach_user_infos):
-        """Sets the attach_user_infos of this AttachInstancesDesktopInfo.
+        r"""Sets the attach_user_infos of this AttachInstancesDesktopInfo.
 
         待分配的用户信息列表,只有多用户桌面分配多人时有效。
 

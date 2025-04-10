@@ -30,7 +30,7 @@ class CreateFlinkSqlJobTemplateResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, template=None):
-        """CreateFlinkSqlJobTemplateResponse
+        r"""CreateFlinkSqlJobTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateFlinkSqlJobTemplateResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this CreateFlinkSqlJobTemplateResponse.
+        r"""Gets the is_success of this CreateFlinkSqlJobTemplateResponse.
 
         请求是否成功
 
@@ -69,7 +69,7 @@ class CreateFlinkSqlJobTemplateResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this CreateFlinkSqlJobTemplateResponse.
+        r"""Sets the is_success of this CreateFlinkSqlJobTemplateResponse.
 
         请求是否成功
 
@@ -80,7 +80,7 @@ class CreateFlinkSqlJobTemplateResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this CreateFlinkSqlJobTemplateResponse.
+        r"""Gets the message of this CreateFlinkSqlJobTemplateResponse.
 
         消息内容
 
@@ -91,7 +91,7 @@ class CreateFlinkSqlJobTemplateResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CreateFlinkSqlJobTemplateResponse.
+        r"""Sets the message of this CreateFlinkSqlJobTemplateResponse.
 
         消息内容
 
@@ -102,7 +102,7 @@ class CreateFlinkSqlJobTemplateResponse(SdkResponse):
 
     @property
     def template(self):
-        """Gets the template of this CreateFlinkSqlJobTemplateResponse.
+        r"""Gets the template of this CreateFlinkSqlJobTemplateResponse.
 
         :return: The template of this CreateFlinkSqlJobTemplateResponse.
         :rtype: :class:`huaweicloudsdkdli.v1.FlinkTemplate`
@@ -111,7 +111,7 @@ class CreateFlinkSqlJobTemplateResponse(SdkResponse):
 
     @template.setter
     def template(self, template):
-        """Sets the template of this CreateFlinkSqlJobTemplateResponse.
+        r"""Sets the template of this CreateFlinkSqlJobTemplateResponse.
 
         :param template: The template of this CreateFlinkSqlJobTemplateResponse.
         :type template: :class:`huaweicloudsdkdli.v1.FlinkTemplate`

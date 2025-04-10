@@ -31,7 +31,7 @@ class CreateFunctionRequest:
     }
 
     def __init__(self, instance_id=None, catalog_name=None, database_name=None, body=None):
-        """CreateFunctionRequest
+        r"""CreateFunctionRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class CreateFunctionRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateFunctionRequest.
+        r"""Gets the instance_id of this CreateFunctionRequest.
 
         实例Id
 
@@ -72,7 +72,7 @@ class CreateFunctionRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateFunctionRequest.
+        r"""Sets the instance_id of this CreateFunctionRequest.
 
         实例Id
 
@@ -83,7 +83,7 @@ class CreateFunctionRequest:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this CreateFunctionRequest.
+        r"""Gets the catalog_name of this CreateFunctionRequest.
 
         catalog名字
 
@@ -94,7 +94,7 @@ class CreateFunctionRequest:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this CreateFunctionRequest.
+        r"""Sets the catalog_name of this CreateFunctionRequest.
 
         catalog名字
 
@@ -105,7 +105,7 @@ class CreateFunctionRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this CreateFunctionRequest.
+        r"""Gets the database_name of this CreateFunctionRequest.
 
         数据库名字
 
@@ -116,7 +116,7 @@ class CreateFunctionRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this CreateFunctionRequest.
+        r"""Sets the database_name of this CreateFunctionRequest.
 
         数据库名字
 
@@ -127,7 +127,7 @@ class CreateFunctionRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateFunctionRequest.
+        r"""Gets the body of this CreateFunctionRequest.
 
         :return: The body of this CreateFunctionRequest.
         :rtype: :class:`huaweicloudsdklakeformation.v1.FunctionInput`
@@ -136,7 +136,7 @@ class CreateFunctionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateFunctionRequest.
+        r"""Sets the body of this CreateFunctionRequest.
 
         :param body: The body of this CreateFunctionRequest.
         :type body: :class:`huaweicloudsdklakeformation.v1.FunctionInput`

@@ -27,7 +27,7 @@ class KeystoneListProjectPermissionsForGroupRequest:
     }
 
     def __init__(self, project_id=None, group_id=None):
-        """KeystoneListProjectPermissionsForGroupRequest
+        r"""KeystoneListProjectPermissionsForGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class KeystoneListProjectPermissionsForGroupRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this KeystoneListProjectPermissionsForGroupRequest.
+        r"""Gets the project_id of this KeystoneListProjectPermissionsForGroupRequest.
 
         项目ID，获取方式请参见：[获取项目名称、项目ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -59,7 +59,7 @@ class KeystoneListProjectPermissionsForGroupRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this KeystoneListProjectPermissionsForGroupRequest.
+        r"""Sets the project_id of this KeystoneListProjectPermissionsForGroupRequest.
 
         项目ID，获取方式请参见：[获取项目名称、项目ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -70,7 +70,7 @@ class KeystoneListProjectPermissionsForGroupRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this KeystoneListProjectPermissionsForGroupRequest.
+        r"""Gets the group_id of this KeystoneListProjectPermissionsForGroupRequest.
 
         用户组ID，获取方式请参见：[获取用户组ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -81,7 +81,7 @@ class KeystoneListProjectPermissionsForGroupRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this KeystoneListProjectPermissionsForGroupRequest.
+        r"""Sets the group_id of this KeystoneListProjectPermissionsForGroupRequest.
 
         用户组ID，获取方式请参见：[获取用户组ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 

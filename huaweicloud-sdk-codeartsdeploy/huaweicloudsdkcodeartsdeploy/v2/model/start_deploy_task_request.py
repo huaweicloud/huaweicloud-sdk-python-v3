@@ -27,7 +27,7 @@ class StartDeployTaskRequest:
     }
 
     def __init__(self, task_id=None, body=None):
-        """StartDeployTaskRequest
+        r"""StartDeployTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class StartDeployTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this StartDeployTaskRequest.
+        r"""Gets the task_id of this StartDeployTaskRequest.
 
         部署任务id
 
@@ -60,7 +60,7 @@ class StartDeployTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this StartDeployTaskRequest.
+        r"""Sets the task_id of this StartDeployTaskRequest.
 
         部署任务id
 
@@ -71,7 +71,7 @@ class StartDeployTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this StartDeployTaskRequest.
+        r"""Gets the body of this StartDeployTaskRequest.
 
         :return: The body of this StartDeployTaskRequest.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.EnvExecutionBody`
@@ -80,7 +80,7 @@ class StartDeployTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StartDeployTaskRequest.
+        r"""Sets the body of this StartDeployTaskRequest.
 
         :param body: The body of this StartDeployTaskRequest.
         :type body: :class:`huaweicloudsdkcodeartsdeploy.v2.EnvExecutionBody`

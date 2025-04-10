@@ -25,7 +25,7 @@ class UpdateYmlsReqEditModify:
     }
 
     def __init__(self, elasticsearch_yml=None):
-        """UpdateYmlsReqEditModify
+        r"""UpdateYmlsReqEditModify
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateYmlsReqEditModify:
 
     @property
     def elasticsearch_yml(self):
-        """Gets the elasticsearch_yml of this UpdateYmlsReqEditModify.
+        r"""Gets the elasticsearch_yml of this UpdateYmlsReqEditModify.
 
         参数配置列表。值为需要修改的json数据。
 
@@ -53,7 +53,7 @@ class UpdateYmlsReqEditModify:
 
     @elasticsearch_yml.setter
     def elasticsearch_yml(self, elasticsearch_yml):
-        """Sets the elasticsearch_yml of this UpdateYmlsReqEditModify.
+        r"""Sets the elasticsearch_yml of this UpdateYmlsReqEditModify.
 
         参数配置列表。值为需要修改的json数据。
 

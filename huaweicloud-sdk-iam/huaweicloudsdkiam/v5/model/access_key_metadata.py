@@ -31,7 +31,7 @@ class AccessKeyMetadata:
     }
 
     def __init__(self, user_id=None, access_key_id=None, created_at=None, status=None):
-        """AccessKeyMetadata
+        r"""AccessKeyMetadata
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class AccessKeyMetadata:
 
     @property
     def user_id(self):
-        """Gets the user_id of this AccessKeyMetadata.
+        r"""Gets the user_id of this AccessKeyMetadata.
 
         IAM用户ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -71,7 +71,7 @@ class AccessKeyMetadata:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this AccessKeyMetadata.
+        r"""Sets the user_id of this AccessKeyMetadata.
 
         IAM用户ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -82,7 +82,7 @@ class AccessKeyMetadata:
 
     @property
     def access_key_id(self):
-        """Gets the access_key_id of this AccessKeyMetadata.
+        r"""Gets the access_key_id of this AccessKeyMetadata.
 
         永久访问密钥ID，即AK。
 
@@ -93,7 +93,7 @@ class AccessKeyMetadata:
 
     @access_key_id.setter
     def access_key_id(self, access_key_id):
-        """Sets the access_key_id of this AccessKeyMetadata.
+        r"""Sets the access_key_id of this AccessKeyMetadata.
 
         永久访问密钥ID，即AK。
 
@@ -104,7 +104,7 @@ class AccessKeyMetadata:
 
     @property
     def created_at(self):
-        """Gets the created_at of this AccessKeyMetadata.
+        r"""Gets the created_at of this AccessKeyMetadata.
 
         访问密钥创建时间。
 
@@ -115,7 +115,7 @@ class AccessKeyMetadata:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this AccessKeyMetadata.
+        r"""Sets the created_at of this AccessKeyMetadata.
 
         访问密钥创建时间。
 
@@ -126,7 +126,7 @@ class AccessKeyMetadata:
 
     @property
     def status(self):
-        """Gets the status of this AccessKeyMetadata.
+        r"""Gets the status of this AccessKeyMetadata.
 
         :return: The status of this AccessKeyMetadata.
         :rtype: :class:`huaweicloudsdkiam.v5.AccessKeyStatus`
@@ -135,7 +135,7 @@ class AccessKeyMetadata:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AccessKeyMetadata.
+        r"""Sets the status of this AccessKeyMetadata.
 
         :param status: The status of this AccessKeyMetadata.
         :type status: :class:`huaweicloudsdkiam.v5.AccessKeyStatus`

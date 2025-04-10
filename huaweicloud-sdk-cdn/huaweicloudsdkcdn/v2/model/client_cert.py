@@ -29,7 +29,7 @@ class ClientCert:
     }
 
     def __init__(self, status=None, trusted_cert=None, hosts=None):
-        """ClientCert
+        r"""ClientCert
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ClientCert:
 
     @property
     def status(self):
-        """Gets the status of this ClientCert.
+        r"""Gets the status of this ClientCert.
 
         客户端证书配置开关，on：打开；off：关闭。
 
@@ -66,7 +66,7 @@ class ClientCert:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ClientCert.
+        r"""Sets the status of this ClientCert.
 
         客户端证书配置开关，on：打开；off：关闭。
 
@@ -77,7 +77,7 @@ class ClientCert:
 
     @property
     def trusted_cert(self):
-        """Gets the trusted_cert of this ClientCert.
+        r"""Gets the trusted_cert of this ClientCert.
 
         客户端CA证书的内容，仅支持PEM格式。
 
@@ -88,7 +88,7 @@ class ClientCert:
 
     @trusted_cert.setter
     def trusted_cert(self, trusted_cert):
-        """Sets the trusted_cert of this ClientCert.
+        r"""Sets the trusted_cert of this ClientCert.
 
         客户端CA证书的内容，仅支持PEM格式。
 
@@ -99,7 +99,7 @@ class ClientCert:
 
     @property
     def hosts(self):
-        """Gets the hosts of this ClientCert.
+        r"""Gets the hosts of this ClientCert.
 
         客户端CA证书指定的域名。   > 1. 如果不配置域名，则CDN会放行所有持有该CA证书的客户端请求。   > 2. 最多可配置100个域名，多个域名用“,”或“|”分隔。
 
@@ -110,7 +110,7 @@ class ClientCert:
 
     @hosts.setter
     def hosts(self, hosts):
-        """Sets the hosts of this ClientCert.
+        r"""Sets the hosts of this ClientCert.
 
         客户端CA证书指定的域名。   > 1. 如果不配置域名，则CDN会放行所有持有该CA证书的客户端请求。   > 2. 最多可配置100个域名，多个域名用“,”或“|”分隔。
 

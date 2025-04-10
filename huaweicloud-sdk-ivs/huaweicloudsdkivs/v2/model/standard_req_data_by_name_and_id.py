@@ -33,7 +33,7 @@ class StandardReqDataByNameAndId:
     }
 
     def __init__(self, verification_name=None, verification_id=None, face_image=None, detail=None, crop=None):
-        """StandardReqDataByNameAndId
+        r"""StandardReqDataByNameAndId
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class StandardReqDataByNameAndId:
 
     @property
     def verification_name(self):
-        """Gets the verification_name of this StandardReqDataByNameAndId.
+        r"""Gets the verification_name of this StandardReqDataByNameAndId.
 
         被验证人的姓名。
 
@@ -79,7 +79,7 @@ class StandardReqDataByNameAndId:
 
     @verification_name.setter
     def verification_name(self, verification_name):
-        """Sets the verification_name of this StandardReqDataByNameAndId.
+        r"""Sets the verification_name of this StandardReqDataByNameAndId.
 
         被验证人的姓名。
 
@@ -90,7 +90,7 @@ class StandardReqDataByNameAndId:
 
     @property
     def verification_id(self):
-        """Gets the verification_id of this StandardReqDataByNameAndId.
+        r"""Gets the verification_id of this StandardReqDataByNameAndId.
 
         被验证人的身份证号码。
 
@@ -101,7 +101,7 @@ class StandardReqDataByNameAndId:
 
     @verification_id.setter
     def verification_id(self, verification_id):
-        """Sets the verification_id of this StandardReqDataByNameAndId.
+        r"""Sets the verification_id of this StandardReqDataByNameAndId.
 
         被验证人的身份证号码。
 
@@ -112,7 +112,7 @@ class StandardReqDataByNameAndId:
 
     @property
     def face_image(self):
-        """Gets the face_image of this StandardReqDataByNameAndId.
+        r"""Gets the face_image of this StandardReqDataByNameAndId.
 
         现场人像图像数据，使用base64编码，要求base64编码后大小不超过4M。图像各边的像素大小在300到4000之间，支持JPG格式。
 
@@ -123,7 +123,7 @@ class StandardReqDataByNameAndId:
 
     @face_image.setter
     def face_image(self, face_image):
-        """Sets the face_image of this StandardReqDataByNameAndId.
+        r"""Sets the face_image of this StandardReqDataByNameAndId.
 
         现场人像图像数据，使用base64编码，要求base64编码后大小不超过4M。图像各边的像素大小在300到4000之间，支持JPG格式。
 
@@ -134,7 +134,7 @@ class StandardReqDataByNameAndId:
 
     @property
     def detail(self):
-        """Gets the detail of this StandardReqDataByNameAndId.
+        r"""Gets the detail of this StandardReqDataByNameAndId.
 
         响应参数similarity是否详细显示，默认为false。 - true表示响应中的similarity为0~1000的小数。 - false表示响应中的similarity为0~100的整数。
 
@@ -145,7 +145,7 @@ class StandardReqDataByNameAndId:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this StandardReqDataByNameAndId.
+        r"""Sets the detail of this StandardReqDataByNameAndId.
 
         响应参数similarity是否详细显示，默认为false。 - true表示响应中的similarity为0~1000的小数。 - false表示响应中的similarity为0~100的整数。
 
@@ -156,7 +156,7 @@ class StandardReqDataByNameAndId:
 
     @property
     def crop(self):
-        """Gets the crop of this StandardReqDataByNameAndId.
+        r"""Gets the crop of this StandardReqDataByNameAndId.
 
         是否允许对入参face_image进行人脸检测及图片裁剪，默认为true，表示允许。
 
@@ -167,7 +167,7 @@ class StandardReqDataByNameAndId:
 
     @crop.setter
     def crop(self, crop):
-        """Sets the crop of this StandardReqDataByNameAndId.
+        r"""Sets the crop of this StandardReqDataByNameAndId.
 
         是否允许对入参face_image进行人脸检测及图片裁剪，默认为true，表示允许。
 

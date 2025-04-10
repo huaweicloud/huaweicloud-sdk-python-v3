@@ -27,7 +27,7 @@ class PolicyDefinitionDefaultResourceTypes:
     }
 
     def __init__(self, provider=None, type=None):
-        """PolicyDefinitionDefaultResourceTypes
+        r"""PolicyDefinitionDefaultResourceTypes
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PolicyDefinitionDefaultResourceTypes:
 
     @property
     def provider(self):
-        """Gets the provider of this PolicyDefinitionDefaultResourceTypes.
+        r"""Gets the provider of this PolicyDefinitionDefaultResourceTypes.
 
         云服务名称
 
@@ -61,7 +61,7 @@ class PolicyDefinitionDefaultResourceTypes:
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this PolicyDefinitionDefaultResourceTypes.
+        r"""Sets the provider of this PolicyDefinitionDefaultResourceTypes.
 
         云服务名称
 
@@ -72,7 +72,7 @@ class PolicyDefinitionDefaultResourceTypes:
 
     @property
     def type(self):
-        """Gets the type of this PolicyDefinitionDefaultResourceTypes.
+        r"""Gets the type of this PolicyDefinitionDefaultResourceTypes.
 
         资源类型
 
@@ -83,7 +83,7 @@ class PolicyDefinitionDefaultResourceTypes:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PolicyDefinitionDefaultResourceTypes.
+        r"""Sets the type of this PolicyDefinitionDefaultResourceTypes.
 
         资源类型
 

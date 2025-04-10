@@ -27,7 +27,7 @@ class ConfirmTrainingSegmentRequest:
     }
 
     def __init__(self, job_id=None, index=None):
-        """ConfirmTrainingSegmentRequest
+        r"""ConfirmTrainingSegmentRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ConfirmTrainingSegmentRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ConfirmTrainingSegmentRequest.
+        r"""Gets the job_id of this ConfirmTrainingSegmentRequest.
 
         任务id。
 
@@ -59,7 +59,7 @@ class ConfirmTrainingSegmentRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ConfirmTrainingSegmentRequest.
+        r"""Sets the job_id of this ConfirmTrainingSegmentRequest.
 
         任务id。
 
@@ -70,7 +70,7 @@ class ConfirmTrainingSegmentRequest:
 
     @property
     def index(self):
-        """Gets the index of this ConfirmTrainingSegmentRequest.
+        r"""Gets the index of this ConfirmTrainingSegmentRequest.
 
         语句索引。
 
@@ -81,7 +81,7 @@ class ConfirmTrainingSegmentRequest:
 
     @index.setter
     def index(self, index):
-        """Sets the index of this ConfirmTrainingSegmentRequest.
+        r"""Sets the index of this ConfirmTrainingSegmentRequest.
 
         语句索引。
 

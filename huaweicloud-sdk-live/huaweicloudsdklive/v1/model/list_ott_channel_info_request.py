@@ -37,7 +37,7 @@ class ListOttChannelInfoRequest:
     }
 
     def __init__(self, access_control_allow_internal=None, access_control_allow_external=None, domain=None, app_name=None, id=None, limit=None, offset=None):
-        """ListOttChannelInfoRequest
+        r"""ListOttChannelInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListOttChannelInfoRequest:
 
     @property
     def access_control_allow_internal(self):
-        """Gets the access_control_allow_internal of this ListOttChannelInfoRequest.
+        r"""Gets the access_control_allow_internal of this ListOttChannelInfoRequest.
 
         服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-Internal访问服务。
 
@@ -96,7 +96,7 @@ class ListOttChannelInfoRequest:
 
     @access_control_allow_internal.setter
     def access_control_allow_internal(self, access_control_allow_internal):
-        """Sets the access_control_allow_internal of this ListOttChannelInfoRequest.
+        r"""Sets the access_control_allow_internal of this ListOttChannelInfoRequest.
 
         服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-Internal访问服务。
 
@@ -107,7 +107,7 @@ class ListOttChannelInfoRequest:
 
     @property
     def access_control_allow_external(self):
-        """Gets the access_control_allow_external of this ListOttChannelInfoRequest.
+        r"""Gets the access_control_allow_external of this ListOttChannelInfoRequest.
 
         服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-External访问服务。
 
@@ -118,7 +118,7 @@ class ListOttChannelInfoRequest:
 
     @access_control_allow_external.setter
     def access_control_allow_external(self, access_control_allow_external):
-        """Sets the access_control_allow_external of this ListOttChannelInfoRequest.
+        r"""Sets the access_control_allow_external of this ListOttChannelInfoRequest.
 
         服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-External访问服务。
 
@@ -129,7 +129,7 @@ class ListOttChannelInfoRequest:
 
     @property
     def domain(self):
-        """Gets the domain of this ListOttChannelInfoRequest.
+        r"""Gets the domain of this ListOttChannelInfoRequest.
 
         推流域名
 
@@ -140,7 +140,7 @@ class ListOttChannelInfoRequest:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ListOttChannelInfoRequest.
+        r"""Sets the domain of this ListOttChannelInfoRequest.
 
         推流域名
 
@@ -151,7 +151,7 @@ class ListOttChannelInfoRequest:
 
     @property
     def app_name(self):
-        """Gets the app_name of this ListOttChannelInfoRequest.
+        r"""Gets the app_name of this ListOttChannelInfoRequest.
 
         组名或应用名
 
@@ -162,7 +162,7 @@ class ListOttChannelInfoRequest:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ListOttChannelInfoRequest.
+        r"""Sets the app_name of this ListOttChannelInfoRequest.
 
         组名或应用名
 
@@ -173,7 +173,7 @@ class ListOttChannelInfoRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListOttChannelInfoRequest.
+        r"""Gets the id of this ListOttChannelInfoRequest.
 
         频道ID
 
@@ -184,7 +184,7 @@ class ListOttChannelInfoRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListOttChannelInfoRequest.
+        r"""Sets the id of this ListOttChannelInfoRequest.
 
         频道ID
 
@@ -195,7 +195,7 @@ class ListOttChannelInfoRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListOttChannelInfoRequest.
+        r"""Gets the limit of this ListOttChannelInfoRequest.
 
         每页记录数，取值范围[1,100]，默认值10
 
@@ -206,7 +206,7 @@ class ListOttChannelInfoRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListOttChannelInfoRequest.
+        r"""Sets the limit of this ListOttChannelInfoRequest.
 
         每页记录数，取值范围[1,100]，默认值10
 
@@ -217,7 +217,7 @@ class ListOttChannelInfoRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListOttChannelInfoRequest.
+        r"""Gets the offset of this ListOttChannelInfoRequest.
 
         偏移量。表示从此偏移量开始查询，offset大于等于0
 
@@ -228,7 +228,7 @@ class ListOttChannelInfoRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListOttChannelInfoRequest.
+        r"""Sets the offset of this ListOttChannelInfoRequest.
 
         偏移量。表示从此偏移量开始查询，offset大于等于0
 

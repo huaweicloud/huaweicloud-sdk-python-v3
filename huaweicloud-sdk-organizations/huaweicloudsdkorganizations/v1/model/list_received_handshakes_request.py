@@ -30,7 +30,7 @@ class ListReceivedHandshakesRequest:
     }
 
     def __init__(self, x_security_token=None, limit=None, marker=None):
-        """ListReceivedHandshakesRequest
+        r"""ListReceivedHandshakesRequest
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListReceivedHandshakesRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this ListReceivedHandshakesRequest.
+        r"""Gets the x_security_token of this ListReceivedHandshakesRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -69,7 +69,7 @@ class ListReceivedHandshakesRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this ListReceivedHandshakesRequest.
+        r"""Sets the x_security_token of this ListReceivedHandshakesRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -80,7 +80,7 @@ class ListReceivedHandshakesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListReceivedHandshakesRequest.
+        r"""Gets the limit of this ListReceivedHandshakesRequest.
 
         页面中最大结果数量。
 
@@ -91,7 +91,7 @@ class ListReceivedHandshakesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListReceivedHandshakesRequest.
+        r"""Sets the limit of this ListReceivedHandshakesRequest.
 
         页面中最大结果数量。
 
@@ -102,7 +102,7 @@ class ListReceivedHandshakesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListReceivedHandshakesRequest.
+        r"""Gets the marker of this ListReceivedHandshakesRequest.
 
         分页标记。
 
@@ -113,7 +113,7 @@ class ListReceivedHandshakesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListReceivedHandshakesRequest.
+        r"""Sets the marker of this ListReceivedHandshakesRequest.
 
         分页标记。
 

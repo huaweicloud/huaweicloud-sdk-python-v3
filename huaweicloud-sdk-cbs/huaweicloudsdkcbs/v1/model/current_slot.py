@@ -31,7 +31,7 @@ class CurrentSlot:
     }
 
     def __init__(self, slot_id=None, slot_name=None, slot_values=None, slot_identification=None):
-        """CurrentSlot
+        r"""CurrentSlot
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class CurrentSlot:
 
     @property
     def slot_id(self):
-        """Gets the slot_id of this CurrentSlot.
+        r"""Gets the slot_id of this CurrentSlot.
 
         槽位ID。
 
@@ -72,7 +72,7 @@ class CurrentSlot:
 
     @slot_id.setter
     def slot_id(self, slot_id):
-        """Sets the slot_id of this CurrentSlot.
+        r"""Sets the slot_id of this CurrentSlot.
 
         槽位ID。
 
@@ -83,7 +83,7 @@ class CurrentSlot:
 
     @property
     def slot_name(self):
-        """Gets the slot_name of this CurrentSlot.
+        r"""Gets the slot_name of this CurrentSlot.
 
         槽位名称。
 
@@ -94,7 +94,7 @@ class CurrentSlot:
 
     @slot_name.setter
     def slot_name(self, slot_name):
-        """Sets the slot_name of this CurrentSlot.
+        r"""Sets the slot_name of this CurrentSlot.
 
         槽位名称。
 
@@ -105,7 +105,7 @@ class CurrentSlot:
 
     @property
     def slot_values(self):
-        """Gets the slot_values of this CurrentSlot.
+        r"""Gets the slot_values of this CurrentSlot.
 
         槽位值。
 
@@ -116,7 +116,7 @@ class CurrentSlot:
 
     @slot_values.setter
     def slot_values(self, slot_values):
-        """Sets the slot_values of this CurrentSlot.
+        r"""Sets the slot_values of this CurrentSlot.
 
         槽位值。
 
@@ -127,7 +127,7 @@ class CurrentSlot:
 
     @property
     def slot_identification(self):
-        """Gets the slot_identification of this CurrentSlot.
+        r"""Gets the slot_identification of this CurrentSlot.
 
         槽位标识。
 
@@ -138,7 +138,7 @@ class CurrentSlot:
 
     @slot_identification.setter
     def slot_identification(self, slot_identification):
-        """Sets the slot_identification of this CurrentSlot.
+        r"""Sets the slot_identification of this CurrentSlot.
 
         槽位标识。
 

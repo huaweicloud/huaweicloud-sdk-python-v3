@@ -27,7 +27,7 @@ class LiveJobRunConfig:
     }
 
     def __init__(self, allow_resource_type=None, single_job_in_room=None):
-        """LiveJobRunConfig
+        r"""LiveJobRunConfig
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class LiveJobRunConfig:
 
     @property
     def allow_resource_type(self):
-        """Gets the allow_resource_type of this LiveJobRunConfig.
+        r"""Gets the allow_resource_type of this LiveJobRunConfig.
 
         允许使用资源类型。 * PERIOD：使用包周期资源 * ONDEMAND：使用按需资源 * UNLIMITED：不限制资源类型
 
@@ -61,7 +61,7 @@ class LiveJobRunConfig:
 
     @allow_resource_type.setter
     def allow_resource_type(self, allow_resource_type):
-        """Sets the allow_resource_type of this LiveJobRunConfig.
+        r"""Sets the allow_resource_type of this LiveJobRunConfig.
 
         允许使用资源类型。 * PERIOD：使用包周期资源 * ONDEMAND：使用按需资源 * UNLIMITED：不限制资源类型
 
@@ -72,7 +72,7 @@ class LiveJobRunConfig:
 
     @property
     def single_job_in_room(self):
-        """Gets the single_job_in_room of this LiveJobRunConfig.
+        r"""Gets the single_job_in_room of this LiveJobRunConfig.
 
         一个直播间是否仅允许一个正在直播的任务。 * true: 限制直播间仅允许一个任务运行。 * false: 不限制直播间任务运行数量。
 
@@ -83,7 +83,7 @@ class LiveJobRunConfig:
 
     @single_job_in_room.setter
     def single_job_in_room(self, single_job_in_room):
-        """Sets the single_job_in_room of this LiveJobRunConfig.
+        r"""Sets the single_job_in_room of this LiveJobRunConfig.
 
         一个直播间是否仅允许一个正在直播的任务。 * true: 限制直播间仅允许一个任务运行。 * false: 不限制直播间任务运行数量。
 

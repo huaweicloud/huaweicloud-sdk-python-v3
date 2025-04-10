@@ -27,7 +27,7 @@ class ShowExecutionParamsRequest:
     }
 
     def __init__(self, task_id=None, record_id=None):
-        """ShowExecutionParamsRequest
+        r"""ShowExecutionParamsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowExecutionParamsRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowExecutionParamsRequest.
+        r"""Gets the task_id of this ShowExecutionParamsRequest.
 
         任务id
 
@@ -60,7 +60,7 @@ class ShowExecutionParamsRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowExecutionParamsRequest.
+        r"""Sets the task_id of this ShowExecutionParamsRequest.
 
         任务id
 
@@ -71,7 +71,7 @@ class ShowExecutionParamsRequest:
 
     @property
     def record_id(self):
-        """Gets the record_id of this ShowExecutionParamsRequest.
+        r"""Gets the record_id of this ShowExecutionParamsRequest.
 
         执行记录id
 
@@ -82,7 +82,7 @@ class ShowExecutionParamsRequest:
 
     @record_id.setter
     def record_id(self, record_id):
-        """Sets the record_id of this ShowExecutionParamsRequest.
+        r"""Sets the record_id of this ShowExecutionParamsRequest.
 
         执行记录id
 

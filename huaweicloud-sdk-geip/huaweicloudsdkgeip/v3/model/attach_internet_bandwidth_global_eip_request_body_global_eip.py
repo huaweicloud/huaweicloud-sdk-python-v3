@@ -25,7 +25,7 @@ class AttachInternetBandwidthGlobalEipRequestBodyGlobalEip:
     }
 
     def __init__(self, internet_bandwidth_id=None):
-        """AttachInternetBandwidthGlobalEipRequestBodyGlobalEip
+        r"""AttachInternetBandwidthGlobalEipRequestBodyGlobalEip
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AttachInternetBandwidthGlobalEipRequestBodyGlobalEip:
 
     @property
     def internet_bandwidth_id(self):
-        """Gets the internet_bandwidth_id of this AttachInternetBandwidthGlobalEipRequestBodyGlobalEip.
+        r"""Gets the internet_bandwidth_id of this AttachInternetBandwidthGlobalEipRequestBodyGlobalEip.
 
         全域公网带宽的ID
 
@@ -53,7 +53,7 @@ class AttachInternetBandwidthGlobalEipRequestBodyGlobalEip:
 
     @internet_bandwidth_id.setter
     def internet_bandwidth_id(self, internet_bandwidth_id):
-        """Sets the internet_bandwidth_id of this AttachInternetBandwidthGlobalEipRequestBodyGlobalEip.
+        r"""Sets the internet_bandwidth_id of this AttachInternetBandwidthGlobalEipRequestBodyGlobalEip.
 
         全域公网带宽的ID
 

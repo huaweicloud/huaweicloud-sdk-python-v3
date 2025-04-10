@@ -26,7 +26,7 @@ class ListBranchesResponse(SdkResponse):
     }
 
     def __init__(self, branches=None):
-        """ListBranchesResponse
+        r"""ListBranchesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListBranchesResponse(SdkResponse):
 
     @property
     def branches(self):
-        """Gets the branches of this ListBranchesResponse.
+        r"""Gets the branches of this ListBranchesResponse.
 
         项目分支列表。
 
@@ -55,7 +55,7 @@ class ListBranchesResponse(SdkResponse):
 
     @branches.setter
     def branches(self, branches):
-        """Sets the branches of this ListBranchesResponse.
+        r"""Sets the branches of this ListBranchesResponse.
 
         项目分支列表。
 

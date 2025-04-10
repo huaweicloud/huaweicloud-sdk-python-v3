@@ -27,7 +27,7 @@ class ConstituencyParserReq:
     }
 
     def __init__(self, lang=None, text=None):
-        """ConstituencyParserReq
+        r"""ConstituencyParserReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ConstituencyParserReq:
 
     @property
     def lang(self):
-        """Gets the lang of this ConstituencyParserReq.
+        r"""Gets the lang of this ConstituencyParserReq.
 
         支持的文本语言类型，目前支持中文（zh）。
 
@@ -60,7 +60,7 @@ class ConstituencyParserReq:
 
     @lang.setter
     def lang(self, lang):
-        """Sets the lang of this ConstituencyParserReq.
+        r"""Sets the lang of this ConstituencyParserReq.
 
         支持的文本语言类型，目前支持中文（zh）。
 
@@ -71,7 +71,7 @@ class ConstituencyParserReq:
 
     @property
     def text(self):
-        """Gets the text of this ConstituencyParserReq.
+        r"""Gets the text of this ConstituencyParserReq.
 
         待分析文本，长度为1~32。
 
@@ -82,7 +82,7 @@ class ConstituencyParserReq:
 
     @text.setter
     def text(self, text):
-        """Sets the text of this ConstituencyParserReq.
+        r"""Sets the text of this ConstituencyParserReq.
 
         待分析文本，长度为1~32。
 

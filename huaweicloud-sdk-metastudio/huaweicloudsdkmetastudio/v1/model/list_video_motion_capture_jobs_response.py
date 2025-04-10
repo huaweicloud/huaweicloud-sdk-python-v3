@@ -30,7 +30,7 @@ class ListVideoMotionCaptureJobsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, video_motion_capture_jobs=None, x_request_id=None):
-        """ListVideoMotionCaptureJobsResponse
+        r"""ListVideoMotionCaptureJobsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListVideoMotionCaptureJobsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListVideoMotionCaptureJobsResponse.
+        r"""Gets the total of this ListVideoMotionCaptureJobsResponse.
 
         视频驱动任务总数。
 
@@ -69,7 +69,7 @@ class ListVideoMotionCaptureJobsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListVideoMotionCaptureJobsResponse.
+        r"""Sets the total of this ListVideoMotionCaptureJobsResponse.
 
         视频驱动任务总数。
 
@@ -80,7 +80,7 @@ class ListVideoMotionCaptureJobsResponse(SdkResponse):
 
     @property
     def video_motion_capture_jobs(self):
-        """Gets the video_motion_capture_jobs of this ListVideoMotionCaptureJobsResponse.
+        r"""Gets the video_motion_capture_jobs of this ListVideoMotionCaptureJobsResponse.
 
         视频驱动任务列表。
 
@@ -91,7 +91,7 @@ class ListVideoMotionCaptureJobsResponse(SdkResponse):
 
     @video_motion_capture_jobs.setter
     def video_motion_capture_jobs(self, video_motion_capture_jobs):
-        """Sets the video_motion_capture_jobs of this ListVideoMotionCaptureJobsResponse.
+        r"""Sets the video_motion_capture_jobs of this ListVideoMotionCaptureJobsResponse.
 
         视频驱动任务列表。
 
@@ -102,7 +102,7 @@ class ListVideoMotionCaptureJobsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListVideoMotionCaptureJobsResponse.
+        r"""Gets the x_request_id of this ListVideoMotionCaptureJobsResponse.
 
         :return: The x_request_id of this ListVideoMotionCaptureJobsResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListVideoMotionCaptureJobsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListVideoMotionCaptureJobsResponse.
+        r"""Sets the x_request_id of this ListVideoMotionCaptureJobsResponse.
 
         :param x_request_id: The x_request_id of this ListVideoMotionCaptureJobsResponse.
         :type x_request_id: str

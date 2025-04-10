@@ -35,7 +35,7 @@ class UpdateTopicObject:
     }
 
     def __init__(self, name=None, retention_time=None, sync_replication=None, sync_message_flush=None, description=None, sensitive_word=None):
-        """UpdateTopicObject
+        r"""UpdateTopicObject
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class UpdateTopicObject:
 
     @property
     def name(self):
-        """Gets the name of this UpdateTopicObject.
+        r"""Gets the name of this UpdateTopicObject.
 
         topic名称。
 
@@ -88,7 +88,7 @@ class UpdateTopicObject:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateTopicObject.
+        r"""Sets the name of this UpdateTopicObject.
 
         topic名称。
 
@@ -99,7 +99,7 @@ class UpdateTopicObject:
 
     @property
     def retention_time(self):
-        """Gets the retention_time of this UpdateTopicObject.
+        r"""Gets the retention_time of this UpdateTopicObject.
 
         消息老化时间。默认值为72。取值范围1~720，单位小时。
 
@@ -110,7 +110,7 @@ class UpdateTopicObject:
 
     @retention_time.setter
     def retention_time(self, retention_time):
-        """Sets the retention_time of this UpdateTopicObject.
+        r"""Sets the retention_time of this UpdateTopicObject.
 
         消息老化时间。默认值为72。取值范围1~720，单位小时。
 
@@ -121,7 +121,7 @@ class UpdateTopicObject:
 
     @property
     def sync_replication(self):
-        """Gets the sync_replication of this UpdateTopicObject.
+        r"""Gets the sync_replication of this UpdateTopicObject.
 
         是否开启同步复制。
 
@@ -132,7 +132,7 @@ class UpdateTopicObject:
 
     @sync_replication.setter
     def sync_replication(self, sync_replication):
-        """Sets the sync_replication of this UpdateTopicObject.
+        r"""Sets the sync_replication of this UpdateTopicObject.
 
         是否开启同步复制。
 
@@ -143,7 +143,7 @@ class UpdateTopicObject:
 
     @property
     def sync_message_flush(self):
-        """Gets the sync_message_flush of this UpdateTopicObject.
+        r"""Gets the sync_message_flush of this UpdateTopicObject.
 
         是否使用同步落盘。
 
@@ -154,7 +154,7 @@ class UpdateTopicObject:
 
     @sync_message_flush.setter
     def sync_message_flush(self, sync_message_flush):
-        """Sets the sync_message_flush of this UpdateTopicObject.
+        r"""Sets the sync_message_flush of this UpdateTopicObject.
 
         是否使用同步落盘。
 
@@ -165,7 +165,7 @@ class UpdateTopicObject:
 
     @property
     def description(self):
-        """Gets the description of this UpdateTopicObject.
+        r"""Gets the description of this UpdateTopicObject.
 
         描述。
 
@@ -176,7 +176,7 @@ class UpdateTopicObject:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateTopicObject.
+        r"""Sets the description of this UpdateTopicObject.
 
         描述。
 
@@ -187,7 +187,7 @@ class UpdateTopicObject:
 
     @property
     def sensitive_word(self):
-        """Gets the sensitive_word of this UpdateTopicObject.
+        r"""Gets the sensitive_word of this UpdateTopicObject.
 
         敏感字段。
 
@@ -198,7 +198,7 @@ class UpdateTopicObject:
 
     @sensitive_word.setter
     def sensitive_word(self, sensitive_word):
-        """Sets the sensitive_word of this UpdateTopicObject.
+        r"""Sets the sensitive_word of this UpdateTopicObject.
 
         敏感字段。
 

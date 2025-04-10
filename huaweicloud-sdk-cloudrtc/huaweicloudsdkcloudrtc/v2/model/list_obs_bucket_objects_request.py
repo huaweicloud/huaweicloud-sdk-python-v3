@@ -31,7 +31,7 @@ class ListObsBucketObjectsRequest:
     }
 
     def __init__(self, bucket=None, prefix=None, type=None, location=None):
-        """ListObsBucketObjectsRequest
+        r"""ListObsBucketObjectsRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ListObsBucketObjectsRequest:
 
     @property
     def bucket(self):
-        """Gets the bucket of this ListObsBucketObjectsRequest.
+        r"""Gets the bucket of this ListObsBucketObjectsRequest.
 
         要查询的桶名
 
@@ -72,7 +72,7 @@ class ListObsBucketObjectsRequest:
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this ListObsBucketObjectsRequest.
+        r"""Sets the bucket of this ListObsBucketObjectsRequest.
 
         要查询的桶名
 
@@ -83,7 +83,7 @@ class ListObsBucketObjectsRequest:
 
     @property
     def prefix(self):
-        """Gets the prefix of this ListObsBucketObjectsRequest.
+        r"""Gets the prefix of this ListObsBucketObjectsRequest.
 
         对象名前缀，可以理解为文件夹路径
 
@@ -94,7 +94,7 @@ class ListObsBucketObjectsRequest:
 
     @prefix.setter
     def prefix(self, prefix):
-        """Sets the prefix of this ListObsBucketObjectsRequest.
+        r"""Sets the prefix of this ListObsBucketObjectsRequest.
 
         对象名前缀，可以理解为文件夹路径
 
@@ -105,7 +105,7 @@ class ListObsBucketObjectsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListObsBucketObjectsRequest.
+        r"""Gets the type of this ListObsBucketObjectsRequest.
 
         查询类似，取值“folders”“objects”前者为查询目录，后者为查询对象
 
@@ -116,7 +116,7 @@ class ListObsBucketObjectsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListObsBucketObjectsRequest.
+        r"""Sets the type of this ListObsBucketObjectsRequest.
 
         查询类似，取值“folders”“objects”前者为查询目录，后者为查询对象
 
@@ -127,7 +127,7 @@ class ListObsBucketObjectsRequest:
 
     @property
     def location(self):
-        """Gets the location of this ListObsBucketObjectsRequest.
+        r"""Gets the location of this ListObsBucketObjectsRequest.
 
         查询bucket所在的region
 
@@ -138,7 +138,7 @@ class ListObsBucketObjectsRequest:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this ListObsBucketObjectsRequest.
+        r"""Sets the location of this ListObsBucketObjectsRequest.
 
         查询bucket所在的region
 

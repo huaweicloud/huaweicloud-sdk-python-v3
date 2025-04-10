@@ -39,7 +39,7 @@ class BlockedIpResponseInfo:
     }
 
     def __init__(self, host_id=None, host_name=None, src_ip=None, login_type=None, intercept_num=None, intercept_status=None, block_time=None, latest_time=None):
-        """BlockedIpResponseInfo
+        r"""BlockedIpResponseInfo
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class BlockedIpResponseInfo:
 
     @property
     def host_id(self):
-        """Gets the host_id of this BlockedIpResponseInfo.
+        r"""Gets the host_id of this BlockedIpResponseInfo.
 
         主机ID
 
@@ -95,7 +95,7 @@ class BlockedIpResponseInfo:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this BlockedIpResponseInfo.
+        r"""Sets the host_id of this BlockedIpResponseInfo.
 
         主机ID
 
@@ -106,7 +106,7 @@ class BlockedIpResponseInfo:
 
     @property
     def host_name(self):
-        """Gets the host_name of this BlockedIpResponseInfo.
+        r"""Gets the host_name of this BlockedIpResponseInfo.
 
         服务器名称
 
@@ -117,7 +117,7 @@ class BlockedIpResponseInfo:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this BlockedIpResponseInfo.
+        r"""Sets the host_name of this BlockedIpResponseInfo.
 
         服务器名称
 
@@ -128,7 +128,7 @@ class BlockedIpResponseInfo:
 
     @property
     def src_ip(self):
-        """Gets the src_ip of this BlockedIpResponseInfo.
+        r"""Gets the src_ip of this BlockedIpResponseInfo.
 
         攻击源IP
 
@@ -139,7 +139,7 @@ class BlockedIpResponseInfo:
 
     @src_ip.setter
     def src_ip(self, src_ip):
-        """Sets the src_ip of this BlockedIpResponseInfo.
+        r"""Sets the src_ip of this BlockedIpResponseInfo.
 
         攻击源IP
 
@@ -150,7 +150,7 @@ class BlockedIpResponseInfo:
 
     @property
     def login_type(self):
-        """Gets the login_type of this BlockedIpResponseInfo.
+        r"""Gets the login_type of this BlockedIpResponseInfo.
 
         登录类型，包含如下: - \"mysql\" # mysql服务 - \"rdp\" # rdp服务服务 - \"ssh\" # ssh服务 - \"vsftp\" # vsftp服务
 
@@ -161,7 +161,7 @@ class BlockedIpResponseInfo:
 
     @login_type.setter
     def login_type(self, login_type):
-        """Sets the login_type of this BlockedIpResponseInfo.
+        r"""Sets the login_type of this BlockedIpResponseInfo.
 
         登录类型，包含如下: - \"mysql\" # mysql服务 - \"rdp\" # rdp服务服务 - \"ssh\" # ssh服务 - \"vsftp\" # vsftp服务
 
@@ -172,7 +172,7 @@ class BlockedIpResponseInfo:
 
     @property
     def intercept_num(self):
-        """Gets the intercept_num of this BlockedIpResponseInfo.
+        r"""Gets the intercept_num of this BlockedIpResponseInfo.
 
         拦截次数
 
@@ -183,7 +183,7 @@ class BlockedIpResponseInfo:
 
     @intercept_num.setter
     def intercept_num(self, intercept_num):
-        """Sets the intercept_num of this BlockedIpResponseInfo.
+        r"""Sets the intercept_num of this BlockedIpResponseInfo.
 
         拦截次数
 
@@ -194,7 +194,7 @@ class BlockedIpResponseInfo:
 
     @property
     def intercept_status(self):
-        """Gets the intercept_status of this BlockedIpResponseInfo.
+        r"""Gets the intercept_status of this BlockedIpResponseInfo.
 
         拦截状态，包含如下:   - \"intercepted\" # 已拦截   - \"canceled\" # 已解除拦截   - \"cancelling\" # 待解除拦截
 
@@ -205,7 +205,7 @@ class BlockedIpResponseInfo:
 
     @intercept_status.setter
     def intercept_status(self, intercept_status):
-        """Sets the intercept_status of this BlockedIpResponseInfo.
+        r"""Sets the intercept_status of this BlockedIpResponseInfo.
 
         拦截状态，包含如下:   - \"intercepted\" # 已拦截   - \"canceled\" # 已解除拦截   - \"cancelling\" # 待解除拦截
 
@@ -216,7 +216,7 @@ class BlockedIpResponseInfo:
 
     @property
     def block_time(self):
-        """Gets the block_time of this BlockedIpResponseInfo.
+        r"""Gets the block_time of this BlockedIpResponseInfo.
 
         开始拦截时间，毫秒
 
@@ -227,7 +227,7 @@ class BlockedIpResponseInfo:
 
     @block_time.setter
     def block_time(self, block_time):
-        """Sets the block_time of this BlockedIpResponseInfo.
+        r"""Sets the block_time of this BlockedIpResponseInfo.
 
         开始拦截时间，毫秒
 
@@ -238,7 +238,7 @@ class BlockedIpResponseInfo:
 
     @property
     def latest_time(self):
-        """Gets the latest_time of this BlockedIpResponseInfo.
+        r"""Gets the latest_time of this BlockedIpResponseInfo.
 
         最近拦截时间，毫秒
 
@@ -249,7 +249,7 @@ class BlockedIpResponseInfo:
 
     @latest_time.setter
     def latest_time(self, latest_time):
-        """Sets the latest_time of this BlockedIpResponseInfo.
+        r"""Sets the latest_time of this BlockedIpResponseInfo.
 
         最近拦截时间，毫秒
 

@@ -25,7 +25,7 @@ class QuotaUsed:
     }
 
     def __init__(self, used=None):
-        """QuotaUsed
+        r"""QuotaUsed
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class QuotaUsed:
 
     @property
     def used(self):
-        """Gets the used of this QuotaUsed.
+        r"""Gets the used of this QuotaUsed.
 
         已使用配额。
 
@@ -53,7 +53,7 @@ class QuotaUsed:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this QuotaUsed.
+        r"""Sets the used of this QuotaUsed.
 
         已使用配额。
 

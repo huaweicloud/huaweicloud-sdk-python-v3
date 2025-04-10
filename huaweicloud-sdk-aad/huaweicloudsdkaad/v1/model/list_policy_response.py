@@ -28,7 +28,7 @@ class ListPolicyResponse(SdkResponse):
     }
 
     def __init__(self, total=None, items=None):
-        """ListPolicyResponse
+        r"""ListPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListPolicyResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListPolicyResponse.
+        r"""Gets the total of this ListPolicyResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class ListPolicyResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListPolicyResponse.
+        r"""Sets the total of this ListPolicyResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class ListPolicyResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListPolicyResponse.
+        r"""Gets the items of this ListPolicyResponse.
 
         策略列表
 
@@ -84,7 +84,7 @@ class ListPolicyResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListPolicyResponse.
+        r"""Sets the items of this ListPolicyResponse.
 
         策略列表
 

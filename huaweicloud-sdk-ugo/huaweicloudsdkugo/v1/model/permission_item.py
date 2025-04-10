@@ -37,7 +37,7 @@ class PermissionItem:
     }
 
     def __init__(self, permission_type=None, schema_name=None, description=None, status=None, failed_reason=None, failed_detail=None, suggest_solution=None):
-        """PermissionItem
+        r"""PermissionItem
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class PermissionItem:
 
     @property
     def permission_type(self):
-        """Gets the permission_type of this PermissionItem.
+        r"""Gets the permission_type of this PermissionItem.
 
         权限类型。
 
@@ -96,7 +96,7 @@ class PermissionItem:
 
     @permission_type.setter
     def permission_type(self, permission_type):
-        """Sets the permission_type of this PermissionItem.
+        r"""Sets the permission_type of this PermissionItem.
 
         权限类型。
 
@@ -107,7 +107,7 @@ class PermissionItem:
 
     @property
     def schema_name(self):
-        """Gets the schema_name of this PermissionItem.
+        r"""Gets the schema_name of this PermissionItem.
 
         schema名称。
 
@@ -118,7 +118,7 @@ class PermissionItem:
 
     @schema_name.setter
     def schema_name(self, schema_name):
-        """Sets the schema_name of this PermissionItem.
+        r"""Sets the schema_name of this PermissionItem.
 
         schema名称。
 
@@ -129,7 +129,7 @@ class PermissionItem:
 
     @property
     def description(self):
-        """Gets the description of this PermissionItem.
+        r"""Gets the description of this PermissionItem.
 
         权限描述。
 
@@ -140,7 +140,7 @@ class PermissionItem:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PermissionItem.
+        r"""Sets the description of this PermissionItem.
 
         权限描述。
 
@@ -151,7 +151,7 @@ class PermissionItem:
 
     @property
     def status(self):
-        """Gets the status of this PermissionItem.
+        r"""Gets the status of this PermissionItem.
 
         是否通过。
 
@@ -162,7 +162,7 @@ class PermissionItem:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PermissionItem.
+        r"""Sets the status of this PermissionItem.
 
         是否通过。
 
@@ -173,7 +173,7 @@ class PermissionItem:
 
     @property
     def failed_reason(self):
-        """Gets the failed_reason of this PermissionItem.
+        r"""Gets the failed_reason of this PermissionItem.
 
         失败原因。
 
@@ -184,7 +184,7 @@ class PermissionItem:
 
     @failed_reason.setter
     def failed_reason(self, failed_reason):
-        """Sets the failed_reason of this PermissionItem.
+        r"""Sets the failed_reason of this PermissionItem.
 
         失败原因。
 
@@ -195,7 +195,7 @@ class PermissionItem:
 
     @property
     def failed_detail(self):
-        """Gets the failed_detail of this PermissionItem.
+        r"""Gets the failed_detail of this PermissionItem.
 
         失败详情。
 
@@ -206,7 +206,7 @@ class PermissionItem:
 
     @failed_detail.setter
     def failed_detail(self, failed_detail):
-        """Sets the failed_detail of this PermissionItem.
+        r"""Sets the failed_detail of this PermissionItem.
 
         失败详情。
 
@@ -217,7 +217,7 @@ class PermissionItem:
 
     @property
     def suggest_solution(self):
-        """Gets the suggest_solution of this PermissionItem.
+        r"""Gets the suggest_solution of this PermissionItem.
 
         解决建议。
 
@@ -228,7 +228,7 @@ class PermissionItem:
 
     @suggest_solution.setter
     def suggest_solution(self, suggest_solution):
-        """Sets the suggest_solution of this PermissionItem.
+        r"""Sets the suggest_solution of this PermissionItem.
 
         解决建议。
 

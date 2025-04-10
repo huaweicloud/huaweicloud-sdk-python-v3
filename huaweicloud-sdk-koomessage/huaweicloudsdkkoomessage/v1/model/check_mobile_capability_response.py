@@ -30,7 +30,7 @@ class CheckMobileCapabilityResponse(SdkResponse):
     }
 
     def __init__(self, supported_mobiles=None, unsupported_mobiles=None, tpl_id=None):
-        """CheckMobileCapabilityResponse
+        r"""CheckMobileCapabilityResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CheckMobileCapabilityResponse(SdkResponse):
 
     @property
     def supported_mobiles(self):
-        """Gets the supported_mobiles of this CheckMobileCapabilityResponse.
+        r"""Gets the supported_mobiles of this CheckMobileCapabilityResponse.
 
         支持智能信息手机号码列表。
 
@@ -69,7 +69,7 @@ class CheckMobileCapabilityResponse(SdkResponse):
 
     @supported_mobiles.setter
     def supported_mobiles(self, supported_mobiles):
-        """Sets the supported_mobiles of this CheckMobileCapabilityResponse.
+        r"""Sets the supported_mobiles of this CheckMobileCapabilityResponse.
 
         支持智能信息手机号码列表。
 
@@ -80,7 +80,7 @@ class CheckMobileCapabilityResponse(SdkResponse):
 
     @property
     def unsupported_mobiles(self):
-        """Gets the unsupported_mobiles of this CheckMobileCapabilityResponse.
+        r"""Gets the unsupported_mobiles of this CheckMobileCapabilityResponse.
 
         不支持智能信息手机号码列表。
 
@@ -91,7 +91,7 @@ class CheckMobileCapabilityResponse(SdkResponse):
 
     @unsupported_mobiles.setter
     def unsupported_mobiles(self, unsupported_mobiles):
-        """Sets the unsupported_mobiles of this CheckMobileCapabilityResponse.
+        r"""Sets the unsupported_mobiles of this CheckMobileCapabilityResponse.
 
         不支持智能信息手机号码列表。
 
@@ -102,7 +102,7 @@ class CheckMobileCapabilityResponse(SdkResponse):
 
     @property
     def tpl_id(self):
-        """Gets the tpl_id of this CheckMobileCapabilityResponse.
+        r"""Gets the tpl_id of this CheckMobileCapabilityResponse.
 
         智能信息模板ID，由9位数字组成。 
 
@@ -113,7 +113,7 @@ class CheckMobileCapabilityResponse(SdkResponse):
 
     @tpl_id.setter
     def tpl_id(self, tpl_id):
-        """Sets the tpl_id of this CheckMobileCapabilityResponse.
+        r"""Sets the tpl_id of this CheckMobileCapabilityResponse.
 
         智能信息模板ID，由9位数字组成。 
 

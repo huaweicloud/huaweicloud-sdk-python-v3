@@ -29,7 +29,7 @@ class CreateCloudPersistentVolumeClaimsRequest:
     }
 
     def __init__(self, namespace=None, x_cluster_id=None, body=None):
-        """CreateCloudPersistentVolumeClaimsRequest
+        r"""CreateCloudPersistentVolumeClaimsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateCloudPersistentVolumeClaimsRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this CreateCloudPersistentVolumeClaimsRequest.
+        r"""Gets the namespace of this CreateCloudPersistentVolumeClaimsRequest.
 
         指定PersistentVolumeClaim所在的命名空间。  使用namespace有如下约束：  - 用户自定义的namespace，使用前必须先在集群中创建namespace  - 系统自带的namespace：default  - 不能使用kube-system与kube-public 
 
@@ -67,7 +67,7 @@ class CreateCloudPersistentVolumeClaimsRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this CreateCloudPersistentVolumeClaimsRequest.
+        r"""Sets the namespace of this CreateCloudPersistentVolumeClaimsRequest.
 
         指定PersistentVolumeClaim所在的命名空间。  使用namespace有如下约束：  - 用户自定义的namespace，使用前必须先在集群中创建namespace  - 系统自带的namespace：default  - 不能使用kube-system与kube-public 
 
@@ -78,7 +78,7 @@ class CreateCloudPersistentVolumeClaimsRequest:
 
     @property
     def x_cluster_id(self):
-        """Gets the x_cluster_id of this CreateCloudPersistentVolumeClaimsRequest.
+        r"""Gets the x_cluster_id of this CreateCloudPersistentVolumeClaimsRequest.
 
         集群ID，使用**https://Endpoint/uri**这种URL格式时必须指定此参数。获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 
 
@@ -89,7 +89,7 @@ class CreateCloudPersistentVolumeClaimsRequest:
 
     @x_cluster_id.setter
     def x_cluster_id(self, x_cluster_id):
-        """Sets the x_cluster_id of this CreateCloudPersistentVolumeClaimsRequest.
+        r"""Sets the x_cluster_id of this CreateCloudPersistentVolumeClaimsRequest.
 
         集群ID，使用**https://Endpoint/uri**这种URL格式时必须指定此参数。获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。 
 
@@ -100,7 +100,7 @@ class CreateCloudPersistentVolumeClaimsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateCloudPersistentVolumeClaimsRequest.
+        r"""Gets the body of this CreateCloudPersistentVolumeClaimsRequest.
 
         :return: The body of this CreateCloudPersistentVolumeClaimsRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.PersistentVolumeClaim`
@@ -109,7 +109,7 @@ class CreateCloudPersistentVolumeClaimsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateCloudPersistentVolumeClaimsRequest.
+        r"""Sets the body of this CreateCloudPersistentVolumeClaimsRequest.
 
         :param body: The body of this CreateCloudPersistentVolumeClaimsRequest.
         :type body: :class:`huaweicloudsdkcce.v3.PersistentVolumeClaim`

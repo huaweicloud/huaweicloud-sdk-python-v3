@@ -24,7 +24,7 @@ class UpdateDomainKeyChainResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateDomainKeyChainResponse
+        r"""UpdateDomainKeyChainResponse
 
         The model defined in huaweicloud sdk
 

@@ -34,7 +34,7 @@ class CptsClient(Client):
         return client_builder
 
     def batch_update_task_status(self, request):
-        """批量启停任务
+        r"""批量启停任务
 
         批量启停任务
         
@@ -101,7 +101,7 @@ class CptsClient(Client):
         return http_info
 
     def create_case(self, request):
-        """创建用例（旧版）
+        r"""创建用例（旧版）
 
         创建用例（旧版）
         
@@ -166,7 +166,7 @@ class CptsClient(Client):
         return http_info
 
     def create_directory(self, request):
-        """创建目录
+        r"""创建目录
 
         创建目录
         
@@ -233,7 +233,7 @@ class CptsClient(Client):
         return http_info
 
     def create_new_case(self, request):
-        """创建用例
+        r"""创建用例
 
         创建用例
         
@@ -298,7 +298,7 @@ class CptsClient(Client):
         return http_info
 
     def create_new_task(self, request):
-        """创建任务
+        r"""创建任务
 
         创建任务
         
@@ -363,7 +363,7 @@ class CptsClient(Client):
         return http_info
 
     def create_task(self, request):
-        """创建任务（旧版）
+        r"""创建任务（旧版）
 
         创建任务（旧版）
         
@@ -428,7 +428,7 @@ class CptsClient(Client):
         return http_info
 
     def create_temp(self, request):
-        """创建事务
+        r"""创建事务
 
         创建事务
         
@@ -493,7 +493,7 @@ class CptsClient(Client):
         return http_info
 
     def create_variable(self, request):
-        """创建变量
+        r"""创建变量
 
         创建变量
         
@@ -560,7 +560,7 @@ class CptsClient(Client):
         return http_info
 
     def debug_case(self, request):
-        """调试用例
+        r"""调试用例
 
         调试用例
         
@@ -631,7 +631,7 @@ class CptsClient(Client):
         return http_info
 
     def delete_case(self, request):
-        """删除用例（旧版）
+        r"""删除用例（旧版）
 
         删除用例（旧版）
         
@@ -696,7 +696,7 @@ class CptsClient(Client):
         return http_info
 
     def delete_directory(self, request):
-        """删除目录
+        r"""删除目录
 
         删除目录
         
@@ -763,7 +763,7 @@ class CptsClient(Client):
         return http_info
 
     def delete_new_case(self, request):
-        """删除用例
+        r"""删除用例
 
         删除用例
         
@@ -828,7 +828,7 @@ class CptsClient(Client):
         return http_info
 
     def delete_new_task(self, request):
-        """删除任务
+        r"""删除任务
 
         删除任务
         
@@ -893,7 +893,7 @@ class CptsClient(Client):
         return http_info
 
     def delete_task(self, request):
-        """删除任务（旧版）
+        r"""删除任务（旧版）
 
         删除任务（旧版）
         
@@ -958,7 +958,7 @@ class CptsClient(Client):
         return http_info
 
     def delete_temp(self, request):
-        """删除事务
+        r"""删除事务
 
         删除事务
         
@@ -1023,7 +1023,7 @@ class CptsClient(Client):
         return http_info
 
     def delete_variable(self, request):
-        """删除全局变量
+        r"""删除全局变量
 
         删除全局变量
         
@@ -1090,7 +1090,7 @@ class CptsClient(Client):
         return http_info
 
     def list_project_test_case(self, request):
-        """查询用例树
+        r"""查询用例树
 
         查询用例树
         
@@ -1155,7 +1155,7 @@ class CptsClient(Client):
         return http_info
 
     def list_task_cases(self, request):
-        """获取任务关联的用例列表
+        r"""获取任务关联的用例列表
 
         获取任务关联的用例列表
         
@@ -1222,7 +1222,7 @@ class CptsClient(Client):
         return http_info
 
     def list_variables(self, request):
-        """查询全局变量
+        r"""查询全局变量
 
         查询全局变量
         
@@ -1289,7 +1289,7 @@ class CptsClient(Client):
         return http_info
 
     def show_agent_config(self, request):
-        """全链路压测探针获取配置信息
+        r"""全链路压测探针获取配置信息
 
         全链路压测探针获取配置信息
         
@@ -1354,7 +1354,7 @@ class CptsClient(Client):
         return http_info
 
     def show_case(self, request):
-        """查询用例
+        r"""查询用例
 
         查询用例
         
@@ -1419,7 +1419,7 @@ class CptsClient(Client):
         return http_info
 
     def show_history_run_info(self, request):
-        """查询PerfTest任务离线报告列表
+        r"""查询PerfTest任务离线报告列表
 
         查询PerfTest任务离线报告列表
         
@@ -1484,7 +1484,7 @@ class CptsClient(Client):
         return http_info
 
     def show_merge_case_detail(self, request):
-        """查询用例报告详情
+        r"""查询用例报告详情
 
         查询用例报告详情
         
@@ -1551,7 +1551,7 @@ class CptsClient(Client):
         return http_info
 
     def show_merge_report_logs_outline(self, request):
-        """查询报告汇总数据
+        r"""查询报告汇总数据
 
         查询报告汇总数据
         
@@ -1616,7 +1616,7 @@ class CptsClient(Client):
         return http_info
 
     def show_merge_task_case(self, request):
-        """查询任务报告的用例列表
+        r"""查询任务报告的用例列表
 
         查询任务报告的用例列表
         
@@ -1681,7 +1681,7 @@ class CptsClient(Client):
         return http_info
 
     def show_report(self, request):
-        """查询报告
+        r"""查询报告
 
         查询报告
         
@@ -1750,7 +1750,7 @@ class CptsClient(Client):
         return http_info
 
     def show_task(self, request):
-        """查询任务（旧版）
+        r"""查询任务（旧版）
 
         查询任务（旧版）
         
@@ -1815,7 +1815,7 @@ class CptsClient(Client):
         return http_info
 
     def show_task_case_aw_chart(self, request):
-        """查询用例的AW曲线图
+        r"""查询用例的AW曲线图
 
         查询用例的AW曲线图
         
@@ -1884,7 +1884,7 @@ class CptsClient(Client):
         return http_info
 
     def show_task_set(self, request):
-        """查询任务集
+        r"""查询任务集
 
         查询任务集
         
@@ -1953,7 +1953,7 @@ class CptsClient(Client):
         return http_info
 
     def show_temp(self, request):
-        """查询事务
+        r"""查询事务
 
         查询事务
         
@@ -2018,7 +2018,7 @@ class CptsClient(Client):
         return http_info
 
     def show_temp_set(self, request):
-        """查询事务集
+        r"""查询事务集
 
         查询事务集
         
@@ -2087,7 +2087,7 @@ class CptsClient(Client):
         return http_info
 
     def update_agent_health_status(self, request):
-        """全链路压测探针上报健康状态
+        r"""全链路压测探针上报健康状态
 
         全链路压测探针上报健康状态
         
@@ -2154,7 +2154,7 @@ class CptsClient(Client):
         return http_info
 
     def update_case(self, request):
-        """修改用例（旧版）
+        r"""修改用例（旧版）
 
         修改用例（旧版）
         
@@ -2223,7 +2223,7 @@ class CptsClient(Client):
         return http_info
 
     def update_directory(self, request):
-        """修改目录
+        r"""修改目录
 
         修改目录
         
@@ -2292,7 +2292,7 @@ class CptsClient(Client):
         return http_info
 
     def update_new_case(self, request):
-        """修改用例
+        r"""修改用例
 
         修改用例
         
@@ -2359,7 +2359,7 @@ class CptsClient(Client):
         return http_info
 
     def update_task(self, request):
-        """修改任务（旧版）
+        r"""修改任务（旧版）
 
         修改任务（旧版）
         
@@ -2426,7 +2426,7 @@ class CptsClient(Client):
         return http_info
 
     def update_task_related_test_case(self, request):
-        """修改任务关联用例
+        r"""修改任务关联用例
 
         修改任务关联用例
         
@@ -2493,7 +2493,7 @@ class CptsClient(Client):
         return http_info
 
     def update_task_status(self, request):
-        """更新任务状态
+        r"""更新任务状态
 
         更新任务状态
         
@@ -2562,7 +2562,7 @@ class CptsClient(Client):
         return http_info
 
     def update_temp(self, request):
-        """修改事务
+        r"""修改事务
 
         修改事务
         
@@ -2629,7 +2629,7 @@ class CptsClient(Client):
         return http_info
 
     def update_variable(self, request):
-        """修改变量
+        r"""修改变量
 
         修改变量
         
@@ -2696,7 +2696,7 @@ class CptsClient(Client):
         return http_info
 
     def create_project(self, request):
-        """创建工程
+        r"""创建工程
 
         创建工程
         
@@ -2761,7 +2761,7 @@ class CptsClient(Client):
         return http_info
 
     def delete_project(self, request):
-        """删除工程
+        r"""删除工程
 
         删除工程
         
@@ -2826,7 +2826,7 @@ class CptsClient(Client):
         return http_info
 
     def list_project_sets(self, request):
-        """查询工程集
+        r"""查询工程集
 
         查询工程集
         
@@ -2893,7 +2893,7 @@ class CptsClient(Client):
         return http_info
 
     def show_process(self, request):
-        """查询导入进度
+        r"""查询导入进度
 
         查询导入进度
         
@@ -2956,7 +2956,7 @@ class CptsClient(Client):
         return http_info
 
     def show_project(self, request):
-        """查询工程
+        r"""查询工程
 
         查询工程
         
@@ -3021,7 +3021,7 @@ class CptsClient(Client):
         return http_info
 
     def update_project(self, request):
-        """修改工程
+        r"""修改工程
 
         修改工程
         

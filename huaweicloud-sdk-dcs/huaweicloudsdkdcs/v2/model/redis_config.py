@@ -29,7 +29,7 @@ class RedisConfig:
     }
 
     def __init__(self, param_value=None, param_name=None, param_id=None):
-        """RedisConfig
+        r"""RedisConfig
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class RedisConfig:
 
     @property
     def param_value(self):
-        """Gets the param_value of this RedisConfig.
+        r"""Gets the param_value of this RedisConfig.
 
         实例配置项的值。
 
@@ -65,7 +65,7 @@ class RedisConfig:
 
     @param_value.setter
     def param_value(self, param_value):
-        """Sets the param_value of this RedisConfig.
+        r"""Sets the param_value of this RedisConfig.
 
         实例配置项的值。
 
@@ -76,7 +76,7 @@ class RedisConfig:
 
     @property
     def param_name(self):
-        """Gets the param_name of this RedisConfig.
+        r"""Gets the param_name of this RedisConfig.
 
         实例配置项名。
 
@@ -87,7 +87,7 @@ class RedisConfig:
 
     @param_name.setter
     def param_name(self, param_name):
-        """Sets the param_name of this RedisConfig.
+        r"""Sets the param_name of this RedisConfig.
 
         实例配置项名。
 
@@ -98,7 +98,7 @@ class RedisConfig:
 
     @property
     def param_id(self):
-        """Gets the param_id of this RedisConfig.
+        r"""Gets the param_id of this RedisConfig.
 
         实例配置项ID。
 
@@ -109,7 +109,7 @@ class RedisConfig:
 
     @param_id.setter
     def param_id(self, param_id):
-        """Sets the param_id of this RedisConfig.
+        r"""Sets the param_id of this RedisConfig.
 
         实例配置项ID。
 

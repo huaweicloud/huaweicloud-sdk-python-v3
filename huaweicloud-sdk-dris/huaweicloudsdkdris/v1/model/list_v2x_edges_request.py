@@ -31,7 +31,7 @@ class ListV2xEdgesRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, status=None):
-        """ListV2xEdgesRequest
+        r"""ListV2xEdgesRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListV2xEdgesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListV2xEdgesRequest.
+        r"""Gets the instance_id of this ListV2xEdgesRequest.
 
         \"**参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和横杠（-）的组合，长度36。\"
 
@@ -75,7 +75,7 @@ class ListV2xEdgesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListV2xEdgesRequest.
+        r"""Sets the instance_id of this ListV2xEdgesRequest.
 
         \"**参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和横杠（-）的组合，长度36。\"
 
@@ -86,7 +86,7 @@ class ListV2xEdgesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListV2xEdgesRequest.
+        r"""Gets the offset of this ListV2xEdgesRequest.
 
         **参数说明**：分页查询时的页码。
 
@@ -97,7 +97,7 @@ class ListV2xEdgesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListV2xEdgesRequest.
+        r"""Sets the offset of this ListV2xEdgesRequest.
 
         **参数说明**：分页查询时的页码。
 
@@ -108,7 +108,7 @@ class ListV2xEdgesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListV2xEdgesRequest.
+        r"""Gets the limit of this ListV2xEdgesRequest.
 
         **参数说明**：分页查询时每页显示的记录数。
 
@@ -119,7 +119,7 @@ class ListV2xEdgesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListV2xEdgesRequest.
+        r"""Sets the limit of this ListV2xEdgesRequest.
 
         **参数说明**：分页查询时每页显示的记录数。
 
@@ -130,7 +130,7 @@ class ListV2xEdgesRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListV2xEdgesRequest.
+        r"""Gets the status of this ListV2xEdgesRequest.
 
         **参数说明**：状态。  **取值范围**： - UNINSTALLED： 待部署 - INSTALLED：部署中 - OFFLINE：离线 - ONLINE：在线： - UPGRADING：升级中 - DELETING：删除中 
 
@@ -141,7 +141,7 @@ class ListV2xEdgesRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListV2xEdgesRequest.
+        r"""Sets the status of this ListV2xEdgesRequest.
 
         **参数说明**：状态。  **取值范围**： - UNINSTALLED： 待部署 - INSTALLED：部署中 - OFFLINE：离线 - ONLINE：在线： - UPGRADING：升级中 - DELETING：删除中 
 

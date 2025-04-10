@@ -28,7 +28,7 @@ class StartPipelineResponse(SdkResponse):
     }
 
     def __init__(self, id=None, result=None):
-        """StartPipelineResponse
+        r"""StartPipelineResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class StartPipelineResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this StartPipelineResponse.
+        r"""Gets the id of this StartPipelineResponse.
 
         流水线id
 
@@ -62,7 +62,7 @@ class StartPipelineResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this StartPipelineResponse.
+        r"""Sets the id of this StartPipelineResponse.
 
         流水线id
 
@@ -73,7 +73,7 @@ class StartPipelineResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this StartPipelineResponse.
+        r"""Gets the result of this StartPipelineResponse.
 
         流水线操作成功
 
@@ -84,7 +84,7 @@ class StartPipelineResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this StartPipelineResponse.
+        r"""Sets the result of this StartPipelineResponse.
 
         流水线操作成功
 

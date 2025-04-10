@@ -33,7 +33,7 @@ class PoliciesFileAndClipboard:
     }
 
     def __init__(self, bypass_in_remote_app_enable=None, file_redirection=None, fd_mobile_client_redir_enable=None, clipboard_redirection=None, clipboard_redirection_options=None):
-        """PoliciesFileAndClipboard
+        r"""PoliciesFileAndClipboard
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class PoliciesFileAndClipboard:
 
     @property
     def bypass_in_remote_app_enable(self):
-        """Gets the bypass_in_remote_app_enable of this PoliciesFileAndClipboard.
+        r"""Gets the bypass_in_remote_app_enable of this PoliciesFileAndClipboard.
 
         应用聚合场景下是否双向放通：取值为： false：表示不放通。 true：表示放通。
 
@@ -82,7 +82,7 @@ class PoliciesFileAndClipboard:
 
     @bypass_in_remote_app_enable.setter
     def bypass_in_remote_app_enable(self, bypass_in_remote_app_enable):
-        """Sets the bypass_in_remote_app_enable of this PoliciesFileAndClipboard.
+        r"""Sets the bypass_in_remote_app_enable of this PoliciesFileAndClipboard.
 
         应用聚合场景下是否双向放通：取值为： false：表示不放通。 true：表示放通。
 
@@ -93,7 +93,7 @@ class PoliciesFileAndClipboard:
 
     @property
     def file_redirection(self):
-        """Gets the file_redirection of this PoliciesFileAndClipboard.
+        r"""Gets the file_redirection of this PoliciesFileAndClipboard.
 
         :return: The file_redirection of this PoliciesFileAndClipboard.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesFileAndClipboardFileRedirection`
@@ -102,7 +102,7 @@ class PoliciesFileAndClipboard:
 
     @file_redirection.setter
     def file_redirection(self, file_redirection):
-        """Sets the file_redirection of this PoliciesFileAndClipboard.
+        r"""Sets the file_redirection of this PoliciesFileAndClipboard.
 
         :param file_redirection: The file_redirection of this PoliciesFileAndClipboard.
         :type file_redirection: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesFileAndClipboardFileRedirection`
@@ -111,7 +111,7 @@ class PoliciesFileAndClipboard:
 
     @property
     def fd_mobile_client_redir_enable(self):
-        """Gets the fd_mobile_client_redir_enable of this PoliciesFileAndClipboard.
+        r"""Gets the fd_mobile_client_redir_enable of this PoliciesFileAndClipboard.
 
         移动客户端文件重定向：取值为： false：表示关闭。 true：表示开启。
 
@@ -122,7 +122,7 @@ class PoliciesFileAndClipboard:
 
     @fd_mobile_client_redir_enable.setter
     def fd_mobile_client_redir_enable(self, fd_mobile_client_redir_enable):
-        """Sets the fd_mobile_client_redir_enable of this PoliciesFileAndClipboard.
+        r"""Sets the fd_mobile_client_redir_enable of this PoliciesFileAndClipboard.
 
         移动客户端文件重定向：取值为： false：表示关闭。 true：表示开启。
 
@@ -133,7 +133,7 @@ class PoliciesFileAndClipboard:
 
     @property
     def clipboard_redirection(self):
-        """Gets the clipboard_redirection of this PoliciesFileAndClipboard.
+        r"""Gets the clipboard_redirection of this PoliciesFileAndClipboard.
 
         剪切板重定向。取值为： DISABLED：表示禁用。（默认） SERVER_TO_CLIENT_ENABLED：表示开启服务端到客户端。 CLIENT_TO_SERVER_ENABLED：表示开启客户端到服务端。 TWO_WAY_ENABLED：表示开启双向。
 
@@ -144,7 +144,7 @@ class PoliciesFileAndClipboard:
 
     @clipboard_redirection.setter
     def clipboard_redirection(self, clipboard_redirection):
-        """Sets the clipboard_redirection of this PoliciesFileAndClipboard.
+        r"""Sets the clipboard_redirection of this PoliciesFileAndClipboard.
 
         剪切板重定向。取值为： DISABLED：表示禁用。（默认） SERVER_TO_CLIENT_ENABLED：表示开启服务端到客户端。 CLIENT_TO_SERVER_ENABLED：表示开启客户端到服务端。 TWO_WAY_ENABLED：表示开启双向。
 
@@ -155,7 +155,7 @@ class PoliciesFileAndClipboard:
 
     @property
     def clipboard_redirection_options(self):
-        """Gets the clipboard_redirection_options of this PoliciesFileAndClipboard.
+        r"""Gets the clipboard_redirection_options of this PoliciesFileAndClipboard.
 
         :return: The clipboard_redirection_options of this PoliciesFileAndClipboard.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesFileAndClipboardClipboardRedirectionOptions`
@@ -164,7 +164,7 @@ class PoliciesFileAndClipboard:
 
     @clipboard_redirection_options.setter
     def clipboard_redirection_options(self, clipboard_redirection_options):
-        """Sets the clipboard_redirection_options of this PoliciesFileAndClipboard.
+        r"""Sets the clipboard_redirection_options of this PoliciesFileAndClipboard.
 
         :param clipboard_redirection_options: The clipboard_redirection_options of this PoliciesFileAndClipboard.
         :type clipboard_redirection_options: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesFileAndClipboardClipboardRedirectionOptions`

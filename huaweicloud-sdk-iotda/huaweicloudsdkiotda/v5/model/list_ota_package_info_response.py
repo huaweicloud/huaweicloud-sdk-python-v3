@@ -28,7 +28,7 @@ class ListOtaPackageInfoResponse(SdkResponse):
     }
 
     def __init__(self, packages=None, page=None):
-        """ListOtaPackageInfoResponse
+        r"""ListOtaPackageInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListOtaPackageInfoResponse(SdkResponse):
 
     @property
     def packages(self):
-        """Gets the packages of this ListOtaPackageInfoResponse.
+        r"""Gets the packages of this ListOtaPackageInfoResponse.
 
         升级包列表
 
@@ -62,7 +62,7 @@ class ListOtaPackageInfoResponse(SdkResponse):
 
     @packages.setter
     def packages(self, packages):
-        """Sets the packages of this ListOtaPackageInfoResponse.
+        r"""Sets the packages of this ListOtaPackageInfoResponse.
 
         升级包列表
 
@@ -73,7 +73,7 @@ class ListOtaPackageInfoResponse(SdkResponse):
 
     @property
     def page(self):
-        """Gets the page of this ListOtaPackageInfoResponse.
+        r"""Gets the page of this ListOtaPackageInfoResponse.
 
         :return: The page of this ListOtaPackageInfoResponse.
         :rtype: :class:`huaweicloudsdkiotda.v5.PageInfo`
@@ -82,7 +82,7 @@ class ListOtaPackageInfoResponse(SdkResponse):
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListOtaPackageInfoResponse.
+        r"""Sets the page of this ListOtaPackageInfoResponse.
 
         :param page: The page of this ListOtaPackageInfoResponse.
         :type page: :class:`huaweicloudsdkiotda.v5.PageInfo`

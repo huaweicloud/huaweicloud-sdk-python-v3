@@ -25,7 +25,7 @@ class UpdateIndividualJobReq:
     }
 
     def __init__(self, record_param=None):
-        """UpdateIndividualJobReq
+        r"""UpdateIndividualJobReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateIndividualJobReq:
 
     @property
     def record_param(self):
-        """Gets the record_param of this UpdateIndividualJobReq.
+        r"""Gets the record_param of this UpdateIndividualJobReq.
 
         :return: The record_param of this UpdateIndividualJobReq.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.RecordParam`
@@ -52,7 +52,7 @@ class UpdateIndividualJobReq:
 
     @record_param.setter
     def record_param(self, record_param):
-        """Sets the record_param of this UpdateIndividualJobReq.
+        r"""Sets the record_param of this UpdateIndividualJobReq.
 
         :param record_param: The record_param of this UpdateIndividualJobReq.
         :type record_param: :class:`huaweicloudsdkcloudrtc.v2.RecordParam`

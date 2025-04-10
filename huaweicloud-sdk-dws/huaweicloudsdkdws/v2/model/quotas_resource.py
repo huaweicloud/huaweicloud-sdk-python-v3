@@ -31,7 +31,7 @@ class QuotasResource:
     }
 
     def __init__(self, type=None, used=None, quota=None, unit=None):
-        """QuotasResource
+        r"""QuotasResource
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class QuotasResource:
 
     @property
     def type(self):
-        """Gets the type of this QuotasResource.
+        r"""Gets the type of this QuotasResource.
 
         项目资源类型。
 
@@ -71,7 +71,7 @@ class QuotasResource:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this QuotasResource.
+        r"""Sets the type of this QuotasResource.
 
         项目资源类型。
 
@@ -82,7 +82,7 @@ class QuotasResource:
 
     @property
     def used(self):
-        """Gets the used of this QuotasResource.
+        r"""Gets the used of this QuotasResource.
 
         已使用的资源数量。
 
@@ -93,7 +93,7 @@ class QuotasResource:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this QuotasResource.
+        r"""Sets the used of this QuotasResource.
 
         已使用的资源数量。
 
@@ -104,7 +104,7 @@ class QuotasResource:
 
     @property
     def quota(self):
-        """Gets the quota of this QuotasResource.
+        r"""Gets the quota of this QuotasResource.
 
         项目资源配额。
 
@@ -115,7 +115,7 @@ class QuotasResource:
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this QuotasResource.
+        r"""Sets the quota of this QuotasResource.
 
         项目资源配额。
 
@@ -126,7 +126,7 @@ class QuotasResource:
 
     @property
     def unit(self):
-        """Gets the unit of this QuotasResource.
+        r"""Gets the unit of this QuotasResource.
 
         资源计量单位。
 
@@ -137,7 +137,7 @@ class QuotasResource:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this QuotasResource.
+        r"""Sets the unit of this QuotasResource.
 
         资源计量单位。
 

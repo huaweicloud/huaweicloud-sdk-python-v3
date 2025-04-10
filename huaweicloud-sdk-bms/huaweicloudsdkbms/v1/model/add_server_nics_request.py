@@ -27,7 +27,7 @@ class AddServerNicsRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """AddServerNicsRequest
+        r"""AddServerNicsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AddServerNicsRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this AddServerNicsRequest.
+        r"""Gets the server_id of this AddServerNicsRequest.
 
         :return: The server_id of this AddServerNicsRequest.
         :rtype: str
@@ -58,7 +58,7 @@ class AddServerNicsRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this AddServerNicsRequest.
+        r"""Sets the server_id of this AddServerNicsRequest.
 
         :param server_id: The server_id of this AddServerNicsRequest.
         :type server_id: str
@@ -67,7 +67,7 @@ class AddServerNicsRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddServerNicsRequest.
+        r"""Gets the body of this AddServerNicsRequest.
 
         :return: The body of this AddServerNicsRequest.
         :rtype: :class:`huaweicloudsdkbms.v1.AddServerNicsReq`
@@ -76,7 +76,7 @@ class AddServerNicsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddServerNicsRequest.
+        r"""Sets the body of this AddServerNicsRequest.
 
         :param body: The body of this AddServerNicsRequest.
         :type body: :class:`huaweicloudsdkbms.v1.AddServerNicsReq`

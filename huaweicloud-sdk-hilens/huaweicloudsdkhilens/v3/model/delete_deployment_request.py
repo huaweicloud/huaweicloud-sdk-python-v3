@@ -31,7 +31,7 @@ class DeleteDeploymentRequest:
     }
 
     def __init__(self, deployment_id=None, force_delete=None, provider=None, x_expired_time=None):
-        """DeleteDeploymentRequest
+        r"""DeleteDeploymentRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class DeleteDeploymentRequest:
 
     @property
     def deployment_id(self):
-        """Gets the deployment_id of this DeleteDeploymentRequest.
+        r"""Gets the deployment_id of this DeleteDeploymentRequest.
 
         部署ID
 
@@ -74,7 +74,7 @@ class DeleteDeploymentRequest:
 
     @deployment_id.setter
     def deployment_id(self, deployment_id):
-        """Sets the deployment_id of this DeleteDeploymentRequest.
+        r"""Sets the deployment_id of this DeleteDeploymentRequest.
 
         部署ID
 
@@ -85,7 +85,7 @@ class DeleteDeploymentRequest:
 
     @property
     def force_delete(self):
-        """Gets the force_delete of this DeleteDeploymentRequest.
+        r"""Gets the force_delete of this DeleteDeploymentRequest.
 
         强制删除，为true时表示前置删除
 
@@ -96,7 +96,7 @@ class DeleteDeploymentRequest:
 
     @force_delete.setter
     def force_delete(self, force_delete):
-        """Sets the force_delete of this DeleteDeploymentRequest.
+        r"""Sets the force_delete of this DeleteDeploymentRequest.
 
         强制删除，为true时表示前置删除
 
@@ -107,7 +107,7 @@ class DeleteDeploymentRequest:
 
     @property
     def provider(self):
-        """Gets the provider of this DeleteDeploymentRequest.
+        r"""Gets the provider of this DeleteDeploymentRequest.
 
         平台提供者，分别为hilens及ief。当为hilens时，请求部署在hilens平台的相关数据
 
@@ -118,7 +118,7 @@ class DeleteDeploymentRequest:
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this DeleteDeploymentRequest.
+        r"""Sets the provider of this DeleteDeploymentRequest.
 
         平台提供者，分别为hilens及ief。当为hilens时，请求部署在hilens平台的相关数据
 
@@ -129,7 +129,7 @@ class DeleteDeploymentRequest:
 
     @property
     def x_expired_time(self):
-        """Gets the x_expired_time of this DeleteDeploymentRequest.
+        r"""Gets the x_expired_time of this DeleteDeploymentRequest.
 
         离线场景超期时间，单位分钟，范围在1-86400
 
@@ -140,7 +140,7 @@ class DeleteDeploymentRequest:
 
     @x_expired_time.setter
     def x_expired_time(self, x_expired_time):
-        """Sets the x_expired_time of this DeleteDeploymentRequest.
+        r"""Sets the x_expired_time of this DeleteDeploymentRequest.
 
         离线场景超期时间，单位分钟，范围在1-86400
 

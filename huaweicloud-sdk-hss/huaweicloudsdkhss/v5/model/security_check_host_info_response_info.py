@@ -37,7 +37,7 @@ class SecurityCheckHostInfoResponseInfo:
     }
 
     def __init__(self, host_id=None, host_name=None, host_public_ip=None, host_private_ip=None, scan_time=None, failed_num=None, passed_num=None):
-        """SecurityCheckHostInfoResponseInfo
+        r"""SecurityCheckHostInfoResponseInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class SecurityCheckHostInfoResponseInfo:
 
     @property
     def host_id(self):
-        """Gets the host_id of this SecurityCheckHostInfoResponseInfo.
+        r"""Gets the host_id of this SecurityCheckHostInfoResponseInfo.
 
         主机ID
 
@@ -96,7 +96,7 @@ class SecurityCheckHostInfoResponseInfo:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this SecurityCheckHostInfoResponseInfo.
+        r"""Sets the host_id of this SecurityCheckHostInfoResponseInfo.
 
         主机ID
 
@@ -107,7 +107,7 @@ class SecurityCheckHostInfoResponseInfo:
 
     @property
     def host_name(self):
-        """Gets the host_name of this SecurityCheckHostInfoResponseInfo.
+        r"""Gets the host_name of this SecurityCheckHostInfoResponseInfo.
 
         服务器名称
 
@@ -118,7 +118,7 @@ class SecurityCheckHostInfoResponseInfo:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this SecurityCheckHostInfoResponseInfo.
+        r"""Sets the host_name of this SecurityCheckHostInfoResponseInfo.
 
         服务器名称
 
@@ -129,7 +129,7 @@ class SecurityCheckHostInfoResponseInfo:
 
     @property
     def host_public_ip(self):
-        """Gets the host_public_ip of this SecurityCheckHostInfoResponseInfo.
+        r"""Gets the host_public_ip of this SecurityCheckHostInfoResponseInfo.
 
         服务器公网IP
 
@@ -140,7 +140,7 @@ class SecurityCheckHostInfoResponseInfo:
 
     @host_public_ip.setter
     def host_public_ip(self, host_public_ip):
-        """Sets the host_public_ip of this SecurityCheckHostInfoResponseInfo.
+        r"""Sets the host_public_ip of this SecurityCheckHostInfoResponseInfo.
 
         服务器公网IP
 
@@ -151,7 +151,7 @@ class SecurityCheckHostInfoResponseInfo:
 
     @property
     def host_private_ip(self):
-        """Gets the host_private_ip of this SecurityCheckHostInfoResponseInfo.
+        r"""Gets the host_private_ip of this SecurityCheckHostInfoResponseInfo.
 
         服务器私网IP
 
@@ -162,7 +162,7 @@ class SecurityCheckHostInfoResponseInfo:
 
     @host_private_ip.setter
     def host_private_ip(self, host_private_ip):
-        """Sets the host_private_ip of this SecurityCheckHostInfoResponseInfo.
+        r"""Sets the host_private_ip of this SecurityCheckHostInfoResponseInfo.
 
         服务器私网IP
 
@@ -173,7 +173,7 @@ class SecurityCheckHostInfoResponseInfo:
 
     @property
     def scan_time(self):
-        """Gets the scan_time of this SecurityCheckHostInfoResponseInfo.
+        r"""Gets the scan_time of this SecurityCheckHostInfoResponseInfo.
 
         扫描时间(ms)
 
@@ -184,7 +184,7 @@ class SecurityCheckHostInfoResponseInfo:
 
     @scan_time.setter
     def scan_time(self, scan_time):
-        """Sets the scan_time of this SecurityCheckHostInfoResponseInfo.
+        r"""Sets the scan_time of this SecurityCheckHostInfoResponseInfo.
 
         扫描时间(ms)
 
@@ -195,7 +195,7 @@ class SecurityCheckHostInfoResponseInfo:
 
     @property
     def failed_num(self):
-        """Gets the failed_num of this SecurityCheckHostInfoResponseInfo.
+        r"""Gets the failed_num of this SecurityCheckHostInfoResponseInfo.
 
         风险项数量
 
@@ -206,7 +206,7 @@ class SecurityCheckHostInfoResponseInfo:
 
     @failed_num.setter
     def failed_num(self, failed_num):
-        """Sets the failed_num of this SecurityCheckHostInfoResponseInfo.
+        r"""Sets the failed_num of this SecurityCheckHostInfoResponseInfo.
 
         风险项数量
 
@@ -217,7 +217,7 @@ class SecurityCheckHostInfoResponseInfo:
 
     @property
     def passed_num(self):
-        """Gets the passed_num of this SecurityCheckHostInfoResponseInfo.
+        r"""Gets the passed_num of this SecurityCheckHostInfoResponseInfo.
 
         通过项数量
 
@@ -228,7 +228,7 @@ class SecurityCheckHostInfoResponseInfo:
 
     @passed_num.setter
     def passed_num(self, passed_num):
-        """Sets the passed_num of this SecurityCheckHostInfoResponseInfo.
+        r"""Sets the passed_num of this SecurityCheckHostInfoResponseInfo.
 
         通过项数量
 

@@ -25,7 +25,7 @@ class SpecClusterNode:
     }
 
     def __init__(self, cluster_nodes=None):
-        """SpecClusterNode
+        r"""SpecClusterNode
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SpecClusterNode:
 
     @property
     def cluster_nodes(self):
-        """Gets the cluster_nodes of this SpecClusterNode.
+        r"""Gets the cluster_nodes of this SpecClusterNode.
 
         CCE节点信息。
 
@@ -54,7 +54,7 @@ class SpecClusterNode:
 
     @cluster_nodes.setter
     def cluster_nodes(self, cluster_nodes):
-        """Sets the cluster_nodes of this SpecClusterNode.
+        r"""Sets the cluster_nodes of this SpecClusterNode.
 
         CCE节点信息。
 

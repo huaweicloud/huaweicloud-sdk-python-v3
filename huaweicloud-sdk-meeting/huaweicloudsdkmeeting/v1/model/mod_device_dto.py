@@ -39,7 +39,7 @@ class ModDeviceDTO:
     }
 
     def __init__(self, name=None, prj_code_mode=None, dept_code=None, phone=None, country=None, email=None, description=None, status=None):
-        """ModDeviceDTO
+        r"""ModDeviceDTO
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ModDeviceDTO:
 
     @property
     def name(self):
-        """Gets the name of this ModDeviceDTO.
+        r"""Gets the name of this ModDeviceDTO.
 
         终端名称，建议为具体位置。
 
@@ -103,7 +103,7 @@ class ModDeviceDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ModDeviceDTO.
+        r"""Sets the name of this ModDeviceDTO.
 
         终端名称，建议为具体位置。
 
@@ -114,7 +114,7 @@ class ModDeviceDTO:
 
     @property
     def prj_code_mode(self):
-        """Gets the prj_code_mode of this ModDeviceDTO.
+        r"""Gets the prj_code_mode of this ModDeviceDTO.
 
         投影码生成模式，默认为自动。 * 0：自动(该模式下根据消息上报的IP地址内部控制复杂度。   私网地址配置成简单模式，公网地址配置成复杂模式) * 1：简单 * 2：复杂
 
@@ -125,7 +125,7 @@ class ModDeviceDTO:
 
     @prj_code_mode.setter
     def prj_code_mode(self, prj_code_mode):
-        """Sets the prj_code_mode of this ModDeviceDTO.
+        r"""Sets the prj_code_mode of this ModDeviceDTO.
 
         投影码生成模式，默认为自动。 * 0：自动(该模式下根据消息上报的IP地址内部控制复杂度。   私网地址配置成简单模式，公网地址配置成复杂模式) * 1：简单 * 2：复杂
 
@@ -136,7 +136,7 @@ class ModDeviceDTO:
 
     @property
     def dept_code(self):
-        """Gets the dept_code of this ModDeviceDTO.
+        r"""Gets the dept_code of this ModDeviceDTO.
 
         部门编码，默认为根部门。 默认值：1。
 
@@ -147,7 +147,7 @@ class ModDeviceDTO:
 
     @dept_code.setter
     def dept_code(self, dept_code):
-        """Sets the dept_code of this ModDeviceDTO.
+        r"""Sets the dept_code of this ModDeviceDTO.
 
         部门编码，默认为根部门。 默认值：1。
 
@@ -158,7 +158,7 @@ class ModDeviceDTO:
 
     @property
     def phone(self):
-        """Gets the phone of this ModDeviceDTO.
+        r"""Gets the phone of this ModDeviceDTO.
 
         手机号，必须加上国家码。 例如中国大陆手机为“+86xxxxxxxxxxx”，当填写手机号时 “country”参数必填。 手机号只允许输入纯数字。 > 手机号或者邮箱至少填写一个。
 
@@ -169,7 +169,7 @@ class ModDeviceDTO:
 
     @phone.setter
     def phone(self, phone):
-        """Sets the phone of this ModDeviceDTO.
+        r"""Sets the phone of this ModDeviceDTO.
 
         手机号，必须加上国家码。 例如中国大陆手机为“+86xxxxxxxxxxx”，当填写手机号时 “country”参数必填。 手机号只允许输入纯数字。 > 手机号或者邮箱至少填写一个。
 
@@ -180,7 +180,7 @@ class ModDeviceDTO:
 
     @property
     def country(self):
-        """Gets the country of this ModDeviceDTO.
+        r"""Gets the country of this ModDeviceDTO.
 
         [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
@@ -191,7 +191,7 @@ class ModDeviceDTO:
 
     @country.setter
     def country(self, country):
-        """Sets the country of this ModDeviceDTO.
+        r"""Sets the country of this ModDeviceDTO.
 
         [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
@@ -202,7 +202,7 @@ class ModDeviceDTO:
 
     @property
     def email(self):
-        """Gets the email of this ModDeviceDTO.
+        r"""Gets the email of this ModDeviceDTO.
 
         邮箱地址。
 
@@ -213,7 +213,7 @@ class ModDeviceDTO:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this ModDeviceDTO.
+        r"""Sets the email of this ModDeviceDTO.
 
         邮箱地址。
 
@@ -224,7 +224,7 @@ class ModDeviceDTO:
 
     @property
     def description(self):
-        """Gets the description of this ModDeviceDTO.
+        r"""Gets the description of this ModDeviceDTO.
 
         终端描述。
 
@@ -235,7 +235,7 @@ class ModDeviceDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ModDeviceDTO.
+        r"""Sets the description of this ModDeviceDTO.
 
         终端描述。
 
@@ -246,7 +246,7 @@ class ModDeviceDTO:
 
     @property
     def status(self):
-        """Gets the status of this ModDeviceDTO.
+        r"""Gets the status of this ModDeviceDTO.
 
         终端状态。 * 0：正常 * 1：冻结 
 
@@ -257,7 +257,7 @@ class ModDeviceDTO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ModDeviceDTO.
+        r"""Sets the status of this ModDeviceDTO.
 
         终端状态。 * 0：正常 * 1：冻结 
 

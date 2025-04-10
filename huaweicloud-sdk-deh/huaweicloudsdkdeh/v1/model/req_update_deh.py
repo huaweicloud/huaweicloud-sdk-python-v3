@@ -25,7 +25,7 @@ class ReqUpdateDeh:
     }
 
     def __init__(self, dedicated_host=None):
-        """ReqUpdateDeh
+        r"""ReqUpdateDeh
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ReqUpdateDeh:
 
     @property
     def dedicated_host(self):
-        """Gets the dedicated_host of this ReqUpdateDeh.
+        r"""Gets the dedicated_host of this ReqUpdateDeh.
 
         :return: The dedicated_host of this ReqUpdateDeh.
         :rtype: :class:`huaweicloudsdkdeh.v1.ReqUpdateDehMessage`
@@ -51,7 +51,7 @@ class ReqUpdateDeh:
 
     @dedicated_host.setter
     def dedicated_host(self, dedicated_host):
-        """Sets the dedicated_host of this ReqUpdateDeh.
+        r"""Sets the dedicated_host of this ReqUpdateDeh.
 
         :param dedicated_host: The dedicated_host of this ReqUpdateDeh.
         :type dedicated_host: :class:`huaweicloudsdkdeh.v1.ReqUpdateDehMessage`

@@ -39,7 +39,7 @@ class CreateWhiteBlackIpRuleRequestBody:
     }
 
     def __init__(self, name=None, addr=None, description=None, white=None, ip_group_id=None, time_mode=None, start=None, terminal=None):
-        """CreateWhiteBlackIpRuleRequestBody
+        r"""CreateWhiteBlackIpRuleRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class CreateWhiteBlackIpRuleRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateWhiteBlackIpRuleRequestBody.
+        r"""Gets the name of this CreateWhiteBlackIpRuleRequestBody.
 
         规则名称只能由字母、数字、-、_和.组成，长度不能超过64个字符
 
@@ -101,7 +101,7 @@ class CreateWhiteBlackIpRuleRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateWhiteBlackIpRuleRequestBody.
+        r"""Sets the name of this CreateWhiteBlackIpRuleRequestBody.
 
         规则名称只能由字母、数字、-、_和.组成，长度不能超过64个字符
 
@@ -112,7 +112,7 @@ class CreateWhiteBlackIpRuleRequestBody:
 
     @property
     def addr(self):
-        """Gets the addr of this CreateWhiteBlackIpRuleRequestBody.
+        r"""Gets the addr of this CreateWhiteBlackIpRuleRequestBody.
 
         黑白名单ip地址，需要输入标准的ip地址或地址段，例如：42.123.120.66或42.123.120.0/16
 
@@ -123,7 +123,7 @@ class CreateWhiteBlackIpRuleRequestBody:
 
     @addr.setter
     def addr(self, addr):
-        """Sets the addr of this CreateWhiteBlackIpRuleRequestBody.
+        r"""Sets the addr of this CreateWhiteBlackIpRuleRequestBody.
 
         黑白名单ip地址，需要输入标准的ip地址或地址段，例如：42.123.120.66或42.123.120.0/16
 
@@ -134,7 +134,7 @@ class CreateWhiteBlackIpRuleRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateWhiteBlackIpRuleRequestBody.
+        r"""Gets the description of this CreateWhiteBlackIpRuleRequestBody.
 
         黑白名单规则描述
 
@@ -145,7 +145,7 @@ class CreateWhiteBlackIpRuleRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateWhiteBlackIpRuleRequestBody.
+        r"""Sets the description of this CreateWhiteBlackIpRuleRequestBody.
 
         黑白名单规则描述
 
@@ -156,7 +156,7 @@ class CreateWhiteBlackIpRuleRequestBody:
 
     @property
     def white(self):
-        """Gets the white of this CreateWhiteBlackIpRuleRequestBody.
+        r"""Gets the white of this CreateWhiteBlackIpRuleRequestBody.
 
         防护动作：  - 0 拦截  - 1 放行   - 2 仅记录
 
@@ -167,7 +167,7 @@ class CreateWhiteBlackIpRuleRequestBody:
 
     @white.setter
     def white(self, white):
-        """Sets the white of this CreateWhiteBlackIpRuleRequestBody.
+        r"""Sets the white of this CreateWhiteBlackIpRuleRequestBody.
 
         防护动作：  - 0 拦截  - 1 放行   - 2 仅记录
 
@@ -178,7 +178,7 @@ class CreateWhiteBlackIpRuleRequestBody:
 
     @property
     def ip_group_id(self):
-        """Gets the ip_group_id of this CreateWhiteBlackIpRuleRequestBody.
+        r"""Gets the ip_group_id of this CreateWhiteBlackIpRuleRequestBody.
 
         创建的Ip地址组id，该参数与addr参数只能使用一个；Ip地址组可在控制台中对象管理->地址组管理中添加。
 
@@ -189,7 +189,7 @@ class CreateWhiteBlackIpRuleRequestBody:
 
     @ip_group_id.setter
     def ip_group_id(self, ip_group_id):
-        """Sets the ip_group_id of this CreateWhiteBlackIpRuleRequestBody.
+        r"""Sets the ip_group_id of this CreateWhiteBlackIpRuleRequestBody.
 
         创建的Ip地址组id，该参数与addr参数只能使用一个；Ip地址组可在控制台中对象管理->地址组管理中添加。
 
@@ -200,7 +200,7 @@ class CreateWhiteBlackIpRuleRequestBody:
 
     @property
     def time_mode(self):
-        """Gets the time_mode of this CreateWhiteBlackIpRuleRequestBody.
+        r"""Gets the time_mode of this CreateWhiteBlackIpRuleRequestBody.
 
         生效模式，默认为permanent（立即生效）,创建自定义生效规则时请输入：customize
 
@@ -211,7 +211,7 @@ class CreateWhiteBlackIpRuleRequestBody:
 
     @time_mode.setter
     def time_mode(self, time_mode):
-        """Sets the time_mode of this CreateWhiteBlackIpRuleRequestBody.
+        r"""Sets the time_mode of this CreateWhiteBlackIpRuleRequestBody.
 
         生效模式，默认为permanent（立即生效）,创建自定义生效规则时请输入：customize
 
@@ -222,7 +222,7 @@ class CreateWhiteBlackIpRuleRequestBody:
 
     @property
     def start(self):
-        """Gets the start of this CreateWhiteBlackIpRuleRequestBody.
+        r"""Gets the start of this CreateWhiteBlackIpRuleRequestBody.
 
         规则生效开始时间，生效模式为自定义时，此字段才有效，请输入时间戳
 
@@ -233,7 +233,7 @@ class CreateWhiteBlackIpRuleRequestBody:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this CreateWhiteBlackIpRuleRequestBody.
+        r"""Sets the start of this CreateWhiteBlackIpRuleRequestBody.
 
         规则生效开始时间，生效模式为自定义时，此字段才有效，请输入时间戳
 
@@ -244,7 +244,7 @@ class CreateWhiteBlackIpRuleRequestBody:
 
     @property
     def terminal(self):
-        """Gets the terminal of this CreateWhiteBlackIpRuleRequestBody.
+        r"""Gets the terminal of this CreateWhiteBlackIpRuleRequestBody.
 
         规则生效结束时间，生效模式为自定义时，此字段才有效，请输入时间戳
 
@@ -255,7 +255,7 @@ class CreateWhiteBlackIpRuleRequestBody:
 
     @terminal.setter
     def terminal(self, terminal):
-        """Sets the terminal of this CreateWhiteBlackIpRuleRequestBody.
+        r"""Sets the terminal of this CreateWhiteBlackIpRuleRequestBody.
 
         规则生效结束时间，生效模式为自定义时，此字段才有效，请输入时间戳
 

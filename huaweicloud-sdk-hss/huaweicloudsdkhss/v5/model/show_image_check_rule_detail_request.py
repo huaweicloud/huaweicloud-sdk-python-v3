@@ -23,6 +23,7 @@ class ShowImageCheckRuleDetailRequest:
         'namespace': 'str',
         'image_name': 'str',
         'image_version': 'str',
+        'image_id': 'str',
         'check_name': 'str',
         'check_type': 'str',
         'check_rule_id': 'str',
@@ -37,6 +38,7 @@ class ShowImageCheckRuleDetailRequest:
         'namespace': 'namespace',
         'image_name': 'image_name',
         'image_version': 'image_version',
+        'image_id': 'image_id',
         'check_name': 'check_name',
         'check_type': 'check_type',
         'check_rule_id': 'check_rule_id',
@@ -44,14 +46,14 @@ class ShowImageCheckRuleDetailRequest:
         'instance_id': 'instance_id'
     }
 
-    def __init__(self, region=None, enterprise_project_id=None, image_type=None, namespace=None, image_name=None, image_version=None, check_name=None, check_type=None, check_rule_id=None, standard=None, instance_id=None):
-        """ShowImageCheckRuleDetailRequest
+    def __init__(self, region=None, enterprise_project_id=None, image_type=None, namespace=None, image_name=None, image_version=None, image_id=None, check_name=None, check_type=None, check_rule_id=None, standard=None, instance_id=None):
+        r"""ShowImageCheckRuleDetailRequest
 
         The model defined in huaweicloud sdk
 
         :param region: Region ID
         :type region: str
-        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param image_type: 镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库   - local_image : 本地镜像   - instance_image : 企业镜像
         :type image_type: str
@@ -61,6 +63,8 @@ class ShowImageCheckRuleDetailRequest:
         :type image_name: str
         :param image_version: 镜像版本名称
         :type image_version: str
+        :param image_id: 镜像id
+        :type image_id: str
         :param check_name: 基线名称
         :type check_name: str
         :param check_type: 基线类型
@@ -81,6 +85,7 @@ class ShowImageCheckRuleDetailRequest:
         self._namespace = None
         self._image_name = None
         self._image_version = None
+        self._image_id = None
         self._check_name = None
         self._check_type = None
         self._check_rule_id = None
@@ -99,6 +104,8 @@ class ShowImageCheckRuleDetailRequest:
             self.image_name = image_name
         if image_version is not None:
             self.image_version = image_version
+        if image_id is not None:
+            self.image_id = image_id
         self.check_name = check_name
         self.check_type = check_type
         self.check_rule_id = check_rule_id
@@ -108,7 +115,7 @@ class ShowImageCheckRuleDetailRequest:
 
     @property
     def region(self):
-        """Gets the region of this ShowImageCheckRuleDetailRequest.
+        r"""Gets the region of this ShowImageCheckRuleDetailRequest.
 
         Region ID
 
@@ -119,7 +126,7 @@ class ShowImageCheckRuleDetailRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ShowImageCheckRuleDetailRequest.
+        r"""Sets the region of this ShowImageCheckRuleDetailRequest.
 
         Region ID
 
@@ -130,9 +137,9 @@ class ShowImageCheckRuleDetailRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowImageCheckRuleDetailRequest.
+        r"""Gets the enterprise_project_id of this ShowImageCheckRuleDetailRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ShowImageCheckRuleDetailRequest.
         :rtype: str
@@ -141,9 +148,9 @@ class ShowImageCheckRuleDetailRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowImageCheckRuleDetailRequest.
+        r"""Sets the enterprise_project_id of this ShowImageCheckRuleDetailRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ShowImageCheckRuleDetailRequest.
         :type enterprise_project_id: str
@@ -152,7 +159,7 @@ class ShowImageCheckRuleDetailRequest:
 
     @property
     def image_type(self):
-        """Gets the image_type of this ShowImageCheckRuleDetailRequest.
+        r"""Gets the image_type of this ShowImageCheckRuleDetailRequest.
 
         镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库   - local_image : 本地镜像   - instance_image : 企业镜像
 
@@ -163,7 +170,7 @@ class ShowImageCheckRuleDetailRequest:
 
     @image_type.setter
     def image_type(self, image_type):
-        """Sets the image_type of this ShowImageCheckRuleDetailRequest.
+        r"""Sets the image_type of this ShowImageCheckRuleDetailRequest.
 
         镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库   - local_image : 本地镜像   - instance_image : 企业镜像
 
@@ -174,7 +181,7 @@ class ShowImageCheckRuleDetailRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this ShowImageCheckRuleDetailRequest.
+        r"""Gets the namespace of this ShowImageCheckRuleDetailRequest.
 
         组织名称（没有镜像相关信息时，表示查询所有镜像）
 
@@ -185,7 +192,7 @@ class ShowImageCheckRuleDetailRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this ShowImageCheckRuleDetailRequest.
+        r"""Sets the namespace of this ShowImageCheckRuleDetailRequest.
 
         组织名称（没有镜像相关信息时，表示查询所有镜像）
 
@@ -196,7 +203,7 @@ class ShowImageCheckRuleDetailRequest:
 
     @property
     def image_name(self):
-        """Gets the image_name of this ShowImageCheckRuleDetailRequest.
+        r"""Gets the image_name of this ShowImageCheckRuleDetailRequest.
 
         镜像名称
 
@@ -207,7 +214,7 @@ class ShowImageCheckRuleDetailRequest:
 
     @image_name.setter
     def image_name(self, image_name):
-        """Sets the image_name of this ShowImageCheckRuleDetailRequest.
+        r"""Sets the image_name of this ShowImageCheckRuleDetailRequest.
 
         镜像名称
 
@@ -218,7 +225,7 @@ class ShowImageCheckRuleDetailRequest:
 
     @property
     def image_version(self):
-        """Gets the image_version of this ShowImageCheckRuleDetailRequest.
+        r"""Gets the image_version of this ShowImageCheckRuleDetailRequest.
 
         镜像版本名称
 
@@ -229,7 +236,7 @@ class ShowImageCheckRuleDetailRequest:
 
     @image_version.setter
     def image_version(self, image_version):
-        """Sets the image_version of this ShowImageCheckRuleDetailRequest.
+        r"""Sets the image_version of this ShowImageCheckRuleDetailRequest.
 
         镜像版本名称
 
@@ -239,8 +246,30 @@ class ShowImageCheckRuleDetailRequest:
         self._image_version = image_version
 
     @property
+    def image_id(self):
+        r"""Gets the image_id of this ShowImageCheckRuleDetailRequest.
+
+        镜像id
+
+        :return: The image_id of this ShowImageCheckRuleDetailRequest.
+        :rtype: str
+        """
+        return self._image_id
+
+    @image_id.setter
+    def image_id(self, image_id):
+        r"""Sets the image_id of this ShowImageCheckRuleDetailRequest.
+
+        镜像id
+
+        :param image_id: The image_id of this ShowImageCheckRuleDetailRequest.
+        :type image_id: str
+        """
+        self._image_id = image_id
+
+    @property
     def check_name(self):
-        """Gets the check_name of this ShowImageCheckRuleDetailRequest.
+        r"""Gets the check_name of this ShowImageCheckRuleDetailRequest.
 
         基线名称
 
@@ -251,7 +280,7 @@ class ShowImageCheckRuleDetailRequest:
 
     @check_name.setter
     def check_name(self, check_name):
-        """Sets the check_name of this ShowImageCheckRuleDetailRequest.
+        r"""Sets the check_name of this ShowImageCheckRuleDetailRequest.
 
         基线名称
 
@@ -262,7 +291,7 @@ class ShowImageCheckRuleDetailRequest:
 
     @property
     def check_type(self):
-        """Gets the check_type of this ShowImageCheckRuleDetailRequest.
+        r"""Gets the check_type of this ShowImageCheckRuleDetailRequest.
 
         基线类型
 
@@ -273,7 +302,7 @@ class ShowImageCheckRuleDetailRequest:
 
     @check_type.setter
     def check_type(self, check_type):
-        """Sets the check_type of this ShowImageCheckRuleDetailRequest.
+        r"""Sets the check_type of this ShowImageCheckRuleDetailRequest.
 
         基线类型
 
@@ -284,7 +313,7 @@ class ShowImageCheckRuleDetailRequest:
 
     @property
     def check_rule_id(self):
-        """Gets the check_rule_id of this ShowImageCheckRuleDetailRequest.
+        r"""Gets the check_rule_id of this ShowImageCheckRuleDetailRequest.
 
         检查项id
 
@@ -295,7 +324,7 @@ class ShowImageCheckRuleDetailRequest:
 
     @check_rule_id.setter
     def check_rule_id(self, check_rule_id):
-        """Sets the check_rule_id of this ShowImageCheckRuleDetailRequest.
+        r"""Sets the check_rule_id of this ShowImageCheckRuleDetailRequest.
 
         检查项id
 
@@ -306,7 +335,7 @@ class ShowImageCheckRuleDetailRequest:
 
     @property
     def standard(self):
-        """Gets the standard of this ShowImageCheckRuleDetailRequest.
+        r"""Gets the standard of this ShowImageCheckRuleDetailRequest.
 
         标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 云安全实践标准
 
@@ -317,7 +346,7 @@ class ShowImageCheckRuleDetailRequest:
 
     @standard.setter
     def standard(self, standard):
-        """Sets the standard of this ShowImageCheckRuleDetailRequest.
+        r"""Sets the standard of this ShowImageCheckRuleDetailRequest.
 
         标准类型，包含如下:   - cn_standard : 等保合规标准   - hw_standard : 云安全实践标准
 
@@ -328,7 +357,7 @@ class ShowImageCheckRuleDetailRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowImageCheckRuleDetailRequest.
+        r"""Gets the instance_id of this ShowImageCheckRuleDetailRequest.
 
         企业仓库实例ID，swr共享版无需使用该参数
 
@@ -339,7 +368,7 @@ class ShowImageCheckRuleDetailRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowImageCheckRuleDetailRequest.
+        r"""Sets the instance_id of this ShowImageCheckRuleDetailRequest.
 
         企业仓库实例ID，swr共享版无需使用该参数
 

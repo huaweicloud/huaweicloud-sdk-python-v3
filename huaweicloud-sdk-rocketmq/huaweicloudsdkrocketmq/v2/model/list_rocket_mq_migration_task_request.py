@@ -35,7 +35,7 @@ class ListRocketMqMigrationTaskRequest:
     }
 
     def __init__(self, instance_id=None, id=None, type=None, offset=None, limit=None, name=None):
-        """ListRocketMqMigrationTaskRequest
+        r"""ListRocketMqMigrationTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListRocketMqMigrationTaskRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListRocketMqMigrationTaskRequest.
+        r"""Gets the instance_id of this ListRocketMqMigrationTaskRequest.
 
         实例ID。
 
@@ -88,7 +88,7 @@ class ListRocketMqMigrationTaskRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListRocketMqMigrationTaskRequest.
+        r"""Sets the instance_id of this ListRocketMqMigrationTaskRequest.
 
         实例ID。
 
@@ -99,7 +99,7 @@ class ListRocketMqMigrationTaskRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListRocketMqMigrationTaskRequest.
+        r"""Gets the id of this ListRocketMqMigrationTaskRequest.
 
         任务ID。
 
@@ -110,7 +110,7 @@ class ListRocketMqMigrationTaskRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListRocketMqMigrationTaskRequest.
+        r"""Sets the id of this ListRocketMqMigrationTaskRequest.
 
         任务ID。
 
@@ -121,7 +121,7 @@ class ListRocketMqMigrationTaskRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListRocketMqMigrationTaskRequest.
+        r"""Gets the type of this ListRocketMqMigrationTaskRequest.
 
         查询类型。
 
@@ -132,7 +132,7 @@ class ListRocketMqMigrationTaskRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListRocketMqMigrationTaskRequest.
+        r"""Sets the type of this ListRocketMqMigrationTaskRequest.
 
         查询类型。
 
@@ -143,7 +143,7 @@ class ListRocketMqMigrationTaskRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListRocketMqMigrationTaskRequest.
+        r"""Gets the offset of this ListRocketMqMigrationTaskRequest.
 
         当前页，从1开始。
 
@@ -154,7 +154,7 @@ class ListRocketMqMigrationTaskRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListRocketMqMigrationTaskRequest.
+        r"""Sets the offset of this ListRocketMqMigrationTaskRequest.
 
         当前页，从1开始。
 
@@ -165,7 +165,7 @@ class ListRocketMqMigrationTaskRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRocketMqMigrationTaskRequest.
+        r"""Gets the limit of this ListRocketMqMigrationTaskRequest.
 
         当前页大小。
 
@@ -176,7 +176,7 @@ class ListRocketMqMigrationTaskRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRocketMqMigrationTaskRequest.
+        r"""Sets the limit of this ListRocketMqMigrationTaskRequest.
 
         当前页大小。
 
@@ -187,7 +187,7 @@ class ListRocketMqMigrationTaskRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListRocketMqMigrationTaskRequest.
+        r"""Gets the name of this ListRocketMqMigrationTaskRequest.
 
         - 查询vhost列表时，该字段可为空。 - 查询exchange列表时，该字段为exchange所属vhost名称。 - 查询queue列表时，该字段为queue所属vhost-所属exchange，例vhost1-exchange1。
 
@@ -198,7 +198,7 @@ class ListRocketMqMigrationTaskRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListRocketMqMigrationTaskRequest.
+        r"""Sets the name of this ListRocketMqMigrationTaskRequest.
 
         - 查询vhost列表时，该字段可为空。 - 查询exchange列表时，该字段为exchange所属vhost名称。 - 查询queue列表时，该字段为queue所属vhost-所属exchange，例vhost1-exchange1。
 

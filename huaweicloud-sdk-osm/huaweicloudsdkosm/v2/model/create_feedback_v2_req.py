@@ -35,7 +35,7 @@ class CreateFeedbackV2Req:
     }
 
     def __init__(self, type=None, title=None, content=None, files=None, ip=None, contacts=None):
-        """CreateFeedbackV2Req
+        r"""CreateFeedbackV2Req
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class CreateFeedbackV2Req:
 
     @property
     def type(self):
-        """Gets the type of this CreateFeedbackV2Req.
+        r"""Gets the type of this CreateFeedbackV2Req.
 
         举报类型
 
@@ -84,7 +84,7 @@ class CreateFeedbackV2Req:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateFeedbackV2Req.
+        r"""Sets the type of this CreateFeedbackV2Req.
 
         举报类型
 
@@ -95,7 +95,7 @@ class CreateFeedbackV2Req:
 
     @property
     def title(self):
-        """Gets the title of this CreateFeedbackV2Req.
+        r"""Gets the title of this CreateFeedbackV2Req.
 
         涉案的华为云产品或服务; 举报网址
 
@@ -106,7 +106,7 @@ class CreateFeedbackV2Req:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this CreateFeedbackV2Req.
+        r"""Sets the title of this CreateFeedbackV2Req.
 
         涉案的华为云产品或服务; 举报网址
 
@@ -117,7 +117,7 @@ class CreateFeedbackV2Req:
 
     @property
     def content(self):
-        """Gets the content of this CreateFeedbackV2Req.
+        r"""Gets the content of this CreateFeedbackV2Req.
 
         侵权详情说明或举报内容及说明
 
@@ -128,7 +128,7 @@ class CreateFeedbackV2Req:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this CreateFeedbackV2Req.
+        r"""Sets the content of this CreateFeedbackV2Req.
 
         侵权详情说明或举报内容及说明
 
@@ -139,7 +139,7 @@ class CreateFeedbackV2Req:
 
     @property
     def files(self):
-        """Gets the files of this CreateFeedbackV2Req.
+        r"""Gets the files of this CreateFeedbackV2Req.
 
         相关证明附件列表
 
@@ -150,7 +150,7 @@ class CreateFeedbackV2Req:
 
     @files.setter
     def files(self, files):
-        """Sets the files of this CreateFeedbackV2Req.
+        r"""Sets the files of this CreateFeedbackV2Req.
 
         相关证明附件列表
 
@@ -161,7 +161,7 @@ class CreateFeedbackV2Req:
 
     @property
     def ip(self):
-        """Gets the ip of this CreateFeedbackV2Req.
+        r"""Gets the ip of this CreateFeedbackV2Req.
 
         :return: The ip of this CreateFeedbackV2Req.
         :rtype: :class:`huaweicloudsdkosm.v2.IntellectualPropertyV2`
@@ -170,7 +170,7 @@ class CreateFeedbackV2Req:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this CreateFeedbackV2Req.
+        r"""Sets the ip of this CreateFeedbackV2Req.
 
         :param ip: The ip of this CreateFeedbackV2Req.
         :type ip: :class:`huaweicloudsdkosm.v2.IntellectualPropertyV2`
@@ -179,7 +179,7 @@ class CreateFeedbackV2Req:
 
     @property
     def contacts(self):
-        """Gets the contacts of this CreateFeedbackV2Req.
+        r"""Gets the contacts of this CreateFeedbackV2Req.
 
         :return: The contacts of this CreateFeedbackV2Req.
         :rtype: :class:`huaweicloudsdkosm.v2.ContactWayInfoV2`
@@ -188,7 +188,7 @@ class CreateFeedbackV2Req:
 
     @contacts.setter
     def contacts(self, contacts):
-        """Sets the contacts of this CreateFeedbackV2Req.
+        r"""Sets the contacts of this CreateFeedbackV2Req.
 
         :param contacts: The contacts of this CreateFeedbackV2Req.
         :type contacts: :class:`huaweicloudsdkosm.v2.ContactWayInfoV2`

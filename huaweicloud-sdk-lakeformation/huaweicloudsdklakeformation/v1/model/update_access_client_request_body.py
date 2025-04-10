@@ -25,7 +25,7 @@ class UpdateAccessClientRequestBody:
     }
 
     def __init__(self, name=None):
-        """UpdateAccessClientRequestBody
+        r"""UpdateAccessClientRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateAccessClientRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateAccessClientRequestBody.
+        r"""Gets the name of this UpdateAccessClientRequestBody.
 
         客户端名称
 
@@ -53,7 +53,7 @@ class UpdateAccessClientRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateAccessClientRequestBody.
+        r"""Sets the name of this UpdateAccessClientRequestBody.
 
         客户端名称
 

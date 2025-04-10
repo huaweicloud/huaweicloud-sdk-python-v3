@@ -25,7 +25,7 @@ class UpdateTrackerRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateTrackerRequest
+        r"""UpdateTrackerRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateTrackerRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateTrackerRequest.
+        r"""Gets the body of this UpdateTrackerRequest.
 
         :return: The body of this UpdateTrackerRequest.
         :rtype: :class:`huaweicloudsdkcts.v3.UpdateTrackerRequestBody`
@@ -52,7 +52,7 @@ class UpdateTrackerRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateTrackerRequest.
+        r"""Sets the body of this UpdateTrackerRequest.
 
         :param body: The body of this UpdateTrackerRequest.
         :type body: :class:`huaweicloudsdkcts.v3.UpdateTrackerRequestBody`

@@ -25,7 +25,7 @@ class RestInviteReqBody:
     }
 
     def __init__(self, attendees=None):
-        """RestInviteReqBody
+        r"""RestInviteReqBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RestInviteReqBody:
 
     @property
     def attendees(self):
-        """Gets the attendees of this RestInviteReqBody.
+        r"""Gets the attendees of this RestInviteReqBody.
 
         邀请的与会者列表。
 
@@ -53,7 +53,7 @@ class RestInviteReqBody:
 
     @attendees.setter
     def attendees(self, attendees):
-        """Sets the attendees of this RestInviteReqBody.
+        r"""Sets the attendees of this RestInviteReqBody.
 
         邀请的与会者列表。
 

@@ -41,7 +41,7 @@ class MixParam:
     }
 
     def __init__(self, room_id=None, encode_template=None, max_idle_time=None, layout_template=None, default_user_background_image=None, screen_background_image=None, background_image=None, layout_panes=None, user_background_images=None):
-        """MixParam
+        r"""MixParam
 
         The model defined in huaweicloud sdk
 
@@ -97,7 +97,7 @@ class MixParam:
 
     @property
     def room_id(self):
-        """Gets the room_id of this MixParam.
+        r"""Gets the room_id of this MixParam.
 
         房间id
 
@@ -108,7 +108,7 @@ class MixParam:
 
     @room_id.setter
     def room_id(self, room_id):
-        """Sets the room_id of this MixParam.
+        r"""Sets the room_id of this MixParam.
 
         房间id
 
@@ -119,7 +119,7 @@ class MixParam:
 
     @property
     def encode_template(self):
-        """Gets the encode_template of this MixParam.
+        r"""Gets the encode_template of this MixParam.
 
         输出编码模板名称 - 1920*1080_30_4620：输出流是1080p，帧率30，码率4.62Mbps - 1920*1080_30_3150：输出流是1080p，帧率30，码率3.15Mbps - 1920*1080_15_3460：输出流是1080p，帧率15，码率3.46Mbps - 1920*1080_15_2080：输出流是1080p，帧率15，码率2.08Mbps - 1280*720_30_3420：输出流是720p，帧率30，码率3.42Mbps - 1280*720_30_1710：输出流是720p，帧率30，码率1.71Mbps - 1280*720_15_2260：输出流是720p，帧率15，码率2.26Mbps - 1280*720_15_1130：输出流是720p，帧率15，码率1.13Mbps - 640*480_30_1500：输出流是480p，帧率30，码率1.50Mbps - 640*480_15_500：输出流是480p，帧率15，码率500Kbps - 640*480_30_1000 输出流是480p，帧率30，码率1000Kbps - 480*360_30_490：输出流是360p，帧率30，码率490Kbps - 480*360_15_320：输出流是360p，帧率15，码率320Kbps 
 
@@ -130,7 +130,7 @@ class MixParam:
 
     @encode_template.setter
     def encode_template(self, encode_template):
-        """Sets the encode_template of this MixParam.
+        r"""Sets the encode_template of this MixParam.
 
         输出编码模板名称 - 1920*1080_30_4620：输出流是1080p，帧率30，码率4.62Mbps - 1920*1080_30_3150：输出流是1080p，帧率30，码率3.15Mbps - 1920*1080_15_3460：输出流是1080p，帧率15，码率3.46Mbps - 1920*1080_15_2080：输出流是1080p，帧率15，码率2.08Mbps - 1280*720_30_3420：输出流是720p，帧率30，码率3.42Mbps - 1280*720_30_1710：输出流是720p，帧率30，码率1.71Mbps - 1280*720_15_2260：输出流是720p，帧率15，码率2.26Mbps - 1280*720_15_1130：输出流是720p，帧率15，码率1.13Mbps - 640*480_30_1500：输出流是480p，帧率30，码率1.50Mbps - 640*480_15_500：输出流是480p，帧率15，码率500Kbps - 640*480_30_1000 输出流是480p，帧率30，码率1000Kbps - 480*360_30_490：输出流是360p，帧率30，码率490Kbps - 480*360_15_320：输出流是360p，帧率15，码率320Kbps 
 
@@ -141,7 +141,7 @@ class MixParam:
 
     @property
     def max_idle_time(self):
-        """Gets the max_idle_time of this MixParam.
+        r"""Gets the max_idle_time of this MixParam.
 
         最长空闲频道时间。  取值范围：[5，43200]，默认值为30。  单位：秒。  如果频道内无连麦方的状态持续超过该时间，录制程序会自动退出。退出后，再次调用start请求，会产生新的录制任务。  连麦方指：joiner或者publisher的用户。 
 
@@ -152,7 +152,7 @@ class MixParam:
 
     @max_idle_time.setter
     def max_idle_time(self, max_idle_time):
-        """Sets the max_idle_time of this MixParam.
+        r"""Sets the max_idle_time of this MixParam.
 
         最长空闲频道时间。  取值范围：[5，43200]，默认值为30。  单位：秒。  如果频道内无连麦方的状态持续超过该时间，录制程序会自动退出。退出后，再次调用start请求，会产生新的录制任务。  连麦方指：joiner或者publisher的用户。 
 
@@ -163,7 +163,7 @@ class MixParam:
 
     @property
     def layout_template(self):
-        """Gets the layout_template of this MixParam.
+        r"""Gets the layout_template of this MixParam.
 
         视频布局模板编号，不混视频的时候，不需要带。 - nine_grids_view：九宫格模板（自适应模板） - screen_share_left：主视图在左边的屏幕共享模板（自适应模板） - screen_share_right：主视图在右边的屏幕共享模板（自适应模板） - custom：自定义布局 
 
@@ -174,7 +174,7 @@ class MixParam:
 
     @layout_template.setter
     def layout_template(self, layout_template):
-        """Sets the layout_template of this MixParam.
+        r"""Sets the layout_template of this MixParam.
 
         视频布局模板编号，不混视频的时候，不需要带。 - nine_grids_view：九宫格模板（自适应模板） - screen_share_left：主视图在左边的屏幕共享模板（自适应模板） - screen_share_right：主视图在右边的屏幕共享模板（自适应模板） - custom：自定义布局 
 
@@ -185,7 +185,7 @@ class MixParam:
 
     @property
     def default_user_background_image(self):
-        """Gets the default_user_background_image of this MixParam.
+        r"""Gets the default_user_background_image of this MixParam.
 
         默认用户背景图地址，图片先上传obs，格式s3://bucket/object。默认使用等比缩放裁剪，保证铺满。
 
@@ -196,7 +196,7 @@ class MixParam:
 
     @default_user_background_image.setter
     def default_user_background_image(self, default_user_background_image):
-        """Sets the default_user_background_image of this MixParam.
+        r"""Sets the default_user_background_image of this MixParam.
 
         默认用户背景图地址，图片先上传obs，格式s3://bucket/object。默认使用等比缩放裁剪，保证铺满。
 
@@ -207,7 +207,7 @@ class MixParam:
 
     @property
     def screen_background_image(self):
-        """Gets the screen_background_image of this MixParam.
+        r"""Gets the screen_background_image of this MixParam.
 
         共享屏幕的背景图地址，图片先上传obs，格式s3://bucket/object。  在一大多小的布局场景下，无论大窗是显示非指定用户（屏幕共享人的桌面）还是指定用户的共享桌面，都通过该字段指定背景图。 
 
@@ -218,7 +218,7 @@ class MixParam:
 
     @screen_background_image.setter
     def screen_background_image(self, screen_background_image):
-        """Sets the screen_background_image of this MixParam.
+        r"""Sets the screen_background_image of this MixParam.
 
         共享屏幕的背景图地址，图片先上传obs，格式s3://bucket/object。  在一大多小的布局场景下，无论大窗是显示非指定用户（屏幕共享人的桌面）还是指定用户的共享桌面，都通过该字段指定背景图。 
 
@@ -229,7 +229,7 @@ class MixParam:
 
     @property
     def background_image(self):
-        """Gets the background_image of this MixParam.
+        r"""Gets the background_image of this MixParam.
 
         画布背景图地址，图片先上传obs，格式s3://bucket/object。默认使用等比缩放裁剪，保证铺满。
 
@@ -240,7 +240,7 @@ class MixParam:
 
     @background_image.setter
     def background_image(self, background_image):
-        """Sets the background_image of this MixParam.
+        r"""Sets the background_image of this MixParam.
 
         画布背景图地址，图片先上传obs，格式s3://bucket/object。默认使用等比缩放裁剪，保证铺满。
 
@@ -251,7 +251,7 @@ class MixParam:
 
     @property
     def layout_panes(self):
-        """Gets the layout_panes of this MixParam.
+        r"""Gets the layout_panes of this MixParam.
 
         需要混流的视频列表。若不需要混流视频，则可不传递该参数。  nine_grids_view模板不需要填写本字段。 
 
@@ -262,7 +262,7 @@ class MixParam:
 
     @layout_panes.setter
     def layout_panes(self, layout_panes):
-        """Sets the layout_panes of this MixParam.
+        r"""Sets the layout_panes of this MixParam.
 
         需要混流的视频列表。若不需要混流视频，则可不传递该参数。  nine_grids_view模板不需要填写本字段。 
 
@@ -273,7 +273,7 @@ class MixParam:
 
     @property
     def user_background_images(self):
-        """Gets the user_background_images of this MixParam.
+        r"""Gets the user_background_images of this MixParam.
 
         指定用户背景图，优先级大于default_user_background_image
 
@@ -284,7 +284,7 @@ class MixParam:
 
     @user_background_images.setter
     def user_background_images(self, user_background_images):
-        """Sets the user_background_images of this MixParam.
+        r"""Sets the user_background_images of this MixParam.
 
         指定用户背景图，优先级大于default_user_background_image
 

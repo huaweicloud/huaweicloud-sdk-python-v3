@@ -31,7 +31,7 @@ class ListProjectWorkHoursTypeRequest:
     }
 
     def __init__(self, project_id=None, limit=None, offset=None, status=None):
-        """ListProjectWorkHoursTypeRequest
+        r"""ListProjectWorkHoursTypeRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListProjectWorkHoursTypeRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListProjectWorkHoursTypeRequest.
+        r"""Gets the project_id of this ListProjectWorkHoursTypeRequest.
 
         项目id
 
@@ -74,7 +74,7 @@ class ListProjectWorkHoursTypeRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListProjectWorkHoursTypeRequest.
+        r"""Sets the project_id of this ListProjectWorkHoursTypeRequest.
 
         项目id
 
@@ -85,7 +85,7 @@ class ListProjectWorkHoursTypeRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListProjectWorkHoursTypeRequest.
+        r"""Gets the limit of this ListProjectWorkHoursTypeRequest.
 
         每页显示的数量，默认显示10条，最多显示100条
 
@@ -96,7 +96,7 @@ class ListProjectWorkHoursTypeRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListProjectWorkHoursTypeRequest.
+        r"""Sets the limit of this ListProjectWorkHoursTypeRequest.
 
         每页显示的数量，默认显示10条，最多显示100条
 
@@ -107,7 +107,7 @@ class ListProjectWorkHoursTypeRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListProjectWorkHoursTypeRequest.
+        r"""Gets the offset of this ListProjectWorkHoursTypeRequest.
 
         分页索引，偏移量offset是limit的整数倍，limit=10,offset=0,10,20...
 
@@ -118,7 +118,7 @@ class ListProjectWorkHoursTypeRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListProjectWorkHoursTypeRequest.
+        r"""Sets the offset of this ListProjectWorkHoursTypeRequest.
 
         分页索引，偏移量offset是limit的整数倍，limit=10,offset=0,10,20...
 
@@ -129,7 +129,7 @@ class ListProjectWorkHoursTypeRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListProjectWorkHoursTypeRequest.
+        r"""Gets the status of this ListProjectWorkHoursTypeRequest.
 
         工时类型状态，支持按状态筛选查询，置空时查询所有工时类型，1表示查询启用的工时类型，2表示查询未启用的工时类型
 
@@ -140,7 +140,7 @@ class ListProjectWorkHoursTypeRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListProjectWorkHoursTypeRequest.
+        r"""Sets the status of this ListProjectWorkHoursTypeRequest.
 
         工时类型状态，支持按状态筛选查询，置空时查询所有工时类型，1表示查询启用的工时类型，2表示查询未启用的工时类型
 

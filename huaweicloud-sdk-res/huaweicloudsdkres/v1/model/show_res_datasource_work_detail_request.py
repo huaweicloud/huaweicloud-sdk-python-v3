@@ -31,7 +31,7 @@ class ShowResDatasourceWorkDetailRequest:
     }
 
     def __init__(self, content_type=None, workspace_id=None, resource_id=None, type=None):
-        """ShowResDatasourceWorkDetailRequest
+        r"""ShowResDatasourceWorkDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ShowResDatasourceWorkDetailRequest:
 
     @property
     def content_type(self):
-        """Gets the content_type of this ShowResDatasourceWorkDetailRequest.
+        r"""Gets the content_type of this ShowResDatasourceWorkDetailRequest.
 
         内容类型，取值为application/json。
 
@@ -71,7 +71,7 @@ class ShowResDatasourceWorkDetailRequest:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this ShowResDatasourceWorkDetailRequest.
+        r"""Sets the content_type of this ShowResDatasourceWorkDetailRequest.
 
         内容类型，取值为application/json。
 
@@ -82,7 +82,7 @@ class ShowResDatasourceWorkDetailRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ShowResDatasourceWorkDetailRequest.
+        r"""Gets the workspace_id of this ShowResDatasourceWorkDetailRequest.
 
         工作空间id。
 
@@ -93,7 +93,7 @@ class ShowResDatasourceWorkDetailRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ShowResDatasourceWorkDetailRequest.
+        r"""Sets the workspace_id of this ShowResDatasourceWorkDetailRequest.
 
         工作空间id。
 
@@ -104,7 +104,7 @@ class ShowResDatasourceWorkDetailRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ShowResDatasourceWorkDetailRequest.
+        r"""Gets the resource_id of this ShowResDatasourceWorkDetailRequest.
 
         资源id。
 
@@ -115,7 +115,7 @@ class ShowResDatasourceWorkDetailRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ShowResDatasourceWorkDetailRequest.
+        r"""Sets the resource_id of this ShowResDatasourceWorkDetailRequest.
 
         资源id。
 
@@ -126,7 +126,7 @@ class ShowResDatasourceWorkDetailRequest:
 
     @property
     def type(self):
-        """Gets the type of this ShowResDatasourceWorkDetailRequest.
+        r"""Gets the type of this ShowResDatasourceWorkDetailRequest.
 
         任务类型： - DATA_STRUCT，数据结构 - DATA_INSPECTION，数据检测 - DATA_EXPLORATION，数据探索
 
@@ -137,7 +137,7 @@ class ShowResDatasourceWorkDetailRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowResDatasourceWorkDetailRequest.
+        r"""Sets the type of this ShowResDatasourceWorkDetailRequest.
 
         任务类型： - DATA_STRUCT，数据结构 - DATA_INSPECTION，数据检测 - DATA_EXPLORATION，数据探索
 

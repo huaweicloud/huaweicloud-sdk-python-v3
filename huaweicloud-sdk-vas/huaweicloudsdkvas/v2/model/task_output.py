@@ -33,7 +33,7 @@ class TaskOutput:
     }
 
     def __init__(self, obs=None, dis=None, webhook=None, hosting=None, localpath=None):
-        """TaskOutput
+        r"""TaskOutput
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class TaskOutput:
 
     @property
     def obs(self):
-        """Gets the obs of this TaskOutput.
+        r"""Gets the obs of this TaskOutput.
 
         :return: The obs of this TaskOutput.
         :rtype: :class:`huaweicloudsdkvas.v2.TaskOutputObs`
@@ -80,7 +80,7 @@ class TaskOutput:
 
     @obs.setter
     def obs(self, obs):
-        """Sets the obs of this TaskOutput.
+        r"""Sets the obs of this TaskOutput.
 
         :param obs: The obs of this TaskOutput.
         :type obs: :class:`huaweicloudsdkvas.v2.TaskOutputObs`
@@ -89,7 +89,7 @@ class TaskOutput:
 
     @property
     def dis(self):
-        """Gets the dis of this TaskOutput.
+        r"""Gets the dis of this TaskOutput.
 
         :return: The dis of this TaskOutput.
         :rtype: :class:`huaweicloudsdkvas.v2.TaskOutputDis`
@@ -98,7 +98,7 @@ class TaskOutput:
 
     @dis.setter
     def dis(self, dis):
-        """Sets the dis of this TaskOutput.
+        r"""Sets the dis of this TaskOutput.
 
         :param dis: The dis of this TaskOutput.
         :type dis: :class:`huaweicloudsdkvas.v2.TaskOutputDis`
@@ -107,7 +107,7 @@ class TaskOutput:
 
     @property
     def webhook(self):
-        """Gets the webhook of this TaskOutput.
+        r"""Gets the webhook of this TaskOutput.
 
         :return: The webhook of this TaskOutput.
         :rtype: :class:`huaweicloudsdkvas.v2.TaskOutputWebhook`
@@ -116,7 +116,7 @@ class TaskOutput:
 
     @webhook.setter
     def webhook(self, webhook):
-        """Sets the webhook of this TaskOutput.
+        r"""Sets the webhook of this TaskOutput.
 
         :param webhook: The webhook of this TaskOutput.
         :type webhook: :class:`huaweicloudsdkvas.v2.TaskOutputWebhook`
@@ -125,7 +125,7 @@ class TaskOutput:
 
     @property
     def hosting(self):
-        """Gets the hosting of this TaskOutput.
+        r"""Gets the hosting of this TaskOutput.
 
         :return: The hosting of this TaskOutput.
         :rtype: :class:`huaweicloudsdkvas.v2.TaskOutputHosting`
@@ -134,7 +134,7 @@ class TaskOutput:
 
     @hosting.setter
     def hosting(self, hosting):
-        """Sets the hosting of this TaskOutput.
+        r"""Sets the hosting of this TaskOutput.
 
         :param hosting: The hosting of this TaskOutput.
         :type hosting: :class:`huaweicloudsdkvas.v2.TaskOutputHosting`
@@ -143,7 +143,7 @@ class TaskOutput:
 
     @property
     def localpath(self):
-        """Gets the localpath of this TaskOutput.
+        r"""Gets the localpath of this TaskOutput.
 
         :return: The localpath of this TaskOutput.
         :rtype: :class:`huaweicloudsdkvas.v2.TaskOutputLocalpath`
@@ -152,7 +152,7 @@ class TaskOutput:
 
     @localpath.setter
     def localpath(self, localpath):
-        """Sets the localpath of this TaskOutput.
+        r"""Sets the localpath of this TaskOutput.
 
         :param localpath: The localpath of this TaskOutput.
         :type localpath: :class:`huaweicloudsdkvas.v2.TaskOutputLocalpath`

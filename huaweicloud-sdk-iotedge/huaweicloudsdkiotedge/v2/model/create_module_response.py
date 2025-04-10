@@ -48,7 +48,7 @@ class CreateModuleResponse(SdkResponse):
     }
 
     def __init__(self, edge_app_id=None, app_version=None, state=None, control_status=None, node_id=None, module_name=None, module_id=None, create_time=None, update_time=None, app_type=None, function_type=None, container_settings=None):
-        """CreateModuleResponse
+        r"""CreateModuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class CreateModuleResponse(SdkResponse):
 
     @property
     def edge_app_id(self):
-        """Gets the edge_app_id of this CreateModuleResponse.
+        r"""Gets the edge_app_id of this CreateModuleResponse.
 
         应用ID
 
@@ -132,7 +132,7 @@ class CreateModuleResponse(SdkResponse):
 
     @edge_app_id.setter
     def edge_app_id(self, edge_app_id):
-        """Sets the edge_app_id of this CreateModuleResponse.
+        r"""Sets the edge_app_id of this CreateModuleResponse.
 
         应用ID
 
@@ -143,7 +143,7 @@ class CreateModuleResponse(SdkResponse):
 
     @property
     def app_version(self):
-        """Gets the app_version of this CreateModuleResponse.
+        r"""Gets the app_version of this CreateModuleResponse.
 
         应用版本
 
@@ -154,7 +154,7 @@ class CreateModuleResponse(SdkResponse):
 
     @app_version.setter
     def app_version(self, app_version):
-        """Sets the app_version of this CreateModuleResponse.
+        r"""Sets the app_version of this CreateModuleResponse.
 
         应用版本
 
@@ -165,7 +165,7 @@ class CreateModuleResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this CreateModuleResponse.
+        r"""Gets the state of this CreateModuleResponse.
 
         模块运行状态
 
@@ -176,7 +176,7 @@ class CreateModuleResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this CreateModuleResponse.
+        r"""Sets the state of this CreateModuleResponse.
 
         模块运行状态
 
@@ -187,7 +187,7 @@ class CreateModuleResponse(SdkResponse):
 
     @property
     def control_status(self):
-        """Gets the control_status of this CreateModuleResponse.
+        r"""Gets the control_status of this CreateModuleResponse.
 
         模块管控状态
 
@@ -198,7 +198,7 @@ class CreateModuleResponse(SdkResponse):
 
     @control_status.setter
     def control_status(self, control_status):
-        """Sets the control_status of this CreateModuleResponse.
+        r"""Sets the control_status of this CreateModuleResponse.
 
         模块管控状态
 
@@ -209,7 +209,7 @@ class CreateModuleResponse(SdkResponse):
 
     @property
     def node_id(self):
-        """Gets the node_id of this CreateModuleResponse.
+        r"""Gets the node_id of this CreateModuleResponse.
 
         边缘节点（同deviceID）ID
 
@@ -220,7 +220,7 @@ class CreateModuleResponse(SdkResponse):
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this CreateModuleResponse.
+        r"""Sets the node_id of this CreateModuleResponse.
 
         边缘节点（同deviceID）ID
 
@@ -231,7 +231,7 @@ class CreateModuleResponse(SdkResponse):
 
     @property
     def module_name(self):
-        """Gets the module_name of this CreateModuleResponse.
+        r"""Gets the module_name of this CreateModuleResponse.
 
         模块名称
 
@@ -242,7 +242,7 @@ class CreateModuleResponse(SdkResponse):
 
     @module_name.setter
     def module_name(self, module_name):
-        """Sets the module_name of this CreateModuleResponse.
+        r"""Sets the module_name of this CreateModuleResponse.
 
         模块名称
 
@@ -253,7 +253,7 @@ class CreateModuleResponse(SdkResponse):
 
     @property
     def module_id(self):
-        """Gets the module_id of this CreateModuleResponse.
+        r"""Gets the module_id of this CreateModuleResponse.
 
         模块ID
 
@@ -264,7 +264,7 @@ class CreateModuleResponse(SdkResponse):
 
     @module_id.setter
     def module_id(self, module_id):
-        """Sets the module_id of this CreateModuleResponse.
+        r"""Sets the module_id of this CreateModuleResponse.
 
         模块ID
 
@@ -275,7 +275,7 @@ class CreateModuleResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreateModuleResponse.
+        r"""Gets the create_time of this CreateModuleResponse.
 
         创建时间
 
@@ -286,7 +286,7 @@ class CreateModuleResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreateModuleResponse.
+        r"""Sets the create_time of this CreateModuleResponse.
 
         创建时间
 
@@ -297,7 +297,7 @@ class CreateModuleResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this CreateModuleResponse.
+        r"""Gets the update_time of this CreateModuleResponse.
 
         最后一次修改时间
 
@@ -308,7 +308,7 @@ class CreateModuleResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this CreateModuleResponse.
+        r"""Sets the update_time of this CreateModuleResponse.
 
         最后一次修改时间
 
@@ -319,7 +319,7 @@ class CreateModuleResponse(SdkResponse):
 
     @property
     def app_type(self):
-        """Gets the app_type of this CreateModuleResponse.
+        r"""Gets the app_type of this CreateModuleResponse.
 
         应用类型
 
@@ -330,7 +330,7 @@ class CreateModuleResponse(SdkResponse):
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this CreateModuleResponse.
+        r"""Sets the app_type of this CreateModuleResponse.
 
         应用类型
 
@@ -341,7 +341,7 @@ class CreateModuleResponse(SdkResponse):
 
     @property
     def function_type(self):
-        """Gets the function_type of this CreateModuleResponse.
+        r"""Gets the function_type of this CreateModuleResponse.
 
         功能类型
 
@@ -352,7 +352,7 @@ class CreateModuleResponse(SdkResponse):
 
     @function_type.setter
     def function_type(self, function_type):
-        """Sets the function_type of this CreateModuleResponse.
+        r"""Sets the function_type of this CreateModuleResponse.
 
         功能类型
 
@@ -363,7 +363,7 @@ class CreateModuleResponse(SdkResponse):
 
     @property
     def container_settings(self):
-        """Gets the container_settings of this CreateModuleResponse.
+        r"""Gets the container_settings of this CreateModuleResponse.
 
         :return: The container_settings of this CreateModuleResponse.
         :rtype: :class:`huaweicloudsdkiotedge.v2.ModuleContainerSettingsResDTO`
@@ -372,7 +372,7 @@ class CreateModuleResponse(SdkResponse):
 
     @container_settings.setter
     def container_settings(self, container_settings):
-        """Sets the container_settings of this CreateModuleResponse.
+        r"""Sets the container_settings of this CreateModuleResponse.
 
         :param container_settings: The container_settings of this CreateModuleResponse.
         :type container_settings: :class:`huaweicloudsdkiotedge.v2.ModuleContainerSettingsResDTO`

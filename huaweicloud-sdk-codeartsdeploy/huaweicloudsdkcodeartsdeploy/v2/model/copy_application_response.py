@@ -28,7 +28,7 @@ class CopyApplicationResponse(SdkResponse):
     }
 
     def __init__(self, result=None, status=None):
-        """CopyApplicationResponse
+        r"""CopyApplicationResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CopyApplicationResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this CopyApplicationResponse.
+        r"""Gets the result of this CopyApplicationResponse.
 
         :return: The result of this CopyApplicationResponse.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.AppBaseInfo`
@@ -60,7 +60,7 @@ class CopyApplicationResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this CopyApplicationResponse.
+        r"""Sets the result of this CopyApplicationResponse.
 
         :param result: The result of this CopyApplicationResponse.
         :type result: :class:`huaweicloudsdkcodeartsdeploy.v2.AppBaseInfo`
@@ -69,7 +69,7 @@ class CopyApplicationResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CopyApplicationResponse.
+        r"""Gets the status of this CopyApplicationResponse.
 
         请求成功失败状态
 
@@ -80,7 +80,7 @@ class CopyApplicationResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CopyApplicationResponse.
+        r"""Sets the status of this CopyApplicationResponse.
 
         请求成功失败状态
 

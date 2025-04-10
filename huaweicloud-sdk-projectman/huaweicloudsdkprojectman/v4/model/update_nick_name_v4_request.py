@@ -25,7 +25,7 @@ class UpdateNickNameV4Request:
     }
 
     def __init__(self, body=None):
-        """UpdateNickNameV4Request
+        r"""UpdateNickNameV4Request
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateNickNameV4Request:
 
     @property
     def body(self):
-        """Gets the body of this UpdateNickNameV4Request.
+        r"""Gets the body of this UpdateNickNameV4Request.
 
         :return: The body of this UpdateNickNameV4Request.
         :rtype: :class:`huaweicloudsdkprojectman.v4.UpdateUserNickNameRequestV4`
@@ -52,7 +52,7 @@ class UpdateNickNameV4Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateNickNameV4Request.
+        r"""Sets the body of this UpdateNickNameV4Request.
 
         :param body: The body of this UpdateNickNameV4Request.
         :type body: :class:`huaweicloudsdkprojectman.v4.UpdateUserNickNameRequestV4`

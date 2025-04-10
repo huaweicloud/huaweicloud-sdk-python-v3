@@ -61,7 +61,7 @@ class CreateBucketRequest:
     }
 
     def __init__(self, bucket_name=None, date=None, x_obs_acl=None, x_obs_storage_class=None, x_obs_grant_read=None, x_obs_grant_write=None, x_obs_grant_read_acp=None, x_obs_grant_write_acp=None, x_obs_grant_full_control=None, x_obs_grant_read_delivered=None, x_obs_grant_full_control_delivered=None, x_obs_az_redundancy=None, x_obs_fs_file_interface=None, x_obs_epid=None, x_obs_cluster_type=None, x_obs_location_clustergroup_id=None, x_obs_ies_location=None, body=None):
-        """CreateBucketRequest
+        r"""CreateBucketRequest
 
         The model defined in huaweicloud sdk
 
@@ -163,7 +163,7 @@ class CreateBucketRequest:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this CreateBucketRequest.
+        r"""Gets the bucket_name of this CreateBucketRequest.
 
         A bucket name is part of the access domain name and needs to be resolved. The bucket name must conform to the DNS domain naming rules. When receiving a bucket creation request, OBS strictly checks the bucket name based on the following rules: + A bucket name must be unique across all accounts and regions. + The name of a deleted bucket can be reused for another bucket or a parallel file system at least 30 minutes later after the deletion. + A bucket name must be 3 to 63 characters long. Only lowercase letters, digits, hyphens (-), and periods (.) are allowed. + A bucket name cannot start or end with a period (.) or hyphen (-), and cannot contain two consecutive periods (..) or contain a period (.) and a hyphen (-) adjacent to each other. + A bucket name cannot be formatted as an IP address. Note: The SSL wildcard certificate matches only buckets without periods (.) in their names when HTTPS is used for OBS access. If you use a bucket with periods (.) in its name to access OBS, the client will display a message indicating that the bucket is risky, for example, a red alarm may be displayed in the browser security prompt. We recommend that you avoid using periods (.) in bucket names.
 
@@ -174,7 +174,7 @@ class CreateBucketRequest:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this CreateBucketRequest.
+        r"""Sets the bucket_name of this CreateBucketRequest.
 
         A bucket name is part of the access domain name and needs to be resolved. The bucket name must conform to the DNS domain naming rules. When receiving a bucket creation request, OBS strictly checks the bucket name based on the following rules: + A bucket name must be unique across all accounts and regions. + The name of a deleted bucket can be reused for another bucket or a parallel file system at least 30 minutes later after the deletion. + A bucket name must be 3 to 63 characters long. Only lowercase letters, digits, hyphens (-), and periods (.) are allowed. + A bucket name cannot start or end with a period (.) or hyphen (-), and cannot contain two consecutive periods (..) or contain a period (.) and a hyphen (-) adjacent to each other. + A bucket name cannot be formatted as an IP address. Note: The SSL wildcard certificate matches only buckets without periods (.) in their names when HTTPS is used for OBS access. If you use a bucket with periods (.) in its name to access OBS, the client will display a message indicating that the bucket is risky, for example, a red alarm may be displayed in the browser security prompt. We recommend that you avoid using periods (.) in bucket names.
 
@@ -185,7 +185,7 @@ class CreateBucketRequest:
 
     @property
     def date(self):
-        """Gets the date of this CreateBucketRequest.
+        r"""Gets the date of this CreateBucketRequest.
 
         Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
@@ -196,7 +196,7 @@ class CreateBucketRequest:
 
     @date.setter
     def date(self, date):
-        """Sets the date of this CreateBucketRequest.
+        r"""Sets the date of this CreateBucketRequest.
 
         Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
@@ -207,7 +207,7 @@ class CreateBucketRequest:
 
     @property
     def x_obs_acl(self):
-        """Gets the x_obs_acl of this CreateBucketRequest.
+        r"""Gets the x_obs_acl of this CreateBucketRequest.
 
         When creating a bucket, you can add this header to configure access control policies (predefined common policies) for a bucket. Such policies include **private**, **public-read**, **public-read-write**, **public-read-delivered**, **public-read-write-delivered**, and **bucket-owner-full-control**. For details about each policy, see the ACL configuration using headers in section ACLs.
 
@@ -218,7 +218,7 @@ class CreateBucketRequest:
 
     @x_obs_acl.setter
     def x_obs_acl(self, x_obs_acl):
-        """Sets the x_obs_acl of this CreateBucketRequest.
+        r"""Sets the x_obs_acl of this CreateBucketRequest.
 
         When creating a bucket, you can add this header to configure access control policies (predefined common policies) for a bucket. Such policies include **private**, **public-read**, **public-read-write**, **public-read-delivered**, **public-read-write-delivered**, and **bucket-owner-full-control**. For details about each policy, see the ACL configuration using headers in section ACLs.
 
@@ -229,7 +229,7 @@ class CreateBucketRequest:
 
     @property
     def x_obs_storage_class(self):
-        """Gets the x_obs_storage_class of this CreateBucketRequest.
+        r"""Gets the x_obs_storage_class of this CreateBucketRequest.
 
         When creating a bucket, you can add this header to configure a default storage class for a bucket. The storage classes include Standard (STANDARD), Infrequent Access (WARM), Archive (COLD), and High-Performance (HIGH_PERFORMANCE). The high-performance storage is only for parallel file systems. If this header is not included, the bucket is created in the Standard storage class.
 
@@ -240,7 +240,7 @@ class CreateBucketRequest:
 
     @x_obs_storage_class.setter
     def x_obs_storage_class(self, x_obs_storage_class):
-        """Sets the x_obs_storage_class of this CreateBucketRequest.
+        r"""Sets the x_obs_storage_class of this CreateBucketRequest.
 
         When creating a bucket, you can add this header to configure a default storage class for a bucket. The storage classes include Standard (STANDARD), Infrequent Access (WARM), Archive (COLD), and High-Performance (HIGH_PERFORMANCE). The high-performance storage is only for parallel file systems. If this header is not included, the bucket is created in the Standard storage class.
 
@@ -251,7 +251,7 @@ class CreateBucketRequest:
 
     @property
     def x_obs_grant_read(self):
-        """Gets the x_obs_grant_read of this CreateBucketRequest.
+        r"""Gets the x_obs_grant_read of this CreateBucketRequest.
 
         Grants the read permission to all users under an account. The read permission allows you to list objects, multipart uploads, and object versions in a bucket, as well as to obtain bucket metadata.
 
@@ -262,7 +262,7 @@ class CreateBucketRequest:
 
     @x_obs_grant_read.setter
     def x_obs_grant_read(self, x_obs_grant_read):
-        """Sets the x_obs_grant_read of this CreateBucketRequest.
+        r"""Sets the x_obs_grant_read of this CreateBucketRequest.
 
         Grants the read permission to all users under an account. The read permission allows you to list objects, multipart uploads, and object versions in a bucket, as well as to obtain bucket metadata.
 
@@ -273,7 +273,7 @@ class CreateBucketRequest:
 
     @property
     def x_obs_grant_write(self):
-        """Gets the x_obs_grant_write of this CreateBucketRequest.
+        r"""Gets the x_obs_grant_write of this CreateBucketRequest.
 
         Grants the write permission to all users under an account. The write permission allows you to create, delete, or overwrite all objects in a bucket, and to initialize, upload, copy, and merge parts, as well as to cancel multipart uploads.
 
@@ -284,7 +284,7 @@ class CreateBucketRequest:
 
     @x_obs_grant_write.setter
     def x_obs_grant_write(self, x_obs_grant_write):
-        """Sets the x_obs_grant_write of this CreateBucketRequest.
+        r"""Sets the x_obs_grant_write of this CreateBucketRequest.
 
         Grants the write permission to all users under an account. The write permission allows you to create, delete, or overwrite all objects in a bucket, and to initialize, upload, copy, and merge parts, as well as to cancel multipart uploads.
 
@@ -295,7 +295,7 @@ class CreateBucketRequest:
 
     @property
     def x_obs_grant_read_acp(self):
-        """Gets the x_obs_grant_read_acp of this CreateBucketRequest.
+        r"""Gets the x_obs_grant_read_acp of this CreateBucketRequest.
 
         Grants the ACL read permission to all users under an account. The ACL read permission allows you to read the bucket ACL.
 
@@ -306,7 +306,7 @@ class CreateBucketRequest:
 
     @x_obs_grant_read_acp.setter
     def x_obs_grant_read_acp(self, x_obs_grant_read_acp):
-        """Sets the x_obs_grant_read_acp of this CreateBucketRequest.
+        r"""Sets the x_obs_grant_read_acp of this CreateBucketRequest.
 
         Grants the ACL read permission to all users under an account. The ACL read permission allows you to read the bucket ACL.
 
@@ -317,7 +317,7 @@ class CreateBucketRequest:
 
     @property
     def x_obs_grant_write_acp(self):
-        """Gets the x_obs_grant_write_acp of this CreateBucketRequest.
+        r"""Gets the x_obs_grant_write_acp of this CreateBucketRequest.
 
         Grants the ACL write permission to all users under an account. The ACL write permission allows you to modify the bucket ACL.
 
@@ -328,7 +328,7 @@ class CreateBucketRequest:
 
     @x_obs_grant_write_acp.setter
     def x_obs_grant_write_acp(self, x_obs_grant_write_acp):
-        """Sets the x_obs_grant_write_acp of this CreateBucketRequest.
+        r"""Sets the x_obs_grant_write_acp of this CreateBucketRequest.
 
         Grants the ACL write permission to all users under an account. The ACL write permission allows you to modify the bucket ACL.
 
@@ -339,7 +339,7 @@ class CreateBucketRequest:
 
     @property
     def x_obs_grant_full_control(self):
-        """Gets the x_obs_grant_full_control of this CreateBucketRequest.
+        r"""Gets the x_obs_grant_full_control of this CreateBucketRequest.
 
         Grants the full control access to all users under an account.
 
@@ -350,7 +350,7 @@ class CreateBucketRequest:
 
     @x_obs_grant_full_control.setter
     def x_obs_grant_full_control(self, x_obs_grant_full_control):
-        """Sets the x_obs_grant_full_control of this CreateBucketRequest.
+        r"""Sets the x_obs_grant_full_control of this CreateBucketRequest.
 
         Grants the full control access to all users under an account.
 
@@ -361,7 +361,7 @@ class CreateBucketRequest:
 
     @property
     def x_obs_grant_read_delivered(self):
-        """Gets the x_obs_grant_read_delivered of this CreateBucketRequest.
+        r"""Gets the x_obs_grant_read_delivered of this CreateBucketRequest.
 
         Grants the read permission to all users under an account. By default, the read permission is applied to all objects in the bucket.
 
@@ -372,7 +372,7 @@ class CreateBucketRequest:
 
     @x_obs_grant_read_delivered.setter
     def x_obs_grant_read_delivered(self, x_obs_grant_read_delivered):
-        """Sets the x_obs_grant_read_delivered of this CreateBucketRequest.
+        r"""Sets the x_obs_grant_read_delivered of this CreateBucketRequest.
 
         Grants the read permission to all users under an account. By default, the read permission is applied to all objects in the bucket.
 
@@ -383,7 +383,7 @@ class CreateBucketRequest:
 
     @property
     def x_obs_grant_full_control_delivered(self):
-        """Gets the x_obs_grant_full_control_delivered of this CreateBucketRequest.
+        r"""Gets the x_obs_grant_full_control_delivered of this CreateBucketRequest.
 
         Grants the full control access to all users under an account. By default, the full control access is applied to all objects in the bucket.
 
@@ -394,7 +394,7 @@ class CreateBucketRequest:
 
     @x_obs_grant_full_control_delivered.setter
     def x_obs_grant_full_control_delivered(self, x_obs_grant_full_control_delivered):
-        """Sets the x_obs_grant_full_control_delivered of this CreateBucketRequest.
+        r"""Sets the x_obs_grant_full_control_delivered of this CreateBucketRequest.
 
         Grants the full control access to all users under an account. By default, the full control access is applied to all objects in the bucket.
 
@@ -405,7 +405,7 @@ class CreateBucketRequest:
 
     @property
     def x_obs_az_redundancy(self):
-        """Gets the x_obs_az_redundancy of this CreateBucketRequest.
+        r"""Gets the x_obs_az_redundancy of this CreateBucketRequest.
 
         Add this header in a bucket creation request to enable the multi-AZ storage for the bucket. If this header is not carried, single-AZ storage is used for the bucket by default. If the region where you are creating the bucket does not support multi-AZ storage, even if you add this header in the request, the bucket still uses the single-AZ storage.
 
@@ -416,7 +416,7 @@ class CreateBucketRequest:
 
     @x_obs_az_redundancy.setter
     def x_obs_az_redundancy(self, x_obs_az_redundancy):
-        """Sets the x_obs_az_redundancy of this CreateBucketRequest.
+        r"""Sets the x_obs_az_redundancy of this CreateBucketRequest.
 
         Add this header in a bucket creation request to enable the multi-AZ storage for the bucket. If this header is not carried, single-AZ storage is used for the bucket by default. If the region where you are creating the bucket does not support multi-AZ storage, even if you add this header in the request, the bucket still uses the single-AZ storage.
 
@@ -427,7 +427,7 @@ class CreateBucketRequest:
 
     @property
     def x_obs_fs_file_interface(self):
-        """Gets the x_obs_fs_file_interface of this CreateBucketRequest.
+        r"""Gets the x_obs_fs_file_interface of this CreateBucketRequest.
 
         Specifies a parallel file system during bucket creation.
 
@@ -438,7 +438,7 @@ class CreateBucketRequest:
 
     @x_obs_fs_file_interface.setter
     def x_obs_fs_file_interface(self, x_obs_fs_file_interface):
-        """Sets the x_obs_fs_file_interface of this CreateBucketRequest.
+        r"""Sets the x_obs_fs_file_interface of this CreateBucketRequest.
 
         Specifies a parallel file system during bucket creation.
 
@@ -449,7 +449,7 @@ class CreateBucketRequest:
 
     @property
     def x_obs_epid(self):
-        """Gets the x_obs_epid of this CreateBucketRequest.
+        r"""Gets the x_obs_epid of this CreateBucketRequest.
 
         Enterprise project ID in **UUID** format. If you have enabled the enterprise project function, you can obtain this ID from the enterprise project service. To use the default project, set this header to **0** or do not contain this header in the request. This header is not needed if you do not enable the enterprise project function.
 
@@ -460,7 +460,7 @@ class CreateBucketRequest:
 
     @x_obs_epid.setter
     def x_obs_epid(self, x_obs_epid):
-        """Sets the x_obs_epid of this CreateBucketRequest.
+        r"""Sets the x_obs_epid of this CreateBucketRequest.
 
         Enterprise project ID in **UUID** format. If you have enabled the enterprise project function, you can obtain this ID from the enterprise project service. To use the default project, set this header to **0** or do not contain this header in the request. This header is not needed if you do not enable the enterprise project function.
 
@@ -471,7 +471,7 @@ class CreateBucketRequest:
 
     @property
     def x_obs_cluster_type(self):
-        """Gets the x_obs_cluster_type of this CreateBucketRequest.
+        r"""Gets the x_obs_cluster_type of this CreateBucketRequest.
 
         Specifies the type (public or dedicated) of the cluster where a bucket is created.
 
@@ -482,7 +482,7 @@ class CreateBucketRequest:
 
     @x_obs_cluster_type.setter
     def x_obs_cluster_type(self, x_obs_cluster_type):
-        """Sets the x_obs_cluster_type of this CreateBucketRequest.
+        r"""Sets the x_obs_cluster_type of this CreateBucketRequest.
 
         Specifies the type (public or dedicated) of the cluster where a bucket is created.
 
@@ -493,7 +493,7 @@ class CreateBucketRequest:
 
     @property
     def x_obs_location_clustergroup_id(self):
-        """Gets the x_obs_location_clustergroup_id of this CreateBucketRequest.
+        r"""Gets the x_obs_location_clustergroup_id of this CreateBucketRequest.
 
         Cluster group ID when a bucket is explicitly created in a cluster.
 
@@ -504,7 +504,7 @@ class CreateBucketRequest:
 
     @x_obs_location_clustergroup_id.setter
     def x_obs_location_clustergroup_id(self, x_obs_location_clustergroup_id):
-        """Sets the x_obs_location_clustergroup_id of this CreateBucketRequest.
+        r"""Sets the x_obs_location_clustergroup_id of this CreateBucketRequest.
 
         Cluster group ID when a bucket is explicitly created in a cluster.
 
@@ -515,7 +515,7 @@ class CreateBucketRequest:
 
     @property
     def x_obs_ies_location(self):
-        """Gets the x_obs_ies_location of this CreateBucketRequest.
+        r"""Gets the x_obs_ies_location of this CreateBucketRequest.
 
         ID of the AZ of the IES site where a bucket is created. This parameter cannot coexist with **x-obs-cluster-type**.
 
@@ -526,7 +526,7 @@ class CreateBucketRequest:
 
     @x_obs_ies_location.setter
     def x_obs_ies_location(self, x_obs_ies_location):
-        """Sets the x_obs_ies_location of this CreateBucketRequest.
+        r"""Sets the x_obs_ies_location of this CreateBucketRequest.
 
         ID of the AZ of the IES site where a bucket is created. This parameter cannot coexist with **x-obs-cluster-type**.
 
@@ -537,7 +537,7 @@ class CreateBucketRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateBucketRequest.
+        r"""Gets the body of this CreateBucketRequest.
 
         :return: The body of this CreateBucketRequest.
         :rtype: :class:`huaweicloudsdkobs.v1.CreateBucketRequestBody`
@@ -546,7 +546,7 @@ class CreateBucketRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateBucketRequest.
+        r"""Sets the body of this CreateBucketRequest.
 
         :param body: The body of this CreateBucketRequest.
         :type body: :class:`huaweicloudsdkobs.v1.CreateBucketRequestBody`

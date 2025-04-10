@@ -38,7 +38,7 @@ class ListTenantProfileResponse(SdkResponse):
     }
 
     def __init__(self, project_id=None, project_name=None, tenant_domain_id=None, service_status=None, open_with_ad=None, tenant_domain_name=None, create_time=None):
-        """ListTenantProfileResponse
+        r"""ListTenantProfileResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ListTenantProfileResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListTenantProfileResponse.
+        r"""Gets the project_id of this ListTenantProfileResponse.
 
         租户ID 同tenant_id。
 
@@ -97,7 +97,7 @@ class ListTenantProfileResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListTenantProfileResponse.
+        r"""Sets the project_id of this ListTenantProfileResponse.
 
         租户ID 同tenant_id。
 
@@ -108,7 +108,7 @@ class ListTenantProfileResponse(SdkResponse):
 
     @property
     def project_name(self):
-        """Gets the project_name of this ListTenantProfileResponse.
+        r"""Gets the project_name of this ListTenantProfileResponse.
 
         租户名称。
 
@@ -119,7 +119,7 @@ class ListTenantProfileResponse(SdkResponse):
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this ListTenantProfileResponse.
+        r"""Sets the project_name of this ListTenantProfileResponse.
 
         租户名称。
 
@@ -130,7 +130,7 @@ class ListTenantProfileResponse(SdkResponse):
 
     @property
     def tenant_domain_id(self):
-        """Gets the tenant_domain_id of this ListTenantProfileResponse.
+        r"""Gets the tenant_domain_id of this ListTenantProfileResponse.
 
         租户的域ID。
 
@@ -141,7 +141,7 @@ class ListTenantProfileResponse(SdkResponse):
 
     @tenant_domain_id.setter
     def tenant_domain_id(self, tenant_domain_id):
-        """Sets the tenant_domain_id of this ListTenantProfileResponse.
+        r"""Sets the tenant_domain_id of this ListTenantProfileResponse.
 
         租户的域ID。
 
@@ -152,7 +152,7 @@ class ListTenantProfileResponse(SdkResponse):
 
     @property
     def service_status(self):
-        """Gets the service_status of this ListTenantProfileResponse.
+        r"""Gets the service_status of this ListTenantProfileResponse.
 
         服务状态 * `active` - 激活 * `inactive` - 未激活
 
@@ -163,7 +163,7 @@ class ListTenantProfileResponse(SdkResponse):
 
     @service_status.setter
     def service_status(self, service_status):
-        """Sets the service_status of this ListTenantProfileResponse.
+        r"""Sets the service_status of this ListTenantProfileResponse.
 
         服务状态 * `active` - 激活 * `inactive` - 未激活
 
@@ -174,7 +174,7 @@ class ListTenantProfileResponse(SdkResponse):
 
     @property
     def open_with_ad(self):
-        """Gets the open_with_ad of this ListTenantProfileResponse.
+        r"""Gets the open_with_ad of this ListTenantProfileResponse.
 
         是否对接AD。 有AD的情况下，提示租户单会话模式和多会话模式都支持; 在没有AD的情况下，提示租户仅支持VDI单会话模式。
 
@@ -185,7 +185,7 @@ class ListTenantProfileResponse(SdkResponse):
 
     @open_with_ad.setter
     def open_with_ad(self, open_with_ad):
-        """Sets the open_with_ad of this ListTenantProfileResponse.
+        r"""Sets the open_with_ad of this ListTenantProfileResponse.
 
         是否对接AD。 有AD的情况下，提示租户单会话模式和多会话模式都支持; 在没有AD的情况下，提示租户仅支持VDI单会话模式。
 
@@ -196,7 +196,7 @@ class ListTenantProfileResponse(SdkResponse):
 
     @property
     def tenant_domain_name(self):
-        """Gets the tenant_domain_name of this ListTenantProfileResponse.
+        r"""Gets the tenant_domain_name of this ListTenantProfileResponse.
 
         租户的域名称。
 
@@ -207,7 +207,7 @@ class ListTenantProfileResponse(SdkResponse):
 
     @tenant_domain_name.setter
     def tenant_domain_name(self, tenant_domain_name):
-        """Sets the tenant_domain_name of this ListTenantProfileResponse.
+        r"""Sets the tenant_domain_name of this ListTenantProfileResponse.
 
         租户的域名称。
 
@@ -218,7 +218,7 @@ class ListTenantProfileResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ListTenantProfileResponse.
+        r"""Gets the create_time of this ListTenantProfileResponse.
 
         租户信息创建时间。
 
@@ -229,7 +229,7 @@ class ListTenantProfileResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ListTenantProfileResponse.
+        r"""Sets the create_time of this ListTenantProfileResponse.
 
         租户信息创建时间。
 

@@ -33,7 +33,7 @@ class ListSupportedRegionsRequest:
     }
 
     def __init__(self, x_language=None, limit=None, marker=None, sort_key=None, sort_dir=None):
-        """ListSupportedRegionsRequest
+        r"""ListSupportedRegionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListSupportedRegionsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListSupportedRegionsRequest.
+        r"""Gets the x_language of this ListSupportedRegionsRequest.
 
         选择接口返回信息的语言类型，默认为中文\"zh-cn\"
 
@@ -82,7 +82,7 @@ class ListSupportedRegionsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListSupportedRegionsRequest.
+        r"""Sets the x_language of this ListSupportedRegionsRequest.
 
         选择接口返回信息的语言类型，默认为中文\"zh-cn\"
 
@@ -93,7 +93,7 @@ class ListSupportedRegionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSupportedRegionsRequest.
+        r"""Gets the limit of this ListSupportedRegionsRequest.
 
         每页的数量
 
@@ -104,7 +104,7 @@ class ListSupportedRegionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSupportedRegionsRequest.
+        r"""Sets the limit of this ListSupportedRegionsRequest.
 
         每页的数量
 
@@ -115,7 +115,7 @@ class ListSupportedRegionsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListSupportedRegionsRequest.
+        r"""Gets the marker of this ListSupportedRegionsRequest.
 
         分页标识
 
@@ -126,7 +126,7 @@ class ListSupportedRegionsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListSupportedRegionsRequest.
+        r"""Sets the marker of this ListSupportedRegionsRequest.
 
         分页标识
 
@@ -137,7 +137,7 @@ class ListSupportedRegionsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListSupportedRegionsRequest.
+        r"""Gets the sort_key of this ListSupportedRegionsRequest.
 
         排序字段
 
@@ -148,7 +148,7 @@ class ListSupportedRegionsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListSupportedRegionsRequest.
+        r"""Sets the sort_key of this ListSupportedRegionsRequest.
 
         排序字段
 
@@ -159,7 +159,7 @@ class ListSupportedRegionsRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListSupportedRegionsRequest.
+        r"""Gets the sort_dir of this ListSupportedRegionsRequest.
 
         排序方向，取值范围： - desc：降序 - acs：升序
 
@@ -170,7 +170,7 @@ class ListSupportedRegionsRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListSupportedRegionsRequest.
+        r"""Sets the sort_dir of this ListSupportedRegionsRequest.
 
         排序方向，取值范围： - desc：降序 - acs：升序
 

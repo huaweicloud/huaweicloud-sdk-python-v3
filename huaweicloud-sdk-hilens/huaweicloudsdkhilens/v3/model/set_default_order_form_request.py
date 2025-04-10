@@ -25,7 +25,7 @@ class SetDefaultOrderFormRequest:
     }
 
     def __init__(self, order_id=None):
-        """SetDefaultOrderFormRequest
+        r"""SetDefaultOrderFormRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SetDefaultOrderFormRequest:
 
     @property
     def order_id(self):
-        """Gets the order_id of this SetDefaultOrderFormRequest.
+        r"""Gets the order_id of this SetDefaultOrderFormRequest.
 
         订单ID
 
@@ -53,7 +53,7 @@ class SetDefaultOrderFormRequest:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this SetDefaultOrderFormRequest.
+        r"""Sets the order_id of this SetDefaultOrderFormRequest.
 
         订单ID
 

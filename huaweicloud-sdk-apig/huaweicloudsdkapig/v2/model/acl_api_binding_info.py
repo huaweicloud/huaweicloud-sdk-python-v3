@@ -33,7 +33,7 @@ class AclApiBindingInfo:
     }
 
     def __init__(self, id=None, api_id=None, env_id=None, acl_id=None, create_time=None):
-        """AclApiBindingInfo
+        r"""AclApiBindingInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class AclApiBindingInfo:
 
     @property
     def id(self):
-        """Gets the id of this AclApiBindingInfo.
+        r"""Gets the id of this AclApiBindingInfo.
 
         绑定关系编号
 
@@ -82,7 +82,7 @@ class AclApiBindingInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AclApiBindingInfo.
+        r"""Sets the id of this AclApiBindingInfo.
 
         绑定关系编号
 
@@ -93,7 +93,7 @@ class AclApiBindingInfo:
 
     @property
     def api_id(self):
-        """Gets the api_id of this AclApiBindingInfo.
+        r"""Gets the api_id of this AclApiBindingInfo.
 
         API编号
 
@@ -104,7 +104,7 @@ class AclApiBindingInfo:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this AclApiBindingInfo.
+        r"""Sets the api_id of this AclApiBindingInfo.
 
         API编号
 
@@ -115,7 +115,7 @@ class AclApiBindingInfo:
 
     @property
     def env_id(self):
-        """Gets the env_id of this AclApiBindingInfo.
+        r"""Gets the env_id of this AclApiBindingInfo.
 
         环境编号
 
@@ -126,7 +126,7 @@ class AclApiBindingInfo:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this AclApiBindingInfo.
+        r"""Sets the env_id of this AclApiBindingInfo.
 
         环境编号
 
@@ -137,7 +137,7 @@ class AclApiBindingInfo:
 
     @property
     def acl_id(self):
-        """Gets the acl_id of this AclApiBindingInfo.
+        r"""Gets the acl_id of this AclApiBindingInfo.
 
         ACL策略编号
 
@@ -148,7 +148,7 @@ class AclApiBindingInfo:
 
     @acl_id.setter
     def acl_id(self, acl_id):
-        """Sets the acl_id of this AclApiBindingInfo.
+        r"""Sets the acl_id of this AclApiBindingInfo.
 
         ACL策略编号
 
@@ -159,7 +159,7 @@ class AclApiBindingInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this AclApiBindingInfo.
+        r"""Gets the create_time of this AclApiBindingInfo.
 
         绑定时间
 
@@ -170,7 +170,7 @@ class AclApiBindingInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AclApiBindingInfo.
+        r"""Sets the create_time of this AclApiBindingInfo.
 
         绑定时间
 

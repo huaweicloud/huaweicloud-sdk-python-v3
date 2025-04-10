@@ -27,7 +27,7 @@ class ShowIteratorDetailRequest:
     }
 
     def __init__(self, iterator_id=None, project_uuid=None):
-        """ShowIteratorDetailRequest
+        r"""ShowIteratorDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowIteratorDetailRequest:
 
     @property
     def iterator_id(self):
-        """Gets the iterator_id of this ShowIteratorDetailRequest.
+        r"""Gets the iterator_id of this ShowIteratorDetailRequest.
 
         迭代uri
 
@@ -60,7 +60,7 @@ class ShowIteratorDetailRequest:
 
     @iterator_id.setter
     def iterator_id(self, iterator_id):
-        """Sets the iterator_id of this ShowIteratorDetailRequest.
+        r"""Sets the iterator_id of this ShowIteratorDetailRequest.
 
         迭代uri
 
@@ -71,7 +71,7 @@ class ShowIteratorDetailRequest:
 
     @property
     def project_uuid(self):
-        """Gets the project_uuid of this ShowIteratorDetailRequest.
+        r"""Gets the project_uuid of this ShowIteratorDetailRequest.
 
         项目id
 
@@ -82,7 +82,7 @@ class ShowIteratorDetailRequest:
 
     @project_uuid.setter
     def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this ShowIteratorDetailRequest.
+        r"""Sets the project_uuid of this ShowIteratorDetailRequest.
 
         项目id
 

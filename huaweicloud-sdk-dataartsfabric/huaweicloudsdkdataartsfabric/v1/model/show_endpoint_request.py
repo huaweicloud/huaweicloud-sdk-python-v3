@@ -29,7 +29,7 @@ class ShowEndpointRequest:
     }
 
     def __init__(self, workspace_id=None, endpoint_id=None, version=None):
-        """ShowEndpointRequest
+        r"""ShowEndpointRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowEndpointRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ShowEndpointRequest.
+        r"""Gets the workspace_id of this ShowEndpointRequest.
 
         Workspace的ID
 
@@ -66,7 +66,7 @@ class ShowEndpointRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ShowEndpointRequest.
+        r"""Sets the workspace_id of this ShowEndpointRequest.
 
         Workspace的ID
 
@@ -77,7 +77,7 @@ class ShowEndpointRequest:
 
     @property
     def endpoint_id(self):
-        """Gets the endpoint_id of this ShowEndpointRequest.
+        r"""Gets the endpoint_id of this ShowEndpointRequest.
 
         Endpoint的ID
 
@@ -88,7 +88,7 @@ class ShowEndpointRequest:
 
     @endpoint_id.setter
     def endpoint_id(self, endpoint_id):
-        """Sets the endpoint_id of this ShowEndpointRequest.
+        r"""Sets the endpoint_id of this ShowEndpointRequest.
 
         Endpoint的ID
 
@@ -99,7 +99,7 @@ class ShowEndpointRequest:
 
     @property
     def version(self):
-        """Gets the version of this ShowEndpointRequest.
+        r"""Gets the version of this ShowEndpointRequest.
 
         查询endpoint信息的版本：CURRENT-当前版本，PREVIOUS-上个版本
 
@@ -110,7 +110,7 @@ class ShowEndpointRequest:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowEndpointRequest.
+        r"""Sets the version of this ShowEndpointRequest.
 
         查询endpoint信息的版本：CURRENT-当前版本，PREVIOUS-上个版本
 

@@ -25,7 +25,7 @@ class DeviceControlDefaultValuesReqDTO:
     }
 
     def __init__(self, devices=None):
-        """DeviceControlDefaultValuesReqDTO
+        r"""DeviceControlDefaultValuesReqDTO
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeviceControlDefaultValuesReqDTO:
 
     @property
     def devices(self):
-        """Gets the devices of this DeviceControlDefaultValuesReqDTO.
+        r"""Gets the devices of this DeviceControlDefaultValuesReqDTO.
 
         设备默认值数组
 
@@ -53,7 +53,7 @@ class DeviceControlDefaultValuesReqDTO:
 
     @devices.setter
     def devices(self, devices):
-        """Sets the devices of this DeviceControlDefaultValuesReqDTO.
+        r"""Sets the devices of this DeviceControlDefaultValuesReqDTO.
 
         设备默认值数组
 

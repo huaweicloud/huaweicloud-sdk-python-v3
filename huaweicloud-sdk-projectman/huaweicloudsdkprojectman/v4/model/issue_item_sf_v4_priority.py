@@ -27,7 +27,7 @@ class IssueItemSfV4Priority:
     }
 
     def __init__(self, id=None, name=None):
-        """IssueItemSfV4Priority
+        r"""IssueItemSfV4Priority
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class IssueItemSfV4Priority:
 
     @property
     def id(self):
-        """Gets the id of this IssueItemSfV4Priority.
+        r"""Gets the id of this IssueItemSfV4Priority.
 
         优先级id
 
@@ -61,7 +61,7 @@ class IssueItemSfV4Priority:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this IssueItemSfV4Priority.
+        r"""Sets the id of this IssueItemSfV4Priority.
 
         优先级id
 
@@ -72,7 +72,7 @@ class IssueItemSfV4Priority:
 
     @property
     def name(self):
-        """Gets the name of this IssueItemSfV4Priority.
+        r"""Gets the name of this IssueItemSfV4Priority.
 
         优先级
 
@@ -83,7 +83,7 @@ class IssueItemSfV4Priority:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this IssueItemSfV4Priority.
+        r"""Sets the name of this IssueItemSfV4Priority.
 
         优先级
 

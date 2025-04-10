@@ -35,7 +35,7 @@ class ScheduleRecordTasksReq:
     }
 
     def __init__(self, domain=None, app=None, stream=None, start_time=None, end_time=None, template_id=None):
-        """ScheduleRecordTasksReq
+        r"""ScheduleRecordTasksReq
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class ScheduleRecordTasksReq:
 
     @property
     def domain(self):
-        """Gets the domain of this ScheduleRecordTasksReq.
+        r"""Gets the domain of this ScheduleRecordTasksReq.
 
         推流域名
 
@@ -84,7 +84,7 @@ class ScheduleRecordTasksReq:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ScheduleRecordTasksReq.
+        r"""Sets the domain of this ScheduleRecordTasksReq.
 
         推流域名
 
@@ -95,7 +95,7 @@ class ScheduleRecordTasksReq:
 
     @property
     def app(self):
-        """Gets the app of this ScheduleRecordTasksReq.
+        r"""Gets the app of this ScheduleRecordTasksReq.
 
         应用名称
 
@@ -106,7 +106,7 @@ class ScheduleRecordTasksReq:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this ScheduleRecordTasksReq.
+        r"""Sets the app of this ScheduleRecordTasksReq.
 
         应用名称
 
@@ -117,7 +117,7 @@ class ScheduleRecordTasksReq:
 
     @property
     def stream(self):
-        """Gets the stream of this ScheduleRecordTasksReq.
+        r"""Gets the stream of this ScheduleRecordTasksReq.
 
         流名称
 
@@ -128,7 +128,7 @@ class ScheduleRecordTasksReq:
 
     @stream.setter
     def stream(self, stream):
-        """Sets the stream of this ScheduleRecordTasksReq.
+        r"""Sets the stream of this ScheduleRecordTasksReq.
 
         流名称
 
@@ -139,7 +139,7 @@ class ScheduleRecordTasksReq:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ScheduleRecordTasksReq.
+        r"""Gets the start_time of this ScheduleRecordTasksReq.
 
         录制任务开始时间，Unix时间戳。如果不填表示立即启动录制。EndTime - StartTime不能超过24小时。
 
@@ -150,7 +150,7 @@ class ScheduleRecordTasksReq:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ScheduleRecordTasksReq.
+        r"""Sets the start_time of this ScheduleRecordTasksReq.
 
         录制任务开始时间，Unix时间戳。如果不填表示立即启动录制。EndTime - StartTime不能超过24小时。
 
@@ -161,7 +161,7 @@ class ScheduleRecordTasksReq:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ScheduleRecordTasksReq.
+        r"""Gets the end_time of this ScheduleRecordTasksReq.
 
         录制任务结束时间，Unix时间戳。设置时间必须大于StartTime及当前时间，且小于当前时间+7天。
 
@@ -172,7 +172,7 @@ class ScheduleRecordTasksReq:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ScheduleRecordTasksReq.
+        r"""Sets the end_time of this ScheduleRecordTasksReq.
 
         录制任务结束时间，Unix时间戳。设置时间必须大于StartTime及当前时间，且小于当前时间+7天。
 
@@ -183,7 +183,7 @@ class ScheduleRecordTasksReq:
 
     @property
     def template_id(self):
-        """Gets the template_id of this ScheduleRecordTasksReq.
+        r"""Gets the template_id of this ScheduleRecordTasksReq.
 
         录制模板ID，对应模板必须存在否则会启动失败。
 
@@ -194,7 +194,7 @@ class ScheduleRecordTasksReq:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this ScheduleRecordTasksReq.
+        r"""Sets the template_id of this ScheduleRecordTasksReq.
 
         录制模板ID，对应模板必须存在否则会启动失败。
 

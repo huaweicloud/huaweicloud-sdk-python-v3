@@ -23,7 +23,7 @@ class ResourceUrn:
     }
 
     def __init__(self):
-        """ResourceUrn
+        r"""ResourceUrn
 
         The model defined in huaweicloud sdk
 

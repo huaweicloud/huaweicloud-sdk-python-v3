@@ -85,7 +85,7 @@ class CloudServer:
     }
 
     def __init__(self, id=None, name=None, status=None, tenant_id=None, user_id=None, market_info=None, availability_zone=None, vm_state=None, task_state=None, power_state=None, created=None, in_recycle_bin=None, spod_id=None, updated=None, launched_at=None, description=None, key_name=None, locked=None, root_device_name=None, tenancy=None, dedicated_host_id=None, enterprise_project_id=None, metadata=None, tags=None, addresses=None, security_groups=None, volumes_attached=None, image=None, flavor=None, fault=None, cpu_options=None):
-        """CloudServer
+        r"""CloudServer
 
         The model defined in huaweicloud sdk
 
@@ -239,7 +239,7 @@ class CloudServer:
 
     @property
     def id(self):
-        """Gets the id of this CloudServer.
+        r"""Gets the id of this CloudServer.
 
         云服务器唯一标识。
 
@@ -250,7 +250,7 @@ class CloudServer:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CloudServer.
+        r"""Sets the id of this CloudServer.
 
         云服务器唯一标识。
 
@@ -261,7 +261,7 @@ class CloudServer:
 
     @property
     def name(self):
-        """Gets the name of this CloudServer.
+        r"""Gets the name of this CloudServer.
 
         云服务器名称。
 
@@ -272,7 +272,7 @@ class CloudServer:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CloudServer.
+        r"""Sets the name of this CloudServer.
 
         云服务器名称。
 
@@ -283,7 +283,7 @@ class CloudServer:
 
     @property
     def status(self):
-        """Gets the status of this CloudServer.
+        r"""Gets the status of this CloudServer.
 
         云服务器当前状态信息。
 
@@ -294,7 +294,7 @@ class CloudServer:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CloudServer.
+        r"""Sets the status of this CloudServer.
 
         云服务器当前状态信息。
 
@@ -305,7 +305,7 @@ class CloudServer:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this CloudServer.
+        r"""Gets the tenant_id of this CloudServer.
 
         云服务器所属租户ID。即项目id，与project_id表示相同的概念。
 
@@ -316,7 +316,7 @@ class CloudServer:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this CloudServer.
+        r"""Sets the tenant_id of this CloudServer.
 
         云服务器所属租户ID。即项目id，与project_id表示相同的概念。
 
@@ -327,7 +327,7 @@ class CloudServer:
 
     @property
     def user_id(self):
-        """Gets the user_id of this CloudServer.
+        r"""Gets the user_id of this CloudServer.
 
         云服务器所属用户ID。
 
@@ -338,7 +338,7 @@ class CloudServer:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this CloudServer.
+        r"""Sets the user_id of this CloudServer.
 
         云服务器所属用户ID。
 
@@ -349,7 +349,7 @@ class CloudServer:
 
     @property
     def market_info(self):
-        """Gets the market_info of this CloudServer.
+        r"""Gets the market_info of this CloudServer.
 
         :return: The market_info of this CloudServer.
         :rtype: :class:`huaweicloudsdkecs.v2.MarketModel`
@@ -358,7 +358,7 @@ class CloudServer:
 
     @market_info.setter
     def market_info(self, market_info):
-        """Sets the market_info of this CloudServer.
+        r"""Sets the market_info of this CloudServer.
 
         :param market_info: The market_info of this CloudServer.
         :type market_info: :class:`huaweicloudsdkecs.v2.MarketModel`
@@ -367,7 +367,7 @@ class CloudServer:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this CloudServer.
+        r"""Gets the availability_zone of this CloudServer.
 
         可用分区
 
@@ -378,7 +378,7 @@ class CloudServer:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this CloudServer.
+        r"""Sets the availability_zone of this CloudServer.
 
         可用分区
 
@@ -389,7 +389,7 @@ class CloudServer:
 
     @property
     def vm_state(self):
-        """Gets the vm_state of this CloudServer.
+        r"""Gets the vm_state of this CloudServer.
 
         云服务器的状态。
 
@@ -400,7 +400,7 @@ class CloudServer:
 
     @vm_state.setter
     def vm_state(self, vm_state):
-        """Sets the vm_state of this CloudServer.
+        r"""Sets the vm_state of this CloudServer.
 
         云服务器的状态。
 
@@ -411,7 +411,7 @@ class CloudServer:
 
     @property
     def task_state(self):
-        """Gets the task_state of this CloudServer.
+        r"""Gets the task_state of this CloudServer.
 
         云服务器任务状态。
 
@@ -422,7 +422,7 @@ class CloudServer:
 
     @task_state.setter
     def task_state(self, task_state):
-        """Sets the task_state of this CloudServer.
+        r"""Sets the task_state of this CloudServer.
 
         云服务器任务状态。
 
@@ -433,7 +433,7 @@ class CloudServer:
 
     @property
     def power_state(self):
-        """Gets the power_state of this CloudServer.
+        r"""Gets the power_state of this CloudServer.
 
         云服务器电源状态。
 
@@ -444,7 +444,7 @@ class CloudServer:
 
     @power_state.setter
     def power_state(self, power_state):
-        """Sets the power_state of this CloudServer.
+        r"""Sets the power_state of this CloudServer.
 
         云服务器电源状态。
 
@@ -455,7 +455,7 @@ class CloudServer:
 
     @property
     def created(self):
-        """Gets the created of this CloudServer.
+        r"""Gets the created of this CloudServer.
 
         云服务器创建时间。 时间格式例如：2020-05-22T07:48:53Z。
 
@@ -466,7 +466,7 @@ class CloudServer:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this CloudServer.
+        r"""Sets the created of this CloudServer.
 
         云服务器创建时间。 时间格式例如：2020-05-22T07:48:53Z。
 
@@ -477,7 +477,7 @@ class CloudServer:
 
     @property
     def in_recycle_bin(self):
-        """Gets the in_recycle_bin of this CloudServer.
+        r"""Gets the in_recycle_bin of this CloudServer.
 
         云服务器是否处于回收站中
 
@@ -488,7 +488,7 @@ class CloudServer:
 
     @in_recycle_bin.setter
     def in_recycle_bin(self, in_recycle_bin):
-        """Sets the in_recycle_bin of this CloudServer.
+        r"""Sets the in_recycle_bin of this CloudServer.
 
         云服务器是否处于回收站中
 
@@ -499,7 +499,7 @@ class CloudServer:
 
     @property
     def spod_id(self):
-        """Gets the spod_id of this CloudServer.
+        r"""Gets the spod_id of this CloudServer.
 
         共池裸机按整机柜发放的同一批次的批创ID
 
@@ -510,7 +510,7 @@ class CloudServer:
 
     @spod_id.setter
     def spod_id(self, spod_id):
-        """Sets the spod_id of this CloudServer.
+        r"""Sets the spod_id of this CloudServer.
 
         共池裸机按整机柜发放的同一批次的批创ID
 
@@ -521,7 +521,7 @@ class CloudServer:
 
     @property
     def updated(self):
-        """Gets the updated of this CloudServer.
+        r"""Gets the updated of this CloudServer.
 
         云服务器上一次更新时间。时间格式例如：2020-05-22T07:48:53Z
 
@@ -532,7 +532,7 @@ class CloudServer:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this CloudServer.
+        r"""Sets the updated of this CloudServer.
 
         云服务器上一次更新时间。时间格式例如：2020-05-22T07:48:53Z
 
@@ -543,7 +543,7 @@ class CloudServer:
 
     @property
     def launched_at(self):
-        """Gets the launched_at of this CloudServer.
+        r"""Gets the launched_at of this CloudServer.
 
         云服务器启动时间。时间格式例如：2020-05-22T07:48:53.000000。
 
@@ -554,7 +554,7 @@ class CloudServer:
 
     @launched_at.setter
     def launched_at(self, launched_at):
-        """Sets the launched_at of this CloudServer.
+        r"""Sets the launched_at of this CloudServer.
 
         云服务器启动时间。时间格式例如：2020-05-22T07:48:53.000000。
 
@@ -565,7 +565,7 @@ class CloudServer:
 
     @property
     def description(self):
-        """Gets the description of this CloudServer.
+        r"""Gets the description of this CloudServer.
 
         云服务器的描述信息。
 
@@ -576,7 +576,7 @@ class CloudServer:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CloudServer.
+        r"""Sets the description of this CloudServer.
 
         云服务器的描述信息。
 
@@ -587,7 +587,7 @@ class CloudServer:
 
     @property
     def key_name(self):
-        """Gets the key_name of this CloudServer.
+        r"""Gets the key_name of this CloudServer.
 
         云服务器使用的密钥对名称。
 
@@ -598,7 +598,7 @@ class CloudServer:
 
     @key_name.setter
     def key_name(self, key_name):
-        """Sets the key_name of this CloudServer.
+        r"""Sets the key_name of this CloudServer.
 
         云服务器使用的密钥对名称。
 
@@ -609,7 +609,7 @@ class CloudServer:
 
     @property
     def locked(self):
-        """Gets the locked of this CloudServer.
+        r"""Gets the locked of this CloudServer.
 
         云服务器是否为锁定状态。  true：锁定 false：未锁定
 
@@ -620,7 +620,7 @@ class CloudServer:
 
     @locked.setter
     def locked(self, locked):
-        """Sets the locked of this CloudServer.
+        r"""Sets the locked of this CloudServer.
 
         云服务器是否为锁定状态。  true：锁定 false：未锁定
 
@@ -631,7 +631,7 @@ class CloudServer:
 
     @property
     def root_device_name(self):
-        """Gets the root_device_name of this CloudServer.
+        r"""Gets the root_device_name of this CloudServer.
 
         云服务器系统盘的设备名称，例如当系统盘的磁盘模式是VDB时，为/dev/vda。
 
@@ -642,7 +642,7 @@ class CloudServer:
 
     @root_device_name.setter
     def root_device_name(self, root_device_name):
-        """Sets the root_device_name of this CloudServer.
+        r"""Sets the root_device_name of this CloudServer.
 
         云服务器系统盘的设备名称，例如当系统盘的磁盘模式是VDB时，为/dev/vda。
 
@@ -653,7 +653,7 @@ class CloudServer:
 
     @property
     def tenancy(self):
-        """Gets the tenancy of this CloudServer.
+        r"""Gets the tenancy of this CloudServer.
 
         在专属主机或共享池中创建云服务器。默认为在共享池创建。值为： shared或dedicated。  shared：表示共享池。 dedicated:表示专属主机。
 
@@ -664,7 +664,7 @@ class CloudServer:
 
     @tenancy.setter
     def tenancy(self, tenancy):
-        """Sets the tenancy of this CloudServer.
+        r"""Sets the tenancy of this CloudServer.
 
         在专属主机或共享池中创建云服务器。默认为在共享池创建。值为： shared或dedicated。  shared：表示共享池。 dedicated:表示专属主机。
 
@@ -675,7 +675,7 @@ class CloudServer:
 
     @property
     def dedicated_host_id(self):
-        """Gets the dedicated_host_id of this CloudServer.
+        r"""Gets the dedicated_host_id of this CloudServer.
 
         专属主机ID。此属性仅在tenancy值为dedicated时有效，不指定此属性，系统将自动分配租户可自动放置云服务器的专属主机。
 
@@ -686,7 +686,7 @@ class CloudServer:
 
     @dedicated_host_id.setter
     def dedicated_host_id(self, dedicated_host_id):
-        """Sets the dedicated_host_id of this CloudServer.
+        r"""Sets the dedicated_host_id of this CloudServer.
 
         专属主机ID。此属性仅在tenancy值为dedicated时有效，不指定此属性，系统将自动分配租户可自动放置云服务器的专属主机。
 
@@ -697,7 +697,7 @@ class CloudServer:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CloudServer.
+        r"""Gets the enterprise_project_id of this CloudServer.
 
         查询绑定某个企业项目的云服务器。 若需要查询当前用户所有企业项目绑定的云服务，请传参all_granted_eps。
 
@@ -708,7 +708,7 @@ class CloudServer:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CloudServer.
+        r"""Sets the enterprise_project_id of this CloudServer.
 
         查询绑定某个企业项目的云服务器。 若需要查询当前用户所有企业项目绑定的云服务，请传参all_granted_eps。
 
@@ -719,7 +719,7 @@ class CloudServer:
 
     @property
     def metadata(self):
-        """Gets the metadata of this CloudServer.
+        r"""Gets the metadata of this CloudServer.
 
         云服务器元数据。
 
@@ -730,7 +730,7 @@ class CloudServer:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this CloudServer.
+        r"""Sets the metadata of this CloudServer.
 
         云服务器元数据。
 
@@ -741,7 +741,7 @@ class CloudServer:
 
     @property
     def tags(self):
-        """Gets the tags of this CloudServer.
+        r"""Gets the tags of this CloudServer.
 
         云服务器的标签列表。
 
@@ -752,7 +752,7 @@ class CloudServer:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CloudServer.
+        r"""Sets the tags of this CloudServer.
 
         云服务器的标签列表。
 
@@ -763,7 +763,7 @@ class CloudServer:
 
     @property
     def addresses(self):
-        """Gets the addresses of this CloudServer.
+        r"""Gets the addresses of this CloudServer.
 
         云服务器对应的网络地址信息。
 
@@ -774,7 +774,7 @@ class CloudServer:
 
     @addresses.setter
     def addresses(self, addresses):
-        """Sets the addresses of this CloudServer.
+        r"""Sets the addresses of this CloudServer.
 
         云服务器对应的网络地址信息。
 
@@ -785,7 +785,7 @@ class CloudServer:
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this CloudServer.
+        r"""Gets the security_groups of this CloudServer.
 
         云服务器的安全组信息。
 
@@ -796,7 +796,7 @@ class CloudServer:
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this CloudServer.
+        r"""Sets the security_groups of this CloudServer.
 
         云服务器的安全组信息。
 
@@ -807,7 +807,7 @@ class CloudServer:
 
     @property
     def volumes_attached(self):
-        """Gets the volumes_attached of this CloudServer.
+        r"""Gets the volumes_attached of this CloudServer.
 
         云服务器挂载磁盘信息。
 
@@ -818,7 +818,7 @@ class CloudServer:
 
     @volumes_attached.setter
     def volumes_attached(self, volumes_attached):
-        """Sets the volumes_attached of this CloudServer.
+        r"""Sets the volumes_attached of this CloudServer.
 
         云服务器挂载磁盘信息。
 
@@ -829,7 +829,7 @@ class CloudServer:
 
     @property
     def image(self):
-        """Gets the image of this CloudServer.
+        r"""Gets the image of this CloudServer.
 
         :return: The image of this CloudServer.
         :rtype: :class:`huaweicloudsdkecs.v2.Image`
@@ -838,7 +838,7 @@ class CloudServer:
 
     @image.setter
     def image(self, image):
-        """Sets the image of this CloudServer.
+        r"""Sets the image of this CloudServer.
 
         :param image: The image of this CloudServer.
         :type image: :class:`huaweicloudsdkecs.v2.Image`
@@ -847,7 +847,7 @@ class CloudServer:
 
     @property
     def flavor(self):
-        """Gets the flavor of this CloudServer.
+        r"""Gets the flavor of this CloudServer.
 
         :return: The flavor of this CloudServer.
         :rtype: :class:`huaweicloudsdkecs.v2.FlavorQuasar`
@@ -856,7 +856,7 @@ class CloudServer:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this CloudServer.
+        r"""Sets the flavor of this CloudServer.
 
         :param flavor: The flavor of this CloudServer.
         :type flavor: :class:`huaweicloudsdkecs.v2.FlavorQuasar`
@@ -865,7 +865,7 @@ class CloudServer:
 
     @property
     def fault(self):
-        """Gets the fault of this CloudServer.
+        r"""Gets the fault of this CloudServer.
 
         :return: The fault of this CloudServer.
         :rtype: :class:`huaweicloudsdkecs.v2.Fault`
@@ -874,7 +874,7 @@ class CloudServer:
 
     @fault.setter
     def fault(self, fault):
-        """Sets the fault of this CloudServer.
+        r"""Sets the fault of this CloudServer.
 
         :param fault: The fault of this CloudServer.
         :type fault: :class:`huaweicloudsdkecs.v2.Fault`
@@ -883,7 +883,7 @@ class CloudServer:
 
     @property
     def cpu_options(self):
-        """Gets the cpu_options of this CloudServer.
+        r"""Gets the cpu_options of this CloudServer.
 
         :return: The cpu_options of this CloudServer.
         :rtype: :class:`huaweicloudsdkecs.v2.CpuOptions`
@@ -892,7 +892,7 @@ class CloudServer:
 
     @cpu_options.setter
     def cpu_options(self, cpu_options):
-        """Sets the cpu_options of this CloudServer.
+        r"""Sets the cpu_options of this CloudServer.
 
         :param cpu_options: The cpu_options of this CloudServer.
         :type cpu_options: :class:`huaweicloudsdkecs.v2.CpuOptions`

@@ -43,7 +43,7 @@ class Resource:
     }
 
     def __init__(self, id=None, name=None, type=None, provider=None, region_id=None, domain_id=None, project_id=None, ep_id=None, ep_name=None, tags=None):
-        """Resource
+        r"""Resource
 
         The model defined in huaweicloud sdk
 
@@ -101,7 +101,7 @@ class Resource:
 
     @property
     def id(self):
-        """Gets the id of this Resource.
+        r"""Gets the id of this Resource.
 
         资源ID。
 
@@ -112,7 +112,7 @@ class Resource:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Resource.
+        r"""Sets the id of this Resource.
 
         资源ID。
 
@@ -123,7 +123,7 @@ class Resource:
 
     @property
     def name(self):
-        """Gets the name of this Resource.
+        r"""Gets the name of this Resource.
 
         资源名称；最大长度255个字符。
 
@@ -134,7 +134,7 @@ class Resource:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Resource.
+        r"""Sets the name of this Resource.
 
         资源名称；最大长度255个字符。
 
@@ -145,7 +145,7 @@ class Resource:
 
     @property
     def type(self):
-        """Gets the type of this Resource.
+        r"""Gets the type of this Resource.
 
         资源类型。
 
@@ -156,7 +156,7 @@ class Resource:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Resource.
+        r"""Sets the type of this Resource.
 
         资源类型。
 
@@ -167,7 +167,7 @@ class Resource:
 
     @property
     def provider(self):
-        """Gets the provider of this Resource.
+        r"""Gets the provider of this Resource.
 
         云服务名称。
 
@@ -178,7 +178,7 @@ class Resource:
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this Resource.
+        r"""Sets the provider of this Resource.
 
         云服务名称。
 
@@ -189,7 +189,7 @@ class Resource:
 
     @property
     def region_id(self):
-        """Gets the region_id of this Resource.
+        r"""Gets the region_id of this Resource.
 
         区域。
 
@@ -200,7 +200,7 @@ class Resource:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this Resource.
+        r"""Sets the region_id of this Resource.
 
         区域。
 
@@ -211,7 +211,7 @@ class Resource:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this Resource.
+        r"""Gets the domain_id of this Resource.
 
         资源所属租户账号ID。
 
@@ -222,7 +222,7 @@ class Resource:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this Resource.
+        r"""Sets the domain_id of this Resource.
 
         资源所属租户账号ID。
 
@@ -233,7 +233,7 @@ class Resource:
 
     @property
     def project_id(self):
-        """Gets the project_id of this Resource.
+        r"""Gets the project_id of this Resource.
 
         资源所属项目ID。
 
@@ -244,7 +244,7 @@ class Resource:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this Resource.
+        r"""Sets the project_id of this Resource.
 
         资源所属项目ID。
 
@@ -255,7 +255,7 @@ class Resource:
 
     @property
     def ep_id(self):
-        """Gets the ep_id of this Resource.
+        r"""Gets the ep_id of this Resource.
 
         企业项目ID。
 
@@ -266,7 +266,7 @@ class Resource:
 
     @ep_id.setter
     def ep_id(self, ep_id):
-        """Sets the ep_id of this Resource.
+        r"""Sets the ep_id of this Resource.
 
         企业项目ID。
 
@@ -277,7 +277,7 @@ class Resource:
 
     @property
     def ep_name(self):
-        """Gets the ep_name of this Resource.
+        r"""Gets the ep_name of this Resource.
 
         企业项目名称。
 
@@ -288,7 +288,7 @@ class Resource:
 
     @ep_name.setter
     def ep_name(self, ep_name):
-        """Sets the ep_name of this Resource.
+        r"""Sets the ep_name of this Resource.
 
         企业项目名称。
 
@@ -299,7 +299,7 @@ class Resource:
 
     @property
     def tags(self):
-        """Gets the tags of this Resource.
+        r"""Gets the tags of this Resource.
 
         资源标签 1、最多50个key/values对。 2、values：最大255字符。 3、取值范围：字母数字、空格、“+”、“-”、“=”、“.”、“_”、“:”、“/”、“@”。
 
@@ -310,7 +310,7 @@ class Resource:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this Resource.
+        r"""Sets the tags of this Resource.
 
         资源标签 1、最多50个key/values对。 2、values：最大255字符。 3、取值范围：字母数字、空格、“+”、“-”、“=”、“.”、“_”、“:”、“/”、“@”。
 

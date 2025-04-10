@@ -35,7 +35,7 @@ class VerifyRequestBody:
     }
 
     def __init__(self, key_id=None, message=None, signature=None, signing_algorithm=None, message_type=None, sequence=None):
-        """VerifyRequestBody
+        r"""VerifyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class VerifyRequestBody:
 
     @property
     def key_id(self):
-        """Gets the key_id of this VerifyRequestBody.
+        r"""Gets the key_id of this VerifyRequestBody.
 
         密钥ID，36字节，满足正则匹配“^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
@@ -85,7 +85,7 @@ class VerifyRequestBody:
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this VerifyRequestBody.
+        r"""Sets the key_id of this VerifyRequestBody.
 
         密钥ID，36字节，满足正则匹配“^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
@@ -96,7 +96,7 @@ class VerifyRequestBody:
 
     @property
     def message(self):
-        """Gets the message of this VerifyRequestBody.
+        r"""Gets the message of this VerifyRequestBody.
 
         待签名的消息摘要或者消息，消息长度要求小于4096字节，使用Base64编码。
 
@@ -107,7 +107,7 @@ class VerifyRequestBody:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this VerifyRequestBody.
+        r"""Sets the message of this VerifyRequestBody.
 
         待签名的消息摘要或者消息，消息长度要求小于4096字节，使用Base64编码。
 
@@ -118,7 +118,7 @@ class VerifyRequestBody:
 
     @property
     def signature(self):
-        """Gets the signature of this VerifyRequestBody.
+        r"""Gets the signature of this VerifyRequestBody.
 
         待验证的签名值，使用Base64编码。
 
@@ -129,7 +129,7 @@ class VerifyRequestBody:
 
     @signature.setter
     def signature(self, signature):
-        """Sets the signature of this VerifyRequestBody.
+        r"""Sets the signature of this VerifyRequestBody.
 
         待验证的签名值，使用Base64编码。
 
@@ -140,7 +140,7 @@ class VerifyRequestBody:
 
     @property
     def signing_algorithm(self):
-        """Gets the signing_algorithm of this VerifyRequestBody.
+        r"""Gets the signing_algorithm of this VerifyRequestBody.
 
         签名算法，枚举如下：  - RSASSA_PSS_SHA_256  - RSASSA_PSS_SHA_384  - RSASSA_PSS_SHA_512  - RSASSA_PKCS1_V1_5_SHA_256  - RSASSA_PKCS1_V1_5_SHA_384  - RSASSA_PKCS1_V1_5_SHA_512  - ECDSA_SHA_256  - ECDSA_SHA_384  - ECDSA_SHA_512  - SM2DSA_SM3
 
@@ -151,7 +151,7 @@ class VerifyRequestBody:
 
     @signing_algorithm.setter
     def signing_algorithm(self, signing_algorithm):
-        """Sets the signing_algorithm of this VerifyRequestBody.
+        r"""Sets the signing_algorithm of this VerifyRequestBody.
 
         签名算法，枚举如下：  - RSASSA_PSS_SHA_256  - RSASSA_PSS_SHA_384  - RSASSA_PSS_SHA_512  - RSASSA_PKCS1_V1_5_SHA_256  - RSASSA_PKCS1_V1_5_SHA_384  - RSASSA_PKCS1_V1_5_SHA_512  - ECDSA_SHA_256  - ECDSA_SHA_384  - ECDSA_SHA_512  - SM2DSA_SM3
 
@@ -162,7 +162,7 @@ class VerifyRequestBody:
 
     @property
     def message_type(self):
-        """Gets the message_type of this VerifyRequestBody.
+        r"""Gets the message_type of this VerifyRequestBody.
 
         消息类型，默认为“DIGEST”，枚举如下：  - DIGEST 表示消息摘要  - RAW 表示消息原文
 
@@ -173,7 +173,7 @@ class VerifyRequestBody:
 
     @message_type.setter
     def message_type(self, message_type):
-        """Sets the message_type of this VerifyRequestBody.
+        r"""Sets the message_type of this VerifyRequestBody.
 
         消息类型，默认为“DIGEST”，枚举如下：  - DIGEST 表示消息摘要  - RAW 表示消息原文
 
@@ -184,7 +184,7 @@ class VerifyRequestBody:
 
     @property
     def sequence(self):
-        """Gets the sequence of this VerifyRequestBody.
+        r"""Gets the sequence of this VerifyRequestBody.
 
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff。
 
@@ -195,7 +195,7 @@ class VerifyRequestBody:
 
     @sequence.setter
     def sequence(self, sequence):
-        """Sets the sequence of this VerifyRequestBody.
+        r"""Sets the sequence of this VerifyRequestBody.
 
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff。
 

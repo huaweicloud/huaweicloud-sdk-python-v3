@@ -25,7 +25,7 @@ class DeleteRefererChainRequest:
     }
 
     def __init__(self, domain=None):
-        """DeleteRefererChainRequest
+        r"""DeleteRefererChainRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteRefererChainRequest:
 
     @property
     def domain(self):
-        """Gets the domain of this DeleteRefererChainRequest.
+        r"""Gets the domain of this DeleteRefererChainRequest.
 
         直播域名
 
@@ -53,7 +53,7 @@ class DeleteRefererChainRequest:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this DeleteRefererChainRequest.
+        r"""Sets the domain of this DeleteRefererChainRequest.
 
         直播域名
 

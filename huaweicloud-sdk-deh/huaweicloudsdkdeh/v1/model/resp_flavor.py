@@ -25,7 +25,7 @@ class RespFlavor:
     }
 
     def __init__(self, id=None):
-        """RespFlavor
+        r"""RespFlavor
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RespFlavor:
 
     @property
     def id(self):
-        """Gets the id of this RespFlavor.
+        r"""Gets the id of this RespFlavor.
 
         弹性云服务器规格ID。
 
@@ -53,7 +53,7 @@ class RespFlavor:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RespFlavor.
+        r"""Sets the id of this RespFlavor.
 
         弹性云服务器规格ID。
 

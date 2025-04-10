@@ -25,7 +25,7 @@ class ShowEvaluationProjectStatusRequest:
     }
 
     def __init__(self, evaluation_project_id=None):
-        """ShowEvaluationProjectStatusRequest
+        r"""ShowEvaluationProjectStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowEvaluationProjectStatusRequest:
 
     @property
     def evaluation_project_id(self):
-        """Gets the evaluation_project_id of this ShowEvaluationProjectStatusRequest.
+        r"""Gets the evaluation_project_id of this ShowEvaluationProjectStatusRequest.
 
         评估项目ID。
 
@@ -53,7 +53,7 @@ class ShowEvaluationProjectStatusRequest:
 
     @evaluation_project_id.setter
     def evaluation_project_id(self, evaluation_project_id):
-        """Sets the evaluation_project_id of this ShowEvaluationProjectStatusRequest.
+        r"""Sets the evaluation_project_id of this ShowEvaluationProjectStatusRequest.
 
         评估项目ID。
 

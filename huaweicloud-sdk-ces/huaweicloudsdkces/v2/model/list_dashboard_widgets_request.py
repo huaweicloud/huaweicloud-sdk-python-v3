@@ -25,7 +25,7 @@ class ListDashboardWidgetsRequest:
     }
 
     def __init__(self, dashboard_id=None):
-        """ListDashboardWidgetsRequest
+        r"""ListDashboardWidgetsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListDashboardWidgetsRequest:
 
     @property
     def dashboard_id(self):
-        """Gets the dashboard_id of this ListDashboardWidgetsRequest.
+        r"""Gets the dashboard_id of this ListDashboardWidgetsRequest.
 
         监控看板id，以db开头，包含22个字母和数字例：db16564943172807wjOmoLyn'
 
@@ -53,7 +53,7 @@ class ListDashboardWidgetsRequest:
 
     @dashboard_id.setter
     def dashboard_id(self, dashboard_id):
-        """Sets the dashboard_id of this ListDashboardWidgetsRequest.
+        r"""Sets the dashboard_id of this ListDashboardWidgetsRequest.
 
         监控看板id，以db开头，包含22个字母和数字例：db16564943172807wjOmoLyn'
 

@@ -28,7 +28,7 @@ class ShowAccountResponse(SdkResponse):
     }
 
     def __init__(self, count=None, account_list=None):
-        """ShowAccountResponse
+        r"""ShowAccountResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowAccountResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowAccountResponse.
+        r"""Gets the count of this ShowAccountResponse.
 
         数量
 
@@ -62,7 +62,7 @@ class ShowAccountResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowAccountResponse.
+        r"""Sets the count of this ShowAccountResponse.
 
         数量
 
@@ -73,7 +73,7 @@ class ShowAccountResponse(SdkResponse):
 
     @property
     def account_list(self):
-        """Gets the account_list of this ShowAccountResponse.
+        r"""Gets the account_list of this ShowAccountResponse.
 
         账号list
 
@@ -84,7 +84,7 @@ class ShowAccountResponse(SdkResponse):
 
     @account_list.setter
     def account_list(self, account_list):
-        """Sets the account_list of this ShowAccountResponse.
+        r"""Sets the account_list of this ShowAccountResponse.
 
         账号list
 

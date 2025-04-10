@@ -32,7 +32,7 @@ class ListEnginesResponse(SdkResponse):
     }
 
     def __init__(self, engine_groups=None, offset=None, limit=None, total=None):
-        """ListEnginesResponse
+        r"""ListEnginesResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListEnginesResponse(SdkResponse):
 
     @property
     def engine_groups(self):
-        """Gets the engine_groups of this ListEnginesResponse.
+        r"""Gets the engine_groups of this ListEnginesResponse.
 
         引擎信息列表。
 
@@ -76,7 +76,7 @@ class ListEnginesResponse(SdkResponse):
 
     @engine_groups.setter
     def engine_groups(self, engine_groups):
-        """Sets the engine_groups of this ListEnginesResponse.
+        r"""Sets the engine_groups of this ListEnginesResponse.
 
         引擎信息列表。
 
@@ -87,7 +87,7 @@ class ListEnginesResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListEnginesResponse.
+        r"""Gets the offset of this ListEnginesResponse.
 
         分页参数: 起始值。
 
@@ -98,7 +98,7 @@ class ListEnginesResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListEnginesResponse.
+        r"""Sets the offset of this ListEnginesResponse.
 
         分页参数: 起始值。
 
@@ -109,7 +109,7 @@ class ListEnginesResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListEnginesResponse.
+        r"""Gets the limit of this ListEnginesResponse.
 
         分页参数：每页多少条。
 
@@ -120,7 +120,7 @@ class ListEnginesResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEnginesResponse.
+        r"""Sets the limit of this ListEnginesResponse.
 
         分页参数：每页多少条。
 
@@ -131,7 +131,7 @@ class ListEnginesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListEnginesResponse.
+        r"""Gets the total of this ListEnginesResponse.
 
         引擎信息总数。
 
@@ -142,7 +142,7 @@ class ListEnginesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListEnginesResponse.
+        r"""Sets the total of this ListEnginesResponse.
 
         引擎信息总数。
 

@@ -29,7 +29,7 @@ class MultiAudio:
     }
 
     def __init__(self, tracks_info=None, audio_files=None, default_language=None):
-        """MultiAudio
+        r"""MultiAudio
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class MultiAudio:
 
     @property
     def tracks_info(self):
-        """Gets the tracks_info of this MultiAudio.
+        r"""Gets the tracks_info of this MultiAudio.
 
         音轨信息
 
@@ -68,7 +68,7 @@ class MultiAudio:
 
     @tracks_info.setter
     def tracks_info(self, tracks_info):
-        """Sets the tracks_info of this MultiAudio.
+        r"""Sets the tracks_info of this MultiAudio.
 
         音轨信息
 
@@ -79,7 +79,7 @@ class MultiAudio:
 
     @property
     def audio_files(self):
-        """Gets the audio_files of this MultiAudio.
+        r"""Gets the audio_files of this MultiAudio.
 
         音频文件
 
@@ -90,7 +90,7 @@ class MultiAudio:
 
     @audio_files.setter
     def audio_files(self, audio_files):
-        """Sets the audio_files of this MultiAudio.
+        r"""Sets the audio_files of this MultiAudio.
 
         音频文件
 
@@ -101,7 +101,7 @@ class MultiAudio:
 
     @property
     def default_language(self):
-        """Gets the default_language of this MultiAudio.
+        r"""Gets the default_language of this MultiAudio.
 
         默认语言
 
@@ -112,7 +112,7 @@ class MultiAudio:
 
     @default_language.setter
     def default_language(self, default_language):
-        """Sets the default_language of this MultiAudio.
+        r"""Sets the default_language of this MultiAudio.
 
         默认语言
 

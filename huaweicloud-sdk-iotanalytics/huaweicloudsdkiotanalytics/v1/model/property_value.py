@@ -29,7 +29,7 @@ class PropertyValue:
     }
 
     def __init__(self, property_name=None, value=None, timestamp=None):
-        """PropertyValue
+        r"""PropertyValue
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PropertyValue:
 
     @property
     def property_name(self):
-        """Gets the property_name of this PropertyValue.
+        r"""Gets the property_name of this PropertyValue.
 
         属性名称
 
@@ -68,7 +68,7 @@ class PropertyValue:
 
     @property_name.setter
     def property_name(self, property_name):
-        """Sets the property_name of this PropertyValue.
+        r"""Sets the property_name of this PropertyValue.
 
         属性名称
 
@@ -79,7 +79,7 @@ class PropertyValue:
 
     @property
     def value(self):
-        """Gets the value of this PropertyValue.
+        r"""Gets the value of this PropertyValue.
 
         属性值
 
@@ -90,7 +90,7 @@ class PropertyValue:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this PropertyValue.
+        r"""Sets the value of this PropertyValue.
 
         属性值
 
@@ -101,7 +101,7 @@ class PropertyValue:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this PropertyValue.
+        r"""Gets the timestamp of this PropertyValue.
 
         属性值最后更新时间
 
@@ -112,7 +112,7 @@ class PropertyValue:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this PropertyValue.
+        r"""Sets the timestamp of this PropertyValue.
 
         属性值最后更新时间
 

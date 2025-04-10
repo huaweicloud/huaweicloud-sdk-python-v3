@@ -27,7 +27,7 @@ class UpdatePublishTemplateRequest:
     }
 
     def __init__(self, domain=None, body=None):
-        """UpdatePublishTemplateRequest
+        r"""UpdatePublishTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdatePublishTemplateRequest:
 
     @property
     def domain(self):
-        """Gets the domain of this UpdatePublishTemplateRequest.
+        r"""Gets the domain of this UpdatePublishTemplateRequest.
 
         推流域名
 
@@ -60,7 +60,7 @@ class UpdatePublishTemplateRequest:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this UpdatePublishTemplateRequest.
+        r"""Sets the domain of this UpdatePublishTemplateRequest.
 
         推流域名
 
@@ -71,7 +71,7 @@ class UpdatePublishTemplateRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePublishTemplateRequest.
+        r"""Gets the body of this UpdatePublishTemplateRequest.
 
         :return: The body of this UpdatePublishTemplateRequest.
         :rtype: :class:`huaweicloudsdklive.v1.CallbackUrl`
@@ -80,7 +80,7 @@ class UpdatePublishTemplateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePublishTemplateRequest.
+        r"""Sets the body of this UpdatePublishTemplateRequest.
 
         :param body: The body of this UpdatePublishTemplateRequest.
         :type body: :class:`huaweicloudsdklive.v1.CallbackUrl`

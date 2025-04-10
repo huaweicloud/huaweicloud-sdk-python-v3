@@ -28,7 +28,7 @@ class BatchImportKeypairResponse(SdkResponse):
     }
 
     def __init__(self, failed_keypairs=None, succeeded_keypairs=None):
-        """BatchImportKeypairResponse
+        r"""BatchImportKeypairResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchImportKeypairResponse(SdkResponse):
 
     @property
     def failed_keypairs(self):
-        """Gets the failed_keypairs of this BatchImportKeypairResponse.
+        r"""Gets the failed_keypairs of this BatchImportKeypairResponse.
 
         导入失败的SSH密钥对信息及导入失败的原因
 
@@ -62,7 +62,7 @@ class BatchImportKeypairResponse(SdkResponse):
 
     @failed_keypairs.setter
     def failed_keypairs(self, failed_keypairs):
-        """Sets the failed_keypairs of this BatchImportKeypairResponse.
+        r"""Sets the failed_keypairs of this BatchImportKeypairResponse.
 
         导入失败的SSH密钥对信息及导入失败的原因
 
@@ -73,7 +73,7 @@ class BatchImportKeypairResponse(SdkResponse):
 
     @property
     def succeeded_keypairs(self):
-        """Gets the succeeded_keypairs of this BatchImportKeypairResponse.
+        r"""Gets the succeeded_keypairs of this BatchImportKeypairResponse.
 
         成功导入的SSH密钥对信息
 
@@ -84,7 +84,7 @@ class BatchImportKeypairResponse(SdkResponse):
 
     @succeeded_keypairs.setter
     def succeeded_keypairs(self, succeeded_keypairs):
-        """Sets the succeeded_keypairs of this BatchImportKeypairResponse.
+        r"""Sets the succeeded_keypairs of this BatchImportKeypairResponse.
 
         成功导入的SSH密钥对信息
 

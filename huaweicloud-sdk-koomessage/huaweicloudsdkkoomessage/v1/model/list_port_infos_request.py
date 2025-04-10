@@ -43,7 +43,7 @@ class ListPortInfosRequest:
     }
 
     def __init__(self, type=None, port=None, port_type=None, sign_search=None, offset=None, limit=None, start_time=None, end_time=None, pub_name=None, is_bind=None):
-        """ListPortInfosRequest
+        r"""ListPortInfosRequest
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ListPortInfosRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListPortInfosRequest.
+        r"""Gets the type of this ListPortInfosRequest.
 
         操作类型。 - 0：查询通道号列表 - 1：查询绑定关系列表 
 
@@ -117,7 +117,7 @@ class ListPortInfosRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListPortInfosRequest.
+        r"""Sets the type of this ListPortInfosRequest.
 
         操作类型。 - 0：查询通道号列表 - 1：查询绑定关系列表 
 
@@ -128,7 +128,7 @@ class ListPortInfosRequest:
 
     @property
     def port(self):
-        """Gets the port of this ListPortInfosRequest.
+        r"""Gets the port of this ListPortInfosRequest.
 
         通道号。 
 
@@ -139,7 +139,7 @@ class ListPortInfosRequest:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this ListPortInfosRequest.
+        r"""Sets the port of this ListPortInfosRequest.
 
         通道号。 
 
@@ -150,7 +150,7 @@ class ListPortInfosRequest:
 
     @property
     def port_type(self):
-        """Gets the port_type of this ListPortInfosRequest.
+        r"""Gets the port_type of this ListPortInfosRequest.
 
         通道号类型。 - 1：普通 - 3：前缀号段  - 5：后缀号段 
 
@@ -161,7 +161,7 @@ class ListPortInfosRequest:
 
     @port_type.setter
     def port_type(self, port_type):
-        """Sets the port_type of this ListPortInfosRequest.
+        r"""Sets the port_type of this ListPortInfosRequest.
 
         通道号类型。 - 1：普通 - 3：前缀号段  - 5：后缀号段 
 
@@ -172,7 +172,7 @@ class ListPortInfosRequest:
 
     @property
     def sign_search(self):
-        """Gets the sign_search of this ListPortInfosRequest.
+        r"""Gets the sign_search of this ListPortInfosRequest.
 
         单个通道号签名。  > 不支持多个签名查询，支持模糊搜索。长度要求0-18。 
 
@@ -183,7 +183,7 @@ class ListPortInfosRequest:
 
     @sign_search.setter
     def sign_search(self, sign_search):
-        """Sets the sign_search of this ListPortInfosRequest.
+        r"""Sets the sign_search of this ListPortInfosRequest.
 
         单个通道号签名。  > 不支持多个签名查询，支持模糊搜索。长度要求0-18。 
 
@@ -194,7 +194,7 @@ class ListPortInfosRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPortInfosRequest.
+        r"""Gets the offset of this ListPortInfosRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0。
 
@@ -205,7 +205,7 @@ class ListPortInfosRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPortInfosRequest.
+        r"""Sets the offset of this ListPortInfosRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0。
 
@@ -216,7 +216,7 @@ class ListPortInfosRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPortInfosRequest.
+        r"""Gets the limit of this ListPortInfosRequest.
 
         每页显示的条目数量。
 
@@ -227,7 +227,7 @@ class ListPortInfosRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPortInfosRequest.
+        r"""Sets the limit of this ListPortInfosRequest.
 
         每页显示的条目数量。
 
@@ -238,7 +238,7 @@ class ListPortInfosRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListPortInfosRequest.
+        r"""Gets the start_time of this ListPortInfosRequest.
 
         开始时间。格式为：yyyy-MM-ddTHH:mm:ssZ。
 
@@ -249,7 +249,7 @@ class ListPortInfosRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListPortInfosRequest.
+        r"""Sets the start_time of this ListPortInfosRequest.
 
         开始时间。格式为：yyyy-MM-ddTHH:mm:ssZ。
 
@@ -260,7 +260,7 @@ class ListPortInfosRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListPortInfosRequest.
+        r"""Gets the end_time of this ListPortInfosRequest.
 
         结束时间。格式为：yyyy-MM-ddTHH:mm:ssZ。
 
@@ -271,7 +271,7 @@ class ListPortInfosRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListPortInfosRequest.
+        r"""Sets the end_time of this ListPortInfosRequest.
 
         结束时间。格式为：yyyy-MM-ddTHH:mm:ssZ。
 
@@ -282,7 +282,7 @@ class ListPortInfosRequest:
 
     @property
     def pub_name(self):
-        """Gets the pub_name of this ListPortInfosRequest.
+        r"""Gets the pub_name of this ListPortInfosRequest.
 
         服务号名称。  > - type=1时，此字段作为过滤条件 > - type=0时，不作为过滤条件 
 
@@ -293,7 +293,7 @@ class ListPortInfosRequest:
 
     @pub_name.setter
     def pub_name(self, pub_name):
-        """Sets the pub_name of this ListPortInfosRequest.
+        r"""Sets the pub_name of this ListPortInfosRequest.
 
         服务号名称。  > - type=1时，此字段作为过滤条件 > - type=0时，不作为过滤条件 
 
@@ -304,7 +304,7 @@ class ListPortInfosRequest:
 
     @property
     def is_bind(self):
-        """Gets the is_bind of this ListPortInfosRequest.
+        r"""Gets the is_bind of this ListPortInfosRequest.
 
         绑定状态。 - 0：未绑定 - 1：已绑定  > - type=0时，此字段作为过滤条件 > - type=1时，不作为过滤条件 
 
@@ -315,7 +315,7 @@ class ListPortInfosRequest:
 
     @is_bind.setter
     def is_bind(self, is_bind):
-        """Sets the is_bind of this ListPortInfosRequest.
+        r"""Sets the is_bind of this ListPortInfosRequest.
 
         绑定状态。 - 0：未绑定 - 1：已绑定  > - type=0时，此字段作为过滤条件 > - type=1时，不作为过滤条件 
 

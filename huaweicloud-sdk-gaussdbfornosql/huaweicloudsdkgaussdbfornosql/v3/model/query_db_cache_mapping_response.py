@@ -43,7 +43,7 @@ class QueryDBCacheMappingResponse:
     }
 
     def __init__(self, id=None, name=None, source_instance_id=None, source_instance_name=None, target_instance_id=None, target_instance_name=None, status=None, created=None, updated=None, rule_count=None):
-        """QueryDBCacheMappingResponse
+        r"""QueryDBCacheMappingResponse
 
         The model defined in huaweicloud sdk
 
@@ -97,7 +97,7 @@ class QueryDBCacheMappingResponse:
 
     @property
     def id(self):
-        """Gets the id of this QueryDBCacheMappingResponse.
+        r"""Gets the id of this QueryDBCacheMappingResponse.
 
         内存加速映射ID。
 
@@ -108,7 +108,7 @@ class QueryDBCacheMappingResponse:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this QueryDBCacheMappingResponse.
+        r"""Sets the id of this QueryDBCacheMappingResponse.
 
         内存加速映射ID。
 
@@ -119,7 +119,7 @@ class QueryDBCacheMappingResponse:
 
     @property
     def name(self):
-        """Gets the name of this QueryDBCacheMappingResponse.
+        r"""Gets the name of this QueryDBCacheMappingResponse.
 
         内存加速映射名称。
 
@@ -130,7 +130,7 @@ class QueryDBCacheMappingResponse:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this QueryDBCacheMappingResponse.
+        r"""Sets the name of this QueryDBCacheMappingResponse.
 
         内存加速映射名称。
 
@@ -141,7 +141,7 @@ class QueryDBCacheMappingResponse:
 
     @property
     def source_instance_id(self):
-        """Gets the source_instance_id of this QueryDBCacheMappingResponse.
+        r"""Gets the source_instance_id of this QueryDBCacheMappingResponse.
 
         源实例ID。
 
@@ -152,7 +152,7 @@ class QueryDBCacheMappingResponse:
 
     @source_instance_id.setter
     def source_instance_id(self, source_instance_id):
-        """Sets the source_instance_id of this QueryDBCacheMappingResponse.
+        r"""Sets the source_instance_id of this QueryDBCacheMappingResponse.
 
         源实例ID。
 
@@ -163,7 +163,7 @@ class QueryDBCacheMappingResponse:
 
     @property
     def source_instance_name(self):
-        """Gets the source_instance_name of this QueryDBCacheMappingResponse.
+        r"""Gets the source_instance_name of this QueryDBCacheMappingResponse.
 
         源实例名称。
 
@@ -174,7 +174,7 @@ class QueryDBCacheMappingResponse:
 
     @source_instance_name.setter
     def source_instance_name(self, source_instance_name):
-        """Sets the source_instance_name of this QueryDBCacheMappingResponse.
+        r"""Sets the source_instance_name of this QueryDBCacheMappingResponse.
 
         源实例名称。
 
@@ -185,7 +185,7 @@ class QueryDBCacheMappingResponse:
 
     @property
     def target_instance_id(self):
-        """Gets the target_instance_id of this QueryDBCacheMappingResponse.
+        r"""Gets the target_instance_id of this QueryDBCacheMappingResponse.
 
         目标实例ID。
 
@@ -196,7 +196,7 @@ class QueryDBCacheMappingResponse:
 
     @target_instance_id.setter
     def target_instance_id(self, target_instance_id):
-        """Sets the target_instance_id of this QueryDBCacheMappingResponse.
+        r"""Sets the target_instance_id of this QueryDBCacheMappingResponse.
 
         目标实例ID。
 
@@ -207,7 +207,7 @@ class QueryDBCacheMappingResponse:
 
     @property
     def target_instance_name(self):
-        """Gets the target_instance_name of this QueryDBCacheMappingResponse.
+        r"""Gets the target_instance_name of this QueryDBCacheMappingResponse.
 
         目标实例名称。
 
@@ -218,7 +218,7 @@ class QueryDBCacheMappingResponse:
 
     @target_instance_name.setter
     def target_instance_name(self, target_instance_name):
-        """Sets the target_instance_name of this QueryDBCacheMappingResponse.
+        r"""Sets the target_instance_name of this QueryDBCacheMappingResponse.
 
         目标实例名称。
 
@@ -229,7 +229,7 @@ class QueryDBCacheMappingResponse:
 
     @property
     def status(self):
-        """Gets the status of this QueryDBCacheMappingResponse.
+        r"""Gets the status of this QueryDBCacheMappingResponse.
 
         内存加速映射关系。  - normal： 表示内存加速映射正常。  - creating： 表示内存加速映射创建中。  - createfail： 表示内存加速映射创建失败。  - deleting： 表示内存加速映射解除中。  - stopped： 表示内存加速映射停止。  - deleted： 表示内存加速映射已解除。
 
@@ -240,7 +240,7 @@ class QueryDBCacheMappingResponse:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this QueryDBCacheMappingResponse.
+        r"""Sets the status of this QueryDBCacheMappingResponse.
 
         内存加速映射关系。  - normal： 表示内存加速映射正常。  - creating： 表示内存加速映射创建中。  - createfail： 表示内存加速映射创建失败。  - deleting： 表示内存加速映射解除中。  - stopped： 表示内存加速映射停止。  - deleted： 表示内存加速映射已解除。
 
@@ -251,7 +251,7 @@ class QueryDBCacheMappingResponse:
 
     @property
     def created(self):
-        """Gets the created of this QueryDBCacheMappingResponse.
+        r"""Gets the created of this QueryDBCacheMappingResponse.
 
         内存加速映射创建时间。
 
@@ -262,7 +262,7 @@ class QueryDBCacheMappingResponse:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this QueryDBCacheMappingResponse.
+        r"""Sets the created of this QueryDBCacheMappingResponse.
 
         内存加速映射创建时间。
 
@@ -273,7 +273,7 @@ class QueryDBCacheMappingResponse:
 
     @property
     def updated(self):
-        """Gets the updated of this QueryDBCacheMappingResponse.
+        r"""Gets the updated of this QueryDBCacheMappingResponse.
 
         内存加速映射最新变更的时间。
 
@@ -284,7 +284,7 @@ class QueryDBCacheMappingResponse:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this QueryDBCacheMappingResponse.
+        r"""Sets the updated of this QueryDBCacheMappingResponse.
 
         内存加速映射最新变更的时间。
 
@@ -295,7 +295,7 @@ class QueryDBCacheMappingResponse:
 
     @property
     def rule_count(self):
-        """Gets the rule_count of this QueryDBCacheMappingResponse.
+        r"""Gets the rule_count of this QueryDBCacheMappingResponse.
 
         该内存加速映射下的规则数量。
 
@@ -306,7 +306,7 @@ class QueryDBCacheMappingResponse:
 
     @rule_count.setter
     def rule_count(self, rule_count):
-        """Sets the rule_count of this QueryDBCacheMappingResponse.
+        r"""Sets the rule_count of this QueryDBCacheMappingResponse.
 
         该内存加速映射下的规则数量。
 

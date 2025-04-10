@@ -31,7 +31,7 @@ class AMQPUserPerm:
     }
 
     def __init__(self, vhost=None, conf=None, write=None, read=None):
-        """AMQPUserPerm
+        r"""AMQPUserPerm
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class AMQPUserPerm:
 
     @property
     def vhost(self):
-        """Gets the vhost of this AMQPUserPerm.
+        r"""Gets the vhost of this AMQPUserPerm.
 
         需要配置权限的Vhost名称，一个用户可以配置多个Vhost下的资源权限。
 
@@ -75,7 +75,7 @@ class AMQPUserPerm:
 
     @vhost.setter
     def vhost(self, vhost):
-        """Sets the vhost of this AMQPUserPerm.
+        r"""Sets the vhost of this AMQPUserPerm.
 
         需要配置权限的Vhost名称，一个用户可以配置多个Vhost下的资源权限。
 
@@ -86,7 +86,7 @@ class AMQPUserPerm:
 
     @property
     def conf(self):
-        """Gets the conf of this AMQPUserPerm.
+        r"""Gets the conf of this AMQPUserPerm.
 
         使用正则表达式匹配资源配置权限。例如，在输入框内输入“^janeway-.*”，则表示授权给该用户当前Vhost下，所有名称以“janeway-”开头的资源的配置权限。
 
@@ -97,7 +97,7 @@ class AMQPUserPerm:
 
     @conf.setter
     def conf(self, conf):
-        """Sets the conf of this AMQPUserPerm.
+        r"""Sets the conf of this AMQPUserPerm.
 
         使用正则表达式匹配资源配置权限。例如，在输入框内输入“^janeway-.*”，则表示授权给该用户当前Vhost下，所有名称以“janeway-”开头的资源的配置权限。
 
@@ -108,7 +108,7 @@ class AMQPUserPerm:
 
     @property
     def write(self):
-        """Gets the write of this AMQPUserPerm.
+        r"""Gets the write of this AMQPUserPerm.
 
         使用正则表达式匹配资源写权限。例如，在输入框内输入“.*”，则表示授权给该用户当前Vhost下，所有资源的写权限。
 
@@ -119,7 +119,7 @@ class AMQPUserPerm:
 
     @write.setter
     def write(self, write):
-        """Sets the write of this AMQPUserPerm.
+        r"""Sets the write of this AMQPUserPerm.
 
         使用正则表达式匹配资源写权限。例如，在输入框内输入“.*”，则表示授权给该用户当前Vhost下，所有资源的写权限。
 
@@ -130,7 +130,7 @@ class AMQPUserPerm:
 
     @property
     def read(self):
-        """Gets the read of this AMQPUserPerm.
+        r"""Gets the read of this AMQPUserPerm.
 
         使用正则表达式匹配资源读权限。例如，在输入框内输入“.*”，则表示授权给该用户当前Vhost下，所有资源的读权限。
 
@@ -141,7 +141,7 @@ class AMQPUserPerm:
 
     @read.setter
     def read(self, read):
-        """Sets the read of this AMQPUserPerm.
+        r"""Sets the read of this AMQPUserPerm.
 
         使用正则表达式匹配资源读权限。例如，在输入框内输入“.*”，则表示授权给该用户当前Vhost下，所有资源的读权限。
 

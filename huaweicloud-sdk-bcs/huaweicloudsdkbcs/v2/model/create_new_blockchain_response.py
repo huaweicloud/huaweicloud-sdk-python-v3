@@ -30,7 +30,7 @@ class CreateNewBlockchainResponse(SdkResponse):
     }
 
     def __init__(self, blockchain_id=None, blockchain_name=None, operation_id=None):
-        """CreateNewBlockchainResponse
+        r"""CreateNewBlockchainResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateNewBlockchainResponse(SdkResponse):
 
     @property
     def blockchain_id(self):
-        """Gets the blockchain_id of this CreateNewBlockchainResponse.
+        r"""Gets the blockchain_id of this CreateNewBlockchainResponse.
 
         服务实例ID
 
@@ -69,7 +69,7 @@ class CreateNewBlockchainResponse(SdkResponse):
 
     @blockchain_id.setter
     def blockchain_id(self, blockchain_id):
-        """Sets the blockchain_id of this CreateNewBlockchainResponse.
+        r"""Sets the blockchain_id of this CreateNewBlockchainResponse.
 
         服务实例ID
 
@@ -80,7 +80,7 @@ class CreateNewBlockchainResponse(SdkResponse):
 
     @property
     def blockchain_name(self):
-        """Gets the blockchain_name of this CreateNewBlockchainResponse.
+        r"""Gets the blockchain_name of this CreateNewBlockchainResponse.
 
         服务实例名
 
@@ -91,7 +91,7 @@ class CreateNewBlockchainResponse(SdkResponse):
 
     @blockchain_name.setter
     def blockchain_name(self, blockchain_name):
-        """Sets the blockchain_name of this CreateNewBlockchainResponse.
+        r"""Sets the blockchain_name of this CreateNewBlockchainResponse.
 
         服务实例名
 
@@ -102,7 +102,7 @@ class CreateNewBlockchainResponse(SdkResponse):
 
     @property
     def operation_id(self):
-        """Gets the operation_id of this CreateNewBlockchainResponse.
+        r"""Gets the operation_id of this CreateNewBlockchainResponse.
 
         操作ID
 
@@ -113,7 +113,7 @@ class CreateNewBlockchainResponse(SdkResponse):
 
     @operation_id.setter
     def operation_id(self, operation_id):
-        """Sets the operation_id of this CreateNewBlockchainResponse.
+        r"""Sets the operation_id of this CreateNewBlockchainResponse.
 
         操作ID
 

@@ -33,7 +33,7 @@ class ApiResponsePara:
     }
 
     def __init__(self, name=None, field=None, type=None, description=None, example_value=None):
-        """ApiResponsePara
+        r"""ApiResponsePara
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ApiResponsePara:
 
     @property
     def name(self):
-        """Gets the name of this ApiResponsePara.
+        r"""Gets the name of this ApiResponsePara.
 
         参数名
 
@@ -82,7 +82,7 @@ class ApiResponsePara:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApiResponsePara.
+        r"""Sets the name of this ApiResponsePara.
 
         参数名
 
@@ -93,7 +93,7 @@ class ApiResponsePara:
 
     @property
     def field(self):
-        """Gets the field of this ApiResponsePara.
+        r"""Gets the field of this ApiResponsePara.
 
         绑定的表字段
 
@@ -104,7 +104,7 @@ class ApiResponsePara:
 
     @field.setter
     def field(self, field):
-        """Sets the field of this ApiResponsePara.
+        r"""Sets the field of this ApiResponsePara.
 
         绑定的表字段
 
@@ -115,7 +115,7 @@ class ApiResponsePara:
 
     @property
     def type(self):
-        """Gets the type of this ApiResponsePara.
+        r"""Gets the type of this ApiResponsePara.
 
         参数类型
 
@@ -126,7 +126,7 @@ class ApiResponsePara:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ApiResponsePara.
+        r"""Sets the type of this ApiResponsePara.
 
         参数类型
 
@@ -137,7 +137,7 @@ class ApiResponsePara:
 
     @property
     def description(self):
-        """Gets the description of this ApiResponsePara.
+        r"""Gets the description of this ApiResponsePara.
 
         参数描述
 
@@ -148,7 +148,7 @@ class ApiResponsePara:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ApiResponsePara.
+        r"""Sets the description of this ApiResponsePara.
 
         参数描述
 
@@ -159,7 +159,7 @@ class ApiResponsePara:
 
     @property
     def example_value(self):
-        """Gets the example_value of this ApiResponsePara.
+        r"""Gets the example_value of this ApiResponsePara.
 
         参数示例值
 
@@ -170,7 +170,7 @@ class ApiResponsePara:
 
     @example_value.setter
     def example_value(self, example_value):
-        """Sets the example_value of this ApiResponsePara.
+        r"""Sets the example_value of this ApiResponsePara.
 
         参数示例值
 

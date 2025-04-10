@@ -49,7 +49,7 @@ class PoliciesInListResp:
     }
 
     def __init__(self, alarm_policy_id=None, metric_name=None, extra_info=None, period=None, filter=None, comparison_operator=None, value=None, unit=None, count=None, type=None, suppress_duration=None, alarm_level=None, selected_unit=None):
-        """PoliciesInListResp
+        r"""PoliciesInListResp
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class PoliciesInListResp:
 
     @property
     def alarm_policy_id(self):
-        """Gets the alarm_policy_id of this PoliciesInListResp.
+        r"""Gets the alarm_policy_id of this PoliciesInListResp.
 
         告警策略ID。
 
@@ -131,7 +131,7 @@ class PoliciesInListResp:
 
     @alarm_policy_id.setter
     def alarm_policy_id(self, alarm_policy_id):
-        """Sets the alarm_policy_id of this PoliciesInListResp.
+        r"""Sets the alarm_policy_id of this PoliciesInListResp.
 
         告警策略ID。
 
@@ -142,7 +142,7 @@ class PoliciesInListResp:
 
     @property
     def metric_name(self):
-        """Gets the metric_name of this PoliciesInListResp.
+        r"""Gets the metric_name of this PoliciesInListResp.
 
         资源的监控指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，字符长度最短为1，最大为64；如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率；各服务的指标名称可查看：“[服务指标名称](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
@@ -153,7 +153,7 @@ class PoliciesInListResp:
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        """Sets the metric_name of this PoliciesInListResp.
+        r"""Sets the metric_name of this PoliciesInListResp.
 
         资源的监控指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，字符长度最短为1，最大为64；如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率；各服务的指标名称可查看：“[服务指标名称](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
@@ -164,7 +164,7 @@ class PoliciesInListResp:
 
     @property
     def extra_info(self):
-        """Gets the extra_info of this PoliciesInListResp.
+        r"""Gets the extra_info of this PoliciesInListResp.
 
         :return: The extra_info of this PoliciesInListResp.
         :rtype: :class:`huaweicloudsdkces.v2.MetricExtraInfo`
@@ -173,7 +173,7 @@ class PoliciesInListResp:
 
     @extra_info.setter
     def extra_info(self, extra_info):
-        """Sets the extra_info of this PoliciesInListResp.
+        r"""Sets the extra_info of this PoliciesInListResp.
 
         :param extra_info: The extra_info of this PoliciesInListResp.
         :type extra_info: :class:`huaweicloudsdkces.v2.MetricExtraInfo`
@@ -182,7 +182,7 @@ class PoliciesInListResp:
 
     @property
     def period(self):
-        """Gets the period of this PoliciesInListResp.
+        r"""Gets the period of this PoliciesInListResp.
 
         :return: The period of this PoliciesInListResp.
         :rtype: :class:`huaweicloudsdkces.v2.Period`
@@ -191,7 +191,7 @@ class PoliciesInListResp:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this PoliciesInListResp.
+        r"""Sets the period of this PoliciesInListResp.
 
         :param period: The period of this PoliciesInListResp.
         :type period: :class:`huaweicloudsdkces.v2.Period`
@@ -200,7 +200,7 @@ class PoliciesInListResp:
 
     @property
     def filter(self):
-        """Gets the filter of this PoliciesInListResp.
+        r"""Gets the filter of this PoliciesInListResp.
 
         聚合方式, 支持的值为(average|min|max|sum)
 
@@ -211,7 +211,7 @@ class PoliciesInListResp:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this PoliciesInListResp.
+        r"""Sets the filter of this PoliciesInListResp.
 
         聚合方式, 支持的值为(average|min|max|sum)
 
@@ -222,7 +222,7 @@ class PoliciesInListResp:
 
     @property
     def comparison_operator(self):
-        """Gets the comparison_operator of this PoliciesInListResp.
+        r"""Gets the comparison_operator of this PoliciesInListResp.
 
         告警阈值的比较条件，支持的值为(>|<|>=|<=|=|!=|cycle_decrease|cycle_increase|cycle_wave)，cycle_decrease为环比下降，cycle_increase为环比上升，cycle_wave为环比波动
 
@@ -233,7 +233,7 @@ class PoliciesInListResp:
 
     @comparison_operator.setter
     def comparison_operator(self, comparison_operator):
-        """Sets the comparison_operator of this PoliciesInListResp.
+        r"""Sets the comparison_operator of this PoliciesInListResp.
 
         告警阈值的比较条件，支持的值为(>|<|>=|<=|=|!=|cycle_decrease|cycle_increase|cycle_wave)，cycle_decrease为环比下降，cycle_increase为环比上升，cycle_wave为环比波动
 
@@ -244,7 +244,7 @@ class PoliciesInListResp:
 
     @property
     def value(self):
-        """Gets the value of this PoliciesInListResp.
+        r"""Gets the value of this PoliciesInListResp.
 
         阈值
 
@@ -255,7 +255,7 @@ class PoliciesInListResp:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this PoliciesInListResp.
+        r"""Sets the value of this PoliciesInListResp.
 
         阈值
 
@@ -266,7 +266,7 @@ class PoliciesInListResp:
 
     @property
     def unit(self):
-        """Gets the unit of this PoliciesInListResp.
+        r"""Gets the unit of this PoliciesInListResp.
 
         单位
 
@@ -277,7 +277,7 @@ class PoliciesInListResp:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this PoliciesInListResp.
+        r"""Sets the unit of this PoliciesInListResp.
 
         单位
 
@@ -288,7 +288,7 @@ class PoliciesInListResp:
 
     @property
     def count(self):
-        """Gets the count of this PoliciesInListResp.
+        r"""Gets the count of this PoliciesInListResp.
 
         次数
 
@@ -299,7 +299,7 @@ class PoliciesInListResp:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this PoliciesInListResp.
+        r"""Sets the count of this PoliciesInListResp.
 
         次数
 
@@ -310,7 +310,7 @@ class PoliciesInListResp:
 
     @property
     def type(self):
-        """Gets the type of this PoliciesInListResp.
+        r"""Gets the type of this PoliciesInListResp.
 
         告警策略类型。
 
@@ -321,7 +321,7 @@ class PoliciesInListResp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PoliciesInListResp.
+        r"""Sets the type of this PoliciesInListResp.
 
         告警策略类型。
 
@@ -332,7 +332,7 @@ class PoliciesInListResp:
 
     @property
     def suppress_duration(self):
-        """Gets the suppress_duration of this PoliciesInListResp.
+        r"""Gets the suppress_duration of this PoliciesInListResp.
 
         :return: The suppress_duration of this PoliciesInListResp.
         :rtype: :class:`huaweicloudsdkces.v2.SuppressDuration`
@@ -341,7 +341,7 @@ class PoliciesInListResp:
 
     @suppress_duration.setter
     def suppress_duration(self, suppress_duration):
-        """Sets the suppress_duration of this PoliciesInListResp.
+        r"""Sets the suppress_duration of this PoliciesInListResp.
 
         :param suppress_duration: The suppress_duration of this PoliciesInListResp.
         :type suppress_duration: :class:`huaweicloudsdkces.v2.SuppressDuration`
@@ -350,7 +350,7 @@ class PoliciesInListResp:
 
     @property
     def alarm_level(self):
-        """Gets the alarm_level of this PoliciesInListResp.
+        r"""Gets the alarm_level of this PoliciesInListResp.
 
         告警级别，1为紧急，2为重要，3为次要，4为提示
 
@@ -361,7 +361,7 @@ class PoliciesInListResp:
 
     @alarm_level.setter
     def alarm_level(self, alarm_level):
-        """Sets the alarm_level of this PoliciesInListResp.
+        r"""Sets the alarm_level of this PoliciesInListResp.
 
         告警级别，1为紧急，2为重要，3为次要，4为提示
 
@@ -372,7 +372,7 @@ class PoliciesInListResp:
 
     @property
     def selected_unit(self):
-        """Gets the selected_unit of this PoliciesInListResp.
+        r"""Gets the selected_unit of this PoliciesInListResp.
 
         用户在页面中选择的指标单位， 用于后续指标数据回显和计算
 
@@ -383,7 +383,7 @@ class PoliciesInListResp:
 
     @selected_unit.setter
     def selected_unit(self, selected_unit):
-        """Sets the selected_unit of this PoliciesInListResp.
+        r"""Sets the selected_unit of this PoliciesInListResp.
 
         用户在页面中选择的指标单位， 用于后续指标数据回显和计算
 

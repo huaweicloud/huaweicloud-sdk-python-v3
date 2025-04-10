@@ -27,7 +27,7 @@ class RunPipelineDTOVariables:
     }
 
     def __init__(self, name=None, value=None):
-        """RunPipelineDTOVariables
+        r"""RunPipelineDTOVariables
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class RunPipelineDTOVariables:
 
     @property
     def name(self):
-        """Gets the name of this RunPipelineDTOVariables.
+        r"""Gets the name of this RunPipelineDTOVariables.
 
         参数名
 
@@ -59,7 +59,7 @@ class RunPipelineDTOVariables:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RunPipelineDTOVariables.
+        r"""Sets the name of this RunPipelineDTOVariables.
 
         参数名
 
@@ -70,7 +70,7 @@ class RunPipelineDTOVariables:
 
     @property
     def value(self):
-        """Gets the value of this RunPipelineDTOVariables.
+        r"""Gets the value of this RunPipelineDTOVariables.
 
         参数值
 
@@ -81,7 +81,7 @@ class RunPipelineDTOVariables:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this RunPipelineDTOVariables.
+        r"""Sets the value of this RunPipelineDTOVariables.
 
         参数值
 

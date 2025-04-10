@@ -29,7 +29,7 @@ class UpdateResDatastructRequestBodyBody:
     }
 
     def __init__(self, item_attrs=None, user_attrs=None, behaviors=None):
-        """UpdateResDatastructRequestBodyBody
+        r"""UpdateResDatastructRequestBodyBody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class UpdateResDatastructRequestBodyBody:
 
     @property
     def item_attrs(self):
-        """Gets the item_attrs of this UpdateResDatastructRequestBodyBody.
+        r"""Gets the item_attrs of this UpdateResDatastructRequestBodyBody.
 
         物品特征信息。
 
@@ -65,7 +65,7 @@ class UpdateResDatastructRequestBodyBody:
 
     @item_attrs.setter
     def item_attrs(self, item_attrs):
-        """Sets the item_attrs of this UpdateResDatastructRequestBodyBody.
+        r"""Sets the item_attrs of this UpdateResDatastructRequestBodyBody.
 
         物品特征信息。
 
@@ -76,7 +76,7 @@ class UpdateResDatastructRequestBodyBody:
 
     @property
     def user_attrs(self):
-        """Gets the user_attrs of this UpdateResDatastructRequestBodyBody.
+        r"""Gets the user_attrs of this UpdateResDatastructRequestBodyBody.
 
         用户特征信息。
 
@@ -87,7 +87,7 @@ class UpdateResDatastructRequestBodyBody:
 
     @user_attrs.setter
     def user_attrs(self, user_attrs):
-        """Sets the user_attrs of this UpdateResDatastructRequestBodyBody.
+        r"""Sets the user_attrs of this UpdateResDatastructRequestBodyBody.
 
         用户特征信息。
 
@@ -98,7 +98,7 @@ class UpdateResDatastructRequestBodyBody:
 
     @property
     def behaviors(self):
-        """Gets the behaviors of this UpdateResDatastructRequestBodyBody.
+        r"""Gets the behaviors of this UpdateResDatastructRequestBodyBody.
 
         :return: The behaviors of this UpdateResDatastructRequestBodyBody.
         :rtype: :class:`huaweicloudsdkres.v1.BehaviorsConfig`
@@ -107,7 +107,7 @@ class UpdateResDatastructRequestBodyBody:
 
     @behaviors.setter
     def behaviors(self, behaviors):
-        """Sets the behaviors of this UpdateResDatastructRequestBodyBody.
+        r"""Sets the behaviors of this UpdateResDatastructRequestBodyBody.
 
         :param behaviors: The behaviors of this UpdateResDatastructRequestBodyBody.
         :type behaviors: :class:`huaweicloudsdkres.v1.BehaviorsConfig`

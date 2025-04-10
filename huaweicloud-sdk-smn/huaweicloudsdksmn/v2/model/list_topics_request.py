@@ -37,7 +37,7 @@ class ListTopicsRequest:
     }
 
     def __init__(self, offset=None, limit=None, enterprise_project_id=None, name=None, fuzzy_name=None, topic_id=None, fuzzy_display_name=None):
-        """ListTopicsRequest
+        r"""ListTopicsRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListTopicsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTopicsRequest.
+        r"""Gets the offset of this ListTopicsRequest.
 
         偏移量。  偏移量为一个大于0小于资源总个数的整数，表示查询该偏移量后面的所有的资源，默认值为0。
 
@@ -96,7 +96,7 @@ class ListTopicsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTopicsRequest.
+        r"""Sets the offset of this ListTopicsRequest.
 
         偏移量。  偏移量为一个大于0小于资源总个数的整数，表示查询该偏移量后面的所有的资源，默认值为0。
 
@@ -107,7 +107,7 @@ class ListTopicsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTopicsRequest.
+        r"""Gets the limit of this ListTopicsRequest.
 
          查询的数量限制。  取值范围：1~100，取值一般为10，20，50。功能说明：每页返回的资源个数。默认值为100。
 
@@ -118,7 +118,7 @@ class ListTopicsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTopicsRequest.
+        r"""Sets the limit of this ListTopicsRequest.
 
          查询的数量限制。  取值范围：1~100，取值一般为10，20，50。功能说明：每页返回的资源个数。默认值为100。
 
@@ -129,7 +129,7 @@ class ListTopicsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListTopicsRequest.
+        r"""Gets the enterprise_project_id of this ListTopicsRequest.
 
         企业项目id。
 
@@ -140,7 +140,7 @@ class ListTopicsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListTopicsRequest.
+        r"""Sets the enterprise_project_id of this ListTopicsRequest.
 
         企业项目id。
 
@@ -151,7 +151,7 @@ class ListTopicsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListTopicsRequest.
+        r"""Gets the name of this ListTopicsRequest.
 
         检索的主题名称，完全匹配。
 
@@ -162,7 +162,7 @@ class ListTopicsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListTopicsRequest.
+        r"""Sets the name of this ListTopicsRequest.
 
         检索的主题名称，完全匹配。
 
@@ -173,7 +173,7 @@ class ListTopicsRequest:
 
     @property
     def fuzzy_name(self):
-        """Gets the fuzzy_name of this ListTopicsRequest.
+        r"""Gets the fuzzy_name of this ListTopicsRequest.
 
         检索的主题名称，模糊匹配。
 
@@ -184,7 +184,7 @@ class ListTopicsRequest:
 
     @fuzzy_name.setter
     def fuzzy_name(self, fuzzy_name):
-        """Sets the fuzzy_name of this ListTopicsRequest.
+        r"""Sets the fuzzy_name of this ListTopicsRequest.
 
         检索的主题名称，模糊匹配。
 
@@ -195,7 +195,7 @@ class ListTopicsRequest:
 
     @property
     def topic_id(self):
-        """Gets the topic_id of this ListTopicsRequest.
+        r"""Gets the topic_id of this ListTopicsRequest.
 
         检索的主题ID，完全匹配。
 
@@ -206,7 +206,7 @@ class ListTopicsRequest:
 
     @topic_id.setter
     def topic_id(self, topic_id):
-        """Sets the topic_id of this ListTopicsRequest.
+        r"""Sets the topic_id of this ListTopicsRequest.
 
         检索的主题ID，完全匹配。
 
@@ -217,7 +217,7 @@ class ListTopicsRequest:
 
     @property
     def fuzzy_display_name(self):
-        """Gets the fuzzy_display_name of this ListTopicsRequest.
+        r"""Gets the fuzzy_display_name of this ListTopicsRequest.
 
         检索的主题显示名。模糊匹配。参数字节长度不能大于192字节。
 
@@ -228,7 +228,7 @@ class ListTopicsRequest:
 
     @fuzzy_display_name.setter
     def fuzzy_display_name(self, fuzzy_display_name):
-        """Sets the fuzzy_display_name of this ListTopicsRequest.
+        r"""Sets the fuzzy_display_name of this ListTopicsRequest.
 
         检索的主题显示名。模糊匹配。参数字节长度不能大于192字节。
 

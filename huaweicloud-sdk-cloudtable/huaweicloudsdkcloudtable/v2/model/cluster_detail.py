@@ -53,7 +53,7 @@ class ClusterDetail:
     }
 
     def __init__(self, action_progress=None, actions=None, auth_mode=None, az_code=None, cluster_id=None, cluster_name=None, created=None, enable_dfv=None, enable_free=None, enable_lemon=None, enable_open_tsdb=None, status=None, tags=None, version=None, zookeeper_link=None):
-        """ClusterDetail
+        r"""ClusterDetail
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class ClusterDetail:
 
     @property
     def action_progress(self):
-        """Gets the action_progress of this ClusterDetail.
+        r"""Gets the action_progress of this ClusterDetail.
 
         :return: The action_progress of this ClusterDetail.
         :rtype: :class:`huaweicloudsdkcloudtable.v2.ActionProgress`
@@ -150,7 +150,7 @@ class ClusterDetail:
 
     @action_progress.setter
     def action_progress(self, action_progress):
-        """Sets the action_progress of this ClusterDetail.
+        r"""Sets the action_progress of this ClusterDetail.
 
         :param action_progress: The action_progress of this ClusterDetail.
         :type action_progress: :class:`huaweicloudsdkcloudtable.v2.ActionProgress`
@@ -159,7 +159,7 @@ class ClusterDetail:
 
     @property
     def actions(self):
-        """Gets the actions of this ClusterDetail.
+        r"""Gets the actions of this ClusterDetail.
 
         集群操作记录
 
@@ -170,7 +170,7 @@ class ClusterDetail:
 
     @actions.setter
     def actions(self, actions):
-        """Sets the actions of this ClusterDetail.
+        r"""Sets the actions of this ClusterDetail.
 
         集群操作记录
 
@@ -181,7 +181,7 @@ class ClusterDetail:
 
     @property
     def auth_mode(self):
-        """Gets the auth_mode of this ClusterDetail.
+        r"""Gets the auth_mode of this ClusterDetail.
 
         是否开启IAM权限认证。 - false：不开启 - true：开启
 
@@ -192,7 +192,7 @@ class ClusterDetail:
 
     @auth_mode.setter
     def auth_mode(self, auth_mode):
-        """Sets the auth_mode of this ClusterDetail.
+        r"""Sets the auth_mode of this ClusterDetail.
 
         是否开启IAM权限认证。 - false：不开启 - true：开启
 
@@ -203,7 +203,7 @@ class ClusterDetail:
 
     @property
     def az_code(self):
-        """Gets the az_code of this ClusterDetail.
+        r"""Gets the az_code of this ClusterDetail.
 
         集群所在的可用区（AZ)。
 
@@ -214,7 +214,7 @@ class ClusterDetail:
 
     @az_code.setter
     def az_code(self, az_code):
-        """Sets the az_code of this ClusterDetail.
+        r"""Sets the az_code of this ClusterDetail.
 
         集群所在的可用区（AZ)。
 
@@ -225,7 +225,7 @@ class ClusterDetail:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ClusterDetail.
+        r"""Gets the cluster_id of this ClusterDetail.
 
         集群ID，集群唯一标识。
 
@@ -236,7 +236,7 @@ class ClusterDetail:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ClusterDetail.
+        r"""Sets the cluster_id of this ClusterDetail.
 
         集群ID，集群唯一标识。
 
@@ -247,7 +247,7 @@ class ClusterDetail:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this ClusterDetail.
+        r"""Gets the cluster_name of this ClusterDetail.
 
         CloudTable集群名称。
 
@@ -258,7 +258,7 @@ class ClusterDetail:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this ClusterDetail.
+        r"""Sets the cluster_name of this ClusterDetail.
 
         CloudTable集群名称。
 
@@ -269,7 +269,7 @@ class ClusterDetail:
 
     @property
     def created(self):
-        """Gets the created of this ClusterDetail.
+        r"""Gets the created of this ClusterDetail.
 
         集群创建时间。
 
@@ -280,7 +280,7 @@ class ClusterDetail:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this ClusterDetail.
+        r"""Sets the created of this ClusterDetail.
 
         集群创建时间。
 
@@ -291,7 +291,7 @@ class ClusterDetail:
 
     @property
     def enable_dfv(self):
-        """Gets the enable_dfv of this ClusterDetail.
+        r"""Gets the enable_dfv of this ClusterDetail.
 
         是否开启DFV。 - false：不开启 - true：开启
 
@@ -302,7 +302,7 @@ class ClusterDetail:
 
     @enable_dfv.setter
     def enable_dfv(self, enable_dfv):
-        """Sets the enable_dfv of this ClusterDetail.
+        r"""Sets the enable_dfv of this ClusterDetail.
 
         是否开启DFV。 - false：不开启 - true：开启
 
@@ -313,7 +313,7 @@ class ClusterDetail:
 
     @property
     def enable_free(self):
-        """Gets the enable_free of this ClusterDetail.
+        r"""Gets the enable_free of this ClusterDetail.
 
         集群是否免费。 - false：不免费 - true：免费
 
@@ -324,7 +324,7 @@ class ClusterDetail:
 
     @enable_free.setter
     def enable_free(self, enable_free):
-        """Sets the enable_free of this ClusterDetail.
+        r"""Sets the enable_free of this ClusterDetail.
 
         集群是否免费。 - false：不免费 - true：免费
 
@@ -335,7 +335,7 @@ class ClusterDetail:
 
     @property
     def enable_lemon(self):
-        """Gets the enable_lemon of this ClusterDetail.
+        r"""Gets the enable_lemon of this ClusterDetail.
 
         是否开启Lemon。 - false：不开启 - true：开启
 
@@ -346,7 +346,7 @@ class ClusterDetail:
 
     @enable_lemon.setter
     def enable_lemon(self, enable_lemon):
-        """Sets the enable_lemon of this ClusterDetail.
+        r"""Sets the enable_lemon of this ClusterDetail.
 
         是否开启Lemon。 - false：不开启 - true：开启
 
@@ -357,7 +357,7 @@ class ClusterDetail:
 
     @property
     def enable_open_tsdb(self):
-        """Gets the enable_open_tsdb of this ClusterDetail.
+        r"""Gets the enable_open_tsdb of this ClusterDetail.
 
         是否开启OpenTSDB。 - false：不开启 - true：开启
 
@@ -368,7 +368,7 @@ class ClusterDetail:
 
     @enable_open_tsdb.setter
     def enable_open_tsdb(self, enable_open_tsdb):
-        """Sets the enable_open_tsdb of this ClusterDetail.
+        r"""Sets the enable_open_tsdb of this ClusterDetail.
 
         是否开启OpenTSDB。 - false：不开启 - true：开启
 
@@ -379,7 +379,7 @@ class ClusterDetail:
 
     @property
     def status(self):
-        """Gets the status of this ClusterDetail.
+        r"""Gets the status of this ClusterDetail.
 
         集群状态： - 200：集群正常 - 300：集群异常 - 303：集群创建失败 - 400：集群已删除
 
@@ -390,7 +390,7 @@ class ClusterDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ClusterDetail.
+        r"""Sets the status of this ClusterDetail.
 
         集群状态： - 200：集群正常 - 300：集群异常 - 303：集群创建失败 - 400：集群已删除
 
@@ -401,7 +401,7 @@ class ClusterDetail:
 
     @property
     def tags(self):
-        """Gets the tags of this ClusterDetail.
+        r"""Gets the tags of this ClusterDetail.
 
         集群标识符。
 
@@ -412,7 +412,7 @@ class ClusterDetail:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ClusterDetail.
+        r"""Sets the tags of this ClusterDetail.
 
         集群标识符。
 
@@ -423,7 +423,7 @@ class ClusterDetail:
 
     @property
     def version(self):
-        """Gets the version of this ClusterDetail.
+        r"""Gets the version of this ClusterDetail.
 
         集群版本号。
 
@@ -434,7 +434,7 @@ class ClusterDetail:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ClusterDetail.
+        r"""Sets the version of this ClusterDetail.
 
         集群版本号。
 
@@ -445,7 +445,7 @@ class ClusterDetail:
 
     @property
     def zookeeper_link(self):
-        """Gets the zookeeper_link of this ClusterDetail.
+        r"""Gets the zookeeper_link of this ClusterDetail.
 
         CloudTable集群ZooKeeper的链接地址。例如：cloudtable-3058-zk3-Dqcwuh6R.mycloudtable.com:2181,cloudtable-3058-zk2-TCwkZEie.mycloudtable.com:2181,cloudtable-3058-zk1-TBELUFOK.mycloudtable.com:2181
 
@@ -456,7 +456,7 @@ class ClusterDetail:
 
     @zookeeper_link.setter
     def zookeeper_link(self, zookeeper_link):
-        """Sets the zookeeper_link of this ClusterDetail.
+        r"""Sets the zookeeper_link of this ClusterDetail.
 
         CloudTable集群ZooKeeper的链接地址。例如：cloudtable-3058-zk3-Dqcwuh6R.mycloudtable.com:2181,cloudtable-3058-zk2-TCwkZEie.mycloudtable.com:2181,cloudtable-3058-zk1-TBELUFOK.mycloudtable.com:2181
 

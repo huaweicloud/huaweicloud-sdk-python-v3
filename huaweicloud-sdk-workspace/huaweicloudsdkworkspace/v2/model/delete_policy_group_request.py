@@ -25,7 +25,7 @@ class DeletePolicyGroupRequest:
     }
 
     def __init__(self, policy_group_id=None):
-        """DeletePolicyGroupRequest
+        r"""DeletePolicyGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeletePolicyGroupRequest:
 
     @property
     def policy_group_id(self):
-        """Gets the policy_group_id of this DeletePolicyGroupRequest.
+        r"""Gets the policy_group_id of this DeletePolicyGroupRequest.
 
         策略组id。
 
@@ -53,7 +53,7 @@ class DeletePolicyGroupRequest:
 
     @policy_group_id.setter
     def policy_group_id(self, policy_group_id):
-        """Sets the policy_group_id of this DeletePolicyGroupRequest.
+        r"""Sets the policy_group_id of this DeletePolicyGroupRequest.
 
         策略组id。
 

@@ -27,7 +27,7 @@ class ShowGlobalEipRequest:
     }
 
     def __init__(self, global_eip_id=None, fields=None):
-        """ShowGlobalEipRequest
+        r"""ShowGlobalEipRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowGlobalEipRequest:
 
     @property
     def global_eip_id(self):
-        """Gets the global_eip_id of this ShowGlobalEipRequest.
+        r"""Gets the global_eip_id of this ShowGlobalEipRequest.
 
         :return: The global_eip_id of this ShowGlobalEipRequest.
         :rtype: str
@@ -58,7 +58,7 @@ class ShowGlobalEipRequest:
 
     @global_eip_id.setter
     def global_eip_id(self, global_eip_id):
-        """Sets the global_eip_id of this ShowGlobalEipRequest.
+        r"""Sets the global_eip_id of this ShowGlobalEipRequest.
 
         :param global_eip_id: The global_eip_id of this ShowGlobalEipRequest.
         :type global_eip_id: str
@@ -67,7 +67,7 @@ class ShowGlobalEipRequest:
 
     @property
     def fields(self):
-        """Gets the fields of this ShowGlobalEipRequest.
+        r"""Gets the fields of this ShowGlobalEipRequest.
 
         :return: The fields of this ShowGlobalEipRequest.
         :rtype: list[str]
@@ -76,7 +76,7 @@ class ShowGlobalEipRequest:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this ShowGlobalEipRequest.
+        r"""Sets the fields of this ShowGlobalEipRequest.
 
         :param fields: The fields of this ShowGlobalEipRequest.
         :type fields: list[str]

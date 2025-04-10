@@ -25,7 +25,7 @@ class BatchShowPipelinesStatusRequest:
     }
 
     def __init__(self, pipeline_ids=None):
-        """BatchShowPipelinesStatusRequest
+        r"""BatchShowPipelinesStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchShowPipelinesStatusRequest:
 
     @property
     def pipeline_ids(self):
-        """Gets the pipeline_ids of this BatchShowPipelinesStatusRequest.
+        r"""Gets the pipeline_ids of this BatchShowPipelinesStatusRequest.
 
         要获取状态的流水线ID，用逗号隔开
 
@@ -53,7 +53,7 @@ class BatchShowPipelinesStatusRequest:
 
     @pipeline_ids.setter
     def pipeline_ids(self, pipeline_ids):
-        """Sets the pipeline_ids of this BatchShowPipelinesStatusRequest.
+        r"""Sets the pipeline_ids of this BatchShowPipelinesStatusRequest.
 
         要获取状态的流水线ID，用逗号隔开
 

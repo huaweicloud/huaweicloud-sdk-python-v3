@@ -27,7 +27,7 @@ class ReportOutlineResult:
     }
 
     def __init__(self, err_message=None, outline=None):
-        """ReportOutlineResult
+        r"""ReportOutlineResult
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ReportOutlineResult:
 
     @property
     def err_message(self):
-        """Gets the err_message of this ReportOutlineResult.
+        r"""Gets the err_message of this ReportOutlineResult.
 
         错误信息
 
@@ -61,7 +61,7 @@ class ReportOutlineResult:
 
     @err_message.setter
     def err_message(self, err_message):
-        """Sets the err_message of this ReportOutlineResult.
+        r"""Sets the err_message of this ReportOutlineResult.
 
         错误信息
 
@@ -72,7 +72,7 @@ class ReportOutlineResult:
 
     @property
     def outline(self):
-        """Gets the outline of this ReportOutlineResult.
+        r"""Gets the outline of this ReportOutlineResult.
 
         :return: The outline of this ReportOutlineResult.
         :rtype: :class:`huaweicloudsdkcpts.v1.ReportOutline`
@@ -81,7 +81,7 @@ class ReportOutlineResult:
 
     @outline.setter
     def outline(self, outline):
-        """Sets the outline of this ReportOutlineResult.
+        r"""Sets the outline of this ReportOutlineResult.
 
         :param outline: The outline of this ReportOutlineResult.
         :type outline: :class:`huaweicloudsdkcpts.v1.ReportOutline`

@@ -27,7 +27,7 @@ class TaskOutputDis:
     }
 
     def __init__(self, stream_name=None, data_category=None):
-        """TaskOutputDis
+        r"""TaskOutputDis
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class TaskOutputDis:
 
     @property
     def stream_name(self):
-        """Gets the stream_name of this TaskOutputDis.
+        r"""Gets the stream_name of this TaskOutputDis.
 
         DIS流名称
 
@@ -60,7 +60,7 @@ class TaskOutputDis:
 
     @stream_name.setter
     def stream_name(self, stream_name):
-        """Sets the stream_name of this TaskOutputDis.
+        r"""Sets the stream_name of this TaskOutputDis.
 
         DIS流名称
 
@@ -71,7 +71,7 @@ class TaskOutputDis:
 
     @property
     def data_category(self):
-        """Gets the data_category of this TaskOutputDis.
+        r"""Gets the data_category of this TaskOutputDis.
 
         作业输出数据类别的列表，当输出类型下有这个列表时，表示希望这个输出类型下存放dataCategory列表内的数据，部分服务需要
 
@@ -82,7 +82,7 @@ class TaskOutputDis:
 
     @data_category.setter
     def data_category(self, data_category):
-        """Sets the data_category of this TaskOutputDis.
+        r"""Sets the data_category of this TaskOutputDis.
 
         作业输出数据类别的列表，当输出类型下有这个列表时，表示希望这个输出类型下存放dataCategory列表内的数据，部分服务需要
 

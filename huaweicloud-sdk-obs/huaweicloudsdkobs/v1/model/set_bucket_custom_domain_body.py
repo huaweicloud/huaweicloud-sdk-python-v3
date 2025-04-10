@@ -35,7 +35,7 @@ class SetBucketCustomDomainBody:
     }
 
     def __init__(self, name=None, certificate_id=None, certificate=None, certificate_chain=None, private_key=None):
-        """SetBucketCustomDomainBody
+        r"""SetBucketCustomDomainBody
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class SetBucketCustomDomainBody:
 
     @property
     def name(self):
-        """Gets the name of this SetBucketCustomDomainBody.
+        r"""Gets the name of this SetBucketCustomDomainBody.
 
         Certificate name, a string of 3 to 63 characters. 
 
@@ -81,7 +81,7 @@ class SetBucketCustomDomainBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SetBucketCustomDomainBody.
+        r"""Sets the name of this SetBucketCustomDomainBody.
 
         Certificate name, a string of 3 to 63 characters. 
 
@@ -92,7 +92,7 @@ class SetBucketCustomDomainBody:
 
     @property
     def certificate_id(self):
-        """Gets the certificate_id of this SetBucketCustomDomainBody.
+        r"""Gets the certificate_id of this SetBucketCustomDomainBody.
 
         Certificate id. 
 
@@ -103,7 +103,7 @@ class SetBucketCustomDomainBody:
 
     @certificate_id.setter
     def certificate_id(self, certificate_id):
-        """Sets the certificate_id of this SetBucketCustomDomainBody.
+        r"""Sets the certificate_id of this SetBucketCustomDomainBody.
 
         Certificate id. 
 
@@ -114,7 +114,7 @@ class SetBucketCustomDomainBody:
 
     @property
     def certificate(self):
-        """Gets the certificate of this SetBucketCustomDomainBody.
+        r"""Gets the certificate of this SetBucketCustomDomainBody.
 
         Indicates the certificate content, including the intermediate certificate and root certificate. If the certificate_chain field is set to a certificate chain, this field uses only the certificate itself. The carriage return line feed must be replaced with the escape character \\n or \\r\\n. 
 
@@ -125,7 +125,7 @@ class SetBucketCustomDomainBody:
 
     @certificate.setter
     def certificate(self, certificate):
-        """Sets the certificate of this SetBucketCustomDomainBody.
+        r"""Sets the certificate of this SetBucketCustomDomainBody.
 
         Indicates the certificate content, including the intermediate certificate and root certificate. If the certificate_chain field is set to a certificate chain, this field uses only the certificate itself. The carriage return line feed must be replaced with the escape character \\n or \\r\\n. 
 
@@ -136,7 +136,7 @@ class SetBucketCustomDomainBody:
 
     @property
     def certificate_chain(self):
-        """Gets the certificate_chain of this SetBucketCustomDomainBody.
+        r"""Gets the certificate_chain of this SetBucketCustomDomainBody.
 
         Indicates the certificate content, including the intermediate certificate and root certificate. If the certificate_chain field is set to a certificate chain, this field uses only the certificate itself. The carriage return line feed must be replaced with the escape character \\n or \\r\\n. 
 
@@ -147,7 +147,7 @@ class SetBucketCustomDomainBody:
 
     @certificate_chain.setter
     def certificate_chain(self, certificate_chain):
-        """Sets the certificate_chain of this SetBucketCustomDomainBody.
+        r"""Sets the certificate_chain of this SetBucketCustomDomainBody.
 
         Indicates the certificate content, including the intermediate certificate and root certificate. If the certificate_chain field is set to a certificate chain, this field uses only the certificate itself. The carriage return line feed must be replaced with the escape character \\n or \\r\\n. 
 
@@ -158,7 +158,7 @@ class SetBucketCustomDomainBody:
 
     @property
     def private_key(self):
-        """Gets the private_key of this SetBucketCustomDomainBody.
+        r"""Gets the private_key of this SetBucketCustomDomainBody.
 
         Private key of the certificate. The private key with password protection cannot be uploaded. The carriage return line feed must be replaced with the escape character \\n or \\r\\n. 
 
@@ -169,7 +169,7 @@ class SetBucketCustomDomainBody:
 
     @private_key.setter
     def private_key(self, private_key):
-        """Sets the private_key of this SetBucketCustomDomainBody.
+        r"""Sets the private_key of this SetBucketCustomDomainBody.
 
         Private key of the certificate. The private key with password protection cannot be uploaded. The carriage return line feed must be replaced with the escape character \\n or \\r\\n. 
 

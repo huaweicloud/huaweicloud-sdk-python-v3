@@ -25,7 +25,7 @@ class DisassociateAppGroupRequest:
     }
 
     def __init__(self, server_group_id=None):
-        """DisassociateAppGroupRequest
+        r"""DisassociateAppGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DisassociateAppGroupRequest:
 
     @property
     def server_group_id(self):
-        """Gets the server_group_id of this DisassociateAppGroupRequest.
+        r"""Gets the server_group_id of this DisassociateAppGroupRequest.
 
         服务器组ID。
 
@@ -53,7 +53,7 @@ class DisassociateAppGroupRequest:
 
     @server_group_id.setter
     def server_group_id(self, server_group_id):
-        """Sets the server_group_id of this DisassociateAppGroupRequest.
+        r"""Sets the server_group_id of this DisassociateAppGroupRequest.
 
         服务器组ID。
 

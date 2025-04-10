@@ -27,7 +27,7 @@ class PackageFilter:
     }
 
     def __init__(self, name=None, tag_names=None):
-        """PackageFilter
+        r"""PackageFilter
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PackageFilter:
 
     @property
     def name(self):
-        """Gets the name of this PackageFilter.
+        r"""Gets the name of this PackageFilter.
 
         需查询的习题库名称
 
@@ -61,7 +61,7 @@ class PackageFilter:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PackageFilter.
+        r"""Sets the name of this PackageFilter.
 
         需查询的习题库名称
 
@@ -72,7 +72,7 @@ class PackageFilter:
 
     @property
     def tag_names(self):
-        """Gets the tag_names of this PackageFilter.
+        r"""Gets the tag_names of this PackageFilter.
 
         标签名称列表
 
@@ -83,7 +83,7 @@ class PackageFilter:
 
     @tag_names.setter
     def tag_names(self, tag_names):
-        """Sets the tag_names of this PackageFilter.
+        r"""Sets the tag_names of this PackageFilter.
 
         标签名称列表
 

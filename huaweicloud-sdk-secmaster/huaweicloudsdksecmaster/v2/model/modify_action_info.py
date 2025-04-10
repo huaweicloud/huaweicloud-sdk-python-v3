@@ -33,7 +33,7 @@ class ModifyActionInfo:
     }
 
     def __init__(self, name=None, description=None, action_type=None, action_id=None, sort_order=None):
-        """ModifyActionInfo
+        r"""ModifyActionInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ModifyActionInfo:
 
     @property
     def name(self):
-        """Gets the name of this ModifyActionInfo.
+        r"""Gets the name of this ModifyActionInfo.
 
         名称
 
@@ -82,7 +82,7 @@ class ModifyActionInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ModifyActionInfo.
+        r"""Sets the name of this ModifyActionInfo.
 
         名称
 
@@ -93,7 +93,7 @@ class ModifyActionInfo:
 
     @property
     def description(self):
-        """Gets the description of this ModifyActionInfo.
+        r"""Gets the description of this ModifyActionInfo.
 
         描述
 
@@ -104,7 +104,7 @@ class ModifyActionInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ModifyActionInfo.
+        r"""Sets the description of this ModifyActionInfo.
 
         描述
 
@@ -115,7 +115,7 @@ class ModifyActionInfo:
 
     @property
     def action_type(self):
-        """Gets the action_type of this ModifyActionInfo.
+        r"""Gets the action_type of this ModifyActionInfo.
 
         类型，默认AOP_WORKFLOW.
 
@@ -126,7 +126,7 @@ class ModifyActionInfo:
 
     @action_type.setter
     def action_type(self, action_type):
-        """Sets the action_type of this ModifyActionInfo.
+        r"""Sets the action_type of this ModifyActionInfo.
 
         类型，默认AOP_WORKFLOW.
 
@@ -137,7 +137,7 @@ class ModifyActionInfo:
 
     @property
     def action_id(self):
-        """Gets the action_id of this ModifyActionInfo.
+        r"""Gets the action_id of this ModifyActionInfo.
 
         剧本动作ID
 
@@ -148,7 +148,7 @@ class ModifyActionInfo:
 
     @action_id.setter
     def action_id(self, action_id):
-        """Sets the action_id of this ModifyActionInfo.
+        r"""Sets the action_id of this ModifyActionInfo.
 
         剧本动作ID
 
@@ -159,7 +159,7 @@ class ModifyActionInfo:
 
     @property
     def sort_order(self):
-        """Gets the sort_order of this ModifyActionInfo.
+        r"""Gets the sort_order of this ModifyActionInfo.
 
         排序方式
 
@@ -170,7 +170,7 @@ class ModifyActionInfo:
 
     @sort_order.setter
     def sort_order(self, sort_order):
-        """Sets the sort_order of this ModifyActionInfo.
+        r"""Sets the sort_order of this ModifyActionInfo.
 
         排序方式
 

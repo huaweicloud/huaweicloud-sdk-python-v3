@@ -27,7 +27,7 @@ class ShowInternalVpcIgwRequest:
     }
 
     def __init__(self, fields=None, vpc_igw_id=None):
-        """ShowInternalVpcIgwRequest
+        r"""ShowInternalVpcIgwRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowInternalVpcIgwRequest:
 
     @property
     def fields(self):
-        """Gets the fields of this ShowInternalVpcIgwRequest.
+        r"""Gets the fields of this ShowInternalVpcIgwRequest.
 
         形式为\\\"fields=id&fields=project_id&...\\\"，支持字段：id/project_id/vpc_id/created_at/updated_at/igw_cluster
 
@@ -60,7 +60,7 @@ class ShowInternalVpcIgwRequest:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this ShowInternalVpcIgwRequest.
+        r"""Sets the fields of this ShowInternalVpcIgwRequest.
 
         形式为\\\"fields=id&fields=project_id&...\\\"，支持字段：id/project_id/vpc_id/created_at/updated_at/igw_cluster
 
@@ -71,7 +71,7 @@ class ShowInternalVpcIgwRequest:
 
     @property
     def vpc_igw_id(self):
-        """Gets the vpc_igw_id of this ShowInternalVpcIgwRequest.
+        r"""Gets the vpc_igw_id of this ShowInternalVpcIgwRequest.
 
         虚拟igw的uuid
 
@@ -82,7 +82,7 @@ class ShowInternalVpcIgwRequest:
 
     @vpc_igw_id.setter
     def vpc_igw_id(self, vpc_igw_id):
-        """Sets the vpc_igw_id of this ShowInternalVpcIgwRequest.
+        r"""Sets the vpc_igw_id of this ShowInternalVpcIgwRequest.
 
         虚拟igw的uuid
 

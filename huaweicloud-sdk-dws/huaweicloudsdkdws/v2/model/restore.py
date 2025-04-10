@@ -41,7 +41,7 @@ class Restore:
     }
 
     def __init__(self, name=None, subnet_id=None, security_group_id=None, vpc_id=None, availability_zone=None, port=None, public_ip=None, enterprise_project_id=None, ipv6_enable=None):
-        """Restore
+        r"""Restore
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class Restore:
 
     @property
     def name(self):
-        """Gets the name of this Restore.
+        r"""Gets the name of this Restore.
 
         集群名称，要求唯一性，必须以字母开头并只包含字母、数字、中划线，下划线，长度为4~64个字符。
 
@@ -109,7 +109,7 @@ class Restore:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Restore.
+        r"""Sets the name of this Restore.
 
         集群名称，要求唯一性，必须以字母开头并只包含字母、数字、中划线，下划线，长度为4~64个字符。
 
@@ -120,7 +120,7 @@ class Restore:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this Restore.
+        r"""Gets the subnet_id of this Restore.
 
         指定子网ID，用于集群网络配置。默认值与原集群相同。
 
@@ -131,7 +131,7 @@ class Restore:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this Restore.
+        r"""Sets the subnet_id of this Restore.
 
         指定子网ID，用于集群网络配置。默认值与原集群相同。
 
@@ -142,7 +142,7 @@ class Restore:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this Restore.
+        r"""Gets the security_group_id of this Restore.
 
         指定安全组ID，用于集群网络配置。默认值与原集群相同。
 
@@ -153,7 +153,7 @@ class Restore:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this Restore.
+        r"""Sets the security_group_id of this Restore.
 
         指定安全组ID，用于集群网络配置。默认值与原集群相同。
 
@@ -164,7 +164,7 @@ class Restore:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this Restore.
+        r"""Gets the vpc_id of this Restore.
 
         指定虚拟私有云ID，用于集群网络配置。默认值与原集群相同。
 
@@ -175,7 +175,7 @@ class Restore:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this Restore.
+        r"""Sets the vpc_id of this Restore.
 
         指定虚拟私有云ID，用于集群网络配置。默认值与原集群相同。
 
@@ -186,7 +186,7 @@ class Restore:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this Restore.
+        r"""Gets the availability_zone of this Restore.
 
         指定集群可用区。默认值与原集群相同。
 
@@ -197,7 +197,7 @@ class Restore:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this Restore.
+        r"""Sets the availability_zone of this Restore.
 
         指定集群可用区。默认值与原集群相同。
 
@@ -208,7 +208,7 @@ class Restore:
 
     @property
     def port(self):
-        """Gets the port of this Restore.
+        r"""Gets the port of this Restore.
 
         指定集群服务端口
 
@@ -219,7 +219,7 @@ class Restore:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this Restore.
+        r"""Sets the port of this Restore.
 
         指定集群服务端口
 
@@ -230,7 +230,7 @@ class Restore:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this Restore.
+        r"""Gets the public_ip of this Restore.
 
         :return: The public_ip of this Restore.
         :rtype: :class:`huaweicloudsdkdws.v2.PublicIp`
@@ -239,7 +239,7 @@ class Restore:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this Restore.
+        r"""Sets the public_ip of this Restore.
 
         :param public_ip: The public_ip of this Restore.
         :type public_ip: :class:`huaweicloudsdkdws.v2.PublicIp`
@@ -248,7 +248,7 @@ class Restore:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this Restore.
+        r"""Gets the enterprise_project_id of this Restore.
 
         企业项目ID，对集群指定企业项目，如果未指定，则使用默认企业项目“default”的ID，即0。
 
@@ -259,7 +259,7 @@ class Restore:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this Restore.
+        r"""Sets the enterprise_project_id of this Restore.
 
         企业项目ID，对集群指定企业项目，如果未指定，则使用默认企业项目“default”的ID，即0。
 
@@ -270,7 +270,7 @@ class Restore:
 
     @property
     def ipv6_enable(self):
-        """Gets the ipv6_enable of this Restore.
+        r"""Gets the ipv6_enable of this Restore.
 
         指定网络协议类型，表明是否支持IPv6,默认不使用IPv6。
 
@@ -281,7 +281,7 @@ class Restore:
 
     @ipv6_enable.setter
     def ipv6_enable(self, ipv6_enable):
-        """Sets the ipv6_enable of this Restore.
+        r"""Sets the ipv6_enable of this Restore.
 
         指定网络协议类型，表明是否支持IPv6,默认不使用IPv6。
 

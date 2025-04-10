@@ -28,7 +28,7 @@ class CopyVideoScriptsResponse(SdkResponse):
     }
 
     def __init__(self, script_id=None, x_request_id=None):
-        """CopyVideoScriptsResponse
+        r"""CopyVideoScriptsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CopyVideoScriptsResponse(SdkResponse):
 
     @property
     def script_id(self):
-        """Gets the script_id of this CopyVideoScriptsResponse.
+        r"""Gets the script_id of this CopyVideoScriptsResponse.
 
         新剧本ID
 
@@ -62,7 +62,7 @@ class CopyVideoScriptsResponse(SdkResponse):
 
     @script_id.setter
     def script_id(self, script_id):
-        """Sets the script_id of this CopyVideoScriptsResponse.
+        r"""Sets the script_id of this CopyVideoScriptsResponse.
 
         新剧本ID
 
@@ -73,7 +73,7 @@ class CopyVideoScriptsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CopyVideoScriptsResponse.
+        r"""Gets the x_request_id of this CopyVideoScriptsResponse.
 
         :return: The x_request_id of this CopyVideoScriptsResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class CopyVideoScriptsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CopyVideoScriptsResponse.
+        r"""Sets the x_request_id of this CopyVideoScriptsResponse.
 
         :param x_request_id: The x_request_id of this CopyVideoScriptsResponse.
         :type x_request_id: str

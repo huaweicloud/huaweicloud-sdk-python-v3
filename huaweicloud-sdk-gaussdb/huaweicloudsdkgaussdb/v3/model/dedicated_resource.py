@@ -37,7 +37,7 @@ class DedicatedResource:
     }
 
     def __init__(self, id=None, resource_name=None, engine_name=None, architecture=None, status=None, capacity=None, availability_zone=None):
-        """DedicatedResource
+        r"""DedicatedResource
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class DedicatedResource:
 
     @property
     def id(self):
-        """Gets the id of this DedicatedResource.
+        r"""Gets the id of this DedicatedResource.
 
         专属资源池ID。
 
@@ -96,7 +96,7 @@ class DedicatedResource:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DedicatedResource.
+        r"""Sets the id of this DedicatedResource.
 
         专属资源池ID。
 
@@ -107,7 +107,7 @@ class DedicatedResource:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this DedicatedResource.
+        r"""Gets the resource_name of this DedicatedResource.
 
         专属资源池名称
 
@@ -118,7 +118,7 @@ class DedicatedResource:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this DedicatedResource.
+        r"""Sets the resource_name of this DedicatedResource.
 
         专属资源池名称
 
@@ -129,7 +129,7 @@ class DedicatedResource:
 
     @property
     def engine_name(self):
-        """Gets the engine_name of this DedicatedResource.
+        r"""Gets the engine_name of this DedicatedResource.
 
         数据库引擎名称
 
@@ -140,7 +140,7 @@ class DedicatedResource:
 
     @engine_name.setter
     def engine_name(self, engine_name):
-        """Sets the engine_name of this DedicatedResource.
+        r"""Sets the engine_name of this DedicatedResource.
 
         数据库引擎名称
 
@@ -151,7 +151,7 @@ class DedicatedResource:
 
     @property
     def architecture(self):
-        """Gets the architecture of this DedicatedResource.
+        r"""Gets the architecture of this DedicatedResource.
 
         CPU架构
 
@@ -162,7 +162,7 @@ class DedicatedResource:
 
     @architecture.setter
     def architecture(self, architecture):
-        """Sets the architecture of this DedicatedResource.
+        r"""Sets the architecture of this DedicatedResource.
 
         CPU架构
 
@@ -173,7 +173,7 @@ class DedicatedResource:
 
     @property
     def status(self):
-        """Gets the status of this DedicatedResource.
+        r"""Gets the status of this DedicatedResource.
 
         专属资源池状态
 
@@ -184,7 +184,7 @@ class DedicatedResource:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DedicatedResource.
+        r"""Sets the status of this DedicatedResource.
 
         专属资源池状态
 
@@ -195,7 +195,7 @@ class DedicatedResource:
 
     @property
     def capacity(self):
-        """Gets the capacity of this DedicatedResource.
+        r"""Gets the capacity of this DedicatedResource.
 
         :return: The capacity of this DedicatedResource.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.DedicatedResourceCapacity`
@@ -204,7 +204,7 @@ class DedicatedResource:
 
     @capacity.setter
     def capacity(self, capacity):
-        """Sets the capacity of this DedicatedResource.
+        r"""Sets the capacity of this DedicatedResource.
 
         :param capacity: The capacity of this DedicatedResource.
         :type capacity: :class:`huaweicloudsdkgaussdb.v3.DedicatedResourceCapacity`
@@ -213,7 +213,7 @@ class DedicatedResource:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this DedicatedResource.
+        r"""Gets the availability_zone of this DedicatedResource.
 
         专属资源池可用区信息。
 
@@ -224,7 +224,7 @@ class DedicatedResource:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this DedicatedResource.
+        r"""Sets the availability_zone of this DedicatedResource.
 
         专属资源池可用区信息。
 

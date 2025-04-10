@@ -23,7 +23,7 @@ class LoginUserName:
     }
 
     def __init__(self):
-        """LoginUserName
+        r"""LoginUserName
 
         The model defined in huaweicloud sdk
 

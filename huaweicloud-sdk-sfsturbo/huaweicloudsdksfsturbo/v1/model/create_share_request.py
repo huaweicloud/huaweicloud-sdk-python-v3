@@ -25,7 +25,7 @@ class CreateShareRequest:
     }
 
     def __init__(self, body=None):
-        """CreateShareRequest
+        r"""CreateShareRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateShareRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateShareRequest.
+        r"""Gets the body of this CreateShareRequest.
 
         :return: The body of this CreateShareRequest.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.CreateShareRequestBody`
@@ -52,7 +52,7 @@ class CreateShareRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateShareRequest.
+        r"""Sets the body of this CreateShareRequest.
 
         :param body: The body of this CreateShareRequest.
         :type body: :class:`huaweicloudsdksfsturbo.v1.CreateShareRequestBody`

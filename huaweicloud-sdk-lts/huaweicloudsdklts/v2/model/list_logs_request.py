@@ -29,7 +29,7 @@ class ListLogsRequest:
     }
 
     def __init__(self, log_group_id=None, log_stream_id=None, body=None):
-        """ListLogsRequest
+        r"""ListLogsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ListLogsRequest:
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this ListLogsRequest.
+        r"""Gets the log_group_id of this ListLogsRequest.
 
         日志组id。
 
@@ -66,7 +66,7 @@ class ListLogsRequest:
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this ListLogsRequest.
+        r"""Sets the log_group_id of this ListLogsRequest.
 
         日志组id。
 
@@ -77,7 +77,7 @@ class ListLogsRequest:
 
     @property
     def log_stream_id(self):
-        """Gets the log_stream_id of this ListLogsRequest.
+        r"""Gets the log_stream_id of this ListLogsRequest.
 
         日志流id。
 
@@ -88,7 +88,7 @@ class ListLogsRequest:
 
     @log_stream_id.setter
     def log_stream_id(self, log_stream_id):
-        """Sets the log_stream_id of this ListLogsRequest.
+        r"""Sets the log_stream_id of this ListLogsRequest.
 
         日志流id。
 
@@ -99,7 +99,7 @@ class ListLogsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListLogsRequest.
+        r"""Gets the body of this ListLogsRequest.
 
         :return: The body of this ListLogsRequest.
         :rtype: :class:`huaweicloudsdklts.v2.QueryLtsLogParams`
@@ -108,7 +108,7 @@ class ListLogsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListLogsRequest.
+        r"""Sets the body of this ListLogsRequest.
 
         :param body: The body of this ListLogsRequest.
         :type body: :class:`huaweicloudsdklts.v2.QueryLtsLogParams`

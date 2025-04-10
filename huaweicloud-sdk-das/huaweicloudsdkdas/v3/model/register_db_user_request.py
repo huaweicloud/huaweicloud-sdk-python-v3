@@ -29,7 +29,7 @@ class RegisterDbUserRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, body=None):
-        """RegisterDbUserRequest
+        r"""RegisterDbUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class RegisterDbUserRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this RegisterDbUserRequest.
+        r"""Gets the instance_id of this RegisterDbUserRequest.
 
         实例ID
 
@@ -67,7 +67,7 @@ class RegisterDbUserRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this RegisterDbUserRequest.
+        r"""Sets the instance_id of this RegisterDbUserRequest.
 
         实例ID
 
@@ -78,7 +78,7 @@ class RegisterDbUserRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this RegisterDbUserRequest.
+        r"""Gets the x_language of this RegisterDbUserRequest.
 
         语言
 
@@ -89,7 +89,7 @@ class RegisterDbUserRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this RegisterDbUserRequest.
+        r"""Sets the x_language of this RegisterDbUserRequest.
 
         语言
 
@@ -100,7 +100,7 @@ class RegisterDbUserRequest:
 
     @property
     def body(self):
-        """Gets the body of this RegisterDbUserRequest.
+        r"""Gets the body of this RegisterDbUserRequest.
 
         :return: The body of this RegisterDbUserRequest.
         :rtype: :class:`huaweicloudsdkdas.v3.RegisterDbUserRequestBody`
@@ -109,7 +109,7 @@ class RegisterDbUserRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RegisterDbUserRequest.
+        r"""Sets the body of this RegisterDbUserRequest.
 
         :param body: The body of this RegisterDbUserRequest.
         :type body: :class:`huaweicloudsdkdas.v3.RegisterDbUserRequestBody`

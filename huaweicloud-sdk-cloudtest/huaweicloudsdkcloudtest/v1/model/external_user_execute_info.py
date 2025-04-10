@@ -27,7 +27,7 @@ class ExternalUserExecuteInfo:
     }
 
     def __init__(self, executor=None, execute_count=None):
-        """ExternalUserExecuteInfo
+        r"""ExternalUserExecuteInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ExternalUserExecuteInfo:
 
     @property
     def executor(self):
-        """Gets the executor of this ExternalUserExecuteInfo.
+        r"""Gets the executor of this ExternalUserExecuteInfo.
 
         :return: The executor of this ExternalUserExecuteInfo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.NameAndIdVo`
@@ -59,7 +59,7 @@ class ExternalUserExecuteInfo:
 
     @executor.setter
     def executor(self, executor):
-        """Sets the executor of this ExternalUserExecuteInfo.
+        r"""Sets the executor of this ExternalUserExecuteInfo.
 
         :param executor: The executor of this ExternalUserExecuteInfo.
         :type executor: :class:`huaweicloudsdkcloudtest.v1.NameAndIdVo`
@@ -68,7 +68,7 @@ class ExternalUserExecuteInfo:
 
     @property
     def execute_count(self):
-        """Gets the execute_count of this ExternalUserExecuteInfo.
+        r"""Gets the execute_count of this ExternalUserExecuteInfo.
 
         执行用例数
 
@@ -79,7 +79,7 @@ class ExternalUserExecuteInfo:
 
     @execute_count.setter
     def execute_count(self, execute_count):
-        """Sets the execute_count of this ExternalUserExecuteInfo.
+        r"""Sets the execute_count of this ExternalUserExecuteInfo.
 
         执行用例数
 

@@ -39,7 +39,7 @@ class EnabledControl:
     }
 
     def __init__(self, manage_account_id=None, control_identifier=None, name=None, description=None, control_objective=None, behavior=None, owner=None, regional_preference=None):
-        """EnabledControl
+        r"""EnabledControl
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class EnabledControl:
 
     @property
     def manage_account_id(self):
-        """Gets the manage_account_id of this EnabledControl.
+        r"""Gets the manage_account_id of this EnabledControl.
 
         管理纳管账号ID。
 
@@ -103,7 +103,7 @@ class EnabledControl:
 
     @manage_account_id.setter
     def manage_account_id(self, manage_account_id):
-        """Sets the manage_account_id of this EnabledControl.
+        r"""Sets the manage_account_id of this EnabledControl.
 
         管理纳管账号ID。
 
@@ -114,7 +114,7 @@ class EnabledControl:
 
     @property
     def control_identifier(self):
-        """Gets the control_identifier of this EnabledControl.
+        r"""Gets the control_identifier of this EnabledControl.
 
         控制策略标识。
 
@@ -125,7 +125,7 @@ class EnabledControl:
 
     @control_identifier.setter
     def control_identifier(self, control_identifier):
-        """Sets the control_identifier of this EnabledControl.
+        r"""Sets the control_identifier of this EnabledControl.
 
         控制策略标识。
 
@@ -136,7 +136,7 @@ class EnabledControl:
 
     @property
     def name(self):
-        """Gets the name of this EnabledControl.
+        r"""Gets the name of this EnabledControl.
 
         控制策略名称。
 
@@ -147,7 +147,7 @@ class EnabledControl:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EnabledControl.
+        r"""Sets the name of this EnabledControl.
 
         控制策略名称。
 
@@ -158,7 +158,7 @@ class EnabledControl:
 
     @property
     def description(self):
-        """Gets the description of this EnabledControl.
+        r"""Gets the description of this EnabledControl.
 
         控制策略描述。
 
@@ -169,7 +169,7 @@ class EnabledControl:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EnabledControl.
+        r"""Sets the description of this EnabledControl.
 
         控制策略描述。
 
@@ -180,7 +180,7 @@ class EnabledControl:
 
     @property
     def control_objective(self):
-        """Gets the control_objective of this EnabledControl.
+        r"""Gets the control_objective of this EnabledControl.
 
         控制策略目标。
 
@@ -191,7 +191,7 @@ class EnabledControl:
 
     @control_objective.setter
     def control_objective(self, control_objective):
-        """Sets the control_objective of this EnabledControl.
+        r"""Sets the control_objective of this EnabledControl.
 
         控制策略目标。
 
@@ -202,7 +202,7 @@ class EnabledControl:
 
     @property
     def behavior(self):
-        """Gets the behavior of this EnabledControl.
+        r"""Gets the behavior of this EnabledControl.
 
         控制策略类型。包括主动性控制策略Proactive、检测性控制策略Detective、预防性控制策略Preventive。
 
@@ -213,7 +213,7 @@ class EnabledControl:
 
     @behavior.setter
     def behavior(self, behavior):
-        """Sets the behavior of this EnabledControl.
+        r"""Sets the behavior of this EnabledControl.
 
         控制策略类型。包括主动性控制策略Proactive、检测性控制策略Detective、预防性控制策略Preventive。
 
@@ -224,7 +224,7 @@ class EnabledControl:
 
     @property
     def owner(self):
-        """Gets the owner of this EnabledControl.
+        r"""Gets the owner of this EnabledControl.
 
         纳管账号的创建来源，包括CUSTOM和RGC。
 
@@ -235,7 +235,7 @@ class EnabledControl:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this EnabledControl.
+        r"""Sets the owner of this EnabledControl.
 
         纳管账号的创建来源，包括CUSTOM和RGC。
 
@@ -246,7 +246,7 @@ class EnabledControl:
 
     @property
     def regional_preference(self):
-        """Gets the regional_preference of this EnabledControl.
+        r"""Gets the regional_preference of this EnabledControl.
 
         区域选项，取值有两种分别是：区域的regional和全局的global。
 
@@ -257,7 +257,7 @@ class EnabledControl:
 
     @regional_preference.setter
     def regional_preference(self, regional_preference):
-        """Sets the regional_preference of this EnabledControl.
+        r"""Sets the regional_preference of this EnabledControl.
 
         区域选项，取值有两种分别是：区域的regional和全局的global。
 

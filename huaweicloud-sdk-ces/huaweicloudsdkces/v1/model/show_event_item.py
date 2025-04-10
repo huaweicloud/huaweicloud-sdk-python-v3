@@ -31,7 +31,7 @@ class ShowEventItem:
     }
 
     def __init__(self, event_name=None, event_source=None, time=None, detail=None):
-        """ShowEventItem
+        r"""ShowEventItem
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ShowEventItem:
 
     @property
     def event_name(self):
-        """Gets the event_name of this ShowEventItem.
+        r"""Gets the event_name of this ShowEventItem.
 
         事件名称。  必须以字母开头，只能包含0-9/a-z/A-Z/_，长度最短为1，最大为64。
 
@@ -71,7 +71,7 @@ class ShowEventItem:
 
     @event_name.setter
     def event_name(self, event_name):
-        """Sets the event_name of this ShowEventItem.
+        r"""Sets the event_name of this ShowEventItem.
 
         事件名称。  必须以字母开头，只能包含0-9/a-z/A-Z/_，长度最短为1，最大为64。
 
@@ -82,7 +82,7 @@ class ShowEventItem:
 
     @property
     def event_source(self):
-        """Gets the event_source of this ShowEventItem.
+        r"""Gets the event_source of this ShowEventItem.
 
         事件来源。 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_，总长度最短为3，最大为32。
 
@@ -93,7 +93,7 @@ class ShowEventItem:
 
     @event_source.setter
     def event_source(self, event_source):
-        """Sets the event_source of this ShowEventItem.
+        r"""Sets the event_source of this ShowEventItem.
 
         事件来源。 格式为service.item；service和item必须是字符串，必须以字母开头，只能包含0-9/a-z/A-Z/_，总长度最短为3，最大为32。
 
@@ -104,7 +104,7 @@ class ShowEventItem:
 
     @property
     def time(self):
-        """Gets the time of this ShowEventItem.
+        r"""Gets the time of this ShowEventItem.
 
         事件发生时间。UNIX时间戳，单位毫秒。  说明： 因为客户端到服务器端有延时，因此插入数据的时间戳应该在[当前时间-1小时+20秒，当前时间+10分钟-20秒]区间内，保证到达服务器时不会因为传输时延造成数据不能插入数据库。
 
@@ -115,7 +115,7 @@ class ShowEventItem:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this ShowEventItem.
+        r"""Sets the time of this ShowEventItem.
 
         事件发生时间。UNIX时间戳，单位毫秒。  说明： 因为客户端到服务器端有延时，因此插入数据的时间戳应该在[当前时间-1小时+20秒，当前时间+10分钟-20秒]区间内，保证到达服务器时不会因为传输时延造成数据不能插入数据库。
 
@@ -126,7 +126,7 @@ class ShowEventItem:
 
     @property
     def detail(self):
-        """Gets the detail of this ShowEventItem.
+        r"""Gets the detail of this ShowEventItem.
 
         :return: The detail of this ShowEventItem.
         :rtype: :class:`huaweicloudsdkces.v1.ShowEventItemDetail`
@@ -135,7 +135,7 @@ class ShowEventItem:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this ShowEventItem.
+        r"""Sets the detail of this ShowEventItem.
 
         :param detail: The detail of this ShowEventItem.
         :type detail: :class:`huaweicloudsdkces.v1.ShowEventItemDetail`

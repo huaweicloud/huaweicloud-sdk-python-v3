@@ -25,7 +25,7 @@ class CreateHttpPolicyRequest:
     }
 
     def __init__(self, body=None):
-        """CreateHttpPolicyRequest
+        r"""CreateHttpPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateHttpPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateHttpPolicyRequest.
+        r"""Gets the body of this CreateHttpPolicyRequest.
 
         :return: The body of this CreateHttpPolicyRequest.
         :rtype: :class:`huaweicloudsdkedgesec.v2.CreateHttpPolicyRequestBody`
@@ -52,7 +52,7 @@ class CreateHttpPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateHttpPolicyRequest.
+        r"""Sets the body of this CreateHttpPolicyRequest.
 
         :param body: The body of this CreateHttpPolicyRequest.
         :type body: :class:`huaweicloudsdkedgesec.v2.CreateHttpPolicyRequestBody`

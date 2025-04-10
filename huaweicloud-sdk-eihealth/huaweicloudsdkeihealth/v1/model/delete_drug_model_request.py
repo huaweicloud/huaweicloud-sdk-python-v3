@@ -25,7 +25,7 @@ class DeleteDrugModelRequest:
     }
 
     def __init__(self, model_id=None):
-        """DeleteDrugModelRequest
+        r"""DeleteDrugModelRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteDrugModelRequest:
 
     @property
     def model_id(self):
-        """Gets the model_id of this DeleteDrugModelRequest.
+        r"""Gets the model_id of this DeleteDrugModelRequest.
 
         模型id
 
@@ -53,7 +53,7 @@ class DeleteDrugModelRequest:
 
     @model_id.setter
     def model_id(self, model_id):
-        """Sets the model_id of this DeleteDrugModelRequest.
+        r"""Sets the model_id of this DeleteDrugModelRequest.
 
         模型id
 

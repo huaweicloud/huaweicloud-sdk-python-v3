@@ -29,7 +29,7 @@ class UpdateLogtankRequest:
     }
 
     def __init__(self, topic_urn=None, logtank_id=None, body=None):
-        """UpdateLogtankRequest
+        r"""UpdateLogtankRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateLogtankRequest:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this UpdateLogtankRequest.
+        r"""Gets the topic_urn of this UpdateLogtankRequest.
 
         Topic的唯一的资源标识，可通过[查询主题列表](smn_api_51004.xml)获取该标识。
 
@@ -66,7 +66,7 @@ class UpdateLogtankRequest:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this UpdateLogtankRequest.
+        r"""Sets the topic_urn of this UpdateLogtankRequest.
 
         Topic的唯一的资源标识，可通过[查询主题列表](smn_api_51004.xml)获取该标识。
 
@@ -77,7 +77,7 @@ class UpdateLogtankRequest:
 
     @property
     def logtank_id(self):
-        """Gets the logtank_id of this UpdateLogtankRequest.
+        r"""Gets the logtank_id of this UpdateLogtankRequest.
 
         云日志信息唯一的资源标识。可通过[查询云日志](ListLogtank.xml)获取该标识。
 
@@ -88,7 +88,7 @@ class UpdateLogtankRequest:
 
     @logtank_id.setter
     def logtank_id(self, logtank_id):
-        """Sets the logtank_id of this UpdateLogtankRequest.
+        r"""Sets the logtank_id of this UpdateLogtankRequest.
 
         云日志信息唯一的资源标识。可通过[查询云日志](ListLogtank.xml)获取该标识。
 
@@ -99,7 +99,7 @@ class UpdateLogtankRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateLogtankRequest.
+        r"""Gets the body of this UpdateLogtankRequest.
 
         :return: The body of this UpdateLogtankRequest.
         :rtype: :class:`huaweicloudsdksmn.v2.UpdateLogtankRequestBody`
@@ -108,7 +108,7 @@ class UpdateLogtankRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateLogtankRequest.
+        r"""Sets the body of this UpdateLogtankRequest.
 
         :param body: The body of this UpdateLogtankRequest.
         :type body: :class:`huaweicloudsdksmn.v2.UpdateLogtankRequestBody`

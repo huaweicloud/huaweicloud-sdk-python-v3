@@ -27,7 +27,7 @@ class ResizeServerRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """ResizeServerRequest
+        r"""ResizeServerRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ResizeServerRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ResizeServerRequest.
+        r"""Gets the server_id of this ResizeServerRequest.
 
         云服务器ID。
 
@@ -60,7 +60,7 @@ class ResizeServerRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ResizeServerRequest.
+        r"""Sets the server_id of this ResizeServerRequest.
 
         云服务器ID。
 
@@ -71,7 +71,7 @@ class ResizeServerRequest:
 
     @property
     def body(self):
-        """Gets the body of this ResizeServerRequest.
+        r"""Gets the body of this ResizeServerRequest.
 
         :return: The body of this ResizeServerRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.ResizeServerRequestBody`
@@ -80,7 +80,7 @@ class ResizeServerRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ResizeServerRequest.
+        r"""Sets the body of this ResizeServerRequest.
 
         :param body: The body of this ResizeServerRequest.
         :type body: :class:`huaweicloudsdkecs.v2.ResizeServerRequestBody`

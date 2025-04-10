@@ -31,7 +31,7 @@ class CreateSecretVersionRequestBody:
     }
 
     def __init__(self, secret_binary=None, secret_string=None, version_stages=None, expire_time=None):
-        """CreateSecretVersionRequestBody
+        r"""CreateSecretVersionRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class CreateSecretVersionRequestBody:
 
     @property
     def secret_binary(self):
-        """Gets the secret_binary of this CreateSecretVersionRequestBody.
+        r"""Gets the secret_binary of this CreateSecretVersionRequestBody.
 
         新创建凭据的凭据值，将其加密后，存入初始版本中。  类型：base64编码的二进制数据对象。  约束：secret_binary和secret_string必须且只能设置一个，最大32K。 
 
@@ -75,7 +75,7 @@ class CreateSecretVersionRequestBody:
 
     @secret_binary.setter
     def secret_binary(self, secret_binary):
-        """Sets the secret_binary of this CreateSecretVersionRequestBody.
+        r"""Sets the secret_binary of this CreateSecretVersionRequestBody.
 
         新创建凭据的凭据值，将其加密后，存入初始版本中。  类型：base64编码的二进制数据对象。  约束：secret_binary和secret_string必须且只能设置一个，最大32K。 
 
@@ -86,7 +86,7 @@ class CreateSecretVersionRequestBody:
 
     @property
     def secret_string(self):
-        """Gets the secret_string of this CreateSecretVersionRequestBody.
+        r"""Gets the secret_string of this CreateSecretVersionRequestBody.
 
         新创建凭据的凭据值，将其加密后，存入初始版本中。  约束：secret_binary和 secret_string必须且只能设置一个，最大32K。 
 
@@ -97,7 +97,7 @@ class CreateSecretVersionRequestBody:
 
     @secret_string.setter
     def secret_string(self, secret_string):
-        """Sets the secret_string of this CreateSecretVersionRequestBody.
+        r"""Sets the secret_string of this CreateSecretVersionRequestBody.
 
         新创建凭据的凭据值，将其加密后，存入初始版本中。  约束：secret_binary和 secret_string必须且只能设置一个，最大32K。 
 
@@ -108,7 +108,7 @@ class CreateSecretVersionRequestBody:
 
     @property
     def version_stages(self):
-        """Gets the version_stages of this CreateSecretVersionRequestBody.
+        r"""Gets the version_stages of this CreateSecretVersionRequestBody.
 
         凭据版本在存入时需要被同时标记的版本状态。如果您不指定此参数，凭据管家默认为新版本标记SYSCURRENT  约束：数组大小：最小1，最大12。stage长度：最小1字节，最大64字节。 
 
@@ -119,7 +119,7 @@ class CreateSecretVersionRequestBody:
 
     @version_stages.setter
     def version_stages(self, version_stages):
-        """Sets the version_stages of this CreateSecretVersionRequestBody.
+        r"""Sets the version_stages of this CreateSecretVersionRequestBody.
 
         凭据版本在存入时需要被同时标记的版本状态。如果您不指定此参数，凭据管家默认为新版本标记SYSCURRENT  约束：数组大小：最小1，最大12。stage长度：最小1字节，最大64字节。 
 
@@ -130,7 +130,7 @@ class CreateSecretVersionRequestBody:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this CreateSecretVersionRequestBody.
+        r"""Gets the expire_time of this CreateSecretVersionRequestBody.
 
         凭据版本过期时间，时间戳，即从1970年1月1日至该时间的总秒数。默认为空，凭据订阅“版本过期”事件类型时，有效期判断所依据的值。 
 
@@ -141,7 +141,7 @@ class CreateSecretVersionRequestBody:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this CreateSecretVersionRequestBody.
+        r"""Sets the expire_time of this CreateSecretVersionRequestBody.
 
         凭据版本过期时间，时间戳，即从1970年1月1日至该时间的总秒数。默认为空，凭据订阅“版本过期”事件类型时，有效期判断所依据的值。 
 

@@ -31,7 +31,7 @@ class DomainNameInfo:
     }
 
     def __init__(self, support_public_resolve=None, is_latest_rules=None, zone_name=None, history_domain_names=None):
-        """DomainNameInfo
+        r"""DomainNameInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class DomainNameInfo:
 
     @property
     def support_public_resolve(self):
-        """Gets the support_public_resolve of this DomainNameInfo.
+        r"""Gets the support_public_resolve of this DomainNameInfo.
 
         是否开启公网域名解析。 - true：开启 - false：未开启 
 
@@ -75,7 +75,7 @@ class DomainNameInfo:
 
     @support_public_resolve.setter
     def support_public_resolve(self, support_public_resolve):
-        """Sets the support_public_resolve of this DomainNameInfo.
+        r"""Sets the support_public_resolve of this DomainNameInfo.
 
         是否开启公网域名解析。 - true：开启 - false：未开启 
 
@@ -86,7 +86,7 @@ class DomainNameInfo:
 
     @property
     def is_latest_rules(self):
-        """Gets the is_latest_rules of this DomainNameInfo.
+        r"""Gets the is_latest_rules of this DomainNameInfo.
 
         当前域名是否已为最新。 - true：是 - false：否 
 
@@ -97,7 +97,7 @@ class DomainNameInfo:
 
     @is_latest_rules.setter
     def is_latest_rules(self, is_latest_rules):
-        """Sets the is_latest_rules of this DomainNameInfo.
+        r"""Sets the is_latest_rules of this DomainNameInfo.
 
         当前域名是否已为最新。 - true：是 - false：否 
 
@@ -108,7 +108,7 @@ class DomainNameInfo:
 
     @property
     def zone_name(self):
-        """Gets the zone_name of this DomainNameInfo.
+        r"""Gets the zone_name of this DomainNameInfo.
 
         域名的区域后缀。
 
@@ -119,7 +119,7 @@ class DomainNameInfo:
 
     @zone_name.setter
     def zone_name(self, zone_name):
-        """Sets the zone_name of this DomainNameInfo.
+        r"""Sets the zone_name of this DomainNameInfo.
 
         域名的区域后缀。
 
@@ -130,7 +130,7 @@ class DomainNameInfo:
 
     @property
     def history_domain_names(self):
-        """Gets the history_domain_names of this DomainNameInfo.
+        r"""Gets the history_domain_names of this DomainNameInfo.
 
         历史域名信息。
 
@@ -141,7 +141,7 @@ class DomainNameInfo:
 
     @history_domain_names.setter
     def history_domain_names(self, history_domain_names):
-        """Sets the history_domain_names of this DomainNameInfo.
+        r"""Sets the history_domain_names of this DomainNameInfo.
 
         历史域名信息。
 

@@ -31,7 +31,7 @@ class TransTemplate:
     }
 
     def __init__(self, template_name=None, video=None, audio=None, common=None):
-        """TransTemplate
+        r"""TransTemplate
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class TransTemplate:
 
     @property
     def template_name(self):
-        """Gets the template_name of this TransTemplate.
+        r"""Gets the template_name of this TransTemplate.
 
         转码模板名称。 
 
@@ -73,7 +73,7 @@ class TransTemplate:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this TransTemplate.
+        r"""Sets the template_name of this TransTemplate.
 
         转码模板名称。 
 
@@ -84,7 +84,7 @@ class TransTemplate:
 
     @property
     def video(self):
-        """Gets the video of this TransTemplate.
+        r"""Gets the video of this TransTemplate.
 
         :return: The video of this TransTemplate.
         :rtype: :class:`huaweicloudsdkmpc.v1.Video`
@@ -93,7 +93,7 @@ class TransTemplate:
 
     @video.setter
     def video(self, video):
-        """Sets the video of this TransTemplate.
+        r"""Sets the video of this TransTemplate.
 
         :param video: The video of this TransTemplate.
         :type video: :class:`huaweicloudsdkmpc.v1.Video`
@@ -102,7 +102,7 @@ class TransTemplate:
 
     @property
     def audio(self):
-        """Gets the audio of this TransTemplate.
+        r"""Gets the audio of this TransTemplate.
 
         :return: The audio of this TransTemplate.
         :rtype: :class:`huaweicloudsdkmpc.v1.Audio`
@@ -111,7 +111,7 @@ class TransTemplate:
 
     @audio.setter
     def audio(self, audio):
-        """Sets the audio of this TransTemplate.
+        r"""Sets the audio of this TransTemplate.
 
         :param audio: The audio of this TransTemplate.
         :type audio: :class:`huaweicloudsdkmpc.v1.Audio`
@@ -120,7 +120,7 @@ class TransTemplate:
 
     @property
     def common(self):
-        """Gets the common of this TransTemplate.
+        r"""Gets the common of this TransTemplate.
 
         :return: The common of this TransTemplate.
         :rtype: :class:`huaweicloudsdkmpc.v1.Common`
@@ -129,7 +129,7 @@ class TransTemplate:
 
     @common.setter
     def common(self, common):
-        """Sets the common of this TransTemplate.
+        r"""Sets the common of this TransTemplate.
 
         :param common: The common of this TransTemplate.
         :type common: :class:`huaweicloudsdkmpc.v1.Common`

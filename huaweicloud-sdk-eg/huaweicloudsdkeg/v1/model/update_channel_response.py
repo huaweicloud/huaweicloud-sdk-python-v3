@@ -40,7 +40,7 @@ class UpdateChannelResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, provider_type=None, created_time=None, updated_time=None, enterprise_project_id=None, x_request_id=None):
-        """UpdateChannelResponse
+        r"""UpdateChannelResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class UpdateChannelResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateChannelResponse.
+        r"""Gets the id of this UpdateChannelResponse.
 
         通道ID
 
@@ -104,7 +104,7 @@ class UpdateChannelResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateChannelResponse.
+        r"""Sets the id of this UpdateChannelResponse.
 
         通道ID
 
@@ -115,7 +115,7 @@ class UpdateChannelResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateChannelResponse.
+        r"""Gets the name of this UpdateChannelResponse.
 
         通道名称
 
@@ -126,7 +126,7 @@ class UpdateChannelResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateChannelResponse.
+        r"""Sets the name of this UpdateChannelResponse.
 
         通道名称
 
@@ -137,7 +137,7 @@ class UpdateChannelResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdateChannelResponse.
+        r"""Gets the description of this UpdateChannelResponse.
 
         通道描述
 
@@ -148,7 +148,7 @@ class UpdateChannelResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateChannelResponse.
+        r"""Sets the description of this UpdateChannelResponse.
 
         通道描述
 
@@ -159,7 +159,7 @@ class UpdateChannelResponse(SdkResponse):
 
     @property
     def provider_type(self):
-        """Gets the provider_type of this UpdateChannelResponse.
+        r"""Gets the provider_type of this UpdateChannelResponse.
 
         通道提供方类型，OFFICIAL：官方事件通道；CUSTOM：自定义事件通道；PARTNER：伙伴事件通道
 
@@ -170,7 +170,7 @@ class UpdateChannelResponse(SdkResponse):
 
     @provider_type.setter
     def provider_type(self, provider_type):
-        """Sets the provider_type of this UpdateChannelResponse.
+        r"""Sets the provider_type of this UpdateChannelResponse.
 
         通道提供方类型，OFFICIAL：官方事件通道；CUSTOM：自定义事件通道；PARTNER：伙伴事件通道
 
@@ -181,7 +181,7 @@ class UpdateChannelResponse(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this UpdateChannelResponse.
+        r"""Gets the created_time of this UpdateChannelResponse.
 
         创建UTC时间
 
@@ -192,7 +192,7 @@ class UpdateChannelResponse(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this UpdateChannelResponse.
+        r"""Sets the created_time of this UpdateChannelResponse.
 
         创建UTC时间
 
@@ -203,7 +203,7 @@ class UpdateChannelResponse(SdkResponse):
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this UpdateChannelResponse.
+        r"""Gets the updated_time of this UpdateChannelResponse.
 
         更新UTC时间
 
@@ -214,7 +214,7 @@ class UpdateChannelResponse(SdkResponse):
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this UpdateChannelResponse.
+        r"""Sets the updated_time of this UpdateChannelResponse.
 
         更新UTC时间
 
@@ -225,7 +225,7 @@ class UpdateChannelResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this UpdateChannelResponse.
+        r"""Gets the enterprise_project_id of this UpdateChannelResponse.
 
         企业项目id
 
@@ -236,7 +236,7 @@ class UpdateChannelResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this UpdateChannelResponse.
+        r"""Sets the enterprise_project_id of this UpdateChannelResponse.
 
         企业项目id
 
@@ -247,7 +247,7 @@ class UpdateChannelResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdateChannelResponse.
+        r"""Gets the x_request_id of this UpdateChannelResponse.
 
         :return: The x_request_id of this UpdateChannelResponse.
         :rtype: str
@@ -256,7 +256,7 @@ class UpdateChannelResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdateChannelResponse.
+        r"""Sets the x_request_id of this UpdateChannelResponse.
 
         :param x_request_id: The x_request_id of this UpdateChannelResponse.
         :type x_request_id: str

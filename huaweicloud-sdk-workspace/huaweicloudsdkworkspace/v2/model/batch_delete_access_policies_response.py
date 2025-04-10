@@ -24,7 +24,7 @@ class BatchDeleteAccessPoliciesResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchDeleteAccessPoliciesResponse
+        r"""BatchDeleteAccessPoliciesResponse
 
         The model defined in huaweicloud sdk
 

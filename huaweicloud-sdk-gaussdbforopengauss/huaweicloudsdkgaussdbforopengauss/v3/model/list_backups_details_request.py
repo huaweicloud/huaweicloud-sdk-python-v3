@@ -39,7 +39,7 @@ class ListBackupsDetailsRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, backup_id=None, backup_type=None, offset=None, limit=None, begin_time=None, end_time=None):
-        """ListBackupsDetailsRequest
+        r"""ListBackupsDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ListBackupsDetailsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListBackupsDetailsRequest.
+        r"""Gets the x_language of this ListBackupsDetailsRequest.
 
         语言
 
@@ -103,7 +103,7 @@ class ListBackupsDetailsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListBackupsDetailsRequest.
+        r"""Sets the x_language of this ListBackupsDetailsRequest.
 
         语言
 
@@ -114,7 +114,7 @@ class ListBackupsDetailsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListBackupsDetailsRequest.
+        r"""Gets the instance_id of this ListBackupsDetailsRequest.
 
         实例ID。
 
@@ -125,7 +125,7 @@ class ListBackupsDetailsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListBackupsDetailsRequest.
+        r"""Sets the instance_id of this ListBackupsDetailsRequest.
 
         实例ID。
 
@@ -136,7 +136,7 @@ class ListBackupsDetailsRequest:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this ListBackupsDetailsRequest.
+        r"""Gets the backup_id of this ListBackupsDetailsRequest.
 
         备份ID。
 
@@ -147,7 +147,7 @@ class ListBackupsDetailsRequest:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this ListBackupsDetailsRequest.
+        r"""Sets the backup_id of this ListBackupsDetailsRequest.
 
         备份ID。
 
@@ -158,7 +158,7 @@ class ListBackupsDetailsRequest:
 
     @property
     def backup_type(self):
-        """Gets the backup_type of this ListBackupsDetailsRequest.
+        r"""Gets the backup_type of this ListBackupsDetailsRequest.
 
         备份类型，取值：   \"auto\"：自动全量备份   \"manual\"：手动全量备份
 
@@ -169,7 +169,7 @@ class ListBackupsDetailsRequest:
 
     @backup_type.setter
     def backup_type(self, backup_type):
-        """Sets the backup_type of this ListBackupsDetailsRequest.
+        r"""Sets the backup_type of this ListBackupsDetailsRequest.
 
         备份类型，取值：   \"auto\"：自动全量备份   \"manual\"：手动全量备份
 
@@ -180,7 +180,7 @@ class ListBackupsDetailsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListBackupsDetailsRequest.
+        r"""Gets the offset of this ListBackupsDetailsRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -191,7 +191,7 @@ class ListBackupsDetailsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListBackupsDetailsRequest.
+        r"""Sets the offset of this ListBackupsDetailsRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -202,7 +202,7 @@ class ListBackupsDetailsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListBackupsDetailsRequest.
+        r"""Gets the limit of this ListBackupsDetailsRequest.
 
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
 
@@ -213,7 +213,7 @@ class ListBackupsDetailsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListBackupsDetailsRequest.
+        r"""Sets the limit of this ListBackupsDetailsRequest.
 
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
 
@@ -224,7 +224,7 @@ class ListBackupsDetailsRequest:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ListBackupsDetailsRequest.
+        r"""Gets the begin_time of this ListBackupsDetailsRequest.
 
         查询开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。与end_time必须同时使用。
 
@@ -235,7 +235,7 @@ class ListBackupsDetailsRequest:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ListBackupsDetailsRequest.
+        r"""Sets the begin_time of this ListBackupsDetailsRequest.
 
         查询开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。与end_time必须同时使用。
 
@@ -246,7 +246,7 @@ class ListBackupsDetailsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListBackupsDetailsRequest.
+        r"""Gets the end_time of this ListBackupsDetailsRequest.
 
         查询结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”，且大于查询开始时间。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。与begin_time必须同时使用。
 
@@ -257,7 +257,7 @@ class ListBackupsDetailsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListBackupsDetailsRequest.
+        r"""Sets the end_time of this ListBackupsDetailsRequest.
 
         查询结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”，且大于查询开始时间。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。与begin_time必须同时使用。
 

@@ -29,7 +29,7 @@ class UpdateWorkspaceRequestInput:
     }
 
     def __init__(self, name=None, description=None, metastore_id=None):
-        """UpdateWorkspaceRequestInput
+        r"""UpdateWorkspaceRequestInput
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateWorkspaceRequestInput:
 
     @property
     def name(self):
-        """Gets the name of this UpdateWorkspaceRequestInput.
+        r"""Gets the name of this UpdateWorkspaceRequestInput.
 
         工作空间名称。
 
@@ -68,7 +68,7 @@ class UpdateWorkspaceRequestInput:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateWorkspaceRequestInput.
+        r"""Sets the name of this UpdateWorkspaceRequestInput.
 
         工作空间名称。
 
@@ -79,7 +79,7 @@ class UpdateWorkspaceRequestInput:
 
     @property
     def description(self):
-        """Gets the description of this UpdateWorkspaceRequestInput.
+        r"""Gets the description of this UpdateWorkspaceRequestInput.
 
         描述。用户输入的描述，最长为255个字符。
 
@@ -90,7 +90,7 @@ class UpdateWorkspaceRequestInput:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateWorkspaceRequestInput.
+        r"""Sets the description of this UpdateWorkspaceRequestInput.
 
         描述。用户输入的描述，最长为255个字符。
 
@@ -101,7 +101,7 @@ class UpdateWorkspaceRequestInput:
 
     @property
     def metastore_id(self):
-        """Gets the metastore_id of this UpdateWorkspaceRequestInput.
+        r"""Gets the metastore_id of this UpdateWorkspaceRequestInput.
 
         Metastore信息，LakeFormation服务的实例Id，即MetaStoreId。
 
@@ -112,7 +112,7 @@ class UpdateWorkspaceRequestInput:
 
     @metastore_id.setter
     def metastore_id(self, metastore_id):
-        """Sets the metastore_id of this UpdateWorkspaceRequestInput.
+        r"""Sets the metastore_id of this UpdateWorkspaceRequestInput.
 
         Metastore信息，LakeFormation服务的实例Id，即MetaStoreId。
 

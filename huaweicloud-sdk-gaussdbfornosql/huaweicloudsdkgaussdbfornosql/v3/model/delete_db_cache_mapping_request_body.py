@@ -25,7 +25,7 @@ class DeleteDbCacheMappingRequestBody:
     }
 
     def __init__(self, id=None):
-        """DeleteDbCacheMappingRequestBody
+        r"""DeleteDbCacheMappingRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteDbCacheMappingRequestBody:
 
     @property
     def id(self):
-        """Gets the id of this DeleteDbCacheMappingRequestBody.
+        r"""Gets the id of this DeleteDbCacheMappingRequestBody.
 
         内存加速映射ID。
 
@@ -53,7 +53,7 @@ class DeleteDbCacheMappingRequestBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteDbCacheMappingRequestBody.
+        r"""Sets the id of this DeleteDbCacheMappingRequestBody.
 
         内存加速映射ID。
 

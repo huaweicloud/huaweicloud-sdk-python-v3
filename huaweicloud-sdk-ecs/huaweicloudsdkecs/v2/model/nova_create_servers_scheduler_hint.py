@@ -37,7 +37,7 @@ class NovaCreateServersSchedulerHint:
     }
 
     def __init__(self, group=None, different_host=None, same_host=None, cidr=None, build_near_host_ip=None, tenancy=None, dedicated_host_id=None):
-        """NovaCreateServersSchedulerHint
+        r"""NovaCreateServersSchedulerHint
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class NovaCreateServersSchedulerHint:
 
     @property
     def group(self):
-        """Gets the group of this NovaCreateServersSchedulerHint.
+        r"""Gets the group of this NovaCreateServersSchedulerHint.
 
         反亲和性组信息。  UUID格式。
 
@@ -96,7 +96,7 @@ class NovaCreateServersSchedulerHint:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this NovaCreateServersSchedulerHint.
+        r"""Sets the group of this NovaCreateServersSchedulerHint.
 
         反亲和性组信息。  UUID格式。
 
@@ -107,7 +107,7 @@ class NovaCreateServersSchedulerHint:
 
     @property
     def different_host(self):
-        """Gets the different_host of this NovaCreateServersSchedulerHint.
+        r"""Gets the different_host of this NovaCreateServersSchedulerHint.
 
         与指定弹性云服务器满足反亲和性。   当前不支持该功能。
 
@@ -118,7 +118,7 @@ class NovaCreateServersSchedulerHint:
 
     @different_host.setter
     def different_host(self, different_host):
-        """Sets the different_host of this NovaCreateServersSchedulerHint.
+        r"""Sets the different_host of this NovaCreateServersSchedulerHint.
 
         与指定弹性云服务器满足反亲和性。   当前不支持该功能。
 
@@ -129,7 +129,7 @@ class NovaCreateServersSchedulerHint:
 
     @property
     def same_host(self):
-        """Gets the same_host of this NovaCreateServersSchedulerHint.
+        r"""Gets the same_host of this NovaCreateServersSchedulerHint.
 
         与指定的弹性云服务器满足亲和性。   当前不支持该功能。
 
@@ -140,7 +140,7 @@ class NovaCreateServersSchedulerHint:
 
     @same_host.setter
     def same_host(self, same_host):
-        """Sets the same_host of this NovaCreateServersSchedulerHint.
+        r"""Sets the same_host of this NovaCreateServersSchedulerHint.
 
         与指定的弹性云服务器满足亲和性。   当前不支持该功能。
 
@@ -151,7 +151,7 @@ class NovaCreateServersSchedulerHint:
 
     @property
     def cidr(self):
-        """Gets the cidr of this NovaCreateServersSchedulerHint.
+        r"""Gets the cidr of this NovaCreateServersSchedulerHint.
 
         将弹性云服务器scheduler到指定网段的host上，host网段的cidr。   当前不支持该功能。
 
@@ -162,7 +162,7 @@ class NovaCreateServersSchedulerHint:
 
     @cidr.setter
     def cidr(self, cidr):
-        """Sets the cidr of this NovaCreateServersSchedulerHint.
+        r"""Sets the cidr of this NovaCreateServersSchedulerHint.
 
         将弹性云服务器scheduler到指定网段的host上，host网段的cidr。   当前不支持该功能。
 
@@ -173,7 +173,7 @@ class NovaCreateServersSchedulerHint:
 
     @property
     def build_near_host_ip(self):
-        """Gets the build_near_host_ip of this NovaCreateServersSchedulerHint.
+        r"""Gets the build_near_host_ip of this NovaCreateServersSchedulerHint.
 
         将弹性云服务器scheduler到指定网段的host上，host IP地址。   当前不支持该功能。
 
@@ -184,7 +184,7 @@ class NovaCreateServersSchedulerHint:
 
     @build_near_host_ip.setter
     def build_near_host_ip(self, build_near_host_ip):
-        """Sets the build_near_host_ip of this NovaCreateServersSchedulerHint.
+        r"""Sets the build_near_host_ip of this NovaCreateServersSchedulerHint.
 
         将弹性云服务器scheduler到指定网段的host上，host IP地址。   当前不支持该功能。
 
@@ -195,7 +195,7 @@ class NovaCreateServersSchedulerHint:
 
     @property
     def tenancy(self):
-        """Gets the tenancy of this NovaCreateServersSchedulerHint.
+        r"""Gets the tenancy of this NovaCreateServersSchedulerHint.
 
         在专属主机或共享池中创建弹性云服务器。默认为在共享池创建。 值为： shared 或dedicated。 shared：表示共享池。 dedicated:表示专属主机。 创建与查询此值均有效。
 
@@ -206,7 +206,7 @@ class NovaCreateServersSchedulerHint:
 
     @tenancy.setter
     def tenancy(self, tenancy):
-        """Sets the tenancy of this NovaCreateServersSchedulerHint.
+        r"""Sets the tenancy of this NovaCreateServersSchedulerHint.
 
         在专属主机或共享池中创建弹性云服务器。默认为在共享池创建。 值为： shared 或dedicated。 shared：表示共享池。 dedicated:表示专属主机。 创建与查询此值均有效。
 
@@ -217,7 +217,7 @@ class NovaCreateServersSchedulerHint:
 
     @property
     def dedicated_host_id(self):
-        """Gets the dedicated_host_id of this NovaCreateServersSchedulerHint.
+        r"""Gets the dedicated_host_id of this NovaCreateServersSchedulerHint.
 
         专属主机ID。 此属性仅在tenancy值为dedicated时有效。 不指定此属性，系统将自动分配租户可自动放置弹性云服务器的专属主机。 创建与查询此值均有效。
 
@@ -228,7 +228,7 @@ class NovaCreateServersSchedulerHint:
 
     @dedicated_host_id.setter
     def dedicated_host_id(self, dedicated_host_id):
-        """Sets the dedicated_host_id of this NovaCreateServersSchedulerHint.
+        r"""Sets the dedicated_host_id of this NovaCreateServersSchedulerHint.
 
         专属主机ID。 此属性仅在tenancy值为dedicated时有效。 不指定此属性，系统将自动分配租户可自动放置弹性云服务器的专属主机。 创建与查询此值均有效。
 

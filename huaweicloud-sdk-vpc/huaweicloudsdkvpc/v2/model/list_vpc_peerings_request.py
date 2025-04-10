@@ -37,7 +37,7 @@ class ListVpcPeeringsRequest:
     }
 
     def __init__(self, limit=None, marker=None, id=None, name=None, status=None, tenant_id=None, vpc_id=None):
-        """ListVpcPeeringsRequest
+        r"""ListVpcPeeringsRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListVpcPeeringsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListVpcPeeringsRequest.
+        r"""Gets the limit of this ListVpcPeeringsRequest.
 
         每页返回的个数
 
@@ -96,7 +96,7 @@ class ListVpcPeeringsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListVpcPeeringsRequest.
+        r"""Sets the limit of this ListVpcPeeringsRequest.
 
         每页返回的个数
 
@@ -107,7 +107,7 @@ class ListVpcPeeringsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListVpcPeeringsRequest.
+        r"""Gets the marker of this ListVpcPeeringsRequest.
 
         分页查询起始的资源ID，为空时查询第一页
 
@@ -118,7 +118,7 @@ class ListVpcPeeringsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListVpcPeeringsRequest.
+        r"""Sets the marker of this ListVpcPeeringsRequest.
 
         分页查询起始的资源ID，为空时查询第一页
 
@@ -129,7 +129,7 @@ class ListVpcPeeringsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListVpcPeeringsRequest.
+        r"""Gets the id of this ListVpcPeeringsRequest.
 
         按照peering_id过滤查询
 
@@ -140,7 +140,7 @@ class ListVpcPeeringsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListVpcPeeringsRequest.
+        r"""Sets the id of this ListVpcPeeringsRequest.
 
         按照peering_id过滤查询
 
@@ -151,7 +151,7 @@ class ListVpcPeeringsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListVpcPeeringsRequest.
+        r"""Gets the name of this ListVpcPeeringsRequest.
 
         功能说明：按照peering_name过查询  取值范围：最大长度不超过64
 
@@ -162,7 +162,7 @@ class ListVpcPeeringsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListVpcPeeringsRequest.
+        r"""Sets the name of this ListVpcPeeringsRequest.
 
         功能说明：按照peering_name过查询  取值范围：最大长度不超过64
 
@@ -173,7 +173,7 @@ class ListVpcPeeringsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListVpcPeeringsRequest.
+        r"""Gets the status of this ListVpcPeeringsRequest.
 
         根据status进行过滤  - PENDING_ACCEPTANCE：等待接受 - REJECTED：已拒绝。 - EXPIRED：已过期。 - DELETED：已删除。 - ACTIVE：活动的。
 
@@ -184,7 +184,7 @@ class ListVpcPeeringsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListVpcPeeringsRequest.
+        r"""Sets the status of this ListVpcPeeringsRequest.
 
         根据status进行过滤  - PENDING_ACCEPTANCE：等待接受 - REJECTED：已拒绝。 - EXPIRED：已过期。 - DELETED：已删除。 - ACTIVE：活动的。
 
@@ -195,7 +195,7 @@ class ListVpcPeeringsRequest:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this ListVpcPeeringsRequest.
+        r"""Gets the tenant_id of this ListVpcPeeringsRequest.
 
         按照项目ID过滤查询
 
@@ -206,7 +206,7 @@ class ListVpcPeeringsRequest:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this ListVpcPeeringsRequest.
+        r"""Sets the tenant_id of this ListVpcPeeringsRequest.
 
         按照项目ID过滤查询
 
@@ -217,7 +217,7 @@ class ListVpcPeeringsRequest:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ListVpcPeeringsRequest.
+        r"""Gets the vpc_id of this ListVpcPeeringsRequest.
 
         根据vpc ID过滤查询
 
@@ -228,7 +228,7 @@ class ListVpcPeeringsRequest:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ListVpcPeeringsRequest.
+        r"""Sets the vpc_id of this ListVpcPeeringsRequest.
 
         根据vpc ID过滤查询
 

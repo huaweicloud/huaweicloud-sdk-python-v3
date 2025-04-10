@@ -27,7 +27,7 @@ class ReduceRequest:
     }
 
     def __init__(self, node_number=None, group_id=None):
-        """ReduceRequest
+        r"""ReduceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ReduceRequest:
 
     @property
     def node_number(self):
-        """Gets the node_number of this ReduceRequest.
+        r"""Gets the node_number of this ReduceRequest.
 
         需要缩容的节点数量，最大值为实例节点数减1。
 
@@ -60,7 +60,7 @@ class ReduceRequest:
 
     @node_number.setter
     def node_number(self, node_number):
-        """Sets the node_number of this ReduceRequest.
+        r"""Sets the node_number of this ReduceRequest.
 
         需要缩容的节点数量，最大值为实例节点数减1。
 
@@ -71,7 +71,7 @@ class ReduceRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ReduceRequest.
+        r"""Gets the group_id of this ReduceRequest.
 
         组id，指定当前进行节点扩容的组。当实例的组>1时，必填。
 
@@ -82,7 +82,7 @@ class ReduceRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ReduceRequest.
+        r"""Sets the group_id of this ReduceRequest.
 
         组id，指定当前进行节点扩容的组。当实例的组>1时，必填。
 

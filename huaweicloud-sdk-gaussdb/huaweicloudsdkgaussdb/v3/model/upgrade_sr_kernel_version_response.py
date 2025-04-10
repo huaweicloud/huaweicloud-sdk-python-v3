@@ -26,7 +26,7 @@ class UpgradeSrKernelVersionResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """UpgradeSrKernelVersionResponse
+        r"""UpgradeSrKernelVersionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpgradeSrKernelVersionResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpgradeSrKernelVersionResponse.
+        r"""Gets the job_id of this UpgradeSrKernelVersionResponse.
 
         **参数解释**： 升级工作流ID。  **取值范围**： 不涉及。
 
@@ -55,7 +55,7 @@ class UpgradeSrKernelVersionResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpgradeSrKernelVersionResponse.
+        r"""Sets the job_id of this UpgradeSrKernelVersionResponse.
 
         **参数解释**： 升级工作流ID。  **取值范围**： 不涉及。
 

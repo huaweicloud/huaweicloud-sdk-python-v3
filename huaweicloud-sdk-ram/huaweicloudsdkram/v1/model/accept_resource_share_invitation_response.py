@@ -26,7 +26,7 @@ class AcceptResourceShareInvitationResponse(SdkResponse):
     }
 
     def __init__(self, resource_share_invitation=None):
-        """AcceptResourceShareInvitationResponse
+        r"""AcceptResourceShareInvitationResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class AcceptResourceShareInvitationResponse(SdkResponse):
 
     @property
     def resource_share_invitation(self):
-        """Gets the resource_share_invitation of this AcceptResourceShareInvitationResponse.
+        r"""Gets the resource_share_invitation of this AcceptResourceShareInvitationResponse.
 
         :return: The resource_share_invitation of this AcceptResourceShareInvitationResponse.
         :rtype: :class:`huaweicloudsdkram.v1.ResourceShareInvitation`
@@ -53,7 +53,7 @@ class AcceptResourceShareInvitationResponse(SdkResponse):
 
     @resource_share_invitation.setter
     def resource_share_invitation(self, resource_share_invitation):
-        """Sets the resource_share_invitation of this AcceptResourceShareInvitationResponse.
+        r"""Sets the resource_share_invitation of this AcceptResourceShareInvitationResponse.
 
         :param resource_share_invitation: The resource_share_invitation of this AcceptResourceShareInvitationResponse.
         :type resource_share_invitation: :class:`huaweicloudsdkram.v1.ResourceShareInvitation`

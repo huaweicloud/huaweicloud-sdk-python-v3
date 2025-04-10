@@ -94,7 +94,7 @@ class ShowNodeResponse(SdkResponse):
     }
 
     def __init__(self, id=None, arch=None, memory=None, name=None, description=None, created_at=None, updated_at=None, user_name=None, cluster_id=None, cluster_node_state=None, cluster_node_type=None, firmware_name=None, firmware_version=None, upgrade_firmware_version=None, firmware_status=None, firmware_upgrade_record=None, state=None, type=None, active_status=None, cpu=None, gpu_num=None, npu_num=None, npu_type=None, os_name=None, os_type=None, os_version=None, enable_container=None, enable_gpu=None, enable_npu=None, host_ips=None, tags=None, npu_info=None, active_content=None, log_configs=None, event_validity_period=None):
-        """ShowNodeResponse
+        r"""ShowNodeResponse
 
         The model defined in huaweicloud sdk
 
@@ -282,7 +282,7 @@ class ShowNodeResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowNodeResponse.
+        r"""Gets the id of this ShowNodeResponse.
 
         设备ID
 
@@ -293,7 +293,7 @@ class ShowNodeResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowNodeResponse.
+        r"""Sets the id of this ShowNodeResponse.
 
         设备ID
 
@@ -304,7 +304,7 @@ class ShowNodeResponse(SdkResponse):
 
     @property
     def arch(self):
-        """Gets the arch of this ShowNodeResponse.
+        r"""Gets the arch of this ShowNodeResponse.
 
         设备架构
 
@@ -315,7 +315,7 @@ class ShowNodeResponse(SdkResponse):
 
     @arch.setter
     def arch(self, arch):
-        """Sets the arch of this ShowNodeResponse.
+        r"""Sets the arch of this ShowNodeResponse.
 
         设备架构
 
@@ -326,7 +326,7 @@ class ShowNodeResponse(SdkResponse):
 
     @property
     def memory(self):
-        """Gets the memory of this ShowNodeResponse.
+        r"""Gets the memory of this ShowNodeResponse.
 
         设备内存
 
@@ -337,7 +337,7 @@ class ShowNodeResponse(SdkResponse):
 
     @memory.setter
     def memory(self, memory):
-        """Sets the memory of this ShowNodeResponse.
+        r"""Sets the memory of this ShowNodeResponse.
 
         设备内存
 
@@ -348,7 +348,7 @@ class ShowNodeResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowNodeResponse.
+        r"""Gets the name of this ShowNodeResponse.
 
         设备名称，只允许中文字符、英文字母、数字、下划线、中划线，最大长度64
 
@@ -359,7 +359,7 @@ class ShowNodeResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowNodeResponse.
+        r"""Sets the name of this ShowNodeResponse.
 
         设备名称，只允许中文字符、英文字母、数字、下划线、中划线，最大长度64
 
@@ -370,7 +370,7 @@ class ShowNodeResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowNodeResponse.
+        r"""Gets the description of this ShowNodeResponse.
 
         设备描述，最大长度255，不允许^, ~, ＃, $, %, &, *, <, >, (, ), [, ], {, }, ', \", \\
 
@@ -381,7 +381,7 @@ class ShowNodeResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowNodeResponse.
+        r"""Sets the description of this ShowNodeResponse.
 
         设备描述，最大长度255，不允许^, ~, ＃, $, %, &, *, <, >, (, ), [, ], {, }, ', \", \\
 
@@ -392,7 +392,7 @@ class ShowNodeResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this ShowNodeResponse.
+        r"""Gets the created_at of this ShowNodeResponse.
 
         产生时间，如2021-10-15 14:45:22 GMT+08:00
 
@@ -403,7 +403,7 @@ class ShowNodeResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ShowNodeResponse.
+        r"""Sets the created_at of this ShowNodeResponse.
 
         产生时间，如2021-10-15 14:45:22 GMT+08:00
 
@@ -414,7 +414,7 @@ class ShowNodeResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ShowNodeResponse.
+        r"""Gets the updated_at of this ShowNodeResponse.
 
         更新时间，如2021-10-15 14:45:22 GMT+08:00
 
@@ -425,7 +425,7 @@ class ShowNodeResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ShowNodeResponse.
+        r"""Sets the updated_at of this ShowNodeResponse.
 
         更新时间，如2021-10-15 14:45:22 GMT+08:00
 
@@ -436,7 +436,7 @@ class ShowNodeResponse(SdkResponse):
 
     @property
     def user_name(self):
-        """Gets the user_name of this ShowNodeResponse.
+        r"""Gets the user_name of this ShowNodeResponse.
 
         IAM用户名
 
@@ -447,7 +447,7 @@ class ShowNodeResponse(SdkResponse):
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ShowNodeResponse.
+        r"""Sets the user_name of this ShowNodeResponse.
 
         IAM用户名
 
@@ -458,7 +458,7 @@ class ShowNodeResponse(SdkResponse):
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowNodeResponse.
+        r"""Gets the cluster_id of this ShowNodeResponse.
 
         当该设备处于集群时，显示设备所属的集群ID
 
@@ -469,7 +469,7 @@ class ShowNodeResponse(SdkResponse):
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowNodeResponse.
+        r"""Sets the cluster_id of this ShowNodeResponse.
 
         当该设备处于集群时，显示设备所属的集群ID
 
@@ -480,7 +480,7 @@ class ShowNodeResponse(SdkResponse):
 
     @property
     def cluster_node_state(self):
-        """Gets the cluster_node_state of this ShowNodeResponse.
+        r"""Gets the cluster_node_state of this ShowNodeResponse.
 
         设备所处集群状态，集群创建（cluster_create）、集群删除（cluster_delete）、添加集群工作节点设备（cluster_add_nodes）、删除集群工作节点设备（cluster_delete_node）、集群节点设备状态更新（cluster_node_state_update）
 
@@ -491,7 +491,7 @@ class ShowNodeResponse(SdkResponse):
 
     @cluster_node_state.setter
     def cluster_node_state(self, cluster_node_state):
-        """Sets the cluster_node_state of this ShowNodeResponse.
+        r"""Sets the cluster_node_state of this ShowNodeResponse.
 
         设备所处集群状态，集群创建（cluster_create）、集群删除（cluster_delete）、添加集群工作节点设备（cluster_add_nodes）、删除集群工作节点设备（cluster_delete_node）、集群节点设备状态更新（cluster_node_state_update）
 
@@ -502,7 +502,7 @@ class ShowNodeResponse(SdkResponse):
 
     @property
     def cluster_node_type(self):
-        """Gets the cluster_node_type of this ShowNodeResponse.
+        r"""Gets the cluster_node_type of this ShowNodeResponse.
 
         当该设备处于集群时，显示所属的集群设备类型。 - cluster_controller 控制设备 - cluster_worker 工作设备
 
@@ -513,7 +513,7 @@ class ShowNodeResponse(SdkResponse):
 
     @cluster_node_type.setter
     def cluster_node_type(self, cluster_node_type):
-        """Sets the cluster_node_type of this ShowNodeResponse.
+        r"""Sets the cluster_node_type of this ShowNodeResponse.
 
         当该设备处于集群时，显示所属的集群设备类型。 - cluster_controller 控制设备 - cluster_worker 工作设备
 
@@ -524,7 +524,7 @@ class ShowNodeResponse(SdkResponse):
 
     @property
     def firmware_name(self):
-        """Gets the firmware_name of this ShowNodeResponse.
+        r"""Gets the firmware_name of this ShowNodeResponse.
 
         固件名称。可包含大小写字母、数字、下划线、中划线,长度不超过60字符。必须以字母开头,字母或数字结尾
 
@@ -535,7 +535,7 @@ class ShowNodeResponse(SdkResponse):
 
     @firmware_name.setter
     def firmware_name(self, firmware_name):
-        """Sets the firmware_name of this ShowNodeResponse.
+        r"""Sets the firmware_name of this ShowNodeResponse.
 
         固件名称。可包含大小写字母、数字、下划线、中划线,长度不超过60字符。必须以字母开头,字母或数字结尾
 
@@ -546,7 +546,7 @@ class ShowNodeResponse(SdkResponse):
 
     @property
     def firmware_version(self):
-        """Gets the firmware_version of this ShowNodeResponse.
+        r"""Gets the firmware_version of this ShowNodeResponse.
 
         固件版本。支持X.Y.Z格式。每一个子版本号不超过三位且为非负整数,禁止在数字前补0
 
@@ -557,7 +557,7 @@ class ShowNodeResponse(SdkResponse):
 
     @firmware_version.setter
     def firmware_version(self, firmware_version):
-        """Sets the firmware_version of this ShowNodeResponse.
+        r"""Sets the firmware_version of this ShowNodeResponse.
 
         固件版本。支持X.Y.Z格式。每一个子版本号不超过三位且为非负整数,禁止在数字前补0
 
@@ -568,7 +568,7 @@ class ShowNodeResponse(SdkResponse):
 
     @property
     def upgrade_firmware_version(self):
-        """Gets the upgrade_firmware_version of this ShowNodeResponse.
+        r"""Gets the upgrade_firmware_version of this ShowNodeResponse.
 
         固件正在升级的版本
 
@@ -579,7 +579,7 @@ class ShowNodeResponse(SdkResponse):
 
     @upgrade_firmware_version.setter
     def upgrade_firmware_version(self, upgrade_firmware_version):
-        """Sets the upgrade_firmware_version of this ShowNodeResponse.
+        r"""Sets the upgrade_firmware_version of this ShowNodeResponse.
 
         固件正在升级的版本
 
@@ -590,7 +590,7 @@ class ShowNodeResponse(SdkResponse):
 
     @property
     def firmware_status(self):
-        """Gets the firmware_status of this ShowNodeResponse.
+        r"""Gets the firmware_status of this ShowNodeResponse.
 
         固件升级状态，1、2、3分别代表升级中，升级失败，升级成
 
@@ -601,7 +601,7 @@ class ShowNodeResponse(SdkResponse):
 
     @firmware_status.setter
     def firmware_status(self, firmware_status):
-        """Sets the firmware_status of this ShowNodeResponse.
+        r"""Sets the firmware_status of this ShowNodeResponse.
 
         固件升级状态，1、2、3分别代表升级中，升级失败，升级成
 
@@ -612,7 +612,7 @@ class ShowNodeResponse(SdkResponse):
 
     @property
     def firmware_upgrade_record(self):
-        """Gets the firmware_upgrade_record of this ShowNodeResponse.
+        r"""Gets the firmware_upgrade_record of this ShowNodeResponse.
 
         :return: The firmware_upgrade_record of this ShowNodeResponse.
         :rtype: list[:class:`huaweicloudsdkhilens.v3.FirmwareUpdateRecord`]
@@ -621,7 +621,7 @@ class ShowNodeResponse(SdkResponse):
 
     @firmware_upgrade_record.setter
     def firmware_upgrade_record(self, firmware_upgrade_record):
-        """Sets the firmware_upgrade_record of this ShowNodeResponse.
+        r"""Sets the firmware_upgrade_record of this ShowNodeResponse.
 
         :param firmware_upgrade_record: The firmware_upgrade_record of this ShowNodeResponse.
         :type firmware_upgrade_record: list[:class:`huaweicloudsdkhilens.v3.FirmwareUpdateRecord`]
@@ -630,7 +630,7 @@ class ShowNodeResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this ShowNodeResponse.
+        r"""Gets the state of this ShowNodeResponse.
 
         设备状态：UNCONNECTED(未注册)、RUNNING(运行中)、FAIL(故障)、STOPPED(停用)、UPGRADING(升级中)、FREEZE(冻结)
 
@@ -641,7 +641,7 @@ class ShowNodeResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ShowNodeResponse.
+        r"""Sets the state of this ShowNodeResponse.
 
         设备状态：UNCONNECTED(未注册)、RUNNING(运行中)、FAIL(故障)、STOPPED(停用)、UPGRADING(升级中)、FREEZE(冻结)
 
@@ -652,7 +652,7 @@ class ShowNodeResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowNodeResponse.
+        r"""Gets the type of this ShowNodeResponse.
 
         设备类型
 
@@ -663,7 +663,7 @@ class ShowNodeResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowNodeResponse.
+        r"""Sets the type of this ShowNodeResponse.
 
         设备类型
 
@@ -674,7 +674,7 @@ class ShowNodeResponse(SdkResponse):
 
     @property
     def active_status(self):
-        """Gets the active_status of this ShowNodeResponse.
+        r"""Gets the active_status of this ShowNodeResponse.
 
         设备激活状态，未激活（INACTIVE）和已激活（ACTIVATED）
 
@@ -685,7 +685,7 @@ class ShowNodeResponse(SdkResponse):
 
     @active_status.setter
     def active_status(self, active_status):
-        """Sets the active_status of this ShowNodeResponse.
+        r"""Sets the active_status of this ShowNodeResponse.
 
         设备激活状态，未激活（INACTIVE）和已激活（ACTIVATED）
 
@@ -696,7 +696,7 @@ class ShowNodeResponse(SdkResponse):
 
     @property
     def cpu(self):
-        """Gets the cpu of this ShowNodeResponse.
+        r"""Gets the cpu of this ShowNodeResponse.
 
         设备CPU个数
 
@@ -707,7 +707,7 @@ class ShowNodeResponse(SdkResponse):
 
     @cpu.setter
     def cpu(self, cpu):
-        """Sets the cpu of this ShowNodeResponse.
+        r"""Sets the cpu of this ShowNodeResponse.
 
         设备CPU个数
 
@@ -718,7 +718,7 @@ class ShowNodeResponse(SdkResponse):
 
     @property
     def gpu_num(self):
-        """Gets the gpu_num of this ShowNodeResponse.
+        r"""Gets the gpu_num of this ShowNodeResponse.
 
         设备GPU个数
 
@@ -729,7 +729,7 @@ class ShowNodeResponse(SdkResponse):
 
     @gpu_num.setter
     def gpu_num(self, gpu_num):
-        """Sets the gpu_num of this ShowNodeResponse.
+        r"""Sets the gpu_num of this ShowNodeResponse.
 
         设备GPU个数
 
@@ -740,7 +740,7 @@ class ShowNodeResponse(SdkResponse):
 
     @property
     def npu_num(self):
-        """Gets the npu_num of this ShowNodeResponse.
+        r"""Gets the npu_num of this ShowNodeResponse.
 
         设备NPU个数
 
@@ -751,7 +751,7 @@ class ShowNodeResponse(SdkResponse):
 
     @npu_num.setter
     def npu_num(self, npu_num):
-        """Sets the npu_num of this ShowNodeResponse.
+        r"""Sets the npu_num of this ShowNodeResponse.
 
         设备NPU个数
 
@@ -762,7 +762,7 @@ class ShowNodeResponse(SdkResponse):
 
     @property
     def npu_type(self):
-        """Gets the npu_type of this ShowNodeResponse.
+        r"""Gets the npu_type of this ShowNodeResponse.
 
         设备NPU类型
 
@@ -773,7 +773,7 @@ class ShowNodeResponse(SdkResponse):
 
     @npu_type.setter
     def npu_type(self, npu_type):
-        """Sets the npu_type of this ShowNodeResponse.
+        r"""Sets the npu_type of this ShowNodeResponse.
 
         设备NPU类型
 
@@ -784,7 +784,7 @@ class ShowNodeResponse(SdkResponse):
 
     @property
     def os_name(self):
-        """Gets the os_name of this ShowNodeResponse.
+        r"""Gets the os_name of this ShowNodeResponse.
 
         设备操作系统名称
 
@@ -795,7 +795,7 @@ class ShowNodeResponse(SdkResponse):
 
     @os_name.setter
     def os_name(self, os_name):
-        """Sets the os_name of this ShowNodeResponse.
+        r"""Sets the os_name of this ShowNodeResponse.
 
         设备操作系统名称
 
@@ -806,7 +806,7 @@ class ShowNodeResponse(SdkResponse):
 
     @property
     def os_type(self):
-        """Gets the os_type of this ShowNodeResponse.
+        r"""Gets the os_type of this ShowNodeResponse.
 
         设备操作系统类型
 
@@ -817,7 +817,7 @@ class ShowNodeResponse(SdkResponse):
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this ShowNodeResponse.
+        r"""Sets the os_type of this ShowNodeResponse.
 
         设备操作系统类型
 
@@ -828,7 +828,7 @@ class ShowNodeResponse(SdkResponse):
 
     @property
     def os_version(self):
-        """Gets the os_version of this ShowNodeResponse.
+        r"""Gets the os_version of this ShowNodeResponse.
 
         设备操作系统版本
 
@@ -839,7 +839,7 @@ class ShowNodeResponse(SdkResponse):
 
     @os_version.setter
     def os_version(self, os_version):
-        """Sets the os_version of this ShowNodeResponse.
+        r"""Sets the os_version of this ShowNodeResponse.
 
         设备操作系统版本
 
@@ -850,7 +850,7 @@ class ShowNodeResponse(SdkResponse):
 
     @property
     def enable_container(self):
-        """Gets the enable_container of this ShowNodeResponse.
+        r"""Gets the enable_container of this ShowNodeResponse.
 
         是否启用容器
 
@@ -861,7 +861,7 @@ class ShowNodeResponse(SdkResponse):
 
     @enable_container.setter
     def enable_container(self, enable_container):
-        """Sets the enable_container of this ShowNodeResponse.
+        r"""Sets the enable_container of this ShowNodeResponse.
 
         是否启用容器
 
@@ -872,7 +872,7 @@ class ShowNodeResponse(SdkResponse):
 
     @property
     def enable_gpu(self):
-        """Gets the enable_gpu of this ShowNodeResponse.
+        r"""Gets the enable_gpu of this ShowNodeResponse.
 
         是否启用GPU
 
@@ -883,7 +883,7 @@ class ShowNodeResponse(SdkResponse):
 
     @enable_gpu.setter
     def enable_gpu(self, enable_gpu):
-        """Sets the enable_gpu of this ShowNodeResponse.
+        r"""Sets the enable_gpu of this ShowNodeResponse.
 
         是否启用GPU
 
@@ -894,7 +894,7 @@ class ShowNodeResponse(SdkResponse):
 
     @property
     def enable_npu(self):
-        """Gets the enable_npu of this ShowNodeResponse.
+        r"""Gets the enable_npu of this ShowNodeResponse.
 
         是否启用NPU
 
@@ -905,7 +905,7 @@ class ShowNodeResponse(SdkResponse):
 
     @enable_npu.setter
     def enable_npu(self, enable_npu):
-        """Sets the enable_npu of this ShowNodeResponse.
+        r"""Sets the enable_npu of this ShowNodeResponse.
 
         是否启用NPU
 
@@ -916,7 +916,7 @@ class ShowNodeResponse(SdkResponse):
 
     @property
     def host_ips(self):
-        """Gets the host_ips of this ShowNodeResponse.
+        r"""Gets the host_ips of this ShowNodeResponse.
 
         主机IP列表
 
@@ -927,7 +927,7 @@ class ShowNodeResponse(SdkResponse):
 
     @host_ips.setter
     def host_ips(self, host_ips):
-        """Sets the host_ips of this ShowNodeResponse.
+        r"""Sets the host_ips of this ShowNodeResponse.
 
         主机IP列表
 
@@ -938,7 +938,7 @@ class ShowNodeResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowNodeResponse.
+        r"""Gets the tags of this ShowNodeResponse.
 
         :return: The tags of this ShowNodeResponse.
         :rtype: :class:`huaweicloudsdkhilens.v3.NodeDetailResponseTags`
@@ -947,7 +947,7 @@ class ShowNodeResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowNodeResponse.
+        r"""Sets the tags of this ShowNodeResponse.
 
         :param tags: The tags of this ShowNodeResponse.
         :type tags: :class:`huaweicloudsdkhilens.v3.NodeDetailResponseTags`
@@ -956,7 +956,7 @@ class ShowNodeResponse(SdkResponse):
 
     @property
     def npu_info(self):
-        """Gets the npu_info of this ShowNodeResponse.
+        r"""Gets the npu_info of this ShowNodeResponse.
 
         NPU信息
 
@@ -967,7 +967,7 @@ class ShowNodeResponse(SdkResponse):
 
     @npu_info.setter
     def npu_info(self, npu_info):
-        """Sets the npu_info of this ShowNodeResponse.
+        r"""Sets the npu_info of this ShowNodeResponse.
 
         NPU信息
 
@@ -978,7 +978,7 @@ class ShowNodeResponse(SdkResponse):
 
     @property
     def active_content(self):
-        """Gets the active_content of this ShowNodeResponse.
+        r"""Gets the active_content of this ShowNodeResponse.
 
         激活订单号列表
 
@@ -989,7 +989,7 @@ class ShowNodeResponse(SdkResponse):
 
     @active_content.setter
     def active_content(self, active_content):
-        """Sets the active_content of this ShowNodeResponse.
+        r"""Sets the active_content of this ShowNodeResponse.
 
         激活订单号列表
 
@@ -1000,7 +1000,7 @@ class ShowNodeResponse(SdkResponse):
 
     @property
     def log_configs(self):
-        """Gets the log_configs of this ShowNodeResponse.
+        r"""Gets the log_configs of this ShowNodeResponse.
 
         设备日志配置
 
@@ -1011,7 +1011,7 @@ class ShowNodeResponse(SdkResponse):
 
     @log_configs.setter
     def log_configs(self, log_configs):
-        """Sets the log_configs of this ShowNodeResponse.
+        r"""Sets the log_configs of this ShowNodeResponse.
 
         设备日志配置
 
@@ -1022,7 +1022,7 @@ class ShowNodeResponse(SdkResponse):
 
     @property
     def event_validity_period(self):
-        """Gets the event_validity_period of this ShowNodeResponse.
+        r"""Gets the event_validity_period of this ShowNodeResponse.
 
         事件有效时间(单位：分钟)
 
@@ -1033,7 +1033,7 @@ class ShowNodeResponse(SdkResponse):
 
     @event_validity_period.setter
     def event_validity_period(self, event_validity_period):
-        """Sets the event_validity_period of this ShowNodeResponse.
+        r"""Sets the event_validity_period of this ShowNodeResponse.
 
         事件有效时间(单位：分钟)
 

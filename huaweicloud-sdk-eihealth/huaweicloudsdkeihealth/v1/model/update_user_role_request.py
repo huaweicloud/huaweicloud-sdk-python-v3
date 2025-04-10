@@ -27,7 +27,7 @@ class UpdateUserRoleRequest:
     }
 
     def __init__(self, user_id=None, body=None):
-        """UpdateUserRoleRequest
+        r"""UpdateUserRoleRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateUserRoleRequest:
 
     @property
     def user_id(self):
-        """Gets the user_id of this UpdateUserRoleRequest.
+        r"""Gets the user_id of this UpdateUserRoleRequest.
 
         用户id
 
@@ -60,7 +60,7 @@ class UpdateUserRoleRequest:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this UpdateUserRoleRequest.
+        r"""Sets the user_id of this UpdateUserRoleRequest.
 
         用户id
 
@@ -71,7 +71,7 @@ class UpdateUserRoleRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateUserRoleRequest.
+        r"""Gets the body of this UpdateUserRoleRequest.
 
         :return: The body of this UpdateUserRoleRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateUserRoleReq`
@@ -80,7 +80,7 @@ class UpdateUserRoleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateUserRoleRequest.
+        r"""Sets the body of this UpdateUserRoleRequest.
 
         :param body: The body of this UpdateUserRoleRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.UpdateUserRoleReq`

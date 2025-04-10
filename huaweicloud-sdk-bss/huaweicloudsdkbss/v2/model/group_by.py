@@ -27,7 +27,7 @@ class GroupBy:
     }
 
     def __init__(self, type=None, key=None):
-        """GroupBy
+        r"""GroupBy
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class GroupBy:
 
     @property
     def type(self):
-        """Gets the type of this GroupBy.
+        r"""Gets the type of this GroupBy.
 
         tag：按照成本标签过滤cost_unit：按照成本单元过滤dimension：默认取值
 
@@ -59,7 +59,7 @@ class GroupBy:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this GroupBy.
+        r"""Sets the type of this GroupBy.
 
         tag：按照成本标签过滤cost_unit：按照成本单元过滤dimension：默认取值
 
@@ -70,7 +70,7 @@ class GroupBy:
 
     @property
     def key(self):
-        """Gets the key of this GroupBy.
+        r"""Gets the key of this GroupBy.
 
         如果type为tag，此处取值为tag的key。如果type为cost_unit，此处取值为cost_unit的key。如果type为dimension，此处取值如下：CLOUD_SERVICE_TYPE 产品类型RESOURCE_TYPE 产品ASSOCIATED_ACCOUNT 关联账号（企业主名下的所有企业子账号）REGION_CODE 区域AZ_CODE 可用区ENTERPRISE_PROJECT_ID 企业项目RES_SPEC_CODE 产品规格CHARGING_MODE 计费模式USAGE_TYPE 使用量类型BILL_TYPE 账单大类（billtype，前台需转换billdetailtype）BE_ID 运营实体（beid）PAYER_ACCOUNT_ID 支付账号RESOURCE_ID 资源 
 
@@ -81,7 +81,7 @@ class GroupBy:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this GroupBy.
+        r"""Sets the key of this GroupBy.
 
         如果type为tag，此处取值为tag的key。如果type为cost_unit，此处取值为cost_unit的key。如果type为dimension，此处取值如下：CLOUD_SERVICE_TYPE 产品类型RESOURCE_TYPE 产品ASSOCIATED_ACCOUNT 关联账号（企业主名下的所有企业子账号）REGION_CODE 区域AZ_CODE 可用区ENTERPRISE_PROJECT_ID 企业项目RES_SPEC_CODE 产品规格CHARGING_MODE 计费模式USAGE_TYPE 使用量类型BILL_TYPE 账单大类（billtype，前台需转换billdetailtype）BE_ID 运营实体（beid）PAYER_ACCOUNT_ID 支付账号RESOURCE_ID 资源 
 

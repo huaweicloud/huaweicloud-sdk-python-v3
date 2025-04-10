@@ -28,7 +28,7 @@ class UpdateSecurityGroupResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, security_group_id=None):
-        """UpdateSecurityGroupResponse
+        r"""UpdateSecurityGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateSecurityGroupResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateSecurityGroupResponse.
+        r"""Gets the job_id of this UpdateSecurityGroupResponse.
 
         任务ID。
 
@@ -62,7 +62,7 @@ class UpdateSecurityGroupResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateSecurityGroupResponse.
+        r"""Sets the job_id of this UpdateSecurityGroupResponse.
 
         任务ID。
 
@@ -73,7 +73,7 @@ class UpdateSecurityGroupResponse(SdkResponse):
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this UpdateSecurityGroupResponse.
+        r"""Gets the security_group_id of this UpdateSecurityGroupResponse.
 
         实例当前安全组。
 
@@ -84,7 +84,7 @@ class UpdateSecurityGroupResponse(SdkResponse):
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this UpdateSecurityGroupResponse.
+        r"""Sets the security_group_id of this UpdateSecurityGroupResponse.
 
         实例当前安全组。
 

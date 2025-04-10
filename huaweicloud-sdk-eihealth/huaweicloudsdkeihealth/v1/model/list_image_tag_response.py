@@ -28,7 +28,7 @@ class ListImageTagResponse(SdkResponse):
     }
 
     def __init__(self, count=None, tags=None):
-        """ListImageTagResponse
+        r"""ListImageTagResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListImageTagResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListImageTagResponse.
+        r"""Gets the count of this ListImageTagResponse.
 
         镜像版本总数
 
@@ -62,7 +62,7 @@ class ListImageTagResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListImageTagResponse.
+        r"""Sets the count of this ListImageTagResponse.
 
         镜像版本总数
 
@@ -73,7 +73,7 @@ class ListImageTagResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ListImageTagResponse.
+        r"""Gets the tags of this ListImageTagResponse.
 
         镜像版本详情列表
 
@@ -84,7 +84,7 @@ class ListImageTagResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListImageTagResponse.
+        r"""Sets the tags of this ListImageTagResponse.
 
         镜像版本详情列表
 

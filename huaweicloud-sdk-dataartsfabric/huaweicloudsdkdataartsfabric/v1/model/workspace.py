@@ -41,7 +41,7 @@ class Workspace:
     }
 
     def __init__(self, id=None, name=None, description=None, create_time=None, create_domain_name=None, create_user_name=None, metastore_id=None, access_url=None, enterprise_project_id=None):
-        """Workspace
+        r"""Workspace
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class Workspace:
 
     @property
     def id(self):
-        """Gets the id of this Workspace.
+        r"""Gets the id of this Workspace.
 
         工作空间ID。
 
@@ -110,7 +110,7 @@ class Workspace:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Workspace.
+        r"""Sets the id of this Workspace.
 
         工作空间ID。
 
@@ -121,7 +121,7 @@ class Workspace:
 
     @property
     def name(self):
-        """Gets the name of this Workspace.
+        r"""Gets the name of this Workspace.
 
         工作空间名称。
 
@@ -132,7 +132,7 @@ class Workspace:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Workspace.
+        r"""Sets the name of this Workspace.
 
         工作空间名称。
 
@@ -143,7 +143,7 @@ class Workspace:
 
     @property
     def description(self):
-        """Gets the description of this Workspace.
+        r"""Gets the description of this Workspace.
 
         描述。用户输入的描述，最长为255个字符。
 
@@ -154,7 +154,7 @@ class Workspace:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Workspace.
+        r"""Sets the description of this Workspace.
 
         描述。用户输入的描述，最长为255个字符。
 
@@ -165,7 +165,7 @@ class Workspace:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Workspace.
+        r"""Gets the create_time of this Workspace.
 
         创建时间
 
@@ -176,7 +176,7 @@ class Workspace:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Workspace.
+        r"""Sets the create_time of this Workspace.
 
         创建时间
 
@@ -187,7 +187,7 @@ class Workspace:
 
     @property
     def create_domain_name(self):
-        """Gets the create_domain_name of this Workspace.
+        r"""Gets the create_domain_name of this Workspace.
 
         创建账号名称。
 
@@ -198,7 +198,7 @@ class Workspace:
 
     @create_domain_name.setter
     def create_domain_name(self, create_domain_name):
-        """Sets the create_domain_name of this Workspace.
+        r"""Sets the create_domain_name of this Workspace.
 
         创建账号名称。
 
@@ -209,7 +209,7 @@ class Workspace:
 
     @property
     def create_user_name(self):
-        """Gets the create_user_name of this Workspace.
+        r"""Gets the create_user_name of this Workspace.
 
         创建用户名称。
 
@@ -220,7 +220,7 @@ class Workspace:
 
     @create_user_name.setter
     def create_user_name(self, create_user_name):
-        """Sets the create_user_name of this Workspace.
+        r"""Sets the create_user_name of this Workspace.
 
         创建用户名称。
 
@@ -231,7 +231,7 @@ class Workspace:
 
     @property
     def metastore_id(self):
-        """Gets the metastore_id of this Workspace.
+        r"""Gets the metastore_id of this Workspace.
 
         Metastore信息，LakeFormation服务的实例Id，即MetaStoreId。
 
@@ -242,7 +242,7 @@ class Workspace:
 
     @metastore_id.setter
     def metastore_id(self, metastore_id):
-        """Sets the metastore_id of this Workspace.
+        r"""Sets the metastore_id of this Workspace.
 
         Metastore信息，LakeFormation服务的实例Id，即MetaStoreId。
 
@@ -253,7 +253,7 @@ class Workspace:
 
     @property
     def access_url(self):
-        """Gets the access_url of this Workspace.
+        r"""Gets the access_url of this Workspace.
 
         访问资源地址
 
@@ -264,7 +264,7 @@ class Workspace:
 
     @access_url.setter
     def access_url(self, access_url):
-        """Sets the access_url of this Workspace.
+        r"""Sets the access_url of this Workspace.
 
         访问资源地址
 
@@ -275,7 +275,7 @@ class Workspace:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this Workspace.
+        r"""Gets the enterprise_project_id of this Workspace.
 
         企业项目ID，只有对接了企业项目才可以填写。只能包含字母、数字和中划线，且长度为1到64个字符。默认是0，即default
 
@@ -286,7 +286,7 @@ class Workspace:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this Workspace.
+        r"""Sets the enterprise_project_id of this Workspace.
 
         企业项目ID，只有对接了企业项目才可以填写。只能包含字母、数字和中划线，且长度为1到64个字符。默认是0，即default
 

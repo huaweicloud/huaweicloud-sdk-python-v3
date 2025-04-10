@@ -27,7 +27,7 @@ class ShutdownInstanceRecord:
     }
 
     def __init__(self, instance_id=None, job_id=None):
-        """ShutdownInstanceRecord
+        r"""ShutdownInstanceRecord
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ShutdownInstanceRecord:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShutdownInstanceRecord.
+        r"""Gets the instance_id of this ShutdownInstanceRecord.
 
         实例id
 
@@ -61,7 +61,7 @@ class ShutdownInstanceRecord:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShutdownInstanceRecord.
+        r"""Sets the instance_id of this ShutdownInstanceRecord.
 
         实例id
 
@@ -72,7 +72,7 @@ class ShutdownInstanceRecord:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShutdownInstanceRecord.
+        r"""Gets the job_id of this ShutdownInstanceRecord.
 
         工作流id
 
@@ -83,7 +83,7 @@ class ShutdownInstanceRecord:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShutdownInstanceRecord.
+        r"""Sets the job_id of this ShutdownInstanceRecord.
 
         工作流id
 

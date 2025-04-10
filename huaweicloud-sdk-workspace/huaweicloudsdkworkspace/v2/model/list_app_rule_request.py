@@ -29,7 +29,7 @@ class ListAppRuleRequest:
     }
 
     def __init__(self, offset=None, limit=None, name=None):
-        """ListAppRuleRequest
+        r"""ListAppRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListAppRuleRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAppRuleRequest.
+        r"""Gets the offset of this ListAppRuleRequest.
 
         查询的偏移量。
 
@@ -68,7 +68,7 @@ class ListAppRuleRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAppRuleRequest.
+        r"""Sets the offset of this ListAppRuleRequest.
 
         查询的偏移量。
 
@@ -79,7 +79,7 @@ class ListAppRuleRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAppRuleRequest.
+        r"""Gets the limit of this ListAppRuleRequest.
 
         单次查询的大小[1-100]。
 
@@ -90,7 +90,7 @@ class ListAppRuleRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAppRuleRequest.
+        r"""Sets the limit of this ListAppRuleRequest.
 
         单次查询的大小[1-100]。
 
@@ -101,7 +101,7 @@ class ListAppRuleRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListAppRuleRequest.
+        r"""Gets the name of this ListAppRuleRequest.
 
         应用规则名称
 
@@ -112,7 +112,7 @@ class ListAppRuleRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListAppRuleRequest.
+        r"""Sets the name of this ListAppRuleRequest.
 
         应用规则名称
 

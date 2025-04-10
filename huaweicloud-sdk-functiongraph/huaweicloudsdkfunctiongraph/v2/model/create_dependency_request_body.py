@@ -35,7 +35,7 @@ class CreateDependencyRequestBody:
     }
 
     def __init__(self, depend_file=None, depend_link=None, depend_type=None, runtime=None, name=None, description=None):
-        """CreateDependencyRequestBody
+        r"""CreateDependencyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class CreateDependencyRequestBody:
 
     @property
     def depend_file(self):
-        """Gets the depend_file of this CreateDependencyRequestBody.
+        r"""Gets the depend_file of this CreateDependencyRequestBody.
 
         depend_type为zip类型时必填，为文件流格式,需要base64编码zip文件。上传的文件大小限制为40M，如超过40M，请通过OBS上传。
 
@@ -86,7 +86,7 @@ class CreateDependencyRequestBody:
 
     @depend_file.setter
     def depend_file(self, depend_file):
-        """Sets the depend_file of this CreateDependencyRequestBody.
+        r"""Sets the depend_file of this CreateDependencyRequestBody.
 
         depend_type为zip类型时必填，为文件流格式,需要base64编码zip文件。上传的文件大小限制为40M，如超过40M，请通过OBS上传。
 
@@ -97,7 +97,7 @@ class CreateDependencyRequestBody:
 
     @property
     def depend_link(self):
-        """Gets the depend_link of this CreateDependencyRequestBody.
+        r"""Gets the depend_link of this CreateDependencyRequestBody.
 
         depend_type为obs类型时，依赖包在obs的存储地址。
 
@@ -108,7 +108,7 @@ class CreateDependencyRequestBody:
 
     @depend_link.setter
     def depend_link(self, depend_link):
-        """Sets the depend_link of this CreateDependencyRequestBody.
+        r"""Sets the depend_link of this CreateDependencyRequestBody.
 
         depend_type为obs类型时，依赖包在obs的存储地址。
 
@@ -119,7 +119,7 @@ class CreateDependencyRequestBody:
 
     @property
     def depend_type(self):
-        """Gets the depend_type of this CreateDependencyRequestBody.
+        r"""Gets the depend_type of this CreateDependencyRequestBody.
 
         导入类型，目前支持obs和zip。
 
@@ -130,7 +130,7 @@ class CreateDependencyRequestBody:
 
     @depend_type.setter
     def depend_type(self, depend_type):
-        """Sets the depend_type of this CreateDependencyRequestBody.
+        r"""Sets the depend_type of this CreateDependencyRequestBody.
 
         导入类型，目前支持obs和zip。
 
@@ -141,7 +141,7 @@ class CreateDependencyRequestBody:
 
     @property
     def runtime(self):
-        """Gets the runtime of this CreateDependencyRequestBody.
+        r"""Gets the runtime of this CreateDependencyRequestBody.
 
         FunctionGraph函数的执行环境 Java8: Java语言8版本。 Java11: Java语言11版本。 Java17: Java语言17版本（当前仅支持华北-乌兰察布二零二） Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Python3.10: Python语言3.10版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 Node.js16.17: Nodejs语言16.17版本。 Node.js18.15: Nodejs语言18.15版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 C#(.NET Core 6.0): C#语言6.0版本（当前仅支持华北-乌兰察布二零二）。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 Cangjie1.0：仓颉语言1.0版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
 
@@ -152,7 +152,7 @@ class CreateDependencyRequestBody:
 
     @runtime.setter
     def runtime(self, runtime):
-        """Sets the runtime of this CreateDependencyRequestBody.
+        r"""Sets the runtime of this CreateDependencyRequestBody.
 
         FunctionGraph函数的执行环境 Java8: Java语言8版本。 Java11: Java语言11版本。 Java17: Java语言17版本（当前仅支持华北-乌兰察布二零二） Python2.7: Python语言2.7版本。 Python3.6: Pyton语言3.6版本。 Python3.9: Python语言3.9版本。 Python3.10: Python语言3.10版本。 Go1.8: Go语言1.8版本。 Go1.x: Go语言1.x版本。 Node.js6.10: Nodejs语言6.10版本。 Node.js8.10: Nodejs语言8.10版本。 Node.js10.16: Nodejs语言10.16版本。 Node.js12.13: Nodejs语言12.13版本。 Node.js14.18: Nodejs语言14.18版本。 Node.js16.17: Nodejs语言16.17版本。 Node.js18.15: Nodejs语言18.15版本。 C#(.NET Core 2.0): C#语言2.0版本。 C#(.NET Core 2.1): C#语言2.1版本。 C#(.NET Core 3.1): C#语言3.1版本。 C#(.NET Core 6.0): C#语言6.0版本（当前仅支持华北-乌兰察布二零二）。 Custom: 自定义运行时。 PHP7.3: Php语言7.3版本。 Cangjie1.0：仓颉语言1.0版本。 http: HTTP函数。 Custom Image: 自定义镜像函数。
 
@@ -163,7 +163,7 @@ class CreateDependencyRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateDependencyRequestBody.
+        r"""Gets the name of this CreateDependencyRequestBody.
 
         依赖包名称。必须以大、小写字母开头，以字母或数字结尾，只能由字母、数字、下划线、点和中划线组成，长度不超过96个字符。
 
@@ -174,7 +174,7 @@ class CreateDependencyRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateDependencyRequestBody.
+        r"""Sets the name of this CreateDependencyRequestBody.
 
         依赖包名称。必须以大、小写字母开头，以字母或数字结尾，只能由字母、数字、下划线、点和中划线组成，长度不超过96个字符。
 
@@ -185,7 +185,7 @@ class CreateDependencyRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateDependencyRequestBody.
+        r"""Gets the description of this CreateDependencyRequestBody.
 
         依赖包描述，不超过512个字符。
 
@@ -196,7 +196,7 @@ class CreateDependencyRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateDependencyRequestBody.
+        r"""Sets the description of this CreateDependencyRequestBody.
 
         依赖包描述，不超过512个字符。
 

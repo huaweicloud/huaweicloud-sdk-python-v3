@@ -27,7 +27,7 @@ class PushCertificateRequest:
     }
 
     def __init__(self, certificate_id=None, body=None):
-        """PushCertificateRequest
+        r"""PushCertificateRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class PushCertificateRequest:
 
     @property
     def certificate_id(self):
-        """Gets the certificate_id of this PushCertificateRequest.
+        r"""Gets the certificate_id of this PushCertificateRequest.
 
         证书id。
 
@@ -60,7 +60,7 @@ class PushCertificateRequest:
 
     @certificate_id.setter
     def certificate_id(self, certificate_id):
-        """Sets the certificate_id of this PushCertificateRequest.
+        r"""Sets the certificate_id of this PushCertificateRequest.
 
         证书id。
 
@@ -71,7 +71,7 @@ class PushCertificateRequest:
 
     @property
     def body(self):
-        """Gets the body of this PushCertificateRequest.
+        r"""Gets the body of this PushCertificateRequest.
 
         :return: The body of this PushCertificateRequest.
         :rtype: :class:`huaweicloudsdkscm.v3.PushCertificateRequestBody`
@@ -80,7 +80,7 @@ class PushCertificateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this PushCertificateRequest.
+        r"""Sets the body of this PushCertificateRequest.
 
         :param body: The body of this PushCertificateRequest.
         :type body: :class:`huaweicloudsdkscm.v3.PushCertificateRequestBody`

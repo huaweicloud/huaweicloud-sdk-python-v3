@@ -25,7 +25,7 @@ class ExpackProductInfo:
     }
 
     def __init__(self, resource_size=None):
-        """ExpackProductInfo
+        r"""ExpackProductInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ExpackProductInfo:
 
     @property
     def resource_size(self):
-        """Gets the resource_size of this ExpackProductInfo.
+        r"""Gets the resource_size of this ExpackProductInfo.
 
         扩展包数量
 
@@ -54,7 +54,7 @@ class ExpackProductInfo:
 
     @resource_size.setter
     def resource_size(self, resource_size):
-        """Sets the resource_size of this ExpackProductInfo.
+        r"""Sets the resource_size of this ExpackProductInfo.
 
         扩展包数量
 

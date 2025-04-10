@@ -43,7 +43,7 @@ class SearchScriptsRequestBody:
     }
 
     def __init__(self, name=None, is_default=None, create_by=None, script_id=None, page_num=None, page_size=None, project_id=None, order_by_column=None, sort_order=None, enterprise_project_id=None):
-        """SearchScriptsRequestBody
+        r"""SearchScriptsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -103,7 +103,7 @@ class SearchScriptsRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this SearchScriptsRequestBody.
+        r"""Gets the name of this SearchScriptsRequestBody.
 
         查询接收的参数，版本管理时，name为脚本名称（版本管理查询时name不能为空），脚本管理页面查询时，name为接收模糊查询的参数，name是null，表示查询所有默认脚本。
 
@@ -114,7 +114,7 @@ class SearchScriptsRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SearchScriptsRequestBody.
+        r"""Sets the name of this SearchScriptsRequestBody.
 
         查询接收的参数，版本管理时，name为脚本名称（版本管理查询时name不能为空），脚本管理页面查询时，name为接收模糊查询的参数，name是null，表示查询所有默认脚本。
 
@@ -125,7 +125,7 @@ class SearchScriptsRequestBody:
 
     @property
     def is_default(self):
-        """Gets the is_default of this SearchScriptsRequestBody.
+        r"""Gets the is_default of this SearchScriptsRequestBody.
 
         查询规则，如果是类型为default，则为模糊查询和脚本管理主页展示，no_default为版本管理。
 
@@ -136,7 +136,7 @@ class SearchScriptsRequestBody:
 
     @is_default.setter
     def is_default(self, is_default):
-        """Sets the is_default of this SearchScriptsRequestBody.
+        r"""Sets the is_default of this SearchScriptsRequestBody.
 
         查询规则，如果是类型为default，则为模糊查询和脚本管理主页展示，no_default为版本管理。
 
@@ -147,7 +147,7 @@ class SearchScriptsRequestBody:
 
     @property
     def create_by(self):
-        """Gets the create_by of this SearchScriptsRequestBody.
+        r"""Gets the create_by of this SearchScriptsRequestBody.
 
         创建人，默认按照创建人搜索脚本。
 
@@ -158,7 +158,7 @@ class SearchScriptsRequestBody:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this SearchScriptsRequestBody.
+        r"""Sets the create_by of this SearchScriptsRequestBody.
 
         创建人，默认按照创建人搜索脚本。
 
@@ -169,7 +169,7 @@ class SearchScriptsRequestBody:
 
     @property
     def script_id(self):
-        """Gets the script_id of this SearchScriptsRequestBody.
+        r"""Gets the script_id of this SearchScriptsRequestBody.
 
         版本管理时需要查询的脚本id。
 
@@ -180,7 +180,7 @@ class SearchScriptsRequestBody:
 
     @script_id.setter
     def script_id(self, script_id):
-        """Sets the script_id of this SearchScriptsRequestBody.
+        r"""Sets the script_id of this SearchScriptsRequestBody.
 
         版本管理时需要查询的脚本id。
 
@@ -191,7 +191,7 @@ class SearchScriptsRequestBody:
 
     @property
     def page_num(self):
-        """Gets the page_num of this SearchScriptsRequestBody.
+        r"""Gets the page_num of this SearchScriptsRequestBody.
 
         page_num为正整数。
 
@@ -202,7 +202,7 @@ class SearchScriptsRequestBody:
 
     @page_num.setter
     def page_num(self, page_num):
-        """Sets the page_num of this SearchScriptsRequestBody.
+        r"""Sets the page_num of this SearchScriptsRequestBody.
 
         page_num为正整数。
 
@@ -213,7 +213,7 @@ class SearchScriptsRequestBody:
 
     @property
     def page_size(self):
-        """Gets the page_size of this SearchScriptsRequestBody.
+        r"""Gets the page_size of this SearchScriptsRequestBody.
 
         每页显示的条数，默认值是10。
 
@@ -224,7 +224,7 @@ class SearchScriptsRequestBody:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this SearchScriptsRequestBody.
+        r"""Sets the page_size of this SearchScriptsRequestBody.
 
         每页显示的条数，默认值是10。
 
@@ -235,7 +235,7 @@ class SearchScriptsRequestBody:
 
     @property
     def project_id(self):
-        """Gets the project_id of this SearchScriptsRequestBody.
+        r"""Gets the project_id of this SearchScriptsRequestBody.
 
         项目id。
 
@@ -246,7 +246,7 @@ class SearchScriptsRequestBody:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this SearchScriptsRequestBody.
+        r"""Sets the project_id of this SearchScriptsRequestBody.
 
         项目id。
 
@@ -257,7 +257,7 @@ class SearchScriptsRequestBody:
 
     @property
     def order_by_column(self):
-        """Gets the order_by_column of this SearchScriptsRequestBody.
+        r"""Gets the order_by_column of this SearchScriptsRequestBody.
 
         需要排序的字段(默认为更新时间),支持字段有name,create_time和update_time。
 
@@ -268,7 +268,7 @@ class SearchScriptsRequestBody:
 
     @order_by_column.setter
     def order_by_column(self, order_by_column):
-        """Sets the order_by_column of this SearchScriptsRequestBody.
+        r"""Sets the order_by_column of this SearchScriptsRequestBody.
 
         需要排序的字段(默认为更新时间),支持字段有name,create_time和update_time。
 
@@ -279,7 +279,7 @@ class SearchScriptsRequestBody:
 
     @property
     def sort_order(self):
-        """Gets the sort_order of this SearchScriptsRequestBody.
+        r"""Gets the sort_order of this SearchScriptsRequestBody.
 
         排序规则(默认降序) 传入升序或降序，升序：ASC，降序：DESC。
 
@@ -290,7 +290,7 @@ class SearchScriptsRequestBody:
 
     @sort_order.setter
     def sort_order(self, sort_order):
-        """Sets the sort_order of this SearchScriptsRequestBody.
+        r"""Sets the sort_order of this SearchScriptsRequestBody.
 
         排序规则(默认降序) 传入升序或降序，升序：ASC，降序：DESC。
 
@@ -301,7 +301,7 @@ class SearchScriptsRequestBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this SearchScriptsRequestBody.
+        r"""Gets the enterprise_project_id of this SearchScriptsRequestBody.
 
         企业项目id，根据企业项目id搜索。
 
@@ -312,7 +312,7 @@ class SearchScriptsRequestBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this SearchScriptsRequestBody.
+        r"""Sets the enterprise_project_id of this SearchScriptsRequestBody.
 
         企业项目id，根据企业项目id搜索。
 

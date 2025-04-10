@@ -28,7 +28,7 @@ class ShowAutoEnlargePolicyResponse(SdkResponse):
     }
 
     def __init__(self, switch_option=None, policy=None):
-        """ShowAutoEnlargePolicyResponse
+        r"""ShowAutoEnlargePolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowAutoEnlargePolicyResponse(SdkResponse):
 
     @property
     def switch_option(self):
-        """Gets the switch_option of this ShowAutoEnlargePolicyResponse.
+        r"""Gets the switch_option of this ShowAutoEnlargePolicyResponse.
 
         自动扩容开关。 - on：开启磁盘自动扩容策略。 - off: 关闭磁盘自动扩容策略。 默认值为on。
 
@@ -62,7 +62,7 @@ class ShowAutoEnlargePolicyResponse(SdkResponse):
 
     @switch_option.setter
     def switch_option(self, switch_option):
-        """Sets the switch_option of this ShowAutoEnlargePolicyResponse.
+        r"""Sets the switch_option of this ShowAutoEnlargePolicyResponse.
 
         自动扩容开关。 - on：开启磁盘自动扩容策略。 - off: 关闭磁盘自动扩容策略。 默认值为on。
 
@@ -73,7 +73,7 @@ class ShowAutoEnlargePolicyResponse(SdkResponse):
 
     @property
     def policy(self):
-        """Gets the policy of this ShowAutoEnlargePolicyResponse.
+        r"""Gets the policy of this ShowAutoEnlargePolicyResponse.
 
         :return: The policy of this ShowAutoEnlargePolicyResponse.
         :rtype: :class:`huaweicloudsdkdds.v3.DiskAutoExpansionPolicy`
@@ -82,7 +82,7 @@ class ShowAutoEnlargePolicyResponse(SdkResponse):
 
     @policy.setter
     def policy(self, policy):
-        """Sets the policy of this ShowAutoEnlargePolicyResponse.
+        r"""Sets the policy of this ShowAutoEnlargePolicyResponse.
 
         :param policy: The policy of this ShowAutoEnlargePolicyResponse.
         :type policy: :class:`huaweicloudsdkdds.v3.DiskAutoExpansionPolicy`

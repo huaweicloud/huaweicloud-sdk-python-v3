@@ -27,7 +27,7 @@ class ListUsersRequest:
     }
 
     def __init__(self, authorization=None, tenant_id=None):
-        """ListUsersRequest
+        r"""ListUsersRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListUsersRequest:
 
     @property
     def authorization(self):
-        """Gets the authorization of this ListUsersRequest.
+        r"""Gets the authorization of this ListUsersRequest.
 
         承载令牌
 
@@ -59,7 +59,7 @@ class ListUsersRequest:
 
     @authorization.setter
     def authorization(self, authorization):
-        """Sets the authorization of this ListUsersRequest.
+        r"""Sets the authorization of this ListUsersRequest.
 
         承载令牌
 
@@ -70,7 +70,7 @@ class ListUsersRequest:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this ListUsersRequest.
+        r"""Gets the tenant_id of this ListUsersRequest.
 
         租户的全局唯一标识符（ID）
 
@@ -81,7 +81,7 @@ class ListUsersRequest:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this ListUsersRequest.
+        r"""Sets the tenant_id of this ListUsersRequest.
 
         租户的全局唯一标识符（ID）
 

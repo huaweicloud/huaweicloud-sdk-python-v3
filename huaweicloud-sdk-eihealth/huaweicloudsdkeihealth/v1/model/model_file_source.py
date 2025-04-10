@@ -27,7 +27,7 @@ class ModelFileSource:
     }
 
     def __init__(self):
-        """ModelFileSource
+        r"""ModelFileSource
 
         The model defined in huaweicloud sdk
 

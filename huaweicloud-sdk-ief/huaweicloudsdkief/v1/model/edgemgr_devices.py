@@ -25,7 +25,7 @@ class EdgemgrDevices:
     }
 
     def __init__(self, device=None):
-        """EdgemgrDevices
+        r"""EdgemgrDevices
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class EdgemgrDevices:
 
     @property
     def device(self):
-        """Gets the device of this EdgemgrDevices.
+        r"""Gets the device of this EdgemgrDevices.
 
         :return: The device of this EdgemgrDevices.
         :rtype: :class:`huaweicloudsdkief.v1.EdgemgrDevicesDetail`
@@ -51,7 +51,7 @@ class EdgemgrDevices:
 
     @device.setter
     def device(self, device):
-        """Sets the device of this EdgemgrDevices.
+        r"""Sets the device of this EdgemgrDevices.
 
         :param device: The device of this EdgemgrDevices.
         :type device: :class:`huaweicloudsdkief.v1.EdgemgrDevicesDetail`

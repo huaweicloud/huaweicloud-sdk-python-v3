@@ -30,7 +30,7 @@ class UpdateWorkspaceResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, enterprise_id=None, dc_vnc_ip=None):
-        """UpdateWorkspaceResponse
+        r"""UpdateWorkspaceResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class UpdateWorkspaceResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateWorkspaceResponse.
+        r"""Gets the job_id of this UpdateWorkspaceResponse.
 
         修改云办公服务属性的任务ID
 
@@ -69,7 +69,7 @@ class UpdateWorkspaceResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateWorkspaceResponse.
+        r"""Sets the job_id of this UpdateWorkspaceResponse.
 
         修改云办公服务属性的任务ID
 
@@ -80,7 +80,7 @@ class UpdateWorkspaceResponse(SdkResponse):
 
     @property
     def enterprise_id(self):
-        """Gets the enterprise_id of this UpdateWorkspaceResponse.
+        r"""Gets the enterprise_id of this UpdateWorkspaceResponse.
 
         企业ID
 
@@ -91,7 +91,7 @@ class UpdateWorkspaceResponse(SdkResponse):
 
     @enterprise_id.setter
     def enterprise_id(self, enterprise_id):
-        """Sets the enterprise_id of this UpdateWorkspaceResponse.
+        r"""Sets the enterprise_id of this UpdateWorkspaceResponse.
 
         企业ID
 
@@ -102,7 +102,7 @@ class UpdateWorkspaceResponse(SdkResponse):
 
     @property
     def dc_vnc_ip(self):
-        """Gets the dc_vnc_ip of this UpdateWorkspaceResponse.
+        r"""Gets the dc_vnc_ip of this UpdateWorkspaceResponse.
 
         专线vnc访问的ip
 
@@ -113,7 +113,7 @@ class UpdateWorkspaceResponse(SdkResponse):
 
     @dc_vnc_ip.setter
     def dc_vnc_ip(self, dc_vnc_ip):
-        """Sets the dc_vnc_ip of this UpdateWorkspaceResponse.
+        r"""Sets the dc_vnc_ip of this UpdateWorkspaceResponse.
 
         专线vnc访问的ip
 

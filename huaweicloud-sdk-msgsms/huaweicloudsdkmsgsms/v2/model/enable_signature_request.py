@@ -25,7 +25,7 @@ class EnableSignatureRequest:
     }
 
     def __init__(self, id=None):
-        """EnableSignatureRequest
+        r"""EnableSignatureRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class EnableSignatureRequest:
 
     @property
     def id(self):
-        """Gets the id of this EnableSignatureRequest.
+        r"""Gets the id of this EnableSignatureRequest.
 
         签名ID
 
@@ -53,7 +53,7 @@ class EnableSignatureRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EnableSignatureRequest.
+        r"""Sets the id of this EnableSignatureRequest.
 
         签名ID
 

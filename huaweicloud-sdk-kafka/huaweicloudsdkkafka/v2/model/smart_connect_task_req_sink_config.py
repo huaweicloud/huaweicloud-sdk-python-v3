@@ -51,7 +51,7 @@ class SmartConnectTaskReqSinkConfig:
     }
 
     def __init__(self, redis_address=None, redis_type=None, dcs_instance_id=None, redis_password=None, consumer_strategy=None, destination_file_type=None, deliver_time_interval=None, access_key=None, secret_key=None, obs_bucket_name=None, obs_path=None, partition_format=None, record_delimiter=None, store_keys=None):
-        """SmartConnectTaskReqSinkConfig
+        r"""SmartConnectTaskReqSinkConfig
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class SmartConnectTaskReqSinkConfig:
 
     @property
     def redis_address(self):
-        """Gets the redis_address of this SmartConnectTaskReqSinkConfig.
+        r"""Gets the redis_address of this SmartConnectTaskReqSinkConfig.
 
         Redis实例地址。（仅目标端类型为Redis时需要填写）
 
@@ -145,7 +145,7 @@ class SmartConnectTaskReqSinkConfig:
 
     @redis_address.setter
     def redis_address(self, redis_address):
-        """Sets the redis_address of this SmartConnectTaskReqSinkConfig.
+        r"""Sets the redis_address of this SmartConnectTaskReqSinkConfig.
 
         Redis实例地址。（仅目标端类型为Redis时需要填写）
 
@@ -156,7 +156,7 @@ class SmartConnectTaskReqSinkConfig:
 
     @property
     def redis_type(self):
-        """Gets the redis_type of this SmartConnectTaskReqSinkConfig.
+        r"""Gets the redis_type of this SmartConnectTaskReqSinkConfig.
 
         Redis实例类型。（仅目标端类型为Redis时需要填写）
 
@@ -167,7 +167,7 @@ class SmartConnectTaskReqSinkConfig:
 
     @redis_type.setter
     def redis_type(self, redis_type):
-        """Sets the redis_type of this SmartConnectTaskReqSinkConfig.
+        r"""Sets the redis_type of this SmartConnectTaskReqSinkConfig.
 
         Redis实例类型。（仅目标端类型为Redis时需要填写）
 
@@ -178,7 +178,7 @@ class SmartConnectTaskReqSinkConfig:
 
     @property
     def dcs_instance_id(self):
-        """Gets the dcs_instance_id of this SmartConnectTaskReqSinkConfig.
+        r"""Gets the dcs_instance_id of this SmartConnectTaskReqSinkConfig.
 
         DCS实例ID。（仅目标端类型为Redis时需要填写）
 
@@ -189,7 +189,7 @@ class SmartConnectTaskReqSinkConfig:
 
     @dcs_instance_id.setter
     def dcs_instance_id(self, dcs_instance_id):
-        """Sets the dcs_instance_id of this SmartConnectTaskReqSinkConfig.
+        r"""Sets the dcs_instance_id of this SmartConnectTaskReqSinkConfig.
 
         DCS实例ID。（仅目标端类型为Redis时需要填写）
 
@@ -200,7 +200,7 @@ class SmartConnectTaskReqSinkConfig:
 
     @property
     def redis_password(self):
-        """Gets the redis_password of this SmartConnectTaskReqSinkConfig.
+        r"""Gets the redis_password of this SmartConnectTaskReqSinkConfig.
 
         Redis密码。（仅目标端类型为Redis时需要填写）
 
@@ -211,7 +211,7 @@ class SmartConnectTaskReqSinkConfig:
 
     @redis_password.setter
     def redis_password(self, redis_password):
-        """Sets the redis_password of this SmartConnectTaskReqSinkConfig.
+        r"""Sets the redis_password of this SmartConnectTaskReqSinkConfig.
 
         Redis密码。（仅目标端类型为Redis时需要填写）
 
@@ -222,7 +222,7 @@ class SmartConnectTaskReqSinkConfig:
 
     @property
     def consumer_strategy(self):
-        """Gets the consumer_strategy of this SmartConnectTaskReqSinkConfig.
+        r"""Gets the consumer_strategy of this SmartConnectTaskReqSinkConfig.
 
         转储启动偏移量，latest为获取最新的数据，earliest为获取最早的数据。（仅目标端类型为OBS时需要填写）
 
@@ -233,7 +233,7 @@ class SmartConnectTaskReqSinkConfig:
 
     @consumer_strategy.setter
     def consumer_strategy(self, consumer_strategy):
-        """Sets the consumer_strategy of this SmartConnectTaskReqSinkConfig.
+        r"""Sets the consumer_strategy of this SmartConnectTaskReqSinkConfig.
 
         转储启动偏移量，latest为获取最新的数据，earliest为获取最早的数据。（仅目标端类型为OBS时需要填写）
 
@@ -244,7 +244,7 @@ class SmartConnectTaskReqSinkConfig:
 
     @property
     def destination_file_type(self):
-        """Gets the destination_file_type of this SmartConnectTaskReqSinkConfig.
+        r"""Gets the destination_file_type of this SmartConnectTaskReqSinkConfig.
 
         转储文件格式。当前只支持TEXT。（仅目标端类型为OBS时需要填写）
 
@@ -255,7 +255,7 @@ class SmartConnectTaskReqSinkConfig:
 
     @destination_file_type.setter
     def destination_file_type(self, destination_file_type):
-        """Sets the destination_file_type of this SmartConnectTaskReqSinkConfig.
+        r"""Sets the destination_file_type of this SmartConnectTaskReqSinkConfig.
 
         转储文件格式。当前只支持TEXT。（仅目标端类型为OBS时需要填写）
 
@@ -266,7 +266,7 @@ class SmartConnectTaskReqSinkConfig:
 
     @property
     def deliver_time_interval(self):
-        """Gets the deliver_time_interval of this SmartConnectTaskReqSinkConfig.
+        r"""Gets the deliver_time_interval of this SmartConnectTaskReqSinkConfig.
 
         数据转储周期（秒），默认配置为300秒。（仅目标端类型为OBS时需要填写）
 
@@ -277,7 +277,7 @@ class SmartConnectTaskReqSinkConfig:
 
     @deliver_time_interval.setter
     def deliver_time_interval(self, deliver_time_interval):
-        """Sets the deliver_time_interval of this SmartConnectTaskReqSinkConfig.
+        r"""Sets the deliver_time_interval of this SmartConnectTaskReqSinkConfig.
 
         数据转储周期（秒），默认配置为300秒。（仅目标端类型为OBS时需要填写）
 
@@ -288,7 +288,7 @@ class SmartConnectTaskReqSinkConfig:
 
     @property
     def access_key(self):
-        """Gets the access_key of this SmartConnectTaskReqSinkConfig.
+        r"""Gets the access_key of this SmartConnectTaskReqSinkConfig.
 
         AK，访问密钥ID。（仅目标端类型为OBS时需要填写）
 
@@ -299,7 +299,7 @@ class SmartConnectTaskReqSinkConfig:
 
     @access_key.setter
     def access_key(self, access_key):
-        """Sets the access_key of this SmartConnectTaskReqSinkConfig.
+        r"""Sets the access_key of this SmartConnectTaskReqSinkConfig.
 
         AK，访问密钥ID。（仅目标端类型为OBS时需要填写）
 
@@ -310,7 +310,7 @@ class SmartConnectTaskReqSinkConfig:
 
     @property
     def secret_key(self):
-        """Gets the secret_key of this SmartConnectTaskReqSinkConfig.
+        r"""Gets the secret_key of this SmartConnectTaskReqSinkConfig.
 
         SK，与访问密钥ID结合使用的密钥。（仅目标端类型为OBS时需要填写）
 
@@ -321,7 +321,7 @@ class SmartConnectTaskReqSinkConfig:
 
     @secret_key.setter
     def secret_key(self, secret_key):
-        """Sets the secret_key of this SmartConnectTaskReqSinkConfig.
+        r"""Sets the secret_key of this SmartConnectTaskReqSinkConfig.
 
         SK，与访问密钥ID结合使用的密钥。（仅目标端类型为OBS时需要填写）
 
@@ -332,7 +332,7 @@ class SmartConnectTaskReqSinkConfig:
 
     @property
     def obs_bucket_name(self):
-        """Gets the obs_bucket_name of this SmartConnectTaskReqSinkConfig.
+        r"""Gets the obs_bucket_name of this SmartConnectTaskReqSinkConfig.
 
         转储地址，即存储Topic数据的OBS桶的名称。（仅目标端类型为OBS时需要填写）
 
@@ -343,7 +343,7 @@ class SmartConnectTaskReqSinkConfig:
 
     @obs_bucket_name.setter
     def obs_bucket_name(self, obs_bucket_name):
-        """Sets the obs_bucket_name of this SmartConnectTaskReqSinkConfig.
+        r"""Sets the obs_bucket_name of this SmartConnectTaskReqSinkConfig.
 
         转储地址，即存储Topic数据的OBS桶的名称。（仅目标端类型为OBS时需要填写）
 
@@ -354,7 +354,7 @@ class SmartConnectTaskReqSinkConfig:
 
     @property
     def obs_path(self):
-        """Gets the obs_path of this SmartConnectTaskReqSinkConfig.
+        r"""Gets the obs_path of this SmartConnectTaskReqSinkConfig.
 
         转储目录，即OBS中存储Topic的目录，多级目录可以用“/”进行分隔。（仅目标端类型为OBS时需要填写）
 
@@ -365,7 +365,7 @@ class SmartConnectTaskReqSinkConfig:
 
     @obs_path.setter
     def obs_path(self, obs_path):
-        """Sets the obs_path of this SmartConnectTaskReqSinkConfig.
+        r"""Sets the obs_path of this SmartConnectTaskReqSinkConfig.
 
         转储目录，即OBS中存储Topic的目录，多级目录可以用“/”进行分隔。（仅目标端类型为OBS时需要填写）
 
@@ -376,7 +376,7 @@ class SmartConnectTaskReqSinkConfig:
 
     @property
     def partition_format(self):
-        """Gets the partition_format of this SmartConnectTaskReqSinkConfig.
+        r"""Gets the partition_format of this SmartConnectTaskReqSinkConfig.
 
         时间目录格式。（仅目标端类型为OBS时需要填写）   - yyyy：年   - yyyy/MM：年/月   - yyyy/MM/dd：年/月/日   - yyyy/MM/dd/HH：年/月/日/时   - yyyy/MM/dd/HH/mm：年/月/日/时/分 
 
@@ -387,7 +387,7 @@ class SmartConnectTaskReqSinkConfig:
 
     @partition_format.setter
     def partition_format(self, partition_format):
-        """Sets the partition_format of this SmartConnectTaskReqSinkConfig.
+        r"""Sets the partition_format of this SmartConnectTaskReqSinkConfig.
 
         时间目录格式。（仅目标端类型为OBS时需要填写）   - yyyy：年   - yyyy/MM：年/月   - yyyy/MM/dd：年/月/日   - yyyy/MM/dd/HH：年/月/日/时   - yyyy/MM/dd/HH/mm：年/月/日/时/分 
 
@@ -398,7 +398,7 @@ class SmartConnectTaskReqSinkConfig:
 
     @property
     def record_delimiter(self):
-        """Gets the record_delimiter of this SmartConnectTaskReqSinkConfig.
+        r"""Gets the record_delimiter of this SmartConnectTaskReqSinkConfig.
 
          记录分行符，用于分隔写入转储文件的用户数据。（仅目标端类型为OBS时需要填写）   取值范围：   - 逗号“,”   - 分号“;”   - 竖线“|”   - 换行符“\\n”   - NULL 
 
@@ -409,7 +409,7 @@ class SmartConnectTaskReqSinkConfig:
 
     @record_delimiter.setter
     def record_delimiter(self, record_delimiter):
-        """Sets the record_delimiter of this SmartConnectTaskReqSinkConfig.
+        r"""Sets the record_delimiter of this SmartConnectTaskReqSinkConfig.
 
          记录分行符，用于分隔写入转储文件的用户数据。（仅目标端类型为OBS时需要填写）   取值范围：   - 逗号“,”   - 分号“;”   - 竖线“|”   - 换行符“\\n”   - NULL 
 
@@ -420,7 +420,7 @@ class SmartConnectTaskReqSinkConfig:
 
     @property
     def store_keys(self):
-        """Gets the store_keys of this SmartConnectTaskReqSinkConfig.
+        r"""Gets the store_keys of this SmartConnectTaskReqSinkConfig.
 
         是否转储Key，开启表示转储Key，关闭表示不转储Key。（仅目标端类型为OBS时需要填写）
 
@@ -431,7 +431,7 @@ class SmartConnectTaskReqSinkConfig:
 
     @store_keys.setter
     def store_keys(self, store_keys):
-        """Sets the store_keys of this SmartConnectTaskReqSinkConfig.
+        r"""Sets the store_keys of this SmartConnectTaskReqSinkConfig.
 
         是否转储Key，开启表示转储Key，关闭表示不转储Key。（仅目标端类型为OBS时需要填写）
 

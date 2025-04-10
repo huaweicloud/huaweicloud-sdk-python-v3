@@ -27,7 +27,7 @@ class CreateManagerWorkSpaceRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateManagerWorkSpaceRequest
+        r"""CreateManagerWorkSpaceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateManagerWorkSpaceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateManagerWorkSpaceRequest.
+        r"""Gets the instance_id of this CreateManagerWorkSpaceRequest.
 
         DataArtsStudio实例id
 
@@ -60,7 +60,7 @@ class CreateManagerWorkSpaceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateManagerWorkSpaceRequest.
+        r"""Sets the instance_id of this CreateManagerWorkSpaceRequest.
 
         DataArtsStudio实例id
 
@@ -71,7 +71,7 @@ class CreateManagerWorkSpaceRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateManagerWorkSpaceRequest.
+        r"""Gets the body of this CreateManagerWorkSpaceRequest.
 
         :return: The body of this CreateManagerWorkSpaceRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateWorkspaceParams`
@@ -80,7 +80,7 @@ class CreateManagerWorkSpaceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateManagerWorkSpaceRequest.
+        r"""Sets the body of this CreateManagerWorkSpaceRequest.
 
         :param body: The body of this CreateManagerWorkSpaceRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.CreateWorkspaceParams`

@@ -28,7 +28,7 @@ class CreateUnscopedTokenWithIdTokenResponse(SdkResponse):
     }
 
     def __init__(self, token=None, x_subject_token=None):
-        """CreateUnscopedTokenWithIdTokenResponse
+        r"""CreateUnscopedTokenWithIdTokenResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateUnscopedTokenWithIdTokenResponse(SdkResponse):
 
     @property
     def token(self):
-        """Gets the token of this CreateUnscopedTokenWithIdTokenResponse.
+        r"""Gets the token of this CreateUnscopedTokenWithIdTokenResponse.
 
         :return: The token of this CreateUnscopedTokenWithIdTokenResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.UnscopedTokenInfo`
@@ -60,7 +60,7 @@ class CreateUnscopedTokenWithIdTokenResponse(SdkResponse):
 
     @token.setter
     def token(self, token):
-        """Sets the token of this CreateUnscopedTokenWithIdTokenResponse.
+        r"""Sets the token of this CreateUnscopedTokenWithIdTokenResponse.
 
         :param token: The token of this CreateUnscopedTokenWithIdTokenResponse.
         :type token: :class:`huaweicloudsdkiam.v3.UnscopedTokenInfo`
@@ -69,7 +69,7 @@ class CreateUnscopedTokenWithIdTokenResponse(SdkResponse):
 
     @property
     def x_subject_token(self):
-        """Gets the x_subject_token of this CreateUnscopedTokenWithIdTokenResponse.
+        r"""Gets the x_subject_token of this CreateUnscopedTokenWithIdTokenResponse.
 
         :return: The x_subject_token of this CreateUnscopedTokenWithIdTokenResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class CreateUnscopedTokenWithIdTokenResponse(SdkResponse):
 
     @x_subject_token.setter
     def x_subject_token(self, x_subject_token):
-        """Sets the x_subject_token of this CreateUnscopedTokenWithIdTokenResponse.
+        r"""Sets the x_subject_token of this CreateUnscopedTokenWithIdTokenResponse.
 
         :param x_subject_token: The x_subject_token of this CreateUnscopedTokenWithIdTokenResponse.
         :type x_subject_token: str

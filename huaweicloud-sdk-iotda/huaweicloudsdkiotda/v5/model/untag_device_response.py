@@ -26,7 +26,7 @@ class UntagDeviceResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """UntagDeviceResponse
+        r"""UntagDeviceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UntagDeviceResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this UntagDeviceResponse.
+        r"""Gets the body of this UntagDeviceResponse.
 
         :return: The body of this UntagDeviceResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class UntagDeviceResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UntagDeviceResponse.
+        r"""Sets the body of this UntagDeviceResponse.
 
         :param body: The body of this UntagDeviceResponse.
         :type body: str

@@ -30,7 +30,7 @@ class CreateAimPersonalTemplateResponse(SdkResponse):
     }
 
     def __init__(self, status=None, message=None, data=None):
-        """CreateAimPersonalTemplateResponse
+        r"""CreateAimPersonalTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateAimPersonalTemplateResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateAimPersonalTemplateResponse.
+        r"""Gets the status of this CreateAimPersonalTemplateResponse.
 
         状态码。
 
@@ -69,7 +69,7 @@ class CreateAimPersonalTemplateResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateAimPersonalTemplateResponse.
+        r"""Sets the status of this CreateAimPersonalTemplateResponse.
 
         状态码。
 
@@ -80,7 +80,7 @@ class CreateAimPersonalTemplateResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this CreateAimPersonalTemplateResponse.
+        r"""Gets the message of this CreateAimPersonalTemplateResponse.
 
         响应信息。
 
@@ -91,7 +91,7 @@ class CreateAimPersonalTemplateResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CreateAimPersonalTemplateResponse.
+        r"""Sets the message of this CreateAimPersonalTemplateResponse.
 
         响应信息。
 
@@ -102,7 +102,7 @@ class CreateAimPersonalTemplateResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this CreateAimPersonalTemplateResponse.
+        r"""Gets the data of this CreateAimPersonalTemplateResponse.
 
         :return: The data of this CreateAimPersonalTemplateResponse.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.CreateAimPersonalTemplateResponseMode`
@@ -111,7 +111,7 @@ class CreateAimPersonalTemplateResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this CreateAimPersonalTemplateResponse.
+        r"""Sets the data of this CreateAimPersonalTemplateResponse.
 
         :param data: The data of this CreateAimPersonalTemplateResponse.
         :type data: :class:`huaweicloudsdkkoomessage.v1.CreateAimPersonalTemplateResponseMode`

@@ -27,7 +27,7 @@ class UpdateScaleOutPolicyRequest:
     }
 
     def __init__(self, id=None, body=None):
-        """UpdateScaleOutPolicyRequest
+        r"""UpdateScaleOutPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateScaleOutPolicyRequest:
 
     @property
     def id(self):
-        """Gets the id of this UpdateScaleOutPolicyRequest.
+        r"""Gets the id of this UpdateScaleOutPolicyRequest.
 
         策略id
 
@@ -60,7 +60,7 @@ class UpdateScaleOutPolicyRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateScaleOutPolicyRequest.
+        r"""Sets the id of this UpdateScaleOutPolicyRequest.
 
         策略id
 
@@ -71,7 +71,7 @@ class UpdateScaleOutPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateScaleOutPolicyRequest.
+        r"""Gets the body of this UpdateScaleOutPolicyRequest.
 
         :return: The body of this UpdateScaleOutPolicyRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateScaleOutPolicyReq`
@@ -80,7 +80,7 @@ class UpdateScaleOutPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateScaleOutPolicyRequest.
+        r"""Sets the body of this UpdateScaleOutPolicyRequest.
 
         :param body: The body of this UpdateScaleOutPolicyRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.UpdateScaleOutPolicyReq`

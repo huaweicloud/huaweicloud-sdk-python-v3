@@ -35,7 +35,7 @@ class Database:
     }
 
     def __init__(self, database_name=None, owner=None, table_number=None, description=None, enterprise_project_id=None, resource_id=None):
-        """Database
+        r"""Database
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class Database:
 
     @property
     def database_name(self):
-        """Gets the database_name of this Database.
+        r"""Gets the database_name of this Database.
 
         数据库名称。
 
@@ -87,7 +87,7 @@ class Database:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this Database.
+        r"""Sets the database_name of this Database.
 
         数据库名称。
 
@@ -98,7 +98,7 @@ class Database:
 
     @property
     def owner(self):
-        """Gets the owner of this Database.
+        r"""Gets the owner of this Database.
 
         数据库的创建者。
 
@@ -109,7 +109,7 @@ class Database:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this Database.
+        r"""Sets the owner of this Database.
 
         数据库的创建者。
 
@@ -120,7 +120,7 @@ class Database:
 
     @property
     def table_number(self):
-        """Gets the table_number of this Database.
+        r"""Gets the table_number of this Database.
 
         数据库中表的个数。
 
@@ -131,7 +131,7 @@ class Database:
 
     @table_number.setter
     def table_number(self, table_number):
-        """Sets the table_number of this Database.
+        r"""Sets the table_number of this Database.
 
         数据库中表的个数。
 
@@ -142,7 +142,7 @@ class Database:
 
     @property
     def description(self):
-        """Gets the description of this Database.
+        r"""Gets the description of this Database.
 
         数据库相关的描述信息。
 
@@ -153,7 +153,7 @@ class Database:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Database.
+        r"""Sets the description of this Database.
 
         数据库相关的描述信息。
 
@@ -164,7 +164,7 @@ class Database:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this Database.
+        r"""Gets the enterprise_project_id of this Database.
 
         企业项目ID，“0”表示default，即默认的企业项目。关于如何设置企业项目请参考《企业管理用户指南》。 说明： 开通了企业管理服务的用户可设置该参数绑定指定的项目。
 
@@ -175,7 +175,7 @@ class Database:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this Database.
+        r"""Sets the enterprise_project_id of this Database.
 
         企业项目ID，“0”表示default，即默认的企业项目。关于如何设置企业项目请参考《企业管理用户指南》。 说明： 开通了企业管理服务的用户可设置该参数绑定指定的项目。
 
@@ -186,7 +186,7 @@ class Database:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this Database.
+        r"""Gets the resource_id of this Database.
 
         资源ID。
 
@@ -197,7 +197,7 @@ class Database:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this Database.
+        r"""Sets the resource_id of this Database.
 
         资源ID。
 

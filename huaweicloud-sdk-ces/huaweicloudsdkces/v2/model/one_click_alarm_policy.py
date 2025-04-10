@@ -45,7 +45,7 @@ class OneClickAlarmPolicy:
     }
 
     def __init__(self, alarm_policy_id=None, metric_name=None, period=None, filter=None, comparison_operator=None, value=None, unit=None, count=None, suppress_duration=None, level=None, enabled=None):
-        """OneClickAlarmPolicy
+        r"""OneClickAlarmPolicy
 
         The model defined in huaweicloud sdk
 
@@ -105,7 +105,7 @@ class OneClickAlarmPolicy:
 
     @property
     def alarm_policy_id(self):
-        """Gets the alarm_policy_id of this OneClickAlarmPolicy.
+        r"""Gets the alarm_policy_id of this OneClickAlarmPolicy.
 
         告警策略ID。
 
@@ -116,7 +116,7 @@ class OneClickAlarmPolicy:
 
     @alarm_policy_id.setter
     def alarm_policy_id(self, alarm_policy_id):
-        """Sets the alarm_policy_id of this OneClickAlarmPolicy.
+        r"""Sets the alarm_policy_id of this OneClickAlarmPolicy.
 
         告警策略ID。
 
@@ -127,7 +127,7 @@ class OneClickAlarmPolicy:
 
     @property
     def metric_name(self):
-        """Gets the metric_name of this OneClickAlarmPolicy.
+        r"""Gets the metric_name of this OneClickAlarmPolicy.
 
         资源的监控指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，字符长度最短为1，最大为64；如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率；各服务的指标名称可查看：“[服务指标名称](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
@@ -138,7 +138,7 @@ class OneClickAlarmPolicy:
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        """Sets the metric_name of this OneClickAlarmPolicy.
+        r"""Sets the metric_name of this OneClickAlarmPolicy.
 
         资源的监控指标名称，必须以字母开头，只能包含0-9/a-z/A-Z/_，字符长度最短为1，最大为64；如：弹性云服务器中的监控指标cpu_util，表示弹性服务器的CPU使用率；文档数据库中的指标mongo001_command_ps，表示command执行频率；各服务的指标名称可查看：“[服务指标名称](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
@@ -149,7 +149,7 @@ class OneClickAlarmPolicy:
 
     @property
     def period(self):
-        """Gets the period of this OneClickAlarmPolicy.
+        r"""Gets the period of this OneClickAlarmPolicy.
 
         :return: The period of this OneClickAlarmPolicy.
         :rtype: :class:`huaweicloudsdkces.v2.Period`
@@ -158,7 +158,7 @@ class OneClickAlarmPolicy:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this OneClickAlarmPolicy.
+        r"""Sets the period of this OneClickAlarmPolicy.
 
         :param period: The period of this OneClickAlarmPolicy.
         :type period: :class:`huaweicloudsdkces.v2.Period`
@@ -167,7 +167,7 @@ class OneClickAlarmPolicy:
 
     @property
     def filter(self):
-        """Gets the filter of this OneClickAlarmPolicy.
+        r"""Gets the filter of this OneClickAlarmPolicy.
 
         聚合方式, 支持的值为(average|min|max|sum)
 
@@ -178,7 +178,7 @@ class OneClickAlarmPolicy:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this OneClickAlarmPolicy.
+        r"""Sets the filter of this OneClickAlarmPolicy.
 
         聚合方式, 支持的值为(average|min|max|sum)
 
@@ -189,7 +189,7 @@ class OneClickAlarmPolicy:
 
     @property
     def comparison_operator(self):
-        """Gets the comparison_operator of this OneClickAlarmPolicy.
+        r"""Gets the comparison_operator of this OneClickAlarmPolicy.
 
         告警阈值的比较条件，支持的值为(>|<|>=|<=|=|!=|cycle_decrease|cycle_increase|cycle_wave)，cycle_decrease为环比下降，cycle_increase为环比上升，cycle_wave为环比波动
 
@@ -200,7 +200,7 @@ class OneClickAlarmPolicy:
 
     @comparison_operator.setter
     def comparison_operator(self, comparison_operator):
-        """Sets the comparison_operator of this OneClickAlarmPolicy.
+        r"""Sets the comparison_operator of this OneClickAlarmPolicy.
 
         告警阈值的比较条件，支持的值为(>|<|>=|<=|=|!=|cycle_decrease|cycle_increase|cycle_wave)，cycle_decrease为环比下降，cycle_increase为环比上升，cycle_wave为环比波动
 
@@ -211,7 +211,7 @@ class OneClickAlarmPolicy:
 
     @property
     def value(self):
-        """Gets the value of this OneClickAlarmPolicy.
+        r"""Gets the value of this OneClickAlarmPolicy.
 
         阈值
 
@@ -222,7 +222,7 @@ class OneClickAlarmPolicy:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this OneClickAlarmPolicy.
+        r"""Sets the value of this OneClickAlarmPolicy.
 
         阈值
 
@@ -233,7 +233,7 @@ class OneClickAlarmPolicy:
 
     @property
     def unit(self):
-        """Gets the unit of this OneClickAlarmPolicy.
+        r"""Gets the unit of this OneClickAlarmPolicy.
 
         单位
 
@@ -244,7 +244,7 @@ class OneClickAlarmPolicy:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this OneClickAlarmPolicy.
+        r"""Sets the unit of this OneClickAlarmPolicy.
 
         单位
 
@@ -255,7 +255,7 @@ class OneClickAlarmPolicy:
 
     @property
     def count(self):
-        """Gets the count of this OneClickAlarmPolicy.
+        r"""Gets the count of this OneClickAlarmPolicy.
 
         次数
 
@@ -266,7 +266,7 @@ class OneClickAlarmPolicy:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this OneClickAlarmPolicy.
+        r"""Sets the count of this OneClickAlarmPolicy.
 
         次数
 
@@ -277,7 +277,7 @@ class OneClickAlarmPolicy:
 
     @property
     def suppress_duration(self):
-        """Gets the suppress_duration of this OneClickAlarmPolicy.
+        r"""Gets the suppress_duration of this OneClickAlarmPolicy.
 
         :return: The suppress_duration of this OneClickAlarmPolicy.
         :rtype: :class:`huaweicloudsdkces.v2.SuppressDuration`
@@ -286,7 +286,7 @@ class OneClickAlarmPolicy:
 
     @suppress_duration.setter
     def suppress_duration(self, suppress_duration):
-        """Sets the suppress_duration of this OneClickAlarmPolicy.
+        r"""Sets the suppress_duration of this OneClickAlarmPolicy.
 
         :param suppress_duration: The suppress_duration of this OneClickAlarmPolicy.
         :type suppress_duration: :class:`huaweicloudsdkces.v2.SuppressDuration`
@@ -295,7 +295,7 @@ class OneClickAlarmPolicy:
 
     @property
     def level(self):
-        """Gets the level of this OneClickAlarmPolicy.
+        r"""Gets the level of this OneClickAlarmPolicy.
 
         告警级别, 1为紧急，2为重要，3为次要，4为提示
 
@@ -306,7 +306,7 @@ class OneClickAlarmPolicy:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this OneClickAlarmPolicy.
+        r"""Sets the level of this OneClickAlarmPolicy.
 
         告警级别, 1为紧急，2为重要，3为次要，4为提示
 
@@ -317,7 +317,7 @@ class OneClickAlarmPolicy:
 
     @property
     def enabled(self):
-        """Gets the enabled of this OneClickAlarmPolicy.
+        r"""Gets the enabled of this OneClickAlarmPolicy.
 
         开关
 
@@ -328,7 +328,7 @@ class OneClickAlarmPolicy:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this OneClickAlarmPolicy.
+        r"""Sets the enabled of this OneClickAlarmPolicy.
 
         开关
 

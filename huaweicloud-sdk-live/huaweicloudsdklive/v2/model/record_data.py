@@ -27,7 +27,7 @@ class RecordData:
     }
 
     def __init__(self, concurrent_count=None, time=None):
-        """RecordData
+        r"""RecordData
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RecordData:
 
     @property
     def concurrent_count(self):
-        """Gets the concurrent_count of this RecordData.
+        r"""Gets the concurrent_count of this RecordData.
 
         最大并发路数。
 
@@ -61,7 +61,7 @@ class RecordData:
 
     @concurrent_count.setter
     def concurrent_count(self, concurrent_count):
-        """Sets the concurrent_count of this RecordData.
+        r"""Sets the concurrent_count of this RecordData.
 
         最大并发路数。
 
@@ -72,7 +72,7 @@ class RecordData:
 
     @property
     def time(self):
-        """Gets the time of this RecordData.
+        r"""Gets the time of this RecordData.
 
         采样时间，每小时内最大并发路数时间点。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ 。
 
@@ -83,7 +83,7 @@ class RecordData:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this RecordData.
+        r"""Sets the time of this RecordData.
 
         采样时间，每小时内最大并发路数时间点。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ 。
 

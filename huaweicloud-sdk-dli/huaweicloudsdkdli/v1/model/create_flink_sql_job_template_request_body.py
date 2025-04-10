@@ -33,7 +33,7 @@ class CreateFlinkSqlJobTemplateRequestBody:
     }
 
     def __init__(self, name=None, desc=None, sql_body=None, tags=None, job_type=None):
-        """CreateFlinkSqlJobTemplateRequestBody
+        r"""CreateFlinkSqlJobTemplateRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class CreateFlinkSqlJobTemplateRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateFlinkSqlJobTemplateRequestBody.
+        r"""Gets the name of this CreateFlinkSqlJobTemplateRequestBody.
 
         模块名称，长度限制：0-57个字符 。
 
@@ -81,7 +81,7 @@ class CreateFlinkSqlJobTemplateRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateFlinkSqlJobTemplateRequestBody.
+        r"""Sets the name of this CreateFlinkSqlJobTemplateRequestBody.
 
         模块名称，长度限制：0-57个字符 。
 
@@ -92,7 +92,7 @@ class CreateFlinkSqlJobTemplateRequestBody:
 
     @property
     def desc(self):
-        """Gets the desc of this CreateFlinkSqlJobTemplateRequestBody.
+        r"""Gets the desc of this CreateFlinkSqlJobTemplateRequestBody.
 
         模板描述，长度限制：0-2048个字符。
 
@@ -103,7 +103,7 @@ class CreateFlinkSqlJobTemplateRequestBody:
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this CreateFlinkSqlJobTemplateRequestBody.
+        r"""Sets the desc of this CreateFlinkSqlJobTemplateRequestBody.
 
         模板描述，长度限制：0-2048个字符。
 
@@ -114,7 +114,7 @@ class CreateFlinkSqlJobTemplateRequestBody:
 
     @property
     def sql_body(self):
-        """Gets the sql_body of this CreateFlinkSqlJobTemplateRequestBody.
+        r"""Gets the sql_body of this CreateFlinkSqlJobTemplateRequestBody.
 
         Stream SQL语句，至少包含source，query，sink三个部分, 长度限制：0-2048个字符。
 
@@ -125,7 +125,7 @@ class CreateFlinkSqlJobTemplateRequestBody:
 
     @sql_body.setter
     def sql_body(self, sql_body):
-        """Sets the sql_body of this CreateFlinkSqlJobTemplateRequestBody.
+        r"""Sets the sql_body of this CreateFlinkSqlJobTemplateRequestBody.
 
         Stream SQL语句，至少包含source，query，sink三个部分, 长度限制：0-2048个字符。
 
@@ -136,7 +136,7 @@ class CreateFlinkSqlJobTemplateRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateFlinkSqlJobTemplateRequestBody.
+        r"""Gets the tags of this CreateFlinkSqlJobTemplateRequestBody.
 
         标签
 
@@ -147,7 +147,7 @@ class CreateFlinkSqlJobTemplateRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateFlinkSqlJobTemplateRequestBody.
+        r"""Sets the tags of this CreateFlinkSqlJobTemplateRequestBody.
 
         标签
 
@@ -158,7 +158,7 @@ class CreateFlinkSqlJobTemplateRequestBody:
 
     @property
     def job_type(self):
-        """Gets the job_type of this CreateFlinkSqlJobTemplateRequestBody.
+        r"""Gets the job_type of this CreateFlinkSqlJobTemplateRequestBody.
 
         作业模板的类型，默认为flink_sql_job，仅支持flink_sql_job和flink_opensource_sql_job
 
@@ -169,7 +169,7 @@ class CreateFlinkSqlJobTemplateRequestBody:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this CreateFlinkSqlJobTemplateRequestBody.
+        r"""Sets the job_type of this CreateFlinkSqlJobTemplateRequestBody.
 
         作业模板的类型，默认为flink_sql_job，仅支持flink_sql_job和flink_opensource_sql_job
 

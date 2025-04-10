@@ -27,7 +27,7 @@ class TagsResult:
     }
 
     def __init__(self, key=None, value=None):
-        """TagsResult
+        r"""TagsResult
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TagsResult:
 
     @property
     def key(self):
-        """Gets the key of this TagsResult.
+        r"""Gets the key of this TagsResult.
 
         标签键。最大长度36个unicode字符，key不能为空。 字符集：0-9，A-Z，a-z，“_”，“-”，中文。
 
@@ -61,7 +61,7 @@ class TagsResult:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this TagsResult.
+        r"""Sets the key of this TagsResult.
 
         标签键。最大长度36个unicode字符，key不能为空。 字符集：0-9，A-Z，a-z，“_”，“-”，中文。
 
@@ -72,7 +72,7 @@ class TagsResult:
 
     @property
     def value(self):
-        """Gets the value of this TagsResult.
+        r"""Gets the value of this TagsResult.
 
         标签值。最大长度43个unicode字符，可以为空字符串。 字符集：0-9，A-Z，a-z，“_”，“.”，“-”，中文。
 
@@ -83,7 +83,7 @@ class TagsResult:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this TagsResult.
+        r"""Sets the value of this TagsResult.
 
         标签值。最大长度43个unicode字符，可以为空字符串。 字符集：0-9，A-Z，a-z，“_”，“.”，“-”，中文。
 

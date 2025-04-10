@@ -37,7 +37,7 @@ class ListTemplateRulesRequest:
     }
 
     def __init__(self, project_id=None, ruleset_id=None, types=None, languages=None, tags=None, offset=None, limit=None):
-        """ListTemplateRulesRequest
+        r"""ListTemplateRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class ListTemplateRulesRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListTemplateRulesRequest.
+        r"""Gets the project_id of this ListTemplateRulesRequest.
 
         项目ID
 
@@ -93,7 +93,7 @@ class ListTemplateRulesRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListTemplateRulesRequest.
+        r"""Sets the project_id of this ListTemplateRulesRequest.
 
         项目ID
 
@@ -104,7 +104,7 @@ class ListTemplateRulesRequest:
 
     @property
     def ruleset_id(self):
-        """Gets the ruleset_id of this ListTemplateRulesRequest.
+        r"""Gets the ruleset_id of this ListTemplateRulesRequest.
 
         规则集ID
 
@@ -115,7 +115,7 @@ class ListTemplateRulesRequest:
 
     @ruleset_id.setter
     def ruleset_id(self, ruleset_id):
-        """Sets the ruleset_id of this ListTemplateRulesRequest.
+        r"""Sets the ruleset_id of this ListTemplateRulesRequest.
 
         规则集ID
 
@@ -126,7 +126,7 @@ class ListTemplateRulesRequest:
 
     @property
     def types(self):
-        """Gets the types of this ListTemplateRulesRequest.
+        r"""Gets the types of this ListTemplateRulesRequest.
 
         规则状态  '1查询全部，2已启动，3未启用'
 
@@ -137,7 +137,7 @@ class ListTemplateRulesRequest:
 
     @types.setter
     def types(self, types):
-        """Sets the types of this ListTemplateRulesRequest.
+        r"""Sets the types of this ListTemplateRulesRequest.
 
         规则状态  '1查询全部，2已启动，3未启用'
 
@@ -148,7 +148,7 @@ class ListTemplateRulesRequest:
 
     @property
     def languages(self):
-        """Gets the languages of this ListTemplateRulesRequest.
+        r"""Gets the languages of this ListTemplateRulesRequest.
 
         规则语言
 
@@ -159,7 +159,7 @@ class ListTemplateRulesRequest:
 
     @languages.setter
     def languages(self, languages):
-        """Sets the languages of this ListTemplateRulesRequest.
+        r"""Sets the languages of this ListTemplateRulesRequest.
 
         规则语言
 
@@ -170,7 +170,7 @@ class ListTemplateRulesRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this ListTemplateRulesRequest.
+        r"""Gets the tags of this ListTemplateRulesRequest.
 
         规则所属标签
 
@@ -181,7 +181,7 @@ class ListTemplateRulesRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListTemplateRulesRequest.
+        r"""Sets the tags of this ListTemplateRulesRequest.
 
         规则所属标签
 
@@ -192,7 +192,7 @@ class ListTemplateRulesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTemplateRulesRequest.
+        r"""Gets the offset of this ListTemplateRulesRequest.
 
         分页索引，偏移量
 
@@ -203,7 +203,7 @@ class ListTemplateRulesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTemplateRulesRequest.
+        r"""Sets the offset of this ListTemplateRulesRequest.
 
         分页索引，偏移量
 
@@ -214,7 +214,7 @@ class ListTemplateRulesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTemplateRulesRequest.
+        r"""Gets the limit of this ListTemplateRulesRequest.
 
         每页显示的数量
 
@@ -225,7 +225,7 @@ class ListTemplateRulesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTemplateRulesRequest.
+        r"""Sets the limit of this ListTemplateRulesRequest.
 
         每页显示的数量
 

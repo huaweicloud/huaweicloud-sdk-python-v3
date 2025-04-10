@@ -29,7 +29,7 @@ class DeleteStandardTemplateRequest:
     }
 
     def __init__(self, workspace=None, x_project_id=None, ids=None):
-        """DeleteStandardTemplateRequest
+        r"""DeleteStandardTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteStandardTemplateRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this DeleteStandardTemplateRequest.
+        r"""Gets the workspace of this DeleteStandardTemplateRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -66,7 +66,7 @@ class DeleteStandardTemplateRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this DeleteStandardTemplateRequest.
+        r"""Sets the workspace of this DeleteStandardTemplateRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -77,7 +77,7 @@ class DeleteStandardTemplateRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this DeleteStandardTemplateRequest.
+        r"""Gets the x_project_id of this DeleteStandardTemplateRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -88,7 +88,7 @@ class DeleteStandardTemplateRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this DeleteStandardTemplateRequest.
+        r"""Sets the x_project_id of this DeleteStandardTemplateRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -99,7 +99,7 @@ class DeleteStandardTemplateRequest:
 
     @property
     def ids(self):
-        """Gets the ids of this DeleteStandardTemplateRequest.
+        r"""Gets the ids of this DeleteStandardTemplateRequest.
 
         待删除的数据标准的ID集合。
 
@@ -110,7 +110,7 @@ class DeleteStandardTemplateRequest:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this DeleteStandardTemplateRequest.
+        r"""Sets the ids of this DeleteStandardTemplateRequest.
 
         待删除的数据标准的ID集合。
 

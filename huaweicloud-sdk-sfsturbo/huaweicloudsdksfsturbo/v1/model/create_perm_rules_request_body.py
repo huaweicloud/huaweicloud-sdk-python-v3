@@ -25,7 +25,7 @@ class CreatePermRulesRequestBody:
     }
 
     def __init__(self, rules=None):
-        """CreatePermRulesRequestBody
+        r"""CreatePermRulesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreatePermRulesRequestBody:
 
     @property
     def rules(self):
-        """Gets the rules of this CreatePermRulesRequestBody.
+        r"""Gets the rules of this CreatePermRulesRequestBody.
 
         权限信息，一次最多允许添加5条规则
 
@@ -53,7 +53,7 @@ class CreatePermRulesRequestBody:
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this CreatePermRulesRequestBody.
+        r"""Sets the rules of this CreatePermRulesRequestBody.
 
         权限信息，一次最多允许添加5条规则
 

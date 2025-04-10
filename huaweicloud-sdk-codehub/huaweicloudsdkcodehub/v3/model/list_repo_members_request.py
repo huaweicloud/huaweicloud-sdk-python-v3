@@ -31,7 +31,7 @@ class ListRepoMembersRequest:
     }
 
     def __init__(self, page_index=None, page_size=None, repository_uuid=None, subject=None):
-        """ListRepoMembersRequest
+        r"""ListRepoMembersRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListRepoMembersRequest:
 
     @property
     def page_index(self):
-        """Gets the page_index of this ListRepoMembersRequest.
+        r"""Gets the page_index of this ListRepoMembersRequest.
 
         第几页
 
@@ -74,7 +74,7 @@ class ListRepoMembersRequest:
 
     @page_index.setter
     def page_index(self, page_index):
-        """Sets the page_index of this ListRepoMembersRequest.
+        r"""Sets the page_index of this ListRepoMembersRequest.
 
         第几页
 
@@ -85,7 +85,7 @@ class ListRepoMembersRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ListRepoMembersRequest.
+        r"""Gets the page_size of this ListRepoMembersRequest.
 
         每页显示size
 
@@ -96,7 +96,7 @@ class ListRepoMembersRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ListRepoMembersRequest.
+        r"""Sets the page_size of this ListRepoMembersRequest.
 
         每页显示size
 
@@ -107,7 +107,7 @@ class ListRepoMembersRequest:
 
     @property
     def repository_uuid(self):
-        """Gets the repository_uuid of this ListRepoMembersRequest.
+        r"""Gets the repository_uuid of this ListRepoMembersRequest.
 
         仓库uuid(由CreateRepository接口返回)
 
@@ -118,7 +118,7 @@ class ListRepoMembersRequest:
 
     @repository_uuid.setter
     def repository_uuid(self, repository_uuid):
-        """Sets the repository_uuid of this ListRepoMembersRequest.
+        r"""Sets the repository_uuid of this ListRepoMembersRequest.
 
         仓库uuid(由CreateRepository接口返回)
 
@@ -129,7 +129,7 @@ class ListRepoMembersRequest:
 
     @property
     def subject(self):
-        """Gets the subject of this ListRepoMembersRequest.
+        r"""Gets the subject of this ListRepoMembersRequest.
 
         搜索关键字
 
@@ -140,7 +140,7 @@ class ListRepoMembersRequest:
 
     @subject.setter
     def subject(self, subject):
-        """Sets the subject of this ListRepoMembersRequest.
+        r"""Sets the subject of this ListRepoMembersRequest.
 
         搜索关键字
 

@@ -43,7 +43,7 @@ class TicsLeagueAuditLog:
     }
 
     def __init__(self, create_user_domain_id=None, create_user_project_id=None, creator_alias_name=None, event_end_time=None, event_info=None, event_start_time=None, event_status=None, id=None, league_id=None, sponsor_agent_name=None):
-        """TicsLeagueAuditLog
+        r"""TicsLeagueAuditLog
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class TicsLeagueAuditLog:
 
     @property
     def create_user_domain_id(self):
-        """Gets the create_user_domain_id of this TicsLeagueAuditLog.
+        r"""Gets the create_user_domain_id of this TicsLeagueAuditLog.
 
         创建者账户id
 
@@ -117,7 +117,7 @@ class TicsLeagueAuditLog:
 
     @create_user_domain_id.setter
     def create_user_domain_id(self, create_user_domain_id):
-        """Sets the create_user_domain_id of this TicsLeagueAuditLog.
+        r"""Sets the create_user_domain_id of this TicsLeagueAuditLog.
 
         创建者账户id
 
@@ -128,7 +128,7 @@ class TicsLeagueAuditLog:
 
     @property
     def create_user_project_id(self):
-        """Gets the create_user_project_id of this TicsLeagueAuditLog.
+        r"""Gets the create_user_project_id of this TicsLeagueAuditLog.
 
         创建者项目id
 
@@ -139,7 +139,7 @@ class TicsLeagueAuditLog:
 
     @create_user_project_id.setter
     def create_user_project_id(self, create_user_project_id):
-        """Sets the create_user_project_id of this TicsLeagueAuditLog.
+        r"""Sets the create_user_project_id of this TicsLeagueAuditLog.
 
         创建者项目id
 
@@ -150,7 +150,7 @@ class TicsLeagueAuditLog:
 
     @property
     def creator_alias_name(self):
-        """Gets the creator_alias_name of this TicsLeagueAuditLog.
+        r"""Gets the creator_alias_name of this TicsLeagueAuditLog.
 
         创建者别名
 
@@ -161,7 +161,7 @@ class TicsLeagueAuditLog:
 
     @creator_alias_name.setter
     def creator_alias_name(self, creator_alias_name):
-        """Sets the creator_alias_name of this TicsLeagueAuditLog.
+        r"""Sets the creator_alias_name of this TicsLeagueAuditLog.
 
         创建者别名
 
@@ -172,7 +172,7 @@ class TicsLeagueAuditLog:
 
     @property
     def event_end_time(self):
-        """Gets the event_end_time of this TicsLeagueAuditLog.
+        r"""Gets the event_end_time of this TicsLeagueAuditLog.
 
         事件结束时间
 
@@ -183,7 +183,7 @@ class TicsLeagueAuditLog:
 
     @event_end_time.setter
     def event_end_time(self, event_end_time):
-        """Sets the event_end_time of this TicsLeagueAuditLog.
+        r"""Sets the event_end_time of this TicsLeagueAuditLog.
 
         事件结束时间
 
@@ -194,7 +194,7 @@ class TicsLeagueAuditLog:
 
     @property
     def event_info(self):
-        """Gets the event_info of this TicsLeagueAuditLog.
+        r"""Gets the event_info of this TicsLeagueAuditLog.
 
         事件信息
 
@@ -205,7 +205,7 @@ class TicsLeagueAuditLog:
 
     @event_info.setter
     def event_info(self, event_info):
-        """Sets the event_info of this TicsLeagueAuditLog.
+        r"""Sets the event_info of this TicsLeagueAuditLog.
 
         事件信息
 
@@ -216,7 +216,7 @@ class TicsLeagueAuditLog:
 
     @property
     def event_start_time(self):
-        """Gets the event_start_time of this TicsLeagueAuditLog.
+        r"""Gets the event_start_time of this TicsLeagueAuditLog.
 
         事件开始时间
 
@@ -227,7 +227,7 @@ class TicsLeagueAuditLog:
 
     @event_start_time.setter
     def event_start_time(self, event_start_time):
-        """Sets the event_start_time of this TicsLeagueAuditLog.
+        r"""Sets the event_start_time of this TicsLeagueAuditLog.
 
         事件开始时间
 
@@ -238,7 +238,7 @@ class TicsLeagueAuditLog:
 
     @property
     def event_status(self):
-        """Gets the event_status of this TicsLeagueAuditLog.
+        r"""Gets the event_status of this TicsLeagueAuditLog.
 
         事件状态，NEW.新建,SUBMITING.提交中,ACCEPTED.已接收,DEPLOYING.部署中,RUNNING.运行中,SUCCEEDED.成功,FAILED.失败,TERMINATED.中止,TERMINATING.中止中,PENDING.等待中
 
@@ -249,7 +249,7 @@ class TicsLeagueAuditLog:
 
     @event_status.setter
     def event_status(self, event_status):
-        """Sets the event_status of this TicsLeagueAuditLog.
+        r"""Sets the event_status of this TicsLeagueAuditLog.
 
         事件状态，NEW.新建,SUBMITING.提交中,ACCEPTED.已接收,DEPLOYING.部署中,RUNNING.运行中,SUCCEEDED.成功,FAILED.失败,TERMINATED.中止,TERMINATING.中止中,PENDING.等待中
 
@@ -260,7 +260,7 @@ class TicsLeagueAuditLog:
 
     @property
     def id(self):
-        """Gets the id of this TicsLeagueAuditLog.
+        r"""Gets the id of this TicsLeagueAuditLog.
 
         日志记录id
 
@@ -271,7 +271,7 @@ class TicsLeagueAuditLog:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TicsLeagueAuditLog.
+        r"""Sets the id of this TicsLeagueAuditLog.
 
         日志记录id
 
@@ -282,7 +282,7 @@ class TicsLeagueAuditLog:
 
     @property
     def league_id(self):
-        """Gets the league_id of this TicsLeagueAuditLog.
+        r"""Gets the league_id of this TicsLeagueAuditLog.
 
         联盟id
 
@@ -293,7 +293,7 @@ class TicsLeagueAuditLog:
 
     @league_id.setter
     def league_id(self, league_id):
-        """Sets the league_id of this TicsLeagueAuditLog.
+        r"""Sets the league_id of this TicsLeagueAuditLog.
 
         联盟id
 
@@ -304,7 +304,7 @@ class TicsLeagueAuditLog:
 
     @property
     def sponsor_agent_name(self):
-        """Gets the sponsor_agent_name of this TicsLeagueAuditLog.
+        r"""Gets the sponsor_agent_name of this TicsLeagueAuditLog.
 
         作业发起节点名称
 
@@ -315,7 +315,7 @@ class TicsLeagueAuditLog:
 
     @sponsor_agent_name.setter
     def sponsor_agent_name(self, sponsor_agent_name):
-        """Sets the sponsor_agent_name of this TicsLeagueAuditLog.
+        r"""Sets the sponsor_agent_name of this TicsLeagueAuditLog.
 
         作业发起节点名称
 

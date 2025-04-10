@@ -27,7 +27,7 @@ class ShowAuthenticationRequest:
     }
 
     def __init__(self, instance_id=None, device_id=None):
-        """ShowAuthenticationRequest
+        r"""ShowAuthenticationRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowAuthenticationRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowAuthenticationRequest.
+        r"""Gets the instance_id of this ShowAuthenticationRequest.
 
         实例ID
 
@@ -59,7 +59,7 @@ class ShowAuthenticationRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowAuthenticationRequest.
+        r"""Sets the instance_id of this ShowAuthenticationRequest.
 
         实例ID
 
@@ -70,7 +70,7 @@ class ShowAuthenticationRequest:
 
     @property
     def device_id(self):
-        """Gets the device_id of this ShowAuthenticationRequest.
+        r"""Gets the device_id of this ShowAuthenticationRequest.
 
         设备ID
 
@@ -81,7 +81,7 @@ class ShowAuthenticationRequest:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this ShowAuthenticationRequest.
+        r"""Sets the device_id of this ShowAuthenticationRequest.
 
         设备ID
 

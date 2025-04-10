@@ -23,7 +23,7 @@ class AlarmName:
     }
 
     def __init__(self):
-        """AlarmName
+        r"""AlarmName
 
         The model defined in huaweicloud sdk
 

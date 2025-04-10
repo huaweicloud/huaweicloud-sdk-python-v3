@@ -24,7 +24,7 @@ class DeletePeerLinkResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeletePeerLinkResponse
+        r"""DeletePeerLinkResponse
 
         The model defined in huaweicloud sdk
 

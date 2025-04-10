@@ -29,7 +29,7 @@ class ProxyIpGroupDetail:
     }
 
     def __init__(self, id=None, name=None, ip_list=None):
-        """ProxyIpGroupDetail
+        r"""ProxyIpGroupDetail
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ProxyIpGroupDetail:
 
     @property
     def id(self):
-        """Gets the id of this ProxyIpGroupDetail.
+        r"""Gets the id of this ProxyIpGroupDetail.
 
         ipGroup的id
 
@@ -65,7 +65,7 @@ class ProxyIpGroupDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ProxyIpGroupDetail.
+        r"""Sets the id of this ProxyIpGroupDetail.
 
         ipGroup的id
 
@@ -76,7 +76,7 @@ class ProxyIpGroupDetail:
 
     @property
     def name(self):
-        """Gets the name of this ProxyIpGroupDetail.
+        r"""Gets the name of this ProxyIpGroupDetail.
 
         ipGroup的名称
 
@@ -87,7 +87,7 @@ class ProxyIpGroupDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ProxyIpGroupDetail.
+        r"""Sets the name of this ProxyIpGroupDetail.
 
         ipGroup的名称
 
@@ -98,7 +98,7 @@ class ProxyIpGroupDetail:
 
     @property
     def ip_list(self):
-        """Gets the ip_list of this ProxyIpGroupDetail.
+        r"""Gets the ip_list of this ProxyIpGroupDetail.
 
         ipGroup内部的ip列表
 
@@ -109,7 +109,7 @@ class ProxyIpGroupDetail:
 
     @ip_list.setter
     def ip_list(self, ip_list):
-        """Sets the ip_list of this ProxyIpGroupDetail.
+        r"""Sets the ip_list of this ProxyIpGroupDetail.
 
         ipGroup内部的ip列表
 

@@ -30,7 +30,7 @@ class ListAcceleratorsResponse(SdkResponse):
     }
 
     def __init__(self, accelerators=None, page_info=None, request_id=None):
-        """ListAcceleratorsResponse
+        r"""ListAcceleratorsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListAcceleratorsResponse(SdkResponse):
 
     @property
     def accelerators(self):
-        """Gets the accelerators of this ListAcceleratorsResponse.
+        r"""Gets the accelerators of this ListAcceleratorsResponse.
 
         全球加速器列表。
 
@@ -69,7 +69,7 @@ class ListAcceleratorsResponse(SdkResponse):
 
     @accelerators.setter
     def accelerators(self, accelerators):
-        """Sets the accelerators of this ListAcceleratorsResponse.
+        r"""Sets the accelerators of this ListAcceleratorsResponse.
 
         全球加速器列表。
 
@@ -80,7 +80,7 @@ class ListAcceleratorsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListAcceleratorsResponse.
+        r"""Gets the page_info of this ListAcceleratorsResponse.
 
         :return: The page_info of this ListAcceleratorsResponse.
         :rtype: :class:`huaweicloudsdkga.v1.PageInfo`
@@ -89,7 +89,7 @@ class ListAcceleratorsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListAcceleratorsResponse.
+        r"""Sets the page_info of this ListAcceleratorsResponse.
 
         :param page_info: The page_info of this ListAcceleratorsResponse.
         :type page_info: :class:`huaweicloudsdkga.v1.PageInfo`
@@ -98,7 +98,7 @@ class ListAcceleratorsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListAcceleratorsResponse.
+        r"""Gets the request_id of this ListAcceleratorsResponse.
 
         请求ID。
 
@@ -109,7 +109,7 @@ class ListAcceleratorsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListAcceleratorsResponse.
+        r"""Sets the request_id of this ListAcceleratorsResponse.
 
         请求ID。
 

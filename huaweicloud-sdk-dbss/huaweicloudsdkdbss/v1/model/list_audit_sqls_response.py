@@ -30,7 +30,7 @@ class ListAuditSqlsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, count=None, sqls=None):
-        """ListAuditSqlsResponse
+        r"""ListAuditSqlsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListAuditSqlsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListAuditSqlsResponse.
+        r"""Gets the total of this ListAuditSqlsResponse.
 
         总数
 
@@ -69,7 +69,7 @@ class ListAuditSqlsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListAuditSqlsResponse.
+        r"""Sets the total of this ListAuditSqlsResponse.
 
         总数
 
@@ -80,7 +80,7 @@ class ListAuditSqlsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListAuditSqlsResponse.
+        r"""Gets the count of this ListAuditSqlsResponse.
 
         总数
 
@@ -91,7 +91,7 @@ class ListAuditSqlsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListAuditSqlsResponse.
+        r"""Sets the count of this ListAuditSqlsResponse.
 
         总数
 
@@ -102,7 +102,7 @@ class ListAuditSqlsResponse(SdkResponse):
 
     @property
     def sqls(self):
-        """Gets the sqls of this ListAuditSqlsResponse.
+        r"""Gets the sqls of this ListAuditSqlsResponse.
 
         sql语句列表
 
@@ -113,7 +113,7 @@ class ListAuditSqlsResponse(SdkResponse):
 
     @sqls.setter
     def sqls(self, sqls):
-        """Sets the sqls of this ListAuditSqlsResponse.
+        r"""Sets the sqls of this ListAuditSqlsResponse.
 
         sql语句列表
 

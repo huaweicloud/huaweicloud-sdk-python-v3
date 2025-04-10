@@ -27,7 +27,7 @@ class ADDomainInfo:
     }
 
     def __init__(self, domain_admin_account_name=None, domain_admin_pwd=None):
-        """ADDomainInfo
+        r"""ADDomainInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ADDomainInfo:
 
     @property
     def domain_admin_account_name(self):
-        """Gets the domain_admin_account_name of this ADDomainInfo.
+        r"""Gets the domain_admin_account_name of this ADDomainInfo.
 
         域管理员账号名
 
@@ -59,7 +59,7 @@ class ADDomainInfo:
 
     @domain_admin_account_name.setter
     def domain_admin_account_name(self, domain_admin_account_name):
-        """Sets the domain_admin_account_name of this ADDomainInfo.
+        r"""Sets the domain_admin_account_name of this ADDomainInfo.
 
         域管理员账号名
 
@@ -70,7 +70,7 @@ class ADDomainInfo:
 
     @property
     def domain_admin_pwd(self):
-        """Gets the domain_admin_pwd of this ADDomainInfo.
+        r"""Gets the domain_admin_pwd of this ADDomainInfo.
 
         域管理员密码
 
@@ -81,7 +81,7 @@ class ADDomainInfo:
 
     @domain_admin_pwd.setter
     def domain_admin_pwd(self, domain_admin_pwd):
-        """Sets the domain_admin_pwd of this ADDomainInfo.
+        r"""Sets the domain_admin_pwd of this ADDomainInfo.
 
         域管理员密码
 

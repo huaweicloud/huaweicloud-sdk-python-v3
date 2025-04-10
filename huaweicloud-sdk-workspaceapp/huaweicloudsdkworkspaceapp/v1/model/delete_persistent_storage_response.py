@@ -24,7 +24,7 @@ class DeletePersistentStorageResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeletePersistentStorageResponse
+        r"""DeletePersistentStorageResponse
 
         The model defined in huaweicloud sdk
 

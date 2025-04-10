@@ -27,7 +27,7 @@ class IgnorePathSettingItem:
     }
 
     def __init__(self, file_path=None, checkbox_status=None):
-        """IgnorePathSettingItem
+        r"""IgnorePathSettingItem
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class IgnorePathSettingItem:
 
     @property
     def file_path(self):
-        """Gets the file_path of this IgnorePathSettingItem.
+        r"""Gets the file_path of this IgnorePathSettingItem.
 
         目录或文件路径
 
@@ -59,7 +59,7 @@ class IgnorePathSettingItem:
 
     @file_path.setter
     def file_path(self, file_path):
-        """Sets the file_path of this IgnorePathSettingItem.
+        r"""Sets the file_path of this IgnorePathSettingItem.
 
         目录或文件路径
 
@@ -70,7 +70,7 @@ class IgnorePathSettingItem:
 
     @property
     def checkbox_status(self):
-        """Gets the checkbox_status of this IgnorePathSettingItem.
+        r"""Gets the checkbox_status of this IgnorePathSettingItem.
 
         屏蔽状态，包括unchecked(不屏蔽)、all(全屏蔽)、half(半屏蔽)
 
@@ -81,7 +81,7 @@ class IgnorePathSettingItem:
 
     @checkbox_status.setter
     def checkbox_status(self, checkbox_status):
-        """Sets the checkbox_status of this IgnorePathSettingItem.
+        r"""Sets the checkbox_status of this IgnorePathSettingItem.
 
         屏蔽状态，包括unchecked(不屏蔽)、all(全屏蔽)、half(半屏蔽)
 

@@ -26,7 +26,7 @@ class HandleNotificationResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """HandleNotificationResponse
+        r"""HandleNotificationResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class HandleNotificationResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this HandleNotificationResponse.
+        r"""Gets the result of this HandleNotificationResponse.
 
         请求成功的结果
 
@@ -55,7 +55,7 @@ class HandleNotificationResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this HandleNotificationResponse.
+        r"""Sets the result of this HandleNotificationResponse.
 
         请求成功的结果
 

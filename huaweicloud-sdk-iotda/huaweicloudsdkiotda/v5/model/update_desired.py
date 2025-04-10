@@ -29,7 +29,7 @@ class UpdateDesired:
     }
 
     def __init__(self, service_id=None, desired=None, version=None):
-        """UpdateDesired
+        r"""UpdateDesired
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateDesired:
 
     @property
     def service_id(self):
-        """Gets the service_id of this UpdateDesired.
+        r"""Gets the service_id of this UpdateDesired.
 
         **参数说明**：设备的服务ID，在设备关联的产品模型中定义。
 
@@ -66,7 +66,7 @@ class UpdateDesired:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this UpdateDesired.
+        r"""Sets the service_id of this UpdateDesired.
 
         **参数说明**：设备的服务ID，在设备关联的产品模型中定义。
 
@@ -77,7 +77,7 @@ class UpdateDesired:
 
     @property
     def desired(self):
-        """Gets the desired of this UpdateDesired.
+        r"""Gets the desired of this UpdateDesired.
 
         **参数说明**：设备影子期望属性数据，Json格式，里面是一个个键值对，每个键都是产品模型中属性的参数名(property_name)，目前如样例所示只支持一层结构；如果想要删除整个desired可以填写空Object(例如\"desired\":{})，如果想要删除某一个属性期望值可以将属性置位null(例如{\"temperature\":null})
 
@@ -88,7 +88,7 @@ class UpdateDesired:
 
     @desired.setter
     def desired(self, desired):
-        """Sets the desired of this UpdateDesired.
+        r"""Sets the desired of this UpdateDesired.
 
         **参数说明**：设备影子期望属性数据，Json格式，里面是一个个键值对，每个键都是产品模型中属性的参数名(property_name)，目前如样例所示只支持一层结构；如果想要删除整个desired可以填写空Object(例如\"desired\":{})，如果想要删除某一个属性期望值可以将属性置位null(例如{\"temperature\":null})
 
@@ -99,7 +99,7 @@ class UpdateDesired:
 
     @property
     def version(self):
-        """Gets the version of this UpdateDesired.
+        r"""Gets the version of this UpdateDesired.
 
         **参数说明**：设备影子的版本，携带该参数时平台会校验值必须等于当前影子版本，初始从0开始。
 
@@ -110,7 +110,7 @@ class UpdateDesired:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this UpdateDesired.
+        r"""Sets the version of this UpdateDesired.
 
         **参数说明**：设备影子的版本，携带该参数时平台会校验值必须等于当前影子版本，初始从0开始。
 

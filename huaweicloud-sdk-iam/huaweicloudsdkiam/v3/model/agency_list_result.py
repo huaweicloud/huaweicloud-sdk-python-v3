@@ -41,7 +41,7 @@ class AgencyListResult:
     }
 
     def __init__(self, create_time=None, description=None, domain_id=None, expire_time=None, id=None, name=None, trust_domain_id=None, trust_domain_name=None, agency_urn=None):
-        """AgencyListResult
+        r"""AgencyListResult
 
         The model defined in huaweicloud sdk
 
@@ -94,7 +94,7 @@ class AgencyListResult:
 
     @property
     def create_time(self):
-        """Gets the create_time of this AgencyListResult.
+        r"""Gets the create_time of this AgencyListResult.
 
         委托创建时间。
 
@@ -105,7 +105,7 @@ class AgencyListResult:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AgencyListResult.
+        r"""Sets the create_time of this AgencyListResult.
 
         委托创建时间。
 
@@ -116,7 +116,7 @@ class AgencyListResult:
 
     @property
     def description(self):
-        """Gets the description of this AgencyListResult.
+        r"""Gets the description of this AgencyListResult.
 
         委托描述信息。
 
@@ -127,7 +127,7 @@ class AgencyListResult:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AgencyListResult.
+        r"""Sets the description of this AgencyListResult.
 
         委托描述信息。
 
@@ -138,7 +138,7 @@ class AgencyListResult:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this AgencyListResult.
+        r"""Gets the domain_id of this AgencyListResult.
 
         委托方账号ID。
 
@@ -149,7 +149,7 @@ class AgencyListResult:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this AgencyListResult.
+        r"""Sets the domain_id of this AgencyListResult.
 
         委托方账号ID。
 
@@ -160,7 +160,7 @@ class AgencyListResult:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this AgencyListResult.
+        r"""Gets the expire_time of this AgencyListResult.
 
         委托过期时间。“null”表示不过期。
 
@@ -171,7 +171,7 @@ class AgencyListResult:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this AgencyListResult.
+        r"""Sets the expire_time of this AgencyListResult.
 
         委托过期时间。“null”表示不过期。
 
@@ -182,7 +182,7 @@ class AgencyListResult:
 
     @property
     def id(self):
-        """Gets the id of this AgencyListResult.
+        r"""Gets the id of this AgencyListResult.
 
         委托ID。
 
@@ -193,7 +193,7 @@ class AgencyListResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AgencyListResult.
+        r"""Sets the id of this AgencyListResult.
 
         委托ID。
 
@@ -204,7 +204,7 @@ class AgencyListResult:
 
     @property
     def name(self):
-        """Gets the name of this AgencyListResult.
+        r"""Gets the name of this AgencyListResult.
 
         委托名。
 
@@ -215,7 +215,7 @@ class AgencyListResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AgencyListResult.
+        r"""Sets the name of this AgencyListResult.
 
         委托名。
 
@@ -226,7 +226,7 @@ class AgencyListResult:
 
     @property
     def trust_domain_id(self):
-        """Gets the trust_domain_id of this AgencyListResult.
+        r"""Gets the trust_domain_id of this AgencyListResult.
 
         被委托方账号ID。
 
@@ -237,7 +237,7 @@ class AgencyListResult:
 
     @trust_domain_id.setter
     def trust_domain_id(self, trust_domain_id):
-        """Sets the trust_domain_id of this AgencyListResult.
+        r"""Sets the trust_domain_id of this AgencyListResult.
 
         被委托方账号ID。
 
@@ -248,7 +248,7 @@ class AgencyListResult:
 
     @property
     def trust_domain_name(self):
-        """Gets the trust_domain_name of this AgencyListResult.
+        r"""Gets the trust_domain_name of this AgencyListResult.
 
         被委托方账号名。
 
@@ -259,7 +259,7 @@ class AgencyListResult:
 
     @trust_domain_name.setter
     def trust_domain_name(self, trust_domain_name):
-        """Sets the trust_domain_name of this AgencyListResult.
+        r"""Sets the trust_domain_name of this AgencyListResult.
 
         被委托方账号名。
 
@@ -270,7 +270,7 @@ class AgencyListResult:
 
     @property
     def agency_urn(self):
-        """Gets the agency_urn of this AgencyListResult.
+        r"""Gets the agency_urn of this AgencyListResult.
 
         委托URN。
 
@@ -281,7 +281,7 @@ class AgencyListResult:
 
     @agency_urn.setter
     def agency_urn(self, agency_urn):
-        """Sets the agency_urn of this AgencyListResult.
+        r"""Sets the agency_urn of this AgencyListResult.
 
         委托URN。
 

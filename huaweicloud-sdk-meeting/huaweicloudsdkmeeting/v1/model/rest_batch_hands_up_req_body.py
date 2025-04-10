@@ -27,7 +27,7 @@ class RestBatchHandsUpReqBody:
     }
 
     def __init__(self, hands_state=None, pids=None):
-        """RestBatchHandsUpReqBody
+        r"""RestBatchHandsUpReqBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class RestBatchHandsUpReqBody:
 
     @property
     def hands_state(self):
-        """Gets the hands_state of this RestBatchHandsUpReqBody.
+        r"""Gets the hands_state of this RestBatchHandsUpReqBody.
 
         - 0: 放下手 - 1: 举手
 
@@ -59,7 +59,7 @@ class RestBatchHandsUpReqBody:
 
     @hands_state.setter
     def hands_state(self, hands_state):
-        """Sets the hands_state of this RestBatchHandsUpReqBody.
+        r"""Sets the hands_state of this RestBatchHandsUpReqBody.
 
         - 0: 放下手 - 1: 举手
 
@@ -70,7 +70,7 @@ class RestBatchHandsUpReqBody:
 
     @property
     def pids(self):
-        """Gets the pids of this RestBatchHandsUpReqBody.
+        r"""Gets the pids of this RestBatchHandsUpReqBody.
 
         与会者标识列表。
 
@@ -81,7 +81,7 @@ class RestBatchHandsUpReqBody:
 
     @pids.setter
     def pids(self, pids):
-        """Sets the pids of this RestBatchHandsUpReqBody.
+        r"""Sets the pids of this RestBatchHandsUpReqBody.
 
         与会者标识列表。
 

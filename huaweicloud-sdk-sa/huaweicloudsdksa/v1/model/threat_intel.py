@@ -45,7 +45,7 @@ class ThreatIntel:
     }
 
     def __init__(self, id=None, indicator_type=None, labels=None, confidence=None, information_source=None, severity=None, description=None, modified=None, valid_from=None, valid_until=None, properties=None):
-        """ThreatIntel
+        r"""ThreatIntel
 
         The model defined in huaweicloud sdk
 
@@ -110,7 +110,7 @@ class ThreatIntel:
 
     @property
     def id(self):
-        """Gets the id of this ThreatIntel.
+        r"""Gets the id of this ThreatIntel.
 
         情报Id。
 
@@ -121,7 +121,7 @@ class ThreatIntel:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ThreatIntel.
+        r"""Sets the id of this ThreatIntel.
 
         情报Id。
 
@@ -132,7 +132,7 @@ class ThreatIntel:
 
     @property
     def indicator_type(self):
-        """Gets the indicator_type of this ThreatIntel.
+        r"""Gets the indicator_type of this ThreatIntel.
 
         威胁情报类型，Domain、Email_Address、Hash_MD5、Hash_SHA1、Hash_SHA256、 Hash_SHA512、IPv4_Address、IPv6_Address、URL。
 
@@ -143,7 +143,7 @@ class ThreatIntel:
 
     @indicator_type.setter
     def indicator_type(self, indicator_type):
-        """Sets the indicator_type of this ThreatIntel.
+        r"""Sets the indicator_type of this ThreatIntel.
 
         威胁情报类型，Domain、Email_Address、Hash_MD5、Hash_SHA1、Hash_SHA256、 Hash_SHA512、IPv4_Address、IPv6_Address、URL。
 
@@ -154,7 +154,7 @@ class ThreatIntel:
 
     @property
     def labels(self):
-        """Gets the labels of this ThreatIntel.
+        r"""Gets the labels of this ThreatIntel.
 
         标签，如'矿池','外联'等，\"Directory Scan|Directory Traversal\"。
 
@@ -165,7 +165,7 @@ class ThreatIntel:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this ThreatIntel.
+        r"""Sets the labels of this ThreatIntel.
 
         标签，如'矿池','外联'等，\"Directory Scan|Directory Traversal\"。
 
@@ -176,7 +176,7 @@ class ThreatIntel:
 
     @property
     def confidence(self):
-        """Gets the confidence of this ThreatIntel.
+        r"""Gets the confidence of this ThreatIntel.
 
         置信度，不同来源目前置信度分值定义不一样（分数）。
 
@@ -187,7 +187,7 @@ class ThreatIntel:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this ThreatIntel.
+        r"""Sets the confidence of this ThreatIntel.
 
         置信度，不同来源目前置信度分值定义不一样（分数）。
 
@@ -198,7 +198,7 @@ class ThreatIntel:
 
     @property
     def information_source(self):
-        """Gets the information_source of this ThreatIntel.
+        r"""Gets the information_source of this ThreatIntel.
 
         威胁情报源，最大64个字符。
 
@@ -209,7 +209,7 @@ class ThreatIntel:
 
     @information_source.setter
     def information_source(self, information_source):
-        """Sets the information_source of this ThreatIntel.
+        r"""Sets the information_source of this ThreatIntel.
 
         威胁情报源，最大64个字符。
 
@@ -220,7 +220,7 @@ class ThreatIntel:
 
     @property
     def severity(self):
-        """Gets the severity of this ThreatIntel.
+        r"""Gets the severity of this ThreatIntel.
 
         严重程度，不同渠道定义值不一样（分数）。
 
@@ -231,7 +231,7 @@ class ThreatIntel:
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this ThreatIntel.
+        r"""Sets the severity of this ThreatIntel.
 
         严重程度，不同渠道定义值不一样（分数）。
 
@@ -242,7 +242,7 @@ class ThreatIntel:
 
     @property
     def description(self):
-        """Gets the description of this ThreatIntel.
+        r"""Gets the description of this ThreatIntel.
 
         威胁情报描述。
 
@@ -253,7 +253,7 @@ class ThreatIntel:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ThreatIntel.
+        r"""Sets the description of this ThreatIntel.
 
         威胁情报描述。
 
@@ -264,7 +264,7 @@ class ThreatIntel:
 
     @property
     def modified(self):
-        """Gets the modified of this ThreatIntel.
+        r"""Gets the modified of this ThreatIntel.
 
         威胁情报的更新时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区。
 
@@ -275,7 +275,7 @@ class ThreatIntel:
 
     @modified.setter
     def modified(self, modified):
-        """Sets the modified of this ThreatIntel.
+        r"""Sets the modified of this ThreatIntel.
 
         威胁情报的更新时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区。
 
@@ -286,7 +286,7 @@ class ThreatIntel:
 
     @property
     def valid_from(self):
-        """Gets the valid_from of this ThreatIntel.
+        r"""Gets the valid_from of this ThreatIntel.
 
         有效期开始（可读字符串）。
 
@@ -297,7 +297,7 @@ class ThreatIntel:
 
     @valid_from.setter
     def valid_from(self, valid_from):
-        """Sets the valid_from of this ThreatIntel.
+        r"""Sets the valid_from of this ThreatIntel.
 
         有效期开始（可读字符串）。
 
@@ -308,7 +308,7 @@ class ThreatIntel:
 
     @property
     def valid_until(self):
-        """Gets the valid_until of this ThreatIntel.
+        r"""Gets the valid_until of this ThreatIntel.
 
         有效期结束（可读字符串）。
 
@@ -319,7 +319,7 @@ class ThreatIntel:
 
     @valid_until.setter
     def valid_until(self, valid_until):
-        """Sets the valid_until of this ThreatIntel.
+        r"""Sets the valid_until of this ThreatIntel.
 
         有效期结束（可读字符串）。
 
@@ -330,7 +330,7 @@ class ThreatIntel:
 
     @property
     def properties(self):
-        """Gets the properties of this ThreatIntel.
+        r"""Gets the properties of this ThreatIntel.
 
         :return: The properties of this ThreatIntel.
         :rtype: :class:`huaweicloudsdksa.v1.ThreatIntelProperties`
@@ -339,7 +339,7 @@ class ThreatIntel:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this ThreatIntel.
+        r"""Sets the properties of this ThreatIntel.
 
         :param properties: The properties of this ThreatIntel.
         :type properties: :class:`huaweicloudsdksa.v1.ThreatIntelProperties`

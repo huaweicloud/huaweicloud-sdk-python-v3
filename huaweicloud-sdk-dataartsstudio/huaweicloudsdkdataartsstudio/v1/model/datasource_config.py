@@ -53,7 +53,7 @@ class DatasourceConfig:
     }
 
     def __init__(self, type=None, connection_name=None, connection_id=None, database=None, datatable=None, table_id=None, queue=None, access_type=None, access_mode=None, pagination=None, sql=None, backend_paras=None, response_paras=None, order_paras=None, total_size_sql=None):
-        """DatasourceConfig
+        r"""DatasourceConfig
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class DatasourceConfig:
 
     @property
     def type(self):
-        """Gets the type of this DatasourceConfig.
+        r"""Gets the type of this DatasourceConfig.
 
         数据源的类型
 
@@ -152,7 +152,7 @@ class DatasourceConfig:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DatasourceConfig.
+        r"""Sets the type of this DatasourceConfig.
 
         数据源的类型
 
@@ -163,7 +163,7 @@ class DatasourceConfig:
 
     @property
     def connection_name(self):
-        """Gets the connection_name of this DatasourceConfig.
+        r"""Gets the connection_name of this DatasourceConfig.
 
         数据连接名称
 
@@ -174,7 +174,7 @@ class DatasourceConfig:
 
     @connection_name.setter
     def connection_name(self, connection_name):
-        """Sets the connection_name of this DatasourceConfig.
+        r"""Sets the connection_name of this DatasourceConfig.
 
         数据连接名称
 
@@ -185,7 +185,7 @@ class DatasourceConfig:
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this DatasourceConfig.
+        r"""Gets the connection_id of this DatasourceConfig.
 
         数据连接ID
 
@@ -196,7 +196,7 @@ class DatasourceConfig:
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this DatasourceConfig.
+        r"""Sets the connection_id of this DatasourceConfig.
 
         数据连接ID
 
@@ -207,7 +207,7 @@ class DatasourceConfig:
 
     @property
     def database(self):
-        """Gets the database of this DatasourceConfig.
+        r"""Gets the database of this DatasourceConfig.
 
         数据库名
 
@@ -218,7 +218,7 @@ class DatasourceConfig:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this DatasourceConfig.
+        r"""Sets the database of this DatasourceConfig.
 
         数据库名
 
@@ -229,7 +229,7 @@ class DatasourceConfig:
 
     @property
     def datatable(self):
-        """Gets the datatable of this DatasourceConfig.
+        r"""Gets the datatable of this DatasourceConfig.
 
         数据表名称
 
@@ -240,7 +240,7 @@ class DatasourceConfig:
 
     @datatable.setter
     def datatable(self, datatable):
-        """Sets the datatable of this DatasourceConfig.
+        r"""Sets the datatable of this DatasourceConfig.
 
         数据表名称
 
@@ -251,7 +251,7 @@ class DatasourceConfig:
 
     @property
     def table_id(self):
-        """Gets the table_id of this DatasourceConfig.
+        r"""Gets the table_id of this DatasourceConfig.
 
         数据表ID
 
@@ -262,7 +262,7 @@ class DatasourceConfig:
 
     @table_id.setter
     def table_id(self, table_id):
-        """Sets the table_id of this DatasourceConfig.
+        r"""Sets the table_id of this DatasourceConfig.
 
         数据表ID
 
@@ -273,7 +273,7 @@ class DatasourceConfig:
 
     @property
     def queue(self):
-        """Gets the queue of this DatasourceConfig.
+        r"""Gets the queue of this DatasourceConfig.
 
         DLI的队列名称
 
@@ -284,7 +284,7 @@ class DatasourceConfig:
 
     @queue.setter
     def queue(self, queue):
-        """Sets the queue of this DatasourceConfig.
+        r"""Sets the queue of this DatasourceConfig.
 
         DLI的队列名称
 
@@ -295,7 +295,7 @@ class DatasourceConfig:
 
     @property
     def access_type(self):
-        """Gets the access_type of this DatasourceConfig.
+        r"""Gets the access_type of this DatasourceConfig.
 
         取数方式
 
@@ -306,7 +306,7 @@ class DatasourceConfig:
 
     @access_type.setter
     def access_type(self, access_type):
-        """Sets the access_type of this DatasourceConfig.
+        r"""Sets the access_type of this DatasourceConfig.
 
         取数方式
 
@@ -317,7 +317,7 @@ class DatasourceConfig:
 
     @property
     def access_mode(self):
-        """Gets the access_mode of this DatasourceConfig.
+        r"""Gets the access_mode of this DatasourceConfig.
 
         获取数据的模式
 
@@ -328,7 +328,7 @@ class DatasourceConfig:
 
     @access_mode.setter
     def access_mode(self, access_mode):
-        """Sets the access_mode of this DatasourceConfig.
+        r"""Sets the access_mode of this DatasourceConfig.
 
         获取数据的模式
 
@@ -339,7 +339,7 @@ class DatasourceConfig:
 
     @property
     def pagination(self):
-        """Gets the pagination of this DatasourceConfig.
+        r"""Gets the pagination of this DatasourceConfig.
 
         :return: The pagination of this DatasourceConfig.
         :rtype: str
@@ -348,7 +348,7 @@ class DatasourceConfig:
 
     @pagination.setter
     def pagination(self, pagination):
-        """Sets the pagination of this DatasourceConfig.
+        r"""Sets the pagination of this DatasourceConfig.
 
         :param pagination: The pagination of this DatasourceConfig.
         :type pagination: str
@@ -357,7 +357,7 @@ class DatasourceConfig:
 
     @property
     def sql(self):
-        """Gets the sql of this DatasourceConfig.
+        r"""Gets the sql of this DatasourceConfig.
 
         脚本模式下的sql语句
 
@@ -368,7 +368,7 @@ class DatasourceConfig:
 
     @sql.setter
     def sql(self, sql):
-        """Sets the sql of this DatasourceConfig.
+        r"""Sets the sql of this DatasourceConfig.
 
         脚本模式下的sql语句
 
@@ -379,7 +379,7 @@ class DatasourceConfig:
 
     @property
     def backend_paras(self):
-        """Gets the backend_paras of this DatasourceConfig.
+        r"""Gets the backend_paras of this DatasourceConfig.
 
         API后端参数
 
@@ -390,7 +390,7 @@ class DatasourceConfig:
 
     @backend_paras.setter
     def backend_paras(self, backend_paras):
-        """Sets the backend_paras of this DatasourceConfig.
+        r"""Sets the backend_paras of this DatasourceConfig.
 
         API后端参数
 
@@ -401,7 +401,7 @@ class DatasourceConfig:
 
     @property
     def response_paras(self):
-        """Gets the response_paras of this DatasourceConfig.
+        r"""Gets the response_paras of this DatasourceConfig.
 
         配置类API返回参数
 
@@ -412,7 +412,7 @@ class DatasourceConfig:
 
     @response_paras.setter
     def response_paras(self, response_paras):
-        """Sets the response_paras of this DatasourceConfig.
+        r"""Sets the response_paras of this DatasourceConfig.
 
         配置类API返回参数
 
@@ -423,7 +423,7 @@ class DatasourceConfig:
 
     @property
     def order_paras(self):
-        """Gets the order_paras of this DatasourceConfig.
+        r"""Gets the order_paras of this DatasourceConfig.
 
         排序参数
 
@@ -434,7 +434,7 @@ class DatasourceConfig:
 
     @order_paras.setter
     def order_paras(self, order_paras):
-        """Sets the order_paras of this DatasourceConfig.
+        r"""Sets the order_paras of this DatasourceConfig.
 
         排序参数
 
@@ -445,7 +445,7 @@ class DatasourceConfig:
 
     @property
     def total_size_sql(self):
-        """Gets the total_size_sql of this DatasourceConfig.
+        r"""Gets the total_size_sql of this DatasourceConfig.
 
         总条数计算脚本SQL。
 
@@ -456,7 +456,7 @@ class DatasourceConfig:
 
     @total_size_sql.setter
     def total_size_sql(self, total_size_sql):
-        """Sets the total_size_sql of this DatasourceConfig.
+        r"""Sets the total_size_sql of this DatasourceConfig.
 
         总条数计算脚本SQL。
 

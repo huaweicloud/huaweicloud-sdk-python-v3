@@ -28,7 +28,7 @@ class ListStoragePoolsResponse(SdkResponse):
     }
 
     def __init__(self, storage_pools=None, page_info=None):
-        """ListStoragePoolsResponse
+        r"""ListStoragePoolsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListStoragePoolsResponse(SdkResponse):
 
     @property
     def storage_pools(self):
-        """Gets the storage_pools of this ListStoragePoolsResponse.
+        r"""Gets the storage_pools of this ListStoragePoolsResponse.
 
         存储池列表
 
@@ -62,7 +62,7 @@ class ListStoragePoolsResponse(SdkResponse):
 
     @storage_pools.setter
     def storage_pools(self, storage_pools):
-        """Sets the storage_pools of this ListStoragePoolsResponse.
+        r"""Sets the storage_pools of this ListStoragePoolsResponse.
 
         存储池列表
 
@@ -73,7 +73,7 @@ class ListStoragePoolsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListStoragePoolsResponse.
+        r"""Gets the page_info of this ListStoragePoolsResponse.
 
         :return: The page_info of this ListStoragePoolsResponse.
         :rtype: :class:`huaweicloudsdkcloudpond.v1.PageInfo`
@@ -82,7 +82,7 @@ class ListStoragePoolsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListStoragePoolsResponse.
+        r"""Sets the page_info of this ListStoragePoolsResponse.
 
         :param page_info: The page_info of this ListStoragePoolsResponse.
         :type page_info: :class:`huaweicloudsdkcloudpond.v1.PageInfo`

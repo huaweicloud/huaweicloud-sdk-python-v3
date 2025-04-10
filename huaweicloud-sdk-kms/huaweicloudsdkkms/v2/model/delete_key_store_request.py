@@ -25,7 +25,7 @@ class DeleteKeyStoreRequest:
     }
 
     def __init__(self, keystore_id=None):
-        """DeleteKeyStoreRequest
+        r"""DeleteKeyStoreRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteKeyStoreRequest:
 
     @property
     def keystore_id(self):
-        """Gets the keystore_id of this DeleteKeyStoreRequest.
+        r"""Gets the keystore_id of this DeleteKeyStoreRequest.
 
         密钥库ID
 
@@ -53,7 +53,7 @@ class DeleteKeyStoreRequest:
 
     @keystore_id.setter
     def keystore_id(self, keystore_id):
-        """Sets the keystore_id of this DeleteKeyStoreRequest.
+        r"""Sets the keystore_id of this DeleteKeyStoreRequest.
 
         密钥库ID
 

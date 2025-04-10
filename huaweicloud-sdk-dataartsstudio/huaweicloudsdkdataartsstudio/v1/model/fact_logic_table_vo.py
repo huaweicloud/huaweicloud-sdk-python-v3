@@ -145,7 +145,7 @@ class FactLogicTableVO:
     }
 
     def __init__(self, id=None, tb_name=None, tb_logic_name=None, l1_id=None, l2_id=None, l3_id=None, description=None, dw_name=None, owner=None, create_by=None, queue_name=None, dw_id=None, db_name=None, tb_id=None, dim_table_ids=None, reversed=None, partition_conf=None, dirty_out_switch=None, dirty_out_database=None, dirty_out_prefix=None, dirty_out_suffix=None, schema=None, distribute=None, distribute_column=None, table_type=None, status=None, tb_guid=None, tb_logic_guid=None, dw_type=None, l1=None, l2=None, l3=None, create_time=None, update_time=None, approval_info=None, new_biz=None, dimensions=None, attributes=None, mappings=None, measures=None, table_attributes=None, configs=None, physical_table=None, dev_physical_table=None, technical_asset=None, business_asset=None, meta_data_link=None, data_quality=None, summary_status=None, quality_id=None, alias=None, self_defined_fields=None, obs_location=None, dev_version=None, prod_version=None, dev_version_name=None, prod_version_name=None, env_type=None, secrecy_levels=None, model_id=None, model=None):
-        """FactLogicTableVO
+        r"""FactLogicTableVO
 
         The model defined in huaweicloud sdk
 
@@ -456,7 +456,7 @@ class FactLogicTableVO:
 
     @property
     def id(self):
-        """Gets the id of this FactLogicTableVO.
+        r"""Gets the id of this FactLogicTableVO.
 
         事实表ID，ID字符串。
 
@@ -467,7 +467,7 @@ class FactLogicTableVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this FactLogicTableVO.
+        r"""Sets the id of this FactLogicTableVO.
 
         事实表ID，ID字符串。
 
@@ -478,7 +478,7 @@ class FactLogicTableVO:
 
     @property
     def tb_name(self):
-        """Gets the tb_name of this FactLogicTableVO.
+        r"""Gets the tb_name of this FactLogicTableVO.
 
         表名称。
 
@@ -489,7 +489,7 @@ class FactLogicTableVO:
 
     @tb_name.setter
     def tb_name(self, tb_name):
-        """Sets the tb_name of this FactLogicTableVO.
+        r"""Sets the tb_name of this FactLogicTableVO.
 
         表名称。
 
@@ -500,7 +500,7 @@ class FactLogicTableVO:
 
     @property
     def tb_logic_name(self):
-        """Gets the tb_logic_name of this FactLogicTableVO.
+        r"""Gets the tb_logic_name of this FactLogicTableVO.
 
         逻辑实体名。
 
@@ -511,7 +511,7 @@ class FactLogicTableVO:
 
     @tb_logic_name.setter
     def tb_logic_name(self, tb_logic_name):
-        """Sets the tb_logic_name of this FactLogicTableVO.
+        r"""Sets the tb_logic_name of this FactLogicTableVO.
 
         逻辑实体名。
 
@@ -522,7 +522,7 @@ class FactLogicTableVO:
 
     @property
     def l1_id(self):
-        """Gets the l1_id of this FactLogicTableVO.
+        r"""Gets the l1_id of this FactLogicTableVO.
 
         主题域分组ID，只读，ID字符串。
 
@@ -533,7 +533,7 @@ class FactLogicTableVO:
 
     @l1_id.setter
     def l1_id(self, l1_id):
-        """Sets the l1_id of this FactLogicTableVO.
+        r"""Sets the l1_id of this FactLogicTableVO.
 
         主题域分组ID，只读，ID字符串。
 
@@ -544,7 +544,7 @@ class FactLogicTableVO:
 
     @property
     def l2_id(self):
-        """Gets the l2_id of this FactLogicTableVO.
+        r"""Gets the l2_id of this FactLogicTableVO.
 
         主题域ID，只读，创建和更新时无需填写。
 
@@ -555,7 +555,7 @@ class FactLogicTableVO:
 
     @l2_id.setter
     def l2_id(self, l2_id):
-        """Sets the l2_id of this FactLogicTableVO.
+        r"""Sets the l2_id of this FactLogicTableVO.
 
         主题域ID，只读，创建和更新时无需填写。
 
@@ -566,7 +566,7 @@ class FactLogicTableVO:
 
     @property
     def l3_id(self):
-        """Gets the l3_id of this FactLogicTableVO.
+        r"""Gets the l3_id of this FactLogicTableVO.
 
         业务对象guid，ID字符串。
 
@@ -577,7 +577,7 @@ class FactLogicTableVO:
 
     @l3_id.setter
     def l3_id(self, l3_id):
-        """Sets the l3_id of this FactLogicTableVO.
+        r"""Sets the l3_id of this FactLogicTableVO.
 
         业务对象guid，ID字符串。
 
@@ -588,7 +588,7 @@ class FactLogicTableVO:
 
     @property
     def description(self):
-        """Gets the description of this FactLogicTableVO.
+        r"""Gets the description of this FactLogicTableVO.
 
         描述。
 
@@ -599,7 +599,7 @@ class FactLogicTableVO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this FactLogicTableVO.
+        r"""Sets the description of this FactLogicTableVO.
 
         描述。
 
@@ -610,7 +610,7 @@ class FactLogicTableVO:
 
     @property
     def dw_name(self):
-        """Gets the dw_name of this FactLogicTableVO.
+        r"""Gets the dw_name of this FactLogicTableVO.
 
         数据连接名称，只读，创建和更新时无需填写。
 
@@ -621,7 +621,7 @@ class FactLogicTableVO:
 
     @dw_name.setter
     def dw_name(self, dw_name):
-        """Sets the dw_name of this FactLogicTableVO.
+        r"""Sets the dw_name of this FactLogicTableVO.
 
         数据连接名称，只读，创建和更新时无需填写。
 
@@ -632,7 +632,7 @@ class FactLogicTableVO:
 
     @property
     def owner(self):
-        """Gets the owner of this FactLogicTableVO.
+        r"""Gets the owner of this FactLogicTableVO.
 
         资产责任人。
 
@@ -643,7 +643,7 @@ class FactLogicTableVO:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this FactLogicTableVO.
+        r"""Sets the owner of this FactLogicTableVO.
 
         资产责任人。
 
@@ -654,7 +654,7 @@ class FactLogicTableVO:
 
     @property
     def create_by(self):
-        """Gets the create_by of this FactLogicTableVO.
+        r"""Gets the create_by of this FactLogicTableVO.
 
         创建人。
 
@@ -665,7 +665,7 @@ class FactLogicTableVO:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this FactLogicTableVO.
+        r"""Sets the create_by of this FactLogicTableVO.
 
         创建人。
 
@@ -676,7 +676,7 @@ class FactLogicTableVO:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this FactLogicTableVO.
+        r"""Gets the queue_name of this FactLogicTableVO.
 
         dli数据连接执行sql所需的队列，数据连接类型为DLI时必须。
 
@@ -687,7 +687,7 @@ class FactLogicTableVO:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this FactLogicTableVO.
+        r"""Sets the queue_name of this FactLogicTableVO.
 
         dli数据连接执行sql所需的队列，数据连接类型为DLI时必须。
 
@@ -698,7 +698,7 @@ class FactLogicTableVO:
 
     @property
     def dw_id(self):
-        """Gets the dw_id of this FactLogicTableVO.
+        r"""Gets the dw_id of this FactLogicTableVO.
 
         数据连接ID。
 
@@ -709,7 +709,7 @@ class FactLogicTableVO:
 
     @dw_id.setter
     def dw_id(self, dw_id):
-        """Sets the dw_id of this FactLogicTableVO.
+        r"""Sets the dw_id of this FactLogicTableVO.
 
         数据连接ID。
 
@@ -720,7 +720,7 @@ class FactLogicTableVO:
 
     @property
     def db_name(self):
-        """Gets the db_name of this FactLogicTableVO.
+        r"""Gets the db_name of this FactLogicTableVO.
 
         库名。
 
@@ -731,7 +731,7 @@ class FactLogicTableVO:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this FactLogicTableVO.
+        r"""Sets the db_name of this FactLogicTableVO.
 
         库名。
 
@@ -742,7 +742,7 @@ class FactLogicTableVO:
 
     @property
     def tb_id(self):
-        """Gets the tb_id of this FactLogicTableVO.
+        r"""Gets the tb_id of this FactLogicTableVO.
 
         数据表ID，只读。
 
@@ -753,7 +753,7 @@ class FactLogicTableVO:
 
     @tb_id.setter
     def tb_id(self, tb_id):
-        """Sets the tb_id of this FactLogicTableVO.
+        r"""Sets the tb_id of this FactLogicTableVO.
 
         数据表ID，只读。
 
@@ -764,7 +764,7 @@ class FactLogicTableVO:
 
     @property
     def dim_table_ids(self):
-        """Gets the dim_table_ids of this FactLogicTableVO.
+        r"""Gets the dim_table_ids of this FactLogicTableVO.
 
         关联维度表ID。
 
@@ -775,7 +775,7 @@ class FactLogicTableVO:
 
     @dim_table_ids.setter
     def dim_table_ids(self, dim_table_ids):
-        """Sets the dim_table_ids of this FactLogicTableVO.
+        r"""Sets the dim_table_ids of this FactLogicTableVO.
 
         关联维度表ID。
 
@@ -786,7 +786,7 @@ class FactLogicTableVO:
 
     @property
     def reversed(self):
-        """Gets the reversed of this FactLogicTableVO.
+        r"""Gets the reversed of this FactLogicTableVO.
 
         是否是逆向的。
 
@@ -797,7 +797,7 @@ class FactLogicTableVO:
 
     @reversed.setter
     def reversed(self, reversed):
-        """Sets the reversed of this FactLogicTableVO.
+        r"""Sets the reversed of this FactLogicTableVO.
 
         是否是逆向的。
 
@@ -808,7 +808,7 @@ class FactLogicTableVO:
 
     @property
     def partition_conf(self):
-        """Gets the partition_conf of this FactLogicTableVO.
+        r"""Gets the partition_conf of this FactLogicTableVO.
 
         分区表达式。
 
@@ -819,7 +819,7 @@ class FactLogicTableVO:
 
     @partition_conf.setter
     def partition_conf(self, partition_conf):
-        """Sets the partition_conf of this FactLogicTableVO.
+        r"""Sets the partition_conf of this FactLogicTableVO.
 
         分区表达式。
 
@@ -830,7 +830,7 @@ class FactLogicTableVO:
 
     @property
     def dirty_out_switch(self):
-        """Gets the dirty_out_switch of this FactLogicTableVO.
+        r"""Gets the dirty_out_switch of this FactLogicTableVO.
 
         异常数据输出开关。
 
@@ -841,7 +841,7 @@ class FactLogicTableVO:
 
     @dirty_out_switch.setter
     def dirty_out_switch(self, dirty_out_switch):
-        """Sets the dirty_out_switch of this FactLogicTableVO.
+        r"""Sets the dirty_out_switch of this FactLogicTableVO.
 
         异常数据输出开关。
 
@@ -852,7 +852,7 @@ class FactLogicTableVO:
 
     @property
     def dirty_out_database(self):
-        """Gets the dirty_out_database of this FactLogicTableVO.
+        r"""Gets the dirty_out_database of this FactLogicTableVO.
 
         异常数据输出库。
 
@@ -863,7 +863,7 @@ class FactLogicTableVO:
 
     @dirty_out_database.setter
     def dirty_out_database(self, dirty_out_database):
-        """Sets the dirty_out_database of this FactLogicTableVO.
+        r"""Sets the dirty_out_database of this FactLogicTableVO.
 
         异常数据输出库。
 
@@ -874,7 +874,7 @@ class FactLogicTableVO:
 
     @property
     def dirty_out_prefix(self):
-        """Gets the dirty_out_prefix of this FactLogicTableVO.
+        r"""Gets the dirty_out_prefix of this FactLogicTableVO.
 
         异常表前缀。
 
@@ -885,7 +885,7 @@ class FactLogicTableVO:
 
     @dirty_out_prefix.setter
     def dirty_out_prefix(self, dirty_out_prefix):
-        """Sets the dirty_out_prefix of this FactLogicTableVO.
+        r"""Sets the dirty_out_prefix of this FactLogicTableVO.
 
         异常表前缀。
 
@@ -896,7 +896,7 @@ class FactLogicTableVO:
 
     @property
     def dirty_out_suffix(self):
-        """Gets the dirty_out_suffix of this FactLogicTableVO.
+        r"""Gets the dirty_out_suffix of this FactLogicTableVO.
 
         异常表后缀。
 
@@ -907,7 +907,7 @@ class FactLogicTableVO:
 
     @dirty_out_suffix.setter
     def dirty_out_suffix(self, dirty_out_suffix):
-        """Sets the dirty_out_suffix of this FactLogicTableVO.
+        r"""Sets the dirty_out_suffix of this FactLogicTableVO.
 
         异常表后缀。
 
@@ -918,7 +918,7 @@ class FactLogicTableVO:
 
     @property
     def schema(self):
-        """Gets the schema of this FactLogicTableVO.
+        r"""Gets the schema of this FactLogicTableVO.
 
         DWS类型需要。
 
@@ -929,7 +929,7 @@ class FactLogicTableVO:
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this FactLogicTableVO.
+        r"""Sets the schema of this FactLogicTableVO.
 
         DWS类型需要。
 
@@ -940,7 +940,7 @@ class FactLogicTableVO:
 
     @property
     def distribute(self):
-        """Gets the distribute of this FactLogicTableVO.
+        r"""Gets the distribute of this FactLogicTableVO.
 
         DISTRIBUTE BY [HASH(column)|REPLICATION]。 枚举值：   - HASH: 对指定的列进行Hash，通过映射，把数据分布到指定DN   - REPLICATION: 表的每一行存在所有数据节点（DN）中，即每个数据节点都有完整的表数据 
 
@@ -951,7 +951,7 @@ class FactLogicTableVO:
 
     @distribute.setter
     def distribute(self, distribute):
-        """Sets the distribute of this FactLogicTableVO.
+        r"""Sets the distribute of this FactLogicTableVO.
 
         DISTRIBUTE BY [HASH(column)|REPLICATION]。 枚举值：   - HASH: 对指定的列进行Hash，通过映射，把数据分布到指定DN   - REPLICATION: 表的每一行存在所有数据节点（DN）中，即每个数据节点都有完整的表数据 
 
@@ -962,7 +962,7 @@ class FactLogicTableVO:
 
     @property
     def distribute_column(self):
-        """Gets the distribute_column of this FactLogicTableVO.
+        r"""Gets the distribute_column of this FactLogicTableVO.
 
         DISTRIBUTE BY HASH column.
 
@@ -973,7 +973,7 @@ class FactLogicTableVO:
 
     @distribute_column.setter
     def distribute_column(self, distribute_column):
-        """Sets the distribute_column of this FactLogicTableVO.
+        r"""Sets the distribute_column of this FactLogicTableVO.
 
         DISTRIBUTE BY HASH column.
 
@@ -984,7 +984,7 @@ class FactLogicTableVO:
 
     @property
     def table_type(self):
-        """Gets the table_type of this FactLogicTableVO.
+        r"""Gets the table_type of this FactLogicTableVO.
 
         表类型。
 
@@ -995,7 +995,7 @@ class FactLogicTableVO:
 
     @table_type.setter
     def table_type(self, table_type):
-        """Sets the table_type of this FactLogicTableVO.
+        r"""Sets the table_type of this FactLogicTableVO.
 
         表类型。
 
@@ -1006,7 +1006,7 @@ class FactLogicTableVO:
 
     @property
     def status(self):
-        """Gets the status of this FactLogicTableVO.
+        r"""Gets the status of this FactLogicTableVO.
 
         :return: The status of this FactLogicTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
@@ -1015,7 +1015,7 @@ class FactLogicTableVO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this FactLogicTableVO.
+        r"""Sets the status of this FactLogicTableVO.
 
         :param status: The status of this FactLogicTableVO.
         :type status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
@@ -1024,7 +1024,7 @@ class FactLogicTableVO:
 
     @property
     def tb_guid(self):
-        """Gets the tb_guid of this FactLogicTableVO.
+        r"""Gets the tb_guid of this FactLogicTableVO.
 
         表发布后，创建的数据目录技术资产guid，只读，创建和更新时无需填写。
 
@@ -1035,7 +1035,7 @@ class FactLogicTableVO:
 
     @tb_guid.setter
     def tb_guid(self, tb_guid):
-        """Sets the tb_guid of this FactLogicTableVO.
+        r"""Sets the tb_guid of this FactLogicTableVO.
 
         表发布后，创建的数据目录技术资产guid，只读，创建和更新时无需填写。
 
@@ -1046,7 +1046,7 @@ class FactLogicTableVO:
 
     @property
     def tb_logic_guid(self):
-        """Gets the tb_logic_guid of this FactLogicTableVO.
+        r"""Gets the tb_logic_guid of this FactLogicTableVO.
 
         表发布后，创建的数据目录业务资产guid，只读，创建和更新时无需填写。
 
@@ -1057,7 +1057,7 @@ class FactLogicTableVO:
 
     @tb_logic_guid.setter
     def tb_logic_guid(self, tb_logic_guid):
-        """Sets the tb_logic_guid of this FactLogicTableVO.
+        r"""Sets the tb_logic_guid of this FactLogicTableVO.
 
         表发布后，创建的数据目录业务资产guid，只读，创建和更新时无需填写。
 
@@ -1068,7 +1068,7 @@ class FactLogicTableVO:
 
     @property
     def dw_type(self):
-        """Gets the dw_type of this FactLogicTableVO.
+        r"""Gets the dw_type of this FactLogicTableVO.
 
         数据连接类型，对应表所在的数仓类型，取值可以为DLI、DWS、MRS_HIVE、POSTGRESQL、MRS_SPARK、CLICKHOUSE、MYSQL、ORACLE和DORIS等。
 
@@ -1079,7 +1079,7 @@ class FactLogicTableVO:
 
     @dw_type.setter
     def dw_type(self, dw_type):
-        """Sets the dw_type of this FactLogicTableVO.
+        r"""Sets the dw_type of this FactLogicTableVO.
 
         数据连接类型，对应表所在的数仓类型，取值可以为DLI、DWS、MRS_HIVE、POSTGRESQL、MRS_SPARK、CLICKHOUSE、MYSQL、ORACLE和DORIS等。
 
@@ -1090,7 +1090,7 @@ class FactLogicTableVO:
 
     @property
     def l1(self):
-        """Gets the l1 of this FactLogicTableVO.
+        r"""Gets the l1 of this FactLogicTableVO.
 
         主题域分组中文名，只读，创建和更新时无需填写。
 
@@ -1101,7 +1101,7 @@ class FactLogicTableVO:
 
     @l1.setter
     def l1(self, l1):
-        """Sets the l1 of this FactLogicTableVO.
+        r"""Sets the l1 of this FactLogicTableVO.
 
         主题域分组中文名，只读，创建和更新时无需填写。
 
@@ -1112,7 +1112,7 @@ class FactLogicTableVO:
 
     @property
     def l2(self):
-        """Gets the l2 of this FactLogicTableVO.
+        r"""Gets the l2 of this FactLogicTableVO.
 
         主题域中文名，只读，创建和更新时无需填写。
 
@@ -1123,7 +1123,7 @@ class FactLogicTableVO:
 
     @l2.setter
     def l2(self, l2):
-        """Sets the l2 of this FactLogicTableVO.
+        r"""Sets the l2 of this FactLogicTableVO.
 
         主题域中文名，只读，创建和更新时无需填写。
 
@@ -1134,7 +1134,7 @@ class FactLogicTableVO:
 
     @property
     def l3(self):
-        """Gets the l3 of this FactLogicTableVO.
+        r"""Gets the l3 of this FactLogicTableVO.
 
         业务对象中文名，只读，创建和更新时无需填写。
 
@@ -1145,7 +1145,7 @@ class FactLogicTableVO:
 
     @l3.setter
     def l3(self, l3):
-        """Sets the l3 of this FactLogicTableVO.
+        r"""Sets the l3 of this FactLogicTableVO.
 
         业务对象中文名，只读，创建和更新时无需填写。
 
@@ -1156,7 +1156,7 @@ class FactLogicTableVO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this FactLogicTableVO.
+        r"""Gets the create_time of this FactLogicTableVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -1167,7 +1167,7 @@ class FactLogicTableVO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this FactLogicTableVO.
+        r"""Sets the create_time of this FactLogicTableVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -1178,7 +1178,7 @@ class FactLogicTableVO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this FactLogicTableVO.
+        r"""Gets the update_time of this FactLogicTableVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -1189,7 +1189,7 @@ class FactLogicTableVO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this FactLogicTableVO.
+        r"""Sets the update_time of this FactLogicTableVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -1200,7 +1200,7 @@ class FactLogicTableVO:
 
     @property
     def approval_info(self):
-        """Gets the approval_info of this FactLogicTableVO.
+        r"""Gets the approval_info of this FactLogicTableVO.
 
         :return: The approval_info of this FactLogicTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalVO`
@@ -1209,7 +1209,7 @@ class FactLogicTableVO:
 
     @approval_info.setter
     def approval_info(self, approval_info):
-        """Sets the approval_info of this FactLogicTableVO.
+        r"""Sets the approval_info of this FactLogicTableVO.
 
         :param approval_info: The approval_info of this FactLogicTableVO.
         :type approval_info: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalVO`
@@ -1218,7 +1218,7 @@ class FactLogicTableVO:
 
     @property
     def new_biz(self):
-        """Gets the new_biz of this FactLogicTableVO.
+        r"""Gets the new_biz of this FactLogicTableVO.
 
         :return: The new_biz of this FactLogicTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizVersionManageVO`
@@ -1227,7 +1227,7 @@ class FactLogicTableVO:
 
     @new_biz.setter
     def new_biz(self, new_biz):
-        """Sets the new_biz of this FactLogicTableVO.
+        r"""Sets the new_biz of this FactLogicTableVO.
 
         :param new_biz: The new_biz of this FactLogicTableVO.
         :type new_biz: :class:`huaweicloudsdkdataartsstudio.v1.BizVersionManageVO`
@@ -1236,7 +1236,7 @@ class FactLogicTableVO:
 
     @property
     def dimensions(self):
-        """Gets the dimensions of this FactLogicTableVO.
+        r"""Gets the dimensions of this FactLogicTableVO.
 
         事实表维度信息，只读。
 
@@ -1247,7 +1247,7 @@ class FactLogicTableVO:
 
     @dimensions.setter
     def dimensions(self, dimensions):
-        """Sets the dimensions of this FactLogicTableVO.
+        r"""Sets the dimensions of this FactLogicTableVO.
 
         事实表维度信息，只读。
 
@@ -1258,7 +1258,7 @@ class FactLogicTableVO:
 
     @property
     def attributes(self):
-        """Gets the attributes of this FactLogicTableVO.
+        r"""Gets the attributes of this FactLogicTableVO.
 
         事实表事实属性信息，只读。
 
@@ -1269,7 +1269,7 @@ class FactLogicTableVO:
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this FactLogicTableVO.
+        r"""Sets the attributes of this FactLogicTableVO.
 
         事实表事实属性信息，只读。
 
@@ -1280,7 +1280,7 @@ class FactLogicTableVO:
 
     @property
     def mappings(self):
-        """Gets the mappings of this FactLogicTableVO.
+        r"""Gets the mappings of this FactLogicTableVO.
 
         表映射信息。
 
@@ -1291,7 +1291,7 @@ class FactLogicTableVO:
 
     @mappings.setter
     def mappings(self, mappings):
-        """Sets the mappings of this FactLogicTableVO.
+        r"""Sets the mappings of this FactLogicTableVO.
 
         表映射信息。
 
@@ -1302,7 +1302,7 @@ class FactLogicTableVO:
 
     @property
     def measures(self):
-        """Gets the measures of this FactLogicTableVO.
+        r"""Gets the measures of this FactLogicTableVO.
 
         事实表度量信息，只读。
 
@@ -1313,7 +1313,7 @@ class FactLogicTableVO:
 
     @measures.setter
     def measures(self, measures):
-        """Sets the measures of this FactLogicTableVO.
+        r"""Sets the measures of this FactLogicTableVO.
 
         事实表度量信息，只读。
 
@@ -1324,7 +1324,7 @@ class FactLogicTableVO:
 
     @property
     def table_attributes(self):
-        """Gets the table_attributes of this FactLogicTableVO.
+        r"""Gets the table_attributes of this FactLogicTableVO.
 
         事实表所有属性。
 
@@ -1335,7 +1335,7 @@ class FactLogicTableVO:
 
     @table_attributes.setter
     def table_attributes(self, table_attributes):
-        """Sets the table_attributes of this FactLogicTableVO.
+        r"""Sets the table_attributes of this FactLogicTableVO.
 
         事实表所有属性。
 
@@ -1346,7 +1346,7 @@ class FactLogicTableVO:
 
     @property
     def configs(self):
-        """Gets the configs of this FactLogicTableVO.
+        r"""Gets the configs of this FactLogicTableVO.
 
         其他配置
 
@@ -1357,7 +1357,7 @@ class FactLogicTableVO:
 
     @configs.setter
     def configs(self, configs):
-        """Sets the configs of this FactLogicTableVO.
+        r"""Sets the configs of this FactLogicTableVO.
 
         其他配置
 
@@ -1368,7 +1368,7 @@ class FactLogicTableVO:
 
     @property
     def physical_table(self):
-        """Gets the physical_table of this FactLogicTableVO.
+        r"""Gets the physical_table of this FactLogicTableVO.
 
         :return: The physical_table of this FactLogicTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1377,7 +1377,7 @@ class FactLogicTableVO:
 
     @physical_table.setter
     def physical_table(self, physical_table):
-        """Sets the physical_table of this FactLogicTableVO.
+        r"""Sets the physical_table of this FactLogicTableVO.
 
         :param physical_table: The physical_table of this FactLogicTableVO.
         :type physical_table: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1386,7 +1386,7 @@ class FactLogicTableVO:
 
     @property
     def dev_physical_table(self):
-        """Gets the dev_physical_table of this FactLogicTableVO.
+        r"""Gets the dev_physical_table of this FactLogicTableVO.
 
         :return: The dev_physical_table of this FactLogicTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1395,7 +1395,7 @@ class FactLogicTableVO:
 
     @dev_physical_table.setter
     def dev_physical_table(self, dev_physical_table):
-        """Sets the dev_physical_table of this FactLogicTableVO.
+        r"""Sets the dev_physical_table of this FactLogicTableVO.
 
         :param dev_physical_table: The dev_physical_table of this FactLogicTableVO.
         :type dev_physical_table: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1404,7 +1404,7 @@ class FactLogicTableVO:
 
     @property
     def technical_asset(self):
-        """Gets the technical_asset of this FactLogicTableVO.
+        r"""Gets the technical_asset of this FactLogicTableVO.
 
         :return: The technical_asset of this FactLogicTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1413,7 +1413,7 @@ class FactLogicTableVO:
 
     @technical_asset.setter
     def technical_asset(self, technical_asset):
-        """Sets the technical_asset of this FactLogicTableVO.
+        r"""Sets the technical_asset of this FactLogicTableVO.
 
         :param technical_asset: The technical_asset of this FactLogicTableVO.
         :type technical_asset: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1422,7 +1422,7 @@ class FactLogicTableVO:
 
     @property
     def business_asset(self):
-        """Gets the business_asset of this FactLogicTableVO.
+        r"""Gets the business_asset of this FactLogicTableVO.
 
         :return: The business_asset of this FactLogicTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1431,7 +1431,7 @@ class FactLogicTableVO:
 
     @business_asset.setter
     def business_asset(self, business_asset):
-        """Sets the business_asset of this FactLogicTableVO.
+        r"""Sets the business_asset of this FactLogicTableVO.
 
         :param business_asset: The business_asset of this FactLogicTableVO.
         :type business_asset: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1440,7 +1440,7 @@ class FactLogicTableVO:
 
     @property
     def meta_data_link(self):
-        """Gets the meta_data_link of this FactLogicTableVO.
+        r"""Gets the meta_data_link of this FactLogicTableVO.
 
         :return: The meta_data_link of this FactLogicTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1449,7 +1449,7 @@ class FactLogicTableVO:
 
     @meta_data_link.setter
     def meta_data_link(self, meta_data_link):
-        """Sets the meta_data_link of this FactLogicTableVO.
+        r"""Sets the meta_data_link of this FactLogicTableVO.
 
         :param meta_data_link: The meta_data_link of this FactLogicTableVO.
         :type meta_data_link: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1458,7 +1458,7 @@ class FactLogicTableVO:
 
     @property
     def data_quality(self):
-        """Gets the data_quality of this FactLogicTableVO.
+        r"""Gets the data_quality of this FactLogicTableVO.
 
         :return: The data_quality of this FactLogicTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1467,7 +1467,7 @@ class FactLogicTableVO:
 
     @data_quality.setter
     def data_quality(self, data_quality):
-        """Sets the data_quality of this FactLogicTableVO.
+        r"""Sets the data_quality of this FactLogicTableVO.
 
         :param data_quality: The data_quality of this FactLogicTableVO.
         :type data_quality: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1476,7 +1476,7 @@ class FactLogicTableVO:
 
     @property
     def summary_status(self):
-        """Gets the summary_status of this FactLogicTableVO.
+        r"""Gets the summary_status of this FactLogicTableVO.
 
         :return: The summary_status of this FactLogicTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1485,7 +1485,7 @@ class FactLogicTableVO:
 
     @summary_status.setter
     def summary_status(self, summary_status):
-        """Sets the summary_status of this FactLogicTableVO.
+        r"""Sets the summary_status of this FactLogicTableVO.
 
         :param summary_status: The summary_status of this FactLogicTableVO.
         :type summary_status: :class:`huaweicloudsdkdataartsstudio.v1.SyncStatusEnum`
@@ -1494,7 +1494,7 @@ class FactLogicTableVO:
 
     @property
     def quality_id(self):
-        """Gets the quality_id of this FactLogicTableVO.
+        r"""Gets the quality_id of this FactLogicTableVO.
 
         质量ID，ID字符串。
 
@@ -1505,7 +1505,7 @@ class FactLogicTableVO:
 
     @quality_id.setter
     def quality_id(self, quality_id):
-        """Sets the quality_id of this FactLogicTableVO.
+        r"""Sets the quality_id of this FactLogicTableVO.
 
         质量ID，ID字符串。
 
@@ -1516,7 +1516,7 @@ class FactLogicTableVO:
 
     @property
     def alias(self):
-        """Gets the alias of this FactLogicTableVO.
+        r"""Gets the alias of this FactLogicTableVO.
 
         别名。
 
@@ -1527,7 +1527,7 @@ class FactLogicTableVO:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this FactLogicTableVO.
+        r"""Sets the alias of this FactLogicTableVO.
 
         别名。
 
@@ -1538,7 +1538,7 @@ class FactLogicTableVO:
 
     @property
     def self_defined_fields(self):
-        """Gets the self_defined_fields of this FactLogicTableVO.
+        r"""Gets the self_defined_fields of this FactLogicTableVO.
 
         自定义项。
 
@@ -1549,7 +1549,7 @@ class FactLogicTableVO:
 
     @self_defined_fields.setter
     def self_defined_fields(self, self_defined_fields):
-        """Sets the self_defined_fields of this FactLogicTableVO.
+        r"""Sets the self_defined_fields of this FactLogicTableVO.
 
         自定义项。
 
@@ -1560,7 +1560,7 @@ class FactLogicTableVO:
 
     @property
     def obs_location(self):
-        """Gets the obs_location of this FactLogicTableVO.
+        r"""Gets the obs_location of this FactLogicTableVO.
 
         外表路径
 
@@ -1571,7 +1571,7 @@ class FactLogicTableVO:
 
     @obs_location.setter
     def obs_location(self, obs_location):
-        """Sets the obs_location of this FactLogicTableVO.
+        r"""Sets the obs_location of this FactLogicTableVO.
 
         外表路径
 
@@ -1582,7 +1582,7 @@ class FactLogicTableVO:
 
     @property
     def dev_version(self):
-        """Gets the dev_version of this FactLogicTableVO.
+        r"""Gets the dev_version of this FactLogicTableVO.
 
         开发环境版本，ID字符串。
 
@@ -1593,7 +1593,7 @@ class FactLogicTableVO:
 
     @dev_version.setter
     def dev_version(self, dev_version):
-        """Sets the dev_version of this FactLogicTableVO.
+        r"""Sets the dev_version of this FactLogicTableVO.
 
         开发环境版本，ID字符串。
 
@@ -1604,7 +1604,7 @@ class FactLogicTableVO:
 
     @property
     def prod_version(self):
-        """Gets the prod_version of this FactLogicTableVO.
+        r"""Gets the prod_version of this FactLogicTableVO.
 
         生产环境版本，ID字符串。
 
@@ -1615,7 +1615,7 @@ class FactLogicTableVO:
 
     @prod_version.setter
     def prod_version(self, prod_version):
-        """Sets the prod_version of this FactLogicTableVO.
+        r"""Sets the prod_version of this FactLogicTableVO.
 
         生产环境版本，ID字符串。
 
@@ -1626,7 +1626,7 @@ class FactLogicTableVO:
 
     @property
     def dev_version_name(self):
-        """Gets the dev_version_name of this FactLogicTableVO.
+        r"""Gets the dev_version_name of this FactLogicTableVO.
 
         开发环境版本名称
 
@@ -1637,7 +1637,7 @@ class FactLogicTableVO:
 
     @dev_version_name.setter
     def dev_version_name(self, dev_version_name):
-        """Sets the dev_version_name of this FactLogicTableVO.
+        r"""Sets the dev_version_name of this FactLogicTableVO.
 
         开发环境版本名称
 
@@ -1648,7 +1648,7 @@ class FactLogicTableVO:
 
     @property
     def prod_version_name(self):
-        """Gets the prod_version_name of this FactLogicTableVO.
+        r"""Gets the prod_version_name of this FactLogicTableVO.
 
         生产环境版本名称
 
@@ -1659,7 +1659,7 @@ class FactLogicTableVO:
 
     @prod_version_name.setter
     def prod_version_name(self, prod_version_name):
-        """Sets the prod_version_name of this FactLogicTableVO.
+        r"""Sets the prod_version_name of this FactLogicTableVO.
 
         生产环境版本名称
 
@@ -1670,7 +1670,7 @@ class FactLogicTableVO:
 
     @property
     def env_type(self):
-        """Gets the env_type of this FactLogicTableVO.
+        r"""Gets the env_type of this FactLogicTableVO.
 
         :return: The env_type of this FactLogicTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.EnvTypeEnum`
@@ -1679,7 +1679,7 @@ class FactLogicTableVO:
 
     @env_type.setter
     def env_type(self, env_type):
-        """Sets the env_type of this FactLogicTableVO.
+        r"""Sets the env_type of this FactLogicTableVO.
 
         :param env_type: The env_type of this FactLogicTableVO.
         :type env_type: :class:`huaweicloudsdkdataartsstudio.v1.EnvTypeEnum`
@@ -1688,7 +1688,7 @@ class FactLogicTableVO:
 
     @property
     def secrecy_levels(self):
-        """Gets the secrecy_levels of this FactLogicTableVO.
+        r"""Gets the secrecy_levels of this FactLogicTableVO.
 
         密级
 
@@ -1699,7 +1699,7 @@ class FactLogicTableVO:
 
     @secrecy_levels.setter
     def secrecy_levels(self, secrecy_levels):
-        """Sets the secrecy_levels of this FactLogicTableVO.
+        r"""Sets the secrecy_levels of this FactLogicTableVO.
 
         密级
 
@@ -1710,7 +1710,7 @@ class FactLogicTableVO:
 
     @property
     def model_id(self):
-        """Gets the model_id of this FactLogicTableVO.
+        r"""Gets the model_id of this FactLogicTableVO.
 
         所属模型ID，ID字符串。
 
@@ -1721,7 +1721,7 @@ class FactLogicTableVO:
 
     @model_id.setter
     def model_id(self, model_id):
-        """Sets the model_id of this FactLogicTableVO.
+        r"""Sets the model_id of this FactLogicTableVO.
 
         所属模型ID，ID字符串。
 
@@ -1732,7 +1732,7 @@ class FactLogicTableVO:
 
     @property
     def model(self):
-        """Gets the model of this FactLogicTableVO.
+        r"""Gets the model of this FactLogicTableVO.
 
         :return: The model of this FactLogicTableVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.WorkspaceVO`
@@ -1741,7 +1741,7 @@ class FactLogicTableVO:
 
     @model.setter
     def model(self, model):
-        """Sets the model of this FactLogicTableVO.
+        r"""Sets the model of this FactLogicTableVO.
 
         :param model: The model of this FactLogicTableVO.
         :type model: :class:`huaweicloudsdkdataartsstudio.v1.WorkspaceVO`

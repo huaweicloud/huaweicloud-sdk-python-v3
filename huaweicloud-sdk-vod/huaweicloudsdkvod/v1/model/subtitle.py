@@ -35,7 +35,7 @@ class Subtitle:
     }
 
     def __init__(self, id=None, type=None, language=None, name=None, md5=None, description=None):
-        """Subtitle
+        r"""Subtitle
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class Subtitle:
 
     @property
     def id(self):
-        """Gets the id of this Subtitle.
+        r"""Gets the id of this Subtitle.
 
         字幕id。  取值范围：[1,8]。
 
@@ -86,7 +86,7 @@ class Subtitle:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Subtitle.
+        r"""Sets the id of this Subtitle.
 
         字幕id。  取值范围：[1,8]。
 
@@ -97,7 +97,7 @@ class Subtitle:
 
     @property
     def type(self):
-        """Gets the type of this Subtitle.
+        r"""Gets the type of this Subtitle.
 
         字幕文件类型，目前暂只支持“SRT”。
 
@@ -108,7 +108,7 @@ class Subtitle:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Subtitle.
+        r"""Sets the type of this Subtitle.
 
         字幕文件类型，目前暂只支持“SRT”。
 
@@ -119,7 +119,7 @@ class Subtitle:
 
     @property
     def language(self):
-        """Gets the language of this Subtitle.
+        r"""Gets the language of this Subtitle.
 
         字幕语言类型。  取值如下： - CN：表示中文字幕。 - EN：表示英文字幕。
 
@@ -130,7 +130,7 @@ class Subtitle:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this Subtitle.
+        r"""Sets the language of this Subtitle.
 
         字幕语言类型。  取值如下： - CN：表示中文字幕。 - EN：表示英文字幕。
 
@@ -141,7 +141,7 @@ class Subtitle:
 
     @property
     def name(self):
-        """Gets the name of this Subtitle.
+        r"""Gets the name of this Subtitle.
 
         subtitle name
 
@@ -152,7 +152,7 @@ class Subtitle:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Subtitle.
+        r"""Sets the name of this Subtitle.
 
         subtitle name
 
@@ -163,7 +163,7 @@ class Subtitle:
 
     @property
     def md5(self):
-        """Gets the md5 of this Subtitle.
+        r"""Gets the md5 of this Subtitle.
 
         字幕文件的MD5值。
 
@@ -174,7 +174,7 @@ class Subtitle:
 
     @md5.setter
     def md5(self, md5):
-        """Sets the md5 of this Subtitle.
+        r"""Sets the md5 of this Subtitle.
 
         字幕文件的MD5值。
 
@@ -185,7 +185,7 @@ class Subtitle:
 
     @property
     def description(self):
-        """Gets the description of this Subtitle.
+        r"""Gets the description of this Subtitle.
 
         字幕描述。
 
@@ -196,7 +196,7 @@ class Subtitle:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Subtitle.
+        r"""Sets the description of this Subtitle.
 
         字幕描述。
 

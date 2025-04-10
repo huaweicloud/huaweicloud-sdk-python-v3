@@ -52,7 +52,7 @@ class ShowIpcResponse(SdkResponse):
     }
 
     def __init__(self, camera_id=None, v2x_edge_id=None, name=None, cross_id=None, focal_type=None, parent_connect_code=None, connect_code=None, description=None, esn=None, ip=None, status=None, created_time=None, last_modified_time=None, last_online_time=None):
-        """ShowIpcResponse
+        r"""ShowIpcResponse
 
         The model defined in huaweicloud sdk
 
@@ -135,7 +135,7 @@ class ShowIpcResponse(SdkResponse):
 
     @property
     def camera_id(self):
-        """Gets the camera_id of this ShowIpcResponse.
+        r"""Gets the camera_id of this ShowIpcResponse.
 
         **参数说明**：摄像头ID，console界面查询摄像头IPC列表中的设备Id。
 
@@ -146,7 +146,7 @@ class ShowIpcResponse(SdkResponse):
 
     @camera_id.setter
     def camera_id(self, camera_id):
-        """Sets the camera_id of this ShowIpcResponse.
+        r"""Sets the camera_id of this ShowIpcResponse.
 
         **参数说明**：摄像头ID，console界面查询摄像头IPC列表中的设备Id。
 
@@ -157,7 +157,7 @@ class ShowIpcResponse(SdkResponse):
 
     @property
     def v2x_edge_id(self):
-        """Gets the v2x_edge_id of this ShowIpcResponse.
+        r"""Gets the v2x_edge_id of this ShowIpcResponse.
 
         **参数说明**：Edge ID，用于唯一标识一个Edge，创建Edge后获得。方法参见 [创建Edge](https://support.huaweicloud.com/api-v2x/v2x_04_0078.html)。
 
@@ -168,7 +168,7 @@ class ShowIpcResponse(SdkResponse):
 
     @v2x_edge_id.setter
     def v2x_edge_id(self, v2x_edge_id):
-        """Sets the v2x_edge_id of this ShowIpcResponse.
+        r"""Sets the v2x_edge_id of this ShowIpcResponse.
 
         **参数说明**：Edge ID，用于唯一标识一个Edge，创建Edge后获得。方法参见 [创建Edge](https://support.huaweicloud.com/api-v2x/v2x_04_0078.html)。
 
@@ -179,7 +179,7 @@ class ShowIpcResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowIpcResponse.
+        r"""Gets the name of this ShowIpcResponse.
 
         **参数说明**：摄像头名称。
 
@@ -190,7 +190,7 @@ class ShowIpcResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowIpcResponse.
+        r"""Sets the name of this ShowIpcResponse.
 
         **参数说明**：摄像头名称。
 
@@ -201,7 +201,7 @@ class ShowIpcResponse(SdkResponse):
 
     @property
     def cross_id(self):
-        """Gets the cross_id of this ShowIpcResponse.
+        r"""Gets the cross_id of this ShowIpcResponse.
 
         **参数说明**：摄像头所感知的路口或者路段的Id。
 
@@ -212,7 +212,7 @@ class ShowIpcResponse(SdkResponse):
 
     @cross_id.setter
     def cross_id(self, cross_id):
-        """Sets the cross_id of this ShowIpcResponse.
+        r"""Sets the cross_id of this ShowIpcResponse.
 
         **参数说明**：摄像头所感知的路口或者路段的Id。
 
@@ -223,7 +223,7 @@ class ShowIpcResponse(SdkResponse):
 
     @property
     def focal_type(self):
-        """Gets the focal_type of this ShowIpcResponse.
+        r"""Gets the focal_type of this ShowIpcResponse.
 
         **参数说明**：摄像头聚焦类型。  - long：长焦  - short：短焦
 
@@ -234,7 +234,7 @@ class ShowIpcResponse(SdkResponse):
 
     @focal_type.setter
     def focal_type(self, focal_type):
-        """Sets the focal_type of this ShowIpcResponse.
+        r"""Sets the focal_type of this ShowIpcResponse.
 
         **参数说明**：摄像头聚焦类型。  - long：长焦  - short：短焦
 
@@ -245,7 +245,7 @@ class ShowIpcResponse(SdkResponse):
 
     @property
     def parent_connect_code(self):
-        """Gets the parent_connect_code of this ShowIpcResponse.
+        r"""Gets the parent_connect_code of this ShowIpcResponse.
 
         **参数说明**：摄像头连接的ITS800的互联编码。
 
@@ -256,7 +256,7 @@ class ShowIpcResponse(SdkResponse):
 
     @parent_connect_code.setter
     def parent_connect_code(self, parent_connect_code):
-        """Sets the parent_connect_code of this ShowIpcResponse.
+        r"""Sets the parent_connect_code of this ShowIpcResponse.
 
         **参数说明**：摄像头连接的ITS800的互联编码。
 
@@ -267,7 +267,7 @@ class ShowIpcResponse(SdkResponse):
 
     @property
     def connect_code(self):
-        """Gets the connect_code of this ShowIpcResponse.
+        r"""Gets the connect_code of this ShowIpcResponse.
 
         **参数说明**：摄像头的互联编码。
 
@@ -278,7 +278,7 @@ class ShowIpcResponse(SdkResponse):
 
     @connect_code.setter
     def connect_code(self, connect_code):
-        """Sets the connect_code of this ShowIpcResponse.
+        r"""Sets the connect_code of this ShowIpcResponse.
 
         **参数说明**：摄像头的互联编码。
 
@@ -289,7 +289,7 @@ class ShowIpcResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowIpcResponse.
+        r"""Gets the description of this ShowIpcResponse.
 
         **参数说明**：描述。
 
@@ -300,7 +300,7 @@ class ShowIpcResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowIpcResponse.
+        r"""Sets the description of this ShowIpcResponse.
 
         **参数说明**：描述。
 
@@ -311,7 +311,7 @@ class ShowIpcResponse(SdkResponse):
 
     @property
     def esn(self):
-        """Gets the esn of this ShowIpcResponse.
+        r"""Gets the esn of this ShowIpcResponse.
 
         **参数说明**：IPC的设备编码。
 
@@ -322,7 +322,7 @@ class ShowIpcResponse(SdkResponse):
 
     @esn.setter
     def esn(self, esn):
-        """Sets the esn of this ShowIpcResponse.
+        r"""Sets the esn of this ShowIpcResponse.
 
         **参数说明**：IPC的设备编码。
 
@@ -333,7 +333,7 @@ class ShowIpcResponse(SdkResponse):
 
     @property
     def ip(self):
-        """Gets the ip of this ShowIpcResponse.
+        r"""Gets the ip of this ShowIpcResponse.
 
         **参数说明**：该摄像头的ip地址。
 
@@ -344,7 +344,7 @@ class ShowIpcResponse(SdkResponse):
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this ShowIpcResponse.
+        r"""Sets the ip of this ShowIpcResponse.
 
         **参数说明**：该摄像头的ip地址。
 
@@ -355,7 +355,7 @@ class ShowIpcResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowIpcResponse.
+        r"""Gets the status of this ShowIpcResponse.
 
         **参数说明**：摄像机的状态。  **取值范围**：  - ONLINE：在线   - OFFLINE：离线  - INITIAL：初始化  - UNKNOWN：未知   - SLEEP：休眠
 
@@ -366,7 +366,7 @@ class ShowIpcResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowIpcResponse.
+        r"""Sets the status of this ShowIpcResponse.
 
         **参数说明**：摄像机的状态。  **取值范围**：  - ONLINE：在线   - OFFLINE：离线  - INITIAL：初始化  - UNKNOWN：未知   - SLEEP：休眠
 
@@ -377,7 +377,7 @@ class ShowIpcResponse(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this ShowIpcResponse.
+        r"""Gets the created_time of this ShowIpcResponse.
 
         **参数说明**：创建时间。            格式：yyyy-MM-dd''T''HH:mm:ss''Z''。  例如 2020-09-01T01:37:01Z。
 
@@ -388,7 +388,7 @@ class ShowIpcResponse(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this ShowIpcResponse.
+        r"""Sets the created_time of this ShowIpcResponse.
 
         **参数说明**：创建时间。            格式：yyyy-MM-dd''T''HH:mm:ss''Z''。  例如 2020-09-01T01:37:01Z。
 
@@ -399,7 +399,7 @@ class ShowIpcResponse(SdkResponse):
 
     @property
     def last_modified_time(self):
-        """Gets the last_modified_time of this ShowIpcResponse.
+        r"""Gets the last_modified_time of this ShowIpcResponse.
 
         **参数说明**：最后修改时间。            格式：yyyy-MM-dd''T''HH:mm:ss''Z''。  例如 2020-09-01T01:37:01Z。
 
@@ -410,7 +410,7 @@ class ShowIpcResponse(SdkResponse):
 
     @last_modified_time.setter
     def last_modified_time(self, last_modified_time):
-        """Sets the last_modified_time of this ShowIpcResponse.
+        r"""Sets the last_modified_time of this ShowIpcResponse.
 
         **参数说明**：最后修改时间。            格式：yyyy-MM-dd''T''HH:mm:ss''Z''。  例如 2020-09-01T01:37:01Z。
 
@@ -421,7 +421,7 @@ class ShowIpcResponse(SdkResponse):
 
     @property
     def last_online_time(self):
-        """Gets the last_online_time of this ShowIpcResponse.
+        r"""Gets the last_online_time of this ShowIpcResponse.
 
         **参数说明**：最后在线时间。          格式：yyyy-MM-dd''T''HH:mm:ss''Z''。  例如 2020-09-01T01:37:01Z。
 
@@ -432,7 +432,7 @@ class ShowIpcResponse(SdkResponse):
 
     @last_online_time.setter
     def last_online_time(self, last_online_time):
-        """Sets the last_online_time of this ShowIpcResponse.
+        r"""Sets the last_online_time of this ShowIpcResponse.
 
         **参数说明**：最后在线时间。          格式：yyyy-MM-dd''T''HH:mm:ss''Z''。  例如 2020-09-01T01:37:01Z。
 

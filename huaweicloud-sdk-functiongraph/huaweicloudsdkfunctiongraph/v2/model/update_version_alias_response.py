@@ -36,7 +36,7 @@ class UpdateVersionAliasResponse(SdkResponse):
     }
 
     def __init__(self, name=None, version=None, description=None, last_modified=None, alias_urn=None, additional_version_weights=None):
-        """UpdateVersionAliasResponse
+        r"""UpdateVersionAliasResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class UpdateVersionAliasResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateVersionAliasResponse.
+        r"""Gets the name of this UpdateVersionAliasResponse.
 
         要获取的别名名称。
 
@@ -90,7 +90,7 @@ class UpdateVersionAliasResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateVersionAliasResponse.
+        r"""Sets the name of this UpdateVersionAliasResponse.
 
         要获取的别名名称。
 
@@ -101,7 +101,7 @@ class UpdateVersionAliasResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this UpdateVersionAliasResponse.
+        r"""Gets the version of this UpdateVersionAliasResponse.
 
         别名对应的版本名称。
 
@@ -112,7 +112,7 @@ class UpdateVersionAliasResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this UpdateVersionAliasResponse.
+        r"""Sets the version of this UpdateVersionAliasResponse.
 
         别名对应的版本名称。
 
@@ -123,7 +123,7 @@ class UpdateVersionAliasResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdateVersionAliasResponse.
+        r"""Gets the description of this UpdateVersionAliasResponse.
 
         别名描述信息。
 
@@ -134,7 +134,7 @@ class UpdateVersionAliasResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateVersionAliasResponse.
+        r"""Sets the description of this UpdateVersionAliasResponse.
 
         别名描述信息。
 
@@ -145,7 +145,7 @@ class UpdateVersionAliasResponse(SdkResponse):
 
     @property
     def last_modified(self):
-        """Gets the last_modified of this UpdateVersionAliasResponse.
+        r"""Gets the last_modified of this UpdateVersionAliasResponse.
 
         别名最后修改时间。
 
@@ -156,7 +156,7 @@ class UpdateVersionAliasResponse(SdkResponse):
 
     @last_modified.setter
     def last_modified(self, last_modified):
-        """Sets the last_modified of this UpdateVersionAliasResponse.
+        r"""Sets the last_modified of this UpdateVersionAliasResponse.
 
         别名最后修改时间。
 
@@ -167,7 +167,7 @@ class UpdateVersionAliasResponse(SdkResponse):
 
     @property
     def alias_urn(self):
-        """Gets the alias_urn of this UpdateVersionAliasResponse.
+        r"""Gets the alias_urn of this UpdateVersionAliasResponse.
 
         版本别名唯一标识。
 
@@ -178,7 +178,7 @@ class UpdateVersionAliasResponse(SdkResponse):
 
     @alias_urn.setter
     def alias_urn(self, alias_urn):
-        """Sets the alias_urn of this UpdateVersionAliasResponse.
+        r"""Sets the alias_urn of this UpdateVersionAliasResponse.
 
         版本别名唯一标识。
 
@@ -189,7 +189,7 @@ class UpdateVersionAliasResponse(SdkResponse):
 
     @property
     def additional_version_weights(self):
-        """Gets the additional_version_weights of this UpdateVersionAliasResponse.
+        r"""Gets the additional_version_weights of this UpdateVersionAliasResponse.
 
         灰度版本信息
 
@@ -200,7 +200,7 @@ class UpdateVersionAliasResponse(SdkResponse):
 
     @additional_version_weights.setter
     def additional_version_weights(self, additional_version_weights):
-        """Sets the additional_version_weights of this UpdateVersionAliasResponse.
+        r"""Sets the additional_version_weights of this UpdateVersionAliasResponse.
 
         灰度版本信息
 

@@ -27,7 +27,7 @@ class BatchStop:
     }
 
     def __init__(self, servers=None, type=None):
-        """BatchStop
+        r"""BatchStop
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchStop:
 
     @property
     def servers(self):
-        """Gets the servers of this BatchStop.
+        r"""Gets the servers of this BatchStop.
 
         待停止的边缘实例列表。
 
@@ -60,7 +60,7 @@ class BatchStop:
 
     @servers.setter
     def servers(self, servers):
-        """Sets the servers of this BatchStop.
+        r"""Sets the servers of this BatchStop.
 
         待停止的边缘实例列表。
 
@@ -71,7 +71,7 @@ class BatchStop:
 
     @property
     def type(self):
-        """Gets the type of this BatchStop.
+        r"""Gets the type of this BatchStop.
 
         关机类型，默认为SOFT。  取值范围： - SOFT：普通关机。 - HARD：强制关机。
 
@@ -82,7 +82,7 @@ class BatchStop:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this BatchStop.
+        r"""Sets the type of this BatchStop.
 
         关机类型，默认为SOFT。  取值范围： - SOFT：普通关机。 - HARD：强制关机。
 

@@ -26,7 +26,7 @@ class CountInstanceByTagsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None):
-        """CountInstanceByTagsResponse
+        r"""CountInstanceByTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CountInstanceByTagsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this CountInstanceByTagsResponse.
+        r"""Gets the total_count of this CountInstanceByTagsResponse.
 
         总数。
 
@@ -55,7 +55,7 @@ class CountInstanceByTagsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this CountInstanceByTagsResponse.
+        r"""Sets the total_count of this CountInstanceByTagsResponse.
 
         总数。
 

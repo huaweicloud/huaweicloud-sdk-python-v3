@@ -59,7 +59,7 @@ class JobRun:
     }
 
     def __init__(self, id=None, category=None, sequence=None, _async=None, name=None, identifier=None, depends_on=None, condition=None, resource=None, is_select=None, timeout=None, last_dispatch_id=None, status=None, message=None, start_time=None, end_time=None, steps=None, exec_id=None):
-        """JobRun
+        r"""JobRun
 
         The model defined in huaweicloud sdk
 
@@ -162,7 +162,7 @@ class JobRun:
 
     @property
     def id(self):
-        """Gets the id of this JobRun.
+        r"""Gets the id of this JobRun.
 
         任务ID
 
@@ -173,7 +173,7 @@ class JobRun:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this JobRun.
+        r"""Sets the id of this JobRun.
 
         任务ID
 
@@ -184,7 +184,7 @@ class JobRun:
 
     @property
     def category(self):
-        """Gets the category of this JobRun.
+        r"""Gets the category of this JobRun.
 
         任务类型
 
@@ -195,7 +195,7 @@ class JobRun:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this JobRun.
+        r"""Sets the category of this JobRun.
 
         任务类型
 
@@ -206,7 +206,7 @@ class JobRun:
 
     @property
     def sequence(self):
-        """Gets the sequence of this JobRun.
+        r"""Gets the sequence of this JobRun.
 
         序列号
 
@@ -217,7 +217,7 @@ class JobRun:
 
     @sequence.setter
     def sequence(self, sequence):
-        """Sets the sequence of this JobRun.
+        r"""Sets the sequence of this JobRun.
 
         序列号
 
@@ -228,7 +228,7 @@ class JobRun:
 
     @property
     def _async(self):
-        """Gets the _async of this JobRun.
+        r"""Gets the _async of this JobRun.
 
         是否异步
 
@@ -239,7 +239,7 @@ class JobRun:
 
     @_async.setter
     def _async(self, _async):
-        """Sets the _async of this JobRun.
+        r"""Sets the _async of this JobRun.
 
         是否异步
 
@@ -250,7 +250,7 @@ class JobRun:
 
     @property
     def name(self):
-        """Gets the name of this JobRun.
+        r"""Gets the name of this JobRun.
 
         任务名称
 
@@ -261,7 +261,7 @@ class JobRun:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this JobRun.
+        r"""Sets the name of this JobRun.
 
         任务名称
 
@@ -272,7 +272,7 @@ class JobRun:
 
     @property
     def identifier(self):
-        """Gets the identifier of this JobRun.
+        r"""Gets the identifier of this JobRun.
 
         任务唯一标识
 
@@ -283,7 +283,7 @@ class JobRun:
 
     @identifier.setter
     def identifier(self, identifier):
-        """Sets the identifier of this JobRun.
+        r"""Sets the identifier of this JobRun.
 
         任务唯一标识
 
@@ -294,7 +294,7 @@ class JobRun:
 
     @property
     def depends_on(self):
-        """Gets the depends_on of this JobRun.
+        r"""Gets the depends_on of this JobRun.
 
         依赖
 
@@ -305,7 +305,7 @@ class JobRun:
 
     @depends_on.setter
     def depends_on(self, depends_on):
-        """Sets the depends_on of this JobRun.
+        r"""Sets the depends_on of this JobRun.
 
         依赖
 
@@ -316,7 +316,7 @@ class JobRun:
 
     @property
     def condition(self):
-        """Gets the condition of this JobRun.
+        r"""Gets the condition of this JobRun.
 
         运行条件
 
@@ -327,7 +327,7 @@ class JobRun:
 
     @condition.setter
     def condition(self, condition):
-        """Sets the condition of this JobRun.
+        r"""Sets the condition of this JobRun.
 
         运行条件
 
@@ -338,7 +338,7 @@ class JobRun:
 
     @property
     def resource(self):
-        """Gets the resource of this JobRun.
+        r"""Gets the resource of this JobRun.
 
         执行资源
 
@@ -349,7 +349,7 @@ class JobRun:
 
     @resource.setter
     def resource(self, resource):
-        """Sets the resource of this JobRun.
+        r"""Sets the resource of this JobRun.
 
         执行资源
 
@@ -360,7 +360,7 @@ class JobRun:
 
     @property
     def is_select(self):
-        """Gets the is_select of this JobRun.
+        r"""Gets the is_select of this JobRun.
 
         是否选中
 
@@ -371,7 +371,7 @@ class JobRun:
 
     @is_select.setter
     def is_select(self, is_select):
-        """Sets the is_select of this JobRun.
+        r"""Sets the is_select of this JobRun.
 
         是否选中
 
@@ -382,7 +382,7 @@ class JobRun:
 
     @property
     def timeout(self):
-        """Gets the timeout of this JobRun.
+        r"""Gets the timeout of this JobRun.
 
         任务超时设置
 
@@ -393,7 +393,7 @@ class JobRun:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this JobRun.
+        r"""Sets the timeout of this JobRun.
 
         任务超时设置
 
@@ -404,7 +404,7 @@ class JobRun:
 
     @property
     def last_dispatch_id(self):
-        """Gets the last_dispatch_id of this JobRun.
+        r"""Gets the last_dispatch_id of this JobRun.
 
         任务上次下发ID
 
@@ -415,7 +415,7 @@ class JobRun:
 
     @last_dispatch_id.setter
     def last_dispatch_id(self, last_dispatch_id):
-        """Sets the last_dispatch_id of this JobRun.
+        r"""Sets the last_dispatch_id of this JobRun.
 
         任务上次下发ID
 
@@ -426,7 +426,7 @@ class JobRun:
 
     @property
     def status(self):
-        """Gets the status of this JobRun.
+        r"""Gets the status of this JobRun.
 
         状态
 
@@ -437,7 +437,7 @@ class JobRun:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this JobRun.
+        r"""Sets the status of this JobRun.
 
         状态
 
@@ -448,7 +448,7 @@ class JobRun:
 
     @property
     def message(self):
-        """Gets the message of this JobRun.
+        r"""Gets the message of this JobRun.
 
         错误信息
 
@@ -459,7 +459,7 @@ class JobRun:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this JobRun.
+        r"""Sets the message of this JobRun.
 
         错误信息
 
@@ -470,7 +470,7 @@ class JobRun:
 
     @property
     def start_time(self):
-        """Gets the start_time of this JobRun.
+        r"""Gets the start_time of this JobRun.
 
         开始时间
 
@@ -481,7 +481,7 @@ class JobRun:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this JobRun.
+        r"""Sets the start_time of this JobRun.
 
         开始时间
 
@@ -492,7 +492,7 @@ class JobRun:
 
     @property
     def end_time(self):
-        """Gets the end_time of this JobRun.
+        r"""Gets the end_time of this JobRun.
 
         结束时间
 
@@ -503,7 +503,7 @@ class JobRun:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this JobRun.
+        r"""Sets the end_time of this JobRun.
 
         结束时间
 
@@ -514,7 +514,7 @@ class JobRun:
 
     @property
     def steps(self):
-        """Gets the steps of this JobRun.
+        r"""Gets the steps of this JobRun.
 
         步骤
 
@@ -525,7 +525,7 @@ class JobRun:
 
     @steps.setter
     def steps(self, steps):
-        """Sets the steps of this JobRun.
+        r"""Sets the steps of this JobRun.
 
         步骤
 
@@ -536,7 +536,7 @@ class JobRun:
 
     @property
     def exec_id(self):
-        """Gets the exec_id of this JobRun.
+        r"""Gets the exec_id of this JobRun.
 
         任务执行ID
 
@@ -547,7 +547,7 @@ class JobRun:
 
     @exec_id.setter
     def exec_id(self, exec_id):
-        """Sets the exec_id of this JobRun.
+        r"""Sets the exec_id of this JobRun.
 
         任务执行ID
 

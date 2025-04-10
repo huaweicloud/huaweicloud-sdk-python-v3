@@ -29,7 +29,7 @@ class HighPermission:
     }
 
     def __init__(self, result=None, workspace_admin=None, security_administrator=None):
-        """HighPermission
+        r"""HighPermission
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class HighPermission:
 
     @property
     def result(self):
-        """Gets the result of this HighPermission.
+        r"""Gets the result of this HighPermission.
 
         :return: The result of this HighPermission.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DiagnoseResult`
@@ -66,7 +66,7 @@ class HighPermission:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this HighPermission.
+        r"""Sets the result of this HighPermission.
 
         :param result: The result of this HighPermission.
         :type result: :class:`huaweicloudsdkdataartsstudio.v1.DiagnoseResult`
@@ -75,7 +75,7 @@ class HighPermission:
 
     @property
     def workspace_admin(self):
-        """Gets the workspace_admin of this HighPermission.
+        r"""Gets the workspace_admin of this HighPermission.
 
         空间管理员用户列表。
 
@@ -86,7 +86,7 @@ class HighPermission:
 
     @workspace_admin.setter
     def workspace_admin(self, workspace_admin):
-        """Sets the workspace_admin of this HighPermission.
+        r"""Sets the workspace_admin of this HighPermission.
 
         空间管理员用户列表。
 
@@ -97,7 +97,7 @@ class HighPermission:
 
     @property
     def security_administrator(self):
-        """Gets the security_administrator of this HighPermission.
+        r"""Gets the security_administrator of this HighPermission.
 
         安全管理员用户列表。
 
@@ -108,7 +108,7 @@ class HighPermission:
 
     @security_administrator.setter
     def security_administrator(self, security_administrator):
-        """Sets the security_administrator of this HighPermission.
+        r"""Sets the security_administrator of this HighPermission.
 
         安全管理员用户列表。
 

@@ -29,7 +29,7 @@ class UpdateGaussMySqlInstanceInternalIpRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """UpdateGaussMySqlInstanceInternalIpRequest
+        r"""UpdateGaussMySqlInstanceInternalIpRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateGaussMySqlInstanceInternalIpRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateGaussMySqlInstanceInternalIpRequest.
+        r"""Gets the x_language of this UpdateGaussMySqlInstanceInternalIpRequest.
 
         语言。
 
@@ -67,7 +67,7 @@ class UpdateGaussMySqlInstanceInternalIpRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateGaussMySqlInstanceInternalIpRequest.
+        r"""Sets the x_language of this UpdateGaussMySqlInstanceInternalIpRequest.
 
         语言。
 
@@ -78,7 +78,7 @@ class UpdateGaussMySqlInstanceInternalIpRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateGaussMySqlInstanceInternalIpRequest.
+        r"""Gets the instance_id of this UpdateGaussMySqlInstanceInternalIpRequest.
 
         租户在某一project下的实例ID。
 
@@ -89,7 +89,7 @@ class UpdateGaussMySqlInstanceInternalIpRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateGaussMySqlInstanceInternalIpRequest.
+        r"""Sets the instance_id of this UpdateGaussMySqlInstanceInternalIpRequest.
 
         租户在某一project下的实例ID。
 
@@ -100,7 +100,7 @@ class UpdateGaussMySqlInstanceInternalIpRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateGaussMySqlInstanceInternalIpRequest.
+        r"""Gets the body of this UpdateGaussMySqlInstanceInternalIpRequest.
 
         :return: The body of this UpdateGaussMySqlInstanceInternalIpRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ModifyInternalIpRequest`
@@ -109,7 +109,7 @@ class UpdateGaussMySqlInstanceInternalIpRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateGaussMySqlInstanceInternalIpRequest.
+        r"""Sets the body of this UpdateGaussMySqlInstanceInternalIpRequest.
 
         :param body: The body of this UpdateGaussMySqlInstanceInternalIpRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.ModifyInternalIpRequest`

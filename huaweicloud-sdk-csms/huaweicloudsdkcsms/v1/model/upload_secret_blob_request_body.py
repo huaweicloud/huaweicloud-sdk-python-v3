@@ -25,7 +25,7 @@ class UploadSecretBlobRequestBody:
     }
 
     def __init__(self, secret_blob=None):
-        """UploadSecretBlobRequestBody
+        r"""UploadSecretBlobRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UploadSecretBlobRequestBody:
 
     @property
     def secret_blob(self):
-        """Gets the secret_blob of this UploadSecretBlobRequestBody.
+        r"""Gets the secret_blob of this UploadSecretBlobRequestBody.
 
         将指定凭据对象进行备份后得到的凭据备份文件，备份文件包含有凭据当前所有的凭据版本信息，备份文件经过加密与编码，内容不可直接读。 
 
@@ -53,7 +53,7 @@ class UploadSecretBlobRequestBody:
 
     @secret_blob.setter
     def secret_blob(self, secret_blob):
-        """Sets the secret_blob of this UploadSecretBlobRequestBody.
+        r"""Sets the secret_blob of this UploadSecretBlobRequestBody.
 
         将指定凭据对象进行备份后得到的凭据备份文件，备份文件包含有凭据当前所有的凭据版本信息，备份文件经过加密与编码，内容不可直接读。 
 

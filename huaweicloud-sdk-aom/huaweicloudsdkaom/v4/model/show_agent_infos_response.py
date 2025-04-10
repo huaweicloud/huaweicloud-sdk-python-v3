@@ -32,7 +32,7 @@ class ShowAgentInfosResponse(SdkResponse):
     }
 
     def __init__(self, page=None, page_size=None, total_count=None, data_list=None):
-        """ShowAgentInfosResponse
+        r"""ShowAgentInfosResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowAgentInfosResponse(SdkResponse):
 
     @property
     def page(self):
-        """Gets the page of this ShowAgentInfosResponse.
+        r"""Gets the page of this ShowAgentInfosResponse.
 
         页码，默认1
 
@@ -76,7 +76,7 @@ class ShowAgentInfosResponse(SdkResponse):
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ShowAgentInfosResponse.
+        r"""Sets the page of this ShowAgentInfosResponse.
 
         页码，默认1
 
@@ -87,7 +87,7 @@ class ShowAgentInfosResponse(SdkResponse):
 
     @property
     def page_size(self):
-        """Gets the page_size of this ShowAgentInfosResponse.
+        r"""Gets the page_size of this ShowAgentInfosResponse.
 
         每页数量，默认20
 
@@ -98,7 +98,7 @@ class ShowAgentInfosResponse(SdkResponse):
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ShowAgentInfosResponse.
+        r"""Sets the page_size of this ShowAgentInfosResponse.
 
         每页数量，默认20
 
@@ -109,7 +109,7 @@ class ShowAgentInfosResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ShowAgentInfosResponse.
+        r"""Gets the total_count of this ShowAgentInfosResponse.
 
         总数量
 
@@ -120,7 +120,7 @@ class ShowAgentInfosResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ShowAgentInfosResponse.
+        r"""Sets the total_count of this ShowAgentInfosResponse.
 
         总数量
 
@@ -131,7 +131,7 @@ class ShowAgentInfosResponse(SdkResponse):
 
     @property
     def data_list(self):
-        """Gets the data_list of this ShowAgentInfosResponse.
+        r"""Gets the data_list of this ShowAgentInfosResponse.
 
         主机列表信息。
 
@@ -142,7 +142,7 @@ class ShowAgentInfosResponse(SdkResponse):
 
     @data_list.setter
     def data_list(self, data_list):
-        """Sets the data_list of this ShowAgentInfosResponse.
+        r"""Sets the data_list of this ShowAgentInfosResponse.
 
         主机列表信息。
 

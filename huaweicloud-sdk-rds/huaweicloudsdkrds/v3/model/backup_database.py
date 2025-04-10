@@ -25,7 +25,7 @@ class BackupDatabase:
     }
 
     def __init__(self, name=None):
-        """BackupDatabase
+        r"""BackupDatabase
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BackupDatabase:
 
     @property
     def name(self):
-        """Gets the name of this BackupDatabase.
+        r"""Gets the name of this BackupDatabase.
 
         SqlServer引擎指定备份的数据库。
 
@@ -53,7 +53,7 @@ class BackupDatabase:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BackupDatabase.
+        r"""Sets the name of this BackupDatabase.
 
         SqlServer引擎指定备份的数据库。
 

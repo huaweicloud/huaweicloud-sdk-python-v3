@@ -51,7 +51,7 @@ class ListReleasePackagesRequestBody:
     }
 
     def __init__(self, key_word=None, apply_user_name=None, deploy_user_name=None, apply_begin_time=None, apply_end_time=None, deploy_begin_time=None, deploy_end_time=None, apply_user_name_filter=None, deploy_user_name_filter=None, deploy_status_filter=None, sorted_direction=None, order_column=None, limit=None, offset=None):
-        """ListReleasePackagesRequestBody
+        r"""ListReleasePackagesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class ListReleasePackagesRequestBody:
 
     @property
     def key_word(self):
-        """Gets the key_word of this ListReleasePackagesRequestBody.
+        r"""Gets the key_word of this ListReleasePackagesRequestBody.
 
         包名package_name关键字
 
@@ -145,7 +145,7 @@ class ListReleasePackagesRequestBody:
 
     @key_word.setter
     def key_word(self, key_word):
-        """Sets the key_word of this ListReleasePackagesRequestBody.
+        r"""Sets the key_word of this ListReleasePackagesRequestBody.
 
         包名package_name关键字
 
@@ -156,7 +156,7 @@ class ListReleasePackagesRequestBody:
 
     @property
     def apply_user_name(self):
-        """Gets the apply_user_name of this ListReleasePackagesRequestBody.
+        r"""Gets the apply_user_name of this ListReleasePackagesRequestBody.
 
         申请人名称
 
@@ -167,7 +167,7 @@ class ListReleasePackagesRequestBody:
 
     @apply_user_name.setter
     def apply_user_name(self, apply_user_name):
-        """Sets the apply_user_name of this ListReleasePackagesRequestBody.
+        r"""Sets the apply_user_name of this ListReleasePackagesRequestBody.
 
         申请人名称
 
@@ -178,7 +178,7 @@ class ListReleasePackagesRequestBody:
 
     @property
     def deploy_user_name(self):
-        """Gets the deploy_user_name of this ListReleasePackagesRequestBody.
+        r"""Gets the deploy_user_name of this ListReleasePackagesRequestBody.
 
         发布人名称
 
@@ -189,7 +189,7 @@ class ListReleasePackagesRequestBody:
 
     @deploy_user_name.setter
     def deploy_user_name(self, deploy_user_name):
-        """Sets the deploy_user_name of this ListReleasePackagesRequestBody.
+        r"""Sets the deploy_user_name of this ListReleasePackagesRequestBody.
 
         发布人名称
 
@@ -200,7 +200,7 @@ class ListReleasePackagesRequestBody:
 
     @property
     def apply_begin_time(self):
-        """Gets the apply_begin_time of this ListReleasePackagesRequestBody.
+        r"""Gets the apply_begin_time of this ListReleasePackagesRequestBody.
 
         申请开始时间，13位时间戳
 
@@ -211,7 +211,7 @@ class ListReleasePackagesRequestBody:
 
     @apply_begin_time.setter
     def apply_begin_time(self, apply_begin_time):
-        """Sets the apply_begin_time of this ListReleasePackagesRequestBody.
+        r"""Sets the apply_begin_time of this ListReleasePackagesRequestBody.
 
         申请开始时间，13位时间戳
 
@@ -222,7 +222,7 @@ class ListReleasePackagesRequestBody:
 
     @property
     def apply_end_time(self):
-        """Gets the apply_end_time of this ListReleasePackagesRequestBody.
+        r"""Gets the apply_end_time of this ListReleasePackagesRequestBody.
 
         申请结束时间，13位时间戳
 
@@ -233,7 +233,7 @@ class ListReleasePackagesRequestBody:
 
     @apply_end_time.setter
     def apply_end_time(self, apply_end_time):
-        """Sets the apply_end_time of this ListReleasePackagesRequestBody.
+        r"""Sets the apply_end_time of this ListReleasePackagesRequestBody.
 
         申请结束时间，13位时间戳
 
@@ -244,7 +244,7 @@ class ListReleasePackagesRequestBody:
 
     @property
     def deploy_begin_time(self):
-        """Gets the deploy_begin_time of this ListReleasePackagesRequestBody.
+        r"""Gets the deploy_begin_time of this ListReleasePackagesRequestBody.
 
         发布开始时间，13位时间戳
 
@@ -255,7 +255,7 @@ class ListReleasePackagesRequestBody:
 
     @deploy_begin_time.setter
     def deploy_begin_time(self, deploy_begin_time):
-        """Sets the deploy_begin_time of this ListReleasePackagesRequestBody.
+        r"""Sets the deploy_begin_time of this ListReleasePackagesRequestBody.
 
         发布开始时间，13位时间戳
 
@@ -266,7 +266,7 @@ class ListReleasePackagesRequestBody:
 
     @property
     def deploy_end_time(self):
-        """Gets the deploy_end_time of this ListReleasePackagesRequestBody.
+        r"""Gets the deploy_end_time of this ListReleasePackagesRequestBody.
 
         发布结束时间，13位时间戳
 
@@ -277,7 +277,7 @@ class ListReleasePackagesRequestBody:
 
     @deploy_end_time.setter
     def deploy_end_time(self, deploy_end_time):
-        """Sets the deploy_end_time of this ListReleasePackagesRequestBody.
+        r"""Sets the deploy_end_time of this ListReleasePackagesRequestBody.
 
         发布结束时间，13位时间戳
 
@@ -288,7 +288,7 @@ class ListReleasePackagesRequestBody:
 
     @property
     def apply_user_name_filter(self):
-        """Gets the apply_user_name_filter of this ListReleasePackagesRequestBody.
+        r"""Gets the apply_user_name_filter of this ListReleasePackagesRequestBody.
 
         申请人名称集合，根据该字段筛选，如果选择了apply_user_name，则该名称必须包含在集合内
 
@@ -299,7 +299,7 @@ class ListReleasePackagesRequestBody:
 
     @apply_user_name_filter.setter
     def apply_user_name_filter(self, apply_user_name_filter):
-        """Sets the apply_user_name_filter of this ListReleasePackagesRequestBody.
+        r"""Sets the apply_user_name_filter of this ListReleasePackagesRequestBody.
 
         申请人名称集合，根据该字段筛选，如果选择了apply_user_name，则该名称必须包含在集合内
 
@@ -310,7 +310,7 @@ class ListReleasePackagesRequestBody:
 
     @property
     def deploy_user_name_filter(self):
-        """Gets the deploy_user_name_filter of this ListReleasePackagesRequestBody.
+        r"""Gets the deploy_user_name_filter of this ListReleasePackagesRequestBody.
 
         发布人名称集合，根据该字段筛选，如果选择了apply_user_name，则该名称必须包含在集合内
 
@@ -321,7 +321,7 @@ class ListReleasePackagesRequestBody:
 
     @deploy_user_name_filter.setter
     def deploy_user_name_filter(self, deploy_user_name_filter):
-        """Sets the deploy_user_name_filter of this ListReleasePackagesRequestBody.
+        r"""Sets the deploy_user_name_filter of this ListReleasePackagesRequestBody.
 
         发布人名称集合，根据该字段筛选，如果选择了apply_user_name，则该名称必须包含在集合内
 
@@ -332,7 +332,7 @@ class ListReleasePackagesRequestBody:
 
     @property
     def deploy_status_filter(self):
-        """Gets the deploy_status_filter of this ListReleasePackagesRequestBody.
+        r"""Gets the deploy_status_filter of this ListReleasePackagesRequestBody.
 
         发布状态集合: 1:待审批,2:成功,3:失败, 5:发布中
 
@@ -343,7 +343,7 @@ class ListReleasePackagesRequestBody:
 
     @deploy_status_filter.setter
     def deploy_status_filter(self, deploy_status_filter):
-        """Sets the deploy_status_filter of this ListReleasePackagesRequestBody.
+        r"""Sets the deploy_status_filter of this ListReleasePackagesRequestBody.
 
         发布状态集合: 1:待审批,2:成功,3:失败, 5:发布中
 
@@ -354,7 +354,7 @@ class ListReleasePackagesRequestBody:
 
     @property
     def sorted_direction(self):
-        """Gets the sorted_direction of this ListReleasePackagesRequestBody.
+        r"""Gets the sorted_direction of this ListReleasePackagesRequestBody.
 
         排序方向，默认是desc
 
@@ -365,7 +365,7 @@ class ListReleasePackagesRequestBody:
 
     @sorted_direction.setter
     def sorted_direction(self, sorted_direction):
-        """Sets the sorted_direction of this ListReleasePackagesRequestBody.
+        r"""Sets the sorted_direction of this ListReleasePackagesRequestBody.
 
         排序方向，默认是desc
 
@@ -376,7 +376,7 @@ class ListReleasePackagesRequestBody:
 
     @property
     def order_column(self):
-        """Gets the order_column of this ListReleasePackagesRequestBody.
+        r"""Gets the order_column of this ListReleasePackagesRequestBody.
 
         排序字段，默认是apply_timestamp
 
@@ -387,7 +387,7 @@ class ListReleasePackagesRequestBody:
 
     @order_column.setter
     def order_column(self, order_column):
-        """Sets the order_column of this ListReleasePackagesRequestBody.
+        r"""Sets the order_column of this ListReleasePackagesRequestBody.
 
         排序字段，默认是apply_timestamp
 
@@ -398,7 +398,7 @@ class ListReleasePackagesRequestBody:
 
     @property
     def limit(self):
-        """Gets the limit of this ListReleasePackagesRequestBody.
+        r"""Gets the limit of this ListReleasePackagesRequestBody.
 
         分页返回结果，默认是10
 
@@ -409,7 +409,7 @@ class ListReleasePackagesRequestBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListReleasePackagesRequestBody.
+        r"""Sets the limit of this ListReleasePackagesRequestBody.
 
         分页返回结果，默认是10
 
@@ -420,7 +420,7 @@ class ListReleasePackagesRequestBody:
 
     @property
     def offset(self):
-        """Gets the offset of this ListReleasePackagesRequestBody.
+        r"""Gets the offset of this ListReleasePackagesRequestBody.
 
         分页的起始页，默认值位0，取值范围大于等于0
 
@@ -431,7 +431,7 @@ class ListReleasePackagesRequestBody:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListReleasePackagesRequestBody.
+        r"""Sets the offset of this ListReleasePackagesRequestBody.
 
         分页的起始页，默认值位0，取值范围大于等于0
 

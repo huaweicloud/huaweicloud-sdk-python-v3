@@ -27,7 +27,7 @@ class ChangeSqlLimitSwitchStatusBody:
     }
 
     def __init__(self, switch_status=None, datastore_type=None):
-        """ChangeSqlLimitSwitchStatusBody
+        r"""ChangeSqlLimitSwitchStatusBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ChangeSqlLimitSwitchStatusBody:
 
     @property
     def switch_status(self):
-        """Gets the switch_status of this ChangeSqlLimitSwitchStatusBody.
+        r"""Gets the switch_status of this ChangeSqlLimitSwitchStatusBody.
 
         开关状态
 
@@ -59,7 +59,7 @@ class ChangeSqlLimitSwitchStatusBody:
 
     @switch_status.setter
     def switch_status(self, switch_status):
-        """Sets the switch_status of this ChangeSqlLimitSwitchStatusBody.
+        r"""Sets the switch_status of this ChangeSqlLimitSwitchStatusBody.
 
         开关状态
 
@@ -70,7 +70,7 @@ class ChangeSqlLimitSwitchStatusBody:
 
     @property
     def datastore_type(self):
-        """Gets the datastore_type of this ChangeSqlLimitSwitchStatusBody.
+        r"""Gets the datastore_type of this ChangeSqlLimitSwitchStatusBody.
 
         数据库类型
 
@@ -81,7 +81,7 @@ class ChangeSqlLimitSwitchStatusBody:
 
     @datastore_type.setter
     def datastore_type(self, datastore_type):
-        """Sets the datastore_type of this ChangeSqlLimitSwitchStatusBody.
+        r"""Sets the datastore_type of this ChangeSqlLimitSwitchStatusBody.
 
         数据库类型
 

@@ -27,7 +27,7 @@ class ModCorpBasicInfoDTO:
     }
 
     def __init__(self, address=None, auto_user_create=None):
-        """ModCorpBasicInfoDTO
+        r"""ModCorpBasicInfoDTO
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ModCorpBasicInfoDTO:
 
     @property
     def address(self):
-        """Gets the address of this ModCorpBasicInfoDTO.
+        r"""Gets the address of this ModCorpBasicInfoDTO.
 
         企业所在地，最大长度为255个字符。 
 
@@ -61,7 +61,7 @@ class ModCorpBasicInfoDTO:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this ModCorpBasicInfoDTO.
+        r"""Sets the address of this ModCorpBasicInfoDTO.
 
         企业所在地，最大长度为255个字符。 
 
@@ -72,7 +72,7 @@ class ModCorpBasicInfoDTO:
 
     @property
     def auto_user_create(self):
-        """Gets the auto_user_create of this ModCorpBasicInfoDTO.
+        r"""Gets the auto_user_create of this ModCorpBasicInfoDTO.
 
         企业自动开户开关。
 
@@ -83,7 +83,7 @@ class ModCorpBasicInfoDTO:
 
     @auto_user_create.setter
     def auto_user_create(self, auto_user_create):
-        """Sets the auto_user_create of this ModCorpBasicInfoDTO.
+        r"""Sets the auto_user_create of this ModCorpBasicInfoDTO.
 
         企业自动开户开关。
 

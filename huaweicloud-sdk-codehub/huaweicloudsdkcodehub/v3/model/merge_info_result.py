@@ -57,7 +57,7 @@ class MergeInfoResult:
     }
 
     def __init__(self, approval_merge_request_approvers=None, author=None, closed_at=None, created_at=None, description=None, devcloud_source_branch=None, id=None, iid=None, is_source_branch_exist=None, merge_request_assignee_list=None, merge_request_diff=None, merge_status=None, source_branch=None, state=None, target_branch=None, title=None, updated_at=None):
-        """MergeInfoResult
+        r"""MergeInfoResult
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class MergeInfoResult:
 
     @property
     def approval_merge_request_approvers(self):
-        """Gets the approval_merge_request_approvers of this MergeInfoResult.
+        r"""Gets the approval_merge_request_approvers of this MergeInfoResult.
 
         评审人
 
@@ -166,7 +166,7 @@ class MergeInfoResult:
 
     @approval_merge_request_approvers.setter
     def approval_merge_request_approvers(self, approval_merge_request_approvers):
-        """Sets the approval_merge_request_approvers of this MergeInfoResult.
+        r"""Sets the approval_merge_request_approvers of this MergeInfoResult.
 
         评审人
 
@@ -177,7 +177,7 @@ class MergeInfoResult:
 
     @property
     def author(self):
-        """Gets the author of this MergeInfoResult.
+        r"""Gets the author of this MergeInfoResult.
 
         :return: The author of this MergeInfoResult.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Author`
@@ -186,7 +186,7 @@ class MergeInfoResult:
 
     @author.setter
     def author(self, author):
-        """Sets the author of this MergeInfoResult.
+        r"""Sets the author of this MergeInfoResult.
 
         :param author: The author of this MergeInfoResult.
         :type author: :class:`huaweicloudsdkcodehub.v3.Author`
@@ -195,7 +195,7 @@ class MergeInfoResult:
 
     @property
     def closed_at(self):
-        """Gets the closed_at of this MergeInfoResult.
+        r"""Gets the closed_at of this MergeInfoResult.
 
         关闭时间
 
@@ -206,7 +206,7 @@ class MergeInfoResult:
 
     @closed_at.setter
     def closed_at(self, closed_at):
-        """Sets the closed_at of this MergeInfoResult.
+        r"""Sets the closed_at of this MergeInfoResult.
 
         关闭时间
 
@@ -217,7 +217,7 @@ class MergeInfoResult:
 
     @property
     def created_at(self):
-        """Gets the created_at of this MergeInfoResult.
+        r"""Gets the created_at of this MergeInfoResult.
 
         创建时间
 
@@ -228,7 +228,7 @@ class MergeInfoResult:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this MergeInfoResult.
+        r"""Sets the created_at of this MergeInfoResult.
 
         创建时间
 
@@ -239,7 +239,7 @@ class MergeInfoResult:
 
     @property
     def description(self):
-        """Gets the description of this MergeInfoResult.
+        r"""Gets the description of this MergeInfoResult.
 
         合并请求描述
 
@@ -250,7 +250,7 @@ class MergeInfoResult:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this MergeInfoResult.
+        r"""Sets the description of this MergeInfoResult.
 
         合并请求描述
 
@@ -261,7 +261,7 @@ class MergeInfoResult:
 
     @property
     def devcloud_source_branch(self):
-        """Gets the devcloud_source_branch of this MergeInfoResult.
+        r"""Gets the devcloud_source_branch of this MergeInfoResult.
 
         源分支
 
@@ -272,7 +272,7 @@ class MergeInfoResult:
 
     @devcloud_source_branch.setter
     def devcloud_source_branch(self, devcloud_source_branch):
-        """Sets the devcloud_source_branch of this MergeInfoResult.
+        r"""Sets the devcloud_source_branch of this MergeInfoResult.
 
         源分支
 
@@ -283,7 +283,7 @@ class MergeInfoResult:
 
     @property
     def id(self):
-        """Gets the id of this MergeInfoResult.
+        r"""Gets the id of this MergeInfoResult.
 
         合并请求id
 
@@ -294,7 +294,7 @@ class MergeInfoResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MergeInfoResult.
+        r"""Sets the id of this MergeInfoResult.
 
         合并请求id
 
@@ -305,7 +305,7 @@ class MergeInfoResult:
 
     @property
     def iid(self):
-        """Gets the iid of this MergeInfoResult.
+        r"""Gets the iid of this MergeInfoResult.
 
         当前仓库内合并请求序号
 
@@ -316,7 +316,7 @@ class MergeInfoResult:
 
     @iid.setter
     def iid(self, iid):
-        """Sets the iid of this MergeInfoResult.
+        r"""Sets the iid of this MergeInfoResult.
 
         当前仓库内合并请求序号
 
@@ -327,7 +327,7 @@ class MergeInfoResult:
 
     @property
     def is_source_branch_exist(self):
-        """Gets the is_source_branch_exist of this MergeInfoResult.
+        r"""Gets the is_source_branch_exist of this MergeInfoResult.
 
         源分支是否存在
 
@@ -338,7 +338,7 @@ class MergeInfoResult:
 
     @is_source_branch_exist.setter
     def is_source_branch_exist(self, is_source_branch_exist):
-        """Sets the is_source_branch_exist of this MergeInfoResult.
+        r"""Sets the is_source_branch_exist of this MergeInfoResult.
 
         源分支是否存在
 
@@ -349,7 +349,7 @@ class MergeInfoResult:
 
     @property
     def merge_request_assignee_list(self):
-        """Gets the merge_request_assignee_list of this MergeInfoResult.
+        r"""Gets the merge_request_assignee_list of this MergeInfoResult.
 
         检视人
 
@@ -360,7 +360,7 @@ class MergeInfoResult:
 
     @merge_request_assignee_list.setter
     def merge_request_assignee_list(self, merge_request_assignee_list):
-        """Sets the merge_request_assignee_list of this MergeInfoResult.
+        r"""Sets the merge_request_assignee_list of this MergeInfoResult.
 
         检视人
 
@@ -371,7 +371,7 @@ class MergeInfoResult:
 
     @property
     def merge_request_diff(self):
-        """Gets the merge_request_diff of this MergeInfoResult.
+        r"""Gets the merge_request_diff of this MergeInfoResult.
 
         :return: The merge_request_diff of this MergeInfoResult.
         :rtype: :class:`huaweicloudsdkcodehub.v3.MergeRequestDiff`
@@ -380,7 +380,7 @@ class MergeInfoResult:
 
     @merge_request_diff.setter
     def merge_request_diff(self, merge_request_diff):
-        """Sets the merge_request_diff of this MergeInfoResult.
+        r"""Sets the merge_request_diff of this MergeInfoResult.
 
         :param merge_request_diff: The merge_request_diff of this MergeInfoResult.
         :type merge_request_diff: :class:`huaweicloudsdkcodehub.v3.MergeRequestDiff`
@@ -389,7 +389,7 @@ class MergeInfoResult:
 
     @property
     def merge_status(self):
-        """Gets the merge_status of this MergeInfoResult.
+        r"""Gets the merge_status of this MergeInfoResult.
 
         是否可以被合并
 
@@ -400,7 +400,7 @@ class MergeInfoResult:
 
     @merge_status.setter
     def merge_status(self, merge_status):
-        """Sets the merge_status of this MergeInfoResult.
+        r"""Sets the merge_status of this MergeInfoResult.
 
         是否可以被合并
 
@@ -411,7 +411,7 @@ class MergeInfoResult:
 
     @property
     def source_branch(self):
-        """Gets the source_branch of this MergeInfoResult.
+        r"""Gets the source_branch of this MergeInfoResult.
 
         源分支
 
@@ -422,7 +422,7 @@ class MergeInfoResult:
 
     @source_branch.setter
     def source_branch(self, source_branch):
-        """Sets the source_branch of this MergeInfoResult.
+        r"""Sets the source_branch of this MergeInfoResult.
 
         源分支
 
@@ -433,7 +433,7 @@ class MergeInfoResult:
 
     @property
     def state(self):
-        """Gets the state of this MergeInfoResult.
+        r"""Gets the state of this MergeInfoResult.
 
         合并请求状态
 
@@ -444,7 +444,7 @@ class MergeInfoResult:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this MergeInfoResult.
+        r"""Sets the state of this MergeInfoResult.
 
         合并请求状态
 
@@ -455,7 +455,7 @@ class MergeInfoResult:
 
     @property
     def target_branch(self):
-        """Gets the target_branch of this MergeInfoResult.
+        r"""Gets the target_branch of this MergeInfoResult.
 
         目标分支
 
@@ -466,7 +466,7 @@ class MergeInfoResult:
 
     @target_branch.setter
     def target_branch(self, target_branch):
-        """Sets the target_branch of this MergeInfoResult.
+        r"""Sets the target_branch of this MergeInfoResult.
 
         目标分支
 
@@ -477,7 +477,7 @@ class MergeInfoResult:
 
     @property
     def title(self):
-        """Gets the title of this MergeInfoResult.
+        r"""Gets the title of this MergeInfoResult.
 
         标题
 
@@ -488,7 +488,7 @@ class MergeInfoResult:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this MergeInfoResult.
+        r"""Sets the title of this MergeInfoResult.
 
         标题
 
@@ -499,7 +499,7 @@ class MergeInfoResult:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this MergeInfoResult.
+        r"""Gets the updated_at of this MergeInfoResult.
 
         更新时间
 
@@ -510,7 +510,7 @@ class MergeInfoResult:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this MergeInfoResult.
+        r"""Sets the updated_at of this MergeInfoResult.
 
         更新时间
 

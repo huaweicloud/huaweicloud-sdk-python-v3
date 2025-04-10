@@ -27,7 +27,7 @@ class BatchSetObjectsRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """BatchSetObjectsRequest
+        r"""BatchSetObjectsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchSetObjectsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this BatchSetObjectsRequest.
+        r"""Gets the x_language of this BatchSetObjectsRequest.
 
         请求语言类型
 
@@ -61,7 +61,7 @@ class BatchSetObjectsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this BatchSetObjectsRequest.
+        r"""Sets the x_language of this BatchSetObjectsRequest.
 
         请求语言类型
 
@@ -72,7 +72,7 @@ class BatchSetObjectsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchSetObjectsRequest.
+        r"""Gets the body of this BatchSetObjectsRequest.
 
         :return: The body of this BatchSetObjectsRequest.
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchUpdateDatabaseObjectReq`
@@ -81,7 +81,7 @@ class BatchSetObjectsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchSetObjectsRequest.
+        r"""Sets the body of this BatchSetObjectsRequest.
 
         :param body: The body of this BatchSetObjectsRequest.
         :type body: :class:`huaweicloudsdkdrs.v3.BatchUpdateDatabaseObjectReq`

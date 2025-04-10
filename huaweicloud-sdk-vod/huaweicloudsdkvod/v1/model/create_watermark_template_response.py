@@ -28,7 +28,7 @@ class CreateWatermarkTemplateResponse(SdkResponse):
     }
 
     def __init__(self, id=None, upload_url=None):
-        """CreateWatermarkTemplateResponse
+        r"""CreateWatermarkTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateWatermarkTemplateResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateWatermarkTemplateResponse.
+        r"""Gets the id of this CreateWatermarkTemplateResponse.
 
         水印配置模板id<br/> 
 
@@ -62,7 +62,7 @@ class CreateWatermarkTemplateResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateWatermarkTemplateResponse.
+        r"""Sets the id of this CreateWatermarkTemplateResponse.
 
         水印配置模板id<br/> 
 
@@ -73,7 +73,7 @@ class CreateWatermarkTemplateResponse(SdkResponse):
 
     @property
     def upload_url(self):
-        """Gets the upload_url of this CreateWatermarkTemplateResponse.
+        r"""Gets the upload_url of this CreateWatermarkTemplateResponse.
 
         水印图片上传地址<br/> 
 
@@ -84,7 +84,7 @@ class CreateWatermarkTemplateResponse(SdkResponse):
 
     @upload_url.setter
     def upload_url(self, upload_url):
-        """Sets the upload_url of this CreateWatermarkTemplateResponse.
+        r"""Sets the upload_url of this CreateWatermarkTemplateResponse.
 
         水印图片上传地址<br/> 
 

@@ -29,7 +29,7 @@ class Resources:
     }
 
     def __init__(self, type=None, used=None, quota=None):
-        """Resources
+        r"""Resources
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class Resources:
 
     @property
     def type(self):
-        """Gets the type of this Resources.
+        r"""Gets the type of this Resources.
 
         证书类型:  - **CERTIFICATE_AUTHORITY**: CA证书；  - **CERTIFICATE**: 私有证书。
 
@@ -65,7 +65,7 @@ class Resources:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Resources.
+        r"""Sets the type of this Resources.
 
         证书类型:  - **CERTIFICATE_AUTHORITY**: CA证书；  - **CERTIFICATE**: 私有证书。
 
@@ -76,7 +76,7 @@ class Resources:
 
     @property
     def used(self):
-        """Gets the used of this Resources.
+        r"""Gets the used of this Resources.
 
         已使用配额数。
 
@@ -87,7 +87,7 @@ class Resources:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this Resources.
+        r"""Sets the used of this Resources.
 
         已使用配额数。
 
@@ -98,7 +98,7 @@ class Resources:
 
     @property
     def quota(self):
-        """Gets the quota of this Resources.
+        r"""Gets the quota of this Resources.
 
         配额总数：   - **CERTIFICATE_AUTHORITY**: 当前系统指定100；   - **CERTIFICATE**: 当前系统指定100000。
 
@@ -109,7 +109,7 @@ class Resources:
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this Resources.
+        r"""Sets the quota of this Resources.
 
         配额总数：   - **CERTIFICATE_AUTHORITY**: 当前系统指定100；   - **CERTIFICATE**: 当前系统指定100000。
 

@@ -29,7 +29,7 @@ class PolicyItemDataMaskInfo:
     }
 
     def __init__(self, condition_expr=None, data_mask_type=None, value_expr=None):
-        """PolicyItemDataMaskInfo
+        r"""PolicyItemDataMaskInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PolicyItemDataMaskInfo:
 
     @property
     def condition_expr(self):
-        """Gets the condition_expr of this PolicyItemDataMaskInfo.
+        r"""Gets the condition_expr of this PolicyItemDataMaskInfo.
 
         条件表达式
 
@@ -68,7 +68,7 @@ class PolicyItemDataMaskInfo:
 
     @condition_expr.setter
     def condition_expr(self, condition_expr):
-        """Sets the condition_expr of this PolicyItemDataMaskInfo.
+        r"""Sets the condition_expr of this PolicyItemDataMaskInfo.
 
         条件表达式
 
@@ -79,7 +79,7 @@ class PolicyItemDataMaskInfo:
 
     @property
     def data_mask_type(self):
-        """Gets the data_mask_type of this PolicyItemDataMaskInfo.
+        r"""Gets the data_mask_type of this PolicyItemDataMaskInfo.
 
         列掩码类型
 
@@ -90,7 +90,7 @@ class PolicyItemDataMaskInfo:
 
     @data_mask_type.setter
     def data_mask_type(self, data_mask_type):
-        """Sets the data_mask_type of this PolicyItemDataMaskInfo.
+        r"""Sets the data_mask_type of this PolicyItemDataMaskInfo.
 
         列掩码类型
 
@@ -101,7 +101,7 @@ class PolicyItemDataMaskInfo:
 
     @property
     def value_expr(self):
-        """Gets the value_expr of this PolicyItemDataMaskInfo.
+        r"""Gets the value_expr of this PolicyItemDataMaskInfo.
 
         列掩码表达式
 
@@ -112,7 +112,7 @@ class PolicyItemDataMaskInfo:
 
     @value_expr.setter
     def value_expr(self, value_expr):
-        """Sets the value_expr of this PolicyItemDataMaskInfo.
+        r"""Sets the value_expr of this PolicyItemDataMaskInfo.
 
         列掩码表达式
 

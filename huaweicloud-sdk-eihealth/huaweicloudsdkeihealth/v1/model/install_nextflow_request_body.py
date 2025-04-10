@@ -35,7 +35,7 @@ class InstallNextflowRequestBody:
     }
 
     def __init__(self, file=None, part_number=None, total_part=None, multipart_id=None, file_name=None, version=None):
-        """InstallNextflowRequestBody
+        r"""InstallNextflowRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class InstallNextflowRequestBody:
 
     @property
     def file(self):
-        """Gets the file of this InstallNextflowRequestBody.
+        r"""Gets the file of this InstallNextflowRequestBody.
 
         文件流对象
 
@@ -89,7 +89,7 @@ class InstallNextflowRequestBody:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this InstallNextflowRequestBody.
+        r"""Sets the file of this InstallNextflowRequestBody.
 
         文件流对象
 
@@ -100,7 +100,7 @@ class InstallNextflowRequestBody:
 
     @property
     def part_number(self):
-        """Gets the part_number of this InstallNextflowRequestBody.
+        r"""Gets the part_number of this InstallNextflowRequestBody.
 
         分段序号，表示第几个文件片段
 
@@ -111,7 +111,7 @@ class InstallNextflowRequestBody:
 
     @part_number.setter
     def part_number(self, part_number):
-        """Sets the part_number of this InstallNextflowRequestBody.
+        r"""Sets the part_number of this InstallNextflowRequestBody.
 
         分段序号，表示第几个文件片段
 
@@ -122,7 +122,7 @@ class InstallNextflowRequestBody:
 
     @property
     def total_part(self):
-        """Gets the total_part of this InstallNextflowRequestBody.
+        r"""Gets the total_part of this InstallNextflowRequestBody.
 
         分段总数，上传的文件总共分成了几个片段
 
@@ -133,7 +133,7 @@ class InstallNextflowRequestBody:
 
     @total_part.setter
     def total_part(self, total_part):
-        """Sets the total_part of this InstallNextflowRequestBody.
+        r"""Sets the total_part of this InstallNextflowRequestBody.
 
         分段总数，上传的文件总共分成了几个片段
 
@@ -144,7 +144,7 @@ class InstallNextflowRequestBody:
 
     @property
     def multipart_id(self):
-        """Gets the multipart_id of this InstallNextflowRequestBody.
+        r"""Gets the multipart_id of this InstallNextflowRequestBody.
 
         分段上传任务id，除了第一个片段外，后续的片段都需要标识出任务id
 
@@ -155,7 +155,7 @@ class InstallNextflowRequestBody:
 
     @multipart_id.setter
     def multipart_id(self, multipart_id):
-        """Sets the multipart_id of this InstallNextflowRequestBody.
+        r"""Sets the multipart_id of this InstallNextflowRequestBody.
 
         分段上传任务id，除了第一个片段外，后续的片段都需要标识出任务id
 
@@ -166,7 +166,7 @@ class InstallNextflowRequestBody:
 
     @property
     def file_name(self):
-        """Gets the file_name of this InstallNextflowRequestBody.
+        r"""Gets the file_name of this InstallNextflowRequestBody.
 
         文件名称
 
@@ -177,7 +177,7 @@ class InstallNextflowRequestBody:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this InstallNextflowRequestBody.
+        r"""Sets the file_name of this InstallNextflowRequestBody.
 
         文件名称
 
@@ -188,7 +188,7 @@ class InstallNextflowRequestBody:
 
     @property
     def version(self):
-        """Gets the version of this InstallNextflowRequestBody.
+        r"""Gets the version of this InstallNextflowRequestBody.
 
         版本号
 
@@ -199,7 +199,7 @@ class InstallNextflowRequestBody:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this InstallNextflowRequestBody.
+        r"""Sets the version of this InstallNextflowRequestBody.
 
         版本号
 

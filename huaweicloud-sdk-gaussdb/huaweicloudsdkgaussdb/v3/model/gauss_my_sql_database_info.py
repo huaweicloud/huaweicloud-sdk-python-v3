@@ -29,7 +29,7 @@ class GaussMySqlDatabaseInfo:
     }
 
     def __init__(self, name=None, host=None, readonly=None):
-        """GaussMySqlDatabaseInfo
+        r"""GaussMySqlDatabaseInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class GaussMySqlDatabaseInfo:
 
     @property
     def name(self):
-        """Gets the name of this GaussMySqlDatabaseInfo.
+        r"""Gets the name of this GaussMySqlDatabaseInfo.
 
         数据库用户名。
 
@@ -68,7 +68,7 @@ class GaussMySqlDatabaseInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GaussMySqlDatabaseInfo.
+        r"""Sets the name of this GaussMySqlDatabaseInfo.
 
         数据库用户名。
 
@@ -79,7 +79,7 @@ class GaussMySqlDatabaseInfo:
 
     @property
     def host(self):
-        """Gets the host of this GaussMySqlDatabaseInfo.
+        r"""Gets the host of this GaussMySqlDatabaseInfo.
 
         主机地址。
 
@@ -90,7 +90,7 @@ class GaussMySqlDatabaseInfo:
 
     @host.setter
     def host(self, host):
-        """Sets the host of this GaussMySqlDatabaseInfo.
+        r"""Sets the host of this GaussMySqlDatabaseInfo.
 
         主机地址。
 
@@ -101,7 +101,7 @@ class GaussMySqlDatabaseInfo:
 
     @property
     def readonly(self):
-        """Gets the readonly of this GaussMySqlDatabaseInfo.
+        r"""Gets the readonly of this GaussMySqlDatabaseInfo.
 
         是否为只读权限： - true，表示只读。 - false，表示可读写。
 
@@ -112,7 +112,7 @@ class GaussMySqlDatabaseInfo:
 
     @readonly.setter
     def readonly(self, readonly):
-        """Sets the readonly of this GaussMySqlDatabaseInfo.
+        r"""Sets the readonly of this GaussMySqlDatabaseInfo.
 
         是否为只读权限： - true，表示只读。 - false，表示可读写。
 

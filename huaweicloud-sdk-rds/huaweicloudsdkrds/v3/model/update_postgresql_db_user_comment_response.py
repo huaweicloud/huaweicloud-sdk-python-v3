@@ -26,7 +26,7 @@ class UpdatePostgresqlDbUserCommentResponse(SdkResponse):
     }
 
     def __init__(self, resp=None):
-        """UpdatePostgresqlDbUserCommentResponse
+        r"""UpdatePostgresqlDbUserCommentResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdatePostgresqlDbUserCommentResponse(SdkResponse):
 
     @property
     def resp(self):
-        """Gets the resp of this UpdatePostgresqlDbUserCommentResponse.
+        r"""Gets the resp of this UpdatePostgresqlDbUserCommentResponse.
 
         操作结果。
 
@@ -55,7 +55,7 @@ class UpdatePostgresqlDbUserCommentResponse(SdkResponse):
 
     @resp.setter
     def resp(self, resp):
-        """Sets the resp of this UpdatePostgresqlDbUserCommentResponse.
+        r"""Sets the resp of this UpdatePostgresqlDbUserCommentResponse.
 
         操作结果。
 

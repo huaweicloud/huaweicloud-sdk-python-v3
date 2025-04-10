@@ -28,7 +28,7 @@ class KeystoneListEndpointsResponse(SdkResponse):
     }
 
     def __init__(self, links=None, endpoints=None):
-        """KeystoneListEndpointsResponse
+        r"""KeystoneListEndpointsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class KeystoneListEndpointsResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this KeystoneListEndpointsResponse.
+        r"""Gets the links of this KeystoneListEndpointsResponse.
 
         :return: The links of this KeystoneListEndpointsResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.Links`
@@ -60,7 +60,7 @@ class KeystoneListEndpointsResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this KeystoneListEndpointsResponse.
+        r"""Sets the links of this KeystoneListEndpointsResponse.
 
         :param links: The links of this KeystoneListEndpointsResponse.
         :type links: :class:`huaweicloudsdkiam.v3.Links`
@@ -69,7 +69,7 @@ class KeystoneListEndpointsResponse(SdkResponse):
 
     @property
     def endpoints(self):
-        """Gets the endpoints of this KeystoneListEndpointsResponse.
+        r"""Gets the endpoints of this KeystoneListEndpointsResponse.
 
         终端节点信息列表。
 
@@ -80,7 +80,7 @@ class KeystoneListEndpointsResponse(SdkResponse):
 
     @endpoints.setter
     def endpoints(self, endpoints):
-        """Sets the endpoints of this KeystoneListEndpointsResponse.
+        r"""Sets the endpoints of this KeystoneListEndpointsResponse.
 
         终端节点信息列表。
 

@@ -27,7 +27,7 @@ class StopPipelineNewRequest:
     }
 
     def __init__(self, pipeline_id=None, build_id=None):
-        """StopPipelineNewRequest
+        r"""StopPipelineNewRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class StopPipelineNewRequest:
 
     @property
     def pipeline_id(self):
-        """Gets the pipeline_id of this StopPipelineNewRequest.
+        r"""Gets the pipeline_id of this StopPipelineNewRequest.
 
         流水线ID
 
@@ -59,7 +59,7 @@ class StopPipelineNewRequest:
 
     @pipeline_id.setter
     def pipeline_id(self, pipeline_id):
-        """Sets the pipeline_id of this StopPipelineNewRequest.
+        r"""Sets the pipeline_id of this StopPipelineNewRequest.
 
         流水线ID
 
@@ -70,7 +70,7 @@ class StopPipelineNewRequest:
 
     @property
     def build_id(self):
-        """Gets the build_id of this StopPipelineNewRequest.
+        r"""Gets the build_id of this StopPipelineNewRequest.
 
         流水线执行ID
 
@@ -81,7 +81,7 @@ class StopPipelineNewRequest:
 
     @build_id.setter
     def build_id(self, build_id):
-        """Sets the build_id of this StopPipelineNewRequest.
+        r"""Sets the build_id of this StopPipelineNewRequest.
 
         流水线执行ID
 

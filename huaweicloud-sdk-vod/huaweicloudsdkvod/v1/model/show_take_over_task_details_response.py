@@ -32,7 +32,7 @@ class ShowTakeOverTaskDetailsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, task_id=None, task_status=None, assets=None):
-        """ShowTakeOverTaskDetailsResponse
+        r"""ShowTakeOverTaskDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowTakeOverTaskDetailsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowTakeOverTaskDetailsResponse.
+        r"""Gets the total of this ShowTakeOverTaskDetailsResponse.
 
         总数。
 
@@ -76,7 +76,7 @@ class ShowTakeOverTaskDetailsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowTakeOverTaskDetailsResponse.
+        r"""Sets the total of this ShowTakeOverTaskDetailsResponse.
 
         总数。
 
@@ -87,7 +87,7 @@ class ShowTakeOverTaskDetailsResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowTakeOverTaskDetailsResponse.
+        r"""Gets the task_id of this ShowTakeOverTaskDetailsResponse.
 
         任务ID。
 
@@ -98,7 +98,7 @@ class ShowTakeOverTaskDetailsResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowTakeOverTaskDetailsResponse.
+        r"""Sets the task_id of this ShowTakeOverTaskDetailsResponse.
 
         任务ID。
 
@@ -109,7 +109,7 @@ class ShowTakeOverTaskDetailsResponse(SdkResponse):
 
     @property
     def task_status(self):
-        """Gets the task_status of this ShowTakeOverTaskDetailsResponse.
+        r"""Gets the task_status of this ShowTakeOverTaskDetailsResponse.
 
         任务状态。
 
@@ -120,7 +120,7 @@ class ShowTakeOverTaskDetailsResponse(SdkResponse):
 
     @task_status.setter
     def task_status(self, task_status):
-        """Sets the task_status of this ShowTakeOverTaskDetailsResponse.
+        r"""Sets the task_status of this ShowTakeOverTaskDetailsResponse.
 
         任务状态。
 
@@ -131,7 +131,7 @@ class ShowTakeOverTaskDetailsResponse(SdkResponse):
 
     @property
     def assets(self):
-        """Gets the assets of this ShowTakeOverTaskDetailsResponse.
+        r"""Gets the assets of this ShowTakeOverTaskDetailsResponse.
 
         媒资信息。
 
@@ -142,7 +142,7 @@ class ShowTakeOverTaskDetailsResponse(SdkResponse):
 
     @assets.setter
     def assets(self, assets):
-        """Sets the assets of this ShowTakeOverTaskDetailsResponse.
+        r"""Sets the assets of this ShowTakeOverTaskDetailsResponse.
 
         媒资信息。
 

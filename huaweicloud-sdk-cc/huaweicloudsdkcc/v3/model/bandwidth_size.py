@@ -25,7 +25,7 @@ class BandwidthSize:
     }
 
     def __init__(self, bandwidth_size=None):
-        """BandwidthSize
+        r"""BandwidthSize
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BandwidthSize:
 
     @property
     def bandwidth_size(self):
-        """Gets the bandwidth_size of this BandwidthSize.
+        r"""Gets the bandwidth_size of this BandwidthSize.
 
         带宽值，单位Mbps。
 
@@ -54,7 +54,7 @@ class BandwidthSize:
 
     @bandwidth_size.setter
     def bandwidth_size(self, bandwidth_size):
-        """Sets the bandwidth_size of this BandwidthSize.
+        r"""Sets the bandwidth_size of this BandwidthSize.
 
         带宽值，单位Mbps。
 

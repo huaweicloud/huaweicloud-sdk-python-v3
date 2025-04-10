@@ -33,7 +33,7 @@ class ListAppTemplatesRequest:
     }
 
     def __init__(self, marker=None, maxitems=None, runtime=None, category=None, x_language=None):
-        """ListAppTemplatesRequest
+        r"""ListAppTemplatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListAppTemplatesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListAppTemplatesRequest.
+        r"""Gets the marker of this ListAppTemplatesRequest.
 
         本次查询起始位置，默认值0
 
@@ -82,7 +82,7 @@ class ListAppTemplatesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListAppTemplatesRequest.
+        r"""Sets the marker of this ListAppTemplatesRequest.
 
         本次查询起始位置，默认值0
 
@@ -93,7 +93,7 @@ class ListAppTemplatesRequest:
 
     @property
     def maxitems(self):
-        """Gets the maxitems of this ListAppTemplatesRequest.
+        r"""Gets the maxitems of this ListAppTemplatesRequest.
 
         本次查询最大返回的数据条数，最大值500，默认值100
 
@@ -104,7 +104,7 @@ class ListAppTemplatesRequest:
 
     @maxitems.setter
     def maxitems(self, maxitems):
-        """Sets the maxitems of this ListAppTemplatesRequest.
+        r"""Sets the maxitems of this ListAppTemplatesRequest.
 
         本次查询最大返回的数据条数，最大值500，默认值100
 
@@ -115,7 +115,7 @@ class ListAppTemplatesRequest:
 
     @property
     def runtime(self):
-        """Gets the runtime of this ListAppTemplatesRequest.
+        r"""Gets the runtime of this ListAppTemplatesRequest.
 
         模板执行运行时
 
@@ -126,7 +126,7 @@ class ListAppTemplatesRequest:
 
     @runtime.setter
     def runtime(self, runtime):
-        """Sets the runtime of this ListAppTemplatesRequest.
+        r"""Sets the runtime of this ListAppTemplatesRequest.
 
         模板执行运行时
 
@@ -137,7 +137,7 @@ class ListAppTemplatesRequest:
 
     @property
     def category(self):
-        """Gets the category of this ListAppTemplatesRequest.
+        r"""Gets the category of this ListAppTemplatesRequest.
 
         模板类别
 
@@ -148,7 +148,7 @@ class ListAppTemplatesRequest:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ListAppTemplatesRequest.
+        r"""Sets the category of this ListAppTemplatesRequest.
 
         模板类别
 
@@ -159,7 +159,7 @@ class ListAppTemplatesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListAppTemplatesRequest.
+        r"""Gets the x_language of this ListAppTemplatesRequest.
 
         模板语言
 
@@ -170,7 +170,7 @@ class ListAppTemplatesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListAppTemplatesRequest.
+        r"""Sets the x_language of this ListAppTemplatesRequest.
 
         模板语言
 

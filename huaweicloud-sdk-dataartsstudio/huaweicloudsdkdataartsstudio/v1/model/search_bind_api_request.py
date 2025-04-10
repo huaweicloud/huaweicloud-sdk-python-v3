@@ -33,7 +33,7 @@ class SearchBindApiRequest:
     }
 
     def __init__(self, workspace=None, dlm_type=None, app_id=None, offset=None, limit=None):
-        """SearchBindApiRequest
+        r"""SearchBindApiRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class SearchBindApiRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this SearchBindApiRequest.
+        r"""Gets the workspace of this SearchBindApiRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -80,7 +80,7 @@ class SearchBindApiRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this SearchBindApiRequest.
+        r"""Sets the workspace of this SearchBindApiRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -91,7 +91,7 @@ class SearchBindApiRequest:
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this SearchBindApiRequest.
+        r"""Gets the dlm_type of this SearchBindApiRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -102,7 +102,7 @@ class SearchBindApiRequest:
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this SearchBindApiRequest.
+        r"""Sets the dlm_type of this SearchBindApiRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -113,7 +113,7 @@ class SearchBindApiRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this SearchBindApiRequest.
+        r"""Gets the app_id of this SearchBindApiRequest.
 
         app编号。
 
@@ -124,7 +124,7 @@ class SearchBindApiRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this SearchBindApiRequest.
+        r"""Sets the app_id of this SearchBindApiRequest.
 
         app编号。
 
@@ -135,7 +135,7 @@ class SearchBindApiRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this SearchBindApiRequest.
+        r"""Gets the offset of this SearchBindApiRequest.
 
         查询起始坐标, 即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整。
 
@@ -146,7 +146,7 @@ class SearchBindApiRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchBindApiRequest.
+        r"""Sets the offset of this SearchBindApiRequest.
 
         查询起始坐标, 即跳过前X条数据。仅支持0或limit的整数倍，不满足则向下取整。
 
@@ -157,7 +157,7 @@ class SearchBindApiRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this SearchBindApiRequest.
+        r"""Gets the limit of this SearchBindApiRequest.
 
         查询条数, 即查询Y条数据。
 
@@ -168,7 +168,7 @@ class SearchBindApiRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchBindApiRequest.
+        r"""Sets the limit of this SearchBindApiRequest.
 
         查询条数, 即查询Y条数据。
 

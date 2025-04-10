@@ -35,7 +35,7 @@ class ServiceRespDetail:
     }
 
     def __init__(self, created_at=None, id=None, meta_data=None, project_id=None, spec=None, updated_at=None):
-        """ServiceRespDetail
+        r"""ServiceRespDetail
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ServiceRespDetail:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ServiceRespDetail.
+        r"""Gets the created_at of this ServiceRespDetail.
 
         创建时间
 
@@ -83,7 +83,7 @@ class ServiceRespDetail:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ServiceRespDetail.
+        r"""Sets the created_at of this ServiceRespDetail.
 
         创建时间
 
@@ -94,7 +94,7 @@ class ServiceRespDetail:
 
     @property
     def id(self):
-        """Gets the id of this ServiceRespDetail.
+        r"""Gets the id of this ServiceRespDetail.
 
         服务ID
 
@@ -105,7 +105,7 @@ class ServiceRespDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ServiceRespDetail.
+        r"""Sets the id of this ServiceRespDetail.
 
         服务ID
 
@@ -116,7 +116,7 @@ class ServiceRespDetail:
 
     @property
     def meta_data(self):
-        """Gets the meta_data of this ServiceRespDetail.
+        r"""Gets the meta_data of this ServiceRespDetail.
 
         :return: The meta_data of this ServiceRespDetail.
         :rtype: :class:`huaweicloudsdkief.v1.SvcMetadata`
@@ -125,7 +125,7 @@ class ServiceRespDetail:
 
     @meta_data.setter
     def meta_data(self, meta_data):
-        """Sets the meta_data of this ServiceRespDetail.
+        r"""Sets the meta_data of this ServiceRespDetail.
 
         :param meta_data: The meta_data of this ServiceRespDetail.
         :type meta_data: :class:`huaweicloudsdkief.v1.SvcMetadata`
@@ -134,7 +134,7 @@ class ServiceRespDetail:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ServiceRespDetail.
+        r"""Gets the project_id of this ServiceRespDetail.
 
         租户ID
 
@@ -145,7 +145,7 @@ class ServiceRespDetail:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ServiceRespDetail.
+        r"""Sets the project_id of this ServiceRespDetail.
 
         租户ID
 
@@ -156,7 +156,7 @@ class ServiceRespDetail:
 
     @property
     def spec(self):
-        """Gets the spec of this ServiceRespDetail.
+        r"""Gets the spec of this ServiceRespDetail.
 
         :return: The spec of this ServiceRespDetail.
         :rtype: :class:`huaweicloudsdkief.v1.SvcSpec`
@@ -165,7 +165,7 @@ class ServiceRespDetail:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this ServiceRespDetail.
+        r"""Sets the spec of this ServiceRespDetail.
 
         :param spec: The spec of this ServiceRespDetail.
         :type spec: :class:`huaweicloudsdkief.v1.SvcSpec`
@@ -174,7 +174,7 @@ class ServiceRespDetail:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ServiceRespDetail.
+        r"""Gets the updated_at of this ServiceRespDetail.
 
         更新时间
 
@@ -185,7 +185,7 @@ class ServiceRespDetail:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ServiceRespDetail.
+        r"""Sets the updated_at of this ServiceRespDetail.
 
         更新时间
 

@@ -27,7 +27,7 @@ class BatchDeleteJobsRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """BatchDeleteJobsRequest
+        r"""BatchDeleteJobsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchDeleteJobsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this BatchDeleteJobsRequest.
+        r"""Gets the x_language of this BatchDeleteJobsRequest.
 
         请求语言类型
 
@@ -61,7 +61,7 @@ class BatchDeleteJobsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this BatchDeleteJobsRequest.
+        r"""Sets the x_language of this BatchDeleteJobsRequest.
 
         请求语言类型
 
@@ -72,7 +72,7 @@ class BatchDeleteJobsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteJobsRequest.
+        r"""Gets the body of this BatchDeleteJobsRequest.
 
         :return: The body of this BatchDeleteJobsRequest.
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchDeleteJobReq`
@@ -81,7 +81,7 @@ class BatchDeleteJobsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteJobsRequest.
+        r"""Sets the body of this BatchDeleteJobsRequest.
 
         :param body: The body of this BatchDeleteJobsRequest.
         :type body: :class:`huaweicloudsdkdrs.v3.BatchDeleteJobReq`

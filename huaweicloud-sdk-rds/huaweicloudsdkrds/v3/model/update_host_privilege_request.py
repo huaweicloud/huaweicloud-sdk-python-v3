@@ -27,7 +27,7 @@ class UpdateHostPrivilegeRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """UpdateHostPrivilegeRequest
+        r"""UpdateHostPrivilegeRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateHostPrivilegeRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateHostPrivilegeRequest.
+        r"""Gets the instance_id of this UpdateHostPrivilegeRequest.
 
         实例id
 
@@ -60,7 +60,7 @@ class UpdateHostPrivilegeRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateHostPrivilegeRequest.
+        r"""Sets the instance_id of this UpdateHostPrivilegeRequest.
 
         实例id
 
@@ -71,7 +71,7 @@ class UpdateHostPrivilegeRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateHostPrivilegeRequest.
+        r"""Gets the body of this UpdateHostPrivilegeRequest.
 
         :return: The body of this UpdateHostPrivilegeRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.SetHostPrivilegeRequestV3`
@@ -80,7 +80,7 @@ class UpdateHostPrivilegeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateHostPrivilegeRequest.
+        r"""Sets the body of this UpdateHostPrivilegeRequest.
 
         :param body: The body of this UpdateHostPrivilegeRequest.
         :type body: :class:`huaweicloudsdkrds.v3.SetHostPrivilegeRequestV3`

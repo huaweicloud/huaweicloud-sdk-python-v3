@@ -37,7 +37,7 @@ class CbcCallbackRsp:
     }
 
     def __init__(self, error_code=None, error_msg=None, cbc_job_id=None, get_job_endpoint=None, max_provision_time=None, min_provision_time=None, periodic_query_time=None):
-        """CbcCallbackRsp
+        r"""CbcCallbackRsp
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class CbcCallbackRsp:
 
     @property
     def error_code(self):
-        """Gets the error_code of this CbcCallbackRsp.
+        r"""Gets the error_code of this CbcCallbackRsp.
 
         错误码，失败时返回。
 
@@ -96,7 +96,7 @@ class CbcCallbackRsp:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this CbcCallbackRsp.
+        r"""Sets the error_code of this CbcCallbackRsp.
 
         错误码，失败时返回。
 
@@ -107,7 +107,7 @@ class CbcCallbackRsp:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this CbcCallbackRsp.
+        r"""Gets the error_msg of this CbcCallbackRsp.
 
         错误描述。
 
@@ -118,7 +118,7 @@ class CbcCallbackRsp:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this CbcCallbackRsp.
+        r"""Sets the error_msg of this CbcCallbackRsp.
 
         错误描述。
 
@@ -129,7 +129,7 @@ class CbcCallbackRsp:
 
     @property
     def cbc_job_id(self):
-        """Gets the cbc_job_id of this CbcCallbackRsp.
+        r"""Gets the cbc_job_id of this CbcCallbackRsp.
 
         创建云桌面总任务ID，CBC根据此ID定期查询任务是否成功
 
@@ -140,7 +140,7 @@ class CbcCallbackRsp:
 
     @cbc_job_id.setter
     def cbc_job_id(self, cbc_job_id):
-        """Sets the cbc_job_id of this CbcCallbackRsp.
+        r"""Sets the cbc_job_id of this CbcCallbackRsp.
 
         创建云桌面总任务ID，CBC根据此ID定期查询任务是否成功
 
@@ -151,7 +151,7 @@ class CbcCallbackRsp:
 
     @property
     def get_job_endpoint(self):
-        """Gets the get_job_endpoint of this CbcCallbackRsp.
+        r"""Gets the get_job_endpoint of this CbcCallbackRsp.
 
         云运营平台CBC获取到JobId后，会使用getJobEndpoint当做URL，调用云服务，查询获取Job结果
 
@@ -162,7 +162,7 @@ class CbcCallbackRsp:
 
     @get_job_endpoint.setter
     def get_job_endpoint(self, get_job_endpoint):
-        """Sets the get_job_endpoint of this CbcCallbackRsp.
+        r"""Sets the get_job_endpoint of this CbcCallbackRsp.
 
         云运营平台CBC获取到JobId后，会使用getJobEndpoint当做URL，调用云服务，查询获取Job结果
 
@@ -173,7 +173,7 @@ class CbcCallbackRsp:
 
     @property
     def max_provision_time(self):
-        """Gets the max_provision_time of this CbcCallbackRsp.
+        r"""Gets the max_provision_time of this CbcCallbackRsp.
 
         在线开通最大时间 在maxProvisionTime时间范围内，CBC会周期性的查询云服务开通结果；超过maxProvisionTime还没有开通成功，CBC会发失败工单，人工去分析处理。 单位：分钟。 如果为空，CBC默认为6小时。 取值范围（0,43200]，即30天。
 
@@ -184,7 +184,7 @@ class CbcCallbackRsp:
 
     @max_provision_time.setter
     def max_provision_time(self, max_provision_time):
-        """Sets the max_provision_time of this CbcCallbackRsp.
+        r"""Sets the max_provision_time of this CbcCallbackRsp.
 
         在线开通最大时间 在maxProvisionTime时间范围内，CBC会周期性的查询云服务开通结果；超过maxProvisionTime还没有开通成功，CBC会发失败工单，人工去分析处理。 单位：分钟。 如果为空，CBC默认为6小时。 取值范围（0,43200]，即30天。
 
@@ -195,7 +195,7 @@ class CbcCallbackRsp:
 
     @property
     def min_provision_time(self):
-        """Gets the min_provision_time of this CbcCallbackRsp.
+        r"""Gets the min_provision_time of this CbcCallbackRsp.
 
         开通最小时间（云服务最快开通时长，或一般开通时长） 获取到JobId后，经过minProvisionTime时间后，才来查询获取云服务开通结果。如果为空，云运营平台获取到JobId后，就去查询云服务开通结果。 单位：分钟。 取值范围：(0, 43200)
 
@@ -206,7 +206,7 @@ class CbcCallbackRsp:
 
     @min_provision_time.setter
     def min_provision_time(self, min_provision_time):
-        """Sets the min_provision_time of this CbcCallbackRsp.
+        r"""Sets the min_provision_time of this CbcCallbackRsp.
 
         开通最小时间（云服务最快开通时长，或一般开通时长） 获取到JobId后，经过minProvisionTime时间后，才来查询获取云服务开通结果。如果为空，云运营平台获取到JobId后，就去查询云服务开通结果。 单位：分钟。 取值范围：(0, 43200)
 
@@ -217,7 +217,7 @@ class CbcCallbackRsp:
 
     @property
     def periodic_query_time(self):
-        """Gets the periodic_query_time of this CbcCallbackRsp.
+        r"""Gets the periodic_query_time of this CbcCallbackRsp.
 
         Job周期性查询时间，默认2分钟查询一次 云运营平台会使用getJobEndpoint(Job查询接口)、每隔periodicQueryTime时间去查询云服务开通结果。 单位：分钟。 如果为空，则使用CBC默认的间隔时间（1分钟，2分钟，4分钟……15分钟）来查询云服务开通结果。 取值范围：(0, 43200)
 
@@ -228,7 +228,7 @@ class CbcCallbackRsp:
 
     @periodic_query_time.setter
     def periodic_query_time(self, periodic_query_time):
-        """Sets the periodic_query_time of this CbcCallbackRsp.
+        r"""Sets the periodic_query_time of this CbcCallbackRsp.
 
         Job周期性查询时间，默认2分钟查询一次 云运营平台会使用getJobEndpoint(Job查询接口)、每隔periodicQueryTime时间去查询云服务开通结果。 单位：分钟。 如果为空，则使用CBC默认的间隔时间（1分钟，2分钟，4分钟……15分钟）来查询云服务开通结果。 取值范围：(0, 43200)
 

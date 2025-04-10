@@ -29,7 +29,7 @@ class UpdatePostgresqlDatabaseRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """UpdatePostgresqlDatabaseRequest
+        r"""UpdatePostgresqlDatabaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdatePostgresqlDatabaseRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdatePostgresqlDatabaseRequest.
+        r"""Gets the x_language of this UpdatePostgresqlDatabaseRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class UpdatePostgresqlDatabaseRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdatePostgresqlDatabaseRequest.
+        r"""Sets the x_language of this UpdatePostgresqlDatabaseRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class UpdatePostgresqlDatabaseRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdatePostgresqlDatabaseRequest.
+        r"""Gets the instance_id of this UpdatePostgresqlDatabaseRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class UpdatePostgresqlDatabaseRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdatePostgresqlDatabaseRequest.
+        r"""Sets the instance_id of this UpdatePostgresqlDatabaseRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class UpdatePostgresqlDatabaseRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePostgresqlDatabaseRequest.
+        r"""Gets the body of this UpdatePostgresqlDatabaseRequest.
 
         :return: The body of this UpdatePostgresqlDatabaseRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.UpdateDatabaseReq`
@@ -109,7 +109,7 @@ class UpdatePostgresqlDatabaseRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePostgresqlDatabaseRequest.
+        r"""Sets the body of this UpdatePostgresqlDatabaseRequest.
 
         :param body: The body of this UpdatePostgresqlDatabaseRequest.
         :type body: :class:`huaweicloudsdkrds.v3.UpdateDatabaseReq`

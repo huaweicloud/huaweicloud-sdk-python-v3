@@ -26,7 +26,7 @@ class ImportBackupResponse(SdkResponse):
     }
 
     def __init__(self, sync=None):
-        """ImportBackupResponse
+        r"""ImportBackupResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ImportBackupResponse(SdkResponse):
 
     @property
     def sync(self):
-        """Gets the sync of this ImportBackupResponse.
+        r"""Gets the sync of this ImportBackupResponse.
 
         同步备份副本接口的返回信息
 
@@ -55,7 +55,7 @@ class ImportBackupResponse(SdkResponse):
 
     @sync.setter
     def sync(self, sync):
-        """Sets the sync of this ImportBackupResponse.
+        r"""Sets the sync of this ImportBackupResponse.
 
         同步备份副本接口的返回信息
 

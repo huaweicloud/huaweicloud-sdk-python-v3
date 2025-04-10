@@ -27,7 +27,7 @@ class ListAuditAlarmLogRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """ListAuditAlarmLogRequest
+        r"""ListAuditAlarmLogRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListAuditAlarmLogRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListAuditAlarmLogRequest.
+        r"""Gets the instance_id of this ListAuditAlarmLogRequest.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 
@@ -60,7 +60,7 @@ class ListAuditAlarmLogRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListAuditAlarmLogRequest.
+        r"""Sets the instance_id of this ListAuditAlarmLogRequest.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 
@@ -71,7 +71,7 @@ class ListAuditAlarmLogRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListAuditAlarmLogRequest.
+        r"""Gets the body of this ListAuditAlarmLogRequest.
 
         :return: The body of this ListAuditAlarmLogRequest.
         :rtype: :class:`huaweicloudsdkdbss.v1.AlarmLogRequest`
@@ -80,7 +80,7 @@ class ListAuditAlarmLogRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListAuditAlarmLogRequest.
+        r"""Sets the body of this ListAuditAlarmLogRequest.
 
         :param body: The body of this ListAuditAlarmLogRequest.
         :type body: :class:`huaweicloudsdkdbss.v1.AlarmLogRequest`

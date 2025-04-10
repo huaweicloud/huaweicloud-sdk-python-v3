@@ -39,7 +39,7 @@ class SimpleKeyScanRecord:
     }
 
     def __init__(self, id=None, instance_id=None, status=None, scan_type=None, num=None, created_at=None, started_at=None, finished_at=None):
-        """SimpleKeyScanRecord
+        r"""SimpleKeyScanRecord
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class SimpleKeyScanRecord:
 
     @property
     def id(self):
-        """Gets the id of this SimpleKeyScanRecord.
+        r"""Gets the id of this SimpleKeyScanRecord.
 
         扫描ID
 
@@ -103,7 +103,7 @@ class SimpleKeyScanRecord:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SimpleKeyScanRecord.
+        r"""Sets the id of this SimpleKeyScanRecord.
 
         扫描ID
 
@@ -114,7 +114,7 @@ class SimpleKeyScanRecord:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SimpleKeyScanRecord.
+        r"""Gets the instance_id of this SimpleKeyScanRecord.
 
         实例ID
 
@@ -125,7 +125,7 @@ class SimpleKeyScanRecord:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SimpleKeyScanRecord.
+        r"""Sets the instance_id of this SimpleKeyScanRecord.
 
         实例ID
 
@@ -136,7 +136,7 @@ class SimpleKeyScanRecord:
 
     @property
     def status(self):
-        """Gets the status of this SimpleKeyScanRecord.
+        r"""Gets the status of this SimpleKeyScanRecord.
 
         状态
 
@@ -147,7 +147,7 @@ class SimpleKeyScanRecord:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SimpleKeyScanRecord.
+        r"""Sets the status of this SimpleKeyScanRecord.
 
         状态
 
@@ -158,7 +158,7 @@ class SimpleKeyScanRecord:
 
     @property
     def scan_type(self):
-        """Gets the scan_type of this SimpleKeyScanRecord.
+        r"""Gets the scan_type of this SimpleKeyScanRecord.
 
         扫描类型
 
@@ -169,7 +169,7 @@ class SimpleKeyScanRecord:
 
     @scan_type.setter
     def scan_type(self, scan_type):
-        """Sets the scan_type of this SimpleKeyScanRecord.
+        r"""Sets the scan_type of this SimpleKeyScanRecord.
 
         扫描类型
 
@@ -180,7 +180,7 @@ class SimpleKeyScanRecord:
 
     @property
     def num(self):
-        """Gets the num of this SimpleKeyScanRecord.
+        r"""Gets the num of this SimpleKeyScanRecord.
 
         数量
 
@@ -191,7 +191,7 @@ class SimpleKeyScanRecord:
 
     @num.setter
     def num(self, num):
-        """Sets the num of this SimpleKeyScanRecord.
+        r"""Sets the num of this SimpleKeyScanRecord.
 
         数量
 
@@ -202,7 +202,7 @@ class SimpleKeyScanRecord:
 
     @property
     def created_at(self):
-        """Gets the created_at of this SimpleKeyScanRecord.
+        r"""Gets the created_at of this SimpleKeyScanRecord.
 
         创建时间, 格式为: 2023-06-13T13:46:14.771Z
 
@@ -213,7 +213,7 @@ class SimpleKeyScanRecord:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this SimpleKeyScanRecord.
+        r"""Sets the created_at of this SimpleKeyScanRecord.
 
         创建时间, 格式为: 2023-06-13T13:46:14.771Z
 
@@ -224,7 +224,7 @@ class SimpleKeyScanRecord:
 
     @property
     def started_at(self):
-        """Gets the started_at of this SimpleKeyScanRecord.
+        r"""Gets the started_at of this SimpleKeyScanRecord.
 
         开始时间, 格式为: 2023-06-13T13:46:14.771Z
 
@@ -235,7 +235,7 @@ class SimpleKeyScanRecord:
 
     @started_at.setter
     def started_at(self, started_at):
-        """Sets the started_at of this SimpleKeyScanRecord.
+        r"""Sets the started_at of this SimpleKeyScanRecord.
 
         开始时间, 格式为: 2023-06-13T13:46:14.771Z
 
@@ -246,7 +246,7 @@ class SimpleKeyScanRecord:
 
     @property
     def finished_at(self):
-        """Gets the finished_at of this SimpleKeyScanRecord.
+        r"""Gets the finished_at of this SimpleKeyScanRecord.
 
         完成时间, 格式为：2020-06-15T02:21:18.669Z
 
@@ -257,7 +257,7 @@ class SimpleKeyScanRecord:
 
     @finished_at.setter
     def finished_at(self, finished_at):
-        """Sets the finished_at of this SimpleKeyScanRecord.
+        r"""Sets the finished_at of this SimpleKeyScanRecord.
 
         完成时间, 格式为：2020-06-15T02:21:18.669Z
 

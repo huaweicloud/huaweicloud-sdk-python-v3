@@ -27,7 +27,7 @@ class CreateDataspaceRequestBody:
     }
 
     def __init__(self, dataspace_name=None, description=None):
-        """CreateDataspaceRequestBody
+        r"""CreateDataspaceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateDataspaceRequestBody:
 
     @property
     def dataspace_name(self):
-        """Gets the dataspace_name of this CreateDataspaceRequestBody.
+        r"""Gets the dataspace_name of this CreateDataspaceRequestBody.
 
         数据空间名称
 
@@ -59,7 +59,7 @@ class CreateDataspaceRequestBody:
 
     @dataspace_name.setter
     def dataspace_name(self, dataspace_name):
-        """Sets the dataspace_name of this CreateDataspaceRequestBody.
+        r"""Sets the dataspace_name of this CreateDataspaceRequestBody.
 
         数据空间名称
 
@@ -70,7 +70,7 @@ class CreateDataspaceRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateDataspaceRequestBody.
+        r"""Gets the description of this CreateDataspaceRequestBody.
 
         描述
 
@@ -81,7 +81,7 @@ class CreateDataspaceRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateDataspaceRequestBody.
+        r"""Sets the description of this CreateDataspaceRequestBody.
 
         描述
 

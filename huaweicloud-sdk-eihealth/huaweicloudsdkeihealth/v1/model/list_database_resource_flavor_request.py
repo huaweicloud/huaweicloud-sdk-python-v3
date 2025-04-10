@@ -23,7 +23,7 @@ class ListDatabaseResourceFlavorRequest:
     }
 
     def __init__(self):
-        """ListDatabaseResourceFlavorRequest
+        r"""ListDatabaseResourceFlavorRequest
 
         The model defined in huaweicloud sdk
 

@@ -35,7 +35,7 @@ class CloudConnectionQuota:
     }
 
     def __init__(self, domain_id=None, cloud_connection_id=None, region_id=None, quota_type=None, quota_number=None, quota_used=None):
-        """CloudConnectionQuota
+        r"""CloudConnectionQuota
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class CloudConnectionQuota:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this CloudConnectionQuota.
+        r"""Gets the domain_id of this CloudConnectionQuota.
 
         实例所属账号ID。
 
@@ -86,7 +86,7 @@ class CloudConnectionQuota:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this CloudConnectionQuota.
+        r"""Sets the domain_id of this CloudConnectionQuota.
 
         实例所属账号ID。
 
@@ -97,7 +97,7 @@ class CloudConnectionQuota:
 
     @property
     def cloud_connection_id(self):
-        """Gets the cloud_connection_id of this CloudConnectionQuota.
+        r"""Gets the cloud_connection_id of this CloudConnectionQuota.
 
         云连接实例ID。
 
@@ -108,7 +108,7 @@ class CloudConnectionQuota:
 
     @cloud_connection_id.setter
     def cloud_connection_id(self, cloud_connection_id):
-        """Sets the cloud_connection_id of this CloudConnectionQuota.
+        r"""Sets the cloud_connection_id of this CloudConnectionQuota.
 
         云连接实例ID。
 
@@ -119,7 +119,7 @@ class CloudConnectionQuota:
 
     @property
     def region_id(self):
-        """Gets the region_id of this CloudConnectionQuota.
+        r"""Gets the region_id of this CloudConnectionQuota.
 
         RegionID。
 
@@ -130,7 +130,7 @@ class CloudConnectionQuota:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this CloudConnectionQuota.
+        r"""Sets the region_id of this CloudConnectionQuota.
 
         RegionID。
 
@@ -141,7 +141,7 @@ class CloudConnectionQuota:
 
     @property
     def quota_type(self):
-        """Gets the quota_type of this CloudConnectionQuota.
+        r"""Gets the quota_type of this CloudConnectionQuota.
 
         配额类型： - cloud_connection: 可加载的云连接实例数 - cloud_connection_region: 某云连接实例下可加载的Region数 - cloud_connection_route: 某云连接实例下可加载的路由数 - region_network_instance: 某云连接实例下某个Region下可加载的网络实例数
 
@@ -152,7 +152,7 @@ class CloudConnectionQuota:
 
     @quota_type.setter
     def quota_type(self, quota_type):
-        """Sets the quota_type of this CloudConnectionQuota.
+        r"""Sets the quota_type of this CloudConnectionQuota.
 
         配额类型： - cloud_connection: 可加载的云连接实例数 - cloud_connection_region: 某云连接实例下可加载的Region数 - cloud_connection_route: 某云连接实例下可加载的路由数 - region_network_instance: 某云连接实例下某个Region下可加载的网络实例数
 
@@ -163,7 +163,7 @@ class CloudConnectionQuota:
 
     @property
     def quota_number(self):
-        """Gets the quota_number of this CloudConnectionQuota.
+        r"""Gets the quota_number of this CloudConnectionQuota.
 
         配额数量。
 
@@ -174,7 +174,7 @@ class CloudConnectionQuota:
 
     @quota_number.setter
     def quota_number(self, quota_number):
-        """Sets the quota_number of this CloudConnectionQuota.
+        r"""Sets the quota_number of this CloudConnectionQuota.
 
         配额数量。
 
@@ -185,7 +185,7 @@ class CloudConnectionQuota:
 
     @property
     def quota_used(self):
-        """Gets the quota_used of this CloudConnectionQuota.
+        r"""Gets the quota_used of this CloudConnectionQuota.
 
         配额使用数量。
 
@@ -196,7 +196,7 @@ class CloudConnectionQuota:
 
     @quota_used.setter
     def quota_used(self, quota_used):
-        """Sets the quota_used of this CloudConnectionQuota.
+        r"""Sets the quota_used of this CloudConnectionQuota.
 
         配额使用数量。
 

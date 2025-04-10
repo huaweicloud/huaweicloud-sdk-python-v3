@@ -26,7 +26,7 @@ class AddCorpResponse(SdkResponse):
     }
 
     def __init__(self, value=None):
-        """AddCorpResponse
+        r"""AddCorpResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class AddCorpResponse(SdkResponse):
 
     @property
     def value(self):
-        """Gets the value of this AddCorpResponse.
+        r"""Gets the value of this AddCorpResponse.
 
         返回结果。
 
@@ -55,7 +55,7 @@ class AddCorpResponse(SdkResponse):
 
     @value.setter
     def value(self, value):
-        """Sets the value of this AddCorpResponse.
+        r"""Sets the value of this AddCorpResponse.
 
         返回结果。
 

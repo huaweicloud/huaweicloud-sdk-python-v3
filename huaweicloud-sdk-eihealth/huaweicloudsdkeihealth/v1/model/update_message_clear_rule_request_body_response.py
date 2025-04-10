@@ -24,7 +24,7 @@ class UpdateMessageClearRuleRequestBodyResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateMessageClearRuleRequestBodyResponse
+        r"""UpdateMessageClearRuleRequestBodyResponse
 
         The model defined in huaweicloud sdk
 

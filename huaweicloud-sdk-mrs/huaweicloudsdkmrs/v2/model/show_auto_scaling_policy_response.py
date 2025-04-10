@@ -26,7 +26,7 @@ class ShowAutoScalingPolicyResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ShowAutoScalingPolicyResponse
+        r"""ShowAutoScalingPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowAutoScalingPolicyResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ShowAutoScalingPolicyResponse.
+        r"""Gets the body of this ShowAutoScalingPolicyResponse.
 
         弹性伸缩策略列表
 
@@ -55,7 +55,7 @@ class ShowAutoScalingPolicyResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowAutoScalingPolicyResponse.
+        r"""Sets the body of this ShowAutoScalingPolicyResponse.
 
         弹性伸缩策略列表
 

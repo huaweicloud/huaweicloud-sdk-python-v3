@@ -57,7 +57,7 @@ class ListBandwidthRequest:
     }
 
     def __init__(self, limit=None, marker=None, id=None, fields=None, bandwidth_type=None, name=None, name_like=None, ingress_size=None, admin_state=None, billing_info=None, tags=None, enable_bandwidth_rules=None, rule_quota=None, public_border_group=None, charge_mode=None, size=None, type=None):
-        """ListBandwidthRequest
+        r"""ListBandwidthRequest
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class ListBandwidthRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListBandwidthRequest.
+        r"""Gets the limit of this ListBandwidthRequest.
 
         - 功能说明：每页返回的个数 - 取值范围：取值范围：1~[2000]，其中2000为局点差异项，具体取值由局点决定
 
@@ -166,7 +166,7 @@ class ListBandwidthRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListBandwidthRequest.
+        r"""Sets the limit of this ListBandwidthRequest.
 
         - 功能说明：每页返回的个数 - 取值范围：取值范围：1~[2000]，其中2000为局点差异项，具体取值由局点决定
 
@@ -177,7 +177,7 @@ class ListBandwidthRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListBandwidthRequest.
+        r"""Gets the marker of this ListBandwidthRequest.
 
         - 功能说明：分页查询起始的资源ID，为空时为查询第一页
 
@@ -188,7 +188,7 @@ class ListBandwidthRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListBandwidthRequest.
+        r"""Sets the marker of this ListBandwidthRequest.
 
         - 功能说明：分页查询起始的资源ID，为空时为查询第一页
 
@@ -199,7 +199,7 @@ class ListBandwidthRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListBandwidthRequest.
+        r"""Gets the id of this ListBandwidthRequest.
 
         - 功能说明：带宽唯一标识
 
@@ -210,7 +210,7 @@ class ListBandwidthRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListBandwidthRequest.
+        r"""Sets the id of this ListBandwidthRequest.
 
         - 功能说明：带宽唯一标识
 
@@ -221,7 +221,7 @@ class ListBandwidthRequest:
 
     @property
     def fields(self):
-        """Gets the fields of this ListBandwidthRequest.
+        r"""Gets the fields of this ListBandwidthRequest.
 
         display in the form \"fields=id&fields=name&...\"  Supported fields：id/name/tenant_id/size/ratio_95peak_plus/ingress_size/bandwidth_type/admin_state/billing_info/charge_mode/type/publicip_info/enable_bandwidth_rules/rule_quota/bandwidth_rules/public_border_group/created_at/updated_at/lock_infos
 
@@ -232,7 +232,7 @@ class ListBandwidthRequest:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this ListBandwidthRequest.
+        r"""Sets the fields of this ListBandwidthRequest.
 
         display in the form \"fields=id&fields=name&...\"  Supported fields：id/name/tenant_id/size/ratio_95peak_plus/ingress_size/bandwidth_type/admin_state/billing_info/charge_mode/type/publicip_info/enable_bandwidth_rules/rule_quota/bandwidth_rules/public_border_group/created_at/updated_at/lock_infos
 
@@ -243,7 +243,7 @@ class ListBandwidthRequest:
 
     @property
     def bandwidth_type(self):
-        """Gets the bandwidth_type of this ListBandwidthRequest.
+        r"""Gets the bandwidth_type of this ListBandwidthRequest.
 
         - 功能说明：带宽类型，共享带宽默认为share。 - 取值范围：share，bgp，telcom，sbgp等。   - share：共享带宽   - bgp：动态bgp   - telcom ：联通   - sbgp：静态bgp
 
@@ -254,7 +254,7 @@ class ListBandwidthRequest:
 
     @bandwidth_type.setter
     def bandwidth_type(self, bandwidth_type):
-        """Sets the bandwidth_type of this ListBandwidthRequest.
+        r"""Sets the bandwidth_type of this ListBandwidthRequest.
 
         - 功能说明：带宽类型，共享带宽默认为share。 - 取值范围：share，bgp，telcom，sbgp等。   - share：共享带宽   - bgp：动态bgp   - telcom ：联通   - sbgp：静态bgp
 
@@ -265,7 +265,7 @@ class ListBandwidthRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListBandwidthRequest.
+        r"""Gets the name of this ListBandwidthRequest.
 
         - 功能说明：宽带名称，按照宽带名称过滤
 
@@ -276,7 +276,7 @@ class ListBandwidthRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListBandwidthRequest.
+        r"""Sets the name of this ListBandwidthRequest.
 
         - 功能说明：宽带名称，按照宽带名称过滤
 
@@ -287,7 +287,7 @@ class ListBandwidthRequest:
 
     @property
     def name_like(self):
-        """Gets the name_like of this ListBandwidthRequest.
+        r"""Gets the name_like of this ListBandwidthRequest.
 
         - 功能说明：根据宽带名称模糊查询过滤
 
@@ -298,7 +298,7 @@ class ListBandwidthRequest:
 
     @name_like.setter
     def name_like(self, name_like):
-        """Sets the name_like of this ListBandwidthRequest.
+        r"""Sets the name_like of this ListBandwidthRequest.
 
         - 功能说明：根据宽带名称模糊查询过滤
 
@@ -309,7 +309,7 @@ class ListBandwidthRequest:
 
     @property
     def ingress_size(self):
-        """Gets the ingress_size of this ListBandwidthRequest.
+        r"""Gets the ingress_size of this ListBandwidthRequest.
 
         - 功能说明：根据入云大小过滤
 
@@ -320,7 +320,7 @@ class ListBandwidthRequest:
 
     @ingress_size.setter
     def ingress_size(self, ingress_size):
-        """Sets the ingress_size of this ListBandwidthRequest.
+        r"""Sets the ingress_size of this ListBandwidthRequest.
 
         - 功能说明：根据入云大小过滤
 
@@ -331,7 +331,7 @@ class ListBandwidthRequest:
 
     @property
     def admin_state(self):
-        """Gets the admin_state of this ListBandwidthRequest.
+        r"""Gets the admin_state of this ListBandwidthRequest.
 
         - 功能说明：根据宽带状态过滤
 
@@ -342,7 +342,7 @@ class ListBandwidthRequest:
 
     @admin_state.setter
     def admin_state(self, admin_state):
-        """Sets the admin_state of this ListBandwidthRequest.
+        r"""Sets the admin_state of this ListBandwidthRequest.
 
         - 功能说明：根据宽带状态过滤
 
@@ -353,7 +353,7 @@ class ListBandwidthRequest:
 
     @property
     def billing_info(self):
-        """Gets the billing_info of this ListBandwidthRequest.
+        r"""Gets the billing_info of this ListBandwidthRequest.
 
         - 功能说明：根据计费信息过滤
 
@@ -364,7 +364,7 @@ class ListBandwidthRequest:
 
     @billing_info.setter
     def billing_info(self, billing_info):
-        """Sets the billing_info of this ListBandwidthRequest.
+        r"""Sets the billing_info of this ListBandwidthRequest.
 
         - 功能说明：根据计费信息过滤
 
@@ -375,7 +375,7 @@ class ListBandwidthRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this ListBandwidthRequest.
+        r"""Gets the tags of this ListBandwidthRequest.
 
         - 功能说明：根据标签过滤
 
@@ -386,7 +386,7 @@ class ListBandwidthRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListBandwidthRequest.
+        r"""Sets the tags of this ListBandwidthRequest.
 
         - 功能说明：根据标签过滤
 
@@ -397,7 +397,7 @@ class ListBandwidthRequest:
 
     @property
     def enable_bandwidth_rules(self):
-        """Gets the enable_bandwidth_rules of this ListBandwidthRequest.
+        r"""Gets the enable_bandwidth_rules of this ListBandwidthRequest.
 
         - 功能说明：根据是否带宽分组使能过滤 - 取值范围：true、false
 
@@ -408,7 +408,7 @@ class ListBandwidthRequest:
 
     @enable_bandwidth_rules.setter
     def enable_bandwidth_rules(self, enable_bandwidth_rules):
-        """Sets the enable_bandwidth_rules of this ListBandwidthRequest.
+        r"""Sets the enable_bandwidth_rules of this ListBandwidthRequest.
 
         - 功能说明：根据是否带宽分组使能过滤 - 取值范围：true、false
 
@@ -419,7 +419,7 @@ class ListBandwidthRequest:
 
     @property
     def rule_quota(self):
-        """Gets the rule_quota of this ListBandwidthRequest.
+        r"""Gets the rule_quota of this ListBandwidthRequest.
 
         - 功能说明：根据规则数值过滤
 
@@ -430,7 +430,7 @@ class ListBandwidthRequest:
 
     @rule_quota.setter
     def rule_quota(self, rule_quota):
-        """Sets the rule_quota of this ListBandwidthRequest.
+        r"""Sets the rule_quota of this ListBandwidthRequest.
 
         - 功能说明：根据规则数值过滤
 
@@ -441,7 +441,7 @@ class ListBandwidthRequest:
 
     @property
     def public_border_group(self):
-        """Gets the public_border_group of this ListBandwidthRequest.
+        r"""Gets the public_border_group of this ListBandwidthRequest.
 
         - 功能说明：根据站点信息过滤
 
@@ -452,7 +452,7 @@ class ListBandwidthRequest:
 
     @public_border_group.setter
     def public_border_group(self, public_border_group):
-        """Sets the public_border_group of this ListBandwidthRequest.
+        r"""Sets the public_border_group of this ListBandwidthRequest.
 
         - 功能说明：根据站点信息过滤
 
@@ -463,7 +463,7 @@ class ListBandwidthRequest:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this ListBandwidthRequest.
+        r"""Gets the charge_mode of this ListBandwidthRequest.
 
         - 功能说明：按流量计费,按带宽计费还是按增强型95计费 - 取值范围：bandwidth（按带宽计费），traffic（按流量计费），95peak_plus（按增强型95计费），不返回或者为空时表示是bandwidth - 约束：只有共享带宽支持95peak_plus（按增强型95计费），按增强型95计费时需要指定保底百分比，默认是20%
 
@@ -474,7 +474,7 @@ class ListBandwidthRequest:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this ListBandwidthRequest.
+        r"""Sets the charge_mode of this ListBandwidthRequest.
 
         - 功能说明：按流量计费,按带宽计费还是按增强型95计费 - 取值范围：bandwidth（按带宽计费），traffic（按流量计费），95peak_plus（按增强型95计费），不返回或者为空时表示是bandwidth - 约束：只有共享带宽支持95peak_plus（按增强型95计费），按增强型95计费时需要指定保底百分比，默认是20%
 
@@ -485,7 +485,7 @@ class ListBandwidthRequest:
 
     @property
     def size(self):
-        """Gets the size of this ListBandwidthRequest.
+        r"""Gets the size of this ListBandwidthRequest.
 
         - 功能说明：带宽大小。共享带宽的大小有最小值限制，默认为5M，可能因局点不同而不同。 - 取值范围：默认5Mbit/s~2000Mbit/s（具体范围以各区域配置为准，请参见控制台对应页面显示）。   调整带宽时的最小单位会根据带宽范围不同存在差异。 - 小于等于300Mbit/s：默认最小单位为1Mbit/s。 - 300Mbit/s~1000Mbit/s：默认最小单位为50Mbit/s。 - 大于1000Mbit/s：默认最小单位为500Mbit/s。
 
@@ -496,7 +496,7 @@ class ListBandwidthRequest:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListBandwidthRequest.
+        r"""Sets the size of this ListBandwidthRequest.
 
         - 功能说明：带宽大小。共享带宽的大小有最小值限制，默认为5M，可能因局点不同而不同。 - 取值范围：默认5Mbit/s~2000Mbit/s（具体范围以各区域配置为准，请参见控制台对应页面显示）。   调整带宽时的最小单位会根据带宽范围不同存在差异。 - 小于等于300Mbit/s：默认最小单位为1Mbit/s。 - 300Mbit/s~1000Mbit/s：默认最小单位为50Mbit/s。 - 大于1000Mbit/s：默认最小单位为500Mbit/s。
 
@@ -507,7 +507,7 @@ class ListBandwidthRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListBandwidthRequest.
+        r"""Gets the type of this ListBandwidthRequest.
 
         - 功能说明：带宽类型，标识是否是共享带宽 - 取值范围：WHOLE，PER。   - WHOLE表示共享带宽   - PER表示独享带宽
 
@@ -518,7 +518,7 @@ class ListBandwidthRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListBandwidthRequest.
+        r"""Sets the type of this ListBandwidthRequest.
 
         - 功能说明：带宽类型，标识是否是共享带宽 - 取值范围：WHOLE，PER。   - WHOLE表示共享带宽   - PER表示独享带宽
 

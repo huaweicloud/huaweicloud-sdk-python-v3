@@ -29,7 +29,7 @@ class SwitchGaussMySqlConfigurationRequest:
     }
 
     def __init__(self, x_language=None, configuration_id=None, body=None):
-        """SwitchGaussMySqlConfigurationRequest
+        r"""SwitchGaussMySqlConfigurationRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class SwitchGaussMySqlConfigurationRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this SwitchGaussMySqlConfigurationRequest.
+        r"""Gets the x_language of this SwitchGaussMySqlConfigurationRequest.
 
         语言。
 
@@ -67,7 +67,7 @@ class SwitchGaussMySqlConfigurationRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this SwitchGaussMySqlConfigurationRequest.
+        r"""Sets the x_language of this SwitchGaussMySqlConfigurationRequest.
 
         语言。
 
@@ -78,7 +78,7 @@ class SwitchGaussMySqlConfigurationRequest:
 
     @property
     def configuration_id(self):
-        """Gets the configuration_id of this SwitchGaussMySqlConfigurationRequest.
+        r"""Gets the configuration_id of this SwitchGaussMySqlConfigurationRequest.
 
         参数模板ID。
 
@@ -89,7 +89,7 @@ class SwitchGaussMySqlConfigurationRequest:
 
     @configuration_id.setter
     def configuration_id(self, configuration_id):
-        """Sets the configuration_id of this SwitchGaussMySqlConfigurationRequest.
+        r"""Sets the configuration_id of this SwitchGaussMySqlConfigurationRequest.
 
         参数模板ID。
 
@@ -100,7 +100,7 @@ class SwitchGaussMySqlConfigurationRequest:
 
     @property
     def body(self):
-        """Gets the body of this SwitchGaussMySqlConfigurationRequest.
+        r"""Gets the body of this SwitchGaussMySqlConfigurationRequest.
 
         :return: The body of this SwitchGaussMySqlConfigurationRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ApplyConfigurationRequestBody`
@@ -109,7 +109,7 @@ class SwitchGaussMySqlConfigurationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SwitchGaussMySqlConfigurationRequest.
+        r"""Sets the body of this SwitchGaussMySqlConfigurationRequest.
 
         :param body: The body of this SwitchGaussMySqlConfigurationRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.ApplyConfigurationRequestBody`

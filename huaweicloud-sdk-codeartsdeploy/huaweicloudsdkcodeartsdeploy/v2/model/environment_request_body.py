@@ -33,7 +33,7 @@ class EnvironmentRequestBody:
     }
 
     def __init__(self, project_id=None, name=None, deploy_type=None, os=None, description=None):
-        """EnvironmentRequestBody
+        r"""EnvironmentRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class EnvironmentRequestBody:
 
     @property
     def project_id(self):
-        """Gets the project_id of this EnvironmentRequestBody.
+        r"""Gets the project_id of this EnvironmentRequestBody.
 
         项目id
 
@@ -78,7 +78,7 @@ class EnvironmentRequestBody:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this EnvironmentRequestBody.
+        r"""Sets the project_id of this EnvironmentRequestBody.
 
         项目id
 
@@ -89,7 +89,7 @@ class EnvironmentRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this EnvironmentRequestBody.
+        r"""Gets the name of this EnvironmentRequestBody.
 
         环境名称
 
@@ -100,7 +100,7 @@ class EnvironmentRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EnvironmentRequestBody.
+        r"""Sets the name of this EnvironmentRequestBody.
 
         环境名称
 
@@ -111,7 +111,7 @@ class EnvironmentRequestBody:
 
     @property
     def deploy_type(self):
-        """Gets the deploy_type of this EnvironmentRequestBody.
+        r"""Gets the deploy_type of this EnvironmentRequestBody.
 
         部署类型：0表示主机, 1表示kubernetes
 
@@ -122,7 +122,7 @@ class EnvironmentRequestBody:
 
     @deploy_type.setter
     def deploy_type(self, deploy_type):
-        """Sets the deploy_type of this EnvironmentRequestBody.
+        r"""Sets the deploy_type of this EnvironmentRequestBody.
 
         部署类型：0表示主机, 1表示kubernetes
 
@@ -133,7 +133,7 @@ class EnvironmentRequestBody:
 
     @property
     def os(self):
-        """Gets the os of this EnvironmentRequestBody.
+        r"""Gets the os of this EnvironmentRequestBody.
 
         操作系统：windows|linux，需要和主机集群保持一致
 
@@ -144,7 +144,7 @@ class EnvironmentRequestBody:
 
     @os.setter
     def os(self, os):
-        """Sets the os of this EnvironmentRequestBody.
+        r"""Sets the os of this EnvironmentRequestBody.
 
         操作系统：windows|linux，需要和主机集群保持一致
 
@@ -155,7 +155,7 @@ class EnvironmentRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this EnvironmentRequestBody.
+        r"""Gets the description of this EnvironmentRequestBody.
 
         环境描述
 
@@ -166,7 +166,7 @@ class EnvironmentRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EnvironmentRequestBody.
+        r"""Sets the description of this EnvironmentRequestBody.
 
         环境描述
 

@@ -31,7 +31,7 @@ class ListJobInfoDetailRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, start_time=None, end_time=None):
-        """ListJobInfoDetailRequest
+        r"""ListJobInfoDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListJobInfoDetailRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListJobInfoDetailRequest.
+        r"""Gets the x_language of this ListJobInfoDetailRequest.
 
         语言
 
@@ -73,7 +73,7 @@ class ListJobInfoDetailRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListJobInfoDetailRequest.
+        r"""Sets the x_language of this ListJobInfoDetailRequest.
 
         语言
 
@@ -84,7 +84,7 @@ class ListJobInfoDetailRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListJobInfoDetailRequest.
+        r"""Gets the instance_id of this ListJobInfoDetailRequest.
 
         实例ID。
 
@@ -95,7 +95,7 @@ class ListJobInfoDetailRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListJobInfoDetailRequest.
+        r"""Sets the instance_id of this ListJobInfoDetailRequest.
 
         实例ID。
 
@@ -106,7 +106,7 @@ class ListJobInfoDetailRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListJobInfoDetailRequest.
+        r"""Gets the start_time of this ListJobInfoDetailRequest.
 
         开始时间，格式为UTC时间戳。
 
@@ -117,7 +117,7 @@ class ListJobInfoDetailRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListJobInfoDetailRequest.
+        r"""Sets the start_time of this ListJobInfoDetailRequest.
 
         开始时间，格式为UTC时间戳。
 
@@ -128,7 +128,7 @@ class ListJobInfoDetailRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListJobInfoDetailRequest.
+        r"""Gets the end_time of this ListJobInfoDetailRequest.
 
         结束时间，格式为UTC时间戳。
 
@@ -139,7 +139,7 @@ class ListJobInfoDetailRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListJobInfoDetailRequest.
+        r"""Sets the end_time of this ListJobInfoDetailRequest.
 
         结束时间，格式为UTC时间戳。
 

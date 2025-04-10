@@ -27,7 +27,7 @@ class RebootCbhRequestBody:
     }
 
     def __init__(self, server_id=None, reboot_type=None):
-        """RebootCbhRequestBody
+        r"""RebootCbhRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class RebootCbhRequestBody:
 
     @property
     def server_id(self):
-        """Gets the server_id of this RebootCbhRequestBody.
+        r"""Gets the server_id of this RebootCbhRequestBody.
 
         云堡垒机实例ID，使用UUID格式表示。
 
@@ -59,7 +59,7 @@ class RebootCbhRequestBody:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this RebootCbhRequestBody.
+        r"""Sets the server_id of this RebootCbhRequestBody.
 
         云堡垒机实例ID，使用UUID格式表示。
 
@@ -70,7 +70,7 @@ class RebootCbhRequestBody:
 
     @property
     def reboot_type(self):
-        """Gets the reboot_type of this RebootCbhRequestBody.
+        r"""Gets the reboot_type of this RebootCbhRequestBody.
 
         重启方式，不区分大小写。 - SOFT：普通重启，关闭虚拟机服务 - HARD：强制重启，重启虚拟机
 
@@ -81,7 +81,7 @@ class RebootCbhRequestBody:
 
     @reboot_type.setter
     def reboot_type(self, reboot_type):
-        """Sets the reboot_type of this RebootCbhRequestBody.
+        r"""Sets the reboot_type of this RebootCbhRequestBody.
 
         重启方式，不区分大小写。 - SOFT：普通重启，关闭虚拟机服务 - HARD：强制重启，重启虚拟机
 

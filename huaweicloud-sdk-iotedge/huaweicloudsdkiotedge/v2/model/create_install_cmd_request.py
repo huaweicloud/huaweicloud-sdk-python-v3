@@ -29,7 +29,7 @@ class CreateInstallCmdRequest:
     }
 
     def __init__(self, edge_node_id=None, arch=None, body=None):
-        """CreateInstallCmdRequest
+        r"""CreateInstallCmdRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateInstallCmdRequest:
 
     @property
     def edge_node_id(self):
-        """Gets the edge_node_id of this CreateInstallCmdRequest.
+        r"""Gets the edge_node_id of this CreateInstallCmdRequest.
 
         边缘节点ID
 
@@ -66,7 +66,7 @@ class CreateInstallCmdRequest:
 
     @edge_node_id.setter
     def edge_node_id(self, edge_node_id):
-        """Sets the edge_node_id of this CreateInstallCmdRequest.
+        r"""Sets the edge_node_id of this CreateInstallCmdRequest.
 
         边缘节点ID
 
@@ -77,7 +77,7 @@ class CreateInstallCmdRequest:
 
     @property
     def arch(self):
-        """Gets the arch of this CreateInstallCmdRequest.
+        r"""Gets the arch of this CreateInstallCmdRequest.
 
         节点架构
 
@@ -88,7 +88,7 @@ class CreateInstallCmdRequest:
 
     @arch.setter
     def arch(self, arch):
-        """Sets the arch of this CreateInstallCmdRequest.
+        r"""Sets the arch of this CreateInstallCmdRequest.
 
         节点架构
 
@@ -99,7 +99,7 @@ class CreateInstallCmdRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateInstallCmdRequest.
+        r"""Gets the body of this CreateInstallCmdRequest.
 
         :return: The body of this CreateInstallCmdRequest.
         :rtype: :class:`huaweicloudsdkiotedge.v2.CreateInstallCmdRequestDTO`
@@ -108,7 +108,7 @@ class CreateInstallCmdRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateInstallCmdRequest.
+        r"""Sets the body of this CreateInstallCmdRequest.
 
         :param body: The body of this CreateInstallCmdRequest.
         :type body: :class:`huaweicloudsdkiotedge.v2.CreateInstallCmdRequestDTO`

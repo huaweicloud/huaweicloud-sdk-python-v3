@@ -27,7 +27,7 @@ class UpgradeLoadbalancerRequest:
     }
 
     def __init__(self, loadbalancer_id=None, body=None):
-        """UpgradeLoadbalancerRequest
+        r"""UpgradeLoadbalancerRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpgradeLoadbalancerRequest:
 
     @property
     def loadbalancer_id(self):
-        """Gets the loadbalancer_id of this UpgradeLoadbalancerRequest.
+        r"""Gets the loadbalancer_id of this UpgradeLoadbalancerRequest.
 
         负载均衡器ID。
 
@@ -60,7 +60,7 @@ class UpgradeLoadbalancerRequest:
 
     @loadbalancer_id.setter
     def loadbalancer_id(self, loadbalancer_id):
-        """Sets the loadbalancer_id of this UpgradeLoadbalancerRequest.
+        r"""Sets the loadbalancer_id of this UpgradeLoadbalancerRequest.
 
         负载均衡器ID。
 
@@ -71,7 +71,7 @@ class UpgradeLoadbalancerRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpgradeLoadbalancerRequest.
+        r"""Gets the body of this UpgradeLoadbalancerRequest.
 
         :return: The body of this UpgradeLoadbalancerRequest.
         :rtype: :class:`huaweicloudsdkelb.v3.UpgradeV3RequestBody`
@@ -80,7 +80,7 @@ class UpgradeLoadbalancerRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpgradeLoadbalancerRequest.
+        r"""Sets the body of this UpgradeLoadbalancerRequest.
 
         :param body: The body of this UpgradeLoadbalancerRequest.
         :type body: :class:`huaweicloudsdkelb.v3.UpgradeV3RequestBody`

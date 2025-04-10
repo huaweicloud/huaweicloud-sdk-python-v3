@@ -34,7 +34,7 @@ class DeleteBasicAwByIdResponse(SdkResponse):
     }
 
     def __init__(self, code=None, error=None, reason=None, result=None, status=None):
-        """DeleteBasicAwByIdResponse
+        r"""DeleteBasicAwByIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class DeleteBasicAwByIdResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this DeleteBasicAwByIdResponse.
+        r"""Gets the code of this DeleteBasicAwByIdResponse.
 
         错误码
 
@@ -83,7 +83,7 @@ class DeleteBasicAwByIdResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this DeleteBasicAwByIdResponse.
+        r"""Sets the code of this DeleteBasicAwByIdResponse.
 
         错误码
 
@@ -94,7 +94,7 @@ class DeleteBasicAwByIdResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this DeleteBasicAwByIdResponse.
+        r"""Gets the error of this DeleteBasicAwByIdResponse.
 
         :return: The error of this DeleteBasicAwByIdResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CommonResponseErrorString`
@@ -103,7 +103,7 @@ class DeleteBasicAwByIdResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this DeleteBasicAwByIdResponse.
+        r"""Sets the error of this DeleteBasicAwByIdResponse.
 
         :param error: The error of this DeleteBasicAwByIdResponse.
         :type error: :class:`huaweicloudsdkcloudtest.v1.CommonResponseErrorString`
@@ -112,7 +112,7 @@ class DeleteBasicAwByIdResponse(SdkResponse):
 
     @property
     def reason(self):
-        """Gets the reason of this DeleteBasicAwByIdResponse.
+        r"""Gets the reason of this DeleteBasicAwByIdResponse.
 
         失败原因
 
@@ -123,7 +123,7 @@ class DeleteBasicAwByIdResponse(SdkResponse):
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this DeleteBasicAwByIdResponse.
+        r"""Sets the reason of this DeleteBasicAwByIdResponse.
 
         失败原因
 
@@ -134,7 +134,7 @@ class DeleteBasicAwByIdResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this DeleteBasicAwByIdResponse.
+        r"""Gets the result of this DeleteBasicAwByIdResponse.
 
         结果
 
@@ -145,7 +145,7 @@ class DeleteBasicAwByIdResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this DeleteBasicAwByIdResponse.
+        r"""Sets the result of this DeleteBasicAwByIdResponse.
 
         结果
 
@@ -156,7 +156,7 @@ class DeleteBasicAwByIdResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this DeleteBasicAwByIdResponse.
+        r"""Gets the status of this DeleteBasicAwByIdResponse.
 
         状态
 
@@ -167,7 +167,7 @@ class DeleteBasicAwByIdResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DeleteBasicAwByIdResponse.
+        r"""Sets the status of this DeleteBasicAwByIdResponse.
 
         状态
 

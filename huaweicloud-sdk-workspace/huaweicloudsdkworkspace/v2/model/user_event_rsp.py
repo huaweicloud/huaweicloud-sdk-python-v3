@@ -55,7 +55,7 @@ class UserEventRsp:
     }
 
     def __init__(self, project_id=None, username=None, workspace_id=None, event_trace_id=None, event_type=None, event_time=None, resource_type=None, resource_id=None, resource_name=None, client_type=None, client_ip=None, client_mac=None, source_ip=None, is_success=None, error_code=None, error_msg=None):
-        """UserEventRsp
+        r"""UserEventRsp
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class UserEventRsp:
 
     @property
     def project_id(self):
-        """Gets the project_id of this UserEventRsp.
+        r"""Gets the project_id of this UserEventRsp.
 
         项目id
 
@@ -159,7 +159,7 @@ class UserEventRsp:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UserEventRsp.
+        r"""Sets the project_id of this UserEventRsp.
 
         项目id
 
@@ -170,7 +170,7 @@ class UserEventRsp:
 
     @property
     def username(self):
-        """Gets the username of this UserEventRsp.
+        r"""Gets the username of this UserEventRsp.
 
         用户名
 
@@ -181,7 +181,7 @@ class UserEventRsp:
 
     @username.setter
     def username(self, username):
-        """Sets the username of this UserEventRsp.
+        r"""Sets the username of this UserEventRsp.
 
         用户名
 
@@ -192,7 +192,7 @@ class UserEventRsp:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this UserEventRsp.
+        r"""Gets the workspace_id of this UserEventRsp.
 
         企业id
 
@@ -203,7 +203,7 @@ class UserEventRsp:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this UserEventRsp.
+        r"""Sets the workspace_id of this UserEventRsp.
 
         企业id
 
@@ -214,7 +214,7 @@ class UserEventRsp:
 
     @property
     def event_trace_id(self):
-        """Gets the event_trace_id of this UserEventRsp.
+        r"""Gets the event_trace_id of this UserEventRsp.
 
         事件之间的关联id
 
@@ -225,7 +225,7 @@ class UserEventRsp:
 
     @event_trace_id.setter
     def event_trace_id(self, event_trace_id):
-        """Sets the event_trace_id of this UserEventRsp.
+        r"""Sets the event_trace_id of this UserEventRsp.
 
         事件之间的关联id
 
@@ -236,7 +236,7 @@ class UserEventRsp:
 
     @property
     def event_type(self):
-        """Gets the event_type of this UserEventRsp.
+        r"""Gets the event_type of this UserEventRsp.
 
         事件类型
 
@@ -247,7 +247,7 @@ class UserEventRsp:
 
     @event_type.setter
     def event_type(self, event_type):
-        """Sets the event_type of this UserEventRsp.
+        r"""Sets the event_type of this UserEventRsp.
 
         事件类型
 
@@ -258,7 +258,7 @@ class UserEventRsp:
 
     @property
     def event_time(self):
-        """Gets the event_time of this UserEventRsp.
+        r"""Gets the event_time of this UserEventRsp.
 
         事件时间，UTC时间
 
@@ -269,7 +269,7 @@ class UserEventRsp:
 
     @event_time.setter
     def event_time(self, event_time):
-        """Sets the event_time of this UserEventRsp.
+        r"""Sets the event_time of this UserEventRsp.
 
         事件时间，UTC时间
 
@@ -280,7 +280,7 @@ class UserEventRsp:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this UserEventRsp.
+        r"""Gets the resource_type of this UserEventRsp.
 
         操作对象类型
 
@@ -291,7 +291,7 @@ class UserEventRsp:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this UserEventRsp.
+        r"""Sets the resource_type of this UserEventRsp.
 
         操作对象类型
 
@@ -302,7 +302,7 @@ class UserEventRsp:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this UserEventRsp.
+        r"""Gets the resource_id of this UserEventRsp.
 
         操作对象id
 
@@ -313,7 +313,7 @@ class UserEventRsp:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this UserEventRsp.
+        r"""Sets the resource_id of this UserEventRsp.
 
         操作对象id
 
@@ -324,7 +324,7 @@ class UserEventRsp:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this UserEventRsp.
+        r"""Gets the resource_name of this UserEventRsp.
 
         操作对象名称
 
@@ -335,7 +335,7 @@ class UserEventRsp:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this UserEventRsp.
+        r"""Sets the resource_name of this UserEventRsp.
 
         操作对象名称
 
@@ -346,7 +346,7 @@ class UserEventRsp:
 
     @property
     def client_type(self):
-        """Gets the client_type of this UserEventRsp.
+        r"""Gets the client_type of this UserEventRsp.
 
         客户端类型
 
@@ -357,7 +357,7 @@ class UserEventRsp:
 
     @client_type.setter
     def client_type(self, client_type):
-        """Sets the client_type of this UserEventRsp.
+        r"""Sets the client_type of this UserEventRsp.
 
         客户端类型
 
@@ -368,7 +368,7 @@ class UserEventRsp:
 
     @property
     def client_ip(self):
-        """Gets the client_ip of this UserEventRsp.
+        r"""Gets the client_ip of this UserEventRsp.
 
         客户端ip
 
@@ -379,7 +379,7 @@ class UserEventRsp:
 
     @client_ip.setter
     def client_ip(self, client_ip):
-        """Sets the client_ip of this UserEventRsp.
+        r"""Sets the client_ip of this UserEventRsp.
 
         客户端ip
 
@@ -390,7 +390,7 @@ class UserEventRsp:
 
     @property
     def client_mac(self):
-        """Gets the client_mac of this UserEventRsp.
+        r"""Gets the client_mac of this UserEventRsp.
 
         客户端mac地址
 
@@ -401,7 +401,7 @@ class UserEventRsp:
 
     @client_mac.setter
     def client_mac(self, client_mac):
-        """Sets the client_mac of this UserEventRsp.
+        r"""Sets the client_mac of this UserEventRsp.
 
         客户端mac地址
 
@@ -412,7 +412,7 @@ class UserEventRsp:
 
     @property
     def source_ip(self):
-        """Gets the source_ip of this UserEventRsp.
+        r"""Gets the source_ip of this UserEventRsp.
 
         操作用户源ip
 
@@ -423,7 +423,7 @@ class UserEventRsp:
 
     @source_ip.setter
     def source_ip(self, source_ip):
-        """Sets the source_ip of this UserEventRsp.
+        r"""Sets the source_ip of this UserEventRsp.
 
         操作用户源ip
 
@@ -434,7 +434,7 @@ class UserEventRsp:
 
     @property
     def is_success(self):
-        """Gets the is_success of this UserEventRsp.
+        r"""Gets the is_success of this UserEventRsp.
 
         是否成功
 
@@ -445,7 +445,7 @@ class UserEventRsp:
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this UserEventRsp.
+        r"""Sets the is_success of this UserEventRsp.
 
         是否成功
 
@@ -456,7 +456,7 @@ class UserEventRsp:
 
     @property
     def error_code(self):
-        """Gets the error_code of this UserEventRsp.
+        r"""Gets the error_code of this UserEventRsp.
 
         错误码
 
@@ -467,7 +467,7 @@ class UserEventRsp:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this UserEventRsp.
+        r"""Sets the error_code of this UserEventRsp.
 
         错误码
 
@@ -478,7 +478,7 @@ class UserEventRsp:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this UserEventRsp.
+        r"""Gets the error_msg of this UserEventRsp.
 
         错误描述
 
@@ -489,7 +489,7 @@ class UserEventRsp:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this UserEventRsp.
+        r"""Sets the error_msg of this UserEventRsp.
 
         错误描述
 

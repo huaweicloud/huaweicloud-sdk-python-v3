@@ -37,7 +37,7 @@ class ListSignatureKeysBindedToApiV2Request:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, api_id=None, sign_id=None, sign_name=None, env_id=None):
-        """ListSignatureKeysBindedToApiV2Request
+        r"""ListSignatureKeysBindedToApiV2Request
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class ListSignatureKeysBindedToApiV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListSignatureKeysBindedToApiV2Request.
+        r"""Gets the instance_id of this ListSignatureKeysBindedToApiV2Request.
 
         实例ID
 
@@ -94,7 +94,7 @@ class ListSignatureKeysBindedToApiV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListSignatureKeysBindedToApiV2Request.
+        r"""Sets the instance_id of this ListSignatureKeysBindedToApiV2Request.
 
         实例ID
 
@@ -105,7 +105,7 @@ class ListSignatureKeysBindedToApiV2Request:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSignatureKeysBindedToApiV2Request.
+        r"""Gets the offset of this ListSignatureKeysBindedToApiV2Request.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -116,7 +116,7 @@ class ListSignatureKeysBindedToApiV2Request:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSignatureKeysBindedToApiV2Request.
+        r"""Sets the offset of this ListSignatureKeysBindedToApiV2Request.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -127,7 +127,7 @@ class ListSignatureKeysBindedToApiV2Request:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSignatureKeysBindedToApiV2Request.
+        r"""Gets the limit of this ListSignatureKeysBindedToApiV2Request.
 
         每页显示的条目数量
 
@@ -138,7 +138,7 @@ class ListSignatureKeysBindedToApiV2Request:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSignatureKeysBindedToApiV2Request.
+        r"""Sets the limit of this ListSignatureKeysBindedToApiV2Request.
 
         每页显示的条目数量
 
@@ -149,7 +149,7 @@ class ListSignatureKeysBindedToApiV2Request:
 
     @property
     def api_id(self):
-        """Gets the api_id of this ListSignatureKeysBindedToApiV2Request.
+        r"""Gets the api_id of this ListSignatureKeysBindedToApiV2Request.
 
         API的编号
 
@@ -160,7 +160,7 @@ class ListSignatureKeysBindedToApiV2Request:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this ListSignatureKeysBindedToApiV2Request.
+        r"""Sets the api_id of this ListSignatureKeysBindedToApiV2Request.
 
         API的编号
 
@@ -171,7 +171,7 @@ class ListSignatureKeysBindedToApiV2Request:
 
     @property
     def sign_id(self):
-        """Gets the sign_id of this ListSignatureKeysBindedToApiV2Request.
+        r"""Gets the sign_id of this ListSignatureKeysBindedToApiV2Request.
 
         签名密钥的编号
 
@@ -182,7 +182,7 @@ class ListSignatureKeysBindedToApiV2Request:
 
     @sign_id.setter
     def sign_id(self, sign_id):
-        """Sets the sign_id of this ListSignatureKeysBindedToApiV2Request.
+        r"""Sets the sign_id of this ListSignatureKeysBindedToApiV2Request.
 
         签名密钥的编号
 
@@ -193,7 +193,7 @@ class ListSignatureKeysBindedToApiV2Request:
 
     @property
     def sign_name(self):
-        """Gets the sign_name of this ListSignatureKeysBindedToApiV2Request.
+        r"""Gets the sign_name of this ListSignatureKeysBindedToApiV2Request.
 
         签名密钥的名称
 
@@ -204,7 +204,7 @@ class ListSignatureKeysBindedToApiV2Request:
 
     @sign_name.setter
     def sign_name(self, sign_name):
-        """Sets the sign_name of this ListSignatureKeysBindedToApiV2Request.
+        r"""Sets the sign_name of this ListSignatureKeysBindedToApiV2Request.
 
         签名密钥的名称
 
@@ -215,7 +215,7 @@ class ListSignatureKeysBindedToApiV2Request:
 
     @property
     def env_id(self):
-        """Gets the env_id of this ListSignatureKeysBindedToApiV2Request.
+        r"""Gets the env_id of this ListSignatureKeysBindedToApiV2Request.
 
         环境编号
 
@@ -226,7 +226,7 @@ class ListSignatureKeysBindedToApiV2Request:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this ListSignatureKeysBindedToApiV2Request.
+        r"""Sets the env_id of this ListSignatureKeysBindedToApiV2Request.
 
         环境编号
 

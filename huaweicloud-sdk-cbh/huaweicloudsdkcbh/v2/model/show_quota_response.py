@@ -28,7 +28,7 @@ class ShowQuotaResponse(SdkResponse):
     }
 
     def __init__(self, quota=None, quota_used=None):
-        """ShowQuotaResponse
+        r"""ShowQuotaResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowQuotaResponse(SdkResponse):
 
     @property
     def quota(self):
-        """Gets the quota of this ShowQuotaResponse.
+        r"""Gets the quota of this ShowQuotaResponse.
 
         云堡垒机实例最大创建数量。
 
@@ -62,7 +62,7 @@ class ShowQuotaResponse(SdkResponse):
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this ShowQuotaResponse.
+        r"""Sets the quota of this ShowQuotaResponse.
 
         云堡垒机实例最大创建数量。
 
@@ -73,7 +73,7 @@ class ShowQuotaResponse(SdkResponse):
 
     @property
     def quota_used(self):
-        """Gets the quota_used of this ShowQuotaResponse.
+        r"""Gets the quota_used of this ShowQuotaResponse.
 
         当前云堡垒机实例创建个数。
 
@@ -84,7 +84,7 @@ class ShowQuotaResponse(SdkResponse):
 
     @quota_used.setter
     def quota_used(self, quota_used):
-        """Sets the quota_used of this ShowQuotaResponse.
+        r"""Sets the quota_used of this ShowQuotaResponse.
 
         当前云堡垒机实例创建个数。
 

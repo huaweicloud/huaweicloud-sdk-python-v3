@@ -31,7 +31,7 @@ class HostVulInfoAppList:
     }
 
     def __init__(self, app_name=None, app_version=None, upgrade_version=None, app_path=None):
-        """HostVulInfoAppList
+        r"""HostVulInfoAppList
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class HostVulInfoAppList:
 
     @property
     def app_name(self):
-        """Gets the app_name of this HostVulInfoAppList.
+        r"""Gets the app_name of this HostVulInfoAppList.
 
         软件名称
 
@@ -75,7 +75,7 @@ class HostVulInfoAppList:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this HostVulInfoAppList.
+        r"""Sets the app_name of this HostVulInfoAppList.
 
         软件名称
 
@@ -86,7 +86,7 @@ class HostVulInfoAppList:
 
     @property
     def app_version(self):
-        """Gets the app_version of this HostVulInfoAppList.
+        r"""Gets the app_version of this HostVulInfoAppList.
 
         软件版本
 
@@ -97,7 +97,7 @@ class HostVulInfoAppList:
 
     @app_version.setter
     def app_version(self, app_version):
-        """Sets the app_version of this HostVulInfoAppList.
+        r"""Sets the app_version of this HostVulInfoAppList.
 
         软件版本
 
@@ -108,7 +108,7 @@ class HostVulInfoAppList:
 
     @property
     def upgrade_version(self):
-        """Gets the upgrade_version of this HostVulInfoAppList.
+        r"""Gets the upgrade_version of this HostVulInfoAppList.
 
         修复漏洞软件需要升级到的版本
 
@@ -119,7 +119,7 @@ class HostVulInfoAppList:
 
     @upgrade_version.setter
     def upgrade_version(self, upgrade_version):
-        """Sets the upgrade_version of this HostVulInfoAppList.
+        r"""Sets the upgrade_version of this HostVulInfoAppList.
 
         修复漏洞软件需要升级到的版本
 
@@ -130,7 +130,7 @@ class HostVulInfoAppList:
 
     @property
     def app_path(self):
-        """Gets the app_path of this HostVulInfoAppList.
+        r"""Gets the app_path of this HostVulInfoAppList.
 
         应用软件的路径（只有应用漏洞有该字段）
 
@@ -141,7 +141,7 @@ class HostVulInfoAppList:
 
     @app_path.setter
     def app_path(self, app_path):
-        """Sets the app_path of this HostVulInfoAppList.
+        r"""Sets the app_path of this HostVulInfoAppList.
 
         应用软件的路径（只有应用漏洞有该字段）
 

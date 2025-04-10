@@ -29,7 +29,7 @@ class CreateTtsAuditionRequest:
     }
 
     def __init__(self, x_request_id=None, x_app_user_id=None, body=None):
-        """CreateTtsAuditionRequest
+        r"""CreateTtsAuditionRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CreateTtsAuditionRequest:
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreateTtsAuditionRequest.
+        r"""Gets the x_request_id of this CreateTtsAuditionRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
 
@@ -68,7 +68,7 @@ class CreateTtsAuditionRequest:
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreateTtsAuditionRequest.
+        r"""Sets the x_request_id of this CreateTtsAuditionRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用uuId，若不携带，则后台自动生成
 
@@ -79,7 +79,7 @@ class CreateTtsAuditionRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this CreateTtsAuditionRequest.
+        r"""Gets the x_app_user_id of this CreateTtsAuditionRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -90,7 +90,7 @@ class CreateTtsAuditionRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this CreateTtsAuditionRequest.
+        r"""Sets the x_app_user_id of this CreateTtsAuditionRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -101,7 +101,7 @@ class CreateTtsAuditionRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateTtsAuditionRequest.
+        r"""Gets the body of this CreateTtsAuditionRequest.
 
         :return: The body of this CreateTtsAuditionRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateTtsAuditionRequestBody`
@@ -110,7 +110,7 @@ class CreateTtsAuditionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTtsAuditionRequest.
+        r"""Sets the body of this CreateTtsAuditionRequest.
 
         :param body: The body of this CreateTtsAuditionRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.CreateTtsAuditionRequestBody`

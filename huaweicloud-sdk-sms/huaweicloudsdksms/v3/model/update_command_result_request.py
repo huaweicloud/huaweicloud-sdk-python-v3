@@ -27,7 +27,7 @@ class UpdateCommandResultRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """UpdateCommandResultRequest
+        r"""UpdateCommandResultRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateCommandResultRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this UpdateCommandResultRequest.
+        r"""Gets the server_id of this UpdateCommandResultRequest.
 
         上报命令执行结果的命令所对应的服务端ID
 
@@ -60,7 +60,7 @@ class UpdateCommandResultRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this UpdateCommandResultRequest.
+        r"""Sets the server_id of this UpdateCommandResultRequest.
 
         上报命令执行结果的命令所对应的服务端ID
 
@@ -71,7 +71,7 @@ class UpdateCommandResultRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateCommandResultRequest.
+        r"""Gets the body of this UpdateCommandResultRequest.
 
         :return: The body of this UpdateCommandResultRequest.
         :rtype: :class:`huaweicloudsdksms.v3.CommandBody`
@@ -80,7 +80,7 @@ class UpdateCommandResultRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateCommandResultRequest.
+        r"""Sets the body of this UpdateCommandResultRequest.
 
         :param body: The body of this UpdateCommandResultRequest.
         :type body: :class:`huaweicloudsdksms.v3.CommandBody`

@@ -39,7 +39,7 @@ class ReleaseRepository:
     }
 
     def __init__(self, id=None, name=None, download_path=None, size=None, category_name=None, file_type=None, created=None, updated=None):
-        """ReleaseRepository
+        r"""ReleaseRepository
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ReleaseRepository:
 
     @property
     def id(self):
-        """Gets the id of this ReleaseRepository.
+        r"""Gets the id of this ReleaseRepository.
 
         软件包id
 
@@ -103,7 +103,7 @@ class ReleaseRepository:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ReleaseRepository.
+        r"""Sets the id of this ReleaseRepository.
 
         软件包id
 
@@ -114,7 +114,7 @@ class ReleaseRepository:
 
     @property
     def name(self):
-        """Gets the name of this ReleaseRepository.
+        r"""Gets the name of this ReleaseRepository.
 
         软件包名称
 
@@ -125,7 +125,7 @@ class ReleaseRepository:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ReleaseRepository.
+        r"""Sets the name of this ReleaseRepository.
 
         软件包名称
 
@@ -136,7 +136,7 @@ class ReleaseRepository:
 
     @property
     def download_path(self):
-        """Gets the download_path of this ReleaseRepository.
+        r"""Gets the download_path of this ReleaseRepository.
 
         软件包下载地址
 
@@ -147,7 +147,7 @@ class ReleaseRepository:
 
     @download_path.setter
     def download_path(self, download_path):
-        """Sets the download_path of this ReleaseRepository.
+        r"""Sets the download_path of this ReleaseRepository.
 
         软件包下载地址
 
@@ -158,7 +158,7 @@ class ReleaseRepository:
 
     @property
     def size(self):
-        """Gets the size of this ReleaseRepository.
+        r"""Gets the size of this ReleaseRepository.
 
         软件包大小
 
@@ -169,7 +169,7 @@ class ReleaseRepository:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ReleaseRepository.
+        r"""Sets the size of this ReleaseRepository.
 
         软件包大小
 
@@ -180,7 +180,7 @@ class ReleaseRepository:
 
     @property
     def category_name(self):
-        """Gets the category_name of this ReleaseRepository.
+        r"""Gets the category_name of this ReleaseRepository.
 
         软件包类型名称
 
@@ -191,7 +191,7 @@ class ReleaseRepository:
 
     @category_name.setter
     def category_name(self, category_name):
-        """Sets the category_name of this ReleaseRepository.
+        r"""Sets the category_name of this ReleaseRepository.
 
         软件包类型名称
 
@@ -202,7 +202,7 @@ class ReleaseRepository:
 
     @property
     def file_type(self):
-        """Gets the file_type of this ReleaseRepository.
+        r"""Gets the file_type of this ReleaseRepository.
 
         文件类型
 
@@ -213,7 +213,7 @@ class ReleaseRepository:
 
     @file_type.setter
     def file_type(self, file_type):
-        """Sets the file_type of this ReleaseRepository.
+        r"""Sets the file_type of this ReleaseRepository.
 
         文件类型
 
@@ -224,7 +224,7 @@ class ReleaseRepository:
 
     @property
     def created(self):
-        """Gets the created of this ReleaseRepository.
+        r"""Gets the created of this ReleaseRepository.
 
         创建时间
 
@@ -235,7 +235,7 @@ class ReleaseRepository:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this ReleaseRepository.
+        r"""Sets the created of this ReleaseRepository.
 
         创建时间
 
@@ -246,7 +246,7 @@ class ReleaseRepository:
 
     @property
     def updated(self):
-        """Gets the updated of this ReleaseRepository.
+        r"""Gets the updated of this ReleaseRepository.
 
         修改时间
 
@@ -257,7 +257,7 @@ class ReleaseRepository:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ReleaseRepository.
+        r"""Sets the updated of this ReleaseRepository.
 
         修改时间
 

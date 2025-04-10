@@ -27,7 +27,7 @@ class PathType:
     }
 
     def __init__(self):
-        """PathType
+        r"""PathType
 
         The model defined in huaweicloud sdk
 

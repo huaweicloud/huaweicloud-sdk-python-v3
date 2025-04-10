@@ -31,7 +31,7 @@ class UpgradeNodePool:
     }
 
     def __init__(self, kind=None, api_version=None, metadata=None, spec=None):
-        """UpgradeNodePool
+        r"""UpgradeNodePool
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class UpgradeNodePool:
 
     @property
     def kind(self):
-        """Gets the kind of this UpgradeNodePool.
+        r"""Gets the kind of this UpgradeNodePool.
 
         API类型，固定值“NodePool”。
 
@@ -74,7 +74,7 @@ class UpgradeNodePool:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this UpgradeNodePool.
+        r"""Sets the kind of this UpgradeNodePool.
 
         API类型，固定值“NodePool”。
 
@@ -85,7 +85,7 @@ class UpgradeNodePool:
 
     @property
     def api_version(self):
-        """Gets the api_version of this UpgradeNodePool.
+        r"""Gets the api_version of this UpgradeNodePool.
 
         API版本，固定值“v3”。
 
@@ -96,7 +96,7 @@ class UpgradeNodePool:
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this UpgradeNodePool.
+        r"""Sets the api_version of this UpgradeNodePool.
 
         API版本，固定值“v3”。
 
@@ -107,7 +107,7 @@ class UpgradeNodePool:
 
     @property
     def metadata(self):
-        """Gets the metadata of this UpgradeNodePool.
+        r"""Gets the metadata of this UpgradeNodePool.
 
         :return: The metadata of this UpgradeNodePool.
         :rtype: :class:`huaweicloudsdkcce.v3.NodePoolMetadata`
@@ -116,7 +116,7 @@ class UpgradeNodePool:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this UpgradeNodePool.
+        r"""Sets the metadata of this UpgradeNodePool.
 
         :param metadata: The metadata of this UpgradeNodePool.
         :type metadata: :class:`huaweicloudsdkcce.v3.NodePoolMetadata`
@@ -125,7 +125,7 @@ class UpgradeNodePool:
 
     @property
     def spec(self):
-        """Gets the spec of this UpgradeNodePool.
+        r"""Gets the spec of this UpgradeNodePool.
 
         :return: The spec of this UpgradeNodePool.
         :rtype: :class:`huaweicloudsdkcce.v3.NodePoolUpgradeSpec`
@@ -134,7 +134,7 @@ class UpgradeNodePool:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this UpgradeNodePool.
+        r"""Sets the spec of this UpgradeNodePool.
 
         :param spec: The spec of this UpgradeNodePool.
         :type spec: :class:`huaweicloudsdkcce.v3.NodePoolUpgradeSpec`

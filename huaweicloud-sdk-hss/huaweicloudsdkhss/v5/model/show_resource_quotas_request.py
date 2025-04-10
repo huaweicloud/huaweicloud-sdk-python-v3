@@ -31,13 +31,13 @@ class ShowResourceQuotasRequest:
     }
 
     def __init__(self, region=None, enterprise_project_id=None, version=None, charging_mode=None):
-        """ShowResourceQuotasRequest
+        r"""ShowResourceQuotasRequest
 
         The model defined in huaweicloud sdk
 
         :param region: Region ID
         :type region: str
-        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param version: 主机开通的版本，包含如下7种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise：容器版。
         :type version: str
@@ -64,7 +64,7 @@ class ShowResourceQuotasRequest:
 
     @property
     def region(self):
-        """Gets the region of this ShowResourceQuotasRequest.
+        r"""Gets the region of this ShowResourceQuotasRequest.
 
         Region ID
 
@@ -75,7 +75,7 @@ class ShowResourceQuotasRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ShowResourceQuotasRequest.
+        r"""Sets the region of this ShowResourceQuotasRequest.
 
         Region ID
 
@@ -86,9 +86,9 @@ class ShowResourceQuotasRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowResourceQuotasRequest.
+        r"""Gets the enterprise_project_id of this ShowResourceQuotasRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ShowResourceQuotasRequest.
         :rtype: str
@@ -97,9 +97,9 @@ class ShowResourceQuotasRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowResourceQuotasRequest.
+        r"""Sets the enterprise_project_id of this ShowResourceQuotasRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ShowResourceQuotasRequest.
         :type enterprise_project_id: str
@@ -108,7 +108,7 @@ class ShowResourceQuotasRequest:
 
     @property
     def version(self):
-        """Gets the version of this ShowResourceQuotasRequest.
+        r"""Gets the version of this ShowResourceQuotasRequest.
 
         主机开通的版本，包含如下7种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise：容器版。
 
@@ -119,7 +119,7 @@ class ShowResourceQuotasRequest:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowResourceQuotasRequest.
+        r"""Sets the version of this ShowResourceQuotasRequest.
 
         主机开通的版本，包含如下7种输入。   - hss.version.null ：无。   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。   - hss.version.container.enterprise：容器版。
 
@@ -130,7 +130,7 @@ class ShowResourceQuotasRequest:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this ShowResourceQuotasRequest.
+        r"""Gets the charging_mode of this ShowResourceQuotasRequest.
 
         收费模式，包含如下2种。   - packet_cycle ：包年/包月。   - on_demand ：按需。
 
@@ -141,7 +141,7 @@ class ShowResourceQuotasRequest:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this ShowResourceQuotasRequest.
+        r"""Sets the charging_mode of this ShowResourceQuotasRequest.
 
         收费模式，包含如下2种。   - packet_cycle ：包年/包月。   - on_demand ：按需。
 

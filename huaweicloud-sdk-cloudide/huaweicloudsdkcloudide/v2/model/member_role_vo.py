@@ -37,7 +37,7 @@ class MemberRoleVo:
     }
 
     def __init__(self, domain_id=None, extension_count=None, role=None, role_id=None, role_value=None, user_id=None, user_name=None):
-        """MemberRoleVo
+        r"""MemberRoleVo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class MemberRoleVo:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this MemberRoleVo.
+        r"""Gets the domain_id of this MemberRoleVo.
 
         租户ID
 
@@ -96,7 +96,7 @@ class MemberRoleVo:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this MemberRoleVo.
+        r"""Sets the domain_id of this MemberRoleVo.
 
         租户ID
 
@@ -107,7 +107,7 @@ class MemberRoleVo:
 
     @property
     def extension_count(self):
-        """Gets the extension_count of this MemberRoleVo.
+        r"""Gets the extension_count of this MemberRoleVo.
 
         插件数量
 
@@ -118,7 +118,7 @@ class MemberRoleVo:
 
     @extension_count.setter
     def extension_count(self, extension_count):
-        """Sets the extension_count of this MemberRoleVo.
+        r"""Sets the extension_count of this MemberRoleVo.
 
         插件数量
 
@@ -129,7 +129,7 @@ class MemberRoleVo:
 
     @property
     def role(self):
-        """Gets the role of this MemberRoleVo.
+        r"""Gets the role of this MemberRoleVo.
 
         角色名称
 
@@ -140,7 +140,7 @@ class MemberRoleVo:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this MemberRoleVo.
+        r"""Sets the role of this MemberRoleVo.
 
         角色名称
 
@@ -151,7 +151,7 @@ class MemberRoleVo:
 
     @property
     def role_id(self):
-        """Gets the role_id of this MemberRoleVo.
+        r"""Gets the role_id of this MemberRoleVo.
 
         角色ID
 
@@ -162,7 +162,7 @@ class MemberRoleVo:
 
     @role_id.setter
     def role_id(self, role_id):
-        """Sets the role_id of this MemberRoleVo.
+        r"""Sets the role_id of this MemberRoleVo.
 
         角色ID
 
@@ -173,7 +173,7 @@ class MemberRoleVo:
 
     @property
     def role_value(self):
-        """Gets the role_value of this MemberRoleVo.
+        r"""Gets the role_value of this MemberRoleVo.
 
         发布商或插件ID
 
@@ -184,7 +184,7 @@ class MemberRoleVo:
 
     @role_value.setter
     def role_value(self, role_value):
-        """Sets the role_value of this MemberRoleVo.
+        r"""Sets the role_value of this MemberRoleVo.
 
         发布商或插件ID
 
@@ -195,7 +195,7 @@ class MemberRoleVo:
 
     @property
     def user_id(self):
-        """Gets the user_id of this MemberRoleVo.
+        r"""Gets the user_id of this MemberRoleVo.
 
         用户ID
 
@@ -206,7 +206,7 @@ class MemberRoleVo:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this MemberRoleVo.
+        r"""Sets the user_id of this MemberRoleVo.
 
         用户ID
 
@@ -217,7 +217,7 @@ class MemberRoleVo:
 
     @property
     def user_name(self):
-        """Gets the user_name of this MemberRoleVo.
+        r"""Gets the user_name of this MemberRoleVo.
 
         用户名
 
@@ -228,7 +228,7 @@ class MemberRoleVo:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this MemberRoleVo.
+        r"""Sets the user_name of this MemberRoleVo.
 
         用户名
 

@@ -26,7 +26,7 @@ class ShowSlowLogDownloadResponse(SdkResponse):
     }
 
     def __init__(self, list=None):
-        """ShowSlowLogDownloadResponse
+        r"""ShowSlowLogDownloadResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowSlowLogDownloadResponse(SdkResponse):
 
     @property
     def list(self):
-        """Gets the list of this ShowSlowLogDownloadResponse.
+        r"""Gets the list of this ShowSlowLogDownloadResponse.
 
         慢日志下载信息列表
 
@@ -55,7 +55,7 @@ class ShowSlowLogDownloadResponse(SdkResponse):
 
     @list.setter
     def list(self, list):
-        """Sets the list of this ShowSlowLogDownloadResponse.
+        r"""Sets the list of this ShowSlowLogDownloadResponse.
 
         慢日志下载信息列表
 

@@ -32,7 +32,7 @@ class ListAvailableFlavorInfosResponse(SdkResponse):
     }
 
     def __init__(self, instance_id=None, instance_name=None, current_flavor=None, optional_flavors=None):
-        """ListAvailableFlavorInfosResponse
+        r"""ListAvailableFlavorInfosResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListAvailableFlavorInfosResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListAvailableFlavorInfosResponse.
+        r"""Gets the instance_id of this ListAvailableFlavorInfosResponse.
 
         实例id。
 
@@ -76,7 +76,7 @@ class ListAvailableFlavorInfosResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListAvailableFlavorInfosResponse.
+        r"""Sets the instance_id of this ListAvailableFlavorInfosResponse.
 
         实例id。
 
@@ -87,7 +87,7 @@ class ListAvailableFlavorInfosResponse(SdkResponse):
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this ListAvailableFlavorInfosResponse.
+        r"""Gets the instance_name of this ListAvailableFlavorInfosResponse.
 
         实例名称。
 
@@ -98,7 +98,7 @@ class ListAvailableFlavorInfosResponse(SdkResponse):
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this ListAvailableFlavorInfosResponse.
+        r"""Sets the instance_name of this ListAvailableFlavorInfosResponse.
 
         实例名称。
 
@@ -109,7 +109,7 @@ class ListAvailableFlavorInfosResponse(SdkResponse):
 
     @property
     def current_flavor(self):
-        """Gets the current_flavor of this ListAvailableFlavorInfosResponse.
+        r"""Gets the current_flavor of this ListAvailableFlavorInfosResponse.
 
         :return: The current_flavor of this ListAvailableFlavorInfosResponse.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ComputeFlavor`
@@ -118,7 +118,7 @@ class ListAvailableFlavorInfosResponse(SdkResponse):
 
     @current_flavor.setter
     def current_flavor(self, current_flavor):
-        """Sets the current_flavor of this ListAvailableFlavorInfosResponse.
+        r"""Sets the current_flavor of this ListAvailableFlavorInfosResponse.
 
         :param current_flavor: The current_flavor of this ListAvailableFlavorInfosResponse.
         :type current_flavor: :class:`huaweicloudsdkgaussdbfornosql.v3.ComputeFlavor`
@@ -127,7 +127,7 @@ class ListAvailableFlavorInfosResponse(SdkResponse):
 
     @property
     def optional_flavors(self):
-        """Gets the optional_flavors of this ListAvailableFlavorInfosResponse.
+        r"""Gets the optional_flavors of this ListAvailableFlavorInfosResponse.
 
         :return: The optional_flavors of this ListAvailableFlavorInfosResponse.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.OptionalFlavorsInfo`
@@ -136,7 +136,7 @@ class ListAvailableFlavorInfosResponse(SdkResponse):
 
     @optional_flavors.setter
     def optional_flavors(self, optional_flavors):
-        """Sets the optional_flavors of this ListAvailableFlavorInfosResponse.
+        r"""Sets the optional_flavors of this ListAvailableFlavorInfosResponse.
 
         :param optional_flavors: The optional_flavors of this ListAvailableFlavorInfosResponse.
         :type optional_flavors: :class:`huaweicloudsdkgaussdbfornosql.v3.OptionalFlavorsInfo`

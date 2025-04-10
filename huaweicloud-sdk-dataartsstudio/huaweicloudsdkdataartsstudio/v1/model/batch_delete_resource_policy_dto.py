@@ -25,7 +25,7 @@ class BatchDeleteResourcePolicyDTO:
     }
 
     def __init__(self, ids=None):
-        """BatchDeleteResourcePolicyDTO
+        r"""BatchDeleteResourcePolicyDTO
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDeleteResourcePolicyDTO:
 
     @property
     def ids(self):
-        """Gets the ids of this BatchDeleteResourcePolicyDTO.
+        r"""Gets the ids of this BatchDeleteResourcePolicyDTO.
 
         待删除资源权限策略id列表。
 
@@ -54,7 +54,7 @@ class BatchDeleteResourcePolicyDTO:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this BatchDeleteResourcePolicyDTO.
+        r"""Sets the ids of this BatchDeleteResourcePolicyDTO.
 
         待删除资源权限策略id列表。
 

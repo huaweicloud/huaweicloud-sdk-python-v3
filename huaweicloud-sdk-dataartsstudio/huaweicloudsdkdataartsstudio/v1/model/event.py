@@ -33,7 +33,7 @@ class Event:
     }
 
     def __init__(self, event_type=None, channel=None, fail_policy=None, concurrent=None, read_policy=None):
-        """Event
+        r"""Event
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class Event:
 
     @property
     def event_type(self):
-        """Gets the event_type of this Event.
+        r"""Gets the event_type of this Event.
 
         事件类型。 - KAFKA: 选择对应的连接名称与topic，当有新的kafka消息时将会触发作业运行一次 - DIS: 当前只支持监听DIS通道的新上报数据事件，每上报一条数据，触发作业运行一次。 - OBS: 选择要监听的OBS路径，如果该路径下有新增文件，则触发调度；新增的文件的路径名，可以通过变量Job.trigger.obsNewFiles引用。前提条件：该OBS路径已经配置DIS消息通知。
 
@@ -80,7 +80,7 @@ class Event:
 
     @event_type.setter
     def event_type(self, event_type):
-        """Sets the event_type of this Event.
+        r"""Sets the event_type of this Event.
 
         事件类型。 - KAFKA: 选择对应的连接名称与topic，当有新的kafka消息时将会触发作业运行一次 - DIS: 当前只支持监听DIS通道的新上报数据事件，每上报一条数据，触发作业运行一次。 - OBS: 选择要监听的OBS路径，如果该路径下有新增文件，则触发调度；新增的文件的路径名，可以通过变量Job.trigger.obsNewFiles引用。前提条件：该OBS路径已经配置DIS消息通知。
 
@@ -91,7 +91,7 @@ class Event:
 
     @property
     def channel(self):
-        """Gets the channel of this Event.
+        r"""Gets the channel of this Event.
 
         DIS通道名称。通过DIS管理控制台获取通道名称：登录管理控制台。单击“数据接入服务”，左侧列表选择“通道管理”。通道管理页面中列出了用户拥有的通道
 
@@ -102,7 +102,7 @@ class Event:
 
     @channel.setter
     def channel(self, channel):
-        """Sets the channel of this Event.
+        r"""Sets the channel of this Event.
 
         DIS通道名称。通过DIS管理控制台获取通道名称：登录管理控制台。单击“数据接入服务”，左侧列表选择“通道管理”。通道管理页面中列出了用户拥有的通道
 
@@ -113,7 +113,7 @@ class Event:
 
     @property
     def fail_policy(self):
-        """Gets the fail_policy of this Event.
+        r"""Gets the fail_policy of this Event.
 
         执行失败处理策略。 - SUSPEND: 挂起 - IGNORE：忽略失败，读取下一事件
 
@@ -124,7 +124,7 @@ class Event:
 
     @fail_policy.setter
     def fail_policy(self, fail_policy):
-        """Sets the fail_policy of this Event.
+        r"""Sets the fail_policy of this Event.
 
         执行失败处理策略。 - SUSPEND: 挂起 - IGNORE：忽略失败，读取下一事件
 
@@ -135,7 +135,7 @@ class Event:
 
     @property
     def concurrent(self):
-        """Gets the concurrent of this Event.
+        r"""Gets the concurrent of this Event.
 
         调度并发数
 
@@ -146,7 +146,7 @@ class Event:
 
     @concurrent.setter
     def concurrent(self, concurrent):
-        """Sets the concurrent of this Event.
+        r"""Sets the concurrent of this Event.
 
         调度并发数
 
@@ -157,7 +157,7 @@ class Event:
 
     @property
     def read_policy(self):
-        """Gets the read_policy of this Event.
+        r"""Gets the read_policy of this Event.
 
         读取策略。 - LAST: 从上次位置读取 - NEW：从最新位置读取
 
@@ -168,7 +168,7 @@ class Event:
 
     @read_policy.setter
     def read_policy(self, read_policy):
-        """Sets the read_policy of this Event.
+        r"""Sets the read_policy of this Event.
 
         读取策略。 - LAST: 从上次位置读取 - NEW：从最新位置读取
 

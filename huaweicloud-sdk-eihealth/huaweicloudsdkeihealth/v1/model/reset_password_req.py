@@ -31,7 +31,7 @@ class ResetPasswordReq:
     }
 
     def __init__(self, code=None, method=None, original_password=None, new_password=None):
-        """ResetPasswordReq
+        r"""ResetPasswordReq
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ResetPasswordReq:
 
     @property
     def code(self):
-        """Gets the code of this ResetPasswordReq.
+        r"""Gets the code of this ResetPasswordReq.
 
         验证码
 
@@ -73,7 +73,7 @@ class ResetPasswordReq:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ResetPasswordReq.
+        r"""Sets the code of this ResetPasswordReq.
 
         验证码
 
@@ -84,7 +84,7 @@ class ResetPasswordReq:
 
     @property
     def method(self):
-        """Gets the method of this ResetPasswordReq.
+        r"""Gets the method of this ResetPasswordReq.
 
         认证方式
 
@@ -95,7 +95,7 @@ class ResetPasswordReq:
 
     @method.setter
     def method(self, method):
-        """Sets the method of this ResetPasswordReq.
+        r"""Sets the method of this ResetPasswordReq.
 
         认证方式
 
@@ -106,7 +106,7 @@ class ResetPasswordReq:
 
     @property
     def original_password(self):
-        """Gets the original_password of this ResetPasswordReq.
+        r"""Gets the original_password of this ResetPasswordReq.
 
         原始密码
 
@@ -117,7 +117,7 @@ class ResetPasswordReq:
 
     @original_password.setter
     def original_password(self, original_password):
-        """Sets the original_password of this ResetPasswordReq.
+        r"""Sets the original_password of this ResetPasswordReq.
 
         原始密码
 
@@ -128,7 +128,7 @@ class ResetPasswordReq:
 
     @property
     def new_password(self):
-        """Gets the new_password of this ResetPasswordReq.
+        r"""Gets the new_password of this ResetPasswordReq.
 
         新密码
 
@@ -139,7 +139,7 @@ class ResetPasswordReq:
 
     @new_password.setter
     def new_password(self, new_password):
-        """Sets the new_password of this ResetPasswordReq.
+        r"""Sets the new_password of this ResetPasswordReq.
 
         新密码
 

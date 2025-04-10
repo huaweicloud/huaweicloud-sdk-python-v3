@@ -33,7 +33,7 @@ class ImageReadConfigResp:
     }
 
     def __init__(self, read_content=None, image_id=None, resolution=None, image_url=None, name=None):
-        """ImageReadConfigResp
+        r"""ImageReadConfigResp
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class ImageReadConfigResp:
 
     @property
     def read_content(self):
-        """Gets the read_content of this ImageReadConfigResp.
+        r"""Gets the read_content of this ImageReadConfigResp.
 
         播报内容，长度为1~2500
 
@@ -77,7 +77,7 @@ class ImageReadConfigResp:
 
     @read_content.setter
     def read_content(self, read_content):
-        """Sets the read_content of this ImageReadConfigResp.
+        r"""Sets the read_content of this ImageReadConfigResp.
 
         播报内容，长度为1~2500
 
@@ -88,7 +88,7 @@ class ImageReadConfigResp:
 
     @property
     def image_id(self):
-        """Gets the image_id of this ImageReadConfigResp.
+        r"""Gets the image_id of this ImageReadConfigResp.
 
         图片id
 
@@ -99,7 +99,7 @@ class ImageReadConfigResp:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this ImageReadConfigResp.
+        r"""Sets the image_id of this ImageReadConfigResp.
 
         图片id
 
@@ -110,7 +110,7 @@ class ImageReadConfigResp:
 
     @property
     def resolution(self):
-        """Gets the resolution of this ImageReadConfigResp.
+        r"""Gets the resolution of this ImageReadConfigResp.
 
         :return: The resolution of this ImageReadConfigResp.
         :rtype: :class:`huaweicloudsdkcbs.v1.Resolution`
@@ -119,7 +119,7 @@ class ImageReadConfigResp:
 
     @resolution.setter
     def resolution(self, resolution):
-        """Sets the resolution of this ImageReadConfigResp.
+        r"""Sets the resolution of this ImageReadConfigResp.
 
         :param resolution: The resolution of this ImageReadConfigResp.
         :type resolution: :class:`huaweicloudsdkcbs.v1.Resolution`
@@ -128,7 +128,7 @@ class ImageReadConfigResp:
 
     @property
     def image_url(self):
-        """Gets the image_url of this ImageReadConfigResp.
+        r"""Gets the image_url of this ImageReadConfigResp.
 
         图片地址
 
@@ -139,7 +139,7 @@ class ImageReadConfigResp:
 
     @image_url.setter
     def image_url(self, image_url):
-        """Sets the image_url of this ImageReadConfigResp.
+        r"""Sets the image_url of this ImageReadConfigResp.
 
         图片地址
 
@@ -150,7 +150,7 @@ class ImageReadConfigResp:
 
     @property
     def name(self):
-        """Gets the name of this ImageReadConfigResp.
+        r"""Gets the name of this ImageReadConfigResp.
 
         图片名
 
@@ -161,7 +161,7 @@ class ImageReadConfigResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ImageReadConfigResp.
+        r"""Sets the name of this ImageReadConfigResp.
 
         图片名
 

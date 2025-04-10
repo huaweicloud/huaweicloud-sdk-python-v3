@@ -27,7 +27,7 @@ class PushPortalInfoResponseModelData:
     }
 
     def __init__(self, log_id=None, message=None):
-        """PushPortalInfoResponseModelData
+        r"""PushPortalInfoResponseModelData
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PushPortalInfoResponseModelData:
 
     @property
     def log_id(self):
-        """Gets the log_id of this PushPortalInfoResponseModelData.
+        r"""Gets the log_id of this PushPortalInfoResponseModelData.
 
         主页申请记录ID。
 
@@ -61,7 +61,7 @@ class PushPortalInfoResponseModelData:
 
     @log_id.setter
     def log_id(self, log_id):
-        """Sets the log_id of this PushPortalInfoResponseModelData.
+        r"""Sets the log_id of this PushPortalInfoResponseModelData.
 
         主页申请记录ID。
 
@@ -72,7 +72,7 @@ class PushPortalInfoResponseModelData:
 
     @property
     def message(self):
-        """Gets the message of this PushPortalInfoResponseModelData.
+        r"""Gets the message of this PushPortalInfoResponseModelData.
 
         返回信息。
 
@@ -83,7 +83,7 @@ class PushPortalInfoResponseModelData:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this PushPortalInfoResponseModelData.
+        r"""Sets the message of this PushPortalInfoResponseModelData.
 
         返回信息。
 

@@ -45,7 +45,7 @@ class TableObject:
     }
 
     def __init__(self, sync_type=None, type=None, name=None, all=None, db_alias_name=None, schema_alias_name=None, filtered=None, filter_conditions=None, config_conditions=None, is_synchronized=None, columns=None):
-        """TableObject
+        r"""TableObject
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class TableObject:
 
     @property
     def sync_type(self):
-        """Gets the sync_type of this TableObject.
+        r"""Gets the sync_type of this TableObject.
 
         该表在实时同步场景下的类型。取值： - config：仅当该表作为数据过滤高级设置的关联表时，需要填写，此时该表以及该表下的columns“不会”被同步到目标库，name、all、filtered、filter_conditions属性不生效，columns需要填写被关联的相关对象，config_conditions需要填写数据过滤高级设置的配置条件。（注意：如果需要同步该表级对象，则在下级对象中填写sync_type值为config。）
 
@@ -124,7 +124,7 @@ class TableObject:
 
     @sync_type.setter
     def sync_type(self, sync_type):
-        """Sets the sync_type of this TableObject.
+        r"""Sets the sync_type of this TableObject.
 
         该表在实时同步场景下的类型。取值： - config：仅当该表作为数据过滤高级设置的关联表时，需要填写，此时该表以及该表下的columns“不会”被同步到目标库，name、all、filtered、filter_conditions属性不生效，columns需要填写被关联的相关对象，config_conditions需要填写数据过滤高级设置的配置条件。（注意：如果需要同步该表级对象，则在下级对象中填写sync_type值为config。）
 
@@ -135,7 +135,7 @@ class TableObject:
 
     @property
     def type(self):
-        """Gets the type of this TableObject.
+        r"""Gets the type of this TableObject.
 
         对象类型。取值： - table：表。 - view：视图。 - procedure：存储过程。
 
@@ -146,7 +146,7 @@ class TableObject:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this TableObject.
+        r"""Sets the type of this TableObject.
 
         对象类型。取值： - table：表。 - view：视图。 - procedure：存储过程。
 
@@ -157,7 +157,7 @@ class TableObject:
 
     @property
     def name(self):
-        """Gets the name of this TableObject.
+        r"""Gets the name of this TableObject.
 
         该表在目标库的名称（表名映射）。
 
@@ -168,7 +168,7 @@ class TableObject:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TableObject.
+        r"""Sets the name of this TableObject.
 
         该表在目标库的名称（表名映射）。
 
@@ -179,7 +179,7 @@ class TableObject:
 
     @property
     def all(self):
-        """Gets the all of this TableObject.
+        r"""Gets the all of this TableObject.
 
         是否整表迁移或同步。注意： 1.当该表不需要做列过滤、列映射时，填true，如果需要做列过滤、列映射则填false； 2.当该表需要做附加列时，需要填true，并且在columns里填写附加列信息； 3.当该表所包含的列作为数据过滤高级设置的关联列时，需要填true，并且在columns里填写关联列信息、config_conditions填写数据过滤高级设置的配置条件；
 
@@ -190,7 +190,7 @@ class TableObject:
 
     @all.setter
     def all(self, all):
-        """Sets the all of this TableObject.
+        r"""Sets the all of this TableObject.
 
         是否整表迁移或同步。注意： 1.当该表不需要做列过滤、列映射时，填true，如果需要做列过滤、列映射则填false； 2.当该表需要做附加列时，需要填true，并且在columns里填写附加列信息； 3.当该表所包含的列作为数据过滤高级设置的关联列时，需要填true，并且在columns里填写关联列信息、config_conditions填写数据过滤高级设置的配置条件；
 
@@ -201,7 +201,7 @@ class TableObject:
 
     @property
     def db_alias_name(self):
-        """Gets the db_alias_name of this TableObject.
+        r"""Gets the db_alias_name of this TableObject.
 
         一对多情况下，表级上对库名的映射。
 
@@ -212,7 +212,7 @@ class TableObject:
 
     @db_alias_name.setter
     def db_alias_name(self, db_alias_name):
-        """Sets the db_alias_name of this TableObject.
+        r"""Sets the db_alias_name of this TableObject.
 
         一对多情况下，表级上对库名的映射。
 
@@ -223,7 +223,7 @@ class TableObject:
 
     @property
     def schema_alias_name(self):
-        """Gets the schema_alias_name of this TableObject.
+        r"""Gets the schema_alias_name of this TableObject.
 
         一对多情况下，表级上对schema名的映射。
 
@@ -234,7 +234,7 @@ class TableObject:
 
     @schema_alias_name.setter
     def schema_alias_name(self, schema_alias_name):
-        """Sets the schema_alias_name of this TableObject.
+        r"""Sets the schema_alias_name of this TableObject.
 
         一对多情况下，表级上对schema名的映射。
 
@@ -245,7 +245,7 @@ class TableObject:
 
     @property
     def filtered(self):
-        """Gets the filtered of this TableObject.
+        r"""Gets the filtered of this TableObject.
 
         该表是否进行数据过滤。
 
@@ -256,7 +256,7 @@ class TableObject:
 
     @filtered.setter
     def filtered(self, filtered):
-        """Sets the filtered of this TableObject.
+        r"""Sets the filtered of this TableObject.
 
         该表是否进行数据过滤。
 
@@ -267,7 +267,7 @@ class TableObject:
 
     @property
     def filter_conditions(self):
-        """Gets the filter_conditions of this TableObject.
+        r"""Gets the filter_conditions of this TableObject.
 
         该表数据的过滤条件，生成加工规则值为SQL条件语句，长度限制512。
 
@@ -278,7 +278,7 @@ class TableObject:
 
     @filter_conditions.setter
     def filter_conditions(self, filter_conditions):
-        """Sets the filter_conditions of this TableObject.
+        r"""Sets the filter_conditions of this TableObject.
 
         该表数据的过滤条件，生成加工规则值为SQL条件语句，长度限制512。
 
@@ -289,7 +289,7 @@ class TableObject:
 
     @property
     def config_conditions(self):
-        """Gets the config_conditions of this TableObject.
+        r"""Gets the config_conditions of this TableObject.
 
         该表数据过滤高级设置的配置条件，当该表作为联表查询时填写，生成加工规则值为SQL条件语句，长度限制512。
 
@@ -300,7 +300,7 @@ class TableObject:
 
     @config_conditions.setter
     def config_conditions(self, config_conditions):
-        """Sets the config_conditions of this TableObject.
+        r"""Sets the config_conditions of this TableObject.
 
         该表数据过滤高级设置的配置条件，当该表作为联表查询时填写，生成加工规则值为SQL条件语句，长度限制512。
 
@@ -311,7 +311,7 @@ class TableObject:
 
     @property
     def is_synchronized(self):
-        """Gets the is_synchronized of this TableObject.
+        r"""Gets the is_synchronized of this TableObject.
 
         是否已经进行同步。
 
@@ -322,7 +322,7 @@ class TableObject:
 
     @is_synchronized.setter
     def is_synchronized(self, is_synchronized):
-        """Sets the is_synchronized of this TableObject.
+        r"""Sets the is_synchronized of this TableObject.
 
         是否已经进行同步。
 
@@ -333,7 +333,7 @@ class TableObject:
 
     @property
     def columns(self):
-        """Gets the columns of this TableObject.
+        r"""Gets the columns of this TableObject.
 
         需要同步/映射/过滤/新增的列，当需要列过滤、列映射、附加列功能时填写，仅在实时同步任务中生效，当整表同步为false时需要填写。
 
@@ -344,7 +344,7 @@ class TableObject:
 
     @columns.setter
     def columns(self, columns):
-        """Sets the columns of this TableObject.
+        r"""Sets the columns of this TableObject.
 
         需要同步/映射/过滤/新增的列，当需要列过滤、列映射、附加列功能时填写，仅在实时同步任务中生效，当整表同步为false时需要填写。
 

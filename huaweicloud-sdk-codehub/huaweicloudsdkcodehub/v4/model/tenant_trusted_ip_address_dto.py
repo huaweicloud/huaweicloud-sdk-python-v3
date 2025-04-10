@@ -51,7 +51,7 @@ class TenantTrustedIpAddressDto:
     }
 
     def __init__(self, id=None, user_id=None, domain_id=None, ip_range=None, ip_type=None, ip_start=None, ip_end=None, view_flag=None, download_flag=None, upload_flag=None, remark=None, created_at=None, updated_at=None, order_flag=None):
-        """TenantTrustedIpAddressDto
+        r"""TenantTrustedIpAddressDto
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class TenantTrustedIpAddressDto:
 
     @property
     def id(self):
-        """Gets the id of this TenantTrustedIpAddressDto.
+        r"""Gets the id of this TenantTrustedIpAddressDto.
 
         关联结果
 
@@ -145,7 +145,7 @@ class TenantTrustedIpAddressDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TenantTrustedIpAddressDto.
+        r"""Sets the id of this TenantTrustedIpAddressDto.
 
         关联结果
 
@@ -156,7 +156,7 @@ class TenantTrustedIpAddressDto:
 
     @property
     def user_id(self):
-        """Gets the user_id of this TenantTrustedIpAddressDto.
+        r"""Gets the user_id of this TenantTrustedIpAddressDto.
 
         用户id
 
@@ -167,7 +167,7 @@ class TenantTrustedIpAddressDto:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this TenantTrustedIpAddressDto.
+        r"""Sets the user_id of this TenantTrustedIpAddressDto.
 
         用户id
 
@@ -178,7 +178,7 @@ class TenantTrustedIpAddressDto:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this TenantTrustedIpAddressDto.
+        r"""Gets the domain_id of this TenantTrustedIpAddressDto.
 
         租户id
 
@@ -189,7 +189,7 @@ class TenantTrustedIpAddressDto:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this TenantTrustedIpAddressDto.
+        r"""Sets the domain_id of this TenantTrustedIpAddressDto.
 
         租户id
 
@@ -200,7 +200,7 @@ class TenantTrustedIpAddressDto:
 
     @property
     def ip_range(self):
-        """Gets the ip_range of this TenantTrustedIpAddressDto.
+        r"""Gets the ip_range of this TenantTrustedIpAddressDto.
 
         ip范围
 
@@ -211,7 +211,7 @@ class TenantTrustedIpAddressDto:
 
     @ip_range.setter
     def ip_range(self, ip_range):
-        """Sets the ip_range of this TenantTrustedIpAddressDto.
+        r"""Sets the ip_range of this TenantTrustedIpAddressDto.
 
         ip范围
 
@@ -222,7 +222,7 @@ class TenantTrustedIpAddressDto:
 
     @property
     def ip_type(self):
-        """Gets the ip_type of this TenantTrustedIpAddressDto.
+        r"""Gets the ip_type of this TenantTrustedIpAddressDto.
 
         格式类型，指定ip，ip范围，CIDR
 
@@ -233,7 +233,7 @@ class TenantTrustedIpAddressDto:
 
     @ip_type.setter
     def ip_type(self, ip_type):
-        """Sets the ip_type of this TenantTrustedIpAddressDto.
+        r"""Sets the ip_type of this TenantTrustedIpAddressDto.
 
         格式类型，指定ip，ip范围，CIDR
 
@@ -244,7 +244,7 @@ class TenantTrustedIpAddressDto:
 
     @property
     def ip_start(self):
-        """Gets the ip_start of this TenantTrustedIpAddressDto.
+        r"""Gets the ip_start of this TenantTrustedIpAddressDto.
 
         起始ip
 
@@ -255,7 +255,7 @@ class TenantTrustedIpAddressDto:
 
     @ip_start.setter
     def ip_start(self, ip_start):
-        """Sets the ip_start of this TenantTrustedIpAddressDto.
+        r"""Sets the ip_start of this TenantTrustedIpAddressDto.
 
         起始ip
 
@@ -266,7 +266,7 @@ class TenantTrustedIpAddressDto:
 
     @property
     def ip_end(self):
-        """Gets the ip_end of this TenantTrustedIpAddressDto.
+        r"""Gets the ip_end of this TenantTrustedIpAddressDto.
 
         结束ip
 
@@ -277,7 +277,7 @@ class TenantTrustedIpAddressDto:
 
     @ip_end.setter
     def ip_end(self, ip_end):
-        """Sets the ip_end of this TenantTrustedIpAddressDto.
+        r"""Sets the ip_end of this TenantTrustedIpAddressDto.
 
         结束ip
 
@@ -288,7 +288,7 @@ class TenantTrustedIpAddressDto:
 
     @property
     def view_flag(self):
-        """Gets the view_flag of this TenantTrustedIpAddressDto.
+        r"""Gets the view_flag of this TenantTrustedIpAddressDto.
 
         是否允许访问代码仓库
 
@@ -299,7 +299,7 @@ class TenantTrustedIpAddressDto:
 
     @view_flag.setter
     def view_flag(self, view_flag):
-        """Sets the view_flag of this TenantTrustedIpAddressDto.
+        r"""Sets the view_flag of this TenantTrustedIpAddressDto.
 
         是否允许访问代码仓库
 
@@ -310,7 +310,7 @@ class TenantTrustedIpAddressDto:
 
     @property
     def download_flag(self):
-        """Gets the download_flag of this TenantTrustedIpAddressDto.
+        r"""Gets the download_flag of this TenantTrustedIpAddressDto.
 
         是否允许下载代码
 
@@ -321,7 +321,7 @@ class TenantTrustedIpAddressDto:
 
     @download_flag.setter
     def download_flag(self, download_flag):
-        """Sets the download_flag of this TenantTrustedIpAddressDto.
+        r"""Sets the download_flag of this TenantTrustedIpAddressDto.
 
         是否允许下载代码
 
@@ -332,7 +332,7 @@ class TenantTrustedIpAddressDto:
 
     @property
     def upload_flag(self):
-        """Gets the upload_flag of this TenantTrustedIpAddressDto.
+        r"""Gets the upload_flag of this TenantTrustedIpAddressDto.
 
         是否允许提交代码
 
@@ -343,7 +343,7 @@ class TenantTrustedIpAddressDto:
 
     @upload_flag.setter
     def upload_flag(self, upload_flag):
-        """Sets the upload_flag of this TenantTrustedIpAddressDto.
+        r"""Sets the upload_flag of this TenantTrustedIpAddressDto.
 
         是否允许提交代码
 
@@ -354,7 +354,7 @@ class TenantTrustedIpAddressDto:
 
     @property
     def remark(self):
-        """Gets the remark of this TenantTrustedIpAddressDto.
+        r"""Gets the remark of this TenantTrustedIpAddressDto.
 
         备注
 
@@ -365,7 +365,7 @@ class TenantTrustedIpAddressDto:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this TenantTrustedIpAddressDto.
+        r"""Sets the remark of this TenantTrustedIpAddressDto.
 
         备注
 
@@ -376,7 +376,7 @@ class TenantTrustedIpAddressDto:
 
     @property
     def created_at(self):
-        """Gets the created_at of this TenantTrustedIpAddressDto.
+        r"""Gets the created_at of this TenantTrustedIpAddressDto.
 
         创建时间
 
@@ -387,7 +387,7 @@ class TenantTrustedIpAddressDto:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this TenantTrustedIpAddressDto.
+        r"""Sets the created_at of this TenantTrustedIpAddressDto.
 
         创建时间
 
@@ -398,7 +398,7 @@ class TenantTrustedIpAddressDto:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this TenantTrustedIpAddressDto.
+        r"""Gets the updated_at of this TenantTrustedIpAddressDto.
 
         更新时间
 
@@ -409,7 +409,7 @@ class TenantTrustedIpAddressDto:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this TenantTrustedIpAddressDto.
+        r"""Sets the updated_at of this TenantTrustedIpAddressDto.
 
         更新时间
 
@@ -420,7 +420,7 @@ class TenantTrustedIpAddressDto:
 
     @property
     def order_flag(self):
-        """Gets the order_flag of this TenantTrustedIpAddressDto.
+        r"""Gets the order_flag of this TenantTrustedIpAddressDto.
 
         排序
 
@@ -431,7 +431,7 @@ class TenantTrustedIpAddressDto:
 
     @order_flag.setter
     def order_flag(self, order_flag):
-        """Sets the order_flag of this TenantTrustedIpAddressDto.
+        r"""Sets the order_flag of this TenantTrustedIpAddressDto.
 
         排序
 

@@ -31,7 +31,7 @@ class BatchFailure:
     }
 
     def __init__(self, api_id=None, api_name=None, error_code=None, error_msg=None):
-        """BatchFailure
+        r"""BatchFailure
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class BatchFailure:
 
     @property
     def api_id(self):
-        """Gets the api_id of this BatchFailure.
+        r"""Gets the api_id of this BatchFailure.
 
         操作失败的API ID
 
@@ -75,7 +75,7 @@ class BatchFailure:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this BatchFailure.
+        r"""Sets the api_id of this BatchFailure.
 
         操作失败的API ID
 
@@ -86,7 +86,7 @@ class BatchFailure:
 
     @property
     def api_name(self):
-        """Gets the api_name of this BatchFailure.
+        r"""Gets the api_name of this BatchFailure.
 
         操作失败的APi名称
 
@@ -97,7 +97,7 @@ class BatchFailure:
 
     @api_name.setter
     def api_name(self, api_name):
-        """Sets the api_name of this BatchFailure.
+        r"""Sets the api_name of this BatchFailure.
 
         操作失败的APi名称
 
@@ -108,7 +108,7 @@ class BatchFailure:
 
     @property
     def error_code(self):
-        """Gets the error_code of this BatchFailure.
+        r"""Gets the error_code of this BatchFailure.
 
         操作失败的错误码
 
@@ -119,7 +119,7 @@ class BatchFailure:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this BatchFailure.
+        r"""Sets the error_code of this BatchFailure.
 
         操作失败的错误码
 
@@ -130,7 +130,7 @@ class BatchFailure:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this BatchFailure.
+        r"""Gets the error_msg of this BatchFailure.
 
         操作失败的错误信息
 
@@ -141,7 +141,7 @@ class BatchFailure:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this BatchFailure.
+        r"""Sets the error_msg of this BatchFailure.
 
         操作失败的错误信息
 

@@ -24,7 +24,7 @@ class AttachEipResponse(SdkResponse):
     }
 
     def __init__(self):
-        """AttachEipResponse
+        r"""AttachEipResponse
 
         The model defined in huaweicloud sdk
 

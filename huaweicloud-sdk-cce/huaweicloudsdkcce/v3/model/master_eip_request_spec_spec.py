@@ -25,7 +25,7 @@ class MasterEIPRequestSpecSpec:
     }
 
     def __init__(self, id=None):
-        """MasterEIPRequestSpecSpec
+        r"""MasterEIPRequestSpecSpec
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class MasterEIPRequestSpecSpec:
 
     @property
     def id(self):
-        """Gets the id of this MasterEIPRequestSpecSpec.
+        r"""Gets the id of this MasterEIPRequestSpecSpec.
 
         弹性网卡ID，绑定时必选，解绑时该字段无效
 
@@ -54,7 +54,7 @@ class MasterEIPRequestSpecSpec:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MasterEIPRequestSpecSpec.
+        r"""Sets the id of this MasterEIPRequestSpecSpec.
 
         弹性网卡ID，绑定时必选，解绑时该字段无效
 

@@ -31,7 +31,7 @@ class ListObsObjectRequest:
     }
 
     def __init__(self, bucket_name=None, marker=None, limit=None, prefix=None):
-        """ListObsObjectRequest
+        r"""ListObsObjectRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListObsObjectRequest:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this ListObsObjectRequest.
+        r"""Gets the bucket_name of this ListObsObjectRequest.
 
         obs桶名称
 
@@ -73,7 +73,7 @@ class ListObsObjectRequest:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this ListObsObjectRequest.
+        r"""Sets the bucket_name of this ListObsObjectRequest.
 
         obs桶名称
 
@@ -84,7 +84,7 @@ class ListObsObjectRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListObsObjectRequest.
+        r"""Gets the marker of this ListObsObjectRequest.
 
         查询起始object名称
 
@@ -95,7 +95,7 @@ class ListObsObjectRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListObsObjectRequest.
+        r"""Sets the marker of this ListObsObjectRequest.
 
         查询起始object名称
 
@@ -106,7 +106,7 @@ class ListObsObjectRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListObsObjectRequest.
+        r"""Gets the limit of this ListObsObjectRequest.
 
         单次查询条数
 
@@ -117,7 +117,7 @@ class ListObsObjectRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListObsObjectRequest.
+        r"""Sets the limit of this ListObsObjectRequest.
 
         单次查询条数
 
@@ -128,7 +128,7 @@ class ListObsObjectRequest:
 
     @property
     def prefix(self):
-        """Gets the prefix of this ListObsObjectRequest.
+        r"""Gets the prefix of this ListObsObjectRequest.
 
         搜索前缀
 
@@ -139,7 +139,7 @@ class ListObsObjectRequest:
 
     @prefix.setter
     def prefix(self, prefix):
-        """Sets the prefix of this ListObsObjectRequest.
+        r"""Sets the prefix of this ListObsObjectRequest.
 
         搜索前缀
 

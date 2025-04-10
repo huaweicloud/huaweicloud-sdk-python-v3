@@ -33,7 +33,7 @@ class ListAlarmTemplatesRequest:
     }
 
     def __init__(self, alarm_template_id=None, namespace=None, dname=None, start=None, limit=None):
-        """ListAlarmTemplatesRequest
+        r"""ListAlarmTemplatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListAlarmTemplatesRequest:
 
     @property
     def alarm_template_id(self):
-        """Gets the alarm_template_id of this ListAlarmTemplatesRequest.
+        r"""Gets the alarm_template_id of this ListAlarmTemplatesRequest.
 
         自定义告警模的ID，如：at1603330892378wkDm77y6B。
 
@@ -82,7 +82,7 @@ class ListAlarmTemplatesRequest:
 
     @alarm_template_id.setter
     def alarm_template_id(self, alarm_template_id):
-        """Sets the alarm_template_id of this ListAlarmTemplatesRequest.
+        r"""Sets the alarm_template_id of this ListAlarmTemplatesRequest.
 
         自定义告警模的ID，如：at1603330892378wkDm77y6B。
 
@@ -93,7 +93,7 @@ class ListAlarmTemplatesRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this ListAlarmTemplatesRequest.
+        r"""Gets the namespace of this ListAlarmTemplatesRequest.
 
         自定义告警模板选择的资源类型。即命名空间，如弹性云服务器的资源命名空间为：SYS.ECS；各服务命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
@@ -104,7 +104,7 @@ class ListAlarmTemplatesRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this ListAlarmTemplatesRequest.
+        r"""Sets the namespace of this ListAlarmTemplatesRequest.
 
         自定义告警模板选择的资源类型。即命名空间，如弹性云服务器的资源命名空间为：SYS.ECS；各服务命名空间可查看：“[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
@@ -115,7 +115,7 @@ class ListAlarmTemplatesRequest:
 
     @property
     def dname(self):
-        """Gets the dname of this ListAlarmTemplatesRequest.
+        r"""Gets the dname of this ListAlarmTemplatesRequest.
 
         自定义告警模板选择的资源维度，如：弹性云服务器，则维度为instance_id，各资源的指标维度名称可查看：“[服务指标维度](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
@@ -126,7 +126,7 @@ class ListAlarmTemplatesRequest:
 
     @dname.setter
     def dname(self, dname):
-        """Sets the dname of this ListAlarmTemplatesRequest.
+        r"""Sets the dname of this ListAlarmTemplatesRequest.
 
         自定义告警模板选择的资源维度，如：弹性云服务器，则维度为instance_id，各资源的指标维度名称可查看：“[服务指标维度](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)”。
 
@@ -137,7 +137,7 @@ class ListAlarmTemplatesRequest:
 
     @property
     def start(self):
-        """Gets the start of this ListAlarmTemplatesRequest.
+        r"""Gets the start of this ListAlarmTemplatesRequest.
 
         分页起始值，类型为integer，默认值为0。
 
@@ -148,7 +148,7 @@ class ListAlarmTemplatesRequest:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this ListAlarmTemplatesRequest.
+        r"""Sets the start of this ListAlarmTemplatesRequest.
 
         分页起始值，类型为integer，默认值为0。
 
@@ -159,7 +159,7 @@ class ListAlarmTemplatesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAlarmTemplatesRequest.
+        r"""Gets the limit of this ListAlarmTemplatesRequest.
 
         单次查询的条数限制，取值范围(0,100]，默认值为100， 用于限制结果数据条数。
 
@@ -170,7 +170,7 @@ class ListAlarmTemplatesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAlarmTemplatesRequest.
+        r"""Sets the limit of this ListAlarmTemplatesRequest.
 
         单次查询的条数限制，取值范围(0,100]，默认值为100， 用于限制结果数据条数。
 

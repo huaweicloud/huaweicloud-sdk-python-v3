@@ -27,7 +27,7 @@ class VerifyDomainOwnerRequest:
     }
 
     def __init__(self, domain_name=None, body=None):
-        """VerifyDomainOwnerRequest
+        r"""VerifyDomainOwnerRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class VerifyDomainOwnerRequest:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this VerifyDomainOwnerRequest.
+        r"""Gets the domain_name of this VerifyDomainOwnerRequest.
 
         域名
 
@@ -60,7 +60,7 @@ class VerifyDomainOwnerRequest:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this VerifyDomainOwnerRequest.
+        r"""Sets the domain_name of this VerifyDomainOwnerRequest.
 
         域名
 
@@ -71,7 +71,7 @@ class VerifyDomainOwnerRequest:
 
     @property
     def body(self):
-        """Gets the body of this VerifyDomainOwnerRequest.
+        r"""Gets the body of this VerifyDomainOwnerRequest.
 
         :return: The body of this VerifyDomainOwnerRequest.
         :rtype: :class:`huaweicloudsdkcdn.v2.VerifyDomainOwnerRequestBody`
@@ -80,7 +80,7 @@ class VerifyDomainOwnerRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this VerifyDomainOwnerRequest.
+        r"""Sets the body of this VerifyDomainOwnerRequest.
 
         :param body: The body of this VerifyDomainOwnerRequest.
         :type body: :class:`huaweicloudsdkcdn.v2.VerifyDomainOwnerRequestBody`

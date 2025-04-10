@@ -37,7 +37,7 @@ class JobProgressEntities:
     }
 
     def __init__(self, image_id=None, current_task=None, image_name=None, process_percent=None, sub_job_id=None, sub_jobs_result=None, sub_jobs_list=None):
-        """JobProgressEntities
+        r"""JobProgressEntities
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class JobProgressEntities:
 
     @property
     def image_id(self):
-        """Gets the image_id of this JobProgressEntities.
+        r"""Gets the image_id of this JobProgressEntities.
 
         镜像ID
 
@@ -96,7 +96,7 @@ class JobProgressEntities:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this JobProgressEntities.
+        r"""Sets the image_id of this JobProgressEntities.
 
         镜像ID
 
@@ -107,7 +107,7 @@ class JobProgressEntities:
 
     @property
     def current_task(self):
-        """Gets the current_task of this JobProgressEntities.
+        r"""Gets the current_task of this JobProgressEntities.
 
         当前任务名称
 
@@ -118,7 +118,7 @@ class JobProgressEntities:
 
     @current_task.setter
     def current_task(self, current_task):
-        """Sets the current_task of this JobProgressEntities.
+        r"""Sets the current_task of this JobProgressEntities.
 
         当前任务名称
 
@@ -129,7 +129,7 @@ class JobProgressEntities:
 
     @property
     def image_name(self):
-        """Gets the image_name of this JobProgressEntities.
+        r"""Gets the image_name of this JobProgressEntities.
 
         镜像名称
 
@@ -140,7 +140,7 @@ class JobProgressEntities:
 
     @image_name.setter
     def image_name(self, image_name):
-        """Sets the image_name of this JobProgressEntities.
+        r"""Sets the image_name of this JobProgressEntities.
 
         镜像名称
 
@@ -151,7 +151,7 @@ class JobProgressEntities:
 
     @property
     def process_percent(self):
-        """Gets the process_percent of this JobProgressEntities.
+        r"""Gets the process_percent of this JobProgressEntities.
 
         任务执行进度
 
@@ -162,7 +162,7 @@ class JobProgressEntities:
 
     @process_percent.setter
     def process_percent(self, process_percent):
-        """Sets the process_percent of this JobProgressEntities.
+        r"""Sets the process_percent of this JobProgressEntities.
 
         任务执行进度
 
@@ -173,7 +173,7 @@ class JobProgressEntities:
 
     @property
     def sub_job_id(self):
-        """Gets the sub_job_id of this JobProgressEntities.
+        r"""Gets the sub_job_id of this JobProgressEntities.
 
         子任务ID
 
@@ -184,7 +184,7 @@ class JobProgressEntities:
 
     @sub_job_id.setter
     def sub_job_id(self, sub_job_id):
-        """Sets the sub_job_id of this JobProgressEntities.
+        r"""Sets the sub_job_id of this JobProgressEntities.
 
         子任务ID
 
@@ -195,7 +195,7 @@ class JobProgressEntities:
 
     @property
     def sub_jobs_result(self):
-        """Gets the sub_jobs_result of this JobProgressEntities.
+        r"""Gets the sub_jobs_result of this JobProgressEntities.
 
         子任务结果列表
 
@@ -206,7 +206,7 @@ class JobProgressEntities:
 
     @sub_jobs_result.setter
     def sub_jobs_result(self, sub_jobs_result):
-        """Sets the sub_jobs_result of this JobProgressEntities.
+        r"""Sets the sub_jobs_result of this JobProgressEntities.
 
         子任务结果列表
 
@@ -217,7 +217,7 @@ class JobProgressEntities:
 
     @property
     def sub_jobs_list(self):
-        """Gets the sub_jobs_list of this JobProgressEntities.
+        r"""Gets the sub_jobs_list of this JobProgressEntities.
 
         子任务ID列表
 
@@ -228,7 +228,7 @@ class JobProgressEntities:
 
     @sub_jobs_list.setter
     def sub_jobs_list(self, sub_jobs_list):
-        """Sets the sub_jobs_list of this JobProgressEntities.
+        r"""Sets the sub_jobs_list of this JobProgressEntities.
 
         子任务ID列表
 

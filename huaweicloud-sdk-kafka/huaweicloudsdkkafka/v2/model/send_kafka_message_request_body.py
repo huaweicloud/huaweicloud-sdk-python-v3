@@ -29,7 +29,7 @@ class SendKafkaMessageRequestBody:
     }
 
     def __init__(self, topic=None, body=None, property_list=None):
-        """SendKafkaMessageRequestBody
+        r"""SendKafkaMessageRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class SendKafkaMessageRequestBody:
 
     @property
     def topic(self):
-        """Gets the topic of this SendKafkaMessageRequestBody.
+        r"""Gets the topic of this SendKafkaMessageRequestBody.
 
         Kafka的topic
 
@@ -65,7 +65,7 @@ class SendKafkaMessageRequestBody:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this SendKafkaMessageRequestBody.
+        r"""Sets the topic of this SendKafkaMessageRequestBody.
 
         Kafka的topic
 
@@ -76,7 +76,7 @@ class SendKafkaMessageRequestBody:
 
     @property
     def body(self):
-        """Gets the body of this SendKafkaMessageRequestBody.
+        r"""Gets the body of this SendKafkaMessageRequestBody.
 
         消息内容
 
@@ -87,7 +87,7 @@ class SendKafkaMessageRequestBody:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SendKafkaMessageRequestBody.
+        r"""Sets the body of this SendKafkaMessageRequestBody.
 
         消息内容
 
@@ -98,7 +98,7 @@ class SendKafkaMessageRequestBody:
 
     @property
     def property_list(self):
-        """Gets the property_list of this SendKafkaMessageRequestBody.
+        r"""Gets the property_list of this SendKafkaMessageRequestBody.
 
         topic的分区信息等
 
@@ -109,7 +109,7 @@ class SendKafkaMessageRequestBody:
 
     @property_list.setter
     def property_list(self, property_list):
-        """Sets the property_list of this SendKafkaMessageRequestBody.
+        r"""Sets the property_list of this SendKafkaMessageRequestBody.
 
         topic的分区信息等
 

@@ -31,7 +31,7 @@ class GroupMembershipItem:
     }
 
     def __init__(self, group_id=None, identity_store_id=None, member_id=None, membership_id=None):
-        """GroupMembershipItem
+        r"""GroupMembershipItem
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class GroupMembershipItem:
 
     @property
     def group_id(self):
-        """Gets the group_id of this GroupMembershipItem.
+        r"""Gets the group_id of this GroupMembershipItem.
 
         身份源中IAM身份中心用户组的全局唯一标识符（ID）
 
@@ -75,7 +75,7 @@ class GroupMembershipItem:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this GroupMembershipItem.
+        r"""Sets the group_id of this GroupMembershipItem.
 
         身份源中IAM身份中心用户组的全局唯一标识符（ID）
 
@@ -86,7 +86,7 @@ class GroupMembershipItem:
 
     @property
     def identity_store_id(self):
-        """Gets the identity_store_id of this GroupMembershipItem.
+        r"""Gets the identity_store_id of this GroupMembershipItem.
 
         身份源的全局唯一标识符（ID）
 
@@ -97,7 +97,7 @@ class GroupMembershipItem:
 
     @identity_store_id.setter
     def identity_store_id(self, identity_store_id):
-        """Sets the identity_store_id of this GroupMembershipItem.
+        r"""Sets the identity_store_id of this GroupMembershipItem.
 
         身份源的全局唯一标识符（ID）
 
@@ -108,7 +108,7 @@ class GroupMembershipItem:
 
     @property
     def member_id(self):
-        """Gets the member_id of this GroupMembershipItem.
+        r"""Gets the member_id of this GroupMembershipItem.
 
         :return: The member_id of this GroupMembershipItem.
         :rtype: :class:`huaweicloudsdkidentitycenterstore.v1.MemberIdDto`
@@ -117,7 +117,7 @@ class GroupMembershipItem:
 
     @member_id.setter
     def member_id(self, member_id):
-        """Sets the member_id of this GroupMembershipItem.
+        r"""Sets the member_id of this GroupMembershipItem.
 
         :param member_id: The member_id of this GroupMembershipItem.
         :type member_id: :class:`huaweicloudsdkidentitycenterstore.v1.MemberIdDto`
@@ -126,7 +126,7 @@ class GroupMembershipItem:
 
     @property
     def membership_id(self):
-        """Gets the membership_id of this GroupMembershipItem.
+        r"""Gets the membership_id of this GroupMembershipItem.
 
         身份源中用户和组关联关系的全局唯一标识符（ID）
 
@@ -137,7 +137,7 @@ class GroupMembershipItem:
 
     @membership_id.setter
     def membership_id(self, membership_id):
-        """Sets the membership_id of this GroupMembershipItem.
+        r"""Sets the membership_id of this GroupMembershipItem.
 
         身份源中用户和组关联关系的全局唯一标识符（ID）
 

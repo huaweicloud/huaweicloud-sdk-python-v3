@@ -26,7 +26,7 @@ class DeleteTerminalsBindingDesktopsResponse(SdkResponse):
     }
 
     def __init__(self, result_list=None):
-        """DeleteTerminalsBindingDesktopsResponse
+        r"""DeleteTerminalsBindingDesktopsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteTerminalsBindingDesktopsResponse(SdkResponse):
 
     @property
     def result_list(self):
-        """Gets the result_list of this DeleteTerminalsBindingDesktopsResponse.
+        r"""Gets the result_list of this DeleteTerminalsBindingDesktopsResponse.
 
         需删除的策略ID列表
 
@@ -55,7 +55,7 @@ class DeleteTerminalsBindingDesktopsResponse(SdkResponse):
 
     @result_list.setter
     def result_list(self, result_list):
-        """Sets the result_list of this DeleteTerminalsBindingDesktopsResponse.
+        r"""Sets the result_list of this DeleteTerminalsBindingDesktopsResponse.
 
         需删除的策略ID列表
 

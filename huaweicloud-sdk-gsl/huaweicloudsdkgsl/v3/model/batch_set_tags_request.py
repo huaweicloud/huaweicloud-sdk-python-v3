@@ -25,7 +25,7 @@ class BatchSetTagsRequest:
     }
 
     def __init__(self, body=None):
-        """BatchSetTagsRequest
+        r"""BatchSetTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchSetTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchSetTagsRequest.
+        r"""Gets the body of this BatchSetTagsRequest.
 
         :return: The body of this BatchSetTagsRequest.
         :rtype: :class:`huaweicloudsdkgsl.v3.BatchSetTagsReq`
@@ -52,7 +52,7 @@ class BatchSetTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchSetTagsRequest.
+        r"""Sets the body of this BatchSetTagsRequest.
 
         :param body: The body of this BatchSetTagsRequest.
         :type body: :class:`huaweicloudsdkgsl.v3.BatchSetTagsReq`

@@ -27,7 +27,7 @@ class NetConfigInstance:
     }
 
     def __init__(self, vpc_id=None, subnets=None):
-        """NetConfigInstance
+        r"""NetConfigInstance
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class NetConfigInstance:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this NetConfigInstance.
+        r"""Gets the vpc_id of this NetConfigInstance.
 
         边缘网络ID。
 
@@ -59,7 +59,7 @@ class NetConfigInstance:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this NetConfigInstance.
+        r"""Sets the vpc_id of this NetConfigInstance.
 
         边缘网络ID。
 
@@ -70,7 +70,7 @@ class NetConfigInstance:
 
     @property
     def subnets(self):
-        """Gets the subnets of this NetConfigInstance.
+        r"""Gets the subnets of this NetConfigInstance.
 
         待创建边缘实例子网信息。  需要指定vpcid对应VPC下已创建的子网（subnet）的网络ID，UUID格式。
 
@@ -81,7 +81,7 @@ class NetConfigInstance:
 
     @subnets.setter
     def subnets(self, subnets):
-        """Sets the subnets of this NetConfigInstance.
+        r"""Sets the subnets of this NetConfigInstance.
 
         待创建边缘实例子网信息。  需要指定vpcid对应VPC下已创建的子网（subnet）的网络ID，UUID格式。
 

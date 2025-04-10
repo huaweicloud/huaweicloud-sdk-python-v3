@@ -23,7 +23,7 @@ class ListSourceIpsRequest:
     }
 
     def __init__(self):
-        """ListSourceIpsRequest
+        r"""ListSourceIpsRequest
 
         The model defined in huaweicloud sdk
 

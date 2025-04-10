@@ -25,7 +25,7 @@ class ChargeInfoResponse:
     }
 
     def __init__(self, charge_mode=None):
-        """ChargeInfoResponse
+        r"""ChargeInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ChargeInfoResponse:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this ChargeInfoResponse.
+        r"""Gets the charge_mode of this ChargeInfoResponse.
 
         计费模式。  取值范围：  - prePaid：预付费，即包年/包月。 - postPaid：后付费，即按需付费。
 
@@ -53,7 +53,7 @@ class ChargeInfoResponse:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this ChargeInfoResponse.
+        r"""Sets the charge_mode of this ChargeInfoResponse.
 
         计费模式。  取值范围：  - prePaid：预付费，即包年/包月。 - postPaid：后付费，即按需付费。
 

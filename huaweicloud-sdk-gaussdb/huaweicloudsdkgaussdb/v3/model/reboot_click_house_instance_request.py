@@ -27,7 +27,7 @@ class RebootClickHouseInstanceRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None):
-        """RebootClickHouseInstanceRequest
+        r"""RebootClickHouseInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RebootClickHouseInstanceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this RebootClickHouseInstanceRequest.
+        r"""Gets the instance_id of this RebootClickHouseInstanceRequest.
 
         ClickHouse实例ID，严格匹配UUID规则。
 
@@ -60,7 +60,7 @@ class RebootClickHouseInstanceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this RebootClickHouseInstanceRequest.
+        r"""Sets the instance_id of this RebootClickHouseInstanceRequest.
 
         ClickHouse实例ID，严格匹配UUID规则。
 
@@ -71,7 +71,7 @@ class RebootClickHouseInstanceRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this RebootClickHouseInstanceRequest.
+        r"""Gets the x_language of this RebootClickHouseInstanceRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -82,7 +82,7 @@ class RebootClickHouseInstanceRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this RebootClickHouseInstanceRequest.
+        r"""Sets the x_language of this RebootClickHouseInstanceRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 

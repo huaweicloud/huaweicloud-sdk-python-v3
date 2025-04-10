@@ -35,7 +35,7 @@ class DuplicateApiInfo:
     }
 
     def __init__(self, api_id=None, api_name=None, group_name=None, group_id=None, remark=None, api_type=None):
-        """DuplicateApiInfo
+        r"""DuplicateApiInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class DuplicateApiInfo:
 
     @property
     def api_id(self):
-        """Gets the api_id of this DuplicateApiInfo.
+        r"""Gets the api_id of this DuplicateApiInfo.
 
         API ID
 
@@ -89,7 +89,7 @@ class DuplicateApiInfo:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this DuplicateApiInfo.
+        r"""Sets the api_id of this DuplicateApiInfo.
 
         API ID
 
@@ -100,7 +100,7 @@ class DuplicateApiInfo:
 
     @property
     def api_name(self):
-        """Gets the api_name of this DuplicateApiInfo.
+        r"""Gets the api_name of this DuplicateApiInfo.
 
         API名称
 
@@ -111,7 +111,7 @@ class DuplicateApiInfo:
 
     @api_name.setter
     def api_name(self, api_name):
-        """Sets the api_name of this DuplicateApiInfo.
+        r"""Sets the api_name of this DuplicateApiInfo.
 
         API名称
 
@@ -122,7 +122,7 @@ class DuplicateApiInfo:
 
     @property
     def group_name(self):
-        """Gets the group_name of this DuplicateApiInfo.
+        r"""Gets the group_name of this DuplicateApiInfo.
 
         分组名称
 
@@ -133,7 +133,7 @@ class DuplicateApiInfo:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this DuplicateApiInfo.
+        r"""Sets the group_name of this DuplicateApiInfo.
 
         分组名称
 
@@ -144,7 +144,7 @@ class DuplicateApiInfo:
 
     @property
     def group_id(self):
-        """Gets the group_id of this DuplicateApiInfo.
+        r"""Gets the group_id of this DuplicateApiInfo.
 
         分组ID
 
@@ -155,7 +155,7 @@ class DuplicateApiInfo:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this DuplicateApiInfo.
+        r"""Sets the group_id of this DuplicateApiInfo.
 
         分组ID
 
@@ -166,7 +166,7 @@ class DuplicateApiInfo:
 
     @property
     def remark(self):
-        """Gets the remark of this DuplicateApiInfo.
+        r"""Gets the remark of this DuplicateApiInfo.
 
         API描述
 
@@ -177,7 +177,7 @@ class DuplicateApiInfo:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this DuplicateApiInfo.
+        r"""Sets the remark of this DuplicateApiInfo.
 
         API描述
 
@@ -188,7 +188,7 @@ class DuplicateApiInfo:
 
     @property
     def api_type(self):
-        """Gets the api_type of this DuplicateApiInfo.
+        r"""Gets the api_type of this DuplicateApiInfo.
 
         api类型： - self-owned：自有API - authorized：授权API
 
@@ -199,7 +199,7 @@ class DuplicateApiInfo:
 
     @api_type.setter
     def api_type(self, api_type):
-        """Sets the api_type of this DuplicateApiInfo.
+        r"""Sets the api_type of this DuplicateApiInfo.
 
         api类型： - self-owned：自有API - authorized：授权API
 

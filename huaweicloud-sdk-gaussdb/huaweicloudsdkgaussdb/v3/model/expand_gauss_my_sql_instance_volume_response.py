@@ -28,7 +28,7 @@ class ExpandGaussMySqlInstanceVolumeResponse(SdkResponse):
     }
 
     def __init__(self, size=None, order_id=None):
-        """ExpandGaussMySqlInstanceVolumeResponse
+        r"""ExpandGaussMySqlInstanceVolumeResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ExpandGaussMySqlInstanceVolumeResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ExpandGaussMySqlInstanceVolumeResponse.
+        r"""Gets the size of this ExpandGaussMySqlInstanceVolumeResponse.
 
         扩容后容量。
 
@@ -62,7 +62,7 @@ class ExpandGaussMySqlInstanceVolumeResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ExpandGaussMySqlInstanceVolumeResponse.
+        r"""Sets the size of this ExpandGaussMySqlInstanceVolumeResponse.
 
         扩容后容量。
 
@@ -73,7 +73,7 @@ class ExpandGaussMySqlInstanceVolumeResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this ExpandGaussMySqlInstanceVolumeResponse.
+        r"""Gets the order_id of this ExpandGaussMySqlInstanceVolumeResponse.
 
         订单号。
 
@@ -84,7 +84,7 @@ class ExpandGaussMySqlInstanceVolumeResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ExpandGaussMySqlInstanceVolumeResponse.
+        r"""Sets the order_id of this ExpandGaussMySqlInstanceVolumeResponse.
 
         订单号。
 

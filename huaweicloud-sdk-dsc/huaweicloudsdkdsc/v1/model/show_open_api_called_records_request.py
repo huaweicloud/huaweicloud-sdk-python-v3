@@ -33,7 +33,7 @@ class ShowOpenApiCalledRecordsRequest:
     }
 
     def __init__(self, limit=None, called_url=None, start_time=None, end_time=None, marker=None):
-        """ShowOpenApiCalledRecordsRequest
+        r"""ShowOpenApiCalledRecordsRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ShowOpenApiCalledRecordsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowOpenApiCalledRecordsRequest.
+        r"""Gets the limit of this ShowOpenApiCalledRecordsRequest.
 
         分页大小，默认1000，最大2000。
 
@@ -82,7 +82,7 @@ class ShowOpenApiCalledRecordsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowOpenApiCalledRecordsRequest.
+        r"""Sets the limit of this ShowOpenApiCalledRecordsRequest.
 
         分页大小，默认1000，最大2000。
 
@@ -93,7 +93,7 @@ class ShowOpenApiCalledRecordsRequest:
 
     @property
     def called_url(self):
-        """Gets the called_url of this ShowOpenApiCalledRecordsRequest.
+        r"""Gets the called_url of this ShowOpenApiCalledRecordsRequest.
 
         需要查询调用记录的URL，例如：/v1/{project_id}/sdg/database/watermark/embed
 
@@ -104,7 +104,7 @@ class ShowOpenApiCalledRecordsRequest:
 
     @called_url.setter
     def called_url(self, called_url):
-        """Sets the called_url of this ShowOpenApiCalledRecordsRequest.
+        r"""Sets the called_url of this ShowOpenApiCalledRecordsRequest.
 
         需要查询调用记录的URL，例如：/v1/{project_id}/sdg/database/watermark/embed
 
@@ -115,7 +115,7 @@ class ShowOpenApiCalledRecordsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowOpenApiCalledRecordsRequest.
+        r"""Gets the start_time of this ShowOpenApiCalledRecordsRequest.
 
         开始时间（Unix timestamp），单位：毫秒，例如：0
 
@@ -126,7 +126,7 @@ class ShowOpenApiCalledRecordsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowOpenApiCalledRecordsRequest.
+        r"""Sets the start_time of this ShowOpenApiCalledRecordsRequest.
 
         开始时间（Unix timestamp），单位：毫秒，例如：0
 
@@ -137,7 +137,7 @@ class ShowOpenApiCalledRecordsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowOpenApiCalledRecordsRequest.
+        r"""Gets the end_time of this ShowOpenApiCalledRecordsRequest.
 
         结束时间（Unix timestamp），单位：毫秒，例如：1638515803572
 
@@ -148,7 +148,7 @@ class ShowOpenApiCalledRecordsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowOpenApiCalledRecordsRequest.
+        r"""Sets the end_time of this ShowOpenApiCalledRecordsRequest.
 
         结束时间（Unix timestamp），单位：毫秒，例如：1638515803572
 
@@ -159,7 +159,7 @@ class ShowOpenApiCalledRecordsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ShowOpenApiCalledRecordsRequest.
+        r"""Gets the marker of this ShowOpenApiCalledRecordsRequest.
 
         指定一个标识符。获取第一页时不用赋值，获取下一页时取上页查询结果的返回值。
 
@@ -170,7 +170,7 @@ class ShowOpenApiCalledRecordsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ShowOpenApiCalledRecordsRequest.
+        r"""Sets the marker of this ShowOpenApiCalledRecordsRequest.
 
         指定一个标识符。获取第一页时不用赋值，获取下一页时取上页查询结果的返回值。
 

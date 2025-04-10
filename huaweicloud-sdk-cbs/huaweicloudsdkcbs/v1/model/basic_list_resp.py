@@ -31,7 +31,7 @@ class BasicListResp:
     }
 
     def __init__(self, quota=None, total=None, offset=None, count=None):
-        """BasicListResp
+        r"""BasicListResp
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class BasicListResp:
 
     @property
     def quota(self):
-        """Gets the quota of this BasicListResp.
+        r"""Gets the quota of this BasicListResp.
 
         配额
 
@@ -71,7 +71,7 @@ class BasicListResp:
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this BasicListResp.
+        r"""Sets the quota of this BasicListResp.
 
         配额
 
@@ -82,7 +82,7 @@ class BasicListResp:
 
     @property
     def total(self):
-        """Gets the total of this BasicListResp.
+        r"""Gets the total of this BasicListResp.
 
         总数
 
@@ -93,7 +93,7 @@ class BasicListResp:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this BasicListResp.
+        r"""Sets the total of this BasicListResp.
 
         总数
 
@@ -104,7 +104,7 @@ class BasicListResp:
 
     @property
     def offset(self):
-        """Gets the offset of this BasicListResp.
+        r"""Gets the offset of this BasicListResp.
 
         偏移
 
@@ -115,7 +115,7 @@ class BasicListResp:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this BasicListResp.
+        r"""Sets the offset of this BasicListResp.
 
         偏移
 
@@ -126,7 +126,7 @@ class BasicListResp:
 
     @property
     def count(self):
-        """Gets the count of this BasicListResp.
+        r"""Gets the count of this BasicListResp.
 
         返回数量
 
@@ -137,7 +137,7 @@ class BasicListResp:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this BasicListResp.
+        r"""Sets the count of this BasicListResp.
 
         返回数量
 

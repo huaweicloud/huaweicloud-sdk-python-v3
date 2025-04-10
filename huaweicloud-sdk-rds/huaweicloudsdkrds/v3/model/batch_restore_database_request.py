@@ -25,7 +25,7 @@ class BatchRestoreDatabaseRequest:
     }
 
     def __init__(self, body=None):
-        """BatchRestoreDatabaseRequest
+        r"""BatchRestoreDatabaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchRestoreDatabaseRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchRestoreDatabaseRequest.
+        r"""Gets the body of this BatchRestoreDatabaseRequest.
 
         :return: The body of this BatchRestoreDatabaseRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.PostgreSQLRestoreDatabaseRequest`
@@ -52,7 +52,7 @@ class BatchRestoreDatabaseRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchRestoreDatabaseRequest.
+        r"""Sets the body of this BatchRestoreDatabaseRequest.
 
         :param body: The body of this BatchRestoreDatabaseRequest.
         :type body: :class:`huaweicloudsdkrds.v3.PostgreSQLRestoreDatabaseRequest`

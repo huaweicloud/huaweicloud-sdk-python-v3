@@ -30,7 +30,7 @@ class ListFlinkJobsResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, job_list=None):
-        """ListFlinkJobsResponse
+        r"""ListFlinkJobsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListFlinkJobsResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ListFlinkJobsResponse.
+        r"""Gets the is_success of this ListFlinkJobsResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -69,7 +69,7 @@ class ListFlinkJobsResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ListFlinkJobsResponse.
+        r"""Sets the is_success of this ListFlinkJobsResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -80,7 +80,7 @@ class ListFlinkJobsResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListFlinkJobsResponse.
+        r"""Gets the message of this ListFlinkJobsResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -91,7 +91,7 @@ class ListFlinkJobsResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListFlinkJobsResponse.
+        r"""Sets the message of this ListFlinkJobsResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -102,7 +102,7 @@ class ListFlinkJobsResponse(SdkResponse):
 
     @property
     def job_list(self):
-        """Gets the job_list of this ListFlinkJobsResponse.
+        r"""Gets the job_list of this ListFlinkJobsResponse.
 
         :return: The job_list of this ListFlinkJobsResponse.
         :rtype: :class:`huaweicloudsdkdli.v1.FlinkJobList`
@@ -111,7 +111,7 @@ class ListFlinkJobsResponse(SdkResponse):
 
     @job_list.setter
     def job_list(self, job_list):
-        """Sets the job_list of this ListFlinkJobsResponse.
+        r"""Sets the job_list of this ListFlinkJobsResponse.
 
         :param job_list: The job_list of this ListFlinkJobsResponse.
         :type job_list: :class:`huaweicloudsdkdli.v1.FlinkJobList`

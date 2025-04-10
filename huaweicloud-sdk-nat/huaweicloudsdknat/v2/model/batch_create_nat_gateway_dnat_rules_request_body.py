@@ -25,7 +25,7 @@ class BatchCreateNatGatewayDnatRulesRequestBody:
     }
 
     def __init__(self, dnat_rules=None):
-        """BatchCreateNatGatewayDnatRulesRequestBody
+        r"""BatchCreateNatGatewayDnatRulesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchCreateNatGatewayDnatRulesRequestBody:
 
     @property
     def dnat_rules(self):
-        """Gets the dnat_rules of this BatchCreateNatGatewayDnatRulesRequestBody.
+        r"""Gets the dnat_rules of this BatchCreateNatGatewayDnatRulesRequestBody.
 
         DNAT规则批量创建对象的请求体。
 
@@ -53,7 +53,7 @@ class BatchCreateNatGatewayDnatRulesRequestBody:
 
     @dnat_rules.setter
     def dnat_rules(self, dnat_rules):
-        """Sets the dnat_rules of this BatchCreateNatGatewayDnatRulesRequestBody.
+        r"""Sets the dnat_rules of this BatchCreateNatGatewayDnatRulesRequestBody.
 
         DNAT规则批量创建对象的请求体。
 

@@ -29,7 +29,7 @@ class ModifyComponentRequest:
     }
 
     def __init__(self, application_id=None, component_id=None, body=None):
-        """ModifyComponentRequest
+        r"""ModifyComponentRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ModifyComponentRequest:
 
     @property
     def application_id(self):
-        """Gets the application_id of this ModifyComponentRequest.
+        r"""Gets the application_id of this ModifyComponentRequest.
 
         应用id
 
@@ -66,7 +66,7 @@ class ModifyComponentRequest:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this ModifyComponentRequest.
+        r"""Sets the application_id of this ModifyComponentRequest.
 
         应用id
 
@@ -77,7 +77,7 @@ class ModifyComponentRequest:
 
     @property
     def component_id(self):
-        """Gets the component_id of this ModifyComponentRequest.
+        r"""Gets the component_id of this ModifyComponentRequest.
 
         组件id
 
@@ -88,7 +88,7 @@ class ModifyComponentRequest:
 
     @component_id.setter
     def component_id(self, component_id):
-        """Sets the component_id of this ModifyComponentRequest.
+        r"""Sets the component_id of this ModifyComponentRequest.
 
         组件id
 
@@ -99,7 +99,7 @@ class ModifyComponentRequest:
 
     @property
     def body(self):
-        """Gets the body of this ModifyComponentRequest.
+        r"""Gets the body of this ModifyComponentRequest.
 
         :return: The body of this ModifyComponentRequest.
         :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentModify`
@@ -108,7 +108,7 @@ class ModifyComponentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ModifyComponentRequest.
+        r"""Sets the body of this ModifyComponentRequest.
 
         :param body: The body of this ModifyComponentRequest.
         :type body: :class:`huaweicloudsdkservicestage.v3.ComponentModify`

@@ -33,7 +33,7 @@ class ListRpoStatisticsRequest:
     }
 
     def __init__(self, limit=None, offset=None, start_time=None, end_time=None, resource_type=None):
-        """ListRpoStatisticsRequest
+        r"""ListRpoStatisticsRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListRpoStatisticsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRpoStatisticsRequest.
+        r"""Gets the limit of this ListRpoStatisticsRequest.
 
         每次请求返回结果个数限制，取值范围为[0,1000]的正整数，默认值为1000。
 
@@ -82,7 +82,7 @@ class ListRpoStatisticsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRpoStatisticsRequest.
+        r"""Sets the limit of this ListRpoStatisticsRequest.
 
         每次请求返回结果个数限制，取值范围为[0,1000]的正整数，默认值为1000。
 
@@ -93,7 +93,7 @@ class ListRpoStatisticsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListRpoStatisticsRequest.
+        r"""Gets the offset of this ListRpoStatisticsRequest.
 
         每次请求开始的下标，即偏移量，默认值为0。offset必须为数字，不能为负数。
 
@@ -104,7 +104,7 @@ class ListRpoStatisticsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListRpoStatisticsRequest.
+        r"""Sets the offset of this ListRpoStatisticsRequest.
 
         每次请求开始的下标，即偏移量，默认值为0。offset必须为数字，不能为负数。
 
@@ -115,7 +115,7 @@ class ListRpoStatisticsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListRpoStatisticsRequest.
+        r"""Gets the start_time of this ListRpoStatisticsRequest.
 
         开始时间。默认格式为：\"yyyy-MM-dd HH:mm:ss.SSS\"，例：\"2019-04-01 12:00:00.000\"。
 
@@ -126,7 +126,7 @@ class ListRpoStatisticsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListRpoStatisticsRequest.
+        r"""Sets the start_time of this ListRpoStatisticsRequest.
 
         开始时间。默认格式为：\"yyyy-MM-dd HH:mm:ss.SSS\"，例：\"2019-04-01 12:00:00.000\"。
 
@@ -137,7 +137,7 @@ class ListRpoStatisticsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListRpoStatisticsRequest.
+        r"""Gets the end_time of this ListRpoStatisticsRequest.
 
         结束时间。默认格式为：\"yyyy-MM-dd HH:mm:ss.SSS\"，例：\"2019-04-01 12:00:00.000\"。
 
@@ -148,7 +148,7 @@ class ListRpoStatisticsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListRpoStatisticsRequest.
+        r"""Sets the end_time of this ListRpoStatisticsRequest.
 
         结束时间。默认格式为：\"yyyy-MM-dd HH:mm:ss.SSS\"，例：\"2019-04-01 12:00:00.000\"。
 
@@ -159,7 +159,7 @@ class ListRpoStatisticsRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ListRpoStatisticsRequest.
+        r"""Gets the resource_type of this ListRpoStatisticsRequest.
 
         资源类型。replication：表示查询复制对的RPO超标趋势记录。
 
@@ -170,7 +170,7 @@ class ListRpoStatisticsRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ListRpoStatisticsRequest.
+        r"""Sets the resource_type of this ListRpoStatisticsRequest.
 
         资源类型。replication：表示查询复制对的RPO超标趋势记录。
 

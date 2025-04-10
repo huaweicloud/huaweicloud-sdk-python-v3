@@ -35,7 +35,7 @@ class UpdateTemplates:
     }
 
     def __init__(self, name=None, description=None, tags=None, status=None, obs_url=None, is_servicestage=None):
-        """UpdateTemplates
+        r"""UpdateTemplates
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class UpdateTemplates:
 
     @property
     def name(self):
-        """Gets the name of this UpdateTemplates.
+        r"""Gets the name of this UpdateTemplates.
 
         模板名称,非必填
 
@@ -89,7 +89,7 @@ class UpdateTemplates:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateTemplates.
+        r"""Sets the name of this UpdateTemplates.
 
         模板名称,非必填
 
@@ -100,7 +100,7 @@ class UpdateTemplates:
 
     @property
     def description(self):
-        """Gets the description of this UpdateTemplates.
+        r"""Gets the description of this UpdateTemplates.
 
         模板描述,非必填
 
@@ -111,7 +111,7 @@ class UpdateTemplates:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateTemplates.
+        r"""Sets the description of this UpdateTemplates.
 
         模板描述,非必填
 
@@ -122,7 +122,7 @@ class UpdateTemplates:
 
     @property
     def tags(self):
-        """Gets the tags of this UpdateTemplates.
+        r"""Gets the tags of this UpdateTemplates.
 
         模板标签,非必填
 
@@ -133,7 +133,7 @@ class UpdateTemplates:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this UpdateTemplates.
+        r"""Sets the tags of this UpdateTemplates.
 
         模板标签,非必填
 
@@ -144,7 +144,7 @@ class UpdateTemplates:
 
     @property
     def status(self):
-        """Gets the status of this UpdateTemplates.
+        r"""Gets the status of this UpdateTemplates.
 
         模板状态,非必填
 
@@ -155,7 +155,7 @@ class UpdateTemplates:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateTemplates.
+        r"""Sets the status of this UpdateTemplates.
 
         模板状态,非必填
 
@@ -166,7 +166,7 @@ class UpdateTemplates:
 
     @property
     def obs_url(self):
-        """Gets the obs_url of this UpdateTemplates.
+        r"""Gets the obs_url of this UpdateTemplates.
 
         obs地址,必填
 
@@ -177,7 +177,7 @@ class UpdateTemplates:
 
     @obs_url.setter
     def obs_url(self, obs_url):
-        """Sets the obs_url of this UpdateTemplates.
+        r"""Sets the obs_url of this UpdateTemplates.
 
         obs地址,必填
 
@@ -188,7 +188,7 @@ class UpdateTemplates:
 
     @property
     def is_servicestage(self):
-        """Gets the is_servicestage of this UpdateTemplates.
+        r"""Gets the is_servicestage of this UpdateTemplates.
 
         应用是否托管到servicestage,1是托管,0是不托管,非必填
 
@@ -199,7 +199,7 @@ class UpdateTemplates:
 
     @is_servicestage.setter
     def is_servicestage(self, is_servicestage):
-        """Sets the is_servicestage of this UpdateTemplates.
+        r"""Sets the is_servicestage of this UpdateTemplates.
 
         应用是否托管到servicestage,1是托管,0是不托管,非必填
 

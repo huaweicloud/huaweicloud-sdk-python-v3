@@ -37,7 +37,7 @@ class ShowHostedDirectConnectRequest:
     }
 
     def __init__(self, hosted_connect_id=None, limit=None, marker=None, fields=None, sort_dir=None, sort_key=None, hosting_id=None):
-        """ShowHostedDirectConnectRequest
+        r"""ShowHostedDirectConnectRequest
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class ShowHostedDirectConnectRequest:
 
     @property
     def hosted_connect_id(self):
-        """Gets the hosted_connect_id of this ShowHostedDirectConnectRequest.
+        r"""Gets the hosted_connect_id of this ShowHostedDirectConnectRequest.
 
         托管专线连接ID。
 
@@ -95,7 +95,7 @@ class ShowHostedDirectConnectRequest:
 
     @hosted_connect_id.setter
     def hosted_connect_id(self, hosted_connect_id):
-        """Sets the hosted_connect_id of this ShowHostedDirectConnectRequest.
+        r"""Sets the hosted_connect_id of this ShowHostedDirectConnectRequest.
 
         托管专线连接ID。
 
@@ -106,7 +106,7 @@ class ShowHostedDirectConnectRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowHostedDirectConnectRequest.
+        r"""Gets the limit of this ShowHostedDirectConnectRequest.
 
         每页返回的个数。 取值范围：1~2000。
 
@@ -117,7 +117,7 @@ class ShowHostedDirectConnectRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowHostedDirectConnectRequest.
+        r"""Sets the limit of this ShowHostedDirectConnectRequest.
 
         每页返回的个数。 取值范围：1~2000。
 
@@ -128,7 +128,7 @@ class ShowHostedDirectConnectRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ShowHostedDirectConnectRequest.
+        r"""Gets the marker of this ShowHostedDirectConnectRequest.
 
         上一页最后一条资源记录的ID，为空时为查询第一页。 使用说明：必须与limit一起使用。
 
@@ -139,7 +139,7 @@ class ShowHostedDirectConnectRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ShowHostedDirectConnectRequest.
+        r"""Sets the marker of this ShowHostedDirectConnectRequest.
 
         上一页最后一条资源记录的ID，为空时为查询第一页。 使用说明：必须与limit一起使用。
 
@@ -150,7 +150,7 @@ class ShowHostedDirectConnectRequest:
 
     @property
     def fields(self):
-        """Gets the fields of this ShowHostedDirectConnectRequest.
+        r"""Gets the fields of this ShowHostedDirectConnectRequest.
 
         显示字段列表
 
@@ -161,7 +161,7 @@ class ShowHostedDirectConnectRequest:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this ShowHostedDirectConnectRequest.
+        r"""Sets the fields of this ShowHostedDirectConnectRequest.
 
         显示字段列表
 
@@ -172,7 +172,7 @@ class ShowHostedDirectConnectRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ShowHostedDirectConnectRequest.
+        r"""Gets the sort_dir of this ShowHostedDirectConnectRequest.
 
         返回结果按照升序(asc)或降序(desc)排列，默认为asc
 
@@ -183,7 +183,7 @@ class ShowHostedDirectConnectRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ShowHostedDirectConnectRequest.
+        r"""Sets the sort_dir of this ShowHostedDirectConnectRequest.
 
         返回结果按照升序(asc)或降序(desc)排列，默认为asc
 
@@ -194,7 +194,7 @@ class ShowHostedDirectConnectRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ShowHostedDirectConnectRequest.
+        r"""Gets the sort_key of this ShowHostedDirectConnectRequest.
 
         排序字段。
 
@@ -205,7 +205,7 @@ class ShowHostedDirectConnectRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ShowHostedDirectConnectRequest.
+        r"""Sets the sort_key of this ShowHostedDirectConnectRequest.
 
         排序字段。
 
@@ -216,7 +216,7 @@ class ShowHostedDirectConnectRequest:
 
     @property
     def hosting_id(self):
-        """Gets the hosting_id of this ShowHostedDirectConnectRequest.
+        r"""Gets the hosting_id of this ShowHostedDirectConnectRequest.
 
         根椐运营专线ID过滤托管专线列表
 
@@ -227,7 +227,7 @@ class ShowHostedDirectConnectRequest:
 
     @hosting_id.setter
     def hosting_id(self, hosting_id):
-        """Sets the hosting_id of this ShowHostedDirectConnectRequest.
+        r"""Sets the hosting_id of this ShowHostedDirectConnectRequest.
 
         根椐运营专线ID过滤托管专线列表
 

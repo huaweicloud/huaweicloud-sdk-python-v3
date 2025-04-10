@@ -27,7 +27,7 @@ class UntagCentralNetworkRequest:
     }
 
     def __init__(self, central_network_id=None, body=None):
-        """UntagCentralNetworkRequest
+        r"""UntagCentralNetworkRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UntagCentralNetworkRequest:
 
     @property
     def central_network_id(self):
-        """Gets the central_network_id of this UntagCentralNetworkRequest.
+        r"""Gets the central_network_id of this UntagCentralNetworkRequest.
 
         中心网络的ID。
 
@@ -60,7 +60,7 @@ class UntagCentralNetworkRequest:
 
     @central_network_id.setter
     def central_network_id(self, central_network_id):
-        """Sets the central_network_id of this UntagCentralNetworkRequest.
+        r"""Sets the central_network_id of this UntagCentralNetworkRequest.
 
         中心网络的ID。
 
@@ -71,7 +71,7 @@ class UntagCentralNetworkRequest:
 
     @property
     def body(self):
-        """Gets the body of this UntagCentralNetworkRequest.
+        r"""Gets the body of this UntagCentralNetworkRequest.
 
         :return: The body of this UntagCentralNetworkRequest.
         :rtype: :class:`huaweicloudsdkcc.v3.UntagCentralNetworkRequestBody`
@@ -80,7 +80,7 @@ class UntagCentralNetworkRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UntagCentralNetworkRequest.
+        r"""Sets the body of this UntagCentralNetworkRequest.
 
         :param body: The body of this UntagCentralNetworkRequest.
         :type body: :class:`huaweicloudsdkcc.v3.UntagCentralNetworkRequestBody`

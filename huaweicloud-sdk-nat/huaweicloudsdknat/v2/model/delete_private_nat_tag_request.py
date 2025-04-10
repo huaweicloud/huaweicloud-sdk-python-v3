@@ -27,7 +27,7 @@ class DeletePrivateNatTagRequest:
     }
 
     def __init__(self, key=None, resource_id=None):
-        """DeletePrivateNatTagRequest
+        r"""DeletePrivateNatTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeletePrivateNatTagRequest:
 
     @property
     def key(self):
-        """Gets the key of this DeletePrivateNatTagRequest.
+        r"""Gets the key of this DeletePrivateNatTagRequest.
 
         标签key。
 
@@ -59,7 +59,7 @@ class DeletePrivateNatTagRequest:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this DeletePrivateNatTagRequest.
+        r"""Sets the key of this DeletePrivateNatTagRequest.
 
         标签key。
 
@@ -70,7 +70,7 @@ class DeletePrivateNatTagRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this DeletePrivateNatTagRequest.
+        r"""Gets the resource_id of this DeletePrivateNatTagRequest.
 
         私网NAT网关的ID。
 
@@ -81,7 +81,7 @@ class DeletePrivateNatTagRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this DeletePrivateNatTagRequest.
+        r"""Sets the resource_id of this DeletePrivateNatTagRequest.
 
         私网NAT网关的ID。
 

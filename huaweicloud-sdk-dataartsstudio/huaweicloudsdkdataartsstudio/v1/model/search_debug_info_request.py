@@ -33,7 +33,7 @@ class SearchDebugInfoRequest:
     }
 
     def __init__(self, workspace=None, dlm_type=None, api_id=None, limit=None, offset=None):
-        """SearchDebugInfoRequest
+        r"""SearchDebugInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class SearchDebugInfoRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this SearchDebugInfoRequest.
+        r"""Gets the workspace of this SearchDebugInfoRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -80,7 +80,7 @@ class SearchDebugInfoRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this SearchDebugInfoRequest.
+        r"""Sets the workspace of this SearchDebugInfoRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -91,7 +91,7 @@ class SearchDebugInfoRequest:
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this SearchDebugInfoRequest.
+        r"""Gets the dlm_type of this SearchDebugInfoRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -102,7 +102,7 @@ class SearchDebugInfoRequest:
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this SearchDebugInfoRequest.
+        r"""Sets the dlm_type of this SearchDebugInfoRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -113,7 +113,7 @@ class SearchDebugInfoRequest:
 
     @property
     def api_id(self):
-        """Gets the api_id of this SearchDebugInfoRequest.
+        r"""Gets the api_id of this SearchDebugInfoRequest.
 
         api编号。
 
@@ -124,7 +124,7 @@ class SearchDebugInfoRequest:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this SearchDebugInfoRequest.
+        r"""Sets the api_id of this SearchDebugInfoRequest.
 
         api编号。
 
@@ -135,7 +135,7 @@ class SearchDebugInfoRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this SearchDebugInfoRequest.
+        r"""Gets the limit of this SearchDebugInfoRequest.
 
         limit。
 
@@ -146,7 +146,7 @@ class SearchDebugInfoRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchDebugInfoRequest.
+        r"""Sets the limit of this SearchDebugInfoRequest.
 
         limit。
 
@@ -157,7 +157,7 @@ class SearchDebugInfoRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this SearchDebugInfoRequest.
+        r"""Gets the offset of this SearchDebugInfoRequest.
 
         offset。
 
@@ -168,7 +168,7 @@ class SearchDebugInfoRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchDebugInfoRequest.
+        r"""Sets the offset of this SearchDebugInfoRequest.
 
         offset。
 

@@ -35,7 +35,7 @@ class DatasourceRestDTO:
     }
 
     def __init__(self, id=None, name=None, type=None, content=None, created_time=None, modified_time=None):
-        """DatasourceRestDTO
+        r"""DatasourceRestDTO
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class DatasourceRestDTO:
 
     @property
     def id(self):
-        """Gets the id of this DatasourceRestDTO.
+        r"""Gets the id of this DatasourceRestDTO.
 
         数据源id
 
@@ -89,7 +89,7 @@ class DatasourceRestDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DatasourceRestDTO.
+        r"""Sets the id of this DatasourceRestDTO.
 
         数据源id
 
@@ -100,7 +100,7 @@ class DatasourceRestDTO:
 
     @property
     def name(self):
-        """Gets the name of this DatasourceRestDTO.
+        r"""Gets the name of this DatasourceRestDTO.
 
         数据源名称
 
@@ -111,7 +111,7 @@ class DatasourceRestDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DatasourceRestDTO.
+        r"""Sets the name of this DatasourceRestDTO.
 
         数据源名称
 
@@ -122,7 +122,7 @@ class DatasourceRestDTO:
 
     @property
     def type(self):
-        """Gets the type of this DatasourceRestDTO.
+        r"""Gets the type of this DatasourceRestDTO.
 
         数据源类型, 包括：IOTDA、API[、OBS、DIS、SMN、FUNCTION_GRAPH、MODEL_ARTS、DCS、KAFKA](tag:IoTA-Cloud-Only)、NODE。数据源不支持修改类型。
 
@@ -133,7 +133,7 @@ class DatasourceRestDTO:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DatasourceRestDTO.
+        r"""Sets the type of this DatasourceRestDTO.
 
         数据源类型, 包括：IOTDA、API[、OBS、DIS、SMN、FUNCTION_GRAPH、MODEL_ARTS、DCS、KAFKA](tag:IoTA-Cloud-Only)、NODE。数据源不支持修改类型。
 
@@ -144,7 +144,7 @@ class DatasourceRestDTO:
 
     @property
     def content(self):
-        """Gets the content of this DatasourceRestDTO.
+        r"""Gets the content of this DatasourceRestDTO.
 
         :return: The content of this DatasourceRestDTO.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ContentDetailRsp`
@@ -153,7 +153,7 @@ class DatasourceRestDTO:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this DatasourceRestDTO.
+        r"""Sets the content of this DatasourceRestDTO.
 
         :param content: The content of this DatasourceRestDTO.
         :type content: :class:`huaweicloudsdkiotanalytics.v1.ContentDetailRsp`
@@ -162,7 +162,7 @@ class DatasourceRestDTO:
 
     @property
     def created_time(self):
-        """Gets the created_time of this DatasourceRestDTO.
+        r"""Gets the created_time of this DatasourceRestDTO.
 
         创建时间，格式为：yyyy-MM-dd'T'HH:mm:ss'Z'
 
@@ -173,7 +173,7 @@ class DatasourceRestDTO:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this DatasourceRestDTO.
+        r"""Sets the created_time of this DatasourceRestDTO.
 
         创建时间，格式为：yyyy-MM-dd'T'HH:mm:ss'Z'
 
@@ -184,7 +184,7 @@ class DatasourceRestDTO:
 
     @property
     def modified_time(self):
-        """Gets the modified_time of this DatasourceRestDTO.
+        r"""Gets the modified_time of this DatasourceRestDTO.
 
         修改时间，格式为：yyyy-MM-dd'T'HH:mm:ss'Z'
 
@@ -195,7 +195,7 @@ class DatasourceRestDTO:
 
     @modified_time.setter
     def modified_time(self, modified_time):
-        """Sets the modified_time of this DatasourceRestDTO.
+        r"""Sets the modified_time of this DatasourceRestDTO.
 
         修改时间，格式为：yyyy-MM-dd'T'HH:mm:ss'Z'
 

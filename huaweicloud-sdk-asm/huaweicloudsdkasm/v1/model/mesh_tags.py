@@ -27,7 +27,7 @@ class MeshTags:
     }
 
     def __init__(self, key=None, value=None):
-        """MeshTags
+        r"""MeshTags
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class MeshTags:
 
     @property
     def key(self):
-        """Gets the key of this MeshTags.
+        r"""Gets the key of this MeshTags.
 
         Key值。  不能为空，最多支持128个字符  可用UTF-8格式表示的汉字、字母、数字和空格  支持部分特殊字符：_.:/=+-@  不能以\"_sys_\"开头
 
@@ -61,7 +61,7 @@ class MeshTags:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this MeshTags.
+        r"""Sets the key of this MeshTags.
 
         Key值。  不能为空，最多支持128个字符  可用UTF-8格式表示的汉字、字母、数字和空格  支持部分特殊字符：_.:/=+-@  不能以\"_sys_\"开头
 
@@ -72,7 +72,7 @@ class MeshTags:
 
     @property
     def value(self):
-        """Gets the value of this MeshTags.
+        r"""Gets the value of this MeshTags.
 
         Value值。  可以为空但不能缺省，最多支持255个字符  可用UTF-8格式表示的汉字、字母、数字和空格  支持部分特殊字符：_.:/=+-@
 
@@ -83,7 +83,7 @@ class MeshTags:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this MeshTags.
+        r"""Sets the value of this MeshTags.
 
         Value值。  可以为空但不能缺省，最多支持255个字符  可用UTF-8格式表示的汉字、字母、数字和空格  支持部分特殊字符：_.:/=+-@
 

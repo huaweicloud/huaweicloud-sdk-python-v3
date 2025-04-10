@@ -57,7 +57,7 @@ class ListInternetBandwidthsRequest:
     }
 
     def __init__(self, limit=None, offset=None, marker=None, page_reverse=None, fields=None, ext_fields=None, sort_key=None, sort_dir=None, id=None, size=None, name=None, name_like=None, access_site=None, status=None, enterprise_project_id=None, tags=None, type=None):
-        """ListInternetBandwidthsRequest
+        r"""ListInternetBandwidthsRequest
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class ListInternetBandwidthsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListInternetBandwidthsRequest.
+        r"""Gets the limit of this ListInternetBandwidthsRequest.
 
         每页条数
 
@@ -166,7 +166,7 @@ class ListInternetBandwidthsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListInternetBandwidthsRequest.
+        r"""Sets the limit of this ListInternetBandwidthsRequest.
 
         每页条数
 
@@ -177,7 +177,7 @@ class ListInternetBandwidthsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListInternetBandwidthsRequest.
+        r"""Gets the offset of this ListInternetBandwidthsRequest.
 
         分页起始点
 
@@ -188,7 +188,7 @@ class ListInternetBandwidthsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListInternetBandwidthsRequest.
+        r"""Sets the offset of this ListInternetBandwidthsRequest.
 
         分页起始点
 
@@ -199,7 +199,7 @@ class ListInternetBandwidthsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListInternetBandwidthsRequest.
+        r"""Gets the marker of this ListInternetBandwidthsRequest.
 
         分页起始点
 
@@ -210,7 +210,7 @@ class ListInternetBandwidthsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListInternetBandwidthsRequest.
+        r"""Sets the marker of this ListInternetBandwidthsRequest.
 
         分页起始点
 
@@ -221,7 +221,7 @@ class ListInternetBandwidthsRequest:
 
     @property
     def page_reverse(self):
-        """Gets the page_reverse of this ListInternetBandwidthsRequest.
+        r"""Gets the page_reverse of this ListInternetBandwidthsRequest.
 
         翻页方向
 
@@ -232,7 +232,7 @@ class ListInternetBandwidthsRequest:
 
     @page_reverse.setter
     def page_reverse(self, page_reverse):
-        """Sets the page_reverse of this ListInternetBandwidthsRequest.
+        r"""Sets the page_reverse of this ListInternetBandwidthsRequest.
 
         翻页方向
 
@@ -243,7 +243,7 @@ class ListInternetBandwidthsRequest:
 
     @property
     def fields(self):
-        """Gets the fields of this ListInternetBandwidthsRequest.
+        r"""Gets the fields of this ListInternetBandwidthsRequest.
 
         :return: The fields of this ListInternetBandwidthsRequest.
         :rtype: list[str]
@@ -252,7 +252,7 @@ class ListInternetBandwidthsRequest:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this ListInternetBandwidthsRequest.
+        r"""Sets the fields of this ListInternetBandwidthsRequest.
 
         :param fields: The fields of this ListInternetBandwidthsRequest.
         :type fields: list[str]
@@ -261,7 +261,7 @@ class ListInternetBandwidthsRequest:
 
     @property
     def ext_fields(self):
-        """Gets the ext_fields of this ListInternetBandwidthsRequest.
+        r"""Gets the ext_fields of this ListInternetBandwidthsRequest.
 
         :return: The ext_fields of this ListInternetBandwidthsRequest.
         :rtype: list[str]
@@ -270,7 +270,7 @@ class ListInternetBandwidthsRequest:
 
     @ext_fields.setter
     def ext_fields(self, ext_fields):
-        """Sets the ext_fields of this ListInternetBandwidthsRequest.
+        r"""Sets the ext_fields of this ListInternetBandwidthsRequest.
 
         :param ext_fields: The ext_fields of this ListInternetBandwidthsRequest.
         :type ext_fields: list[str]
@@ -279,7 +279,7 @@ class ListInternetBandwidthsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListInternetBandwidthsRequest.
+        r"""Gets the sort_key of this ListInternetBandwidthsRequest.
 
         按照sort_key指定的字段排序
 
@@ -290,7 +290,7 @@ class ListInternetBandwidthsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListInternetBandwidthsRequest.
+        r"""Sets the sort_key of this ListInternetBandwidthsRequest.
 
         按照sort_key指定的字段排序
 
@@ -301,7 +301,7 @@ class ListInternetBandwidthsRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListInternetBandwidthsRequest.
+        r"""Gets the sort_dir of this ListInternetBandwidthsRequest.
 
         排序的方向，倒序或者正序
 
@@ -312,7 +312,7 @@ class ListInternetBandwidthsRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListInternetBandwidthsRequest.
+        r"""Sets the sort_dir of this ListInternetBandwidthsRequest.
 
         排序的方向，倒序或者正序
 
@@ -323,7 +323,7 @@ class ListInternetBandwidthsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListInternetBandwidthsRequest.
+        r"""Gets the id of this ListInternetBandwidthsRequest.
 
         :return: The id of this ListInternetBandwidthsRequest.
         :rtype: list[str]
@@ -332,7 +332,7 @@ class ListInternetBandwidthsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListInternetBandwidthsRequest.
+        r"""Sets the id of this ListInternetBandwidthsRequest.
 
         :param id: The id of this ListInternetBandwidthsRequest.
         :type id: list[str]
@@ -341,7 +341,7 @@ class ListInternetBandwidthsRequest:
 
     @property
     def size(self):
-        """Gets the size of this ListInternetBandwidthsRequest.
+        r"""Gets the size of this ListInternetBandwidthsRequest.
 
         :return: The size of this ListInternetBandwidthsRequest.
         :rtype: list[int]
@@ -350,7 +350,7 @@ class ListInternetBandwidthsRequest:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListInternetBandwidthsRequest.
+        r"""Sets the size of this ListInternetBandwidthsRequest.
 
         :param size: The size of this ListInternetBandwidthsRequest.
         :type size: list[int]
@@ -359,7 +359,7 @@ class ListInternetBandwidthsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListInternetBandwidthsRequest.
+        r"""Gets the name of this ListInternetBandwidthsRequest.
 
         :return: The name of this ListInternetBandwidthsRequest.
         :rtype: list[str]
@@ -368,7 +368,7 @@ class ListInternetBandwidthsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListInternetBandwidthsRequest.
+        r"""Sets the name of this ListInternetBandwidthsRequest.
 
         :param name: The name of this ListInternetBandwidthsRequest.
         :type name: list[str]
@@ -377,7 +377,7 @@ class ListInternetBandwidthsRequest:
 
     @property
     def name_like(self):
-        """Gets the name_like of this ListInternetBandwidthsRequest.
+        r"""Gets the name_like of this ListInternetBandwidthsRequest.
 
         :return: The name_like of this ListInternetBandwidthsRequest.
         :rtype: str
@@ -386,7 +386,7 @@ class ListInternetBandwidthsRequest:
 
     @name_like.setter
     def name_like(self, name_like):
-        """Sets the name_like of this ListInternetBandwidthsRequest.
+        r"""Sets the name_like of this ListInternetBandwidthsRequest.
 
         :param name_like: The name_like of this ListInternetBandwidthsRequest.
         :type name_like: str
@@ -395,7 +395,7 @@ class ListInternetBandwidthsRequest:
 
     @property
     def access_site(self):
-        """Gets the access_site of this ListInternetBandwidthsRequest.
+        r"""Gets the access_site of this ListInternetBandwidthsRequest.
 
         :return: The access_site of this ListInternetBandwidthsRequest.
         :rtype: list[str]
@@ -404,7 +404,7 @@ class ListInternetBandwidthsRequest:
 
     @access_site.setter
     def access_site(self, access_site):
-        """Sets the access_site of this ListInternetBandwidthsRequest.
+        r"""Sets the access_site of this ListInternetBandwidthsRequest.
 
         :param access_site: The access_site of this ListInternetBandwidthsRequest.
         :type access_site: list[str]
@@ -413,7 +413,7 @@ class ListInternetBandwidthsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListInternetBandwidthsRequest.
+        r"""Gets the status of this ListInternetBandwidthsRequest.
 
         :return: The status of this ListInternetBandwidthsRequest.
         :rtype: list[str]
@@ -422,7 +422,7 @@ class ListInternetBandwidthsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListInternetBandwidthsRequest.
+        r"""Sets the status of this ListInternetBandwidthsRequest.
 
         :param status: The status of this ListInternetBandwidthsRequest.
         :type status: list[str]
@@ -431,7 +431,7 @@ class ListInternetBandwidthsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListInternetBandwidthsRequest.
+        r"""Gets the enterprise_project_id of this ListInternetBandwidthsRequest.
 
         :return: The enterprise_project_id of this ListInternetBandwidthsRequest.
         :rtype: list[str]
@@ -440,7 +440,7 @@ class ListInternetBandwidthsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListInternetBandwidthsRequest.
+        r"""Sets the enterprise_project_id of this ListInternetBandwidthsRequest.
 
         :param enterprise_project_id: The enterprise_project_id of this ListInternetBandwidthsRequest.
         :type enterprise_project_id: list[str]
@@ -449,7 +449,7 @@ class ListInternetBandwidthsRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this ListInternetBandwidthsRequest.
+        r"""Gets the tags of this ListInternetBandwidthsRequest.
 
         :return: The tags of this ListInternetBandwidthsRequest.
         :rtype: list[str]
@@ -458,7 +458,7 @@ class ListInternetBandwidthsRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListInternetBandwidthsRequest.
+        r"""Sets the tags of this ListInternetBandwidthsRequest.
 
         :param tags: The tags of this ListInternetBandwidthsRequest.
         :type tags: list[str]
@@ -467,7 +467,7 @@ class ListInternetBandwidthsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListInternetBandwidthsRequest.
+        r"""Gets the type of this ListInternetBandwidthsRequest.
 
         :return: The type of this ListInternetBandwidthsRequest.
         :rtype: list[str]
@@ -476,7 +476,7 @@ class ListInternetBandwidthsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListInternetBandwidthsRequest.
+        r"""Sets the type of this ListInternetBandwidthsRequest.
 
         :param type: The type of this ListInternetBandwidthsRequest.
         :type type: list[str]

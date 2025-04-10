@@ -26,7 +26,7 @@ class ListClickHouseInstanceNodeResponse(SdkResponse):
     }
 
     def __init__(self, node_list=None):
-        """ListClickHouseInstanceNodeResponse
+        r"""ListClickHouseInstanceNodeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListClickHouseInstanceNodeResponse(SdkResponse):
 
     @property
     def node_list(self):
-        """Gets the node_list of this ListClickHouseInstanceNodeResponse.
+        r"""Gets the node_list of this ListClickHouseInstanceNodeResponse.
 
         ClickHouse实例节点列表。
 
@@ -55,7 +55,7 @@ class ListClickHouseInstanceNodeResponse(SdkResponse):
 
     @node_list.setter
     def node_list(self, node_list):
-        """Sets the node_list of this ListClickHouseInstanceNodeResponse.
+        r"""Sets the node_list of this ListClickHouseInstanceNodeResponse.
 
         ClickHouse实例节点列表。
 

@@ -28,7 +28,7 @@ class ListAlarmSubsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, alarm_subscriptions=None):
-        """ListAlarmSubsResponse
+        r"""ListAlarmSubsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAlarmSubsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListAlarmSubsResponse.
+        r"""Gets the count of this ListAlarmSubsResponse.
 
         告警订阅总数
 
@@ -62,7 +62,7 @@ class ListAlarmSubsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListAlarmSubsResponse.
+        r"""Sets the count of this ListAlarmSubsResponse.
 
         告警订阅总数
 
@@ -73,7 +73,7 @@ class ListAlarmSubsResponse(SdkResponse):
 
     @property
     def alarm_subscriptions(self):
-        """Gets the alarm_subscriptions of this ListAlarmSubsResponse.
+        r"""Gets the alarm_subscriptions of this ListAlarmSubsResponse.
 
         告警订阅列表
 
@@ -84,7 +84,7 @@ class ListAlarmSubsResponse(SdkResponse):
 
     @alarm_subscriptions.setter
     def alarm_subscriptions(self, alarm_subscriptions):
-        """Sets the alarm_subscriptions of this ListAlarmSubsResponse.
+        r"""Sets the alarm_subscriptions of this ListAlarmSubsResponse.
 
         告警订阅列表
 

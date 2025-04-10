@@ -26,7 +26,7 @@ class ShowPropertyValuesResponse(SdkResponse):
     }
 
     def __init__(self, properties=None):
-        """ShowPropertyValuesResponse
+        r"""ShowPropertyValuesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowPropertyValuesResponse(SdkResponse):
 
     @property
     def properties(self):
-        """Gets the properties of this ShowPropertyValuesResponse.
+        r"""Gets the properties of this ShowPropertyValuesResponse.
 
         查询设备的属性值
 
@@ -55,7 +55,7 @@ class ShowPropertyValuesResponse(SdkResponse):
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this ShowPropertyValuesResponse.
+        r"""Sets the properties of this ShowPropertyValuesResponse.
 
         查询设备的属性值
 

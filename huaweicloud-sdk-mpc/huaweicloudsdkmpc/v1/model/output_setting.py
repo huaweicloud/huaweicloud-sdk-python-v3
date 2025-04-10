@@ -33,7 +33,7 @@ class OutputSetting:
     }
 
     def __init__(self, format=None, video=None, audio=None, hls=None, output=None):
-        """OutputSetting
+        r"""OutputSetting
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class OutputSetting:
 
     @property
     def format(self):
-        """Gets the format of this OutputSetting.
+        r"""Gets the format of this OutputSetting.
 
         剪切或拼接的输出封装格式。
 
@@ -82,7 +82,7 @@ class OutputSetting:
 
     @format.setter
     def format(self, format):
-        """Sets the format of this OutputSetting.
+        r"""Sets the format of this OutputSetting.
 
         剪切或拼接的输出封装格式。
 
@@ -93,7 +93,7 @@ class OutputSetting:
 
     @property
     def video(self):
-        """Gets the video of this OutputSetting.
+        r"""Gets the video of this OutputSetting.
 
         :return: The video of this OutputSetting.
         :rtype: :class:`huaweicloudsdkmpc.v1.EditVideoInfo`
@@ -102,7 +102,7 @@ class OutputSetting:
 
     @video.setter
     def video(self, video):
-        """Sets the video of this OutputSetting.
+        r"""Sets the video of this OutputSetting.
 
         :param video: The video of this OutputSetting.
         :type video: :class:`huaweicloudsdkmpc.v1.EditVideoInfo`
@@ -111,7 +111,7 @@ class OutputSetting:
 
     @property
     def audio(self):
-        """Gets the audio of this OutputSetting.
+        r"""Gets the audio of this OutputSetting.
 
         :return: The audio of this OutputSetting.
         :rtype: :class:`huaweicloudsdkmpc.v1.EditAudioInfo`
@@ -120,7 +120,7 @@ class OutputSetting:
 
     @audio.setter
     def audio(self, audio):
-        """Sets the audio of this OutputSetting.
+        r"""Sets the audio of this OutputSetting.
 
         :param audio: The audio of this OutputSetting.
         :type audio: :class:`huaweicloudsdkmpc.v1.EditAudioInfo`
@@ -129,7 +129,7 @@ class OutputSetting:
 
     @property
     def hls(self):
-        """Gets the hls of this OutputSetting.
+        r"""Gets the hls of this OutputSetting.
 
         :return: The hls of this OutputSetting.
         :rtype: :class:`huaweicloudsdkmpc.v1.EditHlsInfo`
@@ -138,7 +138,7 @@ class OutputSetting:
 
     @hls.setter
     def hls(self, hls):
-        """Sets the hls of this OutputSetting.
+        r"""Sets the hls of this OutputSetting.
 
         :param hls: The hls of this OutputSetting.
         :type hls: :class:`huaweicloudsdkmpc.v1.EditHlsInfo`
@@ -147,7 +147,7 @@ class OutputSetting:
 
     @property
     def output(self):
-        """Gets the output of this OutputSetting.
+        r"""Gets the output of this OutputSetting.
 
         :return: The output of this OutputSetting.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -156,7 +156,7 @@ class OutputSetting:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this OutputSetting.
+        r"""Sets the output of this OutputSetting.
 
         :param output: The output of this OutputSetting.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`

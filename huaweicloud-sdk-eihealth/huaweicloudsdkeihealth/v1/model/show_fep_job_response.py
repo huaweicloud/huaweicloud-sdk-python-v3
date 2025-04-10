@@ -40,7 +40,7 @@ class ShowFepJobResponse(SdkResponse):
     }
 
     def __init__(self, basic_info=None, receptor=None, add_membrane=None, ligands=None, graph=None, params=None, job_result=None, part_failed_reason=None):
-        """ShowFepJobResponse
+        r"""ShowFepJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ShowFepJobResponse(SdkResponse):
 
     @property
     def basic_info(self):
-        """Gets the basic_info of this ShowFepJobResponse.
+        r"""Gets the basic_info of this ShowFepJobResponse.
 
         :return: The basic_info of this ShowFepJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DrugJobDto`
@@ -102,7 +102,7 @@ class ShowFepJobResponse(SdkResponse):
 
     @basic_info.setter
     def basic_info(self, basic_info):
-        """Sets the basic_info of this ShowFepJobResponse.
+        r"""Sets the basic_info of this ShowFepJobResponse.
 
         :param basic_info: The basic_info of this ShowFepJobResponse.
         :type basic_info: :class:`huaweicloudsdkeihealth.v1.DrugJobDto`
@@ -111,7 +111,7 @@ class ShowFepJobResponse(SdkResponse):
 
     @property
     def receptor(self):
-        """Gets the receptor of this ShowFepJobResponse.
+        r"""Gets the receptor of this ShowFepJobResponse.
 
         :return: The receptor of this ShowFepJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFile`
@@ -120,7 +120,7 @@ class ShowFepJobResponse(SdkResponse):
 
     @receptor.setter
     def receptor(self, receptor):
-        """Sets the receptor of this ShowFepJobResponse.
+        r"""Sets the receptor of this ShowFepJobResponse.
 
         :param receptor: The receptor of this ShowFepJobResponse.
         :type receptor: :class:`huaweicloudsdkeihealth.v1.ReceptorDrugFile`
@@ -129,7 +129,7 @@ class ShowFepJobResponse(SdkResponse):
 
     @property
     def add_membrane(self):
-        """Gets the add_membrane of this ShowFepJobResponse.
+        r"""Gets the add_membrane of this ShowFepJobResponse.
 
         是否加膜处理
 
@@ -140,7 +140,7 @@ class ShowFepJobResponse(SdkResponse):
 
     @add_membrane.setter
     def add_membrane(self, add_membrane):
-        """Sets the add_membrane of this ShowFepJobResponse.
+        r"""Sets the add_membrane of this ShowFepJobResponse.
 
         是否加膜处理
 
@@ -151,7 +151,7 @@ class ShowFepJobResponse(SdkResponse):
 
     @property
     def ligands(self):
-        """Gets the ligands of this ShowFepJobResponse.
+        r"""Gets the ligands of this ShowFepJobResponse.
 
         配体列表
 
@@ -162,7 +162,7 @@ class ShowFepJobResponse(SdkResponse):
 
     @ligands.setter
     def ligands(self, ligands):
-        """Sets the ligands of this ShowFepJobResponse.
+        r"""Sets the ligands of this ShowFepJobResponse.
 
         配体列表
 
@@ -173,7 +173,7 @@ class ShowFepJobResponse(SdkResponse):
 
     @property
     def graph(self):
-        """Gets the graph of this ShowFepJobResponse.
+        r"""Gets the graph of this ShowFepJobResponse.
 
         :return: The graph of this ShowFepJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.FepGraphDto`
@@ -182,7 +182,7 @@ class ShowFepJobResponse(SdkResponse):
 
     @graph.setter
     def graph(self, graph):
-        """Sets the graph of this ShowFepJobResponse.
+        r"""Sets the graph of this ShowFepJobResponse.
 
         :param graph: The graph of this ShowFepJobResponse.
         :type graph: :class:`huaweicloudsdkeihealth.v1.FepGraphDto`
@@ -191,7 +191,7 @@ class ShowFepJobResponse(SdkResponse):
 
     @property
     def params(self):
-        """Gets the params of this ShowFepJobResponse.
+        r"""Gets the params of this ShowFepJobResponse.
 
         :return: The params of this ShowFepJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.FepParamDto`
@@ -200,7 +200,7 @@ class ShowFepJobResponse(SdkResponse):
 
     @params.setter
     def params(self, params):
-        """Sets the params of this ShowFepJobResponse.
+        r"""Sets the params of this ShowFepJobResponse.
 
         :param params: The params of this ShowFepJobResponse.
         :type params: :class:`huaweicloudsdkeihealth.v1.FepParamDto`
@@ -209,7 +209,7 @@ class ShowFepJobResponse(SdkResponse):
 
     @property
     def job_result(self):
-        """Gets the job_result of this ShowFepJobResponse.
+        r"""Gets the job_result of this ShowFepJobResponse.
 
         :return: The job_result of this ShowFepJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.JobResult`
@@ -218,7 +218,7 @@ class ShowFepJobResponse(SdkResponse):
 
     @job_result.setter
     def job_result(self, job_result):
-        """Sets the job_result of this ShowFepJobResponse.
+        r"""Sets the job_result of this ShowFepJobResponse.
 
         :param job_result: The job_result of this ShowFepJobResponse.
         :type job_result: :class:`huaweicloudsdkeihealth.v1.JobResult`
@@ -227,7 +227,7 @@ class ShowFepJobResponse(SdkResponse):
 
     @property
     def part_failed_reason(self):
-        """Gets the part_failed_reason of this ShowFepJobResponse.
+        r"""Gets the part_failed_reason of this ShowFepJobResponse.
 
         部分失败原因和数量
 
@@ -238,7 +238,7 @@ class ShowFepJobResponse(SdkResponse):
 
     @part_failed_reason.setter
     def part_failed_reason(self, part_failed_reason):
-        """Sets the part_failed_reason of this ShowFepJobResponse.
+        r"""Sets the part_failed_reason of this ShowFepJobResponse.
 
         部分失败原因和数量
 

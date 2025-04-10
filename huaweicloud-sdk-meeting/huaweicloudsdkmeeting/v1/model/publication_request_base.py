@@ -33,7 +33,7 @@ class PublicationRequestBase:
     }
 
     def __init__(self, publish_name=None, start_time=None, end_time=None, dept_list=None, device_list=None):
-        """PublicationRequestBase
+        r"""PublicationRequestBase
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class PublicationRequestBase:
 
     @property
     def publish_name(self):
-        """Gets the publish_name of this PublicationRequestBase.
+        r"""Gets the publish_name of this PublicationRequestBase.
 
         发布名称。
 
@@ -77,7 +77,7 @@ class PublicationRequestBase:
 
     @publish_name.setter
     def publish_name(self, publish_name):
-        """Sets the publish_name of this PublicationRequestBase.
+        r"""Sets the publish_name of this PublicationRequestBase.
 
         发布名称。
 
@@ -88,7 +88,7 @@ class PublicationRequestBase:
 
     @property
     def start_time(self):
-        """Gets the start_time of this PublicationRequestBase.
+        r"""Gets the start_time of this PublicationRequestBase.
 
         开始时间。
 
@@ -99,7 +99,7 @@ class PublicationRequestBase:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this PublicationRequestBase.
+        r"""Sets the start_time of this PublicationRequestBase.
 
         开始时间。
 
@@ -110,7 +110,7 @@ class PublicationRequestBase:
 
     @property
     def end_time(self):
-        """Gets the end_time of this PublicationRequestBase.
+        r"""Gets the end_time of this PublicationRequestBase.
 
         结束时间。
 
@@ -121,7 +121,7 @@ class PublicationRequestBase:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this PublicationRequestBase.
+        r"""Sets the end_time of this PublicationRequestBase.
 
         结束时间。
 
@@ -132,7 +132,7 @@ class PublicationRequestBase:
 
     @property
     def dept_list(self):
-        """Gets the dept_list of this PublicationRequestBase.
+        r"""Gets the dept_list of this PublicationRequestBase.
 
         发布到部门编码列表。
 
@@ -143,7 +143,7 @@ class PublicationRequestBase:
 
     @dept_list.setter
     def dept_list(self, dept_list):
-        """Sets the dept_list of this PublicationRequestBase.
+        r"""Sets the dept_list of this PublicationRequestBase.
 
         发布到部门编码列表。
 
@@ -154,7 +154,7 @@ class PublicationRequestBase:
 
     @property
     def device_list(self):
-        """Gets the device_list of this PublicationRequestBase.
+        r"""Gets the device_list of this PublicationRequestBase.
 
         发布到设备用户ID列表。
 
@@ -165,7 +165,7 @@ class PublicationRequestBase:
 
     @device_list.setter
     def device_list(self, device_list):
-        """Sets the device_list of this PublicationRequestBase.
+        r"""Sets the device_list of this PublicationRequestBase.
 
         发布到设备用户ID列表。
 

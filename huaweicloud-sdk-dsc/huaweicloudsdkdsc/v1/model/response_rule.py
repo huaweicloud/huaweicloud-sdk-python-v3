@@ -47,7 +47,7 @@ class ResponseRule:
     }
 
     def __init__(self, category=None, delete_allowed=None, group_names=None, id=None, logic_operator=None, min_match=None, risk_level=None, rule_content=None, rule_desc=None, rule_name=None, rule_type=None, selected=None):
-        """ResponseRule
+        r"""ResponseRule
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ResponseRule:
 
     @property
     def category(self):
-        """Gets the category of this ResponseRule.
+        r"""Gets the category of this ResponseRule.
 
         规则类别，内置规则(BUILT_IN)或自建规则(BUILT_SELF)
 
@@ -131,7 +131,7 @@ class ResponseRule:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ResponseRule.
+        r"""Sets the category of this ResponseRule.
 
         规则类别，内置规则(BUILT_IN)或自建规则(BUILT_SELF)
 
@@ -142,7 +142,7 @@ class ResponseRule:
 
     @property
     def delete_allowed(self):
-        """Gets the delete_allowed of this ResponseRule.
+        r"""Gets the delete_allowed of this ResponseRule.
 
         是否允许删除
 
@@ -153,7 +153,7 @@ class ResponseRule:
 
     @delete_allowed.setter
     def delete_allowed(self, delete_allowed):
-        """Sets the delete_allowed of this ResponseRule.
+        r"""Sets the delete_allowed of this ResponseRule.
 
         是否允许删除
 
@@ -164,7 +164,7 @@ class ResponseRule:
 
     @property
     def group_names(self):
-        """Gets the group_names of this ResponseRule.
+        r"""Gets the group_names of this ResponseRule.
 
         相关的规则组
 
@@ -175,7 +175,7 @@ class ResponseRule:
 
     @group_names.setter
     def group_names(self, group_names):
-        """Sets the group_names of this ResponseRule.
+        r"""Sets the group_names of this ResponseRule.
 
         相关的规则组
 
@@ -186,7 +186,7 @@ class ResponseRule:
 
     @property
     def id(self):
-        """Gets the id of this ResponseRule.
+        r"""Gets the id of this ResponseRule.
 
         规则ID
 
@@ -197,7 +197,7 @@ class ResponseRule:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ResponseRule.
+        r"""Sets the id of this ResponseRule.
 
         规则ID
 
@@ -208,7 +208,7 @@ class ResponseRule:
 
     @property
     def logic_operator(self):
-        """Gets the logic_operator of this ResponseRule.
+        r"""Gets the logic_operator of this ResponseRule.
 
         逻辑运算符，\"AND\",\"OR\",\"REGEX\"
 
@@ -219,7 +219,7 @@ class ResponseRule:
 
     @logic_operator.setter
     def logic_operator(self, logic_operator):
-        """Sets the logic_operator of this ResponseRule.
+        r"""Sets the logic_operator of this ResponseRule.
 
         逻辑运算符，\"AND\",\"OR\",\"REGEX\"
 
@@ -230,7 +230,7 @@ class ResponseRule:
 
     @property
     def min_match(self):
-        """Gets the min_match of this ResponseRule.
+        r"""Gets the min_match of this ResponseRule.
 
         最小匹配次数
 
@@ -241,7 +241,7 @@ class ResponseRule:
 
     @min_match.setter
     def min_match(self, min_match):
-        """Sets the min_match of this ResponseRule.
+        r"""Sets the min_match of this ResponseRule.
 
         最小匹配次数
 
@@ -252,7 +252,7 @@ class ResponseRule:
 
     @property
     def risk_level(self):
-        """Gets the risk_level of this ResponseRule.
+        r"""Gets the risk_level of this ResponseRule.
 
         风险等级
 
@@ -263,7 +263,7 @@ class ResponseRule:
 
     @risk_level.setter
     def risk_level(self, risk_level):
-        """Sets the risk_level of this ResponseRule.
+        r"""Sets the risk_level of this ResponseRule.
 
         风险等级
 
@@ -274,7 +274,7 @@ class ResponseRule:
 
     @property
     def rule_content(self):
-        """Gets the rule_content of this ResponseRule.
+        r"""Gets the rule_content of this ResponseRule.
 
         规则内容
 
@@ -285,7 +285,7 @@ class ResponseRule:
 
     @rule_content.setter
     def rule_content(self, rule_content):
-        """Sets the rule_content of this ResponseRule.
+        r"""Sets the rule_content of this ResponseRule.
 
         规则内容
 
@@ -296,7 +296,7 @@ class ResponseRule:
 
     @property
     def rule_desc(self):
-        """Gets the rule_desc of this ResponseRule.
+        r"""Gets the rule_desc of this ResponseRule.
 
         规则描述
 
@@ -307,7 +307,7 @@ class ResponseRule:
 
     @rule_desc.setter
     def rule_desc(self, rule_desc):
-        """Sets the rule_desc of this ResponseRule.
+        r"""Sets the rule_desc of this ResponseRule.
 
         规则描述
 
@@ -318,7 +318,7 @@ class ResponseRule:
 
     @property
     def rule_name(self):
-        """Gets the rule_name of this ResponseRule.
+        r"""Gets the rule_name of this ResponseRule.
 
         规则名称
 
@@ -329,7 +329,7 @@ class ResponseRule:
 
     @rule_name.setter
     def rule_name(self, rule_name):
-        """Sets the rule_name of this ResponseRule.
+        r"""Sets the rule_name of this ResponseRule.
 
         规则名称
 
@@ -340,7 +340,7 @@ class ResponseRule:
 
     @property
     def rule_type(self):
-        """Gets the rule_type of this ResponseRule.
+        r"""Gets the rule_type of this ResponseRule.
 
         规则类型，关键字(KEYWORD)、正则表达式(REGEX)或自然语言(NLP)
 
@@ -351,7 +351,7 @@ class ResponseRule:
 
     @rule_type.setter
     def rule_type(self, rule_type):
-        """Sets the rule_type of this ResponseRule.
+        r"""Sets the rule_type of this ResponseRule.
 
         规则类型，关键字(KEYWORD)、正则表达式(REGEX)或自然语言(NLP)
 
@@ -362,7 +362,7 @@ class ResponseRule:
 
     @property
     def selected(self):
-        """Gets the selected of this ResponseRule.
+        r"""Gets the selected of this ResponseRule.
 
         是否可选
 
@@ -373,7 +373,7 @@ class ResponseRule:
 
     @selected.setter
     def selected(self, selected):
-        """Sets the selected of this ResponseRule.
+        r"""Sets the selected of this ResponseRule.
 
         是否可选
 

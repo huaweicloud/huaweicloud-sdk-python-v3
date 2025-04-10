@@ -27,7 +27,7 @@ class CancelingAuthorizationV2Request:
     }
 
     def __init__(self, instance_id=None, app_auth_id=None):
-        """CancelingAuthorizationV2Request
+        r"""CancelingAuthorizationV2Request
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CancelingAuthorizationV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CancelingAuthorizationV2Request.
+        r"""Gets the instance_id of this CancelingAuthorizationV2Request.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -59,7 +59,7 @@ class CancelingAuthorizationV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CancelingAuthorizationV2Request.
+        r"""Sets the instance_id of this CancelingAuthorizationV2Request.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -70,7 +70,7 @@ class CancelingAuthorizationV2Request:
 
     @property
     def app_auth_id(self):
-        """Gets the app_auth_id of this CancelingAuthorizationV2Request.
+        r"""Gets the app_auth_id of this CancelingAuthorizationV2Request.
 
         授权关系的编号
 
@@ -81,7 +81,7 @@ class CancelingAuthorizationV2Request:
 
     @app_auth_id.setter
     def app_auth_id(self, app_auth_id):
-        """Sets the app_auth_id of this CancelingAuthorizationV2Request.
+        r"""Sets the app_auth_id of this CancelingAuthorizationV2Request.
 
         授权关系的编号
 

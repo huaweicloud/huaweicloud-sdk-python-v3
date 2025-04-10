@@ -73,7 +73,7 @@ class MysqlProxyV3:
     }
 
     def __init__(self, pool_id=None, status=None, address=None, port=None, pool_status=None, delay_threshold_in_seconds=None, elb_vip=None, eip=None, vcpus=None, ram=None, node_num=None, mode=None, nodes=None, flavor_ref=None, name=None, transaction_split=None, connection_pool_type=None, switch_connection_pool_type_enabled=None, route_mode=None, balance_route_mode_enabled=None, consistence_mode=None, subnet_id=None, ssl_option=None, new_node_auto_add_status=None, new_node_weight=None):
-        """MysqlProxyV3
+        r"""MysqlProxyV3
 
         The model defined in huaweicloud sdk
 
@@ -211,7 +211,7 @@ class MysqlProxyV3:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this MysqlProxyV3.
+        r"""Gets the pool_id of this MysqlProxyV3.
 
         Proxy实例ID。
 
@@ -222,7 +222,7 @@ class MysqlProxyV3:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this MysqlProxyV3.
+        r"""Sets the pool_id of this MysqlProxyV3.
 
         Proxy实例ID。
 
@@ -233,7 +233,7 @@ class MysqlProxyV3:
 
     @property
     def status(self):
-        """Gets the status of this MysqlProxyV3.
+        r"""Gets the status of this MysqlProxyV3.
 
         Proxy实例开启状态。  取值: - “ACTIVE”，表示数据库代理正常； - “FAILED”，表示数据库代理创建失败； - “DELETED”，表示数据库代理已删除； - “ABNORMAL”，表示数据库代理异常； - “ENABLING PROXY”，表示数据库代理正在开启； - “DISABLING PROXY”，表示数据库代理正在关闭； - “ADDING PROXY NODE”，表示数据库代理正在扩容； - “DELETING READ REPLICAS FROM PROXY”，表示数据库代理正在移除只读节点； - “ADDING READ REPLICAS TO PROXY”，表示数据库代理正在添加只读节点； - “CHANGING WEIGHTS”，表示数据库代理正在修改只读节点权重。
 
@@ -244,7 +244,7 @@ class MysqlProxyV3:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this MysqlProxyV3.
+        r"""Sets the status of this MysqlProxyV3.
 
         Proxy实例开启状态。  取值: - “ACTIVE”，表示数据库代理正常； - “FAILED”，表示数据库代理创建失败； - “DELETED”，表示数据库代理已删除； - “ABNORMAL”，表示数据库代理异常； - “ENABLING PROXY”，表示数据库代理正在开启； - “DISABLING PROXY”，表示数据库代理正在关闭； - “ADDING PROXY NODE”，表示数据库代理正在扩容； - “DELETING READ REPLICAS FROM PROXY”，表示数据库代理正在移除只读节点； - “ADDING READ REPLICAS TO PROXY”，表示数据库代理正在添加只读节点； - “CHANGING WEIGHTS”，表示数据库代理正在修改只读节点权重。
 
@@ -255,7 +255,7 @@ class MysqlProxyV3:
 
     @property
     def address(self):
-        """Gets the address of this MysqlProxyV3.
+        r"""Gets the address of this MysqlProxyV3.
 
         Proxy读写分离地址。
 
@@ -266,7 +266,7 @@ class MysqlProxyV3:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this MysqlProxyV3.
+        r"""Sets the address of this MysqlProxyV3.
 
         Proxy读写分离地址。
 
@@ -277,7 +277,7 @@ class MysqlProxyV3:
 
     @property
     def port(self):
-        """Gets the port of this MysqlProxyV3.
+        r"""Gets the port of this MysqlProxyV3.
 
         Proxy端口信息。
 
@@ -288,7 +288,7 @@ class MysqlProxyV3:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this MysqlProxyV3.
+        r"""Sets the port of this MysqlProxyV3.
 
         Proxy端口信息。
 
@@ -299,7 +299,7 @@ class MysqlProxyV3:
 
     @property
     def pool_status(self):
-        """Gets the pool_status of this MysqlProxyV3.
+        r"""Gets the pool_status of this MysqlProxyV3.
 
         Proxy实例状态。  取值范围： - ACTIVE，表示数据库代理正常 - ABNORMAL，表示数据库代理异常 - FAILED，表示数据库代理创建失败 - DELETED，表示数据库代理已删除
 
@@ -310,7 +310,7 @@ class MysqlProxyV3:
 
     @pool_status.setter
     def pool_status(self, pool_status):
-        """Sets the pool_status of this MysqlProxyV3.
+        r"""Sets the pool_status of this MysqlProxyV3.
 
         Proxy实例状态。  取值范围： - ACTIVE，表示数据库代理正常 - ABNORMAL，表示数据库代理异常 - FAILED，表示数据库代理创建失败 - DELETED，表示数据库代理已删除
 
@@ -321,7 +321,7 @@ class MysqlProxyV3:
 
     @property
     def delay_threshold_in_seconds(self):
-        """Gets the delay_threshold_in_seconds of this MysqlProxyV3.
+        r"""Gets the delay_threshold_in_seconds of this MysqlProxyV3.
 
         延时阈值，单位：秒。
 
@@ -332,7 +332,7 @@ class MysqlProxyV3:
 
     @delay_threshold_in_seconds.setter
     def delay_threshold_in_seconds(self, delay_threshold_in_seconds):
-        """Sets the delay_threshold_in_seconds of this MysqlProxyV3.
+        r"""Sets the delay_threshold_in_seconds of this MysqlProxyV3.
 
         延时阈值，单位：秒。
 
@@ -343,7 +343,7 @@ class MysqlProxyV3:
 
     @property
     def elb_vip(self):
-        """Gets the elb_vip of this MysqlProxyV3.
+        r"""Gets the elb_vip of this MysqlProxyV3.
 
         Elb模式的虚拟ip信息。
 
@@ -354,7 +354,7 @@ class MysqlProxyV3:
 
     @elb_vip.setter
     def elb_vip(self, elb_vip):
-        """Sets the elb_vip of this MysqlProxyV3.
+        r"""Sets the elb_vip of this MysqlProxyV3.
 
         Elb模式的虚拟ip信息。
 
@@ -365,7 +365,7 @@ class MysqlProxyV3:
 
     @property
     def eip(self):
-        """Gets the eip of this MysqlProxyV3.
+        r"""Gets the eip of this MysqlProxyV3.
 
         弹性公网IP信息。
 
@@ -376,7 +376,7 @@ class MysqlProxyV3:
 
     @eip.setter
     def eip(self, eip):
-        """Sets the eip of this MysqlProxyV3.
+        r"""Sets the eip of this MysqlProxyV3.
 
         弹性公网IP信息。
 
@@ -387,7 +387,7 @@ class MysqlProxyV3:
 
     @property
     def vcpus(self):
-        """Gets the vcpus of this MysqlProxyV3.
+        r"""Gets the vcpus of this MysqlProxyV3.
 
         Proxy实例规格的CPU数量。
 
@@ -398,7 +398,7 @@ class MysqlProxyV3:
 
     @vcpus.setter
     def vcpus(self, vcpus):
-        """Sets the vcpus of this MysqlProxyV3.
+        r"""Sets the vcpus of this MysqlProxyV3.
 
         Proxy实例规格的CPU数量。
 
@@ -409,7 +409,7 @@ class MysqlProxyV3:
 
     @property
     def ram(self):
-        """Gets the ram of this MysqlProxyV3.
+        r"""Gets the ram of this MysqlProxyV3.
 
         Proxy实例规格的内存数量。
 
@@ -420,7 +420,7 @@ class MysqlProxyV3:
 
     @ram.setter
     def ram(self, ram):
-        """Sets the ram of this MysqlProxyV3.
+        r"""Sets the ram of this MysqlProxyV3.
 
         Proxy实例规格的内存数量。
 
@@ -431,7 +431,7 @@ class MysqlProxyV3:
 
     @property
     def node_num(self):
-        """Gets the node_num of this MysqlProxyV3.
+        r"""Gets the node_num of this MysqlProxyV3.
 
         Proxy节点个数。
 
@@ -442,7 +442,7 @@ class MysqlProxyV3:
 
     @node_num.setter
     def node_num(self, node_num):
-        """Sets the node_num of this MysqlProxyV3.
+        r"""Sets the node_num of this MysqlProxyV3.
 
         Proxy节点个数。
 
@@ -453,7 +453,7 @@ class MysqlProxyV3:
 
     @property
     def mode(self):
-        """Gets the mode of this MysqlProxyV3.
+        r"""Gets the mode of this MysqlProxyV3.
 
         Proxy主备模式，取值范围：Cluster。
 
@@ -464,7 +464,7 @@ class MysqlProxyV3:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this MysqlProxyV3.
+        r"""Sets the mode of this MysqlProxyV3.
 
         Proxy主备模式，取值范围：Cluster。
 
@@ -475,7 +475,7 @@ class MysqlProxyV3:
 
     @property
     def nodes(self):
-        """Gets the nodes of this MysqlProxyV3.
+        r"""Gets the nodes of this MysqlProxyV3.
 
         Proxy节点信息。
 
@@ -486,7 +486,7 @@ class MysqlProxyV3:
 
     @nodes.setter
     def nodes(self, nodes):
-        """Sets the nodes of this MysqlProxyV3.
+        r"""Sets the nodes of this MysqlProxyV3.
 
         Proxy节点信息。
 
@@ -497,7 +497,7 @@ class MysqlProxyV3:
 
     @property
     def flavor_ref(self):
-        """Gets the flavor_ref of this MysqlProxyV3.
+        r"""Gets the flavor_ref of this MysqlProxyV3.
 
         Proxy规格信息。
 
@@ -508,7 +508,7 @@ class MysqlProxyV3:
 
     @flavor_ref.setter
     def flavor_ref(self, flavor_ref):
-        """Sets the flavor_ref of this MysqlProxyV3.
+        r"""Sets the flavor_ref of this MysqlProxyV3.
 
         Proxy规格信息。
 
@@ -519,7 +519,7 @@ class MysqlProxyV3:
 
     @property
     def name(self):
-        """Gets the name of this MysqlProxyV3.
+        r"""Gets the name of this MysqlProxyV3.
 
         Proxy实例名称。
 
@@ -530,7 +530,7 @@ class MysqlProxyV3:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MysqlProxyV3.
+        r"""Sets the name of this MysqlProxyV3.
 
         Proxy实例名称。
 
@@ -541,7 +541,7 @@ class MysqlProxyV3:
 
     @property
     def transaction_split(self):
-        """Gets the transaction_split of this MysqlProxyV3.
+        r"""Gets the transaction_split of this MysqlProxyV3.
 
         Proxy事务拆分开关状态【ON/OFF】。
 
@@ -552,7 +552,7 @@ class MysqlProxyV3:
 
     @transaction_split.setter
     def transaction_split(self, transaction_split):
-        """Sets the transaction_split of this MysqlProxyV3.
+        r"""Sets the transaction_split of this MysqlProxyV3.
 
         Proxy事务拆分开关状态【ON/OFF】。
 
@@ -563,7 +563,7 @@ class MysqlProxyV3:
 
     @property
     def connection_pool_type(self):
-        """Gets the connection_pool_type of this MysqlProxyV3.
+        r"""Gets the connection_pool_type of this MysqlProxyV3.
 
         连接池类型。  取值范围: - CLOSED: 关闭连接池。 - SESSION: 开启会话级连接池。
 
@@ -574,7 +574,7 @@ class MysqlProxyV3:
 
     @connection_pool_type.setter
     def connection_pool_type(self, connection_pool_type):
-        """Sets the connection_pool_type of this MysqlProxyV3.
+        r"""Sets the connection_pool_type of this MysqlProxyV3.
 
         连接池类型。  取值范围: - CLOSED: 关闭连接池。 - SESSION: 开启会话级连接池。
 
@@ -585,7 +585,7 @@ class MysqlProxyV3:
 
     @property
     def switch_connection_pool_type_enabled(self):
-        """Gets the switch_connection_pool_type_enabled of this MysqlProxyV3.
+        r"""Gets the switch_connection_pool_type_enabled of this MysqlProxyV3.
 
         数据库代理版本是否支持会话级连接池。  取值范围: - true: 支持。 - false: 不支持。
 
@@ -596,7 +596,7 @@ class MysqlProxyV3:
 
     @switch_connection_pool_type_enabled.setter
     def switch_connection_pool_type_enabled(self, switch_connection_pool_type_enabled):
-        """Sets the switch_connection_pool_type_enabled of this MysqlProxyV3.
+        r"""Sets the switch_connection_pool_type_enabled of this MysqlProxyV3.
 
         数据库代理版本是否支持会话级连接池。  取值范围: - true: 支持。 - false: 不支持。
 
@@ -607,7 +607,7 @@ class MysqlProxyV3:
 
     @property
     def route_mode(self):
-        """Gets the route_mode of this MysqlProxyV3.
+        r"""Gets the route_mode of this MysqlProxyV3.
 
         数据库代理路由模式，默认为权重负载模式。  取值范围: - 0，表示权重负载模式; - 1，表示负载均衡模式（数据库主节点不接受读请求）； - 2，表示负载均衡模式（数据库主节点接受读请求）。
 
@@ -618,7 +618,7 @@ class MysqlProxyV3:
 
     @route_mode.setter
     def route_mode(self, route_mode):
-        """Sets the route_mode of this MysqlProxyV3.
+        r"""Sets the route_mode of this MysqlProxyV3.
 
         数据库代理路由模式，默认为权重负载模式。  取值范围: - 0，表示权重负载模式; - 1，表示负载均衡模式（数据库主节点不接受读请求）； - 2，表示负载均衡模式（数据库主节点接受读请求）。
 
@@ -629,7 +629,7 @@ class MysqlProxyV3:
 
     @property
     def balance_route_mode_enabled(self):
-        """Gets the balance_route_mode_enabled of this MysqlProxyV3.
+        r"""Gets the balance_route_mode_enabled of this MysqlProxyV3.
 
         数据库代理版本是否支持负载均衡模式。  取值范围: - true 支持; - false 不支持。
 
@@ -640,7 +640,7 @@ class MysqlProxyV3:
 
     @balance_route_mode_enabled.setter
     def balance_route_mode_enabled(self, balance_route_mode_enabled):
-        """Sets the balance_route_mode_enabled of this MysqlProxyV3.
+        r"""Sets the balance_route_mode_enabled of this MysqlProxyV3.
 
         数据库代理版本是否支持负载均衡模式。  取值范围: - true 支持; - false 不支持。
 
@@ -651,7 +651,7 @@ class MysqlProxyV3:
 
     @property
     def consistence_mode(self):
-        """Gets the consistence_mode of this MysqlProxyV3.
+        r"""Gets the consistence_mode of this MysqlProxyV3.
 
         一致性模式。默认值为空，此时以会话一致性参数session_consistence为准。 - session: 会话一致性。 - global: 全局一致性。 - eventual: 最终一致性。
 
@@ -662,7 +662,7 @@ class MysqlProxyV3:
 
     @consistence_mode.setter
     def consistence_mode(self, consistence_mode):
-        """Sets the consistence_mode of this MysqlProxyV3.
+        r"""Sets the consistence_mode of this MysqlProxyV3.
 
         一致性模式。默认值为空，此时以会话一致性参数session_consistence为准。 - session: 会话一致性。 - global: 全局一致性。 - eventual: 最终一致性。
 
@@ -673,7 +673,7 @@ class MysqlProxyV3:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this MysqlProxyV3.
+        r"""Gets the subnet_id of this MysqlProxyV3.
 
         数据库代理所属的子网ID。
 
@@ -684,7 +684,7 @@ class MysqlProxyV3:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this MysqlProxyV3.
+        r"""Sets the subnet_id of this MysqlProxyV3.
 
         数据库代理所属的子网ID。
 
@@ -695,7 +695,7 @@ class MysqlProxyV3:
 
     @property
     def ssl_option(self):
-        """Gets the ssl_option of this MysqlProxyV3.
+        r"""Gets the ssl_option of this MysqlProxyV3.
 
         SSL数据加密开关设置。  取值范围： - true: 开启SSL数据加密。 - false: 关闭SSL数据加密。
 
@@ -706,7 +706,7 @@ class MysqlProxyV3:
 
     @ssl_option.setter
     def ssl_option(self, ssl_option):
-        """Sets the ssl_option of this MysqlProxyV3.
+        r"""Sets the ssl_option of this MysqlProxyV3.
 
         SSL数据加密开关设置。  取值范围： - true: 开启SSL数据加密。 - false: 关闭SSL数据加密。
 
@@ -717,7 +717,7 @@ class MysqlProxyV3:
 
     @property
     def new_node_auto_add_status(self):
-        """Gets the new_node_auto_add_status of this MysqlProxyV3.
+        r"""Gets the new_node_auto_add_status of this MysqlProxyV3.
 
         新增节点是否自动加入该Proxy。  取值范围： - ON：自动加入。 - OFF：不自动加入。
 
@@ -728,7 +728,7 @@ class MysqlProxyV3:
 
     @new_node_auto_add_status.setter
     def new_node_auto_add_status(self, new_node_auto_add_status):
-        """Sets the new_node_auto_add_status of this MysqlProxyV3.
+        r"""Sets the new_node_auto_add_status of this MysqlProxyV3.
 
         新增节点是否自动加入该Proxy。  取值范围： - ON：自动加入。 - OFF：不自动加入。
 
@@ -739,7 +739,7 @@ class MysqlProxyV3:
 
     @property
     def new_node_weight(self):
-        """Gets the new_node_weight of this MysqlProxyV3.
+        r"""Gets the new_node_weight of this MysqlProxyV3.
 
         新增节点的读权重。
 
@@ -750,7 +750,7 @@ class MysqlProxyV3:
 
     @new_node_weight.setter
     def new_node_weight(self, new_node_weight):
-        """Sets the new_node_weight of this MysqlProxyV3.
+        r"""Sets the new_node_weight of this MysqlProxyV3.
 
         新增节点的读权重。
 

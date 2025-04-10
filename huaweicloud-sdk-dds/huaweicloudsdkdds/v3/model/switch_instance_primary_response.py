@@ -24,7 +24,7 @@ class SwitchInstancePrimaryResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SwitchInstancePrimaryResponse
+        r"""SwitchInstancePrimaryResponse
 
         The model defined in huaweicloud sdk
 

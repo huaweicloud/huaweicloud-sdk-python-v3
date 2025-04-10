@@ -29,7 +29,7 @@ class TrackerSMNChannelConfigBody:
     }
 
     def __init__(self, region_id=None, project_id=None, topic_urn=None):
-        """TrackerSMNChannelConfigBody
+        r"""TrackerSMNChannelConfigBody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class TrackerSMNChannelConfigBody:
 
     @property
     def region_id(self):
-        """Gets the region_id of this TrackerSMNChannelConfigBody.
+        r"""Gets the region_id of this TrackerSMNChannelConfigBody.
 
         区域id
 
@@ -65,7 +65,7 @@ class TrackerSMNChannelConfigBody:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this TrackerSMNChannelConfigBody.
+        r"""Sets the region_id of this TrackerSMNChannelConfigBody.
 
         区域id
 
@@ -76,7 +76,7 @@ class TrackerSMNChannelConfigBody:
 
     @property
     def project_id(self):
-        """Gets the project_id of this TrackerSMNChannelConfigBody.
+        r"""Gets the project_id of this TrackerSMNChannelConfigBody.
 
         项目id
 
@@ -87,7 +87,7 @@ class TrackerSMNChannelConfigBody:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this TrackerSMNChannelConfigBody.
+        r"""Sets the project_id of this TrackerSMNChannelConfigBody.
 
         项目id
 
@@ -98,7 +98,7 @@ class TrackerSMNChannelConfigBody:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this TrackerSMNChannelConfigBody.
+        r"""Gets the topic_urn of this TrackerSMNChannelConfigBody.
 
         SMN主题urn
 
@@ -109,7 +109,7 @@ class TrackerSMNChannelConfigBody:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this TrackerSMNChannelConfigBody.
+        r"""Sets the topic_urn of this TrackerSMNChannelConfigBody.
 
         SMN主题urn
 

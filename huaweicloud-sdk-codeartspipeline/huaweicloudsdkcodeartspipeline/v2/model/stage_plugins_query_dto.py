@@ -43,7 +43,7 @@ class StagePluginsQueryDTO:
     }
 
     def __init__(self, use_condition=None, comp_id=None, comp_name=None, cloud_id=None, strategy_id=None, category=None, publish_tab=None, platform=None, comp_extend_type=None, deploy_type=None):
-        """StagePluginsQueryDTO
+        r"""StagePluginsQueryDTO
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class StagePluginsQueryDTO:
 
     @property
     def use_condition(self):
-        """Gets the use_condition of this StagePluginsQueryDTO.
+        r"""Gets the use_condition of this StagePluginsQueryDTO.
 
         用于区分插件为流水线可使用/模板可使用
 
@@ -117,7 +117,7 @@ class StagePluginsQueryDTO:
 
     @use_condition.setter
     def use_condition(self, use_condition):
-        """Sets the use_condition of this StagePluginsQueryDTO.
+        r"""Sets the use_condition of this StagePluginsQueryDTO.
 
         用于区分插件为流水线可使用/模板可使用
 
@@ -128,7 +128,7 @@ class StagePluginsQueryDTO:
 
     @property
     def comp_id(self):
-        """Gets the comp_id of this StagePluginsQueryDTO.
+        r"""Gets the comp_id of this StagePluginsQueryDTO.
 
         微服务ID
 
@@ -139,7 +139,7 @@ class StagePluginsQueryDTO:
 
     @comp_id.setter
     def comp_id(self, comp_id):
-        """Sets the comp_id of this StagePluginsQueryDTO.
+        r"""Sets the comp_id of this StagePluginsQueryDTO.
 
         微服务ID
 
@@ -150,7 +150,7 @@ class StagePluginsQueryDTO:
 
     @property
     def comp_name(self):
-        """Gets the comp_name of this StagePluginsQueryDTO.
+        r"""Gets the comp_name of this StagePluginsQueryDTO.
 
         微服务名
 
@@ -161,7 +161,7 @@ class StagePluginsQueryDTO:
 
     @comp_name.setter
     def comp_name(self, comp_name):
-        """Sets the comp_name of this StagePluginsQueryDTO.
+        r"""Sets the comp_name of this StagePluginsQueryDTO.
 
         微服务名
 
@@ -172,7 +172,7 @@ class StagePluginsQueryDTO:
 
     @property
     def cloud_id(self):
-        """Gets the cloud_id of this StagePluginsQueryDTO.
+        r"""Gets the cloud_id of this StagePluginsQueryDTO.
 
         局点ID
 
@@ -183,7 +183,7 @@ class StagePluginsQueryDTO:
 
     @cloud_id.setter
     def cloud_id(self, cloud_id):
-        """Sets the cloud_id of this StagePluginsQueryDTO.
+        r"""Sets the cloud_id of this StagePluginsQueryDTO.
 
         局点ID
 
@@ -194,7 +194,7 @@ class StagePluginsQueryDTO:
 
     @property
     def strategy_id(self):
-        """Gets the strategy_id of this StagePluginsQueryDTO.
+        r"""Gets the strategy_id of this StagePluginsQueryDTO.
 
         策略ID
 
@@ -205,7 +205,7 @@ class StagePluginsQueryDTO:
 
     @strategy_id.setter
     def strategy_id(self, strategy_id):
-        """Sets the strategy_id of this StagePluginsQueryDTO.
+        r"""Sets the strategy_id of this StagePluginsQueryDTO.
 
         策略ID
 
@@ -216,7 +216,7 @@ class StagePluginsQueryDTO:
 
     @property
     def category(self):
-        """Gets the category of this StagePluginsQueryDTO.
+        r"""Gets the category of this StagePluginsQueryDTO.
 
         流水线类型
 
@@ -227,7 +227,7 @@ class StagePluginsQueryDTO:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this StagePluginsQueryDTO.
+        r"""Sets the category of this StagePluginsQueryDTO.
 
         流水线类型
 
@@ -238,7 +238,7 @@ class StagePluginsQueryDTO:
 
     @property
     def publish_tab(self):
-        """Gets the publish_tab of this StagePluginsQueryDTO.
+        r"""Gets the publish_tab of this StagePluginsQueryDTO.
 
         是否发布流水线
 
@@ -249,7 +249,7 @@ class StagePluginsQueryDTO:
 
     @publish_tab.setter
     def publish_tab(self, publish_tab):
-        """Sets the publish_tab of this StagePluginsQueryDTO.
+        r"""Sets the publish_tab of this StagePluginsQueryDTO.
 
         是否发布流水线
 
@@ -260,7 +260,7 @@ class StagePluginsQueryDTO:
 
     @property
     def platform(self):
-        """Gets the platform of this StagePluginsQueryDTO.
+        r"""Gets the platform of this StagePluginsQueryDTO.
 
         部署平台
 
@@ -271,7 +271,7 @@ class StagePluginsQueryDTO:
 
     @platform.setter
     def platform(self, platform):
-        """Sets the platform of this StagePluginsQueryDTO.
+        r"""Sets the platform of this StagePluginsQueryDTO.
 
         部署平台
 
@@ -282,7 +282,7 @@ class StagePluginsQueryDTO:
 
     @property
     def comp_extend_type(self):
-        """Gets the comp_extend_type of this StagePluginsQueryDTO.
+        r"""Gets the comp_extend_type of this StagePluginsQueryDTO.
 
         组件类型
 
@@ -293,7 +293,7 @@ class StagePluginsQueryDTO:
 
     @comp_extend_type.setter
     def comp_extend_type(self, comp_extend_type):
-        """Sets the comp_extend_type of this StagePluginsQueryDTO.
+        r"""Sets the comp_extend_type of this StagePluginsQueryDTO.
 
         组件类型
 
@@ -304,7 +304,7 @@ class StagePluginsQueryDTO:
 
     @property
     def deploy_type(self):
-        """Gets the deploy_type of this StagePluginsQueryDTO.
+        r"""Gets the deploy_type of this StagePluginsQueryDTO.
 
         部署类型
 
@@ -315,7 +315,7 @@ class StagePluginsQueryDTO:
 
     @deploy_type.setter
     def deploy_type(self, deploy_type):
-        """Sets the deploy_type of this StagePluginsQueryDTO.
+        r"""Sets the deploy_type of this StagePluginsQueryDTO.
 
         部署类型
 

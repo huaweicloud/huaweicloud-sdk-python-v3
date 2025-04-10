@@ -28,7 +28,7 @@ class CreateBusinessResponse(SdkResponse):
     }
 
     def __init__(self, id=None, ok=None):
-        """CreateBusinessResponse
+        r"""CreateBusinessResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateBusinessResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateBusinessResponse.
+        r"""Gets the id of this CreateBusinessResponse.
 
         应用的id
 
@@ -62,7 +62,7 @@ class CreateBusinessResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateBusinessResponse.
+        r"""Sets the id of this CreateBusinessResponse.
 
         应用的id
 
@@ -73,7 +73,7 @@ class CreateBusinessResponse(SdkResponse):
 
     @property
     def ok(self):
-        """Gets the ok of this CreateBusinessResponse.
+        r"""Gets the ok of this CreateBusinessResponse.
 
         :return: The ok of this CreateBusinessResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class CreateBusinessResponse(SdkResponse):
 
     @ok.setter
     def ok(self, ok):
-        """Sets the ok of this CreateBusinessResponse.
+        r"""Sets the ok of this CreateBusinessResponse.
 
         :param ok: The ok of this CreateBusinessResponse.
         :type ok: str

@@ -24,7 +24,7 @@ class DeleteStreamResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteStreamResponse
+        r"""DeleteStreamResponse
 
         The model defined in huaweicloud sdk
 

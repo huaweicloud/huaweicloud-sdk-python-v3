@@ -33,7 +33,7 @@ class ShowStarrocksParamsRequest:
     }
 
     def __init__(self, instance_id=None, node_type=None, offset=None, limit=None, x_language=None):
-        """ShowStarrocksParamsRequest
+        r"""ShowStarrocksParamsRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ShowStarrocksParamsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowStarrocksParamsRequest.
+        r"""Gets the instance_id of this ShowStarrocksParamsRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -80,7 +80,7 @@ class ShowStarrocksParamsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowStarrocksParamsRequest.
+        r"""Sets the instance_id of this ShowStarrocksParamsRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -91,7 +91,7 @@ class ShowStarrocksParamsRequest:
 
     @property
     def node_type(self):
-        """Gets the node_type of this ShowStarrocksParamsRequest.
+        r"""Gets the node_type of this ShowStarrocksParamsRequest.
 
         节点类型。取值范围: - be - fe
 
@@ -102,7 +102,7 @@ class ShowStarrocksParamsRequest:
 
     @node_type.setter
     def node_type(self, node_type):
-        """Sets the node_type of this ShowStarrocksParamsRequest.
+        r"""Sets the node_type of this ShowStarrocksParamsRequest.
 
         节点类型。取值范围: - be - fe
 
@@ -113,7 +113,7 @@ class ShowStarrocksParamsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowStarrocksParamsRequest.
+        r"""Gets the offset of this ShowStarrocksParamsRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -124,7 +124,7 @@ class ShowStarrocksParamsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowStarrocksParamsRequest.
+        r"""Sets the offset of this ShowStarrocksParamsRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -135,7 +135,7 @@ class ShowStarrocksParamsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowStarrocksParamsRequest.
+        r"""Gets the limit of this ShowStarrocksParamsRequest.
 
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
 
@@ -146,7 +146,7 @@ class ShowStarrocksParamsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowStarrocksParamsRequest.
+        r"""Sets the limit of this ShowStarrocksParamsRequest.
 
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
 
@@ -157,7 +157,7 @@ class ShowStarrocksParamsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowStarrocksParamsRequest.
+        r"""Gets the x_language of this ShowStarrocksParamsRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -168,7 +168,7 @@ class ShowStarrocksParamsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowStarrocksParamsRequest.
+        r"""Sets the x_language of this ShowStarrocksParamsRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 

@@ -47,7 +47,7 @@ class CreatePlaybookVersionInfo:
     }
 
     def __init__(self, description=None, workspace_id=None, playbook_id=None, actions=None, dataclass_id=None, rule_enable=None, rule_id=None, trigger_type=None, dataobject_create=None, dataobject_update=None, dataobject_delete=None, action_strategy=None):
-        """CreatePlaybookVersionInfo
+        r"""CreatePlaybookVersionInfo
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class CreatePlaybookVersionInfo:
 
     @property
     def description(self):
-        """Gets the description of this CreatePlaybookVersionInfo.
+        r"""Gets the description of this CreatePlaybookVersionInfo.
 
         The description, display only
 
@@ -131,7 +131,7 @@ class CreatePlaybookVersionInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreatePlaybookVersionInfo.
+        r"""Sets the description of this CreatePlaybookVersionInfo.
 
         The description, display only
 
@@ -142,7 +142,7 @@ class CreatePlaybookVersionInfo:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this CreatePlaybookVersionInfo.
+        r"""Gets the workspace_id of this CreatePlaybookVersionInfo.
 
         工作空间id
 
@@ -153,7 +153,7 @@ class CreatePlaybookVersionInfo:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this CreatePlaybookVersionInfo.
+        r"""Sets the workspace_id of this CreatePlaybookVersionInfo.
 
         工作空间id
 
@@ -164,7 +164,7 @@ class CreatePlaybookVersionInfo:
 
     @property
     def playbook_id(self):
-        """Gets the playbook_id of this CreatePlaybookVersionInfo.
+        r"""Gets the playbook_id of this CreatePlaybookVersionInfo.
 
         Playbook id.
 
@@ -175,7 +175,7 @@ class CreatePlaybookVersionInfo:
 
     @playbook_id.setter
     def playbook_id(self, playbook_id):
-        """Sets the playbook_id of this CreatePlaybookVersionInfo.
+        r"""Sets the playbook_id of this CreatePlaybookVersionInfo.
 
         Playbook id.
 
@@ -186,7 +186,7 @@ class CreatePlaybookVersionInfo:
 
     @property
     def actions(self):
-        """Gets the actions of this CreatePlaybookVersionInfo.
+        r"""Gets the actions of this CreatePlaybookVersionInfo.
 
         Information of actions.
 
@@ -197,7 +197,7 @@ class CreatePlaybookVersionInfo:
 
     @actions.setter
     def actions(self, actions):
-        """Sets the actions of this CreatePlaybookVersionInfo.
+        r"""Sets the actions of this CreatePlaybookVersionInfo.
 
         Information of actions.
 
@@ -208,7 +208,7 @@ class CreatePlaybookVersionInfo:
 
     @property
     def dataclass_id(self):
-        """Gets the dataclass_id of this CreatePlaybookVersionInfo.
+        r"""Gets the dataclass_id of this CreatePlaybookVersionInfo.
 
         dataclass id.
 
@@ -219,7 +219,7 @@ class CreatePlaybookVersionInfo:
 
     @dataclass_id.setter
     def dataclass_id(self, dataclass_id):
-        """Sets the dataclass_id of this CreatePlaybookVersionInfo.
+        r"""Sets the dataclass_id of this CreatePlaybookVersionInfo.
 
         dataclass id.
 
@@ -230,7 +230,7 @@ class CreatePlaybookVersionInfo:
 
     @property
     def rule_enable(self):
-        """Gets the rule_enable of this CreatePlaybookVersionInfo.
+        r"""Gets the rule_enable of this CreatePlaybookVersionInfo.
 
         过滤规则是否启用
 
@@ -241,7 +241,7 @@ class CreatePlaybookVersionInfo:
 
     @rule_enable.setter
     def rule_enable(self, rule_enable):
-        """Sets the rule_enable of this CreatePlaybookVersionInfo.
+        r"""Sets the rule_enable of this CreatePlaybookVersionInfo.
 
         过滤规则是否启用
 
@@ -252,7 +252,7 @@ class CreatePlaybookVersionInfo:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this CreatePlaybookVersionInfo.
+        r"""Gets the rule_id of this CreatePlaybookVersionInfo.
 
         过滤规则ID
 
@@ -263,7 +263,7 @@ class CreatePlaybookVersionInfo:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this CreatePlaybookVersionInfo.
+        r"""Sets the rule_id of this CreatePlaybookVersionInfo.
 
         过滤规则ID
 
@@ -274,7 +274,7 @@ class CreatePlaybookVersionInfo:
 
     @property
     def trigger_type(self):
-        """Gets the trigger_type of this CreatePlaybookVersionInfo.
+        r"""Gets the trigger_type of this CreatePlaybookVersionInfo.
 
         Strategy of action. event, timer
 
@@ -285,7 +285,7 @@ class CreatePlaybookVersionInfo:
 
     @trigger_type.setter
     def trigger_type(self, trigger_type):
-        """Sets the trigger_type of this CreatePlaybookVersionInfo.
+        r"""Sets the trigger_type of this CreatePlaybookVersionInfo.
 
         Strategy of action. event, timer
 
@@ -296,7 +296,7 @@ class CreatePlaybookVersionInfo:
 
     @property
     def dataobject_create(self):
-        """Gets the dataobject_create of this CreatePlaybookVersionInfo.
+        r"""Gets the dataobject_create of this CreatePlaybookVersionInfo.
 
         if trigger when dataobject is created
 
@@ -307,7 +307,7 @@ class CreatePlaybookVersionInfo:
 
     @dataobject_create.setter
     def dataobject_create(self, dataobject_create):
-        """Sets the dataobject_create of this CreatePlaybookVersionInfo.
+        r"""Sets the dataobject_create of this CreatePlaybookVersionInfo.
 
         if trigger when dataobject is created
 
@@ -318,7 +318,7 @@ class CreatePlaybookVersionInfo:
 
     @property
     def dataobject_update(self):
-        """Gets the dataobject_update of this CreatePlaybookVersionInfo.
+        r"""Gets the dataobject_update of this CreatePlaybookVersionInfo.
 
         if trigger when dataobject is updated
 
@@ -329,7 +329,7 @@ class CreatePlaybookVersionInfo:
 
     @dataobject_update.setter
     def dataobject_update(self, dataobject_update):
-        """Sets the dataobject_update of this CreatePlaybookVersionInfo.
+        r"""Sets the dataobject_update of this CreatePlaybookVersionInfo.
 
         if trigger when dataobject is updated
 
@@ -340,7 +340,7 @@ class CreatePlaybookVersionInfo:
 
     @property
     def dataobject_delete(self):
-        """Gets the dataobject_delete of this CreatePlaybookVersionInfo.
+        r"""Gets the dataobject_delete of this CreatePlaybookVersionInfo.
 
         if trigger when dataobject is deleted
 
@@ -351,7 +351,7 @@ class CreatePlaybookVersionInfo:
 
     @dataobject_delete.setter
     def dataobject_delete(self, dataobject_delete):
-        """Sets the dataobject_delete of this CreatePlaybookVersionInfo.
+        r"""Sets the dataobject_delete of this CreatePlaybookVersionInfo.
 
         if trigger when dataobject is deleted
 
@@ -362,7 +362,7 @@ class CreatePlaybookVersionInfo:
 
     @property
     def action_strategy(self):
-        """Gets the action_strategy of this CreatePlaybookVersionInfo.
+        r"""Gets the action_strategy of this CreatePlaybookVersionInfo.
 
         Strategy of action. sync or async
 
@@ -373,7 +373,7 @@ class CreatePlaybookVersionInfo:
 
     @action_strategy.setter
     def action_strategy(self, action_strategy):
-        """Sets the action_strategy of this CreatePlaybookVersionInfo.
+        r"""Sets the action_strategy of this CreatePlaybookVersionInfo.
 
         Strategy of action. sync or async
 

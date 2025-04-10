@@ -27,7 +27,7 @@ class PrinterRedirectionOptions:
     }
 
     def __init__(self, sync_client_default_printer_enable=None, universal_printer_driver=None):
-        """PrinterRedirectionOptions
+        r"""PrinterRedirectionOptions
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PrinterRedirectionOptions:
 
     @property
     def sync_client_default_printer_enable(self):
-        """Gets the sync_client_default_printer_enable of this PrinterRedirectionOptions.
+        r"""Gets the sync_client_default_printer_enable of this PrinterRedirectionOptions.
 
         是否开启同步客户端默认打印机。取值为： false：表示关闭。 true：表示开启。
 
@@ -61,7 +61,7 @@ class PrinterRedirectionOptions:
 
     @sync_client_default_printer_enable.setter
     def sync_client_default_printer_enable(self, sync_client_default_printer_enable):
-        """Sets the sync_client_default_printer_enable of this PrinterRedirectionOptions.
+        r"""Sets the sync_client_default_printer_enable of this PrinterRedirectionOptions.
 
         是否开启同步客户端默认打印机。取值为： false：表示关闭。 true：表示开启。
 
@@ -72,7 +72,7 @@ class PrinterRedirectionOptions:
 
     @property
     def universal_printer_driver(self):
-        """Gets the universal_printer_driver of this PrinterRedirectionOptions.
+        r"""Gets the universal_printer_driver of this PrinterRedirectionOptions.
 
         通用打印机驱动。取值为：- Default：linux客户端选择Universal Printing- PS，windows客户端选择HDP XPSDrv Driver。- HDP XPSDrv Driver。- Universal Printing PCL 5。- Universal Printing PCL 6。- Universal Printing PS。
 
@@ -83,7 +83,7 @@ class PrinterRedirectionOptions:
 
     @universal_printer_driver.setter
     def universal_printer_driver(self, universal_printer_driver):
-        """Sets the universal_printer_driver of this PrinterRedirectionOptions.
+        r"""Sets the universal_printer_driver of this PrinterRedirectionOptions.
 
         通用打印机驱动。取值为：- Default：linux客户端选择Universal Printing- PS，windows客户端选择HDP XPSDrv Driver。- HDP XPSDrv Driver。- Universal Printing PCL 5。- Universal Printing PCL 6。- Universal Printing PS。
 

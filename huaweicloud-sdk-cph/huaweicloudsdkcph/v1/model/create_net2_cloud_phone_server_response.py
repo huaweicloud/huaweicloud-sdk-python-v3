@@ -36,7 +36,7 @@ class CreateNet2CloudPhoneServerResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, order_id=None, product_id=None, server_ids=None, error_msg=None, error_code=None):
-        """CreateNet2CloudPhoneServerResponse
+        r"""CreateNet2CloudPhoneServerResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class CreateNet2CloudPhoneServerResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateNet2CloudPhoneServerResponse.
+        r"""Gets the request_id of this CreateNet2CloudPhoneServerResponse.
 
         请求的唯一标识ID。
 
@@ -90,7 +90,7 @@ class CreateNet2CloudPhoneServerResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateNet2CloudPhoneServerResponse.
+        r"""Sets the request_id of this CreateNet2CloudPhoneServerResponse.
 
         请求的唯一标识ID。
 
@@ -101,7 +101,7 @@ class CreateNet2CloudPhoneServerResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this CreateNet2CloudPhoneServerResponse.
+        r"""Gets the order_id of this CreateNet2CloudPhoneServerResponse.
 
         订单ID，不超过64个字节。
 
@@ -112,7 +112,7 @@ class CreateNet2CloudPhoneServerResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this CreateNet2CloudPhoneServerResponse.
+        r"""Sets the order_id of this CreateNet2CloudPhoneServerResponse.
 
         订单ID，不超过64个字节。
 
@@ -123,7 +123,7 @@ class CreateNet2CloudPhoneServerResponse(SdkResponse):
 
     @property
     def product_id(self):
-        """Gets the product_id of this CreateNet2CloudPhoneServerResponse.
+        r"""Gets the product_id of this CreateNet2CloudPhoneServerResponse.
 
         产品ID，不超过64个字节。
 
@@ -134,7 +134,7 @@ class CreateNet2CloudPhoneServerResponse(SdkResponse):
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this CreateNet2CloudPhoneServerResponse.
+        r"""Sets the product_id of this CreateNet2CloudPhoneServerResponse.
 
         产品ID，不超过64个字节。
 
@@ -145,7 +145,7 @@ class CreateNet2CloudPhoneServerResponse(SdkResponse):
 
     @property
     def server_ids(self):
-        """Gets the server_ids of this CreateNet2CloudPhoneServerResponse.
+        r"""Gets the server_ids of this CreateNet2CloudPhoneServerResponse.
 
         服务器ID列表。
 
@@ -156,7 +156,7 @@ class CreateNet2CloudPhoneServerResponse(SdkResponse):
 
     @server_ids.setter
     def server_ids(self, server_ids):
-        """Sets the server_ids of this CreateNet2CloudPhoneServerResponse.
+        r"""Sets the server_ids of this CreateNet2CloudPhoneServerResponse.
 
         服务器ID列表。
 
@@ -167,7 +167,7 @@ class CreateNet2CloudPhoneServerResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this CreateNet2CloudPhoneServerResponse.
+        r"""Gets the error_msg of this CreateNet2CloudPhoneServerResponse.
 
         任务错误码说明。
 
@@ -178,7 +178,7 @@ class CreateNet2CloudPhoneServerResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this CreateNet2CloudPhoneServerResponse.
+        r"""Sets the error_msg of this CreateNet2CloudPhoneServerResponse.
 
         任务错误码说明。
 
@@ -189,7 +189,7 @@ class CreateNet2CloudPhoneServerResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this CreateNet2CloudPhoneServerResponse.
+        r"""Gets the error_code of this CreateNet2CloudPhoneServerResponse.
 
         任务错误码。
 
@@ -200,7 +200,7 @@ class CreateNet2CloudPhoneServerResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this CreateNet2CloudPhoneServerResponse.
+        r"""Sets the error_code of this CreateNet2CloudPhoneServerResponse.
 
         任务错误码。
 

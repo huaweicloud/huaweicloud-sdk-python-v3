@@ -35,7 +35,7 @@ class DeleteObjectsRequest:
     }
 
     def __init__(self, content_md5=None, date=None, bucket_name=None, delete=None, body=None):
-        """DeleteObjectsRequest
+        r"""DeleteObjectsRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class DeleteObjectsRequest:
 
     @property
     def content_md5(self):
-        """Gets the content_md5 of this DeleteObjectsRequest.
+        r"""Gets the content_md5 of this DeleteObjectsRequest.
 
         Base64-encoded 128-bit MD5 digest of the message according to RFC 1864.
 
@@ -81,7 +81,7 @@ class DeleteObjectsRequest:
 
     @content_md5.setter
     def content_md5(self, content_md5):
-        """Sets the content_md5 of this DeleteObjectsRequest.
+        r"""Sets the content_md5 of this DeleteObjectsRequest.
 
         Base64-encoded 128-bit MD5 digest of the message according to RFC 1864.
 
@@ -92,7 +92,7 @@ class DeleteObjectsRequest:
 
     @property
     def date(self):
-        """Gets the date of this DeleteObjectsRequest.
+        r"""Gets the date of this DeleteObjectsRequest.
 
         Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
@@ -103,7 +103,7 @@ class DeleteObjectsRequest:
 
     @date.setter
     def date(self, date):
-        """Sets the date of this DeleteObjectsRequest.
+        r"""Sets the date of this DeleteObjectsRequest.
 
         Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
@@ -114,7 +114,7 @@ class DeleteObjectsRequest:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this DeleteObjectsRequest.
+        r"""Gets the bucket_name of this DeleteObjectsRequest.
 
         Name of the requested bucket
 
@@ -125,7 +125,7 @@ class DeleteObjectsRequest:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this DeleteObjectsRequest.
+        r"""Sets the bucket_name of this DeleteObjectsRequest.
 
         Name of the requested bucket
 
@@ -136,7 +136,7 @@ class DeleteObjectsRequest:
 
     @property
     def delete(self):
-        """Gets the delete of this DeleteObjectsRequest.
+        r"""Gets the delete of this DeleteObjectsRequest.
 
         Indicates the batch deletion API.
 
@@ -147,7 +147,7 @@ class DeleteObjectsRequest:
 
     @delete.setter
     def delete(self, delete):
-        """Sets the delete of this DeleteObjectsRequest.
+        r"""Sets the delete of this DeleteObjectsRequest.
 
         Indicates the batch deletion API.
 
@@ -158,7 +158,7 @@ class DeleteObjectsRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteObjectsRequest.
+        r"""Gets the body of this DeleteObjectsRequest.
 
         :return: The body of this DeleteObjectsRequest.
         :rtype: :class:`huaweicloudsdkobs.v1.DeleteObjectsRequestBody`
@@ -167,7 +167,7 @@ class DeleteObjectsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteObjectsRequest.
+        r"""Sets the body of this DeleteObjectsRequest.
 
         :param body: The body of this DeleteObjectsRequest.
         :type body: :class:`huaweicloudsdkobs.v1.DeleteObjectsRequestBody`

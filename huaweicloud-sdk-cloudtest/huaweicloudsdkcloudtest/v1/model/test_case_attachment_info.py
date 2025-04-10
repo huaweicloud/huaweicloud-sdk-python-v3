@@ -45,7 +45,7 @@ class TestCaseAttachmentInfo:
     }
 
     def __init__(self, override=None, doc_id=None, file_name=None, file_path=None, file_type=None, file_size=None, override_id=None, related_type=None, store_file_name=None, system_type=None, storage_system=None):
-        """TestCaseAttachmentInfo
+        r"""TestCaseAttachmentInfo
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class TestCaseAttachmentInfo:
 
     @property
     def override(self):
-        """Gets the override of this TestCaseAttachmentInfo.
+        r"""Gets the override of this TestCaseAttachmentInfo.
 
         附件是否要被覆盖
 
@@ -124,7 +124,7 @@ class TestCaseAttachmentInfo:
 
     @override.setter
     def override(self, override):
-        """Sets the override of this TestCaseAttachmentInfo.
+        r"""Sets the override of this TestCaseAttachmentInfo.
 
         附件是否要被覆盖
 
@@ -135,7 +135,7 @@ class TestCaseAttachmentInfo:
 
     @property
     def doc_id(self):
-        """Gets the doc_id of this TestCaseAttachmentInfo.
+        r"""Gets the doc_id of this TestCaseAttachmentInfo.
 
         文档id
 
@@ -146,7 +146,7 @@ class TestCaseAttachmentInfo:
 
     @doc_id.setter
     def doc_id(self, doc_id):
-        """Sets the doc_id of this TestCaseAttachmentInfo.
+        r"""Sets the doc_id of this TestCaseAttachmentInfo.
 
         文档id
 
@@ -157,7 +157,7 @@ class TestCaseAttachmentInfo:
 
     @property
     def file_name(self):
-        """Gets the file_name of this TestCaseAttachmentInfo.
+        r"""Gets the file_name of this TestCaseAttachmentInfo.
 
         文件名
 
@@ -168,7 +168,7 @@ class TestCaseAttachmentInfo:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this TestCaseAttachmentInfo.
+        r"""Sets the file_name of this TestCaseAttachmentInfo.
 
         文件名
 
@@ -179,7 +179,7 @@ class TestCaseAttachmentInfo:
 
     @property
     def file_path(self):
-        """Gets the file_path of this TestCaseAttachmentInfo.
+        r"""Gets the file_path of this TestCaseAttachmentInfo.
 
         文件路径
 
@@ -190,7 +190,7 @@ class TestCaseAttachmentInfo:
 
     @file_path.setter
     def file_path(self, file_path):
-        """Sets the file_path of this TestCaseAttachmentInfo.
+        r"""Sets the file_path of this TestCaseAttachmentInfo.
 
         文件路径
 
@@ -201,7 +201,7 @@ class TestCaseAttachmentInfo:
 
     @property
     def file_type(self):
-        """Gets the file_type of this TestCaseAttachmentInfo.
+        r"""Gets the file_type of this TestCaseAttachmentInfo.
 
         文件类型
 
@@ -212,7 +212,7 @@ class TestCaseAttachmentInfo:
 
     @file_type.setter
     def file_type(self, file_type):
-        """Sets the file_type of this TestCaseAttachmentInfo.
+        r"""Sets the file_type of this TestCaseAttachmentInfo.
 
         文件类型
 
@@ -223,7 +223,7 @@ class TestCaseAttachmentInfo:
 
     @property
     def file_size(self):
-        """Gets the file_size of this TestCaseAttachmentInfo.
+        r"""Gets the file_size of this TestCaseAttachmentInfo.
 
         文件大小
 
@@ -234,7 +234,7 @@ class TestCaseAttachmentInfo:
 
     @file_size.setter
     def file_size(self, file_size):
-        """Sets the file_size of this TestCaseAttachmentInfo.
+        r"""Sets the file_size of this TestCaseAttachmentInfo.
 
         文件大小
 
@@ -245,7 +245,7 @@ class TestCaseAttachmentInfo:
 
     @property
     def override_id(self):
-        """Gets the override_id of this TestCaseAttachmentInfo.
+        r"""Gets the override_id of this TestCaseAttachmentInfo.
 
         重复用例ID
 
@@ -256,7 +256,7 @@ class TestCaseAttachmentInfo:
 
     @override_id.setter
     def override_id(self, override_id):
-        """Sets the override_id of this TestCaseAttachmentInfo.
+        r"""Sets the override_id of this TestCaseAttachmentInfo.
 
         重复用例ID
 
@@ -267,7 +267,7 @@ class TestCaseAttachmentInfo:
 
     @property
     def related_type(self):
-        """Gets the related_type of this TestCaseAttachmentInfo.
+        r"""Gets the related_type of this TestCaseAttachmentInfo.
 
         相关类型
 
@@ -278,7 +278,7 @@ class TestCaseAttachmentInfo:
 
     @related_type.setter
     def related_type(self, related_type):
-        """Sets the related_type of this TestCaseAttachmentInfo.
+        r"""Sets the related_type of this TestCaseAttachmentInfo.
 
         相关类型
 
@@ -289,7 +289,7 @@ class TestCaseAttachmentInfo:
 
     @property
     def store_file_name(self):
-        """Gets the store_file_name of this TestCaseAttachmentInfo.
+        r"""Gets the store_file_name of this TestCaseAttachmentInfo.
 
         保存文件名
 
@@ -300,7 +300,7 @@ class TestCaseAttachmentInfo:
 
     @store_file_name.setter
     def store_file_name(self, store_file_name):
-        """Sets the store_file_name of this TestCaseAttachmentInfo.
+        r"""Sets the store_file_name of this TestCaseAttachmentInfo.
 
         保存文件名
 
@@ -311,7 +311,7 @@ class TestCaseAttachmentInfo:
 
     @property
     def system_type(self):
-        """Gets the system_type of this TestCaseAttachmentInfo.
+        r"""Gets the system_type of this TestCaseAttachmentInfo.
 
         系统区分
 
@@ -322,7 +322,7 @@ class TestCaseAttachmentInfo:
 
     @system_type.setter
     def system_type(self, system_type):
-        """Sets the system_type of this TestCaseAttachmentInfo.
+        r"""Sets the system_type of this TestCaseAttachmentInfo.
 
         系统区分
 
@@ -333,7 +333,7 @@ class TestCaseAttachmentInfo:
 
     @property
     def storage_system(self):
-        """Gets the storage_system of this TestCaseAttachmentInfo.
+        r"""Gets the storage_system of this TestCaseAttachmentInfo.
 
         区分文件存储系统
 
@@ -344,7 +344,7 @@ class TestCaseAttachmentInfo:
 
     @storage_system.setter
     def storage_system(self, storage_system):
-        """Sets the storage_system of this TestCaseAttachmentInfo.
+        r"""Sets the storage_system of this TestCaseAttachmentInfo.
 
         区分文件存储系统
 

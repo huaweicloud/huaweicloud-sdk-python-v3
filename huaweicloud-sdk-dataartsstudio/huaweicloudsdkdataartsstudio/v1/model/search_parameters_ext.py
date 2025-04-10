@@ -55,7 +55,7 @@ class SearchParametersExt:
     }
 
     def __init__(self, attributes=None, classifications=None, connection_names=None, exclude_classifications=None, exclude_security_levels=None, exclude_tags=None, include_classification_attributes=None, include_sub_classifications=None, limit=None, offset=None, order=None, query=None, search_name_and_description=None, security_levels=None, term_names=None, type_names=None):
-        """SearchParametersExt
+        r"""SearchParametersExt
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class SearchParametersExt:
 
     @property
     def attributes(self):
-        """Gets the attributes of this SearchParametersExt.
+        r"""Gets the attributes of this SearchParametersExt.
 
         属性
 
@@ -159,7 +159,7 @@ class SearchParametersExt:
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this SearchParametersExt.
+        r"""Sets the attributes of this SearchParametersExt.
 
         属性
 
@@ -170,7 +170,7 @@ class SearchParametersExt:
 
     @property
     def classifications(self):
-        """Gets the classifications of this SearchParametersExt.
+        r"""Gets the classifications of this SearchParametersExt.
 
         分类
 
@@ -181,7 +181,7 @@ class SearchParametersExt:
 
     @classifications.setter
     def classifications(self, classifications):
-        """Sets the classifications of this SearchParametersExt.
+        r"""Sets the classifications of this SearchParametersExt.
 
         分类
 
@@ -192,7 +192,7 @@ class SearchParametersExt:
 
     @property
     def connection_names(self):
-        """Gets the connection_names of this SearchParametersExt.
+        r"""Gets the connection_names of this SearchParametersExt.
 
         数据连接
 
@@ -203,7 +203,7 @@ class SearchParametersExt:
 
     @connection_names.setter
     def connection_names(self, connection_names):
-        """Sets the connection_names of this SearchParametersExt.
+        r"""Sets the connection_names of this SearchParametersExt.
 
         数据连接
 
@@ -214,7 +214,7 @@ class SearchParametersExt:
 
     @property
     def exclude_classifications(self):
-        """Gets the exclude_classifications of this SearchParametersExt.
+        r"""Gets the exclude_classifications of this SearchParametersExt.
 
         是否排除分类
 
@@ -225,7 +225,7 @@ class SearchParametersExt:
 
     @exclude_classifications.setter
     def exclude_classifications(self, exclude_classifications):
-        """Sets the exclude_classifications of this SearchParametersExt.
+        r"""Sets the exclude_classifications of this SearchParametersExt.
 
         是否排除分类
 
@@ -236,7 +236,7 @@ class SearchParametersExt:
 
     @property
     def exclude_security_levels(self):
-        """Gets the exclude_security_levels of this SearchParametersExt.
+        r"""Gets the exclude_security_levels of this SearchParametersExt.
 
         是否排除密级
 
@@ -247,7 +247,7 @@ class SearchParametersExt:
 
     @exclude_security_levels.setter
     def exclude_security_levels(self, exclude_security_levels):
-        """Sets the exclude_security_levels of this SearchParametersExt.
+        r"""Sets the exclude_security_levels of this SearchParametersExt.
 
         是否排除密级
 
@@ -258,7 +258,7 @@ class SearchParametersExt:
 
     @property
     def exclude_tags(self):
-        """Gets the exclude_tags of this SearchParametersExt.
+        r"""Gets the exclude_tags of this SearchParametersExt.
 
         是否排除标签
 
@@ -269,7 +269,7 @@ class SearchParametersExt:
 
     @exclude_tags.setter
     def exclude_tags(self, exclude_tags):
-        """Sets the exclude_tags of this SearchParametersExt.
+        r"""Sets the exclude_tags of this SearchParametersExt.
 
         是否排除标签
 
@@ -280,7 +280,7 @@ class SearchParametersExt:
 
     @property
     def include_classification_attributes(self):
-        """Gets the include_classification_attributes of this SearchParametersExt.
+        r"""Gets the include_classification_attributes of this SearchParametersExt.
 
         包含分类属性
 
@@ -291,7 +291,7 @@ class SearchParametersExt:
 
     @include_classification_attributes.setter
     def include_classification_attributes(self, include_classification_attributes):
-        """Sets the include_classification_attributes of this SearchParametersExt.
+        r"""Sets the include_classification_attributes of this SearchParametersExt.
 
         包含分类属性
 
@@ -302,7 +302,7 @@ class SearchParametersExt:
 
     @property
     def include_sub_classifications(self):
-        """Gets the include_sub_classifications of this SearchParametersExt.
+        r"""Gets the include_sub_classifications of this SearchParametersExt.
 
         包含子分类
 
@@ -313,7 +313,7 @@ class SearchParametersExt:
 
     @include_sub_classifications.setter
     def include_sub_classifications(self, include_sub_classifications):
-        """Sets the include_sub_classifications of this SearchParametersExt.
+        r"""Sets the include_sub_classifications of this SearchParametersExt.
 
         包含子分类
 
@@ -324,7 +324,7 @@ class SearchParametersExt:
 
     @property
     def limit(self):
-        """Gets the limit of this SearchParametersExt.
+        r"""Gets the limit of this SearchParametersExt.
 
         分页参数，每页限制数量，默认查询所有
 
@@ -335,7 +335,7 @@ class SearchParametersExt:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchParametersExt.
+        r"""Sets the limit of this SearchParametersExt.
 
         分页参数，每页限制数量，默认查询所有
 
@@ -346,7 +346,7 @@ class SearchParametersExt:
 
     @property
     def offset(self):
-        """Gets the offset of this SearchParametersExt.
+        r"""Gets the offset of this SearchParametersExt.
 
         分页参数，偏移量，默认查询所有
 
@@ -357,7 +357,7 @@ class SearchParametersExt:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchParametersExt.
+        r"""Sets the offset of this SearchParametersExt.
 
         分页参数，偏移量，默认查询所有
 
@@ -368,7 +368,7 @@ class SearchParametersExt:
 
     @property
     def order(self):
-        """Gets the order of this SearchParametersExt.
+        r"""Gets the order of this SearchParametersExt.
 
         排序方式
 
@@ -379,7 +379,7 @@ class SearchParametersExt:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this SearchParametersExt.
+        r"""Sets the order of this SearchParametersExt.
 
         排序方式
 
@@ -390,7 +390,7 @@ class SearchParametersExt:
 
     @property
     def query(self):
-        """Gets the query of this SearchParametersExt.
+        r"""Gets the query of this SearchParametersExt.
 
         查询参数
 
@@ -401,7 +401,7 @@ class SearchParametersExt:
 
     @query.setter
     def query(self, query):
-        """Sets the query of this SearchParametersExt.
+        r"""Sets the query of this SearchParametersExt.
 
         查询参数
 
@@ -412,7 +412,7 @@ class SearchParametersExt:
 
     @property
     def search_name_and_description(self):
-        """Gets the search_name_and_description of this SearchParametersExt.
+        r"""Gets the search_name_and_description of this SearchParametersExt.
 
         是否按名称和描述搜索
 
@@ -423,7 +423,7 @@ class SearchParametersExt:
 
     @search_name_and_description.setter
     def search_name_and_description(self, search_name_and_description):
-        """Sets the search_name_and_description of this SearchParametersExt.
+        r"""Sets the search_name_and_description of this SearchParametersExt.
 
         是否按名称和描述搜索
 
@@ -434,7 +434,7 @@ class SearchParametersExt:
 
     @property
     def security_levels(self):
-        """Gets the security_levels of this SearchParametersExt.
+        r"""Gets the security_levels of this SearchParametersExt.
 
         安全密级列表
 
@@ -445,7 +445,7 @@ class SearchParametersExt:
 
     @security_levels.setter
     def security_levels(self, security_levels):
-        """Sets the security_levels of this SearchParametersExt.
+        r"""Sets the security_levels of this SearchParametersExt.
 
         安全密级列表
 
@@ -456,7 +456,7 @@ class SearchParametersExt:
 
     @property
     def term_names(self):
-        """Gets the term_names of this SearchParametersExt.
+        r"""Gets the term_names of this SearchParametersExt.
 
         标签列表
 
@@ -467,7 +467,7 @@ class SearchParametersExt:
 
     @term_names.setter
     def term_names(self, term_names):
-        """Sets the term_names of this SearchParametersExt.
+        r"""Sets the term_names of this SearchParametersExt.
 
         标签列表
 
@@ -478,7 +478,7 @@ class SearchParametersExt:
 
     @property
     def type_names(self):
-        """Gets the type_names of this SearchParametersExt.
+        r"""Gets the type_names of this SearchParametersExt.
 
         类型列表
 
@@ -489,7 +489,7 @@ class SearchParametersExt:
 
     @type_names.setter
     def type_names(self, type_names):
-        """Sets the type_names of this SearchParametersExt.
+        r"""Sets the type_names of this SearchParametersExt.
 
         类型列表
 

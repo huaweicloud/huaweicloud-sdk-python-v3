@@ -28,7 +28,7 @@ class CreateCertificateAuthorityOrderResponse(SdkResponse):
     }
 
     def __init__(self, order_id=None, ca_ids=None):
-        """CreateCertificateAuthorityOrderResponse
+        r"""CreateCertificateAuthorityOrderResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateCertificateAuthorityOrderResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this CreateCertificateAuthorityOrderResponse.
+        r"""Gets the order_id of this CreateCertificateAuthorityOrderResponse.
 
         订单号。
 
@@ -62,7 +62,7 @@ class CreateCertificateAuthorityOrderResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this CreateCertificateAuthorityOrderResponse.
+        r"""Sets the order_id of this CreateCertificateAuthorityOrderResponse.
 
         订单号。
 
@@ -73,7 +73,7 @@ class CreateCertificateAuthorityOrderResponse(SdkResponse):
 
     @property
     def ca_ids(self):
-        """Gets the ca_ids of this CreateCertificateAuthorityOrderResponse.
+        r"""Gets the ca_ids of this CreateCertificateAuthorityOrderResponse.
 
         当前购买的CA证书ID列表。
 
@@ -84,7 +84,7 @@ class CreateCertificateAuthorityOrderResponse(SdkResponse):
 
     @ca_ids.setter
     def ca_ids(self, ca_ids):
-        """Sets the ca_ids of this CreateCertificateAuthorityOrderResponse.
+        r"""Sets the ca_ids of this CreateCertificateAuthorityOrderResponse.
 
         当前购买的CA证书ID列表。
 

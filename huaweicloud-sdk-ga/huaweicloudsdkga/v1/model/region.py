@@ -29,7 +29,7 @@ class Region:
     }
 
     def __init__(self, region_id=None, area=None, supported_endpoint_types=None):
-        """Region
+        r"""Region
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class Region:
 
     @property
     def region_id(self):
-        """Gets the region_id of this Region.
+        r"""Gets the region_id of this Region.
 
         区域ID。
 
@@ -68,7 +68,7 @@ class Region:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this Region.
+        r"""Sets the region_id of this Region.
 
         区域ID。
 
@@ -79,7 +79,7 @@ class Region:
 
     @property
     def area(self):
-        """Gets the area of this Region.
+        r"""Gets the area of this Region.
 
         区域所属地区，取值： - OUTOFCM： 中国大陆以外 - CM：中国大陆
 
@@ -90,7 +90,7 @@ class Region:
 
     @area.setter
     def area(self, area):
-        """Sets the area of this Region.
+        r"""Sets the area of this Region.
 
         区域所属地区，取值： - OUTOFCM： 中国大陆以外 - CM：中国大陆
 
@@ -101,7 +101,7 @@ class Region:
 
     @property
     def supported_endpoint_types(self):
-        """Gets the supported_endpoint_types of this Region.
+        r"""Gets the supported_endpoint_types of this Region.
 
         区域支持的终端节点类型。取值： EIP：弹性公网IP
 
@@ -112,7 +112,7 @@ class Region:
 
     @supported_endpoint_types.setter
     def supported_endpoint_types(self, supported_endpoint_types):
-        """Sets the supported_endpoint_types of this Region.
+        r"""Sets the supported_endpoint_types of this Region.
 
         区域支持的终端节点类型。取值： EIP：弹性公网IP
 

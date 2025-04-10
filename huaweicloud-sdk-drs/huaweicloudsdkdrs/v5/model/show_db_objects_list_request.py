@@ -29,7 +29,7 @@ class ShowDbObjectsListRequest:
     }
 
     def __init__(self, job_id=None, x_language=None, type=None):
-        """ShowDbObjectsListRequest
+        r"""ShowDbObjectsListRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowDbObjectsListRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowDbObjectsListRequest.
+        r"""Gets the job_id of this ShowDbObjectsListRequest.
 
         任务ID。
 
@@ -66,7 +66,7 @@ class ShowDbObjectsListRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowDbObjectsListRequest.
+        r"""Sets the job_id of this ShowDbObjectsListRequest.
 
         任务ID。
 
@@ -77,7 +77,7 @@ class ShowDbObjectsListRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowDbObjectsListRequest.
+        r"""Gets the x_language of this ShowDbObjectsListRequest.
 
         请求语言类型。
 
@@ -88,7 +88,7 @@ class ShowDbObjectsListRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowDbObjectsListRequest.
+        r"""Sets the x_language of this ShowDbObjectsListRequest.
 
         请求语言类型。
 
@@ -99,7 +99,7 @@ class ShowDbObjectsListRequest:
 
     @property
     def type(self):
-        """Gets the type of this ShowDbObjectsListRequest.
+        r"""Gets the type of this ShowDbObjectsListRequest.
 
         查询对象信息类型。 取值：  - modified：查询已选择的（已同步的和未下发的）对象信息。
 
@@ -110,7 +110,7 @@ class ShowDbObjectsListRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowDbObjectsListRequest.
+        r"""Sets the type of this ShowDbObjectsListRequest.
 
         查询对象信息类型。 取值：  - modified：查询已选择的（已同步的和未下发的）对象信息。
 

@@ -49,7 +49,7 @@ class ChartResp:
     }
 
     def __init__(self, id=None, name=None, values=None, translate=None, instruction=None, version=None, description=None, source=None, icon_url=None, public=None, chart_url=None, create_at=None, update_at=None):
-        """ChartResp
+        r"""ChartResp
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class ChartResp:
 
     @property
     def id(self):
-        """Gets the id of this ChartResp.
+        r"""Gets the id of this ChartResp.
 
         模板ID
 
@@ -138,7 +138,7 @@ class ChartResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ChartResp.
+        r"""Sets the id of this ChartResp.
 
         模板ID
 
@@ -149,7 +149,7 @@ class ChartResp:
 
     @property
     def name(self):
-        """Gets the name of this ChartResp.
+        r"""Gets the name of this ChartResp.
 
         模板名称
 
@@ -160,7 +160,7 @@ class ChartResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ChartResp.
+        r"""Sets the name of this ChartResp.
 
         模板名称
 
@@ -171,7 +171,7 @@ class ChartResp:
 
     @property
     def values(self):
-        """Gets the values of this ChartResp.
+        r"""Gets the values of this ChartResp.
 
         模板值
 
@@ -182,7 +182,7 @@ class ChartResp:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this ChartResp.
+        r"""Sets the values of this ChartResp.
 
         模板值
 
@@ -193,7 +193,7 @@ class ChartResp:
 
     @property
     def translate(self):
-        """Gets the translate of this ChartResp.
+        r"""Gets the translate of this ChartResp.
 
         模板翻译资源
 
@@ -204,7 +204,7 @@ class ChartResp:
 
     @translate.setter
     def translate(self, translate):
-        """Sets the translate of this ChartResp.
+        r"""Sets the translate of this ChartResp.
 
         模板翻译资源
 
@@ -215,7 +215,7 @@ class ChartResp:
 
     @property
     def instruction(self):
-        """Gets the instruction of this ChartResp.
+        r"""Gets the instruction of this ChartResp.
 
         模板介绍
 
@@ -226,7 +226,7 @@ class ChartResp:
 
     @instruction.setter
     def instruction(self, instruction):
-        """Sets the instruction of this ChartResp.
+        r"""Sets the instruction of this ChartResp.
 
         模板介绍
 
@@ -237,7 +237,7 @@ class ChartResp:
 
     @property
     def version(self):
-        """Gets the version of this ChartResp.
+        r"""Gets the version of this ChartResp.
 
         模板版本
 
@@ -248,7 +248,7 @@ class ChartResp:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ChartResp.
+        r"""Sets the version of this ChartResp.
 
         模板版本
 
@@ -259,7 +259,7 @@ class ChartResp:
 
     @property
     def description(self):
-        """Gets the description of this ChartResp.
+        r"""Gets the description of this ChartResp.
 
         模板描述
 
@@ -270,7 +270,7 @@ class ChartResp:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ChartResp.
+        r"""Sets the description of this ChartResp.
 
         模板描述
 
@@ -281,7 +281,7 @@ class ChartResp:
 
     @property
     def source(self):
-        """Gets the source of this ChartResp.
+        r"""Gets the source of this ChartResp.
 
         模板的来源
 
@@ -292,7 +292,7 @@ class ChartResp:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this ChartResp.
+        r"""Sets the source of this ChartResp.
 
         模板的来源
 
@@ -303,7 +303,7 @@ class ChartResp:
 
     @property
     def icon_url(self):
-        """Gets the icon_url of this ChartResp.
+        r"""Gets the icon_url of this ChartResp.
 
         模板的图标链接
 
@@ -314,7 +314,7 @@ class ChartResp:
 
     @icon_url.setter
     def icon_url(self, icon_url):
-        """Sets the icon_url of this ChartResp.
+        r"""Sets the icon_url of this ChartResp.
 
         模板的图标链接
 
@@ -325,7 +325,7 @@ class ChartResp:
 
     @property
     def public(self):
-        """Gets the public of this ChartResp.
+        r"""Gets the public of this ChartResp.
 
         是否公开模板
 
@@ -336,7 +336,7 @@ class ChartResp:
 
     @public.setter
     def public(self, public):
-        """Sets the public of this ChartResp.
+        r"""Sets the public of this ChartResp.
 
         是否公开模板
 
@@ -347,7 +347,7 @@ class ChartResp:
 
     @property
     def chart_url(self):
-        """Gets the chart_url of this ChartResp.
+        r"""Gets the chart_url of this ChartResp.
 
         模板的链接
 
@@ -358,7 +358,7 @@ class ChartResp:
 
     @chart_url.setter
     def chart_url(self, chart_url):
-        """Sets the chart_url of this ChartResp.
+        r"""Sets the chart_url of this ChartResp.
 
         模板的链接
 
@@ -369,7 +369,7 @@ class ChartResp:
 
     @property
     def create_at(self):
-        """Gets the create_at of this ChartResp.
+        r"""Gets the create_at of this ChartResp.
 
         创建时间
 
@@ -380,7 +380,7 @@ class ChartResp:
 
     @create_at.setter
     def create_at(self, create_at):
-        """Sets the create_at of this ChartResp.
+        r"""Sets the create_at of this ChartResp.
 
         创建时间
 
@@ -391,7 +391,7 @@ class ChartResp:
 
     @property
     def update_at(self):
-        """Gets the update_at of this ChartResp.
+        r"""Gets the update_at of this ChartResp.
 
         更新时间
 
@@ -402,7 +402,7 @@ class ChartResp:
 
     @update_at.setter
     def update_at(self, update_at):
-        """Sets the update_at of this ChartResp.
+        r"""Sets the update_at of this ChartResp.
 
         更新时间
 

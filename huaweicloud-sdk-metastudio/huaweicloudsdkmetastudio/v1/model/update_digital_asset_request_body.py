@@ -45,7 +45,7 @@ class UpdateDigitalAssetRequestBody:
     }
 
     def __init__(self, asset_name=None, asset_description=None, asset_type=None, asset_state=None, review_config=None, tags=None, asset_extra_meta=None, system_properties=None, shared_config=None, asset_order=None, supported_service=None):
-        """UpdateDigitalAssetRequestBody
+        r"""UpdateDigitalAssetRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class UpdateDigitalAssetRequestBody:
 
     @property
     def asset_name(self):
-        """Gets the asset_name of this UpdateDigitalAssetRequestBody.
+        r"""Gets the asset_name of this UpdateDigitalAssetRequestBody.
 
         **参数解释**： 资产名称。 **约束限制**： 不涉及。 **取值范围**： 只能使用中英文字符，字符长度0-256位。 **默认取值**： 不涉及。
 
@@ -124,7 +124,7 @@ class UpdateDigitalAssetRequestBody:
 
     @asset_name.setter
     def asset_name(self, asset_name):
-        """Sets the asset_name of this UpdateDigitalAssetRequestBody.
+        r"""Sets the asset_name of this UpdateDigitalAssetRequestBody.
 
         **参数解释**： 资产名称。 **约束限制**： 不涉及。 **取值范围**： 只能使用中英文字符，字符长度0-256位。 **默认取值**： 不涉及。
 
@@ -135,7 +135,7 @@ class UpdateDigitalAssetRequestBody:
 
     @property
     def asset_description(self):
-        """Gets the asset_description of this UpdateDigitalAssetRequestBody.
+        r"""Gets the asset_description of this UpdateDigitalAssetRequestBody.
 
         **参数解释**： 资产描述。 **约束限制**： 不涉及。 **取值范围**： 只能使用中英文字符，字符长度0-4096位。 **默认取值**： 不涉及。
 
@@ -146,7 +146,7 @@ class UpdateDigitalAssetRequestBody:
 
     @asset_description.setter
     def asset_description(self, asset_description):
-        """Sets the asset_description of this UpdateDigitalAssetRequestBody.
+        r"""Sets the asset_description of this UpdateDigitalAssetRequestBody.
 
         **参数解释**： 资产描述。 **约束限制**： 不涉及。 **取值范围**： 只能使用中英文字符，字符长度0-4096位。 **默认取值**： 不涉及。
 
@@ -157,7 +157,7 @@ class UpdateDigitalAssetRequestBody:
 
     @property
     def asset_type(self):
-        """Gets the asset_type of this UpdateDigitalAssetRequestBody.
+        r"""Gets the asset_type of this UpdateDigitalAssetRequestBody.
 
         **参数解释**： 资产类型。 **约束限制**： VOICE_MODEL，HUMAN_MODEL_2D 普通用户均无法上传。 **取值范围**： 公共资产类型： * VOICE_MODEL：音色模型 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MUSIC: 音乐 * AUDIO: 音频 * COMMON_FILE：通用文件  分身数字人资产： * HUMAN_MODEL_2D: 分身数字人模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板  3D数字人资产： * HUMAN_MODEL：3D数字人模型 * SCENE：场景模型 * ANIMATION：动作动画 * MATERIAL：风格化素材 * NORMAL_MODEL: 普通模型。  **默认取值**： 不涉及。
 
@@ -168,7 +168,7 @@ class UpdateDigitalAssetRequestBody:
 
     @asset_type.setter
     def asset_type(self, asset_type):
-        """Sets the asset_type of this UpdateDigitalAssetRequestBody.
+        r"""Sets the asset_type of this UpdateDigitalAssetRequestBody.
 
         **参数解释**： 资产类型。 **约束限制**： VOICE_MODEL，HUMAN_MODEL_2D 普通用户均无法上传。 **取值范围**： 公共资产类型： * VOICE_MODEL：音色模型 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MUSIC: 音乐 * AUDIO: 音频 * COMMON_FILE：通用文件  分身数字人资产： * HUMAN_MODEL_2D: 分身数字人模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板  3D数字人资产： * HUMAN_MODEL：3D数字人模型 * SCENE：场景模型 * ANIMATION：动作动画 * MATERIAL：风格化素材 * NORMAL_MODEL: 普通模型。  **默认取值**： 不涉及。
 
@@ -179,7 +179,7 @@ class UpdateDigitalAssetRequestBody:
 
     @property
     def asset_state(self):
-        """Gets the asset_state of this UpdateDigitalAssetRequestBody.
+        r"""Gets the asset_state of this UpdateDigitalAssetRequestBody.
 
         **参数解释**： 资产状态。 **约束限制**： 租户仅能激活或取消激活资产，其他状态由系统自动更新。 **取值范围**： * UNACTIVED：取消激活。未激活的资产不可用于其他业务 * ACTIVED：激活。激活后的资产可用于其他业务 * WAITING_DELETE：资产将被下线(激活状态资产可用、管理员可用)  **默认取值**： 不涉及。
 
@@ -190,7 +190,7 @@ class UpdateDigitalAssetRequestBody:
 
     @asset_state.setter
     def asset_state(self, asset_state):
-        """Sets the asset_state of this UpdateDigitalAssetRequestBody.
+        r"""Sets the asset_state of this UpdateDigitalAssetRequestBody.
 
         **参数解释**： 资产状态。 **约束限制**： 租户仅能激活或取消激活资产，其他状态由系统自动更新。 **取值范围**： * UNACTIVED：取消激活。未激活的资产不可用于其他业务 * ACTIVED：激活。激活后的资产可用于其他业务 * WAITING_DELETE：资产将被下线(激活状态资产可用、管理员可用)  **默认取值**： 不涉及。
 
@@ -201,7 +201,7 @@ class UpdateDigitalAssetRequestBody:
 
     @property
     def review_config(self):
-        """Gets the review_config of this UpdateDigitalAssetRequestBody.
+        r"""Gets the review_config of this UpdateDigitalAssetRequestBody.
 
         :return: The review_config of this UpdateDigitalAssetRequestBody.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
@@ -210,7 +210,7 @@ class UpdateDigitalAssetRequestBody:
 
     @review_config.setter
     def review_config(self, review_config):
-        """Sets the review_config of this UpdateDigitalAssetRequestBody.
+        r"""Sets the review_config of this UpdateDigitalAssetRequestBody.
 
         :param review_config: The review_config of this UpdateDigitalAssetRequestBody.
         :type review_config: :class:`huaweicloudsdkmetastudio.v1.ReviewConfig`
@@ -219,7 +219,7 @@ class UpdateDigitalAssetRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this UpdateDigitalAssetRequestBody.
+        r"""Gets the tags of this UpdateDigitalAssetRequestBody.
 
         **参数解释**： 标签列表。 > 分身形象系统资产的tag定义如下： > - 行业：NEWS,BUSINESS,E-COMMERCE,MARKETING,KNOWLEDGE,EDUCATION,SPORTS > - 性别：MALE,FEMALE > - 姿势：FULL-BODY,HALF-BODY,STANDING,SITTING,WALKING > - 区域：ASIAN,WESTERN,MIDDLE-EASTERNER,AFRICAN,LATINO  **约束限制**： 不涉及 **取值范围**： 标签个数最大为50个。 标签内容为中英文，字符长度0-128位。 **默认取值**： 不涉及
 
@@ -230,7 +230,7 @@ class UpdateDigitalAssetRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this UpdateDigitalAssetRequestBody.
+        r"""Sets the tags of this UpdateDigitalAssetRequestBody.
 
         **参数解释**： 标签列表。 > 分身形象系统资产的tag定义如下： > - 行业：NEWS,BUSINESS,E-COMMERCE,MARKETING,KNOWLEDGE,EDUCATION,SPORTS > - 性别：MALE,FEMALE > - 姿势：FULL-BODY,HALF-BODY,STANDING,SITTING,WALKING > - 区域：ASIAN,WESTERN,MIDDLE-EASTERNER,AFRICAN,LATINO  **约束限制**： 不涉及 **取值范围**： 标签个数最大为50个。 标签内容为中英文，字符长度0-128位。 **默认取值**： 不涉及
 
@@ -241,7 +241,7 @@ class UpdateDigitalAssetRequestBody:
 
     @property
     def asset_extra_meta(self):
-        """Gets the asset_extra_meta of this UpdateDigitalAssetRequestBody.
+        r"""Gets the asset_extra_meta of this UpdateDigitalAssetRequestBody.
 
         :return: The asset_extra_meta of this UpdateDigitalAssetRequestBody.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.AssetExtraMeta`
@@ -250,7 +250,7 @@ class UpdateDigitalAssetRequestBody:
 
     @asset_extra_meta.setter
     def asset_extra_meta(self, asset_extra_meta):
-        """Sets the asset_extra_meta of this UpdateDigitalAssetRequestBody.
+        r"""Sets the asset_extra_meta of this UpdateDigitalAssetRequestBody.
 
         :param asset_extra_meta: The asset_extra_meta of this UpdateDigitalAssetRequestBody.
         :type asset_extra_meta: :class:`huaweicloudsdkmetastudio.v1.AssetExtraMeta`
@@ -259,7 +259,7 @@ class UpdateDigitalAssetRequestBody:
 
     @property
     def system_properties(self):
-        """Gets the system_properties of this UpdateDigitalAssetRequestBody.
+        r"""Gets the system_properties of this UpdateDigitalAssetRequestBody.
 
         设置系统属性。
 
@@ -270,7 +270,7 @@ class UpdateDigitalAssetRequestBody:
 
     @system_properties.setter
     def system_properties(self, system_properties):
-        """Sets the system_properties of this UpdateDigitalAssetRequestBody.
+        r"""Sets the system_properties of this UpdateDigitalAssetRequestBody.
 
         设置系统属性。
 
@@ -281,7 +281,7 @@ class UpdateDigitalAssetRequestBody:
 
     @property
     def shared_config(self):
-        """Gets the shared_config of this UpdateDigitalAssetRequestBody.
+        r"""Gets the shared_config of this UpdateDigitalAssetRequestBody.
 
         :return: The shared_config of this UpdateDigitalAssetRequestBody.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.AssetSharedConfig`
@@ -290,7 +290,7 @@ class UpdateDigitalAssetRequestBody:
 
     @shared_config.setter
     def shared_config(self, shared_config):
-        """Sets the shared_config of this UpdateDigitalAssetRequestBody.
+        r"""Sets the shared_config of this UpdateDigitalAssetRequestBody.
 
         :param shared_config: The shared_config of this UpdateDigitalAssetRequestBody.
         :type shared_config: :class:`huaweicloudsdkmetastudio.v1.AssetSharedConfig`
@@ -299,7 +299,7 @@ class UpdateDigitalAssetRequestBody:
 
     @property
     def asset_order(self):
-        """Gets the asset_order of this UpdateDigitalAssetRequestBody.
+        r"""Gets the asset_order of this UpdateDigitalAssetRequestBody.
 
         **参数解释**： 用于console控制台展示顺序。 如果取值相同，则默认最新的排在前面。 **约束限制**： 不涉及 **默认取值**： 不涉及
 
@@ -310,7 +310,7 @@ class UpdateDigitalAssetRequestBody:
 
     @asset_order.setter
     def asset_order(self, asset_order):
-        """Sets the asset_order of this UpdateDigitalAssetRequestBody.
+        r"""Sets the asset_order of this UpdateDigitalAssetRequestBody.
 
         **参数解释**： 用于console控制台展示顺序。 如果取值相同，则默认最新的排在前面。 **约束限制**： 不涉及 **默认取值**： 不涉及
 
@@ -321,7 +321,7 @@ class UpdateDigitalAssetRequestBody:
 
     @property
     def supported_service(self):
-        """Gets the supported_service of this UpdateDigitalAssetRequestBody.
+        r"""Gets the supported_service of this UpdateDigitalAssetRequestBody.
 
         支持的业务类型。： * VIDEO_2D：分身数字人视频制作 * LIVE_2D：分身数字人直播 * CHAT_2D：分身数字人智能交互
 
@@ -332,7 +332,7 @@ class UpdateDigitalAssetRequestBody:
 
     @supported_service.setter
     def supported_service(self, supported_service):
-        """Sets the supported_service of this UpdateDigitalAssetRequestBody.
+        r"""Sets the supported_service of this UpdateDigitalAssetRequestBody.
 
         支持的业务类型。： * VIDEO_2D：分身数字人视频制作 * LIVE_2D：分身数字人直播 * CHAT_2D：分身数字人智能交互
 

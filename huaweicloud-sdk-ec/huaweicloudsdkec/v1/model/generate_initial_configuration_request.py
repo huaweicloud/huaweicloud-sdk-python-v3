@@ -29,7 +29,7 @@ class GenerateInitialConfigurationRequest:
     }
 
     def __init__(self, ieg_id=None, equipment_id=None, body=None):
-        """GenerateInitialConfigurationRequest
+        r"""GenerateInitialConfigurationRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class GenerateInitialConfigurationRequest:
 
     @property
     def ieg_id(self):
-        """Gets the ieg_id of this GenerateInitialConfigurationRequest.
+        r"""Gets the ieg_id of this GenerateInitialConfigurationRequest.
 
         智能企业网关ID
 
@@ -66,7 +66,7 @@ class GenerateInitialConfigurationRequest:
 
     @ieg_id.setter
     def ieg_id(self, ieg_id):
-        """Sets the ieg_id of this GenerateInitialConfigurationRequest.
+        r"""Sets the ieg_id of this GenerateInitialConfigurationRequest.
 
         智能企业网关ID
 
@@ -77,7 +77,7 @@ class GenerateInitialConfigurationRequest:
 
     @property
     def equipment_id(self):
-        """Gets the equipment_id of this GenerateInitialConfigurationRequest.
+        r"""Gets the equipment_id of this GenerateInitialConfigurationRequest.
 
         智能企业网关设备ID
 
@@ -88,7 +88,7 @@ class GenerateInitialConfigurationRequest:
 
     @equipment_id.setter
     def equipment_id(self, equipment_id):
-        """Sets the equipment_id of this GenerateInitialConfigurationRequest.
+        r"""Sets the equipment_id of this GenerateInitialConfigurationRequest.
 
         智能企业网关设备ID
 
@@ -99,7 +99,7 @@ class GenerateInitialConfigurationRequest:
 
     @property
     def body(self):
-        """Gets the body of this GenerateInitialConfigurationRequest.
+        r"""Gets the body of this GenerateInitialConfigurationRequest.
 
         :return: The body of this GenerateInitialConfigurationRequest.
         :rtype: :class:`huaweicloudsdkec.v1.InitialConfigurationReq`
@@ -108,7 +108,7 @@ class GenerateInitialConfigurationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this GenerateInitialConfigurationRequest.
+        r"""Sets the body of this GenerateInitialConfigurationRequest.
 
         :param body: The body of this GenerateInitialConfigurationRequest.
         :type body: :class:`huaweicloudsdkec.v1.InitialConfigurationReq`

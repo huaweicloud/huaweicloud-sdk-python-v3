@@ -27,7 +27,7 @@ class CreateRoleRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateRoleRequest
+        r"""CreateRoleRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateRoleRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateRoleRequest.
+        r"""Gets the instance_id of this CreateRoleRequest.
 
         实例Id
 
@@ -60,7 +60,7 @@ class CreateRoleRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateRoleRequest.
+        r"""Sets the instance_id of this CreateRoleRequest.
 
         实例Id
 
@@ -71,7 +71,7 @@ class CreateRoleRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateRoleRequest.
+        r"""Gets the body of this CreateRoleRequest.
 
         :return: The body of this CreateRoleRequest.
         :rtype: :class:`huaweicloudsdklakeformation.v1.RoleInput`
@@ -80,7 +80,7 @@ class CreateRoleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateRoleRequest.
+        r"""Sets the body of this CreateRoleRequest.
 
         :param body: The body of this CreateRoleRequest.
         :type body: :class:`huaweicloudsdklakeformation.v1.RoleInput`

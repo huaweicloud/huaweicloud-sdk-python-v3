@@ -25,7 +25,7 @@ class DisableKeyRotationRequest:
     }
 
     def __init__(self, body=None):
-        """DisableKeyRotationRequest
+        r"""DisableKeyRotationRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DisableKeyRotationRequest:
 
     @property
     def body(self):
-        """Gets the body of this DisableKeyRotationRequest.
+        r"""Gets the body of this DisableKeyRotationRequest.
 
         :return: The body of this DisableKeyRotationRequest.
         :rtype: :class:`huaweicloudsdkkms.v2.OperateKeyRequestBody`
@@ -52,7 +52,7 @@ class DisableKeyRotationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DisableKeyRotationRequest.
+        r"""Sets the body of this DisableKeyRotationRequest.
 
         :param body: The body of this DisableKeyRotationRequest.
         :type body: :class:`huaweicloudsdkkms.v2.OperateKeyRequestBody`

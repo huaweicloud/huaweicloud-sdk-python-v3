@@ -25,7 +25,7 @@ class BatchDeleteFunctionTriggersRequest:
     }
 
     def __init__(self, function_urn=None):
-        """BatchDeleteFunctionTriggersRequest
+        r"""BatchDeleteFunctionTriggersRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchDeleteFunctionTriggersRequest:
 
     @property
     def function_urn(self):
-        """Gets the function_urn of this BatchDeleteFunctionTriggersRequest.
+        r"""Gets the function_urn of this BatchDeleteFunctionTriggersRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -53,7 +53,7 @@ class BatchDeleteFunctionTriggersRequest:
 
     @function_urn.setter
     def function_urn(self, function_urn):
-        """Sets the function_urn of this BatchDeleteFunctionTriggersRequest.
+        r"""Sets the function_urn of this BatchDeleteFunctionTriggersRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 

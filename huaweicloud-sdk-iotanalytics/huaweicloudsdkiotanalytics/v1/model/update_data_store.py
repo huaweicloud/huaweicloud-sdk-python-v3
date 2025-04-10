@@ -31,7 +31,7 @@ class UpdateDataStore:
     }
 
     def __init__(self, name=None, tags=None, metrics=None, properties=None):
-        """UpdateDataStore
+        r"""UpdateDataStore
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class UpdateDataStore:
 
     @property
     def name(self):
-        """Gets the name of this UpdateDataStore.
+        r"""Gets the name of this UpdateDataStore.
 
         存储名称
 
@@ -75,7 +75,7 @@ class UpdateDataStore:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateDataStore.
+        r"""Sets the name of this UpdateDataStore.
 
         存储名称
 
@@ -86,7 +86,7 @@ class UpdateDataStore:
 
     @property
     def tags(self):
-        """Gets the tags of this UpdateDataStore.
+        r"""Gets the tags of this UpdateDataStore.
 
         标签，更新存储时标签只可新增，不可修改或删除原有标签
 
@@ -97,7 +97,7 @@ class UpdateDataStore:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this UpdateDataStore.
+        r"""Sets the tags of this UpdateDataStore.
 
         标签，更新存储时标签只可新增，不可修改或删除原有标签
 
@@ -108,7 +108,7 @@ class UpdateDataStore:
 
     @property
     def metrics(self):
-        """Gets the metrics of this UpdateDataStore.
+        r"""Gets the metrics of this UpdateDataStore.
 
         指标
 
@@ -119,7 +119,7 @@ class UpdateDataStore:
 
     @metrics.setter
     def metrics(self, metrics):
-        """Sets the metrics of this UpdateDataStore.
+        r"""Sets the metrics of this UpdateDataStore.
 
         指标
 
@@ -130,7 +130,7 @@ class UpdateDataStore:
 
     @property
     def properties(self):
-        """Gets the properties of this UpdateDataStore.
+        r"""Gets the properties of this UpdateDataStore.
 
         属性，更新存储时属性只可新增，不可修改或删除原有属性
 
@@ -141,7 +141,7 @@ class UpdateDataStore:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this UpdateDataStore.
+        r"""Sets the properties of this UpdateDataStore.
 
         属性，更新存储时属性只可新增，不可修改或删除原有属性
 

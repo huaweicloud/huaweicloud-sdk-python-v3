@@ -25,7 +25,7 @@ class RegisterServerMonitorRequestBody:
     }
 
     def __init__(self, monitor_metrics=None):
-        """RegisterServerMonitorRequestBody
+        r"""RegisterServerMonitorRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RegisterServerMonitorRequestBody:
 
     @property
     def monitor_metrics(self):
-        """Gets the monitor_metrics of this RegisterServerMonitorRequestBody.
+        r"""Gets the monitor_metrics of this RegisterServerMonitorRequestBody.
 
         注册云服务器监控。
 
@@ -53,7 +53,7 @@ class RegisterServerMonitorRequestBody:
 
     @monitor_metrics.setter
     def monitor_metrics(self, monitor_metrics):
-        """Sets the monitor_metrics of this RegisterServerMonitorRequestBody.
+        r"""Sets the monitor_metrics of this RegisterServerMonitorRequestBody.
 
         注册云服务器监控。
 

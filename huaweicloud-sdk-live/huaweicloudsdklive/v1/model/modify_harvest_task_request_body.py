@@ -41,7 +41,7 @@ class ModifyHarvestTaskRequestBody:
     }
 
     def __init__(self, domain=None, app_name=None, id=None, start_time=None, end_time=None, event_name=None, job_id=None, task_desc=None, package_info=None):
-        """ModifyHarvestTaskRequestBody
+        r"""ModifyHarvestTaskRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class ModifyHarvestTaskRequestBody:
 
     @property
     def domain(self):
-        """Gets the domain of this ModifyHarvestTaskRequestBody.
+        r"""Gets the domain of this ModifyHarvestTaskRequestBody.
 
         频道推流域名
 
@@ -109,7 +109,7 @@ class ModifyHarvestTaskRequestBody:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ModifyHarvestTaskRequestBody.
+        r"""Sets the domain of this ModifyHarvestTaskRequestBody.
 
         频道推流域名
 
@@ -120,7 +120,7 @@ class ModifyHarvestTaskRequestBody:
 
     @property
     def app_name(self):
-        """Gets the app_name of this ModifyHarvestTaskRequestBody.
+        r"""Gets the app_name of this ModifyHarvestTaskRequestBody.
 
         组名或应用名
 
@@ -131,7 +131,7 @@ class ModifyHarvestTaskRequestBody:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ModifyHarvestTaskRequestBody.
+        r"""Sets the app_name of this ModifyHarvestTaskRequestBody.
 
         组名或应用名
 
@@ -142,7 +142,7 @@ class ModifyHarvestTaskRequestBody:
 
     @property
     def id(self):
-        """Gets the id of this ModifyHarvestTaskRequestBody.
+        r"""Gets the id of this ModifyHarvestTaskRequestBody.
 
         频道ID。频道唯一标识，为必填项。
 
@@ -153,7 +153,7 @@ class ModifyHarvestTaskRequestBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ModifyHarvestTaskRequestBody.
+        r"""Sets the id of this ModifyHarvestTaskRequestBody.
 
         频道ID。频道唯一标识，为必填项。
 
@@ -164,7 +164,7 @@ class ModifyHarvestTaskRequestBody:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ModifyHarvestTaskRequestBody.
+        r"""Gets the start_time of this ModifyHarvestTaskRequestBody.
 
         开始时间。Unix时间戳，单位为秒
 
@@ -175,7 +175,7 @@ class ModifyHarvestTaskRequestBody:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ModifyHarvestTaskRequestBody.
+        r"""Sets the start_time of this ModifyHarvestTaskRequestBody.
 
         开始时间。Unix时间戳，单位为秒
 
@@ -186,7 +186,7 @@ class ModifyHarvestTaskRequestBody:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ModifyHarvestTaskRequestBody.
+        r"""Gets the end_time of this ModifyHarvestTaskRequestBody.
 
         结束时间。Unix时间戳，单位为秒
 
@@ -197,7 +197,7 @@ class ModifyHarvestTaskRequestBody:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ModifyHarvestTaskRequestBody.
+        r"""Sets the end_time of this ModifyHarvestTaskRequestBody.
 
         结束时间。Unix时间戳，单位为秒
 
@@ -208,7 +208,7 @@ class ModifyHarvestTaskRequestBody:
 
     @property
     def event_name(self):
-        """Gets the event_name of this ModifyHarvestTaskRequestBody.
+        r"""Gets the event_name of this ModifyHarvestTaskRequestBody.
 
         事件名称。必选配置
 
@@ -219,7 +219,7 @@ class ModifyHarvestTaskRequestBody:
 
     @event_name.setter
     def event_name(self, event_name):
-        """Sets the event_name of this ModifyHarvestTaskRequestBody.
+        r"""Sets the event_name of this ModifyHarvestTaskRequestBody.
 
         事件名称。必选配置
 
@@ -230,7 +230,7 @@ class ModifyHarvestTaskRequestBody:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ModifyHarvestTaskRequestBody.
+        r"""Gets the job_id of this ModifyHarvestTaskRequestBody.
 
         任务Id。必选配置
 
@@ -241,7 +241,7 @@ class ModifyHarvestTaskRequestBody:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ModifyHarvestTaskRequestBody.
+        r"""Sets the job_id of this ModifyHarvestTaskRequestBody.
 
         任务Id。必选配置
 
@@ -252,7 +252,7 @@ class ModifyHarvestTaskRequestBody:
 
     @property
     def task_desc(self):
-        """Gets the task_desc of this ModifyHarvestTaskRequestBody.
+        r"""Gets the task_desc of this ModifyHarvestTaskRequestBody.
 
         任务描述，可选配置
 
@@ -263,7 +263,7 @@ class ModifyHarvestTaskRequestBody:
 
     @task_desc.setter
     def task_desc(self, task_desc):
-        """Sets the task_desc of this ModifyHarvestTaskRequestBody.
+        r"""Sets the task_desc of this ModifyHarvestTaskRequestBody.
 
         任务描述，可选配置
 
@@ -274,7 +274,7 @@ class ModifyHarvestTaskRequestBody:
 
     @property
     def package_info(self):
-        """Gets the package_info of this ModifyHarvestTaskRequestBody.
+        r"""Gets the package_info of this ModifyHarvestTaskRequestBody.
 
         :return: The package_info of this ModifyHarvestTaskRequestBody.
         :rtype: :class:`huaweicloudsdklive.v1.VodPackageInfo`
@@ -283,7 +283,7 @@ class ModifyHarvestTaskRequestBody:
 
     @package_info.setter
     def package_info(self, package_info):
-        """Sets the package_info of this ModifyHarvestTaskRequestBody.
+        r"""Sets the package_info of this ModifyHarvestTaskRequestBody.
 
         :param package_info: The package_info of this ModifyHarvestTaskRequestBody.
         :type package_info: :class:`huaweicloudsdklive.v1.VodPackageInfo`

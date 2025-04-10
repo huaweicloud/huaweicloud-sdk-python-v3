@@ -45,7 +45,7 @@ class VnicResp:
     }
 
     def __init__(self, private_ip_address=None, device_id=None, device_owner=None, vtep=None, vni=None, vpc_id=None, port_id=None, port_profile=None, mac=None, instance_id=None, instance_type=None):
-        """VnicResp
+        r"""VnicResp
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class VnicResp:
 
     @property
     def private_ip_address(self):
-        """Gets the private_ip_address of this VnicResp.
+        r"""Gets the private_ip_address of this VnicResp.
 
         - 功能说明：PORT的内网地址
 
@@ -124,7 +124,7 @@ class VnicResp:
 
     @private_ip_address.setter
     def private_ip_address(self, private_ip_address):
-        """Sets the private_ip_address of this VnicResp.
+        r"""Sets the private_ip_address of this VnicResp.
 
         - 功能说明：PORT的内网地址
 
@@ -135,7 +135,7 @@ class VnicResp:
 
     @property
     def device_id(self):
-        """Gets the device_id of this VnicResp.
+        r"""Gets the device_id of this VnicResp.
 
         - 功能说明：PORT的device_id - 约束：存在PORT时，此字段associate_instance_id相同，都为实例ID
 
@@ -146,7 +146,7 @@ class VnicResp:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this VnicResp.
+        r"""Sets the device_id of this VnicResp.
 
         - 功能说明：PORT的device_id - 约束：存在PORT时，此字段associate_instance_id相同，都为实例ID
 
@@ -157,7 +157,7 @@ class VnicResp:
 
     @property
     def device_owner(self):
-        """Gets the device_owner of this VnicResp.
+        r"""Gets the device_owner of this VnicResp.
 
         - 功能说明：PORT的device_owner - 约束：存在PORT时，此字段和associate_instance_type都可区分实例类型
 
@@ -168,7 +168,7 @@ class VnicResp:
 
     @device_owner.setter
     def device_owner(self, device_owner):
-        """Sets the device_owner of this VnicResp.
+        r"""Sets the device_owner of this VnicResp.
 
         - 功能说明：PORT的device_owner - 约束：存在PORT时，此字段和associate_instance_type都可区分实例类型
 
@@ -179,7 +179,7 @@ class VnicResp:
 
     @property
     def vtep(self):
-        """Gets the vtep of this VnicResp.
+        r"""Gets the vtep of this VnicResp.
 
         - 功能说明：VTEP IP
 
@@ -190,7 +190,7 @@ class VnicResp:
 
     @vtep.setter
     def vtep(self, vtep):
-        """Sets the vtep of this VnicResp.
+        r"""Sets the vtep of this VnicResp.
 
         - 功能说明：VTEP IP
 
@@ -201,7 +201,7 @@ class VnicResp:
 
     @property
     def vni(self):
-        """Gets the vni of this VnicResp.
+        r"""Gets the vni of this VnicResp.
 
         - 功能说明：VXLAN ID
 
@@ -212,7 +212,7 @@ class VnicResp:
 
     @vni.setter
     def vni(self, vni):
-        """Sets the vni of this VnicResp.
+        r"""Sets the vni of this VnicResp.
 
         - 功能说明：VXLAN ID
 
@@ -223,7 +223,7 @@ class VnicResp:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this VnicResp.
+        r"""Gets the vpc_id of this VnicResp.
 
         - 功能说明：PORT所在VPC的ID
 
@@ -234,7 +234,7 @@ class VnicResp:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this VnicResp.
+        r"""Sets the vpc_id of this VnicResp.
 
         - 功能说明：PORT所在VPC的ID
 
@@ -245,7 +245,7 @@ class VnicResp:
 
     @property
     def port_id(self):
-        """Gets the port_id of this VnicResp.
+        r"""Gets the port_id of this VnicResp.
 
         - 功能说明：PORT的唯一标识
 
@@ -256,7 +256,7 @@ class VnicResp:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this VnicResp.
+        r"""Sets the port_id of this VnicResp.
 
         - 功能说明：PORT的唯一标识
 
@@ -267,7 +267,7 @@ class VnicResp:
 
     @property
     def port_profile(self):
-        """Gets the port_profile of this VnicResp.
+        r"""Gets the port_profile of this VnicResp.
 
         - 功能说明：端口profile信息
 
@@ -278,7 +278,7 @@ class VnicResp:
 
     @port_profile.setter
     def port_profile(self, port_profile):
-        """Sets the port_profile of this VnicResp.
+        r"""Sets the port_profile of this VnicResp.
 
         - 功能说明：端口profile信息
 
@@ -289,7 +289,7 @@ class VnicResp:
 
     @property
     def mac(self):
-        """Gets the mac of this VnicResp.
+        r"""Gets the mac of this VnicResp.
 
         - 功能说明：PORT的MAC信息
 
@@ -300,7 +300,7 @@ class VnicResp:
 
     @mac.setter
     def mac(self, mac):
-        """Sets the mac of this VnicResp.
+        r"""Sets the mac of this VnicResp.
 
         - 功能说明：PORT的MAC信息
 
@@ -311,7 +311,7 @@ class VnicResp:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this VnicResp.
+        r"""Gets the instance_id of this VnicResp.
 
         - 功能说明：PORT的使用者，不同于device_id的归属者。举例：vip port的device_owner为vip，但是这个port实际使用者可能是虚机或其他
 
@@ -322,7 +322,7 @@ class VnicResp:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this VnicResp.
+        r"""Sets the instance_id of this VnicResp.
 
         - 功能说明：PORT的使用者，不同于device_id的归属者。举例：vip port的device_owner为vip，但是这个port实际使用者可能是虚机或其他
 
@@ -333,7 +333,7 @@ class VnicResp:
 
     @property
     def instance_type(self):
-        """Gets the instance_type of this VnicResp.
+        r"""Gets the instance_type of this VnicResp.
 
         - 功能说明：标记PORT使用者，与instance_id组合使用
 
@@ -344,7 +344,7 @@ class VnicResp:
 
     @instance_type.setter
     def instance_type(self, instance_type):
-        """Sets the instance_type of this VnicResp.
+        r"""Sets the instance_type of this VnicResp.
 
         - 功能说明：标记PORT使用者，与instance_id组合使用
 

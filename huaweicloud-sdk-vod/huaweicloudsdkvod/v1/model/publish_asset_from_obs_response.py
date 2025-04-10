@@ -26,7 +26,7 @@ class PublishAssetFromObsResponse(SdkResponse):
     }
 
     def __init__(self, asset_id=None):
-        """PublishAssetFromObsResponse
+        r"""PublishAssetFromObsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class PublishAssetFromObsResponse(SdkResponse):
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this PublishAssetFromObsResponse.
+        r"""Gets the asset_id of this PublishAssetFromObsResponse.
 
         媒资ID 
 
@@ -55,7 +55,7 @@ class PublishAssetFromObsResponse(SdkResponse):
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this PublishAssetFromObsResponse.
+        r"""Sets the asset_id of this PublishAssetFromObsResponse.
 
         媒资ID 
 

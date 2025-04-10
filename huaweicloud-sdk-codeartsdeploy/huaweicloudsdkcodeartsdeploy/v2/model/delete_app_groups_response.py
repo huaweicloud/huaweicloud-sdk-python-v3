@@ -28,7 +28,7 @@ class DeleteAppGroupsResponse(SdkResponse):
     }
 
     def __init__(self, result=None, status=None):
-        """DeleteAppGroupsResponse
+        r"""DeleteAppGroupsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class DeleteAppGroupsResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this DeleteAppGroupsResponse.
+        r"""Gets the result of this DeleteAppGroupsResponse.
 
         分组id
 
@@ -62,7 +62,7 @@ class DeleteAppGroupsResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this DeleteAppGroupsResponse.
+        r"""Sets the result of this DeleteAppGroupsResponse.
 
         分组id
 
@@ -73,7 +73,7 @@ class DeleteAppGroupsResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this DeleteAppGroupsResponse.
+        r"""Gets the status of this DeleteAppGroupsResponse.
 
         请求成功失败状态
 
@@ -84,7 +84,7 @@ class DeleteAppGroupsResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DeleteAppGroupsResponse.
+        r"""Sets the status of this DeleteAppGroupsResponse.
 
         请求成功失败状态
 

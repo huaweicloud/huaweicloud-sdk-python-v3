@@ -31,7 +31,7 @@ class ListBandwidthTypesRequest:
     }
 
     def __init__(self, limit=None, offset=None, site_id=None, bandwidth_type=None):
-        """ListBandwidthTypesRequest
+        r"""ListBandwidthTypesRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListBandwidthTypesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListBandwidthTypesRequest.
+        r"""Gets the limit of this ListBandwidthTypesRequest.
 
         查询的数目，取值范围：0~1000。
 
@@ -75,7 +75,7 @@ class ListBandwidthTypesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListBandwidthTypesRequest.
+        r"""Sets the limit of this ListBandwidthTypesRequest.
 
         查询的数目，取值范围：0~1000。
 
@@ -86,7 +86,7 @@ class ListBandwidthTypesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListBandwidthTypesRequest.
+        r"""Gets the offset of this ListBandwidthTypesRequest.
 
         查询的偏移量。
 
@@ -97,7 +97,7 @@ class ListBandwidthTypesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListBandwidthTypesRequest.
+        r"""Sets the offset of this ListBandwidthTypesRequest.
 
         查询的偏移量。
 
@@ -108,7 +108,7 @@ class ListBandwidthTypesRequest:
 
     @property
     def site_id(self):
-        """Gets the site_id of this ListBandwidthTypesRequest.
+        r"""Gets the site_id of this ListBandwidthTypesRequest.
 
         边缘站点ID。
 
@@ -119,7 +119,7 @@ class ListBandwidthTypesRequest:
 
     @site_id.setter
     def site_id(self, site_id):
-        """Sets the site_id of this ListBandwidthTypesRequest.
+        r"""Sets the site_id of this ListBandwidthTypesRequest.
 
         边缘站点ID。
 
@@ -130,7 +130,7 @@ class ListBandwidthTypesRequest:
 
     @property
     def bandwidth_type(self):
-        """Gets the bandwidth_type of this ListBandwidthTypesRequest.
+        r"""Gets the bandwidth_type of this ListBandwidthTypesRequest.
 
         带宽支持类型。
 
@@ -141,7 +141,7 @@ class ListBandwidthTypesRequest:
 
     @bandwidth_type.setter
     def bandwidth_type(self, bandwidth_type):
-        """Sets the bandwidth_type of this ListBandwidthTypesRequest.
+        r"""Sets the bandwidth_type of this ListBandwidthTypesRequest.
 
         带宽支持类型。
 

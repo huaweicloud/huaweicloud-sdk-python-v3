@@ -25,7 +25,7 @@ class AssociateSubnetRequestBody:
     }
 
     def __init__(self, subnet_ids=None):
-        """AssociateSubnetRequestBody
+        r"""AssociateSubnetRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AssociateSubnetRequestBody:
 
     @property
     def subnet_ids(self):
-        """Gets the subnet_ids of this AssociateSubnetRequestBody.
+        r"""Gets the subnet_ids of this AssociateSubnetRequestBody.
 
         子网ID
 
@@ -53,7 +53,7 @@ class AssociateSubnetRequestBody:
 
     @subnet_ids.setter
     def subnet_ids(self, subnet_ids):
-        """Sets the subnet_ids of this AssociateSubnetRequestBody.
+        r"""Sets the subnet_ids of this AssociateSubnetRequestBody.
 
         子网ID
 

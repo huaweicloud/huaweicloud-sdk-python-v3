@@ -27,7 +27,7 @@ class SecondMonitor:
     }
 
     def __init__(self, switch_option=None, interval=None):
-        """SecondMonitor
+        r"""SecondMonitor
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SecondMonitor:
 
     @property
     def switch_option(self):
-        """Gets the switch_option of this SecondMonitor.
+        r"""Gets the switch_option of this SecondMonitor.
 
         秒级监控开关
 
@@ -60,7 +60,7 @@ class SecondMonitor:
 
     @switch_option.setter
     def switch_option(self, switch_option):
-        """Sets the switch_option of this SecondMonitor.
+        r"""Sets the switch_option of this SecondMonitor.
 
         秒级监控开关
 
@@ -71,7 +71,7 @@ class SecondMonitor:
 
     @property
     def interval(self):
-        """Gets the interval of this SecondMonitor.
+        r"""Gets the interval of this SecondMonitor.
 
         监控间隔, 支持1秒和5秒
 
@@ -82,7 +82,7 @@ class SecondMonitor:
 
     @interval.setter
     def interval(self, interval):
-        """Sets the interval of this SecondMonitor.
+        r"""Sets the interval of this SecondMonitor.
 
         监控间隔, 支持1秒和5秒
 

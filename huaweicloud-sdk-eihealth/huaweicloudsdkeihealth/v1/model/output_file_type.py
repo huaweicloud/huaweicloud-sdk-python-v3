@@ -28,7 +28,7 @@ class OutputFileType:
     }
 
     def __init__(self):
-        """OutputFileType
+        r"""OutputFileType
 
         The model defined in huaweicloud sdk
 

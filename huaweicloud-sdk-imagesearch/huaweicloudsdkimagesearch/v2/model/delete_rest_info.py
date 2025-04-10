@@ -27,7 +27,7 @@ class DeleteRestInfo:
     }
 
     def __init__(self, items=None, delete_info=None):
-        """DeleteRestInfo
+        r"""DeleteRestInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DeleteRestInfo:
 
     @property
     def items(self):
-        """Gets the items of this DeleteRestInfo.
+        r"""Gets the items of this DeleteRestInfo.
 
         删除数据列表。
 
@@ -61,7 +61,7 @@ class DeleteRestInfo:
 
     @items.setter
     def items(self, items):
-        """Sets the items of this DeleteRestInfo.
+        r"""Sets the items of this DeleteRestInfo.
 
         删除数据列表。
 
@@ -72,7 +72,7 @@ class DeleteRestInfo:
 
     @property
     def delete_info(self):
-        """Gets the delete_info of this DeleteRestInfo.
+        r"""Gets the delete_info of this DeleteRestInfo.
 
         :return: The delete_info of this DeleteRestInfo.
         :rtype: :class:`huaweicloudsdkimagesearch.v2.DeleteInfo`
@@ -81,7 +81,7 @@ class DeleteRestInfo:
 
     @delete_info.setter
     def delete_info(self, delete_info):
-        """Sets the delete_info of this DeleteRestInfo.
+        r"""Sets the delete_info of this DeleteRestInfo.
 
         :param delete_info: The delete_info of this DeleteRestInfo.
         :type delete_info: :class:`huaweicloudsdkimagesearch.v2.DeleteInfo`

@@ -25,7 +25,7 @@ class ShowSignatureFileRequest:
     }
 
     def __init__(self, file_id=None):
-        """ShowSignatureFileRequest
+        r"""ShowSignatureFileRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowSignatureFileRequest:
 
     @property
     def file_id(self):
-        """Gets the file_id of this ShowSignatureFileRequest.
+        r"""Gets the file_id of this ShowSignatureFileRequest.
 
         营业执照ID
 
@@ -53,7 +53,7 @@ class ShowSignatureFileRequest:
 
     @file_id.setter
     def file_id(self, file_id):
-        """Sets the file_id of this ShowSignatureFileRequest.
+        r"""Sets the file_id of this ShowSignatureFileRequest.
 
         营业执照ID
 

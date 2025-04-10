@@ -27,7 +27,7 @@ class ExpressConfig:
     }
 
     def __init__(self, log_level=None, support_anonymous=None):
-        """ExpressConfig
+        r"""ExpressConfig
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ExpressConfig:
 
     @property
     def log_level(self):
-        """Gets the log_level of this ExpressConfig.
+        r"""Gets the log_level of this ExpressConfig.
 
         同步工作流执行时记录LTS的日志级别，NONE、ERROR\\ALL，默认NONE
 
@@ -61,7 +61,7 @@ class ExpressConfig:
 
     @log_level.setter
     def log_level(self, log_level):
-        """Sets the log_level of this ExpressConfig.
+        r"""Sets the log_level of this ExpressConfig.
 
         同步工作流执行时记录LTS的日志级别，NONE、ERROR\\ALL，默认NONE
 
@@ -72,7 +72,7 @@ class ExpressConfig:
 
     @property
     def support_anonymous(self):
-        """Gets the support_anonymous of this ExpressConfig.
+        r"""Gets the support_anonymous of this ExpressConfig.
 
         同步工作流是否支持匿名访问
 
@@ -83,7 +83,7 @@ class ExpressConfig:
 
     @support_anonymous.setter
     def support_anonymous(self, support_anonymous):
-        """Sets the support_anonymous of this ExpressConfig.
+        r"""Sets the support_anonymous of this ExpressConfig.
 
         同步工作流是否支持匿名访问
 

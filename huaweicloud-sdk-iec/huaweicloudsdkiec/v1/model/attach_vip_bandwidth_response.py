@@ -26,7 +26,7 @@ class AttachVipBandwidthResponse(SdkResponse):
     }
 
     def __init__(self, vport=None):
-        """AttachVipBandwidthResponse
+        r"""AttachVipBandwidthResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class AttachVipBandwidthResponse(SdkResponse):
 
     @property
     def vport(self):
-        """Gets the vport of this AttachVipBandwidthResponse.
+        r"""Gets the vport of this AttachVipBandwidthResponse.
 
         :return: The vport of this AttachVipBandwidthResponse.
         :rtype: :class:`huaweicloudsdkiec.v1.VirtualPortResponse`
@@ -53,7 +53,7 @@ class AttachVipBandwidthResponse(SdkResponse):
 
     @vport.setter
     def vport(self, vport):
-        """Sets the vport of this AttachVipBandwidthResponse.
+        r"""Sets the vport of this AttachVipBandwidthResponse.
 
         :param vport: The vport of this AttachVipBandwidthResponse.
         :type vport: :class:`huaweicloudsdkiec.v1.VirtualPortResponse`

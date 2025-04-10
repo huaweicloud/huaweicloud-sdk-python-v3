@@ -25,7 +25,7 @@ class CreateEdgeSiteRequest:
     }
 
     def __init__(self, body=None):
-        """CreateEdgeSiteRequest
+        r"""CreateEdgeSiteRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateEdgeSiteRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateEdgeSiteRequest.
+        r"""Gets the body of this CreateEdgeSiteRequest.
 
         :return: The body of this CreateEdgeSiteRequest.
         :rtype: :class:`huaweicloudsdkcloudpond.v1.CreateEdgeSiteRequestBody`
@@ -52,7 +52,7 @@ class CreateEdgeSiteRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateEdgeSiteRequest.
+        r"""Sets the body of this CreateEdgeSiteRequest.
 
         :param body: The body of this CreateEdgeSiteRequest.
         :type body: :class:`huaweicloudsdkcloudpond.v1.CreateEdgeSiteRequestBody`

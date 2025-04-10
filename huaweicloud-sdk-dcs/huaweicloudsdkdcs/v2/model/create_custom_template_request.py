@@ -25,7 +25,7 @@ class CreateCustomTemplateRequest:
     }
 
     def __init__(self, body=None):
-        """CreateCustomTemplateRequest
+        r"""CreateCustomTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateCustomTemplateRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateCustomTemplateRequest.
+        r"""Gets the body of this CreateCustomTemplateRequest.
 
         :return: The body of this CreateCustomTemplateRequest.
         :rtype: :class:`huaweicloudsdkdcs.v2.CreateCustomTemplateBody`
@@ -52,7 +52,7 @@ class CreateCustomTemplateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateCustomTemplateRequest.
+        r"""Sets the body of this CreateCustomTemplateRequest.
 
         :param body: The body of this CreateCustomTemplateRequest.
         :type body: :class:`huaweicloudsdkdcs.v2.CreateCustomTemplateBody`

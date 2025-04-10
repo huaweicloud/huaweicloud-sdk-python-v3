@@ -35,7 +35,7 @@ class ListWorkOrdersRequest:
     }
 
     def __init__(self, main_search_key=None, limit=None, offset=None, sim_type=None, work_order_type=None, status=None):
-        """ListWorkOrdersRequest
+        r"""ListWorkOrdersRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListWorkOrdersRequest:
 
     @property
     def main_search_key(self):
-        """Gets the main_search_key of this ListWorkOrdersRequest.
+        r"""Gets the main_search_key of this ListWorkOrdersRequest.
 
         业务受理ID
 
@@ -89,7 +89,7 @@ class ListWorkOrdersRequest:
 
     @main_search_key.setter
     def main_search_key(self, main_search_key):
-        """Sets the main_search_key of this ListWorkOrdersRequest.
+        r"""Sets the main_search_key of this ListWorkOrdersRequest.
 
         业务受理ID
 
@@ -100,7 +100,7 @@ class ListWorkOrdersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListWorkOrdersRequest.
+        r"""Gets the limit of this ListWorkOrdersRequest.
 
         分页查询时每页显示的记录数，默认值为10，取值范围为10-500的整数
 
@@ -111,7 +111,7 @@ class ListWorkOrdersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListWorkOrdersRequest.
+        r"""Sets the limit of this ListWorkOrdersRequest.
 
         分页查询时每页显示的记录数，默认值为10，取值范围为10-500的整数
 
@@ -122,7 +122,7 @@ class ListWorkOrdersRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListWorkOrdersRequest.
+        r"""Gets the offset of this ListWorkOrdersRequest.
 
         分页查询时的页码数，默认值为1，取值范围为1-1000000的整数
 
@@ -133,7 +133,7 @@ class ListWorkOrdersRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListWorkOrdersRequest.
+        r"""Sets the offset of this ListWorkOrdersRequest.
 
         分页查询时的页码数，默认值为1，取值范围为1-1000000的整数
 
@@ -144,7 +144,7 @@ class ListWorkOrdersRequest:
 
     @property
     def sim_type(self):
-        """Gets the sim_type of this ListWorkOrdersRequest.
+        r"""Gets the sim_type of this ListWorkOrdersRequest.
 
         SIM卡类型:3.实体卡
 
@@ -155,7 +155,7 @@ class ListWorkOrdersRequest:
 
     @sim_type.setter
     def sim_type(self, sim_type):
-        """Sets the sim_type of this ListWorkOrdersRequest.
+        r"""Sets the sim_type of this ListWorkOrdersRequest.
 
         SIM卡类型:3.实体卡
 
@@ -166,7 +166,7 @@ class ListWorkOrdersRequest:
 
     @property
     def work_order_type(self):
-        """Gets the work_order_type of this ListWorkOrdersRequest.
+        r"""Gets the work_order_type of this ListWorkOrdersRequest.
 
         业务受理类型：1.批量激活实体卡 2.批量转移实体卡 3.创建流量池 4.实体卡复机 5.实体卡停机 6.批量启用或复机 7.批量停用或停机 8.批量订购 9.批量退订 10.实体卡激活 11.申请断网 12.达量断网 13.机卡重绑 14.实名制信息清除 15.实体卡限速 16.批量补卡 17.批量机卡重绑 18.重启已废弃后向流量池 19.批量达量断网 20断网恢复 21取消达量断网 22批量取消达量断网 23批量拆机
 
@@ -177,7 +177,7 @@ class ListWorkOrdersRequest:
 
     @work_order_type.setter
     def work_order_type(self, work_order_type):
-        """Sets the work_order_type of this ListWorkOrdersRequest.
+        r"""Sets the work_order_type of this ListWorkOrdersRequest.
 
         业务受理类型：1.批量激活实体卡 2.批量转移实体卡 3.创建流量池 4.实体卡复机 5.实体卡停机 6.批量启用或复机 7.批量停用或停机 8.批量订购 9.批量退订 10.实体卡激活 11.申请断网 12.达量断网 13.机卡重绑 14.实名制信息清除 15.实体卡限速 16.批量补卡 17.批量机卡重绑 18.重启已废弃后向流量池 19.批量达量断网 20断网恢复 21取消达量断网 22批量取消达量断网 23批量拆机
 
@@ -188,7 +188,7 @@ class ListWorkOrdersRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListWorkOrdersRequest.
+        r"""Gets the status of this ListWorkOrdersRequest.
 
         业务受理状态:：1审核中、2已审核、3处理中、4已完成、5已取消、6失败、7 审核不通过
 
@@ -199,7 +199,7 @@ class ListWorkOrdersRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListWorkOrdersRequest.
+        r"""Sets the status of this ListWorkOrdersRequest.
 
         业务受理状态:：1审核中、2已审核、3处理中、4已完成、5已取消、6失败、7 审核不通过
 

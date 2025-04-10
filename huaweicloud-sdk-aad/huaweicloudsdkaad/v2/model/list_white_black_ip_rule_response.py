@@ -28,7 +28,7 @@ class ListWhiteBlackIpRuleResponse(SdkResponse):
     }
 
     def __init__(self, total=None, ips=None):
-        """ListWhiteBlackIpRuleResponse
+        r"""ListWhiteBlackIpRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListWhiteBlackIpRuleResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListWhiteBlackIpRuleResponse.
+        r"""Gets the total of this ListWhiteBlackIpRuleResponse.
 
         total
 
@@ -62,7 +62,7 @@ class ListWhiteBlackIpRuleResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListWhiteBlackIpRuleResponse.
+        r"""Sets the total of this ListWhiteBlackIpRuleResponse.
 
         total
 
@@ -73,7 +73,7 @@ class ListWhiteBlackIpRuleResponse(SdkResponse):
 
     @property
     def ips(self):
-        """Gets the ips of this ListWhiteBlackIpRuleResponse.
+        r"""Gets the ips of this ListWhiteBlackIpRuleResponse.
 
         名单列表
 
@@ -84,7 +84,7 @@ class ListWhiteBlackIpRuleResponse(SdkResponse):
 
     @ips.setter
     def ips(self, ips):
-        """Sets the ips of this ListWhiteBlackIpRuleResponse.
+        r"""Sets the ips of this ListWhiteBlackIpRuleResponse.
 
         名单列表
 

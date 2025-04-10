@@ -24,7 +24,7 @@ class ExportApiDefinitionsV2Response(SdkStreamResponse):
     }
 
     def __init__(self, response):
-        """ExportApiDefinitionsV2Response
+        r"""ExportApiDefinitionsV2Response
 
         The model defined in huaweicloud sdk
 

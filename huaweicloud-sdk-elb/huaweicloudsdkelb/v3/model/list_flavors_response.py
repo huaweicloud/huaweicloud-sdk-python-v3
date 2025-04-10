@@ -30,7 +30,7 @@ class ListFlavorsResponse(SdkResponse):
     }
 
     def __init__(self, flavors=None, page_info=None, request_id=None):
-        """ListFlavorsResponse
+        r"""ListFlavorsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListFlavorsResponse(SdkResponse):
 
     @property
     def flavors(self):
-        """Gets the flavors of this ListFlavorsResponse.
+        r"""Gets the flavors of this ListFlavorsResponse.
 
         参数解释：规格列表。
 
@@ -69,7 +69,7 @@ class ListFlavorsResponse(SdkResponse):
 
     @flavors.setter
     def flavors(self, flavors):
-        """Sets the flavors of this ListFlavorsResponse.
+        r"""Sets the flavors of this ListFlavorsResponse.
 
         参数解释：规格列表。
 
@@ -80,7 +80,7 @@ class ListFlavorsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListFlavorsResponse.
+        r"""Gets the page_info of this ListFlavorsResponse.
 
         :return: The page_info of this ListFlavorsResponse.
         :rtype: :class:`huaweicloudsdkelb.v3.PageInfo`
@@ -89,7 +89,7 @@ class ListFlavorsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListFlavorsResponse.
+        r"""Sets the page_info of this ListFlavorsResponse.
 
         :param page_info: The page_info of this ListFlavorsResponse.
         :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
@@ -98,7 +98,7 @@ class ListFlavorsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListFlavorsResponse.
+        r"""Gets the request_id of this ListFlavorsResponse.
 
         参数解释：请求ID。  注：自动生成 。
 
@@ -109,7 +109,7 @@ class ListFlavorsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListFlavorsResponse.
+        r"""Sets the request_id of this ListFlavorsResponse.
 
         参数解释：请求ID。  注：自动生成 。
 

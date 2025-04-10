@@ -33,7 +33,7 @@ class ListOwnTestCasesRequest:
     }
 
     def __init__(self, page_no=None, page_size=None, sort_field=None, sort_type=None, keyword=None):
-        """ListOwnTestCasesRequest
+        r"""ListOwnTestCasesRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ListOwnTestCasesRequest:
 
     @property
     def page_no(self):
-        """Gets the page_no of this ListOwnTestCasesRequest.
+        r"""Gets the page_no of this ListOwnTestCasesRequest.
 
         当前页数
 
@@ -80,7 +80,7 @@ class ListOwnTestCasesRequest:
 
     @page_no.setter
     def page_no(self, page_no):
-        """Sets the page_no of this ListOwnTestCasesRequest.
+        r"""Sets the page_no of this ListOwnTestCasesRequest.
 
         当前页数
 
@@ -91,7 +91,7 @@ class ListOwnTestCasesRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ListOwnTestCasesRequest.
+        r"""Gets the page_size of this ListOwnTestCasesRequest.
 
         每页条数
 
@@ -102,7 +102,7 @@ class ListOwnTestCasesRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ListOwnTestCasesRequest.
+        r"""Sets the page_size of this ListOwnTestCasesRequest.
 
         每页条数
 
@@ -113,7 +113,7 @@ class ListOwnTestCasesRequest:
 
     @property
     def sort_field(self):
-        """Gets the sort_field of this ListOwnTestCasesRequest.
+        r"""Gets the sort_field of this ListOwnTestCasesRequest.
 
         排序字段
 
@@ -124,7 +124,7 @@ class ListOwnTestCasesRequest:
 
     @sort_field.setter
     def sort_field(self, sort_field):
-        """Sets the sort_field of this ListOwnTestCasesRequest.
+        r"""Sets the sort_field of this ListOwnTestCasesRequest.
 
         排序字段
 
@@ -135,7 +135,7 @@ class ListOwnTestCasesRequest:
 
     @property
     def sort_type(self):
-        """Gets the sort_type of this ListOwnTestCasesRequest.
+        r"""Gets the sort_type of this ListOwnTestCasesRequest.
 
         排序方式
 
@@ -146,7 +146,7 @@ class ListOwnTestCasesRequest:
 
     @sort_type.setter
     def sort_type(self, sort_type):
-        """Sets the sort_type of this ListOwnTestCasesRequest.
+        r"""Sets the sort_type of this ListOwnTestCasesRequest.
 
         排序方式
 
@@ -157,7 +157,7 @@ class ListOwnTestCasesRequest:
 
     @property
     def keyword(self):
-        """Gets the keyword of this ListOwnTestCasesRequest.
+        r"""Gets the keyword of this ListOwnTestCasesRequest.
 
         关键字查询，用例名或编号
 
@@ -168,7 +168,7 @@ class ListOwnTestCasesRequest:
 
     @keyword.setter
     def keyword(self, keyword):
-        """Sets the keyword of this ListOwnTestCasesRequest.
+        r"""Sets the keyword of this ListOwnTestCasesRequest.
 
         关键字查询，用例名或编号
 

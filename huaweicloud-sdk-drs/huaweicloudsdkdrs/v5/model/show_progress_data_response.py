@@ -30,7 +30,7 @@ class ShowProgressDataResponse(SdkResponse):
     }
 
     def __init__(self, count=None, create_time=None, flow_compare_data=None):
-        """ShowProgressDataResponse
+        r"""ShowProgressDataResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowProgressDataResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowProgressDataResponse.
+        r"""Gets the count of this ShowProgressDataResponse.
 
         总数。
 
@@ -69,7 +69,7 @@ class ShowProgressDataResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowProgressDataResponse.
+        r"""Sets the count of this ShowProgressDataResponse.
 
         总数。
 
@@ -80,7 +80,7 @@ class ShowProgressDataResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowProgressDataResponse.
+        r"""Gets the create_time of this ShowProgressDataResponse.
 
         数据生成时间，UTC时间，例如：2020-09-01T18:50:20.200Z
 
@@ -91,7 +91,7 @@ class ShowProgressDataResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowProgressDataResponse.
+        r"""Sets the create_time of this ShowProgressDataResponse.
 
         数据生成时间，UTC时间，例如：2020-09-01T18:50:20.200Z
 
@@ -102,7 +102,7 @@ class ShowProgressDataResponse(SdkResponse):
 
     @property
     def flow_compare_data(self):
-        """Gets the flow_compare_data of this ShowProgressDataResponse.
+        r"""Gets the flow_compare_data of this ShowProgressDataResponse.
 
         对比结果。
 
@@ -113,7 +113,7 @@ class ShowProgressDataResponse(SdkResponse):
 
     @flow_compare_data.setter
     def flow_compare_data(self, flow_compare_data):
-        """Sets the flow_compare_data of this ShowProgressDataResponse.
+        r"""Sets the flow_compare_data of this ShowProgressDataResponse.
 
         对比结果。
 

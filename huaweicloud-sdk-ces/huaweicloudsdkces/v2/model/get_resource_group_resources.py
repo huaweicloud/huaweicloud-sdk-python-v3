@@ -27,7 +27,7 @@ class GetResourceGroupResources:
     }
 
     def __init__(self, status=None, dimensions=None):
-        """GetResourceGroupResources
+        r"""GetResourceGroupResources
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class GetResourceGroupResources:
 
     @property
     def status(self):
-        """Gets the status of this GetResourceGroupResources.
+        r"""Gets the status of this GetResourceGroupResources.
 
         资源健康状态，取值为health（已设置告警规则且无告警触发的资源）、unhealthy（已设置告警规则且有告警触发的资源）、no_alarm_rule（未关联告警规则）
 
@@ -59,7 +59,7 @@ class GetResourceGroupResources:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this GetResourceGroupResources.
+        r"""Sets the status of this GetResourceGroupResources.
 
         资源健康状态，取值为health（已设置告警规则且无告警触发的资源）、unhealthy（已设置告警规则且有告警触发的资源）、no_alarm_rule（未关联告警规则）
 
@@ -70,7 +70,7 @@ class GetResourceGroupResources:
 
     @property
     def dimensions(self):
-        """Gets the dimensions of this GetResourceGroupResources.
+        r"""Gets the dimensions of this GetResourceGroupResources.
 
         资源的维度信息
 
@@ -81,7 +81,7 @@ class GetResourceGroupResources:
 
     @dimensions.setter
     def dimensions(self, dimensions):
-        """Sets the dimensions of this GetResourceGroupResources.
+        r"""Sets the dimensions of this GetResourceGroupResources.
 
         资源的维度信息
 

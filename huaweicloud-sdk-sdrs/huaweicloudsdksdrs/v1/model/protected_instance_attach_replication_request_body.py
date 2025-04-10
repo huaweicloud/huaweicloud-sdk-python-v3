@@ -25,7 +25,7 @@ class ProtectedInstanceAttachReplicationRequestBody:
     }
 
     def __init__(self, replication_attachment=None):
-        """ProtectedInstanceAttachReplicationRequestBody
+        r"""ProtectedInstanceAttachReplicationRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ProtectedInstanceAttachReplicationRequestBody:
 
     @property
     def replication_attachment(self):
-        """Gets the replication_attachment of this ProtectedInstanceAttachReplicationRequestBody.
+        r"""Gets the replication_attachment of this ProtectedInstanceAttachReplicationRequestBody.
 
         :return: The replication_attachment of this ProtectedInstanceAttachReplicationRequestBody.
         :rtype: :class:`huaweicloudsdksdrs.v1.ProtectedInstanceAttachReplicationRequestParams`
@@ -51,7 +51,7 @@ class ProtectedInstanceAttachReplicationRequestBody:
 
     @replication_attachment.setter
     def replication_attachment(self, replication_attachment):
-        """Sets the replication_attachment of this ProtectedInstanceAttachReplicationRequestBody.
+        r"""Sets the replication_attachment of this ProtectedInstanceAttachReplicationRequestBody.
 
         :param replication_attachment: The replication_attachment of this ProtectedInstanceAttachReplicationRequestBody.
         :type replication_attachment: :class:`huaweicloudsdksdrs.v1.ProtectedInstanceAttachReplicationRequestParams`

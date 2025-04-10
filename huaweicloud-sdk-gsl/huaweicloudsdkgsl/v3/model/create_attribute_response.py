@@ -26,7 +26,7 @@ class CreateAttributeResponse(SdkResponse):
     }
 
     def __init__(self, id=None):
-        """CreateAttributeResponse
+        r"""CreateAttributeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateAttributeResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateAttributeResponse.
+        r"""Gets the id of this CreateAttributeResponse.
 
         自定义属性标识
 
@@ -55,7 +55,7 @@ class CreateAttributeResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateAttributeResponse.
+        r"""Sets the id of this CreateAttributeResponse.
 
         自定义属性标识
 

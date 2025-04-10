@@ -31,7 +31,7 @@ class QosInfo:
     }
 
     def __init__(self, type=None, send=None, receive=None, cpu=None):
-        """QosInfo
+        r"""QosInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class QosInfo:
 
     @property
     def type(self):
-        """Gets the type of this QosInfo.
+        r"""Gets the type of this QosInfo.
 
         Qos类型 - aduio：音频 - video：视频 - screen：屏幕共享 - cpu：cpu
 
@@ -75,7 +75,7 @@ class QosInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this QosInfo.
+        r"""Sets the type of this QosInfo.
 
         Qos类型 - aduio：音频 - video：视频 - screen：屏幕共享 - cpu：cpu
 
@@ -86,7 +86,7 @@ class QosInfo:
 
     @property
     def send(self):
-        """Gets the send of this QosInfo.
+        r"""Gets the send of this QosInfo.
 
         :return: The send of this QosInfo.
         :rtype: :class:`huaweicloudsdkmeeting.v1.QosSendReceiveInfo`
@@ -95,7 +95,7 @@ class QosInfo:
 
     @send.setter
     def send(self, send):
-        """Sets the send of this QosInfo.
+        r"""Sets the send of this QosInfo.
 
         :param send: The send of this QosInfo.
         :type send: :class:`huaweicloudsdkmeeting.v1.QosSendReceiveInfo`
@@ -104,7 +104,7 @@ class QosInfo:
 
     @property
     def receive(self):
-        """Gets the receive of this QosInfo.
+        r"""Gets the receive of this QosInfo.
 
         :return: The receive of this QosInfo.
         :rtype: :class:`huaweicloudsdkmeeting.v1.QosSendReceiveInfo`
@@ -113,7 +113,7 @@ class QosInfo:
 
     @receive.setter
     def receive(self, receive):
-        """Sets the receive of this QosInfo.
+        r"""Sets the receive of this QosInfo.
 
         :param receive: The receive of this QosInfo.
         :type receive: :class:`huaweicloudsdkmeeting.v1.QosSendReceiveInfo`
@@ -122,7 +122,7 @@ class QosInfo:
 
     @property
     def cpu(self):
-        """Gets the cpu of this QosInfo.
+        r"""Gets the cpu of this QosInfo.
 
         :return: The cpu of this QosInfo.
         :rtype: :class:`huaweicloudsdkmeeting.v1.QosCpuInfo`
@@ -131,7 +131,7 @@ class QosInfo:
 
     @cpu.setter
     def cpu(self, cpu):
-        """Sets the cpu of this QosInfo.
+        r"""Sets the cpu of this QosInfo.
 
         :param cpu: The cpu of this QosInfo.
         :type cpu: :class:`huaweicloudsdkmeeting.v1.QosCpuInfo`

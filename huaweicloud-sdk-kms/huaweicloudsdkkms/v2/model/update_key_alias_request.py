@@ -25,7 +25,7 @@ class UpdateKeyAliasRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateKeyAliasRequest
+        r"""UpdateKeyAliasRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateKeyAliasRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateKeyAliasRequest.
+        r"""Gets the body of this UpdateKeyAliasRequest.
 
         :return: The body of this UpdateKeyAliasRequest.
         :rtype: :class:`huaweicloudsdkkms.v2.UpdateKeyAliasRequestBody`
@@ -52,7 +52,7 @@ class UpdateKeyAliasRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateKeyAliasRequest.
+        r"""Sets the body of this UpdateKeyAliasRequest.
 
         :param body: The body of this UpdateKeyAliasRequest.
         :type body: :class:`huaweicloudsdkkms.v2.UpdateKeyAliasRequestBody`

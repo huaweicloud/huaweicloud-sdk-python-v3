@@ -37,7 +37,7 @@ class ContentCompareResult:
     }
 
     def __init__(self, compare_task_id=None, content_compare_overview=None, content_compare_overview_count=None, content_compare_details=None, content_compare_diffs=None, error_code=None, error_msg=None):
-        """ContentCompareResult
+        r"""ContentCompareResult
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class ContentCompareResult:
 
     @property
     def compare_task_id(self):
-        """Gets the compare_task_id of this ContentCompareResult.
+        r"""Gets the compare_task_id of this ContentCompareResult.
 
         内容对比的任务id。
 
@@ -95,7 +95,7 @@ class ContentCompareResult:
 
     @compare_task_id.setter
     def compare_task_id(self, compare_task_id):
-        """Sets the compare_task_id of this ContentCompareResult.
+        r"""Sets the compare_task_id of this ContentCompareResult.
 
         内容对比的任务id。
 
@@ -106,7 +106,7 @@ class ContentCompareResult:
 
     @property
     def content_compare_overview(self):
-        """Gets the content_compare_overview of this ContentCompareResult.
+        r"""Gets the content_compare_overview of this ContentCompareResult.
 
         内容对比结果概览。
 
@@ -117,7 +117,7 @@ class ContentCompareResult:
 
     @content_compare_overview.setter
     def content_compare_overview(self, content_compare_overview):
-        """Sets the content_compare_overview of this ContentCompareResult.
+        r"""Sets the content_compare_overview of this ContentCompareResult.
 
         内容对比结果概览。
 
@@ -128,7 +128,7 @@ class ContentCompareResult:
 
     @property
     def content_compare_overview_count(self):
-        """Gets the content_compare_overview_count of this ContentCompareResult.
+        r"""Gets the content_compare_overview_count of this ContentCompareResult.
 
         内容对比结果概览总数。
 
@@ -139,7 +139,7 @@ class ContentCompareResult:
 
     @content_compare_overview_count.setter
     def content_compare_overview_count(self, content_compare_overview_count):
-        """Sets the content_compare_overview_count of this ContentCompareResult.
+        r"""Sets the content_compare_overview_count of this ContentCompareResult.
 
         内容对比结果概览总数。
 
@@ -150,7 +150,7 @@ class ContentCompareResult:
 
     @property
     def content_compare_details(self):
-        """Gets the content_compare_details of this ContentCompareResult.
+        r"""Gets the content_compare_details of this ContentCompareResult.
 
         内容对比结果详情。
 
@@ -161,7 +161,7 @@ class ContentCompareResult:
 
     @content_compare_details.setter
     def content_compare_details(self, content_compare_details):
-        """Sets the content_compare_details of this ContentCompareResult.
+        r"""Sets the content_compare_details of this ContentCompareResult.
 
         内容对比结果详情。
 
@@ -172,7 +172,7 @@ class ContentCompareResult:
 
     @property
     def content_compare_diffs(self):
-        """Gets the content_compare_diffs of this ContentCompareResult.
+        r"""Gets the content_compare_diffs of this ContentCompareResult.
 
         内容对比结果差异。
 
@@ -183,7 +183,7 @@ class ContentCompareResult:
 
     @content_compare_diffs.setter
     def content_compare_diffs(self, content_compare_diffs):
-        """Sets the content_compare_diffs of this ContentCompareResult.
+        r"""Sets the content_compare_diffs of this ContentCompareResult.
 
         内容对比结果差异。
 
@@ -194,7 +194,7 @@ class ContentCompareResult:
 
     @property
     def error_code(self):
-        """Gets the error_code of this ContentCompareResult.
+        r"""Gets the error_code of this ContentCompareResult.
 
         错误码。
 
@@ -205,7 +205,7 @@ class ContentCompareResult:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ContentCompareResult.
+        r"""Sets the error_code of this ContentCompareResult.
 
         错误码。
 
@@ -216,7 +216,7 @@ class ContentCompareResult:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ContentCompareResult.
+        r"""Gets the error_msg of this ContentCompareResult.
 
         错误信息。
 
@@ -227,7 +227,7 @@ class ContentCompareResult:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ContentCompareResult.
+        r"""Sets the error_msg of this ContentCompareResult.
 
         错误信息。
 

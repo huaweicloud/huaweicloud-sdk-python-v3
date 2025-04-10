@@ -29,7 +29,7 @@ class DTAggregateMetrics:
     }
 
     def __init__(self, inputs=None, expression=None, metric_name=None):
-        """DTAggregateMetrics
+        r"""DTAggregateMetrics
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DTAggregateMetrics:
 
     @property
     def inputs(self):
-        """Gets the inputs of this DTAggregateMetrics.
+        r"""Gets the inputs of this DTAggregateMetrics.
 
         定义指标计算查询的输入资产属性列表
 
@@ -65,7 +65,7 @@ class DTAggregateMetrics:
 
     @inputs.setter
     def inputs(self, inputs):
-        """Sets the inputs of this DTAggregateMetrics.
+        r"""Sets the inputs of this DTAggregateMetrics.
 
         定义指标计算查询的输入资产属性列表
 
@@ -76,7 +76,7 @@ class DTAggregateMetrics:
 
     @property
     def expression(self):
-        """Gets the expression of this DTAggregateMetrics.
+        r"""Gets the expression of this DTAggregateMetrics.
 
         指标表达式,最多64个字符
 
@@ -87,7 +87,7 @@ class DTAggregateMetrics:
 
     @expression.setter
     def expression(self, expression):
-        """Sets the expression of this DTAggregateMetrics.
+        r"""Sets the expression of this DTAggregateMetrics.
 
         指标表达式,最多64个字符
 
@@ -98,7 +98,7 @@ class DTAggregateMetrics:
 
     @property
     def metric_name(self):
-        """Gets the metric_name of this DTAggregateMetrics.
+        r"""Gets the metric_name of this DTAggregateMetrics.
 
         指标名，指标计算查询的输出指标名称
 
@@ -109,7 +109,7 @@ class DTAggregateMetrics:
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        """Sets the metric_name of this DTAggregateMetrics.
+        r"""Sets the metric_name of this DTAggregateMetrics.
 
         指标名，指标计算查询的输出指标名称
 

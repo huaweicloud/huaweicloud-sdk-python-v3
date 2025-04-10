@@ -27,7 +27,7 @@ class CreateInstanceTopicReqTopicOtherConfigs:
     }
 
     def __init__(self, name=None, value=None):
-        """CreateInstanceTopicReqTopicOtherConfigs
+        r"""CreateInstanceTopicReqTopicOtherConfigs
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateInstanceTopicReqTopicOtherConfigs:
 
     @property
     def name(self):
-        """Gets the name of this CreateInstanceTopicReqTopicOtherConfigs.
+        r"""Gets the name of this CreateInstanceTopicReqTopicOtherConfigs.
 
         配置名称
 
@@ -61,7 +61,7 @@ class CreateInstanceTopicReqTopicOtherConfigs:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateInstanceTopicReqTopicOtherConfigs.
+        r"""Sets the name of this CreateInstanceTopicReqTopicOtherConfigs.
 
         配置名称
 
@@ -72,7 +72,7 @@ class CreateInstanceTopicReqTopicOtherConfigs:
 
     @property
     def value(self):
-        """Gets the value of this CreateInstanceTopicReqTopicOtherConfigs.
+        r"""Gets the value of this CreateInstanceTopicReqTopicOtherConfigs.
 
         配置值
 
@@ -83,7 +83,7 @@ class CreateInstanceTopicReqTopicOtherConfigs:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this CreateInstanceTopicReqTopicOtherConfigs.
+        r"""Sets the value of this CreateInstanceTopicReqTopicOtherConfigs.
 
         配置值
 

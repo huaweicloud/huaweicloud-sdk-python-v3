@@ -25,7 +25,7 @@ class DeleteRecordCallbackConfigRequest:
     }
 
     def __init__(self, id=None):
-        """DeleteRecordCallbackConfigRequest
+        r"""DeleteRecordCallbackConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteRecordCallbackConfigRequest:
 
     @property
     def id(self):
-        """Gets the id of this DeleteRecordCallbackConfigRequest.
+        r"""Gets the id of this DeleteRecordCallbackConfigRequest.
 
         配置ID
 
@@ -53,7 +53,7 @@ class DeleteRecordCallbackConfigRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteRecordCallbackConfigRequest.
+        r"""Sets the id of this DeleteRecordCallbackConfigRequest.
 
         配置ID
 

@@ -27,7 +27,7 @@ class ChDatabaseTableReplConfigInfo:
     }
 
     def __init__(self, repl_type=None, tables=None):
-        """ChDatabaseTableReplConfigInfo
+        r"""ChDatabaseTableReplConfigInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ChDatabaseTableReplConfigInfo:
 
     @property
     def repl_type(self):
-        """Gets the repl_type of this ChDatabaseTableReplConfigInfo.
+        r"""Gets the repl_type of this ChDatabaseTableReplConfigInfo.
 
         表同步类型。 取值范围： - white_list：白名单，此时表范围不能为空。 - black_list：黑名单，此时表范围为空则选择所有表。
 
@@ -59,7 +59,7 @@ class ChDatabaseTableReplConfigInfo:
 
     @repl_type.setter
     def repl_type(self, repl_type):
-        """Sets the repl_type of this ChDatabaseTableReplConfigInfo.
+        r"""Sets the repl_type of this ChDatabaseTableReplConfigInfo.
 
         表同步类型。 取值范围： - white_list：白名单，此时表范围不能为空。 - black_list：黑名单，此时表范围为空则选择所有表。
 
@@ -70,7 +70,7 @@ class ChDatabaseTableReplConfigInfo:
 
     @property
     def tables(self):
-        """Gets the tables of this ChDatabaseTableReplConfigInfo.
+        r"""Gets the tables of this ChDatabaseTableReplConfigInfo.
 
         白名单或黑名单的表范围。
 
@@ -81,7 +81,7 @@ class ChDatabaseTableReplConfigInfo:
 
     @tables.setter
     def tables(self, tables):
-        """Sets the tables of this ChDatabaseTableReplConfigInfo.
+        r"""Sets the tables of this ChDatabaseTableReplConfigInfo.
 
         白名单或黑名单的表范围。
 

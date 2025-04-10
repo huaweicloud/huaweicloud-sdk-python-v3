@@ -31,7 +31,7 @@ class StatisticSeverityV2:
     }
 
     def __init__(self, critical=None, major=None, minor=None, suggestion=None):
-        """StatisticSeverityV2
+        r"""StatisticSeverityV2
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class StatisticSeverityV2:
 
     @property
     def critical(self):
-        """Gets the critical of this StatisticSeverityV2.
+        r"""Gets the critical of this StatisticSeverityV2.
 
         致命问题数
 
@@ -75,7 +75,7 @@ class StatisticSeverityV2:
 
     @critical.setter
     def critical(self, critical):
-        """Sets the critical of this StatisticSeverityV2.
+        r"""Sets the critical of this StatisticSeverityV2.
 
         致命问题数
 
@@ -86,7 +86,7 @@ class StatisticSeverityV2:
 
     @property
     def major(self):
-        """Gets the major of this StatisticSeverityV2.
+        r"""Gets the major of this StatisticSeverityV2.
 
         严重问题数
 
@@ -97,7 +97,7 @@ class StatisticSeverityV2:
 
     @major.setter
     def major(self, major):
-        """Sets the major of this StatisticSeverityV2.
+        r"""Sets the major of this StatisticSeverityV2.
 
         严重问题数
 
@@ -108,7 +108,7 @@ class StatisticSeverityV2:
 
     @property
     def minor(self):
-        """Gets the minor of this StatisticSeverityV2.
+        r"""Gets the minor of this StatisticSeverityV2.
 
         一般问题数
 
@@ -119,7 +119,7 @@ class StatisticSeverityV2:
 
     @minor.setter
     def minor(self, minor):
-        """Sets the minor of this StatisticSeverityV2.
+        r"""Sets the minor of this StatisticSeverityV2.
 
         一般问题数
 
@@ -130,7 +130,7 @@ class StatisticSeverityV2:
 
     @property
     def suggestion(self):
-        """Gets the suggestion of this StatisticSeverityV2.
+        r"""Gets the suggestion of this StatisticSeverityV2.
 
         提示问题数
 
@@ -141,7 +141,7 @@ class StatisticSeverityV2:
 
     @suggestion.setter
     def suggestion(self, suggestion):
-        """Sets the suggestion of this StatisticSeverityV2.
+        r"""Sets the suggestion of this StatisticSeverityV2.
 
         提示问题数
 

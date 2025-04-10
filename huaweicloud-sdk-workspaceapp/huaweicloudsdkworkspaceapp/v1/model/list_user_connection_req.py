@@ -63,7 +63,7 @@ class ListUserConnectionReq:
     }
 
     def __init__(self, id=None, connect_type=None, user_name=None, machine_sid=None, machine_name=None, failed_reason=None, failed_code=None, client_name=None, client_version=None, client_type=None, agent_version=None, vm_ip=None, connect_flag=None, wi_ip=None, public_ip=None, update_time=None, tenant_id=None, login_start_time=None, login_end_time=None, virtual_ip=None):
-        """ListUserConnectionReq
+        r"""ListUserConnectionReq
 
         The model defined in huaweicloud sdk
 
@@ -176,7 +176,7 @@ class ListUserConnectionReq:
 
     @property
     def id(self):
-        """Gets the id of this ListUserConnectionReq.
+        r"""Gets the id of this ListUserConnectionReq.
 
         登录记录唯一标识ID。
 
@@ -187,7 +187,7 @@ class ListUserConnectionReq:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListUserConnectionReq.
+        r"""Sets the id of this ListUserConnectionReq.
 
         登录记录唯一标识ID。
 
@@ -198,7 +198,7 @@ class ListUserConnectionReq:
 
     @property
     def connect_type(self):
-        """Gets the connect_type of this ListUserConnectionReq.
+        r"""Gets the connect_type of this ListUserConnectionReq.
 
         用户连接类别。
 
@@ -209,7 +209,7 @@ class ListUserConnectionReq:
 
     @connect_type.setter
     def connect_type(self, connect_type):
-        """Sets the connect_type of this ListUserConnectionReq.
+        r"""Sets the connect_type of this ListUserConnectionReq.
 
         用户连接类别。
 
@@ -220,7 +220,7 @@ class ListUserConnectionReq:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ListUserConnectionReq.
+        r"""Gets the user_name of this ListUserConnectionReq.
 
         登录用户名称。
 
@@ -231,7 +231,7 @@ class ListUserConnectionReq:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ListUserConnectionReq.
+        r"""Sets the user_name of this ListUserConnectionReq.
 
         登录用户名称。
 
@@ -242,7 +242,7 @@ class ListUserConnectionReq:
 
     @property
     def machine_sid(self):
-        """Gets the machine_sid of this ListUserConnectionReq.
+        r"""Gets the machine_sid of this ListUserConnectionReq.
 
         应用服务器sid。
 
@@ -253,7 +253,7 @@ class ListUserConnectionReq:
 
     @machine_sid.setter
     def machine_sid(self, machine_sid):
-        """Sets the machine_sid of this ListUserConnectionReq.
+        r"""Sets the machine_sid of this ListUserConnectionReq.
 
         应用服务器sid。
 
@@ -264,7 +264,7 @@ class ListUserConnectionReq:
 
     @property
     def machine_name(self):
-        """Gets the machine_name of this ListUserConnectionReq.
+        r"""Gets the machine_name of this ListUserConnectionReq.
 
         应用服务器名称。
 
@@ -275,7 +275,7 @@ class ListUserConnectionReq:
 
     @machine_name.setter
     def machine_name(self, machine_name):
-        """Sets the machine_name of this ListUserConnectionReq.
+        r"""Sets the machine_name of this ListUserConnectionReq.
 
         应用服务器名称。
 
@@ -286,7 +286,7 @@ class ListUserConnectionReq:
 
     @property
     def failed_reason(self):
-        """Gets the failed_reason of this ListUserConnectionReq.
+        r"""Gets the failed_reason of this ListUserConnectionReq.
 
         连接失败原因。
 
@@ -297,7 +297,7 @@ class ListUserConnectionReq:
 
     @failed_reason.setter
     def failed_reason(self, failed_reason):
-        """Sets the failed_reason of this ListUserConnectionReq.
+        r"""Sets the failed_reason of this ListUserConnectionReq.
 
         连接失败原因。
 
@@ -308,7 +308,7 @@ class ListUserConnectionReq:
 
     @property
     def failed_code(self):
-        """Gets the failed_code of this ListUserConnectionReq.
+        r"""Gets the failed_code of this ListUserConnectionReq.
 
         连接失败状态码。
 
@@ -319,7 +319,7 @@ class ListUserConnectionReq:
 
     @failed_code.setter
     def failed_code(self, failed_code):
-        """Sets the failed_code of this ListUserConnectionReq.
+        r"""Sets the failed_code of this ListUserConnectionReq.
 
         连接失败状态码。
 
@@ -330,7 +330,7 @@ class ListUserConnectionReq:
 
     @property
     def client_name(self):
-        """Gets the client_name of this ListUserConnectionReq.
+        r"""Gets the client_name of this ListUserConnectionReq.
 
         客户端名称。
 
@@ -341,7 +341,7 @@ class ListUserConnectionReq:
 
     @client_name.setter
     def client_name(self, client_name):
-        """Sets the client_name of this ListUserConnectionReq.
+        r"""Sets the client_name of this ListUserConnectionReq.
 
         客户端名称。
 
@@ -352,7 +352,7 @@ class ListUserConnectionReq:
 
     @property
     def client_version(self):
-        """Gets the client_version of this ListUserConnectionReq.
+        r"""Gets the client_version of this ListUserConnectionReq.
 
         客户端版本。
 
@@ -363,7 +363,7 @@ class ListUserConnectionReq:
 
     @client_version.setter
     def client_version(self, client_version):
-        """Sets the client_version of this ListUserConnectionReq.
+        r"""Sets the client_version of this ListUserConnectionReq.
 
         客户端版本。
 
@@ -374,7 +374,7 @@ class ListUserConnectionReq:
 
     @property
     def client_type(self):
-        """Gets the client_type of this ListUserConnectionReq.
+        r"""Gets the client_type of this ListUserConnectionReq.
 
         客户端操作系统类型。
 
@@ -385,7 +385,7 @@ class ListUserConnectionReq:
 
     @client_type.setter
     def client_type(self, client_type):
-        """Sets the client_type of this ListUserConnectionReq.
+        r"""Sets the client_type of this ListUserConnectionReq.
 
         客户端操作系统类型。
 
@@ -396,7 +396,7 @@ class ListUserConnectionReq:
 
     @property
     def agent_version(self):
-        """Gets the agent_version of this ListUserConnectionReq.
+        r"""Gets the agent_version of this ListUserConnectionReq.
 
         aps hda版本。
 
@@ -407,7 +407,7 @@ class ListUserConnectionReq:
 
     @agent_version.setter
     def agent_version(self, agent_version):
-        """Sets the agent_version of this ListUserConnectionReq.
+        r"""Sets the agent_version of this ListUserConnectionReq.
 
         aps hda版本。
 
@@ -418,7 +418,7 @@ class ListUserConnectionReq:
 
     @property
     def vm_ip(self):
-        """Gets the vm_ip of this ListUserConnectionReq.
+        r"""Gets the vm_ip of this ListUserConnectionReq.
 
         应用服务器ip。
 
@@ -429,7 +429,7 @@ class ListUserConnectionReq:
 
     @vm_ip.setter
     def vm_ip(self, vm_ip):
-        """Sets the vm_ip of this ListUserConnectionReq.
+        r"""Sets the vm_ip of this ListUserConnectionReq.
 
         应用服务器ip。
 
@@ -440,7 +440,7 @@ class ListUserConnectionReq:
 
     @property
     def connect_flag(self):
-        """Gets the connect_flag of this ListUserConnectionReq.
+        r"""Gets the connect_flag of this ListUserConnectionReq.
 
         连接标志，目前值为0。
 
@@ -451,7 +451,7 @@ class ListUserConnectionReq:
 
     @connect_flag.setter
     def connect_flag(self, connect_flag):
-        """Sets the connect_flag of this ListUserConnectionReq.
+        r"""Sets the connect_flag of this ListUserConnectionReq.
 
         连接标志，目前值为0。
 
@@ -462,7 +462,7 @@ class ListUserConnectionReq:
 
     @property
     def wi_ip(self):
-        """Gets the wi_ip of this ListUserConnectionReq.
+        r"""Gets the wi_ip of this ListUserConnectionReq.
 
         连接IP。
 
@@ -473,7 +473,7 @@ class ListUserConnectionReq:
 
     @wi_ip.setter
     def wi_ip(self, wi_ip):
-        """Sets the wi_ip of this ListUserConnectionReq.
+        r"""Sets the wi_ip of this ListUserConnectionReq.
 
         连接IP。
 
@@ -484,7 +484,7 @@ class ListUserConnectionReq:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this ListUserConnectionReq.
+        r"""Gets the public_ip of this ListUserConnectionReq.
 
         客户端出口ip。
 
@@ -495,7 +495,7 @@ class ListUserConnectionReq:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this ListUserConnectionReq.
+        r"""Sets the public_ip of this ListUserConnectionReq.
 
         客户端出口ip。
 
@@ -506,7 +506,7 @@ class ListUserConnectionReq:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ListUserConnectionReq.
+        r"""Gets the update_time of this ListUserConnectionReq.
 
         登录应用开始时间，格式 2022-10-31 08:07:39。
 
@@ -517,7 +517,7 @@ class ListUserConnectionReq:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ListUserConnectionReq.
+        r"""Sets the update_time of this ListUserConnectionReq.
 
         登录应用开始时间，格式 2022-10-31 08:07:39。
 
@@ -528,7 +528,7 @@ class ListUserConnectionReq:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this ListUserConnectionReq.
+        r"""Gets the tenant_id of this ListUserConnectionReq.
 
         租户id。
 
@@ -539,7 +539,7 @@ class ListUserConnectionReq:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this ListUserConnectionReq.
+        r"""Sets the tenant_id of this ListUserConnectionReq.
 
         租户id。
 
@@ -550,7 +550,7 @@ class ListUserConnectionReq:
 
     @property
     def login_start_time(self):
-        """Gets the login_start_time of this ListUserConnectionReq.
+        r"""Gets the login_start_time of this ListUserConnectionReq.
 
         登录应用开始时间，格式 2022-10-31 08:07:39。
 
@@ -561,7 +561,7 @@ class ListUserConnectionReq:
 
     @login_start_time.setter
     def login_start_time(self, login_start_time):
-        """Sets the login_start_time of this ListUserConnectionReq.
+        r"""Sets the login_start_time of this ListUserConnectionReq.
 
         登录应用开始时间，格式 2022-10-31 08:07:39。
 
@@ -572,7 +572,7 @@ class ListUserConnectionReq:
 
     @property
     def login_end_time(self):
-        """Gets the login_end_time of this ListUserConnectionReq.
+        r"""Gets the login_end_time of this ListUserConnectionReq.
 
         登录应用结束时间，格式 2022-10-31 08:07:39。
 
@@ -583,7 +583,7 @@ class ListUserConnectionReq:
 
     @login_end_time.setter
     def login_end_time(self, login_end_time):
-        """Sets the login_end_time of this ListUserConnectionReq.
+        r"""Sets the login_end_time of this ListUserConnectionReq.
 
         登录应用结束时间，格式 2022-10-31 08:07:39。
 
@@ -594,7 +594,7 @@ class ListUserConnectionReq:
 
     @property
     def virtual_ip(self):
-        """Gets the virtual_ip of this ListUserConnectionReq.
+        r"""Gets the virtual_ip of this ListUserConnectionReq.
 
         会话虚拟ip。
 
@@ -605,7 +605,7 @@ class ListUserConnectionReq:
 
     @virtual_ip.setter
     def virtual_ip(self, virtual_ip):
-        """Sets the virtual_ip of this ListUserConnectionReq.
+        r"""Sets the virtual_ip of this ListUserConnectionReq.
 
         会话虚拟ip。
 

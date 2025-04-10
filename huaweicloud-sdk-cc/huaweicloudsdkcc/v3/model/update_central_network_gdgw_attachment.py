@@ -27,7 +27,7 @@ class UpdateCentralNetworkGdgwAttachment:
     }
 
     def __init__(self, name=None, description=None):
-        """UpdateCentralNetworkGdgwAttachment
+        r"""UpdateCentralNetworkGdgwAttachment
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateCentralNetworkGdgwAttachment:
 
     @property
     def name(self):
-        """Gets the name of this UpdateCentralNetworkGdgwAttachment.
+        r"""Gets the name of this UpdateCentralNetworkGdgwAttachment.
 
         实例名字。
 
@@ -61,7 +61,7 @@ class UpdateCentralNetworkGdgwAttachment:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateCentralNetworkGdgwAttachment.
+        r"""Sets the name of this UpdateCentralNetworkGdgwAttachment.
 
         实例名字。
 
@@ -72,7 +72,7 @@ class UpdateCentralNetworkGdgwAttachment:
 
     @property
     def description(self):
-        """Gets the description of this UpdateCentralNetworkGdgwAttachment.
+        r"""Gets the description of this UpdateCentralNetworkGdgwAttachment.
 
         实例描述。不支持 <>。
 
@@ -83,7 +83,7 @@ class UpdateCentralNetworkGdgwAttachment:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateCentralNetworkGdgwAttachment.
+        r"""Sets the description of this UpdateCentralNetworkGdgwAttachment.
 
         实例描述。不支持 <>。
 

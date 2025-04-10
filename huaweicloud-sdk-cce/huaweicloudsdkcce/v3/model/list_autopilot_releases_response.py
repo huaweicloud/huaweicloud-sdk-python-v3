@@ -26,7 +26,7 @@ class ListAutopilotReleasesResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListAutopilotReleasesResponse
+        r"""ListAutopilotReleasesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListAutopilotReleasesResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListAutopilotReleasesResponse.
+        r"""Gets the body of this ListAutopilotReleasesResponse.
 
         :return: The body of this ListAutopilotReleasesResponse.
         :rtype: list[:class:`huaweicloudsdkcce.v3.ReleaseResp`]
@@ -53,7 +53,7 @@ class ListAutopilotReleasesResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListAutopilotReleasesResponse.
+        r"""Sets the body of this ListAutopilotReleasesResponse.
 
         :param body: The body of this ListAutopilotReleasesResponse.
         :type body: list[:class:`huaweicloudsdkcce.v3.ReleaseResp`]

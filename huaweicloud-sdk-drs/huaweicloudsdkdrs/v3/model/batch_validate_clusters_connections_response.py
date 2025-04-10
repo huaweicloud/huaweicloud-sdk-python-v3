@@ -28,7 +28,7 @@ class BatchValidateClustersConnectionsResponse(SdkResponse):
     }
 
     def __init__(self, results=None, count=None):
-        """BatchValidateClustersConnectionsResponse
+        r"""BatchValidateClustersConnectionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchValidateClustersConnectionsResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this BatchValidateClustersConnectionsResponse.
+        r"""Gets the results of this BatchValidateClustersConnectionsResponse.
 
         批量测试连接响应体集合。
 
@@ -62,7 +62,7 @@ class BatchValidateClustersConnectionsResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this BatchValidateClustersConnectionsResponse.
+        r"""Sets the results of this BatchValidateClustersConnectionsResponse.
 
         批量测试连接响应体集合。
 
@@ -73,7 +73,7 @@ class BatchValidateClustersConnectionsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this BatchValidateClustersConnectionsResponse.
+        r"""Gets the count of this BatchValidateClustersConnectionsResponse.
 
         总记录数。
 
@@ -84,7 +84,7 @@ class BatchValidateClustersConnectionsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this BatchValidateClustersConnectionsResponse.
+        r"""Sets the count of this BatchValidateClustersConnectionsResponse.
 
         总记录数。
 

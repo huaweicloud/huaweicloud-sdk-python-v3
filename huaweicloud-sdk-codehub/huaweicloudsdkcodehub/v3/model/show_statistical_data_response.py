@@ -30,7 +30,7 @@ class ShowStatisticalDataResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """ShowStatisticalDataResponse
+        r"""ShowStatisticalDataResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowStatisticalDataResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ShowStatisticalDataResponse.
+        r"""Gets the error of this ShowStatisticalDataResponse.
 
         :return: The error of this ShowStatisticalDataResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class ShowStatisticalDataResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ShowStatisticalDataResponse.
+        r"""Sets the error of this ShowStatisticalDataResponse.
 
         :param error: The error of this ShowStatisticalDataResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class ShowStatisticalDataResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowStatisticalDataResponse.
+        r"""Gets the result of this ShowStatisticalDataResponse.
 
         :return: The result of this ShowStatisticalDataResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.RepositoryStatisticsVO`
@@ -85,7 +85,7 @@ class ShowStatisticalDataResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowStatisticalDataResponse.
+        r"""Sets the result of this ShowStatisticalDataResponse.
 
         :param result: The result of this ShowStatisticalDataResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.RepositoryStatisticsVO`
@@ -94,7 +94,7 @@ class ShowStatisticalDataResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowStatisticalDataResponse.
+        r"""Gets the status of this ShowStatisticalDataResponse.
 
         响应状态
 
@@ -105,7 +105,7 @@ class ShowStatisticalDataResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowStatisticalDataResponse.
+        r"""Sets the status of this ShowStatisticalDataResponse.
 
         响应状态
 

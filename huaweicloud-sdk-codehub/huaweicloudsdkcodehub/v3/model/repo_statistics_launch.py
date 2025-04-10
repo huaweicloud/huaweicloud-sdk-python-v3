@@ -29,7 +29,7 @@ class RepoStatisticsLaunch:
     }
 
     def __init__(self, can_statistics=None, join_id=None, message=None):
-        """RepoStatisticsLaunch
+        r"""RepoStatisticsLaunch
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class RepoStatisticsLaunch:
 
     @property
     def can_statistics(self):
-        """Gets the can_statistics of this RepoStatisticsLaunch.
+        r"""Gets the can_statistics of this RepoStatisticsLaunch.
 
         仓库是否可以统计
 
@@ -68,7 +68,7 @@ class RepoStatisticsLaunch:
 
     @can_statistics.setter
     def can_statistics(self, can_statistics):
-        """Sets the can_statistics of this RepoStatisticsLaunch.
+        r"""Sets the can_statistics of this RepoStatisticsLaunch.
 
         仓库是否可以统计
 
@@ -79,7 +79,7 @@ class RepoStatisticsLaunch:
 
     @property
     def join_id(self):
-        """Gets the join_id of this RepoStatisticsLaunch.
+        r"""Gets the join_id of this RepoStatisticsLaunch.
 
         sidekiq任务的 id
 
@@ -90,7 +90,7 @@ class RepoStatisticsLaunch:
 
     @join_id.setter
     def join_id(self, join_id):
-        """Sets the join_id of this RepoStatisticsLaunch.
+        r"""Sets the join_id of this RepoStatisticsLaunch.
 
         sidekiq任务的 id
 
@@ -101,7 +101,7 @@ class RepoStatisticsLaunch:
 
     @property
     def message(self):
-        """Gets the message of this RepoStatisticsLaunch.
+        r"""Gets the message of this RepoStatisticsLaunch.
 
         启动仓库统计返回的信息
 
@@ -112,7 +112,7 @@ class RepoStatisticsLaunch:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this RepoStatisticsLaunch.
+        r"""Sets the message of this RepoStatisticsLaunch.
 
         启动仓库统计返回的信息
 

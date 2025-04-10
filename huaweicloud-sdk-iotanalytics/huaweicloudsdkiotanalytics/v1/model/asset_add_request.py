@@ -35,7 +35,7 @@ class AssetAddRequest:
     }
 
     def __init__(self, asset_model_id=None, name=None, display_name=None, parent=None, properties=None, analyses=None):
-        """AssetAddRequest
+        r"""AssetAddRequest
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class AssetAddRequest:
 
     @property
     def asset_model_id(self):
-        """Gets the asset_model_id of this AssetAddRequest.
+        r"""Gets the asset_model_id of this AssetAddRequest.
 
         资产模型ID
 
@@ -87,7 +87,7 @@ class AssetAddRequest:
 
     @asset_model_id.setter
     def asset_model_id(self, asset_model_id):
-        """Sets the asset_model_id of this AssetAddRequest.
+        r"""Sets the asset_model_id of this AssetAddRequest.
 
         资产模型ID
 
@@ -98,7 +98,7 @@ class AssetAddRequest:
 
     @property
     def name(self):
-        """Gets the name of this AssetAddRequest.
+        r"""Gets the name of this AssetAddRequest.
 
         资产名称，正则：\"^[a-zA-Z][a-zA-Z0-9_-]{0,63}$\"
 
@@ -109,7 +109,7 @@ class AssetAddRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AssetAddRequest.
+        r"""Sets the name of this AssetAddRequest.
 
         资产名称，正则：\"^[a-zA-Z][a-zA-Z0-9_-]{0,63}$\"
 
@@ -120,7 +120,7 @@ class AssetAddRequest:
 
     @property
     def display_name(self):
-        """Gets the display_name of this AssetAddRequest.
+        r"""Gets the display_name of this AssetAddRequest.
 
         资产显示名称，修改资产时，\"\"代表配置为空、null或不携带代表不修改，正则：\"^[\\\\u4E-\\\\u9FA5A-Za-z0-9_@#.-]{0,64}$\"
 
@@ -131,7 +131,7 @@ class AssetAddRequest:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this AssetAddRequest.
+        r"""Sets the display_name of this AssetAddRequest.
 
         资产显示名称，修改资产时，\"\"代表配置为空、null或不携带代表不修改，正则：\"^[\\\\u4E-\\\\u9FA5A-Za-z0-9_@#.-]{0,64}$\"
 
@@ -142,7 +142,7 @@ class AssetAddRequest:
 
     @property
     def parent(self):
-        """Gets the parent of this AssetAddRequest.
+        r"""Gets the parent of this AssetAddRequest.
 
         父资产ID，根资产的父资产ID为null，修改资产时，null或不携带代表不修改
 
@@ -153,7 +153,7 @@ class AssetAddRequest:
 
     @parent.setter
     def parent(self, parent):
-        """Sets the parent of this AssetAddRequest.
+        r"""Sets the parent of this AssetAddRequest.
 
         父资产ID，根资产的父资产ID为null，修改资产时，null或不携带代表不修改
 
@@ -164,7 +164,7 @@ class AssetAddRequest:
 
     @property
     def properties(self):
-        """Gets the properties of this AssetAddRequest.
+        r"""Gets the properties of this AssetAddRequest.
 
         属性集，最多200个
 
@@ -175,7 +175,7 @@ class AssetAddRequest:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this AssetAddRequest.
+        r"""Sets the properties of this AssetAddRequest.
 
         属性集，最多200个
 
@@ -186,7 +186,7 @@ class AssetAddRequest:
 
     @property
     def analyses(self):
-        """Gets the analyses of this AssetAddRequest.
+        r"""Gets the analyses of this AssetAddRequest.
 
         分析任务集，最多50个
 
@@ -197,7 +197,7 @@ class AssetAddRequest:
 
     @analyses.setter
     def analyses(self, analyses):
-        """Sets the analyses of this AssetAddRequest.
+        r"""Sets the analyses of this AssetAddRequest.
 
         分析任务集，最多50个
 

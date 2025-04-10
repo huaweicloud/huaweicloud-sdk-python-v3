@@ -29,7 +29,7 @@ class RecordControlInfo:
     }
 
     def __init__(self, publish_domain=None, app=None, stream=None):
-        """RecordControlInfo
+        r"""RecordControlInfo
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class RecordControlInfo:
 
     @property
     def publish_domain(self):
-        """Gets the publish_domain of this RecordControlInfo.
+        r"""Gets the publish_domain of this RecordControlInfo.
 
         直播推流域名
 
@@ -65,7 +65,7 @@ class RecordControlInfo:
 
     @publish_domain.setter
     def publish_domain(self, publish_domain):
-        """Sets the publish_domain of this RecordControlInfo.
+        r"""Sets the publish_domain of this RecordControlInfo.
 
         直播推流域名
 
@@ -76,7 +76,7 @@ class RecordControlInfo:
 
     @property
     def app(self):
-        """Gets the app of this RecordControlInfo.
+        r"""Gets the app of this RecordControlInfo.
 
         应用名
 
@@ -87,7 +87,7 @@ class RecordControlInfo:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this RecordControlInfo.
+        r"""Sets the app of this RecordControlInfo.
 
         应用名
 
@@ -98,7 +98,7 @@ class RecordControlInfo:
 
     @property
     def stream(self):
-        """Gets the stream of this RecordControlInfo.
+        r"""Gets the stream of this RecordControlInfo.
 
         待启动或停止录制的流名
 
@@ -109,7 +109,7 @@ class RecordControlInfo:
 
     @stream.setter
     def stream(self, stream):
-        """Sets the stream of this RecordControlInfo.
+        r"""Sets the stream of this RecordControlInfo.
 
         待启动或停止录制的流名
 

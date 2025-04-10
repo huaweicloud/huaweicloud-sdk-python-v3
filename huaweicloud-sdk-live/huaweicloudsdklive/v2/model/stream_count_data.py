@@ -27,7 +27,7 @@ class StreamCountData:
     }
 
     def __init__(self, value=None, time=None):
-        """StreamCountData
+        r"""StreamCountData
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class StreamCountData:
 
     @property
     def value(self):
-        """Gets the value of this StreamCountData.
+        r"""Gets the value of this StreamCountData.
 
         采样时间点的推流路数。
 
@@ -61,7 +61,7 @@ class StreamCountData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this StreamCountData.
+        r"""Sets the value of this StreamCountData.
 
         采样时间点的推流路数。
 
@@ -72,7 +72,7 @@ class StreamCountData:
 
     @property
     def time(self):
-        """Gets the time of this StreamCountData.
+        r"""Gets the time of this StreamCountData.
 
         采样时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。
 
@@ -83,7 +83,7 @@ class StreamCountData:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this StreamCountData.
+        r"""Sets the time of this StreamCountData.
 
         采样时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。
 

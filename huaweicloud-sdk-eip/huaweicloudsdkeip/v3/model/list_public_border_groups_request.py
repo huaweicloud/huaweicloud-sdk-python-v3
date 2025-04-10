@@ -25,7 +25,7 @@ class ListPublicBorderGroupsRequest:
     }
 
     def __init__(self, fields=None):
-        """ListPublicBorderGroupsRequest
+        r"""ListPublicBorderGroupsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListPublicBorderGroupsRequest:
 
     @property
     def fields(self):
-        """Gets the fields of this ListPublicBorderGroupsRequest.
+        r"""Gets the fields of this ListPublicBorderGroupsRequest.
 
         显示，形式为\"fields=id&fields=name&...\"  支持字段：publicip_pools/public_border_group
 
@@ -54,7 +54,7 @@ class ListPublicBorderGroupsRequest:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this ListPublicBorderGroupsRequest.
+        r"""Sets the fields of this ListPublicBorderGroupsRequest.
 
         显示，形式为\"fields=id&fields=name&...\"  支持字段：publicip_pools/public_border_group
 

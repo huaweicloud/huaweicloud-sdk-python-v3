@@ -23,7 +23,7 @@ class ShowServerLimitsRequest:
     }
 
     def __init__(self):
-        """ShowServerLimitsRequest
+        r"""ShowServerLimitsRequest
 
         The model defined in huaweicloud sdk
 

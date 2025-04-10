@@ -29,7 +29,7 @@ class GenericLinkBatchQueryDTO:
     }
 
     def __init__(self, latest_only=None, object_ids=None, role=None):
-        """GenericLinkBatchQueryDTO
+        r"""GenericLinkBatchQueryDTO
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class GenericLinkBatchQueryDTO:
 
     @property
     def latest_only(self):
-        """Gets the latest_only of this GenericLinkBatchQueryDTO.
+        r"""Gets the latest_only of this GenericLinkBatchQueryDTO.
 
         **参数解释：**  是否返回源模型数据实例关联的最新版本目标模型数据实例。此参数仅对源/目标模型为M-V模型实体有效。  **约束限制：**  不涉及。  **取值范围：**  - true：返回源模型数据实例关联的最新版本的目标模型数据实例。 - false：返回源模型数据实例关联的所有版本的目标模型数据实例。  **默认取值：**  false。 
 
@@ -68,7 +68,7 @@ class GenericLinkBatchQueryDTO:
 
     @latest_only.setter
     def latest_only(self, latest_only):
-        """Sets the latest_only of this GenericLinkBatchQueryDTO.
+        r"""Sets the latest_only of this GenericLinkBatchQueryDTO.
 
         **参数解释：**  是否返回源模型数据实例关联的最新版本目标模型数据实例。此参数仅对源/目标模型为M-V模型实体有效。  **约束限制：**  不涉及。  **取值范围：**  - true：返回源模型数据实例关联的最新版本的目标模型数据实例。 - false：返回源模型数据实例关联的所有版本的目标模型数据实例。  **默认取值：**  false。 
 
@@ -79,7 +79,7 @@ class GenericLinkBatchQueryDTO:
 
     @property
     def object_ids(self):
-        """Gets the object_ids of this GenericLinkBatchQueryDTO.
+        r"""Gets the object_ids of this GenericLinkBatchQueryDTO.
 
         **参数解释：**  角色对应的数据实例ID列表。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -90,7 +90,7 @@ class GenericLinkBatchQueryDTO:
 
     @object_ids.setter
     def object_ids(self, object_ids):
-        """Sets the object_ids of this GenericLinkBatchQueryDTO.
+        r"""Sets the object_ids of this GenericLinkBatchQueryDTO.
 
         **参数解释：**  角色对应的数据实例ID列表。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -101,7 +101,7 @@ class GenericLinkBatchQueryDTO:
 
     @property
     def role(self):
-        """Gets the role of this GenericLinkBatchQueryDTO.
+        r"""Gets the role of this GenericLinkBatchQueryDTO.
 
         **参数解释：**  角色。  **约束限制：**  不涉及。  **取值范围：**  - TARGET：目标模型。 - SOURCE：源模型。  **默认取值：**  不涉及。 
 
@@ -112,7 +112,7 @@ class GenericLinkBatchQueryDTO:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this GenericLinkBatchQueryDTO.
+        r"""Sets the role of this GenericLinkBatchQueryDTO.
 
         **参数解释：**  角色。  **约束限制：**  不涉及。  **取值范围：**  - TARGET：目标模型。 - SOURCE：源模型。  **默认取值：**  不涉及。 
 

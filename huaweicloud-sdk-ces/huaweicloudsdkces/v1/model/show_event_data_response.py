@@ -26,7 +26,7 @@ class ShowEventDataResponse(SdkResponse):
     }
 
     def __init__(self, datapoints=None):
-        """ShowEventDataResponse
+        r"""ShowEventDataResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowEventDataResponse(SdkResponse):
 
     @property
     def datapoints(self):
-        """Gets the datapoints of this ShowEventDataResponse.
+        r"""Gets the datapoints of this ShowEventDataResponse.
 
         配置信息列表。如果不存在对应的配置信息，则datapoints为空数组[]。
 
@@ -55,7 +55,7 @@ class ShowEventDataResponse(SdkResponse):
 
     @datapoints.setter
     def datapoints(self, datapoints):
-        """Sets the datapoints of this ShowEventDataResponse.
+        r"""Sets the datapoints of this ShowEventDataResponse.
 
         配置信息列表。如果不存在对应的配置信息，则datapoints为空数组[]。
 

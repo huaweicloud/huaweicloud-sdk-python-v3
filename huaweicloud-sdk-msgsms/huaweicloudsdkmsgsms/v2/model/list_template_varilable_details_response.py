@@ -28,7 +28,7 @@ class ListTemplateVarilableDetailsResponse(SdkResponse):
     }
 
     def __init__(self, results=None, total=None):
-        """ListTemplateVarilableDetailsResponse
+        r"""ListTemplateVarilableDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListTemplateVarilableDetailsResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this ListTemplateVarilableDetailsResponse.
+        r"""Gets the results of this ListTemplateVarilableDetailsResponse.
 
         查询结果
 
@@ -62,7 +62,7 @@ class ListTemplateVarilableDetailsResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this ListTemplateVarilableDetailsResponse.
+        r"""Sets the results of this ListTemplateVarilableDetailsResponse.
 
         查询结果
 
@@ -73,7 +73,7 @@ class ListTemplateVarilableDetailsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListTemplateVarilableDetailsResponse.
+        r"""Gets the total of this ListTemplateVarilableDetailsResponse.
 
         总数
 
@@ -84,7 +84,7 @@ class ListTemplateVarilableDetailsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListTemplateVarilableDetailsResponse.
+        r"""Sets the total of this ListTemplateVarilableDetailsResponse.
 
         总数
 

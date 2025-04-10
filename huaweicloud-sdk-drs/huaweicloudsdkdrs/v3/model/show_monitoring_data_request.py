@@ -27,7 +27,7 @@ class ShowMonitoringDataRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """ShowMonitoringDataRequest
+        r"""ShowMonitoringDataRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ShowMonitoringDataRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowMonitoringDataRequest.
+        r"""Gets the x_language of this ShowMonitoringDataRequest.
 
         请求语言类型
 
@@ -61,7 +61,7 @@ class ShowMonitoringDataRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowMonitoringDataRequest.
+        r"""Sets the x_language of this ShowMonitoringDataRequest.
 
         请求语言类型
 
@@ -72,7 +72,7 @@ class ShowMonitoringDataRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowMonitoringDataRequest.
+        r"""Gets the body of this ShowMonitoringDataRequest.
 
         :return: The body of this ShowMonitoringDataRequest.
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchQueryJobReq`
@@ -81,7 +81,7 @@ class ShowMonitoringDataRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowMonitoringDataRequest.
+        r"""Sets the body of this ShowMonitoringDataRequest.
 
         :param body: The body of this ShowMonitoringDataRequest.
         :type body: :class:`huaweicloudsdkdrs.v3.BatchQueryJobReq`

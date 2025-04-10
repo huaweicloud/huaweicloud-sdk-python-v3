@@ -65,7 +65,7 @@ class ListLimitTaskResponseResult:
     }
 
     def __init__(self, task_id=None, task_scope=None, limit_type=None, limit_type_value=None, task_name=None, databases=None, sql_model=None, key_words=None, status=None, instance_id=None, rule_name=None, parallel_size=None, start_time=None, end_time=None, cpu_utilization=None, memory_utilization=None, created=None, updated=None, creator=None, modifier=None, node_infos=None):
-        """ListLimitTaskResponseResult
+        r"""ListLimitTaskResponseResult
 
         The model defined in huaweicloud sdk
 
@@ -183,7 +183,7 @@ class ListLimitTaskResponseResult:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ListLimitTaskResponseResult.
+        r"""Gets the task_id of this ListLimitTaskResponseResult.
 
         限流任务ID。
 
@@ -194,7 +194,7 @@ class ListLimitTaskResponseResult:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ListLimitTaskResponseResult.
+        r"""Sets the task_id of this ListLimitTaskResponseResult.
 
         限流任务ID。
 
@@ -205,7 +205,7 @@ class ListLimitTaskResponseResult:
 
     @property
     def task_scope(self):
-        """Gets the task_scope of this ListLimitTaskResponseResult.
+        r"""Gets the task_scope of this ListLimitTaskResponseResult.
 
         任务限流范围。
 
@@ -216,7 +216,7 @@ class ListLimitTaskResponseResult:
 
     @task_scope.setter
     def task_scope(self, task_scope):
-        """Sets the task_scope of this ListLimitTaskResponseResult.
+        r"""Sets the task_scope of this ListLimitTaskResponseResult.
 
         任务限流范围。
 
@@ -227,7 +227,7 @@ class ListLimitTaskResponseResult:
 
     @property
     def limit_type(self):
-        """Gets the limit_type of this ListLimitTaskResponseResult.
+        r"""Gets the limit_type of this ListLimitTaskResponseResult.
 
         任务限流类型。
 
@@ -238,7 +238,7 @@ class ListLimitTaskResponseResult:
 
     @limit_type.setter
     def limit_type(self, limit_type):
-        """Sets the limit_type of this ListLimitTaskResponseResult.
+        r"""Sets the limit_type of this ListLimitTaskResponseResult.
 
         任务限流类型。
 
@@ -249,7 +249,7 @@ class ListLimitTaskResponseResult:
 
     @property
     def limit_type_value(self):
-        """Gets the limit_type_value of this ListLimitTaskResponseResult.
+        r"""Gets the limit_type_value of this ListLimitTaskResponseResult.
 
         任务限流类型值。
 
@@ -260,7 +260,7 @@ class ListLimitTaskResponseResult:
 
     @limit_type_value.setter
     def limit_type_value(self, limit_type_value):
-        """Sets the limit_type_value of this ListLimitTaskResponseResult.
+        r"""Sets the limit_type_value of this ListLimitTaskResponseResult.
 
         任务限流类型值。
 
@@ -271,7 +271,7 @@ class ListLimitTaskResponseResult:
 
     @property
     def task_name(self):
-        """Gets the task_name of this ListLimitTaskResponseResult.
+        r"""Gets the task_name of this ListLimitTaskResponseResult.
 
         限流任务名。
 
@@ -282,7 +282,7 @@ class ListLimitTaskResponseResult:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this ListLimitTaskResponseResult.
+        r"""Sets the task_name of this ListLimitTaskResponseResult.
 
         限流任务名。
 
@@ -293,7 +293,7 @@ class ListLimitTaskResponseResult:
 
     @property
     def databases(self):
-        """Gets the databases of this ListLimitTaskResponseResult.
+        r"""Gets the databases of this ListLimitTaskResponseResult.
 
         CN节点数据库组,每个数据库字符串以逗号形式隔开。
 
@@ -304,7 +304,7 @@ class ListLimitTaskResponseResult:
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this ListLimitTaskResponseResult.
+        r"""Sets the databases of this ListLimitTaskResponseResult.
 
         CN节点数据库组,每个数据库字符串以逗号形式隔开。
 
@@ -315,7 +315,7 @@ class ListLimitTaskResponseResult:
 
     @property
     def sql_model(self):
-        """Gets the sql_model of this ListLimitTaskResponseResult.
+        r"""Gets the sql_model of this ListLimitTaskResponseResult.
 
         SQL模板,仅当任务类型为SQL_ID时，返回该值。
 
@@ -326,7 +326,7 @@ class ListLimitTaskResponseResult:
 
     @sql_model.setter
     def sql_model(self, sql_model):
-        """Sets the sql_model of this ListLimitTaskResponseResult.
+        r"""Sets the sql_model of this ListLimitTaskResponseResult.
 
         SQL模板,仅当任务类型为SQL_ID时，返回该值。
 
@@ -337,7 +337,7 @@ class ListLimitTaskResponseResult:
 
     @property
     def key_words(self):
-        """Gets the key_words of this ListLimitTaskResponseResult.
+        r"""Gets the key_words of this ListLimitTaskResponseResult.
 
         关键词，仅当任务类型为SQL_TYPE时，返回该值。
 
@@ -348,7 +348,7 @@ class ListLimitTaskResponseResult:
 
     @key_words.setter
     def key_words(self, key_words):
-        """Sets the key_words of this ListLimitTaskResponseResult.
+        r"""Sets the key_words of this ListLimitTaskResponseResult.
 
         关键词，仅当任务类型为SQL_TYPE时，返回该值。
 
@@ -359,7 +359,7 @@ class ListLimitTaskResponseResult:
 
     @property
     def status(self):
-        """Gets the status of this ListLimitTaskResponseResult.
+        r"""Gets the status of this ListLimitTaskResponseResult.
 
         限流任务状态，当前支持：CREATING，UPDATEING，DELETING，WAIT_EXCUTE，EXCUTING，TIME_OVER，DELETED，CREATE_FAILED，UPDATE_FAILED，DELETE_FAILED，EXCEPTION，NODE_SHUT_DOWN。
 
@@ -370,7 +370,7 @@ class ListLimitTaskResponseResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListLimitTaskResponseResult.
+        r"""Sets the status of this ListLimitTaskResponseResult.
 
         限流任务状态，当前支持：CREATING，UPDATEING，DELETING，WAIT_EXCUTE，EXCUTING，TIME_OVER，DELETED，CREATE_FAILED，UPDATE_FAILED，DELETE_FAILED，EXCEPTION，NODE_SHUT_DOWN。
 
@@ -381,7 +381,7 @@ class ListLimitTaskResponseResult:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListLimitTaskResponseResult.
+        r"""Gets the instance_id of this ListLimitTaskResponseResult.
 
         实例id。
 
@@ -392,7 +392,7 @@ class ListLimitTaskResponseResult:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListLimitTaskResponseResult.
+        r"""Sets the instance_id of this ListLimitTaskResponseResult.
 
         实例id。
 
@@ -403,7 +403,7 @@ class ListLimitTaskResponseResult:
 
     @property
     def rule_name(self):
-        """Gets the rule_name of this ListLimitTaskResponseResult.
+        r"""Gets the rule_name of this ListLimitTaskResponseResult.
 
         规则名。
 
@@ -414,7 +414,7 @@ class ListLimitTaskResponseResult:
 
     @rule_name.setter
     def rule_name(self, rule_name):
-        """Sets the rule_name of this ListLimitTaskResponseResult.
+        r"""Sets the rule_name of this ListLimitTaskResponseResult.
 
         规则名。
 
@@ -425,7 +425,7 @@ class ListLimitTaskResponseResult:
 
     @property
     def parallel_size(self):
-        """Gets the parallel_size of this ListLimitTaskResponseResult.
+        r"""Gets the parallel_size of this ListLimitTaskResponseResult.
 
         并发数。
 
@@ -436,7 +436,7 @@ class ListLimitTaskResponseResult:
 
     @parallel_size.setter
     def parallel_size(self, parallel_size):
-        """Sets the parallel_size of this ListLimitTaskResponseResult.
+        r"""Sets the parallel_size of this ListLimitTaskResponseResult.
 
         并发数。
 
@@ -447,7 +447,7 @@ class ListLimitTaskResponseResult:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListLimitTaskResponseResult.
+        r"""Gets the start_time of this ListLimitTaskResponseResult.
 
         限流任务开始时间,格式为yyyy-mm-ddThh:mm:ssZ，当前时间指UTC时间。
 
@@ -458,7 +458,7 @@ class ListLimitTaskResponseResult:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListLimitTaskResponseResult.
+        r"""Sets the start_time of this ListLimitTaskResponseResult.
 
         限流任务开始时间,格式为yyyy-mm-ddThh:mm:ssZ，当前时间指UTC时间。
 
@@ -469,7 +469,7 @@ class ListLimitTaskResponseResult:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListLimitTaskResponseResult.
+        r"""Gets the end_time of this ListLimitTaskResponseResult.
 
         限流任务结束时间,格式为yyyy-mm-ddThh:mm:ssZ，当前时间指UTC时间。
 
@@ -480,7 +480,7 @@ class ListLimitTaskResponseResult:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListLimitTaskResponseResult.
+        r"""Sets the end_time of this ListLimitTaskResponseResult.
 
         限流任务结束时间,格式为yyyy-mm-ddThh:mm:ssZ，当前时间指UTC时间。
 
@@ -491,7 +491,7 @@ class ListLimitTaskResponseResult:
 
     @property
     def cpu_utilization(self):
-        """Gets the cpu_utilization of this ListLimitTaskResponseResult.
+        r"""Gets the cpu_utilization of this ListLimitTaskResponseResult.
 
         cpu利用率，仅当任务类型为SESSION_ACTIVE_MAX_COUNT时，返回该值。
 
@@ -502,7 +502,7 @@ class ListLimitTaskResponseResult:
 
     @cpu_utilization.setter
     def cpu_utilization(self, cpu_utilization):
-        """Sets the cpu_utilization of this ListLimitTaskResponseResult.
+        r"""Sets the cpu_utilization of this ListLimitTaskResponseResult.
 
         cpu利用率，仅当任务类型为SESSION_ACTIVE_MAX_COUNT时，返回该值。
 
@@ -513,7 +513,7 @@ class ListLimitTaskResponseResult:
 
     @property
     def memory_utilization(self):
-        """Gets the memory_utilization of this ListLimitTaskResponseResult.
+        r"""Gets the memory_utilization of this ListLimitTaskResponseResult.
 
         内存利用率，仅当任务类型为SESSION_ACTIVE_MAX_COUNT时，返回该值。
 
@@ -524,7 +524,7 @@ class ListLimitTaskResponseResult:
 
     @memory_utilization.setter
     def memory_utilization(self, memory_utilization):
-        """Sets the memory_utilization of this ListLimitTaskResponseResult.
+        r"""Sets the memory_utilization of this ListLimitTaskResponseResult.
 
         内存利用率，仅当任务类型为SESSION_ACTIVE_MAX_COUNT时，返回该值。
 
@@ -535,7 +535,7 @@ class ListLimitTaskResponseResult:
 
     @property
     def created(self):
-        """Gets the created of this ListLimitTaskResponseResult.
+        r"""Gets the created of this ListLimitTaskResponseResult.
 
         创建时间为本地时间，格式为yyyy-mm-ddThh:mm:ssZ，当前时间指UTC时间。
 
@@ -546,7 +546,7 @@ class ListLimitTaskResponseResult:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this ListLimitTaskResponseResult.
+        r"""Sets the created of this ListLimitTaskResponseResult.
 
         创建时间为本地时间，格式为yyyy-mm-ddThh:mm:ssZ，当前时间指UTC时间。
 
@@ -557,7 +557,7 @@ class ListLimitTaskResponseResult:
 
     @property
     def updated(self):
-        """Gets the updated of this ListLimitTaskResponseResult.
+        r"""Gets the updated of this ListLimitTaskResponseResult.
 
         更新时间为本地时间，格式为yyyy-mm-ddThh:mm:ssZ，当前时间指UTC时间。
 
@@ -568,7 +568,7 @@ class ListLimitTaskResponseResult:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ListLimitTaskResponseResult.
+        r"""Sets the updated of this ListLimitTaskResponseResult.
 
         更新时间为本地时间，格式为yyyy-mm-ddThh:mm:ssZ，当前时间指UTC时间。
 
@@ -579,7 +579,7 @@ class ListLimitTaskResponseResult:
 
     @property
     def creator(self):
-        """Gets the creator of this ListLimitTaskResponseResult.
+        r"""Gets the creator of this ListLimitTaskResponseResult.
 
         创建者。
 
@@ -590,7 +590,7 @@ class ListLimitTaskResponseResult:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ListLimitTaskResponseResult.
+        r"""Sets the creator of this ListLimitTaskResponseResult.
 
         创建者。
 
@@ -601,7 +601,7 @@ class ListLimitTaskResponseResult:
 
     @property
     def modifier(self):
-        """Gets the modifier of this ListLimitTaskResponseResult.
+        r"""Gets the modifier of this ListLimitTaskResponseResult.
 
         更新者。
 
@@ -612,7 +612,7 @@ class ListLimitTaskResponseResult:
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this ListLimitTaskResponseResult.
+        r"""Sets the modifier of this ListLimitTaskResponseResult.
 
         更新者。
 
@@ -623,7 +623,7 @@ class ListLimitTaskResponseResult:
 
     @property
     def node_infos(self):
-        """Gets the node_infos of this ListLimitTaskResponseResult.
+        r"""Gets the node_infos of this ListLimitTaskResponseResult.
 
         CN节点信息列表。
 
@@ -634,7 +634,7 @@ class ListLimitTaskResponseResult:
 
     @node_infos.setter
     def node_infos(self, node_infos):
-        """Sets the node_infos of this ListLimitTaskResponseResult.
+        r"""Sets the node_infos of this ListLimitTaskResponseResult.
 
         CN节点信息列表。
 

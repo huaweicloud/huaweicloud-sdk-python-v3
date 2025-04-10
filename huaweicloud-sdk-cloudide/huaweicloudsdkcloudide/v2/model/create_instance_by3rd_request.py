@@ -27,7 +27,7 @@ class CreateInstanceBy3rdRequest:
     }
 
     def __init__(self, instance_label=None, body=None):
-        """CreateInstanceBy3rdRequest
+        r"""CreateInstanceBy3rdRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateInstanceBy3rdRequest:
 
     @property
     def instance_label(self):
-        """Gets the instance_label of this CreateInstanceBy3rdRequest.
+        r"""Gets the instance_label of this CreateInstanceBy3rdRequest.
 
         实例标签（不同的第三方需要和CodeArtsIDEOnline服务共同设定标签）。不传默认为classroom
 
@@ -61,7 +61,7 @@ class CreateInstanceBy3rdRequest:
 
     @instance_label.setter
     def instance_label(self, instance_label):
-        """Sets the instance_label of this CreateInstanceBy3rdRequest.
+        r"""Sets the instance_label of this CreateInstanceBy3rdRequest.
 
         实例标签（不同的第三方需要和CodeArtsIDEOnline服务共同设定标签）。不传默认为classroom
 
@@ -72,7 +72,7 @@ class CreateInstanceBy3rdRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateInstanceBy3rdRequest.
+        r"""Gets the body of this CreateInstanceBy3rdRequest.
 
         :return: The body of this CreateInstanceBy3rdRequest.
         :rtype: :class:`huaweicloudsdkcloudide.v2.InstanceEdgeParam`
@@ -81,7 +81,7 @@ class CreateInstanceBy3rdRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateInstanceBy3rdRequest.
+        r"""Sets the body of this CreateInstanceBy3rdRequest.
 
         :param body: The body of this CreateInstanceBy3rdRequest.
         :type body: :class:`huaweicloudsdkcloudide.v2.InstanceEdgeParam`

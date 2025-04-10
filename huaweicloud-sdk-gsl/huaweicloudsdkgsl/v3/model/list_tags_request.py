@@ -31,7 +31,7 @@ class ListTagsRequest:
     }
 
     def __init__(self, tag_name=None, limit=None, offset=None, status=None):
-        """ListTagsRequest
+        r"""ListTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListTagsRequest:
 
     @property
     def tag_name(self):
-        """Gets the tag_name of this ListTagsRequest.
+        r"""Gets the tag_name of this ListTagsRequest.
 
         标签名称
 
@@ -75,7 +75,7 @@ class ListTagsRequest:
 
     @tag_name.setter
     def tag_name(self, tag_name):
-        """Sets the tag_name of this ListTagsRequest.
+        r"""Sets the tag_name of this ListTagsRequest.
 
         标签名称
 
@@ -86,7 +86,7 @@ class ListTagsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTagsRequest.
+        r"""Gets the limit of this ListTagsRequest.
 
         分页查询时每页显示的记录数，默认值为10，取值范围为10-500的整数
 
@@ -97,7 +97,7 @@ class ListTagsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTagsRequest.
+        r"""Sets the limit of this ListTagsRequest.
 
         分页查询时每页显示的记录数，默认值为10，取值范围为10-500的整数
 
@@ -108,7 +108,7 @@ class ListTagsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTagsRequest.
+        r"""Gets the offset of this ListTagsRequest.
 
         分页查询时的页码数，默认值为1，取值范围为1-1000000的整数
 
@@ -119,7 +119,7 @@ class ListTagsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTagsRequest.
+        r"""Sets the offset of this ListTagsRequest.
 
         分页查询时的页码数，默认值为1，取值范围为1-1000000的整数
 
@@ -130,7 +130,7 @@ class ListTagsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListTagsRequest.
+        r"""Gets the status of this ListTagsRequest.
 
         标签状态，0未使用，1使用中。
 
@@ -141,7 +141,7 @@ class ListTagsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListTagsRequest.
+        r"""Sets the status of this ListTagsRequest.
 
         标签状态，0未使用，1使用中。
 

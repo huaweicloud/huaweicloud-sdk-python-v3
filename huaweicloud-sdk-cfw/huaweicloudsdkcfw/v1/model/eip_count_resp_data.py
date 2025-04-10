@@ -29,7 +29,7 @@ class EipCountRespData:
     }
 
     def __init__(self, eip_total=None, eip_protected=None, eip_protected_self=None):
-        """EipCountRespData
+        r"""EipCountRespData
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class EipCountRespData:
 
     @property
     def eip_total(self):
-        """Gets the eip_total of this EipCountRespData.
+        r"""Gets the eip_total of this EipCountRespData.
 
         总体EIP数
 
@@ -68,7 +68,7 @@ class EipCountRespData:
 
     @eip_total.setter
     def eip_total(self, eip_total):
-        """Sets the eip_total of this EipCountRespData.
+        r"""Sets the eip_total of this EipCountRespData.
 
         总体EIP数
 
@@ -79,7 +79,7 @@ class EipCountRespData:
 
     @property
     def eip_protected(self):
-        """Gets the eip_protected of this EipCountRespData.
+        r"""Gets the eip_protected of this EipCountRespData.
 
         该账号下所有墙防护EIP总数量
 
@@ -90,7 +90,7 @@ class EipCountRespData:
 
     @eip_protected.setter
     def eip_protected(self, eip_protected):
-        """Sets the eip_protected of this EipCountRespData.
+        r"""Sets the eip_protected of this EipCountRespData.
 
         该账号下所有墙防护EIP总数量
 
@@ -101,7 +101,7 @@ class EipCountRespData:
 
     @property
     def eip_protected_self(self):
-        """Gets the eip_protected_self of this EipCountRespData.
+        r"""Gets the eip_protected_self of this EipCountRespData.
 
         当前防火墙防护EIP数量
 
@@ -112,7 +112,7 @@ class EipCountRespData:
 
     @eip_protected_self.setter
     def eip_protected_self(self, eip_protected_self):
-        """Sets the eip_protected_self of this EipCountRespData.
+        r"""Sets the eip_protected_self of this EipCountRespData.
 
         当前防火墙防护EIP数量
 

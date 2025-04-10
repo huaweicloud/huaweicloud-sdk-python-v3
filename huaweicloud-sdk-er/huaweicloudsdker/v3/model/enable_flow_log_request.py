@@ -27,7 +27,7 @@ class EnableFlowLogRequest:
     }
 
     def __init__(self, er_id=None, flow_log_id=None):
-        """EnableFlowLogRequest
+        r"""EnableFlowLogRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class EnableFlowLogRequest:
 
     @property
     def er_id(self):
-        """Gets the er_id of this EnableFlowLogRequest.
+        r"""Gets the er_id of this EnableFlowLogRequest.
 
         企业路由器实例ID
 
@@ -59,7 +59,7 @@ class EnableFlowLogRequest:
 
     @er_id.setter
     def er_id(self, er_id):
-        """Sets the er_id of this EnableFlowLogRequest.
+        r"""Sets the er_id of this EnableFlowLogRequest.
 
         企业路由器实例ID
 
@@ -70,7 +70,7 @@ class EnableFlowLogRequest:
 
     @property
     def flow_log_id(self):
-        """Gets the flow_log_id of this EnableFlowLogRequest.
+        r"""Gets the flow_log_id of this EnableFlowLogRequest.
 
         流日志ID
 
@@ -81,7 +81,7 @@ class EnableFlowLogRequest:
 
     @flow_log_id.setter
     def flow_log_id(self, flow_log_id):
-        """Sets the flow_log_id of this EnableFlowLogRequest.
+        r"""Sets the flow_log_id of this EnableFlowLogRequest.
 
         流日志ID
 

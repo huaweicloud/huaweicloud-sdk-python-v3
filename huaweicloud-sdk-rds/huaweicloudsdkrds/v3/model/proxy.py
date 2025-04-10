@@ -49,7 +49,7 @@ class Proxy:
     }
 
     def __init__(self, pool_id=None, status=None, address=None, elb_vip=None, eip=None, port=None, pool_status=None, delay_threshold_in_kilobytes=None, cpu=None, mem=None, node_num=None, nodes=None, mode=None):
-        """Proxy
+        r"""Proxy
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class Proxy:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this Proxy.
+        r"""Gets the pool_id of this Proxy.
 
         Proxy实例ID。
 
@@ -125,7 +125,7 @@ class Proxy:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this Proxy.
+        r"""Sets the pool_id of this Proxy.
 
         Proxy实例ID。
 
@@ -136,7 +136,7 @@ class Proxy:
 
     @property
     def status(self):
-        """Gets the status of this Proxy.
+        r"""Gets the status of this Proxy.
 
         Proxy实例开启状态，取值范围如下。 - open：打开。 - closed：关闭。 - frozen：已冻结。 - opening：打开中。 - closing：关闭中。 - freezing：冻结中。 - unfreezing：解冻中。
 
@@ -147,7 +147,7 @@ class Proxy:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Proxy.
+        r"""Sets the status of this Proxy.
 
         Proxy实例开启状态，取值范围如下。 - open：打开。 - closed：关闭。 - frozen：已冻结。 - opening：打开中。 - closing：关闭中。 - freezing：冻结中。 - unfreezing：解冻中。
 
@@ -158,7 +158,7 @@ class Proxy:
 
     @property
     def address(self):
-        """Gets the address of this Proxy.
+        r"""Gets the address of this Proxy.
 
         Proxy读写分离地址。
 
@@ -169,7 +169,7 @@ class Proxy:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this Proxy.
+        r"""Sets the address of this Proxy.
 
         Proxy读写分离地址。
 
@@ -180,7 +180,7 @@ class Proxy:
 
     @property
     def elb_vip(self):
-        """Gets the elb_vip of this Proxy.
+        r"""Gets the elb_vip of this Proxy.
 
         elb模式的虚拟IP信息。
 
@@ -191,7 +191,7 @@ class Proxy:
 
     @elb_vip.setter
     def elb_vip(self, elb_vip):
-        """Sets the elb_vip of this Proxy.
+        r"""Sets the elb_vip of this Proxy.
 
         elb模式的虚拟IP信息。
 
@@ -202,7 +202,7 @@ class Proxy:
 
     @property
     def eip(self):
-        """Gets the eip of this Proxy.
+        r"""Gets the eip of this Proxy.
 
         弹性公网IP信息。
 
@@ -213,7 +213,7 @@ class Proxy:
 
     @eip.setter
     def eip(self, eip):
-        """Sets the eip of this Proxy.
+        r"""Sets the eip of this Proxy.
 
         弹性公网IP信息。
 
@@ -224,7 +224,7 @@ class Proxy:
 
     @property
     def port(self):
-        """Gets the port of this Proxy.
+        r"""Gets the port of this Proxy.
 
         Proxy端口信息。
 
@@ -235,7 +235,7 @@ class Proxy:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this Proxy.
+        r"""Sets the port of this Proxy.
 
         Proxy端口信息。
 
@@ -246,7 +246,7 @@ class Proxy:
 
     @property
     def pool_status(self):
-        """Gets the pool_status of this Proxy.
+        r"""Gets the pool_status of this Proxy.
 
         Proxy实例状态。 - abnormal：异常。 - normal：正常。 - creating：创建中。 - deleted：已删除。
 
@@ -257,7 +257,7 @@ class Proxy:
 
     @pool_status.setter
     def pool_status(self, pool_status):
-        """Sets the pool_status of this Proxy.
+        r"""Sets the pool_status of this Proxy.
 
         Proxy实例状态。 - abnormal：异常。 - normal：正常。 - creating：创建中。 - deleted：已删除。
 
@@ -268,7 +268,7 @@ class Proxy:
 
     @property
     def delay_threshold_in_kilobytes(self):
-        """Gets the delay_threshold_in_kilobytes of this Proxy.
+        r"""Gets the delay_threshold_in_kilobytes of this Proxy.
 
         延时阈值（单位：KB）。
 
@@ -279,7 +279,7 @@ class Proxy:
 
     @delay_threshold_in_kilobytes.setter
     def delay_threshold_in_kilobytes(self, delay_threshold_in_kilobytes):
-        """Sets the delay_threshold_in_kilobytes of this Proxy.
+        r"""Sets the delay_threshold_in_kilobytes of this Proxy.
 
         延时阈值（单位：KB）。
 
@@ -290,7 +290,7 @@ class Proxy:
 
     @property
     def cpu(self):
-        """Gets the cpu of this Proxy.
+        r"""Gets the cpu of this Proxy.
 
         Proxy实例规格的CPU数量。
 
@@ -301,7 +301,7 @@ class Proxy:
 
     @cpu.setter
     def cpu(self, cpu):
-        """Sets the cpu of this Proxy.
+        r"""Sets the cpu of this Proxy.
 
         Proxy实例规格的CPU数量。
 
@@ -312,7 +312,7 @@ class Proxy:
 
     @property
     def mem(self):
-        """Gets the mem of this Proxy.
+        r"""Gets the mem of this Proxy.
 
         Proxy实例规格的内存数量。
 
@@ -323,7 +323,7 @@ class Proxy:
 
     @mem.setter
     def mem(self, mem):
-        """Sets the mem of this Proxy.
+        r"""Sets the mem of this Proxy.
 
         Proxy实例规格的内存数量。
 
@@ -334,7 +334,7 @@ class Proxy:
 
     @property
     def node_num(self):
-        """Gets the node_num of this Proxy.
+        r"""Gets the node_num of this Proxy.
 
         Proxy节点个数。
 
@@ -345,7 +345,7 @@ class Proxy:
 
     @node_num.setter
     def node_num(self, node_num):
-        """Sets the node_num of this Proxy.
+        r"""Sets the node_num of this Proxy.
 
         Proxy节点个数。
 
@@ -356,7 +356,7 @@ class Proxy:
 
     @property
     def nodes(self):
-        """Gets the nodes of this Proxy.
+        r"""Gets the nodes of this Proxy.
 
         Proxy节点信息。
 
@@ -367,7 +367,7 @@ class Proxy:
 
     @nodes.setter
     def nodes(self, nodes):
-        """Sets the nodes of this Proxy.
+        r"""Sets the nodes of this Proxy.
 
         Proxy节点信息。
 
@@ -378,7 +378,7 @@ class Proxy:
 
     @property
     def mode(self):
-        """Gets the mode of this Proxy.
+        r"""Gets the mode of this Proxy.
 
         Proxy主备模式，取值范围：Ha。
 
@@ -389,7 +389,7 @@ class Proxy:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this Proxy.
+        r"""Sets the mode of this Proxy.
 
         Proxy主备模式，取值范围：Ha。
 

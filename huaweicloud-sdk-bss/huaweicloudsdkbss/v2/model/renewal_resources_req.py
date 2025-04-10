@@ -33,7 +33,7 @@ class RenewalResourcesReq:
     }
 
     def __init__(self, resource_ids=None, period_type=None, period_num=None, expire_policy=None, is_auto_pay=None):
-        """RenewalResourcesReq
+        r"""RenewalResourcesReq
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class RenewalResourcesReq:
 
     @property
     def resource_ids(self):
-        """Gets the resource_ids of this RenewalResourcesReq.
+        r"""Gets the resource_ids of this RenewalResourcesReq.
 
         资源ID列表。 只支持传入主资源ID，最多10个资源ID。 哪些资源是主资源请根据“查询客户包年/包月资源列表”接口响应参数中的“is_main_resource”来标识。
 
@@ -79,7 +79,7 @@ class RenewalResourcesReq:
 
     @resource_ids.setter
     def resource_ids(self, resource_ids):
-        """Sets the resource_ids of this RenewalResourcesReq.
+        r"""Sets the resource_ids of this RenewalResourcesReq.
 
         资源ID列表。 只支持传入主资源ID，最多10个资源ID。 哪些资源是主资源请根据“查询客户包年/包月资源列表”接口响应参数中的“is_main_resource”来标识。
 
@@ -90,7 +90,7 @@ class RenewalResourcesReq:
 
     @property
     def period_type(self):
-        """Gets the period_type of this RenewalResourcesReq.
+        r"""Gets the period_type of this RenewalResourcesReq.
 
         周期类型： 2：月3：年
 
@@ -101,7 +101,7 @@ class RenewalResourcesReq:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this RenewalResourcesReq.
+        r"""Sets the period_type of this RenewalResourcesReq.
 
         周期类型： 2：月3：年
 
@@ -112,7 +112,7 @@ class RenewalResourcesReq:
 
     @property
     def period_num(self):
-        """Gets the period_num of this RenewalResourcesReq.
+        r"""Gets the period_num of this RenewalResourcesReq.
 
         周期数目： 如果是月，目前支持1-11如果是年，目前支持1-3
 
@@ -123,7 +123,7 @@ class RenewalResourcesReq:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this RenewalResourcesReq.
+        r"""Sets the period_num of this RenewalResourcesReq.
 
         周期数目： 如果是月，目前支持1-11如果是年，目前支持1-3
 
@@ -134,7 +134,7 @@ class RenewalResourcesReq:
 
     @property
     def expire_policy(self):
-        """Gets the expire_policy of this RenewalResourcesReq.
+        r"""Gets the expire_policy of this RenewalResourcesReq.
 
         到期策略（字段已废弃，请勿使用该字段。此字段必填，需携带，但携带的枚举实际并不生效）： 0：进入宽限期/保留期1：转按需2：自动退订3：自动续订
 
@@ -145,7 +145,7 @@ class RenewalResourcesReq:
 
     @expire_policy.setter
     def expire_policy(self, expire_policy):
-        """Sets the expire_policy of this RenewalResourcesReq.
+        r"""Sets the expire_policy of this RenewalResourcesReq.
 
         到期策略（字段已废弃，请勿使用该字段。此字段必填，需携带，但携带的枚举实际并不生效）： 0：进入宽限期/保留期1：转按需2：自动退订3：自动续订
 
@@ -156,7 +156,7 @@ class RenewalResourcesReq:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this RenewalResourcesReq.
+        r"""Gets the is_auto_pay of this RenewalResourcesReq.
 
         是否自动支付。 0：否1：是 此参数不携带或携带值为null时，默认值为“0：否”，即不自动支付。
 
@@ -167,7 +167,7 @@ class RenewalResourcesReq:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this RenewalResourcesReq.
+        r"""Sets the is_auto_pay of this RenewalResourcesReq.
 
         是否自动支付。 0：否1：是 此参数不携带或携带值为null时，默认值为“0：否”，即不自动支付。
 

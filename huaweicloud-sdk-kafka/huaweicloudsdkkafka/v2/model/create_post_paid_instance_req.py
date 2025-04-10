@@ -85,7 +85,7 @@ class CreatePostPaidInstanceReq:
     }
 
     def __init__(self, name=None, description=None, engine=None, engine_version=None, specification=None, broker_num=None, storage_space=None, partition_num=None, access_user=None, password=None, vpc_id=None, security_group_id=None, subnet_id=None, available_zones=None, product_id=None, maintain_begin=None, maintain_end=None, enable_publicip=None, public_bandwidth=None, publicip_id=None, ssl_enable=None, kafka_security_protocol=None, sasl_enabled_mechanisms=None, retention_policy=None, disk_encrypted_enable=None, disk_encrypted_key=None, connector_enable=None, enable_auto_topic=None, storage_spec_code=None, enterprise_project_id=None, tags=None):
-        """CreatePostPaidInstanceReq
+        r"""CreatePostPaidInstanceReq
 
         The model defined in huaweicloud sdk
 
@@ -243,7 +243,7 @@ class CreatePostPaidInstanceReq:
 
     @property
     def name(self):
-        """Gets the name of this CreatePostPaidInstanceReq.
+        r"""Gets the name of this CreatePostPaidInstanceReq.
 
         实例名称。  由英文字符开头，只能由英文字母、数字、中划线、下划线组成，长度为4~64的字符。
 
@@ -254,7 +254,7 @@ class CreatePostPaidInstanceReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreatePostPaidInstanceReq.
+        r"""Sets the name of this CreatePostPaidInstanceReq.
 
         实例名称。  由英文字符开头，只能由英文字母、数字、中划线、下划线组成，长度为4~64的字符。
 
@@ -265,7 +265,7 @@ class CreatePostPaidInstanceReq:
 
     @property
     def description(self):
-        """Gets the description of this CreatePostPaidInstanceReq.
+        r"""Gets the description of this CreatePostPaidInstanceReq.
 
         实例的描述信息。  长度不超过1024的字符串。[且字符串不能包含\">\"与\"<\"，字符串首字符不能为\"=\",\"+\",\"-\",\"@\"的全角和半角字符。](tag:hcs,fcs)  > \\与\"在json报文中属于特殊字符，如果参数值中需要显示\\或者\"字符，请在字符前增加转义字符\\，比如\\\\或者\\\"。
 
@@ -276,7 +276,7 @@ class CreatePostPaidInstanceReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreatePostPaidInstanceReq.
+        r"""Sets the description of this CreatePostPaidInstanceReq.
 
         实例的描述信息。  长度不超过1024的字符串。[且字符串不能包含\">\"与\"<\"，字符串首字符不能为\"=\",\"+\",\"-\",\"@\"的全角和半角字符。](tag:hcs,fcs)  > \\与\"在json报文中属于特殊字符，如果参数值中需要显示\\或者\"字符，请在字符前增加转义字符\\，比如\\\\或者\\\"。
 
@@ -287,7 +287,7 @@ class CreatePostPaidInstanceReq:
 
     @property
     def engine(self):
-        """Gets the engine of this CreatePostPaidInstanceReq.
+        r"""Gets the engine of this CreatePostPaidInstanceReq.
 
         消息引擎。取值填写为：kafka。
 
@@ -298,7 +298,7 @@ class CreatePostPaidInstanceReq:
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this CreatePostPaidInstanceReq.
+        r"""Sets the engine of this CreatePostPaidInstanceReq.
 
         消息引擎。取值填写为：kafka。
 
@@ -309,7 +309,7 @@ class CreatePostPaidInstanceReq:
 
     @property
     def engine_version(self):
-        """Gets the engine_version of this CreatePostPaidInstanceReq.
+        r"""Gets the engine_version of this CreatePostPaidInstanceReq.
 
         消息引擎的版本。取值填写为：   - 1.1.0   [- 2.3.0](tag:ocb,hws_ocb,sbc,hk_sbc,cmcc,hws_eu,dt,ctc,g42,hk_g42,tm,hk_tm)   - 2.7   - 3.x
 
@@ -320,7 +320,7 @@ class CreatePostPaidInstanceReq:
 
     @engine_version.setter
     def engine_version(self, engine_version):
-        """Sets the engine_version of this CreatePostPaidInstanceReq.
+        r"""Sets the engine_version of this CreatePostPaidInstanceReq.
 
         消息引擎的版本。取值填写为：   - 1.1.0   [- 2.3.0](tag:ocb,hws_ocb,sbc,hk_sbc,cmcc,hws_eu,dt,ctc,g42,hk_g42,tm,hk_tm)   - 2.7   - 3.x
 
@@ -331,7 +331,7 @@ class CreatePostPaidInstanceReq:
 
     @property
     def specification(self):
-        """Gets the specification of this CreatePostPaidInstanceReq.
+        r"""Gets the specification of this CreatePostPaidInstanceReq.
 
          [新规格实例：Kafka实例业务TPS规格，取值范围：   - c6.2u4g.cluster   - c6.4u8g.cluster   - c6.8u16g.cluster   - c6.12u24g.cluster   - c6.16u32g.cluster  老规格实例：](tag:hws,hws_hk) Kafka实例的基准带宽，表示单位时间内传送的最大数据量，单位MB。取值范围：   - 100MB   - 300MB   - 600MB   - 1200MB  注：此参数无需设置，其取值实际是由产品ID（product_id）决定。
 
@@ -342,7 +342,7 @@ class CreatePostPaidInstanceReq:
 
     @specification.setter
     def specification(self, specification):
-        """Sets the specification of this CreatePostPaidInstanceReq.
+        r"""Sets the specification of this CreatePostPaidInstanceReq.
 
          [新规格实例：Kafka实例业务TPS规格，取值范围：   - c6.2u4g.cluster   - c6.4u8g.cluster   - c6.8u16g.cluster   - c6.12u24g.cluster   - c6.16u32g.cluster  老规格实例：](tag:hws,hws_hk) Kafka实例的基准带宽，表示单位时间内传送的最大数据量，单位MB。取值范围：   - 100MB   - 300MB   - 600MB   - 1200MB  注：此参数无需设置，其取值实际是由产品ID（product_id）决定。
 
@@ -353,7 +353,7 @@ class CreatePostPaidInstanceReq:
 
     @property
     def broker_num(self):
-        """Gets the broker_num of this CreatePostPaidInstanceReq.
+        r"""Gets the broker_num of this CreatePostPaidInstanceReq.
 
         代理个数。 [取值范围:  - 老规格实例此参数无需设置  - 新规格必须设置，取值范围：3 ~ 50。](tag:hws,hws_hk,g42,tm,hk_g42,hk_tm,ctc,dt,ocb,hws_ocb,sbc,hk_sbc) [此参数无需设置](tag:cmcc)
 
@@ -364,7 +364,7 @@ class CreatePostPaidInstanceReq:
 
     @broker_num.setter
     def broker_num(self, broker_num):
-        """Sets the broker_num of this CreatePostPaidInstanceReq.
+        r"""Sets the broker_num of this CreatePostPaidInstanceReq.
 
         代理个数。 [取值范围:  - 老规格实例此参数无需设置  - 新规格必须设置，取值范围：3 ~ 50。](tag:hws,hws_hk,g42,tm,hk_g42,hk_tm,ctc,dt,ocb,hws_ocb,sbc,hk_sbc) [此参数无需设置](tag:cmcc)
 
@@ -375,7 +375,7 @@ class CreatePostPaidInstanceReq:
 
     @property
     def storage_space(self):
-        """Gets the storage_space of this CreatePostPaidInstanceReq.
+        r"""Gets the storage_space of this CreatePostPaidInstanceReq.
 
         消息存储空间，单位GB。   - Kafka实例规格为100MB时，存储空间取值范围600GB ~ 90000GB。   - Kafka实例规格为300MB时，存储空间取值范围1200GB ~ 90000GB。   - Kafka实例规格为600MB时，存储空间取值范围2400GB ~ 90000GB。   - Kafka实例规格为1200MB，存储空间取值范围4800GB ~ 90000GB   [- Kafka实例规格为c6.2u4g.cluster时，存储空间取值范围300GB ~ 300000GB。   - Kafka实例规格为c6.4u8g.cluster时，存储空间取值范围300GB ~ 600000GB。   - Kafka实例规格为c6.8u16g.cluster时，存储空间取值范围300GB ~ 900000GB。   - Kafka实例规格为c6.12u24g.cluster时，存储空间取值范围300GB ~ 900000GB。   - Kafka实例规格为c6.16u32g.cluster时，存储空间取值范围300GB ~ 900000GB。](tag:hc,hk)
 
@@ -386,7 +386,7 @@ class CreatePostPaidInstanceReq:
 
     @storage_space.setter
     def storage_space(self, storage_space):
-        """Sets the storage_space of this CreatePostPaidInstanceReq.
+        r"""Sets the storage_space of this CreatePostPaidInstanceReq.
 
         消息存储空间，单位GB。   - Kafka实例规格为100MB时，存储空间取值范围600GB ~ 90000GB。   - Kafka实例规格为300MB时，存储空间取值范围1200GB ~ 90000GB。   - Kafka实例规格为600MB时，存储空间取值范围2400GB ~ 90000GB。   - Kafka实例规格为1200MB，存储空间取值范围4800GB ~ 90000GB   [- Kafka实例规格为c6.2u4g.cluster时，存储空间取值范围300GB ~ 300000GB。   - Kafka实例规格为c6.4u8g.cluster时，存储空间取值范围300GB ~ 600000GB。   - Kafka实例规格为c6.8u16g.cluster时，存储空间取值范围300GB ~ 900000GB。   - Kafka实例规格为c6.12u24g.cluster时，存储空间取值范围300GB ~ 900000GB。   - Kafka实例规格为c6.16u32g.cluster时，存储空间取值范围300GB ~ 900000GB。](tag:hc,hk)
 
@@ -397,7 +397,7 @@ class CreatePostPaidInstanceReq:
 
     @property
     def partition_num(self):
-        """Gets the partition_num of this CreatePostPaidInstanceReq.
+        r"""Gets the partition_num of this CreatePostPaidInstanceReq.
 
         Kafka实例的最大分区数量。   - 参数specification为100MB时，取值300   - 参数specification为300MB时，取值900   - 参数specification为600MB时，取值1800   - 参数specification为1200MB时，取值1800    [新规格实例此参数无需设置，每种规格对应的分区数上限参考：https://support.huaweicloud.com/productdesc-kafka/Kafka-specification.html](tag:hws)   [新规格实例此参数无需设置，每种规格对应的分区数上限参考：https://support.huaweicloud.com/intl/zh-cn/productdesc-kafka/Kafka-specification.html](tag:hws_hk)
 
@@ -408,7 +408,7 @@ class CreatePostPaidInstanceReq:
 
     @partition_num.setter
     def partition_num(self, partition_num):
-        """Sets the partition_num of this CreatePostPaidInstanceReq.
+        r"""Sets the partition_num of this CreatePostPaidInstanceReq.
 
         Kafka实例的最大分区数量。   - 参数specification为100MB时，取值300   - 参数specification为300MB时，取值900   - 参数specification为600MB时，取值1800   - 参数specification为1200MB时，取值1800    [新规格实例此参数无需设置，每种规格对应的分区数上限参考：https://support.huaweicloud.com/productdesc-kafka/Kafka-specification.html](tag:hws)   [新规格实例此参数无需设置，每种规格对应的分区数上限参考：https://support.huaweicloud.com/intl/zh-cn/productdesc-kafka/Kafka-specification.html](tag:hws_hk)
 
@@ -419,7 +419,7 @@ class CreatePostPaidInstanceReq:
 
     @property
     def access_user(self):
-        """Gets the access_user of this CreatePostPaidInstanceReq.
+        r"""Gets the access_user of this CreatePostPaidInstanceReq.
 
         当ssl_enable为true时，该参数必选，ssl_enable为false时，该参数无效。  认证用户名，只能由英文字母、数字、中划线组成，长度为4~64的字符。
 
@@ -430,7 +430,7 @@ class CreatePostPaidInstanceReq:
 
     @access_user.setter
     def access_user(self, access_user):
-        """Sets the access_user of this CreatePostPaidInstanceReq.
+        r"""Sets the access_user of this CreatePostPaidInstanceReq.
 
         当ssl_enable为true时，该参数必选，ssl_enable为false时，该参数无效。  认证用户名，只能由英文字母、数字、中划线组成，长度为4~64的字符。
 
@@ -441,7 +441,7 @@ class CreatePostPaidInstanceReq:
 
     @property
     def password(self):
-        """Gets the password of this CreatePostPaidInstanceReq.
+        r"""Gets the password of this CreatePostPaidInstanceReq.
 
         当ssl_enable为true时，该参数必选，ssl_enable为false时，该参数无效。  实例的认证密码。  复杂度要求： - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的三种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）和空格，并且不能以-开头
 
@@ -452,7 +452,7 @@ class CreatePostPaidInstanceReq:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this CreatePostPaidInstanceReq.
+        r"""Sets the password of this CreatePostPaidInstanceReq.
 
         当ssl_enable为true时，该参数必选，ssl_enable为false时，该参数无效。  实例的认证密码。  复杂度要求： - 输入长度为8到32位的字符串。 - 必须包含如下四种字符中的三种组合：   - 小写字母   - 大写字母   - 数字   - 特殊字符包括（`~!@#$%^&*()-_=+\\|[{}]:'\",<.>/?）和空格，并且不能以-开头
 
@@ -463,7 +463,7 @@ class CreatePostPaidInstanceReq:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CreatePostPaidInstanceReq.
+        r"""Gets the vpc_id of this CreatePostPaidInstanceReq.
 
         虚拟私有云ID。  获取方法如下：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。
 
@@ -474,7 +474,7 @@ class CreatePostPaidInstanceReq:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CreatePostPaidInstanceReq.
+        r"""Sets the vpc_id of this CreatePostPaidInstanceReq.
 
         虚拟私有云ID。  获取方法如下：登录虚拟私有云服务的控制台界面，在虚拟私有云的详情页面查找VPC ID。
 
@@ -485,7 +485,7 @@ class CreatePostPaidInstanceReq:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this CreatePostPaidInstanceReq.
+        r"""Gets the security_group_id of this CreatePostPaidInstanceReq.
 
         指定实例所属的安全组。  获取方法如下：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。
 
@@ -496,7 +496,7 @@ class CreatePostPaidInstanceReq:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this CreatePostPaidInstanceReq.
+        r"""Sets the security_group_id of this CreatePostPaidInstanceReq.
 
         指定实例所属的安全组。  获取方法如下：登录虚拟私有云服务的控制台界面，在安全组的详情页面查找安全组ID。
 
@@ -507,7 +507,7 @@ class CreatePostPaidInstanceReq:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this CreatePostPaidInstanceReq.
+        r"""Gets the subnet_id of this CreatePostPaidInstanceReq.
 
         子网信息。  获取方法如下：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。
 
@@ -518,7 +518,7 @@ class CreatePostPaidInstanceReq:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this CreatePostPaidInstanceReq.
+        r"""Sets the subnet_id of this CreatePostPaidInstanceReq.
 
         子网信息。  获取方法如下：登录虚拟私有云服务的控制台界面，单击VPC下的子网，进入子网详情页面，查找网络ID。
 
@@ -529,7 +529,7 @@ class CreatePostPaidInstanceReq:
 
     @property
     def available_zones(self):
-        """Gets the available_zones of this CreatePostPaidInstanceReq.
+        r"""Gets the available_zones of this CreatePostPaidInstanceReq.
 
         创建节点到指定且有资源的可用区ID。请参考[查询可用区信息](ListAvailableZones.xml)获取可用区ID。  该参数不能为空数组或者数组的值为空。 创建Kafka实例，支持节点部署在1个或3个及3个以上的可用区。在为节点指定可用区时，用逗号分隔开。
 
@@ -540,7 +540,7 @@ class CreatePostPaidInstanceReq:
 
     @available_zones.setter
     def available_zones(self, available_zones):
-        """Sets the available_zones of this CreatePostPaidInstanceReq.
+        r"""Sets the available_zones of this CreatePostPaidInstanceReq.
 
         创建节点到指定且有资源的可用区ID。请参考[查询可用区信息](ListAvailableZones.xml)获取可用区ID。  该参数不能为空数组或者数组的值为空。 创建Kafka实例，支持节点部署在1个或3个及3个以上的可用区。在为节点指定可用区时，用逗号分隔开。
 
@@ -551,7 +551,7 @@ class CreatePostPaidInstanceReq:
 
     @property
     def product_id(self):
-        """Gets the product_id of this CreatePostPaidInstanceReq.
+        r"""Gets the product_id of this CreatePostPaidInstanceReq.
 
         产品ID。  [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ctc,cmcc,hws_eu,g42,hk_g42,tm,hk_tm,ocb,hws_ocb,dt) [产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:hk_sbc,sbc) [创建kafka实例,支持的产品规格有: (product_id/specification/partition_num/storage_space)  00300-30308-0--0/100MB/300/600;  00300-30310-0--0/300MB/900/1200;  00300-30312-0--0/600MB/1800/2400;  00300-30314-0--0/1200MB/1800/4800](tag:dt)
 
@@ -562,7 +562,7 @@ class CreatePostPaidInstanceReq:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this CreatePostPaidInstanceReq.
+        r"""Sets the product_id of this CreatePostPaidInstanceReq.
 
         产品ID。  [产品ID可以从[查询产品规格列表](ListEngineProducts.xml)获取。](tag:hws,hws_hk,ctc,cmcc,hws_eu,g42,hk_g42,tm,hk_tm,ocb,hws_ocb,dt) [产品ID可以从[查询产品规格列表](ListProducts.xml)获取。](tag:hk_sbc,sbc) [创建kafka实例,支持的产品规格有: (product_id/specification/partition_num/storage_space)  00300-30308-0--0/100MB/300/600;  00300-30310-0--0/300MB/900/1200;  00300-30312-0--0/600MB/1800/2400;  00300-30314-0--0/1200MB/1800/4800](tag:dt)
 
@@ -573,7 +573,7 @@ class CreatePostPaidInstanceReq:
 
     @property
     def maintain_begin(self):
-        """Gets the maintain_begin of this CreatePostPaidInstanceReq.
+        r"""Gets the maintain_begin of this CreatePostPaidInstanceReq.
 
         维护时间窗开始时间，格式为HH:mm。
 
@@ -584,7 +584,7 @@ class CreatePostPaidInstanceReq:
 
     @maintain_begin.setter
     def maintain_begin(self, maintain_begin):
-        """Sets the maintain_begin of this CreatePostPaidInstanceReq.
+        r"""Sets the maintain_begin of this CreatePostPaidInstanceReq.
 
         维护时间窗开始时间，格式为HH:mm。
 
@@ -595,7 +595,7 @@ class CreatePostPaidInstanceReq:
 
     @property
     def maintain_end(self):
-        """Gets the maintain_end of this CreatePostPaidInstanceReq.
+        r"""Gets the maintain_end of this CreatePostPaidInstanceReq.
 
         维护时间窗结束时间，格式为HH:mm。
 
@@ -606,7 +606,7 @@ class CreatePostPaidInstanceReq:
 
     @maintain_end.setter
     def maintain_end(self, maintain_end):
-        """Sets the maintain_end of this CreatePostPaidInstanceReq.
+        r"""Sets the maintain_end of this CreatePostPaidInstanceReq.
 
         维护时间窗结束时间，格式为HH:mm。
 
@@ -617,7 +617,7 @@ class CreatePostPaidInstanceReq:
 
     @property
     def enable_publicip(self):
-        """Gets the enable_publicip of this CreatePostPaidInstanceReq.
+        r"""Gets the enable_publicip of this CreatePostPaidInstanceReq.
 
         是否开启公网访问功能。默认不开启公网。 - true：开启 - false：不开启
 
@@ -628,7 +628,7 @@ class CreatePostPaidInstanceReq:
 
     @enable_publicip.setter
     def enable_publicip(self, enable_publicip):
-        """Sets the enable_publicip of this CreatePostPaidInstanceReq.
+        r"""Sets the enable_publicip of this CreatePostPaidInstanceReq.
 
         是否开启公网访问功能。默认不开启公网。 - true：开启 - false：不开启
 
@@ -639,7 +639,7 @@ class CreatePostPaidInstanceReq:
 
     @property
     def public_bandwidth(self):
-        """Gets the public_bandwidth of this CreatePostPaidInstanceReq.
+        r"""Gets the public_bandwidth of this CreatePostPaidInstanceReq.
 
         表示公网带宽，单位是Mbit/s。   [取值范围：   - Kafka实例规格为100MB时，公网带宽取值范围3到900，且必须为实例节点个数的倍数。   - Kafka实例规格为300MB时，公网带宽取值范围3到900，且必须为实例节点个数的倍数。   - Kafka实例规格为600MB时，公网带宽取值范围4到1200，且必须为实例节点个数的倍数。   - Kafka实例规格为1200MB时，公网带宽取值范围8到2400，且必须为实例节点个数的倍数。](tag:hws,hws_hk,dt,ocb,hws_ocb,ctc,sbc,hk_sbc,cmcc,g42,tm,hk_g42,hk_tm)    [老规格实例取值范围：   - Kafka实例规格为100MB时，公网带宽取值范围3到900，且必须为实例节点个数的倍数。   - Kafka实例规格为300MB时，公网带宽取值范围3到900，且必须为实例节点个数的倍数。   - Kafka实例规格为600MB时，公网带宽取值范围4到1200，且必须为实例节点个数的倍数。   - Kafka实例规格为1200MB时，公网带宽取值范围8到2400，且必须为实例节点个数的倍数。    新规格实例取值范围：   - Kafka实例规格为c6.2u4g.cluster时，公网带宽取值范围3到250，且必须为实例节点个数的倍数。   - Kafka实例规格为c6.4u8g.cluster时，公网带宽取值范围3到500，且必须为实例节点个数的倍数。   - Kafka实例规格为c6.8u16g.cluster时，公网带宽取值范围4到1000，且必须为实例节点个数的倍数。   - Kafka实例规格为c6.12u24g.cluster时，公网带宽取值范围8到1500，且必须为实例节点个数的倍数。   -  Kafka实例规格为c6.16u32g.cluster时，公网带宽取值范围8到2000，且必须为实例节点个数的倍数。](tag:hc,hk)
 
@@ -650,7 +650,7 @@ class CreatePostPaidInstanceReq:
 
     @public_bandwidth.setter
     def public_bandwidth(self, public_bandwidth):
-        """Sets the public_bandwidth of this CreatePostPaidInstanceReq.
+        r"""Sets the public_bandwidth of this CreatePostPaidInstanceReq.
 
         表示公网带宽，单位是Mbit/s。   [取值范围：   - Kafka实例规格为100MB时，公网带宽取值范围3到900，且必须为实例节点个数的倍数。   - Kafka实例规格为300MB时，公网带宽取值范围3到900，且必须为实例节点个数的倍数。   - Kafka实例规格为600MB时，公网带宽取值范围4到1200，且必须为实例节点个数的倍数。   - Kafka实例规格为1200MB时，公网带宽取值范围8到2400，且必须为实例节点个数的倍数。](tag:hws,hws_hk,dt,ocb,hws_ocb,ctc,sbc,hk_sbc,cmcc,g42,tm,hk_g42,hk_tm)    [老规格实例取值范围：   - Kafka实例规格为100MB时，公网带宽取值范围3到900，且必须为实例节点个数的倍数。   - Kafka实例规格为300MB时，公网带宽取值范围3到900，且必须为实例节点个数的倍数。   - Kafka实例规格为600MB时，公网带宽取值范围4到1200，且必须为实例节点个数的倍数。   - Kafka实例规格为1200MB时，公网带宽取值范围8到2400，且必须为实例节点个数的倍数。    新规格实例取值范围：   - Kafka实例规格为c6.2u4g.cluster时，公网带宽取值范围3到250，且必须为实例节点个数的倍数。   - Kafka实例规格为c6.4u8g.cluster时，公网带宽取值范围3到500，且必须为实例节点个数的倍数。   - Kafka实例规格为c6.8u16g.cluster时，公网带宽取值范围4到1000，且必须为实例节点个数的倍数。   - Kafka实例规格为c6.12u24g.cluster时，公网带宽取值范围8到1500，且必须为实例节点个数的倍数。   -  Kafka实例规格为c6.16u32g.cluster时，公网带宽取值范围8到2000，且必须为实例节点个数的倍数。](tag:hc,hk)
 
@@ -661,7 +661,7 @@ class CreatePostPaidInstanceReq:
 
     @property
     def publicip_id(self):
-        """Gets the publicip_id of this CreatePostPaidInstanceReq.
+        r"""Gets the publicip_id of this CreatePostPaidInstanceReq.
 
         实例绑定的弹性IP地址的ID。  以英文逗号隔开多个弹性IP地址的ID。  如果开启了公网访问功能（即enable_publicip为true），该字段为必选。
 
@@ -672,7 +672,7 @@ class CreatePostPaidInstanceReq:
 
     @publicip_id.setter
     def publicip_id(self, publicip_id):
-        """Sets the publicip_id of this CreatePostPaidInstanceReq.
+        r"""Sets the publicip_id of this CreatePostPaidInstanceReq.
 
         实例绑定的弹性IP地址的ID。  以英文逗号隔开多个弹性IP地址的ID。  如果开启了公网访问功能（即enable_publicip为true），该字段为必选。
 
@@ -683,7 +683,7 @@ class CreatePostPaidInstanceReq:
 
     @property
     def ssl_enable(self):
-        """Gets the ssl_enable of this CreatePostPaidInstanceReq.
+        r"""Gets the ssl_enable of this CreatePostPaidInstanceReq.
 
         是否打开SSL加密访问。  实例创建后将不支持动态开启和关闭。  - true：打开SSL加密访问。 - false：不打开SSL加密访问。
 
@@ -694,7 +694,7 @@ class CreatePostPaidInstanceReq:
 
     @ssl_enable.setter
     def ssl_enable(self, ssl_enable):
-        """Sets the ssl_enable of this CreatePostPaidInstanceReq.
+        r"""Sets the ssl_enable of this CreatePostPaidInstanceReq.
 
         是否打开SSL加密访问。  实例创建后将不支持动态开启和关闭。  - true：打开SSL加密访问。 - false：不打开SSL加密访问。
 
@@ -705,7 +705,7 @@ class CreatePostPaidInstanceReq:
 
     @property
     def kafka_security_protocol(self):
-        """Gets the kafka_security_protocol of this CreatePostPaidInstanceReq.
+        r"""Gets the kafka_security_protocol of this CreatePostPaidInstanceReq.
 
         开启SASL后使用的安全协议，如果开启了SASL认证功能（即ssl_enable=true），该字段为必选。  若该字段值为空，默认开启SASL_SSL认证机制。  实例创建后将不支持动态开启和关闭。  - SASL_SSL: 采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持账号密码认证，性能更好，建议使用SCRAM-SHA-512机制。
 
@@ -716,7 +716,7 @@ class CreatePostPaidInstanceReq:
 
     @kafka_security_protocol.setter
     def kafka_security_protocol(self, kafka_security_protocol):
-        """Sets the kafka_security_protocol of this CreatePostPaidInstanceReq.
+        r"""Sets the kafka_security_protocol of this CreatePostPaidInstanceReq.
 
         开启SASL后使用的安全协议，如果开启了SASL认证功能（即ssl_enable=true），该字段为必选。  若该字段值为空，默认开启SASL_SSL认证机制。  实例创建后将不支持动态开启和关闭。  - SASL_SSL: 采用SSL证书进行加密传输，支持账号密码认证，安全性更高。 - SASL_PLAINTEXT: 明文传输，支持账号密码认证，性能更好，建议使用SCRAM-SHA-512机制。
 
@@ -727,7 +727,7 @@ class CreatePostPaidInstanceReq:
 
     @property
     def sasl_enabled_mechanisms(self):
-        """Gets the sasl_enabled_mechanisms of this CreatePostPaidInstanceReq.
+        r"""Gets the sasl_enabled_mechanisms of this CreatePostPaidInstanceReq.
 
         开启SASL后使用的认证机制，如果开启了SASL认证功能（即ssl_enable=true），该字段为必选。  若该字段值为空，默认开启PLAIN认证机制。  选择其一进行SASL认证即可，支持同时开启两种认证机制。 取值如下： - PLAIN: 简单的用户名密码校验。 - SCRAM-SHA-512: 用户凭证校验，安全性比PLAIN机制更高。
 
@@ -738,7 +738,7 @@ class CreatePostPaidInstanceReq:
 
     @sasl_enabled_mechanisms.setter
     def sasl_enabled_mechanisms(self, sasl_enabled_mechanisms):
-        """Sets the sasl_enabled_mechanisms of this CreatePostPaidInstanceReq.
+        r"""Sets the sasl_enabled_mechanisms of this CreatePostPaidInstanceReq.
 
         开启SASL后使用的认证机制，如果开启了SASL认证功能（即ssl_enable=true），该字段为必选。  若该字段值为空，默认开启PLAIN认证机制。  选择其一进行SASL认证即可，支持同时开启两种认证机制。 取值如下： - PLAIN: 简单的用户名密码校验。 - SCRAM-SHA-512: 用户凭证校验，安全性比PLAIN机制更高。
 
@@ -749,7 +749,7 @@ class CreatePostPaidInstanceReq:
 
     @property
     def retention_policy(self):
-        """Gets the retention_policy of this CreatePostPaidInstanceReq.
+        r"""Gets the retention_policy of this CreatePostPaidInstanceReq.
 
         磁盘的容量到达容量阈值后，对于消息的处理策略。  取值如下： - produce_reject：表示拒绝消息写入。 - time_base：表示自动删除最老消息。
 
@@ -760,7 +760,7 @@ class CreatePostPaidInstanceReq:
 
     @retention_policy.setter
     def retention_policy(self, retention_policy):
-        """Sets the retention_policy of this CreatePostPaidInstanceReq.
+        r"""Sets the retention_policy of this CreatePostPaidInstanceReq.
 
         磁盘的容量到达容量阈值后，对于消息的处理策略。  取值如下： - produce_reject：表示拒绝消息写入。 - time_base：表示自动删除最老消息。
 
@@ -771,7 +771,7 @@ class CreatePostPaidInstanceReq:
 
     @property
     def disk_encrypted_enable(self):
-        """Gets the disk_encrypted_enable of this CreatePostPaidInstanceReq.
+        r"""Gets the disk_encrypted_enable of this CreatePostPaidInstanceReq.
 
         是否开启磁盘加密。
 
@@ -782,7 +782,7 @@ class CreatePostPaidInstanceReq:
 
     @disk_encrypted_enable.setter
     def disk_encrypted_enable(self, disk_encrypted_enable):
-        """Sets the disk_encrypted_enable of this CreatePostPaidInstanceReq.
+        r"""Sets the disk_encrypted_enable of this CreatePostPaidInstanceReq.
 
         是否开启磁盘加密。
 
@@ -793,7 +793,7 @@ class CreatePostPaidInstanceReq:
 
     @property
     def disk_encrypted_key(self):
-        """Gets the disk_encrypted_key of this CreatePostPaidInstanceReq.
+        r"""Gets the disk_encrypted_key of this CreatePostPaidInstanceReq.
 
         磁盘加密key，未开启磁盘加密时为空
 
@@ -804,7 +804,7 @@ class CreatePostPaidInstanceReq:
 
     @disk_encrypted_key.setter
     def disk_encrypted_key(self, disk_encrypted_key):
-        """Sets the disk_encrypted_key of this CreatePostPaidInstanceReq.
+        r"""Sets the disk_encrypted_key of this CreatePostPaidInstanceReq.
 
         磁盘加密key，未开启磁盘加密时为空
 
@@ -815,7 +815,7 @@ class CreatePostPaidInstanceReq:
 
     @property
     def connector_enable(self):
-        """Gets the connector_enable of this CreatePostPaidInstanceReq.
+        r"""Gets the connector_enable of this CreatePostPaidInstanceReq.
 
         是否开启消息转储功能。  默认不开启消息转储。
 
@@ -826,7 +826,7 @@ class CreatePostPaidInstanceReq:
 
     @connector_enable.setter
     def connector_enable(self, connector_enable):
-        """Sets the connector_enable of this CreatePostPaidInstanceReq.
+        r"""Sets the connector_enable of this CreatePostPaidInstanceReq.
 
         是否开启消息转储功能。  默认不开启消息转储。
 
@@ -837,7 +837,7 @@ class CreatePostPaidInstanceReq:
 
     @property
     def enable_auto_topic(self):
-        """Gets the enable_auto_topic of this CreatePostPaidInstanceReq.
+        r"""Gets the enable_auto_topic of this CreatePostPaidInstanceReq.
 
         是否打开kafka自动创建topic功能。 - true：开启 - false：关闭  当您选择开启，表示生产或消费一个未创建的Topic时，会自动创建一个包含3个分区和3个副本的Topic。  默认是false关闭。
 
@@ -848,7 +848,7 @@ class CreatePostPaidInstanceReq:
 
     @enable_auto_topic.setter
     def enable_auto_topic(self, enable_auto_topic):
-        """Sets the enable_auto_topic of this CreatePostPaidInstanceReq.
+        r"""Sets the enable_auto_topic of this CreatePostPaidInstanceReq.
 
         是否打开kafka自动创建topic功能。 - true：开启 - false：关闭  当您选择开启，表示生产或消费一个未创建的Topic时，会自动创建一个包含3个分区和3个副本的Topic。  默认是false关闭。
 
@@ -859,7 +859,7 @@ class CreatePostPaidInstanceReq:
 
     @property
     def storage_spec_code(self):
-        """Gets the storage_spec_code of this CreatePostPaidInstanceReq.
+        r"""Gets the storage_spec_code of this CreatePostPaidInstanceReq.
 
         存储IO规格。 [新老规格的实例的存储IO规格不相同，创建实例请选择对应的存储IO规格。 新规格实例取值范围：   - dms.physical.storage.high.v2：使用高IO的磁盘类型。   - dms.physical.storage.ultra.v2：使用超高IO的磁盘类型。  老规格实例取值范围：](tag:hc,hk)   - 参数specification为100MB/300MB时，取值dms.physical.storage.high或者dms.physical.storage.ultra   - 参数specification为600MB/1200MB时，取值dms.physical.storage.ultra  如何选择磁盘类型请参考《云硬盘 [产品介绍](tag:hws,hws_hk,hws_eu,cmcc)[用户指南](tag:dt,g42,hk_g42,ctc,tm,hk_tm,sbc,ocb,hws_ocb)》的“磁盘类型及性能介绍”。
 
@@ -870,7 +870,7 @@ class CreatePostPaidInstanceReq:
 
     @storage_spec_code.setter
     def storage_spec_code(self, storage_spec_code):
-        """Sets the storage_spec_code of this CreatePostPaidInstanceReq.
+        r"""Sets the storage_spec_code of this CreatePostPaidInstanceReq.
 
         存储IO规格。 [新老规格的实例的存储IO规格不相同，创建实例请选择对应的存储IO规格。 新规格实例取值范围：   - dms.physical.storage.high.v2：使用高IO的磁盘类型。   - dms.physical.storage.ultra.v2：使用超高IO的磁盘类型。  老规格实例取值范围：](tag:hc,hk)   - 参数specification为100MB/300MB时，取值dms.physical.storage.high或者dms.physical.storage.ultra   - 参数specification为600MB/1200MB时，取值dms.physical.storage.ultra  如何选择磁盘类型请参考《云硬盘 [产品介绍](tag:hws,hws_hk,hws_eu,cmcc)[用户指南](tag:dt,g42,hk_g42,ctc,tm,hk_tm,sbc,ocb,hws_ocb)》的“磁盘类型及性能介绍”。
 
@@ -881,7 +881,7 @@ class CreatePostPaidInstanceReq:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreatePostPaidInstanceReq.
+        r"""Gets the enterprise_project_id of this CreatePostPaidInstanceReq.
 
         企业项目ID。若为企业项目账号，该参数必填。
 
@@ -892,7 +892,7 @@ class CreatePostPaidInstanceReq:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreatePostPaidInstanceReq.
+        r"""Sets the enterprise_project_id of this CreatePostPaidInstanceReq.
 
         企业项目ID。若为企业项目账号，该参数必填。
 
@@ -903,7 +903,7 @@ class CreatePostPaidInstanceReq:
 
     @property
     def tags(self):
-        """Gets the tags of this CreatePostPaidInstanceReq.
+        r"""Gets the tags of this CreatePostPaidInstanceReq.
 
         标签列表。
 
@@ -914,7 +914,7 @@ class CreatePostPaidInstanceReq:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreatePostPaidInstanceReq.
+        r"""Sets the tags of this CreatePostPaidInstanceReq.
 
         标签列表。
 

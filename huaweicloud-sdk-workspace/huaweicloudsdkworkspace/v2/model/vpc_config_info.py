@@ -31,7 +31,7 @@ class VpcConfigInfo:
     }
 
     def __init__(self, used_subnet_ids=None, vpc_id=None, subnet_ids=None, default_access_vpc=None):
-        """VpcConfigInfo
+        r"""VpcConfigInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class VpcConfigInfo:
 
     @property
     def used_subnet_ids(self):
-        """Gets the used_subnet_ids of this VpcConfigInfo.
+        r"""Gets the used_subnet_ids of this VpcConfigInfo.
 
         已使用的子网信息。
 
@@ -75,7 +75,7 @@ class VpcConfigInfo:
 
     @used_subnet_ids.setter
     def used_subnet_ids(self, used_subnet_ids):
-        """Sets the used_subnet_ids of this VpcConfigInfo.
+        r"""Sets the used_subnet_ids of this VpcConfigInfo.
 
         已使用的子网信息。
 
@@ -86,7 +86,7 @@ class VpcConfigInfo:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this VpcConfigInfo.
+        r"""Gets the vpc_id of this VpcConfigInfo.
 
         VPC ID
 
@@ -97,7 +97,7 @@ class VpcConfigInfo:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this VpcConfigInfo.
+        r"""Sets the vpc_id of this VpcConfigInfo.
 
         VPC ID
 
@@ -108,7 +108,7 @@ class VpcConfigInfo:
 
     @property
     def subnet_ids(self):
-        """Gets the subnet_ids of this VpcConfigInfo.
+        r"""Gets the subnet_ids of this VpcConfigInfo.
 
         子网ID列表
 
@@ -119,7 +119,7 @@ class VpcConfigInfo:
 
     @subnet_ids.setter
     def subnet_ids(self, subnet_ids):
-        """Sets the subnet_ids of this VpcConfigInfo.
+        r"""Sets the subnet_ids of this VpcConfigInfo.
 
         子网ID列表
 
@@ -130,7 +130,7 @@ class VpcConfigInfo:
 
     @property
     def default_access_vpc(self):
-        """Gets the default_access_vpc of this VpcConfigInfo.
+        r"""Gets the default_access_vpc of this VpcConfigInfo.
 
         是否为默认接入VPC
 
@@ -141,7 +141,7 @@ class VpcConfigInfo:
 
     @default_access_vpc.setter
     def default_access_vpc(self, default_access_vpc):
-        """Sets the default_access_vpc of this VpcConfigInfo.
+        r"""Sets the default_access_vpc of this VpcConfigInfo.
 
         是否为默认接入VPC
 

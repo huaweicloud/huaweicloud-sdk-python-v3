@@ -25,7 +25,7 @@ class UpdateServerNameRequestBody:
     }
 
     def __init__(self, server_name=None):
-        """UpdateServerNameRequestBody
+        r"""UpdateServerNameRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateServerNameRequestBody:
 
     @property
     def server_name(self):
-        """Gets the server_name of this UpdateServerNameRequestBody.
+        r"""Gets the server_name of this UpdateServerNameRequestBody.
 
         云手机服务器名称，必须为小写字母（a-z）、大写字母（A-Z）、数字（0-9）、中文字符、中划线-、下划线_，且不得超过60个字符。
 
@@ -53,7 +53,7 @@ class UpdateServerNameRequestBody:
 
     @server_name.setter
     def server_name(self, server_name):
-        """Sets the server_name of this UpdateServerNameRequestBody.
+        r"""Sets the server_name of this UpdateServerNameRequestBody.
 
         云手机服务器名称，必须为小写字母（a-z）、大写字母（A-Z）、数字（0-9）、中文字符、中划线-、下划线_，且不得超过60个字符。
 

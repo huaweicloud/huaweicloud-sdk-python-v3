@@ -27,7 +27,7 @@ class ListWorkspacesResultDataValue:
     }
 
     def __init__(self, total=None, records=None):
-        """ListWorkspacesResultDataValue
+        r"""ListWorkspacesResultDataValue
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListWorkspacesResultDataValue:
 
     @property
     def total(self):
-        """Gets the total of this ListWorkspacesResultDataValue.
+        r"""Gets the total of this ListWorkspacesResultDataValue.
 
         总量。
 
@@ -61,7 +61,7 @@ class ListWorkspacesResultDataValue:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListWorkspacesResultDataValue.
+        r"""Sets the total of this ListWorkspacesResultDataValue.
 
         总量。
 
@@ -72,7 +72,7 @@ class ListWorkspacesResultDataValue:
 
     @property
     def records(self):
-        """Gets the records of this ListWorkspacesResultDataValue.
+        r"""Gets the records of this ListWorkspacesResultDataValue.
 
         WorkspaceVO信息。
 
@@ -83,7 +83,7 @@ class ListWorkspacesResultDataValue:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this ListWorkspacesResultDataValue.
+        r"""Sets the records of this ListWorkspacesResultDataValue.
 
         WorkspaceVO信息。
 

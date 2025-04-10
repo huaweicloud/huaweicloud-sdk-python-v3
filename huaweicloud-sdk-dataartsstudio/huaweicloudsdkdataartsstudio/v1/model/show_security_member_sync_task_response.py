@@ -68,7 +68,7 @@ class ShowSecurityMemberSyncTaskResponse(SdkResponse):
     }
 
     def __init__(self, id=None, project_id=None, domain_id=None, instance_id=None, data_connection_workspace=None, cluster_type=None, data_connection_id=None, data_connection_name=None, cluster_id=None, cluster_name=None, schedule_start_hour=None, schedule_end_hour=None, schedule_period=None, schedule_interval=None, schedule_status=None, sync_status=None, sync_msg=None, sync_time=None, create_time=None, create_user=None, update_time=None, update_user=None):
-        """ShowSecurityMemberSyncTaskResponse
+        r"""ShowSecurityMemberSyncTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -191,7 +191,7 @@ class ShowSecurityMemberSyncTaskResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowSecurityMemberSyncTaskResponse.
+        r"""Gets the id of this ShowSecurityMemberSyncTaskResponse.
 
         用户同步任务id。
 
@@ -202,7 +202,7 @@ class ShowSecurityMemberSyncTaskResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowSecurityMemberSyncTaskResponse.
+        r"""Sets the id of this ShowSecurityMemberSyncTaskResponse.
 
         用户同步任务id。
 
@@ -213,7 +213,7 @@ class ShowSecurityMemberSyncTaskResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowSecurityMemberSyncTaskResponse.
+        r"""Gets the project_id of this ShowSecurityMemberSyncTaskResponse.
 
         项目ID。
 
@@ -224,7 +224,7 @@ class ShowSecurityMemberSyncTaskResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowSecurityMemberSyncTaskResponse.
+        r"""Sets the project_id of this ShowSecurityMemberSyncTaskResponse.
 
         项目ID。
 
@@ -235,7 +235,7 @@ class ShowSecurityMemberSyncTaskResponse(SdkResponse):
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ShowSecurityMemberSyncTaskResponse.
+        r"""Gets the domain_id of this ShowSecurityMemberSyncTaskResponse.
 
         租户ID。
 
@@ -246,7 +246,7 @@ class ShowSecurityMemberSyncTaskResponse(SdkResponse):
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ShowSecurityMemberSyncTaskResponse.
+        r"""Sets the domain_id of this ShowSecurityMemberSyncTaskResponse.
 
         租户ID。
 
@@ -257,7 +257,7 @@ class ShowSecurityMemberSyncTaskResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowSecurityMemberSyncTaskResponse.
+        r"""Gets the instance_id of this ShowSecurityMemberSyncTaskResponse.
 
         实例ID。
 
@@ -268,7 +268,7 @@ class ShowSecurityMemberSyncTaskResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowSecurityMemberSyncTaskResponse.
+        r"""Sets the instance_id of this ShowSecurityMemberSyncTaskResponse.
 
         实例ID。
 
@@ -279,7 +279,7 @@ class ShowSecurityMemberSyncTaskResponse(SdkResponse):
 
     @property
     def data_connection_workspace(self):
-        """Gets the data_connection_workspace of this ShowSecurityMemberSyncTaskResponse.
+        r"""Gets the data_connection_workspace of this ShowSecurityMemberSyncTaskResponse.
 
         数据连接工作空间ID。
 
@@ -290,7 +290,7 @@ class ShowSecurityMemberSyncTaskResponse(SdkResponse):
 
     @data_connection_workspace.setter
     def data_connection_workspace(self, data_connection_workspace):
-        """Sets the data_connection_workspace of this ShowSecurityMemberSyncTaskResponse.
+        r"""Sets the data_connection_workspace of this ShowSecurityMemberSyncTaskResponse.
 
         数据连接工作空间ID。
 
@@ -301,7 +301,7 @@ class ShowSecurityMemberSyncTaskResponse(SdkResponse):
 
     @property
     def cluster_type(self):
-        """Gets the cluster_type of this ShowSecurityMemberSyncTaskResponse.
+        r"""Gets the cluster_type of this ShowSecurityMemberSyncTaskResponse.
 
         集群类型 * MRS集群 * DWS集群
 
@@ -312,7 +312,7 @@ class ShowSecurityMemberSyncTaskResponse(SdkResponse):
 
     @cluster_type.setter
     def cluster_type(self, cluster_type):
-        """Sets the cluster_type of this ShowSecurityMemberSyncTaskResponse.
+        r"""Sets the cluster_type of this ShowSecurityMemberSyncTaskResponse.
 
         集群类型 * MRS集群 * DWS集群
 
@@ -323,7 +323,7 @@ class ShowSecurityMemberSyncTaskResponse(SdkResponse):
 
     @property
     def data_connection_id(self):
-        """Gets the data_connection_id of this ShowSecurityMemberSyncTaskResponse.
+        r"""Gets the data_connection_id of this ShowSecurityMemberSyncTaskResponse.
 
         数据连接id。
 
@@ -334,7 +334,7 @@ class ShowSecurityMemberSyncTaskResponse(SdkResponse):
 
     @data_connection_id.setter
     def data_connection_id(self, data_connection_id):
-        """Sets the data_connection_id of this ShowSecurityMemberSyncTaskResponse.
+        r"""Sets the data_connection_id of this ShowSecurityMemberSyncTaskResponse.
 
         数据连接id。
 
@@ -345,7 +345,7 @@ class ShowSecurityMemberSyncTaskResponse(SdkResponse):
 
     @property
     def data_connection_name(self):
-        """Gets the data_connection_name of this ShowSecurityMemberSyncTaskResponse.
+        r"""Gets the data_connection_name of this ShowSecurityMemberSyncTaskResponse.
 
         数据连接名称。
 
@@ -356,7 +356,7 @@ class ShowSecurityMemberSyncTaskResponse(SdkResponse):
 
     @data_connection_name.setter
     def data_connection_name(self, data_connection_name):
-        """Sets the data_connection_name of this ShowSecurityMemberSyncTaskResponse.
+        r"""Sets the data_connection_name of this ShowSecurityMemberSyncTaskResponse.
 
         数据连接名称。
 
@@ -367,7 +367,7 @@ class ShowSecurityMemberSyncTaskResponse(SdkResponse):
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowSecurityMemberSyncTaskResponse.
+        r"""Gets the cluster_id of this ShowSecurityMemberSyncTaskResponse.
 
         集群id。
 
@@ -378,7 +378,7 @@ class ShowSecurityMemberSyncTaskResponse(SdkResponse):
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowSecurityMemberSyncTaskResponse.
+        r"""Sets the cluster_id of this ShowSecurityMemberSyncTaskResponse.
 
         集群id。
 
@@ -389,7 +389,7 @@ class ShowSecurityMemberSyncTaskResponse(SdkResponse):
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this ShowSecurityMemberSyncTaskResponse.
+        r"""Gets the cluster_name of this ShowSecurityMemberSyncTaskResponse.
 
         集群名称。
 
@@ -400,7 +400,7 @@ class ShowSecurityMemberSyncTaskResponse(SdkResponse):
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this ShowSecurityMemberSyncTaskResponse.
+        r"""Sets the cluster_name of this ShowSecurityMemberSyncTaskResponse.
 
         集群名称。
 
@@ -411,7 +411,7 @@ class ShowSecurityMemberSyncTaskResponse(SdkResponse):
 
     @property
     def schedule_start_hour(self):
-        """Gets the schedule_start_hour of this ShowSecurityMemberSyncTaskResponse.
+        r"""Gets the schedule_start_hour of this ShowSecurityMemberSyncTaskResponse.
 
         调度开始时间, 单位为小时, 0~23。
 
@@ -422,7 +422,7 @@ class ShowSecurityMemberSyncTaskResponse(SdkResponse):
 
     @schedule_start_hour.setter
     def schedule_start_hour(self, schedule_start_hour):
-        """Sets the schedule_start_hour of this ShowSecurityMemberSyncTaskResponse.
+        r"""Sets the schedule_start_hour of this ShowSecurityMemberSyncTaskResponse.
 
         调度开始时间, 单位为小时, 0~23。
 
@@ -433,7 +433,7 @@ class ShowSecurityMemberSyncTaskResponse(SdkResponse):
 
     @property
     def schedule_end_hour(self):
-        """Gets the schedule_end_hour of this ShowSecurityMemberSyncTaskResponse.
+        r"""Gets the schedule_end_hour of this ShowSecurityMemberSyncTaskResponse.
 
         调度结束时间, 单位为小时, 0~23。
 
@@ -444,7 +444,7 @@ class ShowSecurityMemberSyncTaskResponse(SdkResponse):
 
     @schedule_end_hour.setter
     def schedule_end_hour(self, schedule_end_hour):
-        """Sets the schedule_end_hour of this ShowSecurityMemberSyncTaskResponse.
+        r"""Sets the schedule_end_hour of this ShowSecurityMemberSyncTaskResponse.
 
         调度结束时间, 单位为小时, 0~23。
 
@@ -455,7 +455,7 @@ class ShowSecurityMemberSyncTaskResponse(SdkResponse):
 
     @property
     def schedule_period(self):
-        """Gets the schedule_period of this ShowSecurityMemberSyncTaskResponse.
+        r"""Gets the schedule_period of this ShowSecurityMemberSyncTaskResponse.
 
         调度周期 * MINUTE  分钟为单位调度 * HOUR    小时为单位调度
 
@@ -466,7 +466,7 @@ class ShowSecurityMemberSyncTaskResponse(SdkResponse):
 
     @schedule_period.setter
     def schedule_period(self, schedule_period):
-        """Sets the schedule_period of this ShowSecurityMemberSyncTaskResponse.
+        r"""Sets the schedule_period of this ShowSecurityMemberSyncTaskResponse.
 
         调度周期 * MINUTE  分钟为单位调度 * HOUR    小时为单位调度
 
@@ -477,7 +477,7 @@ class ShowSecurityMemberSyncTaskResponse(SdkResponse):
 
     @property
     def schedule_interval(self):
-        """Gets the schedule_interval of this ShowSecurityMemberSyncTaskResponse.
+        r"""Gets the schedule_interval of this ShowSecurityMemberSyncTaskResponse.
 
         调度间隔。
 
@@ -488,7 +488,7 @@ class ShowSecurityMemberSyncTaskResponse(SdkResponse):
 
     @schedule_interval.setter
     def schedule_interval(self, schedule_interval):
-        """Sets the schedule_interval of this ShowSecurityMemberSyncTaskResponse.
+        r"""Sets the schedule_interval of this ShowSecurityMemberSyncTaskResponse.
 
         调度间隔。
 
@@ -499,7 +499,7 @@ class ShowSecurityMemberSyncTaskResponse(SdkResponse):
 
     @property
     def schedule_status(self):
-        """Gets the schedule_status of this ShowSecurityMemberSyncTaskResponse.
+        r"""Gets the schedule_status of this ShowSecurityMemberSyncTaskResponse.
 
         调度状态 * NOT_SCHEDULE  未启用任务调度 * SCHEDULING    任务调度中
 
@@ -510,7 +510,7 @@ class ShowSecurityMemberSyncTaskResponse(SdkResponse):
 
     @schedule_status.setter
     def schedule_status(self, schedule_status):
-        """Sets the schedule_status of this ShowSecurityMemberSyncTaskResponse.
+        r"""Sets the schedule_status of this ShowSecurityMemberSyncTaskResponse.
 
         调度状态 * NOT_SCHEDULE  未启用任务调度 * SCHEDULING    任务调度中
 
@@ -521,7 +521,7 @@ class ShowSecurityMemberSyncTaskResponse(SdkResponse):
 
     @property
     def sync_status(self):
-        """Gets the sync_status of this ShowSecurityMemberSyncTaskResponse.
+        r"""Gets the sync_status of this ShowSecurityMemberSyncTaskResponse.
 
         同步状态 * UNKNOWN 未知 * NOT_SYNC 未同步 * SYNCING 同步中 * SYNC_SUCCESS 同步成功 * SYNC_FAIL 同步失败
 
@@ -532,7 +532,7 @@ class ShowSecurityMemberSyncTaskResponse(SdkResponse):
 
     @sync_status.setter
     def sync_status(self, sync_status):
-        """Sets the sync_status of this ShowSecurityMemberSyncTaskResponse.
+        r"""Sets the sync_status of this ShowSecurityMemberSyncTaskResponse.
 
         同步状态 * UNKNOWN 未知 * NOT_SYNC 未同步 * SYNCING 同步中 * SYNC_SUCCESS 同步成功 * SYNC_FAIL 同步失败
 
@@ -543,7 +543,7 @@ class ShowSecurityMemberSyncTaskResponse(SdkResponse):
 
     @property
     def sync_msg(self):
-        """Gets the sync_msg of this ShowSecurityMemberSyncTaskResponse.
+        r"""Gets the sync_msg of this ShowSecurityMemberSyncTaskResponse.
 
         同步日志。
 
@@ -554,7 +554,7 @@ class ShowSecurityMemberSyncTaskResponse(SdkResponse):
 
     @sync_msg.setter
     def sync_msg(self, sync_msg):
-        """Sets the sync_msg of this ShowSecurityMemberSyncTaskResponse.
+        r"""Sets the sync_msg of this ShowSecurityMemberSyncTaskResponse.
 
         同步日志。
 
@@ -565,7 +565,7 @@ class ShowSecurityMemberSyncTaskResponse(SdkResponse):
 
     @property
     def sync_time(self):
-        """Gets the sync_time of this ShowSecurityMemberSyncTaskResponse.
+        r"""Gets the sync_time of this ShowSecurityMemberSyncTaskResponse.
 
         同步时间。
 
@@ -576,7 +576,7 @@ class ShowSecurityMemberSyncTaskResponse(SdkResponse):
 
     @sync_time.setter
     def sync_time(self, sync_time):
-        """Sets the sync_time of this ShowSecurityMemberSyncTaskResponse.
+        r"""Sets the sync_time of this ShowSecurityMemberSyncTaskResponse.
 
         同步时间。
 
@@ -587,7 +587,7 @@ class ShowSecurityMemberSyncTaskResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowSecurityMemberSyncTaskResponse.
+        r"""Gets the create_time of this ShowSecurityMemberSyncTaskResponse.
 
         创建时间。
 
@@ -598,7 +598,7 @@ class ShowSecurityMemberSyncTaskResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowSecurityMemberSyncTaskResponse.
+        r"""Sets the create_time of this ShowSecurityMemberSyncTaskResponse.
 
         创建时间。
 
@@ -609,7 +609,7 @@ class ShowSecurityMemberSyncTaskResponse(SdkResponse):
 
     @property
     def create_user(self):
-        """Gets the create_user of this ShowSecurityMemberSyncTaskResponse.
+        r"""Gets the create_user of this ShowSecurityMemberSyncTaskResponse.
 
         创建者。
 
@@ -620,7 +620,7 @@ class ShowSecurityMemberSyncTaskResponse(SdkResponse):
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this ShowSecurityMemberSyncTaskResponse.
+        r"""Sets the create_user of this ShowSecurityMemberSyncTaskResponse.
 
         创建者。
 
@@ -631,7 +631,7 @@ class ShowSecurityMemberSyncTaskResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowSecurityMemberSyncTaskResponse.
+        r"""Gets the update_time of this ShowSecurityMemberSyncTaskResponse.
 
         更新时间。
 
@@ -642,7 +642,7 @@ class ShowSecurityMemberSyncTaskResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowSecurityMemberSyncTaskResponse.
+        r"""Sets the update_time of this ShowSecurityMemberSyncTaskResponse.
 
         更新时间。
 
@@ -653,7 +653,7 @@ class ShowSecurityMemberSyncTaskResponse(SdkResponse):
 
     @property
     def update_user(self):
-        """Gets the update_user of this ShowSecurityMemberSyncTaskResponse.
+        r"""Gets the update_user of this ShowSecurityMemberSyncTaskResponse.
 
         更新者。
 
@@ -664,7 +664,7 @@ class ShowSecurityMemberSyncTaskResponse(SdkResponse):
 
     @update_user.setter
     def update_user(self, update_user):
-        """Sets the update_user of this ShowSecurityMemberSyncTaskResponse.
+        r"""Sets the update_user of this ShowSecurityMemberSyncTaskResponse.
 
         更新者。
 

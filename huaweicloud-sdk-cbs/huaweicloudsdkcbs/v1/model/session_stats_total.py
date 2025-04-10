@@ -31,7 +31,7 @@ class SessionStatsTotal:
     }
 
     def __init__(self, session_count=None, user_count=None, avg_request_count=None, avg_session_time=None):
-        """SessionStatsTotal
+        r"""SessionStatsTotal
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class SessionStatsTotal:
 
     @property
     def session_count(self):
-        """Gets the session_count of this SessionStatsTotal.
+        r"""Gets the session_count of this SessionStatsTotal.
 
         会话总数。
 
@@ -71,7 +71,7 @@ class SessionStatsTotal:
 
     @session_count.setter
     def session_count(self, session_count):
-        """Sets the session_count of this SessionStatsTotal.
+        r"""Sets the session_count of this SessionStatsTotal.
 
         会话总数。
 
@@ -82,7 +82,7 @@ class SessionStatsTotal:
 
     @property
     def user_count(self):
-        """Gets the user_count of this SessionStatsTotal.
+        r"""Gets the user_count of this SessionStatsTotal.
 
         独立用户个数。
 
@@ -93,7 +93,7 @@ class SessionStatsTotal:
 
     @user_count.setter
     def user_count(self, user_count):
-        """Sets the user_count of this SessionStatsTotal.
+        r"""Sets the user_count of this SessionStatsTotal.
 
         独立用户个数。
 
@@ -104,7 +104,7 @@ class SessionStatsTotal:
 
     @property
     def avg_request_count(self):
-        """Gets the avg_request_count of this SessionStatsTotal.
+        r"""Gets the avg_request_count of this SessionStatsTotal.
 
         平均会话轮数，保留小数点后三位。
 
@@ -115,7 +115,7 @@ class SessionStatsTotal:
 
     @avg_request_count.setter
     def avg_request_count(self, avg_request_count):
-        """Sets the avg_request_count of this SessionStatsTotal.
+        r"""Sets the avg_request_count of this SessionStatsTotal.
 
         平均会话轮数，保留小数点后三位。
 
@@ -126,7 +126,7 @@ class SessionStatsTotal:
 
     @property
     def avg_session_time(self):
-        """Gets the avg_session_time of this SessionStatsTotal.
+        r"""Gets the avg_session_time of this SessionStatsTotal.
 
         平均会话时长，保留小数点后三位。
 
@@ -137,7 +137,7 @@ class SessionStatsTotal:
 
     @avg_session_time.setter
     def avg_session_time(self, avg_session_time):
-        """Sets the avg_session_time of this SessionStatsTotal.
+        r"""Sets the avg_session_time of this SessionStatsTotal.
 
         平均会话时长，保留小数点后三位。
 

@@ -25,7 +25,7 @@ class ConfigurationResponseDataSpecPostStart:
     }
 
     def __init__(self, _exec=None):
-        """ConfigurationResponseDataSpecPostStart
+        r"""ConfigurationResponseDataSpecPostStart
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ConfigurationResponseDataSpecPostStart:
 
     @property
     def _exec(self):
-        """Gets the _exec of this ConfigurationResponseDataSpecPostStart.
+        r"""Gets the _exec of this ConfigurationResponseDataSpecPostStart.
 
         :return: The _exec of this ConfigurationResponseDataSpecPostStart.
         :rtype: :class:`huaweicloudsdkcae.v1.LifeCycleConfigurationExec`
@@ -52,7 +52,7 @@ class ConfigurationResponseDataSpecPostStart:
 
     @_exec.setter
     def _exec(self, _exec):
-        """Sets the _exec of this ConfigurationResponseDataSpecPostStart.
+        r"""Sets the _exec of this ConfigurationResponseDataSpecPostStart.
 
         :param _exec: The _exec of this ConfigurationResponseDataSpecPostStart.
         :type _exec: :class:`huaweicloudsdkcae.v1.LifeCycleConfigurationExec`

@@ -36,7 +36,7 @@ class ShowResourceResponse(SdkResponse):
     }
 
     def __init__(self, name=None, type=None, location=None, depend_files=None, desc=None, directory=None):
-        """ShowResourceResponse
+        r"""ShowResourceResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ShowResourceResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowResourceResponse.
+        r"""Gets the name of this ShowResourceResponse.
 
         :return: The name of this ShowResourceResponse.
         :rtype: str
@@ -88,7 +88,7 @@ class ShowResourceResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowResourceResponse.
+        r"""Sets the name of this ShowResourceResponse.
 
         :param name: The name of this ShowResourceResponse.
         :type name: str
@@ -97,7 +97,7 @@ class ShowResourceResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowResourceResponse.
+        r"""Gets the type of this ShowResourceResponse.
 
         :return: The type of this ShowResourceResponse.
         :rtype: str
@@ -106,7 +106,7 @@ class ShowResourceResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowResourceResponse.
+        r"""Sets the type of this ShowResourceResponse.
 
         :param type: The type of this ShowResourceResponse.
         :type type: str
@@ -115,7 +115,7 @@ class ShowResourceResponse(SdkResponse):
 
     @property
     def location(self):
-        """Gets the location of this ShowResourceResponse.
+        r"""Gets the location of this ShowResourceResponse.
 
         资源文件所在OBS路径
 
@@ -126,7 +126,7 @@ class ShowResourceResponse(SdkResponse):
 
     @location.setter
     def location(self, location):
-        """Sets the location of this ShowResourceResponse.
+        r"""Sets the location of this ShowResourceResponse.
 
         资源文件所在OBS路径
 
@@ -137,7 +137,7 @@ class ShowResourceResponse(SdkResponse):
 
     @property
     def depend_files(self):
-        """Gets the depend_files of this ShowResourceResponse.
+        r"""Gets the depend_files of this ShowResourceResponse.
 
         :return: The depend_files of this ShowResourceResponse.
         :rtype: list[str]
@@ -146,7 +146,7 @@ class ShowResourceResponse(SdkResponse):
 
     @depend_files.setter
     def depend_files(self, depend_files):
-        """Sets the depend_files of this ShowResourceResponse.
+        r"""Sets the depend_files of this ShowResourceResponse.
 
         :param depend_files: The depend_files of this ShowResourceResponse.
         :type depend_files: list[str]
@@ -155,7 +155,7 @@ class ShowResourceResponse(SdkResponse):
 
     @property
     def desc(self):
-        """Gets the desc of this ShowResourceResponse.
+        r"""Gets the desc of this ShowResourceResponse.
 
         :return: The desc of this ShowResourceResponse.
         :rtype: str
@@ -164,7 +164,7 @@ class ShowResourceResponse(SdkResponse):
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this ShowResourceResponse.
+        r"""Sets the desc of this ShowResourceResponse.
 
         :param desc: The desc of this ShowResourceResponse.
         :type desc: str
@@ -173,7 +173,7 @@ class ShowResourceResponse(SdkResponse):
 
     @property
     def directory(self):
-        """Gets the directory of this ShowResourceResponse.
+        r"""Gets the directory of this ShowResourceResponse.
 
         资源所在目录
 
@@ -184,7 +184,7 @@ class ShowResourceResponse(SdkResponse):
 
     @directory.setter
     def directory(self, directory):
-        """Sets the directory of this ShowResourceResponse.
+        r"""Sets the directory of this ShowResourceResponse.
 
         资源所在目录
 

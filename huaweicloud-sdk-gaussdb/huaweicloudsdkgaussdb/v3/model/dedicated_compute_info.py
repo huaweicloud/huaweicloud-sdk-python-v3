@@ -35,7 +35,7 @@ class DedicatedComputeInfo:
     }
 
     def __init__(self, vcpus_total=None, vcpus_used=None, ram_total=None, ram_used=None, spec_code=None, host_num=None):
-        """DedicatedComputeInfo
+        r"""DedicatedComputeInfo
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class DedicatedComputeInfo:
 
     @property
     def vcpus_total(self):
-        """Gets the vcpus_total of this DedicatedComputeInfo.
+        r"""Gets the vcpus_total of this DedicatedComputeInfo.
 
         专属资源池中cpu总数。
 
@@ -83,7 +83,7 @@ class DedicatedComputeInfo:
 
     @vcpus_total.setter
     def vcpus_total(self, vcpus_total):
-        """Sets the vcpus_total of this DedicatedComputeInfo.
+        r"""Sets the vcpus_total of this DedicatedComputeInfo.
 
         专属资源池中cpu总数。
 
@@ -94,7 +94,7 @@ class DedicatedComputeInfo:
 
     @property
     def vcpus_used(self):
-        """Gets the vcpus_used of this DedicatedComputeInfo.
+        r"""Gets the vcpus_used of this DedicatedComputeInfo.
 
         专属资源池已使用的cpu数。
 
@@ -105,7 +105,7 @@ class DedicatedComputeInfo:
 
     @vcpus_used.setter
     def vcpus_used(self, vcpus_used):
-        """Sets the vcpus_used of this DedicatedComputeInfo.
+        r"""Sets the vcpus_used of this DedicatedComputeInfo.
 
         专属资源池已使用的cpu数。
 
@@ -116,7 +116,7 @@ class DedicatedComputeInfo:
 
     @property
     def ram_total(self):
-        """Gets the ram_total of this DedicatedComputeInfo.
+        r"""Gets the ram_total of this DedicatedComputeInfo.
 
         专属资源池计算内存大小, 单位GB。
 
@@ -127,7 +127,7 @@ class DedicatedComputeInfo:
 
     @ram_total.setter
     def ram_total(self, ram_total):
-        """Sets the ram_total of this DedicatedComputeInfo.
+        r"""Sets the ram_total of this DedicatedComputeInfo.
 
         专属资源池计算内存大小, 单位GB。
 
@@ -138,7 +138,7 @@ class DedicatedComputeInfo:
 
     @property
     def ram_used(self):
-        """Gets the ram_used of this DedicatedComputeInfo.
+        r"""Gets the ram_used of this DedicatedComputeInfo.
 
         专属资源池已使用的计算内存大小，单位GB。
 
@@ -149,7 +149,7 @@ class DedicatedComputeInfo:
 
     @ram_used.setter
     def ram_used(self, ram_used):
-        """Sets the ram_used of this DedicatedComputeInfo.
+        r"""Sets the ram_used of this DedicatedComputeInfo.
 
         专属资源池已使用的计算内存大小，单位GB。
 
@@ -160,7 +160,7 @@ class DedicatedComputeInfo:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this DedicatedComputeInfo.
+        r"""Gets the spec_code of this DedicatedComputeInfo.
 
         专属资源池计算资源规格码。
 
@@ -171,7 +171,7 @@ class DedicatedComputeInfo:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this DedicatedComputeInfo.
+        r"""Sets the spec_code of this DedicatedComputeInfo.
 
         专属资源池计算资源规格码。
 
@@ -182,7 +182,7 @@ class DedicatedComputeInfo:
 
     @property
     def host_num(self):
-        """Gets the host_num of this DedicatedComputeInfo.
+        r"""Gets the host_num of this DedicatedComputeInfo.
 
         专属资源池计算主机数量。
 
@@ -193,7 +193,7 @@ class DedicatedComputeInfo:
 
     @host_num.setter
     def host_num(self, host_num):
-        """Sets the host_num of this DedicatedComputeInfo.
+        r"""Sets the host_num of this DedicatedComputeInfo.
 
         专属资源池计算主机数量。
 

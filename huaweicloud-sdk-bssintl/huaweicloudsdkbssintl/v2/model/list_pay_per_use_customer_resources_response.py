@@ -28,7 +28,7 @@ class ListPayPerUseCustomerResourcesResponse(SdkResponse):
     }
 
     def __init__(self, data=None, total_count=None):
-        """ListPayPerUseCustomerResourcesResponse
+        r"""ListPayPerUseCustomerResourcesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListPayPerUseCustomerResourcesResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListPayPerUseCustomerResourcesResponse.
+        r"""Gets the data of this ListPayPerUseCustomerResourcesResponse.
 
         资源列表。 具体请参见表2。
 
@@ -62,7 +62,7 @@ class ListPayPerUseCustomerResourcesResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListPayPerUseCustomerResourcesResponse.
+        r"""Sets the data of this ListPayPerUseCustomerResourcesResponse.
 
         资源列表。 具体请参见表2。
 
@@ -73,7 +73,7 @@ class ListPayPerUseCustomerResourcesResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListPayPerUseCustomerResourcesResponse.
+        r"""Gets the total_count of this ListPayPerUseCustomerResourcesResponse.
 
         总记录数。
 
@@ -84,7 +84,7 @@ class ListPayPerUseCustomerResourcesResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListPayPerUseCustomerResourcesResponse.
+        r"""Sets the total_count of this ListPayPerUseCustomerResourcesResponse.
 
         总记录数。
 

@@ -29,7 +29,7 @@ class DataClassificationGroupUpdateDTO:
     }
 
     def __init__(self, name=None, rule_ids=None, description=None):
-        """DataClassificationGroupUpdateDTO
+        r"""DataClassificationGroupUpdateDTO
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DataClassificationGroupUpdateDTO:
 
     @property
     def name(self):
-        """Gets the name of this DataClassificationGroupUpdateDTO.
+        r"""Gets the name of this DataClassificationGroupUpdateDTO.
 
         规则名称
 
@@ -66,7 +66,7 @@ class DataClassificationGroupUpdateDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DataClassificationGroupUpdateDTO.
+        r"""Sets the name of this DataClassificationGroupUpdateDTO.
 
         规则名称
 
@@ -77,7 +77,7 @@ class DataClassificationGroupUpdateDTO:
 
     @property
     def rule_ids(self):
-        """Gets the rule_ids of this DataClassificationGroupUpdateDTO.
+        r"""Gets the rule_ids of this DataClassificationGroupUpdateDTO.
 
         规则id列表
 
@@ -88,7 +88,7 @@ class DataClassificationGroupUpdateDTO:
 
     @rule_ids.setter
     def rule_ids(self, rule_ids):
-        """Sets the rule_ids of this DataClassificationGroupUpdateDTO.
+        r"""Sets the rule_ids of this DataClassificationGroupUpdateDTO.
 
         规则id列表
 
@@ -99,7 +99,7 @@ class DataClassificationGroupUpdateDTO:
 
     @property
     def description(self):
-        """Gets the description of this DataClassificationGroupUpdateDTO.
+        r"""Gets the description of this DataClassificationGroupUpdateDTO.
 
         规则组描述
 
@@ -110,7 +110,7 @@ class DataClassificationGroupUpdateDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DataClassificationGroupUpdateDTO.
+        r"""Sets the description of this DataClassificationGroupUpdateDTO.
 
         规则组描述
 

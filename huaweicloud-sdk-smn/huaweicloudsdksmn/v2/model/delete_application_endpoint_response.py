@@ -26,7 +26,7 @@ class DeleteApplicationEndpointResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None):
-        """DeleteApplicationEndpointResponse
+        r"""DeleteApplicationEndpointResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteApplicationEndpointResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this DeleteApplicationEndpointResponse.
+        r"""Gets the request_id of this DeleteApplicationEndpointResponse.
 
         请求的唯一标识ID。
 
@@ -55,7 +55,7 @@ class DeleteApplicationEndpointResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this DeleteApplicationEndpointResponse.
+        r"""Sets the request_id of this DeleteApplicationEndpointResponse.
 
         请求的唯一标识ID。
 

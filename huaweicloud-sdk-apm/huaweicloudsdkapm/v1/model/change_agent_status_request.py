@@ -27,7 +27,7 @@ class ChangeAgentStatusRequest:
     }
 
     def __init__(self, x_business_id=None, body=None):
-        """ChangeAgentStatusRequest
+        r"""ChangeAgentStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ChangeAgentStatusRequest:
 
     @property
     def x_business_id(self):
-        """Gets the x_business_id of this ChangeAgentStatusRequest.
+        r"""Gets the x_business_id of this ChangeAgentStatusRequest.
 
         应用id。
 
@@ -60,7 +60,7 @@ class ChangeAgentStatusRequest:
 
     @x_business_id.setter
     def x_business_id(self, x_business_id):
-        """Sets the x_business_id of this ChangeAgentStatusRequest.
+        r"""Sets the x_business_id of this ChangeAgentStatusRequest.
 
         应用id。
 
@@ -71,7 +71,7 @@ class ChangeAgentStatusRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeAgentStatusRequest.
+        r"""Gets the body of this ChangeAgentStatusRequest.
 
         :return: The body of this ChangeAgentStatusRequest.
         :rtype: :class:`huaweicloudsdkapm.v1.AgentStatusChangeParam`
@@ -80,7 +80,7 @@ class ChangeAgentStatusRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeAgentStatusRequest.
+        r"""Sets the body of this ChangeAgentStatusRequest.
 
         :param body: The body of this ChangeAgentStatusRequest.
         :type body: :class:`huaweicloudsdkapm.v1.AgentStatusChangeParam`

@@ -30,7 +30,7 @@ class ListHpcCacheTasksResponse(SdkResponse):
     }
 
     def __init__(self, tasks=None, count=None, x_request_id=None):
-        """ListHpcCacheTasksResponse
+        r"""ListHpcCacheTasksResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListHpcCacheTasksResponse(SdkResponse):
 
     @property
     def tasks(self):
-        """Gets the tasks of this ListHpcCacheTasksResponse.
+        r"""Gets the tasks of this ListHpcCacheTasksResponse.
 
         任务详情
 
@@ -69,7 +69,7 @@ class ListHpcCacheTasksResponse(SdkResponse):
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this ListHpcCacheTasksResponse.
+        r"""Sets the tasks of this ListHpcCacheTasksResponse.
 
         任务详情
 
@@ -80,7 +80,7 @@ class ListHpcCacheTasksResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListHpcCacheTasksResponse.
+        r"""Gets the count of this ListHpcCacheTasksResponse.
 
         任务数量
 
@@ -91,7 +91,7 @@ class ListHpcCacheTasksResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListHpcCacheTasksResponse.
+        r"""Sets the count of this ListHpcCacheTasksResponse.
 
         任务数量
 
@@ -102,7 +102,7 @@ class ListHpcCacheTasksResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListHpcCacheTasksResponse.
+        r"""Gets the x_request_id of this ListHpcCacheTasksResponse.
 
         :return: The x_request_id of this ListHpcCacheTasksResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListHpcCacheTasksResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListHpcCacheTasksResponse.
+        r"""Sets the x_request_id of this ListHpcCacheTasksResponse.
 
         :param x_request_id: The x_request_id of this ListHpcCacheTasksResponse.
         :type x_request_id: str

@@ -27,7 +27,7 @@ class BlackWhiteListId:
     }
 
     def __init__(self, id=None, name=None):
-        """BlackWhiteListId
+        r"""BlackWhiteListId
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BlackWhiteListId:
 
     @property
     def id(self):
-        """Gets the id of this BlackWhiteListId.
+        r"""Gets the id of this BlackWhiteListId.
 
         黑白名单id
 
@@ -61,7 +61,7 @@ class BlackWhiteListId:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BlackWhiteListId.
+        r"""Sets the id of this BlackWhiteListId.
 
         黑白名单id
 
@@ -72,7 +72,7 @@ class BlackWhiteListId:
 
     @property
     def name(self):
-        """Gets the name of this BlackWhiteListId.
+        r"""Gets the name of this BlackWhiteListId.
 
         黑白名单名称，为黑白名单的地址
 
@@ -83,7 +83,7 @@ class BlackWhiteListId:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BlackWhiteListId.
+        r"""Sets the name of this BlackWhiteListId.
 
         黑白名单名称，为黑白名单的地址
 

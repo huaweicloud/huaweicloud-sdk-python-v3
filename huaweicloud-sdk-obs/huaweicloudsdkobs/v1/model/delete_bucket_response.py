@@ -38,7 +38,7 @@ class DeleteBucketResponse(SdkResponse):
     }
 
     def __init__(self, x_obs_id_2=None, x_obs_request_id=None, e_tag=None, connection=None, content_length=None, date=None):
-        """DeleteBucketResponse
+        r"""DeleteBucketResponse
 
         The model defined in huaweicloud sdk
 
@@ -81,7 +81,7 @@ class DeleteBucketResponse(SdkResponse):
 
     @property
     def x_obs_id_2(self):
-        """Gets the x_obs_id_2 of this DeleteBucketResponse.
+        r"""Gets the x_obs_id_2 of this DeleteBucketResponse.
 
         :return: The x_obs_id_2 of this DeleteBucketResponse.
         :rtype: str
@@ -90,7 +90,7 @@ class DeleteBucketResponse(SdkResponse):
 
     @x_obs_id_2.setter
     def x_obs_id_2(self, x_obs_id_2):
-        """Sets the x_obs_id_2 of this DeleteBucketResponse.
+        r"""Sets the x_obs_id_2 of this DeleteBucketResponse.
 
         :param x_obs_id_2: The x_obs_id_2 of this DeleteBucketResponse.
         :type x_obs_id_2: str
@@ -99,7 +99,7 @@ class DeleteBucketResponse(SdkResponse):
 
     @property
     def x_obs_request_id(self):
-        """Gets the x_obs_request_id of this DeleteBucketResponse.
+        r"""Gets the x_obs_request_id of this DeleteBucketResponse.
 
         :return: The x_obs_request_id of this DeleteBucketResponse.
         :rtype: str
@@ -108,7 +108,7 @@ class DeleteBucketResponse(SdkResponse):
 
     @x_obs_request_id.setter
     def x_obs_request_id(self, x_obs_request_id):
-        """Sets the x_obs_request_id of this DeleteBucketResponse.
+        r"""Sets the x_obs_request_id of this DeleteBucketResponse.
 
         :param x_obs_request_id: The x_obs_request_id of this DeleteBucketResponse.
         :type x_obs_request_id: str
@@ -117,7 +117,7 @@ class DeleteBucketResponse(SdkResponse):
 
     @property
     def e_tag(self):
-        """Gets the e_tag of this DeleteBucketResponse.
+        r"""Gets the e_tag of this DeleteBucketResponse.
 
         :return: The e_tag of this DeleteBucketResponse.
         :rtype: str
@@ -126,7 +126,7 @@ class DeleteBucketResponse(SdkResponse):
 
     @e_tag.setter
     def e_tag(self, e_tag):
-        """Sets the e_tag of this DeleteBucketResponse.
+        r"""Sets the e_tag of this DeleteBucketResponse.
 
         :param e_tag: The e_tag of this DeleteBucketResponse.
         :type e_tag: str
@@ -135,7 +135,7 @@ class DeleteBucketResponse(SdkResponse):
 
     @property
     def connection(self):
-        """Gets the connection of this DeleteBucketResponse.
+        r"""Gets the connection of this DeleteBucketResponse.
 
         :return: The connection of this DeleteBucketResponse.
         :rtype: str
@@ -144,7 +144,7 @@ class DeleteBucketResponse(SdkResponse):
 
     @connection.setter
     def connection(self, connection):
-        """Sets the connection of this DeleteBucketResponse.
+        r"""Sets the connection of this DeleteBucketResponse.
 
         :param connection: The connection of this DeleteBucketResponse.
         :type connection: str
@@ -153,7 +153,7 @@ class DeleteBucketResponse(SdkResponse):
 
     @property
     def content_length(self):
-        """Gets the content_length of this DeleteBucketResponse.
+        r"""Gets the content_length of this DeleteBucketResponse.
 
         :return: The content_length of this DeleteBucketResponse.
         :rtype: str
@@ -162,7 +162,7 @@ class DeleteBucketResponse(SdkResponse):
 
     @content_length.setter
     def content_length(self, content_length):
-        """Sets the content_length of this DeleteBucketResponse.
+        r"""Sets the content_length of this DeleteBucketResponse.
 
         :param content_length: The content_length of this DeleteBucketResponse.
         :type content_length: str
@@ -171,7 +171,7 @@ class DeleteBucketResponse(SdkResponse):
 
     @property
     def date(self):
-        """Gets the date of this DeleteBucketResponse.
+        r"""Gets the date of this DeleteBucketResponse.
 
         :return: The date of this DeleteBucketResponse.
         :rtype: str
@@ -180,7 +180,7 @@ class DeleteBucketResponse(SdkResponse):
 
     @date.setter
     def date(self, date):
-        """Sets the date of this DeleteBucketResponse.
+        r"""Sets the date of this DeleteBucketResponse.
 
         :param date: The date of this DeleteBucketResponse.
         :type date: str

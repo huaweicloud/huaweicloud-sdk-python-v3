@@ -26,7 +26,7 @@ class UpdateAuditLogResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """UpdateAuditLogResponse
+        r"""UpdateAuditLogResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateAuditLogResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this UpdateAuditLogResponse.
+        r"""Gets the result of this UpdateAuditLogResponse.
 
         开启/关闭全量SQL操作结果。
 
@@ -55,7 +55,7 @@ class UpdateAuditLogResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this UpdateAuditLogResponse.
+        r"""Sets the result of this UpdateAuditLogResponse.
 
         开启/关闭全量SQL操作结果。
 

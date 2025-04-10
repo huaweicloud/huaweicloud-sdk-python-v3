@@ -29,7 +29,7 @@ class RecordObsFileAddr:
     }
 
     def __init__(self, bucket=None, location=None, object=None):
-        """RecordObsFileAddr
+        r"""RecordObsFileAddr
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class RecordObsFileAddr:
 
     @property
     def bucket(self):
-        """Gets the bucket of this RecordObsFileAddr.
+        r"""Gets the bucket of this RecordObsFileAddr.
 
         OBS的bucket名称
 
@@ -65,7 +65,7 @@ class RecordObsFileAddr:
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this RecordObsFileAddr.
+        r"""Sets the bucket of this RecordObsFileAddr.
 
         OBS的bucket名称
 
@@ -76,7 +76,7 @@ class RecordObsFileAddr:
 
     @property
     def location(self):
-        """Gets the location of this RecordObsFileAddr.
+        r"""Gets the location of this RecordObsFileAddr.
 
         OBS Bucket所在RegionID
 
@@ -87,7 +87,7 @@ class RecordObsFileAddr:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this RecordObsFileAddr.
+        r"""Sets the location of this RecordObsFileAddr.
 
         OBS Bucket所在RegionID
 
@@ -98,7 +98,7 @@ class RecordObsFileAddr:
 
     @property
     def object(self):
-        """Gets the object of this RecordObsFileAddr.
+        r"""Gets the object of this RecordObsFileAddr.
 
         OBS对象路径，遵守OBS Object定义。如果为空则保存到根目录
 
@@ -109,7 +109,7 @@ class RecordObsFileAddr:
 
     @object.setter
     def object(self, object):
-        """Sets the object of this RecordObsFileAddr.
+        r"""Sets the object of this RecordObsFileAddr.
 
         OBS对象路径，遵守OBS Object定义。如果为空则保存到根目录
 

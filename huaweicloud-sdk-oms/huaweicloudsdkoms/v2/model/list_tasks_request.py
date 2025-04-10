@@ -31,7 +31,7 @@ class ListTasksRequest:
     }
 
     def __init__(self, group_id=None, limit=None, offset=None, status=None):
-        """ListTasksRequest
+        r"""ListTasksRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListTasksRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ListTasksRequest.
+        r"""Gets the group_id of this ListTasksRequest.
 
         迁移任务组group_id
 
@@ -75,7 +75,7 @@ class ListTasksRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ListTasksRequest.
+        r"""Sets the group_id of this ListTasksRequest.
 
         迁移任务组group_id
 
@@ -86,7 +86,7 @@ class ListTasksRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTasksRequest.
+        r"""Gets the limit of this ListTasksRequest.
 
         查询返回迁移任务列表当前页面的数量，默认查询10条。 最多返回100条迁移任务信息。
 
@@ -97,7 +97,7 @@ class ListTasksRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTasksRequest.
+        r"""Sets the limit of this ListTasksRequest.
 
         查询返回迁移任务列表当前页面的数量，默认查询10条。 最多返回100条迁移任务信息。
 
@@ -108,7 +108,7 @@ class ListTasksRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTasksRequest.
+        r"""Gets the offset of this ListTasksRequest.
 
         起始的任务序号，默认为0。 取值大于等于0，取值为0时从第一条开始查询。
 
@@ -119,7 +119,7 @@ class ListTasksRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTasksRequest.
+        r"""Sets the offset of this ListTasksRequest.
 
         起始的任务序号，默认为0。 取值大于等于0，取值为0时从第一条开始查询。
 
@@ -130,7 +130,7 @@ class ListTasksRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListTasksRequest.
+        r"""Gets the status of this ListTasksRequest.
 
         迁移任务状态（无该参数时代表查询所有状态的任务）： 1：等待调度 2：正在执行 3：停止 4：失败 5：成功 7: 暂停中
 
@@ -141,7 +141,7 @@ class ListTasksRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListTasksRequest.
+        r"""Sets the status of this ListTasksRequest.
 
         迁移任务状态（无该参数时代表查询所有状态的任务）： 1：等待调度 2：正在执行 3：停止 4：失败 5：成功 7: 暂停中
 

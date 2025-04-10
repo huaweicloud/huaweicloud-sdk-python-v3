@@ -25,7 +25,7 @@ class DeleteConfigurationAggregatorRequest:
     }
 
     def __init__(self, aggregator_id=None):
-        """DeleteConfigurationAggregatorRequest
+        r"""DeleteConfigurationAggregatorRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteConfigurationAggregatorRequest:
 
     @property
     def aggregator_id(self):
-        """Gets the aggregator_id of this DeleteConfigurationAggregatorRequest.
+        r"""Gets the aggregator_id of this DeleteConfigurationAggregatorRequest.
 
         资源聚合器ID。
 
@@ -53,7 +53,7 @@ class DeleteConfigurationAggregatorRequest:
 
     @aggregator_id.setter
     def aggregator_id(self, aggregator_id):
-        """Sets the aggregator_id of this DeleteConfigurationAggregatorRequest.
+        r"""Sets the aggregator_id of this DeleteConfigurationAggregatorRequest.
 
         资源聚合器ID。
 

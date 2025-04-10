@@ -26,7 +26,7 @@ class RejectManualReviewResponse(SdkResponse):
     }
 
     def __init__(self, success=None):
-        """RejectManualReviewResponse
+        r"""RejectManualReviewResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RejectManualReviewResponse(SdkResponse):
 
     @property
     def success(self):
-        """Gets the success of this RejectManualReviewResponse.
+        r"""Gets the success of this RejectManualReviewResponse.
 
         操作是否成功
 
@@ -55,7 +55,7 @@ class RejectManualReviewResponse(SdkResponse):
 
     @success.setter
     def success(self, success):
-        """Sets the success of this RejectManualReviewResponse.
+        r"""Sets the success of this RejectManualReviewResponse.
 
         操作是否成功
 

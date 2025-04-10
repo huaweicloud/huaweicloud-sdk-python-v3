@@ -39,7 +39,7 @@ class JobDetail:
     }
 
     def __init__(self, id=None, name=None, status=None, start_time=None, end_time=None, progress=None, instance=None, fail_reason=None):
-        """JobDetail
+        r"""JobDetail
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class JobDetail:
 
     @property
     def id(self):
-        """Gets the id of this JobDetail.
+        r"""Gets the id of this JobDetail.
 
         任务ID
 
@@ -95,7 +95,7 @@ class JobDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this JobDetail.
+        r"""Sets the id of this JobDetail.
 
         任务ID
 
@@ -106,7 +106,7 @@ class JobDetail:
 
     @property
     def name(self):
-        """Gets the name of this JobDetail.
+        r"""Gets the name of this JobDetail.
 
         任务名称。
 
@@ -117,7 +117,7 @@ class JobDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this JobDetail.
+        r"""Sets the name of this JobDetail.
 
         任务名称。
 
@@ -128,7 +128,7 @@ class JobDetail:
 
     @property
     def status(self):
-        """Gets the status of this JobDetail.
+        r"""Gets the status of this JobDetail.
 
         任务执行状态。 取值： Running：表示任务正在执行。 Completed：表示任务执行成功。 Failed：表示任务执行失败。  枚举值： Running Completed Failed
 
@@ -139,7 +139,7 @@ class JobDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this JobDetail.
+        r"""Sets the status of this JobDetail.
 
         任务执行状态。 取值： Running：表示任务正在执行。 Completed：表示任务执行成功。 Failed：表示任务执行失败。  枚举值： Running Completed Failed
 
@@ -150,7 +150,7 @@ class JobDetail:
 
     @property
     def start_time(self):
-        """Gets the start_time of this JobDetail.
+        r"""Gets the start_time of this JobDetail.
 
         创建时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量[，例如北京时间偏移显示为+0800。](tag:hc)
 
@@ -161,7 +161,7 @@ class JobDetail:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this JobDetail.
+        r"""Sets the start_time of this JobDetail.
 
         创建时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量[，例如北京时间偏移显示为+0800。](tag:hc)
 
@@ -172,7 +172,7 @@ class JobDetail:
 
     @property
     def end_time(self):
-        """Gets the end_time of this JobDetail.
+        r"""Gets the end_time of this JobDetail.
 
         结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量[，例如北京时间偏移显示为+0800。](tag:hc)
 
@@ -183,7 +183,7 @@ class JobDetail:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this JobDetail.
+        r"""Sets the end_time of this JobDetail.
 
         结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量[，例如北京时间偏移显示为+0800。](tag:hc)
 
@@ -194,7 +194,7 @@ class JobDetail:
 
     @property
     def progress(self):
-        """Gets the progress of this JobDetail.
+        r"""Gets the progress of this JobDetail.
 
         任务执行进度。 > 执行中状态才返回执行进度，例如“60%”，表示任务执行进度为60%，否则返回“”。
 
@@ -205,7 +205,7 @@ class JobDetail:
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this JobDetail.
+        r"""Sets the progress of this JobDetail.
 
         任务执行进度。 > 执行中状态才返回执行进度，例如“60%”，表示任务执行进度为60%，否则返回“”。
 
@@ -216,7 +216,7 @@ class JobDetail:
 
     @property
     def instance(self):
-        """Gets the instance of this JobDetail.
+        r"""Gets the instance of this JobDetail.
 
         :return: The instance of this JobDetail.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.JobInstanceInfo`
@@ -225,7 +225,7 @@ class JobDetail:
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this JobDetail.
+        r"""Sets the instance of this JobDetail.
 
         :param instance: The instance of this JobDetail.
         :type instance: :class:`huaweicloudsdkgaussdbfornosql.v3.JobInstanceInfo`
@@ -234,7 +234,7 @@ class JobDetail:
 
     @property
     def fail_reason(self):
-        """Gets the fail_reason of this JobDetail.
+        r"""Gets the fail_reason of this JobDetail.
 
         任务执行失败时的错误信息。
 
@@ -245,7 +245,7 @@ class JobDetail:
 
     @fail_reason.setter
     def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this JobDetail.
+        r"""Sets the fail_reason of this JobDetail.
 
         任务执行失败时的错误信息。
 

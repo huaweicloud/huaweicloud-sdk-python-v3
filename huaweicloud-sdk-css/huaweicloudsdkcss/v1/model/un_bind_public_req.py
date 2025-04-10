@@ -25,7 +25,7 @@ class UnBindPublicReq:
     }
 
     def __init__(self, eip=None):
-        """UnBindPublicReq
+        r"""UnBindPublicReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UnBindPublicReq:
 
     @property
     def eip(self):
-        """Gets the eip of this UnBindPublicReq.
+        r"""Gets the eip of this UnBindPublicReq.
 
         :return: The eip of this UnBindPublicReq.
         :rtype: :class:`huaweicloudsdkcss.v1.UnBindPublicReqEipReq`
@@ -52,7 +52,7 @@ class UnBindPublicReq:
 
     @eip.setter
     def eip(self, eip):
-        """Sets the eip of this UnBindPublicReq.
+        r"""Sets the eip of this UnBindPublicReq.
 
         :param eip: The eip of this UnBindPublicReq.
         :type eip: :class:`huaweicloudsdkcss.v1.UnBindPublicReqEipReq`

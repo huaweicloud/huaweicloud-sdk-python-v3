@@ -25,7 +25,7 @@ class CdmCreateAndUpdateLinkReq:
     }
 
     def __init__(self, links=None):
-        """CdmCreateAndUpdateLinkReq
+        r"""CdmCreateAndUpdateLinkReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CdmCreateAndUpdateLinkReq:
 
     @property
     def links(self):
-        """Gets the links of this CdmCreateAndUpdateLinkReq.
+        r"""Gets the links of this CdmCreateAndUpdateLinkReq.
 
         连接列表，请参见links数据结构说明
 
@@ -53,7 +53,7 @@ class CdmCreateAndUpdateLinkReq:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this CdmCreateAndUpdateLinkReq.
+        r"""Sets the links of this CdmCreateAndUpdateLinkReq.
 
         连接列表，请参见links数据结构说明
 

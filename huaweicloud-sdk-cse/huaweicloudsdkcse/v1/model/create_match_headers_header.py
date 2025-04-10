@@ -27,7 +27,7 @@ class CreateMatchHeadersHeader:
     }
 
     def __init__(self, exact=None, case_insensitive=None):
-        """CreateMatchHeadersHeader
+        r"""CreateMatchHeadersHeader
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateMatchHeadersHeader:
 
     @property
     def exact(self):
-        """Gets the exact of this CreateMatchHeadersHeader.
+        r"""Gets the exact of this CreateMatchHeadersHeader.
 
         精确匹配值。
 
@@ -61,7 +61,7 @@ class CreateMatchHeadersHeader:
 
     @exact.setter
     def exact(self, exact):
-        """Sets the exact of this CreateMatchHeadersHeader.
+        r"""Sets the exact of this CreateMatchHeadersHeader.
 
         精确匹配值。
 
@@ -72,7 +72,7 @@ class CreateMatchHeadersHeader:
 
     @property
     def case_insensitive(self):
-        """Gets the case_insensitive of this CreateMatchHeadersHeader.
+        r"""Gets the case_insensitive of this CreateMatchHeadersHeader.
 
         是否区分大小写。
 
@@ -83,7 +83,7 @@ class CreateMatchHeadersHeader:
 
     @case_insensitive.setter
     def case_insensitive(self, case_insensitive):
-        """Sets the case_insensitive of this CreateMatchHeadersHeader.
+        r"""Sets the case_insensitive of this CreateMatchHeadersHeader.
 
         是否区分大小写。
 

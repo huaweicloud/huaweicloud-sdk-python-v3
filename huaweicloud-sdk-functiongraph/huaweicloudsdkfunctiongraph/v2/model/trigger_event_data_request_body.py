@@ -139,7 +139,7 @@ class TriggerEventDataRequestBody:
     }
 
     def __init__(self, name=None, schedule_type=None, schedule=None, user_event=None, type=None, path=None, protocol=None, req_method=None, group_id=None, group_name=None, match_mode=None, env_name=None, env_id=None, auth=None, func_info=None, sl_domain=None, backend_type=None, operations=None, instance_id=None, collection_name=None, db_name=None, db_password=None, batch_size=None, queue_id=None, consumer_group_id=None, polling_interval=None, stream_name=None, sharditerator_type=None, polling_unit=None, max_fetch_bytes=None, is_serial=None, log_group_id=None, log_topic_id=None, bucket=None, prefix=None, suffix=None, events=None, topic_urn=None, topic_ids=None, kafka_user=None, kafka_password=None, kafka_connect_address=None, kafka_ssl_enable=None, access_password=None, access_user=None, connect_address=None, exchange_name=None, vhost=None, ssl_enable=None, key_encode=None, agency=None, channel_name=None, channel_id=None, source_name=None, created_time=None, status=None, trigger_name=None, event_types=None):
-        """TriggerEventDataRequestBody
+        r"""TriggerEventDataRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -442,7 +442,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this TriggerEventDataRequestBody.
+        r"""Gets the name of this TriggerEventDataRequestBody.
 
         - TIMER触发器：触发器名称 - APIG触发器：API名称 - CTS触发器：通知名称 - OBS触发器：事件通知名称，默认值为触发器id
 
@@ -453,7 +453,7 @@ class TriggerEventDataRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TriggerEventDataRequestBody.
+        r"""Sets the name of this TriggerEventDataRequestBody.
 
         - TIMER触发器：触发器名称 - APIG触发器：API名称 - CTS触发器：通知名称 - OBS触发器：事件通知名称，默认值为触发器id
 
@@ -464,7 +464,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def schedule_type(self):
-        """Gets the schedule_type of this TriggerEventDataRequestBody.
+        r"""Gets the schedule_type of this TriggerEventDataRequestBody.
 
         定时触发类型（TIMER触发器参数）。TIMER触发器此参数必填 - Rate：指定固定频率（分钟、小时、天数）定期调用函数，单位为分钟时，输入值不能超过60；单位为小时时，输入值不能超过24；单位为天时，输入值不能超过30。 - Cron：指定Cron表达式定期调用函数
 
@@ -475,7 +475,7 @@ class TriggerEventDataRequestBody:
 
     @schedule_type.setter
     def schedule_type(self, schedule_type):
-        """Sets the schedule_type of this TriggerEventDataRequestBody.
+        r"""Sets the schedule_type of this TriggerEventDataRequestBody.
 
         定时触发类型（TIMER触发器参数）。TIMER触发器此参数必填 - Rate：指定固定频率（分钟、小时、天数）定期调用函数，单位为分钟时，输入值不能超过60；单位为小时时，输入值不能超过24；单位为天时，输入值不能超过30。 - Cron：指定Cron表达式定期调用函数
 
@@ -486,7 +486,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def schedule(self):
-        """Gets the schedule of this TriggerEventDataRequestBody.
+        r"""Gets the schedule of this TriggerEventDataRequestBody.
 
         定时触发规则（TIMER触发器参数）。TIMER触发器此参数必填。 - 触发类型为Rate时对应定时规则 - 触发类型为Cron时对应Cron表达式
 
@@ -497,7 +497,7 @@ class TriggerEventDataRequestBody:
 
     @schedule.setter
     def schedule(self, schedule):
-        """Sets the schedule of this TriggerEventDataRequestBody.
+        r"""Sets the schedule of this TriggerEventDataRequestBody.
 
         定时触发规则（TIMER触发器参数）。TIMER触发器此参数必填。 - 触发类型为Rate时对应定时规则 - 触发类型为Cron时对应Cron表达式
 
@@ -508,7 +508,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def user_event(self):
-        """Gets the user_event of this TriggerEventDataRequestBody.
+        r"""Gets the user_event of this TriggerEventDataRequestBody.
 
         附加信息（TIMER触发器参数）。 当Timer触发器触发函数执行时，执行事件（函数的event参数）为： {\"version\": \"v1.0\",   \"time\": \"2018-06-01T08:30:00+08:00\",   \"trigger_type\": \"TIMER\",   \"trigger_name\": \"Timer_001\",   \"user_event\": \"您输入的附加信息\"}
 
@@ -519,7 +519,7 @@ class TriggerEventDataRequestBody:
 
     @user_event.setter
     def user_event(self, user_event):
-        """Sets the user_event of this TriggerEventDataRequestBody.
+        r"""Sets the user_event of this TriggerEventDataRequestBody.
 
         附加信息（TIMER触发器参数）。 当Timer触发器触发函数执行时，执行事件（函数的event参数）为： {\"version\": \"v1.0\",   \"time\": \"2018-06-01T08:30:00+08:00\",   \"trigger_type\": \"TIMER\",   \"trigger_name\": \"Timer_001\",   \"user_event\": \"您输入的附加信息\"}
 
@@ -530,7 +530,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def type(self):
-        """Gets the type of this TriggerEventDataRequestBody.
+        r"""Gets the type of this TriggerEventDataRequestBody.
 
         API接口类型（APIG触发器参数）。APIG触发器此参数必填。 - 1：公有API - 2：私有API
 
@@ -541,7 +541,7 @@ class TriggerEventDataRequestBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this TriggerEventDataRequestBody.
+        r"""Sets the type of this TriggerEventDataRequestBody.
 
         API接口类型（APIG触发器参数）。APIG触发器此参数必填。 - 1：公有API - 2：私有API
 
@@ -552,7 +552,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def path(self):
-        """Gets the path of this TriggerEventDataRequestBody.
+        r"""Gets the path of this TriggerEventDataRequestBody.
 
         APIG接口PATH路径（APIG触发器参数）。APIG触发器此参数必填。
 
@@ -563,7 +563,7 @@ class TriggerEventDataRequestBody:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this TriggerEventDataRequestBody.
+        r"""Sets the path of this TriggerEventDataRequestBody.
 
         APIG接口PATH路径（APIG触发器参数）。APIG触发器此参数必填。
 
@@ -574,7 +574,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def protocol(self):
-        """Gets the protocol of this TriggerEventDataRequestBody.
+        r"""Gets the protocol of this TriggerEventDataRequestBody.
 
         API的请求协议（APIG触发器参数）。APIG触发器此参数必填。
 
@@ -585,7 +585,7 @@ class TriggerEventDataRequestBody:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this TriggerEventDataRequestBody.
+        r"""Sets the protocol of this TriggerEventDataRequestBody.
 
         API的请求协议（APIG触发器参数）。APIG触发器此参数必填。
 
@@ -596,7 +596,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def req_method(self):
-        """Gets the req_method of this TriggerEventDataRequestBody.
+        r"""Gets the req_method of this TriggerEventDataRequestBody.
 
         API的请求方式（APIG触发器参数）。APIG触发器此参数必填。
 
@@ -607,7 +607,7 @@ class TriggerEventDataRequestBody:
 
     @req_method.setter
     def req_method(self, req_method):
-        """Sets the req_method of this TriggerEventDataRequestBody.
+        r"""Sets the req_method of this TriggerEventDataRequestBody.
 
         API的请求方式（APIG触发器参数）。APIG触发器此参数必填。
 
@@ -618,7 +618,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def group_id(self):
-        """Gets the group_id of this TriggerEventDataRequestBody.
+        r"""Gets the group_id of this TriggerEventDataRequestBody.
 
         API所属的分组编号（APIG触发器参数）。APIG触发器此参数必填。
 
@@ -629,7 +629,7 @@ class TriggerEventDataRequestBody:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this TriggerEventDataRequestBody.
+        r"""Sets the group_id of this TriggerEventDataRequestBody.
 
         API所属的分组编号（APIG触发器参数）。APIG触发器此参数必填。
 
@@ -640,7 +640,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def group_name(self):
-        """Gets the group_name of this TriggerEventDataRequestBody.
+        r"""Gets the group_name of this TriggerEventDataRequestBody.
 
         API所属的分组名称
 
@@ -651,7 +651,7 @@ class TriggerEventDataRequestBody:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this TriggerEventDataRequestBody.
+        r"""Sets the group_name of this TriggerEventDataRequestBody.
 
         API所属的分组名称
 
@@ -662,7 +662,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def match_mode(self):
-        """Gets the match_mode of this TriggerEventDataRequestBody.
+        r"""Gets the match_mode of this TriggerEventDataRequestBody.
 
         API的匹配方式（APIG触发器参数）。APIG触发器此参数必填。 - SWA：前缀匹配 - NORMAL：正常匹配（绝对匹配）
 
@@ -673,7 +673,7 @@ class TriggerEventDataRequestBody:
 
     @match_mode.setter
     def match_mode(self, match_mode):
-        """Sets the match_mode of this TriggerEventDataRequestBody.
+        r"""Sets the match_mode of this TriggerEventDataRequestBody.
 
         API的匹配方式（APIG触发器参数）。APIG触发器此参数必填。 - SWA：前缀匹配 - NORMAL：正常匹配（绝对匹配）
 
@@ -684,7 +684,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def env_name(self):
-        """Gets the env_name of this TriggerEventDataRequestBody.
+        r"""Gets the env_name of this TriggerEventDataRequestBody.
 
         API的发布环境（APIG触发器参数）。APIG触发器此参数必填。
 
@@ -695,7 +695,7 @@ class TriggerEventDataRequestBody:
 
     @env_name.setter
     def env_name(self, env_name):
-        """Sets the env_name of this TriggerEventDataRequestBody.
+        r"""Sets the env_name of this TriggerEventDataRequestBody.
 
         API的发布环境（APIG触发器参数）。APIG触发器此参数必填。
 
@@ -706,7 +706,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def env_id(self):
-        """Gets the env_id of this TriggerEventDataRequestBody.
+        r"""Gets the env_id of this TriggerEventDataRequestBody.
 
         API的发布环境id（APIG触发器参数）。APIG触发器此参数必填。
 
@@ -717,7 +717,7 @@ class TriggerEventDataRequestBody:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this TriggerEventDataRequestBody.
+        r"""Sets the env_id of this TriggerEventDataRequestBody.
 
         API的发布环境id（APIG触发器参数）。APIG触发器此参数必填。
 
@@ -728,7 +728,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def auth(self):
-        """Gets the auth of this TriggerEventDataRequestBody.
+        r"""Gets the auth of this TriggerEventDataRequestBody.
 
         API的认证方式（APIG触发器参数）。APIG触发器此参数必填。 - IAM：IAM认证，只允许IAM用户能访问，安全级别中等 - APP：采用Appkey&Appsecret认证，安全级别高，推荐使用 - NONE：无认证模式，所有用户均可访问，不推荐使用
 
@@ -739,7 +739,7 @@ class TriggerEventDataRequestBody:
 
     @auth.setter
     def auth(self, auth):
-        """Sets the auth of this TriggerEventDataRequestBody.
+        r"""Sets the auth of this TriggerEventDataRequestBody.
 
         API的认证方式（APIG触发器参数）。APIG触发器此参数必填。 - IAM：IAM认证，只允许IAM用户能访问，安全级别中等 - APP：采用Appkey&Appsecret认证，安全级别高，推荐使用 - NONE：无认证模式，所有用户均可访问，不推荐使用
 
@@ -750,7 +750,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def func_info(self):
-        """Gets the func_info of this TriggerEventDataRequestBody.
+        r"""Gets the func_info of this TriggerEventDataRequestBody.
 
         :return: The func_info of this TriggerEventDataRequestBody.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ApigTriggerFuncInfo`
@@ -759,7 +759,7 @@ class TriggerEventDataRequestBody:
 
     @func_info.setter
     def func_info(self, func_info):
-        """Sets the func_info of this TriggerEventDataRequestBody.
+        r"""Sets the func_info of this TriggerEventDataRequestBody.
 
         :param func_info: The func_info of this TriggerEventDataRequestBody.
         :type func_info: :class:`huaweicloudsdkfunctiongraph.v2.ApigTriggerFuncInfo`
@@ -768,7 +768,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def sl_domain(self):
-        """Gets the sl_domain of this TriggerEventDataRequestBody.
+        r"""Gets the sl_domain of this TriggerEventDataRequestBody.
 
         APIG系统默认分配的子域名（APIG触发器参数）。
 
@@ -779,7 +779,7 @@ class TriggerEventDataRequestBody:
 
     @sl_domain.setter
     def sl_domain(self, sl_domain):
-        """Sets the sl_domain of this TriggerEventDataRequestBody.
+        r"""Sets the sl_domain of this TriggerEventDataRequestBody.
 
         APIG系统默认分配的子域名（APIG触发器参数）。
 
@@ -790,7 +790,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def backend_type(self):
-        """Gets the backend_type of this TriggerEventDataRequestBody.
+        r"""Gets the backend_type of this TriggerEventDataRequestBody.
 
         API的后端类型（APIG触发器参数）。
 
@@ -801,7 +801,7 @@ class TriggerEventDataRequestBody:
 
     @backend_type.setter
     def backend_type(self, backend_type):
-        """Sets the backend_type of this TriggerEventDataRequestBody.
+        r"""Sets the backend_type of this TriggerEventDataRequestBody.
 
         API的后端类型（APIG触发器参数）。
 
@@ -812,7 +812,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def operations(self):
-        """Gets the operations of this TriggerEventDataRequestBody.
+        r"""Gets the operations of this TriggerEventDataRequestBody.
 
         自定义操作（CTS触发器参数）。CTS触发器此参数必填。 CTS云审计服务类型和操作订阅所需要的事件通知，当CTS云审计服务获取已订阅的操作记录后，通过CTS触发器将采集到的操作记录作为参数传递来调用FunctionGraph函数。
 
@@ -823,7 +823,7 @@ class TriggerEventDataRequestBody:
 
     @operations.setter
     def operations(self, operations):
-        """Sets the operations of this TriggerEventDataRequestBody.
+        r"""Sets the operations of this TriggerEventDataRequestBody.
 
         自定义操作（CTS触发器参数）。CTS触发器此参数必填。 CTS云审计服务类型和操作订阅所需要的事件通知，当CTS云审计服务获取已订阅的操作记录后，通过CTS触发器将采集到的操作记录作为参数传递来调用FunctionGraph函数。
 
@@ -834,7 +834,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this TriggerEventDataRequestBody.
+        r"""Gets the instance_id of this TriggerEventDataRequestBody.
 
         实例id。DDS、KAFKA、RABBITMQ触发器此参数必填。 - APIG触发器：apig实例id - DDS触发器：文档数据库实例id - KAFKA触发器：KAFKA实例id - RABBITMQ触发器：RABBITMQ实例id
 
@@ -845,7 +845,7 @@ class TriggerEventDataRequestBody:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this TriggerEventDataRequestBody.
+        r"""Sets the instance_id of this TriggerEventDataRequestBody.
 
         实例id。DDS、KAFKA、RABBITMQ触发器此参数必填。 - APIG触发器：apig实例id - DDS触发器：文档数据库实例id - KAFKA触发器：KAFKA实例id - RABBITMQ触发器：RABBITMQ实例id
 
@@ -856,7 +856,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def collection_name(self):
-        """Gets the collection_name of this TriggerEventDataRequestBody.
+        r"""Gets the collection_name of this TriggerEventDataRequestBody.
 
         集合名称（DDS触发器参数）。DDS触发器此参数必填。
 
@@ -867,7 +867,7 @@ class TriggerEventDataRequestBody:
 
     @collection_name.setter
     def collection_name(self, collection_name):
-        """Sets the collection_name of this TriggerEventDataRequestBody.
+        r"""Sets the collection_name of this TriggerEventDataRequestBody.
 
         集合名称（DDS触发器参数）。DDS触发器此参数必填。
 
@@ -878,7 +878,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def db_name(self):
-        """Gets the db_name of this TriggerEventDataRequestBody.
+        r"""Gets the db_name of this TriggerEventDataRequestBody.
 
         文档数据库名称（DDS触发器参数）。DDS触发器此参数必填。
 
@@ -889,7 +889,7 @@ class TriggerEventDataRequestBody:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this TriggerEventDataRequestBody.
+        r"""Sets the db_name of this TriggerEventDataRequestBody.
 
         文档数据库名称（DDS触发器参数）。DDS触发器此参数必填。
 
@@ -900,7 +900,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def db_password(self):
-        """Gets the db_password of this TriggerEventDataRequestBody.
+        r"""Gets the db_password of this TriggerEventDataRequestBody.
 
         文档数据库密码（DDS触发器参数）。DDS触发器此参数必填。
 
@@ -911,7 +911,7 @@ class TriggerEventDataRequestBody:
 
     @db_password.setter
     def db_password(self, db_password):
-        """Sets the db_password of this TriggerEventDataRequestBody.
+        r"""Sets the db_password of this TriggerEventDataRequestBody.
 
         文档数据库密码（DDS触发器参数）。DDS触发器此参数必填。
 
@@ -922,7 +922,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def batch_size(self):
-        """Gets the batch_size of this TriggerEventDataRequestBody.
+        r"""Gets the batch_size of this TriggerEventDataRequestBody.
 
         批处理大小，单次函数执行处理的最大数据量。DIS、DDS、KAFKA、RABBITMQ触发器此参数必填。 - DDS触发器：批处理大小设置1-10,000的范围内 - DIS触发器：批处理大小设置1-10,000的范围内 - KAFKA触发器：批处理大小设置1-1,000的范围内 - RABBITMQ触发器：批处理大小设置1-1,000的范围内
 
@@ -933,7 +933,7 @@ class TriggerEventDataRequestBody:
 
     @batch_size.setter
     def batch_size(self, batch_size):
-        """Sets the batch_size of this TriggerEventDataRequestBody.
+        r"""Sets the batch_size of this TriggerEventDataRequestBody.
 
         批处理大小，单次函数执行处理的最大数据量。DIS、DDS、KAFKA、RABBITMQ触发器此参数必填。 - DDS触发器：批处理大小设置1-10,000的范围内 - DIS触发器：批处理大小设置1-10,000的范围内 - KAFKA触发器：批处理大小设置1-1,000的范围内 - RABBITMQ触发器：批处理大小设置1-1,000的范围内
 
@@ -944,7 +944,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def queue_id(self):
-        """Gets the queue_id of this TriggerEventDataRequestBody.
+        r"""Gets the queue_id of this TriggerEventDataRequestBody.
 
         队列id（DMS触发器参数）。DMS触发器此参数必填。
 
@@ -955,7 +955,7 @@ class TriggerEventDataRequestBody:
 
     @queue_id.setter
     def queue_id(self, queue_id):
-        """Sets the queue_id of this TriggerEventDataRequestBody.
+        r"""Sets the queue_id of this TriggerEventDataRequestBody.
 
         队列id（DMS触发器参数）。DMS触发器此参数必填。
 
@@ -966,7 +966,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def consumer_group_id(self):
-        """Gets the consumer_group_id of this TriggerEventDataRequestBody.
+        r"""Gets the consumer_group_id of this TriggerEventDataRequestBody.
 
         消费组id（DMS触发器参数）。DMS触发器此参数必填。
 
@@ -977,7 +977,7 @@ class TriggerEventDataRequestBody:
 
     @consumer_group_id.setter
     def consumer_group_id(self, consumer_group_id):
-        """Sets the consumer_group_id of this TriggerEventDataRequestBody.
+        r"""Sets the consumer_group_id of this TriggerEventDataRequestBody.
 
         消费组id（DMS触发器参数）。DMS触发器此参数必填。
 
@@ -988,7 +988,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def polling_interval(self):
-        """Gets the polling_interval of this TriggerEventDataRequestBody.
+        r"""Gets the polling_interval of this TriggerEventDataRequestBody.
 
         拉取周期。DIS、DMS触发器此参数必填。
 
@@ -999,7 +999,7 @@ class TriggerEventDataRequestBody:
 
     @polling_interval.setter
     def polling_interval(self, polling_interval):
-        """Sets the polling_interval of this TriggerEventDataRequestBody.
+        r"""Sets the polling_interval of this TriggerEventDataRequestBody.
 
         拉取周期。DIS、DMS触发器此参数必填。
 
@@ -1010,7 +1010,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def stream_name(self):
-        """Gets the stream_name of this TriggerEventDataRequestBody.
+        r"""Gets the stream_name of this TriggerEventDataRequestBody.
 
         通道名称（DIS触发器参数）。DIS触发器此参数必填。
 
@@ -1021,7 +1021,7 @@ class TriggerEventDataRequestBody:
 
     @stream_name.setter
     def stream_name(self, stream_name):
-        """Sets the stream_name of this TriggerEventDataRequestBody.
+        r"""Sets the stream_name of this TriggerEventDataRequestBody.
 
         通道名称（DIS触发器参数）。DIS触发器此参数必填。
 
@@ -1032,7 +1032,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def sharditerator_type(self):
-        """Gets the sharditerator_type of this TriggerEventDataRequestBody.
+        r"""Gets the sharditerator_type of this TriggerEventDataRequestBody.
 
         起始位置（DIS触发器参数）。DIS触发器此参数必填。 - TRIM_HORIZON：从最早被存储至分区的有效记录开始读取。 - LATEST：从分区中的最新记录开始读取，此设置可以保证总是读到分区中最新记录。
 
@@ -1043,7 +1043,7 @@ class TriggerEventDataRequestBody:
 
     @sharditerator_type.setter
     def sharditerator_type(self, sharditerator_type):
-        """Sets the sharditerator_type of this TriggerEventDataRequestBody.
+        r"""Sets the sharditerator_type of this TriggerEventDataRequestBody.
 
         起始位置（DIS触发器参数）。DIS触发器此参数必填。 - TRIM_HORIZON：从最早被存储至分区的有效记录开始读取。 - LATEST：从分区中的最新记录开始读取，此设置可以保证总是读到分区中最新记录。
 
@@ -1054,7 +1054,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def polling_unit(self):
-        """Gets the polling_unit of this TriggerEventDataRequestBody.
+        r"""Gets the polling_unit of this TriggerEventDataRequestBody.
 
         拉取周期单位（DIS触发器参数）。DIS触发器此参数必填。 - s：秒 - ms：毫秒
 
@@ -1065,7 +1065,7 @@ class TriggerEventDataRequestBody:
 
     @polling_unit.setter
     def polling_unit(self, polling_unit):
-        """Sets the polling_unit of this TriggerEventDataRequestBody.
+        r"""Sets the polling_unit of this TriggerEventDataRequestBody.
 
         拉取周期单位（DIS触发器参数）。DIS触发器此参数必填。 - s：秒 - ms：毫秒
 
@@ -1076,7 +1076,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def max_fetch_bytes(self):
-        """Gets the max_fetch_bytes of this TriggerEventDataRequestBody.
+        r"""Gets the max_fetch_bytes of this TriggerEventDataRequestBody.
 
         最大提取字节数（DIS触发器参数）。
 
@@ -1087,7 +1087,7 @@ class TriggerEventDataRequestBody:
 
     @max_fetch_bytes.setter
     def max_fetch_bytes(self, max_fetch_bytes):
-        """Sets the max_fetch_bytes of this TriggerEventDataRequestBody.
+        r"""Sets the max_fetch_bytes of this TriggerEventDataRequestBody.
 
         最大提取字节数（DIS触发器参数）。
 
@@ -1098,7 +1098,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def is_serial(self):
-        """Gets the is_serial of this TriggerEventDataRequestBody.
+        r"""Gets the is_serial of this TriggerEventDataRequestBody.
 
         串行处理数据（DIS触发器参数），如果开启该选项，取一次数据处理完之后才会取下一次数据；否则只要拉取周期到了就会取数据进行处理。DIS触发器此参数必填。
 
@@ -1109,7 +1109,7 @@ class TriggerEventDataRequestBody:
 
     @is_serial.setter
     def is_serial(self, is_serial):
-        """Sets the is_serial of this TriggerEventDataRequestBody.
+        r"""Sets the is_serial of this TriggerEventDataRequestBody.
 
         串行处理数据（DIS触发器参数），如果开启该选项，取一次数据处理完之后才会取下一次数据；否则只要拉取周期到了就会取数据进行处理。DIS触发器此参数必填。
 
@@ -1120,7 +1120,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this TriggerEventDataRequestBody.
+        r"""Gets the log_group_id of this TriggerEventDataRequestBody.
 
         日志组id（LTS触发器参数）。LTS触发器此参数必填。
 
@@ -1131,7 +1131,7 @@ class TriggerEventDataRequestBody:
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this TriggerEventDataRequestBody.
+        r"""Sets the log_group_id of this TriggerEventDataRequestBody.
 
         日志组id（LTS触发器参数）。LTS触发器此参数必填。
 
@@ -1142,7 +1142,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def log_topic_id(self):
-        """Gets the log_topic_id of this TriggerEventDataRequestBody.
+        r"""Gets the log_topic_id of this TriggerEventDataRequestBody.
 
         日志流id（LTS触发器参数）。LTS触发器此参数必填。
 
@@ -1153,7 +1153,7 @@ class TriggerEventDataRequestBody:
 
     @log_topic_id.setter
     def log_topic_id(self, log_topic_id):
-        """Sets the log_topic_id of this TriggerEventDataRequestBody.
+        r"""Sets the log_topic_id of this TriggerEventDataRequestBody.
 
         日志流id（LTS触发器参数）。LTS触发器此参数必填。
 
@@ -1164,7 +1164,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def bucket(self):
-        """Gets the bucket of this TriggerEventDataRequestBody.
+        r"""Gets the bucket of this TriggerEventDataRequestBody.
 
         桶名称（OBS触发器参数），用作事件源的OBS存储桶，不能和本用户已有桶重名；不能和其他用户已有的桶重名；创建成功后不支持修改。OBS触发器此参数必填。
 
@@ -1175,7 +1175,7 @@ class TriggerEventDataRequestBody:
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this TriggerEventDataRequestBody.
+        r"""Sets the bucket of this TriggerEventDataRequestBody.
 
         桶名称（OBS触发器参数），用作事件源的OBS存储桶，不能和本用户已有桶重名；不能和其他用户已有的桶重名；创建成功后不支持修改。OBS触发器此参数必填。
 
@@ -1186,7 +1186,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def prefix(self):
-        """Gets the prefix of this TriggerEventDataRequestBody.
+        r"""Gets the prefix of this TriggerEventDataRequestBody.
 
         前缀（OBS触发器参数），输入一个可选性前缀来限制对以此关键字开头的对象的通知。
 
@@ -1197,7 +1197,7 @@ class TriggerEventDataRequestBody:
 
     @prefix.setter
     def prefix(self, prefix):
-        """Sets the prefix of this TriggerEventDataRequestBody.
+        r"""Sets the prefix of this TriggerEventDataRequestBody.
 
         前缀（OBS触发器参数），输入一个可选性前缀来限制对以此关键字开头的对象的通知。
 
@@ -1208,7 +1208,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def suffix(self):
-        """Gets the suffix of this TriggerEventDataRequestBody.
+        r"""Gets the suffix of this TriggerEventDataRequestBody.
 
         后缀（OBS触发器参数），输入一个可选性后缀来限制对以此关键字结尾的对象的通知
 
@@ -1219,7 +1219,7 @@ class TriggerEventDataRequestBody:
 
     @suffix.setter
     def suffix(self, suffix):
-        """Sets the suffix of this TriggerEventDataRequestBody.
+        r"""Sets the suffix of this TriggerEventDataRequestBody.
 
         后缀（OBS触发器参数），输入一个可选性后缀来限制对以此关键字结尾的对象的通知
 
@@ -1230,7 +1230,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def events(self):
-        """Gets the events of this TriggerEventDataRequestBody.
+        r"""Gets the events of this TriggerEventDataRequestBody.
 
         触发事件（OBS触发器参数）。OBS触发器此参数必填。 - ObjectCreated：表示所有创建对象的操作，包含Put、Post、Copy对象以及合并段 - Put：使用Put方法上传对象 - Post：使用Post方法上传对象 - Copy：使用copy方法复制对象 - CompleteMultipartUpload：表示合并分段任务 - ObjectRemoved：表示删除对象 - Delete：指定对象版本号删除对象 - DeleteMarkerCreated：不指定对象版本号删除对象
 
@@ -1241,7 +1241,7 @@ class TriggerEventDataRequestBody:
 
     @events.setter
     def events(self, events):
-        """Sets the events of this TriggerEventDataRequestBody.
+        r"""Sets the events of this TriggerEventDataRequestBody.
 
         触发事件（OBS触发器参数）。OBS触发器此参数必填。 - ObjectCreated：表示所有创建对象的操作，包含Put、Post、Copy对象以及合并段 - Put：使用Put方法上传对象 - Post：使用Post方法上传对象 - Copy：使用copy方法复制对象 - CompleteMultipartUpload：表示合并分段任务 - ObjectRemoved：表示删除对象 - Delete：指定对象版本号删除对象 - DeleteMarkerCreated：不指定对象版本号删除对象
 
@@ -1252,7 +1252,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this TriggerEventDataRequestBody.
+        r"""Gets the topic_urn of this TriggerEventDataRequestBody.
 
         主题URN（SMN触发器参数）。SMN触发器此参数必填。
 
@@ -1263,7 +1263,7 @@ class TriggerEventDataRequestBody:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this TriggerEventDataRequestBody.
+        r"""Sets the topic_urn of this TriggerEventDataRequestBody.
 
         主题URN（SMN触发器参数）。SMN触发器此参数必填。
 
@@ -1274,7 +1274,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def topic_ids(self):
-        """Gets the topic_ids of this TriggerEventDataRequestBody.
+        r"""Gets the topic_ids of this TriggerEventDataRequestBody.
 
         KAFKA主题id列表（KAFKA触发器参数）。KAFKA触发器此参数必填。
 
@@ -1285,7 +1285,7 @@ class TriggerEventDataRequestBody:
 
     @topic_ids.setter
     def topic_ids(self, topic_ids):
-        """Sets the topic_ids of this TriggerEventDataRequestBody.
+        r"""Sets the topic_ids of this TriggerEventDataRequestBody.
 
         KAFKA主题id列表（KAFKA触发器参数）。KAFKA触发器此参数必填。
 
@@ -1296,7 +1296,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def kafka_user(self):
-        """Gets the kafka_user of this TriggerEventDataRequestBody.
+        r"""Gets the kafka_user of this TriggerEventDataRequestBody.
 
         KAFKA账户名（KAFKA触发器参数）。
 
@@ -1307,7 +1307,7 @@ class TriggerEventDataRequestBody:
 
     @kafka_user.setter
     def kafka_user(self, kafka_user):
-        """Sets the kafka_user of this TriggerEventDataRequestBody.
+        r"""Sets the kafka_user of this TriggerEventDataRequestBody.
 
         KAFKA账户名（KAFKA触发器参数）。
 
@@ -1318,7 +1318,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def kafka_password(self):
-        """Gets the kafka_password of this TriggerEventDataRequestBody.
+        r"""Gets the kafka_password of this TriggerEventDataRequestBody.
 
         KAFKA账户密码（KAFKA触发器参数）。
 
@@ -1329,7 +1329,7 @@ class TriggerEventDataRequestBody:
 
     @kafka_password.setter
     def kafka_password(self, kafka_password):
-        """Sets the kafka_password of this TriggerEventDataRequestBody.
+        r"""Sets the kafka_password of this TriggerEventDataRequestBody.
 
         KAFKA账户密码（KAFKA触发器参数）。
 
@@ -1340,7 +1340,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def kafka_connect_address(self):
-        """Gets the kafka_connect_address of this TriggerEventDataRequestBody.
+        r"""Gets the kafka_connect_address of this TriggerEventDataRequestBody.
 
         KAFKA实例连接IP地址（KAFKA触发器参数）。
 
@@ -1351,7 +1351,7 @@ class TriggerEventDataRequestBody:
 
     @kafka_connect_address.setter
     def kafka_connect_address(self, kafka_connect_address):
-        """Sets the kafka_connect_address of this TriggerEventDataRequestBody.
+        r"""Sets the kafka_connect_address of this TriggerEventDataRequestBody.
 
         KAFKA实例连接IP地址（KAFKA触发器参数）。
 
@@ -1362,7 +1362,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def kafka_ssl_enable(self):
-        """Gets the kafka_ssl_enable of this TriggerEventDataRequestBody.
+        r"""Gets the kafka_ssl_enable of this TriggerEventDataRequestBody.
 
         KAFKA连接是否开启安全认证（KAFKA触发器参数）。
 
@@ -1373,7 +1373,7 @@ class TriggerEventDataRequestBody:
 
     @kafka_ssl_enable.setter
     def kafka_ssl_enable(self, kafka_ssl_enable):
-        """Sets the kafka_ssl_enable of this TriggerEventDataRequestBody.
+        r"""Sets the kafka_ssl_enable of this TriggerEventDataRequestBody.
 
         KAFKA连接是否开启安全认证（KAFKA触发器参数）。
 
@@ -1384,7 +1384,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def access_password(self):
-        """Gets the access_password of this TriggerEventDataRequestBody.
+        r"""Gets the access_password of this TriggerEventDataRequestBody.
 
         RABBITMQ账户密码（RABBITMQ触发器参数）。RABBITMQ触发器此参数必填。
 
@@ -1395,7 +1395,7 @@ class TriggerEventDataRequestBody:
 
     @access_password.setter
     def access_password(self, access_password):
-        """Sets the access_password of this TriggerEventDataRequestBody.
+        r"""Sets the access_password of this TriggerEventDataRequestBody.
 
         RABBITMQ账户密码（RABBITMQ触发器参数）。RABBITMQ触发器此参数必填。
 
@@ -1406,7 +1406,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def access_user(self):
-        """Gets the access_user of this TriggerEventDataRequestBody.
+        r"""Gets the access_user of this TriggerEventDataRequestBody.
 
         RABBITMQ账户名（RABBITMQ触发器参数）。
 
@@ -1417,7 +1417,7 @@ class TriggerEventDataRequestBody:
 
     @access_user.setter
     def access_user(self, access_user):
-        """Sets the access_user of this TriggerEventDataRequestBody.
+        r"""Sets the access_user of this TriggerEventDataRequestBody.
 
         RABBITMQ账户名（RABBITMQ触发器参数）。
 
@@ -1428,7 +1428,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def connect_address(self):
-        """Gets the connect_address of this TriggerEventDataRequestBody.
+        r"""Gets the connect_address of this TriggerEventDataRequestBody.
 
         实例连接IP地址（RABBITMQ触发器参数）。
 
@@ -1439,7 +1439,7 @@ class TriggerEventDataRequestBody:
 
     @connect_address.setter
     def connect_address(self, connect_address):
-        """Sets the connect_address of this TriggerEventDataRequestBody.
+        r"""Sets the connect_address of this TriggerEventDataRequestBody.
 
         实例连接IP地址（RABBITMQ触发器参数）。
 
@@ -1450,7 +1450,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def exchange_name(self):
-        """Gets the exchange_name of this TriggerEventDataRequestBody.
+        r"""Gets the exchange_name of this TriggerEventDataRequestBody.
 
         交换机名称（RABBITMQ触发器参数）。RABBITMQ触发器此参数必填。
 
@@ -1461,7 +1461,7 @@ class TriggerEventDataRequestBody:
 
     @exchange_name.setter
     def exchange_name(self, exchange_name):
-        """Sets the exchange_name of this TriggerEventDataRequestBody.
+        r"""Sets the exchange_name of this TriggerEventDataRequestBody.
 
         交换机名称（RABBITMQ触发器参数）。RABBITMQ触发器此参数必填。
 
@@ -1472,7 +1472,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def vhost(self):
-        """Gets the vhost of this TriggerEventDataRequestBody.
+        r"""Gets the vhost of this TriggerEventDataRequestBody.
 
         虚拟机名称（RABBITMQ触发器参数）。
 
@@ -1483,7 +1483,7 @@ class TriggerEventDataRequestBody:
 
     @vhost.setter
     def vhost(self, vhost):
-        """Sets the vhost of this TriggerEventDataRequestBody.
+        r"""Sets the vhost of this TriggerEventDataRequestBody.
 
         虚拟机名称（RABBITMQ触发器参数）。
 
@@ -1494,7 +1494,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def ssl_enable(self):
-        """Gets the ssl_enable of this TriggerEventDataRequestBody.
+        r"""Gets the ssl_enable of this TriggerEventDataRequestBody.
 
         RABBITMQ连接是否开启安全认证（RABBITMQ触发器参数）。
 
@@ -1505,7 +1505,7 @@ class TriggerEventDataRequestBody:
 
     @ssl_enable.setter
     def ssl_enable(self, ssl_enable):
-        """Sets the ssl_enable of this TriggerEventDataRequestBody.
+        r"""Sets the ssl_enable of this TriggerEventDataRequestBody.
 
         RABBITMQ连接是否开启安全认证（RABBITMQ触发器参数）。
 
@@ -1516,7 +1516,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def key_encode(self):
-        """Gets the key_encode of this TriggerEventDataRequestBody.
+        r"""Gets the key_encode of this TriggerEventDataRequestBody.
 
         EG obs触发器是否对对象加密（EVENTGRID触发器参数）。
 
@@ -1527,7 +1527,7 @@ class TriggerEventDataRequestBody:
 
     @key_encode.setter
     def key_encode(self, key_encode):
-        """Sets the key_encode of this TriggerEventDataRequestBody.
+        r"""Sets the key_encode of this TriggerEventDataRequestBody.
 
         EG obs触发器是否对对象加密（EVENTGRID触发器参数）。
 
@@ -1538,7 +1538,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def agency(self):
-        """Gets the agency of this TriggerEventDataRequestBody.
+        r"""Gets the agency of this TriggerEventDataRequestBody.
 
         使用的代理（EVENTGRID触发器参数）。
 
@@ -1549,7 +1549,7 @@ class TriggerEventDataRequestBody:
 
     @agency.setter
     def agency(self, agency):
-        """Sets the agency of this TriggerEventDataRequestBody.
+        r"""Sets the agency of this TriggerEventDataRequestBody.
 
         使用的代理（EVENTGRID触发器参数）。
 
@@ -1560,7 +1560,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def channel_name(self):
-        """Gets the channel_name of this TriggerEventDataRequestBody.
+        r"""Gets the channel_name of this TriggerEventDataRequestBody.
 
         通道名称（EVENTGRID触发器参数）。
 
@@ -1571,7 +1571,7 @@ class TriggerEventDataRequestBody:
 
     @channel_name.setter
     def channel_name(self, channel_name):
-        """Sets the channel_name of this TriggerEventDataRequestBody.
+        r"""Sets the channel_name of this TriggerEventDataRequestBody.
 
         通道名称（EVENTGRID触发器参数）。
 
@@ -1582,7 +1582,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def channel_id(self):
-        """Gets the channel_id of this TriggerEventDataRequestBody.
+        r"""Gets the channel_id of this TriggerEventDataRequestBody.
 
         通道id（EVENTGRID触发器参数）。
 
@@ -1593,7 +1593,7 @@ class TriggerEventDataRequestBody:
 
     @channel_id.setter
     def channel_id(self, channel_id):
-        """Sets the channel_id of this TriggerEventDataRequestBody.
+        r"""Sets the channel_id of this TriggerEventDataRequestBody.
 
         通道id（EVENTGRID触发器参数）。
 
@@ -1604,7 +1604,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def source_name(self):
-        """Gets the source_name of this TriggerEventDataRequestBody.
+        r"""Gets the source_name of this TriggerEventDataRequestBody.
 
         事件源名称（EVENTGRID触发器参数）。
 
@@ -1615,7 +1615,7 @@ class TriggerEventDataRequestBody:
 
     @source_name.setter
     def source_name(self, source_name):
-        """Sets the source_name of this TriggerEventDataRequestBody.
+        r"""Sets the source_name of this TriggerEventDataRequestBody.
 
         事件源名称（EVENTGRID触发器参数）。
 
@@ -1626,7 +1626,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def created_time(self):
-        """Gets the created_time of this TriggerEventDataRequestBody.
+        r"""Gets the created_time of this TriggerEventDataRequestBody.
 
         创建时间（EVENTGRID触发器参数）。
 
@@ -1637,7 +1637,7 @@ class TriggerEventDataRequestBody:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this TriggerEventDataRequestBody.
+        r"""Sets the created_time of this TriggerEventDataRequestBody.
 
         创建时间（EVENTGRID触发器参数）。
 
@@ -1648,7 +1648,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def status(self):
-        """Gets the status of this TriggerEventDataRequestBody.
+        r"""Gets the status of this TriggerEventDataRequestBody.
 
         触发器状态（EVENTGRID触发器参数）。
 
@@ -1659,7 +1659,7 @@ class TriggerEventDataRequestBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this TriggerEventDataRequestBody.
+        r"""Sets the status of this TriggerEventDataRequestBody.
 
         触发器状态（EVENTGRID触发器参数）。
 
@@ -1670,7 +1670,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def trigger_name(self):
-        """Gets the trigger_name of this TriggerEventDataRequestBody.
+        r"""Gets the trigger_name of this TriggerEventDataRequestBody.
 
         触发器名称（EVENTGRID触发器参数）。
 
@@ -1681,7 +1681,7 @@ class TriggerEventDataRequestBody:
 
     @trigger_name.setter
     def trigger_name(self, trigger_name):
-        """Sets the trigger_name of this TriggerEventDataRequestBody.
+        r"""Sets the trigger_name of this TriggerEventDataRequestBody.
 
         触发器名称（EVENTGRID触发器参数）。
 
@@ -1692,7 +1692,7 @@ class TriggerEventDataRequestBody:
 
     @property
     def event_types(self):
-        """Gets the event_types of this TriggerEventDataRequestBody.
+        r"""Gets the event_types of this TriggerEventDataRequestBody.
 
         事件类型（EVENTGRID触发器参数）。
 
@@ -1703,7 +1703,7 @@ class TriggerEventDataRequestBody:
 
     @event_types.setter
     def event_types(self, event_types):
-        """Sets the event_types of this TriggerEventDataRequestBody.
+        r"""Sets the event_types of this TriggerEventDataRequestBody.
 
         事件类型（EVENTGRID触发器参数）。
 

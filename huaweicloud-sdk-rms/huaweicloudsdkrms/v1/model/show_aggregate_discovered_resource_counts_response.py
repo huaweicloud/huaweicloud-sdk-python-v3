@@ -30,7 +30,7 @@ class ShowAggregateDiscoveredResourceCountsResponse(SdkResponse):
     }
 
     def __init__(self, group_by_key=None, grouped_resource_counts=None, total_discovered_resources=None):
-        """ShowAggregateDiscoveredResourceCountsResponse
+        r"""ShowAggregateDiscoveredResourceCountsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowAggregateDiscoveredResourceCountsResponse(SdkResponse):
 
     @property
     def group_by_key(self):
-        """Gets the group_by_key of this ShowAggregateDiscoveredResourceCountsResponse.
+        r"""Gets the group_by_key of this ShowAggregateDiscoveredResourceCountsResponse.
 
         资源计数进行分组的键。
 
@@ -69,7 +69,7 @@ class ShowAggregateDiscoveredResourceCountsResponse(SdkResponse):
 
     @group_by_key.setter
     def group_by_key(self, group_by_key):
-        """Sets the group_by_key of this ShowAggregateDiscoveredResourceCountsResponse.
+        r"""Sets the group_by_key of this ShowAggregateDiscoveredResourceCountsResponse.
 
         资源计数进行分组的键。
 
@@ -80,7 +80,7 @@ class ShowAggregateDiscoveredResourceCountsResponse(SdkResponse):
 
     @property
     def grouped_resource_counts(self):
-        """Gets the grouped_resource_counts of this ShowAggregateDiscoveredResourceCountsResponse.
+        r"""Gets the grouped_resource_counts of this ShowAggregateDiscoveredResourceCountsResponse.
 
         分组资源计数的列表。
 
@@ -91,7 +91,7 @@ class ShowAggregateDiscoveredResourceCountsResponse(SdkResponse):
 
     @grouped_resource_counts.setter
     def grouped_resource_counts(self, grouped_resource_counts):
-        """Sets the grouped_resource_counts of this ShowAggregateDiscoveredResourceCountsResponse.
+        r"""Sets the grouped_resource_counts of this ShowAggregateDiscoveredResourceCountsResponse.
 
         分组资源计数的列表。
 
@@ -102,7 +102,7 @@ class ShowAggregateDiscoveredResourceCountsResponse(SdkResponse):
 
     @property
     def total_discovered_resources(self):
-        """Gets the total_discovered_resources of this ShowAggregateDiscoveredResourceCountsResponse.
+        r"""Gets the total_discovered_resources of this ShowAggregateDiscoveredResourceCountsResponse.
 
         指定过滤器的资源聚合器中存在的资源总数。
 
@@ -113,7 +113,7 @@ class ShowAggregateDiscoveredResourceCountsResponse(SdkResponse):
 
     @total_discovered_resources.setter
     def total_discovered_resources(self, total_discovered_resources):
-        """Sets the total_discovered_resources of this ShowAggregateDiscoveredResourceCountsResponse.
+        r"""Sets the total_discovered_resources of this ShowAggregateDiscoveredResourceCountsResponse.
 
         指定过滤器的资源聚合器中存在的资源总数。
 

@@ -27,7 +27,7 @@ class AttachEipRequest:
     }
 
     def __init__(self, node_id=None, body=None):
-        """AttachEipRequest
+        r"""AttachEipRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AttachEipRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this AttachEipRequest.
+        r"""Gets the node_id of this AttachEipRequest.
 
         需要绑定公网IP的节点ID。集群实例选择mongos节点，副本集实例选择primary或者secondary节点。
 
@@ -60,7 +60,7 @@ class AttachEipRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this AttachEipRequest.
+        r"""Sets the node_id of this AttachEipRequest.
 
         需要绑定公网IP的节点ID。集群实例选择mongos节点，副本集实例选择primary或者secondary节点。
 
@@ -71,7 +71,7 @@ class AttachEipRequest:
 
     @property
     def body(self):
-        """Gets the body of this AttachEipRequest.
+        r"""Gets the body of this AttachEipRequest.
 
         :return: The body of this AttachEipRequest.
         :rtype: :class:`huaweicloudsdkdds.v3.AttachEipRequestBody`
@@ -80,7 +80,7 @@ class AttachEipRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AttachEipRequest.
+        r"""Sets the body of this AttachEipRequest.
 
         :param body: The body of this AttachEipRequest.
         :type body: :class:`huaweicloudsdkdds.v3.AttachEipRequestBody`

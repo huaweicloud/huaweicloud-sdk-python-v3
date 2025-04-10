@@ -24,7 +24,7 @@ class AddWorkSpaceUsersResponse(SdkResponse):
     }
 
     def __init__(self):
-        """AddWorkSpaceUsersResponse
+        r"""AddWorkSpaceUsersResponse
 
         The model defined in huaweicloud sdk
 

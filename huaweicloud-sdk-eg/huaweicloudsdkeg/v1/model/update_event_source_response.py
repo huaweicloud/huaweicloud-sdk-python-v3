@@ -54,7 +54,7 @@ class UpdateEventSourceResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, label=None, description=None, provider_type=None, event_types=None, created_time=None, updated_time=None, channel_id=None, channel_name=None, type=None, detail=None, status=None, error_info=None, x_request_id=None):
-        """UpdateEventSourceResponse
+        r"""UpdateEventSourceResponse
 
         The model defined in huaweicloud sdk
 
@@ -142,7 +142,7 @@ class UpdateEventSourceResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateEventSourceResponse.
+        r"""Gets the id of this UpdateEventSourceResponse.
 
         事件源ID
 
@@ -153,7 +153,7 @@ class UpdateEventSourceResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateEventSourceResponse.
+        r"""Sets the id of this UpdateEventSourceResponse.
 
         事件源ID
 
@@ -164,7 +164,7 @@ class UpdateEventSourceResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateEventSourceResponse.
+        r"""Gets the name of this UpdateEventSourceResponse.
 
         事件源名称
 
@@ -175,7 +175,7 @@ class UpdateEventSourceResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateEventSourceResponse.
+        r"""Sets the name of this UpdateEventSourceResponse.
 
         事件源名称
 
@@ -186,7 +186,7 @@ class UpdateEventSourceResponse(SdkResponse):
 
     @property
     def label(self):
-        """Gets the label of this UpdateEventSourceResponse.
+        r"""Gets the label of this UpdateEventSourceResponse.
 
         事件源名称展示
 
@@ -197,7 +197,7 @@ class UpdateEventSourceResponse(SdkResponse):
 
     @label.setter
     def label(self, label):
-        """Sets the label of this UpdateEventSourceResponse.
+        r"""Sets the label of this UpdateEventSourceResponse.
 
         事件源名称展示
 
@@ -208,7 +208,7 @@ class UpdateEventSourceResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdateEventSourceResponse.
+        r"""Gets the description of this UpdateEventSourceResponse.
 
         事件源描述
 
@@ -219,7 +219,7 @@ class UpdateEventSourceResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateEventSourceResponse.
+        r"""Sets the description of this UpdateEventSourceResponse.
 
         事件源描述
 
@@ -230,7 +230,7 @@ class UpdateEventSourceResponse(SdkResponse):
 
     @property
     def provider_type(self):
-        """Gets the provider_type of this UpdateEventSourceResponse.
+        r"""Gets the provider_type of this UpdateEventSourceResponse.
 
         事件源提供方类型，OFFICIAL：官方云服务事件源；CUSTOM：用户创建的自定义事件源；PARTNER：伙伴事件源
 
@@ -241,7 +241,7 @@ class UpdateEventSourceResponse(SdkResponse):
 
     @provider_type.setter
     def provider_type(self, provider_type):
-        """Sets the provider_type of this UpdateEventSourceResponse.
+        r"""Sets the provider_type of this UpdateEventSourceResponse.
 
         事件源提供方类型，OFFICIAL：官方云服务事件源；CUSTOM：用户创建的自定义事件源；PARTNER：伙伴事件源
 
@@ -252,7 +252,7 @@ class UpdateEventSourceResponse(SdkResponse):
 
     @property
     def event_types(self):
-        """Gets the event_types of this UpdateEventSourceResponse.
+        r"""Gets the event_types of this UpdateEventSourceResponse.
 
         事件源提供的事件类型列表，只有官方云服务事件源提供事件类型
 
@@ -263,7 +263,7 @@ class UpdateEventSourceResponse(SdkResponse):
 
     @event_types.setter
     def event_types(self, event_types):
-        """Sets the event_types of this UpdateEventSourceResponse.
+        r"""Sets the event_types of this UpdateEventSourceResponse.
 
         事件源提供的事件类型列表，只有官方云服务事件源提供事件类型
 
@@ -274,7 +274,7 @@ class UpdateEventSourceResponse(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this UpdateEventSourceResponse.
+        r"""Gets the created_time of this UpdateEventSourceResponse.
 
         创建UTC时间
 
@@ -285,7 +285,7 @@ class UpdateEventSourceResponse(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this UpdateEventSourceResponse.
+        r"""Sets the created_time of this UpdateEventSourceResponse.
 
         创建UTC时间
 
@@ -296,7 +296,7 @@ class UpdateEventSourceResponse(SdkResponse):
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this UpdateEventSourceResponse.
+        r"""Gets the updated_time of this UpdateEventSourceResponse.
 
         更新UTC时间
 
@@ -307,7 +307,7 @@ class UpdateEventSourceResponse(SdkResponse):
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this UpdateEventSourceResponse.
+        r"""Sets the updated_time of this UpdateEventSourceResponse.
 
         更新UTC时间
 
@@ -318,7 +318,7 @@ class UpdateEventSourceResponse(SdkResponse):
 
     @property
     def channel_id(self):
-        """Gets the channel_id of this UpdateEventSourceResponse.
+        r"""Gets the channel_id of this UpdateEventSourceResponse.
 
         事件源归属的事件通道ID
 
@@ -329,7 +329,7 @@ class UpdateEventSourceResponse(SdkResponse):
 
     @channel_id.setter
     def channel_id(self, channel_id):
-        """Sets the channel_id of this UpdateEventSourceResponse.
+        r"""Sets the channel_id of this UpdateEventSourceResponse.
 
         事件源归属的事件通道ID
 
@@ -340,7 +340,7 @@ class UpdateEventSourceResponse(SdkResponse):
 
     @property
     def channel_name(self):
-        """Gets the channel_name of this UpdateEventSourceResponse.
+        r"""Gets the channel_name of this UpdateEventSourceResponse.
 
         事件源归属的事件通道名称
 
@@ -351,7 +351,7 @@ class UpdateEventSourceResponse(SdkResponse):
 
     @channel_name.setter
     def channel_name(self, channel_name):
-        """Sets the channel_name of this UpdateEventSourceResponse.
+        r"""Sets the channel_name of this UpdateEventSourceResponse.
 
         事件源归属的事件通道名称
 
@@ -362,7 +362,7 @@ class UpdateEventSourceResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this UpdateEventSourceResponse.
+        r"""Gets the type of this UpdateEventSourceResponse.
 
         事件源类型
 
@@ -373,7 +373,7 @@ class UpdateEventSourceResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this UpdateEventSourceResponse.
+        r"""Sets the type of this UpdateEventSourceResponse.
 
         事件源类型
 
@@ -384,7 +384,7 @@ class UpdateEventSourceResponse(SdkResponse):
 
     @property
     def detail(self):
-        """Gets the detail of this UpdateEventSourceResponse.
+        r"""Gets the detail of this UpdateEventSourceResponse.
 
         json格式封装消息实例链接信息：如RabbitMQ实例的instance_id字段、虚拟主机vhost字段、队列queue字段、用户名、密码等
 
@@ -395,7 +395,7 @@ class UpdateEventSourceResponse(SdkResponse):
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this UpdateEventSourceResponse.
+        r"""Sets the detail of this UpdateEventSourceResponse.
 
         json格式封装消息实例链接信息：如RabbitMQ实例的instance_id字段、虚拟主机vhost字段、队列queue字段、用户名、密码等
 
@@ -406,7 +406,7 @@ class UpdateEventSourceResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateEventSourceResponse.
+        r"""Gets the status of this UpdateEventSourceResponse.
 
         自定义事件源状态
 
@@ -417,7 +417,7 @@ class UpdateEventSourceResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateEventSourceResponse.
+        r"""Sets the status of this UpdateEventSourceResponse.
 
         自定义事件源状态
 
@@ -428,7 +428,7 @@ class UpdateEventSourceResponse(SdkResponse):
 
     @property
     def error_info(self):
-        """Gets the error_info of this UpdateEventSourceResponse.
+        r"""Gets the error_info of this UpdateEventSourceResponse.
 
         :return: The error_info of this UpdateEventSourceResponse.
         :rtype: :class:`huaweicloudsdkeg.v1.ErrorInfo`
@@ -437,7 +437,7 @@ class UpdateEventSourceResponse(SdkResponse):
 
     @error_info.setter
     def error_info(self, error_info):
-        """Sets the error_info of this UpdateEventSourceResponse.
+        r"""Sets the error_info of this UpdateEventSourceResponse.
 
         :param error_info: The error_info of this UpdateEventSourceResponse.
         :type error_info: :class:`huaweicloudsdkeg.v1.ErrorInfo`
@@ -446,7 +446,7 @@ class UpdateEventSourceResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdateEventSourceResponse.
+        r"""Gets the x_request_id of this UpdateEventSourceResponse.
 
         :return: The x_request_id of this UpdateEventSourceResponse.
         :rtype: str
@@ -455,7 +455,7 @@ class UpdateEventSourceResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdateEventSourceResponse.
+        r"""Sets the x_request_id of this UpdateEventSourceResponse.
 
         :param x_request_id: The x_request_id of this UpdateEventSourceResponse.
         :type x_request_id: str

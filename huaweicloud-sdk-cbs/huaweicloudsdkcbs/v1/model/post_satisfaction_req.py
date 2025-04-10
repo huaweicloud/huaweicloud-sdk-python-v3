@@ -25,7 +25,7 @@ class PostSatisfactionReq:
     }
 
     def __init__(self, degree=None):
-        """PostSatisfactionReq
+        r"""PostSatisfactionReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class PostSatisfactionReq:
 
     @property
     def degree(self):
-        """Gets the degree of this PostSatisfactionReq.
+        r"""Gets the degree of this PostSatisfactionReq.
 
         满意度评分，当前仅支持二级评分，1表示满意，-1表示不满意。
 
@@ -53,7 +53,7 @@ class PostSatisfactionReq:
 
     @degree.setter
     def degree(self, degree):
-        """Sets the degree of this PostSatisfactionReq.
+        r"""Sets the degree of this PostSatisfactionReq.
 
         满意度评分，当前仅支持二级评分，1表示满意，-1表示不满意。
 

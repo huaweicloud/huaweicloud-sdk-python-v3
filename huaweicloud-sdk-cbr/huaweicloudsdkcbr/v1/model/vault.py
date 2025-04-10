@@ -59,7 +59,7 @@ class Vault:
     }
 
     def __init__(self, billing=None, description=None, id=None, name=None, project_id=None, provider_id=None, resources=None, tags=None, enterprise_project_id=None, auto_bind=None, bind_rules=None, user_id=None, created_at=None, auto_expand=None, smn_notify=None, threshold=None, sys_lock_source_service=None, locked=None):
-        """Vault
+        r"""Vault
 
         The model defined in huaweicloud sdk
 
@@ -156,7 +156,7 @@ class Vault:
 
     @property
     def billing(self):
-        """Gets the billing of this Vault.
+        r"""Gets the billing of this Vault.
 
         :return: The billing of this Vault.
         :rtype: :class:`huaweicloudsdkcbr.v1.Billing`
@@ -165,7 +165,7 @@ class Vault:
 
     @billing.setter
     def billing(self, billing):
-        """Sets the billing of this Vault.
+        r"""Sets the billing of this Vault.
 
         :param billing: The billing of this Vault.
         :type billing: :class:`huaweicloudsdkcbr.v1.Billing`
@@ -174,7 +174,7 @@ class Vault:
 
     @property
     def description(self):
-        """Gets the description of this Vault.
+        r"""Gets the description of this Vault.
 
         存储库自定义描述信息。
 
@@ -185,7 +185,7 @@ class Vault:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Vault.
+        r"""Sets the description of this Vault.
 
         存储库自定义描述信息。
 
@@ -196,7 +196,7 @@ class Vault:
 
     @property
     def id(self):
-        """Gets the id of this Vault.
+        r"""Gets the id of this Vault.
 
         存储库ID
 
@@ -207,7 +207,7 @@ class Vault:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Vault.
+        r"""Sets the id of this Vault.
 
         存储库ID
 
@@ -218,7 +218,7 @@ class Vault:
 
     @property
     def name(self):
-        """Gets the name of this Vault.
+        r"""Gets the name of this Vault.
 
         存储库名称
 
@@ -229,7 +229,7 @@ class Vault:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Vault.
+        r"""Sets the name of this Vault.
 
         存储库名称
 
@@ -240,7 +240,7 @@ class Vault:
 
     @property
     def project_id(self):
-        """Gets the project_id of this Vault.
+        r"""Gets the project_id of this Vault.
 
         项目ID
 
@@ -251,7 +251,7 @@ class Vault:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this Vault.
+        r"""Sets the project_id of this Vault.
 
         项目ID
 
@@ -262,7 +262,7 @@ class Vault:
 
     @property
     def provider_id(self):
-        """Gets the provider_id of this Vault.
+        r"""Gets the provider_id of this Vault.
 
         存储库资源类型id
 
@@ -273,7 +273,7 @@ class Vault:
 
     @provider_id.setter
     def provider_id(self, provider_id):
-        """Sets the provider_id of this Vault.
+        r"""Sets the provider_id of this Vault.
 
         存储库资源类型id
 
@@ -284,7 +284,7 @@ class Vault:
 
     @property
     def resources(self):
-        """Gets the resources of this Vault.
+        r"""Gets the resources of this Vault.
 
         存储库资源
 
@@ -295,7 +295,7 @@ class Vault:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this Vault.
+        r"""Sets the resources of this Vault.
 
         存储库资源
 
@@ -306,7 +306,7 @@ class Vault:
 
     @property
     def tags(self):
-        """Gets the tags of this Vault.
+        r"""Gets the tags of this Vault.
 
         存储库标签
 
@@ -317,7 +317,7 @@ class Vault:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this Vault.
+        r"""Sets the tags of this Vault.
 
         存储库标签
 
@@ -328,7 +328,7 @@ class Vault:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this Vault.
+        r"""Gets the enterprise_project_id of this Vault.
 
         企业项目id，默认为‘0’。
 
@@ -339,7 +339,7 @@ class Vault:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this Vault.
+        r"""Sets the enterprise_project_id of this Vault.
 
         企业项目id，默认为‘0’。
 
@@ -350,7 +350,7 @@ class Vault:
 
     @property
     def auto_bind(self):
-        """Gets the auto_bind of this Vault.
+        r"""Gets the auto_bind of this Vault.
 
         是否自动绑定，默认为false，不支持。
 
@@ -361,7 +361,7 @@ class Vault:
 
     @auto_bind.setter
     def auto_bind(self, auto_bind):
-        """Sets the auto_bind of this Vault.
+        r"""Sets the auto_bind of this Vault.
 
         是否自动绑定，默认为false，不支持。
 
@@ -372,7 +372,7 @@ class Vault:
 
     @property
     def bind_rules(self):
-        """Gets the bind_rules of this Vault.
+        r"""Gets the bind_rules of this Vault.
 
         :return: The bind_rules of this Vault.
         :rtype: :class:`huaweicloudsdkcbr.v1.VaultBindRules`
@@ -381,7 +381,7 @@ class Vault:
 
     @bind_rules.setter
     def bind_rules(self, bind_rules):
-        """Sets the bind_rules of this Vault.
+        r"""Sets the bind_rules of this Vault.
 
         :param bind_rules: The bind_rules of this Vault.
         :type bind_rules: :class:`huaweicloudsdkcbr.v1.VaultBindRules`
@@ -390,7 +390,7 @@ class Vault:
 
     @property
     def user_id(self):
-        """Gets the user_id of this Vault.
+        r"""Gets the user_id of this Vault.
 
         用户id
 
@@ -401,7 +401,7 @@ class Vault:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this Vault.
+        r"""Sets the user_id of this Vault.
 
         用户id
 
@@ -412,7 +412,7 @@ class Vault:
 
     @property
     def created_at(self):
-        """Gets the created_at of this Vault.
+        r"""Gets the created_at of this Vault.
 
         创建时间,例如:\"2020-02-05T10:38:34.209782\"
 
@@ -423,7 +423,7 @@ class Vault:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Vault.
+        r"""Sets the created_at of this Vault.
 
         创建时间,例如:\"2020-02-05T10:38:34.209782\"
 
@@ -434,7 +434,7 @@ class Vault:
 
     @property
     def auto_expand(self):
-        """Gets the auto_expand of this Vault.
+        r"""Gets the auto_expand of this Vault.
 
         是否开启存储库自动扩容能力（只支持按需存储库）。
 
@@ -445,7 +445,7 @@ class Vault:
 
     @auto_expand.setter
     def auto_expand(self, auto_expand):
-        """Sets the auto_expand of this Vault.
+        r"""Sets the auto_expand of this Vault.
 
         是否开启存储库自动扩容能力（只支持按需存储库）。
 
@@ -456,7 +456,7 @@ class Vault:
 
     @property
     def smn_notify(self):
-        """Gets the smn_notify of this Vault.
+        r"""Gets the smn_notify of this Vault.
 
         存储库smn消息通知开关
 
@@ -467,7 +467,7 @@ class Vault:
 
     @smn_notify.setter
     def smn_notify(self, smn_notify):
-        """Sets the smn_notify of this Vault.
+        r"""Sets the smn_notify of this Vault.
 
         存储库smn消息通知开关
 
@@ -478,7 +478,7 @@ class Vault:
 
     @property
     def threshold(self):
-        """Gets the threshold of this Vault.
+        r"""Gets the threshold of this Vault.
 
         存储库容量阈值，已用容量占总容量达到此百分比即发送相关通知
 
@@ -489,7 +489,7 @@ class Vault:
 
     @threshold.setter
     def threshold(self, threshold):
-        """Sets the threshold of this Vault.
+        r"""Sets the threshold of this Vault.
 
         存储库容量阈值，已用容量占总容量达到此百分比即发送相关通知
 
@@ -500,7 +500,7 @@ class Vault:
 
     @property
     def sys_lock_source_service(self):
-        """Gets the sys_lock_source_service of this Vault.
+        r"""Gets the sys_lock_source_service of this Vault.
 
         用于标识SMB服务
 
@@ -511,7 +511,7 @@ class Vault:
 
     @sys_lock_source_service.setter
     def sys_lock_source_service(self, sys_lock_source_service):
-        """Sets the sys_lock_source_service of this Vault.
+        r"""Sets the sys_lock_source_service of this Vault.
 
         用于标识SMB服务
 
@@ -522,7 +522,7 @@ class Vault:
 
     @property
     def locked(self):
-        """Gets the locked of this Vault.
+        r"""Gets the locked of this Vault.
 
         用于标识该存储库是否已锁定
 
@@ -533,7 +533,7 @@ class Vault:
 
     @locked.setter
     def locked(self, locked):
-        """Sets the locked of this Vault.
+        r"""Sets the locked of this Vault.
 
         用于标识该存储库是否已锁定
 

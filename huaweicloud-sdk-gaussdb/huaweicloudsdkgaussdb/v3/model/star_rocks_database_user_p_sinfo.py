@@ -31,7 +31,7 @@ class StarRocksDatabaseUserPSinfo:
     }
 
     def __init__(self, user_name=None, databases=None, dml=None, ddl=None):
-        """StarRocksDatabaseUserPSinfo
+        r"""StarRocksDatabaseUserPSinfo
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class StarRocksDatabaseUserPSinfo:
 
     @property
     def user_name(self):
-        """Gets the user_name of this StarRocksDatabaseUserPSinfo.
+        r"""Gets the user_name of this StarRocksDatabaseUserPSinfo.
 
         数据库账号名。
 
@@ -74,7 +74,7 @@ class StarRocksDatabaseUserPSinfo:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this StarRocksDatabaseUserPSinfo.
+        r"""Sets the user_name of this StarRocksDatabaseUserPSinfo.
 
         数据库账号名。
 
@@ -85,7 +85,7 @@ class StarRocksDatabaseUserPSinfo:
 
     @property
     def databases(self):
-        """Gets the databases of this StarRocksDatabaseUserPSinfo.
+        r"""Gets the databases of this StarRocksDatabaseUserPSinfo.
 
         数据库列表。
 
@@ -96,7 +96,7 @@ class StarRocksDatabaseUserPSinfo:
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this StarRocksDatabaseUserPSinfo.
+        r"""Sets the databases of this StarRocksDatabaseUserPSinfo.
 
         数据库列表。
 
@@ -107,7 +107,7 @@ class StarRocksDatabaseUserPSinfo:
 
     @property
     def dml(self):
-        """Gets the dml of this StarRocksDatabaseUserPSinfo.
+        r"""Gets the dml of this StarRocksDatabaseUserPSinfo.
 
         DML权限。 取值范围： - 0：读写权限 - 1：只读权限 - 2：只读和设置权限 - 3：读写和设置权限
 
@@ -118,7 +118,7 @@ class StarRocksDatabaseUserPSinfo:
 
     @dml.setter
     def dml(self, dml):
-        """Sets the dml of this StarRocksDatabaseUserPSinfo.
+        r"""Sets the dml of this StarRocksDatabaseUserPSinfo.
 
         DML权限。 取值范围： - 0：读写权限 - 1：只读权限 - 2：只读和设置权限 - 3：读写和设置权限
 
@@ -129,7 +129,7 @@ class StarRocksDatabaseUserPSinfo:
 
     @property
     def ddl(self):
-        """Gets the ddl of this StarRocksDatabaseUserPSinfo.
+        r"""Gets the ddl of this StarRocksDatabaseUserPSinfo.
 
         DDL权限。 取值范围： - 0：无DDL权限 - 1：有DDL权限
 
@@ -140,7 +140,7 @@ class StarRocksDatabaseUserPSinfo:
 
     @ddl.setter
     def ddl(self, ddl):
-        """Sets the ddl of this StarRocksDatabaseUserPSinfo.
+        r"""Sets the ddl of this StarRocksDatabaseUserPSinfo.
 
         DDL权限。 取值范围： - 0：无DDL权限 - 1：有DDL权限
 

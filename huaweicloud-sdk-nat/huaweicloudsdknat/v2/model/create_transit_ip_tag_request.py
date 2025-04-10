@@ -27,7 +27,7 @@ class CreateTransitIpTagRequest:
     }
 
     def __init__(self, resource_id=None, body=None):
-        """CreateTransitIpTagRequest
+        r"""CreateTransitIpTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateTransitIpTagRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this CreateTransitIpTagRequest.
+        r"""Gets the resource_id of this CreateTransitIpTagRequest.
 
         中转IP的ID。
 
@@ -60,7 +60,7 @@ class CreateTransitIpTagRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this CreateTransitIpTagRequest.
+        r"""Sets the resource_id of this CreateTransitIpTagRequest.
 
         中转IP的ID。
 
@@ -71,7 +71,7 @@ class CreateTransitIpTagRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateTransitIpTagRequest.
+        r"""Gets the body of this CreateTransitIpTagRequest.
 
         :return: The body of this CreateTransitIpTagRequest.
         :rtype: :class:`huaweicloudsdknat.v2.CreateResourceTagRequestBody`
@@ -80,7 +80,7 @@ class CreateTransitIpTagRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTransitIpTagRequest.
+        r"""Sets the body of this CreateTransitIpTagRequest.
 
         :param body: The body of this CreateTransitIpTagRequest.
         :type body: :class:`huaweicloudsdknat.v2.CreateResourceTagRequestBody`

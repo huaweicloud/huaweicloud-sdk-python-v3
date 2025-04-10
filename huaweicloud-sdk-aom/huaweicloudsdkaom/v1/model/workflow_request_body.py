@@ -49,7 +49,7 @@ class WorkflowRequestBody:
     }
 
     def __init__(self, name=None, type=None, description=None, tags=None, template_name=None, template_id=None, input=None, quote=None, job_name=None, job_id=None, service_scenario=None, service_name=None, task_type=None):
-        """WorkflowRequestBody
+        r"""WorkflowRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -122,7 +122,7 @@ class WorkflowRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this WorkflowRequestBody.
+        r"""Gets the name of this WorkflowRequestBody.
 
         工作流名称，需要满足中文、英文大小写、数字、中划线和下划线{1,64}。
 
@@ -133,7 +133,7 @@ class WorkflowRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this WorkflowRequestBody.
+        r"""Sets the name of this WorkflowRequestBody.
 
         工作流名称，需要满足中文、英文大小写、数字、中划线和下划线{1,64}。
 
@@ -144,7 +144,7 @@ class WorkflowRequestBody:
 
     @property
     def type(self):
-        """Gets the type of this WorkflowRequestBody.
+        r"""Gets the type of this WorkflowRequestBody.
 
         工作流类型，可以为cron、manual
 
@@ -155,7 +155,7 @@ class WorkflowRequestBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this WorkflowRequestBody.
+        r"""Sets the type of this WorkflowRequestBody.
 
         工作流类型，可以为cron、manual
 
@@ -166,7 +166,7 @@ class WorkflowRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this WorkflowRequestBody.
+        r"""Gets the description of this WorkflowRequestBody.
 
         工作流描述信息。
 
@@ -177,7 +177,7 @@ class WorkflowRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this WorkflowRequestBody.
+        r"""Sets the description of this WorkflowRequestBody.
 
         工作流描述信息。
 
@@ -188,7 +188,7 @@ class WorkflowRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this WorkflowRequestBody.
+        r"""Gets the tags of this WorkflowRequestBody.
 
         标签键和值列表，标签键值对数量范围是0至20。
 
@@ -199,7 +199,7 @@ class WorkflowRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this WorkflowRequestBody.
+        r"""Sets the tags of this WorkflowRequestBody.
 
         标签键和值列表，标签键值对数量范围是0至20。
 
@@ -210,7 +210,7 @@ class WorkflowRequestBody:
 
     @property
     def template_name(self):
-        """Gets the template_name of this WorkflowRequestBody.
+        r"""Gets the template_name of this WorkflowRequestBody.
 
         模板名称，示例：CMS::ECS::BulkyRunScript  CMS::ECS::BulkyStartECSInstances CMS::ECS::BulkyCleanDisks
 
@@ -221,7 +221,7 @@ class WorkflowRequestBody:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this WorkflowRequestBody.
+        r"""Sets the template_name of this WorkflowRequestBody.
 
         模板名称，示例：CMS::ECS::BulkyRunScript  CMS::ECS::BulkyStartECSInstances CMS::ECS::BulkyCleanDisks
 
@@ -232,7 +232,7 @@ class WorkflowRequestBody:
 
     @property
     def template_id(self):
-        """Gets the template_id of this WorkflowRequestBody.
+        r"""Gets the template_id of this WorkflowRequestBody.
 
         模板id。
 
@@ -243,7 +243,7 @@ class WorkflowRequestBody:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this WorkflowRequestBody.
+        r"""Sets the template_id of this WorkflowRequestBody.
 
         模板id。
 
@@ -254,7 +254,7 @@ class WorkflowRequestBody:
 
     @property
     def input(self):
-        """Gets the input of this WorkflowRequestBody.
+        r"""Gets the input of this WorkflowRequestBody.
 
         任务执行时需要的参数列表。
 
@@ -265,7 +265,7 @@ class WorkflowRequestBody:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this WorkflowRequestBody.
+        r"""Sets the input of this WorkflowRequestBody.
 
         任务执行时需要的参数列表。
 
@@ -276,7 +276,7 @@ class WorkflowRequestBody:
 
     @property
     def quote(self):
-        """Gets the quote of this WorkflowRequestBody.
+        r"""Gets the quote of this WorkflowRequestBody.
 
         引用，参数引用。
 
@@ -287,7 +287,7 @@ class WorkflowRequestBody:
 
     @quote.setter
     def quote(self, quote):
-        """Sets the quote of this WorkflowRequestBody.
+        r"""Sets the quote of this WorkflowRequestBody.
 
         引用，参数引用。
 
@@ -298,7 +298,7 @@ class WorkflowRequestBody:
 
     @property
     def job_name(self):
-        """Gets the job_name of this WorkflowRequestBody.
+        r"""Gets the job_name of this WorkflowRequestBody.
 
         作业名称。
 
@@ -309,7 +309,7 @@ class WorkflowRequestBody:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this WorkflowRequestBody.
+        r"""Sets the job_name of this WorkflowRequestBody.
 
         作业名称。
 
@@ -320,7 +320,7 @@ class WorkflowRequestBody:
 
     @property
     def job_id(self):
-        """Gets the job_id of this WorkflowRequestBody.
+        r"""Gets the job_id of this WorkflowRequestBody.
 
         作业id。
 
@@ -331,7 +331,7 @@ class WorkflowRequestBody:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this WorkflowRequestBody.
+        r"""Sets the job_id of this WorkflowRequestBody.
 
         作业id。
 
@@ -342,7 +342,7 @@ class WorkflowRequestBody:
 
     @property
     def service_scenario(self):
-        """Gets the service_scenario of this WorkflowRequestBody.
+        r"""Gets the service_scenario of this WorkflowRequestBody.
 
         服务场景分类。
 
@@ -353,7 +353,7 @@ class WorkflowRequestBody:
 
     @service_scenario.setter
     def service_scenario(self, service_scenario):
-        """Sets the service_scenario of this WorkflowRequestBody.
+        r"""Sets the service_scenario of this WorkflowRequestBody.
 
         服务场景分类。
 
@@ -364,7 +364,7 @@ class WorkflowRequestBody:
 
     @property
     def service_name(self):
-        """Gets the service_name of this WorkflowRequestBody.
+        r"""Gets the service_name of this WorkflowRequestBody.
 
         服务名称。
 
@@ -375,7 +375,7 @@ class WorkflowRequestBody:
 
     @service_name.setter
     def service_name(self, service_name):
-        """Sets the service_name of this WorkflowRequestBody.
+        r"""Sets the service_name of this WorkflowRequestBody.
 
         服务名称。
 
@@ -386,7 +386,7 @@ class WorkflowRequestBody:
 
     @property
     def task_type(self):
-        """Gets the task_type of this WorkflowRequestBody.
+        r"""Gets the task_type of this WorkflowRequestBody.
 
         任务类型。package,script,job,cloud,standard,customize
 
@@ -397,7 +397,7 @@ class WorkflowRequestBody:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this WorkflowRequestBody.
+        r"""Sets the task_type of this WorkflowRequestBody.
 
         任务类型。package,script,job,cloud,standard,customize
 

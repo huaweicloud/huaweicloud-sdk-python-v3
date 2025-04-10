@@ -26,7 +26,7 @@ class DeleteTagResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DeleteTagResponse
+        r"""DeleteTagResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteTagResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this DeleteTagResponse.
+        r"""Gets the body of this DeleteTagResponse.
 
         :return: The body of this DeleteTagResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteTagResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteTagResponse.
+        r"""Sets the body of this DeleteTagResponse.
 
         :param body: The body of this DeleteTagResponse.
         :type body: str

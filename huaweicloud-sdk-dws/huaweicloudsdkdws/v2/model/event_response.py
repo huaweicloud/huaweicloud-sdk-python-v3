@@ -53,7 +53,7 @@ class EventResponse:
     }
 
     def __init__(self, category=None, description=None, event_id=None, name=None, display_name=None, name_space=None, severity=None, source_type=None, occur_time=None, project_id=None, source_id=None, source_name=None, status=None, subject=None, context=None):
-        """EventResponse
+        r"""EventResponse
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class EventResponse:
 
     @property
     def category(self):
-        """Gets the category of this EventResponse.
+        r"""Gets the category of this EventResponse.
 
         事件类别
 
@@ -152,7 +152,7 @@ class EventResponse:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this EventResponse.
+        r"""Sets the category of this EventResponse.
 
         事件类别
 
@@ -163,7 +163,7 @@ class EventResponse:
 
     @property
     def description(self):
-        """Gets the description of this EventResponse.
+        r"""Gets the description of this EventResponse.
 
         事件描述
 
@@ -174,7 +174,7 @@ class EventResponse:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EventResponse.
+        r"""Sets the description of this EventResponse.
 
         事件描述
 
@@ -185,7 +185,7 @@ class EventResponse:
 
     @property
     def event_id(self):
-        """Gets the event_id of this EventResponse.
+        r"""Gets the event_id of this EventResponse.
 
         事件ID
 
@@ -196,7 +196,7 @@ class EventResponse:
 
     @event_id.setter
     def event_id(self, event_id):
-        """Sets the event_id of this EventResponse.
+        r"""Sets the event_id of this EventResponse.
 
         事件ID
 
@@ -207,7 +207,7 @@ class EventResponse:
 
     @property
     def name(self):
-        """Gets the name of this EventResponse.
+        r"""Gets the name of this EventResponse.
 
         事件定义名称
 
@@ -218,7 +218,7 @@ class EventResponse:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EventResponse.
+        r"""Sets the name of this EventResponse.
 
         事件定义名称
 
@@ -229,7 +229,7 @@ class EventResponse:
 
     @property
     def display_name(self):
-        """Gets the display_name of this EventResponse.
+        r"""Gets the display_name of this EventResponse.
 
         事件显示名称
 
@@ -240,7 +240,7 @@ class EventResponse:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this EventResponse.
+        r"""Sets the display_name of this EventResponse.
 
         事件显示名称
 
@@ -251,7 +251,7 @@ class EventResponse:
 
     @property
     def name_space(self):
-        """Gets the name_space of this EventResponse.
+        r"""Gets the name_space of this EventResponse.
 
         所属服务
 
@@ -262,7 +262,7 @@ class EventResponse:
 
     @name_space.setter
     def name_space(self, name_space):
-        """Sets the name_space of this EventResponse.
+        r"""Sets the name_space of this EventResponse.
 
         所属服务
 
@@ -273,7 +273,7 @@ class EventResponse:
 
     @property
     def severity(self):
-        """Gets the severity of this EventResponse.
+        r"""Gets the severity of this EventResponse.
 
         事件级别
 
@@ -284,7 +284,7 @@ class EventResponse:
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this EventResponse.
+        r"""Sets the severity of this EventResponse.
 
         事件级别
 
@@ -295,7 +295,7 @@ class EventResponse:
 
     @property
     def source_type(self):
-        """Gets the source_type of this EventResponse.
+        r"""Gets the source_type of this EventResponse.
 
         事件源类别
 
@@ -306,7 +306,7 @@ class EventResponse:
 
     @source_type.setter
     def source_type(self, source_type):
-        """Sets the source_type of this EventResponse.
+        r"""Sets the source_type of this EventResponse.
 
         事件源类别
 
@@ -317,7 +317,7 @@ class EventResponse:
 
     @property
     def occur_time(self):
-        """Gets the occur_time of this EventResponse.
+        r"""Gets the occur_time of this EventResponse.
 
         时间
 
@@ -328,7 +328,7 @@ class EventResponse:
 
     @occur_time.setter
     def occur_time(self, occur_time):
-        """Sets the occur_time of this EventResponse.
+        r"""Sets the occur_time of this EventResponse.
 
         时间
 
@@ -339,7 +339,7 @@ class EventResponse:
 
     @property
     def project_id(self):
-        """Gets the project_id of this EventResponse.
+        r"""Gets the project_id of this EventResponse.
 
         租户凭证ID
 
@@ -350,7 +350,7 @@ class EventResponse:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this EventResponse.
+        r"""Sets the project_id of this EventResponse.
 
         租户凭证ID
 
@@ -361,7 +361,7 @@ class EventResponse:
 
     @property
     def source_id(self):
-        """Gets the source_id of this EventResponse.
+        r"""Gets the source_id of this EventResponse.
 
         事件源ID
 
@@ -372,7 +372,7 @@ class EventResponse:
 
     @source_id.setter
     def source_id(self, source_id):
-        """Sets the source_id of this EventResponse.
+        r"""Sets the source_id of this EventResponse.
 
         事件源ID
 
@@ -383,7 +383,7 @@ class EventResponse:
 
     @property
     def source_name(self):
-        """Gets the source_name of this EventResponse.
+        r"""Gets the source_name of this EventResponse.
 
         事件源名称
 
@@ -394,7 +394,7 @@ class EventResponse:
 
     @source_name.setter
     def source_name(self, source_name):
-        """Sets the source_name of this EventResponse.
+        r"""Sets the source_name of this EventResponse.
 
         事件源名称
 
@@ -405,7 +405,7 @@ class EventResponse:
 
     @property
     def status(self):
-        """Gets the status of this EventResponse.
+        r"""Gets the status of this EventResponse.
 
         状态
 
@@ -416,7 +416,7 @@ class EventResponse:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this EventResponse.
+        r"""Sets the status of this EventResponse.
 
         状态
 
@@ -427,7 +427,7 @@ class EventResponse:
 
     @property
     def subject(self):
-        """Gets the subject of this EventResponse.
+        r"""Gets the subject of this EventResponse.
 
         事件主题
 
@@ -438,7 +438,7 @@ class EventResponse:
 
     @subject.setter
     def subject(self, subject):
-        """Sets the subject of this EventResponse.
+        r"""Sets the subject of this EventResponse.
 
         事件主题
 
@@ -449,7 +449,7 @@ class EventResponse:
 
     @property
     def context(self):
-        """Gets the context of this EventResponse.
+        r"""Gets the context of this EventResponse.
 
         事件信息
 
@@ -460,7 +460,7 @@ class EventResponse:
 
     @context.setter
     def context(self, context):
-        """Sets the context of this EventResponse.
+        r"""Sets the context of this EventResponse.
 
         事件信息
 

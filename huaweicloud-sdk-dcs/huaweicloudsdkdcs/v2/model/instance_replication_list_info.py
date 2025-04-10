@@ -39,7 +39,7 @@ class InstanceReplicationListInfo:
     }
 
     def __init__(self, replication_role=None, replication_ip=None, is_replication=None, replication_id=None, node_id=None, status=None, az_code=None, dimensions=None):
-        """InstanceReplicationListInfo
+        r"""InstanceReplicationListInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class InstanceReplicationListInfo:
 
     @property
     def replication_role(self):
-        """Gets the replication_role of this InstanceReplicationListInfo.
+        r"""Gets the replication_role of this InstanceReplicationListInfo.
 
         副本角色，取值有： - master：表示主节点。 - slave：表示从节点。 
 
@@ -103,7 +103,7 @@ class InstanceReplicationListInfo:
 
     @replication_role.setter
     def replication_role(self, replication_role):
-        """Sets the replication_role of this InstanceReplicationListInfo.
+        r"""Sets the replication_role of this InstanceReplicationListInfo.
 
         副本角色，取值有： - master：表示主节点。 - slave：表示从节点。 
 
@@ -114,7 +114,7 @@ class InstanceReplicationListInfo:
 
     @property
     def replication_ip(self):
-        """Gets the replication_ip of this InstanceReplicationListInfo.
+        r"""Gets the replication_ip of this InstanceReplicationListInfo.
 
         副本IP。
 
@@ -125,7 +125,7 @@ class InstanceReplicationListInfo:
 
     @replication_ip.setter
     def replication_ip(self, replication_ip):
-        """Sets the replication_ip of this InstanceReplicationListInfo.
+        r"""Sets the replication_ip of this InstanceReplicationListInfo.
 
         副本IP。
 
@@ -136,7 +136,7 @@ class InstanceReplicationListInfo:
 
     @property
     def is_replication(self):
-        """Gets the is_replication of this InstanceReplicationListInfo.
+        r"""Gets the is_replication of this InstanceReplicationListInfo.
 
         是否是新加副本。
 
@@ -147,7 +147,7 @@ class InstanceReplicationListInfo:
 
     @is_replication.setter
     def is_replication(self, is_replication):
-        """Sets the is_replication of this InstanceReplicationListInfo.
+        r"""Sets the is_replication of this InstanceReplicationListInfo.
 
         是否是新加副本。
 
@@ -158,7 +158,7 @@ class InstanceReplicationListInfo:
 
     @property
     def replication_id(self):
-        """Gets the replication_id of this InstanceReplicationListInfo.
+        r"""Gets the replication_id of this InstanceReplicationListInfo.
 
         副本id。
 
@@ -169,7 +169,7 @@ class InstanceReplicationListInfo:
 
     @replication_id.setter
     def replication_id(self, replication_id):
-        """Sets the replication_id of this InstanceReplicationListInfo.
+        r"""Sets the replication_id of this InstanceReplicationListInfo.
 
         副本id。
 
@@ -180,7 +180,7 @@ class InstanceReplicationListInfo:
 
     @property
     def node_id(self):
-        """Gets the node_id of this InstanceReplicationListInfo.
+        r"""Gets the node_id of this InstanceReplicationListInfo.
 
         节点id。
 
@@ -191,7 +191,7 @@ class InstanceReplicationListInfo:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this InstanceReplicationListInfo.
+        r"""Sets the node_id of this InstanceReplicationListInfo.
 
         节点id。
 
@@ -202,7 +202,7 @@ class InstanceReplicationListInfo:
 
     @property
     def status(self):
-        """Gets the status of this InstanceReplicationListInfo.
+        r"""Gets the status of this InstanceReplicationListInfo.
 
         副本状态。
 
@@ -213,7 +213,7 @@ class InstanceReplicationListInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this InstanceReplicationListInfo.
+        r"""Sets the status of this InstanceReplicationListInfo.
 
         副本状态。
 
@@ -224,7 +224,7 @@ class InstanceReplicationListInfo:
 
     @property
     def az_code(self):
-        """Gets the az_code of this InstanceReplicationListInfo.
+        r"""Gets the az_code of this InstanceReplicationListInfo.
 
         副本所在的可用区
 
@@ -235,7 +235,7 @@ class InstanceReplicationListInfo:
 
     @az_code.setter
     def az_code(self, az_code):
-        """Sets the az_code of this InstanceReplicationListInfo.
+        r"""Sets the az_code of this InstanceReplicationListInfo.
 
         副本所在的可用区
 
@@ -246,7 +246,7 @@ class InstanceReplicationListInfo:
 
     @property
     def dimensions(self):
-        """Gets the dimensions of this InstanceReplicationListInfo.
+        r"""Gets the dimensions of this InstanceReplicationListInfo.
 
         副本对应的监控指标维度信息。可用于调用云监控服务的查询监控数据指标相关接口 - 副本的监控维度为多维度，返回数组中包含两个维度信息。从云监控查询监控数据时，要按多维度传递指标维度参数，才能查询到监控指标值 - 第一个维度为副本父维度信息，维度名称为dcs_instance_id，维度值对应副本所在的实例ID - 第二个维度，维度名称为dcs_cluster_redis_node,维度值为副本的监控对象ID，与副本ID和节点ID不同。 
 
@@ -257,7 +257,7 @@ class InstanceReplicationListInfo:
 
     @dimensions.setter
     def dimensions(self, dimensions):
-        """Sets the dimensions of this InstanceReplicationListInfo.
+        r"""Sets the dimensions of this InstanceReplicationListInfo.
 
         副本对应的监控指标维度信息。可用于调用云监控服务的查询监控数据指标相关接口 - 副本的监控维度为多维度，返回数组中包含两个维度信息。从云监控查询监控数据时，要按多维度传递指标维度参数，才能查询到监控指标值 - 第一个维度为副本父维度信息，维度名称为dcs_instance_id，维度值对应副本所在的实例ID - 第二个维度，维度名称为dcs_cluster_redis_node,维度值为副本的监控对象ID，与副本ID和节点ID不同。 
 

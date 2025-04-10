@@ -27,7 +27,7 @@ class UpdateSubnetBandwidthControlListRequest:
     }
 
     def __init__(self, bandwidth_id=None, body=None):
-        """UpdateSubnetBandwidthControlListRequest
+        r"""UpdateSubnetBandwidthControlListRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateSubnetBandwidthControlListRequest:
 
     @property
     def bandwidth_id(self):
-        """Gets the bandwidth_id of this UpdateSubnetBandwidthControlListRequest.
+        r"""Gets the bandwidth_id of this UpdateSubnetBandwidthControlListRequest.
 
         云办公带宽id。
 
@@ -60,7 +60,7 @@ class UpdateSubnetBandwidthControlListRequest:
 
     @bandwidth_id.setter
     def bandwidth_id(self, bandwidth_id):
-        """Sets the bandwidth_id of this UpdateSubnetBandwidthControlListRequest.
+        r"""Sets the bandwidth_id of this UpdateSubnetBandwidthControlListRequest.
 
         云办公带宽id。
 
@@ -71,7 +71,7 @@ class UpdateSubnetBandwidthControlListRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSubnetBandwidthControlListRequest.
+        r"""Gets the body of this UpdateSubnetBandwidthControlListRequest.
 
         :return: The body of this UpdateSubnetBandwidthControlListRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.UpdateSubnetBandwidthControlListReq`
@@ -80,7 +80,7 @@ class UpdateSubnetBandwidthControlListRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSubnetBandwidthControlListRequest.
+        r"""Sets the body of this UpdateSubnetBandwidthControlListRequest.
 
         :param body: The body of this UpdateSubnetBandwidthControlListRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.UpdateSubnetBandwidthControlListReq`

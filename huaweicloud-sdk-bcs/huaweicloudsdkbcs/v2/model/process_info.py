@@ -33,7 +33,7 @@ class ProcessInfo:
     }
 
     def __init__(self, step_name=None, status=None, detail=None, sub_steps=None, serial_num=None):
-        """ProcessInfo
+        r"""ProcessInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ProcessInfo:
 
     @property
     def step_name(self):
-        """Gets the step_name of this ProcessInfo.
+        r"""Gets the step_name of this ProcessInfo.
 
         操作名
 
@@ -82,7 +82,7 @@ class ProcessInfo:
 
     @step_name.setter
     def step_name(self, step_name):
-        """Sets the step_name of this ProcessInfo.
+        r"""Sets the step_name of this ProcessInfo.
 
         操作名
 
@@ -93,7 +93,7 @@ class ProcessInfo:
 
     @property
     def status(self):
-        """Gets the status of this ProcessInfo.
+        r"""Gets the status of this ProcessInfo.
 
         操作状态
 
@@ -104,7 +104,7 @@ class ProcessInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ProcessInfo.
+        r"""Sets the status of this ProcessInfo.
 
         操作状态
 
@@ -115,7 +115,7 @@ class ProcessInfo:
 
     @property
     def detail(self):
-        """Gets the detail of this ProcessInfo.
+        r"""Gets the detail of this ProcessInfo.
 
         操作详情
 
@@ -126,7 +126,7 @@ class ProcessInfo:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this ProcessInfo.
+        r"""Sets the detail of this ProcessInfo.
 
         操作详情
 
@@ -137,7 +137,7 @@ class ProcessInfo:
 
     @property
     def sub_steps(self):
-        """Gets the sub_steps of this ProcessInfo.
+        r"""Gets the sub_steps of this ProcessInfo.
 
         子操作, \"map[string][SubDetail] key:子操作名 value:子操作结果\"
 
@@ -148,7 +148,7 @@ class ProcessInfo:
 
     @sub_steps.setter
     def sub_steps(self, sub_steps):
-        """Sets the sub_steps of this ProcessInfo.
+        r"""Sets the sub_steps of this ProcessInfo.
 
         子操作, \"map[string][SubDetail] key:子操作名 value:子操作结果\"
 
@@ -159,7 +159,7 @@ class ProcessInfo:
 
     @property
     def serial_num(self):
-        """Gets the serial_num of this ProcessInfo.
+        r"""Gets the serial_num of this ProcessInfo.
 
         序列号
 
@@ -170,7 +170,7 @@ class ProcessInfo:
 
     @serial_num.setter
     def serial_num(self, serial_num):
-        """Sets the serial_num of this ProcessInfo.
+        r"""Sets the serial_num of this ProcessInfo.
 
         序列号
 

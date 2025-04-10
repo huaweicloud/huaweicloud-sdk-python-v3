@@ -27,7 +27,7 @@ class ConfigValues:
     }
 
     def __init__(self, configs=None, extended_configs=None):
-        """ConfigValues
+        r"""ConfigValues
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ConfigValues:
 
     @property
     def configs(self):
-        """Gets the configs of this ConfigValues.
+        r"""Gets the configs of this ConfigValues.
 
         源连接参数、目的连接参数和作业任务参数，它们的配置数据结构相同，其中“inputs”里的参数不一样，详细请参见configs数据结构说明
 
@@ -60,7 +60,7 @@ class ConfigValues:
 
     @configs.setter
     def configs(self, configs):
-        """Sets the configs of this ConfigValues.
+        r"""Sets the configs of this ConfigValues.
 
         源连接参数、目的连接参数和作业任务参数，它们的配置数据结构相同，其中“inputs”里的参数不一样，详细请参见configs数据结构说明
 
@@ -71,7 +71,7 @@ class ConfigValues:
 
     @property
     def extended_configs(self):
-        """Gets the extended_configs of this ConfigValues.
+        r"""Gets the extended_configs of this ConfigValues.
 
         :return: The extended_configs of this ConfigValues.
         :rtype: :class:`huaweicloudsdkcdm.v1.ExtendedConfigs`
@@ -80,7 +80,7 @@ class ConfigValues:
 
     @extended_configs.setter
     def extended_configs(self, extended_configs):
-        """Sets the extended_configs of this ConfigValues.
+        r"""Sets the extended_configs of this ConfigValues.
 
         :param extended_configs: The extended_configs of this ConfigValues.
         :type extended_configs: :class:`huaweicloudsdkcdm.v1.ExtendedConfigs`

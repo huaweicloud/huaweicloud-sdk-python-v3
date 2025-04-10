@@ -25,7 +25,7 @@ class LayerRotationConfig:
     }
 
     def __init__(self, angle=None):
-        """LayerRotationConfig
+        r"""LayerRotationConfig
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class LayerRotationConfig:
 
     @property
     def angle(self):
-        """Gets the angle of this LayerRotationConfig.
+        r"""Gets the angle of this LayerRotationConfig.
 
         **参数解释**： 旋转角度。 **取值范围**： 角度范围0-360度。 **默认取值**： 0度。 **约束限制**： 以素材中心点旋转。
 
@@ -54,7 +54,7 @@ class LayerRotationConfig:
 
     @angle.setter
     def angle(self, angle):
-        """Sets the angle of this LayerRotationConfig.
+        r"""Sets the angle of this LayerRotationConfig.
 
         **参数解释**： 旋转角度。 **取值范围**： 角度范围0-360度。 **默认取值**： 0度。 **约束限制**： 以素材中心点旋转。
 

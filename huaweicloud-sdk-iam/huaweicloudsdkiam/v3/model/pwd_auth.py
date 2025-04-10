@@ -27,7 +27,7 @@ class PwdAuth:
     }
 
     def __init__(self, identity=None, scope=None):
-        """PwdAuth
+        r"""PwdAuth
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class PwdAuth:
 
     @property
     def identity(self):
-        """Gets the identity of this PwdAuth.
+        r"""Gets the identity of this PwdAuth.
 
         :return: The identity of this PwdAuth.
         :rtype: :class:`huaweicloudsdkiam.v3.PwdIdentity`
@@ -57,7 +57,7 @@ class PwdAuth:
 
     @identity.setter
     def identity(self, identity):
-        """Sets the identity of this PwdAuth.
+        r"""Sets the identity of this PwdAuth.
 
         :param identity: The identity of this PwdAuth.
         :type identity: :class:`huaweicloudsdkiam.v3.PwdIdentity`
@@ -66,7 +66,7 @@ class PwdAuth:
 
     @property
     def scope(self):
-        """Gets the scope of this PwdAuth.
+        r"""Gets the scope of this PwdAuth.
 
         :return: The scope of this PwdAuth.
         :rtype: :class:`huaweicloudsdkiam.v3.AuthScope`
@@ -75,7 +75,7 @@ class PwdAuth:
 
     @scope.setter
     def scope(self, scope):
-        """Sets the scope of this PwdAuth.
+        r"""Sets the scope of this PwdAuth.
 
         :param scope: The scope of this PwdAuth.
         :type scope: :class:`huaweicloudsdkiam.v3.AuthScope`

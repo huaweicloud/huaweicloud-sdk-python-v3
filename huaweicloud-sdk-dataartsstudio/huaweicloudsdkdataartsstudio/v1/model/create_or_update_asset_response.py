@@ -24,7 +24,7 @@ class CreateOrUpdateAssetResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateOrUpdateAssetResponse
+        r"""CreateOrUpdateAssetResponse
 
         The model defined in huaweicloud sdk
 

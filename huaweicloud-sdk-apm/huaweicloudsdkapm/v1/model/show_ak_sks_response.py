@@ -26,7 +26,7 @@ class ShowAkSksResponse(SdkResponse):
     }
 
     def __init__(self, access_ak_sk_models=None):
-        """ShowAkSksResponse
+        r"""ShowAkSksResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowAkSksResponse(SdkResponse):
 
     @property
     def access_ak_sk_models(self):
-        """Gets the access_ak_sk_models of this ShowAkSksResponse.
+        r"""Gets the access_ak_sk_models of this ShowAkSksResponse.
 
         :return: The access_ak_sk_models of this ShowAkSksResponse.
         :rtype: list[:class:`huaweicloudsdkapm.v1.AccessAkskVO`]
@@ -53,7 +53,7 @@ class ShowAkSksResponse(SdkResponse):
 
     @access_ak_sk_models.setter
     def access_ak_sk_models(self, access_ak_sk_models):
-        """Sets the access_ak_sk_models of this ShowAkSksResponse.
+        r"""Sets the access_ak_sk_models of this ShowAkSksResponse.
 
         :param access_ak_sk_models: The access_ak_sk_models of this ShowAkSksResponse.
         :type access_ak_sk_models: list[:class:`huaweicloudsdkapm.v1.AccessAkskVO`]

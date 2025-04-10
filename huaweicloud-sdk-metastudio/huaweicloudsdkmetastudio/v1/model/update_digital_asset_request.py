@@ -29,7 +29,7 @@ class UpdateDigitalAssetRequest:
     }
 
     def __init__(self, x_app_user_id=None, asset_id=None, body=None):
-        """UpdateDigitalAssetRequest
+        r"""UpdateDigitalAssetRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateDigitalAssetRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this UpdateDigitalAssetRequest.
+        r"""Gets the x_app_user_id of this UpdateDigitalAssetRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -67,7 +67,7 @@ class UpdateDigitalAssetRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this UpdateDigitalAssetRequest.
+        r"""Sets the x_app_user_id of this UpdateDigitalAssetRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -78,7 +78,7 @@ class UpdateDigitalAssetRequest:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this UpdateDigitalAssetRequest.
+        r"""Gets the asset_id of this UpdateDigitalAssetRequest.
 
         资产ID。
 
@@ -89,7 +89,7 @@ class UpdateDigitalAssetRequest:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this UpdateDigitalAssetRequest.
+        r"""Sets the asset_id of this UpdateDigitalAssetRequest.
 
         资产ID。
 
@@ -100,7 +100,7 @@ class UpdateDigitalAssetRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDigitalAssetRequest.
+        r"""Gets the body of this UpdateDigitalAssetRequest.
 
         :return: The body of this UpdateDigitalAssetRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateDigitalAssetRequestBody`
@@ -109,7 +109,7 @@ class UpdateDigitalAssetRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDigitalAssetRequest.
+        r"""Sets the body of this UpdateDigitalAssetRequest.
 
         :param body: The body of this UpdateDigitalAssetRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.UpdateDigitalAssetRequestBody`

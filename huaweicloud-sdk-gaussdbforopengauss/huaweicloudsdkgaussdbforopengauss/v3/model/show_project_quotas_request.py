@@ -27,7 +27,7 @@ class ShowProjectQuotasRequest:
     }
 
     def __init__(self, x_language=None, type=None):
-        """ShowProjectQuotasRequest
+        r"""ShowProjectQuotasRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ShowProjectQuotasRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowProjectQuotasRequest.
+        r"""Gets the x_language of this ShowProjectQuotasRequest.
 
         语言
 
@@ -61,7 +61,7 @@ class ShowProjectQuotasRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowProjectQuotasRequest.
+        r"""Sets the x_language of this ShowProjectQuotasRequest.
 
         语言
 
@@ -72,7 +72,7 @@ class ShowProjectQuotasRequest:
 
     @property
     def type(self):
-        """Gets the type of this ShowProjectQuotasRequest.
+        r"""Gets the type of this ShowProjectQuotasRequest.
 
         '功能说明：根据type过滤查询指定类型的配额' 取值范围：instance
 
@@ -83,7 +83,7 @@ class ShowProjectQuotasRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowProjectQuotasRequest.
+        r"""Sets the type of this ShowProjectQuotasRequest.
 
         '功能说明：根据type过滤查询指定类型的配额' 取值范围：instance
 

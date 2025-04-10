@@ -43,7 +43,7 @@ class RuleListItem:
     }
 
     def __init__(self, rule_set=None, rule_id=None, rule_language=None, rule_name=None, rule_severity=None, rule_tages=None, right_example=None, error_example=None, revise_opinion=None, rule_desc=None):
-        """RuleListItem
+        r"""RuleListItem
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class RuleListItem:
 
     @property
     def rule_set(self):
-        """Gets the rule_set of this RuleListItem.
+        r"""Gets the rule_set of this RuleListItem.
 
         规则集规范分类
 
@@ -117,7 +117,7 @@ class RuleListItem:
 
     @rule_set.setter
     def rule_set(self, rule_set):
-        """Sets the rule_set of this RuleListItem.
+        r"""Sets the rule_set of this RuleListItem.
 
         规则集规范分类
 
@@ -128,7 +128,7 @@ class RuleListItem:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this RuleListItem.
+        r"""Gets the rule_id of this RuleListItem.
 
         规则id
 
@@ -139,7 +139,7 @@ class RuleListItem:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this RuleListItem.
+        r"""Sets the rule_id of this RuleListItem.
 
         规则id
 
@@ -150,7 +150,7 @@ class RuleListItem:
 
     @property
     def rule_language(self):
-        """Gets the rule_language of this RuleListItem.
+        r"""Gets the rule_language of this RuleListItem.
 
         规则所属语言
 
@@ -161,7 +161,7 @@ class RuleListItem:
 
     @rule_language.setter
     def rule_language(self, rule_language):
-        """Sets the rule_language of this RuleListItem.
+        r"""Sets the rule_language of this RuleListItem.
 
         规则所属语言
 
@@ -172,7 +172,7 @@ class RuleListItem:
 
     @property
     def rule_name(self):
-        """Gets the rule_name of this RuleListItem.
+        r"""Gets the rule_name of this RuleListItem.
 
         规则名称
 
@@ -183,7 +183,7 @@ class RuleListItem:
 
     @rule_name.setter
     def rule_name(self, rule_name):
-        """Sets the rule_name of this RuleListItem.
+        r"""Sets the rule_name of this RuleListItem.
 
         规则名称
 
@@ -194,7 +194,7 @@ class RuleListItem:
 
     @property
     def rule_severity(self):
-        """Gets the rule_severity of this RuleListItem.
+        r"""Gets the rule_severity of this RuleListItem.
 
         规则问题级别
 
@@ -205,7 +205,7 @@ class RuleListItem:
 
     @rule_severity.setter
     def rule_severity(self, rule_severity):
-        """Sets the rule_severity of this RuleListItem.
+        r"""Sets the rule_severity of this RuleListItem.
 
         规则问题级别
 
@@ -216,7 +216,7 @@ class RuleListItem:
 
     @property
     def rule_tages(self):
-        """Gets the rule_tages of this RuleListItem.
+        r"""Gets the rule_tages of this RuleListItem.
 
         规则标签
 
@@ -227,7 +227,7 @@ class RuleListItem:
 
     @rule_tages.setter
     def rule_tages(self, rule_tages):
-        """Sets the rule_tages of this RuleListItem.
+        r"""Sets the rule_tages of this RuleListItem.
 
         规则标签
 
@@ -238,7 +238,7 @@ class RuleListItem:
 
     @property
     def right_example(self):
-        """Gets the right_example of this RuleListItem.
+        r"""Gets the right_example of this RuleListItem.
 
         正确示例
 
@@ -249,7 +249,7 @@ class RuleListItem:
 
     @right_example.setter
     def right_example(self, right_example):
-        """Sets the right_example of this RuleListItem.
+        r"""Sets the right_example of this RuleListItem.
 
         正确示例
 
@@ -260,7 +260,7 @@ class RuleListItem:
 
     @property
     def error_example(self):
-        """Gets the error_example of this RuleListItem.
+        r"""Gets the error_example of this RuleListItem.
 
         错误示例
 
@@ -271,7 +271,7 @@ class RuleListItem:
 
     @error_example.setter
     def error_example(self, error_example):
-        """Sets the error_example of this RuleListItem.
+        r"""Sets the error_example of this RuleListItem.
 
         错误示例
 
@@ -282,7 +282,7 @@ class RuleListItem:
 
     @property
     def revise_opinion(self):
-        """Gets the revise_opinion of this RuleListItem.
+        r"""Gets the revise_opinion of this RuleListItem.
 
         修改建议
 
@@ -293,7 +293,7 @@ class RuleListItem:
 
     @revise_opinion.setter
     def revise_opinion(self, revise_opinion):
-        """Sets the revise_opinion of this RuleListItem.
+        r"""Sets the revise_opinion of this RuleListItem.
 
         修改建议
 
@@ -304,7 +304,7 @@ class RuleListItem:
 
     @property
     def rule_desc(self):
-        """Gets the rule_desc of this RuleListItem.
+        r"""Gets the rule_desc of this RuleListItem.
 
         规则描述
 
@@ -315,7 +315,7 @@ class RuleListItem:
 
     @rule_desc.setter
     def rule_desc(self, rule_desc):
-        """Sets the rule_desc of this RuleListItem.
+        r"""Sets the rule_desc of this RuleListItem.
 
         规则描述
 

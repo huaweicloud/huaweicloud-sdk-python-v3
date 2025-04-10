@@ -24,7 +24,7 @@ class BatchUpdateNodeLabelResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchUpdateNodeLabelResponse
+        r"""BatchUpdateNodeLabelResponse
 
         The model defined in huaweicloud sdk
 

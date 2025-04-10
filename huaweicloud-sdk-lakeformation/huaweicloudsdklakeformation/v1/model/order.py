@@ -27,7 +27,7 @@ class Order:
     }
 
     def __init__(self, column=None, sort_order=None):
-        """Order
+        r"""Order
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Order:
 
     @property
     def column(self):
-        """Gets the column of this Order.
+        r"""Gets the column of this Order.
 
         列的名称
 
@@ -61,7 +61,7 @@ class Order:
 
     @column.setter
     def column(self, column):
-        """Sets the column of this Order.
+        r"""Sets the column of this Order.
 
         列的名称
 
@@ -72,7 +72,7 @@ class Order:
 
     @property
     def sort_order(self):
-        """Gets the sort_order of this Order.
+        r"""Gets the sort_order of this Order.
 
         指示是按升序 (== 1) 还是降序 (==0) 对列进行排序
 
@@ -83,7 +83,7 @@ class Order:
 
     @sort_order.setter
     def sort_order(self, sort_order):
-        """Sets the sort_order of this Order.
+        r"""Sets the sort_order of this Order.
 
         指示是按升序 (== 1) 还是降序 (==0) 对列进行排序
 

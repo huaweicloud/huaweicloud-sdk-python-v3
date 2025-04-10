@@ -61,7 +61,7 @@ class CreateImageServerReq:
     }
 
     def __init__(self, name=None, description=None, root_volume=None, image_ref=None, vpc_id=None, subnet_id=None, product_id=None, flavor_id=None, availability_zone=None, attach_apps=None, authorize_accounts=None, ou_name=None, is_vdi=None, scheduler_hints=None, extra_session_type=None, extra_session_size=None, route_policy=None, tags=None, enterprise_project_id=None):
-        """CreateImageServerReq
+        r"""CreateImageServerReq
 
         The model defined in huaweicloud sdk
 
@@ -162,7 +162,7 @@ class CreateImageServerReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateImageServerReq.
+        r"""Gets the name of this CreateImageServerReq.
 
         镜像实例名称，名称需满足如下规则: 1. 由中文，英文大小写，数字，_-组成，不能有空格 2. 长度范围1~64个字符
 
@@ -173,7 +173,7 @@ class CreateImageServerReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateImageServerReq.
+        r"""Sets the name of this CreateImageServerReq.
 
         镜像实例名称，名称需满足如下规则: 1. 由中文，英文大小写，数字，_-组成，不能有空格 2. 长度范围1~64个字符
 
@@ -184,7 +184,7 @@ class CreateImageServerReq:
 
     @property
     def description(self):
-        """Gets the description of this CreateImageServerReq.
+        r"""Gets the description of this CreateImageServerReq.
 
         镜像实例描述
 
@@ -195,7 +195,7 @@ class CreateImageServerReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateImageServerReq.
+        r"""Sets the description of this CreateImageServerReq.
 
         镜像实例描述
 
@@ -206,7 +206,7 @@ class CreateImageServerReq:
 
     @property
     def root_volume(self):
-        """Gets the root_volume of this CreateImageServerReq.
+        r"""Gets the root_volume of this CreateImageServerReq.
 
         :return: The root_volume of this CreateImageServerReq.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.Volume`
@@ -215,7 +215,7 @@ class CreateImageServerReq:
 
     @root_volume.setter
     def root_volume(self, root_volume):
-        """Sets the root_volume of this CreateImageServerReq.
+        r"""Sets the root_volume of this CreateImageServerReq.
 
         :param root_volume: The root_volume of this CreateImageServerReq.
         :type root_volume: :class:`huaweicloudsdkworkspaceapp.v1.Volume`
@@ -224,7 +224,7 @@ class CreateImageServerReq:
 
     @property
     def image_ref(self):
-        """Gets the image_ref of this CreateImageServerReq.
+        r"""Gets the image_ref of this CreateImageServerReq.
 
         :return: The image_ref of this CreateImageServerReq.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ImageRef`
@@ -233,7 +233,7 @@ class CreateImageServerReq:
 
     @image_ref.setter
     def image_ref(self, image_ref):
-        """Sets the image_ref of this CreateImageServerReq.
+        r"""Sets the image_ref of this CreateImageServerReq.
 
         :param image_ref: The image_ref of this CreateImageServerReq.
         :type image_ref: :class:`huaweicloudsdkworkspaceapp.v1.ImageRef`
@@ -242,7 +242,7 @@ class CreateImageServerReq:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CreateImageServerReq.
+        r"""Gets the vpc_id of this CreateImageServerReq.
 
         镜像实例所属虚拟私有云唯一标识。
 
@@ -253,7 +253,7 @@ class CreateImageServerReq:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CreateImageServerReq.
+        r"""Sets the vpc_id of this CreateImageServerReq.
 
         镜像实例所属虚拟私有云唯一标识。
 
@@ -264,7 +264,7 @@ class CreateImageServerReq:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this CreateImageServerReq.
+        r"""Gets the subnet_id of this CreateImageServerReq.
 
         镜像实例网卡对应的子网唯一标识
 
@@ -275,7 +275,7 @@ class CreateImageServerReq:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this CreateImageServerReq.
+        r"""Sets the subnet_id of this CreateImageServerReq.
 
         镜像实例网卡对应的子网唯一标识
 
@@ -286,7 +286,7 @@ class CreateImageServerReq:
 
     @property
     def product_id(self):
-        """Gets the product_id of this CreateImageServerReq.
+        r"""Gets the product_id of this CreateImageServerReq.
 
         镜像实例产品套餐ID
 
@@ -297,7 +297,7 @@ class CreateImageServerReq:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this CreateImageServerReq.
+        r"""Sets the product_id of this CreateImageServerReq.
 
         镜像实例产品套餐ID
 
@@ -308,7 +308,7 @@ class CreateImageServerReq:
 
     @property
     def flavor_id(self):
-        """Gets the flavor_id of this CreateImageServerReq.
+        r"""Gets the flavor_id of this CreateImageServerReq.
 
         规格ID。
 
@@ -319,7 +319,7 @@ class CreateImageServerReq:
 
     @flavor_id.setter
     def flavor_id(self, flavor_id):
-        """Sets the flavor_id of this CreateImageServerReq.
+        r"""Sets the flavor_id of this CreateImageServerReq.
 
         规格ID。
 
@@ -330,7 +330,7 @@ class CreateImageServerReq:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this CreateImageServerReq.
+        r"""Gets the availability_zone of this CreateImageServerReq.
 
         镜像实例的可用区，空值表示随机选取可用区
 
@@ -341,7 +341,7 @@ class CreateImageServerReq:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this CreateImageServerReq.
+        r"""Sets the availability_zone of this CreateImageServerReq.
 
         镜像实例的可用区，空值表示随机选取可用区
 
@@ -352,7 +352,7 @@ class CreateImageServerReq:
 
     @property
     def attach_apps(self):
-        """Gets the attach_apps of this CreateImageServerReq.
+        r"""Gets the attach_apps of this CreateImageServerReq.
 
         云应用仓库软件唯一标识请求列表
 
@@ -363,7 +363,7 @@ class CreateImageServerReq:
 
     @attach_apps.setter
     def attach_apps(self, attach_apps):
-        """Sets the attach_apps of this CreateImageServerReq.
+        r"""Sets the attach_apps of this CreateImageServerReq.
 
         云应用仓库软件唯一标识请求列表
 
@@ -374,7 +374,7 @@ class CreateImageServerReq:
 
     @property
     def authorize_accounts(self):
-        """Gets the authorize_accounts of this CreateImageServerReq.
+        r"""Gets the authorize_accounts of this CreateImageServerReq.
 
         应用组授权用户， * 限制用户类型：'USER' - 用户
 
@@ -385,7 +385,7 @@ class CreateImageServerReq:
 
     @authorize_accounts.setter
     def authorize_accounts(self, authorize_accounts):
-        """Sets the authorize_accounts of this CreateImageServerReq.
+        r"""Sets the authorize_accounts of this CreateImageServerReq.
 
         应用组授权用户， * 限制用户类型：'USER' - 用户
 
@@ -396,7 +396,7 @@ class CreateImageServerReq:
 
     @property
     def ou_name(self):
-        """Gets the ou_name of this CreateImageServerReq.
+        r"""Gets the ou_name of this CreateImageServerReq.
 
         组织名称
 
@@ -407,7 +407,7 @@ class CreateImageServerReq:
 
     @ou_name.setter
     def ou_name(self, ou_name):
-        """Sets the ou_name of this CreateImageServerReq.
+        r"""Sets the ou_name of this CreateImageServerReq.
 
         组织名称
 
@@ -418,7 +418,7 @@ class CreateImageServerReq:
 
     @property
     def is_vdi(self):
-        """Gets the is_vdi of this CreateImageServerReq.
+        r"""Gets the is_vdi of this CreateImageServerReq.
 
         是否为vdi单会话模式
 
@@ -429,7 +429,7 @@ class CreateImageServerReq:
 
     @is_vdi.setter
     def is_vdi(self, is_vdi):
-        """Sets the is_vdi of this CreateImageServerReq.
+        r"""Sets the is_vdi of this CreateImageServerReq.
 
         是否为vdi单会话模式
 
@@ -440,7 +440,7 @@ class CreateImageServerReq:
 
     @property
     def scheduler_hints(self):
-        """Gets the scheduler_hints of this CreateImageServerReq.
+        r"""Gets the scheduler_hints of this CreateImageServerReq.
 
         :return: The scheduler_hints of this CreateImageServerReq.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.WdhParam`
@@ -449,7 +449,7 @@ class CreateImageServerReq:
 
     @scheduler_hints.setter
     def scheduler_hints(self, scheduler_hints):
-        """Sets the scheduler_hints of this CreateImageServerReq.
+        r"""Sets the scheduler_hints of this CreateImageServerReq.
 
         :param scheduler_hints: The scheduler_hints of this CreateImageServerReq.
         :type scheduler_hints: :class:`huaweicloudsdkworkspaceapp.v1.WdhParam`
@@ -458,7 +458,7 @@ class CreateImageServerReq:
 
     @property
     def extra_session_type(self):
-        """Gets the extra_session_type of this CreateImageServerReq.
+        r"""Gets the extra_session_type of this CreateImageServerReq.
 
         :return: The extra_session_type of this CreateImageServerReq.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ExtraSessionTypeEnum`
@@ -467,7 +467,7 @@ class CreateImageServerReq:
 
     @extra_session_type.setter
     def extra_session_type(self, extra_session_type):
-        """Sets the extra_session_type of this CreateImageServerReq.
+        r"""Sets the extra_session_type of this CreateImageServerReq.
 
         :param extra_session_type: The extra_session_type of this CreateImageServerReq.
         :type extra_session_type: :class:`huaweicloudsdkworkspaceapp.v1.ExtraSessionTypeEnum`
@@ -476,7 +476,7 @@ class CreateImageServerReq:
 
     @property
     def extra_session_size(self):
-        """Gets the extra_session_size of this CreateImageServerReq.
+        r"""Gets the extra_session_size of this CreateImageServerReq.
 
         需要付费的会话数，单位/个
 
@@ -487,7 +487,7 @@ class CreateImageServerReq:
 
     @extra_session_size.setter
     def extra_session_size(self, extra_session_size):
-        """Sets the extra_session_size of this CreateImageServerReq.
+        r"""Sets the extra_session_size of this CreateImageServerReq.
 
         需要付费的会话数，单位/个
 
@@ -498,7 +498,7 @@ class CreateImageServerReq:
 
     @property
     def route_policy(self):
-        """Gets the route_policy of this CreateImageServerReq.
+        r"""Gets the route_policy of this CreateImageServerReq.
 
         :return: The route_policy of this CreateImageServerReq.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.RoutePolicy`
@@ -507,7 +507,7 @@ class CreateImageServerReq:
 
     @route_policy.setter
     def route_policy(self, route_policy):
-        """Sets the route_policy of this CreateImageServerReq.
+        r"""Sets the route_policy of this CreateImageServerReq.
 
         :param route_policy: The route_policy of this CreateImageServerReq.
         :type route_policy: :class:`huaweicloudsdkworkspaceapp.v1.RoutePolicy`
@@ -516,7 +516,7 @@ class CreateImageServerReq:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateImageServerReq.
+        r"""Gets the tags of this CreateImageServerReq.
 
         标签信息，最多包含20个key,不允许重复
 
@@ -527,7 +527,7 @@ class CreateImageServerReq:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateImageServerReq.
+        r"""Sets the tags of this CreateImageServerReq.
 
         标签信息，最多包含20个key,不允许重复
 
@@ -538,7 +538,7 @@ class CreateImageServerReq:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateImageServerReq.
+        r"""Gets the enterprise_project_id of this CreateImageServerReq.
 
         **⚠ : 此属性是预留字段，不需要传值，目前镜像产物默认属于default企业项目** 镜像所属的企业项目ID，默认属于default企业项目。 关于企业项目ID的获取及企业项目特性的详细信息，请参考“[企业中心总览](https://support.huaweicloud.com/zh-cn/usermanual-em/zh-cn_topic_0123692049.html)”。
 
@@ -549,7 +549,7 @@ class CreateImageServerReq:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateImageServerReq.
+        r"""Sets the enterprise_project_id of this CreateImageServerReq.
 
         **⚠ : 此属性是预留字段，不需要传值，目前镜像产物默认属于default企业项目** 镜像所属的企业项目ID，默认属于default企业项目。 关于企业项目ID的获取及企业项目特性的详细信息，请参考“[企业中心总览](https://support.huaweicloud.com/zh-cn/usermanual-em/zh-cn_topic_0123692049.html)”。
 

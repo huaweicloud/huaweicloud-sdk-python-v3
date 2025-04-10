@@ -27,7 +27,7 @@ class RemediationRunRequestBody:
     }
 
     def __init__(self, all_supported=None, resource_ids=None):
-        """RemediationRunRequestBody
+        r"""RemediationRunRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RemediationRunRequestBody:
 
     @property
     def all_supported(self):
-        """Gets the all_supported of this RemediationRunRequestBody.
+        r"""Gets the all_supported of this RemediationRunRequestBody.
 
         是否选择对所有不合规资源执行补救。
 
@@ -60,7 +60,7 @@ class RemediationRunRequestBody:
 
     @all_supported.setter
     def all_supported(self, all_supported):
-        """Sets the all_supported of this RemediationRunRequestBody.
+        r"""Sets the all_supported of this RemediationRunRequestBody.
 
         是否选择对所有不合规资源执行补救。
 
@@ -71,7 +71,7 @@ class RemediationRunRequestBody:
 
     @property
     def resource_ids(self):
-        """Gets the resource_ids of this RemediationRunRequestBody.
+        r"""Gets the resource_ids of this RemediationRunRequestBody.
 
         :return: The resource_ids of this RemediationRunRequestBody.
         :rtype: list[str]
@@ -80,7 +80,7 @@ class RemediationRunRequestBody:
 
     @resource_ids.setter
     def resource_ids(self, resource_ids):
-        """Sets the resource_ids of this RemediationRunRequestBody.
+        r"""Sets the resource_ids of this RemediationRunRequestBody.
 
         :param resource_ids: The resource_ids of this RemediationRunRequestBody.
         :type resource_ids: list[str]

@@ -47,7 +47,7 @@ class ListFlinkJobsRequest:
     }
 
     def __init__(self, job_type=None, limit=None, name=None, offset=None, order=None, queue_name=None, root_job_id=None, show_detail=None, status=None, sys_enterprise_project_name=None, tags=None, user_name=None):
-        """ListFlinkJobsRequest
+        r"""ListFlinkJobsRequest
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ListFlinkJobsRequest:
 
     @property
     def job_type(self):
-        """Gets the job_type of this ListFlinkJobsRequest.
+        r"""Gets the job_type of this ListFlinkJobsRequest.
 
         作业类型
 
@@ -131,7 +131,7 @@ class ListFlinkJobsRequest:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this ListFlinkJobsRequest.
+        r"""Sets the job_type of this ListFlinkJobsRequest.
 
         作业类型
 
@@ -142,7 +142,7 @@ class ListFlinkJobsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListFlinkJobsRequest.
+        r"""Gets the limit of this ListFlinkJobsRequest.
 
         返回的数据条数。默认为10。
 
@@ -153,7 +153,7 @@ class ListFlinkJobsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListFlinkJobsRequest.
+        r"""Sets the limit of this ListFlinkJobsRequest.
 
         返回的数据条数。默认为10。
 
@@ -164,7 +164,7 @@ class ListFlinkJobsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListFlinkJobsRequest.
+        r"""Gets the name of this ListFlinkJobsRequest.
 
         作业名称。长度限制：0-57个字符。
 
@@ -175,7 +175,7 @@ class ListFlinkJobsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListFlinkJobsRequest.
+        r"""Sets the name of this ListFlinkJobsRequest.
 
         作业名称。长度限制：0-57个字符。
 
@@ -186,7 +186,7 @@ class ListFlinkJobsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListFlinkJobsRequest.
+        r"""Gets the offset of this ListFlinkJobsRequest.
 
         作业偏移量。
 
@@ -197,7 +197,7 @@ class ListFlinkJobsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListFlinkJobsRequest.
+        r"""Sets the offset of this ListFlinkJobsRequest.
 
         作业偏移量。
 
@@ -208,7 +208,7 @@ class ListFlinkJobsRequest:
 
     @property
     def order(self):
-        """Gets the order of this ListFlinkJobsRequest.
+        r"""Gets the order of this ListFlinkJobsRequest.
 
         查询结果排序，升序asc和降序desc两种可选，默认降序。
 
@@ -219,7 +219,7 @@ class ListFlinkJobsRequest:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this ListFlinkJobsRequest.
+        r"""Sets the order of this ListFlinkJobsRequest.
 
         查询结果排序，升序asc和降序desc两种可选，默认降序。
 
@@ -230,7 +230,7 @@ class ListFlinkJobsRequest:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this ListFlinkJobsRequest.
+        r"""Gets the queue_name of this ListFlinkJobsRequest.
 
         队列名称。
 
@@ -241,7 +241,7 @@ class ListFlinkJobsRequest:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this ListFlinkJobsRequest.
+        r"""Sets the queue_name of this ListFlinkJobsRequest.
 
         队列名称。
 
@@ -252,7 +252,7 @@ class ListFlinkJobsRequest:
 
     @property
     def root_job_id(self):
-        """Gets the root_job_id of this ListFlinkJobsRequest.
+        r"""Gets the root_job_id of this ListFlinkJobsRequest.
 
         边缘父作业ID, 用于查询指定边缘作业的子作业。不带该参数时, 查询所有非边缘作业和边缘父作业, 不包括边缘子作业。
 
@@ -263,7 +263,7 @@ class ListFlinkJobsRequest:
 
     @root_job_id.setter
     def root_job_id(self, root_job_id):
-        """Sets the root_job_id of this ListFlinkJobsRequest.
+        r"""Sets the root_job_id of this ListFlinkJobsRequest.
 
         边缘父作业ID, 用于查询指定边缘作业的子作业。不带该参数时, 查询所有非边缘作业和边缘父作业, 不包括边缘子作业。
 
@@ -274,7 +274,7 @@ class ListFlinkJobsRequest:
 
     @property
     def show_detail(self):
-        """Gets the show_detail of this ListFlinkJobsRequest.
+        r"""Gets the show_detail of this ListFlinkJobsRequest.
 
         是否返回作业详情信息。默认为false。
 
@@ -285,7 +285,7 @@ class ListFlinkJobsRequest:
 
     @show_detail.setter
     def show_detail(self, show_detail):
-        """Sets the show_detail of this ListFlinkJobsRequest.
+        r"""Sets the show_detail of this ListFlinkJobsRequest.
 
         是否返回作业详情信息。默认为false。
 
@@ -296,7 +296,7 @@ class ListFlinkJobsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListFlinkJobsRequest.
+        r"""Gets the status of this ListFlinkJobsRequest.
 
         作业状态。 作业的状态如下： job_init：草稿 job_submitting：提交中 job_submit_fail：提交失败 job_running：运行中（开始计费，提交作业后，返回正常结果） job_running_exception：运行异常（停止计费。作业发生运行时异常，停止运行作业） job_downloading：下载中 job_idle：空闲 job_canceling：停止中 job_cancel_success：已停止 job_cancel_fail：停止失败 job_savepointing：保存点创建中 job_arrearage_stopped：因欠费被停止（结束计费。用户账户欠费，作业停止） job_arrearage_recovering：欠费作业恢复中（用户账户欠费，账户充值，作业恢复中） job_finish：已完成
 
@@ -307,7 +307,7 @@ class ListFlinkJobsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListFlinkJobsRequest.
+        r"""Sets the status of this ListFlinkJobsRequest.
 
         作业状态。 作业的状态如下： job_init：草稿 job_submitting：提交中 job_submit_fail：提交失败 job_running：运行中（开始计费，提交作业后，返回正常结果） job_running_exception：运行异常（停止计费。作业发生运行时异常，停止运行作业） job_downloading：下载中 job_idle：空闲 job_canceling：停止中 job_cancel_success：已停止 job_cancel_fail：停止失败 job_savepointing：保存点创建中 job_arrearage_stopped：因欠费被停止（结束计费。用户账户欠费，作业停止） job_arrearage_recovering：欠费作业恢复中（用户账户欠费，账户充值，作业恢复中） job_finish：已完成
 
@@ -318,7 +318,7 @@ class ListFlinkJobsRequest:
 
     @property
     def sys_enterprise_project_name(self):
-        """Gets the sys_enterprise_project_name of this ListFlinkJobsRequest.
+        r"""Gets the sys_enterprise_project_name of this ListFlinkJobsRequest.
 
         :return: The sys_enterprise_project_name of this ListFlinkJobsRequest.
         :rtype: str
@@ -327,7 +327,7 @@ class ListFlinkJobsRequest:
 
     @sys_enterprise_project_name.setter
     def sys_enterprise_project_name(self, sys_enterprise_project_name):
-        """Sets the sys_enterprise_project_name of this ListFlinkJobsRequest.
+        r"""Sets the sys_enterprise_project_name of this ListFlinkJobsRequest.
 
         :param sys_enterprise_project_name: The sys_enterprise_project_name of this ListFlinkJobsRequest.
         :type sys_enterprise_project_name: str
@@ -336,7 +336,7 @@ class ListFlinkJobsRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this ListFlinkJobsRequest.
+        r"""Gets the tags of this ListFlinkJobsRequest.
 
         :return: The tags of this ListFlinkJobsRequest.
         :rtype: str
@@ -345,7 +345,7 @@ class ListFlinkJobsRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListFlinkJobsRequest.
+        r"""Sets the tags of this ListFlinkJobsRequest.
 
         :param tags: The tags of this ListFlinkJobsRequest.
         :type tags: str
@@ -354,7 +354,7 @@ class ListFlinkJobsRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ListFlinkJobsRequest.
+        r"""Gets the user_name of this ListFlinkJobsRequest.
 
         用户名，可作为筛选条件
 
@@ -365,7 +365,7 @@ class ListFlinkJobsRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ListFlinkJobsRequest.
+        r"""Sets the user_name of this ListFlinkJobsRequest.
 
         用户名，可作为筛选条件
 

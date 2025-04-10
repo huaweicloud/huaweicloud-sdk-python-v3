@@ -25,7 +25,7 @@ class CountMetaObjRequest:
     }
 
     def __init__(self, instance_id=None):
-        """CountMetaObjRequest
+        r"""CountMetaObjRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CountMetaObjRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CountMetaObjRequest.
+        r"""Gets the instance_id of this CountMetaObjRequest.
 
         instance id
 
@@ -53,7 +53,7 @@ class CountMetaObjRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CountMetaObjRequest.
+        r"""Sets the instance_id of this CountMetaObjRequest.
 
         instance id
 

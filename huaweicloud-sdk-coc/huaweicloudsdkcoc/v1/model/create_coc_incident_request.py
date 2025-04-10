@@ -25,7 +25,7 @@ class CreateCocIncidentRequest:
     }
 
     def __init__(self, body=None):
-        """CreateCocIncidentRequest
+        r"""CreateCocIncidentRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateCocIncidentRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateCocIncidentRequest.
+        r"""Gets the body of this CreateCocIncidentRequest.
 
         :return: The body of this CreateCocIncidentRequest.
         :rtype: :class:`huaweicloudsdkcoc.v1.CreateExternalIncidentRequest`
@@ -52,7 +52,7 @@ class CreateCocIncidentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateCocIncidentRequest.
+        r"""Sets the body of this CreateCocIncidentRequest.
 
         :param body: The body of this CreateCocIncidentRequest.
         :type body: :class:`huaweicloudsdkcoc.v1.CreateExternalIncidentRequest`

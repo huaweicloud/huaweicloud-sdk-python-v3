@@ -32,7 +32,7 @@ class ListLimitTaskResponse(SdkResponse):
     }
 
     def __init__(self, limit_task_list=None, limit=None, offset=None, total_count=None):
-        """ListLimitTaskResponse
+        r"""ListLimitTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListLimitTaskResponse(SdkResponse):
 
     @property
     def limit_task_list(self):
-        """Gets the limit_task_list of this ListLimitTaskResponse.
+        r"""Gets the limit_task_list of this ListLimitTaskResponse.
 
         限流任务列表
 
@@ -76,7 +76,7 @@ class ListLimitTaskResponse(SdkResponse):
 
     @limit_task_list.setter
     def limit_task_list(self, limit_task_list):
-        """Sets the limit_task_list of this ListLimitTaskResponse.
+        r"""Sets the limit_task_list of this ListLimitTaskResponse.
 
         限流任务列表
 
@@ -87,7 +87,7 @@ class ListLimitTaskResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListLimitTaskResponse.
+        r"""Gets the limit of this ListLimitTaskResponse.
 
         查询记录数。
 
@@ -98,7 +98,7 @@ class ListLimitTaskResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListLimitTaskResponse.
+        r"""Sets the limit of this ListLimitTaskResponse.
 
         查询记录数。
 
@@ -109,7 +109,7 @@ class ListLimitTaskResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListLimitTaskResponse.
+        r"""Gets the offset of this ListLimitTaskResponse.
 
         索引位置。
 
@@ -120,7 +120,7 @@ class ListLimitTaskResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListLimitTaskResponse.
+        r"""Sets the offset of this ListLimitTaskResponse.
 
         索引位置。
 
@@ -131,7 +131,7 @@ class ListLimitTaskResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListLimitTaskResponse.
+        r"""Gets the total_count of this ListLimitTaskResponse.
 
         总数。
 
@@ -142,7 +142,7 @@ class ListLimitTaskResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListLimitTaskResponse.
+        r"""Sets the total_count of this ListLimitTaskResponse.
 
         总数。
 

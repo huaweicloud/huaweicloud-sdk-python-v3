@@ -29,7 +29,7 @@ class UpdateRepoDomainsRequestBody:
     }
 
     def __init__(self, permit=None, deadline=None, description=None):
-        """UpdateRepoDomainsRequestBody
+        r"""UpdateRepoDomainsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateRepoDomainsRequestBody:
 
     @property
     def permit(self):
-        """Gets the permit of this UpdateRepoDomainsRequestBody.
+        r"""Gets the permit of this UpdateRepoDomainsRequestBody.
 
         当前只支持read权限
 
@@ -66,7 +66,7 @@ class UpdateRepoDomainsRequestBody:
 
     @permit.setter
     def permit(self, permit):
-        """Sets the permit of this UpdateRepoDomainsRequestBody.
+        r"""Sets the permit of this UpdateRepoDomainsRequestBody.
 
         当前只支持read权限
 
@@ -77,7 +77,7 @@ class UpdateRepoDomainsRequestBody:
 
     @property
     def deadline(self):
-        """Gets the deadline of this UpdateRepoDomainsRequestBody.
+        r"""Gets the deadline of this UpdateRepoDomainsRequestBody.
 
         截止时间，UTC时间格式。永久有效为forever
 
@@ -88,7 +88,7 @@ class UpdateRepoDomainsRequestBody:
 
     @deadline.setter
     def deadline(self, deadline):
-        """Sets the deadline of this UpdateRepoDomainsRequestBody.
+        r"""Sets the deadline of this UpdateRepoDomainsRequestBody.
 
         截止时间，UTC时间格式。永久有效为forever
 
@@ -99,7 +99,7 @@ class UpdateRepoDomainsRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateRepoDomainsRequestBody.
+        r"""Gets the description of this UpdateRepoDomainsRequestBody.
 
         描述。默认值为空字符串
 
@@ -110,7 +110,7 @@ class UpdateRepoDomainsRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateRepoDomainsRequestBody.
+        r"""Sets the description of this UpdateRepoDomainsRequestBody.
 
         描述。默认值为空字符串
 

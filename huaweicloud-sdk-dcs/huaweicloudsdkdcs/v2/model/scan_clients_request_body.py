@@ -27,7 +27,7 @@ class ScanClientsRequestBody:
     }
 
     def __init__(self, node_id=None, clean_cache=None):
-        """ScanClientsRequestBody
+        r"""ScanClientsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ScanClientsRequestBody:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ScanClientsRequestBody.
+        r"""Gets the node_id of this ScanClientsRequestBody.
 
         节点ID
 
@@ -60,7 +60,7 @@ class ScanClientsRequestBody:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ScanClientsRequestBody.
+        r"""Sets the node_id of this ScanClientsRequestBody.
 
         节点ID
 
@@ -71,7 +71,7 @@ class ScanClientsRequestBody:
 
     @property
     def clean_cache(self):
-        """Gets the clean_cache of this ScanClientsRequestBody.
+        r"""Gets the clean_cache of this ScanClientsRequestBody.
 
         是否重新查询并保存会话列表
 
@@ -82,7 +82,7 @@ class ScanClientsRequestBody:
 
     @clean_cache.setter
     def clean_cache(self, clean_cache):
-        """Sets the clean_cache of this ScanClientsRequestBody.
+        r"""Sets the clean_cache of this ScanClientsRequestBody.
 
         是否重新查询并保存会话列表
 

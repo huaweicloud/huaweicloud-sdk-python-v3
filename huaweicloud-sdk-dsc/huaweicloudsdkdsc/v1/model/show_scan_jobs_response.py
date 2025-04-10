@@ -28,7 +28,7 @@ class ShowScanJobsResponse(SdkResponse):
     }
 
     def __init__(self, tasks=None, total=None):
-        """ShowScanJobsResponse
+        r"""ShowScanJobsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowScanJobsResponse(SdkResponse):
 
     @property
     def tasks(self):
-        """Gets the tasks of this ShowScanJobsResponse.
+        r"""Gets the tasks of this ShowScanJobsResponse.
 
         本次返回的扫描任务列表
 
@@ -62,7 +62,7 @@ class ShowScanJobsResponse(SdkResponse):
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this ShowScanJobsResponse.
+        r"""Sets the tasks of this ShowScanJobsResponse.
 
         本次返回的扫描任务列表
 
@@ -73,7 +73,7 @@ class ShowScanJobsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowScanJobsResponse.
+        r"""Gets the total of this ShowScanJobsResponse.
 
         任务总数
 
@@ -84,7 +84,7 @@ class ShowScanJobsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowScanJobsResponse.
+        r"""Sets the total of this ShowScanJobsResponse.
 
         任务总数
 

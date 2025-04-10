@@ -27,7 +27,7 @@ class DeleteDataSourceRequest:
     }
 
     def __init__(self, cluster_id=None, ext_data_source_id=None):
-        """DeleteDataSourceRequest
+        r"""DeleteDataSourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteDataSourceRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this DeleteDataSourceRequest.
+        r"""Gets the cluster_id of this DeleteDataSourceRequest.
 
         集群ID
 
@@ -59,7 +59,7 @@ class DeleteDataSourceRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this DeleteDataSourceRequest.
+        r"""Sets the cluster_id of this DeleteDataSourceRequest.
 
         集群ID
 
@@ -70,7 +70,7 @@ class DeleteDataSourceRequest:
 
     @property
     def ext_data_source_id(self):
-        """Gets the ext_data_source_id of this DeleteDataSourceRequest.
+        r"""Gets the ext_data_source_id of this DeleteDataSourceRequest.
 
         数据源id
 
@@ -81,7 +81,7 @@ class DeleteDataSourceRequest:
 
     @ext_data_source_id.setter
     def ext_data_source_id(self, ext_data_source_id):
-        """Sets the ext_data_source_id of this DeleteDataSourceRequest.
+        r"""Sets the ext_data_source_id of this DeleteDataSourceRequest.
 
         数据源id
 

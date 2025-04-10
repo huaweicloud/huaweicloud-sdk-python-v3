@@ -27,7 +27,7 @@ class CreateMemberRequest:
     }
 
     def __init__(self, pool_id=None, body=None):
-        """CreateMemberRequest
+        r"""CreateMemberRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateMemberRequest:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this CreateMemberRequest.
+        r"""Gets the pool_id of this CreateMemberRequest.
 
         参数解释：后端服务器组ID。
 
@@ -60,7 +60,7 @@ class CreateMemberRequest:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this CreateMemberRequest.
+        r"""Sets the pool_id of this CreateMemberRequest.
 
         参数解释：后端服务器组ID。
 
@@ -71,7 +71,7 @@ class CreateMemberRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateMemberRequest.
+        r"""Gets the body of this CreateMemberRequest.
 
         :return: The body of this CreateMemberRequest.
         :rtype: :class:`huaweicloudsdkelb.v3.CreateMemberRequestBody`
@@ -80,7 +80,7 @@ class CreateMemberRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateMemberRequest.
+        r"""Sets the body of this CreateMemberRequest.
 
         :param body: The body of this CreateMemberRequest.
         :type body: :class:`huaweicloudsdkelb.v3.CreateMemberRequestBody`

@@ -33,7 +33,7 @@ class ListTransfersRequest:
     }
 
     def __init__(self, log_transfer_type=None, log_group_name=None, log_stream_name=None, offset=None, limit=None):
-        """ListTransfersRequest
+        r"""ListTransfersRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListTransfersRequest:
 
     @property
     def log_transfer_type(self):
-        """Gets the log_transfer_type of this ListTransfersRequest.
+        r"""Gets the log_transfer_type of this ListTransfersRequest.
 
         日志转储类型。OBS指OBS日志转储，DIS指DIS日志转储，DMS指DMS日志转储
 
@@ -82,7 +82,7 @@ class ListTransfersRequest:
 
     @log_transfer_type.setter
     def log_transfer_type(self, log_transfer_type):
-        """Sets the log_transfer_type of this ListTransfersRequest.
+        r"""Sets the log_transfer_type of this ListTransfersRequest.
 
         日志转储类型。OBS指OBS日志转储，DIS指DIS日志转储，DMS指DMS日志转储
 
@@ -93,7 +93,7 @@ class ListTransfersRequest:
 
     @property
     def log_group_name(self):
-        """Gets the log_group_name of this ListTransfersRequest.
+        r"""Gets the log_group_name of this ListTransfersRequest.
 
         日志组名称
 
@@ -104,7 +104,7 @@ class ListTransfersRequest:
 
     @log_group_name.setter
     def log_group_name(self, log_group_name):
-        """Sets the log_group_name of this ListTransfersRequest.
+        r"""Sets the log_group_name of this ListTransfersRequest.
 
         日志组名称
 
@@ -115,7 +115,7 @@ class ListTransfersRequest:
 
     @property
     def log_stream_name(self):
-        """Gets the log_stream_name of this ListTransfersRequest.
+        r"""Gets the log_stream_name of this ListTransfersRequest.
 
         日志流名称
 
@@ -126,7 +126,7 @@ class ListTransfersRequest:
 
     @log_stream_name.setter
     def log_stream_name(self, log_stream_name):
-        """Sets the log_stream_name of this ListTransfersRequest.
+        r"""Sets the log_stream_name of this ListTransfersRequest.
 
         日志流名称
 
@@ -137,7 +137,7 @@ class ListTransfersRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTransfersRequest.
+        r"""Gets the offset of this ListTransfersRequest.
 
         查询游标，初始传入0，后续从上一次的返回值中获取
 
@@ -148,7 +148,7 @@ class ListTransfersRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTransfersRequest.
+        r"""Sets the offset of this ListTransfersRequest.
 
         查询游标，初始传入0，后续从上一次的返回值中获取
 
@@ -159,7 +159,7 @@ class ListTransfersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTransfersRequest.
+        r"""Gets the limit of this ListTransfersRequest.
 
         每页数据量，最大值为100
 
@@ -170,7 +170,7 @@ class ListTransfersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTransfersRequest.
+        r"""Sets the limit of this ListTransfersRequest.
 
         每页数据量，最大值为100
 

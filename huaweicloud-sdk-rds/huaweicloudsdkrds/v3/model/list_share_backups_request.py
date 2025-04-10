@@ -33,7 +33,7 @@ class ListShareBackupsRequest:
     }
 
     def __init__(self, instance_id=None, instance_name=None, backup_name=None, offset=None, limit=None):
-        """ListShareBackupsRequest
+        r"""ListShareBackupsRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListShareBackupsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListShareBackupsRequest.
+        r"""Gets the instance_id of this ListShareBackupsRequest.
 
         实例ID。
 
@@ -82,7 +82,7 @@ class ListShareBackupsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListShareBackupsRequest.
+        r"""Sets the instance_id of this ListShareBackupsRequest.
 
         实例ID。
 
@@ -93,7 +93,7 @@ class ListShareBackupsRequest:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this ListShareBackupsRequest.
+        r"""Gets the instance_name of this ListShareBackupsRequest.
 
         实例名称。
 
@@ -104,7 +104,7 @@ class ListShareBackupsRequest:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this ListShareBackupsRequest.
+        r"""Sets the instance_name of this ListShareBackupsRequest.
 
         实例名称。
 
@@ -115,7 +115,7 @@ class ListShareBackupsRequest:
 
     @property
     def backup_name(self):
-        """Gets the backup_name of this ListShareBackupsRequest.
+        r"""Gets the backup_name of this ListShareBackupsRequest.
 
         备份名称。
 
@@ -126,7 +126,7 @@ class ListShareBackupsRequest:
 
     @backup_name.setter
     def backup_name(self, backup_name):
-        """Sets the backup_name of this ListShareBackupsRequest.
+        r"""Sets the backup_name of this ListShareBackupsRequest.
 
         备份名称。
 
@@ -137,7 +137,7 @@ class ListShareBackupsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListShareBackupsRequest.
+        r"""Gets the offset of this ListShareBackupsRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -148,7 +148,7 @@ class ListShareBackupsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListShareBackupsRequest.
+        r"""Sets the offset of this ListShareBackupsRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -159,7 +159,7 @@ class ListShareBackupsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListShareBackupsRequest.
+        r"""Gets the limit of this ListShareBackupsRequest.
 
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
 
@@ -170,7 +170,7 @@ class ListShareBackupsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListShareBackupsRequest.
+        r"""Sets the limit of this ListShareBackupsRequest.
 
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
 

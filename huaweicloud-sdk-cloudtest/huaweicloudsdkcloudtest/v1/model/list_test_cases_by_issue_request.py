@@ -29,7 +29,7 @@ class ListTestCasesByIssueRequest:
     }
 
     def __init__(self, project_id=None, issue_id=None, body=None):
-        """ListTestCasesByIssueRequest
+        r"""ListTestCasesByIssueRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ListTestCasesByIssueRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListTestCasesByIssueRequest.
+        r"""Gets the project_id of this ListTestCasesByIssueRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -66,7 +66,7 @@ class ListTestCasesByIssueRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListTestCasesByIssueRequest.
+        r"""Sets the project_id of this ListTestCasesByIssueRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -77,7 +77,7 @@ class ListTestCasesByIssueRequest:
 
     @property
     def issue_id(self):
-        """Gets the issue_id of this ListTestCasesByIssueRequest.
+        r"""Gets the issue_id of this ListTestCasesByIssueRequest.
 
         需求id
 
@@ -88,7 +88,7 @@ class ListTestCasesByIssueRequest:
 
     @issue_id.setter
     def issue_id(self, issue_id):
-        """Sets the issue_id of this ListTestCasesByIssueRequest.
+        r"""Sets the issue_id of this ListTestCasesByIssueRequest.
 
         需求id
 
@@ -99,7 +99,7 @@ class ListTestCasesByIssueRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListTestCasesByIssueRequest.
+        r"""Gets the body of this ListTestCasesByIssueRequest.
 
         :return: The body of this ListTestCasesByIssueRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.QueryTestCasesByIssueInfo`
@@ -108,7 +108,7 @@ class ListTestCasesByIssueRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListTestCasesByIssueRequest.
+        r"""Sets the body of this ListTestCasesByIssueRequest.
 
         :param body: The body of this ListTestCasesByIssueRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.QueryTestCasesByIssueInfo`

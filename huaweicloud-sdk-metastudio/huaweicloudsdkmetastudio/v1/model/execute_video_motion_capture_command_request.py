@@ -29,7 +29,7 @@ class ExecuteVideoMotionCaptureCommandRequest:
     }
 
     def __init__(self, job_id=None, x_app_user_id=None, body=None):
-        """ExecuteVideoMotionCaptureCommandRequest
+        r"""ExecuteVideoMotionCaptureCommandRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ExecuteVideoMotionCaptureCommandRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ExecuteVideoMotionCaptureCommandRequest.
+        r"""Gets the job_id of this ExecuteVideoMotionCaptureCommandRequest.
 
         任务ID。
 
@@ -67,7 +67,7 @@ class ExecuteVideoMotionCaptureCommandRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ExecuteVideoMotionCaptureCommandRequest.
+        r"""Sets the job_id of this ExecuteVideoMotionCaptureCommandRequest.
 
         任务ID。
 
@@ -78,7 +78,7 @@ class ExecuteVideoMotionCaptureCommandRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this ExecuteVideoMotionCaptureCommandRequest.
+        r"""Gets the x_app_user_id of this ExecuteVideoMotionCaptureCommandRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -89,7 +89,7 @@ class ExecuteVideoMotionCaptureCommandRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this ExecuteVideoMotionCaptureCommandRequest.
+        r"""Sets the x_app_user_id of this ExecuteVideoMotionCaptureCommandRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -100,7 +100,7 @@ class ExecuteVideoMotionCaptureCommandRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExecuteVideoMotionCaptureCommandRequest.
+        r"""Gets the body of this ExecuteVideoMotionCaptureCommandRequest.
 
         :return: The body of this ExecuteVideoMotionCaptureCommandRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ControlDigitalHumanLiveReq`
@@ -109,7 +109,7 @@ class ExecuteVideoMotionCaptureCommandRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExecuteVideoMotionCaptureCommandRequest.
+        r"""Sets the body of this ExecuteVideoMotionCaptureCommandRequest.
 
         :param body: The body of this ExecuteVideoMotionCaptureCommandRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.ControlDigitalHumanLiveReq`

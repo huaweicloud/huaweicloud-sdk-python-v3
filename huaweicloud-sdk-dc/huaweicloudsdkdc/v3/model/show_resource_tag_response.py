@@ -30,7 +30,7 @@ class ShowResourceTagResponse(SdkResponse):
     }
 
     def __init__(self, tags=None, sys_tags=None, request_id=None):
-        """ShowResourceTagResponse
+        r"""ShowResourceTagResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowResourceTagResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowResourceTagResponse.
+        r"""Gets the tags of this ShowResourceTagResponse.
 
         标签列表
 
@@ -69,7 +69,7 @@ class ShowResourceTagResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowResourceTagResponse.
+        r"""Sets the tags of this ShowResourceTagResponse.
 
         标签列表
 
@@ -80,7 +80,7 @@ class ShowResourceTagResponse(SdkResponse):
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this ShowResourceTagResponse.
+        r"""Gets the sys_tags of this ShowResourceTagResponse.
 
         标签列表，没有标签默认为空数组。
 
@@ -91,7 +91,7 @@ class ShowResourceTagResponse(SdkResponse):
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this ShowResourceTagResponse.
+        r"""Sets the sys_tags of this ShowResourceTagResponse.
 
         标签列表，没有标签默认为空数组。
 
@@ -102,7 +102,7 @@ class ShowResourceTagResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowResourceTagResponse.
+        r"""Gets the request_id of this ShowResourceTagResponse.
 
         请求ID
 
@@ -113,7 +113,7 @@ class ShowResourceTagResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowResourceTagResponse.
+        r"""Sets the request_id of this ShowResourceTagResponse.
 
         请求ID
 

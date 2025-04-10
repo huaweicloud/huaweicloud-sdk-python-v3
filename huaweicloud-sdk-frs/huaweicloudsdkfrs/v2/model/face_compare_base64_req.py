@@ -27,7 +27,7 @@ class FaceCompareBase64Req:
     }
 
     def __init__(self, image2_base64=None, image1_base64=None):
-        """FaceCompareBase64Req
+        r"""FaceCompareBase64Req
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class FaceCompareBase64Req:
 
     @property
     def image2_base64(self):
-        """Gets the image2_base64 of this FaceCompareBase64Req.
+        r"""Gets the image2_base64 of this FaceCompareBase64Req.
 
         图像数据，Base64编码，要求： • Base64编码后大小不超过8MB，建议小于1MB。 • 图片为JPG/JPEG/BMP/PNG格式。
 
@@ -59,7 +59,7 @@ class FaceCompareBase64Req:
 
     @image2_base64.setter
     def image2_base64(self, image2_base64):
-        """Sets the image2_base64 of this FaceCompareBase64Req.
+        r"""Sets the image2_base64 of this FaceCompareBase64Req.
 
         图像数据，Base64编码，要求： • Base64编码后大小不超过8MB，建议小于1MB。 • 图片为JPG/JPEG/BMP/PNG格式。
 
@@ -70,7 +70,7 @@ class FaceCompareBase64Req:
 
     @property
     def image1_base64(self):
-        """Gets the image1_base64 of this FaceCompareBase64Req.
+        r"""Gets the image1_base64 of this FaceCompareBase64Req.
 
         图像数据，Base64编码，要求： • Base64编码后大小不超过8MB，建议小于1MB。 • 图片为JPG/JPEG/BMP/PNG格式。
 
@@ -81,7 +81,7 @@ class FaceCompareBase64Req:
 
     @image1_base64.setter
     def image1_base64(self, image1_base64):
-        """Sets the image1_base64 of this FaceCompareBase64Req.
+        r"""Sets the image1_base64 of this FaceCompareBase64Req.
 
         图像数据，Base64编码，要求： • Base64编码后大小不超过8MB，建议小于1MB。 • 图片为JPG/JPEG/BMP/PNG格式。
 

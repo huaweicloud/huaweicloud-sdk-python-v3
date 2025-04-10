@@ -33,7 +33,7 @@ class UpdateDesignTableQualityParam:
     }
 
     def __init__(self, biz_type=None, dirty_out_switch=None, dirty_out_database=None, dirty_out_prefix=None, dirty_out_suffix=None):
-        """UpdateDesignTableQualityParam
+        r"""UpdateDesignTableQualityParam
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class UpdateDesignTableQualityParam:
 
     @property
     def biz_type(self):
-        """Gets the biz_type of this UpdateDesignTableQualityParam.
+        r"""Gets the biz_type of this UpdateDesignTableQualityParam.
 
         表类型。 枚举值：   - TABLE_MODEL: 关系模型（逻辑模型/物理模型）   - AGGREGATION_LOGIC_TABLE: 汇总表   - FACT_LOGIC_TABLE: 事实表   - DIMENSION: 维度   - DIMENSION_LOGIC_TABLE: 维度表 
 
@@ -82,7 +82,7 @@ class UpdateDesignTableQualityParam:
 
     @biz_type.setter
     def biz_type(self, biz_type):
-        """Sets the biz_type of this UpdateDesignTableQualityParam.
+        r"""Sets the biz_type of this UpdateDesignTableQualityParam.
 
         表类型。 枚举值：   - TABLE_MODEL: 关系模型（逻辑模型/物理模型）   - AGGREGATION_LOGIC_TABLE: 汇总表   - FACT_LOGIC_TABLE: 事实表   - DIMENSION: 维度   - DIMENSION_LOGIC_TABLE: 维度表 
 
@@ -93,7 +93,7 @@ class UpdateDesignTableQualityParam:
 
     @property
     def dirty_out_switch(self):
-        """Gets the dirty_out_switch of this UpdateDesignTableQualityParam.
+        r"""Gets the dirty_out_switch of this UpdateDesignTableQualityParam.
 
         异常数据输出开关。
 
@@ -104,7 +104,7 @@ class UpdateDesignTableQualityParam:
 
     @dirty_out_switch.setter
     def dirty_out_switch(self, dirty_out_switch):
-        """Sets the dirty_out_switch of this UpdateDesignTableQualityParam.
+        r"""Sets the dirty_out_switch of this UpdateDesignTableQualityParam.
 
         异常数据输出开关。
 
@@ -115,7 +115,7 @@ class UpdateDesignTableQualityParam:
 
     @property
     def dirty_out_database(self):
-        """Gets the dirty_out_database of this UpdateDesignTableQualityParam.
+        r"""Gets the dirty_out_database of this UpdateDesignTableQualityParam.
 
         异常数据输出库。
 
@@ -126,7 +126,7 @@ class UpdateDesignTableQualityParam:
 
     @dirty_out_database.setter
     def dirty_out_database(self, dirty_out_database):
-        """Sets the dirty_out_database of this UpdateDesignTableQualityParam.
+        r"""Sets the dirty_out_database of this UpdateDesignTableQualityParam.
 
         异常数据输出库。
 
@@ -137,7 +137,7 @@ class UpdateDesignTableQualityParam:
 
     @property
     def dirty_out_prefix(self):
-        """Gets the dirty_out_prefix of this UpdateDesignTableQualityParam.
+        r"""Gets the dirty_out_prefix of this UpdateDesignTableQualityParam.
 
         异常表前缀。
 
@@ -148,7 +148,7 @@ class UpdateDesignTableQualityParam:
 
     @dirty_out_prefix.setter
     def dirty_out_prefix(self, dirty_out_prefix):
-        """Sets the dirty_out_prefix of this UpdateDesignTableQualityParam.
+        r"""Sets the dirty_out_prefix of this UpdateDesignTableQualityParam.
 
         异常表前缀。
 
@@ -159,7 +159,7 @@ class UpdateDesignTableQualityParam:
 
     @property
     def dirty_out_suffix(self):
-        """Gets the dirty_out_suffix of this UpdateDesignTableQualityParam.
+        r"""Gets the dirty_out_suffix of this UpdateDesignTableQualityParam.
 
         异常表后缀。
 
@@ -170,7 +170,7 @@ class UpdateDesignTableQualityParam:
 
     @dirty_out_suffix.setter
     def dirty_out_suffix(self, dirty_out_suffix):
-        """Sets the dirty_out_suffix of this UpdateDesignTableQualityParam.
+        r"""Sets the dirty_out_suffix of this UpdateDesignTableQualityParam.
 
         异常表后缀。
 

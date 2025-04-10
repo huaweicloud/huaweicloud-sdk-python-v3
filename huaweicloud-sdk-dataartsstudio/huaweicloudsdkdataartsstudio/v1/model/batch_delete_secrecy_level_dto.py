@@ -25,7 +25,7 @@ class BatchDeleteSecrecyLevelDTO:
     }
 
     def __init__(self, ids=None):
-        """BatchDeleteSecrecyLevelDTO
+        r"""BatchDeleteSecrecyLevelDTO
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDeleteSecrecyLevelDTO:
 
     @property
     def ids(self):
-        """Gets the ids of this BatchDeleteSecrecyLevelDTO.
+        r"""Gets the ids of this BatchDeleteSecrecyLevelDTO.
 
         密级id列表，密级id可以通过查询接口获取。
 
@@ -54,7 +54,7 @@ class BatchDeleteSecrecyLevelDTO:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this BatchDeleteSecrecyLevelDTO.
+        r"""Sets the ids of this BatchDeleteSecrecyLevelDTO.
 
         密级id列表，密级id可以通过查询接口获取。
 

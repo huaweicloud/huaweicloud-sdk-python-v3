@@ -33,7 +33,7 @@ class ListBackgroundTaskRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, start_time=None, end_time=None):
-        """ListBackgroundTaskRequest
+        r"""ListBackgroundTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListBackgroundTaskRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListBackgroundTaskRequest.
+        r"""Gets the instance_id of this ListBackgroundTaskRequest.
 
         实例ID。
 
@@ -81,7 +81,7 @@ class ListBackgroundTaskRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListBackgroundTaskRequest.
+        r"""Sets the instance_id of this ListBackgroundTaskRequest.
 
         实例ID。
 
@@ -92,7 +92,7 @@ class ListBackgroundTaskRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListBackgroundTaskRequest.
+        r"""Gets the offset of this ListBackgroundTaskRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -103,7 +103,7 @@ class ListBackgroundTaskRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListBackgroundTaskRequest.
+        r"""Sets the offset of this ListBackgroundTaskRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -114,7 +114,7 @@ class ListBackgroundTaskRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListBackgroundTaskRequest.
+        r"""Gets the limit of this ListBackgroundTaskRequest.
 
         每页显示的条目数量。
 
@@ -125,7 +125,7 @@ class ListBackgroundTaskRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListBackgroundTaskRequest.
+        r"""Sets the limit of this ListBackgroundTaskRequest.
 
         每页显示的条目数量。
 
@@ -136,7 +136,7 @@ class ListBackgroundTaskRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListBackgroundTaskRequest.
+        r"""Gets the start_time of this ListBackgroundTaskRequest.
 
         查询开始时间，时间为UTC时间。格式：yyyyMMddHHmmss，如：20200609160000。
 
@@ -147,7 +147,7 @@ class ListBackgroundTaskRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListBackgroundTaskRequest.
+        r"""Sets the start_time of this ListBackgroundTaskRequest.
 
         查询开始时间，时间为UTC时间。格式：yyyyMMddHHmmss，如：20200609160000。
 
@@ -158,7 +158,7 @@ class ListBackgroundTaskRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListBackgroundTaskRequest.
+        r"""Gets the end_time of this ListBackgroundTaskRequest.
 
         查询结束时间，时间为UTC时间。格式：yyyyMMddHHmmss，如：20200617155959。
 
@@ -169,7 +169,7 @@ class ListBackgroundTaskRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListBackgroundTaskRequest.
+        r"""Sets the end_time of this ListBackgroundTaskRequest.
 
         查询结束时间，时间为UTC时间。格式：yyyyMMddHHmmss，如：20200617155959。
 

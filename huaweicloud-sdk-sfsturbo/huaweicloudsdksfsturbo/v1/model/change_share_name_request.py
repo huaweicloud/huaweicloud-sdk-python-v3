@@ -27,7 +27,7 @@ class ChangeShareNameRequest:
     }
 
     def __init__(self, share_id=None, body=None):
-        """ChangeShareNameRequest
+        r"""ChangeShareNameRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ChangeShareNameRequest:
 
     @property
     def share_id(self):
-        """Gets the share_id of this ChangeShareNameRequest.
+        r"""Gets the share_id of this ChangeShareNameRequest.
 
         文件系统ID
 
@@ -60,7 +60,7 @@ class ChangeShareNameRequest:
 
     @share_id.setter
     def share_id(self, share_id):
-        """Sets the share_id of this ChangeShareNameRequest.
+        r"""Sets the share_id of this ChangeShareNameRequest.
 
         文件系统ID
 
@@ -71,7 +71,7 @@ class ChangeShareNameRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeShareNameRequest.
+        r"""Gets the body of this ChangeShareNameRequest.
 
         :return: The body of this ChangeShareNameRequest.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.ChangeShareNameReq`
@@ -80,7 +80,7 @@ class ChangeShareNameRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeShareNameRequest.
+        r"""Sets the body of this ChangeShareNameRequest.
 
         :param body: The body of this ChangeShareNameRequest.
         :type body: :class:`huaweicloudsdksfsturbo.v1.ChangeShareNameReq`

@@ -24,7 +24,7 @@ class DeleteResetTracksTaskResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteResetTracksTaskResponse
+        r"""DeleteResetTracksTaskResponse
 
         The model defined in huaweicloud sdk
 

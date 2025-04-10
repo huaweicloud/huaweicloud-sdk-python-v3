@@ -29,7 +29,7 @@ class Identity:
     }
 
     def __init__(self, name=None, location=None, validation=None):
-        """Identity
+        r"""Identity
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class Identity:
 
     @property
     def name(self):
-        """Gets the name of this Identity.
+        r"""Gets the name of this Identity.
 
         参数名称
 
@@ -66,7 +66,7 @@ class Identity:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Identity.
+        r"""Sets the name of this Identity.
 
         参数名称
 
@@ -77,7 +77,7 @@ class Identity:
 
     @property
     def location(self):
-        """Gets the location of this Identity.
+        r"""Gets the location of this Identity.
 
         参数位置
 
@@ -88,7 +88,7 @@ class Identity:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this Identity.
+        r"""Sets the location of this Identity.
 
         参数位置
 
@@ -99,7 +99,7 @@ class Identity:
 
     @property
     def validation(self):
-        """Gets the validation of this Identity.
+        r"""Gets the validation of this Identity.
 
         参数校验表达式，默认为null，不做校验
 
@@ -110,7 +110,7 @@ class Identity:
 
     @validation.setter
     def validation(self, validation):
-        """Sets the validation of this Identity.
+        r"""Sets the validation of this Identity.
 
         参数校验表达式，默认为null，不做校验
 

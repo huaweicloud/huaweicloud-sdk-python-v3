@@ -24,7 +24,7 @@ class UpdateAzByInstanceTypeResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateAzByInstanceTypeResponse
+        r"""UpdateAzByInstanceTypeResponse
 
         The model defined in huaweicloud sdk
 

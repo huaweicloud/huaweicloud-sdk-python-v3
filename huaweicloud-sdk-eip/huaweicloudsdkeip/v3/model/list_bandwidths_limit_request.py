@@ -35,7 +35,7 @@ class ListBandwidthsLimitRequest:
     }
 
     def __init__(self, limit=None, offset=None, marker=None, page_reverse=None, fields=None, charge_mode=None):
-        """ListBandwidthsLimitRequest
+        r"""ListBandwidthsLimitRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListBandwidthsLimitRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListBandwidthsLimitRequest.
+        r"""Gets the limit of this ListBandwidthsLimitRequest.
 
         每页条数
 
@@ -89,7 +89,7 @@ class ListBandwidthsLimitRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListBandwidthsLimitRequest.
+        r"""Sets the limit of this ListBandwidthsLimitRequest.
 
         每页条数
 
@@ -100,7 +100,7 @@ class ListBandwidthsLimitRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListBandwidthsLimitRequest.
+        r"""Gets the offset of this ListBandwidthsLimitRequest.
 
         分页起始点
 
@@ -111,7 +111,7 @@ class ListBandwidthsLimitRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListBandwidthsLimitRequest.
+        r"""Sets the offset of this ListBandwidthsLimitRequest.
 
         分页起始点
 
@@ -122,7 +122,7 @@ class ListBandwidthsLimitRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListBandwidthsLimitRequest.
+        r"""Gets the marker of this ListBandwidthsLimitRequest.
 
         分页起始点
 
@@ -133,7 +133,7 @@ class ListBandwidthsLimitRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListBandwidthsLimitRequest.
+        r"""Sets the marker of this ListBandwidthsLimitRequest.
 
         分页起始点
 
@@ -144,7 +144,7 @@ class ListBandwidthsLimitRequest:
 
     @property
     def page_reverse(self):
-        """Gets the page_reverse of this ListBandwidthsLimitRequest.
+        r"""Gets the page_reverse of this ListBandwidthsLimitRequest.
 
         翻页方向
 
@@ -155,7 +155,7 @@ class ListBandwidthsLimitRequest:
 
     @page_reverse.setter
     def page_reverse(self, page_reverse):
-        """Sets the page_reverse of this ListBandwidthsLimitRequest.
+        r"""Sets the page_reverse of this ListBandwidthsLimitRequest.
 
         翻页方向
 
@@ -166,7 +166,7 @@ class ListBandwidthsLimitRequest:
 
     @property
     def fields(self):
-        """Gets the fields of this ListBandwidthsLimitRequest.
+        r"""Gets the fields of this ListBandwidthsLimitRequest.
 
         只显示指定的字段。使用ext-fields时在默认显示的字段基础上追加字段
 
@@ -177,7 +177,7 @@ class ListBandwidthsLimitRequest:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this ListBandwidthsLimitRequest.
+        r"""Sets the fields of this ListBandwidthsLimitRequest.
 
         只显示指定的字段。使用ext-fields时在默认显示的字段基础上追加字段
 
@@ -188,7 +188,7 @@ class ListBandwidthsLimitRequest:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this ListBandwidthsLimitRequest.
+        r"""Gets the charge_mode of this ListBandwidthsLimitRequest.
 
         根据charge_mode过滤
 
@@ -199,7 +199,7 @@ class ListBandwidthsLimitRequest:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this ListBandwidthsLimitRequest.
+        r"""Sets the charge_mode of this ListBandwidthsLimitRequest.
 
         根据charge_mode过滤
 

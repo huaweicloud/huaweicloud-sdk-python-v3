@@ -25,7 +25,7 @@ class BatchCreateClusterTagsRequestBody:
     }
 
     def __init__(self, tags=None):
-        """BatchCreateClusterTagsRequestBody
+        r"""BatchCreateClusterTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchCreateClusterTagsRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchCreateClusterTagsRequestBody.
+        r"""Gets the tags of this BatchCreateClusterTagsRequestBody.
 
         待创建的集群资源标签列表。单集群资源标签总数上限为20。
 
@@ -53,7 +53,7 @@ class BatchCreateClusterTagsRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchCreateClusterTagsRequestBody.
+        r"""Sets the tags of this BatchCreateClusterTagsRequestBody.
 
         待创建的集群资源标签列表。单集群资源标签总数上限为20。
 

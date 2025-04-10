@@ -27,7 +27,7 @@ class ListComponentConfigurationsResponseData:
     }
 
     def __init__(self, spec=None, metadata=None):
-        """ListComponentConfigurationsResponseData
+        r"""ListComponentConfigurationsResponseData
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListComponentConfigurationsResponseData:
 
     @property
     def spec(self):
-        """Gets the spec of this ListComponentConfigurationsResponseData.
+        r"""Gets the spec of this ListComponentConfigurationsResponseData.
 
         :return: The spec of this ListComponentConfigurationsResponseData.
         :rtype: :class:`huaweicloudsdkcae.v1.ConfigurationResponseDataSpec`
@@ -59,7 +59,7 @@ class ListComponentConfigurationsResponseData:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this ListComponentConfigurationsResponseData.
+        r"""Sets the spec of this ListComponentConfigurationsResponseData.
 
         :param spec: The spec of this ListComponentConfigurationsResponseData.
         :type spec: :class:`huaweicloudsdkcae.v1.ConfigurationResponseDataSpec`
@@ -68,7 +68,7 @@ class ListComponentConfigurationsResponseData:
 
     @property
     def metadata(self):
-        """Gets the metadata of this ListComponentConfigurationsResponseData.
+        r"""Gets the metadata of this ListComponentConfigurationsResponseData.
 
         :return: The metadata of this ListComponentConfigurationsResponseData.
         :rtype: :class:`huaweicloudsdkcae.v1.ConfigurationDataMetadata`
@@ -77,7 +77,7 @@ class ListComponentConfigurationsResponseData:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ListComponentConfigurationsResponseData.
+        r"""Sets the metadata of this ListComponentConfigurationsResponseData.
 
         :param metadata: The metadata of this ListComponentConfigurationsResponseData.
         :type metadata: :class:`huaweicloudsdkcae.v1.ConfigurationDataMetadata`

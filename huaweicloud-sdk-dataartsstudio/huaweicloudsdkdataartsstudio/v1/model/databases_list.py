@@ -27,7 +27,7 @@ class DatabasesList:
     }
 
     def __init__(self, database_name=None, description=None):
-        """DatabasesList
+        r"""DatabasesList
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DatabasesList:
 
     @property
     def database_name(self):
-        """Gets the database_name of this DatabasesList.
+        r"""Gets the database_name of this DatabasesList.
 
         数据库名称
 
@@ -61,7 +61,7 @@ class DatabasesList:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this DatabasesList.
+        r"""Sets the database_name of this DatabasesList.
 
         数据库名称
 
@@ -72,7 +72,7 @@ class DatabasesList:
 
     @property
     def description(self):
-        """Gets the description of this DatabasesList.
+        r"""Gets the description of this DatabasesList.
 
         数据库描述
 
@@ -83,7 +83,7 @@ class DatabasesList:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DatabasesList.
+        r"""Sets the description of this DatabasesList.
 
         数据库描述
 

@@ -46,7 +46,7 @@ class CheckVideoJobResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, state=None, created_at=None, updated_at=None, input=None, service_config=None, output=None, hosting_result=None, service_version=None):
-        """CheckVideoJobResponse
+        r"""CheckVideoJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class CheckVideoJobResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CheckVideoJobResponse.
+        r"""Gets the id of this CheckVideoJobResponse.
 
         作业ID。
 
@@ -125,7 +125,7 @@ class CheckVideoJobResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CheckVideoJobResponse.
+        r"""Sets the id of this CheckVideoJobResponse.
 
         作业ID。
 
@@ -136,7 +136,7 @@ class CheckVideoJobResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CheckVideoJobResponse.
+        r"""Gets the name of this CheckVideoJobResponse.
 
         作业名称。
 
@@ -147,7 +147,7 @@ class CheckVideoJobResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CheckVideoJobResponse.
+        r"""Sets the name of this CheckVideoJobResponse.
 
         作业名称。
 
@@ -158,7 +158,7 @@ class CheckVideoJobResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CheckVideoJobResponse.
+        r"""Gets the description of this CheckVideoJobResponse.
 
         作业描述信息，默认值为空。
 
@@ -169,7 +169,7 @@ class CheckVideoJobResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CheckVideoJobResponse.
+        r"""Sets the description of this CheckVideoJobResponse.
 
         作业描述信息，默认值为空。
 
@@ -180,7 +180,7 @@ class CheckVideoJobResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this CheckVideoJobResponse.
+        r"""Gets the state of this CheckVideoJobResponse.
 
         作业状态： - PENDING：等待中 - RECOVERING ：恢复中 - STARTING：启动中 - UPGRADING ：更新中 - CREATE_FAILED：创建失败 - START_FAILED：启动失败 - RUNNING：运行中 - STOPPING：停止中 - STOPPED：已停止 - ABNORMAL：运行异常 - SUCCEEDED：运行成功 - FAILED：运行失败 - DELETING：删除中 - FREEZING ：冻结中 - FROZEN ：已冻结
 
@@ -191,7 +191,7 @@ class CheckVideoJobResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this CheckVideoJobResponse.
+        r"""Sets the state of this CheckVideoJobResponse.
 
         作业状态： - PENDING：等待中 - RECOVERING ：恢复中 - STARTING：启动中 - UPGRADING ：更新中 - CREATE_FAILED：创建失败 - START_FAILED：启动失败 - RUNNING：运行中 - STOPPING：停止中 - STOPPED：已停止 - ABNORMAL：运行异常 - SUCCEEDED：运行成功 - FAILED：运行失败 - DELETING：删除中 - FREEZING ：冻结中 - FROZEN ：已冻结
 
@@ -202,7 +202,7 @@ class CheckVideoJobResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this CheckVideoJobResponse.
+        r"""Gets the created_at of this CheckVideoJobResponse.
 
         作业创建时间，格式为ISO8601：YYYY-MM-DDThh:mm:ssZ。
 
@@ -213,7 +213,7 @@ class CheckVideoJobResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this CheckVideoJobResponse.
+        r"""Sets the created_at of this CheckVideoJobResponse.
 
         作业创建时间，格式为ISO8601：YYYY-MM-DDThh:mm:ssZ。
 
@@ -224,7 +224,7 @@ class CheckVideoJobResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this CheckVideoJobResponse.
+        r"""Gets the updated_at of this CheckVideoJobResponse.
 
         作业更新时间，格式为ISO8601：YYYY-MM-DDThh:mm:ssZ。
 
@@ -235,7 +235,7 @@ class CheckVideoJobResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this CheckVideoJobResponse.
+        r"""Sets the updated_at of this CheckVideoJobResponse.
 
         作业更新时间，格式为ISO8601：YYYY-MM-DDThh:mm:ssZ。
 
@@ -246,7 +246,7 @@ class CheckVideoJobResponse(SdkResponse):
 
     @property
     def input(self):
-        """Gets the input of this CheckVideoJobResponse.
+        r"""Gets the input of this CheckVideoJobResponse.
 
         数据输入列表，默认值为[]。
 
@@ -257,7 +257,7 @@ class CheckVideoJobResponse(SdkResponse):
 
     @input.setter
     def input(self, input):
-        """Sets the input of this CheckVideoJobResponse.
+        r"""Sets the input of this CheckVideoJobResponse.
 
         数据输入列表，默认值为[]。
 
@@ -268,7 +268,7 @@ class CheckVideoJobResponse(SdkResponse):
 
     @property
     def service_config(self):
-        """Gets the service_config of this CheckVideoJobResponse.
+        r"""Gets the service_config of this CheckVideoJobResponse.
 
         服务算法配置，字段结构跟服务相关。
 
@@ -279,7 +279,7 @@ class CheckVideoJobResponse(SdkResponse):
 
     @service_config.setter
     def service_config(self, service_config):
-        """Sets the service_config of this CheckVideoJobResponse.
+        r"""Sets the service_config of this CheckVideoJobResponse.
 
         服务算法配置，字段结构跟服务相关。
 
@@ -290,7 +290,7 @@ class CheckVideoJobResponse(SdkResponse):
 
     @property
     def output(self):
-        """Gets the output of this CheckVideoJobResponse.
+        r"""Gets the output of this CheckVideoJobResponse.
 
         数据输出列表，默认值为[]
 
@@ -301,7 +301,7 @@ class CheckVideoJobResponse(SdkResponse):
 
     @output.setter
     def output(self, output):
-        """Sets the output of this CheckVideoJobResponse.
+        r"""Sets the output of this CheckVideoJobResponse.
 
         数据输出列表，默认值为[]
 
@@ -312,7 +312,7 @@ class CheckVideoJobResponse(SdkResponse):
 
     @property
     def hosting_result(self):
-        """Gets the hosting_result of this CheckVideoJobResponse.
+        r"""Gets the hosting_result of this CheckVideoJobResponse.
 
         :return: The hosting_result of this CheckVideoJobResponse.
         :rtype: :class:`huaweicloudsdkvcm.v2.VideoJobResponseHostingResult`
@@ -321,7 +321,7 @@ class CheckVideoJobResponse(SdkResponse):
 
     @hosting_result.setter
     def hosting_result(self, hosting_result):
-        """Sets the hosting_result of this CheckVideoJobResponse.
+        r"""Sets the hosting_result of this CheckVideoJobResponse.
 
         :param hosting_result: The hosting_result of this CheckVideoJobResponse.
         :type hosting_result: :class:`huaweicloudsdkvcm.v2.VideoJobResponseHostingResult`
@@ -330,7 +330,7 @@ class CheckVideoJobResponse(SdkResponse):
 
     @property
     def service_version(self):
-        """Gets the service_version of this CheckVideoJobResponse.
+        r"""Gets the service_version of this CheckVideoJobResponse.
 
         作业对应的服务版本。
 
@@ -341,7 +341,7 @@ class CheckVideoJobResponse(SdkResponse):
 
     @service_version.setter
     def service_version(self, service_version):
-        """Sets the service_version of this CheckVideoJobResponse.
+        r"""Sets the service_version of this CheckVideoJobResponse.
 
         作业对应的服务版本。
 

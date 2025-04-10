@@ -27,7 +27,7 @@ class UpdateAppRuleRequest:
     }
 
     def __init__(self, rule_id=None, body=None):
-        """UpdateAppRuleRequest
+        r"""UpdateAppRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateAppRuleRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this UpdateAppRuleRequest.
+        r"""Gets the rule_id of this UpdateAppRuleRequest.
 
         规则ID。
 
@@ -60,7 +60,7 @@ class UpdateAppRuleRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this UpdateAppRuleRequest.
+        r"""Sets the rule_id of this UpdateAppRuleRequest.
 
         规则ID。
 
@@ -71,7 +71,7 @@ class UpdateAppRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAppRuleRequest.
+        r"""Gets the body of this UpdateAppRuleRequest.
 
         :return: The body of this UpdateAppRuleRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.UpdateAppRuleReq`
@@ -80,7 +80,7 @@ class UpdateAppRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAppRuleRequest.
+        r"""Sets the body of this UpdateAppRuleRequest.
 
         :param body: The body of this UpdateAppRuleRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.UpdateAppRuleReq`

@@ -26,7 +26,7 @@ class ListErrorlogForLtsResponse(SdkResponse):
     }
 
     def __init__(self, error_log_list=None):
-        """ListErrorlogForLtsResponse
+        r"""ListErrorlogForLtsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListErrorlogForLtsResponse(SdkResponse):
 
     @property
     def error_log_list(self):
-        """Gets the error_log_list of this ListErrorlogForLtsResponse.
+        r"""Gets the error_log_list of this ListErrorlogForLtsResponse.
 
         日志数据集合。
 
@@ -55,7 +55,7 @@ class ListErrorlogForLtsResponse(SdkResponse):
 
     @error_log_list.setter
     def error_log_list(self, error_log_list):
-        """Sets the error_log_list of this ListErrorlogForLtsResponse.
+        r"""Sets the error_log_list of this ListErrorlogForLtsResponse.
 
         日志数据集合。
 

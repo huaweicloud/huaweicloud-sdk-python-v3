@@ -27,7 +27,7 @@ class SetNetworkSwitchPolicyRequest:
     }
 
     def __init__(self, sim_card_id=None, body=None):
-        """SetNetworkSwitchPolicyRequest
+        r"""SetNetworkSwitchPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SetNetworkSwitchPolicyRequest:
 
     @property
     def sim_card_id(self):
-        """Gets the sim_card_id of this SetNetworkSwitchPolicyRequest.
+        r"""Gets the sim_card_id of this SetNetworkSwitchPolicyRequest.
 
         SIM卡标识
 
@@ -60,7 +60,7 @@ class SetNetworkSwitchPolicyRequest:
 
     @sim_card_id.setter
     def sim_card_id(self, sim_card_id):
-        """Sets the sim_card_id of this SetNetworkSwitchPolicyRequest.
+        r"""Sets the sim_card_id of this SetNetworkSwitchPolicyRequest.
 
         SIM卡标识
 
@@ -71,7 +71,7 @@ class SetNetworkSwitchPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetNetworkSwitchPolicyRequest.
+        r"""Gets the body of this SetNetworkSwitchPolicyRequest.
 
         :return: The body of this SetNetworkSwitchPolicyRequest.
         :rtype: :class:`huaweicloudsdkgsl.v3.NetworkSwitchPolicyReq`
@@ -80,7 +80,7 @@ class SetNetworkSwitchPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetNetworkSwitchPolicyRequest.
+        r"""Sets the body of this SetNetworkSwitchPolicyRequest.
 
         :param body: The body of this SetNetworkSwitchPolicyRequest.
         :type body: :class:`huaweicloudsdkgsl.v3.NetworkSwitchPolicyReq`

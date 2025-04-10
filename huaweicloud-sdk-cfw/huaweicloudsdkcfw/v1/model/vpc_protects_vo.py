@@ -37,7 +37,7 @@ class VPCProtectsVo:
     }
 
     def __init__(self, total=None, self_total=None, other_total=None, protect_vpcs=None, self_protect_vpcs=None, other_protect_vpcs=None, total_assets=None):
-        """VPCProtectsVo
+        r"""VPCProtectsVo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class VPCProtectsVo:
 
     @property
     def total(self):
-        """Gets the total of this VPCProtectsVo.
+        r"""Gets the total of this VPCProtectsVo.
 
         总防护VPC数
 
@@ -96,7 +96,7 @@ class VPCProtectsVo:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this VPCProtectsVo.
+        r"""Sets the total of this VPCProtectsVo.
 
         总防护VPC数
 
@@ -107,7 +107,7 @@ class VPCProtectsVo:
 
     @property
     def self_total(self):
-        """Gets the self_total of this VPCProtectsVo.
+        r"""Gets the self_total of this VPCProtectsVo.
 
         防火墙东西向防护可进行跨账号防护VPC，self_total表示本项目防护VPC总数。
 
@@ -118,7 +118,7 @@ class VPCProtectsVo:
 
     @self_total.setter
     def self_total(self, self_total):
-        """Sets the self_total of this VPCProtectsVo.
+        r"""Sets the self_total of this VPCProtectsVo.
 
         防火墙东西向防护可进行跨账号防护VPC，self_total表示本项目防护VPC总数。
 
@@ -129,7 +129,7 @@ class VPCProtectsVo:
 
     @property
     def other_total(self):
-        """Gets the other_total of this VPCProtectsVo.
+        r"""Gets the other_total of this VPCProtectsVo.
 
         防火墙东西向防护可进行跨账号防护VPC，other_total表示其他项目防护VPC数
 
@@ -140,7 +140,7 @@ class VPCProtectsVo:
 
     @other_total.setter
     def other_total(self, other_total):
-        """Sets the other_total of this VPCProtectsVo.
+        r"""Sets the other_total of this VPCProtectsVo.
 
         防火墙东西向防护可进行跨账号防护VPC，other_total表示其他项目防护VPC数
 
@@ -151,7 +151,7 @@ class VPCProtectsVo:
 
     @property
     def protect_vpcs(self):
-        """Gets the protect_vpcs of this VPCProtectsVo.
+        r"""Gets the protect_vpcs of this VPCProtectsVo.
 
         防火墙东西向防护可进行跨账号防护VPC，protect_vpcs指的是总体防护VPC列表
 
@@ -162,7 +162,7 @@ class VPCProtectsVo:
 
     @protect_vpcs.setter
     def protect_vpcs(self, protect_vpcs):
-        """Sets the protect_vpcs of this VPCProtectsVo.
+        r"""Sets the protect_vpcs of this VPCProtectsVo.
 
         防火墙东西向防护可进行跨账号防护VPC，protect_vpcs指的是总体防护VPC列表
 
@@ -173,7 +173,7 @@ class VPCProtectsVo:
 
     @property
     def self_protect_vpcs(self):
-        """Gets the self_protect_vpcs of this VPCProtectsVo.
+        r"""Gets the self_protect_vpcs of this VPCProtectsVo.
 
         防火墙东西向防护可进行跨账号防护VPC，self_protect_vpcs指的是本项目防护VPC列表
 
@@ -184,7 +184,7 @@ class VPCProtectsVo:
 
     @self_protect_vpcs.setter
     def self_protect_vpcs(self, self_protect_vpcs):
-        """Sets the self_protect_vpcs of this VPCProtectsVo.
+        r"""Sets the self_protect_vpcs of this VPCProtectsVo.
 
         防火墙东西向防护可进行跨账号防护VPC，self_protect_vpcs指的是本项目防护VPC列表
 
@@ -195,7 +195,7 @@ class VPCProtectsVo:
 
     @property
     def other_protect_vpcs(self):
-        """Gets the other_protect_vpcs of this VPCProtectsVo.
+        r"""Gets the other_protect_vpcs of this VPCProtectsVo.
 
         防火墙东西向防护可进行跨账号防护VPC，other_protect_vpcs指的是其他项目防护VPC列表
 
@@ -206,7 +206,7 @@ class VPCProtectsVo:
 
     @other_protect_vpcs.setter
     def other_protect_vpcs(self, other_protect_vpcs):
-        """Sets the other_protect_vpcs of this VPCProtectsVo.
+        r"""Sets the other_protect_vpcs of this VPCProtectsVo.
 
         防火墙东西向防护可进行跨账号防护VPC，other_protect_vpcs指的是其他项目防护VPC列表
 
@@ -217,7 +217,7 @@ class VPCProtectsVo:
 
     @property
     def total_assets(self):
-        """Gets the total_assets of this VPCProtectsVo.
+        r"""Gets the total_assets of this VPCProtectsVo.
 
         租户的所有VPC资产数量
 
@@ -228,7 +228,7 @@ class VPCProtectsVo:
 
     @total_assets.setter
     def total_assets(self, total_assets):
-        """Sets the total_assets of this VPCProtectsVo.
+        r"""Sets the total_assets of this VPCProtectsVo.
 
         租户的所有VPC资产数量
 

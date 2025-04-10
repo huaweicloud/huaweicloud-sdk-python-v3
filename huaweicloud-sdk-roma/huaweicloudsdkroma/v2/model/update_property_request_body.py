@@ -45,7 +45,7 @@ class UpdatePropertyRequestBody:
     }
 
     def __init__(self, property_name=None, description=None, data_type=None, required=None, min=None, max=None, step=None, max_length=None, unit=None, enum_list=None, enum_dict=None):
-        """UpdatePropertyRequestBody
+        r"""UpdatePropertyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -110,7 +110,7 @@ class UpdatePropertyRequestBody:
 
     @property
     def property_name(self):
-        """Gets the property_name of this UpdatePropertyRequestBody.
+        r"""Gets the property_name of this UpdatePropertyRequestBody.
 
         属性名称，首位必须为字母，支持大小写字母，数字，中划线及下划线，长度2-50
 
@@ -121,7 +121,7 @@ class UpdatePropertyRequestBody:
 
     @property_name.setter
     def property_name(self, property_name):
-        """Sets the property_name of this UpdatePropertyRequestBody.
+        r"""Sets the property_name of this UpdatePropertyRequestBody.
 
         属性名称，首位必须为字母，支持大小写字母，数字，中划线及下划线，长度2-50
 
@@ -132,7 +132,7 @@ class UpdatePropertyRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdatePropertyRequestBody.
+        r"""Gets the description of this UpdatePropertyRequestBody.
 
         属性描述，长度0-200
 
@@ -143,7 +143,7 @@ class UpdatePropertyRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdatePropertyRequestBody.
+        r"""Sets the description of this UpdatePropertyRequestBody.
 
         属性描述，长度0-200
 
@@ -154,7 +154,7 @@ class UpdatePropertyRequestBody:
 
     @property
     def data_type(self):
-        """Gets the data_type of this UpdatePropertyRequestBody.
+        r"""Gets the data_type of this UpdatePropertyRequestBody.
 
         属性数据类型，枚举值大小写敏感；number格式为数字，范围±1.0 x 10^-28 to ±7.9228 x 10^28；sting为字符串；integer为整数；datetime为时间，格式为yyyyMMddTHHmmss；json为自定义json格式
 
@@ -165,7 +165,7 @@ class UpdatePropertyRequestBody:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this UpdatePropertyRequestBody.
+        r"""Sets the data_type of this UpdatePropertyRequestBody.
 
         属性数据类型，枚举值大小写敏感；number格式为数字，范围±1.0 x 10^-28 to ±7.9228 x 10^28；sting为字符串；integer为整数；datetime为时间，格式为yyyyMMddTHHmmss；json为自定义json格式
 
@@ -176,7 +176,7 @@ class UpdatePropertyRequestBody:
 
     @property
     def required(self):
-        """Gets the required of this UpdatePropertyRequestBody.
+        r"""Gets the required of this UpdatePropertyRequestBody.
 
         是否必填 0-非必填 1-必填
 
@@ -187,7 +187,7 @@ class UpdatePropertyRequestBody:
 
     @required.setter
     def required(self, required):
-        """Sets the required of this UpdatePropertyRequestBody.
+        r"""Sets the required of this UpdatePropertyRequestBody.
 
         是否必填 0-非必填 1-必填
 
@@ -198,7 +198,7 @@ class UpdatePropertyRequestBody:
 
     @property
     def min(self):
-        """Gets the min of this UpdatePropertyRequestBody.
+        r"""Gets the min of this UpdatePropertyRequestBody.
 
         最小值，当data_type为integer或number时必填
 
@@ -209,7 +209,7 @@ class UpdatePropertyRequestBody:
 
     @min.setter
     def min(self, min):
-        """Sets the min of this UpdatePropertyRequestBody.
+        r"""Sets the min of this UpdatePropertyRequestBody.
 
         最小值，当data_type为integer或number时必填
 
@@ -220,7 +220,7 @@ class UpdatePropertyRequestBody:
 
     @property
     def max(self):
-        """Gets the max of this UpdatePropertyRequestBody.
+        r"""Gets the max of this UpdatePropertyRequestBody.
 
         最大值，当data_type为integer或number时必填
 
@@ -231,7 +231,7 @@ class UpdatePropertyRequestBody:
 
     @max.setter
     def max(self, max):
-        """Sets the max of this UpdatePropertyRequestBody.
+        r"""Sets the max of this UpdatePropertyRequestBody.
 
         最大值，当data_type为integer或number时必填
 
@@ -242,7 +242,7 @@ class UpdatePropertyRequestBody:
 
     @property
     def step(self):
-        """Gets the step of this UpdatePropertyRequestBody.
+        r"""Gets the step of this UpdatePropertyRequestBody.
 
         步长，当data_type为integer或number时必填
 
@@ -253,7 +253,7 @@ class UpdatePropertyRequestBody:
 
     @step.setter
     def step(self, step):
-        """Sets the step of this UpdatePropertyRequestBody.
+        r"""Sets the step of this UpdatePropertyRequestBody.
 
         步长，当data_type为integer或number时必填
 
@@ -264,7 +264,7 @@ class UpdatePropertyRequestBody:
 
     @property
     def max_length(self):
-        """Gets the max_length of this UpdatePropertyRequestBody.
+        r"""Gets the max_length of this UpdatePropertyRequestBody.
 
         字符串最大长度，当data_type为string, datetime, json时必填,自动向下取整
 
@@ -275,7 +275,7 @@ class UpdatePropertyRequestBody:
 
     @max_length.setter
     def max_length(self, max_length):
-        """Sets the max_length of this UpdatePropertyRequestBody.
+        r"""Sets the max_length of this UpdatePropertyRequestBody.
 
         字符串最大长度，当data_type为string, datetime, json时必填,自动向下取整
 
@@ -286,7 +286,7 @@ class UpdatePropertyRequestBody:
 
     @property
     def unit(self):
-        """Gets the unit of this UpdatePropertyRequestBody.
+        r"""Gets the unit of this UpdatePropertyRequestBody.
 
         属性单位
 
@@ -297,7 +297,7 @@ class UpdatePropertyRequestBody:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this UpdatePropertyRequestBody.
+        r"""Sets the unit of this UpdatePropertyRequestBody.
 
         属性单位
 
@@ -308,7 +308,7 @@ class UpdatePropertyRequestBody:
 
     @property
     def enum_list(self):
-        """Gets the enum_list of this UpdatePropertyRequestBody.
+        r"""Gets the enum_list of this UpdatePropertyRequestBody.
 
         string的枚举值数组，使用逗号分隔
 
@@ -319,7 +319,7 @@ class UpdatePropertyRequestBody:
 
     @enum_list.setter
     def enum_list(self, enum_list):
-        """Sets the enum_list of this UpdatePropertyRequestBody.
+        r"""Sets the enum_list of this UpdatePropertyRequestBody.
 
         string的枚举值数组，使用逗号分隔
 
@@ -330,7 +330,7 @@ class UpdatePropertyRequestBody:
 
     @property
     def enum_dict(self):
-        """Gets the enum_dict of this UpdatePropertyRequestBody.
+        r"""Gets the enum_dict of this UpdatePropertyRequestBody.
 
         当数据类型为boolean枚举值时填写json格式数据，形如\"enum_dict\":{\"0\":\"xxx\",\"1\":\"xxx\"}
 
@@ -341,7 +341,7 @@ class UpdatePropertyRequestBody:
 
     @enum_dict.setter
     def enum_dict(self, enum_dict):
-        """Sets the enum_dict of this UpdatePropertyRequestBody.
+        r"""Sets the enum_dict of this UpdatePropertyRequestBody.
 
         当数据类型为boolean枚举值时填写json格式数据，形如\"enum_dict\":{\"0\":\"xxx\",\"1\":\"xxx\"}
 

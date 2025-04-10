@@ -51,7 +51,7 @@ class FirewallRuleDetail:
     }
 
     def __init__(self, id=None, name=None, description=None, action=None, project_id=None, protocol=None, ip_version=None, source_ip_address=None, destination_ip_address=None, source_port=None, destination_port=None, source_address_group_id=None, destination_address_group_id=None, enabled=None):
-        """FirewallRuleDetail
+        r"""FirewallRuleDetail
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class FirewallRuleDetail:
 
     @property
     def id(self):
-        """Gets the id of this FirewallRuleDetail.
+        r"""Gets the id of this FirewallRuleDetail.
 
         功能说明：ACL规则唯一标识 取值范围：合法UUID的字符串
 
@@ -131,7 +131,7 @@ class FirewallRuleDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this FirewallRuleDetail.
+        r"""Sets the id of this FirewallRuleDetail.
 
         功能说明：ACL规则唯一标识 取值范围：合法UUID的字符串
 
@@ -142,7 +142,7 @@ class FirewallRuleDetail:
 
     @property
     def name(self):
-        """Gets the name of this FirewallRuleDetail.
+        r"""Gets the name of this FirewallRuleDetail.
 
         功能说明：ACL规则名称 取值范围：0-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -153,7 +153,7 @@ class FirewallRuleDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this FirewallRuleDetail.
+        r"""Sets the name of this FirewallRuleDetail.
 
         功能说明：ACL规则名称 取值范围：0-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -164,7 +164,7 @@ class FirewallRuleDetail:
 
     @property
     def description(self):
-        """Gets the description of this FirewallRuleDetail.
+        r"""Gets the description of this FirewallRuleDetail.
 
         功能说明：ACL规则描述信息 取值范围：0-255个字符 约束：不能包含“<”和“>”。
 
@@ -175,7 +175,7 @@ class FirewallRuleDetail:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this FirewallRuleDetail.
+        r"""Sets the description of this FirewallRuleDetail.
 
         功能说明：ACL规则描述信息 取值范围：0-255个字符 约束：不能包含“<”和“>”。
 
@@ -186,7 +186,7 @@ class FirewallRuleDetail:
 
     @property
     def action(self):
-        """Gets the action of this FirewallRuleDetail.
+        r"""Gets the action of this FirewallRuleDetail.
 
         功能说明：ACL规则对流量执行的操作放通或拒绝 取值范围：allow放通；deny拒绝
 
@@ -197,7 +197,7 @@ class FirewallRuleDetail:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this FirewallRuleDetail.
+        r"""Sets the action of this FirewallRuleDetail.
 
         功能说明：ACL规则对流量执行的操作放通或拒绝 取值范围：allow放通；deny拒绝
 
@@ -208,7 +208,7 @@ class FirewallRuleDetail:
 
     @property
     def project_id(self):
-        """Gets the project_id of this FirewallRuleDetail.
+        r"""Gets the project_id of this FirewallRuleDetail.
 
         功能说明：资源所属项目ID
 
@@ -219,7 +219,7 @@ class FirewallRuleDetail:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this FirewallRuleDetail.
+        r"""Sets the project_id of this FirewallRuleDetail.
 
         功能说明：资源所属项目ID
 
@@ -230,7 +230,7 @@ class FirewallRuleDetail:
 
     @property
     def protocol(self):
-        """Gets the protocol of this FirewallRuleDetail.
+        r"""Gets the protocol of this FirewallRuleDetail.
 
         功能说明：ACL规则协议 取值范围：支持TCP,UDP,ICMP, ICMPV6或者IP协议号（0-255）
 
@@ -241,7 +241,7 @@ class FirewallRuleDetail:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this FirewallRuleDetail.
+        r"""Sets the protocol of this FirewallRuleDetail.
 
         功能说明：ACL规则协议 取值范围：支持TCP,UDP,ICMP, ICMPV6或者IP协议号（0-255）
 
@@ -252,7 +252,7 @@ class FirewallRuleDetail:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this FirewallRuleDetail.
+        r"""Gets the ip_version of this FirewallRuleDetail.
 
         功能说明：ACL规则的ip版本 取值范围：4, 表示ipv4；6, 表示ipv6
 
@@ -263,7 +263,7 @@ class FirewallRuleDetail:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this FirewallRuleDetail.
+        r"""Sets the ip_version of this FirewallRuleDetail.
 
         功能说明：ACL规则的ip版本 取值范围：4, 表示ipv4；6, 表示ipv6
 
@@ -274,7 +274,7 @@ class FirewallRuleDetail:
 
     @property
     def source_ip_address(self):
-        """Gets the source_ip_address of this FirewallRuleDetail.
+        r"""Gets the source_ip_address of this FirewallRuleDetail.
 
         功能说明：ACL规则源IP地址或者CIDR 约束：source_ip_address和source_address_group_id不能同时设置
 
@@ -285,7 +285,7 @@ class FirewallRuleDetail:
 
     @source_ip_address.setter
     def source_ip_address(self, source_ip_address):
-        """Sets the source_ip_address of this FirewallRuleDetail.
+        r"""Sets the source_ip_address of this FirewallRuleDetail.
 
         功能说明：ACL规则源IP地址或者CIDR 约束：source_ip_address和source_address_group_id不能同时设置
 
@@ -296,7 +296,7 @@ class FirewallRuleDetail:
 
     @property
     def destination_ip_address(self):
-        """Gets the destination_ip_address of this FirewallRuleDetail.
+        r"""Gets the destination_ip_address of this FirewallRuleDetail.
 
         功能说明：ACL规则目的IP地址或者CIDR 约束：destination_ip_address和destination_address_group_id不能同时设置
 
@@ -307,7 +307,7 @@ class FirewallRuleDetail:
 
     @destination_ip_address.setter
     def destination_ip_address(self, destination_ip_address):
-        """Sets the destination_ip_address of this FirewallRuleDetail.
+        r"""Sets the destination_ip_address of this FirewallRuleDetail.
 
         功能说明：ACL规则目的IP地址或者CIDR 约束：destination_ip_address和destination_address_group_id不能同时设置
 
@@ -318,7 +318,7 @@ class FirewallRuleDetail:
 
     @property
     def source_port(self):
-        """Gets the source_port of this FirewallRuleDetail.
+        r"""Gets the source_port of this FirewallRuleDetail.
 
         功能说明：ACL规则的源端口 取值范围：支持端口号，一段端口范围，多个以逗号分隔 约束：支持的端口组的数量默认为20
 
@@ -329,7 +329,7 @@ class FirewallRuleDetail:
 
     @source_port.setter
     def source_port(self, source_port):
-        """Sets the source_port of this FirewallRuleDetail.
+        r"""Sets the source_port of this FirewallRuleDetail.
 
         功能说明：ACL规则的源端口 取值范围：支持端口号，一段端口范围，多个以逗号分隔 约束：支持的端口组的数量默认为20
 
@@ -340,7 +340,7 @@ class FirewallRuleDetail:
 
     @property
     def destination_port(self):
-        """Gets the destination_port of this FirewallRuleDetail.
+        r"""Gets the destination_port of this FirewallRuleDetail.
 
         功能说明：ACL规则的目的端口 取值范围：支持端口号，一段端口范围，多个以逗号分隔 约束：支持的端口组的数量默认为20
 
@@ -351,7 +351,7 @@ class FirewallRuleDetail:
 
     @destination_port.setter
     def destination_port(self, destination_port):
-        """Sets the destination_port of this FirewallRuleDetail.
+        r"""Sets the destination_port of this FirewallRuleDetail.
 
         功能说明：ACL规则的目的端口 取值范围：支持端口号，一段端口范围，多个以逗号分隔 约束：支持的端口组的数量默认为20
 
@@ -362,7 +362,7 @@ class FirewallRuleDetail:
 
     @property
     def source_address_group_id(self):
-        """Gets the source_address_group_id of this FirewallRuleDetail.
+        r"""Gets the source_address_group_id of this FirewallRuleDetail.
 
         功能说明：ACL规则的源地址组ID 约束：source_ip_address和source_address_group_id不能同时设置
 
@@ -373,7 +373,7 @@ class FirewallRuleDetail:
 
     @source_address_group_id.setter
     def source_address_group_id(self, source_address_group_id):
-        """Sets the source_address_group_id of this FirewallRuleDetail.
+        r"""Sets the source_address_group_id of this FirewallRuleDetail.
 
         功能说明：ACL规则的源地址组ID 约束：source_ip_address和source_address_group_id不能同时设置
 
@@ -384,7 +384,7 @@ class FirewallRuleDetail:
 
     @property
     def destination_address_group_id(self):
-        """Gets the destination_address_group_id of this FirewallRuleDetail.
+        r"""Gets the destination_address_group_id of this FirewallRuleDetail.
 
         功能说明：ACL规则的目的地址组ID 约束：destination_ip_address和destination_address_group_id不能同时设置
 
@@ -395,7 +395,7 @@ class FirewallRuleDetail:
 
     @destination_address_group_id.setter
     def destination_address_group_id(self, destination_address_group_id):
-        """Sets the destination_address_group_id of this FirewallRuleDetail.
+        r"""Sets the destination_address_group_id of this FirewallRuleDetail.
 
         功能说明：ACL规则的目的地址组ID 约束：destination_ip_address和destination_address_group_id不能同时设置
 
@@ -406,7 +406,7 @@ class FirewallRuleDetail:
 
     @property
     def enabled(self):
-        """Gets the enabled of this FirewallRuleDetail.
+        r"""Gets the enabled of this FirewallRuleDetail.
 
         功能说明：是否启用ACL规则。 取值范围：true，表示启用；false，表示停用。 默认值：true。
 
@@ -417,7 +417,7 @@ class FirewallRuleDetail:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this FirewallRuleDetail.
+        r"""Sets the enabled of this FirewallRuleDetail.
 
         功能说明：是否启用ACL规则。 取值范围：true，表示启用；false，表示停用。 默认值：true。
 

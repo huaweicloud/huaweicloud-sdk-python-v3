@@ -27,7 +27,7 @@ class PushMenuInfoResponseModelData:
     }
 
     def __init__(self, log_id=None, message=None):
-        """PushMenuInfoResponseModelData
+        r"""PushMenuInfoResponseModelData
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PushMenuInfoResponseModelData:
 
     @property
     def log_id(self):
-        """Gets the log_id of this PushMenuInfoResponseModelData.
+        r"""Gets the log_id of this PushMenuInfoResponseModelData.
 
         菜单申请记录ID。
 
@@ -61,7 +61,7 @@ class PushMenuInfoResponseModelData:
 
     @log_id.setter
     def log_id(self, log_id):
-        """Sets the log_id of this PushMenuInfoResponseModelData.
+        r"""Sets the log_id of this PushMenuInfoResponseModelData.
 
         菜单申请记录ID。
 
@@ -72,7 +72,7 @@ class PushMenuInfoResponseModelData:
 
     @property
     def message(self):
-        """Gets the message of this PushMenuInfoResponseModelData.
+        r"""Gets the message of this PushMenuInfoResponseModelData.
 
         返回信息。
 
@@ -83,7 +83,7 @@ class PushMenuInfoResponseModelData:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this PushMenuInfoResponseModelData.
+        r"""Sets the message of this PushMenuInfoResponseModelData.
 
         返回信息。
 

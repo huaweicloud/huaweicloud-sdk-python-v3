@@ -29,7 +29,7 @@ class UpdateInstanceCrossVpcIpRespResults:
     }
 
     def __init__(self, advertised_ip=None, success=None, ip=None):
-        """UpdateInstanceCrossVpcIpRespResults
+        r"""UpdateInstanceCrossVpcIpRespResults
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateInstanceCrossVpcIpRespResults:
 
     @property
     def advertised_ip(self):
-        """Gets the advertised_ip of this UpdateInstanceCrossVpcIpRespResults.
+        r"""Gets the advertised_ip of this UpdateInstanceCrossVpcIpRespResults.
 
         advertised.listeners IP/域名。
 
@@ -68,7 +68,7 @@ class UpdateInstanceCrossVpcIpRespResults:
 
     @advertised_ip.setter
     def advertised_ip(self, advertised_ip):
-        """Sets the advertised_ip of this UpdateInstanceCrossVpcIpRespResults.
+        r"""Sets the advertised_ip of this UpdateInstanceCrossVpcIpRespResults.
 
         advertised.listeners IP/域名。
 
@@ -79,7 +79,7 @@ class UpdateInstanceCrossVpcIpRespResults:
 
     @property
     def success(self):
-        """Gets the success of this UpdateInstanceCrossVpcIpRespResults.
+        r"""Gets the success of this UpdateInstanceCrossVpcIpRespResults.
 
         修改broker跨VPC访问的状态。
 
@@ -90,7 +90,7 @@ class UpdateInstanceCrossVpcIpRespResults:
 
     @success.setter
     def success(self, success):
-        """Sets the success of this UpdateInstanceCrossVpcIpRespResults.
+        r"""Sets the success of this UpdateInstanceCrossVpcIpRespResults.
 
         修改broker跨VPC访问的状态。
 
@@ -101,7 +101,7 @@ class UpdateInstanceCrossVpcIpRespResults:
 
     @property
     def ip(self):
-        """Gets the ip of this UpdateInstanceCrossVpcIpRespResults.
+        r"""Gets the ip of this UpdateInstanceCrossVpcIpRespResults.
 
         listeners IP。
 
@@ -112,7 +112,7 @@ class UpdateInstanceCrossVpcIpRespResults:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this UpdateInstanceCrossVpcIpRespResults.
+        r"""Sets the ip of this UpdateInstanceCrossVpcIpRespResults.
 
         listeners IP。
 

@@ -29,7 +29,7 @@ class BatchPushCertificateResponseBodyResults:
     }
 
     def __init__(self, project_name=None, cert_id=None, message=None):
-        """BatchPushCertificateResponseBodyResults
+        r"""BatchPushCertificateResponseBodyResults
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class BatchPushCertificateResponseBodyResults:
 
     @property
     def project_name(self):
-        """Gets the project_name of this BatchPushCertificateResponseBodyResults.
+        r"""Gets the project_name of this BatchPushCertificateResponseBodyResults.
 
         推送区域名称，如cn-north-7。
 
@@ -68,7 +68,7 @@ class BatchPushCertificateResponseBodyResults:
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this BatchPushCertificateResponseBodyResults.
+        r"""Sets the project_name of this BatchPushCertificateResponseBodyResults.
 
         推送区域名称，如cn-north-7。
 
@@ -79,7 +79,7 @@ class BatchPushCertificateResponseBodyResults:
 
     @property
     def cert_id(self):
-        """Gets the cert_id of this BatchPushCertificateResponseBodyResults.
+        r"""Gets the cert_id of this BatchPushCertificateResponseBodyResults.
 
         目标证书ID。
 
@@ -90,7 +90,7 @@ class BatchPushCertificateResponseBodyResults:
 
     @cert_id.setter
     def cert_id(self, cert_id):
-        """Sets the cert_id of this BatchPushCertificateResponseBodyResults.
+        r"""Sets the cert_id of this BatchPushCertificateResponseBodyResults.
 
         目标证书ID。
 
@@ -101,7 +101,7 @@ class BatchPushCertificateResponseBodyResults:
 
     @property
     def message(self):
-        """Gets the message of this BatchPushCertificateResponseBodyResults.
+        r"""Gets the message of this BatchPushCertificateResponseBodyResults.
 
         推送结果。
 
@@ -112,7 +112,7 @@ class BatchPushCertificateResponseBodyResults:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this BatchPushCertificateResponseBodyResults.
+        r"""Sets the message of this BatchPushCertificateResponseBodyResults.
 
         推送结果。
 

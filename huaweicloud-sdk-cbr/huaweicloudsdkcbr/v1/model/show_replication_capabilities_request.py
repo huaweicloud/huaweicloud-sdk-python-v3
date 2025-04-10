@@ -23,7 +23,7 @@ class ShowReplicationCapabilitiesRequest:
     }
 
     def __init__(self):
-        """ShowReplicationCapabilitiesRequest
+        r"""ShowReplicationCapabilitiesRequest
 
         The model defined in huaweicloud sdk
 

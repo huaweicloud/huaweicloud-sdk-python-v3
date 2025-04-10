@@ -26,7 +26,7 @@ class HangUpKillAllClientsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """HangUpKillAllClientsResponse
+        r"""HangUpKillAllClientsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class HangUpKillAllClientsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this HangUpKillAllClientsResponse.
+        r"""Gets the body of this HangUpKillAllClientsResponse.
 
         :return: The body of this HangUpKillAllClientsResponse.
         :rtype: object
@@ -53,7 +53,7 @@ class HangUpKillAllClientsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this HangUpKillAllClientsResponse.
+        r"""Sets the body of this HangUpKillAllClientsResponse.
 
         :param body: The body of this HangUpKillAllClientsResponse.
         :type body: object

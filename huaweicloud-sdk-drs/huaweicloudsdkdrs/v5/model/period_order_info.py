@@ -29,7 +29,7 @@ class PeriodOrderInfo:
     }
 
     def __init__(self, period_type=None, period_num=None, is_auto_renew=None):
-        """PeriodOrderInfo
+        r"""PeriodOrderInfo
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class PeriodOrderInfo:
 
     @property
     def period_type(self):
-        """Gets the period_type of this PeriodOrderInfo.
+        r"""Gets the period_type of this PeriodOrderInfo.
 
         订购周期类型。取值： - 2：月。 - 3：年。
 
@@ -66,7 +66,7 @@ class PeriodOrderInfo:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this PeriodOrderInfo.
+        r"""Sets the period_type of this PeriodOrderInfo.
 
         订购周期类型。取值： - 2：月。 - 3：年。
 
@@ -77,7 +77,7 @@ class PeriodOrderInfo:
 
     @property
     def period_num(self):
-        """Gets the period_num of this PeriodOrderInfo.
+        r"""Gets the period_num of this PeriodOrderInfo.
 
         订购周期数。根据period_type取值不同，代表不同周期数，例如： - 当period_type为2时，period_num为1代表1月。 - 当period_type为3时，period_num为1代表1年。
 
@@ -88,7 +88,7 @@ class PeriodOrderInfo:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this PeriodOrderInfo.
+        r"""Sets the period_num of this PeriodOrderInfo.
 
         订购周期数。根据period_type取值不同，代表不同周期数，例如： - 当period_type为2时，period_num为1代表1月。 - 当period_type为3时，period_num为1代表1年。
 
@@ -99,7 +99,7 @@ class PeriodOrderInfo:
 
     @property
     def is_auto_renew(self):
-        """Gets the is_auto_renew of this PeriodOrderInfo.
+        r"""Gets the is_auto_renew of this PeriodOrderInfo.
 
         是否自动续订。取值： - 0：否（默认值，需要客户手动去支付）。 - 1：是（自动支付）。
 
@@ -110,7 +110,7 @@ class PeriodOrderInfo:
 
     @is_auto_renew.setter
     def is_auto_renew(self, is_auto_renew):
-        """Sets the is_auto_renew of this PeriodOrderInfo.
+        r"""Sets the is_auto_renew of this PeriodOrderInfo.
 
         是否自动续订。取值： - 0：否（默认值，需要客户手动去支付）。 - 1：是（自动支付）。
 

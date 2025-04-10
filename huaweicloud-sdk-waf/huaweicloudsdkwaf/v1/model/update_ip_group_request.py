@@ -31,7 +31,7 @@ class UpdateIpGroupRequest:
     }
 
     def __init__(self, enterprise_project_id=None, id=None, action=None, body=None):
-        """UpdateIpGroupRequest
+        r"""UpdateIpGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class UpdateIpGroupRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this UpdateIpGroupRequest.
+        r"""Gets the enterprise_project_id of this UpdateIpGroupRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -74,7 +74,7 @@ class UpdateIpGroupRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this UpdateIpGroupRequest.
+        r"""Sets the enterprise_project_id of this UpdateIpGroupRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -85,7 +85,7 @@ class UpdateIpGroupRequest:
 
     @property
     def id(self):
-        """Gets the id of this UpdateIpGroupRequest.
+        r"""Gets the id of this UpdateIpGroupRequest.
 
         ip地址组id
 
@@ -96,7 +96,7 @@ class UpdateIpGroupRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateIpGroupRequest.
+        r"""Sets the id of this UpdateIpGroupRequest.
 
         ip地址组id
 
@@ -107,7 +107,7 @@ class UpdateIpGroupRequest:
 
     @property
     def action(self):
-        """Gets the action of this UpdateIpGroupRequest.
+        r"""Gets the action of this UpdateIpGroupRequest.
 
         增量修改ip地址组时，此为必传字段，传入“add”;删除一个或者多个ip时传入“delete”
 
@@ -118,7 +118,7 @@ class UpdateIpGroupRequest:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this UpdateIpGroupRequest.
+        r"""Sets the action of this UpdateIpGroupRequest.
 
         增量修改ip地址组时，此为必传字段，传入“add”;删除一个或者多个ip时传入“delete”
 
@@ -129,7 +129,7 @@ class UpdateIpGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateIpGroupRequest.
+        r"""Gets the body of this UpdateIpGroupRequest.
 
         :return: The body of this UpdateIpGroupRequest.
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateIpGroupRequestBody`
@@ -138,7 +138,7 @@ class UpdateIpGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateIpGroupRequest.
+        r"""Sets the body of this UpdateIpGroupRequest.
 
         :param body: The body of this UpdateIpGroupRequest.
         :type body: :class:`huaweicloudsdkwaf.v1.UpdateIpGroupRequestBody`

@@ -25,7 +25,7 @@ class ShowNatGatewayDnatRuleRequest:
     }
 
     def __init__(self, dnat_rule_id=None):
-        """ShowNatGatewayDnatRuleRequest
+        r"""ShowNatGatewayDnatRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowNatGatewayDnatRuleRequest:
 
     @property
     def dnat_rule_id(self):
-        """Gets the dnat_rule_id of this ShowNatGatewayDnatRuleRequest.
+        r"""Gets the dnat_rule_id of this ShowNatGatewayDnatRuleRequest.
 
         DNAT规则的ID。
 
@@ -53,7 +53,7 @@ class ShowNatGatewayDnatRuleRequest:
 
     @dnat_rule_id.setter
     def dnat_rule_id(self, dnat_rule_id):
-        """Sets the dnat_rule_id of this ShowNatGatewayDnatRuleRequest.
+        r"""Sets the dnat_rule_id of this ShowNatGatewayDnatRuleRequest.
 
         DNAT规则的ID。
 

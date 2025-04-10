@@ -55,7 +55,7 @@ class SearchDevice:
     }
 
     def __init__(self, app_id=None, app_name=None, device_id=None, node_id=None, gateway_id=None, device_name=None, node_type=None, fw_version=None, sw_version=None, device_sdk_version=None, product_id=None, product_name=None, groups=None, status=None, tags=None, marker=None):
-        """SearchDevice
+        r"""SearchDevice
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class SearchDevice:
 
     @property
     def app_id(self):
-        """Gets the app_id of this SearchDevice.
+        r"""Gets the app_id of this SearchDevice.
 
         资源空间ID。
 
@@ -159,7 +159,7 @@ class SearchDevice:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this SearchDevice.
+        r"""Sets the app_id of this SearchDevice.
 
         资源空间ID。
 
@@ -170,7 +170,7 @@ class SearchDevice:
 
     @property
     def app_name(self):
-        """Gets the app_name of this SearchDevice.
+        r"""Gets the app_name of this SearchDevice.
 
         资源空间名称。
 
@@ -181,7 +181,7 @@ class SearchDevice:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this SearchDevice.
+        r"""Sets the app_name of this SearchDevice.
 
         资源空间名称。
 
@@ -192,7 +192,7 @@ class SearchDevice:
 
     @property
     def device_id(self):
-        """Gets the device_id of this SearchDevice.
+        r"""Gets the device_id of this SearchDevice.
 
         设备ID，用于唯一标识一个设备。在注册设备时直接指定，或者由物联网平台分配获得。由物联网平台分配时，生成规则为\"product_id\" + \"_\" + \"node_id\"拼接而成。
 
@@ -203,7 +203,7 @@ class SearchDevice:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this SearchDevice.
+        r"""Sets the device_id of this SearchDevice.
 
         设备ID，用于唯一标识一个设备。在注册设备时直接指定，或者由物联网平台分配获得。由物联网平台分配时，生成规则为\"product_id\" + \"_\" + \"node_id\"拼接而成。
 
@@ -214,7 +214,7 @@ class SearchDevice:
 
     @property
     def node_id(self):
-        """Gets the node_id of this SearchDevice.
+        r"""Gets the node_id of this SearchDevice.
 
         设备标识码，通常使用IMEI、MAC地址或Serial No作为node_id。
 
@@ -225,7 +225,7 @@ class SearchDevice:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this SearchDevice.
+        r"""Sets the node_id of this SearchDevice.
 
         设备标识码，通常使用IMEI、MAC地址或Serial No作为node_id。
 
@@ -236,7 +236,7 @@ class SearchDevice:
 
     @property
     def gateway_id(self):
-        """Gets the gateway_id of this SearchDevice.
+        r"""Gets the gateway_id of this SearchDevice.
 
         网关ID，用于标识设备所属的父设备，即父设备的设备ID。当设备是直连设备时，gateway_id与设备的device_id一致。当设备是非直连设备时，gateway_id为设备所关联的父设备的device_id。
 
@@ -247,7 +247,7 @@ class SearchDevice:
 
     @gateway_id.setter
     def gateway_id(self, gateway_id):
-        """Sets the gateway_id of this SearchDevice.
+        r"""Sets the gateway_id of this SearchDevice.
 
         网关ID，用于标识设备所属的父设备，即父设备的设备ID。当设备是直连设备时，gateway_id与设备的device_id一致。当设备是非直连设备时，gateway_id为设备所关联的父设备的device_id。
 
@@ -258,7 +258,7 @@ class SearchDevice:
 
     @property
     def device_name(self):
-        """Gets the device_name of this SearchDevice.
+        r"""Gets the device_name of this SearchDevice.
 
         设备名称。
 
@@ -269,7 +269,7 @@ class SearchDevice:
 
     @device_name.setter
     def device_name(self, device_name):
-        """Sets the device_name of this SearchDevice.
+        r"""Sets the device_name of this SearchDevice.
 
         设备名称。
 
@@ -280,7 +280,7 @@ class SearchDevice:
 
     @property
     def node_type(self):
-        """Gets the node_type of this SearchDevice.
+        r"""Gets the node_type of this SearchDevice.
 
         设备节点类型。 - ENDPOINT：非直连设备。 - GATEWAY：直连设备或网关。 - UNKNOWN：未知。
 
@@ -291,7 +291,7 @@ class SearchDevice:
 
     @node_type.setter
     def node_type(self, node_type):
-        """Sets the node_type of this SearchDevice.
+        r"""Sets the node_type of this SearchDevice.
 
         设备节点类型。 - ENDPOINT：非直连设备。 - GATEWAY：直连设备或网关。 - UNKNOWN：未知。
 
@@ -302,7 +302,7 @@ class SearchDevice:
 
     @property
     def fw_version(self):
-        """Gets the fw_version of this SearchDevice.
+        r"""Gets the fw_version of this SearchDevice.
 
         设备的固件版本。
 
@@ -313,7 +313,7 @@ class SearchDevice:
 
     @fw_version.setter
     def fw_version(self, fw_version):
-        """Sets the fw_version of this SearchDevice.
+        r"""Sets the fw_version of this SearchDevice.
 
         设备的固件版本。
 
@@ -324,7 +324,7 @@ class SearchDevice:
 
     @property
     def sw_version(self):
-        """Gets the sw_version of this SearchDevice.
+        r"""Gets the sw_version of this SearchDevice.
 
         设备的软件版本。
 
@@ -335,7 +335,7 @@ class SearchDevice:
 
     @sw_version.setter
     def sw_version(self, sw_version):
-        """Sets the sw_version of this SearchDevice.
+        r"""Sets the sw_version of this SearchDevice.
 
         设备的软件版本。
 
@@ -346,7 +346,7 @@ class SearchDevice:
 
     @property
     def device_sdk_version(self):
-        """Gets the device_sdk_version of this SearchDevice.
+        r"""Gets the device_sdk_version of this SearchDevice.
 
         设备的sdk信息。
 
@@ -357,7 +357,7 @@ class SearchDevice:
 
     @device_sdk_version.setter
     def device_sdk_version(self, device_sdk_version):
-        """Sets the device_sdk_version of this SearchDevice.
+        r"""Sets the device_sdk_version of this SearchDevice.
 
         设备的sdk信息。
 
@@ -368,7 +368,7 @@ class SearchDevice:
 
     @property
     def product_id(self):
-        """Gets the product_id of this SearchDevice.
+        r"""Gets the product_id of this SearchDevice.
 
         设备关联的产品ID，用于唯一标识一个产品模型。
 
@@ -379,7 +379,7 @@ class SearchDevice:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this SearchDevice.
+        r"""Sets the product_id of this SearchDevice.
 
         设备关联的产品ID，用于唯一标识一个产品模型。
 
@@ -390,7 +390,7 @@ class SearchDevice:
 
     @property
     def product_name(self):
-        """Gets the product_name of this SearchDevice.
+        r"""Gets the product_name of this SearchDevice.
 
         设备关联的产品名称。
 
@@ -401,7 +401,7 @@ class SearchDevice:
 
     @product_name.setter
     def product_name(self, product_name):
-        """Sets the product_name of this SearchDevice.
+        r"""Sets the product_name of this SearchDevice.
 
         设备关联的产品名称。
 
@@ -412,7 +412,7 @@ class SearchDevice:
 
     @property
     def groups(self):
-        """Gets the groups of this SearchDevice.
+        r"""Gets the groups of this SearchDevice.
 
         设备组列表。
 
@@ -423,7 +423,7 @@ class SearchDevice:
 
     @groups.setter
     def groups(self, groups):
-        """Sets the groups of this SearchDevice.
+        r"""Sets the groups of this SearchDevice.
 
         设备组列表。
 
@@ -434,7 +434,7 @@ class SearchDevice:
 
     @property
     def status(self):
-        """Gets the status of this SearchDevice.
+        r"""Gets the status of this SearchDevice.
 
         设备的状态。 - ONLINE：设备在线。 - OFFLINE：设备离线。 - ABNORMAL：设备异常。 - INACTIVE：设备未激活。 - FROZEN：设备冻结。
 
@@ -445,7 +445,7 @@ class SearchDevice:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SearchDevice.
+        r"""Sets the status of this SearchDevice.
 
         设备的状态。 - ONLINE：设备在线。 - OFFLINE：设备离线。 - ABNORMAL：设备异常。 - INACTIVE：设备未激活。 - FROZEN：设备冻结。
 
@@ -456,7 +456,7 @@ class SearchDevice:
 
     @property
     def tags(self):
-        """Gets the tags of this SearchDevice.
+        r"""Gets the tags of this SearchDevice.
 
         设备的标签列表。
 
@@ -467,7 +467,7 @@ class SearchDevice:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this SearchDevice.
+        r"""Sets the tags of this SearchDevice.
 
         设备的标签列表。
 
@@ -478,7 +478,7 @@ class SearchDevice:
 
     @property
     def marker(self):
-        """Gets the marker of this SearchDevice.
+        r"""Gets the marker of this SearchDevice.
 
         搜索结果记录Id。
 
@@ -489,7 +489,7 @@ class SearchDevice:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this SearchDevice.
+        r"""Sets the marker of this SearchDevice.
 
         搜索结果记录Id。
 

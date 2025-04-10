@@ -30,7 +30,7 @@ class ListCloudServersResponse(SdkResponse):
     }
 
     def __init__(self, servers=None, servers_links=None, request_id=None):
-        """ListCloudServersResponse
+        r"""ListCloudServersResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListCloudServersResponse(SdkResponse):
 
     @property
     def servers(self):
-        """Gets the servers of this ListCloudServersResponse.
+        r"""Gets the servers of this ListCloudServersResponse.
 
         查询云服务器信息列表。
 
@@ -69,7 +69,7 @@ class ListCloudServersResponse(SdkResponse):
 
     @servers.setter
     def servers(self, servers):
-        """Sets the servers of this ListCloudServersResponse.
+        r"""Sets the servers of this ListCloudServersResponse.
 
         查询云服务器信息列表。
 
@@ -80,7 +80,7 @@ class ListCloudServersResponse(SdkResponse):
 
     @property
     def servers_links(self):
-        """Gets the servers_links of this ListCloudServersResponse.
+        r"""Gets the servers_links of this ListCloudServersResponse.
 
         分页查询时，查询下一页数据链接。
 
@@ -91,7 +91,7 @@ class ListCloudServersResponse(SdkResponse):
 
     @servers_links.setter
     def servers_links(self, servers_links):
-        """Sets the servers_links of this ListCloudServersResponse.
+        r"""Sets the servers_links of this ListCloudServersResponse.
 
         分页查询时，查询下一页数据链接。
 
@@ -102,7 +102,7 @@ class ListCloudServersResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListCloudServersResponse.
+        r"""Gets the request_id of this ListCloudServersResponse.
 
         :return: The request_id of this ListCloudServersResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListCloudServersResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListCloudServersResponse.
+        r"""Sets the request_id of this ListCloudServersResponse.
 
         :param request_id: The request_id of this ListCloudServersResponse.
         :type request_id: str

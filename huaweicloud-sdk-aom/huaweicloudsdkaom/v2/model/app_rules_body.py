@@ -25,7 +25,7 @@ class AppRulesBody:
     }
 
     def __init__(self, app_rules=None):
-        """AppRulesBody
+        r"""AppRulesBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AppRulesBody:
 
     @property
     def app_rules(self):
-        """Gets the app_rules of this AppRulesBody.
+        r"""Gets the app_rules of this AppRulesBody.
 
         服务参数。
 
@@ -54,7 +54,7 @@ class AppRulesBody:
 
     @app_rules.setter
     def app_rules(self, app_rules):
-        """Sets the app_rules of this AppRulesBody.
+        r"""Sets the app_rules of this AppRulesBody.
 
         服务参数。
 

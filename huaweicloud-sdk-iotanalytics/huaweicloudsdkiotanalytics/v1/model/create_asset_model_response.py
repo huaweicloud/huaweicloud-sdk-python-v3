@@ -38,7 +38,7 @@ class CreateAssetModelResponse(SdkResponse):
     }
 
     def __init__(self, asset_model_id=None, name=None, display_name=None, properties=None, analyses=None, created_time=None, modified_time=None):
-        """CreateAssetModelResponse
+        r"""CreateAssetModelResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class CreateAssetModelResponse(SdkResponse):
 
     @property
     def asset_model_id(self):
-        """Gets the asset_model_id of this CreateAssetModelResponse.
+        r"""Gets the asset_model_id of this CreateAssetModelResponse.
 
         模型ID
 
@@ -97,7 +97,7 @@ class CreateAssetModelResponse(SdkResponse):
 
     @asset_model_id.setter
     def asset_model_id(self, asset_model_id):
-        """Sets the asset_model_id of this CreateAssetModelResponse.
+        r"""Sets the asset_model_id of this CreateAssetModelResponse.
 
         模型ID
 
@@ -108,7 +108,7 @@ class CreateAssetModelResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateAssetModelResponse.
+        r"""Gets the name of this CreateAssetModelResponse.
 
         模型名称
 
@@ -119,7 +119,7 @@ class CreateAssetModelResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateAssetModelResponse.
+        r"""Sets the name of this CreateAssetModelResponse.
 
         模型名称
 
@@ -130,7 +130,7 @@ class CreateAssetModelResponse(SdkResponse):
 
     @property
     def display_name(self):
-        """Gets the display_name of this CreateAssetModelResponse.
+        r"""Gets the display_name of this CreateAssetModelResponse.
 
         模型显示名称
 
@@ -141,7 +141,7 @@ class CreateAssetModelResponse(SdkResponse):
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this CreateAssetModelResponse.
+        r"""Sets the display_name of this CreateAssetModelResponse.
 
         模型显示名称
 
@@ -152,7 +152,7 @@ class CreateAssetModelResponse(SdkResponse):
 
     @property
     def properties(self):
-        """Gets the properties of this CreateAssetModelResponse.
+        r"""Gets the properties of this CreateAssetModelResponse.
 
         属性集
 
@@ -163,7 +163,7 @@ class CreateAssetModelResponse(SdkResponse):
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this CreateAssetModelResponse.
+        r"""Sets the properties of this CreateAssetModelResponse.
 
         属性集
 
@@ -174,7 +174,7 @@ class CreateAssetModelResponse(SdkResponse):
 
     @property
     def analyses(self):
-        """Gets the analyses of this CreateAssetModelResponse.
+        r"""Gets the analyses of this CreateAssetModelResponse.
 
         分析任务集
 
@@ -185,7 +185,7 @@ class CreateAssetModelResponse(SdkResponse):
 
     @analyses.setter
     def analyses(self, analyses):
-        """Sets the analyses of this CreateAssetModelResponse.
+        r"""Sets the analyses of this CreateAssetModelResponse.
 
         分析任务集
 
@@ -196,7 +196,7 @@ class CreateAssetModelResponse(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this CreateAssetModelResponse.
+        r"""Gets the created_time of this CreateAssetModelResponse.
 
         创建时间
 
@@ -207,7 +207,7 @@ class CreateAssetModelResponse(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this CreateAssetModelResponse.
+        r"""Sets the created_time of this CreateAssetModelResponse.
 
         创建时间
 
@@ -218,7 +218,7 @@ class CreateAssetModelResponse(SdkResponse):
 
     @property
     def modified_time(self):
-        """Gets the modified_time of this CreateAssetModelResponse.
+        r"""Gets the modified_time of this CreateAssetModelResponse.
 
         修改时间
 
@@ -229,7 +229,7 @@ class CreateAssetModelResponse(SdkResponse):
 
     @modified_time.setter
     def modified_time(self, modified_time):
-        """Sets the modified_time of this CreateAssetModelResponse.
+        r"""Sets the modified_time of this CreateAssetModelResponse.
 
         修改时间
 

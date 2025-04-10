@@ -29,7 +29,7 @@ class UpdateNotificationRequest:
     }
 
     def __init__(self, instance_id=None, notification_id=None, body=None):
-        """UpdateNotificationRequest
+        r"""UpdateNotificationRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateNotificationRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateNotificationRequest.
+        r"""Gets the instance_id of this UpdateNotificationRequest.
 
         实例ID
 
@@ -66,7 +66,7 @@ class UpdateNotificationRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateNotificationRequest.
+        r"""Sets the instance_id of this UpdateNotificationRequest.
 
         实例ID
 
@@ -77,7 +77,7 @@ class UpdateNotificationRequest:
 
     @property
     def notification_id(self):
-        """Gets the notification_id of this UpdateNotificationRequest.
+        r"""Gets the notification_id of this UpdateNotificationRequest.
 
         订阅管理ID
 
@@ -88,7 +88,7 @@ class UpdateNotificationRequest:
 
     @notification_id.setter
     def notification_id(self, notification_id):
-        """Sets the notification_id of this UpdateNotificationRequest.
+        r"""Sets the notification_id of this UpdateNotificationRequest.
 
         订阅管理ID
 
@@ -99,7 +99,7 @@ class UpdateNotificationRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateNotificationRequest.
+        r"""Gets the body of this UpdateNotificationRequest.
 
         :return: The body of this UpdateNotificationRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateNotificationRequestBody`
@@ -108,7 +108,7 @@ class UpdateNotificationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateNotificationRequest.
+        r"""Sets the body of this UpdateNotificationRequest.
 
         :param body: The body of this UpdateNotificationRequest.
         :type body: :class:`huaweicloudsdkroma.v2.UpdateNotificationRequestBody`

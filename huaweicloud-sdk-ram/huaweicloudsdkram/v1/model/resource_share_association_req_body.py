@@ -27,7 +27,7 @@ class ResourceShareAssociationReqBody:
     }
 
     def __init__(self, principals=None, resource_urns=None):
-        """ResourceShareAssociationReqBody
+        r"""ResourceShareAssociationReqBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ResourceShareAssociationReqBody:
 
     @property
     def principals(self):
-        """Gets the principals of this ResourceShareAssociationReqBody.
+        r"""Gets the principals of this ResourceShareAssociationReqBody.
 
         指定与资源共享实例关联的一个或多个资源使用者的列表。
 
@@ -61,7 +61,7 @@ class ResourceShareAssociationReqBody:
 
     @principals.setter
     def principals(self, principals):
-        """Sets the principals of this ResourceShareAssociationReqBody.
+        r"""Sets the principals of this ResourceShareAssociationReqBody.
 
         指定与资源共享实例关联的一个或多个资源使用者的列表。
 
@@ -72,7 +72,7 @@ class ResourceShareAssociationReqBody:
 
     @property
     def resource_urns(self):
-        """Gets the resource_urns of this ResourceShareAssociationReqBody.
+        r"""Gets the resource_urns of this ResourceShareAssociationReqBody.
 
         指定与资源共享实例关联的一个或多个共享资源URN的列表。
 
@@ -83,7 +83,7 @@ class ResourceShareAssociationReqBody:
 
     @resource_urns.setter
     def resource_urns(self, resource_urns):
-        """Sets the resource_urns of this ResourceShareAssociationReqBody.
+        r"""Sets the resource_urns of this ResourceShareAssociationReqBody.
 
         指定与资源共享实例关联的一个或多个共享资源URN的列表。
 

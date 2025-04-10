@@ -41,7 +41,7 @@ class PropertiesSchema:
     }
 
     def __init__(self, context=None, docstring=None, ide_type=None, ide_version=None, language=None, plugin_version=None, signature=None, above_text=None, following_text=None):
-        """PropertiesSchema
+        r"""PropertiesSchema
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class PropertiesSchema:
 
     @property
     def context(self):
-        """Gets the context of this PropertiesSchema.
+        r"""Gets the context of this PropertiesSchema.
 
         context
 
@@ -109,7 +109,7 @@ class PropertiesSchema:
 
     @context.setter
     def context(self, context):
-        """Sets the context of this PropertiesSchema.
+        r"""Sets the context of this PropertiesSchema.
 
         context
 
@@ -120,7 +120,7 @@ class PropertiesSchema:
 
     @property
     def docstring(self):
-        """Gets the docstring of this PropertiesSchema.
+        r"""Gets the docstring of this PropertiesSchema.
 
         docstring
 
@@ -131,7 +131,7 @@ class PropertiesSchema:
 
     @docstring.setter
     def docstring(self, docstring):
-        """Sets the docstring of this PropertiesSchema.
+        r"""Sets the docstring of this PropertiesSchema.
 
         docstring
 
@@ -142,7 +142,7 @@ class PropertiesSchema:
 
     @property
     def ide_type(self):
-        """Gets the ide_type of this PropertiesSchema.
+        r"""Gets the ide_type of this PropertiesSchema.
 
         the type of ide
 
@@ -153,7 +153,7 @@ class PropertiesSchema:
 
     @ide_type.setter
     def ide_type(self, ide_type):
-        """Sets the ide_type of this PropertiesSchema.
+        r"""Sets the ide_type of this PropertiesSchema.
 
         the type of ide
 
@@ -164,7 +164,7 @@ class PropertiesSchema:
 
     @property
     def ide_version(self):
-        """Gets the ide_version of this PropertiesSchema.
+        r"""Gets the ide_version of this PropertiesSchema.
 
         the version of ide
 
@@ -175,7 +175,7 @@ class PropertiesSchema:
 
     @ide_version.setter
     def ide_version(self, ide_version):
-        """Sets the ide_version of this PropertiesSchema.
+        r"""Sets the ide_version of this PropertiesSchema.
 
         the version of ide
 
@@ -186,7 +186,7 @@ class PropertiesSchema:
 
     @property
     def language(self):
-        """Gets the language of this PropertiesSchema.
+        r"""Gets the language of this PropertiesSchema.
 
         code language
 
@@ -197,7 +197,7 @@ class PropertiesSchema:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this PropertiesSchema.
+        r"""Sets the language of this PropertiesSchema.
 
         code language
 
@@ -208,7 +208,7 @@ class PropertiesSchema:
 
     @property
     def plugin_version(self):
-        """Gets the plugin_version of this PropertiesSchema.
+        r"""Gets the plugin_version of this PropertiesSchema.
 
         the version of plugin
 
@@ -219,7 +219,7 @@ class PropertiesSchema:
 
     @plugin_version.setter
     def plugin_version(self, plugin_version):
-        """Sets the plugin_version of this PropertiesSchema.
+        r"""Sets the plugin_version of this PropertiesSchema.
 
         the version of plugin
 
@@ -230,7 +230,7 @@ class PropertiesSchema:
 
     @property
     def signature(self):
-        """Gets the signature of this PropertiesSchema.
+        r"""Gets the signature of this PropertiesSchema.
 
         signature
 
@@ -241,7 +241,7 @@ class PropertiesSchema:
 
     @signature.setter
     def signature(self, signature):
-        """Sets the signature of this PropertiesSchema.
+        r"""Sets the signature of this PropertiesSchema.
 
         signature
 
@@ -252,7 +252,7 @@ class PropertiesSchema:
 
     @property
     def above_text(self):
-        """Gets the above_text of this PropertiesSchema.
+        r"""Gets the above_text of this PropertiesSchema.
 
         the text above the cursor
 
@@ -263,7 +263,7 @@ class PropertiesSchema:
 
     @above_text.setter
     def above_text(self, above_text):
-        """Sets the above_text of this PropertiesSchema.
+        r"""Sets the above_text of this PropertiesSchema.
 
         the text above the cursor
 
@@ -274,7 +274,7 @@ class PropertiesSchema:
 
     @property
     def following_text(self):
-        """Gets the following_text of this PropertiesSchema.
+        r"""Gets the following_text of this PropertiesSchema.
 
         the text following the cursor
 
@@ -285,7 +285,7 @@ class PropertiesSchema:
 
     @following_text.setter
     def following_text(self, following_text):
-        """Sets the following_text of this PropertiesSchema.
+        r"""Sets the following_text of this PropertiesSchema.
 
         the text following the cursor
 

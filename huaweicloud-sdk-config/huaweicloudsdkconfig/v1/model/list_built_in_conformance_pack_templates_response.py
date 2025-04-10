@@ -28,7 +28,7 @@ class ListBuiltInConformancePackTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, value=None, page_info=None):
-        """ListBuiltInConformancePackTemplatesResponse
+        r"""ListBuiltInConformancePackTemplatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListBuiltInConformancePackTemplatesResponse(SdkResponse):
 
     @property
     def value(self):
-        """Gets the value of this ListBuiltInConformancePackTemplatesResponse.
+        r"""Gets the value of this ListBuiltInConformancePackTemplatesResponse.
 
         预定义合规规则包模板列表。
 
@@ -62,7 +62,7 @@ class ListBuiltInConformancePackTemplatesResponse(SdkResponse):
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ListBuiltInConformancePackTemplatesResponse.
+        r"""Sets the value of this ListBuiltInConformancePackTemplatesResponse.
 
         预定义合规规则包模板列表。
 
@@ -73,7 +73,7 @@ class ListBuiltInConformancePackTemplatesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListBuiltInConformancePackTemplatesResponse.
+        r"""Gets the page_info of this ListBuiltInConformancePackTemplatesResponse.
 
         :return: The page_info of this ListBuiltInConformancePackTemplatesResponse.
         :rtype: :class:`huaweicloudsdkconfig.v1.PageInfo`
@@ -82,7 +82,7 @@ class ListBuiltInConformancePackTemplatesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListBuiltInConformancePackTemplatesResponse.
+        r"""Sets the page_info of this ListBuiltInConformancePackTemplatesResponse.
 
         :param page_info: The page_info of this ListBuiltInConformancePackTemplatesResponse.
         :type page_info: :class:`huaweicloudsdkconfig.v1.PageInfo`

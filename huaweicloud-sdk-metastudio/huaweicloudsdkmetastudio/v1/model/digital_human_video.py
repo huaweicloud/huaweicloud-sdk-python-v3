@@ -43,7 +43,7 @@ class DigitalHumanVideo:
     }
 
     def __init__(self, job_id=None, state=None, job_type=None, start_time=None, end_time=None, duration=None, output_asset_config=None, error_info=None, create_time=None, lastupdate_time=None):
-        """DigitalHumanVideo
+        r"""DigitalHumanVideo
 
         The model defined in huaweicloud sdk
 
@@ -104,7 +104,7 @@ class DigitalHumanVideo:
 
     @property
     def job_id(self):
-        """Gets the job_id of this DigitalHumanVideo.
+        r"""Gets the job_id of this DigitalHumanVideo.
 
         任务ID。
 
@@ -115,7 +115,7 @@ class DigitalHumanVideo:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DigitalHumanVideo.
+        r"""Sets the job_id of this DigitalHumanVideo.
 
         任务ID。
 
@@ -126,7 +126,7 @@ class DigitalHumanVideo:
 
     @property
     def state(self):
-        """Gets the state of this DigitalHumanVideo.
+        r"""Gets the state of this DigitalHumanVideo.
 
         任务的状态。 * WAITING：等待 * PROCESSING：处理中 * SUCCEED：成功 * FAILED：失败 * CANCELED：取消 * BLOCK: 冻结
 
@@ -137,7 +137,7 @@ class DigitalHumanVideo:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this DigitalHumanVideo.
+        r"""Sets the state of this DigitalHumanVideo.
 
         任务的状态。 * WAITING：等待 * PROCESSING：处理中 * SUCCEED：成功 * FAILED：失败 * CANCELED：取消 * BLOCK: 冻结
 
@@ -148,7 +148,7 @@ class DigitalHumanVideo:
 
     @property
     def job_type(self):
-        """Gets the job_type of this DigitalHumanVideo.
+        r"""Gets the job_type of this DigitalHumanVideo.
 
         任务类型。 * 2D_DIGITAL_HUMAN_VIDEO: 分身数字人视频制作任务 * DIGITAL_HUMAN_PHOTO_VIDEO: 照片数字人视频制作任务
 
@@ -159,7 +159,7 @@ class DigitalHumanVideo:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this DigitalHumanVideo.
+        r"""Sets the job_type of this DigitalHumanVideo.
 
         任务类型。 * 2D_DIGITAL_HUMAN_VIDEO: 分身数字人视频制作任务 * DIGITAL_HUMAN_PHOTO_VIDEO: 照片数字人视频制作任务
 
@@ -170,7 +170,7 @@ class DigitalHumanVideo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this DigitalHumanVideo.
+        r"""Gets the start_time of this DigitalHumanVideo.
 
         数字人视频制作开始时间。
 
@@ -181,7 +181,7 @@ class DigitalHumanVideo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this DigitalHumanVideo.
+        r"""Sets the start_time of this DigitalHumanVideo.
 
         数字人视频制作开始时间。
 
@@ -192,7 +192,7 @@ class DigitalHumanVideo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this DigitalHumanVideo.
+        r"""Gets the end_time of this DigitalHumanVideo.
 
         数字人视频制作结束时间。
 
@@ -203,7 +203,7 @@ class DigitalHumanVideo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this DigitalHumanVideo.
+        r"""Sets the end_time of this DigitalHumanVideo.
 
         数字人视频制作结束时间。
 
@@ -214,7 +214,7 @@ class DigitalHumanVideo:
 
     @property
     def duration(self):
-        """Gets the duration of this DigitalHumanVideo.
+        r"""Gets the duration of this DigitalHumanVideo.
 
         **参数解释**： 数字人视频内容时长。
 
@@ -225,7 +225,7 @@ class DigitalHumanVideo:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this DigitalHumanVideo.
+        r"""Sets the duration of this DigitalHumanVideo.
 
         **参数解释**： 数字人视频内容时长。
 
@@ -236,7 +236,7 @@ class DigitalHumanVideo:
 
     @property
     def output_asset_config(self):
-        """Gets the output_asset_config of this DigitalHumanVideo.
+        r"""Gets the output_asset_config of this DigitalHumanVideo.
 
         :return: The output_asset_config of this DigitalHumanVideo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.OutputAssetInfo`
@@ -245,7 +245,7 @@ class DigitalHumanVideo:
 
     @output_asset_config.setter
     def output_asset_config(self, output_asset_config):
-        """Sets the output_asset_config of this DigitalHumanVideo.
+        r"""Sets the output_asset_config of this DigitalHumanVideo.
 
         :param output_asset_config: The output_asset_config of this DigitalHumanVideo.
         :type output_asset_config: :class:`huaweicloudsdkmetastudio.v1.OutputAssetInfo`
@@ -254,7 +254,7 @@ class DigitalHumanVideo:
 
     @property
     def error_info(self):
-        """Gets the error_info of this DigitalHumanVideo.
+        r"""Gets the error_info of this DigitalHumanVideo.
 
         :return: The error_info of this DigitalHumanVideo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
@@ -263,7 +263,7 @@ class DigitalHumanVideo:
 
     @error_info.setter
     def error_info(self, error_info):
-        """Sets the error_info of this DigitalHumanVideo.
+        r"""Sets the error_info of this DigitalHumanVideo.
 
         :param error_info: The error_info of this DigitalHumanVideo.
         :type error_info: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
@@ -272,7 +272,7 @@ class DigitalHumanVideo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this DigitalHumanVideo.
+        r"""Gets the create_time of this DigitalHumanVideo.
 
         任务创建时间。
 
@@ -283,7 +283,7 @@ class DigitalHumanVideo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this DigitalHumanVideo.
+        r"""Sets the create_time of this DigitalHumanVideo.
 
         任务创建时间。
 
@@ -294,7 +294,7 @@ class DigitalHumanVideo:
 
     @property
     def lastupdate_time(self):
-        """Gets the lastupdate_time of this DigitalHumanVideo.
+        r"""Gets the lastupdate_time of this DigitalHumanVideo.
 
         任务更新时间。
 
@@ -305,7 +305,7 @@ class DigitalHumanVideo:
 
     @lastupdate_time.setter
     def lastupdate_time(self, lastupdate_time):
-        """Sets the lastupdate_time of this DigitalHumanVideo.
+        r"""Sets the lastupdate_time of this DigitalHumanVideo.
 
         任务更新时间。
 

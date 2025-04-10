@@ -31,7 +31,7 @@ class ListWorkflowTriggersRequest:
     }
 
     def __init__(self, workflow_id=None, offset=None, limit=None, sort=None):
-        """ListWorkflowTriggersRequest
+        r"""ListWorkflowTriggersRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListWorkflowTriggersRequest:
 
     @property
     def workflow_id(self):
-        """Gets the workflow_id of this ListWorkflowTriggersRequest.
+        r"""Gets the workflow_id of this ListWorkflowTriggersRequest.
 
         目标函数流的id
 
@@ -74,7 +74,7 @@ class ListWorkflowTriggersRequest:
 
     @workflow_id.setter
     def workflow_id(self, workflow_id):
-        """Sets the workflow_id of this ListWorkflowTriggersRequest.
+        r"""Sets the workflow_id of this ListWorkflowTriggersRequest.
 
         目标函数流的id
 
@@ -85,7 +85,7 @@ class ListWorkflowTriggersRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListWorkflowTriggersRequest.
+        r"""Gets the offset of this ListWorkflowTriggersRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量不能小于0
 
@@ -96,7 +96,7 @@ class ListWorkflowTriggersRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListWorkflowTriggersRequest.
+        r"""Sets the offset of this ListWorkflowTriggersRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量不能小于0
 
@@ -107,7 +107,7 @@ class ListWorkflowTriggersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListWorkflowTriggersRequest.
+        r"""Gets the limit of this ListWorkflowTriggersRequest.
 
         每页显示的条目数量，不能小于1或大于1000
 
@@ -118,7 +118,7 @@ class ListWorkflowTriggersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListWorkflowTriggersRequest.
+        r"""Sets the limit of this ListWorkflowTriggersRequest.
 
         每页显示的条目数量，不能小于1或大于1000
 
@@ -129,7 +129,7 @@ class ListWorkflowTriggersRequest:
 
     @property
     def sort(self):
-        """Gets the sort of this ListWorkflowTriggersRequest.
+        r"""Gets the sort of this ListWorkflowTriggersRequest.
 
         指定查询排序
 
@@ -140,7 +140,7 @@ class ListWorkflowTriggersRequest:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this ListWorkflowTriggersRequest.
+        r"""Sets the sort of this ListWorkflowTriggersRequest.
 
         指定查询排序
 

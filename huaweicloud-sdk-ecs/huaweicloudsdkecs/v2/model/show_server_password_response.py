@@ -26,7 +26,7 @@ class ShowServerPasswordResponse(SdkResponse):
     }
 
     def __init__(self, password=None):
-        """ShowServerPasswordResponse
+        r"""ShowServerPasswordResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowServerPasswordResponse(SdkResponse):
 
     @property
     def password(self):
-        """Gets the password of this ShowServerPasswordResponse.
+        r"""Gets the password of this ShowServerPasswordResponse.
 
         加密后的密码。
 
@@ -55,7 +55,7 @@ class ShowServerPasswordResponse(SdkResponse):
 
     @password.setter
     def password(self, password):
-        """Sets the password of this ShowServerPasswordResponse.
+        r"""Sets the password of this ShowServerPasswordResponse.
 
         加密后的密码。
 

@@ -43,7 +43,7 @@ class DownloadRegionCarrierExcelRequest:
     }
 
     def __init__(self, start_time=None, end_time=None, domain_name=None, interval=None, country=None, excel_language=None, enterprise_project_id=None, excel_type=None, region=None, carrier=None):
-        """DownloadRegionCarrierExcelRequest
+        r"""DownloadRegionCarrierExcelRequest
 
         The model defined in huaweicloud sdk
 
@@ -102,7 +102,7 @@ class DownloadRegionCarrierExcelRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this DownloadRegionCarrierExcelRequest.
+        r"""Gets the start_time of this DownloadRegionCarrierExcelRequest.
 
         查询起始时间戳，需与结束时间戳同时指定，左闭右开，设置方式如下： - interval为300时，start_time设置为整5分钟时刻点，如：1631240100000(对应2021-09-10 10:15:00) - interval为3600时，start_time设置为整小时时刻点，如：1631239200000(对应2021-09-10 10:00:00) - interval为86400时，start_time设置为东8区零点时刻点，如：1631203200000(对应2021-09-10 00:00:00)
 
@@ -113,7 +113,7 @@ class DownloadRegionCarrierExcelRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this DownloadRegionCarrierExcelRequest.
+        r"""Sets the start_time of this DownloadRegionCarrierExcelRequest.
 
         查询起始时间戳，需与结束时间戳同时指定，左闭右开，设置方式如下： - interval为300时，start_time设置为整5分钟时刻点，如：1631240100000(对应2021-09-10 10:15:00) - interval为3600时，start_time设置为整小时时刻点，如：1631239200000(对应2021-09-10 10:00:00) - interval为86400时，start_time设置为东8区零点时刻点，如：1631203200000(对应2021-09-10 00:00:00)
 
@@ -124,7 +124,7 @@ class DownloadRegionCarrierExcelRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this DownloadRegionCarrierExcelRequest.
+        r"""Gets the end_time of this DownloadRegionCarrierExcelRequest.
 
         查询结束时间戳，需与开始时间戳同时指定，左闭右开，设置方式如下： - interval为300时，end_time设置为整5分钟时刻点，如：1631243700000(对应2021-09-10 11:15:00) - interval为3600时，end_time设置为整小时时刻点，如：1631325600000(对应2021-09-11 10:00:00) - interval为86400时，end_time设置为东8区零点时刻点，如：1631376000000(对应2021-09-12 00:00:00)
 
@@ -135,7 +135,7 @@ class DownloadRegionCarrierExcelRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this DownloadRegionCarrierExcelRequest.
+        r"""Sets the end_time of this DownloadRegionCarrierExcelRequest.
 
         查询结束时间戳，需与开始时间戳同时指定，左闭右开，设置方式如下： - interval为300时，end_time设置为整5分钟时刻点，如：1631243700000(对应2021-09-10 11:15:00) - interval为3600时，end_time设置为整小时时刻点，如：1631325600000(对应2021-09-11 10:00:00) - interval为86400时，end_time设置为东8区零点时刻点，如：1631376000000(对应2021-09-12 00:00:00)
 
@@ -146,7 +146,7 @@ class DownloadRegionCarrierExcelRequest:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this DownloadRegionCarrierExcelRequest.
+        r"""Gets the domain_name of this DownloadRegionCarrierExcelRequest.
 
         域名列表，多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com all表示查询名下全部域名。如果域名在查询时间段内无数据，结果将不返回该域名的信息。
 
@@ -157,7 +157,7 @@ class DownloadRegionCarrierExcelRequest:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this DownloadRegionCarrierExcelRequest.
+        r"""Sets the domain_name of this DownloadRegionCarrierExcelRequest.
 
         域名列表，多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com all表示查询名下全部域名。如果域名在查询时间段内无数据，结果将不返回该域名的信息。
 
@@ -168,7 +168,7 @@ class DownloadRegionCarrierExcelRequest:
 
     @property
     def interval(self):
-        """Gets the interval of this DownloadRegionCarrierExcelRequest.
+        r"""Gets the interval of this DownloadRegionCarrierExcelRequest.
 
         - 查询时间间隔，单位：秒，取值说明： - 300(5分钟)：最大查询跨度2天 - 3600(1小时)：最大查询跨度7天 - 86400(1天)：最大查询跨度31天 - 如果不传，默认取对应时间跨度的最小间隔。
 
@@ -179,7 +179,7 @@ class DownloadRegionCarrierExcelRequest:
 
     @interval.setter
     def interval(self, interval):
-        """Sets the interval of this DownloadRegionCarrierExcelRequest.
+        r"""Sets the interval of this DownloadRegionCarrierExcelRequest.
 
         - 查询时间间隔，单位：秒，取值说明： - 300(5分钟)：最大查询跨度2天 - 3600(1小时)：最大查询跨度7天 - 86400(1天)：最大查询跨度31天 - 如果不传，默认取对应时间跨度的最小间隔。
 
@@ -190,7 +190,7 @@ class DownloadRegionCarrierExcelRequest:
 
     @property
     def country(self):
-        """Gets the country of this DownloadRegionCarrierExcelRequest.
+        r"""Gets the country of this DownloadRegionCarrierExcelRequest.
 
         - 国家&地区编码，多个以英文逗号分隔，all表示全部，取值见附录 - 访问运营商统计数据时不能填写 - 访问top_url数据时不能填写 - 访问区域情况数据时只能填写cn(中国)
 
@@ -201,7 +201,7 @@ class DownloadRegionCarrierExcelRequest:
 
     @country.setter
     def country(self, country):
-        """Sets the country of this DownloadRegionCarrierExcelRequest.
+        r"""Sets the country of this DownloadRegionCarrierExcelRequest.
 
         - 国家&地区编码，多个以英文逗号分隔，all表示全部，取值见附录 - 访问运营商统计数据时不能填写 - 访问top_url数据时不能填写 - 访问区域情况数据时只能填写cn(中国)
 
@@ -212,7 +212,7 @@ class DownloadRegionCarrierExcelRequest:
 
     @property
     def excel_language(self):
-        """Gets the excel_language of this DownloadRegionCarrierExcelRequest.
+        r"""Gets the excel_language of this DownloadRegionCarrierExcelRequest.
 
         创建表格语言，支持zh(中文)，en(英文)两种，如果不传默认为zh
 
@@ -223,7 +223,7 @@ class DownloadRegionCarrierExcelRequest:
 
     @excel_language.setter
     def excel_language(self, excel_language):
-        """Sets the excel_language of this DownloadRegionCarrierExcelRequest.
+        r"""Sets the excel_language of this DownloadRegionCarrierExcelRequest.
 
         创建表格语言，支持zh(中文)，en(英文)两种，如果不传默认为zh
 
@@ -234,7 +234,7 @@ class DownloadRegionCarrierExcelRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this DownloadRegionCarrierExcelRequest.
+        r"""Gets the enterprise_project_id of this DownloadRegionCarrierExcelRequest.
 
         当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子账号调用接口时，该参数必传。
 
@@ -245,7 +245,7 @@ class DownloadRegionCarrierExcelRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this DownloadRegionCarrierExcelRequest.
+        r"""Sets the enterprise_project_id of this DownloadRegionCarrierExcelRequest.
 
         当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子账号调用接口时，该参数必传。
 
@@ -256,7 +256,7 @@ class DownloadRegionCarrierExcelRequest:
 
     @property
     def excel_type(self):
-        """Gets the excel_type of this DownloadRegionCarrierExcelRequest.
+        r"""Gets the excel_type of this DownloadRegionCarrierExcelRequest.
 
         统计数据表格类型,目前支持 - 区域用量统计数据(excel_type_usage) - 区域访问情况统计数据(excel_type_access) - 区域情况统计数据（excel_type_region） - 区域运营商情况统计数据(excel_type_carrier) - 国家情况统计数据(excel_type_country) - top_url统计数据(excel_type_top_url)
 
@@ -267,7 +267,7 @@ class DownloadRegionCarrierExcelRequest:
 
     @excel_type.setter
     def excel_type(self, excel_type):
-        """Sets the excel_type of this DownloadRegionCarrierExcelRequest.
+        r"""Sets the excel_type of this DownloadRegionCarrierExcelRequest.
 
         统计数据表格类型,目前支持 - 区域用量统计数据(excel_type_usage) - 区域访问情况统计数据(excel_type_access) - 区域情况统计数据（excel_type_region） - 区域运营商情况统计数据(excel_type_carrier) - 国家情况统计数据(excel_type_country) - top_url统计数据(excel_type_top_url)
 
@@ -278,7 +278,7 @@ class DownloadRegionCarrierExcelRequest:
 
     @property
     def region(self):
-        """Gets the region of this DownloadRegionCarrierExcelRequest.
+        r"""Gets the region of this DownloadRegionCarrierExcelRequest.
 
         - 地区区域,当country为cn（中国）时有效 - 访问运营商统计数据时不能填写 - 访问国家统计数据时不能填写 - 访问top_url数据时不能填写
 
@@ -289,7 +289,7 @@ class DownloadRegionCarrierExcelRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this DownloadRegionCarrierExcelRequest.
+        r"""Sets the region of this DownloadRegionCarrierExcelRequest.
 
         - 地区区域,当country为cn（中国）时有效 - 访问运营商统计数据时不能填写 - 访问国家统计数据时不能填写 - 访问top_url数据时不能填写
 
@@ -300,7 +300,7 @@ class DownloadRegionCarrierExcelRequest:
 
     @property
     def carrier(self):
-        """Gets the carrier of this DownloadRegionCarrierExcelRequest.
+        r"""Gets the carrier of this DownloadRegionCarrierExcelRequest.
 
         - 运营商编码 - 访问区域统计数据时不能填写 - 访问国家统计数据时不能填写 - 访问top_url数据时不能填写
 
@@ -311,7 +311,7 @@ class DownloadRegionCarrierExcelRequest:
 
     @carrier.setter
     def carrier(self, carrier):
-        """Sets the carrier of this DownloadRegionCarrierExcelRequest.
+        r"""Sets the carrier of this DownloadRegionCarrierExcelRequest.
 
         - 运营商编码 - 访问区域统计数据时不能填写 - 访问国家统计数据时不能填写 - 访问top_url数据时不能填写
 

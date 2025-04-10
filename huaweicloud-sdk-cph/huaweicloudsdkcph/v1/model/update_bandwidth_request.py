@@ -27,7 +27,7 @@ class UpdateBandwidthRequest:
     }
 
     def __init__(self, band_width_id=None, body=None):
-        """UpdateBandwidthRequest
+        r"""UpdateBandwidthRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateBandwidthRequest:
 
     @property
     def band_width_id(self):
-        """Gets the band_width_id of this UpdateBandwidthRequest.
+        r"""Gets the band_width_id of this UpdateBandwidthRequest.
 
         带宽id。
 
@@ -60,7 +60,7 @@ class UpdateBandwidthRequest:
 
     @band_width_id.setter
     def band_width_id(self, band_width_id):
-        """Sets the band_width_id of this UpdateBandwidthRequest.
+        r"""Sets the band_width_id of this UpdateBandwidthRequest.
 
         带宽id。
 
@@ -71,7 +71,7 @@ class UpdateBandwidthRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateBandwidthRequest.
+        r"""Gets the body of this UpdateBandwidthRequest.
 
         :return: The body of this UpdateBandwidthRequest.
         :rtype: :class:`huaweicloudsdkcph.v1.UpdateBandwidthRequestBody`
@@ -80,7 +80,7 @@ class UpdateBandwidthRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateBandwidthRequest.
+        r"""Sets the body of this UpdateBandwidthRequest.
 
         :param body: The body of this UpdateBandwidthRequest.
         :type body: :class:`huaweicloudsdkcph.v1.UpdateBandwidthRequestBody`

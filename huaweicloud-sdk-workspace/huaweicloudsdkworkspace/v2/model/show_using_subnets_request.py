@@ -25,7 +25,7 @@ class ShowUsingSubnetsRequest:
     }
 
     def __init__(self, subnet_ids=None):
-        """ShowUsingSubnetsRequest
+        r"""ShowUsingSubnetsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowUsingSubnetsRequest:
 
     @property
     def subnet_ids(self):
-        """Gets the subnet_ids of this ShowUsingSubnetsRequest.
+        r"""Gets the subnet_ids of this ShowUsingSubnetsRequest.
 
         子网id列表逗号分隔。
 
@@ -54,7 +54,7 @@ class ShowUsingSubnetsRequest:
 
     @subnet_ids.setter
     def subnet_ids(self, subnet_ids):
-        """Sets the subnet_ids of this ShowUsingSubnetsRequest.
+        r"""Sets the subnet_ids of this ShowUsingSubnetsRequest.
 
         子网id列表逗号分隔。
 

@@ -26,7 +26,7 @@ class DeletePromInstanceResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DeletePromInstanceResponse
+        r"""DeletePromInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeletePromInstanceResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this DeletePromInstanceResponse.
+        r"""Gets the body of this DeletePromInstanceResponse.
 
         :return: The body of this DeletePromInstanceResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeletePromInstanceResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeletePromInstanceResponse.
+        r"""Sets the body of this DeletePromInstanceResponse.
 
         :param body: The body of this DeletePromInstanceResponse.
         :type body: str

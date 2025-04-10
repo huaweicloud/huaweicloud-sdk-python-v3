@@ -24,7 +24,7 @@ class UpdateDataPolicyResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateDataPolicyResponse
+        r"""UpdateDataPolicyResponse
 
         The model defined in huaweicloud sdk
 

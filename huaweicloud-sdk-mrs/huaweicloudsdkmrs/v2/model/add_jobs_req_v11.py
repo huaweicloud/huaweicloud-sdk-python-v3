@@ -47,7 +47,7 @@ class AddJobsReqV11:
     }
 
     def __init__(self, job_type=None, job_name=None, jar_path=None, arguments=None, input=None, output=None, job_log=None, hive_script_path=None, hql=None, shutdown_cluster=None, submit_job_once_cluster_run=None, file_action=None):
-        """AddJobsReqV11
+        r"""AddJobsReqV11
 
         The model defined in huaweicloud sdk
 
@@ -117,7 +117,7 @@ class AddJobsReqV11:
 
     @property
     def job_type(self):
-        """Gets the job_type of this AddJobsReqV11.
+        r"""Gets the job_type of this AddJobsReqV11.
 
         作业类型码。 - 1：MapReduce - 2：Spark - 3：Hive Script - 4：HiveSQL（当前不支持） - 5：DistCp，导入、导出数据，（当前不支持）。 - 6：Spark Script - 7：Spark SQL，提交SQL语句，（当前不支持）。
 
@@ -128,7 +128,7 @@ class AddJobsReqV11:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this AddJobsReqV11.
+        r"""Sets the job_type of this AddJobsReqV11.
 
         作业类型码。 - 1：MapReduce - 2：Spark - 3：Hive Script - 4：HiveSQL（当前不支持） - 5：DistCp，导入、导出数据，（当前不支持）。 - 6：Spark Script - 7：Spark SQL，提交SQL语句，（当前不支持）。
 
@@ -139,7 +139,7 @@ class AddJobsReqV11:
 
     @property
     def job_name(self):
-        """Gets the job_name of this AddJobsReqV11.
+        r"""Gets the job_name of this AddJobsReqV11.
 
         作业名称。 只能由字母、数字、中划线和下划线组成，并且长度为1～64个字符。 说明： 不同作业的名称允许相同，但不建议设置相同。
 
@@ -150,7 +150,7 @@ class AddJobsReqV11:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this AddJobsReqV11.
+        r"""Sets the job_name of this AddJobsReqV11.
 
         作业名称。 只能由字母、数字、中划线和下划线组成，并且长度为1～64个字符。 说明： 不同作业的名称允许相同，但不建议设置相同。
 
@@ -161,7 +161,7 @@ class AddJobsReqV11:
 
     @property
     def jar_path(self):
-        """Gets the jar_path of this AddJobsReqV11.
+        r"""Gets the jar_path of this AddJobsReqV11.
 
         执行程序Jar包或sql文件地址，需要满足如下要求： - 最多为1023字符，不能包含;|&>,<'$特殊字符，且不可为空或全空格。 - 文件可存储于HDFS或者OBS中，不同的文件系统对应的路径存在差异。    - OBS：以“obs://”开头。不支持KMS加密的文件或程序。    - HDFS：以“/”开头。 - Spark Script需要以“.sql”结尾，MapReduce和Spark Jar需要以“.jar”结尾，sql和jar不区分大小写。
 
@@ -172,7 +172,7 @@ class AddJobsReqV11:
 
     @jar_path.setter
     def jar_path(self, jar_path):
-        """Sets the jar_path of this AddJobsReqV11.
+        r"""Sets the jar_path of this AddJobsReqV11.
 
         执行程序Jar包或sql文件地址，需要满足如下要求： - 最多为1023字符，不能包含;|&>,<'$特殊字符，且不可为空或全空格。 - 文件可存储于HDFS或者OBS中，不同的文件系统对应的路径存在差异。    - OBS：以“obs://”开头。不支持KMS加密的文件或程序。    - HDFS：以“/”开头。 - Spark Script需要以“.sql”结尾，MapReduce和Spark Jar需要以“.jar”结尾，sql和jar不区分大小写。
 
@@ -183,7 +183,7 @@ class AddJobsReqV11:
 
     @property
     def arguments(self):
-        """Gets the arguments of this AddJobsReqV11.
+        r"""Gets the arguments of this AddJobsReqV11.
 
         程序执行的关键参数，该参数由用户程序内的函数指定，MRS只负责参数的传入。 最多为150000字符，不能包含;|&>'<$特殊字符，可为空。
 
@@ -194,7 +194,7 @@ class AddJobsReqV11:
 
     @arguments.setter
     def arguments(self, arguments):
-        """Sets the arguments of this AddJobsReqV11.
+        r"""Sets the arguments of this AddJobsReqV11.
 
         程序执行的关键参数，该参数由用户程序内的函数指定，MRS只负责参数的传入。 最多为150000字符，不能包含;|&>'<$特殊字符，可为空。
 
@@ -205,7 +205,7 @@ class AddJobsReqV11:
 
     @property
     def input(self):
-        """Gets the input of this AddJobsReqV11.
+        r"""Gets the input of this AddJobsReqV11.
 
         数据输入地址。 文件可存储于HDFS或者OBS中，不同的文件系统对应的路径存在差异。 - OBS：以“obs://”开头。不支持KMS加密的文件或程序。 - HDFS：以“/”开头。 最多为1023字符，不能包含;|&>'<$特殊字符，可为空。
 
@@ -216,7 +216,7 @@ class AddJobsReqV11:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this AddJobsReqV11.
+        r"""Sets the input of this AddJobsReqV11.
 
         数据输入地址。 文件可存储于HDFS或者OBS中，不同的文件系统对应的路径存在差异。 - OBS：以“obs://”开头。不支持KMS加密的文件或程序。 - HDFS：以“/”开头。 最多为1023字符，不能包含;|&>'<$特殊字符，可为空。
 
@@ -227,7 +227,7 @@ class AddJobsReqV11:
 
     @property
     def output(self):
-        """Gets the output of this AddJobsReqV11.
+        r"""Gets the output of this AddJobsReqV11.
 
         数据输出地址。 文件可存储于HDFS或者OBS中，不同的文件系统对应的路径存在差异。 - OBS：以“obs://”开头。 - HDFS：以“/”开头。 如果该路径不存在，系统会自动创建。 最多为1023字符，不能包含;|&>'<$特殊字符，可为空。
 
@@ -238,7 +238,7 @@ class AddJobsReqV11:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this AddJobsReqV11.
+        r"""Sets the output of this AddJobsReqV11.
 
         数据输出地址。 文件可存储于HDFS或者OBS中，不同的文件系统对应的路径存在差异。 - OBS：以“obs://”开头。 - HDFS：以“/”开头。 如果该路径不存在，系统会自动创建。 最多为1023字符，不能包含;|&>'<$特殊字符，可为空。
 
@@ -249,7 +249,7 @@ class AddJobsReqV11:
 
     @property
     def job_log(self):
-        """Gets the job_log of this AddJobsReqV11.
+        r"""Gets the job_log of this AddJobsReqV11.
 
         作业日志存储地址，该日志信息记录作业运行状态。 文件可存储于HDFS或者OBS中，不同的文件系统对应的路径存在差异。 - OBS：以“obs://”开头。 - HDFS：以“/”开头。 最多为1023字符，不能包含;|&>'<$特殊字符，可为空。
 
@@ -260,7 +260,7 @@ class AddJobsReqV11:
 
     @job_log.setter
     def job_log(self, job_log):
-        """Sets the job_log of this AddJobsReqV11.
+        r"""Sets the job_log of this AddJobsReqV11.
 
         作业日志存储地址，该日志信息记录作业运行状态。 文件可存储于HDFS或者OBS中，不同的文件系统对应的路径存在差异。 - OBS：以“obs://”开头。 - HDFS：以“/”开头。 最多为1023字符，不能包含;|&>'<$特殊字符，可为空。
 
@@ -271,7 +271,7 @@ class AddJobsReqV11:
 
     @property
     def hive_script_path(self):
-        """Gets the hive_script_path of this AddJobsReqV11.
+        r"""Gets the hive_script_path of this AddJobsReqV11.
 
         sql程序路径，仅Spark Script和Hive Script作业需要使用此参数。需要满足如下要求： - 最多为1023字符，不能包含;|&><'$特殊字符，且不可为空或全空格。 - 文件可存储于HDFS或者OBS中，不同的文件系统对应的路径存在差异。     - OBS：以“obs://”开头。不支持KMS加密的文件或程序。     - HDFS：以“/”开头。 - 需要以“.sql”结尾，sql不区分大小写。
 
@@ -282,7 +282,7 @@ class AddJobsReqV11:
 
     @hive_script_path.setter
     def hive_script_path(self, hive_script_path):
-        """Sets the hive_script_path of this AddJobsReqV11.
+        r"""Sets the hive_script_path of this AddJobsReqV11.
 
         sql程序路径，仅Spark Script和Hive Script作业需要使用此参数。需要满足如下要求： - 最多为1023字符，不能包含;|&><'$特殊字符，且不可为空或全空格。 - 文件可存储于HDFS或者OBS中，不同的文件系统对应的路径存在差异。     - OBS：以“obs://”开头。不支持KMS加密的文件或程序。     - HDFS：以“/”开头。 - 需要以“.sql”结尾，sql不区分大小写。
 
@@ -293,7 +293,7 @@ class AddJobsReqV11:
 
     @property
     def hql(self):
-        """Gets the hql of this AddJobsReqV11.
+        r"""Gets the hql of this AddJobsReqV11.
 
         HQL脚本语句。
 
@@ -304,7 +304,7 @@ class AddJobsReqV11:
 
     @hql.setter
     def hql(self, hql):
-        """Sets the hql of this AddJobsReqV11.
+        r"""Sets the hql of this AddJobsReqV11.
 
         HQL脚本语句。
 
@@ -315,7 +315,7 @@ class AddJobsReqV11:
 
     @property
     def shutdown_cluster(self):
-        """Gets the shutdown_cluster of this AddJobsReqV11.
+        r"""Gets the shutdown_cluster of this AddJobsReqV11.
 
         作业执行完成后，是否删除集群。 - true：是 - false：否
 
@@ -326,7 +326,7 @@ class AddJobsReqV11:
 
     @shutdown_cluster.setter
     def shutdown_cluster(self, shutdown_cluster):
-        """Sets the shutdown_cluster of this AddJobsReqV11.
+        r"""Sets the shutdown_cluster of this AddJobsReqV11.
 
         作业执行完成后，是否删除集群。 - true：是 - false：否
 
@@ -337,7 +337,7 @@ class AddJobsReqV11:
 
     @property
     def submit_job_once_cluster_run(self):
-        """Gets the submit_job_once_cluster_run of this AddJobsReqV11.
+        r"""Gets the submit_job_once_cluster_run of this AddJobsReqV11.
 
         - true：创建集群同时提交作业 - false：单独提交作业 此处应设置为true。
 
@@ -348,7 +348,7 @@ class AddJobsReqV11:
 
     @submit_job_once_cluster_run.setter
     def submit_job_once_cluster_run(self, submit_job_once_cluster_run):
-        """Sets the submit_job_once_cluster_run of this AddJobsReqV11.
+        r"""Sets the submit_job_once_cluster_run of this AddJobsReqV11.
 
         - true：创建集群同时提交作业 - false：单独提交作业 此处应设置为true。
 
@@ -359,7 +359,7 @@ class AddJobsReqV11:
 
     @property
     def file_action(self):
-        """Gets the file_action of this AddJobsReqV11.
+        r"""Gets the file_action of this AddJobsReqV11.
 
         数据导入导出。 - import - export
 
@@ -370,7 +370,7 @@ class AddJobsReqV11:
 
     @file_action.setter
     def file_action(self, file_action):
-        """Sets the file_action of this AddJobsReqV11.
+        r"""Sets the file_action of this AddJobsReqV11.
 
         数据导入导出。 - import - export
 

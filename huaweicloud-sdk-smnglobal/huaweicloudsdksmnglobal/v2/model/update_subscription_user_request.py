@@ -27,7 +27,7 @@ class UpdateSubscriptionUserRequest:
     }
 
     def __init__(self, id=None, body=None):
-        """UpdateSubscriptionUserRequest
+        r"""UpdateSubscriptionUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateSubscriptionUserRequest:
 
     @property
     def id(self):
-        """Gets the id of this UpdateSubscriptionUserRequest.
+        r"""Gets the id of this UpdateSubscriptionUserRequest.
 
         订阅用户ID。
 
@@ -60,7 +60,7 @@ class UpdateSubscriptionUserRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateSubscriptionUserRequest.
+        r"""Sets the id of this UpdateSubscriptionUserRequest.
 
         订阅用户ID。
 
@@ -71,7 +71,7 @@ class UpdateSubscriptionUserRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSubscriptionUserRequest.
+        r"""Gets the body of this UpdateSubscriptionUserRequest.
 
         :return: The body of this UpdateSubscriptionUserRequest.
         :rtype: :class:`huaweicloudsdksmnglobal.v2.UpdateSubscriptionUserRequestBody`
@@ -80,7 +80,7 @@ class UpdateSubscriptionUserRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSubscriptionUserRequest.
+        r"""Sets the body of this UpdateSubscriptionUserRequest.
 
         :param body: The body of this UpdateSubscriptionUserRequest.
         :type body: :class:`huaweicloudsdksmnglobal.v2.UpdateSubscriptionUserRequestBody`

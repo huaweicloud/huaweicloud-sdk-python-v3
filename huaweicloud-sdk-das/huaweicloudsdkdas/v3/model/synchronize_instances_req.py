@@ -25,7 +25,7 @@ class SynchronizeInstancesReq:
     }
 
     def __init__(self, engine_type=None):
-        """SynchronizeInstancesReq
+        r"""SynchronizeInstancesReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SynchronizeInstancesReq:
 
     @property
     def engine_type(self):
-        """Gets the engine_type of this SynchronizeInstancesReq.
+        r"""Gets the engine_type of this SynchronizeInstancesReq.
 
         数据库引擎类型。
 
@@ -54,7 +54,7 @@ class SynchronizeInstancesReq:
 
     @engine_type.setter
     def engine_type(self, engine_type):
-        """Sets the engine_type of this SynchronizeInstancesReq.
+        r"""Sets the engine_type of this SynchronizeInstancesReq.
 
         数据库引擎类型。
 

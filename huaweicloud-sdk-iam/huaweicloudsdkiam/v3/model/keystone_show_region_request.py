@@ -25,7 +25,7 @@ class KeystoneShowRegionRequest:
     }
 
     def __init__(self, region_id=None):
-        """KeystoneShowRegionRequest
+        r"""KeystoneShowRegionRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class KeystoneShowRegionRequest:
 
     @property
     def region_id(self):
-        """Gets the region_id of this KeystoneShowRegionRequest.
+        r"""Gets the region_id of this KeystoneShowRegionRequest.
 
         待查询的区域ID。可以使用[查询区域列表](https://support.huaweicloud.com/api-iam/iam_05_0001.html)接口获取，控制台获取方法请参见：[获取区域ID](https://console.huaweicloud.com/iam/?agencyId=d15f57bd355d4514bd9618bd648dd432®ion=cn-east-2&locale=zh-cn#/iam/projects)
 
@@ -53,7 +53,7 @@ class KeystoneShowRegionRequest:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this KeystoneShowRegionRequest.
+        r"""Sets the region_id of this KeystoneShowRegionRequest.
 
         待查询的区域ID。可以使用[查询区域列表](https://support.huaweicloud.com/api-iam/iam_05_0001.html)接口获取，控制台获取方法请参见：[获取区域ID](https://console.huaweicloud.com/iam/?agencyId=d15f57bd355d4514bd9618bd648dd432®ion=cn-east-2&locale=zh-cn#/iam/projects)
 

@@ -31,7 +31,7 @@ class ShowStarRocksDatabaseUsersUserDetails:
     }
 
     def __init__(self, user_name=None, data_bases=None, dml=None, ddl=None):
-        """ShowStarRocksDatabaseUsersUserDetails
+        r"""ShowStarRocksDatabaseUsersUserDetails
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ShowStarRocksDatabaseUsersUserDetails:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ShowStarRocksDatabaseUsersUserDetails.
+        r"""Gets the user_name of this ShowStarRocksDatabaseUsersUserDetails.
 
         数据库账户名。
 
@@ -71,7 +71,7 @@ class ShowStarRocksDatabaseUsersUserDetails:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ShowStarRocksDatabaseUsersUserDetails.
+        r"""Sets the user_name of this ShowStarRocksDatabaseUsersUserDetails.
 
         数据库账户名。
 
@@ -82,7 +82,7 @@ class ShowStarRocksDatabaseUsersUserDetails:
 
     @property
     def data_bases(self):
-        """Gets the data_bases of this ShowStarRocksDatabaseUsersUserDetails.
+        r"""Gets the data_bases of this ShowStarRocksDatabaseUsersUserDetails.
 
         已授权数据库。
 
@@ -93,7 +93,7 @@ class ShowStarRocksDatabaseUsersUserDetails:
 
     @data_bases.setter
     def data_bases(self, data_bases):
-        """Sets the data_bases of this ShowStarRocksDatabaseUsersUserDetails.
+        r"""Sets the data_bases of this ShowStarRocksDatabaseUsersUserDetails.
 
         已授权数据库。
 
@@ -104,7 +104,7 @@ class ShowStarRocksDatabaseUsersUserDetails:
 
     @property
     def dml(self):
-        """Gets the dml of this ShowStarRocksDatabaseUsersUserDetails.
+        r"""Gets the dml of this ShowStarRocksDatabaseUsersUserDetails.
 
         DML授权。 - 0：读写权限 - 1：只读权限 - 2：只读和设置权限 - 3：读写和设置权限
 
@@ -115,7 +115,7 @@ class ShowStarRocksDatabaseUsersUserDetails:
 
     @dml.setter
     def dml(self, dml):
-        """Sets the dml of this ShowStarRocksDatabaseUsersUserDetails.
+        r"""Sets the dml of this ShowStarRocksDatabaseUsersUserDetails.
 
         DML授权。 - 0：读写权限 - 1：只读权限 - 2：只读和设置权限 - 3：读写和设置权限
 
@@ -126,7 +126,7 @@ class ShowStarRocksDatabaseUsersUserDetails:
 
     @property
     def ddl(self):
-        """Gets the ddl of this ShowStarRocksDatabaseUsersUserDetails.
+        r"""Gets the ddl of this ShowStarRocksDatabaseUsersUserDetails.
 
         DDL授权。 - 0：无DDL权限 - 1：有DDL权限
 
@@ -137,7 +137,7 @@ class ShowStarRocksDatabaseUsersUserDetails:
 
     @ddl.setter
     def ddl(self, ddl):
-        """Sets the ddl of this ShowStarRocksDatabaseUsersUserDetails.
+        r"""Sets the ddl of this ShowStarRocksDatabaseUsersUserDetails.
 
         DDL授权。 - 0：无DDL权限 - 1：有DDL权限
 

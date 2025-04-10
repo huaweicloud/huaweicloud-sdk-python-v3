@@ -30,7 +30,7 @@ class RunEventExtractionResponse(SdkResponse):
     }
 
     def __init__(self, events=None, error_code=None, error_msg=None):
-        """RunEventExtractionResponse
+        r"""RunEventExtractionResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class RunEventExtractionResponse(SdkResponse):
 
     @property
     def events(self):
-        """Gets the events of this RunEventExtractionResponse.
+        r"""Gets the events of this RunEventExtractionResponse.
 
         事件抽取结果。调用失败时无此字段。
 
@@ -69,7 +69,7 @@ class RunEventExtractionResponse(SdkResponse):
 
     @events.setter
     def events(self, events):
-        """Sets the events of this RunEventExtractionResponse.
+        r"""Sets the events of this RunEventExtractionResponse.
 
         事件抽取结果。调用失败时无此字段。
 
@@ -80,7 +80,7 @@ class RunEventExtractionResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this RunEventExtractionResponse.
+        r"""Gets the error_code of this RunEventExtractionResponse.
 
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
@@ -91,7 +91,7 @@ class RunEventExtractionResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this RunEventExtractionResponse.
+        r"""Sets the error_code of this RunEventExtractionResponse.
 
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
@@ -102,7 +102,7 @@ class RunEventExtractionResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this RunEventExtractionResponse.
+        r"""Gets the error_msg of this RunEventExtractionResponse.
 
         调用失败时的错误信息。调用成功时无此字段。
 
@@ -113,7 +113,7 @@ class RunEventExtractionResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this RunEventExtractionResponse.
+        r"""Sets the error_msg of this RunEventExtractionResponse.
 
         调用失败时的错误信息。调用成功时无此字段。
 

@@ -27,7 +27,7 @@ class ChangeVpcRequestBody:
     }
 
     def __init__(self, vpc_id=None, nic=None):
-        """ChangeVpcRequestBody
+        r"""ChangeVpcRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ChangeVpcRequestBody:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ChangeVpcRequestBody.
+        r"""Gets the vpc_id of this ChangeVpcRequestBody.
 
         虚拟机私有云ID
 
@@ -59,7 +59,7 @@ class ChangeVpcRequestBody:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ChangeVpcRequestBody.
+        r"""Sets the vpc_id of this ChangeVpcRequestBody.
 
         虚拟机私有云ID
 
@@ -70,7 +70,7 @@ class ChangeVpcRequestBody:
 
     @property
     def nic(self):
-        """Gets the nic of this ChangeVpcRequestBody.
+        r"""Gets the nic of this ChangeVpcRequestBody.
 
         :return: The nic of this ChangeVpcRequestBody.
         :rtype: :class:`huaweicloudsdkecs.v2.ChangeVpcNicBody`
@@ -79,7 +79,7 @@ class ChangeVpcRequestBody:
 
     @nic.setter
     def nic(self, nic):
-        """Sets the nic of this ChangeVpcRequestBody.
+        r"""Sets the nic of this ChangeVpcRequestBody.
 
         :param nic: The nic of this ChangeVpcRequestBody.
         :type nic: :class:`huaweicloudsdkecs.v2.ChangeVpcNicBody`

@@ -30,7 +30,7 @@ class ListGlobalConnectionBandwidthSitesResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, page_info=None, site_infos=None):
-        """ListGlobalConnectionBandwidthSitesResponse
+        r"""ListGlobalConnectionBandwidthSitesResponse
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListGlobalConnectionBandwidthSitesResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListGlobalConnectionBandwidthSitesResponse.
+        r"""Gets the request_id of this ListGlobalConnectionBandwidthSitesResponse.
 
         请求ID。
 
@@ -67,7 +67,7 @@ class ListGlobalConnectionBandwidthSitesResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListGlobalConnectionBandwidthSitesResponse.
+        r"""Sets the request_id of this ListGlobalConnectionBandwidthSitesResponse.
 
         请求ID。
 
@@ -78,7 +78,7 @@ class ListGlobalConnectionBandwidthSitesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListGlobalConnectionBandwidthSitesResponse.
+        r"""Gets the page_info of this ListGlobalConnectionBandwidthSitesResponse.
 
         :return: The page_info of this ListGlobalConnectionBandwidthSitesResponse.
         :rtype: :class:`huaweicloudsdkcc.v3.PageInfo`
@@ -87,7 +87,7 @@ class ListGlobalConnectionBandwidthSitesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListGlobalConnectionBandwidthSitesResponse.
+        r"""Sets the page_info of this ListGlobalConnectionBandwidthSitesResponse.
 
         :param page_info: The page_info of this ListGlobalConnectionBandwidthSitesResponse.
         :type page_info: :class:`huaweicloudsdkcc.v3.PageInfo`
@@ -96,7 +96,7 @@ class ListGlobalConnectionBandwidthSitesResponse(SdkResponse):
 
     @property
     def site_infos(self):
-        """Gets the site_infos of this ListGlobalConnectionBandwidthSitesResponse.
+        r"""Gets the site_infos of this ListGlobalConnectionBandwidthSitesResponse.
 
         站点信息列表响应体。
 
@@ -107,7 +107,7 @@ class ListGlobalConnectionBandwidthSitesResponse(SdkResponse):
 
     @site_infos.setter
     def site_infos(self, site_infos):
-        """Sets the site_infos of this ListGlobalConnectionBandwidthSitesResponse.
+        r"""Sets the site_infos of this ListGlobalConnectionBandwidthSitesResponse.
 
         站点信息列表响应体。
 

@@ -35,7 +35,7 @@ class ShowTopUrlRequest:
     }
 
     def __init__(self, start_time=None, end_time=None, domain_name=None, stat_type=None, service_area=None, enterprise_project_id=None):
-        """ShowTopUrlRequest
+        r"""ShowTopUrlRequest
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class ShowTopUrlRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowTopUrlRequest.
+        r"""Gets the start_time of this ShowTopUrlRequest.
 
         查询起始时间戳，只能传0点毫秒时间戳
 
@@ -85,7 +85,7 @@ class ShowTopUrlRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowTopUrlRequest.
+        r"""Sets the start_time of this ShowTopUrlRequest.
 
         查询起始时间戳，只能传0点毫秒时间戳
 
@@ -96,7 +96,7 @@ class ShowTopUrlRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowTopUrlRequest.
+        r"""Gets the end_time of this ShowTopUrlRequest.
 
         查询结束时间戳，只能传0点毫秒时间戳
 
@@ -107,7 +107,7 @@ class ShowTopUrlRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowTopUrlRequest.
+        r"""Sets the end_time of this ShowTopUrlRequest.
 
         查询结束时间戳，只能传0点毫秒时间戳
 
@@ -118,7 +118,7 @@ class ShowTopUrlRequest:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ShowTopUrlRequest.
+        r"""Gets the domain_name of this ShowTopUrlRequest.
 
         域名列表，多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com all表示查询名下全部域名。如果域名在查询时间段内无数据，结果将不返回该域名的信息。
 
@@ -129,7 +129,7 @@ class ShowTopUrlRequest:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ShowTopUrlRequest.
+        r"""Sets the domain_name of this ShowTopUrlRequest.
 
         域名列表，多个域名以逗号（半角）分隔，如：www.test1.com,www.test2.com all表示查询名下全部域名。如果域名在查询时间段内无数据，结果将不返回该域名的信息。
 
@@ -140,7 +140,7 @@ class ShowTopUrlRequest:
 
     @property
     def stat_type(self):
-        """Gets the stat_type of this ShowTopUrlRequest.
+        r"""Gets the stat_type of this ShowTopUrlRequest.
 
         - 参数类型支持：flux(流量),req_num(请求数)
 
@@ -151,7 +151,7 @@ class ShowTopUrlRequest:
 
     @stat_type.setter
     def stat_type(self, stat_type):
-        """Sets the stat_type of this ShowTopUrlRequest.
+        r"""Sets the stat_type of this ShowTopUrlRequest.
 
         - 参数类型支持：flux(流量),req_num(请求数)
 
@@ -162,7 +162,7 @@ class ShowTopUrlRequest:
 
     @property
     def service_area(self):
-        """Gets the service_area of this ShowTopUrlRequest.
+        r"""Gets the service_area of this ShowTopUrlRequest.
 
         服务区域：mainland_china(大陆)，outside_mainland_china(海外)，默认为global(全球)
 
@@ -173,7 +173,7 @@ class ShowTopUrlRequest:
 
     @service_area.setter
     def service_area(self, service_area):
-        """Sets the service_area of this ShowTopUrlRequest.
+        r"""Sets the service_area of this ShowTopUrlRequest.
 
         服务区域：mainland_china(大陆)，outside_mainland_china(海外)，默认为global(全球)
 
@@ -184,7 +184,7 @@ class ShowTopUrlRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowTopUrlRequest.
+        r"""Gets the enterprise_project_id of this ShowTopUrlRequest.
 
         当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子账号调用接口时，该参数必传。
 
@@ -195,7 +195,7 @@ class ShowTopUrlRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowTopUrlRequest.
+        r"""Sets the enterprise_project_id of this ShowTopUrlRequest.
 
         当用户开启企业项目功能时，该参数生效，表示查询资源所属项目，\"all\"表示所有项目。注意：当使用子账号调用接口时，该参数必传。
 

@@ -29,7 +29,7 @@ class StatisticSchema:
     }
 
     def __init__(self, increase=None, total=None, standard_coverage=None):
-        """StatisticSchema
+        r"""StatisticSchema
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class StatisticSchema:
 
     @property
     def increase(self):
-        """Gets the increase of this StatisticSchema.
+        r"""Gets the increase of this StatisticSchema.
 
         本月新增。
 
@@ -68,7 +68,7 @@ class StatisticSchema:
 
     @increase.setter
     def increase(self, increase):
-        """Sets the increase of this StatisticSchema.
+        r"""Sets the increase of this StatisticSchema.
 
         本月新增。
 
@@ -79,7 +79,7 @@ class StatisticSchema:
 
     @property
     def total(self):
-        """Gets the total of this StatisticSchema.
+        r"""Gets the total of this StatisticSchema.
 
         总量。
 
@@ -90,7 +90,7 @@ class StatisticSchema:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this StatisticSchema.
+        r"""Sets the total of this StatisticSchema.
 
         总量。
 
@@ -101,7 +101,7 @@ class StatisticSchema:
 
     @property
     def standard_coverage(self):
-        """Gets the standard_coverage of this StatisticSchema.
+        r"""Gets the standard_coverage of this StatisticSchema.
 
         标准覆盖率。
 
@@ -112,7 +112,7 @@ class StatisticSchema:
 
     @standard_coverage.setter
     def standard_coverage(self, standard_coverage):
-        """Sets the standard_coverage of this StatisticSchema.
+        r"""Sets the standard_coverage of this StatisticSchema.
 
         标准覆盖率。
 

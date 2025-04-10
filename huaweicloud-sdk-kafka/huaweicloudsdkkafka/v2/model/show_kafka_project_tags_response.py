@@ -26,7 +26,7 @@ class ShowKafkaProjectTagsResponse(SdkResponse):
     }
 
     def __init__(self, tags=None):
-        """ShowKafkaProjectTagsResponse
+        r"""ShowKafkaProjectTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowKafkaProjectTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowKafkaProjectTagsResponse.
+        r"""Gets the tags of this ShowKafkaProjectTagsResponse.
 
         标签列表
 
@@ -55,7 +55,7 @@ class ShowKafkaProjectTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowKafkaProjectTagsResponse.
+        r"""Sets the tags of this ShowKafkaProjectTagsResponse.
 
         标签列表
 

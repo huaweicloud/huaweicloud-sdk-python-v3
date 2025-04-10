@@ -27,7 +27,7 @@ class BatchHandTags:
     }
 
     def __init__(self, tags=None, action=None):
-        """BatchHandTags
+        r"""BatchHandTags
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchHandTags:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchHandTags.
+        r"""Gets the tags of this BatchHandTags.
 
         标签列表。删除时tags结构体不能缺失。
 
@@ -59,7 +59,7 @@ class BatchHandTags:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchHandTags.
+        r"""Sets the tags of this BatchHandTags.
 
         标签列表。删除时tags结构体不能缺失。
 
@@ -70,7 +70,7 @@ class BatchHandTags:
 
     @property
     def action(self):
-        """Gets the action of this BatchHandTags.
+        r"""Gets the action of this BatchHandTags.
 
         操作标识（区分大小写）：create（创建）、delete（删除）。
 
@@ -81,7 +81,7 @@ class BatchHandTags:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this BatchHandTags.
+        r"""Sets the action of this BatchHandTags.
 
         操作标识（区分大小写）：create（创建）、delete（删除）。
 

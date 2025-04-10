@@ -25,7 +25,7 @@ class ChangeSecurityGroup:
     }
 
     def __init__(self, security_group_id=None):
-        """ChangeSecurityGroup
+        r"""ChangeSecurityGroup
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ChangeSecurityGroup:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this ChangeSecurityGroup.
+        r"""Gets the security_group_id of this ChangeSecurityGroup.
 
         需要修改的目标安全组ID。
 
@@ -53,7 +53,7 @@ class ChangeSecurityGroup:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this ChangeSecurityGroup.
+        r"""Sets the security_group_id of this ChangeSecurityGroup.
 
         需要修改的目标安全组ID。
 

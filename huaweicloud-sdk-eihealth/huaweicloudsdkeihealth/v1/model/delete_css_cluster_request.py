@@ -25,7 +25,7 @@ class DeleteCssClusterRequest:
     }
 
     def __init__(self, css_cluster_id=None):
-        """DeleteCssClusterRequest
+        r"""DeleteCssClusterRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteCssClusterRequest:
 
     @property
     def css_cluster_id(self):
-        """Gets the css_cluster_id of this DeleteCssClusterRequest.
+        r"""Gets the css_cluster_id of this DeleteCssClusterRequest.
 
         css集群id
 
@@ -53,7 +53,7 @@ class DeleteCssClusterRequest:
 
     @css_cluster_id.setter
     def css_cluster_id(self, css_cluster_id):
-        """Sets the css_cluster_id of this DeleteCssClusterRequest.
+        r"""Sets the css_cluster_id of this DeleteCssClusterRequest.
 
         css集群id
 

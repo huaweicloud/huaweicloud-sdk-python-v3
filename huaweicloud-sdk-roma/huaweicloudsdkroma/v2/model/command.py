@@ -31,7 +31,7 @@ class Command:
     }
 
     def __init__(self, service_id=None, command_id=None, command_name=None, description=None):
-        """Command
+        r"""Command
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class Command:
 
     @property
     def service_id(self):
-        """Gets the service_id of this Command.
+        r"""Gets the service_id of this Command.
 
         命令所属服务id
 
@@ -75,7 +75,7 @@ class Command:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this Command.
+        r"""Sets the service_id of this Command.
 
         命令所属服务id
 
@@ -86,7 +86,7 @@ class Command:
 
     @property
     def command_id(self):
-        """Gets the command_id of this Command.
+        r"""Gets the command_id of this Command.
 
         命令id
 
@@ -97,7 +97,7 @@ class Command:
 
     @command_id.setter
     def command_id(self, command_id):
-        """Sets the command_id of this Command.
+        r"""Sets the command_id of this Command.
 
         命令id
 
@@ -108,7 +108,7 @@ class Command:
 
     @property
     def command_name(self):
-        """Gets the command_name of this Command.
+        r"""Gets the command_name of this Command.
 
         命令名称
 
@@ -119,7 +119,7 @@ class Command:
 
     @command_name.setter
     def command_name(self, command_name):
-        """Sets the command_name of this Command.
+        r"""Sets the command_name of this Command.
 
         命令名称
 
@@ -130,7 +130,7 @@ class Command:
 
     @property
     def description(self):
-        """Gets the description of this Command.
+        r"""Gets the description of this Command.
 
         命令描述
 
@@ -141,7 +141,7 @@ class Command:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Command.
+        r"""Sets the description of this Command.
 
         命令描述
 

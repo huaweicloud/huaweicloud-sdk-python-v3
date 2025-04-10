@@ -26,7 +26,7 @@ class ImportPrivateKeyResponse(SdkResponse):
     }
 
     def __init__(self, keypair=None):
-        """ImportPrivateKeyResponse
+        r"""ImportPrivateKeyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ImportPrivateKeyResponse(SdkResponse):
 
     @property
     def keypair(self):
-        """Gets the keypair of this ImportPrivateKeyResponse.
+        r"""Gets the keypair of this ImportPrivateKeyResponse.
 
         :return: The keypair of this ImportPrivateKeyResponse.
         :rtype: :class:`huaweicloudsdkkps.v3.ImportPrivateKeyAction`
@@ -53,7 +53,7 @@ class ImportPrivateKeyResponse(SdkResponse):
 
     @keypair.setter
     def keypair(self, keypair):
-        """Sets the keypair of this ImportPrivateKeyResponse.
+        r"""Sets the keypair of this ImportPrivateKeyResponse.
 
         :param keypair: The keypair of this ImportPrivateKeyResponse.
         :type keypair: :class:`huaweicloudsdkkps.v3.ImportPrivateKeyAction`

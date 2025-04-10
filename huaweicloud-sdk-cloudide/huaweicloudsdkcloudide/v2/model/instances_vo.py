@@ -79,7 +79,7 @@ class InstancesVO:
     }
 
     def __init__(self, arch=None, attributes=None, cpu_memory=None, created_time=None, description=None, display_name=None, domain_name=None, id=None, is_temporary=None, label=None, link=None, name=None, organization_id=None, owner_id=None, owner_name=None, platform_id=None, private=None, pvc_quantity=None, refresh_interval=None, region=None, server_map=None, server_url=None, stack_id=None, status=None, updated_time=None, visitor_id=None, visitor_name=None, visitor_domain_name=None):
-        """InstancesVO
+        r"""InstancesVO
 
         The model defined in huaweicloud sdk
 
@@ -232,7 +232,7 @@ class InstancesVO:
 
     @property
     def arch(self):
-        """Gets the arch of this InstancesVO.
+        r"""Gets the arch of this InstancesVO.
 
         cpu架构 x86|arm
 
@@ -243,7 +243,7 @@ class InstancesVO:
 
     @arch.setter
     def arch(self, arch):
-        """Sets the arch of this InstancesVO.
+        r"""Sets the arch of this InstancesVO.
 
         cpu架构 x86|arm
 
@@ -254,7 +254,7 @@ class InstancesVO:
 
     @property
     def attributes(self):
-        """Gets the attributes of this InstancesVO.
+        r"""Gets the attributes of this InstancesVO.
 
         :return: The attributes of this InstancesVO.
         :rtype: :class:`huaweicloudsdkcloudide.v2.Attributes`
@@ -263,7 +263,7 @@ class InstancesVO:
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this InstancesVO.
+        r"""Sets the attributes of this InstancesVO.
 
         :param attributes: The attributes of this InstancesVO.
         :type attributes: :class:`huaweicloudsdkcloudide.v2.Attributes`
@@ -272,7 +272,7 @@ class InstancesVO:
 
     @property
     def cpu_memory(self):
-        """Gets the cpu_memory of this InstancesVO.
+        r"""Gets the cpu_memory of this InstancesVO.
 
         cpu规格.arm架构支持4U8G，x86架构支持1U1G,2U4G,2U8G 与技术栈配置的规格对应，可通过技术栈管理ListStacks接口获取。如果标签不为空，以标签配置的技术栈规格为准。 quantum技术栈，x86架构cpu规格为2U8G;其他技术栈，x86架构cpu规格为1U1G,2U4G
 
@@ -283,7 +283,7 @@ class InstancesVO:
 
     @cpu_memory.setter
     def cpu_memory(self, cpu_memory):
-        """Sets the cpu_memory of this InstancesVO.
+        r"""Sets the cpu_memory of this InstancesVO.
 
         cpu规格.arm架构支持4U8G，x86架构支持1U1G,2U4G,2U8G 与技术栈配置的规格对应，可通过技术栈管理ListStacks接口获取。如果标签不为空，以标签配置的技术栈规格为准。 quantum技术栈，x86架构cpu规格为2U8G;其他技术栈，x86架构cpu规格为1U1G,2U4G
 
@@ -294,7 +294,7 @@ class InstancesVO:
 
     @property
     def created_time(self):
-        """Gets the created_time of this InstancesVO.
+        r"""Gets the created_time of this InstancesVO.
 
         创建时间
 
@@ -305,7 +305,7 @@ class InstancesVO:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this InstancesVO.
+        r"""Sets the created_time of this InstancesVO.
 
         创建时间
 
@@ -316,7 +316,7 @@ class InstancesVO:
 
     @property
     def description(self):
-        """Gets the description of this InstancesVO.
+        r"""Gets the description of this InstancesVO.
 
         描述
 
@@ -327,7 +327,7 @@ class InstancesVO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this InstancesVO.
+        r"""Sets the description of this InstancesVO.
 
         描述
 
@@ -338,7 +338,7 @@ class InstancesVO:
 
     @property
     def display_name(self):
-        """Gets the display_name of this InstancesVO.
+        r"""Gets the display_name of this InstancesVO.
 
         实例名。 可以输入中文、数字、字母、下划线、点、破折号。长度介于3-100之间
 
@@ -349,7 +349,7 @@ class InstancesVO:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this InstancesVO.
+        r"""Sets the display_name of this InstancesVO.
 
         实例名。 可以输入中文、数字、字母、下划线、点、破折号。长度介于3-100之间
 
@@ -360,7 +360,7 @@ class InstancesVO:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this InstancesVO.
+        r"""Gets the domain_name of this InstancesVO.
 
         租户名
 
@@ -371,7 +371,7 @@ class InstancesVO:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this InstancesVO.
+        r"""Sets the domain_name of this InstancesVO.
 
         租户名
 
@@ -382,7 +382,7 @@ class InstancesVO:
 
     @property
     def id(self):
-        """Gets the id of this InstancesVO.
+        r"""Gets the id of this InstancesVO.
 
         id
 
@@ -393,7 +393,7 @@ class InstancesVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this InstancesVO.
+        r"""Sets the id of this InstancesVO.
 
         id
 
@@ -404,7 +404,7 @@ class InstancesVO:
 
     @property
     def is_temporary(self):
-        """Gets the is_temporary of this InstancesVO.
+        r"""Gets the is_temporary of this InstancesVO.
 
         是否页面显示（以标签配置为准）
 
@@ -415,7 +415,7 @@ class InstancesVO:
 
     @is_temporary.setter
     def is_temporary(self, is_temporary):
-        """Sets the is_temporary of this InstancesVO.
+        r"""Sets the is_temporary of this InstancesVO.
 
         是否页面显示（以标签配置为准）
 
@@ -426,7 +426,7 @@ class InstancesVO:
 
     @property
     def label(self):
-        """Gets the label of this InstancesVO.
+        r"""Gets the label of this InstancesVO.
 
         标签
 
@@ -437,7 +437,7 @@ class InstancesVO:
 
     @label.setter
     def label(self, label):
-        """Sets the label of this InstancesVO.
+        r"""Sets the label of this InstancesVO.
 
         标签
 
@@ -448,7 +448,7 @@ class InstancesVO:
 
     @property
     def link(self):
-        """Gets the link of this InstancesVO.
+        r"""Gets the link of this InstancesVO.
 
         链接
 
@@ -459,7 +459,7 @@ class InstancesVO:
 
     @link.setter
     def link(self, link):
-        """Sets the link of this InstancesVO.
+        r"""Sets the link of this InstancesVO.
 
         链接
 
@@ -470,7 +470,7 @@ class InstancesVO:
 
     @property
     def name(self):
-        """Gets the name of this InstancesVO.
+        r"""Gets the name of this InstancesVO.
 
         名称
 
@@ -481,7 +481,7 @@ class InstancesVO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this InstancesVO.
+        r"""Sets the name of this InstancesVO.
 
         名称
 
@@ -492,7 +492,7 @@ class InstancesVO:
 
     @property
     def organization_id(self):
-        """Gets the organization_id of this InstancesVO.
+        r"""Gets the organization_id of this InstancesVO.
 
         租户id（对应华为云帐号的domainId）
 
@@ -503,7 +503,7 @@ class InstancesVO:
 
     @organization_id.setter
     def organization_id(self, organization_id):
-        """Sets the organization_id of this InstancesVO.
+        r"""Sets the organization_id of this InstancesVO.
 
         租户id（对应华为云帐号的domainId）
 
@@ -514,7 +514,7 @@ class InstancesVO:
 
     @property
     def owner_id(self):
-        """Gets the owner_id of this InstancesVO.
+        r"""Gets the owner_id of this InstancesVO.
 
         用户id
 
@@ -525,7 +525,7 @@ class InstancesVO:
 
     @owner_id.setter
     def owner_id(self, owner_id):
-        """Sets the owner_id of this InstancesVO.
+        r"""Sets the owner_id of this InstancesVO.
 
         用户id
 
@@ -536,7 +536,7 @@ class InstancesVO:
 
     @property
     def owner_name(self):
-        """Gets the owner_name of this InstancesVO.
+        r"""Gets the owner_name of this InstancesVO.
 
         用户名
 
@@ -547,7 +547,7 @@ class InstancesVO:
 
     @owner_name.setter
     def owner_name(self, owner_name):
-        """Sets the owner_name of this InstancesVO.
+        r"""Sets the owner_name of this InstancesVO.
 
         用户名
 
@@ -558,7 +558,7 @@ class InstancesVO:
 
     @property
     def platform_id(self):
-        """Gets the platform_id of this InstancesVO.
+        r"""Gets the platform_id of this InstancesVO.
 
         平台ID
 
@@ -569,7 +569,7 @@ class InstancesVO:
 
     @platform_id.setter
     def platform_id(self, platform_id):
-        """Sets the platform_id of this InstancesVO.
+        r"""Sets the platform_id of this InstancesVO.
 
         平台ID
 
@@ -580,7 +580,7 @@ class InstancesVO:
 
     @property
     def private(self):
-        """Gets the private of this InstancesVO.
+        r"""Gets the private of this InstancesVO.
 
         是否私有平台
 
@@ -591,7 +591,7 @@ class InstancesVO:
 
     @private.setter
     def private(self, private):
-        """Sets the private of this InstancesVO.
+        r"""Sets the private of this InstancesVO.
 
         是否私有平台
 
@@ -602,7 +602,7 @@ class InstancesVO:
 
     @property
     def pvc_quantity(self):
-        """Gets the pvc_quantity of this InstancesVO.
+        r"""Gets the pvc_quantity of this InstancesVO.
 
         PVC规格 5GB|10GB|20GB
 
@@ -613,7 +613,7 @@ class InstancesVO:
 
     @pvc_quantity.setter
     def pvc_quantity(self, pvc_quantity):
-        """Sets the pvc_quantity of this InstancesVO.
+        r"""Sets the pvc_quantity of this InstancesVO.
 
         PVC规格 5GB|10GB|20GB
 
@@ -624,7 +624,7 @@ class InstancesVO:
 
     @property
     def refresh_interval(self):
-        """Gets the refresh_interval of this InstancesVO.
+        r"""Gets the refresh_interval of this InstancesVO.
 
         自动休眠时长。 arm架构,自动休眠时长只能设置成30，60。x86架构可取值为30，60，240，1440和-1。除-1外，其它值的单位为“分钟”。实例无操作超过自动休眠时长后，将会被暂停（已保存的数据不会被删除）。-1表示实例不会自动停止
 
@@ -635,7 +635,7 @@ class InstancesVO:
 
     @refresh_interval.setter
     def refresh_interval(self, refresh_interval):
-        """Sets the refresh_interval of this InstancesVO.
+        r"""Sets the refresh_interval of this InstancesVO.
 
         自动休眠时长。 arm架构,自动休眠时长只能设置成30，60。x86架构可取值为30，60，240，1440和-1。除-1外，其它值的单位为“分钟”。实例无操作超过自动休眠时长后，将会被暂停（已保存的数据不会被删除）。-1表示实例不会自动停止
 
@@ -646,7 +646,7 @@ class InstancesVO:
 
     @property
     def region(self):
-        """Gets the region of this InstancesVO.
+        r"""Gets the region of this InstancesVO.
 
         区域
 
@@ -657,7 +657,7 @@ class InstancesVO:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this InstancesVO.
+        r"""Sets the region of this InstancesVO.
 
         区域
 
@@ -668,7 +668,7 @@ class InstancesVO:
 
     @property
     def server_map(self):
-        """Gets the server_map of this InstancesVO.
+        r"""Gets the server_map of this InstancesVO.
 
         server
 
@@ -679,7 +679,7 @@ class InstancesVO:
 
     @server_map.setter
     def server_map(self, server_map):
-        """Sets the server_map of this InstancesVO.
+        r"""Sets the server_map of this InstancesVO.
 
         server
 
@@ -690,7 +690,7 @@ class InstancesVO:
 
     @property
     def server_url(self):
-        """Gets the server_url of this InstancesVO.
+        r"""Gets the server_url of this InstancesVO.
 
         服务链接
 
@@ -701,7 +701,7 @@ class InstancesVO:
 
     @server_url.setter
     def server_url(self, server_url):
-        """Sets the server_url of this InstancesVO.
+        r"""Sets the server_url of this InstancesVO.
 
         服务链接
 
@@ -712,7 +712,7 @@ class InstancesVO:
 
     @property
     def stack_id(self):
-        """Gets the stack_id of this InstancesVO.
+        r"""Gets the stack_id of this InstancesVO.
 
         技术栈ID，通过技术栈管理ListStacks接口获取。
 
@@ -723,7 +723,7 @@ class InstancesVO:
 
     @stack_id.setter
     def stack_id(self, stack_id):
-        """Sets the stack_id of this InstancesVO.
+        r"""Sets the stack_id of this InstancesVO.
 
         技术栈ID，通过技术栈管理ListStacks接口获取。
 
@@ -734,7 +734,7 @@ class InstancesVO:
 
     @property
     def status(self):
-        """Gets the status of this InstancesVO.
+        r"""Gets the status of this InstancesVO.
 
         实例状态 。 - INIT 初始化 - STARTING 启动中 - RUNNING 运行中 - STOPPING 停止中 - STOPPED 已停止 - DELETING 删除中 - DELETED 已删除 - DELETE_FAILED 删除失败
 
@@ -745,7 +745,7 @@ class InstancesVO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this InstancesVO.
+        r"""Sets the status of this InstancesVO.
 
         实例状态 。 - INIT 初始化 - STARTING 启动中 - RUNNING 运行中 - STOPPING 停止中 - STOPPED 已停止 - DELETING 删除中 - DELETED 已删除 - DELETE_FAILED 删除失败
 
@@ -756,7 +756,7 @@ class InstancesVO:
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this InstancesVO.
+        r"""Gets the updated_time of this InstancesVO.
 
         更新时间
 
@@ -767,7 +767,7 @@ class InstancesVO:
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this InstancesVO.
+        r"""Sets the updated_time of this InstancesVO.
 
         更新时间
 
@@ -778,7 +778,7 @@ class InstancesVO:
 
     @property
     def visitor_id(self):
-        """Gets the visitor_id of this InstancesVO.
+        r"""Gets the visitor_id of this InstancesVO.
 
         访问者id
 
@@ -789,7 +789,7 @@ class InstancesVO:
 
     @visitor_id.setter
     def visitor_id(self, visitor_id):
-        """Sets the visitor_id of this InstancesVO.
+        r"""Sets the visitor_id of this InstancesVO.
 
         访问者id
 
@@ -800,7 +800,7 @@ class InstancesVO:
 
     @property
     def visitor_name(self):
-        """Gets the visitor_name of this InstancesVO.
+        r"""Gets the visitor_name of this InstancesVO.
 
         访问者名称
 
@@ -811,7 +811,7 @@ class InstancesVO:
 
     @visitor_name.setter
     def visitor_name(self, visitor_name):
-        """Sets the visitor_name of this InstancesVO.
+        r"""Sets the visitor_name of this InstancesVO.
 
         访问者名称
 
@@ -822,7 +822,7 @@ class InstancesVO:
 
     @property
     def visitor_domain_name(self):
-        """Gets the visitor_domain_name of this InstancesVO.
+        r"""Gets the visitor_domain_name of this InstancesVO.
 
         访问者租户名称
 
@@ -833,7 +833,7 @@ class InstancesVO:
 
     @visitor_domain_name.setter
     def visitor_domain_name(self, visitor_domain_name):
-        """Sets the visitor_domain_name of this InstancesVO.
+        r"""Sets the visitor_domain_name of this InstancesVO.
 
         访问者租户名称
 

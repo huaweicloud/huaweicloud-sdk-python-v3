@@ -23,7 +23,7 @@ class AppSecret:
     }
 
     def __init__(self):
-        """AppSecret
+        r"""AppSecret
 
         The model defined in huaweicloud sdk
 

@@ -27,7 +27,7 @@ class DeleteApiByVersionIdV2Request:
     }
 
     def __init__(self, instance_id=None, version_id=None):
-        """DeleteApiByVersionIdV2Request
+        r"""DeleteApiByVersionIdV2Request
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteApiByVersionIdV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteApiByVersionIdV2Request.
+        r"""Gets the instance_id of this DeleteApiByVersionIdV2Request.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -59,7 +59,7 @@ class DeleteApiByVersionIdV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteApiByVersionIdV2Request.
+        r"""Sets the instance_id of this DeleteApiByVersionIdV2Request.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -70,7 +70,7 @@ class DeleteApiByVersionIdV2Request:
 
     @property
     def version_id(self):
-        """Gets the version_id of this DeleteApiByVersionIdV2Request.
+        r"""Gets the version_id of this DeleteApiByVersionIdV2Request.
 
         API版本的编号
 
@@ -81,7 +81,7 @@ class DeleteApiByVersionIdV2Request:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this DeleteApiByVersionIdV2Request.
+        r"""Sets the version_id of this DeleteApiByVersionIdV2Request.
 
         API版本的编号
 

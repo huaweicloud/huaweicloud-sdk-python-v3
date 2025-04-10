@@ -27,7 +27,7 @@ class CopyImageInRegionRequest:
     }
 
     def __init__(self, image_id=None, body=None):
-        """CopyImageInRegionRequest
+        r"""CopyImageInRegionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CopyImageInRegionRequest:
 
     @property
     def image_id(self):
-        """Gets the image_id of this CopyImageInRegionRequest.
+        r"""Gets the image_id of this CopyImageInRegionRequest.
 
         镜像ID
 
@@ -60,7 +60,7 @@ class CopyImageInRegionRequest:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this CopyImageInRegionRequest.
+        r"""Sets the image_id of this CopyImageInRegionRequest.
 
         镜像ID
 
@@ -71,7 +71,7 @@ class CopyImageInRegionRequest:
 
     @property
     def body(self):
-        """Gets the body of this CopyImageInRegionRequest.
+        r"""Gets the body of this CopyImageInRegionRequest.
 
         :return: The body of this CopyImageInRegionRequest.
         :rtype: :class:`huaweicloudsdkims.v2.CopyImageInRegionRequestBody`
@@ -80,7 +80,7 @@ class CopyImageInRegionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CopyImageInRegionRequest.
+        r"""Sets the body of this CopyImageInRegionRequest.
 
         :param body: The body of this CopyImageInRegionRequest.
         :type body: :class:`huaweicloudsdkims.v2.CopyImageInRegionRequestBody`

@@ -29,7 +29,7 @@ class ListProjectMembersV4Request:
     }
 
     def __init__(self, project_id=None, offset=None, limit=None):
-        """ListProjectMembersV4Request
+        r"""ListProjectMembersV4Request
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListProjectMembersV4Request:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListProjectMembersV4Request.
+        r"""Gets the project_id of this ListProjectMembersV4Request.
 
         devcloud项目的32位id
 
@@ -67,7 +67,7 @@ class ListProjectMembersV4Request:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListProjectMembersV4Request.
+        r"""Sets the project_id of this ListProjectMembersV4Request.
 
         devcloud项目的32位id
 
@@ -78,7 +78,7 @@ class ListProjectMembersV4Request:
 
     @property
     def offset(self):
-        """Gets the offset of this ListProjectMembersV4Request.
+        r"""Gets the offset of this ListProjectMembersV4Request.
 
         分页索引，偏移量,offset是limit的整数倍，limit=10,offset=0,10,20...
 
@@ -89,7 +89,7 @@ class ListProjectMembersV4Request:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListProjectMembersV4Request.
+        r"""Sets the offset of this ListProjectMembersV4Request.
 
         分页索引，偏移量,offset是limit的整数倍，limit=10,offset=0,10,20...
 
@@ -100,7 +100,7 @@ class ListProjectMembersV4Request:
 
     @property
     def limit(self):
-        """Gets the limit of this ListProjectMembersV4Request.
+        r"""Gets the limit of this ListProjectMembersV4Request.
 
         每页显示的数量,每页最多显示100条
 
@@ -111,7 +111,7 @@ class ListProjectMembersV4Request:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListProjectMembersV4Request.
+        r"""Sets the limit of this ListProjectMembersV4Request.
 
         每页显示的数量,每页最多显示100条
 

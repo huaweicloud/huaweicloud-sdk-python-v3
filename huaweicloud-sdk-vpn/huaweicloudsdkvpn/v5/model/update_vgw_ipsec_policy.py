@@ -31,7 +31,7 @@ class UpdateVgwIpsecPolicy:
     }
 
     def __init__(self, authentication_algorithm=None, encryption_algorithm=None, pfs=None, lifetime_seconds=None):
-        """UpdateVgwIpsecPolicy
+        r"""UpdateVgwIpsecPolicy
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class UpdateVgwIpsecPolicy:
 
     @property
     def authentication_algorithm(self):
-        """Gets the authentication_algorithm of this UpdateVgwIpsecPolicy.
+        r"""Gets the authentication_algorithm of this UpdateVgwIpsecPolicy.
 
         加密算法
 
@@ -75,7 +75,7 @@ class UpdateVgwIpsecPolicy:
 
     @authentication_algorithm.setter
     def authentication_algorithm(self, authentication_algorithm):
-        """Sets the authentication_algorithm of this UpdateVgwIpsecPolicy.
+        r"""Sets the authentication_algorithm of this UpdateVgwIpsecPolicy.
 
         加密算法
 
@@ -86,7 +86,7 @@ class UpdateVgwIpsecPolicy:
 
     @property
     def encryption_algorithm(self):
-        """Gets the encryption_algorithm of this UpdateVgwIpsecPolicy.
+        r"""Gets the encryption_algorithm of this UpdateVgwIpsecPolicy.
 
         加密算法
 
@@ -97,7 +97,7 @@ class UpdateVgwIpsecPolicy:
 
     @encryption_algorithm.setter
     def encryption_algorithm(self, encryption_algorithm):
-        """Sets the encryption_algorithm of this UpdateVgwIpsecPolicy.
+        r"""Sets the encryption_algorithm of this UpdateVgwIpsecPolicy.
 
         加密算法
 
@@ -108,7 +108,7 @@ class UpdateVgwIpsecPolicy:
 
     @property
     def pfs(self):
-        """Gets the pfs of this UpdateVgwIpsecPolicy.
+        r"""Gets the pfs of this UpdateVgwIpsecPolicy.
 
         PFS使用的DH密钥组
 
@@ -119,7 +119,7 @@ class UpdateVgwIpsecPolicy:
 
     @pfs.setter
     def pfs(self, pfs):
-        """Sets the pfs of this UpdateVgwIpsecPolicy.
+        r"""Sets the pfs of this UpdateVgwIpsecPolicy.
 
         PFS使用的DH密钥组
 
@@ -130,7 +130,7 @@ class UpdateVgwIpsecPolicy:
 
     @property
     def lifetime_seconds(self):
-        """Gets the lifetime_seconds of this UpdateVgwIpsecPolicy.
+        r"""Gets the lifetime_seconds of this UpdateVgwIpsecPolicy.
 
         表示配置IPSec连接建立的隧道以时间为基准的生存周期
 
@@ -141,7 +141,7 @@ class UpdateVgwIpsecPolicy:
 
     @lifetime_seconds.setter
     def lifetime_seconds(self, lifetime_seconds):
-        """Sets the lifetime_seconds of this UpdateVgwIpsecPolicy.
+        r"""Sets the lifetime_seconds of this UpdateVgwIpsecPolicy.
 
         表示配置IPSec连接建立的隧道以时间为基准的生存周期
 

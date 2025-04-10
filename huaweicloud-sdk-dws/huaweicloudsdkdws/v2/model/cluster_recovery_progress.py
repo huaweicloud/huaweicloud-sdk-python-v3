@@ -33,7 +33,7 @@ class ClusterRecoveryProgress:
     }
 
     def __init__(self, key=None, action_type=None, unrestore_keys=None, action_start_time=None, action_end_time=None):
-        """ClusterRecoveryProgress
+        r"""ClusterRecoveryProgress
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ClusterRecoveryProgress:
 
     @property
     def key(self):
-        """Gets the key of this ClusterRecoveryProgress.
+        r"""Gets the key of this ClusterRecoveryProgress.
 
         key
 
@@ -82,7 +82,7 @@ class ClusterRecoveryProgress:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ClusterRecoveryProgress.
+        r"""Sets the key of this ClusterRecoveryProgress.
 
         key
 
@@ -93,7 +93,7 @@ class ClusterRecoveryProgress:
 
     @property
     def action_type(self):
-        """Gets the action_type of this ClusterRecoveryProgress.
+        r"""Gets the action_type of this ClusterRecoveryProgress.
 
         action_type
 
@@ -104,7 +104,7 @@ class ClusterRecoveryProgress:
 
     @action_type.setter
     def action_type(self, action_type):
-        """Sets the action_type of this ClusterRecoveryProgress.
+        r"""Sets the action_type of this ClusterRecoveryProgress.
 
         action_type
 
@@ -115,7 +115,7 @@ class ClusterRecoveryProgress:
 
     @property
     def unrestore_keys(self):
-        """Gets the unrestore_keys of this ClusterRecoveryProgress.
+        r"""Gets the unrestore_keys of this ClusterRecoveryProgress.
 
         unrestore_keys
 
@@ -126,7 +126,7 @@ class ClusterRecoveryProgress:
 
     @unrestore_keys.setter
     def unrestore_keys(self, unrestore_keys):
-        """Sets the unrestore_keys of this ClusterRecoveryProgress.
+        r"""Sets the unrestore_keys of this ClusterRecoveryProgress.
 
         unrestore_keys
 
@@ -137,7 +137,7 @@ class ClusterRecoveryProgress:
 
     @property
     def action_start_time(self):
-        """Gets the action_start_time of this ClusterRecoveryProgress.
+        r"""Gets the action_start_time of this ClusterRecoveryProgress.
 
         action_start_time
 
@@ -148,7 +148,7 @@ class ClusterRecoveryProgress:
 
     @action_start_time.setter
     def action_start_time(self, action_start_time):
-        """Sets the action_start_time of this ClusterRecoveryProgress.
+        r"""Sets the action_start_time of this ClusterRecoveryProgress.
 
         action_start_time
 
@@ -159,7 +159,7 @@ class ClusterRecoveryProgress:
 
     @property
     def action_end_time(self):
-        """Gets the action_end_time of this ClusterRecoveryProgress.
+        r"""Gets the action_end_time of this ClusterRecoveryProgress.
 
         action_end_time
 
@@ -170,7 +170,7 @@ class ClusterRecoveryProgress:
 
     @action_end_time.setter
     def action_end_time(self, action_end_time):
-        """Sets the action_end_time of this ClusterRecoveryProgress.
+        r"""Sets the action_end_time of this ClusterRecoveryProgress.
 
         action_end_time
 

@@ -29,7 +29,7 @@ class DeleteAppInstanceRequest:
     }
 
     def __init__(self, cluster_id=None, app_instance_id=None, namespace=None):
-        """DeleteAppInstanceRequest
+        r"""DeleteAppInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteAppInstanceRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this DeleteAppInstanceRequest.
+        r"""Gets the cluster_id of this DeleteAppInstanceRequest.
 
         边缘集群ID
 
@@ -66,7 +66,7 @@ class DeleteAppInstanceRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this DeleteAppInstanceRequest.
+        r"""Sets the cluster_id of this DeleteAppInstanceRequest.
 
         边缘集群ID
 
@@ -77,7 +77,7 @@ class DeleteAppInstanceRequest:
 
     @property
     def app_instance_id(self):
-        """Gets the app_instance_id of this DeleteAppInstanceRequest.
+        r"""Gets the app_instance_id of this DeleteAppInstanceRequest.
 
         应用实例ID
 
@@ -88,7 +88,7 @@ class DeleteAppInstanceRequest:
 
     @app_instance_id.setter
     def app_instance_id(self, app_instance_id):
-        """Sets the app_instance_id of this DeleteAppInstanceRequest.
+        r"""Sets the app_instance_id of this DeleteAppInstanceRequest.
 
         应用实例ID
 
@@ -99,7 +99,7 @@ class DeleteAppInstanceRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this DeleteAppInstanceRequest.
+        r"""Gets the namespace of this DeleteAppInstanceRequest.
 
         命名空间
 
@@ -110,7 +110,7 @@ class DeleteAppInstanceRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this DeleteAppInstanceRequest.
+        r"""Sets the namespace of this DeleteAppInstanceRequest.
 
         命名空间
 

@@ -47,7 +47,7 @@ class CambodianIdCardRequestBody:
     }
 
     def __init__(self, image=None, url=None, return_portrait_image=None, return_portrait_location=None, return_idcard_type=None, detect_border_integrity=None, detect_blocking_within_border=None, detect_blur=None, detect_glare=None, return_adjusted_image=None, detect_tampering=None, detect_reproduce=None):
-        """CambodianIdCardRequestBody
+        r"""CambodianIdCardRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class CambodianIdCardRequestBody:
 
     @property
     def image(self):
-        """Gets the image of this CambodianIdCardRequestBody.
+        r"""Gets the image of this CambodianIdCardRequestBody.
 
         与url二选一。图像数据，base64编码。图片尺寸不小于15像素，最长边不超过8192像素，支持JPG/PNG/BMP/TIF格式。
 
@@ -131,7 +131,7 @@ class CambodianIdCardRequestBody:
 
     @image.setter
     def image(self, image):
-        """Sets the image of this CambodianIdCardRequestBody.
+        r"""Sets the image of this CambodianIdCardRequestBody.
 
         与url二选一。图像数据，base64编码。图片尺寸不小于15像素，最长边不超过8192像素，支持JPG/PNG/BMP/TIF格式。
 
@@ -142,7 +142,7 @@ class CambodianIdCardRequestBody:
 
     @property
     def url(self):
-        """Gets the url of this CambodianIdCardRequestBody.
+        r"""Gets the url of this CambodianIdCardRequestBody.
 
         与image二选一。  要求图片Base64编码后大小不超过10MB。 图片尺寸不小于15像素，最长边不超过8192像素，支持JPG/PNG/BMP/TIF格式。 图片的url路径，目前支持： - 公网http/https url - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，详情参见[配置OBS访问权限](https://support.huaweicloud.com/intl/zh-cn/api-ocr/ocr_03_0132.html)。 > 说明： - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 - url中不能存在中文字符，若存在，中文需要进行utf8编码。 
 
@@ -153,7 +153,7 @@ class CambodianIdCardRequestBody:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this CambodianIdCardRequestBody.
+        r"""Sets the url of this CambodianIdCardRequestBody.
 
         与image二选一。  要求图片Base64编码后大小不超过10MB。 图片尺寸不小于15像素，最长边不超过8192像素，支持JPG/PNG/BMP/TIF格式。 图片的url路径，目前支持： - 公网http/https url - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，详情参见[配置OBS访问权限](https://support.huaweicloud.com/intl/zh-cn/api-ocr/ocr_03_0132.html)。 > 说明： - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 - url中不能存在中文字符，若存在，中文需要进行utf8编码。 
 
@@ -164,7 +164,7 @@ class CambodianIdCardRequestBody:
 
     @property
     def return_portrait_image(self):
-        """Gets the return_portrait_image of this CambodianIdCardRequestBody.
+        r"""Gets the return_portrait_image of this CambodianIdCardRequestBody.
 
         是否返回头像内容开关，可选值如下所示： - true: 返回身份证头像照片的 base64 编码 - false: 不返回身份证头像照片的 base64 编码 未传入该参数时默认为“false”，即不返回身份证头像照片的 base64 编码。 
 
@@ -175,7 +175,7 @@ class CambodianIdCardRequestBody:
 
     @return_portrait_image.setter
     def return_portrait_image(self, return_portrait_image):
-        """Sets the return_portrait_image of this CambodianIdCardRequestBody.
+        r"""Sets the return_portrait_image of this CambodianIdCardRequestBody.
 
         是否返回头像内容开关，可选值如下所示： - true: 返回身份证头像照片的 base64 编码 - false: 不返回身份证头像照片的 base64 编码 未传入该参数时默认为“false”，即不返回身份证头像照片的 base64 编码。 
 
@@ -186,7 +186,7 @@ class CambodianIdCardRequestBody:
 
     @property
     def return_portrait_location(self):
-        """Gets the return_portrait_location of this CambodianIdCardRequestBody.
+        r"""Gets the return_portrait_location of this CambodianIdCardRequestBody.
 
         是否返回头像坐标的开关，可选值如下所示： - true: 返回身份证头像的位置坐标 - false: 不返回身份证头像的位置坐标 未传入该参数时默认为“false”，即不返回身份证的头像坐标。 
 
@@ -197,7 +197,7 @@ class CambodianIdCardRequestBody:
 
     @return_portrait_location.setter
     def return_portrait_location(self, return_portrait_location):
-        """Sets the return_portrait_location of this CambodianIdCardRequestBody.
+        r"""Sets the return_portrait_location of this CambodianIdCardRequestBody.
 
         是否返回头像坐标的开关，可选值如下所示： - true: 返回身份证头像的位置坐标 - false: 不返回身份证头像的位置坐标 未传入该参数时默认为“false”，即不返回身份证的头像坐标。 
 
@@ -208,7 +208,7 @@ class CambodianIdCardRequestBody:
 
     @property
     def return_idcard_type(self):
-        """Gets the return_idcard_type of this CambodianIdCardRequestBody.
+        r"""Gets the return_idcard_type of this CambodianIdCardRequestBody.
 
         是否返回身份证类型的开关，可选值如下所示： - true:返回身份证的类型，类型包括身份证原件以及身份证复印件 - false：不返回身份证的类型 
 
@@ -219,7 +219,7 @@ class CambodianIdCardRequestBody:
 
     @return_idcard_type.setter
     def return_idcard_type(self, return_idcard_type):
-        """Sets the return_idcard_type of this CambodianIdCardRequestBody.
+        r"""Sets the return_idcard_type of this CambodianIdCardRequestBody.
 
         是否返回身份证类型的开关，可选值如下所示： - true:返回身份证的类型，类型包括身份证原件以及身份证复印件 - false：不返回身份证的类型 
 
@@ -230,7 +230,7 @@ class CambodianIdCardRequestBody:
 
     @property
     def detect_border_integrity(self):
-        """Gets the detect_border_integrity of this CambodianIdCardRequestBody.
+        r"""Gets the detect_border_integrity of this CambodianIdCardRequestBody.
 
         返回身份证边框完整性的告警结果的开关，可选值如下所示 - true：打开身份证图像边框完整性告警功能  - false：关闭身份证图像边框完整性告警功能 
 
@@ -241,7 +241,7 @@ class CambodianIdCardRequestBody:
 
     @detect_border_integrity.setter
     def detect_border_integrity(self, detect_border_integrity):
-        """Sets the detect_border_integrity of this CambodianIdCardRequestBody.
+        r"""Sets the detect_border_integrity of this CambodianIdCardRequestBody.
 
         返回身份证边框完整性的告警结果的开关，可选值如下所示 - true：打开身份证图像边框完整性告警功能  - false：关闭身份证图像边框完整性告警功能 
 
@@ -252,7 +252,7 @@ class CambodianIdCardRequestBody:
 
     @property
     def detect_blocking_within_border(self):
-        """Gets the detect_blocking_within_border of this CambodianIdCardRequestBody.
+        r"""Gets the detect_blocking_within_border of this CambodianIdCardRequestBody.
 
         返回身份证内部是否有被遮挡的告警结果的开关，可选值如下所示 - true：打开身份证内部是否有被遮挡的告警功能  - false：关闭身份证内部是否有被遮挡的告警功能 
 
@@ -263,7 +263,7 @@ class CambodianIdCardRequestBody:
 
     @detect_blocking_within_border.setter
     def detect_blocking_within_border(self, detect_blocking_within_border):
-        """Sets the detect_blocking_within_border of this CambodianIdCardRequestBody.
+        r"""Sets the detect_blocking_within_border of this CambodianIdCardRequestBody.
 
         返回身份证内部是否有被遮挡的告警结果的开关，可选值如下所示 - true：打开身份证内部是否有被遮挡的告警功能  - false：关闭身份证内部是否有被遮挡的告警功能 
 
@@ -274,7 +274,7 @@ class CambodianIdCardRequestBody:
 
     @property
     def detect_blur(self):
-        """Gets the detect_blur of this CambodianIdCardRequestBody.
+        r"""Gets the detect_blur of this CambodianIdCardRequestBody.
 
         返回身份证模糊告警结果的开关，可选值如下所示 - true:打开身份证是否模糊的告警功能 - false：关闭身份证是否模糊的告警功能 
 
@@ -285,7 +285,7 @@ class CambodianIdCardRequestBody:
 
     @detect_blur.setter
     def detect_blur(self, detect_blur):
-        """Sets the detect_blur of this CambodianIdCardRequestBody.
+        r"""Sets the detect_blur of this CambodianIdCardRequestBody.
 
         返回身份证模糊告警结果的开关，可选值如下所示 - true:打开身份证是否模糊的告警功能 - false：关闭身份证是否模糊的告警功能 
 
@@ -296,7 +296,7 @@ class CambodianIdCardRequestBody:
 
     @property
     def detect_glare(self):
-        """Gets the detect_glare of this CambodianIdCardRequestBody.
+        r"""Gets the detect_glare of this CambodianIdCardRequestBody.
 
         返回身份证是否反光的告警结果的开关，可选值如下所示 - true：打开身份证是否反光的告警功能  - false：关闭身份证是否反光的告警功能 
 
@@ -307,7 +307,7 @@ class CambodianIdCardRequestBody:
 
     @detect_glare.setter
     def detect_glare(self, detect_glare):
-        """Sets the detect_glare of this CambodianIdCardRequestBody.
+        r"""Sets the detect_glare of this CambodianIdCardRequestBody.
 
         返回身份证是否反光的告警结果的开关，可选值如下所示 - true：打开身份证是否反光的告警功能  - false：关闭身份证是否反光的告警功能 
 
@@ -318,7 +318,7 @@ class CambodianIdCardRequestBody:
 
     @property
     def return_adjusted_image(self):
-        """Gets the return_adjusted_image of this CambodianIdCardRequestBody.
+        r"""Gets the return_adjusted_image of this CambodianIdCardRequestBody.
 
         返回身份证四点原图的base64编码 - true: 返回身份证原图的base64编码  - false：不返回身份证原图的base64编码 
 
@@ -329,7 +329,7 @@ class CambodianIdCardRequestBody:
 
     @return_adjusted_image.setter
     def return_adjusted_image(self, return_adjusted_image):
-        """Sets the return_adjusted_image of this CambodianIdCardRequestBody.
+        r"""Sets the return_adjusted_image of this CambodianIdCardRequestBody.
 
         返回身份证四点原图的base64编码 - true: 返回身份证原图的base64编码  - false：不返回身份证原图的base64编码 
 
@@ -340,7 +340,7 @@ class CambodianIdCardRequestBody:
 
     @property
     def detect_tampering(self):
-        """Gets the detect_tampering of this CambodianIdCardRequestBody.
+        r"""Gets the detect_tampering of this CambodianIdCardRequestBody.
 
         返回身份证人像是否被篡改的告警结果的开关，可选值如下所示 - true:  打开身份证人像是否被篡改的告警功能  - false：关闭身份证人像被篡改的告警功能 不支持精细化的P图 
 
@@ -351,7 +351,7 @@ class CambodianIdCardRequestBody:
 
     @detect_tampering.setter
     def detect_tampering(self, detect_tampering):
-        """Sets the detect_tampering of this CambodianIdCardRequestBody.
+        r"""Sets the detect_tampering of this CambodianIdCardRequestBody.
 
         返回身份证人像是否被篡改的告警结果的开关，可选值如下所示 - true:  打开身份证人像是否被篡改的告警功能  - false：关闭身份证人像被篡改的告警功能 不支持精细化的P图 
 
@@ -362,7 +362,7 @@ class CambodianIdCardRequestBody:
 
     @property
     def detect_reproduce(self):
-        """Gets the detect_reproduce of this CambodianIdCardRequestBody.
+        r"""Gets the detect_reproduce of this CambodianIdCardRequestBody.
 
         返回判断身份证图像是否经过翻拍告警的开关，可选值如下所示 - true:打开判断身份证图像是否经过翻拍告警的功能  - false:关闭判断身份证图像是否经过翻拍告警的功能 
 
@@ -373,7 +373,7 @@ class CambodianIdCardRequestBody:
 
     @detect_reproduce.setter
     def detect_reproduce(self, detect_reproduce):
-        """Sets the detect_reproduce of this CambodianIdCardRequestBody.
+        r"""Sets the detect_reproduce of this CambodianIdCardRequestBody.
 
         返回判断身份证图像是否经过翻拍告警的开关，可选值如下所示 - true:打开判断身份证图像是否经过翻拍告警的功能  - false:关闭判断身份证图像是否经过翻拍告警的功能 
 

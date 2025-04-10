@@ -27,7 +27,7 @@ class UploadProcessJson:
     }
 
     def __init__(self, details=None, process_status=None):
-        """UploadProcessJson
+        r"""UploadProcessJson
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UploadProcessJson:
 
     @property
     def details(self):
-        """Gets the details of this UploadProcessJson.
+        r"""Gets the details of this UploadProcessJson.
 
         工程导入进度明细信息
 
@@ -61,7 +61,7 @@ class UploadProcessJson:
 
     @details.setter
     def details(self, details):
-        """Sets the details of this UploadProcessJson.
+        r"""Sets the details of this UploadProcessJson.
 
         工程导入进度明细信息
 
@@ -72,7 +72,7 @@ class UploadProcessJson:
 
     @property
     def process_status(self):
-        """Gets the process_status of this UploadProcessJson.
+        r"""Gets the process_status of this UploadProcessJson.
 
         总状态（0：导入中；1：导入完成）
 
@@ -83,7 +83,7 @@ class UploadProcessJson:
 
     @process_status.setter
     def process_status(self, process_status):
-        """Sets the process_status of this UploadProcessJson.
+        r"""Sets the process_status of this UploadProcessJson.
 
         总状态（0：导入中；1：导入完成）
 

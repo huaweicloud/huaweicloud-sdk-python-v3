@@ -25,7 +25,7 @@ class BatchSubscriptionsFilterPolicesRequestBody:
     }
 
     def __init__(self, polices=None):
-        """BatchSubscriptionsFilterPolicesRequestBody
+        r"""BatchSubscriptionsFilterPolicesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchSubscriptionsFilterPolicesRequestBody:
 
     @property
     def polices(self):
-        """Gets the polices of this BatchSubscriptionsFilterPolicesRequestBody.
+        r"""Gets the polices of this BatchSubscriptionsFilterPolicesRequestBody.
 
         批量处理订阅者策略列表。
 
@@ -53,7 +53,7 @@ class BatchSubscriptionsFilterPolicesRequestBody:
 
     @polices.setter
     def polices(self, polices):
-        """Sets the polices of this BatchSubscriptionsFilterPolicesRequestBody.
+        r"""Sets the polices of this BatchSubscriptionsFilterPolicesRequestBody.
 
         批量处理订阅者策略列表。
 

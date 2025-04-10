@@ -27,7 +27,7 @@ class CreateDataReq:
     }
 
     def __init__(self, name=None, parent_folder=None):
-        """CreateDataReq
+        r"""CreateDataReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateDataReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateDataReq.
+        r"""Gets the name of this CreateDataReq.
 
         文件夹名称
 
@@ -60,7 +60,7 @@ class CreateDataReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateDataReq.
+        r"""Sets the name of this CreateDataReq.
 
         文件夹名称
 
@@ -71,7 +71,7 @@ class CreateDataReq:
 
     @property
     def parent_folder(self):
-        """Gets the parent_folder of this CreateDataReq.
+        r"""Gets the parent_folder of this CreateDataReq.
 
         所在文件夹
 
@@ -82,7 +82,7 @@ class CreateDataReq:
 
     @parent_folder.setter
     def parent_folder(self, parent_folder):
-        """Sets the parent_folder of this CreateDataReq.
+        r"""Sets the parent_folder of this CreateDataReq.
 
         所在文件夹
 

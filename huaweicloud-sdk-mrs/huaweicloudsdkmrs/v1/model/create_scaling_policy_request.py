@@ -27,7 +27,7 @@ class CreateScalingPolicyRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """CreateScalingPolicyRequest
+        r"""CreateScalingPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateScalingPolicyRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CreateScalingPolicyRequest.
+        r"""Gets the cluster_id of this CreateScalingPolicyRequest.
 
         集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
 
@@ -60,7 +60,7 @@ class CreateScalingPolicyRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CreateScalingPolicyRequest.
+        r"""Sets the cluster_id of this CreateScalingPolicyRequest.
 
         集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
 
@@ -71,7 +71,7 @@ class CreateScalingPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateScalingPolicyRequest.
+        r"""Gets the body of this CreateScalingPolicyRequest.
 
         :return: The body of this CreateScalingPolicyRequest.
         :rtype: :class:`huaweicloudsdkmrs.v1.AutoScalingPolicyReqV11`
@@ -80,7 +80,7 @@ class CreateScalingPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateScalingPolicyRequest.
+        r"""Sets the body of this CreateScalingPolicyRequest.
 
         :param body: The body of this CreateScalingPolicyRequest.
         :type body: :class:`huaweicloudsdkmrs.v1.AutoScalingPolicyReqV11`

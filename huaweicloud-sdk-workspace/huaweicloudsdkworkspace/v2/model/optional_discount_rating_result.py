@@ -67,7 +67,7 @@ class OptionalDiscountRatingResult:
     }
 
     def __init__(self, discount_id=None, amount=None, official_website_amount=None, original_amount=None, official_website_discount_amount=None, optional_discount_amount=None, discount_amount=None, per_amount=None, per_discount_amount=None, per_original_amount=None, per_official_website_amount=None, per_official_website_discount_amount=None, per_optional_discount_amount=None, per_period_type=None, measure_id=None, discount_type=None, discount_name=None, best_offer=None, same_ratio_flag=None, discount_ratio=None, promotion_info=None, product_rating_results=None):
-        """OptionalDiscountRatingResult
+        r"""OptionalDiscountRatingResult
 
         The model defined in huaweicloud sdk
 
@@ -190,7 +190,7 @@ class OptionalDiscountRatingResult:
 
     @property
     def discount_id(self):
-        """Gets the discount_id of this OptionalDiscountRatingResult.
+        r"""Gets the discount_id of this OptionalDiscountRatingResult.
 
         折扣优惠Id
 
@@ -201,7 +201,7 @@ class OptionalDiscountRatingResult:
 
     @discount_id.setter
     def discount_id(self, discount_id):
-        """Sets the discount_id of this OptionalDiscountRatingResult.
+        r"""Sets the discount_id of this OptionalDiscountRatingResult.
 
         折扣优惠Id
 
@@ -212,7 +212,7 @@ class OptionalDiscountRatingResult:
 
     @property
     def amount(self):
-        """Gets the amount of this OptionalDiscountRatingResult.
+        r"""Gets the amount of this OptionalDiscountRatingResult.
 
         订单总额，即最终优惠后的订单金额(预留实例只包含预付部分)
 
@@ -223,7 +223,7 @@ class OptionalDiscountRatingResult:
 
     @amount.setter
     def amount(self, amount):
-        """Sets the amount of this OptionalDiscountRatingResult.
+        r"""Sets the amount of this OptionalDiscountRatingResult.
 
         订单总额，即最终优惠后的订单金额(预留实例只包含预付部分)
 
@@ -234,7 +234,7 @@ class OptionalDiscountRatingResult:
 
     @property
     def official_website_amount(self):
-        """Gets the official_website_amount of this OptionalDiscountRatingResult.
+        r"""Gets the official_website_amount of this OptionalDiscountRatingResult.
 
         官网价(预留实例只包含预付部分)
 
@@ -245,7 +245,7 @@ class OptionalDiscountRatingResult:
 
     @official_website_amount.setter
     def official_website_amount(self, official_website_amount):
-        """Sets the official_website_amount of this OptionalDiscountRatingResult.
+        r"""Sets the official_website_amount of this OptionalDiscountRatingResult.
 
         官网价(预留实例只包含预付部分)
 
@@ -256,7 +256,7 @@ class OptionalDiscountRatingResult:
 
     @property
     def original_amount(self):
-        """Gets the original_amount of this OptionalDiscountRatingResult.
+        r"""Gets the original_amount of this OptionalDiscountRatingResult.
 
         订单原总额，即优惠前订单总额(预留实例只包含预付部分)
 
@@ -267,7 +267,7 @@ class OptionalDiscountRatingResult:
 
     @original_amount.setter
     def original_amount(self, original_amount):
-        """Sets the original_amount of this OptionalDiscountRatingResult.
+        r"""Sets the original_amount of this OptionalDiscountRatingResult.
 
         订单原总额，即优惠前订单总额(预留实例只包含预付部分)
 
@@ -278,7 +278,7 @@ class OptionalDiscountRatingResult:
 
     @property
     def official_website_discount_amount(self):
-        """Gets the official_website_discount_amount of this OptionalDiscountRatingResult.
+        r"""Gets the official_website_discount_amount of this OptionalDiscountRatingResult.
 
         官网价优惠额(预留实例只包含预付部分)
 
@@ -289,7 +289,7 @@ class OptionalDiscountRatingResult:
 
     @official_website_discount_amount.setter
     def official_website_discount_amount(self, official_website_discount_amount):
-        """Sets the official_website_discount_amount of this OptionalDiscountRatingResult.
+        r"""Sets the official_website_discount_amount of this OptionalDiscountRatingResult.
 
         官网价优惠额(预留实例只包含预付部分)
 
@@ -300,7 +300,7 @@ class OptionalDiscountRatingResult:
 
     @property
     def optional_discount_amount(self):
-        """Gets the optional_discount_amount of this OptionalDiscountRatingResult.
+        r"""Gets the optional_discount_amount of this OptionalDiscountRatingResult.
 
         可选折扣优惠额(预留实例只包含预付部分)
 
@@ -311,7 +311,7 @@ class OptionalDiscountRatingResult:
 
     @optional_discount_amount.setter
     def optional_discount_amount(self, optional_discount_amount):
-        """Sets the optional_discount_amount of this OptionalDiscountRatingResult.
+        r"""Sets the optional_discount_amount of this OptionalDiscountRatingResult.
 
         可选折扣优惠额(预留实例只包含预付部分)
 
@@ -322,7 +322,7 @@ class OptionalDiscountRatingResult:
 
     @property
     def discount_amount(self):
-        """Gets the discount_amount of this OptionalDiscountRatingResult.
+        r"""Gets the discount_amount of this OptionalDiscountRatingResult.
 
         总优惠额(预留实例只包含预付部分)
 
@@ -333,7 +333,7 @@ class OptionalDiscountRatingResult:
 
     @discount_amount.setter
     def discount_amount(self, discount_amount):
-        """Sets the discount_amount of this OptionalDiscountRatingResult.
+        r"""Sets the discount_amount of this OptionalDiscountRatingResult.
 
         总优惠额(预留实例只包含预付部分)
 
@@ -344,7 +344,7 @@ class OptionalDiscountRatingResult:
 
     @property
     def per_amount(self):
-        """Gets the per_amount of this OptionalDiscountRatingResult.
+        r"""Gets the per_amount of this OptionalDiscountRatingResult.
 
         总分期金额(批量询价的商品分期周期类型一致，才会有总分期金额，分期周期类型不一致，该信息没有)
 
@@ -355,7 +355,7 @@ class OptionalDiscountRatingResult:
 
     @per_amount.setter
     def per_amount(self, per_amount):
-        """Sets the per_amount of this OptionalDiscountRatingResult.
+        r"""Sets the per_amount of this OptionalDiscountRatingResult.
 
         总分期金额(批量询价的商品分期周期类型一致，才会有总分期金额，分期周期类型不一致，该信息没有)
 
@@ -366,7 +366,7 @@ class OptionalDiscountRatingResult:
 
     @property
     def per_discount_amount(self):
-        """Gets the per_discount_amount of this OptionalDiscountRatingResult.
+        r"""Gets the per_discount_amount of this OptionalDiscountRatingResult.
 
         总分期金额的优惠额(perDiscountAmount = perOriginalAmount - perAmount)
 
@@ -377,7 +377,7 @@ class OptionalDiscountRatingResult:
 
     @per_discount_amount.setter
     def per_discount_amount(self, per_discount_amount):
-        """Sets the per_discount_amount of this OptionalDiscountRatingResult.
+        r"""Sets the per_discount_amount of this OptionalDiscountRatingResult.
 
         总分期金额的优惠额(perDiscountAmount = perOriginalAmount - perAmount)
 
@@ -388,7 +388,7 @@ class OptionalDiscountRatingResult:
 
     @property
     def per_original_amount(self):
-        """Gets the per_original_amount of this OptionalDiscountRatingResult.
+        r"""Gets the per_original_amount of this OptionalDiscountRatingResult.
 
         总分期金额原价
 
@@ -399,7 +399,7 @@ class OptionalDiscountRatingResult:
 
     @per_original_amount.setter
     def per_original_amount(self, per_original_amount):
-        """Sets the per_original_amount of this OptionalDiscountRatingResult.
+        r"""Sets the per_original_amount of this OptionalDiscountRatingResult.
 
         总分期金额原价
 
@@ -410,7 +410,7 @@ class OptionalDiscountRatingResult:
 
     @property
     def per_official_website_amount(self):
-        """Gets the per_official_website_amount of this OptionalDiscountRatingResult.
+        r"""Gets the per_official_website_amount of this OptionalDiscountRatingResult.
 
         总分期金额的官网价(批量询价的商品分期周期类型一致，才会有总分期金额的官网价，分期周期类型不一致，该信息没有)
 
@@ -421,7 +421,7 @@ class OptionalDiscountRatingResult:
 
     @per_official_website_amount.setter
     def per_official_website_amount(self, per_official_website_amount):
-        """Sets the per_official_website_amount of this OptionalDiscountRatingResult.
+        r"""Sets the per_official_website_amount of this OptionalDiscountRatingResult.
 
         总分期金额的官网价(批量询价的商品分期周期类型一致，才会有总分期金额的官网价，分期周期类型不一致，该信息没有)
 
@@ -432,7 +432,7 @@ class OptionalDiscountRatingResult:
 
     @property
     def per_official_website_discount_amount(self):
-        """Gets the per_official_website_discount_amount of this OptionalDiscountRatingResult.
+        r"""Gets the per_official_website_discount_amount of this OptionalDiscountRatingResult.
 
         总分期金额的官网价官网价优惠额，即： perOfficialWebsiteDiscountAmount =perOriginalAmount-perOfficialWebsiteAmount (批量询价的商品分期周期类型一致，才会有总分期金额的官网价，分期周期类型不一致，该信息没有)
 
@@ -443,7 +443,7 @@ class OptionalDiscountRatingResult:
 
     @per_official_website_discount_amount.setter
     def per_official_website_discount_amount(self, per_official_website_discount_amount):
-        """Sets the per_official_website_discount_amount of this OptionalDiscountRatingResult.
+        r"""Sets the per_official_website_discount_amount of this OptionalDiscountRatingResult.
 
         总分期金额的官网价官网价优惠额，即： perOfficialWebsiteDiscountAmount =perOriginalAmount-perOfficialWebsiteAmount (批量询价的商品分期周期类型一致，才会有总分期金额的官网价，分期周期类型不一致，该信息没有)
 
@@ -454,7 +454,7 @@ class OptionalDiscountRatingResult:
 
     @property
     def per_optional_discount_amount(self):
-        """Gets the per_optional_discount_amount of this OptionalDiscountRatingResult.
+        r"""Gets the per_optional_discount_amount of this OptionalDiscountRatingResult.
 
         总分期金额的可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额 perOptionalDiscountAmount= perOfficialWebsiteAmount- perAmount (批量询价的商品分期周期类型一致，才会有总分期金额的官网价，分期周期类型不一致，该信息没有)
 
@@ -465,7 +465,7 @@ class OptionalDiscountRatingResult:
 
     @per_optional_discount_amount.setter
     def per_optional_discount_amount(self, per_optional_discount_amount):
-        """Sets the per_optional_discount_amount of this OptionalDiscountRatingResult.
+        r"""Sets the per_optional_discount_amount of this OptionalDiscountRatingResult.
 
         总分期金额的可选折扣优惠额，如商务折扣、伙伴折扣、促销折扣和折扣券选用时的优惠额 perOptionalDiscountAmount= perOfficialWebsiteAmount- perAmount (批量询价的商品分期周期类型一致，才会有总分期金额的官网价，分期周期类型不一致，该信息没有)
 
@@ -476,7 +476,7 @@ class OptionalDiscountRatingResult:
 
     @property
     def per_period_type(self):
-        """Gets the per_period_type of this OptionalDiscountRatingResult.
+        r"""Gets the per_period_type of this OptionalDiscountRatingResult.
 
         分期周期类型 2:月 4:小时
 
@@ -487,7 +487,7 @@ class OptionalDiscountRatingResult:
 
     @per_period_type.setter
     def per_period_type(self, per_period_type):
-        """Sets the per_period_type of this OptionalDiscountRatingResult.
+        r"""Sets the per_period_type of this OptionalDiscountRatingResult.
 
         分期周期类型 2:月 4:小时
 
@@ -498,7 +498,7 @@ class OptionalDiscountRatingResult:
 
     @property
     def measure_id(self):
-        """Gets the measure_id of this OptionalDiscountRatingResult.
+        r"""Gets the measure_id of this OptionalDiscountRatingResult.
 
         度量单位
 
@@ -509,7 +509,7 @@ class OptionalDiscountRatingResult:
 
     @measure_id.setter
     def measure_id(self, measure_id):
-        """Sets the measure_id of this OptionalDiscountRatingResult.
+        r"""Sets the measure_id of this OptionalDiscountRatingResult.
 
         度量单位
 
@@ -520,7 +520,7 @@ class OptionalDiscountRatingResult:
 
     @property
     def discount_type(self):
-        """Gets the discount_type of this OptionalDiscountRatingResult.
+        r"""Gets the discount_type of this OptionalDiscountRatingResult.
 
         折扣优惠类型
 
@@ -531,7 +531,7 @@ class OptionalDiscountRatingResult:
 
     @discount_type.setter
     def discount_type(self, discount_type):
-        """Sets the discount_type of this OptionalDiscountRatingResult.
+        r"""Sets the discount_type of this OptionalDiscountRatingResult.
 
         折扣优惠类型
 
@@ -542,7 +542,7 @@ class OptionalDiscountRatingResult:
 
     @property
     def discount_name(self):
-        """Gets the discount_name of this OptionalDiscountRatingResult.
+        r"""Gets the discount_name of this OptionalDiscountRatingResult.
 
         折扣名称
 
@@ -553,7 +553,7 @@ class OptionalDiscountRatingResult:
 
     @discount_name.setter
     def discount_name(self, discount_name):
-        """Sets the discount_name of this OptionalDiscountRatingResult.
+        r"""Sets the discount_name of this OptionalDiscountRatingResult.
 
         折扣名称
 
@@ -564,7 +564,7 @@ class OptionalDiscountRatingResult:
 
     @property
     def best_offer(self):
-        """Gets the best_offer of this OptionalDiscountRatingResult.
+        r"""Gets the best_offer of this OptionalDiscountRatingResult.
 
         是否为最优折扣0：不是最优折扣；为缺省值。1：是最优折扣；最优折扣：在商务折扣、伙伴折扣和促销折扣中选择（优惠金额相等则按此顺序排优先级），折扣券不参与最优折扣的计算
 
@@ -575,7 +575,7 @@ class OptionalDiscountRatingResult:
 
     @best_offer.setter
     def best_offer(self, best_offer):
-        """Sets the best_offer of this OptionalDiscountRatingResult.
+        r"""Sets the best_offer of this OptionalDiscountRatingResult.
 
         是否为最优折扣0：不是最优折扣；为缺省值。1：是最优折扣；最优折扣：在商务折扣、伙伴折扣和促销折扣中选择（优惠金额相等则按此顺序排优先级），折扣券不参与最优折扣的计算
 
@@ -586,7 +586,7 @@ class OptionalDiscountRatingResult:
 
     @property
     def same_ratio_flag(self):
-        """Gets the same_ratio_flag of this OptionalDiscountRatingResult.
+        r"""Gets the same_ratio_flag of this OptionalDiscountRatingResult.
 
         sameRatioFlag
 
@@ -597,7 +597,7 @@ class OptionalDiscountRatingResult:
 
     @same_ratio_flag.setter
     def same_ratio_flag(self, same_ratio_flag):
-        """Sets the same_ratio_flag of this OptionalDiscountRatingResult.
+        r"""Sets the same_ratio_flag of this OptionalDiscountRatingResult.
 
         sameRatioFlag
 
@@ -608,7 +608,7 @@ class OptionalDiscountRatingResult:
 
     @property
     def discount_ratio(self):
-        """Gets the discount_ratio of this OptionalDiscountRatingResult.
+        r"""Gets the discount_ratio of this OptionalDiscountRatingResult.
 
         sameRatioFlag为1时有值，表示该折扣的折扣率
 
@@ -619,7 +619,7 @@ class OptionalDiscountRatingResult:
 
     @discount_ratio.setter
     def discount_ratio(self, discount_ratio):
-        """Sets the discount_ratio of this OptionalDiscountRatingResult.
+        r"""Sets the discount_ratio of this OptionalDiscountRatingResult.
 
         sameRatioFlag为1时有值，表示该折扣的折扣率
 
@@ -630,7 +630,7 @@ class OptionalDiscountRatingResult:
 
     @property
     def promotion_info(self):
-        """Gets the promotion_info of this OptionalDiscountRatingResult.
+        r"""Gets the promotion_info of this OptionalDiscountRatingResult.
 
         折扣优惠基本信息；调用者在确定好折扣优惠后、下单时，使用此字段值，填入到订购/变更接口中的promotionInfo字段
 
@@ -641,7 +641,7 @@ class OptionalDiscountRatingResult:
 
     @promotion_info.setter
     def promotion_info(self, promotion_info):
-        """Sets the promotion_info of this OptionalDiscountRatingResult.
+        r"""Sets the promotion_info of this OptionalDiscountRatingResult.
 
         折扣优惠基本信息；调用者在确定好折扣优惠后、下单时，使用此字段值，填入到订购/变更接口中的promotionInfo字段
 
@@ -652,7 +652,7 @@ class OptionalDiscountRatingResult:
 
     @property
     def product_rating_results(self):
-        """Gets the product_rating_results of this OptionalDiscountRatingResult.
+        r"""Gets the product_rating_results of this OptionalDiscountRatingResult.
 
         产品询价结果
 
@@ -663,7 +663,7 @@ class OptionalDiscountRatingResult:
 
     @product_rating_results.setter
     def product_rating_results(self, product_rating_results):
-        """Sets the product_rating_results of this OptionalDiscountRatingResult.
+        r"""Sets the product_rating_results of this OptionalDiscountRatingResult.
 
         产品询价结果
 

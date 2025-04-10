@@ -29,7 +29,7 @@ class CountTenantResourcesRequest:
     }
 
     def __init__(self, business=None, resource_expire_start_time=None, resource_expire_end_time=None):
-        """CountTenantResourcesRequest
+        r"""CountTenantResourcesRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CountTenantResourcesRequest:
 
     @property
     def business(self):
-        """Gets the business of this CountTenantResourcesRequest.
+        r"""Gets the business of this CountTenantResourcesRequest.
 
         业务类型。可填多个用\",\"分隔 * VOICE_CLONE：声音制作 * SYNTHETICS_SOUND：声音合成 * ASSET_MANAGER：资产管理 * MODELING_2D：形象制作 * LIVE_2D：分身数字人视频直播 * VIDEO_2D：分身数字人视频制作 * CHAT_2D：分身数字人智能交互 * BUSINESS_CARD_2D：分身数字人名片 * PICTURE_2D：照片数字人视频 * MODELING_3D：3D照片建模 * VDS_3D：3D视觉驱动 * TTSA_3D：3D语音驱动 * FLEXUS_2D：FLEXUS版本资源
 
@@ -68,7 +68,7 @@ class CountTenantResourcesRequest:
 
     @business.setter
     def business(self, business):
-        """Sets the business of this CountTenantResourcesRequest.
+        r"""Sets the business of this CountTenantResourcesRequest.
 
         业务类型。可填多个用\",\"分隔 * VOICE_CLONE：声音制作 * SYNTHETICS_SOUND：声音合成 * ASSET_MANAGER：资产管理 * MODELING_2D：形象制作 * LIVE_2D：分身数字人视频直播 * VIDEO_2D：分身数字人视频制作 * CHAT_2D：分身数字人智能交互 * BUSINESS_CARD_2D：分身数字人名片 * PICTURE_2D：照片数字人视频 * MODELING_3D：3D照片建模 * VDS_3D：3D视觉驱动 * TTSA_3D：3D语音驱动 * FLEXUS_2D：FLEXUS版本资源
 
@@ -79,7 +79,7 @@ class CountTenantResourcesRequest:
 
     @property
     def resource_expire_start_time(self):
-        """Gets the resource_expire_start_time of this CountTenantResourcesRequest.
+        r"""Gets the resource_expire_start_time of this CountTenantResourcesRequest.
 
         资源过期时间段 开始时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"
 
@@ -90,7 +90,7 @@ class CountTenantResourcesRequest:
 
     @resource_expire_start_time.setter
     def resource_expire_start_time(self, resource_expire_start_time):
-        """Sets the resource_expire_start_time of this CountTenantResourcesRequest.
+        r"""Sets the resource_expire_start_time of this CountTenantResourcesRequest.
 
         资源过期时间段 开始时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"
 
@@ -101,7 +101,7 @@ class CountTenantResourcesRequest:
 
     @property
     def resource_expire_end_time(self):
-        """Gets the resource_expire_end_time of this CountTenantResourcesRequest.
+        r"""Gets the resource_expire_end_time of this CountTenantResourcesRequest.
 
         资源过期时间段 结束时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"
 
@@ -112,7 +112,7 @@ class CountTenantResourcesRequest:
 
     @resource_expire_end_time.setter
     def resource_expire_end_time(self, resource_expire_end_time):
-        """Sets the resource_expire_end_time of this CountTenantResourcesRequest.
+        r"""Sets the resource_expire_end_time of this CountTenantResourcesRequest.
 
         资源过期时间段 结束时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"
 

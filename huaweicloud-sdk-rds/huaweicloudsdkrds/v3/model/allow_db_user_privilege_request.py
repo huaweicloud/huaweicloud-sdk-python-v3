@@ -29,7 +29,7 @@ class AllowDbUserPrivilegeRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """AllowDbUserPrivilegeRequest
+        r"""AllowDbUserPrivilegeRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class AllowDbUserPrivilegeRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this AllowDbUserPrivilegeRequest.
+        r"""Gets the x_language of this AllowDbUserPrivilegeRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class AllowDbUserPrivilegeRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this AllowDbUserPrivilegeRequest.
+        r"""Sets the x_language of this AllowDbUserPrivilegeRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class AllowDbUserPrivilegeRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this AllowDbUserPrivilegeRequest.
+        r"""Gets the instance_id of this AllowDbUserPrivilegeRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class AllowDbUserPrivilegeRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this AllowDbUserPrivilegeRequest.
+        r"""Sets the instance_id of this AllowDbUserPrivilegeRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class AllowDbUserPrivilegeRequest:
 
     @property
     def body(self):
-        """Gets the body of this AllowDbUserPrivilegeRequest.
+        r"""Gets the body of this AllowDbUserPrivilegeRequest.
 
         :return: The body of this AllowDbUserPrivilegeRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.GrantRequest`
@@ -109,7 +109,7 @@ class AllowDbUserPrivilegeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AllowDbUserPrivilegeRequest.
+        r"""Sets the body of this AllowDbUserPrivilegeRequest.
 
         :param body: The body of this AllowDbUserPrivilegeRequest.
         :type body: :class:`huaweicloudsdkrds.v3.GrantRequest`

@@ -25,7 +25,7 @@ class RemoveExtendCidrOption:
     }
 
     def __init__(self, extend_cidrs=None):
-        """RemoveExtendCidrOption
+        r"""RemoveExtendCidrOption
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RemoveExtendCidrOption:
 
     @property
     def extend_cidrs(self):
-        """Gets the extend_cidrs of this RemoveExtendCidrOption.
+        r"""Gets the extend_cidrs of this RemoveExtendCidrOption.
 
         功能说明：移除VPC扩展网段 取值范围：该VPC已经存在的扩展网段 约束：移除扩展网段前，请先清理该VPC下对应cidr范围内的subnet；当前只支持一个一个移除
 
@@ -53,7 +53,7 @@ class RemoveExtendCidrOption:
 
     @extend_cidrs.setter
     def extend_cidrs(self, extend_cidrs):
-        """Sets the extend_cidrs of this RemoveExtendCidrOption.
+        r"""Sets the extend_cidrs of this RemoveExtendCidrOption.
 
         功能说明：移除VPC扩展网段 取值范围：该VPC已经存在的扩展网段 约束：移除扩展网段前，请先清理该VPC下对应cidr范围内的subnet；当前只支持一个一个移除
 

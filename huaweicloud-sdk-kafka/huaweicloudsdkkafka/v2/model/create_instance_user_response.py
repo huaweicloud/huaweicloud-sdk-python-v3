@@ -24,7 +24,7 @@ class CreateInstanceUserResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateInstanceUserResponse
+        r"""CreateInstanceUserResponse
 
         The model defined in huaweicloud sdk
 

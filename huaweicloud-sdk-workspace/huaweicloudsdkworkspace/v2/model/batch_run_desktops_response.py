@@ -32,7 +32,7 @@ class BatchRunDesktopsResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_msg=None, failed_operation_list=None, job_id=None):
-        """BatchRunDesktopsResponse
+        r"""BatchRunDesktopsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class BatchRunDesktopsResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this BatchRunDesktopsResponse.
+        r"""Gets the error_code of this BatchRunDesktopsResponse.
 
         错误码，失败时返回。
 
@@ -76,7 +76,7 @@ class BatchRunDesktopsResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this BatchRunDesktopsResponse.
+        r"""Sets the error_code of this BatchRunDesktopsResponse.
 
         错误码，失败时返回。
 
@@ -87,7 +87,7 @@ class BatchRunDesktopsResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this BatchRunDesktopsResponse.
+        r"""Gets the error_msg of this BatchRunDesktopsResponse.
 
         错误描述。
 
@@ -98,7 +98,7 @@ class BatchRunDesktopsResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this BatchRunDesktopsResponse.
+        r"""Sets the error_msg of this BatchRunDesktopsResponse.
 
         错误描述。
 
@@ -109,7 +109,7 @@ class BatchRunDesktopsResponse(SdkResponse):
 
     @property
     def failed_operation_list(self):
-        """Gets the failed_operation_list of this BatchRunDesktopsResponse.
+        r"""Gets the failed_operation_list of this BatchRunDesktopsResponse.
 
         操作失败桌面列表。
 
@@ -120,7 +120,7 @@ class BatchRunDesktopsResponse(SdkResponse):
 
     @failed_operation_list.setter
     def failed_operation_list(self, failed_operation_list):
-        """Sets the failed_operation_list of this BatchRunDesktopsResponse.
+        r"""Sets the failed_operation_list of this BatchRunDesktopsResponse.
 
         操作失败桌面列表。
 
@@ -131,7 +131,7 @@ class BatchRunDesktopsResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this BatchRunDesktopsResponse.
+        r"""Gets the job_id of this BatchRunDesktopsResponse.
 
         任务ID，冷迁移启动时返回。
 
@@ -142,7 +142,7 @@ class BatchRunDesktopsResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this BatchRunDesktopsResponse.
+        r"""Sets the job_id of this BatchRunDesktopsResponse.
 
         任务ID，冷迁移启动时返回。
 

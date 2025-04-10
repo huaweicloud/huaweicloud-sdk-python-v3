@@ -51,7 +51,7 @@ class CreateKeywordsAlarmRuleRequestBody:
     }
 
     def __init__(self, keywords_alarm_rule_name=None, keywords_alarm_rule_description=None, keywords_requests=None, frequency=None, keywords_alarm_level=None, keywords_alarm_send=None, domain_id=None, notification_save_rule=None, trigger_condition_count=None, trigger_condition_frequency=None, whether_recovery_policy=None, recovery_policy=None, notification_frequency=None, alarm_action_rule_name=None):
-        """CreateKeywordsAlarmRuleRequestBody
+        r"""CreateKeywordsAlarmRuleRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class CreateKeywordsAlarmRuleRequestBody:
 
     @property
     def keywords_alarm_rule_name(self):
-        """Gets the keywords_alarm_rule_name of this CreateKeywordsAlarmRuleRequestBody.
+        r"""Gets the keywords_alarm_rule_name of this CreateKeywordsAlarmRuleRequestBody.
 
         关键词告警名称  >不能以点和下划线开头或以点结尾。
 
@@ -138,7 +138,7 @@ class CreateKeywordsAlarmRuleRequestBody:
 
     @keywords_alarm_rule_name.setter
     def keywords_alarm_rule_name(self, keywords_alarm_rule_name):
-        """Sets the keywords_alarm_rule_name of this CreateKeywordsAlarmRuleRequestBody.
+        r"""Sets the keywords_alarm_rule_name of this CreateKeywordsAlarmRuleRequestBody.
 
         关键词告警名称  >不能以点和下划线开头或以点结尾。
 
@@ -149,7 +149,7 @@ class CreateKeywordsAlarmRuleRequestBody:
 
     @property
     def keywords_alarm_rule_description(self):
-        """Gets the keywords_alarm_rule_description of this CreateKeywordsAlarmRuleRequestBody.
+        r"""Gets the keywords_alarm_rule_description of this CreateKeywordsAlarmRuleRequestBody.
 
         关键词告警信息描述
 
@@ -160,7 +160,7 @@ class CreateKeywordsAlarmRuleRequestBody:
 
     @keywords_alarm_rule_description.setter
     def keywords_alarm_rule_description(self, keywords_alarm_rule_description):
-        """Sets the keywords_alarm_rule_description of this CreateKeywordsAlarmRuleRequestBody.
+        r"""Sets the keywords_alarm_rule_description of this CreateKeywordsAlarmRuleRequestBody.
 
         关键词告警信息描述
 
@@ -171,7 +171,7 @@ class CreateKeywordsAlarmRuleRequestBody:
 
     @property
     def keywords_requests(self):
-        """Gets the keywords_requests of this CreateKeywordsAlarmRuleRequestBody.
+        r"""Gets the keywords_requests of this CreateKeywordsAlarmRuleRequestBody.
 
         关键词详细信息
 
@@ -182,7 +182,7 @@ class CreateKeywordsAlarmRuleRequestBody:
 
     @keywords_requests.setter
     def keywords_requests(self, keywords_requests):
-        """Sets the keywords_requests of this CreateKeywordsAlarmRuleRequestBody.
+        r"""Sets the keywords_requests of this CreateKeywordsAlarmRuleRequestBody.
 
         关键词详细信息
 
@@ -193,7 +193,7 @@ class CreateKeywordsAlarmRuleRequestBody:
 
     @property
     def frequency(self):
-        """Gets the frequency of this CreateKeywordsAlarmRuleRequestBody.
+        r"""Gets the frequency of this CreateKeywordsAlarmRuleRequestBody.
 
         :return: The frequency of this CreateKeywordsAlarmRuleRequestBody.
         :rtype: :class:`huaweicloudsdklts.v2.Frequency`
@@ -202,7 +202,7 @@ class CreateKeywordsAlarmRuleRequestBody:
 
     @frequency.setter
     def frequency(self, frequency):
-        """Sets the frequency of this CreateKeywordsAlarmRuleRequestBody.
+        r"""Sets the frequency of this CreateKeywordsAlarmRuleRequestBody.
 
         :param frequency: The frequency of this CreateKeywordsAlarmRuleRequestBody.
         :type frequency: :class:`huaweicloudsdklts.v2.Frequency`
@@ -211,7 +211,7 @@ class CreateKeywordsAlarmRuleRequestBody:
 
     @property
     def keywords_alarm_level(self):
-        """Gets the keywords_alarm_level of this CreateKeywordsAlarmRuleRequestBody.
+        r"""Gets the keywords_alarm_level of this CreateKeywordsAlarmRuleRequestBody.
 
         告警级别
 
@@ -222,7 +222,7 @@ class CreateKeywordsAlarmRuleRequestBody:
 
     @keywords_alarm_level.setter
     def keywords_alarm_level(self, keywords_alarm_level):
-        """Sets the keywords_alarm_level of this CreateKeywordsAlarmRuleRequestBody.
+        r"""Sets the keywords_alarm_level of this CreateKeywordsAlarmRuleRequestBody.
 
         告警级别
 
@@ -233,7 +233,7 @@ class CreateKeywordsAlarmRuleRequestBody:
 
     @property
     def keywords_alarm_send(self):
-        """Gets the keywords_alarm_send of this CreateKeywordsAlarmRuleRequestBody.
+        r"""Gets the keywords_alarm_send of this CreateKeywordsAlarmRuleRequestBody.
 
         是否发送
 
@@ -244,7 +244,7 @@ class CreateKeywordsAlarmRuleRequestBody:
 
     @keywords_alarm_send.setter
     def keywords_alarm_send(self, keywords_alarm_send):
-        """Sets the keywords_alarm_send of this CreateKeywordsAlarmRuleRequestBody.
+        r"""Sets the keywords_alarm_send of this CreateKeywordsAlarmRuleRequestBody.
 
         是否发送
 
@@ -255,7 +255,7 @@ class CreateKeywordsAlarmRuleRequestBody:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this CreateKeywordsAlarmRuleRequestBody.
+        r"""Gets the domain_id of this CreateKeywordsAlarmRuleRequestBody.
 
         domainId
 
@@ -266,7 +266,7 @@ class CreateKeywordsAlarmRuleRequestBody:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this CreateKeywordsAlarmRuleRequestBody.
+        r"""Sets the domain_id of this CreateKeywordsAlarmRuleRequestBody.
 
         domainId
 
@@ -277,7 +277,7 @@ class CreateKeywordsAlarmRuleRequestBody:
 
     @property
     def notification_save_rule(self):
-        """Gets the notification_save_rule of this CreateKeywordsAlarmRuleRequestBody.
+        r"""Gets the notification_save_rule of this CreateKeywordsAlarmRuleRequestBody.
 
         :return: The notification_save_rule of this CreateKeywordsAlarmRuleRequestBody.
         :rtype: :class:`huaweicloudsdklts.v2.SqlNotificationSaveRule`
@@ -286,7 +286,7 @@ class CreateKeywordsAlarmRuleRequestBody:
 
     @notification_save_rule.setter
     def notification_save_rule(self, notification_save_rule):
-        """Sets the notification_save_rule of this CreateKeywordsAlarmRuleRequestBody.
+        r"""Sets the notification_save_rule of this CreateKeywordsAlarmRuleRequestBody.
 
         :param notification_save_rule: The notification_save_rule of this CreateKeywordsAlarmRuleRequestBody.
         :type notification_save_rule: :class:`huaweicloudsdklts.v2.SqlNotificationSaveRule`
@@ -295,7 +295,7 @@ class CreateKeywordsAlarmRuleRequestBody:
 
     @property
     def trigger_condition_count(self):
-        """Gets the trigger_condition_count of this CreateKeywordsAlarmRuleRequestBody.
+        r"""Gets the trigger_condition_count of this CreateKeywordsAlarmRuleRequestBody.
 
         触发条件：触发次数;默认为1
 
@@ -306,7 +306,7 @@ class CreateKeywordsAlarmRuleRequestBody:
 
     @trigger_condition_count.setter
     def trigger_condition_count(self, trigger_condition_count):
-        """Sets the trigger_condition_count of this CreateKeywordsAlarmRuleRequestBody.
+        r"""Sets the trigger_condition_count of this CreateKeywordsAlarmRuleRequestBody.
 
         触发条件：触发次数;默认为1
 
@@ -317,7 +317,7 @@ class CreateKeywordsAlarmRuleRequestBody:
 
     @property
     def trigger_condition_frequency(self):
-        """Gets the trigger_condition_frequency of this CreateKeywordsAlarmRuleRequestBody.
+        r"""Gets the trigger_condition_frequency of this CreateKeywordsAlarmRuleRequestBody.
 
         触发条件：触发周期;默认为1
 
@@ -328,7 +328,7 @@ class CreateKeywordsAlarmRuleRequestBody:
 
     @trigger_condition_frequency.setter
     def trigger_condition_frequency(self, trigger_condition_frequency):
-        """Sets the trigger_condition_frequency of this CreateKeywordsAlarmRuleRequestBody.
+        r"""Sets the trigger_condition_frequency of this CreateKeywordsAlarmRuleRequestBody.
 
         触发条件：触发周期;默认为1
 
@@ -339,7 +339,7 @@ class CreateKeywordsAlarmRuleRequestBody:
 
     @property
     def whether_recovery_policy(self):
-        """Gets the whether_recovery_policy of this CreateKeywordsAlarmRuleRequestBody.
+        r"""Gets the whether_recovery_policy of this CreateKeywordsAlarmRuleRequestBody.
 
         是否打开恢复通知;默认false
 
@@ -350,7 +350,7 @@ class CreateKeywordsAlarmRuleRequestBody:
 
     @whether_recovery_policy.setter
     def whether_recovery_policy(self, whether_recovery_policy):
-        """Sets the whether_recovery_policy of this CreateKeywordsAlarmRuleRequestBody.
+        r"""Sets the whether_recovery_policy of this CreateKeywordsAlarmRuleRequestBody.
 
         是否打开恢复通知;默认false
 
@@ -361,7 +361,7 @@ class CreateKeywordsAlarmRuleRequestBody:
 
     @property
     def recovery_policy(self):
-        """Gets the recovery_policy of this CreateKeywordsAlarmRuleRequestBody.
+        r"""Gets the recovery_policy of this CreateKeywordsAlarmRuleRequestBody.
 
         恢复策略周期;默认为3
 
@@ -372,7 +372,7 @@ class CreateKeywordsAlarmRuleRequestBody:
 
     @recovery_policy.setter
     def recovery_policy(self, recovery_policy):
-        """Sets the recovery_policy of this CreateKeywordsAlarmRuleRequestBody.
+        r"""Sets the recovery_policy of this CreateKeywordsAlarmRuleRequestBody.
 
         恢复策略周期;默认为3
 
@@ -383,7 +383,7 @@ class CreateKeywordsAlarmRuleRequestBody:
 
     @property
     def notification_frequency(self):
-        """Gets the notification_frequency of this CreateKeywordsAlarmRuleRequestBody.
+        r"""Gets the notification_frequency of this CreateKeywordsAlarmRuleRequestBody.
 
         通知频率,单位(分钟)
 
@@ -394,7 +394,7 @@ class CreateKeywordsAlarmRuleRequestBody:
 
     @notification_frequency.setter
     def notification_frequency(self, notification_frequency):
-        """Sets the notification_frequency of this CreateKeywordsAlarmRuleRequestBody.
+        r"""Sets the notification_frequency of this CreateKeywordsAlarmRuleRequestBody.
 
         通知频率,单位(分钟)
 
@@ -405,7 +405,7 @@ class CreateKeywordsAlarmRuleRequestBody:
 
     @property
     def alarm_action_rule_name(self):
-        """Gets the alarm_action_rule_name of this CreateKeywordsAlarmRuleRequestBody.
+        r"""Gets the alarm_action_rule_name of this CreateKeywordsAlarmRuleRequestBody.
 
         告警行动规则名称 >alarm_action_rule_name和notification_save_rule可以选填一个，如果都填，优先选择alarm_action_rule_name
 
@@ -416,7 +416,7 @@ class CreateKeywordsAlarmRuleRequestBody:
 
     @alarm_action_rule_name.setter
     def alarm_action_rule_name(self, alarm_action_rule_name):
-        """Sets the alarm_action_rule_name of this CreateKeywordsAlarmRuleRequestBody.
+        r"""Sets the alarm_action_rule_name of this CreateKeywordsAlarmRuleRequestBody.
 
         告警行动规则名称 >alarm_action_rule_name和notification_save_rule可以选填一个，如果都填，优先选择alarm_action_rule_name
 

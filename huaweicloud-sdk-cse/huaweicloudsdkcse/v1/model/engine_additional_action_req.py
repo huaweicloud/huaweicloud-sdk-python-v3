@@ -25,7 +25,7 @@ class EngineAdditionalActionReq:
     }
 
     def __init__(self, action=None):
-        """EngineAdditionalActionReq
+        r"""EngineAdditionalActionReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class EngineAdditionalActionReq:
 
     @property
     def action(self):
-        """Gets the action of this EngineAdditionalActionReq.
+        r"""Gets the action of this EngineAdditionalActionReq.
 
         操作类型
 
@@ -53,7 +53,7 @@ class EngineAdditionalActionReq:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this EngineAdditionalActionReq.
+        r"""Sets the action of this EngineAdditionalActionReq.
 
         操作类型
 

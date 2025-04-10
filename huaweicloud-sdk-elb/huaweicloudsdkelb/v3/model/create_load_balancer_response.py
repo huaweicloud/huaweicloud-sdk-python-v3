@@ -32,7 +32,7 @@ class CreateLoadBalancerResponse(SdkResponse):
     }
 
     def __init__(self, loadbalancer=None, loadbalancer_id=None, order_id=None, request_id=None):
-        """CreateLoadBalancerResponse
+        r"""CreateLoadBalancerResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class CreateLoadBalancerResponse(SdkResponse):
 
     @property
     def loadbalancer(self):
-        """Gets the loadbalancer of this CreateLoadBalancerResponse.
+        r"""Gets the loadbalancer of this CreateLoadBalancerResponse.
 
         :return: The loadbalancer of this CreateLoadBalancerResponse.
         :rtype: :class:`huaweicloudsdkelb.v3.LoadBalancer`
@@ -74,7 +74,7 @@ class CreateLoadBalancerResponse(SdkResponse):
 
     @loadbalancer.setter
     def loadbalancer(self, loadbalancer):
-        """Sets the loadbalancer of this CreateLoadBalancerResponse.
+        r"""Sets the loadbalancer of this CreateLoadBalancerResponse.
 
         :param loadbalancer: The loadbalancer of this CreateLoadBalancerResponse.
         :type loadbalancer: :class:`huaweicloudsdkelb.v3.LoadBalancer`
@@ -83,7 +83,7 @@ class CreateLoadBalancerResponse(SdkResponse):
 
     @property
     def loadbalancer_id(self):
-        """Gets the loadbalancer_id of this CreateLoadBalancerResponse.
+        r"""Gets the loadbalancer_id of this CreateLoadBalancerResponse.
 
         参数解释：负载均衡器的ID。[（包周期场景返回该字段）](tag:hws)  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
 
@@ -94,7 +94,7 @@ class CreateLoadBalancerResponse(SdkResponse):
 
     @loadbalancer_id.setter
     def loadbalancer_id(self, loadbalancer_id):
-        """Sets the loadbalancer_id of this CreateLoadBalancerResponse.
+        r"""Sets the loadbalancer_id of this CreateLoadBalancerResponse.
 
         参数解释：负载均衡器的ID。[（包周期场景返回该字段）](tag:hws)  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
 
@@ -105,7 +105,7 @@ class CreateLoadBalancerResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this CreateLoadBalancerResponse.
+        r"""Gets the order_id of this CreateLoadBalancerResponse.
 
         参数解释：订单号[（包周期场景返回该字段）](tag:hws)  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
 
@@ -116,7 +116,7 @@ class CreateLoadBalancerResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this CreateLoadBalancerResponse.
+        r"""Sets the order_id of this CreateLoadBalancerResponse.
 
         参数解释：订单号[（包周期场景返回该字段）](tag:hws)  [不支持该字段，请勿使用。](tag:hws_hk,hws_eu,hws_eu_wb,hws_test,srg,fcs,fcs_vm,dt,ctc,cmcc,tm,sbc,hk_sbc,hk_tm,hk_vdf,ct)
 
@@ -127,7 +127,7 @@ class CreateLoadBalancerResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateLoadBalancerResponse.
+        r"""Gets the request_id of this CreateLoadBalancerResponse.
 
         参数解释：请求ID。  注：自动生成 。
 
@@ -138,7 +138,7 @@ class CreateLoadBalancerResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateLoadBalancerResponse.
+        r"""Sets the request_id of this CreateLoadBalancerResponse.
 
         参数解释：请求ID。  注：自动生成 。
 

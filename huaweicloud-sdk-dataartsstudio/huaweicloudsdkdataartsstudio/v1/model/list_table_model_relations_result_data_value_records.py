@@ -29,7 +29,7 @@ class ListTableModelRelationsResultDataValueRecords:
     }
 
     def __init__(self, tables=None, inheritances=None, relations=None):
-        """ListTableModelRelationsResultDataValueRecords
+        r"""ListTableModelRelationsResultDataValueRecords
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListTableModelRelationsResultDataValueRecords:
 
     @property
     def tables(self):
-        """Gets the tables of this ListTableModelRelationsResultDataValueRecords.
+        r"""Gets the tables of this ListTableModelRelationsResultDataValueRecords.
 
         TableModelVO信息。
 
@@ -68,7 +68,7 @@ class ListTableModelRelationsResultDataValueRecords:
 
     @tables.setter
     def tables(self, tables):
-        """Sets the tables of this ListTableModelRelationsResultDataValueRecords.
+        r"""Sets the tables of this ListTableModelRelationsResultDataValueRecords.
 
         TableModelVO信息。
 
@@ -79,7 +79,7 @@ class ListTableModelRelationsResultDataValueRecords:
 
     @property
     def inheritances(self):
-        """Gets the inheritances of this ListTableModelRelationsResultDataValueRecords.
+        r"""Gets the inheritances of this ListTableModelRelationsResultDataValueRecords.
 
         层级信息信息。
 
@@ -90,7 +90,7 @@ class ListTableModelRelationsResultDataValueRecords:
 
     @inheritances.setter
     def inheritances(self, inheritances):
-        """Sets the inheritances of this ListTableModelRelationsResultDataValueRecords.
+        r"""Sets the inheritances of this ListTableModelRelationsResultDataValueRecords.
 
         层级信息信息。
 
@@ -101,7 +101,7 @@ class ListTableModelRelationsResultDataValueRecords:
 
     @property
     def relations(self):
-        """Gets the relations of this ListTableModelRelationsResultDataValueRecords.
+        r"""Gets the relations of this ListTableModelRelationsResultDataValueRecords.
 
         RelationVO信息。
 
@@ -112,7 +112,7 @@ class ListTableModelRelationsResultDataValueRecords:
 
     @relations.setter
     def relations(self, relations):
-        """Sets the relations of this ListTableModelRelationsResultDataValueRecords.
+        r"""Sets the relations of this ListTableModelRelationsResultDataValueRecords.
 
         RelationVO信息。
 

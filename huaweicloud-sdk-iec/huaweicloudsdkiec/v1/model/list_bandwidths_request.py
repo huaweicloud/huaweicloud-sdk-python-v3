@@ -29,7 +29,7 @@ class ListBandwidthsRequest:
     }
 
     def __init__(self, limit=None, offset=None, site_id=None):
-        """ListBandwidthsRequest
+        r"""ListBandwidthsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListBandwidthsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListBandwidthsRequest.
+        r"""Gets the limit of this ListBandwidthsRequest.
 
         查询的数目，取值范围：0~1000。
 
@@ -68,7 +68,7 @@ class ListBandwidthsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListBandwidthsRequest.
+        r"""Sets the limit of this ListBandwidthsRequest.
 
         查询的数目，取值范围：0~1000。
 
@@ -79,7 +79,7 @@ class ListBandwidthsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListBandwidthsRequest.
+        r"""Gets the offset of this ListBandwidthsRequest.
 
         查询的偏移量。
 
@@ -90,7 +90,7 @@ class ListBandwidthsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListBandwidthsRequest.
+        r"""Sets the offset of this ListBandwidthsRequest.
 
         查询的偏移量。
 
@@ -101,7 +101,7 @@ class ListBandwidthsRequest:
 
     @property
     def site_id(self):
-        """Gets the site_id of this ListBandwidthsRequest.
+        r"""Gets the site_id of this ListBandwidthsRequest.
 
         边缘站点ID。
 
@@ -112,7 +112,7 @@ class ListBandwidthsRequest:
 
     @site_id.setter
     def site_id(self, site_id):
-        """Sets the site_id of this ListBandwidthsRequest.
+        r"""Sets the site_id of this ListBandwidthsRequest.
 
         边缘站点ID。
 

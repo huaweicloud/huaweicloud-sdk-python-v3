@@ -31,7 +31,7 @@ class UpdatePlaybookRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, playbook_id=None, body=None):
-        """UpdatePlaybookRequest
+        r"""UpdatePlaybookRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class UpdatePlaybookRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this UpdatePlaybookRequest.
+        r"""Gets the project_id of this UpdatePlaybookRequest.
 
         ID of project
 
@@ -72,7 +72,7 @@ class UpdatePlaybookRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UpdatePlaybookRequest.
+        r"""Sets the project_id of this UpdatePlaybookRequest.
 
         ID of project
 
@@ -83,7 +83,7 @@ class UpdatePlaybookRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this UpdatePlaybookRequest.
+        r"""Gets the workspace_id of this UpdatePlaybookRequest.
 
         ID of workspace
 
@@ -94,7 +94,7 @@ class UpdatePlaybookRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this UpdatePlaybookRequest.
+        r"""Sets the workspace_id of this UpdatePlaybookRequest.
 
         ID of workspace
 
@@ -105,7 +105,7 @@ class UpdatePlaybookRequest:
 
     @property
     def playbook_id(self):
-        """Gets the playbook_id of this UpdatePlaybookRequest.
+        r"""Gets the playbook_id of this UpdatePlaybookRequest.
 
         ID of playbook
 
@@ -116,7 +116,7 @@ class UpdatePlaybookRequest:
 
     @playbook_id.setter
     def playbook_id(self, playbook_id):
-        """Sets the playbook_id of this UpdatePlaybookRequest.
+        r"""Sets the playbook_id of this UpdatePlaybookRequest.
 
         ID of playbook
 
@@ -127,7 +127,7 @@ class UpdatePlaybookRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePlaybookRequest.
+        r"""Gets the body of this UpdatePlaybookRequest.
 
         :return: The body of this UpdatePlaybookRequest.
         :rtype: :class:`huaweicloudsdksa.v2.ModifyPlaybookInfo`
@@ -136,7 +136,7 @@ class UpdatePlaybookRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePlaybookRequest.
+        r"""Sets the body of this UpdatePlaybookRequest.
 
         :param body: The body of this UpdatePlaybookRequest.
         :type body: :class:`huaweicloudsdksa.v2.ModifyPlaybookInfo`

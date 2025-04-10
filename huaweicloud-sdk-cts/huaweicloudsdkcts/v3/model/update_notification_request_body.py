@@ -41,7 +41,7 @@ class UpdateNotificationRequestBody:
     }
 
     def __init__(self, notification_name=None, operation_type=None, agency_name=None, operations=None, notify_user_list=None, status=None, topic_id=None, notification_id=None, filter=None):
-        """UpdateNotificationRequestBody
+        r"""UpdateNotificationRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -95,7 +95,7 @@ class UpdateNotificationRequestBody:
 
     @property
     def notification_name(self):
-        """Gets the notification_name of this UpdateNotificationRequestBody.
+        r"""Gets the notification_name of this UpdateNotificationRequestBody.
 
         标识关键操作名称。
 
@@ -106,7 +106,7 @@ class UpdateNotificationRequestBody:
 
     @notification_name.setter
     def notification_name(self, notification_name):
-        """Sets the notification_name of this UpdateNotificationRequestBody.
+        r"""Sets the notification_name of this UpdateNotificationRequestBody.
 
         标识关键操作名称。
 
@@ -117,7 +117,7 @@ class UpdateNotificationRequestBody:
 
     @property
     def operation_type(self):
-        """Gets the operation_type of this UpdateNotificationRequestBody.
+        r"""Gets the operation_type of this UpdateNotificationRequestBody.
 
         标识操作类型。 目前支持的操作类型有完整类型(complete)和自定义类型(customized)。 完整类型下，CTS发送通知的对象为已对接服务的所有事件。 自定义类型下，CTS发送通知的对象是在operations列表中指定的事件。
 
@@ -128,7 +128,7 @@ class UpdateNotificationRequestBody:
 
     @operation_type.setter
     def operation_type(self, operation_type):
-        """Sets the operation_type of this UpdateNotificationRequestBody.
+        r"""Sets the operation_type of this UpdateNotificationRequestBody.
 
         标识操作类型。 目前支持的操作类型有完整类型(complete)和自定义类型(customized)。 完整类型下，CTS发送通知的对象为已对接服务的所有事件。 自定义类型下，CTS发送通知的对象是在operations列表中指定的事件。
 
@@ -139,7 +139,7 @@ class UpdateNotificationRequestBody:
 
     @property
     def agency_name(self):
-        """Gets the agency_name of this UpdateNotificationRequestBody.
+        r"""Gets the agency_name of this UpdateNotificationRequestBody.
 
         云服务委托名称。 参数值为\"cts_admin_trust\"时，修改追踪器会自动创建一个云服务委托：cts_admin_trust。
 
@@ -150,7 +150,7 @@ class UpdateNotificationRequestBody:
 
     @agency_name.setter
     def agency_name(self, agency_name):
-        """Sets the agency_name of this UpdateNotificationRequestBody.
+        r"""Sets the agency_name of this UpdateNotificationRequestBody.
 
         云服务委托名称。 参数值为\"cts_admin_trust\"时，修改追踪器会自动创建一个云服务委托：cts_admin_trust。
 
@@ -161,7 +161,7 @@ class UpdateNotificationRequestBody:
 
     @property
     def operations(self):
-        """Gets the operations of this UpdateNotificationRequestBody.
+        r"""Gets the operations of this UpdateNotificationRequestBody.
 
         操作事件列表。
 
@@ -172,7 +172,7 @@ class UpdateNotificationRequestBody:
 
     @operations.setter
     def operations(self, operations):
-        """Sets the operations of this UpdateNotificationRequestBody.
+        r"""Sets the operations of this UpdateNotificationRequestBody.
 
         操作事件列表。
 
@@ -183,7 +183,7 @@ class UpdateNotificationRequestBody:
 
     @property
     def notify_user_list(self):
-        """Gets the notify_user_list of this UpdateNotificationRequestBody.
+        r"""Gets the notify_user_list of this UpdateNotificationRequestBody.
 
         通知用户列表，目前最多支持对10个用户组和50个用户发起的操作进行配置。
 
@@ -194,7 +194,7 @@ class UpdateNotificationRequestBody:
 
     @notify_user_list.setter
     def notify_user_list(self, notify_user_list):
-        """Sets the notify_user_list of this UpdateNotificationRequestBody.
+        r"""Sets the notify_user_list of this UpdateNotificationRequestBody.
 
         通知用户列表，目前最多支持对10个用户组和50个用户发起的操作进行配置。
 
@@ -205,7 +205,7 @@ class UpdateNotificationRequestBody:
 
     @property
     def status(self):
-        """Gets the status of this UpdateNotificationRequestBody.
+        r"""Gets the status of this UpdateNotificationRequestBody.
 
         标识关键操作通知状态，包括正常(enabled)，停止(disabled)两种状态。
 
@@ -216,7 +216,7 @@ class UpdateNotificationRequestBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateNotificationRequestBody.
+        r"""Sets the status of this UpdateNotificationRequestBody.
 
         标识关键操作通知状态，包括正常(enabled)，停止(disabled)两种状态。
 
@@ -227,7 +227,7 @@ class UpdateNotificationRequestBody:
 
     @property
     def topic_id(self):
-        """Gets the topic_id of this UpdateNotificationRequestBody.
+        r"""Gets the topic_id of this UpdateNotificationRequestBody.
 
         消息通知服务的topic_urn或者函数工作流的func_urn，当“status”字段为enabled时，该字段必填。 - 消息通知服务的topic_urn可以通过消息通知服务的查询主题列表API获取，示例：urn:smn:regionId:f96188c7ccaf4ffba0c9aa149ab2bd57:test_topic_v2。 - 函数工作流的func_urn可以通过函数工作流的获取函数列表API获取，示例：urn:fss:xxxxxxxxx:7aad83af3e8d42e99ac194e8419e2c9b:function:default:test。
 
@@ -238,7 +238,7 @@ class UpdateNotificationRequestBody:
 
     @topic_id.setter
     def topic_id(self, topic_id):
-        """Sets the topic_id of this UpdateNotificationRequestBody.
+        r"""Sets the topic_id of this UpdateNotificationRequestBody.
 
         消息通知服务的topic_urn或者函数工作流的func_urn，当“status”字段为enabled时，该字段必填。 - 消息通知服务的topic_urn可以通过消息通知服务的查询主题列表API获取，示例：urn:smn:regionId:f96188c7ccaf4ffba0c9aa149ab2bd57:test_topic_v2。 - 函数工作流的func_urn可以通过函数工作流的获取函数列表API获取，示例：urn:fss:xxxxxxxxx:7aad83af3e8d42e99ac194e8419e2c9b:function:default:test。
 
@@ -249,7 +249,7 @@ class UpdateNotificationRequestBody:
 
     @property
     def notification_id(self):
-        """Gets the notification_id of this UpdateNotificationRequestBody.
+        r"""Gets the notification_id of this UpdateNotificationRequestBody.
 
         关键操作通知id。
 
@@ -260,7 +260,7 @@ class UpdateNotificationRequestBody:
 
     @notification_id.setter
     def notification_id(self, notification_id):
-        """Sets the notification_id of this UpdateNotificationRequestBody.
+        r"""Sets the notification_id of this UpdateNotificationRequestBody.
 
         关键操作通知id。
 
@@ -271,7 +271,7 @@ class UpdateNotificationRequestBody:
 
     @property
     def filter(self):
-        """Gets the filter of this UpdateNotificationRequestBody.
+        r"""Gets the filter of this UpdateNotificationRequestBody.
 
         :return: The filter of this UpdateNotificationRequestBody.
         :rtype: :class:`huaweicloudsdkcts.v3.Filter`
@@ -280,7 +280,7 @@ class UpdateNotificationRequestBody:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this UpdateNotificationRequestBody.
+        r"""Sets the filter of this UpdateNotificationRequestBody.
 
         :param filter: The filter of this UpdateNotificationRequestBody.
         :type filter: :class:`huaweicloudsdkcts.v3.Filter`

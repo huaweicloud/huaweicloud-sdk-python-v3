@@ -29,7 +29,7 @@ class IdAndNameAndValueVo:
     }
 
     def __init__(self, name=None, value=None, id=None):
-        """IdAndNameAndValueVo
+        r"""IdAndNameAndValueVo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class IdAndNameAndValueVo:
 
     @property
     def name(self):
-        """Gets the name of this IdAndNameAndValueVo.
+        r"""Gets the name of this IdAndNameAndValueVo.
 
         名称
 
@@ -68,7 +68,7 @@ class IdAndNameAndValueVo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this IdAndNameAndValueVo.
+        r"""Sets the name of this IdAndNameAndValueVo.
 
         名称
 
@@ -79,7 +79,7 @@ class IdAndNameAndValueVo:
 
     @property
     def value(self):
-        """Gets the value of this IdAndNameAndValueVo.
+        r"""Gets the value of this IdAndNameAndValueVo.
 
         值
 
@@ -90,7 +90,7 @@ class IdAndNameAndValueVo:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this IdAndNameAndValueVo.
+        r"""Sets the value of this IdAndNameAndValueVo.
 
         值
 
@@ -101,7 +101,7 @@ class IdAndNameAndValueVo:
 
     @property
     def id(self):
-        """Gets the id of this IdAndNameAndValueVo.
+        r"""Gets the id of this IdAndNameAndValueVo.
 
         id
 
@@ -112,7 +112,7 @@ class IdAndNameAndValueVo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this IdAndNameAndValueVo.
+        r"""Sets the id of this IdAndNameAndValueVo.
 
         id
 

@@ -29,7 +29,7 @@ class OutPutInfoResult:
     }
 
     def __init__(self, package_info=None, package_infos=None, image_infos=None):
-        """OutPutInfoResult
+        r"""OutPutInfoResult
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class OutPutInfoResult:
 
     @property
     def package_info(self):
-        """Gets the package_info of this OutPutInfoResult.
+        r"""Gets the package_info of this OutPutInfoResult.
 
         :return: The package_info of this OutPutInfoResult.
         :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.OutPutResult`
@@ -66,7 +66,7 @@ class OutPutInfoResult:
 
     @package_info.setter
     def package_info(self, package_info):
-        """Sets the package_info of this OutPutInfoResult.
+        r"""Sets the package_info of this OutPutInfoResult.
 
         :param package_info: The package_info of this OutPutInfoResult.
         :type package_info: :class:`huaweicloudsdkcodeartsbuild.v3.OutPutResult`
@@ -75,7 +75,7 @@ class OutPutInfoResult:
 
     @property
     def package_infos(self):
-        """Gets the package_infos of this OutPutInfoResult.
+        r"""Gets the package_infos of this OutPutInfoResult.
 
         二方包信息
 
@@ -86,7 +86,7 @@ class OutPutInfoResult:
 
     @package_infos.setter
     def package_infos(self, package_infos):
-        """Sets the package_infos of this OutPutInfoResult.
+        r"""Sets the package_infos of this OutPutInfoResult.
 
         二方包信息
 
@@ -97,7 +97,7 @@ class OutPutInfoResult:
 
     @property
     def image_infos(self):
-        """Gets the image_infos of this OutPutInfoResult.
+        r"""Gets the image_infos of this OutPutInfoResult.
 
         镜像包信息
 
@@ -108,7 +108,7 @@ class OutPutInfoResult:
 
     @image_infos.setter
     def image_infos(self, image_infos):
-        """Sets the image_infos of this OutPutInfoResult.
+        r"""Sets the image_infos of this OutPutInfoResult.
 
         镜像包信息
 

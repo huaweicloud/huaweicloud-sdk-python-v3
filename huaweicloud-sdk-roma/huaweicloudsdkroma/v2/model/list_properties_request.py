@@ -35,7 +35,7 @@ class ListPropertiesRequest:
     }
 
     def __init__(self, instance_id=None, service_id=None, limit=None, property_id=None, property_name=None, offset=None):
-        """ListPropertiesRequest
+        r"""ListPropertiesRequest
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class ListPropertiesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListPropertiesRequest.
+        r"""Gets the instance_id of this ListPropertiesRequest.
 
         实例ID
 
@@ -87,7 +87,7 @@ class ListPropertiesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListPropertiesRequest.
+        r"""Sets the instance_id of this ListPropertiesRequest.
 
         实例ID
 
@@ -98,7 +98,7 @@ class ListPropertiesRequest:
 
     @property
     def service_id(self):
-        """Gets the service_id of this ListPropertiesRequest.
+        r"""Gets the service_id of this ListPropertiesRequest.
 
         服务ID
 
@@ -109,7 +109,7 @@ class ListPropertiesRequest:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this ListPropertiesRequest.
+        r"""Sets the service_id of this ListPropertiesRequest.
 
         服务ID
 
@@ -120,7 +120,7 @@ class ListPropertiesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPropertiesRequest.
+        r"""Gets the limit of this ListPropertiesRequest.
 
         每页显示条目数量，最大数量999，超过999后只返回999
 
@@ -131,7 +131,7 @@ class ListPropertiesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPropertiesRequest.
+        r"""Sets the limit of this ListPropertiesRequest.
 
         每页显示条目数量，最大数量999，超过999后只返回999
 
@@ -142,7 +142,7 @@ class ListPropertiesRequest:
 
     @property
     def property_id(self):
-        """Gets the property_id of this ListPropertiesRequest.
+        r"""Gets the property_id of this ListPropertiesRequest.
 
         属性ID
 
@@ -153,7 +153,7 @@ class ListPropertiesRequest:
 
     @property_id.setter
     def property_id(self, property_id):
-        """Sets the property_id of this ListPropertiesRequest.
+        r"""Sets the property_id of this ListPropertiesRequest.
 
         属性ID
 
@@ -164,7 +164,7 @@ class ListPropertiesRequest:
 
     @property
     def property_name(self):
-        """Gets the property_name of this ListPropertiesRequest.
+        r"""Gets the property_name of this ListPropertiesRequest.
 
         属性名称
 
@@ -175,7 +175,7 @@ class ListPropertiesRequest:
 
     @property_name.setter
     def property_name(self, property_name):
-        """Sets the property_name of this ListPropertiesRequest.
+        r"""Sets the property_name of this ListPropertiesRequest.
 
         属性名称
 
@@ -186,7 +186,7 @@ class ListPropertiesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPropertiesRequest.
+        r"""Gets the offset of this ListPropertiesRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -197,7 +197,7 @@ class ListPropertiesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPropertiesRequest.
+        r"""Sets the offset of this ListPropertiesRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 

@@ -35,7 +35,7 @@ class UsageInfos:
     }
 
     def __init__(self, name=None, id=None, amount=None, used=None, used_percent=None, usage_info=None):
-        """UsageInfos
+        r"""UsageInfos
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class UsageInfos:
 
     @property
     def name(self):
-        """Gets the name of this UsageInfos.
+        r"""Gets the name of this UsageInfos.
 
         资源名称
 
@@ -89,7 +89,7 @@ class UsageInfos:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UsageInfos.
+        r"""Sets the name of this UsageInfos.
 
         资源名称
 
@@ -100,7 +100,7 @@ class UsageInfos:
 
     @property
     def id(self):
-        """Gets the id of this UsageInfos.
+        r"""Gets the id of this UsageInfos.
 
         资源标识
 
@@ -111,7 +111,7 @@ class UsageInfos:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UsageInfos.
+        r"""Sets the id of this UsageInfos.
 
         资源标识
 
@@ -122,7 +122,7 @@ class UsageInfos:
 
     @property
     def amount(self):
-        """Gets the amount of this UsageInfos.
+        r"""Gets the amount of this UsageInfos.
 
         资源总量
 
@@ -133,7 +133,7 @@ class UsageInfos:
 
     @amount.setter
     def amount(self, amount):
-        """Sets the amount of this UsageInfos.
+        r"""Sets the amount of this UsageInfos.
 
         资源总量
 
@@ -144,7 +144,7 @@ class UsageInfos:
 
     @property
     def used(self):
-        """Gets the used of this UsageInfos.
+        r"""Gets the used of this UsageInfos.
 
         已消耗用量
 
@@ -155,7 +155,7 @@ class UsageInfos:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this UsageInfos.
+        r"""Sets the used of this UsageInfos.
 
         已消耗用量
 
@@ -166,7 +166,7 @@ class UsageInfos:
 
     @property
     def used_percent(self):
-        """Gets the used_percent of this UsageInfos.
+        r"""Gets the used_percent of this UsageInfos.
 
         资源已用容量百分比,例如80% 值为80
 
@@ -177,7 +177,7 @@ class UsageInfos:
 
     @used_percent.setter
     def used_percent(self, used_percent):
-        """Sets the used_percent of this UsageInfos.
+        r"""Sets the used_percent of this UsageInfos.
 
         资源已用容量百分比,例如80% 值为80
 
@@ -188,7 +188,7 @@ class UsageInfos:
 
     @property
     def usage_info(self):
-        """Gets the usage_info of this UsageInfos.
+        r"""Gets the usage_info of this UsageInfos.
 
         版本超限信息
 
@@ -199,7 +199,7 @@ class UsageInfos:
 
     @usage_info.setter
     def usage_info(self, usage_info):
-        """Sets the usage_info of this UsageInfos.
+        r"""Sets the usage_info of this UsageInfos.
 
         版本超限信息
 

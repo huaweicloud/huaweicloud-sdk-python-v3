@@ -31,7 +31,7 @@ class ListFunctionNamesRequest:
     }
 
     def __init__(self, instance_id=None, catalog_name=None, database_name=None, function_pattern=None):
-        """ListFunctionNamesRequest
+        r"""ListFunctionNamesRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ListFunctionNamesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListFunctionNamesRequest.
+        r"""Gets the instance_id of this ListFunctionNamesRequest.
 
         LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
 
@@ -72,7 +72,7 @@ class ListFunctionNamesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListFunctionNamesRequest.
+        r"""Sets the instance_id of this ListFunctionNamesRequest.
 
         LakeFormation实例ID。创建实例时自动生成。例如：2180518f-42b8-4947-b20b-adfc53981a25。
 
@@ -83,7 +83,7 @@ class ListFunctionNamesRequest:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this ListFunctionNamesRequest.
+        r"""Gets the catalog_name of this ListFunctionNamesRequest.
 
         catalog名称。只能包含字母、数字和下划线，且长度为1~256个字符。
 
@@ -94,7 +94,7 @@ class ListFunctionNamesRequest:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this ListFunctionNamesRequest.
+        r"""Sets the catalog_name of this ListFunctionNamesRequest.
 
         catalog名称。只能包含字母、数字和下划线，且长度为1~256个字符。
 
@@ -105,7 +105,7 @@ class ListFunctionNamesRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this ListFunctionNamesRequest.
+        r"""Gets the database_name of this ListFunctionNamesRequest.
 
         数据库名称。只能包含中文、字母、数字和下划线，且长度为1~128个字符。
 
@@ -116,7 +116,7 @@ class ListFunctionNamesRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this ListFunctionNamesRequest.
+        r"""Sets the database_name of this ListFunctionNamesRequest.
 
         数据库名称。只能包含中文、字母、数字和下划线，且长度为1~128个字符。
 
@@ -127,7 +127,7 @@ class ListFunctionNamesRequest:
 
     @property
     def function_pattern(self):
-        """Gets the function_pattern of this ListFunctionNamesRequest.
+        r"""Gets the function_pattern of this ListFunctionNamesRequest.
 
         函数名称通配符。只能包含字母、数字和_|*.特殊字符，且最大长度为256个字符。
 
@@ -138,7 +138,7 @@ class ListFunctionNamesRequest:
 
     @function_pattern.setter
     def function_pattern(self, function_pattern):
-        """Sets the function_pattern of this ListFunctionNamesRequest.
+        r"""Sets the function_pattern of this ListFunctionNamesRequest.
 
         函数名称通配符。只能包含字母、数字和_|*.特殊字符，且最大长度为256个字符。
 

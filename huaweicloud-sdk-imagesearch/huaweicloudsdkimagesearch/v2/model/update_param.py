@@ -31,7 +31,7 @@ class UpdateParam:
     }
 
     def __init__(self, item_id=None, desc=None, custom_tags=None, custom_num_tags=None):
-        """UpdateParam
+        r"""UpdateParam
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class UpdateParam:
 
     @property
     def item_id(self):
-        """Gets the item_id of this UpdateParam.
+        r"""Gets the item_id of this UpdateParam.
 
         数据的服务实例级唯一标识，字符长度范围为[1, 256]。
 
@@ -74,7 +74,7 @@ class UpdateParam:
 
     @item_id.setter
     def item_id(self, item_id):
-        """Sets the item_id of this UpdateParam.
+        r"""Sets the item_id of this UpdateParam.
 
         数据的服务实例级唯一标识，字符长度范围为[1, 256]。
 
@@ -85,7 +85,7 @@ class UpdateParam:
 
     @property
     def desc(self):
-        """Gets the desc of this UpdateParam.
+        r"""Gets the desc of this UpdateParam.
 
         数据的描述信息，字符长度范围为[1, 2048]。
 
@@ -96,7 +96,7 @@ class UpdateParam:
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this UpdateParam.
+        r"""Sets the desc of this UpdateParam.
 
         数据的描述信息，字符长度范围为[1, 2048]。
 
@@ -107,7 +107,7 @@ class UpdateParam:
 
     @property
     def custom_tags(self):
-        """Gets the custom_tags of this UpdateParam.
+        r"""Gets the custom_tags of this UpdateParam.
 
         数据的自定义字符标签，用于进行条件过滤。格式为键值对{key:value}。 - key: 必须为服务实例custom_tags中已存在的key，可在创建服务实例时进行配置，或在更新服务实例时进行新增。 - value: 类型为字符串，字符长度范围为[1, 64]。
 
@@ -118,7 +118,7 @@ class UpdateParam:
 
     @custom_tags.setter
     def custom_tags(self, custom_tags):
-        """Sets the custom_tags of this UpdateParam.
+        r"""Sets the custom_tags of this UpdateParam.
 
         数据的自定义字符标签，用于进行条件过滤。格式为键值对{key:value}。 - key: 必须为服务实例custom_tags中已存在的key，可在创建服务实例时进行配置，或在更新服务实例时进行新增。 - value: 类型为字符串，字符长度范围为[1, 64]。
 
@@ -129,7 +129,7 @@ class UpdateParam:
 
     @property
     def custom_num_tags(self):
-        """Gets the custom_num_tags of this UpdateParam.
+        r"""Gets the custom_num_tags of this UpdateParam.
 
         数据的自定义数值标签，用于进行条件过滤。格式为键值对{key:value}。 - key: 必须为服务实例custom_num_tags中已存在的key，可在创建服务实例时进行配置，或在更新服务实例时进行新增。 - value: 类型为数值，格式为double。
 
@@ -140,7 +140,7 @@ class UpdateParam:
 
     @custom_num_tags.setter
     def custom_num_tags(self, custom_num_tags):
-        """Sets the custom_num_tags of this UpdateParam.
+        r"""Sets the custom_num_tags of this UpdateParam.
 
         数据的自定义数值标签，用于进行条件过滤。格式为键值对{key:value}。 - key: 必须为服务实例custom_num_tags中已存在的key，可在创建服务实例时进行配置，或在更新服务实例时进行新增。 - value: 类型为数值，格式为double。
 

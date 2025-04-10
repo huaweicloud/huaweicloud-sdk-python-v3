@@ -27,7 +27,7 @@ class DictionaryType:
     }
 
     def __init__(self):
-        """DictionaryType
+        r"""DictionaryType
 
         The model defined in huaweicloud sdk
 

@@ -41,7 +41,7 @@ class LogConfiguration:
     }
 
     def __init__(self, id=None, cluster_id=None, obs_bucket=None, agency=None, update_at=None, base_path=None, auto_enable=None, period=None, log_switch=None):
-        """LogConfiguration
+        r"""LogConfiguration
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class LogConfiguration:
 
     @property
     def id(self):
-        """Gets the id of this LogConfiguration.
+        r"""Gets the id of this LogConfiguration.
 
         日志备份ID，通过系统UUID生成。
 
@@ -110,7 +110,7 @@ class LogConfiguration:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this LogConfiguration.
+        r"""Sets the id of this LogConfiguration.
 
         日志备份ID，通过系统UUID生成。
 
@@ -121,7 +121,7 @@ class LogConfiguration:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this LogConfiguration.
+        r"""Gets the cluster_id of this LogConfiguration.
 
         集群ID。
 
@@ -132,7 +132,7 @@ class LogConfiguration:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this LogConfiguration.
+        r"""Sets the cluster_id of this LogConfiguration.
 
         集群ID。
 
@@ -143,7 +143,7 @@ class LogConfiguration:
 
     @property
     def obs_bucket(self):
-        """Gets the obs_bucket of this LogConfiguration.
+        r"""Gets the obs_bucket of this LogConfiguration.
 
         用于存储日志的OBS桶的桶名。
 
@@ -154,7 +154,7 @@ class LogConfiguration:
 
     @obs_bucket.setter
     def obs_bucket(self, obs_bucket):
-        """Sets the obs_bucket of this LogConfiguration.
+        r"""Sets the obs_bucket of this LogConfiguration.
 
         用于存储日志的OBS桶的桶名。
 
@@ -165,7 +165,7 @@ class LogConfiguration:
 
     @property
     def agency(self):
-        """Gets the agency of this LogConfiguration.
+        r"""Gets the agency of this LogConfiguration.
 
         委托名称，委托给CSS，允许CSS调用您的其他云服务。
 
@@ -176,7 +176,7 @@ class LogConfiguration:
 
     @agency.setter
     def agency(self, agency):
-        """Sets the agency of this LogConfiguration.
+        r"""Sets the agency of this LogConfiguration.
 
         委托名称，委托给CSS，允许CSS调用您的其他云服务。
 
@@ -187,7 +187,7 @@ class LogConfiguration:
 
     @property
     def update_at(self):
-        """Gets the update_at of this LogConfiguration.
+        r"""Gets the update_at of this LogConfiguration.
 
         更新时间。格式为：Unix时间戳格式。
 
@@ -198,7 +198,7 @@ class LogConfiguration:
 
     @update_at.setter
     def update_at(self, update_at):
-        """Sets the update_at of this LogConfiguration.
+        r"""Sets the update_at of this LogConfiguration.
 
         更新时间。格式为：Unix时间戳格式。
 
@@ -209,7 +209,7 @@ class LogConfiguration:
 
     @property
     def base_path(self):
-        """Gets the base_path of this LogConfiguration.
+        r"""Gets the base_path of this LogConfiguration.
 
         日志在OBS桶中的备份路径。
 
@@ -220,7 +220,7 @@ class LogConfiguration:
 
     @base_path.setter
     def base_path(self, base_path):
-        """Sets the base_path of this LogConfiguration.
+        r"""Sets the base_path of this LogConfiguration.
 
         日志在OBS桶中的备份路径。
 
@@ -231,7 +231,7 @@ class LogConfiguration:
 
     @property
     def auto_enable(self):
-        """Gets the auto_enable of this LogConfiguration.
+        r"""Gets the auto_enable of this LogConfiguration.
 
         自动备份开关。 - true: 自动备份开启。 - false: 自动备份关闭。
 
@@ -242,7 +242,7 @@ class LogConfiguration:
 
     @auto_enable.setter
     def auto_enable(self, auto_enable):
-        """Sets the auto_enable of this LogConfiguration.
+        r"""Sets the auto_enable of this LogConfiguration.
 
         自动备份开关。 - true: 自动备份开启。 - false: 自动备份关闭。
 
@@ -253,7 +253,7 @@ class LogConfiguration:
 
     @property
     def period(self):
-        """Gets the period of this LogConfiguration.
+        r"""Gets the period of this LogConfiguration.
 
         自动备份日志开始时间。当autoEnable为false时该字段为null。格式为：格林威治标准时间。
 
@@ -264,7 +264,7 @@ class LogConfiguration:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this LogConfiguration.
+        r"""Sets the period of this LogConfiguration.
 
         自动备份日志开始时间。当autoEnable为false时该字段为null。格式为：格林威治标准时间。
 
@@ -275,7 +275,7 @@ class LogConfiguration:
 
     @property
     def log_switch(self):
-        """Gets the log_switch of this LogConfiguration.
+        r"""Gets the log_switch of this LogConfiguration.
 
         日志开关。 - true: 日志开启。 - false: 日志关闭。
 
@@ -286,7 +286,7 @@ class LogConfiguration:
 
     @log_switch.setter
     def log_switch(self, log_switch):
-        """Sets the log_switch of this LogConfiguration.
+        r"""Sets the log_switch of this LogConfiguration.
 
         日志开关。 - true: 日志开启。 - false: 日志关闭。
 

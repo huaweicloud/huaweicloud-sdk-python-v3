@@ -24,7 +24,7 @@ class DeleteVirtualInterfaceResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteVirtualInterfaceResponse
+        r"""DeleteVirtualInterfaceResponse
 
         The model defined in huaweicloud sdk
 

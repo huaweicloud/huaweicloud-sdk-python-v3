@@ -32,7 +32,7 @@ class ChangeLoadbalancerChargeModeResponse(SdkResponse):
     }
 
     def __init__(self, eip_id_list=None, loadbalancer_id_list=None, order_id=None, request_id=None):
-        """ChangeLoadbalancerChargeModeResponse
+        r"""ChangeLoadbalancerChargeModeResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ChangeLoadbalancerChargeModeResponse(SdkResponse):
 
     @property
     def eip_id_list(self):
-        """Gets the eip_id_list of this ChangeLoadbalancerChargeModeResponse.
+        r"""Gets the eip_id_list of this ChangeLoadbalancerChargeModeResponse.
 
         转包周期下单成功的EIP ID列表
 
@@ -76,7 +76,7 @@ class ChangeLoadbalancerChargeModeResponse(SdkResponse):
 
     @eip_id_list.setter
     def eip_id_list(self, eip_id_list):
-        """Sets the eip_id_list of this ChangeLoadbalancerChargeModeResponse.
+        r"""Sets the eip_id_list of this ChangeLoadbalancerChargeModeResponse.
 
         转包周期下单成功的EIP ID列表
 
@@ -87,7 +87,7 @@ class ChangeLoadbalancerChargeModeResponse(SdkResponse):
 
     @property
     def loadbalancer_id_list(self):
-        """Gets the loadbalancer_id_list of this ChangeLoadbalancerChargeModeResponse.
+        r"""Gets the loadbalancer_id_list of this ChangeLoadbalancerChargeModeResponse.
 
         转包周期下单成功的LB ID列表
 
@@ -98,7 +98,7 @@ class ChangeLoadbalancerChargeModeResponse(SdkResponse):
 
     @loadbalancer_id_list.setter
     def loadbalancer_id_list(self, loadbalancer_id_list):
-        """Sets the loadbalancer_id_list of this ChangeLoadbalancerChargeModeResponse.
+        r"""Sets the loadbalancer_id_list of this ChangeLoadbalancerChargeModeResponse.
 
         转包周期下单成功的LB ID列表
 
@@ -109,7 +109,7 @@ class ChangeLoadbalancerChargeModeResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this ChangeLoadbalancerChargeModeResponse.
+        r"""Gets the order_id of this ChangeLoadbalancerChargeModeResponse.
 
         转包周期订单号
 
@@ -120,7 +120,7 @@ class ChangeLoadbalancerChargeModeResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ChangeLoadbalancerChargeModeResponse.
+        r"""Sets the order_id of this ChangeLoadbalancerChargeModeResponse.
 
         转包周期订单号
 
@@ -131,7 +131,7 @@ class ChangeLoadbalancerChargeModeResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ChangeLoadbalancerChargeModeResponse.
+        r"""Gets the request_id of this ChangeLoadbalancerChargeModeResponse.
 
         请求的UUIID
 
@@ -142,7 +142,7 @@ class ChangeLoadbalancerChargeModeResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ChangeLoadbalancerChargeModeResponse.
+        r"""Sets the request_id of this ChangeLoadbalancerChargeModeResponse.
 
         请求的UUIID
 

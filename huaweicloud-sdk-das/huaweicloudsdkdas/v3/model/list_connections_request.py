@@ -39,7 +39,7 @@ class ListConnectionsRequest:
     }
 
     def __init__(self, condition=None, offset=None, limit=None, network_type=None, datastore_type=None, connection_type=None, instance_id=None, x_language=None):
-        """ListConnectionsRequest
+        r"""ListConnectionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ListConnectionsRequest:
 
     @property
     def condition(self):
-        """Gets the condition of this ListConnectionsRequest.
+        r"""Gets the condition of this ListConnectionsRequest.
 
         数据库实例地址/实例名称/备注等关键字
 
@@ -103,7 +103,7 @@ class ListConnectionsRequest:
 
     @condition.setter
     def condition(self, condition):
-        """Sets the condition of this ListConnectionsRequest.
+        r"""Sets the condition of this ListConnectionsRequest.
 
         数据库实例地址/实例名称/备注等关键字
 
@@ -114,7 +114,7 @@ class ListConnectionsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListConnectionsRequest.
+        r"""Gets the offset of this ListConnectionsRequest.
 
         偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -125,7 +125,7 @@ class ListConnectionsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListConnectionsRequest.
+        r"""Sets the offset of this ListConnectionsRequest.
 
         偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -136,7 +136,7 @@ class ListConnectionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListConnectionsRequest.
+        r"""Gets the limit of this ListConnectionsRequest.
 
         查询记录数。默认为100，不能为负数，最小值为1，最大值为200。
 
@@ -147,7 +147,7 @@ class ListConnectionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListConnectionsRequest.
+        r"""Sets the limit of this ListConnectionsRequest.
 
         查询记录数。默认为100，不能为负数，最小值为1，最大值为200。
 
@@ -158,7 +158,7 @@ class ListConnectionsRequest:
 
     @property
     def network_type(self):
-        """Gets the network_type of this ListConnectionsRequest.
+        r"""Gets the network_type of this ListConnectionsRequest.
 
         数据库来源
 
@@ -169,7 +169,7 @@ class ListConnectionsRequest:
 
     @network_type.setter
     def network_type(self, network_type):
-        """Sets the network_type of this ListConnectionsRequest.
+        r"""Sets the network_type of this ListConnectionsRequest.
 
         数据库来源
 
@@ -180,7 +180,7 @@ class ListConnectionsRequest:
 
     @property
     def datastore_type(self):
-        """Gets the datastore_type of this ListConnectionsRequest.
+        r"""Gets the datastore_type of this ListConnectionsRequest.
 
         数据库引擎。
 
@@ -191,7 +191,7 @@ class ListConnectionsRequest:
 
     @datastore_type.setter
     def datastore_type(self, datastore_type):
-        """Sets the datastore_type of this ListConnectionsRequest.
+        r"""Sets the datastore_type of this ListConnectionsRequest.
 
         数据库引擎。
 
@@ -202,7 +202,7 @@ class ListConnectionsRequest:
 
     @property
     def connection_type(self):
-        """Gets the connection_type of this ListConnectionsRequest.
+        r"""Gets the connection_type of this ListConnectionsRequest.
 
         连接类型，NORMAL-创建的连接，SHARE-他人共享给我的连接。
 
@@ -213,7 +213,7 @@ class ListConnectionsRequest:
 
     @connection_type.setter
     def connection_type(self, connection_type):
-        """Sets the connection_type of this ListConnectionsRequest.
+        r"""Sets the connection_type of this ListConnectionsRequest.
 
         连接类型，NORMAL-创建的连接，SHARE-他人共享给我的连接。
 
@@ -224,7 +224,7 @@ class ListConnectionsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListConnectionsRequest.
+        r"""Gets the instance_id of this ListConnectionsRequest.
 
         实例ID。
 
@@ -235,7 +235,7 @@ class ListConnectionsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListConnectionsRequest.
+        r"""Sets the instance_id of this ListConnectionsRequest.
 
         实例ID。
 
@@ -246,7 +246,7 @@ class ListConnectionsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListConnectionsRequest.
+        r"""Gets the x_language of this ListConnectionsRequest.
 
         请求语言类型。
 
@@ -257,7 +257,7 @@ class ListConnectionsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListConnectionsRequest.
+        r"""Sets the x_language of this ListConnectionsRequest.
 
         请求语言类型。
 

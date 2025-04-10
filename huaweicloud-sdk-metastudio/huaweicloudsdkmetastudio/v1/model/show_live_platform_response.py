@@ -38,7 +38,7 @@ class ShowLivePlatformResponse(SdkResponse):
     }
 
     def __init__(self, platform_id=None, access_type=None, name=None, authorization_info=None, auth_config=None, callback_config=None, x_request_id=None):
-        """ShowLivePlatformResponse
+        r"""ShowLivePlatformResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ShowLivePlatformResponse(SdkResponse):
 
     @property
     def platform_id(self):
-        """Gets the platform_id of this ShowLivePlatformResponse.
+        r"""Gets the platform_id of this ShowLivePlatformResponse.
 
         平台ID
 
@@ -97,7 +97,7 @@ class ShowLivePlatformResponse(SdkResponse):
 
     @platform_id.setter
     def platform_id(self, platform_id):
-        """Sets the platform_id of this ShowLivePlatformResponse.
+        r"""Sets the platform_id of this ShowLivePlatformResponse.
 
         平台ID
 
@@ -108,7 +108,7 @@ class ShowLivePlatformResponse(SdkResponse):
 
     @property
     def access_type(self):
-        """Gets the access_type of this ShowLivePlatformResponse.
+        r"""Gets the access_type of this ShowLivePlatformResponse.
 
         :return: The access_type of this ShowLivePlatformResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.AccessTypeEnum`
@@ -117,7 +117,7 @@ class ShowLivePlatformResponse(SdkResponse):
 
     @access_type.setter
     def access_type(self, access_type):
-        """Sets the access_type of this ShowLivePlatformResponse.
+        r"""Sets the access_type of this ShowLivePlatformResponse.
 
         :param access_type: The access_type of this ShowLivePlatformResponse.
         :type access_type: :class:`huaweicloudsdkmetastudio.v1.AccessTypeEnum`
@@ -126,7 +126,7 @@ class ShowLivePlatformResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowLivePlatformResponse.
+        r"""Gets the name of this ShowLivePlatformResponse.
 
         直播平台名称
 
@@ -137,7 +137,7 @@ class ShowLivePlatformResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowLivePlatformResponse.
+        r"""Sets the name of this ShowLivePlatformResponse.
 
         直播平台名称
 
@@ -148,7 +148,7 @@ class ShowLivePlatformResponse(SdkResponse):
 
     @property
     def authorization_info(self):
-        """Gets the authorization_info of this ShowLivePlatformResponse.
+        r"""Gets the authorization_info of this ShowLivePlatformResponse.
 
         :return: The authorization_info of this ShowLivePlatformResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.PlatformAuthorizationInfo`
@@ -157,7 +157,7 @@ class ShowLivePlatformResponse(SdkResponse):
 
     @authorization_info.setter
     def authorization_info(self, authorization_info):
-        """Sets the authorization_info of this ShowLivePlatformResponse.
+        r"""Sets the authorization_info of this ShowLivePlatformResponse.
 
         :param authorization_info: The authorization_info of this ShowLivePlatformResponse.
         :type authorization_info: :class:`huaweicloudsdkmetastudio.v1.PlatformAuthorizationInfo`
@@ -166,7 +166,7 @@ class ShowLivePlatformResponse(SdkResponse):
 
     @property
     def auth_config(self):
-        """Gets the auth_config of this ShowLivePlatformResponse.
+        r"""Gets the auth_config of this ShowLivePlatformResponse.
 
         :return: The auth_config of this ShowLivePlatformResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CustomPlatformAuthConfig`
@@ -175,7 +175,7 @@ class ShowLivePlatformResponse(SdkResponse):
 
     @auth_config.setter
     def auth_config(self, auth_config):
-        """Sets the auth_config of this ShowLivePlatformResponse.
+        r"""Sets the auth_config of this ShowLivePlatformResponse.
 
         :param auth_config: The auth_config of this ShowLivePlatformResponse.
         :type auth_config: :class:`huaweicloudsdkmetastudio.v1.CustomPlatformAuthConfig`
@@ -184,7 +184,7 @@ class ShowLivePlatformResponse(SdkResponse):
 
     @property
     def callback_config(self):
-        """Gets the callback_config of this ShowLivePlatformResponse.
+        r"""Gets the callback_config of this ShowLivePlatformResponse.
 
         自定义直播平台回调配置。同一种类型仅保留一个配置，如果配置多个会随机保存一个。
 
@@ -195,7 +195,7 @@ class ShowLivePlatformResponse(SdkResponse):
 
     @callback_config.setter
     def callback_config(self, callback_config):
-        """Sets the callback_config of this ShowLivePlatformResponse.
+        r"""Sets the callback_config of this ShowLivePlatformResponse.
 
         自定义直播平台回调配置。同一种类型仅保留一个配置，如果配置多个会随机保存一个。
 
@@ -206,7 +206,7 @@ class ShowLivePlatformResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowLivePlatformResponse.
+        r"""Gets the x_request_id of this ShowLivePlatformResponse.
 
         :return: The x_request_id of this ShowLivePlatformResponse.
         :rtype: str
@@ -215,7 +215,7 @@ class ShowLivePlatformResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowLivePlatformResponse.
+        r"""Sets the x_request_id of this ShowLivePlatformResponse.
 
         :param x_request_id: The x_request_id of this ShowLivePlatformResponse.
         :type x_request_id: str

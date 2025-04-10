@@ -27,7 +27,7 @@ class IDEPrivilageProjectInfo:
     }
 
     def __init__(self, project_id=None, ids=None):
-        """IDEPrivilageProjectInfo
+        r"""IDEPrivilageProjectInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class IDEPrivilageProjectInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this IDEPrivilageProjectInfo.
+        r"""Gets the project_id of this IDEPrivilageProjectInfo.
 
         项目id
 
@@ -61,7 +61,7 @@ class IDEPrivilageProjectInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this IDEPrivilageProjectInfo.
+        r"""Sets the project_id of this IDEPrivilageProjectInfo.
 
         项目id
 
@@ -72,7 +72,7 @@ class IDEPrivilageProjectInfo:
 
     @property
     def ids(self):
-        """Gets the ids of this IDEPrivilageProjectInfo.
+        r"""Gets the ids of this IDEPrivilageProjectInfo.
 
         tab_id集合
 
@@ -83,7 +83,7 @@ class IDEPrivilageProjectInfo:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this IDEPrivilageProjectInfo.
+        r"""Sets the ids of this IDEPrivilageProjectInfo.
 
         tab_id集合
 

@@ -35,7 +35,7 @@ class ConformancePackRequestBody:
     }
 
     def __init__(self, name=None, agency_name=None, template_key=None, template_body=None, template_uri=None, vars_structure=None):
-        """ConformancePackRequestBody
+        r"""ConformancePackRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ConformancePackRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this ConformancePackRequestBody.
+        r"""Gets the name of this ConformancePackRequestBody.
 
         合规规则包名称。
 
@@ -88,7 +88,7 @@ class ConformancePackRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ConformancePackRequestBody.
+        r"""Sets the name of this ConformancePackRequestBody.
 
         合规规则包名称。
 
@@ -99,7 +99,7 @@ class ConformancePackRequestBody:
 
     @property
     def agency_name(self):
-        """Gets the agency_name of this ConformancePackRequestBody.
+        r"""Gets the agency_name of this ConformancePackRequestBody.
 
         委托名称，该委托需要授权云服务ResourceFormation调用Config服务的合规规则的创建、更新、删除接口。
 
@@ -110,7 +110,7 @@ class ConformancePackRequestBody:
 
     @agency_name.setter
     def agency_name(self, agency_name):
-        """Sets the agency_name of this ConformancePackRequestBody.
+        r"""Sets the agency_name of this ConformancePackRequestBody.
 
         委托名称，该委托需要授权云服务ResourceFormation调用Config服务的合规规则的创建、更新、删除接口。
 
@@ -121,7 +121,7 @@ class ConformancePackRequestBody:
 
     @property
     def template_key(self):
-        """Gets the template_key of this ConformancePackRequestBody.
+        r"""Gets the template_key of this ConformancePackRequestBody.
 
         预定义合规包模板名称。
 
@@ -132,7 +132,7 @@ class ConformancePackRequestBody:
 
     @template_key.setter
     def template_key(self, template_key):
-        """Sets the template_key of this ConformancePackRequestBody.
+        r"""Sets the template_key of this ConformancePackRequestBody.
 
         预定义合规包模板名称。
 
@@ -143,7 +143,7 @@ class ConformancePackRequestBody:
 
     @property
     def template_body(self):
-        """Gets the template_body of this ConformancePackRequestBody.
+        r"""Gets the template_body of this ConformancePackRequestBody.
 
         自定义合规包内容。
 
@@ -154,7 +154,7 @@ class ConformancePackRequestBody:
 
     @template_body.setter
     def template_body(self, template_body):
-        """Sets the template_body of this ConformancePackRequestBody.
+        r"""Sets the template_body of this ConformancePackRequestBody.
 
         自定义合规包内容。
 
@@ -165,7 +165,7 @@ class ConformancePackRequestBody:
 
     @property
     def template_uri(self):
-        """Gets the template_uri of this ConformancePackRequestBody.
+        r"""Gets the template_uri of this ConformancePackRequestBody.
 
         合规包模板OBS地址。
 
@@ -176,7 +176,7 @@ class ConformancePackRequestBody:
 
     @template_uri.setter
     def template_uri(self, template_uri):
-        """Sets the template_uri of this ConformancePackRequestBody.
+        r"""Sets the template_uri of this ConformancePackRequestBody.
 
         合规包模板OBS地址。
 
@@ -187,7 +187,7 @@ class ConformancePackRequestBody:
 
     @property
     def vars_structure(self):
-        """Gets the vars_structure of this ConformancePackRequestBody.
+        r"""Gets the vars_structure of this ConformancePackRequestBody.
 
         合规规则包参数。
 
@@ -198,7 +198,7 @@ class ConformancePackRequestBody:
 
     @vars_structure.setter
     def vars_structure(self, vars_structure):
-        """Sets the vars_structure of this ConformancePackRequestBody.
+        r"""Sets the vars_structure of this ConformancePackRequestBody.
 
         合规规则包参数。
 

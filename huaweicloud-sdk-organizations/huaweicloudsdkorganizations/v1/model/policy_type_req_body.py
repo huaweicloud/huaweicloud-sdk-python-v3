@@ -27,7 +27,7 @@ class PolicyTypeReqBody:
     }
 
     def __init__(self, policy_type=None, root_id=None):
-        """PolicyTypeReqBody
+        r"""PolicyTypeReqBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class PolicyTypeReqBody:
 
     @property
     def policy_type(self):
-        """Gets the policy_type of this PolicyTypeReqBody.
+        r"""Gets the policy_type of this PolicyTypeReqBody.
 
         策略类型的名称，service_control_policy服务控制策略；tag_policy：标签策略。
 
@@ -59,7 +59,7 @@ class PolicyTypeReqBody:
 
     @policy_type.setter
     def policy_type(self, policy_type):
-        """Sets the policy_type of this PolicyTypeReqBody.
+        r"""Sets the policy_type of this PolicyTypeReqBody.
 
         策略类型的名称，service_control_policy服务控制策略；tag_policy：标签策略。
 
@@ -70,7 +70,7 @@ class PolicyTypeReqBody:
 
     @property
     def root_id(self):
-        """Gets the root_id of this PolicyTypeReqBody.
+        r"""Gets the root_id of this PolicyTypeReqBody.
 
         根的唯一标识符（ID）。
 
@@ -81,7 +81,7 @@ class PolicyTypeReqBody:
 
     @root_id.setter
     def root_id(self, root_id):
-        """Sets the root_id of this PolicyTypeReqBody.
+        r"""Sets the root_id of this PolicyTypeReqBody.
 
         根的唯一标识符（ID）。
 

@@ -26,7 +26,7 @@ class ListPartnerBalancesResponse(SdkResponse):
     }
 
     def __init__(self, account_balances=None):
-        """ListPartnerBalancesResponse
+        r"""ListPartnerBalancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListPartnerBalancesResponse(SdkResponse):
 
     @property
     def account_balances(self):
-        """Gets the account_balances of this ListPartnerBalancesResponse.
+        r"""Gets the account_balances of this ListPartnerBalancesResponse.
 
         账户余额列表。 具体请参见表2
 
@@ -55,7 +55,7 @@ class ListPartnerBalancesResponse(SdkResponse):
 
     @account_balances.setter
     def account_balances(self, account_balances):
-        """Sets the account_balances of this ListPartnerBalancesResponse.
+        r"""Sets the account_balances of this ListPartnerBalancesResponse.
 
         账户余额列表。 具体请参见表2
 

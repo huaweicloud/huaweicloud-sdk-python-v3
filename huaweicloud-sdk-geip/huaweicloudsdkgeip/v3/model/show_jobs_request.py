@@ -27,7 +27,7 @@ class ShowJobsRequest:
     }
 
     def __init__(self, job_id=None, fields=None):
-        """ShowJobsRequest
+        r"""ShowJobsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowJobsRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowJobsRequest.
+        r"""Gets the job_id of this ShowJobsRequest.
 
         job_id
 
@@ -60,7 +60,7 @@ class ShowJobsRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowJobsRequest.
+        r"""Sets the job_id of this ShowJobsRequest.
 
         job_id
 
@@ -71,7 +71,7 @@ class ShowJobsRequest:
 
     @property
     def fields(self):
-        """Gets the fields of this ShowJobsRequest.
+        r"""Gets the fields of this ShowJobsRequest.
 
         :return: The fields of this ShowJobsRequest.
         :rtype: list[str]
@@ -80,7 +80,7 @@ class ShowJobsRequest:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this ShowJobsRequest.
+        r"""Sets the fields of this ShowJobsRequest.
 
         :param fields: The fields of this ShowJobsRequest.
         :type fields: list[str]

@@ -26,7 +26,7 @@ class UpdateWelcomeSpeechSwitchResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """UpdateWelcomeSpeechSwitchResponse
+        r"""UpdateWelcomeSpeechSwitchResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateWelcomeSpeechSwitchResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdateWelcomeSpeechSwitchResponse.
+        r"""Gets the x_request_id of this UpdateWelcomeSpeechSwitchResponse.
 
         :return: The x_request_id of this UpdateWelcomeSpeechSwitchResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class UpdateWelcomeSpeechSwitchResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdateWelcomeSpeechSwitchResponse.
+        r"""Sets the x_request_id of this UpdateWelcomeSpeechSwitchResponse.
 
         :param x_request_id: The x_request_id of this UpdateWelcomeSpeechSwitchResponse.
         :type x_request_id: str

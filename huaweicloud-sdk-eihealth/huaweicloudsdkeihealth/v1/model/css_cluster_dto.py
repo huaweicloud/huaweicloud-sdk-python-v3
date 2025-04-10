@@ -31,7 +31,7 @@ class CssClusterDto:
     }
 
     def __init__(self, id=None, name=None, storage=None, import_time=None):
-        """CssClusterDto
+        r"""CssClusterDto
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class CssClusterDto:
 
     @property
     def id(self):
-        """Gets the id of this CssClusterDto.
+        r"""Gets the id of this CssClusterDto.
 
         已绑定的集群id
 
@@ -75,7 +75,7 @@ class CssClusterDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CssClusterDto.
+        r"""Sets the id of this CssClusterDto.
 
         已绑定的集群id
 
@@ -86,7 +86,7 @@ class CssClusterDto:
 
     @property
     def name(self):
-        """Gets the name of this CssClusterDto.
+        r"""Gets the name of this CssClusterDto.
 
         css集群名称
 
@@ -97,7 +97,7 @@ class CssClusterDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CssClusterDto.
+        r"""Sets the name of this CssClusterDto.
 
         css集群名称
 
@@ -108,7 +108,7 @@ class CssClusterDto:
 
     @property
     def storage(self):
-        """Gets the storage of this CssClusterDto.
+        r"""Gets the storage of this CssClusterDto.
 
         css集群总存储
 
@@ -119,7 +119,7 @@ class CssClusterDto:
 
     @storage.setter
     def storage(self, storage):
-        """Sets the storage of this CssClusterDto.
+        r"""Sets the storage of this CssClusterDto.
 
         css集群总存储
 
@@ -130,7 +130,7 @@ class CssClusterDto:
 
     @property
     def import_time(self):
-        """Gets the import_time of this CssClusterDto.
+        r"""Gets the import_time of this CssClusterDto.
 
         css集群导入时间
 
@@ -141,7 +141,7 @@ class CssClusterDto:
 
     @import_time.setter
     def import_time(self, import_time):
-        """Sets the import_time of this CssClusterDto.
+        r"""Sets the import_time of this CssClusterDto.
 
         css集群导入时间
 

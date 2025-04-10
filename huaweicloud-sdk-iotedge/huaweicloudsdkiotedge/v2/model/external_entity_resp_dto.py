@@ -37,7 +37,7 @@ class ExternalEntityRespDTO:
     }
 
     def __init__(self, node_id=None, space_id=None, external_id=None, protocol=None, connection_type=None, create_time=None, last_modify_time=None):
-        """ExternalEntityRespDTO
+        r"""ExternalEntityRespDTO
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ExternalEntityRespDTO:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ExternalEntityRespDTO.
+        r"""Gets the node_id of this ExternalEntityRespDTO.
 
         节点ID
 
@@ -96,7 +96,7 @@ class ExternalEntityRespDTO:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ExternalEntityRespDTO.
+        r"""Sets the node_id of this ExternalEntityRespDTO.
 
         节点ID
 
@@ -107,7 +107,7 @@ class ExternalEntityRespDTO:
 
     @property
     def space_id(self):
-        """Gets the space_id of this ExternalEntityRespDTO.
+        r"""Gets the space_id of this ExternalEntityRespDTO.
 
         资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数指定创建的外部实体归属到IoDA哪个资源空间下的边缘节点设备下，否则创建的外部实体将会归属到默认资源空间下对应的边缘节点下,对应于IoDA的app_id.
 
@@ -118,7 +118,7 @@ class ExternalEntityRespDTO:
 
     @space_id.setter
     def space_id(self, space_id):
-        """Sets the space_id of this ExternalEntityRespDTO.
+        r"""Sets the space_id of this ExternalEntityRespDTO.
 
         资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数指定创建的外部实体归属到IoDA哪个资源空间下的边缘节点设备下，否则创建的外部实体将会归属到默认资源空间下对应的边缘节点下,对应于IoDA的app_id.
 
@@ -129,7 +129,7 @@ class ExternalEntityRespDTO:
 
     @property
     def external_id(self):
-        """Gets the external_id of this ExternalEntityRespDTO.
+        r"""Gets the external_id of this ExternalEntityRespDTO.
 
         外部实体ID
 
@@ -140,7 +140,7 @@ class ExternalEntityRespDTO:
 
     @external_id.setter
     def external_id(self, external_id):
-        """Sets the external_id of this ExternalEntityRespDTO.
+        r"""Sets the external_id of this ExternalEntityRespDTO.
 
         外部实体ID
 
@@ -151,7 +151,7 @@ class ExternalEntityRespDTO:
 
     @property
     def protocol(self):
-        """Gets the protocol of this ExternalEntityRespDTO.
+        r"""Gets the protocol of this ExternalEntityRespDTO.
 
         接入协议类型
 
@@ -162,7 +162,7 @@ class ExternalEntityRespDTO:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this ExternalEntityRespDTO.
+        r"""Sets the protocol of this ExternalEntityRespDTO.
 
         接入协议类型
 
@@ -173,7 +173,7 @@ class ExternalEntityRespDTO:
 
     @property
     def connection_type(self):
-        """Gets the connection_type of this ExternalEntityRespDTO.
+        r"""Gets the connection_type of this ExternalEntityRespDTO.
 
         连接类型(client和server)
 
@@ -184,7 +184,7 @@ class ExternalEntityRespDTO:
 
     @connection_type.setter
     def connection_type(self, connection_type):
-        """Sets the connection_type of this ExternalEntityRespDTO.
+        r"""Sets the connection_type of this ExternalEntityRespDTO.
 
         连接类型(client和server)
 
@@ -195,7 +195,7 @@ class ExternalEntityRespDTO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ExternalEntityRespDTO.
+        r"""Gets the create_time of this ExternalEntityRespDTO.
 
         创建时间
 
@@ -206,7 +206,7 @@ class ExternalEntityRespDTO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ExternalEntityRespDTO.
+        r"""Sets the create_time of this ExternalEntityRespDTO.
 
         创建时间
 
@@ -217,7 +217,7 @@ class ExternalEntityRespDTO:
 
     @property
     def last_modify_time(self):
-        """Gets the last_modify_time of this ExternalEntityRespDTO.
+        r"""Gets the last_modify_time of this ExternalEntityRespDTO.
 
         最后修改时间
 
@@ -228,7 +228,7 @@ class ExternalEntityRespDTO:
 
     @last_modify_time.setter
     def last_modify_time(self, last_modify_time):
-        """Sets the last_modify_time of this ExternalEntityRespDTO.
+        r"""Sets the last_modify_time of this ExternalEntityRespDTO.
 
         最后修改时间
 

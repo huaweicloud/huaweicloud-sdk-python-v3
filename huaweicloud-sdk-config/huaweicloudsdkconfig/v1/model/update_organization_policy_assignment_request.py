@@ -29,7 +29,7 @@ class UpdateOrganizationPolicyAssignmentRequest:
     }
 
     def __init__(self, organization_id=None, organization_policy_assignment_id=None, body=None):
-        """UpdateOrganizationPolicyAssignmentRequest
+        r"""UpdateOrganizationPolicyAssignmentRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateOrganizationPolicyAssignmentRequest:
 
     @property
     def organization_id(self):
-        """Gets the organization_id of this UpdateOrganizationPolicyAssignmentRequest.
+        r"""Gets the organization_id of this UpdateOrganizationPolicyAssignmentRequest.
 
         组织ID。
 
@@ -66,7 +66,7 @@ class UpdateOrganizationPolicyAssignmentRequest:
 
     @organization_id.setter
     def organization_id(self, organization_id):
-        """Sets the organization_id of this UpdateOrganizationPolicyAssignmentRequest.
+        r"""Sets the organization_id of this UpdateOrganizationPolicyAssignmentRequest.
 
         组织ID。
 
@@ -77,7 +77,7 @@ class UpdateOrganizationPolicyAssignmentRequest:
 
     @property
     def organization_policy_assignment_id(self):
-        """Gets the organization_policy_assignment_id of this UpdateOrganizationPolicyAssignmentRequest.
+        r"""Gets the organization_policy_assignment_id of this UpdateOrganizationPolicyAssignmentRequest.
 
         组织合规规则ID。
 
@@ -88,7 +88,7 @@ class UpdateOrganizationPolicyAssignmentRequest:
 
     @organization_policy_assignment_id.setter
     def organization_policy_assignment_id(self, organization_policy_assignment_id):
-        """Sets the organization_policy_assignment_id of this UpdateOrganizationPolicyAssignmentRequest.
+        r"""Sets the organization_policy_assignment_id of this UpdateOrganizationPolicyAssignmentRequest.
 
         组织合规规则ID。
 
@@ -99,7 +99,7 @@ class UpdateOrganizationPolicyAssignmentRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateOrganizationPolicyAssignmentRequest.
+        r"""Gets the body of this UpdateOrganizationPolicyAssignmentRequest.
 
         :return: The body of this UpdateOrganizationPolicyAssignmentRequest.
         :rtype: :class:`huaweicloudsdkconfig.v1.OrganizationPolicyAssignmentRequest`
@@ -108,7 +108,7 @@ class UpdateOrganizationPolicyAssignmentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateOrganizationPolicyAssignmentRequest.
+        r"""Sets the body of this UpdateOrganizationPolicyAssignmentRequest.
 
         :param body: The body of this UpdateOrganizationPolicyAssignmentRequest.
         :type body: :class:`huaweicloudsdkconfig.v1.OrganizationPolicyAssignmentRequest`

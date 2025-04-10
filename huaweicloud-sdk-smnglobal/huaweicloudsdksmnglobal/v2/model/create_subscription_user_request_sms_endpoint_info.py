@@ -25,7 +25,7 @@ class CreateSubscriptionUserRequestSmsEndpointInfo:
     }
 
     def __init__(self, endpoint=None):
-        """CreateSubscriptionUserRequestSmsEndpointInfo
+        r"""CreateSubscriptionUserRequestSmsEndpointInfo
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateSubscriptionUserRequestSmsEndpointInfo:
 
     @property
     def endpoint(self):
-        """Gets the endpoint of this CreateSubscriptionUserRequestSmsEndpointInfo.
+        r"""Gets the endpoint of this CreateSubscriptionUserRequestSmsEndpointInfo.
 
         终端地址。必须是一个电话号码。
 
@@ -53,7 +53,7 @@ class CreateSubscriptionUserRequestSmsEndpointInfo:
 
     @endpoint.setter
     def endpoint(self, endpoint):
-        """Sets the endpoint of this CreateSubscriptionUserRequestSmsEndpointInfo.
+        r"""Sets the endpoint of this CreateSubscriptionUserRequestSmsEndpointInfo.
 
         终端地址。必须是一个电话号码。
 

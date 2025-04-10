@@ -29,7 +29,7 @@ class HttpQueryCfwAccessControllerLogsResponseDTOData:
     }
 
     def __init__(self, total=None, limit=None, records=None):
-        """HttpQueryCfwAccessControllerLogsResponseDTOData
+        r"""HttpQueryCfwAccessControllerLogsResponseDTOData
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class HttpQueryCfwAccessControllerLogsResponseDTOData:
 
     @property
     def total(self):
-        """Gets the total of this HttpQueryCfwAccessControllerLogsResponseDTOData.
+        r"""Gets the total of this HttpQueryCfwAccessControllerLogsResponseDTOData.
 
         查询访问控制日志记录总数
 
@@ -68,7 +68,7 @@ class HttpQueryCfwAccessControllerLogsResponseDTOData:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this HttpQueryCfwAccessControllerLogsResponseDTOData.
+        r"""Sets the total of this HttpQueryCfwAccessControllerLogsResponseDTOData.
 
         查询访问控制日志记录总数
 
@@ -79,7 +79,7 @@ class HttpQueryCfwAccessControllerLogsResponseDTOData:
 
     @property
     def limit(self):
-        """Gets the limit of this HttpQueryCfwAccessControllerLogsResponseDTOData.
+        r"""Gets the limit of this HttpQueryCfwAccessControllerLogsResponseDTOData.
 
         每页显示个数，范围为1-1024
 
@@ -90,7 +90,7 @@ class HttpQueryCfwAccessControllerLogsResponseDTOData:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this HttpQueryCfwAccessControllerLogsResponseDTOData.
+        r"""Sets the limit of this HttpQueryCfwAccessControllerLogsResponseDTOData.
 
         每页显示个数，范围为1-1024
 
@@ -101,7 +101,7 @@ class HttpQueryCfwAccessControllerLogsResponseDTOData:
 
     @property
     def records(self):
-        """Gets the records of this HttpQueryCfwAccessControllerLogsResponseDTOData.
+        r"""Gets the records of this HttpQueryCfwAccessControllerLogsResponseDTOData.
 
         查询访问控制日志记录
 
@@ -112,7 +112,7 @@ class HttpQueryCfwAccessControllerLogsResponseDTOData:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this HttpQueryCfwAccessControllerLogsResponseDTOData.
+        r"""Sets the records of this HttpQueryCfwAccessControllerLogsResponseDTOData.
 
         查询访问控制日志记录
 

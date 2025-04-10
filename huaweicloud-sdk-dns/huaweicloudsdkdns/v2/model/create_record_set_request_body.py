@@ -37,7 +37,7 @@ class CreateRecordSetRequestBody:
     }
 
     def __init__(self, name=None, description=None, type=None, status=None, ttl=None, records=None, tags=None):
-        """CreateRecordSetRequestBody
+        r"""CreateRecordSetRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class CreateRecordSetRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateRecordSetRequestBody.
+        r"""Gets the name of this CreateRecordSetRequestBody.
 
         域名，后缀需以zone name结束且为FQDN（即以“.”号结束的完整主机名）。
 
@@ -93,7 +93,7 @@ class CreateRecordSetRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateRecordSetRequestBody.
+        r"""Sets the name of this CreateRecordSetRequestBody.
 
         域名，后缀需以zone name结束且为FQDN（即以“.”号结束的完整主机名）。
 
@@ -104,7 +104,7 @@ class CreateRecordSetRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateRecordSetRequestBody.
+        r"""Gets the description of this CreateRecordSetRequestBody.
 
         可选配置，对域名的描述。  长度不超过255个字符。  默认值为空。
 
@@ -115,7 +115,7 @@ class CreateRecordSetRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateRecordSetRequestBody.
+        r"""Sets the description of this CreateRecordSetRequestBody.
 
         可选配置，对域名的描述。  长度不超过255个字符。  默认值为空。
 
@@ -126,7 +126,7 @@ class CreateRecordSetRequestBody:
 
     @property
     def type(self):
-        """Gets the type of this CreateRecordSetRequestBody.
+        r"""Gets the type of this CreateRecordSetRequestBody.
 
         Record Set的类型。  公网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。  内网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、SRV。
 
@@ -137,7 +137,7 @@ class CreateRecordSetRequestBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateRecordSetRequestBody.
+        r"""Sets the type of this CreateRecordSetRequestBody.
 
         Record Set的类型。  公网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、NS、SRV、CAA。  内网域名场景的记录类型: A、AAAA、MX、CNAME、TXT、SRV。
 
@@ -148,7 +148,7 @@ class CreateRecordSetRequestBody:
 
     @property
     def status(self):
-        """Gets the status of this CreateRecordSetRequestBody.
+        r"""Gets the status of this CreateRecordSetRequestBody.
 
         解析记录的状态。 取值范围： ENABLE：启用 DISABLE：暂停 默认值为ENABLE。
 
@@ -159,7 +159,7 @@ class CreateRecordSetRequestBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateRecordSetRequestBody.
+        r"""Sets the status of this CreateRecordSetRequestBody.
 
         解析记录的状态。 取值范围： ENABLE：启用 DISABLE：暂停 默认值为ENABLE。
 
@@ -170,7 +170,7 @@ class CreateRecordSetRequestBody:
 
     @property
     def ttl(self):
-        """Gets the ttl of this CreateRecordSetRequestBody.
+        r"""Gets the ttl of this CreateRecordSetRequestBody.
 
         解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。 如果您的服务地址经常更换，建议TTL值设置相对小些，反之，建议设置相对大些。
 
@@ -181,7 +181,7 @@ class CreateRecordSetRequestBody:
 
     @ttl.setter
     def ttl(self, ttl):
-        """Sets the ttl of this CreateRecordSetRequestBody.
+        r"""Sets the ttl of this CreateRecordSetRequestBody.
 
         解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。 如果您的服务地址经常更换，建议TTL值设置相对小些，反之，建议设置相对大些。
 
@@ -192,7 +192,7 @@ class CreateRecordSetRequestBody:
 
     @property
     def records(self):
-        """Gets the records of this CreateRecordSetRequestBody.
+        r"""Gets the records of this CreateRecordSetRequestBody.
 
         解析记录的值。不同类型解析记录对应的值的规则不同。
 
@@ -203,7 +203,7 @@ class CreateRecordSetRequestBody:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this CreateRecordSetRequestBody.
+        r"""Sets the records of this CreateRecordSetRequestBody.
 
         解析记录的值。不同类型解析记录对应的值的规则不同。
 
@@ -214,7 +214,7 @@ class CreateRecordSetRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateRecordSetRequestBody.
+        r"""Gets the tags of this CreateRecordSetRequestBody.
 
         资源标签。
 
@@ -225,7 +225,7 @@ class CreateRecordSetRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateRecordSetRequestBody.
+        r"""Sets the tags of this CreateRecordSetRequestBody.
 
         资源标签。
 

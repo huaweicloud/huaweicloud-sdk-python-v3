@@ -43,7 +43,7 @@ class BusinessCardTextConfig:
     }
 
     def __init__(self, name=None, company=None, title=None, mobile_phone=None, phone=None, mail=None, address=None, other1=None, other2=None, other3=None):
-        """BusinessCardTextConfig
+        r"""BusinessCardTextConfig
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class BusinessCardTextConfig:
 
     @property
     def name(self):
-        """Gets the name of this BusinessCardTextConfig.
+        r"""Gets the name of this BusinessCardTextConfig.
 
         姓名。
 
@@ -117,7 +117,7 @@ class BusinessCardTextConfig:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BusinessCardTextConfig.
+        r"""Sets the name of this BusinessCardTextConfig.
 
         姓名。
 
@@ -128,7 +128,7 @@ class BusinessCardTextConfig:
 
     @property
     def company(self):
-        """Gets the company of this BusinessCardTextConfig.
+        r"""Gets the company of this BusinessCardTextConfig.
 
         企业或组织名称。
 
@@ -139,7 +139,7 @@ class BusinessCardTextConfig:
 
     @company.setter
     def company(self, company):
-        """Sets the company of this BusinessCardTextConfig.
+        r"""Sets the company of this BusinessCardTextConfig.
 
         企业或组织名称。
 
@@ -150,7 +150,7 @@ class BusinessCardTextConfig:
 
     @property
     def title(self):
-        """Gets the title of this BusinessCardTextConfig.
+        r"""Gets the title of this BusinessCardTextConfig.
 
         职位名称。
 
@@ -161,7 +161,7 @@ class BusinessCardTextConfig:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this BusinessCardTextConfig.
+        r"""Sets the title of this BusinessCardTextConfig.
 
         职位名称。
 
@@ -172,7 +172,7 @@ class BusinessCardTextConfig:
 
     @property
     def mobile_phone(self):
-        """Gets the mobile_phone of this BusinessCardTextConfig.
+        r"""Gets the mobile_phone of this BusinessCardTextConfig.
 
         手机号码。
 
@@ -183,7 +183,7 @@ class BusinessCardTextConfig:
 
     @mobile_phone.setter
     def mobile_phone(self, mobile_phone):
-        """Sets the mobile_phone of this BusinessCardTextConfig.
+        r"""Sets the mobile_phone of this BusinessCardTextConfig.
 
         手机号码。
 
@@ -194,7 +194,7 @@ class BusinessCardTextConfig:
 
     @property
     def phone(self):
-        """Gets the phone of this BusinessCardTextConfig.
+        r"""Gets the phone of this BusinessCardTextConfig.
 
         固话号码。
 
@@ -205,7 +205,7 @@ class BusinessCardTextConfig:
 
     @phone.setter
     def phone(self, phone):
-        """Sets the phone of this BusinessCardTextConfig.
+        r"""Sets the phone of this BusinessCardTextConfig.
 
         固话号码。
 
@@ -216,7 +216,7 @@ class BusinessCardTextConfig:
 
     @property
     def mail(self):
-        """Gets the mail of this BusinessCardTextConfig.
+        r"""Gets the mail of this BusinessCardTextConfig.
 
         电子邮件地址。
 
@@ -227,7 +227,7 @@ class BusinessCardTextConfig:
 
     @mail.setter
     def mail(self, mail):
-        """Sets the mail of this BusinessCardTextConfig.
+        r"""Sets the mail of this BusinessCardTextConfig.
 
         电子邮件地址。
 
@@ -238,7 +238,7 @@ class BusinessCardTextConfig:
 
     @property
     def address(self):
-        """Gets the address of this BusinessCardTextConfig.
+        r"""Gets the address of this BusinessCardTextConfig.
 
         地址。
 
@@ -249,7 +249,7 @@ class BusinessCardTextConfig:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this BusinessCardTextConfig.
+        r"""Sets the address of this BusinessCardTextConfig.
 
         地址。
 
@@ -260,7 +260,7 @@ class BusinessCardTextConfig:
 
     @property
     def other1(self):
-        """Gets the other1 of this BusinessCardTextConfig.
+        r"""Gets the other1 of this BusinessCardTextConfig.
 
         其他信息1。可填写一些公司广告语等
 
@@ -271,7 +271,7 @@ class BusinessCardTextConfig:
 
     @other1.setter
     def other1(self, other1):
-        """Sets the other1 of this BusinessCardTextConfig.
+        r"""Sets the other1 of this BusinessCardTextConfig.
 
         其他信息1。可填写一些公司广告语等
 
@@ -282,7 +282,7 @@ class BusinessCardTextConfig:
 
     @property
     def other2(self):
-        """Gets the other2 of this BusinessCardTextConfig.
+        r"""Gets the other2 of this BusinessCardTextConfig.
 
         其他信息2。可填写一些公司广告语等
 
@@ -293,7 +293,7 @@ class BusinessCardTextConfig:
 
     @other2.setter
     def other2(self, other2):
-        """Sets the other2 of this BusinessCardTextConfig.
+        r"""Sets the other2 of this BusinessCardTextConfig.
 
         其他信息2。可填写一些公司广告语等
 
@@ -304,7 +304,7 @@ class BusinessCardTextConfig:
 
     @property
     def other3(self):
-        """Gets the other3 of this BusinessCardTextConfig.
+        r"""Gets the other3 of this BusinessCardTextConfig.
 
         其他信息3。可填写一些公司广告语等
 
@@ -315,7 +315,7 @@ class BusinessCardTextConfig:
 
     @other3.setter
     def other3(self, other3):
-        """Sets the other3 of this BusinessCardTextConfig.
+        r"""Sets the other3 of this BusinessCardTextConfig.
 
         其他信息3。可填写一些公司广告语等
 

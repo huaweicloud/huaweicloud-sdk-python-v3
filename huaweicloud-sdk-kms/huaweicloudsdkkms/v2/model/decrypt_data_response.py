@@ -30,7 +30,7 @@ class DecryptDataResponse(SdkResponse):
     }
 
     def __init__(self, key_id=None, plain_text=None, plain_text_base64=None):
-        """DecryptDataResponse
+        r"""DecryptDataResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class DecryptDataResponse(SdkResponse):
 
     @property
     def key_id(self):
-        """Gets the key_id of this DecryptDataResponse.
+        r"""Gets the key_id of this DecryptDataResponse.
 
         密钥ID。
 
@@ -69,7 +69,7 @@ class DecryptDataResponse(SdkResponse):
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this DecryptDataResponse.
+        r"""Sets the key_id of this DecryptDataResponse.
 
         密钥ID。
 
@@ -80,7 +80,7 @@ class DecryptDataResponse(SdkResponse):
 
     @property
     def plain_text(self):
-        """Gets the plain_text of this DecryptDataResponse.
+        r"""Gets the plain_text of this DecryptDataResponse.
 
         明文。
 
@@ -91,7 +91,7 @@ class DecryptDataResponse(SdkResponse):
 
     @plain_text.setter
     def plain_text(self, plain_text):
-        """Sets the plain_text of this DecryptDataResponse.
+        r"""Sets the plain_text of this DecryptDataResponse.
 
         明文。
 
@@ -102,7 +102,7 @@ class DecryptDataResponse(SdkResponse):
 
     @property
     def plain_text_base64(self):
-        """Gets the plain_text_base64 of this DecryptDataResponse.
+        r"""Gets the plain_text_base64 of this DecryptDataResponse.
 
         明文的Base64值，在非对称加密场景下，若加密的明文中含有不可见字符，则解密结果以该值为准。
 
@@ -113,7 +113,7 @@ class DecryptDataResponse(SdkResponse):
 
     @plain_text_base64.setter
     def plain_text_base64(self, plain_text_base64):
-        """Sets the plain_text_base64 of this DecryptDataResponse.
+        r"""Sets the plain_text_base64 of this DecryptDataResponse.
 
         明文的Base64值，在非对称加密场景下，若加密的明文中含有不可见字符，则解密结果以该值为准。
 

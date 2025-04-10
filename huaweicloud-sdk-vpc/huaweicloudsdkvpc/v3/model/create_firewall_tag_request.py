@@ -27,7 +27,7 @@ class CreateFirewallTagRequest:
     }
 
     def __init__(self, firewall_id=None, body=None):
-        """CreateFirewallTagRequest
+        r"""CreateFirewallTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateFirewallTagRequest:
 
     @property
     def firewall_id(self):
-        """Gets the firewall_id of this CreateFirewallTagRequest.
+        r"""Gets the firewall_id of this CreateFirewallTagRequest.
 
         功能说明：ACL唯一标识 取值范围：合法UUID 约束：ID对应的ACL必须存在
 
@@ -60,7 +60,7 @@ class CreateFirewallTagRequest:
 
     @firewall_id.setter
     def firewall_id(self, firewall_id):
-        """Sets the firewall_id of this CreateFirewallTagRequest.
+        r"""Sets the firewall_id of this CreateFirewallTagRequest.
 
         功能说明：ACL唯一标识 取值范围：合法UUID 约束：ID对应的ACL必须存在
 
@@ -71,7 +71,7 @@ class CreateFirewallTagRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateFirewallTagRequest.
+        r"""Gets the body of this CreateFirewallTagRequest.
 
         :return: The body of this CreateFirewallTagRequest.
         :rtype: :class:`huaweicloudsdkvpc.v3.CreateFirewallTagRequestBody`
@@ -80,7 +80,7 @@ class CreateFirewallTagRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateFirewallTagRequest.
+        r"""Sets the body of this CreateFirewallTagRequest.
 
         :param body: The body of this CreateFirewallTagRequest.
         :type body: :class:`huaweicloudsdkvpc.v3.CreateFirewallTagRequestBody`

@@ -25,7 +25,7 @@ class RollbackApprovalResultData:
     }
 
     def __init__(self, value=None):
-        """RollbackApprovalResultData
+        r"""RollbackApprovalResultData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RollbackApprovalResultData:
 
     @property
     def value(self):
-        """Gets the value of this RollbackApprovalResultData.
+        r"""Gets the value of this RollbackApprovalResultData.
 
         审批单撤回的对象个数
 
@@ -54,7 +54,7 @@ class RollbackApprovalResultData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this RollbackApprovalResultData.
+        r"""Sets the value of this RollbackApprovalResultData.
 
         审批单撤回的对象个数
 

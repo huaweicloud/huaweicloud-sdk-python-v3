@@ -25,7 +25,7 @@ class BatchChangeServerImageRequest:
     }
 
     def __init__(self, body=None):
-        """BatchChangeServerImageRequest
+        r"""BatchChangeServerImageRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchChangeServerImageRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchChangeServerImageRequest.
+        r"""Gets the body of this BatchChangeServerImageRequest.
 
         :return: The body of this BatchChangeServerImageRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.BatchChangeServerImageReq`
@@ -52,7 +52,7 @@ class BatchChangeServerImageRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchChangeServerImageRequest.
+        r"""Sets the body of this BatchChangeServerImageRequest.
 
         :param body: The body of this BatchChangeServerImageRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.BatchChangeServerImageReq`

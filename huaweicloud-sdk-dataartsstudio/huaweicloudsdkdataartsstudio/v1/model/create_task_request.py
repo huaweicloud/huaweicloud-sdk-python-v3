@@ -27,7 +27,7 @@ class CreateTaskRequest:
     }
 
     def __init__(self, workspace=None, body=None):
-        """CreateTaskRequest
+        r"""CreateTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateTaskRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this CreateTaskRequest.
+        r"""Gets the workspace of this CreateTaskRequest.
 
         DataArts Studio工作空间ID
 
@@ -60,7 +60,7 @@ class CreateTaskRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this CreateTaskRequest.
+        r"""Sets the workspace of this CreateTaskRequest.
 
         DataArts Studio工作空间ID
 
@@ -71,7 +71,7 @@ class CreateTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateTaskRequest.
+        r"""Gets the body of this CreateTaskRequest.
 
         :return: The body of this CreateTaskRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.MetadataCollectionTask`
@@ -80,7 +80,7 @@ class CreateTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTaskRequest.
+        r"""Sets the body of this CreateTaskRequest.
 
         :param body: The body of this CreateTaskRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.MetadataCollectionTask`

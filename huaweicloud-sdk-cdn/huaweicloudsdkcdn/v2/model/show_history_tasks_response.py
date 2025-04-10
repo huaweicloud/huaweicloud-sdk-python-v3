@@ -30,7 +30,7 @@ class ShowHistoryTasksResponse(SdkResponse):
     }
 
     def __init__(self, total=None, tasks=None, x_request_id=None):
-        """ShowHistoryTasksResponse
+        r"""ShowHistoryTasksResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowHistoryTasksResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowHistoryTasksResponse.
+        r"""Gets the total of this ShowHistoryTasksResponse.
 
         总共的任务个数。
 
@@ -69,7 +69,7 @@ class ShowHistoryTasksResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowHistoryTasksResponse.
+        r"""Sets the total of this ShowHistoryTasksResponse.
 
         总共的任务个数。
 
@@ -80,7 +80,7 @@ class ShowHistoryTasksResponse(SdkResponse):
 
     @property
     def tasks(self):
-        """Gets the tasks of this ShowHistoryTasksResponse.
+        r"""Gets the tasks of this ShowHistoryTasksResponse.
 
         日志列表数据
 
@@ -91,7 +91,7 @@ class ShowHistoryTasksResponse(SdkResponse):
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this ShowHistoryTasksResponse.
+        r"""Sets the tasks of this ShowHistoryTasksResponse.
 
         日志列表数据
 
@@ -102,7 +102,7 @@ class ShowHistoryTasksResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowHistoryTasksResponse.
+        r"""Gets the x_request_id of this ShowHistoryTasksResponse.
 
         :return: The x_request_id of this ShowHistoryTasksResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ShowHistoryTasksResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowHistoryTasksResponse.
+        r"""Sets the x_request_id of this ShowHistoryTasksResponse.
 
         :param x_request_id: The x_request_id of this ShowHistoryTasksResponse.
         :type x_request_id: str

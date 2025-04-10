@@ -25,7 +25,7 @@ class CreateEndpointRequestBody:
     }
 
     def __init__(self, endpoint=None):
-        """CreateEndpointRequestBody
+        r"""CreateEndpointRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateEndpointRequestBody:
 
     @property
     def endpoint(self):
-        """Gets the endpoint of this CreateEndpointRequestBody.
+        r"""Gets the endpoint of this CreateEndpointRequestBody.
 
         :return: The endpoint of this CreateEndpointRequestBody.
         :rtype: :class:`huaweicloudsdkga.v1.CreateEndpointOption`
@@ -51,7 +51,7 @@ class CreateEndpointRequestBody:
 
     @endpoint.setter
     def endpoint(self, endpoint):
-        """Sets the endpoint of this CreateEndpointRequestBody.
+        r"""Sets the endpoint of this CreateEndpointRequestBody.
 
         :param endpoint: The endpoint of this CreateEndpointRequestBody.
         :type endpoint: :class:`huaweicloudsdkga.v1.CreateEndpointOption`

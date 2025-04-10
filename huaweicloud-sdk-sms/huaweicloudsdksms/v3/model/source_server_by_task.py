@@ -25,7 +25,7 @@ class SourceServerByTask:
     }
 
     def __init__(self, id=None):
-        """SourceServerByTask
+        r"""SourceServerByTask
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SourceServerByTask:
 
     @property
     def id(self):
-        """Gets the id of this SourceServerByTask.
+        r"""Gets the id of this SourceServerByTask.
 
         源端服务器ID
 
@@ -53,7 +53,7 @@ class SourceServerByTask:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SourceServerByTask.
+        r"""Sets the id of this SourceServerByTask.
 
         源端服务器ID
 

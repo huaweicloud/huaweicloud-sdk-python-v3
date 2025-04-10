@@ -28,7 +28,7 @@ class ListDesktopSnapshotResponse(SdkResponse):
     }
 
     def __init__(self, desktop_snapshots=None, total_count=None):
-        """ListDesktopSnapshotResponse
+        r"""ListDesktopSnapshotResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDesktopSnapshotResponse(SdkResponse):
 
     @property
     def desktop_snapshots(self):
-        """Gets the desktop_snapshots of this ListDesktopSnapshotResponse.
+        r"""Gets the desktop_snapshots of this ListDesktopSnapshotResponse.
 
         桌面快照详情列表。
 
@@ -62,7 +62,7 @@ class ListDesktopSnapshotResponse(SdkResponse):
 
     @desktop_snapshots.setter
     def desktop_snapshots(self, desktop_snapshots):
-        """Sets the desktop_snapshots of this ListDesktopSnapshotResponse.
+        r"""Sets the desktop_snapshots of this ListDesktopSnapshotResponse.
 
         桌面快照详情列表。
 
@@ -73,7 +73,7 @@ class ListDesktopSnapshotResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListDesktopSnapshotResponse.
+        r"""Gets the total_count of this ListDesktopSnapshotResponse.
 
         桌面快照总数。
 
@@ -84,7 +84,7 @@ class ListDesktopSnapshotResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListDesktopSnapshotResponse.
+        r"""Sets the total_count of this ListDesktopSnapshotResponse.
 
         桌面快照总数。
 

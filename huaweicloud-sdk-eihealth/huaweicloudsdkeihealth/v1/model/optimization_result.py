@@ -51,7 +51,7 @@ class OptimizationResult:
     }
 
     def __init__(self, name=None, smiles=None, num_rounds=None, num_trials_per_round=None, num_expected=None, num_strong_constraints=None, num_weak_constraints=None, prop_names=None, original=None, result=None, strong_constraints=None, weak_constraints=None, binding_site=None, custom_props=None):
-        """OptimizationResult
+        r"""OptimizationResult
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class OptimizationResult:
 
     @property
     def name(self):
-        """Gets the name of this OptimizationResult.
+        r"""Gets the name of this OptimizationResult.
 
         任务名
 
@@ -145,7 +145,7 @@ class OptimizationResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this OptimizationResult.
+        r"""Sets the name of this OptimizationResult.
 
         任务名
 
@@ -156,7 +156,7 @@ class OptimizationResult:
 
     @property
     def smiles(self):
-        """Gets the smiles of this OptimizationResult.
+        r"""Gets the smiles of this OptimizationResult.
 
         分子SMILES表达式
 
@@ -167,7 +167,7 @@ class OptimizationResult:
 
     @smiles.setter
     def smiles(self, smiles):
-        """Sets the smiles of this OptimizationResult.
+        r"""Sets the smiles of this OptimizationResult.
 
         分子SMILES表达式
 
@@ -178,7 +178,7 @@ class OptimizationResult:
 
     @property
     def num_rounds(self):
-        """Gets the num_rounds of this OptimizationResult.
+        r"""Gets the num_rounds of this OptimizationResult.
 
         总生成轮数
 
@@ -189,7 +189,7 @@ class OptimizationResult:
 
     @num_rounds.setter
     def num_rounds(self, num_rounds):
-        """Sets the num_rounds of this OptimizationResult.
+        r"""Sets the num_rounds of this OptimizationResult.
 
         总生成轮数
 
@@ -200,7 +200,7 @@ class OptimizationResult:
 
     @property
     def num_trials_per_round(self):
-        """Gets the num_trials_per_round of this OptimizationResult.
+        r"""Gets the num_trials_per_round of this OptimizationResult.
 
         每轮生成数量
 
@@ -211,7 +211,7 @@ class OptimizationResult:
 
     @num_trials_per_round.setter
     def num_trials_per_round(self, num_trials_per_round):
-        """Sets the num_trials_per_round of this OptimizationResult.
+        r"""Sets the num_trials_per_round of this OptimizationResult.
 
         每轮生成数量
 
@@ -222,7 +222,7 @@ class OptimizationResult:
 
     @property
     def num_expected(self):
-        """Gets the num_expected of this OptimizationResult.
+        r"""Gets the num_expected of this OptimizationResult.
 
         期望条目数
 
@@ -233,7 +233,7 @@ class OptimizationResult:
 
     @num_expected.setter
     def num_expected(self, num_expected):
-        """Sets the num_expected of this OptimizationResult.
+        r"""Sets the num_expected of this OptimizationResult.
 
         期望条目数
 
@@ -244,7 +244,7 @@ class OptimizationResult:
 
     @property
     def num_strong_constraints(self):
-        """Gets the num_strong_constraints of this OptimizationResult.
+        r"""Gets the num_strong_constraints of this OptimizationResult.
 
         强约束数量
 
@@ -255,7 +255,7 @@ class OptimizationResult:
 
     @num_strong_constraints.setter
     def num_strong_constraints(self, num_strong_constraints):
-        """Sets the num_strong_constraints of this OptimizationResult.
+        r"""Sets the num_strong_constraints of this OptimizationResult.
 
         强约束数量
 
@@ -266,7 +266,7 @@ class OptimizationResult:
 
     @property
     def num_weak_constraints(self):
-        """Gets the num_weak_constraints of this OptimizationResult.
+        r"""Gets the num_weak_constraints of this OptimizationResult.
 
         弱约束数量
 
@@ -277,7 +277,7 @@ class OptimizationResult:
 
     @num_weak_constraints.setter
     def num_weak_constraints(self, num_weak_constraints):
-        """Sets the num_weak_constraints of this OptimizationResult.
+        r"""Sets the num_weak_constraints of this OptimizationResult.
 
         弱约束数量
 
@@ -288,7 +288,7 @@ class OptimizationResult:
 
     @property
     def prop_names(self):
-        """Gets the prop_names of this OptimizationResult.
+        r"""Gets the prop_names of this OptimizationResult.
 
         分子ADMET属性名列表
 
@@ -299,7 +299,7 @@ class OptimizationResult:
 
     @prop_names.setter
     def prop_names(self, prop_names):
-        """Sets the prop_names of this OptimizationResult.
+        r"""Sets the prop_names of this OptimizationResult.
 
         分子ADMET属性名列表
 
@@ -310,7 +310,7 @@ class OptimizationResult:
 
     @property
     def original(self):
-        """Gets the original of this OptimizationResult.
+        r"""Gets the original of this OptimizationResult.
 
         :return: The original of this OptimizationResult.
         :rtype: :class:`huaweicloudsdkeihealth.v1.PlainMoleculeItem`
@@ -319,7 +319,7 @@ class OptimizationResult:
 
     @original.setter
     def original(self, original):
-        """Sets the original of this OptimizationResult.
+        r"""Sets the original of this OptimizationResult.
 
         :param original: The original of this OptimizationResult.
         :type original: :class:`huaweicloudsdkeihealth.v1.PlainMoleculeItem`
@@ -328,7 +328,7 @@ class OptimizationResult:
 
     @property
     def result(self):
-        """Gets the result of this OptimizationResult.
+        r"""Gets the result of this OptimizationResult.
 
         分子优化结果条目
 
@@ -339,7 +339,7 @@ class OptimizationResult:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this OptimizationResult.
+        r"""Sets the result of this OptimizationResult.
 
         分子优化结果条目
 
@@ -350,7 +350,7 @@ class OptimizationResult:
 
     @property
     def strong_constraints(self):
-        """Gets the strong_constraints of this OptimizationResult.
+        r"""Gets the strong_constraints of this OptimizationResult.
 
         强约束集合
 
@@ -361,7 +361,7 @@ class OptimizationResult:
 
     @strong_constraints.setter
     def strong_constraints(self, strong_constraints):
-        """Sets the strong_constraints of this OptimizationResult.
+        r"""Sets the strong_constraints of this OptimizationResult.
 
         强约束集合
 
@@ -372,7 +372,7 @@ class OptimizationResult:
 
     @property
     def weak_constraints(self):
-        """Gets the weak_constraints of this OptimizationResult.
+        r"""Gets the weak_constraints of this OptimizationResult.
 
         弱约束集合
 
@@ -383,7 +383,7 @@ class OptimizationResult:
 
     @weak_constraints.setter
     def weak_constraints(self, weak_constraints):
-        """Sets the weak_constraints of this OptimizationResult.
+        r"""Sets the weak_constraints of this OptimizationResult.
 
         弱约束集合
 
@@ -394,7 +394,7 @@ class OptimizationResult:
 
     @property
     def binding_site(self):
-        """Gets the binding_site of this OptimizationResult.
+        r"""Gets the binding_site of this OptimizationResult.
 
         :return: The binding_site of this OptimizationResult.
         :rtype: :class:`huaweicloudsdkeihealth.v1.BindingSite`
@@ -403,7 +403,7 @@ class OptimizationResult:
 
     @binding_site.setter
     def binding_site(self, binding_site):
-        """Sets the binding_site of this OptimizationResult.
+        r"""Sets the binding_site of this OptimizationResult.
 
         :param binding_site: The binding_site of this OptimizationResult.
         :type binding_site: :class:`huaweicloudsdkeihealth.v1.BindingSite`
@@ -412,7 +412,7 @@ class OptimizationResult:
 
     @property
     def custom_props(self):
-        """Gets the custom_props of this OptimizationResult.
+        r"""Gets the custom_props of this OptimizationResult.
 
         用户已开启的自定义属性集合
 
@@ -423,7 +423,7 @@ class OptimizationResult:
 
     @custom_props.setter
     def custom_props(self, custom_props):
-        """Sets the custom_props of this OptimizationResult.
+        r"""Sets the custom_props of this OptimizationResult.
 
         用户已开启的自定义属性集合
 

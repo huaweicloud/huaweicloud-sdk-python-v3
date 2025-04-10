@@ -26,7 +26,7 @@ class InviteUserResponse(SdkResponse):
     }
 
     def __init__(self, user_exist=None):
-        """InviteUserResponse
+        r"""InviteUserResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class InviteUserResponse(SdkResponse):
 
     @property
     def user_exist(self):
-        """Gets the user_exist of this InviteUserResponse.
+        r"""Gets the user_exist of this InviteUserResponse.
 
         用户是否存在
 
@@ -55,7 +55,7 @@ class InviteUserResponse(SdkResponse):
 
     @user_exist.setter
     def user_exist(self, user_exist):
-        """Sets the user_exist of this InviteUserResponse.
+        r"""Sets the user_exist of this InviteUserResponse.
 
         用户是否存在
 

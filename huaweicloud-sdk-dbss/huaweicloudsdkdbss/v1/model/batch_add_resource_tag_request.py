@@ -29,7 +29,7 @@ class BatchAddResourceTagRequest:
     }
 
     def __init__(self, resource_type=None, resource_id=None, body=None):
-        """BatchAddResourceTagRequest
+        r"""BatchAddResourceTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class BatchAddResourceTagRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this BatchAddResourceTagRequest.
+        r"""Gets the resource_type of this BatchAddResourceTagRequest.
 
         资源类型。 - auditInstance
 
@@ -66,7 +66,7 @@ class BatchAddResourceTagRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this BatchAddResourceTagRequest.
+        r"""Sets the resource_type of this BatchAddResourceTagRequest.
 
         资源类型。 - auditInstance
 
@@ -77,7 +77,7 @@ class BatchAddResourceTagRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this BatchAddResourceTagRequest.
+        r"""Gets the resource_id of this BatchAddResourceTagRequest.
 
         资源ID。可在查询实例列表接口的resource_id字段获取。
 
@@ -88,7 +88,7 @@ class BatchAddResourceTagRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this BatchAddResourceTagRequest.
+        r"""Sets the resource_id of this BatchAddResourceTagRequest.
 
         资源ID。可在查询实例列表接口的resource_id字段获取。
 
@@ -99,7 +99,7 @@ class BatchAddResourceTagRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchAddResourceTagRequest.
+        r"""Gets the body of this BatchAddResourceTagRequest.
 
         :return: The body of this BatchAddResourceTagRequest.
         :rtype: :class:`huaweicloudsdkdbss.v1.ResourceTagRequest`
@@ -108,7 +108,7 @@ class BatchAddResourceTagRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchAddResourceTagRequest.
+        r"""Sets the body of this BatchAddResourceTagRequest.
 
         :param body: The body of this BatchAddResourceTagRequest.
         :type body: :class:`huaweicloudsdkdbss.v1.ResourceTagRequest`

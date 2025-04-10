@@ -26,7 +26,7 @@ class ListOffSiteRestoreTimesResponse(SdkResponse):
     }
 
     def __init__(self, restore_time=None):
-        """ListOffSiteRestoreTimesResponse
+        r"""ListOffSiteRestoreTimesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListOffSiteRestoreTimesResponse(SdkResponse):
 
     @property
     def restore_time(self):
-        """Gets the restore_time of this ListOffSiteRestoreTimesResponse.
+        r"""Gets the restore_time of this ListOffSiteRestoreTimesResponse.
 
         可恢复时间段列表。
 
@@ -55,7 +55,7 @@ class ListOffSiteRestoreTimesResponse(SdkResponse):
 
     @restore_time.setter
     def restore_time(self, restore_time):
-        """Sets the restore_time of this ListOffSiteRestoreTimesResponse.
+        r"""Sets the restore_time of this ListOffSiteRestoreTimesResponse.
 
         可恢复时间段列表。
 

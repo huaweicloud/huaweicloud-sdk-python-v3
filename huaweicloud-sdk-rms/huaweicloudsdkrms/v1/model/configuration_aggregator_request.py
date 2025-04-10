@@ -29,7 +29,7 @@ class ConfigurationAggregatorRequest:
     }
 
     def __init__(self, aggregator_name=None, aggregator_type=None, account_aggregation_sources=None):
-        """ConfigurationAggregatorRequest
+        r"""ConfigurationAggregatorRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ConfigurationAggregatorRequest:
 
     @property
     def aggregator_name(self):
-        """Gets the aggregator_name of this ConfigurationAggregatorRequest.
+        r"""Gets the aggregator_name of this ConfigurationAggregatorRequest.
 
         资源聚合器名称。
 
@@ -66,7 +66,7 @@ class ConfigurationAggregatorRequest:
 
     @aggregator_name.setter
     def aggregator_name(self, aggregator_name):
-        """Sets the aggregator_name of this ConfigurationAggregatorRequest.
+        r"""Sets the aggregator_name of this ConfigurationAggregatorRequest.
 
         资源聚合器名称。
 
@@ -77,7 +77,7 @@ class ConfigurationAggregatorRequest:
 
     @property
     def aggregator_type(self):
-        """Gets the aggregator_type of this ConfigurationAggregatorRequest.
+        r"""Gets the aggregator_type of this ConfigurationAggregatorRequest.
 
         聚合器类型（ACCOUNT | ORGANIZATION）。
 
@@ -88,7 +88,7 @@ class ConfigurationAggregatorRequest:
 
     @aggregator_type.setter
     def aggregator_type(self, aggregator_type):
-        """Sets the aggregator_type of this ConfigurationAggregatorRequest.
+        r"""Sets the aggregator_type of this ConfigurationAggregatorRequest.
 
         聚合器类型（ACCOUNT | ORGANIZATION）。
 
@@ -99,7 +99,7 @@ class ConfigurationAggregatorRequest:
 
     @property
     def account_aggregation_sources(self):
-        """Gets the account_aggregation_sources of this ConfigurationAggregatorRequest.
+        r"""Gets the account_aggregation_sources of this ConfigurationAggregatorRequest.
 
         :return: The account_aggregation_sources of this ConfigurationAggregatorRequest.
         :rtype: :class:`huaweicloudsdkrms.v1.AccountAggregationSource`
@@ -108,7 +108,7 @@ class ConfigurationAggregatorRequest:
 
     @account_aggregation_sources.setter
     def account_aggregation_sources(self, account_aggregation_sources):
-        """Sets the account_aggregation_sources of this ConfigurationAggregatorRequest.
+        r"""Sets the account_aggregation_sources of this ConfigurationAggregatorRequest.
 
         :param account_aggregation_sources: The account_aggregation_sources of this ConfigurationAggregatorRequest.
         :type account_aggregation_sources: :class:`huaweicloudsdkrms.v1.AccountAggregationSource`

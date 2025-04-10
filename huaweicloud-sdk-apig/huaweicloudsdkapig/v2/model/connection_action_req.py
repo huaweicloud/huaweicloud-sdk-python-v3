@@ -27,7 +27,7 @@ class ConnectionActionReq:
     }
 
     def __init__(self, action=None, endpoints=None):
-        """ConnectionActionReq
+        r"""ConnectionActionReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ConnectionActionReq:
 
     @property
     def action(self):
-        """Gets the action of this ConnectionActionReq.
+        r"""Gets the action of this ConnectionActionReq.
 
         允许或拒绝连接 - receive 接受 - reject 拒绝
 
@@ -59,7 +59,7 @@ class ConnectionActionReq:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ConnectionActionReq.
+        r"""Sets the action of this ConnectionActionReq.
 
         允许或拒绝连接 - receive 接受 - reject 拒绝
 
@@ -70,7 +70,7 @@ class ConnectionActionReq:
 
     @property
     def endpoints(self):
-        """Gets the endpoints of this ConnectionActionReq.
+        r"""Gets the endpoints of this ConnectionActionReq.
 
         终端节点列表
 
@@ -81,7 +81,7 @@ class ConnectionActionReq:
 
     @endpoints.setter
     def endpoints(self, endpoints):
-        """Sets the endpoints of this ConnectionActionReq.
+        r"""Sets the endpoints of this ConnectionActionReq.
 
         终端节点列表
 

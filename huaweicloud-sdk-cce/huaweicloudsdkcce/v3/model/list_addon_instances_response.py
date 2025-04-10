@@ -30,7 +30,7 @@ class ListAddonInstancesResponse(SdkResponse):
     }
 
     def __init__(self, kind=None, api_version=None, items=None):
-        """ListAddonInstancesResponse
+        r"""ListAddonInstancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListAddonInstancesResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this ListAddonInstancesResponse.
+        r"""Gets the kind of this ListAddonInstancesResponse.
 
         API类型，固定值“Addon”，该值不可修改。
 
@@ -69,7 +69,7 @@ class ListAddonInstancesResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ListAddonInstancesResponse.
+        r"""Sets the kind of this ListAddonInstancesResponse.
 
         API类型，固定值“Addon”，该值不可修改。
 
@@ -80,7 +80,7 @@ class ListAddonInstancesResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this ListAddonInstancesResponse.
+        r"""Gets the api_version of this ListAddonInstancesResponse.
 
         API版本，固定值“v3”，该值不可修改。
 
@@ -91,7 +91,7 @@ class ListAddonInstancesResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this ListAddonInstancesResponse.
+        r"""Sets the api_version of this ListAddonInstancesResponse.
 
         API版本，固定值“v3”，该值不可修改。
 
@@ -102,7 +102,7 @@ class ListAddonInstancesResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListAddonInstancesResponse.
+        r"""Gets the items of this ListAddonInstancesResponse.
 
         插件实例列表
 
@@ -113,7 +113,7 @@ class ListAddonInstancesResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListAddonInstancesResponse.
+        r"""Sets the items of this ListAddonInstancesResponse.
 
         插件实例列表
 

@@ -27,7 +27,7 @@ class GetPolicyV5Request:
     }
 
     def __init__(self, policy_id=None, x_language=None):
-        """GetPolicyV5Request
+        r"""GetPolicyV5Request
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class GetPolicyV5Request:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this GetPolicyV5Request.
+        r"""Gets the policy_id of this GetPolicyV5Request.
 
         身份策略ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -60,7 +60,7 @@ class GetPolicyV5Request:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this GetPolicyV5Request.
+        r"""Sets the policy_id of this GetPolicyV5Request.
 
         身份策略ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -71,7 +71,7 @@ class GetPolicyV5Request:
 
     @property
     def x_language(self):
-        """Gets the x_language of this GetPolicyV5Request.
+        r"""Gets the x_language of this GetPolicyV5Request.
 
         选择接口返回的信息的语言，可以为中文（\"zh-cn\"）或英文（\"en-us\"），默认为中文。
 
@@ -82,7 +82,7 @@ class GetPolicyV5Request:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this GetPolicyV5Request.
+        r"""Sets the x_language of this GetPolicyV5Request.
 
         选择接口返回的信息的语言，可以为中文（\"zh-cn\"）或英文（\"en-us\"），默认为中文。
 

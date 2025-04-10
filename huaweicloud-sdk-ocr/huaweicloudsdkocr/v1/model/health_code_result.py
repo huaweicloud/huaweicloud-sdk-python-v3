@@ -59,7 +59,7 @@ class HealthCodeResult:
     }
 
     def __init__(self, type=None, name=None, idcard_number=None, phone_number=None, province=None, city=None, time=None, color=None, vaccination_status=None, test_interval=None, pcr_test_result=None, pcr_test_organization=None, pcr_test_time=None, pcr_sampling_time=None, reached_city=None, confidence=None, words_block_count=None, words_block_list=None):
-        """HealthCodeResult
+        r"""HealthCodeResult
 
         The model defined in huaweicloud sdk
 
@@ -144,7 +144,7 @@ class HealthCodeResult:
 
     @property
     def type(self):
-        """Gets the type of this HealthCodeResult.
+        r"""Gets the type of this HealthCodeResult.
 
         防疫码类别： - 健康码：health_code - 核酸检测记录：pcr_test_record - 通信行程卡：travel_card - 其他：other 
 
@@ -155,7 +155,7 @@ class HealthCodeResult:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this HealthCodeResult.
+        r"""Sets the type of this HealthCodeResult.
 
         防疫码类别： - 健康码：health_code - 核酸检测记录：pcr_test_record - 通信行程卡：travel_card - 其他：other 
 
@@ -166,7 +166,7 @@ class HealthCodeResult:
 
     @property
     def name(self):
-        """Gets the name of this HealthCodeResult.
+        r"""Gets the name of this HealthCodeResult.
 
         姓名 
 
@@ -177,7 +177,7 @@ class HealthCodeResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this HealthCodeResult.
+        r"""Sets the name of this HealthCodeResult.
 
         姓名 
 
@@ -188,7 +188,7 @@ class HealthCodeResult:
 
     @property
     def idcard_number(self):
-        """Gets the idcard_number of this HealthCodeResult.
+        r"""Gets the idcard_number of this HealthCodeResult.
 
         身份证号码 
 
@@ -199,7 +199,7 @@ class HealthCodeResult:
 
     @idcard_number.setter
     def idcard_number(self, idcard_number):
-        """Sets the idcard_number of this HealthCodeResult.
+        r"""Sets the idcard_number of this HealthCodeResult.
 
         身份证号码 
 
@@ -210,7 +210,7 @@ class HealthCodeResult:
 
     @property
     def phone_number(self):
-        """Gets the phone_number of this HealthCodeResult.
+        r"""Gets the phone_number of this HealthCodeResult.
 
         手机号码 
 
@@ -221,7 +221,7 @@ class HealthCodeResult:
 
     @phone_number.setter
     def phone_number(self, phone_number):
-        """Sets the phone_number of this HealthCodeResult.
+        r"""Sets the phone_number of this HealthCodeResult.
 
         手机号码 
 
@@ -232,7 +232,7 @@ class HealthCodeResult:
 
     @property
     def province(self):
-        """Gets the province of this HealthCodeResult.
+        r"""Gets the province of this HealthCodeResult.
 
         省份 
 
@@ -243,7 +243,7 @@ class HealthCodeResult:
 
     @province.setter
     def province(self, province):
-        """Sets the province of this HealthCodeResult.
+        r"""Sets the province of this HealthCodeResult.
 
         省份 
 
@@ -254,7 +254,7 @@ class HealthCodeResult:
 
     @property
     def city(self):
-        """Gets the city of this HealthCodeResult.
+        r"""Gets the city of this HealthCodeResult.
 
         城市 
 
@@ -265,7 +265,7 @@ class HealthCodeResult:
 
     @city.setter
     def city(self, city):
-        """Sets the city of this HealthCodeResult.
+        r"""Sets the city of this HealthCodeResult.
 
         城市 
 
@@ -276,7 +276,7 @@ class HealthCodeResult:
 
     @property
     def time(self):
-        """Gets the time of this HealthCodeResult.
+        r"""Gets the time of this HealthCodeResult.
 
         健康码或行程卡的更新时间 
 
@@ -287,7 +287,7 @@ class HealthCodeResult:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this HealthCodeResult.
+        r"""Sets the time of this HealthCodeResult.
 
         健康码或行程卡的更新时间 
 
@@ -298,7 +298,7 @@ class HealthCodeResult:
 
     @property
     def color(self):
-        """Gets the color of this HealthCodeResult.
+        r"""Gets the color of this HealthCodeResult.
 
         健康码或行程卡颜色。 健康码颜色可选值包括：  - \"green\"，绿码 - \"yellow\"，黄码 - \"red\"，红码 - \"gray\"，灰码  行程卡颜色可选值包括：  - \"green\"，绿码 - \"yellow\"，黄码 - \"red\"，红码 
 
@@ -309,7 +309,7 @@ class HealthCodeResult:
 
     @color.setter
     def color(self, color):
-        """Sets the color of this HealthCodeResult.
+        r"""Sets the color of this HealthCodeResult.
 
         健康码或行程卡颜色。 健康码颜色可选值包括：  - \"green\"，绿码 - \"yellow\"，黄码 - \"red\"，红码 - \"gray\"，灰码  行程卡颜色可选值包括：  - \"green\"，绿码 - \"yellow\"，黄码 - \"red\"，红码 
 
@@ -320,7 +320,7 @@ class HealthCodeResult:
 
     @property
     def vaccination_status(self):
-        """Gets the vaccination_status of this HealthCodeResult.
+        r"""Gets the vaccination_status of this HealthCodeResult.
 
         疫苗接种情况，可选值包括：  - 未接种 - 接种中 - 无接种记录 - 已接种1针 - 已接种2针 - 已接种3针 - 已完成新冠疫苗接种 
 
@@ -331,7 +331,7 @@ class HealthCodeResult:
 
     @vaccination_status.setter
     def vaccination_status(self, vaccination_status):
-        """Sets the vaccination_status of this HealthCodeResult.
+        r"""Sets the vaccination_status of this HealthCodeResult.
 
         疫苗接种情况，可选值包括：  - 未接种 - 接种中 - 无接种记录 - 已接种1针 - 已接种2针 - 已接种3针 - 已完成新冠疫苗接种 
 
@@ -342,7 +342,7 @@ class HealthCodeResult:
 
     @property
     def test_interval(self):
-        """Gets the test_interval of this HealthCodeResult.
+        r"""Gets the test_interval of this HealthCodeResult.
 
         核酸检测间隔时长，可选值包括： - 24小时内 - 48小时内 - 72小时内 - 5天内 - 7天内 - 7天外 
 
@@ -353,7 +353,7 @@ class HealthCodeResult:
 
     @test_interval.setter
     def test_interval(self, test_interval):
-        """Sets the test_interval of this HealthCodeResult.
+        r"""Sets the test_interval of this HealthCodeResult.
 
         核酸检测间隔时长，可选值包括： - 24小时内 - 48小时内 - 72小时内 - 5天内 - 7天内 - 7天外 
 
@@ -364,7 +364,7 @@ class HealthCodeResult:
 
     @property
     def pcr_test_result(self):
-        """Gets the pcr_test_result of this HealthCodeResult.
+        r"""Gets the pcr_test_result of this HealthCodeResult.
 
         核酸检测结果，可选值包括： - \"positive\",即阳性 - \"negative\",即阴性 - \"unknown\",未知 
 
@@ -375,7 +375,7 @@ class HealthCodeResult:
 
     @pcr_test_result.setter
     def pcr_test_result(self, pcr_test_result):
-        """Sets the pcr_test_result of this HealthCodeResult.
+        r"""Sets the pcr_test_result of this HealthCodeResult.
 
         核酸检测结果，可选值包括： - \"positive\",即阳性 - \"negative\",即阴性 - \"unknown\",未知 
 
@@ -386,7 +386,7 @@ class HealthCodeResult:
 
     @property
     def pcr_test_organization(self):
-        """Gets the pcr_test_organization of this HealthCodeResult.
+        r"""Gets the pcr_test_organization of this HealthCodeResult.
 
         核酸检测机构 
 
@@ -397,7 +397,7 @@ class HealthCodeResult:
 
     @pcr_test_organization.setter
     def pcr_test_organization(self, pcr_test_organization):
-        """Sets the pcr_test_organization of this HealthCodeResult.
+        r"""Sets the pcr_test_organization of this HealthCodeResult.
 
         核酸检测机构 
 
@@ -408,7 +408,7 @@ class HealthCodeResult:
 
     @property
     def pcr_test_time(self):
-        """Gets the pcr_test_time of this HealthCodeResult.
+        r"""Gets the pcr_test_time of this HealthCodeResult.
 
         核酸检测结果更新时间 
 
@@ -419,7 +419,7 @@ class HealthCodeResult:
 
     @pcr_test_time.setter
     def pcr_test_time(self, pcr_test_time):
-        """Sets the pcr_test_time of this HealthCodeResult.
+        r"""Sets the pcr_test_time of this HealthCodeResult.
 
         核酸检测结果更新时间 
 
@@ -430,7 +430,7 @@ class HealthCodeResult:
 
     @property
     def pcr_sampling_time(self):
-        """Gets the pcr_sampling_time of this HealthCodeResult.
+        r"""Gets the pcr_sampling_time of this HealthCodeResult.
 
         核酸检测采样时间 
 
@@ -441,7 +441,7 @@ class HealthCodeResult:
 
     @pcr_sampling_time.setter
     def pcr_sampling_time(self, pcr_sampling_time):
-        """Sets the pcr_sampling_time of this HealthCodeResult.
+        r"""Sets the pcr_sampling_time of this HealthCodeResult.
 
         核酸检测采样时间 
 
@@ -452,7 +452,7 @@ class HealthCodeResult:
 
     @property
     def reached_city(self):
-        """Gets the reached_city of this HealthCodeResult.
+        r"""Gets the reached_city of this HealthCodeResult.
 
         行程卡的途径地址 
 
@@ -463,7 +463,7 @@ class HealthCodeResult:
 
     @reached_city.setter
     def reached_city(self, reached_city):
-        """Sets the reached_city of this HealthCodeResult.
+        r"""Sets the reached_city of this HealthCodeResult.
 
         行程卡的途径地址 
 
@@ -474,7 +474,7 @@ class HealthCodeResult:
 
     @property
     def confidence(self):
-        """Gets the confidence of this HealthCodeResult.
+        r"""Gets the confidence of this HealthCodeResult.
 
         各个字段的置信度。 
 
@@ -485,7 +485,7 @@ class HealthCodeResult:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this HealthCodeResult.
+        r"""Sets the confidence of this HealthCodeResult.
 
         各个字段的置信度。 
 
@@ -496,7 +496,7 @@ class HealthCodeResult:
 
     @property
     def words_block_count(self):
-        """Gets the words_block_count of this HealthCodeResult.
+        r"""Gets the words_block_count of this HealthCodeResult.
 
         代表检测识别出来的文字块数目。 
 
@@ -507,7 +507,7 @@ class HealthCodeResult:
 
     @words_block_count.setter
     def words_block_count(self, words_block_count):
-        """Sets the words_block_count of this HealthCodeResult.
+        r"""Sets the words_block_count of this HealthCodeResult.
 
         代表检测识别出来的文字块数目。 
 
@@ -518,7 +518,7 @@ class HealthCodeResult:
 
     @property
     def words_block_list(self):
-        """Gets the words_block_list of this HealthCodeResult.
+        r"""Gets the words_block_list of this HealthCodeResult.
 
         识别文字块列表，输出顺序从左到右，从上到下。 
 
@@ -529,7 +529,7 @@ class HealthCodeResult:
 
     @words_block_list.setter
     def words_block_list(self, words_block_list):
-        """Sets the words_block_list of this HealthCodeResult.
+        r"""Sets the words_block_list of this HealthCodeResult.
 
         识别文字块列表，输出顺序从左到右，从上到下。 
 

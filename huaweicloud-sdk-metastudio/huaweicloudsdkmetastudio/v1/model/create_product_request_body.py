@@ -37,7 +37,7 @@ class CreateProductRequestBody:
     }
 
     def __init__(self, name=None, description=None, tags=None, cover=None, text_list=None, asset_list=None, auto_active=None):
-        """CreateProductRequestBody
+        r"""CreateProductRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class CreateProductRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateProductRequestBody.
+        r"""Gets the name of this CreateProductRequestBody.
 
         商品名称
 
@@ -95,7 +95,7 @@ class CreateProductRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateProductRequestBody.
+        r"""Sets the name of this CreateProductRequestBody.
 
         商品名称
 
@@ -106,7 +106,7 @@ class CreateProductRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateProductRequestBody.
+        r"""Gets the description of this CreateProductRequestBody.
 
         商品描述
 
@@ -117,7 +117,7 @@ class CreateProductRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateProductRequestBody.
+        r"""Sets the description of this CreateProductRequestBody.
 
         商品描述
 
@@ -128,7 +128,7 @@ class CreateProductRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateProductRequestBody.
+        r"""Gets the tags of this CreateProductRequestBody.
 
         标签。单个标签16字节，多个用逗号分隔，最多50个。
 
@@ -139,7 +139,7 @@ class CreateProductRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateProductRequestBody.
+        r"""Sets the tags of this CreateProductRequestBody.
 
         标签。单个标签16字节，多个用逗号分隔，最多50个。
 
@@ -150,7 +150,7 @@ class CreateProductRequestBody:
 
     @property
     def cover(self):
-        """Gets the cover of this CreateProductRequestBody.
+        r"""Gets the cover of this CreateProductRequestBody.
 
         :return: The cover of this CreateProductRequestBody.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ProductCoverInfo`
@@ -159,7 +159,7 @@ class CreateProductRequestBody:
 
     @cover.setter
     def cover(self, cover):
-        """Sets the cover of this CreateProductRequestBody.
+        r"""Sets the cover of this CreateProductRequestBody.
 
         :param cover: The cover of this CreateProductRequestBody.
         :type cover: :class:`huaweicloudsdkmetastudio.v1.ProductCoverInfo`
@@ -168,7 +168,7 @@ class CreateProductRequestBody:
 
     @property
     def text_list(self):
-        """Gets the text_list of this CreateProductRequestBody.
+        r"""Gets the text_list of this CreateProductRequestBody.
 
         文本列表
 
@@ -179,7 +179,7 @@ class CreateProductRequestBody:
 
     @text_list.setter
     def text_list(self, text_list):
-        """Sets the text_list of this CreateProductRequestBody.
+        r"""Sets the text_list of this CreateProductRequestBody.
 
         文本列表
 
@@ -190,7 +190,7 @@ class CreateProductRequestBody:
 
     @property
     def asset_list(self):
-        """Gets the asset_list of this CreateProductRequestBody.
+        r"""Gets the asset_list of this CreateProductRequestBody.
 
         资产列表,仅支持图片、视频、音频资产
 
@@ -201,7 +201,7 @@ class CreateProductRequestBody:
 
     @asset_list.setter
     def asset_list(self, asset_list):
-        """Sets the asset_list of this CreateProductRequestBody.
+        r"""Sets the asset_list of this CreateProductRequestBody.
 
         资产列表,仅支持图片、视频、音频资产
 
@@ -212,7 +212,7 @@ class CreateProductRequestBody:
 
     @property
     def auto_active(self):
-        """Gets the auto_active of this CreateProductRequestBody.
+        r"""Gets the auto_active of this CreateProductRequestBody.
 
         **参数解释**： 自动激活商品
 
@@ -223,7 +223,7 @@ class CreateProductRequestBody:
 
     @auto_active.setter
     def auto_active(self, auto_active):
-        """Sets the auto_active of this CreateProductRequestBody.
+        r"""Sets the auto_active of this CreateProductRequestBody.
 
         **参数解释**： 自动激活商品
 

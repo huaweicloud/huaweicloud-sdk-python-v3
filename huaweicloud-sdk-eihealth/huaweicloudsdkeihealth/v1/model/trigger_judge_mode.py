@@ -33,7 +33,7 @@ class TriggerJudgeMode:
     }
 
     def __init__(self):
-        """TriggerJudgeMode
+        r"""TriggerJudgeMode
 
         The model defined in huaweicloud sdk
 

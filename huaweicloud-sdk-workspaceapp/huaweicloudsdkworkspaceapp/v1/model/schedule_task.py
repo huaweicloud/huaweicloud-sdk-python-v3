@@ -63,7 +63,7 @@ class ScheduleTask:
     }
 
     def __init__(self, id=None, task_name=None, last_status=None, task_type=None, task_cron=None, next_execution_time=None, schedule_task_policy=None, scheduled_type=None, day_interval=None, week_list=None, month_list=None, date_list=None, time_zone=None, scheduled_date=None, scheduled_time=None, expire_time=None, description=None, is_enable=None, create_time=None, update_time=None):
-        """ScheduleTask
+        r"""ScheduleTask
 
         The model defined in huaweicloud sdk
 
@@ -176,7 +176,7 @@ class ScheduleTask:
 
     @property
     def id(self):
-        """Gets the id of this ScheduleTask.
+        r"""Gets the id of this ScheduleTask.
 
         定时任务主键id。
 
@@ -187,7 +187,7 @@ class ScheduleTask:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ScheduleTask.
+        r"""Sets the id of this ScheduleTask.
 
         定时任务主键id。
 
@@ -198,7 +198,7 @@ class ScheduleTask:
 
     @property
     def task_name(self):
-        """Gets the task_name of this ScheduleTask.
+        r"""Gets the task_name of this ScheduleTask.
 
         任务名称。
 
@@ -209,7 +209,7 @@ class ScheduleTask:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this ScheduleTask.
+        r"""Sets the task_name of this ScheduleTask.
 
         任务名称。
 
@@ -220,7 +220,7 @@ class ScheduleTask:
 
     @property
     def last_status(self):
-        """Gets the last_status of this ScheduleTask.
+        r"""Gets the last_status of this ScheduleTask.
 
         :return: The last_status of this ScheduleTask.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskStatus`
@@ -229,7 +229,7 @@ class ScheduleTask:
 
     @last_status.setter
     def last_status(self, last_status):
-        """Sets the last_status of this ScheduleTask.
+        r"""Sets the last_status of this ScheduleTask.
 
         :param last_status: The last_status of this ScheduleTask.
         :type last_status: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskStatus`
@@ -238,7 +238,7 @@ class ScheduleTask:
 
     @property
     def task_type(self):
-        """Gets the task_type of this ScheduleTask.
+        r"""Gets the task_type of this ScheduleTask.
 
         :return: The task_type of this ScheduleTask.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskTypeEnum`
@@ -247,7 +247,7 @@ class ScheduleTask:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this ScheduleTask.
+        r"""Sets the task_type of this ScheduleTask.
 
         :param task_type: The task_type of this ScheduleTask.
         :type task_type: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskTypeEnum`
@@ -256,7 +256,7 @@ class ScheduleTask:
 
     @property
     def task_cron(self):
-        """Gets the task_cron of this ScheduleTask.
+        r"""Gets the task_cron of this ScheduleTask.
 
         定时任务表达式。
 
@@ -267,7 +267,7 @@ class ScheduleTask:
 
     @task_cron.setter
     def task_cron(self, task_cron):
-        """Sets the task_cron of this ScheduleTask.
+        r"""Sets the task_cron of this ScheduleTask.
 
         定时任务表达式。
 
@@ -278,7 +278,7 @@ class ScheduleTask:
 
     @property
     def next_execution_time(self):
-        """Gets the next_execution_time of this ScheduleTask.
+        r"""Gets the next_execution_time of this ScheduleTask.
 
         下一次执行时间。
 
@@ -289,7 +289,7 @@ class ScheduleTask:
 
     @next_execution_time.setter
     def next_execution_time(self, next_execution_time):
-        """Sets the next_execution_time of this ScheduleTask.
+        r"""Sets the next_execution_time of this ScheduleTask.
 
         下一次执行时间。
 
@@ -300,7 +300,7 @@ class ScheduleTask:
 
     @property
     def schedule_task_policy(self):
-        """Gets the schedule_task_policy of this ScheduleTask.
+        r"""Gets the schedule_task_policy of this ScheduleTask.
 
         :return: The schedule_task_policy of this ScheduleTask.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskPolicy`
@@ -309,7 +309,7 @@ class ScheduleTask:
 
     @schedule_task_policy.setter
     def schedule_task_policy(self, schedule_task_policy):
-        """Sets the schedule_task_policy of this ScheduleTask.
+        r"""Sets the schedule_task_policy of this ScheduleTask.
 
         :param schedule_task_policy: The schedule_task_policy of this ScheduleTask.
         :type schedule_task_policy: :class:`huaweicloudsdkworkspaceapp.v1.ScheduleTaskPolicy`
@@ -318,7 +318,7 @@ class ScheduleTask:
 
     @property
     def scheduled_type(self):
-        """Gets the scheduled_type of this ScheduleTask.
+        r"""Gets the scheduled_type of this ScheduleTask.
 
         :return: The scheduled_type of this ScheduleTask.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ScheduledTypeEnum`
@@ -327,7 +327,7 @@ class ScheduleTask:
 
     @scheduled_type.setter
     def scheduled_type(self, scheduled_type):
-        """Sets the scheduled_type of this ScheduleTask.
+        r"""Sets the scheduled_type of this ScheduleTask.
 
         :param scheduled_type: The scheduled_type of this ScheduleTask.
         :type scheduled_type: :class:`huaweicloudsdkworkspaceapp.v1.ScheduledTypeEnum`
@@ -336,7 +336,7 @@ class ScheduleTask:
 
     @property
     def day_interval(self):
-        """Gets the day_interval of this ScheduleTask.
+        r"""Gets the day_interval of this ScheduleTask.
 
         周期按天时：按x天间隔执行。
 
@@ -347,7 +347,7 @@ class ScheduleTask:
 
     @day_interval.setter
     def day_interval(self, day_interval):
-        """Sets the day_interval of this ScheduleTask.
+        r"""Sets the day_interval of this ScheduleTask.
 
         周期按天时：按x天间隔执行。
 
@@ -358,7 +358,7 @@ class ScheduleTask:
 
     @property
     def week_list(self):
-        """Gets the week_list of this ScheduleTask.
+        r"""Gets the week_list of this ScheduleTask.
 
         周期按周时：取值1~7，英文逗号分隔，如1,2,7。
 
@@ -369,7 +369,7 @@ class ScheduleTask:
 
     @week_list.setter
     def week_list(self, week_list):
-        """Sets the week_list of this ScheduleTask.
+        r"""Sets the week_list of this ScheduleTask.
 
         周期按周时：取值1~7，英文逗号分隔，如1,2,7。
 
@@ -380,7 +380,7 @@ class ScheduleTask:
 
     @property
     def month_list(self):
-        """Gets the month_list of this ScheduleTask.
+        r"""Gets the month_list of this ScheduleTask.
 
         周期按月时：取值1~12，英文逗号分隔，如1,3,12。
 
@@ -391,7 +391,7 @@ class ScheduleTask:
 
     @month_list.setter
     def month_list(self, month_list):
-        """Sets the month_list of this ScheduleTask.
+        r"""Sets the month_list of this ScheduleTask.
 
         周期按月时：取值1~12，英文逗号分隔，如1,3,12。
 
@@ -402,7 +402,7 @@ class ScheduleTask:
 
     @property
     def date_list(self):
-        """Gets the date_list of this ScheduleTask.
+        r"""Gets the date_list of this ScheduleTask.
 
         周期按月时：取值1~31及L(代表当月最后一天)，英文逗号分隔，如1,2,28,L。
 
@@ -413,7 +413,7 @@ class ScheduleTask:
 
     @date_list.setter
     def date_list(self, date_list):
-        """Sets the date_list of this ScheduleTask.
+        r"""Sets the date_list of this ScheduleTask.
 
         周期按月时：取值1~31及L(代表当月最后一天)，英文逗号分隔，如1,2,28,L。
 
@@ -424,7 +424,7 @@ class ScheduleTask:
 
     @property
     def time_zone(self):
-        """Gets the time_zone of this ScheduleTask.
+        r"""Gets the time_zone of this ScheduleTask.
 
         时区。
 
@@ -435,7 +435,7 @@ class ScheduleTask:
 
     @time_zone.setter
     def time_zone(self, time_zone):
-        """Sets the time_zone of this ScheduleTask.
+        r"""Sets the time_zone of this ScheduleTask.
 
         时区。
 
@@ -446,7 +446,7 @@ class ScheduleTask:
 
     @property
     def scheduled_date(self):
-        """Gets the scheduled_date of this ScheduleTask.
+        r"""Gets the scheduled_date of this ScheduleTask.
 
         周期指定时间时：表示指定的日期，格式为yyyy-MM-dd。
 
@@ -457,7 +457,7 @@ class ScheduleTask:
 
     @scheduled_date.setter
     def scheduled_date(self, scheduled_date):
-        """Sets the scheduled_date of this ScheduleTask.
+        r"""Sets the scheduled_date of this ScheduleTask.
 
         周期指定时间时：表示指定的日期，格式为yyyy-MM-dd。
 
@@ -468,7 +468,7 @@ class ScheduleTask:
 
     @property
     def scheduled_time(self):
-        """Gets the scheduled_time of this ScheduleTask.
+        r"""Gets the scheduled_time of this ScheduleTask.
 
         指定的执行时间点，格式为HH:mm:ss。
 
@@ -479,7 +479,7 @@ class ScheduleTask:
 
     @scheduled_time.setter
     def scheduled_time(self, scheduled_time):
-        """Sets the scheduled_time of this ScheduleTask.
+        r"""Sets the scheduled_time of this ScheduleTask.
 
         指定的执行时间点，格式为HH:mm:ss。
 
@@ -490,7 +490,7 @@ class ScheduleTask:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this ScheduleTask.
+        r"""Gets the expire_time of this ScheduleTask.
 
         到期时间。
 
@@ -501,7 +501,7 @@ class ScheduleTask:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this ScheduleTask.
+        r"""Sets the expire_time of this ScheduleTask.
 
         到期时间。
 
@@ -512,7 +512,7 @@ class ScheduleTask:
 
     @property
     def description(self):
-        """Gets the description of this ScheduleTask.
+        r"""Gets the description of this ScheduleTask.
 
         任务描述。
 
@@ -523,7 +523,7 @@ class ScheduleTask:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ScheduleTask.
+        r"""Sets the description of this ScheduleTask.
 
         任务描述。
 
@@ -534,7 +534,7 @@ class ScheduleTask:
 
     @property
     def is_enable(self):
-        """Gets the is_enable of this ScheduleTask.
+        r"""Gets the is_enable of this ScheduleTask.
 
         是否是开启状态。
 
@@ -545,7 +545,7 @@ class ScheduleTask:
 
     @is_enable.setter
     def is_enable(self, is_enable):
-        """Sets the is_enable of this ScheduleTask.
+        r"""Sets the is_enable of this ScheduleTask.
 
         是否是开启状态。
 
@@ -556,7 +556,7 @@ class ScheduleTask:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ScheduleTask.
+        r"""Gets the create_time of this ScheduleTask.
 
         创建时间。
 
@@ -567,7 +567,7 @@ class ScheduleTask:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ScheduleTask.
+        r"""Sets the create_time of this ScheduleTask.
 
         创建时间。
 
@@ -578,7 +578,7 @@ class ScheduleTask:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ScheduleTask.
+        r"""Gets the update_time of this ScheduleTask.
 
         更新时间。
 
@@ -589,7 +589,7 @@ class ScheduleTask:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ScheduleTask.
+        r"""Sets the update_time of this ScheduleTask.
 
         更新时间。
 

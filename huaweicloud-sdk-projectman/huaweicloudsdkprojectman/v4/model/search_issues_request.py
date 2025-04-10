@@ -25,7 +25,7 @@ class SearchIssuesRequest:
     }
 
     def __init__(self, body=None):
-        """SearchIssuesRequest
+        r"""SearchIssuesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SearchIssuesRequest:
 
     @property
     def body(self):
-        """Gets the body of this SearchIssuesRequest.
+        r"""Gets the body of this SearchIssuesRequest.
 
         :return: The body of this SearchIssuesRequest.
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListWorkTableIssueRequestV4RequestBody`
@@ -52,7 +52,7 @@ class SearchIssuesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SearchIssuesRequest.
+        r"""Sets the body of this SearchIssuesRequest.
 
         :param body: The body of this SearchIssuesRequest.
         :type body: :class:`huaweicloudsdkprojectman.v4.ListWorkTableIssueRequestV4RequestBody`

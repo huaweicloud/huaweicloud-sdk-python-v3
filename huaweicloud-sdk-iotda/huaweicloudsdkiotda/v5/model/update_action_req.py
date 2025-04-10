@@ -27,7 +27,7 @@ class UpdateActionReq:
     }
 
     def __init__(self, channel=None, channel_detail=None):
-        """UpdateActionReq
+        r"""UpdateActionReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateActionReq:
 
     @property
     def channel(self):
-        """Gets the channel of this UpdateActionReq.
+        r"""Gets the channel of this UpdateActionReq.
 
         **参数说明**：规则动作的类型。 **取值范围**： - HTTP_FORWARDING：HTTP服务消息类型。 - DIS_FORWARDING：转发DIS服务消息类型。 - OBS_FORWARDING：转发OBS服务消息类型。 - AMQP_FORWARDING：转发AMQP服务消息类型。 - DMS_KAFKA_FORWARDING：转发kafka消息类型。[ - ROMA_FORWARDING：转发Roma消息类型。（仅企业版支持） - INFLUXDB_FORWARDING：转发InfluxDB消息类型。（仅标准版和企业版支持） - MYSQL_FORWARDING：转发MySQL消息类型。（仅标准版和企业版支持） - FUNCTIONGRAPH_FORWARDING：转发FunctionGraph消息类型。（仅标准版和企业版支持） - MRS_KAFKA_FORWARDING：转发MRS_KAFKA消息类型。（仅企业版支持） - DMS_ROCKETMQ_FORWARDING：转发RocketMQ消息类型。（仅标准版和企业版支持）](tag:hws)[ - INFLUXDB_FORWARDING：转发InfluxDB消息类型。 - MYSQL_FORWARDING：转发MySQL消息类型。 - FUNCTIONGRAPH_FORWARDING：转发FunctionGraph消息类型。](tag:hws_hk)
 
@@ -61,7 +61,7 @@ class UpdateActionReq:
 
     @channel.setter
     def channel(self, channel):
-        """Sets the channel of this UpdateActionReq.
+        r"""Sets the channel of this UpdateActionReq.
 
         **参数说明**：规则动作的类型。 **取值范围**： - HTTP_FORWARDING：HTTP服务消息类型。 - DIS_FORWARDING：转发DIS服务消息类型。 - OBS_FORWARDING：转发OBS服务消息类型。 - AMQP_FORWARDING：转发AMQP服务消息类型。 - DMS_KAFKA_FORWARDING：转发kafka消息类型。[ - ROMA_FORWARDING：转发Roma消息类型。（仅企业版支持） - INFLUXDB_FORWARDING：转发InfluxDB消息类型。（仅标准版和企业版支持） - MYSQL_FORWARDING：转发MySQL消息类型。（仅标准版和企业版支持） - FUNCTIONGRAPH_FORWARDING：转发FunctionGraph消息类型。（仅标准版和企业版支持） - MRS_KAFKA_FORWARDING：转发MRS_KAFKA消息类型。（仅企业版支持） - DMS_ROCKETMQ_FORWARDING：转发RocketMQ消息类型。（仅标准版和企业版支持）](tag:hws)[ - INFLUXDB_FORWARDING：转发InfluxDB消息类型。 - MYSQL_FORWARDING：转发MySQL消息类型。 - FUNCTIONGRAPH_FORWARDING：转发FunctionGraph消息类型。](tag:hws_hk)
 
@@ -72,7 +72,7 @@ class UpdateActionReq:
 
     @property
     def channel_detail(self):
-        """Gets the channel_detail of this UpdateActionReq.
+        r"""Gets the channel_detail of this UpdateActionReq.
 
         :return: The channel_detail of this UpdateActionReq.
         :rtype: :class:`huaweicloudsdkiotda.v5.ChannelDetail`
@@ -81,7 +81,7 @@ class UpdateActionReq:
 
     @channel_detail.setter
     def channel_detail(self, channel_detail):
-        """Sets the channel_detail of this UpdateActionReq.
+        r"""Sets the channel_detail of this UpdateActionReq.
 
         :param channel_detail: The channel_detail of this UpdateActionReq.
         :type channel_detail: :class:`huaweicloudsdkiotda.v5.ChannelDetail`

@@ -27,7 +27,7 @@ class VpcConfig:
     }
 
     def __init__(self, vpc_name=None, vpc_id=None):
-        """VpcConfig
+        r"""VpcConfig
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class VpcConfig:
 
     @property
     def vpc_name(self):
-        """Gets the vpc_name of this VpcConfig.
+        r"""Gets the vpc_name of this VpcConfig.
 
         vpc名称。
 
@@ -61,7 +61,7 @@ class VpcConfig:
 
     @vpc_name.setter
     def vpc_name(self, vpc_name):
-        """Sets the vpc_name of this VpcConfig.
+        r"""Sets the vpc_name of this VpcConfig.
 
         vpc名称。
 
@@ -72,7 +72,7 @@ class VpcConfig:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this VpcConfig.
+        r"""Gets the vpc_id of this VpcConfig.
 
         vpc ID。
 
@@ -83,7 +83,7 @@ class VpcConfig:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this VpcConfig.
+        r"""Sets the vpc_id of this VpcConfig.
 
         vpc ID。
 

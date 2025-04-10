@@ -33,7 +33,7 @@ class Regular:
     }
 
     def __init__(self, l2_regularization=None, regular_loss_compute_mode=None, embed_l2_regularization=None, wide_l2_regularization=None, structure_l2_regularization=None):
-        """Regular
+        r"""Regular
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class Regular:
 
     @property
     def l2_regularization(self):
-        """Gets the l2_regularization of this Regular.
+        r"""Gets the l2_regularization of this Regular.
 
         L2正则项系数。
 
@@ -82,7 +82,7 @@ class Regular:
 
     @l2_regularization.setter
     def l2_regularization(self, l2_regularization):
-        """Sets the l2_regularization of this Regular.
+        r"""Sets the l2_regularization of this Regular.
 
         L2正则项系数。
 
@@ -93,7 +93,7 @@ class Regular:
 
     @property
     def regular_loss_compute_mode(self):
-        """Gets the regular_loss_compute_mode of this Regular.
+        r"""Gets the regular_loss_compute_mode of this Regular.
 
         正则损失计算方式。
 
@@ -104,7 +104,7 @@ class Regular:
 
     @regular_loss_compute_mode.setter
     def regular_loss_compute_mode(self, regular_loss_compute_mode):
-        """Sets the regular_loss_compute_mode of this Regular.
+        r"""Sets the regular_loss_compute_mode of this Regular.
 
         正则损失计算方式。
 
@@ -115,7 +115,7 @@ class Regular:
 
     @property
     def embed_l2_regularization(self):
-        """Gets the embed_l2_regularization of this Regular.
+        r"""Gets the embed_l2_regularization of this Regular.
 
         隐向量层L2正则化系数。
 
@@ -126,7 +126,7 @@ class Regular:
 
     @embed_l2_regularization.setter
     def embed_l2_regularization(self, embed_l2_regularization):
-        """Sets the embed_l2_regularization of this Regular.
+        r"""Sets the embed_l2_regularization of this Regular.
 
         隐向量层L2正则化系数。
 
@@ -137,7 +137,7 @@ class Regular:
 
     @property
     def wide_l2_regularization(self):
-        """Gets the wide_l2_regularization of this Regular.
+        r"""Gets the wide_l2_regularization of this Regular.
 
         wide部分L2正则化系数。
 
@@ -148,7 +148,7 @@ class Regular:
 
     @wide_l2_regularization.setter
     def wide_l2_regularization(self, wide_l2_regularization):
-        """Sets the wide_l2_regularization of this Regular.
+        r"""Sets the wide_l2_regularization of this Regular.
 
         wide部分L2正则化系数。
 
@@ -159,7 +159,7 @@ class Regular:
 
     @property
     def structure_l2_regularization(self):
-        """Gets the structure_l2_regularization of this Regular.
+        r"""Gets the structure_l2_regularization of this Regular.
 
         结构化部分L2正则化系数。
 
@@ -170,7 +170,7 @@ class Regular:
 
     @structure_l2_regularization.setter
     def structure_l2_regularization(self, structure_l2_regularization):
-        """Sets the structure_l2_regularization of this Regular.
+        r"""Sets the structure_l2_regularization of this Regular.
 
         结构化部分L2正则化系数。
 

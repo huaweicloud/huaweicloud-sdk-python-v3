@@ -26,7 +26,7 @@ class ImportDataServiceExcelResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """ImportDataServiceExcelResponse
+        r"""ImportDataServiceExcelResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ImportDataServiceExcelResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ImportDataServiceExcelResponse.
+        r"""Gets the job_id of this ImportDataServiceExcelResponse.
 
         返回的数据信息。
 
@@ -55,7 +55,7 @@ class ImportDataServiceExcelResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ImportDataServiceExcelResponse.
+        r"""Sets the job_id of this ImportDataServiceExcelResponse.
 
         返回的数据信息。
 

@@ -33,7 +33,7 @@ class LongColumnStatisticsData:
     }
 
     def __init__(self, minimum_value=None, maximum_value=None, number_of_null=None, number_of_distinct_value=None, bit_vector=None):
-        """LongColumnStatisticsData
+        r"""LongColumnStatisticsData
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class LongColumnStatisticsData:
 
     @property
     def minimum_value(self):
-        """Gets the minimum_value of this LongColumnStatisticsData.
+        r"""Gets the minimum_value of this LongColumnStatisticsData.
 
         列中长整数最小值
 
@@ -78,7 +78,7 @@ class LongColumnStatisticsData:
 
     @minimum_value.setter
     def minimum_value(self, minimum_value):
-        """Sets the minimum_value of this LongColumnStatisticsData.
+        r"""Sets the minimum_value of this LongColumnStatisticsData.
 
         列中长整数最小值
 
@@ -89,7 +89,7 @@ class LongColumnStatisticsData:
 
     @property
     def maximum_value(self):
-        """Gets the maximum_value of this LongColumnStatisticsData.
+        r"""Gets the maximum_value of this LongColumnStatisticsData.
 
         列中长整数最大值
 
@@ -100,7 +100,7 @@ class LongColumnStatisticsData:
 
     @maximum_value.setter
     def maximum_value(self, maximum_value):
-        """Sets the maximum_value of this LongColumnStatisticsData.
+        r"""Sets the maximum_value of this LongColumnStatisticsData.
 
         列中长整数最大值
 
@@ -111,7 +111,7 @@ class LongColumnStatisticsData:
 
     @property
     def number_of_null(self):
-        """Gets the number_of_null of this LongColumnStatisticsData.
+        r"""Gets the number_of_null of this LongColumnStatisticsData.
 
         列中空值个数
 
@@ -122,7 +122,7 @@ class LongColumnStatisticsData:
 
     @number_of_null.setter
     def number_of_null(self, number_of_null):
-        """Sets the number_of_null of this LongColumnStatisticsData.
+        r"""Sets the number_of_null of this LongColumnStatisticsData.
 
         列中空值个数
 
@@ -133,7 +133,7 @@ class LongColumnStatisticsData:
 
     @property
     def number_of_distinct_value(self):
-        """Gets the number_of_distinct_value of this LongColumnStatisticsData.
+        r"""Gets the number_of_distinct_value of this LongColumnStatisticsData.
 
         列中去重后的长整数个数
 
@@ -144,7 +144,7 @@ class LongColumnStatisticsData:
 
     @number_of_distinct_value.setter
     def number_of_distinct_value(self, number_of_distinct_value):
-        """Sets the number_of_distinct_value of this LongColumnStatisticsData.
+        r"""Sets the number_of_distinct_value of this LongColumnStatisticsData.
 
         列中去重后的长整数个数
 
@@ -155,7 +155,7 @@ class LongColumnStatisticsData:
 
     @property
     def bit_vector(self):
-        """Gets the bit_vector of this LongColumnStatisticsData.
+        r"""Gets the bit_vector of this LongColumnStatisticsData.
 
         估算唯一值使用的位图
 
@@ -166,7 +166,7 @@ class LongColumnStatisticsData:
 
     @bit_vector.setter
     def bit_vector(self, bit_vector):
-        """Sets the bit_vector of this LongColumnStatisticsData.
+        r"""Sets the bit_vector of this LongColumnStatisticsData.
 
         估算唯一值使用的位图
 

@@ -33,7 +33,7 @@ class ListBackgroundTasksRequest:
     }
 
     def __init__(self, instance_id=None, start=None, limit=None, begin_time=None, end_time=None):
-        """ListBackgroundTasksRequest
+        r"""ListBackgroundTasksRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListBackgroundTasksRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListBackgroundTasksRequest.
+        r"""Gets the instance_id of this ListBackgroundTasksRequest.
 
         实例ID。
 
@@ -81,7 +81,7 @@ class ListBackgroundTasksRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListBackgroundTasksRequest.
+        r"""Sets the instance_id of this ListBackgroundTasksRequest.
 
         实例ID。
 
@@ -92,7 +92,7 @@ class ListBackgroundTasksRequest:
 
     @property
     def start(self):
-        """Gets the start of this ListBackgroundTasksRequest.
+        r"""Gets the start of this ListBackgroundTasksRequest.
 
         开启查询的任务编号。
 
@@ -103,7 +103,7 @@ class ListBackgroundTasksRequest:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this ListBackgroundTasksRequest.
+        r"""Sets the start of this ListBackgroundTasksRequest.
 
         开启查询的任务编号。
 
@@ -114,7 +114,7 @@ class ListBackgroundTasksRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListBackgroundTasksRequest.
+        r"""Gets the limit of this ListBackgroundTasksRequest.
 
         查询的任务个数。
 
@@ -125,7 +125,7 @@ class ListBackgroundTasksRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListBackgroundTasksRequest.
+        r"""Sets the limit of this ListBackgroundTasksRequest.
 
         查询的任务个数。
 
@@ -136,7 +136,7 @@ class ListBackgroundTasksRequest:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ListBackgroundTasksRequest.
+        r"""Gets the begin_time of this ListBackgroundTasksRequest.
 
         查询任务的最小时间，格式为YYYYMMDDHHmmss。
 
@@ -147,7 +147,7 @@ class ListBackgroundTasksRequest:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ListBackgroundTasksRequest.
+        r"""Sets the begin_time of this ListBackgroundTasksRequest.
 
         查询任务的最小时间，格式为YYYYMMDDHHmmss。
 
@@ -158,7 +158,7 @@ class ListBackgroundTasksRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListBackgroundTasksRequest.
+        r"""Gets the end_time of this ListBackgroundTasksRequest.
 
         查询任务的最大时间，格式为YYYYMMDDHHmmss。
 
@@ -169,7 +169,7 @@ class ListBackgroundTasksRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListBackgroundTasksRequest.
+        r"""Sets the end_time of this ListBackgroundTasksRequest.
 
         查询任务的最大时间，格式为YYYYMMDDHHmmss。
 

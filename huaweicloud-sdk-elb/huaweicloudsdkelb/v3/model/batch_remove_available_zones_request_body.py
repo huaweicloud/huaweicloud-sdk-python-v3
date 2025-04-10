@@ -25,7 +25,7 @@ class BatchRemoveAvailableZonesRequestBody:
     }
 
     def __init__(self, availability_zone_list=None):
-        """BatchRemoveAvailableZonesRequestBody
+        r"""BatchRemoveAvailableZonesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchRemoveAvailableZonesRequestBody:
 
     @property
     def availability_zone_list(self):
-        """Gets the availability_zone_list of this BatchRemoveAvailableZonesRequestBody.
+        r"""Gets the availability_zone_list of this BatchRemoveAvailableZonesRequestBody.
 
         移除的可用区列表，不能为空。
 
@@ -53,7 +53,7 @@ class BatchRemoveAvailableZonesRequestBody:
 
     @availability_zone_list.setter
     def availability_zone_list(self, availability_zone_list):
-        """Sets the availability_zone_list of this BatchRemoveAvailableZonesRequestBody.
+        r"""Sets the availability_zone_list of this BatchRemoveAvailableZonesRequestBody.
 
         移除的可用区列表，不能为空。
 

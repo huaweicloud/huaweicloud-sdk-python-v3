@@ -25,7 +25,7 @@ class AddExtensionEvaluationRequest:
     }
 
     def __init__(self, body=None):
-        """AddExtensionEvaluationRequest
+        r"""AddExtensionEvaluationRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AddExtensionEvaluationRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddExtensionEvaluationRequest.
+        r"""Gets the body of this AddExtensionEvaluationRequest.
 
         :return: The body of this AddExtensionEvaluationRequest.
         :rtype: :class:`huaweicloudsdkcloudide.v2.Evaluation`
@@ -52,7 +52,7 @@ class AddExtensionEvaluationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddExtensionEvaluationRequest.
+        r"""Sets the body of this AddExtensionEvaluationRequest.
 
         :param body: The body of this AddExtensionEvaluationRequest.
         :type body: :class:`huaweicloudsdkcloudide.v2.Evaluation`

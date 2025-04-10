@@ -28,7 +28,7 @@ class RecognizeDriverLicenseResponse(SdkResponse):
     }
 
     def __init__(self, result=None, x_request_id=None):
-        """RecognizeDriverLicenseResponse
+        r"""RecognizeDriverLicenseResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RecognizeDriverLicenseResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RecognizeDriverLicenseResponse.
+        r"""Gets the result of this RecognizeDriverLicenseResponse.
 
         :return: The result of this RecognizeDriverLicenseResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.DriverLicenseResult`
@@ -60,7 +60,7 @@ class RecognizeDriverLicenseResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RecognizeDriverLicenseResponse.
+        r"""Sets the result of this RecognizeDriverLicenseResponse.
 
         :param result: The result of this RecognizeDriverLicenseResponse.
         :type result: :class:`huaweicloudsdkocr.v1.DriverLicenseResult`
@@ -69,7 +69,7 @@ class RecognizeDriverLicenseResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this RecognizeDriverLicenseResponse.
+        r"""Gets the x_request_id of this RecognizeDriverLicenseResponse.
 
         :return: The x_request_id of this RecognizeDriverLicenseResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class RecognizeDriverLicenseResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this RecognizeDriverLicenseResponse.
+        r"""Sets the x_request_id of this RecognizeDriverLicenseResponse.
 
         :param x_request_id: The x_request_id of this RecognizeDriverLicenseResponse.
         :type x_request_id: str

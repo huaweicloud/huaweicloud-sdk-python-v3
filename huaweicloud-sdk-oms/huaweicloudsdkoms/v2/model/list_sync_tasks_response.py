@@ -28,7 +28,7 @@ class ListSyncTasksResponse(SdkResponse):
     }
 
     def __init__(self, tasks=None, count=None):
-        """ListSyncTasksResponse
+        r"""ListSyncTasksResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSyncTasksResponse(SdkResponse):
 
     @property
     def tasks(self):
-        """Gets the tasks of this ListSyncTasksResponse.
+        r"""Gets the tasks of this ListSyncTasksResponse.
 
         查询的同步任务详情
 
@@ -62,7 +62,7 @@ class ListSyncTasksResponse(SdkResponse):
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this ListSyncTasksResponse.
+        r"""Sets the tasks of this ListSyncTasksResponse.
 
         查询的同步任务详情
 
@@ -73,7 +73,7 @@ class ListSyncTasksResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListSyncTasksResponse.
+        r"""Gets the count of this ListSyncTasksResponse.
 
         满足查询条件的同步任务总数
 
@@ -84,7 +84,7 @@ class ListSyncTasksResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListSyncTasksResponse.
+        r"""Sets the count of this ListSyncTasksResponse.
 
         满足查询条件的同步任务总数
 

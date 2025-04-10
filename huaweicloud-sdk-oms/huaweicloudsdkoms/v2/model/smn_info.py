@@ -29,7 +29,7 @@ class SmnInfo:
     }
 
     def __init__(self, notify_result=None, notify_error_message=None, topic_name=None):
-        """SmnInfo
+        r"""SmnInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class SmnInfo:
 
     @property
     def notify_result(self):
-        """Gets the notify_result of this SmnInfo.
+        r"""Gets the notify_result of this SmnInfo.
 
         记录迁移任务执行完毕后SMN消息是否发送成功。
 
@@ -68,7 +68,7 @@ class SmnInfo:
 
     @notify_result.setter
     def notify_result(self, notify_result):
-        """Sets the notify_result of this SmnInfo.
+        r"""Sets the notify_result of this SmnInfo.
 
         记录迁移任务执行完毕后SMN消息是否发送成功。
 
@@ -79,7 +79,7 @@ class SmnInfo:
 
     @property
     def notify_error_message(self):
-        """Gets the notify_error_message of this SmnInfo.
+        r"""Gets the notify_error_message of this SmnInfo.
 
         记录SMN消息发送失败原因的错误码（迁移任务成功时为空）。
 
@@ -90,7 +90,7 @@ class SmnInfo:
 
     @notify_error_message.setter
     def notify_error_message(self, notify_error_message):
-        """Sets the notify_error_message of this SmnInfo.
+        r"""Sets the notify_error_message of this SmnInfo.
 
         记录SMN消息发送失败原因的错误码（迁移任务成功时为空）。
 
@@ -101,7 +101,7 @@ class SmnInfo:
 
     @property
     def topic_name(self):
-        """Gets the topic_name of this SmnInfo.
+        r"""Gets the topic_name of this SmnInfo.
 
         SMN Topic的名称（SMN消息发送成功时为空）。
 
@@ -112,7 +112,7 @@ class SmnInfo:
 
     @topic_name.setter
     def topic_name(self, topic_name):
-        """Sets the topic_name of this SmnInfo.
+        r"""Sets the topic_name of this SmnInfo.
 
         SMN Topic的名称（SMN消息发送成功时为空）。
 

@@ -25,7 +25,7 @@ class DeleteDashboardsRequest:
     }
 
     def __init__(self, body=None):
-        """DeleteDashboardsRequest
+        r"""DeleteDashboardsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteDashboardsRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteDashboardsRequest.
+        r"""Gets the body of this DeleteDashboardsRequest.
 
         :return: The body of this DeleteDashboardsRequest.
         :rtype: :class:`huaweicloudsdkces.v2.BatchDeleteDashboardRequestBody`
@@ -52,7 +52,7 @@ class DeleteDashboardsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteDashboardsRequest.
+        r"""Sets the body of this DeleteDashboardsRequest.
 
         :param body: The body of this DeleteDashboardsRequest.
         :type body: :class:`huaweicloudsdkces.v2.BatchDeleteDashboardRequestBody`

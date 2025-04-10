@@ -51,7 +51,7 @@ class CreateHealthMonitorOption:
     }
 
     def __init__(self, admin_state_up=None, delay=None, domain_name=None, expected_codes=None, http_method=None, max_retries=None, max_retries_down=None, monitor_port=None, name=None, pool_id=None, project_id=None, timeout=None, type=None, url_path=None):
-        """CreateHealthMonitorOption
+        r"""CreateHealthMonitorOption
 
         The model defined in huaweicloud sdk
 
@@ -129,7 +129,7 @@ class CreateHealthMonitorOption:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this CreateHealthMonitorOption.
+        r"""Gets the admin_state_up of this CreateHealthMonitorOption.
 
         参数解释：健康检查的管理状态。  取值范围： - true：表示开启健康检查。 - false表示关闭健康检查。  默认取值：true
 
@@ -140,7 +140,7 @@ class CreateHealthMonitorOption:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this CreateHealthMonitorOption.
+        r"""Sets the admin_state_up of this CreateHealthMonitorOption.
 
         参数解释：健康检查的管理状态。  取值范围： - true：表示开启健康检查。 - false表示关闭健康检查。  默认取值：true
 
@@ -151,7 +151,7 @@ class CreateHealthMonitorOption:
 
     @property
     def delay(self):
-        """Gets the delay of this CreateHealthMonitorOption.
+        r"""Gets the delay of this CreateHealthMonitorOption.
 
         健康检查间隔。取值：1-50s。
 
@@ -162,7 +162,7 @@ class CreateHealthMonitorOption:
 
     @delay.setter
     def delay(self, delay):
-        """Sets the delay of this CreateHealthMonitorOption.
+        r"""Sets the delay of this CreateHealthMonitorOption.
 
         健康检查间隔。取值：1-50s。
 
@@ -173,7 +173,7 @@ class CreateHealthMonitorOption:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this CreateHealthMonitorOption.
+        r"""Gets the domain_name of this CreateHealthMonitorOption.
 
         发送健康检查请求的域名。  取值：以数字或字母开头，只能包含数字、字母、’-’、’.’。  默认为空，表示使用负载均衡器的vip作为http请求的目的地址。  使用说明：当type为HTTP/HTTPS时生效。
 
@@ -184,7 +184,7 @@ class CreateHealthMonitorOption:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this CreateHealthMonitorOption.
+        r"""Sets the domain_name of this CreateHealthMonitorOption.
 
         发送健康检查请求的域名。  取值：以数字或字母开头，只能包含数字、字母、’-’、’.’。  默认为空，表示使用负载均衡器的vip作为http请求的目的地址。  使用说明：当type为HTTP/HTTPS时生效。
 
@@ -195,7 +195,7 @@ class CreateHealthMonitorOption:
 
     @property
     def expected_codes(self):
-        """Gets the expected_codes of this CreateHealthMonitorOption.
+        r"""Gets the expected_codes of this CreateHealthMonitorOption.
 
         期望响应状态码。  取值： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。   默认值：若健康检查type为GRPC，则默认值为0,；其他为200。  仅支持HTTP/HTTPS/GRPC设置该字段，其他协议设置不会生效。
 
@@ -206,7 +206,7 @@ class CreateHealthMonitorOption:
 
     @expected_codes.setter
     def expected_codes(self, expected_codes):
-        """Sets the expected_codes of this CreateHealthMonitorOption.
+        r"""Sets the expected_codes of this CreateHealthMonitorOption.
 
         期望响应状态码。  取值： - 单值：单个返回码，例如200。 - 列表：多个特定返回码，例如200，202。 - 区间：一个返回码区间，例如200-204。   默认值：若健康检查type为GRPC，则默认值为0,；其他为200。  仅支持HTTP/HTTPS/GRPC设置该字段，其他协议设置不会生效。
 
@@ -217,7 +217,7 @@ class CreateHealthMonitorOption:
 
     @property
     def http_method(self):
-        """Gets the http_method of this CreateHealthMonitorOption.
+        r"""Gets the http_method of this CreateHealthMonitorOption.
 
         HTTP请求方法。  取值：GET、HEAD、POST，默认GET。  使用说明：当type为HTTP/HTTPS时生效。
 
@@ -228,7 +228,7 @@ class CreateHealthMonitorOption:
 
     @http_method.setter
     def http_method(self, http_method):
-        """Sets the http_method of this CreateHealthMonitorOption.
+        r"""Sets the http_method of this CreateHealthMonitorOption.
 
         HTTP请求方法。  取值：GET、HEAD、POST，默认GET。  使用说明：当type为HTTP/HTTPS时生效。
 
@@ -239,7 +239,7 @@ class CreateHealthMonitorOption:
 
     @property
     def max_retries(self):
-        """Gets the max_retries of this CreateHealthMonitorOption.
+        r"""Gets the max_retries of this CreateHealthMonitorOption.
 
         健康检查连续成功多少次后，将后端服务器的健康检查状态由OFFLINE判定为ONLINE。取值范围：1-10。
 
@@ -250,7 +250,7 @@ class CreateHealthMonitorOption:
 
     @max_retries.setter
     def max_retries(self, max_retries):
-        """Sets the max_retries of this CreateHealthMonitorOption.
+        r"""Sets the max_retries of this CreateHealthMonitorOption.
 
         健康检查连续成功多少次后，将后端服务器的健康检查状态由OFFLINE判定为ONLINE。取值范围：1-10。
 
@@ -261,7 +261,7 @@ class CreateHealthMonitorOption:
 
     @property
     def max_retries_down(self):
-        """Gets the max_retries_down of this CreateHealthMonitorOption.
+        r"""Gets the max_retries_down of this CreateHealthMonitorOption.
 
         健康检查连续失败多少次后，将后端服务器的健康检查状态由ONLINE判定为OFFLINE。取值范围：1-10，默认3。
 
@@ -272,7 +272,7 @@ class CreateHealthMonitorOption:
 
     @max_retries_down.setter
     def max_retries_down(self, max_retries_down):
-        """Sets the max_retries_down of this CreateHealthMonitorOption.
+        r"""Sets the max_retries_down of this CreateHealthMonitorOption.
 
         健康检查连续失败多少次后，将后端服务器的健康检查状态由ONLINE判定为OFFLINE。取值范围：1-10，默认3。
 
@@ -283,7 +283,7 @@ class CreateHealthMonitorOption:
 
     @property
     def monitor_port(self):
-        """Gets the monitor_port of this CreateHealthMonitorOption.
+        r"""Gets the monitor_port of this CreateHealthMonitorOption.
 
         参数解释：健康检查端口号。 约束限制： - 当绑定的pool开启了端口透传功能时，该字段为必填。 [- 当pool协议为IP时，monitor_port必须指定为非0值。](tag:hws_eu) 取值范围：1-65535和null，传null表示使用后端服务器端口号。 默认取值：null
 
@@ -294,7 +294,7 @@ class CreateHealthMonitorOption:
 
     @monitor_port.setter
     def monitor_port(self, monitor_port):
-        """Sets the monitor_port of this CreateHealthMonitorOption.
+        r"""Sets the monitor_port of this CreateHealthMonitorOption.
 
         参数解释：健康检查端口号。 约束限制： - 当绑定的pool开启了端口透传功能时，该字段为必填。 [- 当pool协议为IP时，monitor_port必须指定为非0值。](tag:hws_eu) 取值范围：1-65535和null，传null表示使用后端服务器端口号。 默认取值：null
 
@@ -305,7 +305,7 @@ class CreateHealthMonitorOption:
 
     @property
     def name(self):
-        """Gets the name of this CreateHealthMonitorOption.
+        r"""Gets the name of this CreateHealthMonitorOption.
 
         健康检查名称。
 
@@ -316,7 +316,7 @@ class CreateHealthMonitorOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateHealthMonitorOption.
+        r"""Sets the name of this CreateHealthMonitorOption.
 
         健康检查名称。
 
@@ -327,7 +327,7 @@ class CreateHealthMonitorOption:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this CreateHealthMonitorOption.
+        r"""Gets the pool_id of this CreateHealthMonitorOption.
 
         健康检查所在的后端服务器组ID
 
@@ -338,7 +338,7 @@ class CreateHealthMonitorOption:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this CreateHealthMonitorOption.
+        r"""Sets the pool_id of this CreateHealthMonitorOption.
 
         健康检查所在的后端服务器组ID
 
@@ -349,7 +349,7 @@ class CreateHealthMonitorOption:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateHealthMonitorOption.
+        r"""Gets the project_id of this CreateHealthMonitorOption.
 
         健康检查所在的项目ID。
 
@@ -360,7 +360,7 @@ class CreateHealthMonitorOption:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateHealthMonitorOption.
+        r"""Sets the project_id of this CreateHealthMonitorOption.
 
         健康检查所在的项目ID。
 
@@ -371,7 +371,7 @@ class CreateHealthMonitorOption:
 
     @property
     def timeout(self):
-        """Gets the timeout of this CreateHealthMonitorOption.
+        r"""Gets the timeout of this CreateHealthMonitorOption.
 
         一次健康检查请求的超时时间。  建议该值小于delay的值。
 
@@ -382,7 +382,7 @@ class CreateHealthMonitorOption:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this CreateHealthMonitorOption.
+        r"""Sets the timeout of this CreateHealthMonitorOption.
 
         一次健康检查请求的超时时间。  建议该值小于delay的值。
 
@@ -393,7 +393,7 @@ class CreateHealthMonitorOption:
 
     @property
     def type(self):
-        """Gets the type of this CreateHealthMonitorOption.
+        r"""Gets the type of this CreateHealthMonitorOption.
 
         健康检查请求协议。  取值：TCP、UDP_CONNECT、HTTP、HTTPS、GRPC和TLS。  使用说明： - 若pool的protocol为QUIC，则type只能是UDP_CONNECT。 - 若pool的protocol为UDP，则type只能UDP_CONNECT。 - 若pool的protocol为TCP，则type可以是TCP、HTTP、HTTPS。 [- 若pool的protocol为IP，则type可以是TCP、HTTP、HTTPS。](tag:hws_eu) - 若pool的protocol为HTTP，则type可以是TCP、HTTP、HTTPS、TLS、GRPC。 - 若pool的protocol为HTTPS，则type可以是TCP、HTTP、HTTPS、TLS、GRPC。 - 若pool的protocol为GRPC，则type可以是TCP、HTTP、HTTPS、TLS、GRPC。 - 若pool的protocol为TLS，则type可以是TCP、HTTP、HTTPS、TLS、GRPC。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt)
 
@@ -404,7 +404,7 @@ class CreateHealthMonitorOption:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateHealthMonitorOption.
+        r"""Sets the type of this CreateHealthMonitorOption.
 
         健康检查请求协议。  取值：TCP、UDP_CONNECT、HTTP、HTTPS、GRPC和TLS。  使用说明： - 若pool的protocol为QUIC，则type只能是UDP_CONNECT。 - 若pool的protocol为UDP，则type只能UDP_CONNECT。 - 若pool的protocol为TCP，则type可以是TCP、HTTP、HTTPS。 [- 若pool的protocol为IP，则type可以是TCP、HTTP、HTTPS。](tag:hws_eu) - 若pool的protocol为HTTP，则type可以是TCP、HTTP、HTTPS、TLS、GRPC。 - 若pool的protocol为HTTPS，则type可以是TCP、HTTP、HTTPS、TLS、GRPC。 - 若pool的protocol为GRPC，则type可以是TCP、HTTP、HTTPS、TLS、GRPC。 - 若pool的protocol为TLS，则type可以是TCP、HTTP、HTTPS、TLS、GRPC。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt)  [荷兰region不支持QUIC。](tag:dt)
 
@@ -415,7 +415,7 @@ class CreateHealthMonitorOption:
 
     @property
     def url_path(self):
-        """Gets the url_path of this CreateHealthMonitorOption.
+        r"""Gets the url_path of this CreateHealthMonitorOption.
 
         健康检查请求的请求路径。以\"/\"开头，默认为\"/\"。  支持使用字母、数字和短划线（-）、正斜线（/）、半角句号（.）、百分号（%）、半角问号（?）、井号（#）和and（&）以及扩展字符集_;~!()*[]@$^:',+  使用说明：当type为HTTP/HTTPS时生效。
 
@@ -426,7 +426,7 @@ class CreateHealthMonitorOption:
 
     @url_path.setter
     def url_path(self, url_path):
-        """Sets the url_path of this CreateHealthMonitorOption.
+        r"""Sets the url_path of this CreateHealthMonitorOption.
 
         健康检查请求的请求路径。以\"/\"开头，默认为\"/\"。  支持使用字母、数字和短划线（-）、正斜线（/）、半角句号（.）、百分号（%）、半角问号（?）、井号（#）和and（&）以及扩展字符集_;~!()*[]@$^:',+  使用说明：当type为HTTP/HTTPS时生效。
 

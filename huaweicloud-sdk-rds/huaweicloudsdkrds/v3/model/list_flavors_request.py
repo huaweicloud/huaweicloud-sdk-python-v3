@@ -33,7 +33,7 @@ class ListFlavorsRequest:
     }
 
     def __init__(self, x_language=None, database_name=None, version_name=None, spec_code=None, is_serverless=None):
-        """ListFlavorsRequest
+        r"""ListFlavorsRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListFlavorsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListFlavorsRequest.
+        r"""Gets the x_language of this ListFlavorsRequest.
 
         语言
 
@@ -81,7 +81,7 @@ class ListFlavorsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListFlavorsRequest.
+        r"""Sets the x_language of this ListFlavorsRequest.
 
         语言
 
@@ -92,7 +92,7 @@ class ListFlavorsRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this ListFlavorsRequest.
+        r"""Gets the database_name of this ListFlavorsRequest.
 
         数据库引擎。支持的引擎如下，不区分大小写： MySQL PostgreSQL SQLServer
 
@@ -103,7 +103,7 @@ class ListFlavorsRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this ListFlavorsRequest.
+        r"""Sets the database_name of this ListFlavorsRequest.
 
         数据库引擎。支持的引擎如下，不区分大小写： MySQL PostgreSQL SQLServer
 
@@ -114,7 +114,7 @@ class ListFlavorsRequest:
 
     @property
     def version_name(self):
-        """Gets the version_name of this ListFlavorsRequest.
+        r"""Gets the version_name of this ListFlavorsRequest.
 
         数据库版本号，获取方法请参见5.1查询数据库引擎的版本。（可输入小版本号）
 
@@ -125,7 +125,7 @@ class ListFlavorsRequest:
 
     @version_name.setter
     def version_name(self, version_name):
-        """Sets the version_name of this ListFlavorsRequest.
+        r"""Sets the version_name of this ListFlavorsRequest.
 
         数据库版本号，获取方法请参见5.1查询数据库引擎的版本。（可输入小版本号）
 
@@ -136,7 +136,7 @@ class ListFlavorsRequest:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this ListFlavorsRequest.
+        r"""Gets the spec_code of this ListFlavorsRequest.
 
         规格编码
 
@@ -147,7 +147,7 @@ class ListFlavorsRequest:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this ListFlavorsRequest.
+        r"""Sets the spec_code of this ListFlavorsRequest.
 
         规格编码
 
@@ -158,7 +158,7 @@ class ListFlavorsRequest:
 
     @property
     def is_serverless(self):
-        """Gets the is_serverless of this ListFlavorsRequest.
+        r"""Gets the is_serverless of this ListFlavorsRequest.
 
         是否查询serverless规格。取值范围如下，区分大小写： true：查询serverless规格 false：查询非serverless规格 默认值 false。
 
@@ -169,7 +169,7 @@ class ListFlavorsRequest:
 
     @is_serverless.setter
     def is_serverless(self, is_serverless):
-        """Sets the is_serverless of this ListFlavorsRequest.
+        r"""Sets the is_serverless of this ListFlavorsRequest.
 
         是否查询serverless规格。取值范围如下，区分大小写： true：查询serverless规格 false：查询非serverless规格 默认值 false。
 

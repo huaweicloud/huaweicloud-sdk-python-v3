@@ -29,7 +29,7 @@ class ShareInfoFeature:
     }
 
     def __init__(self, is_support=None, message=None, msg_code=None):
-        """ShareInfoFeature
+        r"""ShareInfoFeature
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ShareInfoFeature:
 
     @property
     def is_support(self):
-        """Gets the is_support of this ShareInfoFeature.
+        r"""Gets the is_support of this ShareInfoFeature.
 
         文件系统是否支持该特性
 
@@ -68,7 +68,7 @@ class ShareInfoFeature:
 
     @is_support.setter
     def is_support(self, is_support):
-        """Sets the is_support of this ShareInfoFeature.
+        r"""Sets the is_support of this ShareInfoFeature.
 
         文件系统是否支持该特性
 
@@ -79,7 +79,7 @@ class ShareInfoFeature:
 
     @property
     def message(self):
-        """Gets the message of this ShareInfoFeature.
+        r"""Gets the message of this ShareInfoFeature.
 
         文件系统是否支持该特性的详细信息
 
@@ -90,7 +90,7 @@ class ShareInfoFeature:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShareInfoFeature.
+        r"""Sets the message of this ShareInfoFeature.
 
         文件系统是否支持该特性的详细信息
 
@@ -101,7 +101,7 @@ class ShareInfoFeature:
 
     @property
     def msg_code(self):
-        """Gets the msg_code of this ShareInfoFeature.
+        r"""Gets the msg_code of this ShareInfoFeature.
 
         文件系统是否支持该特性的详细信息
 
@@ -112,7 +112,7 @@ class ShareInfoFeature:
 
     @msg_code.setter
     def msg_code(self, msg_code):
-        """Sets the msg_code of this ShareInfoFeature.
+        r"""Sets the msg_code of this ShareInfoFeature.
 
         文件系统是否支持该特性的详细信息
 

@@ -25,7 +25,7 @@ class DownloadLogByRecordIdRequest:
     }
 
     def __init__(self, record_id=None):
-        """DownloadLogByRecordIdRequest
+        r"""DownloadLogByRecordIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DownloadLogByRecordIdRequest:
 
     @property
     def record_id(self):
-        """Gets the record_id of this DownloadLogByRecordIdRequest.
+        r"""Gets the record_id of this DownloadLogByRecordIdRequest.
 
         记录ID,36位数字、小写字母、'-'组组合。
 
@@ -53,7 +53,7 @@ class DownloadLogByRecordIdRequest:
 
     @record_id.setter
     def record_id(self, record_id):
-        """Sets the record_id of this DownloadLogByRecordIdRequest.
+        r"""Sets the record_id of this DownloadLogByRecordIdRequest.
 
         记录ID,36位数字、小写字母、'-'组组合。
 

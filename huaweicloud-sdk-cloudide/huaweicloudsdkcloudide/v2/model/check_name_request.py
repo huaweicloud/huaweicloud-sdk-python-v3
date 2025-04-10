@@ -25,7 +25,7 @@ class CheckNameRequest:
     }
 
     def __init__(self, display_name=None):
-        """CheckNameRequest
+        r"""CheckNameRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CheckNameRequest:
 
     @property
     def display_name(self):
-        """Gets the display_name of this CheckNameRequest.
+        r"""Gets the display_name of this CheckNameRequest.
 
         实例名。 可以输入中文、数字、字母、下划线、点、破折号。长度介于3-100之间
 
@@ -53,7 +53,7 @@ class CheckNameRequest:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this CheckNameRequest.
+        r"""Sets the display_name of this CheckNameRequest.
 
         实例名。 可以输入中文、数字、字母、下划线、点、破折号。长度介于3-100之间
 

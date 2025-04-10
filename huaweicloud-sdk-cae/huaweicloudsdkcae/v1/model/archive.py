@@ -25,7 +25,7 @@ class Archive:
     }
 
     def __init__(self, artifact_namespace=None):
-        """Archive
+        r"""Archive
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class Archive:
 
     @property
     def artifact_namespace(self):
-        """Gets the artifact_namespace of this Archive.
+        r"""Gets the artifact_namespace of this Archive.
 
         产物纳管SWR组织。
 
@@ -54,7 +54,7 @@ class Archive:
 
     @artifact_namespace.setter
     def artifact_namespace(self, artifact_namespace):
-        """Sets the artifact_namespace of this Archive.
+        r"""Sets the artifact_namespace of this Archive.
 
         产物纳管SWR组织。
 

@@ -25,7 +25,7 @@ class SubCustomerInfoV3:
     }
 
     def __init__(self, customer_id=None):
-        """SubCustomerInfoV3
+        r"""SubCustomerInfoV3
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SubCustomerInfoV3:
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this SubCustomerInfoV3.
+        r"""Gets the customer_id of this SubCustomerInfoV3.
 
         客户账号ID。
 
@@ -54,7 +54,7 @@ class SubCustomerInfoV3:
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this SubCustomerInfoV3.
+        r"""Sets the customer_id of this SubCustomerInfoV3.
 
         客户账号ID。
 

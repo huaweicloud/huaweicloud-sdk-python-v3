@@ -29,7 +29,7 @@ class InstanceAbstractReq:
     }
 
     def __init__(self, description=None, maintain_begin=None, maintain_end=None):
-        """InstanceAbstractReq
+        r"""InstanceAbstractReq
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class InstanceAbstractReq:
 
     @property
     def description(self):
-        """Gets the description of this InstanceAbstractReq.
+        r"""Gets the description of this InstanceAbstractReq.
 
         实例描述。支持除>和<以外的字符，长度为0~255。
 
@@ -68,7 +68,7 @@ class InstanceAbstractReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this InstanceAbstractReq.
+        r"""Sets the description of this InstanceAbstractReq.
 
         实例描述。支持除>和<以外的字符，长度为0~255。
 
@@ -79,7 +79,7 @@ class InstanceAbstractReq:
 
     @property
     def maintain_begin(self):
-        """Gets the maintain_begin of this InstanceAbstractReq.
+        r"""Gets the maintain_begin of this InstanceAbstractReq.
 
         维护时间窗开始时间。时间格式为 xx:00:00，xx取值为02,06,10,14,18,22。  在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。
 
@@ -90,7 +90,7 @@ class InstanceAbstractReq:
 
     @maintain_begin.setter
     def maintain_begin(self, maintain_begin):
-        """Sets the maintain_begin of this InstanceAbstractReq.
+        r"""Sets the maintain_begin of this InstanceAbstractReq.
 
         维护时间窗开始时间。时间格式为 xx:00:00，xx取值为02,06,10,14,18,22。  在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。
 
@@ -101,7 +101,7 @@ class InstanceAbstractReq:
 
     @property
     def maintain_end(self):
-        """Gets the maintain_end of this InstanceAbstractReq.
+        r"""Gets the maintain_end of this InstanceAbstractReq.
 
         维护时间窗结束时间。时间格式为 xx:00:00，与维护时间窗开始时间相差4个小时。  在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。
 
@@ -112,7 +112,7 @@ class InstanceAbstractReq:
 
     @maintain_end.setter
     def maintain_end(self, maintain_end):
-        """Sets the maintain_end of this InstanceAbstractReq.
+        r"""Sets the maintain_end of this InstanceAbstractReq.
 
         维护时间窗结束时间。时间格式为 xx:00:00，与维护时间窗开始时间相差4个小时。  在这个时间段内，运维人员可以对该实例的节点进行维护操作。维护期间，业务可以正常使用，可能会发生闪断。维护操作通常几个月一次。
 

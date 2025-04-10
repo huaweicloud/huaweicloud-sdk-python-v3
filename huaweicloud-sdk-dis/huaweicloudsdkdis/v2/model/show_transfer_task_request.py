@@ -27,7 +27,7 @@ class ShowTransferTaskRequest:
     }
 
     def __init__(self, stream_name=None, task_name=None):
-        """ShowTransferTaskRequest
+        r"""ShowTransferTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowTransferTaskRequest:
 
     @property
     def stream_name(self):
-        """Gets the stream_name of this ShowTransferTaskRequest.
+        r"""Gets the stream_name of this ShowTransferTaskRequest.
 
         已创建的通道的名称。
 
@@ -59,7 +59,7 @@ class ShowTransferTaskRequest:
 
     @stream_name.setter
     def stream_name(self, stream_name):
-        """Sets the stream_name of this ShowTransferTaskRequest.
+        r"""Sets the stream_name of this ShowTransferTaskRequest.
 
         已创建的通道的名称。
 
@@ -70,7 +70,7 @@ class ShowTransferTaskRequest:
 
     @property
     def task_name(self):
-        """Gets the task_name of this ShowTransferTaskRequest.
+        r"""Gets the task_name of this ShowTransferTaskRequest.
 
         待删除的转储任务名称。
 
@@ -81,7 +81,7 @@ class ShowTransferTaskRequest:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this ShowTransferTaskRequest.
+        r"""Sets the task_name of this ShowTransferTaskRequest.
 
         待删除的转储任务名称。
 

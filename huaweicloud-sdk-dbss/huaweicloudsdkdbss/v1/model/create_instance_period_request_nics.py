@@ -27,7 +27,7 @@ class CreateInstancePeriodRequestNics:
     }
 
     def __init__(self, subnet_id=None, ip_address=None):
-        """CreateInstancePeriodRequestNics
+        r"""CreateInstancePeriodRequestNics
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateInstancePeriodRequestNics:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this CreateInstancePeriodRequestNics.
+        r"""Gets the subnet_id of this CreateInstancePeriodRequestNics.
 
         网卡对应的子网ID
 
@@ -60,7 +60,7 @@ class CreateInstancePeriodRequestNics:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this CreateInstancePeriodRequestNics.
+        r"""Sets the subnet_id of this CreateInstancePeriodRequestNics.
 
         网卡对应的子网ID
 
@@ -71,7 +71,7 @@ class CreateInstancePeriodRequestNics:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this CreateInstancePeriodRequestNics.
+        r"""Gets the ip_address of this CreateInstancePeriodRequestNics.
 
         IP地址，不填或空字符串为自动分配
 
@@ -82,7 +82,7 @@ class CreateInstancePeriodRequestNics:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this CreateInstancePeriodRequestNics.
+        r"""Sets the ip_address of this CreateInstancePeriodRequestNics.
 
         IP地址，不填或空字符串为自动分配
 

@@ -31,7 +31,7 @@ class PostgresqlUserForList:
     }
 
     def __init__(self, name=None, attributes=None, memberof=None, comment=None):
-        """PostgresqlUserForList
+        r"""PostgresqlUserForList
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class PostgresqlUserForList:
 
     @property
     def name(self):
-        """Gets the name of this PostgresqlUserForList.
+        r"""Gets the name of this PostgresqlUserForList.
 
         帐号名。
 
@@ -74,7 +74,7 @@ class PostgresqlUserForList:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PostgresqlUserForList.
+        r"""Sets the name of this PostgresqlUserForList.
 
         帐号名。
 
@@ -85,7 +85,7 @@ class PostgresqlUserForList:
 
     @property
     def attributes(self):
-        """Gets the attributes of this PostgresqlUserForList.
+        r"""Gets the attributes of this PostgresqlUserForList.
 
         用户的权限属性。
 
@@ -96,7 +96,7 @@ class PostgresqlUserForList:
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this PostgresqlUserForList.
+        r"""Sets the attributes of this PostgresqlUserForList.
 
         用户的权限属性。
 
@@ -107,7 +107,7 @@ class PostgresqlUserForList:
 
     @property
     def memberof(self):
-        """Gets the memberof of this PostgresqlUserForList.
+        r"""Gets the memberof of this PostgresqlUserForList.
 
         用户的默认权限。
 
@@ -118,7 +118,7 @@ class PostgresqlUserForList:
 
     @memberof.setter
     def memberof(self, memberof):
-        """Sets the memberof of this PostgresqlUserForList.
+        r"""Sets the memberof of this PostgresqlUserForList.
 
         用户的默认权限。
 
@@ -129,7 +129,7 @@ class PostgresqlUserForList:
 
     @property
     def comment(self):
-        """Gets the comment of this PostgresqlUserForList.
+        r"""Gets the comment of this PostgresqlUserForList.
 
         数据库用户备注。
 
@@ -140,7 +140,7 @@ class PostgresqlUserForList:
 
     @comment.setter
     def comment(self, comment):
-        """Sets the comment of this PostgresqlUserForList.
+        r"""Sets the comment of this PostgresqlUserForList.
 
         数据库用户备注。
 

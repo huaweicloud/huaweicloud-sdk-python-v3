@@ -24,7 +24,7 @@ class ExchangeInstanceIpResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ExchangeInstanceIpResponse
+        r"""ExchangeInstanceIpResponse
 
         The model defined in huaweicloud sdk
 

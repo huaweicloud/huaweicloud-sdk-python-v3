@@ -49,7 +49,7 @@ class NeutronListPortsRequest:
     }
 
     def __init__(self, limit=None, marker=None, id=None, name=None, admin_state_up=None, network_id=None, mac_address=None, device_id=None, device_owner=None, status=None, security_groups=None, fixed_ips=None, tenant_id=None):
-        """NeutronListPortsRequest
+        r"""NeutronListPortsRequest
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class NeutronListPortsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this NeutronListPortsRequest.
+        r"""Gets the limit of this NeutronListPortsRequest.
 
         每页返回的个数
 
@@ -138,7 +138,7 @@ class NeutronListPortsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this NeutronListPortsRequest.
+        r"""Sets the limit of this NeutronListPortsRequest.
 
         每页返回的个数
 
@@ -149,7 +149,7 @@ class NeutronListPortsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this NeutronListPortsRequest.
+        r"""Gets the marker of this NeutronListPortsRequest.
 
         分页查询起始的资源ID，为空时查询第一页
 
@@ -160,7 +160,7 @@ class NeutronListPortsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this NeutronListPortsRequest.
+        r"""Sets the marker of this NeutronListPortsRequest.
 
         分页查询起始的资源ID，为空时查询第一页
 
@@ -171,7 +171,7 @@ class NeutronListPortsRequest:
 
     @property
     def id(self):
-        """Gets the id of this NeutronListPortsRequest.
+        r"""Gets the id of this NeutronListPortsRequest.
 
         按照端口的ID过滤查询
 
@@ -182,7 +182,7 @@ class NeutronListPortsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NeutronListPortsRequest.
+        r"""Sets the id of this NeutronListPortsRequest.
 
         按照端口的ID过滤查询
 
@@ -193,7 +193,7 @@ class NeutronListPortsRequest:
 
     @property
     def name(self):
-        """Gets the name of this NeutronListPortsRequest.
+        r"""Gets the name of this NeutronListPortsRequest.
 
         按照端口的名称过滤查询
 
@@ -204,7 +204,7 @@ class NeutronListPortsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NeutronListPortsRequest.
+        r"""Sets the name of this NeutronListPortsRequest.
 
         按照端口的名称过滤查询
 
@@ -215,7 +215,7 @@ class NeutronListPortsRequest:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this NeutronListPortsRequest.
+        r"""Gets the admin_state_up of this NeutronListPortsRequest.
 
         按照端口的管理状态过滤查询，取值范围：true or false
 
@@ -226,7 +226,7 @@ class NeutronListPortsRequest:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this NeutronListPortsRequest.
+        r"""Sets the admin_state_up of this NeutronListPortsRequest.
 
         按照端口的管理状态过滤查询，取值范围：true or false
 
@@ -237,7 +237,7 @@ class NeutronListPortsRequest:
 
     @property
     def network_id(self):
-        """Gets the network_id of this NeutronListPortsRequest.
+        r"""Gets the network_id of this NeutronListPortsRequest.
 
         按照端口所属的网络ID过滤查询
 
@@ -248,7 +248,7 @@ class NeutronListPortsRequest:
 
     @network_id.setter
     def network_id(self, network_id):
-        """Sets the network_id of this NeutronListPortsRequest.
+        r"""Sets the network_id of this NeutronListPortsRequest.
 
         按照端口所属的网络ID过滤查询
 
@@ -259,7 +259,7 @@ class NeutronListPortsRequest:
 
     @property
     def mac_address(self):
-        """Gets the mac_address of this NeutronListPortsRequest.
+        r"""Gets the mac_address of this NeutronListPortsRequest.
 
         按照端口的mac地址过滤查询
 
@@ -270,7 +270,7 @@ class NeutronListPortsRequest:
 
     @mac_address.setter
     def mac_address(self, mac_address):
-        """Sets the mac_address of this NeutronListPortsRequest.
+        r"""Sets the mac_address of this NeutronListPortsRequest.
 
         按照端口的mac地址过滤查询
 
@@ -281,7 +281,7 @@ class NeutronListPortsRequest:
 
     @property
     def device_id(self):
-        """Gets the device_id of this NeutronListPortsRequest.
+        r"""Gets the device_id of this NeutronListPortsRequest.
 
         按照端口的设备ID过滤查询
 
@@ -292,7 +292,7 @@ class NeutronListPortsRequest:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this NeutronListPortsRequest.
+        r"""Sets the device_id of this NeutronListPortsRequest.
 
         按照端口的设备ID过滤查询
 
@@ -303,7 +303,7 @@ class NeutronListPortsRequest:
 
     @property
     def device_owner(self):
-        """Gets the device_owner of this NeutronListPortsRequest.
+        r"""Gets the device_owner of this NeutronListPortsRequest.
 
         按照端口的设备所属过滤查询
 
@@ -314,7 +314,7 @@ class NeutronListPortsRequest:
 
     @device_owner.setter
     def device_owner(self, device_owner):
-        """Sets the device_owner of this NeutronListPortsRequest.
+        r"""Sets the device_owner of this NeutronListPortsRequest.
 
         按照端口的设备所属过滤查询
 
@@ -325,7 +325,7 @@ class NeutronListPortsRequest:
 
     @property
     def status(self):
-        """Gets the status of this NeutronListPortsRequest.
+        r"""Gets the status of this NeutronListPortsRequest.
 
         按照端口状态过滤查询，取值范围：ACTIVE、BUILD、DOWN
 
@@ -336,7 +336,7 @@ class NeutronListPortsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this NeutronListPortsRequest.
+        r"""Sets the status of this NeutronListPortsRequest.
 
         按照端口状态过滤查询，取值范围：ACTIVE、BUILD、DOWN
 
@@ -347,7 +347,7 @@ class NeutronListPortsRequest:
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this NeutronListPortsRequest.
+        r"""Gets the security_groups of this NeutronListPortsRequest.
 
         按照安全组ID列表过滤查询
 
@@ -358,7 +358,7 @@ class NeutronListPortsRequest:
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this NeutronListPortsRequest.
+        r"""Sets the security_groups of this NeutronListPortsRequest.
 
         按照安全组ID列表过滤查询
 
@@ -369,7 +369,7 @@ class NeutronListPortsRequest:
 
     @property
     def fixed_ips(self):
-        """Gets the fixed_ips of this NeutronListPortsRequest.
+        r"""Gets the fixed_ips of this NeutronListPortsRequest.
 
         按照端口的IP地址过滤查询，fixed_ips=ip_address或者fixed_ips=subnet_id过滤查询
 
@@ -380,7 +380,7 @@ class NeutronListPortsRequest:
 
     @fixed_ips.setter
     def fixed_ips(self, fixed_ips):
-        """Sets the fixed_ips of this NeutronListPortsRequest.
+        r"""Sets the fixed_ips of this NeutronListPortsRequest.
 
         按照端口的IP地址过滤查询，fixed_ips=ip_address或者fixed_ips=subnet_id过滤查询
 
@@ -391,7 +391,7 @@ class NeutronListPortsRequest:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this NeutronListPortsRequest.
+        r"""Gets the tenant_id of this NeutronListPortsRequest.
 
         按照端口所属的项目ID过滤查询
 
@@ -402,7 +402,7 @@ class NeutronListPortsRequest:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this NeutronListPortsRequest.
+        r"""Sets the tenant_id of this NeutronListPortsRequest.
 
         按照端口所属的项目ID过滤查询
 

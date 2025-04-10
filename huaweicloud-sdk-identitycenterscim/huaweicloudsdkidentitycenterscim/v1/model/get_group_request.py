@@ -29,7 +29,7 @@ class GetGroupRequest:
     }
 
     def __init__(self, authorization=None, tenant_id=None, group_id=None):
-        """GetGroupRequest
+        r"""GetGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class GetGroupRequest:
 
     @property
     def authorization(self):
-        """Gets the authorization of this GetGroupRequest.
+        r"""Gets the authorization of this GetGroupRequest.
 
         承载令牌
 
@@ -65,7 +65,7 @@ class GetGroupRequest:
 
     @authorization.setter
     def authorization(self, authorization):
-        """Sets the authorization of this GetGroupRequest.
+        r"""Sets the authorization of this GetGroupRequest.
 
         承载令牌
 
@@ -76,7 +76,7 @@ class GetGroupRequest:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this GetGroupRequest.
+        r"""Gets the tenant_id of this GetGroupRequest.
 
         租户的全局唯一标识符（ID）
 
@@ -87,7 +87,7 @@ class GetGroupRequest:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this GetGroupRequest.
+        r"""Sets the tenant_id of this GetGroupRequest.
 
         租户的全局唯一标识符（ID）
 
@@ -98,7 +98,7 @@ class GetGroupRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this GetGroupRequest.
+        r"""Gets the group_id of this GetGroupRequest.
 
         用户组的全局唯一标识符（ID）
 
@@ -109,7 +109,7 @@ class GetGroupRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this GetGroupRequest.
+        r"""Sets the group_id of this GetGroupRequest.
 
         用户组的全局唯一标识符（ID）
 

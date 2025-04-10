@@ -37,7 +37,7 @@ class GlobalConnectionBandwidthLineLevel:
     }
 
     def __init__(self, id=None, description=None, created_at=None, updated_at=None, local_area=None, remote_area=None, levels=None):
-        """GlobalConnectionBandwidthLineLevel
+        r"""GlobalConnectionBandwidthLineLevel
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class GlobalConnectionBandwidthLineLevel:
 
     @property
     def id(self):
-        """Gets the id of this GlobalConnectionBandwidthLineLevel.
+        r"""Gets the id of this GlobalConnectionBandwidthLineLevel.
 
         实例ID。
 
@@ -93,7 +93,7 @@ class GlobalConnectionBandwidthLineLevel:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this GlobalConnectionBandwidthLineLevel.
+        r"""Sets the id of this GlobalConnectionBandwidthLineLevel.
 
         实例ID。
 
@@ -104,7 +104,7 @@ class GlobalConnectionBandwidthLineLevel:
 
     @property
     def description(self):
-        """Gets the description of this GlobalConnectionBandwidthLineLevel.
+        r"""Gets the description of this GlobalConnectionBandwidthLineLevel.
 
         实例描述。不支持 <>。
 
@@ -115,7 +115,7 @@ class GlobalConnectionBandwidthLineLevel:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this GlobalConnectionBandwidthLineLevel.
+        r"""Sets the description of this GlobalConnectionBandwidthLineLevel.
 
         实例描述。不支持 <>。
 
@@ -126,7 +126,7 @@ class GlobalConnectionBandwidthLineLevel:
 
     @property
     def created_at(self):
-        """Gets the created_at of this GlobalConnectionBandwidthLineLevel.
+        r"""Gets the created_at of this GlobalConnectionBandwidthLineLevel.
 
         实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -137,7 +137,7 @@ class GlobalConnectionBandwidthLineLevel:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this GlobalConnectionBandwidthLineLevel.
+        r"""Sets the created_at of this GlobalConnectionBandwidthLineLevel.
 
         实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -148,7 +148,7 @@ class GlobalConnectionBandwidthLineLevel:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this GlobalConnectionBandwidthLineLevel.
+        r"""Gets the updated_at of this GlobalConnectionBandwidthLineLevel.
 
         实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -159,7 +159,7 @@ class GlobalConnectionBandwidthLineLevel:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this GlobalConnectionBandwidthLineLevel.
+        r"""Sets the updated_at of this GlobalConnectionBandwidthLineLevel.
 
         实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -170,7 +170,7 @@ class GlobalConnectionBandwidthLineLevel:
 
     @property
     def local_area(self):
-        """Gets the local_area of this GlobalConnectionBandwidthLineLevel.
+        r"""Gets the local_area of this GlobalConnectionBandwidthLineLevel.
 
         功能说明：线路分级本端接入点。
 
@@ -181,7 +181,7 @@ class GlobalConnectionBandwidthLineLevel:
 
     @local_area.setter
     def local_area(self, local_area):
-        """Sets the local_area of this GlobalConnectionBandwidthLineLevel.
+        r"""Sets the local_area of this GlobalConnectionBandwidthLineLevel.
 
         功能说明：线路分级本端接入点。
 
@@ -192,7 +192,7 @@ class GlobalConnectionBandwidthLineLevel:
 
     @property
     def remote_area(self):
-        """Gets the remote_area of this GlobalConnectionBandwidthLineLevel.
+        r"""Gets the remote_area of this GlobalConnectionBandwidthLineLevel.
 
         功能描述：线路分级远端接入点。
 
@@ -203,7 +203,7 @@ class GlobalConnectionBandwidthLineLevel:
 
     @remote_area.setter
     def remote_area(self, remote_area):
-        """Sets the remote_area of this GlobalConnectionBandwidthLineLevel.
+        r"""Sets the remote_area of this GlobalConnectionBandwidthLineLevel.
 
         功能描述：线路分级远端接入点。
 
@@ -214,7 +214,7 @@ class GlobalConnectionBandwidthLineLevel:
 
     @property
     def levels(self):
-        """Gets the levels of this GlobalConnectionBandwidthLineLevel.
+        r"""Gets the levels of this GlobalConnectionBandwidthLineLevel.
 
         支持的铂金、金、银分级。
 
@@ -225,7 +225,7 @@ class GlobalConnectionBandwidthLineLevel:
 
     @levels.setter
     def levels(self, levels):
-        """Sets the levels of this GlobalConnectionBandwidthLineLevel.
+        r"""Sets the levels of this GlobalConnectionBandwidthLineLevel.
 
         支持的铂金、金、银分级。
 

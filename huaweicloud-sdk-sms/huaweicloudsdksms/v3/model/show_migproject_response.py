@@ -50,7 +50,7 @@ class ShowMigprojectResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, isdefault=None, region=None, start_target_server=None, speed_limit=None, use_public_ip=None, exist_server=None, type=None, enterprise_project=None, syncing=None, start_network_check=None):
-        """ShowMigprojectResponse
+        r"""ShowMigprojectResponse
 
         The model defined in huaweicloud sdk
 
@@ -128,7 +128,7 @@ class ShowMigprojectResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowMigprojectResponse.
+        r"""Gets the id of this ShowMigprojectResponse.
 
         迁移项目ID
 
@@ -139,7 +139,7 @@ class ShowMigprojectResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowMigprojectResponse.
+        r"""Sets the id of this ShowMigprojectResponse.
 
         迁移项目ID
 
@@ -150,7 +150,7 @@ class ShowMigprojectResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowMigprojectResponse.
+        r"""Gets the name of this ShowMigprojectResponse.
 
         迁移项目名称
 
@@ -161,7 +161,7 @@ class ShowMigprojectResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowMigprojectResponse.
+        r"""Sets the name of this ShowMigprojectResponse.
 
         迁移项目名称
 
@@ -172,7 +172,7 @@ class ShowMigprojectResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowMigprojectResponse.
+        r"""Gets the description of this ShowMigprojectResponse.
 
         迁移项目描述
 
@@ -183,7 +183,7 @@ class ShowMigprojectResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowMigprojectResponse.
+        r"""Sets the description of this ShowMigprojectResponse.
 
         迁移项目描述
 
@@ -194,7 +194,7 @@ class ShowMigprojectResponse(SdkResponse):
 
     @property
     def isdefault(self):
-        """Gets the isdefault of this ShowMigprojectResponse.
+        r"""Gets the isdefault of this ShowMigprojectResponse.
 
         是否为默认模板
 
@@ -205,7 +205,7 @@ class ShowMigprojectResponse(SdkResponse):
 
     @isdefault.setter
     def isdefault(self, isdefault):
-        """Sets the isdefault of this ShowMigprojectResponse.
+        r"""Sets the isdefault of this ShowMigprojectResponse.
 
         是否为默认模板
 
@@ -216,7 +216,7 @@ class ShowMigprojectResponse(SdkResponse):
 
     @property
     def region(self):
-        """Gets the region of this ShowMigprojectResponse.
+        r"""Gets the region of this ShowMigprojectResponse.
 
         区域名称
 
@@ -227,7 +227,7 @@ class ShowMigprojectResponse(SdkResponse):
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ShowMigprojectResponse.
+        r"""Sets the region of this ShowMigprojectResponse.
 
         区域名称
 
@@ -238,7 +238,7 @@ class ShowMigprojectResponse(SdkResponse):
 
     @property
     def start_target_server(self):
-        """Gets the start_target_server of this ShowMigprojectResponse.
+        r"""Gets the start_target_server of this ShowMigprojectResponse.
 
         迁移后是否启动目的端虚拟机
 
@@ -249,7 +249,7 @@ class ShowMigprojectResponse(SdkResponse):
 
     @start_target_server.setter
     def start_target_server(self, start_target_server):
-        """Sets the start_target_server of this ShowMigprojectResponse.
+        r"""Sets the start_target_server of this ShowMigprojectResponse.
 
         迁移后是否启动目的端虚拟机
 
@@ -260,7 +260,7 @@ class ShowMigprojectResponse(SdkResponse):
 
     @property
     def speed_limit(self):
-        """Gets the speed_limit of this ShowMigprojectResponse.
+        r"""Gets the speed_limit of this ShowMigprojectResponse.
 
         限制迁移速率，单位：Mbps
 
@@ -271,7 +271,7 @@ class ShowMigprojectResponse(SdkResponse):
 
     @speed_limit.setter
     def speed_limit(self, speed_limit):
-        """Sets the speed_limit of this ShowMigprojectResponse.
+        r"""Sets the speed_limit of this ShowMigprojectResponse.
 
         限制迁移速率，单位：Mbps
 
@@ -282,7 +282,7 @@ class ShowMigprojectResponse(SdkResponse):
 
     @property
     def use_public_ip(self):
-        """Gets the use_public_ip of this ShowMigprojectResponse.
+        r"""Gets the use_public_ip of this ShowMigprojectResponse.
 
         是否使用公网IP迁移
 
@@ -293,7 +293,7 @@ class ShowMigprojectResponse(SdkResponse):
 
     @use_public_ip.setter
     def use_public_ip(self, use_public_ip):
-        """Sets the use_public_ip of this ShowMigprojectResponse.
+        r"""Sets the use_public_ip of this ShowMigprojectResponse.
 
         是否使用公网IP迁移
 
@@ -304,7 +304,7 @@ class ShowMigprojectResponse(SdkResponse):
 
     @property
     def exist_server(self):
-        """Gets the exist_server of this ShowMigprojectResponse.
+        r"""Gets the exist_server of this ShowMigprojectResponse.
 
         是否是已经存在的服务器
 
@@ -315,7 +315,7 @@ class ShowMigprojectResponse(SdkResponse):
 
     @exist_server.setter
     def exist_server(self, exist_server):
-        """Sets the exist_server of this ShowMigprojectResponse.
+        r"""Sets the exist_server of this ShowMigprojectResponse.
 
         是否是已经存在的服务器
 
@@ -326,7 +326,7 @@ class ShowMigprojectResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowMigprojectResponse.
+        r"""Gets the type of this ShowMigprojectResponse.
 
         迁移项目类型 MIGRATE_BLOCK:块级迁移 MIGRATE_FILE:文件级迁移
 
@@ -337,7 +337,7 @@ class ShowMigprojectResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowMigprojectResponse.
+        r"""Sets the type of this ShowMigprojectResponse.
 
         迁移项目类型 MIGRATE_BLOCK:块级迁移 MIGRATE_FILE:文件级迁移
 
@@ -348,7 +348,7 @@ class ShowMigprojectResponse(SdkResponse):
 
     @property
     def enterprise_project(self):
-        """Gets the enterprise_project of this ShowMigprojectResponse.
+        r"""Gets the enterprise_project of this ShowMigprojectResponse.
 
         企业项目名称
 
@@ -359,7 +359,7 @@ class ShowMigprojectResponse(SdkResponse):
 
     @enterprise_project.setter
     def enterprise_project(self, enterprise_project):
-        """Sets the enterprise_project of this ShowMigprojectResponse.
+        r"""Sets the enterprise_project of this ShowMigprojectResponse.
 
         企业项目名称
 
@@ -370,7 +370,7 @@ class ShowMigprojectResponse(SdkResponse):
 
     @property
     def syncing(self):
-        """Gets the syncing of this ShowMigprojectResponse.
+        r"""Gets the syncing of this ShowMigprojectResponse.
 
         首次复制或者同步后 是否继续持续同步
 
@@ -381,7 +381,7 @@ class ShowMigprojectResponse(SdkResponse):
 
     @syncing.setter
     def syncing(self, syncing):
-        """Sets the syncing of this ShowMigprojectResponse.
+        r"""Sets the syncing of this ShowMigprojectResponse.
 
         首次复制或者同步后 是否继续持续同步
 
@@ -392,7 +392,7 @@ class ShowMigprojectResponse(SdkResponse):
 
     @property
     def start_network_check(self):
-        """Gets the start_network_check of this ShowMigprojectResponse.
+        r"""Gets the start_network_check of this ShowMigprojectResponse.
 
         是否启动网络质量检测
 
@@ -403,7 +403,7 @@ class ShowMigprojectResponse(SdkResponse):
 
     @start_network_check.setter
     def start_network_check(self, start_network_check):
-        """Sets the start_network_check of this ShowMigprojectResponse.
+        r"""Sets the start_network_check of this ShowMigprojectResponse.
 
         是否启动网络质量检测
 

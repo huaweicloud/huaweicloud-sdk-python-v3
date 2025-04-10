@@ -69,7 +69,7 @@ class IteratorVersionInfo:
     }
 
     def __init__(self, name=None, number=None, owner=None, version=None, description=None, iterations=None, is_master=None, pbi_id=None, pbi_name=None, plan_start_date=None, plan_start_timestamp=None, plan_end_date=None, plan_end_timestamp=None, asyn_git=None, project_uuid=None, project_name=None, current_stage=None, service_types=None, issue_list=None, risk_rating=None, risk_des=None, is_update_risk=None, pi_id=None):
-        """IteratorVersionInfo
+        r"""IteratorVersionInfo
 
         The model defined in huaweicloud sdk
 
@@ -195,7 +195,7 @@ class IteratorVersionInfo:
 
     @property
     def name(self):
-        """Gets the name of this IteratorVersionInfo.
+        r"""Gets the name of this IteratorVersionInfo.
 
         名称
 
@@ -206,7 +206,7 @@ class IteratorVersionInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this IteratorVersionInfo.
+        r"""Sets the name of this IteratorVersionInfo.
 
         名称
 
@@ -217,7 +217,7 @@ class IteratorVersionInfo:
 
     @property
     def number(self):
-        """Gets the number of this IteratorVersionInfo.
+        r"""Gets the number of this IteratorVersionInfo.
 
         开发分支名称
 
@@ -228,7 +228,7 @@ class IteratorVersionInfo:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this IteratorVersionInfo.
+        r"""Sets the number of this IteratorVersionInfo.
 
         开发分支名称
 
@@ -239,7 +239,7 @@ class IteratorVersionInfo:
 
     @property
     def owner(self):
-        """Gets the owner of this IteratorVersionInfo.
+        r"""Gets the owner of this IteratorVersionInfo.
 
         处理者ID
 
@@ -250,7 +250,7 @@ class IteratorVersionInfo:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this IteratorVersionInfo.
+        r"""Sets the owner of this IteratorVersionInfo.
 
         处理者ID
 
@@ -261,7 +261,7 @@ class IteratorVersionInfo:
 
     @property
     def version(self):
-        """Gets the version of this IteratorVersionInfo.
+        r"""Gets the version of this IteratorVersionInfo.
 
         待测版本
 
@@ -272,7 +272,7 @@ class IteratorVersionInfo:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this IteratorVersionInfo.
+        r"""Sets the version of this IteratorVersionInfo.
 
         待测版本
 
@@ -283,7 +283,7 @@ class IteratorVersionInfo:
 
     @property
     def description(self):
-        """Gets the description of this IteratorVersionInfo.
+        r"""Gets the description of this IteratorVersionInfo.
 
         描述
 
@@ -294,7 +294,7 @@ class IteratorVersionInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this IteratorVersionInfo.
+        r"""Sets the description of this IteratorVersionInfo.
 
         描述
 
@@ -305,7 +305,7 @@ class IteratorVersionInfo:
 
     @property
     def iterations(self):
-        """Gets the iterations of this IteratorVersionInfo.
+        r"""Gets the iterations of this IteratorVersionInfo.
 
         关联迭代
 
@@ -316,7 +316,7 @@ class IteratorVersionInfo:
 
     @iterations.setter
     def iterations(self, iterations):
-        """Sets the iterations of this IteratorVersionInfo.
+        r"""Sets the iterations of this IteratorVersionInfo.
 
         关联迭代
 
@@ -327,7 +327,7 @@ class IteratorVersionInfo:
 
     @property
     def is_master(self):
-        """Gets the is_master of this IteratorVersionInfo.
+        r"""Gets the is_master of this IteratorVersionInfo.
 
         是否为Master分支
 
@@ -338,7 +338,7 @@ class IteratorVersionInfo:
 
     @is_master.setter
     def is_master(self, is_master):
-        """Sets the is_master of this IteratorVersionInfo.
+        r"""Sets the is_master of this IteratorVersionInfo.
 
         是否为Master分支
 
@@ -349,7 +349,7 @@ class IteratorVersionInfo:
 
     @property
     def pbi_id(self):
-        """Gets the pbi_id of this IteratorVersionInfo.
+        r"""Gets the pbi_id of this IteratorVersionInfo.
 
         PBI ID
 
@@ -360,7 +360,7 @@ class IteratorVersionInfo:
 
     @pbi_id.setter
     def pbi_id(self, pbi_id):
-        """Sets the pbi_id of this IteratorVersionInfo.
+        r"""Sets the pbi_id of this IteratorVersionInfo.
 
         PBI ID
 
@@ -371,7 +371,7 @@ class IteratorVersionInfo:
 
     @property
     def pbi_name(self):
-        """Gets the pbi_name of this IteratorVersionInfo.
+        r"""Gets the pbi_name of this IteratorVersionInfo.
 
         PBI信息
 
@@ -382,7 +382,7 @@ class IteratorVersionInfo:
 
     @pbi_name.setter
     def pbi_name(self, pbi_name):
-        """Sets the pbi_name of this IteratorVersionInfo.
+        r"""Sets the pbi_name of this IteratorVersionInfo.
 
         PBI信息
 
@@ -393,7 +393,7 @@ class IteratorVersionInfo:
 
     @property
     def plan_start_date(self):
-        """Gets the plan_start_date of this IteratorVersionInfo.
+        r"""Gets the plan_start_date of this IteratorVersionInfo.
 
         开始时间
 
@@ -404,7 +404,7 @@ class IteratorVersionInfo:
 
     @plan_start_date.setter
     def plan_start_date(self, plan_start_date):
-        """Sets the plan_start_date of this IteratorVersionInfo.
+        r"""Sets the plan_start_date of this IteratorVersionInfo.
 
         开始时间
 
@@ -415,7 +415,7 @@ class IteratorVersionInfo:
 
     @property
     def plan_start_timestamp(self):
-        """Gets the plan_start_timestamp of this IteratorVersionInfo.
+        r"""Gets the plan_start_timestamp of this IteratorVersionInfo.
 
         开始时间戳
 
@@ -426,7 +426,7 @@ class IteratorVersionInfo:
 
     @plan_start_timestamp.setter
     def plan_start_timestamp(self, plan_start_timestamp):
-        """Sets the plan_start_timestamp of this IteratorVersionInfo.
+        r"""Sets the plan_start_timestamp of this IteratorVersionInfo.
 
         开始时间戳
 
@@ -437,7 +437,7 @@ class IteratorVersionInfo:
 
     @property
     def plan_end_date(self):
-        """Gets the plan_end_date of this IteratorVersionInfo.
+        r"""Gets the plan_end_date of this IteratorVersionInfo.
 
         结束时间
 
@@ -448,7 +448,7 @@ class IteratorVersionInfo:
 
     @plan_end_date.setter
     def plan_end_date(self, plan_end_date):
-        """Sets the plan_end_date of this IteratorVersionInfo.
+        r"""Sets the plan_end_date of this IteratorVersionInfo.
 
         结束时间
 
@@ -459,7 +459,7 @@ class IteratorVersionInfo:
 
     @property
     def plan_end_timestamp(self):
-        """Gets the plan_end_timestamp of this IteratorVersionInfo.
+        r"""Gets the plan_end_timestamp of this IteratorVersionInfo.
 
         结束时间戳
 
@@ -470,7 +470,7 @@ class IteratorVersionInfo:
 
     @plan_end_timestamp.setter
     def plan_end_timestamp(self, plan_end_timestamp):
-        """Sets the plan_end_timestamp of this IteratorVersionInfo.
+        r"""Sets the plan_end_timestamp of this IteratorVersionInfo.
 
         结束时间戳
 
@@ -481,7 +481,7 @@ class IteratorVersionInfo:
 
     @property
     def asyn_git(self):
-        """Gets the asyn_git of this IteratorVersionInfo.
+        r"""Gets the asyn_git of this IteratorVersionInfo.
 
         是否同步git库
 
@@ -492,7 +492,7 @@ class IteratorVersionInfo:
 
     @asyn_git.setter
     def asyn_git(self, asyn_git):
-        """Sets the asyn_git of this IteratorVersionInfo.
+        r"""Sets the asyn_git of this IteratorVersionInfo.
 
         是否同步git库
 
@@ -503,7 +503,7 @@ class IteratorVersionInfo:
 
     @property
     def project_uuid(self):
-        """Gets the project_uuid of this IteratorVersionInfo.
+        r"""Gets the project_uuid of this IteratorVersionInfo.
 
         项目ID（云龙场景，传入微服务ID）
 
@@ -514,7 +514,7 @@ class IteratorVersionInfo:
 
     @project_uuid.setter
     def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this IteratorVersionInfo.
+        r"""Sets the project_uuid of this IteratorVersionInfo.
 
         项目ID（云龙场景，传入微服务ID）
 
@@ -525,7 +525,7 @@ class IteratorVersionInfo:
 
     @property
     def project_name(self):
-        """Gets the project_name of this IteratorVersionInfo.
+        r"""Gets the project_name of this IteratorVersionInfo.
 
         项目名称（云龙场景，传入微服务名）
 
@@ -536,7 +536,7 @@ class IteratorVersionInfo:
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this IteratorVersionInfo.
+        r"""Sets the project_name of this IteratorVersionInfo.
 
         项目名称（云龙场景，传入微服务名）
 
@@ -547,7 +547,7 @@ class IteratorVersionInfo:
 
     @property
     def current_stage(self):
-        """Gets the current_stage of this IteratorVersionInfo.
+        r"""Gets the current_stage of this IteratorVersionInfo.
 
         当前所处阶段
 
@@ -558,7 +558,7 @@ class IteratorVersionInfo:
 
     @current_stage.setter
     def current_stage(self, current_stage):
-        """Sets the current_stage of this IteratorVersionInfo.
+        r"""Sets the current_stage of this IteratorVersionInfo.
 
         当前所处阶段
 
@@ -569,7 +569,7 @@ class IteratorVersionInfo:
 
     @property
     def service_types(self):
-        """Gets the service_types of this IteratorVersionInfo.
+        r"""Gets the service_types of this IteratorVersionInfo.
 
         测试类型
 
@@ -580,7 +580,7 @@ class IteratorVersionInfo:
 
     @service_types.setter
     def service_types(self, service_types):
-        """Sets the service_types of this IteratorVersionInfo.
+        r"""Sets the service_types of this IteratorVersionInfo.
 
         测试类型
 
@@ -591,7 +591,7 @@ class IteratorVersionInfo:
 
     @property
     def issue_list(self):
-        """Gets the issue_list of this IteratorVersionInfo.
+        r"""Gets the issue_list of this IteratorVersionInfo.
 
         关联需求
 
@@ -602,7 +602,7 @@ class IteratorVersionInfo:
 
     @issue_list.setter
     def issue_list(self, issue_list):
-        """Sets the issue_list of this IteratorVersionInfo.
+        r"""Sets the issue_list of this IteratorVersionInfo.
 
         关联需求
 
@@ -613,7 +613,7 @@ class IteratorVersionInfo:
 
     @property
     def risk_rating(self):
-        """Gets the risk_rating of this IteratorVersionInfo.
+        r"""Gets the risk_rating of this IteratorVersionInfo.
 
         风险等级
 
@@ -624,7 +624,7 @@ class IteratorVersionInfo:
 
     @risk_rating.setter
     def risk_rating(self, risk_rating):
-        """Sets the risk_rating of this IteratorVersionInfo.
+        r"""Sets the risk_rating of this IteratorVersionInfo.
 
         风险等级
 
@@ -635,7 +635,7 @@ class IteratorVersionInfo:
 
     @property
     def risk_des(self):
-        """Gets the risk_des of this IteratorVersionInfo.
+        r"""Gets the risk_des of this IteratorVersionInfo.
 
         风险描述
 
@@ -646,7 +646,7 @@ class IteratorVersionInfo:
 
     @risk_des.setter
     def risk_des(self, risk_des):
-        """Sets the risk_des of this IteratorVersionInfo.
+        r"""Sets the risk_des of this IteratorVersionInfo.
 
         风险描述
 
@@ -657,7 +657,7 @@ class IteratorVersionInfo:
 
     @property
     def is_update_risk(self):
-        """Gets the is_update_risk of this IteratorVersionInfo.
+        r"""Gets the is_update_risk of this IteratorVersionInfo.
 
         编辑风险信息标记
 
@@ -668,7 +668,7 @@ class IteratorVersionInfo:
 
     @is_update_risk.setter
     def is_update_risk(self, is_update_risk):
-        """Sets the is_update_risk of this IteratorVersionInfo.
+        r"""Sets the is_update_risk of this IteratorVersionInfo.
 
         编辑风险信息标记
 
@@ -679,7 +679,7 @@ class IteratorVersionInfo:
 
     @property
     def pi_id(self):
-        """Gets the pi_id of this IteratorVersionInfo.
+        r"""Gets the pi_id of this IteratorVersionInfo.
 
         pi的id，层级关系：pi -> 迭代 -> 需求
 
@@ -690,7 +690,7 @@ class IteratorVersionInfo:
 
     @pi_id.setter
     def pi_id(self, pi_id):
-        """Sets the pi_id of this IteratorVersionInfo.
+        r"""Sets the pi_id of this IteratorVersionInfo.
 
         pi的id，层级关系：pi -> 迭代 -> 需求
 

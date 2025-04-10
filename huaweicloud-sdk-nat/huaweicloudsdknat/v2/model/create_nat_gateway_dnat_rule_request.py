@@ -25,7 +25,7 @@ class CreateNatGatewayDnatRuleRequest:
     }
 
     def __init__(self, body=None):
-        """CreateNatGatewayDnatRuleRequest
+        r"""CreateNatGatewayDnatRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateNatGatewayDnatRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateNatGatewayDnatRuleRequest.
+        r"""Gets the body of this CreateNatGatewayDnatRuleRequest.
 
         :return: The body of this CreateNatGatewayDnatRuleRequest.
         :rtype: :class:`huaweicloudsdknat.v2.CreateNatGatewayDnatRuleOption`
@@ -52,7 +52,7 @@ class CreateNatGatewayDnatRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateNatGatewayDnatRuleRequest.
+        r"""Sets the body of this CreateNatGatewayDnatRuleRequest.
 
         :param body: The body of this CreateNatGatewayDnatRuleRequest.
         :type body: :class:`huaweicloudsdknat.v2.CreateNatGatewayDnatRuleOption`

@@ -29,7 +29,7 @@ class CreatePipeRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, body=None):
-        """CreatePipeRequest
+        r"""CreatePipeRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreatePipeRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreatePipeRequest.
+        r"""Gets the project_id of this CreatePipeRequest.
 
         项目id
 
@@ -66,7 +66,7 @@ class CreatePipeRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreatePipeRequest.
+        r"""Sets the project_id of this CreatePipeRequest.
 
         项目id
 
@@ -77,7 +77,7 @@ class CreatePipeRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this CreatePipeRequest.
+        r"""Gets the workspace_id of this CreatePipeRequest.
 
         工作空间id
 
@@ -88,7 +88,7 @@ class CreatePipeRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this CreatePipeRequest.
+        r"""Sets the workspace_id of this CreatePipeRequest.
 
         工作空间id
 
@@ -99,7 +99,7 @@ class CreatePipeRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePipeRequest.
+        r"""Gets the body of this CreatePipeRequest.
 
         :return: The body of this CreatePipeRequest.
         :rtype: :class:`huaweicloudsdksecmaster.v2.CreatePipeRequestBody`
@@ -108,7 +108,7 @@ class CreatePipeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePipeRequest.
+        r"""Sets the body of this CreatePipeRequest.
 
         :param body: The body of this CreatePipeRequest.
         :type body: :class:`huaweicloudsdksecmaster.v2.CreatePipeRequestBody`

@@ -41,7 +41,7 @@ class JobInfo:
     }
 
     def __init__(self, name=None, id=None, nodes=None, schedule=None, params=None, directory=None, job_type=None, last_update_user=None, basic_config=None):
-        """JobInfo
+        r"""JobInfo
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class JobInfo:
 
     @property
     def name(self):
-        """Gets the name of this JobInfo.
+        r"""Gets the name of this JobInfo.
 
         :return: The name of this JobInfo.
         :rtype: str
@@ -108,7 +108,7 @@ class JobInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this JobInfo.
+        r"""Sets the name of this JobInfo.
 
         :param name: The name of this JobInfo.
         :type name: str
@@ -117,7 +117,7 @@ class JobInfo:
 
     @property
     def id(self):
-        """Gets the id of this JobInfo.
+        r"""Gets the id of this JobInfo.
 
         :return: The id of this JobInfo.
         :rtype: int
@@ -126,7 +126,7 @@ class JobInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this JobInfo.
+        r"""Sets the id of this JobInfo.
 
         :param id: The id of this JobInfo.
         :type id: int
@@ -135,7 +135,7 @@ class JobInfo:
 
     @property
     def nodes(self):
-        """Gets the nodes of this JobInfo.
+        r"""Gets the nodes of this JobInfo.
 
         :return: The nodes of this JobInfo.
         :rtype: list[:class:`huaweicloudsdkdlf.v1.Node`]
@@ -144,7 +144,7 @@ class JobInfo:
 
     @nodes.setter
     def nodes(self, nodes):
-        """Sets the nodes of this JobInfo.
+        r"""Sets the nodes of this JobInfo.
 
         :param nodes: The nodes of this JobInfo.
         :type nodes: list[:class:`huaweicloudsdkdlf.v1.Node`]
@@ -153,7 +153,7 @@ class JobInfo:
 
     @property
     def schedule(self):
-        """Gets the schedule of this JobInfo.
+        r"""Gets the schedule of this JobInfo.
 
         :return: The schedule of this JobInfo.
         :rtype: :class:`huaweicloudsdkdlf.v1.Schedule`
@@ -162,7 +162,7 @@ class JobInfo:
 
     @schedule.setter
     def schedule(self, schedule):
-        """Sets the schedule of this JobInfo.
+        r"""Sets the schedule of this JobInfo.
 
         :param schedule: The schedule of this JobInfo.
         :type schedule: :class:`huaweicloudsdkdlf.v1.Schedule`
@@ -171,7 +171,7 @@ class JobInfo:
 
     @property
     def params(self):
-        """Gets the params of this JobInfo.
+        r"""Gets the params of this JobInfo.
 
         :return: The params of this JobInfo.
         :rtype: list[:class:`huaweicloudsdkdlf.v1.JobParam`]
@@ -180,7 +180,7 @@ class JobInfo:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this JobInfo.
+        r"""Sets the params of this JobInfo.
 
         :param params: The params of this JobInfo.
         :type params: list[:class:`huaweicloudsdkdlf.v1.JobParam`]
@@ -189,7 +189,7 @@ class JobInfo:
 
     @property
     def directory(self):
-        """Gets the directory of this JobInfo.
+        r"""Gets the directory of this JobInfo.
 
         :return: The directory of this JobInfo.
         :rtype: str
@@ -198,7 +198,7 @@ class JobInfo:
 
     @directory.setter
     def directory(self, directory):
-        """Sets the directory of this JobInfo.
+        r"""Sets the directory of this JobInfo.
 
         :param directory: The directory of this JobInfo.
         :type directory: str
@@ -207,7 +207,7 @@ class JobInfo:
 
     @property
     def job_type(self):
-        """Gets the job_type of this JobInfo.
+        r"""Gets the job_type of this JobInfo.
 
         :return: The job_type of this JobInfo.
         :rtype: str
@@ -216,7 +216,7 @@ class JobInfo:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this JobInfo.
+        r"""Sets the job_type of this JobInfo.
 
         :param job_type: The job_type of this JobInfo.
         :type job_type: str
@@ -225,7 +225,7 @@ class JobInfo:
 
     @property
     def last_update_user(self):
-        """Gets the last_update_user of this JobInfo.
+        r"""Gets the last_update_user of this JobInfo.
 
         :return: The last_update_user of this JobInfo.
         :rtype: str
@@ -234,7 +234,7 @@ class JobInfo:
 
     @last_update_user.setter
     def last_update_user(self, last_update_user):
-        """Sets the last_update_user of this JobInfo.
+        r"""Sets the last_update_user of this JobInfo.
 
         :param last_update_user: The last_update_user of this JobInfo.
         :type last_update_user: str
@@ -243,7 +243,7 @@ class JobInfo:
 
     @property
     def basic_config(self):
-        """Gets the basic_config of this JobInfo.
+        r"""Gets the basic_config of this JobInfo.
 
         :return: The basic_config of this JobInfo.
         :rtype: :class:`huaweicloudsdkdlf.v1.BasicInfo`
@@ -252,7 +252,7 @@ class JobInfo:
 
     @basic_config.setter
     def basic_config(self, basic_config):
-        """Sets the basic_config of this JobInfo.
+        r"""Sets the basic_config of this JobInfo.
 
         :param basic_config: The basic_config of this JobInfo.
         :type basic_config: :class:`huaweicloudsdkdlf.v1.BasicInfo`

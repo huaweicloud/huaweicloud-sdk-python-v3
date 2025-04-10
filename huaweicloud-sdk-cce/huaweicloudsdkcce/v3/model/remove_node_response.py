@@ -32,7 +32,7 @@ class RemoveNodeResponse(SdkResponse):
     }
 
     def __init__(self, api_version=None, kind=None, spec=None, status=None):
-        """RemoveNodeResponse
+        r"""RemoveNodeResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class RemoveNodeResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this RemoveNodeResponse.
+        r"""Gets the api_version of this RemoveNodeResponse.
 
         API版本，固定值“v3”。
 
@@ -76,7 +76,7 @@ class RemoveNodeResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this RemoveNodeResponse.
+        r"""Sets the api_version of this RemoveNodeResponse.
 
         API版本，固定值“v3”。
 
@@ -87,7 +87,7 @@ class RemoveNodeResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this RemoveNodeResponse.
+        r"""Gets the kind of this RemoveNodeResponse.
 
         API类型，固定值“RemoveNodesTask”。
 
@@ -98,7 +98,7 @@ class RemoveNodeResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this RemoveNodeResponse.
+        r"""Sets the kind of this RemoveNodeResponse.
 
         API类型，固定值“RemoveNodesTask”。
 
@@ -109,7 +109,7 @@ class RemoveNodeResponse(SdkResponse):
 
     @property
     def spec(self):
-        """Gets the spec of this RemoveNodeResponse.
+        r"""Gets the spec of this RemoveNodeResponse.
 
         :return: The spec of this RemoveNodeResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.RemoveNodesSpec`
@@ -118,7 +118,7 @@ class RemoveNodeResponse(SdkResponse):
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this RemoveNodeResponse.
+        r"""Sets the spec of this RemoveNodeResponse.
 
         :param spec: The spec of this RemoveNodeResponse.
         :type spec: :class:`huaweicloudsdkcce.v3.RemoveNodesSpec`
@@ -127,7 +127,7 @@ class RemoveNodeResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this RemoveNodeResponse.
+        r"""Gets the status of this RemoveNodeResponse.
 
         :return: The status of this RemoveNodeResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.TaskStatus`
@@ -136,7 +136,7 @@ class RemoveNodeResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this RemoveNodeResponse.
+        r"""Sets the status of this RemoveNodeResponse.
 
         :param status: The status of this RemoveNodeResponse.
         :type status: :class:`huaweicloudsdkcce.v3.TaskStatus`

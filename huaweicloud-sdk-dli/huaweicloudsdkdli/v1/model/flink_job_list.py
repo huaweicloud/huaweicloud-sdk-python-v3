@@ -27,7 +27,7 @@ class FlinkJobList:
     }
 
     def __init__(self, total_count=None, jobs=None):
-        """FlinkJobList
+        r"""FlinkJobList
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class FlinkJobList:
 
     @property
     def total_count(self):
-        """Gets the total_count of this FlinkJobList.
+        r"""Gets the total_count of this FlinkJobList.
 
         作业查询结果条数。
 
@@ -61,7 +61,7 @@ class FlinkJobList:
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this FlinkJobList.
+        r"""Sets the total_count of this FlinkJobList.
 
         作业查询结果条数。
 
@@ -72,7 +72,7 @@ class FlinkJobList:
 
     @property
     def jobs(self):
-        """Gets the jobs of this FlinkJobList.
+        r"""Gets the jobs of this FlinkJobList.
 
         作业信息
 
@@ -83,7 +83,7 @@ class FlinkJobList:
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this FlinkJobList.
+        r"""Sets the jobs of this FlinkJobList.
 
         作业信息
 

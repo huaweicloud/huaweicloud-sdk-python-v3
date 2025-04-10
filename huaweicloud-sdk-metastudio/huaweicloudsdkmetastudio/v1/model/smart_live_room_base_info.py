@@ -61,7 +61,7 @@ class SmartLiveRoomBaseInfo:
     }
 
     def __init__(self, room_id=None, project_id=None, room_name=None, room_type=None, room_state=None, view_mode=None, error_info=None, shared_config=None, room_description=None, cover_url=None, thumbnail=None, model_infos=None, create_time=None, update_time=None, last_job_start_time=None, last_job_end_time=None, last_job_status=None, priv_data=None, confirm_state=None):
-        """SmartLiveRoomBaseInfo
+        r"""SmartLiveRoomBaseInfo
 
         The model defined in huaweicloud sdk
 
@@ -169,7 +169,7 @@ class SmartLiveRoomBaseInfo:
 
     @property
     def room_id(self):
-        """Gets the room_id of this SmartLiveRoomBaseInfo.
+        r"""Gets the room_id of this SmartLiveRoomBaseInfo.
 
         直播间ID
 
@@ -180,7 +180,7 @@ class SmartLiveRoomBaseInfo:
 
     @room_id.setter
     def room_id(self, room_id):
-        """Sets the room_id of this SmartLiveRoomBaseInfo.
+        r"""Sets the room_id of this SmartLiveRoomBaseInfo.
 
         直播间ID
 
@@ -191,7 +191,7 @@ class SmartLiveRoomBaseInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this SmartLiveRoomBaseInfo.
+        r"""Gets the project_id of this SmartLiveRoomBaseInfo.
 
         租户id
 
@@ -202,7 +202,7 @@ class SmartLiveRoomBaseInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this SmartLiveRoomBaseInfo.
+        r"""Sets the project_id of this SmartLiveRoomBaseInfo.
 
         租户id
 
@@ -213,7 +213,7 @@ class SmartLiveRoomBaseInfo:
 
     @property
     def room_name(self):
-        """Gets the room_name of this SmartLiveRoomBaseInfo.
+        r"""Gets the room_name of this SmartLiveRoomBaseInfo.
 
         直播间名称
 
@@ -224,7 +224,7 @@ class SmartLiveRoomBaseInfo:
 
     @room_name.setter
     def room_name(self, room_name):
-        """Sets the room_name of this SmartLiveRoomBaseInfo.
+        r"""Sets the room_name of this SmartLiveRoomBaseInfo.
 
         直播间名称
 
@@ -235,7 +235,7 @@ class SmartLiveRoomBaseInfo:
 
     @property
     def room_type(self):
-        """Gets the room_type of this SmartLiveRoomBaseInfo.
+        r"""Gets the room_type of this SmartLiveRoomBaseInfo.
 
         直播间类型。 * NORMAL：普通直播间，直播间一直存在，可以反复开播 * TEMP：临时直播间，直播任务结束后自动清理直播间。 * TEMPLATE：直播间模板。
 
@@ -246,7 +246,7 @@ class SmartLiveRoomBaseInfo:
 
     @room_type.setter
     def room_type(self, room_type):
-        """Sets the room_type of this SmartLiveRoomBaseInfo.
+        r"""Sets the room_type of this SmartLiveRoomBaseInfo.
 
         直播间类型。 * NORMAL：普通直播间，直播间一直存在，可以反复开播 * TEMP：临时直播间，直播任务结束后自动清理直播间。 * TEMPLATE：直播间模板。
 
@@ -257,7 +257,7 @@ class SmartLiveRoomBaseInfo:
 
     @property
     def room_state(self):
-        """Gets the room_state of this SmartLiveRoomBaseInfo.
+        r"""Gets the room_state of this SmartLiveRoomBaseInfo.
 
         直播间配置状态。 - ENABLE: 直播间正常可用。 - DISABLE： 直播间不可用。不可用原因在error_info中说明。 - BLOCKED：直播间被冻结。冻结原因在error_info中说明。
 
@@ -268,7 +268,7 @@ class SmartLiveRoomBaseInfo:
 
     @room_state.setter
     def room_state(self, room_state):
-        """Sets the room_state of this SmartLiveRoomBaseInfo.
+        r"""Sets the room_state of this SmartLiveRoomBaseInfo.
 
         直播间配置状态。 - ENABLE: 直播间正常可用。 - DISABLE： 直播间不可用。不可用原因在error_info中说明。 - BLOCKED：直播间被冻结。冻结原因在error_info中说明。
 
@@ -279,7 +279,7 @@ class SmartLiveRoomBaseInfo:
 
     @property
     def view_mode(self):
-        """Gets the view_mode of this SmartLiveRoomBaseInfo.
+        r"""Gets the view_mode of this SmartLiveRoomBaseInfo.
 
         横竖屏类型。默认值为：VERTICAL。 * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
 
@@ -290,7 +290,7 @@ class SmartLiveRoomBaseInfo:
 
     @view_mode.setter
     def view_mode(self, view_mode):
-        """Sets the view_mode of this SmartLiveRoomBaseInfo.
+        r"""Sets the view_mode of this SmartLiveRoomBaseInfo.
 
         横竖屏类型。默认值为：VERTICAL。 * LANDSCAPE：横屏。 * VERTICAL： 竖屏。
 
@@ -301,7 +301,7 @@ class SmartLiveRoomBaseInfo:
 
     @property
     def error_info(self):
-        """Gets the error_info of this SmartLiveRoomBaseInfo.
+        r"""Gets the error_info of this SmartLiveRoomBaseInfo.
 
         :return: The error_info of this SmartLiveRoomBaseInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
@@ -310,7 +310,7 @@ class SmartLiveRoomBaseInfo:
 
     @error_info.setter
     def error_info(self, error_info):
-        """Sets the error_info of this SmartLiveRoomBaseInfo.
+        r"""Sets the error_info of this SmartLiveRoomBaseInfo.
 
         :param error_info: The error_info of this SmartLiveRoomBaseInfo.
         :type error_info: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
@@ -319,7 +319,7 @@ class SmartLiveRoomBaseInfo:
 
     @property
     def shared_config(self):
-        """Gets the shared_config of this SmartLiveRoomBaseInfo.
+        r"""Gets the shared_config of this SmartLiveRoomBaseInfo.
 
         :return: The shared_config of this SmartLiveRoomBaseInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.SharedConfig`
@@ -328,7 +328,7 @@ class SmartLiveRoomBaseInfo:
 
     @shared_config.setter
     def shared_config(self, shared_config):
-        """Sets the shared_config of this SmartLiveRoomBaseInfo.
+        r"""Sets the shared_config of this SmartLiveRoomBaseInfo.
 
         :param shared_config: The shared_config of this SmartLiveRoomBaseInfo.
         :type shared_config: :class:`huaweicloudsdkmetastudio.v1.SharedConfig`
@@ -337,7 +337,7 @@ class SmartLiveRoomBaseInfo:
 
     @property
     def room_description(self):
-        """Gets the room_description of this SmartLiveRoomBaseInfo.
+        r"""Gets the room_description of this SmartLiveRoomBaseInfo.
 
         直播间描述。
 
@@ -348,7 +348,7 @@ class SmartLiveRoomBaseInfo:
 
     @room_description.setter
     def room_description(self, room_description):
-        """Sets the room_description of this SmartLiveRoomBaseInfo.
+        r"""Sets the room_description of this SmartLiveRoomBaseInfo.
 
         直播间描述。
 
@@ -359,7 +359,7 @@ class SmartLiveRoomBaseInfo:
 
     @property
     def cover_url(self):
-        """Gets the cover_url of this SmartLiveRoomBaseInfo.
+        r"""Gets the cover_url of this SmartLiveRoomBaseInfo.
 
         直播间封面图URL
 
@@ -370,7 +370,7 @@ class SmartLiveRoomBaseInfo:
 
     @cover_url.setter
     def cover_url(self, cover_url):
-        """Sets the cover_url of this SmartLiveRoomBaseInfo.
+        r"""Sets the cover_url of this SmartLiveRoomBaseInfo.
 
         直播间封面图URL
 
@@ -381,7 +381,7 @@ class SmartLiveRoomBaseInfo:
 
     @property
     def thumbnail(self):
-        """Gets the thumbnail of this SmartLiveRoomBaseInfo.
+        r"""Gets the thumbnail of this SmartLiveRoomBaseInfo.
 
         直播间封面图URL
 
@@ -392,7 +392,7 @@ class SmartLiveRoomBaseInfo:
 
     @thumbnail.setter
     def thumbnail(self, thumbnail):
-        """Sets the thumbnail of this SmartLiveRoomBaseInfo.
+        r"""Sets the thumbnail of this SmartLiveRoomBaseInfo.
 
         直播间封面图URL
 
@@ -403,7 +403,7 @@ class SmartLiveRoomBaseInfo:
 
     @property
     def model_infos(self):
-        """Gets the model_infos of this SmartLiveRoomBaseInfo.
+        r"""Gets the model_infos of this SmartLiveRoomBaseInfo.
 
         数字人模型信息
 
@@ -414,7 +414,7 @@ class SmartLiveRoomBaseInfo:
 
     @model_infos.setter
     def model_infos(self, model_infos):
-        """Sets the model_infos of this SmartLiveRoomBaseInfo.
+        r"""Sets the model_infos of this SmartLiveRoomBaseInfo.
 
         数字人模型信息
 
@@ -425,7 +425,7 @@ class SmartLiveRoomBaseInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this SmartLiveRoomBaseInfo.
+        r"""Gets the create_time of this SmartLiveRoomBaseInfo.
 
         创建时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
@@ -436,7 +436,7 @@ class SmartLiveRoomBaseInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this SmartLiveRoomBaseInfo.
+        r"""Sets the create_time of this SmartLiveRoomBaseInfo.
 
         创建时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
@@ -447,7 +447,7 @@ class SmartLiveRoomBaseInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this SmartLiveRoomBaseInfo.
+        r"""Gets the update_time of this SmartLiveRoomBaseInfo.
 
         更新时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
@@ -458,7 +458,7 @@ class SmartLiveRoomBaseInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this SmartLiveRoomBaseInfo.
+        r"""Sets the update_time of this SmartLiveRoomBaseInfo.
 
         更新时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
@@ -469,7 +469,7 @@ class SmartLiveRoomBaseInfo:
 
     @property
     def last_job_start_time(self):
-        """Gets the last_job_start_time of this SmartLiveRoomBaseInfo.
+        r"""Gets the last_job_start_time of this SmartLiveRoomBaseInfo.
 
         开始直播时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
@@ -480,7 +480,7 @@ class SmartLiveRoomBaseInfo:
 
     @last_job_start_time.setter
     def last_job_start_time(self, last_job_start_time):
-        """Sets the last_job_start_time of this SmartLiveRoomBaseInfo.
+        r"""Sets the last_job_start_time of this SmartLiveRoomBaseInfo.
 
         开始直播时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
@@ -491,7 +491,7 @@ class SmartLiveRoomBaseInfo:
 
     @property
     def last_job_end_time(self):
-        """Gets the last_job_end_time of this SmartLiveRoomBaseInfo.
+        r"""Gets the last_job_end_time of this SmartLiveRoomBaseInfo.
 
         结束直播时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
@@ -502,7 +502,7 @@ class SmartLiveRoomBaseInfo:
 
     @last_job_end_time.setter
     def last_job_end_time(self, last_job_end_time):
-        """Sets the last_job_end_time of this SmartLiveRoomBaseInfo.
+        r"""Sets the last_job_end_time of this SmartLiveRoomBaseInfo.
 
         结束直播时间，格式遵循：RFC 3339 如“2021-01-10T08:43:17Z”。
 
@@ -513,7 +513,7 @@ class SmartLiveRoomBaseInfo:
 
     @property
     def last_job_status(self):
-        """Gets the last_job_status of this SmartLiveRoomBaseInfo.
+        r"""Gets the last_job_status of this SmartLiveRoomBaseInfo.
 
         当前直播状态 - WAITING：任务等待执行 - PROCESSING：任务执行中 - SUCCEED：任务处理成功 - FAILED：任务处理时变 - CANCELED：任务取消 - BLOCKED：任务被冻结
 
@@ -524,7 +524,7 @@ class SmartLiveRoomBaseInfo:
 
     @last_job_status.setter
     def last_job_status(self, last_job_status):
-        """Sets the last_job_status of this SmartLiveRoomBaseInfo.
+        r"""Sets the last_job_status of this SmartLiveRoomBaseInfo.
 
         当前直播状态 - WAITING：任务等待执行 - PROCESSING：任务执行中 - SUCCEED：任务处理成功 - FAILED：任务处理时变 - CANCELED：任务取消 - BLOCKED：任务被冻结
 
@@ -535,7 +535,7 @@ class SmartLiveRoomBaseInfo:
 
     @property
     def priv_data(self):
-        """Gets the priv_data of this SmartLiveRoomBaseInfo.
+        r"""Gets the priv_data of this SmartLiveRoomBaseInfo.
 
         私有数据，用户填写，原样带回。
 
@@ -546,7 +546,7 @@ class SmartLiveRoomBaseInfo:
 
     @priv_data.setter
     def priv_data(self, priv_data):
-        """Sets the priv_data of this SmartLiveRoomBaseInfo.
+        r"""Sets the priv_data of this SmartLiveRoomBaseInfo.
 
         私有数据，用户填写，原样带回。
 
@@ -557,7 +557,7 @@ class SmartLiveRoomBaseInfo:
 
     @property
     def confirm_state(self):
-        """Gets the confirm_state of this SmartLiveRoomBaseInfo.
+        r"""Gets the confirm_state of this SmartLiveRoomBaseInfo.
 
         直播间确认状态。此状态仅用于特定用户需要人工确认场景。 - UNCONFIRM: 未确认 - CONFIRMED：已确认 - REJECT： 拒绝
 
@@ -568,7 +568,7 @@ class SmartLiveRoomBaseInfo:
 
     @confirm_state.setter
     def confirm_state(self, confirm_state):
-        """Sets the confirm_state of this SmartLiveRoomBaseInfo.
+        r"""Sets the confirm_state of this SmartLiveRoomBaseInfo.
 
         直播间确认状态。此状态仅用于特定用户需要人工确认场景。 - UNCONFIRM: 未确认 - CONFIRMED：已确认 - REJECT： 拒绝
 

@@ -49,7 +49,7 @@ class RunPipelineSourceParamsBuildParams:
     }
 
     def __init__(self, action=None, build_type=None, commit_id=None, event_type=None, merge_id=None, message=None, source_branch=None, tag=None, target_branch=None, codehub_id=None, source_codehub_id=None, source_codehub_url=None, source_codehub_http_url=None):
-        """RunPipelineSourceParamsBuildParams
+        r"""RunPipelineSourceParamsBuildParams
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class RunPipelineSourceParamsBuildParams:
 
     @property
     def action(self):
-        """Gets the action of this RunPipelineSourceParamsBuildParams.
+        r"""Gets the action of this RunPipelineSourceParamsBuildParams.
 
         合并请求事件类型
 
@@ -138,7 +138,7 @@ class RunPipelineSourceParamsBuildParams:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this RunPipelineSourceParamsBuildParams.
+        r"""Sets the action of this RunPipelineSourceParamsBuildParams.
 
         合并请求事件类型
 
@@ -149,7 +149,7 @@ class RunPipelineSourceParamsBuildParams:
 
     @property
     def build_type(self):
-        """Gets the build_type of this RunPipelineSourceParamsBuildParams.
+        r"""Gets the build_type of this RunPipelineSourceParamsBuildParams.
 
         基于分支还是tag运行
 
@@ -160,7 +160,7 @@ class RunPipelineSourceParamsBuildParams:
 
     @build_type.setter
     def build_type(self, build_type):
-        """Sets the build_type of this RunPipelineSourceParamsBuildParams.
+        r"""Sets the build_type of this RunPipelineSourceParamsBuildParams.
 
         基于分支还是tag运行
 
@@ -171,7 +171,7 @@ class RunPipelineSourceParamsBuildParams:
 
     @property
     def commit_id(self):
-        """Gets the commit_id of this RunPipelineSourceParamsBuildParams.
+        r"""Gets the commit_id of this RunPipelineSourceParamsBuildParams.
 
         代码仓提交ID
 
@@ -182,7 +182,7 @@ class RunPipelineSourceParamsBuildParams:
 
     @commit_id.setter
     def commit_id(self, commit_id):
-        """Sets the commit_id of this RunPipelineSourceParamsBuildParams.
+        r"""Sets the commit_id of this RunPipelineSourceParamsBuildParams.
 
         代码仓提交ID
 
@@ -193,7 +193,7 @@ class RunPipelineSourceParamsBuildParams:
 
     @property
     def event_type(self):
-        """Gets the event_type of this RunPipelineSourceParamsBuildParams.
+        r"""Gets the event_type of this RunPipelineSourceParamsBuildParams.
 
         运行事件类型
 
@@ -204,7 +204,7 @@ class RunPipelineSourceParamsBuildParams:
 
     @event_type.setter
     def event_type(self, event_type):
-        """Sets the event_type of this RunPipelineSourceParamsBuildParams.
+        r"""Sets the event_type of this RunPipelineSourceParamsBuildParams.
 
         运行事件类型
 
@@ -215,7 +215,7 @@ class RunPipelineSourceParamsBuildParams:
 
     @property
     def merge_id(self):
-        """Gets the merge_id of this RunPipelineSourceParamsBuildParams.
+        r"""Gets the merge_id of this RunPipelineSourceParamsBuildParams.
 
         合并请求ID
 
@@ -226,7 +226,7 @@ class RunPipelineSourceParamsBuildParams:
 
     @merge_id.setter
     def merge_id(self, merge_id):
-        """Sets the merge_id of this RunPipelineSourceParamsBuildParams.
+        r"""Sets the merge_id of this RunPipelineSourceParamsBuildParams.
 
         合并请求ID
 
@@ -237,7 +237,7 @@ class RunPipelineSourceParamsBuildParams:
 
     @property
     def message(self):
-        """Gets the message of this RunPipelineSourceParamsBuildParams.
+        r"""Gets the message of this RunPipelineSourceParamsBuildParams.
 
         代码仓提交信息
 
@@ -248,7 +248,7 @@ class RunPipelineSourceParamsBuildParams:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this RunPipelineSourceParamsBuildParams.
+        r"""Sets the message of this RunPipelineSourceParamsBuildParams.
 
         代码仓提交信息
 
@@ -259,7 +259,7 @@ class RunPipelineSourceParamsBuildParams:
 
     @property
     def source_branch(self):
-        """Gets the source_branch of this RunPipelineSourceParamsBuildParams.
+        r"""Gets the source_branch of this RunPipelineSourceParamsBuildParams.
 
         源分支
 
@@ -270,7 +270,7 @@ class RunPipelineSourceParamsBuildParams:
 
     @source_branch.setter
     def source_branch(self, source_branch):
-        """Sets the source_branch of this RunPipelineSourceParamsBuildParams.
+        r"""Sets the source_branch of this RunPipelineSourceParamsBuildParams.
 
         源分支
 
@@ -281,7 +281,7 @@ class RunPipelineSourceParamsBuildParams:
 
     @property
     def tag(self):
-        """Gets the tag of this RunPipelineSourceParamsBuildParams.
+        r"""Gets the tag of this RunPipelineSourceParamsBuildParams.
 
         标签
 
@@ -292,7 +292,7 @@ class RunPipelineSourceParamsBuildParams:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this RunPipelineSourceParamsBuildParams.
+        r"""Sets the tag of this RunPipelineSourceParamsBuildParams.
 
         标签
 
@@ -303,7 +303,7 @@ class RunPipelineSourceParamsBuildParams:
 
     @property
     def target_branch(self):
-        """Gets the target_branch of this RunPipelineSourceParamsBuildParams.
+        r"""Gets the target_branch of this RunPipelineSourceParamsBuildParams.
 
         目标分支
 
@@ -314,7 +314,7 @@ class RunPipelineSourceParamsBuildParams:
 
     @target_branch.setter
     def target_branch(self, target_branch):
-        """Sets the target_branch of this RunPipelineSourceParamsBuildParams.
+        r"""Sets the target_branch of this RunPipelineSourceParamsBuildParams.
 
         目标分支
 
@@ -325,7 +325,7 @@ class RunPipelineSourceParamsBuildParams:
 
     @property
     def codehub_id(self):
-        """Gets the codehub_id of this RunPipelineSourceParamsBuildParams.
+        r"""Gets the codehub_id of this RunPipelineSourceParamsBuildParams.
 
         codehub代码仓ID
 
@@ -336,7 +336,7 @@ class RunPipelineSourceParamsBuildParams:
 
     @codehub_id.setter
     def codehub_id(self, codehub_id):
-        """Sets the codehub_id of this RunPipelineSourceParamsBuildParams.
+        r"""Sets the codehub_id of this RunPipelineSourceParamsBuildParams.
 
         codehub代码仓ID
 
@@ -347,7 +347,7 @@ class RunPipelineSourceParamsBuildParams:
 
     @property
     def source_codehub_id(self):
-        """Gets the source_codehub_id of this RunPipelineSourceParamsBuildParams.
+        r"""Gets the source_codehub_id of this RunPipelineSourceParamsBuildParams.
 
         源codehub代码仓ID
 
@@ -358,7 +358,7 @@ class RunPipelineSourceParamsBuildParams:
 
     @source_codehub_id.setter
     def source_codehub_id(self, source_codehub_id):
-        """Sets the source_codehub_id of this RunPipelineSourceParamsBuildParams.
+        r"""Sets the source_codehub_id of this RunPipelineSourceParamsBuildParams.
 
         源codehub代码仓ID
 
@@ -369,7 +369,7 @@ class RunPipelineSourceParamsBuildParams:
 
     @property
     def source_codehub_url(self):
-        """Gets the source_codehub_url of this RunPipelineSourceParamsBuildParams.
+        r"""Gets the source_codehub_url of this RunPipelineSourceParamsBuildParams.
 
         源codehub代码仓地址
 
@@ -380,7 +380,7 @@ class RunPipelineSourceParamsBuildParams:
 
     @source_codehub_url.setter
     def source_codehub_url(self, source_codehub_url):
-        """Sets the source_codehub_url of this RunPipelineSourceParamsBuildParams.
+        r"""Sets the source_codehub_url of this RunPipelineSourceParamsBuildParams.
 
         源codehub代码仓地址
 
@@ -391,7 +391,7 @@ class RunPipelineSourceParamsBuildParams:
 
     @property
     def source_codehub_http_url(self):
-        """Gets the source_codehub_http_url of this RunPipelineSourceParamsBuildParams.
+        r"""Gets the source_codehub_http_url of this RunPipelineSourceParamsBuildParams.
 
         源codehub代码仓http地址
 
@@ -402,7 +402,7 @@ class RunPipelineSourceParamsBuildParams:
 
     @source_codehub_http_url.setter
     def source_codehub_http_url(self, source_codehub_http_url):
-        """Sets the source_codehub_http_url of this RunPipelineSourceParamsBuildParams.
+        r"""Sets the source_codehub_http_url of this RunPipelineSourceParamsBuildParams.
 
         源codehub代码仓http地址
 

@@ -35,7 +35,7 @@ class BasePageInfoTestCase:
     }
 
     def __init__(self, limit=None, list=None, offset=None, pages=None, size=None, total=None):
-        """BasePageInfoTestCase
+        r"""BasePageInfoTestCase
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class BasePageInfoTestCase:
 
     @property
     def limit(self):
-        """Gets the limit of this BasePageInfoTestCase.
+        r"""Gets the limit of this BasePageInfoTestCase.
 
         :return: The limit of this BasePageInfoTestCase.
         :rtype: int
@@ -87,7 +87,7 @@ class BasePageInfoTestCase:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this BasePageInfoTestCase.
+        r"""Sets the limit of this BasePageInfoTestCase.
 
         :param limit: The limit of this BasePageInfoTestCase.
         :type limit: int
@@ -96,7 +96,7 @@ class BasePageInfoTestCase:
 
     @property
     def list(self):
-        """Gets the list of this BasePageInfoTestCase.
+        r"""Gets the list of this BasePageInfoTestCase.
 
         :return: The list of this BasePageInfoTestCase.
         :rtype: list[:class:`huaweicloudsdkcloudtest.v1.TestCase`]
@@ -105,7 +105,7 @@ class BasePageInfoTestCase:
 
     @list.setter
     def list(self, list):
-        """Sets the list of this BasePageInfoTestCase.
+        r"""Sets the list of this BasePageInfoTestCase.
 
         :param list: The list of this BasePageInfoTestCase.
         :type list: list[:class:`huaweicloudsdkcloudtest.v1.TestCase`]
@@ -114,7 +114,7 @@ class BasePageInfoTestCase:
 
     @property
     def offset(self):
-        """Gets the offset of this BasePageInfoTestCase.
+        r"""Gets the offset of this BasePageInfoTestCase.
 
         :return: The offset of this BasePageInfoTestCase.
         :rtype: int
@@ -123,7 +123,7 @@ class BasePageInfoTestCase:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this BasePageInfoTestCase.
+        r"""Sets the offset of this BasePageInfoTestCase.
 
         :param offset: The offset of this BasePageInfoTestCase.
         :type offset: int
@@ -132,7 +132,7 @@ class BasePageInfoTestCase:
 
     @property
     def pages(self):
-        """Gets the pages of this BasePageInfoTestCase.
+        r"""Gets the pages of this BasePageInfoTestCase.
 
         :return: The pages of this BasePageInfoTestCase.
         :rtype: int
@@ -141,7 +141,7 @@ class BasePageInfoTestCase:
 
     @pages.setter
     def pages(self, pages):
-        """Sets the pages of this BasePageInfoTestCase.
+        r"""Sets the pages of this BasePageInfoTestCase.
 
         :param pages: The pages of this BasePageInfoTestCase.
         :type pages: int
@@ -150,7 +150,7 @@ class BasePageInfoTestCase:
 
     @property
     def size(self):
-        """Gets the size of this BasePageInfoTestCase.
+        r"""Gets the size of this BasePageInfoTestCase.
 
         :return: The size of this BasePageInfoTestCase.
         :rtype: int
@@ -159,7 +159,7 @@ class BasePageInfoTestCase:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this BasePageInfoTestCase.
+        r"""Sets the size of this BasePageInfoTestCase.
 
         :param size: The size of this BasePageInfoTestCase.
         :type size: int
@@ -168,7 +168,7 @@ class BasePageInfoTestCase:
 
     @property
     def total(self):
-        """Gets the total of this BasePageInfoTestCase.
+        r"""Gets the total of this BasePageInfoTestCase.
 
         :return: The total of this BasePageInfoTestCase.
         :rtype: int
@@ -177,7 +177,7 @@ class BasePageInfoTestCase:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this BasePageInfoTestCase.
+        r"""Sets the total of this BasePageInfoTestCase.
 
         :param total: The total of this BasePageInfoTestCase.
         :type total: int

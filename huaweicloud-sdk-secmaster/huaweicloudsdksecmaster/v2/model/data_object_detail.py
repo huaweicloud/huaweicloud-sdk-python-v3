@@ -41,7 +41,7 @@ class DataObjectDetail:
     }
 
     def __init__(self, create_time=None, data_object=None, dataclass_ref=None, format_version=None, id=None, project_id=None, update_time=None, version=None, workspace_id=None):
-        """DataObjectDetail
+        r"""DataObjectDetail
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class DataObjectDetail:
 
     @property
     def create_time(self):
-        """Gets the create_time of this DataObjectDetail.
+        r"""Gets the create_time of this DataObjectDetail.
 
         记录时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区
 
@@ -110,7 +110,7 @@ class DataObjectDetail:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this DataObjectDetail.
+        r"""Sets the create_time of this DataObjectDetail.
 
         记录时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区
 
@@ -121,7 +121,7 @@ class DataObjectDetail:
 
     @property
     def data_object(self):
-        """Gets the data_object of this DataObjectDetail.
+        r"""Gets the data_object of this DataObjectDetail.
 
         :return: The data_object of this DataObjectDetail.
         :rtype: :class:`huaweicloudsdksecmaster.v2.DataObject`
@@ -130,7 +130,7 @@ class DataObjectDetail:
 
     @data_object.setter
     def data_object(self, data_object):
-        """Sets the data_object of this DataObjectDetail.
+        r"""Sets the data_object of this DataObjectDetail.
 
         :param data_object: The data_object of this DataObjectDetail.
         :type data_object: :class:`huaweicloudsdksecmaster.v2.DataObject`
@@ -139,7 +139,7 @@ class DataObjectDetail:
 
     @property
     def dataclass_ref(self):
-        """Gets the dataclass_ref of this DataObjectDetail.
+        r"""Gets the dataclass_ref of this DataObjectDetail.
 
         :return: The dataclass_ref of this DataObjectDetail.
         :rtype: :class:`huaweicloudsdksecmaster.v2.AlertDetailDataclassRef`
@@ -148,7 +148,7 @@ class DataObjectDetail:
 
     @dataclass_ref.setter
     def dataclass_ref(self, dataclass_ref):
-        """Sets the dataclass_ref of this DataObjectDetail.
+        r"""Sets the dataclass_ref of this DataObjectDetail.
 
         :param dataclass_ref: The dataclass_ref of this DataObjectDetail.
         :type dataclass_ref: :class:`huaweicloudsdksecmaster.v2.AlertDetailDataclassRef`
@@ -157,7 +157,7 @@ class DataObjectDetail:
 
     @property
     def format_version(self):
-        """Gets the format_version of this DataObjectDetail.
+        r"""Gets the format_version of this DataObjectDetail.
 
         格式版本
 
@@ -168,7 +168,7 @@ class DataObjectDetail:
 
     @format_version.setter
     def format_version(self, format_version):
-        """Sets the format_version of this DataObjectDetail.
+        r"""Sets the format_version of this DataObjectDetail.
 
         格式版本
 
@@ -179,7 +179,7 @@ class DataObjectDetail:
 
     @property
     def id(self):
-        """Gets the id of this DataObjectDetail.
+        r"""Gets the id of this DataObjectDetail.
 
         事件唯一标识，UUID格式，最大36个字符
 
@@ -190,7 +190,7 @@ class DataObjectDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DataObjectDetail.
+        r"""Sets the id of this DataObjectDetail.
 
         事件唯一标识，UUID格式，最大36个字符
 
@@ -201,7 +201,7 @@ class DataObjectDetail:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DataObjectDetail.
+        r"""Gets the project_id of this DataObjectDetail.
 
         当前项目的id
 
@@ -212,7 +212,7 @@ class DataObjectDetail:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DataObjectDetail.
+        r"""Sets the project_id of this DataObjectDetail.
 
         当前项目的id
 
@@ -223,7 +223,7 @@ class DataObjectDetail:
 
     @property
     def update_time(self):
-        """Gets the update_time of this DataObjectDetail.
+        r"""Gets the update_time of this DataObjectDetail.
 
         更新时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区
 
@@ -234,7 +234,7 @@ class DataObjectDetail:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this DataObjectDetail.
+        r"""Sets the update_time of this DataObjectDetail.
 
         更新时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区
 
@@ -245,7 +245,7 @@ class DataObjectDetail:
 
     @property
     def version(self):
-        """Gets the version of this DataObjectDetail.
+        r"""Gets the version of this DataObjectDetail.
 
         版本
 
@@ -256,7 +256,7 @@ class DataObjectDetail:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this DataObjectDetail.
+        r"""Sets the version of this DataObjectDetail.
 
         版本
 
@@ -267,7 +267,7 @@ class DataObjectDetail:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this DataObjectDetail.
+        r"""Gets the workspace_id of this DataObjectDetail.
 
         当前的工作空间id
 
@@ -278,7 +278,7 @@ class DataObjectDetail:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this DataObjectDetail.
+        r"""Sets the workspace_id of this DataObjectDetail.
 
         当前的工作空间id
 

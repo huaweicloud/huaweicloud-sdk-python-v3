@@ -29,7 +29,7 @@ class TrafficMark:
     }
 
     def __init__(self, sip=None, cookie=None, params=None):
-        """TrafficMark
+        r"""TrafficMark
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class TrafficMark:
 
     @property
     def sip(self):
-        """Gets the sip of this TrafficMark.
+        r"""Gets the sip of this TrafficMark.
 
         IP标记，客户端最原始的IP地址的HTTP请求头字段。
 
@@ -68,7 +68,7 @@ class TrafficMark:
 
     @sip.setter
     def sip(self, sip):
-        """Sets the sip of this TrafficMark.
+        r"""Sets the sip of this TrafficMark.
 
         IP标记，客户端最原始的IP地址的HTTP请求头字段。
 
@@ -79,7 +79,7 @@ class TrafficMark:
 
     @property
     def cookie(self):
-        """Gets the cookie of this TrafficMark.
+        r"""Gets the cookie of this TrafficMark.
 
         Session标记，用于Cookie恶意请求的攻击惩罚功能。在选择Cookie拦截的攻击惩罚功能前，必须配置该标识
 
@@ -90,7 +90,7 @@ class TrafficMark:
 
     @cookie.setter
     def cookie(self, cookie):
-        """Sets the cookie of this TrafficMark.
+        r"""Sets the cookie of this TrafficMark.
 
         Session标记，用于Cookie恶意请求的攻击惩罚功能。在选择Cookie拦截的攻击惩罚功能前，必须配置该标识
 
@@ -101,7 +101,7 @@ class TrafficMark:
 
     @property
     def params(self):
-        """Gets the params of this TrafficMark.
+        r"""Gets the params of this TrafficMark.
 
         User标记，用于Params恶意请求的攻击惩罚功能。在选择Params拦截的攻击惩罚功能前，必须配置该标识。
 
@@ -112,7 +112,7 @@ class TrafficMark:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this TrafficMark.
+        r"""Sets the params of this TrafficMark.
 
         User标记，用于Params恶意请求的攻击惩罚功能。在选择Params拦截的攻击惩罚功能前，必须配置该标识。
 

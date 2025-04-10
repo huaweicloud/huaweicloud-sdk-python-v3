@@ -37,7 +37,7 @@ class AttachInstancesReq:
     }
 
     def __init__(self, desktops=None, image_type=None, image_id=None, os_type=None, order_id=None, enterprise_project_id=None, desktop_name_policy_id=None):
-        """AttachInstancesReq
+        r"""AttachInstancesReq
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class AttachInstancesReq:
 
     @property
     def desktops(self):
-        """Gets the desktops of this AttachInstancesReq.
+        r"""Gets the desktops of this AttachInstancesReq.
 
         桌面信息列表。
 
@@ -96,7 +96,7 @@ class AttachInstancesReq:
 
     @desktops.setter
     def desktops(self, desktops):
-        """Sets the desktops of this AttachInstancesReq.
+        r"""Sets the desktops of this AttachInstancesReq.
 
         桌面信息列表。
 
@@ -107,7 +107,7 @@ class AttachInstancesReq:
 
     @property
     def image_type(self):
-        """Gets the image_type of this AttachInstancesReq.
+        r"""Gets the image_type of this AttachInstancesReq.
 
         镜像类型，涉及变更镜像时需传（可选）
 
@@ -118,7 +118,7 @@ class AttachInstancesReq:
 
     @image_type.setter
     def image_type(self, image_type):
-        """Sets the image_type of this AttachInstancesReq.
+        r"""Sets the image_type of this AttachInstancesReq.
 
         镜像类型，涉及变更镜像时需传（可选）
 
@@ -129,7 +129,7 @@ class AttachInstancesReq:
 
     @property
     def image_id(self):
-        """Gets the image_id of this AttachInstancesReq.
+        r"""Gets the image_id of this AttachInstancesReq.
 
         模板ID，涉及变更镜像时需传（可选）
 
@@ -140,7 +140,7 @@ class AttachInstancesReq:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this AttachInstancesReq.
+        r"""Sets the image_id of this AttachInstancesReq.
 
         模板ID，涉及变更镜像时需传（可选）
 
@@ -151,7 +151,7 @@ class AttachInstancesReq:
 
     @property
     def os_type(self):
-        """Gets the os_type of this AttachInstancesReq.
+        r"""Gets the os_type of this AttachInstancesReq.
 
         os类型，涉及变更镜像时需传（可选，该参数已废弃）。
 
@@ -162,7 +162,7 @@ class AttachInstancesReq:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this AttachInstancesReq.
+        r"""Sets the os_type of this AttachInstancesReq.
 
         os类型，涉及变更镜像时需传（可选，该参数已废弃）。
 
@@ -173,7 +173,7 @@ class AttachInstancesReq:
 
     @property
     def order_id(self):
-        """Gets the order_id of this AttachInstancesReq.
+        r"""Gets the order_id of this AttachInstancesReq.
 
         包周期订购ID，CBC订购回调时使用。（可选）
 
@@ -184,7 +184,7 @@ class AttachInstancesReq:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this AttachInstancesReq.
+        r"""Sets the order_id of this AttachInstancesReq.
 
         包周期订购ID，CBC订购回调时使用。（可选）
 
@@ -195,7 +195,7 @@ class AttachInstancesReq:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this AttachInstancesReq.
+        r"""Gets the enterprise_project_id of this AttachInstancesReq.
 
         企业项目ID，默认\"0\",无用参数,废弃
 
@@ -206,7 +206,7 @@ class AttachInstancesReq:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this AttachInstancesReq.
+        r"""Sets the enterprise_project_id of this AttachInstancesReq.
 
         企业项目ID，默认\"0\",无用参数,废弃
 
@@ -217,7 +217,7 @@ class AttachInstancesReq:
 
     @property
     def desktop_name_policy_id(self):
-        """Gets the desktop_name_policy_id of this AttachInstancesReq.
+        r"""Gets the desktop_name_policy_id of this AttachInstancesReq.
 
         策略id，用于指定生成桌面名称策略，如果指定了桌面名称则优先使用指定的桌面名称。
 
@@ -228,7 +228,7 @@ class AttachInstancesReq:
 
     @desktop_name_policy_id.setter
     def desktop_name_policy_id(self, desktop_name_policy_id):
-        """Sets the desktop_name_policy_id of this AttachInstancesReq.
+        r"""Sets the desktop_name_policy_id of this AttachInstancesReq.
 
         策略id，用于指定生成桌面名称策略，如果指定了桌面名称则优先使用指定的桌面名称。
 

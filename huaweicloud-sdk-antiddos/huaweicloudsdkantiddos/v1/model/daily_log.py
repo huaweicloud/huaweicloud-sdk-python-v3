@@ -35,7 +35,7 @@ class DailyLog:
     }
 
     def __init__(self, start_time=None, end_time=None, status=None, trigger_bps=None, trigger_pps=None, trigger_http_pps=None):
-        """DailyLog
+        r"""DailyLog
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class DailyLog:
 
     @property
     def start_time(self):
-        """Gets the start_time of this DailyLog.
+        r"""Gets the start_time of this DailyLog.
 
         开始时间
 
@@ -83,7 +83,7 @@ class DailyLog:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this DailyLog.
+        r"""Sets the start_time of this DailyLog.
 
         开始时间
 
@@ -94,7 +94,7 @@ class DailyLog:
 
     @property
     def end_time(self):
-        """Gets the end_time of this DailyLog.
+        r"""Gets the end_time of this DailyLog.
 
         结束时间
 
@@ -105,7 +105,7 @@ class DailyLog:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this DailyLog.
+        r"""Sets the end_time of this DailyLog.
 
         结束时间
 
@@ -116,7 +116,7 @@ class DailyLog:
 
     @property
     def status(self):
-        """Gets the status of this DailyLog.
+        r"""Gets the status of this DailyLog.
 
         防护状态，可选范围： - 1：表示清洗 - 2：表示黑洞
 
@@ -127,7 +127,7 @@ class DailyLog:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DailyLog.
+        r"""Sets the status of this DailyLog.
 
         防护状态，可选范围： - 1：表示清洗 - 2：表示黑洞
 
@@ -138,7 +138,7 @@ class DailyLog:
 
     @property
     def trigger_bps(self):
-        """Gets the trigger_bps of this DailyLog.
+        r"""Gets the trigger_bps of this DailyLog.
 
         触发时流量
 
@@ -149,7 +149,7 @@ class DailyLog:
 
     @trigger_bps.setter
     def trigger_bps(self, trigger_bps):
-        """Sets the trigger_bps of this DailyLog.
+        r"""Sets the trigger_bps of this DailyLog.
 
         触发时流量
 
@@ -160,7 +160,7 @@ class DailyLog:
 
     @property
     def trigger_pps(self):
-        """Gets the trigger_pps of this DailyLog.
+        r"""Gets the trigger_pps of this DailyLog.
 
         触发时报文速率
 
@@ -171,7 +171,7 @@ class DailyLog:
 
     @trigger_pps.setter
     def trigger_pps(self, trigger_pps):
-        """Sets the trigger_pps of this DailyLog.
+        r"""Sets the trigger_pps of this DailyLog.
 
         触发时报文速率
 
@@ -182,7 +182,7 @@ class DailyLog:
 
     @property
     def trigger_http_pps(self):
-        """Gets the trigger_http_pps of this DailyLog.
+        r"""Gets the trigger_http_pps of this DailyLog.
 
         触发时HTTP请求速率
 
@@ -193,7 +193,7 @@ class DailyLog:
 
     @trigger_http_pps.setter
     def trigger_http_pps(self, trigger_http_pps):
-        """Sets the trigger_http_pps of this DailyLog.
+        r"""Sets the trigger_http_pps of this DailyLog.
 
         触发时HTTP请求速率
 

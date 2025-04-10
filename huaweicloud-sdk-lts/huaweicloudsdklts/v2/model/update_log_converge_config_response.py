@@ -26,7 +26,7 @@ class UpdateLogConvergeConfigResponse(SdkResponse):
     }
 
     def __init__(self, status=None):
-        """UpdateLogConvergeConfigResponse
+        r"""UpdateLogConvergeConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateLogConvergeConfigResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateLogConvergeConfigResponse.
+        r"""Gets the status of this UpdateLogConvergeConfigResponse.
 
         :return: The status of this UpdateLogConvergeConfigResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class UpdateLogConvergeConfigResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateLogConvergeConfigResponse.
+        r"""Sets the status of this UpdateLogConvergeConfigResponse.
 
         :param status: The status of this UpdateLogConvergeConfigResponse.
         :type status: str

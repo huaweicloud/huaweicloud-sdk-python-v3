@@ -24,7 +24,7 @@ class StopJobResponse(SdkResponse):
     }
 
     def __init__(self):
-        """StopJobResponse
+        r"""StopJobResponse
 
         The model defined in huaweicloud sdk
 

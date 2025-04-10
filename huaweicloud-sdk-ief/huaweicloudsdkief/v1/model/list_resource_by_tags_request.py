@@ -29,7 +29,7 @@ class ListResourceByTagsRequest:
     }
 
     def __init__(self, ief_instance_id=None, resource_type=None, body=None):
-        """ListResourceByTagsRequest
+        r"""ListResourceByTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListResourceByTagsRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this ListResourceByTagsRequest.
+        r"""Gets the ief_instance_id of this ListResourceByTagsRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -67,7 +67,7 @@ class ListResourceByTagsRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this ListResourceByTagsRequest.
+        r"""Sets the ief_instance_id of this ListResourceByTagsRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -78,7 +78,7 @@ class ListResourceByTagsRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ListResourceByTagsRequest.
+        r"""Gets the resource_type of this ListResourceByTagsRequest.
 
         资源类型 - ief-edge_node - ief-deployment - ief-application - ief-device
 
@@ -89,7 +89,7 @@ class ListResourceByTagsRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ListResourceByTagsRequest.
+        r"""Sets the resource_type of this ListResourceByTagsRequest.
 
         资源类型 - ief-edge_node - ief-deployment - ief-application - ief-device
 
@@ -100,7 +100,7 @@ class ListResourceByTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListResourceByTagsRequest.
+        r"""Gets the body of this ListResourceByTagsRequest.
 
         :return: The body of this ListResourceByTagsRequest.
         :rtype: :class:`huaweicloudsdkief.v1.Tags`
@@ -109,7 +109,7 @@ class ListResourceByTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListResourceByTagsRequest.
+        r"""Sets the body of this ListResourceByTagsRequest.
 
         :param body: The body of this ListResourceByTagsRequest.
         :type body: :class:`huaweicloudsdkief.v1.Tags`

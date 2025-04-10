@@ -33,7 +33,7 @@ class SeriesQueryItemResult:
     }
 
     def __init__(self, namespace=None, dimensions=None, metric_name=None, unit=None, dimension_value_hash=None):
-        """SeriesQueryItemResult
+        r"""SeriesQueryItemResult
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class SeriesQueryItemResult:
 
     @property
     def namespace(self):
-        """Gets the namespace of this SeriesQueryItemResult.
+        r"""Gets the namespace of this SeriesQueryItemResult.
 
         命名空间。
 
@@ -82,7 +82,7 @@ class SeriesQueryItemResult:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this SeriesQueryItemResult.
+        r"""Sets the namespace of this SeriesQueryItemResult.
 
         命名空间。
 
@@ -93,7 +93,7 @@ class SeriesQueryItemResult:
 
     @property
     def dimensions(self):
-        """Gets the dimensions of this SeriesQueryItemResult.
+        r"""Gets the dimensions of this SeriesQueryItemResult.
 
         维度列表。
 
@@ -104,7 +104,7 @@ class SeriesQueryItemResult:
 
     @dimensions.setter
     def dimensions(self, dimensions):
-        """Sets the dimensions of this SeriesQueryItemResult.
+        r"""Sets the dimensions of this SeriesQueryItemResult.
 
         维度列表。
 
@@ -115,7 +115,7 @@ class SeriesQueryItemResult:
 
     @property
     def metric_name(self):
-        """Gets the metric_name of this SeriesQueryItemResult.
+        r"""Gets the metric_name of this SeriesQueryItemResult.
 
         时间序列名称。
 
@@ -126,7 +126,7 @@ class SeriesQueryItemResult:
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        """Sets the metric_name of this SeriesQueryItemResult.
+        r"""Sets the metric_name of this SeriesQueryItemResult.
 
         时间序列名称。
 
@@ -137,7 +137,7 @@ class SeriesQueryItemResult:
 
     @property
     def unit(self):
-        """Gets the unit of this SeriesQueryItemResult.
+        r"""Gets the unit of this SeriesQueryItemResult.
 
         时间序列单位。
 
@@ -148,7 +148,7 @@ class SeriesQueryItemResult:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this SeriesQueryItemResult.
+        r"""Sets the unit of this SeriesQueryItemResult.
 
         时间序列单位。
 
@@ -159,7 +159,7 @@ class SeriesQueryItemResult:
 
     @property
     def dimension_value_hash(self):
-        """Gets the dimension_value_hash of this SeriesQueryItemResult.
+        r"""Gets the dimension_value_hash of this SeriesQueryItemResult.
 
         时间序列哈希值。
 
@@ -170,7 +170,7 @@ class SeriesQueryItemResult:
 
     @dimension_value_hash.setter
     def dimension_value_hash(self, dimension_value_hash):
-        """Sets the dimension_value_hash of this SeriesQueryItemResult.
+        r"""Sets the dimension_value_hash of this SeriesQueryItemResult.
 
         时间序列哈希值。
 

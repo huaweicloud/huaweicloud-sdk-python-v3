@@ -30,7 +30,7 @@ class CreateDbInstanceResponse(SdkResponse):
     }
 
     def __init__(self, instance=None, job_id=None, order_id=None):
-        """CreateDbInstanceResponse
+        r"""CreateDbInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateDbInstanceResponse(SdkResponse):
 
     @property
     def instance(self):
-        """Gets the instance of this CreateDbInstanceResponse.
+        r"""Gets the instance of this CreateDbInstanceResponse.
 
         :return: The instance of this CreateDbInstanceResponse.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussInstanceResult`
@@ -67,7 +67,7 @@ class CreateDbInstanceResponse(SdkResponse):
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this CreateDbInstanceResponse.
+        r"""Sets the instance of this CreateDbInstanceResponse.
 
         :param instance: The instance of this CreateDbInstanceResponse.
         :type instance: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussInstanceResult`
@@ -76,7 +76,7 @@ class CreateDbInstanceResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateDbInstanceResponse.
+        r"""Gets the job_id of this CreateDbInstanceResponse.
 
         实例创建的任务id。  仅创建按需实例时会返回该参数。
 
@@ -87,7 +87,7 @@ class CreateDbInstanceResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateDbInstanceResponse.
+        r"""Sets the job_id of this CreateDbInstanceResponse.
 
         实例创建的任务id。  仅创建按需实例时会返回该参数。
 
@@ -98,7 +98,7 @@ class CreateDbInstanceResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this CreateDbInstanceResponse.
+        r"""Gets the order_id of this CreateDbInstanceResponse.
 
         创建实例的订单ID。  仅创建包周期实例时会返回该参数。
 
@@ -109,7 +109,7 @@ class CreateDbInstanceResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this CreateDbInstanceResponse.
+        r"""Sets the order_id of this CreateDbInstanceResponse.
 
         创建实例的订单ID。  仅创建包周期实例时会返回该参数。
 

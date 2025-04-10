@@ -27,7 +27,7 @@ class MemberGroupandStreamLogStreams:
     }
 
     def __init__(self, log_stream_name=None, log_stream_id=None):
-        """MemberGroupandStreamLogStreams
+        r"""MemberGroupandStreamLogStreams
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class MemberGroupandStreamLogStreams:
 
     @property
     def log_stream_name(self):
-        """Gets the log_stream_name of this MemberGroupandStreamLogStreams.
+        r"""Gets the log_stream_name of this MemberGroupandStreamLogStreams.
 
         :return: The log_stream_name of this MemberGroupandStreamLogStreams.
         :rtype: str
@@ -59,7 +59,7 @@ class MemberGroupandStreamLogStreams:
 
     @log_stream_name.setter
     def log_stream_name(self, log_stream_name):
-        """Sets the log_stream_name of this MemberGroupandStreamLogStreams.
+        r"""Sets the log_stream_name of this MemberGroupandStreamLogStreams.
 
         :param log_stream_name: The log_stream_name of this MemberGroupandStreamLogStreams.
         :type log_stream_name: str
@@ -68,7 +68,7 @@ class MemberGroupandStreamLogStreams:
 
     @property
     def log_stream_id(self):
-        """Gets the log_stream_id of this MemberGroupandStreamLogStreams.
+        r"""Gets the log_stream_id of this MemberGroupandStreamLogStreams.
 
         :return: The log_stream_id of this MemberGroupandStreamLogStreams.
         :rtype: str
@@ -77,7 +77,7 @@ class MemberGroupandStreamLogStreams:
 
     @log_stream_id.setter
     def log_stream_id(self, log_stream_id):
-        """Sets the log_stream_id of this MemberGroupandStreamLogStreams.
+        r"""Sets the log_stream_id of this MemberGroupandStreamLogStreams.
 
         :param log_stream_id: The log_stream_id of this MemberGroupandStreamLogStreams.
         :type log_stream_id: str

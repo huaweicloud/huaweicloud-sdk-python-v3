@@ -25,7 +25,7 @@ class UpdateTenantConfigRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateTenantConfigRequest
+        r"""UpdateTenantConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateTenantConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateTenantConfigRequest.
+        r"""Gets the body of this UpdateTenantConfigRequest.
 
         :return: The body of this UpdateTenantConfigRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.UpdateTenantConfigReq`
@@ -52,7 +52,7 @@ class UpdateTenantConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateTenantConfigRequest.
+        r"""Sets the body of this UpdateTenantConfigRequest.
 
         :param body: The body of this UpdateTenantConfigRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.UpdateTenantConfigReq`

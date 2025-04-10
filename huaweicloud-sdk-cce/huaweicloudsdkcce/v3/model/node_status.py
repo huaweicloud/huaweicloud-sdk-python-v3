@@ -39,7 +39,7 @@ class NodeStatus:
     }
 
     def __init__(self, phase=None, last_probe_time=None, job_id=None, server_id=None, private_ip=None, private_i_pv6_ip=None, public_ip=None, delete_status=None):
-        """NodeStatus
+        r"""NodeStatus
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class NodeStatus:
 
     @property
     def phase(self):
-        """Gets the phase of this NodeStatus.
+        r"""Gets the phase of this NodeStatus.
 
         节点状态：节点资源生命周期管理（如安装卸载等）状态和集群内k8s node状态的综合体现，取值如下 - Build：创建中，表示节点正处于创建过程中。 - Installing：纳管中，表示节点正处于纳管过程中。 - Upgrading：升级中，表示节点正处于升级过程中。 - Active：正常，表示节点处于正常状态。 - Abnormal：异常，表示节点处于异常状态。 - Deleting： 删除中，表示节点正处于删除过程中。 - Error：故障，表示节点处于故障状态。
 
@@ -103,7 +103,7 @@ class NodeStatus:
 
     @phase.setter
     def phase(self, phase):
-        """Sets the phase of this NodeStatus.
+        r"""Sets the phase of this NodeStatus.
 
         节点状态：节点资源生命周期管理（如安装卸载等）状态和集群内k8s node状态的综合体现，取值如下 - Build：创建中，表示节点正处于创建过程中。 - Installing：纳管中，表示节点正处于纳管过程中。 - Upgrading：升级中，表示节点正处于升级过程中。 - Active：正常，表示节点处于正常状态。 - Abnormal：异常，表示节点处于异常状态。 - Deleting： 删除中，表示节点正处于删除过程中。 - Error：故障，表示节点处于故障状态。
 
@@ -114,7 +114,7 @@ class NodeStatus:
 
     @property
     def last_probe_time(self):
-        """Gets the last_probe_time of this NodeStatus.
+        r"""Gets the last_probe_time of this NodeStatus.
 
         节点最近一次状态检查时间。集群处于异常、冻结或者中间态（例如创建中）时，节点的状态检查动作可能受影响。检查时间超过5分的节点状态不具有参考意义。
 
@@ -125,7 +125,7 @@ class NodeStatus:
 
     @last_probe_time.setter
     def last_probe_time(self, last_probe_time):
-        """Sets the last_probe_time of this NodeStatus.
+        r"""Sets the last_probe_time of this NodeStatus.
 
         节点最近一次状态检查时间。集群处于异常、冻结或者中间态（例如创建中）时，节点的状态检查动作可能受影响。检查时间超过5分的节点状态不具有参考意义。
 
@@ -136,7 +136,7 @@ class NodeStatus:
 
     @property
     def job_id(self):
-        """Gets the job_id of this NodeStatus.
+        r"""Gets the job_id of this NodeStatus.
 
         创建或删除时的任务ID。
 
@@ -147,7 +147,7 @@ class NodeStatus:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this NodeStatus.
+        r"""Sets the job_id of this NodeStatus.
 
         创建或删除时的任务ID。
 
@@ -158,7 +158,7 @@ class NodeStatus:
 
     @property
     def server_id(self):
-        """Gets the server_id of this NodeStatus.
+        r"""Gets the server_id of this NodeStatus.
 
         底层云服务器或裸金属节点ID。
 
@@ -169,7 +169,7 @@ class NodeStatus:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this NodeStatus.
+        r"""Sets the server_id of this NodeStatus.
 
         底层云服务器或裸金属节点ID。
 
@@ -180,7 +180,7 @@ class NodeStatus:
 
     @property
     def private_ip(self):
-        """Gets the private_ip of this NodeStatus.
+        r"""Gets the private_ip of this NodeStatus.
 
         节点主网卡私有网段IP地址。
 
@@ -191,7 +191,7 @@ class NodeStatus:
 
     @private_ip.setter
     def private_ip(self, private_ip):
-        """Sets the private_ip of this NodeStatus.
+        r"""Sets the private_ip of this NodeStatus.
 
         节点主网卡私有网段IP地址。
 
@@ -202,7 +202,7 @@ class NodeStatus:
 
     @property
     def private_i_pv6_ip(self):
-        """Gets the private_i_pv6_ip of this NodeStatus.
+        r"""Gets the private_i_pv6_ip of this NodeStatus.
 
         节点主网卡私有网段IPv6地址。
 
@@ -213,7 +213,7 @@ class NodeStatus:
 
     @private_i_pv6_ip.setter
     def private_i_pv6_ip(self, private_i_pv6_ip):
-        """Sets the private_i_pv6_ip of this NodeStatus.
+        r"""Sets the private_i_pv6_ip of this NodeStatus.
 
         节点主网卡私有网段IPv6地址。
 
@@ -224,7 +224,7 @@ class NodeStatus:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this NodeStatus.
+        r"""Gets the public_ip of this NodeStatus.
 
         节点弹性公网IP地址。如果ECS的数据没有实时同步，可在界面上通过“同步节点信息”手动进行更新。
 
@@ -235,7 +235,7 @@ class NodeStatus:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this NodeStatus.
+        r"""Sets the public_ip of this NodeStatus.
 
         节点弹性公网IP地址。如果ECS的数据没有实时同步，可在界面上通过“同步节点信息”手动进行更新。
 
@@ -246,7 +246,7 @@ class NodeStatus:
 
     @property
     def delete_status(self):
-        """Gets the delete_status of this NodeStatus.
+        r"""Gets the delete_status of this NodeStatus.
 
         :return: The delete_status of this NodeStatus.
         :rtype: :class:`huaweicloudsdkcce.v3.DeleteStatus`
@@ -255,7 +255,7 @@ class NodeStatus:
 
     @delete_status.setter
     def delete_status(self, delete_status):
-        """Sets the delete_status of this NodeStatus.
+        r"""Sets the delete_status of this NodeStatus.
 
         :param delete_status: The delete_status of this NodeStatus.
         :type delete_status: :class:`huaweicloudsdkcce.v3.DeleteStatus`

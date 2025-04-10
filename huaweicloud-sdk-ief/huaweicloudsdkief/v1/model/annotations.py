@@ -27,7 +27,7 @@ class Annotations:
     }
 
     def __init__(self, ring_controller=None, autonomy_edge_selector=None):
-        """Annotations
+        r"""Annotations
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Annotations:
 
     @property
     def ring_controller(self):
-        """Gets the ring_controller of this Annotations.
+        r"""Gets the ring_controller of this Annotations.
 
         生成ranktablefile。该参数目前只支持赋值\"ascend-1980\"。
 
@@ -61,7 +61,7 @@ class Annotations:
 
     @ring_controller.setter
     def ring_controller(self, ring_controller):
-        """Sets the ring_controller of this Annotations.
+        r"""Sets the ring_controller of this Annotations.
 
         生成ranktablefile。该参数目前只支持赋值\"ascend-1980\"。
 
@@ -72,7 +72,7 @@ class Annotations:
 
     @property
     def autonomy_edge_selector(self):
-        """Gets the autonomy_edge_selector of this Annotations.
+        r"""Gets the autonomy_edge_selector of this Annotations.
 
         离线自愈功能配置字段，须填写调度的节点组id
 
@@ -83,7 +83,7 @@ class Annotations:
 
     @autonomy_edge_selector.setter
     def autonomy_edge_selector(self, autonomy_edge_selector):
-        """Sets the autonomy_edge_selector of this Annotations.
+        r"""Sets the autonomy_edge_selector of this Annotations.
 
         离线自愈功能配置字段，须填写调度的节点组id
 

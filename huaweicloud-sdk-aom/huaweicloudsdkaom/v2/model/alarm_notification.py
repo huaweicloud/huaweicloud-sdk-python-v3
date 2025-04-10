@@ -39,7 +39,7 @@ class AlarmNotification:
     }
 
     def __init__(self, notification_type=None, route_group_enable=None, route_group_rule=None, notification_enable=None, bind_notification_rule_id=None, notify_resolved=None, notify_triggered=None, notify_frequency=None):
-        """AlarmNotification
+        r"""AlarmNotification
 
         The model defined in huaweicloud sdk
 
@@ -89,7 +89,7 @@ class AlarmNotification:
 
     @property
     def notification_type(self):
-        """Gets the notification_type of this AlarmNotification.
+        r"""Gets the notification_type of this AlarmNotification.
 
         通知类型。 - “direct”：直接告警 - “alarm_policy”：告警降噪
 
@@ -100,7 +100,7 @@ class AlarmNotification:
 
     @notification_type.setter
     def notification_type(self, notification_type):
-        """Sets the notification_type of this AlarmNotification.
+        r"""Sets the notification_type of this AlarmNotification.
 
         通知类型。 - “direct”：直接告警 - “alarm_policy”：告警降噪
 
@@ -111,7 +111,7 @@ class AlarmNotification:
 
     @property
     def route_group_enable(self):
-        """Gets the route_group_enable of this AlarmNotification.
+        r"""Gets the route_group_enable of this AlarmNotification.
 
         启用分组规则。 - 当通知类型为“alarm_policy”时：true - 当通知类型为“direct”时：false
 
@@ -122,7 +122,7 @@ class AlarmNotification:
 
     @route_group_enable.setter
     def route_group_enable(self, route_group_enable):
-        """Sets the route_group_enable of this AlarmNotification.
+        r"""Sets the route_group_enable of this AlarmNotification.
 
         启用分组规则。 - 当通知类型为“alarm_policy”时：true - 当通知类型为“direct”时：false
 
@@ -133,7 +133,7 @@ class AlarmNotification:
 
     @property
     def route_group_rule(self):
-        """Gets the route_group_rule of this AlarmNotification.
+        r"""Gets the route_group_rule of this AlarmNotification.
 
         分组规则名称。 - 当route_group_enable 为true时，填分组规则名称 - 当route_group_enable 为false时，填“”
 
@@ -144,7 +144,7 @@ class AlarmNotification:
 
     @route_group_rule.setter
     def route_group_rule(self, route_group_rule):
-        """Sets the route_group_rule of this AlarmNotification.
+        r"""Sets the route_group_rule of this AlarmNotification.
 
         分组规则名称。 - 当route_group_enable 为true时，填分组规则名称 - 当route_group_enable 为false时，填“”
 
@@ -155,7 +155,7 @@ class AlarmNotification:
 
     @property
     def notification_enable(self):
-        """Gets the notification_enable of this AlarmNotification.
+        r"""Gets the notification_enable of this AlarmNotification.
 
         是否启用告警行动规则。 - 当通知类型为“direct”时，填true - 当通知类型为“alarm_policy”时，填false
 
@@ -166,7 +166,7 @@ class AlarmNotification:
 
     @notification_enable.setter
     def notification_enable(self, notification_enable):
-        """Sets the notification_enable of this AlarmNotification.
+        r"""Sets the notification_enable of this AlarmNotification.
 
         是否启用告警行动规则。 - 当通知类型为“direct”时，填true - 当通知类型为“alarm_policy”时，填false
 
@@ -177,7 +177,7 @@ class AlarmNotification:
 
     @property
     def bind_notification_rule_id(self):
-        """Gets the bind_notification_rule_id of this AlarmNotification.
+        r"""Gets the bind_notification_rule_id of this AlarmNotification.
 
         告警行动策略id。 - 当notification_enable为true时，填告警行动策略id - 当notification_enable为false时，填“”
 
@@ -188,7 +188,7 @@ class AlarmNotification:
 
     @bind_notification_rule_id.setter
     def bind_notification_rule_id(self, bind_notification_rule_id):
-        """Sets the bind_notification_rule_id of this AlarmNotification.
+        r"""Sets the bind_notification_rule_id of this AlarmNotification.
 
         告警行动策略id。 - 当notification_enable为true时，填告警行动策略id - 当notification_enable为false时，填“”
 
@@ -199,7 +199,7 @@ class AlarmNotification:
 
     @property
     def notify_resolved(self):
-        """Gets the notify_resolved of this AlarmNotification.
+        r"""Gets the notify_resolved of this AlarmNotification.
 
         告警解决是否通知。 - true：通知 - false：不通知
 
@@ -210,7 +210,7 @@ class AlarmNotification:
 
     @notify_resolved.setter
     def notify_resolved(self, notify_resolved):
-        """Sets the notify_resolved of this AlarmNotification.
+        r"""Sets the notify_resolved of this AlarmNotification.
 
         告警解决是否通知。 - true：通知 - false：不通知
 
@@ -221,7 +221,7 @@ class AlarmNotification:
 
     @property
     def notify_triggered(self):
-        """Gets the notify_triggered of this AlarmNotification.
+        r"""Gets the notify_triggered of this AlarmNotification.
 
         告警触发是否通知。 - true：通知 - false：不通知
 
@@ -232,7 +232,7 @@ class AlarmNotification:
 
     @notify_triggered.setter
     def notify_triggered(self, notify_triggered):
-        """Sets the notify_triggered of this AlarmNotification.
+        r"""Sets the notify_triggered of this AlarmNotification.
 
         告警触发是否通知。 - true：通知 - false：不通知
 
@@ -243,7 +243,7 @@ class AlarmNotification:
 
     @property
     def notify_frequency(self):
-        """Gets the notify_frequency of this AlarmNotification.
+        r"""Gets the notify_frequency of this AlarmNotification.
 
         通知频率 - 当通知类型为“alarm_policy”时，填“-1” - 当通知类型为“direct”时，    - “0”：只告警一次    - “300”：每5分钟    - “600”：每10分钟    - “900”：每15分钟    - “1800”：每30分钟    - “3600”：每1小时    - “10800”：每3小时    - “21600”：每6小时    - “43200”：每12小时    - “86400”：每天
 
@@ -254,7 +254,7 @@ class AlarmNotification:
 
     @notify_frequency.setter
     def notify_frequency(self, notify_frequency):
-        """Sets the notify_frequency of this AlarmNotification.
+        r"""Sets the notify_frequency of this AlarmNotification.
 
         通知频率 - 当通知类型为“alarm_policy”时，填“-1” - 当通知类型为“direct”时，    - “0”：只告警一次    - “300”：每5分钟    - “600”：每10分钟    - “900”：每15分钟    - “1800”：每30分钟    - “3600”：每1小时    - “10800”：每3小时    - “21600”：每6小时    - “43200”：每12小时    - “86400”：每天
 

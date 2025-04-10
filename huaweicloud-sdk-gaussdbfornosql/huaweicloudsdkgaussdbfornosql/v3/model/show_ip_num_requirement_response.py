@@ -26,7 +26,7 @@ class ShowIpNumRequirementResponse(SdkResponse):
     }
 
     def __init__(self, count=None):
-        """ShowIpNumRequirementResponse
+        r"""ShowIpNumRequirementResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowIpNumRequirementResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowIpNumRequirementResponse.
+        r"""Gets the count of this ShowIpNumRequirementResponse.
 
         消耗的IP个数
 
@@ -55,7 +55,7 @@ class ShowIpNumRequirementResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowIpNumRequirementResponse.
+        r"""Sets the count of this ShowIpNumRequirementResponse.
 
         消耗的IP个数
 

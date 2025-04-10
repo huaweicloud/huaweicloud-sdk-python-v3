@@ -25,7 +25,7 @@ class BatchRestartOnlineMigrationTasksRequest:
     }
 
     def __init__(self, body=None):
-        """BatchRestartOnlineMigrationTasksRequest
+        r"""BatchRestartOnlineMigrationTasksRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchRestartOnlineMigrationTasksRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchRestartOnlineMigrationTasksRequest.
+        r"""Gets the body of this BatchRestartOnlineMigrationTasksRequest.
 
         :return: The body of this BatchRestartOnlineMigrationTasksRequest.
         :rtype: :class:`huaweicloudsdkdcs.v2.BatchRestartOnlineMigrationTasksBody`
@@ -52,7 +52,7 @@ class BatchRestartOnlineMigrationTasksRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchRestartOnlineMigrationTasksRequest.
+        r"""Sets the body of this BatchRestartOnlineMigrationTasksRequest.
 
         :param body: The body of this BatchRestartOnlineMigrationTasksRequest.
         :type body: :class:`huaweicloudsdkdcs.v2.BatchRestartOnlineMigrationTasksBody`

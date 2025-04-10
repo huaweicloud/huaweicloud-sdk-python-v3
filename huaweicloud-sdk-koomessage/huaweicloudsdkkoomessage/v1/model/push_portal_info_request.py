@@ -25,7 +25,7 @@ class PushPortalInfoRequest:
     }
 
     def __init__(self, portal_id=None):
-        """PushPortalInfoRequest
+        r"""PushPortalInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class PushPortalInfoRequest:
 
     @property
     def portal_id(self):
-        """Gets the portal_id of this PushPortalInfoRequest.
+        r"""Gets the portal_id of this PushPortalInfoRequest.
 
         主页ID。
 
@@ -53,7 +53,7 @@ class PushPortalInfoRequest:
 
     @portal_id.setter
     def portal_id(self, portal_id):
-        """Sets the portal_id of this PushPortalInfoRequest.
+        r"""Sets the portal_id of this PushPortalInfoRequest.
 
         主页ID。
 

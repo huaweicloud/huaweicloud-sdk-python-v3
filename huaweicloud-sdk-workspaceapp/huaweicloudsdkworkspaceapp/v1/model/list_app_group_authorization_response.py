@@ -28,7 +28,7 @@ class ListAppGroupAuthorizationResponse(SdkResponse):
     }
 
     def __init__(self, count=None, authorizations=None):
-        """ListAppGroupAuthorizationResponse
+        r"""ListAppGroupAuthorizationResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAppGroupAuthorizationResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListAppGroupAuthorizationResponse.
+        r"""Gets the count of this ListAppGroupAuthorizationResponse.
 
         总数。
 
@@ -62,7 +62,7 @@ class ListAppGroupAuthorizationResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListAppGroupAuthorizationResponse.
+        r"""Sets the count of this ListAppGroupAuthorizationResponse.
 
         总数。
 
@@ -73,7 +73,7 @@ class ListAppGroupAuthorizationResponse(SdkResponse):
 
     @property
     def authorizations(self):
-        """Gets the authorizations of this ListAppGroupAuthorizationResponse.
+        r"""Gets the authorizations of this ListAppGroupAuthorizationResponse.
 
         授权信息。
 
@@ -84,7 +84,7 @@ class ListAppGroupAuthorizationResponse(SdkResponse):
 
     @authorizations.setter
     def authorizations(self, authorizations):
-        """Sets the authorizations of this ListAppGroupAuthorizationResponse.
+        r"""Sets the authorizations of this ListAppGroupAuthorizationResponse.
 
         授权信息。
 

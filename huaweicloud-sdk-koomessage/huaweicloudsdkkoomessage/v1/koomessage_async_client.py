@@ -34,7 +34,7 @@ class KooMessageAsyncClient(Client):
         return client_builder
 
     def add_call_back_async(self, request):
-        """注册智能信息回执URL
+        r"""注册智能信息回执URL
 
         用户根据要求创建回执接口后，可以调用此接口进行注册，注意：此接口仅允许te_admin角色用户调用。
         
@@ -99,7 +99,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def list_aim_callbacks_async(self, request):
-        """查询用户已注册回执接口
+        r"""查询用户已注册回执接口
 
         用户注册回执接口之后，可以根据此接口查询所有已注册回执接口。
         
@@ -162,7 +162,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def check_mobile_capability_async(self, request):
-        """查询手机号智能信息解析能力
+        r"""查询手机号智能信息解析能力
 
         用户在下发智能信息前，通过此接口批量查询对应手机的智能信息解析能力。
         
@@ -227,7 +227,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def create_resolve_task_async(self, request):
-        """生成解析任务
+        r"""生成解析任务
 
         生成解析的短链。一次最多生成100个解析的短链。
         
@@ -292,7 +292,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def list_aim_resolve_details_async(self, request):
-        """查询解析明细
+        r"""查询解析明细
 
         根据用户提供的过滤条件查询个性化解析明细，包括：发送任务ID、发送手机号码等。
         
@@ -379,7 +379,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def list_resolve_tasks_async(self, request):
-        """查询解析任务
+        r"""查询解析任务
 
         创建解析任务后，客户可以查询解析任务状态信息。
         
@@ -466,7 +466,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def create_aim_send_task_async(self, request):
-        """发送智能信息
+        r"""发送智能信息
 
         根据客户的参数发送任务名称、智能信息模板ID等进行智能信息发送。一次最多发送100个智能信息。
         
@@ -531,7 +531,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def list_aim_send_details_async(self, request):
-        """查询智能信息发送明细
+        r"""查询智能信息发送明细
 
         根据用户提供的过滤条件查询发送明细列表，包括：发送任务ID、发送手机号码等。
         
@@ -610,7 +610,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def list_aim_send_reports_async(self, request):
-        """查询智能信息发送报表
+        r"""查询智能信息发送报表
 
         查询智能信息发送报表。
         
@@ -675,7 +675,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def list_aim_send_tasks_async(self, request):
-        """查询智能信息发送任务
+        r"""查询智能信息发送任务
 
         
         根据用户提供的过滤条件查询智能信息发送任务列表，包括：发送任务名称、智能信息模板ID等。
@@ -757,7 +757,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def create_aim_personal_template_async(self, request):
-        """创建个人模板
+        r"""创建个人模板
 
         用于用户创建个人模板。
         
@@ -825,7 +825,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def delete_aim_personal_template_async(self, request):
-        """删除模板实例
+        r"""删除模板实例
 
         根据用户提供的模板ID，删除智能信息个人模板。
         
@@ -890,7 +890,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def delete_template_material_async(self, request):
-        """删除模板素材
+        r"""删除模板素材
 
         根据用户提供的模板ID，删除模板素材。
         
@@ -955,7 +955,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def list_aim_template_materials_async(self, request):
-        """查询智能消息模板素材列表
+        r"""查询智能消息模板素材列表
 
         根据用户提供的过滤条件，查询模板素材列表。
         
@@ -1030,7 +1030,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def list_aim_template_reports_async(self, request):
-        """查询模板报表
+        r"""查询模板报表
 
         根据用户指定过滤条件查询指定智能信息模板的解析次数。当日数据需要次日16:00之后才能查询到。
         
@@ -1095,7 +1095,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def list_aim_templates_async(self, request):
-        """查询模板
+        r"""查询模板
 
         
         根据客户提供的过滤条件查询智能信息模板列表。
@@ -1180,7 +1180,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def set_primary_video_thumbnail_async(self, request):
-        """设置视频模板封面图
+        r"""设置视频模板封面图
 
         根据用户提供的视频封面图资源ID和AIM视频资源ID设置视频模板的封面图。
         
@@ -1245,7 +1245,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def show_template_video_thumbnail_async(self, request):
-        """查询视频模板封面图
+        r"""查询视频模板封面图
 
         根据用户提供的过滤条件，查询视频模板封面图资源列表。
         
@@ -1310,7 +1310,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def update_personal_template_state_async(self, request):
-        """启用或禁用模板实例
+        r"""启用或禁用模板实例
 
         根据用户提供的模板ID，启用或禁用智能信息个人模板。
         
@@ -1377,7 +1377,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def upload_aim_template_material_async(self, request):
-        """上传智能信息模板素材
+        r"""上传智能信息模板素材
 
         支持用户上传模板使用的图片或者视频。
         
@@ -1445,7 +1445,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def list_menus_async(self, request):
-        """查询智能信息服务号菜单
+        r"""查询智能信息服务号菜单
 
         根据用户提供的过滤条件查询服务号菜单。
         
@@ -1526,7 +1526,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def update_menu_async(self, request):
-        """修改智能信息服务号菜单
+        r"""修改智能信息服务号菜单
 
         
         支持用户修改所属企业的指定菜单。
@@ -1594,7 +1594,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def delete_port_info_async(self, request):
-        """删除通道号
+        r"""删除通道号
 
         删除通道号。
         
@@ -1659,7 +1659,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def list_port_infos_async(self, request):
-        """查询通道号列表
+        r"""查询通道号列表
 
         支持查询通道号列表和通道号绑定信息。
         
@@ -1742,7 +1742,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def lock_port_async(self, request):
-        """通道号绑定服务号
+        r"""通道号绑定服务号
 
         通道号绑定服务号。
         
@@ -1807,7 +1807,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def register_port_async(self, request):
-        """注册通道号
+        r"""注册通道号
 
         注册通道号。
         
@@ -1872,7 +1872,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def unlock_port_async(self, request):
-        """通道号解绑服务号
+        r"""通道号解绑服务号
 
         通道号解绑服务号。
         
@@ -1937,7 +1937,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def list_portal_infos_async(self, request):
-        """查询主页列表
+        r"""查询主页列表
 
         
         根据用户提供的过滤条件查找用户管理的主页列表。
@@ -2013,7 +2013,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def update_portal_info_async(self, request):
-        """修改主页信息
+        r"""修改主页信息
 
         
         用户对已创建的主页进行信息的修改。
@@ -2081,7 +2081,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def freeze_pub_async(self, request):
-        """冻结服务号
+        r"""冻结服务号
 
         支持用户通过此接口冻结服务号。
         
@@ -2148,7 +2148,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def list_pub_infos_async(self, request):
-        """查询服务号列表
+        r"""查询服务号列表
 
         
         支持根据用户提供的过滤条件查询服务号列表。
@@ -2228,7 +2228,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def unfreeze_pub_async(self, request):
-        """解冻服务号
+        r"""解冻服务号
 
         服务号解结，冻结服务号。需审核，审核通过生效。
         
@@ -2295,7 +2295,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def update_pub_info_async(self, request):
-        """更新服务号信息
+        r"""更新服务号信息
 
         支持用户更新服务号信息。
         
@@ -2362,7 +2362,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def create_pub_info_async(self, request):
-        """一站式服务号创建
+        r"""一站式服务号创建
 
         一站式服务号创建。
         
@@ -2427,7 +2427,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def push_menu_info_async(self, request):
-        """催审菜单
+        r"""催审菜单
 
         支持用户通过此接口根据菜单ID催审。菜单需要在与其关联的服务号审核通过之后才能催审。
         
@@ -2492,7 +2492,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def push_portal_info_async(self, request):
-        """催审主页
+        r"""催审主页
 
         支持用户通过此接口根据主页ID催审。主页需要在与其关联的服务号审核通过之后才能催审。
         
@@ -2557,7 +2557,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def upload_media_async(self, request):
-        """上传智能信息服务号图片资源
+        r"""上传智能信息服务号图片资源
 
         支持用户上传图片资源。
         
@@ -2626,7 +2626,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def create_sms_app_async(self, request):
-        """创建短信应用
+        r"""创建短信应用
 
         该接口用于用户创建短信应用。
         
@@ -2691,7 +2691,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def list_aim_msg_app_async(self, request):
-        """查询短信应用
+        r"""查询短信应用
 
         该接口用于用户查询已创建的短信应用。
         
@@ -2766,7 +2766,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def list_aim_msg_app_detail_async(self, request):
-        """获取短信应用详情
+        r"""获取短信应用详情
 
         该接口用于用户获取已创建的短信应用详情。
         
@@ -2831,7 +2831,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def update_aim_msg_app_async(self, request):
-        """修改短信应用
+        r"""修改短信应用
 
         该接口用于用户修改短信应用。
         
@@ -2898,7 +2898,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def send_aim_batch_different_messages_async(self, request):
-        """发送分批短信
+        r"""发送分批短信
 
         该接口用于向不同用户发送不同内容的短信。
         
@@ -2973,7 +2973,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def send_aim_batch_messages_async(self, request):
-        """发送短信
+        r"""发送短信
 
         向单个或多个用户发送相同内容的短信。
         
@@ -3048,7 +3048,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def add_aim_msg_signature_async(self, request):
-        """创建短信签名
+        r"""创建短信签名
 
         该接口用于用户创建短信签名。
         
@@ -3113,7 +3113,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def delete_aim_msg_signature_async(self, request):
-        """删除短信签名
+        r"""删除短信签名
 
         该接口用于用户删除已创建的短信签名。删除已审核通过的签名，会同步删除该签名对应的通道号和该签名下的所有短信模板，请谨慎操作。
         
@@ -3178,7 +3178,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def list_aim_msg_signature_async(self, request):
-        """查询短信签名
+        r"""查询短信签名
 
         该接口用于用户查询已创建的短信签名。
         
@@ -3259,7 +3259,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def list_aim_msg_signature_detail_async(self, request):
-        """获取短信签名详情
+        r"""获取短信签名详情
 
         该接口用于用户获取已创建的短信签名详情。
         
@@ -3324,7 +3324,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def show_aim_msg_signature_file_info_async(self, request):
-        """查询申请文件
+        r"""查询申请文件
 
         该接口用于用户查询创建短信签名时上传的营业执照/授权委托书文件信息。
         
@@ -3393,7 +3393,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def update_aim_msg_signature_async(self, request):
-        """修改短信签名
+        r"""修改短信签名
 
         该接口用于用户更新短信签名信息，目前仅支持审核不通过的短信签名重新修改。
         
@@ -3460,7 +3460,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def upload_aim_msg_signature_file_async(self, request):
-        """上传申请文件
+        r"""上传申请文件
 
         该接口用于用户上传创建短信签名所需的营业执照/授权委托书文件。
         
@@ -3529,7 +3529,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def create_aim_msg_template_async(self, request):
-        """创建短信模板
+        r"""创建短信模板
 
         该接口用于用户创建短信模板。
         
@@ -3594,7 +3594,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def delete_aim_msg_template_async(self, request):
-        """删除短信模板
+        r"""删除短信模板
 
         该接口用于用户删除已创建的短信模板。
         
@@ -3659,7 +3659,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def list_aim_msg_template_async(self, request):
-        """查询短信模板
+        r"""查询短信模板
 
         该接口用于用户查询已创建的短信模板。
         
@@ -3740,7 +3740,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def show_aim_msg_template_detail_async(self, request):
-        """获取短信模板详情
+        r"""获取短信模板详情
 
         该接口用于用户获取已创建的短信模板详情。
         
@@ -3805,7 +3805,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def show_aim_msg_template_variable_async(self, request):
-        """查询短信模板变量
+        r"""查询短信模板变量
 
         该接口用于用户查询短信模板变量。
         
@@ -3870,7 +3870,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def update_aim_msg_template_async(self, request):
-        """修改短信模板
+        r"""修改短信模板
 
         该接口用于用户修改短信模板信息，目前仅支持审核不通过的短信模板重新修改。
         
@@ -3937,7 +3937,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def add_vms_call_back_async(self, request):
-        """注册智能信息基础版回执URL
+        r"""注册智能信息基础版回执URL
 
         用户根据要求创建智能信息基础版回执接口后，可以调用此接口进行注册。
         
@@ -4002,7 +4002,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def create_vms_send_task_async(self, request):
-        """发送智能信息基础版任务
+        r"""发送智能信息基础版任务
 
         支持用户通过此接口进行智能信息基础版任务发送。
         
@@ -4067,7 +4067,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def list_vms_callbacks_async(self, request):
-        """查询用户已注册智能信息基础版回执接口
+        r"""查询用户已注册智能信息基础版回执接口
 
         查询所有已注册的智能信息基础版回执接口。
         
@@ -4130,7 +4130,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def list_vms_send_tasks_async(self, request):
-        """查询智能信息基础版发送任务
+        r"""查询智能信息基础版发送任务
 
         支持用户根据过滤条件查询智能信息基础版任务列表。包括：发送任务名称、智能信息基础版模板ID等。
         
@@ -4217,7 +4217,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def create_vms_template_async(self, request):
-        """新建智能信息基础版模板
+        r"""新建智能信息基础版模板
 
         支持用户通过此接口创建智能信息基础版模板。
         
@@ -4282,7 +4282,7 @@ class KooMessageAsyncClient(Client):
         return http_info
 
     def list_vms_template_status_async(self, request):
-        """查询智能信息基础版模板状态
+        r"""查询智能信息基础版模板状态
 
         根据用户提供的过滤条件查询智能信息基础版模板状态列表。
         包括：模板ID、模板名称等。

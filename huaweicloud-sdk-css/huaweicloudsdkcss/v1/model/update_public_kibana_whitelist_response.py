@@ -24,7 +24,7 @@ class UpdatePublicKibanaWhitelistResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdatePublicKibanaWhitelistResponse
+        r"""UpdatePublicKibanaWhitelistResponse
 
         The model defined in huaweicloud sdk
 

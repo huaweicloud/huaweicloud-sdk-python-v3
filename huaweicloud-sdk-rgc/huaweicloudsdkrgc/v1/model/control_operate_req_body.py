@@ -29,7 +29,7 @@ class ControlOperateReqBody:
     }
 
     def __init__(self, identifier=None, target_identifier=None, parameters=None):
-        """ControlOperateReqBody
+        r"""ControlOperateReqBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ControlOperateReqBody:
 
     @property
     def identifier(self):
-        """Gets the identifier of this ControlOperateReqBody.
+        r"""Gets the identifier of this ControlOperateReqBody.
 
         控制策略ID。
 
@@ -66,7 +66,7 @@ class ControlOperateReqBody:
 
     @identifier.setter
     def identifier(self, identifier):
-        """Sets the identifier of this ControlOperateReqBody.
+        r"""Sets the identifier of this ControlOperateReqBody.
 
         控制策略ID。
 
@@ -77,7 +77,7 @@ class ControlOperateReqBody:
 
     @property
     def target_identifier(self):
-        """Gets the target_identifier of this ControlOperateReqBody.
+        r"""Gets the target_identifier of this ControlOperateReqBody.
 
         组织单元的ID信息。
 
@@ -88,7 +88,7 @@ class ControlOperateReqBody:
 
     @target_identifier.setter
     def target_identifier(self, target_identifier):
-        """Sets the target_identifier of this ControlOperateReqBody.
+        r"""Sets the target_identifier of this ControlOperateReqBody.
 
         组织单元的ID信息。
 
@@ -99,7 +99,7 @@ class ControlOperateReqBody:
 
     @property
     def parameters(self):
-        """Gets the parameters of this ControlOperateReqBody.
+        r"""Gets the parameters of this ControlOperateReqBody.
 
         策略参数。
 
@@ -110,7 +110,7 @@ class ControlOperateReqBody:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this ControlOperateReqBody.
+        r"""Sets the parameters of this ControlOperateReqBody.
 
         策略参数。
 

@@ -28,7 +28,7 @@ class ListArchiveConfigsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, configs=None):
-        """ListArchiveConfigsResponse
+        r"""ListArchiveConfigsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListArchiveConfigsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListArchiveConfigsResponse.
+        r"""Gets the count of this ListArchiveConfigsResponse.
 
         归档设置记录总数
 
@@ -62,7 +62,7 @@ class ListArchiveConfigsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListArchiveConfigsResponse.
+        r"""Sets the count of this ListArchiveConfigsResponse.
 
         归档设置记录总数
 
@@ -73,7 +73,7 @@ class ListArchiveConfigsResponse(SdkResponse):
 
     @property
     def configs(self):
-        """Gets the configs of this ListArchiveConfigsResponse.
+        r"""Gets the configs of this ListArchiveConfigsResponse.
 
         配置项
 
@@ -84,7 +84,7 @@ class ListArchiveConfigsResponse(SdkResponse):
 
     @configs.setter
     def configs(self, configs):
-        """Sets the configs of this ListArchiveConfigsResponse.
+        r"""Sets the configs of this ListArchiveConfigsResponse.
 
         配置项
 

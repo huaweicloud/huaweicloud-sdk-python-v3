@@ -23,7 +23,7 @@ class ListSshKeysRequest:
     }
 
     def __init__(self):
-        """ListSshKeysRequest
+        r"""ListSshKeysRequest
 
         The model defined in huaweicloud sdk
 

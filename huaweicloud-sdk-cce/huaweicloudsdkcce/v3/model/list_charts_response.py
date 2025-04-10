@@ -26,7 +26,7 @@ class ListChartsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListChartsResponse
+        r"""ListChartsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListChartsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListChartsResponse.
+        r"""Gets the body of this ListChartsResponse.
 
         模板列表
 
@@ -55,7 +55,7 @@ class ListChartsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListChartsResponse.
+        r"""Sets the body of this ListChartsResponse.
 
         模板列表
 

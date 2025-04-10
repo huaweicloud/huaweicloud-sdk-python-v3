@@ -29,7 +29,7 @@ class AutoLockOptions:
     }
 
     def __init__(self, auto_lock_minutes=None, auto_disconnect=None, options=None):
-        """AutoLockOptions
+        r"""AutoLockOptions
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AutoLockOptions:
 
     @property
     def auto_lock_minutes(self):
-        """Gets the auto_lock_minutes of this AutoLockOptions.
+        r"""Gets the auto_lock_minutes of this AutoLockOptions.
 
         锁屏等待时间（分钟）。取值范围为[3-86400]。默认：10。
 
@@ -68,7 +68,7 @@ class AutoLockOptions:
 
     @auto_lock_minutes.setter
     def auto_lock_minutes(self, auto_lock_minutes):
-        """Sets the auto_lock_minutes of this AutoLockOptions.
+        r"""Sets the auto_lock_minutes of this AutoLockOptions.
 
         锁屏等待时间（分钟）。取值范围为[3-86400]。默认：10。
 
@@ -79,7 +79,7 @@ class AutoLockOptions:
 
     @property
     def auto_disconnect(self):
-        """Gets the auto_disconnect of this AutoLockOptions.
+        r"""Gets the auto_disconnect of this AutoLockOptions.
 
         自动断开或注销。取值为：AUTO_DISCONNECT：自动断开。AUTO_LOGOUT：自动注销。DISABLED：已禁用。（默认）AUTO_RESTART：自动重启。AUTO_STOP：自动停止。HIBERNATE:休眠。
 
@@ -90,7 +90,7 @@ class AutoLockOptions:
 
     @auto_disconnect.setter
     def auto_disconnect(self, auto_disconnect):
-        """Sets the auto_disconnect of this AutoLockOptions.
+        r"""Sets the auto_disconnect of this AutoLockOptions.
 
         自动断开或注销。取值为：AUTO_DISCONNECT：自动断开。AUTO_LOGOUT：自动注销。DISABLED：已禁用。（默认）AUTO_RESTART：自动重启。AUTO_STOP：自动停止。HIBERNATE:休眠。
 
@@ -101,7 +101,7 @@ class AutoLockOptions:
 
     @property
     def options(self):
-        """Gets the options of this AutoLockOptions.
+        r"""Gets the options of this AutoLockOptions.
 
         :return: The options of this AutoLockOptions.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AutoDisconnectOrLogoutControlOptions`
@@ -110,7 +110,7 @@ class AutoLockOptions:
 
     @options.setter
     def options(self, options):
-        """Sets the options of this AutoLockOptions.
+        r"""Sets the options of this AutoLockOptions.
 
         :param options: The options of this AutoLockOptions.
         :type options: :class:`huaweicloudsdkworkspace.v2.AutoDisconnectOrLogoutControlOptions`

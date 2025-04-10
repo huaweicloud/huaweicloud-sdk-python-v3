@@ -29,7 +29,7 @@ class CompatibleReplicasResp:
     }
 
     def __init__(self, id=None, name=None, links=None):
-        """CompatibleReplicasResp
+        r"""CompatibleReplicasResp
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CompatibleReplicasResp:
 
     @property
     def id(self):
-        """Gets the id of this CompatibleReplicasResp.
+        r"""Gets the id of this CompatibleReplicasResp.
 
         ID
 
@@ -68,7 +68,7 @@ class CompatibleReplicasResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CompatibleReplicasResp.
+        r"""Sets the id of this CompatibleReplicasResp.
 
         ID
 
@@ -79,7 +79,7 @@ class CompatibleReplicasResp:
 
     @property
     def name(self):
-        """Gets the name of this CompatibleReplicasResp.
+        r"""Gets the name of this CompatibleReplicasResp.
 
         名称
 
@@ -90,7 +90,7 @@ class CompatibleReplicasResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CompatibleReplicasResp.
+        r"""Sets the name of this CompatibleReplicasResp.
 
         名称
 
@@ -101,7 +101,7 @@ class CompatibleReplicasResp:
 
     @property
     def links(self):
-        """Gets the links of this CompatibleReplicasResp.
+        r"""Gets the links of this CompatibleReplicasResp.
 
         连接
 
@@ -112,7 +112,7 @@ class CompatibleReplicasResp:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this CompatibleReplicasResp.
+        r"""Sets the links of this CompatibleReplicasResp.
 
         连接
 

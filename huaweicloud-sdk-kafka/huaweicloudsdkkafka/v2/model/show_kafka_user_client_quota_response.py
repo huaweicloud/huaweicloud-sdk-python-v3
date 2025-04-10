@@ -28,7 +28,7 @@ class ShowKafkaUserClientQuotaResponse(SdkResponse):
     }
 
     def __init__(self, quotas=None, count=None):
-        """ShowKafkaUserClientQuotaResponse
+        r"""ShowKafkaUserClientQuotaResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowKafkaUserClientQuotaResponse(SdkResponse):
 
     @property
     def quotas(self):
-        """Gets the quotas of this ShowKafkaUserClientQuotaResponse.
+        r"""Gets the quotas of this ShowKafkaUserClientQuotaResponse.
 
         客户端流控配置列表。 
 
@@ -62,7 +62,7 @@ class ShowKafkaUserClientQuotaResponse(SdkResponse):
 
     @quotas.setter
     def quotas(self, quotas):
-        """Sets the quotas of this ShowKafkaUserClientQuotaResponse.
+        r"""Sets the quotas of this ShowKafkaUserClientQuotaResponse.
 
         客户端流控配置列表。 
 
@@ -73,7 +73,7 @@ class ShowKafkaUserClientQuotaResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowKafkaUserClientQuotaResponse.
+        r"""Gets the count of this ShowKafkaUserClientQuotaResponse.
 
         用户/客户端流控配置数目。 
 
@@ -84,7 +84,7 @@ class ShowKafkaUserClientQuotaResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowKafkaUserClientQuotaResponse.
+        r"""Sets the count of this ShowKafkaUserClientQuotaResponse.
 
         用户/客户端流控配置数目。 
 

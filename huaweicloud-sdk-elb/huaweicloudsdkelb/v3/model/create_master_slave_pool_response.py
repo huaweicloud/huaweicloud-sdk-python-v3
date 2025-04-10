@@ -28,7 +28,7 @@ class CreateMasterSlavePoolResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, pool=None):
-        """CreateMasterSlavePoolResponse
+        r"""CreateMasterSlavePoolResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateMasterSlavePoolResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateMasterSlavePoolResponse.
+        r"""Gets the request_id of this CreateMasterSlavePoolResponse.
 
         请求ID。  注：自动生成 。
 
@@ -62,7 +62,7 @@ class CreateMasterSlavePoolResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateMasterSlavePoolResponse.
+        r"""Sets the request_id of this CreateMasterSlavePoolResponse.
 
         请求ID。  注：自动生成 。
 
@@ -73,7 +73,7 @@ class CreateMasterSlavePoolResponse(SdkResponse):
 
     @property
     def pool(self):
-        """Gets the pool of this CreateMasterSlavePoolResponse.
+        r"""Gets the pool of this CreateMasterSlavePoolResponse.
 
         :return: The pool of this CreateMasterSlavePoolResponse.
         :rtype: :class:`huaweicloudsdkelb.v3.MasterSlavePool`
@@ -82,7 +82,7 @@ class CreateMasterSlavePoolResponse(SdkResponse):
 
     @pool.setter
     def pool(self, pool):
-        """Sets the pool of this CreateMasterSlavePoolResponse.
+        r"""Sets the pool of this CreateMasterSlavePoolResponse.
 
         :param pool: The pool of this CreateMasterSlavePoolResponse.
         :type pool: :class:`huaweicloudsdkelb.v3.MasterSlavePool`

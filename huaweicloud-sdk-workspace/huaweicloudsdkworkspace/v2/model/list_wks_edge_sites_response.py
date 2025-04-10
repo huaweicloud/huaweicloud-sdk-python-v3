@@ -28,7 +28,7 @@ class ListWksEdgeSitesResponse(SdkResponse):
     }
 
     def __init__(self, wks_edge_sites=None, total_count=None):
-        """ListWksEdgeSitesResponse
+        r"""ListWksEdgeSitesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListWksEdgeSitesResponse(SdkResponse):
 
     @property
     def wks_edge_sites(self):
-        """Gets the wks_edge_sites of this ListWksEdgeSitesResponse.
+        r"""Gets the wks_edge_sites of this ListWksEdgeSitesResponse.
 
         边缘小站列表。
 
@@ -62,7 +62,7 @@ class ListWksEdgeSitesResponse(SdkResponse):
 
     @wks_edge_sites.setter
     def wks_edge_sites(self, wks_edge_sites):
-        """Sets the wks_edge_sites of this ListWksEdgeSitesResponse.
+        r"""Sets the wks_edge_sites of this ListWksEdgeSitesResponse.
 
         边缘小站列表。
 
@@ -73,7 +73,7 @@ class ListWksEdgeSitesResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListWksEdgeSitesResponse.
+        r"""Gets the total_count of this ListWksEdgeSitesResponse.
 
         站点总数。
 
@@ -84,7 +84,7 @@ class ListWksEdgeSitesResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListWksEdgeSitesResponse.
+        r"""Sets the total_count of this ListWksEdgeSitesResponse.
 
         站点总数。
 

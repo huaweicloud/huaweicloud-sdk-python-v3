@@ -29,7 +29,7 @@ class DeleteDesktopVolumesRequest:
     }
 
     def __init__(self, service_transaction_id=None, desktop_id=None, body=None):
-        """DeleteDesktopVolumesRequest
+        r"""DeleteDesktopVolumesRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DeleteDesktopVolumesRequest:
 
     @property
     def service_transaction_id(self):
-        """Gets the service_transaction_id of this DeleteDesktopVolumesRequest.
+        r"""Gets the service_transaction_id of this DeleteDesktopVolumesRequest.
 
         CBC接口回调时，请求头里带上的业务ID
 
@@ -67,7 +67,7 @@ class DeleteDesktopVolumesRequest:
 
     @service_transaction_id.setter
     def service_transaction_id(self, service_transaction_id):
-        """Sets the service_transaction_id of this DeleteDesktopVolumesRequest.
+        r"""Sets the service_transaction_id of this DeleteDesktopVolumesRequest.
 
         CBC接口回调时，请求头里带上的业务ID
 
@@ -78,7 +78,7 @@ class DeleteDesktopVolumesRequest:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this DeleteDesktopVolumesRequest.
+        r"""Gets the desktop_id of this DeleteDesktopVolumesRequest.
 
         桌面ID。
 
@@ -89,7 +89,7 @@ class DeleteDesktopVolumesRequest:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this DeleteDesktopVolumesRequest.
+        r"""Sets the desktop_id of this DeleteDesktopVolumesRequest.
 
         桌面ID。
 
@@ -100,7 +100,7 @@ class DeleteDesktopVolumesRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteDesktopVolumesRequest.
+        r"""Gets the body of this DeleteDesktopVolumesRequest.
 
         :return: The body of this DeleteDesktopVolumesRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.DeleteVolumesReq`
@@ -109,7 +109,7 @@ class DeleteDesktopVolumesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteDesktopVolumesRequest.
+        r"""Sets the body of this DeleteDesktopVolumesRequest.
 
         :param body: The body of this DeleteDesktopVolumesRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.DeleteVolumesReq`

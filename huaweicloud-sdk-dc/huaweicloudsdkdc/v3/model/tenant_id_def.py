@@ -23,7 +23,7 @@ class TenantIdDef:
     }
 
     def __init__(self):
-        """TenantIdDef
+        r"""TenantIdDef
 
         The model defined in huaweicloud sdk
 

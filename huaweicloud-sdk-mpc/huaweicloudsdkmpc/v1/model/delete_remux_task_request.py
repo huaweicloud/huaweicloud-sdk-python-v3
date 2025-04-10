@@ -25,7 +25,7 @@ class DeleteRemuxTaskRequest:
     }
 
     def __init__(self, task_id=None):
-        """DeleteRemuxTaskRequest
+        r"""DeleteRemuxTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteRemuxTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this DeleteRemuxTaskRequest.
+        r"""Gets the task_id of this DeleteRemuxTaskRequest.
 
         任务ID 
 
@@ -53,7 +53,7 @@ class DeleteRemuxTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this DeleteRemuxTaskRequest.
+        r"""Sets the task_id of this DeleteRemuxTaskRequest.
 
         任务ID 
 

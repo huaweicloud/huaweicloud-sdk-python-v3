@@ -25,7 +25,7 @@ class GcbResourceType:
     }
 
     def __init__(self, resource_type=None):
-        """GcbResourceType
+        r"""GcbResourceType
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class GcbResourceType:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this GcbResourceType.
+        r"""Gets the resource_type of this GcbResourceType.
 
         功能说明：实例类型。
 
@@ -53,7 +53,7 @@ class GcbResourceType:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this GcbResourceType.
+        r"""Sets the resource_type of this GcbResourceType.
 
         功能说明：实例类型。
 

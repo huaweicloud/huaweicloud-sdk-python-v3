@@ -30,7 +30,7 @@ class ShowSynthesisJobResponse(SdkResponse):
     }
 
     def __init__(self, basic_info=None, smiles=None, params=None):
-        """ShowSynthesisJobResponse
+        r"""ShowSynthesisJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowSynthesisJobResponse(SdkResponse):
 
     @property
     def basic_info(self):
-        """Gets the basic_info of this ShowSynthesisJobResponse.
+        r"""Gets the basic_info of this ShowSynthesisJobResponse.
 
         :return: The basic_info of this ShowSynthesisJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DrugJobDto`
@@ -67,7 +67,7 @@ class ShowSynthesisJobResponse(SdkResponse):
 
     @basic_info.setter
     def basic_info(self, basic_info):
-        """Sets the basic_info of this ShowSynthesisJobResponse.
+        r"""Sets the basic_info of this ShowSynthesisJobResponse.
 
         :param basic_info: The basic_info of this ShowSynthesisJobResponse.
         :type basic_info: :class:`huaweicloudsdkeihealth.v1.DrugJobDto`
@@ -76,7 +76,7 @@ class ShowSynthesisJobResponse(SdkResponse):
 
     @property
     def smiles(self):
-        """Gets the smiles of this ShowSynthesisJobResponse.
+        r"""Gets the smiles of this ShowSynthesisJobResponse.
 
         分子SMILES表达式
 
@@ -87,7 +87,7 @@ class ShowSynthesisJobResponse(SdkResponse):
 
     @smiles.setter
     def smiles(self, smiles):
-        """Sets the smiles of this ShowSynthesisJobResponse.
+        r"""Sets the smiles of this ShowSynthesisJobResponse.
 
         分子SMILES表达式
 
@@ -98,7 +98,7 @@ class ShowSynthesisJobResponse(SdkResponse):
 
     @property
     def params(self):
-        """Gets the params of this ShowSynthesisJobResponse.
+        r"""Gets the params of this ShowSynthesisJobResponse.
 
         :return: The params of this ShowSynthesisJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.SynthesisParamDto`
@@ -107,7 +107,7 @@ class ShowSynthesisJobResponse(SdkResponse):
 
     @params.setter
     def params(self, params):
-        """Sets the params of this ShowSynthesisJobResponse.
+        r"""Sets the params of this ShowSynthesisJobResponse.
 
         :param params: The params of this ShowSynthesisJobResponse.
         :type params: :class:`huaweicloudsdkeihealth.v1.SynthesisParamDto`

@@ -31,7 +31,7 @@ class AccessConfigQueryLogInfo:
     }
 
     def __init__(self, log_group_id=None, log_stream_id=None, log_group_name=None, log_stream_name=None):
-        """AccessConfigQueryLogInfo
+        r"""AccessConfigQueryLogInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class AccessConfigQueryLogInfo:
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this AccessConfigQueryLogInfo.
+        r"""Gets the log_group_id of this AccessConfigQueryLogInfo.
 
         日志组ID
 
@@ -75,7 +75,7 @@ class AccessConfigQueryLogInfo:
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this AccessConfigQueryLogInfo.
+        r"""Sets the log_group_id of this AccessConfigQueryLogInfo.
 
         日志组ID
 
@@ -86,7 +86,7 @@ class AccessConfigQueryLogInfo:
 
     @property
     def log_stream_id(self):
-        """Gets the log_stream_id of this AccessConfigQueryLogInfo.
+        r"""Gets the log_stream_id of this AccessConfigQueryLogInfo.
 
         日志流ID
 
@@ -97,7 +97,7 @@ class AccessConfigQueryLogInfo:
 
     @log_stream_id.setter
     def log_stream_id(self, log_stream_id):
-        """Sets the log_stream_id of this AccessConfigQueryLogInfo.
+        r"""Sets the log_stream_id of this AccessConfigQueryLogInfo.
 
         日志流ID
 
@@ -108,7 +108,7 @@ class AccessConfigQueryLogInfo:
 
     @property
     def log_group_name(self):
-        """Gets the log_group_name of this AccessConfigQueryLogInfo.
+        r"""Gets the log_group_name of this AccessConfigQueryLogInfo.
 
         日志组名称
 
@@ -119,7 +119,7 @@ class AccessConfigQueryLogInfo:
 
     @log_group_name.setter
     def log_group_name(self, log_group_name):
-        """Sets the log_group_name of this AccessConfigQueryLogInfo.
+        r"""Sets the log_group_name of this AccessConfigQueryLogInfo.
 
         日志组名称
 
@@ -130,7 +130,7 @@ class AccessConfigQueryLogInfo:
 
     @property
     def log_stream_name(self):
-        """Gets the log_stream_name of this AccessConfigQueryLogInfo.
+        r"""Gets the log_stream_name of this AccessConfigQueryLogInfo.
 
         日志流名称
 
@@ -141,7 +141,7 @@ class AccessConfigQueryLogInfo:
 
     @log_stream_name.setter
     def log_stream_name(self, log_stream_name):
-        """Sets the log_stream_name of this AccessConfigQueryLogInfo.
+        r"""Sets the log_stream_name of this AccessConfigQueryLogInfo.
 
         日志流名称
 

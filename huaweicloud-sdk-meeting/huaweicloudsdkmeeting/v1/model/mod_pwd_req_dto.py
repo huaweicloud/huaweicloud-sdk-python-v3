@@ -29,7 +29,7 @@ class ModPwdReqDTO:
     }
 
     def __init__(self, account=None, old_pwd=None, new_pwd=None):
-        """ModPwdReqDTO
+        r"""ModPwdReqDTO
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ModPwdReqDTO:
 
     @property
     def account(self):
-        """Gets the account of this ModPwdReqDTO.
+        r"""Gets the account of this ModPwdReqDTO.
 
         帐号，必须是携带域名的帐号。 
 
@@ -65,7 +65,7 @@ class ModPwdReqDTO:
 
     @account.setter
     def account(self, account):
-        """Sets the account of this ModPwdReqDTO.
+        r"""Sets the account of this ModPwdReqDTO.
 
         帐号，必须是携带域名的帐号。 
 
@@ -76,7 +76,7 @@ class ModPwdReqDTO:
 
     @property
     def old_pwd(self):
-        """Gets the old_pwd of this ModPwdReqDTO.
+        r"""Gets the old_pwd of this ModPwdReqDTO.
 
         用户旧的登录密码。 
 
@@ -87,7 +87,7 @@ class ModPwdReqDTO:
 
     @old_pwd.setter
     def old_pwd(self, old_pwd):
-        """Sets the old_pwd of this ModPwdReqDTO.
+        r"""Sets the old_pwd of this ModPwdReqDTO.
 
         用户旧的登录密码。 
 
@@ -98,7 +98,7 @@ class ModPwdReqDTO:
 
     @property
     def new_pwd(self):
-        """Gets the new_pwd of this ModPwdReqDTO.
+        r"""Gets the new_pwd of this ModPwdReqDTO.
 
         用户新的登录密码。 密码要求： * 长度范围要求8~32 * 至少包含两种字符类型：小写字母、大写字母、数字、特殊字符（` ~ ! @ # $ % ^ & * ( ) - _ = + \\ | [ { } ] ; : \" ,' < . > / ?） * 旧密码和新密码不能相同 * 上次修改密码后5分钟内不能更新密码 * 不能与最近使用的旧密码相同 * 不能包含3个以上重复字符 * 密码不能包含与其对应的用户名（不区分大小写）以及逆序的用户名（不区分大小写） * 新密码与旧密码之间允许的最少不相同字符数为2个 
 
@@ -109,7 +109,7 @@ class ModPwdReqDTO:
 
     @new_pwd.setter
     def new_pwd(self, new_pwd):
-        """Sets the new_pwd of this ModPwdReqDTO.
+        r"""Sets the new_pwd of this ModPwdReqDTO.
 
         用户新的登录密码。 密码要求： * 长度范围要求8~32 * 至少包含两种字符类型：小写字母、大写字母、数字、特殊字符（` ~ ! @ # $ % ^ & * ( ) - _ = + \\ | [ { } ] ; : \" ,' < . > / ?） * 旧密码和新密码不能相同 * 上次修改密码后5分钟内不能更新密码 * 不能与最近使用的旧密码相同 * 不能包含3个以上重复字符 * 密码不能包含与其对应的用户名（不区分大小写）以及逆序的用户名（不区分大小写） * 新密码与旧密码之间允许的最少不相同字符数为2个 
 

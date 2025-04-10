@@ -27,7 +27,7 @@ class NovaLink:
     }
 
     def __init__(self, href=None, rel=None):
-        """NovaLink
+        r"""NovaLink
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class NovaLink:
 
     @property
     def href(self):
-        """Gets the href of this NovaLink.
+        r"""Gets the href of this NovaLink.
 
         相应资源的链接。
 
@@ -59,7 +59,7 @@ class NovaLink:
 
     @href.setter
     def href(self, href):
-        """Sets the href of this NovaLink.
+        r"""Sets the href of this NovaLink.
 
         相应资源的链接。
 
@@ -70,7 +70,7 @@ class NovaLink:
 
     @property
     def rel(self):
-        """Gets the rel of this NovaLink.
+        r"""Gets the rel of this NovaLink.
 
         有三种取值。self：自助链接包含版本链接的资源。立即链接后使用这些链接。bookmark：书签链接提供了一个永久资源的永久链接，该链接适合于长期存储。alternate：备用链接可以包含资源的替换表示形式。例如，OpenStack计算映像可能在OpenStack映像服务中有一个替代表示。
 
@@ -81,7 +81,7 @@ class NovaLink:
 
     @rel.setter
     def rel(self, rel):
-        """Sets the rel of this NovaLink.
+        r"""Sets the rel of this NovaLink.
 
         有三种取值。self：自助链接包含版本链接的资源。立即链接后使用这些链接。bookmark：书签链接提供了一个永久资源的永久链接，该链接适合于长期存储。alternate：备用链接可以包含资源的替换表示形式。例如，OpenStack计算映像可能在OpenStack映像服务中有一个替代表示。
 

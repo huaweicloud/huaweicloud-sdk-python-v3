@@ -26,7 +26,7 @@ class UpdatePacifyWordsSwitchResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """UpdatePacifyWordsSwitchResponse
+        r"""UpdatePacifyWordsSwitchResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdatePacifyWordsSwitchResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdatePacifyWordsSwitchResponse.
+        r"""Gets the x_request_id of this UpdatePacifyWordsSwitchResponse.
 
         :return: The x_request_id of this UpdatePacifyWordsSwitchResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class UpdatePacifyWordsSwitchResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdatePacifyWordsSwitchResponse.
+        r"""Sets the x_request_id of this UpdatePacifyWordsSwitchResponse.
 
         :param x_request_id: The x_request_id of this UpdatePacifyWordsSwitchResponse.
         :type x_request_id: str

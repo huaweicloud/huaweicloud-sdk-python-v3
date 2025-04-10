@@ -25,7 +25,7 @@ class CreateSqlJobRequest:
     }
 
     def __init__(self, body=None):
-        """CreateSqlJobRequest
+        r"""CreateSqlJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateSqlJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSqlJobRequest.
+        r"""Gets the body of this CreateSqlJobRequest.
 
         :return: The body of this CreateSqlJobRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.CreateSqlJobRequestBody`
@@ -52,7 +52,7 @@ class CreateSqlJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSqlJobRequest.
+        r"""Sets the body of this CreateSqlJobRequest.
 
         :param body: The body of this CreateSqlJobRequest.
         :type body: :class:`huaweicloudsdkdli.v1.CreateSqlJobRequestBody`

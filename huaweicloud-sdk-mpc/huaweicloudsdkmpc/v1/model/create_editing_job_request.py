@@ -25,7 +25,7 @@ class CreateEditingJobRequest:
     }
 
     def __init__(self, body=None):
-        """CreateEditingJobRequest
+        r"""CreateEditingJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateEditingJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateEditingJobRequest.
+        r"""Gets the body of this CreateEditingJobRequest.
 
         :return: The body of this CreateEditingJobRequest.
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateEditingJobReq`
@@ -52,7 +52,7 @@ class CreateEditingJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateEditingJobRequest.
+        r"""Sets the body of this CreateEditingJobRequest.
 
         :param body: The body of this CreateEditingJobRequest.
         :type body: :class:`huaweicloudsdkmpc.v1.CreateEditingJobReq`

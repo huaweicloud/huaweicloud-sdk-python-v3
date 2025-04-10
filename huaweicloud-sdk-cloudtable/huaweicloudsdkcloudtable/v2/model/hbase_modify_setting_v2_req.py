@@ -27,7 +27,7 @@ class HbaseModifySettingV2Req:
     }
 
     def __init__(self, is_reboot=None, hbase_modify_settings=None):
-        """HbaseModifySettingV2Req
+        r"""HbaseModifySettingV2Req
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class HbaseModifySettingV2Req:
 
     @property
     def is_reboot(self):
-        """Gets the is_reboot of this HbaseModifySettingV2Req.
+        r"""Gets the is_reboot of this HbaseModifySettingV2Req.
 
         是否重启
 
@@ -59,7 +59,7 @@ class HbaseModifySettingV2Req:
 
     @is_reboot.setter
     def is_reboot(self, is_reboot):
-        """Sets the is_reboot of this HbaseModifySettingV2Req.
+        r"""Sets the is_reboot of this HbaseModifySettingV2Req.
 
         是否重启
 
@@ -70,7 +70,7 @@ class HbaseModifySettingV2Req:
 
     @property
     def hbase_modify_settings(self):
-        """Gets the hbase_modify_settings of this HbaseModifySettingV2Req.
+        r"""Gets the hbase_modify_settings of this HbaseModifySettingV2Req.
 
         参见HBaseModifySettingV2结构说明
 
@@ -81,7 +81,7 @@ class HbaseModifySettingV2Req:
 
     @hbase_modify_settings.setter
     def hbase_modify_settings(self, hbase_modify_settings):
-        """Sets the hbase_modify_settings of this HbaseModifySettingV2Req.
+        r"""Sets the hbase_modify_settings of this HbaseModifySettingV2Req.
 
         参见HBaseModifySettingV2结构说明
 

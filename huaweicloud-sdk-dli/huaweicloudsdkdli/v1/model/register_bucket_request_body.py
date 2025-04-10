@@ -25,7 +25,7 @@ class RegisterBucketRequestBody:
     }
 
     def __init__(self, obs_buckets=None):
-        """RegisterBucketRequestBody
+        r"""RegisterBucketRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RegisterBucketRequestBody:
 
     @property
     def obs_buckets(self):
-        """Gets the obs_buckets of this RegisterBucketRequestBody.
+        r"""Gets the obs_buckets of this RegisterBucketRequestBody.
 
         :return: The obs_buckets of this RegisterBucketRequestBody.
         :rtype: list[str]
@@ -51,7 +51,7 @@ class RegisterBucketRequestBody:
 
     @obs_buckets.setter
     def obs_buckets(self, obs_buckets):
-        """Sets the obs_buckets of this RegisterBucketRequestBody.
+        r"""Sets the obs_buckets of this RegisterBucketRequestBody.
 
         :param obs_buckets: The obs_buckets of this RegisterBucketRequestBody.
         :type obs_buckets: list[str]

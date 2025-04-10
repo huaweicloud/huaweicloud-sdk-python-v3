@@ -27,7 +27,7 @@ class PersistObjectIdsModifierDTO:
     }
 
     def __init__(self, ids=None, modifier=None):
-        """PersistObjectIdsModifierDTO
+        r"""PersistObjectIdsModifierDTO
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class PersistObjectIdsModifierDTO:
 
     @property
     def ids(self):
-        """Gets the ids of this PersistObjectIdsModifierDTO.
+        r"""Gets the ids of this PersistObjectIdsModifierDTO.
 
         **参数解释：**  数据实例ID列表。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -60,7 +60,7 @@ class PersistObjectIdsModifierDTO:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this PersistObjectIdsModifierDTO.
+        r"""Sets the ids of this PersistObjectIdsModifierDTO.
 
         **参数解释：**  数据实例ID列表。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -71,7 +71,7 @@ class PersistObjectIdsModifierDTO:
 
     @property
     def modifier(self):
-        """Gets the modifier of this PersistObjectIdsModifierDTO.
+        r"""Gets the modifier of this PersistObjectIdsModifierDTO.
 
         **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -82,7 +82,7 @@ class PersistObjectIdsModifierDTO:
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this PersistObjectIdsModifierDTO.
+        r"""Sets the modifier of this PersistObjectIdsModifierDTO.
 
         **参数解释：**  修改人。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 

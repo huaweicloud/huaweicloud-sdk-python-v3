@@ -26,7 +26,7 @@ class UpdateGaussMySqlInstanceSecurityGroupResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """UpdateGaussMySqlInstanceSecurityGroupResponse
+        r"""UpdateGaussMySqlInstanceSecurityGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateGaussMySqlInstanceSecurityGroupResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateGaussMySqlInstanceSecurityGroupResponse.
+        r"""Gets the job_id of this UpdateGaussMySqlInstanceSecurityGroupResponse.
 
         任务ID。
 
@@ -55,7 +55,7 @@ class UpdateGaussMySqlInstanceSecurityGroupResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateGaussMySqlInstanceSecurityGroupResponse.
+        r"""Sets the job_id of this UpdateGaussMySqlInstanceSecurityGroupResponse.
 
         任务ID。
 

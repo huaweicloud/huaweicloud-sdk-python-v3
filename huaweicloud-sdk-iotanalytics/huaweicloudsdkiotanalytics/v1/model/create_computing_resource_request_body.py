@@ -33,7 +33,7 @@ class CreateComputingResourceRequestBody:
     }
 
     def __init__(self, computing_resource_name=None, computing_resource_type=None, description=None, cu_count=None, charging_mode=None):
-        """CreateComputingResourceRequestBody
+        r"""CreateComputingResourceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class CreateComputingResourceRequestBody:
 
     @property
     def computing_resource_name(self):
-        """Gets the computing_resource_name of this CreateComputingResourceRequestBody.
+        r"""Gets the computing_resource_name of this CreateComputingResourceRequestBody.
 
         新建的计算资源名称，名称只能包含数字、英文字母和下划线，但不能是纯数字，且不能以下划线开头。
 
@@ -80,7 +80,7 @@ class CreateComputingResourceRequestBody:
 
     @computing_resource_name.setter
     def computing_resource_name(self, computing_resource_name):
-        """Sets the computing_resource_name of this CreateComputingResourceRequestBody.
+        r"""Sets the computing_resource_name of this CreateComputingResourceRequestBody.
 
         新建的计算资源名称，名称只能包含数字、英文字母和下划线，但不能是纯数字，且不能以下划线开头。
 
@@ -91,7 +91,7 @@ class CreateComputingResourceRequestBody:
 
     @property
     def computing_resource_type(self):
-        """Gets the computing_resource_type of this CreateComputingResourceRequestBody.
+        r"""Gets the computing_resource_type of this CreateComputingResourceRequestBody.
 
         计算资源的类型。默认为sql。
 
@@ -102,7 +102,7 @@ class CreateComputingResourceRequestBody:
 
     @computing_resource_type.setter
     def computing_resource_type(self, computing_resource_type):
-        """Sets the computing_resource_type of this CreateComputingResourceRequestBody.
+        r"""Sets the computing_resource_type of this CreateComputingResourceRequestBody.
 
         计算资源的类型。默认为sql。
 
@@ -113,7 +113,7 @@ class CreateComputingResourceRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateComputingResourceRequestBody.
+        r"""Gets the description of this CreateComputingResourceRequestBody.
 
         计算资源的描述信息。
 
@@ -124,7 +124,7 @@ class CreateComputingResourceRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateComputingResourceRequestBody.
+        r"""Sets the description of this CreateComputingResourceRequestBody.
 
         计算资源的描述信息。
 
@@ -135,7 +135,7 @@ class CreateComputingResourceRequestBody:
 
     @property
     def cu_count(self):
-        """Gets the cu_count of this CreateComputingResourceRequestBody.
+        r"""Gets the cu_count of this CreateComputingResourceRequestBody.
 
         与计算资源绑定的最小计算单元个数。设置值当前只支持16，64，256。
 
@@ -146,7 +146,7 @@ class CreateComputingResourceRequestBody:
 
     @cu_count.setter
     def cu_count(self, cu_count):
-        """Sets the cu_count of this CreateComputingResourceRequestBody.
+        r"""Sets the cu_count of this CreateComputingResourceRequestBody.
 
         与计算资源绑定的最小计算单元个数。设置值当前只支持16，64，256。
 
@@ -157,7 +157,7 @@ class CreateComputingResourceRequestBody:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this CreateComputingResourceRequestBody.
+        r"""Gets the charging_mode of this CreateComputingResourceRequestBody.
 
         计算资源的收费模式。只能设置为“1”，表示按照CU时收费。
 
@@ -168,7 +168,7 @@ class CreateComputingResourceRequestBody:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this CreateComputingResourceRequestBody.
+        r"""Sets the charging_mode of this CreateComputingResourceRequestBody.
 
         计算资源的收费模式。只能设置为“1”，表示按照CU时收费。
 

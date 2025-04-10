@@ -30,7 +30,7 @@ class ShowFlavorsResponse(SdkResponse):
     }
 
     def __init__(self, id=None, dbname=None, versions=None):
-        """ShowFlavorsResponse
+        r"""ShowFlavorsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowFlavorsResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowFlavorsResponse.
+        r"""Gets the id of this ShowFlavorsResponse.
 
         服务ID，用于区分不同服务。
 
@@ -69,7 +69,7 @@ class ShowFlavorsResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowFlavorsResponse.
+        r"""Sets the id of this ShowFlavorsResponse.
 
         服务ID，用于区分不同服务。
 
@@ -80,7 +80,7 @@ class ShowFlavorsResponse(SdkResponse):
 
     @property
     def dbname(self):
-        """Gets the dbname of this ShowFlavorsResponse.
+        r"""Gets the dbname of this ShowFlavorsResponse.
 
         db名称，一般为cdm。
 
@@ -91,7 +91,7 @@ class ShowFlavorsResponse(SdkResponse):
 
     @dbname.setter
     def dbname(self, dbname):
-        """Sets the dbname of this ShowFlavorsResponse.
+        r"""Sets the dbname of this ShowFlavorsResponse.
 
         db名称，一般为cdm。
 
@@ -102,7 +102,7 @@ class ShowFlavorsResponse(SdkResponse):
 
     @property
     def versions(self):
-        """Gets the versions of this ShowFlavorsResponse.
+        r"""Gets the versions of this ShowFlavorsResponse.
 
         版本信息列表。
 
@@ -113,7 +113,7 @@ class ShowFlavorsResponse(SdkResponse):
 
     @versions.setter
     def versions(self, versions):
-        """Sets the versions of this ShowFlavorsResponse.
+        r"""Sets the versions of this ShowFlavorsResponse.
 
         版本信息列表。
 

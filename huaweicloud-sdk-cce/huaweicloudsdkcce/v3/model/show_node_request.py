@@ -27,7 +27,7 @@ class ShowNodeRequest:
     }
 
     def __init__(self, cluster_id=None, node_id=None):
-        """ShowNodeRequest
+        r"""ShowNodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowNodeRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowNodeRequest.
+        r"""Gets the cluster_id of this ShowNodeRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -59,7 +59,7 @@ class ShowNodeRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowNodeRequest.
+        r"""Sets the cluster_id of this ShowNodeRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -70,7 +70,7 @@ class ShowNodeRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ShowNodeRequest.
+        r"""Gets the node_id of this ShowNodeRequest.
 
         节点ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -81,7 +81,7 @@ class ShowNodeRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ShowNodeRequest.
+        r"""Sets the node_id of this ShowNodeRequest.
 
         节点ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 

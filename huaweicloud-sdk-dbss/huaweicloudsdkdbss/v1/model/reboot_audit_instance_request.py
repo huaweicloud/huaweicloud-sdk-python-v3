@@ -25,7 +25,7 @@ class RebootAuditInstanceRequest:
     }
 
     def __init__(self, body=None):
-        """RebootAuditInstanceRequest
+        r"""RebootAuditInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RebootAuditInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this RebootAuditInstanceRequest.
+        r"""Gets the body of this RebootAuditInstanceRequest.
 
         :return: The body of this RebootAuditInstanceRequest.
         :rtype: :class:`huaweicloudsdkdbss.v1.ServerIdBean`
@@ -52,7 +52,7 @@ class RebootAuditInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RebootAuditInstanceRequest.
+        r"""Sets the body of this RebootAuditInstanceRequest.
 
         :param body: The body of this RebootAuditInstanceRequest.
         :type body: :class:`huaweicloudsdkdbss.v1.ServerIdBean`

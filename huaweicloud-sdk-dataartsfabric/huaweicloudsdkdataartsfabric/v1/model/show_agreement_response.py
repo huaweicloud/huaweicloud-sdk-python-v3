@@ -26,7 +26,7 @@ class ShowAgreementResponse(SdkResponse):
     }
 
     def __init__(self, agreements=None):
-        """ShowAgreementResponse
+        r"""ShowAgreementResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowAgreementResponse(SdkResponse):
 
     @property
     def agreements(self):
-        """Gets the agreements of this ShowAgreementResponse.
+        r"""Gets the agreements of this ShowAgreementResponse.
 
         租户协议列表
 
@@ -55,7 +55,7 @@ class ShowAgreementResponse(SdkResponse):
 
     @agreements.setter
     def agreements(self, agreements):
-        """Sets the agreements of this ShowAgreementResponse.
+        r"""Sets the agreements of this ShowAgreementResponse.
 
         租户协议列表
 

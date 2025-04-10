@@ -35,7 +35,7 @@ class ListAutoJobRequest:
     }
 
     def __init__(self, x_language=None, eihealth_project_id=None, limit=None, offset=None, sort_key=None, sort_dir=None):
-        """ListAutoJobRequest
+        r"""ListAutoJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListAutoJobRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListAutoJobRequest.
+        r"""Gets the x_language of this ListAutoJobRequest.
 
         Locale语言类型，zh_cn返回中文，en_us返回英文
 
@@ -88,7 +88,7 @@ class ListAutoJobRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListAutoJobRequest.
+        r"""Sets the x_language of this ListAutoJobRequest.
 
         Locale语言类型，zh_cn返回中文，en_us返回英文
 
@@ -99,7 +99,7 @@ class ListAutoJobRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this ListAutoJobRequest.
+        r"""Gets the eihealth_project_id of this ListAutoJobRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -110,7 +110,7 @@ class ListAutoJobRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this ListAutoJobRequest.
+        r"""Sets the eihealth_project_id of this ListAutoJobRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -121,7 +121,7 @@ class ListAutoJobRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAutoJobRequest.
+        r"""Gets the limit of this ListAutoJobRequest.
 
         限制量，单次查询总量，必须由数字组成，默认为100，取值范围[1,1000]
 
@@ -132,7 +132,7 @@ class ListAutoJobRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAutoJobRequest.
+        r"""Sets the limit of this ListAutoJobRequest.
 
         限制量，单次查询总量，必须由数字组成，默认为100，取值范围[1,1000]
 
@@ -143,7 +143,7 @@ class ListAutoJobRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAutoJobRequest.
+        r"""Gets the offset of this ListAutoJobRequest.
 
         偏移量，查询起始偏移，必须由数字组成，默认为0，取值范围[0,100000000]
 
@@ -154,7 +154,7 @@ class ListAutoJobRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAutoJobRequest.
+        r"""Sets the offset of this ListAutoJobRequest.
 
         偏移量，查询起始偏移，必须由数字组成，默认为0，取值范围[0,100000000]
 
@@ -165,7 +165,7 @@ class ListAutoJobRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListAutoJobRequest.
+        r"""Gets the sort_key of this ListAutoJobRequest.
 
         排序字段
 
@@ -176,7 +176,7 @@ class ListAutoJobRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListAutoJobRequest.
+        r"""Sets the sort_key of this ListAutoJobRequest.
 
         排序字段
 
@@ -187,7 +187,7 @@ class ListAutoJobRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListAutoJobRequest.
+        r"""Gets the sort_dir of this ListAutoJobRequest.
 
         排序方向，升序或降序，即ASC 和DESC
 
@@ -198,7 +198,7 @@ class ListAutoJobRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListAutoJobRequest.
+        r"""Sets the sort_dir of this ListAutoJobRequest.
 
         排序方向，升序或降序，即ASC 和DESC
 

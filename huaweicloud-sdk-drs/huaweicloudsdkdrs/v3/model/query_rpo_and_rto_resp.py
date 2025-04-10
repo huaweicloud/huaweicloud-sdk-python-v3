@@ -33,7 +33,7 @@ class QueryRpoAndRtoResp:
     }
 
     def __init__(self, job_id=None, rpo_info=None, rto_info=None, error_code=None, error_msg=None):
-        """QueryRpoAndRtoResp
+        r"""QueryRpoAndRtoResp
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class QueryRpoAndRtoResp:
 
     @property
     def job_id(self):
-        """Gets the job_id of this QueryRpoAndRtoResp.
+        r"""Gets the job_id of this QueryRpoAndRtoResp.
 
         任务ID
 
@@ -82,7 +82,7 @@ class QueryRpoAndRtoResp:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this QueryRpoAndRtoResp.
+        r"""Sets the job_id of this QueryRpoAndRtoResp.
 
         任务ID
 
@@ -93,7 +93,7 @@ class QueryRpoAndRtoResp:
 
     @property
     def rpo_info(self):
-        """Gets the rpo_info of this QueryRpoAndRtoResp.
+        r"""Gets the rpo_info of this QueryRpoAndRtoResp.
 
         :return: The rpo_info of this QueryRpoAndRtoResp.
         :rtype: :class:`huaweicloudsdkdrs.v3.RpoAndRtoInfo`
@@ -102,7 +102,7 @@ class QueryRpoAndRtoResp:
 
     @rpo_info.setter
     def rpo_info(self, rpo_info):
-        """Sets the rpo_info of this QueryRpoAndRtoResp.
+        r"""Sets the rpo_info of this QueryRpoAndRtoResp.
 
         :param rpo_info: The rpo_info of this QueryRpoAndRtoResp.
         :type rpo_info: :class:`huaweicloudsdkdrs.v3.RpoAndRtoInfo`
@@ -111,7 +111,7 @@ class QueryRpoAndRtoResp:
 
     @property
     def rto_info(self):
-        """Gets the rto_info of this QueryRpoAndRtoResp.
+        r"""Gets the rto_info of this QueryRpoAndRtoResp.
 
         :return: The rto_info of this QueryRpoAndRtoResp.
         :rtype: :class:`huaweicloudsdkdrs.v3.RpoAndRtoInfo`
@@ -120,7 +120,7 @@ class QueryRpoAndRtoResp:
 
     @rto_info.setter
     def rto_info(self, rto_info):
-        """Sets the rto_info of this QueryRpoAndRtoResp.
+        r"""Sets the rto_info of this QueryRpoAndRtoResp.
 
         :param rto_info: The rto_info of this QueryRpoAndRtoResp.
         :type rto_info: :class:`huaweicloudsdkdrs.v3.RpoAndRtoInfo`
@@ -129,7 +129,7 @@ class QueryRpoAndRtoResp:
 
     @property
     def error_code(self):
-        """Gets the error_code of this QueryRpoAndRtoResp.
+        r"""Gets the error_code of this QueryRpoAndRtoResp.
 
         错误码
 
@@ -140,7 +140,7 @@ class QueryRpoAndRtoResp:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this QueryRpoAndRtoResp.
+        r"""Sets the error_code of this QueryRpoAndRtoResp.
 
         错误码
 
@@ -151,7 +151,7 @@ class QueryRpoAndRtoResp:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this QueryRpoAndRtoResp.
+        r"""Gets the error_msg of this QueryRpoAndRtoResp.
 
         错误信息
 
@@ -162,7 +162,7 @@ class QueryRpoAndRtoResp:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this QueryRpoAndRtoResp.
+        r"""Sets the error_msg of this QueryRpoAndRtoResp.
 
         错误信息
 

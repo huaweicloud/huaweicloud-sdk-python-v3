@@ -28,7 +28,7 @@ class ListServicesInstancesResponse(SdkResponse):
     }
 
     def __init__(self, total=None, service_instances=None):
-        """ListServicesInstancesResponse
+        r"""ListServicesInstancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListServicesInstancesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListServicesInstancesResponse.
+        r"""Gets the total of this ListServicesInstancesResponse.
 
         符合条件的service Istance总数
 
@@ -62,7 +62,7 @@ class ListServicesInstancesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListServicesInstancesResponse.
+        r"""Sets the total of this ListServicesInstancesResponse.
 
         符合条件的service Istance总数
 
@@ -73,7 +73,7 @@ class ListServicesInstancesResponse(SdkResponse):
 
     @property
     def service_instances(self):
-        """Gets the service_instances of this ListServicesInstancesResponse.
+        r"""Gets the service_instances of this ListServicesInstancesResponse.
 
         符合条件的service Instance列表
 
@@ -84,7 +84,7 @@ class ListServicesInstancesResponse(SdkResponse):
 
     @service_instances.setter
     def service_instances(self, service_instances):
-        """Sets the service_instances of this ListServicesInstancesResponse.
+        r"""Sets the service_instances of this ListServicesInstancesResponse.
 
         符合条件的service Instance列表
 

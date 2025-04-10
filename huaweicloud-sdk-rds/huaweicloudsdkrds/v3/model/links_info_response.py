@@ -27,7 +27,7 @@ class LinksInfoResponse:
     }
 
     def __init__(self, href=None, rel=None):
-        """LinksInfoResponse
+        r"""LinksInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class LinksInfoResponse:
 
     @property
     def href(self):
-        """Gets the href of this LinksInfoResponse.
+        r"""Gets the href of this LinksInfoResponse.
 
         对应该API的URL
 
@@ -61,7 +61,7 @@ class LinksInfoResponse:
 
     @href.setter
     def href(self, href):
-        """Sets the href of this LinksInfoResponse.
+        r"""Sets the href of this LinksInfoResponse.
 
         对应该API的URL
 
@@ -72,7 +72,7 @@ class LinksInfoResponse:
 
     @property
     def rel(self):
-        """Gets the rel of this LinksInfoResponse.
+        r"""Gets the rel of this LinksInfoResponse.
 
         取值为“self”，表示href为本地链接。
 
@@ -83,7 +83,7 @@ class LinksInfoResponse:
 
     @rel.setter
     def rel(self, rel):
-        """Sets the rel of this LinksInfoResponse.
+        r"""Sets the rel of this LinksInfoResponse.
 
         取值为“self”，表示href为本地链接。
 

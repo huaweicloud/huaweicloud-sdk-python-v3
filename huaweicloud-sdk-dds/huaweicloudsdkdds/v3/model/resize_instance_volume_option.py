@@ -29,7 +29,7 @@ class ResizeInstanceVolumeOption:
     }
 
     def __init__(self, size=None, group_id=None, node_ids=None):
-        """ResizeInstanceVolumeOption
+        r"""ResizeInstanceVolumeOption
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ResizeInstanceVolumeOption:
 
     @property
     def size(self):
-        """Gets the size of this ResizeInstanceVolumeOption.
+        r"""Gets the size of this ResizeInstanceVolumeOption.
 
         待扩容到的磁盘容量。取值为10的整数倍，并且大于当前磁盘容量。 - 对于集群实例，表示扩容到的单个shard组的磁盘容量。取值范围：10GB~2000GB。 - 对于副本集实例，表示扩容到的实例的磁盘容量，取值范围：10GB~2000GB。 - 对于单节点实例，表示扩容到的实例的磁盘容量，取值范围：10GB~1000GB。
 
@@ -67,7 +67,7 @@ class ResizeInstanceVolumeOption:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ResizeInstanceVolumeOption.
+        r"""Sets the size of this ResizeInstanceVolumeOption.
 
         待扩容到的磁盘容量。取值为10的整数倍，并且大于当前磁盘容量。 - 对于集群实例，表示扩容到的单个shard组的磁盘容量。取值范围：10GB~2000GB。 - 对于副本集实例，表示扩容到的实例的磁盘容量，取值范围：10GB~2000GB。 - 对于单节点实例，表示扩容到的实例的磁盘容量，取值范围：10GB~1000GB。
 
@@ -78,7 +78,7 @@ class ResizeInstanceVolumeOption:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ResizeInstanceVolumeOption.
+        r"""Gets the group_id of this ResizeInstanceVolumeOption.
 
         角色组ID。 - 对于集群实例，该参数为shard组ID。 - 对于副本集和单节点实例，不传该参数。
 
@@ -89,7 +89,7 @@ class ResizeInstanceVolumeOption:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ResizeInstanceVolumeOption.
+        r"""Sets the group_id of this ResizeInstanceVolumeOption.
 
         角色组ID。 - 对于集群实例，该参数为shard组ID。 - 对于副本集和单节点实例，不传该参数。
 
@@ -100,7 +100,7 @@ class ResizeInstanceVolumeOption:
 
     @property
     def node_ids(self):
-        """Gets the node_ids of this ResizeInstanceVolumeOption.
+        r"""Gets the node_ids of this ResizeInstanceVolumeOption.
 
         副本集只读节点磁盘扩容时，需要传入该参数，当前list只支持传入一个元素。
 
@@ -111,7 +111,7 @@ class ResizeInstanceVolumeOption:
 
     @node_ids.setter
     def node_ids(self, node_ids):
-        """Sets the node_ids of this ResizeInstanceVolumeOption.
+        r"""Sets the node_ids of this ResizeInstanceVolumeOption.
 
         副本集只读节点磁盘扩容时，需要传入该参数，当前list只支持传入一个元素。
 

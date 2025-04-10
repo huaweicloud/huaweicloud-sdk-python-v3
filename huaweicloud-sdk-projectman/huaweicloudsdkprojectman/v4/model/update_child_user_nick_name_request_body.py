@@ -27,7 +27,7 @@ class UpdateChildUserNickNameRequestBody:
     }
 
     def __init__(self, nick_name=None, user_id=None):
-        """UpdateChildUserNickNameRequestBody
+        r"""UpdateChildUserNickNameRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UpdateChildUserNickNameRequestBody:
 
     @property
     def nick_name(self):
-        """Gets the nick_name of this UpdateChildUserNickNameRequestBody.
+        r"""Gets the nick_name of this UpdateChildUserNickNameRequestBody.
 
         用户昵称
 
@@ -59,7 +59,7 @@ class UpdateChildUserNickNameRequestBody:
 
     @nick_name.setter
     def nick_name(self, nick_name):
-        """Sets the nick_name of this UpdateChildUserNickNameRequestBody.
+        r"""Sets the nick_name of this UpdateChildUserNickNameRequestBody.
 
         用户昵称
 
@@ -70,7 +70,7 @@ class UpdateChildUserNickNameRequestBody:
 
     @property
     def user_id(self):
-        """Gets the user_id of this UpdateChildUserNickNameRequestBody.
+        r"""Gets the user_id of this UpdateChildUserNickNameRequestBody.
 
         用户id
 
@@ -81,7 +81,7 @@ class UpdateChildUserNickNameRequestBody:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this UpdateChildUserNickNameRequestBody.
+        r"""Sets the user_id of this UpdateChildUserNickNameRequestBody.
 
         用户id
 

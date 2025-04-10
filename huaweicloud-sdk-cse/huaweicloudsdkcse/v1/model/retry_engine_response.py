@@ -30,7 +30,7 @@ class RetryEngineResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, job_id=None):
-        """RetryEngineResponse
+        r"""RetryEngineResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class RetryEngineResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this RetryEngineResponse.
+        r"""Gets the id of this RetryEngineResponse.
 
         创建的微服务引擎ID
 
@@ -69,7 +69,7 @@ class RetryEngineResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RetryEngineResponse.
+        r"""Sets the id of this RetryEngineResponse.
 
         创建的微服务引擎ID
 
@@ -80,7 +80,7 @@ class RetryEngineResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this RetryEngineResponse.
+        r"""Gets the name of this RetryEngineResponse.
 
         创建的微服务引擎名称
 
@@ -91,7 +91,7 @@ class RetryEngineResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RetryEngineResponse.
+        r"""Sets the name of this RetryEngineResponse.
 
         创建的微服务引擎名称
 
@@ -102,7 +102,7 @@ class RetryEngineResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this RetryEngineResponse.
+        r"""Gets the job_id of this RetryEngineResponse.
 
         微服务引擎执行的任务ID
 
@@ -113,7 +113,7 @@ class RetryEngineResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this RetryEngineResponse.
+        r"""Sets the job_id of this RetryEngineResponse.
 
         微服务引擎执行的任务ID
 

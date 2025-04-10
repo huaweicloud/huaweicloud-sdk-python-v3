@@ -37,7 +37,7 @@ class Resources:
     }
 
     def __init__(self, enterprise_project_id=None, project_id=None, project_name=None, resource_detail=None, resource_id=None, resource_name=None, resource_type=None):
-        """Resources
+        r"""Resources
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class Resources:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this Resources.
+        r"""Gets the enterprise_project_id of this Resources.
 
         企业项目ID
 
@@ -89,7 +89,7 @@ class Resources:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this Resources.
+        r"""Sets the enterprise_project_id of this Resources.
 
         企业项目ID
 
@@ -100,7 +100,7 @@ class Resources:
 
     @property
     def project_id(self):
-        """Gets the project_id of this Resources.
+        r"""Gets the project_id of this Resources.
 
         ProjectID
 
@@ -111,7 +111,7 @@ class Resources:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this Resources.
+        r"""Sets the project_id of this Resources.
 
         ProjectID
 
@@ -122,7 +122,7 @@ class Resources:
 
     @property
     def project_name(self):
-        """Gets the project_name of this Resources.
+        r"""Gets the project_name of this Resources.
 
         Project名称
 
@@ -133,7 +133,7 @@ class Resources:
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this Resources.
+        r"""Sets the project_name of this Resources.
 
         Project名称
 
@@ -144,7 +144,7 @@ class Resources:
 
     @property
     def resource_detail(self):
-        """Gets the resource_detail of this Resources.
+        r"""Gets the resource_detail of this Resources.
 
         资源详情
 
@@ -155,7 +155,7 @@ class Resources:
 
     @resource_detail.setter
     def resource_detail(self, resource_detail):
-        """Sets the resource_detail of this Resources.
+        r"""Sets the resource_detail of this Resources.
 
         资源详情
 
@@ -166,7 +166,7 @@ class Resources:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this Resources.
+        r"""Gets the resource_id of this Resources.
 
         资源ID
 
@@ -177,7 +177,7 @@ class Resources:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this Resources.
+        r"""Sets the resource_id of this Resources.
 
         资源ID
 
@@ -188,7 +188,7 @@ class Resources:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this Resources.
+        r"""Gets the resource_name of this Resources.
 
         资源名称
 
@@ -199,7 +199,7 @@ class Resources:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this Resources.
+        r"""Sets the resource_name of this Resources.
 
         资源名称
 
@@ -210,7 +210,7 @@ class Resources:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this Resources.
+        r"""Gets the resource_type of this Resources.
 
         资源类型
 
@@ -221,7 +221,7 @@ class Resources:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this Resources.
+        r"""Sets the resource_type of this Resources.
 
         资源类型
 

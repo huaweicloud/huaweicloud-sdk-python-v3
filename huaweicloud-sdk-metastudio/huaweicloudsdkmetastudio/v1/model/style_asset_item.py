@@ -29,7 +29,7 @@ class StyleAssetItem:
     }
 
     def __init__(self, asset_id=None, asset_type=None, cover_url=None):
-        """StyleAssetItem
+        r"""StyleAssetItem
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class StyleAssetItem:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this StyleAssetItem.
+        r"""Gets the asset_id of this StyleAssetItem.
 
         资产ID
 
@@ -68,7 +68,7 @@ class StyleAssetItem:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this StyleAssetItem.
+        r"""Sets the asset_id of this StyleAssetItem.
 
         资产ID
 
@@ -79,7 +79,7 @@ class StyleAssetItem:
 
     @property
     def asset_type(self):
-        """Gets the asset_type of this StyleAssetItem.
+        r"""Gets the asset_type of this StyleAssetItem.
 
         资产类型 * ANIMATION：动作 * MATERIAL：素材
 
@@ -90,7 +90,7 @@ class StyleAssetItem:
 
     @asset_type.setter
     def asset_type(self, asset_type):
-        """Sets the asset_type of this StyleAssetItem.
+        r"""Sets the asset_type of this StyleAssetItem.
 
         资产类型 * ANIMATION：动作 * MATERIAL：素材
 
@@ -101,7 +101,7 @@ class StyleAssetItem:
 
     @property
     def cover_url(self):
-        """Gets the cover_url of this StyleAssetItem.
+        r"""Gets the cover_url of this StyleAssetItem.
 
         封面图URL
 
@@ -112,7 +112,7 @@ class StyleAssetItem:
 
     @cover_url.setter
     def cover_url(self, cover_url):
-        """Sets the cover_url of this StyleAssetItem.
+        r"""Sets the cover_url of this StyleAssetItem.
 
         封面图URL
 

@@ -41,7 +41,7 @@ class IdcardResult:
     }
 
     def __init__(self, name=None, number=None, sex=None, birth=None, ethnicity=None, address=None, issue=None, valid_from=None, valid_to=None):
-        """IdcardResult
+        r"""IdcardResult
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class IdcardResult:
 
     @property
     def name(self):
-        """Gets the name of this IdcardResult.
+        r"""Gets the name of this IdcardResult.
 
         身份证上识别的名称。
 
@@ -104,7 +104,7 @@ class IdcardResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this IdcardResult.
+        r"""Sets the name of this IdcardResult.
 
         身份证上识别的名称。
 
@@ -115,7 +115,7 @@ class IdcardResult:
 
     @property
     def number(self):
-        """Gets the number of this IdcardResult.
+        r"""Gets the number of this IdcardResult.
 
         身份证号。
 
@@ -126,7 +126,7 @@ class IdcardResult:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this IdcardResult.
+        r"""Sets the number of this IdcardResult.
 
         身份证号。
 
@@ -137,7 +137,7 @@ class IdcardResult:
 
     @property
     def sex(self):
-        """Gets the sex of this IdcardResult.
+        r"""Gets the sex of this IdcardResult.
 
         性别。
 
@@ -148,7 +148,7 @@ class IdcardResult:
 
     @sex.setter
     def sex(self, sex):
-        """Sets the sex of this IdcardResult.
+        r"""Sets the sex of this IdcardResult.
 
         性别。
 
@@ -159,7 +159,7 @@ class IdcardResult:
 
     @property
     def birth(self):
-        """Gets the birth of this IdcardResult.
+        r"""Gets the birth of this IdcardResult.
 
         出生日期。
 
@@ -170,7 +170,7 @@ class IdcardResult:
 
     @birth.setter
     def birth(self, birth):
-        """Sets the birth of this IdcardResult.
+        r"""Sets the birth of this IdcardResult.
 
         出生日期。
 
@@ -181,7 +181,7 @@ class IdcardResult:
 
     @property
     def ethnicity(self):
-        """Gets the ethnicity of this IdcardResult.
+        r"""Gets the ethnicity of this IdcardResult.
 
         民族。
 
@@ -192,7 +192,7 @@ class IdcardResult:
 
     @ethnicity.setter
     def ethnicity(self, ethnicity):
-        """Sets the ethnicity of this IdcardResult.
+        r"""Sets the ethnicity of this IdcardResult.
 
         民族。
 
@@ -203,7 +203,7 @@ class IdcardResult:
 
     @property
     def address(self):
-        """Gets the address of this IdcardResult.
+        r"""Gets the address of this IdcardResult.
 
         地址。
 
@@ -214,7 +214,7 @@ class IdcardResult:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this IdcardResult.
+        r"""Sets the address of this IdcardResult.
 
         地址。
 
@@ -225,7 +225,7 @@ class IdcardResult:
 
     @property
     def issue(self):
-        """Gets the issue of this IdcardResult.
+        r"""Gets the issue of this IdcardResult.
 
         发证机关。
 
@@ -236,7 +236,7 @@ class IdcardResult:
 
     @issue.setter
     def issue(self, issue):
-        """Sets the issue of this IdcardResult.
+        r"""Sets the issue of this IdcardResult.
 
         发证机关。
 
@@ -247,7 +247,7 @@ class IdcardResult:
 
     @property
     def valid_from(self):
-        """Gets the valid_from of this IdcardResult.
+        r"""Gets the valid_from of this IdcardResult.
 
         有效起始日期。
 
@@ -258,7 +258,7 @@ class IdcardResult:
 
     @valid_from.setter
     def valid_from(self, valid_from):
-        """Sets the valid_from of this IdcardResult.
+        r"""Sets the valid_from of this IdcardResult.
 
         有效起始日期。
 
@@ -269,7 +269,7 @@ class IdcardResult:
 
     @property
     def valid_to(self):
-        """Gets the valid_to of this IdcardResult.
+        r"""Gets the valid_to of this IdcardResult.
 
         有效结束日期。
 
@@ -280,7 +280,7 @@ class IdcardResult:
 
     @valid_to.setter
     def valid_to(self, valid_to):
-        """Sets the valid_to of this IdcardResult.
+        r"""Sets the valid_to of this IdcardResult.
 
         有效结束日期。
 

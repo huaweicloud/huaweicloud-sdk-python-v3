@@ -70,7 +70,7 @@ class UpdateEcnResponse(SdkResponse):
     }
 
     def __init__(self, id=None, project_id=None, domain_id=None, name=None, description=None, bandwidth_size=None, type=None, area_id=None, region_id=None, ecn_asn=None, ieg_asn=None, vni=None, enterprise_router_ids=None, vpc_ids=None, bind_ieg_count=None, enterprise_project_id=None, status=None, frozen_effect=None, hub_enable=None, created_at=None, updated_at=None, order_id=None, product_id=None):
-        """UpdateEcnResponse
+        r"""UpdateEcnResponse
 
         The model defined in huaweicloud sdk
 
@@ -198,7 +198,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateEcnResponse.
+        r"""Gets the id of this UpdateEcnResponse.
 
         企业连接网络ID
 
@@ -209,7 +209,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateEcnResponse.
+        r"""Sets the id of this UpdateEcnResponse.
 
         企业连接网络ID
 
@@ -220,7 +220,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this UpdateEcnResponse.
+        r"""Gets the project_id of this UpdateEcnResponse.
 
         项目ID
 
@@ -231,7 +231,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UpdateEcnResponse.
+        r"""Sets the project_id of this UpdateEcnResponse.
 
         项目ID
 
@@ -242,7 +242,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this UpdateEcnResponse.
+        r"""Gets the domain_id of this UpdateEcnResponse.
 
         租户账号ID
 
@@ -253,7 +253,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this UpdateEcnResponse.
+        r"""Sets the domain_id of this UpdateEcnResponse.
 
         租户账号ID
 
@@ -264,7 +264,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateEcnResponse.
+        r"""Gets the name of this UpdateEcnResponse.
 
         企业连接网络名字
 
@@ -275,7 +275,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateEcnResponse.
+        r"""Sets the name of this UpdateEcnResponse.
 
         企业连接网络名字
 
@@ -286,7 +286,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdateEcnResponse.
+        r"""Gets the description of this UpdateEcnResponse.
 
         描述信息
 
@@ -297,7 +297,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateEcnResponse.
+        r"""Sets the description of this UpdateEcnResponse.
 
         描述信息
 
@@ -308,7 +308,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @property
     def bandwidth_size(self):
-        """Gets the bandwidth_size of this UpdateEcnResponse.
+        r"""Gets the bandwidth_size of this UpdateEcnResponse.
 
         带宽
 
@@ -319,7 +319,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @bandwidth_size.setter
     def bandwidth_size(self, bandwidth_size):
-        """Sets the bandwidth_size of this UpdateEcnResponse.
+        r"""Sets the bandwidth_size of this UpdateEcnResponse.
 
         带宽
 
@@ -330,7 +330,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this UpdateEcnResponse.
+        r"""Gets the type of this UpdateEcnResponse.
 
         企业连接网络类型
 
@@ -341,7 +341,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this UpdateEcnResponse.
+        r"""Sets the type of this UpdateEcnResponse.
 
         企业连接网络类型
 
@@ -352,7 +352,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @property
     def area_id(self):
-        """Gets the area_id of this UpdateEcnResponse.
+        r"""Gets the area_id of this UpdateEcnResponse.
 
         大区ID
 
@@ -363,7 +363,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @area_id.setter
     def area_id(self, area_id):
-        """Sets the area_id of this UpdateEcnResponse.
+        r"""Sets the area_id of this UpdateEcnResponse.
 
         大区ID
 
@@ -374,7 +374,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @property
     def region_id(self):
-        """Gets the region_id of this UpdateEcnResponse.
+        r"""Gets the region_id of this UpdateEcnResponse.
 
         区域ID
 
@@ -385,7 +385,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this UpdateEcnResponse.
+        r"""Sets the region_id of this UpdateEcnResponse.
 
         区域ID
 
@@ -396,7 +396,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @property
     def ecn_asn(self):
-        """Gets the ecn_asn of this UpdateEcnResponse.
+        r"""Gets the ecn_asn of this UpdateEcnResponse.
 
         企业连接网络AS号
 
@@ -407,7 +407,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @ecn_asn.setter
     def ecn_asn(self, ecn_asn):
-        """Sets the ecn_asn of this UpdateEcnResponse.
+        r"""Sets the ecn_asn of this UpdateEcnResponse.
 
         企业连接网络AS号
 
@@ -418,7 +418,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @property
     def ieg_asn(self):
-        """Gets the ieg_asn of this UpdateEcnResponse.
+        r"""Gets the ieg_asn of this UpdateEcnResponse.
 
         智能企业网关AS号
 
@@ -429,7 +429,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @ieg_asn.setter
     def ieg_asn(self, ieg_asn):
-        """Sets the ieg_asn of this UpdateEcnResponse.
+        r"""Sets the ieg_asn of this UpdateEcnResponse.
 
         智能企业网关AS号
 
@@ -440,7 +440,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @property
     def vni(self):
-        """Gets the vni of this UpdateEcnResponse.
+        r"""Gets the vni of this UpdateEcnResponse.
 
         VXLAN网络标识
 
@@ -451,7 +451,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @vni.setter
     def vni(self, vni):
-        """Sets the vni of this UpdateEcnResponse.
+        r"""Sets the vni of this UpdateEcnResponse.
 
         VXLAN网络标识
 
@@ -462,7 +462,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @property
     def enterprise_router_ids(self):
-        """Gets the enterprise_router_ids of this UpdateEcnResponse.
+        r"""Gets the enterprise_router_ids of this UpdateEcnResponse.
 
         企业路由器列表
 
@@ -473,7 +473,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @enterprise_router_ids.setter
     def enterprise_router_ids(self, enterprise_router_ids):
-        """Sets the enterprise_router_ids of this UpdateEcnResponse.
+        r"""Sets the enterprise_router_ids of this UpdateEcnResponse.
 
         企业路由器列表
 
@@ -484,7 +484,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @property
     def vpc_ids(self):
-        """Gets the vpc_ids of this UpdateEcnResponse.
+        r"""Gets the vpc_ids of this UpdateEcnResponse.
 
         虚拟私有云列表
 
@@ -495,7 +495,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @vpc_ids.setter
     def vpc_ids(self, vpc_ids):
-        """Sets the vpc_ids of this UpdateEcnResponse.
+        r"""Sets the vpc_ids of this UpdateEcnResponse.
 
         虚拟私有云列表
 
@@ -506,7 +506,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @property
     def bind_ieg_count(self):
-        """Gets the bind_ieg_count of this UpdateEcnResponse.
+        r"""Gets the bind_ieg_count of this UpdateEcnResponse.
 
         绑定智能企业网关数量
 
@@ -517,7 +517,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @bind_ieg_count.setter
     def bind_ieg_count(self, bind_ieg_count):
-        """Sets the bind_ieg_count of this UpdateEcnResponse.
+        r"""Sets the bind_ieg_count of this UpdateEcnResponse.
 
         绑定智能企业网关数量
 
@@ -528,7 +528,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this UpdateEcnResponse.
+        r"""Gets the enterprise_project_id of this UpdateEcnResponse.
 
         企业项目ID
 
@@ -539,7 +539,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this UpdateEcnResponse.
+        r"""Sets the enterprise_project_id of this UpdateEcnResponse.
 
         企业项目ID
 
@@ -550,7 +550,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateEcnResponse.
+        r"""Gets the status of this UpdateEcnResponse.
 
         状态
 
@@ -561,7 +561,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateEcnResponse.
+        r"""Sets the status of this UpdateEcnResponse.
 
         状态
 
@@ -572,7 +572,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @property
     def frozen_effect(self):
-        """Gets the frozen_effect of this UpdateEcnResponse.
+        r"""Gets the frozen_effect of this UpdateEcnResponse.
 
         冻结效果
 
@@ -583,7 +583,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @frozen_effect.setter
     def frozen_effect(self, frozen_effect):
-        """Sets the frozen_effect of this UpdateEcnResponse.
+        r"""Sets the frozen_effect of this UpdateEcnResponse.
 
         冻结效果
 
@@ -594,7 +594,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @property
     def hub_enable(self):
-        """Gets the hub_enable of this UpdateEcnResponse.
+        r"""Gets the hub_enable of this UpdateEcnResponse.
 
         分支互联开关
 
@@ -605,7 +605,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @hub_enable.setter
     def hub_enable(self, hub_enable):
-        """Sets the hub_enable of this UpdateEcnResponse.
+        r"""Sets the hub_enable of this UpdateEcnResponse.
 
         分支互联开关
 
@@ -616,7 +616,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this UpdateEcnResponse.
+        r"""Gets the created_at of this UpdateEcnResponse.
 
         创建时间
 
@@ -627,7 +627,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this UpdateEcnResponse.
+        r"""Sets the created_at of this UpdateEcnResponse.
 
         创建时间
 
@@ -638,7 +638,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this UpdateEcnResponse.
+        r"""Gets the updated_at of this UpdateEcnResponse.
 
         更新时间
 
@@ -649,7 +649,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this UpdateEcnResponse.
+        r"""Sets the updated_at of this UpdateEcnResponse.
 
         更新时间
 
@@ -660,7 +660,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this UpdateEcnResponse.
+        r"""Gets the order_id of this UpdateEcnResponse.
 
         包周期场景下购买的订单号，按需场景下为空
 
@@ -671,7 +671,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this UpdateEcnResponse.
+        r"""Sets the order_id of this UpdateEcnResponse.
 
         包周期场景下购买的订单号，按需场景下为空
 
@@ -682,7 +682,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @property
     def product_id(self):
-        """Gets the product_id of this UpdateEcnResponse.
+        r"""Gets the product_id of this UpdateEcnResponse.
 
         包周期场景下购买的订单号，按需场景下为空
 
@@ -693,7 +693,7 @@ class UpdateEcnResponse(SdkResponse):
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this UpdateEcnResponse.
+        r"""Sets the product_id of this UpdateEcnResponse.
 
         包周期场景下购买的订单号，按需场景下为空
 

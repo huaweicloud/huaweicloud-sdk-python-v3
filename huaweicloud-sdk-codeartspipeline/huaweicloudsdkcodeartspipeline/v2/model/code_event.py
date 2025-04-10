@@ -27,7 +27,7 @@ class CodeEvent:
     }
 
     def __init__(self, type=None, enable=None):
-        """CodeEvent
+        r"""CodeEvent
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CodeEvent:
 
     @property
     def type(self):
-        """Gets the type of this CodeEvent.
+        r"""Gets the type of this CodeEvent.
 
         事件类型
 
@@ -61,7 +61,7 @@ class CodeEvent:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CodeEvent.
+        r"""Sets the type of this CodeEvent.
 
         事件类型
 
@@ -72,7 +72,7 @@ class CodeEvent:
 
     @property
     def enable(self):
-        """Gets the enable of this CodeEvent.
+        r"""Gets the enable of this CodeEvent.
 
         是否可用
 
@@ -83,7 +83,7 @@ class CodeEvent:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this CodeEvent.
+        r"""Sets the enable of this CodeEvent.
 
         是否可用
 

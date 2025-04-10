@@ -27,7 +27,7 @@ class RDMParamVOMultiViewModelVersionViewCreateDTO:
     }
 
     def __init__(self, params=None, application_id=None):
-        """RDMParamVOMultiViewModelVersionViewCreateDTO
+        r"""RDMParamVOMultiViewModelVersionViewCreateDTO
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RDMParamVOMultiViewModelVersionViewCreateDTO:
 
     @property
     def params(self):
-        """Gets the params of this RDMParamVOMultiViewModelVersionViewCreateDTO.
+        r"""Gets the params of this RDMParamVOMultiViewModelVersionViewCreateDTO.
 
         :return: The params of this RDMParamVOMultiViewModelVersionViewCreateDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.MultiViewModelVersionViewCreateDTO`
@@ -59,7 +59,7 @@ class RDMParamVOMultiViewModelVersionViewCreateDTO:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this RDMParamVOMultiViewModelVersionViewCreateDTO.
+        r"""Sets the params of this RDMParamVOMultiViewModelVersionViewCreateDTO.
 
         :param params: The params of this RDMParamVOMultiViewModelVersionViewCreateDTO.
         :type params: :class:`huaweicloudsdkidmeclassicapi.v1.MultiViewModelVersionViewCreateDTO`
@@ -68,7 +68,7 @@ class RDMParamVOMultiViewModelVersionViewCreateDTO:
 
     @property
     def application_id(self):
-        """Gets the application_id of this RDMParamVOMultiViewModelVersionViewCreateDTO.
+        r"""Gets the application_id of this RDMParamVOMultiViewModelVersionViewCreateDTO.
 
         **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。 
 
@@ -79,7 +79,7 @@ class RDMParamVOMultiViewModelVersionViewCreateDTO:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this RDMParamVOMultiViewModelVersionViewCreateDTO.
+        r"""Sets the application_id of this RDMParamVOMultiViewModelVersionViewCreateDTO.
 
         **参数解释**：  应用ID。  **约束限制**：  不涉及。  **取值范围**：  由英文字母和数字组成，且长度为32个字符。  **默认取值**：  不涉及。 
 

@@ -27,7 +27,7 @@ class UpdatePortOption:
     }
 
     def __init__(self, allowed_address_pairs=None, security_groups=None):
-        """UpdatePortOption
+        r"""UpdatePortOption
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdatePortOption:
 
     @property
     def allowed_address_pairs(self):
-        """Gets the allowed_address_pairs of this UpdatePortOption.
+        r"""Gets the allowed_address_pairs of this UpdatePortOption.
 
         - 功能说明：IP/Mac对列表 - 约束：     IP地址不允许为 “0.0.0.0/0”     如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组。     如果allowed_address_pairs为“1.1.1.1/0”，表示关闭源目地址检查开关     为虚拟IP配置后端边缘实例场景，       allowed_address_pairs中配置的IP地址，必须为边缘实例网卡已有的IP地址，否则可能会导致虚拟IP通信异常。       被绑定的边缘实例网卡allowed_address_pairs填“1.1.1.1/0”
 
@@ -61,7 +61,7 @@ class UpdatePortOption:
 
     @allowed_address_pairs.setter
     def allowed_address_pairs(self, allowed_address_pairs):
-        """Sets the allowed_address_pairs of this UpdatePortOption.
+        r"""Sets the allowed_address_pairs of this UpdatePortOption.
 
         - 功能说明：IP/Mac对列表 - 约束：     IP地址不允许为 “0.0.0.0/0”     如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组。     如果allowed_address_pairs为“1.1.1.1/0”，表示关闭源目地址检查开关     为虚拟IP配置后端边缘实例场景，       allowed_address_pairs中配置的IP地址，必须为边缘实例网卡已有的IP地址，否则可能会导致虚拟IP通信异常。       被绑定的边缘实例网卡allowed_address_pairs填“1.1.1.1/0”
 
@@ -72,7 +72,7 @@ class UpdatePortOption:
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this UpdatePortOption.
+        r"""Gets the security_groups of this UpdatePortOption.
 
         安全组列表
 
@@ -83,7 +83,7 @@ class UpdatePortOption:
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this UpdatePortOption.
+        r"""Sets the security_groups of this UpdatePortOption.
 
         安全组列表
 

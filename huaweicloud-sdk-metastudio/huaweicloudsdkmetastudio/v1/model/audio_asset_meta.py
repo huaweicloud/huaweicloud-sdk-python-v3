@@ -35,7 +35,7 @@ class AudioAssetMeta:
     }
 
     def __init__(self, duration=None, audio_codec=None, audio_bit_rate=None, audio_channels=None, sample=None, error_info=None):
-        """AudioAssetMeta
+        r"""AudioAssetMeta
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class AudioAssetMeta:
 
     @property
     def duration(self):
-        """Gets the duration of this AudioAssetMeta.
+        r"""Gets the duration of this AudioAssetMeta.
 
         **参数解释**： 时长,单位秒。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
@@ -89,7 +89,7 @@ class AudioAssetMeta:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this AudioAssetMeta.
+        r"""Sets the duration of this AudioAssetMeta.
 
         **参数解释**： 时长,单位秒。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
@@ -100,7 +100,7 @@ class AudioAssetMeta:
 
     @property
     def audio_codec(self):
-        """Gets the audio_codec of this AudioAssetMeta.
+        r"""Gets the audio_codec of this AudioAssetMeta.
 
         **参数解释**： 音频编码格式。 **约束限制**： 用户无需填写，系统自行提取。 **取值范围**： 字符长度0-32位。 **默认取值**： 不涉及
 
@@ -111,7 +111,7 @@ class AudioAssetMeta:
 
     @audio_codec.setter
     def audio_codec(self, audio_codec):
-        """Sets the audio_codec of this AudioAssetMeta.
+        r"""Sets the audio_codec of this AudioAssetMeta.
 
         **参数解释**： 音频编码格式。 **约束限制**： 用户无需填写，系统自行提取。 **取值范围**： 字符长度0-32位。 **默认取值**： 不涉及
 
@@ -122,7 +122,7 @@ class AudioAssetMeta:
 
     @property
     def audio_bit_rate(self):
-        """Gets the audio_bit_rate of this AudioAssetMeta.
+        r"""Gets the audio_bit_rate of this AudioAssetMeta.
 
         **参数解释**： 音频平均码率,单位kbps。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
@@ -133,7 +133,7 @@ class AudioAssetMeta:
 
     @audio_bit_rate.setter
     def audio_bit_rate(self, audio_bit_rate):
-        """Sets the audio_bit_rate of this AudioAssetMeta.
+        r"""Sets the audio_bit_rate of this AudioAssetMeta.
 
         **参数解释**： 音频平均码率,单位kbps。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
@@ -144,7 +144,7 @@ class AudioAssetMeta:
 
     @property
     def audio_channels(self):
-        """Gets the audio_channels of this AudioAssetMeta.
+        r"""Gets the audio_channels of this AudioAssetMeta.
 
         **参数解释**： 音频声道数。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
@@ -155,7 +155,7 @@ class AudioAssetMeta:
 
     @audio_channels.setter
     def audio_channels(self, audio_channels):
-        """Sets the audio_channels of this AudioAssetMeta.
+        r"""Sets the audio_channels of this AudioAssetMeta.
 
         **参数解释**： 音频声道数。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
@@ -166,7 +166,7 @@ class AudioAssetMeta:
 
     @property
     def sample(self):
-        """Gets the sample of this AudioAssetMeta.
+        r"""Gets the sample of this AudioAssetMeta.
 
         **参数解释**： 采样率,HZ。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
@@ -177,7 +177,7 @@ class AudioAssetMeta:
 
     @sample.setter
     def sample(self, sample):
-        """Sets the sample of this AudioAssetMeta.
+        r"""Sets the sample of this AudioAssetMeta.
 
         **参数解释**： 采样率,HZ。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
@@ -188,7 +188,7 @@ class AudioAssetMeta:
 
     @property
     def error_info(self):
-        """Gets the error_info of this AudioAssetMeta.
+        r"""Gets the error_info of this AudioAssetMeta.
 
         :return: The error_info of this AudioAssetMeta.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
@@ -197,7 +197,7 @@ class AudioAssetMeta:
 
     @error_info.setter
     def error_info(self, error_info):
-        """Sets the error_info of this AudioAssetMeta.
+        r"""Sets the error_info of this AudioAssetMeta.
 
         :param error_info: The error_info of this AudioAssetMeta.
         :type error_info: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`

@@ -26,7 +26,7 @@ class LockPortResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """LockPortResponse
+        r"""LockPortResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class LockPortResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this LockPortResponse.
+        r"""Gets the data of this LockPortResponse.
 
         :return: The data of this LockPortResponse.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.LockPortResponseModel`
@@ -53,7 +53,7 @@ class LockPortResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this LockPortResponse.
+        r"""Sets the data of this LockPortResponse.
 
         :param data: The data of this LockPortResponse.
         :type data: :class:`huaweicloudsdkkoomessage.v1.LockPortResponseModel`

@@ -43,7 +43,7 @@ class AlertResourceList:
     }
 
     def __init__(self, id=None, name=None, type=None, provider=None, region_id=None, domain_id=None, project_id=None, ep_id=None, ep_name=None, tags=None):
-        """AlertResourceList
+        r"""AlertResourceList
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class AlertResourceList:
 
     @property
     def id(self):
-        """Gets the id of this AlertResourceList.
+        r"""Gets the id of this AlertResourceList.
 
         云服务资源id
 
@@ -117,7 +117,7 @@ class AlertResourceList:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AlertResourceList.
+        r"""Sets the id of this AlertResourceList.
 
         云服务资源id
 
@@ -128,7 +128,7 @@ class AlertResourceList:
 
     @property
     def name(self):
-        """Gets the name of this AlertResourceList.
+        r"""Gets the name of this AlertResourceList.
 
         资源名称
 
@@ -139,7 +139,7 @@ class AlertResourceList:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AlertResourceList.
+        r"""Sets the name of this AlertResourceList.
 
         资源名称
 
@@ -150,7 +150,7 @@ class AlertResourceList:
 
     @property
     def type(self):
-        """Gets the type of this AlertResourceList.
+        r"""Gets the type of this AlertResourceList.
 
         资源类型；引用华为云RMS type字段
 
@@ -161,7 +161,7 @@ class AlertResourceList:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AlertResourceList.
+        r"""Sets the type of this AlertResourceList.
 
         资源类型；引用华为云RMS type字段
 
@@ -172,7 +172,7 @@ class AlertResourceList:
 
     @property
     def provider(self):
-        """Gets the provider of this AlertResourceList.
+        r"""Gets the provider of this AlertResourceList.
 
         云服务名称；引用华为云RMS provider字段
 
@@ -183,7 +183,7 @@ class AlertResourceList:
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this AlertResourceList.
+        r"""Sets the provider of this AlertResourceList.
 
         云服务名称；引用华为云RMS provider字段
 
@@ -194,7 +194,7 @@ class AlertResourceList:
 
     @property
     def region_id(self):
-        """Gets the region_id of this AlertResourceList.
+        r"""Gets the region_id of this AlertResourceList.
 
         区域；按照华为云regionId填写，如cn-north-1等
 
@@ -205,7 +205,7 @@ class AlertResourceList:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this AlertResourceList.
+        r"""Sets the region_id of this AlertResourceList.
 
         区域；按照华为云regionId填写，如cn-north-1等
 
@@ -216,7 +216,7 @@ class AlertResourceList:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this AlertResourceList.
+        r"""Gets the domain_id of this AlertResourceList.
 
         资源所属账号ID，UUID格式
 
@@ -227,7 +227,7 @@ class AlertResourceList:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this AlertResourceList.
+        r"""Sets the domain_id of this AlertResourceList.
 
         资源所属账号ID，UUID格式
 
@@ -238,7 +238,7 @@ class AlertResourceList:
 
     @property
     def project_id(self):
-        """Gets the project_id of this AlertResourceList.
+        r"""Gets the project_id of this AlertResourceList.
 
         资源所属项目ID，UUID格式
 
@@ -249,7 +249,7 @@ class AlertResourceList:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this AlertResourceList.
+        r"""Sets the project_id of this AlertResourceList.
 
         资源所属项目ID，UUID格式
 
@@ -260,7 +260,7 @@ class AlertResourceList:
 
     @property
     def ep_id(self):
-        """Gets the ep_id of this AlertResourceList.
+        r"""Gets the ep_id of this AlertResourceList.
 
         企业项目id
 
@@ -271,7 +271,7 @@ class AlertResourceList:
 
     @ep_id.setter
     def ep_id(self, ep_id):
-        """Sets the ep_id of this AlertResourceList.
+        r"""Sets the ep_id of this AlertResourceList.
 
         企业项目id
 
@@ -282,7 +282,7 @@ class AlertResourceList:
 
     @property
     def ep_name(self):
-        """Gets the ep_name of this AlertResourceList.
+        r"""Gets the ep_name of this AlertResourceList.
 
         企业项目名称
 
@@ -293,7 +293,7 @@ class AlertResourceList:
 
     @ep_name.setter
     def ep_name(self, ep_name):
-        """Sets the ep_name of this AlertResourceList.
+        r"""Sets the ep_name of this AlertResourceList.
 
         企业项目名称
 
@@ -304,7 +304,7 @@ class AlertResourceList:
 
     @property
     def tags(self):
-        """Gets the tags of this AlertResourceList.
+        r"""Gets the tags of this AlertResourceList.
 
         资源标签 1、最多50个key/values对 2、values：最大255字符，取值范围：字母数字,空格,+, -, =, ., _, :, /,@
 
@@ -315,7 +315,7 @@ class AlertResourceList:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this AlertResourceList.
+        r"""Sets the tags of this AlertResourceList.
 
         资源标签 1、最多50个key/values对 2、values：最大255字符，取值范围：字母数字,空格,+, -, =, ., _, :, /,@
 

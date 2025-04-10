@@ -26,7 +26,7 @@ class ShowRocketmqProjectTagsResponse(SdkResponse):
     }
 
     def __init__(self, tags=None):
-        """ShowRocketmqProjectTagsResponse
+        r"""ShowRocketmqProjectTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowRocketmqProjectTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowRocketmqProjectTagsResponse.
+        r"""Gets the tags of this ShowRocketmqProjectTagsResponse.
 
         标签列表
 
@@ -55,7 +55,7 @@ class ShowRocketmqProjectTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowRocketmqProjectTagsResponse.
+        r"""Sets the tags of this ShowRocketmqProjectTagsResponse.
 
         标签列表
 

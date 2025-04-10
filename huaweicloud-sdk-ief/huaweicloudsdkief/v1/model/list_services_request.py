@@ -35,7 +35,7 @@ class ListServicesRequest:
     }
 
     def __init__(self, limit=None, offset=None, sorted=None, name=None, app=None, ief_instance_id=None):
-        """ListServicesRequest
+        r"""ListServicesRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListServicesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListServicesRequest.
+        r"""Gets the limit of this ListServicesRequest.
 
         指定分页查询每页的行数，最大为100，默认值为10。
 
@@ -88,7 +88,7 @@ class ListServicesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListServicesRequest.
+        r"""Sets the limit of this ListServicesRequest.
 
         指定分页查询每页的行数，最大为100，默认值为10。
 
@@ -99,7 +99,7 @@ class ListServicesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListServicesRequest.
+        r"""Gets the offset of this ListServicesRequest.
 
         指定要查询的偏移数量，默认为0。
 
@@ -110,7 +110,7 @@ class ListServicesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListServicesRequest.
+        r"""Sets the offset of this ListServicesRequest.
 
         指定要查询的偏移数量，默认为0。
 
@@ -121,7 +121,7 @@ class ListServicesRequest:
 
     @property
     def sorted(self):
-        """Gets the sorted of this ListServicesRequest.
+        r"""Gets the sorted of this ListServicesRequest.
 
         响应中查询到的服务将按照指定的字段进行排序
 
@@ -132,7 +132,7 @@ class ListServicesRequest:
 
     @sorted.setter
     def sorted(self, sorted):
-        """Sets the sorted of this ListServicesRequest.
+        r"""Sets the sorted of this ListServicesRequest.
 
         响应中查询到的服务将按照指定的字段进行排序
 
@@ -143,7 +143,7 @@ class ListServicesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListServicesRequest.
+        r"""Gets the name of this ListServicesRequest.
 
         服务名称
 
@@ -154,7 +154,7 @@ class ListServicesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListServicesRequest.
+        r"""Sets the name of this ListServicesRequest.
 
         服务名称
 
@@ -165,7 +165,7 @@ class ListServicesRequest:
 
     @property
     def app(self):
-        """Gets the app of this ListServicesRequest.
+        r"""Gets the app of this ListServicesRequest.
 
         按照相关的应用查询服务
 
@@ -176,7 +176,7 @@ class ListServicesRequest:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this ListServicesRequest.
+        r"""Sets the app of this ListServicesRequest.
 
         按照相关的应用查询服务
 
@@ -187,7 +187,7 @@ class ListServicesRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this ListServicesRequest.
+        r"""Gets the ief_instance_id of this ListServicesRequest.
 
         铂金版实例ID
 
@@ -198,7 +198,7 @@ class ListServicesRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this ListServicesRequest.
+        r"""Sets the ief_instance_id of this ListServicesRequest.
 
         铂金版实例ID
 

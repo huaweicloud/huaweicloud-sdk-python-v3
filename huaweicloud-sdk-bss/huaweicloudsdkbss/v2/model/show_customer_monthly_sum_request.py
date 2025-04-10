@@ -37,7 +37,7 @@ class ShowCustomerMonthlySumRequest:
     }
 
     def __init__(self, bill_cycle=None, service_type_code=None, enterprise_project_id=None, offset=None, limit=None, method=None, sub_customer_id=None):
-        """ShowCustomerMonthlySumRequest
+        r"""ShowCustomerMonthlySumRequest
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class ShowCustomerMonthlySumRequest:
 
     @property
     def bill_cycle(self):
-        """Gets the bill_cycle of this ShowCustomerMonthlySumRequest.
+        r"""Gets the bill_cycle of this ShowCustomerMonthlySumRequest.
 
         查询消费汇总数据所在的账期，东八区时间，格式为YYYY-MM。
 
@@ -95,7 +95,7 @@ class ShowCustomerMonthlySumRequest:
 
     @bill_cycle.setter
     def bill_cycle(self, bill_cycle):
-        """Sets the bill_cycle of this ShowCustomerMonthlySumRequest.
+        r"""Sets the bill_cycle of this ShowCustomerMonthlySumRequest.
 
         查询消费汇总数据所在的账期，东八区时间，格式为YYYY-MM。
 
@@ -106,7 +106,7 @@ class ShowCustomerMonthlySumRequest:
 
     @property
     def service_type_code(self):
-        """Gets the service_type_code of this ShowCustomerMonthlySumRequest.
+        r"""Gets the service_type_code of this ShowCustomerMonthlySumRequest.
 
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用[查询云服务类型列表](https://support.huaweicloud.com/api-oce/zh-cn_topic_0000001256679455.html)接口获取。此参数不携带或携带值为空时，不作为筛选条件。
 
@@ -117,7 +117,7 @@ class ShowCustomerMonthlySumRequest:
 
     @service_type_code.setter
     def service_type_code(self, service_type_code):
-        """Sets the service_type_code of this ShowCustomerMonthlySumRequest.
+        r"""Sets the service_type_code of this ShowCustomerMonthlySumRequest.
 
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用[查询云服务类型列表](https://support.huaweicloud.com/api-oce/zh-cn_topic_0000001256679455.html)接口获取。此参数不携带或携带值为空时，不作为筛选条件。
 
@@ -128,7 +128,7 @@ class ShowCustomerMonthlySumRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowCustomerMonthlySumRequest.
+        r"""Gets the enterprise_project_id of this ShowCustomerMonthlySumRequest.
 
         企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见[如何获取企业项目ID](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。此参数不携带或携带值为空时，不作为筛选条件。携带值为null时，作为筛选条件。不支持携带值为空串。
 
@@ -139,7 +139,7 @@ class ShowCustomerMonthlySumRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowCustomerMonthlySumRequest.
+        r"""Sets the enterprise_project_id of this ShowCustomerMonthlySumRequest.
 
         企业项目标识（企业项目ID）。default项目对应ID：0未归集（表示该云服务不支持企业项目管理能力）项目对应ID：-1其余项目对应ID获取方法请参见[如何获取企业项目ID](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。此参数不携带或携带值为空时，不作为筛选条件。携带值为null时，作为筛选条件。不支持携带值为空串。
 
@@ -150,7 +150,7 @@ class ShowCustomerMonthlySumRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowCustomerMonthlySumRequest.
+        r"""Gets the offset of this ShowCustomerMonthlySumRequest.
 
         偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -161,7 +161,7 @@ class ShowCustomerMonthlySumRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowCustomerMonthlySumRequest.
+        r"""Sets the offset of this ShowCustomerMonthlySumRequest.
 
         偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -172,7 +172,7 @@ class ShowCustomerMonthlySumRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowCustomerMonthlySumRequest.
+        r"""Gets the limit of this ShowCustomerMonthlySumRequest.
 
         每次查询的数量。默认值为10。
 
@@ -183,7 +183,7 @@ class ShowCustomerMonthlySumRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowCustomerMonthlySumRequest.
+        r"""Sets the limit of this ShowCustomerMonthlySumRequest.
 
         每次查询的数量。默认值为10。
 
@@ -194,7 +194,7 @@ class ShowCustomerMonthlySumRequest:
 
     @property
     def method(self):
-        """Gets the method of this ShowCustomerMonthlySumRequest.
+        r"""Gets the method of this ShowCustomerMonthlySumRequest.
 
         查询方式。oneself：自身sub_customer：企业子客户all：自己和企业子客户 此参数不携带或携带值为空时，默认值为“all”，如果没有企业子客户，all的时候也是查询客户自己的数据。
 
@@ -205,7 +205,7 @@ class ShowCustomerMonthlySumRequest:
 
     @method.setter
     def method(self, method):
-        """Sets the method of this ShowCustomerMonthlySumRequest.
+        r"""Sets the method of this ShowCustomerMonthlySumRequest.
 
         查询方式。oneself：自身sub_customer：企业子客户all：自己和企业子客户 此参数不携带或携带值为空时，默认值为“all”，如果没有企业子客户，all的时候也是查询客户自己的数据。
 
@@ -216,7 +216,7 @@ class ShowCustomerMonthlySumRequest:
 
     @property
     def sub_customer_id(self):
-        """Gets the sub_customer_id of this ShowCustomerMonthlySumRequest.
+        r"""Gets the sub_customer_id of this ShowCustomerMonthlySumRequest.
 
         企业子客户的账号ID。 说明： 如果method取值不为sub_customer，则该参数无效。如果method取值为sub_customer，则该参数不能为空。
 
@@ -227,7 +227,7 @@ class ShowCustomerMonthlySumRequest:
 
     @sub_customer_id.setter
     def sub_customer_id(self, sub_customer_id):
-        """Sets the sub_customer_id of this ShowCustomerMonthlySumRequest.
+        r"""Sets the sub_customer_id of this ShowCustomerMonthlySumRequest.
 
         企业子客户的账号ID。 说明： 如果method取值不为sub_customer，则该参数无效。如果method取值为sub_customer，则该参数不能为空。
 

@@ -31,7 +31,7 @@ class ListMessageTemplatesRequest:
     }
 
     def __init__(self, offset=None, limit=None, message_template_name=None, protocol=None):
-        """ListMessageTemplatesRequest
+        r"""ListMessageTemplatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListMessageTemplatesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListMessageTemplatesRequest.
+        r"""Gets the offset of this ListMessageTemplatesRequest.
 
         偏移量，偏移量为一个大于0小于资源总个数的整数，表示查询该偏移量后面的所有的资源，默认值为0。
 
@@ -75,7 +75,7 @@ class ListMessageTemplatesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListMessageTemplatesRequest.
+        r"""Sets the offset of this ListMessageTemplatesRequest.
 
         偏移量，偏移量为一个大于0小于资源总个数的整数，表示查询该偏移量后面的所有的资源，默认值为0。
 
@@ -86,7 +86,7 @@ class ListMessageTemplatesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListMessageTemplatesRequest.
+        r"""Gets the limit of this ListMessageTemplatesRequest.
 
         取值范围：1~100，取值一般为10，20，50。功能说明：每页返回的资源个数。默认值为100。
 
@@ -97,7 +97,7 @@ class ListMessageTemplatesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListMessageTemplatesRequest.
+        r"""Sets the limit of this ListMessageTemplatesRequest.
 
         取值范围：1~100，取值一般为10，20，50。功能说明：每页返回的资源个数。默认值为100。
 
@@ -108,7 +108,7 @@ class ListMessageTemplatesRequest:
 
     @property
     def message_template_name(self):
-        """Gets the message_template_name of this ListMessageTemplatesRequest.
+        r"""Gets the message_template_name of this ListMessageTemplatesRequest.
 
         模板的名称。  只能包含大写字母、小写字母、数字、-和_，且必须由大写字母、小写字母或数字开头，长度在1到64个字符之间。
 
@@ -119,7 +119,7 @@ class ListMessageTemplatesRequest:
 
     @message_template_name.setter
     def message_template_name(self, message_template_name):
-        """Sets the message_template_name of this ListMessageTemplatesRequest.
+        r"""Sets the message_template_name of this ListMessageTemplatesRequest.
 
         模板的名称。  只能包含大写字母、小写字母、数字、-和_，且必须由大写字母、小写字母或数字开头，长度在1到64个字符之间。
 
@@ -130,7 +130,7 @@ class ListMessageTemplatesRequest:
 
     @property
     def protocol(self):
-        """Gets the protocol of this ListMessageTemplatesRequest.
+        r"""Gets the protocol of this ListMessageTemplatesRequest.
 
         模板支持的协议类型。  目前支持的协议包括：  “default”：默认协议。  “email”：邮件传输协议。  “sms”：短信传输协议。  “functionstage”：FunctionGraph（函数）传输协议。  “http”、“https”：HTTP/HTTPS传输协议。
 
@@ -141,7 +141,7 @@ class ListMessageTemplatesRequest:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this ListMessageTemplatesRequest.
+        r"""Sets the protocol of this ListMessageTemplatesRequest.
 
         模板支持的协议类型。  目前支持的协议包括：  “default”：默认协议。  “email”：邮件传输协议。  “sms”：短信传输协议。  “functionstage”：FunctionGraph（函数）传输协议。  “http”、“https”：HTTP/HTTPS传输协议。
 

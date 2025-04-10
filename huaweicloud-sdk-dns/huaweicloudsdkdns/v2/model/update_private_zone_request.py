@@ -27,7 +27,7 @@ class UpdatePrivateZoneRequest:
     }
 
     def __init__(self, zone_id=None, body=None):
-        """UpdatePrivateZoneRequest
+        r"""UpdatePrivateZoneRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdatePrivateZoneRequest:
 
     @property
     def zone_id(self):
-        """Gets the zone_id of this UpdatePrivateZoneRequest.
+        r"""Gets the zone_id of this UpdatePrivateZoneRequest.
 
         待修改Zone的ID。
 
@@ -60,7 +60,7 @@ class UpdatePrivateZoneRequest:
 
     @zone_id.setter
     def zone_id(self, zone_id):
-        """Sets the zone_id of this UpdatePrivateZoneRequest.
+        r"""Sets the zone_id of this UpdatePrivateZoneRequest.
 
         待修改Zone的ID。
 
@@ -71,7 +71,7 @@ class UpdatePrivateZoneRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePrivateZoneRequest.
+        r"""Gets the body of this UpdatePrivateZoneRequest.
 
         :return: The body of this UpdatePrivateZoneRequest.
         :rtype: :class:`huaweicloudsdkdns.v2.UpdatePrivateZoneInfoReq`
@@ -80,7 +80,7 @@ class UpdatePrivateZoneRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePrivateZoneRequest.
+        r"""Sets the body of this UpdatePrivateZoneRequest.
 
         :param body: The body of this UpdatePrivateZoneRequest.
         :type body: :class:`huaweicloudsdkdns.v2.UpdatePrivateZoneInfoReq`

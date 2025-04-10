@@ -31,7 +31,7 @@ class ModifyOttChannelRecordSettings:
     }
 
     def __init__(self, domain=None, app_name=None, id=None, record_settings=None):
-        """ModifyOttChannelRecordSettings
+        r"""ModifyOttChannelRecordSettings
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ModifyOttChannelRecordSettings:
 
     @property
     def domain(self):
-        """Gets the domain of this ModifyOttChannelRecordSettings.
+        r"""Gets the domain of this ModifyOttChannelRecordSettings.
 
         频道推流域名
 
@@ -72,7 +72,7 @@ class ModifyOttChannelRecordSettings:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ModifyOttChannelRecordSettings.
+        r"""Sets the domain of this ModifyOttChannelRecordSettings.
 
         频道推流域名
 
@@ -83,7 +83,7 @@ class ModifyOttChannelRecordSettings:
 
     @property
     def app_name(self):
-        """Gets the app_name of this ModifyOttChannelRecordSettings.
+        r"""Gets the app_name of this ModifyOttChannelRecordSettings.
 
         组名或应用名
 
@@ -94,7 +94,7 @@ class ModifyOttChannelRecordSettings:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ModifyOttChannelRecordSettings.
+        r"""Sets the app_name of this ModifyOttChannelRecordSettings.
 
         组名或应用名
 
@@ -105,7 +105,7 @@ class ModifyOttChannelRecordSettings:
 
     @property
     def id(self):
-        """Gets the id of this ModifyOttChannelRecordSettings.
+        r"""Gets the id of this ModifyOttChannelRecordSettings.
 
         频道ID。频道唯一标识，为必填项
 
@@ -116,7 +116,7 @@ class ModifyOttChannelRecordSettings:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ModifyOttChannelRecordSettings.
+        r"""Sets the id of this ModifyOttChannelRecordSettings.
 
         频道ID。频道唯一标识，为必填项
 
@@ -127,7 +127,7 @@ class ModifyOttChannelRecordSettings:
 
     @property
     def record_settings(self):
-        """Gets the record_settings of this ModifyOttChannelRecordSettings.
+        r"""Gets the record_settings of this ModifyOttChannelRecordSettings.
 
         :return: The record_settings of this ModifyOttChannelRecordSettings.
         :rtype: :class:`huaweicloudsdklive.v1.ModifyOttChannelRecordSettingsRecordSettings`
@@ -136,7 +136,7 @@ class ModifyOttChannelRecordSettings:
 
     @record_settings.setter
     def record_settings(self, record_settings):
-        """Sets the record_settings of this ModifyOttChannelRecordSettings.
+        r"""Sets the record_settings of this ModifyOttChannelRecordSettings.
 
         :param record_settings: The record_settings of this ModifyOttChannelRecordSettings.
         :type record_settings: :class:`huaweicloudsdklive.v1.ModifyOttChannelRecordSettingsRecordSettings`

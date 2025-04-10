@@ -27,7 +27,7 @@ class BatchListRposAndRtosRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """BatchListRposAndRtosRequest
+        r"""BatchListRposAndRtosRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchListRposAndRtosRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this BatchListRposAndRtosRequest.
+        r"""Gets the x_language of this BatchListRposAndRtosRequest.
 
         请求语言类型
 
@@ -61,7 +61,7 @@ class BatchListRposAndRtosRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this BatchListRposAndRtosRequest.
+        r"""Sets the x_language of this BatchListRposAndRtosRequest.
 
         请求语言类型
 
@@ -72,7 +72,7 @@ class BatchListRposAndRtosRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchListRposAndRtosRequest.
+        r"""Gets the body of this BatchListRposAndRtosRequest.
 
         :return: The body of this BatchListRposAndRtosRequest.
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchQueryRpoAndRtoReq`
@@ -81,7 +81,7 @@ class BatchListRposAndRtosRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchListRposAndRtosRequest.
+        r"""Sets the body of this BatchListRposAndRtosRequest.
 
         :param body: The body of this BatchListRposAndRtosRequest.
         :type body: :class:`huaweicloudsdkdrs.v3.BatchQueryRpoAndRtoReq`

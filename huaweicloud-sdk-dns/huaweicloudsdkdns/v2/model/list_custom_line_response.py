@@ -28,7 +28,7 @@ class ListCustomLineResponse(SdkResponse):
     }
 
     def __init__(self, lines=None, metadata=None):
-        """ListCustomLineResponse
+        r"""ListCustomLineResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListCustomLineResponse(SdkResponse):
 
     @property
     def lines(self):
-        """Gets the lines of this ListCustomLineResponse.
+        r"""Gets the lines of this ListCustomLineResponse.
 
         线路列表。
 
@@ -62,7 +62,7 @@ class ListCustomLineResponse(SdkResponse):
 
     @lines.setter
     def lines(self, lines):
-        """Sets the lines of this ListCustomLineResponse.
+        r"""Sets the lines of this ListCustomLineResponse.
 
         线路列表。
 
@@ -73,7 +73,7 @@ class ListCustomLineResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this ListCustomLineResponse.
+        r"""Gets the metadata of this ListCustomLineResponse.
 
         :return: The metadata of this ListCustomLineResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.Metadata`
@@ -82,7 +82,7 @@ class ListCustomLineResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ListCustomLineResponse.
+        r"""Sets the metadata of this ListCustomLineResponse.
 
         :param metadata: The metadata of this ListCustomLineResponse.
         :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`

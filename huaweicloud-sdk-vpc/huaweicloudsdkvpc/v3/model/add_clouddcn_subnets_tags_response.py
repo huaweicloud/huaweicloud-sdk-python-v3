@@ -24,7 +24,7 @@ class AddClouddcnSubnetsTagsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """AddClouddcnSubnetsTagsResponse
+        r"""AddClouddcnSubnetsTagsResponse
 
         The model defined in huaweicloud sdk
 

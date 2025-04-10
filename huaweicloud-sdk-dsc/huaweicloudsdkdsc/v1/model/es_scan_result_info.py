@@ -37,7 +37,7 @@ class EsScanResultInfo:
     }
 
     def __init__(self, task_id=None, index_name=None, type_id=None, type_name=None, risk_level=None, sensitive_data_type=None, match_info=None):
-        """EsScanResultInfo
+        r"""EsScanResultInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class EsScanResultInfo:
 
     @property
     def task_id(self):
-        """Gets the task_id of this EsScanResultInfo.
+        r"""Gets the task_id of this EsScanResultInfo.
 
         任务ID
 
@@ -96,7 +96,7 @@ class EsScanResultInfo:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this EsScanResultInfo.
+        r"""Sets the task_id of this EsScanResultInfo.
 
         任务ID
 
@@ -107,7 +107,7 @@ class EsScanResultInfo:
 
     @property
     def index_name(self):
-        """Gets the index_name of this EsScanResultInfo.
+        r"""Gets the index_name of this EsScanResultInfo.
 
         索引名
 
@@ -118,7 +118,7 @@ class EsScanResultInfo:
 
     @index_name.setter
     def index_name(self, index_name):
-        """Sets the index_name of this EsScanResultInfo.
+        r"""Sets the index_name of this EsScanResultInfo.
 
         索引名
 
@@ -129,7 +129,7 @@ class EsScanResultInfo:
 
     @property
     def type_id(self):
-        """Gets the type_id of this EsScanResultInfo.
+        r"""Gets the type_id of this EsScanResultInfo.
 
         类型ID
 
@@ -140,7 +140,7 @@ class EsScanResultInfo:
 
     @type_id.setter
     def type_id(self, type_id):
-        """Sets the type_id of this EsScanResultInfo.
+        r"""Sets the type_id of this EsScanResultInfo.
 
         类型ID
 
@@ -151,7 +151,7 @@ class EsScanResultInfo:
 
     @property
     def type_name(self):
-        """Gets the type_name of this EsScanResultInfo.
+        r"""Gets the type_name of this EsScanResultInfo.
 
         类型名
 
@@ -162,7 +162,7 @@ class EsScanResultInfo:
 
     @type_name.setter
     def type_name(self, type_name):
-        """Sets the type_name of this EsScanResultInfo.
+        r"""Sets the type_name of this EsScanResultInfo.
 
         类型名
 
@@ -173,7 +173,7 @@ class EsScanResultInfo:
 
     @property
     def risk_level(self):
-        """Gets the risk_level of this EsScanResultInfo.
+        r"""Gets the risk_level of this EsScanResultInfo.
 
         风险等级
 
@@ -184,7 +184,7 @@ class EsScanResultInfo:
 
     @risk_level.setter
     def risk_level(self, risk_level):
-        """Sets the risk_level of this EsScanResultInfo.
+        r"""Sets the risk_level of this EsScanResultInfo.
 
         风险等级
 
@@ -195,7 +195,7 @@ class EsScanResultInfo:
 
     @property
     def sensitive_data_type(self):
-        """Gets the sensitive_data_type of this EsScanResultInfo.
+        r"""Gets the sensitive_data_type of this EsScanResultInfo.
 
         敏感数据类型
 
@@ -206,7 +206,7 @@ class EsScanResultInfo:
 
     @sensitive_data_type.setter
     def sensitive_data_type(self, sensitive_data_type):
-        """Sets the sensitive_data_type of this EsScanResultInfo.
+        r"""Sets the sensitive_data_type of this EsScanResultInfo.
 
         敏感数据类型
 
@@ -217,7 +217,7 @@ class EsScanResultInfo:
 
     @property
     def match_info(self):
-        """Gets the match_info of this EsScanResultInfo.
+        r"""Gets the match_info of this EsScanResultInfo.
 
         规则匹配具体信息
 
@@ -228,7 +228,7 @@ class EsScanResultInfo:
 
     @match_info.setter
     def match_info(self, match_info):
-        """Sets the match_info of this EsScanResultInfo.
+        r"""Sets the match_info of this EsScanResultInfo.
 
         规则匹配具体信息
 

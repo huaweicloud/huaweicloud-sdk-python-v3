@@ -33,7 +33,7 @@ class ShootScriptShowItem:
     }
 
     def __init__(self, sequence_no=None, shoot_script=None, subtitle_file_info=None, audio_config=None, preview_info=None):
-        """ShootScriptShowItem
+        r"""ShootScriptShowItem
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ShootScriptShowItem:
 
     @property
     def sequence_no(self):
-        """Gets the sequence_no of this ShootScriptShowItem.
+        r"""Gets the sequence_no of this ShootScriptShowItem.
 
         **参数解释**： 剧本序号。 **约束限制**： 同一个剧本序号不重复。 **默认取值**： 不涉及。
 
@@ -82,7 +82,7 @@ class ShootScriptShowItem:
 
     @sequence_no.setter
     def sequence_no(self, sequence_no):
-        """Sets the sequence_no of this ShootScriptShowItem.
+        r"""Sets the sequence_no of this ShootScriptShowItem.
 
         **参数解释**： 剧本序号。 **约束限制**： 同一个剧本序号不重复。 **默认取值**： 不涉及。
 
@@ -93,7 +93,7 @@ class ShootScriptShowItem:
 
     @property
     def shoot_script(self):
-        """Gets the shoot_script of this ShootScriptShowItem.
+        r"""Gets the shoot_script of this ShootScriptShowItem.
 
         :return: The shoot_script of this ShootScriptShowItem.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ShootScriptDetail`
@@ -102,7 +102,7 @@ class ShootScriptShowItem:
 
     @shoot_script.setter
     def shoot_script(self, shoot_script):
-        """Sets the shoot_script of this ShootScriptShowItem.
+        r"""Sets the shoot_script of this ShootScriptShowItem.
 
         :param shoot_script: The shoot_script of this ShootScriptShowItem.
         :type shoot_script: :class:`huaweicloudsdkmetastudio.v1.ShootScriptDetail`
@@ -111,7 +111,7 @@ class ShootScriptShowItem:
 
     @property
     def subtitle_file_info(self):
-        """Gets the subtitle_file_info of this ShootScriptShowItem.
+        r"""Gets the subtitle_file_info of this ShootScriptShowItem.
 
         :return: The subtitle_file_info of this ShootScriptShowItem.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.SubtitleFiles`
@@ -120,7 +120,7 @@ class ShootScriptShowItem:
 
     @subtitle_file_info.setter
     def subtitle_file_info(self, subtitle_file_info):
-        """Sets the subtitle_file_info of this ShootScriptShowItem.
+        r"""Sets the subtitle_file_info of this ShootScriptShowItem.
 
         :param subtitle_file_info: The subtitle_file_info of this ShootScriptShowItem.
         :type subtitle_file_info: :class:`huaweicloudsdkmetastudio.v1.SubtitleFiles`
@@ -129,7 +129,7 @@ class ShootScriptShowItem:
 
     @property
     def audio_config(self):
-        """Gets the audio_config of this ShootScriptShowItem.
+        r"""Gets the audio_config of this ShootScriptShowItem.
 
         :return: The audio_config of this ShootScriptShowItem.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.AudioInfo`
@@ -138,7 +138,7 @@ class ShootScriptShowItem:
 
     @audio_config.setter
     def audio_config(self, audio_config):
-        """Sets the audio_config of this ShootScriptShowItem.
+        r"""Sets the audio_config of this ShootScriptShowItem.
 
         :param audio_config: The audio_config of this ShootScriptShowItem.
         :type audio_config: :class:`huaweicloudsdkmetastudio.v1.AudioInfo`
@@ -147,7 +147,7 @@ class ShootScriptShowItem:
 
     @property
     def preview_info(self):
-        """Gets the preview_info of this ShootScriptShowItem.
+        r"""Gets the preview_info of this ShootScriptShowItem.
 
         :return: The preview_info of this ShootScriptShowItem.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.PreviewInfo`
@@ -156,7 +156,7 @@ class ShootScriptShowItem:
 
     @preview_info.setter
     def preview_info(self, preview_info):
-        """Sets the preview_info of this ShootScriptShowItem.
+        r"""Sets the preview_info of this ShootScriptShowItem.
 
         :param preview_info: The preview_info of this ShootScriptShowItem.
         :type preview_info: :class:`huaweicloudsdkmetastudio.v1.PreviewInfo`

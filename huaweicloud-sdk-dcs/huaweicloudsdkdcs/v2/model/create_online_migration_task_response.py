@@ -26,7 +26,7 @@ class CreateOnlineMigrationTaskResponse(SdkResponse):
     }
 
     def __init__(self, instance_id=None):
-        """CreateOnlineMigrationTaskResponse
+        r"""CreateOnlineMigrationTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateOnlineMigrationTaskResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateOnlineMigrationTaskResponse.
+        r"""Gets the instance_id of this CreateOnlineMigrationTaskResponse.
 
         在线迁移任务ID。
 
@@ -55,7 +55,7 @@ class CreateOnlineMigrationTaskResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateOnlineMigrationTaskResponse.
+        r"""Sets the instance_id of this CreateOnlineMigrationTaskResponse.
 
         在线迁移任务ID。
 

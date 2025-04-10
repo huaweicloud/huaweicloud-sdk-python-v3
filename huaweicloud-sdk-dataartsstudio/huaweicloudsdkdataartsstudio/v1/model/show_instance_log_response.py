@@ -42,7 +42,7 @@ class ShowInstanceLogResponse(SdkResponse):
     }
 
     def __init__(self, enable_bridge=None, enable_profile=None, enable_classification=None, bridge_status=None, profile_status=None, classification_status=None, bridge_job_log=None, profile_job_log=None, classification_job_log=None):
-        """ShowInstanceLogResponse
+        r"""ShowInstanceLogResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class ShowInstanceLogResponse(SdkResponse):
 
     @property
     def enable_bridge(self):
-        """Gets the enable_bridge of this ShowInstanceLogResponse.
+        r"""Gets the enable_bridge of this ShowInstanceLogResponse.
 
         是否开启桥接模式
 
@@ -111,7 +111,7 @@ class ShowInstanceLogResponse(SdkResponse):
 
     @enable_bridge.setter
     def enable_bridge(self, enable_bridge):
-        """Sets the enable_bridge of this ShowInstanceLogResponse.
+        r"""Sets the enable_bridge of this ShowInstanceLogResponse.
 
         是否开启桥接模式
 
@@ -122,7 +122,7 @@ class ShowInstanceLogResponse(SdkResponse):
 
     @property
     def enable_profile(self):
-        """Gets the enable_profile of this ShowInstanceLogResponse.
+        r"""Gets the enable_profile of this ShowInstanceLogResponse.
 
         是否启用配置
 
@@ -133,7 +133,7 @@ class ShowInstanceLogResponse(SdkResponse):
 
     @enable_profile.setter
     def enable_profile(self, enable_profile):
-        """Sets the enable_profile of this ShowInstanceLogResponse.
+        r"""Sets the enable_profile of this ShowInstanceLogResponse.
 
         是否启用配置
 
@@ -144,7 +144,7 @@ class ShowInstanceLogResponse(SdkResponse):
 
     @property
     def enable_classification(self):
-        """Gets the enable_classification of this ShowInstanceLogResponse.
+        r"""Gets the enable_classification of this ShowInstanceLogResponse.
 
         是否开启分类
 
@@ -155,7 +155,7 @@ class ShowInstanceLogResponse(SdkResponse):
 
     @enable_classification.setter
     def enable_classification(self, enable_classification):
-        """Sets the enable_classification of this ShowInstanceLogResponse.
+        r"""Sets the enable_classification of this ShowInstanceLogResponse.
 
         是否开启分类
 
@@ -166,7 +166,7 @@ class ShowInstanceLogResponse(SdkResponse):
 
     @property
     def bridge_status(self):
-        """Gets the bridge_status of this ShowInstanceLogResponse.
+        r"""Gets the bridge_status of this ShowInstanceLogResponse.
 
         桥接状态
 
@@ -177,7 +177,7 @@ class ShowInstanceLogResponse(SdkResponse):
 
     @bridge_status.setter
     def bridge_status(self, bridge_status):
-        """Sets the bridge_status of this ShowInstanceLogResponse.
+        r"""Sets the bridge_status of this ShowInstanceLogResponse.
 
         桥接状态
 
@@ -188,7 +188,7 @@ class ShowInstanceLogResponse(SdkResponse):
 
     @property
     def profile_status(self):
-        """Gets the profile_status of this ShowInstanceLogResponse.
+        r"""Gets the profile_status of this ShowInstanceLogResponse.
 
         配置状态
 
@@ -199,7 +199,7 @@ class ShowInstanceLogResponse(SdkResponse):
 
     @profile_status.setter
     def profile_status(self, profile_status):
-        """Sets the profile_status of this ShowInstanceLogResponse.
+        r"""Sets the profile_status of this ShowInstanceLogResponse.
 
         配置状态
 
@@ -210,7 +210,7 @@ class ShowInstanceLogResponse(SdkResponse):
 
     @property
     def classification_status(self):
-        """Gets the classification_status of this ShowInstanceLogResponse.
+        r"""Gets the classification_status of this ShowInstanceLogResponse.
 
         分类状态
 
@@ -221,7 +221,7 @@ class ShowInstanceLogResponse(SdkResponse):
 
     @classification_status.setter
     def classification_status(self, classification_status):
-        """Sets the classification_status of this ShowInstanceLogResponse.
+        r"""Sets the classification_status of this ShowInstanceLogResponse.
 
         分类状态
 
@@ -232,7 +232,7 @@ class ShowInstanceLogResponse(SdkResponse):
 
     @property
     def bridge_job_log(self):
-        """Gets the bridge_job_log of this ShowInstanceLogResponse.
+        r"""Gets the bridge_job_log of this ShowInstanceLogResponse.
 
         桥接作业日志
 
@@ -243,7 +243,7 @@ class ShowInstanceLogResponse(SdkResponse):
 
     @bridge_job_log.setter
     def bridge_job_log(self, bridge_job_log):
-        """Sets the bridge_job_log of this ShowInstanceLogResponse.
+        r"""Sets the bridge_job_log of this ShowInstanceLogResponse.
 
         桥接作业日志
 
@@ -254,7 +254,7 @@ class ShowInstanceLogResponse(SdkResponse):
 
     @property
     def profile_job_log(self):
-        """Gets the profile_job_log of this ShowInstanceLogResponse.
+        r"""Gets the profile_job_log of this ShowInstanceLogResponse.
 
         配置作业日志
 
@@ -265,7 +265,7 @@ class ShowInstanceLogResponse(SdkResponse):
 
     @profile_job_log.setter
     def profile_job_log(self, profile_job_log):
-        """Sets the profile_job_log of this ShowInstanceLogResponse.
+        r"""Sets the profile_job_log of this ShowInstanceLogResponse.
 
         配置作业日志
 
@@ -276,7 +276,7 @@ class ShowInstanceLogResponse(SdkResponse):
 
     @property
     def classification_job_log(self):
-        """Gets the classification_job_log of this ShowInstanceLogResponse.
+        r"""Gets the classification_job_log of this ShowInstanceLogResponse.
 
         分类作业日志
 
@@ -287,7 +287,7 @@ class ShowInstanceLogResponse(SdkResponse):
 
     @classification_job_log.setter
     def classification_job_log(self, classification_job_log):
-        """Sets the classification_job_log of this ShowInstanceLogResponse.
+        r"""Sets the classification_job_log of this ShowInstanceLogResponse.
 
         分类作业日志
 

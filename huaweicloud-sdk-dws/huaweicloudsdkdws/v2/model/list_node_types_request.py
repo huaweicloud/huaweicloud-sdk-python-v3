@@ -23,7 +23,7 @@ class ListNodeTypesRequest:
     }
 
     def __init__(self):
-        """ListNodeTypesRequest
+        r"""ListNodeTypesRequest
 
         The model defined in huaweicloud sdk
 

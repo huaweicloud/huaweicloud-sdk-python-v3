@@ -34,7 +34,7 @@ class LtsClient(Client):
         return client_builder
 
     def create_access_config(self, request):
-        """创建日志接入
+        r"""创建日志接入
 
         创建日志接入
         
@@ -99,7 +99,7 @@ class LtsClient(Client):
         return http_info
 
     def create_agency_access(self, request):
-        """新建跨账号日志接入
+        r"""新建跨账号日志接入
 
         新建跨账号日志接入
         
@@ -164,7 +164,7 @@ class LtsClient(Client):
         return http_info
 
     def create_dash_board(self, request):
-        """创建仪表盘
+        r"""创建仪表盘
 
         创建仪表盘
         
@@ -229,7 +229,7 @@ class LtsClient(Client):
         return http_info
 
     def create_dashboard_group(self, request):
-        """创建仪表盘分组
+        r"""创建仪表盘分组
 
         创建仪表盘分组
         
@@ -294,7 +294,7 @@ class LtsClient(Client):
         return http_info
 
     def create_host_group(self, request):
-        """创建主机组
+        r"""创建主机组
 
         创建主机组
         
@@ -359,7 +359,7 @@ class LtsClient(Client):
         return http_info
 
     def create_keywords_alarm_rule(self, request):
-        """创建关键词告警规则
+        r"""创建关键词告警规则
 
         该接口用于创建关键词告警，目前每个帐户最多可以创建共200个关键词告警与SQL告警。
         
@@ -424,7 +424,7 @@ class LtsClient(Client):
         return http_info
 
     def create_log_dump_obs(self, request):
-        """创建日志转储（旧版）
+        r"""创建日志转储（旧版）
 
         该接口用于将指定的一个或多个日志流的日志转储到OBS服务。
         
@@ -489,7 +489,7 @@ class LtsClient(Client):
         return http_info
 
     def create_log_group(self, request):
-        """创建日志组
+        r"""创建日志组
 
         该接口用于创建一个日志组
         
@@ -554,7 +554,7 @@ class LtsClient(Client):
         return http_info
 
     def create_log_stream(self, request):
-        """创建日志流
+        r"""创建日志流
 
         该接口用于创建某个指定日志组下的日志流
         
@@ -621,7 +621,7 @@ class LtsClient(Client):
         return http_info
 
     def create_log_stream_index(self, request):
-        """向指定流创建索引
+        r"""向指定流创建索引
 
         向指定流创建索引
         
@@ -690,7 +690,7 @@ class LtsClient(Client):
         return http_info
 
     def create_notification_template(self, request):
-        """创建消息模板
+        r"""创建消息模板
 
         该接口用于创建通知模板，目前每个帐户最多可以创建共100个通知模板，创建后名称不可修改。
         
@@ -757,7 +757,7 @@ class LtsClient(Client):
         return http_info
 
     def create_search_criterias(self, request):
-        """添加快速查询
+        r"""添加快速查询
 
         添加快速查询
         
@@ -826,7 +826,7 @@ class LtsClient(Client):
         return http_info
 
     def create_struct_config(self, request):
-        """通过结构化模板创建结构化配置（新）
+        r"""通过结构化模板创建结构化配置（新）
 
         该接口通过结构化模板创建结构化配置。
         
@@ -891,7 +891,7 @@ class LtsClient(Client):
         return http_info
 
     def create_struct_template(self, request):
-        """创建结构化配置
+        r"""创建结构化配置
 
         该接口用于创建指定日志流下的结构化配置。
         
@@ -956,7 +956,7 @@ class LtsClient(Client):
         return http_info
 
     def create_tags(self, request):
-        """create_tags
+        r"""create_tags
 
         添加标签
         
@@ -1025,7 +1025,7 @@ class LtsClient(Client):
         return http_info
 
     def create_transfer(self, request):
-        """创建日志转储（新版）
+        r"""创建日志转储（新版）
 
         该接口用于创建OBS转储，DIS转储，DMS转储。
         
@@ -1090,7 +1090,7 @@ class LtsClient(Client):
         return http_info
 
     def createfavorite(self, request):
-        """创建日志收藏
+        r"""创建日志收藏
 
         创建日志收藏
         
@@ -1155,7 +1155,7 @@ class LtsClient(Client):
         return http_info
 
     def delete_access_config(self, request):
-        """删除日志接入
+        r"""删除日志接入
 
         删除日志接入
         
@@ -1220,7 +1220,7 @@ class LtsClient(Client):
         return http_info
 
     def delete_active_alarms(self, request):
-        """删除活动告警
+        r"""删除活动告警
 
         该接口用于删除活动告警
         
@@ -1287,7 +1287,7 @@ class LtsClient(Client):
         return http_info
 
     def delete_dashboard(self, request):
-        """删除仪表盘
+        r"""删除仪表盘
 
         删除仪表盘
         
@@ -1354,7 +1354,7 @@ class LtsClient(Client):
         return http_info
 
     def delete_host_group(self, request):
-        """删除主机组
+        r"""删除主机组
 
         删除主机组
         
@@ -1419,7 +1419,7 @@ class LtsClient(Client):
         return http_info
 
     def delete_keywords_alarm_rule(self, request):
-        """删除关键词告警规则
+        r"""删除关键词告警规则
 
         该接口用于删除关键词告警。
         
@@ -1484,7 +1484,7 @@ class LtsClient(Client):
         return http_info
 
     def delete_log_group(self, request):
-        """删除日志组
+        r"""删除日志组
 
         该接口用于删除指定日志组。当日志组中的日志流配置了日志转储，需要取消日志转储后才可删除。
         
@@ -1549,7 +1549,7 @@ class LtsClient(Client):
         return http_info
 
     def delete_log_stream(self, request):
-        """删除日志流
+        r"""删除日志流
 
         该接口用于删除指定日志组下的指定日志流。当该日志流配置了日志转储，需要取消日志转储后才可删除。
         
@@ -1616,7 +1616,7 @@ class LtsClient(Client):
         return http_info
 
     def delete_notification_template(self, request):
-        """删除消息模板
+        r"""删除消息模板
 
         该接口用于删除通知模板。
         
@@ -1683,7 +1683,7 @@ class LtsClient(Client):
         return http_info
 
     def delete_search_criterias(self, request):
-        """删除快速查询
+        r"""删除快速查询
 
         删除快速查询
         
@@ -1752,7 +1752,7 @@ class LtsClient(Client):
         return http_info
 
     def delete_struct_template(self, request):
-        """删除结构化配置
+        r"""删除结构化配置
 
         该接口用于删除指定日志流下的结构化配置。
         
@@ -1817,7 +1817,7 @@ class LtsClient(Client):
         return http_info
 
     def delete_transfer(self, request):
-        """删除日志转储
+        r"""删除日志转储
 
         该接口用于删除OBS转储，DIS转储，DMS转储。
         
@@ -1882,7 +1882,7 @@ class LtsClient(Client):
         return http_info
 
     def deletefavorite(self, request):
-        """取消收藏
+        r"""取消收藏
 
         取消收藏
         
@@ -1947,7 +1947,7 @@ class LtsClient(Client):
         return http_info
 
     def disable_log_collection(self, request):
-        """关闭超额采集开关
+        r"""关闭超额采集开关
 
         该接口用于将超额采集日志功能关闭。
         
@@ -2010,7 +2010,7 @@ class LtsClient(Client):
         return http_info
 
     def enable_log_collection(self, request):
-        """打开超额采集开关
+        r"""打开超额采集开关
 
         该接口用于将超额采集日志功能打开。
         
@@ -2073,7 +2073,7 @@ class LtsClient(Client):
         return http_info
 
     def list_access_config(self, request):
-        """查询日志接入
+        r"""查询日志接入
 
         查询日志接入列表
         
@@ -2138,7 +2138,7 @@ class LtsClient(Client):
         return http_info
 
     def list_active_or_history_alarms(self, request):
-        """查询活动或历史告警列表
+        r"""查询活动或历史告警列表
 
         该接口用于查询告警列表
         
@@ -2211,7 +2211,7 @@ class LtsClient(Client):
         return http_info
 
     def list_breif_struct_template(self, request):
-        """查询结构化模板简略列表
+        r"""查询结构化模板简略列表
 
         该接口用于查询结构化模板简略列表。
         
@@ -2274,7 +2274,7 @@ class LtsClient(Client):
         return http_info
 
     def list_charts(self, request):
-        """查询日志流图表
+        r"""查询日志流图表
 
         该接口用于查询日志流图表
         
@@ -2345,7 +2345,7 @@ class LtsClient(Client):
         return http_info
 
     def list_criterias(self, request):
-        """获取快速查询
+        r"""获取快速查询
 
         获取快速查询
         
@@ -2414,7 +2414,7 @@ class LtsClient(Client):
         return http_info
 
     def list_history_sql(self, request):
-        """查询用户历史sql
+        r"""查询用户历史sql
 
         查询用户历史sql
         
@@ -2481,7 +2481,7 @@ class LtsClient(Client):
         return http_info
 
     def list_host(self, request):
-        """查询主机信息
+        r"""查询主机信息
 
         查询主机列表
         
@@ -2546,7 +2546,7 @@ class LtsClient(Client):
         return http_info
 
     def list_host_group(self, request):
-        """查询主机组
+        r"""查询主机组
 
         查询主机组列表
         
@@ -2611,7 +2611,7 @@ class LtsClient(Client):
         return http_info
 
     def list_keywords_alarm_rules(self, request):
-        """查询关键词告警规则
+        r"""查询关键词告警规则
 
         该接口用于查询关键词告警。
         
@@ -2674,7 +2674,7 @@ class LtsClient(Client):
         return http_info
 
     def list_log_context(self, request):
-        """查询上下文日志
+        r"""查询上下文日志
 
         查询上下文日志 该接口用于查询指定日志前（上文）后（下文）的若干条日志。
         
@@ -2743,7 +2743,7 @@ class LtsClient(Client):
         return http_info
 
     def list_log_groups(self, request):
-        """查询账号下所有日志组
+        r"""查询账号下所有日志组
 
         该接口用于查询账号下所有日志组。
         
@@ -2806,7 +2806,7 @@ class LtsClient(Client):
         return http_info
 
     def list_log_histogram(self, request):
-        """查询日志直方图
+        r"""查询日志直方图
 
         查询关键词搜索条数
         
@@ -2871,7 +2871,7 @@ class LtsClient(Client):
         return http_info
 
     def list_log_stream(self, request):
-        """查询指定日志组下的所有日志流
+        r"""查询指定日志组下的所有日志流
 
         该接口用于查询指定日志组下的所有日志流信息。
         
@@ -2936,7 +2936,7 @@ class LtsClient(Client):
         return http_info
 
     def list_log_streams(self, request):
-        """查询日志流信息
+        r"""查询日志流信息
 
         该接口用于查询LTS日志流信息。
         
@@ -3003,7 +3003,7 @@ class LtsClient(Client):
         return http_info
 
     def list_logs(self, request):
-        """查询日志
+        r"""查询日志
 
         该接口用于查询指定日志流下的日志内容。
         
@@ -3072,7 +3072,7 @@ class LtsClient(Client):
         return http_info
 
     def list_notification_template(self, request):
-        """预览消息模板邮件格式
+        r"""预览消息模板邮件格式
 
         该接口用于预览通知模板邮件格式
         
@@ -3139,7 +3139,7 @@ class LtsClient(Client):
         return http_info
 
     def list_notification_templates(self, request):
-        """查询消息模板
+        r"""查询消息模板
 
         该接口用于查询通知模板。
         
@@ -3208,7 +3208,7 @@ class LtsClient(Client):
         return http_info
 
     def list_notification_topics(self, request):
-        """查询SMN主题
+        r"""查询SMN主题
 
         该接口用于查询SMN主题
         
@@ -3275,7 +3275,7 @@ class LtsClient(Client):
         return http_info
 
     def list_query_all_search_criterias(self, request):
-        """查询日志组下所有快速查询
+        r"""查询日志组下所有快速查询
 
         查询日志组下所有快速查询
         
@@ -3340,7 +3340,7 @@ class LtsClient(Client):
         return http_info
 
     def list_query_structured_logs(self, request):
-        """查询结构化日志
+        r"""查询结构化日志
 
         该接口用于查询指定日志流下的结构化日志内容。
         
@@ -3409,7 +3409,7 @@ class LtsClient(Client):
         return http_info
 
     def list_struct_template(self, request):
-        """查询结构化模板
+        r"""查询结构化模板
 
         该接口用于查询结构化模板。
         
@@ -3474,7 +3474,7 @@ class LtsClient(Client):
         return http_info
 
     def list_structured_logs_with_time_range(self, request):
-        """查询结构化日志（新版）
+        r"""查询结构化日志（新版）
 
         该接口用于查询指定日志流下的结构化日志内容（新版）。
         
@@ -3541,7 +3541,7 @@ class LtsClient(Client):
         return http_info
 
     def list_time_line_traffic_statistics(self, request):
-        """按时间段统计查询资源
+        r"""按时间段统计查询资源
 
         按时间段统计查询资源
         
@@ -3608,7 +3608,7 @@ class LtsClient(Client):
         return http_info
 
     def list_topn_traffic_statistics(self, request):
-        """统计top n的日志组或日志流流量
+        r"""统计top n的日志组或日志流流量
 
         统计top n的日志组或日志流流量
         
@@ -3673,7 +3673,7 @@ class LtsClient(Client):
         return http_info
 
     def list_transfers(self, request):
-        """查询日志转储
+        r"""查询日志转储
 
         该接口用于查询OBS转储，DIS转储，DMS转储配置。
         
@@ -3746,7 +3746,7 @@ class LtsClient(Client):
         return http_info
 
     def register_dms_kafka_instance(self, request):
-        """注册DMS kafka实例
+        r"""注册DMS kafka实例
 
         该接口用于注册DMS kafka实例。
         
@@ -3811,7 +3811,7 @@ class LtsClient(Client):
         return http_info
 
     def show_admin_config(self, request):
-        """获取日志汇聚开关
+        r"""获取日志汇聚开关
 
         只能由管理员或者委托管理员调用    获取日志汇聚开关
         
@@ -3874,7 +3874,7 @@ class LtsClient(Client):
         return http_info
 
     def show_log_converge_config(self, request):
-        """获取组织成员汇聚配置
+        r"""获取组织成员汇聚配置
 
         只能由组织管理员或者委托管理员调用    获取组织成员汇聚配置
         
@@ -3939,7 +3939,7 @@ class LtsClient(Client):
         return http_info
 
     def show_member_group_and_stream(self, request):
-        """获取组织成员日志组日志流
+        r"""获取组织成员日志组日志流
 
         只能由管理员或者委托管理员调用，获取组织成员日志组日志流
         
@@ -4004,7 +4004,7 @@ class LtsClient(Client):
         return http_info
 
     def show_notification_template(self, request):
-        """查询单个消息模板
+        r"""查询单个消息模板
 
         该接口用于查询单个通知模板
         
@@ -4071,7 +4071,7 @@ class LtsClient(Client):
         return http_info
 
     def show_struct_template(self, request):
-        """查询结构化配置
+        r"""查询结构化配置
 
         该接口用于查询指定日志流下的结构化配置内容。
         
@@ -4138,7 +4138,7 @@ class LtsClient(Client):
         return http_info
 
     def update_access_config(self, request):
-        """修改日志接入
+        r"""修改日志接入
 
         修改日志接入
         
@@ -4203,7 +4203,7 @@ class LtsClient(Client):
         return http_info
 
     def update_host_group(self, request):
-        """修改主机组
+        r"""修改主机组
 
         修改主机组
         
@@ -4268,7 +4268,7 @@ class LtsClient(Client):
         return http_info
 
     def update_keywords_alarm_rule(self, request):
-        """修改关键词告警规则
+        r"""修改关键词告警规则
 
         该接口用于修改关键词告警。
         
@@ -4333,7 +4333,7 @@ class LtsClient(Client):
         return http_info
 
     def update_log_converge_config(self, request):
-        """更新汇聚配置
+        r"""更新汇聚配置
 
         只能由管理员或者委托管理员 ,更新汇聚配置
         
@@ -4398,7 +4398,7 @@ class LtsClient(Client):
         return http_info
 
     def update_log_group(self, request):
-        """修改日志组
+        r"""修改日志组
 
         该接口用于修改指定日志组下的日志存储时长。
         
@@ -4465,7 +4465,7 @@ class LtsClient(Client):
         return http_info
 
     def update_log_stream(self, request):
-        """修改日志流
+        r"""修改日志流
 
         该接口用于修改指定日志流下的日志存储时长。
         
@@ -4534,7 +4534,7 @@ class LtsClient(Client):
         return http_info
 
     def update_notification_template(self, request):
-        """修改消息模板
+        r"""修改消息模板
 
         该接口用于修改通知模板,根据名称进行修改。
         
@@ -4601,7 +4601,7 @@ class LtsClient(Client):
         return http_info
 
     def update_struct_config(self, request):
-        """通过结构化模板修改结构化配置（新）
+        r"""通过结构化模板修改结构化配置（新）
 
         该接口通过结构化模板修改结构化配置
         
@@ -4666,7 +4666,7 @@ class LtsClient(Client):
         return http_info
 
     def update_struct_template(self, request):
-        """修改结构化配置
+        r"""修改结构化配置
 
         该接口用于修改指定日志流下的结构化配置。
         
@@ -4731,7 +4731,7 @@ class LtsClient(Client):
         return http_info
 
     def update_switch(self, request):
-        """修改日志汇聚开关
+        r"""修改日志汇聚开关
 
         只能由管理员或者委托管理员调用     修改日志汇聚开关
         
@@ -4796,7 +4796,7 @@ class LtsClient(Client):
         return http_info
 
     def update_transfer(self, request):
-        """更新日志转储
+        r"""更新日志转储
 
         该接口用于更新OBS转储，DIS转储，DMS转储。
         
@@ -4861,7 +4861,7 @@ class LtsClient(Client):
         return http_info
 
     def create_aom_mapping_rules(self, request):
-        """创建接入规则
+        r"""创建接入规则
 
         该接口用于创建aom日志接入lts规则
         
@@ -4928,7 +4928,7 @@ class LtsClient(Client):
         return http_info
 
     def delete_aom_mapping_rules(self, request):
-        """删除接入规则
+        r"""删除接入规则
 
         该接口用于删除lts接入规则。
         
@@ -4993,7 +4993,7 @@ class LtsClient(Client):
         return http_info
 
     def show_aom_mapping_rule(self, request):
-        """查询单个接入规则
+        r"""查询单个接入规则
 
         该接口用于查询单个aom日志接入lts
         
@@ -5058,7 +5058,7 @@ class LtsClient(Client):
         return http_info
 
     def show_aom_mapping_rules(self, request):
-        """查询所有接入规则
+        r"""查询所有接入规则
 
         该接口用于查询aom日志所有接入lts规则
         
@@ -5121,7 +5121,7 @@ class LtsClient(Client):
         return http_info
 
     def update_aom_mapping_rules(self, request):
-        """修改接入规则
+        r"""修改接入规则
 
         该接口用于修改接入规则
         
@@ -5186,7 +5186,7 @@ class LtsClient(Client):
         return http_info
 
     def consumer_group_heart_beat(self, request):
-        """消费者发送心跳到服务端
+        r"""消费者发送心跳到服务端
 
         消费者发送心跳到服务端
         
@@ -5259,7 +5259,7 @@ class LtsClient(Client):
         return http_info
 
     def create_consumer_group(self, request):
-        """创建消费组
+        r"""创建消费组
 
         创建消费组
         
@@ -5328,7 +5328,7 @@ class LtsClient(Client):
         return http_info
 
     def delete_consumer_group(self, request):
-        """删除消费组
+        r"""删除消费组
 
         删除消费组
         
@@ -5397,7 +5397,7 @@ class LtsClient(Client):
         return http_info
 
     def list_consumer_group(self, request):
-        """查询消费组列表
+        r"""查询消费组列表
 
         查询消费组列表
         
@@ -5464,7 +5464,7 @@ class LtsClient(Client):
         return http_info
 
     def list_details_consumer_group(self, request):
-        """查询消费组详情
+        r"""查询消费组详情
 
         查询消费组详情
         
@@ -5533,7 +5533,7 @@ class LtsClient(Client):
         return http_info
 
     def show_cursor_by_time(self, request):
-        """通过时间获取消费游标
+        r"""通过时间获取消费游标
 
         通过时间查询cursor
         
@@ -5604,7 +5604,7 @@ class LtsClient(Client):
         return http_info
 
     def show_cursor_time(self, request):
-        """通过消费游标获取时间
+        r"""通过消费游标获取时间
 
         通过cursor查询服务端时间
         
@@ -5675,7 +5675,7 @@ class LtsClient(Client):
         return http_info
 
     def show_log_stream_shards(self, request):
-        """流消费获取Shards
+        r"""流消费获取Shards
 
         流消费获取所有的query shards
         
@@ -5742,7 +5742,7 @@ class LtsClient(Client):
         return http_info
 
     def update_check_point(self, request):
-        """更新消费组位点
+        r"""更新消费组位点
 
         更新消费组位点
         
@@ -5815,7 +5815,7 @@ class LtsClient(Client):
         return http_info
 
     def create_sql_alarm_rule(self, request):
-        """创建SQL告警规则
+        r"""创建SQL告警规则
 
         该接口用于创建SQL告警，目前每个帐户最多可以创建共200个关键词告警与SQL告警
         
@@ -5880,7 +5880,7 @@ class LtsClient(Client):
         return http_info
 
     def delete_sql_alarm_rule(self, request):
-        """删除SQL告警规则
+        r"""删除SQL告警规则
 
         该接口用于删除SQL告警
         
@@ -5945,7 +5945,7 @@ class LtsClient(Client):
         return http_info
 
     def list_sql_alarm_rules(self, request):
-        """查询SQL告警规则
+        r"""查询SQL告警规则
 
         该接口用于查询SQL告警
         
@@ -6008,7 +6008,7 @@ class LtsClient(Client):
         return http_info
 
     def update_alarm_rule_status(self, request):
-        """切换告警规则状态
+        r"""切换告警规则状态
 
         改变告警规则状态
         
@@ -6073,7 +6073,7 @@ class LtsClient(Client):
         return http_info
 
     def update_sql_alarm_rule(self, request):
-        """修改SQL告警规则
+        r"""修改SQL告警规则
 
         该接口用于修改SQL告警
         

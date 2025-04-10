@@ -27,7 +27,7 @@ class InnerLatencyStats:
     }
 
     def __init__(self, max_inner_latency=None, avg_inner_latency=None):
-        """InnerLatencyStats
+        r"""InnerLatencyStats
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class InnerLatencyStats:
 
     @property
     def max_inner_latency(self):
-        """Gets the max_inner_latency of this InnerLatencyStats.
+        r"""Gets the max_inner_latency of this InnerLatencyStats.
 
         最大网关内部延时
 
@@ -61,7 +61,7 @@ class InnerLatencyStats:
 
     @max_inner_latency.setter
     def max_inner_latency(self, max_inner_latency):
-        """Sets the max_inner_latency of this InnerLatencyStats.
+        r"""Sets the max_inner_latency of this InnerLatencyStats.
 
         最大网关内部延时
 
@@ -72,7 +72,7 @@ class InnerLatencyStats:
 
     @property
     def avg_inner_latency(self):
-        """Gets the avg_inner_latency of this InnerLatencyStats.
+        r"""Gets the avg_inner_latency of this InnerLatencyStats.
 
         平均网关内部延时
 
@@ -83,7 +83,7 @@ class InnerLatencyStats:
 
     @avg_inner_latency.setter
     def avg_inner_latency(self, avg_inner_latency):
-        """Sets the avg_inner_latency of this InnerLatencyStats.
+        r"""Sets the avg_inner_latency of this InnerLatencyStats.
 
         平均网关内部延时
 

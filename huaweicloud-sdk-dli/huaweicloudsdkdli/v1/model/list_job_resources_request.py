@@ -27,7 +27,7 @@ class ListJobResourcesRequest:
     }
 
     def __init__(self, kind=None, tags=None):
-        """ListJobResourcesRequest
+        r"""ListJobResourcesRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListJobResourcesRequest:
 
     @property
     def kind(self):
-        """Gets the kind of this ListJobResourcesRequest.
+        r"""Gets the kind of this ListJobResourcesRequest.
 
         :return: The kind of this ListJobResourcesRequest.
         :rtype: str
@@ -59,7 +59,7 @@ class ListJobResourcesRequest:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ListJobResourcesRequest.
+        r"""Sets the kind of this ListJobResourcesRequest.
 
         :param kind: The kind of this ListJobResourcesRequest.
         :type kind: str
@@ -68,7 +68,7 @@ class ListJobResourcesRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this ListJobResourcesRequest.
+        r"""Gets the tags of this ListJobResourcesRequest.
 
         :return: The tags of this ListJobResourcesRequest.
         :rtype: str
@@ -77,7 +77,7 @@ class ListJobResourcesRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListJobResourcesRequest.
+        r"""Sets the tags of this ListJobResourcesRequest.
 
         :param tags: The tags of this ListJobResourcesRequest.
         :type tags: str

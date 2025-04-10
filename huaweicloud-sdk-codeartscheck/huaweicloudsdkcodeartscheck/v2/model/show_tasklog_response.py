@@ -28,7 +28,7 @@ class ShowTasklogResponse(SdkResponse):
     }
 
     def __init__(self, param_info=None, log_info=None):
-        """ShowTasklogResponse
+        r"""ShowTasklogResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowTasklogResponse(SdkResponse):
 
     @property
     def param_info(self):
-        """Gets the param_info of this ShowTasklogResponse.
+        r"""Gets the param_info of this ShowTasklogResponse.
 
         :return: The param_info of this ShowTasklogResponse.
         :rtype: :class:`huaweicloudsdkcodeartscheck.v2.ParamInfo`
@@ -60,7 +60,7 @@ class ShowTasklogResponse(SdkResponse):
 
     @param_info.setter
     def param_info(self, param_info):
-        """Sets the param_info of this ShowTasklogResponse.
+        r"""Sets the param_info of this ShowTasklogResponse.
 
         :param param_info: The param_info of this ShowTasklogResponse.
         :type param_info: :class:`huaweicloudsdkcodeartscheck.v2.ParamInfo`
@@ -69,7 +69,7 @@ class ShowTasklogResponse(SdkResponse):
 
     @property
     def log_info(self):
-        """Gets the log_info of this ShowTasklogResponse.
+        r"""Gets the log_info of this ShowTasklogResponse.
 
         日志信息
 
@@ -80,7 +80,7 @@ class ShowTasklogResponse(SdkResponse):
 
     @log_info.setter
     def log_info(self, log_info):
-        """Sets the log_info of this ShowTasklogResponse.
+        r"""Sets the log_info of this ShowTasklogResponse.
 
         日志信息
 

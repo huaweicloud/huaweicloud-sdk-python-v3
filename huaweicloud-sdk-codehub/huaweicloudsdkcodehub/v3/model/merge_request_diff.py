@@ -37,7 +37,7 @@ class MergeRequestDiff:
     }
 
     def __init__(self, base_commit_sha=None, commits_count=None, created_at=None, head_commit_sha=None, merge_request_id=None, start_commit_sha=None, updated_at=None):
-        """MergeRequestDiff
+        r"""MergeRequestDiff
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class MergeRequestDiff:
 
     @property
     def base_commit_sha(self):
-        """Gets the base_commit_sha of this MergeRequestDiff.
+        r"""Gets the base_commit_sha of this MergeRequestDiff.
 
         base提交
 
@@ -96,7 +96,7 @@ class MergeRequestDiff:
 
     @base_commit_sha.setter
     def base_commit_sha(self, base_commit_sha):
-        """Sets the base_commit_sha of this MergeRequestDiff.
+        r"""Sets the base_commit_sha of this MergeRequestDiff.
 
         base提交
 
@@ -107,7 +107,7 @@ class MergeRequestDiff:
 
     @property
     def commits_count(self):
-        """Gets the commits_count of this MergeRequestDiff.
+        r"""Gets the commits_count of this MergeRequestDiff.
 
         提交数
 
@@ -118,7 +118,7 @@ class MergeRequestDiff:
 
     @commits_count.setter
     def commits_count(self, commits_count):
-        """Sets the commits_count of this MergeRequestDiff.
+        r"""Sets the commits_count of this MergeRequestDiff.
 
         提交数
 
@@ -129,7 +129,7 @@ class MergeRequestDiff:
 
     @property
     def created_at(self):
-        """Gets the created_at of this MergeRequestDiff.
+        r"""Gets the created_at of this MergeRequestDiff.
 
         创建时间
 
@@ -140,7 +140,7 @@ class MergeRequestDiff:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this MergeRequestDiff.
+        r"""Sets the created_at of this MergeRequestDiff.
 
         创建时间
 
@@ -151,7 +151,7 @@ class MergeRequestDiff:
 
     @property
     def head_commit_sha(self):
-        """Gets the head_commit_sha of this MergeRequestDiff.
+        r"""Gets the head_commit_sha of this MergeRequestDiff.
 
         head提交
 
@@ -162,7 +162,7 @@ class MergeRequestDiff:
 
     @head_commit_sha.setter
     def head_commit_sha(self, head_commit_sha):
-        """Sets the head_commit_sha of this MergeRequestDiff.
+        r"""Sets the head_commit_sha of this MergeRequestDiff.
 
         head提交
 
@@ -173,7 +173,7 @@ class MergeRequestDiff:
 
     @property
     def merge_request_id(self):
-        """Gets the merge_request_id of this MergeRequestDiff.
+        r"""Gets the merge_request_id of this MergeRequestDiff.
 
         合并请求id
 
@@ -184,7 +184,7 @@ class MergeRequestDiff:
 
     @merge_request_id.setter
     def merge_request_id(self, merge_request_id):
-        """Sets the merge_request_id of this MergeRequestDiff.
+        r"""Sets the merge_request_id of this MergeRequestDiff.
 
         合并请求id
 
@@ -195,7 +195,7 @@ class MergeRequestDiff:
 
     @property
     def start_commit_sha(self):
-        """Gets the start_commit_sha of this MergeRequestDiff.
+        r"""Gets the start_commit_sha of this MergeRequestDiff.
 
         start提交
 
@@ -206,7 +206,7 @@ class MergeRequestDiff:
 
     @start_commit_sha.setter
     def start_commit_sha(self, start_commit_sha):
-        """Sets the start_commit_sha of this MergeRequestDiff.
+        r"""Sets the start_commit_sha of this MergeRequestDiff.
 
         start提交
 
@@ -217,7 +217,7 @@ class MergeRequestDiff:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this MergeRequestDiff.
+        r"""Gets the updated_at of this MergeRequestDiff.
 
         更新时间
 
@@ -228,7 +228,7 @@ class MergeRequestDiff:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this MergeRequestDiff.
+        r"""Sets the updated_at of this MergeRequestDiff.
 
         更新时间
 

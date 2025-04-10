@@ -37,7 +37,7 @@ class CommonPoolDict:
     }
 
     def __init__(self, name=None, status=None, type=None, used=None, public_border_group=None, id=None, allow_share_bandwidth_types=None):
-        """CommonPoolDict
+        r"""CommonPoolDict
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class CommonPoolDict:
 
     @property
     def name(self):
-        """Gets the name of this CommonPoolDict.
+        r"""Gets the name of this CommonPoolDict.
 
         公共池名字
 
@@ -96,7 +96,7 @@ class CommonPoolDict:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CommonPoolDict.
+        r"""Sets the name of this CommonPoolDict.
 
         公共池名字
 
@@ -107,7 +107,7 @@ class CommonPoolDict:
 
     @property
     def status(self):
-        """Gets the status of this CommonPoolDict.
+        r"""Gets the status of this CommonPoolDict.
 
         状态
 
@@ -118,7 +118,7 @@ class CommonPoolDict:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CommonPoolDict.
+        r"""Sets the status of this CommonPoolDict.
 
         状态
 
@@ -129,7 +129,7 @@ class CommonPoolDict:
 
     @property
     def type(self):
-        """Gets the type of this CommonPoolDict.
+        r"""Gets the type of this CommonPoolDict.
 
         公共池类型，如bgp，sbgp等
 
@@ -140,7 +140,7 @@ class CommonPoolDict:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CommonPoolDict.
+        r"""Sets the type of this CommonPoolDict.
 
         公共池类型，如bgp，sbgp等
 
@@ -151,7 +151,7 @@ class CommonPoolDict:
 
     @property
     def used(self):
-        """Gets the used of this CommonPoolDict.
+        r"""Gets the used of this CommonPoolDict.
 
         已经使用的ip数量
 
@@ -162,7 +162,7 @@ class CommonPoolDict:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this CommonPoolDict.
+        r"""Sets the used of this CommonPoolDict.
 
         已经使用的ip数量
 
@@ -173,7 +173,7 @@ class CommonPoolDict:
 
     @property
     def public_border_group(self):
-        """Gets the public_border_group of this CommonPoolDict.
+        r"""Gets the public_border_group of this CommonPoolDict.
 
         功能说明：表示中心站点资源或者边缘站点资源 取值范围： center、边缘站点名称 约束：publicip只能绑定该字段相同的资源
 
@@ -184,7 +184,7 @@ class CommonPoolDict:
 
     @public_border_group.setter
     def public_border_group(self, public_border_group):
-        """Sets the public_border_group of this CommonPoolDict.
+        r"""Sets the public_border_group of this CommonPoolDict.
 
         功能说明：表示中心站点资源或者边缘站点资源 取值范围： center、边缘站点名称 约束：publicip只能绑定该字段相同的资源
 
@@ -195,7 +195,7 @@ class CommonPoolDict:
 
     @property
     def id(self):
-        """Gets the id of this CommonPoolDict.
+        r"""Gets the id of this CommonPoolDict.
 
         默认不展示，取值, 公共池ID
 
@@ -206,7 +206,7 @@ class CommonPoolDict:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CommonPoolDict.
+        r"""Sets the id of this CommonPoolDict.
 
         默认不展示，取值, 公共池ID
 
@@ -217,7 +217,7 @@ class CommonPoolDict:
 
     @property
     def allow_share_bandwidth_types(self):
-        """Gets the allow_share_bandwidth_types of this CommonPoolDict.
+        r"""Gets the allow_share_bandwidth_types of this CommonPoolDict.
 
         功能说明：表示此publicip可以加入的共享带宽类型列表，如果为空列表，则表示该           publicip不能加入任何共享带宽 约束：publicip只能加入到有该带宽类型的共享带宽中
 
@@ -228,7 +228,7 @@ class CommonPoolDict:
 
     @allow_share_bandwidth_types.setter
     def allow_share_bandwidth_types(self, allow_share_bandwidth_types):
-        """Sets the allow_share_bandwidth_types of this CommonPoolDict.
+        r"""Sets the allow_share_bandwidth_types of this CommonPoolDict.
 
         功能说明：表示此publicip可以加入的共享带宽类型列表，如果为空列表，则表示该           publicip不能加入任何共享带宽 约束：publicip只能加入到有该带宽类型的共享带宽中
 

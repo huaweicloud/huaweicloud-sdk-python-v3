@@ -28,7 +28,7 @@ class AssociateSiteNetworkBandwidthResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, site_connection=None):
-        """AssociateSiteNetworkBandwidthResponse
+        r"""AssociateSiteNetworkBandwidthResponse
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AssociateSiteNetworkBandwidthResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this AssociateSiteNetworkBandwidthResponse.
+        r"""Gets the request_id of this AssociateSiteNetworkBandwidthResponse.
 
         请求ID。
 
@@ -60,7 +60,7 @@ class AssociateSiteNetworkBandwidthResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this AssociateSiteNetworkBandwidthResponse.
+        r"""Sets the request_id of this AssociateSiteNetworkBandwidthResponse.
 
         请求ID。
 
@@ -71,7 +71,7 @@ class AssociateSiteNetworkBandwidthResponse(SdkResponse):
 
     @property
     def site_connection(self):
-        """Gets the site_connection of this AssociateSiteNetworkBandwidthResponse.
+        r"""Gets the site_connection of this AssociateSiteNetworkBandwidthResponse.
 
         :return: The site_connection of this AssociateSiteNetworkBandwidthResponse.
         :rtype: :class:`huaweicloudsdkcc.v3.SiteConnection`
@@ -80,7 +80,7 @@ class AssociateSiteNetworkBandwidthResponse(SdkResponse):
 
     @site_connection.setter
     def site_connection(self, site_connection):
-        """Sets the site_connection of this AssociateSiteNetworkBandwidthResponse.
+        r"""Sets the site_connection of this AssociateSiteNetworkBandwidthResponse.
 
         :param site_connection: The site_connection of this AssociateSiteNetworkBandwidthResponse.
         :type site_connection: :class:`huaweicloudsdkcc.v3.SiteConnection`

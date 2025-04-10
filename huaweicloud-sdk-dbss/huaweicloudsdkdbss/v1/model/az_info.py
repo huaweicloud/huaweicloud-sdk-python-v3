@@ -33,7 +33,7 @@ class AzInfo:
     }
 
     def __init__(self, zone_name=None, zone_number=None, az_type=None, alias=None, alias_us=None):
-        """AzInfo
+        r"""AzInfo
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class AzInfo:
 
     @property
     def zone_name(self):
-        """Gets the zone_name of this AzInfo.
+        r"""Gets the zone_name of this AzInfo.
 
         可用区名称
 
@@ -77,7 +77,7 @@ class AzInfo:
 
     @zone_name.setter
     def zone_name(self, zone_name):
-        """Sets the zone_name of this AzInfo.
+        r"""Sets the zone_name of this AzInfo.
 
         可用区名称
 
@@ -88,7 +88,7 @@ class AzInfo:
 
     @property
     def zone_number(self):
-        """Gets the zone_number of this AzInfo.
+        r"""Gets the zone_number of this AzInfo.
 
         可用区编号
 
@@ -99,7 +99,7 @@ class AzInfo:
 
     @zone_number.setter
     def zone_number(self, zone_number):
-        """Sets the zone_number of this AzInfo.
+        r"""Sets the zone_number of this AzInfo.
 
         可用区编号
 
@@ -110,7 +110,7 @@ class AzInfo:
 
     @property
     def az_type(self):
-        """Gets the az_type of this AzInfo.
+        r"""Gets the az_type of this AzInfo.
 
         可用区类型
 
@@ -121,7 +121,7 @@ class AzInfo:
 
     @az_type.setter
     def az_type(self, az_type):
-        """Sets the az_type of this AzInfo.
+        r"""Sets the az_type of this AzInfo.
 
         可用区类型
 
@@ -132,7 +132,7 @@ class AzInfo:
 
     @property
     def alias(self):
-        """Gets the alias of this AzInfo.
+        r"""Gets the alias of this AzInfo.
 
         可用区中文别名
 
@@ -143,7 +143,7 @@ class AzInfo:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this AzInfo.
+        r"""Sets the alias of this AzInfo.
 
         可用区中文别名
 
@@ -154,7 +154,7 @@ class AzInfo:
 
     @property
     def alias_us(self):
-        """Gets the alias_us of this AzInfo.
+        r"""Gets the alias_us of this AzInfo.
 
         可用区英文别名
 
@@ -165,7 +165,7 @@ class AzInfo:
 
     @alias_us.setter
     def alias_us(self, alias_us):
-        """Sets the alias_us of this AzInfo.
+        r"""Sets the alias_us of this AzInfo.
 
         可用区英文别名
 

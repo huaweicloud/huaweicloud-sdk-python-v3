@@ -25,7 +25,7 @@ class DeleteTaskGroupRequest:
     }
 
     def __init__(self, group_id=None):
-        """DeleteTaskGroupRequest
+        r"""DeleteTaskGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteTaskGroupRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this DeleteTaskGroupRequest.
+        r"""Gets the group_id of this DeleteTaskGroupRequest.
 
         任务组id
 
@@ -53,7 +53,7 @@ class DeleteTaskGroupRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this DeleteTaskGroupRequest.
+        r"""Sets the group_id of this DeleteTaskGroupRequest.
 
         任务组id
 

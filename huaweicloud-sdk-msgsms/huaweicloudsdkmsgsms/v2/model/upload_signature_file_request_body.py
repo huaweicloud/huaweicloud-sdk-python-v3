@@ -25,7 +25,7 @@ class UploadSignatureFileRequestBody:
     }
 
     def __init__(self, file=None):
-        """UploadSignatureFileRequestBody
+        r"""UploadSignatureFileRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UploadSignatureFileRequestBody:
 
     @property
     def file(self):
-        """Gets the file of this UploadSignatureFileRequestBody.
+        r"""Gets the file of this UploadSignatureFileRequestBody.
 
         营业执照文件
 
@@ -53,7 +53,7 @@ class UploadSignatureFileRequestBody:
 
     @file.setter
     def file(self, file):
-        """Sets the file of this UploadSignatureFileRequestBody.
+        r"""Sets the file of this UploadSignatureFileRequestBody.
 
         营业执照文件
 

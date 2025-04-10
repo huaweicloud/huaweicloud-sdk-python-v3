@@ -25,7 +25,7 @@ class PrinterBandwidthControlOptions:
     }
 
     def __init__(self, printer_bandwidth_control_value=None):
-        """PrinterBandwidthControlOptions
+        r"""PrinterBandwidthControlOptions
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PrinterBandwidthControlOptions:
 
     @property
     def printer_bandwidth_control_value(self):
-        """Gets the printer_bandwidth_control_value of this PrinterBandwidthControlOptions.
+        r"""Gets the printer_bandwidth_control_value of this PrinterBandwidthControlOptions.
 
         打印机带宽控制量（Kbps）。取值范围为[1000-5000]。默认：2000。
 
@@ -54,7 +54,7 @@ class PrinterBandwidthControlOptions:
 
     @printer_bandwidth_control_value.setter
     def printer_bandwidth_control_value(self, printer_bandwidth_control_value):
-        """Sets the printer_bandwidth_control_value of this PrinterBandwidthControlOptions.
+        r"""Sets the printer_bandwidth_control_value of this PrinterBandwidthControlOptions.
 
         打印机带宽控制量（Kbps）。取值范围为[1000-5000]。默认：2000。
 

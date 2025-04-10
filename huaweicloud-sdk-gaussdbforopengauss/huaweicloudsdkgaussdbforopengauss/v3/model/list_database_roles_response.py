@@ -28,7 +28,7 @@ class ListDatabaseRolesResponse(SdkResponse):
     }
 
     def __init__(self, roles=None, total_count=None):
-        """ListDatabaseRolesResponse
+        r"""ListDatabaseRolesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDatabaseRolesResponse(SdkResponse):
 
     @property
     def roles(self):
-        """Gets the roles of this ListDatabaseRolesResponse.
+        r"""Gets the roles of this ListDatabaseRolesResponse.
 
         列表中每个元素表示一个用户/角色。
 
@@ -62,7 +62,7 @@ class ListDatabaseRolesResponse(SdkResponse):
 
     @roles.setter
     def roles(self, roles):
-        """Sets the roles of this ListDatabaseRolesResponse.
+        r"""Sets the roles of this ListDatabaseRolesResponse.
 
         列表中每个元素表示一个用户/角色。
 
@@ -73,7 +73,7 @@ class ListDatabaseRolesResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListDatabaseRolesResponse.
+        r"""Gets the total_count of this ListDatabaseRolesResponse.
 
         数据库用户/角色总数。
 
@@ -84,7 +84,7 @@ class ListDatabaseRolesResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListDatabaseRolesResponse.
+        r"""Sets the total_count of this ListDatabaseRolesResponse.
 
         数据库用户/角色总数。
 

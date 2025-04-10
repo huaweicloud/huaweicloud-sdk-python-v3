@@ -31,7 +31,7 @@ class ListLtsLogPolicyRespondBodyLtsConfigs:
     }
 
     def __init__(self, log_type=None, lts_group_id=None, lts_stream_id=None, enabled=None):
-        """ListLtsLogPolicyRespondBodyLtsConfigs
+        r"""ListLtsLogPolicyRespondBodyLtsConfigs
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListLtsLogPolicyRespondBodyLtsConfigs:
 
     @property
     def log_type(self):
-        """Gets the log_type of this ListLtsLogPolicyRespondBodyLtsConfigs.
+        r"""Gets the log_type of this ListLtsLogPolicyRespondBodyLtsConfigs.
 
         :return: The log_type of this ListLtsLogPolicyRespondBodyLtsConfigs.
         :rtype: :class:`huaweicloudsdkdds.v3.LtsLogType`
@@ -73,7 +73,7 @@ class ListLtsLogPolicyRespondBodyLtsConfigs:
 
     @log_type.setter
     def log_type(self, log_type):
-        """Sets the log_type of this ListLtsLogPolicyRespondBodyLtsConfigs.
+        r"""Sets the log_type of this ListLtsLogPolicyRespondBodyLtsConfigs.
 
         :param log_type: The log_type of this ListLtsLogPolicyRespondBodyLtsConfigs.
         :type log_type: :class:`huaweicloudsdkdds.v3.LtsLogType`
@@ -82,7 +82,7 @@ class ListLtsLogPolicyRespondBodyLtsConfigs:
 
     @property
     def lts_group_id(self):
-        """Gets the lts_group_id of this ListLtsLogPolicyRespondBodyLtsConfigs.
+        r"""Gets the lts_group_id of this ListLtsLogPolicyRespondBodyLtsConfigs.
 
         云日志服务LTS日志组ID。
 
@@ -93,7 +93,7 @@ class ListLtsLogPolicyRespondBodyLtsConfigs:
 
     @lts_group_id.setter
     def lts_group_id(self, lts_group_id):
-        """Sets the lts_group_id of this ListLtsLogPolicyRespondBodyLtsConfigs.
+        r"""Sets the lts_group_id of this ListLtsLogPolicyRespondBodyLtsConfigs.
 
         云日志服务LTS日志组ID。
 
@@ -104,7 +104,7 @@ class ListLtsLogPolicyRespondBodyLtsConfigs:
 
     @property
     def lts_stream_id(self):
-        """Gets the lts_stream_id of this ListLtsLogPolicyRespondBodyLtsConfigs.
+        r"""Gets the lts_stream_id of this ListLtsLogPolicyRespondBodyLtsConfigs.
 
         云日志服务LTS日志流ID。
 
@@ -115,7 +115,7 @@ class ListLtsLogPolicyRespondBodyLtsConfigs:
 
     @lts_stream_id.setter
     def lts_stream_id(self, lts_stream_id):
-        """Sets the lts_stream_id of this ListLtsLogPolicyRespondBodyLtsConfigs.
+        r"""Sets the lts_stream_id of this ListLtsLogPolicyRespondBodyLtsConfigs.
 
         云日志服务LTS日志流ID。
 
@@ -126,7 +126,7 @@ class ListLtsLogPolicyRespondBodyLtsConfigs:
 
     @property
     def enabled(self):
-        """Gets the enabled of this ListLtsLogPolicyRespondBodyLtsConfigs.
+        r"""Gets the enabled of this ListLtsLogPolicyRespondBodyLtsConfigs.
 
         是否上传。
 
@@ -137,7 +137,7 @@ class ListLtsLogPolicyRespondBodyLtsConfigs:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this ListLtsLogPolicyRespondBodyLtsConfigs.
+        r"""Sets the enabled of this ListLtsLogPolicyRespondBodyLtsConfigs.
 
         是否上传。
 

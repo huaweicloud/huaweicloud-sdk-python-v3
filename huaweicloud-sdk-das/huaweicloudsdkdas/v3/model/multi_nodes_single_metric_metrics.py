@@ -31,7 +31,7 @@ class MultiNodesSingleMetricMetrics:
     }
 
     def __init__(self, instance_id=None, node_id=None, series=None, timestamps=None):
-        """MultiNodesSingleMetricMetrics
+        r"""MultiNodesSingleMetricMetrics
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class MultiNodesSingleMetricMetrics:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this MultiNodesSingleMetricMetrics.
+        r"""Gets the instance_id of this MultiNodesSingleMetricMetrics.
 
         实例ID
 
@@ -75,7 +75,7 @@ class MultiNodesSingleMetricMetrics:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this MultiNodesSingleMetricMetrics.
+        r"""Sets the instance_id of this MultiNodesSingleMetricMetrics.
 
         实例ID
 
@@ -86,7 +86,7 @@ class MultiNodesSingleMetricMetrics:
 
     @property
     def node_id(self):
-        """Gets the node_id of this MultiNodesSingleMetricMetrics.
+        r"""Gets the node_id of this MultiNodesSingleMetricMetrics.
 
         节点ID
 
@@ -97,7 +97,7 @@ class MultiNodesSingleMetricMetrics:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this MultiNodesSingleMetricMetrics.
+        r"""Sets the node_id of this MultiNodesSingleMetricMetrics.
 
         节点ID
 
@@ -108,7 +108,7 @@ class MultiNodesSingleMetricMetrics:
 
     @property
     def series(self):
-        """Gets the series of this MultiNodesSingleMetricMetrics.
+        r"""Gets the series of this MultiNodesSingleMetricMetrics.
 
         指标
 
@@ -119,7 +119,7 @@ class MultiNodesSingleMetricMetrics:
 
     @series.setter
     def series(self, series):
-        """Sets the series of this MultiNodesSingleMetricMetrics.
+        r"""Sets the series of this MultiNodesSingleMetricMetrics.
 
         指标
 
@@ -130,7 +130,7 @@ class MultiNodesSingleMetricMetrics:
 
     @property
     def timestamps(self):
-        """Gets the timestamps of this MultiNodesSingleMetricMetrics.
+        r"""Gets the timestamps of this MultiNodesSingleMetricMetrics.
 
         时间戳
 
@@ -141,7 +141,7 @@ class MultiNodesSingleMetricMetrics:
 
     @timestamps.setter
     def timestamps(self, timestamps):
-        """Sets the timestamps of this MultiNodesSingleMetricMetrics.
+        r"""Sets the timestamps of this MultiNodesSingleMetricMetrics.
 
         时间戳
 

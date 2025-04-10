@@ -30,7 +30,7 @@ class BatchDeleteTestCaseResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_msg=None, error_detail=None):
-        """BatchDeleteTestCaseResponse
+        r"""BatchDeleteTestCaseResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class BatchDeleteTestCaseResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this BatchDeleteTestCaseResponse.
+        r"""Gets the error_code of this BatchDeleteTestCaseResponse.
 
         接口调用失败错误码
 
@@ -69,7 +69,7 @@ class BatchDeleteTestCaseResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this BatchDeleteTestCaseResponse.
+        r"""Sets the error_code of this BatchDeleteTestCaseResponse.
 
         接口调用失败错误码
 
@@ -80,7 +80,7 @@ class BatchDeleteTestCaseResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this BatchDeleteTestCaseResponse.
+        r"""Gets the error_msg of this BatchDeleteTestCaseResponse.
 
         接口调用失败错误信息
 
@@ -91,7 +91,7 @@ class BatchDeleteTestCaseResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this BatchDeleteTestCaseResponse.
+        r"""Sets the error_msg of this BatchDeleteTestCaseResponse.
 
         接口调用失败错误信息
 
@@ -102,7 +102,7 @@ class BatchDeleteTestCaseResponse(SdkResponse):
 
     @property
     def error_detail(self):
-        """Gets the error_detail of this BatchDeleteTestCaseResponse.
+        r"""Gets the error_detail of this BatchDeleteTestCaseResponse.
 
         :return: The error_detail of this BatchDeleteTestCaseResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ErrorDetailInfo`
@@ -111,7 +111,7 @@ class BatchDeleteTestCaseResponse(SdkResponse):
 
     @error_detail.setter
     def error_detail(self, error_detail):
-        """Sets the error_detail of this BatchDeleteTestCaseResponse.
+        r"""Sets the error_detail of this BatchDeleteTestCaseResponse.
 
         :param error_detail: The error_detail of this BatchDeleteTestCaseResponse.
         :type error_detail: :class:`huaweicloudsdkcloudtest.v1.ErrorDetailInfo`

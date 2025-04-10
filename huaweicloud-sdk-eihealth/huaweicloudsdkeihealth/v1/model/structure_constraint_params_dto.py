@@ -29,7 +29,7 @@ class StructureConstraintParamsDto:
     }
 
     def __init__(self, structs=None, exclusive=None, operator=None):
-        """StructureConstraintParamsDto
+        r"""StructureConstraintParamsDto
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class StructureConstraintParamsDto:
 
     @property
     def structs(self):
-        """Gets the structs of this StructureConstraintParamsDto.
+        r"""Gets the structs of this StructureConstraintParamsDto.
 
         子结构SMILES
 
@@ -66,7 +66,7 @@ class StructureConstraintParamsDto:
 
     @structs.setter
     def structs(self, structs):
-        """Sets the structs of this StructureConstraintParamsDto.
+        r"""Sets the structs of this StructureConstraintParamsDto.
 
         子结构SMILES
 
@@ -77,7 +77,7 @@ class StructureConstraintParamsDto:
 
     @property
     def exclusive(self):
-        """Gets the exclusive of this StructureConstraintParamsDto.
+        r"""Gets the exclusive of this StructureConstraintParamsDto.
 
         是否排除子结构
 
@@ -88,7 +88,7 @@ class StructureConstraintParamsDto:
 
     @exclusive.setter
     def exclusive(self, exclusive):
-        """Sets the exclusive of this StructureConstraintParamsDto.
+        r"""Sets the exclusive of this StructureConstraintParamsDto.
 
         是否排除子结构
 
@@ -99,7 +99,7 @@ class StructureConstraintParamsDto:
 
     @property
     def operator(self):
-        """Gets the operator of this StructureConstraintParamsDto.
+        r"""Gets the operator of this StructureConstraintParamsDto.
 
         :return: The operator of this StructureConstraintParamsDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.OperatorType`
@@ -108,7 +108,7 @@ class StructureConstraintParamsDto:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this StructureConstraintParamsDto.
+        r"""Sets the operator of this StructureConstraintParamsDto.
 
         :param operator: The operator of this StructureConstraintParamsDto.
         :type operator: :class:`huaweicloudsdkeihealth.v1.OperatorType`

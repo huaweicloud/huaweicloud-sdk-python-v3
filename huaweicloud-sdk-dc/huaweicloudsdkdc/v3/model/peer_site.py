@@ -35,7 +35,7 @@ class PeerSite:
     }
 
     def __init__(self, gateway_id=None, link_id=None, region_id=None, site_code=None, project_id=None, type=None):
-        """PeerSite
+        r"""PeerSite
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class PeerSite:
 
     @property
     def gateway_id(self):
-        """Gets the gateway_id of this PeerSite.
+        r"""Gets the gateway_id of this PeerSite.
 
         对端网关的ID
 
@@ -89,7 +89,7 @@ class PeerSite:
 
     @gateway_id.setter
     def gateway_id(self, gateway_id):
-        """Sets the gateway_id of this PeerSite.
+        r"""Sets the gateway_id of this PeerSite.
 
         对端网关的ID
 
@@ -100,7 +100,7 @@ class PeerSite:
 
     @property
     def link_id(self):
-        """Gets the link_id of this PeerSite.
+        r"""Gets the link_id of this PeerSite.
 
         对端网关连接的ID(如：对端为ER时为attachment ID,对端为GDGW时为对端的PeerLink Id
 
@@ -111,7 +111,7 @@ class PeerSite:
 
     @link_id.setter
     def link_id(self, link_id):
-        """Sets the link_id of this PeerSite.
+        r"""Sets the link_id of this PeerSite.
 
         对端网关连接的ID(如：对端为ER时为attachment ID,对端为GDGW时为对端的PeerLink Id
 
@@ -122,7 +122,7 @@ class PeerSite:
 
     @property
     def region_id(self):
-        """Gets the region_id of this PeerSite.
+        r"""Gets the region_id of this PeerSite.
 
         对端网关所在的Region
 
@@ -133,7 +133,7 @@ class PeerSite:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this PeerSite.
+        r"""Sets the region_id of this PeerSite.
 
         对端网关所在的Region
 
@@ -144,7 +144,7 @@ class PeerSite:
 
     @property
     def site_code(self):
-        """Gets the site_code of this PeerSite.
+        r"""Gets the site_code of this PeerSite.
 
         专线全域接入网关对应的站点位置
 
@@ -155,7 +155,7 @@ class PeerSite:
 
     @site_code.setter
     def site_code(self, site_code):
-        """Sets the site_code of this PeerSite.
+        r"""Sets the site_code of this PeerSite.
 
         专线全域接入网关对应的站点位置
 
@@ -166,7 +166,7 @@ class PeerSite:
 
     @property
     def project_id(self):
-        """Gets the project_id of this PeerSite.
+        r"""Gets the project_id of this PeerSite.
 
         对等体站点的项目ID
 
@@ -177,7 +177,7 @@ class PeerSite:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this PeerSite.
+        r"""Sets the project_id of this PeerSite.
 
         对等体站点的项目ID
 
@@ -188,7 +188,7 @@ class PeerSite:
 
     @property
     def type(self):
-        """Gets the type of this PeerSite.
+        r"""Gets the type of this PeerSite.
 
         对等体的类型 - ER 企业路由器 - GDGW 全域接入网关
 
@@ -199,7 +199,7 @@ class PeerSite:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PeerSite.
+        r"""Sets the type of this PeerSite.
 
         对等体的类型 - ER 企业路由器 - GDGW 全域接入网关
 

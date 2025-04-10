@@ -27,7 +27,7 @@ class AttachType:
     }
 
     def __init__(self):
-        """AttachType
+        r"""AttachType
 
         The model defined in huaweicloud sdk
 

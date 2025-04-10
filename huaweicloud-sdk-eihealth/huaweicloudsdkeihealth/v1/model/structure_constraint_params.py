@@ -29,7 +29,7 @@ class StructureConstraintParams:
     }
 
     def __init__(self, structs=None, exclusive=None, operator=None):
-        """StructureConstraintParams
+        r"""StructureConstraintParams
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class StructureConstraintParams:
 
     @property
     def structs(self):
-        """Gets the structs of this StructureConstraintParams.
+        r"""Gets the structs of this StructureConstraintParams.
 
         子结构SMILES
 
@@ -66,7 +66,7 @@ class StructureConstraintParams:
 
     @structs.setter
     def structs(self, structs):
-        """Sets the structs of this StructureConstraintParams.
+        r"""Sets the structs of this StructureConstraintParams.
 
         子结构SMILES
 
@@ -77,7 +77,7 @@ class StructureConstraintParams:
 
     @property
     def exclusive(self):
-        """Gets the exclusive of this StructureConstraintParams.
+        r"""Gets the exclusive of this StructureConstraintParams.
 
         是否排除子结构
 
@@ -88,7 +88,7 @@ class StructureConstraintParams:
 
     @exclusive.setter
     def exclusive(self, exclusive):
-        """Sets the exclusive of this StructureConstraintParams.
+        r"""Sets the exclusive of this StructureConstraintParams.
 
         是否排除子结构
 
@@ -99,7 +99,7 @@ class StructureConstraintParams:
 
     @property
     def operator(self):
-        """Gets the operator of this StructureConstraintParams.
+        r"""Gets the operator of this StructureConstraintParams.
 
         多个子结构之间的逻辑关系
 
@@ -110,7 +110,7 @@ class StructureConstraintParams:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this StructureConstraintParams.
+        r"""Sets the operator of this StructureConstraintParams.
 
         多个子结构之间的逻辑关系
 

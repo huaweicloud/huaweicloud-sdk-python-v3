@@ -41,7 +41,7 @@ class AgencyTokenResult:
     }
 
     def __init__(self, methods=None, expires_at=None, issued_at=None, assumed_by=None, catalog=None, domain=None, project=None, roles=None, user=None):
-        """AgencyTokenResult
+        r"""AgencyTokenResult
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class AgencyTokenResult:
 
     @property
     def methods(self):
-        """Gets the methods of this AgencyTokenResult.
+        r"""Gets the methods of this AgencyTokenResult.
 
         获取token的方式。
 
@@ -104,7 +104,7 @@ class AgencyTokenResult:
 
     @methods.setter
     def methods(self, methods):
-        """Sets the methods of this AgencyTokenResult.
+        r"""Sets the methods of this AgencyTokenResult.
 
         获取token的方式。
 
@@ -115,7 +115,7 @@ class AgencyTokenResult:
 
     @property
     def expires_at(self):
-        """Gets the expires_at of this AgencyTokenResult.
+        r"""Gets the expires_at of this AgencyTokenResult.
 
         token到期时间。
 
@@ -126,7 +126,7 @@ class AgencyTokenResult:
 
     @expires_at.setter
     def expires_at(self, expires_at):
-        """Sets the expires_at of this AgencyTokenResult.
+        r"""Sets the expires_at of this AgencyTokenResult.
 
         token到期时间。
 
@@ -137,7 +137,7 @@ class AgencyTokenResult:
 
     @property
     def issued_at(self):
-        """Gets the issued_at of this AgencyTokenResult.
+        r"""Gets the issued_at of this AgencyTokenResult.
 
         token下发时间。
 
@@ -148,7 +148,7 @@ class AgencyTokenResult:
 
     @issued_at.setter
     def issued_at(self, issued_at):
-        """Sets the issued_at of this AgencyTokenResult.
+        r"""Sets the issued_at of this AgencyTokenResult.
 
         token下发时间。
 
@@ -159,7 +159,7 @@ class AgencyTokenResult:
 
     @property
     def assumed_by(self):
-        """Gets the assumed_by of this AgencyTokenResult.
+        r"""Gets the assumed_by of this AgencyTokenResult.
 
         :return: The assumed_by of this AgencyTokenResult.
         :rtype: :class:`huaweicloudsdkiam.v3.AgencyAssumedby`
@@ -168,7 +168,7 @@ class AgencyTokenResult:
 
     @assumed_by.setter
     def assumed_by(self, assumed_by):
-        """Sets the assumed_by of this AgencyTokenResult.
+        r"""Sets the assumed_by of this AgencyTokenResult.
 
         :param assumed_by: The assumed_by of this AgencyTokenResult.
         :type assumed_by: :class:`huaweicloudsdkiam.v3.AgencyAssumedby`
@@ -177,7 +177,7 @@ class AgencyTokenResult:
 
     @property
     def catalog(self):
-        """Gets the catalog of this AgencyTokenResult.
+        r"""Gets the catalog of this AgencyTokenResult.
 
         服务目录信息。
 
@@ -188,7 +188,7 @@ class AgencyTokenResult:
 
     @catalog.setter
     def catalog(self, catalog):
-        """Sets the catalog of this AgencyTokenResult.
+        r"""Sets the catalog of this AgencyTokenResult.
 
         服务目录信息。
 
@@ -199,7 +199,7 @@ class AgencyTokenResult:
 
     @property
     def domain(self):
-        """Gets the domain of this AgencyTokenResult.
+        r"""Gets the domain of this AgencyTokenResult.
 
         :return: The domain of this AgencyTokenResult.
         :rtype: :class:`huaweicloudsdkiam.v3.AgencyTokenDomain`
@@ -208,7 +208,7 @@ class AgencyTokenResult:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this AgencyTokenResult.
+        r"""Sets the domain of this AgencyTokenResult.
 
         :param domain: The domain of this AgencyTokenResult.
         :type domain: :class:`huaweicloudsdkiam.v3.AgencyTokenDomain`
@@ -217,7 +217,7 @@ class AgencyTokenResult:
 
     @property
     def project(self):
-        """Gets the project of this AgencyTokenResult.
+        r"""Gets the project of this AgencyTokenResult.
 
         :return: The project of this AgencyTokenResult.
         :rtype: :class:`huaweicloudsdkiam.v3.AgencyTokenProject`
@@ -226,7 +226,7 @@ class AgencyTokenResult:
 
     @project.setter
     def project(self, project):
-        """Sets the project of this AgencyTokenResult.
+        r"""Sets the project of this AgencyTokenResult.
 
         :param project: The project of this AgencyTokenResult.
         :type project: :class:`huaweicloudsdkiam.v3.AgencyTokenProject`
@@ -235,7 +235,7 @@ class AgencyTokenResult:
 
     @property
     def roles(self):
-        """Gets the roles of this AgencyTokenResult.
+        r"""Gets the roles of this AgencyTokenResult.
 
         委托token的权限信息。
 
@@ -246,7 +246,7 @@ class AgencyTokenResult:
 
     @roles.setter
     def roles(self, roles):
-        """Sets the roles of this AgencyTokenResult.
+        r"""Sets the roles of this AgencyTokenResult.
 
         委托token的权限信息。
 
@@ -257,7 +257,7 @@ class AgencyTokenResult:
 
     @property
     def user(self):
-        """Gets the user of this AgencyTokenResult.
+        r"""Gets the user of this AgencyTokenResult.
 
         :return: The user of this AgencyTokenResult.
         :rtype: :class:`huaweicloudsdkiam.v3.AgencyTokenUser`
@@ -266,7 +266,7 @@ class AgencyTokenResult:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this AgencyTokenResult.
+        r"""Sets the user of this AgencyTokenResult.
 
         :param user: The user of this AgencyTokenResult.
         :type user: :class:`huaweicloudsdkiam.v3.AgencyTokenUser`

@@ -33,7 +33,7 @@ class PluginDTOInputInfo:
     }
 
     def __init__(self, name=None, default_value=None, type=None, validation=None, layout_content=None):
-        """PluginDTOInputInfo
+        r"""PluginDTOInputInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class PluginDTOInputInfo:
 
     @property
     def name(self):
-        """Gets the name of this PluginDTOInputInfo.
+        r"""Gets the name of this PluginDTOInputInfo.
 
         名称
 
@@ -82,7 +82,7 @@ class PluginDTOInputInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PluginDTOInputInfo.
+        r"""Sets the name of this PluginDTOInputInfo.
 
         名称
 
@@ -93,7 +93,7 @@ class PluginDTOInputInfo:
 
     @property
     def default_value(self):
-        """Gets the default_value of this PluginDTOInputInfo.
+        r"""Gets the default_value of this PluginDTOInputInfo.
 
         默认值
 
@@ -104,7 +104,7 @@ class PluginDTOInputInfo:
 
     @default_value.setter
     def default_value(self, default_value):
-        """Sets the default_value of this PluginDTOInputInfo.
+        r"""Sets the default_value of this PluginDTOInputInfo.
 
         默认值
 
@@ -115,7 +115,7 @@ class PluginDTOInputInfo:
 
     @property
     def type(self):
-        """Gets the type of this PluginDTOInputInfo.
+        r"""Gets the type of this PluginDTOInputInfo.
 
         输入类型
 
@@ -126,7 +126,7 @@ class PluginDTOInputInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PluginDTOInputInfo.
+        r"""Sets the type of this PluginDTOInputInfo.
 
         输入类型
 
@@ -137,7 +137,7 @@ class PluginDTOInputInfo:
 
     @property
     def validation(self):
-        """Gets the validation of this PluginDTOInputInfo.
+        r"""Gets the validation of this PluginDTOInputInfo.
 
         验证
 
@@ -148,7 +148,7 @@ class PluginDTOInputInfo:
 
     @validation.setter
     def validation(self, validation):
-        """Sets the validation of this PluginDTOInputInfo.
+        r"""Sets the validation of this PluginDTOInputInfo.
 
         验证
 
@@ -159,7 +159,7 @@ class PluginDTOInputInfo:
 
     @property
     def layout_content(self):
-        """Gets the layout_content of this PluginDTOInputInfo.
+        r"""Gets the layout_content of this PluginDTOInputInfo.
 
         样式信息
 
@@ -170,7 +170,7 @@ class PluginDTOInputInfo:
 
     @layout_content.setter
     def layout_content(self, layout_content):
-        """Sets the layout_content of this PluginDTOInputInfo.
+        r"""Sets the layout_content of this PluginDTOInputInfo.
 
         样式信息
 

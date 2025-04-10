@@ -25,7 +25,7 @@ class AddFeatureRequest:
     }
 
     def __init__(self, body=None):
-        """AddFeatureRequest
+        r"""AddFeatureRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AddFeatureRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddFeatureRequest.
+        r"""Gets the body of this AddFeatureRequest.
 
         :return: The body of this AddFeatureRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.AddTestItemInfo`
@@ -52,7 +52,7 @@ class AddFeatureRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddFeatureRequest.
+        r"""Sets the body of this AddFeatureRequest.
 
         :param body: The body of this AddFeatureRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.AddTestItemInfo`

@@ -29,7 +29,7 @@ class SegmentResult:
     }
 
     def __init__(self, segment=None, glossary_name=None, position=None):
-        """SegmentResult
+        r"""SegmentResult
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class SegmentResult:
 
     @property
     def segment(self):
-        """Gets the segment of this SegmentResult.
+        r"""Gets the segment of this SegmentResult.
 
         命中的风险片段。
 
@@ -68,7 +68,7 @@ class SegmentResult:
 
     @segment.setter
     def segment(self, segment):
-        """Sets the segment of this SegmentResult.
+        r"""Sets the segment of this SegmentResult.
 
         命中的风险片段。
 
@@ -79,7 +79,7 @@ class SegmentResult:
 
     @property
     def glossary_name(self):
-        """Gets the glossary_name of this SegmentResult.
+        r"""Gets the glossary_name of this SegmentResult.
 
         命中的自定义词库名称。  命中自定义词库时，才会返回当前字段。
 
@@ -90,7 +90,7 @@ class SegmentResult:
 
     @glossary_name.setter
     def glossary_name(self, glossary_name):
-        """Sets the glossary_name of this SegmentResult.
+        r"""Sets the glossary_name of this SegmentResult.
 
         命中的自定义词库名称。  命中自定义词库时，才会返回当前字段。
 
@@ -101,7 +101,7 @@ class SegmentResult:
 
     @property
     def position(self):
-        """Gets the position of this SegmentResult.
+        r"""Gets the position of this SegmentResult.
 
         命中的风险片段在文本中的位置，起始位置从0开始
 
@@ -112,7 +112,7 @@ class SegmentResult:
 
     @position.setter
     def position(self, position):
-        """Sets the position of this SegmentResult.
+        r"""Sets the position of this SegmentResult.
 
         命中的风险片段在文本中的位置，起始位置从0开始
 

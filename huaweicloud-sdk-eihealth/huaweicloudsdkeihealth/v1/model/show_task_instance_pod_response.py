@@ -26,7 +26,7 @@ class ShowTaskInstancePodResponse(SdkResponse):
     }
 
     def __init__(self, metadata=None):
-        """ShowTaskInstancePodResponse
+        r"""ShowTaskInstancePodResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowTaskInstancePodResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this ShowTaskInstancePodResponse.
+        r"""Gets the metadata of this ShowTaskInstancePodResponse.
 
         pod信息
 
@@ -55,7 +55,7 @@ class ShowTaskInstancePodResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ShowTaskInstancePodResponse.
+        r"""Sets the metadata of this ShowTaskInstancePodResponse.
 
         pod信息
 

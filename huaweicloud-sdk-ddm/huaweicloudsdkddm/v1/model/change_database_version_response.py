@@ -28,7 +28,7 @@ class ChangeDatabaseVersionResponse(SdkResponse):
     }
 
     def __init__(self, instance_id=None, job_id=None):
-        """ChangeDatabaseVersionResponse
+        r"""ChangeDatabaseVersionResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ChangeDatabaseVersionResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ChangeDatabaseVersionResponse.
+        r"""Gets the instance_id of this ChangeDatabaseVersionResponse.
 
         实例ID
 
@@ -62,7 +62,7 @@ class ChangeDatabaseVersionResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ChangeDatabaseVersionResponse.
+        r"""Sets the instance_id of this ChangeDatabaseVersionResponse.
 
         实例ID
 
@@ -73,7 +73,7 @@ class ChangeDatabaseVersionResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ChangeDatabaseVersionResponse.
+        r"""Gets the job_id of this ChangeDatabaseVersionResponse.
 
         任务ID
 
@@ -84,7 +84,7 @@ class ChangeDatabaseVersionResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ChangeDatabaseVersionResponse.
+        r"""Sets the job_id of this ChangeDatabaseVersionResponse.
 
         任务ID
 

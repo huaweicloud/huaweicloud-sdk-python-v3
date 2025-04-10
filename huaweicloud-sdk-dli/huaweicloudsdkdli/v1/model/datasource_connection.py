@@ -47,7 +47,7 @@ class DatasourceConnection:
     }
 
     def __init__(self, is_success=None, message=None, connection_id=None, destination=None, state=None, process=None, name=None, connection_url=None, cluster_name=None, service=None, create_time=None, queue_list=None):
-        """DatasourceConnection
+        r"""DatasourceConnection
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class DatasourceConnection:
 
     @property
     def is_success(self):
-        """Gets the is_success of this DatasourceConnection.
+        r"""Gets the is_success of this DatasourceConnection.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -131,7 +131,7 @@ class DatasourceConnection:
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this DatasourceConnection.
+        r"""Sets the is_success of this DatasourceConnection.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -142,7 +142,7 @@ class DatasourceConnection:
 
     @property
     def message(self):
-        """Gets the message of this DatasourceConnection.
+        r"""Gets the message of this DatasourceConnection.
 
         系统提示信息，执行成功时，信息为空。
 
@@ -153,7 +153,7 @@ class DatasourceConnection:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this DatasourceConnection.
+        r"""Sets the message of this DatasourceConnection.
 
         系统提示信息，执行成功时，信息为空。
 
@@ -164,7 +164,7 @@ class DatasourceConnection:
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this DatasourceConnection.
+        r"""Gets the connection_id of this DatasourceConnection.
 
         连接ID，用于标识跨源连接的UUID。
 
@@ -175,7 +175,7 @@ class DatasourceConnection:
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this DatasourceConnection.
+        r"""Sets the connection_id of this DatasourceConnection.
 
         连接ID，用于标识跨源连接的UUID。
 
@@ -186,7 +186,7 @@ class DatasourceConnection:
 
     @property
     def destination(self):
-        """Gets the destination of this DatasourceConnection.
+        r"""Gets the destination of this DatasourceConnection.
 
         创建连接时，用户填写的队列的访问地址。
 
@@ -197,7 +197,7 @@ class DatasourceConnection:
 
     @destination.setter
     def destination(self, destination):
-        """Sets the destination of this DatasourceConnection.
+        r"""Sets the destination of this DatasourceConnection.
 
         创建连接时，用户填写的队列的访问地址。
 
@@ -208,7 +208,7 @@ class DatasourceConnection:
 
     @property
     def state(self):
-        """Gets the state of this DatasourceConnection.
+        r"""Gets the state of this DatasourceConnection.
 
         连接状态。CREATING：跨源连接正在创建中；ACTIVE：跨源连接创建成功，与目的地址连接正常；FAILED：跨源连接创建失败；DELETED：跨源连接已被删除。
 
@@ -219,7 +219,7 @@ class DatasourceConnection:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this DatasourceConnection.
+        r"""Sets the state of this DatasourceConnection.
 
         连接状态。CREATING：跨源连接正在创建中；ACTIVE：跨源连接创建成功，与目的地址连接正常；FAILED：跨源连接创建失败；DELETED：跨源连接已被删除。
 
@@ -230,7 +230,7 @@ class DatasourceConnection:
 
     @property
     def process(self):
-        """Gets the process of this DatasourceConnection.
+        r"""Gets the process of this DatasourceConnection.
 
         正在创建的跨源连接进度，显示0.0至1.0代表0%至100%。
 
@@ -241,7 +241,7 @@ class DatasourceConnection:
 
     @process.setter
     def process(self, process):
-        """Sets the process of this DatasourceConnection.
+        r"""Sets the process of this DatasourceConnection.
 
         正在创建的跨源连接进度，显示0.0至1.0代表0%至100%。
 
@@ -252,7 +252,7 @@ class DatasourceConnection:
 
     @property
     def name(self):
-        """Gets the name of this DatasourceConnection.
+        r"""Gets the name of this DatasourceConnection.
 
         创建连接时，用户自定义的连接名称。
 
@@ -263,7 +263,7 @@ class DatasourceConnection:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DatasourceConnection.
+        r"""Sets the name of this DatasourceConnection.
 
         创建连接时，用户自定义的连接名称。
 
@@ -274,7 +274,7 @@ class DatasourceConnection:
 
     @property
     def connection_url(self):
-        """Gets the connection_url of this DatasourceConnection.
+        r"""Gets the connection_url of this DatasourceConnection.
 
         用于建立跨源关联表时，需要使用到的连接url。
 
@@ -285,7 +285,7 @@ class DatasourceConnection:
 
     @connection_url.setter
     def connection_url(self, connection_url):
-        """Sets the connection_url of this DatasourceConnection.
+        r"""Sets the connection_url of this DatasourceConnection.
 
         用于建立跨源关联表时，需要使用到的连接url。
 
@@ -296,7 +296,7 @@ class DatasourceConnection:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this DatasourceConnection.
+        r"""Gets the cluster_name of this DatasourceConnection.
 
         Serverless Spark队列名称。SQL队列模式下建立的跨源连接，该字段为空。
 
@@ -307,7 +307,7 @@ class DatasourceConnection:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this DatasourceConnection.
+        r"""Sets the cluster_name of this DatasourceConnection.
 
         Serverless Spark队列名称。SQL队列模式下建立的跨源连接，该字段为空。
 
@@ -318,7 +318,7 @@ class DatasourceConnection:
 
     @property
     def service(self):
-        """Gets the service of this DatasourceConnection.
+        r"""Gets the service of this DatasourceConnection.
 
         创建连接时，用户指定的对端服务（CloudTable/CloudTable.OpenTSDB/MRS.OpenTSDB/DWS/RDS/CSS）。
 
@@ -329,7 +329,7 @@ class DatasourceConnection:
 
     @service.setter
     def service(self, service):
-        """Sets the service of this DatasourceConnection.
+        r"""Sets the service of this DatasourceConnection.
 
         创建连接时，用户指定的对端服务（CloudTable/CloudTable.OpenTSDB/MRS.OpenTSDB/DWS/RDS/CSS）。
 
@@ -340,7 +340,7 @@ class DatasourceConnection:
 
     @property
     def create_time(self):
-        """Gets the create_time of this DatasourceConnection.
+        r"""Gets the create_time of this DatasourceConnection.
 
         创建连接的时间。为UTC的时间戳。
 
@@ -351,7 +351,7 @@ class DatasourceConnection:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this DatasourceConnection.
+        r"""Sets the create_time of this DatasourceConnection.
 
         创建连接的时间。为UTC的时间戳。
 
@@ -362,7 +362,7 @@ class DatasourceConnection:
 
     @property
     def queue_list(self):
-        """Gets the queue_list of this DatasourceConnection.
+        r"""Gets the queue_list of this DatasourceConnection.
 
         当前跨源已绑定的队列名
 
@@ -373,7 +373,7 @@ class DatasourceConnection:
 
     @queue_list.setter
     def queue_list(self, queue_list):
-        """Sets the queue_list of this DatasourceConnection.
+        r"""Sets the queue_list of this DatasourceConnection.
 
         当前跨源已绑定的队列名
 

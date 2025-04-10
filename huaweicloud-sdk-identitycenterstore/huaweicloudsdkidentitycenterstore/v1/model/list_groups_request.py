@@ -34,7 +34,7 @@ class ListGroupsRequest:
     }
 
     def __init__(self, x_security_token=None, identity_store_id=None, marker=None, limit=None, display_name=None):
-        """ListGroupsRequest
+        r"""ListGroupsRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListGroupsRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this ListGroupsRequest.
+        r"""Gets the x_security_token of this ListGroupsRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -82,7 +82,7 @@ class ListGroupsRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this ListGroupsRequest.
+        r"""Sets the x_security_token of this ListGroupsRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -93,7 +93,7 @@ class ListGroupsRequest:
 
     @property
     def identity_store_id(self):
-        """Gets the identity_store_id of this ListGroupsRequest.
+        r"""Gets the identity_store_id of this ListGroupsRequest.
 
         身份源的全局唯一标识符（ID）
 
@@ -104,7 +104,7 @@ class ListGroupsRequest:
 
     @identity_store_id.setter
     def identity_store_id(self, identity_store_id):
-        """Sets the identity_store_id of this ListGroupsRequest.
+        r"""Sets the identity_store_id of this ListGroupsRequest.
 
         身份源的全局唯一标识符（ID）
 
@@ -115,7 +115,7 @@ class ListGroupsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListGroupsRequest.
+        r"""Gets the marker of this ListGroupsRequest.
 
         分页标记
 
@@ -126,7 +126,7 @@ class ListGroupsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListGroupsRequest.
+        r"""Sets the marker of this ListGroupsRequest.
 
         分页标记
 
@@ -137,7 +137,7 @@ class ListGroupsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListGroupsRequest.
+        r"""Gets the limit of this ListGroupsRequest.
 
         每个请求返回的最大结果数
 
@@ -148,7 +148,7 @@ class ListGroupsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListGroupsRequest.
+        r"""Sets the limit of this ListGroupsRequest.
 
         每个请求返回的最大结果数
 
@@ -159,7 +159,7 @@ class ListGroupsRequest:
 
     @property
     def display_name(self):
-        """Gets the display_name of this ListGroupsRequest.
+        r"""Gets the display_name of this ListGroupsRequest.
 
         通过显示名模糊查询用户组信息
 
@@ -170,7 +170,7 @@ class ListGroupsRequest:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this ListGroupsRequest.
+        r"""Sets the display_name of this ListGroupsRequest.
 
         通过显示名模糊查询用户组信息
 

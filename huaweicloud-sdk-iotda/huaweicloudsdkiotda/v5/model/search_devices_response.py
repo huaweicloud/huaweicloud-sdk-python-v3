@@ -28,7 +28,7 @@ class SearchDevicesResponse(SdkResponse):
     }
 
     def __init__(self, devices=None, count=None):
-        """SearchDevicesResponse
+        r"""SearchDevicesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class SearchDevicesResponse(SdkResponse):
 
     @property
     def devices(self):
-        """Gets the devices of this SearchDevicesResponse.
+        r"""Gets the devices of this SearchDevicesResponse.
 
         搜索设备结果列表。
 
@@ -62,7 +62,7 @@ class SearchDevicesResponse(SdkResponse):
 
     @devices.setter
     def devices(self, devices):
-        """Sets the devices of this SearchDevicesResponse.
+        r"""Sets the devices of this SearchDevicesResponse.
 
         搜索设备结果列表。
 
@@ -73,7 +73,7 @@ class SearchDevicesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this SearchDevicesResponse.
+        r"""Gets the count of this SearchDevicesResponse.
 
         满足查询条件的记录总数(只有条件为select count(*)/count(1)时单独返回)。
 
@@ -84,7 +84,7 @@ class SearchDevicesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this SearchDevicesResponse.
+        r"""Sets the count of this SearchDevicesResponse.
 
         满足查询条件的记录总数(只有条件为select count(*)/count(1)时单独返回)。
 

@@ -27,7 +27,7 @@ class CreateSubscriptionUserRequestHttpEndpointInfo:
     }
 
     def __init__(self, endpoint=None, header=None):
-        """CreateSubscriptionUserRequestHttpEndpointInfo
+        r"""CreateSubscriptionUserRequestHttpEndpointInfo
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateSubscriptionUserRequestHttpEndpointInfo:
 
     @property
     def endpoint(self):
-        """Gets the endpoint of this CreateSubscriptionUserRequestHttpEndpointInfo.
+        r"""Gets the endpoint of this CreateSubscriptionUserRequestHttpEndpointInfo.
 
         终端地址。必须以“http://”开头。
 
@@ -60,7 +60,7 @@ class CreateSubscriptionUserRequestHttpEndpointInfo:
 
     @endpoint.setter
     def endpoint(self, endpoint):
-        """Sets the endpoint of this CreateSubscriptionUserRequestHttpEndpointInfo.
+        r"""Sets the endpoint of this CreateSubscriptionUserRequestHttpEndpointInfo.
 
         终端地址。必须以“http://”开头。
 
@@ -71,7 +71,7 @@ class CreateSubscriptionUserRequestHttpEndpointInfo:
 
     @property
     def header(self):
-        """Gets the header of this CreateSubscriptionUserRequestHttpEndpointInfo.
+        r"""Gets the header of this CreateSubscriptionUserRequestHttpEndpointInfo.
 
         http协议订阅用户的自定义请求头。http协议订阅用户可以自定义请求头。
 
@@ -82,7 +82,7 @@ class CreateSubscriptionUserRequestHttpEndpointInfo:
 
     @header.setter
     def header(self, header):
-        """Sets the header of this CreateSubscriptionUserRequestHttpEndpointInfo.
+        r"""Sets the header of this CreateSubscriptionUserRequestHttpEndpointInfo.
 
         http协议订阅用户的自定义请求头。http协议订阅用户可以自定义请求头。
 

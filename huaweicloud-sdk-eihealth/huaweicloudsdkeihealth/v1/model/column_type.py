@@ -28,7 +28,7 @@ class ColumnType:
     }
 
     def __init__(self):
-        """ColumnType
+        r"""ColumnType
 
         The model defined in huaweicloud sdk
 

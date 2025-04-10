@@ -29,7 +29,7 @@ class DeleteStarrocksInstanceRequest:
     }
 
     def __init__(self, instance_id=None, starrocks_instance_id=None, x_language=None):
-        """DeleteStarrocksInstanceRequest
+        r"""DeleteStarrocksInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteStarrocksInstanceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteStarrocksInstanceRequest.
+        r"""Gets the instance_id of this DeleteStarrocksInstanceRequest.
 
         TaurusDB实例ID，严格匹配UUID规则。
 
@@ -66,7 +66,7 @@ class DeleteStarrocksInstanceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteStarrocksInstanceRequest.
+        r"""Sets the instance_id of this DeleteStarrocksInstanceRequest.
 
         TaurusDB实例ID，严格匹配UUID规则。
 
@@ -77,7 +77,7 @@ class DeleteStarrocksInstanceRequest:
 
     @property
     def starrocks_instance_id(self):
-        """Gets the starrocks_instance_id of this DeleteStarrocksInstanceRequest.
+        r"""Gets the starrocks_instance_id of this DeleteStarrocksInstanceRequest.
 
         StarRocks实例ID，严格匹配UUID规则。
 
@@ -88,7 +88,7 @@ class DeleteStarrocksInstanceRequest:
 
     @starrocks_instance_id.setter
     def starrocks_instance_id(self, starrocks_instance_id):
-        """Sets the starrocks_instance_id of this DeleteStarrocksInstanceRequest.
+        r"""Sets the starrocks_instance_id of this DeleteStarrocksInstanceRequest.
 
         StarRocks实例ID，严格匹配UUID规则。
 
@@ -99,7 +99,7 @@ class DeleteStarrocksInstanceRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this DeleteStarrocksInstanceRequest.
+        r"""Gets the x_language of this DeleteStarrocksInstanceRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -110,7 +110,7 @@ class DeleteStarrocksInstanceRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this DeleteStarrocksInstanceRequest.
+        r"""Sets the x_language of this DeleteStarrocksInstanceRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 

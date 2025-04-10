@@ -43,7 +43,7 @@ class ShowCommitsByRepoIdRequest:
     }
 
     def __init__(self, author=None, begin_date=None, end_date=None, message=None, page_index=None, page_size=None, path=None, ref_name=None, repository_id=None, stat_format=None):
-        """ShowCommitsByRepoIdRequest
+        r"""ShowCommitsByRepoIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -104,7 +104,7 @@ class ShowCommitsByRepoIdRequest:
 
     @property
     def author(self):
-        """Gets the author of this ShowCommitsByRepoIdRequest.
+        r"""Gets the author of this ShowCommitsByRepoIdRequest.
 
         提交作者
 
@@ -115,7 +115,7 @@ class ShowCommitsByRepoIdRequest:
 
     @author.setter
     def author(self, author):
-        """Sets the author of this ShowCommitsByRepoIdRequest.
+        r"""Sets the author of this ShowCommitsByRepoIdRequest.
 
         提交作者
 
@@ -126,7 +126,7 @@ class ShowCommitsByRepoIdRequest:
 
     @property
     def begin_date(self):
-        """Gets the begin_date of this ShowCommitsByRepoIdRequest.
+        r"""Gets the begin_date of this ShowCommitsByRepoIdRequest.
 
         起始提交日期，格式为yyyy-MM-dd
 
@@ -137,7 +137,7 @@ class ShowCommitsByRepoIdRequest:
 
     @begin_date.setter
     def begin_date(self, begin_date):
-        """Sets the begin_date of this ShowCommitsByRepoIdRequest.
+        r"""Sets the begin_date of this ShowCommitsByRepoIdRequest.
 
         起始提交日期，格式为yyyy-MM-dd
 
@@ -148,7 +148,7 @@ class ShowCommitsByRepoIdRequest:
 
     @property
     def end_date(self):
-        """Gets the end_date of this ShowCommitsByRepoIdRequest.
+        r"""Gets the end_date of this ShowCommitsByRepoIdRequest.
 
         终止提交日期，格式为yyyy-MM-dd
 
@@ -159,7 +159,7 @@ class ShowCommitsByRepoIdRequest:
 
     @end_date.setter
     def end_date(self, end_date):
-        """Sets the end_date of this ShowCommitsByRepoIdRequest.
+        r"""Sets the end_date of this ShowCommitsByRepoIdRequest.
 
         终止提交日期，格式为yyyy-MM-dd
 
@@ -170,7 +170,7 @@ class ShowCommitsByRepoIdRequest:
 
     @property
     def message(self):
-        """Gets the message of this ShowCommitsByRepoIdRequest.
+        r"""Gets the message of this ShowCommitsByRepoIdRequest.
 
         提交信息
 
@@ -181,7 +181,7 @@ class ShowCommitsByRepoIdRequest:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowCommitsByRepoIdRequest.
+        r"""Sets the message of this ShowCommitsByRepoIdRequest.
 
         提交信息
 
@@ -192,7 +192,7 @@ class ShowCommitsByRepoIdRequest:
 
     @property
     def page_index(self):
-        """Gets the page_index of this ShowCommitsByRepoIdRequest.
+        r"""Gets the page_index of this ShowCommitsByRepoIdRequest.
 
         分页索引
 
@@ -203,7 +203,7 @@ class ShowCommitsByRepoIdRequest:
 
     @page_index.setter
     def page_index(self, page_index):
-        """Sets the page_index of this ShowCommitsByRepoIdRequest.
+        r"""Sets the page_index of this ShowCommitsByRepoIdRequest.
 
         分页索引
 
@@ -214,7 +214,7 @@ class ShowCommitsByRepoIdRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ShowCommitsByRepoIdRequest.
+        r"""Gets the page_size of this ShowCommitsByRepoIdRequest.
 
         每页数据量
 
@@ -225,7 +225,7 @@ class ShowCommitsByRepoIdRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ShowCommitsByRepoIdRequest.
+        r"""Sets the page_size of this ShowCommitsByRepoIdRequest.
 
         每页数据量
 
@@ -236,7 +236,7 @@ class ShowCommitsByRepoIdRequest:
 
     @property
     def path(self):
-        """Gets the path of this ShowCommitsByRepoIdRequest.
+        r"""Gets the path of this ShowCommitsByRepoIdRequest.
 
         文件路径
 
@@ -247,7 +247,7 @@ class ShowCommitsByRepoIdRequest:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ShowCommitsByRepoIdRequest.
+        r"""Sets the path of this ShowCommitsByRepoIdRequest.
 
         文件路径
 
@@ -258,7 +258,7 @@ class ShowCommitsByRepoIdRequest:
 
     @property
     def ref_name(self):
-        """Gets the ref_name of this ShowCommitsByRepoIdRequest.
+        r"""Gets the ref_name of this ShowCommitsByRepoIdRequest.
 
         分支或标签名，支持SHA格式
 
@@ -269,7 +269,7 @@ class ShowCommitsByRepoIdRequest:
 
     @ref_name.setter
     def ref_name(self, ref_name):
-        """Sets the ref_name of this ShowCommitsByRepoIdRequest.
+        r"""Sets the ref_name of this ShowCommitsByRepoIdRequest.
 
         分支或标签名，支持SHA格式
 
@@ -280,7 +280,7 @@ class ShowCommitsByRepoIdRequest:
 
     @property
     def repository_id(self):
-        """Gets the repository_id of this ShowCommitsByRepoIdRequest.
+        r"""Gets the repository_id of this ShowCommitsByRepoIdRequest.
 
         仓库主键id
 
@@ -291,7 +291,7 @@ class ShowCommitsByRepoIdRequest:
 
     @repository_id.setter
     def repository_id(self, repository_id):
-        """Sets the repository_id of this ShowCommitsByRepoIdRequest.
+        r"""Sets the repository_id of this ShowCommitsByRepoIdRequest.
 
         仓库主键id
 
@@ -302,7 +302,7 @@ class ShowCommitsByRepoIdRequest:
 
     @property
     def stat_format(self):
-        """Gets the stat_format of this ShowCommitsByRepoIdRequest.
+        r"""Gets the stat_format of this ShowCommitsByRepoIdRequest.
 
         提交的文件变更详情信息（不包含diff）
 
@@ -313,7 +313,7 @@ class ShowCommitsByRepoIdRequest:
 
     @stat_format.setter
     def stat_format(self, stat_format):
-        """Sets the stat_format of this ShowCommitsByRepoIdRequest.
+        r"""Sets the stat_format of this ShowCommitsByRepoIdRequest.
 
         提交的文件变更详情信息（不包含diff）
 

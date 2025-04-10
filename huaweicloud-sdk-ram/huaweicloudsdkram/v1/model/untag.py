@@ -27,7 +27,7 @@ class Untag:
     }
 
     def __init__(self, key=None, value=None):
-        """Untag
+        r"""Untag
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class Untag:
 
     @property
     def key(self):
-        """Gets the key of this Untag.
+        r"""Gets the key of this Untag.
 
         标签\"键\"的标识符或名称。
 
@@ -60,7 +60,7 @@ class Untag:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this Untag.
+        r"""Sets the key of this Untag.
 
         标签\"键\"的标识符或名称。
 
@@ -71,7 +71,7 @@ class Untag:
 
     @property
     def value(self):
-        """Gets the value of this Untag.
+        r"""Gets the value of this Untag.
 
         标签\"键\"对应的\"值\"。您可以将标签的值设置为空字符串，但不能设置为null。
 
@@ -82,7 +82,7 @@ class Untag:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this Untag.
+        r"""Sets the value of this Untag.
 
         标签\"键\"对应的\"值\"。您可以将标签的值设置为空字符串，但不能设置为null。
 

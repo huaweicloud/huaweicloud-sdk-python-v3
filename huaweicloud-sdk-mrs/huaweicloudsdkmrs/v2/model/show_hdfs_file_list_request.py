@@ -35,7 +35,7 @@ class ShowHdfsFileListRequest:
     }
 
     def __init__(self, cluster_id=None, path=None, offset=None, limit=None, sort_key=None, order=None):
-        """ShowHdfsFileListRequest
+        r"""ShowHdfsFileListRequest
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class ShowHdfsFileListRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowHdfsFileListRequest.
+        r"""Gets the cluster_id of this ShowHdfsFileListRequest.
 
         集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
 
@@ -87,7 +87,7 @@ class ShowHdfsFileListRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowHdfsFileListRequest.
+        r"""Sets the cluster_id of this ShowHdfsFileListRequest.
 
         集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
 
@@ -98,7 +98,7 @@ class ShowHdfsFileListRequest:
 
     @property
     def path(self):
-        """Gets the path of this ShowHdfsFileListRequest.
+        r"""Gets the path of this ShowHdfsFileListRequest.
 
         文件目录。 比如访问“/tmp/test”目录列表，此处必须是目录，整体URI为/v2/{project_id}/clusters/{cluster_id}/files?path=%2Ftmp%2Ftest 单层目录要遵循以下规则： - 不能为空 - 不能以\".\"开头或结尾 - 不能包括下列符号 : :*?\"<>|\\;&,'`!{}[]$%+ - 不能超过255个字节
 
@@ -109,7 +109,7 @@ class ShowHdfsFileListRequest:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ShowHdfsFileListRequest.
+        r"""Sets the path of this ShowHdfsFileListRequest.
 
         文件目录。 比如访问“/tmp/test”目录列表，此处必须是目录，整体URI为/v2/{project_id}/clusters/{cluster_id}/files?path=%2Ftmp%2Ftest 单层目录要遵循以下规则： - 不能为空 - 不能以\".\"开头或结尾 - 不能包括下列符号 : :*?\"<>|\\;&,'`!{}[]$%+ - 不能超过255个字节
 
@@ -120,7 +120,7 @@ class ShowHdfsFileListRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowHdfsFileListRequest.
+        r"""Gets the offset of this ShowHdfsFileListRequest.
 
         分页参数，表示从该偏移量开始查询文件列表，默认值为0。
 
@@ -131,7 +131,7 @@ class ShowHdfsFileListRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowHdfsFileListRequest.
+        r"""Sets the offset of this ShowHdfsFileListRequest.
 
         分页参数，表示从该偏移量开始查询文件列表，默认值为0。
 
@@ -142,7 +142,7 @@ class ShowHdfsFileListRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowHdfsFileListRequest.
+        r"""Gets the limit of this ShowHdfsFileListRequest.
 
         分页参数，列表当前分页的数量限制，默认为100，最大1000。
 
@@ -153,7 +153,7 @@ class ShowHdfsFileListRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowHdfsFileListRequest.
+        r"""Sets the limit of this ShowHdfsFileListRequest.
 
         分页参数，列表当前分页的数量限制，默认为100，最大1000。
 
@@ -164,7 +164,7 @@ class ShowHdfsFileListRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ShowHdfsFileListRequest.
+        r"""Gets the sort_key of this ShowHdfsFileListRequest.
 
         列表排序按该属性排序。缺省值：path_suffix - path_suffix：文件或目录名称 - length：文件大小 - modification_time：修改时间
 
@@ -175,7 +175,7 @@ class ShowHdfsFileListRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ShowHdfsFileListRequest.
+        r"""Sets the sort_key of this ShowHdfsFileListRequest.
 
         列表排序按该属性排序。缺省值：path_suffix - path_suffix：文件或目录名称 - length：文件大小 - modification_time：修改时间
 
@@ -186,7 +186,7 @@ class ShowHdfsFileListRequest:
 
     @property
     def order(self):
-        """Gets the order of this ShowHdfsFileListRequest.
+        r"""Gets the order of this ShowHdfsFileListRequest.
 
         列表排序方式，desc为降序，asc为升序，默认值为desc。
 
@@ -197,7 +197,7 @@ class ShowHdfsFileListRequest:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this ShowHdfsFileListRequest.
+        r"""Sets the order of this ShowHdfsFileListRequest.
 
         列表排序方式，desc为降序，asc为升序，默认值为desc。
 

@@ -28,7 +28,7 @@ class ListRootsResponse(SdkResponse):
     }
 
     def __init__(self, roots=None, page_info=None):
-        """ListRootsResponse
+        r"""ListRootsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListRootsResponse(SdkResponse):
 
     @property
     def roots(self):
-        """Gets the roots of this ListRootsResponse.
+        r"""Gets the roots of this ListRootsResponse.
 
         在组织中定义的根列表。
 
@@ -62,7 +62,7 @@ class ListRootsResponse(SdkResponse):
 
     @roots.setter
     def roots(self, roots):
-        """Sets the roots of this ListRootsResponse.
+        r"""Sets the roots of this ListRootsResponse.
 
         在组织中定义的根列表。
 
@@ -73,7 +73,7 @@ class ListRootsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListRootsResponse.
+        r"""Gets the page_info of this ListRootsResponse.
 
         :return: The page_info of this ListRootsResponse.
         :rtype: :class:`huaweicloudsdkorganizations.v1.PageInfoDto`
@@ -82,7 +82,7 @@ class ListRootsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListRootsResponse.
+        r"""Sets the page_info of this ListRootsResponse.
 
         :param page_info: The page_info of this ListRootsResponse.
         :type page_info: :class:`huaweicloudsdkorganizations.v1.PageInfoDto`

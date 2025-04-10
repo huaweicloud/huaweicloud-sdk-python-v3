@@ -27,7 +27,7 @@ class DeleteNotificationRequest:
     }
 
     def __init__(self, instance_id=None, notification_id=None):
-        """DeleteNotificationRequest
+        r"""DeleteNotificationRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteNotificationRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteNotificationRequest.
+        r"""Gets the instance_id of this DeleteNotificationRequest.
 
         实例ID
 
@@ -59,7 +59,7 @@ class DeleteNotificationRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteNotificationRequest.
+        r"""Sets the instance_id of this DeleteNotificationRequest.
 
         实例ID
 
@@ -70,7 +70,7 @@ class DeleteNotificationRequest:
 
     @property
     def notification_id(self):
-        """Gets the notification_id of this DeleteNotificationRequest.
+        r"""Gets the notification_id of this DeleteNotificationRequest.
 
         订阅管理ID
 
@@ -81,7 +81,7 @@ class DeleteNotificationRequest:
 
     @notification_id.setter
     def notification_id(self, notification_id):
-        """Sets the notification_id of this DeleteNotificationRequest.
+        r"""Sets the notification_id of this DeleteNotificationRequest.
 
         订阅管理ID
 

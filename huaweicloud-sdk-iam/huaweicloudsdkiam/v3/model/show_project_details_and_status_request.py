@@ -25,7 +25,7 @@ class ShowProjectDetailsAndStatusRequest:
     }
 
     def __init__(self, project_id=None):
-        """ShowProjectDetailsAndStatusRequest
+        r"""ShowProjectDetailsAndStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowProjectDetailsAndStatusRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowProjectDetailsAndStatusRequest.
+        r"""Gets the project_id of this ShowProjectDetailsAndStatusRequest.
 
         待查询的项目ID，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -53,7 +53,7 @@ class ShowProjectDetailsAndStatusRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowProjectDetailsAndStatusRequest.
+        r"""Sets the project_id of this ShowProjectDetailsAndStatusRequest.
 
         待查询的项目ID，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 

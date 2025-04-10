@@ -25,7 +25,7 @@ class TicketInformation:
     }
 
     def __init__(self, ticket_infos=None):
-        """TicketInformation
+        r"""TicketInformation
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class TicketInformation:
 
     @property
     def ticket_infos(self):
-        """Gets the ticket_infos of this TicketInformation.
+        r"""Gets the ticket_infos of this TicketInformation.
 
         选择的四号提权单信息
 
@@ -54,7 +54,7 @@ class TicketInformation:
 
     @ticket_infos.setter
     def ticket_infos(self, ticket_infos):
-        """Sets the ticket_infos of this TicketInformation.
+        r"""Sets the ticket_infos of this TicketInformation.
 
         选择的四号提权单信息
 

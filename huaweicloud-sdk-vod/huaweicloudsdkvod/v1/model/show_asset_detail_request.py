@@ -27,7 +27,7 @@ class ShowAssetDetailRequest:
     }
 
     def __init__(self, asset_id=None, categories=None):
-        """ShowAssetDetailRequest
+        r"""ShowAssetDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowAssetDetailRequest:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this ShowAssetDetailRequest.
+        r"""Gets the asset_id of this ShowAssetDetailRequest.
 
         媒资ID。
 
@@ -60,7 +60,7 @@ class ShowAssetDetailRequest:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this ShowAssetDetailRequest.
+        r"""Sets the asset_id of this ShowAssetDetailRequest.
 
         媒资ID。
 
@@ -71,7 +71,7 @@ class ShowAssetDetailRequest:
 
     @property
     def categories(self):
-        """Gets the categories of this ShowAssetDetailRequest.
+        r"""Gets the categories of this ShowAssetDetailRequest.
 
         查询的信息类型。 - 为空时表示查询所有信息。 - 不为空时支持同时查询一个或者多个类型的信息，取值如下： - - base_info：媒资基本信息。 - - transcode_info：转码结果信息。 - - thumbnail_info：截图结果信息。 - - review_info：审核结果信息。
 
@@ -82,7 +82,7 @@ class ShowAssetDetailRequest:
 
     @categories.setter
     def categories(self, categories):
-        """Sets the categories of this ShowAssetDetailRequest.
+        r"""Sets the categories of this ShowAssetDetailRequest.
 
         查询的信息类型。 - 为空时表示查询所有信息。 - 不为空时支持同时查询一个或者多个类型的信息，取值如下： - - base_info：媒资基本信息。 - - transcode_info：转码结果信息。 - - thumbnail_info：截图结果信息。 - - review_info：审核结果信息。
 

@@ -26,7 +26,7 @@ class CreateDesktopBatchOrderResponse(SdkResponse):
     }
 
     def __init__(self, orders=None):
-        """CreateDesktopBatchOrderResponse
+        r"""CreateDesktopBatchOrderResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateDesktopBatchOrderResponse(SdkResponse):
 
     @property
     def orders(self):
-        """Gets the orders of this CreateDesktopBatchOrderResponse.
+        r"""Gets the orders of this CreateDesktopBatchOrderResponse.
 
         批量生成订单结果
 
@@ -55,7 +55,7 @@ class CreateDesktopBatchOrderResponse(SdkResponse):
 
     @orders.setter
     def orders(self, orders):
-        """Sets the orders of this CreateDesktopBatchOrderResponse.
+        r"""Sets the orders of this CreateDesktopBatchOrderResponse.
 
         批量生成订单结果
 

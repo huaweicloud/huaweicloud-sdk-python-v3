@@ -27,7 +27,7 @@ class KeyDescriptionInfo:
     }
 
     def __init__(self, key_id=None, key_description=None):
-        """KeyDescriptionInfo
+        r"""KeyDescriptionInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class KeyDescriptionInfo:
 
     @property
     def key_id(self):
-        """Gets the key_id of this KeyDescriptionInfo.
+        r"""Gets the key_id of this KeyDescriptionInfo.
 
         密钥ID。
 
@@ -61,7 +61,7 @@ class KeyDescriptionInfo:
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this KeyDescriptionInfo.
+        r"""Sets the key_id of this KeyDescriptionInfo.
 
         密钥ID。
 
@@ -72,7 +72,7 @@ class KeyDescriptionInfo:
 
     @property
     def key_description(self):
-        """Gets the key_description of this KeyDescriptionInfo.
+        r"""Gets the key_description of this KeyDescriptionInfo.
 
         密钥描述。
 
@@ -83,7 +83,7 @@ class KeyDescriptionInfo:
 
     @key_description.setter
     def key_description(self, key_description):
-        """Sets the key_description of this KeyDescriptionInfo.
+        r"""Sets the key_description of this KeyDescriptionInfo.
 
         密钥描述。
 

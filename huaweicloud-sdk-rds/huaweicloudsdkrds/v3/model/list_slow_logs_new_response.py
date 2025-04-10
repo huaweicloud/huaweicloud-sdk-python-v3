@@ -28,7 +28,7 @@ class ListSlowLogsNewResponse(SdkResponse):
     }
 
     def __init__(self, slow_log_list=None, total_record=None):
-        """ListSlowLogsNewResponse
+        r"""ListSlowLogsNewResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSlowLogsNewResponse(SdkResponse):
 
     @property
     def slow_log_list(self):
-        """Gets the slow_log_list of this ListSlowLogsNewResponse.
+        r"""Gets the slow_log_list of this ListSlowLogsNewResponse.
 
         :return: The slow_log_list of this ListSlowLogsNewResponse.
         :rtype: list[:class:`huaweicloudsdkrds.v3.SlowLog`]
@@ -60,7 +60,7 @@ class ListSlowLogsNewResponse(SdkResponse):
 
     @slow_log_list.setter
     def slow_log_list(self, slow_log_list):
-        """Sets the slow_log_list of this ListSlowLogsNewResponse.
+        r"""Sets the slow_log_list of this ListSlowLogsNewResponse.
 
         :param slow_log_list: The slow_log_list of this ListSlowLogsNewResponse.
         :type slow_log_list: list[:class:`huaweicloudsdkrds.v3.SlowLog`]
@@ -69,7 +69,7 @@ class ListSlowLogsNewResponse(SdkResponse):
 
     @property
     def total_record(self):
-        """Gets the total_record of this ListSlowLogsNewResponse.
+        r"""Gets the total_record of this ListSlowLogsNewResponse.
 
         总记录数。
 
@@ -80,7 +80,7 @@ class ListSlowLogsNewResponse(SdkResponse):
 
     @total_record.setter
     def total_record(self, total_record):
-        """Sets the total_record of this ListSlowLogsNewResponse.
+        r"""Sets the total_record of this ListSlowLogsNewResponse.
 
         总记录数。
 

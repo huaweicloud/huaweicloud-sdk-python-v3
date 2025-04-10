@@ -55,7 +55,7 @@ class AuthorizerResp:
     }
 
     def __init__(self, name=None, type=None, authorizer_type=None, authorizer_uri=None, network_type=None, authorizer_version=None, authorizer_alias_uri=None, identities=None, ttl=None, user_data=None, ld_api_id=None, need_body=None, id=None, create_time=None, roma_app_id=None, roma_app_name=None):
-        """AuthorizerResp
+        r"""AuthorizerResp
 
         The model defined in huaweicloud sdk
 
@@ -144,7 +144,7 @@ class AuthorizerResp:
 
     @property
     def name(self):
-        """Gets the name of this AuthorizerResp.
+        r"""Gets the name of this AuthorizerResp.
 
         自定义认证的名称。 长度为3 ~ 64位的字符串，字符串由中文、英文字母、数字、“_”组成，且只能以英文或中文开头。 
 
@@ -155,7 +155,7 @@ class AuthorizerResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AuthorizerResp.
+        r"""Sets the name of this AuthorizerResp.
 
         自定义认证的名称。 长度为3 ~ 64位的字符串，字符串由中文、英文字母、数字、“_”组成，且只能以英文或中文开头。 
 
@@ -166,7 +166,7 @@ class AuthorizerResp:
 
     @property
     def type(self):
-        """Gets the type of this AuthorizerResp.
+        r"""Gets the type of this AuthorizerResp.
 
         自定义认证类型  - FRONTEND：前端 - BACKEND：后端  不支持修改
 
@@ -177,7 +177,7 @@ class AuthorizerResp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AuthorizerResp.
+        r"""Sets the type of this AuthorizerResp.
 
         自定义认证类型  - FRONTEND：前端 - BACKEND：后端  不支持修改
 
@@ -188,7 +188,7 @@ class AuthorizerResp:
 
     @property
     def authorizer_type(self):
-        """Gets the authorizer_type of this AuthorizerResp.
+        r"""Gets the authorizer_type of this AuthorizerResp.
 
         只能为：FUNC
 
@@ -199,7 +199,7 @@ class AuthorizerResp:
 
     @authorizer_type.setter
     def authorizer_type(self, authorizer_type):
-        """Sets the authorizer_type of this AuthorizerResp.
+        r"""Sets the authorizer_type of this AuthorizerResp.
 
         只能为：FUNC
 
@@ -210,7 +210,7 @@ class AuthorizerResp:
 
     @property
     def authorizer_uri(self):
-        """Gets the authorizer_uri of this AuthorizerResp.
+        r"""Gets the authorizer_uri of this AuthorizerResp.
 
         函数地址。
 
@@ -221,7 +221,7 @@ class AuthorizerResp:
 
     @authorizer_uri.setter
     def authorizer_uri(self, authorizer_uri):
-        """Sets the authorizer_uri of this AuthorizerResp.
+        r"""Sets the authorizer_uri of this AuthorizerResp.
 
         函数地址。
 
@@ -232,7 +232,7 @@ class AuthorizerResp:
 
     @property
     def network_type(self):
-        """Gets the network_type of this AuthorizerResp.
+        r"""Gets the network_type of this AuthorizerResp.
 
         对接函数的网络架构类型 - V1：非VPC网络架构 - V2：VPC网络架构
 
@@ -243,7 +243,7 @@ class AuthorizerResp:
 
     @network_type.setter
     def network_type(self, network_type):
-        """Sets the network_type of this AuthorizerResp.
+        r"""Sets the network_type of this AuthorizerResp.
 
         对接函数的网络架构类型 - V1：非VPC网络架构 - V2：VPC网络架构
 
@@ -254,7 +254,7 @@ class AuthorizerResp:
 
     @property
     def authorizer_version(self):
-        """Gets the authorizer_version of this AuthorizerResp.
+        r"""Gets the authorizer_version of this AuthorizerResp.
 
         函数版本。  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
 
@@ -265,7 +265,7 @@ class AuthorizerResp:
 
     @authorizer_version.setter
     def authorizer_version(self, authorizer_version):
-        """Sets the authorizer_version of this AuthorizerResp.
+        r"""Sets the authorizer_version of this AuthorizerResp.
 
         函数版本。  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
 
@@ -276,7 +276,7 @@ class AuthorizerResp:
 
     @property
     def authorizer_alias_uri(self):
-        """Gets the authorizer_alias_uri of this AuthorizerResp.
+        r"""Gets the authorizer_alias_uri of this AuthorizerResp.
 
         函数别名地址。  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
 
@@ -287,7 +287,7 @@ class AuthorizerResp:
 
     @authorizer_alias_uri.setter
     def authorizer_alias_uri(self, authorizer_alias_uri):
-        """Sets the authorizer_alias_uri of this AuthorizerResp.
+        r"""Sets the authorizer_alias_uri of this AuthorizerResp.
 
         函数别名地址。  当函数别名URN和函数版本同时传入时，函数版本将被忽略，只会使用函数别名URN
 
@@ -298,7 +298,7 @@ class AuthorizerResp:
 
     @property
     def identities(self):
-        """Gets the identities of this AuthorizerResp.
+        r"""Gets the identities of this AuthorizerResp.
 
         认证来源
 
@@ -309,7 +309,7 @@ class AuthorizerResp:
 
     @identities.setter
     def identities(self, identities):
-        """Sets the identities of this AuthorizerResp.
+        r"""Sets the identities of this AuthorizerResp.
 
         认证来源
 
@@ -320,7 +320,7 @@ class AuthorizerResp:
 
     @property
     def ttl(self):
-        """Gets the ttl of this AuthorizerResp.
+        r"""Gets the ttl of this AuthorizerResp.
 
         缓存时间
 
@@ -331,7 +331,7 @@ class AuthorizerResp:
 
     @ttl.setter
     def ttl(self, ttl):
-        """Sets the ttl of this AuthorizerResp.
+        r"""Sets the ttl of this AuthorizerResp.
 
         缓存时间
 
@@ -342,7 +342,7 @@ class AuthorizerResp:
 
     @property
     def user_data(self):
-        """Gets the user_data of this AuthorizerResp.
+        r"""Gets the user_data of this AuthorizerResp.
 
         用户数据
 
@@ -353,7 +353,7 @@ class AuthorizerResp:
 
     @user_data.setter
     def user_data(self, user_data):
-        """Sets the user_data of this AuthorizerResp.
+        r"""Sets the user_data of this AuthorizerResp.
 
         用户数据
 
@@ -364,7 +364,7 @@ class AuthorizerResp:
 
     @property
     def ld_api_id(self):
-        """Gets the ld_api_id of this AuthorizerResp.
+        r"""Gets the ld_api_id of this AuthorizerResp.
 
         自定义后端服务ID。  暂不支持
 
@@ -375,7 +375,7 @@ class AuthorizerResp:
 
     @ld_api_id.setter
     def ld_api_id(self, ld_api_id):
-        """Sets the ld_api_id of this AuthorizerResp.
+        r"""Sets the ld_api_id of this AuthorizerResp.
 
         自定义后端服务ID。  暂不支持
 
@@ -386,7 +386,7 @@ class AuthorizerResp:
 
     @property
     def need_body(self):
-        """Gets the need_body of this AuthorizerResp.
+        r"""Gets the need_body of this AuthorizerResp.
 
         是否发送body
 
@@ -397,7 +397,7 @@ class AuthorizerResp:
 
     @need_body.setter
     def need_body(self, need_body):
-        """Sets the need_body of this AuthorizerResp.
+        r"""Sets the need_body of this AuthorizerResp.
 
         是否发送body
 
@@ -408,7 +408,7 @@ class AuthorizerResp:
 
     @property
     def id(self):
-        """Gets the id of this AuthorizerResp.
+        r"""Gets the id of this AuthorizerResp.
 
         自定义认证编号
 
@@ -419,7 +419,7 @@ class AuthorizerResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AuthorizerResp.
+        r"""Sets the id of this AuthorizerResp.
 
         自定义认证编号
 
@@ -430,7 +430,7 @@ class AuthorizerResp:
 
     @property
     def create_time(self):
-        """Gets the create_time of this AuthorizerResp.
+        r"""Gets the create_time of this AuthorizerResp.
 
         创建时间
 
@@ -441,7 +441,7 @@ class AuthorizerResp:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AuthorizerResp.
+        r"""Sets the create_time of this AuthorizerResp.
 
         创建时间
 
@@ -452,7 +452,7 @@ class AuthorizerResp:
 
     @property
     def roma_app_id(self):
-        """Gets the roma_app_id of this AuthorizerResp.
+        r"""Gets the roma_app_id of this AuthorizerResp.
 
         自定义认证所属应用编号  暂不支持
 
@@ -463,7 +463,7 @@ class AuthorizerResp:
 
     @roma_app_id.setter
     def roma_app_id(self, roma_app_id):
-        """Sets the roma_app_id of this AuthorizerResp.
+        r"""Sets the roma_app_id of this AuthorizerResp.
 
         自定义认证所属应用编号  暂不支持
 
@@ -474,7 +474,7 @@ class AuthorizerResp:
 
     @property
     def roma_app_name(self):
-        """Gets the roma_app_name of this AuthorizerResp.
+        r"""Gets the roma_app_name of this AuthorizerResp.
 
         自定义认证所属应用名称  暂不支持
 
@@ -485,7 +485,7 @@ class AuthorizerResp:
 
     @roma_app_name.setter
     def roma_app_name(self, roma_app_name):
-        """Sets the roma_app_name of this AuthorizerResp.
+        r"""Sets the roma_app_name of this AuthorizerResp.
 
         自定义认证所属应用名称  暂不支持
 

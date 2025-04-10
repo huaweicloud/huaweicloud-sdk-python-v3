@@ -34,7 +34,7 @@ class ListAppsResponse(SdkResponse):
     }
 
     def __init__(self, page_num=None, page_size=None, total_size=None, total_pages=None, result=None):
-        """ListAppsResponse
+        r"""ListAppsResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListAppsResponse(SdkResponse):
 
     @property
     def page_num(self):
-        """Gets the page_num of this ListAppsResponse.
+        r"""Gets the page_num of this ListAppsResponse.
 
         分页查询时，每页最多展示的记录数。
 
@@ -83,7 +83,7 @@ class ListAppsResponse(SdkResponse):
 
     @page_num.setter
     def page_num(self, page_num):
-        """Sets the page_num of this ListAppsResponse.
+        r"""Sets the page_num of this ListAppsResponse.
 
         分页查询时，每页最多展示的记录数。
 
@@ -94,7 +94,7 @@ class ListAppsResponse(SdkResponse):
 
     @property
     def page_size(self):
-        """Gets the page_size of this ListAppsResponse.
+        r"""Gets the page_size of this ListAppsResponse.
 
         分页查询的页数。
 
@@ -105,7 +105,7 @@ class ListAppsResponse(SdkResponse):
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ListAppsResponse.
+        r"""Sets the page_size of this ListAppsResponse.
 
         分页查询的页数。
 
@@ -116,7 +116,7 @@ class ListAppsResponse(SdkResponse):
 
     @property
     def total_size(self):
-        """Gets the total_size of this ListAppsResponse.
+        r"""Gets the total_size of this ListAppsResponse.
 
         总共条数。
 
@@ -127,7 +127,7 @@ class ListAppsResponse(SdkResponse):
 
     @total_size.setter
     def total_size(self, total_size):
-        """Sets the total_size of this ListAppsResponse.
+        r"""Sets the total_size of this ListAppsResponse.
 
         总共条数。
 
@@ -138,7 +138,7 @@ class ListAppsResponse(SdkResponse):
 
     @property
     def total_pages(self):
-        """Gets the total_pages of this ListAppsResponse.
+        r"""Gets the total_pages of this ListAppsResponse.
 
         总页数。
 
@@ -149,7 +149,7 @@ class ListAppsResponse(SdkResponse):
 
     @total_pages.setter
     def total_pages(self, total_pages):
-        """Sets the total_pages of this ListAppsResponse.
+        r"""Sets the total_pages of this ListAppsResponse.
 
         总页数。
 
@@ -160,7 +160,7 @@ class ListAppsResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListAppsResponse.
+        r"""Gets the result of this ListAppsResponse.
 
         应用详情。
 
@@ -171,7 +171,7 @@ class ListAppsResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListAppsResponse.
+        r"""Sets the result of this ListAppsResponse.
 
         应用详情。
 

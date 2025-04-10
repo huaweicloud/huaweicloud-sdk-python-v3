@@ -25,7 +25,7 @@ class DeleteGaussMySqlDatabaseRequestBody:
     }
 
     def __init__(self, databases=None):
-        """DeleteGaussMySqlDatabaseRequestBody
+        r"""DeleteGaussMySqlDatabaseRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteGaussMySqlDatabaseRequestBody:
 
     @property
     def databases(self):
-        """Gets the databases of this DeleteGaussMySqlDatabaseRequestBody.
+        r"""Gets the databases of this DeleteGaussMySqlDatabaseRequestBody.
 
         准备删除的数据库列表，列表最大长度为50。
 
@@ -53,7 +53,7 @@ class DeleteGaussMySqlDatabaseRequestBody:
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this DeleteGaussMySqlDatabaseRequestBody.
+        r"""Sets the databases of this DeleteGaussMySqlDatabaseRequestBody.
 
         准备删除的数据库列表，列表最大长度为50。
 

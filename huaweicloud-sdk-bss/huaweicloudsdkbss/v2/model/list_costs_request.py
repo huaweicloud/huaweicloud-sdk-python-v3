@@ -27,7 +27,7 @@ class ListCostsRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """ListCostsRequest
+        r"""ListCostsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListCostsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListCostsRequest.
+        r"""Gets the x_language of this ListCostsRequest.
 
         语言。中文：zh_CN英文：en_US缺省为zh_CN。
 
@@ -61,7 +61,7 @@ class ListCostsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListCostsRequest.
+        r"""Sets the x_language of this ListCostsRequest.
 
         语言。中文：zh_CN英文：en_US缺省为zh_CN。
 
@@ -72,7 +72,7 @@ class ListCostsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListCostsRequest.
+        r"""Gets the body of this ListCostsRequest.
 
         :return: The body of this ListCostsRequest.
         :rtype: :class:`huaweicloudsdkbss.v2.ListCostsReq`
@@ -81,7 +81,7 @@ class ListCostsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListCostsRequest.
+        r"""Sets the body of this ListCostsRequest.
 
         :param body: The body of this ListCostsRequest.
         :type body: :class:`huaweicloudsdkbss.v2.ListCostsReq`

@@ -31,7 +31,7 @@ class UpdateGeoipRuleRequest:
     }
 
     def __init__(self, enterprise_project_id=None, policy_id=None, rule_id=None, body=None):
-        """UpdateGeoipRuleRequest
+        r"""UpdateGeoipRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class UpdateGeoipRuleRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this UpdateGeoipRuleRequest.
+        r"""Gets the enterprise_project_id of this UpdateGeoipRuleRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -73,7 +73,7 @@ class UpdateGeoipRuleRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this UpdateGeoipRuleRequest.
+        r"""Sets the enterprise_project_id of this UpdateGeoipRuleRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -84,7 +84,7 @@ class UpdateGeoipRuleRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this UpdateGeoipRuleRequest.
+        r"""Gets the policy_id of this UpdateGeoipRuleRequest.
 
         防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id，响应体的id字段
 
@@ -95,7 +95,7 @@ class UpdateGeoipRuleRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this UpdateGeoipRuleRequest.
+        r"""Sets the policy_id of this UpdateGeoipRuleRequest.
 
         防护策略id，您可以通过调用查询防护策略列表（ListPolicy）获取策略id，响应体的id字段
 
@@ -106,7 +106,7 @@ class UpdateGeoipRuleRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this UpdateGeoipRuleRequest.
+        r"""Gets the rule_id of this UpdateGeoipRuleRequest.
 
         地理位置控制规则id，规则id从查询地理位置规则列表（ListGeoipRule）接口获取，响应体的id字段
 
@@ -117,7 +117,7 @@ class UpdateGeoipRuleRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this UpdateGeoipRuleRequest.
+        r"""Sets the rule_id of this UpdateGeoipRuleRequest.
 
         地理位置控制规则id，规则id从查询地理位置规则列表（ListGeoipRule）接口获取，响应体的id字段
 
@@ -128,7 +128,7 @@ class UpdateGeoipRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateGeoipRuleRequest.
+        r"""Gets the body of this UpdateGeoipRuleRequest.
 
         :return: The body of this UpdateGeoipRuleRequest.
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateGeoipRuleRequestBody`
@@ -137,7 +137,7 @@ class UpdateGeoipRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateGeoipRuleRequest.
+        r"""Sets the body of this UpdateGeoipRuleRequest.
 
         :param body: The body of this UpdateGeoipRuleRequest.
         :type body: :class:`huaweicloudsdkwaf.v1.UpdateGeoipRuleRequestBody`

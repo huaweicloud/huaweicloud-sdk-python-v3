@@ -33,7 +33,7 @@ class NovaSecurityGroup:
     }
 
     def __init__(self, description=None, id=None, name=None, tenant_id=None, rules=None):
-        """NovaSecurityGroup
+        r"""NovaSecurityGroup
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class NovaSecurityGroup:
 
     @property
     def description(self):
-        """Gets the description of this NovaSecurityGroup.
+        r"""Gets the description of this NovaSecurityGroup.
 
         安全组描述信息，长度0-255
 
@@ -77,7 +77,7 @@ class NovaSecurityGroup:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this NovaSecurityGroup.
+        r"""Sets the description of this NovaSecurityGroup.
 
         安全组描述信息，长度0-255
 
@@ -88,7 +88,7 @@ class NovaSecurityGroup:
 
     @property
     def id(self):
-        """Gets the id of this NovaSecurityGroup.
+        r"""Gets the id of this NovaSecurityGroup.
 
         安全组ID，UUID格式
 
@@ -99,7 +99,7 @@ class NovaSecurityGroup:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NovaSecurityGroup.
+        r"""Sets the id of this NovaSecurityGroup.
 
         安全组ID，UUID格式
 
@@ -110,7 +110,7 @@ class NovaSecurityGroup:
 
     @property
     def name(self):
-        """Gets the name of this NovaSecurityGroup.
+        r"""Gets the name of this NovaSecurityGroup.
 
         安全组名字，长度0-255
 
@@ -121,7 +121,7 @@ class NovaSecurityGroup:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NovaSecurityGroup.
+        r"""Sets the name of this NovaSecurityGroup.
 
         安全组名字，长度0-255
 
@@ -132,7 +132,7 @@ class NovaSecurityGroup:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this NovaSecurityGroup.
+        r"""Gets the tenant_id of this NovaSecurityGroup.
 
         租户ID或项目ID
 
@@ -143,7 +143,7 @@ class NovaSecurityGroup:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this NovaSecurityGroup.
+        r"""Sets the tenant_id of this NovaSecurityGroup.
 
         租户ID或项目ID
 
@@ -154,7 +154,7 @@ class NovaSecurityGroup:
 
     @property
     def rules(self):
-        """Gets the rules of this NovaSecurityGroup.
+        r"""Gets the rules of this NovaSecurityGroup.
 
         安全组规则列表
 
@@ -165,7 +165,7 @@ class NovaSecurityGroup:
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this NovaSecurityGroup.
+        r"""Sets the rules of this NovaSecurityGroup.
 
         安全组规则列表
 

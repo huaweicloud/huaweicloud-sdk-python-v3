@@ -25,7 +25,7 @@ class ListLifeCycleHooksRequest:
     }
 
     def __init__(self, scaling_group_id=None):
-        """ListLifeCycleHooksRequest
+        r"""ListLifeCycleHooksRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListLifeCycleHooksRequest:
 
     @property
     def scaling_group_id(self):
-        """Gets the scaling_group_id of this ListLifeCycleHooksRequest.
+        r"""Gets the scaling_group_id of this ListLifeCycleHooksRequest.
 
         伸缩组标识。
 
@@ -53,7 +53,7 @@ class ListLifeCycleHooksRequest:
 
     @scaling_group_id.setter
     def scaling_group_id(self, scaling_group_id):
-        """Sets the scaling_group_id of this ListLifeCycleHooksRequest.
+        r"""Sets the scaling_group_id of this ListLifeCycleHooksRequest.
 
         伸缩组标识。
 

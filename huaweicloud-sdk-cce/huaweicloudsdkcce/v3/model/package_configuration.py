@@ -27,7 +27,7 @@ class PackageConfiguration:
     }
 
     def __init__(self, name=None, configurations=None):
-        """PackageConfiguration
+        r"""PackageConfiguration
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PackageConfiguration:
 
     @property
     def name(self):
-        """Gets the name of this PackageConfiguration.
+        r"""Gets the name of this PackageConfiguration.
 
         组件名称
 
@@ -61,7 +61,7 @@ class PackageConfiguration:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PackageConfiguration.
+        r"""Sets the name of this PackageConfiguration.
 
         组件名称
 
@@ -72,7 +72,7 @@ class PackageConfiguration:
 
     @property
     def configurations(self):
-        """Gets the configurations of this PackageConfiguration.
+        r"""Gets the configurations of this PackageConfiguration.
 
         组件配置项
 
@@ -83,7 +83,7 @@ class PackageConfiguration:
 
     @configurations.setter
     def configurations(self, configurations):
-        """Sets the configurations of this PackageConfiguration.
+        r"""Sets the configurations of this PackageConfiguration.
 
         组件配置项
 

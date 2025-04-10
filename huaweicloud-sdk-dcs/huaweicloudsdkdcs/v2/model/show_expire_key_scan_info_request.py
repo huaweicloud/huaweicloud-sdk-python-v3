@@ -31,7 +31,7 @@ class ShowExpireKeyScanInfoRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, status=None):
-        """ShowExpireKeyScanInfoRequest
+        r"""ShowExpireKeyScanInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ShowExpireKeyScanInfoRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowExpireKeyScanInfoRequest.
+        r"""Gets the instance_id of this ShowExpireKeyScanInfoRequest.
 
         实例ID
 
@@ -74,7 +74,7 @@ class ShowExpireKeyScanInfoRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowExpireKeyScanInfoRequest.
+        r"""Sets the instance_id of this ShowExpireKeyScanInfoRequest.
 
         实例ID
 
@@ -85,7 +85,7 @@ class ShowExpireKeyScanInfoRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowExpireKeyScanInfoRequest.
+        r"""Gets the offset of this ShowExpireKeyScanInfoRequest.
 
         偏移量，表示从此偏移量开始查询， start大于等于0
 
@@ -96,7 +96,7 @@ class ShowExpireKeyScanInfoRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowExpireKeyScanInfoRequest.
+        r"""Sets the offset of this ShowExpireKeyScanInfoRequest.
 
         偏移量，表示从此偏移量开始查询， start大于等于0
 
@@ -107,7 +107,7 @@ class ShowExpireKeyScanInfoRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowExpireKeyScanInfoRequest.
+        r"""Gets the limit of this ShowExpireKeyScanInfoRequest.
 
         每页显示的条目数量。
 
@@ -118,7 +118,7 @@ class ShowExpireKeyScanInfoRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowExpireKeyScanInfoRequest.
+        r"""Sets the limit of this ShowExpireKeyScanInfoRequest.
 
         每页显示的条目数量。
 
@@ -129,7 +129,7 @@ class ShowExpireKeyScanInfoRequest:
 
     @property
     def status(self):
-        """Gets the status of this ShowExpireKeyScanInfoRequest.
+        r"""Gets the status of this ShowExpireKeyScanInfoRequest.
 
         过期key状态
 
@@ -140,7 +140,7 @@ class ShowExpireKeyScanInfoRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowExpireKeyScanInfoRequest.
+        r"""Sets the status of this ShowExpireKeyScanInfoRequest.
 
         过期key状态
 

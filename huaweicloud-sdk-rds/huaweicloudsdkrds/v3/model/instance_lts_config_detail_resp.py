@@ -31,7 +31,7 @@ class InstanceLtsConfigDetailResp:
     }
 
     def __init__(self, log_type=None, lts_group_id=None, lts_stream_id=None, enabled=None):
-        """InstanceLtsConfigDetailResp
+        r"""InstanceLtsConfigDetailResp
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class InstanceLtsConfigDetailResp:
 
     @property
     def log_type(self):
-        """Gets the log_type of this InstanceLtsConfigDetailResp.
+        r"""Gets the log_type of this InstanceLtsConfigDetailResp.
 
         日志类型
 
@@ -75,7 +75,7 @@ class InstanceLtsConfigDetailResp:
 
     @log_type.setter
     def log_type(self, log_type):
-        """Sets the log_type of this InstanceLtsConfigDetailResp.
+        r"""Sets the log_type of this InstanceLtsConfigDetailResp.
 
         日志类型
 
@@ -86,7 +86,7 @@ class InstanceLtsConfigDetailResp:
 
     @property
     def lts_group_id(self):
-        """Gets the lts_group_id of this InstanceLtsConfigDetailResp.
+        r"""Gets the lts_group_id of this InstanceLtsConfigDetailResp.
 
         日志组id
 
@@ -97,7 +97,7 @@ class InstanceLtsConfigDetailResp:
 
     @lts_group_id.setter
     def lts_group_id(self, lts_group_id):
-        """Sets the lts_group_id of this InstanceLtsConfigDetailResp.
+        r"""Sets the lts_group_id of this InstanceLtsConfigDetailResp.
 
         日志组id
 
@@ -108,7 +108,7 @@ class InstanceLtsConfigDetailResp:
 
     @property
     def lts_stream_id(self):
-        """Gets the lts_stream_id of this InstanceLtsConfigDetailResp.
+        r"""Gets the lts_stream_id of this InstanceLtsConfigDetailResp.
 
         日志流id
 
@@ -119,7 +119,7 @@ class InstanceLtsConfigDetailResp:
 
     @lts_stream_id.setter
     def lts_stream_id(self, lts_stream_id):
-        """Sets the lts_stream_id of this InstanceLtsConfigDetailResp.
+        r"""Sets the lts_stream_id of this InstanceLtsConfigDetailResp.
 
         日志流id
 
@@ -130,7 +130,7 @@ class InstanceLtsConfigDetailResp:
 
     @property
     def enabled(self):
-        """Gets the enabled of this InstanceLtsConfigDetailResp.
+        r"""Gets the enabled of this InstanceLtsConfigDetailResp.
 
         是否开启上传至lts
 
@@ -141,7 +141,7 @@ class InstanceLtsConfigDetailResp:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this InstanceLtsConfigDetailResp.
+        r"""Sets the enabled of this InstanceLtsConfigDetailResp.
 
         是否开启上传至lts
 

@@ -33,7 +33,7 @@ class BatchSearchMetricHitsRequestBody:
     }
 
     def __init__(self, metric_ids=None, workspace_ids=None, params=None, interactive_params=None, field_ids=None):
-        """BatchSearchMetricHitsRequestBody
+        r"""BatchSearchMetricHitsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class BatchSearchMetricHitsRequestBody:
 
     @property
     def metric_ids(self):
-        """Gets the metric_ids of this BatchSearchMetricHitsRequestBody.
+        r"""Gets the metric_ids of this BatchSearchMetricHitsRequestBody.
 
         待查询的指标Id列表, 可参照附录中指标信息说明获取已有指标信息。
 
@@ -81,7 +81,7 @@ class BatchSearchMetricHitsRequestBody:
 
     @metric_ids.setter
     def metric_ids(self, metric_ids):
-        """Sets the metric_ids of this BatchSearchMetricHitsRequestBody.
+        r"""Sets the metric_ids of this BatchSearchMetricHitsRequestBody.
 
         待查询的指标Id列表, 可参照附录中指标信息说明获取已有指标信息。
 
@@ -92,7 +92,7 @@ class BatchSearchMetricHitsRequestBody:
 
     @property
     def workspace_ids(self):
-        """Gets the workspace_ids of this BatchSearchMetricHitsRequestBody.
+        r"""Gets the workspace_ids of this BatchSearchMetricHitsRequestBody.
 
         工作空间列表, 当指标支持获取多工作空间数据时填写。
 
@@ -103,7 +103,7 @@ class BatchSearchMetricHitsRequestBody:
 
     @workspace_ids.setter
     def workspace_ids(self, workspace_ids):
-        """Sets the workspace_ids of this BatchSearchMetricHitsRequestBody.
+        r"""Sets the workspace_ids of this BatchSearchMetricHitsRequestBody.
 
         工作空间列表, 当指标支持获取多工作空间数据时填写。
 
@@ -114,7 +114,7 @@ class BatchSearchMetricHitsRequestBody:
 
     @property
     def params(self):
-        """Gets the params of this BatchSearchMetricHitsRequestBody.
+        r"""Gets the params of this BatchSearchMetricHitsRequestBody.
 
         待查询指标的参数列表，列表内每个元素为<String, String>的K-V形式，元素数量必须与metric_ids列表相同，具体填写方式请参照附录。
 
@@ -125,7 +125,7 @@ class BatchSearchMetricHitsRequestBody:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this BatchSearchMetricHitsRequestBody.
+        r"""Sets the params of this BatchSearchMetricHitsRequestBody.
 
         待查询指标的参数列表，列表内每个元素为<String, String>的K-V形式，元素数量必须与metric_ids列表相同，具体填写方式请参照附录。
 
@@ -136,7 +136,7 @@ class BatchSearchMetricHitsRequestBody:
 
     @property
     def interactive_params(self):
-        """Gets the interactive_params of this BatchSearchMetricHitsRequestBody.
+        r"""Gets the interactive_params of this BatchSearchMetricHitsRequestBody.
 
         交互式参数查询，当指标支持交互式参数时，填写<String, String>的K-V形式的参数列表，具体填写方式请参照附录。
 
@@ -147,7 +147,7 @@ class BatchSearchMetricHitsRequestBody:
 
     @interactive_params.setter
     def interactive_params(self, interactive_params):
-        """Sets the interactive_params of this BatchSearchMetricHitsRequestBody.
+        r"""Sets the interactive_params of this BatchSearchMetricHitsRequestBody.
 
         交互式参数查询，当指标支持交互式参数时，填写<String, String>的K-V形式的参数列表，具体填写方式请参照附录。
 
@@ -158,7 +158,7 @@ class BatchSearchMetricHitsRequestBody:
 
     @property
     def field_ids(self):
-        """Gets the field_ids of this BatchSearchMetricHitsRequestBody.
+        r"""Gets the field_ids of this BatchSearchMetricHitsRequestBody.
 
         指标卡片ID列表
 
@@ -169,7 +169,7 @@ class BatchSearchMetricHitsRequestBody:
 
     @field_ids.setter
     def field_ids(self, field_ids):
-        """Sets the field_ids of this BatchSearchMetricHitsRequestBody.
+        r"""Sets the field_ids of this BatchSearchMetricHitsRequestBody.
 
         指标卡片ID列表
 

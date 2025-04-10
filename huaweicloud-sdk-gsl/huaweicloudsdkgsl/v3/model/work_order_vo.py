@@ -53,7 +53,7 @@ class WorkOrderVo:
     }
 
     def __init__(self, id=None, sim_type=None, work_order_type=None, req_detail=None, total_count=None, success_count=None, fail_count=None, process_count=None, status=None, create_time=None, finish_time=None, fail_reason=None, response=None, work_order_source=None, work_order_source_desc=None):
-        """WorkOrderVo
+        r"""WorkOrderVo
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class WorkOrderVo:
 
     @property
     def id(self):
-        """Gets the id of this WorkOrderVo.
+        r"""Gets the id of this WorkOrderVo.
 
         业务受理ID
 
@@ -152,7 +152,7 @@ class WorkOrderVo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this WorkOrderVo.
+        r"""Sets the id of this WorkOrderVo.
 
         业务受理ID
 
@@ -163,7 +163,7 @@ class WorkOrderVo:
 
     @property
     def sim_type(self):
-        """Gets the sim_type of this WorkOrderVo.
+        r"""Gets the sim_type of this WorkOrderVo.
 
         SIM卡类型:3.实体卡
 
@@ -174,7 +174,7 @@ class WorkOrderVo:
 
     @sim_type.setter
     def sim_type(self, sim_type):
-        """Sets the sim_type of this WorkOrderVo.
+        r"""Sets the sim_type of this WorkOrderVo.
 
         SIM卡类型:3.实体卡
 
@@ -185,7 +185,7 @@ class WorkOrderVo:
 
     @property
     def work_order_type(self):
-        """Gets the work_order_type of this WorkOrderVo.
+        r"""Gets the work_order_type of this WorkOrderVo.
 
         业务受理类型：1.批量激活实体卡 2.批量转移实体卡 3.创建流量池 4.实体卡复机 5.实体卡停机 6.批量启用或复机 7.批量停用或停机 8.批量订购 9.批量退订 10.实体卡激活 11.申请断网 12.达量断网 13.机卡重绑 14.实名制信息清除 15.实体卡限速 16.批量补卡 17.批量机卡重绑 18.重启已废弃后向流量池 19.批量达量断网 20断网恢复 21取消达量断网 22批量取消达量断网 23批量拆机
 
@@ -196,7 +196,7 @@ class WorkOrderVo:
 
     @work_order_type.setter
     def work_order_type(self, work_order_type):
-        """Sets the work_order_type of this WorkOrderVo.
+        r"""Sets the work_order_type of this WorkOrderVo.
 
         业务受理类型：1.批量激活实体卡 2.批量转移实体卡 3.创建流量池 4.实体卡复机 5.实体卡停机 6.批量启用或复机 7.批量停用或停机 8.批量订购 9.批量退订 10.实体卡激活 11.申请断网 12.达量断网 13.机卡重绑 14.实名制信息清除 15.实体卡限速 16.批量补卡 17.批量机卡重绑 18.重启已废弃后向流量池 19.批量达量断网 20断网恢复 21取消达量断网 22批量取消达量断网 23批量拆机
 
@@ -207,7 +207,7 @@ class WorkOrderVo:
 
     @property
     def req_detail(self):
-        """Gets the req_detail of this WorkOrderVo.
+        r"""Gets the req_detail of this WorkOrderVo.
 
         请求详情
 
@@ -218,7 +218,7 @@ class WorkOrderVo:
 
     @req_detail.setter
     def req_detail(self, req_detail):
-        """Sets the req_detail of this WorkOrderVo.
+        r"""Sets the req_detail of this WorkOrderVo.
 
         请求详情
 
@@ -229,7 +229,7 @@ class WorkOrderVo:
 
     @property
     def total_count(self):
-        """Gets the total_count of this WorkOrderVo.
+        r"""Gets the total_count of this WorkOrderVo.
 
         业务受理明细总数
 
@@ -240,7 +240,7 @@ class WorkOrderVo:
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this WorkOrderVo.
+        r"""Sets the total_count of this WorkOrderVo.
 
         业务受理明细总数
 
@@ -251,7 +251,7 @@ class WorkOrderVo:
 
     @property
     def success_count(self):
-        """Gets the success_count of this WorkOrderVo.
+        r"""Gets the success_count of this WorkOrderVo.
 
         业务受理明细成功数
 
@@ -262,7 +262,7 @@ class WorkOrderVo:
 
     @success_count.setter
     def success_count(self, success_count):
-        """Sets the success_count of this WorkOrderVo.
+        r"""Sets the success_count of this WorkOrderVo.
 
         业务受理明细成功数
 
@@ -273,7 +273,7 @@ class WorkOrderVo:
 
     @property
     def fail_count(self):
-        """Gets the fail_count of this WorkOrderVo.
+        r"""Gets the fail_count of this WorkOrderVo.
 
         业务受理明细失败数
 
@@ -284,7 +284,7 @@ class WorkOrderVo:
 
     @fail_count.setter
     def fail_count(self, fail_count):
-        """Sets the fail_count of this WorkOrderVo.
+        r"""Sets the fail_count of this WorkOrderVo.
 
         业务受理明细失败数
 
@@ -295,7 +295,7 @@ class WorkOrderVo:
 
     @property
     def process_count(self):
-        """Gets the process_count of this WorkOrderVo.
+        r"""Gets the process_count of this WorkOrderVo.
 
         业务受理明细处理中数
 
@@ -306,7 +306,7 @@ class WorkOrderVo:
 
     @process_count.setter
     def process_count(self, process_count):
-        """Sets the process_count of this WorkOrderVo.
+        r"""Sets the process_count of this WorkOrderVo.
 
         业务受理明细处理中数
 
@@ -317,7 +317,7 @@ class WorkOrderVo:
 
     @property
     def status(self):
-        """Gets the status of this WorkOrderVo.
+        r"""Gets the status of this WorkOrderVo.
 
         业务受理状态：1审核中、2已审核、3处理中、4已完成、5已取消、6失败、7 审核不通过
 
@@ -328,7 +328,7 @@ class WorkOrderVo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this WorkOrderVo.
+        r"""Sets the status of this WorkOrderVo.
 
         业务受理状态：1审核中、2已审核、3处理中、4已完成、5已取消、6失败、7 审核不通过
 
@@ -339,7 +339,7 @@ class WorkOrderVo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this WorkOrderVo.
+        r"""Gets the create_time of this WorkOrderVo.
 
         创建时间
 
@@ -350,7 +350,7 @@ class WorkOrderVo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this WorkOrderVo.
+        r"""Sets the create_time of this WorkOrderVo.
 
         创建时间
 
@@ -361,7 +361,7 @@ class WorkOrderVo:
 
     @property
     def finish_time(self):
-        """Gets the finish_time of this WorkOrderVo.
+        r"""Gets the finish_time of this WorkOrderVo.
 
         完成时间
 
@@ -372,7 +372,7 @@ class WorkOrderVo:
 
     @finish_time.setter
     def finish_time(self, finish_time):
-        """Sets the finish_time of this WorkOrderVo.
+        r"""Sets the finish_time of this WorkOrderVo.
 
         完成时间
 
@@ -383,7 +383,7 @@ class WorkOrderVo:
 
     @property
     def fail_reason(self):
-        """Gets the fail_reason of this WorkOrderVo.
+        r"""Gets the fail_reason of this WorkOrderVo.
 
         失败原因
 
@@ -394,7 +394,7 @@ class WorkOrderVo:
 
     @fail_reason.setter
     def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this WorkOrderVo.
+        r"""Sets the fail_reason of this WorkOrderVo.
 
         失败原因
 
@@ -405,7 +405,7 @@ class WorkOrderVo:
 
     @property
     def response(self):
-        """Gets the response of this WorkOrderVo.
+        r"""Gets the response of this WorkOrderVo.
 
         响应内容
 
@@ -416,7 +416,7 @@ class WorkOrderVo:
 
     @response.setter
     def response(self, response):
-        """Sets the response of this WorkOrderVo.
+        r"""Sets the response of this WorkOrderVo.
 
         响应内容
 
@@ -427,7 +427,7 @@ class WorkOrderVo:
 
     @property
     def work_order_source(self):
-        """Gets the work_order_source of this WorkOrderVo.
+        r"""Gets the work_order_source of this WorkOrderVo.
 
         业务受理单来源,1:运营人员生成,2:用户操作生成(console),3:自动化规则生成,4:后向流量池超阈值停用次月自动复机任务,5:单卡没流量停机定时任务,6:SIM卡到期自动停机定时任务,7:流量池停机定时任务,8:用户操作生成(api)
 
@@ -438,7 +438,7 @@ class WorkOrderVo:
 
     @work_order_source.setter
     def work_order_source(self, work_order_source):
-        """Sets the work_order_source of this WorkOrderVo.
+        r"""Sets the work_order_source of this WorkOrderVo.
 
         业务受理单来源,1:运营人员生成,2:用户操作生成(console),3:自动化规则生成,4:后向流量池超阈值停用次月自动复机任务,5:单卡没流量停机定时任务,6:SIM卡到期自动停机定时任务,7:流量池停机定时任务,8:用户操作生成(api)
 
@@ -449,7 +449,7 @@ class WorkOrderVo:
 
     @property
     def work_order_source_desc(self):
-        """Gets the work_order_source_desc of this WorkOrderVo.
+        r"""Gets the work_order_source_desc of this WorkOrderVo.
 
         业务受理单来源描述
 
@@ -460,7 +460,7 @@ class WorkOrderVo:
 
     @work_order_source_desc.setter
     def work_order_source_desc(self, work_order_source_desc):
-        """Sets the work_order_source_desc of this WorkOrderVo.
+        r"""Sets the work_order_source_desc of this WorkOrderVo.
 
         业务受理单来源描述
 

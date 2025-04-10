@@ -31,7 +31,7 @@ class CreateIndicatorDetailEnvironment:
     }
 
     def __init__(self, vendor_type=None, domain_id=None, region_id=None, project_id=None):
-        """CreateIndicatorDetailEnvironment
+        r"""CreateIndicatorDetailEnvironment
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class CreateIndicatorDetailEnvironment:
 
     @property
     def vendor_type(self):
-        """Gets the vendor_type of this CreateIndicatorDetailEnvironment.
+        r"""Gets the vendor_type of this CreateIndicatorDetailEnvironment.
 
         环境供应商，如：HWC/AWS等
 
@@ -71,7 +71,7 @@ class CreateIndicatorDetailEnvironment:
 
     @vendor_type.setter
     def vendor_type(self, vendor_type):
-        """Sets the vendor_type of this CreateIndicatorDetailEnvironment.
+        r"""Sets the vendor_type of this CreateIndicatorDetailEnvironment.
 
         环境供应商，如：HWC/AWS等
 
@@ -82,7 +82,7 @@ class CreateIndicatorDetailEnvironment:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this CreateIndicatorDetailEnvironment.
+        r"""Gets the domain_id of this CreateIndicatorDetailEnvironment.
 
         租户ID
 
@@ -93,7 +93,7 @@ class CreateIndicatorDetailEnvironment:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this CreateIndicatorDetailEnvironment.
+        r"""Sets the domain_id of this CreateIndicatorDetailEnvironment.
 
         租户ID
 
@@ -104,7 +104,7 @@ class CreateIndicatorDetailEnvironment:
 
     @property
     def region_id(self):
-        """Gets the region_id of this CreateIndicatorDetailEnvironment.
+        r"""Gets the region_id of this CreateIndicatorDetailEnvironment.
 
         区域ID
 
@@ -115,7 +115,7 @@ class CreateIndicatorDetailEnvironment:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this CreateIndicatorDetailEnvironment.
+        r"""Sets the region_id of this CreateIndicatorDetailEnvironment.
 
         区域ID
 
@@ -126,7 +126,7 @@ class CreateIndicatorDetailEnvironment:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateIndicatorDetailEnvironment.
+        r"""Gets the project_id of this CreateIndicatorDetailEnvironment.
 
         项目ID
 
@@ -137,7 +137,7 @@ class CreateIndicatorDetailEnvironment:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateIndicatorDetailEnvironment.
+        r"""Sets the project_id of this CreateIndicatorDetailEnvironment.
 
         项目ID
 

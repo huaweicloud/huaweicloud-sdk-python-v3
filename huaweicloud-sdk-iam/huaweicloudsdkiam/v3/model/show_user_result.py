@@ -63,7 +63,7 @@ class ShowUserResult:
     }
 
     def __init__(self, enabled=None, id=None, domain_id=None, name=None, links=None, xuser_id=None, xuser_type=None, areacode=None, email=None, phone=None, pwd_status=None, update_time=None, create_time=None, last_login_time=None, pwd_strength=None, is_domain_owner=None, access_mode=None, description=None, pwd_create_time=None, modify_pwd_time=None):
-        """ShowUserResult
+        r"""ShowUserResult
 
         The model defined in huaweicloud sdk
 
@@ -168,7 +168,7 @@ class ShowUserResult:
 
     @property
     def enabled(self):
-        """Gets the enabled of this ShowUserResult.
+        r"""Gets the enabled of this ShowUserResult.
 
         IAM用户是否启用。true表示启用，false表示停用，默认为true。
 
@@ -179,7 +179,7 @@ class ShowUserResult:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this ShowUserResult.
+        r"""Sets the enabled of this ShowUserResult.
 
         IAM用户是否启用。true表示启用，false表示停用，默认为true。
 
@@ -190,7 +190,7 @@ class ShowUserResult:
 
     @property
     def id(self):
-        """Gets the id of this ShowUserResult.
+        r"""Gets the id of this ShowUserResult.
 
         IAM用户ID。
 
@@ -201,7 +201,7 @@ class ShowUserResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowUserResult.
+        r"""Sets the id of this ShowUserResult.
 
         IAM用户ID。
 
@@ -212,7 +212,7 @@ class ShowUserResult:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ShowUserResult.
+        r"""Gets the domain_id of this ShowUserResult.
 
         IAM用户所属账号ID。
 
@@ -223,7 +223,7 @@ class ShowUserResult:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ShowUserResult.
+        r"""Sets the domain_id of this ShowUserResult.
 
         IAM用户所属账号ID。
 
@@ -234,7 +234,7 @@ class ShowUserResult:
 
     @property
     def name(self):
-        """Gets the name of this ShowUserResult.
+        r"""Gets the name of this ShowUserResult.
 
         IAM用户名。
 
@@ -245,7 +245,7 @@ class ShowUserResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowUserResult.
+        r"""Sets the name of this ShowUserResult.
 
         IAM用户名。
 
@@ -256,7 +256,7 @@ class ShowUserResult:
 
     @property
     def links(self):
-        """Gets the links of this ShowUserResult.
+        r"""Gets the links of this ShowUserResult.
 
         :return: The links of this ShowUserResult.
         :rtype: :class:`huaweicloudsdkiam.v3.Links`
@@ -265,7 +265,7 @@ class ShowUserResult:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this ShowUserResult.
+        r"""Sets the links of this ShowUserResult.
 
         :param links: The links of this ShowUserResult.
         :type links: :class:`huaweicloudsdkiam.v3.Links`
@@ -274,7 +274,7 @@ class ShowUserResult:
 
     @property
     def xuser_id(self):
-        """Gets the xuser_id of this ShowUserResult.
+        r"""Gets the xuser_id of this ShowUserResult.
 
         IAM用户在外部系统中的ID。
 
@@ -285,7 +285,7 @@ class ShowUserResult:
 
     @xuser_id.setter
     def xuser_id(self, xuser_id):
-        """Sets the xuser_id of this ShowUserResult.
+        r"""Sets the xuser_id of this ShowUserResult.
 
         IAM用户在外部系统中的ID。
 
@@ -296,7 +296,7 @@ class ShowUserResult:
 
     @property
     def xuser_type(self):
-        """Gets the xuser_type of this ShowUserResult.
+        r"""Gets the xuser_type of this ShowUserResult.
 
         IAM用户在外部系统中的类型。
 
@@ -307,7 +307,7 @@ class ShowUserResult:
 
     @xuser_type.setter
     def xuser_type(self, xuser_type):
-        """Sets the xuser_type of this ShowUserResult.
+        r"""Sets the xuser_type of this ShowUserResult.
 
         IAM用户在外部系统中的类型。
 
@@ -318,7 +318,7 @@ class ShowUserResult:
 
     @property
     def areacode(self):
-        """Gets the areacode of this ShowUserResult.
+        r"""Gets the areacode of this ShowUserResult.
 
         IAM用户手机号的国家码。
 
@@ -329,7 +329,7 @@ class ShowUserResult:
 
     @areacode.setter
     def areacode(self, areacode):
-        """Sets the areacode of this ShowUserResult.
+        r"""Sets the areacode of this ShowUserResult.
 
         IAM用户手机号的国家码。
 
@@ -340,7 +340,7 @@ class ShowUserResult:
 
     @property
     def email(self):
-        """Gets the email of this ShowUserResult.
+        r"""Gets the email of this ShowUserResult.
 
         IAM用户邮箱。
 
@@ -351,7 +351,7 @@ class ShowUserResult:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this ShowUserResult.
+        r"""Sets the email of this ShowUserResult.
 
         IAM用户邮箱。
 
@@ -362,7 +362,7 @@ class ShowUserResult:
 
     @property
     def phone(self):
-        """Gets the phone of this ShowUserResult.
+        r"""Gets the phone of this ShowUserResult.
 
         IAM用户手机号。
 
@@ -373,7 +373,7 @@ class ShowUserResult:
 
     @phone.setter
     def phone(self, phone):
-        """Sets the phone of this ShowUserResult.
+        r"""Sets the phone of this ShowUserResult.
 
         IAM用户手机号。
 
@@ -384,7 +384,7 @@ class ShowUserResult:
 
     @property
     def pwd_status(self):
-        """Gets the pwd_status of this ShowUserResult.
+        r"""Gets the pwd_status of this ShowUserResult.
 
         IAM用户密码状态。true：需要修改密码，false：正常。
 
@@ -395,7 +395,7 @@ class ShowUserResult:
 
     @pwd_status.setter
     def pwd_status(self, pwd_status):
-        """Sets the pwd_status of this ShowUserResult.
+        r"""Sets the pwd_status of this ShowUserResult.
 
         IAM用户密码状态。true：需要修改密码，false：正常。
 
@@ -406,7 +406,7 @@ class ShowUserResult:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowUserResult.
+        r"""Gets the update_time of this ShowUserResult.
 
         IAM用户更新时间。
 
@@ -417,7 +417,7 @@ class ShowUserResult:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowUserResult.
+        r"""Sets the update_time of this ShowUserResult.
 
         IAM用户更新时间。
 
@@ -428,7 +428,7 @@ class ShowUserResult:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowUserResult.
+        r"""Gets the create_time of this ShowUserResult.
 
         IAM用户创建时间。
 
@@ -439,7 +439,7 @@ class ShowUserResult:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowUserResult.
+        r"""Sets the create_time of this ShowUserResult.
 
         IAM用户创建时间。
 
@@ -450,7 +450,7 @@ class ShowUserResult:
 
     @property
     def last_login_time(self):
-        """Gets the last_login_time of this ShowUserResult.
+        r"""Gets the last_login_time of this ShowUserResult.
 
         IAM用户最后登录时间。
 
@@ -461,7 +461,7 @@ class ShowUserResult:
 
     @last_login_time.setter
     def last_login_time(self, last_login_time):
-        """Sets the last_login_time of this ShowUserResult.
+        r"""Sets the last_login_time of this ShowUserResult.
 
         IAM用户最后登录时间。
 
@@ -472,7 +472,7 @@ class ShowUserResult:
 
     @property
     def pwd_strength(self):
-        """Gets the pwd_strength of this ShowUserResult.
+        r"""Gets the pwd_strength of this ShowUserResult.
 
         IAM用户密码强度。结果为Low/Middle/High/None，分别表示密码强度低/中/高/无。
 
@@ -483,7 +483,7 @@ class ShowUserResult:
 
     @pwd_strength.setter
     def pwd_strength(self, pwd_strength):
-        """Sets the pwd_strength of this ShowUserResult.
+        r"""Sets the pwd_strength of this ShowUserResult.
 
         IAM用户密码强度。结果为Low/Middle/High/None，分别表示密码强度低/中/高/无。
 
@@ -494,7 +494,7 @@ class ShowUserResult:
 
     @property
     def is_domain_owner(self):
-        """Gets the is_domain_owner of this ShowUserResult.
+        r"""Gets the is_domain_owner of this ShowUserResult.
 
         IAM用户是否为根用户。
 
@@ -505,7 +505,7 @@ class ShowUserResult:
 
     @is_domain_owner.setter
     def is_domain_owner(self, is_domain_owner):
-        """Sets the is_domain_owner of this ShowUserResult.
+        r"""Sets the is_domain_owner of this ShowUserResult.
 
         IAM用户是否为根用户。
 
@@ -516,7 +516,7 @@ class ShowUserResult:
 
     @property
     def access_mode(self):
-        """Gets the access_mode of this ShowUserResult.
+        r"""Gets the access_mode of this ShowUserResult.
 
         IAM用户访问模式。
 
@@ -527,7 +527,7 @@ class ShowUserResult:
 
     @access_mode.setter
     def access_mode(self, access_mode):
-        """Sets the access_mode of this ShowUserResult.
+        r"""Sets the access_mode of this ShowUserResult.
 
         IAM用户访问模式。
 
@@ -538,7 +538,7 @@ class ShowUserResult:
 
     @property
     def description(self):
-        """Gets the description of this ShowUserResult.
+        r"""Gets the description of this ShowUserResult.
 
         IAM用户描述信息
 
@@ -549,7 +549,7 @@ class ShowUserResult:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowUserResult.
+        r"""Sets the description of this ShowUserResult.
 
         IAM用户描述信息
 
@@ -560,7 +560,7 @@ class ShowUserResult:
 
     @property
     def pwd_create_time(self):
-        """Gets the pwd_create_time of this ShowUserResult.
+        r"""Gets the pwd_create_time of this ShowUserResult.
 
         IAM用户密码创建更新时间。
 
@@ -571,7 +571,7 @@ class ShowUserResult:
 
     @pwd_create_time.setter
     def pwd_create_time(self, pwd_create_time):
-        """Sets the pwd_create_time of this ShowUserResult.
+        r"""Sets the pwd_create_time of this ShowUserResult.
 
         IAM用户密码创建更新时间。
 
@@ -582,7 +582,7 @@ class ShowUserResult:
 
     @property
     def modify_pwd_time(self):
-        """Gets the modify_pwd_time of this ShowUserResult.
+        r"""Gets the modify_pwd_time of this ShowUserResult.
 
         IAM用户更新时间。
 
@@ -593,7 +593,7 @@ class ShowUserResult:
 
     @modify_pwd_time.setter
     def modify_pwd_time(self, modify_pwd_time):
-        """Sets the modify_pwd_time of this ShowUserResult.
+        r"""Sets the modify_pwd_time of this ShowUserResult.
 
         IAM用户更新时间。
 

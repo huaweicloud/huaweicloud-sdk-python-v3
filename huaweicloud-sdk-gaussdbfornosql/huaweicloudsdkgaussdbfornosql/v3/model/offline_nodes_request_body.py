@@ -27,7 +27,7 @@ class OfflineNodesRequestBody:
     }
 
     def __init__(self, action=None, node_ids=None):
-        """OfflineNodesRequestBody
+        r"""OfflineNodesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class OfflineNodesRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this OfflineNodesRequestBody.
+        r"""Gets the action of this OfflineNodesRequestBody.
 
         操作类型 ,shutdown代表关机,开机是startup。
 
@@ -59,7 +59,7 @@ class OfflineNodesRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this OfflineNodesRequestBody.
+        r"""Sets the action of this OfflineNodesRequestBody.
 
         操作类型 ,shutdown代表关机,开机是startup。
 
@@ -70,7 +70,7 @@ class OfflineNodesRequestBody:
 
     @property
     def node_ids(self):
-        """Gets the node_ids of this OfflineNodesRequestBody.
+        r"""Gets the node_ids of this OfflineNodesRequestBody.
 
         节点ID列表,最多10个。
 
@@ -81,7 +81,7 @@ class OfflineNodesRequestBody:
 
     @node_ids.setter
     def node_ids(self, node_ids):
-        """Sets the node_ids of this OfflineNodesRequestBody.
+        r"""Sets the node_ids of this OfflineNodesRequestBody.
 
         节点ID列表,最多10个。
 

@@ -28,7 +28,7 @@ class ListSecurityApprovalsResponse(SdkResponse):
     }
 
     def __init__(self, approvals=None, total=None):
-        """ListSecurityApprovalsResponse
+        r"""ListSecurityApprovalsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSecurityApprovalsResponse(SdkResponse):
 
     @property
     def approvals(self):
-        """Gets the approvals of this ListSecurityApprovalsResponse.
+        r"""Gets the approvals of this ListSecurityApprovalsResponse.
 
         工单列表
 
@@ -62,7 +62,7 @@ class ListSecurityApprovalsResponse(SdkResponse):
 
     @approvals.setter
     def approvals(self, approvals):
-        """Sets the approvals of this ListSecurityApprovalsResponse.
+        r"""Sets the approvals of this ListSecurityApprovalsResponse.
 
         工单列表
 
@@ -73,7 +73,7 @@ class ListSecurityApprovalsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListSecurityApprovalsResponse.
+        r"""Gets the total of this ListSecurityApprovalsResponse.
 
         规则组总数
 
@@ -84,7 +84,7 @@ class ListSecurityApprovalsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListSecurityApprovalsResponse.
+        r"""Sets the total of this ListSecurityApprovalsResponse.
 
         规则组总数
 

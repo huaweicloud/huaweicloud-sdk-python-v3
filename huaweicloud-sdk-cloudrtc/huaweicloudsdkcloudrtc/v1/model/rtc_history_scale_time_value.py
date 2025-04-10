@@ -41,7 +41,7 @@ class RtcHistoryScaleTimeValue:
     }
 
     def __init__(self, date=None, user_count=None, session_count=None, room_count=None, max_online_user_count=None, max_online_room_count=None, communication_duration=None, video_communication_duration=None, audio_communication_duration=None):
-        """RtcHistoryScaleTimeValue
+        r"""RtcHistoryScaleTimeValue
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class RtcHistoryScaleTimeValue:
 
     @property
     def date(self):
-        """Gets the date of this RtcHistoryScaleTimeValue.
+        r"""Gets the date of this RtcHistoryScaleTimeValue.
 
         采样时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为YYYY-MM-DD
 
@@ -110,7 +110,7 @@ class RtcHistoryScaleTimeValue:
 
     @date.setter
     def date(self, date):
-        """Sets the date of this RtcHistoryScaleTimeValue.
+        r"""Sets the date of this RtcHistoryScaleTimeValue.
 
         采样时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为YYYY-MM-DD
 
@@ -121,7 +121,7 @@ class RtcHistoryScaleTimeValue:
 
     @property
     def user_count(self):
-        """Gets the user_count of this RtcHistoryScaleTimeValue.
+        r"""Gets the user_count of this RtcHistoryScaleTimeValue.
 
         通话人数，指总的uid个数
 
@@ -132,7 +132,7 @@ class RtcHistoryScaleTimeValue:
 
     @user_count.setter
     def user_count(self, user_count):
-        """Sets the user_count of this RtcHistoryScaleTimeValue.
+        r"""Sets the user_count of this RtcHistoryScaleTimeValue.
 
         通话人数，指总的uid个数
 
@@ -143,7 +143,7 @@ class RtcHistoryScaleTimeValue:
 
     @property
     def session_count(self):
-        """Gets the session_count of this RtcHistoryScaleTimeValue.
+        r"""Gets the session_count of this RtcHistoryScaleTimeValue.
 
         通话人次，指总的session个数
 
@@ -154,7 +154,7 @@ class RtcHistoryScaleTimeValue:
 
     @session_count.setter
     def session_count(self, session_count):
-        """Sets the session_count of this RtcHistoryScaleTimeValue.
+        r"""Sets the session_count of this RtcHistoryScaleTimeValue.
 
         通话人次，指总的session个数
 
@@ -165,7 +165,7 @@ class RtcHistoryScaleTimeValue:
 
     @property
     def room_count(self):
-        """Gets the room_count of this RtcHistoryScaleTimeValue.
+        r"""Gets the room_count of this RtcHistoryScaleTimeValue.
 
         房间数
 
@@ -176,7 +176,7 @@ class RtcHistoryScaleTimeValue:
 
     @room_count.setter
     def room_count(self, room_count):
-        """Sets the room_count of this RtcHistoryScaleTimeValue.
+        r"""Sets the room_count of this RtcHistoryScaleTimeValue.
 
         房间数
 
@@ -187,7 +187,7 @@ class RtcHistoryScaleTimeValue:
 
     @property
     def max_online_user_count(self):
-        """Gets the max_online_user_count of this RtcHistoryScaleTimeValue.
+        r"""Gets the max_online_user_count of this RtcHistoryScaleTimeValue.
 
         最大同时在线人数
 
@@ -198,7 +198,7 @@ class RtcHistoryScaleTimeValue:
 
     @max_online_user_count.setter
     def max_online_user_count(self, max_online_user_count):
-        """Sets the max_online_user_count of this RtcHistoryScaleTimeValue.
+        r"""Sets the max_online_user_count of this RtcHistoryScaleTimeValue.
 
         最大同时在线人数
 
@@ -209,7 +209,7 @@ class RtcHistoryScaleTimeValue:
 
     @property
     def max_online_room_count(self):
-        """Gets the max_online_room_count of this RtcHistoryScaleTimeValue.
+        r"""Gets the max_online_room_count of this RtcHistoryScaleTimeValue.
 
         最大同时在线房间数
 
@@ -220,7 +220,7 @@ class RtcHistoryScaleTimeValue:
 
     @max_online_room_count.setter
     def max_online_room_count(self, max_online_room_count):
-        """Sets the max_online_room_count of this RtcHistoryScaleTimeValue.
+        r"""Sets the max_online_room_count of this RtcHistoryScaleTimeValue.
 
         最大同时在线房间数
 
@@ -231,7 +231,7 @@ class RtcHistoryScaleTimeValue:
 
     @property
     def communication_duration(self):
-        """Gets the communication_duration of this RtcHistoryScaleTimeValue.
+        r"""Gets the communication_duration of this RtcHistoryScaleTimeValue.
 
         音视频通话总时长，单位秒
 
@@ -242,7 +242,7 @@ class RtcHistoryScaleTimeValue:
 
     @communication_duration.setter
     def communication_duration(self, communication_duration):
-        """Sets the communication_duration of this RtcHistoryScaleTimeValue.
+        r"""Sets the communication_duration of this RtcHistoryScaleTimeValue.
 
         音视频通话总时长，单位秒
 
@@ -253,7 +253,7 @@ class RtcHistoryScaleTimeValue:
 
     @property
     def video_communication_duration(self):
-        """Gets the video_communication_duration of this RtcHistoryScaleTimeValue.
+        r"""Gets the video_communication_duration of this RtcHistoryScaleTimeValue.
 
         视频通话总时长，单位秒
 
@@ -264,7 +264,7 @@ class RtcHistoryScaleTimeValue:
 
     @video_communication_duration.setter
     def video_communication_duration(self, video_communication_duration):
-        """Sets the video_communication_duration of this RtcHistoryScaleTimeValue.
+        r"""Sets the video_communication_duration of this RtcHistoryScaleTimeValue.
 
         视频通话总时长，单位秒
 
@@ -275,7 +275,7 @@ class RtcHistoryScaleTimeValue:
 
     @property
     def audio_communication_duration(self):
-        """Gets the audio_communication_duration of this RtcHistoryScaleTimeValue.
+        r"""Gets the audio_communication_duration of this RtcHistoryScaleTimeValue.
 
         音频通话总时长，单位秒
 
@@ -286,7 +286,7 @@ class RtcHistoryScaleTimeValue:
 
     @audio_communication_duration.setter
     def audio_communication_duration(self, audio_communication_duration):
-        """Sets the audio_communication_duration of this RtcHistoryScaleTimeValue.
+        r"""Sets the audio_communication_duration of this RtcHistoryScaleTimeValue.
 
         音频通话总时长，单位秒
 

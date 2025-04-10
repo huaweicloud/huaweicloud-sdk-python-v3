@@ -40,7 +40,7 @@ class UploadJobResourcesResponse(SdkResponse):
     }
 
     def __init__(self, group_name=None, status=None, resources=None, create_time=None, update_time=None, is_async=None, owner=None, details=None):
-        """UploadJobResourcesResponse
+        r"""UploadJobResourcesResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class UploadJobResourcesResponse(SdkResponse):
 
     @property
     def group_name(self):
-        """Gets the group_name of this UploadJobResourcesResponse.
+        r"""Gets the group_name of this UploadJobResourcesResponse.
 
         模块名。
 
@@ -104,7 +104,7 @@ class UploadJobResourcesResponse(SdkResponse):
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this UploadJobResourcesResponse.
+        r"""Sets the group_name of this UploadJobResourcesResponse.
 
         模块名。
 
@@ -115,7 +115,7 @@ class UploadJobResourcesResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UploadJobResourcesResponse.
+        r"""Gets the status of this UploadJobResourcesResponse.
 
         上传分组资源状态。
 
@@ -126,7 +126,7 @@ class UploadJobResourcesResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UploadJobResourcesResponse.
+        r"""Sets the status of this UploadJobResourcesResponse.
 
         上传分组资源状态。
 
@@ -137,7 +137,7 @@ class UploadJobResourcesResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this UploadJobResourcesResponse.
+        r"""Gets the resources of this UploadJobResourcesResponse.
 
         该模块包含的资源包名列表。
 
@@ -148,7 +148,7 @@ class UploadJobResourcesResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this UploadJobResourcesResponse.
+        r"""Sets the resources of this UploadJobResourcesResponse.
 
         该模块包含的资源包名列表。
 
@@ -159,7 +159,7 @@ class UploadJobResourcesResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this UploadJobResourcesResponse.
+        r"""Gets the create_time of this UploadJobResourcesResponse.
 
         模块上传的unix时间戳。
 
@@ -170,7 +170,7 @@ class UploadJobResourcesResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this UploadJobResourcesResponse.
+        r"""Sets the create_time of this UploadJobResourcesResponse.
 
         模块上传的unix时间戳。
 
@@ -181,7 +181,7 @@ class UploadJobResourcesResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this UploadJobResourcesResponse.
+        r"""Gets the update_time of this UploadJobResourcesResponse.
 
         模块更新的unix时间戳。
 
@@ -192,7 +192,7 @@ class UploadJobResourcesResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this UploadJobResourcesResponse.
+        r"""Sets the update_time of this UploadJobResourcesResponse.
 
         模块更新的unix时间戳。
 
@@ -203,7 +203,7 @@ class UploadJobResourcesResponse(SdkResponse):
 
     @property
     def is_async(self):
-        """Gets the is_async of this UploadJobResourcesResponse.
+        r"""Gets the is_async of this UploadJobResourcesResponse.
 
         本次上传是同步还是异步
 
@@ -214,7 +214,7 @@ class UploadJobResourcesResponse(SdkResponse):
 
     @is_async.setter
     def is_async(self, is_async):
-        """Sets the is_async of this UploadJobResourcesResponse.
+        r"""Sets the is_async of this UploadJobResourcesResponse.
 
         本次上传是同步还是异步
 
@@ -225,7 +225,7 @@ class UploadJobResourcesResponse(SdkResponse):
 
     @property
     def owner(self):
-        """Gets the owner of this UploadJobResourcesResponse.
+        r"""Gets the owner of this UploadJobResourcesResponse.
 
         资源包拥有者
 
@@ -236,7 +236,7 @@ class UploadJobResourcesResponse(SdkResponse):
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this UploadJobResourcesResponse.
+        r"""Sets the owner of this UploadJobResourcesResponse.
 
         资源包拥有者
 
@@ -247,7 +247,7 @@ class UploadJobResourcesResponse(SdkResponse):
 
     @property
     def details(self):
-        """Gets the details of this UploadJobResourcesResponse.
+        r"""Gets the details of this UploadJobResourcesResponse.
 
         分组资源包的详细信息。
 
@@ -258,7 +258,7 @@ class UploadJobResourcesResponse(SdkResponse):
 
     @details.setter
     def details(self, details):
-        """Sets the details of this UploadJobResourcesResponse.
+        r"""Sets the details of this UploadJobResourcesResponse.
 
         分组资源包的详细信息。
 

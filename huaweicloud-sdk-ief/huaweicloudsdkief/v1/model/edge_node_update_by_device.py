@@ -25,7 +25,7 @@ class EdgeNodeUpdateByDevice:
     }
 
     def __init__(self, nodes=None):
-        """EdgeNodeUpdateByDevice
+        r"""EdgeNodeUpdateByDevice
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class EdgeNodeUpdateByDevice:
 
     @property
     def nodes(self):
-        """Gets the nodes of this EdgeNodeUpdateByDevice.
+        r"""Gets the nodes of this EdgeNodeUpdateByDevice.
 
         :return: The nodes of this EdgeNodeUpdateByDevice.
         :rtype: :class:`huaweicloudsdkief.v1.NodeUpdateByDevice`
@@ -51,7 +51,7 @@ class EdgeNodeUpdateByDevice:
 
     @nodes.setter
     def nodes(self, nodes):
-        """Sets the nodes of this EdgeNodeUpdateByDevice.
+        r"""Sets the nodes of this EdgeNodeUpdateByDevice.
 
         :param nodes: The nodes of this EdgeNodeUpdateByDevice.
         :type nodes: :class:`huaweicloudsdkief.v1.NodeUpdateByDevice`

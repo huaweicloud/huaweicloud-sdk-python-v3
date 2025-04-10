@@ -61,7 +61,7 @@ class CreateAccessConfigRequestBody:
     }
 
     def __init__(self, access_config_name=None, access_config_type=None, access_config_detail=None, log_info=None, host_group_info=None, access_config_tag=None, binary_collect=None, log_split=None, cluster_id=None, incremental_collect=None, encoding_format=None, processor_type=None, demo_log=None, demo_fields=None, processors=None, application_id=None, environment_id=None, component_id=None, access_config_type_source=None):
-        """CreateAccessConfigRequestBody
+        r"""CreateAccessConfigRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -165,7 +165,7 @@ class CreateAccessConfigRequestBody:
 
     @property
     def access_config_name(self):
-        """Gets the access_config_name of this CreateAccessConfigRequestBody.
+        r"""Gets the access_config_name of this CreateAccessConfigRequestBody.
 
         日志接入名称。 满足正则表达式：^(?!\\.)(?!_)(?!.*?\\.$)[\\u4e00-\\u9fa5a-zA-Z0-9-_.]{1,64}$
 
@@ -176,7 +176,7 @@ class CreateAccessConfigRequestBody:
 
     @access_config_name.setter
     def access_config_name(self, access_config_name):
-        """Sets the access_config_name of this CreateAccessConfigRequestBody.
+        r"""Sets the access_config_name of this CreateAccessConfigRequestBody.
 
         日志接入名称。 满足正则表达式：^(?!\\.)(?!_)(?!.*?\\.$)[\\u4e00-\\u9fa5a-zA-Z0-9-_.]{1,64}$
 
@@ -187,7 +187,7 @@ class CreateAccessConfigRequestBody:
 
     @property
     def access_config_type(self):
-        """Gets the access_config_type of this CreateAccessConfigRequestBody.
+        r"""Gets the access_config_type of this CreateAccessConfigRequestBody.
 
         日志接入类型。AGENT：ECS接入,K8S_CCE:CCE接入
 
@@ -198,7 +198,7 @@ class CreateAccessConfigRequestBody:
 
     @access_config_type.setter
     def access_config_type(self, access_config_type):
-        """Sets the access_config_type of this CreateAccessConfigRequestBody.
+        r"""Sets the access_config_type of this CreateAccessConfigRequestBody.
 
         日志接入类型。AGENT：ECS接入,K8S_CCE:CCE接入
 
@@ -209,7 +209,7 @@ class CreateAccessConfigRequestBody:
 
     @property
     def access_config_detail(self):
-        """Gets the access_config_detail of this CreateAccessConfigRequestBody.
+        r"""Gets the access_config_detail of this CreateAccessConfigRequestBody.
 
         :return: The access_config_detail of this CreateAccessConfigRequestBody.
         :rtype: :class:`huaweicloudsdklts.v2.AccessConfigDeatilCreate`
@@ -218,7 +218,7 @@ class CreateAccessConfigRequestBody:
 
     @access_config_detail.setter
     def access_config_detail(self, access_config_detail):
-        """Sets the access_config_detail of this CreateAccessConfigRequestBody.
+        r"""Sets the access_config_detail of this CreateAccessConfigRequestBody.
 
         :param access_config_detail: The access_config_detail of this CreateAccessConfigRequestBody.
         :type access_config_detail: :class:`huaweicloudsdklts.v2.AccessConfigDeatilCreate`
@@ -227,7 +227,7 @@ class CreateAccessConfigRequestBody:
 
     @property
     def log_info(self):
-        """Gets the log_info of this CreateAccessConfigRequestBody.
+        r"""Gets the log_info of this CreateAccessConfigRequestBody.
 
         :return: The log_info of this CreateAccessConfigRequestBody.
         :rtype: :class:`huaweicloudsdklts.v2.AccessConfigBaseLogInfoCreate`
@@ -236,7 +236,7 @@ class CreateAccessConfigRequestBody:
 
     @log_info.setter
     def log_info(self, log_info):
-        """Sets the log_info of this CreateAccessConfigRequestBody.
+        r"""Sets the log_info of this CreateAccessConfigRequestBody.
 
         :param log_info: The log_info of this CreateAccessConfigRequestBody.
         :type log_info: :class:`huaweicloudsdklts.v2.AccessConfigBaseLogInfoCreate`
@@ -245,7 +245,7 @@ class CreateAccessConfigRequestBody:
 
     @property
     def host_group_info(self):
-        """Gets the host_group_info of this CreateAccessConfigRequestBody.
+        r"""Gets the host_group_info of this CreateAccessConfigRequestBody.
 
         :return: The host_group_info of this CreateAccessConfigRequestBody.
         :rtype: :class:`huaweicloudsdklts.v2.AccessConfigHostGroupIdListCreate`
@@ -254,7 +254,7 @@ class CreateAccessConfigRequestBody:
 
     @host_group_info.setter
     def host_group_info(self, host_group_info):
-        """Sets the host_group_info of this CreateAccessConfigRequestBody.
+        r"""Sets the host_group_info of this CreateAccessConfigRequestBody.
 
         :param host_group_info: The host_group_info of this CreateAccessConfigRequestBody.
         :type host_group_info: :class:`huaweicloudsdklts.v2.AccessConfigHostGroupIdListCreate`
@@ -263,7 +263,7 @@ class CreateAccessConfigRequestBody:
 
     @property
     def access_config_tag(self):
-        """Gets the access_config_tag of this CreateAccessConfigRequestBody.
+        r"""Gets the access_config_tag of this CreateAccessConfigRequestBody.
 
         标签信息。KEY不能重复,最多20个标签
 
@@ -274,7 +274,7 @@ class CreateAccessConfigRequestBody:
 
     @access_config_tag.setter
     def access_config_tag(self, access_config_tag):
-        """Sets the access_config_tag of this CreateAccessConfigRequestBody.
+        r"""Sets the access_config_tag of this CreateAccessConfigRequestBody.
 
         标签信息。KEY不能重复,最多20个标签
 
@@ -285,7 +285,7 @@ class CreateAccessConfigRequestBody:
 
     @property
     def binary_collect(self):
-        """Gets the binary_collect of this CreateAccessConfigRequestBody.
+        r"""Gets the binary_collect of this CreateAccessConfigRequestBody.
 
         二进制采集
 
@@ -296,7 +296,7 @@ class CreateAccessConfigRequestBody:
 
     @binary_collect.setter
     def binary_collect(self, binary_collect):
-        """Sets the binary_collect of this CreateAccessConfigRequestBody.
+        r"""Sets the binary_collect of this CreateAccessConfigRequestBody.
 
         二进制采集
 
@@ -307,7 +307,7 @@ class CreateAccessConfigRequestBody:
 
     @property
     def log_split(self):
-        """Gets the log_split of this CreateAccessConfigRequestBody.
+        r"""Gets the log_split of this CreateAccessConfigRequestBody.
 
         日志拆分
 
@@ -318,7 +318,7 @@ class CreateAccessConfigRequestBody:
 
     @log_split.setter
     def log_split(self, log_split):
-        """Sets the log_split of this CreateAccessConfigRequestBody.
+        r"""Sets the log_split of this CreateAccessConfigRequestBody.
 
         日志拆分
 
@@ -329,7 +329,7 @@ class CreateAccessConfigRequestBody:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CreateAccessConfigRequestBody.
+        r"""Gets the cluster_id of this CreateAccessConfigRequestBody.
 
         CCE集群ID，当CCE类型时，为必填
 
@@ -340,7 +340,7 @@ class CreateAccessConfigRequestBody:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CreateAccessConfigRequestBody.
+        r"""Sets the cluster_id of this CreateAccessConfigRequestBody.
 
         CCE集群ID，当CCE类型时，为必填
 
@@ -351,7 +351,7 @@ class CreateAccessConfigRequestBody:
 
     @property
     def incremental_collect(self):
-        """Gets the incremental_collect of this CreateAccessConfigRequestBody.
+        r"""Gets the incremental_collect of this CreateAccessConfigRequestBody.
 
         是否增量采集 true 为是   false为否（全量采集）
 
@@ -362,7 +362,7 @@ class CreateAccessConfigRequestBody:
 
     @incremental_collect.setter
     def incremental_collect(self, incremental_collect):
-        """Sets the incremental_collect of this CreateAccessConfigRequestBody.
+        r"""Sets the incremental_collect of this CreateAccessConfigRequestBody.
 
         是否增量采集 true 为是   false为否（全量采集）
 
@@ -373,7 +373,7 @@ class CreateAccessConfigRequestBody:
 
     @property
     def encoding_format(self):
-        """Gets the encoding_format of this CreateAccessConfigRequestBody.
+        r"""Gets the encoding_format of this CreateAccessConfigRequestBody.
 
         编码格式，支持UTF-8，GDB默认UTF-8
 
@@ -384,7 +384,7 @@ class CreateAccessConfigRequestBody:
 
     @encoding_format.setter
     def encoding_format(self, encoding_format):
-        """Sets the encoding_format of this CreateAccessConfigRequestBody.
+        r"""Sets the encoding_format of this CreateAccessConfigRequestBody.
 
         编码格式，支持UTF-8，GDB默认UTF-8
 
@@ -395,7 +395,7 @@ class CreateAccessConfigRequestBody:
 
     @property
     def processor_type(self):
-        """Gets the processor_type of this CreateAccessConfigRequestBody.
+        r"""Gets the processor_type of this CreateAccessConfigRequestBody.
 
         IC结构化解析类型包括 ：SINGLE_LINE 单行全文，MULTI_LINE 多行全文，REGEX 单行正则，MULTI_REGEX 多行正则，SPLIT 分隔符，JSON JSON解析，NGINX nginx解析， COMPOSE组合解析
 
@@ -406,7 +406,7 @@ class CreateAccessConfigRequestBody:
 
     @processor_type.setter
     def processor_type(self, processor_type):
-        """Sets the processor_type of this CreateAccessConfigRequestBody.
+        r"""Sets the processor_type of this CreateAccessConfigRequestBody.
 
         IC结构化解析类型包括 ：SINGLE_LINE 单行全文，MULTI_LINE 多行全文，REGEX 单行正则，MULTI_REGEX 多行正则，SPLIT 分隔符，JSON JSON解析，NGINX nginx解析， COMPOSE组合解析
 
@@ -417,7 +417,7 @@ class CreateAccessConfigRequestBody:
 
     @property
     def demo_log(self):
-        """Gets the demo_log of this CreateAccessConfigRequestBody.
+        r"""Gets the demo_log of this CreateAccessConfigRequestBody.
 
         示例日志
 
@@ -428,7 +428,7 @@ class CreateAccessConfigRequestBody:
 
     @demo_log.setter
     def demo_log(self, demo_log):
-        """Sets the demo_log of this CreateAccessConfigRequestBody.
+        r"""Sets the demo_log of this CreateAccessConfigRequestBody.
 
         示例日志
 
@@ -439,7 +439,7 @@ class CreateAccessConfigRequestBody:
 
     @property
     def demo_fields(self):
-        """Gets the demo_fields of this CreateAccessConfigRequestBody.
+        r"""Gets the demo_fields of this CreateAccessConfigRequestBody.
 
         示例日志解析字段
 
@@ -450,7 +450,7 @@ class CreateAccessConfigRequestBody:
 
     @demo_fields.setter
     def demo_fields(self, demo_fields):
-        """Sets the demo_fields of this CreateAccessConfigRequestBody.
+        r"""Sets the demo_fields of this CreateAccessConfigRequestBody.
 
         示例日志解析字段
 
@@ -461,7 +461,7 @@ class CreateAccessConfigRequestBody:
 
     @property
     def processors(self):
-        """Gets the processors of this CreateAccessConfigRequestBody.
+        r"""Gets the processors of this CreateAccessConfigRequestBody.
 
         IC结构化解析器
 
@@ -472,7 +472,7 @@ class CreateAccessConfigRequestBody:
 
     @processors.setter
     def processors(self, processors):
-        """Sets the processors of this CreateAccessConfigRequestBody.
+        r"""Sets the processors of this CreateAccessConfigRequestBody.
 
         IC结构化解析器
 
@@ -483,7 +483,7 @@ class CreateAccessConfigRequestBody:
 
     @property
     def application_id(self):
-        """Gets the application_id of this CreateAccessConfigRequestBody.
+        r"""Gets the application_id of this CreateAccessConfigRequestBody.
 
         ServiceStage应用ID
 
@@ -494,7 +494,7 @@ class CreateAccessConfigRequestBody:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this CreateAccessConfigRequestBody.
+        r"""Sets the application_id of this CreateAccessConfigRequestBody.
 
         ServiceStage应用ID
 
@@ -505,7 +505,7 @@ class CreateAccessConfigRequestBody:
 
     @property
     def environment_id(self):
-        """Gets the environment_id of this CreateAccessConfigRequestBody.
+        r"""Gets the environment_id of this CreateAccessConfigRequestBody.
 
         ServiceStage环境ID
 
@@ -516,7 +516,7 @@ class CreateAccessConfigRequestBody:
 
     @environment_id.setter
     def environment_id(self, environment_id):
-        """Sets the environment_id of this CreateAccessConfigRequestBody.
+        r"""Sets the environment_id of this CreateAccessConfigRequestBody.
 
         ServiceStage环境ID
 
@@ -527,7 +527,7 @@ class CreateAccessConfigRequestBody:
 
     @property
     def component_id(self):
-        """Gets the component_id of this CreateAccessConfigRequestBody.
+        r"""Gets the component_id of this CreateAccessConfigRequestBody.
 
         ServiceStage组件ID
 
@@ -538,7 +538,7 @@ class CreateAccessConfigRequestBody:
 
     @component_id.setter
     def component_id(self, component_id):
-        """Sets the component_id of this CreateAccessConfigRequestBody.
+        r"""Sets the component_id of this CreateAccessConfigRequestBody.
 
         ServiceStage组件ID
 
@@ -549,7 +549,7 @@ class CreateAccessConfigRequestBody:
 
     @property
     def access_config_type_source(self):
-        """Gets the access_config_type_source of this CreateAccessConfigRequestBody.
+        r"""Gets the access_config_type_source of this CreateAccessConfigRequestBody.
 
         日志接入自建软件来源
 
@@ -560,7 +560,7 @@ class CreateAccessConfigRequestBody:
 
     @access_config_type_source.setter
     def access_config_type_source(self, access_config_type_source):
-        """Sets the access_config_type_source of this CreateAccessConfigRequestBody.
+        r"""Sets the access_config_type_source of this CreateAccessConfigRequestBody.
 
         日志接入自建软件来源
 

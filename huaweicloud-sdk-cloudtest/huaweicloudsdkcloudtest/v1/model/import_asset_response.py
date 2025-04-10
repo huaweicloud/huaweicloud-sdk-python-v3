@@ -30,7 +30,7 @@ class ImportAssetResponse(SdkResponse):
     }
 
     def __init__(self, code=None, data=None, message=None):
-        """ImportAssetResponse
+        r"""ImportAssetResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ImportAssetResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ImportAssetResponse.
+        r"""Gets the code of this ImportAssetResponse.
 
         :return: The code of this ImportAssetResponse.
         :rtype: str
@@ -67,7 +67,7 @@ class ImportAssetResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ImportAssetResponse.
+        r"""Sets the code of this ImportAssetResponse.
 
         :param code: The code of this ImportAssetResponse.
         :type code: str
@@ -76,7 +76,7 @@ class ImportAssetResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ImportAssetResponse.
+        r"""Gets the data of this ImportAssetResponse.
 
         :return: The data of this ImportAssetResponse.
         :rtype: object
@@ -85,7 +85,7 @@ class ImportAssetResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ImportAssetResponse.
+        r"""Sets the data of this ImportAssetResponse.
 
         :param data: The data of this ImportAssetResponse.
         :type data: object
@@ -94,7 +94,7 @@ class ImportAssetResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ImportAssetResponse.
+        r"""Gets the message of this ImportAssetResponse.
 
         :return: The message of this ImportAssetResponse.
         :rtype: str
@@ -103,7 +103,7 @@ class ImportAssetResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ImportAssetResponse.
+        r"""Sets the message of this ImportAssetResponse.
 
         :param message: The message of this ImportAssetResponse.
         :type message: str

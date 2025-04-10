@@ -23,7 +23,7 @@ class BatchCreateApplicationViewResponseBody:
     }
 
     def __init__(self):
-        """BatchCreateApplicationViewResponseBody
+        r"""BatchCreateApplicationViewResponseBody
 
         The model defined in huaweicloud sdk
 

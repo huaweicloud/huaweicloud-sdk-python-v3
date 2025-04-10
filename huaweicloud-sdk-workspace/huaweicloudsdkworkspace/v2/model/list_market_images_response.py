@@ -26,7 +26,7 @@ class ListMarketImagesResponse(SdkResponse):
     }
 
     def __init__(self, images=None):
-        """ListMarketImagesResponse
+        r"""ListMarketImagesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListMarketImagesResponse(SdkResponse):
 
     @property
     def images(self):
-        """Gets the images of this ListMarketImagesResponse.
+        r"""Gets the images of this ListMarketImagesResponse.
 
         镜像信息列表。
 
@@ -55,7 +55,7 @@ class ListMarketImagesResponse(SdkResponse):
 
     @images.setter
     def images(self, images):
-        """Sets the images of this ListMarketImagesResponse.
+        r"""Sets the images of this ListMarketImagesResponse.
 
         镜像信息列表。
 

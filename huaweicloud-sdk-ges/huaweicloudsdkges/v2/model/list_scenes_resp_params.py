@@ -29,7 +29,7 @@ class ListScenesRespParams:
     }
 
     def __init__(self, name=None, type=None, default_value=None):
-        """ListScenesRespParams
+        r"""ListScenesRespParams
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListScenesRespParams:
 
     @property
     def name(self):
-        """Gets the name of this ListScenesRespParams.
+        r"""Gets the name of this ListScenesRespParams.
 
         参数名称。
 
@@ -68,7 +68,7 @@ class ListScenesRespParams:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListScenesRespParams.
+        r"""Sets the name of this ListScenesRespParams.
 
         参数名称。
 
@@ -79,7 +79,7 @@ class ListScenesRespParams:
 
     @property
     def type(self):
-        """Gets the type of this ListScenesRespParams.
+        r"""Gets the type of this ListScenesRespParams.
 
         参数类型。取值范围[\"string\",\"int\"]，目前仅支持\"string\"
 
@@ -90,7 +90,7 @@ class ListScenesRespParams:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListScenesRespParams.
+        r"""Sets the type of this ListScenesRespParams.
 
         参数类型。取值范围[\"string\",\"int\"]，目前仅支持\"string\"
 
@@ -101,7 +101,7 @@ class ListScenesRespParams:
 
     @property
     def default_value(self):
-        """Gets the default_value of this ListScenesRespParams.
+        r"""Gets the default_value of this ListScenesRespParams.
 
         取值范围为空，或参数默认值，当为空是表示客户使用时必须传入此参数
 
@@ -112,7 +112,7 @@ class ListScenesRespParams:
 
     @default_value.setter
     def default_value(self, default_value):
-        """Sets the default_value of this ListScenesRespParams.
+        r"""Sets the default_value of this ListScenesRespParams.
 
         取值范围为空，或参数默认值，当为空是表示客户使用时必须传入此参数
 

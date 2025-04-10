@@ -35,7 +35,7 @@ class BusinessTopoRequest:
     }
 
     def __init__(self, target_business_id=None, env_tag_list=None, direction=None, end_time=None, start_time=None, filter_user=None):
-        """BusinessTopoRequest
+        r"""BusinessTopoRequest
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class BusinessTopoRequest:
 
     @property
     def target_business_id(self):
-        """Gets the target_business_id of this BusinessTopoRequest.
+        r"""Gets the target_business_id of this BusinessTopoRequest.
 
         目标应用id。
 
@@ -86,7 +86,7 @@ class BusinessTopoRequest:
 
     @target_business_id.setter
     def target_business_id(self, target_business_id):
-        """Sets the target_business_id of this BusinessTopoRequest.
+        r"""Sets the target_business_id of this BusinessTopoRequest.
 
         目标应用id。
 
@@ -97,7 +97,7 @@ class BusinessTopoRequest:
 
     @property
     def env_tag_list(self):
-        """Gets the env_tag_list of this BusinessTopoRequest.
+        r"""Gets the env_tag_list of this BusinessTopoRequest.
 
         环境标签列表，可为空。
 
@@ -108,7 +108,7 @@ class BusinessTopoRequest:
 
     @env_tag_list.setter
     def env_tag_list(self, env_tag_list):
-        """Sets the env_tag_list of this BusinessTopoRequest.
+        r"""Sets the env_tag_list of this BusinessTopoRequest.
 
         环境标签列表，可为空。
 
@@ -119,7 +119,7 @@ class BusinessTopoRequest:
 
     @property
     def direction(self):
-        """Gets the direction of this BusinessTopoRequest.
+        r"""Gets the direction of this BusinessTopoRequest.
 
         方向，可为空。
 
@@ -130,7 +130,7 @@ class BusinessTopoRequest:
 
     @direction.setter
     def direction(self, direction):
-        """Sets the direction of this BusinessTopoRequest.
+        r"""Sets the direction of this BusinessTopoRequest.
 
         方向，可为空。
 
@@ -141,7 +141,7 @@ class BusinessTopoRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this BusinessTopoRequest.
+        r"""Gets the end_time of this BusinessTopoRequest.
 
         结束时间。
 
@@ -152,7 +152,7 @@ class BusinessTopoRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this BusinessTopoRequest.
+        r"""Sets the end_time of this BusinessTopoRequest.
 
         结束时间。
 
@@ -163,7 +163,7 @@ class BusinessTopoRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this BusinessTopoRequest.
+        r"""Gets the start_time of this BusinessTopoRequest.
 
         开始时间。
 
@@ -174,7 +174,7 @@ class BusinessTopoRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this BusinessTopoRequest.
+        r"""Sets the start_time of this BusinessTopoRequest.
 
         开始时间。
 
@@ -185,7 +185,7 @@ class BusinessTopoRequest:
 
     @property
     def filter_user(self):
-        """Gets the filter_user of this BusinessTopoRequest.
+        r"""Gets the filter_user of this BusinessTopoRequest.
 
         过滤。
 
@@ -196,7 +196,7 @@ class BusinessTopoRequest:
 
     @filter_user.setter
     def filter_user(self, filter_user):
-        """Sets the filter_user of this BusinessTopoRequest.
+        r"""Sets the filter_user of this BusinessTopoRequest.
 
         过滤。
 

@@ -32,7 +32,7 @@ class UpdateBlackWhiteListResponse(SdkResponse):
     }
 
     def __init__(self, code=None, result=None, data=None, x_request_id=None):
-        """UpdateBlackWhiteListResponse
+        r"""UpdateBlackWhiteListResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class UpdateBlackWhiteListResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this UpdateBlackWhiteListResponse.
+        r"""Gets the code of this UpdateBlackWhiteListResponse.
 
         响应码，200：成功，400，失败。
 
@@ -76,7 +76,7 @@ class UpdateBlackWhiteListResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this UpdateBlackWhiteListResponse.
+        r"""Sets the code of this UpdateBlackWhiteListResponse.
 
         响应码，200：成功，400，失败。
 
@@ -87,7 +87,7 @@ class UpdateBlackWhiteListResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this UpdateBlackWhiteListResponse.
+        r"""Gets the result of this UpdateBlackWhiteListResponse.
 
         响应结果。
 
@@ -98,7 +98,7 @@ class UpdateBlackWhiteListResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this UpdateBlackWhiteListResponse.
+        r"""Sets the result of this UpdateBlackWhiteListResponse.
 
         响应结果。
 
@@ -109,7 +109,7 @@ class UpdateBlackWhiteListResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this UpdateBlackWhiteListResponse.
+        r"""Gets the data of this UpdateBlackWhiteListResponse.
 
         响应体返回内容。
 
@@ -120,7 +120,7 @@ class UpdateBlackWhiteListResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this UpdateBlackWhiteListResponse.
+        r"""Sets the data of this UpdateBlackWhiteListResponse.
 
         响应体返回内容。
 
@@ -131,7 +131,7 @@ class UpdateBlackWhiteListResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdateBlackWhiteListResponse.
+        r"""Gets the x_request_id of this UpdateBlackWhiteListResponse.
 
         :return: The x_request_id of this UpdateBlackWhiteListResponse.
         :rtype: str
@@ -140,7 +140,7 @@ class UpdateBlackWhiteListResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdateBlackWhiteListResponse.
+        r"""Sets the x_request_id of this UpdateBlackWhiteListResponse.
 
         :param x_request_id: The x_request_id of this UpdateBlackWhiteListResponse.
         :type x_request_id: str

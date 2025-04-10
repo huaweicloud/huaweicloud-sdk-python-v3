@@ -25,7 +25,7 @@ class CreateSharedBandwidhRequestBody:
     }
 
     def __init__(self, bandwidth=None):
-        """CreateSharedBandwidhRequestBody
+        r"""CreateSharedBandwidhRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateSharedBandwidhRequestBody:
 
     @property
     def bandwidth(self):
-        """Gets the bandwidth of this CreateSharedBandwidhRequestBody.
+        r"""Gets the bandwidth of this CreateSharedBandwidhRequestBody.
 
         :return: The bandwidth of this CreateSharedBandwidhRequestBody.
         :rtype: :class:`huaweicloudsdkeip.v2.CreateSharedBandwidthOption`
@@ -51,7 +51,7 @@ class CreateSharedBandwidhRequestBody:
 
     @bandwidth.setter
     def bandwidth(self, bandwidth):
-        """Sets the bandwidth of this CreateSharedBandwidhRequestBody.
+        r"""Sets the bandwidth of this CreateSharedBandwidhRequestBody.
 
         :param bandwidth: The bandwidth of this CreateSharedBandwidhRequestBody.
         :type bandwidth: :class:`huaweicloudsdkeip.v2.CreateSharedBandwidthOption`

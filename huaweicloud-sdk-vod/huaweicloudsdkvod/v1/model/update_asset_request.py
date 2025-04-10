@@ -25,7 +25,7 @@ class UpdateAssetRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateAssetRequest
+        r"""UpdateAssetRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateAssetRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAssetRequest.
+        r"""Gets the body of this UpdateAssetRequest.
 
         :return: The body of this UpdateAssetRequest.
         :rtype: :class:`huaweicloudsdkvod.v1.UploadAssetReq`
@@ -52,7 +52,7 @@ class UpdateAssetRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAssetRequest.
+        r"""Sets the body of this UpdateAssetRequest.
 
         :param body: The body of this UpdateAssetRequest.
         :type body: :class:`huaweicloudsdkvod.v1.UploadAssetReq`

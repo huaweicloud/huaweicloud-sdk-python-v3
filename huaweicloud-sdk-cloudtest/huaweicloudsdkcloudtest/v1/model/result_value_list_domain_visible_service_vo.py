@@ -25,7 +25,7 @@ class ResultValueListDomainVisibleServiceVo:
     }
 
     def __init__(self, value=None):
-        """ResultValueListDomainVisibleServiceVo
+        r"""ResultValueListDomainVisibleServiceVo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ResultValueListDomainVisibleServiceVo:
 
     @property
     def value(self):
-        """Gets the value of this ResultValueListDomainVisibleServiceVo.
+        r"""Gets the value of this ResultValueListDomainVisibleServiceVo.
 
         实际的数据类型：单个对象，集合 或 NULL
 
@@ -54,7 +54,7 @@ class ResultValueListDomainVisibleServiceVo:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ResultValueListDomainVisibleServiceVo.
+        r"""Sets the value of this ResultValueListDomainVisibleServiceVo.
 
         实际的数据类型：单个对象，集合 或 NULL
 

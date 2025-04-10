@@ -26,7 +26,7 @@ class ListAllTablesResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ListAllTablesResponse
+        r"""ListAllTablesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListAllTablesResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListAllTablesResponse.
+        r"""Gets the data of this ListAllTablesResponse.
 
         :return: The data of this ListAllTablesResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListAllTablesResultData`
@@ -53,7 +53,7 @@ class ListAllTablesResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListAllTablesResponse.
+        r"""Sets the data of this ListAllTablesResponse.
 
         :param data: The data of this ListAllTablesResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.ListAllTablesResultData`

@@ -27,7 +27,7 @@ class HostVulnItemCveList:
     }
 
     def __init__(self, id=None, link=None):
-        """HostVulnItemCveList
+        r"""HostVulnItemCveList
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class HostVulnItemCveList:
 
     @property
     def id(self):
-        """Gets the id of this HostVulnItemCveList.
+        r"""Gets the id of this HostVulnItemCveList.
 
         CVE漏洞ID
 
@@ -61,7 +61,7 @@ class HostVulnItemCveList:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this HostVulnItemCveList.
+        r"""Sets the id of this HostVulnItemCveList.
 
         CVE漏洞ID
 
@@ -72,7 +72,7 @@ class HostVulnItemCveList:
 
     @property
     def link(self):
-        """Gets the link of this HostVulnItemCveList.
+        r"""Gets the link of this HostVulnItemCveList.
 
         CVE漏洞链接
 
@@ -83,7 +83,7 @@ class HostVulnItemCveList:
 
     @link.setter
     def link(self, link):
-        """Sets the link of this HostVulnItemCveList.
+        r"""Sets the link of this HostVulnItemCveList.
 
         CVE漏洞链接
 

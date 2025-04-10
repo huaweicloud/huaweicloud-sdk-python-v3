@@ -27,7 +27,7 @@ class Field:
     }
 
     def __init__(self, name=None, order=None):
-        """Field
+        r"""Field
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class Field:
 
     @property
     def name(self):
-        """Gets the name of this Field.
+        r"""Gets the name of this Field.
 
         字段名。
 
@@ -60,7 +60,7 @@ class Field:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Field.
+        r"""Sets the name of this Field.
 
         字段名。
 
@@ -71,7 +71,7 @@ class Field:
 
     @property
     def order(self):
-        """Gets the order of this Field.
+        r"""Gets the order of this Field.
 
         bool值预留无意义。
 
@@ -82,7 +82,7 @@ class Field:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this Field.
+        r"""Sets the order of this Field.
 
         bool值预留无意义。
 

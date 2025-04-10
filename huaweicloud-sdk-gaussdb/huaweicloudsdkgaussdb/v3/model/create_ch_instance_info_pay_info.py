@@ -33,7 +33,7 @@ class CreateChInstanceInfoPayInfo:
     }
 
     def __init__(self, pay_model=None, order_id=None, period=None, period_type=None, is_auto_renew=None):
-        """CreateChInstanceInfoPayInfo
+        r"""CreateChInstanceInfoPayInfo
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class CreateChInstanceInfoPayInfo:
 
     @property
     def pay_model(self):
-        """Gets the pay_model of this CreateChInstanceInfoPayInfo.
+        r"""Gets the pay_model of this CreateChInstanceInfoPayInfo.
 
         计费模式。默认0。 取值范围： - 0：按需计费 - 1：包周期
 
@@ -77,7 +77,7 @@ class CreateChInstanceInfoPayInfo:
 
     @pay_model.setter
     def pay_model(self, pay_model):
-        """Sets the pay_model of this CreateChInstanceInfoPayInfo.
+        r"""Sets the pay_model of this CreateChInstanceInfoPayInfo.
 
         计费模式。默认0。 取值范围： - 0：按需计费 - 1：包周期
 
@@ -88,7 +88,7 @@ class CreateChInstanceInfoPayInfo:
 
     @property
     def order_id(self):
-        """Gets the order_id of this CreateChInstanceInfoPayInfo.
+        r"""Gets the order_id of this CreateChInstanceInfoPayInfo.
 
         包周期计费ID。
 
@@ -99,7 +99,7 @@ class CreateChInstanceInfoPayInfo:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this CreateChInstanceInfoPayInfo.
+        r"""Sets the order_id of this CreateChInstanceInfoPayInfo.
 
         包周期计费ID。
 
@@ -110,7 +110,7 @@ class CreateChInstanceInfoPayInfo:
 
     @property
     def period(self):
-        """Gets the period of this CreateChInstanceInfoPayInfo.
+        r"""Gets the period of this CreateChInstanceInfoPayInfo.
 
         包周期周期。
 
@@ -121,7 +121,7 @@ class CreateChInstanceInfoPayInfo:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this CreateChInstanceInfoPayInfo.
+        r"""Sets the period of this CreateChInstanceInfoPayInfo.
 
         包周期周期。
 
@@ -132,7 +132,7 @@ class CreateChInstanceInfoPayInfo:
 
     @property
     def period_type(self):
-        """Gets the period_type of this CreateChInstanceInfoPayInfo.
+        r"""Gets the period_type of this CreateChInstanceInfoPayInfo.
 
         包周期周期类型。 取值范围： - 2：包月 - 3：包年
 
@@ -143,7 +143,7 @@ class CreateChInstanceInfoPayInfo:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this CreateChInstanceInfoPayInfo.
+        r"""Sets the period_type of this CreateChInstanceInfoPayInfo.
 
         包周期周期类型。 取值范围： - 2：包月 - 3：包年
 
@@ -154,7 +154,7 @@ class CreateChInstanceInfoPayInfo:
 
     @property
     def is_auto_renew(self):
-        """Gets the is_auto_renew of this CreateChInstanceInfoPayInfo.
+        r"""Gets the is_auto_renew of this CreateChInstanceInfoPayInfo.
 
         包周期是否自动续费。 取值范围： - 1：自动续费 - 0：不自动续费
 
@@ -165,7 +165,7 @@ class CreateChInstanceInfoPayInfo:
 
     @is_auto_renew.setter
     def is_auto_renew(self, is_auto_renew):
-        """Sets the is_auto_renew of this CreateChInstanceInfoPayInfo.
+        r"""Sets the is_auto_renew of this CreateChInstanceInfoPayInfo.
 
         包周期是否自动续费。 取值范围： - 1：自动续费 - 0：不自动续费
 

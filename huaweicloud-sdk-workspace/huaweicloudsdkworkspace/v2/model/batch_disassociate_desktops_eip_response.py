@@ -24,7 +24,7 @@ class BatchDisassociateDesktopsEipResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchDisassociateDesktopsEipResponse
+        r"""BatchDisassociateDesktopsEipResponse
 
         The model defined in huaweicloud sdk
 

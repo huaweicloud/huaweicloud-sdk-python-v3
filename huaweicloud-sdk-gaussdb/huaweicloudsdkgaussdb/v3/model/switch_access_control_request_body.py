@@ -25,7 +25,7 @@ class SwitchAccessControlRequestBody:
     }
 
     def __init__(self, open_access_control=None):
-        """SwitchAccessControlRequestBody
+        r"""SwitchAccessControlRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SwitchAccessControlRequestBody:
 
     @property
     def open_access_control(self):
-        """Gets the open_access_control of this SwitchAccessControlRequestBody.
+        r"""Gets the open_access_control of this SwitchAccessControlRequestBody.
 
         是否开启访问控制。 取值： - true：开启。 - false：关闭。
 
@@ -53,7 +53,7 @@ class SwitchAccessControlRequestBody:
 
     @open_access_control.setter
     def open_access_control(self, open_access_control):
-        """Sets the open_access_control of this SwitchAccessControlRequestBody.
+        r"""Sets the open_access_control of this SwitchAccessControlRequestBody.
 
         是否开启访问控制。 取值： - true：开启。 - false：关闭。
 

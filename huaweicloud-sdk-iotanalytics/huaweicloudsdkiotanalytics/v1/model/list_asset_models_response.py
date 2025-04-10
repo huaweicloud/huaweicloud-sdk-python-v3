@@ -28,7 +28,7 @@ class ListAssetModelsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, asset_models=None):
-        """ListAssetModelsResponse
+        r"""ListAssetModelsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAssetModelsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListAssetModelsResponse.
+        r"""Gets the count of this ListAssetModelsResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class ListAssetModelsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListAssetModelsResponse.
+        r"""Sets the count of this ListAssetModelsResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class ListAssetModelsResponse(SdkResponse):
 
     @property
     def asset_models(self):
-        """Gets the asset_models of this ListAssetModelsResponse.
+        r"""Gets the asset_models of this ListAssetModelsResponse.
 
         模型集，数量不超过limit
 
@@ -84,7 +84,7 @@ class ListAssetModelsResponse(SdkResponse):
 
     @asset_models.setter
     def asset_models(self, asset_models):
-        """Sets the asset_models of this ListAssetModelsResponse.
+        r"""Sets the asset_models of this ListAssetModelsResponse.
 
         模型集，数量不超过limit
 

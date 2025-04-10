@@ -25,7 +25,7 @@ class CountGcbResourceByTagRequest:
     }
 
     def __init__(self, body=None):
-        """CountGcbResourceByTagRequest
+        r"""CountGcbResourceByTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CountGcbResourceByTagRequest:
 
     @property
     def body(self):
-        """Gets the body of this CountGcbResourceByTagRequest.
+        r"""Gets the body of this CountGcbResourceByTagRequest.
 
         :return: The body of this CountGcbResourceByTagRequest.
         :rtype: :class:`huaweicloudsdkcc.v3.QueryResourceByTagRequestBody`
@@ -52,7 +52,7 @@ class CountGcbResourceByTagRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CountGcbResourceByTagRequest.
+        r"""Sets the body of this CountGcbResourceByTagRequest.
 
         :param body: The body of this CountGcbResourceByTagRequest.
         :type body: :class:`huaweicloudsdkcc.v3.QueryResourceByTagRequestBody`

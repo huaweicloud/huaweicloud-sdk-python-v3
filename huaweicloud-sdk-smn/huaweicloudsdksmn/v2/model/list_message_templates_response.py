@@ -30,7 +30,7 @@ class ListMessageTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, message_template_count=None, message_templates=None):
-        """ListMessageTemplatesResponse
+        r"""ListMessageTemplatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListMessageTemplatesResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListMessageTemplatesResponse.
+        r"""Gets the request_id of this ListMessageTemplatesResponse.
 
         请求的唯一标识ID。
 
@@ -69,7 +69,7 @@ class ListMessageTemplatesResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListMessageTemplatesResponse.
+        r"""Sets the request_id of this ListMessageTemplatesResponse.
 
         请求的唯一标识ID。
 
@@ -80,7 +80,7 @@ class ListMessageTemplatesResponse(SdkResponse):
 
     @property
     def message_template_count(self):
-        """Gets the message_template_count of this ListMessageTemplatesResponse.
+        r"""Gets the message_template_count of this ListMessageTemplatesResponse.
 
         返回的模板个数。
 
@@ -91,7 +91,7 @@ class ListMessageTemplatesResponse(SdkResponse):
 
     @message_template_count.setter
     def message_template_count(self, message_template_count):
-        """Sets the message_template_count of this ListMessageTemplatesResponse.
+        r"""Sets the message_template_count of this ListMessageTemplatesResponse.
 
         返回的模板个数。
 
@@ -102,7 +102,7 @@ class ListMessageTemplatesResponse(SdkResponse):
 
     @property
     def message_templates(self):
-        """Gets the message_templates of this ListMessageTemplatesResponse.
+        r"""Gets the message_templates of this ListMessageTemplatesResponse.
 
         Message_template结构体数组。
 
@@ -113,7 +113,7 @@ class ListMessageTemplatesResponse(SdkResponse):
 
     @message_templates.setter
     def message_templates(self, message_templates):
-        """Sets the message_templates of this ListMessageTemplatesResponse.
+        r"""Sets the message_templates of this ListMessageTemplatesResponse.
 
         Message_template结构体数组。
 

@@ -25,7 +25,7 @@ class SqlRuleRequest:
     }
 
     def __init__(self, risk_levels=None):
-        """SqlRuleRequest
+        r"""SqlRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SqlRuleRequest:
 
     @property
     def risk_levels(self):
-        """Gets the risk_levels of this SqlRuleRequest.
+        r"""Gets the risk_levels of this SqlRuleRequest.
 
         风险级别 - HIGH - MEDIUM - LOW - NO_RISK
 
@@ -54,7 +54,7 @@ class SqlRuleRequest:
 
     @risk_levels.setter
     def risk_levels(self, risk_levels):
-        """Sets the risk_levels of this SqlRuleRequest.
+        r"""Sets the risk_levels of this SqlRuleRequest.
 
         风险级别 - HIGH - MEDIUM - LOW - NO_RISK
 

@@ -47,7 +47,7 @@ class Character:
     }
 
     def __init__(self, create_time=None, update_time=None, character_name=None, gender=None, id=None, name=None, photo_url=None, posture=None, train_finish_time_estimate=None, train_start_time=None, train_status=None, type=None):
-        """Character
+        r"""Character
 
         The model defined in huaweicloud sdk
 
@@ -117,7 +117,7 @@ class Character:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Character.
+        r"""Gets the create_time of this Character.
 
         创建时间
 
@@ -128,7 +128,7 @@ class Character:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Character.
+        r"""Sets the create_time of this Character.
 
         创建时间
 
@@ -139,7 +139,7 @@ class Character:
 
     @property
     def update_time(self):
-        """Gets the update_time of this Character.
+        r"""Gets the update_time of this Character.
 
         更新时间
 
@@ -150,7 +150,7 @@ class Character:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this Character.
+        r"""Sets the update_time of this Character.
 
         更新时间
 
@@ -161,7 +161,7 @@ class Character:
 
     @property
     def character_name(self):
-        """Gets the character_name of this Character.
+        r"""Gets the character_name of this Character.
 
         形象的个人姓名
 
@@ -172,7 +172,7 @@ class Character:
 
     @character_name.setter
     def character_name(self, character_name):
-        """Sets the character_name of this Character.
+        r"""Sets the character_name of this Character.
 
         形象的个人姓名
 
@@ -183,7 +183,7 @@ class Character:
 
     @property
     def gender(self):
-        """Gets the gender of this Character.
+        r"""Gets the gender of this Character.
 
         :return: The gender of this Character.
         :rtype: int
@@ -192,7 +192,7 @@ class Character:
 
     @gender.setter
     def gender(self, gender):
-        """Sets the gender of this Character.
+        r"""Sets the gender of this Character.
 
         :param gender: The gender of this Character.
         :type gender: int
@@ -201,7 +201,7 @@ class Character:
 
     @property
     def id(self):
-        """Gets the id of this Character.
+        r"""Gets the id of this Character.
 
         形象id
 
@@ -212,7 +212,7 @@ class Character:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Character.
+        r"""Sets the id of this Character.
 
         形象id
 
@@ -223,7 +223,7 @@ class Character:
 
     @property
     def name(self):
-        """Gets the name of this Character.
+        r"""Gets the name of this Character.
 
         形象名
 
@@ -234,7 +234,7 @@ class Character:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Character.
+        r"""Sets the name of this Character.
 
         形象名
 
@@ -245,7 +245,7 @@ class Character:
 
     @property
     def photo_url(self):
-        """Gets the photo_url of this Character.
+        r"""Gets the photo_url of this Character.
 
         形象obs地址
 
@@ -256,7 +256,7 @@ class Character:
 
     @photo_url.setter
     def photo_url(self, photo_url):
-        """Sets the photo_url of this Character.
+        r"""Sets the photo_url of this Character.
 
         形象obs地址
 
@@ -267,7 +267,7 @@ class Character:
 
     @property
     def posture(self):
-        """Gets the posture of this Character.
+        r"""Gets the posture of this Character.
 
         姿态： 0：站姿全身 1：站姿半身 2：坐姿全身 3：坐姿半身
 
@@ -278,7 +278,7 @@ class Character:
 
     @posture.setter
     def posture(self, posture):
-        """Sets the posture of this Character.
+        r"""Sets the posture of this Character.
 
         姿态： 0：站姿全身 1：站姿半身 2：坐姿全身 3：坐姿半身
 
@@ -289,7 +289,7 @@ class Character:
 
     @property
     def train_finish_time_estimate(self):
-        """Gets the train_finish_time_estimate of this Character.
+        r"""Gets the train_finish_time_estimate of this Character.
 
         估算的训练结束时间
 
@@ -300,7 +300,7 @@ class Character:
 
     @train_finish_time_estimate.setter
     def train_finish_time_estimate(self, train_finish_time_estimate):
-        """Sets the train_finish_time_estimate of this Character.
+        r"""Sets the train_finish_time_estimate of this Character.
 
         估算的训练结束时间
 
@@ -311,7 +311,7 @@ class Character:
 
     @property
     def train_start_time(self):
-        """Gets the train_start_time of this Character.
+        r"""Gets the train_start_time of this Character.
 
         训练开始时间
 
@@ -322,7 +322,7 @@ class Character:
 
     @train_start_time.setter
     def train_start_time(self, train_start_time):
-        """Sets the train_start_time of this Character.
+        r"""Sets the train_start_time of this Character.
 
         训练开始时间
 
@@ -333,7 +333,7 @@ class Character:
 
     @property
     def train_status(self):
-        """Gets the train_status of this Character.
+        r"""Gets the train_status of this Character.
 
         训练状态： 0：预处理 1：训练中 2：训练成功 3：训练失败 4：预览视频生成中
 
@@ -344,7 +344,7 @@ class Character:
 
     @train_status.setter
     def train_status(self, train_status):
-        """Sets the train_status of this Character.
+        r"""Sets the train_status of this Character.
 
         训练状态： 0：预处理 1：训练中 2：训练成功 3：训练失败 4：预览视频生成中
 
@@ -355,7 +355,7 @@ class Character:
 
     @property
     def type(self):
-        """Gets the type of this Character.
+        r"""Gets the type of this Character.
 
         形象类型： 0：预制形象 1：用户自定义形象
 
@@ -366,7 +366,7 @@ class Character:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Character.
+        r"""Sets the type of this Character.
 
         形象类型： 0：预制形象 1：用户自定义形象
 

@@ -51,7 +51,7 @@ class ListSecurityGroupRulesRequest:
     }
 
     def __init__(self, limit=None, marker=None, id=None, security_group_id=None, protocol=None, description=None, remote_group_id=None, direction=None, action=None, remote_ip_prefix=None, priority=None, ethertype=None, remote_address_group_id=None, enabled=None):
-        """ListSecurityGroupRulesRequest
+        r"""ListSecurityGroupRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class ListSecurityGroupRulesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSecurityGroupRulesRequest.
+        r"""Gets the limit of this ListSecurityGroupRulesRequest.
 
         功能说明：每页返回个数 取值范围：0-2000
 
@@ -145,7 +145,7 @@ class ListSecurityGroupRulesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSecurityGroupRulesRequest.
+        r"""Sets the limit of this ListSecurityGroupRulesRequest.
 
         功能说明：每页返回个数 取值范围：0-2000
 
@@ -156,7 +156,7 @@ class ListSecurityGroupRulesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListSecurityGroupRulesRequest.
+        r"""Gets the marker of this ListSecurityGroupRulesRequest.
 
         分页查询起始的资源ID，为空时查询第一页
 
@@ -167,7 +167,7 @@ class ListSecurityGroupRulesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListSecurityGroupRulesRequest.
+        r"""Sets the marker of this ListSecurityGroupRulesRequest.
 
         分页查询起始的资源ID，为空时查询第一页
 
@@ -178,7 +178,7 @@ class ListSecurityGroupRulesRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListSecurityGroupRulesRequest.
+        r"""Gets the id of this ListSecurityGroupRulesRequest.
 
         功能说明：安全组规则ID，支持多个ID过滤
 
@@ -189,7 +189,7 @@ class ListSecurityGroupRulesRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListSecurityGroupRulesRequest.
+        r"""Sets the id of this ListSecurityGroupRulesRequest.
 
         功能说明：安全组规则ID，支持多个ID过滤
 
@@ -200,7 +200,7 @@ class ListSecurityGroupRulesRequest:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this ListSecurityGroupRulesRequest.
+        r"""Gets the security_group_id of this ListSecurityGroupRulesRequest.
 
         功能说明：安全组规则所属安全组ID，支持多个ID过滤
 
@@ -211,7 +211,7 @@ class ListSecurityGroupRulesRequest:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this ListSecurityGroupRulesRequest.
+        r"""Sets the security_group_id of this ListSecurityGroupRulesRequest.
 
         功能说明：安全组规则所属安全组ID，支持多个ID过滤
 
@@ -222,7 +222,7 @@ class ListSecurityGroupRulesRequest:
 
     @property
     def protocol(self):
-        """Gets the protocol of this ListSecurityGroupRulesRequest.
+        r"""Gets the protocol of this ListSecurityGroupRulesRequest.
 
         功能说明：安全组规则协议，支持多条过滤
 
@@ -233,7 +233,7 @@ class ListSecurityGroupRulesRequest:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this ListSecurityGroupRulesRequest.
+        r"""Sets the protocol of this ListSecurityGroupRulesRequest.
 
         功能说明：安全组规则协议，支持多条过滤
 
@@ -244,7 +244,7 @@ class ListSecurityGroupRulesRequest:
 
     @property
     def description(self):
-        """Gets the description of this ListSecurityGroupRulesRequest.
+        r"""Gets the description of this ListSecurityGroupRulesRequest.
 
         功能说明：安全组规则的描述，支持多个描述同时过滤
 
@@ -255,7 +255,7 @@ class ListSecurityGroupRulesRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListSecurityGroupRulesRequest.
+        r"""Sets the description of this ListSecurityGroupRulesRequest.
 
         功能说明：安全组规则的描述，支持多个描述同时过滤
 
@@ -266,7 +266,7 @@ class ListSecurityGroupRulesRequest:
 
     @property
     def remote_group_id(self):
-        """Gets the remote_group_id of this ListSecurityGroupRulesRequest.
+        r"""Gets the remote_group_id of this ListSecurityGroupRulesRequest.
 
         功能说明：远端安全组ID，支持多ID过滤
 
@@ -277,7 +277,7 @@ class ListSecurityGroupRulesRequest:
 
     @remote_group_id.setter
     def remote_group_id(self, remote_group_id):
-        """Sets the remote_group_id of this ListSecurityGroupRulesRequest.
+        r"""Sets the remote_group_id of this ListSecurityGroupRulesRequest.
 
         功能说明：远端安全组ID，支持多ID过滤
 
@@ -288,7 +288,7 @@ class ListSecurityGroupRulesRequest:
 
     @property
     def direction(self):
-        """Gets the direction of this ListSecurityGroupRulesRequest.
+        r"""Gets the direction of this ListSecurityGroupRulesRequest.
 
         功能说明：安全组规则方向
 
@@ -299,7 +299,7 @@ class ListSecurityGroupRulesRequest:
 
     @direction.setter
     def direction(self, direction):
-        """Sets the direction of this ListSecurityGroupRulesRequest.
+        r"""Sets the direction of this ListSecurityGroupRulesRequest.
 
         功能说明：安全组规则方向
 
@@ -310,7 +310,7 @@ class ListSecurityGroupRulesRequest:
 
     @property
     def action(self):
-        """Gets the action of this ListSecurityGroupRulesRequest.
+        r"""Gets the action of this ListSecurityGroupRulesRequest.
 
         功能说明：安全组规则生效策略。 取值范围：allow表示允许，deny表示拒绝。
 
@@ -321,7 +321,7 @@ class ListSecurityGroupRulesRequest:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ListSecurityGroupRulesRequest.
+        r"""Sets the action of this ListSecurityGroupRulesRequest.
 
         功能说明：安全组规则生效策略。 取值范围：allow表示允许，deny表示拒绝。
 
@@ -332,7 +332,7 @@ class ListSecurityGroupRulesRequest:
 
     @property
     def remote_ip_prefix(self):
-        """Gets the remote_ip_prefix of this ListSecurityGroupRulesRequest.
+        r"""Gets the remote_ip_prefix of this ListSecurityGroupRulesRequest.
 
         功能说明：远端IP地址 取值范围：cidr格式
 
@@ -343,7 +343,7 @@ class ListSecurityGroupRulesRequest:
 
     @remote_ip_prefix.setter
     def remote_ip_prefix(self, remote_ip_prefix):
-        """Sets the remote_ip_prefix of this ListSecurityGroupRulesRequest.
+        r"""Sets the remote_ip_prefix of this ListSecurityGroupRulesRequest.
 
         功能说明：远端IP地址 取值范围：cidr格式
 
@@ -354,7 +354,7 @@ class ListSecurityGroupRulesRequest:
 
     @property
     def priority(self):
-        """Gets the priority of this ListSecurityGroupRulesRequest.
+        r"""Gets the priority of this ListSecurityGroupRulesRequest.
 
         功能说明：优先级，支持多条过滤。
 
@@ -365,7 +365,7 @@ class ListSecurityGroupRulesRequest:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this ListSecurityGroupRulesRequest.
+        r"""Sets the priority of this ListSecurityGroupRulesRequest.
 
         功能说明：优先级，支持多条过滤。
 
@@ -376,7 +376,7 @@ class ListSecurityGroupRulesRequest:
 
     @property
     def ethertype(self):
-        """Gets the ethertype of this ListSecurityGroupRulesRequest.
+        r"""Gets the ethertype of this ListSecurityGroupRulesRequest.
 
         功能说明：IP协议类型，支持多条过滤。 取值范围：IPv4,IPv6,ipv4,ipv6
 
@@ -387,7 +387,7 @@ class ListSecurityGroupRulesRequest:
 
     @ethertype.setter
     def ethertype(self, ethertype):
-        """Sets the ethertype of this ListSecurityGroupRulesRequest.
+        r"""Sets the ethertype of this ListSecurityGroupRulesRequest.
 
         功能说明：IP协议类型，支持多条过滤。 取值范围：IPv4,IPv6,ipv4,ipv6
 
@@ -398,7 +398,7 @@ class ListSecurityGroupRulesRequest:
 
     @property
     def remote_address_group_id(self):
-        """Gets the remote_address_group_id of this ListSecurityGroupRulesRequest.
+        r"""Gets the remote_address_group_id of this ListSecurityGroupRulesRequest.
 
         功能说明：远端IP地址组ID，支持多ID过滤。
 
@@ -409,7 +409,7 @@ class ListSecurityGroupRulesRequest:
 
     @remote_address_group_id.setter
     def remote_address_group_id(self, remote_address_group_id):
-        """Sets the remote_address_group_id of this ListSecurityGroupRulesRequest.
+        r"""Sets the remote_address_group_id of this ListSecurityGroupRulesRequest.
 
         功能说明：远端IP地址组ID，支持多ID过滤。
 
@@ -420,7 +420,7 @@ class ListSecurityGroupRulesRequest:
 
     @property
     def enabled(self):
-        """Gets the enabled of this ListSecurityGroupRulesRequest.
+        r"""Gets the enabled of this ListSecurityGroupRulesRequest.
 
         功能说明：是否启用安全组规则，不支持多值过滤。 取值范围：true, false。
 
@@ -431,7 +431,7 @@ class ListSecurityGroupRulesRequest:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this ListSecurityGroupRulesRequest.
+        r"""Sets the enabled of this ListSecurityGroupRulesRequest.
 
         功能说明：是否启用安全组规则，不支持多值过滤。 取值范围：true, false。
 

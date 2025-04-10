@@ -31,7 +31,7 @@ class FederationUserBody:
     }
 
     def __init__(self, os_federation=None, domain=None, id=None, name=None):
-        """FederationUserBody
+        r"""FederationUserBody
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class FederationUserBody:
 
     @property
     def os_federation(self):
-        """Gets the os_federation of this FederationUserBody.
+        r"""Gets the os_federation of this FederationUserBody.
 
         :return: The os_federation of this FederationUserBody.
         :rtype: :class:`huaweicloudsdkiam.v3.OsFederationInfo`
@@ -71,7 +71,7 @@ class FederationUserBody:
 
     @os_federation.setter
     def os_federation(self, os_federation):
-        """Sets the os_federation of this FederationUserBody.
+        r"""Sets the os_federation of this FederationUserBody.
 
         :param os_federation: The os_federation of this FederationUserBody.
         :type os_federation: :class:`huaweicloudsdkiam.v3.OsFederationInfo`
@@ -80,7 +80,7 @@ class FederationUserBody:
 
     @property
     def domain(self):
-        """Gets the domain of this FederationUserBody.
+        r"""Gets the domain of this FederationUserBody.
 
         :return: The domain of this FederationUserBody.
         :rtype: :class:`huaweicloudsdkiam.v3.DomainInfo`
@@ -89,7 +89,7 @@ class FederationUserBody:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this FederationUserBody.
+        r"""Sets the domain of this FederationUserBody.
 
         :param domain: The domain of this FederationUserBody.
         :type domain: :class:`huaweicloudsdkiam.v3.DomainInfo`
@@ -98,7 +98,7 @@ class FederationUserBody:
 
     @property
     def id(self):
-        """Gets the id of this FederationUserBody.
+        r"""Gets the id of this FederationUserBody.
 
         user id。
 
@@ -109,7 +109,7 @@ class FederationUserBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this FederationUserBody.
+        r"""Sets the id of this FederationUserBody.
 
         user id。
 
@@ -120,7 +120,7 @@ class FederationUserBody:
 
     @property
     def name(self):
-        """Gets the name of this FederationUserBody.
+        r"""Gets the name of this FederationUserBody.
 
         user name。
 
@@ -131,7 +131,7 @@ class FederationUserBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this FederationUserBody.
+        r"""Sets the name of this FederationUserBody.
 
         user name。
 

@@ -29,7 +29,7 @@ class ListHtapStorageTypeRequest:
     }
 
     def __init__(self, database=None, version_name=None, x_language=None):
-        """ListHtapStorageTypeRequest
+        r"""ListHtapStorageTypeRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ListHtapStorageTypeRequest:
 
     @property
     def database(self):
-        """Gets the database of this ListHtapStorageTypeRequest.
+        r"""Gets the database of this ListHtapStorageTypeRequest.
 
         HTAP数据库名。 取值范围： - star-rocks - click-house
 
@@ -66,7 +66,7 @@ class ListHtapStorageTypeRequest:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this ListHtapStorageTypeRequest.
+        r"""Sets the database of this ListHtapStorageTypeRequest.
 
         HTAP数据库名。 取值范围： - star-rocks - click-house
 
@@ -77,7 +77,7 @@ class ListHtapStorageTypeRequest:
 
     @property
     def version_name(self):
-        """Gets the version_name of this ListHtapStorageTypeRequest.
+        r"""Gets the version_name of this ListHtapStorageTypeRequest.
 
         数据库大版本号
 
@@ -88,7 +88,7 @@ class ListHtapStorageTypeRequest:
 
     @version_name.setter
     def version_name(self, version_name):
-        """Sets the version_name of this ListHtapStorageTypeRequest.
+        r"""Sets the version_name of this ListHtapStorageTypeRequest.
 
         数据库大版本号
 
@@ -99,7 +99,7 @@ class ListHtapStorageTypeRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListHtapStorageTypeRequest.
+        r"""Gets the x_language of this ListHtapStorageTypeRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -110,7 +110,7 @@ class ListHtapStorageTypeRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListHtapStorageTypeRequest.
+        r"""Sets the x_language of this ListHtapStorageTypeRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 

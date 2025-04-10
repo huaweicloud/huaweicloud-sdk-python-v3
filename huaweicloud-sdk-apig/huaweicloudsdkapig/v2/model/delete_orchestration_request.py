@@ -27,7 +27,7 @@ class DeleteOrchestrationRequest:
     }
 
     def __init__(self, instance_id=None, orchestration_id=None):
-        """DeleteOrchestrationRequest
+        r"""DeleteOrchestrationRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteOrchestrationRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteOrchestrationRequest.
+        r"""Gets the instance_id of this DeleteOrchestrationRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -59,7 +59,7 @@ class DeleteOrchestrationRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteOrchestrationRequest.
+        r"""Sets the instance_id of this DeleteOrchestrationRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -70,7 +70,7 @@ class DeleteOrchestrationRequest:
 
     @property
     def orchestration_id(self):
-        """Gets the orchestration_id of this DeleteOrchestrationRequest.
+        r"""Gets the orchestration_id of this DeleteOrchestrationRequest.
 
         编排规则编号
 
@@ -81,7 +81,7 @@ class DeleteOrchestrationRequest:
 
     @orchestration_id.setter
     def orchestration_id(self, orchestration_id):
-        """Sets the orchestration_id of this DeleteOrchestrationRequest.
+        r"""Sets the orchestration_id of this DeleteOrchestrationRequest.
 
         编排规则编号
 

@@ -41,7 +41,7 @@ class ShowDataPreviewRequest:
     }
 
     def __init__(self, workspace=None, guid=None, data_connection_id=None, data_type=None, database=None, schema=None, table=None, datasource_workspace_id=None, partitions_condition=None):
-        """ShowDataPreviewRequest
+        r"""ShowDataPreviewRequest
 
         The model defined in huaweicloud sdk
 
@@ -97,7 +97,7 @@ class ShowDataPreviewRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowDataPreviewRequest.
+        r"""Gets the workspace of this ShowDataPreviewRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -108,7 +108,7 @@ class ShowDataPreviewRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowDataPreviewRequest.
+        r"""Sets the workspace of this ShowDataPreviewRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -119,7 +119,7 @@ class ShowDataPreviewRequest:
 
     @property
     def guid(self):
-        """Gets the guid of this ShowDataPreviewRequest.
+        r"""Gets the guid of this ShowDataPreviewRequest.
 
         资产guid，获取方法请参见[数据资产guid](dataartsstudio_02_0351.xml)。
 
@@ -130,7 +130,7 @@ class ShowDataPreviewRequest:
 
     @guid.setter
     def guid(self, guid):
-        """Sets the guid of this ShowDataPreviewRequest.
+        r"""Sets the guid of this ShowDataPreviewRequest.
 
         资产guid，获取方法请参见[数据资产guid](dataartsstudio_02_0351.xml)。
 
@@ -141,7 +141,7 @@ class ShowDataPreviewRequest:
 
     @property
     def data_connection_id(self):
-        """Gets the data_connection_id of this ShowDataPreviewRequest.
+        r"""Gets the data_connection_id of this ShowDataPreviewRequest.
 
         连接id
 
@@ -152,7 +152,7 @@ class ShowDataPreviewRequest:
 
     @data_connection_id.setter
     def data_connection_id(self, data_connection_id):
-        """Sets the data_connection_id of this ShowDataPreviewRequest.
+        r"""Sets the data_connection_id of this ShowDataPreviewRequest.
 
         连接id
 
@@ -163,7 +163,7 @@ class ShowDataPreviewRequest:
 
     @property
     def data_type(self):
-        """Gets the data_type of this ShowDataPreviewRequest.
+        r"""Gets the data_type of this ShowDataPreviewRequest.
 
         数据源表类型，取值范围：hive_table、dws_table、dli_table、dli_table_managed、dli_table_external、dli_table_view、mysql_table、gbase_table、postgre_table、hbase_table、dm_table、doris_table、sqlserver_table。
 
@@ -174,7 +174,7 @@ class ShowDataPreviewRequest:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this ShowDataPreviewRequest.
+        r"""Sets the data_type of this ShowDataPreviewRequest.
 
         数据源表类型，取值范围：hive_table、dws_table、dli_table、dli_table_managed、dli_table_external、dli_table_view、mysql_table、gbase_table、postgre_table、hbase_table、dm_table、doris_table、sqlserver_table。
 
@@ -185,7 +185,7 @@ class ShowDataPreviewRequest:
 
     @property
     def database(self):
-        """Gets the database of this ShowDataPreviewRequest.
+        r"""Gets the database of this ShowDataPreviewRequest.
 
         database名称
 
@@ -196,7 +196,7 @@ class ShowDataPreviewRequest:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this ShowDataPreviewRequest.
+        r"""Sets the database of this ShowDataPreviewRequest.
 
         database名称
 
@@ -207,7 +207,7 @@ class ShowDataPreviewRequest:
 
     @property
     def schema(self):
-        """Gets the schema of this ShowDataPreviewRequest.
+        r"""Gets the schema of this ShowDataPreviewRequest.
 
         schema名称
 
@@ -218,7 +218,7 @@ class ShowDataPreviewRequest:
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this ShowDataPreviewRequest.
+        r"""Sets the schema of this ShowDataPreviewRequest.
 
         schema名称
 
@@ -229,7 +229,7 @@ class ShowDataPreviewRequest:
 
     @property
     def table(self):
-        """Gets the table of this ShowDataPreviewRequest.
+        r"""Gets the table of this ShowDataPreviewRequest.
 
         table名称
 
@@ -240,7 +240,7 @@ class ShowDataPreviewRequest:
 
     @table.setter
     def table(self, table):
-        """Sets the table of this ShowDataPreviewRequest.
+        r"""Sets the table of this ShowDataPreviewRequest.
 
         table名称
 
@@ -251,7 +251,7 @@ class ShowDataPreviewRequest:
 
     @property
     def datasource_workspace_id(self):
-        """Gets the datasource_workspace_id of this ShowDataPreviewRequest.
+        r"""Gets the datasource_workspace_id of this ShowDataPreviewRequest.
 
         数据源空间id
 
@@ -262,7 +262,7 @@ class ShowDataPreviewRequest:
 
     @datasource_workspace_id.setter
     def datasource_workspace_id(self, datasource_workspace_id):
-        """Sets the datasource_workspace_id of this ShowDataPreviewRequest.
+        r"""Sets the datasource_workspace_id of this ShowDataPreviewRequest.
 
         数据源空间id
 
@@ -273,7 +273,7 @@ class ShowDataPreviewRequest:
 
     @property
     def partitions_condition(self):
-        """Gets the partitions_condition of this ShowDataPreviewRequest.
+        r"""Gets the partitions_condition of this ShowDataPreviewRequest.
 
         分区名称，hive类型数据源可使用预览分区中数据
 
@@ -284,7 +284,7 @@ class ShowDataPreviewRequest:
 
     @partitions_condition.setter
     def partitions_condition(self, partitions_condition):
-        """Sets the partitions_condition of this ShowDataPreviewRequest.
+        r"""Sets the partitions_condition of this ShowDataPreviewRequest.
 
         分区名称，hive类型数据源可使用预览分区中数据
 

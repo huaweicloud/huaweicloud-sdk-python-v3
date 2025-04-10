@@ -23,7 +23,7 @@ class UserId:
     }
 
     def __init__(self):
-        """UserId
+        r"""UserId
 
         The model defined in huaweicloud sdk
 

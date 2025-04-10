@@ -35,7 +35,7 @@ class ListPublishedAppRequest:
     }
 
     def __init__(self, app_group_id=None, limit=None, offset=None, name=None, state=None, app_id=None):
-        """ListPublishedAppRequest
+        r"""ListPublishedAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListPublishedAppRequest:
 
     @property
     def app_group_id(self):
-        """Gets the app_group_id of this ListPublishedAppRequest.
+        r"""Gets the app_group_id of this ListPublishedAppRequest.
 
         应用组ID。
 
@@ -88,7 +88,7 @@ class ListPublishedAppRequest:
 
     @app_group_id.setter
     def app_group_id(self, app_group_id):
-        """Sets the app_group_id of this ListPublishedAppRequest.
+        r"""Sets the app_group_id of this ListPublishedAppRequest.
 
         应用组ID。
 
@@ -99,7 +99,7 @@ class ListPublishedAppRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPublishedAppRequest.
+        r"""Gets the limit of this ListPublishedAppRequest.
 
         单次查询的大小[1-100]。
 
@@ -110,7 +110,7 @@ class ListPublishedAppRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPublishedAppRequest.
+        r"""Sets the limit of this ListPublishedAppRequest.
 
         单次查询的大小[1-100]。
 
@@ -121,7 +121,7 @@ class ListPublishedAppRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPublishedAppRequest.
+        r"""Gets the offset of this ListPublishedAppRequest.
 
         查询的偏移量。
 
@@ -132,7 +132,7 @@ class ListPublishedAppRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPublishedAppRequest.
+        r"""Sets the offset of this ListPublishedAppRequest.
 
         查询的偏移量。
 
@@ -143,7 +143,7 @@ class ListPublishedAppRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListPublishedAppRequest.
+        r"""Gets the name of this ListPublishedAppRequest.
 
         应用名称。
 
@@ -154,7 +154,7 @@ class ListPublishedAppRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListPublishedAppRequest.
+        r"""Sets the name of this ListPublishedAppRequest.
 
         应用名称。
 
@@ -165,7 +165,7 @@ class ListPublishedAppRequest:
 
     @property
     def state(self):
-        """Gets the state of this ListPublishedAppRequest.
+        r"""Gets the state of this ListPublishedAppRequest.
 
         应用状态： * `NORMAL` - 正常状态。 * `FORBIDDEN` - 禁用状态。
 
@@ -176,7 +176,7 @@ class ListPublishedAppRequest:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ListPublishedAppRequest.
+        r"""Sets the state of this ListPublishedAppRequest.
 
         应用状态： * `NORMAL` - 正常状态。 * `FORBIDDEN` - 禁用状态。
 
@@ -187,7 +187,7 @@ class ListPublishedAppRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ListPublishedAppRequest.
+        r"""Gets the app_id of this ListPublishedAppRequest.
 
         应用ID。
 
@@ -198,7 +198,7 @@ class ListPublishedAppRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ListPublishedAppRequest.
+        r"""Sets the app_id of this ListPublishedAppRequest.
 
         应用ID。
 

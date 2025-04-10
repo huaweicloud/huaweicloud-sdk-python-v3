@@ -25,7 +25,7 @@ class ShowAutoCreatePolicyRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """ShowAutoCreatePolicyRequest
+        r"""ShowAutoCreatePolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowAutoCreatePolicyRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowAutoCreatePolicyRequest.
+        r"""Gets the cluster_id of this ShowAutoCreatePolicyRequest.
 
         指定需查询自动创建快照策略的集群ID。
 
@@ -53,7 +53,7 @@ class ShowAutoCreatePolicyRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowAutoCreatePolicyRequest.
+        r"""Sets the cluster_id of this ShowAutoCreatePolicyRequest.
 
         指定需查询自动创建快照策略的集群ID。
 

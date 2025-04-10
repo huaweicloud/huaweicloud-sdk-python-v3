@@ -27,7 +27,7 @@ class SetJobBatchNameReq:
     }
 
     def __init__(self, batch_name=None, job_ids=None):
-        """SetJobBatchNameReq
+        r"""SetJobBatchNameReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SetJobBatchNameReq:
 
     @property
     def batch_name(self):
-        """Gets the batch_name of this SetJobBatchNameReq.
+        r"""Gets the batch_name of this SetJobBatchNameReq.
 
         批次名称
 
@@ -61,7 +61,7 @@ class SetJobBatchNameReq:
 
     @batch_name.setter
     def batch_name(self, batch_name):
-        """Sets the batch_name of this SetJobBatchNameReq.
+        r"""Sets the batch_name of this SetJobBatchNameReq.
 
         批次名称
 
@@ -72,7 +72,7 @@ class SetJobBatchNameReq:
 
     @property
     def job_ids(self):
-        """Gets the job_ids of this SetJobBatchNameReq.
+        r"""Gets the job_ids of this SetJobBatchNameReq.
 
         任务id列表
 
@@ -83,7 +83,7 @@ class SetJobBatchNameReq:
 
     @job_ids.setter
     def job_ids(self, job_ids):
-        """Sets the job_ids of this SetJobBatchNameReq.
+        r"""Sets the job_ids of this SetJobBatchNameReq.
 
         任务id列表
 

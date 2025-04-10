@@ -35,7 +35,7 @@ class ListSqlserverDatabasesRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, page=None, limit=None, db_name=None, recover_model=None):
-        """ListSqlserverDatabasesRequest
+        r"""ListSqlserverDatabasesRequest
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class ListSqlserverDatabasesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListSqlserverDatabasesRequest.
+        r"""Gets the x_language of this ListSqlserverDatabasesRequest.
 
         语言
 
@@ -86,7 +86,7 @@ class ListSqlserverDatabasesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListSqlserverDatabasesRequest.
+        r"""Sets the x_language of this ListSqlserverDatabasesRequest.
 
         语言
 
@@ -97,7 +97,7 @@ class ListSqlserverDatabasesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListSqlserverDatabasesRequest.
+        r"""Gets the instance_id of this ListSqlserverDatabasesRequest.
 
         实例ID。
 
@@ -108,7 +108,7 @@ class ListSqlserverDatabasesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListSqlserverDatabasesRequest.
+        r"""Sets the instance_id of this ListSqlserverDatabasesRequest.
 
         实例ID。
 
@@ -119,7 +119,7 @@ class ListSqlserverDatabasesRequest:
 
     @property
     def page(self):
-        """Gets the page of this ListSqlserverDatabasesRequest.
+        r"""Gets the page of this ListSqlserverDatabasesRequest.
 
         分页页码，从1开始。
 
@@ -130,7 +130,7 @@ class ListSqlserverDatabasesRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListSqlserverDatabasesRequest.
+        r"""Sets the page of this ListSqlserverDatabasesRequest.
 
         分页页码，从1开始。
 
@@ -141,7 +141,7 @@ class ListSqlserverDatabasesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSqlserverDatabasesRequest.
+        r"""Gets the limit of this ListSqlserverDatabasesRequest.
 
         每页数据条数。取值范围[1, 100]。
 
@@ -152,7 +152,7 @@ class ListSqlserverDatabasesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSqlserverDatabasesRequest.
+        r"""Sets the limit of this ListSqlserverDatabasesRequest.
 
         每页数据条数。取值范围[1, 100]。
 
@@ -163,7 +163,7 @@ class ListSqlserverDatabasesRequest:
 
     @property
     def db_name(self):
-        """Gets the db_name of this ListSqlserverDatabasesRequest.
+        r"""Gets the db_name of this ListSqlserverDatabasesRequest.
 
         数据库名。当指定该参数时，page和limit参数需要传入但不生效。
 
@@ -174,7 +174,7 @@ class ListSqlserverDatabasesRequest:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this ListSqlserverDatabasesRequest.
+        r"""Sets the db_name of this ListSqlserverDatabasesRequest.
 
         数据库名。当指定该参数时，page和limit参数需要传入但不生效。
 
@@ -185,7 +185,7 @@ class ListSqlserverDatabasesRequest:
 
     @property
     def recover_model(self):
-        """Gets the recover_model of this ListSqlserverDatabasesRequest.
+        r"""Gets the recover_model of this ListSqlserverDatabasesRequest.
 
         数据库恢复健康模式，取值：FULL  ：完整模式，SIMPLE  ：简单模式，BUlK_LOGGED ：大容量日志恢复模式（该参数仅用于SQL server引擎）
 
@@ -196,7 +196,7 @@ class ListSqlserverDatabasesRequest:
 
     @recover_model.setter
     def recover_model(self, recover_model):
-        """Sets the recover_model of this ListSqlserverDatabasesRequest.
+        r"""Sets the recover_model of this ListSqlserverDatabasesRequest.
 
         数据库恢复健康模式，取值：FULL  ：完整模式，SIMPLE  ：简单模式，BUlK_LOGGED ：大容量日志恢复模式（该参数仅用于SQL server引擎）
 

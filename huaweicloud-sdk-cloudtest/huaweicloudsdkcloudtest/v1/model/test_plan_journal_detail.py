@@ -33,7 +33,7 @@ class TestPlanJournalDetail:
     }
 
     def __init__(self, updated=None, added=None, deleted=None, journalized_type=None, type=None):
-        """TestPlanJournalDetail
+        r"""TestPlanJournalDetail
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class TestPlanJournalDetail:
 
     @property
     def updated(self):
-        """Gets the updated of this TestPlanJournalDetail.
+        r"""Gets the updated of this TestPlanJournalDetail.
 
         测试计划基础信息变更，包括计划名称，测试类型，计划处理者、版本号、关联迭代、开始日期、截至日期、描述
 
@@ -82,7 +82,7 @@ class TestPlanJournalDetail:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this TestPlanJournalDetail.
+        r"""Sets the updated of this TestPlanJournalDetail.
 
         测试计划基础信息变更，包括计划名称，测试类型，计划处理者、版本号、关联迭代、开始日期、截至日期、描述
 
@@ -93,7 +93,7 @@ class TestPlanJournalDetail:
 
     @property
     def added(self):
-        """Gets the added of this TestPlanJournalDetail.
+        r"""Gets the added of this TestPlanJournalDetail.
 
         测试计划资源的添加记录（工作项或者测试用例）
 
@@ -104,7 +104,7 @@ class TestPlanJournalDetail:
 
     @added.setter
     def added(self, added):
-        """Sets the added of this TestPlanJournalDetail.
+        r"""Sets the added of this TestPlanJournalDetail.
 
         测试计划资源的添加记录（工作项或者测试用例）
 
@@ -115,7 +115,7 @@ class TestPlanJournalDetail:
 
     @property
     def deleted(self):
-        """Gets the deleted of this TestPlanJournalDetail.
+        r"""Gets the deleted of this TestPlanJournalDetail.
 
         测试计划资源的移除记录（工作项或者测试用例）
 
@@ -126,7 +126,7 @@ class TestPlanJournalDetail:
 
     @deleted.setter
     def deleted(self, deleted):
-        """Sets the deleted of this TestPlanJournalDetail.
+        r"""Sets the deleted of this TestPlanJournalDetail.
 
         测试计划资源的移除记录（工作项或者测试用例）
 
@@ -137,7 +137,7 @@ class TestPlanJournalDetail:
 
     @property
     def journalized_type(self):
-        """Gets the journalized_type of this TestPlanJournalDetail.
+        r"""Gets the journalized_type of this TestPlanJournalDetail.
 
         表明该条变更记录的具体变更类型，例如测试用例（testCase），需求（issue）
 
@@ -148,7 +148,7 @@ class TestPlanJournalDetail:
 
     @journalized_type.setter
     def journalized_type(self, journalized_type):
-        """Sets the journalized_type of this TestPlanJournalDetail.
+        r"""Sets the journalized_type of this TestPlanJournalDetail.
 
         表明该条变更记录的具体变更类型，例如测试用例（testCase），需求（issue）
 
@@ -159,7 +159,7 @@ class TestPlanJournalDetail:
 
     @property
     def type(self):
-        """Gets the type of this TestPlanJournalDetail.
+        r"""Gets the type of this TestPlanJournalDetail.
 
         表明该条变更记录属于基础信息变更还是资源（需求添加移除、用例添加移除）变更
 
@@ -170,7 +170,7 @@ class TestPlanJournalDetail:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this TestPlanJournalDetail.
+        r"""Sets the type of this TestPlanJournalDetail.
 
         表明该条变更记录属于基础信息变更还是资源（需求添加移除、用例添加移除）变更
 

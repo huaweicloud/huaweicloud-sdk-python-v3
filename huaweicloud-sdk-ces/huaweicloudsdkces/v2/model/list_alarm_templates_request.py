@@ -35,7 +35,7 @@ class ListAlarmTemplatesRequest:
     }
 
     def __init__(self, offset=None, limit=None, namespace=None, dim_name=None, template_type=None, template_name=None):
-        """ListAlarmTemplatesRequest
+        r"""ListAlarmTemplatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListAlarmTemplatesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAlarmTemplatesRequest.
+        r"""Gets the offset of this ListAlarmTemplatesRequest.
 
         分页查询时查询的起始位置，表示从第几条数据开始，默认为0
 
@@ -89,7 +89,7 @@ class ListAlarmTemplatesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAlarmTemplatesRequest.
+        r"""Sets the offset of this ListAlarmTemplatesRequest.
 
         分页查询时查询的起始位置，表示从第几条数据开始，默认为0
 
@@ -100,7 +100,7 @@ class ListAlarmTemplatesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAlarmTemplatesRequest.
+        r"""Gets the limit of this ListAlarmTemplatesRequest.
 
         查询结果条数的限制值，取值范围为[1,100]，默认值为100
 
@@ -111,7 +111,7 @@ class ListAlarmTemplatesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAlarmTemplatesRequest.
+        r"""Sets the limit of this ListAlarmTemplatesRequest.
 
         查询结果条数的限制值，取值范围为[1,100]，默认值为100
 
@@ -122,7 +122,7 @@ class ListAlarmTemplatesRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this ListAlarmTemplatesRequest.
+        r"""Gets the namespace of this ListAlarmTemplatesRequest.
 
         查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
 
@@ -133,7 +133,7 @@ class ListAlarmTemplatesRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this ListAlarmTemplatesRequest.
+        r"""Sets the namespace of this ListAlarmTemplatesRequest.
 
         查询服务的命名空间，各服务命名空间请参考“[服务命名空间](ces_03_0059.xml)”
 
@@ -144,7 +144,7 @@ class ListAlarmTemplatesRequest:
 
     @property
     def dim_name(self):
-        """Gets the dim_name of this ListAlarmTemplatesRequest.
+        r"""Gets the dim_name of this ListAlarmTemplatesRequest.
 
         资源维度，必须以字母开头，多维度用\",\"分割，只能包含0-9/a-z/A-Z/_/-，每个维度的最大长度为32
 
@@ -155,7 +155,7 @@ class ListAlarmTemplatesRequest:
 
     @dim_name.setter
     def dim_name(self, dim_name):
-        """Sets the dim_name of this ListAlarmTemplatesRequest.
+        r"""Sets the dim_name of this ListAlarmTemplatesRequest.
 
         资源维度，必须以字母开头，多维度用\",\"分割，只能包含0-9/a-z/A-Z/_/-，每个维度的最大长度为32
 
@@ -166,7 +166,7 @@ class ListAlarmTemplatesRequest:
 
     @property
     def template_type(self):
-        """Gets the template_type of this ListAlarmTemplatesRequest.
+        r"""Gets the template_type of this ListAlarmTemplatesRequest.
 
         模板类型(system代表默认指标模板，custom代表自定义指标模板，system_event代表默认事件模板，custom_event代表自定义事件模板，system_custom_event代表全部事件模板),不传返回全部指标模板
 
@@ -177,7 +177,7 @@ class ListAlarmTemplatesRequest:
 
     @template_type.setter
     def template_type(self, template_type):
-        """Sets the template_type of this ListAlarmTemplatesRequest.
+        r"""Sets the template_type of this ListAlarmTemplatesRequest.
 
         模板类型(system代表默认指标模板，custom代表自定义指标模板，system_event代表默认事件模板，custom_event代表自定义事件模板，system_custom_event代表全部事件模板),不传返回全部指标模板
 
@@ -188,7 +188,7 @@ class ListAlarmTemplatesRequest:
 
     @property
     def template_name(self):
-        """Gets the template_name of this ListAlarmTemplatesRequest.
+        r"""Gets the template_name of this ListAlarmTemplatesRequest.
 
         告警模板的名称，以字母或汉字开头，可包含字母、数字、汉字、_、-，长度范围[1,128]，支持模糊匹配
 
@@ -199,7 +199,7 @@ class ListAlarmTemplatesRequest:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this ListAlarmTemplatesRequest.
+        r"""Sets the template_name of this ListAlarmTemplatesRequest.
 
         告警模板的名称，以字母或汉字开头，可包含字母、数字、汉字、_、-，长度范围[1,128]，支持模糊匹配
 

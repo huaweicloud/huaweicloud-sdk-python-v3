@@ -23,7 +23,7 @@ class EnableLogCollectionRequest:
     }
 
     def __init__(self):
-        """EnableLogCollectionRequest
+        r"""EnableLogCollectionRequest
 
         The model defined in huaweicloud sdk
 

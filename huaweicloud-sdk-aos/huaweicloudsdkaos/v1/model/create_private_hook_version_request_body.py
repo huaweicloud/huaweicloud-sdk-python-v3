@@ -33,7 +33,7 @@ class CreatePrivateHookVersionRequestBody:
     }
 
     def __init__(self, hook_id=None, hook_version=None, hook_version_description=None, policy_uri=None, policy_body=None):
-        """CreatePrivateHookVersionRequestBody
+        r"""CreatePrivateHookVersionRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class CreatePrivateHookVersionRequestBody:
 
     @property
     def hook_id(self):
-        """Gets the hook_id of this CreatePrivateHookVersionRequestBody.
+        r"""Gets the hook_id of this CreatePrivateHookVersionRequestBody.
 
         私有hook（private-hook）的唯一Id。  此Id由资源编排服务在生成私有hook的时候生成，为UUID。  由于私有hook名称仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的私有hook，删除，再重新创建一个同名私有hook。  对于团队并行开发，用户可能希望确保，当前我操作的私有hook就是我认为的那个，而不是其他队友删除后创建的同名私有hook。因此，使用Id就可以做到强匹配。  资源编排服务保证每次创建的私有hook所对应的Id都不相同，更新不会影响Id。如果给予的hook_id和当前hook的Id不一致，则返回400。
 
@@ -81,7 +81,7 @@ class CreatePrivateHookVersionRequestBody:
 
     @hook_id.setter
     def hook_id(self, hook_id):
-        """Sets the hook_id of this CreatePrivateHookVersionRequestBody.
+        r"""Sets the hook_id of this CreatePrivateHookVersionRequestBody.
 
         私有hook（private-hook）的唯一Id。  此Id由资源编排服务在生成私有hook的时候生成，为UUID。  由于私有hook名称仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的私有hook，删除，再重新创建一个同名私有hook。  对于团队并行开发，用户可能希望确保，当前我操作的私有hook就是我认为的那个，而不是其他队友删除后创建的同名私有hook。因此，使用Id就可以做到强匹配。  资源编排服务保证每次创建的私有hook所对应的Id都不相同，更新不会影响Id。如果给予的hook_id和当前hook的Id不一致，则返回400。
 
@@ -92,7 +92,7 @@ class CreatePrivateHookVersionRequestBody:
 
     @property
     def hook_version(self):
-        """Gets the hook_version of this CreatePrivateHookVersionRequestBody.
+        r"""Gets the hook_version of this CreatePrivateHookVersionRequestBody.
 
         私有hook的版本号。版本号必须遵循语义化版本号（Semantic Version），为用户自定义。
 
@@ -103,7 +103,7 @@ class CreatePrivateHookVersionRequestBody:
 
     @hook_version.setter
     def hook_version(self, hook_version):
-        """Sets the hook_version of this CreatePrivateHookVersionRequestBody.
+        r"""Sets the hook_version of this CreatePrivateHookVersionRequestBody.
 
         私有hook的版本号。版本号必须遵循语义化版本号（Semantic Version），为用户自定义。
 
@@ -114,7 +114,7 @@ class CreatePrivateHookVersionRequestBody:
 
     @property
     def hook_version_description(self):
-        """Gets the hook_version_description of this CreatePrivateHookVersionRequestBody.
+        r"""Gets the hook_version_description of this CreatePrivateHookVersionRequestBody.
 
         私有hook版本的描述。可用于客户识别创建私有hook的版本。注意：hook版本为不可更新（immutable），所以该字段不可更新，如果需要更新，请删除后重建。
 
@@ -125,7 +125,7 @@ class CreatePrivateHookVersionRequestBody:
 
     @hook_version_description.setter
     def hook_version_description(self, hook_version_description):
-        """Sets the hook_version_description of this CreatePrivateHookVersionRequestBody.
+        r"""Sets the hook_version_description of this CreatePrivateHookVersionRequestBody.
 
         私有hook版本的描述。可用于客户识别创建私有hook的版本。注意：hook版本为不可更新（immutable），所以该字段不可更新，如果需要更新，请删除后重建。
 
@@ -136,7 +136,7 @@ class CreatePrivateHookVersionRequestBody:
 
     @property
     def policy_uri(self):
-        """Gets the policy_uri of this CreatePrivateHookVersionRequestBody.
+        r"""Gets the policy_uri of this CreatePrivateHookVersionRequestBody.
 
         策略文件的OBS地址。内容仅支持OPA开源引擎识别的，以Rego（https://www.openpolicyagent.org/docs/latest/policy-language/）语言编写的策略模板。  请确保OBS地址所在局点与使用RFS服务局点一致。  策略文件当前支持单文件或zip压缩包，单文件需要以\".rego\"结尾，压缩包当前只支持zip格式，文件需要以`.zip`结尾。  关于策略文件的校验要求如下：   * 文件必须是UTF8编码   * 创建时会对大小、格式、语法等进行校验   * 策略文件必须是UTF-8编码   * 单文件或压缩包解压前后的大小应控制在1MB以内   * 压缩包内的文件数量不能超过100个   * 压缩包内的文件路径最长为2048   * 压缩包内的文件名最长为255个字节  policy_uri和policy_body必须有且只有一个存在
 
@@ -147,7 +147,7 @@ class CreatePrivateHookVersionRequestBody:
 
     @policy_uri.setter
     def policy_uri(self, policy_uri):
-        """Sets the policy_uri of this CreatePrivateHookVersionRequestBody.
+        r"""Sets the policy_uri of this CreatePrivateHookVersionRequestBody.
 
         策略文件的OBS地址。内容仅支持OPA开源引擎识别的，以Rego（https://www.openpolicyagent.org/docs/latest/policy-language/）语言编写的策略模板。  请确保OBS地址所在局点与使用RFS服务局点一致。  策略文件当前支持单文件或zip压缩包，单文件需要以\".rego\"结尾，压缩包当前只支持zip格式，文件需要以`.zip`结尾。  关于策略文件的校验要求如下：   * 文件必须是UTF8编码   * 创建时会对大小、格式、语法等进行校验   * 策略文件必须是UTF-8编码   * 单文件或压缩包解压前后的大小应控制在1MB以内   * 压缩包内的文件数量不能超过100个   * 压缩包内的文件路径最长为2048   * 压缩包内的文件名最长为255个字节  policy_uri和policy_body必须有且只有一个存在
 
@@ -158,7 +158,7 @@ class CreatePrivateHookVersionRequestBody:
 
     @property
     def policy_body(self):
-        """Gets the policy_body of this CreatePrivateHookVersionRequestBody.
+        r"""Gets the policy_body of this CreatePrivateHookVersionRequestBody.
 
         策略内容。仅支持OPA开源引擎识别的，以Rego（https://www.openpolicyagent.org/docs/latest/policy-language/）语言编写的策略模板。  policy_body和policy_uri 必须有且只有一个存在
 
@@ -169,7 +169,7 @@ class CreatePrivateHookVersionRequestBody:
 
     @policy_body.setter
     def policy_body(self, policy_body):
-        """Sets the policy_body of this CreatePrivateHookVersionRequestBody.
+        r"""Sets the policy_body of this CreatePrivateHookVersionRequestBody.
 
         策略内容。仅支持OPA开源引擎识别的，以Rego（https://www.openpolicyagent.org/docs/latest/policy-language/）语言编写的策略模板。  policy_body和policy_uri 必须有且只有一个存在
 

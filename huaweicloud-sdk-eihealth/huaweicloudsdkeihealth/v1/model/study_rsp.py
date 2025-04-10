@@ -39,7 +39,7 @@ class StudyRsp:
     }
 
     def __init__(self, name=None, id=None, eihealth_project_name=None, eihealth_project_id=None, description=None, create_time=None, update_time=None, latest_job=None):
-        """StudyRsp
+        r"""StudyRsp
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class StudyRsp:
 
     @property
     def name(self):
-        """Gets the name of this StudyRsp.
+        r"""Gets the name of this StudyRsp.
 
         study名称
 
@@ -103,7 +103,7 @@ class StudyRsp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this StudyRsp.
+        r"""Sets the name of this StudyRsp.
 
         study名称
 
@@ -114,7 +114,7 @@ class StudyRsp:
 
     @property
     def id(self):
-        """Gets the id of this StudyRsp.
+        r"""Gets the id of this StudyRsp.
 
         study id
 
@@ -125,7 +125,7 @@ class StudyRsp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this StudyRsp.
+        r"""Sets the id of this StudyRsp.
 
         study id
 
@@ -136,7 +136,7 @@ class StudyRsp:
 
     @property
     def eihealth_project_name(self):
-        """Gets the eihealth_project_name of this StudyRsp.
+        r"""Gets the eihealth_project_name of this StudyRsp.
 
         医疗项目名称
 
@@ -147,7 +147,7 @@ class StudyRsp:
 
     @eihealth_project_name.setter
     def eihealth_project_name(self, eihealth_project_name):
-        """Sets the eihealth_project_name of this StudyRsp.
+        r"""Sets the eihealth_project_name of this StudyRsp.
 
         医疗项目名称
 
@@ -158,7 +158,7 @@ class StudyRsp:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this StudyRsp.
+        r"""Gets the eihealth_project_id of this StudyRsp.
 
         医疗项目id
 
@@ -169,7 +169,7 @@ class StudyRsp:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this StudyRsp.
+        r"""Sets the eihealth_project_id of this StudyRsp.
 
         医疗项目id
 
@@ -180,7 +180,7 @@ class StudyRsp:
 
     @property
     def description(self):
-        """Gets the description of this StudyRsp.
+        r"""Gets the description of this StudyRsp.
 
         study描述
 
@@ -191,7 +191,7 @@ class StudyRsp:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this StudyRsp.
+        r"""Sets the description of this StudyRsp.
 
         study描述
 
@@ -202,7 +202,7 @@ class StudyRsp:
 
     @property
     def create_time(self):
-        """Gets the create_time of this StudyRsp.
+        r"""Gets the create_time of this StudyRsp.
 
         study创建时间
 
@@ -213,7 +213,7 @@ class StudyRsp:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this StudyRsp.
+        r"""Sets the create_time of this StudyRsp.
 
         study创建时间
 
@@ -224,7 +224,7 @@ class StudyRsp:
 
     @property
     def update_time(self):
-        """Gets the update_time of this StudyRsp.
+        r"""Gets the update_time of this StudyRsp.
 
         study更新时间
 
@@ -235,7 +235,7 @@ class StudyRsp:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this StudyRsp.
+        r"""Sets the update_time of this StudyRsp.
 
         study更新时间
 
@@ -246,7 +246,7 @@ class StudyRsp:
 
     @property
     def latest_job(self):
-        """Gets the latest_job of this StudyRsp.
+        r"""Gets the latest_job of this StudyRsp.
 
         :return: The latest_job of this StudyRsp.
         :rtype: :class:`huaweicloudsdkeihealth.v1.StudyJobRsp`
@@ -255,7 +255,7 @@ class StudyRsp:
 
     @latest_job.setter
     def latest_job(self, latest_job):
-        """Sets the latest_job of this StudyRsp.
+        r"""Sets the latest_job of this StudyRsp.
 
         :param latest_job: The latest_job of this StudyRsp.
         :type latest_job: :class:`huaweicloudsdkeihealth.v1.StudyJobRsp`

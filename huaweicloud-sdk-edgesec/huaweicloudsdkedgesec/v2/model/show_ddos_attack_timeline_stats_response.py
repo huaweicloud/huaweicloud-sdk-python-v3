@@ -32,7 +32,7 @@ class ShowDdosAttackTimelineStatsResponse(SdkResponse):
     }
 
     def __init__(self, stat_type=None, group_by=None, interval=None, values=None):
-        """ShowDdosAttackTimelineStatsResponse
+        r"""ShowDdosAttackTimelineStatsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowDdosAttackTimelineStatsResponse(SdkResponse):
 
     @property
     def stat_type(self):
-        """Gets the stat_type of this ShowDdosAttackTimelineStatsResponse.
+        r"""Gets the stat_type of this ShowDdosAttackTimelineStatsResponse.
 
         指标类型
 
@@ -76,7 +76,7 @@ class ShowDdosAttackTimelineStatsResponse(SdkResponse):
 
     @stat_type.setter
     def stat_type(self, stat_type):
-        """Sets the stat_type of this ShowDdosAttackTimelineStatsResponse.
+        r"""Sets the stat_type of this ShowDdosAttackTimelineStatsResponse.
 
         指标类型
 
@@ -87,7 +87,7 @@ class ShowDdosAttackTimelineStatsResponse(SdkResponse):
 
     @property
     def group_by(self):
-        """Gets the group_by of this ShowDdosAttackTimelineStatsResponse.
+        r"""Gets the group_by of this ShowDdosAttackTimelineStatsResponse.
 
         分组类型
 
@@ -98,7 +98,7 @@ class ShowDdosAttackTimelineStatsResponse(SdkResponse):
 
     @group_by.setter
     def group_by(self, group_by):
-        """Sets the group_by of this ShowDdosAttackTimelineStatsResponse.
+        r"""Sets the group_by of this ShowDdosAttackTimelineStatsResponse.
 
         分组类型
 
@@ -109,7 +109,7 @@ class ShowDdosAttackTimelineStatsResponse(SdkResponse):
 
     @property
     def interval(self):
-        """Gets the interval of this ShowDdosAttackTimelineStatsResponse.
+        r"""Gets the interval of this ShowDdosAttackTimelineStatsResponse.
 
         时间粒度(单位：秒)
 
@@ -120,7 +120,7 @@ class ShowDdosAttackTimelineStatsResponse(SdkResponse):
 
     @interval.setter
     def interval(self, interval):
-        """Sets the interval of this ShowDdosAttackTimelineStatsResponse.
+        r"""Sets the interval of this ShowDdosAttackTimelineStatsResponse.
 
         时间粒度(单位：秒)
 
@@ -131,7 +131,7 @@ class ShowDdosAttackTimelineStatsResponse(SdkResponse):
 
     @property
     def values(self):
-        """Gets the values of this ShowDdosAttackTimelineStatsResponse.
+        r"""Gets the values of this ShowDdosAttackTimelineStatsResponse.
 
         值数组
 
@@ -142,7 +142,7 @@ class ShowDdosAttackTimelineStatsResponse(SdkResponse):
 
     @values.setter
     def values(self, values):
-        """Sets the values of this ShowDdosAttackTimelineStatsResponse.
+        r"""Sets the values of this ShowDdosAttackTimelineStatsResponse.
 
         值数组
 

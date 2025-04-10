@@ -27,7 +27,7 @@ class ApprovePlaybookInfo:
     }
 
     def __init__(self, result=None, content=None):
-        """ApprovePlaybookInfo
+        r"""ApprovePlaybookInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ApprovePlaybookInfo:
 
     @property
     def result(self):
-        """Gets the result of this ApprovePlaybookInfo.
+        r"""Gets the result of this ApprovePlaybookInfo.
 
         审核结果  通过：PASS 不通过：UN_PASS
 
@@ -61,7 +61,7 @@ class ApprovePlaybookInfo:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ApprovePlaybookInfo.
+        r"""Sets the result of this ApprovePlaybookInfo.
 
         审核结果  通过：PASS 不通过：UN_PASS
 
@@ -72,7 +72,7 @@ class ApprovePlaybookInfo:
 
     @property
     def content(self):
-        """Gets the content of this ApprovePlaybookInfo.
+        r"""Gets the content of this ApprovePlaybookInfo.
 
         审核意见
 
@@ -83,7 +83,7 @@ class ApprovePlaybookInfo:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this ApprovePlaybookInfo.
+        r"""Sets the content of this ApprovePlaybookInfo.
 
         审核意见
 

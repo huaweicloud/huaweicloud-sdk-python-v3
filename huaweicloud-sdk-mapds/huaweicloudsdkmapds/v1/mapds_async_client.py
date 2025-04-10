@@ -34,7 +34,7 @@ class MapDSAsyncClient(Client):
         return client_builder
 
     def create_credential_async(self, request):
-        """创建凭证
+        r"""创建凭证
 
         该接口用于创建访问地图数据服务的凭证。
         
@@ -103,7 +103,7 @@ class MapDSAsyncClient(Client):
         return http_info
 
     def create_sas_token_async(self, request):
-        """创建SAS Token
+        r"""创建SAS Token
 
         创建SAS token凭据，用于访问瓦片。
         
@@ -172,7 +172,7 @@ class MapDSAsyncClient(Client):
         return http_info
 
     def delete_cedential_async(self, request):
-        """删除凭证
+        r"""删除凭证
 
         该接口用于删除访问地图数据服务的凭证。
         
@@ -241,7 +241,7 @@ class MapDSAsyncClient(Client):
         return http_info
 
     def show_credential_async(self, request):
-        """查询凭证
+        r"""查询凭证
 
         该接口用于查询访问地图数据服务的凭证。
         
@@ -308,7 +308,7 @@ class MapDSAsyncClient(Client):
         return http_info
 
     def show_map_tile_async(self, request):
-        """获取地图瓦片
+        r"""获取地图瓦片
 
         该接口用于获取地图瓦片。
         

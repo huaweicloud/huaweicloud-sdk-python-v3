@@ -25,7 +25,7 @@ class RunEvaluationByPolicyAssignmentIdRequest:
     }
 
     def __init__(self, policy_assignment_id=None):
-        """RunEvaluationByPolicyAssignmentIdRequest
+        r"""RunEvaluationByPolicyAssignmentIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RunEvaluationByPolicyAssignmentIdRequest:
 
     @property
     def policy_assignment_id(self):
-        """Gets the policy_assignment_id of this RunEvaluationByPolicyAssignmentIdRequest.
+        r"""Gets the policy_assignment_id of this RunEvaluationByPolicyAssignmentIdRequest.
 
         规则ID
 
@@ -53,7 +53,7 @@ class RunEvaluationByPolicyAssignmentIdRequest:
 
     @policy_assignment_id.setter
     def policy_assignment_id(self, policy_assignment_id):
-        """Sets the policy_assignment_id of this RunEvaluationByPolicyAssignmentIdRequest.
+        r"""Sets the policy_assignment_id of this RunEvaluationByPolicyAssignmentIdRequest.
 
         规则ID
 

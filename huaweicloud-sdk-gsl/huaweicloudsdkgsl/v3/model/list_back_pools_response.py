@@ -32,7 +32,7 @@ class ListBackPoolsResponse(SdkResponse):
     }
 
     def __init__(self, limit=None, offset=None, count=None, pools=None):
-        """ListBackPoolsResponse
+        r"""ListBackPoolsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListBackPoolsResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListBackPoolsResponse.
+        r"""Gets the limit of this ListBackPoolsResponse.
 
         每页记录数
 
@@ -76,7 +76,7 @@ class ListBackPoolsResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListBackPoolsResponse.
+        r"""Sets the limit of this ListBackPoolsResponse.
 
         每页记录数
 
@@ -87,7 +87,7 @@ class ListBackPoolsResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListBackPoolsResponse.
+        r"""Gets the offset of this ListBackPoolsResponse.
 
         页码
 
@@ -98,7 +98,7 @@ class ListBackPoolsResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListBackPoolsResponse.
+        r"""Sets the offset of this ListBackPoolsResponse.
 
         页码
 
@@ -109,7 +109,7 @@ class ListBackPoolsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListBackPoolsResponse.
+        r"""Gets the count of this ListBackPoolsResponse.
 
         当前查询条件的后向流量池总数
 
@@ -120,7 +120,7 @@ class ListBackPoolsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListBackPoolsResponse.
+        r"""Sets the count of this ListBackPoolsResponse.
 
         当前查询条件的后向流量池总数
 
@@ -131,7 +131,7 @@ class ListBackPoolsResponse(SdkResponse):
 
     @property
     def pools(self):
-        """Gets the pools of this ListBackPoolsResponse.
+        r"""Gets the pools of this ListBackPoolsResponse.
 
         当前页的后向流量池记录列表
 
@@ -142,7 +142,7 @@ class ListBackPoolsResponse(SdkResponse):
 
     @pools.setter
     def pools(self, pools):
-        """Sets the pools of this ListBackPoolsResponse.
+        r"""Sets the pools of this ListBackPoolsResponse.
 
         当前页的后向流量池记录列表
 

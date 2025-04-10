@@ -33,7 +33,7 @@ class OsVersionInfo:
     }
 
     def __init__(self, platform=None, os_version_key=None, os_version=None, os_bit=None, os_type=None):
-        """OsVersionInfo
+        r"""OsVersionInfo
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class OsVersionInfo:
 
     @property
     def platform(self):
-        """Gets the platform of this OsVersionInfo.
+        r"""Gets the platform of this OsVersionInfo.
 
         操作系统的平台值
 
@@ -77,7 +77,7 @@ class OsVersionInfo:
 
     @platform.setter
     def platform(self, platform):
-        """Sets the platform of this OsVersionInfo.
+        r"""Sets the platform of this OsVersionInfo.
 
         操作系统的平台值
 
@@ -88,7 +88,7 @@ class OsVersionInfo:
 
     @property
     def os_version_key(self):
-        """Gets the os_version_key of this OsVersionInfo.
+        r"""Gets the os_version_key of this OsVersionInfo.
 
         os_version的key值，和os_version值相同
 
@@ -99,7 +99,7 @@ class OsVersionInfo:
 
     @os_version_key.setter
     def os_version_key(self, os_version_key):
-        """Sets the os_version_key of this OsVersionInfo.
+        r"""Sets the os_version_key of this OsVersionInfo.
 
         os_version的key值，和os_version值相同
 
@@ -110,7 +110,7 @@ class OsVersionInfo:
 
     @property
     def os_version(self):
-        """Gets the os_version of this OsVersionInfo.
+        r"""Gets the os_version of this OsVersionInfo.
 
         操作系统的版本
 
@@ -121,7 +121,7 @@ class OsVersionInfo:
 
     @os_version.setter
     def os_version(self, os_version):
-        """Sets the os_version of this OsVersionInfo.
+        r"""Sets the os_version of this OsVersionInfo.
 
         操作系统的版本
 
@@ -132,7 +132,7 @@ class OsVersionInfo:
 
     @property
     def os_bit(self):
-        """Gets the os_bit of this OsVersionInfo.
+        r"""Gets the os_bit of this OsVersionInfo.
 
         操作系统的位数
 
@@ -143,7 +143,7 @@ class OsVersionInfo:
 
     @os_bit.setter
     def os_bit(self, os_bit):
-        """Sets the os_bit of this OsVersionInfo.
+        r"""Sets the os_bit of this OsVersionInfo.
 
         操作系统的位数
 
@@ -154,7 +154,7 @@ class OsVersionInfo:
 
     @property
     def os_type(self):
-        """Gets the os_type of this OsVersionInfo.
+        r"""Gets the os_type of this OsVersionInfo.
 
         操作系统的类型，Linux或Windows
 
@@ -165,7 +165,7 @@ class OsVersionInfo:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this OsVersionInfo.
+        r"""Sets the os_type of this OsVersionInfo.
 
         操作系统的类型，Linux或Windows
 

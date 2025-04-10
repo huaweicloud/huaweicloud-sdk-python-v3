@@ -27,7 +27,7 @@ class UpdateEdgeSiteRequest:
     }
 
     def __init__(self, site_id=None, body=None):
-        """UpdateEdgeSiteRequest
+        r"""UpdateEdgeSiteRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateEdgeSiteRequest:
 
     @property
     def site_id(self):
-        """Gets the site_id of this UpdateEdgeSiteRequest.
+        r"""Gets the site_id of this UpdateEdgeSiteRequest.
 
         边缘小站ID
 
@@ -60,7 +60,7 @@ class UpdateEdgeSiteRequest:
 
     @site_id.setter
     def site_id(self, site_id):
-        """Sets the site_id of this UpdateEdgeSiteRequest.
+        r"""Sets the site_id of this UpdateEdgeSiteRequest.
 
         边缘小站ID
 
@@ -71,7 +71,7 @@ class UpdateEdgeSiteRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateEdgeSiteRequest.
+        r"""Gets the body of this UpdateEdgeSiteRequest.
 
         :return: The body of this UpdateEdgeSiteRequest.
         :rtype: :class:`huaweicloudsdkcloudpond.v1.UpdateEdgeSiteRequestBody`
@@ -80,7 +80,7 @@ class UpdateEdgeSiteRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateEdgeSiteRequest.
+        r"""Sets the body of this UpdateEdgeSiteRequest.
 
         :param body: The body of this UpdateEdgeSiteRequest.
         :type body: :class:`huaweicloudsdkcloudpond.v1.UpdateEdgeSiteRequestBody`

@@ -26,7 +26,7 @@ class BatchAssociateNaToNodesResponse(SdkResponse):
     }
 
     def __init__(self, nodes=None):
-        """BatchAssociateNaToNodesResponse
+        r"""BatchAssociateNaToNodesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchAssociateNaToNodesResponse(SdkResponse):
 
     @property
     def nodes(self):
-        """Gets the nodes of this BatchAssociateNaToNodesResponse.
+        r"""Gets the nodes of this BatchAssociateNaToNodesResponse.
 
         授权北向NA信息到边缘节点列表的返回结构体，仅返回本次授权的节点列表信息
 
@@ -55,7 +55,7 @@ class BatchAssociateNaToNodesResponse(SdkResponse):
 
     @nodes.setter
     def nodes(self, nodes):
-        """Sets the nodes of this BatchAssociateNaToNodesResponse.
+        r"""Sets the nodes of this BatchAssociateNaToNodesResponse.
 
         授权北向NA信息到边缘节点列表的返回结构体，仅返回本次授权的节点列表信息
 

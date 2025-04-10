@@ -61,7 +61,7 @@ class User:
     }
 
     def __init__(self, id=None, sid=None, user_name=None, user_email=None, total_desktops=None, user_phone=None, active_type=None, is_pre_user=None, account_expires=None, password_never_expired=None, account_expired=None, enable_change_password=None, next_login_change_password=None, description=None, locked=None, disabled=None, share_space_subscription=None, share_space_desktops=None, group_names=None):
-        """User
+        r"""User
 
         The model defined in huaweicloud sdk
 
@@ -169,7 +169,7 @@ class User:
 
     @property
     def id(self):
-        """Gets the id of this User.
+        r"""Gets the id of this User.
 
         用户ID。
 
@@ -180,7 +180,7 @@ class User:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this User.
+        r"""Sets the id of this User.
 
         用户ID。
 
@@ -191,7 +191,7 @@ class User:
 
     @property
     def sid(self):
-        """Gets the sid of this User.
+        r"""Gets the sid of this User.
 
         用户ID。
 
@@ -202,7 +202,7 @@ class User:
 
     @sid.setter
     def sid(self, sid):
-        """Sets the sid of this User.
+        r"""Sets the sid of this User.
 
         用户ID。
 
@@ -213,7 +213,7 @@ class User:
 
     @property
     def user_name(self):
-        """Gets the user_name of this User.
+        r"""Gets the user_name of this User.
 
         桌面用户名。
 
@@ -224,7 +224,7 @@ class User:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this User.
+        r"""Sets the user_name of this User.
 
         桌面用户名。
 
@@ -235,7 +235,7 @@ class User:
 
     @property
     def user_email(self):
-        """Gets the user_email of this User.
+        r"""Gets the user_email of this User.
 
         用户邮箱。
 
@@ -246,7 +246,7 @@ class User:
 
     @user_email.setter
     def user_email(self, user_email):
-        """Sets the user_email of this User.
+        r"""Sets the user_email of this User.
 
         用户邮箱。
 
@@ -257,7 +257,7 @@ class User:
 
     @property
     def total_desktops(self):
-        """Gets the total_desktops of this User.
+        r"""Gets the total_desktops of this User.
 
         用户绑定桌面云总数。
 
@@ -268,7 +268,7 @@ class User:
 
     @total_desktops.setter
     def total_desktops(self, total_desktops):
-        """Sets the total_desktops of this User.
+        r"""Sets the total_desktops of this User.
 
         用户绑定桌面云总数。
 
@@ -279,7 +279,7 @@ class User:
 
     @property
     def user_phone(self):
-        """Gets the user_phone of this User.
+        r"""Gets the user_phone of this User.
 
         手机号。
 
@@ -290,7 +290,7 @@ class User:
 
     @user_phone.setter
     def user_phone(self, user_phone):
-        """Sets the user_phone of this User.
+        r"""Sets the user_phone of this User.
 
         手机号。
 
@@ -301,7 +301,7 @@ class User:
 
     @property
     def active_type(self):
-        """Gets the active_type of this User.
+        r"""Gets the active_type of this User.
 
         激活类型，默认为用户激活。 * USER_ACTIVATE： 用户激活 * ADMIN_ACTIVATE： 管理员激活
 
@@ -312,7 +312,7 @@ class User:
 
     @active_type.setter
     def active_type(self, active_type):
-        """Sets the active_type of this User.
+        r"""Sets the active_type of this User.
 
         激活类型，默认为用户激活。 * USER_ACTIVATE： 用户激活 * ADMIN_ACTIVATE： 管理员激活
 
@@ -323,7 +323,7 @@ class User:
 
     @property
     def is_pre_user(self):
-        """Gets the is_pre_user of this User.
+        r"""Gets the is_pre_user of this User.
 
         是不是预创建的用户。
 
@@ -334,7 +334,7 @@ class User:
 
     @is_pre_user.setter
     def is_pre_user(self, is_pre_user):
-        """Sets the is_pre_user of this User.
+        r"""Sets the is_pre_user of this User.
 
         是不是预创建的用户。
 
@@ -345,7 +345,7 @@ class User:
 
     @property
     def account_expires(self):
-        """Gets the account_expires of this User.
+        r"""Gets the account_expires of this User.
 
         账户过期时间，0表示永远不过期。
 
@@ -356,7 +356,7 @@ class User:
 
     @account_expires.setter
     def account_expires(self, account_expires):
-        """Sets the account_expires of this User.
+        r"""Sets the account_expires of this User.
 
         账户过期时间，0表示永远不过期。
 
@@ -367,7 +367,7 @@ class User:
 
     @property
     def password_never_expired(self):
-        """Gets the password_never_expired of this User.
+        r"""Gets the password_never_expired of this User.
 
         密码是否永不过期，true表示密码永不过期，false表示密码会过期。
 
@@ -378,7 +378,7 @@ class User:
 
     @password_never_expired.setter
     def password_never_expired(self, password_never_expired):
-        """Sets the password_never_expired of this User.
+        r"""Sets the password_never_expired of this User.
 
         密码是否永不过期，true表示密码永不过期，false表示密码会过期。
 
@@ -389,7 +389,7 @@ class User:
 
     @property
     def account_expired(self):
-        """Gets the account_expired of this User.
+        r"""Gets the account_expired of this User.
 
         帐号是否过期，true表示已过期，false表示未过期。
 
@@ -400,7 +400,7 @@ class User:
 
     @account_expired.setter
     def account_expired(self, account_expired):
-        """Sets the account_expired of this User.
+        r"""Sets the account_expired of this User.
 
         帐号是否过期，true表示已过期，false表示未过期。
 
@@ -411,7 +411,7 @@ class User:
 
     @property
     def enable_change_password(self):
-        """Gets the enable_change_password of this User.
+        r"""Gets the enable_change_password of this User.
 
         是否允许修改密码，true表示允许，false表示不允许。
 
@@ -422,7 +422,7 @@ class User:
 
     @enable_change_password.setter
     def enable_change_password(self, enable_change_password):
-        """Sets the enable_change_password of this User.
+        r"""Sets the enable_change_password of this User.
 
         是否允许修改密码，true表示允许，false表示不允许。
 
@@ -433,7 +433,7 @@ class User:
 
     @property
     def next_login_change_password(self):
-        """Gets the next_login_change_password of this User.
+        r"""Gets the next_login_change_password of this User.
 
         下次登录是否需要重置密码，true表示需要重置密码，false表示不需要。
 
@@ -444,7 +444,7 @@ class User:
 
     @next_login_change_password.setter
     def next_login_change_password(self, next_login_change_password):
-        """Sets the next_login_change_password of this User.
+        r"""Sets the next_login_change_password of this User.
 
         下次登录是否需要重置密码，true表示需要重置密码，false表示不需要。
 
@@ -455,7 +455,7 @@ class User:
 
     @property
     def description(self):
-        """Gets the description of this User.
+        r"""Gets the description of this User.
 
         用户描述。
 
@@ -466,7 +466,7 @@ class User:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this User.
+        r"""Sets the description of this User.
 
         用户描述。
 
@@ -477,7 +477,7 @@ class User:
 
     @property
     def locked(self):
-        """Gets the locked of this User.
+        r"""Gets the locked of this User.
 
         账户是否被锁定，true表示被锁定，false表示未锁定。
 
@@ -488,7 +488,7 @@ class User:
 
     @locked.setter
     def locked(self, locked):
-        """Sets the locked of this User.
+        r"""Sets the locked of this User.
 
         账户是否被锁定，true表示被锁定，false表示未锁定。
 
@@ -499,7 +499,7 @@ class User:
 
     @property
     def disabled(self):
-        """Gets the disabled of this User.
+        r"""Gets the disabled of this User.
 
         账户是否禁用，true表示被禁用，false表示未禁用。
 
@@ -510,7 +510,7 @@ class User:
 
     @disabled.setter
     def disabled(self, disabled):
-        """Sets the disabled of this User.
+        r"""Sets the disabled of this User.
 
         账户是否禁用，true表示被禁用，false表示未禁用。
 
@@ -521,7 +521,7 @@ class User:
 
     @property
     def share_space_subscription(self):
-        """Gets the share_space_subscription of this User.
+        r"""Gets the share_space_subscription of this User.
 
         用户是否订阅协同，true表示已订阅，false表示未订阅
 
@@ -532,7 +532,7 @@ class User:
 
     @share_space_subscription.setter
     def share_space_subscription(self, share_space_subscription):
-        """Sets the share_space_subscription of this User.
+        r"""Sets the share_space_subscription of this User.
 
         用户是否订阅协同，true表示已订阅，false表示未订阅
 
@@ -543,7 +543,7 @@ class User:
 
     @property
     def share_space_desktops(self):
-        """Gets the share_space_desktops of this User.
+        r"""Gets the share_space_desktops of this User.
 
         用户已绑定协同桌面数
 
@@ -554,7 +554,7 @@ class User:
 
     @share_space_desktops.setter
     def share_space_desktops(self, share_space_desktops):
-        """Sets the share_space_desktops of this User.
+        r"""Sets the share_space_desktops of this User.
 
         用户已绑定协同桌面数
 
@@ -565,7 +565,7 @@ class User:
 
     @property
     def group_names(self):
-        """Gets the group_names of this User.
+        r"""Gets the group_names of this User.
 
         加入的组列表。
 
@@ -576,7 +576,7 @@ class User:
 
     @group_names.setter
     def group_names(self, group_names):
-        """Sets the group_names of this User.
+        r"""Sets the group_names of this User.
 
         加入的组列表。
 

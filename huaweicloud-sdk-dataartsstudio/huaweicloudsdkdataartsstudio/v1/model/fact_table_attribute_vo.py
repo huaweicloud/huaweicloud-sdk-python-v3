@@ -71,7 +71,7 @@ class FactTableAttributeVO:
     }
 
     def __init__(self, id=None, fact_logic_table_id=None, ordinal=None, dimension_id=None, role=None, dimension=None, dimension_attr_id=None, is_primary_key=None, is_partition_key=None, is_foreign_key=None, secrecy_levels=None, description=None, data_type=None, domain_type=None, data_type_extend=None, name_en=None, name_ch=None, not_null=None, attribute_type=None, stand_row_id=None, stand_row_name=None, quality_infos=None, alias=None, self_defined_fields=None):
-        """FactTableAttributeVO
+        r"""FactTableAttributeVO
 
         The model defined in huaweicloud sdk
 
@@ -198,7 +198,7 @@ class FactTableAttributeVO:
 
     @property
     def id(self):
-        """Gets the id of this FactTableAttributeVO.
+        r"""Gets the id of this FactTableAttributeVO.
 
         编码，ID字符串。
 
@@ -209,7 +209,7 @@ class FactTableAttributeVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this FactTableAttributeVO.
+        r"""Sets the id of this FactTableAttributeVO.
 
         编码，ID字符串。
 
@@ -220,7 +220,7 @@ class FactTableAttributeVO:
 
     @property
     def fact_logic_table_id(self):
-        """Gets the fact_logic_table_id of this FactTableAttributeVO.
+        r"""Gets the fact_logic_table_id of this FactTableAttributeVO.
 
         所属事实表ID，只读，ID字符串。
 
@@ -231,7 +231,7 @@ class FactTableAttributeVO:
 
     @fact_logic_table_id.setter
     def fact_logic_table_id(self, fact_logic_table_id):
-        """Sets the fact_logic_table_id of this FactTableAttributeVO.
+        r"""Sets the fact_logic_table_id of this FactTableAttributeVO.
 
         所属事实表ID，只读，ID字符串。
 
@@ -242,7 +242,7 @@ class FactTableAttributeVO:
 
     @property
     def ordinal(self):
-        """Gets the ordinal of this FactTableAttributeVO.
+        r"""Gets the ordinal of this FactTableAttributeVO.
 
         序号。
 
@@ -253,7 +253,7 @@ class FactTableAttributeVO:
 
     @ordinal.setter
     def ordinal(self, ordinal):
-        """Sets the ordinal of this FactTableAttributeVO.
+        r"""Sets the ordinal of this FactTableAttributeVO.
 
         序号。
 
@@ -264,7 +264,7 @@ class FactTableAttributeVO:
 
     @property
     def dimension_id(self):
-        """Gets the dimension_id of this FactTableAttributeVO.
+        r"""Gets the dimension_id of this FactTableAttributeVO.
 
         维度ID，ID字符串。
 
@@ -275,7 +275,7 @@ class FactTableAttributeVO:
 
     @dimension_id.setter
     def dimension_id(self, dimension_id):
-        """Sets the dimension_id of this FactTableAttributeVO.
+        r"""Sets the dimension_id of this FactTableAttributeVO.
 
         维度ID，ID字符串。
 
@@ -286,7 +286,7 @@ class FactTableAttributeVO:
 
     @property
     def role(self):
-        """Gets the role of this FactTableAttributeVO.
+        r"""Gets the role of this FactTableAttributeVO.
 
         维度角色。
 
@@ -297,7 +297,7 @@ class FactTableAttributeVO:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this FactTableAttributeVO.
+        r"""Sets the role of this FactTableAttributeVO.
 
         维度角色。
 
@@ -308,7 +308,7 @@ class FactTableAttributeVO:
 
     @property
     def dimension(self):
-        """Gets the dimension of this FactTableAttributeVO.
+        r"""Gets the dimension of this FactTableAttributeVO.
 
         :return: The dimension of this FactTableAttributeVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DimensionVO`
@@ -317,7 +317,7 @@ class FactTableAttributeVO:
 
     @dimension.setter
     def dimension(self, dimension):
-        """Sets the dimension of this FactTableAttributeVO.
+        r"""Sets the dimension of this FactTableAttributeVO.
 
         :param dimension: The dimension of this FactTableAttributeVO.
         :type dimension: :class:`huaweicloudsdkdataartsstudio.v1.DimensionVO`
@@ -326,7 +326,7 @@ class FactTableAttributeVO:
 
     @property
     def dimension_attr_id(self):
-        """Gets the dimension_attr_id of this FactTableAttributeVO.
+        r"""Gets the dimension_attr_id of this FactTableAttributeVO.
 
         维度属性ID，ID字符串。
 
@@ -337,7 +337,7 @@ class FactTableAttributeVO:
 
     @dimension_attr_id.setter
     def dimension_attr_id(self, dimension_attr_id):
-        """Sets the dimension_attr_id of this FactTableAttributeVO.
+        r"""Sets the dimension_attr_id of this FactTableAttributeVO.
 
         维度属性ID，ID字符串。
 
@@ -348,7 +348,7 @@ class FactTableAttributeVO:
 
     @property
     def is_primary_key(self):
-        """Gets the is_primary_key of this FactTableAttributeVO.
+        r"""Gets the is_primary_key of this FactTableAttributeVO.
 
         是否主键。
 
@@ -359,7 +359,7 @@ class FactTableAttributeVO:
 
     @is_primary_key.setter
     def is_primary_key(self, is_primary_key):
-        """Sets the is_primary_key of this FactTableAttributeVO.
+        r"""Sets the is_primary_key of this FactTableAttributeVO.
 
         是否主键。
 
@@ -370,7 +370,7 @@ class FactTableAttributeVO:
 
     @property
     def is_partition_key(self):
-        """Gets the is_partition_key of this FactTableAttributeVO.
+        r"""Gets the is_partition_key of this FactTableAttributeVO.
 
         是否分区键。
 
@@ -381,7 +381,7 @@ class FactTableAttributeVO:
 
     @is_partition_key.setter
     def is_partition_key(self, is_partition_key):
-        """Sets the is_partition_key of this FactTableAttributeVO.
+        r"""Sets the is_partition_key of this FactTableAttributeVO.
 
         是否分区键。
 
@@ -392,7 +392,7 @@ class FactTableAttributeVO:
 
     @property
     def is_foreign_key(self):
-        """Gets the is_foreign_key of this FactTableAttributeVO.
+        r"""Gets the is_foreign_key of this FactTableAttributeVO.
 
         是否外键，只读。
 
@@ -403,7 +403,7 @@ class FactTableAttributeVO:
 
     @is_foreign_key.setter
     def is_foreign_key(self, is_foreign_key):
-        """Sets the is_foreign_key of this FactTableAttributeVO.
+        r"""Sets the is_foreign_key of this FactTableAttributeVO.
 
         是否外键，只读。
 
@@ -414,7 +414,7 @@ class FactTableAttributeVO:
 
     @property
     def secrecy_levels(self):
-        """Gets the secrecy_levels of this FactTableAttributeVO.
+        r"""Gets the secrecy_levels of this FactTableAttributeVO.
 
         密级
 
@@ -425,7 +425,7 @@ class FactTableAttributeVO:
 
     @secrecy_levels.setter
     def secrecy_levels(self, secrecy_levels):
-        """Sets the secrecy_levels of this FactTableAttributeVO.
+        r"""Sets the secrecy_levels of this FactTableAttributeVO.
 
         密级
 
@@ -436,7 +436,7 @@ class FactTableAttributeVO:
 
     @property
     def description(self):
-        """Gets the description of this FactTableAttributeVO.
+        r"""Gets the description of this FactTableAttributeVO.
 
         描述。
 
@@ -447,7 +447,7 @@ class FactTableAttributeVO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this FactTableAttributeVO.
+        r"""Sets the description of this FactTableAttributeVO.
 
         描述。
 
@@ -458,7 +458,7 @@ class FactTableAttributeVO:
 
     @property
     def data_type(self):
-        """Gets the data_type of this FactTableAttributeVO.
+        r"""Gets the data_type of this FactTableAttributeVO.
 
         字段类型。
 
@@ -469,7 +469,7 @@ class FactTableAttributeVO:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this FactTableAttributeVO.
+        r"""Sets the data_type of this FactTableAttributeVO.
 
         字段类型。
 
@@ -480,7 +480,7 @@ class FactTableAttributeVO:
 
     @property
     def domain_type(self):
-        """Gets the domain_type of this FactTableAttributeVO.
+        r"""Gets the domain_type of this FactTableAttributeVO.
 
         :return: The domain_type of this FactTableAttributeVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DataTypeDomainEnum`
@@ -489,7 +489,7 @@ class FactTableAttributeVO:
 
     @domain_type.setter
     def domain_type(self, domain_type):
-        """Sets the domain_type of this FactTableAttributeVO.
+        r"""Sets the domain_type of this FactTableAttributeVO.
 
         :param domain_type: The domain_type of this FactTableAttributeVO.
         :type domain_type: :class:`huaweicloudsdkdataartsstudio.v1.DataTypeDomainEnum`
@@ -498,7 +498,7 @@ class FactTableAttributeVO:
 
     @property
     def data_type_extend(self):
-        """Gets the data_type_extend of this FactTableAttributeVO.
+        r"""Gets the data_type_extend of this FactTableAttributeVO.
 
         数据类型扩展字段。
 
@@ -509,7 +509,7 @@ class FactTableAttributeVO:
 
     @data_type_extend.setter
     def data_type_extend(self, data_type_extend):
-        """Sets the data_type_extend of this FactTableAttributeVO.
+        r"""Sets the data_type_extend of this FactTableAttributeVO.
 
         数据类型扩展字段。
 
@@ -520,7 +520,7 @@ class FactTableAttributeVO:
 
     @property
     def name_en(self):
-        """Gets the name_en of this FactTableAttributeVO.
+        r"""Gets the name_en of this FactTableAttributeVO.
 
         英文名。
 
@@ -531,7 +531,7 @@ class FactTableAttributeVO:
 
     @name_en.setter
     def name_en(self, name_en):
-        """Sets the name_en of this FactTableAttributeVO.
+        r"""Sets the name_en of this FactTableAttributeVO.
 
         英文名。
 
@@ -542,7 +542,7 @@ class FactTableAttributeVO:
 
     @property
     def name_ch(self):
-        """Gets the name_ch of this FactTableAttributeVO.
+        r"""Gets the name_ch of this FactTableAttributeVO.
 
         中文名。
 
@@ -553,7 +553,7 @@ class FactTableAttributeVO:
 
     @name_ch.setter
     def name_ch(self, name_ch):
-        """Sets the name_ch of this FactTableAttributeVO.
+        r"""Sets the name_ch of this FactTableAttributeVO.
 
         中文名。
 
@@ -564,7 +564,7 @@ class FactTableAttributeVO:
 
     @property
     def not_null(self):
-        """Gets the not_null of this FactTableAttributeVO.
+        r"""Gets the not_null of this FactTableAttributeVO.
 
         是否不为空。
 
@@ -575,7 +575,7 @@ class FactTableAttributeVO:
 
     @not_null.setter
     def not_null(self, not_null):
-        """Sets the not_null of this FactTableAttributeVO.
+        r"""Sets the not_null of this FactTableAttributeVO.
 
         是否不为空。
 
@@ -586,7 +586,7 @@ class FactTableAttributeVO:
 
     @property
     def attribute_type(self):
-        """Gets the attribute_type of this FactTableAttributeVO.
+        r"""Gets the attribute_type of this FactTableAttributeVO.
 
         :return: The attribute_type of this FactTableAttributeVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
@@ -595,7 +595,7 @@ class FactTableAttributeVO:
 
     @attribute_type.setter
     def attribute_type(self, attribute_type):
-        """Sets the attribute_type of this FactTableAttributeVO.
+        r"""Sets the attribute_type of this FactTableAttributeVO.
 
         :param attribute_type: The attribute_type of this FactTableAttributeVO.
         :type attribute_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
@@ -604,7 +604,7 @@ class FactTableAttributeVO:
 
     @property
     def stand_row_id(self):
-        """Gets the stand_row_id of this FactTableAttributeVO.
+        r"""Gets the stand_row_id of this FactTableAttributeVO.
 
         关联的数据标准的ID，ID字符串。
 
@@ -615,7 +615,7 @@ class FactTableAttributeVO:
 
     @stand_row_id.setter
     def stand_row_id(self, stand_row_id):
-        """Sets the stand_row_id of this FactTableAttributeVO.
+        r"""Sets the stand_row_id of this FactTableAttributeVO.
 
         关联的数据标准的ID，ID字符串。
 
@@ -626,7 +626,7 @@ class FactTableAttributeVO:
 
     @property
     def stand_row_name(self):
-        """Gets the stand_row_name of this FactTableAttributeVO.
+        r"""Gets the stand_row_name of this FactTableAttributeVO.
 
         关联的数据标准名称，只读。
 
@@ -637,7 +637,7 @@ class FactTableAttributeVO:
 
     @stand_row_name.setter
     def stand_row_name(self, stand_row_name):
-        """Sets the stand_row_name of this FactTableAttributeVO.
+        r"""Sets the stand_row_name of this FactTableAttributeVO.
 
         关联的数据标准名称，只读。
 
@@ -648,7 +648,7 @@ class FactTableAttributeVO:
 
     @property
     def quality_infos(self):
-        """Gets the quality_infos of this FactTableAttributeVO.
+        r"""Gets the quality_infos of this FactTableAttributeVO.
 
         质量信息，只读。
 
@@ -659,7 +659,7 @@ class FactTableAttributeVO:
 
     @quality_infos.setter
     def quality_infos(self, quality_infos):
-        """Sets the quality_infos of this FactTableAttributeVO.
+        r"""Sets the quality_infos of this FactTableAttributeVO.
 
         质量信息，只读。
 
@@ -670,7 +670,7 @@ class FactTableAttributeVO:
 
     @property
     def alias(self):
-        """Gets the alias of this FactTableAttributeVO.
+        r"""Gets the alias of this FactTableAttributeVO.
 
         别名。
 
@@ -681,7 +681,7 @@ class FactTableAttributeVO:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this FactTableAttributeVO.
+        r"""Sets the alias of this FactTableAttributeVO.
 
         别名。
 
@@ -692,7 +692,7 @@ class FactTableAttributeVO:
 
     @property
     def self_defined_fields(self):
-        """Gets the self_defined_fields of this FactTableAttributeVO.
+        r"""Gets the self_defined_fields of this FactTableAttributeVO.
 
         自定义项。
 
@@ -703,7 +703,7 @@ class FactTableAttributeVO:
 
     @self_defined_fields.setter
     def self_defined_fields(self, self_defined_fields):
-        """Sets the self_defined_fields of this FactTableAttributeVO.
+        r"""Sets the self_defined_fields of this FactTableAttributeVO.
 
         自定义项。
 

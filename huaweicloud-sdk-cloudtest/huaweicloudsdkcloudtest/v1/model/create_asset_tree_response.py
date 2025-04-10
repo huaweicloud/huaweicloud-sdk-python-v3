@@ -30,7 +30,7 @@ class CreateAssetTreeResponse(SdkResponse):
     }
 
     def __init__(self, code=None, data=None, message=None):
-        """CreateAssetTreeResponse
+        r"""CreateAssetTreeResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateAssetTreeResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this CreateAssetTreeResponse.
+        r"""Gets the code of this CreateAssetTreeResponse.
 
         :return: The code of this CreateAssetTreeResponse.
         :rtype: str
@@ -67,7 +67,7 @@ class CreateAssetTreeResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this CreateAssetTreeResponse.
+        r"""Sets the code of this CreateAssetTreeResponse.
 
         :param code: The code of this CreateAssetTreeResponse.
         :type code: str
@@ -76,7 +76,7 @@ class CreateAssetTreeResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this CreateAssetTreeResponse.
+        r"""Gets the data of this CreateAssetTreeResponse.
 
         :return: The data of this CreateAssetTreeResponse.
         :rtype: object
@@ -85,7 +85,7 @@ class CreateAssetTreeResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this CreateAssetTreeResponse.
+        r"""Sets the data of this CreateAssetTreeResponse.
 
         :param data: The data of this CreateAssetTreeResponse.
         :type data: object
@@ -94,7 +94,7 @@ class CreateAssetTreeResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this CreateAssetTreeResponse.
+        r"""Gets the message of this CreateAssetTreeResponse.
 
         :return: The message of this CreateAssetTreeResponse.
         :rtype: str
@@ -103,7 +103,7 @@ class CreateAssetTreeResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CreateAssetTreeResponse.
+        r"""Sets the message of this CreateAssetTreeResponse.
 
         :param message: The message of this CreateAssetTreeResponse.
         :type message: str

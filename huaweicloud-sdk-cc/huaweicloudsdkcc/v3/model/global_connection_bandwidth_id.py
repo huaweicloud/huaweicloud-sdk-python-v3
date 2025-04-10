@@ -25,7 +25,7 @@ class GlobalConnectionBandwidthId:
     }
 
     def __init__(self, global_connection_bandwidth_id=None):
-        """GlobalConnectionBandwidthId
+        r"""GlobalConnectionBandwidthId
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class GlobalConnectionBandwidthId:
 
     @property
     def global_connection_bandwidth_id(self):
-        """Gets the global_connection_bandwidth_id of this GlobalConnectionBandwidthId.
+        r"""Gets the global_connection_bandwidth_id of this GlobalConnectionBandwidthId.
 
         全域互联带宽ID。
 
@@ -54,7 +54,7 @@ class GlobalConnectionBandwidthId:
 
     @global_connection_bandwidth_id.setter
     def global_connection_bandwidth_id(self, global_connection_bandwidth_id):
-        """Sets the global_connection_bandwidth_id of this GlobalConnectionBandwidthId.
+        r"""Sets the global_connection_bandwidth_id of this GlobalConnectionBandwidthId.
 
         全域互联带宽ID。
 

@@ -27,7 +27,7 @@ class PackageUsage:
     }
 
     def __init__(self, name=None, used_percent=None):
-        """PackageUsage
+        r"""PackageUsage
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PackageUsage:
 
     @property
     def name(self):
-        """Gets the name of this PackageUsage.
+        r"""Gets the name of this PackageUsage.
 
         套餐类型
 
@@ -61,7 +61,7 @@ class PackageUsage:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PackageUsage.
+        r"""Sets the name of this PackageUsage.
 
         套餐类型
 
@@ -72,7 +72,7 @@ class PackageUsage:
 
     @property
     def used_percent(self):
-        """Gets the used_percent of this PackageUsage.
+        r"""Gets the used_percent of this PackageUsage.
 
         套餐用量
 
@@ -83,7 +83,7 @@ class PackageUsage:
 
     @used_percent.setter
     def used_percent(self, used_percent):
-        """Sets the used_percent of this PackageUsage.
+        r"""Sets the used_percent of this PackageUsage.
 
         套餐用量
 

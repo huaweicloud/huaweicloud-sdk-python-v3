@@ -27,7 +27,7 @@ class AcceptOrRejectEndpointRequest:
     }
 
     def __init__(self, vpc_endpoint_service_id=None, body=None):
-        """AcceptOrRejectEndpointRequest
+        r"""AcceptOrRejectEndpointRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AcceptOrRejectEndpointRequest:
 
     @property
     def vpc_endpoint_service_id(self):
-        """Gets the vpc_endpoint_service_id of this AcceptOrRejectEndpointRequest.
+        r"""Gets the vpc_endpoint_service_id of this AcceptOrRejectEndpointRequest.
 
         终端节点服务的ID。
 
@@ -60,7 +60,7 @@ class AcceptOrRejectEndpointRequest:
 
     @vpc_endpoint_service_id.setter
     def vpc_endpoint_service_id(self, vpc_endpoint_service_id):
-        """Sets the vpc_endpoint_service_id of this AcceptOrRejectEndpointRequest.
+        r"""Sets the vpc_endpoint_service_id of this AcceptOrRejectEndpointRequest.
 
         终端节点服务的ID。
 
@@ -71,7 +71,7 @@ class AcceptOrRejectEndpointRequest:
 
     @property
     def body(self):
-        """Gets the body of this AcceptOrRejectEndpointRequest.
+        r"""Gets the body of this AcceptOrRejectEndpointRequest.
 
         :return: The body of this AcceptOrRejectEndpointRequest.
         :rtype: :class:`huaweicloudsdkvpcep.v1.AcceptOrRejectEndpointRequestBody`
@@ -80,7 +80,7 @@ class AcceptOrRejectEndpointRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AcceptOrRejectEndpointRequest.
+        r"""Sets the body of this AcceptOrRejectEndpointRequest.
 
         :param body: The body of this AcceptOrRejectEndpointRequest.
         :type body: :class:`huaweicloudsdkvpcep.v1.AcceptOrRejectEndpointRequestBody`

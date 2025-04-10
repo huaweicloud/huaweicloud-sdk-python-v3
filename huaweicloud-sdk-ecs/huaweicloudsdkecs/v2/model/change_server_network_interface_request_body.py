@@ -29,7 +29,7 @@ class ChangeServerNetworkInterfaceRequestBody:
     }
 
     def __init__(self, subnet_id=None, ip_address=None, ipv6_address=None):
-        """ChangeServerNetworkInterfaceRequestBody
+        r"""ChangeServerNetworkInterfaceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ChangeServerNetworkInterfaceRequestBody:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ChangeServerNetworkInterfaceRequestBody.
+        r"""Gets the subnet_id of this ChangeServerNetworkInterfaceRequestBody.
 
         子网ID ，UUID格式。更新IP地址时，必须指定该参数；更新IPv6地址时，该参数可以不填。
 
@@ -68,7 +68,7 @@ class ChangeServerNetworkInterfaceRequestBody:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ChangeServerNetworkInterfaceRequestBody.
+        r"""Sets the subnet_id of this ChangeServerNetworkInterfaceRequestBody.
 
         子网ID ，UUID格式。更新IP地址时，必须指定该参数；更新IPv6地址时，该参数可以不填。
 
@@ -79,7 +79,7 @@ class ChangeServerNetworkInterfaceRequestBody:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this ChangeServerNetworkInterfaceRequestBody.
+        r"""Gets the ip_address of this ChangeServerNetworkInterfaceRequestBody.
 
         IPv4地址，为空字符串时表示随机更新网卡IPv4地址。  约束： - 该参数和ipv6_address必须指定一个。 - 该参数和ipv6_address不能同时指定。
 
@@ -90,7 +90,7 @@ class ChangeServerNetworkInterfaceRequestBody:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this ChangeServerNetworkInterfaceRequestBody.
+        r"""Sets the ip_address of this ChangeServerNetworkInterfaceRequestBody.
 
         IPv4地址，为空字符串时表示随机更新网卡IPv4地址。  约束： - 该参数和ipv6_address必须指定一个。 - 该参数和ipv6_address不能同时指定。
 
@@ -101,7 +101,7 @@ class ChangeServerNetworkInterfaceRequestBody:
 
     @property
     def ipv6_address(self):
-        """Gets the ipv6_address of this ChangeServerNetworkInterfaceRequestBody.
+        r"""Gets the ipv6_address of this ChangeServerNetworkInterfaceRequestBody.
 
         IPv6地址，为空字符串时表示随机更新网卡IPv6地址。  约束： - 该参数和ip_address必须指定一个。 - 该参数和ip_address不能同时指定。
 
@@ -112,7 +112,7 @@ class ChangeServerNetworkInterfaceRequestBody:
 
     @ipv6_address.setter
     def ipv6_address(self, ipv6_address):
-        """Sets the ipv6_address of this ChangeServerNetworkInterfaceRequestBody.
+        r"""Sets the ipv6_address of this ChangeServerNetworkInterfaceRequestBody.
 
         IPv6地址，为空字符串时表示随机更新网卡IPv6地址。  约束： - 该参数和ip_address必须指定一个。 - 该参数和ip_address不能同时指定。
 

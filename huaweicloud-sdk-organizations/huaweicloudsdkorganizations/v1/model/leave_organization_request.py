@@ -26,7 +26,7 @@ class LeaveOrganizationRequest:
     }
 
     def __init__(self, x_security_token=None):
-        """LeaveOrganizationRequest
+        r"""LeaveOrganizationRequest
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class LeaveOrganizationRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this LeaveOrganizationRequest.
+        r"""Gets the x_security_token of this LeaveOrganizationRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -55,7 +55,7 @@ class LeaveOrganizationRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this LeaveOrganizationRequest.
+        r"""Sets the x_security_token of this LeaveOrganizationRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 

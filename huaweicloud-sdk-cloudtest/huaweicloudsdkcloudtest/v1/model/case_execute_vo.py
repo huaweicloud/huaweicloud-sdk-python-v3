@@ -29,7 +29,7 @@ class CaseExecuteVo:
     }
 
     def __init__(self, execute_rate=None, executed_number=None, not_executed_number=None):
-        """CaseExecuteVo
+        r"""CaseExecuteVo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CaseExecuteVo:
 
     @property
     def execute_rate(self):
-        """Gets the execute_rate of this CaseExecuteVo.
+        r"""Gets the execute_rate of this CaseExecuteVo.
 
         需求关联用例执行率
 
@@ -68,7 +68,7 @@ class CaseExecuteVo:
 
     @execute_rate.setter
     def execute_rate(self, execute_rate):
-        """Sets the execute_rate of this CaseExecuteVo.
+        r"""Sets the execute_rate of this CaseExecuteVo.
 
         需求关联用例执行率
 
@@ -79,7 +79,7 @@ class CaseExecuteVo:
 
     @property
     def executed_number(self):
-        """Gets the executed_number of this CaseExecuteVo.
+        r"""Gets the executed_number of this CaseExecuteVo.
 
         需求关联已执行用例总数
 
@@ -90,7 +90,7 @@ class CaseExecuteVo:
 
     @executed_number.setter
     def executed_number(self, executed_number):
-        """Sets the executed_number of this CaseExecuteVo.
+        r"""Sets the executed_number of this CaseExecuteVo.
 
         需求关联已执行用例总数
 
@@ -101,7 +101,7 @@ class CaseExecuteVo:
 
     @property
     def not_executed_number(self):
-        """Gets the not_executed_number of this CaseExecuteVo.
+        r"""Gets the not_executed_number of this CaseExecuteVo.
 
         需求关联未执行用例总数
 
@@ -112,7 +112,7 @@ class CaseExecuteVo:
 
     @not_executed_number.setter
     def not_executed_number(self, not_executed_number):
-        """Sets the not_executed_number of this CaseExecuteVo.
+        r"""Sets the not_executed_number of this CaseExecuteVo.
 
         需求关联未执行用例总数
 

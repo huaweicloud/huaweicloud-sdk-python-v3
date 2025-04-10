@@ -27,7 +27,7 @@ class ChangeInstanceChargeModeRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """ChangeInstanceChargeModeRequest
+        r"""ChangeInstanceChargeModeRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ChangeInstanceChargeModeRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ChangeInstanceChargeModeRequest.
+        r"""Gets the instance_id of this ChangeInstanceChargeModeRequest.
 
         **参数说明**：实例ID。 **取值范围**：长度不超过36，由小写字母[a-f]、数字、连接符（-）的组成。 
 
@@ -60,7 +60,7 @@ class ChangeInstanceChargeModeRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ChangeInstanceChargeModeRequest.
+        r"""Sets the instance_id of this ChangeInstanceChargeModeRequest.
 
         **参数说明**：实例ID。 **取值范围**：长度不超过36，由小写字母[a-f]、数字、连接符（-）的组成。 
 
@@ -71,7 +71,7 @@ class ChangeInstanceChargeModeRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeInstanceChargeModeRequest.
+        r"""Gets the body of this ChangeInstanceChargeModeRequest.
 
         :return: The body of this ChangeInstanceChargeModeRequest.
         :rtype: :class:`huaweicloudsdkiotdm.v5.ChangeInstanceChargeMode`
@@ -80,7 +80,7 @@ class ChangeInstanceChargeModeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeInstanceChargeModeRequest.
+        r"""Sets the body of this ChangeInstanceChargeModeRequest.
 
         :param body: The body of this ChangeInstanceChargeModeRequest.
         :type body: :class:`huaweicloudsdkiotdm.v5.ChangeInstanceChargeMode`

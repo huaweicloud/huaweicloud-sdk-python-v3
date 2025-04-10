@@ -25,7 +25,7 @@ class ListGrantsRequest:
     }
 
     def __init__(self, resource_id=None):
-        """ListGrantsRequest
+        r"""ListGrantsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListGrantsRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ListGrantsRequest.
+        r"""Gets the resource_id of this ListGrantsRequest.
 
         资源ID
 
@@ -53,7 +53,7 @@ class ListGrantsRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ListGrantsRequest.
+        r"""Sets the resource_id of this ListGrantsRequest.
 
         资源ID
 

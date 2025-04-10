@@ -28,7 +28,7 @@ class ListRsuModelsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, rsu_models=None):
-        """ListRsuModelsResponse
+        r"""ListRsuModelsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListRsuModelsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListRsuModelsResponse.
+        r"""Gets the count of this ListRsuModelsResponse.
 
         **参数说明**：满足查询条件的记录总数。
 
@@ -62,7 +62,7 @@ class ListRsuModelsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListRsuModelsResponse.
+        r"""Sets the count of this ListRsuModelsResponse.
 
         **参数说明**：满足查询条件的记录总数。
 
@@ -73,7 +73,7 @@ class ListRsuModelsResponse(SdkResponse):
 
     @property
     def rsu_models(self):
-        """Gets the rsu_models of this ListRsuModelsResponse.
+        r"""Gets the rsu_models of this ListRsuModelsResponse.
 
         **参数说明**：RSU型号信息列表。
 
@@ -84,7 +84,7 @@ class ListRsuModelsResponse(SdkResponse):
 
     @rsu_models.setter
     def rsu_models(self, rsu_models):
-        """Sets the rsu_models of this ListRsuModelsResponse.
+        r"""Sets the rsu_models of this ListRsuModelsResponse.
 
         **参数说明**：RSU型号信息列表。
 

@@ -45,7 +45,7 @@ class ListApplicationsV6Request:
     }
 
     def __init__(self, x_language=None, attention=None, region_id=None, keyword=None, project_id=None, topic_id=None, is_created_by_self=None, sort_key=None, sort_dir=None, limit=None, offset=None):
-        """ListApplicationsV6Request
+        r"""ListApplicationsV6Request
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ListApplicationsV6Request:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListApplicationsV6Request.
+        r"""Gets the x_language of this ListApplicationsV6Request.
 
         语言类型 中文:zh-cn 英文:en-us
 
@@ -124,7 +124,7 @@ class ListApplicationsV6Request:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListApplicationsV6Request.
+        r"""Sets the x_language of this ListApplicationsV6Request.
 
         语言类型 中文:zh-cn 英文:en-us
 
@@ -135,7 +135,7 @@ class ListApplicationsV6Request:
 
     @property
     def attention(self):
-        """Gets the attention of this ListApplicationsV6Request.
+        r"""Gets the attention of this ListApplicationsV6Request.
 
         是否查询我关注的应用
 
@@ -146,7 +146,7 @@ class ListApplicationsV6Request:
 
     @attention.setter
     def attention(self, attention):
-        """Sets the attention of this ListApplicationsV6Request.
+        r"""Sets the attention of this ListApplicationsV6Request.
 
         是否查询我关注的应用
 
@@ -157,7 +157,7 @@ class ListApplicationsV6Request:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ListApplicationsV6Request.
+        r"""Gets the region_id of this ListApplicationsV6Request.
 
         区域id，从控制台获取方法请参见: [获取区域ID](https://console.huaweicloud.com/iam/?region=cn-north-1&locale=zh-cn#/iam/projects)
 
@@ -168,7 +168,7 @@ class ListApplicationsV6Request:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ListApplicationsV6Request.
+        r"""Sets the region_id of this ListApplicationsV6Request.
 
         区域id，从控制台获取方法请参见: [获取区域ID](https://console.huaweicloud.com/iam/?region=cn-north-1&locale=zh-cn#/iam/projects)
 
@@ -179,7 +179,7 @@ class ListApplicationsV6Request:
 
     @property
     def keyword(self):
-        """Gets the keyword of this ListApplicationsV6Request.
+        r"""Gets the keyword of this ListApplicationsV6Request.
 
         搜索关键字,支持按名称和描述搜索，默认null
 
@@ -190,7 +190,7 @@ class ListApplicationsV6Request:
 
     @keyword.setter
     def keyword(self, keyword):
-        """Sets the keyword of this ListApplicationsV6Request.
+        r"""Sets the keyword of this ListApplicationsV6Request.
 
         搜索关键字,支持按名称和描述搜索，默认null
 
@@ -201,7 +201,7 @@ class ListApplicationsV6Request:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListApplicationsV6Request.
+        r"""Gets the project_id of this ListApplicationsV6Request.
 
         所属DevCloud项目id，从 [项目列表接口](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=DevStar&api=ListProjectsV4) 查询。
 
@@ -212,7 +212,7 @@ class ListApplicationsV6Request:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListApplicationsV6Request.
+        r"""Sets the project_id of this ListApplicationsV6Request.
 
         所属DevCloud项目id，从 [项目列表接口](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=DevStar&api=ListProjectsV4) 查询。
 
@@ -223,7 +223,7 @@ class ListApplicationsV6Request:
 
     @property
     def topic_id(self):
-        """Gets the topic_id of this ListApplicationsV6Request.
+        r"""Gets the topic_id of this ListApplicationsV6Request.
 
         主题id,场景或者部署方式分类id
 
@@ -234,7 +234,7 @@ class ListApplicationsV6Request:
 
     @topic_id.setter
     def topic_id(self, topic_id):
-        """Sets the topic_id of this ListApplicationsV6Request.
+        r"""Sets the topic_id of this ListApplicationsV6Request.
 
         主题id,场景或者部署方式分类id
 
@@ -245,7 +245,7 @@ class ListApplicationsV6Request:
 
     @property
     def is_created_by_self(self):
-        """Gets the is_created_by_self of this ListApplicationsV6Request.
+        r"""Gets the is_created_by_self of this ListApplicationsV6Request.
 
         是否查询由我创建
 
@@ -256,7 +256,7 @@ class ListApplicationsV6Request:
 
     @is_created_by_self.setter
     def is_created_by_self(self, is_created_by_self):
-        """Sets the is_created_by_self of this ListApplicationsV6Request.
+        r"""Sets the is_created_by_self of this ListApplicationsV6Request.
 
         是否查询由我创建
 
@@ -267,7 +267,7 @@ class ListApplicationsV6Request:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListApplicationsV6Request.
+        r"""Gets the sort_key of this ListApplicationsV6Request.
 
         排序字段, name：应用名称,created_at:创建时间,updated_at:更新时间
 
@@ -278,7 +278,7 @@ class ListApplicationsV6Request:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListApplicationsV6Request.
+        r"""Sets the sort_key of this ListApplicationsV6Request.
 
         排序字段, name：应用名称,created_at:创建时间,updated_at:更新时间
 
@@ -289,7 +289,7 @@ class ListApplicationsV6Request:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListApplicationsV6Request.
+        r"""Gets the sort_dir of this ListApplicationsV6Request.
 
         排序方式, desc:降序, asc:升序
 
@@ -300,7 +300,7 @@ class ListApplicationsV6Request:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListApplicationsV6Request.
+        r"""Sets the sort_dir of this ListApplicationsV6Request.
 
         排序方式, desc:降序, asc:升序
 
@@ -311,7 +311,7 @@ class ListApplicationsV6Request:
 
     @property
     def limit(self):
-        """Gets the limit of this ListApplicationsV6Request.
+        r"""Gets the limit of this ListApplicationsV6Request.
 
         每页显示的条目数量,默认10
 
@@ -322,7 +322,7 @@ class ListApplicationsV6Request:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListApplicationsV6Request.
+        r"""Sets the limit of this ListApplicationsV6Request.
 
         每页显示的条目数量,默认10
 
@@ -333,7 +333,7 @@ class ListApplicationsV6Request:
 
     @property
     def offset(self):
-        """Gets the offset of this ListApplicationsV6Request.
+        r"""Gets the offset of this ListApplicationsV6Request.
 
         偏移量，表示从此偏移量开始查询,默认0
 
@@ -344,7 +344,7 @@ class ListApplicationsV6Request:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListApplicationsV6Request.
+        r"""Sets the offset of this ListApplicationsV6Request.
 
         偏移量，表示从此偏移量开始查询,默认0
 

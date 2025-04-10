@@ -27,7 +27,7 @@ class BehaviorRestBody:
     }
 
     def __init__(self, event=None, params=None):
-        """BehaviorRestBody
+        r"""BehaviorRestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BehaviorRestBody:
 
     @property
     def event(self):
-        """Gets the event of this BehaviorRestBody.
+        r"""Gets the event of this BehaviorRestBody.
 
         :return: The event of this BehaviorRestBody.
         :rtype: str
@@ -57,7 +57,7 @@ class BehaviorRestBody:
 
     @event.setter
     def event(self, event):
-        """Sets the event of this BehaviorRestBody.
+        r"""Sets the event of this BehaviorRestBody.
 
         :param event: The event of this BehaviorRestBody.
         :type event: str
@@ -66,7 +66,7 @@ class BehaviorRestBody:
 
     @property
     def params(self):
-        """Gets the params of this BehaviorRestBody.
+        r"""Gets the params of this BehaviorRestBody.
 
         :return: The params of this BehaviorRestBody.
         :rtype: list[:class:`huaweicloudsdkdataartsstudio.v1.EventParam`]
@@ -75,7 +75,7 @@ class BehaviorRestBody:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this BehaviorRestBody.
+        r"""Sets the params of this BehaviorRestBody.
 
         :param params: The params of this BehaviorRestBody.
         :type params: list[:class:`huaweicloudsdkdataartsstudio.v1.EventParam`]

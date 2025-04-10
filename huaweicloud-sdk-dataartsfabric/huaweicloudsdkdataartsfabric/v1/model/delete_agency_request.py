@@ -25,7 +25,7 @@ class DeleteAgencyRequest:
     }
 
     def __init__(self, policy_type=None):
-        """DeleteAgencyRequest
+        r"""DeleteAgencyRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteAgencyRequest:
 
     @property
     def policy_type(self):
-        """Gets the policy_type of this DeleteAgencyRequest.
+        r"""Gets the policy_type of this DeleteAgencyRequest.
 
         权限策略类型。FABRIC_COMMON_POLICY：基础通用服务相关的权限策略；FABRIC_SMN_POLICY：消息通知功能相关的权限策略；FABRIC_LAKEFORMATION_POLICY：LakeFormation功能相关的权限策略；FABRIC_AOM_POLICY：AOM功能相关的权限策略。
 
@@ -54,7 +54,7 @@ class DeleteAgencyRequest:
 
     @policy_type.setter
     def policy_type(self, policy_type):
-        """Sets the policy_type of this DeleteAgencyRequest.
+        r"""Sets the policy_type of this DeleteAgencyRequest.
 
         权限策略类型。FABRIC_COMMON_POLICY：基础通用服务相关的权限策略；FABRIC_SMN_POLICY：消息通知功能相关的权限策略；FABRIC_LAKEFORMATION_POLICY：LakeFormation功能相关的权限策略；FABRIC_AOM_POLICY：AOM功能相关的权限策略。
 

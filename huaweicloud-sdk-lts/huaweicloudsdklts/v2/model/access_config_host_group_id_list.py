@@ -25,7 +25,7 @@ class AccessConfigHostGroupIdList:
     }
 
     def __init__(self, host_group_id_list=None):
-        """AccessConfigHostGroupIdList
+        r"""AccessConfigHostGroupIdList
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AccessConfigHostGroupIdList:
 
     @property
     def host_group_id_list(self):
-        """Gets the host_group_id_list of this AccessConfigHostGroupIdList.
+        r"""Gets the host_group_id_list of this AccessConfigHostGroupIdList.
 
         主机组ID列表
 
@@ -53,7 +53,7 @@ class AccessConfigHostGroupIdList:
 
     @host_group_id_list.setter
     def host_group_id_list(self, host_group_id_list):
-        """Sets the host_group_id_list of this AccessConfigHostGroupIdList.
+        r"""Sets the host_group_id_list of this AccessConfigHostGroupIdList.
 
         主机组ID列表
 

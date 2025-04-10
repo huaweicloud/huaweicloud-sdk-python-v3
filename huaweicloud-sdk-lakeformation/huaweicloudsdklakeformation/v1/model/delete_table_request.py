@@ -33,7 +33,7 @@ class DeleteTableRequest:
     }
 
     def __init__(self, instance_id=None, catalog_name=None, database_name=None, table_name=None, delete_data=None):
-        """DeleteTableRequest
+        r"""DeleteTableRequest
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class DeleteTableRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteTableRequest.
+        r"""Gets the instance_id of this DeleteTableRequest.
 
         实例ID
 
@@ -78,7 +78,7 @@ class DeleteTableRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteTableRequest.
+        r"""Sets the instance_id of this DeleteTableRequest.
 
         实例ID
 
@@ -89,7 +89,7 @@ class DeleteTableRequest:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this DeleteTableRequest.
+        r"""Gets the catalog_name of this DeleteTableRequest.
 
         catalog名字
 
@@ -100,7 +100,7 @@ class DeleteTableRequest:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this DeleteTableRequest.
+        r"""Sets the catalog_name of this DeleteTableRequest.
 
         catalog名字
 
@@ -111,7 +111,7 @@ class DeleteTableRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this DeleteTableRequest.
+        r"""Gets the database_name of this DeleteTableRequest.
 
         数据库名字
 
@@ -122,7 +122,7 @@ class DeleteTableRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this DeleteTableRequest.
+        r"""Sets the database_name of this DeleteTableRequest.
 
         数据库名字
 
@@ -133,7 +133,7 @@ class DeleteTableRequest:
 
     @property
     def table_name(self):
-        """Gets the table_name of this DeleteTableRequest.
+        r"""Gets the table_name of this DeleteTableRequest.
 
         表名称
 
@@ -144,7 +144,7 @@ class DeleteTableRequest:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this DeleteTableRequest.
+        r"""Sets the table_name of this DeleteTableRequest.
 
         表名称
 
@@ -155,7 +155,7 @@ class DeleteTableRequest:
 
     @property
     def delete_data(self):
-        """Gets the delete_data of this DeleteTableRequest.
+        r"""Gets the delete_data of this DeleteTableRequest.
 
         是否删除表中的数据
 
@@ -166,7 +166,7 @@ class DeleteTableRequest:
 
     @delete_data.setter
     def delete_data(self, delete_data):
-        """Sets the delete_data of this DeleteTableRequest.
+        r"""Sets the delete_data of this DeleteTableRequest.
 
         是否删除表中的数据
 

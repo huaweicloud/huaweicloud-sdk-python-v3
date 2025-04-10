@@ -39,7 +39,7 @@ class UpdateSubnetOption:
     }
 
     def __init__(self, name=None, description=None, ipv6_enable=None, dhcp_enable=None, primary_dns=None, secondary_dns=None, dns_list=None, extra_dhcp_opts=None):
-        """UpdateSubnetOption
+        r"""UpdateSubnetOption
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class UpdateSubnetOption:
 
     @property
     def name(self):
-        """Gets the name of this UpdateSubnetOption.
+        r"""Gets the name of this UpdateSubnetOption.
 
         功能说明：子网名称 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -102,7 +102,7 @@ class UpdateSubnetOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateSubnetOption.
+        r"""Sets the name of this UpdateSubnetOption.
 
         功能说明：子网名称 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -113,7 +113,7 @@ class UpdateSubnetOption:
 
     @property
     def description(self):
-        """Gets the description of this UpdateSubnetOption.
+        r"""Gets the description of this UpdateSubnetOption.
 
         功能说明：子网描述 取值范围：0-255个字符，不能包含“<”和“>”。
 
@@ -124,7 +124,7 @@ class UpdateSubnetOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateSubnetOption.
+        r"""Sets the description of this UpdateSubnetOption.
 
         功能说明：子网描述 取值范围：0-255个字符，不能包含“<”和“>”。
 
@@ -135,7 +135,7 @@ class UpdateSubnetOption:
 
     @property
     def ipv6_enable(self):
-        """Gets the ipv6_enable of this UpdateSubnetOption.
+        r"""Gets the ipv6_enable of this UpdateSubnetOption.
 
         功能说明：是否创建ipv6子网 取值范围：true（开启），false（关闭）
 
@@ -146,7 +146,7 @@ class UpdateSubnetOption:
 
     @ipv6_enable.setter
     def ipv6_enable(self, ipv6_enable):
-        """Sets the ipv6_enable of this UpdateSubnetOption.
+        r"""Sets the ipv6_enable of this UpdateSubnetOption.
 
         功能说明：是否创建ipv6子网 取值范围：true（开启），false（关闭）
 
@@ -157,7 +157,7 @@ class UpdateSubnetOption:
 
     @property
     def dhcp_enable(self):
-        """Gets the dhcp_enable of this UpdateSubnetOption.
+        r"""Gets the dhcp_enable of this UpdateSubnetOption.
 
         功能说明：子网是否开启dhcp功能 取值范围：true（开启），false（关闭） 约束：不填时默认为true。当设置为false时，会导致新创建的ECS无法获取IP地址，cloudinit无法注入账号密码，请谨慎操作。
 
@@ -168,7 +168,7 @@ class UpdateSubnetOption:
 
     @dhcp_enable.setter
     def dhcp_enable(self, dhcp_enable):
-        """Sets the dhcp_enable of this UpdateSubnetOption.
+        r"""Sets the dhcp_enable of this UpdateSubnetOption.
 
         功能说明：子网是否开启dhcp功能 取值范围：true（开启），false（关闭） 约束：不填时默认为true。当设置为false时，会导致新创建的ECS无法获取IP地址，cloudinit无法注入账号密码，请谨慎操作。
 
@@ -179,7 +179,7 @@ class UpdateSubnetOption:
 
     @property
     def primary_dns(self):
-        """Gets the primary_dns of this UpdateSubnetOption.
+        r"""Gets the primary_dns of this UpdateSubnetOption.
 
         功能说明：子网dns服务器地址1 约束：ip格式 默认值：不填时为空 [内网DNS地址请参见](https://support.huaweicloud.com/dns_faq/dns_faq_002.html) [通过API获取请参见](https://support.huaweicloud.com/api-dns/dns_api_69001.html)
 
@@ -190,7 +190,7 @@ class UpdateSubnetOption:
 
     @primary_dns.setter
     def primary_dns(self, primary_dns):
-        """Sets the primary_dns of this UpdateSubnetOption.
+        r"""Sets the primary_dns of this UpdateSubnetOption.
 
         功能说明：子网dns服务器地址1 约束：ip格式 默认值：不填时为空 [内网DNS地址请参见](https://support.huaweicloud.com/dns_faq/dns_faq_002.html) [通过API获取请参见](https://support.huaweicloud.com/api-dns/dns_api_69001.html)
 
@@ -201,7 +201,7 @@ class UpdateSubnetOption:
 
     @property
     def secondary_dns(self):
-        """Gets the secondary_dns of this UpdateSubnetOption.
+        r"""Gets the secondary_dns of this UpdateSubnetOption.
 
         功能说明：子网dns服务器地址2 约束：ip格式 默认值：不填时为空 [内网DNS地址请参见](https://support.huaweicloud.com/dns_faq/dns_faq_002.html) [通过API获取请参见](https://support.huaweicloud.com/api-dns/dns_api_69001.html)
 
@@ -212,7 +212,7 @@ class UpdateSubnetOption:
 
     @secondary_dns.setter
     def secondary_dns(self, secondary_dns):
-        """Sets the secondary_dns of this UpdateSubnetOption.
+        r"""Sets the secondary_dns of this UpdateSubnetOption.
 
         功能说明：子网dns服务器地址2 约束：ip格式 默认值：不填时为空 [内网DNS地址请参见](https://support.huaweicloud.com/dns_faq/dns_faq_002.html) [通过API获取请参见](https://support.huaweicloud.com/api-dns/dns_api_69001.html)
 
@@ -223,7 +223,7 @@ class UpdateSubnetOption:
 
     @property
     def dns_list(self):
-        """Gets the dns_list of this UpdateSubnetOption.
+        r"""Gets the dns_list of this UpdateSubnetOption.
 
         功能说明：子网dns服务器地址的集合；如果想使用两个以上dns服务器，请使用该字段。 约束：是子网dns服务器地址1跟子网dns服务器地址2的合集的父集 默认值：不填时为空，无法使用云内网DNS功能 [内网DNS地址请参见](https://support.huaweicloud.com/dns_faq/dns_faq_002.html) [通过API获取请参见](https://support.huaweicloud.com/api-dns/dns_api_69001.html)
 
@@ -234,7 +234,7 @@ class UpdateSubnetOption:
 
     @dns_list.setter
     def dns_list(self, dns_list):
-        """Sets the dns_list of this UpdateSubnetOption.
+        r"""Sets the dns_list of this UpdateSubnetOption.
 
         功能说明：子网dns服务器地址的集合；如果想使用两个以上dns服务器，请使用该字段。 约束：是子网dns服务器地址1跟子网dns服务器地址2的合集的父集 默认值：不填时为空，无法使用云内网DNS功能 [内网DNS地址请参见](https://support.huaweicloud.com/dns_faq/dns_faq_002.html) [通过API获取请参见](https://support.huaweicloud.com/api-dns/dns_api_69001.html)
 
@@ -245,7 +245,7 @@ class UpdateSubnetOption:
 
     @property
     def extra_dhcp_opts(self):
-        """Gets the extra_dhcp_opts of this UpdateSubnetOption.
+        r"""Gets the extra_dhcp_opts of this UpdateSubnetOption.
 
         子网配置的NTP地址或租约时间
 
@@ -256,7 +256,7 @@ class UpdateSubnetOption:
 
     @extra_dhcp_opts.setter
     def extra_dhcp_opts(self, extra_dhcp_opts):
-        """Sets the extra_dhcp_opts of this UpdateSubnetOption.
+        r"""Sets the extra_dhcp_opts of this UpdateSubnetOption.
 
         子网配置的NTP地址或租约时间
 

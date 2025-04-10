@@ -37,7 +37,7 @@ class AggregateMetricsRequest:
     }
 
     def __init__(self, time_span=None, interval=None, offset=None, tags=None, property_filter=None, metrics=None, limit=None):
-        """AggregateMetricsRequest
+        r"""AggregateMetricsRequest
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class AggregateMetricsRequest:
 
     @property
     def time_span(self):
-        """Gets the time_span of this AggregateMetricsRequest.
+        r"""Gets the time_span of this AggregateMetricsRequest.
 
         :return: The time_span of this AggregateMetricsRequest.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.TimeSpanDT`
@@ -92,7 +92,7 @@ class AggregateMetricsRequest:
 
     @time_span.setter
     def time_span(self, time_span):
-        """Sets the time_span of this AggregateMetricsRequest.
+        r"""Sets the time_span of this AggregateMetricsRequest.
 
         :param time_span: The time_span of this AggregateMetricsRequest.
         :type time_span: :class:`huaweicloudsdkiotanalytics.v1.TimeSpanDT`
@@ -101,7 +101,7 @@ class AggregateMetricsRequest:
 
     @property
     def interval(self):
-        """Gets the interval of this AggregateMetricsRequest.
+        r"""Gets the interval of this AggregateMetricsRequest.
 
         聚合时间间隔，正则：\"^[1-9][0-9]*[dhms]$\"，示例：\"1d|1h|10m|10s\"
 
@@ -112,7 +112,7 @@ class AggregateMetricsRequest:
 
     @interval.setter
     def interval(self, interval):
-        """Sets the interval of this AggregateMetricsRequest.
+        r"""Sets the interval of this AggregateMetricsRequest.
 
         聚合时间间隔，正则：\"^[1-9][0-9]*[dhms]$\"，示例：\"1d|1h|10m|10s\"
 
@@ -123,7 +123,7 @@ class AggregateMetricsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this AggregateMetricsRequest.
+        r"""Gets the offset of this AggregateMetricsRequest.
 
         聚合时间偏移量，需要小于interval，正则： \"^[1-9][0-9]*[hms]$\"，示例： \"1h|10m|10s\"
 
@@ -134,7 +134,7 @@ class AggregateMetricsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this AggregateMetricsRequest.
+        r"""Sets the offset of this AggregateMetricsRequest.
 
         聚合时间偏移量，需要小于interval，正则： \"^[1-9][0-9]*[hms]$\"，示例： \"1h|10m|10s\"
 
@@ -145,7 +145,7 @@ class AggregateMetricsRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this AggregateMetricsRequest.
+        r"""Gets the tags of this AggregateMetricsRequest.
 
         对property按指定tags标签进行过滤查询，填入资产标签属性的属性名与属性值，不可为空，例如 {\"tagPropertyA\": \"id0001\"}；注意，标签过滤只对打上标签时刻之后的数据生效，打标签之前的数据不能通过标签过滤
 
@@ -156,7 +156,7 @@ class AggregateMetricsRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this AggregateMetricsRequest.
+        r"""Sets the tags of this AggregateMetricsRequest.
 
         对property按指定tags标签进行过滤查询，填入资产标签属性的属性名与属性值，不可为空，例如 {\"tagPropertyA\": \"id0001\"}；注意，标签过滤只对打上标签时刻之后的数据生效，打标签之前的数据不能通过标签过滤
 
@@ -167,7 +167,7 @@ class AggregateMetricsRequest:
 
     @property
     def property_filter(self):
-        """Gets the property_filter of this AggregateMetricsRequest.
+        r"""Gets the property_filter of this AggregateMetricsRequest.
 
         属性过滤器，最多5个
 
@@ -178,7 +178,7 @@ class AggregateMetricsRequest:
 
     @property_filter.setter
     def property_filter(self, property_filter):
-        """Sets the property_filter of this AggregateMetricsRequest.
+        r"""Sets the property_filter of this AggregateMetricsRequest.
 
         属性过滤器，最多5个
 
@@ -189,7 +189,7 @@ class AggregateMetricsRequest:
 
     @property
     def metrics(self):
-        """Gets the metrics of this AggregateMetricsRequest.
+        r"""Gets the metrics of this AggregateMetricsRequest.
 
         聚合查询指标列表，对资产属性进行聚合查询得到指标
 
@@ -200,7 +200,7 @@ class AggregateMetricsRequest:
 
     @metrics.setter
     def metrics(self, metrics):
-        """Sets the metrics of this AggregateMetricsRequest.
+        r"""Sets the metrics of this AggregateMetricsRequest.
 
         聚合查询指标列表，对资产属性进行聚合查询得到指标
 
@@ -211,7 +211,7 @@ class AggregateMetricsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this AggregateMetricsRequest.
+        r"""Gets the limit of this AggregateMetricsRequest.
 
         返回值个数限制，最多2000个
 
@@ -222,7 +222,7 @@ class AggregateMetricsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this AggregateMetricsRequest.
+        r"""Sets the limit of this AggregateMetricsRequest.
 
         返回值个数限制，最多2000个
 

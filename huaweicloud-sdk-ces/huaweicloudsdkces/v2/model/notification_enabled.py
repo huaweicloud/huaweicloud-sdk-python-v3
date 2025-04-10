@@ -23,7 +23,7 @@ class NotificationEnabled:
     }
 
     def __init__(self):
-        """NotificationEnabled
+        r"""NotificationEnabled
 
         The model defined in huaweicloud sdk
 

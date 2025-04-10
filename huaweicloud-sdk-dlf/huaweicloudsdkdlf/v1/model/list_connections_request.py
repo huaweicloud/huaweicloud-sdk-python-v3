@@ -25,7 +25,7 @@ class ListConnectionsRequest:
     }
 
     def __init__(self, workspace=None):
-        """ListConnectionsRequest
+        r"""ListConnectionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListConnectionsRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListConnectionsRequest.
+        r"""Gets the workspace of this ListConnectionsRequest.
 
         工作空间id
 
@@ -54,7 +54,7 @@ class ListConnectionsRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListConnectionsRequest.
+        r"""Sets the workspace of this ListConnectionsRequest.
 
         工作空间id
 

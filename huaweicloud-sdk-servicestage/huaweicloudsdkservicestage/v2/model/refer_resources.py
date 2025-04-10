@@ -31,7 +31,7 @@ class ReferResources:
     }
 
     def __init__(self, id=None, type=None, refer_alias=None, parameters=None):
-        """ReferResources
+        r"""ReferResources
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ReferResources:
 
     @property
     def id(self):
-        """Gets the id of this ReferResources.
+        r"""Gets the id of this ReferResources.
 
         资源ID。
 
@@ -75,7 +75,7 @@ class ReferResources:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ReferResources.
+        r"""Sets the id of this ReferResources.
 
         资源ID。
 
@@ -86,7 +86,7 @@ class ReferResources:
 
     @property
     def type(self):
-        """Gets the type of this ReferResources.
+        r"""Gets the type of this ReferResources.
 
         :return: The type of this ReferResources.
         :rtype: :class:`huaweicloudsdkservicestage.v2.ResourceType`
@@ -95,7 +95,7 @@ class ReferResources:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ReferResources.
+        r"""Sets the type of this ReferResources.
 
         :param type: The type of this ReferResources.
         :type type: :class:`huaweicloudsdkservicestage.v2.ResourceType`
@@ -104,7 +104,7 @@ class ReferResources:
 
     @property
     def refer_alias(self):
-        """Gets the refer_alias of this ReferResources.
+        r"""Gets the refer_alias of this ReferResources.
 
         应用别名，dcs时才提供，支持“distributed_session”、“distributed_cache”、“distributed_session, distributed_cache”，  默认值是“distributed_session, distributed_cache”。 
 
@@ -115,7 +115,7 @@ class ReferResources:
 
     @refer_alias.setter
     def refer_alias(self, refer_alias):
-        """Sets the refer_alias of this ReferResources.
+        r"""Sets the refer_alias of this ReferResources.
 
         应用别名，dcs时才提供，支持“distributed_session”、“distributed_cache”、“distributed_session, distributed_cache”，  默认值是“distributed_session, distributed_cache”。 
 
@@ -126,7 +126,7 @@ class ReferResources:
 
     @property
     def parameters(self):
-        """Gets the parameters of this ReferResources.
+        r"""Gets the parameters of this ReferResources.
 
         引用资源参数。
 
@@ -137,7 +137,7 @@ class ReferResources:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this ReferResources.
+        r"""Sets the parameters of this ReferResources.
 
         引用资源参数。
 

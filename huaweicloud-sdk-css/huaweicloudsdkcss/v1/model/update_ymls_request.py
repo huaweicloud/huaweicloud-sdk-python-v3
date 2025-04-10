@@ -27,7 +27,7 @@ class UpdateYmlsRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """UpdateYmlsRequest
+        r"""UpdateYmlsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateYmlsRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdateYmlsRequest.
+        r"""Gets the cluster_id of this UpdateYmlsRequest.
 
         指定修改参数配置的集群ID。
 
@@ -60,7 +60,7 @@ class UpdateYmlsRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdateYmlsRequest.
+        r"""Sets the cluster_id of this UpdateYmlsRequest.
 
         指定修改参数配置的集群ID。
 
@@ -71,7 +71,7 @@ class UpdateYmlsRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateYmlsRequest.
+        r"""Gets the body of this UpdateYmlsRequest.
 
         :return: The body of this UpdateYmlsRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateYmlsReq`
@@ -80,7 +80,7 @@ class UpdateYmlsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateYmlsRequest.
+        r"""Sets the body of this UpdateYmlsRequest.
 
         :param body: The body of this UpdateYmlsRequest.
         :type body: :class:`huaweicloudsdkcss.v1.UpdateYmlsReq`

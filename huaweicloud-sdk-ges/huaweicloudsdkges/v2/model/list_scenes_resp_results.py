@@ -31,7 +31,7 @@ class ListScenesRespResults:
     }
 
     def __init__(self, scene=None, name=None, params=None, description=None):
-        """ListScenesRespResults
+        r"""ListScenesRespResults
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListScenesRespResults:
 
     @property
     def scene(self):
-        """Gets the scene of this ListScenesRespResults.
+        r"""Gets the scene of this ListScenesRespResults.
 
         场景名。
 
@@ -75,7 +75,7 @@ class ListScenesRespResults:
 
     @scene.setter
     def scene(self, scene):
-        """Sets the scene of this ListScenesRespResults.
+        r"""Sets the scene of this ListScenesRespResults.
 
         场景名。
 
@@ -86,7 +86,7 @@ class ListScenesRespResults:
 
     @property
     def name(self):
-        """Gets the name of this ListScenesRespResults.
+        r"""Gets the name of this ListScenesRespResults.
 
         application名称。
 
@@ -97,7 +97,7 @@ class ListScenesRespResults:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListScenesRespResults.
+        r"""Sets the name of this ListScenesRespResults.
 
         application名称。
 
@@ -108,7 +108,7 @@ class ListScenesRespResults:
 
     @property
     def params(self):
-        """Gets the params of this ListScenesRespResults.
+        r"""Gets the params of this ListScenesRespResults.
 
         参数列表。
 
@@ -119,7 +119,7 @@ class ListScenesRespResults:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this ListScenesRespResults.
+        r"""Sets the params of this ListScenesRespResults.
 
         参数列表。
 
@@ -130,7 +130,7 @@ class ListScenesRespResults:
 
     @property
     def description(self):
-        """Gets the description of this ListScenesRespResults.
+        r"""Gets the description of this ListScenesRespResults.
 
         场景下应用的描述。
 
@@ -141,7 +141,7 @@ class ListScenesRespResults:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListScenesRespResults.
+        r"""Sets the description of this ListScenesRespResults.
 
         场景下应用的描述。
 

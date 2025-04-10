@@ -31,7 +31,7 @@ class ListNotificationRequest:
     }
 
     def __init__(self, instance_id=None, limit=None, offset=None, app_id=None):
-        """ListNotificationRequest
+        r"""ListNotificationRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListNotificationRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListNotificationRequest.
+        r"""Gets the instance_id of this ListNotificationRequest.
 
         实例ID
 
@@ -74,7 +74,7 @@ class ListNotificationRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListNotificationRequest.
+        r"""Sets the instance_id of this ListNotificationRequest.
 
         实例ID
 
@@ -85,7 +85,7 @@ class ListNotificationRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListNotificationRequest.
+        r"""Gets the limit of this ListNotificationRequest.
 
         每页显示条目数量，最大数量999，超过999后只返回999
 
@@ -96,7 +96,7 @@ class ListNotificationRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListNotificationRequest.
+        r"""Sets the limit of this ListNotificationRequest.
 
         每页显示条目数量，最大数量999，超过999后只返回999
 
@@ -107,7 +107,7 @@ class ListNotificationRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListNotificationRequest.
+        r"""Gets the offset of this ListNotificationRequest.
 
         分页查询，分页的偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -118,7 +118,7 @@ class ListNotificationRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListNotificationRequest.
+        r"""Sets the offset of this ListNotificationRequest.
 
         分页查询，分页的偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -129,7 +129,7 @@ class ListNotificationRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ListNotificationRequest.
+        r"""Gets the app_id of this ListNotificationRequest.
 
         应用ID
 
@@ -140,7 +140,7 @@ class ListNotificationRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ListNotificationRequest.
+        r"""Sets the app_id of this ListNotificationRequest.
 
         应用ID
 

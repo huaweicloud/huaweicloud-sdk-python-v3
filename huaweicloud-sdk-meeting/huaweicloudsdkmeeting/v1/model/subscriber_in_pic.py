@@ -29,7 +29,7 @@ class SubscriberInPic:
     }
 
     def __init__(self, index=None, subscriber=None, is_assist_stream=None):
-        """SubscriberInPic
+        r"""SubscriberInPic
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class SubscriberInPic:
 
     @property
     def index(self):
-        """Gets the index of this SubscriberInPic.
+        r"""Gets the index of this SubscriberInPic.
 
         多画面中每个画面的编号。编号从1开始。 默认值为1。
 
@@ -67,7 +67,7 @@ class SubscriberInPic:
 
     @index.setter
     def index(self, index):
-        """Sets the index of this SubscriberInPic.
+        r"""Sets the index of this SubscriberInPic.
 
         多画面中每个画面的编号。编号从1开始。 默认值为1。
 
@@ -78,7 +78,7 @@ class SubscriberInPic:
 
     @property
     def subscriber(self):
-        """Gets the subscriber of this SubscriberInPic.
+        r"""Gets the subscriber of this SubscriberInPic.
 
         每个画面中与会者标识列表，从[[查询会议实时信息](https://support.huaweicloud.com/api-meeting/meeting_21_0029.html)](tag:hws)[[查询会议实时信息](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0029.html)](tag:hk)接口返回的pid中获取。
 
@@ -89,7 +89,7 @@ class SubscriberInPic:
 
     @subscriber.setter
     def subscriber(self, subscriber):
-        """Sets the subscriber of this SubscriberInPic.
+        r"""Sets the subscriber of this SubscriberInPic.
 
         每个画面中与会者标识列表，从[[查询会议实时信息](https://support.huaweicloud.com/api-meeting/meeting_21_0029.html)](tag:hws)[[查询会议实时信息](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0029.html)](tag:hk)接口返回的pid中获取。
 
@@ -100,7 +100,7 @@ class SubscriberInPic:
 
     @property
     def is_assist_stream(self):
-        """Gets the is_assist_stream of this SubscriberInPic.
+        r"""Gets the is_assist_stream of this SubscriberInPic.
 
         是否为辅流。默认值为0。 - 0: 不是辅流 - 1: 是辅流
 
@@ -111,7 +111,7 @@ class SubscriberInPic:
 
     @is_assist_stream.setter
     def is_assist_stream(self, is_assist_stream):
-        """Sets the is_assist_stream of this SubscriberInPic.
+        r"""Sets the is_assist_stream of this SubscriberInPic.
 
         是否为辅流。默认值为0。 - 0: 不是辅流 - 1: 是辅流
 

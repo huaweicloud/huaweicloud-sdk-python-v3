@@ -25,7 +25,7 @@ class CreateAuthorisationRequestBody:
     }
 
     def __init__(self, authorisation=None):
-        """CreateAuthorisationRequestBody
+        r"""CreateAuthorisationRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateAuthorisationRequestBody:
 
     @property
     def authorisation(self):
-        """Gets the authorisation of this CreateAuthorisationRequestBody.
+        r"""Gets the authorisation of this CreateAuthorisationRequestBody.
 
         :return: The authorisation of this CreateAuthorisationRequestBody.
         :rtype: :class:`huaweicloudsdkcc.v3.CreateAuthorisation`
@@ -51,7 +51,7 @@ class CreateAuthorisationRequestBody:
 
     @authorisation.setter
     def authorisation(self, authorisation):
-        """Sets the authorisation of this CreateAuthorisationRequestBody.
+        r"""Sets the authorisation of this CreateAuthorisationRequestBody.
 
         :param authorisation: The authorisation of this CreateAuthorisationRequestBody.
         :type authorisation: :class:`huaweicloudsdkcc.v3.CreateAuthorisation`

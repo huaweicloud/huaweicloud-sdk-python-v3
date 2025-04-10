@@ -27,7 +27,7 @@ class ListMetricsRequest:
     }
 
     def __init__(self, data_store_id=None, body=None):
-        """ListMetricsRequest
+        r"""ListMetricsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListMetricsRequest:
 
     @property
     def data_store_id(self):
-        """Gets the data_store_id of this ListMetricsRequest.
+        r"""Gets the data_store_id of this ListMetricsRequest.
 
         存储ID
 
@@ -60,7 +60,7 @@ class ListMetricsRequest:
 
     @data_store_id.setter
     def data_store_id(self, data_store_id):
-        """Sets the data_store_id of this ListMetricsRequest.
+        r"""Sets the data_store_id of this ListMetricsRequest.
 
         存储ID
 
@@ -71,7 +71,7 @@ class ListMetricsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListMetricsRequest.
+        r"""Gets the body of this ListMetricsRequest.
 
         :return: The body of this ListMetricsRequest.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.GetMetricsRequest`
@@ -80,7 +80,7 @@ class ListMetricsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListMetricsRequest.
+        r"""Sets the body of this ListMetricsRequest.
 
         :param body: The body of this ListMetricsRequest.
         :type body: :class:`huaweicloudsdkiotanalytics.v1.GetMetricsRequest`

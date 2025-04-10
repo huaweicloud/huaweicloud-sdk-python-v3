@@ -45,7 +45,7 @@ class DashboardDto:
     }
 
     def __init__(self, create_time=None, create_user=None, data_type=None, id=None, name=None, service_id=None, task_ids=None, task_type=None, update_time=None, update_user=None, view_type=None):
-        """DashboardDto
+        r"""DashboardDto
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class DashboardDto:
 
     @property
     def create_time(self):
-        """Gets the create_time of this DashboardDto.
+        r"""Gets the create_time of this DashboardDto.
 
         创建时间
 
@@ -124,7 +124,7 @@ class DashboardDto:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this DashboardDto.
+        r"""Sets the create_time of this DashboardDto.
 
         创建时间
 
@@ -135,7 +135,7 @@ class DashboardDto:
 
     @property
     def create_user(self):
-        """Gets the create_user of this DashboardDto.
+        r"""Gets the create_user of this DashboardDto.
 
         创建者
 
@@ -146,7 +146,7 @@ class DashboardDto:
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this DashboardDto.
+        r"""Sets the create_user of this DashboardDto.
 
         创建者
 
@@ -157,7 +157,7 @@ class DashboardDto:
 
     @property
     def data_type(self):
-        """Gets the data_type of this DashboardDto.
+        r"""Gets the data_type of this DashboardDto.
 
         数据类型：0=用例成功率；1=用例时长
 
@@ -168,7 +168,7 @@ class DashboardDto:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this DashboardDto.
+        r"""Sets the data_type of this DashboardDto.
 
         数据类型：0=用例成功率；1=用例时长
 
@@ -179,7 +179,7 @@ class DashboardDto:
 
     @property
     def id(self):
-        """Gets the id of this DashboardDto.
+        r"""Gets the id of this DashboardDto.
 
         唯一ID，主键
 
@@ -190,7 +190,7 @@ class DashboardDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DashboardDto.
+        r"""Sets the id of this DashboardDto.
 
         唯一ID，主键
 
@@ -201,7 +201,7 @@ class DashboardDto:
 
     @property
     def name(self):
-        """Gets the name of this DashboardDto.
+        r"""Gets the name of this DashboardDto.
 
         看板标题
 
@@ -212,7 +212,7 @@ class DashboardDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DashboardDto.
+        r"""Sets the name of this DashboardDto.
 
         看板标题
 
@@ -223,7 +223,7 @@ class DashboardDto:
 
     @property
     def service_id(self):
-        """Gets the service_id of this DashboardDto.
+        r"""Gets the service_id of this DashboardDto.
 
         服务ID
 
@@ -234,7 +234,7 @@ class DashboardDto:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this DashboardDto.
+        r"""Sets the service_id of this DashboardDto.
 
         服务ID
 
@@ -245,7 +245,7 @@ class DashboardDto:
 
     @property
     def task_ids(self):
-        """Gets the task_ids of this DashboardDto.
+        r"""Gets the task_ids of this DashboardDto.
 
         任务ID列表
 
@@ -256,7 +256,7 @@ class DashboardDto:
 
     @task_ids.setter
     def task_ids(self, task_ids):
-        """Sets the task_ids of this DashboardDto.
+        r"""Sets the task_ids of this DashboardDto.
 
         任务ID列表
 
@@ -267,7 +267,7 @@ class DashboardDto:
 
     @property
     def task_type(self):
-        """Gets the task_type of this DashboardDto.
+        r"""Gets the task_type of this DashboardDto.
 
         任务类型，仅支持持续拨测和冒烟测试
 
@@ -278,7 +278,7 @@ class DashboardDto:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this DashboardDto.
+        r"""Sets the task_type of this DashboardDto.
 
         任务类型，仅支持持续拨测和冒烟测试
 
@@ -289,7 +289,7 @@ class DashboardDto:
 
     @property
     def update_time(self):
-        """Gets the update_time of this DashboardDto.
+        r"""Gets the update_time of this DashboardDto.
 
         修改时间
 
@@ -300,7 +300,7 @@ class DashboardDto:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this DashboardDto.
+        r"""Sets the update_time of this DashboardDto.
 
         修改时间
 
@@ -311,7 +311,7 @@ class DashboardDto:
 
     @property
     def update_user(self):
-        """Gets the update_user of this DashboardDto.
+        r"""Gets the update_user of this DashboardDto.
 
         修改者
 
@@ -322,7 +322,7 @@ class DashboardDto:
 
     @update_user.setter
     def update_user(self, update_user):
-        """Sets the update_user of this DashboardDto.
+        r"""Sets the update_user of this DashboardDto.
 
         修改者
 
@@ -333,7 +333,7 @@ class DashboardDto:
 
     @property
     def view_type(self):
-        """Gets the view_type of this DashboardDto.
+        r"""Gets the view_type of this DashboardDto.
 
         看板类型：0=折线图；1=散点图；2=饼图
 
@@ -344,7 +344,7 @@ class DashboardDto:
 
     @view_type.setter
     def view_type(self, view_type):
-        """Sets the view_type of this DashboardDto.
+        r"""Sets the view_type of this DashboardDto.
 
         看板类型：0=折线图；1=散点图；2=饼图
 

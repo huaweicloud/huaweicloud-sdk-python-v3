@@ -29,7 +29,7 @@ class ShowResourceByIdRequest:
     }
 
     def __init__(self, provider=None, type=None, resource_id=None):
-        """ShowResourceByIdRequest
+        r"""ShowResourceByIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ShowResourceByIdRequest:
 
     @property
     def provider(self):
-        """Gets the provider of this ShowResourceByIdRequest.
+        r"""Gets the provider of this ShowResourceByIdRequest.
 
         云服务名称
 
@@ -65,7 +65,7 @@ class ShowResourceByIdRequest:
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this ShowResourceByIdRequest.
+        r"""Sets the provider of this ShowResourceByIdRequest.
 
         云服务名称
 
@@ -76,7 +76,7 @@ class ShowResourceByIdRequest:
 
     @property
     def type(self):
-        """Gets the type of this ShowResourceByIdRequest.
+        r"""Gets the type of this ShowResourceByIdRequest.
 
         资源类型名称
 
@@ -87,7 +87,7 @@ class ShowResourceByIdRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowResourceByIdRequest.
+        r"""Sets the type of this ShowResourceByIdRequest.
 
         资源类型名称
 
@@ -98,7 +98,7 @@ class ShowResourceByIdRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ShowResourceByIdRequest.
+        r"""Gets the resource_id of this ShowResourceByIdRequest.
 
         资源ID
 
@@ -109,7 +109,7 @@ class ShowResourceByIdRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ShowResourceByIdRequest.
+        r"""Sets the resource_id of this ShowResourceByIdRequest.
 
         资源ID
 

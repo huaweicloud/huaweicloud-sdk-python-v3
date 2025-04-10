@@ -27,7 +27,7 @@ class CreateHttpIgnoreRuleRequest:
     }
 
     def __init__(self, policy_id=None, body=None):
-        """CreateHttpIgnoreRuleRequest
+        r"""CreateHttpIgnoreRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateHttpIgnoreRuleRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this CreateHttpIgnoreRuleRequest.
+        r"""Gets the policy_id of this CreateHttpIgnoreRuleRequest.
 
         策略id
 
@@ -60,7 +60,7 @@ class CreateHttpIgnoreRuleRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this CreateHttpIgnoreRuleRequest.
+        r"""Sets the policy_id of this CreateHttpIgnoreRuleRequest.
 
         策略id
 
@@ -71,7 +71,7 @@ class CreateHttpIgnoreRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateHttpIgnoreRuleRequest.
+        r"""Gets the body of this CreateHttpIgnoreRuleRequest.
 
         :return: The body of this CreateHttpIgnoreRuleRequest.
         :rtype: :class:`huaweicloudsdkedgesec.v2.CreateHttpIgnoreRuleRequestBody`
@@ -80,7 +80,7 @@ class CreateHttpIgnoreRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateHttpIgnoreRuleRequest.
+        r"""Sets the body of this CreateHttpIgnoreRuleRequest.
 
         :param body: The body of this CreateHttpIgnoreRuleRequest.
         :type body: :class:`huaweicloudsdkedgesec.v2.CreateHttpIgnoreRuleRequestBody`

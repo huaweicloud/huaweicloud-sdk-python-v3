@@ -28,7 +28,7 @@ class BatchListProgressesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, results=None):
-        """BatchListProgressesResponse
+        r"""BatchListProgressesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchListProgressesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this BatchListProgressesResponse.
+        r"""Gets the count of this BatchListProgressesResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class BatchListProgressesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this BatchListProgressesResponse.
+        r"""Sets the count of this BatchListProgressesResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class BatchListProgressesResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this BatchListProgressesResponse.
+        r"""Gets the results of this BatchListProgressesResponse.
 
         批量查询迁移进度的响应体集合
 
@@ -84,7 +84,7 @@ class BatchListProgressesResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this BatchListProgressesResponse.
+        r"""Sets the results of this BatchListProgressesResponse.
 
         批量查询迁移进度的响应体集合
 

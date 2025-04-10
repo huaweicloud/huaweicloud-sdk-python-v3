@@ -29,7 +29,7 @@ class DisplayOptionsVideoQualityOptions:
     }
 
     def __init__(self, average_video_quality=None, lowest_video_quality=None, highest_video_quality=None):
-        """DisplayOptionsVideoQualityOptions
+        r"""DisplayOptionsVideoQualityOptions
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class DisplayOptionsVideoQualityOptions:
 
     @property
     def average_video_quality(self):
-        """Gets the average_video_quality of this DisplayOptionsVideoQualityOptions.
+        r"""Gets the average_video_quality of this DisplayOptionsVideoQualityOptions.
 
         视频平均质量。取值范围为[5-59]。默认：15。
 
@@ -68,7 +68,7 @@ class DisplayOptionsVideoQualityOptions:
 
     @average_video_quality.setter
     def average_video_quality(self, average_video_quality):
-        """Sets the average_video_quality of this DisplayOptionsVideoQualityOptions.
+        r"""Sets the average_video_quality of this DisplayOptionsVideoQualityOptions.
 
         视频平均质量。取值范围为[5-59]。默认：15。
 
@@ -79,7 +79,7 @@ class DisplayOptionsVideoQualityOptions:
 
     @property
     def lowest_video_quality(self):
-        """Gets the lowest_video_quality of this DisplayOptionsVideoQualityOptions.
+        r"""Gets the lowest_video_quality of this DisplayOptionsVideoQualityOptions.
 
         视频最低质量。取值范围为[5-69]。默认：25。
 
@@ -90,7 +90,7 @@ class DisplayOptionsVideoQualityOptions:
 
     @lowest_video_quality.setter
     def lowest_video_quality(self, lowest_video_quality):
-        """Sets the lowest_video_quality of this DisplayOptionsVideoQualityOptions.
+        r"""Sets the lowest_video_quality of this DisplayOptionsVideoQualityOptions.
 
         视频最低质量。取值范围为[5-69]。默认：25。
 
@@ -101,7 +101,7 @@ class DisplayOptionsVideoQualityOptions:
 
     @property
     def highest_video_quality(self):
-        """Gets the highest_video_quality of this DisplayOptionsVideoQualityOptions.
+        r"""Gets the highest_video_quality of this DisplayOptionsVideoQualityOptions.
 
         视频最高质量。取值范围为[1-59]。默认：7。
 
@@ -112,7 +112,7 @@ class DisplayOptionsVideoQualityOptions:
 
     @highest_video_quality.setter
     def highest_video_quality(self, highest_video_quality):
-        """Sets the highest_video_quality of this DisplayOptionsVideoQualityOptions.
+        r"""Sets the highest_video_quality of this DisplayOptionsVideoQualityOptions.
 
         视频最高质量。取值范围为[1-59]。默认：7。
 

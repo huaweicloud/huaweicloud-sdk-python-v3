@@ -30,7 +30,7 @@ class ShowRecordSetByZoneResponse(SdkResponse):
     }
 
     def __init__(self, links=None, recordsets=None, metadata=None):
-        """ShowRecordSetByZoneResponse
+        r"""ShowRecordSetByZoneResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowRecordSetByZoneResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this ShowRecordSetByZoneResponse.
+        r"""Gets the links of this ShowRecordSetByZoneResponse.
 
         :return: The links of this ShowRecordSetByZoneResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -67,7 +67,7 @@ class ShowRecordSetByZoneResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this ShowRecordSetByZoneResponse.
+        r"""Sets the links of this ShowRecordSetByZoneResponse.
 
         :param links: The links of this ShowRecordSetByZoneResponse.
         :type links: :class:`huaweicloudsdkdns.v2.PageLink`
@@ -76,7 +76,7 @@ class ShowRecordSetByZoneResponse(SdkResponse):
 
     @property
     def recordsets(self):
-        """Gets the recordsets of this ShowRecordSetByZoneResponse.
+        r"""Gets the recordsets of this ShowRecordSetByZoneResponse.
 
         recordset列表。
 
@@ -87,7 +87,7 @@ class ShowRecordSetByZoneResponse(SdkResponse):
 
     @recordsets.setter
     def recordsets(self, recordsets):
-        """Sets the recordsets of this ShowRecordSetByZoneResponse.
+        r"""Sets the recordsets of this ShowRecordSetByZoneResponse.
 
         recordset列表。
 
@@ -98,7 +98,7 @@ class ShowRecordSetByZoneResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this ShowRecordSetByZoneResponse.
+        r"""Gets the metadata of this ShowRecordSetByZoneResponse.
 
         :return: The metadata of this ShowRecordSetByZoneResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.Metadata`
@@ -107,7 +107,7 @@ class ShowRecordSetByZoneResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ShowRecordSetByZoneResponse.
+        r"""Sets the metadata of this ShowRecordSetByZoneResponse.
 
         :param metadata: The metadata of this ShowRecordSetByZoneResponse.
         :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`

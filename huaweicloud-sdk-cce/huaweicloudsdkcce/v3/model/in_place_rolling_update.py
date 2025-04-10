@@ -25,7 +25,7 @@ class InPlaceRollingUpdate:
     }
 
     def __init__(self, user_defined_step=None):
-        """InPlaceRollingUpdate
+        r"""InPlaceRollingUpdate
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class InPlaceRollingUpdate:
 
     @property
     def user_defined_step(self):
-        """Gets the user_defined_step of this InPlaceRollingUpdate.
+        r"""Gets the user_defined_step of this InPlaceRollingUpdate.
 
         节点升级步长，取值范围为[1, 40]，建议取值20
 
@@ -54,7 +54,7 @@ class InPlaceRollingUpdate:
 
     @user_defined_step.setter
     def user_defined_step(self, user_defined_step):
-        """Sets the user_defined_step of this InPlaceRollingUpdate.
+        r"""Sets the user_defined_step of this InPlaceRollingUpdate.
 
         节点升级步长，取值范围为[1, 40]，建议取值20
 

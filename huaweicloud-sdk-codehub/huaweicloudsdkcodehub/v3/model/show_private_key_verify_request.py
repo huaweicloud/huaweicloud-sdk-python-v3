@@ -25,7 +25,7 @@ class ShowPrivateKeyVerifyRequest:
     }
 
     def __init__(self, body=None):
-        """ShowPrivateKeyVerifyRequest
+        r"""ShowPrivateKeyVerifyRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowPrivateKeyVerifyRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowPrivateKeyVerifyRequest.
+        r"""Gets the body of this ShowPrivateKeyVerifyRequest.
 
         :return: The body of this ShowPrivateKeyVerifyRequest.
         :rtype: :class:`huaweicloudsdkcodehub.v3.PrivateKeyVerify`
@@ -52,7 +52,7 @@ class ShowPrivateKeyVerifyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowPrivateKeyVerifyRequest.
+        r"""Sets the body of this ShowPrivateKeyVerifyRequest.
 
         :param body: The body of this ShowPrivateKeyVerifyRequest.
         :type body: :class:`huaweicloudsdkcodehub.v3.PrivateKeyVerify`

@@ -24,7 +24,7 @@ class InviteParticipantResponse(SdkResponse):
     }
 
     def __init__(self):
-        """InviteParticipantResponse
+        r"""InviteParticipantResponse
 
         The model defined in huaweicloud sdk
 

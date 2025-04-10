@@ -29,7 +29,7 @@ class UpdateEquipmentOspfRequest:
     }
 
     def __init__(self, ieg_id=None, equipment_id=None, body=None):
-        """UpdateEquipmentOspfRequest
+        r"""UpdateEquipmentOspfRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateEquipmentOspfRequest:
 
     @property
     def ieg_id(self):
-        """Gets the ieg_id of this UpdateEquipmentOspfRequest.
+        r"""Gets the ieg_id of this UpdateEquipmentOspfRequest.
 
         智能企业网关ID
 
@@ -66,7 +66,7 @@ class UpdateEquipmentOspfRequest:
 
     @ieg_id.setter
     def ieg_id(self, ieg_id):
-        """Sets the ieg_id of this UpdateEquipmentOspfRequest.
+        r"""Sets the ieg_id of this UpdateEquipmentOspfRequest.
 
         智能企业网关ID
 
@@ -77,7 +77,7 @@ class UpdateEquipmentOspfRequest:
 
     @property
     def equipment_id(self):
-        """Gets the equipment_id of this UpdateEquipmentOspfRequest.
+        r"""Gets the equipment_id of this UpdateEquipmentOspfRequest.
 
         智能企业网关设备ID
 
@@ -88,7 +88,7 @@ class UpdateEquipmentOspfRequest:
 
     @equipment_id.setter
     def equipment_id(self, equipment_id):
-        """Sets the equipment_id of this UpdateEquipmentOspfRequest.
+        r"""Sets the equipment_id of this UpdateEquipmentOspfRequest.
 
         智能企业网关设备ID
 
@@ -99,7 +99,7 @@ class UpdateEquipmentOspfRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateEquipmentOspfRequest.
+        r"""Gets the body of this UpdateEquipmentOspfRequest.
 
         :return: The body of this UpdateEquipmentOspfRequest.
         :rtype: :class:`huaweicloudsdkec.v1.EquipmentOspfItem`
@@ -108,7 +108,7 @@ class UpdateEquipmentOspfRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateEquipmentOspfRequest.
+        r"""Sets the body of this UpdateEquipmentOspfRequest.
 
         :param body: The body of this UpdateEquipmentOspfRequest.
         :type body: :class:`huaweicloudsdkec.v1.EquipmentOspfItem`

@@ -27,7 +27,7 @@ class UploadFromObsReqEncryption:
     }
 
     def __init__(self, enable=None, master_key_id=None):
-        """UploadFromObsReqEncryption
+        r"""UploadFromObsReqEncryption
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UploadFromObsReqEncryption:
 
     @property
     def enable(self):
-        """Gets the enable of this UploadFromObsReqEncryption.
+        r"""Gets the enable of this UploadFromObsReqEncryption.
 
         是否启动加密特性。
 
@@ -61,7 +61,7 @@ class UploadFromObsReqEncryption:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this UploadFromObsReqEncryption.
+        r"""Sets the enable of this UploadFromObsReqEncryption.
 
         是否启动加密特性。
 
@@ -72,7 +72,7 @@ class UploadFromObsReqEncryption:
 
     @property
     def master_key_id(self):
-        """Gets the master_key_id of this UploadFromObsReqEncryption.
+        r"""Gets the master_key_id of this UploadFromObsReqEncryption.
 
         对应的project下，华为云数据加密服务创建的用户主密钥ID。
 
@@ -83,7 +83,7 @@ class UploadFromObsReqEncryption:
 
     @master_key_id.setter
     def master_key_id(self, master_key_id):
-        """Sets the master_key_id of this UploadFromObsReqEncryption.
+        r"""Sets the master_key_id of this UploadFromObsReqEncryption.
 
         对应的project下，华为云数据加密服务创建的用户主密钥ID。
 

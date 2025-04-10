@@ -26,7 +26,7 @@ class BatchStartHostTasksResponse(SdkResponse):
     }
 
     def __init__(self, results=None):
-        """BatchStartHostTasksResponse
+        r"""BatchStartHostTasksResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchStartHostTasksResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this BatchStartHostTasksResponse.
+        r"""Gets the results of this BatchStartHostTasksResponse.
 
         扫描任务ID对应主机id列表
 
@@ -55,7 +55,7 @@ class BatchStartHostTasksResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this BatchStartHostTasksResponse.
+        r"""Sets the results of this BatchStartHostTasksResponse.
 
         扫描任务ID对应主机id列表
 

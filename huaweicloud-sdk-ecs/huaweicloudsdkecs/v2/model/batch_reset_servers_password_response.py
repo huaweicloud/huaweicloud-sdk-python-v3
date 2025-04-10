@@ -26,7 +26,7 @@ class BatchResetServersPasswordResponse(SdkResponse):
     }
 
     def __init__(self, response=None):
-        """BatchResetServersPasswordResponse
+        r"""BatchResetServersPasswordResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchResetServersPasswordResponse(SdkResponse):
 
     @property
     def response(self):
-        """Gets the response of this BatchResetServersPasswordResponse.
+        r"""Gets the response of this BatchResetServersPasswordResponse.
 
         提交请求成功后返回的响应列表。
 
@@ -55,7 +55,7 @@ class BatchResetServersPasswordResponse(SdkResponse):
 
     @response.setter
     def response(self, response):
-        """Sets the response of this BatchResetServersPasswordResponse.
+        r"""Sets the response of this BatchResetServersPasswordResponse.
 
         提交请求成功后返回的响应列表。
 

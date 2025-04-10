@@ -27,7 +27,7 @@ class CreateCaTagRequest:
     }
 
     def __init__(self, ca_id=None, body=None):
-        """CreateCaTagRequest
+        r"""CreateCaTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateCaTagRequest:
 
     @property
     def ca_id(self):
-        """Gets the ca_id of this CreateCaTagRequest.
+        r"""Gets the ca_id of this CreateCaTagRequest.
 
         所需要创建标签的CA证书ID。
 
@@ -60,7 +60,7 @@ class CreateCaTagRequest:
 
     @ca_id.setter
     def ca_id(self, ca_id):
-        """Sets the ca_id of this CreateCaTagRequest.
+        r"""Sets the ca_id of this CreateCaTagRequest.
 
         所需要创建标签的CA证书ID。
 
@@ -71,7 +71,7 @@ class CreateCaTagRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateCaTagRequest.
+        r"""Gets the body of this CreateCaTagRequest.
 
         :return: The body of this CreateCaTagRequest.
         :rtype: :class:`huaweicloudsdkccm.v1.ResourceTagRequestBody`
@@ -80,7 +80,7 @@ class CreateCaTagRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateCaTagRequest.
+        r"""Sets the body of this CreateCaTagRequest.
 
         :param body: The body of this CreateCaTagRequest.
         :type body: :class:`huaweicloudsdkccm.v1.ResourceTagRequestBody`

@@ -24,7 +24,7 @@ class StopSupplementdataResponse(SdkResponse):
     }
 
     def __init__(self):
-        """StopSupplementdataResponse
+        r"""StopSupplementdataResponse
 
         The model defined in huaweicloud sdk
 

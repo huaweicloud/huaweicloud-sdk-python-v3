@@ -29,7 +29,7 @@ class DeleteHostFromEnvironmentRequest:
     }
 
     def __init__(self, application_id=None, environment_id=None, host_id=None):
-        """DeleteHostFromEnvironmentRequest
+        r"""DeleteHostFromEnvironmentRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DeleteHostFromEnvironmentRequest:
 
     @property
     def application_id(self):
-        """Gets the application_id of this DeleteHostFromEnvironmentRequest.
+        r"""Gets the application_id of this DeleteHostFromEnvironmentRequest.
 
         应用id
 
@@ -65,7 +65,7 @@ class DeleteHostFromEnvironmentRequest:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this DeleteHostFromEnvironmentRequest.
+        r"""Sets the application_id of this DeleteHostFromEnvironmentRequest.
 
         应用id
 
@@ -76,7 +76,7 @@ class DeleteHostFromEnvironmentRequest:
 
     @property
     def environment_id(self):
-        """Gets the environment_id of this DeleteHostFromEnvironmentRequest.
+        r"""Gets the environment_id of this DeleteHostFromEnvironmentRequest.
 
         环境id
 
@@ -87,7 +87,7 @@ class DeleteHostFromEnvironmentRequest:
 
     @environment_id.setter
     def environment_id(self, environment_id):
-        """Sets the environment_id of this DeleteHostFromEnvironmentRequest.
+        r"""Sets the environment_id of this DeleteHostFromEnvironmentRequest.
 
         环境id
 
@@ -98,7 +98,7 @@ class DeleteHostFromEnvironmentRequest:
 
     @property
     def host_id(self):
-        """Gets the host_id of this DeleteHostFromEnvironmentRequest.
+        r"""Gets the host_id of this DeleteHostFromEnvironmentRequest.
 
         主机id
 
@@ -109,7 +109,7 @@ class DeleteHostFromEnvironmentRequest:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this DeleteHostFromEnvironmentRequest.
+        r"""Sets the host_id of this DeleteHostFromEnvironmentRequest.
 
         主机id
 

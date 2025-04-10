@@ -28,7 +28,7 @@ class UpdateHpcShareResponse(SdkResponse):
     }
 
     def __init__(self, gc_time=None, x_request_id=None):
-        """UpdateHpcShareResponse
+        r"""UpdateHpcShareResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateHpcShareResponse(SdkResponse):
 
     @property
     def gc_time(self):
-        """Gets the gc_time of this UpdateHpcShareResponse.
+        r"""Gets the gc_time of this UpdateHpcShareResponse.
 
         文件系统冷数据淘汰时间
 
@@ -62,7 +62,7 @@ class UpdateHpcShareResponse(SdkResponse):
 
     @gc_time.setter
     def gc_time(self, gc_time):
-        """Sets the gc_time of this UpdateHpcShareResponse.
+        r"""Sets the gc_time of this UpdateHpcShareResponse.
 
         文件系统冷数据淘汰时间
 
@@ -73,7 +73,7 @@ class UpdateHpcShareResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdateHpcShareResponse.
+        r"""Gets the x_request_id of this UpdateHpcShareResponse.
 
         :return: The x_request_id of this UpdateHpcShareResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class UpdateHpcShareResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdateHpcShareResponse.
+        r"""Sets the x_request_id of this UpdateHpcShareResponse.
 
         :param x_request_id: The x_request_id of this UpdateHpcShareResponse.
         :type x_request_id: str

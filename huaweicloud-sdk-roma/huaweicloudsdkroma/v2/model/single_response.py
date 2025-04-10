@@ -27,7 +27,7 @@ class SingleResponse:
     }
 
     def __init__(self, id=None, ret_status=None):
-        """SingleResponse
+        r"""SingleResponse
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SingleResponse:
 
     @property
     def id(self):
-        """Gets the id of this SingleResponse.
+        r"""Gets the id of this SingleResponse.
 
         操作的ID
 
@@ -61,7 +61,7 @@ class SingleResponse:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SingleResponse.
+        r"""Sets the id of this SingleResponse.
 
         操作的ID
 
@@ -72,7 +72,7 @@ class SingleResponse:
 
     @property
     def ret_status(self):
-        """Gets the ret_status of this SingleResponse.
+        r"""Gets the ret_status of this SingleResponse.
 
         操作结果 枚举值successful-成功 error-失败
 
@@ -83,7 +83,7 @@ class SingleResponse:
 
     @ret_status.setter
     def ret_status(self, ret_status):
-        """Sets the ret_status of this SingleResponse.
+        r"""Sets the ret_status of this SingleResponse.
 
         操作结果 枚举值successful-成功 error-失败
 

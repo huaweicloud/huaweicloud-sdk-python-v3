@@ -29,7 +29,7 @@ class ModifyOuNameInfoV2Req:
     }
 
     def __init__(self, id=None, ou_name=None, description=None):
-        """ModifyOuNameInfoV2Req
+        r"""ModifyOuNameInfoV2Req
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ModifyOuNameInfoV2Req:
 
     @property
     def id(self):
-        """Gets the id of this ModifyOuNameInfoV2Req.
+        r"""Gets the id of this ModifyOuNameInfoV2Req.
 
         ouid。
 
@@ -67,7 +67,7 @@ class ModifyOuNameInfoV2Req:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ModifyOuNameInfoV2Req.
+        r"""Sets the id of this ModifyOuNameInfoV2Req.
 
         ouid。
 
@@ -78,7 +78,7 @@ class ModifyOuNameInfoV2Req:
 
     @property
     def ou_name(self):
-        """Gets the ou_name of this ModifyOuNameInfoV2Req.
+        r"""Gets the ou_name of this ModifyOuNameInfoV2Req.
 
         OU名称
 
@@ -89,7 +89,7 @@ class ModifyOuNameInfoV2Req:
 
     @ou_name.setter
     def ou_name(self, ou_name):
-        """Sets the ou_name of this ModifyOuNameInfoV2Req.
+        r"""Sets the ou_name of this ModifyOuNameInfoV2Req.
 
         OU名称
 
@@ -100,7 +100,7 @@ class ModifyOuNameInfoV2Req:
 
     @property
     def description(self):
-        """Gets the description of this ModifyOuNameInfoV2Req.
+        r"""Gets the description of this ModifyOuNameInfoV2Req.
 
         描述
 
@@ -111,7 +111,7 @@ class ModifyOuNameInfoV2Req:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ModifyOuNameInfoV2Req.
+        r"""Sets the description of this ModifyOuNameInfoV2Req.
 
         描述
 

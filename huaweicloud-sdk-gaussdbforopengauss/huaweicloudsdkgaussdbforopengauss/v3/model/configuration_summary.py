@@ -41,7 +41,7 @@ class ConfigurationSummary:
     }
 
     def __init__(self, id=None, name=None, description=None, datastore_version=None, datastore_name=None, ha_mode=None, created=None, updated=None, user_defined=None):
-        """ConfigurationSummary
+        r"""ConfigurationSummary
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class ConfigurationSummary:
 
     @property
     def id(self):
-        """Gets the id of this ConfigurationSummary.
+        r"""Gets the id of this ConfigurationSummary.
 
         参数组ID。
 
@@ -102,7 +102,7 @@ class ConfigurationSummary:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ConfigurationSummary.
+        r"""Sets the id of this ConfigurationSummary.
 
         参数组ID。
 
@@ -113,7 +113,7 @@ class ConfigurationSummary:
 
     @property
     def name(self):
-        """Gets the name of this ConfigurationSummary.
+        r"""Gets the name of this ConfigurationSummary.
 
         参数组名称。
 
@@ -124,7 +124,7 @@ class ConfigurationSummary:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ConfigurationSummary.
+        r"""Sets the name of this ConfigurationSummary.
 
         参数组名称。
 
@@ -135,7 +135,7 @@ class ConfigurationSummary:
 
     @property
     def description(self):
-        """Gets the description of this ConfigurationSummary.
+        r"""Gets the description of this ConfigurationSummary.
 
         参数组描述。
 
@@ -146,7 +146,7 @@ class ConfigurationSummary:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ConfigurationSummary.
+        r"""Sets the description of this ConfigurationSummary.
 
         参数组描述。
 
@@ -157,7 +157,7 @@ class ConfigurationSummary:
 
     @property
     def datastore_version(self):
-        """Gets the datastore_version of this ConfigurationSummary.
+        r"""Gets the datastore_version of this ConfigurationSummary.
 
         引擎版本。
 
@@ -168,7 +168,7 @@ class ConfigurationSummary:
 
     @datastore_version.setter
     def datastore_version(self, datastore_version):
-        """Sets the datastore_version of this ConfigurationSummary.
+        r"""Sets the datastore_version of this ConfigurationSummary.
 
         引擎版本。
 
@@ -179,7 +179,7 @@ class ConfigurationSummary:
 
     @property
     def datastore_name(self):
-        """Gets the datastore_name of this ConfigurationSummary.
+        r"""Gets the datastore_name of this ConfigurationSummary.
 
         引擎名称。
 
@@ -190,7 +190,7 @@ class ConfigurationSummary:
 
     @datastore_name.setter
     def datastore_name(self, datastore_name):
-        """Sets the datastore_name of this ConfigurationSummary.
+        r"""Sets the datastore_name of this ConfigurationSummary.
 
         引擎名称。
 
@@ -201,7 +201,7 @@ class ConfigurationSummary:
 
     @property
     def ha_mode(self):
-        """Gets the ha_mode of this ConfigurationSummary.
+        r"""Gets the ha_mode of this ConfigurationSummary.
 
         数据库部署模式。
 
@@ -212,7 +212,7 @@ class ConfigurationSummary:
 
     @ha_mode.setter
     def ha_mode(self, ha_mode):
-        """Sets the ha_mode of this ConfigurationSummary.
+        r"""Sets the ha_mode of this ConfigurationSummary.
 
         数据库部署模式。
 
@@ -223,7 +223,7 @@ class ConfigurationSummary:
 
     @property
     def created(self):
-        """Gets the created of this ConfigurationSummary.
+        r"""Gets the created of this ConfigurationSummary.
 
         创建时间，格式为\"yyyy-MM-dd HH:mm:ss\"。
 
@@ -234,7 +234,7 @@ class ConfigurationSummary:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this ConfigurationSummary.
+        r"""Sets the created of this ConfigurationSummary.
 
         创建时间，格式为\"yyyy-MM-dd HH:mm:ss\"。
 
@@ -245,7 +245,7 @@ class ConfigurationSummary:
 
     @property
     def updated(self):
-        """Gets the updated of this ConfigurationSummary.
+        r"""Gets the updated of this ConfigurationSummary.
 
         更新时间，格式为\"yyyy-MM-dd HH:mm:ss\"。
 
@@ -256,7 +256,7 @@ class ConfigurationSummary:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ConfigurationSummary.
+        r"""Sets the updated of this ConfigurationSummary.
 
         更新时间，格式为\"yyyy-MM-dd HH:mm:ss\"。
 
@@ -267,7 +267,7 @@ class ConfigurationSummary:
 
     @property
     def user_defined(self):
-        """Gets the user_defined of this ConfigurationSummary.
+        r"""Gets the user_defined of this ConfigurationSummary.
 
         是否是用户自定义参数模板：  - false，表示为系统默认参数模板。 - true，表示为用户自定义参数模板。
 
@@ -278,7 +278,7 @@ class ConfigurationSummary:
 
     @user_defined.setter
     def user_defined(self, user_defined):
-        """Sets the user_defined of this ConfigurationSummary.
+        r"""Sets the user_defined of this ConfigurationSummary.
 
         是否是用户自定义参数模板：  - false，表示为系统默认参数模板。 - true，表示为用户自定义参数模板。
 

@@ -49,7 +49,7 @@ class ListMeetingFileResponseDTO:
     }
 
     def __init__(self, file_code=None, topic=None, file_id=None, file_name=None, file_size=None, thumbnail_file_id=None, thumbnail_file_name=None, thumbnail_file_size=None, pdf_file_id=None, pdf_file_name=None, pdf_file_size=None, user_id=None, creation_timestamp=None):
-        """ListMeetingFileResponseDTO
+        r"""ListMeetingFileResponseDTO
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class ListMeetingFileResponseDTO:
 
     @property
     def file_code(self):
-        """Gets the file_code of this ListMeetingFileResponseDTO.
+        r"""Gets the file_code of this ListMeetingFileResponseDTO.
 
         会议纪要文件码。
 
@@ -138,7 +138,7 @@ class ListMeetingFileResponseDTO:
 
     @file_code.setter
     def file_code(self, file_code):
-        """Sets the file_code of this ListMeetingFileResponseDTO.
+        r"""Sets the file_code of this ListMeetingFileResponseDTO.
 
         会议纪要文件码。
 
@@ -149,7 +149,7 @@ class ListMeetingFileResponseDTO:
 
     @property
     def topic(self):
-        """Gets the topic of this ListMeetingFileResponseDTO.
+        r"""Gets the topic of this ListMeetingFileResponseDTO.
 
         文件主题。
 
@@ -160,7 +160,7 @@ class ListMeetingFileResponseDTO:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this ListMeetingFileResponseDTO.
+        r"""Sets the topic of this ListMeetingFileResponseDTO.
 
         文件主题。
 
@@ -171,7 +171,7 @@ class ListMeetingFileResponseDTO:
 
     @property
     def file_id(self):
-        """Gets the file_id of this ListMeetingFileResponseDTO.
+        r"""Gets the file_id of this ListMeetingFileResponseDTO.
 
         文件Id。
 
@@ -182,7 +182,7 @@ class ListMeetingFileResponseDTO:
 
     @file_id.setter
     def file_id(self, file_id):
-        """Sets the file_id of this ListMeetingFileResponseDTO.
+        r"""Sets the file_id of this ListMeetingFileResponseDTO.
 
         文件Id。
 
@@ -193,7 +193,7 @@ class ListMeetingFileResponseDTO:
 
     @property
     def file_name(self):
-        """Gets the file_name of this ListMeetingFileResponseDTO.
+        r"""Gets the file_name of this ListMeetingFileResponseDTO.
 
         文件名。
 
@@ -204,7 +204,7 @@ class ListMeetingFileResponseDTO:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this ListMeetingFileResponseDTO.
+        r"""Sets the file_name of this ListMeetingFileResponseDTO.
 
         文件名。
 
@@ -215,7 +215,7 @@ class ListMeetingFileResponseDTO:
 
     @property
     def file_size(self):
-        """Gets the file_size of this ListMeetingFileResponseDTO.
+        r"""Gets the file_size of this ListMeetingFileResponseDTO.
 
         文件大小，单位字节。
 
@@ -226,7 +226,7 @@ class ListMeetingFileResponseDTO:
 
     @file_size.setter
     def file_size(self, file_size):
-        """Sets the file_size of this ListMeetingFileResponseDTO.
+        r"""Sets the file_size of this ListMeetingFileResponseDTO.
 
         文件大小，单位字节。
 
@@ -237,7 +237,7 @@ class ListMeetingFileResponseDTO:
 
     @property
     def thumbnail_file_id(self):
-        """Gets the thumbnail_file_id of this ListMeetingFileResponseDTO.
+        r"""Gets the thumbnail_file_id of this ListMeetingFileResponseDTO.
 
         缩略图文件Id。
 
@@ -248,7 +248,7 @@ class ListMeetingFileResponseDTO:
 
     @thumbnail_file_id.setter
     def thumbnail_file_id(self, thumbnail_file_id):
-        """Sets the thumbnail_file_id of this ListMeetingFileResponseDTO.
+        r"""Sets the thumbnail_file_id of this ListMeetingFileResponseDTO.
 
         缩略图文件Id。
 
@@ -259,7 +259,7 @@ class ListMeetingFileResponseDTO:
 
     @property
     def thumbnail_file_name(self):
-        """Gets the thumbnail_file_name of this ListMeetingFileResponseDTO.
+        r"""Gets the thumbnail_file_name of this ListMeetingFileResponseDTO.
 
         缩略图文件名。
 
@@ -270,7 +270,7 @@ class ListMeetingFileResponseDTO:
 
     @thumbnail_file_name.setter
     def thumbnail_file_name(self, thumbnail_file_name):
-        """Sets the thumbnail_file_name of this ListMeetingFileResponseDTO.
+        r"""Sets the thumbnail_file_name of this ListMeetingFileResponseDTO.
 
         缩略图文件名。
 
@@ -281,7 +281,7 @@ class ListMeetingFileResponseDTO:
 
     @property
     def thumbnail_file_size(self):
-        """Gets the thumbnail_file_size of this ListMeetingFileResponseDTO.
+        r"""Gets the thumbnail_file_size of this ListMeetingFileResponseDTO.
 
         缩略图文件大小，单位字节。
 
@@ -292,7 +292,7 @@ class ListMeetingFileResponseDTO:
 
     @thumbnail_file_size.setter
     def thumbnail_file_size(self, thumbnail_file_size):
-        """Sets the thumbnail_file_size of this ListMeetingFileResponseDTO.
+        r"""Sets the thumbnail_file_size of this ListMeetingFileResponseDTO.
 
         缩略图文件大小，单位字节。
 
@@ -303,7 +303,7 @@ class ListMeetingFileResponseDTO:
 
     @property
     def pdf_file_id(self):
-        """Gets the pdf_file_id of this ListMeetingFileResponseDTO.
+        r"""Gets the pdf_file_id of this ListMeetingFileResponseDTO.
 
         pdf文件Id。
 
@@ -314,7 +314,7 @@ class ListMeetingFileResponseDTO:
 
     @pdf_file_id.setter
     def pdf_file_id(self, pdf_file_id):
-        """Sets the pdf_file_id of this ListMeetingFileResponseDTO.
+        r"""Sets the pdf_file_id of this ListMeetingFileResponseDTO.
 
         pdf文件Id。
 
@@ -325,7 +325,7 @@ class ListMeetingFileResponseDTO:
 
     @property
     def pdf_file_name(self):
-        """Gets the pdf_file_name of this ListMeetingFileResponseDTO.
+        r"""Gets the pdf_file_name of this ListMeetingFileResponseDTO.
 
         pdf文件名。
 
@@ -336,7 +336,7 @@ class ListMeetingFileResponseDTO:
 
     @pdf_file_name.setter
     def pdf_file_name(self, pdf_file_name):
-        """Sets the pdf_file_name of this ListMeetingFileResponseDTO.
+        r"""Sets the pdf_file_name of this ListMeetingFileResponseDTO.
 
         pdf文件名。
 
@@ -347,7 +347,7 @@ class ListMeetingFileResponseDTO:
 
     @property
     def pdf_file_size(self):
-        """Gets the pdf_file_size of this ListMeetingFileResponseDTO.
+        r"""Gets the pdf_file_size of this ListMeetingFileResponseDTO.
 
         pdf文件大小，单位字节。
 
@@ -358,7 +358,7 @@ class ListMeetingFileResponseDTO:
 
     @pdf_file_size.setter
     def pdf_file_size(self, pdf_file_size):
-        """Sets the pdf_file_size of this ListMeetingFileResponseDTO.
+        r"""Sets the pdf_file_size of this ListMeetingFileResponseDTO.
 
         pdf文件大小，单位字节。
 
@@ -369,7 +369,7 @@ class ListMeetingFileResponseDTO:
 
     @property
     def user_id(self):
-        """Gets the user_id of this ListMeetingFileResponseDTO.
+        r"""Gets the user_id of this ListMeetingFileResponseDTO.
 
         用户UUID。
 
@@ -380,7 +380,7 @@ class ListMeetingFileResponseDTO:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ListMeetingFileResponseDTO.
+        r"""Sets the user_id of this ListMeetingFileResponseDTO.
 
         用户UUID。
 
@@ -391,7 +391,7 @@ class ListMeetingFileResponseDTO:
 
     @property
     def creation_timestamp(self):
-        """Gets the creation_timestamp of this ListMeetingFileResponseDTO.
+        r"""Gets the creation_timestamp of this ListMeetingFileResponseDTO.
 
         文件创建时间戳。
 
@@ -402,7 +402,7 @@ class ListMeetingFileResponseDTO:
 
     @creation_timestamp.setter
     def creation_timestamp(self, creation_timestamp):
-        """Sets the creation_timestamp of this ListMeetingFileResponseDTO.
+        r"""Sets the creation_timestamp of this ListMeetingFileResponseDTO.
 
         文件创建时间戳。
 

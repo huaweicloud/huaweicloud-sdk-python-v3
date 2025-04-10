@@ -25,7 +25,7 @@ class CreateFlinkSqlJobTemplateRequest:
     }
 
     def __init__(self, body=None):
-        """CreateFlinkSqlJobTemplateRequest
+        r"""CreateFlinkSqlJobTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateFlinkSqlJobTemplateRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateFlinkSqlJobTemplateRequest.
+        r"""Gets the body of this CreateFlinkSqlJobTemplateRequest.
 
         :return: The body of this CreateFlinkSqlJobTemplateRequest.
         :rtype: :class:`huaweicloudsdkdli.v1.CreateFlinkSqlJobTemplateRequestBody`
@@ -52,7 +52,7 @@ class CreateFlinkSqlJobTemplateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateFlinkSqlJobTemplateRequest.
+        r"""Sets the body of this CreateFlinkSqlJobTemplateRequest.
 
         :param body: The body of this CreateFlinkSqlJobTemplateRequest.
         :type body: :class:`huaweicloudsdkdli.v1.CreateFlinkSqlJobTemplateRequestBody`

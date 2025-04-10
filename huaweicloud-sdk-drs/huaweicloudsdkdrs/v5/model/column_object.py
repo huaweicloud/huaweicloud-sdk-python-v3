@@ -43,7 +43,7 @@ class ColumnObject:
     }
 
     def __init__(self, sync_type=None, primary_key_for_data_filtering=None, index_for_data_filtering=None, name=None, type=None, primary_key_for_column_filtering=None, filtered=None, additional=None, operation_type=None, value=None):
-        """ColumnObject
+        r"""ColumnObject
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ColumnObject:
 
     @property
     def sync_type(self):
-        """Gets the sync_type of this ColumnObject.
+        r"""Gets the sync_type of this ColumnObject.
 
         该列在实时同步场景下的类型。取值： - config：当该列作为数据过滤高级设置的关联列时，需要填写，同时如果该列是主建或优化查询所需的索引，则需要填写primary_key_for_data_filtering或index_for_data_filtering。（注意：是否同步该列到目标库由“filtered”属性控制，与库级、模式级、表级控制方式不同。）
 
@@ -117,7 +117,7 @@ class ColumnObject:
 
     @sync_type.setter
     def sync_type(self, sync_type):
-        """Sets the sync_type of this ColumnObject.
+        r"""Sets the sync_type of this ColumnObject.
 
         该列在实时同步场景下的类型。取值： - config：当该列作为数据过滤高级设置的关联列时，需要填写，同时如果该列是主建或优化查询所需的索引，则需要填写primary_key_for_data_filtering或index_for_data_filtering。（注意：是否同步该列到目标库由“filtered”属性控制，与库级、模式级、表级控制方式不同。）
 
@@ -128,7 +128,7 @@ class ColumnObject:
 
     @property
     def primary_key_for_data_filtering(self):
-        """Gets the primary_key_for_data_filtering of this ColumnObject.
+        r"""Gets the primary_key_for_data_filtering of this ColumnObject.
 
         该列是否在数据过滤高级设置场景下为主键，如果是主建则填该列列名，否则不填。
 
@@ -139,7 +139,7 @@ class ColumnObject:
 
     @primary_key_for_data_filtering.setter
     def primary_key_for_data_filtering(self, primary_key_for_data_filtering):
-        """Sets the primary_key_for_data_filtering of this ColumnObject.
+        r"""Sets the primary_key_for_data_filtering of this ColumnObject.
 
         该列是否在数据过滤高级设置场景下为主键，如果是主建则填该列列名，否则不填。
 
@@ -150,7 +150,7 @@ class ColumnObject:
 
     @property
     def index_for_data_filtering(self):
-        """Gets the index_for_data_filtering of this ColumnObject.
+        r"""Gets the index_for_data_filtering of this ColumnObject.
 
         优化查询所需的索引，将会为缓存数据增加索引，不会影响源表，当该列作为数据过滤高级设置的关联索引时，需要填写，否则不填。
 
@@ -161,7 +161,7 @@ class ColumnObject:
 
     @index_for_data_filtering.setter
     def index_for_data_filtering(self, index_for_data_filtering):
-        """Sets the index_for_data_filtering of this ColumnObject.
+        r"""Sets the index_for_data_filtering of this ColumnObject.
 
         优化查询所需的索引，将会为缓存数据增加索引，不会影响源表，当该列作为数据过滤高级设置的关联索引时，需要填写，否则不填。
 
@@ -172,7 +172,7 @@ class ColumnObject:
 
     @property
     def name(self):
-        """Gets the name of this ColumnObject.
+        r"""Gets the name of this ColumnObject.
 
         该列在目标库的名称（列名映射），当该列为“附加列”时须与数据库表级对象中列名保持一致。
 
@@ -183,7 +183,7 @@ class ColumnObject:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ColumnObject.
+        r"""Sets the name of this ColumnObject.
 
         该列在目标库的名称（列名映射），当该列为“附加列”时须与数据库表级对象中列名保持一致。
 
@@ -194,7 +194,7 @@ class ColumnObject:
 
     @property
     def type(self):
-        """Gets the type of this ColumnObject.
+        r"""Gets the type of this ColumnObject.
 
         该列字段的数据类型。 列过滤：填写源列字段的数据类型。 附加列：新填充的列指定字段的数据类型，根据不同操作类型来决定取值范围与约束。取值： - 以默认值方式，支持：int,long,varchar(256),datetime,timestamp。 - 以create_time为列，支持：long,datetime,timestamp。 - 以update_time为列，支持：long,datetime,timestamp。 - 以表达式为列，支持：varchar(256)，且列值仅为：concat(__current_database, '@', __current_table) - 以serverName@database@table为列，支持：varchar(256)。
 
@@ -205,7 +205,7 @@ class ColumnObject:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ColumnObject.
+        r"""Sets the type of this ColumnObject.
 
         该列字段的数据类型。 列过滤：填写源列字段的数据类型。 附加列：新填充的列指定字段的数据类型，根据不同操作类型来决定取值范围与约束。取值： - 以默认值方式，支持：int,long,varchar(256),datetime,timestamp。 - 以create_time为列，支持：long,datetime,timestamp。 - 以update_time为列，支持：long,datetime,timestamp。 - 以表达式为列，支持：varchar(256)，且列值仅为：concat(__current_database, '@', __current_table) - 以serverName@database@table为列，支持：varchar(256)。
 
@@ -216,7 +216,7 @@ class ColumnObject:
 
     @property
     def primary_key_for_column_filtering(self):
-        """Gets the primary_key_for_column_filtering of this ColumnObject.
+        r"""Gets the primary_key_for_column_filtering of this ColumnObject.
 
         该列是否在列映射场景下为主键，如果是主建则填PRI，否则填空。
 
@@ -227,7 +227,7 @@ class ColumnObject:
 
     @primary_key_for_column_filtering.setter
     def primary_key_for_column_filtering(self, primary_key_for_column_filtering):
-        """Sets the primary_key_for_column_filtering of this ColumnObject.
+        r"""Sets the primary_key_for_column_filtering of this ColumnObject.
 
         该列是否在列映射场景下为主键，如果是主建则填PRI，否则填空。
 
@@ -238,7 +238,7 @@ class ColumnObject:
 
     @property
     def filtered(self):
-        """Gets the filtered of this ColumnObject.
+        r"""Gets the filtered of this ColumnObject.
 
         该列是否进列过滤，不能与附加列additional同时使用。取值： - true：表示同步该列。 - false：表示过滤该列不同步。
 
@@ -249,7 +249,7 @@ class ColumnObject:
 
     @filtered.setter
     def filtered(self, filtered):
-        """Sets the filtered of this ColumnObject.
+        r"""Sets the filtered of this ColumnObject.
 
         该列是否进列过滤，不能与附加列additional同时使用。取值： - true：表示同步该列。 - false：表示过滤该列不同步。
 
@@ -260,7 +260,7 @@ class ColumnObject:
 
     @property
     def additional(self):
-        """Gets the additional of this ColumnObject.
+        r"""Gets the additional of this ColumnObject.
 
         该列是否为附加列，当该列为附加列时：name必须与表级对象中列名一致，并且不能与列过滤filtered同时使用。
 
@@ -271,7 +271,7 @@ class ColumnObject:
 
     @additional.setter
     def additional(self, additional):
-        """Sets the additional of this ColumnObject.
+        r"""Sets the additional of this ColumnObject.
 
         该列是否为附加列，当该列为附加列时：name必须与表级对象中列名一致，并且不能与列过滤filtered同时使用。
 
@@ -282,7 +282,7 @@ class ColumnObject:
 
     @property
     def operation_type(self):
-        """Gets the operation_type of this ColumnObject.
+        r"""Gets the operation_type of this ColumnObject.
 
         操作类型，以特定的操作类型填充新加的列。取值： - 以默认值方式：\"operation_type\":\"ADDITIONALCOLUMN,default_value\" - 以create_time为列：\"operation_type\":\"ADDITIONALCOLUMN,create_time\" - 以update_time为列：\"operation_type\":\"ADDITIONALCOLUMN,update_time\" - 以表达式为列：\"operation_type\":\"ADDITIONALCOLUMN,expression\" - 以serverName@database@table为列：\"operation_type\":\"ADDITIONALCOLUMN,server_database_table\"
 
@@ -293,7 +293,7 @@ class ColumnObject:
 
     @operation_type.setter
     def operation_type(self, operation_type):
-        """Sets the operation_type of this ColumnObject.
+        r"""Sets the operation_type of this ColumnObject.
 
         操作类型，以特定的操作类型填充新加的列。取值： - 以默认值方式：\"operation_type\":\"ADDITIONALCOLUMN,default_value\" - 以create_time为列：\"operation_type\":\"ADDITIONALCOLUMN,create_time\" - 以update_time为列：\"operation_type\":\"ADDITIONALCOLUMN,update_time\" - 以表达式为列：\"operation_type\":\"ADDITIONALCOLUMN,expression\" - 以serverName@database@table为列：\"operation_type\":\"ADDITIONALCOLUMN,server_database_table\"
 
@@ -304,7 +304,7 @@ class ColumnObject:
 
     @property
     def value(self):
-        """Gets the value of this ColumnObject.
+        r"""Gets the value of this ColumnObject.
 
         附加列的值。约束： - 当操作类型仅“以默认值方式”，“以serverName@database@table为列”时，才支持输入对应字段类型的值。 - 当操作类型为“以表达式为列”时，该字段为固定值\"concat(__current_database, '@', __current_table)\"，不需要填写。
 
@@ -315,7 +315,7 @@ class ColumnObject:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ColumnObject.
+        r"""Sets the value of this ColumnObject.
 
         附加列的值。约束： - 当操作类型仅“以默认值方式”，“以serverName@database@table为列”时，才支持输入对应字段类型的值。 - 当操作类型为“以表达式为列”时，该字段为固定值\"concat(__current_database, '@', __current_table)\"，不需要填写。
 

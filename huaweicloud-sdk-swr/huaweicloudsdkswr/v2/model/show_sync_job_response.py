@@ -28,7 +28,7 @@ class ShowSyncJobResponse(SdkResponse):
     }
 
     def __init__(self, body=None, content_range=None):
-        """ShowSyncJobResponse
+        r"""ShowSyncJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowSyncJobResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ShowSyncJobResponse.
+        r"""Gets the body of this ShowSyncJobResponse.
 
         :return: The body of this ShowSyncJobResponse.
         :rtype: list[:class:`huaweicloudsdkswr.v2.SyncJob`]
@@ -60,7 +60,7 @@ class ShowSyncJobResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowSyncJobResponse.
+        r"""Sets the body of this ShowSyncJobResponse.
 
         :param body: The body of this ShowSyncJobResponse.
         :type body: list[:class:`huaweicloudsdkswr.v2.SyncJob`]
@@ -69,7 +69,7 @@ class ShowSyncJobResponse(SdkResponse):
 
     @property
     def content_range(self):
-        """Gets the content_range of this ShowSyncJobResponse.
+        r"""Gets the content_range of this ShowSyncJobResponse.
 
         :return: The content_range of this ShowSyncJobResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class ShowSyncJobResponse(SdkResponse):
 
     @content_range.setter
     def content_range(self, content_range):
-        """Sets the content_range of this ShowSyncJobResponse.
+        r"""Sets the content_range of this ShowSyncJobResponse.
 
         :param content_range: The content_range of this ShowSyncJobResponse.
         :type content_range: str

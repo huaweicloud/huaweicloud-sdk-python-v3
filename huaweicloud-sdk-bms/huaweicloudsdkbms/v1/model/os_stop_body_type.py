@@ -27,7 +27,7 @@ class OsStopBodyType:
     }
 
     def __init__(self, type=None, servers=None):
-        """OsStopBodyType
+        r"""OsStopBodyType
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class OsStopBodyType:
 
     @property
     def type(self):
-        """Gets the type of this OsStopBodyType.
+        r"""Gets the type of this OsStopBodyType.
 
         关机类型：SOFT：普通关机（不生效）。HARD：强制关机（默认）。
 
@@ -60,7 +60,7 @@ class OsStopBodyType:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this OsStopBodyType.
+        r"""Sets the type of this OsStopBodyType.
 
         关机类型：SOFT：普通关机（不生效）。HARD：强制关机（默认）。
 
@@ -71,7 +71,7 @@ class OsStopBodyType:
 
     @property
     def servers(self):
-        """Gets the servers of this OsStopBodyType.
+        r"""Gets the servers of this OsStopBodyType.
 
         裸金属服务器ID列表，详情请参见表3 servers字段数据结构说明。
 
@@ -82,7 +82,7 @@ class OsStopBodyType:
 
     @servers.setter
     def servers(self, servers):
-        """Sets the servers of this OsStopBodyType.
+        r"""Sets the servers of this OsStopBodyType.
 
         裸金属服务器ID列表，详情请参见表3 servers字段数据结构说明。
 

@@ -29,7 +29,7 @@ class SmsTemplateVariableAttrReq:
     }
 
     def __init__(self, variable_desc=None, variable_index=None, variable_type=None):
-        """SmsTemplateVariableAttrReq
+        r"""SmsTemplateVariableAttrReq
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class SmsTemplateVariableAttrReq:
 
     @property
     def variable_desc(self):
-        """Gets the variable_desc of this SmsTemplateVariableAttrReq.
+        r"""Gets the variable_desc of this SmsTemplateVariableAttrReq.
 
         变量说明，当变量类型为TEXT时，必填
 
@@ -66,7 +66,7 @@ class SmsTemplateVariableAttrReq:
 
     @variable_desc.setter
     def variable_desc(self, variable_desc):
-        """Sets the variable_desc of this SmsTemplateVariableAttrReq.
+        r"""Sets the variable_desc of this SmsTemplateVariableAttrReq.
 
         变量说明，当变量类型为TEXT时，必填
 
@@ -77,7 +77,7 @@ class SmsTemplateVariableAttrReq:
 
     @property
     def variable_index(self):
-        """Gets the variable_index of this SmsTemplateVariableAttrReq.
+        r"""Gets the variable_index of this SmsTemplateVariableAttrReq.
 
         变量索引，对应模板内容变量索引
 
@@ -88,7 +88,7 @@ class SmsTemplateVariableAttrReq:
 
     @variable_index.setter
     def variable_index(self, variable_index):
-        """Sets the variable_index of this SmsTemplateVariableAttrReq.
+        r"""Sets the variable_index of this SmsTemplateVariableAttrReq.
 
         变量索引，对应模板内容变量索引
 
@@ -99,7 +99,7 @@ class SmsTemplateVariableAttrReq:
 
     @property
     def variable_type(self):
-        """Gets the variable_type of this SmsTemplateVariableAttrReq.
+        r"""Gets the variable_type of this SmsTemplateVariableAttrReq.
 
         变量类型，目前支持：PHONE|CHARDIGIT|DATETIME|MONEY|TEXT|NEWTEXT|LONGTEXT
 
@@ -110,7 +110,7 @@ class SmsTemplateVariableAttrReq:
 
     @variable_type.setter
     def variable_type(self, variable_type):
-        """Sets the variable_type of this SmsTemplateVariableAttrReq.
+        r"""Sets the variable_type of this SmsTemplateVariableAttrReq.
 
         变量类型，目前支持：PHONE|CHARDIGIT|DATETIME|MONEY|TEXT|NEWTEXT|LONGTEXT
 

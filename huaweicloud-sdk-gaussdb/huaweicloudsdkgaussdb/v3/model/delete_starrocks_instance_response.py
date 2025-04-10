@@ -26,7 +26,7 @@ class DeleteStarrocksInstanceResponse(SdkResponse):
     }
 
     def __init__(self, workflow_id=None):
-        """DeleteStarrocksInstanceResponse
+        r"""DeleteStarrocksInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteStarrocksInstanceResponse(SdkResponse):
 
     @property
     def workflow_id(self):
-        """Gets the workflow_id of this DeleteStarrocksInstanceResponse.
+        r"""Gets the workflow_id of this DeleteStarrocksInstanceResponse.
 
         工作流ID。
 
@@ -55,7 +55,7 @@ class DeleteStarrocksInstanceResponse(SdkResponse):
 
     @workflow_id.setter
     def workflow_id(self, workflow_id):
-        """Sets the workflow_id of this DeleteStarrocksInstanceResponse.
+        r"""Sets the workflow_id of this DeleteStarrocksInstanceResponse.
 
         工作流ID。
 

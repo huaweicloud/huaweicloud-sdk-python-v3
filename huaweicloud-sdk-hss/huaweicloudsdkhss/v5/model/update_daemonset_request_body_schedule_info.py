@@ -27,7 +27,7 @@ class UpdateDaemonsetRequestBodyScheduleInfo:
     }
 
     def __init__(self, node_selector=None, pod_tolerances=None):
-        """UpdateDaemonsetRequestBodyScheduleInfo
+        r"""UpdateDaemonsetRequestBodyScheduleInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateDaemonsetRequestBodyScheduleInfo:
 
     @property
     def node_selector(self):
-        """Gets the node_selector of this UpdateDaemonsetRequestBodyScheduleInfo.
+        r"""Gets the node_selector of this UpdateDaemonsetRequestBodyScheduleInfo.
 
         节点选择器
 
@@ -61,7 +61,7 @@ class UpdateDaemonsetRequestBodyScheduleInfo:
 
     @node_selector.setter
     def node_selector(self, node_selector):
-        """Sets the node_selector of this UpdateDaemonsetRequestBodyScheduleInfo.
+        r"""Sets the node_selector of this UpdateDaemonsetRequestBodyScheduleInfo.
 
         节点选择器
 
@@ -72,7 +72,7 @@ class UpdateDaemonsetRequestBodyScheduleInfo:
 
     @property
     def pod_tolerances(self):
-        """Gets the pod_tolerances of this UpdateDaemonsetRequestBodyScheduleInfo.
+        r"""Gets the pod_tolerances of this UpdateDaemonsetRequestBodyScheduleInfo.
 
         pod容忍度
 
@@ -83,7 +83,7 @@ class UpdateDaemonsetRequestBodyScheduleInfo:
 
     @pod_tolerances.setter
     def pod_tolerances(self, pod_tolerances):
-        """Sets the pod_tolerances of this UpdateDaemonsetRequestBodyScheduleInfo.
+        r"""Sets the pod_tolerances of this UpdateDaemonsetRequestBodyScheduleInfo.
 
         pod容忍度
 

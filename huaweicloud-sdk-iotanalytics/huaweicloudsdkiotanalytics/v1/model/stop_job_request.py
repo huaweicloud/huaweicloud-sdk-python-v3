@@ -27,7 +27,7 @@ class StopJobRequest:
     }
 
     def __init__(self, job_id=None, trigger_savepoint=None):
-        """StopJobRequest
+        r"""StopJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class StopJobRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this StopJobRequest.
+        r"""Gets the job_id of this StopJobRequest.
 
         作业ID
 
@@ -60,7 +60,7 @@ class StopJobRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this StopJobRequest.
+        r"""Sets the job_id of this StopJobRequest.
 
         作业ID
 
@@ -71,7 +71,7 @@ class StopJobRequest:
 
     @property
     def trigger_savepoint(self):
-        """Gets the trigger_savepoint of this StopJobRequest.
+        r"""Gets the trigger_savepoint of this StopJobRequest.
 
         停止作业触发savepoint
 
@@ -82,7 +82,7 @@ class StopJobRequest:
 
     @trigger_savepoint.setter
     def trigger_savepoint(self, trigger_savepoint):
-        """Sets the trigger_savepoint of this StopJobRequest.
+        r"""Sets the trigger_savepoint of this StopJobRequest.
 
         停止作业触发savepoint
 

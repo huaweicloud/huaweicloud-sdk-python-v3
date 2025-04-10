@@ -25,7 +25,7 @@ class UpdateAclAccountRemarkRequestBody:
     }
 
     def __init__(self, description=None):
-        """UpdateAclAccountRemarkRequestBody
+        r"""UpdateAclAccountRemarkRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateAclAccountRemarkRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateAclAccountRemarkRequestBody.
+        r"""Gets the description of this UpdateAclAccountRemarkRequestBody.
 
         备注信息
 
@@ -54,7 +54,7 @@ class UpdateAclAccountRemarkRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateAclAccountRemarkRequestBody.
+        r"""Sets the description of this UpdateAclAccountRemarkRequestBody.
 
         备注信息
 

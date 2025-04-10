@@ -43,7 +43,7 @@ class ProcessesHostResponseInfo:
     }
 
     def __init__(self, hash=None, host_ip=None, host_name=None, launch_params=None, launch_time=None, process_path=None, process_pid=None, run_permission=None, container_id=None, container_name=None):
-        """ProcessesHostResponseInfo
+        r"""ProcessesHostResponseInfo
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ProcessesHostResponseInfo:
 
     @property
     def hash(self):
-        """Gets the hash of this ProcessesHostResponseInfo.
+        r"""Gets the hash of this ProcessesHostResponseInfo.
 
         path对应的sha256值
 
@@ -117,7 +117,7 @@ class ProcessesHostResponseInfo:
 
     @hash.setter
     def hash(self, hash):
-        """Sets the hash of this ProcessesHostResponseInfo.
+        r"""Sets the hash of this ProcessesHostResponseInfo.
 
         path对应的sha256值
 
@@ -128,7 +128,7 @@ class ProcessesHostResponseInfo:
 
     @property
     def host_ip(self):
-        """Gets the host_ip of this ProcessesHostResponseInfo.
+        r"""Gets the host_ip of this ProcessesHostResponseInfo.
 
         主机ip
 
@@ -139,7 +139,7 @@ class ProcessesHostResponseInfo:
 
     @host_ip.setter
     def host_ip(self, host_ip):
-        """Sets the host_ip of this ProcessesHostResponseInfo.
+        r"""Sets the host_ip of this ProcessesHostResponseInfo.
 
         主机ip
 
@@ -150,7 +150,7 @@ class ProcessesHostResponseInfo:
 
     @property
     def host_name(self):
-        """Gets the host_name of this ProcessesHostResponseInfo.
+        r"""Gets the host_name of this ProcessesHostResponseInfo.
 
         主机名称
 
@@ -161,7 +161,7 @@ class ProcessesHostResponseInfo:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this ProcessesHostResponseInfo.
+        r"""Sets the host_name of this ProcessesHostResponseInfo.
 
         主机名称
 
@@ -172,7 +172,7 @@ class ProcessesHostResponseInfo:
 
     @property
     def launch_params(self):
-        """Gets the launch_params of this ProcessesHostResponseInfo.
+        r"""Gets the launch_params of this ProcessesHostResponseInfo.
 
         启动参数
 
@@ -183,7 +183,7 @@ class ProcessesHostResponseInfo:
 
     @launch_params.setter
     def launch_params(self, launch_params):
-        """Sets the launch_params of this ProcessesHostResponseInfo.
+        r"""Sets the launch_params of this ProcessesHostResponseInfo.
 
         启动参数
 
@@ -194,7 +194,7 @@ class ProcessesHostResponseInfo:
 
     @property
     def launch_time(self):
-        """Gets the launch_time of this ProcessesHostResponseInfo.
+        r"""Gets the launch_time of this ProcessesHostResponseInfo.
 
         启动时间
 
@@ -205,7 +205,7 @@ class ProcessesHostResponseInfo:
 
     @launch_time.setter
     def launch_time(self, launch_time):
-        """Sets the launch_time of this ProcessesHostResponseInfo.
+        r"""Sets the launch_time of this ProcessesHostResponseInfo.
 
         启动时间
 
@@ -216,7 +216,7 @@ class ProcessesHostResponseInfo:
 
     @property
     def process_path(self):
-        """Gets the process_path of this ProcessesHostResponseInfo.
+        r"""Gets the process_path of this ProcessesHostResponseInfo.
 
         进程可执行文件路径
 
@@ -227,7 +227,7 @@ class ProcessesHostResponseInfo:
 
     @process_path.setter
     def process_path(self, process_path):
-        """Sets the process_path of this ProcessesHostResponseInfo.
+        r"""Sets the process_path of this ProcessesHostResponseInfo.
 
         进程可执行文件路径
 
@@ -238,7 +238,7 @@ class ProcessesHostResponseInfo:
 
     @property
     def process_pid(self):
-        """Gets the process_pid of this ProcessesHostResponseInfo.
+        r"""Gets the process_pid of this ProcessesHostResponseInfo.
 
         进程pid
 
@@ -249,7 +249,7 @@ class ProcessesHostResponseInfo:
 
     @process_pid.setter
     def process_pid(self, process_pid):
-        """Sets the process_pid of this ProcessesHostResponseInfo.
+        r"""Sets the process_pid of this ProcessesHostResponseInfo.
 
         进程pid
 
@@ -260,7 +260,7 @@ class ProcessesHostResponseInfo:
 
     @property
     def run_permission(self):
-        """Gets the run_permission of this ProcessesHostResponseInfo.
+        r"""Gets the run_permission of this ProcessesHostResponseInfo.
 
         文件权限
 
@@ -271,7 +271,7 @@ class ProcessesHostResponseInfo:
 
     @run_permission.setter
     def run_permission(self, run_permission):
-        """Sets the run_permission of this ProcessesHostResponseInfo.
+        r"""Sets the run_permission of this ProcessesHostResponseInfo.
 
         文件权限
 
@@ -282,7 +282,7 @@ class ProcessesHostResponseInfo:
 
     @property
     def container_id(self):
-        """Gets the container_id of this ProcessesHostResponseInfo.
+        r"""Gets the container_id of this ProcessesHostResponseInfo.
 
         容器id
 
@@ -293,7 +293,7 @@ class ProcessesHostResponseInfo:
 
     @container_id.setter
     def container_id(self, container_id):
-        """Sets the container_id of this ProcessesHostResponseInfo.
+        r"""Sets the container_id of this ProcessesHostResponseInfo.
 
         容器id
 
@@ -304,7 +304,7 @@ class ProcessesHostResponseInfo:
 
     @property
     def container_name(self):
-        """Gets the container_name of this ProcessesHostResponseInfo.
+        r"""Gets the container_name of this ProcessesHostResponseInfo.
 
         容器名称
 
@@ -315,7 +315,7 @@ class ProcessesHostResponseInfo:
 
     @container_name.setter
     def container_name(self, container_name):
-        """Sets the container_name of this ProcessesHostResponseInfo.
+        r"""Sets the container_name of this ProcessesHostResponseInfo.
 
         容器名称
 

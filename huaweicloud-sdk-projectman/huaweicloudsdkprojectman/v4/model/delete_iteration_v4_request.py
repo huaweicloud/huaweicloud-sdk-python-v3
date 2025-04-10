@@ -27,7 +27,7 @@ class DeleteIterationV4Request:
     }
 
     def __init__(self, project_id=None, iteration_id=None):
-        """DeleteIterationV4Request
+        r"""DeleteIterationV4Request
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteIterationV4Request:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DeleteIterationV4Request.
+        r"""Gets the project_id of this DeleteIterationV4Request.
 
         devcloud项目的32位id
 
@@ -59,7 +59,7 @@ class DeleteIterationV4Request:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DeleteIterationV4Request.
+        r"""Sets the project_id of this DeleteIterationV4Request.
 
         devcloud项目的32位id
 
@@ -70,7 +70,7 @@ class DeleteIterationV4Request:
 
     @property
     def iteration_id(self):
-        """Gets the iteration_id of this DeleteIterationV4Request.
+        r"""Gets the iteration_id of this DeleteIterationV4Request.
 
         迭代id
 
@@ -81,7 +81,7 @@ class DeleteIterationV4Request:
 
     @iteration_id.setter
     def iteration_id(self, iteration_id):
-        """Sets the iteration_id of this DeleteIterationV4Request.
+        r"""Sets the iteration_id of this DeleteIterationV4Request.
 
         迭代id
 

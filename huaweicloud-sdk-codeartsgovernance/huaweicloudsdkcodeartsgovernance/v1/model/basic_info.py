@@ -51,7 +51,7 @@ class BasicInfo:
     }
 
     def __init__(self, app_name=None, package_name=None, file_size=None, version_code=None, min_sdk=None, target_sdk=None, sha1=None, sha256=None, md5=None, issuer=None, owner=None, effective_date=None, algorithm=None, public_key=None):
-        """BasicInfo
+        r"""BasicInfo
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class BasicInfo:
 
     @property
     def app_name(self):
-        """Gets the app_name of this BasicInfo.
+        r"""Gets the app_name of this BasicInfo.
 
         应用名称，移动应用特有
 
@@ -145,7 +145,7 @@ class BasicInfo:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this BasicInfo.
+        r"""Sets the app_name of this BasicInfo.
 
         应用名称，移动应用特有
 
@@ -156,7 +156,7 @@ class BasicInfo:
 
     @property
     def package_name(self):
-        """Gets the package_name of this BasicInfo.
+        r"""Gets the package_name of this BasicInfo.
 
         文件包名
 
@@ -167,7 +167,7 @@ class BasicInfo:
 
     @package_name.setter
     def package_name(self, package_name):
-        """Sets the package_name of this BasicInfo.
+        r"""Sets the package_name of this BasicInfo.
 
         文件包名
 
@@ -178,7 +178,7 @@ class BasicInfo:
 
     @property
     def file_size(self):
-        """Gets the file_size of this BasicInfo.
+        r"""Gets the file_size of this BasicInfo.
 
         文件大小
 
@@ -189,7 +189,7 @@ class BasicInfo:
 
     @file_size.setter
     def file_size(self, file_size):
-        """Sets the file_size of this BasicInfo.
+        r"""Sets the file_size of this BasicInfo.
 
         文件大小
 
@@ -200,7 +200,7 @@ class BasicInfo:
 
     @property
     def version_code(self):
-        """Gets the version_code of this BasicInfo.
+        r"""Gets the version_code of this BasicInfo.
 
         版本号
 
@@ -211,7 +211,7 @@ class BasicInfo:
 
     @version_code.setter
     def version_code(self, version_code):
-        """Sets the version_code of this BasicInfo.
+        r"""Sets the version_code of this BasicInfo.
 
         版本号
 
@@ -222,7 +222,7 @@ class BasicInfo:
 
     @property
     def min_sdk(self):
-        """Gets the min_sdk of this BasicInfo.
+        r"""Gets the min_sdk of this BasicInfo.
 
         最小SDK版本
 
@@ -233,7 +233,7 @@ class BasicInfo:
 
     @min_sdk.setter
     def min_sdk(self, min_sdk):
-        """Sets the min_sdk of this BasicInfo.
+        r"""Sets the min_sdk of this BasicInfo.
 
         最小SDK版本
 
@@ -244,7 +244,7 @@ class BasicInfo:
 
     @property
     def target_sdk(self):
-        """Gets the target_sdk of this BasicInfo.
+        r"""Gets the target_sdk of this BasicInfo.
 
         目标SDK版本
 
@@ -255,7 +255,7 @@ class BasicInfo:
 
     @target_sdk.setter
     def target_sdk(self, target_sdk):
-        """Sets the target_sdk of this BasicInfo.
+        r"""Sets the target_sdk of this BasicInfo.
 
         目标SDK版本
 
@@ -266,7 +266,7 @@ class BasicInfo:
 
     @property
     def sha1(self):
-        """Gets the sha1 of this BasicInfo.
+        r"""Gets the sha1 of this BasicInfo.
 
         文件SHA1值
 
@@ -277,7 +277,7 @@ class BasicInfo:
 
     @sha1.setter
     def sha1(self, sha1):
-        """Sets the sha1 of this BasicInfo.
+        r"""Sets the sha1 of this BasicInfo.
 
         文件SHA1值
 
@@ -288,7 +288,7 @@ class BasicInfo:
 
     @property
     def sha256(self):
-        """Gets the sha256 of this BasicInfo.
+        r"""Gets the sha256 of this BasicInfo.
 
         文件SHA256值
 
@@ -299,7 +299,7 @@ class BasicInfo:
 
     @sha256.setter
     def sha256(self, sha256):
-        """Sets the sha256 of this BasicInfo.
+        r"""Sets the sha256 of this BasicInfo.
 
         文件SHA256值
 
@@ -310,7 +310,7 @@ class BasicInfo:
 
     @property
     def md5(self):
-        """Gets the md5 of this BasicInfo.
+        r"""Gets the md5 of this BasicInfo.
 
         文件MD5值
 
@@ -321,7 +321,7 @@ class BasicInfo:
 
     @md5.setter
     def md5(self, md5):
-        """Sets the md5 of this BasicInfo.
+        r"""Sets the md5 of this BasicInfo.
 
         文件MD5值
 
@@ -332,7 +332,7 @@ class BasicInfo:
 
     @property
     def issuer(self):
-        """Gets the issuer of this BasicInfo.
+        r"""Gets the issuer of this BasicInfo.
 
         证书发布者
 
@@ -343,7 +343,7 @@ class BasicInfo:
 
     @issuer.setter
     def issuer(self, issuer):
-        """Sets the issuer of this BasicInfo.
+        r"""Sets the issuer of this BasicInfo.
 
         证书发布者
 
@@ -354,7 +354,7 @@ class BasicInfo:
 
     @property
     def owner(self):
-        """Gets the owner of this BasicInfo.
+        r"""Gets the owner of this BasicInfo.
 
         证书拥有者
 
@@ -365,7 +365,7 @@ class BasicInfo:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this BasicInfo.
+        r"""Sets the owner of this BasicInfo.
 
         证书拥有者
 
@@ -376,7 +376,7 @@ class BasicInfo:
 
     @property
     def effective_date(self):
-        """Gets the effective_date of this BasicInfo.
+        r"""Gets the effective_date of this BasicInfo.
 
         证书有效日期
 
@@ -387,7 +387,7 @@ class BasicInfo:
 
     @effective_date.setter
     def effective_date(self, effective_date):
-        """Sets the effective_date of this BasicInfo.
+        r"""Sets the effective_date of this BasicInfo.
 
         证书有效日期
 
@@ -398,7 +398,7 @@ class BasicInfo:
 
     @property
     def algorithm(self):
-        """Gets the algorithm of this BasicInfo.
+        r"""Gets the algorithm of this BasicInfo.
 
         算法
 
@@ -409,7 +409,7 @@ class BasicInfo:
 
     @algorithm.setter
     def algorithm(self, algorithm):
-        """Sets the algorithm of this BasicInfo.
+        r"""Sets the algorithm of this BasicInfo.
 
         算法
 
@@ -420,7 +420,7 @@ class BasicInfo:
 
     @property
     def public_key(self):
-        """Gets the public_key of this BasicInfo.
+        r"""Gets the public_key of this BasicInfo.
 
         证书公钥
 
@@ -431,7 +431,7 @@ class BasicInfo:
 
     @public_key.setter
     def public_key(self, public_key):
-        """Sets the public_key of this BasicInfo.
+        r"""Sets the public_key of this BasicInfo.
 
         证书公钥
 

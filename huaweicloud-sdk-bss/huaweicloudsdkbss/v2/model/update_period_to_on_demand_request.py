@@ -25,7 +25,7 @@ class UpdatePeriodToOnDemandRequest:
     }
 
     def __init__(self, body=None):
-        """UpdatePeriodToOnDemandRequest
+        r"""UpdatePeriodToOnDemandRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdatePeriodToOnDemandRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePeriodToOnDemandRequest.
+        r"""Gets the body of this UpdatePeriodToOnDemandRequest.
 
         :return: The body of this UpdatePeriodToOnDemandRequest.
         :rtype: :class:`huaweicloudsdkbss.v2.PeriodToOnDemandReq`
@@ -52,7 +52,7 @@ class UpdatePeriodToOnDemandRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePeriodToOnDemandRequest.
+        r"""Sets the body of this UpdatePeriodToOnDemandRequest.
 
         :param body: The body of this UpdatePeriodToOnDemandRequest.
         :type body: :class:`huaweicloudsdkbss.v2.PeriodToOnDemandReq`

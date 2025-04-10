@@ -25,7 +25,7 @@ class MetaDataForAlarmHistory:
     }
 
     def __init__(self, total=None):
-        """MetaDataForAlarmHistory
+        r"""MetaDataForAlarmHistory
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class MetaDataForAlarmHistory:
 
     @property
     def total(self):
-        """Gets the total of this MetaDataForAlarmHistory.
+        r"""Gets the total of this MetaDataForAlarmHistory.
 
         查询告警历史返回的总条数。
 
@@ -53,7 +53,7 @@ class MetaDataForAlarmHistory:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this MetaDataForAlarmHistory.
+        r"""Sets the total of this MetaDataForAlarmHistory.
 
         查询告警历史返回的总条数。
 

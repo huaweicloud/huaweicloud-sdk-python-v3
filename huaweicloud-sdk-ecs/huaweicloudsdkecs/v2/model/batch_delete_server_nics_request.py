@@ -27,7 +27,7 @@ class BatchDeleteServerNicsRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """BatchDeleteServerNicsRequest
+        r"""BatchDeleteServerNicsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeleteServerNicsRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this BatchDeleteServerNicsRequest.
+        r"""Gets the server_id of this BatchDeleteServerNicsRequest.
 
         云服务器ID。
 
@@ -60,7 +60,7 @@ class BatchDeleteServerNicsRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this BatchDeleteServerNicsRequest.
+        r"""Sets the server_id of this BatchDeleteServerNicsRequest.
 
         云服务器ID。
 
@@ -71,7 +71,7 @@ class BatchDeleteServerNicsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteServerNicsRequest.
+        r"""Gets the body of this BatchDeleteServerNicsRequest.
 
         :return: The body of this BatchDeleteServerNicsRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.BatchDeleteServerNicsRequestBody`
@@ -80,7 +80,7 @@ class BatchDeleteServerNicsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteServerNicsRequest.
+        r"""Sets the body of this BatchDeleteServerNicsRequest.
 
         :param body: The body of this BatchDeleteServerNicsRequest.
         :type body: :class:`huaweicloudsdkecs.v2.BatchDeleteServerNicsRequestBody`

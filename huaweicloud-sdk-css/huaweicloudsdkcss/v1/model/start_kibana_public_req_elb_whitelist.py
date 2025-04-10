@@ -27,7 +27,7 @@ class StartKibanaPublicReqElbWhitelist:
     }
 
     def __init__(self, enable_white_list=None, white_list=None):
-        """StartKibanaPublicReqElbWhitelist
+        r"""StartKibanaPublicReqElbWhitelist
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class StartKibanaPublicReqElbWhitelist:
 
     @property
     def enable_white_list(self):
-        """Gets the enable_white_list of this StartKibanaPublicReqElbWhitelist.
+        r"""Gets the enable_white_list of this StartKibanaPublicReqElbWhitelist.
 
         是否开启白名单。 - true: 开启白名单。 - false: 关闭白名单。
 
@@ -59,7 +59,7 @@ class StartKibanaPublicReqElbWhitelist:
 
     @enable_white_list.setter
     def enable_white_list(self, enable_white_list):
-        """Sets the enable_white_list of this StartKibanaPublicReqElbWhitelist.
+        r"""Sets the enable_white_list of this StartKibanaPublicReqElbWhitelist.
 
         是否开启白名单。 - true: 开启白名单。 - false: 关闭白名单。
 
@@ -70,7 +70,7 @@ class StartKibanaPublicReqElbWhitelist:
 
     @property
     def white_list(self):
-        """Gets the white_list of this StartKibanaPublicReqElbWhitelist.
+        r"""Gets the white_list of this StartKibanaPublicReqElbWhitelist.
 
         白名单。
 
@@ -81,7 +81,7 @@ class StartKibanaPublicReqElbWhitelist:
 
     @white_list.setter
     def white_list(self, white_list):
-        """Sets the white_list of this StartKibanaPublicReqElbWhitelist.
+        r"""Sets the white_list of this StartKibanaPublicReqElbWhitelist.
 
         白名单。
 

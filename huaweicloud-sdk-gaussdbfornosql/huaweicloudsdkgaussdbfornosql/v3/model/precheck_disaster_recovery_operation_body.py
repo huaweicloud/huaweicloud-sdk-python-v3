@@ -27,7 +27,7 @@ class PrecheckDisasterRecoveryOperationBody:
     }
 
     def __init__(self, operation=None, disaster_recovery_instance=None):
-        """PrecheckDisasterRecoveryOperationBody
+        r"""PrecheckDisasterRecoveryOperationBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class PrecheckDisasterRecoveryOperationBody:
 
     @property
     def operation(self):
-        """Gets the operation of this PrecheckDisasterRecoveryOperationBody.
+        r"""Gets the operation of this PrecheckDisasterRecoveryOperationBody.
 
         指定预校验的具体容灾操作。
 
@@ -60,7 +60,7 @@ class PrecheckDisasterRecoveryOperationBody:
 
     @operation.setter
     def operation(self, operation):
-        """Sets the operation of this PrecheckDisasterRecoveryOperationBody.
+        r"""Sets the operation of this PrecheckDisasterRecoveryOperationBody.
 
         指定预校验的具体容灾操作。
 
@@ -71,7 +71,7 @@ class PrecheckDisasterRecoveryOperationBody:
 
     @property
     def disaster_recovery_instance(self):
-        """Gets the disaster_recovery_instance of this PrecheckDisasterRecoveryOperationBody.
+        r"""Gets the disaster_recovery_instance of this PrecheckDisasterRecoveryOperationBody.
 
         :return: The disaster_recovery_instance of this PrecheckDisasterRecoveryOperationBody.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.PrecheckDisasterRecoveryInstance`
@@ -80,7 +80,7 @@ class PrecheckDisasterRecoveryOperationBody:
 
     @disaster_recovery_instance.setter
     def disaster_recovery_instance(self, disaster_recovery_instance):
-        """Sets the disaster_recovery_instance of this PrecheckDisasterRecoveryOperationBody.
+        r"""Sets the disaster_recovery_instance of this PrecheckDisasterRecoveryOperationBody.
 
         :param disaster_recovery_instance: The disaster_recovery_instance of this PrecheckDisasterRecoveryOperationBody.
         :type disaster_recovery_instance: :class:`huaweicloudsdkgaussdbfornosql.v3.PrecheckDisasterRecoveryInstance`

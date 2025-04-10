@@ -29,7 +29,7 @@ class TaskInput:
     }
 
     def __init__(self, type=None, data=None, vcn=None):
-        """TaskInput
+        r"""TaskInput
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class TaskInput:
 
     @property
     def type(self):
-        """Gets the type of this TaskInput.
+        r"""Gets the type of this TaskInput.
 
         作业的输入类型，必填。可选类型有obs（对象存储服务存储的文件），vis（视频接入服务的视频流），url（指定的文件地址或取流地址），edgecamera（绑定在IEF的边缘摄像头），edgerestful（从自定义的流媒体服务器通过Restful接口获取取流地址），vcn（VCN设备）。
 
@@ -66,7 +66,7 @@ class TaskInput:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this TaskInput.
+        r"""Sets the type of this TaskInput.
 
         作业的输入类型，必填。可选类型有obs（对象存储服务存储的文件），vis（视频接入服务的视频流），url（指定的文件地址或取流地址），edgecamera（绑定在IEF的边缘摄像头），edgerestful（从自定义的流媒体服务器通过Restful接口获取取流地址），vcn（VCN设备）。
 
@@ -77,7 +77,7 @@ class TaskInput:
 
     @property
     def data(self):
-        """Gets the data of this TaskInput.
+        r"""Gets the data of this TaskInput.
 
         作业的输入详情，针对不同的输入类型有不同的配置。创建时允许填写多路输入，但更新时，obs以外其余的输入类型只允许填写一路输入
 
@@ -88,7 +88,7 @@ class TaskInput:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this TaskInput.
+        r"""Sets the data of this TaskInput.
 
         作业的输入详情，针对不同的输入类型有不同的配置。创建时允许填写多路输入，但更新时，obs以外其余的输入类型只允许填写一路输入
 
@@ -99,7 +99,7 @@ class TaskInput:
 
     @property
     def vcn(self):
-        """Gets the vcn of this TaskInput.
+        r"""Gets the vcn of this TaskInput.
 
         :return: The vcn of this TaskInput.
         :rtype: :class:`huaweicloudsdkcampusgo.v2.TaskInputVcn`
@@ -108,7 +108,7 @@ class TaskInput:
 
     @vcn.setter
     def vcn(self, vcn):
-        """Sets the vcn of this TaskInput.
+        r"""Sets the vcn of this TaskInput.
 
         :param vcn: The vcn of this TaskInput.
         :type vcn: :class:`huaweicloudsdkcampusgo.v2.TaskInputVcn`

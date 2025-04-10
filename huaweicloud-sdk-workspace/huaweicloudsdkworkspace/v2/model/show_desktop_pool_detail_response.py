@@ -80,7 +80,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, type=None, description=None, created_time=None, charging_mode=None, desktop_count=None, desktop_used=None, on_demand_desktop_num=None, availability_zone=None, subnet_id=None, product=None, image_id=None, image_name=None, image_os_type=None, image_os_version=None, image_os_platform=None, image_product_code=None, root_volume=None, data_volumes=None, security_groups=None, disconnected_retention_period=None, enable_autoscale=None, autoscale_policy=None, status=None, enterprise_project_id=None, in_maintenance_mode=None, desktop_name_policy_id=None):
-        """ShowDesktopPoolDetailResponse
+        r"""ShowDesktopPoolDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -233,7 +233,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowDesktopPoolDetailResponse.
+        r"""Gets the id of this ShowDesktopPoolDetailResponse.
 
         桌面池ID。
 
@@ -244,7 +244,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowDesktopPoolDetailResponse.
+        r"""Sets the id of this ShowDesktopPoolDetailResponse.
 
         桌面池ID。
 
@@ -255,7 +255,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowDesktopPoolDetailResponse.
+        r"""Gets the name of this ShowDesktopPoolDetailResponse.
 
         桌面池名称。
 
@@ -266,7 +266,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowDesktopPoolDetailResponse.
+        r"""Sets the name of this ShowDesktopPoolDetailResponse.
 
         桌面池名称。
 
@@ -277,7 +277,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowDesktopPoolDetailResponse.
+        r"""Gets the type of this ShowDesktopPoolDetailResponse.
 
         桌面池类型。DYNAMIC：动态池，STATIC：静态池。
 
@@ -288,7 +288,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowDesktopPoolDetailResponse.
+        r"""Sets the type of this ShowDesktopPoolDetailResponse.
 
         桌面池类型。DYNAMIC：动态池，STATIC：静态池。
 
@@ -299,7 +299,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowDesktopPoolDetailResponse.
+        r"""Gets the description of this ShowDesktopPoolDetailResponse.
 
         桌面池描述。
 
@@ -310,7 +310,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowDesktopPoolDetailResponse.
+        r"""Sets the description of this ShowDesktopPoolDetailResponse.
 
         桌面池描述。
 
@@ -321,7 +321,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this ShowDesktopPoolDetailResponse.
+        r"""Gets the created_time of this ShowDesktopPoolDetailResponse.
 
         创建时间，格式为：UTC格式，例如“2022-05-11T11:45:42.000Z”。
 
@@ -332,7 +332,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this ShowDesktopPoolDetailResponse.
+        r"""Sets the created_time of this ShowDesktopPoolDetailResponse.
 
         创建时间，格式为：UTC格式，例如“2022-05-11T11:45:42.000Z”。
 
@@ -343,7 +343,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this ShowDesktopPoolDetailResponse.
+        r"""Gets the charging_mode of this ShowDesktopPoolDetailResponse.
 
         计费模式，0：包周期，1：按需。
 
@@ -354,7 +354,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this ShowDesktopPoolDetailResponse.
+        r"""Sets the charging_mode of this ShowDesktopPoolDetailResponse.
 
         计费模式，0：包周期，1：按需。
 
@@ -365,7 +365,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @property
     def desktop_count(self):
-        """Gets the desktop_count of this ShowDesktopPoolDetailResponse.
+        r"""Gets the desktop_count of this ShowDesktopPoolDetailResponse.
 
         桌面池总桌面数量。
 
@@ -376,7 +376,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @desktop_count.setter
     def desktop_count(self, desktop_count):
-        """Sets the desktop_count of this ShowDesktopPoolDetailResponse.
+        r"""Sets the desktop_count of this ShowDesktopPoolDetailResponse.
 
         桌面池总桌面数量。
 
@@ -387,7 +387,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @property
     def desktop_used(self):
-        """Gets the desktop_used of this ShowDesktopPoolDetailResponse.
+        r"""Gets the desktop_used of this ShowDesktopPoolDetailResponse.
 
         桌面池绑定用户的桌面个数。
 
@@ -398,7 +398,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @desktop_used.setter
     def desktop_used(self, desktop_used):
-        """Sets the desktop_used of this ShowDesktopPoolDetailResponse.
+        r"""Sets the desktop_used of this ShowDesktopPoolDetailResponse.
 
         桌面池绑定用户的桌面个数。
 
@@ -409,7 +409,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @property
     def on_demand_desktop_num(self):
-        """Gets the on_demand_desktop_num of this ShowDesktopPoolDetailResponse.
+        r"""Gets the on_demand_desktop_num of this ShowDesktopPoolDetailResponse.
 
         桌面池按需桌面个数（不包含删除中的桌面）。
 
@@ -420,7 +420,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @on_demand_desktop_num.setter
     def on_demand_desktop_num(self, on_demand_desktop_num):
-        """Sets the on_demand_desktop_num of this ShowDesktopPoolDetailResponse.
+        r"""Sets the on_demand_desktop_num of this ShowDesktopPoolDetailResponse.
 
         桌面池按需桌面个数（不包含删除中的桌面）。
 
@@ -431,7 +431,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this ShowDesktopPoolDetailResponse.
+        r"""Gets the availability_zone of this ShowDesktopPoolDetailResponse.
 
         可用区。
 
@@ -442,7 +442,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this ShowDesktopPoolDetailResponse.
+        r"""Sets the availability_zone of this ShowDesktopPoolDetailResponse.
 
         可用区。
 
@@ -453,7 +453,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ShowDesktopPoolDetailResponse.
+        r"""Gets the subnet_id of this ShowDesktopPoolDetailResponse.
 
         子网ID。
 
@@ -464,7 +464,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ShowDesktopPoolDetailResponse.
+        r"""Sets the subnet_id of this ShowDesktopPoolDetailResponse.
 
         子网ID。
 
@@ -475,7 +475,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @property
     def product(self):
-        """Gets the product of this ShowDesktopPoolDetailResponse.
+        r"""Gets the product of this ShowDesktopPoolDetailResponse.
 
         :return: The product of this ShowDesktopPoolDetailResponse.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ProductInfo`
@@ -484,7 +484,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @product.setter
     def product(self, product):
-        """Sets the product of this ShowDesktopPoolDetailResponse.
+        r"""Sets the product of this ShowDesktopPoolDetailResponse.
 
         :param product: The product of this ShowDesktopPoolDetailResponse.
         :type product: :class:`huaweicloudsdkworkspace.v2.ProductInfo`
@@ -493,7 +493,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @property
     def image_id(self):
-        """Gets the image_id of this ShowDesktopPoolDetailResponse.
+        r"""Gets the image_id of this ShowDesktopPoolDetailResponse.
 
         镜像ID。
 
@@ -504,7 +504,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this ShowDesktopPoolDetailResponse.
+        r"""Sets the image_id of this ShowDesktopPoolDetailResponse.
 
         镜像ID。
 
@@ -515,7 +515,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @property
     def image_name(self):
-        """Gets the image_name of this ShowDesktopPoolDetailResponse.
+        r"""Gets the image_name of this ShowDesktopPoolDetailResponse.
 
         镜像名称。
 
@@ -526,7 +526,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @image_name.setter
     def image_name(self, image_name):
-        """Sets the image_name of this ShowDesktopPoolDetailResponse.
+        r"""Sets the image_name of this ShowDesktopPoolDetailResponse.
 
         镜像名称。
 
@@ -537,7 +537,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @property
     def image_os_type(self):
-        """Gets the image_os_type of this ShowDesktopPoolDetailResponse.
+        r"""Gets the image_os_type of this ShowDesktopPoolDetailResponse.
 
         镜像OS类型。
 
@@ -548,7 +548,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @image_os_type.setter
     def image_os_type(self, image_os_type):
-        """Sets the image_os_type of this ShowDesktopPoolDetailResponse.
+        r"""Sets the image_os_type of this ShowDesktopPoolDetailResponse.
 
         镜像OS类型。
 
@@ -559,7 +559,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @property
     def image_os_version(self):
-        """Gets the image_os_version of this ShowDesktopPoolDetailResponse.
+        r"""Gets the image_os_version of this ShowDesktopPoolDetailResponse.
 
         镜像OS版本。
 
@@ -570,7 +570,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @image_os_version.setter
     def image_os_version(self, image_os_version):
-        """Sets the image_os_version of this ShowDesktopPoolDetailResponse.
+        r"""Sets the image_os_version of this ShowDesktopPoolDetailResponse.
 
         镜像OS版本。
 
@@ -581,7 +581,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @property
     def image_os_platform(self):
-        """Gets the image_os_platform of this ShowDesktopPoolDetailResponse.
+        r"""Gets the image_os_platform of this ShowDesktopPoolDetailResponse.
 
         镜像OS平台。
 
@@ -592,7 +592,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @image_os_platform.setter
     def image_os_platform(self, image_os_platform):
-        """Sets the image_os_platform of this ShowDesktopPoolDetailResponse.
+        r"""Sets the image_os_platform of this ShowDesktopPoolDetailResponse.
 
         镜像OS平台。
 
@@ -603,7 +603,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @property
     def image_product_code(self):
-        """Gets the image_product_code of this ShowDesktopPoolDetailResponse.
+        r"""Gets the image_product_code of this ShowDesktopPoolDetailResponse.
 
         镜像的productCode（specCode）。
 
@@ -614,7 +614,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @image_product_code.setter
     def image_product_code(self, image_product_code):
-        """Sets the image_product_code of this ShowDesktopPoolDetailResponse.
+        r"""Sets the image_product_code of this ShowDesktopPoolDetailResponse.
 
         镜像的productCode（specCode）。
 
@@ -625,7 +625,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @property
     def root_volume(self):
-        """Gets the root_volume of this ShowDesktopPoolDetailResponse.
+        r"""Gets the root_volume of this ShowDesktopPoolDetailResponse.
 
         :return: The root_volume of this ShowDesktopPoolDetailResponse.
         :rtype: :class:`huaweicloudsdkworkspace.v2.VolumeInfo`
@@ -634,7 +634,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @root_volume.setter
     def root_volume(self, root_volume):
-        """Sets the root_volume of this ShowDesktopPoolDetailResponse.
+        r"""Sets the root_volume of this ShowDesktopPoolDetailResponse.
 
         :param root_volume: The root_volume of this ShowDesktopPoolDetailResponse.
         :type root_volume: :class:`huaweicloudsdkworkspace.v2.VolumeInfo`
@@ -643,7 +643,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @property
     def data_volumes(self):
-        """Gets the data_volumes of this ShowDesktopPoolDetailResponse.
+        r"""Gets the data_volumes of this ShowDesktopPoolDetailResponse.
 
         数据盘列表。
 
@@ -654,7 +654,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @data_volumes.setter
     def data_volumes(self, data_volumes):
-        """Sets the data_volumes of this ShowDesktopPoolDetailResponse.
+        r"""Sets the data_volumes of this ShowDesktopPoolDetailResponse.
 
         数据盘列表。
 
@@ -665,7 +665,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this ShowDesktopPoolDetailResponse.
+        r"""Gets the security_groups of this ShowDesktopPoolDetailResponse.
 
         桌面安全组。
 
@@ -676,7 +676,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this ShowDesktopPoolDetailResponse.
+        r"""Sets the security_groups of this ShowDesktopPoolDetailResponse.
 
         桌面安全组。
 
@@ -687,7 +687,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @property
     def disconnected_retention_period(self):
-        """Gets the disconnected_retention_period of this ShowDesktopPoolDetailResponse.
+        r"""Gets the disconnected_retention_period of this ShowDesktopPoolDetailResponse.
 
         动态池桌面断连多少分钟内，保留用户与桌面的绑定关系，超时后自动解绑。
 
@@ -698,7 +698,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @disconnected_retention_period.setter
     def disconnected_retention_period(self, disconnected_retention_period):
-        """Sets the disconnected_retention_period of this ShowDesktopPoolDetailResponse.
+        r"""Sets the disconnected_retention_period of this ShowDesktopPoolDetailResponse.
 
         动态池桌面断连多少分钟内，保留用户与桌面的绑定关系，超时后自动解绑。
 
@@ -709,7 +709,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @property
     def enable_autoscale(self):
-        """Gets the enable_autoscale of this ShowDesktopPoolDetailResponse.
+        r"""Gets the enable_autoscale of this ShowDesktopPoolDetailResponse.
 
         桌面池是否开启弹性伸缩类型，为false则表示不开启弹性伸缩，为true则表示开启弹性伸缩。
 
@@ -720,7 +720,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @enable_autoscale.setter
     def enable_autoscale(self, enable_autoscale):
-        """Sets the enable_autoscale of this ShowDesktopPoolDetailResponse.
+        r"""Sets the enable_autoscale of this ShowDesktopPoolDetailResponse.
 
         桌面池是否开启弹性伸缩类型，为false则表示不开启弹性伸缩，为true则表示开启弹性伸缩。
 
@@ -731,7 +731,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @property
     def autoscale_policy(self):
-        """Gets the autoscale_policy of this ShowDesktopPoolDetailResponse.
+        r"""Gets the autoscale_policy of this ShowDesktopPoolDetailResponse.
 
         :return: The autoscale_policy of this ShowDesktopPoolDetailResponse.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AutoscalePolicy`
@@ -740,7 +740,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @autoscale_policy.setter
     def autoscale_policy(self, autoscale_policy):
-        """Sets the autoscale_policy of this ShowDesktopPoolDetailResponse.
+        r"""Sets the autoscale_policy of this ShowDesktopPoolDetailResponse.
 
         :param autoscale_policy: The autoscale_policy of this ShowDesktopPoolDetailResponse.
         :type autoscale_policy: :class:`huaweicloudsdkworkspace.v2.AutoscalePolicy`
@@ -749,7 +749,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowDesktopPoolDetailResponse.
+        r"""Gets the status of this ShowDesktopPoolDetailResponse.
 
         桌面池状态。 - STEADY：稳态 - TEMPORARY：临时态 - EXIST_FROZEN：存在冻结桌面 - UNKNOWN：未知态
 
@@ -760,7 +760,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowDesktopPoolDetailResponse.
+        r"""Sets the status of this ShowDesktopPoolDetailResponse.
 
         桌面池状态。 - STEADY：稳态 - TEMPORARY：临时态 - EXIST_FROZEN：存在冻结桌面 - UNKNOWN：未知态
 
@@ -771,7 +771,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowDesktopPoolDetailResponse.
+        r"""Gets the enterprise_project_id of this ShowDesktopPoolDetailResponse.
 
         企业项目ID
 
@@ -782,7 +782,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowDesktopPoolDetailResponse.
+        r"""Sets the enterprise_project_id of this ShowDesktopPoolDetailResponse.
 
         企业项目ID
 
@@ -793,7 +793,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @property
     def in_maintenance_mode(self):
-        """Gets the in_maintenance_mode of this ShowDesktopPoolDetailResponse.
+        r"""Gets the in_maintenance_mode of this ShowDesktopPoolDetailResponse.
 
         桌面池是否处于管理员维护模式
 
@@ -804,7 +804,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @in_maintenance_mode.setter
     def in_maintenance_mode(self, in_maintenance_mode):
-        """Sets the in_maintenance_mode of this ShowDesktopPoolDetailResponse.
+        r"""Sets the in_maintenance_mode of this ShowDesktopPoolDetailResponse.
 
         桌面池是否处于管理员维护模式
 
@@ -815,7 +815,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @property
     def desktop_name_policy_id(self):
-        """Gets the desktop_name_policy_id of this ShowDesktopPoolDetailResponse.
+        r"""Gets the desktop_name_policy_id of this ShowDesktopPoolDetailResponse.
 
         策略id，用于指定生成桌面名称策略。
 
@@ -826,7 +826,7 @@ class ShowDesktopPoolDetailResponse(SdkResponse):
 
     @desktop_name_policy_id.setter
     def desktop_name_policy_id(self, desktop_name_policy_id):
-        """Sets the desktop_name_policy_id of this ShowDesktopPoolDetailResponse.
+        r"""Sets the desktop_name_policy_id of this ShowDesktopPoolDetailResponse.
 
         策略id，用于指定生成桌面名称策略。
 

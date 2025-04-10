@@ -25,7 +25,7 @@ class UpdateDesktopSidsRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateDesktopSidsRequest
+        r"""UpdateDesktopSidsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateDesktopSidsRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDesktopSidsRequest.
+        r"""Gets the body of this UpdateDesktopSidsRequest.
 
         :return: The body of this UpdateDesktopSidsRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.UpdateDesktopSidReq`
@@ -52,7 +52,7 @@ class UpdateDesktopSidsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDesktopSidsRequest.
+        r"""Sets the body of this UpdateDesktopSidsRequest.
 
         :param body: The body of this UpdateDesktopSidsRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.UpdateDesktopSidReq`

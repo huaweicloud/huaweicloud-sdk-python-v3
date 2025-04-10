@@ -29,7 +29,7 @@ class ResetUserPasswrodRequest:
     }
 
     def __init__(self, instance_id=None, user_name=None, body=None):
-        """ResetUserPasswrodRequest
+        r"""ResetUserPasswrodRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ResetUserPasswrodRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ResetUserPasswrodRequest.
+        r"""Gets the instance_id of this ResetUserPasswrodRequest.
 
         实例ID。
 
@@ -66,7 +66,7 @@ class ResetUserPasswrodRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ResetUserPasswrodRequest.
+        r"""Sets the instance_id of this ResetUserPasswrodRequest.
 
         实例ID。
 
@@ -77,7 +77,7 @@ class ResetUserPasswrodRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ResetUserPasswrodRequest.
+        r"""Gets the user_name of this ResetUserPasswrodRequest.
 
         用户名称。
 
@@ -88,7 +88,7 @@ class ResetUserPasswrodRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ResetUserPasswrodRequest.
+        r"""Sets the user_name of this ResetUserPasswrodRequest.
 
         用户名称。
 
@@ -99,7 +99,7 @@ class ResetUserPasswrodRequest:
 
     @property
     def body(self):
-        """Gets the body of this ResetUserPasswrodRequest.
+        r"""Gets the body of this ResetUserPasswrodRequest.
 
         :return: The body of this ResetUserPasswrodRequest.
         :rtype: :class:`huaweicloudsdkkafka.v2.ResetUserPasswrodReq`
@@ -108,7 +108,7 @@ class ResetUserPasswrodRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ResetUserPasswrodRequest.
+        r"""Sets the body of this ResetUserPasswrodRequest.
 
         :param body: The body of this ResetUserPasswrodRequest.
         :type body: :class:`huaweicloudsdkkafka.v2.ResetUserPasswrodReq`

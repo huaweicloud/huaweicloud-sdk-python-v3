@@ -23,7 +23,7 @@ class NameDef:
     }
 
     def __init__(self):
-        """NameDef
+        r"""NameDef
 
         The model defined in huaweicloud sdk
 

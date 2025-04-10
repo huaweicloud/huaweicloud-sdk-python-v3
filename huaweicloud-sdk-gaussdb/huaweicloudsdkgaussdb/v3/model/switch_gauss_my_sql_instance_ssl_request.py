@@ -29,7 +29,7 @@ class SwitchGaussMySqlInstanceSslRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """SwitchGaussMySqlInstanceSslRequest
+        r"""SwitchGaussMySqlInstanceSslRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class SwitchGaussMySqlInstanceSslRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this SwitchGaussMySqlInstanceSslRequest.
+        r"""Gets the x_language of this SwitchGaussMySqlInstanceSslRequest.
 
         语言。
 
@@ -67,7 +67,7 @@ class SwitchGaussMySqlInstanceSslRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this SwitchGaussMySqlInstanceSslRequest.
+        r"""Sets the x_language of this SwitchGaussMySqlInstanceSslRequest.
 
         语言。
 
@@ -78,7 +78,7 @@ class SwitchGaussMySqlInstanceSslRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SwitchGaussMySqlInstanceSslRequest.
+        r"""Gets the instance_id of this SwitchGaussMySqlInstanceSslRequest.
 
         租户在某一project下的实例ID。
 
@@ -89,7 +89,7 @@ class SwitchGaussMySqlInstanceSslRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SwitchGaussMySqlInstanceSslRequest.
+        r"""Sets the instance_id of this SwitchGaussMySqlInstanceSslRequest.
 
         租户在某一project下的实例ID。
 
@@ -100,7 +100,7 @@ class SwitchGaussMySqlInstanceSslRequest:
 
     @property
     def body(self):
-        """Gets the body of this SwitchGaussMySqlInstanceSslRequest.
+        r"""Gets the body of this SwitchGaussMySqlInstanceSslRequest.
 
         :return: The body of this SwitchGaussMySqlInstanceSslRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.SwitchSSLRequest`
@@ -109,7 +109,7 @@ class SwitchGaussMySqlInstanceSslRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SwitchGaussMySqlInstanceSslRequest.
+        r"""Sets the body of this SwitchGaussMySqlInstanceSslRequest.
 
         :param body: The body of this SwitchGaussMySqlInstanceSslRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.SwitchSSLRequest`

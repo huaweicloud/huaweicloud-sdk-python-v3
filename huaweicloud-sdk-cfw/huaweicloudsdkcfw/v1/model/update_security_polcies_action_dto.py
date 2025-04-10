@@ -29,7 +29,7 @@ class UpdateSecurityPolciesActionDto:
     }
 
     def __init__(self, object_id=None, action=None, rule_ids=None):
-        """UpdateSecurityPolciesActionDto
+        r"""UpdateSecurityPolciesActionDto
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class UpdateSecurityPolciesActionDto:
 
     @property
     def object_id(self):
-        """Gets the object_id of this UpdateSecurityPolciesActionDto.
+        r"""Gets the object_id of this UpdateSecurityPolciesActionDto.
 
         防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。
 
@@ -65,7 +65,7 @@ class UpdateSecurityPolciesActionDto:
 
     @object_id.setter
     def object_id(self, object_id):
-        """Sets the object_id of this UpdateSecurityPolciesActionDto.
+        r"""Sets the object_id of this UpdateSecurityPolciesActionDto.
 
         防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id，type可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。
 
@@ -76,7 +76,7 @@ class UpdateSecurityPolciesActionDto:
 
     @property
     def action(self):
-        """Gets the action of this UpdateSecurityPolciesActionDto.
+        r"""Gets the action of this UpdateSecurityPolciesActionDto.
 
         规则动作，enable表示允许通行（permit），disable表示拒绝通行（deny）
 
@@ -87,7 +87,7 @@ class UpdateSecurityPolciesActionDto:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this UpdateSecurityPolciesActionDto.
+        r"""Sets the action of this UpdateSecurityPolciesActionDto.
 
         规则动作，enable表示允许通行（permit），disable表示拒绝通行（deny）
 
@@ -98,7 +98,7 @@ class UpdateSecurityPolciesActionDto:
 
     @property
     def rule_ids(self):
-        """Gets the rule_ids of this UpdateSecurityPolciesActionDto.
+        r"""Gets the rule_ids of this UpdateSecurityPolciesActionDto.
 
         规则id列表，规则id可通过[查询防护规则接口](ListAclRules.xml)查询获得，通过返回值中的data.records.rule_id（.表示各对象之间层级的区分）获得。
 
@@ -109,7 +109,7 @@ class UpdateSecurityPolciesActionDto:
 
     @rule_ids.setter
     def rule_ids(self, rule_ids):
-        """Sets the rule_ids of this UpdateSecurityPolciesActionDto.
+        r"""Sets the rule_ids of this UpdateSecurityPolciesActionDto.
 
         规则id列表，规则id可通过[查询防护规则接口](ListAclRules.xml)查询获得，通过返回值中的data.records.rule_id（.表示各对象之间层级的区分）获得。
 

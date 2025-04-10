@@ -51,7 +51,7 @@ class ListInstanceTopicsRespTopics:
     }
 
     def __init__(self, policies_only=None, name=None, replication=None, partition=None, retention_time=None, sync_message_flush=None, sync_replication=None, app_id=None, app_name=None, permissions=None, external_configs=None, description=None, sensitive_word=None, topic_type=None):
-        """ListInstanceTopicsRespTopics
+        r"""ListInstanceTopicsRespTopics
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class ListInstanceTopicsRespTopics:
 
     @property
     def policies_only(self):
-        """Gets the policies_only of this ListInstanceTopicsRespTopics.
+        r"""Gets the policies_only of this ListInstanceTopicsRespTopics.
 
         是否只更新策略。
 
@@ -145,7 +145,7 @@ class ListInstanceTopicsRespTopics:
 
     @policies_only.setter
     def policies_only(self, policies_only):
-        """Sets the policies_only of this ListInstanceTopicsRespTopics.
+        r"""Sets the policies_only of this ListInstanceTopicsRespTopics.
 
         是否只更新策略。
 
@@ -156,7 +156,7 @@ class ListInstanceTopicsRespTopics:
 
     @property
     def name(self):
-        """Gets the name of this ListInstanceTopicsRespTopics.
+        r"""Gets the name of this ListInstanceTopicsRespTopics.
 
         topic名称。
 
@@ -167,7 +167,7 @@ class ListInstanceTopicsRespTopics:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListInstanceTopicsRespTopics.
+        r"""Sets the name of this ListInstanceTopicsRespTopics.
 
         topic名称。
 
@@ -178,7 +178,7 @@ class ListInstanceTopicsRespTopics:
 
     @property
     def replication(self):
-        """Gets the replication of this ListInstanceTopicsRespTopics.
+        r"""Gets the replication of this ListInstanceTopicsRespTopics.
 
         副本数，配置数据的可靠性。
 
@@ -189,7 +189,7 @@ class ListInstanceTopicsRespTopics:
 
     @replication.setter
     def replication(self, replication):
-        """Sets the replication of this ListInstanceTopicsRespTopics.
+        r"""Sets the replication of this ListInstanceTopicsRespTopics.
 
         副本数，配置数据的可靠性。
 
@@ -200,7 +200,7 @@ class ListInstanceTopicsRespTopics:
 
     @property
     def partition(self):
-        """Gets the partition of this ListInstanceTopicsRespTopics.
+        r"""Gets the partition of this ListInstanceTopicsRespTopics.
 
         topic分区数，设置消费的并发数。
 
@@ -211,7 +211,7 @@ class ListInstanceTopicsRespTopics:
 
     @partition.setter
     def partition(self, partition):
-        """Sets the partition of this ListInstanceTopicsRespTopics.
+        r"""Sets the partition of this ListInstanceTopicsRespTopics.
 
         topic分区数，设置消费的并发数。
 
@@ -222,7 +222,7 @@ class ListInstanceTopicsRespTopics:
 
     @property
     def retention_time(self):
-        """Gets the retention_time of this ListInstanceTopicsRespTopics.
+        r"""Gets the retention_time of this ListInstanceTopicsRespTopics.
 
         消息老化时间。
 
@@ -233,7 +233,7 @@ class ListInstanceTopicsRespTopics:
 
     @retention_time.setter
     def retention_time(self, retention_time):
-        """Sets the retention_time of this ListInstanceTopicsRespTopics.
+        r"""Sets the retention_time of this ListInstanceTopicsRespTopics.
 
         消息老化时间。
 
@@ -244,7 +244,7 @@ class ListInstanceTopicsRespTopics:
 
     @property
     def sync_message_flush(self):
-        """Gets the sync_message_flush of this ListInstanceTopicsRespTopics.
+        r"""Gets the sync_message_flush of this ListInstanceTopicsRespTopics.
 
         是否使用同步落盘。默认值为false。同步落盘会导致性能降低。
 
@@ -255,7 +255,7 @@ class ListInstanceTopicsRespTopics:
 
     @sync_message_flush.setter
     def sync_message_flush(self, sync_message_flush):
-        """Sets the sync_message_flush of this ListInstanceTopicsRespTopics.
+        r"""Sets the sync_message_flush of this ListInstanceTopicsRespTopics.
 
         是否使用同步落盘。默认值为false。同步落盘会导致性能降低。
 
@@ -266,7 +266,7 @@ class ListInstanceTopicsRespTopics:
 
     @property
     def sync_replication(self):
-        """Gets the sync_replication of this ListInstanceTopicsRespTopics.
+        r"""Gets the sync_replication of this ListInstanceTopicsRespTopics.
 
         是否开启同步复制，开启后，客户端生产消息时相应的也要设置acks=-1，否则不生效,默认关闭。
 
@@ -277,7 +277,7 @@ class ListInstanceTopicsRespTopics:
 
     @sync_replication.setter
     def sync_replication(self, sync_replication):
-        """Sets the sync_replication of this ListInstanceTopicsRespTopics.
+        r"""Sets the sync_replication of this ListInstanceTopicsRespTopics.
 
         是否开启同步复制，开启后，客户端生产消息时相应的也要设置acks=-1，否则不生效,默认关闭。
 
@@ -288,7 +288,7 @@ class ListInstanceTopicsRespTopics:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ListInstanceTopicsRespTopics.
+        r"""Gets the app_id of this ListInstanceTopicsRespTopics.
 
         应用ID。
 
@@ -299,7 +299,7 @@ class ListInstanceTopicsRespTopics:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ListInstanceTopicsRespTopics.
+        r"""Sets the app_id of this ListInstanceTopicsRespTopics.
 
         应用ID。
 
@@ -310,7 +310,7 @@ class ListInstanceTopicsRespTopics:
 
     @property
     def app_name(self):
-        """Gets the app_name of this ListInstanceTopicsRespTopics.
+        r"""Gets the app_name of this ListInstanceTopicsRespTopics.
 
         应用名称。
 
@@ -321,7 +321,7 @@ class ListInstanceTopicsRespTopics:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ListInstanceTopicsRespTopics.
+        r"""Sets the app_name of this ListInstanceTopicsRespTopics.
 
         应用名称。
 
@@ -332,7 +332,7 @@ class ListInstanceTopicsRespTopics:
 
     @property
     def permissions(self):
-        """Gets the permissions of this ListInstanceTopicsRespTopics.
+        r"""Gets the permissions of this ListInstanceTopicsRespTopics.
 
         允许操作的权限。
 
@@ -343,7 +343,7 @@ class ListInstanceTopicsRespTopics:
 
     @permissions.setter
     def permissions(self, permissions):
-        """Sets the permissions of this ListInstanceTopicsRespTopics.
+        r"""Sets the permissions of this ListInstanceTopicsRespTopics.
 
         允许操作的权限。
 
@@ -354,7 +354,7 @@ class ListInstanceTopicsRespTopics:
 
     @property
     def external_configs(self):
-        """Gets the external_configs of this ListInstanceTopicsRespTopics.
+        r"""Gets the external_configs of this ListInstanceTopicsRespTopics.
 
         其他配置。
 
@@ -365,7 +365,7 @@ class ListInstanceTopicsRespTopics:
 
     @external_configs.setter
     def external_configs(self, external_configs):
-        """Sets the external_configs of this ListInstanceTopicsRespTopics.
+        r"""Sets the external_configs of this ListInstanceTopicsRespTopics.
 
         其他配置。
 
@@ -376,7 +376,7 @@ class ListInstanceTopicsRespTopics:
 
     @property
     def description(self):
-        """Gets the description of this ListInstanceTopicsRespTopics.
+        r"""Gets the description of this ListInstanceTopicsRespTopics.
 
         描述。
 
@@ -387,7 +387,7 @@ class ListInstanceTopicsRespTopics:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListInstanceTopicsRespTopics.
+        r"""Sets the description of this ListInstanceTopicsRespTopics.
 
         描述。
 
@@ -398,7 +398,7 @@ class ListInstanceTopicsRespTopics:
 
     @property
     def sensitive_word(self):
-        """Gets the sensitive_word of this ListInstanceTopicsRespTopics.
+        r"""Gets the sensitive_word of this ListInstanceTopicsRespTopics.
 
         敏感字段。
 
@@ -409,7 +409,7 @@ class ListInstanceTopicsRespTopics:
 
     @sensitive_word.setter
     def sensitive_word(self, sensitive_word):
-        """Sets the sensitive_word of this ListInstanceTopicsRespTopics.
+        r"""Sets the sensitive_word of this ListInstanceTopicsRespTopics.
 
         敏感字段。
 
@@ -420,7 +420,7 @@ class ListInstanceTopicsRespTopics:
 
     @property
     def topic_type(self):
-        """Gets the topic_type of this ListInstanceTopicsRespTopics.
+        r"""Gets the topic_type of this ListInstanceTopicsRespTopics.
 
         topic类型。
 
@@ -431,7 +431,7 @@ class ListInstanceTopicsRespTopics:
 
     @topic_type.setter
     def topic_type(self, topic_type):
-        """Sets the topic_type of this ListInstanceTopicsRespTopics.
+        r"""Sets the topic_type of this ListInstanceTopicsRespTopics.
 
         topic类型。
 

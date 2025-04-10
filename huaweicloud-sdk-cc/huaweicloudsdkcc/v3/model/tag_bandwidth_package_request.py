@@ -27,7 +27,7 @@ class TagBandwidthPackageRequest:
     }
 
     def __init__(self, id=None, body=None):
-        """TagBandwidthPackageRequest
+        r"""TagBandwidthPackageRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class TagBandwidthPackageRequest:
 
     @property
     def id(self):
-        """Gets the id of this TagBandwidthPackageRequest.
+        r"""Gets the id of this TagBandwidthPackageRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class TagBandwidthPackageRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TagBandwidthPackageRequest.
+        r"""Sets the id of this TagBandwidthPackageRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class TagBandwidthPackageRequest:
 
     @property
     def body(self):
-        """Gets the body of this TagBandwidthPackageRequest.
+        r"""Gets the body of this TagBandwidthPackageRequest.
 
         :return: The body of this TagBandwidthPackageRequest.
         :rtype: :class:`huaweicloudsdkcc.v3.TagBandwidthPackageRequestBody`
@@ -80,7 +80,7 @@ class TagBandwidthPackageRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this TagBandwidthPackageRequest.
+        r"""Sets the body of this TagBandwidthPackageRequest.
 
         :param body: The body of this TagBandwidthPackageRequest.
         :type body: :class:`huaweicloudsdkcc.v3.TagBandwidthPackageRequestBody`

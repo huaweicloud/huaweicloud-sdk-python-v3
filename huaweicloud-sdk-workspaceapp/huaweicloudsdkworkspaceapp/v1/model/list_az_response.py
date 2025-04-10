@@ -30,7 +30,7 @@ class ListAzResponse(SdkResponse):
     }
 
     def __init__(self, azs=None, default_type=None, support_type=None):
-        """ListAzResponse
+        r"""ListAzResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListAzResponse(SdkResponse):
 
     @property
     def azs(self):
-        """Gets the azs of this ListAzResponse.
+        r"""Gets the azs of this ListAzResponse.
 
         云应用支持的可用分区表格，按站点分类。
 
@@ -69,7 +69,7 @@ class ListAzResponse(SdkResponse):
 
     @azs.setter
     def azs(self, azs):
-        """Sets the azs of this ListAzResponse.
+        r"""Sets the azs of this ListAzResponse.
 
         云应用支持的可用分区表格，按站点分类。
 
@@ -80,7 +80,7 @@ class ListAzResponse(SdkResponse):
 
     @property
     def default_type(self):
-        """Gets the default_type of this ListAzResponse.
+        r"""Gets the default_type of this ListAzResponse.
 
         默认站点类型。
 
@@ -91,7 +91,7 @@ class ListAzResponse(SdkResponse):
 
     @default_type.setter
     def default_type(self, default_type):
-        """Sets the default_type of this ListAzResponse.
+        r"""Sets the default_type of this ListAzResponse.
 
         默认站点类型。
 
@@ -102,7 +102,7 @@ class ListAzResponse(SdkResponse):
 
     @property
     def support_type(self):
-        """Gets the support_type of this ListAzResponse.
+        r"""Gets the support_type of this ListAzResponse.
 
         云应用支持的站点类型。
 
@@ -113,7 +113,7 @@ class ListAzResponse(SdkResponse):
 
     @support_type.setter
     def support_type(self, support_type):
-        """Sets the support_type of this ListAzResponse.
+        r"""Sets the support_type of this ListAzResponse.
 
         云应用支持的站点类型。
 

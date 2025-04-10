@@ -28,7 +28,7 @@ class ListDataServiceInstancesDetailResponse(SdkResponse):
     }
 
     def __init__(self, total=None, instances=None):
-        """ListDataServiceInstancesDetailResponse
+        r"""ListDataServiceInstancesDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDataServiceInstancesDetailResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListDataServiceInstancesDetailResponse.
+        r"""Gets the total of this ListDataServiceInstancesDetailResponse.
 
         集群数量。
 
@@ -62,7 +62,7 @@ class ListDataServiceInstancesDetailResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListDataServiceInstancesDetailResponse.
+        r"""Sets the total of this ListDataServiceInstancesDetailResponse.
 
         集群数量。
 
@@ -73,7 +73,7 @@ class ListDataServiceInstancesDetailResponse(SdkResponse):
 
     @property
     def instances(self):
-        """Gets the instances of this ListDataServiceInstancesDetailResponse.
+        r"""Gets the instances of this ListDataServiceInstancesDetailResponse.
 
         集群概览信息。
 
@@ -84,7 +84,7 @@ class ListDataServiceInstancesDetailResponse(SdkResponse):
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this ListDataServiceInstancesDetailResponse.
+        r"""Sets the instances of this ListDataServiceInstancesDetailResponse.
 
         集群概览信息。
 

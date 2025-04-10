@@ -25,7 +25,7 @@ class DeleteDbCacheRuleRequest:
     }
 
     def __init__(self, body=None):
-        """DeleteDbCacheRuleRequest
+        r"""DeleteDbCacheRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteDbCacheRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteDbCacheRuleRequest.
+        r"""Gets the body of this DeleteDbCacheRuleRequest.
 
         :return: The body of this DeleteDbCacheRuleRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.DeleteDbCacheRuleRequestBody`
@@ -52,7 +52,7 @@ class DeleteDbCacheRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteDbCacheRuleRequest.
+        r"""Sets the body of this DeleteDbCacheRuleRequest.
 
         :param body: The body of this DeleteDbCacheRuleRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.DeleteDbCacheRuleRequestBody`

@@ -27,7 +27,7 @@ class DeleteStrategyRequest:
     }
 
     def __init__(self, rule_set_id=None, domain_id=None):
-        """DeleteStrategyRequest
+        r"""DeleteStrategyRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteStrategyRequest:
 
     @property
     def rule_set_id(self):
-        """Gets the rule_set_id of this DeleteStrategyRequest.
+        r"""Gets the rule_set_id of this DeleteStrategyRequest.
 
         策略ID
 
@@ -59,7 +59,7 @@ class DeleteStrategyRequest:
 
     @rule_set_id.setter
     def rule_set_id(self, rule_set_id):
-        """Sets the rule_set_id of this DeleteStrategyRequest.
+        r"""Sets the rule_set_id of this DeleteStrategyRequest.
 
         策略ID
 
@@ -70,7 +70,7 @@ class DeleteStrategyRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this DeleteStrategyRequest.
+        r"""Gets the domain_id of this DeleteStrategyRequest.
 
         租户ID
 
@@ -81,7 +81,7 @@ class DeleteStrategyRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this DeleteStrategyRequest.
+        r"""Sets the domain_id of this DeleteStrategyRequest.
 
         租户ID
 

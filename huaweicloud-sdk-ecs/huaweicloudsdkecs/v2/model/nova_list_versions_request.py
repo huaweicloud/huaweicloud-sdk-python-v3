@@ -23,7 +23,7 @@ class NovaListVersionsRequest:
     }
 
     def __init__(self):
-        """NovaListVersionsRequest
+        r"""NovaListVersionsRequest
 
         The model defined in huaweicloud sdk
 

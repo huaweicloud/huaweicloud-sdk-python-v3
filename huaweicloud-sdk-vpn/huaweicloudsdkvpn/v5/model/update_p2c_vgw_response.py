@@ -30,7 +30,7 @@ class UpdateP2cVgwResponse(SdkResponse):
     }
 
     def __init__(self, p2c_vpn_gateway=None, request_id=None, header_response_token=None):
-        """UpdateP2cVgwResponse
+        r"""UpdateP2cVgwResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class UpdateP2cVgwResponse(SdkResponse):
 
     @property
     def p2c_vpn_gateway(self):
-        """Gets the p2c_vpn_gateway of this UpdateP2cVgwResponse.
+        r"""Gets the p2c_vpn_gateway of this UpdateP2cVgwResponse.
 
         :return: The p2c_vpn_gateway of this UpdateP2cVgwResponse.
         :rtype: :class:`huaweicloudsdkvpn.v5.ResponseP2cVgw`
@@ -67,7 +67,7 @@ class UpdateP2cVgwResponse(SdkResponse):
 
     @p2c_vpn_gateway.setter
     def p2c_vpn_gateway(self, p2c_vpn_gateway):
-        """Sets the p2c_vpn_gateway of this UpdateP2cVgwResponse.
+        r"""Sets the p2c_vpn_gateway of this UpdateP2cVgwResponse.
 
         :param p2c_vpn_gateway: The p2c_vpn_gateway of this UpdateP2cVgwResponse.
         :type p2c_vpn_gateway: :class:`huaweicloudsdkvpn.v5.ResponseP2cVgw`
@@ -76,7 +76,7 @@ class UpdateP2cVgwResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this UpdateP2cVgwResponse.
+        r"""Gets the request_id of this UpdateP2cVgwResponse.
 
         请求ID
 
@@ -87,7 +87,7 @@ class UpdateP2cVgwResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this UpdateP2cVgwResponse.
+        r"""Sets the request_id of this UpdateP2cVgwResponse.
 
         请求ID
 
@@ -98,7 +98,7 @@ class UpdateP2cVgwResponse(SdkResponse):
 
     @property
     def header_response_token(self):
-        """Gets the header_response_token of this UpdateP2cVgwResponse.
+        r"""Gets the header_response_token of this UpdateP2cVgwResponse.
 
         :return: The header_response_token of this UpdateP2cVgwResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class UpdateP2cVgwResponse(SdkResponse):
 
     @header_response_token.setter
     def header_response_token(self, header_response_token):
-        """Sets the header_response_token of this UpdateP2cVgwResponse.
+        r"""Sets the header_response_token of this UpdateP2cVgwResponse.
 
         :param header_response_token: The header_response_token of this UpdateP2cVgwResponse.
         :type header_response_token: str

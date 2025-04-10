@@ -57,7 +57,7 @@ class ListFirmwaresResponseData:
     }
 
     def __init__(self, id=None, name=None, description=None, version=None, version_type=None, expire_time=None, firmware_whitelist=None, type=None, series=None, device_type=None, arch=None, os_name=None, os_type=None, os_version=None, size=None, create_time=None, update_time=None):
-        """ListFirmwaresResponseData
+        r"""ListFirmwaresResponseData
 
         The model defined in huaweicloud sdk
 
@@ -138,7 +138,7 @@ class ListFirmwaresResponseData:
 
     @property
     def id(self):
-        """Gets the id of this ListFirmwaresResponseData.
+        r"""Gets the id of this ListFirmwaresResponseData.
 
         固件id
 
@@ -149,7 +149,7 @@ class ListFirmwaresResponseData:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListFirmwaresResponseData.
+        r"""Sets the id of this ListFirmwaresResponseData.
 
         固件id
 
@@ -160,7 +160,7 @@ class ListFirmwaresResponseData:
 
     @property
     def name(self):
-        """Gets the name of this ListFirmwaresResponseData.
+        r"""Gets the name of this ListFirmwaresResponseData.
 
         固件名称
 
@@ -171,7 +171,7 @@ class ListFirmwaresResponseData:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListFirmwaresResponseData.
+        r"""Sets the name of this ListFirmwaresResponseData.
 
         固件名称
 
@@ -182,7 +182,7 @@ class ListFirmwaresResponseData:
 
     @property
     def description(self):
-        """Gets the description of this ListFirmwaresResponseData.
+        r"""Gets the description of this ListFirmwaresResponseData.
 
         固件描述
 
@@ -193,7 +193,7 @@ class ListFirmwaresResponseData:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListFirmwaresResponseData.
+        r"""Sets the description of this ListFirmwaresResponseData.
 
         固件描述
 
@@ -204,7 +204,7 @@ class ListFirmwaresResponseData:
 
     @property
     def version(self):
-        """Gets the version of this ListFirmwaresResponseData.
+        r"""Gets the version of this ListFirmwaresResponseData.
 
         固件版本
 
@@ -215,7 +215,7 @@ class ListFirmwaresResponseData:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ListFirmwaresResponseData.
+        r"""Sets the version of this ListFirmwaresResponseData.
 
         固件版本
 
@@ -226,7 +226,7 @@ class ListFirmwaresResponseData:
 
     @property
     def version_type(self):
-        """Gets the version_type of this ListFirmwaresResponseData.
+        r"""Gets the version_type of this ListFirmwaresResponseData.
 
         固件版本类型
 
@@ -237,7 +237,7 @@ class ListFirmwaresResponseData:
 
     @version_type.setter
     def version_type(self, version_type):
-        """Sets the version_type of this ListFirmwaresResponseData.
+        r"""Sets the version_type of this ListFirmwaresResponseData.
 
         固件版本类型
 
@@ -248,7 +248,7 @@ class ListFirmwaresResponseData:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this ListFirmwaresResponseData.
+        r"""Gets the expire_time of this ListFirmwaresResponseData.
 
         固件到期时间
 
@@ -259,7 +259,7 @@ class ListFirmwaresResponseData:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this ListFirmwaresResponseData.
+        r"""Sets the expire_time of this ListFirmwaresResponseData.
 
         固件到期时间
 
@@ -270,7 +270,7 @@ class ListFirmwaresResponseData:
 
     @property
     def firmware_whitelist(self):
-        """Gets the firmware_whitelist of this ListFirmwaresResponseData.
+        r"""Gets the firmware_whitelist of this ListFirmwaresResponseData.
 
         固件白名单
 
@@ -281,7 +281,7 @@ class ListFirmwaresResponseData:
 
     @firmware_whitelist.setter
     def firmware_whitelist(self, firmware_whitelist):
-        """Sets the firmware_whitelist of this ListFirmwaresResponseData.
+        r"""Sets the firmware_whitelist of this ListFirmwaresResponseData.
 
         固件白名单
 
@@ -292,7 +292,7 @@ class ListFirmwaresResponseData:
 
     @property
     def type(self):
-        """Gets the type of this ListFirmwaresResponseData.
+        r"""Gets the type of this ListFirmwaresResponseData.
 
         固件类型
 
@@ -303,7 +303,7 @@ class ListFirmwaresResponseData:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListFirmwaresResponseData.
+        r"""Sets the type of this ListFirmwaresResponseData.
 
         固件类型
 
@@ -314,7 +314,7 @@ class ListFirmwaresResponseData:
 
     @property
     def series(self):
-        """Gets the series of this ListFirmwaresResponseData.
+        r"""Gets the series of this ListFirmwaresResponseData.
 
         产品系列
 
@@ -325,7 +325,7 @@ class ListFirmwaresResponseData:
 
     @series.setter
     def series(self, series):
-        """Sets the series of this ListFirmwaresResponseData.
+        r"""Sets the series of this ListFirmwaresResponseData.
 
         产品系列
 
@@ -336,7 +336,7 @@ class ListFirmwaresResponseData:
 
     @property
     def device_type(self):
-        """Gets the device_type of this ListFirmwaresResponseData.
+        r"""Gets the device_type of this ListFirmwaresResponseData.
 
         固件适用设备类型
 
@@ -347,7 +347,7 @@ class ListFirmwaresResponseData:
 
     @device_type.setter
     def device_type(self, device_type):
-        """Sets the device_type of this ListFirmwaresResponseData.
+        r"""Sets the device_type of this ListFirmwaresResponseData.
 
         固件适用设备类型
 
@@ -358,7 +358,7 @@ class ListFirmwaresResponseData:
 
     @property
     def arch(self):
-        """Gets the arch of this ListFirmwaresResponseData.
+        r"""Gets the arch of this ListFirmwaresResponseData.
 
         边缘节点架构
 
@@ -369,7 +369,7 @@ class ListFirmwaresResponseData:
 
     @arch.setter
     def arch(self, arch):
-        """Sets the arch of this ListFirmwaresResponseData.
+        r"""Sets the arch of this ListFirmwaresResponseData.
 
         边缘节点架构
 
@@ -380,7 +380,7 @@ class ListFirmwaresResponseData:
 
     @property
     def os_name(self):
-        """Gets the os_name of this ListFirmwaresResponseData.
+        r"""Gets the os_name of this ListFirmwaresResponseData.
 
         边缘设备操作系统名称
 
@@ -391,7 +391,7 @@ class ListFirmwaresResponseData:
 
     @os_name.setter
     def os_name(self, os_name):
-        """Sets the os_name of this ListFirmwaresResponseData.
+        r"""Sets the os_name of this ListFirmwaresResponseData.
 
         边缘设备操作系统名称
 
@@ -402,7 +402,7 @@ class ListFirmwaresResponseData:
 
     @property
     def os_type(self):
-        """Gets the os_type of this ListFirmwaresResponseData.
+        r"""Gets the os_type of this ListFirmwaresResponseData.
 
         边缘节点操作系统类型
 
@@ -413,7 +413,7 @@ class ListFirmwaresResponseData:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this ListFirmwaresResponseData.
+        r"""Sets the os_type of this ListFirmwaresResponseData.
 
         边缘节点操作系统类型
 
@@ -424,7 +424,7 @@ class ListFirmwaresResponseData:
 
     @property
     def os_version(self):
-        """Gets the os_version of this ListFirmwaresResponseData.
+        r"""Gets the os_version of this ListFirmwaresResponseData.
 
         边缘设备操作系统版本
 
@@ -435,7 +435,7 @@ class ListFirmwaresResponseData:
 
     @os_version.setter
     def os_version(self, os_version):
-        """Sets the os_version of this ListFirmwaresResponseData.
+        r"""Sets the os_version of this ListFirmwaresResponseData.
 
         边缘设备操作系统版本
 
@@ -446,7 +446,7 @@ class ListFirmwaresResponseData:
 
     @property
     def size(self):
-        """Gets the size of this ListFirmwaresResponseData.
+        r"""Gets the size of this ListFirmwaresResponseData.
 
         当前固件大小(单位:byte)
 
@@ -457,7 +457,7 @@ class ListFirmwaresResponseData:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListFirmwaresResponseData.
+        r"""Sets the size of this ListFirmwaresResponseData.
 
         当前固件大小(单位:byte)
 
@@ -468,7 +468,7 @@ class ListFirmwaresResponseData:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ListFirmwaresResponseData.
+        r"""Gets the create_time of this ListFirmwaresResponseData.
 
         创建时间毫秒数
 
@@ -479,7 +479,7 @@ class ListFirmwaresResponseData:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ListFirmwaresResponseData.
+        r"""Sets the create_time of this ListFirmwaresResponseData.
 
         创建时间毫秒数
 
@@ -490,7 +490,7 @@ class ListFirmwaresResponseData:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ListFirmwaresResponseData.
+        r"""Gets the update_time of this ListFirmwaresResponseData.
 
         更新时间毫秒数
 
@@ -501,7 +501,7 @@ class ListFirmwaresResponseData:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ListFirmwaresResponseData.
+        r"""Sets the update_time of this ListFirmwaresResponseData.
 
         更新时间毫秒数
 

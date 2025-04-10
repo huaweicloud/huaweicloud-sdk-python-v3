@@ -27,7 +27,7 @@ class AutoScalingPolicyDeleteReq:
     }
 
     def __init__(self, node_group_name=None, resource_pool_name=None):
-        """AutoScalingPolicyDeleteReq
+        r"""AutoScalingPolicyDeleteReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AutoScalingPolicyDeleteReq:
 
     @property
     def node_group_name(self):
-        """Gets the node_group_name of this AutoScalingPolicyDeleteReq.
+        r"""Gets the node_group_name of this AutoScalingPolicyDeleteReq.
 
         节点组名称。如果resource_pool_name为default，则删除节点组维度的弹性伸缩策略。如果resource_pool_name不为default，则在该节点组下删除对应资源池维度的策略。
 
@@ -59,7 +59,7 @@ class AutoScalingPolicyDeleteReq:
 
     @node_group_name.setter
     def node_group_name(self, node_group_name):
-        """Sets the node_group_name of this AutoScalingPolicyDeleteReq.
+        r"""Sets the node_group_name of this AutoScalingPolicyDeleteReq.
 
         节点组名称。如果resource_pool_name为default，则删除节点组维度的弹性伸缩策略。如果resource_pool_name不为default，则在该节点组下删除对应资源池维度的策略。
 
@@ -70,7 +70,7 @@ class AutoScalingPolicyDeleteReq:
 
     @property
     def resource_pool_name(self):
-        """Gets the resource_pool_name of this AutoScalingPolicyDeleteReq.
+        r"""Gets the resource_pool_name of this AutoScalingPolicyDeleteReq.
 
         资源池名称。当集群版本不支持按指定资源池进行弹性伸缩时，需要填写为default资源池。不为default时删除指定资源池维度的弹性伸缩策略。
 
@@ -81,7 +81,7 @@ class AutoScalingPolicyDeleteReq:
 
     @resource_pool_name.setter
     def resource_pool_name(self, resource_pool_name):
-        """Sets the resource_pool_name of this AutoScalingPolicyDeleteReq.
+        r"""Sets the resource_pool_name of this AutoScalingPolicyDeleteReq.
 
         资源池名称。当集群版本不支持按指定资源池进行弹性伸缩时，需要填写为default资源池。不为default时删除指定资源池维度的弹性伸缩策略。
 

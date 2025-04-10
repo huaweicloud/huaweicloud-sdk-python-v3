@@ -30,7 +30,7 @@ class ListPoolsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, page_info=None, pools=None):
-        """ListPoolsResponse
+        r"""ListPoolsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListPoolsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListPoolsResponse.
+        r"""Gets the request_id of this ListPoolsResponse.
 
         请求ID。  注：自动生成 。
 
@@ -69,7 +69,7 @@ class ListPoolsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListPoolsResponse.
+        r"""Sets the request_id of this ListPoolsResponse.
 
         请求ID。  注：自动生成 。
 
@@ -80,7 +80,7 @@ class ListPoolsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListPoolsResponse.
+        r"""Gets the page_info of this ListPoolsResponse.
 
         :return: The page_info of this ListPoolsResponse.
         :rtype: :class:`huaweicloudsdkelb.v3.PageInfo`
@@ -89,7 +89,7 @@ class ListPoolsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListPoolsResponse.
+        r"""Sets the page_info of this ListPoolsResponse.
 
         :param page_info: The page_info of this ListPoolsResponse.
         :type page_info: :class:`huaweicloudsdkelb.v3.PageInfo`
@@ -98,7 +98,7 @@ class ListPoolsResponse(SdkResponse):
 
     @property
     def pools(self):
-        """Gets the pools of this ListPoolsResponse.
+        r"""Gets the pools of this ListPoolsResponse.
 
         后端服务器组列表。
 
@@ -109,7 +109,7 @@ class ListPoolsResponse(SdkResponse):
 
     @pools.setter
     def pools(self, pools):
-        """Sets the pools of this ListPoolsResponse.
+        r"""Sets the pools of this ListPoolsResponse.
 
         后端服务器组列表。
 

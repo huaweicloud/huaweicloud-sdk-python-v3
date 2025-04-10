@@ -27,7 +27,7 @@ class DeleteClusterNodesRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """DeleteClusterNodesRequest
+        r"""DeleteClusterNodesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteClusterNodesRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this DeleteClusterNodesRequest.
+        r"""Gets the cluster_id of this DeleteClusterNodesRequest.
 
         指定待删除节点集群的ID
 
@@ -60,7 +60,7 @@ class DeleteClusterNodesRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this DeleteClusterNodesRequest.
+        r"""Sets the cluster_id of this DeleteClusterNodesRequest.
 
         指定待删除节点集群的ID
 
@@ -71,7 +71,7 @@ class DeleteClusterNodesRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteClusterNodesRequest.
+        r"""Gets the body of this DeleteClusterNodesRequest.
 
         :return: The body of this DeleteClusterNodesRequest.
         :rtype: :class:`huaweicloudsdkdws.v2.DeleteClusterNodesRequestBody`
@@ -80,7 +80,7 @@ class DeleteClusterNodesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteClusterNodesRequest.
+        r"""Sets the body of this DeleteClusterNodesRequest.
 
         :param body: The body of this DeleteClusterNodesRequest.
         :type body: :class:`huaweicloudsdkdws.v2.DeleteClusterNodesRequestBody`

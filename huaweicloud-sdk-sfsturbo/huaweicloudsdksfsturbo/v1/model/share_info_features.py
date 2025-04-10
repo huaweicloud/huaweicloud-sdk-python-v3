@@ -25,7 +25,7 @@ class ShareInfoFeatures:
     }
 
     def __init__(self, backup=None):
-        """ShareInfoFeatures
+        r"""ShareInfoFeatures
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShareInfoFeatures:
 
     @property
     def backup(self):
-        """Gets the backup of this ShareInfoFeatures.
+        r"""Gets the backup of this ShareInfoFeatures.
 
         :return: The backup of this ShareInfoFeatures.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.ShareInfoFeature`
@@ -52,7 +52,7 @@ class ShareInfoFeatures:
 
     @backup.setter
     def backup(self, backup):
-        """Sets the backup of this ShareInfoFeatures.
+        r"""Sets the backup of this ShareInfoFeatures.
 
         :param backup: The backup of this ShareInfoFeatures.
         :type backup: :class:`huaweicloudsdksfsturbo.v1.ShareInfoFeature`

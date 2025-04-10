@@ -27,7 +27,7 @@ class ResRelation:
     }
 
     def __init__(self, self_resource_id=None, relation_infos=None):
-        """ResRelation
+        r"""ResRelation
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ResRelation:
 
     @property
     def self_resource_id(self):
-        """Gets the self_resource_id of this ResRelation.
+        r"""Gets the self_resource_id of this ResRelation.
 
         |参数名称：当前费用对应的资源ID| |参数约束及描述：当前费用对应的资源ID|
 
@@ -61,7 +61,7 @@ class ResRelation:
 
     @self_resource_id.setter
     def self_resource_id(self, self_resource_id):
-        """Sets the self_resource_id of this ResRelation.
+        r"""Sets the self_resource_id of this ResRelation.
 
         |参数名称：当前费用对应的资源ID| |参数约束及描述：当前费用对应的资源ID|
 
@@ -72,7 +72,7 @@ class ResRelation:
 
     @property
     def relation_infos(self):
-        """Gets the relation_infos of this ResRelation.
+        r"""Gets the relation_infos of this ResRelation.
 
         |参数名称：当前费用对应资源ID关联的资源信息。| |参数约束及描述：当前费用对应资源ID关联的资源信息，数组个数不超过2层|
 
@@ -83,7 +83,7 @@ class ResRelation:
 
     @relation_infos.setter
     def relation_infos(self, relation_infos):
-        """Sets the relation_infos of this ResRelation.
+        r"""Sets the relation_infos of this ResRelation.
 
         |参数名称：当前费用对应资源ID关联的资源信息。| |参数约束及描述：当前费用对应资源ID关联的资源信息，数组个数不超过2层|
 

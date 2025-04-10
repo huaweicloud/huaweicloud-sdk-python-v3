@@ -25,7 +25,7 @@ class ComBandwidthPercentageOptions:
     }
 
     def __init__(self, com_bandwidth_percentage_value=None):
-        """ComBandwidthPercentageOptions
+        r"""ComBandwidthPercentageOptions
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ComBandwidthPercentageOptions:
 
     @property
     def com_bandwidth_percentage_value(self):
-        """Gets the com_bandwidth_percentage_value of this ComBandwidthPercentageOptions.
+        r"""Gets the com_bandwidth_percentage_value of this ComBandwidthPercentageOptions.
 
         串口带宽百分比控制量（%）。取值范围为[0-100]。默认：3。
 
@@ -54,7 +54,7 @@ class ComBandwidthPercentageOptions:
 
     @com_bandwidth_percentage_value.setter
     def com_bandwidth_percentage_value(self, com_bandwidth_percentage_value):
-        """Sets the com_bandwidth_percentage_value of this ComBandwidthPercentageOptions.
+        r"""Sets the com_bandwidth_percentage_value of this ComBandwidthPercentageOptions.
 
         串口带宽百分比控制量（%）。取值范围为[0-100]。默认：3。
 

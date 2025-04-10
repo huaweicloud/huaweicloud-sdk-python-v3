@@ -24,7 +24,7 @@ class SendAuthorizedMailResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SendAuthorizedMailResponse
+        r"""SendAuthorizedMailResponse
 
         The model defined in huaweicloud sdk
 

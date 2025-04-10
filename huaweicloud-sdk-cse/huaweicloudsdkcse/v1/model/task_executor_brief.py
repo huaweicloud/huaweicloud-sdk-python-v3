@@ -27,7 +27,7 @@ class TaskExecutorBrief:
     }
 
     def __init__(self, duration=None, description=None):
-        """TaskExecutorBrief
+        r"""TaskExecutorBrief
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TaskExecutorBrief:
 
     @property
     def duration(self):
-        """Gets the duration of this TaskExecutorBrief.
+        r"""Gets the duration of this TaskExecutorBrief.
 
         子任务持续时长
 
@@ -61,7 +61,7 @@ class TaskExecutorBrief:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this TaskExecutorBrief.
+        r"""Sets the duration of this TaskExecutorBrief.
 
         子任务持续时长
 
@@ -72,7 +72,7 @@ class TaskExecutorBrief:
 
     @property
     def description(self):
-        """Gets the description of this TaskExecutorBrief.
+        r"""Gets the description of this TaskExecutorBrief.
 
         子任务描述
 
@@ -83,7 +83,7 @@ class TaskExecutorBrief:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TaskExecutorBrief.
+        r"""Sets the description of this TaskExecutorBrief.
 
         子任务描述
 

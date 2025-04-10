@@ -39,7 +39,7 @@ class ShareBandwidthTypeShowResp:
     }
 
     def __init__(self, id=None, bandwidth_type=None, public_border_group=None, created_at=None, updated_at=None, name_en=None, name_zh=None, description=None):
-        """ShareBandwidthTypeShowResp
+        r"""ShareBandwidthTypeShowResp
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ShareBandwidthTypeShowResp:
 
     @property
     def id(self):
-        """Gets the id of this ShareBandwidthTypeShowResp.
+        r"""Gets the id of this ShareBandwidthTypeShowResp.
 
         支持带宽类型的id
 
@@ -103,7 +103,7 @@ class ShareBandwidthTypeShowResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShareBandwidthTypeShowResp.
+        r"""Sets the id of this ShareBandwidthTypeShowResp.
 
         支持带宽类型的id
 
@@ -114,7 +114,7 @@ class ShareBandwidthTypeShowResp:
 
     @property
     def bandwidth_type(self):
-        """Gets the bandwidth_type of this ShareBandwidthTypeShowResp.
+        r"""Gets the bandwidth_type of this ShareBandwidthTypeShowResp.
 
         带宽类型
 
@@ -125,7 +125,7 @@ class ShareBandwidthTypeShowResp:
 
     @bandwidth_type.setter
     def bandwidth_type(self, bandwidth_type):
-        """Sets the bandwidth_type of this ShareBandwidthTypeShowResp.
+        r"""Sets the bandwidth_type of this ShareBandwidthTypeShowResp.
 
         带宽类型
 
@@ -136,7 +136,7 @@ class ShareBandwidthTypeShowResp:
 
     @property
     def public_border_group(self):
-        """Gets the public_border_group of this ShareBandwidthTypeShowResp.
+        r"""Gets the public_border_group of this ShareBandwidthTypeShowResp.
 
         中心站点or边缘站点，默认展示
 
@@ -147,7 +147,7 @@ class ShareBandwidthTypeShowResp:
 
     @public_border_group.setter
     def public_border_group(self, public_border_group):
-        """Sets the public_border_group of this ShareBandwidthTypeShowResp.
+        r"""Sets the public_border_group of this ShareBandwidthTypeShowResp.
 
         中心站点or边缘站点，默认展示
 
@@ -158,7 +158,7 @@ class ShareBandwidthTypeShowResp:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ShareBandwidthTypeShowResp.
+        r"""Gets the created_at of this ShareBandwidthTypeShowResp.
 
         创建时间
 
@@ -169,7 +169,7 @@ class ShareBandwidthTypeShowResp:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ShareBandwidthTypeShowResp.
+        r"""Sets the created_at of this ShareBandwidthTypeShowResp.
 
         创建时间
 
@@ -180,7 +180,7 @@ class ShareBandwidthTypeShowResp:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ShareBandwidthTypeShowResp.
+        r"""Gets the updated_at of this ShareBandwidthTypeShowResp.
 
         更新时间
 
@@ -191,7 +191,7 @@ class ShareBandwidthTypeShowResp:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ShareBandwidthTypeShowResp.
+        r"""Sets the updated_at of this ShareBandwidthTypeShowResp.
 
         更新时间
 
@@ -202,7 +202,7 @@ class ShareBandwidthTypeShowResp:
 
     @property
     def name_en(self):
-        """Gets the name_en of this ShareBandwidthTypeShowResp.
+        r"""Gets the name_en of this ShareBandwidthTypeShowResp.
 
         带宽类型的英文表述
 
@@ -213,7 +213,7 @@ class ShareBandwidthTypeShowResp:
 
     @name_en.setter
     def name_en(self, name_en):
-        """Sets the name_en of this ShareBandwidthTypeShowResp.
+        r"""Sets the name_en of this ShareBandwidthTypeShowResp.
 
         带宽类型的英文表述
 
@@ -224,7 +224,7 @@ class ShareBandwidthTypeShowResp:
 
     @property
     def name_zh(self):
-        """Gets the name_zh of this ShareBandwidthTypeShowResp.
+        r"""Gets the name_zh of this ShareBandwidthTypeShowResp.
 
         带宽类型的中文表述
 
@@ -235,7 +235,7 @@ class ShareBandwidthTypeShowResp:
 
     @name_zh.setter
     def name_zh(self, name_zh):
-        """Sets the name_zh of this ShareBandwidthTypeShowResp.
+        r"""Sets the name_zh of this ShareBandwidthTypeShowResp.
 
         带宽类型的中文表述
 
@@ -246,7 +246,7 @@ class ShareBandwidthTypeShowResp:
 
     @property
     def description(self):
-        """Gets the description of this ShareBandwidthTypeShowResp.
+        r"""Gets the description of this ShareBandwidthTypeShowResp.
 
         带宽类型描述信息
 
@@ -257,7 +257,7 @@ class ShareBandwidthTypeShowResp:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShareBandwidthTypeShowResp.
+        r"""Sets the description of this ShareBandwidthTypeShowResp.
 
         带宽类型描述信息
 

@@ -25,7 +25,7 @@ class ModifyInstanceConfigsReq:
     }
 
     def __init__(self, kafka_configs=None):
-        """ModifyInstanceConfigsReq
+        r"""ModifyInstanceConfigsReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ModifyInstanceConfigsReq:
 
     @property
     def kafka_configs(self):
-        """Gets the kafka_configs of this ModifyInstanceConfigsReq.
+        r"""Gets the kafka_configs of this ModifyInstanceConfigsReq.
 
         kafka待修改配置列表。
 
@@ -54,7 +54,7 @@ class ModifyInstanceConfigsReq:
 
     @kafka_configs.setter
     def kafka_configs(self, kafka_configs):
-        """Sets the kafka_configs of this ModifyInstanceConfigsReq.
+        r"""Sets the kafka_configs of this ModifyInstanceConfigsReq.
 
         kafka待修改配置列表。
 

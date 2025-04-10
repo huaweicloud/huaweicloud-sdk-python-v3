@@ -32,7 +32,7 @@ class SearchStatisticUserInfoResponse(SdkResponse):
     }
 
     def __init__(self, count=None, limit=None, offset=None, data=None):
-        """SearchStatisticUserInfoResponse
+        r"""SearchStatisticUserInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class SearchStatisticUserInfoResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this SearchStatisticUserInfoResponse.
+        r"""Gets the count of this SearchStatisticUserInfoResponse.
 
         总记录数。
 
@@ -76,7 +76,7 @@ class SearchStatisticUserInfoResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this SearchStatisticUserInfoResponse.
+        r"""Sets the count of this SearchStatisticUserInfoResponse.
 
         总记录数。
 
@@ -87,7 +87,7 @@ class SearchStatisticUserInfoResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this SearchStatisticUserInfoResponse.
+        r"""Gets the limit of this SearchStatisticUserInfoResponse.
 
         查询条目数量。
 
@@ -98,7 +98,7 @@ class SearchStatisticUserInfoResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchStatisticUserInfoResponse.
+        r"""Sets the limit of this SearchStatisticUserInfoResponse.
 
         查询条目数量。
 
@@ -109,7 +109,7 @@ class SearchStatisticUserInfoResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this SearchStatisticUserInfoResponse.
+        r"""Gets the offset of this SearchStatisticUserInfoResponse.
 
         查询偏移量。
 
@@ -120,7 +120,7 @@ class SearchStatisticUserInfoResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchStatisticUserInfoResponse.
+        r"""Sets the offset of this SearchStatisticUserInfoResponse.
 
         查询偏移量。
 
@@ -131,7 +131,7 @@ class SearchStatisticUserInfoResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this SearchStatisticUserInfoResponse.
+        r"""Gets the data of this SearchStatisticUserInfoResponse.
 
         会议用户数据按时间点统计的查询结果数组。
 
@@ -142,7 +142,7 @@ class SearchStatisticUserInfoResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this SearchStatisticUserInfoResponse.
+        r"""Sets the data of this SearchStatisticUserInfoResponse.
 
         会议用户数据按时间点统计的查询结果数组。
 

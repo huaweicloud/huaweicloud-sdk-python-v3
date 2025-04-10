@@ -79,7 +79,7 @@ class UserInfo:
     }
 
     def __init__(self, user_id=None, uclogin_account=None, service_account=None, number_ha1=None, alias1=None, company_id=None, sp_id=None, company_domain=None, realm=None, user_type=None, admin_type=None, name=None, name_en=None, is_bind_phone=None, free_user=None, third_account=None, vision_account=None, head_picture_url=None, password=None, status=None, paid_account=None, paid_password=None, we_link_user=None, app_id=None, tr069_account=None, corp_type=None, cloud_user_id=None, gray_user=None):
-        """UserInfo
+        r"""UserInfo
 
         The model defined in huaweicloud sdk
 
@@ -231,7 +231,7 @@ class UserInfo:
 
     @property
     def user_id(self):
-        """Gets the user_id of this UserInfo.
+        r"""Gets the user_id of this UserInfo.
 
         用户UUID。
 
@@ -242,7 +242,7 @@ class UserInfo:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this UserInfo.
+        r"""Sets the user_id of this UserInfo.
 
         用户UUID。
 
@@ -253,7 +253,7 @@ class UserInfo:
 
     @property
     def uclogin_account(self):
-        """Gets the uclogin_account of this UserInfo.
+        r"""Gets the uclogin_account of this UserInfo.
 
         华为云会议帐号。
 
@@ -264,7 +264,7 @@ class UserInfo:
 
     @uclogin_account.setter
     def uclogin_account(self, uclogin_account):
-        """Sets the uclogin_account of this UserInfo.
+        r"""Sets the uclogin_account of this UserInfo.
 
         华为云会议帐号。
 
@@ -275,7 +275,7 @@ class UserInfo:
 
     @property
     def service_account(self):
-        """Gets the service_account of this UserInfo.
+        r"""Gets the service_account of this UserInfo.
 
         用户关联的SIP号码。 
 
@@ -286,7 +286,7 @@ class UserInfo:
 
     @service_account.setter
     def service_account(self, service_account):
-        """Sets the service_account of this UserInfo.
+        r"""Sets the service_account of this UserInfo.
 
         用户关联的SIP号码。 
 
@@ -297,7 +297,7 @@ class UserInfo:
 
     @property
     def number_ha1(self):
-        """Gets the number_ha1 of this UserInfo.
+        r"""Gets the number_ha1 of this UserInfo.
 
         号码对应的HA1。
 
@@ -308,7 +308,7 @@ class UserInfo:
 
     @number_ha1.setter
     def number_ha1(self, number_ha1):
-        """Sets the number_ha1 of this UserInfo.
+        r"""Sets the number_ha1 of this UserInfo.
 
         号码对应的HA1。
 
@@ -319,7 +319,7 @@ class UserInfo:
 
     @property
     def alias1(self):
-        """Gets the alias1 of this UserInfo.
+        r"""Gets the alias1 of this UserInfo.
 
         用户别名。
 
@@ -330,7 +330,7 @@ class UserInfo:
 
     @alias1.setter
     def alias1(self, alias1):
-        """Sets the alias1 of this UserInfo.
+        r"""Sets the alias1 of this UserInfo.
 
         用户别名。
 
@@ -341,7 +341,7 @@ class UserInfo:
 
     @property
     def company_id(self):
-        """Gets the company_id of this UserInfo.
+        r"""Gets the company_id of this UserInfo.
 
         用户归属的企业ID。
 
@@ -352,7 +352,7 @@ class UserInfo:
 
     @company_id.setter
     def company_id(self, company_id):
-        """Sets the company_id of this UserInfo.
+        r"""Sets the company_id of this UserInfo.
 
         用户归属的企业ID。
 
@@ -363,7 +363,7 @@ class UserInfo:
 
     @property
     def sp_id(self):
-        """Gets the sp_id of this UserInfo.
+        r"""Gets the sp_id of this UserInfo.
 
         用户所在企业归属的SP ID。
 
@@ -374,7 +374,7 @@ class UserInfo:
 
     @sp_id.setter
     def sp_id(self, sp_id):
-        """Sets the sp_id of this UserInfo.
+        r"""Sets the sp_id of this UserInfo.
 
         用户所在企业归属的SP ID。
 
@@ -385,7 +385,7 @@ class UserInfo:
 
     @property
     def company_domain(self):
-        """Gets the company_domain of this UserInfo.
+        r"""Gets the company_domain of this UserInfo.
 
         企业域名。
 
@@ -396,7 +396,7 @@ class UserInfo:
 
     @company_domain.setter
     def company_domain(self, company_domain):
-        """Sets the company_domain of this UserInfo.
+        r"""Sets the company_domain of this UserInfo.
 
         企业域名。
 
@@ -407,7 +407,7 @@ class UserInfo:
 
     @property
     def realm(self):
-        """Gets the realm of this UserInfo.
+        r"""Gets the realm of this UserInfo.
 
         本地鉴权。
 
@@ -418,7 +418,7 @@ class UserInfo:
 
     @realm.setter
     def realm(self, realm):
-        """Sets the realm of this UserInfo.
+        r"""Sets the realm of this UserInfo.
 
         本地鉴权。
 
@@ -429,7 +429,7 @@ class UserInfo:
 
     @property
     def user_type(self):
-        """Gets the user_type of this UserInfo.
+        r"""Gets the user_type of this UserInfo.
 
         用户类型。 * 1：SP管理用户 * 2：企业用户 * 3：免费注册用户 * 10：企业设备用户 * 11：匿名用户 * 12：智慧屏用户 * 13：IdeaHub用户 * 14：电子白板（SmartRooms）用户 
 
@@ -440,7 +440,7 @@ class UserInfo:
 
     @user_type.setter
     def user_type(self, user_type):
-        """Sets the user_type of this UserInfo.
+        r"""Sets the user_type of this UserInfo.
 
         用户类型。 * 1：SP管理用户 * 2：企业用户 * 3：免费注册用户 * 10：企业设备用户 * 11：匿名用户 * 12：智慧屏用户 * 13：IdeaHub用户 * 14：电子白板（SmartRooms）用户 
 
@@ -451,7 +451,7 @@ class UserInfo:
 
     @property
     def admin_type(self):
-        """Gets the admin_type of this UserInfo.
+        r"""Gets the admin_type of this UserInfo.
 
         管理员类型。 * 0：默认管理员 * 1：普通管理员 * 2：非管理员，即普通企业成员，userType为2时有效 
 
@@ -462,7 +462,7 @@ class UserInfo:
 
     @admin_type.setter
     def admin_type(self, admin_type):
-        """Sets the admin_type of this UserInfo.
+        r"""Sets the admin_type of this UserInfo.
 
         管理员类型。 * 0：默认管理员 * 1：普通管理员 * 2：非管理员，即普通企业成员，userType为2时有效 
 
@@ -473,7 +473,7 @@ class UserInfo:
 
     @property
     def name(self):
-        """Gets the name of this UserInfo.
+        r"""Gets the name of this UserInfo.
 
         用户名称。
 
@@ -484,7 +484,7 @@ class UserInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UserInfo.
+        r"""Sets the name of this UserInfo.
 
         用户名称。
 
@@ -495,7 +495,7 @@ class UserInfo:
 
     @property
     def name_en(self):
-        """Gets the name_en of this UserInfo.
+        r"""Gets the name_en of this UserInfo.
 
         用户英文名称。
 
@@ -506,7 +506,7 @@ class UserInfo:
 
     @name_en.setter
     def name_en(self, name_en):
-        """Sets the name_en of this UserInfo.
+        r"""Sets the name_en of this UserInfo.
 
         用户英文名称。
 
@@ -517,7 +517,7 @@ class UserInfo:
 
     @property
     def is_bind_phone(self):
-        """Gets the is_bind_phone of this UserInfo.
+        r"""Gets the is_bind_phone of this UserInfo.
 
         标识是否绑定手机。
 
@@ -528,7 +528,7 @@ class UserInfo:
 
     @is_bind_phone.setter
     def is_bind_phone(self, is_bind_phone):
-        """Sets the is_bind_phone of this UserInfo.
+        r"""Sets the is_bind_phone of this UserInfo.
 
         标识是否绑定手机。
 
@@ -539,7 +539,7 @@ class UserInfo:
 
     @property
     def free_user(self):
-        """Gets the free_user of this UserInfo.
+        r"""Gets the free_user of this UserInfo.
 
         标识是否是免费试用用户。
 
@@ -550,7 +550,7 @@ class UserInfo:
 
     @free_user.setter
     def free_user(self, free_user):
-        """Sets the free_user of this UserInfo.
+        r"""Sets the free_user of this UserInfo.
 
         标识是否是免费试用用户。
 
@@ -561,7 +561,7 @@ class UserInfo:
 
     @property
     def third_account(self):
-        """Gets the third_account of this UserInfo.
+        r"""Gets the third_account of this UserInfo.
 
         第三方的用户帐号。
 
@@ -572,7 +572,7 @@ class UserInfo:
 
     @third_account.setter
     def third_account(self, third_account):
-        """Sets the third_account of this UserInfo.
+        r"""Sets the third_account of this UserInfo.
 
         第三方的用户帐号。
 
@@ -583,7 +583,7 @@ class UserInfo:
 
     @property
     def vision_account(self):
-        """Gets the vision_account of this UserInfo.
+        r"""Gets the vision_account of this UserInfo.
 
         智慧屏设备ID。
 
@@ -594,7 +594,7 @@ class UserInfo:
 
     @vision_account.setter
     def vision_account(self, vision_account):
-        """Sets the vision_account of this UserInfo.
+        r"""Sets the vision_account of this UserInfo.
 
         智慧屏设备ID。
 
@@ -605,7 +605,7 @@ class UserInfo:
 
     @property
     def head_picture_url(self):
-        """Gets the head_picture_url of this UserInfo.
+        r"""Gets the head_picture_url of this UserInfo.
 
         头像链接。
 
@@ -616,7 +616,7 @@ class UserInfo:
 
     @head_picture_url.setter
     def head_picture_url(self, head_picture_url):
-        """Sets the head_picture_url of this UserInfo.
+        r"""Sets the head_picture_url of this UserInfo.
 
         头像链接。
 
@@ -627,7 +627,7 @@ class UserInfo:
 
     @property
     def password(self):
-        """Gets the password of this UserInfo.
+        r"""Gets the password of this UserInfo.
 
         机机密码，用于智慧屏登录。
 
@@ -638,7 +638,7 @@ class UserInfo:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this UserInfo.
+        r"""Sets the password of this UserInfo.
 
         机机密码，用于智慧屏登录。
 
@@ -649,7 +649,7 @@ class UserInfo:
 
     @property
     def status(self):
-        """Gets the status of this UserInfo.
+        r"""Gets the status of this UserInfo.
 
         用户状态。 * 0：正常 * 1：停用 
 
@@ -660,7 +660,7 @@ class UserInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UserInfo.
+        r"""Sets the status of this UserInfo.
 
         用户状态。 * 0：正常 * 1：停用 
 
@@ -671,7 +671,7 @@ class UserInfo:
 
     @property
     def paid_account(self):
-        """Gets the paid_account of this UserInfo.
+        r"""Gets the paid_account of this UserInfo.
 
         付费用户机机帐号，用于智慧屏登录。
 
@@ -682,7 +682,7 @@ class UserInfo:
 
     @paid_account.setter
     def paid_account(self, paid_account):
-        """Sets the paid_account of this UserInfo.
+        r"""Sets the paid_account of this UserInfo.
 
         付费用户机机帐号，用于智慧屏登录。
 
@@ -693,7 +693,7 @@ class UserInfo:
 
     @property
     def paid_password(self):
-        """Gets the paid_password of this UserInfo.
+        r"""Gets the paid_password of this UserInfo.
 
         付费用户机机密码，用于智慧屏登录。
 
@@ -704,7 +704,7 @@ class UserInfo:
 
     @paid_password.setter
     def paid_password(self, paid_password):
-        """Sets the paid_password of this UserInfo.
+        r"""Sets the paid_password of this UserInfo.
 
         付费用户机机密码，用于智慧屏登录。
 
@@ -715,7 +715,7 @@ class UserInfo:
 
     @property
     def we_link_user(self):
-        """Gets the we_link_user of this UserInfo.
+        r"""Gets the we_link_user of this UserInfo.
 
         标识是否是WeLink用户。
 
@@ -726,7 +726,7 @@ class UserInfo:
 
     @we_link_user.setter
     def we_link_user(self, we_link_user):
-        """Sets the we_link_user of this UserInfo.
+        r"""Sets the we_link_user of this UserInfo.
 
         标识是否是WeLink用户。
 
@@ -737,7 +737,7 @@ class UserInfo:
 
     @property
     def app_id(self):
-        """Gets the app_id of this UserInfo.
+        r"""Gets the app_id of this UserInfo.
 
         应用ID。
 
@@ -748,7 +748,7 @@ class UserInfo:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this UserInfo.
+        r"""Sets the app_id of this UserInfo.
 
         应用ID。
 
@@ -759,7 +759,7 @@ class UserInfo:
 
     @property
     def tr069_account(self):
-        """Gets the tr069_account of this UserInfo.
+        r"""Gets the tr069_account of this UserInfo.
 
         tr069帐号。
 
@@ -770,7 +770,7 @@ class UserInfo:
 
     @tr069_account.setter
     def tr069_account(self, tr069_account):
-        """Sets the tr069_account of this UserInfo.
+        r"""Sets the tr069_account of this UserInfo.
 
         tr069帐号。
 
@@ -781,7 +781,7 @@ class UserInfo:
 
     @property
     def corp_type(self):
-        """Gets the corp_type of this UserInfo.
+        r"""Gets the corp_type of this UserInfo.
 
         企业类型。 * 0：旗舰版 * 5：免费版 * 6：标准版 
 
@@ -792,7 +792,7 @@ class UserInfo:
 
     @corp_type.setter
     def corp_type(self, corp_type):
-        """Sets the corp_type of this UserInfo.
+        r"""Sets the corp_type of this UserInfo.
 
         企业类型。 * 0：旗舰版 * 5：免费版 * 6：标准版 
 
@@ -803,7 +803,7 @@ class UserInfo:
 
     @property
     def cloud_user_id(self):
-        """Gets the cloud_user_id of this UserInfo.
+        r"""Gets the cloud_user_id of this UserInfo.
 
         华为云帐号ID。
 
@@ -814,7 +814,7 @@ class UserInfo:
 
     @cloud_user_id.setter
     def cloud_user_id(self, cloud_user_id):
-        """Sets the cloud_user_id of this UserInfo.
+        r"""Sets the cloud_user_id of this UserInfo.
 
         华为云帐号ID。
 
@@ -825,7 +825,7 @@ class UserInfo:
 
     @property
     def gray_user(self):
-        """Gets the gray_user of this UserInfo.
+        r"""Gets the gray_user of this UserInfo.
 
         标识是否是灰度用户。
 
@@ -836,7 +836,7 @@ class UserInfo:
 
     @gray_user.setter
     def gray_user(self, gray_user):
-        """Sets the gray_user of this UserInfo.
+        r"""Sets the gray_user of this UserInfo.
 
         标识是否是灰度用户。
 

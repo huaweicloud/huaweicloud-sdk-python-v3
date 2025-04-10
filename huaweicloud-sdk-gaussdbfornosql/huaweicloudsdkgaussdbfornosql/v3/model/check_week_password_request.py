@@ -25,7 +25,7 @@ class CheckWeekPasswordRequest:
     }
 
     def __init__(self, body=None):
-        """CheckWeekPasswordRequest
+        r"""CheckWeekPasswordRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CheckWeekPasswordRequest:
 
     @property
     def body(self):
-        """Gets the body of this CheckWeekPasswordRequest.
+        r"""Gets the body of this CheckWeekPasswordRequest.
 
         :return: The body of this CheckWeekPasswordRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.CheckWeekPasswordRequestBody`
@@ -52,7 +52,7 @@ class CheckWeekPasswordRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CheckWeekPasswordRequest.
+        r"""Sets the body of this CheckWeekPasswordRequest.
 
         :param body: The body of this CheckWeekPasswordRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.CheckWeekPasswordRequestBody`

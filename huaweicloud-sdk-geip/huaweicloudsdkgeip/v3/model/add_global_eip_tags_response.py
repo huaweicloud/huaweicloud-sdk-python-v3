@@ -26,7 +26,7 @@ class AddGlobalEipTagsResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """AddGlobalEipTagsResponse
+        r"""AddGlobalEipTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class AddGlobalEipTagsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this AddGlobalEipTagsResponse.
+        r"""Gets the x_request_id of this AddGlobalEipTagsResponse.
 
         :return: The x_request_id of this AddGlobalEipTagsResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class AddGlobalEipTagsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this AddGlobalEipTagsResponse.
+        r"""Sets the x_request_id of this AddGlobalEipTagsResponse.
 
         :param x_request_id: The x_request_id of this AddGlobalEipTagsResponse.
         :type x_request_id: str

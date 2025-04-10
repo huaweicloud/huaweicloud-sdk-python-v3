@@ -37,7 +37,7 @@ class Action:
     }
 
     def __init__(self, name=None, access_level=None, permission_only=None, description=None, aliases=None, resources=None, condition_keys=None):
-        """Action
+        r"""Action
 
         The model defined in huaweicloud sdk
 
@@ -81,7 +81,7 @@ class Action:
 
     @property
     def name(self):
-        """Gets the name of this Action.
+        r"""Gets the name of this Action.
 
         三段式的授权项名称，例如\"iam:policies:createV5\"。
 
@@ -92,7 +92,7 @@ class Action:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Action.
+        r"""Sets the name of this Action.
 
         三段式的授权项名称，例如\"iam:policies:createV5\"。
 
@@ -103,7 +103,7 @@ class Action:
 
     @property
     def access_level(self):
-        """Gets the access_level of this Action.
+        r"""Gets the access_level of this Action.
 
         在策略中使用此授权项时授予的访问级别。
 
@@ -114,7 +114,7 @@ class Action:
 
     @access_level.setter
     def access_level(self, access_level):
-        """Sets the access_level of this Action.
+        r"""Sets the access_level of this Action.
 
         在策略中使用此授权项时授予的访问级别。
 
@@ -125,7 +125,7 @@ class Action:
 
     @property
     def permission_only(self):
-        """Gets the permission_only of this Action.
+        r"""Gets the permission_only of this Action.
 
         该授权项是否仅作为权限点，不对应任何操作。
 
@@ -136,7 +136,7 @@ class Action:
 
     @permission_only.setter
     def permission_only(self, permission_only):
-        """Sets the permission_only of this Action.
+        r"""Sets the permission_only of this Action.
 
         该授权项是否仅作为权限点，不对应任何操作。
 
@@ -147,7 +147,7 @@ class Action:
 
     @property
     def description(self):
-        """Gets the description of this Action.
+        r"""Gets the description of this Action.
 
         :return: The description of this Action.
         :rtype: :class:`huaweicloudsdkiam.v5.Description`
@@ -156,7 +156,7 @@ class Action:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Action.
+        r"""Sets the description of this Action.
 
         :param description: The description of this Action.
         :type description: :class:`huaweicloudsdkiam.v5.Description`
@@ -165,7 +165,7 @@ class Action:
 
     @property
     def aliases(self):
-        """Gets the aliases of this Action.
+        r"""Gets the aliases of this Action.
 
         授权项别名列表，用以兼容授权项改名或者拆分新授权项的场景。
 
@@ -176,7 +176,7 @@ class Action:
 
     @aliases.setter
     def aliases(self, aliases):
-        """Sets the aliases of this Action.
+        r"""Sets the aliases of this Action.
 
         授权项别名列表，用以兼容授权项改名或者拆分新授权项的场景。
 
@@ -187,7 +187,7 @@ class Action:
 
     @property
     def resources(self):
-        """Gets the resources of this Action.
+        r"""Gets the resources of this Action.
 
         与该授权项关联的资源列表，用于定义授权项的资源级权限。
 
@@ -198,7 +198,7 @@ class Action:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this Action.
+        r"""Sets the resources of this Action.
 
         与该授权项关联的资源列表，用于定义授权项的资源级权限。
 
@@ -209,7 +209,7 @@ class Action:
 
     @property
     def condition_keys(self):
-        """Gets the condition_keys of this Action.
+        r"""Gets the condition_keys of this Action.
 
         该授权项支持的，且与资源无关的服务自定义条件属性以及部分全局属性。
 
@@ -220,7 +220,7 @@ class Action:
 
     @condition_keys.setter
     def condition_keys(self, condition_keys):
-        """Sets the condition_keys of this Action.
+        r"""Sets the condition_keys of this Action.
 
         该授权项支持的，且与资源无关的服务自定义条件属性以及部分全局属性。
 

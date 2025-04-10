@@ -25,7 +25,7 @@ class DataClassificationRuleEnableDTO:
     }
 
     def __init__(self, enable=None):
-        """DataClassificationRuleEnableDTO
+        r"""DataClassificationRuleEnableDTO
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DataClassificationRuleEnableDTO:
 
     @property
     def enable(self):
-        """Gets the enable of this DataClassificationRuleEnableDTO.
+        r"""Gets the enable of this DataClassificationRuleEnableDTO.
 
         是否开启识别规则
 
@@ -54,7 +54,7 @@ class DataClassificationRuleEnableDTO:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this DataClassificationRuleEnableDTO.
+        r"""Sets the enable of this DataClassificationRuleEnableDTO.
 
         是否开启识别规则
 

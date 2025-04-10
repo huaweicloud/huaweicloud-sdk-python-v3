@@ -30,7 +30,7 @@ class ShowTaskResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, task_info=None):
-        """ShowTaskResponse
+        r"""ShowTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ShowTaskResponse.
+        r"""Gets the code of this ShowTaskResponse.
 
         响应码
 
@@ -69,7 +69,7 @@ class ShowTaskResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ShowTaskResponse.
+        r"""Sets the code of this ShowTaskResponse.
 
         响应码
 
@@ -80,7 +80,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowTaskResponse.
+        r"""Gets the message of this ShowTaskResponse.
 
         响应消息
 
@@ -91,7 +91,7 @@ class ShowTaskResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowTaskResponse.
+        r"""Sets the message of this ShowTaskResponse.
 
         响应消息
 
@@ -102,7 +102,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def task_info(self):
-        """Gets the task_info of this ShowTaskResponse.
+        r"""Gets the task_info of this ShowTaskResponse.
 
         :return: The task_info of this ShowTaskResponse.
         :rtype: :class:`huaweicloudsdkcpts.v1.TaskInfo`
@@ -111,7 +111,7 @@ class ShowTaskResponse(SdkResponse):
 
     @task_info.setter
     def task_info(self, task_info):
-        """Sets the task_info of this ShowTaskResponse.
+        r"""Sets the task_info of this ShowTaskResponse.
 
         :param task_info: The task_info of this ShowTaskResponse.
         :type task_info: :class:`huaweicloudsdkcpts.v1.TaskInfo`

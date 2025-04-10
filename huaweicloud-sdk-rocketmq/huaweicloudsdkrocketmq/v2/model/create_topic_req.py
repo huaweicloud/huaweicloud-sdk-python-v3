@@ -35,7 +35,7 @@ class CreateTopicReq:
     }
 
     def __init__(self, name=None, brokers=None, queue_num=None, queues=None, permission=None, message_type=None):
-        """CreateTopicReq
+        r"""CreateTopicReq
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class CreateTopicReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateTopicReq.
+        r"""Gets the name of this CreateTopicReq.
 
         主题名称，只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。
 
@@ -89,7 +89,7 @@ class CreateTopicReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateTopicReq.
+        r"""Sets the name of this CreateTopicReq.
 
         主题名称，只能由英文字母、数字、百分号、竖线、中划线、下划线组成，长度3~64个字符。
 
@@ -100,7 +100,7 @@ class CreateTopicReq:
 
     @property
     def brokers(self):
-        """Gets the brokers of this CreateTopicReq.
+        r"""Gets the brokers of this CreateTopicReq.
 
         关联的代理（仅RocketMQ实例4.8.0版本需要填写此参数）。
 
@@ -111,7 +111,7 @@ class CreateTopicReq:
 
     @brokers.setter
     def brokers(self, brokers):
-        """Sets the brokers of this CreateTopicReq.
+        r"""Sets the brokers of this CreateTopicReq.
 
         关联的代理（仅RocketMQ实例4.8.0版本需要填写此参数）。
 
@@ -122,7 +122,7 @@ class CreateTopicReq:
 
     @property
     def queue_num(self):
-        """Gets the queue_num of this CreateTopicReq.
+        r"""Gets the queue_num of this CreateTopicReq.
 
         队列数，范围1~50。
 
@@ -133,7 +133,7 @@ class CreateTopicReq:
 
     @queue_num.setter
     def queue_num(self, queue_num):
-        """Sets the queue_num of this CreateTopicReq.
+        r"""Sets the queue_num of this CreateTopicReq.
 
         队列数，范围1~50。
 
@@ -144,7 +144,7 @@ class CreateTopicReq:
 
     @property
     def queues(self):
-        """Gets the queues of this CreateTopicReq.
+        r"""Gets the queues of this CreateTopicReq.
 
         队列（仅RocketMQ实例4.8.0版本需要填写此参数）。
 
@@ -155,7 +155,7 @@ class CreateTopicReq:
 
     @queues.setter
     def queues(self, queues):
-        """Sets the queues of this CreateTopicReq.
+        r"""Sets the queues of this CreateTopicReq.
 
         队列（仅RocketMQ实例4.8.0版本需要填写此参数）。
 
@@ -166,7 +166,7 @@ class CreateTopicReq:
 
     @property
     def permission(self):
-        """Gets the permission of this CreateTopicReq.
+        r"""Gets the permission of this CreateTopicReq.
 
         权限（仅RocketMQ实例4.8.0版本需要填写此参数）。 取值范围：   - pub（发布）   - sub（订阅）   - all（发布+订阅）
 
@@ -177,7 +177,7 @@ class CreateTopicReq:
 
     @permission.setter
     def permission(self, permission):
-        """Sets the permission of this CreateTopicReq.
+        r"""Sets the permission of this CreateTopicReq.
 
         权限（仅RocketMQ实例4.8.0版本需要填写此参数）。 取值范围：   - pub（发布）   - sub（订阅）   - all（发布+订阅）
 
@@ -188,7 +188,7 @@ class CreateTopicReq:
 
     @property
     def message_type(self):
-        """Gets the message_type of this CreateTopicReq.
+        r"""Gets the message_type of this CreateTopicReq.
 
         消息类型（仅RocketMQ实例5.x版本需要填写此参数）。 取值范围：   - NORMAL（普通消息）   - FIFO（顺序消息）   - DELAY（定时消息）   - TRANSACTION（事务消息）
 
@@ -199,7 +199,7 @@ class CreateTopicReq:
 
     @message_type.setter
     def message_type(self, message_type):
-        """Sets the message_type of this CreateTopicReq.
+        r"""Sets the message_type of this CreateTopicReq.
 
         消息类型（仅RocketMQ实例5.x版本需要填写此参数）。 取值范围：   - NORMAL（普通消息）   - FIFO（顺序消息）   - DELAY（定时消息）   - TRANSACTION（事务消息）
 

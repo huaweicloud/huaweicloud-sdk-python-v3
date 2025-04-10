@@ -37,7 +37,7 @@ class FieldItem:
     }
 
     def __init__(self, function=None, _as=None, default_value=None, trace=None, precision=None, unit=None, visible=None):
-        """FieldItem
+        r"""FieldItem
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class FieldItem:
 
     @property
     def function(self):
-        """Gets the function of this FieldItem.
+        r"""Gets the function of this FieldItem.
 
         表达式。
 
@@ -95,7 +95,7 @@ class FieldItem:
 
     @function.setter
     def function(self, function):
-        """Sets the function of this FieldItem.
+        r"""Sets the function of this FieldItem.
 
         表达式。
 
@@ -106,7 +106,7 @@ class FieldItem:
 
     @property
     def _as(self):
-        """Gets the _as of this FieldItem.
+        r"""Gets the _as of this FieldItem.
 
         作为。
 
@@ -117,7 +117,7 @@ class FieldItem:
 
     @_as.setter
     def _as(self, _as):
-        """Sets the _as of this FieldItem.
+        r"""Sets the _as of this FieldItem.
 
         作为。
 
@@ -128,7 +128,7 @@ class FieldItem:
 
     @property
     def default_value(self):
-        """Gets the default_value of this FieldItem.
+        r"""Gets the default_value of this FieldItem.
 
         默认值。
 
@@ -139,7 +139,7 @@ class FieldItem:
 
     @default_value.setter
     def default_value(self, default_value):
-        """Sets the default_value of this FieldItem.
+        r"""Sets the default_value of this FieldItem.
 
         默认值。
 
@@ -150,7 +150,7 @@ class FieldItem:
 
     @property
     def trace(self):
-        """Gets the trace of this FieldItem.
+        r"""Gets the trace of this FieldItem.
 
         是否是trace。
 
@@ -161,7 +161,7 @@ class FieldItem:
 
     @trace.setter
     def trace(self, trace):
-        """Sets the trace of this FieldItem.
+        r"""Sets the trace of this FieldItem.
 
         是否是trace。
 
@@ -172,7 +172,7 @@ class FieldItem:
 
     @property
     def precision(self):
-        """Gets the precision of this FieldItem.
+        r"""Gets the precision of this FieldItem.
 
         百分比。
 
@@ -183,7 +183,7 @@ class FieldItem:
 
     @precision.setter
     def precision(self, precision):
-        """Sets the precision of this FieldItem.
+        r"""Sets the precision of this FieldItem.
 
         百分比。
 
@@ -194,7 +194,7 @@ class FieldItem:
 
     @property
     def unit(self):
-        """Gets the unit of this FieldItem.
+        r"""Gets the unit of this FieldItem.
 
         单位。
 
@@ -205,7 +205,7 @@ class FieldItem:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this FieldItem.
+        r"""Sets the unit of this FieldItem.
 
         单位。
 
@@ -216,7 +216,7 @@ class FieldItem:
 
     @property
     def visible(self):
-        """Gets the visible of this FieldItem.
+        r"""Gets the visible of this FieldItem.
 
         是否可见。
 
@@ -227,7 +227,7 @@ class FieldItem:
 
     @visible.setter
     def visible(self, visible):
-        """Sets the visible of this FieldItem.
+        r"""Sets the visible of this FieldItem.
 
         是否可见。
 

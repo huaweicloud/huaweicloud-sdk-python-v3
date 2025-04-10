@@ -35,7 +35,7 @@ class MountComponent:
     }
 
     def __init__(self, env_id=None, env_name=None, app_id=None, app_name=None, component_id=None, component_name=None):
-        """MountComponent
+        r"""MountComponent
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class MountComponent:
 
     @property
     def env_id(self):
-        """Gets the env_id of this MountComponent.
+        r"""Gets the env_id of this MountComponent.
 
         环境ID。
 
@@ -89,7 +89,7 @@ class MountComponent:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this MountComponent.
+        r"""Sets the env_id of this MountComponent.
 
         环境ID。
 
@@ -100,7 +100,7 @@ class MountComponent:
 
     @property
     def env_name(self):
-        """Gets the env_name of this MountComponent.
+        r"""Gets the env_name of this MountComponent.
 
         环境名称。
 
@@ -111,7 +111,7 @@ class MountComponent:
 
     @env_name.setter
     def env_name(self, env_name):
-        """Sets the env_name of this MountComponent.
+        r"""Sets the env_name of this MountComponent.
 
         环境名称。
 
@@ -122,7 +122,7 @@ class MountComponent:
 
     @property
     def app_id(self):
-        """Gets the app_id of this MountComponent.
+        r"""Gets the app_id of this MountComponent.
 
         应用ID。
 
@@ -133,7 +133,7 @@ class MountComponent:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this MountComponent.
+        r"""Sets the app_id of this MountComponent.
 
         应用ID。
 
@@ -144,7 +144,7 @@ class MountComponent:
 
     @property
     def app_name(self):
-        """Gets the app_name of this MountComponent.
+        r"""Gets the app_name of this MountComponent.
 
         应用名称。
 
@@ -155,7 +155,7 @@ class MountComponent:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this MountComponent.
+        r"""Sets the app_name of this MountComponent.
 
         应用名称。
 
@@ -166,7 +166,7 @@ class MountComponent:
 
     @property
     def component_id(self):
-        """Gets the component_id of this MountComponent.
+        r"""Gets the component_id of this MountComponent.
 
         组件ID。
 
@@ -177,7 +177,7 @@ class MountComponent:
 
     @component_id.setter
     def component_id(self, component_id):
-        """Sets the component_id of this MountComponent.
+        r"""Sets the component_id of this MountComponent.
 
         组件ID。
 
@@ -188,7 +188,7 @@ class MountComponent:
 
     @property
     def component_name(self):
-        """Gets the component_name of this MountComponent.
+        r"""Gets the component_name of this MountComponent.
 
         组件名称。
 
@@ -199,7 +199,7 @@ class MountComponent:
 
     @component_name.setter
     def component_name(self, component_name):
-        """Sets the component_name of this MountComponent.
+        r"""Sets the component_name of this MountComponent.
 
         组件名称。
 

@@ -37,7 +37,7 @@ class Deployment:
     }
 
     def __init__(self, name=None, description=None, source=None, group_id=None, node_ids=None, tags=None, deployment=None):
-        """Deployment
+        r"""Deployment
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class Deployment:
 
     @property
     def name(self):
-        """Gets the name of this Deployment.
+        r"""Gets the name of this Deployment.
 
         部署名称，只允许英文小写字母、数字、中划线，最大长度32，英文小写字母或数字开头和结尾
 
@@ -93,7 +93,7 @@ class Deployment:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Deployment.
+        r"""Sets the name of this Deployment.
 
         部署名称，只允许英文小写字母、数字、中划线，最大长度32，英文小写字母或数字开头和结尾
 
@@ -104,7 +104,7 @@ class Deployment:
 
     @property
     def description(self):
-        """Gets the description of this Deployment.
+        r"""Gets the description of this Deployment.
 
         部署描述
 
@@ -115,7 +115,7 @@ class Deployment:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Deployment.
+        r"""Sets the description of this Deployment.
 
         部署描述
 
@@ -126,7 +126,7 @@ class Deployment:
 
     @property
     def source(self):
-        """Gets the source of this Deployment.
+        r"""Gets the source of this Deployment.
 
         应用部署来源：边缘市场（iem）或自定义()
 
@@ -137,7 +137,7 @@ class Deployment:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this Deployment.
+        r"""Sets the source of this Deployment.
 
         应用部署来源：边缘市场（iem）或自定义()
 
@@ -148,7 +148,7 @@ class Deployment:
 
     @property
     def group_id(self):
-        """Gets the group_id of this Deployment.
+        r"""Gets the group_id of this Deployment.
 
         应用部署到指定节点组，与node_ids二选一
 
@@ -159,7 +159,7 @@ class Deployment:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this Deployment.
+        r"""Sets the group_id of this Deployment.
 
         应用部署到指定节点组，与node_ids二选一
 
@@ -170,7 +170,7 @@ class Deployment:
 
     @property
     def node_ids(self):
-        """Gets the node_ids of this Deployment.
+        r"""Gets the node_ids of this Deployment.
 
         应用部署到指定节点，当前只支持一个边缘节点
 
@@ -181,7 +181,7 @@ class Deployment:
 
     @node_ids.setter
     def node_ids(self, node_ids):
-        """Sets the node_ids of this Deployment.
+        r"""Sets the node_ids of this Deployment.
 
         应用部署到指定节点，当前只支持一个边缘节点
 
@@ -192,7 +192,7 @@ class Deployment:
 
     @property
     def tags(self):
-        """Gets the tags of this Deployment.
+        r"""Gets the tags of this Deployment.
 
         节点属性
 
@@ -203,7 +203,7 @@ class Deployment:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this Deployment.
+        r"""Sets the tags of this Deployment.
 
         节点属性
 
@@ -214,7 +214,7 @@ class Deployment:
 
     @property
     def deployment(self):
-        """Gets the deployment of this Deployment.
+        r"""Gets the deployment of this Deployment.
 
         :return: The deployment of this Deployment.
         :rtype: :class:`huaweicloudsdkief.v1.CreateAppsInDeploymentV3`
@@ -223,7 +223,7 @@ class Deployment:
 
     @deployment.setter
     def deployment(self, deployment):
-        """Sets the deployment of this Deployment.
+        r"""Sets the deployment of this Deployment.
 
         :param deployment: The deployment of this Deployment.
         :type deployment: :class:`huaweicloudsdkief.v1.CreateAppsInDeploymentV3`

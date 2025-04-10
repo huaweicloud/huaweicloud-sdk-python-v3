@@ -25,7 +25,7 @@ class UpdateDelayConfigRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateDelayConfigRequest
+        r"""UpdateDelayConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateDelayConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDelayConfigRequest.
+        r"""Gets the body of this UpdateDelayConfigRequest.
 
         :return: The body of this UpdateDelayConfigRequest.
         :rtype: :class:`huaweicloudsdklive.v1.ModifyDelayConfig`
@@ -52,7 +52,7 @@ class UpdateDelayConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDelayConfigRequest.
+        r"""Sets the body of this UpdateDelayConfigRequest.
 
         :param body: The body of this UpdateDelayConfigRequest.
         :type body: :class:`huaweicloudsdklive.v1.ModifyDelayConfig`

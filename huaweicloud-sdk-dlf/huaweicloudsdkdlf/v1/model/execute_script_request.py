@@ -29,7 +29,7 @@ class ExecuteScriptRequest:
     }
 
     def __init__(self, workspace=None, script_name=None, body=None):
-        """ExecuteScriptRequest
+        r"""ExecuteScriptRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ExecuteScriptRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ExecuteScriptRequest.
+        r"""Gets the workspace of this ExecuteScriptRequest.
 
         工作空间id
 
@@ -67,7 +67,7 @@ class ExecuteScriptRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ExecuteScriptRequest.
+        r"""Sets the workspace of this ExecuteScriptRequest.
 
         工作空间id
 
@@ -78,7 +78,7 @@ class ExecuteScriptRequest:
 
     @property
     def script_name(self):
-        """Gets the script_name of this ExecuteScriptRequest.
+        r"""Gets the script_name of this ExecuteScriptRequest.
 
         :return: The script_name of this ExecuteScriptRequest.
         :rtype: str
@@ -87,7 +87,7 @@ class ExecuteScriptRequest:
 
     @script_name.setter
     def script_name(self, script_name):
-        """Sets the script_name of this ExecuteScriptRequest.
+        r"""Sets the script_name of this ExecuteScriptRequest.
 
         :param script_name: The script_name of this ExecuteScriptRequest.
         :type script_name: str
@@ -96,7 +96,7 @@ class ExecuteScriptRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExecuteScriptRequest.
+        r"""Gets the body of this ExecuteScriptRequest.
 
         :return: The body of this ExecuteScriptRequest.
         :rtype: :class:`huaweicloudsdkdlf.v1.ExecuteScriptReq`
@@ -105,7 +105,7 @@ class ExecuteScriptRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExecuteScriptRequest.
+        r"""Sets the body of this ExecuteScriptRequest.
 
         :param body: The body of this ExecuteScriptRequest.
         :type body: :class:`huaweicloudsdkdlf.v1.ExecuteScriptReq`

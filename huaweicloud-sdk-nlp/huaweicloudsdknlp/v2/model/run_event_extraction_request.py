@@ -25,7 +25,7 @@ class RunEventExtractionRequest:
     }
 
     def __init__(self, body=None):
-        """RunEventExtractionRequest
+        r"""RunEventExtractionRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RunEventExtractionRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunEventExtractionRequest.
+        r"""Gets the body of this RunEventExtractionRequest.
 
         :return: The body of this RunEventExtractionRequest.
         :rtype: :class:`huaweicloudsdknlp.v2.PostEventExtractionReq`
@@ -52,7 +52,7 @@ class RunEventExtractionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunEventExtractionRequest.
+        r"""Sets the body of this RunEventExtractionRequest.
 
         :param body: The body of this RunEventExtractionRequest.
         :type body: :class:`huaweicloudsdknlp.v2.PostEventExtractionReq`

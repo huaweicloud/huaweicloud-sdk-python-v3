@@ -27,7 +27,7 @@ class DeleteAssetVersionRequest:
     }
 
     def __init__(self, asset_id=None, version=None):
-        """DeleteAssetVersionRequest
+        r"""DeleteAssetVersionRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteAssetVersionRequest:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this DeleteAssetVersionRequest.
+        r"""Gets the asset_id of this DeleteAssetVersionRequest.
 
         资产id
 
@@ -59,7 +59,7 @@ class DeleteAssetVersionRequest:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this DeleteAssetVersionRequest.
+        r"""Sets the asset_id of this DeleteAssetVersionRequest.
 
         资产id
 
@@ -70,7 +70,7 @@ class DeleteAssetVersionRequest:
 
     @property
     def version(self):
-        """Gets the version of this DeleteAssetVersionRequest.
+        r"""Gets the version of this DeleteAssetVersionRequest.
 
         version
 
@@ -81,7 +81,7 @@ class DeleteAssetVersionRequest:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this DeleteAssetVersionRequest.
+        r"""Sets the version of this DeleteAssetVersionRequest.
 
         version
 

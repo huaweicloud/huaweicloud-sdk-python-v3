@@ -35,7 +35,7 @@ class ProjectV3:
     }
 
     def __init__(self, project_id=None, name=None, region_id=None, region_name=None, management_permission=None, is_stock=None):
-        """ProjectV3
+        r"""ProjectV3
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class ProjectV3:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ProjectV3.
+        r"""Gets the project_id of this ProjectV3.
 
         项目id
 
@@ -87,7 +87,7 @@ class ProjectV3:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ProjectV3.
+        r"""Sets the project_id of this ProjectV3.
 
         项目id
 
@@ -98,7 +98,7 @@ class ProjectV3:
 
     @property
     def name(self):
-        """Gets the name of this ProjectV3.
+        r"""Gets the name of this ProjectV3.
 
         项目名
 
@@ -109,7 +109,7 @@ class ProjectV3:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ProjectV3.
+        r"""Sets the name of this ProjectV3.
 
         项目名
 
@@ -120,7 +120,7 @@ class ProjectV3:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ProjectV3.
+        r"""Gets the region_id of this ProjectV3.
 
         区域编码
 
@@ -131,7 +131,7 @@ class ProjectV3:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ProjectV3.
+        r"""Sets the region_id of this ProjectV3.
 
         区域编码
 
@@ -142,7 +142,7 @@ class ProjectV3:
 
     @property
     def region_name(self):
-        """Gets the region_name of this ProjectV3.
+        r"""Gets the region_name of this ProjectV3.
 
         区域名称
 
@@ -153,7 +153,7 @@ class ProjectV3:
 
     @region_name.setter
     def region_name(self, region_name):
-        """Sets the region_name of this ProjectV3.
+        r"""Sets the region_name of this ProjectV3.
 
         区域名称
 
@@ -164,7 +164,7 @@ class ProjectV3:
 
     @property
     def management_permission(self):
-        """Gets the management_permission of this ProjectV3.
+        r"""Gets the management_permission of this ProjectV3.
 
         管理权限
 
@@ -175,7 +175,7 @@ class ProjectV3:
 
     @management_permission.setter
     def management_permission(self, management_permission):
-        """Sets the management_permission of this ProjectV3.
+        r"""Sets the management_permission of this ProjectV3.
 
         管理权限
 
@@ -186,7 +186,7 @@ class ProjectV3:
 
     @property
     def is_stock(self):
-        """Gets the is_stock of this ProjectV3.
+        r"""Gets the is_stock of this ProjectV3.
 
         是否是存量项目
 
@@ -197,7 +197,7 @@ class ProjectV3:
 
     @is_stock.setter
     def is_stock(self, is_stock):
-        """Sets the is_stock of this ProjectV3.
+        r"""Sets the is_stock of this ProjectV3.
 
         是否是存量项目
 

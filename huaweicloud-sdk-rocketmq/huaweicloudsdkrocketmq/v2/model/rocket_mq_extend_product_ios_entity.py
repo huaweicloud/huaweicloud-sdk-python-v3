@@ -31,7 +31,7 @@ class RocketMQExtendProductIosEntity:
     }
 
     def __init__(self, io_spec=None, available_zones=None, type=None, unavailable_zones=None):
-        """RocketMQExtendProductIosEntity
+        r"""RocketMQExtendProductIosEntity
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class RocketMQExtendProductIosEntity:
 
     @property
     def io_spec(self):
-        """Gets the io_spec of this RocketMQExtendProductIosEntity.
+        r"""Gets the io_spec of this RocketMQExtendProductIosEntity.
 
         存储IO规格。
 
@@ -75,7 +75,7 @@ class RocketMQExtendProductIosEntity:
 
     @io_spec.setter
     def io_spec(self, io_spec):
-        """Sets the io_spec of this RocketMQExtendProductIosEntity.
+        r"""Sets the io_spec of this RocketMQExtendProductIosEntity.
 
         存储IO规格。
 
@@ -86,7 +86,7 @@ class RocketMQExtendProductIosEntity:
 
     @property
     def available_zones(self):
-        """Gets the available_zones of this RocketMQExtendProductIosEntity.
+        r"""Gets the available_zones of this RocketMQExtendProductIosEntity.
 
         有可用资源的可用区列表。
 
@@ -97,7 +97,7 @@ class RocketMQExtendProductIosEntity:
 
     @available_zones.setter
     def available_zones(self, available_zones):
-        """Sets the available_zones of this RocketMQExtendProductIosEntity.
+        r"""Sets the available_zones of this RocketMQExtendProductIosEntity.
 
         有可用资源的可用区列表。
 
@@ -108,7 +108,7 @@ class RocketMQExtendProductIosEntity:
 
     @property
     def type(self):
-        """Gets the type of this RocketMQExtendProductIosEntity.
+        r"""Gets the type of this RocketMQExtendProductIosEntity.
 
         IO类型。
 
@@ -119,7 +119,7 @@ class RocketMQExtendProductIosEntity:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RocketMQExtendProductIosEntity.
+        r"""Sets the type of this RocketMQExtendProductIosEntity.
 
         IO类型。
 
@@ -130,7 +130,7 @@ class RocketMQExtendProductIosEntity:
 
     @property
     def unavailable_zones(self):
-        """Gets the unavailable_zones of this RocketMQExtendProductIosEntity.
+        r"""Gets the unavailable_zones of this RocketMQExtendProductIosEntity.
 
         资源售罄的可用区列表。
 
@@ -141,7 +141,7 @@ class RocketMQExtendProductIosEntity:
 
     @unavailable_zones.setter
     def unavailable_zones(self, unavailable_zones):
-        """Sets the unavailable_zones of this RocketMQExtendProductIosEntity.
+        r"""Sets the unavailable_zones of this RocketMQExtendProductIosEntity.
 
         资源售罄的可用区列表。
 

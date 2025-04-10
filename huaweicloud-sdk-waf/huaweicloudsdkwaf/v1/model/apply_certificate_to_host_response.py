@@ -34,7 +34,7 @@ class ApplyCertificateToHostResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, timestamp=None, expire_time=None, bind_host=None):
-        """ApplyCertificateToHostResponse
+        r"""ApplyCertificateToHostResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ApplyCertificateToHostResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ApplyCertificateToHostResponse.
+        r"""Gets the id of this ApplyCertificateToHostResponse.
 
         证书id
 
@@ -83,7 +83,7 @@ class ApplyCertificateToHostResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ApplyCertificateToHostResponse.
+        r"""Sets the id of this ApplyCertificateToHostResponse.
 
         证书id
 
@@ -94,7 +94,7 @@ class ApplyCertificateToHostResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ApplyCertificateToHostResponse.
+        r"""Gets the name of this ApplyCertificateToHostResponse.
 
         证书名
 
@@ -105,7 +105,7 @@ class ApplyCertificateToHostResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApplyCertificateToHostResponse.
+        r"""Sets the name of this ApplyCertificateToHostResponse.
 
         证书名
 
@@ -116,7 +116,7 @@ class ApplyCertificateToHostResponse(SdkResponse):
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this ApplyCertificateToHostResponse.
+        r"""Gets the timestamp of this ApplyCertificateToHostResponse.
 
         时间戳
 
@@ -127,7 +127,7 @@ class ApplyCertificateToHostResponse(SdkResponse):
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this ApplyCertificateToHostResponse.
+        r"""Sets the timestamp of this ApplyCertificateToHostResponse.
 
         时间戳
 
@@ -138,7 +138,7 @@ class ApplyCertificateToHostResponse(SdkResponse):
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this ApplyCertificateToHostResponse.
+        r"""Gets the expire_time of this ApplyCertificateToHostResponse.
 
         过期时间
 
@@ -149,7 +149,7 @@ class ApplyCertificateToHostResponse(SdkResponse):
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this ApplyCertificateToHostResponse.
+        r"""Sets the expire_time of this ApplyCertificateToHostResponse.
 
         过期时间
 
@@ -160,7 +160,7 @@ class ApplyCertificateToHostResponse(SdkResponse):
 
     @property
     def bind_host(self):
-        """Gets the bind_host of this ApplyCertificateToHostResponse.
+        r"""Gets the bind_host of this ApplyCertificateToHostResponse.
 
         绑定域名列表
 
@@ -171,7 +171,7 @@ class ApplyCertificateToHostResponse(SdkResponse):
 
     @bind_host.setter
     def bind_host(self, bind_host):
-        """Sets the bind_host of this ApplyCertificateToHostResponse.
+        r"""Sets the bind_host of this ApplyCertificateToHostResponse.
 
         绑定域名列表
 

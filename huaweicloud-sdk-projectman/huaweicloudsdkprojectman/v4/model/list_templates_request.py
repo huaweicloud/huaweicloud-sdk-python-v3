@@ -27,7 +27,7 @@ class ListTemplatesRequest:
     }
 
     def __init__(self, project_id=None, tracker_id=None):
-        """ListTemplatesRequest
+        r"""ListTemplatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListTemplatesRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListTemplatesRequest.
+        r"""Gets the project_id of this ListTemplatesRequest.
 
         项目id
 
@@ -60,7 +60,7 @@ class ListTemplatesRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListTemplatesRequest.
+        r"""Sets the project_id of this ListTemplatesRequest.
 
         项目id
 
@@ -71,7 +71,7 @@ class ListTemplatesRequest:
 
     @property
     def tracker_id(self):
-        """Gets the tracker_id of this ListTemplatesRequest.
+        r"""Gets the tracker_id of this ListTemplatesRequest.
 
         工作项类型id
 
@@ -82,7 +82,7 @@ class ListTemplatesRequest:
 
     @tracker_id.setter
     def tracker_id(self, tracker_id):
-        """Sets the tracker_id of this ListTemplatesRequest.
+        r"""Sets the tracker_id of this ListTemplatesRequest.
 
         工作项类型id
 

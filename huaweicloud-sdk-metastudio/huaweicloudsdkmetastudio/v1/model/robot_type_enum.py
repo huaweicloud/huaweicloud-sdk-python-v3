@@ -27,7 +27,7 @@ class RobotTypeEnum:
     }
 
     def __init__(self):
-        """RobotTypeEnum
+        r"""RobotTypeEnum
 
         The model defined in huaweicloud sdk
 

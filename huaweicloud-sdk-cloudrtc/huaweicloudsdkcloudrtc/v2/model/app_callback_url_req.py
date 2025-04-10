@@ -27,7 +27,7 @@ class AppCallbackUrlReq:
     }
 
     def __init__(self, url=None, auth_key=None):
-        """AppCallbackUrlReq
+        r"""AppCallbackUrlReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AppCallbackUrlReq:
 
     @property
     def url(self):
-        """Gets the url of this AppCallbackUrlReq.
+        r"""Gets the url of this AppCallbackUrlReq.
 
         回调通知url地址，url必须以http://或https://开头，需要支持POST调用。
 
@@ -60,7 +60,7 @@ class AppCallbackUrlReq:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this AppCallbackUrlReq.
+        r"""Sets the url of this AppCallbackUrlReq.
 
         回调通知url地址，url必须以http://或https://开头，需要支持POST调用。
 
@@ -71,7 +71,7 @@ class AppCallbackUrlReq:
 
     @property
     def auth_key(self):
-        """Gets the auth_key of this AppCallbackUrlReq.
+        r"""Gets the auth_key of this AppCallbackUrlReq.
 
         回调秘钥，主要用于鉴权
 
@@ -82,7 +82,7 @@ class AppCallbackUrlReq:
 
     @auth_key.setter
     def auth_key(self, auth_key):
-        """Sets the auth_key of this AppCallbackUrlReq.
+        r"""Sets the auth_key of this AppCallbackUrlReq.
 
         回调秘钥，主要用于鉴权
 

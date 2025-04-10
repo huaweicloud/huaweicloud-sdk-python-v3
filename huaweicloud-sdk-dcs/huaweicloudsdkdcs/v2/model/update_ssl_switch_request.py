@@ -27,7 +27,7 @@ class UpdateSslSwitchRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """UpdateSslSwitchRequest
+        r"""UpdateSslSwitchRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateSslSwitchRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateSslSwitchRequest.
+        r"""Gets the instance_id of this UpdateSslSwitchRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class UpdateSslSwitchRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateSslSwitchRequest.
+        r"""Sets the instance_id of this UpdateSslSwitchRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class UpdateSslSwitchRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSslSwitchRequest.
+        r"""Gets the body of this UpdateSslSwitchRequest.
 
         :return: The body of this UpdateSslSwitchRequest.
         :rtype: :class:`huaweicloudsdkdcs.v2.UpdateSSLSwitchRequestBody`
@@ -80,7 +80,7 @@ class UpdateSslSwitchRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSslSwitchRequest.
+        r"""Sets the body of this UpdateSslSwitchRequest.
 
         :param body: The body of this UpdateSslSwitchRequest.
         :type body: :class:`huaweicloudsdkdcs.v2.UpdateSSLSwitchRequestBody`

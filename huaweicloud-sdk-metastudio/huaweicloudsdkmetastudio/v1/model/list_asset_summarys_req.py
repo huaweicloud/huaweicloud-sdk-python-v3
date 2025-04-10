@@ -25,7 +25,7 @@ class ListAssetSummarysReq:
     }
 
     def __init__(self, asset_ids=None):
-        """ListAssetSummarysReq
+        r"""ListAssetSummarysReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListAssetSummarysReq:
 
     @property
     def asset_ids(self):
-        """Gets the asset_ids of this ListAssetSummarysReq.
+        r"""Gets the asset_ids of this ListAssetSummarysReq.
 
         需要查询的资产ID。
 
@@ -53,7 +53,7 @@ class ListAssetSummarysReq:
 
     @asset_ids.setter
     def asset_ids(self, asset_ids):
-        """Sets the asset_ids of this ListAssetSummarysReq.
+        r"""Sets the asset_ids of this ListAssetSummarysReq.
 
         需要查询的资产ID。
 

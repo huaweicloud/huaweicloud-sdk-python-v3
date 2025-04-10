@@ -29,7 +29,7 @@ class CollectConformancePackComplianceSummaryRequest:
     }
 
     def __init__(self, limit=None, marker=None, conformance_pack_name=None):
-        """CollectConformancePackComplianceSummaryRequest
+        r"""CollectConformancePackComplianceSummaryRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CollectConformancePackComplianceSummaryRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this CollectConformancePackComplianceSummaryRequest.
+        r"""Gets the limit of this CollectConformancePackComplianceSummaryRequest.
 
         最大的返回数量
 
@@ -68,7 +68,7 @@ class CollectConformancePackComplianceSummaryRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this CollectConformancePackComplianceSummaryRequest.
+        r"""Sets the limit of this CollectConformancePackComplianceSummaryRequest.
 
         最大的返回数量
 
@@ -79,7 +79,7 @@ class CollectConformancePackComplianceSummaryRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this CollectConformancePackComplianceSummaryRequest.
+        r"""Gets the marker of this CollectConformancePackComplianceSummaryRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -90,7 +90,7 @@ class CollectConformancePackComplianceSummaryRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this CollectConformancePackComplianceSummaryRequest.
+        r"""Sets the marker of this CollectConformancePackComplianceSummaryRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -101,7 +101,7 @@ class CollectConformancePackComplianceSummaryRequest:
 
     @property
     def conformance_pack_name(self):
-        """Gets the conformance_pack_name of this CollectConformancePackComplianceSummaryRequest.
+        r"""Gets the conformance_pack_name of this CollectConformancePackComplianceSummaryRequest.
 
         合规规则包名称。
 
@@ -112,7 +112,7 @@ class CollectConformancePackComplianceSummaryRequest:
 
     @conformance_pack_name.setter
     def conformance_pack_name(self, conformance_pack_name):
-        """Sets the conformance_pack_name of this CollectConformancePackComplianceSummaryRequest.
+        r"""Sets the conformance_pack_name of this CollectConformancePackComplianceSummaryRequest.
 
         合规规则包名称。
 

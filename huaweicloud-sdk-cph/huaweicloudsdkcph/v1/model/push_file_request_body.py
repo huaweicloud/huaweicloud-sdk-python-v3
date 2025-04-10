@@ -31,7 +31,7 @@ class PushFileRequestBody:
     }
 
     def __init__(self, command=None, content=None, phone_ids=None, server_ids=None):
-        """PushFileRequestBody
+        r"""PushFileRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class PushFileRequestBody:
 
     @property
     def command(self):
-        """Gets the command of this PushFileRequestBody.
+        r"""Gets the command of this PushFileRequestBody.
 
         推送文件固定填写push。
 
@@ -73,7 +73,7 @@ class PushFileRequestBody:
 
     @command.setter
     def command(self, command):
-        """Sets the command of this PushFileRequestBody.
+        r"""Sets the command of this PushFileRequestBody.
 
         推送文件固定填写push。
 
@@ -84,7 +84,7 @@ class PushFileRequestBody:
 
     @property
     def content(self):
-        """Gets the content of this PushFileRequestBody.
+        r"""Gets the content of this PushFileRequestBody.
 
         推送的文件只支持tar文件类型，指定OBS桶中的tar文件。 最大长度为1024字节，只支持大小写字母、数字、下划线（_）、点（.）、斜线（/）、冒号（:）、中划线（-）。文件格式：obs://obs-bucket-name/obs-file-path/file.tar，文件路径与OBS桶对象路径对应。
 
@@ -95,7 +95,7 @@ class PushFileRequestBody:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this PushFileRequestBody.
+        r"""Sets the content of this PushFileRequestBody.
 
         推送的文件只支持tar文件类型，指定OBS桶中的tar文件。 最大长度为1024字节，只支持大小写字母、数字、下划线（_）、点（.）、斜线（/）、冒号（:）、中划线（-）。文件格式：obs://obs-bucket-name/obs-file-path/file.tar，文件路径与OBS桶对象路径对应。
 
@@ -106,7 +106,7 @@ class PushFileRequestBody:
 
     @property
     def phone_ids(self):
-        """Gets the phone_ids of this PushFileRequestBody.
+        r"""Gets the phone_ids of this PushFileRequestBody.
 
         云手机ID列表。 server_ids参数不存在时必选，同时存在只处理phone_ids。
 
@@ -117,7 +117,7 @@ class PushFileRequestBody:
 
     @phone_ids.setter
     def phone_ids(self, phone_ids):
-        """Sets the phone_ids of this PushFileRequestBody.
+        r"""Sets the phone_ids of this PushFileRequestBody.
 
         云手机ID列表。 server_ids参数不存在时必选，同时存在只处理phone_ids。
 
@@ -128,7 +128,7 @@ class PushFileRequestBody:
 
     @property
     def server_ids(self):
-        """Gets the server_ids of this PushFileRequestBody.
+        r"""Gets the server_ids of this PushFileRequestBody.
 
         云手机服务器ID列表。 phone_ids参数不存在时必选，同时存在只处理phone_ids。
 
@@ -139,7 +139,7 @@ class PushFileRequestBody:
 
     @server_ids.setter
     def server_ids(self, server_ids):
-        """Sets the server_ids of this PushFileRequestBody.
+        r"""Sets the server_ids of this PushFileRequestBody.
 
         云手机服务器ID列表。 phone_ids参数不存在时必选，同时存在只处理phone_ids。
 

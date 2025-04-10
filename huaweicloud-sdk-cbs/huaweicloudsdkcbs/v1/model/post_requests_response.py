@@ -32,7 +32,7 @@ class PostRequestsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, question=None, answers=None, extends=None):
-        """PostRequestsResponse
+        r"""PostRequestsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class PostRequestsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this PostRequestsResponse.
+        r"""Gets the request_id of this PostRequestsResponse.
 
         请求ID。  调用失败时无此字段。
 
@@ -76,7 +76,7 @@ class PostRequestsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this PostRequestsResponse.
+        r"""Sets the request_id of this PostRequestsResponse.
 
         请求ID。  调用失败时无此字段。
 
@@ -87,7 +87,7 @@ class PostRequestsResponse(SdkResponse):
 
     @property
     def question(self):
-        """Gets the question of this PostRequestsResponse.
+        r"""Gets the question of this PostRequestsResponse.
 
         问题。  调用失败时无此字段。
 
@@ -98,7 +98,7 @@ class PostRequestsResponse(SdkResponse):
 
     @question.setter
     def question(self, question):
-        """Sets the question of this PostRequestsResponse.
+        r"""Sets the question of this PostRequestsResponse.
 
         问题。  调用失败时无此字段。
 
@@ -109,7 +109,7 @@ class PostRequestsResponse(SdkResponse):
 
     @property
     def answers(self):
-        """Gets the answers of this PostRequestsResponse.
+        r"""Gets the answers of this PostRequestsResponse.
 
         最相似的问题集。 调用失败时无此字段。
 
@@ -120,7 +120,7 @@ class PostRequestsResponse(SdkResponse):
 
     @answers.setter
     def answers(self, answers):
-        """Sets the answers of this PostRequestsResponse.
+        r"""Sets the answers of this PostRequestsResponse.
 
         最相似的问题集。 调用失败时无此字段。
 
@@ -131,7 +131,7 @@ class PostRequestsResponse(SdkResponse):
 
     @property
     def extends(self):
-        """Gets the extends of this PostRequestsResponse.
+        r"""Gets the extends of this PostRequestsResponse.
 
         :return: The extends of this PostRequestsResponse.
         :rtype: :class:`huaweicloudsdkcbs.v1.OldExtends`
@@ -140,7 +140,7 @@ class PostRequestsResponse(SdkResponse):
 
     @extends.setter
     def extends(self, extends):
-        """Sets the extends of this PostRequestsResponse.
+        r"""Sets the extends of this PostRequestsResponse.
 
         :param extends: The extends of this PostRequestsResponse.
         :type extends: :class:`huaweicloudsdkcbs.v1.OldExtends`

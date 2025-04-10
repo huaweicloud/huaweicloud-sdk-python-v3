@@ -35,7 +35,7 @@ class PermissionApprovalDetailDTO:
     }
 
     def __init__(self, cluster_id=None, cluster_name=None, datasource_type=None, expire_time=None, permissions=None, proposers=None):
-        """PermissionApprovalDetailDTO
+        r"""PermissionApprovalDetailDTO
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class PermissionApprovalDetailDTO:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this PermissionApprovalDetailDTO.
+        r"""Gets the cluster_id of this PermissionApprovalDetailDTO.
 
         集群id
 
@@ -89,7 +89,7 @@ class PermissionApprovalDetailDTO:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this PermissionApprovalDetailDTO.
+        r"""Sets the cluster_id of this PermissionApprovalDetailDTO.
 
         集群id
 
@@ -100,7 +100,7 @@ class PermissionApprovalDetailDTO:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this PermissionApprovalDetailDTO.
+        r"""Gets the cluster_name of this PermissionApprovalDetailDTO.
 
         集群名称
 
@@ -111,7 +111,7 @@ class PermissionApprovalDetailDTO:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this PermissionApprovalDetailDTO.
+        r"""Sets the cluster_name of this PermissionApprovalDetailDTO.
 
         集群名称
 
@@ -122,7 +122,7 @@ class PermissionApprovalDetailDTO:
 
     @property
     def datasource_type(self):
-        """Gets the datasource_type of this PermissionApprovalDetailDTO.
+        r"""Gets the datasource_type of this PermissionApprovalDetailDTO.
 
         数据源类型 - HIVE数据源 - DWS数据源 - [DLI数据源](tag:nohcs)
 
@@ -133,7 +133,7 @@ class PermissionApprovalDetailDTO:
 
     @datasource_type.setter
     def datasource_type(self, datasource_type):
-        """Sets the datasource_type of this PermissionApprovalDetailDTO.
+        r"""Sets the datasource_type of this PermissionApprovalDetailDTO.
 
         数据源类型 - HIVE数据源 - DWS数据源 - [DLI数据源](tag:nohcs)
 
@@ -144,7 +144,7 @@ class PermissionApprovalDetailDTO:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this PermissionApprovalDetailDTO.
+        r"""Gets the expire_time of this PermissionApprovalDetailDTO.
 
         超时时间
 
@@ -155,7 +155,7 @@ class PermissionApprovalDetailDTO:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this PermissionApprovalDetailDTO.
+        r"""Sets the expire_time of this PermissionApprovalDetailDTO.
 
         超时时间
 
@@ -166,7 +166,7 @@ class PermissionApprovalDetailDTO:
 
     @property
     def permissions(self):
-        """Gets the permissions of this PermissionApprovalDetailDTO.
+        r"""Gets the permissions of this PermissionApprovalDetailDTO.
 
         申请权限详情列表
 
@@ -177,7 +177,7 @@ class PermissionApprovalDetailDTO:
 
     @permissions.setter
     def permissions(self, permissions):
-        """Sets the permissions of this PermissionApprovalDetailDTO.
+        r"""Sets the permissions of this PermissionApprovalDetailDTO.
 
         申请权限详情列表
 
@@ -188,7 +188,7 @@ class PermissionApprovalDetailDTO:
 
     @property
     def proposers(self):
-        """Gets the proposers of this PermissionApprovalDetailDTO.
+        r"""Gets the proposers of this PermissionApprovalDetailDTO.
 
         申请人详情列表
 
@@ -199,7 +199,7 @@ class PermissionApprovalDetailDTO:
 
     @proposers.setter
     def proposers(self, proposers):
-        """Sets the proposers of this PermissionApprovalDetailDTO.
+        r"""Sets the proposers of this PermissionApprovalDetailDTO.
 
         申请人详情列表
 

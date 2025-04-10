@@ -26,7 +26,7 @@ class ShowAvailableVersionResponse(SdkResponse):
     }
 
     def __init__(self, available_versions=None):
-        """ShowAvailableVersionResponse
+        r"""ShowAvailableVersionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowAvailableVersionResponse(SdkResponse):
 
     @property
     def available_versions(self):
-        """Gets the available_versions of this ShowAvailableVersionResponse.
+        r"""Gets the available_versions of this ShowAvailableVersionResponse.
 
         可选版本列表。
 
@@ -55,7 +55,7 @@ class ShowAvailableVersionResponse(SdkResponse):
 
     @available_versions.setter
     def available_versions(self, available_versions):
-        """Sets the available_versions of this ShowAvailableVersionResponse.
+        r"""Sets the available_versions of this ShowAvailableVersionResponse.
 
         可选版本列表。
 

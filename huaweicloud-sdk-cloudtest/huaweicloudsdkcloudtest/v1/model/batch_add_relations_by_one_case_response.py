@@ -34,7 +34,7 @@ class BatchAddRelationsByOneCaseResponse(SdkResponse):
     }
 
     def __init__(self, status=None, result=None, error=None, request_id=None, server_address=None):
-        """BatchAddRelationsByOneCaseResponse
+        r"""BatchAddRelationsByOneCaseResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class BatchAddRelationsByOneCaseResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this BatchAddRelationsByOneCaseResponse.
+        r"""Gets the status of this BatchAddRelationsByOneCaseResponse.
 
         success|error
 
@@ -83,7 +83,7 @@ class BatchAddRelationsByOneCaseResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this BatchAddRelationsByOneCaseResponse.
+        r"""Sets the status of this BatchAddRelationsByOneCaseResponse.
 
         success|error
 
@@ -94,7 +94,7 @@ class BatchAddRelationsByOneCaseResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this BatchAddRelationsByOneCaseResponse.
+        r"""Gets the result of this BatchAddRelationsByOneCaseResponse.
 
         :return: The result of this BatchAddRelationsByOneCaseResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ResultValueString`
@@ -103,7 +103,7 @@ class BatchAddRelationsByOneCaseResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this BatchAddRelationsByOneCaseResponse.
+        r"""Sets the result of this BatchAddRelationsByOneCaseResponse.
 
         :param result: The result of this BatchAddRelationsByOneCaseResponse.
         :type result: :class:`huaweicloudsdkcloudtest.v1.ResultValueString`
@@ -112,7 +112,7 @@ class BatchAddRelationsByOneCaseResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this BatchAddRelationsByOneCaseResponse.
+        r"""Gets the error of this BatchAddRelationsByOneCaseResponse.
 
         :return: The error of this BatchAddRelationsByOneCaseResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ApiError`
@@ -121,7 +121,7 @@ class BatchAddRelationsByOneCaseResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this BatchAddRelationsByOneCaseResponse.
+        r"""Sets the error of this BatchAddRelationsByOneCaseResponse.
 
         :param error: The error of this BatchAddRelationsByOneCaseResponse.
         :type error: :class:`huaweicloudsdkcloudtest.v1.ApiError`
@@ -130,7 +130,7 @@ class BatchAddRelationsByOneCaseResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this BatchAddRelationsByOneCaseResponse.
+        r"""Gets the request_id of this BatchAddRelationsByOneCaseResponse.
 
         由接口调用方传入，建议使用UUID保证请求的唯一性。
 
@@ -141,7 +141,7 @@ class BatchAddRelationsByOneCaseResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this BatchAddRelationsByOneCaseResponse.
+        r"""Sets the request_id of this BatchAddRelationsByOneCaseResponse.
 
         由接口调用方传入，建议使用UUID保证请求的唯一性。
 
@@ -152,7 +152,7 @@ class BatchAddRelationsByOneCaseResponse(SdkResponse):
 
     @property
     def server_address(self):
-        """Gets the server_address of this BatchAddRelationsByOneCaseResponse.
+        r"""Gets the server_address of this BatchAddRelationsByOneCaseResponse.
 
         对内接口才有此属性
 
@@ -163,7 +163,7 @@ class BatchAddRelationsByOneCaseResponse(SdkResponse):
 
     @server_address.setter
     def server_address(self, server_address):
-        """Sets the server_address of this BatchAddRelationsByOneCaseResponse.
+        r"""Sets the server_address of this BatchAddRelationsByOneCaseResponse.
 
         对内接口才有此属性
 

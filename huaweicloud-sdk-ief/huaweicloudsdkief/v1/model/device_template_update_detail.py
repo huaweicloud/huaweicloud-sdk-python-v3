@@ -35,7 +35,7 @@ class DeviceTemplateUpdateDetail:
     }
 
     def __init__(self, description=None, attributes=None, twin=None, tags=None, access_protocol=None, property_visitors=None):
-        """DeviceTemplateUpdateDetail
+        r"""DeviceTemplateUpdateDetail
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class DeviceTemplateUpdateDetail:
 
     @property
     def description(self):
-        """Gets the description of this DeviceTemplateUpdateDetail.
+        r"""Gets the description of this DeviceTemplateUpdateDetail.
 
         设备模板描述，最大长度255
 
@@ -89,7 +89,7 @@ class DeviceTemplateUpdateDetail:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DeviceTemplateUpdateDetail.
+        r"""Sets the description of this DeviceTemplateUpdateDetail.
 
         设备模板描述，最大长度255
 
@@ -100,7 +100,7 @@ class DeviceTemplateUpdateDetail:
 
     @property
     def attributes(self):
-        """Gets the attributes of this DeviceTemplateUpdateDetail.
+        r"""Gets the attributes of this DeviceTemplateUpdateDetail.
 
         终端设备静态属性，最多64个键值。
 
@@ -111,7 +111,7 @@ class DeviceTemplateUpdateDetail:
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this DeviceTemplateUpdateDetail.
+        r"""Sets the attributes of this DeviceTemplateUpdateDetail.
 
         终端设备静态属性，最多64个键值。
 
@@ -122,7 +122,7 @@ class DeviceTemplateUpdateDetail:
 
     @property
     def twin(self):
-        """Gets the twin of this DeviceTemplateUpdateDetail.
+        r"""Gets the twin of this DeviceTemplateUpdateDetail.
 
         终端设备动态属性
 
@@ -133,7 +133,7 @@ class DeviceTemplateUpdateDetail:
 
     @twin.setter
     def twin(self, twin):
-        """Sets the twin of this DeviceTemplateUpdateDetail.
+        r"""Sets the twin of this DeviceTemplateUpdateDetail.
 
         终端设备动态属性
 
@@ -144,7 +144,7 @@ class DeviceTemplateUpdateDetail:
 
     @property
     def tags(self):
-        """Gets the tags of this DeviceTemplateUpdateDetail.
+        r"""Gets the tags of this DeviceTemplateUpdateDetail.
 
         :return: The tags of this DeviceTemplateUpdateDetail.
         :rtype: :class:`huaweicloudsdkief.v1.DeviceTemplateUpdateDetailTags`
@@ -153,7 +153,7 @@ class DeviceTemplateUpdateDetail:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this DeviceTemplateUpdateDetail.
+        r"""Sets the tags of this DeviceTemplateUpdateDetail.
 
         :param tags: The tags of this DeviceTemplateUpdateDetail.
         :type tags: :class:`huaweicloudsdkief.v1.DeviceTemplateUpdateDetailTags`
@@ -162,7 +162,7 @@ class DeviceTemplateUpdateDetail:
 
     @property
     def access_protocol(self):
-        """Gets the access_protocol of this DeviceTemplateUpdateDetail.
+        r"""Gets the access_protocol of this DeviceTemplateUpdateDetail.
 
         - userdefine：自定义协议 - modbus：modbus协议 - opc-ua：opc-ua协议
 
@@ -173,7 +173,7 @@ class DeviceTemplateUpdateDetail:
 
     @access_protocol.setter
     def access_protocol(self, access_protocol):
-        """Sets the access_protocol of this DeviceTemplateUpdateDetail.
+        r"""Sets the access_protocol of this DeviceTemplateUpdateDetail.
 
         - userdefine：自定义协议 - modbus：modbus协议 - opc-ua：opc-ua协议
 
@@ -184,7 +184,7 @@ class DeviceTemplateUpdateDetail:
 
     @property
     def property_visitors(self):
-        """Gets the property_visitors of this DeviceTemplateUpdateDetail.
+        r"""Gets the property_visitors of this DeviceTemplateUpdateDetail.
 
         孪生属性配置，与access_protocol关联。
 
@@ -195,7 +195,7 @@ class DeviceTemplateUpdateDetail:
 
     @property_visitors.setter
     def property_visitors(self, property_visitors):
-        """Sets the property_visitors of this DeviceTemplateUpdateDetail.
+        r"""Sets the property_visitors of this DeviceTemplateUpdateDetail.
 
         孪生属性配置，与access_protocol关联。
 

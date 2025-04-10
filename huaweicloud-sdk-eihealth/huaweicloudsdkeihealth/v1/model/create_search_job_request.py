@@ -27,7 +27,7 @@ class CreateSearchJobRequest:
     }
 
     def __init__(self, eihealth_project_id=None, body=None):
-        """CreateSearchJobRequest
+        r"""CreateSearchJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateSearchJobRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this CreateSearchJobRequest.
+        r"""Gets the eihealth_project_id of this CreateSearchJobRequest.
 
         平台项目ID。
 
@@ -60,7 +60,7 @@ class CreateSearchJobRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this CreateSearchJobRequest.
+        r"""Sets the eihealth_project_id of this CreateSearchJobRequest.
 
         平台项目ID。
 
@@ -71,7 +71,7 @@ class CreateSearchJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSearchJobRequest.
+        r"""Gets the body of this CreateSearchJobRequest.
 
         :return: The body of this CreateSearchJobRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateSearchJobReq`
@@ -80,7 +80,7 @@ class CreateSearchJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSearchJobRequest.
+        r"""Sets the body of this CreateSearchJobRequest.
 
         :param body: The body of this CreateSearchJobRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.CreateSearchJobReq`

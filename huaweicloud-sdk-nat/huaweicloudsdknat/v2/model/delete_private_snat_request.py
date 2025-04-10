@@ -25,7 +25,7 @@ class DeletePrivateSnatRequest:
     }
 
     def __init__(self, snat_rule_id=None):
-        """DeletePrivateSnatRequest
+        r"""DeletePrivateSnatRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeletePrivateSnatRequest:
 
     @property
     def snat_rule_id(self):
-        """Gets the snat_rule_id of this DeletePrivateSnatRequest.
+        r"""Gets the snat_rule_id of this DeletePrivateSnatRequest.
 
         SNAT规则的ID。
 
@@ -53,7 +53,7 @@ class DeletePrivateSnatRequest:
 
     @snat_rule_id.setter
     def snat_rule_id(self, snat_rule_id):
-        """Sets the snat_rule_id of this DeletePrivateSnatRequest.
+        r"""Sets the snat_rule_id of this DeletePrivateSnatRequest.
 
         SNAT规则的ID。
 

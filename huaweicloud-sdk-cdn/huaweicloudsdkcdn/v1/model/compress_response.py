@@ -27,7 +27,7 @@ class CompressResponse:
     }
 
     def __init__(self, compress_switch=None, compress_rules=None):
-        """CompressResponse
+        r"""CompressResponse
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CompressResponse:
 
     @property
     def compress_switch(self):
-        """Gets the compress_switch of this CompressResponse.
+        r"""Gets the compress_switch of this CompressResponse.
 
         GZIP压缩开关。0关闭。1打开
 
@@ -60,7 +60,7 @@ class CompressResponse:
 
     @compress_switch.setter
     def compress_switch(self, compress_switch):
-        """Sets the compress_switch of this CompressResponse.
+        r"""Sets the compress_switch of this CompressResponse.
 
         GZIP压缩开关。0关闭。1打开
 
@@ -71,7 +71,7 @@ class CompressResponse:
 
     @property
     def compress_rules(self):
-        """Gets the compress_rules of this CompressResponse.
+        r"""Gets the compress_rules of this CompressResponse.
 
         GZIP压缩规则
 
@@ -82,7 +82,7 @@ class CompressResponse:
 
     @compress_rules.setter
     def compress_rules(self, compress_rules):
-        """Sets the compress_rules of this CompressResponse.
+        r"""Sets the compress_rules of this CompressResponse.
 
         GZIP压缩规则
 

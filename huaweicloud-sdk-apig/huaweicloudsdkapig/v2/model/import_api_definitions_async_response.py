@@ -26,7 +26,7 @@ class ImportApiDefinitionsAsyncResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None):
-        """ImportApiDefinitionsAsyncResponse
+        r"""ImportApiDefinitionsAsyncResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ImportApiDefinitionsAsyncResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this ImportApiDefinitionsAsyncResponse.
+        r"""Gets the task_id of this ImportApiDefinitionsAsyncResponse.
 
         任务id
 
@@ -55,7 +55,7 @@ class ImportApiDefinitionsAsyncResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ImportApiDefinitionsAsyncResponse.
+        r"""Sets the task_id of this ImportApiDefinitionsAsyncResponse.
 
         任务id
 

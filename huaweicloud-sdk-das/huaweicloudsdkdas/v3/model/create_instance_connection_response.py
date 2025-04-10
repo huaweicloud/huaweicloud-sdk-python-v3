@@ -26,7 +26,7 @@ class CreateInstanceConnectionResponse(SdkResponse):
     }
 
     def __init__(self, connection_id=None):
-        """CreateInstanceConnectionResponse
+        r"""CreateInstanceConnectionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateInstanceConnectionResponse(SdkResponse):
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this CreateInstanceConnectionResponse.
+        r"""Gets the connection_id of this CreateInstanceConnectionResponse.
 
         连接编号。
 
@@ -55,7 +55,7 @@ class CreateInstanceConnectionResponse(SdkResponse):
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this CreateInstanceConnectionResponse.
+        r"""Sets the connection_id of this CreateInstanceConnectionResponse.
 
         连接编号。
 

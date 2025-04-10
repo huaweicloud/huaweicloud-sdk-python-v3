@@ -29,7 +29,7 @@ class WorkFlowStatus:
     }
 
     def __init__(self, phase=None, point_statuses=None, line_statuses=None):
-        """WorkFlowStatus
+        r"""WorkFlowStatus
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class WorkFlowStatus:
 
     @property
     def phase(self):
-        """Gets the phase of this WorkFlowStatus.
+        r"""Gets the phase of this WorkFlowStatus.
 
         :return: The phase of this WorkFlowStatus.
         :rtype: :class:`huaweicloudsdkcce.v3.WorkFlowPhase`
@@ -66,7 +66,7 @@ class WorkFlowStatus:
 
     @phase.setter
     def phase(self, phase):
-        """Sets the phase of this WorkFlowStatus.
+        r"""Sets the phase of this WorkFlowStatus.
 
         :param phase: The phase of this WorkFlowStatus.
         :type phase: :class:`huaweicloudsdkcce.v3.WorkFlowPhase`
@@ -75,7 +75,7 @@ class WorkFlowStatus:
 
     @property
     def point_statuses(self):
-        """Gets the point_statuses of this WorkFlowStatus.
+        r"""Gets the point_statuses of this WorkFlowStatus.
 
         升级流程中的各个任务项的执行状态
 
@@ -86,7 +86,7 @@ class WorkFlowStatus:
 
     @point_statuses.setter
     def point_statuses(self, point_statuses):
-        """Sets the point_statuses of this WorkFlowStatus.
+        r"""Sets the point_statuses of this WorkFlowStatus.
 
         升级流程中的各个任务项的执行状态
 
@@ -97,7 +97,7 @@ class WorkFlowStatus:
 
     @property
     def line_statuses(self):
-        """Gets the line_statuses of this WorkFlowStatus.
+        r"""Gets the line_statuses of this WorkFlowStatus.
 
         表示该升级流程的任务执行线路
 
@@ -108,7 +108,7 @@ class WorkFlowStatus:
 
     @line_statuses.setter
     def line_statuses(self, line_statuses):
-        """Sets the line_statuses of this WorkFlowStatus.
+        r"""Sets the line_statuses of this WorkFlowStatus.
 
         表示该升级流程的任务执行线路
 

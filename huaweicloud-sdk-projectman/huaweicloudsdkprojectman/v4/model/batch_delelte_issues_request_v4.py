@@ -25,7 +25,7 @@ class BatchDelelteIssuesRequestV4:
     }
 
     def __init__(self, issue_ids=None):
-        """BatchDelelteIssuesRequestV4
+        r"""BatchDelelteIssuesRequestV4
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchDelelteIssuesRequestV4:
 
     @property
     def issue_ids(self):
-        """Gets the issue_ids of this BatchDelelteIssuesRequestV4.
+        r"""Gets the issue_ids of this BatchDelelteIssuesRequestV4.
 
         工作项的id
 
@@ -53,7 +53,7 @@ class BatchDelelteIssuesRequestV4:
 
     @issue_ids.setter
     def issue_ids(self, issue_ids):
-        """Sets the issue_ids of this BatchDelelteIssuesRequestV4.
+        r"""Sets the issue_ids of this BatchDelelteIssuesRequestV4.
 
         工作项的id
 

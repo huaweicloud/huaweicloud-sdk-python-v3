@@ -47,7 +47,7 @@ class Vpc:
     }
 
     def __init__(self, id=None, name=None, description=None, cidr=None, extend_cidrs=None, status=None, project_id=None, enterprise_project_id=None, created_at=None, updated_at=None, cloud_resources=None, tags=None):
-        """Vpc
+        r"""Vpc
 
         The model defined in huaweicloud sdk
 
@@ -108,7 +108,7 @@ class Vpc:
 
     @property
     def id(self):
-        """Gets the id of this Vpc.
+        r"""Gets the id of this Vpc.
 
         功能描述：VPC对应的唯一标识 取值范围：带“-”的UUID格式
 
@@ -119,7 +119,7 @@ class Vpc:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Vpc.
+        r"""Sets the id of this Vpc.
 
         功能描述：VPC对应的唯一标识 取值范围：带“-”的UUID格式
 
@@ -130,7 +130,7 @@ class Vpc:
 
     @property
     def name(self):
-        """Gets the name of this Vpc.
+        r"""Gets the name of this Vpc.
 
         功能说明：VPC对应的名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -141,7 +141,7 @@ class Vpc:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Vpc.
+        r"""Sets the name of this Vpc.
 
         功能说明：VPC对应的名称 取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -152,7 +152,7 @@ class Vpc:
 
     @property
     def description(self):
-        """Gets the description of this Vpc.
+        r"""Gets the description of this Vpc.
 
         功能说明：VPC的描述信息 取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -163,7 +163,7 @@ class Vpc:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Vpc.
+        r"""Sets the description of this Vpc.
 
         功能说明：VPC的描述信息 取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -174,7 +174,7 @@ class Vpc:
 
     @property
     def cidr(self):
-        """Gets the cidr of this Vpc.
+        r"""Gets the cidr of this Vpc.
 
         功能说明：VPC下可用子网的范围 取值范围： - 10.0.0.0/8~10.255.255.240/28 - 172.16.0.0/12 ~ 172.31.255.240/28 - 192.168.0.0/16 ~ 192.168.255.240/28 不指定cidr时，默认值为“” 约束：必须是ipv4 cidr格式，例如:192.168.0.0/16
 
@@ -185,7 +185,7 @@ class Vpc:
 
     @cidr.setter
     def cidr(self, cidr):
-        """Sets the cidr of this Vpc.
+        r"""Sets the cidr of this Vpc.
 
         功能说明：VPC下可用子网的范围 取值范围： - 10.0.0.0/8~10.255.255.240/28 - 172.16.0.0/12 ~ 172.31.255.240/28 - 192.168.0.0/16 ~ 192.168.255.240/28 不指定cidr时，默认值为“” 约束：必须是ipv4 cidr格式，例如:192.168.0.0/16
 
@@ -196,7 +196,7 @@ class Vpc:
 
     @property
     def extend_cidrs(self):
-        """Gets the extend_cidrs of this Vpc.
+        r"""Gets the extend_cidrs of this Vpc.
 
         功能描述：VPC的扩展网段 取值范围： 约束：目前只支持ipv4
 
@@ -207,7 +207,7 @@ class Vpc:
 
     @extend_cidrs.setter
     def extend_cidrs(self, extend_cidrs):
-        """Sets the extend_cidrs of this Vpc.
+        r"""Sets the extend_cidrs of this Vpc.
 
         功能描述：VPC的扩展网段 取值范围： 约束：目前只支持ipv4
 
@@ -218,7 +218,7 @@ class Vpc:
 
     @property
     def status(self):
-        """Gets the status of this Vpc.
+        r"""Gets the status of this Vpc.
 
         功能说明：VPC对应的状态 取值范围：PENDING：创建中；ACTIVE：创建成功 
 
@@ -229,7 +229,7 @@ class Vpc:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Vpc.
+        r"""Sets the status of this Vpc.
 
         功能说明：VPC对应的状态 取值范围：PENDING：创建中；ACTIVE：创建成功 
 
@@ -240,7 +240,7 @@ class Vpc:
 
     @property
     def project_id(self):
-        """Gets the project_id of this Vpc.
+        r"""Gets the project_id of this Vpc.
 
         功能说明：VPC所属的项目ID
 
@@ -251,7 +251,7 @@ class Vpc:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this Vpc.
+        r"""Sets the project_id of this Vpc.
 
         功能说明：VPC所属的项目ID
 
@@ -262,7 +262,7 @@ class Vpc:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this Vpc.
+        r"""Gets the enterprise_project_id of this Vpc.
 
         功能说明：VPC所属的企业项目ID。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。
 
@@ -273,7 +273,7 @@ class Vpc:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this Vpc.
+        r"""Sets the enterprise_project_id of this Vpc.
 
         功能说明：VPC所属的企业项目ID。 取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。
 
@@ -284,7 +284,7 @@ class Vpc:
 
     @property
     def created_at(self):
-        """Gets the created_at of this Vpc.
+        r"""Gets the created_at of this Vpc.
 
         功能说明：VPC创建时间 取值范围：UTC时间格式：yyyy-MM-ddTHH:mm:ss
 
@@ -295,7 +295,7 @@ class Vpc:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Vpc.
+        r"""Sets the created_at of this Vpc.
 
         功能说明：VPC创建时间 取值范围：UTC时间格式：yyyy-MM-ddTHH:mm:ss
 
@@ -306,7 +306,7 @@ class Vpc:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this Vpc.
+        r"""Gets the updated_at of this Vpc.
 
         功能说明：VPC更新时间 取值范围：UTC时间格式：yyyy-MM-ddTHH:mm:ss
 
@@ -317,7 +317,7 @@ class Vpc:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this Vpc.
+        r"""Sets the updated_at of this Vpc.
 
         功能说明：VPC更新时间 取值范围：UTC时间格式：yyyy-MM-ddTHH:mm:ss
 
@@ -328,7 +328,7 @@ class Vpc:
 
     @property
     def cloud_resources(self):
-        """Gets the cloud_resources of this Vpc.
+        r"""Gets the cloud_resources of this Vpc.
 
         功能说明：VPC关联资源类型和数量 取值范围：目前只返回VPC关联的routetable和virsubnet
 
@@ -339,7 +339,7 @@ class Vpc:
 
     @cloud_resources.setter
     def cloud_resources(self, cloud_resources):
-        """Sets the cloud_resources of this Vpc.
+        r"""Sets the cloud_resources of this Vpc.
 
         功能说明：VPC关联资源类型和数量 取值范围：目前只返回VPC关联的routetable和virsubnet
 
@@ -350,7 +350,7 @@ class Vpc:
 
     @property
     def tags(self):
-        """Gets the tags of this Vpc.
+        r"""Gets the tags of this Vpc.
 
         功能说明：VPC的标签信息，详情参见Tag对象 取值范围：0-10个标签键值对
 
@@ -361,7 +361,7 @@ class Vpc:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this Vpc.
+        r"""Sets the tags of this Vpc.
 
         功能说明：VPC的标签信息，详情参见Tag对象 取值范围：0-10个标签键值对
 

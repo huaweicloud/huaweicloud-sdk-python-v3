@@ -28,7 +28,7 @@ class CloseAccountRequest:
     }
 
     def __init__(self, x_security_token=None, account_id=None):
-        """CloseAccountRequest
+        r"""CloseAccountRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CloseAccountRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this CloseAccountRequest.
+        r"""Gets the x_security_token of this CloseAccountRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -61,7 +61,7 @@ class CloseAccountRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this CloseAccountRequest.
+        r"""Sets the x_security_token of this CloseAccountRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -72,7 +72,7 @@ class CloseAccountRequest:
 
     @property
     def account_id(self):
-        """Gets the account_id of this CloseAccountRequest.
+        r"""Gets the account_id of this CloseAccountRequest.
 
         账号的唯一标识符（ID）。
 
@@ -83,7 +83,7 @@ class CloseAccountRequest:
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this CloseAccountRequest.
+        r"""Sets the account_id of this CloseAccountRequest.
 
         账号的唯一标识符（ID）。
 

@@ -25,7 +25,7 @@ class DeleteTemplateMaterialRequestBody:
     }
 
     def __init__(self, material_ids=None):
-        """DeleteTemplateMaterialRequestBody
+        r"""DeleteTemplateMaterialRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteTemplateMaterialRequestBody:
 
     @property
     def material_ids(self):
-        """Gets the material_ids of this DeleteTemplateMaterialRequestBody.
+        r"""Gets the material_ids of this DeleteTemplateMaterialRequestBody.
 
         模板素材ID数组。
 
@@ -53,7 +53,7 @@ class DeleteTemplateMaterialRequestBody:
 
     @material_ids.setter
     def material_ids(self, material_ids):
-        """Sets the material_ids of this DeleteTemplateMaterialRequestBody.
+        r"""Sets the material_ids of this DeleteTemplateMaterialRequestBody.
 
         模板素材ID数组。
 

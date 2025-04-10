@@ -26,7 +26,7 @@ class ListEntityMetricResponse(SdkResponse):
     }
 
     def __init__(self, metrics=None):
-        """ListEntityMetricResponse
+        r"""ListEntityMetricResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListEntityMetricResponse(SdkResponse):
 
     @property
     def metrics(self):
-        """Gets the metrics of this ListEntityMetricResponse.
+        r"""Gets the metrics of this ListEntityMetricResponse.
 
         指标对象列表。
 
@@ -55,7 +55,7 @@ class ListEntityMetricResponse(SdkResponse):
 
     @metrics.setter
     def metrics(self, metrics):
-        """Sets the metrics of this ListEntityMetricResponse.
+        r"""Sets the metrics of this ListEntityMetricResponse.
 
         指标对象列表。
 

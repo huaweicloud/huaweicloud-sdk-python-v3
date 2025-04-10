@@ -25,7 +25,7 @@ class ShowServerRemoteConsoleReq:
     }
 
     def __init__(self, remote_console=None):
-        """ShowServerRemoteConsoleReq
+        r"""ShowServerRemoteConsoleReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowServerRemoteConsoleReq:
 
     @property
     def remote_console(self):
-        """Gets the remote_console of this ShowServerRemoteConsoleReq.
+        r"""Gets the remote_console of this ShowServerRemoteConsoleReq.
 
         :return: The remote_console of this ShowServerRemoteConsoleReq.
         :rtype: :class:`huaweicloudsdkbms.v1.RemoteConsole`
@@ -51,7 +51,7 @@ class ShowServerRemoteConsoleReq:
 
     @remote_console.setter
     def remote_console(self, remote_console):
-        """Sets the remote_console of this ShowServerRemoteConsoleReq.
+        r"""Sets the remote_console of this ShowServerRemoteConsoleReq.
 
         :param remote_console: The remote_console of this ShowServerRemoteConsoleReq.
         :type remote_console: :class:`huaweicloudsdkbms.v1.RemoteConsole`

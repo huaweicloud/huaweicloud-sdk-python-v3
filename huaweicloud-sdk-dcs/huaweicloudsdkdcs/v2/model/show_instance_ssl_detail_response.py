@@ -36,7 +36,7 @@ class ShowInstanceSslDetailResponse(SdkResponse):
     }
 
     def __init__(self, enabled=None, ip=None, port=None, domain_name=None, ssl_expired_at=None, ssl_validated=None):
-        """ShowInstanceSslDetailResponse
+        r"""ShowInstanceSslDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ShowInstanceSslDetailResponse(SdkResponse):
 
     @property
     def enabled(self):
-        """Gets the enabled of this ShowInstanceSslDetailResponse.
+        r"""Gets the enabled of this ShowInstanceSslDetailResponse.
 
         开启或关闭SSL。true：开启/false：关闭
 
@@ -90,7 +90,7 @@ class ShowInstanceSslDetailResponse(SdkResponse):
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this ShowInstanceSslDetailResponse.
+        r"""Sets the enabled of this ShowInstanceSslDetailResponse.
 
         开启或关闭SSL。true：开启/false：关闭
 
@@ -101,7 +101,7 @@ class ShowInstanceSslDetailResponse(SdkResponse):
 
     @property
     def ip(self):
-        """Gets the ip of this ShowInstanceSslDetailResponse.
+        r"""Gets the ip of this ShowInstanceSslDetailResponse.
 
         SSL连接IP。
 
@@ -112,7 +112,7 @@ class ShowInstanceSslDetailResponse(SdkResponse):
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this ShowInstanceSslDetailResponse.
+        r"""Sets the ip of this ShowInstanceSslDetailResponse.
 
         SSL连接IP。
 
@@ -123,7 +123,7 @@ class ShowInstanceSslDetailResponse(SdkResponse):
 
     @property
     def port(self):
-        """Gets the port of this ShowInstanceSslDetailResponse.
+        r"""Gets the port of this ShowInstanceSslDetailResponse.
 
         SSL连接端口。
 
@@ -134,7 +134,7 @@ class ShowInstanceSslDetailResponse(SdkResponse):
 
     @port.setter
     def port(self, port):
-        """Sets the port of this ShowInstanceSslDetailResponse.
+        r"""Sets the port of this ShowInstanceSslDetailResponse.
 
         SSL连接端口。
 
@@ -145,7 +145,7 @@ class ShowInstanceSslDetailResponse(SdkResponse):
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ShowInstanceSslDetailResponse.
+        r"""Gets the domain_name of this ShowInstanceSslDetailResponse.
 
         SSL连接域名。
 
@@ -156,7 +156,7 @@ class ShowInstanceSslDetailResponse(SdkResponse):
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ShowInstanceSslDetailResponse.
+        r"""Sets the domain_name of this ShowInstanceSslDetailResponse.
 
         SSL连接域名。
 
@@ -167,7 +167,7 @@ class ShowInstanceSslDetailResponse(SdkResponse):
 
     @property
     def ssl_expired_at(self):
-        """Gets the ssl_expired_at of this ShowInstanceSslDetailResponse.
+        r"""Gets the ssl_expired_at of this ShowInstanceSslDetailResponse.
 
         SSL证书有效期（UTC时间）。
 
@@ -178,7 +178,7 @@ class ShowInstanceSslDetailResponse(SdkResponse):
 
     @ssl_expired_at.setter
     def ssl_expired_at(self, ssl_expired_at):
-        """Sets the ssl_expired_at of this ShowInstanceSslDetailResponse.
+        r"""Sets the ssl_expired_at of this ShowInstanceSslDetailResponse.
 
         SSL证书有效期（UTC时间）。
 
@@ -189,7 +189,7 @@ class ShowInstanceSslDetailResponse(SdkResponse):
 
     @property
     def ssl_validated(self):
-        """Gets the ssl_validated of this ShowInstanceSslDetailResponse.
+        r"""Gets the ssl_validated of this ShowInstanceSslDetailResponse.
 
         SSL证书是否有效。
 
@@ -200,7 +200,7 @@ class ShowInstanceSslDetailResponse(SdkResponse):
 
     @ssl_validated.setter
     def ssl_validated(self, ssl_validated):
-        """Sets the ssl_validated of this ShowInstanceSslDetailResponse.
+        r"""Sets the ssl_validated of this ShowInstanceSslDetailResponse.
 
         SSL证书是否有效。
 

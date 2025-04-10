@@ -30,7 +30,7 @@ class CreateCommitResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """CreateCommitResponse
+        r"""CreateCommitResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateCommitResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this CreateCommitResponse.
+        r"""Gets the error of this CreateCommitResponse.
 
         :return: The error of this CreateCommitResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class CreateCommitResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this CreateCommitResponse.
+        r"""Sets the error of this CreateCommitResponse.
 
         :param error: The error of this CreateCommitResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class CreateCommitResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this CreateCommitResponse.
+        r"""Gets the result of this CreateCommitResponse.
 
         :return: The result of this CreateCommitResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.CreateCommitResponseBody`
@@ -85,7 +85,7 @@ class CreateCommitResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this CreateCommitResponse.
+        r"""Sets the result of this CreateCommitResponse.
 
         :param result: The result of this CreateCommitResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.CreateCommitResponseBody`
@@ -94,7 +94,7 @@ class CreateCommitResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateCommitResponse.
+        r"""Gets the status of this CreateCommitResponse.
 
         响应状态
 
@@ -105,7 +105,7 @@ class CreateCommitResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateCommitResponse.
+        r"""Sets the status of this CreateCommitResponse.
 
         响应状态
 

@@ -37,7 +37,7 @@ class ModifyPullSourcesConfig:
     }
 
     def __init__(self, play_domain=None, source_type=None, sources=None, sources_ip=None, source_port=None, scheme=None, additional_args=None):
-        """ModifyPullSourcesConfig
+        r"""ModifyPullSourcesConfig
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class ModifyPullSourcesConfig:
 
     @property
     def play_domain(self):
-        """Gets the play_domain of this ModifyPullSourcesConfig.
+        r"""Gets the play_domain of this ModifyPullSourcesConfig.
 
         直播播放域名
 
@@ -94,7 +94,7 @@ class ModifyPullSourcesConfig:
 
     @play_domain.setter
     def play_domain(self, play_domain):
-        """Sets the play_domain of this ModifyPullSourcesConfig.
+        r"""Sets the play_domain of this ModifyPullSourcesConfig.
 
         直播播放域名
 
@@ -105,7 +105,7 @@ class ModifyPullSourcesConfig:
 
     @property
     def source_type(self):
-        """Gets the source_type of this ModifyPullSourcesConfig.
+        r"""Gets the source_type of this ModifyPullSourcesConfig.
 
         回源方式。  包含如下取值： - domain: 回源客户源站，源站地址是域名格式。回源域名，可配置多个，如果回源失败，将按照配置顺序进行轮循。 - ipaddr: 回源客户源站，源站地址是IP格式。回源IP，可配置多个，如果回源失败，将按照配置顺序进行轮循。同时，最多可以配置一个回源域名，如果配置，回源时httpflv HOST头填该域名，RTMP tcurl字段填该域名，否则按当前IP作为HOST。 - huawei: 回源华为源站，域名创建后的默认值。
 
@@ -116,7 +116,7 @@ class ModifyPullSourcesConfig:
 
     @source_type.setter
     def source_type(self, source_type):
-        """Sets the source_type of this ModifyPullSourcesConfig.
+        r"""Sets the source_type of this ModifyPullSourcesConfig.
 
         回源方式。  包含如下取值： - domain: 回源客户源站，源站地址是域名格式。回源域名，可配置多个，如果回源失败，将按照配置顺序进行轮循。 - ipaddr: 回源客户源站，源站地址是IP格式。回源IP，可配置多个，如果回源失败，将按照配置顺序进行轮循。同时，最多可以配置一个回源域名，如果配置，回源时httpflv HOST头填该域名，RTMP tcurl字段填该域名，否则按当前IP作为HOST。 - huawei: 回源华为源站，域名创建后的默认值。
 
@@ -127,7 +127,7 @@ class ModifyPullSourcesConfig:
 
     @property
     def sources(self):
-        """Gets the sources of this ModifyPullSourcesConfig.
+        r"""Gets the sources of this ModifyPullSourcesConfig.
 
         回源域名列表，最多可配置10个。 - 当回源方式是“domain”时，此参数必选，域名配置多个时，如果回源失败，将按照配置顺序进行轮循。 - 当回源方式是“ipaddr”时，最多可以配置一个回源域名，如果配置，回源时httpflv HOST头填该域名，RTMP tcurl 字段填该域名，否则按当前IP作为HOST。
 
@@ -138,7 +138,7 @@ class ModifyPullSourcesConfig:
 
     @sources.setter
     def sources(self, sources):
-        """Sets the sources of this ModifyPullSourcesConfig.
+        r"""Sets the sources of this ModifyPullSourcesConfig.
 
         回源域名列表，最多可配置10个。 - 当回源方式是“domain”时，此参数必选，域名配置多个时，如果回源失败，将按照配置顺序进行轮循。 - 当回源方式是“ipaddr”时，最多可以配置一个回源域名，如果配置，回源时httpflv HOST头填该域名，RTMP tcurl 字段填该域名，否则按当前IP作为HOST。
 
@@ -149,7 +149,7 @@ class ModifyPullSourcesConfig:
 
     @property
     def sources_ip(self):
-        """Gets the sources_ip of this ModifyPullSourcesConfig.
+        r"""Gets the sources_ip of this ModifyPullSourcesConfig.
 
         回源IP地址列表，最多可配置10个。当回源方式是“ipaddr”时，此参数必选，IP配置多个时，如果回源失败，将按照配置顺序进行轮循。
 
@@ -160,7 +160,7 @@ class ModifyPullSourcesConfig:
 
     @sources_ip.setter
     def sources_ip(self, sources_ip):
-        """Sets the sources_ip of this ModifyPullSourcesConfig.
+        r"""Sets the sources_ip of this ModifyPullSourcesConfig.
 
         回源IP地址列表，最多可配置10个。当回源方式是“ipaddr”时，此参数必选，IP配置多个时，如果回源失败，将按照配置顺序进行轮循。
 
@@ -171,7 +171,7 @@ class ModifyPullSourcesConfig:
 
     @property
     def source_port(self):
-        """Gets the source_port of this ModifyPullSourcesConfig.
+        r"""Gets the source_port of this ModifyPullSourcesConfig.
 
         回源端口。 
 
@@ -182,7 +182,7 @@ class ModifyPullSourcesConfig:
 
     @source_port.setter
     def source_port(self, source_port):
-        """Sets the source_port of this ModifyPullSourcesConfig.
+        r"""Sets the source_port of this ModifyPullSourcesConfig.
 
         回源端口。 
 
@@ -193,7 +193,7 @@ class ModifyPullSourcesConfig:
 
     @property
     def scheme(self):
-        """Gets the scheme of this ModifyPullSourcesConfig.
+        r"""Gets the scheme of this ModifyPullSourcesConfig.
 
         回源协议，回源方式非“huawei”时必选。  包含如下取值： - http - rtmp
 
@@ -204,7 +204,7 @@ class ModifyPullSourcesConfig:
 
     @scheme.setter
     def scheme(self, scheme):
-        """Sets the scheme of this ModifyPullSourcesConfig.
+        r"""Sets the scheme of this ModifyPullSourcesConfig.
 
         回源协议，回源方式非“huawei”时必选。  包含如下取值： - http - rtmp
 
@@ -215,7 +215,7 @@ class ModifyPullSourcesConfig:
 
     @property
     def additional_args(self):
-        """Gets the additional_args of this ModifyPullSourcesConfig.
+        r"""Gets the additional_args of this ModifyPullSourcesConfig.
 
         回源客户源站时在URL携带的参数。
 
@@ -226,7 +226,7 @@ class ModifyPullSourcesConfig:
 
     @additional_args.setter
     def additional_args(self, additional_args):
-        """Sets the additional_args of this ModifyPullSourcesConfig.
+        r"""Sets the additional_args of this ModifyPullSourcesConfig.
 
         回源客户源站时在URL携带的参数。
 

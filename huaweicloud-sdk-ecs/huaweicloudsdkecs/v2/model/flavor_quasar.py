@@ -37,7 +37,7 @@ class FlavorQuasar:
     }
 
     def __init__(self, id=None, name=None, vcpus=None, ram=None, disk=None, gpus=None, asic_accelerators=None):
-        """FlavorQuasar
+        r"""FlavorQuasar
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class FlavorQuasar:
 
     @property
     def id(self):
-        """Gets the id of this FlavorQuasar.
+        r"""Gets the id of this FlavorQuasar.
 
         云服务器类型ID。
 
@@ -96,7 +96,7 @@ class FlavorQuasar:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this FlavorQuasar.
+        r"""Sets the id of this FlavorQuasar.
 
         云服务器类型ID。
 
@@ -107,7 +107,7 @@ class FlavorQuasar:
 
     @property
     def name(self):
-        """Gets the name of this FlavorQuasar.
+        r"""Gets the name of this FlavorQuasar.
 
         云服务器规格名称。
 
@@ -118,7 +118,7 @@ class FlavorQuasar:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this FlavorQuasar.
+        r"""Sets the name of this FlavorQuasar.
 
         云服务器规格名称。
 
@@ -129,7 +129,7 @@ class FlavorQuasar:
 
     @property
     def vcpus(self):
-        """Gets the vcpus of this FlavorQuasar.
+        r"""Gets the vcpus of this FlavorQuasar.
 
         该云服务器规格对应的CPU核数。
 
@@ -140,7 +140,7 @@ class FlavorQuasar:
 
     @vcpus.setter
     def vcpus(self, vcpus):
-        """Sets the vcpus of this FlavorQuasar.
+        r"""Sets the vcpus of this FlavorQuasar.
 
         该云服务器规格对应的CPU核数。
 
@@ -151,7 +151,7 @@ class FlavorQuasar:
 
     @property
     def ram(self):
-        """Gets the ram of this FlavorQuasar.
+        r"""Gets the ram of this FlavorQuasar.
 
         该云服务器规格对应的内存大小，单位为MB.
 
@@ -162,7 +162,7 @@ class FlavorQuasar:
 
     @ram.setter
     def ram(self, ram):
-        """Sets the ram of this FlavorQuasar.
+        r"""Sets the ram of this FlavorQuasar.
 
         该云服务器规格对应的内存大小，单位为MB.
 
@@ -173,7 +173,7 @@ class FlavorQuasar:
 
     @property
     def disk(self):
-        """Gets the disk of this FlavorQuasar.
+        r"""Gets the disk of this FlavorQuasar.
 
         该云服务器规格对应要求系统盘大小，0为不限制。
 
@@ -184,7 +184,7 @@ class FlavorQuasar:
 
     @disk.setter
     def disk(self, disk):
-        """Sets the disk of this FlavorQuasar.
+        r"""Sets the disk of this FlavorQuasar.
 
         该云服务器规格对应要求系统盘大小，0为不限制。
 
@@ -195,7 +195,7 @@ class FlavorQuasar:
 
     @property
     def gpus(self):
-        """Gets the gpus of this FlavorQuasar.
+        r"""Gets the gpus of this FlavorQuasar.
 
         :return: The gpus of this FlavorQuasar.
         :rtype: list[:class:`huaweicloudsdkecs.v2.GpuInfo`]
@@ -204,7 +204,7 @@ class FlavorQuasar:
 
     @gpus.setter
     def gpus(self, gpus):
-        """Sets the gpus of this FlavorQuasar.
+        r"""Sets the gpus of this FlavorQuasar.
 
         :param gpus: The gpus of this FlavorQuasar.
         :type gpus: list[:class:`huaweicloudsdkecs.v2.GpuInfo`]
@@ -213,7 +213,7 @@ class FlavorQuasar:
 
     @property
     def asic_accelerators(self):
-        """Gets the asic_accelerators of this FlavorQuasar.
+        r"""Gets the asic_accelerators of this FlavorQuasar.
 
         :return: The asic_accelerators of this FlavorQuasar.
         :rtype: list[:class:`huaweicloudsdkecs.v2.ASICAcceleratorInfo`]
@@ -222,7 +222,7 @@ class FlavorQuasar:
 
     @asic_accelerators.setter
     def asic_accelerators(self, asic_accelerators):
-        """Sets the asic_accelerators of this FlavorQuasar.
+        r"""Sets the asic_accelerators of this FlavorQuasar.
 
         :param asic_accelerators: The asic_accelerators of this FlavorQuasar.
         :type asic_accelerators: list[:class:`huaweicloudsdkecs.v2.ASICAcceleratorInfo`]

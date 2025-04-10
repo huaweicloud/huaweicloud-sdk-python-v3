@@ -28,7 +28,7 @@ class UpdatePostgresqlParameterValueResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, restart_required=None):
-        """UpdatePostgresqlParameterValueResponse
+        r"""UpdatePostgresqlParameterValueResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdatePostgresqlParameterValueResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdatePostgresqlParameterValueResponse.
+        r"""Gets the job_id of this UpdatePostgresqlParameterValueResponse.
 
         任务ID。
 
@@ -62,7 +62,7 @@ class UpdatePostgresqlParameterValueResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdatePostgresqlParameterValueResponse.
+        r"""Sets the job_id of this UpdatePostgresqlParameterValueResponse.
 
         任务ID。
 
@@ -73,7 +73,7 @@ class UpdatePostgresqlParameterValueResponse(SdkResponse):
 
     @property
     def restart_required(self):
-        """Gets the restart_required of this UpdatePostgresqlParameterValueResponse.
+        r"""Gets the restart_required of this UpdatePostgresqlParameterValueResponse.
 
         实例是否需要重启。 - “true”需要重启。 - “false”不需要重启。
 
@@ -84,7 +84,7 @@ class UpdatePostgresqlParameterValueResponse(SdkResponse):
 
     @restart_required.setter
     def restart_required(self, restart_required):
-        """Sets the restart_required of this UpdatePostgresqlParameterValueResponse.
+        r"""Sets the restart_required of this UpdatePostgresqlParameterValueResponse.
 
         实例是否需要重启。 - “true”需要重启。 - “false”不需要重启。
 

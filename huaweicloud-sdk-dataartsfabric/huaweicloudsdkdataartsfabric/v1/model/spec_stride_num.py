@@ -23,7 +23,7 @@ class SpecStrideNum:
     }
 
     def __init__(self):
-        """SpecStrideNum
+        r"""SpecStrideNum
 
         The model defined in huaweicloud sdk
 

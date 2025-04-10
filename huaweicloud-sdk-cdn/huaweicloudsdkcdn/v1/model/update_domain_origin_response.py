@@ -28,7 +28,7 @@ class UpdateDomainOriginResponse(SdkResponse):
     }
 
     def __init__(self, origin=None, x_request_id=None):
-        """UpdateDomainOriginResponse
+        r"""UpdateDomainOriginResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateDomainOriginResponse(SdkResponse):
 
     @property
     def origin(self):
-        """Gets the origin of this UpdateDomainOriginResponse.
+        r"""Gets the origin of this UpdateDomainOriginResponse.
 
         :return: The origin of this UpdateDomainOriginResponse.
         :rtype: :class:`huaweicloudsdkcdn.v1.ResourceBody`
@@ -60,7 +60,7 @@ class UpdateDomainOriginResponse(SdkResponse):
 
     @origin.setter
     def origin(self, origin):
-        """Sets the origin of this UpdateDomainOriginResponse.
+        r"""Sets the origin of this UpdateDomainOriginResponse.
 
         :param origin: The origin of this UpdateDomainOriginResponse.
         :type origin: :class:`huaweicloudsdkcdn.v1.ResourceBody`
@@ -69,7 +69,7 @@ class UpdateDomainOriginResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdateDomainOriginResponse.
+        r"""Gets the x_request_id of this UpdateDomainOriginResponse.
 
         :return: The x_request_id of this UpdateDomainOriginResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class UpdateDomainOriginResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdateDomainOriginResponse.
+        r"""Sets the x_request_id of this UpdateDomainOriginResponse.
 
         :param x_request_id: The x_request_id of this UpdateDomainOriginResponse.
         :type x_request_id: str

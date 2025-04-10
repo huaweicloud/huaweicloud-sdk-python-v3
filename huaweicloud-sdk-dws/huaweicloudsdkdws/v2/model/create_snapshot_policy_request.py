@@ -27,7 +27,7 @@ class CreateSnapshotPolicyRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """CreateSnapshotPolicyRequest
+        r"""CreateSnapshotPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateSnapshotPolicyRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CreateSnapshotPolicyRequest.
+        r"""Gets the cluster_id of this CreateSnapshotPolicyRequest.
 
         集群ID
 
@@ -60,7 +60,7 @@ class CreateSnapshotPolicyRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CreateSnapshotPolicyRequest.
+        r"""Sets the cluster_id of this CreateSnapshotPolicyRequest.
 
         集群ID
 
@@ -71,7 +71,7 @@ class CreateSnapshotPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSnapshotPolicyRequest.
+        r"""Gets the body of this CreateSnapshotPolicyRequest.
 
         :return: The body of this CreateSnapshotPolicyRequest.
         :rtype: :class:`huaweicloudsdkdws.v2.CreateSnapshotPolicyRequestBody`
@@ -80,7 +80,7 @@ class CreateSnapshotPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSnapshotPolicyRequest.
+        r"""Sets the body of this CreateSnapshotPolicyRequest.
 
         :param body: The body of this CreateSnapshotPolicyRequest.
         :type body: :class:`huaweicloudsdkdws.v2.CreateSnapshotPolicyRequestBody`

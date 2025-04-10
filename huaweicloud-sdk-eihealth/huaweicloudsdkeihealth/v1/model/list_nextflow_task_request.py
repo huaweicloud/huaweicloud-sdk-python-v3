@@ -29,7 +29,7 @@ class ListNextflowTaskRequest:
     }
 
     def __init__(self, eihealth_project_id=None, job_id=None, search_key=None):
-        """ListNextflowTaskRequest
+        r"""ListNextflowTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ListNextflowTaskRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this ListNextflowTaskRequest.
+        r"""Gets the eihealth_project_id of this ListNextflowTaskRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -66,7 +66,7 @@ class ListNextflowTaskRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this ListNextflowTaskRequest.
+        r"""Sets the eihealth_project_id of this ListNextflowTaskRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -77,7 +77,7 @@ class ListNextflowTaskRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ListNextflowTaskRequest.
+        r"""Gets the job_id of this ListNextflowTaskRequest.
 
         作业id
 
@@ -88,7 +88,7 @@ class ListNextflowTaskRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ListNextflowTaskRequest.
+        r"""Sets the job_id of this ListNextflowTaskRequest.
 
         作业id
 
@@ -99,7 +99,7 @@ class ListNextflowTaskRequest:
 
     @property
     def search_key(self):
-        """Gets the search_key of this ListNextflowTaskRequest.
+        r"""Gets the search_key of this ListNextflowTaskRequest.
 
         模糊搜索值
 
@@ -110,7 +110,7 @@ class ListNextflowTaskRequest:
 
     @search_key.setter
     def search_key(self, search_key):
-        """Sets the search_key of this ListNextflowTaskRequest.
+        r"""Sets the search_key of this ListNextflowTaskRequest.
 
         模糊搜索值
 

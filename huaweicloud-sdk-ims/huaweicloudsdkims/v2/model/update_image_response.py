@@ -150,7 +150,7 @@ class UpdateImageResponse(SdkResponse):
     }
 
     def __init__(self, backup_id=None, data_origin=None, description=None, image_size=None, image_source_type=None, imagetype=None, isregistered=None, originalimagename=None, os_bit=None, os_type=None, os_version=None, platform=None, productcode=None, support_diskintensive=None, support_highperformance=None, support_kvm=None, support_kvm_gpu_type=None, support_kvm_infiniband=None, support_largememory=None, support_xen=None, support_xen_gpu_type=None, support_xen_hana=None, system_support_market=None, checksum=None, container_format=None, created_at=None, disk_format=None, enterprise_project_id=None, file=None, id=None, min_disk=None, min_ram=None, name=None, owner=None, protected=None, schema=None, _self=None, size=None, status=None, tags=None, updated_at=None, virtual_env_type=None, virtual_size=None, visibility=None, support_fc_inject=None, hw_firmware_type=None, support_arm=None, max_ram=None, system__cmkid=None, os_feature_list=None, account_code=None, hw_vif_multiqueue_enabled=None, is_offshelved=None, lazyloading=None, root_origin=None, sequence_num=None, active_at=None, support_agent_list=None, image_displayname=None, support_amd=None, support_kvm_hi1822_hisriov=None, support_kvm_hi1822_hivirtionet=None, os_shutdown_timeout=None):
-        """UpdateImageResponse
+        r"""UpdateImageResponse
 
         The model defined in huaweicloud sdk
 
@@ -478,7 +478,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this UpdateImageResponse.
+        r"""Gets the backup_id of this UpdateImageResponse.
 
         备份ID。如果是备份创建的镜像，则填写为备份的ID，否则为空
 
@@ -489,7 +489,7 @@ class UpdateImageResponse(SdkResponse):
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this UpdateImageResponse.
+        r"""Sets the backup_id of this UpdateImageResponse.
 
         备份ID。如果是备份创建的镜像，则填写为备份的ID，否则为空
 
@@ -500,7 +500,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def data_origin(self):
-        """Gets the data_origin of this UpdateImageResponse.
+        r"""Gets the data_origin of this UpdateImageResponse.
 
         镜像来源。公共镜像为空
 
@@ -511,7 +511,7 @@ class UpdateImageResponse(SdkResponse):
 
     @data_origin.setter
     def data_origin(self, data_origin):
-        """Sets the data_origin of this UpdateImageResponse.
+        r"""Sets the data_origin of this UpdateImageResponse.
 
         镜像来源。公共镜像为空
 
@@ -522,7 +522,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdateImageResponse.
+        r"""Gets the description of this UpdateImageResponse.
 
         镜像描述信息。 支持字母、数字、中文等，不支持回车、<、 >，长度不能超过1024个字符。
 
@@ -533,7 +533,7 @@ class UpdateImageResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateImageResponse.
+        r"""Sets the description of this UpdateImageResponse.
 
         镜像描述信息。 支持字母、数字、中文等，不支持回车、<、 >，长度不能超过1024个字符。
 
@@ -544,7 +544,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def image_size(self):
-        """Gets the image_size of this UpdateImageResponse.
+        r"""Gets the image_size of this UpdateImageResponse.
 
         镜像文件的大小，单位为字节
 
@@ -555,7 +555,7 @@ class UpdateImageResponse(SdkResponse):
 
     @image_size.setter
     def image_size(self, image_size):
-        """Sets the image_size of this UpdateImageResponse.
+        r"""Sets the image_size of this UpdateImageResponse.
 
         镜像文件的大小，单位为字节
 
@@ -566,7 +566,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def image_source_type(self):
-        """Gets the image_source_type of this UpdateImageResponse.
+        r"""Gets the image_source_type of this UpdateImageResponse.
 
         镜像后端存储类型，目前只支持uds
 
@@ -577,7 +577,7 @@ class UpdateImageResponse(SdkResponse):
 
     @image_source_type.setter
     def image_source_type(self, image_source_type):
-        """Sets the image_source_type of this UpdateImageResponse.
+        r"""Sets the image_source_type of this UpdateImageResponse.
 
         镜像后端存储类型，目前只支持uds
 
@@ -588,7 +588,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def imagetype(self):
-        """Gets the imagetype of this UpdateImageResponse.
+        r"""Gets the imagetype of this UpdateImageResponse.
 
         镜像类型，目前支持以下类型： 公共镜像：gold 私有镜像：private 共享镜像：shared 市场镜像：market
 
@@ -599,7 +599,7 @@ class UpdateImageResponse(SdkResponse):
 
     @imagetype.setter
     def imagetype(self, imagetype):
-        """Sets the imagetype of this UpdateImageResponse.
+        r"""Sets the imagetype of this UpdateImageResponse.
 
         镜像类型，目前支持以下类型： 公共镜像：gold 私有镜像：private 共享镜像：shared 市场镜像：market
 
@@ -610,7 +610,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def isregistered(self):
-        """Gets the isregistered of this UpdateImageResponse.
+        r"""Gets the isregistered of this UpdateImageResponse.
 
         是否是注册过的镜像，取值为“true”或者“false”
 
@@ -621,7 +621,7 @@ class UpdateImageResponse(SdkResponse):
 
     @isregistered.setter
     def isregistered(self, isregistered):
-        """Sets the isregistered of this UpdateImageResponse.
+        r"""Sets the isregistered of this UpdateImageResponse.
 
         是否是注册过的镜像，取值为“true”或者“false”
 
@@ -632,7 +632,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def originalimagename(self):
-        """Gets the originalimagename of this UpdateImageResponse.
+        r"""Gets the originalimagename of this UpdateImageResponse.
 
         父镜像ID。公共镜像或通过文件创建的私有镜像，取值为空
 
@@ -643,7 +643,7 @@ class UpdateImageResponse(SdkResponse):
 
     @originalimagename.setter
     def originalimagename(self, originalimagename):
-        """Sets the originalimagename of this UpdateImageResponse.
+        r"""Sets the originalimagename of this UpdateImageResponse.
 
         父镜像ID。公共镜像或通过文件创建的私有镜像，取值为空
 
@@ -654,7 +654,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def os_bit(self):
-        """Gets the os_bit of this UpdateImageResponse.
+        r"""Gets the os_bit of this UpdateImageResponse.
 
         操作系统位数，一般取值为“32”或者“64”
 
@@ -665,7 +665,7 @@ class UpdateImageResponse(SdkResponse):
 
     @os_bit.setter
     def os_bit(self, os_bit):
-        """Sets the os_bit of this UpdateImageResponse.
+        r"""Sets the os_bit of this UpdateImageResponse.
 
         操作系统位数，一般取值为“32”或者“64”
 
@@ -676,7 +676,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def os_type(self):
-        """Gets the os_type of this UpdateImageResponse.
+        r"""Gets the os_type of this UpdateImageResponse.
 
         操作系统类型，目前取值Linux， Windows，Other
 
@@ -687,7 +687,7 @@ class UpdateImageResponse(SdkResponse):
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this UpdateImageResponse.
+        r"""Sets the os_type of this UpdateImageResponse.
 
         操作系统类型，目前取值Linux， Windows，Other
 
@@ -698,7 +698,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def os_version(self):
-        """Gets the os_version of this UpdateImageResponse.
+        r"""Gets the os_version of this UpdateImageResponse.
 
         操作系统具体版本
 
@@ -709,7 +709,7 @@ class UpdateImageResponse(SdkResponse):
 
     @os_version.setter
     def os_version(self, os_version):
-        """Sets the os_version of this UpdateImageResponse.
+        r"""Sets the os_version of this UpdateImageResponse.
 
         操作系统具体版本
 
@@ -720,7 +720,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def platform(self):
-        """Gets the platform of this UpdateImageResponse.
+        r"""Gets the platform of this UpdateImageResponse.
 
         镜像平台分类
 
@@ -731,7 +731,7 @@ class UpdateImageResponse(SdkResponse):
 
     @platform.setter
     def platform(self, platform):
-        """Sets the platform of this UpdateImageResponse.
+        r"""Sets the platform of this UpdateImageResponse.
 
         镜像平台分类
 
@@ -742,7 +742,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def productcode(self):
-        """Gets the productcode of this UpdateImageResponse.
+        r"""Gets the productcode of this UpdateImageResponse.
 
         市场镜像的产品ID
 
@@ -753,7 +753,7 @@ class UpdateImageResponse(SdkResponse):
 
     @productcode.setter
     def productcode(self, productcode):
-        """Sets the productcode of this UpdateImageResponse.
+        r"""Sets the productcode of this UpdateImageResponse.
 
         市场镜像的产品ID
 
@@ -764,7 +764,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def support_diskintensive(self):
-        """Gets the support_diskintensive of this UpdateImageResponse.
+        r"""Gets the support_diskintensive of this UpdateImageResponse.
 
         镜像来源表示该镜像支持密集存储。如果镜像支持密集存储性能，则值为true，否则无需增加该属性。
 
@@ -775,7 +775,7 @@ class UpdateImageResponse(SdkResponse):
 
     @support_diskintensive.setter
     def support_diskintensive(self, support_diskintensive):
-        """Sets the support_diskintensive of this UpdateImageResponse.
+        r"""Sets the support_diskintensive of this UpdateImageResponse.
 
         镜像来源表示该镜像支持密集存储。如果镜像支持密集存储性能，则值为true，否则无需增加该属性。
 
@@ -786,7 +786,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def support_highperformance(self):
-        """Gets the support_highperformance of this UpdateImageResponse.
+        r"""Gets the support_highperformance of this UpdateImageResponse.
 
         表示该镜像支持高计算性能。如果镜像支持高计算性能，则值为true，否则无需增加该属性。
 
@@ -797,7 +797,7 @@ class UpdateImageResponse(SdkResponse):
 
     @support_highperformance.setter
     def support_highperformance(self, support_highperformance):
-        """Sets the support_highperformance of this UpdateImageResponse.
+        r"""Sets the support_highperformance of this UpdateImageResponse.
 
         表示该镜像支持高计算性能。如果镜像支持高计算性能，则值为true，否则无需增加该属性。
 
@@ -808,7 +808,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def support_kvm(self):
-        """Gets the support_kvm of this UpdateImageResponse.
+        r"""Gets the support_kvm of this UpdateImageResponse.
 
         如果镜像支持KVM，取值为true，否则无需增加该属性。
 
@@ -819,7 +819,7 @@ class UpdateImageResponse(SdkResponse):
 
     @support_kvm.setter
     def support_kvm(self, support_kvm):
-        """Sets the support_kvm of this UpdateImageResponse.
+        r"""Sets the support_kvm of this UpdateImageResponse.
 
         如果镜像支持KVM，取值为true，否则无需增加该属性。
 
@@ -830,7 +830,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def support_kvm_gpu_type(self):
-        """Gets the support_kvm_gpu_type of this UpdateImageResponse.
+        r"""Gets the support_kvm_gpu_type of this UpdateImageResponse.
 
         表示该镜像是支持KVM虚拟化平台下的GPU类型，如果不支持KVM虚拟机下GPU类型，无需添加该属性。该属性与“__support_xen”和“__support_kvm”属性不共存。
 
@@ -841,7 +841,7 @@ class UpdateImageResponse(SdkResponse):
 
     @support_kvm_gpu_type.setter
     def support_kvm_gpu_type(self, support_kvm_gpu_type):
-        """Sets the support_kvm_gpu_type of this UpdateImageResponse.
+        r"""Sets the support_kvm_gpu_type of this UpdateImageResponse.
 
         表示该镜像是支持KVM虚拟化平台下的GPU类型，如果不支持KVM虚拟机下GPU类型，无需添加该属性。该属性与“__support_xen”和“__support_kvm”属性不共存。
 
@@ -852,7 +852,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def support_kvm_infiniband(self):
-        """Gets the support_kvm_infiniband of this UpdateImageResponse.
+        r"""Gets the support_kvm_infiniband of this UpdateImageResponse.
 
         如果镜像支持KVM虚拟化下Infiniband网卡类型，取值为true。否则，无需添加该属性。该属性与“__support_xen”属性不共存。
 
@@ -863,7 +863,7 @@ class UpdateImageResponse(SdkResponse):
 
     @support_kvm_infiniband.setter
     def support_kvm_infiniband(self, support_kvm_infiniband):
-        """Sets the support_kvm_infiniband of this UpdateImageResponse.
+        r"""Sets the support_kvm_infiniband of this UpdateImageResponse.
 
         如果镜像支持KVM虚拟化下Infiniband网卡类型，取值为true。否则，无需添加该属性。该属性与“__support_xen”属性不共存。
 
@@ -874,7 +874,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def support_largememory(self):
-        """Gets the support_largememory of this UpdateImageResponse.
+        r"""Gets the support_largememory of this UpdateImageResponse.
 
         表示该镜像支持超大内存。如果镜像支持超大内存，取值为true，否则无需增加该属性。
 
@@ -885,7 +885,7 @@ class UpdateImageResponse(SdkResponse):
 
     @support_largememory.setter
     def support_largememory(self, support_largememory):
-        """Sets the support_largememory of this UpdateImageResponse.
+        r"""Sets the support_largememory of this UpdateImageResponse.
 
         表示该镜像支持超大内存。如果镜像支持超大内存，取值为true，否则无需增加该属性。
 
@@ -896,7 +896,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def support_xen(self):
-        """Gets the support_xen of this UpdateImageResponse.
+        r"""Gets the support_xen of this UpdateImageResponse.
 
         如果镜像支持XEN，取值为true，否则无需增加该属性。
 
@@ -907,7 +907,7 @@ class UpdateImageResponse(SdkResponse):
 
     @support_xen.setter
     def support_xen(self, support_xen):
-        """Sets the support_xen of this UpdateImageResponse.
+        r"""Sets the support_xen of this UpdateImageResponse.
 
         如果镜像支持XEN，取值为true，否则无需增加该属性。
 
@@ -918,7 +918,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def support_xen_gpu_type(self):
-        """Gets the support_xen_gpu_type of this UpdateImageResponse.
+        r"""Gets the support_xen_gpu_type of this UpdateImageResponse.
 
         表示该镜像是支持XEN虚拟化平台下的GPU优化类型，如果不支持XEN虚拟化下GPU类型，无需添加该属性            。该属性与“__support_xen”和“__support_kvm”属性不共存。
 
@@ -929,7 +929,7 @@ class UpdateImageResponse(SdkResponse):
 
     @support_xen_gpu_type.setter
     def support_xen_gpu_type(self, support_xen_gpu_type):
-        """Sets the support_xen_gpu_type of this UpdateImageResponse.
+        r"""Sets the support_xen_gpu_type of this UpdateImageResponse.
 
         表示该镜像是支持XEN虚拟化平台下的GPU优化类型，如果不支持XEN虚拟化下GPU类型，无需添加该属性            。该属性与“__support_xen”和“__support_kvm”属性不共存。
 
@@ -940,7 +940,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def support_xen_hana(self):
-        """Gets the support_xen_hana of this UpdateImageResponse.
+        r"""Gets the support_xen_hana of this UpdateImageResponse.
 
         如果镜像支持XEN虚拟化下HANA类型，取值为true。否则，无需添加该属性。该属性与“__support_xen”             和“__support_kvm”属性不共存。
 
@@ -951,7 +951,7 @@ class UpdateImageResponse(SdkResponse):
 
     @support_xen_hana.setter
     def support_xen_hana(self, support_xen_hana):
-        """Sets the support_xen_hana of this UpdateImageResponse.
+        r"""Sets the support_xen_hana of this UpdateImageResponse.
 
         如果镜像支持XEN虚拟化下HANA类型，取值为true。否则，无需添加该属性。该属性与“__support_xen”             和“__support_kvm”属性不共存。
 
@@ -962,7 +962,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def system_support_market(self):
-        """Gets the system_support_market of this UpdateImageResponse.
+        r"""Gets the system_support_market of this UpdateImageResponse.
 
         表示当前镜像是否支持发布为市场镜像,true表示支持,false 表示不支持
 
@@ -973,7 +973,7 @@ class UpdateImageResponse(SdkResponse):
 
     @system_support_market.setter
     def system_support_market(self, system_support_market):
-        """Sets the system_support_market of this UpdateImageResponse.
+        r"""Sets the system_support_market of this UpdateImageResponse.
 
         表示当前镜像是否支持发布为市场镜像,true表示支持,false 表示不支持
 
@@ -984,7 +984,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def checksum(self):
-        """Gets the checksum of this UpdateImageResponse.
+        r"""Gets the checksum of this UpdateImageResponse.
 
         目前暂时不使用
 
@@ -995,7 +995,7 @@ class UpdateImageResponse(SdkResponse):
 
     @checksum.setter
     def checksum(self, checksum):
-        """Sets the checksum of this UpdateImageResponse.
+        r"""Sets the checksum of this UpdateImageResponse.
 
         目前暂时不使用
 
@@ -1006,7 +1006,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def container_format(self):
-        """Gets the container_format of this UpdateImageResponse.
+        r"""Gets the container_format of this UpdateImageResponse.
 
         容器类型
 
@@ -1017,7 +1017,7 @@ class UpdateImageResponse(SdkResponse):
 
     @container_format.setter
     def container_format(self, container_format):
-        """Sets the container_format of this UpdateImageResponse.
+        r"""Sets the container_format of this UpdateImageResponse.
 
         容器类型
 
@@ -1028,7 +1028,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this UpdateImageResponse.
+        r"""Gets the created_at of this UpdateImageResponse.
 
         创建时间。格式为UTC时间
 
@@ -1039,7 +1039,7 @@ class UpdateImageResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this UpdateImageResponse.
+        r"""Sets the created_at of this UpdateImageResponse.
 
         创建时间。格式为UTC时间
 
@@ -1050,7 +1050,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def disk_format(self):
-        """Gets the disk_format of this UpdateImageResponse.
+        r"""Gets the disk_format of this UpdateImageResponse.
 
         镜像的格式，目前支持vhd，zvhd、raw，qcow2。默认值是vhd
 
@@ -1061,7 +1061,7 @@ class UpdateImageResponse(SdkResponse):
 
     @disk_format.setter
     def disk_format(self, disk_format):
-        """Sets the disk_format of this UpdateImageResponse.
+        r"""Sets the disk_format of this UpdateImageResponse.
 
         镜像的格式，目前支持vhd，zvhd、raw，qcow2。默认值是vhd
 
@@ -1072,7 +1072,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this UpdateImageResponse.
+        r"""Gets the enterprise_project_id of this UpdateImageResponse.
 
         表示当前镜像所属的企业项目。取值为0或无该值，表示属于default企业项目，取值为UUID，表示属于该UUID对应的企业项目。
 
@@ -1083,7 +1083,7 @@ class UpdateImageResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this UpdateImageResponse.
+        r"""Sets the enterprise_project_id of this UpdateImageResponse.
 
         表示当前镜像所属的企业项目。取值为0或无该值，表示属于default企业项目，取值为UUID，表示属于该UUID对应的企业项目。
 
@@ -1094,7 +1094,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def file(self):
-        """Gets the file of this UpdateImageResponse.
+        r"""Gets the file of this UpdateImageResponse.
 
         镜像文件下载和上传链接
 
@@ -1105,7 +1105,7 @@ class UpdateImageResponse(SdkResponse):
 
     @file.setter
     def file(self, file):
-        """Sets the file of this UpdateImageResponse.
+        r"""Sets the file of this UpdateImageResponse.
 
         镜像文件下载和上传链接
 
@@ -1116,7 +1116,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateImageResponse.
+        r"""Gets the id of this UpdateImageResponse.
 
         镜像ID
 
@@ -1127,7 +1127,7 @@ class UpdateImageResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateImageResponse.
+        r"""Sets the id of this UpdateImageResponse.
 
         镜像ID
 
@@ -1138,7 +1138,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def min_disk(self):
-        """Gets the min_disk of this UpdateImageResponse.
+        r"""Gets the min_disk of this UpdateImageResponse.
 
         镜像运行需要的最小磁盘容量，单位为GB。取值为40～1024GB。
 
@@ -1149,7 +1149,7 @@ class UpdateImageResponse(SdkResponse):
 
     @min_disk.setter
     def min_disk(self, min_disk):
-        """Sets the min_disk of this UpdateImageResponse.
+        r"""Sets the min_disk of this UpdateImageResponse.
 
         镜像运行需要的最小磁盘容量，单位为GB。取值为40～1024GB。
 
@@ -1160,7 +1160,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def min_ram(self):
-        """Gets the min_ram of this UpdateImageResponse.
+        r"""Gets the min_ram of this UpdateImageResponse.
 
         镜像运行需要的最小内存，单位为MB。参数取值依据弹性云服务器的规格限制，默认设置为0
 
@@ -1171,7 +1171,7 @@ class UpdateImageResponse(SdkResponse):
 
     @min_ram.setter
     def min_ram(self, min_ram):
-        """Sets the min_ram of this UpdateImageResponse.
+        r"""Sets the min_ram of this UpdateImageResponse.
 
         镜像运行需要的最小内存，单位为MB。参数取值依据弹性云服务器的规格限制，默认设置为0
 
@@ -1182,7 +1182,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateImageResponse.
+        r"""Gets the name of this UpdateImageResponse.
 
         镜像名称。 名称的首尾字母不能为空格。 名称的长度至为1～128位。 名称包含以下4种字符： 大写字母 小写字母 数字 特殊字符包含-、.、_、空格和中文。
 
@@ -1193,7 +1193,7 @@ class UpdateImageResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateImageResponse.
+        r"""Sets the name of this UpdateImageResponse.
 
         镜像名称。 名称的首尾字母不能为空格。 名称的长度至为1～128位。 名称包含以下4种字符： 大写字母 小写字母 数字 特殊字符包含-、.、_、空格和中文。
 
@@ -1204,7 +1204,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def owner(self):
-        """Gets the owner of this UpdateImageResponse.
+        r"""Gets the owner of this UpdateImageResponse.
 
         镜像属于哪个租户
 
@@ -1215,7 +1215,7 @@ class UpdateImageResponse(SdkResponse):
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this UpdateImageResponse.
+        r"""Sets the owner of this UpdateImageResponse.
 
         镜像属于哪个租户
 
@@ -1226,7 +1226,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def protected(self):
-        """Gets the protected of this UpdateImageResponse.
+        r"""Gets the protected of this UpdateImageResponse.
 
         是否是受保护的，受保护的镜像不允许删除。取值为true或false
 
@@ -1237,7 +1237,7 @@ class UpdateImageResponse(SdkResponse):
 
     @protected.setter
     def protected(self, protected):
-        """Sets the protected of this UpdateImageResponse.
+        r"""Sets the protected of this UpdateImageResponse.
 
         是否是受保护的，受保护的镜像不允许删除。取值为true或false
 
@@ -1248,7 +1248,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def schema(self):
-        """Gets the schema of this UpdateImageResponse.
+        r"""Gets the schema of this UpdateImageResponse.
 
         镜像视图
 
@@ -1259,7 +1259,7 @@ class UpdateImageResponse(SdkResponse):
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this UpdateImageResponse.
+        r"""Sets the schema of this UpdateImageResponse.
 
         镜像视图
 
@@ -1270,7 +1270,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def _self(self):
-        """Gets the _self of this UpdateImageResponse.
+        r"""Gets the _self of this UpdateImageResponse.
 
         镜像链接信息
 
@@ -1281,7 +1281,7 @@ class UpdateImageResponse(SdkResponse):
 
     @_self.setter
     def _self(self, _self):
-        """Sets the _self of this UpdateImageResponse.
+        r"""Sets the _self of this UpdateImageResponse.
 
         镜像链接信息
 
@@ -1292,7 +1292,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this UpdateImageResponse.
+        r"""Gets the size of this UpdateImageResponse.
 
         目前暂时不使用
 
@@ -1303,7 +1303,7 @@ class UpdateImageResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this UpdateImageResponse.
+        r"""Sets the size of this UpdateImageResponse.
 
         目前暂时不使用
 
@@ -1314,7 +1314,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateImageResponse.
+        r"""Gets the status of this UpdateImageResponse.
 
         镜像状态。取值如下：queued：表示镜像元数据已经创建成功，等待 上传镜像文件。saving：表示镜像 正在上传文件到后端存储。deleted：表示镜像已经删除。killed：表示镜像上传错误。active：表示镜像可以正常使用
 
@@ -1325,7 +1325,7 @@ class UpdateImageResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateImageResponse.
+        r"""Sets the status of this UpdateImageResponse.
 
         镜像状态。取值如下：queued：表示镜像元数据已经创建成功，等待 上传镜像文件。saving：表示镜像 正在上传文件到后端存储。deleted：表示镜像已经删除。killed：表示镜像上传错误。active：表示镜像可以正常使用
 
@@ -1336,7 +1336,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this UpdateImageResponse.
+        r"""Gets the tags of this UpdateImageResponse.
 
         镜像标签列表
 
@@ -1347,7 +1347,7 @@ class UpdateImageResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this UpdateImageResponse.
+        r"""Sets the tags of this UpdateImageResponse.
 
         镜像标签列表
 
@@ -1358,7 +1358,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this UpdateImageResponse.
+        r"""Gets the updated_at of this UpdateImageResponse.
 
         更新时间。格式为UTC时间
 
@@ -1369,7 +1369,7 @@ class UpdateImageResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this UpdateImageResponse.
+        r"""Sets the updated_at of this UpdateImageResponse.
 
         更新时间。格式为UTC时间
 
@@ -1380,7 +1380,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def virtual_env_type(self):
-        """Gets the virtual_env_type of this UpdateImageResponse.
+        r"""Gets the virtual_env_type of this UpdateImageResponse.
 
         镜像使用环境类型：FusionCompute，Ironic，DataImage。如果弹性云服务器镜像，则取值为FusionCompute，如果是数据卷镜像则取Dat            aImage，如果是裸金属服务器镜像，则取值是Ironic
 
@@ -1391,7 +1391,7 @@ class UpdateImageResponse(SdkResponse):
 
     @virtual_env_type.setter
     def virtual_env_type(self, virtual_env_type):
-        """Sets the virtual_env_type of this UpdateImageResponse.
+        r"""Sets the virtual_env_type of this UpdateImageResponse.
 
         镜像使用环境类型：FusionCompute，Ironic，DataImage。如果弹性云服务器镜像，则取值为FusionCompute，如果是数据卷镜像则取Dat            aImage，如果是裸金属服务器镜像，则取值是Ironic
 
@@ -1402,7 +1402,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def virtual_size(self):
-        """Gets the virtual_size of this UpdateImageResponse.
+        r"""Gets the virtual_size of this UpdateImageResponse.
 
         目前暂时不使用
 
@@ -1413,7 +1413,7 @@ class UpdateImageResponse(SdkResponse):
 
     @virtual_size.setter
     def virtual_size(self, virtual_size):
-        """Sets the virtual_size of this UpdateImageResponse.
+        r"""Sets the virtual_size of this UpdateImageResponse.
 
         目前暂时不使用
 
@@ -1424,7 +1424,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def visibility(self):
-        """Gets the visibility of this UpdateImageResponse.
+        r"""Gets the visibility of this UpdateImageResponse.
 
         是否被其他租户可见，取值为private、public或shared
 
@@ -1435,7 +1435,7 @@ class UpdateImageResponse(SdkResponse):
 
     @visibility.setter
     def visibility(self, visibility):
-        """Sets the visibility of this UpdateImageResponse.
+        r"""Sets the visibility of this UpdateImageResponse.
 
         是否被其他租户可见，取值为private、public或shared
 
@@ -1446,7 +1446,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def support_fc_inject(self):
-        """Gets the support_fc_inject of this UpdateImageResponse.
+        r"""Gets the support_fc_inject of this UpdateImageResponse.
 
         表示当前镜像支持CloudInit密码/密钥注入方式，建议设置为\"true\"或者\"false\"。 如果取值为\"true\"，表示该镜像不支持CloudInit注入密码/密钥，其他取值时表示支持CloudInit注入密钥/密码。
 
@@ -1457,7 +1457,7 @@ class UpdateImageResponse(SdkResponse):
 
     @support_fc_inject.setter
     def support_fc_inject(self, support_fc_inject):
-        """Sets the support_fc_inject of this UpdateImageResponse.
+        r"""Sets the support_fc_inject of this UpdateImageResponse.
 
         表示当前镜像支持CloudInit密码/密钥注入方式，建议设置为\"true\"或者\"false\"。 如果取值为\"true\"，表示该镜像不支持CloudInit注入密码/密钥，其他取值时表示支持CloudInit注入密钥/密码。
 
@@ -1468,7 +1468,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def hw_firmware_type(self):
-        """Gets the hw_firmware_type of this UpdateImageResponse.
+        r"""Gets the hw_firmware_type of this UpdateImageResponse.
 
         云服务器的启动方式。目前支持： bios：表示bios引导启动。 uefi：表示uefi引导启动。
 
@@ -1479,7 +1479,7 @@ class UpdateImageResponse(SdkResponse):
 
     @hw_firmware_type.setter
     def hw_firmware_type(self, hw_firmware_type):
-        """Sets the hw_firmware_type of this UpdateImageResponse.
+        r"""Sets the hw_firmware_type of this UpdateImageResponse.
 
         云服务器的启动方式。目前支持： bios：表示bios引导启动。 uefi：表示uefi引导启动。
 
@@ -1490,7 +1490,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def support_arm(self):
-        """Gets the support_arm of this UpdateImageResponse.
+        r"""Gets the support_arm of this UpdateImageResponse.
 
         是否是ARM架构类型的镜像，取值为“true”或者“false”。
 
@@ -1501,7 +1501,7 @@ class UpdateImageResponse(SdkResponse):
 
     @support_arm.setter
     def support_arm(self, support_arm):
-        """Sets the support_arm of this UpdateImageResponse.
+        r"""Sets the support_arm of this UpdateImageResponse.
 
         是否是ARM架构类型的镜像，取值为“true”或者“false”。
 
@@ -1512,7 +1512,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def max_ram(self):
-        """Gets the max_ram of this UpdateImageResponse.
+        r"""Gets the max_ram of this UpdateImageResponse.
 
         镜像支持的最大内存，单位为MB。取值可以参考云服务器规格限制，一般不设置。
 
@@ -1523,7 +1523,7 @@ class UpdateImageResponse(SdkResponse):
 
     @max_ram.setter
     def max_ram(self, max_ram):
-        """Sets the max_ram of this UpdateImageResponse.
+        r"""Sets the max_ram of this UpdateImageResponse.
 
         镜像支持的最大内存，单位为MB。取值可以参考云服务器规格限制，一般不设置。
 
@@ -1534,7 +1534,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def system__cmkid(self):
-        """Gets the system__cmkid of this UpdateImageResponse.
+        r"""Gets the system__cmkid of this UpdateImageResponse.
 
         加密镜像所使用的密钥ID。
 
@@ -1545,7 +1545,7 @@ class UpdateImageResponse(SdkResponse):
 
     @system__cmkid.setter
     def system__cmkid(self, system__cmkid):
-        """Sets the system__cmkid of this UpdateImageResponse.
+        r"""Sets the system__cmkid of this UpdateImageResponse.
 
         加密镜像所使用的密钥ID。
 
@@ -1556,7 +1556,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def os_feature_list(self):
-        """Gets the os_feature_list of this UpdateImageResponse.
+        r"""Gets the os_feature_list of this UpdateImageResponse.
 
         镜像附加属性。该属性采用JSON格式来标识镜像支持的高级特性清单。
 
@@ -1567,7 +1567,7 @@ class UpdateImageResponse(SdkResponse):
 
     @os_feature_list.setter
     def os_feature_list(self, os_feature_list):
-        """Sets the os_feature_list of this UpdateImageResponse.
+        r"""Sets the os_feature_list of this UpdateImageResponse.
 
         镜像附加属性。该属性采用JSON格式来标识镜像支持的高级特性清单。
 
@@ -1578,7 +1578,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def account_code(self):
-        """Gets the account_code of this UpdateImageResponse.
+        r"""Gets the account_code of this UpdateImageResponse.
 
         收费镜像标识。
 
@@ -1589,7 +1589,7 @@ class UpdateImageResponse(SdkResponse):
 
     @account_code.setter
     def account_code(self, account_code):
-        """Sets the account_code of this UpdateImageResponse.
+        r"""Sets the account_code of this UpdateImageResponse.
 
         收费镜像标识。
 
@@ -1600,7 +1600,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def hw_vif_multiqueue_enabled(self):
-        """Gets the hw_vif_multiqueue_enabled of this UpdateImageResponse.
+        r"""Gets the hw_vif_multiqueue_enabled of this UpdateImageResponse.
 
         镜像是否支持网卡多队列。取值为“true”或者“false”。
 
@@ -1611,7 +1611,7 @@ class UpdateImageResponse(SdkResponse):
 
     @hw_vif_multiqueue_enabled.setter
     def hw_vif_multiqueue_enabled(self, hw_vif_multiqueue_enabled):
-        """Sets the hw_vif_multiqueue_enabled of this UpdateImageResponse.
+        r"""Sets the hw_vif_multiqueue_enabled of this UpdateImageResponse.
 
         镜像是否支持网卡多队列。取值为“true”或者“false”。
 
@@ -1622,7 +1622,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def is_offshelved(self):
-        """Gets the is_offshelved of this UpdateImageResponse.
+        r"""Gets the is_offshelved of this UpdateImageResponse.
 
         表示当前市场镜像是否下架。true：已下架 false：未下架
 
@@ -1633,7 +1633,7 @@ class UpdateImageResponse(SdkResponse):
 
     @is_offshelved.setter
     def is_offshelved(self, is_offshelved):
-        """Sets the is_offshelved of this UpdateImageResponse.
+        r"""Sets the is_offshelved of this UpdateImageResponse.
 
         表示当前市场镜像是否下架。true：已下架 false：未下架
 
@@ -1644,7 +1644,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def lazyloading(self):
-        """Gets the lazyloading of this UpdateImageResponse.
+        r"""Gets the lazyloading of this UpdateImageResponse.
 
         镜像是否支持延迟加载。取值为“True”或“False”。
 
@@ -1655,7 +1655,7 @@ class UpdateImageResponse(SdkResponse):
 
     @lazyloading.setter
     def lazyloading(self, lazyloading):
-        """Sets the lazyloading of this UpdateImageResponse.
+        r"""Sets the lazyloading of this UpdateImageResponse.
 
         镜像是否支持延迟加载。取值为“True”或“False”。
 
@@ -1666,7 +1666,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def root_origin(self):
-        """Gets the root_origin of this UpdateImageResponse.
+        r"""Gets the root_origin of this UpdateImageResponse.
 
         表示当前镜像来源是从外部导入。取值：file。
 
@@ -1677,7 +1677,7 @@ class UpdateImageResponse(SdkResponse):
 
     @root_origin.setter
     def root_origin(self, root_origin):
-        """Sets the root_origin of this UpdateImageResponse.
+        r"""Sets the root_origin of this UpdateImageResponse.
 
         表示当前镜像来源是从外部导入。取值：file。
 
@@ -1688,7 +1688,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def sequence_num(self):
-        """Gets the sequence_num of this UpdateImageResponse.
+        r"""Gets the sequence_num of this UpdateImageResponse.
 
         表示当前镜像对应云服务器的系统盘插槽位置。目前暂时不用
 
@@ -1699,7 +1699,7 @@ class UpdateImageResponse(SdkResponse):
 
     @sequence_num.setter
     def sequence_num(self, sequence_num):
-        """Sets the sequence_num of this UpdateImageResponse.
+        r"""Sets the sequence_num of this UpdateImageResponse.
 
         表示当前镜像对应云服务器的系统盘插槽位置。目前暂时不用
 
@@ -1710,7 +1710,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def active_at(self):
-        """Gets the active_at of this UpdateImageResponse.
+        r"""Gets the active_at of this UpdateImageResponse.
 
         镜像状态变为正常的时间。
 
@@ -1721,7 +1721,7 @@ class UpdateImageResponse(SdkResponse):
 
     @active_at.setter
     def active_at(self, active_at):
-        """Sets the active_at of this UpdateImageResponse.
+        r"""Sets the active_at of this UpdateImageResponse.
 
         镜像状态变为正常的时间。
 
@@ -1732,7 +1732,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def support_agent_list(self):
-        """Gets the support_agent_list of this UpdateImageResponse.
+        r"""Gets the support_agent_list of this UpdateImageResponse.
 
         镜像是否支持企业主机安全或主机监控。 hss：企业主机安全 ces：主机监控
 
@@ -1743,7 +1743,7 @@ class UpdateImageResponse(SdkResponse):
 
     @support_agent_list.setter
     def support_agent_list(self, support_agent_list):
-        """Sets the support_agent_list of this UpdateImageResponse.
+        r"""Sets the support_agent_list of this UpdateImageResponse.
 
         镜像是否支持企业主机安全或主机监控。 hss：企业主机安全 ces：主机监控
 
@@ -1754,7 +1754,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def image_displayname(self):
-        """Gets the image_displayname of this UpdateImageResponse.
+        r"""Gets the image_displayname of this UpdateImageResponse.
 
         对外展示名称。
 
@@ -1765,7 +1765,7 @@ class UpdateImageResponse(SdkResponse):
 
     @image_displayname.setter
     def image_displayname(self, image_displayname):
-        """Sets the image_displayname of this UpdateImageResponse.
+        r"""Sets the image_displayname of this UpdateImageResponse.
 
         对外展示名称。
 
@@ -1776,7 +1776,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def support_amd(self):
-        """Gets the support_amd of this UpdateImageResponse.
+        r"""Gets the support_amd of this UpdateImageResponse.
 
         是否是AMD架构类型的镜像。取值为“true”或者“false”。
 
@@ -1787,7 +1787,7 @@ class UpdateImageResponse(SdkResponse):
 
     @support_amd.setter
     def support_amd(self, support_amd):
-        """Sets the support_amd of this UpdateImageResponse.
+        r"""Sets the support_amd of this UpdateImageResponse.
 
         是否是AMD架构类型的镜像。取值为“true”或者“false”。
 
@@ -1798,7 +1798,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def support_kvm_hi1822_hisriov(self):
-        """Gets the support_kvm_hi1822_hisriov of this UpdateImageResponse.
+        r"""Gets the support_kvm_hi1822_hisriov of this UpdateImageResponse.
 
         如果镜像支持sriov直通，取值为true，否则无需增加该属性。
 
@@ -1809,7 +1809,7 @@ class UpdateImageResponse(SdkResponse):
 
     @support_kvm_hi1822_hisriov.setter
     def support_kvm_hi1822_hisriov(self, support_kvm_hi1822_hisriov):
-        """Sets the support_kvm_hi1822_hisriov of this UpdateImageResponse.
+        r"""Sets the support_kvm_hi1822_hisriov of this UpdateImageResponse.
 
         如果镜像支持sriov直通，取值为true，否则无需增加该属性。
 
@@ -1820,7 +1820,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def support_kvm_hi1822_hivirtionet(self):
-        """Gets the support_kvm_hi1822_hivirtionet of this UpdateImageResponse.
+        r"""Gets the support_kvm_hi1822_hivirtionet of this UpdateImageResponse.
 
         如果镜像支持Virtio-net直通规格，取值为true，否则无需增加该属性。
 
@@ -1831,7 +1831,7 @@ class UpdateImageResponse(SdkResponse):
 
     @support_kvm_hi1822_hivirtionet.setter
     def support_kvm_hi1822_hivirtionet(self, support_kvm_hi1822_hivirtionet):
-        """Sets the support_kvm_hi1822_hivirtionet of this UpdateImageResponse.
+        r"""Sets the support_kvm_hi1822_hivirtionet of this UpdateImageResponse.
 
         如果镜像支持Virtio-net直通规格，取值为true，否则无需增加该属性。
 
@@ -1842,7 +1842,7 @@ class UpdateImageResponse(SdkResponse):
 
     @property
     def os_shutdown_timeout(self):
-        """Gets the os_shutdown_timeout of this UpdateImageResponse.
+        r"""Gets the os_shutdown_timeout of this UpdateImageResponse.
 
         设置虚拟机的优雅关机超时时间，设置范围为60-300，默认为60（取值为整数，单位为秒）。 云服务器在优雅关机超时后会触发强制关机，避免实例长时间处于关机状态中。 当您的云服务器关机过程中由于特定软件的状态、保存等原因导致优雅关机时间过长，会触发超时强制关机。 您可以通过设置镜像该字段，使得发放的云服务器优雅关机超时时间变长。 该字段当前只影响弹性云服务器，不影响裸金属服务器。
 
@@ -1853,7 +1853,7 @@ class UpdateImageResponse(SdkResponse):
 
     @os_shutdown_timeout.setter
     def os_shutdown_timeout(self, os_shutdown_timeout):
-        """Sets the os_shutdown_timeout of this UpdateImageResponse.
+        r"""Sets the os_shutdown_timeout of this UpdateImageResponse.
 
         设置虚拟机的优雅关机超时时间，设置范围为60-300，默认为60（取值为整数，单位为秒）。 云服务器在优雅关机超时后会触发强制关机，避免实例长时间处于关机状态中。 当您的云服务器关机过程中由于特定软件的状态、保存等原因导致优雅关机时间过长，会触发超时强制关机。 您可以通过设置镜像该字段，使得发放的云服务器优雅关机超时时间变长。 该字段当前只影响弹性云服务器，不影响裸金属服务器。
 

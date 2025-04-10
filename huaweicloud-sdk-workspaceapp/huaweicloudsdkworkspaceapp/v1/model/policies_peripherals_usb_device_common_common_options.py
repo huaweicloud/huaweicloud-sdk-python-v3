@@ -25,7 +25,7 @@ class PoliciesPeripheralsUsbDeviceCommonCommonOptions:
     }
 
     def __init__(self, remove_smart_card_disconnect_enable=None):
-        """PoliciesPeripheralsUsbDeviceCommonCommonOptions
+        r"""PoliciesPeripheralsUsbDeviceCommonCommonOptions
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PoliciesPeripheralsUsbDeviceCommonCommonOptions:
 
     @property
     def remove_smart_card_disconnect_enable(self):
-        """Gets the remove_smart_card_disconnect_enable of this PoliciesPeripheralsUsbDeviceCommonCommonOptions.
+        r"""Gets the remove_smart_card_disconnect_enable of this PoliciesPeripheralsUsbDeviceCommonCommonOptions.
 
         是否移除智能卡断开用户会话。取值为： false：表示关闭。 true：表示开启。
 
@@ -54,7 +54,7 @@ class PoliciesPeripheralsUsbDeviceCommonCommonOptions:
 
     @remove_smart_card_disconnect_enable.setter
     def remove_smart_card_disconnect_enable(self, remove_smart_card_disconnect_enable):
-        """Sets the remove_smart_card_disconnect_enable of this PoliciesPeripheralsUsbDeviceCommonCommonOptions.
+        r"""Sets the remove_smart_card_disconnect_enable of this PoliciesPeripheralsUsbDeviceCommonCommonOptions.
 
         是否移除智能卡断开用户会话。取值为： false：表示关闭。 true：表示开启。
 

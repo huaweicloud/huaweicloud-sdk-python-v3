@@ -60,7 +60,7 @@ class CreateEdgeGroupResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, created_at=None, updated_at=None, project_id=None, iam_role=None, cpu=None, memory=None, gpu_num=None, nodes=None, deployments=None, attributes=None, tags=None, success_node_add=None, success_node_del=None, failed_node_add=None, failed_node_del=None):
-        """CreateEdgeGroupResponse
+        r"""CreateEdgeGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -163,7 +163,7 @@ class CreateEdgeGroupResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateEdgeGroupResponse.
+        r"""Gets the id of this CreateEdgeGroupResponse.
 
         边缘节点组ID
 
@@ -174,7 +174,7 @@ class CreateEdgeGroupResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateEdgeGroupResponse.
+        r"""Sets the id of this CreateEdgeGroupResponse.
 
         边缘节点组ID
 
@@ -185,7 +185,7 @@ class CreateEdgeGroupResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateEdgeGroupResponse.
+        r"""Gets the name of this CreateEdgeGroupResponse.
 
         边缘节点组名称，小写英文字母、数字、中划线，以小写字母或数字开头，最大长度为32个字符，不能为空
 
@@ -196,7 +196,7 @@ class CreateEdgeGroupResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateEdgeGroupResponse.
+        r"""Sets the name of this CreateEdgeGroupResponse.
 
         边缘节点组名称，小写英文字母、数字、中划线，以小写字母或数字开头，最大长度为32个字符，不能为空
 
@@ -207,7 +207,7 @@ class CreateEdgeGroupResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreateEdgeGroupResponse.
+        r"""Gets the description of this CreateEdgeGroupResponse.
 
         描述
 
@@ -218,7 +218,7 @@ class CreateEdgeGroupResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateEdgeGroupResponse.
+        r"""Sets the description of this CreateEdgeGroupResponse.
 
         描述
 
@@ -229,7 +229,7 @@ class CreateEdgeGroupResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this CreateEdgeGroupResponse.
+        r"""Gets the created_at of this CreateEdgeGroupResponse.
 
         创建时间
 
@@ -240,7 +240,7 @@ class CreateEdgeGroupResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this CreateEdgeGroupResponse.
+        r"""Sets the created_at of this CreateEdgeGroupResponse.
 
         创建时间
 
@@ -251,7 +251,7 @@ class CreateEdgeGroupResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this CreateEdgeGroupResponse.
+        r"""Gets the updated_at of this CreateEdgeGroupResponse.
 
         更新时间
 
@@ -262,7 +262,7 @@ class CreateEdgeGroupResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this CreateEdgeGroupResponse.
+        r"""Sets the updated_at of this CreateEdgeGroupResponse.
 
         更新时间
 
@@ -273,7 +273,7 @@ class CreateEdgeGroupResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateEdgeGroupResponse.
+        r"""Gets the project_id of this CreateEdgeGroupResponse.
 
         边缘节点组所属的项目ID
 
@@ -284,7 +284,7 @@ class CreateEdgeGroupResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateEdgeGroupResponse.
+        r"""Sets the project_id of this CreateEdgeGroupResponse.
 
         边缘节点组所属的项目ID
 
@@ -295,7 +295,7 @@ class CreateEdgeGroupResponse(SdkResponse):
 
     @property
     def iam_role(self):
-        """Gets the iam_role of this CreateEdgeGroupResponse.
+        r"""Gets the iam_role of this CreateEdgeGroupResponse.
 
         边缘节点组所属账号的IAM权限，没有铂金版权限的账号无法使用节点组功能
 
@@ -306,7 +306,7 @@ class CreateEdgeGroupResponse(SdkResponse):
 
     @iam_role.setter
     def iam_role(self, iam_role):
-        """Sets the iam_role of this CreateEdgeGroupResponse.
+        r"""Sets the iam_role of this CreateEdgeGroupResponse.
 
         边缘节点组所属账号的IAM权限，没有铂金版权限的账号无法使用节点组功能
 
@@ -317,7 +317,7 @@ class CreateEdgeGroupResponse(SdkResponse):
 
     @property
     def cpu(self):
-        """Gets the cpu of this CreateEdgeGroupResponse.
+        r"""Gets the cpu of this CreateEdgeGroupResponse.
 
         边缘节点组CPU总数，为边缘节点组所绑定的边缘节点的CPU数目之和
 
@@ -328,7 +328,7 @@ class CreateEdgeGroupResponse(SdkResponse):
 
     @cpu.setter
     def cpu(self, cpu):
-        """Sets the cpu of this CreateEdgeGroupResponse.
+        r"""Sets the cpu of this CreateEdgeGroupResponse.
 
         边缘节点组CPU总数，为边缘节点组所绑定的边缘节点的CPU数目之和
 
@@ -339,7 +339,7 @@ class CreateEdgeGroupResponse(SdkResponse):
 
     @property
     def memory(self):
-        """Gets the memory of this CreateEdgeGroupResponse.
+        r"""Gets the memory of this CreateEdgeGroupResponse.
 
         边缘节点组内存总数，为边缘节点组所绑定的边缘节点的内存之和
 
@@ -350,7 +350,7 @@ class CreateEdgeGroupResponse(SdkResponse):
 
     @memory.setter
     def memory(self, memory):
-        """Sets the memory of this CreateEdgeGroupResponse.
+        r"""Sets the memory of this CreateEdgeGroupResponse.
 
         边缘节点组内存总数，为边缘节点组所绑定的边缘节点的内存之和
 
@@ -361,7 +361,7 @@ class CreateEdgeGroupResponse(SdkResponse):
 
     @property
     def gpu_num(self):
-        """Gets the gpu_num of this CreateEdgeGroupResponse.
+        r"""Gets the gpu_num of this CreateEdgeGroupResponse.
 
         边缘节点组GPU总数，为边缘节点组所绑定的边缘节点的GPU数目之和
 
@@ -372,7 +372,7 @@ class CreateEdgeGroupResponse(SdkResponse):
 
     @gpu_num.setter
     def gpu_num(self, gpu_num):
-        """Sets the gpu_num of this CreateEdgeGroupResponse.
+        r"""Sets the gpu_num of this CreateEdgeGroupResponse.
 
         边缘节点组GPU总数，为边缘节点组所绑定的边缘节点的GPU数目之和
 
@@ -383,7 +383,7 @@ class CreateEdgeGroupResponse(SdkResponse):
 
     @property
     def nodes(self):
-        """Gets the nodes of this CreateEdgeGroupResponse.
+        r"""Gets the nodes of this CreateEdgeGroupResponse.
 
         绑定的边缘节点详情
 
@@ -394,7 +394,7 @@ class CreateEdgeGroupResponse(SdkResponse):
 
     @nodes.setter
     def nodes(self, nodes):
-        """Sets the nodes of this CreateEdgeGroupResponse.
+        r"""Sets the nodes of this CreateEdgeGroupResponse.
 
         绑定的边缘节点详情
 
@@ -405,7 +405,7 @@ class CreateEdgeGroupResponse(SdkResponse):
 
     @property
     def deployments(self):
-        """Gets the deployments of this CreateEdgeGroupResponse.
+        r"""Gets the deployments of this CreateEdgeGroupResponse.
 
         绑定的边缘应用详情
 
@@ -416,7 +416,7 @@ class CreateEdgeGroupResponse(SdkResponse):
 
     @deployments.setter
     def deployments(self, deployments):
-        """Sets the deployments of this CreateEdgeGroupResponse.
+        r"""Sets the deployments of this CreateEdgeGroupResponse.
 
         绑定的边缘应用详情
 
@@ -427,7 +427,7 @@ class CreateEdgeGroupResponse(SdkResponse):
 
     @property
     def attributes(self):
-        """Gets the attributes of this CreateEdgeGroupResponse.
+        r"""Gets the attributes of this CreateEdgeGroupResponse.
 
         属性
 
@@ -438,7 +438,7 @@ class CreateEdgeGroupResponse(SdkResponse):
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this CreateEdgeGroupResponse.
+        r"""Sets the attributes of this CreateEdgeGroupResponse.
 
         属性
 
@@ -449,7 +449,7 @@ class CreateEdgeGroupResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this CreateEdgeGroupResponse.
+        r"""Gets the tags of this CreateEdgeGroupResponse.
 
         标签
 
@@ -460,7 +460,7 @@ class CreateEdgeGroupResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateEdgeGroupResponse.
+        r"""Sets the tags of this CreateEdgeGroupResponse.
 
         标签
 
@@ -471,7 +471,7 @@ class CreateEdgeGroupResponse(SdkResponse):
 
     @property
     def success_node_add(self):
-        """Gets the success_node_add of this CreateEdgeGroupResponse.
+        r"""Gets the success_node_add of this CreateEdgeGroupResponse.
 
         绑定操作成功的节点ID列表
 
@@ -482,7 +482,7 @@ class CreateEdgeGroupResponse(SdkResponse):
 
     @success_node_add.setter
     def success_node_add(self, success_node_add):
-        """Sets the success_node_add of this CreateEdgeGroupResponse.
+        r"""Sets the success_node_add of this CreateEdgeGroupResponse.
 
         绑定操作成功的节点ID列表
 
@@ -493,7 +493,7 @@ class CreateEdgeGroupResponse(SdkResponse):
 
     @property
     def success_node_del(self):
-        """Gets the success_node_del of this CreateEdgeGroupResponse.
+        r"""Gets the success_node_del of this CreateEdgeGroupResponse.
 
         解绑操作成功的节点ID列表
 
@@ -504,7 +504,7 @@ class CreateEdgeGroupResponse(SdkResponse):
 
     @success_node_del.setter
     def success_node_del(self, success_node_del):
-        """Sets the success_node_del of this CreateEdgeGroupResponse.
+        r"""Sets the success_node_del of this CreateEdgeGroupResponse.
 
         解绑操作成功的节点ID列表
 
@@ -515,7 +515,7 @@ class CreateEdgeGroupResponse(SdkResponse):
 
     @property
     def failed_node_add(self):
-        """Gets the failed_node_add of this CreateEdgeGroupResponse.
+        r"""Gets the failed_node_add of this CreateEdgeGroupResponse.
 
         绑定操作失败的节点ID列表
 
@@ -526,7 +526,7 @@ class CreateEdgeGroupResponse(SdkResponse):
 
     @failed_node_add.setter
     def failed_node_add(self, failed_node_add):
-        """Sets the failed_node_add of this CreateEdgeGroupResponse.
+        r"""Sets the failed_node_add of this CreateEdgeGroupResponse.
 
         绑定操作失败的节点ID列表
 
@@ -537,7 +537,7 @@ class CreateEdgeGroupResponse(SdkResponse):
 
     @property
     def failed_node_del(self):
-        """Gets the failed_node_del of this CreateEdgeGroupResponse.
+        r"""Gets the failed_node_del of this CreateEdgeGroupResponse.
 
         解绑操作失败的节点ID列表
 
@@ -548,7 +548,7 @@ class CreateEdgeGroupResponse(SdkResponse):
 
     @failed_node_del.setter
     def failed_node_del(self, failed_node_del):
-        """Sets the failed_node_del of this CreateEdgeGroupResponse.
+        r"""Sets the failed_node_del of this CreateEdgeGroupResponse.
 
         解绑操作失败的节点ID列表
 

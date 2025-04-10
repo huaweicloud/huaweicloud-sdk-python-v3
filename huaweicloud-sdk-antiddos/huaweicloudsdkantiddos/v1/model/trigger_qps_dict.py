@@ -27,7 +27,7 @@ class TriggerQpsDict:
     }
 
     def __init__(self, http_request_pos_id=None, http_packet_per_second=None):
-        """TriggerQpsDict
+        r"""TriggerQpsDict
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class TriggerQpsDict:
 
     @property
     def http_request_pos_id(self):
-        """Gets the http_request_pos_id of this TriggerQpsDict.
+        r"""Gets the http_request_pos_id of this TriggerQpsDict.
 
         HTTP请求数分段ID
 
@@ -59,7 +59,7 @@ class TriggerQpsDict:
 
     @http_request_pos_id.setter
     def http_request_pos_id(self, http_request_pos_id):
-        """Sets the http_request_pos_id of this TriggerQpsDict.
+        r"""Sets the http_request_pos_id of this TriggerQpsDict.
 
         HTTP请求数分段ID
 
@@ -70,7 +70,7 @@ class TriggerQpsDict:
 
     @property
     def http_packet_per_second(self):
-        """Gets the http_packet_per_second of this TriggerQpsDict.
+        r"""Gets the http_packet_per_second of this TriggerQpsDict.
 
         每秒HTTP请求数（个/s）阈值
 
@@ -81,7 +81,7 @@ class TriggerQpsDict:
 
     @http_packet_per_second.setter
     def http_packet_per_second(self, http_packet_per_second):
-        """Sets the http_packet_per_second of this TriggerQpsDict.
+        r"""Sets the http_packet_per_second of this TriggerQpsDict.
 
         每秒HTTP请求数（个/s）阈值
 

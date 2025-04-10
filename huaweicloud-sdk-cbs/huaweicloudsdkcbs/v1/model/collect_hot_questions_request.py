@@ -37,7 +37,7 @@ class CollectHotQuestionsRequest:
     }
 
     def __init__(self, qabot_id=None, start_time=None, end_time=None, top=None, domain=None, domain_id=None, exclude=None):
-        """CollectHotQuestionsRequest
+        r"""CollectHotQuestionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class CollectHotQuestionsRequest:
 
     @property
     def qabot_id(self):
-        """Gets the qabot_id of this CollectHotQuestionsRequest.
+        r"""Gets the qabot_id of this CollectHotQuestionsRequest.
 
         qabot编号，UUID格式。
 
@@ -95,7 +95,7 @@ class CollectHotQuestionsRequest:
 
     @qabot_id.setter
     def qabot_id(self, qabot_id):
-        """Sets the qabot_id of this CollectHotQuestionsRequest.
+        r"""Sets the qabot_id of this CollectHotQuestionsRequest.
 
         qabot编号，UUID格式。
 
@@ -106,7 +106,7 @@ class CollectHotQuestionsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this CollectHotQuestionsRequest.
+        r"""Gets the start_time of this CollectHotQuestionsRequest.
 
         查询的起始时间，long，UTC时间，默认值为0。
 
@@ -117,7 +117,7 @@ class CollectHotQuestionsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this CollectHotQuestionsRequest.
+        r"""Sets the start_time of this CollectHotQuestionsRequest.
 
         查询的起始时间，long，UTC时间，默认值为0。
 
@@ -128,7 +128,7 @@ class CollectHotQuestionsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this CollectHotQuestionsRequest.
+        r"""Gets the end_time of this CollectHotQuestionsRequest.
 
         查询的结束时间，long，UTC时间，默认值为当前时间的毫秒数。
 
@@ -139,7 +139,7 @@ class CollectHotQuestionsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this CollectHotQuestionsRequest.
+        r"""Sets the end_time of this CollectHotQuestionsRequest.
 
         查询的结束时间，long，UTC时间，默认值为当前时间的毫秒数。
 
@@ -150,7 +150,7 @@ class CollectHotQuestionsRequest:
 
     @property
     def top(self):
-        """Gets the top of this CollectHotQuestionsRequest.
+        r"""Gets the top of this CollectHotQuestionsRequest.
 
         热点问题最多显示的个数，默认值为10，取值范围1-20。
 
@@ -161,7 +161,7 @@ class CollectHotQuestionsRequest:
 
     @top.setter
     def top(self, top):
-        """Sets the top of this CollectHotQuestionsRequest.
+        r"""Sets the top of this CollectHotQuestionsRequest.
 
         热点问题最多显示的个数，默认值为10，取值范围1-20。
 
@@ -172,7 +172,7 @@ class CollectHotQuestionsRequest:
 
     @property
     def domain(self):
-        """Gets the domain of this CollectHotQuestionsRequest.
+        r"""Gets the domain of this CollectHotQuestionsRequest.
 
         热点问题所属的领域。如果指定领域为非空字符串则从指定领域中查询热点问题，否则从所有标准问题中查询热点问题。
 
@@ -183,7 +183,7 @@ class CollectHotQuestionsRequest:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this CollectHotQuestionsRequest.
+        r"""Sets the domain of this CollectHotQuestionsRequest.
 
         热点问题所属的领域。如果指定领域为非空字符串则从指定领域中查询热点问题，否则从所有标准问题中查询热点问题。
 
@@ -194,7 +194,7 @@ class CollectHotQuestionsRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this CollectHotQuestionsRequest.
+        r"""Gets the domain_id of this CollectHotQuestionsRequest.
 
         统计的目标问题类别id。
 
@@ -205,7 +205,7 @@ class CollectHotQuestionsRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this CollectHotQuestionsRequest.
+        r"""Sets the domain_id of this CollectHotQuestionsRequest.
 
         统计的目标问题类别id。
 
@@ -216,7 +216,7 @@ class CollectHotQuestionsRequest:
 
     @property
     def exclude(self):
-        """Gets the exclude of this CollectHotQuestionsRequest.
+        r"""Gets the exclude of this CollectHotQuestionsRequest.
 
         true:根据问答对信息展示热点问题（如：热点问题对应的问答对“你好”发生了修改，变成了 “你好啊”，此时热点问题也将返回 “你好啊”；但是如果这个问题对被删除，则“你好”不会被展示在热点问中） false: 不根据问答对信息展示热点问题。
 
@@ -227,7 +227,7 @@ class CollectHotQuestionsRequest:
 
     @exclude.setter
     def exclude(self, exclude):
-        """Sets the exclude of this CollectHotQuestionsRequest.
+        r"""Sets the exclude of this CollectHotQuestionsRequest.
 
         true:根据问答对信息展示热点问题（如：热点问题对应的问答对“你好”发生了修改，变成了 “你好啊”，此时热点问题也将返回 “你好啊”；但是如果这个问题对被删除，则“你好”不会被展示在热点问中） false: 不根据问答对信息展示热点问题。
 

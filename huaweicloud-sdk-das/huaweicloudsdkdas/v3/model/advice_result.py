@@ -45,7 +45,7 @@ class AdviceResult:
     }
 
     def __init__(self, message_id=None, status_code=None, error_code=None, error_message=None, index_advice=None, tuning_advice=None, formatted_sql=None, original_sql=None, explain=None, tb_pos_infos=None, feedback_infos=None):
-        """AdviceResult
+        r"""AdviceResult
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class AdviceResult:
 
     @property
     def message_id(self):
-        """Gets the message_id of this AdviceResult.
+        r"""Gets the message_id of this AdviceResult.
 
         messageId
 
@@ -124,7 +124,7 @@ class AdviceResult:
 
     @message_id.setter
     def message_id(self, message_id):
-        """Sets the message_id of this AdviceResult.
+        r"""Sets the message_id of this AdviceResult.
 
         messageId
 
@@ -135,7 +135,7 @@ class AdviceResult:
 
     @property
     def status_code(self):
-        """Gets the status_code of this AdviceResult.
+        r"""Gets the status_code of this AdviceResult.
 
         状态码
 
@@ -146,7 +146,7 @@ class AdviceResult:
 
     @status_code.setter
     def status_code(self, status_code):
-        """Sets the status_code of this AdviceResult.
+        r"""Sets the status_code of this AdviceResult.
 
         状态码
 
@@ -157,7 +157,7 @@ class AdviceResult:
 
     @property
     def error_code(self):
-        """Gets the error_code of this AdviceResult.
+        r"""Gets the error_code of this AdviceResult.
 
         错误码
 
@@ -168,7 +168,7 @@ class AdviceResult:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this AdviceResult.
+        r"""Sets the error_code of this AdviceResult.
 
         错误码
 
@@ -179,7 +179,7 @@ class AdviceResult:
 
     @property
     def error_message(self):
-        """Gets the error_message of this AdviceResult.
+        r"""Gets the error_message of this AdviceResult.
 
         错误信息
 
@@ -190,7 +190,7 @@ class AdviceResult:
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this AdviceResult.
+        r"""Sets the error_message of this AdviceResult.
 
         错误信息
 
@@ -201,7 +201,7 @@ class AdviceResult:
 
     @property
     def index_advice(self):
-        """Gets the index_advice of this AdviceResult.
+        r"""Gets the index_advice of this AdviceResult.
 
         索引建议
 
@@ -212,7 +212,7 @@ class AdviceResult:
 
     @index_advice.setter
     def index_advice(self, index_advice):
-        """Sets the index_advice of this AdviceResult.
+        r"""Sets the index_advice of this AdviceResult.
 
         索引建议
 
@@ -223,7 +223,7 @@ class AdviceResult:
 
     @property
     def tuning_advice(self):
-        """Gets the tuning_advice of this AdviceResult.
+        r"""Gets the tuning_advice of this AdviceResult.
 
         诊断建议
 
@@ -234,7 +234,7 @@ class AdviceResult:
 
     @tuning_advice.setter
     def tuning_advice(self, tuning_advice):
-        """Sets the tuning_advice of this AdviceResult.
+        r"""Sets the tuning_advice of this AdviceResult.
 
         诊断建议
 
@@ -245,7 +245,7 @@ class AdviceResult:
 
     @property
     def formatted_sql(self):
-        """Gets the formatted_sql of this AdviceResult.
+        r"""Gets the formatted_sql of this AdviceResult.
 
         格式化SQL
 
@@ -256,7 +256,7 @@ class AdviceResult:
 
     @formatted_sql.setter
     def formatted_sql(self, formatted_sql):
-        """Sets the formatted_sql of this AdviceResult.
+        r"""Sets the formatted_sql of this AdviceResult.
 
         格式化SQL
 
@@ -267,7 +267,7 @@ class AdviceResult:
 
     @property
     def original_sql(self):
-        """Gets the original_sql of this AdviceResult.
+        r"""Gets the original_sql of this AdviceResult.
 
         原始SQL
 
@@ -278,7 +278,7 @@ class AdviceResult:
 
     @original_sql.setter
     def original_sql(self, original_sql):
-        """Sets the original_sql of this AdviceResult.
+        r"""Sets the original_sql of this AdviceResult.
 
         原始SQL
 
@@ -289,7 +289,7 @@ class AdviceResult:
 
     @property
     def explain(self):
-        """Gets the explain of this AdviceResult.
+        r"""Gets the explain of this AdviceResult.
 
         执行计划
 
@@ -300,7 +300,7 @@ class AdviceResult:
 
     @explain.setter
     def explain(self, explain):
-        """Sets the explain of this AdviceResult.
+        r"""Sets the explain of this AdviceResult.
 
         执行计划
 
@@ -311,7 +311,7 @@ class AdviceResult:
 
     @property
     def tb_pos_infos(self):
-        """Gets the tb_pos_infos of this AdviceResult.
+        r"""Gets the tb_pos_infos of this AdviceResult.
 
         表位置信息
 
@@ -322,7 +322,7 @@ class AdviceResult:
 
     @tb_pos_infos.setter
     def tb_pos_infos(self, tb_pos_infos):
-        """Sets the tb_pos_infos of this AdviceResult.
+        r"""Sets the tb_pos_infos of this AdviceResult.
 
         表位置信息
 
@@ -333,7 +333,7 @@ class AdviceResult:
 
     @property
     def feedback_infos(self):
-        """Gets the feedback_infos of this AdviceResult.
+        r"""Gets the feedback_infos of this AdviceResult.
 
         :return: The feedback_infos of this AdviceResult.
         :rtype: :class:`huaweicloudsdkdas.v3.FeedbackInfo`
@@ -342,7 +342,7 @@ class AdviceResult:
 
     @feedback_infos.setter
     def feedback_infos(self, feedback_infos):
-        """Sets the feedback_infos of this AdviceResult.
+        r"""Sets the feedback_infos of this AdviceResult.
 
         :param feedback_infos: The feedback_infos of this AdviceResult.
         :type feedback_infos: :class:`huaweicloudsdkdas.v3.FeedbackInfo`

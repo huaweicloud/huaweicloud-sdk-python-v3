@@ -33,7 +33,7 @@ class SqlSampleTemplate:
     }
 
     def __init__(self, lang=None, name=None, sql=None, description=None, group=None):
-        """SqlSampleTemplate
+        r"""SqlSampleTemplate
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class SqlSampleTemplate:
 
     @property
     def lang(self):
-        """Gets the lang of this SqlSampleTemplate.
+        r"""Gets the lang of this SqlSampleTemplate.
 
         语言。
 
@@ -82,7 +82,7 @@ class SqlSampleTemplate:
 
     @lang.setter
     def lang(self, lang):
-        """Sets the lang of this SqlSampleTemplate.
+        r"""Sets the lang of this SqlSampleTemplate.
 
         语言。
 
@@ -93,7 +93,7 @@ class SqlSampleTemplate:
 
     @property
     def name(self):
-        """Gets the name of this SqlSampleTemplate.
+        r"""Gets the name of this SqlSampleTemplate.
 
         样例模板名称。
 
@@ -104,7 +104,7 @@ class SqlSampleTemplate:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SqlSampleTemplate.
+        r"""Sets the name of this SqlSampleTemplate.
 
         样例模板名称。
 
@@ -115,7 +115,7 @@ class SqlSampleTemplate:
 
     @property
     def sql(self):
-        """Gets the sql of this SqlSampleTemplate.
+        r"""Gets the sql of this SqlSampleTemplate.
 
         样例模板内容。
 
@@ -126,7 +126,7 @@ class SqlSampleTemplate:
 
     @sql.setter
     def sql(self, sql):
-        """Sets the sql of this SqlSampleTemplate.
+        r"""Sets the sql of this SqlSampleTemplate.
 
         样例模板内容。
 
@@ -137,7 +137,7 @@ class SqlSampleTemplate:
 
     @property
     def description(self):
-        """Gets the description of this SqlSampleTemplate.
+        r"""Gets the description of this SqlSampleTemplate.
 
         样例模板描述。
 
@@ -148,7 +148,7 @@ class SqlSampleTemplate:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this SqlSampleTemplate.
+        r"""Sets the description of this SqlSampleTemplate.
 
         样例模板描述。
 
@@ -159,7 +159,7 @@ class SqlSampleTemplate:
 
     @property
     def group(self):
-        """Gets the group of this SqlSampleTemplate.
+        r"""Gets the group of this SqlSampleTemplate.
 
         样例模板分组。
 
@@ -170,7 +170,7 @@ class SqlSampleTemplate:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this SqlSampleTemplate.
+        r"""Sets the group of this SqlSampleTemplate.
 
         样例模板分组。
 

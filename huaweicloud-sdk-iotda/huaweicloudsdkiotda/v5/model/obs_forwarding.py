@@ -33,7 +33,7 @@ class ObsForwarding:
     }
 
     def __init__(self, region_name=None, project_id=None, bucket_name=None, location=None, file_path=None):
-        """ObsForwarding
+        r"""ObsForwarding
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class ObsForwarding:
 
     @property
     def region_name(self):
-        """Gets the region_name of this ObsForwarding.
+        r"""Gets the region_name of this ObsForwarding.
 
         **参数说明**：OBS服务对应的region区域
 
@@ -79,7 +79,7 @@ class ObsForwarding:
 
     @region_name.setter
     def region_name(self, region_name):
-        """Sets the region_name of this ObsForwarding.
+        r"""Sets the region_name of this ObsForwarding.
 
         **参数说明**：OBS服务对应的region区域
 
@@ -90,7 +90,7 @@ class ObsForwarding:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ObsForwarding.
+        r"""Gets the project_id of this ObsForwarding.
 
         **参数说明**：OBS服务对应的projectId信息
 
@@ -101,7 +101,7 @@ class ObsForwarding:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ObsForwarding.
+        r"""Sets the project_id of this ObsForwarding.
 
         **参数说明**：OBS服务对应的projectId信息
 
@@ -112,7 +112,7 @@ class ObsForwarding:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this ObsForwarding.
+        r"""Gets the bucket_name of this ObsForwarding.
 
         **参数说明**：OBS服务对应的桶名称
 
@@ -123,7 +123,7 @@ class ObsForwarding:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this ObsForwarding.
+        r"""Sets the bucket_name of this ObsForwarding.
 
         **参数说明**：OBS服务对应的桶名称
 
@@ -134,7 +134,7 @@ class ObsForwarding:
 
     @property
     def location(self):
-        """Gets the location of this ObsForwarding.
+        r"""Gets the location of this ObsForwarding.
 
         **参数说明**：OBS服务对应桶的区域
 
@@ -145,7 +145,7 @@ class ObsForwarding:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this ObsForwarding.
+        r"""Sets the location of this ObsForwarding.
 
         **参数说明**：OBS服务对应桶的区域
 
@@ -156,7 +156,7 @@ class ObsForwarding:
 
     @property
     def file_path(self):
-        """Gets the file_path of this ObsForwarding.
+        r"""Gets the file_path of this ObsForwarding.
 
         **参数说明**：OBS服务中存储通道文件的自定义目录,多级目录可用(/)进行分隔，不可以斜杠(/)开头或结尾，不能包含两个以上相邻的斜杠(/) **取值范围**: 英文字母(a-zA-Z)、数字(0-9)、下划线(_)、中划线(-)、斜杠(/)和大括号({})，最大字符长度256个字符。其中大括号只能用于对应模板参数。 **模板参数**:    - \\{YYYY\\} 年   - \\{MM\\} 月   - \\{DD\\} 日   - \\{HH\\} 小时   - \\{appId\\} 应用ID   - \\{deviceId\\} 设备ID   例如:自定义目录结构为\\{YYYY\\}/\\{MM\\}/\\{DD\\}/\\{HH\\},则会在转发数据时，根据当前时间往对应的目录结构2021>08>11>09下生成对应的数据。
 
@@ -167,7 +167,7 @@ class ObsForwarding:
 
     @file_path.setter
     def file_path(self, file_path):
-        """Sets the file_path of this ObsForwarding.
+        r"""Sets the file_path of this ObsForwarding.
 
         **参数说明**：OBS服务中存储通道文件的自定义目录,多级目录可用(/)进行分隔，不可以斜杠(/)开头或结尾，不能包含两个以上相邻的斜杠(/) **取值范围**: 英文字母(a-zA-Z)、数字(0-9)、下划线(_)、中划线(-)、斜杠(/)和大括号({})，最大字符长度256个字符。其中大括号只能用于对应模板参数。 **模板参数**:    - \\{YYYY\\} 年   - \\{MM\\} 月   - \\{DD\\} 日   - \\{HH\\} 小时   - \\{appId\\} 应用ID   - \\{deviceId\\} 设备ID   例如:自定义目录结构为\\{YYYY\\}/\\{MM\\}/\\{DD\\}/\\{HH\\},则会在转发数据时，根据当前时间往对应的目录结构2021>08>11>09下生成对应的数据。
 

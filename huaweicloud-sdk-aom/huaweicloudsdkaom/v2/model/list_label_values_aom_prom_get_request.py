@@ -25,7 +25,7 @@ class ListLabelValuesAomPromGetRequest:
     }
 
     def __init__(self, label_name=None):
-        """ListLabelValuesAomPromGetRequest
+        r"""ListLabelValuesAomPromGetRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListLabelValuesAomPromGetRequest:
 
     @property
     def label_name(self):
-        """Gets the label_name of this ListLabelValuesAomPromGetRequest.
+        r"""Gets the label_name of this ListLabelValuesAomPromGetRequest.
 
         查询所用标签。
 
@@ -53,7 +53,7 @@ class ListLabelValuesAomPromGetRequest:
 
     @label_name.setter
     def label_name(self, label_name):
-        """Sets the label_name of this ListLabelValuesAomPromGetRequest.
+        r"""Sets the label_name of this ListLabelValuesAomPromGetRequest.
 
         查询所用标签。
 

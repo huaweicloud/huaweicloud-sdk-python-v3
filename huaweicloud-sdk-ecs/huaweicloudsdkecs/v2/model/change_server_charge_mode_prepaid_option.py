@@ -35,7 +35,7 @@ class ChangeServerChargeModePrepaidOption:
     }
 
     def __init__(self, include_data_disks=None, include_publicips=None, period_type=None, period_num=None, auto_pay=None, auto_renew=None):
-        """ChangeServerChargeModePrepaidOption
+        r"""ChangeServerChargeModePrepaidOption
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class ChangeServerChargeModePrepaidOption:
 
     @property
     def include_data_disks(self):
-        """Gets the include_data_disks of this ChangeServerChargeModePrepaidOption.
+        r"""Gets the include_data_disks of this ChangeServerChargeModePrepaidOption.
 
         是否连同支持的按需数据盘一起转为包周期。 当参数为true，包括按需非共享的数据盘，不包括共享云硬盘，DSS和DESS硬盘 默认值为false
 
@@ -87,7 +87,7 @@ class ChangeServerChargeModePrepaidOption:
 
     @include_data_disks.setter
     def include_data_disks(self, include_data_disks):
-        """Sets the include_data_disks of this ChangeServerChargeModePrepaidOption.
+        r"""Sets the include_data_disks of this ChangeServerChargeModePrepaidOption.
 
         是否连同支持的按需数据盘一起转为包周期。 当参数为true，包括按需非共享的数据盘，不包括共享云硬盘，DSS和DESS硬盘 默认值为false
 
@@ -98,7 +98,7 @@ class ChangeServerChargeModePrepaidOption:
 
     @property
     def include_publicips(self):
-        """Gets the include_publicips of this ChangeServerChargeModePrepaidOption.
+        r"""Gets the include_publicips of this ChangeServerChargeModePrepaidOption.
 
         是否连同弹性公网IP一起转为包周期 只有“独享”、“按带宽计费”的弹性公网IP才可以转换为包周期计费模式 默认值为false
 
@@ -109,7 +109,7 @@ class ChangeServerChargeModePrepaidOption:
 
     @include_publicips.setter
     def include_publicips(self, include_publicips):
-        """Sets the include_publicips of this ChangeServerChargeModePrepaidOption.
+        r"""Sets the include_publicips of this ChangeServerChargeModePrepaidOption.
 
         是否连同弹性公网IP一起转为包周期 只有“独享”、“按带宽计费”的弹性公网IP才可以转换为包周期计费模式 默认值为false
 
@@ -120,7 +120,7 @@ class ChangeServerChargeModePrepaidOption:
 
     @property
     def period_type(self):
-        """Gets the period_type of this ChangeServerChargeModePrepaidOption.
+        r"""Gets the period_type of this ChangeServerChargeModePrepaidOption.
 
         订购周期类型，取值范围： month-月 year-年
 
@@ -131,7 +131,7 @@ class ChangeServerChargeModePrepaidOption:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this ChangeServerChargeModePrepaidOption.
+        r"""Sets the period_type of this ChangeServerChargeModePrepaidOption.
 
         订购周期类型，取值范围： month-月 year-年
 
@@ -142,7 +142,7 @@ class ChangeServerChargeModePrepaidOption:
 
     @property
     def period_num(self):
-        """Gets the period_num of this ChangeServerChargeModePrepaidOption.
+        r"""Gets the period_num of this ChangeServerChargeModePrepaidOption.
 
         订购周期的周期数。 取值范围： period_type=month时，取值范围为[1,9]。 period_type=year时，取值范围为[1,3]。
 
@@ -153,7 +153,7 @@ class ChangeServerChargeModePrepaidOption:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this ChangeServerChargeModePrepaidOption.
+        r"""Sets the period_num of this ChangeServerChargeModePrepaidOption.
 
         订购周期的周期数。 取值范围： period_type=month时，取值范围为[1,9]。 period_type=year时，取值范围为[1,3]。
 
@@ -164,7 +164,7 @@ class ChangeServerChargeModePrepaidOption:
 
     @property
     def auto_pay(self):
-        """Gets the auto_pay of this ChangeServerChargeModePrepaidOption.
+        r"""Gets the auto_pay of this ChangeServerChargeModePrepaidOption.
 
         是否自动支付。 true：自动支付，需要确保账户余额充足，如果余额不足则会生成异常订单，只能作废此订单 false：只生成订单不扣费 默认值为false
 
@@ -175,7 +175,7 @@ class ChangeServerChargeModePrepaidOption:
 
     @auto_pay.setter
     def auto_pay(self, auto_pay):
-        """Sets the auto_pay of this ChangeServerChargeModePrepaidOption.
+        r"""Sets the auto_pay of this ChangeServerChargeModePrepaidOption.
 
         是否自动支付。 true：自动支付，需要确保账户余额充足，如果余额不足则会生成异常订单，只能作废此订单 false：只生成订单不扣费 默认值为false
 
@@ -186,7 +186,7 @@ class ChangeServerChargeModePrepaidOption:
 
     @property
     def auto_renew(self):
-        """Gets the auto_renew of this ChangeServerChargeModePrepaidOption.
+        r"""Gets the auto_renew of this ChangeServerChargeModePrepaidOption.
 
         是否自动续费。默认值：false
 
@@ -197,7 +197,7 @@ class ChangeServerChargeModePrepaidOption:
 
     @auto_renew.setter
     def auto_renew(self, auto_renew):
-        """Sets the auto_renew of this ChangeServerChargeModePrepaidOption.
+        r"""Sets the auto_renew of this ChangeServerChargeModePrepaidOption.
 
         是否自动续费。默认值：false
 

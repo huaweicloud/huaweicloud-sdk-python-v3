@@ -28,7 +28,7 @@ class UniqueAttributeDto:
     }
 
     def __init__(self, attribute_path=None, attribute_value=None):
-        """UniqueAttributeDto
+        r"""UniqueAttributeDto
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UniqueAttributeDto:
 
     @property
     def attribute_path(self):
-        """Gets the attribute_path of this UniqueAttributeDto.
+        r"""Gets the attribute_path of this UniqueAttributeDto.
 
         属性路径
 
@@ -60,7 +60,7 @@ class UniqueAttributeDto:
 
     @attribute_path.setter
     def attribute_path(self, attribute_path):
-        """Sets the attribute_path of this UniqueAttributeDto.
+        r"""Sets the attribute_path of this UniqueAttributeDto.
 
         属性路径
 
@@ -71,7 +71,7 @@ class UniqueAttributeDto:
 
     @property
     def attribute_value(self):
-        """Gets the attribute_value of this UniqueAttributeDto.
+        r"""Gets the attribute_value of this UniqueAttributeDto.
 
         属性的值
 
@@ -82,7 +82,7 @@ class UniqueAttributeDto:
 
     @attribute_value.setter
     def attribute_value(self, attribute_value):
-        """Sets the attribute_value of this UniqueAttributeDto.
+        r"""Sets the attribute_value of this UniqueAttributeDto.
 
         属性的值
 

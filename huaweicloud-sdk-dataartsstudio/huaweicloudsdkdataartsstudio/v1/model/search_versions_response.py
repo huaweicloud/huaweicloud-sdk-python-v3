@@ -26,7 +26,7 @@ class SearchVersionsResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """SearchVersionsResponse
+        r"""SearchVersionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SearchVersionsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this SearchVersionsResponse.
+        r"""Gets the data of this SearchVersionsResponse.
 
         :return: The data of this SearchVersionsResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.PublishVersionVOSearchResultData`
@@ -53,7 +53,7 @@ class SearchVersionsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this SearchVersionsResponse.
+        r"""Sets the data of this SearchVersionsResponse.
 
         :param data: The data of this SearchVersionsResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.PublishVersionVOSearchResultData`

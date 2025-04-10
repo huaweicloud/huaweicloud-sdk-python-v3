@@ -33,7 +33,7 @@ class AgentInfoParam:
     }
 
     def __init__(self, page=None, page_size=None, ecs_id_list=None, agent_id_list=None, coc_cmdb_id_list=None):
-        """AgentInfoParam
+        r"""AgentInfoParam
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class AgentInfoParam:
 
     @property
     def page(self):
-        """Gets the page of this AgentInfoParam.
+        r"""Gets the page of this AgentInfoParam.
 
         分页查询的起始页数（第几页）。默认值：1。
 
@@ -82,7 +82,7 @@ class AgentInfoParam:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this AgentInfoParam.
+        r"""Sets the page of this AgentInfoParam.
 
         分页查询的起始页数（第几页）。默认值：1。
 
@@ -93,7 +93,7 @@ class AgentInfoParam:
 
     @property
     def page_size(self):
-        """Gets the page_size of this AgentInfoParam.
+        r"""Gets the page_size of this AgentInfoParam.
 
         每页查询数量，默认20。
 
@@ -104,7 +104,7 @@ class AgentInfoParam:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this AgentInfoParam.
+        r"""Sets the page_size of this AgentInfoParam.
 
         每页查询数量，默认20。
 
@@ -115,7 +115,7 @@ class AgentInfoParam:
 
     @property
     def ecs_id_list(self):
-        """Gets the ecs_id_list of this AgentInfoParam.
+        r"""Gets the ecs_id_list of this AgentInfoParam.
 
         ecs ID列表信息。
 
@@ -126,7 +126,7 @@ class AgentInfoParam:
 
     @ecs_id_list.setter
     def ecs_id_list(self, ecs_id_list):
-        """Sets the ecs_id_list of this AgentInfoParam.
+        r"""Sets the ecs_id_list of this AgentInfoParam.
 
         ecs ID列表信息。
 
@@ -137,7 +137,7 @@ class AgentInfoParam:
 
     @property
     def agent_id_list(self):
-        """Gets the agent_id_list of this AgentInfoParam.
+        r"""Gets the agent_id_list of this AgentInfoParam.
 
         agent ID列表信息。
 
@@ -148,7 +148,7 @@ class AgentInfoParam:
 
     @agent_id_list.setter
     def agent_id_list(self, agent_id_list):
-        """Sets the agent_id_list of this AgentInfoParam.
+        r"""Sets the agent_id_list of this AgentInfoParam.
 
         agent ID列表信息。
 
@@ -159,7 +159,7 @@ class AgentInfoParam:
 
     @property
     def coc_cmdb_id_list(self):
-        """Gets the coc_cmdb_id_list of this AgentInfoParam.
+        r"""Gets the coc_cmdb_id_list of this AgentInfoParam.
 
         cmdb  ID列表信息。
 
@@ -170,7 +170,7 @@ class AgentInfoParam:
 
     @coc_cmdb_id_list.setter
     def coc_cmdb_id_list(self, coc_cmdb_id_list):
-        """Sets the coc_cmdb_id_list of this AgentInfoParam.
+        r"""Sets the coc_cmdb_id_list of this AgentInfoParam.
 
         cmdb  ID列表信息。
 

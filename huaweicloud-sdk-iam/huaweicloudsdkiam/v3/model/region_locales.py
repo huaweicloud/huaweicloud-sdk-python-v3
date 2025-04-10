@@ -33,7 +33,7 @@ class RegionLocales:
     }
 
     def __init__(self, zh_cn=None, en_us=None, pt_br=None, es_us=None, es_es=None):
-        """RegionLocales
+        r"""RegionLocales
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class RegionLocales:
 
     @property
     def zh_cn(self):
-        """Gets the zh_cn of this RegionLocales.
+        r"""Gets the zh_cn of this RegionLocales.
 
         区域的中文名称。
 
@@ -80,7 +80,7 @@ class RegionLocales:
 
     @zh_cn.setter
     def zh_cn(self, zh_cn):
-        """Sets the zh_cn of this RegionLocales.
+        r"""Sets the zh_cn of this RegionLocales.
 
         区域的中文名称。
 
@@ -91,7 +91,7 @@ class RegionLocales:
 
     @property
     def en_us(self):
-        """Gets the en_us of this RegionLocales.
+        r"""Gets the en_us of this RegionLocales.
 
         区域的英文名称。
 
@@ -102,7 +102,7 @@ class RegionLocales:
 
     @en_us.setter
     def en_us(self, en_us):
-        """Sets the en_us of this RegionLocales.
+        r"""Sets the en_us of this RegionLocales.
 
         区域的英文名称。
 
@@ -113,7 +113,7 @@ class RegionLocales:
 
     @property
     def pt_br(self):
-        """Gets the pt_br of this RegionLocales.
+        r"""Gets the pt_br of this RegionLocales.
 
         区域的葡萄牙语名称。
 
@@ -124,7 +124,7 @@ class RegionLocales:
 
     @pt_br.setter
     def pt_br(self, pt_br):
-        """Sets the pt_br of this RegionLocales.
+        r"""Sets the pt_br of this RegionLocales.
 
         区域的葡萄牙语名称。
 
@@ -135,7 +135,7 @@ class RegionLocales:
 
     @property
     def es_us(self):
-        """Gets the es_us of this RegionLocales.
+        r"""Gets the es_us of this RegionLocales.
 
         区域的美国西班牙语名称。
 
@@ -146,7 +146,7 @@ class RegionLocales:
 
     @es_us.setter
     def es_us(self, es_us):
-        """Sets the es_us of this RegionLocales.
+        r"""Sets the es_us of this RegionLocales.
 
         区域的美国西班牙语名称。
 
@@ -157,7 +157,7 @@ class RegionLocales:
 
     @property
     def es_es(self):
-        """Gets the es_es of this RegionLocales.
+        r"""Gets the es_es of this RegionLocales.
 
         区域的西班牙语名称。
 
@@ -168,7 +168,7 @@ class RegionLocales:
 
     @es_es.setter
     def es_es(self, es_es):
-        """Sets the es_es of this RegionLocales.
+        r"""Sets the es_es of this RegionLocales.
 
         区域的西班牙语名称。
 

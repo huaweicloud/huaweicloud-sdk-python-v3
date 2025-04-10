@@ -25,7 +25,7 @@ class DeleteNicsRequestBody:
     }
 
     def __init__(self, nics=None):
-        """DeleteNicsRequestBody
+        r"""DeleteNicsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteNicsRequestBody:
 
     @property
     def nics(self):
-        """Gets the nics of this DeleteNicsRequestBody.
+        r"""Gets the nics of this DeleteNicsRequestBody.
 
         待删除网卡信息。
 
@@ -53,7 +53,7 @@ class DeleteNicsRequestBody:
 
     @nics.setter
     def nics(self, nics):
-        """Sets the nics of this DeleteNicsRequestBody.
+        r"""Sets the nics of this DeleteNicsRequestBody.
 
         待删除网卡信息。
 

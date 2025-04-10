@@ -29,7 +29,7 @@ class CheckAuthUsersOfAppRequest:
     }
 
     def __init__(self, app_id=None, instance_id=None, user_name=None):
-        """CheckAuthUsersOfAppRequest
+        r"""CheckAuthUsersOfAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CheckAuthUsersOfAppRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this CheckAuthUsersOfAppRequest.
+        r"""Gets the app_id of this CheckAuthUsersOfAppRequest.
 
         应用ID
 
@@ -66,7 +66,7 @@ class CheckAuthUsersOfAppRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this CheckAuthUsersOfAppRequest.
+        r"""Sets the app_id of this CheckAuthUsersOfAppRequest.
 
         应用ID
 
@@ -77,7 +77,7 @@ class CheckAuthUsersOfAppRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CheckAuthUsersOfAppRequest.
+        r"""Gets the instance_id of this CheckAuthUsersOfAppRequest.
 
         实例ID
 
@@ -88,7 +88,7 @@ class CheckAuthUsersOfAppRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CheckAuthUsersOfAppRequest.
+        r"""Sets the instance_id of this CheckAuthUsersOfAppRequest.
 
         实例ID
 
@@ -99,7 +99,7 @@ class CheckAuthUsersOfAppRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this CheckAuthUsersOfAppRequest.
+        r"""Gets the user_name of this CheckAuthUsersOfAppRequest.
 
         查询应用的指定名称的成员，精确匹配
 
@@ -110,7 +110,7 @@ class CheckAuthUsersOfAppRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this CheckAuthUsersOfAppRequest.
+        r"""Sets the user_name of this CheckAuthUsersOfAppRequest.
 
         查询应用的指定名称的成员，精确匹配
 

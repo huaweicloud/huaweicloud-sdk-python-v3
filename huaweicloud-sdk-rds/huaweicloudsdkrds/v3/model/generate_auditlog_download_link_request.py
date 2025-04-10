@@ -25,7 +25,7 @@ class GenerateAuditlogDownloadLinkRequest:
     }
 
     def __init__(self, ids=None):
-        """GenerateAuditlogDownloadLinkRequest
+        r"""GenerateAuditlogDownloadLinkRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class GenerateAuditlogDownloadLinkRequest:
 
     @property
     def ids(self):
-        """Gets the ids of this GenerateAuditlogDownloadLinkRequest.
+        r"""Gets the ids of this GenerateAuditlogDownloadLinkRequest.
 
         审计日志ID列表，限制50条以内。
 
@@ -53,7 +53,7 @@ class GenerateAuditlogDownloadLinkRequest:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this GenerateAuditlogDownloadLinkRequest.
+        r"""Sets the ids of this GenerateAuditlogDownloadLinkRequest.
 
         审计日志ID列表，限制50条以内。
 

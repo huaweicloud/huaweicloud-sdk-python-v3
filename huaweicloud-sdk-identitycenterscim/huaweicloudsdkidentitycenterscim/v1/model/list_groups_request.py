@@ -27,7 +27,7 @@ class ListGroupsRequest:
     }
 
     def __init__(self, authorization=None, tenant_id=None):
-        """ListGroupsRequest
+        r"""ListGroupsRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListGroupsRequest:
 
     @property
     def authorization(self):
-        """Gets the authorization of this ListGroupsRequest.
+        r"""Gets the authorization of this ListGroupsRequest.
 
         承载令牌
 
@@ -59,7 +59,7 @@ class ListGroupsRequest:
 
     @authorization.setter
     def authorization(self, authorization):
-        """Sets the authorization of this ListGroupsRequest.
+        r"""Sets the authorization of this ListGroupsRequest.
 
         承载令牌
 
@@ -70,7 +70,7 @@ class ListGroupsRequest:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this ListGroupsRequest.
+        r"""Gets the tenant_id of this ListGroupsRequest.
 
         租户的全局唯一标识符（ID）
 
@@ -81,7 +81,7 @@ class ListGroupsRequest:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this ListGroupsRequest.
+        r"""Sets the tenant_id of this ListGroupsRequest.
 
         租户的全局唯一标识符（ID）
 

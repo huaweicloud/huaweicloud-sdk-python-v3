@@ -27,7 +27,7 @@ class CreateChInstanceRequestBodyVolume:
     }
 
     def __init__(self, io_type=None, capacity_in_gb=None):
-        """CreateChInstanceRequestBodyVolume
+        r"""CreateChInstanceRequestBodyVolume
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateChInstanceRequestBodyVolume:
 
     @property
     def io_type(self):
-        """Gets the io_type of this CreateChInstanceRequestBodyVolume.
+        r"""Gets the io_type of this CreateChInstanceRequestBodyVolume.
 
         磁盘IO类型。 取值范围： - SSD：超高IO - ESSD：极速型SSD
 
@@ -59,7 +59,7 @@ class CreateChInstanceRequestBodyVolume:
 
     @io_type.setter
     def io_type(self, io_type):
-        """Sets the io_type of this CreateChInstanceRequestBodyVolume.
+        r"""Sets the io_type of this CreateChInstanceRequestBodyVolume.
 
         磁盘IO类型。 取值范围： - SSD：超高IO - ESSD：极速型SSD
 
@@ -70,7 +70,7 @@ class CreateChInstanceRequestBodyVolume:
 
     @property
     def capacity_in_gb(self):
-        """Gets the capacity_in_gb of this CreateChInstanceRequestBodyVolume.
+        r"""Gets the capacity_in_gb of this CreateChInstanceRequestBodyVolume.
 
         磁盘容量。取值范围：50GB~32000GB。
 
@@ -81,7 +81,7 @@ class CreateChInstanceRequestBodyVolume:
 
     @capacity_in_gb.setter
     def capacity_in_gb(self, capacity_in_gb):
-        """Sets the capacity_in_gb of this CreateChInstanceRequestBodyVolume.
+        r"""Sets the capacity_in_gb of this CreateChInstanceRequestBodyVolume.
 
         磁盘容量。取值范围：50GB~32000GB。
 

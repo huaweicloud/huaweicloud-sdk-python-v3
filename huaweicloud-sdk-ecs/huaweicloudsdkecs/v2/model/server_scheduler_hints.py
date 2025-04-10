@@ -29,7 +29,7 @@ class ServerSchedulerHints:
     }
 
     def __init__(self, group=None, tenancy=None, dedicated_host_id=None):
-        """ServerSchedulerHints
+        r"""ServerSchedulerHints
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ServerSchedulerHints:
 
     @property
     def group(self):
-        """Gets the group of this ServerSchedulerHints.
+        r"""Gets the group of this ServerSchedulerHints.
 
         反亲和性组信息。  UUID格式。
 
@@ -68,7 +68,7 @@ class ServerSchedulerHints:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this ServerSchedulerHints.
+        r"""Sets the group of this ServerSchedulerHints.
 
         反亲和性组信息。  UUID格式。
 
@@ -79,7 +79,7 @@ class ServerSchedulerHints:
 
     @property
     def tenancy(self):
-        """Gets the tenancy of this ServerSchedulerHints.
+        r"""Gets the tenancy of this ServerSchedulerHints.
 
         在专属主机或共享池中创建弹性云服务器。默认为在共享池创建。值为： shared或dedicated。  - shared：表示共享池。 - dedicated:表示专属主机。  创建与查询此值均有效。
 
@@ -90,7 +90,7 @@ class ServerSchedulerHints:
 
     @tenancy.setter
     def tenancy(self, tenancy):
-        """Sets the tenancy of this ServerSchedulerHints.
+        r"""Sets the tenancy of this ServerSchedulerHints.
 
         在专属主机或共享池中创建弹性云服务器。默认为在共享池创建。值为： shared或dedicated。  - shared：表示共享池。 - dedicated:表示专属主机。  创建与查询此值均有效。
 
@@ -101,7 +101,7 @@ class ServerSchedulerHints:
 
     @property
     def dedicated_host_id(self):
-        """Gets the dedicated_host_id of this ServerSchedulerHints.
+        r"""Gets the dedicated_host_id of this ServerSchedulerHints.
 
         专属主机ID。  此属性仅在tenancy值为dedicated时有效。  不指定此属性，系统将自动分配租户可自动放置弹性云服务器的专属主机。  创建与查询此值均有效。
 
@@ -112,7 +112,7 @@ class ServerSchedulerHints:
 
     @dedicated_host_id.setter
     def dedicated_host_id(self, dedicated_host_id):
-        """Sets the dedicated_host_id of this ServerSchedulerHints.
+        r"""Sets the dedicated_host_id of this ServerSchedulerHints.
 
         专属主机ID。  此属性仅在tenancy值为dedicated时有效。  不指定此属性，系统将自动分配租户可自动放置弹性云服务器的专属主机。  创建与查询此值均有效。
 

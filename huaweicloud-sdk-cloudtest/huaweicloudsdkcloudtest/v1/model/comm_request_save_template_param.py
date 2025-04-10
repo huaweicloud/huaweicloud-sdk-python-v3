@@ -25,7 +25,7 @@ class CommRequestSaveTemplateParam:
     }
 
     def __init__(self, params=None):
-        """CommRequestSaveTemplateParam
+        r"""CommRequestSaveTemplateParam
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CommRequestSaveTemplateParam:
 
     @property
     def params(self):
-        """Gets the params of this CommRequestSaveTemplateParam.
+        r"""Gets the params of this CommRequestSaveTemplateParam.
 
         :return: The params of this CommRequestSaveTemplateParam.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.SaveTemplateParam`
@@ -52,7 +52,7 @@ class CommRequestSaveTemplateParam:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this CommRequestSaveTemplateParam.
+        r"""Sets the params of this CommRequestSaveTemplateParam.
 
         :param params: The params of this CommRequestSaveTemplateParam.
         :type params: :class:`huaweicloudsdkcloudtest.v1.SaveTemplateParam`

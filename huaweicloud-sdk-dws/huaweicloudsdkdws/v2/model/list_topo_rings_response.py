@@ -28,7 +28,7 @@ class ListTopoRingsResponse(SdkResponse):
     }
 
     def __init__(self, cluster_rings=None, count=None):
-        """ListTopoRingsResponse
+        r"""ListTopoRingsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListTopoRingsResponse(SdkResponse):
 
     @property
     def cluster_rings(self):
-        """Gets the cluster_rings of this ListTopoRingsResponse.
+        r"""Gets the cluster_rings of this ListTopoRingsResponse.
 
         集群拓扑环列表信息
 
@@ -62,7 +62,7 @@ class ListTopoRingsResponse(SdkResponse):
 
     @cluster_rings.setter
     def cluster_rings(self, cluster_rings):
-        """Sets the cluster_rings of this ListTopoRingsResponse.
+        r"""Sets the cluster_rings of this ListTopoRingsResponse.
 
         集群拓扑环列表信息
 
@@ -73,7 +73,7 @@ class ListTopoRingsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListTopoRingsResponse.
+        r"""Gets the count of this ListTopoRingsResponse.
 
         集群环数量
 
@@ -84,7 +84,7 @@ class ListTopoRingsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListTopoRingsResponse.
+        r"""Sets the count of this ListTopoRingsResponse.
 
         集群环数量
 

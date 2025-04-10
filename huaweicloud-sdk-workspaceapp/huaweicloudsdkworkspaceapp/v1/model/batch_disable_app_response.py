@@ -24,7 +24,7 @@ class BatchDisableAppResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchDisableAppResponse
+        r"""BatchDisableAppResponse
 
         The model defined in huaweicloud sdk
 

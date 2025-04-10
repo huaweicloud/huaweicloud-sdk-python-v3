@@ -29,7 +29,7 @@ class SyncUserJdbcDriverRequest:
     }
 
     def __init__(self, job_id=None, x_language=None, body=None):
-        """SyncUserJdbcDriverRequest
+        r"""SyncUserJdbcDriverRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class SyncUserJdbcDriverRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this SyncUserJdbcDriverRequest.
+        r"""Gets the job_id of this SyncUserJdbcDriverRequest.
 
         任务ID。
 
@@ -67,7 +67,7 @@ class SyncUserJdbcDriverRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this SyncUserJdbcDriverRequest.
+        r"""Sets the job_id of this SyncUserJdbcDriverRequest.
 
         任务ID。
 
@@ -78,7 +78,7 @@ class SyncUserJdbcDriverRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this SyncUserJdbcDriverRequest.
+        r"""Gets the x_language of this SyncUserJdbcDriverRequest.
 
         请求语言类型。
 
@@ -89,7 +89,7 @@ class SyncUserJdbcDriverRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this SyncUserJdbcDriverRequest.
+        r"""Sets the x_language of this SyncUserJdbcDriverRequest.
 
         请求语言类型。
 
@@ -100,7 +100,7 @@ class SyncUserJdbcDriverRequest:
 
     @property
     def body(self):
-        """Gets the body of this SyncUserJdbcDriverRequest.
+        r"""Gets the body of this SyncUserJdbcDriverRequest.
 
         :return: The body of this SyncUserJdbcDriverRequest.
         :rtype: :class:`huaweicloudsdkdrs.v5.UpdateUserDriverReq`
@@ -109,7 +109,7 @@ class SyncUserJdbcDriverRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SyncUserJdbcDriverRequest.
+        r"""Sets the body of this SyncUserJdbcDriverRequest.
 
         :param body: The body of this SyncUserJdbcDriverRequest.
         :type body: :class:`huaweicloudsdkdrs.v5.UpdateUserDriverReq`

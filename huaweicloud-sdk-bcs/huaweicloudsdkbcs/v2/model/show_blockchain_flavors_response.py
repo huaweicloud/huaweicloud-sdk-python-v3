@@ -26,7 +26,7 @@ class ShowBlockchainFlavorsResponse(SdkResponse):
     }
 
     def __init__(self, enterprise_spec=None):
-        """ShowBlockchainFlavorsResponse
+        r"""ShowBlockchainFlavorsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowBlockchainFlavorsResponse(SdkResponse):
 
     @property
     def enterprise_spec(self):
-        """Gets the enterprise_spec of this ShowBlockchainFlavorsResponse.
+        r"""Gets the enterprise_spec of this ShowBlockchainFlavorsResponse.
 
         :return: The enterprise_spec of this ShowBlockchainFlavorsResponse.
         :rtype: :class:`huaweicloudsdkbcs.v2.InstanceSpc`
@@ -53,7 +53,7 @@ class ShowBlockchainFlavorsResponse(SdkResponse):
 
     @enterprise_spec.setter
     def enterprise_spec(self, enterprise_spec):
-        """Sets the enterprise_spec of this ShowBlockchainFlavorsResponse.
+        r"""Sets the enterprise_spec of this ShowBlockchainFlavorsResponse.
 
         :param enterprise_spec: The enterprise_spec of this ShowBlockchainFlavorsResponse.
         :type enterprise_spec: :class:`huaweicloudsdkbcs.v2.InstanceSpc`

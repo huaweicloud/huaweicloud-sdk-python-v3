@@ -25,7 +25,7 @@ class ModifyBandwidthRequestBody:
     }
 
     def __init__(self, bandwidths=None):
-        """ModifyBandwidthRequestBody
+        r"""ModifyBandwidthRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ModifyBandwidthRequestBody:
 
     @property
     def bandwidths(self):
-        """Gets the bandwidths of this ModifyBandwidthRequestBody.
+        r"""Gets the bandwidths of this ModifyBandwidthRequestBody.
 
         更新带宽列表
 
@@ -53,7 +53,7 @@ class ModifyBandwidthRequestBody:
 
     @bandwidths.setter
     def bandwidths(self, bandwidths):
-        """Sets the bandwidths of this ModifyBandwidthRequestBody.
+        r"""Sets the bandwidths of this ModifyBandwidthRequestBody.
 
         更新带宽列表
 

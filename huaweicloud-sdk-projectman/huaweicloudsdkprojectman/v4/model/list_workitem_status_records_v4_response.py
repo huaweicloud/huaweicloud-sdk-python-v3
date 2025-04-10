@@ -28,7 +28,7 @@ class ListWorkitemStatusRecordsV4Response(SdkResponse):
     }
 
     def __init__(self, records=None, total=None):
-        """ListWorkitemStatusRecordsV4Response
+        r"""ListWorkitemStatusRecordsV4Response
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListWorkitemStatusRecordsV4Response(SdkResponse):
 
     @property
     def records(self):
-        """Gets the records of this ListWorkitemStatusRecordsV4Response.
+        r"""Gets the records of this ListWorkitemStatusRecordsV4Response.
 
         操作历史
 
@@ -62,7 +62,7 @@ class ListWorkitemStatusRecordsV4Response(SdkResponse):
 
     @records.setter
     def records(self, records):
-        """Sets the records of this ListWorkitemStatusRecordsV4Response.
+        r"""Sets the records of this ListWorkitemStatusRecordsV4Response.
 
         操作历史
 
@@ -73,7 +73,7 @@ class ListWorkitemStatusRecordsV4Response(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListWorkitemStatusRecordsV4Response.
+        r"""Gets the total of this ListWorkitemStatusRecordsV4Response.
 
         总数
 
@@ -84,7 +84,7 @@ class ListWorkitemStatusRecordsV4Response(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListWorkitemStatusRecordsV4Response.
+        r"""Sets the total of this ListWorkitemStatusRecordsV4Response.
 
         总数
 

@@ -24,7 +24,7 @@ class AttachGroupPolicyV5Response(SdkResponse):
     }
 
     def __init__(self):
-        """AttachGroupPolicyV5Response
+        r"""AttachGroupPolicyV5Response
 
         The model defined in huaweicloud sdk
 

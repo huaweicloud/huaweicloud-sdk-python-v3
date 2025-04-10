@@ -26,7 +26,7 @@ class ShowGraph2Response(SdkResponse):
     }
 
     def __init__(self, graph=None):
-        """ShowGraph2Response
+        r"""ShowGraph2Response
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowGraph2Response(SdkResponse):
 
     @property
     def graph(self):
-        """Gets the graph of this ShowGraph2Response.
+        r"""Gets the graph of this ShowGraph2Response.
 
         :return: The graph of this ShowGraph2Response.
         :rtype: :class:`huaweicloudsdkges.v2.ShowGraphRespGraph`
@@ -53,7 +53,7 @@ class ShowGraph2Response(SdkResponse):
 
     @graph.setter
     def graph(self, graph):
-        """Sets the graph of this ShowGraph2Response.
+        r"""Sets the graph of this ShowGraph2Response.
 
         :param graph: The graph of this ShowGraph2Response.
         :type graph: :class:`huaweicloudsdkges.v2.ShowGraphRespGraph`

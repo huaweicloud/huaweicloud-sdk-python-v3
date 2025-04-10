@@ -35,7 +35,7 @@ class StatisticResourceDataItem:
     }
 
     def __init__(self, time=None, vmr_parties=None, max_concurrency_vmr_count=None, live_port_used_count=None, record_used_size=None, pstn_used_duration=None):
-        """StatisticResourceDataItem
+        r"""StatisticResourceDataItem
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class StatisticResourceDataItem:
 
     @property
     def time(self):
-        """Gets the time of this StatisticResourceDataItem.
+        r"""Gets the time of this StatisticResourceDataItem.
 
         日期/月份。
 
@@ -89,7 +89,7 @@ class StatisticResourceDataItem:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this StatisticResourceDataItem.
+        r"""Sets the time of this StatisticResourceDataItem.
 
         日期/月份。
 
@@ -100,7 +100,7 @@ class StatisticResourceDataItem:
 
     @property
     def vmr_parties(self):
-        """Gets the vmr_parties of this StatisticResourceDataItem.
+        r"""Gets the vmr_parties of this StatisticResourceDataItem.
 
         VMR方数。 category = used_vmr_info时有效。
 
@@ -111,7 +111,7 @@ class StatisticResourceDataItem:
 
     @vmr_parties.setter
     def vmr_parties(self, vmr_parties):
-        """Sets the vmr_parties of this StatisticResourceDataItem.
+        r"""Sets the vmr_parties of this StatisticResourceDataItem.
 
         VMR方数。 category = used_vmr_info时有效。
 
@@ -122,7 +122,7 @@ class StatisticResourceDataItem:
 
     @property
     def max_concurrency_vmr_count(self):
-        """Gets the max_concurrency_vmr_count of this StatisticResourceDataItem.
+        r"""Gets the max_concurrency_vmr_count of this StatisticResourceDataItem.
 
         VMR并发使用数。 category = used_vmr_info时有效。
 
@@ -133,7 +133,7 @@ class StatisticResourceDataItem:
 
     @max_concurrency_vmr_count.setter
     def max_concurrency_vmr_count(self, max_concurrency_vmr_count):
-        """Sets the max_concurrency_vmr_count of this StatisticResourceDataItem.
+        r"""Sets the max_concurrency_vmr_count of this StatisticResourceDataItem.
 
         VMR并发使用数。 category = used_vmr_info时有效。
 
@@ -144,7 +144,7 @@ class StatisticResourceDataItem:
 
     @property
     def live_port_used_count(self):
-        """Gets the live_port_used_count of this StatisticResourceDataItem.
+        r"""Gets the live_port_used_count of this StatisticResourceDataItem.
 
         直播端口并发使用数。 category = used_live_info时有效。
 
@@ -155,7 +155,7 @@ class StatisticResourceDataItem:
 
     @live_port_used_count.setter
     def live_port_used_count(self, live_port_used_count):
-        """Sets the live_port_used_count of this StatisticResourceDataItem.
+        r"""Sets the live_port_used_count of this StatisticResourceDataItem.
 
         直播端口并发使用数。 category = used_live_info时有效。
 
@@ -166,7 +166,7 @@ class StatisticResourceDataItem:
 
     @property
     def record_used_size(self):
-        """Gets the record_used_size of this StatisticResourceDataItem.
+        r"""Gets the record_used_size of this StatisticResourceDataItem.
 
         录播使用空间(G)。 category = used_record_info时有效。
 
@@ -177,7 +177,7 @@ class StatisticResourceDataItem:
 
     @record_used_size.setter
     def record_used_size(self, record_used_size):
-        """Sets the record_used_size of this StatisticResourceDataItem.
+        r"""Sets the record_used_size of this StatisticResourceDataItem.
 
         录播使用空间(G)。 category = used_record_info时有效。
 
@@ -188,7 +188,7 @@ class StatisticResourceDataItem:
 
     @property
     def pstn_used_duration(self):
-        """Gets the pstn_used_duration of this StatisticResourceDataItem.
+        r"""Gets the pstn_used_duration of this StatisticResourceDataItem.
 
         PSTN外呼时长(分钟)。 category = used_pstn_info时有效。
 
@@ -199,7 +199,7 @@ class StatisticResourceDataItem:
 
     @pstn_used_duration.setter
     def pstn_used_duration(self, pstn_used_duration):
-        """Sets the pstn_used_duration of this StatisticResourceDataItem.
+        r"""Sets the pstn_used_duration of this StatisticResourceDataItem.
 
         PSTN外呼时长(分钟)。 category = used_pstn_info时有效。
 

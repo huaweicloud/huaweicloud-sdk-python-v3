@@ -25,7 +25,7 @@ class RestQosRequestDTO:
     }
 
     def __init__(self, users=None):
-        """RestQosRequestDTO
+        r"""RestQosRequestDTO
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RestQosRequestDTO:
 
     @property
     def users(self):
-        """Gets the users of this RestQosRequestDTO.
+        r"""Gets the users of this RestQosRequestDTO.
 
         用户pid 媒体接入类型列表
 
@@ -54,7 +54,7 @@ class RestQosRequestDTO:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this RestQosRequestDTO.
+        r"""Sets the users of this RestQosRequestDTO.
 
         用户pid 媒体接入类型列表
 

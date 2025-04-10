@@ -25,7 +25,7 @@ class UpdateKeyRotationIntervalRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateKeyRotationIntervalRequest
+        r"""UpdateKeyRotationIntervalRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateKeyRotationIntervalRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateKeyRotationIntervalRequest.
+        r"""Gets the body of this UpdateKeyRotationIntervalRequest.
 
         :return: The body of this UpdateKeyRotationIntervalRequest.
         :rtype: :class:`huaweicloudsdkkms.v2.UpdateKeyRotationIntervalRequestBody`
@@ -52,7 +52,7 @@ class UpdateKeyRotationIntervalRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateKeyRotationIntervalRequest.
+        r"""Sets the body of this UpdateKeyRotationIntervalRequest.
 
         :param body: The body of this UpdateKeyRotationIntervalRequest.
         :type body: :class:`huaweicloudsdkkms.v2.UpdateKeyRotationIntervalRequestBody`

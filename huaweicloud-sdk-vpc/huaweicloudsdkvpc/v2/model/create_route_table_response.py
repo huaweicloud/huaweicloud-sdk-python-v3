@@ -26,7 +26,7 @@ class CreateRouteTableResponse(SdkResponse):
     }
 
     def __init__(self, routetable=None):
-        """CreateRouteTableResponse
+        r"""CreateRouteTableResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateRouteTableResponse(SdkResponse):
 
     @property
     def routetable(self):
-        """Gets the routetable of this CreateRouteTableResponse.
+        r"""Gets the routetable of this CreateRouteTableResponse.
 
         :return: The routetable of this CreateRouteTableResponse.
         :rtype: :class:`huaweicloudsdkvpc.v2.RouteTableResp`
@@ -53,7 +53,7 @@ class CreateRouteTableResponse(SdkResponse):
 
     @routetable.setter
     def routetable(self, routetable):
-        """Sets the routetable of this CreateRouteTableResponse.
+        r"""Sets the routetable of this CreateRouteTableResponse.
 
         :param routetable: The routetable of this CreateRouteTableResponse.
         :type routetable: :class:`huaweicloudsdkvpc.v2.RouteTableResp`

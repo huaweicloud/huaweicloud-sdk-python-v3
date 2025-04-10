@@ -39,7 +39,7 @@ class SearchOptionalParam:
     }
 
     def __init__(self, do_det=None, box=None, do_cls=None, category=None, collapse_key=None, max_scan_num=None, nprobe=None, text_lang=None):
-        """SearchOptionalParam
+        r"""SearchOptionalParam
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class SearchOptionalParam:
 
     @property
     def do_det(self):
-        """Gets the do_det of this SearchOptionalParam.
+        r"""Gets the do_det of this SearchOptionalParam.
 
         是否进行目标检测，默认为true。
 
@@ -103,7 +103,7 @@ class SearchOptionalParam:
 
     @do_det.setter
     def do_det(self, do_det):
-        """Sets the do_det of this SearchOptionalParam.
+        r"""Sets the do_det of this SearchOptionalParam.
 
         是否进行目标检测，默认为true。
 
@@ -114,7 +114,7 @@ class SearchOptionalParam:
 
     @property
     def box(self):
-        """Gets the box of this SearchOptionalParam.
+        r"""Gets the box of this SearchOptionalParam.
 
         目标矩形框坐标，如给定则不进行目标检测，直接使用该box作为目标。格式为“x1,y1,x2,y2”（无空格），x1/y1为目标左上角坐标，x2/y2为目标右下角坐标，具体要求如下： - 0 <= x1 < x2 <= width，默认要求x2-x1 >= 15，具体可参考服务类型说明。 - 0 <= y1 < y2 <= height，默认要求y2-y1 >= 15，具体可参考服务类型说明。
 
@@ -125,7 +125,7 @@ class SearchOptionalParam:
 
     @box.setter
     def box(self, box):
-        """Sets the box of this SearchOptionalParam.
+        r"""Sets the box of this SearchOptionalParam.
 
         目标矩形框坐标，如给定则不进行目标检测，直接使用该box作为目标。格式为“x1,y1,x2,y2”（无空格），x1/y1为目标左上角坐标，x2/y2为目标右下角坐标，具体要求如下： - 0 <= x1 < x2 <= width，默认要求x2-x1 >= 15，具体可参考服务类型说明。 - 0 <= y1 < y2 <= height，默认要求y2-y1 >= 15，具体可参考服务类型说明。
 
@@ -136,7 +136,7 @@ class SearchOptionalParam:
 
     @property
     def do_cls(self):
-        """Gets the do_cls of this SearchOptionalParam.
+        r"""Gets the do_cls of this SearchOptionalParam.
 
         是否进行对象分类，默认为true。
 
@@ -147,7 +147,7 @@ class SearchOptionalParam:
 
     @do_cls.setter
     def do_cls(self, do_cls):
-        """Sets the do_cls of this SearchOptionalParam.
+        r"""Sets the do_cls of this SearchOptionalParam.
 
         是否进行对象分类，默认为true。
 
@@ -158,7 +158,7 @@ class SearchOptionalParam:
 
     @property
     def category(self):
-        """Gets the category of this SearchOptionalParam.
+        r"""Gets the category of this SearchOptionalParam.
 
         对象类目，如给定则不进行对象分类，直接使用该category作为类目。具体类目信息可参见对应的服务类型说明。
 
@@ -169,7 +169,7 @@ class SearchOptionalParam:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this SearchOptionalParam.
+        r"""Sets the category of this SearchOptionalParam.
 
         对象类目，如给定则不进行对象分类，直接使用该category作为类目。具体类目信息可参见对应的服务类型说明。
 
@@ -180,7 +180,7 @@ class SearchOptionalParam:
 
     @property
     def collapse_key(self):
-        """Gets the collapse_key of this SearchOptionalParam.
+        r"""Gets the collapse_key of this SearchOptionalParam.
 
         去重标签名，必须为服务实例custom_tags中已存在的key。 - 如给定则会对该key下相同value的数据进行去重，仅保留得分最高的数据。 - 针对没有设置该标签的数据，会直接过滤。
 
@@ -191,7 +191,7 @@ class SearchOptionalParam:
 
     @collapse_key.setter
     def collapse_key(self, collapse_key):
-        """Sets the collapse_key of this SearchOptionalParam.
+        r"""Sets the collapse_key of this SearchOptionalParam.
 
         去重标签名，必须为服务实例custom_tags中已存在的key。 - 如给定则会对该key下相同value的数据进行去重，仅保留得分最高的数据。 - 针对没有设置该标签的数据，会直接过滤。
 
@@ -202,7 +202,7 @@ class SearchOptionalParam:
 
     @property
     def max_scan_num(self):
-        """Gets the max_scan_num of this SearchOptionalParam.
+        r"""Gets the max_scan_num of this SearchOptionalParam.
 
         扫描节点上限。值越大精度越高，查询速度变慢。默认值为10000。
 
@@ -213,7 +213,7 @@ class SearchOptionalParam:
 
     @max_scan_num.setter
     def max_scan_num(self, max_scan_num):
-        """Sets the max_scan_num of this SearchOptionalParam.
+        r"""Sets the max_scan_num of this SearchOptionalParam.
 
         扫描节点上限。值越大精度越高，查询速度变慢。默认值为10000。
 
@@ -224,7 +224,7 @@ class SearchOptionalParam:
 
     @property
     def nprobe(self):
-        """Gets the nprobe of this SearchOptionalParam.
+        r"""Gets the nprobe of this SearchOptionalParam.
 
         查询考察中心点的数目。值越大精度越高，查询速度变慢。默认值为100。
 
@@ -235,7 +235,7 @@ class SearchOptionalParam:
 
     @nprobe.setter
     def nprobe(self, nprobe):
-        """Sets the nprobe of this SearchOptionalParam.
+        r"""Sets the nprobe of this SearchOptionalParam.
 
         查询考察中心点的数目。值越大精度越高，查询速度变慢。默认值为100。
 
@@ -246,7 +246,7 @@ class SearchOptionalParam:
 
     @property
     def text_lang(self):
-        """Gets the text_lang of this SearchOptionalParam.
+        r"""Gets the text_lang of this SearchOptionalParam.
 
         文本字符串的语言类型枚举值。
 
@@ -257,7 +257,7 @@ class SearchOptionalParam:
 
     @text_lang.setter
     def text_lang(self, text_lang):
-        """Sets the text_lang of this SearchOptionalParam.
+        r"""Sets the text_lang of this SearchOptionalParam.
 
         文本字符串的语言类型枚举值。
 

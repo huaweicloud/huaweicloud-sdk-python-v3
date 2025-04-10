@@ -31,7 +31,7 @@ class ListJobsRequest:
     }
 
     def __init__(self, request_id=None, request_ids=None, offset=None, limit=None):
-        """ListJobsRequest
+        r"""ListJobsRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListJobsRequest:
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListJobsRequest.
+        r"""Gets the request_id of this ListJobsRequest.
 
         任务下发请求时响应的request_id。 request_id和request_ids必须指定其中一个。request_id和request_ids同时指定的时候，以request_ids为准。
 
@@ -75,7 +75,7 @@ class ListJobsRequest:
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListJobsRequest.
+        r"""Sets the request_id of this ListJobsRequest.
 
         任务下发请求时响应的request_id。 request_id和request_ids必须指定其中一个。request_id和request_ids同时指定的时候，以request_ids为准。
 
@@ -86,7 +86,7 @@ class ListJobsRequest:
 
     @property
     def request_ids(self):
-        """Gets the request_ids of this ListJobsRequest.
+        r"""Gets the request_ids of this ListJobsRequest.
 
         任务下发请求时响应的多个request_id，用逗号分隔，最多不能超过20个。 request_id和request_ids必须指定其中一个。request_id和request_ids同时指定的时候，以request_ids为准。
 
@@ -97,7 +97,7 @@ class ListJobsRequest:
 
     @request_ids.setter
     def request_ids(self, request_ids):
-        """Sets the request_ids of this ListJobsRequest.
+        r"""Sets the request_ids of this ListJobsRequest.
 
         任务下发请求时响应的多个request_id，用逗号分隔，最多不能超过20个。 request_id和request_ids必须指定其中一个。request_id和request_ids同时指定的时候，以request_ids为准。
 
@@ -108,7 +108,7 @@ class ListJobsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListJobsRequest.
+        r"""Gets the offset of this ListJobsRequest.
 
         偏移量为一个大于等于0整数，表示查询该偏移量后面的所有的资源数，默认值为0。
 
@@ -119,7 +119,7 @@ class ListJobsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListJobsRequest.
+        r"""Sets the offset of this ListJobsRequest.
 
         偏移量为一个大于等于0整数，表示查询该偏移量后面的所有的资源数，默认值为0。
 
@@ -130,7 +130,7 @@ class ListJobsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListJobsRequest.
+        r"""Gets the limit of this ListJobsRequest.
 
         每页返回的资源个数。取值范围：1~100（默认值为100），一般设置为10、20、50。
 
@@ -141,7 +141,7 @@ class ListJobsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListJobsRequest.
+        r"""Sets the limit of this ListJobsRequest.
 
         每页返回的资源个数。取值范围：1~100（默认值为100），一般设置为10、20、50。
 

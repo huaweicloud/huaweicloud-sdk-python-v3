@@ -27,7 +27,7 @@ class DeleteCloudWafPostPaidResourceRequest:
     }
 
     def __init__(self, region=None, enterprise_project_id=None):
-        """DeleteCloudWafPostPaidResourceRequest
+        r"""DeleteCloudWafPostPaidResourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DeleteCloudWafPostPaidResourceRequest:
 
     @property
     def region(self):
-        """Gets the region of this DeleteCloudWafPostPaidResourceRequest.
+        r"""Gets the region of this DeleteCloudWafPostPaidResourceRequest.
 
         区域id
 
@@ -61,7 +61,7 @@ class DeleteCloudWafPostPaidResourceRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this DeleteCloudWafPostPaidResourceRequest.
+        r"""Sets the region of this DeleteCloudWafPostPaidResourceRequest.
 
         区域id
 
@@ -72,7 +72,7 @@ class DeleteCloudWafPostPaidResourceRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this DeleteCloudWafPostPaidResourceRequest.
+        r"""Gets the enterprise_project_id of this DeleteCloudWafPostPaidResourceRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -83,7 +83,7 @@ class DeleteCloudWafPostPaidResourceRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this DeleteCloudWafPostPaidResourceRequest.
+        r"""Sets the enterprise_project_id of this DeleteCloudWafPostPaidResourceRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 

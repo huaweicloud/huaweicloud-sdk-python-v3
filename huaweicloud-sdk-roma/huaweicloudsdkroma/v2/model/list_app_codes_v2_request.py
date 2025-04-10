@@ -31,7 +31,7 @@ class ListAppCodesV2Request:
     }
 
     def __init__(self, instance_id=None, app_id=None, offset=None, limit=None):
-        """ListAppCodesV2Request
+        r"""ListAppCodesV2Request
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListAppCodesV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListAppCodesV2Request.
+        r"""Gets the instance_id of this ListAppCodesV2Request.
 
         实例ID
 
@@ -73,7 +73,7 @@ class ListAppCodesV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListAppCodesV2Request.
+        r"""Sets the instance_id of this ListAppCodesV2Request.
 
         实例ID
 
@@ -84,7 +84,7 @@ class ListAppCodesV2Request:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ListAppCodesV2Request.
+        r"""Gets the app_id of this ListAppCodesV2Request.
 
         应用编号
 
@@ -95,7 +95,7 @@ class ListAppCodesV2Request:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ListAppCodesV2Request.
+        r"""Sets the app_id of this ListAppCodesV2Request.
 
         应用编号
 
@@ -106,7 +106,7 @@ class ListAppCodesV2Request:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAppCodesV2Request.
+        r"""Gets the offset of this ListAppCodesV2Request.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -117,7 +117,7 @@ class ListAppCodesV2Request:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAppCodesV2Request.
+        r"""Sets the offset of this ListAppCodesV2Request.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -128,7 +128,7 @@ class ListAppCodesV2Request:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAppCodesV2Request.
+        r"""Gets the limit of this ListAppCodesV2Request.
 
         每页显示的条目数量
 
@@ -139,7 +139,7 @@ class ListAppCodesV2Request:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAppCodesV2Request.
+        r"""Sets the limit of this ListAppCodesV2Request.
 
         每页显示的条目数量
 

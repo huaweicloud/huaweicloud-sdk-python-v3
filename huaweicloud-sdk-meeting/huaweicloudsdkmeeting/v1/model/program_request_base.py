@@ -25,7 +25,7 @@ class ProgramRequestBase:
     }
 
     def __init__(self, program_name=None):
-        """ProgramRequestBase
+        r"""ProgramRequestBase
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ProgramRequestBase:
 
     @property
     def program_name(self):
-        """Gets the program_name of this ProgramRequestBase.
+        r"""Gets the program_name of this ProgramRequestBase.
 
         节目名称。
 
@@ -53,7 +53,7 @@ class ProgramRequestBase:
 
     @program_name.setter
     def program_name(self, program_name):
-        """Sets the program_name of this ProgramRequestBase.
+        r"""Sets the program_name of this ProgramRequestBase.
 
         节目名称。
 

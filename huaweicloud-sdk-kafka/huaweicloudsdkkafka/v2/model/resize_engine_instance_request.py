@@ -29,7 +29,7 @@ class ResizeEngineInstanceRequest:
     }
 
     def __init__(self, engine=None, instance_id=None, body=None):
-        """ResizeEngineInstanceRequest
+        r"""ResizeEngineInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ResizeEngineInstanceRequest:
 
     @property
     def engine(self):
-        """Gets the engine of this ResizeEngineInstanceRequest.
+        r"""Gets the engine of this ResizeEngineInstanceRequest.
 
         消息引擎。
 
@@ -66,7 +66,7 @@ class ResizeEngineInstanceRequest:
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this ResizeEngineInstanceRequest.
+        r"""Sets the engine of this ResizeEngineInstanceRequest.
 
         消息引擎。
 
@@ -77,7 +77,7 @@ class ResizeEngineInstanceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ResizeEngineInstanceRequest.
+        r"""Gets the instance_id of this ResizeEngineInstanceRequest.
 
         实例ID。
 
@@ -88,7 +88,7 @@ class ResizeEngineInstanceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ResizeEngineInstanceRequest.
+        r"""Sets the instance_id of this ResizeEngineInstanceRequest.
 
         实例ID。
 
@@ -99,7 +99,7 @@ class ResizeEngineInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this ResizeEngineInstanceRequest.
+        r"""Gets the body of this ResizeEngineInstanceRequest.
 
         :return: The body of this ResizeEngineInstanceRequest.
         :rtype: :class:`huaweicloudsdkkafka.v2.ResizeEngineInstanceReq`
@@ -108,7 +108,7 @@ class ResizeEngineInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ResizeEngineInstanceRequest.
+        r"""Sets the body of this ResizeEngineInstanceRequest.
 
         :param body: The body of this ResizeEngineInstanceRequest.
         :type body: :class:`huaweicloudsdkkafka.v2.ResizeEngineInstanceReq`

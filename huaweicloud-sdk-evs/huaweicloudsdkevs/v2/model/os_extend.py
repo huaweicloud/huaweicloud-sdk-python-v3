@@ -25,7 +25,7 @@ class OsExtend:
     }
 
     def __init__(self, new_size=None):
-        """OsExtend
+        r"""OsExtend
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class OsExtend:
 
     @property
     def new_size(self):
-        """Gets the new_size of this OsExtend.
+        r"""Gets the new_size of this OsExtend.
 
         扩容后的云硬盘大小，单位为GB。扩容的大小必须大于原有云硬盘容量且小于云硬盘最大容量。 云硬盘最大容量： * 数据盘：32768GB * 系统盘：1024GB
 
@@ -53,7 +53,7 @@ class OsExtend:
 
     @new_size.setter
     def new_size(self, new_size):
-        """Sets the new_size of this OsExtend.
+        r"""Sets the new_size of this OsExtend.
 
         扩容后的云硬盘大小，单位为GB。扩容的大小必须大于原有云硬盘容量且小于云硬盘最大容量。 云硬盘最大容量： * 数据盘：32768GB * 系统盘：1024GB
 

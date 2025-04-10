@@ -26,7 +26,7 @@ class CreateSubjectNewResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """CreateSubjectNewResponse
+        r"""CreateSubjectNewResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateSubjectNewResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this CreateSubjectNewResponse.
+        r"""Gets the data of this CreateSubjectNewResponse.
 
         :return: The data of this CreateSubjectNewResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateSubjectResultData`
@@ -53,7 +53,7 @@ class CreateSubjectNewResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this CreateSubjectNewResponse.
+        r"""Sets the data of this CreateSubjectNewResponse.
 
         :param data: The data of this CreateSubjectNewResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.CreateSubjectResultData`

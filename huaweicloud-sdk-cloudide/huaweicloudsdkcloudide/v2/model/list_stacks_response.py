@@ -28,7 +28,7 @@ class ListStacksResponse(SdkResponse):
     }
 
     def __init__(self, stack=None, status=None):
-        """ListStacksResponse
+        r"""ListStacksResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListStacksResponse(SdkResponse):
 
     @property
     def stack(self):
-        """Gets the stack of this ListStacksResponse.
+        r"""Gets the stack of this ListStacksResponse.
 
         :return: The stack of this ListStacksResponse.
         :rtype: :class:`huaweicloudsdkcloudide.v2.StacksTags`
@@ -60,7 +60,7 @@ class ListStacksResponse(SdkResponse):
 
     @stack.setter
     def stack(self, stack):
-        """Sets the stack of this ListStacksResponse.
+        r"""Sets the stack of this ListStacksResponse.
 
         :param stack: The stack of this ListStacksResponse.
         :type stack: :class:`huaweicloudsdkcloudide.v2.StacksTags`
@@ -69,7 +69,7 @@ class ListStacksResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListStacksResponse.
+        r"""Gets the status of this ListStacksResponse.
 
         状态
 
@@ -80,7 +80,7 @@ class ListStacksResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListStacksResponse.
+        r"""Sets the status of this ListStacksResponse.
 
         状态
 

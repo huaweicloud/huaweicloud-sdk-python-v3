@@ -29,7 +29,7 @@ class StopOrStartNotebookRequest:
     }
 
     def __init__(self, eihealth_project_id=None, notebook_id=None, body=None):
-        """StopOrStartNotebookRequest
+        r"""StopOrStartNotebookRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class StopOrStartNotebookRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this StopOrStartNotebookRequest.
+        r"""Gets the eihealth_project_id of this StopOrStartNotebookRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -66,7 +66,7 @@ class StopOrStartNotebookRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this StopOrStartNotebookRequest.
+        r"""Sets the eihealth_project_id of this StopOrStartNotebookRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -77,7 +77,7 @@ class StopOrStartNotebookRequest:
 
     @property
     def notebook_id(self):
-        """Gets the notebook_id of this StopOrStartNotebookRequest.
+        r"""Gets the notebook_id of this StopOrStartNotebookRequest.
 
         notebook id
 
@@ -88,7 +88,7 @@ class StopOrStartNotebookRequest:
 
     @notebook_id.setter
     def notebook_id(self, notebook_id):
-        """Sets the notebook_id of this StopOrStartNotebookRequest.
+        r"""Sets the notebook_id of this StopOrStartNotebookRequest.
 
         notebook id
 
@@ -99,7 +99,7 @@ class StopOrStartNotebookRequest:
 
     @property
     def body(self):
-        """Gets the body of this StopOrStartNotebookRequest.
+        r"""Gets the body of this StopOrStartNotebookRequest.
 
         :return: The body of this StopOrStartNotebookRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.NotebookActionReq`
@@ -108,7 +108,7 @@ class StopOrStartNotebookRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StopOrStartNotebookRequest.
+        r"""Sets the body of this StopOrStartNotebookRequest.
 
         :param body: The body of this StopOrStartNotebookRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.NotebookActionReq`

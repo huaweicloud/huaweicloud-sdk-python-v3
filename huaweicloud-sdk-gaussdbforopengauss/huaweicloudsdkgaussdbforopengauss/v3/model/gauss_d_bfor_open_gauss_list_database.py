@@ -37,7 +37,7 @@ class GaussDBforOpenGaussListDatabase:
     }
 
     def __init__(self, name=None, owner=None, character_set=None, collate_set=None, size=None, datctype=None, compatibility_type=None):
-        """GaussDBforOpenGaussListDatabase
+        r"""GaussDBforOpenGaussListDatabase
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class GaussDBforOpenGaussListDatabase:
 
     @property
     def name(self):
-        """Gets the name of this GaussDBforOpenGaussListDatabase.
+        r"""Gets the name of this GaussDBforOpenGaussListDatabase.
 
         数据库名称。
 
@@ -96,7 +96,7 @@ class GaussDBforOpenGaussListDatabase:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GaussDBforOpenGaussListDatabase.
+        r"""Sets the name of this GaussDBforOpenGaussListDatabase.
 
         数据库名称。
 
@@ -107,7 +107,7 @@ class GaussDBforOpenGaussListDatabase:
 
     @property
     def owner(self):
-        """Gets the owner of this GaussDBforOpenGaussListDatabase.
+        r"""Gets the owner of this GaussDBforOpenGaussListDatabase.
 
         数据库所属用户。
 
@@ -118,7 +118,7 @@ class GaussDBforOpenGaussListDatabase:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this GaussDBforOpenGaussListDatabase.
+        r"""Sets the owner of this GaussDBforOpenGaussListDatabase.
 
         数据库所属用户。
 
@@ -129,7 +129,7 @@ class GaussDBforOpenGaussListDatabase:
 
     @property
     def character_set(self):
-        """Gets the character_set of this GaussDBforOpenGaussListDatabase.
+        r"""Gets the character_set of this GaussDBforOpenGaussListDatabase.
 
         数据库使用的字符集，例如UTF8。
 
@@ -140,7 +140,7 @@ class GaussDBforOpenGaussListDatabase:
 
     @character_set.setter
     def character_set(self, character_set):
-        """Sets the character_set of this GaussDBforOpenGaussListDatabase.
+        r"""Sets the character_set of this GaussDBforOpenGaussListDatabase.
 
         数据库使用的字符集，例如UTF8。
 
@@ -151,7 +151,7 @@ class GaussDBforOpenGaussListDatabase:
 
     @property
     def collate_set(self):
-        """Gets the collate_set of this GaussDBforOpenGaussListDatabase.
+        r"""Gets the collate_set of this GaussDBforOpenGaussListDatabase.
 
         数据库排序集，例如en_US.UTF-8等。
 
@@ -162,7 +162,7 @@ class GaussDBforOpenGaussListDatabase:
 
     @collate_set.setter
     def collate_set(self, collate_set):
-        """Sets the collate_set of this GaussDBforOpenGaussListDatabase.
+        r"""Sets the collate_set of this GaussDBforOpenGaussListDatabase.
 
         数据库排序集，例如en_US.UTF-8等。
 
@@ -173,7 +173,7 @@ class GaussDBforOpenGaussListDatabase:
 
     @property
     def size(self):
-        """Gets the size of this GaussDBforOpenGaussListDatabase.
+        r"""Gets the size of this GaussDBforOpenGaussListDatabase.
 
         数据库大小（单位：MB）。
 
@@ -184,7 +184,7 @@ class GaussDBforOpenGaussListDatabase:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this GaussDBforOpenGaussListDatabase.
+        r"""Sets the size of this GaussDBforOpenGaussListDatabase.
 
         数据库大小（单位：MB）。
 
@@ -195,7 +195,7 @@ class GaussDBforOpenGaussListDatabase:
 
     @property
     def datctype(self):
-        """Gets the datctype of this GaussDBforOpenGaussListDatabase.
+        r"""Gets the datctype of this GaussDBforOpenGaussListDatabase.
 
         数据库使用的字符分类，例如en_US.UTF-8等。
 
@@ -206,7 +206,7 @@ class GaussDBforOpenGaussListDatabase:
 
     @datctype.setter
     def datctype(self, datctype):
-        """Sets the datctype of this GaussDBforOpenGaussListDatabase.
+        r"""Sets the datctype of this GaussDBforOpenGaussListDatabase.
 
         数据库使用的字符分类，例如en_US.UTF-8等。
 
@@ -217,7 +217,7 @@ class GaussDBforOpenGaussListDatabase:
 
     @property
     def compatibility_type(self):
-        """Gets the compatibility_type of this GaussDBforOpenGaussListDatabase.
+        r"""Gets the compatibility_type of this GaussDBforOpenGaussListDatabase.
 
         数据库兼容的类型，如GaussDB，M。
 
@@ -228,7 +228,7 @@ class GaussDBforOpenGaussListDatabase:
 
     @compatibility_type.setter
     def compatibility_type(self, compatibility_type):
-        """Sets the compatibility_type of this GaussDBforOpenGaussListDatabase.
+        r"""Sets the compatibility_type of this GaussDBforOpenGaussListDatabase.
 
         数据库兼容的类型，如GaussDB，M。
 

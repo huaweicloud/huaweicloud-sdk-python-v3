@@ -31,7 +31,7 @@ class BatchCreateTagsRequest:
     }
 
     def __init__(self, resource_type=None, x_language=None, resource_id=None, body=None):
-        """BatchCreateTagsRequest
+        r"""BatchCreateTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class BatchCreateTagsRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this BatchCreateTagsRequest.
+        r"""Gets the resource_type of this BatchCreateTagsRequest.
 
         资源类型。 - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备 - subscription：数据订阅 - backupMigration：备份迁移 - replay：录制回放
 
@@ -73,7 +73,7 @@ class BatchCreateTagsRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this BatchCreateTagsRequest.
+        r"""Sets the resource_type of this BatchCreateTagsRequest.
 
         资源类型。 - migration：实时迁移 - sync：实时同步 - cloudDataGuard：实时灾备 - subscription：数据订阅 - backupMigration：备份迁移 - replay：录制回放
 
@@ -84,7 +84,7 @@ class BatchCreateTagsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this BatchCreateTagsRequest.
+        r"""Gets the x_language of this BatchCreateTagsRequest.
 
         请求语言类型。
 
@@ -95,7 +95,7 @@ class BatchCreateTagsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this BatchCreateTagsRequest.
+        r"""Sets the x_language of this BatchCreateTagsRequest.
 
         请求语言类型。
 
@@ -106,7 +106,7 @@ class BatchCreateTagsRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this BatchCreateTagsRequest.
+        r"""Gets the resource_id of this BatchCreateTagsRequest.
 
         资源ID，即DRS任务ID。
 
@@ -117,7 +117,7 @@ class BatchCreateTagsRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this BatchCreateTagsRequest.
+        r"""Sets the resource_id of this BatchCreateTagsRequest.
 
         资源ID，即DRS任务ID。
 
@@ -128,7 +128,7 @@ class BatchCreateTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateTagsRequest.
+        r"""Gets the body of this BatchCreateTagsRequest.
 
         :return: The body of this BatchCreateTagsRequest.
         :rtype: :class:`huaweicloudsdkdrs.v5.BatchAddTagReq`
@@ -137,7 +137,7 @@ class BatchCreateTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateTagsRequest.
+        r"""Sets the body of this BatchCreateTagsRequest.
 
         :param body: The body of this BatchCreateTagsRequest.
         :type body: :class:`huaweicloudsdkdrs.v5.BatchAddTagReq`

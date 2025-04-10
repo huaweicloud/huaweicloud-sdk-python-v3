@@ -30,7 +30,7 @@ class ShowProjectTraceResponse(SdkResponse):
     }
 
     def __init__(self, count=None, datas=None, bucket_size=None):
-        """ShowProjectTraceResponse
+        r"""ShowProjectTraceResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowProjectTraceResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowProjectTraceResponse.
+        r"""Gets the count of this ShowProjectTraceResponse.
 
         数据对象（目录，文件）总数量
 
@@ -69,7 +69,7 @@ class ShowProjectTraceResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowProjectTraceResponse.
+        r"""Sets the count of this ShowProjectTraceResponse.
 
         数据对象（目录，文件）总数量
 
@@ -80,7 +80,7 @@ class ShowProjectTraceResponse(SdkResponse):
 
     @property
     def datas(self):
-        """Gets the datas of this ShowProjectTraceResponse.
+        r"""Gets the datas of this ShowProjectTraceResponse.
 
         数据对象列表
 
@@ -91,7 +91,7 @@ class ShowProjectTraceResponse(SdkResponse):
 
     @datas.setter
     def datas(self, datas):
-        """Sets the datas of this ShowProjectTraceResponse.
+        r"""Sets the datas of this ShowProjectTraceResponse.
 
         数据对象列表
 
@@ -102,7 +102,7 @@ class ShowProjectTraceResponse(SdkResponse):
 
     @property
     def bucket_size(self):
-        """Gets the bucket_size of this ShowProjectTraceResponse.
+        r"""Gets the bucket_size of this ShowProjectTraceResponse.
 
         桶存量
 
@@ -113,7 +113,7 @@ class ShowProjectTraceResponse(SdkResponse):
 
     @bucket_size.setter
     def bucket_size(self, bucket_size):
-        """Sets the bucket_size of this ShowProjectTraceResponse.
+        r"""Sets the bucket_size of this ShowProjectTraceResponse.
 
         桶存量
 

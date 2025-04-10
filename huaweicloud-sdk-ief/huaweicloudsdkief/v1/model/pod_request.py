@@ -31,7 +31,7 @@ class PodRequest:
     }
 
     def __init__(self, configs=None, affinity=None, init_containers=None, containers=None):
-        """PodRequest
+        r"""PodRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class PodRequest:
 
     @property
     def configs(self):
-        """Gets the configs of this PodRequest.
+        r"""Gets the configs of this PodRequest.
 
         :return: The configs of this PodRequest.
         :rtype: :class:`huaweicloudsdkief.v1.PodConfigs`
@@ -71,7 +71,7 @@ class PodRequest:
 
     @configs.setter
     def configs(self, configs):
-        """Sets the configs of this PodRequest.
+        r"""Sets the configs of this PodRequest.
 
         :param configs: The configs of this PodRequest.
         :type configs: :class:`huaweicloudsdkief.v1.PodConfigs`
@@ -80,7 +80,7 @@ class PodRequest:
 
     @property
     def affinity(self):
-        """Gets the affinity of this PodRequest.
+        r"""Gets the affinity of this PodRequest.
 
         :return: The affinity of this PodRequest.
         :rtype: :class:`huaweicloudsdkief.v1.Affinity`
@@ -89,7 +89,7 @@ class PodRequest:
 
     @affinity.setter
     def affinity(self, affinity):
-        """Sets the affinity of this PodRequest.
+        r"""Sets the affinity of this PodRequest.
 
         :param affinity: The affinity of this PodRequest.
         :type affinity: :class:`huaweicloudsdkief.v1.Affinity`
@@ -98,7 +98,7 @@ class PodRequest:
 
     @property
     def init_containers(self):
-        """Gets the init_containers of this PodRequest.
+        r"""Gets the init_containers of this PodRequest.
 
         应用部署init业务容器
 
@@ -109,7 +109,7 @@ class PodRequest:
 
     @init_containers.setter
     def init_containers(self, init_containers):
-        """Sets the init_containers of this PodRequest.
+        r"""Sets the init_containers of this PodRequest.
 
         应用部署init业务容器
 
@@ -120,7 +120,7 @@ class PodRequest:
 
     @property
     def containers(self):
-        """Gets the containers of this PodRequest.
+        r"""Gets the containers of this PodRequest.
 
         应用部署业务容器
 
@@ -131,7 +131,7 @@ class PodRequest:
 
     @containers.setter
     def containers(self, containers):
-        """Sets the containers of this PodRequest.
+        r"""Sets the containers of this PodRequest.
 
         应用部署业务容器
 

@@ -37,7 +37,7 @@ class AttachWikiDetail:
     }
 
     def __init__(self, issue_id=None, wiki_title=None, wiki_author=None, project=None, created_date=None, wiki_id=None, region=None):
-        """AttachWikiDetail
+        r"""AttachWikiDetail
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class AttachWikiDetail:
 
     @property
     def issue_id(self):
-        """Gets the issue_id of this AttachWikiDetail.
+        r"""Gets the issue_id of this AttachWikiDetail.
 
         工作项ID
 
@@ -96,7 +96,7 @@ class AttachWikiDetail:
 
     @issue_id.setter
     def issue_id(self, issue_id):
-        """Sets the issue_id of this AttachWikiDetail.
+        r"""Sets the issue_id of this AttachWikiDetail.
 
         工作项ID
 
@@ -107,7 +107,7 @@ class AttachWikiDetail:
 
     @property
     def wiki_title(self):
-        """Gets the wiki_title of this AttachWikiDetail.
+        r"""Gets the wiki_title of this AttachWikiDetail.
 
         Wiki标题
 
@@ -118,7 +118,7 @@ class AttachWikiDetail:
 
     @wiki_title.setter
     def wiki_title(self, wiki_title):
-        """Sets the wiki_title of this AttachWikiDetail.
+        r"""Sets the wiki_title of this AttachWikiDetail.
 
         Wiki标题
 
@@ -129,7 +129,7 @@ class AttachWikiDetail:
 
     @property
     def wiki_author(self):
-        """Gets the wiki_author of this AttachWikiDetail.
+        r"""Gets the wiki_author of this AttachWikiDetail.
 
         :return: The wiki_author of this AttachWikiDetail.
         :rtype: :class:`huaweicloudsdkprojectman.v4.SimpleUser`
@@ -138,7 +138,7 @@ class AttachWikiDetail:
 
     @wiki_author.setter
     def wiki_author(self, wiki_author):
-        """Sets the wiki_author of this AttachWikiDetail.
+        r"""Sets the wiki_author of this AttachWikiDetail.
 
         :param wiki_author: The wiki_author of this AttachWikiDetail.
         :type wiki_author: :class:`huaweicloudsdkprojectman.v4.SimpleUser`
@@ -147,7 +147,7 @@ class AttachWikiDetail:
 
     @property
     def project(self):
-        """Gets the project of this AttachWikiDetail.
+        r"""Gets the project of this AttachWikiDetail.
 
         :return: The project of this AttachWikiDetail.
         :rtype: :class:`huaweicloudsdkprojectman.v4.SimpleProject`
@@ -156,7 +156,7 @@ class AttachWikiDetail:
 
     @project.setter
     def project(self, project):
-        """Sets the project of this AttachWikiDetail.
+        r"""Sets the project of this AttachWikiDetail.
 
         :param project: The project of this AttachWikiDetail.
         :type project: :class:`huaweicloudsdkprojectman.v4.SimpleProject`
@@ -165,7 +165,7 @@ class AttachWikiDetail:
 
     @property
     def created_date(self):
-        """Gets the created_date of this AttachWikiDetail.
+        r"""Gets the created_date of this AttachWikiDetail.
 
         创建时间
 
@@ -176,7 +176,7 @@ class AttachWikiDetail:
 
     @created_date.setter
     def created_date(self, created_date):
-        """Sets the created_date of this AttachWikiDetail.
+        r"""Sets the created_date of this AttachWikiDetail.
 
         创建时间
 
@@ -187,7 +187,7 @@ class AttachWikiDetail:
 
     @property
     def wiki_id(self):
-        """Gets the wiki_id of this AttachWikiDetail.
+        r"""Gets the wiki_id of this AttachWikiDetail.
 
         wiki ID
 
@@ -198,7 +198,7 @@ class AttachWikiDetail:
 
     @wiki_id.setter
     def wiki_id(self, wiki_id):
-        """Sets the wiki_id of this AttachWikiDetail.
+        r"""Sets the wiki_id of this AttachWikiDetail.
 
         wiki ID
 
@@ -209,7 +209,7 @@ class AttachWikiDetail:
 
     @property
     def region(self):
-        """Gets the region of this AttachWikiDetail.
+        r"""Gets the region of this AttachWikiDetail.
 
         region值
 
@@ -220,7 +220,7 @@ class AttachWikiDetail:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this AttachWikiDetail.
+        r"""Sets the region of this AttachWikiDetail.
 
         region值
 

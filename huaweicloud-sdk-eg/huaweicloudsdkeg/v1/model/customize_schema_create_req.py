@@ -33,7 +33,7 @@ class CustomizeSchemaCreateReq:
     }
 
     def __init__(self, name=None, description=None, compatibility=None, format=None, definition=None):
-        """CustomizeSchemaCreateReq
+        r"""CustomizeSchemaCreateReq
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class CustomizeSchemaCreateReq:
 
     @property
     def name(self):
-        """Gets the name of this CustomizeSchemaCreateReq.
+        r"""Gets the name of this CustomizeSchemaCreateReq.
 
         事件模型名称，租户下唯一，由字母、数字、点、下划线和中划线组成，必须字母或数字开头
 
@@ -79,7 +79,7 @@ class CustomizeSchemaCreateReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CustomizeSchemaCreateReq.
+        r"""Sets the name of this CustomizeSchemaCreateReq.
 
         事件模型名称，租户下唯一，由字母、数字、点、下划线和中划线组成，必须字母或数字开头
 
@@ -90,7 +90,7 @@ class CustomizeSchemaCreateReq:
 
     @property
     def description(self):
-        """Gets the description of this CustomizeSchemaCreateReq.
+        r"""Gets the description of this CustomizeSchemaCreateReq.
 
         事件模型描述
 
@@ -101,7 +101,7 @@ class CustomizeSchemaCreateReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CustomizeSchemaCreateReq.
+        r"""Sets the description of this CustomizeSchemaCreateReq.
 
         事件模型描述
 
@@ -112,7 +112,7 @@ class CustomizeSchemaCreateReq:
 
     @property
     def compatibility(self):
-        """Gets the compatibility of this CustomizeSchemaCreateReq.
+        r"""Gets the compatibility of this CustomizeSchemaCreateReq.
 
         事件模型兼容性
 
@@ -123,7 +123,7 @@ class CustomizeSchemaCreateReq:
 
     @compatibility.setter
     def compatibility(self, compatibility):
-        """Sets the compatibility of this CustomizeSchemaCreateReq.
+        r"""Sets the compatibility of this CustomizeSchemaCreateReq.
 
         事件模型兼容性
 
@@ -134,7 +134,7 @@ class CustomizeSchemaCreateReq:
 
     @property
     def format(self):
-        """Gets the format of this CustomizeSchemaCreateReq.
+        r"""Gets the format of this CustomizeSchemaCreateReq.
 
         schema内容格式
 
@@ -145,7 +145,7 @@ class CustomizeSchemaCreateReq:
 
     @format.setter
     def format(self, format):
-        """Sets the format of this CustomizeSchemaCreateReq.
+        r"""Sets the format of this CustomizeSchemaCreateReq.
 
         schema内容格式
 
@@ -156,7 +156,7 @@ class CustomizeSchemaCreateReq:
 
     @property
     def definition(self):
-        """Gets the definition of this CustomizeSchemaCreateReq.
+        r"""Gets the definition of this CustomizeSchemaCreateReq.
 
         事件模型内容定义
 
@@ -167,7 +167,7 @@ class CustomizeSchemaCreateReq:
 
     @definition.setter
     def definition(self, definition):
-        """Sets the definition of this CustomizeSchemaCreateReq.
+        r"""Sets the definition of this CustomizeSchemaCreateReq.
 
         事件模型内容定义
 

@@ -37,7 +37,7 @@ class EndpointInput:
     }
 
     def __init__(self, name=None, description=None, type=None, reserved_resource=None, ray_resource=None, cap=None, log_config=None):
-        """EndpointInput
+        r"""EndpointInput
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class EndpointInput:
 
     @property
     def name(self):
-        """Gets the name of this EndpointInput.
+        r"""Gets the name of this EndpointInput.
 
         一个Endpoint名称，只能包含中文、字母、数字、下划线、中划线、点、空格
 
@@ -94,7 +94,7 @@ class EndpointInput:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EndpointInput.
+        r"""Sets the name of this EndpointInput.
 
         一个Endpoint名称，只能包含中文、字母、数字、下划线、中划线、点、空格
 
@@ -105,7 +105,7 @@ class EndpointInput:
 
     @property
     def description(self):
-        """Gets the description of this EndpointInput.
+        r"""Gets the description of this EndpointInput.
 
         描述信息
 
@@ -116,7 +116,7 @@ class EndpointInput:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EndpointInput.
+        r"""Sets the description of this EndpointInput.
 
         描述信息
 
@@ -127,7 +127,7 @@ class EndpointInput:
 
     @property
     def type(self):
-        """Gets the type of this EndpointInput.
+        r"""Gets the type of this EndpointInput.
 
         :return: The type of this EndpointInput.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.EndpointType`
@@ -136,7 +136,7 @@ class EndpointInput:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this EndpointInput.
+        r"""Sets the type of this EndpointInput.
 
         :param type: The type of this EndpointInput.
         :type type: :class:`huaweicloudsdkdataartsfabric.v1.EndpointType`
@@ -145,7 +145,7 @@ class EndpointInput:
 
     @property
     def reserved_resource(self):
-        """Gets the reserved_resource of this EndpointInput.
+        r"""Gets the reserved_resource of this EndpointInput.
 
         :return: The reserved_resource of this EndpointInput.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.ReservedResource`
@@ -154,7 +154,7 @@ class EndpointInput:
 
     @reserved_resource.setter
     def reserved_resource(self, reserved_resource):
-        """Sets the reserved_resource of this EndpointInput.
+        r"""Sets the reserved_resource of this EndpointInput.
 
         :param reserved_resource: The reserved_resource of this EndpointInput.
         :type reserved_resource: :class:`huaweicloudsdkdataartsfabric.v1.ReservedResource`
@@ -163,7 +163,7 @@ class EndpointInput:
 
     @property
     def ray_resource(self):
-        """Gets the ray_resource of this EndpointInput.
+        r"""Gets the ray_resource of this EndpointInput.
 
         :return: The ray_resource of this EndpointInput.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.RayResourceInput`
@@ -172,7 +172,7 @@ class EndpointInput:
 
     @ray_resource.setter
     def ray_resource(self, ray_resource):
-        """Sets the ray_resource of this EndpointInput.
+        r"""Sets the ray_resource of this EndpointInput.
 
         :param ray_resource: The ray_resource of this EndpointInput.
         :type ray_resource: :class:`huaweicloudsdkdataartsfabric.v1.RayResourceInput`
@@ -181,7 +181,7 @@ class EndpointInput:
 
     @property
     def cap(self):
-        """Gets the cap of this EndpointInput.
+        r"""Gets the cap of this EndpointInput.
 
         :return: The cap of this EndpointInput.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.CapRef`
@@ -190,7 +190,7 @@ class EndpointInput:
 
     @cap.setter
     def cap(self, cap):
-        """Sets the cap of this EndpointInput.
+        r"""Sets the cap of this EndpointInput.
 
         :param cap: The cap of this EndpointInput.
         :type cap: :class:`huaweicloudsdkdataartsfabric.v1.CapRef`
@@ -199,7 +199,7 @@ class EndpointInput:
 
     @property
     def log_config(self):
-        """Gets the log_config of this EndpointInput.
+        r"""Gets the log_config of this EndpointInput.
 
         :return: The log_config of this EndpointInput.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.LogConfig`
@@ -208,7 +208,7 @@ class EndpointInput:
 
     @log_config.setter
     def log_config(self, log_config):
-        """Sets the log_config of this EndpointInput.
+        r"""Sets the log_config of this EndpointInput.
 
         :param log_config: The log_config of this EndpointInput.
         :type log_config: :class:`huaweicloudsdkdataartsfabric.v1.LogConfig`

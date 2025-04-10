@@ -28,7 +28,7 @@ class CheckNeedVerifyResponse(SdkResponse):
     }
 
     def __init__(self, need_verify_code=None, expire_time=None):
-        """CheckNeedVerifyResponse
+        r"""CheckNeedVerifyResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CheckNeedVerifyResponse(SdkResponse):
 
     @property
     def need_verify_code(self):
-        """Gets the need_verify_code of this CheckNeedVerifyResponse.
+        r"""Gets the need_verify_code of this CheckNeedVerifyResponse.
 
         是否需要验证
 
@@ -62,7 +62,7 @@ class CheckNeedVerifyResponse(SdkResponse):
 
     @need_verify_code.setter
     def need_verify_code(self, need_verify_code):
-        """Sets the need_verify_code of this CheckNeedVerifyResponse.
+        r"""Sets the need_verify_code of this CheckNeedVerifyResponse.
 
         是否需要验证
 
@@ -73,7 +73,7 @@ class CheckNeedVerifyResponse(SdkResponse):
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this CheckNeedVerifyResponse.
+        r"""Gets the expire_time of this CheckNeedVerifyResponse.
 
         过期时间
 
@@ -84,7 +84,7 @@ class CheckNeedVerifyResponse(SdkResponse):
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this CheckNeedVerifyResponse.
+        r"""Sets the expire_time of this CheckNeedVerifyResponse.
 
         过期时间
 

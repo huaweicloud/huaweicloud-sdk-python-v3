@@ -26,7 +26,7 @@ class DeleteBackgroundTaskResponse(SdkResponse):
     }
 
     def __init__(self, message=None):
-        """DeleteBackgroundTaskResponse
+        r"""DeleteBackgroundTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteBackgroundTaskResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this DeleteBackgroundTaskResponse.
+        r"""Gets the message of this DeleteBackgroundTaskResponse.
 
         返回消息
 
@@ -55,7 +55,7 @@ class DeleteBackgroundTaskResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this DeleteBackgroundTaskResponse.
+        r"""Sets the message of this DeleteBackgroundTaskResponse.
 
         返回消息
 

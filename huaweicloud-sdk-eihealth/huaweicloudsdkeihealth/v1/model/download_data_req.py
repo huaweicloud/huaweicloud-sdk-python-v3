@@ -31,7 +31,7 @@ class DownloadDataReq:
     }
 
     def __init__(self, type=None, url=None, range_start=None, range_end=None):
-        """DownloadDataReq
+        r"""DownloadDataReq
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class DownloadDataReq:
 
     @property
     def type(self):
-        """Gets the type of this DownloadDataReq.
+        r"""Gets the type of this DownloadDataReq.
 
         :return: The type of this DownloadDataReq.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DownloadDataTypeEnum`
@@ -73,7 +73,7 @@ class DownloadDataReq:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DownloadDataReq.
+        r"""Sets the type of this DownloadDataReq.
 
         :param type: The type of this DownloadDataReq.
         :type type: :class:`huaweicloudsdkeihealth.v1.DownloadDataTypeEnum`
@@ -82,7 +82,7 @@ class DownloadDataReq:
 
     @property
     def url(self):
-        """Gets the url of this DownloadDataReq.
+        r"""Gets the url of this DownloadDataReq.
 
         资源地址(支持https、obs地址)
 
@@ -93,7 +93,7 @@ class DownloadDataReq:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this DownloadDataReq.
+        r"""Sets the url of this DownloadDataReq.
 
         资源地址(支持https、obs地址)
 
@@ -104,7 +104,7 @@ class DownloadDataReq:
 
     @property
     def range_start(self):
-        """Gets the range_start of this DownloadDataReq.
+        r"""Gets the range_start of this DownloadDataReq.
 
         指定下载对象的开始位置
 
@@ -115,7 +115,7 @@ class DownloadDataReq:
 
     @range_start.setter
     def range_start(self, range_start):
-        """Sets the range_start of this DownloadDataReq.
+        r"""Sets the range_start of this DownloadDataReq.
 
         指定下载对象的开始位置
 
@@ -126,7 +126,7 @@ class DownloadDataReq:
 
     @property
     def range_end(self):
-        """Gets the range_end of this DownloadDataReq.
+        r"""Gets the range_end of this DownloadDataReq.
 
         指定下载对象的结束位置
 
@@ -137,7 +137,7 @@ class DownloadDataReq:
 
     @range_end.setter
     def range_end(self, range_end):
-        """Sets the range_end of this DownloadDataReq.
+        r"""Sets the range_end of this DownloadDataReq.
 
         指定下载对象的结束位置
 

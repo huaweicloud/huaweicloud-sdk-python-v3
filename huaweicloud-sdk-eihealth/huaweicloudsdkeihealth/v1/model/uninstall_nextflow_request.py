@@ -25,7 +25,7 @@ class UninstallNextflowRequest:
     }
 
     def __init__(self, id=None):
-        """UninstallNextflowRequest
+        r"""UninstallNextflowRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UninstallNextflowRequest:
 
     @property
     def id(self):
-        """Gets the id of this UninstallNextflowRequest.
+        r"""Gets the id of this UninstallNextflowRequest.
 
         引擎ID
 
@@ -53,7 +53,7 @@ class UninstallNextflowRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UninstallNextflowRequest.
+        r"""Sets the id of this UninstallNextflowRequest.
 
         引擎ID
 

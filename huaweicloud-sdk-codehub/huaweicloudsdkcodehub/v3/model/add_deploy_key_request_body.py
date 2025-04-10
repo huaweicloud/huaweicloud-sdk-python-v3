@@ -31,7 +31,7 @@ class AddDeployKeyRequestBody:
     }
 
     def __init__(self, application=None, can_push=None, key=None, key_title=None):
-        """AddDeployKeyRequestBody
+        r"""AddDeployKeyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class AddDeployKeyRequestBody:
 
     @property
     def application(self):
-        """Gets the application of this AddDeployKeyRequestBody.
+        r"""Gets the application of this AddDeployKeyRequestBody.
 
         部署使用的SSH密钥的来源
 
@@ -71,7 +71,7 @@ class AddDeployKeyRequestBody:
 
     @application.setter
     def application(self, application):
-        """Sets the application of this AddDeployKeyRequestBody.
+        r"""Sets the application of this AddDeployKeyRequestBody.
 
         部署使用的SSH密钥的来源
 
@@ -82,7 +82,7 @@ class AddDeployKeyRequestBody:
 
     @property
     def can_push(self):
-        """Gets the can_push of this AddDeployKeyRequestBody.
+        r"""Gets the can_push of this AddDeployKeyRequestBody.
 
         部署使用的SSH密钥是否可以推送代码
 
@@ -93,7 +93,7 @@ class AddDeployKeyRequestBody:
 
     @can_push.setter
     def can_push(self, can_push):
-        """Sets the can_push of this AddDeployKeyRequestBody.
+        r"""Sets the can_push of this AddDeployKeyRequestBody.
 
         部署使用的SSH密钥是否可以推送代码
 
@@ -104,7 +104,7 @@ class AddDeployKeyRequestBody:
 
     @property
     def key(self):
-        """Gets the key of this AddDeployKeyRequestBody.
+        r"""Gets the key of this AddDeployKeyRequestBody.
 
         部署使用的SSH密钥
 
@@ -115,7 +115,7 @@ class AddDeployKeyRequestBody:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this AddDeployKeyRequestBody.
+        r"""Sets the key of this AddDeployKeyRequestBody.
 
         部署使用的SSH密钥
 
@@ -126,7 +126,7 @@ class AddDeployKeyRequestBody:
 
     @property
     def key_title(self):
-        """Gets the key_title of this AddDeployKeyRequestBody.
+        r"""Gets the key_title of this AddDeployKeyRequestBody.
 
         部署使用的SSH密钥名称
 
@@ -137,7 +137,7 @@ class AddDeployKeyRequestBody:
 
     @key_title.setter
     def key_title(self, key_title):
-        """Sets the key_title of this AddDeployKeyRequestBody.
+        r"""Sets the key_title of this AddDeployKeyRequestBody.
 
         部署使用的SSH密钥名称
 

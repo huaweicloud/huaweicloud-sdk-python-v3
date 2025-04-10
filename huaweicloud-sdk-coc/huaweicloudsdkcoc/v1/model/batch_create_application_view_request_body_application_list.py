@@ -31,7 +31,7 @@ class BatchCreateApplicationViewRequestBodyApplicationList:
     }
 
     def __init__(self, name=None, description=None, parent_name=None, level=None):
-        """BatchCreateApplicationViewRequestBodyApplicationList
+        r"""BatchCreateApplicationViewRequestBodyApplicationList
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class BatchCreateApplicationViewRequestBodyApplicationList:
 
     @property
     def name(self):
-        """Gets the name of this BatchCreateApplicationViewRequestBodyApplicationList.
+        r"""Gets the name of this BatchCreateApplicationViewRequestBodyApplicationList.
 
         名称
 
@@ -75,7 +75,7 @@ class BatchCreateApplicationViewRequestBodyApplicationList:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BatchCreateApplicationViewRequestBodyApplicationList.
+        r"""Sets the name of this BatchCreateApplicationViewRequestBodyApplicationList.
 
         名称
 
@@ -86,7 +86,7 @@ class BatchCreateApplicationViewRequestBodyApplicationList:
 
     @property
     def description(self):
-        """Gets the description of this BatchCreateApplicationViewRequestBodyApplicationList.
+        r"""Gets the description of this BatchCreateApplicationViewRequestBodyApplicationList.
 
         描述
 
@@ -97,7 +97,7 @@ class BatchCreateApplicationViewRequestBodyApplicationList:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this BatchCreateApplicationViewRequestBodyApplicationList.
+        r"""Sets the description of this BatchCreateApplicationViewRequestBodyApplicationList.
 
         描述
 
@@ -108,7 +108,7 @@ class BatchCreateApplicationViewRequestBodyApplicationList:
 
     @property
     def parent_name(self):
-        """Gets the parent_name of this BatchCreateApplicationViewRequestBodyApplicationList.
+        r"""Gets the parent_name of this BatchCreateApplicationViewRequestBodyApplicationList.
 
         父节点名称
 
@@ -119,7 +119,7 @@ class BatchCreateApplicationViewRequestBodyApplicationList:
 
     @parent_name.setter
     def parent_name(self, parent_name):
-        """Sets the parent_name of this BatchCreateApplicationViewRequestBodyApplicationList.
+        r"""Sets the parent_name of this BatchCreateApplicationViewRequestBodyApplicationList.
 
         父节点名称
 
@@ -130,7 +130,7 @@ class BatchCreateApplicationViewRequestBodyApplicationList:
 
     @property
     def level(self):
-        """Gets the level of this BatchCreateApplicationViewRequestBodyApplicationList.
+        r"""Gets the level of this BatchCreateApplicationViewRequestBodyApplicationList.
 
         层级，从1开始
 
@@ -141,7 +141,7 @@ class BatchCreateApplicationViewRequestBodyApplicationList:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this BatchCreateApplicationViewRequestBodyApplicationList.
+        r"""Sets the level of this BatchCreateApplicationViewRequestBodyApplicationList.
 
         层级，从1开始
 

@@ -25,7 +25,7 @@ class CreateDesignCompoundMetricResultData:
     }
 
     def __init__(self, value=None):
-        """CreateDesignCompoundMetricResultData
+        r"""CreateDesignCompoundMetricResultData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateDesignCompoundMetricResultData:
 
     @property
     def value(self):
-        """Gets the value of this CreateDesignCompoundMetricResultData.
+        r"""Gets the value of this CreateDesignCompoundMetricResultData.
 
         :return: The value of this CreateDesignCompoundMetricResultData.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CompoundMetricVO`
@@ -52,7 +52,7 @@ class CreateDesignCompoundMetricResultData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this CreateDesignCompoundMetricResultData.
+        r"""Sets the value of this CreateDesignCompoundMetricResultData.
 
         :param value: The value of this CreateDesignCompoundMetricResultData.
         :type value: :class:`huaweicloudsdkdataartsstudio.v1.CompoundMetricVO`

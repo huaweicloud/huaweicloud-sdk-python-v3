@@ -45,7 +45,7 @@ class ListPrivateNatsRequest:
     }
 
     def __init__(self, limit=None, marker=None, page_reverse=None, id=None, name=None, description=None, spec=None, status=None, vpc_id=None, virsubnet_id=None, enterprise_project_id=None):
-        """ListPrivateNatsRequest
+        r"""ListPrivateNatsRequest
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ListPrivateNatsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPrivateNatsRequest.
+        r"""Gets the limit of this ListPrivateNatsRequest.
 
         功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
 
@@ -124,7 +124,7 @@ class ListPrivateNatsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPrivateNatsRequest.
+        r"""Sets the limit of this ListPrivateNatsRequest.
 
         功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
 
@@ -135,7 +135,7 @@ class ListPrivateNatsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListPrivateNatsRequest.
+        r"""Gets the marker of this ListPrivateNatsRequest.
 
         功能说明：分页查询起始的资源ID，为空时查询第一页。 值从上一次查询的PageInfo中的next_marker或者previous_marker中获取。
 
@@ -146,7 +146,7 @@ class ListPrivateNatsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListPrivateNatsRequest.
+        r"""Sets the marker of this ListPrivateNatsRequest.
 
         功能说明：分页查询起始的资源ID，为空时查询第一页。 值从上一次查询的PageInfo中的next_marker或者previous_marker中获取。
 
@@ -157,7 +157,7 @@ class ListPrivateNatsRequest:
 
     @property
     def page_reverse(self):
-        """Gets the page_reverse of this ListPrivateNatsRequest.
+        r"""Gets the page_reverse of this ListPrivateNatsRequest.
 
         是否查询前一页。
 
@@ -168,7 +168,7 @@ class ListPrivateNatsRequest:
 
     @page_reverse.setter
     def page_reverse(self, page_reverse):
-        """Sets the page_reverse of this ListPrivateNatsRequest.
+        r"""Sets the page_reverse of this ListPrivateNatsRequest.
 
         是否查询前一页。
 
@@ -179,7 +179,7 @@ class ListPrivateNatsRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListPrivateNatsRequest.
+        r"""Gets the id of this ListPrivateNatsRequest.
 
         私网NAT网关实例的ID。
 
@@ -190,7 +190,7 @@ class ListPrivateNatsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListPrivateNatsRequest.
+        r"""Sets the id of this ListPrivateNatsRequest.
 
         私网NAT网关实例的ID。
 
@@ -201,7 +201,7 @@ class ListPrivateNatsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListPrivateNatsRequest.
+        r"""Gets the name of this ListPrivateNatsRequest.
 
         私网NAT网关实例的名字。
 
@@ -212,7 +212,7 @@ class ListPrivateNatsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListPrivateNatsRequest.
+        r"""Sets the name of this ListPrivateNatsRequest.
 
         私网NAT网关实例的名字。
 
@@ -223,7 +223,7 @@ class ListPrivateNatsRequest:
 
     @property
     def description(self):
-        """Gets the description of this ListPrivateNatsRequest.
+        r"""Gets the description of this ListPrivateNatsRequest.
 
         私网NAT网关实例的描述。长度范围小于等于255个字符，不能包含“<”和“>”。
 
@@ -234,7 +234,7 @@ class ListPrivateNatsRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListPrivateNatsRequest.
+        r"""Sets the description of this ListPrivateNatsRequest.
 
         私网NAT网关实例的描述。长度范围小于等于255个字符，不能包含“<”和“>”。
 
@@ -245,7 +245,7 @@ class ListPrivateNatsRequest:
 
     @property
     def spec(self):
-        """Gets the spec of this ListPrivateNatsRequest.
+        r"""Gets the spec of this ListPrivateNatsRequest.
 
         私网NAT网关实例的规格。 取值为： \"Small\"：小型 \"Medium\"：中型 \"Large\"：大型 \"Extra-large\"：超大型
 
@@ -256,7 +256,7 @@ class ListPrivateNatsRequest:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this ListPrivateNatsRequest.
+        r"""Sets the spec of this ListPrivateNatsRequest.
 
         私网NAT网关实例的规格。 取值为： \"Small\"：小型 \"Medium\"：中型 \"Large\"：大型 \"Extra-large\"：超大型
 
@@ -267,7 +267,7 @@ class ListPrivateNatsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListPrivateNatsRequest.
+        r"""Gets the status of this ListPrivateNatsRequest.
 
         私网NAT网关实例的状态。 取值为： \"ACTIVE\"：正常运行 \"FROZEN\"：冻结
 
@@ -278,7 +278,7 @@ class ListPrivateNatsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListPrivateNatsRequest.
+        r"""Sets the status of this ListPrivateNatsRequest.
 
         私网NAT网关实例的状态。 取值为： \"ACTIVE\"：正常运行 \"FROZEN\"：冻结
 
@@ -289,7 +289,7 @@ class ListPrivateNatsRequest:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ListPrivateNatsRequest.
+        r"""Gets the vpc_id of this ListPrivateNatsRequest.
 
         私网NAT网关实例所属VPC的ID。
 
@@ -300,7 +300,7 @@ class ListPrivateNatsRequest:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ListPrivateNatsRequest.
+        r"""Sets the vpc_id of this ListPrivateNatsRequest.
 
         私网NAT网关实例所属VPC的ID。
 
@@ -311,7 +311,7 @@ class ListPrivateNatsRequest:
 
     @property
     def virsubnet_id(self):
-        """Gets the virsubnet_id of this ListPrivateNatsRequest.
+        r"""Gets the virsubnet_id of this ListPrivateNatsRequest.
 
         私网NAT网关实例所属子网的ID。
 
@@ -322,7 +322,7 @@ class ListPrivateNatsRequest:
 
     @virsubnet_id.setter
     def virsubnet_id(self, virsubnet_id):
-        """Sets the virsubnet_id of this ListPrivateNatsRequest.
+        r"""Sets the virsubnet_id of this ListPrivateNatsRequest.
 
         私网NAT网关实例所属子网的ID。
 
@@ -333,7 +333,7 @@ class ListPrivateNatsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListPrivateNatsRequest.
+        r"""Gets the enterprise_project_id of this ListPrivateNatsRequest.
 
         企业项目ID。创建私网NAT网关实例时，关联的企业项目ID。
 
@@ -344,7 +344,7 @@ class ListPrivateNatsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListPrivateNatsRequest.
+        r"""Sets the enterprise_project_id of this ListPrivateNatsRequest.
 
         企业项目ID。创建私网NAT网关实例时，关联的企业项目ID。
 

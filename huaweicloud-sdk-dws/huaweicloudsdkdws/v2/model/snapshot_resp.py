@@ -25,7 +25,7 @@ class SnapshotResp:
     }
 
     def __init__(self, id=None):
-        """SnapshotResp
+        r"""SnapshotResp
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SnapshotResp:
 
     @property
     def id(self):
-        """Gets the id of this SnapshotResp.
+        r"""Gets the id of this SnapshotResp.
 
         Snapshot ID
 
@@ -54,7 +54,7 @@ class SnapshotResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SnapshotResp.
+        r"""Sets the id of this SnapshotResp.
 
         Snapshot ID
 

@@ -25,7 +25,7 @@ class Quotas:
     }
 
     def __init__(self, resources=None):
-        """Quotas
+        r"""Quotas
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class Quotas:
 
     @property
     def resources(self):
-        """Gets the resources of this Quotas.
+        r"""Gets the resources of this Quotas.
 
         :return: The resources of this Quotas.
         :rtype: list[:class:`huaweicloudsdkvpn.v5.QuotaInfo`]
@@ -52,7 +52,7 @@ class Quotas:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this Quotas.
+        r"""Sets the resources of this Quotas.
 
         :param resources: The resources of this Quotas.
         :type resources: list[:class:`huaweicloudsdkvpn.v5.QuotaInfo`]

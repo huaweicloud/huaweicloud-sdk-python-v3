@@ -56,7 +56,7 @@ class ShowWorkSpaceResponse(SdkResponse):
     }
 
     def __init__(self, bad_record_location_name=None, description=None, eps_id=None, job_log_location_name=None, name=None, id=None, is_default=None, owner_name=None, project_id=None, domain_id=None, instance_id=None, create_time=None, create_user=None, member_num=None, update_time=None, update_user=None):
-        """ShowWorkSpaceResponse
+        r"""ShowWorkSpaceResponse
 
         The model defined in huaweicloud sdk
 
@@ -149,7 +149,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @property
     def bad_record_location_name(self):
-        """Gets the bad_record_location_name of this ShowWorkSpaceResponse.
+        r"""Gets the bad_record_location_name of this ShowWorkSpaceResponse.
 
         DLI脏数据OBS路径
 
@@ -160,7 +160,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @bad_record_location_name.setter
     def bad_record_location_name(self, bad_record_location_name):
-        """Sets the bad_record_location_name of this ShowWorkSpaceResponse.
+        r"""Sets the bad_record_location_name of this ShowWorkSpaceResponse.
 
         DLI脏数据OBS路径
 
@@ -171,7 +171,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowWorkSpaceResponse.
+        r"""Gets the description of this ShowWorkSpaceResponse.
 
         工作空间描述
 
@@ -182,7 +182,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowWorkSpaceResponse.
+        r"""Sets the description of this ShowWorkSpaceResponse.
 
         工作空间描述
 
@@ -193,7 +193,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @property
     def eps_id(self):
-        """Gets the eps_id of this ShowWorkSpaceResponse.
+        r"""Gets the eps_id of this ShowWorkSpaceResponse.
 
         企业项目id，如果当前为公有云，且用户开启企业项目，则必选
 
@@ -204,7 +204,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @eps_id.setter
     def eps_id(self, eps_id):
-        """Sets the eps_id of this ShowWorkSpaceResponse.
+        r"""Sets the eps_id of this ShowWorkSpaceResponse.
 
         企业项目id，如果当前为公有云，且用户开启企业项目，则必选
 
@@ -215,7 +215,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @property
     def job_log_location_name(self):
-        """Gets the job_log_location_name of this ShowWorkSpaceResponse.
+        r"""Gets the job_log_location_name of this ShowWorkSpaceResponse.
 
         作业日志OBS路径
 
@@ -226,7 +226,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @job_log_location_name.setter
     def job_log_location_name(self, job_log_location_name):
-        """Sets the job_log_location_name of this ShowWorkSpaceResponse.
+        r"""Sets the job_log_location_name of this ShowWorkSpaceResponse.
 
         作业日志OBS路径
 
@@ -237,7 +237,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowWorkSpaceResponse.
+        r"""Gets the name of this ShowWorkSpaceResponse.
 
         工作空间名称
 
@@ -248,7 +248,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowWorkSpaceResponse.
+        r"""Sets the name of this ShowWorkSpaceResponse.
 
         工作空间名称
 
@@ -259,7 +259,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowWorkSpaceResponse.
+        r"""Gets the id of this ShowWorkSpaceResponse.
 
         工作空间id
 
@@ -270,7 +270,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowWorkSpaceResponse.
+        r"""Sets the id of this ShowWorkSpaceResponse.
 
         工作空间id
 
@@ -281,7 +281,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @property
     def is_default(self):
-        """Gets the is_default of this ShowWorkSpaceResponse.
+        r"""Gets the is_default of this ShowWorkSpaceResponse.
 
         是否为默认空间，0为私有空间，1为默认空间，2为公共空间
 
@@ -292,7 +292,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @is_default.setter
     def is_default(self, is_default):
-        """Sets the is_default of this ShowWorkSpaceResponse.
+        r"""Sets the is_default of this ShowWorkSpaceResponse.
 
         是否为默认空间，0为私有空间，1为默认空间，2为公共空间
 
@@ -303,7 +303,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @property
     def owner_name(self):
-        """Gets the owner_name of this ShowWorkSpaceResponse.
+        r"""Gets the owner_name of this ShowWorkSpaceResponse.
 
         创建者名称
 
@@ -314,7 +314,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @owner_name.setter
     def owner_name(self, owner_name):
-        """Sets the owner_name of this ShowWorkSpaceResponse.
+        r"""Sets the owner_name of this ShowWorkSpaceResponse.
 
         创建者名称
 
@@ -325,7 +325,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowWorkSpaceResponse.
+        r"""Gets the project_id of this ShowWorkSpaceResponse.
 
         项目id
 
@@ -336,7 +336,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowWorkSpaceResponse.
+        r"""Sets the project_id of this ShowWorkSpaceResponse.
 
         项目id
 
@@ -347,7 +347,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ShowWorkSpaceResponse.
+        r"""Gets the domain_id of this ShowWorkSpaceResponse.
 
         当前租户所属domain id
 
@@ -358,7 +358,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ShowWorkSpaceResponse.
+        r"""Sets the domain_id of this ShowWorkSpaceResponse.
 
         当前租户所属domain id
 
@@ -369,7 +369,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowWorkSpaceResponse.
+        r"""Gets the instance_id of this ShowWorkSpaceResponse.
 
         当前工作空间所属实例id
 
@@ -380,7 +380,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowWorkSpaceResponse.
+        r"""Sets the instance_id of this ShowWorkSpaceResponse.
 
         当前工作空间所属实例id
 
@@ -391,7 +391,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowWorkSpaceResponse.
+        r"""Gets the create_time of this ShowWorkSpaceResponse.
 
         创建时间
 
@@ -402,7 +402,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowWorkSpaceResponse.
+        r"""Sets the create_time of this ShowWorkSpaceResponse.
 
         创建时间
 
@@ -413,7 +413,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @property
     def create_user(self):
-        """Gets the create_user of this ShowWorkSpaceResponse.
+        r"""Gets the create_user of this ShowWorkSpaceResponse.
 
         创建用户名称
 
@@ -424,7 +424,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this ShowWorkSpaceResponse.
+        r"""Sets the create_user of this ShowWorkSpaceResponse.
 
         创建用户名称
 
@@ -435,7 +435,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @property
     def member_num(self):
-        """Gets the member_num of this ShowWorkSpaceResponse.
+        r"""Gets the member_num of this ShowWorkSpaceResponse.
 
         当前工作空间成员数量
 
@@ -446,7 +446,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @member_num.setter
     def member_num(self, member_num):
-        """Sets the member_num of this ShowWorkSpaceResponse.
+        r"""Sets the member_num of this ShowWorkSpaceResponse.
 
         当前工作空间成员数量
 
@@ -457,7 +457,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowWorkSpaceResponse.
+        r"""Gets the update_time of this ShowWorkSpaceResponse.
 
         更新时间
 
@@ -468,7 +468,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowWorkSpaceResponse.
+        r"""Sets the update_time of this ShowWorkSpaceResponse.
 
         更新时间
 
@@ -479,7 +479,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @property
     def update_user(self):
-        """Gets the update_user of this ShowWorkSpaceResponse.
+        r"""Gets the update_user of this ShowWorkSpaceResponse.
 
         更新用户名称
 
@@ -490,7 +490,7 @@ class ShowWorkSpaceResponse(SdkResponse):
 
     @update_user.setter
     def update_user(self, update_user):
-        """Sets the update_user of this ShowWorkSpaceResponse.
+        r"""Sets the update_user of this ShowWorkSpaceResponse.
 
         更新用户名称
 

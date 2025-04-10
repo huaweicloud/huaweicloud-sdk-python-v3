@@ -27,7 +27,7 @@ class ExtendedConfigs:
     }
 
     def __init__(self, name=None, value=None):
-        """ExtendedConfigs
+        r"""ExtendedConfigs
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ExtendedConfigs:
 
     @property
     def name(self):
-        """Gets the name of this ExtendedConfigs.
+        r"""Gets the name of this ExtendedConfigs.
 
         扩展参数属性名称
 
@@ -61,7 +61,7 @@ class ExtendedConfigs:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ExtendedConfigs.
+        r"""Sets the name of this ExtendedConfigs.
 
         扩展参数属性名称
 
@@ -72,7 +72,7 @@ class ExtendedConfigs:
 
     @property
     def value(self):
-        """Gets the value of this ExtendedConfigs.
+        r"""Gets the value of this ExtendedConfigs.
 
         cdm-base64编码后的值
 
@@ -83,7 +83,7 @@ class ExtendedConfigs:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ExtendedConfigs.
+        r"""Sets the value of this ExtendedConfigs.
 
         cdm-base64编码后的值
 

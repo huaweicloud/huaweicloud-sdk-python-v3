@@ -28,7 +28,7 @@ class CreateClusterMasterSnapshotResponse(SdkResponse):
     }
 
     def __init__(self, uid=None, metadata=None):
-        """CreateClusterMasterSnapshotResponse
+        r"""CreateClusterMasterSnapshotResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateClusterMasterSnapshotResponse(SdkResponse):
 
     @property
     def uid(self):
-        """Gets the uid of this CreateClusterMasterSnapshotResponse.
+        r"""Gets the uid of this CreateClusterMasterSnapshotResponse.
 
         任务ID
 
@@ -62,7 +62,7 @@ class CreateClusterMasterSnapshotResponse(SdkResponse):
 
     @uid.setter
     def uid(self, uid):
-        """Sets the uid of this CreateClusterMasterSnapshotResponse.
+        r"""Sets the uid of this CreateClusterMasterSnapshotResponse.
 
         任务ID
 
@@ -73,7 +73,7 @@ class CreateClusterMasterSnapshotResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this CreateClusterMasterSnapshotResponse.
+        r"""Gets the metadata of this CreateClusterMasterSnapshotResponse.
 
         :return: The metadata of this CreateClusterMasterSnapshotResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.SnapshotCluserResponseMetadata`
@@ -82,7 +82,7 @@ class CreateClusterMasterSnapshotResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this CreateClusterMasterSnapshotResponse.
+        r"""Sets the metadata of this CreateClusterMasterSnapshotResponse.
 
         :param metadata: The metadata of this CreateClusterMasterSnapshotResponse.
         :type metadata: :class:`huaweicloudsdkcce.v3.SnapshotCluserResponseMetadata`

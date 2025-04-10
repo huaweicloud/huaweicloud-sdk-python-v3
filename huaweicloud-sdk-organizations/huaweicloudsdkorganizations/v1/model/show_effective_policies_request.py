@@ -30,7 +30,7 @@ class ShowEffectivePoliciesRequest:
     }
 
     def __init__(self, x_security_token=None, entity_id=None, policy_type=None):
-        """ShowEffectivePoliciesRequest
+        r"""ShowEffectivePoliciesRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ShowEffectivePoliciesRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this ShowEffectivePoliciesRequest.
+        r"""Gets the x_security_token of this ShowEffectivePoliciesRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -67,7 +67,7 @@ class ShowEffectivePoliciesRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this ShowEffectivePoliciesRequest.
+        r"""Sets the x_security_token of this ShowEffectivePoliciesRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -78,7 +78,7 @@ class ShowEffectivePoliciesRequest:
 
     @property
     def entity_id(self):
-        """Gets the entity_id of this ShowEffectivePoliciesRequest.
+        r"""Gets the entity_id of this ShowEffectivePoliciesRequest.
 
         账号的唯一标识符（ID）。当前还不支持指定根、组织单元。
 
@@ -89,7 +89,7 @@ class ShowEffectivePoliciesRequest:
 
     @entity_id.setter
     def entity_id(self, entity_id):
-        """Sets the entity_id of this ShowEffectivePoliciesRequest.
+        r"""Sets the entity_id of this ShowEffectivePoliciesRequest.
 
         账号的唯一标识符（ID）。当前还不支持指定根、组织单元。
 
@@ -100,7 +100,7 @@ class ShowEffectivePoliciesRequest:
 
     @property
     def policy_type(self):
-        """Gets the policy_type of this ShowEffectivePoliciesRequest.
+        r"""Gets the policy_type of this ShowEffectivePoliciesRequest.
 
         策略类型的名称，tag_policy标签策略。
 
@@ -111,7 +111,7 @@ class ShowEffectivePoliciesRequest:
 
     @policy_type.setter
     def policy_type(self, policy_type):
-        """Sets the policy_type of this ShowEffectivePoliciesRequest.
+        r"""Sets the policy_type of this ShowEffectivePoliciesRequest.
 
         策略类型的名称，tag_policy标签策略。
 

@@ -28,7 +28,7 @@ class ListJobInfoDetailResponse(SdkResponse):
     }
 
     def __init__(self, jobs=None, count=None):
-        """ListJobInfoDetailResponse
+        r"""ListJobInfoDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListJobInfoDetailResponse(SdkResponse):
 
     @property
     def jobs(self):
-        """Gets the jobs of this ListJobInfoDetailResponse.
+        r"""Gets the jobs of this ListJobInfoDetailResponse.
 
         :return: The jobs of this ListJobInfoDetailResponse.
         :rtype: :class:`huaweicloudsdkrds.v3.GetTaskDetailListRspJobs`
@@ -60,7 +60,7 @@ class ListJobInfoDetailResponse(SdkResponse):
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this ListJobInfoDetailResponse.
+        r"""Sets the jobs of this ListJobInfoDetailResponse.
 
         :param jobs: The jobs of this ListJobInfoDetailResponse.
         :type jobs: :class:`huaweicloudsdkrds.v3.GetTaskDetailListRspJobs`
@@ -69,7 +69,7 @@ class ListJobInfoDetailResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListJobInfoDetailResponse.
+        r"""Gets the count of this ListJobInfoDetailResponse.
 
         任务数量。
 
@@ -80,7 +80,7 @@ class ListJobInfoDetailResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListJobInfoDetailResponse.
+        r"""Sets the count of this ListJobInfoDetailResponse.
 
         任务数量。
 

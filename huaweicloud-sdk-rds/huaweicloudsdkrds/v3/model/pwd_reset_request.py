@@ -25,7 +25,7 @@ class PwdResetRequest:
     }
 
     def __init__(self, db_user_pwd=None):
-        """PwdResetRequest
+        r"""PwdResetRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class PwdResetRequest:
 
     @property
     def db_user_pwd(self):
-        """Gets the db_user_pwd of this PwdResetRequest.
+        r"""Gets the db_user_pwd of this PwdResetRequest.
 
         数据库密码
 
@@ -53,7 +53,7 @@ class PwdResetRequest:
 
     @db_user_pwd.setter
     def db_user_pwd(self, db_user_pwd):
-        """Sets the db_user_pwd of this PwdResetRequest.
+        r"""Sets the db_user_pwd of this PwdResetRequest.
 
         数据库密码
 

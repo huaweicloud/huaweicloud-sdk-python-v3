@@ -31,7 +31,7 @@ class InstanceMetadataEntryDto:
     }
 
     def __init__(self, identity_store_id=None, instance_id=None, alias=None, instance_urn=None):
-        """InstanceMetadataEntryDto
+        r"""InstanceMetadataEntryDto
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class InstanceMetadataEntryDto:
 
     @property
     def identity_store_id(self):
-        """Gets the identity_store_id of this InstanceMetadataEntryDto.
+        r"""Gets the identity_store_id of this InstanceMetadataEntryDto.
 
         关联到IAM身份中心实例的身份源的全局唯一标识符（ID）
 
@@ -73,7 +73,7 @@ class InstanceMetadataEntryDto:
 
     @identity_store_id.setter
     def identity_store_id(self, identity_store_id):
-        """Sets the identity_store_id of this InstanceMetadataEntryDto.
+        r"""Sets the identity_store_id of this InstanceMetadataEntryDto.
 
         关联到IAM身份中心实例的身份源的全局唯一标识符（ID）
 
@@ -84,7 +84,7 @@ class InstanceMetadataEntryDto:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this InstanceMetadataEntryDto.
+        r"""Gets the instance_id of this InstanceMetadataEntryDto.
 
         IAM身份中心实例的全局唯一标识符（ID）
 
@@ -95,7 +95,7 @@ class InstanceMetadataEntryDto:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this InstanceMetadataEntryDto.
+        r"""Sets the instance_id of this InstanceMetadataEntryDto.
 
         IAM身份中心实例的全局唯一标识符（ID）
 
@@ -106,7 +106,7 @@ class InstanceMetadataEntryDto:
 
     @property
     def alias(self):
-        """Gets the alias of this InstanceMetadataEntryDto.
+        r"""Gets the alias of this InstanceMetadataEntryDto.
 
         用户为身份源标识符定义的别名
 
@@ -117,7 +117,7 @@ class InstanceMetadataEntryDto:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this InstanceMetadataEntryDto.
+        r"""Sets the alias of this InstanceMetadataEntryDto.
 
         用户为身份源标识符定义的别名
 
@@ -128,7 +128,7 @@ class InstanceMetadataEntryDto:
 
     @property
     def instance_urn(self):
-        """Gets the instance_urn of this InstanceMetadataEntryDto.
+        r"""Gets the instance_urn of this InstanceMetadataEntryDto.
 
         实例的统一资源名称（URN）
 
@@ -139,7 +139,7 @@ class InstanceMetadataEntryDto:
 
     @instance_urn.setter
     def instance_urn(self, instance_urn):
-        """Sets the instance_urn of this InstanceMetadataEntryDto.
+        r"""Sets the instance_urn of this InstanceMetadataEntryDto.
 
         实例的统一资源名称（URN）
 

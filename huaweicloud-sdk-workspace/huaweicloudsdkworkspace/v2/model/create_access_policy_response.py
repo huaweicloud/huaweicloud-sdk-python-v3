@@ -24,7 +24,7 @@ class CreateAccessPolicyResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateAccessPolicyResponse
+        r"""CreateAccessPolicyResponse
 
         The model defined in huaweicloud sdk
 

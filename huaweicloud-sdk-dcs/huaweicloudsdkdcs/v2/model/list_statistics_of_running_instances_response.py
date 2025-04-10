@@ -26,7 +26,7 @@ class ListStatisticsOfRunningInstancesResponse(SdkResponse):
     }
 
     def __init__(self, statistics=None):
-        """ListStatisticsOfRunningInstancesResponse
+        r"""ListStatisticsOfRunningInstancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListStatisticsOfRunningInstancesResponse(SdkResponse):
 
     @property
     def statistics(self):
-        """Gets the statistics of this ListStatisticsOfRunningInstancesResponse.
+        r"""Gets the statistics of this ListStatisticsOfRunningInstancesResponse.
 
         该租户下处于“运行中”状态的实例的统计信息。
 
@@ -55,7 +55,7 @@ class ListStatisticsOfRunningInstancesResponse(SdkResponse):
 
     @statistics.setter
     def statistics(self, statistics):
-        """Sets the statistics of this ListStatisticsOfRunningInstancesResponse.
+        r"""Sets the statistics of this ListStatisticsOfRunningInstancesResponse.
 
         该租户下处于“运行中”状态的实例的统计信息。
 

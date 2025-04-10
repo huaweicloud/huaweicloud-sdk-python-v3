@@ -30,7 +30,7 @@ class CheckRomaInstanceListV2Response(SdkResponse):
     }
 
     def __init__(self, total=None, size=None, instances=None):
-        """CheckRomaInstanceListV2Response
+        r"""CheckRomaInstanceListV2Response
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CheckRomaInstanceListV2Response(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this CheckRomaInstanceListV2Response.
+        r"""Gets the total of this CheckRomaInstanceListV2Response.
 
         列表总数
 
@@ -69,7 +69,7 @@ class CheckRomaInstanceListV2Response(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this CheckRomaInstanceListV2Response.
+        r"""Sets the total of this CheckRomaInstanceListV2Response.
 
         列表总数
 
@@ -80,7 +80,7 @@ class CheckRomaInstanceListV2Response(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this CheckRomaInstanceListV2Response.
+        r"""Gets the size of this CheckRomaInstanceListV2Response.
 
         本页数量
 
@@ -91,7 +91,7 @@ class CheckRomaInstanceListV2Response(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this CheckRomaInstanceListV2Response.
+        r"""Sets the size of this CheckRomaInstanceListV2Response.
 
         本页数量
 
@@ -102,7 +102,7 @@ class CheckRomaInstanceListV2Response(SdkResponse):
 
     @property
     def instances(self):
-        """Gets the instances of this CheckRomaInstanceListV2Response.
+        r"""Gets the instances of this CheckRomaInstanceListV2Response.
 
         实例列表
 
@@ -113,7 +113,7 @@ class CheckRomaInstanceListV2Response(SdkResponse):
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this CheckRomaInstanceListV2Response.
+        r"""Sets the instances of this CheckRomaInstanceListV2Response.
 
         实例列表
 

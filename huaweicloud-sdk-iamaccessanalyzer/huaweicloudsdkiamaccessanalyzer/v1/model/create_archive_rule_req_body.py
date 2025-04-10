@@ -28,7 +28,7 @@ class CreateArchiveRuleReqBody:
     }
 
     def __init__(self, filters=None, name=None):
-        """CreateArchiveRuleReqBody
+        r"""CreateArchiveRuleReqBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateArchiveRuleReqBody:
 
     @property
     def filters(self):
-        """Gets the filters of this CreateArchiveRuleReqBody.
+        r"""Gets the filters of this CreateArchiveRuleReqBody.
 
         匹配要返回的访问分析结果的筛选器。
 
@@ -60,7 +60,7 @@ class CreateArchiveRuleReqBody:
 
     @filters.setter
     def filters(self, filters):
-        """Sets the filters of this CreateArchiveRuleReqBody.
+        r"""Sets the filters of this CreateArchiveRuleReqBody.
 
         匹配要返回的访问分析结果的筛选器。
 
@@ -71,7 +71,7 @@ class CreateArchiveRuleReqBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateArchiveRuleReqBody.
+        r"""Gets the name of this CreateArchiveRuleReqBody.
 
         创建存档规则的名称。
 
@@ -82,7 +82,7 @@ class CreateArchiveRuleReqBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateArchiveRuleReqBody.
+        r"""Sets the name of this CreateArchiveRuleReqBody.
 
         创建存档规则的名称。
 

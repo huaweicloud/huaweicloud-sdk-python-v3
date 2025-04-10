@@ -33,7 +33,7 @@ class ListBucketsReq:
     }
 
     def __init__(self, cloud_type=None, ak=None, sk=None, json_auth_file=None, app_id=None):
-        """ListBucketsReq
+        r"""ListBucketsReq
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListBucketsReq:
 
     @property
     def cloud_type(self):
-        """Gets the cloud_type of this ListBucketsReq.
+        r"""Gets the cloud_type of this ListBucketsReq.
 
         云类型 AWS：亚马逊 Aliyun：阿里云 Qiniu：七牛云 QingCloud：青云 Tencent：腾讯云 Baidu：百度云 KingsoftCloud：金山云 Azure：微软云 UCloud：优刻得 HuaweiCloud：华为云 Google: 谷歌云 URLSource：URL HEC：HEC
 
@@ -81,7 +81,7 @@ class ListBucketsReq:
 
     @cloud_type.setter
     def cloud_type(self, cloud_type):
-        """Sets the cloud_type of this ListBucketsReq.
+        r"""Sets the cloud_type of this ListBucketsReq.
 
         云类型 AWS：亚马逊 Aliyun：阿里云 Qiniu：七牛云 QingCloud：青云 Tencent：腾讯云 Baidu：百度云 KingsoftCloud：金山云 Azure：微软云 UCloud：优刻得 HuaweiCloud：华为云 Google: 谷歌云 URLSource：URL HEC：HEC
 
@@ -92,7 +92,7 @@ class ListBucketsReq:
 
     @property
     def ak(self):
-        """Gets the ak of this ListBucketsReq.
+        r"""Gets the ak of this ListBucketsReq.
 
         源端桶的AK（最大长度100个字符），task_type为非url_list时，本参数为必选。
 
@@ -103,7 +103,7 @@ class ListBucketsReq:
 
     @ak.setter
     def ak(self, ak):
-        """Sets the ak of this ListBucketsReq.
+        r"""Sets the ak of this ListBucketsReq.
 
         源端桶的AK（最大长度100个字符），task_type为非url_list时，本参数为必选。
 
@@ -114,7 +114,7 @@ class ListBucketsReq:
 
     @property
     def sk(self):
-        """Gets the sk of this ListBucketsReq.
+        r"""Gets the sk of this ListBucketsReq.
 
         源端桶的SK（最大长度100个字符），task_type为非url_list时，本参数为必选。
 
@@ -125,7 +125,7 @@ class ListBucketsReq:
 
     @sk.setter
     def sk(self, sk):
-        """Sets the sk of this ListBucketsReq.
+        r"""Sets the sk of this ListBucketsReq.
 
         源端桶的SK（最大长度100个字符），task_type为非url_list时，本参数为必选。
 
@@ -136,7 +136,7 @@ class ListBucketsReq:
 
     @property
     def json_auth_file(self):
-        """Gets the json_auth_file of this ListBucketsReq.
+        r"""Gets the json_auth_file of this ListBucketsReq.
 
         用于谷歌云Cloud Storage鉴权
 
@@ -147,7 +147,7 @@ class ListBucketsReq:
 
     @json_auth_file.setter
     def json_auth_file(self, json_auth_file):
-        """Sets the json_auth_file of this ListBucketsReq.
+        r"""Sets the json_auth_file of this ListBucketsReq.
 
         用于谷歌云Cloud Storage鉴权
 
@@ -158,7 +158,7 @@ class ListBucketsReq:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ListBucketsReq.
+        r"""Gets the app_id of this ListBucketsReq.
 
         当源端为腾讯云时，会返回此参数。
 
@@ -169,7 +169,7 @@ class ListBucketsReq:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ListBucketsReq.
+        r"""Sets the app_id of this ListBucketsReq.
 
         当源端为腾讯云时，会返回此参数。
 

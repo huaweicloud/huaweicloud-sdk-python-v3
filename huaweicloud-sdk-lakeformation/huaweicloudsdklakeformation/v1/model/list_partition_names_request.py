@@ -39,7 +39,7 @@ class ListPartitionNamesRequest:
     }
 
     def __init__(self, instance_id=None, catalog_name=None, database_name=None, table_name=None, filter=None, limit=None, marker=None, reverse_page=None):
-        """ListPartitionNamesRequest
+        r"""ListPartitionNamesRequest
 
         The model defined in huaweicloud sdk
 
@@ -88,7 +88,7 @@ class ListPartitionNamesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListPartitionNamesRequest.
+        r"""Gets the instance_id of this ListPartitionNamesRequest.
 
         实例ID
 
@@ -99,7 +99,7 @@ class ListPartitionNamesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListPartitionNamesRequest.
+        r"""Sets the instance_id of this ListPartitionNamesRequest.
 
         实例ID
 
@@ -110,7 +110,7 @@ class ListPartitionNamesRequest:
 
     @property
     def catalog_name(self):
-        """Gets the catalog_name of this ListPartitionNamesRequest.
+        r"""Gets the catalog_name of this ListPartitionNamesRequest.
 
         catalog名字
 
@@ -121,7 +121,7 @@ class ListPartitionNamesRequest:
 
     @catalog_name.setter
     def catalog_name(self, catalog_name):
-        """Sets the catalog_name of this ListPartitionNamesRequest.
+        r"""Sets the catalog_name of this ListPartitionNamesRequest.
 
         catalog名字
 
@@ -132,7 +132,7 @@ class ListPartitionNamesRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this ListPartitionNamesRequest.
+        r"""Gets the database_name of this ListPartitionNamesRequest.
 
         数据库名字
 
@@ -143,7 +143,7 @@ class ListPartitionNamesRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this ListPartitionNamesRequest.
+        r"""Sets the database_name of this ListPartitionNamesRequest.
 
         数据库名字
 
@@ -154,7 +154,7 @@ class ListPartitionNamesRequest:
 
     @property
     def table_name(self):
-        """Gets the table_name of this ListPartitionNamesRequest.
+        r"""Gets the table_name of this ListPartitionNamesRequest.
 
         表名称
 
@@ -165,7 +165,7 @@ class ListPartitionNamesRequest:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this ListPartitionNamesRequest.
+        r"""Sets the table_name of this ListPartitionNamesRequest.
 
         表名称
 
@@ -176,7 +176,7 @@ class ListPartitionNamesRequest:
 
     @property
     def filter(self):
-        """Gets the filter of this ListPartitionNamesRequest.
+        r"""Gets the filter of this ListPartitionNamesRequest.
 
         过滤条件表达式
 
@@ -187,7 +187,7 @@ class ListPartitionNamesRequest:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this ListPartitionNamesRequest.
+        r"""Sets the filter of this ListPartitionNamesRequest.
 
         过滤条件表达式
 
@@ -198,7 +198,7 @@ class ListPartitionNamesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPartitionNamesRequest.
+        r"""Gets the limit of this ListPartitionNamesRequest.
 
         查询返回条数
 
@@ -209,7 +209,7 @@ class ListPartitionNamesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPartitionNamesRequest.
+        r"""Sets the limit of this ListPartitionNamesRequest.
 
         查询返回条数
 
@@ -220,7 +220,7 @@ class ListPartitionNamesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListPartitionNamesRequest.
+        r"""Gets the marker of this ListPartitionNamesRequest.
 
         查询的起始记录ID
 
@@ -231,7 +231,7 @@ class ListPartitionNamesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListPartitionNamesRequest.
+        r"""Sets the marker of this ListPartitionNamesRequest.
 
         查询的起始记录ID
 
@@ -242,7 +242,7 @@ class ListPartitionNamesRequest:
 
     @property
     def reverse_page(self):
-        """Gets the reverse_page of this ListPartitionNamesRequest.
+        r"""Gets the reverse_page of this ListPartitionNamesRequest.
 
         是否查询上一页
 
@@ -253,7 +253,7 @@ class ListPartitionNamesRequest:
 
     @reverse_page.setter
     def reverse_page(self, reverse_page):
-        """Sets the reverse_page of this ListPartitionNamesRequest.
+        r"""Sets the reverse_page of this ListPartitionNamesRequest.
 
         是否查询上一页
 

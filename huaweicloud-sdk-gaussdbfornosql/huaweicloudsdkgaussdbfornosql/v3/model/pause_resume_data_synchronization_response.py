@@ -26,7 +26,7 @@ class PauseResumeDataSynchronizationResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """PauseResumeDataSynchronizationResponse
+        r"""PauseResumeDataSynchronizationResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class PauseResumeDataSynchronizationResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this PauseResumeDataSynchronizationResponse.
+        r"""Gets the job_id of this PauseResumeDataSynchronizationResponse.
 
         暂停/恢复具备容灾关系的实例数据同步的工作ID
 
@@ -55,7 +55,7 @@ class PauseResumeDataSynchronizationResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this PauseResumeDataSynchronizationResponse.
+        r"""Sets the job_id of this PauseResumeDataSynchronizationResponse.
 
         暂停/恢复具备容灾关系的实例数据同步的工作ID
 

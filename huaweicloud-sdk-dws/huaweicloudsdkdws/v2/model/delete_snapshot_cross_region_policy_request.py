@@ -25,7 +25,7 @@ class DeleteSnapshotCrossRegionPolicyRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """DeleteSnapshotCrossRegionPolicyRequest
+        r"""DeleteSnapshotCrossRegionPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteSnapshotCrossRegionPolicyRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this DeleteSnapshotCrossRegionPolicyRequest.
+        r"""Gets the cluster_id of this DeleteSnapshotCrossRegionPolicyRequest.
 
         集群ID
 
@@ -53,7 +53,7 @@ class DeleteSnapshotCrossRegionPolicyRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this DeleteSnapshotCrossRegionPolicyRequest.
+        r"""Sets the cluster_id of this DeleteSnapshotCrossRegionPolicyRequest.
 
         集群ID
 

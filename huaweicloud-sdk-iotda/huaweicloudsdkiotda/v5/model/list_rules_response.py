@@ -30,7 +30,7 @@ class ListRulesResponse(SdkResponse):
     }
 
     def __init__(self, marker=None, count=None, rules=None):
-        """ListRulesResponse
+        r"""ListRulesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListRulesResponse(SdkResponse):
 
     @property
     def marker(self):
-        """Gets the marker of this ListRulesResponse.
+        r"""Gets the marker of this ListRulesResponse.
 
         本次分页查询结果中最后一条记录的ID，可在下一次分页查询时使用。
 
@@ -69,7 +69,7 @@ class ListRulesResponse(SdkResponse):
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListRulesResponse.
+        r"""Sets the marker of this ListRulesResponse.
 
         本次分页查询结果中最后一条记录的ID，可在下一次分页查询时使用。
 
@@ -80,7 +80,7 @@ class ListRulesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListRulesResponse.
+        r"""Gets the count of this ListRulesResponse.
 
         满足查询条件的记录总数。
 
@@ -91,7 +91,7 @@ class ListRulesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListRulesResponse.
+        r"""Sets the count of this ListRulesResponse.
 
         满足查询条件的记录总数。
 
@@ -102,7 +102,7 @@ class ListRulesResponse(SdkResponse):
 
     @property
     def rules(self):
-        """Gets the rules of this ListRulesResponse.
+        r"""Gets the rules of this ListRulesResponse.
 
         规则信息列表。
 
@@ -113,7 +113,7 @@ class ListRulesResponse(SdkResponse):
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this ListRulesResponse.
+        r"""Sets the rules of this ListRulesResponse.
 
         规则信息列表。
 

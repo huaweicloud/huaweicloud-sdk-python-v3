@@ -27,7 +27,7 @@ class BlockchainInfo:
     }
 
     def __init__(self, id=None, name=None):
-        """BlockchainInfo
+        r"""BlockchainInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BlockchainInfo:
 
     @property
     def id(self):
-        """Gets the id of this BlockchainInfo.
+        r"""Gets the id of this BlockchainInfo.
 
         服务实例ID
 
@@ -61,7 +61,7 @@ class BlockchainInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BlockchainInfo.
+        r"""Sets the id of this BlockchainInfo.
 
         服务实例ID
 
@@ -72,7 +72,7 @@ class BlockchainInfo:
 
     @property
     def name(self):
-        """Gets the name of this BlockchainInfo.
+        r"""Gets the name of this BlockchainInfo.
 
         服务实例名称
 
@@ -83,7 +83,7 @@ class BlockchainInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BlockchainInfo.
+        r"""Sets the name of this BlockchainInfo.
 
         服务实例名称
 

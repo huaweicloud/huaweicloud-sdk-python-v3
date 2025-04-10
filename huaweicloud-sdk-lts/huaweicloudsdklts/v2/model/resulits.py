@@ -27,7 +27,7 @@ class Resulits:
     }
 
     def __init__(self, timestamp=None, value=None):
-        """Resulits
+        r"""Resulits
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Resulits:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this Resulits.
+        r"""Gets the timestamp of this Resulits.
 
         时间戳，毫秒时间
 
@@ -61,7 +61,7 @@ class Resulits:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this Resulits.
+        r"""Sets the timestamp of this Resulits.
 
         时间戳，毫秒时间
 
@@ -72,7 +72,7 @@ class Resulits:
 
     @property
     def value(self):
-        """Gets the value of this Resulits.
+        r"""Gets the value of this Resulits.
 
         流量，byte
 
@@ -83,7 +83,7 @@ class Resulits:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this Resulits.
+        r"""Sets the value of this Resulits.
 
         流量，byte
 

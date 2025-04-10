@@ -31,7 +31,7 @@ class PrincipalRule:
     }
 
     def __init__(self, principal=None, principal_name=None, action_type=None, effect=None):
-        """PrincipalRule
+        r"""PrincipalRule
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class PrincipalRule:
 
     @property
     def principal(self):
-        """Gets the principal of this PrincipalRule.
+        r"""Gets the principal of this PrincipalRule.
 
         授权用户ID。
 
@@ -75,7 +75,7 @@ class PrincipalRule:
 
     @principal.setter
     def principal(self, principal):
-        """Sets the principal of this PrincipalRule.
+        r"""Sets the principal of this PrincipalRule.
 
         授权用户ID。
 
@@ -86,7 +86,7 @@ class PrincipalRule:
 
     @property
     def principal_name(self):
-        """Gets the principal_name of this PrincipalRule.
+        r"""Gets the principal_name of this PrincipalRule.
 
         授权用户名。  如果授权给租户下的所有子用户，格式为：domainName.*；如果授权给租户下的指定子用户，则格式为：domainName.userName
 
@@ -97,7 +97,7 @@ class PrincipalRule:
 
     @principal_name.setter
     def principal_name(self, principal_name):
-        """Sets the principal_name of this PrincipalRule.
+        r"""Sets the principal_name of this PrincipalRule.
 
         授权用户名。  如果授权给租户下的所有子用户，格式为：domainName.*；如果授权给租户下的指定子用户，则格式为：domainName.userName
 
@@ -108,7 +108,7 @@ class PrincipalRule:
 
     @property
     def action_type(self):
-        """Gets the action_type of this PrincipalRule.
+        r"""Gets the action_type of this PrincipalRule.
 
         授权操作类型。  - putRecords：上传数据。 - getRecords：下载数据。
 
@@ -119,7 +119,7 @@ class PrincipalRule:
 
     @action_type.setter
     def action_type(self, action_type):
-        """Sets the action_type of this PrincipalRule.
+        r"""Sets the action_type of this PrincipalRule.
 
         授权操作类型。  - putRecords：上传数据。 - getRecords：下载数据。
 
@@ -130,7 +130,7 @@ class PrincipalRule:
 
     @property
     def effect(self):
-        """Gets the effect of this PrincipalRule.
+        r"""Gets the effect of this PrincipalRule.
 
         授权影响类型。  - accept：允许该授权操作。
 
@@ -141,7 +141,7 @@ class PrincipalRule:
 
     @effect.setter
     def effect(self, effect):
-        """Sets the effect of this PrincipalRule.
+        r"""Sets the effect of this PrincipalRule.
 
         授权影响类型。  - accept：允许该授权操作。
 

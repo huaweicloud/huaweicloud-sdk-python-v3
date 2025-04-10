@@ -28,7 +28,7 @@ class CreateStreamingJobResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, check_info=None):
-        """CreateStreamingJobResponse
+        r"""CreateStreamingJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateStreamingJobResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateStreamingJobResponse.
+        r"""Gets the job_id of this CreateStreamingJobResponse.
 
         作业ID
 
@@ -62,7 +62,7 @@ class CreateStreamingJobResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateStreamingJobResponse.
+        r"""Sets the job_id of this CreateStreamingJobResponse.
 
         作业ID
 
@@ -73,7 +73,7 @@ class CreateStreamingJobResponse(SdkResponse):
 
     @property
     def check_info(self):
-        """Gets the check_info of this CreateStreamingJobResponse.
+        r"""Gets the check_info of this CreateStreamingJobResponse.
 
         作业错误详情
 
@@ -84,7 +84,7 @@ class CreateStreamingJobResponse(SdkResponse):
 
     @check_info.setter
     def check_info(self, check_info):
-        """Sets the check_info of this CreateStreamingJobResponse.
+        r"""Sets the check_info of this CreateStreamingJobResponse.
 
         作业错误详情
 

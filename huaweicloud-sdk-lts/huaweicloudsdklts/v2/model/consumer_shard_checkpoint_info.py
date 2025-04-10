@@ -27,7 +27,7 @@ class ConsumerShardCheckpointInfo:
     }
 
     def __init__(self, shard_id=None, checkpoint=None):
-        """ConsumerShardCheckpointInfo
+        r"""ConsumerShardCheckpointInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ConsumerShardCheckpointInfo:
 
     @property
     def shard_id(self):
-        """Gets the shard_id of this ConsumerShardCheckpointInfo.
+        r"""Gets the shard_id of this ConsumerShardCheckpointInfo.
 
         日志Shard ID
 
@@ -59,7 +59,7 @@ class ConsumerShardCheckpointInfo:
 
     @shard_id.setter
     def shard_id(self, shard_id):
-        """Sets the shard_id of this ConsumerShardCheckpointInfo.
+        r"""Sets the shard_id of this ConsumerShardCheckpointInfo.
 
         日志Shard ID
 
@@ -70,7 +70,7 @@ class ConsumerShardCheckpointInfo:
 
     @property
     def checkpoint(self):
-        """Gets the checkpoint of this ConsumerShardCheckpointInfo.
+        r"""Gets the checkpoint of this ConsumerShardCheckpointInfo.
 
         游标值
 
@@ -81,7 +81,7 @@ class ConsumerShardCheckpointInfo:
 
     @checkpoint.setter
     def checkpoint(self, checkpoint):
-        """Sets the checkpoint of this ConsumerShardCheckpointInfo.
+        r"""Sets the checkpoint of this ConsumerShardCheckpointInfo.
 
         游标值
 

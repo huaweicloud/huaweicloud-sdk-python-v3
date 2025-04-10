@@ -30,7 +30,7 @@ class ShowVpnUserResponse(SdkResponse):
     }
 
     def __init__(self, user=None, request_id=None, header_response_token=None):
-        """ShowVpnUserResponse
+        r"""ShowVpnUserResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowVpnUserResponse(SdkResponse):
 
     @property
     def user(self):
-        """Gets the user of this ShowVpnUserResponse.
+        r"""Gets the user of this ShowVpnUserResponse.
 
         :return: The user of this ShowVpnUserResponse.
         :rtype: :class:`huaweicloudsdkvpn.v5.VpnUser`
@@ -67,7 +67,7 @@ class ShowVpnUserResponse(SdkResponse):
 
     @user.setter
     def user(self, user):
-        """Sets the user of this ShowVpnUserResponse.
+        r"""Sets the user of this ShowVpnUserResponse.
 
         :param user: The user of this ShowVpnUserResponse.
         :type user: :class:`huaweicloudsdkvpn.v5.VpnUser`
@@ -76,7 +76,7 @@ class ShowVpnUserResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowVpnUserResponse.
+        r"""Gets the request_id of this ShowVpnUserResponse.
 
         请求ID
 
@@ -87,7 +87,7 @@ class ShowVpnUserResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowVpnUserResponse.
+        r"""Sets the request_id of this ShowVpnUserResponse.
 
         请求ID
 
@@ -98,7 +98,7 @@ class ShowVpnUserResponse(SdkResponse):
 
     @property
     def header_response_token(self):
-        """Gets the header_response_token of this ShowVpnUserResponse.
+        r"""Gets the header_response_token of this ShowVpnUserResponse.
 
         :return: The header_response_token of this ShowVpnUserResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class ShowVpnUserResponse(SdkResponse):
 
     @header_response_token.setter
     def header_response_token(self, header_response_token):
-        """Sets the header_response_token of this ShowVpnUserResponse.
+        r"""Sets the header_response_token of this ShowVpnUserResponse.
 
         :param header_response_token: The header_response_token of this ShowVpnUserResponse.
         :type header_response_token: str

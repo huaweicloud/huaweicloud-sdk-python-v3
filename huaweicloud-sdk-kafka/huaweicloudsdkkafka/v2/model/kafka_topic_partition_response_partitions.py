@@ -33,7 +33,7 @@ class KafkaTopicPartitionResponsePartitions:
     }
 
     def __init__(self, partition=None, start_offset=None, last_offset=None, message_count=None, last_update_time=None):
-        """KafkaTopicPartitionResponsePartitions
+        r"""KafkaTopicPartitionResponsePartitions
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class KafkaTopicPartitionResponsePartitions:
 
     @property
     def partition(self):
-        """Gets the partition of this KafkaTopicPartitionResponsePartitions.
+        r"""Gets the partition of this KafkaTopicPartitionResponsePartitions.
 
         分区ID
 
@@ -82,7 +82,7 @@ class KafkaTopicPartitionResponsePartitions:
 
     @partition.setter
     def partition(self, partition):
-        """Sets the partition of this KafkaTopicPartitionResponsePartitions.
+        r"""Sets the partition of this KafkaTopicPartitionResponsePartitions.
 
         分区ID
 
@@ -93,7 +93,7 @@ class KafkaTopicPartitionResponsePartitions:
 
     @property
     def start_offset(self):
-        """Gets the start_offset of this KafkaTopicPartitionResponsePartitions.
+        r"""Gets the start_offset of this KafkaTopicPartitionResponsePartitions.
 
         起始偏移量
 
@@ -104,7 +104,7 @@ class KafkaTopicPartitionResponsePartitions:
 
     @start_offset.setter
     def start_offset(self, start_offset):
-        """Sets the start_offset of this KafkaTopicPartitionResponsePartitions.
+        r"""Sets the start_offset of this KafkaTopicPartitionResponsePartitions.
 
         起始偏移量
 
@@ -115,7 +115,7 @@ class KafkaTopicPartitionResponsePartitions:
 
     @property
     def last_offset(self):
-        """Gets the last_offset of this KafkaTopicPartitionResponsePartitions.
+        r"""Gets the last_offset of this KafkaTopicPartitionResponsePartitions.
 
         最后偏移量
 
@@ -126,7 +126,7 @@ class KafkaTopicPartitionResponsePartitions:
 
     @last_offset.setter
     def last_offset(self, last_offset):
-        """Sets the last_offset of this KafkaTopicPartitionResponsePartitions.
+        r"""Sets the last_offset of this KafkaTopicPartitionResponsePartitions.
 
         最后偏移量
 
@@ -137,7 +137,7 @@ class KafkaTopicPartitionResponsePartitions:
 
     @property
     def message_count(self):
-        """Gets the message_count of this KafkaTopicPartitionResponsePartitions.
+        r"""Gets the message_count of this KafkaTopicPartitionResponsePartitions.
 
         分区消息数
 
@@ -148,7 +148,7 @@ class KafkaTopicPartitionResponsePartitions:
 
     @message_count.setter
     def message_count(self, message_count):
-        """Sets the message_count of this KafkaTopicPartitionResponsePartitions.
+        r"""Sets the message_count of this KafkaTopicPartitionResponsePartitions.
 
         分区消息数
 
@@ -159,7 +159,7 @@ class KafkaTopicPartitionResponsePartitions:
 
     @property
     def last_update_time(self):
-        """Gets the last_update_time of this KafkaTopicPartitionResponsePartitions.
+        r"""Gets the last_update_time of this KafkaTopicPartitionResponsePartitions.
 
         最近更新时间
 
@@ -170,7 +170,7 @@ class KafkaTopicPartitionResponsePartitions:
 
     @last_update_time.setter
     def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this KafkaTopicPartitionResponsePartitions.
+        r"""Sets the last_update_time of this KafkaTopicPartitionResponsePartitions.
 
         最近更新时间
 

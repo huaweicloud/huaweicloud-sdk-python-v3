@@ -25,7 +25,7 @@ class ReviewConfig:
     }
 
     def __init__(self, no_need_review=None):
-        """ReviewConfig
+        r"""ReviewConfig
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ReviewConfig:
 
     @property
     def no_need_review(self):
-        """Gets the no_need_review of this ReviewConfig.
+        r"""Gets the no_need_review of this ReviewConfig.
 
         免审核。 目前仅白名单用户可使用此参数，非白名单用户跟随系统策略审核。
 
@@ -54,7 +54,7 @@ class ReviewConfig:
 
     @no_need_review.setter
     def no_need_review(self, no_need_review):
-        """Sets the no_need_review of this ReviewConfig.
+        r"""Sets the no_need_review of this ReviewConfig.
 
         免审核。 目前仅白名单用户可使用此参数，非白名单用户跟随系统策略审核。
 

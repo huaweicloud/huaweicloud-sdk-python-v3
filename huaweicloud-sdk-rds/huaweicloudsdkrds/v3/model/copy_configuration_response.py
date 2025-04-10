@@ -38,7 +38,7 @@ class CopyConfigurationResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, datastore_version_name=None, datastore_name=None, create_time=None, update_time=None):
-        """CopyConfigurationResponse
+        r"""CopyConfigurationResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class CopyConfigurationResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CopyConfigurationResponse.
+        r"""Gets the id of this CopyConfigurationResponse.
 
         参数模板ID。
 
@@ -97,7 +97,7 @@ class CopyConfigurationResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CopyConfigurationResponse.
+        r"""Sets the id of this CopyConfigurationResponse.
 
         参数模板ID。
 
@@ -108,7 +108,7 @@ class CopyConfigurationResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CopyConfigurationResponse.
+        r"""Gets the name of this CopyConfigurationResponse.
 
         参数模板名称。
 
@@ -119,7 +119,7 @@ class CopyConfigurationResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CopyConfigurationResponse.
+        r"""Sets the name of this CopyConfigurationResponse.
 
         参数模板名称。
 
@@ -130,7 +130,7 @@ class CopyConfigurationResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CopyConfigurationResponse.
+        r"""Gets the description of this CopyConfigurationResponse.
 
         描述。
 
@@ -141,7 +141,7 @@ class CopyConfigurationResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CopyConfigurationResponse.
+        r"""Sets the description of this CopyConfigurationResponse.
 
         描述。
 
@@ -152,7 +152,7 @@ class CopyConfigurationResponse(SdkResponse):
 
     @property
     def datastore_version_name(self):
-        """Gets the datastore_version_name of this CopyConfigurationResponse.
+        r"""Gets the datastore_version_name of this CopyConfigurationResponse.
 
         数据库版本名称
 
@@ -163,7 +163,7 @@ class CopyConfigurationResponse(SdkResponse):
 
     @datastore_version_name.setter
     def datastore_version_name(self, datastore_version_name):
-        """Sets the datastore_version_name of this CopyConfigurationResponse.
+        r"""Sets the datastore_version_name of this CopyConfigurationResponse.
 
         数据库版本名称
 
@@ -174,7 +174,7 @@ class CopyConfigurationResponse(SdkResponse):
 
     @property
     def datastore_name(self):
-        """Gets the datastore_name of this CopyConfigurationResponse.
+        r"""Gets the datastore_name of this CopyConfigurationResponse.
 
         数据库名称。
 
@@ -185,7 +185,7 @@ class CopyConfigurationResponse(SdkResponse):
 
     @datastore_name.setter
     def datastore_name(self, datastore_name):
-        """Sets the datastore_name of this CopyConfigurationResponse.
+        r"""Sets the datastore_name of this CopyConfigurationResponse.
 
         数据库名称。
 
@@ -196,7 +196,7 @@ class CopyConfigurationResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this CopyConfigurationResponse.
+        r"""Gets the create_time of this CopyConfigurationResponse.
 
         创建时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -207,7 +207,7 @@ class CopyConfigurationResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CopyConfigurationResponse.
+        r"""Sets the create_time of this CopyConfigurationResponse.
 
         创建时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -218,7 +218,7 @@ class CopyConfigurationResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this CopyConfigurationResponse.
+        r"""Gets the update_time of this CopyConfigurationResponse.
 
         更新时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -229,7 +229,7 @@ class CopyConfigurationResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this CopyConfigurationResponse.
+        r"""Sets the update_time of this CopyConfigurationResponse.
 
         更新时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 

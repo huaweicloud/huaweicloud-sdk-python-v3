@@ -23,7 +23,7 @@ class RouteNextHop:
     }
 
     def __init__(self):
-        """RouteNextHop
+        r"""RouteNextHop
 
         The model defined in huaweicloud sdk
 

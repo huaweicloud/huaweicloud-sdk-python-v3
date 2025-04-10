@@ -37,7 +37,7 @@ class ListPlaybookAuditLogsRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, offset=None, limit=None, sort_key=None, sort_dir=None, body=None):
-        """ListPlaybookAuditLogsRequest
+        r"""ListPlaybookAuditLogsRequest
 
         The model defined in huaweicloud sdk
 
@@ -81,7 +81,7 @@ class ListPlaybookAuditLogsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListPlaybookAuditLogsRequest.
+        r"""Gets the project_id of this ListPlaybookAuditLogsRequest.
 
         项目ID
 
@@ -92,7 +92,7 @@ class ListPlaybookAuditLogsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListPlaybookAuditLogsRequest.
+        r"""Sets the project_id of this ListPlaybookAuditLogsRequest.
 
         项目ID
 
@@ -103,7 +103,7 @@ class ListPlaybookAuditLogsRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ListPlaybookAuditLogsRequest.
+        r"""Gets the workspace_id of this ListPlaybookAuditLogsRequest.
 
         工作空间ID
 
@@ -114,7 +114,7 @@ class ListPlaybookAuditLogsRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ListPlaybookAuditLogsRequest.
+        r"""Sets the workspace_id of this ListPlaybookAuditLogsRequest.
 
         工作空间ID
 
@@ -125,7 +125,7 @@ class ListPlaybookAuditLogsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPlaybookAuditLogsRequest.
+        r"""Gets the offset of this ListPlaybookAuditLogsRequest.
 
         offset
 
@@ -136,7 +136,7 @@ class ListPlaybookAuditLogsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPlaybookAuditLogsRequest.
+        r"""Sets the offset of this ListPlaybookAuditLogsRequest.
 
         offset
 
@@ -147,7 +147,7 @@ class ListPlaybookAuditLogsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPlaybookAuditLogsRequest.
+        r"""Gets the limit of this ListPlaybookAuditLogsRequest.
 
         limit
 
@@ -158,7 +158,7 @@ class ListPlaybookAuditLogsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPlaybookAuditLogsRequest.
+        r"""Sets the limit of this ListPlaybookAuditLogsRequest.
 
         limit
 
@@ -169,7 +169,7 @@ class ListPlaybookAuditLogsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListPlaybookAuditLogsRequest.
+        r"""Gets the sort_key of this ListPlaybookAuditLogsRequest.
 
         sort_key
 
@@ -180,7 +180,7 @@ class ListPlaybookAuditLogsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListPlaybookAuditLogsRequest.
+        r"""Sets the sort_key of this ListPlaybookAuditLogsRequest.
 
         sort_key
 
@@ -191,7 +191,7 @@ class ListPlaybookAuditLogsRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListPlaybookAuditLogsRequest.
+        r"""Gets the sort_dir of this ListPlaybookAuditLogsRequest.
 
         sort_dir. asc, desc
 
@@ -202,7 +202,7 @@ class ListPlaybookAuditLogsRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListPlaybookAuditLogsRequest.
+        r"""Sets the sort_dir of this ListPlaybookAuditLogsRequest.
 
         sort_dir. asc, desc
 
@@ -213,7 +213,7 @@ class ListPlaybookAuditLogsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListPlaybookAuditLogsRequest.
+        r"""Gets the body of this ListPlaybookAuditLogsRequest.
 
         :return: The body of this ListPlaybookAuditLogsRequest.
         :rtype: :class:`huaweicloudsdksecmaster.v2.AuditLogInfo`
@@ -222,7 +222,7 @@ class ListPlaybookAuditLogsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListPlaybookAuditLogsRequest.
+        r"""Sets the body of this ListPlaybookAuditLogsRequest.
 
         :param body: The body of this ListPlaybookAuditLogsRequest.
         :type body: :class:`huaweicloudsdksecmaster.v2.AuditLogInfo`

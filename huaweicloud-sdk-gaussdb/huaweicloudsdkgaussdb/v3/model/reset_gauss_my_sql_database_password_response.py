@@ -26,7 +26,7 @@ class ResetGaussMySqlDatabasePasswordResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """ResetGaussMySqlDatabasePasswordResponse
+        r"""ResetGaussMySqlDatabasePasswordResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ResetGaussMySqlDatabasePasswordResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ResetGaussMySqlDatabasePasswordResponse.
+        r"""Gets the job_id of this ResetGaussMySqlDatabasePasswordResponse.
 
         修改数据库用户密码的任务ID。
 
@@ -55,7 +55,7 @@ class ResetGaussMySqlDatabasePasswordResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ResetGaussMySqlDatabasePasswordResponse.
+        r"""Sets the job_id of this ResetGaussMySqlDatabasePasswordResponse.
 
         修改数据库用户密码的任务ID。
 

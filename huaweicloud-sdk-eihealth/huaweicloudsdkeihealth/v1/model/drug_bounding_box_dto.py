@@ -27,7 +27,7 @@ class DrugBoundingBoxDto:
     }
 
     def __init__(self, center=None, size=None):
-        """DrugBoundingBoxDto
+        r"""DrugBoundingBoxDto
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DrugBoundingBoxDto:
 
     @property
     def center(self):
-        """Gets the center of this DrugBoundingBoxDto.
+        r"""Gets the center of this DrugBoundingBoxDto.
 
         口袋中心坐标；x, y, z轴的坐标
 
@@ -59,7 +59,7 @@ class DrugBoundingBoxDto:
 
     @center.setter
     def center(self, center):
-        """Sets the center of this DrugBoundingBoxDto.
+        r"""Sets the center of this DrugBoundingBoxDto.
 
         口袋中心坐标；x, y, z轴的坐标
 
@@ -70,7 +70,7 @@ class DrugBoundingBoxDto:
 
     @property
     def size(self):
-        """Gets the size of this DrugBoundingBoxDto.
+        r"""Gets the size of this DrugBoundingBoxDto.
 
         口袋尺寸大小；x, y, z轴的大小
 
@@ -81,7 +81,7 @@ class DrugBoundingBoxDto:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this DrugBoundingBoxDto.
+        r"""Sets the size of this DrugBoundingBoxDto.
 
         口袋尺寸大小；x, y, z轴的大小
 

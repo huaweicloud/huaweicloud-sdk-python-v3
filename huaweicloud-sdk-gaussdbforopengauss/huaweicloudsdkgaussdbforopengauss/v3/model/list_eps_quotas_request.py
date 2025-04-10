@@ -31,7 +31,7 @@ class ListEpsQuotasRequest:
     }
 
     def __init__(self, x_language=None, offset=None, limit=None, enterprise_project_id=None):
-        """ListEpsQuotasRequest
+        r"""ListEpsQuotasRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListEpsQuotasRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListEpsQuotasRequest.
+        r"""Gets the x_language of this ListEpsQuotasRequest.
 
         语言, 默认值为en-us。
 
@@ -75,7 +75,7 @@ class ListEpsQuotasRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListEpsQuotasRequest.
+        r"""Sets the x_language of this ListEpsQuotasRequest.
 
         语言, 默认值为en-us。
 
@@ -86,7 +86,7 @@ class ListEpsQuotasRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListEpsQuotasRequest.
+        r"""Gets the offset of this ListEpsQuotasRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -97,7 +97,7 @@ class ListEpsQuotasRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListEpsQuotasRequest.
+        r"""Sets the offset of this ListEpsQuotasRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -108,7 +108,7 @@ class ListEpsQuotasRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListEpsQuotasRequest.
+        r"""Gets the limit of this ListEpsQuotasRequest.
 
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
 
@@ -119,7 +119,7 @@ class ListEpsQuotasRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEpsQuotasRequest.
+        r"""Sets the limit of this ListEpsQuotasRequest.
 
         查询记录数。默认为100，不能为负数，最小值为1，最大值为100。
 
@@ -130,7 +130,7 @@ class ListEpsQuotasRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListEpsQuotasRequest.
+        r"""Gets the enterprise_project_id of this ListEpsQuotasRequest.
 
         企业项目ID。 - 对于未开通企业多项目服务的用户，不传该参数。 - 对于已开通企业多项目服务的用户，不传该参数时，表示为default企业项目。
 
@@ -141,7 +141,7 @@ class ListEpsQuotasRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListEpsQuotasRequest.
+        r"""Sets the enterprise_project_id of this ListEpsQuotasRequest.
 
         企业项目ID。 - 对于未开通企业多项目服务的用户，不传该参数。 - 对于已开通企业多项目服务的用户，不传该参数时，表示为default企业项目。
 

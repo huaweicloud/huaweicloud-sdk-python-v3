@@ -29,7 +29,7 @@ class ShowPipelineArtifactsRequest:
     }
 
     def __init__(self, project_id=None, pipeline_id=None, pipeline_run_id=None):
-        """ShowPipelineArtifactsRequest
+        r"""ShowPipelineArtifactsRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ShowPipelineArtifactsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowPipelineArtifactsRequest.
+        r"""Gets the project_id of this ShowPipelineArtifactsRequest.
 
         项目ID
 
@@ -65,7 +65,7 @@ class ShowPipelineArtifactsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowPipelineArtifactsRequest.
+        r"""Sets the project_id of this ShowPipelineArtifactsRequest.
 
         项目ID
 
@@ -76,7 +76,7 @@ class ShowPipelineArtifactsRequest:
 
     @property
     def pipeline_id(self):
-        """Gets the pipeline_id of this ShowPipelineArtifactsRequest.
+        r"""Gets the pipeline_id of this ShowPipelineArtifactsRequest.
 
         流水线ID
 
@@ -87,7 +87,7 @@ class ShowPipelineArtifactsRequest:
 
     @pipeline_id.setter
     def pipeline_id(self, pipeline_id):
-        """Sets the pipeline_id of this ShowPipelineArtifactsRequest.
+        r"""Sets the pipeline_id of this ShowPipelineArtifactsRequest.
 
         流水线ID
 
@@ -98,7 +98,7 @@ class ShowPipelineArtifactsRequest:
 
     @property
     def pipeline_run_id(self):
-        """Gets the pipeline_run_id of this ShowPipelineArtifactsRequest.
+        r"""Gets the pipeline_run_id of this ShowPipelineArtifactsRequest.
 
         流水线运行实例ID
 
@@ -109,7 +109,7 @@ class ShowPipelineArtifactsRequest:
 
     @pipeline_run_id.setter
     def pipeline_run_id(self, pipeline_run_id):
-        """Sets the pipeline_run_id of this ShowPipelineArtifactsRequest.
+        r"""Sets the pipeline_run_id of this ShowPipelineArtifactsRequest.
 
         流水线运行实例ID
 

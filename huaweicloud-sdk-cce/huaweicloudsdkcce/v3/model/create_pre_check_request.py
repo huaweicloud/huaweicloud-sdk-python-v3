@@ -27,7 +27,7 @@ class CreatePreCheckRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """CreatePreCheckRequest
+        r"""CreatePreCheckRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreatePreCheckRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CreatePreCheckRequest.
+        r"""Gets the cluster_id of this CreatePreCheckRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -60,7 +60,7 @@ class CreatePreCheckRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CreatePreCheckRequest.
+        r"""Sets the cluster_id of this CreatePreCheckRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -71,7 +71,7 @@ class CreatePreCheckRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePreCheckRequest.
+        r"""Gets the body of this CreatePreCheckRequest.
 
         :return: The body of this CreatePreCheckRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.PrecheckClusterRequestBody`
@@ -80,7 +80,7 @@ class CreatePreCheckRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePreCheckRequest.
+        r"""Sets the body of this CreatePreCheckRequest.
 
         :param body: The body of this CreatePreCheckRequest.
         :type body: :class:`huaweicloudsdkcce.v3.PrecheckClusterRequestBody`

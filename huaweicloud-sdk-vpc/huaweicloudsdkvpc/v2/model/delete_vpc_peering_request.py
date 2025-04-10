@@ -25,7 +25,7 @@ class DeleteVpcPeeringRequest:
     }
 
     def __init__(self, peering_id=None):
-        """DeleteVpcPeeringRequest
+        r"""DeleteVpcPeeringRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteVpcPeeringRequest:
 
     @property
     def peering_id(self):
-        """Gets the peering_id of this DeleteVpcPeeringRequest.
+        r"""Gets the peering_id of this DeleteVpcPeeringRequest.
 
         对等连接ID
 
@@ -53,7 +53,7 @@ class DeleteVpcPeeringRequest:
 
     @peering_id.setter
     def peering_id(self, peering_id):
-        """Sets the peering_id of this DeleteVpcPeeringRequest.
+        r"""Sets the peering_id of this DeleteVpcPeeringRequest.
 
         对等连接ID
 

@@ -26,7 +26,7 @@ class ListAllStandardsResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ListAllStandardsResponse
+        r"""ListAllStandardsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListAllStandardsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListAllStandardsResponse.
+        r"""Gets the data of this ListAllStandardsResponse.
 
         :return: The data of this ListAllStandardsResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.StandardSearchResultData`
@@ -53,7 +53,7 @@ class ListAllStandardsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListAllStandardsResponse.
+        r"""Sets the data of this ListAllStandardsResponse.
 
         :param data: The data of this ListAllStandardsResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.StandardSearchResultData`

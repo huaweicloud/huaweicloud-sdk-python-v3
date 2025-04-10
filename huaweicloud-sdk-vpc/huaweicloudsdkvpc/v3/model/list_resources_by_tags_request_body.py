@@ -25,7 +25,7 @@ class ListResourcesByTagsRequestBody:
     }
 
     def __init__(self, tags=None):
-        """ListResourcesByTagsRequestBody
+        r"""ListResourcesByTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListResourcesByTagsRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this ListResourcesByTagsRequestBody.
+        r"""Gets the tags of this ListResourcesByTagsRequestBody.
 
         包含标签。
 
@@ -54,7 +54,7 @@ class ListResourcesByTagsRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListResourcesByTagsRequestBody.
+        r"""Sets the tags of this ListResourcesByTagsRequestBody.
 
         包含标签。
 

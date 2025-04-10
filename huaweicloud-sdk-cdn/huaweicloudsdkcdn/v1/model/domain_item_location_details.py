@@ -31,7 +31,7 @@ class DomainItemLocationDetails:
     }
 
     def __init__(self, start_time=None, end_time=None, stat_type=None, domains=None):
-        """DomainItemLocationDetails
+        r"""DomainItemLocationDetails
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class DomainItemLocationDetails:
 
     @property
     def start_time(self):
-        """Gets the start_time of this DomainItemLocationDetails.
+        r"""Gets the start_time of this DomainItemLocationDetails.
 
         数据起始时间戳，可能与请求时间不一致
 
@@ -75,7 +75,7 @@ class DomainItemLocationDetails:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this DomainItemLocationDetails.
+        r"""Sets the start_time of this DomainItemLocationDetails.
 
         数据起始时间戳，可能与请求时间不一致
 
@@ -86,7 +86,7 @@ class DomainItemLocationDetails:
 
     @property
     def end_time(self):
-        """Gets the end_time of this DomainItemLocationDetails.
+        r"""Gets the end_time of this DomainItemLocationDetails.
 
         数据结束时间戳，可能与请求时间不一致
 
@@ -97,7 +97,7 @@ class DomainItemLocationDetails:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this DomainItemLocationDetails.
+        r"""Sets the end_time of this DomainItemLocationDetails.
 
         数据结束时间戳，可能与请求时间不一致
 
@@ -108,7 +108,7 @@ class DomainItemLocationDetails:
 
     @property
     def stat_type(self):
-        """Gets the stat_type of this DomainItemLocationDetails.
+        r"""Gets the stat_type of this DomainItemLocationDetails.
 
         指标类型
 
@@ -119,7 +119,7 @@ class DomainItemLocationDetails:
 
     @stat_type.setter
     def stat_type(self, stat_type):
-        """Sets the stat_type of this DomainItemLocationDetails.
+        r"""Sets the stat_type of this DomainItemLocationDetails.
 
         指标类型
 
@@ -130,7 +130,7 @@ class DomainItemLocationDetails:
 
     @property
     def domains(self):
-        """Gets the domains of this DomainItemLocationDetails.
+        r"""Gets the domains of this DomainItemLocationDetails.
 
         域名详情数据列表
 
@@ -141,7 +141,7 @@ class DomainItemLocationDetails:
 
     @domains.setter
     def domains(self, domains):
-        """Sets the domains of this DomainItemLocationDetails.
+        r"""Sets the domains of this DomainItemLocationDetails.
 
         域名详情数据列表
 

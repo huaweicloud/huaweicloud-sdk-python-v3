@@ -33,7 +33,7 @@ class QueryAppVersionResponseDTO:
     }
 
     def __init__(self, app_id=None, version=None, values=None, create_time=None, update_time=None):
-        """QueryAppVersionResponseDTO
+        r"""QueryAppVersionResponseDTO
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class QueryAppVersionResponseDTO:
 
     @property
     def app_id(self):
-        """Gets the app_id of this QueryAppVersionResponseDTO.
+        r"""Gets the app_id of this QueryAppVersionResponseDTO.
 
         应用模板ID
 
@@ -82,7 +82,7 @@ class QueryAppVersionResponseDTO:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this QueryAppVersionResponseDTO.
+        r"""Sets the app_id of this QueryAppVersionResponseDTO.
 
         应用模板ID
 
@@ -93,7 +93,7 @@ class QueryAppVersionResponseDTO:
 
     @property
     def version(self):
-        """Gets the version of this QueryAppVersionResponseDTO.
+        r"""Gets the version of this QueryAppVersionResponseDTO.
 
         应用版本
 
@@ -104,7 +104,7 @@ class QueryAppVersionResponseDTO:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this QueryAppVersionResponseDTO.
+        r"""Sets the version of this QueryAppVersionResponseDTO.
 
         应用版本
 
@@ -115,7 +115,7 @@ class QueryAppVersionResponseDTO:
 
     @property
     def values(self):
-        """Gets the values of this QueryAppVersionResponseDTO.
+        r"""Gets the values of this QueryAppVersionResponseDTO.
 
         应用版本配置
 
@@ -126,7 +126,7 @@ class QueryAppVersionResponseDTO:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this QueryAppVersionResponseDTO.
+        r"""Sets the values of this QueryAppVersionResponseDTO.
 
         应用版本配置
 
@@ -137,7 +137,7 @@ class QueryAppVersionResponseDTO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this QueryAppVersionResponseDTO.
+        r"""Gets the create_time of this QueryAppVersionResponseDTO.
 
         创建时间
 
@@ -148,7 +148,7 @@ class QueryAppVersionResponseDTO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this QueryAppVersionResponseDTO.
+        r"""Sets the create_time of this QueryAppVersionResponseDTO.
 
         创建时间
 
@@ -159,7 +159,7 @@ class QueryAppVersionResponseDTO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this QueryAppVersionResponseDTO.
+        r"""Gets the update_time of this QueryAppVersionResponseDTO.
 
         最后一次修改时间
 
@@ -170,7 +170,7 @@ class QueryAppVersionResponseDTO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this QueryAppVersionResponseDTO.
+        r"""Sets the update_time of this QueryAppVersionResponseDTO.
 
         最后一次修改时间
 

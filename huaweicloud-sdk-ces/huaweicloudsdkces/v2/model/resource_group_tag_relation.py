@@ -27,7 +27,7 @@ class ResourceGroupTagRelation:
     }
 
     def __init__(self, key=None, value=None):
-        """ResourceGroupTagRelation
+        r"""ResourceGroupTagRelation
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ResourceGroupTagRelation:
 
     @property
     def key(self):
-        """Gets the key of this ResourceGroupTagRelation.
+        r"""Gets the key of this ResourceGroupTagRelation.
 
         键
 
@@ -60,7 +60,7 @@ class ResourceGroupTagRelation:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ResourceGroupTagRelation.
+        r"""Sets the key of this ResourceGroupTagRelation.
 
         键
 
@@ -71,7 +71,7 @@ class ResourceGroupTagRelation:
 
     @property
     def value(self):
-        """Gets the value of this ResourceGroupTagRelation.
+        r"""Gets the value of this ResourceGroupTagRelation.
 
         值
 
@@ -82,7 +82,7 @@ class ResourceGroupTagRelation:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ResourceGroupTagRelation.
+        r"""Sets the value of this ResourceGroupTagRelation.
 
         值
 

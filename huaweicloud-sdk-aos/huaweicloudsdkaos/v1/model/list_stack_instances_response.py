@@ -26,7 +26,7 @@ class ListStackInstancesResponse(SdkResponse):
     }
 
     def __init__(self, stack_instances=None):
-        """ListStackInstancesResponse
+        r"""ListStackInstancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListStackInstancesResponse(SdkResponse):
 
     @property
     def stack_instances(self):
-        """Gets the stack_instances of this ListStackInstancesResponse.
+        r"""Gets the stack_instances of this ListStackInstancesResponse.
 
         资源栈实例列表
 
@@ -55,7 +55,7 @@ class ListStackInstancesResponse(SdkResponse):
 
     @stack_instances.setter
     def stack_instances(self, stack_instances):
-        """Sets the stack_instances of this ListStackInstancesResponse.
+        r"""Sets the stack_instances of this ListStackInstancesResponse.
 
         资源栈实例列表
 

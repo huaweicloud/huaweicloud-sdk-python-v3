@@ -27,7 +27,7 @@ class ShrinkInstanceNodesRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """ShrinkInstanceNodesRequest
+        r"""ShrinkInstanceNodesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShrinkInstanceNodesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShrinkInstanceNodesRequest.
+        r"""Gets the instance_id of this ShrinkInstanceNodesRequest.
 
         实例ID，可以调用“[查询实例列表和详情](x-wc://file=zh-cn_topic_0000001369935045.xml)”接口获取。如果未申请实例，可以调用“[创建实例](x-wc://file=zh-cn_topic_0000001369734929.xml)”接口创建。
 
@@ -60,7 +60,7 @@ class ShrinkInstanceNodesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShrinkInstanceNodesRequest.
+        r"""Sets the instance_id of this ShrinkInstanceNodesRequest.
 
         实例ID，可以调用“[查询实例列表和详情](x-wc://file=zh-cn_topic_0000001369935045.xml)”接口获取。如果未申请实例，可以调用“[创建实例](x-wc://file=zh-cn_topic_0000001369734929.xml)”接口创建。
 
@@ -71,7 +71,7 @@ class ShrinkInstanceNodesRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShrinkInstanceNodesRequest.
+        r"""Gets the body of this ShrinkInstanceNodesRequest.
 
         :return: The body of this ShrinkInstanceNodesRequest.
         :rtype: :class:`huaweicloudsdkdds.v3.ReduceInstanceNodeRequestBody`
@@ -80,7 +80,7 @@ class ShrinkInstanceNodesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShrinkInstanceNodesRequest.
+        r"""Sets the body of this ShrinkInstanceNodesRequest.
 
         :param body: The body of this ShrinkInstanceNodesRequest.
         :type body: :class:`huaweicloudsdkdds.v3.ReduceInstanceNodeRequestBody`

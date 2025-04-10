@@ -31,7 +31,7 @@ class ListImageRequest:
     }
 
     def __init__(self, type=None, eihealth_project_id=None, name=None, show_empty=None):
-        """ListImageRequest
+        r"""ListImageRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListImageRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListImageRequest.
+        r"""Gets the type of this ListImageRequest.
 
         镜像类型
 
@@ -74,7 +74,7 @@ class ListImageRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListImageRequest.
+        r"""Sets the type of this ListImageRequest.
 
         镜像类型
 
@@ -85,7 +85,7 @@ class ListImageRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this ListImageRequest.
+        r"""Gets the eihealth_project_id of this ListImageRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -96,7 +96,7 @@ class ListImageRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this ListImageRequest.
+        r"""Sets the eihealth_project_id of this ListImageRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -107,7 +107,7 @@ class ListImageRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListImageRequest.
+        r"""Gets the name of this ListImageRequest.
 
         镜像名称
 
@@ -118,7 +118,7 @@ class ListImageRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListImageRequest.
+        r"""Sets the name of this ListImageRequest.
 
         镜像名称
 
@@ -129,7 +129,7 @@ class ListImageRequest:
 
     @property
     def show_empty(self):
-        """Gets the show_empty of this ListImageRequest.
+        r"""Gets the show_empty of this ListImageRequest.
 
         是否展示无镜像版本的镜像
 
@@ -140,7 +140,7 @@ class ListImageRequest:
 
     @show_empty.setter
     def show_empty(self, show_empty):
-        """Sets the show_empty of this ListImageRequest.
+        r"""Sets the show_empty of this ListImageRequest.
 
         是否展示无镜像版本的镜像
 

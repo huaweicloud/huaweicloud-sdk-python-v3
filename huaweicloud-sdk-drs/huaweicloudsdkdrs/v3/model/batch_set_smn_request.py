@@ -27,7 +27,7 @@ class BatchSetSmnRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """BatchSetSmnRequest
+        r"""BatchSetSmnRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchSetSmnRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this BatchSetSmnRequest.
+        r"""Gets the x_language of this BatchSetSmnRequest.
 
         请求语言类型
 
@@ -61,7 +61,7 @@ class BatchSetSmnRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this BatchSetSmnRequest.
+        r"""Sets the x_language of this BatchSetSmnRequest.
 
         请求语言类型
 
@@ -72,7 +72,7 @@ class BatchSetSmnRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchSetSmnRequest.
+        r"""Gets the body of this BatchSetSmnRequest.
 
         :return: The body of this BatchSetSmnRequest.
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchImportSmnInfoReq`
@@ -81,7 +81,7 @@ class BatchSetSmnRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchSetSmnRequest.
+        r"""Sets the body of this BatchSetSmnRequest.
 
         :param body: The body of this BatchSetSmnRequest.
         :type body: :class:`huaweicloudsdkdrs.v3.BatchImportSmnInfoReq`

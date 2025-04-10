@@ -25,7 +25,7 @@ class CreateDliAgencyRequestBody:
     }
 
     def __init__(self, roles=None):
-        """CreateDliAgencyRequestBody
+        r"""CreateDliAgencyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateDliAgencyRequestBody:
 
     @property
     def roles(self):
-        """Gets the roles of this CreateDliAgencyRequestBody.
+        r"""Gets the roles of this CreateDliAgencyRequestBody.
 
         角色目前只支持，obs_adm、dis_adm、ctable_adm、vpc_netadm、smn_adm、te_admin
 
@@ -53,7 +53,7 @@ class CreateDliAgencyRequestBody:
 
     @roles.setter
     def roles(self, roles):
-        """Sets the roles of this CreateDliAgencyRequestBody.
+        r"""Sets the roles of this CreateDliAgencyRequestBody.
 
         角色目前只支持，obs_adm、dis_adm、ctable_adm、vpc_netadm、smn_adm、te_admin
 

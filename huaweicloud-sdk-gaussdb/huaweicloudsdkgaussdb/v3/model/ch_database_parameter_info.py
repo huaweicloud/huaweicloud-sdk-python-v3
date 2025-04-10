@@ -33,7 +33,7 @@ class ChDatabaseParameterInfo:
     }
 
     def __init__(self, param_name=None, data_type=None, default_value=None, value_range=None, description=None):
-        """ChDatabaseParameterInfo
+        r"""ChDatabaseParameterInfo
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class ChDatabaseParameterInfo:
 
     @property
     def param_name(self):
-        """Gets the param_name of this ChDatabaseParameterInfo.
+        r"""Gets the param_name of this ChDatabaseParameterInfo.
 
         参数名称。
 
@@ -77,7 +77,7 @@ class ChDatabaseParameterInfo:
 
     @param_name.setter
     def param_name(self, param_name):
-        """Sets the param_name of this ChDatabaseParameterInfo.
+        r"""Sets the param_name of this ChDatabaseParameterInfo.
 
         参数名称。
 
@@ -88,7 +88,7 @@ class ChDatabaseParameterInfo:
 
     @property
     def data_type(self):
-        """Gets the data_type of this ChDatabaseParameterInfo.
+        r"""Gets the data_type of this ChDatabaseParameterInfo.
 
         参数类型。
 
@@ -99,7 +99,7 @@ class ChDatabaseParameterInfo:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this ChDatabaseParameterInfo.
+        r"""Sets the data_type of this ChDatabaseParameterInfo.
 
         参数类型。
 
@@ -110,7 +110,7 @@ class ChDatabaseParameterInfo:
 
     @property
     def default_value(self):
-        """Gets the default_value of this ChDatabaseParameterInfo.
+        r"""Gets the default_value of this ChDatabaseParameterInfo.
 
         参数默认值。
 
@@ -121,7 +121,7 @@ class ChDatabaseParameterInfo:
 
     @default_value.setter
     def default_value(self, default_value):
-        """Sets the default_value of this ChDatabaseParameterInfo.
+        r"""Sets the default_value of this ChDatabaseParameterInfo.
 
         参数默认值。
 
@@ -132,7 +132,7 @@ class ChDatabaseParameterInfo:
 
     @property
     def value_range(self):
-        """Gets the value_range of this ChDatabaseParameterInfo.
+        r"""Gets the value_range of this ChDatabaseParameterInfo.
 
         参数取值范围。
 
@@ -143,7 +143,7 @@ class ChDatabaseParameterInfo:
 
     @value_range.setter
     def value_range(self, value_range):
-        """Sets the value_range of this ChDatabaseParameterInfo.
+        r"""Sets the value_range of this ChDatabaseParameterInfo.
 
         参数取值范围。
 
@@ -154,7 +154,7 @@ class ChDatabaseParameterInfo:
 
     @property
     def description(self):
-        """Gets the description of this ChDatabaseParameterInfo.
+        r"""Gets the description of this ChDatabaseParameterInfo.
 
         参数描述。
 
@@ -165,7 +165,7 @@ class ChDatabaseParameterInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ChDatabaseParameterInfo.
+        r"""Sets the description of this ChDatabaseParameterInfo.
 
         参数描述。
 

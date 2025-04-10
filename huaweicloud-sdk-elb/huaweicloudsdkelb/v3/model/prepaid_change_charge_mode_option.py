@@ -33,7 +33,7 @@ class PrepaidChangeChargeModeOption:
     }
 
     def __init__(self, include_publicip=None, period_type=None, period_num=None, auto_renew=None, auto_pay=None):
-        """PrepaidChangeChargeModeOption
+        r"""PrepaidChangeChargeModeOption
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class PrepaidChangeChargeModeOption:
 
     @property
     def include_publicip(self):
-        """Gets the include_publicip of this PrepaidChangeChargeModeOption.
+        r"""Gets the include_publicip of this PrepaidChangeChargeModeOption.
 
         是否连同独享按带宽计费的弹性公网IP一起转包周期。 1. 弹性公网IP转包周期之后可以单独解绑，绑定到其他实例，删除 2. 只有独享且按带宽计费的弹性公网IP才被允许转包周期 默认值：false
 
@@ -81,7 +81,7 @@ class PrepaidChangeChargeModeOption:
 
     @include_publicip.setter
     def include_publicip(self, include_publicip):
-        """Sets the include_publicip of this PrepaidChangeChargeModeOption.
+        r"""Sets the include_publicip of this PrepaidChangeChargeModeOption.
 
         是否连同独享按带宽计费的弹性公网IP一起转包周期。 1. 弹性公网IP转包周期之后可以单独解绑，绑定到其他实例，删除 2. 只有独享且按带宽计费的弹性公网IP才被允许转包周期 默认值：false
 
@@ -92,7 +92,7 @@ class PrepaidChangeChargeModeOption:
 
     @property
     def period_type(self):
-        """Gets the period_type of this PrepaidChangeChargeModeOption.
+        r"""Gets the period_type of this PrepaidChangeChargeModeOption.
 
         订购周期类型，当前支持包月和包年： month：月（默认）； year：年；
 
@@ -103,7 +103,7 @@ class PrepaidChangeChargeModeOption:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this PrepaidChangeChargeModeOption.
+        r"""Sets the period_type of this PrepaidChangeChargeModeOption.
 
         订购周期类型，当前支持包月和包年： month：月（默认）； year：年；
 
@@ -114,7 +114,7 @@ class PrepaidChangeChargeModeOption:
 
     @property
     def period_num(self):
-        """Gets the period_num of this PrepaidChangeChargeModeOption.
+        r"""Gets the period_num of this PrepaidChangeChargeModeOption.
 
         订购周期数（默认1），取值会随运营策略变化。 period_type为month时，为[1,9]， period_type为year时，为[1,3]
 
@@ -125,7 +125,7 @@ class PrepaidChangeChargeModeOption:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this PrepaidChangeChargeModeOption.
+        r"""Sets the period_num of this PrepaidChangeChargeModeOption.
 
         订购周期数（默认1），取值会随运营策略变化。 period_type为month时，为[1,9]， period_type为year时，为[1,3]
 
@@ -136,7 +136,7 @@ class PrepaidChangeChargeModeOption:
 
     @property
     def auto_renew(self):
-        """Gets the auto_renew of this PrepaidChangeChargeModeOption.
+        r"""Gets the auto_renew of this PrepaidChangeChargeModeOption.
 
         是否自动续订； true：自动续订 false：不自动续订（默认）
 
@@ -147,7 +147,7 @@ class PrepaidChangeChargeModeOption:
 
     @auto_renew.setter
     def auto_renew(self, auto_renew):
-        """Sets the auto_renew of this PrepaidChangeChargeModeOption.
+        r"""Sets the auto_renew of this PrepaidChangeChargeModeOption.
 
         是否自动续订； true：自动续订 false：不自动续订（默认）
 
@@ -158,7 +158,7 @@ class PrepaidChangeChargeModeOption:
 
     @property
     def auto_pay(self):
-        """Gets the auto_pay of this PrepaidChangeChargeModeOption.
+        r"""Gets the auto_pay of this PrepaidChangeChargeModeOption.
 
         下单订购后，是否自动从客户的账户中支付； true：自动支付； false：不自动支付（默认）。 自动支付时，只能使用账户的现金支付；如果要使用代金券，请选择不自动支付，然后在用户费用中心，选择代金券支付。
 
@@ -169,7 +169,7 @@ class PrepaidChangeChargeModeOption:
 
     @auto_pay.setter
     def auto_pay(self, auto_pay):
-        """Sets the auto_pay of this PrepaidChangeChargeModeOption.
+        r"""Sets the auto_pay of this PrepaidChangeChargeModeOption.
 
         下单订购后，是否自动从客户的账户中支付； true：自动支付； false：不自动支付（默认）。 自动支付时，只能使用账户的现金支付；如果要使用代金券，请选择不自动支付，然后在用户费用中心，选择代金券支付。
 

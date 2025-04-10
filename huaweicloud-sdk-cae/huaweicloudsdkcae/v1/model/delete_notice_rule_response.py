@@ -26,7 +26,7 @@ class DeleteNoticeRuleResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DeleteNoticeRuleResponse
+        r"""DeleteNoticeRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteNoticeRuleResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this DeleteNoticeRuleResponse.
+        r"""Gets the body of this DeleteNoticeRuleResponse.
 
         :return: The body of this DeleteNoticeRuleResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteNoticeRuleResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteNoticeRuleResponse.
+        r"""Sets the body of this DeleteNoticeRuleResponse.
 
         :param body: The body of this DeleteNoticeRuleResponse.
         :type body: str

@@ -29,7 +29,7 @@ class UpdateSecurityPermissionSetRequest:
     }
 
     def __init__(self, permission_set_id=None, workspace=None, body=None):
-        """UpdateSecurityPermissionSetRequest
+        r"""UpdateSecurityPermissionSetRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateSecurityPermissionSetRequest:
 
     @property
     def permission_set_id(self):
-        """Gets the permission_set_id of this UpdateSecurityPermissionSetRequest.
+        r"""Gets the permission_set_id of this UpdateSecurityPermissionSetRequest.
 
         权限集id
 
@@ -66,7 +66,7 @@ class UpdateSecurityPermissionSetRequest:
 
     @permission_set_id.setter
     def permission_set_id(self, permission_set_id):
-        """Sets the permission_set_id of this UpdateSecurityPermissionSetRequest.
+        r"""Sets the permission_set_id of this UpdateSecurityPermissionSetRequest.
 
         权限集id
 
@@ -77,7 +77,7 @@ class UpdateSecurityPermissionSetRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this UpdateSecurityPermissionSetRequest.
+        r"""Gets the workspace of this UpdateSecurityPermissionSetRequest.
 
         DataArts Studio工作空间ID
 
@@ -88,7 +88,7 @@ class UpdateSecurityPermissionSetRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this UpdateSecurityPermissionSetRequest.
+        r"""Sets the workspace of this UpdateSecurityPermissionSetRequest.
 
         DataArts Studio工作空间ID
 
@@ -99,7 +99,7 @@ class UpdateSecurityPermissionSetRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSecurityPermissionSetRequest.
+        r"""Gets the body of this UpdateSecurityPermissionSetRequest.
 
         :return: The body of this UpdateSecurityPermissionSetRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.PermissionSetCreateDTO`
@@ -108,7 +108,7 @@ class UpdateSecurityPermissionSetRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSecurityPermissionSetRequest.
+        r"""Sets the body of this UpdateSecurityPermissionSetRequest.
 
         :param body: The body of this UpdateSecurityPermissionSetRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.PermissionSetCreateDTO`

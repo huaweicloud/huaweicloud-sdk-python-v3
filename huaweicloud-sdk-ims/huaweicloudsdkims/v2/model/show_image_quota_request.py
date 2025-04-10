@@ -23,7 +23,7 @@ class ShowImageQuotaRequest:
     }
 
     def __init__(self):
-        """ShowImageQuotaRequest
+        r"""ShowImageQuotaRequest
 
         The model defined in huaweicloud sdk
 

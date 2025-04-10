@@ -27,7 +27,7 @@ class DeleteTaskRequest:
     }
 
     def __init__(self, service_name=None, task_id=None):
-        """DeleteTaskRequest
+        r"""DeleteTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteTaskRequest:
 
     @property
     def service_name(self):
-        """Gets the service_name of this DeleteTaskRequest.
+        r"""Gets the service_name of this DeleteTaskRequest.
 
         服务名称
 
@@ -59,7 +59,7 @@ class DeleteTaskRequest:
 
     @service_name.setter
     def service_name(self, service_name):
-        """Sets the service_name of this DeleteTaskRequest.
+        r"""Sets the service_name of this DeleteTaskRequest.
 
         服务名称
 
@@ -70,7 +70,7 @@ class DeleteTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this DeleteTaskRequest.
+        r"""Gets the task_id of this DeleteTaskRequest.
 
         指定的服务作业ID
 
@@ -81,7 +81,7 @@ class DeleteTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this DeleteTaskRequest.
+        r"""Sets the task_id of this DeleteTaskRequest.
 
         指定的服务作业ID
 

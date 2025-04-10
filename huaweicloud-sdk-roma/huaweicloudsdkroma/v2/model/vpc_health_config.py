@@ -45,7 +45,7 @@ class VpcHealthConfig:
     }
 
     def __init__(self, protocol=None, path=None, method=None, port=None, threshold_normal=None, threshold_abnormal=None, time_interval=None, http_code=None, enable_client_ssl=None, status=None, timeout=None):
-        """VpcHealthConfig
+        r"""VpcHealthConfig
 
         The model defined in huaweicloud sdk
 
@@ -109,7 +109,7 @@ class VpcHealthConfig:
 
     @property
     def protocol(self):
-        """Gets the protocol of this VpcHealthConfig.
+        r"""Gets the protocol of this VpcHealthConfig.
 
         使用以下协议，对VPC中主机执行健康检查： - TCP - HTTP - HTTPS
 
@@ -120,7 +120,7 @@ class VpcHealthConfig:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this VpcHealthConfig.
+        r"""Sets the protocol of this VpcHealthConfig.
 
         使用以下协议，对VPC中主机执行健康检查： - TCP - HTTP - HTTPS
 
@@ -131,7 +131,7 @@ class VpcHealthConfig:
 
     @property
     def path(self):
-        """Gets the path of this VpcHealthConfig.
+        r"""Gets the path of this VpcHealthConfig.
 
         健康检查时的目标路径。protocol = http或https时必选
 
@@ -142,7 +142,7 @@ class VpcHealthConfig:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this VpcHealthConfig.
+        r"""Sets the path of this VpcHealthConfig.
 
         健康检查时的目标路径。protocol = http或https时必选
 
@@ -153,7 +153,7 @@ class VpcHealthConfig:
 
     @property
     def method(self):
-        """Gets the method of this VpcHealthConfig.
+        r"""Gets the method of this VpcHealthConfig.
 
         健康检查时的请求方法
 
@@ -164,7 +164,7 @@ class VpcHealthConfig:
 
     @method.setter
     def method(self, method):
-        """Sets the method of this VpcHealthConfig.
+        r"""Sets the method of this VpcHealthConfig.
 
         健康检查时的请求方法
 
@@ -175,7 +175,7 @@ class VpcHealthConfig:
 
     @property
     def port(self):
-        """Gets the port of this VpcHealthConfig.
+        r"""Gets the port of this VpcHealthConfig.
 
         健康检查的目标端口，缺少或port = 0时为VPC中主机的端口号。  若此端口存在非0值，则使用此端口进行健康检查。
 
@@ -186,7 +186,7 @@ class VpcHealthConfig:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this VpcHealthConfig.
+        r"""Sets the port of this VpcHealthConfig.
 
         健康检查的目标端口，缺少或port = 0时为VPC中主机的端口号。  若此端口存在非0值，则使用此端口进行健康检查。
 
@@ -197,7 +197,7 @@ class VpcHealthConfig:
 
     @property
     def threshold_normal(self):
-        """Gets the threshold_normal of this VpcHealthConfig.
+        r"""Gets the threshold_normal of this VpcHealthConfig.
 
         正常阈值。判定VPC通道中主机正常的依据为：连续检查x成功，x为您设置的正常阈值。
 
@@ -208,7 +208,7 @@ class VpcHealthConfig:
 
     @threshold_normal.setter
     def threshold_normal(self, threshold_normal):
-        """Sets the threshold_normal of this VpcHealthConfig.
+        r"""Sets the threshold_normal of this VpcHealthConfig.
 
         正常阈值。判定VPC通道中主机正常的依据为：连续检查x成功，x为您设置的正常阈值。
 
@@ -219,7 +219,7 @@ class VpcHealthConfig:
 
     @property
     def threshold_abnormal(self):
-        """Gets the threshold_abnormal of this VpcHealthConfig.
+        r"""Gets the threshold_abnormal of this VpcHealthConfig.
 
         异常阈值。判定VPC通道中主机异常的依据为：连续检查x失败，x为您设置的异常阈值。
 
@@ -230,7 +230,7 @@ class VpcHealthConfig:
 
     @threshold_abnormal.setter
     def threshold_abnormal(self, threshold_abnormal):
-        """Sets the threshold_abnormal of this VpcHealthConfig.
+        r"""Sets the threshold_abnormal of this VpcHealthConfig.
 
         异常阈值。判定VPC通道中主机异常的依据为：连续检查x失败，x为您设置的异常阈值。
 
@@ -241,7 +241,7 @@ class VpcHealthConfig:
 
     @property
     def time_interval(self):
-        """Gets the time_interval of this VpcHealthConfig.
+        r"""Gets the time_interval of this VpcHealthConfig.
 
         间隔时间：连续两次检查的间隔时间，单位为秒。必须大于timeout字段取值。
 
@@ -252,7 +252,7 @@ class VpcHealthConfig:
 
     @time_interval.setter
     def time_interval(self, time_interval):
-        """Sets the time_interval of this VpcHealthConfig.
+        r"""Sets the time_interval of this VpcHealthConfig.
 
         间隔时间：连续两次检查的间隔时间，单位为秒。必须大于timeout字段取值。
 
@@ -263,7 +263,7 @@ class VpcHealthConfig:
 
     @property
     def http_code(self):
-        """Gets the http_code of this VpcHealthConfig.
+        r"""Gets the http_code of this VpcHealthConfig.
 
         检查目标HTTP响应时，判断成功使用的HTTP响应码。取值范围为100到599之前的任意整数值，支持如下三种格式： - 多个值，如：200,201,202 - 一系列值，如：200-299 - 组合值，如：201,202,210-299 protocol = http时必选
 
@@ -274,7 +274,7 @@ class VpcHealthConfig:
 
     @http_code.setter
     def http_code(self, http_code):
-        """Sets the http_code of this VpcHealthConfig.
+        r"""Sets the http_code of this VpcHealthConfig.
 
         检查目标HTTP响应时，判断成功使用的HTTP响应码。取值范围为100到599之前的任意整数值，支持如下三种格式： - 多个值，如：200,201,202 - 一系列值，如：200-299 - 组合值，如：201,202,210-299 protocol = http时必选
 
@@ -285,7 +285,7 @@ class VpcHealthConfig:
 
     @property
     def enable_client_ssl(self):
-        """Gets the enable_client_ssl of this VpcHealthConfig.
+        r"""Gets the enable_client_ssl of this VpcHealthConfig.
 
         是否开启双向认证。若开启，则使用实例配置中的backend_client_certificate配置项的证书
 
@@ -296,7 +296,7 @@ class VpcHealthConfig:
 
     @enable_client_ssl.setter
     def enable_client_ssl(self, enable_client_ssl):
-        """Sets the enable_client_ssl of this VpcHealthConfig.
+        r"""Sets the enable_client_ssl of this VpcHealthConfig.
 
         是否开启双向认证。若开启，则使用实例配置中的backend_client_certificate配置项的证书
 
@@ -307,7 +307,7 @@ class VpcHealthConfig:
 
     @property
     def status(self):
-        """Gets the status of this VpcHealthConfig.
+        r"""Gets the status of this VpcHealthConfig.
 
         健康检查状态   - 1：可用   - 2：不可用
 
@@ -318,7 +318,7 @@ class VpcHealthConfig:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this VpcHealthConfig.
+        r"""Sets the status of this VpcHealthConfig.
 
         健康检查状态   - 1：可用   - 2：不可用
 
@@ -329,7 +329,7 @@ class VpcHealthConfig:
 
     @property
     def timeout(self):
-        """Gets the timeout of this VpcHealthConfig.
+        r"""Gets the timeout of this VpcHealthConfig.
 
         超时时间：检查期间，无响应的时间，单位为秒。必须小于time_interval字段取值。
 
@@ -340,7 +340,7 @@ class VpcHealthConfig:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this VpcHealthConfig.
+        r"""Sets the timeout of this VpcHealthConfig.
 
         超时时间：检查期间，无响应的时间，单位为秒。必须小于time_interval字段取值。
 

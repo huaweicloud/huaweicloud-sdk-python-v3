@@ -26,7 +26,7 @@ class ListTagPolicyServicesResponse(SdkResponse):
     }
 
     def __init__(self, services=None):
-        """ListTagPolicyServicesResponse
+        r"""ListTagPolicyServicesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListTagPolicyServicesResponse(SdkResponse):
 
     @property
     def services(self):
-        """Gets the services of this ListTagPolicyServicesResponse.
+        r"""Gets the services of this ListTagPolicyServicesResponse.
 
         :return: The services of this ListTagPolicyServicesResponse.
         :rtype: list[:class:`huaweicloudsdkorganizations.v1.TagPolicyServiceDto`]
@@ -53,7 +53,7 @@ class ListTagPolicyServicesResponse(SdkResponse):
 
     @services.setter
     def services(self, services):
-        """Sets the services of this ListTagPolicyServicesResponse.
+        r"""Sets the services of this ListTagPolicyServicesResponse.
 
         :param services: The services of this ListTagPolicyServicesResponse.
         :type services: list[:class:`huaweicloudsdkorganizations.v1.TagPolicyServiceDto`]

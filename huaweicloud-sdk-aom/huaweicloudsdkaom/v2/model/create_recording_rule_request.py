@@ -27,7 +27,7 @@ class CreateRecordingRuleRequest:
     }
 
     def __init__(self, prometheus_instance=None, body=None):
-        """CreateRecordingRuleRequest
+        r"""CreateRecordingRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateRecordingRuleRequest:
 
     @property
     def prometheus_instance(self):
-        """Gets the prometheus_instance of this CreateRecordingRuleRequest.
+        r"""Gets the prometheus_instance of this CreateRecordingRuleRequest.
 
         prometheus实例id。
 
@@ -60,7 +60,7 @@ class CreateRecordingRuleRequest:
 
     @prometheus_instance.setter
     def prometheus_instance(self, prometheus_instance):
-        """Sets the prometheus_instance of this CreateRecordingRuleRequest.
+        r"""Sets the prometheus_instance of this CreateRecordingRuleRequest.
 
         prometheus实例id。
 
@@ -71,7 +71,7 @@ class CreateRecordingRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateRecordingRuleRequest.
+        r"""Gets the body of this CreateRecordingRuleRequest.
 
         :return: The body of this CreateRecordingRuleRequest.
         :rtype: :class:`huaweicloudsdkaom.v2.RecordingRuleRequest`
@@ -80,7 +80,7 @@ class CreateRecordingRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateRecordingRuleRequest.
+        r"""Sets the body of this CreateRecordingRuleRequest.
 
         :param body: The body of this CreateRecordingRuleRequest.
         :type body: :class:`huaweicloudsdkaom.v2.RecordingRuleRequest`

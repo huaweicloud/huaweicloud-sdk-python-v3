@@ -25,7 +25,7 @@ class BatchAssociateInstancesRequest:
     }
 
     def __init__(self, body=None):
-        """BatchAssociateInstancesRequest
+        r"""BatchAssociateInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchAssociateInstancesRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchAssociateInstancesRequest.
+        r"""Gets the body of this BatchAssociateInstancesRequest.
 
         :return: The body of this BatchAssociateInstancesRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.PreBatchAttachInstancesReq`
@@ -52,7 +52,7 @@ class BatchAssociateInstancesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchAssociateInstancesRequest.
+        r"""Sets the body of this BatchAssociateInstancesRequest.
 
         :param body: The body of this BatchAssociateInstancesRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.PreBatchAttachInstancesReq`

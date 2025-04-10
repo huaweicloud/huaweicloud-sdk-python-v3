@@ -29,7 +29,7 @@ class BatchHandRequest:
     }
 
     def __init__(self, conference_id=None, x_conference_authorization=None, body=None):
-        """BatchHandRequest
+        r"""BatchHandRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class BatchHandRequest:
 
     @property
     def conference_id(self):
-        """Gets the conference_id of this BatchHandRequest.
+        r"""Gets the conference_id of this BatchHandRequest.
 
         会议ID。
 
@@ -66,7 +66,7 @@ class BatchHandRequest:
 
     @conference_id.setter
     def conference_id(self, conference_id):
-        """Sets the conference_id of this BatchHandRequest.
+        r"""Sets the conference_id of this BatchHandRequest.
 
         会议ID。
 
@@ -77,7 +77,7 @@ class BatchHandRequest:
 
     @property
     def x_conference_authorization(self):
-        """Gets the x_conference_authorization of this BatchHandRequest.
+        r"""Gets the x_conference_authorization of this BatchHandRequest.
 
         会控Token，通过[[获取会控token](https://support.huaweicloud.com/api-meeting/meeting_21_0027.html)](tag:hws)[[获取会控token](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0027.html)](tag:hk)接口获得。
 
@@ -88,7 +88,7 @@ class BatchHandRequest:
 
     @x_conference_authorization.setter
     def x_conference_authorization(self, x_conference_authorization):
-        """Sets the x_conference_authorization of this BatchHandRequest.
+        r"""Sets the x_conference_authorization of this BatchHandRequest.
 
         会控Token，通过[[获取会控token](https://support.huaweicloud.com/api-meeting/meeting_21_0027.html)](tag:hws)[[获取会控token](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0027.html)](tag:hk)接口获得。
 
@@ -99,7 +99,7 @@ class BatchHandRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchHandRequest.
+        r"""Gets the body of this BatchHandRequest.
 
         :return: The body of this BatchHandRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RestBatchHandsUpReqBody`
@@ -108,7 +108,7 @@ class BatchHandRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchHandRequest.
+        r"""Sets the body of this BatchHandRequest.
 
         :param body: The body of this BatchHandRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.RestBatchHandsUpReqBody`

@@ -28,7 +28,7 @@ class ListUsersOfStreamResponse(SdkResponse):
     }
 
     def __init__(self, data_list=None, x_request_id=None):
-        """ListUsersOfStreamResponse
+        r"""ListUsersOfStreamResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListUsersOfStreamResponse(SdkResponse):
 
     @property
     def data_list(self):
-        """Gets the data_list of this ListUsersOfStreamResponse.
+        r"""Gets the data_list of this ListUsersOfStreamResponse.
 
         观众趋势列表。
 
@@ -62,7 +62,7 @@ class ListUsersOfStreamResponse(SdkResponse):
 
     @data_list.setter
     def data_list(self, data_list):
-        """Sets the data_list of this ListUsersOfStreamResponse.
+        r"""Sets the data_list of this ListUsersOfStreamResponse.
 
         观众趋势列表。
 
@@ -73,7 +73,7 @@ class ListUsersOfStreamResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListUsersOfStreamResponse.
+        r"""Gets the x_request_id of this ListUsersOfStreamResponse.
 
         :return: The x_request_id of this ListUsersOfStreamResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class ListUsersOfStreamResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListUsersOfStreamResponse.
+        r"""Sets the x_request_id of this ListUsersOfStreamResponse.
 
         :param x_request_id: The x_request_id of this ListUsersOfStreamResponse.
         :type x_request_id: str

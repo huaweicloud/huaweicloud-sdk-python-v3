@@ -63,7 +63,7 @@ class SubNetworkInterface:
     }
 
     def __init__(self, id=None, virsubnet_id=None, private_ip_address=None, ipv6_ip_address=None, mac_address=None, parent_device_id=None, parent_id=None, description=None, vpc_id=None, vlan_id=None, security_groups=None, tags=None, project_id=None, created_at=None, allowed_address_pairs=None, state=None, instance_id=None, instance_type=None, scope=None, security_enabled=None):
-        """SubNetworkInterface
+        r"""SubNetworkInterface
 
         The model defined in huaweicloud sdk
 
@@ -156,7 +156,7 @@ class SubNetworkInterface:
 
     @property
     def id(self):
-        """Gets the id of this SubNetworkInterface.
+        r"""Gets the id of this SubNetworkInterface.
 
         功能说明：辅助弹性网卡的唯一标识 取值范围：带(-)的标准UUID
 
@@ -167,7 +167,7 @@ class SubNetworkInterface:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SubNetworkInterface.
+        r"""Sets the id of this SubNetworkInterface.
 
         功能说明：辅助弹性网卡的唯一标识 取值范围：带(-)的标准UUID
 
@@ -178,7 +178,7 @@ class SubNetworkInterface:
 
     @property
     def virsubnet_id(self):
-        """Gets the virsubnet_id of this SubNetworkInterface.
+        r"""Gets the virsubnet_id of this SubNetworkInterface.
 
         功能说明：虚拟子网ID 取值范围：标准UUID
 
@@ -189,7 +189,7 @@ class SubNetworkInterface:
 
     @virsubnet_id.setter
     def virsubnet_id(self, virsubnet_id):
-        """Sets the virsubnet_id of this SubNetworkInterface.
+        r"""Sets the virsubnet_id of this SubNetworkInterface.
 
         功能说明：虚拟子网ID 取值范围：标准UUID
 
@@ -200,7 +200,7 @@ class SubNetworkInterface:
 
     @property
     def private_ip_address(self):
-        """Gets the private_ip_address of this SubNetworkInterface.
+        r"""Gets the private_ip_address of this SubNetworkInterface.
 
         功能说明：辅助弹性网卡的私有IPv4地址 取值范围：必须在虚拟子网的网段内，不填则随机在虚拟子网网段内随机分配
 
@@ -211,7 +211,7 @@ class SubNetworkInterface:
 
     @private_ip_address.setter
     def private_ip_address(self, private_ip_address):
-        """Sets the private_ip_address of this SubNetworkInterface.
+        r"""Sets the private_ip_address of this SubNetworkInterface.
 
         功能说明：辅助弹性网卡的私有IPv4地址 取值范围：必须在虚拟子网的网段内，不填则随机在虚拟子网网段内随机分配
 
@@ -222,7 +222,7 @@ class SubNetworkInterface:
 
     @property
     def ipv6_ip_address(self):
-        """Gets the ipv6_ip_address of this SubNetworkInterface.
+        r"""Gets the ipv6_ip_address of this SubNetworkInterface.
 
         功能说明：辅助弹性网卡的IPv6地址
 
@@ -233,7 +233,7 @@ class SubNetworkInterface:
 
     @ipv6_ip_address.setter
     def ipv6_ip_address(self, ipv6_ip_address):
-        """Sets the ipv6_ip_address of this SubNetworkInterface.
+        r"""Sets the ipv6_ip_address of this SubNetworkInterface.
 
         功能说明：辅助弹性网卡的IPv6地址
 
@@ -244,7 +244,7 @@ class SubNetworkInterface:
 
     @property
     def mac_address(self):
-        """Gets the mac_address of this SubNetworkInterface.
+        r"""Gets the mac_address of this SubNetworkInterface.
 
         功能说明：辅助弹性网卡的mac地址 取值范围：合法的mac地址，系统随机分配
 
@@ -255,7 +255,7 @@ class SubNetworkInterface:
 
     @mac_address.setter
     def mac_address(self, mac_address):
-        """Sets the mac_address of this SubNetworkInterface.
+        r"""Sets the mac_address of this SubNetworkInterface.
 
         功能说明：辅助弹性网卡的mac地址 取值范围：合法的mac地址，系统随机分配
 
@@ -266,7 +266,7 @@ class SubNetworkInterface:
 
     @property
     def parent_device_id(self):
-        """Gets the parent_device_id of this SubNetworkInterface.
+        r"""Gets the parent_device_id of this SubNetworkInterface.
 
         功能说明：设备ID 取值范围：标准UUID 
 
@@ -277,7 +277,7 @@ class SubNetworkInterface:
 
     @parent_device_id.setter
     def parent_device_id(self, parent_device_id):
-        """Sets the parent_device_id of this SubNetworkInterface.
+        r"""Sets the parent_device_id of this SubNetworkInterface.
 
         功能说明：设备ID 取值范围：标准UUID 
 
@@ -288,7 +288,7 @@ class SubNetworkInterface:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this SubNetworkInterface.
+        r"""Gets the parent_id of this SubNetworkInterface.
 
         功能说明：宿主网络接口的ID 取值范围：标准UUID
 
@@ -299,7 +299,7 @@ class SubNetworkInterface:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this SubNetworkInterface.
+        r"""Sets the parent_id of this SubNetworkInterface.
 
         功能说明：宿主网络接口的ID 取值范围：标准UUID
 
@@ -310,7 +310,7 @@ class SubNetworkInterface:
 
     @property
     def description(self):
-        """Gets the description of this SubNetworkInterface.
+        r"""Gets the description of this SubNetworkInterface.
 
         功能说明：辅助弹性网卡的描述信息 取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -321,7 +321,7 @@ class SubNetworkInterface:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this SubNetworkInterface.
+        r"""Sets the description of this SubNetworkInterface.
 
         功能说明：辅助弹性网卡的描述信息 取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -332,7 +332,7 @@ class SubNetworkInterface:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this SubNetworkInterface.
+        r"""Gets the vpc_id of this SubNetworkInterface.
 
         功能说明：辅助弹性网卡所属的VPC_ID 取值范围：标准UUID
 
@@ -343,7 +343,7 @@ class SubNetworkInterface:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this SubNetworkInterface.
+        r"""Sets the vpc_id of this SubNetworkInterface.
 
         功能说明：辅助弹性网卡所属的VPC_ID 取值范围：标准UUID
 
@@ -354,7 +354,7 @@ class SubNetworkInterface:
 
     @property
     def vlan_id(self):
-        """Gets the vlan_id of this SubNetworkInterface.
+        r"""Gets the vlan_id of this SubNetworkInterface.
 
         功能说明：辅助弹性网卡的VLAN ID 取值范围：1-4094 约束：同一个宿主网络接口下唯一
 
@@ -365,7 +365,7 @@ class SubNetworkInterface:
 
     @vlan_id.setter
     def vlan_id(self, vlan_id):
-        """Sets the vlan_id of this SubNetworkInterface.
+        r"""Sets the vlan_id of this SubNetworkInterface.
 
         功能说明：辅助弹性网卡的VLAN ID 取值范围：1-4094 约束：同一个宿主网络接口下唯一
 
@@ -376,7 +376,7 @@ class SubNetworkInterface:
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this SubNetworkInterface.
+        r"""Gets the security_groups of this SubNetworkInterface.
 
         功能说明：安全组的ID列表；例如：\"security_groups\": [\"a0608cbf-d047-4f54-8b28-cd7b59853fff\"] 取值范围：默认值为系统默认安全组
 
@@ -387,7 +387,7 @@ class SubNetworkInterface:
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this SubNetworkInterface.
+        r"""Sets the security_groups of this SubNetworkInterface.
 
         功能说明：安全组的ID列表；例如：\"security_groups\": [\"a0608cbf-d047-4f54-8b28-cd7b59853fff\"] 取值范围：默认值为系统默认安全组
 
@@ -398,7 +398,7 @@ class SubNetworkInterface:
 
     @property
     def tags(self):
-        """Gets the tags of this SubNetworkInterface.
+        r"""Gets the tags of this SubNetworkInterface.
 
         功能说明：辅助弹性网卡的标签列表
 
@@ -409,7 +409,7 @@ class SubNetworkInterface:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this SubNetworkInterface.
+        r"""Sets the tags of this SubNetworkInterface.
 
         功能说明：辅助弹性网卡的标签列表
 
@@ -420,7 +420,7 @@ class SubNetworkInterface:
 
     @property
     def project_id(self):
-        """Gets the project_id of this SubNetworkInterface.
+        r"""Gets the project_id of this SubNetworkInterface.
 
         功能说明：辅助弹性网卡所属项目ID
 
@@ -431,7 +431,7 @@ class SubNetworkInterface:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this SubNetworkInterface.
+        r"""Sets the project_id of this SubNetworkInterface.
 
         功能说明：辅助弹性网卡所属项目ID
 
@@ -442,7 +442,7 @@ class SubNetworkInterface:
 
     @property
     def created_at(self):
-        """Gets the created_at of this SubNetworkInterface.
+        r"""Gets the created_at of this SubNetworkInterface.
 
         功能说明：辅助弹性网卡的创建时间 取值范围：UTC时间格式：yyyy-MM-ddTHH:mm:ss
 
@@ -453,7 +453,7 @@ class SubNetworkInterface:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this SubNetworkInterface.
+        r"""Sets the created_at of this SubNetworkInterface.
 
         功能说明：辅助弹性网卡的创建时间 取值范围：UTC时间格式：yyyy-MM-ddTHH:mm:ss
 
@@ -464,7 +464,7 @@ class SubNetworkInterface:
 
     @property
     def allowed_address_pairs(self):
-        """Gets the allowed_address_pairs of this SubNetworkInterface.
+        r"""Gets the allowed_address_pairs of this SubNetworkInterface.
 
         1. 扩展属性：IP/Mac对列表，allowed_address_pair参见“allowed_address_pair对象” 2. 使用说明: IP地址不允许为 “0.0.0.0”如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组硬件SDN环境不支持ip_address属性配置为CIDR
 
@@ -475,7 +475,7 @@ class SubNetworkInterface:
 
     @allowed_address_pairs.setter
     def allowed_address_pairs(self, allowed_address_pairs):
-        """Sets the allowed_address_pairs of this SubNetworkInterface.
+        r"""Sets the allowed_address_pairs of this SubNetworkInterface.
 
         1. 扩展属性：IP/Mac对列表，allowed_address_pair参见“allowed_address_pair对象” 2. 使用说明: IP地址不允许为 “0.0.0.0”如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组硬件SDN环境不支持ip_address属性配置为CIDR
 
@@ -486,7 +486,7 @@ class SubNetworkInterface:
 
     @property
     def state(self):
-        """Gets the state of this SubNetworkInterface.
+        r"""Gets the state of this SubNetworkInterface.
 
         功能说明：辅助弹性网卡当前状态
 
@@ -497,7 +497,7 @@ class SubNetworkInterface:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this SubNetworkInterface.
+        r"""Sets the state of this SubNetworkInterface.
 
         功能说明：辅助弹性网卡当前状态
 
@@ -508,7 +508,7 @@ class SubNetworkInterface:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SubNetworkInterface.
+        r"""Gets the instance_id of this SubNetworkInterface.
 
         功能说明：辅助弹性网卡所属实例ID，例如RDS实例ID
 
@@ -519,7 +519,7 @@ class SubNetworkInterface:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SubNetworkInterface.
+        r"""Sets the instance_id of this SubNetworkInterface.
 
         功能说明：辅助弹性网卡所属实例ID，例如RDS实例ID
 
@@ -530,7 +530,7 @@ class SubNetworkInterface:
 
     @property
     def instance_type(self):
-        """Gets the instance_type of this SubNetworkInterface.
+        r"""Gets the instance_type of this SubNetworkInterface.
 
         功能说明：辅助弹性网卡所属实例类型，例如“RDS”
 
@@ -541,7 +541,7 @@ class SubNetworkInterface:
 
     @instance_type.setter
     def instance_type(self, instance_type):
-        """Sets the instance_type of this SubNetworkInterface.
+        r"""Sets the instance_type of this SubNetworkInterface.
 
         功能说明：辅助弹性网卡所属实例类型，例如“RDS”
 
@@ -552,7 +552,7 @@ class SubNetworkInterface:
 
     @property
     def scope(self):
-        """Gets the scope of this SubNetworkInterface.
+        r"""Gets the scope of this SubNetworkInterface.
 
         功能说明：辅助弹性网卡所在站点的公网出口信息
 
@@ -563,7 +563,7 @@ class SubNetworkInterface:
 
     @scope.setter
     def scope(self, scope):
-        """Sets the scope of this SubNetworkInterface.
+        r"""Sets the scope of this SubNetworkInterface.
 
         功能说明：辅助弹性网卡所在站点的公网出口信息
 
@@ -574,7 +574,7 @@ class SubNetworkInterface:
 
     @property
     def security_enabled(self):
-        """Gets the security_enabled of this SubNetworkInterface.
+        r"""Gets the security_enabled of this SubNetworkInterface.
 
         功能说明：辅助弹性网卡安全使能标记，如果不使能则安全组不生效。 取值范围：true（使能），false（不使能）
 
@@ -585,7 +585,7 @@ class SubNetworkInterface:
 
     @security_enabled.setter
     def security_enabled(self, security_enabled):
-        """Sets the security_enabled of this SubNetworkInterface.
+        r"""Sets the security_enabled of this SubNetworkInterface.
 
         功能说明：辅助弹性网卡安全使能标记，如果不使能则安全组不生效。 取值范围：true（使能），false（不使能）
 

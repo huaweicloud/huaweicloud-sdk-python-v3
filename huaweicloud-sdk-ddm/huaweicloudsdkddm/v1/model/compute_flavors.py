@@ -51,7 +51,7 @@ class ComputeFlavors:
     }
 
     def __init__(self, id=None, type_code=None, code=None, iaas_code=None, cpu=None, mem=None, max_connections=None, server_type=None, architecture=None, az_status=None, region_status=None, group_type=None, db_type=None, extend_fields=None):
-        """ComputeFlavors
+        r"""ComputeFlavors
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class ComputeFlavors:
 
     @property
     def id(self):
-        """Gets the id of this ComputeFlavors.
+        r"""Gets the id of this ComputeFlavors.
 
         规格id。
 
@@ -145,7 +145,7 @@ class ComputeFlavors:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ComputeFlavors.
+        r"""Sets the id of this ComputeFlavors.
 
         规格id。
 
@@ -156,7 +156,7 @@ class ComputeFlavors:
 
     @property
     def type_code(self):
-        """Gets the type_code of this ComputeFlavors.
+        r"""Gets the type_code of this ComputeFlavors.
 
         资源类型编码。
 
@@ -167,7 +167,7 @@ class ComputeFlavors:
 
     @type_code.setter
     def type_code(self, type_code):
-        """Sets the type_code of this ComputeFlavors.
+        r"""Sets the type_code of this ComputeFlavors.
 
         资源类型编码。
 
@@ -178,7 +178,7 @@ class ComputeFlavors:
 
     @property
     def code(self):
-        """Gets the code of this ComputeFlavors.
+        r"""Gets the code of this ComputeFlavors.
 
         DDM内部记录的虚机规格类型。
 
@@ -189,7 +189,7 @@ class ComputeFlavors:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ComputeFlavors.
+        r"""Sets the code of this ComputeFlavors.
 
         DDM内部记录的虚机规格类型。
 
@@ -200,7 +200,7 @@ class ComputeFlavors:
 
     @property
     def iaas_code(self):
-        """Gets the iaas_code of this ComputeFlavors.
+        r"""Gets the iaas_code of this ComputeFlavors.
 
         iaas记录的虚机规格类型。
 
@@ -211,7 +211,7 @@ class ComputeFlavors:
 
     @iaas_code.setter
     def iaas_code(self, iaas_code):
-        """Sets the iaas_code of this ComputeFlavors.
+        r"""Sets the iaas_code of this ComputeFlavors.
 
         iaas记录的虚机规格类型。
 
@@ -222,7 +222,7 @@ class ComputeFlavors:
 
     @property
     def cpu(self):
-        """Gets the cpu of this ComputeFlavors.
+        r"""Gets the cpu of this ComputeFlavors.
 
         cpu核数。
 
@@ -233,7 +233,7 @@ class ComputeFlavors:
 
     @cpu.setter
     def cpu(self, cpu):
-        """Sets the cpu of this ComputeFlavors.
+        r"""Sets the cpu of this ComputeFlavors.
 
         cpu核数。
 
@@ -244,7 +244,7 @@ class ComputeFlavors:
 
     @property
     def mem(self):
-        """Gets the mem of this ComputeFlavors.
+        r"""Gets the mem of this ComputeFlavors.
 
         内存大小,单位:G。
 
@@ -255,7 +255,7 @@ class ComputeFlavors:
 
     @mem.setter
     def mem(self, mem):
-        """Sets the mem of this ComputeFlavors.
+        r"""Sets the mem of this ComputeFlavors.
 
         内存大小,单位:G。
 
@@ -266,7 +266,7 @@ class ComputeFlavors:
 
     @property
     def max_connections(self):
-        """Gets the max_connections of this ComputeFlavors.
+        r"""Gets the max_connections of this ComputeFlavors.
 
         最大连接数。
 
@@ -277,7 +277,7 @@ class ComputeFlavors:
 
     @max_connections.setter
     def max_connections(self, max_connections):
-        """Sets the max_connections of this ComputeFlavors.
+        r"""Sets the max_connections of this ComputeFlavors.
 
         最大连接数。
 
@@ -288,7 +288,7 @@ class ComputeFlavors:
 
     @property
     def server_type(self):
-        """Gets the server_type of this ComputeFlavors.
+        r"""Gets the server_type of this ComputeFlavors.
 
         计算资源服务类型。
 
@@ -299,7 +299,7 @@ class ComputeFlavors:
 
     @server_type.setter
     def server_type(self, server_type):
-        """Sets the server_type of this ComputeFlavors.
+        r"""Sets the server_type of this ComputeFlavors.
 
         计算资源服务类型。
 
@@ -310,7 +310,7 @@ class ComputeFlavors:
 
     @property
     def architecture(self):
-        """Gets the architecture of this ComputeFlavors.
+        r"""Gets the architecture of this ComputeFlavors.
 
         计算资源架构类型，目前分X86和ARM两种。
 
@@ -321,7 +321,7 @@ class ComputeFlavors:
 
     @architecture.setter
     def architecture(self, architecture):
-        """Sets the architecture of this ComputeFlavors.
+        r"""Sets the architecture of this ComputeFlavors.
 
         计算资源架构类型，目前分X86和ARM两种。
 
@@ -332,7 +332,7 @@ class ComputeFlavors:
 
     @property
     def az_status(self):
-        """Gets the az_status of this ComputeFlavors.
+        r"""Gets the az_status of this ComputeFlavors.
 
         可用区状态。
 
@@ -343,7 +343,7 @@ class ComputeFlavors:
 
     @az_status.setter
     def az_status(self, az_status):
-        """Sets the az_status of this ComputeFlavors.
+        r"""Sets the az_status of this ComputeFlavors.
 
         可用区状态。
 
@@ -354,7 +354,7 @@ class ComputeFlavors:
 
     @property
     def region_status(self):
-        """Gets the region_status of this ComputeFlavors.
+        r"""Gets the region_status of this ComputeFlavors.
 
         局点状态。
 
@@ -365,7 +365,7 @@ class ComputeFlavors:
 
     @region_status.setter
     def region_status(self, region_status):
-        """Sets the region_status of this ComputeFlavors.
+        r"""Sets the region_status of this ComputeFlavors.
 
         局点状态。
 
@@ -376,7 +376,7 @@ class ComputeFlavors:
 
     @property
     def group_type(self):
-        """Gets the group_type of this ComputeFlavors.
+        r"""Gets the group_type of this ComputeFlavors.
 
         计算资源架构类型，目前分X86和ARM两种。
 
@@ -387,7 +387,7 @@ class ComputeFlavors:
 
     @group_type.setter
     def group_type(self, group_type):
-        """Sets the group_type of this ComputeFlavors.
+        r"""Sets the group_type of this ComputeFlavors.
 
         计算资源架构类型，目前分X86和ARM两种。
 
@@ -398,7 +398,7 @@ class ComputeFlavors:
 
     @property
     def db_type(self):
-        """Gets the db_type of this ComputeFlavors.
+        r"""Gets the db_type of this ComputeFlavors.
 
         服务引擎类型。
 
@@ -409,7 +409,7 @@ class ComputeFlavors:
 
     @db_type.setter
     def db_type(self, db_type):
-        """Sets the db_type of this ComputeFlavors.
+        r"""Sets the db_type of this ComputeFlavors.
 
         服务引擎类型。
 
@@ -420,7 +420,7 @@ class ComputeFlavors:
 
     @property
     def extend_fields(self):
-        """Gets the extend_fields of this ComputeFlavors.
+        r"""Gets the extend_fields of this ComputeFlavors.
 
         扩展字段，目前存储可用区相关信息。
 
@@ -431,7 +431,7 @@ class ComputeFlavors:
 
     @extend_fields.setter
     def extend_fields(self, extend_fields):
-        """Sets the extend_fields of this ComputeFlavors.
+        r"""Sets the extend_fields of this ComputeFlavors.
 
         扩展字段，目前存储可用区相关信息。
 

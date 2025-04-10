@@ -27,7 +27,7 @@ class PiInfo:
     }
 
     def __init__(self, sprints=None, pi_id=None):
-        """PiInfo
+        r"""PiInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PiInfo:
 
     @property
     def sprints(self):
-        """Gets the sprints of this PiInfo.
+        r"""Gets the sprints of this PiInfo.
 
         迭代列表
 
@@ -61,7 +61,7 @@ class PiInfo:
 
     @sprints.setter
     def sprints(self, sprints):
-        """Sets the sprints of this PiInfo.
+        r"""Sets the sprints of this PiInfo.
 
         迭代列表
 
@@ -72,7 +72,7 @@ class PiInfo:
 
     @property
     def pi_id(self):
-        """Gets the pi_id of this PiInfo.
+        r"""Gets the pi_id of this PiInfo.
 
         pi的id，层级关系：pi -> 迭代 -> 需求
 
@@ -83,7 +83,7 @@ class PiInfo:
 
     @pi_id.setter
     def pi_id(self, pi_id):
-        """Sets the pi_id of this PiInfo.
+        r"""Sets the pi_id of this PiInfo.
 
         pi的id，层级关系：pi -> 迭代 -> 需求
 

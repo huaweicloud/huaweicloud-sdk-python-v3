@@ -27,7 +27,7 @@ class ShowSecretVersionRequest:
     }
 
     def __init__(self, secret_name=None, version_id=None):
-        """ShowSecretVersionRequest
+        r"""ShowSecretVersionRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowSecretVersionRequest:
 
     @property
     def secret_name(self):
-        """Gets the secret_name of this ShowSecretVersionRequest.
+        r"""Gets the secret_name of this ShowSecretVersionRequest.
 
         凭据名称。
 
@@ -59,7 +59,7 @@ class ShowSecretVersionRequest:
 
     @secret_name.setter
     def secret_name(self, secret_name):
-        """Sets the secret_name of this ShowSecretVersionRequest.
+        r"""Sets the secret_name of this ShowSecretVersionRequest.
 
         凭据名称。
 
@@ -70,7 +70,7 @@ class ShowSecretVersionRequest:
 
     @property
     def version_id(self):
-        """Gets the version_id of this ShowSecretVersionRequest.
+        r"""Gets the version_id of this ShowSecretVersionRequest.
 
         凭据的版本标识符。
 
@@ -81,7 +81,7 @@ class ShowSecretVersionRequest:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this ShowSecretVersionRequest.
+        r"""Sets the version_id of this ShowSecretVersionRequest.
 
         凭据的版本标识符。
 

@@ -31,7 +31,7 @@ class UpdateAnticrawlerRuleRequest:
     }
 
     def __init__(self, enterprise_project_id=None, policy_id=None, rule_id=None, body=None):
-        """UpdateAnticrawlerRuleRequest
+        r"""UpdateAnticrawlerRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class UpdateAnticrawlerRuleRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this UpdateAnticrawlerRuleRequest.
+        r"""Gets the enterprise_project_id of this UpdateAnticrawlerRuleRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -73,7 +73,7 @@ class UpdateAnticrawlerRuleRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this UpdateAnticrawlerRuleRequest.
+        r"""Sets the enterprise_project_id of this UpdateAnticrawlerRuleRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -84,7 +84,7 @@ class UpdateAnticrawlerRuleRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this UpdateAnticrawlerRuleRequest.
+        r"""Gets the policy_id of this UpdateAnticrawlerRuleRequest.
 
         防护策略id，通过指定防护策略id来指明查询该防护策略下的防护规则，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
 
@@ -95,7 +95,7 @@ class UpdateAnticrawlerRuleRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this UpdateAnticrawlerRuleRequest.
+        r"""Sets the policy_id of this UpdateAnticrawlerRuleRequest.
 
         防护策略id，通过指定防护策略id来指明查询该防护策略下的防护规则，您可以通过调用查询防护策略列表（ListPolicy）获取策略id
 
@@ -106,7 +106,7 @@ class UpdateAnticrawlerRuleRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this UpdateAnticrawlerRuleRequest.
+        r"""Gets the rule_id of this UpdateAnticrawlerRuleRequest.
 
         规则id
 
@@ -117,7 +117,7 @@ class UpdateAnticrawlerRuleRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this UpdateAnticrawlerRuleRequest.
+        r"""Sets the rule_id of this UpdateAnticrawlerRuleRequest.
 
         规则id
 
@@ -128,7 +128,7 @@ class UpdateAnticrawlerRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAnticrawlerRuleRequest.
+        r"""Gets the body of this UpdateAnticrawlerRuleRequest.
 
         :return: The body of this UpdateAnticrawlerRuleRequest.
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateAnticrawlerRuleRequestBody`
@@ -137,7 +137,7 @@ class UpdateAnticrawlerRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAnticrawlerRuleRequest.
+        r"""Sets the body of this UpdateAnticrawlerRuleRequest.
 
         :param body: The body of this UpdateAnticrawlerRuleRequest.
         :type body: :class:`huaweicloudsdkwaf.v1.UpdateAnticrawlerRuleRequestBody`

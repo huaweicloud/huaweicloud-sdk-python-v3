@@ -57,7 +57,7 @@ class DigitalAssetInfo:
     }
 
     def __init__(self, project_id=None, asset_id=None, asset_name=None, asset_description=None, app_user_id=None, create_time=None, update_time=None, asset_type=None, asset_state=None, fail_type=None, reason=None, tags=None, asset_extra_meta=None, system_properties=None, files=None, asset_order=None, supported_service=None):
-        """DigitalAssetInfo
+        r"""DigitalAssetInfo
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class DigitalAssetInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DigitalAssetInfo.
+        r"""Gets the project_id of this DigitalAssetInfo.
 
         租户id
 
@@ -166,7 +166,7 @@ class DigitalAssetInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DigitalAssetInfo.
+        r"""Sets the project_id of this DigitalAssetInfo.
 
         租户id
 
@@ -177,7 +177,7 @@ class DigitalAssetInfo:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this DigitalAssetInfo.
+        r"""Gets the asset_id of this DigitalAssetInfo.
 
         资产ID。
 
@@ -188,7 +188,7 @@ class DigitalAssetInfo:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this DigitalAssetInfo.
+        r"""Sets the asset_id of this DigitalAssetInfo.
 
         资产ID。
 
@@ -199,7 +199,7 @@ class DigitalAssetInfo:
 
     @property
     def asset_name(self):
-        """Gets the asset_name of this DigitalAssetInfo.
+        r"""Gets the asset_name of this DigitalAssetInfo.
 
         资产名称。
 
@@ -210,7 +210,7 @@ class DigitalAssetInfo:
 
     @asset_name.setter
     def asset_name(self, asset_name):
-        """Sets the asset_name of this DigitalAssetInfo.
+        r"""Sets the asset_name of this DigitalAssetInfo.
 
         资产名称。
 
@@ -221,7 +221,7 @@ class DigitalAssetInfo:
 
     @property
     def asset_description(self):
-        """Gets the asset_description of this DigitalAssetInfo.
+        r"""Gets the asset_description of this DigitalAssetInfo.
 
         资产描述。
 
@@ -232,7 +232,7 @@ class DigitalAssetInfo:
 
     @asset_description.setter
     def asset_description(self, asset_description):
-        """Sets the asset_description of this DigitalAssetInfo.
+        r"""Sets the asset_description of this DigitalAssetInfo.
 
         资产描述。
 
@@ -243,7 +243,7 @@ class DigitalAssetInfo:
 
     @property
     def app_user_id(self):
-        """Gets the app_user_id of this DigitalAssetInfo.
+        r"""Gets the app_user_id of this DigitalAssetInfo.
 
         第三方用户ID。 > * 即创建资产是通过X-App-UserId头域传入的值。
 
@@ -254,7 +254,7 @@ class DigitalAssetInfo:
 
     @app_user_id.setter
     def app_user_id(self, app_user_id):
-        """Sets the app_user_id of this DigitalAssetInfo.
+        r"""Sets the app_user_id of this DigitalAssetInfo.
 
         第三方用户ID。 > * 即创建资产是通过X-App-UserId头域传入的值。
 
@@ -265,7 +265,7 @@ class DigitalAssetInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this DigitalAssetInfo.
+        r"""Gets the create_time of this DigitalAssetInfo.
 
         资产创建时间。
 
@@ -276,7 +276,7 @@ class DigitalAssetInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this DigitalAssetInfo.
+        r"""Sets the create_time of this DigitalAssetInfo.
 
         资产创建时间。
 
@@ -287,7 +287,7 @@ class DigitalAssetInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this DigitalAssetInfo.
+        r"""Gets the update_time of this DigitalAssetInfo.
 
         资产更新时间。
 
@@ -298,7 +298,7 @@ class DigitalAssetInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this DigitalAssetInfo.
+        r"""Sets the update_time of this DigitalAssetInfo.
 
         资产更新时间。
 
@@ -309,7 +309,7 @@ class DigitalAssetInfo:
 
     @property
     def asset_type(self):
-        """Gets the asset_type of this DigitalAssetInfo.
+        r"""Gets the asset_type of this DigitalAssetInfo.
 
         资产类型。  公共资产类型： * VOICE_MODEL：音色模型 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MUSIC: 音乐 * AUDIO: 音频 * COMMON_FILE：通用文件  分身数字人资产类型： * HUMAN_MODEL_2D：分身数字人模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板  3D数字人资产类型： * HUMAN_MODEL：3D数字人模型 * SCENE：场景模型 * ANIMATION：动作动画 * MATERIAL：风格化素材 * NORMAL_MODEL: 普通模型
 
@@ -320,7 +320,7 @@ class DigitalAssetInfo:
 
     @asset_type.setter
     def asset_type(self, asset_type):
-        """Sets the asset_type of this DigitalAssetInfo.
+        r"""Sets the asset_type of this DigitalAssetInfo.
 
         资产类型。  公共资产类型： * VOICE_MODEL：音色模型 * VIDEO：视频文件 * IMAGE：图片文件 * PPT：幻灯片文件 * MUSIC: 音乐 * AUDIO: 音频 * COMMON_FILE：通用文件  分身数字人资产类型： * HUMAN_MODEL_2D：分身数字人模型 * BUSINESS_CARD_TEMPLET: 数字人名片模板  3D数字人资产类型： * HUMAN_MODEL：3D数字人模型 * SCENE：场景模型 * ANIMATION：动作动画 * MATERIAL：风格化素材 * NORMAL_MODEL: 普通模型
 
@@ -331,7 +331,7 @@ class DigitalAssetInfo:
 
     @property
     def asset_state(self):
-        """Gets the asset_state of this DigitalAssetInfo.
+        r"""Gets the asset_state of this DigitalAssetInfo.
 
         资产状态。 * CREATING：资产创建中，主文件尚未上传 * FAILED：主文件上传失败 * UNACTIVED：主文件上传成功，资产未激活，资产不可用于其他业务（用户可更新状态） * ACTIVED：主文件上传成功，资产激活，资产可用于其他业务（用户可更新状态） * DELETING：资产删除中，资产不可用，资产可恢复 * DELETED：资产文件已删除，资产不可用，资产不可恢复 * BLOCK: 资产被冻结，资产不可用，不可查看文件。 * WAITING_DELETE：资产将被下线
 
@@ -342,7 +342,7 @@ class DigitalAssetInfo:
 
     @asset_state.setter
     def asset_state(self, asset_state):
-        """Sets the asset_state of this DigitalAssetInfo.
+        r"""Sets the asset_state of this DigitalAssetInfo.
 
         资产状态。 * CREATING：资产创建中，主文件尚未上传 * FAILED：主文件上传失败 * UNACTIVED：主文件上传成功，资产未激活，资产不可用于其他业务（用户可更新状态） * ACTIVED：主文件上传成功，资产激活，资产可用于其他业务（用户可更新状态） * DELETING：资产删除中，资产不可用，资产可恢复 * DELETED：资产文件已删除，资产不可用，资产不可恢复 * BLOCK: 资产被冻结，资产不可用，不可查看文件。 * WAITING_DELETE：资产将被下线
 
@@ -353,7 +353,7 @@ class DigitalAssetInfo:
 
     @property
     def fail_type(self):
-        """Gets the fail_type of this DigitalAssetInfo.
+        r"""Gets the fail_type of this DigitalAssetInfo.
 
         失败原因。 * AUTOMATIC_REVIEW_REJECT：自动审核失败 * MANUAL_REVIEW_REJECT：人工审核失败
 
@@ -364,7 +364,7 @@ class DigitalAssetInfo:
 
     @fail_type.setter
     def fail_type(self, fail_type):
-        """Sets the fail_type of this DigitalAssetInfo.
+        r"""Sets the fail_type of this DigitalAssetInfo.
 
         失败原因。 * AUTOMATIC_REVIEW_REJECT：自动审核失败 * MANUAL_REVIEW_REJECT：人工审核失败
 
@@ -375,7 +375,7 @@ class DigitalAssetInfo:
 
     @property
     def reason(self):
-        """Gets the reason of this DigitalAssetInfo.
+        r"""Gets the reason of this DigitalAssetInfo.
 
         冻结/解冻/失败 原因。
 
@@ -386,7 +386,7 @@ class DigitalAssetInfo:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this DigitalAssetInfo.
+        r"""Sets the reason of this DigitalAssetInfo.
 
         冻结/解冻/失败 原因。
 
@@ -397,7 +397,7 @@ class DigitalAssetInfo:
 
     @property
     def tags(self):
-        """Gets the tags of this DigitalAssetInfo.
+        r"""Gets the tags of this DigitalAssetInfo.
 
         标签列表。 > 分身形象系统资产的tag定义如下： > - 行业：NEWS,BUSINESS,E-COMMERCE,MARKETING,KNOWLEDGE,EDUCATION,SPORTS > - 性别：MALE,FEMALE > - 姿势：FULL-BODY,HALF-BODY,STANDING,SITTING,WALKING > - 区域：ASIAN,WESTERN,MIDDLE-EASTERNER,AFRICAN,LATINO
 
@@ -408,7 +408,7 @@ class DigitalAssetInfo:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this DigitalAssetInfo.
+        r"""Sets the tags of this DigitalAssetInfo.
 
         标签列表。 > 分身形象系统资产的tag定义如下： > - 行业：NEWS,BUSINESS,E-COMMERCE,MARKETING,KNOWLEDGE,EDUCATION,SPORTS > - 性别：MALE,FEMALE > - 姿势：FULL-BODY,HALF-BODY,STANDING,SITTING,WALKING > - 区域：ASIAN,WESTERN,MIDDLE-EASTERNER,AFRICAN,LATINO
 
@@ -419,7 +419,7 @@ class DigitalAssetInfo:
 
     @property
     def asset_extra_meta(self):
-        """Gets the asset_extra_meta of this DigitalAssetInfo.
+        r"""Gets the asset_extra_meta of this DigitalAssetInfo.
 
         :return: The asset_extra_meta of this DigitalAssetInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.AssetExtraMeta`
@@ -428,7 +428,7 @@ class DigitalAssetInfo:
 
     @asset_extra_meta.setter
     def asset_extra_meta(self, asset_extra_meta):
-        """Sets the asset_extra_meta of this DigitalAssetInfo.
+        r"""Sets the asset_extra_meta of this DigitalAssetInfo.
 
         :param asset_extra_meta: The asset_extra_meta of this DigitalAssetInfo.
         :type asset_extra_meta: :class:`huaweicloudsdkmetastudio.v1.AssetExtraMeta`
@@ -437,7 +437,7 @@ class DigitalAssetInfo:
 
     @property
     def system_properties(self):
-        """Gets the system_properties of this DigitalAssetInfo.
+        r"""Gets the system_properties of this DigitalAssetInfo.
 
         设置系统属性。
 
@@ -448,7 +448,7 @@ class DigitalAssetInfo:
 
     @system_properties.setter
     def system_properties(self, system_properties):
-        """Sets the system_properties of this DigitalAssetInfo.
+        r"""Sets the system_properties of this DigitalAssetInfo.
 
         设置系统属性。
 
@@ -459,7 +459,7 @@ class DigitalAssetInfo:
 
     @property
     def files(self):
-        """Gets the files of this DigitalAssetInfo.
+        r"""Gets the files of this DigitalAssetInfo.
 
         资产下的文件。
 
@@ -470,7 +470,7 @@ class DigitalAssetInfo:
 
     @files.setter
     def files(self, files):
-        """Sets the files of this DigitalAssetInfo.
+        r"""Sets the files of this DigitalAssetInfo.
 
         资产下的文件。
 
@@ -481,7 +481,7 @@ class DigitalAssetInfo:
 
     @property
     def asset_order(self):
-        """Gets the asset_order of this DigitalAssetInfo.
+        r"""Gets the asset_order of this DigitalAssetInfo.
 
         展示顺序
 
@@ -492,7 +492,7 @@ class DigitalAssetInfo:
 
     @asset_order.setter
     def asset_order(self, asset_order):
-        """Sets the asset_order of this DigitalAssetInfo.
+        r"""Sets the asset_order of this DigitalAssetInfo.
 
         展示顺序
 
@@ -503,7 +503,7 @@ class DigitalAssetInfo:
 
     @property
     def supported_service(self):
-        """Gets the supported_service of this DigitalAssetInfo.
+        r"""Gets the supported_service of this DigitalAssetInfo.
 
         支持的业务类型。： * VIDEO_2D：分身数字人视频制作 * LIVE_2D：分身数字人直播 * CHAT_2D：分身数字人智能交互
 
@@ -514,7 +514,7 @@ class DigitalAssetInfo:
 
     @supported_service.setter
     def supported_service(self, supported_service):
-        """Sets the supported_service of this DigitalAssetInfo.
+        r"""Sets the supported_service of this DigitalAssetInfo.
 
         支持的业务类型。： * VIDEO_2D：分身数字人视频制作 * LIVE_2D：分身数字人直播 * CHAT_2D：分身数字人智能交互
 

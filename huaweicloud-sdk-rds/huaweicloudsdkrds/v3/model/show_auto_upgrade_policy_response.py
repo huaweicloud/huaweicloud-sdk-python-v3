@@ -26,7 +26,7 @@ class ShowAutoUpgradePolicyResponse(SdkResponse):
     }
 
     def __init__(self, switch_option=None):
-        """ShowAutoUpgradePolicyResponse
+        r"""ShowAutoUpgradePolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowAutoUpgradePolicyResponse(SdkResponse):
 
     @property
     def switch_option(self):
-        """Gets the switch_option of this ShowAutoUpgradePolicyResponse.
+        r"""Gets the switch_option of this ShowAutoUpgradePolicyResponse.
 
         自动小版本升级开关选项 true：打开自动小版本升级 false：关闭自动小版本升级
 
@@ -55,7 +55,7 @@ class ShowAutoUpgradePolicyResponse(SdkResponse):
 
     @switch_option.setter
     def switch_option(self, switch_option):
-        """Sets the switch_option of this ShowAutoUpgradePolicyResponse.
+        r"""Sets the switch_option of this ShowAutoUpgradePolicyResponse.
 
         自动小版本升级开关选项 true：打开自动小版本升级 false：关闭自动小版本升级
 

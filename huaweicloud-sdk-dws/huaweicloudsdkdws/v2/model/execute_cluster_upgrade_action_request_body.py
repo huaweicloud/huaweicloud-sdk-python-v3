@@ -27,7 +27,7 @@ class ExecuteClusterUpgradeActionRequestBody:
     }
 
     def __init__(self, action=None, item_id=None):
-        """ExecuteClusterUpgradeActionRequestBody
+        r"""ExecuteClusterUpgradeActionRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ExecuteClusterUpgradeActionRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this ExecuteClusterUpgradeActionRequestBody.
+        r"""Gets the action of this ExecuteClusterUpgradeActionRequestBody.
 
         当前集群要做的操作
 
@@ -59,7 +59,7 @@ class ExecuteClusterUpgradeActionRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ExecuteClusterUpgradeActionRequestBody.
+        r"""Sets the action of this ExecuteClusterUpgradeActionRequestBody.
 
         当前集群要做的操作
 
@@ -70,7 +70,7 @@ class ExecuteClusterUpgradeActionRequestBody:
 
     @property
     def item_id(self):
-        """Gets the item_id of this ExecuteClusterUpgradeActionRequestBody.
+        r"""Gets the item_id of this ExecuteClusterUpgradeActionRequestBody.
 
         升级项ID
 
@@ -81,7 +81,7 @@ class ExecuteClusterUpgradeActionRequestBody:
 
     @item_id.setter
     def item_id(self, item_id):
-        """Sets the item_id of this ExecuteClusterUpgradeActionRequestBody.
+        r"""Sets the item_id of this ExecuteClusterUpgradeActionRequestBody.
 
         升级项ID
 

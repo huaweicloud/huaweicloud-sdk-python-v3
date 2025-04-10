@@ -51,7 +51,7 @@ class SyncJob:
     }
 
     def __init__(self, created_at=None, domain_id=None, domain_name=None, id=None, namespace=None, override=None, remote_namespace=None, remote_region_id=None, repo_name=None, status=None, sync_operator_id=None, sync_operator_name=None, tag=None, updated_at=None):
-        """SyncJob
+        r"""SyncJob
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class SyncJob:
 
     @property
     def created_at(self):
-        """Gets the created_at of this SyncJob.
+        r"""Gets the created_at of this SyncJob.
 
         创建时间，UTC日期格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
 
@@ -131,7 +131,7 @@ class SyncJob:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this SyncJob.
+        r"""Sets the created_at of this SyncJob.
 
         创建时间，UTC日期格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
 
@@ -142,7 +142,7 @@ class SyncJob:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this SyncJob.
+        r"""Gets the domain_id of this SyncJob.
 
         租户ID
 
@@ -153,7 +153,7 @@ class SyncJob:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this SyncJob.
+        r"""Sets the domain_id of this SyncJob.
 
         租户ID
 
@@ -164,7 +164,7 @@ class SyncJob:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this SyncJob.
+        r"""Gets the domain_name of this SyncJob.
 
         租户名
 
@@ -175,7 +175,7 @@ class SyncJob:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this SyncJob.
+        r"""Sets the domain_name of this SyncJob.
 
         租户名
 
@@ -186,7 +186,7 @@ class SyncJob:
 
     @property
     def id(self):
-        """Gets the id of this SyncJob.
+        r"""Gets the id of this SyncJob.
 
         ID
 
@@ -197,7 +197,7 @@ class SyncJob:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SyncJob.
+        r"""Sets the id of this SyncJob.
 
         ID
 
@@ -208,7 +208,7 @@ class SyncJob:
 
     @property
     def namespace(self):
-        """Gets the namespace of this SyncJob.
+        r"""Gets the namespace of this SyncJob.
 
         组织名
 
@@ -219,7 +219,7 @@ class SyncJob:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this SyncJob.
+        r"""Sets the namespace of this SyncJob.
 
         组织名
 
@@ -230,7 +230,7 @@ class SyncJob:
 
     @property
     def override(self):
-        """Gets the override of this SyncJob.
+        r"""Gets the override of this SyncJob.
 
         是否覆盖
 
@@ -241,7 +241,7 @@ class SyncJob:
 
     @override.setter
     def override(self, override):
-        """Sets the override of this SyncJob.
+        r"""Sets the override of this SyncJob.
 
         是否覆盖
 
@@ -252,7 +252,7 @@ class SyncJob:
 
     @property
     def remote_namespace(self):
-        """Gets the remote_namespace of this SyncJob.
+        r"""Gets the remote_namespace of this SyncJob.
 
         目的组织
 
@@ -263,7 +263,7 @@ class SyncJob:
 
     @remote_namespace.setter
     def remote_namespace(self, remote_namespace):
-        """Sets the remote_namespace of this SyncJob.
+        r"""Sets the remote_namespace of this SyncJob.
 
         目的组织
 
@@ -274,7 +274,7 @@ class SyncJob:
 
     @property
     def remote_region_id(self):
-        """Gets the remote_region_id of this SyncJob.
+        r"""Gets the remote_region_id of this SyncJob.
 
         目的region
 
@@ -285,7 +285,7 @@ class SyncJob:
 
     @remote_region_id.setter
     def remote_region_id(self, remote_region_id):
-        """Sets the remote_region_id of this SyncJob.
+        r"""Sets the remote_region_id of this SyncJob.
 
         目的region
 
@@ -296,7 +296,7 @@ class SyncJob:
 
     @property
     def repo_name(self):
-        """Gets the repo_name of this SyncJob.
+        r"""Gets the repo_name of this SyncJob.
 
         仓库名
 
@@ -307,7 +307,7 @@ class SyncJob:
 
     @repo_name.setter
     def repo_name(self, repo_name):
-        """Sets the repo_name of this SyncJob.
+        r"""Sets the repo_name of this SyncJob.
 
         仓库名
 
@@ -318,7 +318,7 @@ class SyncJob:
 
     @property
     def status(self):
-        """Gets the status of this SyncJob.
+        r"""Gets the status of this SyncJob.
 
         同步状态,waiting、running、success、failed、timeout、cancel、existed
 
@@ -329,7 +329,7 @@ class SyncJob:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SyncJob.
+        r"""Sets the status of this SyncJob.
 
         同步状态,waiting、running、success、failed、timeout、cancel、existed
 
@@ -340,7 +340,7 @@ class SyncJob:
 
     @property
     def sync_operator_id(self):
-        """Gets the sync_operator_id of this SyncJob.
+        r"""Gets the sync_operator_id of this SyncJob.
 
         操作用户ID
 
@@ -351,7 +351,7 @@ class SyncJob:
 
     @sync_operator_id.setter
     def sync_operator_id(self, sync_operator_id):
-        """Sets the sync_operator_id of this SyncJob.
+        r"""Sets the sync_operator_id of this SyncJob.
 
         操作用户ID
 
@@ -362,7 +362,7 @@ class SyncJob:
 
     @property
     def sync_operator_name(self):
-        """Gets the sync_operator_name of this SyncJob.
+        r"""Gets the sync_operator_name of this SyncJob.
 
         操作用户名
 
@@ -373,7 +373,7 @@ class SyncJob:
 
     @sync_operator_name.setter
     def sync_operator_name(self, sync_operator_name):
-        """Sets the sync_operator_name of this SyncJob.
+        r"""Sets the sync_operator_name of this SyncJob.
 
         操作用户名
 
@@ -384,7 +384,7 @@ class SyncJob:
 
     @property
     def tag(self):
-        """Gets the tag of this SyncJob.
+        r"""Gets the tag of this SyncJob.
 
         镜像版本
 
@@ -395,7 +395,7 @@ class SyncJob:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this SyncJob.
+        r"""Sets the tag of this SyncJob.
 
         镜像版本
 
@@ -406,7 +406,7 @@ class SyncJob:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this SyncJob.
+        r"""Gets the updated_at of this SyncJob.
 
         updatedAt
 
@@ -417,7 +417,7 @@ class SyncJob:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this SyncJob.
+        r"""Sets the updated_at of this SyncJob.
 
         updatedAt
 

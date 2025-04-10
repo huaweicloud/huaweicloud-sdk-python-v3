@@ -27,7 +27,7 @@ class ExportPrivateKeyKeypairBean:
     }
 
     def __init__(self, name=None, private_key=None):
-        """ExportPrivateKeyKeypairBean
+        r"""ExportPrivateKeyKeypairBean
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ExportPrivateKeyKeypairBean:
 
     @property
     def name(self):
-        """Gets the name of this ExportPrivateKeyKeypairBean.
+        r"""Gets the name of this ExportPrivateKeyKeypairBean.
 
         SSH密钥对的名称。
 
@@ -59,7 +59,7 @@ class ExportPrivateKeyKeypairBean:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ExportPrivateKeyKeypairBean.
+        r"""Sets the name of this ExportPrivateKeyKeypairBean.
 
         SSH密钥对的名称。
 
@@ -70,7 +70,7 @@ class ExportPrivateKeyKeypairBean:
 
     @property
     def private_key(self):
-        """Gets the private_key of this ExportPrivateKeyKeypairBean.
+        r"""Gets the private_key of this ExportPrivateKeyKeypairBean.
 
         SSH密钥对的私钥
 
@@ -81,7 +81,7 @@ class ExportPrivateKeyKeypairBean:
 
     @private_key.setter
     def private_key(self, private_key):
-        """Sets the private_key of this ExportPrivateKeyKeypairBean.
+        r"""Sets the private_key of this ExportPrivateKeyKeypairBean.
 
         SSH密钥对的私钥
 

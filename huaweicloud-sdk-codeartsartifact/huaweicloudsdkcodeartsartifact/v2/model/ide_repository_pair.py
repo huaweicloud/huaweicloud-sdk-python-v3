@@ -35,7 +35,7 @@ class IDERepositoryPair:
     }
 
     def __init__(self, repo_name=None, includes_pattern=None, project_id=None, description=None, snapshot=None, release=None):
-        """IDERepositoryPair
+        r"""IDERepositoryPair
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class IDERepositoryPair:
 
     @property
     def repo_name(self):
-        """Gets the repo_name of this IDERepositoryPair.
+        r"""Gets the repo_name of this IDERepositoryPair.
 
         仓库名称
 
@@ -89,7 +89,7 @@ class IDERepositoryPair:
 
     @repo_name.setter
     def repo_name(self, repo_name):
-        """Sets the repo_name of this IDERepositoryPair.
+        r"""Sets the repo_name of this IDERepositoryPair.
 
         仓库名称
 
@@ -100,7 +100,7 @@ class IDERepositoryPair:
 
     @property
     def includes_pattern(self):
-        """Gets the includes_pattern of this IDERepositoryPair.
+        r"""Gets the includes_pattern of this IDERepositoryPair.
 
         路径
 
@@ -111,7 +111,7 @@ class IDERepositoryPair:
 
     @includes_pattern.setter
     def includes_pattern(self, includes_pattern):
-        """Sets the includes_pattern of this IDERepositoryPair.
+        r"""Sets the includes_pattern of this IDERepositoryPair.
 
         路径
 
@@ -122,7 +122,7 @@ class IDERepositoryPair:
 
     @property
     def project_id(self):
-        """Gets the project_id of this IDERepositoryPair.
+        r"""Gets the project_id of this IDERepositoryPair.
 
         项目id
 
@@ -133,7 +133,7 @@ class IDERepositoryPair:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this IDERepositoryPair.
+        r"""Sets the project_id of this IDERepositoryPair.
 
         项目id
 
@@ -144,7 +144,7 @@ class IDERepositoryPair:
 
     @property
     def description(self):
-        """Gets the description of this IDERepositoryPair.
+        r"""Gets the description of this IDERepositoryPair.
 
         描述
 
@@ -155,7 +155,7 @@ class IDERepositoryPair:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this IDERepositoryPair.
+        r"""Sets the description of this IDERepositoryPair.
 
         描述
 
@@ -166,7 +166,7 @@ class IDERepositoryPair:
 
     @property
     def snapshot(self):
-        """Gets the snapshot of this IDERepositoryPair.
+        r"""Gets the snapshot of this IDERepositoryPair.
 
         snapshot仓库名称
 
@@ -177,7 +177,7 @@ class IDERepositoryPair:
 
     @snapshot.setter
     def snapshot(self, snapshot):
-        """Sets the snapshot of this IDERepositoryPair.
+        r"""Sets the snapshot of this IDERepositoryPair.
 
         snapshot仓库名称
 
@@ -188,7 +188,7 @@ class IDERepositoryPair:
 
     @property
     def release(self):
-        """Gets the release of this IDERepositoryPair.
+        r"""Gets the release of this IDERepositoryPair.
 
         release仓库名称
 
@@ -199,7 +199,7 @@ class IDERepositoryPair:
 
     @release.setter
     def release(self, release):
-        """Sets the release of this IDERepositoryPair.
+        r"""Sets the release of this IDERepositoryPair.
 
         release仓库名称
 

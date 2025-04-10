@@ -24,7 +24,7 @@ class DeleteKeyStoreResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteKeyStoreResponse
+        r"""DeleteKeyStoreResponse
 
         The model defined in huaweicloud sdk
 

@@ -52,7 +52,7 @@ class UpdateConformancePackResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, stack_id=None, stack_name=None, deployment_id=None, created_at=None, updated_at=None, template_key=None, template_uri=None, agency_name=None, status=None, error_message=None, vars_structure=None, created_by=None):
-        """UpdateConformancePackResponse
+        r"""UpdateConformancePackResponse
 
         The model defined in huaweicloud sdk
 
@@ -135,7 +135,7 @@ class UpdateConformancePackResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateConformancePackResponse.
+        r"""Gets the id of this UpdateConformancePackResponse.
 
         合规规则包ID。
 
@@ -146,7 +146,7 @@ class UpdateConformancePackResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateConformancePackResponse.
+        r"""Sets the id of this UpdateConformancePackResponse.
 
         合规规则包ID。
 
@@ -157,7 +157,7 @@ class UpdateConformancePackResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateConformancePackResponse.
+        r"""Gets the name of this UpdateConformancePackResponse.
 
         合规规则包名称。
 
@@ -168,7 +168,7 @@ class UpdateConformancePackResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateConformancePackResponse.
+        r"""Sets the name of this UpdateConformancePackResponse.
 
         合规规则包名称。
 
@@ -179,7 +179,7 @@ class UpdateConformancePackResponse(SdkResponse):
 
     @property
     def stack_id(self):
-        """Gets the stack_id of this UpdateConformancePackResponse.
+        r"""Gets the stack_id of this UpdateConformancePackResponse.
 
         资源栈（stack）的唯一ID。
 
@@ -190,7 +190,7 @@ class UpdateConformancePackResponse(SdkResponse):
 
     @stack_id.setter
     def stack_id(self, stack_id):
-        """Sets the stack_id of this UpdateConformancePackResponse.
+        r"""Sets the stack_id of this UpdateConformancePackResponse.
 
         资源栈（stack）的唯一ID。
 
@@ -201,7 +201,7 @@ class UpdateConformancePackResponse(SdkResponse):
 
     @property
     def stack_name(self):
-        """Gets the stack_name of this UpdateConformancePackResponse.
+        r"""Gets the stack_name of this UpdateConformancePackResponse.
 
         资源栈（stack）的名称。
 
@@ -212,7 +212,7 @@ class UpdateConformancePackResponse(SdkResponse):
 
     @stack_name.setter
     def stack_name(self, stack_name):
-        """Sets the stack_name of this UpdateConformancePackResponse.
+        r"""Sets the stack_name of this UpdateConformancePackResponse.
 
         资源栈（stack）的名称。
 
@@ -223,7 +223,7 @@ class UpdateConformancePackResponse(SdkResponse):
 
     @property
     def deployment_id(self):
-        """Gets the deployment_id of this UpdateConformancePackResponse.
+        r"""Gets the deployment_id of this UpdateConformancePackResponse.
 
         部署ID。
 
@@ -234,7 +234,7 @@ class UpdateConformancePackResponse(SdkResponse):
 
     @deployment_id.setter
     def deployment_id(self, deployment_id):
-        """Sets the deployment_id of this UpdateConformancePackResponse.
+        r"""Sets the deployment_id of this UpdateConformancePackResponse.
 
         部署ID。
 
@@ -245,7 +245,7 @@ class UpdateConformancePackResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this UpdateConformancePackResponse.
+        r"""Gets the created_at of this UpdateConformancePackResponse.
 
         合规规则包创建时间。
 
@@ -256,7 +256,7 @@ class UpdateConformancePackResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this UpdateConformancePackResponse.
+        r"""Sets the created_at of this UpdateConformancePackResponse.
 
         合规规则包创建时间。
 
@@ -267,7 +267,7 @@ class UpdateConformancePackResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this UpdateConformancePackResponse.
+        r"""Gets the updated_at of this UpdateConformancePackResponse.
 
         合规规则包更新时间。
 
@@ -278,7 +278,7 @@ class UpdateConformancePackResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this UpdateConformancePackResponse.
+        r"""Sets the updated_at of this UpdateConformancePackResponse.
 
         合规规则包更新时间。
 
@@ -289,7 +289,7 @@ class UpdateConformancePackResponse(SdkResponse):
 
     @property
     def template_key(self):
-        """Gets the template_key of this UpdateConformancePackResponse.
+        r"""Gets the template_key of this UpdateConformancePackResponse.
 
         预定义合规规则包模板名称。
 
@@ -300,7 +300,7 @@ class UpdateConformancePackResponse(SdkResponse):
 
     @template_key.setter
     def template_key(self, template_key):
-        """Sets the template_key of this UpdateConformancePackResponse.
+        r"""Sets the template_key of this UpdateConformancePackResponse.
 
         预定义合规规则包模板名称。
 
@@ -311,7 +311,7 @@ class UpdateConformancePackResponse(SdkResponse):
 
     @property
     def template_uri(self):
-        """Gets the template_uri of this UpdateConformancePackResponse.
+        r"""Gets the template_uri of this UpdateConformancePackResponse.
 
         合规规则包模板OBS地址
 
@@ -322,7 +322,7 @@ class UpdateConformancePackResponse(SdkResponse):
 
     @template_uri.setter
     def template_uri(self, template_uri):
-        """Sets the template_uri of this UpdateConformancePackResponse.
+        r"""Sets the template_uri of this UpdateConformancePackResponse.
 
         合规规则包模板OBS地址
 
@@ -333,7 +333,7 @@ class UpdateConformancePackResponse(SdkResponse):
 
     @property
     def agency_name(self):
-        """Gets the agency_name of this UpdateConformancePackResponse.
+        r"""Gets the agency_name of this UpdateConformancePackResponse.
 
         委托名称
 
@@ -344,7 +344,7 @@ class UpdateConformancePackResponse(SdkResponse):
 
     @agency_name.setter
     def agency_name(self, agency_name):
-        """Sets the agency_name of this UpdateConformancePackResponse.
+        r"""Sets the agency_name of this UpdateConformancePackResponse.
 
         委托名称
 
@@ -355,7 +355,7 @@ class UpdateConformancePackResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateConformancePackResponse.
+        r"""Gets the status of this UpdateConformancePackResponse.
 
         合规规则包部署状态。
 
@@ -366,7 +366,7 @@ class UpdateConformancePackResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateConformancePackResponse.
+        r"""Sets the status of this UpdateConformancePackResponse.
 
         合规规则包部署状态。
 
@@ -377,7 +377,7 @@ class UpdateConformancePackResponse(SdkResponse):
 
     @property
     def error_message(self):
-        """Gets the error_message of this UpdateConformancePackResponse.
+        r"""Gets the error_message of this UpdateConformancePackResponse.
 
         部署或删除合规规则包错误时的错误信息
 
@@ -388,7 +388,7 @@ class UpdateConformancePackResponse(SdkResponse):
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this UpdateConformancePackResponse.
+        r"""Sets the error_message of this UpdateConformancePackResponse.
 
         部署或删除合规规则包错误时的错误信息
 
@@ -399,7 +399,7 @@ class UpdateConformancePackResponse(SdkResponse):
 
     @property
     def vars_structure(self):
-        """Gets the vars_structure of this UpdateConformancePackResponse.
+        r"""Gets the vars_structure of this UpdateConformancePackResponse.
 
         合规规则包参数。
 
@@ -410,7 +410,7 @@ class UpdateConformancePackResponse(SdkResponse):
 
     @vars_structure.setter
     def vars_structure(self, vars_structure):
-        """Sets the vars_structure of this UpdateConformancePackResponse.
+        r"""Sets the vars_structure of this UpdateConformancePackResponse.
 
         合规规则包参数。
 
@@ -421,7 +421,7 @@ class UpdateConformancePackResponse(SdkResponse):
 
     @property
     def created_by(self):
-        """Gets the created_by of this UpdateConformancePackResponse.
+        r"""Gets the created_by of this UpdateConformancePackResponse.
 
         创建者
 
@@ -432,7 +432,7 @@ class UpdateConformancePackResponse(SdkResponse):
 
     @created_by.setter
     def created_by(self, created_by):
-        """Sets the created_by of this UpdateConformancePackResponse.
+        r"""Sets the created_by of this UpdateConformancePackResponse.
 
         创建者
 

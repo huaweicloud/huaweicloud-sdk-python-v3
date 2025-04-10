@@ -24,7 +24,7 @@ class DeleteEncryptdatasResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteEncryptdatasResponse
+        r"""DeleteEncryptdatasResponse
 
         The model defined in huaweicloud sdk
 

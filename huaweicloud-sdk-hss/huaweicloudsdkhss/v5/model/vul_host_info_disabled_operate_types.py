@@ -27,7 +27,7 @@ class VulHostInfoDisabledOperateTypes:
     }
 
     def __init__(self, operate_type=None, reason=None):
-        """VulHostInfoDisabledOperateTypes
+        r"""VulHostInfoDisabledOperateTypes
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class VulHostInfoDisabledOperateTypes:
 
     @property
     def operate_type(self):
-        """Gets the operate_type of this VulHostInfoDisabledOperateTypes.
+        r"""Gets the operate_type of this VulHostInfoDisabledOperateTypes.
 
         操作类型 - ignore : 忽略 - not_ignore : 取消忽略 - immediate_repair : 修复 - manual_repair: 人工修复 - verify : 验证 - add_to_whitelist : 加入白名单
 
@@ -61,7 +61,7 @@ class VulHostInfoDisabledOperateTypes:
 
     @operate_type.setter
     def operate_type(self, operate_type):
-        """Sets the operate_type of this VulHostInfoDisabledOperateTypes.
+        r"""Sets the operate_type of this VulHostInfoDisabledOperateTypes.
 
         操作类型 - ignore : 忽略 - not_ignore : 取消忽略 - immediate_repair : 修复 - manual_repair: 人工修复 - verify : 验证 - add_to_whitelist : 加入白名单
 
@@ -72,7 +72,7 @@ class VulHostInfoDisabledOperateTypes:
 
     @property
     def reason(self):
-        """Gets the reason of this VulHostInfoDisabledOperateTypes.
+        r"""Gets the reason of this VulHostInfoDisabledOperateTypes.
 
         不可进行操作的原因
 
@@ -83,7 +83,7 @@ class VulHostInfoDisabledOperateTypes:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this VulHostInfoDisabledOperateTypes.
+        r"""Sets the reason of this VulHostInfoDisabledOperateTypes.
 
         不可进行操作的原因
 

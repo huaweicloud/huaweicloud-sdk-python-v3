@@ -39,7 +39,7 @@ class MemberInfo:
     }
 
     def __init__(self, host=None, weight=None, is_backup=None, member_group_name=None, status=None, port=None, ecs_id=None, ecs_name=None):
-        """MemberInfo
+        r"""MemberInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class MemberInfo:
 
     @property
     def host(self):
-        """Gets the host of this MemberInfo.
+        r"""Gets the host of this MemberInfo.
 
         后端服务器地址  后端实例类型为ip时必填
 
@@ -103,7 +103,7 @@ class MemberInfo:
 
     @host.setter
     def host(self, host):
-        """Sets the host of this MemberInfo.
+        r"""Sets the host of this MemberInfo.
 
         后端服务器地址  后端实例类型为ip时必填
 
@@ -114,7 +114,7 @@ class MemberInfo:
 
     @property
     def weight(self):
-        """Gets the weight of this MemberInfo.
+        r"""Gets the weight of this MemberInfo.
 
         权重值。  允许您对后端服务进行评级，权重值越大，转发到该云服务的请求数量越多。
 
@@ -125,7 +125,7 @@ class MemberInfo:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this MemberInfo.
+        r"""Sets the weight of this MemberInfo.
 
         权重值。  允许您对后端服务进行评级，权重值越大，转发到该云服务的请求数量越多。
 
@@ -136,7 +136,7 @@ class MemberInfo:
 
     @property
     def is_backup(self):
-        """Gets the is_backup of this MemberInfo.
+        r"""Gets the is_backup of this MemberInfo.
 
         是否备用节点。  开启后对应后端服务为备用节点，仅当非备用节点全部故障时工作。  实例需要升级到对应版本才支持此功能，若不支持请联系技术支持。
 
@@ -147,7 +147,7 @@ class MemberInfo:
 
     @is_backup.setter
     def is_backup(self, is_backup):
-        """Sets the is_backup of this MemberInfo.
+        r"""Sets the is_backup of this MemberInfo.
 
         是否备用节点。  开启后对应后端服务为备用节点，仅当非备用节点全部故障时工作。  实例需要升级到对应版本才支持此功能，若不支持请联系技术支持。
 
@@ -158,7 +158,7 @@ class MemberInfo:
 
     @property
     def member_group_name(self):
-        """Gets the member_group_name of this MemberInfo.
+        r"""Gets the member_group_name of this MemberInfo.
 
         后端服务器组名称。为后端服务地址选择服务器组，便于统一修改对应服务器组的后端地址。
 
@@ -169,7 +169,7 @@ class MemberInfo:
 
     @member_group_name.setter
     def member_group_name(self, member_group_name):
-        """Sets the member_group_name of this MemberInfo.
+        r"""Sets the member_group_name of this MemberInfo.
 
         后端服务器组名称。为后端服务地址选择服务器组，便于统一修改对应服务器组的后端地址。
 
@@ -180,7 +180,7 @@ class MemberInfo:
 
     @property
     def status(self):
-        """Gets the status of this MemberInfo.
+        r"""Gets the status of this MemberInfo.
 
         后端服务器状态   - 1：可用   - 2：不可用
 
@@ -191,7 +191,7 @@ class MemberInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this MemberInfo.
+        r"""Sets the status of this MemberInfo.
 
         后端服务器状态   - 1：可用   - 2：不可用
 
@@ -202,7 +202,7 @@ class MemberInfo:
 
     @property
     def port(self):
-        """Gets the port of this MemberInfo.
+        r"""Gets the port of this MemberInfo.
 
         后端服务器端口
 
@@ -213,7 +213,7 @@ class MemberInfo:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this MemberInfo.
+        r"""Sets the port of this MemberInfo.
 
         后端服务器端口
 
@@ -224,7 +224,7 @@ class MemberInfo:
 
     @property
     def ecs_id(self):
-        """Gets the ecs_id of this MemberInfo.
+        r"""Gets the ecs_id of this MemberInfo.
 
         [后端云服务器的编号。](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)  [后端实例类型为ecs时必填，支持英文，数字，“-”,“_”，1 ~ 64字符。](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)  [不支持后端云服务器类型](tag:Site)
 
@@ -235,7 +235,7 @@ class MemberInfo:
 
     @ecs_id.setter
     def ecs_id(self, ecs_id):
-        """Sets the ecs_id of this MemberInfo.
+        r"""Sets the ecs_id of this MemberInfo.
 
         [后端云服务器的编号。](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)  [后端实例类型为ecs时必填，支持英文，数字，“-”,“_”，1 ~ 64字符。](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)  [不支持后端云服务器类型](tag:Site)
 
@@ -246,7 +246,7 @@ class MemberInfo:
 
     @property
     def ecs_name(self):
-        """Gets the ecs_name of this MemberInfo.
+        r"""Gets the ecs_name of this MemberInfo.
 
         [后端云服务器的名称。]  [后端实例类型为ecs时必填，支持汉字，英文，数字，“-”,“_”,“.”，1 ~ 64字符。](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)  [不支持后端云服务器类型](tag:Site)
 
@@ -257,7 +257,7 @@ class MemberInfo:
 
     @ecs_name.setter
     def ecs_name(self, ecs_name):
-        """Sets the ecs_name of this MemberInfo.
+        r"""Sets the ecs_name of this MemberInfo.
 
         [后端云服务器的名称。]  [后端实例类型为ecs时必填，支持汉字，英文，数字，“-”,“_”,“.”，1 ~ 64字符。](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)  [不支持后端云服务器类型](tag:Site)
 

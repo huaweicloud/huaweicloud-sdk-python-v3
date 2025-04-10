@@ -25,7 +25,7 @@ class ListClusterCnRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """ListClusterCnRequest
+        r"""ListClusterCnRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListClusterCnRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListClusterCnRequest.
+        r"""Gets the cluster_id of this ListClusterCnRequest.
 
         集群的ID。
 
@@ -53,7 +53,7 @@ class ListClusterCnRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListClusterCnRequest.
+        r"""Sets the cluster_id of this ListClusterCnRequest.
 
         集群的ID。
 

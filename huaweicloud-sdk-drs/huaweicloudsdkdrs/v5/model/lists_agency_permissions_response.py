@@ -28,7 +28,7 @@ class ListsAgencyPermissionsResponse(SdkResponse):
     }
 
     def __init__(self, common_permissions=None, engine_permissions=None):
-        """ListsAgencyPermissionsResponse
+        r"""ListsAgencyPermissionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListsAgencyPermissionsResponse(SdkResponse):
 
     @property
     def common_permissions(self):
-        """Gets the common_permissions of this ListsAgencyPermissionsResponse.
+        r"""Gets the common_permissions of this ListsAgencyPermissionsResponse.
 
         - DRS FullAccess 数据复制服务所有权限
 
@@ -62,7 +62,7 @@ class ListsAgencyPermissionsResponse(SdkResponse):
 
     @common_permissions.setter
     def common_permissions(self, common_permissions):
-        """Sets the common_permissions of this ListsAgencyPermissionsResponse.
+        r"""Sets the common_permissions of this ListsAgencyPermissionsResponse.
 
         - DRS FullAccess 数据复制服务所有权限
 
@@ -73,7 +73,7 @@ class ListsAgencyPermissionsResponse(SdkResponse):
 
     @property
     def engine_permissions(self):
-        """Gets the engine_permissions of this ListsAgencyPermissionsResponse.
+        r"""Gets the engine_permissions of this ListsAgencyPermissionsResponse.
 
         -  GaussDB ReadOnlyAccess 云数据库 GaussDB服务的只读访问权限 -  GeminiDB ReadOnlyAccess 分布式多模NoSQL数据库服务只读权限 -  GaussDBforMSQLReadOnlyAccess 云数据库HUAWEIGaussDBforMSQL服务的只读访问权限 -  DWS ReadOnlyAccess 数据仓库服务只读权限 -  DDM ReadOnlyAccess 分布式数据库中间件服务只读权限 -  DDS ReadOnlyPolicy 文档数据库服务资源只读权限 -  RDS ReadOnlyAccess 关系型数据库服务资源只读权限 -  MRS ReadOnlyAccess MapReduce服务只读权限,包括集群查询操作,基础服务弹性云服务器、裸金属服务器、云硬盘、虚拟私有云只读权限
 
@@ -84,7 +84,7 @@ class ListsAgencyPermissionsResponse(SdkResponse):
 
     @engine_permissions.setter
     def engine_permissions(self, engine_permissions):
-        """Sets the engine_permissions of this ListsAgencyPermissionsResponse.
+        r"""Sets the engine_permissions of this ListsAgencyPermissionsResponse.
 
         -  GaussDB ReadOnlyAccess 云数据库 GaussDB服务的只读访问权限 -  GeminiDB ReadOnlyAccess 分布式多模NoSQL数据库服务只读权限 -  GaussDBforMSQLReadOnlyAccess 云数据库HUAWEIGaussDBforMSQL服务的只读访问权限 -  DWS ReadOnlyAccess 数据仓库服务只读权限 -  DDM ReadOnlyAccess 分布式数据库中间件服务只读权限 -  DDS ReadOnlyPolicy 文档数据库服务资源只读权限 -  RDS ReadOnlyAccess 关系型数据库服务资源只读权限 -  MRS ReadOnlyAccess MapReduce服务只读权限,包括集群查询操作,基础服务弹性云服务器、裸金属服务器、云硬盘、虚拟私有云只读权限
 

@@ -26,7 +26,7 @@ class CloseDeviceTunnelResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """CloseDeviceTunnelResponse
+        r"""CloseDeviceTunnelResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CloseDeviceTunnelResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this CloseDeviceTunnelResponse.
+        r"""Gets the body of this CloseDeviceTunnelResponse.
 
         :return: The body of this CloseDeviceTunnelResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class CloseDeviceTunnelResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CloseDeviceTunnelResponse.
+        r"""Sets the body of this CloseDeviceTunnelResponse.
 
         :param body: The body of this CloseDeviceTunnelResponse.
         :type body: str

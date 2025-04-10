@@ -38,7 +38,7 @@ class AsyncInvokeApiStartWorkflowResponse(SdkResponse):
     }
 
     def __init__(self, execution_urn=None, started_at=None, execution_name=None, x_request_id=None, connection=None, content_length=None, date=None):
-        """AsyncInvokeApiStartWorkflowResponse
+        r"""AsyncInvokeApiStartWorkflowResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class AsyncInvokeApiStartWorkflowResponse(SdkResponse):
 
     @property
     def execution_urn(self):
-        """Gets the execution_urn of this AsyncInvokeApiStartWorkflowResponse.
+        r"""Gets the execution_urn of this AsyncInvokeApiStartWorkflowResponse.
 
         运行实例的URN。
 
@@ -97,7 +97,7 @@ class AsyncInvokeApiStartWorkflowResponse(SdkResponse):
 
     @execution_urn.setter
     def execution_urn(self, execution_urn):
-        """Sets the execution_urn of this AsyncInvokeApiStartWorkflowResponse.
+        r"""Sets the execution_urn of this AsyncInvokeApiStartWorkflowResponse.
 
         运行实例的URN。
 
@@ -108,7 +108,7 @@ class AsyncInvokeApiStartWorkflowResponse(SdkResponse):
 
     @property
     def started_at(self):
-        """Gets the started_at of this AsyncInvokeApiStartWorkflowResponse.
+        r"""Gets the started_at of this AsyncInvokeApiStartWorkflowResponse.
 
         运行实例启动时间。
 
@@ -119,7 +119,7 @@ class AsyncInvokeApiStartWorkflowResponse(SdkResponse):
 
     @started_at.setter
     def started_at(self, started_at):
-        """Sets the started_at of this AsyncInvokeApiStartWorkflowResponse.
+        r"""Sets the started_at of this AsyncInvokeApiStartWorkflowResponse.
 
         运行实例启动时间。
 
@@ -130,7 +130,7 @@ class AsyncInvokeApiStartWorkflowResponse(SdkResponse):
 
     @property
     def execution_name(self):
-        """Gets the execution_name of this AsyncInvokeApiStartWorkflowResponse.
+        r"""Gets the execution_name of this AsyncInvokeApiStartWorkflowResponse.
 
         运行实例的名字。
 
@@ -141,7 +141,7 @@ class AsyncInvokeApiStartWorkflowResponse(SdkResponse):
 
     @execution_name.setter
     def execution_name(self, execution_name):
-        """Sets the execution_name of this AsyncInvokeApiStartWorkflowResponse.
+        r"""Sets the execution_name of this AsyncInvokeApiStartWorkflowResponse.
 
         运行实例的名字。
 
@@ -152,7 +152,7 @@ class AsyncInvokeApiStartWorkflowResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this AsyncInvokeApiStartWorkflowResponse.
+        r"""Gets the x_request_id of this AsyncInvokeApiStartWorkflowResponse.
 
         :return: The x_request_id of this AsyncInvokeApiStartWorkflowResponse.
         :rtype: str
@@ -161,7 +161,7 @@ class AsyncInvokeApiStartWorkflowResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this AsyncInvokeApiStartWorkflowResponse.
+        r"""Sets the x_request_id of this AsyncInvokeApiStartWorkflowResponse.
 
         :param x_request_id: The x_request_id of this AsyncInvokeApiStartWorkflowResponse.
         :type x_request_id: str
@@ -170,7 +170,7 @@ class AsyncInvokeApiStartWorkflowResponse(SdkResponse):
 
     @property
     def connection(self):
-        """Gets the connection of this AsyncInvokeApiStartWorkflowResponse.
+        r"""Gets the connection of this AsyncInvokeApiStartWorkflowResponse.
 
         :return: The connection of this AsyncInvokeApiStartWorkflowResponse.
         :rtype: str
@@ -179,7 +179,7 @@ class AsyncInvokeApiStartWorkflowResponse(SdkResponse):
 
     @connection.setter
     def connection(self, connection):
-        """Sets the connection of this AsyncInvokeApiStartWorkflowResponse.
+        r"""Sets the connection of this AsyncInvokeApiStartWorkflowResponse.
 
         :param connection: The connection of this AsyncInvokeApiStartWorkflowResponse.
         :type connection: str
@@ -188,7 +188,7 @@ class AsyncInvokeApiStartWorkflowResponse(SdkResponse):
 
     @property
     def content_length(self):
-        """Gets the content_length of this AsyncInvokeApiStartWorkflowResponse.
+        r"""Gets the content_length of this AsyncInvokeApiStartWorkflowResponse.
 
         :return: The content_length of this AsyncInvokeApiStartWorkflowResponse.
         :rtype: str
@@ -197,7 +197,7 @@ class AsyncInvokeApiStartWorkflowResponse(SdkResponse):
 
     @content_length.setter
     def content_length(self, content_length):
-        """Sets the content_length of this AsyncInvokeApiStartWorkflowResponse.
+        r"""Sets the content_length of this AsyncInvokeApiStartWorkflowResponse.
 
         :param content_length: The content_length of this AsyncInvokeApiStartWorkflowResponse.
         :type content_length: str
@@ -206,7 +206,7 @@ class AsyncInvokeApiStartWorkflowResponse(SdkResponse):
 
     @property
     def date(self):
-        """Gets the date of this AsyncInvokeApiStartWorkflowResponse.
+        r"""Gets the date of this AsyncInvokeApiStartWorkflowResponse.
 
         :return: The date of this AsyncInvokeApiStartWorkflowResponse.
         :rtype: str
@@ -215,7 +215,7 @@ class AsyncInvokeApiStartWorkflowResponse(SdkResponse):
 
     @date.setter
     def date(self, date):
-        """Sets the date of this AsyncInvokeApiStartWorkflowResponse.
+        r"""Sets the date of this AsyncInvokeApiStartWorkflowResponse.
 
         :param date: The date of this AsyncInvokeApiStartWorkflowResponse.
         :type date: str

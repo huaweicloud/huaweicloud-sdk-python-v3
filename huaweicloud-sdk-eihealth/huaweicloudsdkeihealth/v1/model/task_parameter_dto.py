@@ -29,7 +29,7 @@ class TaskParameterDto:
     }
 
     def __init__(self, name=None, source=None, values=None):
-        """TaskParameterDto
+        r"""TaskParameterDto
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class TaskParameterDto:
 
     @property
     def name(self):
-        """Gets the name of this TaskParameterDto.
+        r"""Gets the name of this TaskParameterDto.
 
         子任务的参数名称，长度为[1,32]，以小写字母开头，允许出现中划线(-)、小写字母和数字，且必须以小写字母或数字结尾。需要和已有应用的参数名称一致。
 
@@ -67,7 +67,7 @@ class TaskParameterDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TaskParameterDto.
+        r"""Sets the name of this TaskParameterDto.
 
         子任务的参数名称，长度为[1,32]，以小写字母开头，允许出现中划线(-)、小写字母和数字，且必须以小写字母或数字结尾。需要和已有应用的参数名称一致。
 
@@ -78,7 +78,7 @@ class TaskParameterDto:
 
     @property
     def source(self):
-        """Gets the source of this TaskParameterDto.
+        r"""Gets the source of this TaskParameterDto.
 
         子任务的参数类型，不填默认为MANUAL
 
@@ -89,7 +89,7 @@ class TaskParameterDto:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this TaskParameterDto.
+        r"""Sets the source of this TaskParameterDto.
 
         子任务的参数类型，不填默认为MANUAL
 
@@ -100,7 +100,7 @@ class TaskParameterDto:
 
     @property
     def values(self):
-        """Gets the values of this TaskParameterDto.
+        r"""Gets the values of this TaskParameterDto.
 
         子任务的参数数值，根据参数类型进行合法性校验
 
@@ -111,7 +111,7 @@ class TaskParameterDto:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this TaskParameterDto.
+        r"""Sets the values of this TaskParameterDto.
 
         子任务的参数数值，根据参数类型进行合法性校验
 

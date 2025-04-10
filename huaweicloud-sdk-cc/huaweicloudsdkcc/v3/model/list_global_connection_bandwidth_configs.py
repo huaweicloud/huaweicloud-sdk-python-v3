@@ -49,7 +49,7 @@ class ListGlobalConnectionBandwidthConfigs:
     }
 
     def __init__(self, size_range=None, charge_mode=None, services=None, gcb_type=None, ratio_95peak_plus=None, ratio_95peak_guar=None, crossborder=None, quotas=None, sla_level=None, bind_limit=None, enable_area_bandwidth=None, enable_change_95=None, enable_spec_code=None):
-        """ListGlobalConnectionBandwidthConfigs
+        r"""ListGlobalConnectionBandwidthConfigs
 
         The model defined in huaweicloud sdk
 
@@ -117,7 +117,7 @@ class ListGlobalConnectionBandwidthConfigs:
 
     @property
     def size_range(self):
-        """Gets the size_range of this ListGlobalConnectionBandwidthConfigs.
+        r"""Gets the size_range of this ListGlobalConnectionBandwidthConfigs.
 
         计费类型对应全域互联带宽大小范围。
 
@@ -128,7 +128,7 @@ class ListGlobalConnectionBandwidthConfigs:
 
     @size_range.setter
     def size_range(self, size_range):
-        """Sets the size_range of this ListGlobalConnectionBandwidthConfigs.
+        r"""Sets the size_range of this ListGlobalConnectionBandwidthConfigs.
 
         计费类型对应全域互联带宽大小范围。
 
@@ -139,7 +139,7 @@ class ListGlobalConnectionBandwidthConfigs:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this ListGlobalConnectionBandwidthConfigs.
+        r"""Gets the charge_mode of this ListGlobalConnectionBandwidthConfigs.
 
         支持的计费类型列表。
 
@@ -150,7 +150,7 @@ class ListGlobalConnectionBandwidthConfigs:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this ListGlobalConnectionBandwidthConfigs.
+        r"""Sets the charge_mode of this ListGlobalConnectionBandwidthConfigs.
 
         支持的计费类型列表。
 
@@ -161,7 +161,7 @@ class ListGlobalConnectionBandwidthConfigs:
 
     @property
     def services(self):
-        """Gets the services of this ListGlobalConnectionBandwidthConfigs.
+        r"""Gets the services of this ListGlobalConnectionBandwidthConfigs.
 
         支持服务实例类型。
 
@@ -172,7 +172,7 @@ class ListGlobalConnectionBandwidthConfigs:
 
     @services.setter
     def services(self, services):
-        """Sets the services of this ListGlobalConnectionBandwidthConfigs.
+        r"""Sets the services of this ListGlobalConnectionBandwidthConfigs.
 
         支持服务实例类型。
 
@@ -183,7 +183,7 @@ class ListGlobalConnectionBandwidthConfigs:
 
     @property
     def gcb_type(self):
-        """Gets the gcb_type of this ListGlobalConnectionBandwidthConfigs.
+        r"""Gets the gcb_type of this ListGlobalConnectionBandwidthConfigs.
 
         支持的带宽类型。
 
@@ -194,7 +194,7 @@ class ListGlobalConnectionBandwidthConfigs:
 
     @gcb_type.setter
     def gcb_type(self, gcb_type):
-        """Sets the gcb_type of this ListGlobalConnectionBandwidthConfigs.
+        r"""Sets the gcb_type of this ListGlobalConnectionBandwidthConfigs.
 
         支持的带宽类型。
 
@@ -205,7 +205,7 @@ class ListGlobalConnectionBandwidthConfigs:
 
     @property
     def ratio_95peak_plus(self):
-        """Gets the ratio_95peak_plus of this ListGlobalConnectionBandwidthConfigs.
+        r"""Gets the ratio_95peak_plus of this ListGlobalConnectionBandwidthConfigs.
 
         按增强型95计费保底消费百分比。
 
@@ -216,7 +216,7 @@ class ListGlobalConnectionBandwidthConfigs:
 
     @ratio_95peak_plus.setter
     def ratio_95peak_plus(self, ratio_95peak_plus):
-        """Sets the ratio_95peak_plus of this ListGlobalConnectionBandwidthConfigs.
+        r"""Sets the ratio_95peak_plus of this ListGlobalConnectionBandwidthConfigs.
 
         按增强型95计费保底消费百分比。
 
@@ -227,7 +227,7 @@ class ListGlobalConnectionBandwidthConfigs:
 
     @property
     def ratio_95peak_guar(self):
-        """Gets the ratio_95peak_guar of this ListGlobalConnectionBandwidthConfigs.
+        r"""Gets the ratio_95peak_guar of this ListGlobalConnectionBandwidthConfigs.
 
         按传统型95计费保底消费百分比。
 
@@ -238,7 +238,7 @@ class ListGlobalConnectionBandwidthConfigs:
 
     @ratio_95peak_guar.setter
     def ratio_95peak_guar(self, ratio_95peak_guar):
-        """Sets the ratio_95peak_guar of this ListGlobalConnectionBandwidthConfigs.
+        r"""Sets the ratio_95peak_guar of this ListGlobalConnectionBandwidthConfigs.
 
         按传统型95计费保底消费百分比。
 
@@ -249,7 +249,7 @@ class ListGlobalConnectionBandwidthConfigs:
 
     @property
     def crossborder(self):
-        """Gets the crossborder of this ListGlobalConnectionBandwidthConfigs.
+        r"""Gets the crossborder of this ListGlobalConnectionBandwidthConfigs.
 
         是否已经完成跨境审批。
 
@@ -260,7 +260,7 @@ class ListGlobalConnectionBandwidthConfigs:
 
     @crossborder.setter
     def crossborder(self, crossborder):
-        """Sets the crossborder of this ListGlobalConnectionBandwidthConfigs.
+        r"""Sets the crossborder of this ListGlobalConnectionBandwidthConfigs.
 
         是否已经完成跨境审批。
 
@@ -271,7 +271,7 @@ class ListGlobalConnectionBandwidthConfigs:
 
     @property
     def quotas(self):
-        """Gets the quotas of this ListGlobalConnectionBandwidthConfigs.
+        r"""Gets the quotas of this ListGlobalConnectionBandwidthConfigs.
 
         配额信息。
 
@@ -282,7 +282,7 @@ class ListGlobalConnectionBandwidthConfigs:
 
     @quotas.setter
     def quotas(self, quotas):
-        """Sets the quotas of this ListGlobalConnectionBandwidthConfigs.
+        r"""Sets the quotas of this ListGlobalConnectionBandwidthConfigs.
 
         配额信息。
 
@@ -293,7 +293,7 @@ class ListGlobalConnectionBandwidthConfigs:
 
     @property
     def sla_level(self):
-        """Gets the sla_level of this ListGlobalConnectionBandwidthConfigs.
+        r"""Gets the sla_level of this ListGlobalConnectionBandwidthConfigs.
 
         支持线路分级。
 
@@ -304,7 +304,7 @@ class ListGlobalConnectionBandwidthConfigs:
 
     @sla_level.setter
     def sla_level(self, sla_level):
-        """Sets the sla_level of this ListGlobalConnectionBandwidthConfigs.
+        r"""Sets the sla_level of this ListGlobalConnectionBandwidthConfigs.
 
         支持线路分级。
 
@@ -315,7 +315,7 @@ class ListGlobalConnectionBandwidthConfigs:
 
     @property
     def bind_limit(self):
-        """Gets the bind_limit of this ListGlobalConnectionBandwidthConfigs.
+        r"""Gets the bind_limit of this ListGlobalConnectionBandwidthConfigs.
 
         共享带宽允许绑定实例数量上限。
 
@@ -326,7 +326,7 @@ class ListGlobalConnectionBandwidthConfigs:
 
     @bind_limit.setter
     def bind_limit(self, bind_limit):
-        """Sets the bind_limit of this ListGlobalConnectionBandwidthConfigs.
+        r"""Sets the bind_limit of this ListGlobalConnectionBandwidthConfigs.
 
         共享带宽允许绑定实例数量上限。
 
@@ -337,7 +337,7 @@ class ListGlobalConnectionBandwidthConfigs:
 
     @property
     def enable_area_bandwidth(self):
-        """Gets the enable_area_bandwidth of this ListGlobalConnectionBandwidthConfigs.
+        r"""Gets the enable_area_bandwidth of this ListGlobalConnectionBandwidthConfigs.
 
         是否启用传统的大区带宽。
 
@@ -348,7 +348,7 @@ class ListGlobalConnectionBandwidthConfigs:
 
     @enable_area_bandwidth.setter
     def enable_area_bandwidth(self, enable_area_bandwidth):
-        """Sets the enable_area_bandwidth of this ListGlobalConnectionBandwidthConfigs.
+        r"""Sets the enable_area_bandwidth of this ListGlobalConnectionBandwidthConfigs.
 
         是否启用传统的大区带宽。
 
@@ -359,7 +359,7 @@ class ListGlobalConnectionBandwidthConfigs:
 
     @property
     def enable_change_95(self):
-        """Gets the enable_change_95 of this ListGlobalConnectionBandwidthConfigs.
+        r"""Gets the enable_change_95 of this ListGlobalConnectionBandwidthConfigs.
 
         是否支持95转按需。
 
@@ -370,7 +370,7 @@ class ListGlobalConnectionBandwidthConfigs:
 
     @enable_change_95.setter
     def enable_change_95(self, enable_change_95):
-        """Sets the enable_change_95 of this ListGlobalConnectionBandwidthConfigs.
+        r"""Sets the enable_change_95 of this ListGlobalConnectionBandwidthConfigs.
 
         是否支持95转按需。
 
@@ -381,7 +381,7 @@ class ListGlobalConnectionBandwidthConfigs:
 
     @property
     def enable_spec_code(self):
-        """Gets the enable_spec_code of this ListGlobalConnectionBandwidthConfigs.
+        r"""Gets the enable_spec_code of this ListGlobalConnectionBandwidthConfigs.
 
         是否支持多SKU产品功能。
 
@@ -392,7 +392,7 @@ class ListGlobalConnectionBandwidthConfigs:
 
     @enable_spec_code.setter
     def enable_spec_code(self, enable_spec_code):
-        """Sets the enable_spec_code of this ListGlobalConnectionBandwidthConfigs.
+        r"""Sets the enable_spec_code of this ListGlobalConnectionBandwidthConfigs.
 
         是否支持多SKU产品功能。
 

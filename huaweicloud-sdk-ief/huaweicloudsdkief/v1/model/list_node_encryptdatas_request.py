@@ -31,7 +31,7 @@ class ListNodeEncryptdatasRequest:
     }
 
     def __init__(self, node_id=None, limit=None, offset=None, ief_instance_id=None):
-        """ListNodeEncryptdatasRequest
+        r"""ListNodeEncryptdatasRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListNodeEncryptdatasRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ListNodeEncryptdatasRequest.
+        r"""Gets the node_id of this ListNodeEncryptdatasRequest.
 
         边缘节点ID
 
@@ -74,7 +74,7 @@ class ListNodeEncryptdatasRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ListNodeEncryptdatasRequest.
+        r"""Sets the node_id of this ListNodeEncryptdatasRequest.
 
         边缘节点ID
 
@@ -85,7 +85,7 @@ class ListNodeEncryptdatasRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListNodeEncryptdatasRequest.
+        r"""Gets the limit of this ListNodeEncryptdatasRequest.
 
         查询返回记录的数量限制
 
@@ -96,7 +96,7 @@ class ListNodeEncryptdatasRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListNodeEncryptdatasRequest.
+        r"""Sets the limit of this ListNodeEncryptdatasRequest.
 
         查询返回记录的数量限制
 
@@ -107,7 +107,7 @@ class ListNodeEncryptdatasRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListNodeEncryptdatasRequest.
+        r"""Gets the offset of this ListNodeEncryptdatasRequest.
 
         偏移量，表示查询该偏移量后面的记录
 
@@ -118,7 +118,7 @@ class ListNodeEncryptdatasRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListNodeEncryptdatasRequest.
+        r"""Sets the offset of this ListNodeEncryptdatasRequest.
 
         偏移量，表示查询该偏移量后面的记录
 
@@ -129,7 +129,7 @@ class ListNodeEncryptdatasRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this ListNodeEncryptdatasRequest.
+        r"""Gets the ief_instance_id of this ListNodeEncryptdatasRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -140,7 +140,7 @@ class ListNodeEncryptdatasRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this ListNodeEncryptdatasRequest.
+        r"""Sets the ief_instance_id of this ListNodeEncryptdatasRequest.
 
         铂金版实例ID，专业版实例为空值
 

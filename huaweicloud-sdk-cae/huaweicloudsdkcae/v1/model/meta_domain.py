@@ -29,7 +29,7 @@ class MetaDomain:
     }
 
     def __init__(self, id=None, name=None, created_at=None):
-        """MetaDomain
+        r"""MetaDomain
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class MetaDomain:
 
     @property
     def id(self):
-        """Gets the id of this MetaDomain.
+        r"""Gets the id of this MetaDomain.
 
         域名ID。
 
@@ -68,7 +68,7 @@ class MetaDomain:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MetaDomain.
+        r"""Sets the id of this MetaDomain.
 
         域名ID。
 
@@ -79,7 +79,7 @@ class MetaDomain:
 
     @property
     def name(self):
-        """Gets the name of this MetaDomain.
+        r"""Gets the name of this MetaDomain.
 
         域名名称。
 
@@ -90,7 +90,7 @@ class MetaDomain:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MetaDomain.
+        r"""Sets the name of this MetaDomain.
 
         域名名称。
 
@@ -101,7 +101,7 @@ class MetaDomain:
 
     @property
     def created_at(self):
-        """Gets the created_at of this MetaDomain.
+        r"""Gets the created_at of this MetaDomain.
 
         创建时间。
 
@@ -112,7 +112,7 @@ class MetaDomain:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this MetaDomain.
+        r"""Sets the created_at of this MetaDomain.
 
         创建时间。
 

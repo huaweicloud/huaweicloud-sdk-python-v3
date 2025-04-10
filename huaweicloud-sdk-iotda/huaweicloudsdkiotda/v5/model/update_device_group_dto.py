@@ -27,7 +27,7 @@ class UpdateDeviceGroupDTO:
     }
 
     def __init__(self, name=None, description=None):
-        """UpdateDeviceGroupDTO
+        r"""UpdateDeviceGroupDTO
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateDeviceGroupDTO:
 
     @property
     def name(self):
-        """Gets the name of this UpdateDeviceGroupDTO.
+        r"""Gets the name of this UpdateDeviceGroupDTO.
 
         **参数说明**：设备组名称，单个资源空间下不可重复。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_? '#().,&%@!-等字符的组合。
 
@@ -61,7 +61,7 @@ class UpdateDeviceGroupDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateDeviceGroupDTO.
+        r"""Sets the name of this UpdateDeviceGroupDTO.
 
         **参数说明**：设备组名称，单个资源空间下不可重复。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_? '#().,&%@!-等字符的组合。
 
@@ -72,7 +72,7 @@ class UpdateDeviceGroupDTO:
 
     @property
     def description(self):
-        """Gets the description of this UpdateDeviceGroupDTO.
+        r"""Gets the description of this UpdateDeviceGroupDTO.
 
         **参数说明**：设备组描述。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_? '#().,&%@!-等字符的组合。
 
@@ -83,7 +83,7 @@ class UpdateDeviceGroupDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateDeviceGroupDTO.
+        r"""Sets the description of this UpdateDeviceGroupDTO.
 
         **参数说明**：设备组描述。 **取值范围**：长度不超过64，只允许中文、字母、数字、以及_? '#().,&%@!-等字符的组合。
 

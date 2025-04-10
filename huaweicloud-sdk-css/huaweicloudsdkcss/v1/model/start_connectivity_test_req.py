@@ -25,7 +25,7 @@ class StartConnectivityTestReq:
     }
 
     def __init__(self, address_and_ports=None):
-        """StartConnectivityTestReq
+        r"""StartConnectivityTestReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class StartConnectivityTestReq:
 
     @property
     def address_and_ports(self):
-        """Gets the address_and_ports of this StartConnectivityTestReq.
+        r"""Gets the address_and_ports of this StartConnectivityTestReq.
 
         地址和端口列表。
 
@@ -53,7 +53,7 @@ class StartConnectivityTestReq:
 
     @address_and_ports.setter
     def address_and_ports(self, address_and_ports):
-        """Sets the address_and_ports of this StartConnectivityTestReq.
+        r"""Sets the address_and_ports of this StartConnectivityTestReq.
 
         地址和端口列表。
 

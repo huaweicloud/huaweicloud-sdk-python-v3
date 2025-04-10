@@ -59,7 +59,7 @@ class CreateInstancePeriodRequest:
     }
 
     def __init__(self, name=None, flavor_ref=None, vpc_id=None, availability_zone=None, enterprise_project_id=None, nics=None, security_groups=None, comment=None, region=None, cloud_service_type=None, charging_mode=None, period_type=None, period_num=None, subscription_num=None, product_infos=None, tags=None, promotion_info=None, is_auto_renew=None):
-        """CreateInstancePeriodRequest
+        r"""CreateInstancePeriodRequest
 
         The model defined in huaweicloud sdk
 
@@ -149,7 +149,7 @@ class CreateInstancePeriodRequest:
 
     @property
     def name(self):
-        """Gets the name of this CreateInstancePeriodRequest.
+        r"""Gets the name of this CreateInstancePeriodRequest.
 
         实例名称。取值范围： - 只能由中文字符、英文字母、数字、下划线、中划线组成，且长度小于等于64个字符。
 
@@ -160,7 +160,7 @@ class CreateInstancePeriodRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateInstancePeriodRequest.
+        r"""Sets the name of this CreateInstancePeriodRequest.
 
         实例名称。取值范围： - 只能由中文字符、英文字母、数字、下划线、中划线组成，且长度小于等于64个字符。
 
@@ -171,7 +171,7 @@ class CreateInstancePeriodRequest:
 
     @property
     def flavor_ref(self):
-        """Gets the flavor_ref of this CreateInstancePeriodRequest.
+        r"""Gets the flavor_ref of this CreateInstancePeriodRequest.
 
         云服务器使用的规格ID
 
@@ -182,7 +182,7 @@ class CreateInstancePeriodRequest:
 
     @flavor_ref.setter
     def flavor_ref(self, flavor_ref):
-        """Sets the flavor_ref of this CreateInstancePeriodRequest.
+        r"""Sets the flavor_ref of this CreateInstancePeriodRequest.
 
         云服务器使用的规格ID
 
@@ -193,7 +193,7 @@ class CreateInstancePeriodRequest:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CreateInstancePeriodRequest.
+        r"""Gets the vpc_id of this CreateInstancePeriodRequest.
 
         虚拟私有云的ID
 
@@ -204,7 +204,7 @@ class CreateInstancePeriodRequest:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CreateInstancePeriodRequest.
+        r"""Sets the vpc_id of this CreateInstancePeriodRequest.
 
         虚拟私有云的ID
 
@@ -215,7 +215,7 @@ class CreateInstancePeriodRequest:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this CreateInstancePeriodRequest.
+        r"""Gets the availability_zone of this CreateInstancePeriodRequest.
 
         云服务器对应可用分区信息。(两个主备分区，中间用“,”分割，例如az1.dc1,az2.dc2)。
 
@@ -226,7 +226,7 @@ class CreateInstancePeriodRequest:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this CreateInstancePeriodRequest.
+        r"""Sets the availability_zone of this CreateInstancePeriodRequest.
 
         云服务器对应可用分区信息。(两个主备分区，中间用“,”分割，例如az1.dc1,az2.dc2)。
 
@@ -237,7 +237,7 @@ class CreateInstancePeriodRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateInstancePeriodRequest.
+        r"""Gets the enterprise_project_id of this CreateInstancePeriodRequest.
 
         企业项目ID。对接EPS必输。
 
@@ -248,7 +248,7 @@ class CreateInstancePeriodRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateInstancePeriodRequest.
+        r"""Sets the enterprise_project_id of this CreateInstancePeriodRequest.
 
         企业项目ID。对接EPS必输。
 
@@ -259,7 +259,7 @@ class CreateInstancePeriodRequest:
 
     @property
     def nics(self):
-        """Gets the nics of this CreateInstancePeriodRequest.
+        r"""Gets the nics of this CreateInstancePeriodRequest.
 
         云服务器对应的网卡信息
 
@@ -270,7 +270,7 @@ class CreateInstancePeriodRequest:
 
     @nics.setter
     def nics(self, nics):
-        """Sets the nics of this CreateInstancePeriodRequest.
+        r"""Sets the nics of this CreateInstancePeriodRequest.
 
         云服务器对应的网卡信息
 
@@ -281,7 +281,7 @@ class CreateInstancePeriodRequest:
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this CreateInstancePeriodRequest.
+        r"""Gets the security_groups of this CreateInstancePeriodRequest.
 
         云服务器对应安全组信息
 
@@ -292,7 +292,7 @@ class CreateInstancePeriodRequest:
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this CreateInstancePeriodRequest.
+        r"""Sets the security_groups of this CreateInstancePeriodRequest.
 
         云服务器对应安全组信息
 
@@ -303,7 +303,7 @@ class CreateInstancePeriodRequest:
 
     @property
     def comment(self):
-        """Gets the comment of this CreateInstancePeriodRequest.
+        r"""Gets the comment of this CreateInstancePeriodRequest.
 
         备注信息
 
@@ -314,7 +314,7 @@ class CreateInstancePeriodRequest:
 
     @comment.setter
     def comment(self, comment):
-        """Sets the comment of this CreateInstancePeriodRequest.
+        r"""Sets the comment of this CreateInstancePeriodRequest.
 
         备注信息
 
@@ -325,7 +325,7 @@ class CreateInstancePeriodRequest:
 
     @property
     def region(self):
-        """Gets the region of this CreateInstancePeriodRequest.
+        r"""Gets the region of this CreateInstancePeriodRequest.
 
         云服务器所在区域ID
 
@@ -336,7 +336,7 @@ class CreateInstancePeriodRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this CreateInstancePeriodRequest.
+        r"""Sets the region of this CreateInstancePeriodRequest.
 
         云服务器所在区域ID
 
@@ -347,7 +347,7 @@ class CreateInstancePeriodRequest:
 
     @property
     def cloud_service_type(self):
-        """Gets the cloud_service_type of this CreateInstancePeriodRequest.
+        r"""Gets the cloud_service_type of this CreateInstancePeriodRequest.
 
         服务类型： - hws.service.type.dbss
 
@@ -358,7 +358,7 @@ class CreateInstancePeriodRequest:
 
     @cloud_service_type.setter
     def cloud_service_type(self, cloud_service_type):
-        """Sets the cloud_service_type of this CreateInstancePeriodRequest.
+        r"""Sets the cloud_service_type of this CreateInstancePeriodRequest.
 
         服务类型： - hws.service.type.dbss
 
@@ -369,7 +369,7 @@ class CreateInstancePeriodRequest:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this CreateInstancePeriodRequest.
+        r"""Gets the charging_mode of this CreateInstancePeriodRequest.
 
         计费模式： - 0: 包周期计费 - 1: 按需计费
 
@@ -380,7 +380,7 @@ class CreateInstancePeriodRequest:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this CreateInstancePeriodRequest.
+        r"""Sets the charging_mode of this CreateInstancePeriodRequest.
 
         计费模式： - 0: 包周期计费 - 1: 按需计费
 
@@ -391,7 +391,7 @@ class CreateInstancePeriodRequest:
 
     @property
     def period_type(self):
-        """Gets the period_type of this CreateInstancePeriodRequest.
+        r"""Gets the period_type of this CreateInstancePeriodRequest.
 
         -订购周期类型 - 0: 天 - 1：周 - 2：月 - 3：年 - 4: 小时 - 5: 绝对时间
 
@@ -402,7 +402,7 @@ class CreateInstancePeriodRequest:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this CreateInstancePeriodRequest.
+        r"""Sets the period_type of this CreateInstancePeriodRequest.
 
         -订购周期类型 - 0: 天 - 1：周 - 2：月 - 3：年 - 4: 小时 - 5: 绝对时间
 
@@ -413,7 +413,7 @@ class CreateInstancePeriodRequest:
 
     @property
     def period_num(self):
-        """Gets the period_num of this CreateInstancePeriodRequest.
+        r"""Gets the period_num of this CreateInstancePeriodRequest.
 
         订购周期数
 
@@ -424,7 +424,7 @@ class CreateInstancePeriodRequest:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this CreateInstancePeriodRequest.
+        r"""Sets the period_num of this CreateInstancePeriodRequest.
 
         订购周期数
 
@@ -435,7 +435,7 @@ class CreateInstancePeriodRequest:
 
     @property
     def subscription_num(self):
-        """Gets the subscription_num of this CreateInstancePeriodRequest.
+        r"""Gets the subscription_num of this CreateInstancePeriodRequest.
 
         订购数量： DBSS只支持订购1套，不支持多套
 
@@ -446,7 +446,7 @@ class CreateInstancePeriodRequest:
 
     @subscription_num.setter
     def subscription_num(self, subscription_num):
-        """Sets the subscription_num of this CreateInstancePeriodRequest.
+        r"""Sets the subscription_num of this CreateInstancePeriodRequest.
 
         订购数量： DBSS只支持订购1套，不支持多套
 
@@ -457,7 +457,7 @@ class CreateInstancePeriodRequest:
 
     @property
     def product_infos(self):
-        """Gets the product_infos of this CreateInstancePeriodRequest.
+        r"""Gets the product_infos of this CreateInstancePeriodRequest.
 
         产品信息列表
 
@@ -468,7 +468,7 @@ class CreateInstancePeriodRequest:
 
     @product_infos.setter
     def product_infos(self, product_infos):
-        """Sets the product_infos of this CreateInstancePeriodRequest.
+        r"""Sets the product_infos of this CreateInstancePeriodRequest.
 
         产品信息列表
 
@@ -479,7 +479,7 @@ class CreateInstancePeriodRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateInstancePeriodRequest.
+        r"""Gets the tags of this CreateInstancePeriodRequest.
 
         资源标签
 
@@ -490,7 +490,7 @@ class CreateInstancePeriodRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateInstancePeriodRequest.
+        r"""Sets the tags of this CreateInstancePeriodRequest.
 
         资源标签
 
@@ -501,7 +501,7 @@ class CreateInstancePeriodRequest:
 
     @property
     def promotion_info(self):
-        """Gets the promotion_info of this CreateInstancePeriodRequest.
+        r"""Gets the promotion_info of this CreateInstancePeriodRequest.
 
         折扣信息
 
@@ -512,7 +512,7 @@ class CreateInstancePeriodRequest:
 
     @promotion_info.setter
     def promotion_info(self, promotion_info):
-        """Sets the promotion_info of this CreateInstancePeriodRequest.
+        r"""Sets the promotion_info of this CreateInstancePeriodRequest.
 
         折扣信息
 
@@ -523,7 +523,7 @@ class CreateInstancePeriodRequest:
 
     @property
     def is_auto_renew(self):
-        """Gets the is_auto_renew of this CreateInstancePeriodRequest.
+        r"""Gets the is_auto_renew of this CreateInstancePeriodRequest.
 
         自动续费 - 1: 自动续费 - 0: 不自动续费
 
@@ -534,7 +534,7 @@ class CreateInstancePeriodRequest:
 
     @is_auto_renew.setter
     def is_auto_renew(self, is_auto_renew):
-        """Sets the is_auto_renew of this CreateInstancePeriodRequest.
+        r"""Sets the is_auto_renew of this CreateInstancePeriodRequest.
 
         自动续费 - 1: 自动续费 - 0: 不自动续费
 

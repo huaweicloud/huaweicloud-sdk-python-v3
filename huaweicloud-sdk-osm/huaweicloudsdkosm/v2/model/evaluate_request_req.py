@@ -25,7 +25,7 @@ class EvaluateRequestReq:
     }
 
     def __init__(self, degree=None):
-        """EvaluateRequestReq
+        r"""EvaluateRequestReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class EvaluateRequestReq:
 
     @property
     def degree(self):
-        """Gets the degree of this EvaluateRequestReq.
+        r"""Gets the degree of this EvaluateRequestReq.
 
         评价结果
 
@@ -54,7 +54,7 @@ class EvaluateRequestReq:
 
     @degree.setter
     def degree(self, degree):
-        """Sets the degree of this EvaluateRequestReq.
+        r"""Sets the degree of this EvaluateRequestReq.
 
         评价结果
 

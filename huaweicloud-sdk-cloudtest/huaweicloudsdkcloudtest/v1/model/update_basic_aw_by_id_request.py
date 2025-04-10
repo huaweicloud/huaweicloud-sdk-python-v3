@@ -29,7 +29,7 @@ class UpdateBasicAwByIdRequest:
     }
 
     def __init__(self, project_id=None, aw_id=None, body=None):
-        """UpdateBasicAwByIdRequest
+        r"""UpdateBasicAwByIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateBasicAwByIdRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this UpdateBasicAwByIdRequest.
+        r"""Gets the project_id of this UpdateBasicAwByIdRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -66,7 +66,7 @@ class UpdateBasicAwByIdRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UpdateBasicAwByIdRequest.
+        r"""Sets the project_id of this UpdateBasicAwByIdRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -77,7 +77,7 @@ class UpdateBasicAwByIdRequest:
 
     @property
     def aw_id(self):
-        """Gets the aw_id of this UpdateBasicAwByIdRequest.
+        r"""Gets the aw_id of this UpdateBasicAwByIdRequest.
 
         AW的ID
 
@@ -88,7 +88,7 @@ class UpdateBasicAwByIdRequest:
 
     @aw_id.setter
     def aw_id(self, aw_id):
-        """Sets the aw_id of this UpdateBasicAwByIdRequest.
+        r"""Sets the aw_id of this UpdateBasicAwByIdRequest.
 
         AW的ID
 
@@ -99,7 +99,7 @@ class UpdateBasicAwByIdRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateBasicAwByIdRequest.
+        r"""Gets the body of this UpdateBasicAwByIdRequest.
 
         :return: The body of this UpdateBasicAwByIdRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.UpdateBasicAwReq`
@@ -108,7 +108,7 @@ class UpdateBasicAwByIdRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateBasicAwByIdRequest.
+        r"""Sets the body of this UpdateBasicAwByIdRequest.
 
         :param body: The body of this UpdateBasicAwByIdRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.UpdateBasicAwReq`

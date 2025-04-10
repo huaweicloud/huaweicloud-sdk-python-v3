@@ -27,7 +27,7 @@ class PersistObjectIdDecryptDTO:
     }
 
     def __init__(self, decrypt=None, id=None):
-        """PersistObjectIdDecryptDTO
+        r"""PersistObjectIdDecryptDTO
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class PersistObjectIdDecryptDTO:
 
     @property
     def decrypt(self):
-        """Gets the decrypt of this PersistObjectIdDecryptDTO.
+        r"""Gets the decrypt of this PersistObjectIdDecryptDTO.
 
         **参数解释：**  是否加密。  **约束限制：**  不涉及。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  false。 
 
@@ -60,7 +60,7 @@ class PersistObjectIdDecryptDTO:
 
     @decrypt.setter
     def decrypt(self, decrypt):
-        """Sets the decrypt of this PersistObjectIdDecryptDTO.
+        r"""Sets the decrypt of this PersistObjectIdDecryptDTO.
 
         **参数解释：**  是否加密。  **约束限制：**  不涉及。  **取值范围：**  - true：加密。 - false：不加密。  **默认取值：**  false。 
 
@@ -71,7 +71,7 @@ class PersistObjectIdDecryptDTO:
 
     @property
     def id(self):
-        """Gets the id of this PersistObjectIdDecryptDTO.
+        r"""Gets the id of this PersistObjectIdDecryptDTO.
 
         **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -82,7 +82,7 @@ class PersistObjectIdDecryptDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PersistObjectIdDecryptDTO.
+        r"""Sets the id of this PersistObjectIdDecryptDTO.
 
         **参数解释：**  唯一标识。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 

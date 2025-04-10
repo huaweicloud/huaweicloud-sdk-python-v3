@@ -33,7 +33,7 @@ class JobEntities:
     }
 
     def __init__(self, volume_type=None, size=None, volume_id=None, name=None, sub_jobs=None):
-        """JobEntities
+        r"""JobEntities
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class JobEntities:
 
     @property
     def volume_type(self):
-        """Gets the volume_type of this JobEntities.
+        r"""Gets the volume_type of this JobEntities.
 
         云硬盘的类型。
 
@@ -82,7 +82,7 @@ class JobEntities:
 
     @volume_type.setter
     def volume_type(self, volume_type):
-        """Sets the volume_type of this JobEntities.
+        r"""Sets the volume_type of this JobEntities.
 
         云硬盘的类型。
 
@@ -93,7 +93,7 @@ class JobEntities:
 
     @property
     def size(self):
-        """Gets the size of this JobEntities.
+        r"""Gets the size of this JobEntities.
 
         云硬盘的容量，单位为GB。
 
@@ -104,7 +104,7 @@ class JobEntities:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this JobEntities.
+        r"""Sets the size of this JobEntities.
 
         云硬盘的容量，单位为GB。
 
@@ -115,7 +115,7 @@ class JobEntities:
 
     @property
     def volume_id(self):
-        """Gets the volume_id of this JobEntities.
+        r"""Gets the volume_id of this JobEntities.
 
         云硬盘的ID。
 
@@ -126,7 +126,7 @@ class JobEntities:
 
     @volume_id.setter
     def volume_id(self, volume_id):
-        """Sets the volume_id of this JobEntities.
+        r"""Sets the volume_id of this JobEntities.
 
         云硬盘的ID。
 
@@ -137,7 +137,7 @@ class JobEntities:
 
     @property
     def name(self):
-        """Gets the name of this JobEntities.
+        r"""Gets the name of this JobEntities.
 
         云硬盘的名称。
 
@@ -148,7 +148,7 @@ class JobEntities:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this JobEntities.
+        r"""Sets the name of this JobEntities.
 
         云硬盘的名称。
 
@@ -159,7 +159,7 @@ class JobEntities:
 
     @property
     def sub_jobs(self):
-        """Gets the sub_jobs of this JobEntities.
+        r"""Gets the sub_jobs of this JobEntities.
 
         子Job的信息。当存在子Job信息时，entities中的其他字段将不会返回。
 
@@ -170,7 +170,7 @@ class JobEntities:
 
     @sub_jobs.setter
     def sub_jobs(self, sub_jobs):
-        """Sets the sub_jobs of this JobEntities.
+        r"""Sets the sub_jobs of this JobEntities.
 
         子Job的信息。当存在子Job信息时，entities中的其他字段将不会返回。
 

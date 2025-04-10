@@ -41,7 +41,7 @@ class AppResponse:
     }
 
     def __init__(self, id=None, name=None, alias=None, description=None, icon_url=None, created_at=None, project_id=None, visibility=None, app_versions=None):
-        """AppResponse
+        r"""AppResponse
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class AppResponse:
 
     @property
     def id(self):
-        """Gets the id of this AppResponse.
+        r"""Gets the id of this AppResponse.
 
         应用模板ID
 
@@ -101,7 +101,7 @@ class AppResponse:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AppResponse.
+        r"""Sets the id of this AppResponse.
 
         应用模板ID
 
@@ -112,7 +112,7 @@ class AppResponse:
 
     @property
     def name(self):
-        """Gets the name of this AppResponse.
+        r"""Gets the name of this AppResponse.
 
         应用模板名称，只允许英文小写字母、数字、中划线，最大长度32， 英文小写字母或数字开头和结尾 Name为必填字段，且本租户中唯一
 
@@ -123,7 +123,7 @@ class AppResponse:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AppResponse.
+        r"""Sets the name of this AppResponse.
 
         应用模板名称，只允许英文小写字母、数字、中划线，最大长度32， 英文小写字母或数字开头和结尾 Name为必填字段，且本租户中唯一
 
@@ -134,7 +134,7 @@ class AppResponse:
 
     @property
     def alias(self):
-        """Gets the alias of this AppResponse.
+        r"""Gets the alias of this AppResponse.
 
         应用模板别名，中文英文字母、数字、中划线、下划线，最大64字符
 
@@ -145,7 +145,7 @@ class AppResponse:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this AppResponse.
+        r"""Sets the alias of this AppResponse.
 
         应用模板别名，中文英文字母、数字、中划线、下划线，最大64字符
 
@@ -156,7 +156,7 @@ class AppResponse:
 
     @property
     def description(self):
-        """Gets the description of this AppResponse.
+        r"""Gets the description of this AppResponse.
 
         应用模板描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -167,7 +167,7 @@ class AppResponse:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AppResponse.
+        r"""Sets the description of this AppResponse.
 
         应用模板描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -178,7 +178,7 @@ class AppResponse:
 
     @property
     def icon_url(self):
-        """Gets the icon_url of this AppResponse.
+        r"""Gets the icon_url of this AppResponse.
 
         应用图标存储url地址，最大长度2083
 
@@ -189,7 +189,7 @@ class AppResponse:
 
     @icon_url.setter
     def icon_url(self, icon_url):
-        """Sets the icon_url of this AppResponse.
+        r"""Sets the icon_url of this AppResponse.
 
         应用图标存储url地址，最大长度2083
 
@@ -200,7 +200,7 @@ class AppResponse:
 
     @property
     def created_at(self):
-        """Gets the created_at of this AppResponse.
+        r"""Gets the created_at of this AppResponse.
 
         创建时间
 
@@ -211,7 +211,7 @@ class AppResponse:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this AppResponse.
+        r"""Sets the created_at of this AppResponse.
 
         创建时间
 
@@ -222,7 +222,7 @@ class AppResponse:
 
     @property
     def project_id(self):
-        """Gets the project_id of this AppResponse.
+        r"""Gets the project_id of this AppResponse.
 
         项目ID
 
@@ -233,7 +233,7 @@ class AppResponse:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this AppResponse.
+        r"""Sets the project_id of this AppResponse.
 
         项目ID
 
@@ -244,7 +244,7 @@ class AppResponse:
 
     @property
     def visibility(self):
-        """Gets the visibility of this AppResponse.
+        r"""Gets the visibility of this AppResponse.
 
         模板类型
 
@@ -255,7 +255,7 @@ class AppResponse:
 
     @visibility.setter
     def visibility(self, visibility):
-        """Sets the visibility of this AppResponse.
+        r"""Sets the visibility of this AppResponse.
 
         模板类型
 
@@ -266,7 +266,7 @@ class AppResponse:
 
     @property
     def app_versions(self):
-        """Gets the app_versions of this AppResponse.
+        r"""Gets the app_versions of this AppResponse.
 
         app详情
 
@@ -277,7 +277,7 @@ class AppResponse:
 
     @app_versions.setter
     def app_versions(self, app_versions):
-        """Sets the app_versions of this AppResponse.
+        r"""Sets the app_versions of this AppResponse.
 
         app详情
 

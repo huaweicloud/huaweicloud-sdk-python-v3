@@ -27,7 +27,7 @@ class CreateFepJobRequest:
     }
 
     def __init__(self, eihealth_project_id=None, body=None):
-        """CreateFepJobRequest
+        r"""CreateFepJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateFepJobRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this CreateFepJobRequest.
+        r"""Gets the eihealth_project_id of this CreateFepJobRequest.
 
         平台项目ID。
 
@@ -60,7 +60,7 @@ class CreateFepJobRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this CreateFepJobRequest.
+        r"""Sets the eihealth_project_id of this CreateFepJobRequest.
 
         平台项目ID。
 
@@ -71,7 +71,7 @@ class CreateFepJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateFepJobRequest.
+        r"""Gets the body of this CreateFepJobRequest.
 
         :return: The body of this CreateFepJobRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateFepJobReq`
@@ -80,7 +80,7 @@ class CreateFepJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateFepJobRequest.
+        r"""Sets the body of this CreateFepJobRequest.
 
         :param body: The body of this CreateFepJobRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.CreateFepJobReq`

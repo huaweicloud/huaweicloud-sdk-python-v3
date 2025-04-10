@@ -25,7 +25,7 @@ class ShowUserMfaDeviceRequest:
     }
 
     def __init__(self, user_id=None):
-        """ShowUserMfaDeviceRequest
+        r"""ShowUserMfaDeviceRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowUserMfaDeviceRequest:
 
     @property
     def user_id(self):
-        """Gets the user_id of this ShowUserMfaDeviceRequest.
+        r"""Gets the user_id of this ShowUserMfaDeviceRequest.
 
         待查询的IAM用户ID，获取方式请参见：[获取用户ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -53,7 +53,7 @@ class ShowUserMfaDeviceRequest:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ShowUserMfaDeviceRequest.
+        r"""Sets the user_id of this ShowUserMfaDeviceRequest.
 
         待查询的IAM用户ID，获取方式请参见：[获取用户ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 

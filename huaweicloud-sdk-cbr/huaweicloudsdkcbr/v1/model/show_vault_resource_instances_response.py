@@ -28,7 +28,7 @@ class ShowVaultResourceInstancesResponse(SdkResponse):
     }
 
     def __init__(self, resources=None, total_count=None):
-        """ShowVaultResourceInstancesResponse
+        r"""ShowVaultResourceInstancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowVaultResourceInstancesResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ShowVaultResourceInstancesResponse.
+        r"""Gets the resources of this ShowVaultResourceInstancesResponse.
 
         符合查询条件的资源列表（action为count时无此参数）。
 
@@ -62,7 +62,7 @@ class ShowVaultResourceInstancesResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ShowVaultResourceInstancesResponse.
+        r"""Sets the resources of this ShowVaultResourceInstancesResponse.
 
         符合查询条件的资源列表（action为count时无此参数）。
 
@@ -73,7 +73,7 @@ class ShowVaultResourceInstancesResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ShowVaultResourceInstancesResponse.
+        r"""Gets the total_count of this ShowVaultResourceInstancesResponse.
 
         符合查询条件的资源总个数
 
@@ -84,7 +84,7 @@ class ShowVaultResourceInstancesResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ShowVaultResourceInstancesResponse.
+        r"""Sets the total_count of this ShowVaultResourceInstancesResponse.
 
         符合查询条件的资源总个数
 

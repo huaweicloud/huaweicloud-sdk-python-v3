@@ -27,7 +27,7 @@ class ListTopicAttributesRequest:
     }
 
     def __init__(self, topic_urn=None, name=None):
-        """ListTopicAttributesRequest
+        r"""ListTopicAttributesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListTopicAttributesRequest:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this ListTopicAttributesRequest.
+        r"""Gets the topic_urn of this ListTopicAttributesRequest.
 
         Topic的唯一的资源标识，可通过[查询主题列表](smn_api_51004.xml)获取该标识。
 
@@ -60,7 +60,7 @@ class ListTopicAttributesRequest:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this ListTopicAttributesRequest.
+        r"""Sets the topic_urn of this ListTopicAttributesRequest.
 
         Topic的唯一的资源标识，可通过[查询主题列表](smn_api_51004.xml)获取该标识。
 
@@ -71,7 +71,7 @@ class ListTopicAttributesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListTopicAttributesRequest.
+        r"""Gets the name of this ListTopicAttributesRequest.
 
         主题策略名称。  只支持特定的策略名称，请参见[Topic属性表](smn_api_a1000.xml)。
 
@@ -82,7 +82,7 @@ class ListTopicAttributesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListTopicAttributesRequest.
+        r"""Sets the name of this ListTopicAttributesRequest.
 
         主题策略名称。  只支持特定的策略名称，请参见[Topic属性表](smn_api_a1000.xml)。
 

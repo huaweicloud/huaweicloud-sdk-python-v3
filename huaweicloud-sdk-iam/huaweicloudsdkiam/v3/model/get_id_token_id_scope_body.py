@@ -27,7 +27,7 @@ class GetIdTokenIdScopeBody:
     }
 
     def __init__(self, domain=None, project=None):
-        """GetIdTokenIdScopeBody
+        r"""GetIdTokenIdScopeBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class GetIdTokenIdScopeBody:
 
     @property
     def domain(self):
-        """Gets the domain of this GetIdTokenIdScopeBody.
+        r"""Gets the domain of this GetIdTokenIdScopeBody.
 
         :return: The domain of this GetIdTokenIdScopeBody.
         :rtype: :class:`huaweicloudsdkiam.v3.GetIdTokenScopeDomainOrProjectBody`
@@ -59,7 +59,7 @@ class GetIdTokenIdScopeBody:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this GetIdTokenIdScopeBody.
+        r"""Sets the domain of this GetIdTokenIdScopeBody.
 
         :param domain: The domain of this GetIdTokenIdScopeBody.
         :type domain: :class:`huaweicloudsdkiam.v3.GetIdTokenScopeDomainOrProjectBody`
@@ -68,7 +68,7 @@ class GetIdTokenIdScopeBody:
 
     @property
     def project(self):
-        """Gets the project of this GetIdTokenIdScopeBody.
+        r"""Gets the project of this GetIdTokenIdScopeBody.
 
         :return: The project of this GetIdTokenIdScopeBody.
         :rtype: :class:`huaweicloudsdkiam.v3.GetIdTokenScopeDomainOrProjectBody`
@@ -77,7 +77,7 @@ class GetIdTokenIdScopeBody:
 
     @project.setter
     def project(self, project):
-        """Sets the project of this GetIdTokenIdScopeBody.
+        r"""Sets the project of this GetIdTokenIdScopeBody.
 
         :param project: The project of this GetIdTokenIdScopeBody.
         :type project: :class:`huaweicloudsdkiam.v3.GetIdTokenScopeDomainOrProjectBody`

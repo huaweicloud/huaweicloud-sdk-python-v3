@@ -25,7 +25,7 @@ class ShowSqlJobStatusRequest:
     }
 
     def __init__(self, job_id=None):
-        """ShowSqlJobStatusRequest
+        r"""ShowSqlJobStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowSqlJobStatusRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowSqlJobStatusRequest.
+        r"""Gets the job_id of this ShowSqlJobStatusRequest.
 
         作业ID。
 
@@ -53,7 +53,7 @@ class ShowSqlJobStatusRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowSqlJobStatusRequest.
+        r"""Sets the job_id of this ShowSqlJobStatusRequest.
 
         作业ID。
 

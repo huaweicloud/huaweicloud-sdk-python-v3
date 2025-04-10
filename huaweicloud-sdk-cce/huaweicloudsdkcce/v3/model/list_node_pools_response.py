@@ -30,7 +30,7 @@ class ListNodePoolsResponse(SdkResponse):
     }
 
     def __init__(self, kind=None, api_version=None, items=None):
-        """ListNodePoolsResponse
+        r"""ListNodePoolsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListNodePoolsResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this ListNodePoolsResponse.
+        r"""Gets the kind of this ListNodePoolsResponse.
 
         API type. The value is fixed to List.
 
@@ -69,7 +69,7 @@ class ListNodePoolsResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ListNodePoolsResponse.
+        r"""Sets the kind of this ListNodePoolsResponse.
 
         API type. The value is fixed to List.
 
@@ -80,7 +80,7 @@ class ListNodePoolsResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this ListNodePoolsResponse.
+        r"""Gets the api_version of this ListNodePoolsResponse.
 
         API version. The value is fixed to v3.
 
@@ -91,7 +91,7 @@ class ListNodePoolsResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this ListNodePoolsResponse.
+        r"""Sets the api_version of this ListNodePoolsResponse.
 
         API version. The value is fixed to v3.
 
@@ -102,7 +102,7 @@ class ListNodePoolsResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListNodePoolsResponse.
+        r"""Gets the items of this ListNodePoolsResponse.
 
         /
 
@@ -113,7 +113,7 @@ class ListNodePoolsResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListNodePoolsResponse.
+        r"""Sets the items of this ListNodePoolsResponse.
 
         /
 

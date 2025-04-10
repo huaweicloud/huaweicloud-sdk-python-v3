@@ -26,7 +26,7 @@ class CreateScheduledTaskResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """CreateScheduledTaskResponse
+        r"""CreateScheduledTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateScheduledTaskResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this CreateScheduledTaskResponse.
+        r"""Gets the data of this CreateScheduledTaskResponse.
 
         响应数据
 
@@ -55,7 +55,7 @@ class CreateScheduledTaskResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this CreateScheduledTaskResponse.
+        r"""Sets the data of this CreateScheduledTaskResponse.
 
         响应数据
 

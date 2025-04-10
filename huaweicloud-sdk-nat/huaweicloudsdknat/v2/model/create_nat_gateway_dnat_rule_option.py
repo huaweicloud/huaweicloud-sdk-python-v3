@@ -25,7 +25,7 @@ class CreateNatGatewayDnatRuleOption:
     }
 
     def __init__(self, dnat_rule=None):
-        """CreateNatGatewayDnatRuleOption
+        r"""CreateNatGatewayDnatRuleOption
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateNatGatewayDnatRuleOption:
 
     @property
     def dnat_rule(self):
-        """Gets the dnat_rule of this CreateNatGatewayDnatRuleOption.
+        r"""Gets the dnat_rule of this CreateNatGatewayDnatRuleOption.
 
         :return: The dnat_rule of this CreateNatGatewayDnatRuleOption.
         :rtype: :class:`huaweicloudsdknat.v2.CreateNatGatewayDnatOption`
@@ -51,7 +51,7 @@ class CreateNatGatewayDnatRuleOption:
 
     @dnat_rule.setter
     def dnat_rule(self, dnat_rule):
-        """Sets the dnat_rule of this CreateNatGatewayDnatRuleOption.
+        r"""Sets the dnat_rule of this CreateNatGatewayDnatRuleOption.
 
         :param dnat_rule: The dnat_rule of this CreateNatGatewayDnatRuleOption.
         :type dnat_rule: :class:`huaweicloudsdknat.v2.CreateNatGatewayDnatOption`

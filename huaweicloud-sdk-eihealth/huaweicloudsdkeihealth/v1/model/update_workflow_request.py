@@ -29,7 +29,7 @@ class UpdateWorkflowRequest:
     }
 
     def __init__(self, eihealth_project_id=None, workflow_id=None, body=None):
-        """UpdateWorkflowRequest
+        r"""UpdateWorkflowRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateWorkflowRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this UpdateWorkflowRequest.
+        r"""Gets the eihealth_project_id of this UpdateWorkflowRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -66,7 +66,7 @@ class UpdateWorkflowRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this UpdateWorkflowRequest.
+        r"""Sets the eihealth_project_id of this UpdateWorkflowRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -77,7 +77,7 @@ class UpdateWorkflowRequest:
 
     @property
     def workflow_id(self):
-        """Gets the workflow_id of this UpdateWorkflowRequest.
+        r"""Gets the workflow_id of this UpdateWorkflowRequest.
 
         流程id
 
@@ -88,7 +88,7 @@ class UpdateWorkflowRequest:
 
     @workflow_id.setter
     def workflow_id(self, workflow_id):
-        """Sets the workflow_id of this UpdateWorkflowRequest.
+        r"""Sets the workflow_id of this UpdateWorkflowRequest.
 
         流程id
 
@@ -99,7 +99,7 @@ class UpdateWorkflowRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateWorkflowRequest.
+        r"""Gets the body of this UpdateWorkflowRequest.
 
         :return: The body of this UpdateWorkflowRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.WorkflowDto`
@@ -108,7 +108,7 @@ class UpdateWorkflowRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateWorkflowRequest.
+        r"""Sets the body of this UpdateWorkflowRequest.
 
         :param body: The body of this UpdateWorkflowRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.WorkflowDto`

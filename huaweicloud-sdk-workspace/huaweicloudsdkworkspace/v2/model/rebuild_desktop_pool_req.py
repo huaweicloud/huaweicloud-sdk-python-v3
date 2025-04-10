@@ -37,7 +37,7 @@ class RebuildDesktopPoolReq:
     }
 
     def __init__(self, image_type=None, image_id=None, os_type=None, delay_time=None, message=None, order_id=None, is_fix=None):
-        """RebuildDesktopPoolReq
+        r"""RebuildDesktopPoolReq
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class RebuildDesktopPoolReq:
 
     @property
     def image_type(self):
-        """Gets the image_type of this RebuildDesktopPoolReq.
+        r"""Gets the image_type of this RebuildDesktopPoolReq.
 
         镜像类型。
 
@@ -95,7 +95,7 @@ class RebuildDesktopPoolReq:
 
     @image_type.setter
     def image_type(self, image_type):
-        """Sets the image_type of this RebuildDesktopPoolReq.
+        r"""Sets the image_type of this RebuildDesktopPoolReq.
 
         镜像类型。
 
@@ -106,7 +106,7 @@ class RebuildDesktopPoolReq:
 
     @property
     def image_id(self):
-        """Gets the image_id of this RebuildDesktopPoolReq.
+        r"""Gets the image_id of this RebuildDesktopPoolReq.
 
         模板ID。
 
@@ -117,7 +117,7 @@ class RebuildDesktopPoolReq:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this RebuildDesktopPoolReq.
+        r"""Sets the image_id of this RebuildDesktopPoolReq.
 
         模板ID。
 
@@ -128,7 +128,7 @@ class RebuildDesktopPoolReq:
 
     @property
     def os_type(self):
-        """Gets the os_type of this RebuildDesktopPoolReq.
+        r"""Gets the os_type of this RebuildDesktopPoolReq.
 
         os类型。
 
@@ -139,7 +139,7 @@ class RebuildDesktopPoolReq:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this RebuildDesktopPoolReq.
+        r"""Sets the os_type of this RebuildDesktopPoolReq.
 
         os类型。
 
@@ -150,7 +150,7 @@ class RebuildDesktopPoolReq:
 
     @property
     def delay_time(self):
-        """Gets the delay_time of this RebuildDesktopPoolReq.
+        r"""Gets the delay_time of this RebuildDesktopPoolReq.
 
         立即重建时给用户预留的保存数据的时间（单位：分钟）。
 
@@ -161,7 +161,7 @@ class RebuildDesktopPoolReq:
 
     @delay_time.setter
     def delay_time(self, delay_time):
-        """Sets the delay_time of this RebuildDesktopPoolReq.
+        r"""Sets the delay_time of this RebuildDesktopPoolReq.
 
         立即重建时给用户预留的保存数据的时间（单位：分钟）。
 
@@ -172,7 +172,7 @@ class RebuildDesktopPoolReq:
 
     @property
     def message(self):
-        """Gets the message of this RebuildDesktopPoolReq.
+        r"""Gets the message of this RebuildDesktopPoolReq.
 
         下发重建系统盘任务时，给用户发送的提示信息。
 
@@ -183,7 +183,7 @@ class RebuildDesktopPoolReq:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this RebuildDesktopPoolReq.
+        r"""Sets the message of this RebuildDesktopPoolReq.
 
         下发重建系统盘任务时，给用户发送的提示信息。
 
@@ -194,7 +194,7 @@ class RebuildDesktopPoolReq:
 
     @property
     def order_id(self):
-        """Gets the order_id of this RebuildDesktopPoolReq.
+        r"""Gets the order_id of this RebuildDesktopPoolReq.
 
         订单ID，包周期桌面重建系统盘，涉及收费镜像时需传
 
@@ -205,7 +205,7 @@ class RebuildDesktopPoolReq:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this RebuildDesktopPoolReq.
+        r"""Sets the order_id of this RebuildDesktopPoolReq.
 
         订单ID，包周期桌面重建系统盘，涉及收费镜像时需传
 
@@ -216,7 +216,7 @@ class RebuildDesktopPoolReq:
 
     @property
     def is_fix(self):
-        """Gets the is_fix of this RebuildDesktopPoolReq.
+        r"""Gets the is_fix of this RebuildDesktopPoolReq.
 
         是否是修复行为，修复行为只修复镜像ID与桌面池镜像ID不一致的桌面，用于桌面池切换镜像失败场景的修复。
 
@@ -227,7 +227,7 @@ class RebuildDesktopPoolReq:
 
     @is_fix.setter
     def is_fix(self, is_fix):
-        """Sets the is_fix of this RebuildDesktopPoolReq.
+        r"""Sets the is_fix of this RebuildDesktopPoolReq.
 
         是否是修复行为，修复行为只修复镜像ID与桌面池镜像ID不一致的桌面，用于桌面池切换镜像失败场景的修复。
 

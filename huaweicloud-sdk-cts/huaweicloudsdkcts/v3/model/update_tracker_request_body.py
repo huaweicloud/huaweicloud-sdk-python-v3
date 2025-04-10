@@ -47,7 +47,7 @@ class UpdateTrackerRequestBody:
     }
 
     def __init__(self, tracker_type=None, tracker_name=None, agency_name=None, status=None, is_organization_tracker=None, management_event_selector=None, is_lts_enabled=None, obs_info=None, is_support_trace_files_encryption=None, kms_id=None, is_support_validate=None, data_bucket=None):
-        """UpdateTrackerRequestBody
+        r"""UpdateTrackerRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -118,7 +118,7 @@ class UpdateTrackerRequestBody:
 
     @property
     def tracker_type(self):
-        """Gets the tracker_type of this UpdateTrackerRequestBody.
+        r"""Gets the tracker_type of this UpdateTrackerRequestBody.
 
         标识追踪器类型。 目前支持系统追踪器类型有管理类追踪器(system)和数据类追踪器(data)。 数据类追踪器和管理类追踪器共同参数有：is_lts_enabled, obs_info; 管理类追踪器参数：is_support_trace_files_encryption, kms_id, is_support_validate, is_support_validate; 数据类追踪器参数：tracker_name, data_bucket。
 
@@ -129,7 +129,7 @@ class UpdateTrackerRequestBody:
 
     @tracker_type.setter
     def tracker_type(self, tracker_type):
-        """Sets the tracker_type of this UpdateTrackerRequestBody.
+        r"""Sets the tracker_type of this UpdateTrackerRequestBody.
 
         标识追踪器类型。 目前支持系统追踪器类型有管理类追踪器(system)和数据类追踪器(data)。 数据类追踪器和管理类追踪器共同参数有：is_lts_enabled, obs_info; 管理类追踪器参数：is_support_trace_files_encryption, kms_id, is_support_validate, is_support_validate; 数据类追踪器参数：tracker_name, data_bucket。
 
@@ -140,7 +140,7 @@ class UpdateTrackerRequestBody:
 
     @property
     def tracker_name(self):
-        """Gets the tracker_name of this UpdateTrackerRequestBody.
+        r"""Gets the tracker_name of this UpdateTrackerRequestBody.
 
         标识追踪器名称。 当\"tracker_type\"参数值为\"system\"时该参数为默认值\"system\"。 当\"tracker_type\"参数值为\"data\"时该参数需要指定追踪器名称\"。
 
@@ -151,7 +151,7 @@ class UpdateTrackerRequestBody:
 
     @tracker_name.setter
     def tracker_name(self, tracker_name):
-        """Sets the tracker_name of this UpdateTrackerRequestBody.
+        r"""Sets the tracker_name of this UpdateTrackerRequestBody.
 
         标识追踪器名称。 当\"tracker_type\"参数值为\"system\"时该参数为默认值\"system\"。 当\"tracker_type\"参数值为\"data\"时该参数需要指定追踪器名称\"。
 
@@ -162,7 +162,7 @@ class UpdateTrackerRequestBody:
 
     @property
     def agency_name(self):
-        """Gets the agency_name of this UpdateTrackerRequestBody.
+        r"""Gets the agency_name of this UpdateTrackerRequestBody.
 
         云服务委托名称。 参数值为\"cts_admin_trust\"时，更新追踪器会自动创建一个云服务委托：cts_admin_trust。
 
@@ -173,7 +173,7 @@ class UpdateTrackerRequestBody:
 
     @agency_name.setter
     def agency_name(self, agency_name):
-        """Sets the agency_name of this UpdateTrackerRequestBody.
+        r"""Sets the agency_name of this UpdateTrackerRequestBody.
 
         云服务委托名称。 参数值为\"cts_admin_trust\"时，更新追踪器会自动创建一个云服务委托：cts_admin_trust。
 
@@ -184,7 +184,7 @@ class UpdateTrackerRequestBody:
 
     @property
     def status(self):
-        """Gets the status of this UpdateTrackerRequestBody.
+        r"""Gets the status of this UpdateTrackerRequestBody.
 
         标识追踪器状态，该接口中可修改的状态包括正常（enabled）和停止（disabled）。如果选择修改状态为停止，则修改成功后追踪器停止记录事件。
 
@@ -195,7 +195,7 @@ class UpdateTrackerRequestBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateTrackerRequestBody.
+        r"""Sets the status of this UpdateTrackerRequestBody.
 
         标识追踪器状态，该接口中可修改的状态包括正常（enabled）和停止（disabled）。如果选择修改状态为停止，则修改成功后追踪器停止记录事件。
 
@@ -206,7 +206,7 @@ class UpdateTrackerRequestBody:
 
     @property
     def is_organization_tracker(self):
-        """Gets the is_organization_tracker of this UpdateTrackerRequestBody.
+        r"""Gets the is_organization_tracker of this UpdateTrackerRequestBody.
 
         是否应用到我的组织。 只针对管理类追踪器。设置为true时，ORG组织下所有成员当前区域的审计日志会转储到该追踪器配置的OBS桶或者LTS日志流，但是事件列表界面不支持查看其它组织成员的审计日志。
 
@@ -217,7 +217,7 @@ class UpdateTrackerRequestBody:
 
     @is_organization_tracker.setter
     def is_organization_tracker(self, is_organization_tracker):
-        """Sets the is_organization_tracker of this UpdateTrackerRequestBody.
+        r"""Sets the is_organization_tracker of this UpdateTrackerRequestBody.
 
         是否应用到我的组织。 只针对管理类追踪器。设置为true时，ORG组织下所有成员当前区域的审计日志会转储到该追踪器配置的OBS桶或者LTS日志流，但是事件列表界面不支持查看其它组织成员的审计日志。
 
@@ -228,7 +228,7 @@ class UpdateTrackerRequestBody:
 
     @property
     def management_event_selector(self):
-        """Gets the management_event_selector of this UpdateTrackerRequestBody.
+        r"""Gets the management_event_selector of this UpdateTrackerRequestBody.
 
         :return: The management_event_selector of this UpdateTrackerRequestBody.
         :rtype: :class:`huaweicloudsdkcts.v3.ManagementEventSelector`
@@ -237,7 +237,7 @@ class UpdateTrackerRequestBody:
 
     @management_event_selector.setter
     def management_event_selector(self, management_event_selector):
-        """Sets the management_event_selector of this UpdateTrackerRequestBody.
+        r"""Sets the management_event_selector of this UpdateTrackerRequestBody.
 
         :param management_event_selector: The management_event_selector of this UpdateTrackerRequestBody.
         :type management_event_selector: :class:`huaweicloudsdkcts.v3.ManagementEventSelector`
@@ -246,7 +246,7 @@ class UpdateTrackerRequestBody:
 
     @property
     def is_lts_enabled(self):
-        """Gets the is_lts_enabled of this UpdateTrackerRequestBody.
+        r"""Gets the is_lts_enabled of this UpdateTrackerRequestBody.
 
         是否打开事件分析。
 
@@ -257,7 +257,7 @@ class UpdateTrackerRequestBody:
 
     @is_lts_enabled.setter
     def is_lts_enabled(self, is_lts_enabled):
-        """Sets the is_lts_enabled of this UpdateTrackerRequestBody.
+        r"""Sets the is_lts_enabled of this UpdateTrackerRequestBody.
 
         是否打开事件分析。
 
@@ -268,7 +268,7 @@ class UpdateTrackerRequestBody:
 
     @property
     def obs_info(self):
-        """Gets the obs_info of this UpdateTrackerRequestBody.
+        r"""Gets the obs_info of this UpdateTrackerRequestBody.
 
         :return: The obs_info of this UpdateTrackerRequestBody.
         :rtype: :class:`huaweicloudsdkcts.v3.TrackerObsInfo`
@@ -277,7 +277,7 @@ class UpdateTrackerRequestBody:
 
     @obs_info.setter
     def obs_info(self, obs_info):
-        """Sets the obs_info of this UpdateTrackerRequestBody.
+        r"""Sets the obs_info of this UpdateTrackerRequestBody.
 
         :param obs_info: The obs_info of this UpdateTrackerRequestBody.
         :type obs_info: :class:`huaweicloudsdkcts.v3.TrackerObsInfo`
@@ -286,7 +286,7 @@ class UpdateTrackerRequestBody:
 
     @property
     def is_support_trace_files_encryption(self):
-        """Gets the is_support_trace_files_encryption of this UpdateTrackerRequestBody.
+        r"""Gets the is_support_trace_files_encryption of this UpdateTrackerRequestBody.
 
         事件文件转储加密功能开关。 当\"tracker_type\"参数值为\"system\"时该参数值有效。 该参数必须与kms_id参数同时使用。
 
@@ -297,7 +297,7 @@ class UpdateTrackerRequestBody:
 
     @is_support_trace_files_encryption.setter
     def is_support_trace_files_encryption(self, is_support_trace_files_encryption):
-        """Sets the is_support_trace_files_encryption of this UpdateTrackerRequestBody.
+        r"""Sets the is_support_trace_files_encryption of this UpdateTrackerRequestBody.
 
         事件文件转储加密功能开关。 当\"tracker_type\"参数值为\"system\"时该参数值有效。 该参数必须与kms_id参数同时使用。
 
@@ -308,7 +308,7 @@ class UpdateTrackerRequestBody:
 
     @property
     def kms_id(self):
-        """Gets the kms_id of this UpdateTrackerRequestBody.
+        r"""Gets the kms_id of this UpdateTrackerRequestBody.
 
         事件文件转储加密所采用的秘钥id（从KMS获取）。 当\"tracker_type\"参数值为\"system\"时该参数值有效。 当\"is_support_trace_files_encryption\"参数值为“是”时，此参数为必选项。
 
@@ -319,7 +319,7 @@ class UpdateTrackerRequestBody:
 
     @kms_id.setter
     def kms_id(self, kms_id):
-        """Sets the kms_id of this UpdateTrackerRequestBody.
+        r"""Sets the kms_id of this UpdateTrackerRequestBody.
 
         事件文件转储加密所采用的秘钥id（从KMS获取）。 当\"tracker_type\"参数值为\"system\"时该参数值有效。 当\"is_support_trace_files_encryption\"参数值为“是”时，此参数为必选项。
 
@@ -330,7 +330,7 @@ class UpdateTrackerRequestBody:
 
     @property
     def is_support_validate(self):
-        """Gets the is_support_validate of this UpdateTrackerRequestBody.
+        r"""Gets the is_support_validate of this UpdateTrackerRequestBody.
 
         事件文件转储时是否打开事件文件校验。 当\"tracker_type\"参数值为\"system\"时该参数值有效。
 
@@ -341,7 +341,7 @@ class UpdateTrackerRequestBody:
 
     @is_support_validate.setter
     def is_support_validate(self, is_support_validate):
-        """Sets the is_support_validate of this UpdateTrackerRequestBody.
+        r"""Sets the is_support_validate of this UpdateTrackerRequestBody.
 
         事件文件转储时是否打开事件文件校验。 当\"tracker_type\"参数值为\"system\"时该参数值有效。
 
@@ -352,7 +352,7 @@ class UpdateTrackerRequestBody:
 
     @property
     def data_bucket(self):
-        """Gets the data_bucket of this UpdateTrackerRequestBody.
+        r"""Gets the data_bucket of this UpdateTrackerRequestBody.
 
         :return: The data_bucket of this UpdateTrackerRequestBody.
         :rtype: :class:`huaweicloudsdkcts.v3.DataBucket`
@@ -361,7 +361,7 @@ class UpdateTrackerRequestBody:
 
     @data_bucket.setter
     def data_bucket(self, data_bucket):
-        """Sets the data_bucket of this UpdateTrackerRequestBody.
+        r"""Sets the data_bucket of this UpdateTrackerRequestBody.
 
         :param data_bucket: The data_bucket of this UpdateTrackerRequestBody.
         :type data_bucket: :class:`huaweicloudsdkcts.v3.DataBucket`

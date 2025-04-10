@@ -32,7 +32,7 @@ class ListSqlJobTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, sql_count=None, sqls=None):
-        """ListSqlJobTemplatesResponse
+        r"""ListSqlJobTemplatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListSqlJobTemplatesResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ListSqlJobTemplatesResponse.
+        r"""Gets the is_success of this ListSqlJobTemplatesResponse.
 
         是否成功。
 
@@ -76,7 +76,7 @@ class ListSqlJobTemplatesResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ListSqlJobTemplatesResponse.
+        r"""Sets the is_success of this ListSqlJobTemplatesResponse.
 
         是否成功。
 
@@ -87,7 +87,7 @@ class ListSqlJobTemplatesResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListSqlJobTemplatesResponse.
+        r"""Gets the message of this ListSqlJobTemplatesResponse.
 
         系统提示信息，执行成功时，信息可能为空。执行失败时，用于显示执行失败的原因。
 
@@ -98,7 +98,7 @@ class ListSqlJobTemplatesResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListSqlJobTemplatesResponse.
+        r"""Sets the message of this ListSqlJobTemplatesResponse.
 
         系统提示信息，执行成功时，信息可能为空。执行失败时，用于显示执行失败的原因。
 
@@ -109,7 +109,7 @@ class ListSqlJobTemplatesResponse(SdkResponse):
 
     @property
     def sql_count(self):
-        """Gets the sql_count of this ListSqlJobTemplatesResponse.
+        r"""Gets the sql_count of this ListSqlJobTemplatesResponse.
 
         SQL模板总数。
 
@@ -120,7 +120,7 @@ class ListSqlJobTemplatesResponse(SdkResponse):
 
     @sql_count.setter
     def sql_count(self, sql_count):
-        """Sets the sql_count of this ListSqlJobTemplatesResponse.
+        r"""Sets the sql_count of this ListSqlJobTemplatesResponse.
 
         SQL模板总数。
 
@@ -131,7 +131,7 @@ class ListSqlJobTemplatesResponse(SdkResponse):
 
     @property
     def sqls(self):
-        """Gets the sqls of this ListSqlJobTemplatesResponse.
+        r"""Gets the sqls of this ListSqlJobTemplatesResponse.
 
         :return: The sqls of this ListSqlJobTemplatesResponse.
         :rtype: list[:class:`huaweicloudsdkdli.v1.SqlJobTemplate`]
@@ -140,7 +140,7 @@ class ListSqlJobTemplatesResponse(SdkResponse):
 
     @sqls.setter
     def sqls(self, sqls):
-        """Sets the sqls of this ListSqlJobTemplatesResponse.
+        r"""Sets the sqls of this ListSqlJobTemplatesResponse.
 
         :param sqls: The sqls of this ListSqlJobTemplatesResponse.
         :type sqls: list[:class:`huaweicloudsdkdli.v1.SqlJobTemplate`]

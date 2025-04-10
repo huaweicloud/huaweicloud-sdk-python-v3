@@ -35,7 +35,7 @@ class UpdateRedirectPoolsExtendConfig:
     }
 
     def __init__(self, rewrite_url_enable=None, rewrite_url_config=None, insert_headers_config=None, remove_headers_config=None, traffic_limit_config=None, cors_config=None):
-        """UpdateRedirectPoolsExtendConfig
+        r"""UpdateRedirectPoolsExtendConfig
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class UpdateRedirectPoolsExtendConfig:
 
     @property
     def rewrite_url_enable(self):
-        """Gets the rewrite_url_enable of this UpdateRedirectPoolsExtendConfig.
+        r"""Gets the rewrite_url_enable of this UpdateRedirectPoolsExtendConfig.
 
         参数解释：是否开启url重定向
 
@@ -89,7 +89,7 @@ class UpdateRedirectPoolsExtendConfig:
 
     @rewrite_url_enable.setter
     def rewrite_url_enable(self, rewrite_url_enable):
-        """Sets the rewrite_url_enable of this UpdateRedirectPoolsExtendConfig.
+        r"""Sets the rewrite_url_enable of this UpdateRedirectPoolsExtendConfig.
 
         参数解释：是否开启url重定向
 
@@ -100,7 +100,7 @@ class UpdateRedirectPoolsExtendConfig:
 
     @property
     def rewrite_url_config(self):
-        """Gets the rewrite_url_config of this UpdateRedirectPoolsExtendConfig.
+        r"""Gets the rewrite_url_config of this UpdateRedirectPoolsExtendConfig.
 
         :return: The rewrite_url_config of this UpdateRedirectPoolsExtendConfig.
         :rtype: :class:`huaweicloudsdkelb.v3.UpdateRewriteUrlConfig`
@@ -109,7 +109,7 @@ class UpdateRedirectPoolsExtendConfig:
 
     @rewrite_url_config.setter
     def rewrite_url_config(self, rewrite_url_config):
-        """Sets the rewrite_url_config of this UpdateRedirectPoolsExtendConfig.
+        r"""Sets the rewrite_url_config of this UpdateRedirectPoolsExtendConfig.
 
         :param rewrite_url_config: The rewrite_url_config of this UpdateRedirectPoolsExtendConfig.
         :type rewrite_url_config: :class:`huaweicloudsdkelb.v3.UpdateRewriteUrlConfig`
@@ -118,7 +118,7 @@ class UpdateRedirectPoolsExtendConfig:
 
     @property
     def insert_headers_config(self):
-        """Gets the insert_headers_config of this UpdateRedirectPoolsExtendConfig.
+        r"""Gets the insert_headers_config of this UpdateRedirectPoolsExtendConfig.
 
         :return: The insert_headers_config of this UpdateRedirectPoolsExtendConfig.
         :rtype: :class:`huaweicloudsdkelb.v3.UpdateInsertHeadersConfig`
@@ -127,7 +127,7 @@ class UpdateRedirectPoolsExtendConfig:
 
     @insert_headers_config.setter
     def insert_headers_config(self, insert_headers_config):
-        """Sets the insert_headers_config of this UpdateRedirectPoolsExtendConfig.
+        r"""Sets the insert_headers_config of this UpdateRedirectPoolsExtendConfig.
 
         :param insert_headers_config: The insert_headers_config of this UpdateRedirectPoolsExtendConfig.
         :type insert_headers_config: :class:`huaweicloudsdkelb.v3.UpdateInsertHeadersConfig`
@@ -136,7 +136,7 @@ class UpdateRedirectPoolsExtendConfig:
 
     @property
     def remove_headers_config(self):
-        """Gets the remove_headers_config of this UpdateRedirectPoolsExtendConfig.
+        r"""Gets the remove_headers_config of this UpdateRedirectPoolsExtendConfig.
 
         :return: The remove_headers_config of this UpdateRedirectPoolsExtendConfig.
         :rtype: :class:`huaweicloudsdkelb.v3.UpdateRemoveHeadersConfig`
@@ -145,7 +145,7 @@ class UpdateRedirectPoolsExtendConfig:
 
     @remove_headers_config.setter
     def remove_headers_config(self, remove_headers_config):
-        """Sets the remove_headers_config of this UpdateRedirectPoolsExtendConfig.
+        r"""Sets the remove_headers_config of this UpdateRedirectPoolsExtendConfig.
 
         :param remove_headers_config: The remove_headers_config of this UpdateRedirectPoolsExtendConfig.
         :type remove_headers_config: :class:`huaweicloudsdkelb.v3.UpdateRemoveHeadersConfig`
@@ -154,7 +154,7 @@ class UpdateRedirectPoolsExtendConfig:
 
     @property
     def traffic_limit_config(self):
-        """Gets the traffic_limit_config of this UpdateRedirectPoolsExtendConfig.
+        r"""Gets the traffic_limit_config of this UpdateRedirectPoolsExtendConfig.
 
         :return: The traffic_limit_config of this UpdateRedirectPoolsExtendConfig.
         :rtype: :class:`huaweicloudsdkelb.v3.UpdateTrafficLimitConfig`
@@ -163,7 +163,7 @@ class UpdateRedirectPoolsExtendConfig:
 
     @traffic_limit_config.setter
     def traffic_limit_config(self, traffic_limit_config):
-        """Sets the traffic_limit_config of this UpdateRedirectPoolsExtendConfig.
+        r"""Sets the traffic_limit_config of this UpdateRedirectPoolsExtendConfig.
 
         :param traffic_limit_config: The traffic_limit_config of this UpdateRedirectPoolsExtendConfig.
         :type traffic_limit_config: :class:`huaweicloudsdkelb.v3.UpdateTrafficLimitConfig`
@@ -172,7 +172,7 @@ class UpdateRedirectPoolsExtendConfig:
 
     @property
     def cors_config(self):
-        """Gets the cors_config of this UpdateRedirectPoolsExtendConfig.
+        r"""Gets the cors_config of this UpdateRedirectPoolsExtendConfig.
 
         :return: The cors_config of this UpdateRedirectPoolsExtendConfig.
         :rtype: :class:`huaweicloudsdkelb.v3.CreateCorsConfig`
@@ -181,7 +181,7 @@ class UpdateRedirectPoolsExtendConfig:
 
     @cors_config.setter
     def cors_config(self, cors_config):
-        """Sets the cors_config of this UpdateRedirectPoolsExtendConfig.
+        r"""Sets the cors_config of this UpdateRedirectPoolsExtendConfig.
 
         :param cors_config: The cors_config of this UpdateRedirectPoolsExtendConfig.
         :type cors_config: :class:`huaweicloudsdkelb.v3.CreateCorsConfig`

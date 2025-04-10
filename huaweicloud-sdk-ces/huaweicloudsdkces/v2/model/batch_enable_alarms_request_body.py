@@ -27,7 +27,7 @@ class BatchEnableAlarmsRequestBody:
     }
 
     def __init__(self, alarm_ids=None, alarm_enabled=None):
-        """BatchEnableAlarmsRequestBody
+        r"""BatchEnableAlarmsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchEnableAlarmsRequestBody:
 
     @property
     def alarm_ids(self):
-        """Gets the alarm_ids of this BatchEnableAlarmsRequestBody.
+        r"""Gets the alarm_ids of this BatchEnableAlarmsRequestBody.
 
         需要批量启停的告警规则的ID列表
 
@@ -59,7 +59,7 @@ class BatchEnableAlarmsRequestBody:
 
     @alarm_ids.setter
     def alarm_ids(self, alarm_ids):
-        """Sets the alarm_ids of this BatchEnableAlarmsRequestBody.
+        r"""Sets the alarm_ids of this BatchEnableAlarmsRequestBody.
 
         需要批量启停的告警规则的ID列表
 
@@ -70,7 +70,7 @@ class BatchEnableAlarmsRequestBody:
 
     @property
     def alarm_enabled(self):
-        """Gets the alarm_enabled of this BatchEnableAlarmsRequestBody.
+        r"""Gets the alarm_enabled of this BatchEnableAlarmsRequestBody.
 
         告警开关
 
@@ -81,7 +81,7 @@ class BatchEnableAlarmsRequestBody:
 
     @alarm_enabled.setter
     def alarm_enabled(self, alarm_enabled):
-        """Sets the alarm_enabled of this BatchEnableAlarmsRequestBody.
+        r"""Sets the alarm_enabled of this BatchEnableAlarmsRequestBody.
 
         告警开关
 

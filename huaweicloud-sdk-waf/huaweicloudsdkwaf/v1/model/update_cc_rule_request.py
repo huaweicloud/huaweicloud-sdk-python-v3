@@ -31,7 +31,7 @@ class UpdateCcRuleRequest:
     }
 
     def __init__(self, enterprise_project_id=None, policy_id=None, rule_id=None, body=None):
-        """UpdateCcRuleRequest
+        r"""UpdateCcRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class UpdateCcRuleRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this UpdateCcRuleRequest.
+        r"""Gets the enterprise_project_id of this UpdateCcRuleRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -73,7 +73,7 @@ class UpdateCcRuleRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this UpdateCcRuleRequest.
+        r"""Sets the enterprise_project_id of this UpdateCcRuleRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -84,7 +84,7 @@ class UpdateCcRuleRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this UpdateCcRuleRequest.
+        r"""Gets the policy_id of this UpdateCcRuleRequest.
 
         策略id（策略id从查询防护策略列表接口获取）
 
@@ -95,7 +95,7 @@ class UpdateCcRuleRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this UpdateCcRuleRequest.
+        r"""Sets the policy_id of this UpdateCcRuleRequest.
 
         策略id（策略id从查询防护策略列表接口获取）
 
@@ -106,7 +106,7 @@ class UpdateCcRuleRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this UpdateCcRuleRequest.
+        r"""Gets the rule_id of this UpdateCcRuleRequest.
 
         ID of the cc rule. It can be obtained by calling the **ListCcRules** API.
 
@@ -117,7 +117,7 @@ class UpdateCcRuleRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this UpdateCcRuleRequest.
+        r"""Sets the rule_id of this UpdateCcRuleRequest.
 
         ID of the cc rule. It can be obtained by calling the **ListCcRules** API.
 
@@ -128,7 +128,7 @@ class UpdateCcRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateCcRuleRequest.
+        r"""Gets the body of this UpdateCcRuleRequest.
 
         :return: The body of this UpdateCcRuleRequest.
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateCcRuleRequestBody`
@@ -137,7 +137,7 @@ class UpdateCcRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateCcRuleRequest.
+        r"""Sets the body of this UpdateCcRuleRequest.
 
         :param body: The body of this UpdateCcRuleRequest.
         :type body: :class:`huaweicloudsdkwaf.v1.UpdateCcRuleRequestBody`

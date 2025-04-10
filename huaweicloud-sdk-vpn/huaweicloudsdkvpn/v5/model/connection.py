@@ -44,7 +44,7 @@ class Connection:
     }
 
     def __init__(self, connection_id=None, client_virtual_ip=None, client_ip=None, client_user_name=None, inbound_packets=None, outbound_packets=None, inbound_bytes=None, outbound_bytes=None, connection_established_time=None, timestamp=None):
-        """Connection
+        r"""Connection
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class Connection:
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this Connection.
+        r"""Gets the connection_id of this Connection.
 
         连接ID
 
@@ -118,7 +118,7 @@ class Connection:
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this Connection.
+        r"""Sets the connection_id of this Connection.
 
         连接ID
 
@@ -129,7 +129,7 @@ class Connection:
 
     @property
     def client_virtual_ip(self):
-        """Gets the client_virtual_ip of this Connection.
+        r"""Gets the client_virtual_ip of this Connection.
 
         客户端虚拟IP
 
@@ -140,7 +140,7 @@ class Connection:
 
     @client_virtual_ip.setter
     def client_virtual_ip(self, client_virtual_ip):
-        """Sets the client_virtual_ip of this Connection.
+        r"""Sets the client_virtual_ip of this Connection.
 
         客户端虚拟IP
 
@@ -151,7 +151,7 @@ class Connection:
 
     @property
     def client_ip(self):
-        """Gets the client_ip of this Connection.
+        r"""Gets the client_ip of this Connection.
 
         客户端IP
 
@@ -162,7 +162,7 @@ class Connection:
 
     @client_ip.setter
     def client_ip(self, client_ip):
-        """Sets the client_ip of this Connection.
+        r"""Sets the client_ip of this Connection.
 
         客户端IP
 
@@ -173,7 +173,7 @@ class Connection:
 
     @property
     def client_user_name(self):
-        """Gets the client_user_name of this Connection.
+        r"""Gets the client_user_name of this Connection.
 
         客户端用户名称
 
@@ -184,7 +184,7 @@ class Connection:
 
     @client_user_name.setter
     def client_user_name(self, client_user_name):
-        """Sets the client_user_name of this Connection.
+        r"""Sets the client_user_name of this Connection.
 
         客户端用户名称
 
@@ -195,7 +195,7 @@ class Connection:
 
     @property
     def inbound_packets(self):
-        """Gets the inbound_packets of this Connection.
+        r"""Gets the inbound_packets of this Connection.
 
         入网包数
 
@@ -206,7 +206,7 @@ class Connection:
 
     @inbound_packets.setter
     def inbound_packets(self, inbound_packets):
-        """Sets the inbound_packets of this Connection.
+        r"""Sets the inbound_packets of this Connection.
 
         入网包数
 
@@ -217,7 +217,7 @@ class Connection:
 
     @property
     def outbound_packets(self):
-        """Gets the outbound_packets of this Connection.
+        r"""Gets the outbound_packets of this Connection.
 
         出网包数
 
@@ -228,7 +228,7 @@ class Connection:
 
     @outbound_packets.setter
     def outbound_packets(self, outbound_packets):
-        """Sets the outbound_packets of this Connection.
+        r"""Sets the outbound_packets of this Connection.
 
         出网包数
 
@@ -239,7 +239,7 @@ class Connection:
 
     @property
     def inbound_bytes(self):
-        """Gets the inbound_bytes of this Connection.
+        r"""Gets the inbound_bytes of this Connection.
 
         入网字节数
 
@@ -250,7 +250,7 @@ class Connection:
 
     @inbound_bytes.setter
     def inbound_bytes(self, inbound_bytes):
-        """Sets the inbound_bytes of this Connection.
+        r"""Sets the inbound_bytes of this Connection.
 
         入网字节数
 
@@ -261,7 +261,7 @@ class Connection:
 
     @property
     def outbound_bytes(self):
-        """Gets the outbound_bytes of this Connection.
+        r"""Gets the outbound_bytes of this Connection.
 
         出网字节数
 
@@ -272,7 +272,7 @@ class Connection:
 
     @outbound_bytes.setter
     def outbound_bytes(self, outbound_bytes):
-        """Sets the outbound_bytes of this Connection.
+        r"""Sets the outbound_bytes of this Connection.
 
         出网字节数
 
@@ -283,7 +283,7 @@ class Connection:
 
     @property
     def connection_established_time(self):
-        """Gets the connection_established_time of this Connection.
+        r"""Gets the connection_established_time of this Connection.
 
         连接建立时间
 
@@ -294,7 +294,7 @@ class Connection:
 
     @connection_established_time.setter
     def connection_established_time(self, connection_established_time):
-        """Sets the connection_established_time of this Connection.
+        r"""Sets the connection_established_time of this Connection.
 
         连接建立时间
 
@@ -305,7 +305,7 @@ class Connection:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this Connection.
+        r"""Gets the timestamp of this Connection.
 
         时间戳
 
@@ -316,7 +316,7 @@ class Connection:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this Connection.
+        r"""Sets the timestamp of this Connection.
 
         时间戳
 

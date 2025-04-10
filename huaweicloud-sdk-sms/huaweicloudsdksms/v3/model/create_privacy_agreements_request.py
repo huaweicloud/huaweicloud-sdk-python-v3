@@ -23,7 +23,7 @@ class CreatePrivacyAgreementsRequest:
     }
 
     def __init__(self):
-        """CreatePrivacyAgreementsRequest
+        r"""CreatePrivacyAgreementsRequest
 
         The model defined in huaweicloud sdk
 

@@ -27,7 +27,7 @@ class ImportTemplateReq:
     }
 
     def __init__(self, source_project_id=None, import_templates=None):
-        """ImportTemplateReq
+        r"""ImportTemplateReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ImportTemplateReq:
 
     @property
     def source_project_id(self):
-        """Gets the source_project_id of this ImportTemplateReq.
+        r"""Gets the source_project_id of this ImportTemplateReq.
 
         源项目id
 
@@ -59,7 +59,7 @@ class ImportTemplateReq:
 
     @source_project_id.setter
     def source_project_id(self, source_project_id):
-        """Sets the source_project_id of this ImportTemplateReq.
+        r"""Sets the source_project_id of this ImportTemplateReq.
 
         源项目id
 
@@ -70,7 +70,7 @@ class ImportTemplateReq:
 
     @property
     def import_templates(self):
-        """Gets the import_templates of this ImportTemplateReq.
+        r"""Gets the import_templates of this ImportTemplateReq.
 
         导入模板列表
 
@@ -81,7 +81,7 @@ class ImportTemplateReq:
 
     @import_templates.setter
     def import_templates(self, import_templates):
-        """Sets the import_templates of this ImportTemplateReq.
+        r"""Sets the import_templates of this ImportTemplateReq.
 
         导入模板列表
 

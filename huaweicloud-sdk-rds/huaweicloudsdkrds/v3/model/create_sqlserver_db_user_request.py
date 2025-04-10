@@ -29,7 +29,7 @@ class CreateSqlserverDbUserRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """CreateSqlserverDbUserRequest
+        r"""CreateSqlserverDbUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateSqlserverDbUserRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreateSqlserverDbUserRequest.
+        r"""Gets the x_language of this CreateSqlserverDbUserRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class CreateSqlserverDbUserRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreateSqlserverDbUserRequest.
+        r"""Sets the x_language of this CreateSqlserverDbUserRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class CreateSqlserverDbUserRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateSqlserverDbUserRequest.
+        r"""Gets the instance_id of this CreateSqlserverDbUserRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class CreateSqlserverDbUserRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateSqlserverDbUserRequest.
+        r"""Sets the instance_id of this CreateSqlserverDbUserRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class CreateSqlserverDbUserRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSqlserverDbUserRequest.
+        r"""Gets the body of this CreateSqlserverDbUserRequest.
 
         :return: The body of this CreateSqlserverDbUserRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.SqlserverUserForCreation`
@@ -109,7 +109,7 @@ class CreateSqlserverDbUserRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSqlserverDbUserRequest.
+        r"""Sets the body of this CreateSqlserverDbUserRequest.
 
         :param body: The body of this CreateSqlserverDbUserRequest.
         :type body: :class:`huaweicloudsdkrds.v3.SqlserverUserForCreation`

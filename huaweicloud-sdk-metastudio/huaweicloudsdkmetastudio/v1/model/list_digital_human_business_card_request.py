@@ -41,7 +41,7 @@ class ListDigitalHumanBusinessCardRequest:
     }
 
     def __init__(self, x_app_user_id=None, offset=None, limit=None, state=None, sort_key=None, sort_dir=None, create_until=None, create_since=None, video_asset_name=None):
-        """ListDigitalHumanBusinessCardRequest
+        r"""ListDigitalHumanBusinessCardRequest
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ListDigitalHumanBusinessCardRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this ListDigitalHumanBusinessCardRequest.
+        r"""Gets the x_app_user_id of this ListDigitalHumanBusinessCardRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -110,7 +110,7 @@ class ListDigitalHumanBusinessCardRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this ListDigitalHumanBusinessCardRequest.
+        r"""Sets the x_app_user_id of this ListDigitalHumanBusinessCardRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -121,7 +121,7 @@ class ListDigitalHumanBusinessCardRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDigitalHumanBusinessCardRequest.
+        r"""Gets the offset of this ListDigitalHumanBusinessCardRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -132,7 +132,7 @@ class ListDigitalHumanBusinessCardRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDigitalHumanBusinessCardRequest.
+        r"""Sets the offset of this ListDigitalHumanBusinessCardRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -143,7 +143,7 @@ class ListDigitalHumanBusinessCardRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDigitalHumanBusinessCardRequest.
+        r"""Gets the limit of this ListDigitalHumanBusinessCardRequest.
 
         每页显示的条目数量。
 
@@ -154,7 +154,7 @@ class ListDigitalHumanBusinessCardRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDigitalHumanBusinessCardRequest.
+        r"""Sets the limit of this ListDigitalHumanBusinessCardRequest.
 
         每页显示的条目数量。
 
@@ -165,7 +165,7 @@ class ListDigitalHumanBusinessCardRequest:
 
     @property
     def state(self):
-        """Gets the state of this ListDigitalHumanBusinessCardRequest.
+        r"""Gets the state of this ListDigitalHumanBusinessCardRequest.
 
         任务状态，默认所有状态。  可多个状态查询，使用英文逗号分隔。  如state=CREATING,PUBLISHED
 
@@ -176,7 +176,7 @@ class ListDigitalHumanBusinessCardRequest:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ListDigitalHumanBusinessCardRequest.
+        r"""Sets the state of this ListDigitalHumanBusinessCardRequest.
 
         任务状态，默认所有状态。  可多个状态查询，使用英文逗号分隔。  如state=CREATING,PUBLISHED
 
@@ -187,7 +187,7 @@ class ListDigitalHumanBusinessCardRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListDigitalHumanBusinessCardRequest.
+        r"""Gets the sort_key of this ListDigitalHumanBusinessCardRequest.
 
         排序字段，支持的排序方式有： - 按创建时间排序：create_time - 按更新时间排序：update_time - 按资产排序：asset_order
 
@@ -198,7 +198,7 @@ class ListDigitalHumanBusinessCardRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListDigitalHumanBusinessCardRequest.
+        r"""Sets the sort_key of this ListDigitalHumanBusinessCardRequest.
 
         排序字段，支持的排序方式有： - 按创建时间排序：create_time - 按更新时间排序：update_time - 按资产排序：asset_order
 
@@ -209,7 +209,7 @@ class ListDigitalHumanBusinessCardRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListDigitalHumanBusinessCardRequest.
+        r"""Gets the sort_dir of this ListDigitalHumanBusinessCardRequest.
 
         排序方式。 * asc：升序 * desc：降序  默认asc升序。
 
@@ -220,7 +220,7 @@ class ListDigitalHumanBusinessCardRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListDigitalHumanBusinessCardRequest.
+        r"""Sets the sort_dir of this ListDigitalHumanBusinessCardRequest.
 
         排序方式。 * asc：升序 * desc：降序  默认asc升序。
 
@@ -231,7 +231,7 @@ class ListDigitalHumanBusinessCardRequest:
 
     @property
     def create_until(self):
-        """Gets the create_until of this ListDigitalHumanBusinessCardRequest.
+        r"""Gets the create_until of this ListDigitalHumanBusinessCardRequest.
 
         过滤创建时间<=输入时间的记录。
 
@@ -242,7 +242,7 @@ class ListDigitalHumanBusinessCardRequest:
 
     @create_until.setter
     def create_until(self, create_until):
-        """Sets the create_until of this ListDigitalHumanBusinessCardRequest.
+        r"""Sets the create_until of this ListDigitalHumanBusinessCardRequest.
 
         过滤创建时间<=输入时间的记录。
 
@@ -253,7 +253,7 @@ class ListDigitalHumanBusinessCardRequest:
 
     @property
     def create_since(self):
-        """Gets the create_since of this ListDigitalHumanBusinessCardRequest.
+        r"""Gets the create_since of this ListDigitalHumanBusinessCardRequest.
 
         过滤创建时间>=输入时间的记录。
 
@@ -264,7 +264,7 @@ class ListDigitalHumanBusinessCardRequest:
 
     @create_since.setter
     def create_since(self, create_since):
-        """Sets the create_since of this ListDigitalHumanBusinessCardRequest.
+        r"""Sets the create_since of this ListDigitalHumanBusinessCardRequest.
 
         过滤创建时间>=输入时间的记录。
 
@@ -275,7 +275,7 @@ class ListDigitalHumanBusinessCardRequest:
 
     @property
     def video_asset_name(self):
-        """Gets the video_asset_name of this ListDigitalHumanBusinessCardRequest.
+        r"""Gets the video_asset_name of this ListDigitalHumanBusinessCardRequest.
 
         输出的视频资产名称。
 
@@ -286,7 +286,7 @@ class ListDigitalHumanBusinessCardRequest:
 
     @video_asset_name.setter
     def video_asset_name(self, video_asset_name):
-        """Sets the video_asset_name of this ListDigitalHumanBusinessCardRequest.
+        r"""Sets the video_asset_name of this ListDigitalHumanBusinessCardRequest.
 
         输出的视频资产名称。
 

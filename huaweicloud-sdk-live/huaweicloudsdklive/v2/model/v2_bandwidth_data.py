@@ -27,7 +27,7 @@ class V2BandwidthData:
     }
 
     def __init__(self, value=None, time=None):
-        """V2BandwidthData
+        r"""V2BandwidthData
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class V2BandwidthData:
 
     @property
     def value(self):
-        """Gets the value of this V2BandwidthData.
+        r"""Gets the value of this V2BandwidthData.
 
         带宽值，单位为bps。
 
@@ -61,7 +61,7 @@ class V2BandwidthData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this V2BandwidthData.
+        r"""Sets the value of this V2BandwidthData.
 
         带宽值，单位为bps。
 
@@ -72,7 +72,7 @@ class V2BandwidthData:
 
     @property
     def time(self):
-        """Gets the time of this V2BandwidthData.
+        r"""Gets the time of this V2BandwidthData.
 
         采样时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。
 
@@ -83,7 +83,7 @@ class V2BandwidthData:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this V2BandwidthData.
+        r"""Sets the time of this V2BandwidthData.
 
         采样时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。
 

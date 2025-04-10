@@ -33,7 +33,7 @@ class AddressItemListResponseDTODataRecords:
     }
 
     def __init__(self, item_id=None, name=None, description=None, address_type=None, address=None):
-        """AddressItemListResponseDTODataRecords
+        r"""AddressItemListResponseDTODataRecords
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class AddressItemListResponseDTODataRecords:
 
     @property
     def item_id(self):
-        """Gets the item_id of this AddressItemListResponseDTODataRecords.
+        r"""Gets the item_id of this AddressItemListResponseDTODataRecords.
 
         地址组成员id
 
@@ -82,7 +82,7 @@ class AddressItemListResponseDTODataRecords:
 
     @item_id.setter
     def item_id(self, item_id):
-        """Sets the item_id of this AddressItemListResponseDTODataRecords.
+        r"""Sets the item_id of this AddressItemListResponseDTODataRecords.
 
         地址组成员id
 
@@ -93,7 +93,7 @@ class AddressItemListResponseDTODataRecords:
 
     @property
     def name(self):
-        """Gets the name of this AddressItemListResponseDTODataRecords.
+        r"""Gets the name of this AddressItemListResponseDTODataRecords.
 
         地址组成员name
 
@@ -104,7 +104,7 @@ class AddressItemListResponseDTODataRecords:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AddressItemListResponseDTODataRecords.
+        r"""Sets the name of this AddressItemListResponseDTODataRecords.
 
         地址组成员name
 
@@ -115,7 +115,7 @@ class AddressItemListResponseDTODataRecords:
 
     @property
     def description(self):
-        """Gets the description of this AddressItemListResponseDTODataRecords.
+        r"""Gets the description of this AddressItemListResponseDTODataRecords.
 
         描述
 
@@ -126,7 +126,7 @@ class AddressItemListResponseDTODataRecords:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AddressItemListResponseDTODataRecords.
+        r"""Sets the description of this AddressItemListResponseDTODataRecords.
 
         描述
 
@@ -137,7 +137,7 @@ class AddressItemListResponseDTODataRecords:
 
     @property
     def address_type(self):
-        """Gets the address_type of this AddressItemListResponseDTODataRecords.
+        r"""Gets the address_type of this AddressItemListResponseDTODataRecords.
 
         地址组类型，0 ipv4,1 ipv6
 
@@ -148,7 +148,7 @@ class AddressItemListResponseDTODataRecords:
 
     @address_type.setter
     def address_type(self, address_type):
-        """Sets the address_type of this AddressItemListResponseDTODataRecords.
+        r"""Sets the address_type of this AddressItemListResponseDTODataRecords.
 
         地址组类型，0 ipv4,1 ipv6
 
@@ -159,7 +159,7 @@ class AddressItemListResponseDTODataRecords:
 
     @property
     def address(self):
-        """Gets the address of this AddressItemListResponseDTODataRecords.
+        r"""Gets the address of this AddressItemListResponseDTODataRecords.
 
         地址信息
 
@@ -170,7 +170,7 @@ class AddressItemListResponseDTODataRecords:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this AddressItemListResponseDTODataRecords.
+        r"""Sets the address of this AddressItemListResponseDTODataRecords.
 
         地址信息
 

@@ -26,7 +26,7 @@ class UpgradeDbMajorVersionPreCheckResponse(SdkResponse):
     }
 
     def __init__(self, report_id=None):
-        """UpgradeDbMajorVersionPreCheckResponse
+        r"""UpgradeDbMajorVersionPreCheckResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpgradeDbMajorVersionPreCheckResponse(SdkResponse):
 
     @property
     def report_id(self):
-        """Gets the report_id of this UpgradeDbMajorVersionPreCheckResponse.
+        r"""Gets the report_id of this UpgradeDbMajorVersionPreCheckResponse.
 
         检查报告ID。
 
@@ -55,7 +55,7 @@ class UpgradeDbMajorVersionPreCheckResponse(SdkResponse):
 
     @report_id.setter
     def report_id(self, report_id):
-        """Sets the report_id of this UpgradeDbMajorVersionPreCheckResponse.
+        r"""Sets the report_id of this UpgradeDbMajorVersionPreCheckResponse.
 
         检查报告ID。
 

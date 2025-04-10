@@ -27,7 +27,7 @@ class CreateAdmetJobRequest:
     }
 
     def __init__(self, eihealth_project_id=None, body=None):
-        """CreateAdmetJobRequest
+        r"""CreateAdmetJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateAdmetJobRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this CreateAdmetJobRequest.
+        r"""Gets the eihealth_project_id of this CreateAdmetJobRequest.
 
         平台项目ID。
 
@@ -60,7 +60,7 @@ class CreateAdmetJobRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this CreateAdmetJobRequest.
+        r"""Sets the eihealth_project_id of this CreateAdmetJobRequest.
 
         平台项目ID。
 
@@ -71,7 +71,7 @@ class CreateAdmetJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAdmetJobRequest.
+        r"""Gets the body of this CreateAdmetJobRequest.
 
         :return: The body of this CreateAdmetJobRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateAdmetJobReq`
@@ -80,7 +80,7 @@ class CreateAdmetJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAdmetJobRequest.
+        r"""Sets the body of this CreateAdmetJobRequest.
 
         :param body: The body of this CreateAdmetJobRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.CreateAdmetJobReq`

@@ -23,7 +23,7 @@ class AlarmEnabled:
     }
 
     def __init__(self):
-        """AlarmEnabled
+        r"""AlarmEnabled
 
         The model defined in huaweicloud sdk
 

@@ -25,7 +25,7 @@ class ShowTrackedResourceDetailRequest:
     }
 
     def __init__(self, resource_id=None):
-        """ShowTrackedResourceDetailRequest
+        r"""ShowTrackedResourceDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowTrackedResourceDetailRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ShowTrackedResourceDetailRequest.
+        r"""Gets the resource_id of this ShowTrackedResourceDetailRequest.
 
         资源ID
 
@@ -53,7 +53,7 @@ class ShowTrackedResourceDetailRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ShowTrackedResourceDetailRequest.
+        r"""Sets the resource_id of this ShowTrackedResourceDetailRequest.
 
         资源ID
 

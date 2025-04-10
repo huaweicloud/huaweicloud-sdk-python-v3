@@ -27,7 +27,7 @@ class UpdateChartRequestBody:
     }
 
     def __init__(self, parameters=None, content=None):
-        """UpdateChartRequestBody
+        r"""UpdateChartRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateChartRequestBody:
 
     @property
     def parameters(self):
-        """Gets the parameters of this UpdateChartRequestBody.
+        r"""Gets the parameters of this UpdateChartRequestBody.
 
         上传模板的配置参数，示例如下：\"{\\\"override\\\":true,\\\"skip_lint\\\":true,\\\"source\\\":\\\"package\\\"}\" - skip_lint: whether lint uploaded chart - override: whether override existed chart - visible: update chart visible
 
@@ -60,7 +60,7 @@ class UpdateChartRequestBody:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this UpdateChartRequestBody.
+        r"""Sets the parameters of this UpdateChartRequestBody.
 
         上传模板的配置参数，示例如下：\"{\\\"override\\\":true,\\\"skip_lint\\\":true,\\\"source\\\":\\\"package\\\"}\" - skip_lint: whether lint uploaded chart - override: whether override existed chart - visible: update chart visible
 
@@ -71,7 +71,7 @@ class UpdateChartRequestBody:
 
     @property
     def content(self):
-        """Gets the content of this UpdateChartRequestBody.
+        r"""Gets the content of this UpdateChartRequestBody.
 
         模板包文件
 
@@ -82,7 +82,7 @@ class UpdateChartRequestBody:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this UpdateChartRequestBody.
+        r"""Sets the content of this UpdateChartRequestBody.
 
         模板包文件
 

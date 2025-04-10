@@ -35,7 +35,7 @@ class AddRelationsInfo:
     }
 
     def __init__(self, relations=None, tracker_id=None, version_uri=None, task_uri=None, add_to_iterator=None, project_uuid=None):
-        """AddRelationsInfo
+        r"""AddRelationsInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class AddRelationsInfo:
 
     @property
     def relations(self):
-        """Gets the relations of this AddRelationsInfo.
+        r"""Gets the relations of this AddRelationsInfo.
 
         :return: The relations of this AddRelationsInfo.
         :rtype: list[:class:`huaweicloudsdkcloudtest.v1.RelationInfo`]
@@ -87,7 +87,7 @@ class AddRelationsInfo:
 
     @relations.setter
     def relations(self, relations):
-        """Sets the relations of this AddRelationsInfo.
+        r"""Sets the relations of this AddRelationsInfo.
 
         :param relations: The relations of this AddRelationsInfo.
         :type relations: list[:class:`huaweicloudsdkcloudtest.v1.RelationInfo`]
@@ -96,7 +96,7 @@ class AddRelationsInfo:
 
     @property
     def tracker_id(self):
-        """Gets the tracker_id of this AddRelationsInfo.
+        r"""Gets the tracker_id of this AddRelationsInfo.
 
         工作项类型id
 
@@ -107,7 +107,7 @@ class AddRelationsInfo:
 
     @tracker_id.setter
     def tracker_id(self, tracker_id):
-        """Sets the tracker_id of this AddRelationsInfo.
+        r"""Sets the tracker_id of this AddRelationsInfo.
 
         工作项类型id
 
@@ -118,7 +118,7 @@ class AddRelationsInfo:
 
     @property
     def version_uri(self):
-        """Gets the version_uri of this AddRelationsInfo.
+        r"""Gets the version_uri of this AddRelationsInfo.
 
         版本uri
 
@@ -129,7 +129,7 @@ class AddRelationsInfo:
 
     @version_uri.setter
     def version_uri(self, version_uri):
-        """Sets the version_uri of this AddRelationsInfo.
+        r"""Sets the version_uri of this AddRelationsInfo.
 
         版本uri
 
@@ -140,7 +140,7 @@ class AddRelationsInfo:
 
     @property
     def task_uri(self):
-        """Gets the task_uri of this AddRelationsInfo.
+        r"""Gets the task_uri of this AddRelationsInfo.
 
         测试套id
 
@@ -151,7 +151,7 @@ class AddRelationsInfo:
 
     @task_uri.setter
     def task_uri(self, task_uri):
-        """Sets the task_uri of this AddRelationsInfo.
+        r"""Sets the task_uri of this AddRelationsInfo.
 
         测试套id
 
@@ -162,7 +162,7 @@ class AddRelationsInfo:
 
     @property
     def add_to_iterator(self):
-        """Gets the add_to_iterator of this AddRelationsInfo.
+        r"""Gets the add_to_iterator of this AddRelationsInfo.
 
         是否将需求添加到迭代
 
@@ -173,7 +173,7 @@ class AddRelationsInfo:
 
     @add_to_iterator.setter
     def add_to_iterator(self, add_to_iterator):
-        """Sets the add_to_iterator of this AddRelationsInfo.
+        r"""Sets the add_to_iterator of this AddRelationsInfo.
 
         是否将需求添加到迭代
 
@@ -184,7 +184,7 @@ class AddRelationsInfo:
 
     @property
     def project_uuid(self):
-        """Gets the project_uuid of this AddRelationsInfo.
+        r"""Gets the project_uuid of this AddRelationsInfo.
 
         项目id
 
@@ -195,7 +195,7 @@ class AddRelationsInfo:
 
     @project_uuid.setter
     def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this AddRelationsInfo.
+        r"""Sets the project_uuid of this AddRelationsInfo.
 
         项目id
 

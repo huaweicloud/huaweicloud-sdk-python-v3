@@ -27,7 +27,7 @@ class AddRepoMembersRequest:
     }
 
     def __init__(self, repository_uuid=None, body=None):
-        """AddRepoMembersRequest
+        r"""AddRepoMembersRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AddRepoMembersRequest:
 
     @property
     def repository_uuid(self):
-        """Gets the repository_uuid of this AddRepoMembersRequest.
+        r"""Gets the repository_uuid of this AddRepoMembersRequest.
 
         仓库uuid(由CreateRepository接口返回)
 
@@ -60,7 +60,7 @@ class AddRepoMembersRequest:
 
     @repository_uuid.setter
     def repository_uuid(self, repository_uuid):
-        """Sets the repository_uuid of this AddRepoMembersRequest.
+        r"""Sets the repository_uuid of this AddRepoMembersRequest.
 
         仓库uuid(由CreateRepository接口返回)
 
@@ -71,7 +71,7 @@ class AddRepoMembersRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddRepoMembersRequest.
+        r"""Gets the body of this AddRepoMembersRequest.
 
         :return: The body of this AddRepoMembersRequest.
         :rtype: :class:`huaweicloudsdkcodehub.v3.CreateRepoMemberRequest`
@@ -80,7 +80,7 @@ class AddRepoMembersRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddRepoMembersRequest.
+        r"""Sets the body of this AddRepoMembersRequest.
 
         :param body: The body of this AddRepoMembersRequest.
         :type body: :class:`huaweicloudsdkcodehub.v3.CreateRepoMemberRequest`

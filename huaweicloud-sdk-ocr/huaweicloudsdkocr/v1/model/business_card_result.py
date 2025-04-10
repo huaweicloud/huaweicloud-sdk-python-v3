@@ -47,7 +47,7 @@ class BusinessCardResult:
     }
 
     def __init__(self, name=None, title=None, company=None, department=None, phone=None, address=None, email=None, fax=None, postcode=None, website=None, extra_info_list=None, adjusted_image=None):
-        """BusinessCardResult
+        r"""BusinessCardResult
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class BusinessCardResult:
 
     @property
     def name(self):
-        """Gets the name of this BusinessCardResult.
+        r"""Gets the name of this BusinessCardResult.
 
         姓名列表。 
 
@@ -131,7 +131,7 @@ class BusinessCardResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BusinessCardResult.
+        r"""Sets the name of this BusinessCardResult.
 
         姓名列表。 
 
@@ -142,7 +142,7 @@ class BusinessCardResult:
 
     @property
     def title(self):
-        """Gets the title of this BusinessCardResult.
+        r"""Gets the title of this BusinessCardResult.
 
         职位头衔列表。 
 
@@ -153,7 +153,7 @@ class BusinessCardResult:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this BusinessCardResult.
+        r"""Sets the title of this BusinessCardResult.
 
         职位头衔列表。 
 
@@ -164,7 +164,7 @@ class BusinessCardResult:
 
     @property
     def company(self):
-        """Gets the company of this BusinessCardResult.
+        r"""Gets the company of this BusinessCardResult.
 
         公司列表。 
 
@@ -175,7 +175,7 @@ class BusinessCardResult:
 
     @company.setter
     def company(self, company):
-        """Sets the company of this BusinessCardResult.
+        r"""Sets the company of this BusinessCardResult.
 
         公司列表。 
 
@@ -186,7 +186,7 @@ class BusinessCardResult:
 
     @property
     def department(self):
-        """Gets the department of this BusinessCardResult.
+        r"""Gets the department of this BusinessCardResult.
 
         部门列表。 
 
@@ -197,7 +197,7 @@ class BusinessCardResult:
 
     @department.setter
     def department(self, department):
-        """Sets the department of this BusinessCardResult.
+        r"""Sets the department of this BusinessCardResult.
 
         部门列表。 
 
@@ -208,7 +208,7 @@ class BusinessCardResult:
 
     @property
     def phone(self):
-        """Gets the phone of this BusinessCardResult.
+        r"""Gets the phone of this BusinessCardResult.
 
         联系方式列表。 
 
@@ -219,7 +219,7 @@ class BusinessCardResult:
 
     @phone.setter
     def phone(self, phone):
-        """Sets the phone of this BusinessCardResult.
+        r"""Sets the phone of this BusinessCardResult.
 
         联系方式列表。 
 
@@ -230,7 +230,7 @@ class BusinessCardResult:
 
     @property
     def address(self):
-        """Gets the address of this BusinessCardResult.
+        r"""Gets the address of this BusinessCardResult.
 
         地址列表。 
 
@@ -241,7 +241,7 @@ class BusinessCardResult:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this BusinessCardResult.
+        r"""Sets the address of this BusinessCardResult.
 
         地址列表。 
 
@@ -252,7 +252,7 @@ class BusinessCardResult:
 
     @property
     def email(self):
-        """Gets the email of this BusinessCardResult.
+        r"""Gets the email of this BusinessCardResult.
 
         邮箱列表。 
 
@@ -263,7 +263,7 @@ class BusinessCardResult:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this BusinessCardResult.
+        r"""Sets the email of this BusinessCardResult.
 
         邮箱列表。 
 
@@ -274,7 +274,7 @@ class BusinessCardResult:
 
     @property
     def fax(self):
-        """Gets the fax of this BusinessCardResult.
+        r"""Gets the fax of this BusinessCardResult.
 
         传真列表。 
 
@@ -285,7 +285,7 @@ class BusinessCardResult:
 
     @fax.setter
     def fax(self, fax):
-        """Sets the fax of this BusinessCardResult.
+        r"""Sets the fax of this BusinessCardResult.
 
         传真列表。 
 
@@ -296,7 +296,7 @@ class BusinessCardResult:
 
     @property
     def postcode(self):
-        """Gets the postcode of this BusinessCardResult.
+        r"""Gets the postcode of this BusinessCardResult.
 
         邮编列表。 
 
@@ -307,7 +307,7 @@ class BusinessCardResult:
 
     @postcode.setter
     def postcode(self, postcode):
-        """Sets the postcode of this BusinessCardResult.
+        r"""Sets the postcode of this BusinessCardResult.
 
         邮编列表。 
 
@@ -318,7 +318,7 @@ class BusinessCardResult:
 
     @property
     def website(self):
-        """Gets the website of this BusinessCardResult.
+        r"""Gets the website of this BusinessCardResult.
 
         公司网址列表。 
 
@@ -329,7 +329,7 @@ class BusinessCardResult:
 
     @website.setter
     def website(self, website):
-        """Sets the website of this BusinessCardResult.
+        r"""Sets the website of this BusinessCardResult.
 
         公司网址列表。 
 
@@ -340,7 +340,7 @@ class BusinessCardResult:
 
     @property
     def extra_info_list(self):
-        """Gets the extra_info_list of this BusinessCardResult.
+        r"""Gets the extra_info_list of this BusinessCardResult.
 
         其余信息列表。 
 
@@ -351,7 +351,7 @@ class BusinessCardResult:
 
     @extra_info_list.setter
     def extra_info_list(self, extra_info_list):
-        """Sets the extra_info_list of this BusinessCardResult.
+        r"""Sets the extra_info_list of this BusinessCardResult.
 
         其余信息列表。 
 
@@ -362,7 +362,7 @@ class BusinessCardResult:
 
     @property
     def adjusted_image(self):
-        """Gets the adjusted_image of this BusinessCardResult.
+        r"""Gets the adjusted_image of this BusinessCardResult.
 
         返回矫正后的名片图像的BASE64编码。 
 
@@ -373,7 +373,7 @@ class BusinessCardResult:
 
     @adjusted_image.setter
     def adjusted_image(self, adjusted_image):
-        """Sets the adjusted_image of this BusinessCardResult.
+        r"""Sets the adjusted_image of this BusinessCardResult.
 
         返回矫正后的名片图像的BASE64编码。 
 

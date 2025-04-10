@@ -25,7 +25,7 @@ class ClaimEnterpriseMultiAccountCouponRequest:
     }
 
     def __init__(self, body=None):
-        """ClaimEnterpriseMultiAccountCouponRequest
+        r"""ClaimEnterpriseMultiAccountCouponRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ClaimEnterpriseMultiAccountCouponRequest:
 
     @property
     def body(self):
-        """Gets the body of this ClaimEnterpriseMultiAccountCouponRequest.
+        r"""Gets the body of this ClaimEnterpriseMultiAccountCouponRequest.
 
         :return: The body of this ClaimEnterpriseMultiAccountCouponRequest.
         :rtype: :class:`huaweicloudsdkbss.v2.TransferEnterpriseMultiAccountCouponReq`
@@ -52,7 +52,7 @@ class ClaimEnterpriseMultiAccountCouponRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ClaimEnterpriseMultiAccountCouponRequest.
+        r"""Sets the body of this ClaimEnterpriseMultiAccountCouponRequest.
 
         :param body: The body of this ClaimEnterpriseMultiAccountCouponRequest.
         :type body: :class:`huaweicloudsdkbss.v2.TransferEnterpriseMultiAccountCouponReq`

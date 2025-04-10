@@ -33,7 +33,7 @@ class ServiceItem:
     }
 
     def __init__(self, protocol=None, source_port=None, dest_port=None, description=None, name=None):
-        """ServiceItem
+        r"""ServiceItem
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ServiceItem:
 
     @property
     def protocol(self):
-        """Gets the protocol of this ServiceItem.
+        r"""Gets the protocol of this ServiceItem.
 
         协议类型：TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1,RuleServiceDto.type为0时不能为空。
 
@@ -82,7 +82,7 @@ class ServiceItem:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this ServiceItem.
+        r"""Sets the protocol of this ServiceItem.
 
         协议类型：TCP为6，UDP为17，ICMP为1，ICMPV6为58，ANY为-1,RuleServiceDto.type为0时不能为空。
 
@@ -93,7 +93,7 @@ class ServiceItem:
 
     @property
     def source_port(self):
-        """Gets the source_port of this ServiceItem.
+        r"""Gets the source_port of this ServiceItem.
 
         源端口
 
@@ -104,7 +104,7 @@ class ServiceItem:
 
     @source_port.setter
     def source_port(self, source_port):
-        """Sets the source_port of this ServiceItem.
+        r"""Sets the source_port of this ServiceItem.
 
         源端口
 
@@ -115,7 +115,7 @@ class ServiceItem:
 
     @property
     def dest_port(self):
-        """Gets the dest_port of this ServiceItem.
+        r"""Gets the dest_port of this ServiceItem.
 
         目的端口
 
@@ -126,7 +126,7 @@ class ServiceItem:
 
     @dest_port.setter
     def dest_port(self, dest_port):
-        """Sets the dest_port of this ServiceItem.
+        r"""Sets the dest_port of this ServiceItem.
 
         目的端口
 
@@ -137,7 +137,7 @@ class ServiceItem:
 
     @property
     def description(self):
-        """Gets the description of this ServiceItem.
+        r"""Gets the description of this ServiceItem.
 
         服务成员描述
 
@@ -148,7 +148,7 @@ class ServiceItem:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ServiceItem.
+        r"""Sets the description of this ServiceItem.
 
         服务成员描述
 
@@ -159,7 +159,7 @@ class ServiceItem:
 
     @property
     def name(self):
-        """Gets the name of this ServiceItem.
+        r"""Gets the name of this ServiceItem.
 
         服务成员名称
 
@@ -170,7 +170,7 @@ class ServiceItem:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ServiceItem.
+        r"""Sets the name of this ServiceItem.
 
         服务成员名称
 

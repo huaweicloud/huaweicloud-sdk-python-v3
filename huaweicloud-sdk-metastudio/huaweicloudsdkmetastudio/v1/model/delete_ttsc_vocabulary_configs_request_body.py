@@ -25,7 +25,7 @@ class DeleteTtscVocabularyConfigsRequestBody:
     }
 
     def __init__(self, id=None):
-        """DeleteTtscVocabularyConfigsRequestBody
+        r"""DeleteTtscVocabularyConfigsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteTtscVocabularyConfigsRequestBody:
 
     @property
     def id(self):
-        """Gets the id of this DeleteTtscVocabularyConfigsRequestBody.
+        r"""Gets the id of this DeleteTtscVocabularyConfigsRequestBody.
 
         自定义读法id
 
@@ -54,7 +54,7 @@ class DeleteTtscVocabularyConfigsRequestBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteTtscVocabularyConfigsRequestBody.
+        r"""Sets the id of this DeleteTtscVocabularyConfigsRequestBody.
 
         自定义读法id
 

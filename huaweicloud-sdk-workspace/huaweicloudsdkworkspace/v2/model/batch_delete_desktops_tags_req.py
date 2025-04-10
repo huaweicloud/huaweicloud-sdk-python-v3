@@ -25,7 +25,7 @@ class BatchDeleteDesktopsTagsReq:
     }
 
     def __init__(self, desktops=None):
-        """BatchDeleteDesktopsTagsReq
+        r"""BatchDeleteDesktopsTagsReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchDeleteDesktopsTagsReq:
 
     @property
     def desktops(self):
-        """Gets the desktops of this BatchDeleteDesktopsTagsReq.
+        r"""Gets the desktops of this BatchDeleteDesktopsTagsReq.
 
         桌面（桌面携带标签列表）列表。批量操作时非法桌面ID会过滤不做处理。
 
@@ -53,7 +53,7 @@ class BatchDeleteDesktopsTagsReq:
 
     @desktops.setter
     def desktops(self, desktops):
-        """Sets the desktops of this BatchDeleteDesktopsTagsReq.
+        r"""Sets the desktops of this BatchDeleteDesktopsTagsReq.
 
         桌面（桌面携带标签列表）列表。批量操作时非法桌面ID会过滤不做处理。
 

@@ -29,7 +29,7 @@ class InstanceNodesInfoResp:
     }
 
     def __init__(self, instance_id=None, node_count=None, nodes=None):
-        """InstanceNodesInfoResp
+        r"""InstanceNodesInfoResp
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class InstanceNodesInfoResp:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this InstanceNodesInfoResp.
+        r"""Gets the instance_id of this InstanceNodesInfoResp.
 
         实例ID
 
@@ -68,7 +68,7 @@ class InstanceNodesInfoResp:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this InstanceNodesInfoResp.
+        r"""Sets the instance_id of this InstanceNodesInfoResp.
 
         实例ID
 
@@ -79,7 +79,7 @@ class InstanceNodesInfoResp:
 
     @property
     def node_count(self):
-        """Gets the node_count of this InstanceNodesInfoResp.
+        r"""Gets the node_count of this InstanceNodesInfoResp.
 
         当前实例节点总数
 
@@ -90,7 +90,7 @@ class InstanceNodesInfoResp:
 
     @node_count.setter
     def node_count(self, node_count):
-        """Sets the node_count of this InstanceNodesInfoResp.
+        r"""Sets the node_count of this InstanceNodesInfoResp.
 
         当前实例节点总数
 
@@ -101,7 +101,7 @@ class InstanceNodesInfoResp:
 
     @property
     def nodes(self):
-        """Gets the nodes of this InstanceNodesInfoResp.
+        r"""Gets the nodes of this InstanceNodesInfoResp.
 
         节点详情。
 
@@ -112,7 +112,7 @@ class InstanceNodesInfoResp:
 
     @nodes.setter
     def nodes(self, nodes):
-        """Sets the nodes of this InstanceNodesInfoResp.
+        r"""Sets the nodes of this InstanceNodesInfoResp.
 
         节点详情。
 

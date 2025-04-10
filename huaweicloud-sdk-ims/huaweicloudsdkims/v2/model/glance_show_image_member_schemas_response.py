@@ -28,7 +28,7 @@ class GlanceShowImageMemberSchemasResponse(SdkResponse):
     }
 
     def __init__(self, name=None, properties=None):
-        """GlanceShowImageMemberSchemasResponse
+        r"""GlanceShowImageMemberSchemasResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class GlanceShowImageMemberSchemasResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this GlanceShowImageMemberSchemasResponse.
+        r"""Gets the name of this GlanceShowImageMemberSchemasResponse.
 
         视图名称。
 
@@ -62,7 +62,7 @@ class GlanceShowImageMemberSchemasResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GlanceShowImageMemberSchemasResponse.
+        r"""Sets the name of this GlanceShowImageMemberSchemasResponse.
 
         视图名称。
 
@@ -73,7 +73,7 @@ class GlanceShowImageMemberSchemasResponse(SdkResponse):
 
     @property
     def properties(self):
-        """Gets the properties of this GlanceShowImageMemberSchemasResponse.
+        r"""Gets the properties of this GlanceShowImageMemberSchemasResponse.
 
         镜像成员属性说明，主要是对基础属性的说明，包含每个属性的取值类型、用途等。
 
@@ -84,7 +84,7 @@ class GlanceShowImageMemberSchemasResponse(SdkResponse):
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this GlanceShowImageMemberSchemasResponse.
+        r"""Sets the properties of this GlanceShowImageMemberSchemasResponse.
 
         镜像成员属性说明，主要是对基础属性的说明，包含每个属性的取值类型、用途等。
 

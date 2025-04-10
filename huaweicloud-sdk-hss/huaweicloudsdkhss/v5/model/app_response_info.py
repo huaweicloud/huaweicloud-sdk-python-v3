@@ -43,7 +43,7 @@ class AppResponseInfo:
     }
 
     def __init__(self, agent_id=None, host_id=None, host_name=None, host_ip=None, app_name=None, version=None, update_time=None, recent_scan_time=None, container_id=None, container_name=None):
-        """AppResponseInfo
+        r"""AppResponseInfo
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class AppResponseInfo:
 
     @property
     def agent_id(self):
-        """Gets the agent_id of this AppResponseInfo.
+        r"""Gets the agent_id of this AppResponseInfo.
 
         Agent ID
 
@@ -117,7 +117,7 @@ class AppResponseInfo:
 
     @agent_id.setter
     def agent_id(self, agent_id):
-        """Sets the agent_id of this AppResponseInfo.
+        r"""Sets the agent_id of this AppResponseInfo.
 
         Agent ID
 
@@ -128,7 +128,7 @@ class AppResponseInfo:
 
     @property
     def host_id(self):
-        """Gets the host_id of this AppResponseInfo.
+        r"""Gets the host_id of this AppResponseInfo.
 
         主机id
 
@@ -139,7 +139,7 @@ class AppResponseInfo:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this AppResponseInfo.
+        r"""Sets the host_id of this AppResponseInfo.
 
         主机id
 
@@ -150,7 +150,7 @@ class AppResponseInfo:
 
     @property
     def host_name(self):
-        """Gets the host_name of this AppResponseInfo.
+        r"""Gets the host_name of this AppResponseInfo.
 
         服务器名称
 
@@ -161,7 +161,7 @@ class AppResponseInfo:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this AppResponseInfo.
+        r"""Sets the host_name of this AppResponseInfo.
 
         服务器名称
 
@@ -172,7 +172,7 @@ class AppResponseInfo:
 
     @property
     def host_ip(self):
-        """Gets the host_ip of this AppResponseInfo.
+        r"""Gets the host_ip of this AppResponseInfo.
 
         服务器ip
 
@@ -183,7 +183,7 @@ class AppResponseInfo:
 
     @host_ip.setter
     def host_ip(self, host_ip):
-        """Sets the host_ip of this AppResponseInfo.
+        r"""Sets the host_ip of this AppResponseInfo.
 
         服务器ip
 
@@ -194,7 +194,7 @@ class AppResponseInfo:
 
     @property
     def app_name(self):
-        """Gets the app_name of this AppResponseInfo.
+        r"""Gets the app_name of this AppResponseInfo.
 
         软件名称
 
@@ -205,7 +205,7 @@ class AppResponseInfo:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this AppResponseInfo.
+        r"""Sets the app_name of this AppResponseInfo.
 
         软件名称
 
@@ -216,7 +216,7 @@ class AppResponseInfo:
 
     @property
     def version(self):
-        """Gets the version of this AppResponseInfo.
+        r"""Gets the version of this AppResponseInfo.
 
         版本号
 
@@ -227,7 +227,7 @@ class AppResponseInfo:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this AppResponseInfo.
+        r"""Sets the version of this AppResponseInfo.
 
         版本号
 
@@ -238,7 +238,7 @@ class AppResponseInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this AppResponseInfo.
+        r"""Gets the update_time of this AppResponseInfo.
 
         更新时间，最近一次更新的时间，用毫秒表示
 
@@ -249,7 +249,7 @@ class AppResponseInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this AppResponseInfo.
+        r"""Sets the update_time of this AppResponseInfo.
 
         更新时间，最近一次更新的时间，用毫秒表示
 
@@ -260,7 +260,7 @@ class AppResponseInfo:
 
     @property
     def recent_scan_time(self):
-        """Gets the recent_scan_time of this AppResponseInfo.
+        r"""Gets the recent_scan_time of this AppResponseInfo.
 
         最近扫描时间，用毫秒表示
 
@@ -271,7 +271,7 @@ class AppResponseInfo:
 
     @recent_scan_time.setter
     def recent_scan_time(self, recent_scan_time):
-        """Sets the recent_scan_time of this AppResponseInfo.
+        r"""Sets the recent_scan_time of this AppResponseInfo.
 
         最近扫描时间，用毫秒表示
 
@@ -282,7 +282,7 @@ class AppResponseInfo:
 
     @property
     def container_id(self):
-        """Gets the container_id of this AppResponseInfo.
+        r"""Gets the container_id of this AppResponseInfo.
 
         容器id
 
@@ -293,7 +293,7 @@ class AppResponseInfo:
 
     @container_id.setter
     def container_id(self, container_id):
-        """Sets the container_id of this AppResponseInfo.
+        r"""Sets the container_id of this AppResponseInfo.
 
         容器id
 
@@ -304,7 +304,7 @@ class AppResponseInfo:
 
     @property
     def container_name(self):
-        """Gets the container_name of this AppResponseInfo.
+        r"""Gets the container_name of this AppResponseInfo.
 
         容器名称
 
@@ -315,7 +315,7 @@ class AppResponseInfo:
 
     @container_name.setter
     def container_name(self, container_name):
-        """Sets the container_name of this AppResponseInfo.
+        r"""Sets the container_name of this AppResponseInfo.
 
         容器名称
 

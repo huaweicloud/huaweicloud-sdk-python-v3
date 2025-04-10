@@ -25,7 +25,7 @@ class UploadMetaDataByUrlReq:
     }
 
     def __init__(self, upload_metadatas=None):
-        """UploadMetaDataByUrlReq
+        r"""UploadMetaDataByUrlReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UploadMetaDataByUrlReq:
 
     @property
     def upload_metadatas(self):
-        """Gets the upload_metadatas of this UploadMetaDataByUrlReq.
+        r"""Gets the upload_metadatas of this UploadMetaDataByUrlReq.
 
         待拉取创建的媒资元数据
 
@@ -53,7 +53,7 @@ class UploadMetaDataByUrlReq:
 
     @upload_metadatas.setter
     def upload_metadatas(self, upload_metadatas):
-        """Sets the upload_metadatas of this UploadMetaDataByUrlReq.
+        r"""Sets the upload_metadatas of this UploadMetaDataByUrlReq.
 
         待拉取创建的媒资元数据
 

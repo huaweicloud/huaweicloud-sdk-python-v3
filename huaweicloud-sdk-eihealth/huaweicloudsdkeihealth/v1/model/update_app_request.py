@@ -29,7 +29,7 @@ class UpdateAppRequest:
     }
 
     def __init__(self, app_id=None, eihealth_project_id=None, body=None):
-        """UpdateAppRequest
+        r"""UpdateAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateAppRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this UpdateAppRequest.
+        r"""Gets the app_id of this UpdateAppRequest.
 
         应用id
 
@@ -66,7 +66,7 @@ class UpdateAppRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this UpdateAppRequest.
+        r"""Sets the app_id of this UpdateAppRequest.
 
         应用id
 
@@ -77,7 +77,7 @@ class UpdateAppRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this UpdateAppRequest.
+        r"""Gets the eihealth_project_id of this UpdateAppRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -88,7 +88,7 @@ class UpdateAppRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this UpdateAppRequest.
+        r"""Sets the eihealth_project_id of this UpdateAppRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -99,7 +99,7 @@ class UpdateAppRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAppRequest.
+        r"""Gets the body of this UpdateAppRequest.
 
         :return: The body of this UpdateAppRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.AppReq`
@@ -108,7 +108,7 @@ class UpdateAppRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAppRequest.
+        r"""Sets the body of this UpdateAppRequest.
 
         :param body: The body of this UpdateAppRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.AppReq`

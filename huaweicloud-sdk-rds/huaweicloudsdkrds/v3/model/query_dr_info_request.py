@@ -47,7 +47,7 @@ class QueryDRInfoRequest:
     }
 
     def __init__(self, id=None, status=None, master_instance_id=None, master_region=None, slave_instance_id=None, slave_region=None, create_at_start=None, create_at_end=None, order=None, sort_field=None, offset=None, limit=None):
-        """QueryDRInfoRequest
+        r"""QueryDRInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class QueryDRInfoRequest:
 
     @property
     def id(self):
-        """Gets the id of this QueryDRInfoRequest.
+        r"""Gets the id of this QueryDRInfoRequest.
 
         容灾关系id
 
@@ -131,7 +131,7 @@ class QueryDRInfoRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this QueryDRInfoRequest.
+        r"""Sets the id of this QueryDRInfoRequest.
 
         容灾关系id
 
@@ -142,7 +142,7 @@ class QueryDRInfoRequest:
 
     @property
     def status(self):
-        """Gets the status of this QueryDRInfoRequest.
+        r"""Gets the status of this QueryDRInfoRequest.
 
         容灾搭建状态
 
@@ -153,7 +153,7 @@ class QueryDRInfoRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this QueryDRInfoRequest.
+        r"""Sets the status of this QueryDRInfoRequest.
 
         容灾搭建状态
 
@@ -164,7 +164,7 @@ class QueryDRInfoRequest:
 
     @property
     def master_instance_id(self):
-        """Gets the master_instance_id of this QueryDRInfoRequest.
+        r"""Gets the master_instance_id of this QueryDRInfoRequest.
 
         灾备实例id
 
@@ -175,7 +175,7 @@ class QueryDRInfoRequest:
 
     @master_instance_id.setter
     def master_instance_id(self, master_instance_id):
-        """Sets the master_instance_id of this QueryDRInfoRequest.
+        r"""Sets the master_instance_id of this QueryDRInfoRequest.
 
         灾备实例id
 
@@ -186,7 +186,7 @@ class QueryDRInfoRequest:
 
     @property
     def master_region(self):
-        """Gets the master_region of this QueryDRInfoRequest.
+        r"""Gets the master_region of this QueryDRInfoRequest.
 
         主实例region
 
@@ -197,7 +197,7 @@ class QueryDRInfoRequest:
 
     @master_region.setter
     def master_region(self, master_region):
-        """Sets the master_region of this QueryDRInfoRequest.
+        r"""Sets the master_region of this QueryDRInfoRequest.
 
         主实例region
 
@@ -208,7 +208,7 @@ class QueryDRInfoRequest:
 
     @property
     def slave_instance_id(self):
-        """Gets the slave_instance_id of this QueryDRInfoRequest.
+        r"""Gets the slave_instance_id of this QueryDRInfoRequest.
 
         灾备实例id
 
@@ -219,7 +219,7 @@ class QueryDRInfoRequest:
 
     @slave_instance_id.setter
     def slave_instance_id(self, slave_instance_id):
-        """Sets the slave_instance_id of this QueryDRInfoRequest.
+        r"""Sets the slave_instance_id of this QueryDRInfoRequest.
 
         灾备实例id
 
@@ -230,7 +230,7 @@ class QueryDRInfoRequest:
 
     @property
     def slave_region(self):
-        """Gets the slave_region of this QueryDRInfoRequest.
+        r"""Gets the slave_region of this QueryDRInfoRequest.
 
         灾备实例region
 
@@ -241,7 +241,7 @@ class QueryDRInfoRequest:
 
     @slave_region.setter
     def slave_region(self, slave_region):
-        """Sets the slave_region of this QueryDRInfoRequest.
+        r"""Sets the slave_region of this QueryDRInfoRequest.
 
         灾备实例region
 
@@ -252,7 +252,7 @@ class QueryDRInfoRequest:
 
     @property
     def create_at_start(self):
-        """Gets the create_at_start of this QueryDRInfoRequest.
+        r"""Gets the create_at_start of this QueryDRInfoRequest.
 
         创建起始时间
 
@@ -263,7 +263,7 @@ class QueryDRInfoRequest:
 
     @create_at_start.setter
     def create_at_start(self, create_at_start):
-        """Sets the create_at_start of this QueryDRInfoRequest.
+        r"""Sets the create_at_start of this QueryDRInfoRequest.
 
         创建起始时间
 
@@ -274,7 +274,7 @@ class QueryDRInfoRequest:
 
     @property
     def create_at_end(self):
-        """Gets the create_at_end of this QueryDRInfoRequest.
+        r"""Gets the create_at_end of this QueryDRInfoRequest.
 
         创建结束时间
 
@@ -285,7 +285,7 @@ class QueryDRInfoRequest:
 
     @create_at_end.setter
     def create_at_end(self, create_at_end):
-        """Sets the create_at_end of this QueryDRInfoRequest.
+        r"""Sets the create_at_end of this QueryDRInfoRequest.
 
         创建结束时间
 
@@ -296,7 +296,7 @@ class QueryDRInfoRequest:
 
     @property
     def order(self):
-        """Gets the order of this QueryDRInfoRequest.
+        r"""Gets the order of this QueryDRInfoRequest.
 
         排序方式。 DESC，降序。 ASC，升序。 默认降序。
 
@@ -307,7 +307,7 @@ class QueryDRInfoRequest:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this QueryDRInfoRequest.
+        r"""Sets the order of this QueryDRInfoRequest.
 
         排序方式。 DESC，降序。 ASC，升序。 默认降序。
 
@@ -318,7 +318,7 @@ class QueryDRInfoRequest:
 
     @property
     def sort_field(self):
-        """Gets the sort_field of this QueryDRInfoRequest.
+        r"""Gets the sort_field of this QueryDRInfoRequest.
 
         排序字段。 status 容灾搭建状态。 time 容灾搭建时间。 master_region 主实例region。 slave_region 灾备实例region 默认容灾搭建时间。
 
@@ -329,7 +329,7 @@ class QueryDRInfoRequest:
 
     @sort_field.setter
     def sort_field(self, sort_field):
-        """Sets the sort_field of this QueryDRInfoRequest.
+        r"""Sets the sort_field of this QueryDRInfoRequest.
 
         排序字段。 status 容灾搭建状态。 time 容灾搭建时间。 master_region 主实例region。 slave_region 灾备实例region 默认容灾搭建时间。
 
@@ -340,7 +340,7 @@ class QueryDRInfoRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this QueryDRInfoRequest.
+        r"""Gets the offset of this QueryDRInfoRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -351,7 +351,7 @@ class QueryDRInfoRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this QueryDRInfoRequest.
+        r"""Sets the offset of this QueryDRInfoRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -362,7 +362,7 @@ class QueryDRInfoRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this QueryDRInfoRequest.
+        r"""Gets the limit of this QueryDRInfoRequest.
 
         查询记录数。默认为10，不能为负数，最小值为1，最大值为100。
 
@@ -373,7 +373,7 @@ class QueryDRInfoRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this QueryDRInfoRequest.
+        r"""Sets the limit of this QueryDRInfoRequest.
 
         查询记录数。默认为10，不能为负数，最小值为1，最大值为100。
 

@@ -35,7 +35,7 @@ class MysqlProxyComputeFlavor:
     }
 
     def __init__(self, vcpus=None, ram=None, db_type=None, id=None, spec_code=None, az_status=None):
-        """MysqlProxyComputeFlavor
+        r"""MysqlProxyComputeFlavor
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class MysqlProxyComputeFlavor:
 
     @property
     def vcpus(self):
-        """Gets the vcpus of this MysqlProxyComputeFlavor.
+        r"""Gets the vcpus of this MysqlProxyComputeFlavor.
 
         CPU大小。例如：1表示1U。
 
@@ -83,7 +83,7 @@ class MysqlProxyComputeFlavor:
 
     @vcpus.setter
     def vcpus(self, vcpus):
-        """Sets the vcpus of this MysqlProxyComputeFlavor.
+        r"""Sets the vcpus of this MysqlProxyComputeFlavor.
 
         CPU大小。例如：1表示1U。
 
@@ -94,7 +94,7 @@ class MysqlProxyComputeFlavor:
 
     @property
     def ram(self):
-        """Gets the ram of this MysqlProxyComputeFlavor.
+        r"""Gets the ram of this MysqlProxyComputeFlavor.
 
         内存大小，单位为GB。
 
@@ -105,7 +105,7 @@ class MysqlProxyComputeFlavor:
 
     @ram.setter
     def ram(self, ram):
-        """Sets the ram of this MysqlProxyComputeFlavor.
+        r"""Sets the ram of this MysqlProxyComputeFlavor.
 
         内存大小，单位为GB。
 
@@ -116,7 +116,7 @@ class MysqlProxyComputeFlavor:
 
     @property
     def db_type(self):
-        """Gets the db_type of this MysqlProxyComputeFlavor.
+        r"""Gets the db_type of this MysqlProxyComputeFlavor.
 
         数据库类型。
 
@@ -127,7 +127,7 @@ class MysqlProxyComputeFlavor:
 
     @db_type.setter
     def db_type(self, db_type):
-        """Sets the db_type of this MysqlProxyComputeFlavor.
+        r"""Sets the db_type of this MysqlProxyComputeFlavor.
 
         数据库类型。
 
@@ -138,7 +138,7 @@ class MysqlProxyComputeFlavor:
 
     @property
     def id(self):
-        """Gets the id of this MysqlProxyComputeFlavor.
+        r"""Gets the id of this MysqlProxyComputeFlavor.
 
         Proxy规格ID。
 
@@ -149,7 +149,7 @@ class MysqlProxyComputeFlavor:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MysqlProxyComputeFlavor.
+        r"""Sets the id of this MysqlProxyComputeFlavor.
 
         Proxy规格ID。
 
@@ -160,7 +160,7 @@ class MysqlProxyComputeFlavor:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this MysqlProxyComputeFlavor.
+        r"""Gets the spec_code of this MysqlProxyComputeFlavor.
 
         Proxy规格码。
 
@@ -171,7 +171,7 @@ class MysqlProxyComputeFlavor:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this MysqlProxyComputeFlavor.
+        r"""Sets the spec_code of this MysqlProxyComputeFlavor.
 
         Proxy规格码。
 
@@ -182,7 +182,7 @@ class MysqlProxyComputeFlavor:
 
     @property
     def az_status(self):
-        """Gets the az_status of this MysqlProxyComputeFlavor.
+        r"""Gets the az_status of this MysqlProxyComputeFlavor.
 
         其中key是可用区编号，value是规格所在az的状态。
 
@@ -193,7 +193,7 @@ class MysqlProxyComputeFlavor:
 
     @az_status.setter
     def az_status(self, az_status):
-        """Sets the az_status of this MysqlProxyComputeFlavor.
+        r"""Sets the az_status of this MysqlProxyComputeFlavor.
 
         其中key是可用区编号，value是规格所在az的状态。
 

@@ -27,7 +27,7 @@ class BatchCreateGlobalEipTagsRequest:
     }
 
     def __init__(self, resource_id=None, body=None):
-        """BatchCreateGlobalEipTagsRequest
+        r"""BatchCreateGlobalEipTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchCreateGlobalEipTagsRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this BatchCreateGlobalEipTagsRequest.
+        r"""Gets the resource_id of this BatchCreateGlobalEipTagsRequest.
 
         :return: The resource_id of this BatchCreateGlobalEipTagsRequest.
         :rtype: str
@@ -58,7 +58,7 @@ class BatchCreateGlobalEipTagsRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this BatchCreateGlobalEipTagsRequest.
+        r"""Sets the resource_id of this BatchCreateGlobalEipTagsRequest.
 
         :param resource_id: The resource_id of this BatchCreateGlobalEipTagsRequest.
         :type resource_id: str
@@ -67,7 +67,7 @@ class BatchCreateGlobalEipTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateGlobalEipTagsRequest.
+        r"""Gets the body of this BatchCreateGlobalEipTagsRequest.
 
         :return: The body of this BatchCreateGlobalEipTagsRequest.
         :rtype: :class:`huaweicloudsdkgeip.v3.BatchCreateV2RequestBody`
@@ -76,7 +76,7 @@ class BatchCreateGlobalEipTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateGlobalEipTagsRequest.
+        r"""Sets the body of this BatchCreateGlobalEipTagsRequest.
 
         :param body: The body of this BatchCreateGlobalEipTagsRequest.
         :type body: :class:`huaweicloudsdkgeip.v3.BatchCreateV2RequestBody`

@@ -26,7 +26,7 @@ class BatchShowPipelinesLatestStatusResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """BatchShowPipelinesLatestStatusResponse
+        r"""BatchShowPipelinesLatestStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchShowPipelinesLatestStatusResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this BatchShowPipelinesLatestStatusResponse.
+        r"""Gets the body of this BatchShowPipelinesLatestStatusResponse.
 
         :return: The body of this BatchShowPipelinesLatestStatusResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineLatestRun`]
@@ -53,7 +53,7 @@ class BatchShowPipelinesLatestStatusResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchShowPipelinesLatestStatusResponse.
+        r"""Sets the body of this BatchShowPipelinesLatestStatusResponse.
 
         :param body: The body of this BatchShowPipelinesLatestStatusResponse.
         :type body: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineLatestRun`]

@@ -28,7 +28,7 @@ class ListTopAbnormalResponse(SdkResponse):
     }
 
     def __init__(self, total=None, items=None):
-        """ListTopAbnormalResponse
+        r"""ListTopAbnormalResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListTopAbnormalResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListTopAbnormalResponse.
+        r"""Gets the total of this ListTopAbnormalResponse.
 
         异常请求数量
 
@@ -62,7 +62,7 @@ class ListTopAbnormalResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListTopAbnormalResponse.
+        r"""Sets the total of this ListTopAbnormalResponse.
 
         异常请求数量
 
@@ -73,7 +73,7 @@ class ListTopAbnormalResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListTopAbnormalResponse.
+        r"""Gets the items of this ListTopAbnormalResponse.
 
         异常请求信息数组
 
@@ -84,7 +84,7 @@ class ListTopAbnormalResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListTopAbnormalResponse.
+        r"""Sets the items of this ListTopAbnormalResponse.
 
         异常请求信息数组
 

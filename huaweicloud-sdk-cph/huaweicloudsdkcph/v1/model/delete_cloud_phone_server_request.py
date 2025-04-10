@@ -25,7 +25,7 @@ class DeleteCloudPhoneServerRequest:
     }
 
     def __init__(self, body=None):
-        """DeleteCloudPhoneServerRequest
+        r"""DeleteCloudPhoneServerRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteCloudPhoneServerRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteCloudPhoneServerRequest.
+        r"""Gets the body of this DeleteCloudPhoneServerRequest.
 
         :return: The body of this DeleteCloudPhoneServerRequest.
         :rtype: :class:`huaweicloudsdkcph.v1.DeleteCloudPhoneServerRequestBody`
@@ -52,7 +52,7 @@ class DeleteCloudPhoneServerRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteCloudPhoneServerRequest.
+        r"""Sets the body of this DeleteCloudPhoneServerRequest.
 
         :param body: The body of this DeleteCloudPhoneServerRequest.
         :type body: :class:`huaweicloudsdkcph.v1.DeleteCloudPhoneServerRequestBody`

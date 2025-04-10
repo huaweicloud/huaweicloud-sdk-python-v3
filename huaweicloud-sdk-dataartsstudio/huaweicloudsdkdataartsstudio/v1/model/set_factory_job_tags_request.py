@@ -33,7 +33,7 @@ class SetFactoryJobTagsRequest:
     }
 
     def __init__(self, workspace=None, job_name=None, authorization=None, host=None, body=None):
-        """SetFactoryJobTagsRequest
+        r"""SetFactoryJobTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class SetFactoryJobTagsRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this SetFactoryJobTagsRequest.
+        r"""Gets the workspace of this SetFactoryJobTagsRequest.
 
         工作空间id
 
@@ -81,7 +81,7 @@ class SetFactoryJobTagsRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this SetFactoryJobTagsRequest.
+        r"""Sets the workspace of this SetFactoryJobTagsRequest.
 
         工作空间id
 
@@ -92,7 +92,7 @@ class SetFactoryJobTagsRequest:
 
     @property
     def job_name(self):
-        """Gets the job_name of this SetFactoryJobTagsRequest.
+        r"""Gets the job_name of this SetFactoryJobTagsRequest.
 
         作业名称.
 
@@ -103,7 +103,7 @@ class SetFactoryJobTagsRequest:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this SetFactoryJobTagsRequest.
+        r"""Sets the job_name of this SetFactoryJobTagsRequest.
 
         作业名称.
 
@@ -114,7 +114,7 @@ class SetFactoryJobTagsRequest:
 
     @property
     def authorization(self):
-        """Gets the authorization of this SetFactoryJobTagsRequest.
+        r"""Gets the authorization of this SetFactoryJobTagsRequest.
 
         使用AK/SK进行认证时该字段必选
 
@@ -125,7 +125,7 @@ class SetFactoryJobTagsRequest:
 
     @authorization.setter
     def authorization(self, authorization):
-        """Sets the authorization of this SetFactoryJobTagsRequest.
+        r"""Sets the authorization of this SetFactoryJobTagsRequest.
 
         使用AK/SK进行认证时该字段必选
 
@@ -136,7 +136,7 @@ class SetFactoryJobTagsRequest:
 
     @property
     def host(self):
-        """Gets the host of this SetFactoryJobTagsRequest.
+        r"""Gets the host of this SetFactoryJobTagsRequest.
 
         使用AK/SK进行认证时该字段必选
 
@@ -147,7 +147,7 @@ class SetFactoryJobTagsRequest:
 
     @host.setter
     def host(self, host):
-        """Sets the host of this SetFactoryJobTagsRequest.
+        r"""Sets the host of this SetFactoryJobTagsRequest.
 
         使用AK/SK进行认证时该字段必选
 
@@ -158,7 +158,7 @@ class SetFactoryJobTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetFactoryJobTagsRequest.
+        r"""Gets the body of this SetFactoryJobTagsRequest.
 
         :return: The body of this SetFactoryJobTagsRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SetJobTagsRequestBody`
@@ -167,7 +167,7 @@ class SetFactoryJobTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetFactoryJobTagsRequest.
+        r"""Sets the body of this SetFactoryJobTagsRequest.
 
         :param body: The body of this SetFactoryJobTagsRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.SetJobTagsRequestBody`

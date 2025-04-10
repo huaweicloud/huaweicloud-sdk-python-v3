@@ -26,7 +26,7 @@ class ListPermissionsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListPermissionsResponse
+        r"""ListPermissionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListPermissionsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListPermissionsResponse.
+        r"""Gets the body of this ListPermissionsResponse.
 
         :return: The body of this ListPermissionsResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class ListPermissionsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListPermissionsResponse.
+        r"""Sets the body of this ListPermissionsResponse.
 
         :param body: The body of this ListPermissionsResponse.
         :type body: str

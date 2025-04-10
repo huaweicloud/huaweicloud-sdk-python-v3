@@ -27,7 +27,7 @@ class ExecuteUploadPptRequest:
     }
 
     def __init__(self, video_id=None, body=None):
-        """ExecuteUploadPptRequest
+        r"""ExecuteUploadPptRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ExecuteUploadPptRequest:
 
     @property
     def video_id(self):
-        """Gets the video_id of this ExecuteUploadPptRequest.
+        r"""Gets the video_id of this ExecuteUploadPptRequest.
 
         视频id
 
@@ -60,7 +60,7 @@ class ExecuteUploadPptRequest:
 
     @video_id.setter
     def video_id(self, video_id):
-        """Sets the video_id of this ExecuteUploadPptRequest.
+        r"""Sets the video_id of this ExecuteUploadPptRequest.
 
         视频id
 
@@ -71,7 +71,7 @@ class ExecuteUploadPptRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExecuteUploadPptRequest.
+        r"""Gets the body of this ExecuteUploadPptRequest.
 
         :return: The body of this ExecuteUploadPptRequest.
         :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteUploadPptRequestBody`
@@ -80,7 +80,7 @@ class ExecuteUploadPptRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExecuteUploadPptRequest.
+        r"""Sets the body of this ExecuteUploadPptRequest.
 
         :param body: The body of this ExecuteUploadPptRequest.
         :type body: :class:`huaweicloudsdkcbs.v1.ExecuteUploadPptRequestBody`

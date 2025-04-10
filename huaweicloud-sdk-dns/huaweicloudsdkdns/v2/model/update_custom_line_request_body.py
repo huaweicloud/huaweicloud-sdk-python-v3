@@ -29,7 +29,7 @@ class UpdateCustomLineRequestBody:
     }
 
     def __init__(self, name=None, ip_segments=None, description=None):
-        """UpdateCustomLineRequestBody
+        r"""UpdateCustomLineRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateCustomLineRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateCustomLineRequestBody.
+        r"""Gets the name of this UpdateCustomLineRequestBody.
 
         解析线路名称。
 
@@ -68,7 +68,7 @@ class UpdateCustomLineRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateCustomLineRequestBody.
+        r"""Sets the name of this UpdateCustomLineRequestBody.
 
         解析线路名称。
 
@@ -79,7 +79,7 @@ class UpdateCustomLineRequestBody:
 
     @property
     def ip_segments(self):
-        """Gets the ip_segments of this UpdateCustomLineRequestBody.
+        r"""Gets the ip_segments of this UpdateCustomLineRequestBody.
 
         P地址段。  以“-”分隔，小IP地址在前，大IP地址在后。IP段之间不能有交叉。当只有一个IP时，填写IP1-IP1。 目前只支持IPV4。
 
@@ -90,7 +90,7 @@ class UpdateCustomLineRequestBody:
 
     @ip_segments.setter
     def ip_segments(self, ip_segments):
-        """Sets the ip_segments of this UpdateCustomLineRequestBody.
+        r"""Sets the ip_segments of this UpdateCustomLineRequestBody.
 
         P地址段。  以“-”分隔，小IP地址在前，大IP地址在后。IP段之间不能有交叉。当只有一个IP时，填写IP1-IP1。 目前只支持IPV4。
 
@@ -101,7 +101,7 @@ class UpdateCustomLineRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateCustomLineRequestBody.
+        r"""Gets the description of this UpdateCustomLineRequestBody.
 
         自定义线路的描述信息。长度不超过255个字符。
 
@@ -112,7 +112,7 @@ class UpdateCustomLineRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateCustomLineRequestBody.
+        r"""Sets the description of this UpdateCustomLineRequestBody.
 
         自定义线路的描述信息。长度不超过255个字符。
 

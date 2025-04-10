@@ -35,7 +35,7 @@ class EventPubMetricsItem:
     }
 
     def __init__(self, event_size=None, timestamp=None, num=None, success_num=None, process_time=None, invoke_time=None):
-        """EventPubMetricsItem
+        r"""EventPubMetricsItem
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class EventPubMetricsItem:
 
     @property
     def event_size(self):
-        """Gets the event_size of this EventPubMetricsItem.
+        r"""Gets the event_size of this EventPubMetricsItem.
 
         事件大小
 
@@ -89,7 +89,7 @@ class EventPubMetricsItem:
 
     @event_size.setter
     def event_size(self, event_size):
-        """Sets the event_size of this EventPubMetricsItem.
+        r"""Sets the event_size of this EventPubMetricsItem.
 
         事件大小
 
@@ -100,7 +100,7 @@ class EventPubMetricsItem:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this EventPubMetricsItem.
+        r"""Gets the timestamp of this EventPubMetricsItem.
 
         时间戳
 
@@ -111,7 +111,7 @@ class EventPubMetricsItem:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this EventPubMetricsItem.
+        r"""Sets the timestamp of this EventPubMetricsItem.
 
         时间戳
 
@@ -122,7 +122,7 @@ class EventPubMetricsItem:
 
     @property
     def num(self):
-        """Gets the num of this EventPubMetricsItem.
+        r"""Gets the num of this EventPubMetricsItem.
 
         调用数
 
@@ -133,7 +133,7 @@ class EventPubMetricsItem:
 
     @num.setter
     def num(self, num):
-        """Sets the num of this EventPubMetricsItem.
+        r"""Sets the num of this EventPubMetricsItem.
 
         调用数
 
@@ -144,7 +144,7 @@ class EventPubMetricsItem:
 
     @property
     def success_num(self):
-        """Gets the success_num of this EventPubMetricsItem.
+        r"""Gets the success_num of this EventPubMetricsItem.
 
         调用成功数
 
@@ -155,7 +155,7 @@ class EventPubMetricsItem:
 
     @success_num.setter
     def success_num(self, success_num):
-        """Sets the success_num of this EventPubMetricsItem.
+        r"""Sets the success_num of this EventPubMetricsItem.
 
         调用成功数
 
@@ -166,7 +166,7 @@ class EventPubMetricsItem:
 
     @property
     def process_time(self):
-        """Gets the process_time of this EventPubMetricsItem.
+        r"""Gets the process_time of this EventPubMetricsItem.
 
         处理时间
 
@@ -177,7 +177,7 @@ class EventPubMetricsItem:
 
     @process_time.setter
     def process_time(self, process_time):
-        """Sets the process_time of this EventPubMetricsItem.
+        r"""Sets the process_time of this EventPubMetricsItem.
 
         处理时间
 
@@ -188,7 +188,7 @@ class EventPubMetricsItem:
 
     @property
     def invoke_time(self):
-        """Gets the invoke_time of this EventPubMetricsItem.
+        r"""Gets the invoke_time of this EventPubMetricsItem.
 
         调用时间
 
@@ -199,7 +199,7 @@ class EventPubMetricsItem:
 
     @invoke_time.setter
     def invoke_time(self, invoke_time):
-        """Sets the invoke_time of this EventPubMetricsItem.
+        r"""Sets the invoke_time of this EventPubMetricsItem.
 
         调用时间
 

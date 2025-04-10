@@ -29,7 +29,7 @@ class ShowResSceneRequest:
     }
 
     def __init__(self, content_type=None, workspace_id=None, scene_id=None):
-        """ShowResSceneRequest
+        r"""ShowResSceneRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ShowResSceneRequest:
 
     @property
     def content_type(self):
-        """Gets the content_type of this ShowResSceneRequest.
+        r"""Gets the content_type of this ShowResSceneRequest.
 
         内容类型，取值为application/json。
 
@@ -65,7 +65,7 @@ class ShowResSceneRequest:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this ShowResSceneRequest.
+        r"""Sets the content_type of this ShowResSceneRequest.
 
         内容类型，取值为application/json。
 
@@ -76,7 +76,7 @@ class ShowResSceneRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ShowResSceneRequest.
+        r"""Gets the workspace_id of this ShowResSceneRequest.
 
         工作空间id。
 
@@ -87,7 +87,7 @@ class ShowResSceneRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ShowResSceneRequest.
+        r"""Sets the workspace_id of this ShowResSceneRequest.
 
         工作空间id。
 
@@ -98,7 +98,7 @@ class ShowResSceneRequest:
 
     @property
     def scene_id(self):
-        """Gets the scene_id of this ShowResSceneRequest.
+        r"""Gets the scene_id of this ShowResSceneRequest.
 
         场景id。
 
@@ -109,7 +109,7 @@ class ShowResSceneRequest:
 
     @scene_id.setter
     def scene_id(self, scene_id):
-        """Sets the scene_id of this ShowResSceneRequest.
+        r"""Sets the scene_id of this ShowResSceneRequest.
 
         场景id。
 

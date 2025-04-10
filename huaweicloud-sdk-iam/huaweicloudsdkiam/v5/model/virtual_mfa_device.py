@@ -27,7 +27,7 @@ class VirtualMfaDevice:
     }
 
     def __init__(self, serial_number=None, base32_string_seed=None):
-        """VirtualMfaDevice
+        r"""VirtualMfaDevice
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class VirtualMfaDevice:
 
     @property
     def serial_number(self):
-        """Gets the serial_number of this VirtualMfaDevice.
+        r"""Gets the serial_number of this VirtualMfaDevice.
 
         MFA设备序列号。
 
@@ -59,7 +59,7 @@ class VirtualMfaDevice:
 
     @serial_number.setter
     def serial_number(self, serial_number):
-        """Sets the serial_number of this VirtualMfaDevice.
+        r"""Sets the serial_number of this VirtualMfaDevice.
 
         MFA设备序列号。
 
@@ -70,7 +70,7 @@ class VirtualMfaDevice:
 
     @property
     def base32_string_seed(self):
-        """Gets the base32_string_seed of this VirtualMfaDevice.
+        r"""Gets the base32_string_seed of this VirtualMfaDevice.
 
         密钥信息，用于第三方生成图片验证码。
 
@@ -81,7 +81,7 @@ class VirtualMfaDevice:
 
     @base32_string_seed.setter
     def base32_string_seed(self, base32_string_seed):
-        """Sets the base32_string_seed of this VirtualMfaDevice.
+        r"""Sets the base32_string_seed of this VirtualMfaDevice.
 
         密钥信息，用于第三方生成图片验证码。
 

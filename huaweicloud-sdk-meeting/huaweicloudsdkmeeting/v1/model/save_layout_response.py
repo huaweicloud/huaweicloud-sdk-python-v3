@@ -24,7 +24,7 @@ class SaveLayoutResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SaveLayoutResponse
+        r"""SaveLayoutResponse
 
         The model defined in huaweicloud sdk
 

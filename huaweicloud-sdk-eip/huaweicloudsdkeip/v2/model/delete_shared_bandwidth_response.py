@@ -24,7 +24,7 @@ class DeleteSharedBandwidthResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteSharedBandwidthResponse
+        r"""DeleteSharedBandwidthResponse
 
         The model defined in huaweicloud sdk
 

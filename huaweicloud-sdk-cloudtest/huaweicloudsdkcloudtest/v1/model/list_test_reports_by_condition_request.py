@@ -33,7 +33,7 @@ class ListTestReportsByConditionRequest:
     }
 
     def __init__(self, project_id=None, page_size=None, offset=None, key_word=None, own=None):
-        """ListTestReportsByConditionRequest
+        r"""ListTestReportsByConditionRequest
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class ListTestReportsByConditionRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListTestReportsByConditionRequest.
+        r"""Gets the project_id of this ListTestReportsByConditionRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -79,7 +79,7 @@ class ListTestReportsByConditionRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListTestReportsByConditionRequest.
+        r"""Sets the project_id of this ListTestReportsByConditionRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -90,7 +90,7 @@ class ListTestReportsByConditionRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ListTestReportsByConditionRequest.
+        r"""Gets the page_size of this ListTestReportsByConditionRequest.
 
         每页显示的条目数量,最大支持200条
 
@@ -101,7 +101,7 @@ class ListTestReportsByConditionRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ListTestReportsByConditionRequest.
+        r"""Sets the page_size of this ListTestReportsByConditionRequest.
 
         每页显示的条目数量,最大支持200条
 
@@ -112,7 +112,7 @@ class ListTestReportsByConditionRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTestReportsByConditionRequest.
+        r"""Gets the offset of this ListTestReportsByConditionRequest.
 
         页数，page_no大于等于1
 
@@ -123,7 +123,7 @@ class ListTestReportsByConditionRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTestReportsByConditionRequest.
+        r"""Sets the offset of this ListTestReportsByConditionRequest.
 
         页数，page_no大于等于1
 
@@ -134,7 +134,7 @@ class ListTestReportsByConditionRequest:
 
     @property
     def key_word(self):
-        """Gets the key_word of this ListTestReportsByConditionRequest.
+        r"""Gets the key_word of this ListTestReportsByConditionRequest.
 
         名称关键词
 
@@ -145,7 +145,7 @@ class ListTestReportsByConditionRequest:
 
     @key_word.setter
     def key_word(self, key_word):
-        """Sets the key_word of this ListTestReportsByConditionRequest.
+        r"""Sets the key_word of this ListTestReportsByConditionRequest.
 
         名称关键词
 
@@ -156,7 +156,7 @@ class ListTestReportsByConditionRequest:
 
     @property
     def own(self):
-        """Gets the own of this ListTestReportsByConditionRequest.
+        r"""Gets the own of this ListTestReportsByConditionRequest.
 
         是否是我的测试报告
 
@@ -167,7 +167,7 @@ class ListTestReportsByConditionRequest:
 
     @own.setter
     def own(self, own):
-        """Sets the own of this ListTestReportsByConditionRequest.
+        r"""Sets the own of this ListTestReportsByConditionRequest.
 
         是否是我的测试报告
 

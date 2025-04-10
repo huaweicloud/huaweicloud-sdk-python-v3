@@ -26,7 +26,7 @@ class RunRecaptureDetectResponse(SdkResponse):
     }
 
     def __init__(self, result=None):
-        """RunRecaptureDetectResponse
+        r"""RunRecaptureDetectResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RunRecaptureDetectResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RunRecaptureDetectResponse.
+        r"""Gets the result of this RunRecaptureDetectResponse.
 
         :return: The result of this RunRecaptureDetectResponse.
         :rtype: :class:`huaweicloudsdkimage.v2.RecaptureDetectResponseResult`
@@ -53,7 +53,7 @@ class RunRecaptureDetectResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RunRecaptureDetectResponse.
+        r"""Sets the result of this RunRecaptureDetectResponse.
 
         :param result: The result of this RunRecaptureDetectResponse.
         :type result: :class:`huaweicloudsdkimage.v2.RecaptureDetectResponseResult`

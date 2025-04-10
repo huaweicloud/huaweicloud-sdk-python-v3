@@ -30,7 +30,7 @@ class CreateNodeResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, package=None):
-        """CreateNodeResponse
+        r"""CreateNodeResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateNodeResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateNodeResponse.
+        r"""Gets the id of this CreateNodeResponse.
 
         设备ID
 
@@ -69,7 +69,7 @@ class CreateNodeResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateNodeResponse.
+        r"""Sets the id of this CreateNodeResponse.
 
         设备ID
 
@@ -80,7 +80,7 @@ class CreateNodeResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateNodeResponse.
+        r"""Gets the name of this CreateNodeResponse.
 
         设备名称，只允许中文字符、英文字母、数字、下划线、中划线，最大长度64
 
@@ -91,7 +91,7 @@ class CreateNodeResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateNodeResponse.
+        r"""Sets the name of this CreateNodeResponse.
 
         设备名称，只允许中文字符、英文字母、数字、下划线、中划线，最大长度64
 
@@ -102,7 +102,7 @@ class CreateNodeResponse(SdkResponse):
 
     @property
     def package(self):
-        """Gets the package of this CreateNodeResponse.
+        r"""Gets the package of this CreateNodeResponse.
 
         将设备配置和证书文件node.conf/certificate/private_key打成.tar.gz包后用base64编码的字符串。node.conf包含节点信息配置
 
@@ -113,7 +113,7 @@ class CreateNodeResponse(SdkResponse):
 
     @package.setter
     def package(self, package):
-        """Sets the package of this CreateNodeResponse.
+        r"""Sets the package of this CreateNodeResponse.
 
         将设备配置和证书文件node.conf/certificate/private_key打成.tar.gz包后用base64编码的字符串。node.conf包含节点信息配置
 

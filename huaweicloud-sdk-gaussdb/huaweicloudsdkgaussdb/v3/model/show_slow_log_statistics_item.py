@@ -45,7 +45,7 @@ class ShowSlowLogStatisticsItem:
     }
 
     def __init__(self, client_ip=None, count=None, database=None, lock_time=None, node_id=None, query_sample=None, rows_examined=None, rows_sent=None, time=None, type=None, users=None):
-        """ShowSlowLogStatisticsItem
+        r"""ShowSlowLogStatisticsItem
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ShowSlowLogStatisticsItem:
 
     @property
     def client_ip(self):
-        """Gets the client_ip of this ShowSlowLogStatisticsItem.
+        r"""Gets the client_ip of this ShowSlowLogStatisticsItem.
 
         IP地址。
 
@@ -124,7 +124,7 @@ class ShowSlowLogStatisticsItem:
 
     @client_ip.setter
     def client_ip(self, client_ip):
-        """Sets the client_ip of this ShowSlowLogStatisticsItem.
+        r"""Sets the client_ip of this ShowSlowLogStatisticsItem.
 
         IP地址。
 
@@ -135,7 +135,7 @@ class ShowSlowLogStatisticsItem:
 
     @property
     def count(self):
-        """Gets the count of this ShowSlowLogStatisticsItem.
+        r"""Gets the count of this ShowSlowLogStatisticsItem.
 
         执行次数。
 
@@ -146,7 +146,7 @@ class ShowSlowLogStatisticsItem:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowSlowLogStatisticsItem.
+        r"""Sets the count of this ShowSlowLogStatisticsItem.
 
         执行次数。
 
@@ -157,7 +157,7 @@ class ShowSlowLogStatisticsItem:
 
     @property
     def database(self):
-        """Gets the database of this ShowSlowLogStatisticsItem.
+        r"""Gets the database of this ShowSlowLogStatisticsItem.
 
         所属数据库。
 
@@ -168,7 +168,7 @@ class ShowSlowLogStatisticsItem:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this ShowSlowLogStatisticsItem.
+        r"""Sets the database of this ShowSlowLogStatisticsItem.
 
         所属数据库。
 
@@ -179,7 +179,7 @@ class ShowSlowLogStatisticsItem:
 
     @property
     def lock_time(self):
-        """Gets the lock_time of this ShowSlowLogStatisticsItem.
+        r"""Gets the lock_time of this ShowSlowLogStatisticsItem.
 
         平均等待锁时间。
 
@@ -190,7 +190,7 @@ class ShowSlowLogStatisticsItem:
 
     @lock_time.setter
     def lock_time(self, lock_time):
-        """Sets the lock_time of this ShowSlowLogStatisticsItem.
+        r"""Sets the lock_time of this ShowSlowLogStatisticsItem.
 
         平均等待锁时间。
 
@@ -201,7 +201,7 @@ class ShowSlowLogStatisticsItem:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ShowSlowLogStatisticsItem.
+        r"""Gets the node_id of this ShowSlowLogStatisticsItem.
 
         节点ID。
 
@@ -212,7 +212,7 @@ class ShowSlowLogStatisticsItem:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ShowSlowLogStatisticsItem.
+        r"""Sets the node_id of this ShowSlowLogStatisticsItem.
 
         节点ID。
 
@@ -223,7 +223,7 @@ class ShowSlowLogStatisticsItem:
 
     @property
     def query_sample(self):
-        """Gets the query_sample of this ShowSlowLogStatisticsItem.
+        r"""Gets the query_sample of this ShowSlowLogStatisticsItem.
 
         执行语法。
 
@@ -234,7 +234,7 @@ class ShowSlowLogStatisticsItem:
 
     @query_sample.setter
     def query_sample(self, query_sample):
-        """Sets the query_sample of this ShowSlowLogStatisticsItem.
+        r"""Sets the query_sample of this ShowSlowLogStatisticsItem.
 
         执行语法。
 
@@ -245,7 +245,7 @@ class ShowSlowLogStatisticsItem:
 
     @property
     def rows_examined(self):
-        """Gets the rows_examined of this ShowSlowLogStatisticsItem.
+        r"""Gets the rows_examined of this ShowSlowLogStatisticsItem.
 
         平均扫描的行数量。
 
@@ -256,7 +256,7 @@ class ShowSlowLogStatisticsItem:
 
     @rows_examined.setter
     def rows_examined(self, rows_examined):
-        """Sets the rows_examined of this ShowSlowLogStatisticsItem.
+        r"""Sets the rows_examined of this ShowSlowLogStatisticsItem.
 
         平均扫描的行数量。
 
@@ -267,7 +267,7 @@ class ShowSlowLogStatisticsItem:
 
     @property
     def rows_sent(self):
-        """Gets the rows_sent of this ShowSlowLogStatisticsItem.
+        r"""Gets the rows_sent of this ShowSlowLogStatisticsItem.
 
         平均结果行统计数量。
 
@@ -278,7 +278,7 @@ class ShowSlowLogStatisticsItem:
 
     @rows_sent.setter
     def rows_sent(self, rows_sent):
-        """Sets the rows_sent of this ShowSlowLogStatisticsItem.
+        r"""Sets the rows_sent of this ShowSlowLogStatisticsItem.
 
         平均结果行统计数量。
 
@@ -289,7 +289,7 @@ class ShowSlowLogStatisticsItem:
 
     @property
     def time(self):
-        """Gets the time of this ShowSlowLogStatisticsItem.
+        r"""Gets the time of this ShowSlowLogStatisticsItem.
 
         平均执行时间。
 
@@ -300,7 +300,7 @@ class ShowSlowLogStatisticsItem:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this ShowSlowLogStatisticsItem.
+        r"""Sets the time of this ShowSlowLogStatisticsItem.
 
         平均执行时间。
 
@@ -311,7 +311,7 @@ class ShowSlowLogStatisticsItem:
 
     @property
     def type(self):
-        """Gets the type of this ShowSlowLogStatisticsItem.
+        r"""Gets the type of this ShowSlowLogStatisticsItem.
 
         语句类型。
 
@@ -322,7 +322,7 @@ class ShowSlowLogStatisticsItem:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowSlowLogStatisticsItem.
+        r"""Sets the type of this ShowSlowLogStatisticsItem.
 
         语句类型。
 
@@ -333,7 +333,7 @@ class ShowSlowLogStatisticsItem:
 
     @property
     def users(self):
-        """Gets the users of this ShowSlowLogStatisticsItem.
+        r"""Gets the users of this ShowSlowLogStatisticsItem.
 
         账号。
 
@@ -344,7 +344,7 @@ class ShowSlowLogStatisticsItem:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this ShowSlowLogStatisticsItem.
+        r"""Sets the users of this ShowSlowLogStatisticsItem.
 
         账号。
 

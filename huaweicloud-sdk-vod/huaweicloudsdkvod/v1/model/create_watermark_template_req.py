@@ -47,7 +47,7 @@ class CreateWatermarkTemplateReq:
     }
 
     def __init__(self, name=None, watermark_type=None, image_process=None, dx=None, dy=None, position=None, width=None, height=None, timeline_start=None, timeline_duration=None, type=None, md5=None):
-        """CreateWatermarkTemplateReq
+        r"""CreateWatermarkTemplateReq
 
         The model defined in huaweicloud sdk
 
@@ -118,7 +118,7 @@ class CreateWatermarkTemplateReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateWatermarkTemplateReq.
+        r"""Gets the name of this CreateWatermarkTemplateReq.
 
         水印模板名称。
 
@@ -129,7 +129,7 @@ class CreateWatermarkTemplateReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateWatermarkTemplateReq.
+        r"""Sets the name of this CreateWatermarkTemplateReq.
 
         水印模板名称。
 
@@ -140,7 +140,7 @@ class CreateWatermarkTemplateReq:
 
     @property
     def watermark_type(self):
-        """Gets the watermark_type of this CreateWatermarkTemplateReq.
+        r"""Gets the watermark_type of this CreateWatermarkTemplateReq.
 
         水印类型，当前只支持Image（图片水印）。
 
@@ -151,7 +151,7 @@ class CreateWatermarkTemplateReq:
 
     @watermark_type.setter
     def watermark_type(self, watermark_type):
-        """Sets the watermark_type of this CreateWatermarkTemplateReq.
+        r"""Sets the watermark_type of this CreateWatermarkTemplateReq.
 
         水印类型，当前只支持Image（图片水印）。
 
@@ -162,7 +162,7 @@ class CreateWatermarkTemplateReq:
 
     @property
     def image_process(self):
-        """Gets the image_process of this CreateWatermarkTemplateReq.
+        r"""Gets the image_process of this CreateWatermarkTemplateReq.
 
         type设置为Image时有效。  目前包括： - Original：只做简单缩放，不做其他处理 - Transparent：图片底色透明 - Grayed：彩色图片变灰
 
@@ -173,7 +173,7 @@ class CreateWatermarkTemplateReq:
 
     @image_process.setter
     def image_process(self, image_process):
-        """Sets the image_process of this CreateWatermarkTemplateReq.
+        r"""Sets the image_process of this CreateWatermarkTemplateReq.
 
         type设置为Image时有效。  目前包括： - Original：只做简单缩放，不做其他处理 - Transparent：图片底色透明 - Grayed：彩色图片变灰
 
@@ -184,7 +184,7 @@ class CreateWatermarkTemplateReq:
 
     @property
     def dx(self):
-        """Gets the dx of this CreateWatermarkTemplateReq.
+        r"""Gets the dx of this CreateWatermarkTemplateReq.
 
         水印图片相对输出视频的水平偏移量，默认值是0。
 
@@ -195,7 +195,7 @@ class CreateWatermarkTemplateReq:
 
     @dx.setter
     def dx(self, dx):
-        """Sets the dx of this CreateWatermarkTemplateReq.
+        r"""Sets the dx of this CreateWatermarkTemplateReq.
 
         水印图片相对输出视频的水平偏移量，默认值是0。
 
@@ -206,7 +206,7 @@ class CreateWatermarkTemplateReq:
 
     @property
     def dy(self):
-        """Gets the dy of this CreateWatermarkTemplateReq.
+        r"""Gets the dy of this CreateWatermarkTemplateReq.
 
         水印图片相对输出视频的垂直偏移量，默认值是0。
 
@@ -217,7 +217,7 @@ class CreateWatermarkTemplateReq:
 
     @dy.setter
     def dy(self, dy):
-        """Sets the dy of this CreateWatermarkTemplateReq.
+        r"""Sets the dy of this CreateWatermarkTemplateReq.
 
         水印图片相对输出视频的垂直偏移量，默认值是0。
 
@@ -228,7 +228,7 @@ class CreateWatermarkTemplateReq:
 
     @property
     def position(self):
-        """Gets the position of this CreateWatermarkTemplateReq.
+        r"""Gets the position of this CreateWatermarkTemplateReq.
 
         水印的位置。
 
@@ -239,7 +239,7 @@ class CreateWatermarkTemplateReq:
 
     @position.setter
     def position(self, position):
-        """Sets the position of this CreateWatermarkTemplateReq.
+        r"""Sets the position of this CreateWatermarkTemplateReq.
 
         水印的位置。
 
@@ -250,7 +250,7 @@ class CreateWatermarkTemplateReq:
 
     @property
     def width(self):
-        """Gets the width of this CreateWatermarkTemplateReq.
+        r"""Gets the width of this CreateWatermarkTemplateReq.
 
         水印图片宽。
 
@@ -261,7 +261,7 @@ class CreateWatermarkTemplateReq:
 
     @width.setter
     def width(self, width):
-        """Sets the width of this CreateWatermarkTemplateReq.
+        r"""Sets the width of this CreateWatermarkTemplateReq.
 
         水印图片宽。
 
@@ -272,7 +272,7 @@ class CreateWatermarkTemplateReq:
 
     @property
     def height(self):
-        """Gets the height of this CreateWatermarkTemplateReq.
+        r"""Gets the height of this CreateWatermarkTemplateReq.
 
         水印图片高。
 
@@ -283,7 +283,7 @@ class CreateWatermarkTemplateReq:
 
     @height.setter
     def height(self, height):
-        """Sets the height of this CreateWatermarkTemplateReq.
+        r"""Sets the height of this CreateWatermarkTemplateReq.
 
         水印图片高。
 
@@ -294,7 +294,7 @@ class CreateWatermarkTemplateReq:
 
     @property
     def timeline_start(self):
-        """Gets the timeline_start of this CreateWatermarkTemplateReq.
+        r"""Gets the timeline_start of this CreateWatermarkTemplateReq.
 
         水印开始时间，与\"timeline_duration\"配合使用。 取值范围:[0, END)。\"END\"表示视频结束时间。 单位:秒。 
 
@@ -305,7 +305,7 @@ class CreateWatermarkTemplateReq:
 
     @timeline_start.setter
     def timeline_start(self, timeline_start):
-        """Sets the timeline_start of this CreateWatermarkTemplateReq.
+        r"""Sets the timeline_start of this CreateWatermarkTemplateReq.
 
         水印开始时间，与\"timeline_duration\"配合使用。 取值范围:[0, END)。\"END\"表示视频结束时间。 单位:秒。 
 
@@ -316,7 +316,7 @@ class CreateWatermarkTemplateReq:
 
     @property
     def timeline_duration(self):
-        """Gets the timeline_duration of this CreateWatermarkTemplateReq.
+        r"""Gets the timeline_duration of this CreateWatermarkTemplateReq.
 
         水印持续时间，与\"timeline_start\"配合使用。 取值范围:(0,END-开始时间]。\"END\"表示视频结束时间。 单位:秒。 默认:END。 
 
@@ -327,7 +327,7 @@ class CreateWatermarkTemplateReq:
 
     @timeline_duration.setter
     def timeline_duration(self, timeline_duration):
-        """Sets the timeline_duration of this CreateWatermarkTemplateReq.
+        r"""Sets the timeline_duration of this CreateWatermarkTemplateReq.
 
         水印持续时间，与\"timeline_start\"配合使用。 取值范围:(0,END-开始时间]。\"END\"表示视频结束时间。 单位:秒。 默认:END。 
 
@@ -338,7 +338,7 @@ class CreateWatermarkTemplateReq:
 
     @property
     def type(self):
-        """Gets the type of this CreateWatermarkTemplateReq.
+        r"""Gets the type of this CreateWatermarkTemplateReq.
 
         水印图片格式类型。
 
@@ -349,7 +349,7 @@ class CreateWatermarkTemplateReq:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateWatermarkTemplateReq.
+        r"""Sets the type of this CreateWatermarkTemplateReq.
 
         水印图片格式类型。
 
@@ -360,7 +360,7 @@ class CreateWatermarkTemplateReq:
 
     @property
     def md5(self):
-        """Gets the md5 of this CreateWatermarkTemplateReq.
+        r"""Gets the md5 of this CreateWatermarkTemplateReq.
 
         水印图片MD5值。
 
@@ -371,7 +371,7 @@ class CreateWatermarkTemplateReq:
 
     @md5.setter
     def md5(self, md5):
-        """Sets the md5 of this CreateWatermarkTemplateReq.
+        r"""Sets the md5 of this CreateWatermarkTemplateReq.
 
         水印图片MD5值。
 

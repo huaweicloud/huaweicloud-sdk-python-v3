@@ -31,7 +31,7 @@ class Listener:
     }
 
     def __init__(self, name=None, port=None, backend=None, ip_version=None):
-        """Listener
+        r"""Listener
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class Listener:
 
     @property
     def name(self):
-        """Gets the name of this Listener.
+        r"""Gets the name of this Listener.
 
         监听器名称
 
@@ -75,7 +75,7 @@ class Listener:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Listener.
+        r"""Sets the name of this Listener.
 
         监听器名称
 
@@ -86,7 +86,7 @@ class Listener:
 
     @property
     def port(self):
-        """Gets the port of this Listener.
+        r"""Gets the port of this Listener.
 
         监听器对外提供服务端口
 
@@ -97,7 +97,7 @@ class Listener:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this Listener.
+        r"""Sets the port of this Listener.
 
         监听器对外提供服务端口
 
@@ -108,7 +108,7 @@ class Listener:
 
     @property
     def backend(self):
-        """Gets the backend of this Listener.
+        r"""Gets the backend of this Listener.
 
         :return: The backend of this Listener.
         :rtype: :class:`huaweicloudsdkroma.v2.Backend`
@@ -117,7 +117,7 @@ class Listener:
 
     @backend.setter
     def backend(self, backend):
-        """Sets the backend of this Listener.
+        r"""Sets the backend of this Listener.
 
         :param backend: The backend of this Listener.
         :type backend: :class:`huaweicloudsdkroma.v2.Backend`
@@ -126,7 +126,7 @@ class Listener:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this Listener.
+        r"""Gets the ip_version of this Listener.
 
         创建负载均衡器的IP协议类型
 
@@ -137,7 +137,7 @@ class Listener:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this Listener.
+        r"""Sets the ip_version of this Listener.
 
         创建负载均衡器的IP协议类型
 

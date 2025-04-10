@@ -35,7 +35,7 @@ class ErrorLogDetail:
     }
 
     def __init__(self, node_name=None, node_id=None, raw_message=None, severity=None, log_time=None, line_num=None):
-        """ErrorLogDetail
+        r"""ErrorLogDetail
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ErrorLogDetail:
 
     @property
     def node_name(self):
-        """Gets the node_name of this ErrorLogDetail.
+        r"""Gets the node_name of this ErrorLogDetail.
 
         节点名称。
 
@@ -83,7 +83,7 @@ class ErrorLogDetail:
 
     @node_name.setter
     def node_name(self, node_name):
-        """Sets the node_name of this ErrorLogDetail.
+        r"""Sets the node_name of this ErrorLogDetail.
 
         节点名称。
 
@@ -94,7 +94,7 @@ class ErrorLogDetail:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ErrorLogDetail.
+        r"""Gets the node_id of this ErrorLogDetail.
 
         节点ID。
 
@@ -105,7 +105,7 @@ class ErrorLogDetail:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ErrorLogDetail.
+        r"""Sets the node_id of this ErrorLogDetail.
 
         节点ID。
 
@@ -116,7 +116,7 @@ class ErrorLogDetail:
 
     @property
     def raw_message(self):
-        """Gets the raw_message of this ErrorLogDetail.
+        r"""Gets the raw_message of this ErrorLogDetail.
 
         描述信息。
 
@@ -127,7 +127,7 @@ class ErrorLogDetail:
 
     @raw_message.setter
     def raw_message(self, raw_message):
-        """Sets the raw_message of this ErrorLogDetail.
+        r"""Sets the raw_message of this ErrorLogDetail.
 
         描述信息。
 
@@ -138,7 +138,7 @@ class ErrorLogDetail:
 
     @property
     def severity(self):
-        """Gets the severity of this ErrorLogDetail.
+        r"""Gets the severity of this ErrorLogDetail.
 
         日志级别。
 
@@ -149,7 +149,7 @@ class ErrorLogDetail:
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this ErrorLogDetail.
+        r"""Sets the severity of this ErrorLogDetail.
 
         日志级别。
 
@@ -160,7 +160,7 @@ class ErrorLogDetail:
 
     @property
     def log_time(self):
-        """Gets the log_time of this ErrorLogDetail.
+        r"""Gets the log_time of this ErrorLogDetail.
 
         日志产生时间，UTC时间。 格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -171,7 +171,7 @@ class ErrorLogDetail:
 
     @log_time.setter
     def log_time(self, log_time):
-        """Sets the log_time of this ErrorLogDetail.
+        r"""Sets the log_time of this ErrorLogDetail.
 
         日志产生时间，UTC时间。 格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -182,7 +182,7 @@ class ErrorLogDetail:
 
     @property
     def line_num(self):
-        """Gets the line_num of this ErrorLogDetail.
+        r"""Gets the line_num of this ErrorLogDetail.
 
         日志单行序列号。
 
@@ -193,7 +193,7 @@ class ErrorLogDetail:
 
     @line_num.setter
     def line_num(self, line_num):
-        """Sets the line_num of this ErrorLogDetail.
+        r"""Sets the line_num of this ErrorLogDetail.
 
         日志单行序列号。
 

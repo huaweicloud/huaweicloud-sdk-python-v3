@@ -25,7 +25,7 @@ class ShowRemediationConfigurationRequest:
     }
 
     def __init__(self, policy_assignment_id=None):
-        """ShowRemediationConfigurationRequest
+        r"""ShowRemediationConfigurationRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowRemediationConfigurationRequest:
 
     @property
     def policy_assignment_id(self):
-        """Gets the policy_assignment_id of this ShowRemediationConfigurationRequest.
+        r"""Gets the policy_assignment_id of this ShowRemediationConfigurationRequest.
 
         规则ID
 
@@ -53,7 +53,7 @@ class ShowRemediationConfigurationRequest:
 
     @policy_assignment_id.setter
     def policy_assignment_id(self, policy_assignment_id):
-        """Sets the policy_assignment_id of this ShowRemediationConfigurationRequest.
+        r"""Sets the policy_assignment_id of this ShowRemediationConfigurationRequest.
 
         规则ID
 

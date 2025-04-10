@@ -29,7 +29,7 @@ class ObjectFilter:
     }
 
     def __init__(self, operator=None, field=None, values=None):
-        """ObjectFilter
+        r"""ObjectFilter
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ObjectFilter:
 
     @property
     def operator(self):
-        """Gets the operator of this ObjectFilter.
+        r"""Gets the operator of this ObjectFilter.
 
         操作符 in/like/startwith/endwith/=/!=/>/<等
 
@@ -65,7 +65,7 @@ class ObjectFilter:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this ObjectFilter.
+        r"""Sets the operator of this ObjectFilter.
 
         操作符 in/like/startwith/endwith/=/!=/>/<等
 
@@ -76,7 +76,7 @@ class ObjectFilter:
 
     @property
     def field(self):
-        """Gets the field of this ObjectFilter.
+        r"""Gets the field of this ObjectFilter.
 
         字段名称
 
@@ -87,7 +87,7 @@ class ObjectFilter:
 
     @field.setter
     def field(self, field):
-        """Sets the field of this ObjectFilter.
+        r"""Sets the field of this ObjectFilter.
 
         字段名称
 
@@ -98,7 +98,7 @@ class ObjectFilter:
 
     @property
     def values(self):
-        """Gets the values of this ObjectFilter.
+        r"""Gets the values of this ObjectFilter.
 
         搜索值
 
@@ -109,7 +109,7 @@ class ObjectFilter:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this ObjectFilter.
+        r"""Sets the values of this ObjectFilter.
 
         搜索值
 

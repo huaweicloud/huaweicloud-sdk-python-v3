@@ -27,7 +27,7 @@ class SecondaryIndexInfo:
     }
 
     def __init__(self, index_name=None, index_status=None):
-        """SecondaryIndexInfo
+        r"""SecondaryIndexInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class SecondaryIndexInfo:
 
     @property
     def index_name(self):
-        """Gets the index_name of this SecondaryIndexInfo.
+        r"""Gets the index_name of this SecondaryIndexInfo.
 
         索引状态。 - 长度：[1, 255] - 取值字符限制：[a-z0-9_-]+
 
@@ -59,7 +59,7 @@ class SecondaryIndexInfo:
 
     @index_name.setter
     def index_name(self, index_name):
-        """Sets the index_name of this SecondaryIndexInfo.
+        r"""Sets the index_name of this SecondaryIndexInfo.
 
         索引状态。 - 长度：[1, 255] - 取值字符限制：[a-z0-9_-]+
 
@@ -70,7 +70,7 @@ class SecondaryIndexInfo:
 
     @property
     def index_status(self):
-        """Gets the index_status of this SecondaryIndexInfo.
+        r"""Gets the index_status of this SecondaryIndexInfo.
 
         索引状态。 - \"creating\" - \"active\" - \"deleting\"
 
@@ -81,7 +81,7 @@ class SecondaryIndexInfo:
 
     @index_status.setter
     def index_status(self, index_status):
-        """Sets the index_status of this SecondaryIndexInfo.
+        r"""Sets the index_status of this SecondaryIndexInfo.
 
         索引状态。 - \"creating\" - \"active\" - \"deleting\"
 

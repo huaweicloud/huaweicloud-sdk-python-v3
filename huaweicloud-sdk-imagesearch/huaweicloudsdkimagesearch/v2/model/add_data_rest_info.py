@@ -25,7 +25,7 @@ class AddDataRestInfo:
     }
 
     def __init__(self, image_info=None):
-        """AddDataRestInfo
+        r"""AddDataRestInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AddDataRestInfo:
 
     @property
     def image_info(self):
-        """Gets the image_info of this AddDataRestInfo.
+        r"""Gets the image_info of this AddDataRestInfo.
 
         :return: The image_info of this AddDataRestInfo.
         :rtype: :class:`huaweicloudsdkimagesearch.v2.AddDataRestInfoImageInfo`
@@ -52,7 +52,7 @@ class AddDataRestInfo:
 
     @image_info.setter
     def image_info(self, image_info):
-        """Sets the image_info of this AddDataRestInfo.
+        r"""Sets the image_info of this AddDataRestInfo.
 
         :param image_info: The image_info of this AddDataRestInfo.
         :type image_info: :class:`huaweicloudsdkimagesearch.v2.AddDataRestInfoImageInfo`

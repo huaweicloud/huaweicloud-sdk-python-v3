@@ -47,7 +47,7 @@ class WorkflowCreateBody:
     }
 
     def __init__(self, name=None, description=None, start=None, triggers=None, functions=None, states=None, constants=None, retries=None, mode=None, express_config=None, enterprise_project_id=None, enable_stream_response=None):
-        """WorkflowCreateBody
+        r"""WorkflowCreateBody
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class WorkflowCreateBody:
 
     @property
     def name(self):
-        """Gets the name of this WorkflowCreateBody.
+        r"""Gets the name of this WorkflowCreateBody.
 
         函数流名称
 
@@ -125,7 +125,7 @@ class WorkflowCreateBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this WorkflowCreateBody.
+        r"""Sets the name of this WorkflowCreateBody.
 
         函数流名称
 
@@ -136,7 +136,7 @@ class WorkflowCreateBody:
 
     @property
     def description(self):
-        """Gets the description of this WorkflowCreateBody.
+        r"""Gets the description of this WorkflowCreateBody.
 
         函数流描述
 
@@ -147,7 +147,7 @@ class WorkflowCreateBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this WorkflowCreateBody.
+        r"""Sets the description of this WorkflowCreateBody.
 
         函数流描述
 
@@ -158,7 +158,7 @@ class WorkflowCreateBody:
 
     @property
     def start(self):
-        """Gets the start of this WorkflowCreateBody.
+        r"""Gets the start of this WorkflowCreateBody.
 
         流程开始节点ID
 
@@ -169,7 +169,7 @@ class WorkflowCreateBody:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this WorkflowCreateBody.
+        r"""Sets the start of this WorkflowCreateBody.
 
         流程开始节点ID
 
@@ -180,7 +180,7 @@ class WorkflowCreateBody:
 
     @property
     def triggers(self):
-        """Gets the triggers of this WorkflowCreateBody.
+        r"""Gets the triggers of this WorkflowCreateBody.
 
         触发器列表
 
@@ -191,7 +191,7 @@ class WorkflowCreateBody:
 
     @triggers.setter
     def triggers(self, triggers):
-        """Sets the triggers of this WorkflowCreateBody.
+        r"""Sets the triggers of this WorkflowCreateBody.
 
         触发器列表
 
@@ -202,7 +202,7 @@ class WorkflowCreateBody:
 
     @property
     def functions(self):
-        """Gets the functions of this WorkflowCreateBody.
+        r"""Gets the functions of this WorkflowCreateBody.
 
         函数列表
 
@@ -213,7 +213,7 @@ class WorkflowCreateBody:
 
     @functions.setter
     def functions(self, functions):
-        """Sets the functions of this WorkflowCreateBody.
+        r"""Sets the functions of this WorkflowCreateBody.
 
         函数列表
 
@@ -224,7 +224,7 @@ class WorkflowCreateBody:
 
     @property
     def states(self):
-        """Gets the states of this WorkflowCreateBody.
+        r"""Gets the states of this WorkflowCreateBody.
 
         函数流节点清单，定义参考SleepState和OperationState
 
@@ -235,7 +235,7 @@ class WorkflowCreateBody:
 
     @states.setter
     def states(self, states):
-        """Sets the states of this WorkflowCreateBody.
+        r"""Sets the states of this WorkflowCreateBody.
 
         函数流节点清单，定义参考SleepState和OperationState
 
@@ -246,7 +246,7 @@ class WorkflowCreateBody:
 
     @property
     def constants(self):
-        """Gets the constants of this WorkflowCreateBody.
+        r"""Gets the constants of this WorkflowCreateBody.
 
         函数流中的常量
 
@@ -257,7 +257,7 @@ class WorkflowCreateBody:
 
     @constants.setter
     def constants(self, constants):
-        """Sets the constants of this WorkflowCreateBody.
+        r"""Sets the constants of this WorkflowCreateBody.
 
         函数流中的常量
 
@@ -268,7 +268,7 @@ class WorkflowCreateBody:
 
     @property
     def retries(self):
-        """Gets the retries of this WorkflowCreateBody.
+        r"""Gets the retries of this WorkflowCreateBody.
 
         重试策略清单
 
@@ -279,7 +279,7 @@ class WorkflowCreateBody:
 
     @retries.setter
     def retries(self, retries):
-        """Sets the retries of this WorkflowCreateBody.
+        r"""Sets the retries of this WorkflowCreateBody.
 
         重试策略清单
 
@@ -290,7 +290,7 @@ class WorkflowCreateBody:
 
     @property
     def mode(self):
-        """Gets the mode of this WorkflowCreateBody.
+        r"""Gets the mode of this WorkflowCreateBody.
 
         函数流模式，当前支持两种模式 NORMAL: 标准模式，普通模式面向普通的业务场景，支持长时间任务，支持执行历史持久化和查询，只支持异步调用 EXPRESS: 快速模式，快速模式面向业务执行时长较短，需要极致性能的场景，只支持流程执行时长低于5分钟的场景，不支持执行历史持久化，支持同步和异步调用 默认为标准模式
 
@@ -301,7 +301,7 @@ class WorkflowCreateBody:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this WorkflowCreateBody.
+        r"""Sets the mode of this WorkflowCreateBody.
 
         函数流模式，当前支持两种模式 NORMAL: 标准模式，普通模式面向普通的业务场景，支持长时间任务，支持执行历史持久化和查询，只支持异步调用 EXPRESS: 快速模式，快速模式面向业务执行时长较短，需要极致性能的场景，只支持流程执行时长低于5分钟的场景，不支持执行历史持久化，支持同步和异步调用 默认为标准模式
 
@@ -312,7 +312,7 @@ class WorkflowCreateBody:
 
     @property
     def express_config(self):
-        """Gets the express_config of this WorkflowCreateBody.
+        r"""Gets the express_config of this WorkflowCreateBody.
 
         :return: The express_config of this WorkflowCreateBody.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.ExpressConfig`
@@ -321,7 +321,7 @@ class WorkflowCreateBody:
 
     @express_config.setter
     def express_config(self, express_config):
-        """Sets the express_config of this WorkflowCreateBody.
+        r"""Sets the express_config of this WorkflowCreateBody.
 
         :param express_config: The express_config of this WorkflowCreateBody.
         :type express_config: :class:`huaweicloudsdkfunctiongraph.v2.ExpressConfig`
@@ -330,7 +330,7 @@ class WorkflowCreateBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this WorkflowCreateBody.
+        r"""Gets the enterprise_project_id of this WorkflowCreateBody.
 
         企业项目ID
 
@@ -341,7 +341,7 @@ class WorkflowCreateBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this WorkflowCreateBody.
+        r"""Sets the enterprise_project_id of this WorkflowCreateBody.
 
         企业项目ID
 
@@ -352,7 +352,7 @@ class WorkflowCreateBody:
 
     @property
     def enable_stream_response(self):
-        """Gets the enable_stream_response of this WorkflowCreateBody.
+        r"""Gets the enable_stream_response of this WorkflowCreateBody.
 
         是否返回流数据
 
@@ -363,7 +363,7 @@ class WorkflowCreateBody:
 
     @enable_stream_response.setter
     def enable_stream_response(self, enable_stream_response):
-        """Sets the enable_stream_response of this WorkflowCreateBody.
+        r"""Sets the enable_stream_response of this WorkflowCreateBody.
 
         是否返回流数据
 

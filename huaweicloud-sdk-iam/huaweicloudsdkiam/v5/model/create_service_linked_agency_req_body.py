@@ -27,7 +27,7 @@ class CreateServiceLinkedAgencyReqBody:
     }
 
     def __init__(self, service_principal=None, description=None):
-        """CreateServiceLinkedAgencyReqBody
+        r"""CreateServiceLinkedAgencyReqBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateServiceLinkedAgencyReqBody:
 
     @property
     def service_principal(self):
-        """Gets the service_principal of this CreateServiceLinkedAgencyReqBody.
+        r"""Gets the service_principal of this CreateServiceLinkedAgencyReqBody.
 
         服务主体，由\"service.\"开头，后跟一个长度为1到56个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -60,7 +60,7 @@ class CreateServiceLinkedAgencyReqBody:
 
     @service_principal.setter
     def service_principal(self, service_principal):
-        """Sets the service_principal of this CreateServiceLinkedAgencyReqBody.
+        r"""Sets the service_principal of this CreateServiceLinkedAgencyReqBody.
 
         服务主体，由\"service.\"开头，后跟一个长度为1到56个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -71,7 +71,7 @@ class CreateServiceLinkedAgencyReqBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateServiceLinkedAgencyReqBody.
+        r"""Gets the description of this CreateServiceLinkedAgencyReqBody.
 
         服务关联委托描述信息，不能包含特定字符\"@\"、\"#\"、\"%\"、\"&\"、\"<\"、\">\"、\"\\\\\"、\"$\"、\"^\"和\"*\"的字符串。
 
@@ -82,7 +82,7 @@ class CreateServiceLinkedAgencyReqBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateServiceLinkedAgencyReqBody.
+        r"""Sets the description of this CreateServiceLinkedAgencyReqBody.
 
         服务关联委托描述信息，不能包含特定字符\"@\"、\"#\"、\"%\"、\"&\"、\"<\"、\">\"、\"\\\\\"、\"$\"、\"^\"和\"*\"的字符串。
 

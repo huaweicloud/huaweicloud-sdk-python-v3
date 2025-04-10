@@ -26,7 +26,7 @@ class ShowWafQpsResponse(SdkResponse):
     }
 
     def __init__(self, qps=None):
-        """ShowWafQpsResponse
+        r"""ShowWafQpsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowWafQpsResponse(SdkResponse):
 
     @property
     def qps(self):
-        """Gets the qps of this ShowWafQpsResponse.
+        r"""Gets the qps of this ShowWafQpsResponse.
 
         qps
 
@@ -55,7 +55,7 @@ class ShowWafQpsResponse(SdkResponse):
 
     @qps.setter
     def qps(self, qps):
-        """Sets the qps of this ShowWafQpsResponse.
+        r"""Sets the qps of this ShowWafQpsResponse.
 
         qps
 

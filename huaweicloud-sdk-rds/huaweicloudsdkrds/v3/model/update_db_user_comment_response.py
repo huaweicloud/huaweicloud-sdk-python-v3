@@ -26,7 +26,7 @@ class UpdateDbUserCommentResponse(SdkResponse):
     }
 
     def __init__(self, resp=None):
-        """UpdateDbUserCommentResponse
+        r"""UpdateDbUserCommentResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateDbUserCommentResponse(SdkResponse):
 
     @property
     def resp(self):
-        """Gets the resp of this UpdateDbUserCommentResponse.
+        r"""Gets the resp of this UpdateDbUserCommentResponse.
 
         操作结果。
 
@@ -55,7 +55,7 @@ class UpdateDbUserCommentResponse(SdkResponse):
 
     @resp.setter
     def resp(self, resp):
-        """Sets the resp of this UpdateDbUserCommentResponse.
+        r"""Sets the resp of this UpdateDbUserCommentResponse.
 
         操作结果。
 

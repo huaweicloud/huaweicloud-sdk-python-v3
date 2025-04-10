@@ -28,7 +28,7 @@ class ShowClusterConfigResponse(SdkResponse):
     }
 
     def __init__(self, ttl_in_days=None, log_configs=None):
-        """ShowClusterConfigResponse
+        r"""ShowClusterConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowClusterConfigResponse(SdkResponse):
 
     @property
     def ttl_in_days(self):
-        """Gets the ttl_in_days of this ShowClusterConfigResponse.
+        r"""Gets the ttl_in_days of this ShowClusterConfigResponse.
 
         存储时长
 
@@ -62,7 +62,7 @@ class ShowClusterConfigResponse(SdkResponse):
 
     @ttl_in_days.setter
     def ttl_in_days(self, ttl_in_days):
-        """Sets the ttl_in_days of this ShowClusterConfigResponse.
+        r"""Sets the ttl_in_days of this ShowClusterConfigResponse.
 
         存储时长
 
@@ -73,7 +73,7 @@ class ShowClusterConfigResponse(SdkResponse):
 
     @property
     def log_configs(self):
-        """Gets the log_configs of this ShowClusterConfigResponse.
+        r"""Gets the log_configs of this ShowClusterConfigResponse.
 
         日志配置项
 
@@ -84,7 +84,7 @@ class ShowClusterConfigResponse(SdkResponse):
 
     @log_configs.setter
     def log_configs(self, log_configs):
-        """Sets the log_configs of this ShowClusterConfigResponse.
+        r"""Sets the log_configs of this ShowClusterConfigResponse.
 
         日志配置项
 

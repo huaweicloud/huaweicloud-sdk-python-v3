@@ -36,7 +36,7 @@ class CreateNotificationTemplateResponse(SdkResponse):
     }
 
     def __init__(self, name=None, type=None, desc=None, source=None, locale=None, templates=None):
-        """CreateNotificationTemplateResponse
+        r"""CreateNotificationTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class CreateNotificationTemplateResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateNotificationTemplateResponse.
+        r"""Gets the name of this CreateNotificationTemplateResponse.
 
         通知规则名称，必填，只含有汉字、数字、字母、下划线、中划线，不能以下划线等特殊符号开头和结尾，长度为 1 - 100，创建后不可修改
 
@@ -90,7 +90,7 @@ class CreateNotificationTemplateResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateNotificationTemplateResponse.
+        r"""Sets the name of this CreateNotificationTemplateResponse.
 
         通知规则名称，必填，只含有汉字、数字、字母、下划线、中划线，不能以下划线等特殊符号开头和结尾，长度为 1 - 100，创建后不可修改
 
@@ -101,7 +101,7 @@ class CreateNotificationTemplateResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this CreateNotificationTemplateResponse.
+        r"""Gets the type of this CreateNotificationTemplateResponse.
 
         保留字段，非必填，只支持sms（短信），dingding（钉钉），wechat（企业微信），email（邮件）和webhook（网络钩子）
 
@@ -112,7 +112,7 @@ class CreateNotificationTemplateResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateNotificationTemplateResponse.
+        r"""Sets the type of this CreateNotificationTemplateResponse.
 
         保留字段，非必填，只支持sms（短信），dingding（钉钉），wechat（企业微信），email（邮件）和webhook（网络钩子）
 
@@ -123,7 +123,7 @@ class CreateNotificationTemplateResponse(SdkResponse):
 
     @property
     def desc(self):
-        """Gets the desc of this CreateNotificationTemplateResponse.
+        r"""Gets the desc of this CreateNotificationTemplateResponse.
 
         模板描述，必填，只含有汉字、数字、字母、下划线不能以下划线开头和结尾，长度为0--1024
 
@@ -134,7 +134,7 @@ class CreateNotificationTemplateResponse(SdkResponse):
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this CreateNotificationTemplateResponse.
+        r"""Sets the desc of this CreateNotificationTemplateResponse.
 
         模板描述，必填，只含有汉字、数字、字母、下划线不能以下划线开头和结尾，长度为0--1024
 
@@ -145,7 +145,7 @@ class CreateNotificationTemplateResponse(SdkResponse):
 
     @property
     def source(self):
-        """Gets the source of this CreateNotificationTemplateResponse.
+        r"""Gets the source of this CreateNotificationTemplateResponse.
 
         模板来源，目前必填为LTS，否则会筛选不出来
 
@@ -156,7 +156,7 @@ class CreateNotificationTemplateResponse(SdkResponse):
 
     @source.setter
     def source(self, source):
-        """Sets the source of this CreateNotificationTemplateResponse.
+        r"""Sets the source of this CreateNotificationTemplateResponse.
 
         模板来源，目前必填为LTS，否则会筛选不出来
 
@@ -167,7 +167,7 @@ class CreateNotificationTemplateResponse(SdkResponse):
 
     @property
     def locale(self):
-        """Gets the locale of this CreateNotificationTemplateResponse.
+        r"""Gets the locale of this CreateNotificationTemplateResponse.
 
         语言，必填，目前可填zh-cn和en-us
 
@@ -178,7 +178,7 @@ class CreateNotificationTemplateResponse(SdkResponse):
 
     @locale.setter
     def locale(self, locale):
-        """Sets the locale of this CreateNotificationTemplateResponse.
+        r"""Sets the locale of this CreateNotificationTemplateResponse.
 
         语言，必填，目前可填zh-cn和en-us
 
@@ -189,7 +189,7 @@ class CreateNotificationTemplateResponse(SdkResponse):
 
     @property
     def templates(self):
-        """Gets the templates of this CreateNotificationTemplateResponse.
+        r"""Gets the templates of this CreateNotificationTemplateResponse.
 
         模板正文，为一个数组
 
@@ -200,7 +200,7 @@ class CreateNotificationTemplateResponse(SdkResponse):
 
     @templates.setter
     def templates(self, templates):
-        """Sets the templates of this CreateNotificationTemplateResponse.
+        r"""Sets the templates of this CreateNotificationTemplateResponse.
 
         模板正文，为一个数组
 

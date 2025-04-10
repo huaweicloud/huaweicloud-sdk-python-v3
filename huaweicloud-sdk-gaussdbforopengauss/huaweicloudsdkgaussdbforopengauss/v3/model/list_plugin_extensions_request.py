@@ -29,7 +29,7 @@ class ListPluginExtensionsRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """ListPluginExtensionsRequest
+        r"""ListPluginExtensionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListPluginExtensionsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListPluginExtensionsRequest.
+        r"""Gets the x_language of this ListPluginExtensionsRequest.
 
         语言。
 
@@ -67,7 +67,7 @@ class ListPluginExtensionsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListPluginExtensionsRequest.
+        r"""Sets the x_language of this ListPluginExtensionsRequest.
 
         语言。
 
@@ -78,7 +78,7 @@ class ListPluginExtensionsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListPluginExtensionsRequest.
+        r"""Gets the instance_id of this ListPluginExtensionsRequest.
 
         查询实例插件拓展信息的实例ID
 
@@ -89,7 +89,7 @@ class ListPluginExtensionsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListPluginExtensionsRequest.
+        r"""Sets the instance_id of this ListPluginExtensionsRequest.
 
         查询实例插件拓展信息的实例ID
 
@@ -100,7 +100,7 @@ class ListPluginExtensionsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListPluginExtensionsRequest.
+        r"""Gets the body of this ListPluginExtensionsRequest.
 
         :return: The body of this ListPluginExtensionsRequest.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListPluginExtensionsRequestBody`
@@ -109,7 +109,7 @@ class ListPluginExtensionsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListPluginExtensionsRequest.
+        r"""Sets the body of this ListPluginExtensionsRequest.
 
         :param body: The body of this ListPluginExtensionsRequest.
         :type body: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListPluginExtensionsRequestBody`

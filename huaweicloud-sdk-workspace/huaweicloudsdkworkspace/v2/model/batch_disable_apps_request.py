@@ -25,7 +25,7 @@ class BatchDisableAppsRequest:
     }
 
     def __init__(self, body=None):
-        """BatchDisableAppsRequest
+        r"""BatchDisableAppsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDisableAppsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDisableAppsRequest.
+        r"""Gets the body of this BatchDisableAppsRequest.
 
         :return: The body of this BatchDisableAppsRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.BatchOperateAppsReq`
@@ -52,7 +52,7 @@ class BatchDisableAppsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDisableAppsRequest.
+        r"""Sets the body of this BatchDisableAppsRequest.
 
         :param body: The body of this BatchDisableAppsRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.BatchOperateAppsReq`

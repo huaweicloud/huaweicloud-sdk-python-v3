@@ -29,7 +29,7 @@ class ListAccessInfosRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None):
-        """ListAccessInfosRequest
+        r"""ListAccessInfosRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ListAccessInfosRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListAccessInfosRequest.
+        r"""Gets the instance_id of this ListAccessInfosRequest.
 
         LakeFormation实例ID
 
@@ -66,7 +66,7 @@ class ListAccessInfosRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListAccessInfosRequest.
+        r"""Sets the instance_id of this ListAccessInfosRequest.
 
         LakeFormation实例ID
 
@@ -77,7 +77,7 @@ class ListAccessInfosRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAccessInfosRequest.
+        r"""Gets the offset of this ListAccessInfosRequest.
 
         分页查询时的偏移量
 
@@ -88,7 +88,7 @@ class ListAccessInfosRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAccessInfosRequest.
+        r"""Sets the offset of this ListAccessInfosRequest.
 
         分页查询时的偏移量
 
@@ -99,7 +99,7 @@ class ListAccessInfosRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAccessInfosRequest.
+        r"""Gets the limit of this ListAccessInfosRequest.
 
         分页一页显示数
 
@@ -110,7 +110,7 @@ class ListAccessInfosRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAccessInfosRequest.
+        r"""Sets the limit of this ListAccessInfosRequest.
 
         分页一页显示数
 

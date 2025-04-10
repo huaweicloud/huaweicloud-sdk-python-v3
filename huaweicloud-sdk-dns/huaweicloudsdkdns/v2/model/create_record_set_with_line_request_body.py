@@ -43,7 +43,7 @@ class CreateRecordSetWithLineRequestBody:
     }
 
     def __init__(self, name=None, description=None, type=None, status=None, ttl=None, records=None, line=None, tags=None, weight=None, alias_target=None):
-        """CreateRecordSetWithLineRequestBody
+        r"""CreateRecordSetWithLineRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -104,7 +104,7 @@ class CreateRecordSetWithLineRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateRecordSetWithLineRequestBody.
+        r"""Gets the name of this CreateRecordSetWithLineRequestBody.
 
         域名，后缀需以zone name结束且为FQDN（即以“.”号结束的完整主机名）。
 
@@ -115,7 +115,7 @@ class CreateRecordSetWithLineRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateRecordSetWithLineRequestBody.
+        r"""Sets the name of this CreateRecordSetWithLineRequestBody.
 
         域名，后缀需以zone name结束且为FQDN（即以“.”号结束的完整主机名）。
 
@@ -126,7 +126,7 @@ class CreateRecordSetWithLineRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateRecordSetWithLineRequestBody.
+        r"""Gets the description of this CreateRecordSetWithLineRequestBody.
 
         可选配置，对域名的描述。
 
@@ -137,7 +137,7 @@ class CreateRecordSetWithLineRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateRecordSetWithLineRequestBody.
+        r"""Sets the description of this CreateRecordSetWithLineRequestBody.
 
         可选配置，对域名的描述。
 
@@ -148,7 +148,7 @@ class CreateRecordSetWithLineRequestBody:
 
     @property
     def type(self):
-        """Gets the type of this CreateRecordSetWithLineRequestBody.
+        r"""Gets the type of this CreateRecordSetWithLineRequestBody.
 
         Record Set的类型。
 
@@ -159,7 +159,7 @@ class CreateRecordSetWithLineRequestBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateRecordSetWithLineRequestBody.
+        r"""Sets the type of this CreateRecordSetWithLineRequestBody.
 
         Record Set的类型。
 
@@ -170,7 +170,7 @@ class CreateRecordSetWithLineRequestBody:
 
     @property
     def status(self):
-        """Gets the status of this CreateRecordSetWithLineRequestBody.
+        r"""Gets the status of this CreateRecordSetWithLineRequestBody.
 
         解析记录的状态。 取值范围： ENABLE：启用 DISABLE：暂停 默认值为ENABLE。
 
@@ -181,7 +181,7 @@ class CreateRecordSetWithLineRequestBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateRecordSetWithLineRequestBody.
+        r"""Sets the status of this CreateRecordSetWithLineRequestBody.
 
         解析记录的状态。 取值范围： ENABLE：启用 DISABLE：暂停 默认值为ENABLE。
 
@@ -192,7 +192,7 @@ class CreateRecordSetWithLineRequestBody:
 
     @property
     def ttl(self):
-        """Gets the ttl of this CreateRecordSetWithLineRequestBody.
+        r"""Gets the ttl of this CreateRecordSetWithLineRequestBody.
 
         解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
 
@@ -203,7 +203,7 @@ class CreateRecordSetWithLineRequestBody:
 
     @ttl.setter
     def ttl(self, ttl):
-        """Sets the ttl of this CreateRecordSetWithLineRequestBody.
+        r"""Sets the ttl of this CreateRecordSetWithLineRequestBody.
 
         解析记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。
 
@@ -214,7 +214,7 @@ class CreateRecordSetWithLineRequestBody:
 
     @property
     def records(self):
-        """Gets the records of this CreateRecordSetWithLineRequestBody.
+        r"""Gets the records of this CreateRecordSetWithLineRequestBody.
 
         解析记录的值。不同类型解析记录对应的值的规则不同。
 
@@ -225,7 +225,7 @@ class CreateRecordSetWithLineRequestBody:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this CreateRecordSetWithLineRequestBody.
+        r"""Sets the records of this CreateRecordSetWithLineRequestBody.
 
         解析记录的值。不同类型解析记录对应的值的规则不同。
 
@@ -236,7 +236,7 @@ class CreateRecordSetWithLineRequestBody:
 
     @property
     def line(self):
-        """Gets the line of this CreateRecordSetWithLineRequestBody.
+        r"""Gets the line of this CreateRecordSetWithLineRequestBody.
 
         解析线路ID
 
@@ -247,7 +247,7 @@ class CreateRecordSetWithLineRequestBody:
 
     @line.setter
     def line(self, line):
-        """Sets the line of this CreateRecordSetWithLineRequestBody.
+        r"""Sets the line of this CreateRecordSetWithLineRequestBody.
 
         解析线路ID
 
@@ -258,7 +258,7 @@ class CreateRecordSetWithLineRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateRecordSetWithLineRequestBody.
+        r"""Gets the tags of this CreateRecordSetWithLineRequestBody.
 
          资源标签
 
@@ -269,7 +269,7 @@ class CreateRecordSetWithLineRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateRecordSetWithLineRequestBody.
+        r"""Sets the tags of this CreateRecordSetWithLineRequestBody.
 
          资源标签
 
@@ -280,7 +280,7 @@ class CreateRecordSetWithLineRequestBody:
 
     @property
     def weight(self):
-        """Gets the weight of this CreateRecordSetWithLineRequestBody.
+        r"""Gets the weight of this CreateRecordSetWithLineRequestBody.
 
         解析记录的权重。
 
@@ -291,7 +291,7 @@ class CreateRecordSetWithLineRequestBody:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this CreateRecordSetWithLineRequestBody.
+        r"""Sets the weight of this CreateRecordSetWithLineRequestBody.
 
         解析记录的权重。
 
@@ -302,7 +302,7 @@ class CreateRecordSetWithLineRequestBody:
 
     @property
     def alias_target(self):
-        """Gets the alias_target of this CreateRecordSetWithLineRequestBody.
+        r"""Gets the alias_target of this CreateRecordSetWithLineRequestBody.
 
         :return: The alias_target of this CreateRecordSetWithLineRequestBody.
         :rtype: :class:`huaweicloudsdkdns.v2.AliasTarget`
@@ -311,7 +311,7 @@ class CreateRecordSetWithLineRequestBody:
 
     @alias_target.setter
     def alias_target(self, alias_target):
-        """Sets the alias_target of this CreateRecordSetWithLineRequestBody.
+        r"""Sets the alias_target of this CreateRecordSetWithLineRequestBody.
 
         :param alias_target: The alias_target of this CreateRecordSetWithLineRequestBody.
         :type alias_target: :class:`huaweicloudsdkdns.v2.AliasTarget`

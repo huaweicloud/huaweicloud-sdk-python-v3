@@ -29,7 +29,7 @@ class CreateBindingBody:
     }
 
     def __init__(self, destination=None, routing_key=None, destination_type=None):
-        """CreateBindingBody
+        r"""CreateBindingBody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CreateBindingBody:
 
     @property
     def destination(self):
-        """Gets the destination of this CreateBindingBody.
+        r"""Gets the destination of this CreateBindingBody.
 
         要投递的Exchange或Queue名称
 
@@ -65,7 +65,7 @@ class CreateBindingBody:
 
     @destination.setter
     def destination(self, destination):
-        """Sets the destination of this CreateBindingBody.
+        r"""Sets the destination of this CreateBindingBody.
 
         要投递的Exchange或Queue名称
 
@@ -76,7 +76,7 @@ class CreateBindingBody:
 
     @property
     def routing_key(self):
-        """Gets the routing_key of this CreateBindingBody.
+        r"""Gets the routing_key of this CreateBindingBody.
 
         绑定键值，用于告知Exchange应该将消息投递到哪些Queue或Exchange中
 
@@ -87,7 +87,7 @@ class CreateBindingBody:
 
     @routing_key.setter
     def routing_key(self, routing_key):
-        """Sets the routing_key of this CreateBindingBody.
+        r"""Sets the routing_key of this CreateBindingBody.
 
         绑定键值，用于告知Exchange应该将消息投递到哪些Queue或Exchange中
 
@@ -98,7 +98,7 @@ class CreateBindingBody:
 
     @property
     def destination_type(self):
-        """Gets the destination_type of this CreateBindingBody.
+        r"""Gets the destination_type of this CreateBindingBody.
 
         绑定目标端类型，Exchange或Queue。[（AMQP版本只支持绑定Queue）](tag:hws,hws_hk)
 
@@ -109,7 +109,7 @@ class CreateBindingBody:
 
     @destination_type.setter
     def destination_type(self, destination_type):
-        """Sets the destination_type of this CreateBindingBody.
+        r"""Sets the destination_type of this CreateBindingBody.
 
         绑定目标端类型，Exchange或Queue。[（AMQP版本只支持绑定Queue）](tag:hws,hws_hk)
 

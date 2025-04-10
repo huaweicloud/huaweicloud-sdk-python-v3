@@ -29,7 +29,7 @@ class ChangeHostsGroupRequestInfo:
     }
 
     def __init__(self, group_name=None, group_id=None, host_id_list=None):
-        """ChangeHostsGroupRequestInfo
+        r"""ChangeHostsGroupRequestInfo
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ChangeHostsGroupRequestInfo:
 
     @property
     def group_name(self):
-        """Gets the group_name of this ChangeHostsGroupRequestInfo.
+        r"""Gets the group_name of this ChangeHostsGroupRequestInfo.
 
         服务器组名称
 
@@ -67,7 +67,7 @@ class ChangeHostsGroupRequestInfo:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this ChangeHostsGroupRequestInfo.
+        r"""Sets the group_name of this ChangeHostsGroupRequestInfo.
 
         服务器组名称
 
@@ -78,7 +78,7 @@ class ChangeHostsGroupRequestInfo:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ChangeHostsGroupRequestInfo.
+        r"""Gets the group_id of this ChangeHostsGroupRequestInfo.
 
         服务器组ID
 
@@ -89,7 +89,7 @@ class ChangeHostsGroupRequestInfo:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ChangeHostsGroupRequestInfo.
+        r"""Sets the group_id of this ChangeHostsGroupRequestInfo.
 
         服务器组ID
 
@@ -100,7 +100,7 @@ class ChangeHostsGroupRequestInfo:
 
     @property
     def host_id_list(self):
-        """Gets the host_id_list of this ChangeHostsGroupRequestInfo.
+        r"""Gets the host_id_list of this ChangeHostsGroupRequestInfo.
 
         服务器ID列表
 
@@ -111,7 +111,7 @@ class ChangeHostsGroupRequestInfo:
 
     @host_id_list.setter
     def host_id_list(self, host_id_list):
-        """Sets the host_id_list of this ChangeHostsGroupRequestInfo.
+        r"""Sets the host_id_list of this ChangeHostsGroupRequestInfo.
 
         服务器ID列表
 

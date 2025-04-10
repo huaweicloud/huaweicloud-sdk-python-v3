@@ -29,7 +29,7 @@ class ModifyOttChannelInfoRecordSettingsRequest:
     }
 
     def __init__(self, access_control_allow_internal=None, access_control_allow_external=None, body=None):
-        """ModifyOttChannelInfoRecordSettingsRequest
+        r"""ModifyOttChannelInfoRecordSettingsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ModifyOttChannelInfoRecordSettingsRequest:
 
     @property
     def access_control_allow_internal(self):
-        """Gets the access_control_allow_internal of this ModifyOttChannelInfoRecordSettingsRequest.
+        r"""Gets the access_control_allow_internal of this ModifyOttChannelInfoRecordSettingsRequest.
 
         服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-Internal访问服务。
 
@@ -68,7 +68,7 @@ class ModifyOttChannelInfoRecordSettingsRequest:
 
     @access_control_allow_internal.setter
     def access_control_allow_internal(self, access_control_allow_internal):
-        """Sets the access_control_allow_internal of this ModifyOttChannelInfoRecordSettingsRequest.
+        r"""Sets the access_control_allow_internal of this ModifyOttChannelInfoRecordSettingsRequest.
 
         服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-Internal访问服务。
 
@@ -79,7 +79,7 @@ class ModifyOttChannelInfoRecordSettingsRequest:
 
     @property
     def access_control_allow_external(self):
-        """Gets the access_control_allow_external of this ModifyOttChannelInfoRecordSettingsRequest.
+        r"""Gets the access_control_allow_external of this ModifyOttChannelInfoRecordSettingsRequest.
 
         服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-External访问服务。
 
@@ -90,7 +90,7 @@ class ModifyOttChannelInfoRecordSettingsRequest:
 
     @access_control_allow_external.setter
     def access_control_allow_external(self, access_control_allow_external):
-        """Sets the access_control_allow_external of this ModifyOttChannelInfoRecordSettingsRequest.
+        r"""Sets the access_control_allow_external of this ModifyOttChannelInfoRecordSettingsRequest.
 
         服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-External访问服务。
 
@@ -101,7 +101,7 @@ class ModifyOttChannelInfoRecordSettingsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ModifyOttChannelInfoRecordSettingsRequest.
+        r"""Gets the body of this ModifyOttChannelInfoRecordSettingsRequest.
 
         :return: The body of this ModifyOttChannelInfoRecordSettingsRequest.
         :rtype: :class:`huaweicloudsdklive.v1.ModifyOttChannelRecordSettings`
@@ -110,7 +110,7 @@ class ModifyOttChannelInfoRecordSettingsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ModifyOttChannelInfoRecordSettingsRequest.
+        r"""Sets the body of this ModifyOttChannelInfoRecordSettingsRequest.
 
         :param body: The body of this ModifyOttChannelInfoRecordSettingsRequest.
         :type body: :class:`huaweicloudsdklive.v1.ModifyOttChannelRecordSettings`

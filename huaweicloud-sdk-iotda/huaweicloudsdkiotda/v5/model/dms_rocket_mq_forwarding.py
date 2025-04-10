@@ -34,7 +34,7 @@ class DmsRocketMQForwarding:
     }
 
     def __init__(self, addresses=None, topic=None, username=None, password=None, enable_ssl=None):
-        """DmsRocketMQForwarding
+        r"""DmsRocketMQForwarding
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class DmsRocketMQForwarding:
 
     @property
     def addresses(self):
-        """Gets the addresses of this DmsRocketMQForwarding.
+        r"""Gets the addresses of this DmsRocketMQForwarding.
 
         **参数说明**：转发rocketMQ消息对应的地址列表
 
@@ -79,7 +79,7 @@ class DmsRocketMQForwarding:
 
     @addresses.setter
     def addresses(self, addresses):
-        """Sets the addresses of this DmsRocketMQForwarding.
+        r"""Sets the addresses of this DmsRocketMQForwarding.
 
         **参数说明**：转发rocketMQ消息对应的地址列表
 
@@ -90,7 +90,7 @@ class DmsRocketMQForwarding:
 
     @property
     def topic(self):
-        """Gets the topic of this DmsRocketMQForwarding.
+        r"""Gets the topic of this DmsRocketMQForwarding.
 
         **参数说明**：转发rocketMQ消息关联的topic信息。
 
@@ -101,7 +101,7 @@ class DmsRocketMQForwarding:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this DmsRocketMQForwarding.
+        r"""Sets the topic of this DmsRocketMQForwarding.
 
         **参数说明**：转发rocketMQ消息关联的topic信息。
 
@@ -112,7 +112,7 @@ class DmsRocketMQForwarding:
 
     @property
     def username(self):
-        """Gets the username of this DmsRocketMQForwarding.
+        r"""Gets the username of this DmsRocketMQForwarding.
 
         **参数说明**：转发rocketMQ关联的用户名信息。
 
@@ -123,7 +123,7 @@ class DmsRocketMQForwarding:
 
     @username.setter
     def username(self, username):
-        """Sets the username of this DmsRocketMQForwarding.
+        r"""Sets the username of this DmsRocketMQForwarding.
 
         **参数说明**：转发rocketMQ关联的用户名信息。
 
@@ -134,7 +134,7 @@ class DmsRocketMQForwarding:
 
     @property
     def password(self):
-        """Gets the password of this DmsRocketMQForwarding.
+        r"""Gets the password of this DmsRocketMQForwarding.
 
         **参数说明**：转发rocketMQ关联的密码信息。
 
@@ -145,7 +145,7 @@ class DmsRocketMQForwarding:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this DmsRocketMQForwarding.
+        r"""Sets the password of this DmsRocketMQForwarding.
 
         **参数说明**：转发rocketMQ关联的密码信息。
 
@@ -156,7 +156,7 @@ class DmsRocketMQForwarding:
 
     @property
     def enable_ssl(self):
-        """Gets the enable_ssl of this DmsRocketMQForwarding.
+        r"""Gets the enable_ssl of this DmsRocketMQForwarding.
 
         是否开启SSL，默认为true。
 
@@ -167,7 +167,7 @@ class DmsRocketMQForwarding:
 
     @enable_ssl.setter
     def enable_ssl(self, enable_ssl):
-        """Sets the enable_ssl of this DmsRocketMQForwarding.
+        r"""Sets the enable_ssl of this DmsRocketMQForwarding.
 
         是否开启SSL，默认为true。
 

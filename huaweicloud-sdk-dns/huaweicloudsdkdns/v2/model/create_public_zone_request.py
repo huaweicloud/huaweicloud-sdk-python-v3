@@ -25,7 +25,7 @@ class CreatePublicZoneRequest:
     }
 
     def __init__(self, body=None):
-        """CreatePublicZoneRequest
+        r"""CreatePublicZoneRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreatePublicZoneRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePublicZoneRequest.
+        r"""Gets the body of this CreatePublicZoneRequest.
 
         :return: The body of this CreatePublicZoneRequest.
         :rtype: :class:`huaweicloudsdkdns.v2.CreatePublicZoneReq`
@@ -52,7 +52,7 @@ class CreatePublicZoneRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePublicZoneRequest.
+        r"""Sets the body of this CreatePublicZoneRequest.
 
         :param body: The body of this CreatePublicZoneRequest.
         :type body: :class:`huaweicloudsdkdns.v2.CreatePublicZoneReq`

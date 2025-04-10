@@ -33,7 +33,7 @@ class RingHost:
     }
 
     def __init__(self, host_name=None, back_ip=None, cpu_cores=None, memory=None, disk_size=None):
-        """RingHost
+        r"""RingHost
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class RingHost:
 
     @property
     def host_name(self):
-        """Gets the host_name of this RingHost.
+        r"""Gets the host_name of this RingHost.
 
         主机名称
 
@@ -77,7 +77,7 @@ class RingHost:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this RingHost.
+        r"""Sets the host_name of this RingHost.
 
         主机名称
 
@@ -88,7 +88,7 @@ class RingHost:
 
     @property
     def back_ip(self):
-        """Gets the back_ip of this RingHost.
+        r"""Gets the back_ip of this RingHost.
 
         后端IP地址
 
@@ -99,7 +99,7 @@ class RingHost:
 
     @back_ip.setter
     def back_ip(self, back_ip):
-        """Sets the back_ip of this RingHost.
+        r"""Sets the back_ip of this RingHost.
 
         后端IP地址
 
@@ -110,7 +110,7 @@ class RingHost:
 
     @property
     def cpu_cores(self):
-        """Gets the cpu_cores of this RingHost.
+        r"""Gets the cpu_cores of this RingHost.
 
         主机CPU核数
 
@@ -121,7 +121,7 @@ class RingHost:
 
     @cpu_cores.setter
     def cpu_cores(self, cpu_cores):
-        """Sets the cpu_cores of this RingHost.
+        r"""Sets the cpu_cores of this RingHost.
 
         主机CPU核数
 
@@ -132,7 +132,7 @@ class RingHost:
 
     @property
     def memory(self):
-        """Gets the memory of this RingHost.
+        r"""Gets the memory of this RingHost.
 
         主机内存
 
@@ -143,7 +143,7 @@ class RingHost:
 
     @memory.setter
     def memory(self, memory):
-        """Sets the memory of this RingHost.
+        r"""Sets the memory of this RingHost.
 
         主机内存
 
@@ -154,7 +154,7 @@ class RingHost:
 
     @property
     def disk_size(self):
-        """Gets the disk_size of this RingHost.
+        r"""Gets the disk_size of this RingHost.
 
         主机磁盘大小
 
@@ -165,7 +165,7 @@ class RingHost:
 
     @disk_size.setter
     def disk_size(self, disk_size):
-        """Sets the disk_size of this RingHost.
+        r"""Sets the disk_size of this RingHost.
 
         主机磁盘大小
 

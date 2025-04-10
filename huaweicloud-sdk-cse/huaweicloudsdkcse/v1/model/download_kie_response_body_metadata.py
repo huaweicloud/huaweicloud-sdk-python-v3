@@ -27,7 +27,7 @@ class DownloadKieResponseBodyMetadata:
     }
 
     def __init__(self, version=None, annotations=None):
-        """DownloadKieResponseBodyMetadata
+        r"""DownloadKieResponseBodyMetadata
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DownloadKieResponseBodyMetadata:
 
     @property
     def version(self):
-        """Gets the version of this DownloadKieResponseBodyMetadata.
+        r"""Gets the version of this DownloadKieResponseBodyMetadata.
 
         版本号
 
@@ -61,7 +61,7 @@ class DownloadKieResponseBodyMetadata:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this DownloadKieResponseBodyMetadata.
+        r"""Sets the version of this DownloadKieResponseBodyMetadata.
 
         版本号
 
@@ -72,7 +72,7 @@ class DownloadKieResponseBodyMetadata:
 
     @property
     def annotations(self):
-        """Gets the annotations of this DownloadKieResponseBodyMetadata.
+        r"""Gets the annotations of this DownloadKieResponseBodyMetadata.
 
         导出文件的其他信息
 
@@ -83,7 +83,7 @@ class DownloadKieResponseBodyMetadata:
 
     @annotations.setter
     def annotations(self, annotations):
-        """Sets the annotations of this DownloadKieResponseBodyMetadata.
+        r"""Sets the annotations of this DownloadKieResponseBodyMetadata.
 
         导出文件的其他信息
 

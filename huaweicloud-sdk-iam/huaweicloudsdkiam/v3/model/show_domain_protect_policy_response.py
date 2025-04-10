@@ -26,7 +26,7 @@ class ShowDomainProtectPolicyResponse(SdkResponse):
     }
 
     def __init__(self, protect_policy=None):
-        """ShowDomainProtectPolicyResponse
+        r"""ShowDomainProtectPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowDomainProtectPolicyResponse(SdkResponse):
 
     @property
     def protect_policy(self):
-        """Gets the protect_policy of this ShowDomainProtectPolicyResponse.
+        r"""Gets the protect_policy of this ShowDomainProtectPolicyResponse.
 
         :return: The protect_policy of this ShowDomainProtectPolicyResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.ShowDomainProtectPolicyResponseBodyProtectPolicy`
@@ -53,7 +53,7 @@ class ShowDomainProtectPolicyResponse(SdkResponse):
 
     @protect_policy.setter
     def protect_policy(self, protect_policy):
-        """Sets the protect_policy of this ShowDomainProtectPolicyResponse.
+        r"""Sets the protect_policy of this ShowDomainProtectPolicyResponse.
 
         :param protect_policy: The protect_policy of this ShowDomainProtectPolicyResponse.
         :type protect_policy: :class:`huaweicloudsdkiam.v3.ShowDomainProtectPolicyResponseBodyProtectPolicy`

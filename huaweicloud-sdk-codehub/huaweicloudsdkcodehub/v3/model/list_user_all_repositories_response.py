@@ -30,7 +30,7 @@ class ListUserAllRepositoriesResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """ListUserAllRepositoriesResponse
+        r"""ListUserAllRepositoriesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListUserAllRepositoriesResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ListUserAllRepositoriesResponse.
+        r"""Gets the error of this ListUserAllRepositoriesResponse.
 
         :return: The error of this ListUserAllRepositoriesResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class ListUserAllRepositoriesResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ListUserAllRepositoriesResponse.
+        r"""Sets the error of this ListUserAllRepositoriesResponse.
 
         :param error: The error of this ListUserAllRepositoriesResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class ListUserAllRepositoriesResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListUserAllRepositoriesResponse.
+        r"""Gets the result of this ListUserAllRepositoriesResponse.
 
         :return: The result of this ListUserAllRepositoriesResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.RepoListInfoV2`
@@ -85,7 +85,7 @@ class ListUserAllRepositoriesResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListUserAllRepositoriesResponse.
+        r"""Sets the result of this ListUserAllRepositoriesResponse.
 
         :param result: The result of this ListUserAllRepositoriesResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.RepoListInfoV2`
@@ -94,7 +94,7 @@ class ListUserAllRepositoriesResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListUserAllRepositoriesResponse.
+        r"""Gets the status of this ListUserAllRepositoriesResponse.
 
         响应状态
 
@@ -105,7 +105,7 @@ class ListUserAllRepositoriesResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListUserAllRepositoriesResponse.
+        r"""Sets the status of this ListUserAllRepositoriesResponse.
 
         响应状态
 

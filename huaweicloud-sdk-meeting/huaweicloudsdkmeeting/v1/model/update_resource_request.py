@@ -31,7 +31,7 @@ class UpdateResourceRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, corp_id=None, body=None):
-        """UpdateResourceRequest
+        r"""UpdateResourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class UpdateResourceRequest:
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdateResourceRequest.
+        r"""Gets the x_request_id of this UpdateResourceRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -74,7 +74,7 @@ class UpdateResourceRequest:
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdateResourceRequest.
+        r"""Sets the x_request_id of this UpdateResourceRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -85,7 +85,7 @@ class UpdateResourceRequest:
 
     @property
     def accept_language(self):
-        """Gets the accept_language of this UpdateResourceRequest.
+        r"""Gets the accept_language of this UpdateResourceRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -96,7 +96,7 @@ class UpdateResourceRequest:
 
     @accept_language.setter
     def accept_language(self, accept_language):
-        """Sets the accept_language of this UpdateResourceRequest.
+        r"""Sets the accept_language of this UpdateResourceRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -107,7 +107,7 @@ class UpdateResourceRequest:
 
     @property
     def corp_id(self):
-        """Gets the corp_id of this UpdateResourceRequest.
+        r"""Gets the corp_id of this UpdateResourceRequest.
 
         企业id。
 
@@ -118,7 +118,7 @@ class UpdateResourceRequest:
 
     @corp_id.setter
     def corp_id(self, corp_id):
-        """Sets the corp_id of this UpdateResourceRequest.
+        r"""Sets the corp_id of this UpdateResourceRequest.
 
         企业id。
 
@@ -129,7 +129,7 @@ class UpdateResourceRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateResourceRequest.
+        r"""Gets the body of this UpdateResourceRequest.
 
         :return: The body of this UpdateResourceRequest.
         :rtype: list[:class:`huaweicloudsdkmeeting.v1.ModResourceDTO`]
@@ -138,7 +138,7 @@ class UpdateResourceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateResourceRequest.
+        r"""Sets the body of this UpdateResourceRequest.
 
         :param body: The body of this UpdateResourceRequest.
         :type body: list[:class:`huaweicloudsdkmeeting.v1.ModResourceDTO`]

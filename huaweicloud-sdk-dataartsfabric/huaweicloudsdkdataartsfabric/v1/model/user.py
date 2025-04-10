@@ -31,7 +31,7 @@ class User:
     }
 
     def __init__(self, domain_name=None, domain_id=None, user_name=None, user_id=None):
-        """User
+        r"""User
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class User:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this User.
+        r"""Gets the domain_name of this User.
 
         账户名称
 
@@ -75,7 +75,7 @@ class User:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this User.
+        r"""Sets the domain_name of this User.
 
         账户名称
 
@@ -86,7 +86,7 @@ class User:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this User.
+        r"""Gets the domain_id of this User.
 
         账号ID
 
@@ -97,7 +97,7 @@ class User:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this User.
+        r"""Sets the domain_id of this User.
 
         账号ID
 
@@ -108,7 +108,7 @@ class User:
 
     @property
     def user_name(self):
-        """Gets the user_name of this User.
+        r"""Gets the user_name of this User.
 
         用户名称
 
@@ -119,7 +119,7 @@ class User:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this User.
+        r"""Sets the user_name of this User.
 
         用户名称
 
@@ -130,7 +130,7 @@ class User:
 
     @property
     def user_id(self):
-        """Gets the user_id of this User.
+        r"""Gets the user_id of this User.
 
         用户ID
 
@@ -141,7 +141,7 @@ class User:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this User.
+        r"""Sets the user_id of this User.
 
         用户ID
 

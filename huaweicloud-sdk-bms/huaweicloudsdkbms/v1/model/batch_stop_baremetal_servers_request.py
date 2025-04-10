@@ -25,7 +25,7 @@ class BatchStopBaremetalServersRequest:
     }
 
     def __init__(self, body=None):
-        """BatchStopBaremetalServersRequest
+        r"""BatchStopBaremetalServersRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchStopBaremetalServersRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchStopBaremetalServersRequest.
+        r"""Gets the body of this BatchStopBaremetalServersRequest.
 
         :return: The body of this BatchStopBaremetalServersRequest.
         :rtype: :class:`huaweicloudsdkbms.v1.OsStopBody`
@@ -52,7 +52,7 @@ class BatchStopBaremetalServersRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchStopBaremetalServersRequest.
+        r"""Sets the body of this BatchStopBaremetalServersRequest.
 
         :param body: The body of this BatchStopBaremetalServersRequest.
         :type body: :class:`huaweicloudsdkbms.v1.OsStopBody`

@@ -30,7 +30,7 @@ class ShowWorkflowExecutionForPageResponse(SdkResponse):
     }
 
     def __init__(self, total=None, size=None, executions=None):
-        """ShowWorkflowExecutionForPageResponse
+        r"""ShowWorkflowExecutionForPageResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowWorkflowExecutionForPageResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowWorkflowExecutionForPageResponse.
+        r"""Gets the total of this ShowWorkflowExecutionForPageResponse.
 
         返回所有满足条件的对象个数
 
@@ -69,7 +69,7 @@ class ShowWorkflowExecutionForPageResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowWorkflowExecutionForPageResponse.
+        r"""Sets the total of this ShowWorkflowExecutionForPageResponse.
 
         返回所有满足条件的对象个数
 
@@ -80,7 +80,7 @@ class ShowWorkflowExecutionForPageResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ShowWorkflowExecutionForPageResponse.
+        r"""Gets the size of this ShowWorkflowExecutionForPageResponse.
 
         返回对象的大小
 
@@ -91,7 +91,7 @@ class ShowWorkflowExecutionForPageResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ShowWorkflowExecutionForPageResponse.
+        r"""Sets the size of this ShowWorkflowExecutionForPageResponse.
 
         返回对象的大小
 
@@ -102,7 +102,7 @@ class ShowWorkflowExecutionForPageResponse(SdkResponse):
 
     @property
     def executions(self):
-        """Gets the executions of this ShowWorkflowExecutionForPageResponse.
+        r"""Gets the executions of this ShowWorkflowExecutionForPageResponse.
 
         函数流返回体信息
 
@@ -113,7 +113,7 @@ class ShowWorkflowExecutionForPageResponse(SdkResponse):
 
     @executions.setter
     def executions(self, executions):
-        """Sets the executions of this ShowWorkflowExecutionForPageResponse.
+        r"""Sets the executions of this ShowWorkflowExecutionForPageResponse.
 
         函数流返回体信息
 

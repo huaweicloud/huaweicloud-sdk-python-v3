@@ -28,7 +28,7 @@ class UpgradeClusterResponse(SdkResponse):
     }
 
     def __init__(self, metadata=None, spec=None):
-        """UpgradeClusterResponse
+        r"""UpgradeClusterResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpgradeClusterResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this UpgradeClusterResponse.
+        r"""Gets the metadata of this UpgradeClusterResponse.
 
         :return: The metadata of this UpgradeClusterResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.UpgradeCluserResponseMetadata`
@@ -60,7 +60,7 @@ class UpgradeClusterResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this UpgradeClusterResponse.
+        r"""Sets the metadata of this UpgradeClusterResponse.
 
         :param metadata: The metadata of this UpgradeClusterResponse.
         :type metadata: :class:`huaweicloudsdkcce.v3.UpgradeCluserResponseMetadata`
@@ -69,7 +69,7 @@ class UpgradeClusterResponse(SdkResponse):
 
     @property
     def spec(self):
-        """Gets the spec of this UpgradeClusterResponse.
+        r"""Gets the spec of this UpgradeClusterResponse.
 
         :return: The spec of this UpgradeClusterResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.UpgradeResponseSpec`
@@ -78,7 +78,7 @@ class UpgradeClusterResponse(SdkResponse):
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this UpgradeClusterResponse.
+        r"""Sets the spec of this UpgradeClusterResponse.
 
         :param spec: The spec of this UpgradeClusterResponse.
         :type spec: :class:`huaweicloudsdkcce.v3.UpgradeResponseSpec`

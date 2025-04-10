@@ -29,7 +29,7 @@ class ChannelInfoV2:
     }
 
     def __init__(self, name=None, org_names=None, description=None):
-        """ChannelInfoV2
+        r"""ChannelInfoV2
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ChannelInfoV2:
 
     @property
     def name(self):
-        """Gets the name of this ChannelInfoV2.
+        r"""Gets the name of this ChannelInfoV2.
 
         通道名
 
@@ -66,7 +66,7 @@ class ChannelInfoV2:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ChannelInfoV2.
+        r"""Sets the name of this ChannelInfoV2.
 
         通道名
 
@@ -77,7 +77,7 @@ class ChannelInfoV2:
 
     @property
     def org_names(self):
-        """Gets the org_names of this ChannelInfoV2.
+        r"""Gets the org_names of this ChannelInfoV2.
 
         通道中组织名
 
@@ -88,7 +88,7 @@ class ChannelInfoV2:
 
     @org_names.setter
     def org_names(self, org_names):
-        """Sets the org_names of this ChannelInfoV2.
+        r"""Sets the org_names of this ChannelInfoV2.
 
         通道中组织名
 
@@ -99,7 +99,7 @@ class ChannelInfoV2:
 
     @property
     def description(self):
-        """Gets the description of this ChannelInfoV2.
+        r"""Gets the description of this ChannelInfoV2.
 
         通道描述
 
@@ -110,7 +110,7 @@ class ChannelInfoV2:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ChannelInfoV2.
+        r"""Sets the description of this ChannelInfoV2.
 
         通道描述
 

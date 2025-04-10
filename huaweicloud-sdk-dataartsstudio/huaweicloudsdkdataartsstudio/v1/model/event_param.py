@@ -49,7 +49,7 @@ class EventParam:
     }
 
     def __init__(self, guid=None, type_name=None, model_id=None, property_name=None, property_value=None, query=None, filter=None, guid_list=None, trace_id=None, source_trace_id=None, metadata_type_name=None, super_type_names=None, workspace_ids=None):
-        """EventParam
+        r"""EventParam
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class EventParam:
 
     @property
     def guid(self):
-        """Gets the guid of this EventParam.
+        r"""Gets the guid of this EventParam.
 
         :return: The guid of this EventParam.
         :rtype: str
@@ -136,7 +136,7 @@ class EventParam:
 
     @guid.setter
     def guid(self, guid):
-        """Sets the guid of this EventParam.
+        r"""Sets the guid of this EventParam.
 
         :param guid: The guid of this EventParam.
         :type guid: str
@@ -145,7 +145,7 @@ class EventParam:
 
     @property
     def type_name(self):
-        """Gets the type_name of this EventParam.
+        r"""Gets the type_name of this EventParam.
 
         资产类型
 
@@ -156,7 +156,7 @@ class EventParam:
 
     @type_name.setter
     def type_name(self, type_name):
-        """Sets the type_name of this EventParam.
+        r"""Sets the type_name of this EventParam.
 
         资产类型
 
@@ -167,7 +167,7 @@ class EventParam:
 
     @property
     def model_id(self):
-        """Gets the model_id of this EventParam.
+        r"""Gets the model_id of this EventParam.
 
         :return: The model_id of this EventParam.
         :rtype: str
@@ -176,7 +176,7 @@ class EventParam:
 
     @model_id.setter
     def model_id(self, model_id):
-        """Sets the model_id of this EventParam.
+        r"""Sets the model_id of this EventParam.
 
         :param model_id: The model_id of this EventParam.
         :type model_id: str
@@ -185,7 +185,7 @@ class EventParam:
 
     @property
     def property_name(self):
-        """Gets the property_name of this EventParam.
+        r"""Gets the property_name of this EventParam.
 
         :return: The property_name of this EventParam.
         :rtype: str
@@ -194,7 +194,7 @@ class EventParam:
 
     @property_name.setter
     def property_name(self, property_name):
-        """Sets the property_name of this EventParam.
+        r"""Sets the property_name of this EventParam.
 
         :param property_name: The property_name of this EventParam.
         :type property_name: str
@@ -203,7 +203,7 @@ class EventParam:
 
     @property
     def property_value(self):
-        """Gets the property_value of this EventParam.
+        r"""Gets the property_value of this EventParam.
 
         :return: The property_value of this EventParam.
         :rtype: str
@@ -212,7 +212,7 @@ class EventParam:
 
     @property_value.setter
     def property_value(self, property_value):
-        """Sets the property_value of this EventParam.
+        r"""Sets the property_value of this EventParam.
 
         :param property_value: The property_value of this EventParam.
         :type property_value: str
@@ -221,7 +221,7 @@ class EventParam:
 
     @property
     def query(self):
-        """Gets the query of this EventParam.
+        r"""Gets the query of this EventParam.
 
         搜索框输入
 
@@ -232,7 +232,7 @@ class EventParam:
 
     @query.setter
     def query(self, query):
-        """Sets the query of this EventParam.
+        r"""Sets the query of this EventParam.
 
         搜索框输入
 
@@ -243,7 +243,7 @@ class EventParam:
 
     @property
     def filter(self):
-        """Gets the filter of this EventParam.
+        r"""Gets the filter of this EventParam.
 
         :return: The filter of this EventParam.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DataMapFilterCriteria`
@@ -252,7 +252,7 @@ class EventParam:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this EventParam.
+        r"""Sets the filter of this EventParam.
 
         :param filter: The filter of this EventParam.
         :type filter: :class:`huaweicloudsdkdataartsstudio.v1.DataMapFilterCriteria`
@@ -261,7 +261,7 @@ class EventParam:
 
     @property
     def guid_list(self):
-        """Gets the guid_list of this EventParam.
+        r"""Gets the guid_list of this EventParam.
 
         :return: The guid_list of this EventParam.
         :rtype: list[str]
@@ -270,7 +270,7 @@ class EventParam:
 
     @guid_list.setter
     def guid_list(self, guid_list):
-        """Sets the guid_list of this EventParam.
+        r"""Sets the guid_list of this EventParam.
 
         :param guid_list: The guid_list of this EventParam.
         :type guid_list: list[str]
@@ -279,7 +279,7 @@ class EventParam:
 
     @property
     def trace_id(self):
-        """Gets the trace_id of this EventParam.
+        r"""Gets the trace_id of this EventParam.
 
         :return: The trace_id of this EventParam.
         :rtype: str
@@ -288,7 +288,7 @@ class EventParam:
 
     @trace_id.setter
     def trace_id(self, trace_id):
-        """Sets the trace_id of this EventParam.
+        r"""Sets the trace_id of this EventParam.
 
         :param trace_id: The trace_id of this EventParam.
         :type trace_id: str
@@ -297,7 +297,7 @@ class EventParam:
 
     @property
     def source_trace_id(self):
-        """Gets the source_trace_id of this EventParam.
+        r"""Gets the source_trace_id of this EventParam.
 
         :return: The source_trace_id of this EventParam.
         :rtype: str
@@ -306,7 +306,7 @@ class EventParam:
 
     @source_trace_id.setter
     def source_trace_id(self, source_trace_id):
-        """Sets the source_trace_id of this EventParam.
+        r"""Sets the source_trace_id of this EventParam.
 
         :param source_trace_id: The source_trace_id of this EventParam.
         :type source_trace_id: str
@@ -315,7 +315,7 @@ class EventParam:
 
     @property
     def metadata_type_name(self):
-        """Gets the metadata_type_name of this EventParam.
+        r"""Gets the metadata_type_name of this EventParam.
 
         :return: The metadata_type_name of this EventParam.
         :rtype: str
@@ -324,7 +324,7 @@ class EventParam:
 
     @metadata_type_name.setter
     def metadata_type_name(self, metadata_type_name):
-        """Sets the metadata_type_name of this EventParam.
+        r"""Sets the metadata_type_name of this EventParam.
 
         :param metadata_type_name: The metadata_type_name of this EventParam.
         :type metadata_type_name: str
@@ -333,7 +333,7 @@ class EventParam:
 
     @property
     def super_type_names(self):
-        """Gets the super_type_names of this EventParam.
+        r"""Gets the super_type_names of this EventParam.
 
         :return: The super_type_names of this EventParam.
         :rtype: str
@@ -342,7 +342,7 @@ class EventParam:
 
     @super_type_names.setter
     def super_type_names(self, super_type_names):
-        """Sets the super_type_names of this EventParam.
+        r"""Sets the super_type_names of this EventParam.
 
         :param super_type_names: The super_type_names of this EventParam.
         :type super_type_names: str
@@ -351,7 +351,7 @@ class EventParam:
 
     @property
     def workspace_ids(self):
-        """Gets the workspace_ids of this EventParam.
+        r"""Gets the workspace_ids of this EventParam.
 
         :return: The workspace_ids of this EventParam.
         :rtype: list[str]
@@ -360,7 +360,7 @@ class EventParam:
 
     @workspace_ids.setter
     def workspace_ids(self, workspace_ids):
-        """Sets the workspace_ids of this EventParam.
+        r"""Sets the workspace_ids of this EventParam.
 
         :param workspace_ids: The workspace_ids of this EventParam.
         :type workspace_ids: list[str]

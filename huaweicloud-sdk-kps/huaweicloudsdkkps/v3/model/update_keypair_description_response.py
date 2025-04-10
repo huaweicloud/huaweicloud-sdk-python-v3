@@ -24,7 +24,7 @@ class UpdateKeypairDescriptionResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateKeypairDescriptionResponse
+        r"""UpdateKeypairDescriptionResponse
 
         The model defined in huaweicloud sdk
 

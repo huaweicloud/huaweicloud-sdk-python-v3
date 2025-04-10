@@ -27,7 +27,7 @@ class ErrorRsp:
     }
 
     def __init__(self, error_code=None, error_msg=None):
-        """ErrorRsp
+        r"""ErrorRsp
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ErrorRsp:
 
     @property
     def error_code(self):
-        """Gets the error_code of this ErrorRsp.
+        r"""Gets the error_code of this ErrorRsp.
 
         错误码。
 
@@ -59,7 +59,7 @@ class ErrorRsp:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ErrorRsp.
+        r"""Sets the error_code of this ErrorRsp.
 
         错误码。
 
@@ -70,7 +70,7 @@ class ErrorRsp:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ErrorRsp.
+        r"""Gets the error_msg of this ErrorRsp.
 
         错误描述。
 
@@ -81,7 +81,7 @@ class ErrorRsp:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ErrorRsp.
+        r"""Sets the error_msg of this ErrorRsp.
 
         错误描述。
 

@@ -25,7 +25,7 @@ class UpdateTriggerRequestBody:
     }
 
     def __init__(self, enable=None):
-        """UpdateTriggerRequestBody
+        r"""UpdateTriggerRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateTriggerRequestBody:
 
     @property
     def enable(self):
-        """Gets the enable of this UpdateTriggerRequestBody.
+        r"""Gets the enable of this UpdateTriggerRequestBody.
 
         是否生效,true启用，false不启用
 
@@ -53,7 +53,7 @@ class UpdateTriggerRequestBody:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this UpdateTriggerRequestBody.
+        r"""Sets the enable of this UpdateTriggerRequestBody.
 
         是否生效,true启用，false不启用
 

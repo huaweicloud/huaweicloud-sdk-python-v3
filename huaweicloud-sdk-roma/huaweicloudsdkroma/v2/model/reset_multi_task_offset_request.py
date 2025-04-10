@@ -29,7 +29,7 @@ class ResetMultiTaskOffsetRequest:
     }
 
     def __init__(self, instance_id=None, task_id=None, body=None):
-        """ResetMultiTaskOffsetRequest
+        r"""ResetMultiTaskOffsetRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ResetMultiTaskOffsetRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ResetMultiTaskOffsetRequest.
+        r"""Gets the instance_id of this ResetMultiTaskOffsetRequest.
 
         实例ID
 
@@ -66,7 +66,7 @@ class ResetMultiTaskOffsetRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ResetMultiTaskOffsetRequest.
+        r"""Sets the instance_id of this ResetMultiTaskOffsetRequest.
 
         实例ID
 
@@ -77,7 +77,7 @@ class ResetMultiTaskOffsetRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ResetMultiTaskOffsetRequest.
+        r"""Gets the task_id of this ResetMultiTaskOffsetRequest.
 
         任务ID
 
@@ -88,7 +88,7 @@ class ResetMultiTaskOffsetRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ResetMultiTaskOffsetRequest.
+        r"""Sets the task_id of this ResetMultiTaskOffsetRequest.
 
         任务ID
 
@@ -99,7 +99,7 @@ class ResetMultiTaskOffsetRequest:
 
     @property
     def body(self):
-        """Gets the body of this ResetMultiTaskOffsetRequest.
+        r"""Gets the body of this ResetMultiTaskOffsetRequest.
 
         :return: The body of this ResetMultiTaskOffsetRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.MultiTaskResetBody`
@@ -108,7 +108,7 @@ class ResetMultiTaskOffsetRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ResetMultiTaskOffsetRequest.
+        r"""Sets the body of this ResetMultiTaskOffsetRequest.
 
         :param body: The body of this ResetMultiTaskOffsetRequest.
         :type body: :class:`huaweicloudsdkroma.v2.MultiTaskResetBody`

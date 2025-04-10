@@ -28,7 +28,7 @@ class ShowGlobalConnectionBandwidthResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, globalconnection_bandwidth=None):
-        """ShowGlobalConnectionBandwidthResponse
+        r"""ShowGlobalConnectionBandwidthResponse
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowGlobalConnectionBandwidthResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowGlobalConnectionBandwidthResponse.
+        r"""Gets the request_id of this ShowGlobalConnectionBandwidthResponse.
 
         请求ID。
 
@@ -60,7 +60,7 @@ class ShowGlobalConnectionBandwidthResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowGlobalConnectionBandwidthResponse.
+        r"""Sets the request_id of this ShowGlobalConnectionBandwidthResponse.
 
         请求ID。
 
@@ -71,7 +71,7 @@ class ShowGlobalConnectionBandwidthResponse(SdkResponse):
 
     @property
     def globalconnection_bandwidth(self):
-        """Gets the globalconnection_bandwidth of this ShowGlobalConnectionBandwidthResponse.
+        r"""Gets the globalconnection_bandwidth of this ShowGlobalConnectionBandwidthResponse.
 
         :return: The globalconnection_bandwidth of this ShowGlobalConnectionBandwidthResponse.
         :rtype: :class:`huaweicloudsdkcc.v3.GlobalConnectionBandwidth`
@@ -80,7 +80,7 @@ class ShowGlobalConnectionBandwidthResponse(SdkResponse):
 
     @globalconnection_bandwidth.setter
     def globalconnection_bandwidth(self, globalconnection_bandwidth):
-        """Sets the globalconnection_bandwidth of this ShowGlobalConnectionBandwidthResponse.
+        r"""Sets the globalconnection_bandwidth of this ShowGlobalConnectionBandwidthResponse.
 
         :param globalconnection_bandwidth: The globalconnection_bandwidth of this ShowGlobalConnectionBandwidthResponse.
         :type globalconnection_bandwidth: :class:`huaweicloudsdkcc.v3.GlobalConnectionBandwidth`

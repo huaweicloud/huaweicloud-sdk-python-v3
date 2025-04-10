@@ -34,7 +34,7 @@ class NatClient(Client):
         return client_builder
 
     def batch_create_nat_gateway_dnat_rules(self, request):
-        """批量创建DNAT规则
+        r"""批量创建DNAT规则
 
         批量创建DNAT规则。
         
@@ -99,7 +99,7 @@ class NatClient(Client):
         return http_info
 
     def create_nat_gateway_dnat_rule(self, request):
-        """创建DNAT规则
+        r"""创建DNAT规则
 
         创建DNAT规则。
         
@@ -164,7 +164,7 @@ class NatClient(Client):
         return http_info
 
     def create_private_dnat(self, request):
-        """创建DNAT规则
+        r"""创建DNAT规则
 
         创建DNAT规则。
         
@@ -229,7 +229,7 @@ class NatClient(Client):
         return http_info
 
     def delete_nat_gateway_dnat_rule(self, request):
-        """删除DNAT规则
+        r"""删除DNAT规则
 
         删除指定的DNAT规则。
         
@@ -296,7 +296,7 @@ class NatClient(Client):
         return http_info
 
     def delete_private_dnat(self, request):
-        """删除DNAT规则
+        r"""删除DNAT规则
 
         删除指定的DNAT规则。
         
@@ -361,7 +361,7 @@ class NatClient(Client):
         return http_info
 
     def list_nat_gateway_dnat_rules(self, request):
-        """查询DNAT规则列表
+        r"""查询DNAT规则列表
 
         查询DNAT规则列表。
         
@@ -457,7 +457,7 @@ class NatClient(Client):
         return http_info
 
     def list_private_dnats(self, request):
-        """查询DNAT规则列表
+        r"""查询DNAT规则列表
 
         查询DNAT规则列表。
         
@@ -553,7 +553,7 @@ class NatClient(Client):
         return http_info
 
     def show_nat_gateway_dnat_rule(self, request):
-        """查询指定的DNAT规则详情
+        r"""查询指定的DNAT规则详情
 
         查询指定的DNAT规则详情。
         
@@ -618,7 +618,7 @@ class NatClient(Client):
         return http_info
 
     def show_private_dnat(self, request):
-        """查询指定的DNAT规则详情
+        r"""查询指定的DNAT规则详情
 
         查询指定的DNAT规则详情。
         
@@ -683,7 +683,7 @@ class NatClient(Client):
         return http_info
 
     def update_nat_gateway_dnat_rule(self, request):
-        """更新DNAT规则
+        r"""更新DNAT规则
 
         更新指定的DNAT规则。
         
@@ -750,7 +750,7 @@ class NatClient(Client):
         return http_info
 
     def update_private_dnat(self, request):
-        """更新DNAT规则
+        r"""更新DNAT规则
 
         更新指定的DNAT规则。
         
@@ -817,7 +817,7 @@ class NatClient(Client):
         return http_info
 
     def batch_create_delete_transit_ip_tags(self, request):
-        """批量添加删除中转IP标签
+        r"""批量添加删除中转IP标签
 
         - 为指定中转IP实例批量添加或删除标签
         - 标签管理服务需要使用该接口批量管理中转IP实例的标签。
@@ -886,7 +886,7 @@ class NatClient(Client):
         return http_info
 
     def create_transit_ip_tag(self, request):
-        """添加中转IP标签
+        r"""添加中转IP标签
 
         - 一个中转IP上最多有10个标签。
         - 此接口为幂等接口：
@@ -955,7 +955,7 @@ class NatClient(Client):
         return http_info
 
     def delete_transit_ip_tag(self, request):
-        """删除中转IP标签
+        r"""删除中转IP标签
 
         - 幂等接口：
         - 删除时，不对标签字符集做校验，调用接口前必须要做encodeURI，服务端需要对接口uri做decodeURI。删除的key不存在报404，key不能为空或者空字符串。
@@ -1023,7 +1023,7 @@ class NatClient(Client):
         return http_info
 
     def list_transit_ip_tags(self, request):
-        """查询中转IP项目标签
+        r"""查询中转IP项目标签
 
         - 查询租户在指定Project和实例类型的所有中转IP标签集合。
         - 标签管理服务需要能够列出当前租户全部已使用的中转IP标签集合，为打中转IP标签和过滤中转IP实例时提供标签联想功能。
@@ -1087,7 +1087,7 @@ class NatClient(Client):
         return http_info
 
     def list_transit_ips_by_tags(self, request):
-        """查询中转IP实例
+        r"""查询中转IP实例
 
         - 使用标签过滤中转IP实例。
         - 标签管理服务需要提供按标签过滤中转IP服务实例并汇总显示在列表中，需要中转IP服务提供查询能力。
@@ -1153,7 +1153,7 @@ class NatClient(Client):
         return http_info
 
     def show_transit_ip_tags(self, request):
-        """查询中转IP标签
+        r"""查询中转IP标签
 
         - 查询指定中转IP实例的标签信息。
         - 标签管理服务需要使用该接口查询指定中转IP实例的全部标签数据。
@@ -1219,7 +1219,7 @@ class NatClient(Client):
         return http_info
 
     def batch_create_delete_nat_gateway_tag(self, request):
-        """批量添加/删除公网NAT网关资源标签
+        r"""批量添加/删除公网NAT网关资源标签
 
         - 为指定公网NAT网关实例批量添加或删除标签。 
         - 标签管理服务需要使用该接口批量管理实例的标签。 
@@ -1288,7 +1288,7 @@ class NatClient(Client):
         return http_info
 
     def batch_create_delete_private_nat_tags(self, request):
-        """批量添加删除私网NAT网关标签
+        r"""批量添加删除私网NAT网关标签
 
         - 为指定私网NAT网关实例批量添加或删除标签
         - 标签管理服务需要使用该接口批量管理私网NAT网关实例的标签。
@@ -1357,7 +1357,7 @@ class NatClient(Client):
         return http_info
 
     def create_nat_gateway(self, request):
-        """创建公网NAT网关
+        r"""创建公网NAT网关
 
         创建公网NAT网关实例。
         
@@ -1422,7 +1422,7 @@ class NatClient(Client):
         return http_info
 
     def create_nat_gateway_tag(self, request):
-        """添加公网NAT网关资源标签
+        r"""添加公网NAT网关资源标签
 
         - 添加公网NAT网关资源标签。一个资源上最多有10个标签。
         
@@ -1489,7 +1489,7 @@ class NatClient(Client):
         return http_info
 
     def create_private_nat(self, request):
-        """创建私网NAT网关
+        r"""创建私网NAT网关
 
         创建私网NAT网关实例。
         
@@ -1554,7 +1554,7 @@ class NatClient(Client):
         return http_info
 
     def create_private_nat_tag(self, request):
-        """添加私网NAT网关标签
+        r"""添加私网NAT网关标签
 
         - 一个私网NAT网关上最多有10个标签。
         - 此接口为幂等接口：
@@ -1623,7 +1623,7 @@ class NatClient(Client):
         return http_info
 
     def delete_nat_gateway(self, request):
-        """删除公网NAT网关
+        r"""删除公网NAT网关
 
         删除公网NAT网关实例。
         
@@ -1688,7 +1688,7 @@ class NatClient(Client):
         return http_info
 
     def delete_nat_gateway_tag(self, request):
-        """删除公网NAT网关资源标签
+        r"""删除公网NAT网关资源标签
 
         - 删除指定公网NAT网关资源实例的标签信息。
         
@@ -1755,7 +1755,7 @@ class NatClient(Client):
         return http_info
 
     def delete_private_nat(self, request):
-        """删除私网NAT网关
+        r"""删除私网NAT网关
 
         删除私网NAT网关实例。
         
@@ -1820,7 +1820,7 @@ class NatClient(Client):
         return http_info
 
     def delete_private_nat_tag(self, request):
-        """删除私网NAT网关标签
+        r"""删除私网NAT网关标签
 
         - 幂等接口：
         - 删除时，不对标签字符集做校验，调用接口前必须要做encodeURI，服务端需要对接口uri做decodeURI。删除的key不存在报404，key不能为空或者空字符串。
@@ -1888,7 +1888,7 @@ class NatClient(Client):
         return http_info
 
     def list_nat_gateway_by_tag(self, request):
-        """查询公网NAT网关资源实例
+        r"""查询公网NAT网关资源实例
 
         - 使用标签过滤公网NAT网关资源实例。
         - 标签管理服务需要提供按标签过滤公网NAT网关服务实例并汇总显示在列表中，需要公网NAT网关服务提供查询能力。
@@ -1955,7 +1955,7 @@ class NatClient(Client):
         return http_info
 
     def list_nat_gateway_tag(self, request):
-        """查询公网NAT网关项目标签
+        r"""查询公网NAT网关项目标签
 
         - 查询租户在指定项目和公网NAT网关实例类型的所有标签集合。
         - 标签管理服务需要能够列出当前租户全部已使用的标签集合，为各服务Console打标签和过滤实例时提供标签联想功能。
@@ -2019,7 +2019,7 @@ class NatClient(Client):
         return http_info
 
     def list_nat_gateways(self, request):
-        """查询公网NAT网关列表
+        r"""查询公网NAT网关列表
 
         查询公网NAT网关实例列表。
         
@@ -2108,7 +2108,7 @@ class NatClient(Client):
         return http_info
 
     def list_private_nat_tags(self, request):
-        """查询私网NAT网关项目标签
+        r"""查询私网NAT网关项目标签
 
         - 查询租户在指定Project和实例类型的所有私网NAT网关标签集合。
         - 标签管理服务需要能够列出当前租户全部已使用的私网NAT网关标签集合，为打私网NAT网关标签和过滤私网NAT网关实例时提供标签联想功能。
@@ -2172,7 +2172,7 @@ class NatClient(Client):
         return http_info
 
     def list_private_nats(self, request):
-        """查询私网NAT网关列表
+        r"""查询私网NAT网关列表
 
         查询私网NAT网关实例列表。
         
@@ -2265,7 +2265,7 @@ class NatClient(Client):
         return http_info
 
     def list_private_nats_by_tags(self, request):
-        """查询私网NAT网关实例
+        r"""查询私网NAT网关实例
 
         - 使用标签过滤私网NAT网关实例。
         - 标签管理服务需要提供按标签过滤私网NAT网关服务实例并汇总显示在列表中，需要私网NAT网关服务提供查询能力。
@@ -2331,7 +2331,7 @@ class NatClient(Client):
         return http_info
 
     def show_nat_gateway(self, request):
-        """查询指定的公网NAT网关详情
+        r"""查询指定的公网NAT网关详情
 
         查询指定的公网NAT网关实例详情。
         
@@ -2396,7 +2396,7 @@ class NatClient(Client):
         return http_info
 
     def show_nat_gateway_tag(self, request):
-        """查询公网NAT网关资源标签
+        r"""查询公网NAT网关资源标签
 
         - 查询指定公网NAT网关实例的标签信息。
         - 标签管理服务需要使用该接口查询指定公网NAT网关实例的全部标签数据。
@@ -2462,7 +2462,7 @@ class NatClient(Client):
         return http_info
 
     def show_private_nat(self, request):
-        """查询指定的私网NAT网关详情
+        r"""查询指定的私网NAT网关详情
 
         查询指定的私网NAT网关实例详情。
         
@@ -2527,7 +2527,7 @@ class NatClient(Client):
         return http_info
 
     def show_private_nat_tags(self, request):
-        """查询私网NAT网关标签
+        r"""查询私网NAT网关标签
 
         - 查询指定私网NAT网关实例的标签信息。
         - 标签管理服务需要使用该接口查询指定私网NAT网关实例的全部标签数据。
@@ -2593,7 +2593,7 @@ class NatClient(Client):
         return http_info
 
     def update_nat_gateway(self, request):
-        """更新公网NAT网关
+        r"""更新公网NAT网关
 
         更新公网NAT网关实例。
         
@@ -2660,7 +2660,7 @@ class NatClient(Client):
         return http_info
 
     def update_private_nat(self, request):
-        """更新私网NAT网关
+        r"""更新私网NAT网关
 
         更新私网NAT网关实例。
         
@@ -2727,7 +2727,7 @@ class NatClient(Client):
         return http_info
 
     def create_transit_ip(self, request):
-        """创建中转IP
+        r"""创建中转IP
 
         创建中转IP。
         
@@ -2792,7 +2792,7 @@ class NatClient(Client):
         return http_info
 
     def delete_transit_ip(self, request):
-        """删除中转IP
+        r"""删除中转IP
 
         删除中转IP。
         
@@ -2857,7 +2857,7 @@ class NatClient(Client):
         return http_info
 
     def list_transit_ips(self, request):
-        """查询中转IP列表
+        r"""查询中转IP列表
 
         查询中转IP列表。
         
@@ -2944,7 +2944,7 @@ class NatClient(Client):
         return http_info
 
     def show_transit_ip(self, request):
-        """查询指定的中转IP详情
+        r"""查询指定的中转IP详情
 
         查询中转IP详情。
         
@@ -3009,7 +3009,7 @@ class NatClient(Client):
         return http_info
 
     def create_nat_gateway_snat_rule(self, request):
-        """创建SNAT规则
+        r"""创建SNAT规则
 
         创建SNAT规则。
         
@@ -3074,7 +3074,7 @@ class NatClient(Client):
         return http_info
 
     def create_private_snat(self, request):
-        """创建SNAT规则
+        r"""创建SNAT规则
 
         创建SNAT规则。
         
@@ -3139,7 +3139,7 @@ class NatClient(Client):
         return http_info
 
     def delete_nat_gateway_snat_rule(self, request):
-        """删除SNAT规则
+        r"""删除SNAT规则
 
         删除指定的SNAT规则。
         
@@ -3206,7 +3206,7 @@ class NatClient(Client):
         return http_info
 
     def delete_private_snat(self, request):
-        """删除SNAT规则
+        r"""删除SNAT规则
 
         删除指定的SNAT规则。
         
@@ -3271,7 +3271,7 @@ class NatClient(Client):
         return http_info
 
     def list_nat_gateway_snat_rules(self, request):
-        """查询SNAT规则列表
+        r"""查询SNAT规则列表
 
         查询SNAT规则列表。
         
@@ -3363,7 +3363,7 @@ class NatClient(Client):
         return http_info
 
     def list_private_snats(self, request):
-        """查询SNAT规则列表
+        r"""查询SNAT规则列表
 
         查询SNAT规则列表。
         
@@ -3456,7 +3456,7 @@ class NatClient(Client):
         return http_info
 
     def show_nat_gateway_snat_rule(self, request):
-        """查询指定的SNAT规则详情
+        r"""查询指定的SNAT规则详情
 
         查询指定的SNAT规则详情。
         
@@ -3521,7 +3521,7 @@ class NatClient(Client):
         return http_info
 
     def show_private_snat(self, request):
-        """查询指定的SNAT规则详情
+        r"""查询指定的SNAT规则详情
 
         查询指定的SNAT规则详情。
         
@@ -3586,7 +3586,7 @@ class NatClient(Client):
         return http_info
 
     def update_nat_gateway_snat_rule(self, request):
-        """更新SNAT规则
+        r"""更新SNAT规则
 
         更新指定的SNAT规则。
         
@@ -3653,7 +3653,7 @@ class NatClient(Client):
         return http_info
 
     def update_private_snat(self, request):
-        """更新SNAT规则
+        r"""更新SNAT规则
 
         更新指定的SNAT规则。
         

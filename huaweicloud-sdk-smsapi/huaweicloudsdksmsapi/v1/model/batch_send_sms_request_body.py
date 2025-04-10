@@ -39,7 +39,7 @@ class BatchSendSmsRequestBody:
     }
 
     def __init__(self, _from=None, to=None, template_id=None, template_paras=None, status_callback=None, extend=None, signature=None):
-        """BatchSendSmsRequestBody
+        r"""BatchSendSmsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -87,7 +87,7 @@ class BatchSendSmsRequestBody:
 
     @property
     def _from(self):
-        """Gets the _from of this BatchSendSmsRequestBody.
+        r"""Gets the _from of this BatchSendSmsRequestBody.
 
         短信发送方的号码
 
@@ -98,7 +98,7 @@ class BatchSendSmsRequestBody:
 
     @_from.setter
     def _from(self, _from):
-        """Sets the _from of this BatchSendSmsRequestBody.
+        r"""Sets the _from of this BatchSendSmsRequestBody.
 
         短信发送方的号码
 
@@ -109,7 +109,7 @@ class BatchSendSmsRequestBody:
 
     @property
     def to(self):
-        """Gets the to of this BatchSendSmsRequestBody.
+        r"""Gets the to of this BatchSendSmsRequestBody.
 
         短信接收方的号码
 
@@ -120,7 +120,7 @@ class BatchSendSmsRequestBody:
 
     @to.setter
     def to(self, to):
-        """Sets the to of this BatchSendSmsRequestBody.
+        r"""Sets the to of this BatchSendSmsRequestBody.
 
         短信接收方的号码
 
@@ -131,7 +131,7 @@ class BatchSendSmsRequestBody:
 
     @property
     def template_id(self):
-        """Gets the template_id of this BatchSendSmsRequestBody.
+        r"""Gets the template_id of this BatchSendSmsRequestBody.
 
         短信模板ID
 
@@ -142,7 +142,7 @@ class BatchSendSmsRequestBody:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this BatchSendSmsRequestBody.
+        r"""Sets the template_id of this BatchSendSmsRequestBody.
 
         短信模板ID
 
@@ -153,7 +153,7 @@ class BatchSendSmsRequestBody:
 
     @property
     def template_paras(self):
-        """Gets the template_paras of this BatchSendSmsRequestBody.
+        r"""Gets the template_paras of this BatchSendSmsRequestBody.
 
         短信模板的变量值
 
@@ -164,7 +164,7 @@ class BatchSendSmsRequestBody:
 
     @template_paras.setter
     def template_paras(self, template_paras):
-        """Sets the template_paras of this BatchSendSmsRequestBody.
+        r"""Sets the template_paras of this BatchSendSmsRequestBody.
 
         短信模板的变量值
 
@@ -175,7 +175,7 @@ class BatchSendSmsRequestBody:
 
     @property
     def status_callback(self):
-        """Gets the status_callback of this BatchSendSmsRequestBody.
+        r"""Gets the status_callback of this BatchSendSmsRequestBody.
 
         SP的回调地址
 
@@ -186,7 +186,7 @@ class BatchSendSmsRequestBody:
 
     @status_callback.setter
     def status_callback(self, status_callback):
-        """Sets the status_callback of this BatchSendSmsRequestBody.
+        r"""Sets the status_callback of this BatchSendSmsRequestBody.
 
         SP的回调地址
 
@@ -197,7 +197,7 @@ class BatchSendSmsRequestBody:
 
     @property
     def extend(self):
-        """Gets the extend of this BatchSendSmsRequestBody.
+        r"""Gets the extend of this BatchSendSmsRequestBody.
 
         扩展参数，在状态报告中会原样返回。
 
@@ -208,7 +208,7 @@ class BatchSendSmsRequestBody:
 
     @extend.setter
     def extend(self, extend):
-        """Sets the extend of this BatchSendSmsRequestBody.
+        r"""Sets the extend of this BatchSendSmsRequestBody.
 
         扩展参数，在状态报告中会原样返回。
 
@@ -219,7 +219,7 @@ class BatchSendSmsRequestBody:
 
     @property
     def signature(self):
-        """Gets the signature of this BatchSendSmsRequestBody.
+        r"""Gets the signature of this BatchSendSmsRequestBody.
 
         短信签名
 
@@ -230,7 +230,7 @@ class BatchSendSmsRequestBody:
 
     @signature.setter
     def signature(self, signature):
-        """Sets the signature of this BatchSendSmsRequestBody.
+        r"""Sets the signature of this BatchSendSmsRequestBody.
 
         短信签名
 

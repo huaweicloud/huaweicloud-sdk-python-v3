@@ -29,7 +29,7 @@ class Session:
     }
 
     def __init__(self, vdi=None, self_help_console=None, disconnect_on_lock_flag=None):
-        """Session
+        r"""Session
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class Session:
 
     @property
     def vdi(self):
-        """Gets the vdi of this Session.
+        r"""Gets the vdi of this Session.
 
         :return: The vdi of this Session.
         :rtype: :class:`huaweicloudsdkworkspace.v2.Vdi`
@@ -66,7 +66,7 @@ class Session:
 
     @vdi.setter
     def vdi(self, vdi):
-        """Sets the vdi of this Session.
+        r"""Sets the vdi of this Session.
 
         :param vdi: The vdi of this Session.
         :type vdi: :class:`huaweicloudsdkworkspace.v2.Vdi`
@@ -75,7 +75,7 @@ class Session:
 
     @property
     def self_help_console(self):
-        """Gets the self_help_console of this Session.
+        r"""Gets the self_help_console of this Session.
 
         是否开启自助维护台抢占登陆。取值为：false：表示关闭。true：表示开启。
 
@@ -86,7 +86,7 @@ class Session:
 
     @self_help_console.setter
     def self_help_console(self, self_help_console):
-        """Sets the self_help_console of this Session.
+        r"""Sets the self_help_console of this Session.
 
         是否开启自助维护台抢占登陆。取值为：false：表示关闭。true：表示开启。
 
@@ -97,7 +97,7 @@ class Session:
 
     @property
     def disconnect_on_lock_flag(self):
-        """Gets the disconnect_on_lock_flag of this Session.
+        r"""Gets the disconnect_on_lock_flag of this Session.
 
         是否锁屏后断开
 
@@ -108,7 +108,7 @@ class Session:
 
     @disconnect_on_lock_flag.setter
     def disconnect_on_lock_flag(self, disconnect_on_lock_flag):
-        """Sets the disconnect_on_lock_flag of this Session.
+        r"""Sets the disconnect_on_lock_flag of this Session.
 
         是否锁屏后断开
 

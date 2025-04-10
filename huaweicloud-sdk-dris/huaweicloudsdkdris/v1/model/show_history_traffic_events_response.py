@@ -28,7 +28,7 @@ class ShowHistoryTrafficEventsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, events=None):
-        """ShowHistoryTrafficEventsResponse
+        r"""ShowHistoryTrafficEventsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowHistoryTrafficEventsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowHistoryTrafficEventsResponse.
+        r"""Gets the count of this ShowHistoryTrafficEventsResponse.
 
         **参数说明**：条件查询返回的总条数。
 
@@ -62,7 +62,7 @@ class ShowHistoryTrafficEventsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowHistoryTrafficEventsResponse.
+        r"""Sets the count of this ShowHistoryTrafficEventsResponse.
 
         **参数说明**：条件查询返回的总条数。
 
@@ -73,7 +73,7 @@ class ShowHistoryTrafficEventsResponse(SdkResponse):
 
     @property
     def events(self):
-        """Gets the events of this ShowHistoryTrafficEventsResponse.
+        r"""Gets the events of this ShowHistoryTrafficEventsResponse.
 
         **参数说明**：事件列表。
 
@@ -84,7 +84,7 @@ class ShowHistoryTrafficEventsResponse(SdkResponse):
 
     @events.setter
     def events(self, events):
-        """Sets the events of this ShowHistoryTrafficEventsResponse.
+        r"""Sets the events of this ShowHistoryTrafficEventsResponse.
 
         **参数说明**：事件列表。
 

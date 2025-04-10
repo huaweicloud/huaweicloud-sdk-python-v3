@@ -33,7 +33,7 @@ class ServiceInstanceInput:
     }
 
     def __init__(self, source=None, name=None, description=None, endpoint_id=None, config=None):
-        """ServiceInstanceInput
+        r"""ServiceInstanceInput
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class ServiceInstanceInput:
 
     @property
     def source(self):
-        """Gets the source of this ServiceInstanceInput.
+        r"""Gets the source of this ServiceInstanceInput.
 
         :return: The source of this ServiceInstanceInput.
         :rtype: :class:`huaweicloudsdkdataartsfabricep.v1.SourceRef`
@@ -77,7 +77,7 @@ class ServiceInstanceInput:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this ServiceInstanceInput.
+        r"""Sets the source of this ServiceInstanceInput.
 
         :param source: The source of this ServiceInstanceInput.
         :type source: :class:`huaweicloudsdkdataartsfabricep.v1.SourceRef`
@@ -86,7 +86,7 @@ class ServiceInstanceInput:
 
     @property
     def name(self):
-        """Gets the name of this ServiceInstanceInput.
+        r"""Gets the name of this ServiceInstanceInput.
 
         一个Service Instance的名称，只能包含中文、字母、数字、下划线、中划线、点、空格
 
@@ -97,7 +97,7 @@ class ServiceInstanceInput:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ServiceInstanceInput.
+        r"""Sets the name of this ServiceInstanceInput.
 
         一个Service Instance的名称，只能包含中文、字母、数字、下划线、中划线、点、空格
 
@@ -108,7 +108,7 @@ class ServiceInstanceInput:
 
     @property
     def description(self):
-        """Gets the description of this ServiceInstanceInput.
+        r"""Gets the description of this ServiceInstanceInput.
 
         描述信息
 
@@ -119,7 +119,7 @@ class ServiceInstanceInput:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ServiceInstanceInput.
+        r"""Sets the description of this ServiceInstanceInput.
 
         描述信息
 
@@ -130,7 +130,7 @@ class ServiceInstanceInput:
 
     @property
     def endpoint_id(self):
-        """Gets the endpoint_id of this ServiceInstanceInput.
+        r"""Gets the endpoint_id of this ServiceInstanceInput.
 
         endpoint空间id
 
@@ -141,7 +141,7 @@ class ServiceInstanceInput:
 
     @endpoint_id.setter
     def endpoint_id(self, endpoint_id):
-        """Sets the endpoint_id of this ServiceInstanceInput.
+        r"""Sets the endpoint_id of this ServiceInstanceInput.
 
         endpoint空间id
 
@@ -152,7 +152,7 @@ class ServiceInstanceInput:
 
     @property
     def config(self):
-        """Gets the config of this ServiceInstanceInput.
+        r"""Gets the config of this ServiceInstanceInput.
 
         :return: The config of this ServiceInstanceInput.
         :rtype: :class:`huaweicloudsdkdataartsfabricep.v1.ServiceInstanceConfig`
@@ -161,7 +161,7 @@ class ServiceInstanceInput:
 
     @config.setter
     def config(self, config):
-        """Sets the config of this ServiceInstanceInput.
+        r"""Sets the config of this ServiceInstanceInput.
 
         :param config: The config of this ServiceInstanceInput.
         :type config: :class:`huaweicloudsdkdataartsfabricep.v1.ServiceInstanceConfig`

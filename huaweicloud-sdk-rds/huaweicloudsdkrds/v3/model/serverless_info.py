@@ -27,7 +27,7 @@ class ServerlessInfo:
     }
 
     def __init__(self, min_cap=None, max_cap=None):
-        """ServerlessInfo
+        r"""ServerlessInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ServerlessInfo:
 
     @property
     def min_cap(self):
-        """Gets the min_cap of this ServerlessInfo.
+        r"""Gets the min_cap of this ServerlessInfo.
 
         Serverless型实例的最小算力，单位RCU，范围0.5~8，步进0.5。
 
@@ -59,7 +59,7 @@ class ServerlessInfo:
 
     @min_cap.setter
     def min_cap(self, min_cap):
-        """Sets the min_cap of this ServerlessInfo.
+        r"""Sets the min_cap of this ServerlessInfo.
 
         Serverless型实例的最小算力，单位RCU，范围0.5~8，步进0.5。
 
@@ -70,7 +70,7 @@ class ServerlessInfo:
 
     @property
     def max_cap(self):
-        """Gets the max_cap of this ServerlessInfo.
+        r"""Gets the max_cap of this ServerlessInfo.
 
         Serverless型实例的最大算力，单位RCU，范围0.5~8，步进0.5。
 
@@ -81,7 +81,7 @@ class ServerlessInfo:
 
     @max_cap.setter
     def max_cap(self, max_cap):
-        """Sets the max_cap of this ServerlessInfo.
+        r"""Sets the max_cap of this ServerlessInfo.
 
         Serverless型实例的最大算力，单位RCU，范围0.5~8，步进0.5。
 

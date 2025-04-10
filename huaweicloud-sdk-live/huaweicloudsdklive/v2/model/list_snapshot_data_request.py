@@ -29,7 +29,7 @@ class ListSnapshotDataRequest:
     }
 
     def __init__(self, publish_domain=None, start_time=None, end_time=None):
-        """ListSnapshotDataRequest
+        r"""ListSnapshotDataRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListSnapshotDataRequest:
 
     @property
     def publish_domain(self):
-        """Gets the publish_domain of this ListSnapshotDataRequest.
+        r"""Gets the publish_domain of this ListSnapshotDataRequest.
 
         推流域名。 
 
@@ -68,7 +68,7 @@ class ListSnapshotDataRequest:
 
     @publish_domain.setter
     def publish_domain(self, publish_domain):
-        """Sets the publish_domain of this ListSnapshotDataRequest.
+        r"""Sets the publish_domain of this ListSnapshotDataRequest.
 
         推流域名。 
 
@@ -79,7 +79,7 @@ class ListSnapshotDataRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListSnapshotDataRequest.
+        r"""Gets the start_time of this ListSnapshotDataRequest.
 
         起始时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为：YYYY-MM-DDThh:mm:ssZ。  非整点时间按小时取整，若start_time为2020-08-18T07:20:40Z，则实际查询起始时间为2020-08-18T07:00:00Z。  若start_time为空，则默认查询最近24小时数据。 
 
@@ -90,7 +90,7 @@ class ListSnapshotDataRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListSnapshotDataRequest.
+        r"""Sets the start_time of this ListSnapshotDataRequest.
 
         起始时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为：YYYY-MM-DDThh:mm:ssZ。  非整点时间按小时取整，若start_time为2020-08-18T07:20:40Z，则实际查询起始时间为2020-08-18T07:00:00Z。  若start_time为空，则默认查询最近24小时数据。 
 
@@ -101,7 +101,7 @@ class ListSnapshotDataRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListSnapshotDataRequest.
+        r"""Gets the end_time of this ListSnapshotDataRequest.
 
         结束时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为：YYYY-MM-DDThh:mm:ssZ。  非整点时间按小时取整，若end_time为2020-08-18T08:20:40Z，则实际查询起始时间为2020-08-18T08:00:00Z。  若参数为空，默认为当前时间。结束时间需大于起始时间。 
 
@@ -112,7 +112,7 @@ class ListSnapshotDataRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListSnapshotDataRequest.
+        r"""Sets the end_time of this ListSnapshotDataRequest.
 
         结束时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为：YYYY-MM-DDThh:mm:ssZ。  非整点时间按小时取整，若end_time为2020-08-18T08:20:40Z，则实际查询起始时间为2020-08-18T08:00:00Z。  若参数为空，默认为当前时间。结束时间需大于起始时间。 
 

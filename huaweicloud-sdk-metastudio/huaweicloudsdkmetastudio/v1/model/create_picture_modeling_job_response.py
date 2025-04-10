@@ -30,7 +30,7 @@ class CreatePictureModelingJobResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, model_asset_id=None, x_request_id=None):
-        """CreatePictureModelingJobResponse
+        r"""CreatePictureModelingJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreatePictureModelingJobResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreatePictureModelingJobResponse.
+        r"""Gets the job_id of this CreatePictureModelingJobResponse.
 
         任务ID。
 
@@ -69,7 +69,7 @@ class CreatePictureModelingJobResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreatePictureModelingJobResponse.
+        r"""Sets the job_id of this CreatePictureModelingJobResponse.
 
         任务ID。
 
@@ -80,7 +80,7 @@ class CreatePictureModelingJobResponse(SdkResponse):
 
     @property
     def model_asset_id(self):
-        """Gets the model_asset_id of this CreatePictureModelingJobResponse.
+        r"""Gets the model_asset_id of this CreatePictureModelingJobResponse.
 
         数字人资产ID。
 
@@ -91,7 +91,7 @@ class CreatePictureModelingJobResponse(SdkResponse):
 
     @model_asset_id.setter
     def model_asset_id(self, model_asset_id):
-        """Sets the model_asset_id of this CreatePictureModelingJobResponse.
+        r"""Sets the model_asset_id of this CreatePictureModelingJobResponse.
 
         数字人资产ID。
 
@@ -102,7 +102,7 @@ class CreatePictureModelingJobResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreatePictureModelingJobResponse.
+        r"""Gets the x_request_id of this CreatePictureModelingJobResponse.
 
         :return: The x_request_id of this CreatePictureModelingJobResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class CreatePictureModelingJobResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreatePictureModelingJobResponse.
+        r"""Sets the x_request_id of this CreatePictureModelingJobResponse.
 
         :param x_request_id: The x_request_id of this CreatePictureModelingJobResponse.
         :type x_request_id: str

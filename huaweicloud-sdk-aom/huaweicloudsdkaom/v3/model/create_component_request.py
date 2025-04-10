@@ -25,7 +25,7 @@ class CreateComponentRequest:
     }
 
     def __init__(self, body=None):
-        """CreateComponentRequest
+        r"""CreateComponentRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateComponentRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateComponentRequest.
+        r"""Gets the body of this CreateComponentRequest.
 
         :return: The body of this CreateComponentRequest.
         :rtype: :class:`huaweicloudsdkaom.v3.ComponentParam`
@@ -52,7 +52,7 @@ class CreateComponentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateComponentRequest.
+        r"""Sets the body of this CreateComponentRequest.
 
         :param body: The body of this CreateComponentRequest.
         :type body: :class:`huaweicloudsdkaom.v3.ComponentParam`

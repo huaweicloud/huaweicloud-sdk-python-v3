@@ -29,7 +29,7 @@ class ShowWorkloadPlanStageRequest:
     }
 
     def __init__(self, cluster_id=None, plan_id=None, stage_id=None):
-        """ShowWorkloadPlanStageRequest
+        r"""ShowWorkloadPlanStageRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ShowWorkloadPlanStageRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowWorkloadPlanStageRequest.
+        r"""Gets the cluster_id of this ShowWorkloadPlanStageRequest.
 
         集群ID
 
@@ -65,7 +65,7 @@ class ShowWorkloadPlanStageRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowWorkloadPlanStageRequest.
+        r"""Sets the cluster_id of this ShowWorkloadPlanStageRequest.
 
         集群ID
 
@@ -76,7 +76,7 @@ class ShowWorkloadPlanStageRequest:
 
     @property
     def plan_id(self):
-        """Gets the plan_id of this ShowWorkloadPlanStageRequest.
+        r"""Gets the plan_id of this ShowWorkloadPlanStageRequest.
 
         计划ID
 
@@ -87,7 +87,7 @@ class ShowWorkloadPlanStageRequest:
 
     @plan_id.setter
     def plan_id(self, plan_id):
-        """Sets the plan_id of this ShowWorkloadPlanStageRequest.
+        r"""Sets the plan_id of this ShowWorkloadPlanStageRequest.
 
         计划ID
 
@@ -98,7 +98,7 @@ class ShowWorkloadPlanStageRequest:
 
     @property
     def stage_id(self):
-        """Gets the stage_id of this ShowWorkloadPlanStageRequest.
+        r"""Gets the stage_id of this ShowWorkloadPlanStageRequest.
 
         计划阶段ID
 
@@ -109,7 +109,7 @@ class ShowWorkloadPlanStageRequest:
 
     @stage_id.setter
     def stage_id(self, stage_id):
-        """Sets the stage_id of this ShowWorkloadPlanStageRequest.
+        r"""Sets the stage_id of this ShowWorkloadPlanStageRequest.
 
         计划阶段ID
 

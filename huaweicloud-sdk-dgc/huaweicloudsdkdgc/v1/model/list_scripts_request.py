@@ -31,7 +31,7 @@ class ListScriptsRequest:
     }
 
     def __init__(self, workspace=None, limit=None, offset=None, script_name=None):
-        """ListScriptsRequest
+        r"""ListScriptsRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListScriptsRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListScriptsRequest.
+        r"""Gets the workspace of this ListScriptsRequest.
 
         工作空间id
 
@@ -75,7 +75,7 @@ class ListScriptsRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListScriptsRequest.
+        r"""Sets the workspace of this ListScriptsRequest.
 
         工作空间id
 
@@ -86,7 +86,7 @@ class ListScriptsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListScriptsRequest.
+        r"""Gets the limit of this ListScriptsRequest.
 
         分页参数:每页限定数量
 
@@ -97,7 +97,7 @@ class ListScriptsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListScriptsRequest.
+        r"""Sets the limit of this ListScriptsRequest.
 
         分页参数:每页限定数量
 
@@ -108,7 +108,7 @@ class ListScriptsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListScriptsRequest.
+        r"""Gets the offset of this ListScriptsRequest.
 
         分页参数：页数
 
@@ -119,7 +119,7 @@ class ListScriptsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListScriptsRequest.
+        r"""Sets the offset of this ListScriptsRequest.
 
         分页参数：页数
 
@@ -130,7 +130,7 @@ class ListScriptsRequest:
 
     @property
     def script_name(self):
-        """Gets the script_name of this ListScriptsRequest.
+        r"""Gets the script_name of this ListScriptsRequest.
 
         脚本名称
 
@@ -141,7 +141,7 @@ class ListScriptsRequest:
 
     @script_name.setter
     def script_name(self, script_name):
-        """Sets the script_name of this ListScriptsRequest.
+        r"""Sets the script_name of this ListScriptsRequest.
 
         脚本名称
 

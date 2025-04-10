@@ -42,7 +42,7 @@ class ShowDataResponse(SdkResponse):
     }
 
     def __init__(self, path=None, name=None, type=None, size=None, create_time=None, content=None, download_url=None, allowed_operate=None, deletable=None):
-        """ShowDataResponse
+        r"""ShowDataResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class ShowDataResponse(SdkResponse):
 
     @property
     def path(self):
-        """Gets the path of this ShowDataResponse.
+        r"""Gets the path of this ShowDataResponse.
 
         对象全路径（项目名称:/路径）
 
@@ -111,7 +111,7 @@ class ShowDataResponse(SdkResponse):
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ShowDataResponse.
+        r"""Sets the path of this ShowDataResponse.
 
         对象全路径（项目名称:/路径）
 
@@ -122,7 +122,7 @@ class ShowDataResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowDataResponse.
+        r"""Gets the name of this ShowDataResponse.
 
         名称
 
@@ -133,7 +133,7 @@ class ShowDataResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowDataResponse.
+        r"""Sets the name of this ShowDataResponse.
 
         名称
 
@@ -144,7 +144,7 @@ class ShowDataResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowDataResponse.
+        r"""Gets the type of this ShowDataResponse.
 
         :return: The type of this ShowDataResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.PathType`
@@ -153,7 +153,7 @@ class ShowDataResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowDataResponse.
+        r"""Sets the type of this ShowDataResponse.
 
         :param type: The type of this ShowDataResponse.
         :type type: :class:`huaweicloudsdkeihealth.v1.PathType`
@@ -162,7 +162,7 @@ class ShowDataResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ShowDataResponse.
+        r"""Gets the size of this ShowDataResponse.
 
         大小
 
@@ -173,7 +173,7 @@ class ShowDataResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ShowDataResponse.
+        r"""Sets the size of this ShowDataResponse.
 
         大小
 
@@ -184,7 +184,7 @@ class ShowDataResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowDataResponse.
+        r"""Gets the create_time of this ShowDataResponse.
 
         创建时间
 
@@ -195,7 +195,7 @@ class ShowDataResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowDataResponse.
+        r"""Sets the create_time of this ShowDataResponse.
 
         创建时间
 
@@ -206,7 +206,7 @@ class ShowDataResponse(SdkResponse):
 
     @property
     def content(self):
-        """Gets the content of this ShowDataResponse.
+        r"""Gets the content of this ShowDataResponse.
 
         文件内容
 
@@ -217,7 +217,7 @@ class ShowDataResponse(SdkResponse):
 
     @content.setter
     def content(self, content):
-        """Sets the content of this ShowDataResponse.
+        r"""Sets the content of this ShowDataResponse.
 
         文件内容
 
@@ -228,7 +228,7 @@ class ShowDataResponse(SdkResponse):
 
     @property
     def download_url(self):
-        """Gets the download_url of this ShowDataResponse.
+        r"""Gets the download_url of this ShowDataResponse.
 
         下载链接
 
@@ -239,7 +239,7 @@ class ShowDataResponse(SdkResponse):
 
     @download_url.setter
     def download_url(self, download_url):
-        """Sets the download_url of this ShowDataResponse.
+        r"""Sets the download_url of this ShowDataResponse.
 
         下载链接
 
@@ -250,7 +250,7 @@ class ShowDataResponse(SdkResponse):
 
     @property
     def allowed_operate(self):
-        """Gets the allowed_operate of this ShowDataResponse.
+        r"""Gets the allowed_operate of this ShowDataResponse.
 
         可操作标记
 
@@ -261,7 +261,7 @@ class ShowDataResponse(SdkResponse):
 
     @allowed_operate.setter
     def allowed_operate(self, allowed_operate):
-        """Sets the allowed_operate of this ShowDataResponse.
+        r"""Sets the allowed_operate of this ShowDataResponse.
 
         可操作标记
 
@@ -272,7 +272,7 @@ class ShowDataResponse(SdkResponse):
 
     @property
     def deletable(self):
-        """Gets the deletable of this ShowDataResponse.
+        r"""Gets the deletable of this ShowDataResponse.
 
         可删除标记
 
@@ -283,7 +283,7 @@ class ShowDataResponse(SdkResponse):
 
     @deletable.setter
     def deletable(self, deletable):
-        """Sets the deletable of this ShowDataResponse.
+        r"""Sets the deletable of this ShowDataResponse.
 
         可删除标记
 

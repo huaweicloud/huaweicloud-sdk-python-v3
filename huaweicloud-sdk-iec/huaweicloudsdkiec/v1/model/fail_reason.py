@@ -27,7 +27,7 @@ class FailReason:
     }
 
     def __init__(self, fail_code=None, fail_message=None):
-        """FailReason
+        r"""FailReason
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class FailReason:
 
     @property
     def fail_code(self):
-        """Gets the fail_code of this FailReason.
+        r"""Gets the fail_code of this FailReason.
 
         错误码
 
@@ -61,7 +61,7 @@ class FailReason:
 
     @fail_code.setter
     def fail_code(self, fail_code):
-        """Sets the fail_code of this FailReason.
+        r"""Sets the fail_code of this FailReason.
 
         错误码
 
@@ -72,7 +72,7 @@ class FailReason:
 
     @property
     def fail_message(self):
-        """Gets the fail_message of this FailReason.
+        r"""Gets the fail_message of this FailReason.
 
         边缘云失败原因列表。包含所边缘云的失败原因。
 
@@ -83,7 +83,7 @@ class FailReason:
 
     @fail_message.setter
     def fail_message(self, fail_message):
-        """Sets the fail_message of this FailReason.
+        r"""Sets the fail_message of this FailReason.
 
         边缘云失败原因列表。包含所边缘云的失败原因。
 

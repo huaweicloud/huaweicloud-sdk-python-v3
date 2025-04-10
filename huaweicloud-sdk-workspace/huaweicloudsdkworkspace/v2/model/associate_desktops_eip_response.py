@@ -24,7 +24,7 @@ class AssociateDesktopsEipResponse(SdkResponse):
     }
 
     def __init__(self):
-        """AssociateDesktopsEipResponse
+        r"""AssociateDesktopsEipResponse
 
         The model defined in huaweicloud sdk
 

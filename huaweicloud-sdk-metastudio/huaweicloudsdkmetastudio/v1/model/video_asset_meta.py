@@ -49,7 +49,7 @@ class VideoAssetMeta:
     }
 
     def __init__(self, video_codec=None, width=None, height=None, frame_rate=None, video_bit_rate=None, duration=None, audio_codec=None, audio_bit_rate=None, audio_channels=None, sample=None, mode=None, video_transcoding_status=None, error_info=None):
-        """VideoAssetMeta
+        r"""VideoAssetMeta
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class VideoAssetMeta:
 
     @property
     def video_codec(self):
-        """Gets the video_codec of this VideoAssetMeta.
+        r"""Gets the video_codec of this VideoAssetMeta.
 
         **参数解释**： 视频编码格式。 **约束限制**： 用户无需填写，系统自行提取。 **取值范围**： 字符长度0-32位。 **默认取值**： 不涉及
 
@@ -138,7 +138,7 @@ class VideoAssetMeta:
 
     @video_codec.setter
     def video_codec(self, video_codec):
-        """Sets the video_codec of this VideoAssetMeta.
+        r"""Sets the video_codec of this VideoAssetMeta.
 
         **参数解释**： 视频编码格式。 **约束限制**： 用户无需填写，系统自行提取。 **取值范围**： 字符长度0-32位。 **默认取值**： 不涉及
 
@@ -149,7 +149,7 @@ class VideoAssetMeta:
 
     @property
     def width(self):
-        """Gets the width of this VideoAssetMeta.
+        r"""Gets the width of this VideoAssetMeta.
 
         **参数解释**： 视频画面宽度。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
@@ -160,7 +160,7 @@ class VideoAssetMeta:
 
     @width.setter
     def width(self, width):
-        """Sets the width of this VideoAssetMeta.
+        r"""Sets the width of this VideoAssetMeta.
 
         **参数解释**： 视频画面宽度。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
@@ -171,7 +171,7 @@ class VideoAssetMeta:
 
     @property
     def height(self):
-        """Gets the height of this VideoAssetMeta.
+        r"""Gets the height of this VideoAssetMeta.
 
         **参数解释**： 视频画面高度。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
@@ -182,7 +182,7 @@ class VideoAssetMeta:
 
     @height.setter
     def height(self, height):
-        """Sets the height of this VideoAssetMeta.
+        r"""Sets the height of this VideoAssetMeta.
 
         **参数解释**： 视频画面高度。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
@@ -193,7 +193,7 @@ class VideoAssetMeta:
 
     @property
     def frame_rate(self):
-        """Gets the frame_rate of this VideoAssetMeta.
+        r"""Gets the frame_rate of this VideoAssetMeta.
 
         **参数解释**： 视频帧率。 **约束限制**： 用户无需填写，系统自行提取。 **取值范围**： 字符长度0-32位。 **默认取值**： 不涉及
 
@@ -204,7 +204,7 @@ class VideoAssetMeta:
 
     @frame_rate.setter
     def frame_rate(self, frame_rate):
-        """Sets the frame_rate of this VideoAssetMeta.
+        r"""Sets the frame_rate of this VideoAssetMeta.
 
         **参数解释**： 视频帧率。 **约束限制**： 用户无需填写，系统自行提取。 **取值范围**： 字符长度0-32位。 **默认取值**： 不涉及
 
@@ -215,7 +215,7 @@ class VideoAssetMeta:
 
     @property
     def video_bit_rate(self):
-        """Gets the video_bit_rate of this VideoAssetMeta.
+        r"""Gets the video_bit_rate of this VideoAssetMeta.
 
         **参数解释**： 视频平均码率,单位kbps。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
@@ -226,7 +226,7 @@ class VideoAssetMeta:
 
     @video_bit_rate.setter
     def video_bit_rate(self, video_bit_rate):
-        """Sets the video_bit_rate of this VideoAssetMeta.
+        r"""Sets the video_bit_rate of this VideoAssetMeta.
 
         **参数解释**： 视频平均码率,单位kbps。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
@@ -237,7 +237,7 @@ class VideoAssetMeta:
 
     @property
     def duration(self):
-        """Gets the duration of this VideoAssetMeta.
+        r"""Gets the duration of this VideoAssetMeta.
 
         **参数解释**： 时长,单位秒。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
@@ -248,7 +248,7 @@ class VideoAssetMeta:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this VideoAssetMeta.
+        r"""Sets the duration of this VideoAssetMeta.
 
         **参数解释**： 时长,单位秒。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
@@ -259,7 +259,7 @@ class VideoAssetMeta:
 
     @property
     def audio_codec(self):
-        """Gets the audio_codec of this VideoAssetMeta.
+        r"""Gets the audio_codec of this VideoAssetMeta.
 
         **参数解释**： 音频编码格式。 **约束限制**： 用户无需填写，系统自行提取。 **取值范围**： 字符长度0-32位。 **默认取值**： 不涉及
 
@@ -270,7 +270,7 @@ class VideoAssetMeta:
 
     @audio_codec.setter
     def audio_codec(self, audio_codec):
-        """Sets the audio_codec of this VideoAssetMeta.
+        r"""Sets the audio_codec of this VideoAssetMeta.
 
         **参数解释**： 音频编码格式。 **约束限制**： 用户无需填写，系统自行提取。 **取值范围**： 字符长度0-32位。 **默认取值**： 不涉及
 
@@ -281,7 +281,7 @@ class VideoAssetMeta:
 
     @property
     def audio_bit_rate(self):
-        """Gets the audio_bit_rate of this VideoAssetMeta.
+        r"""Gets the audio_bit_rate of this VideoAssetMeta.
 
         **参数解释**： 音频平均码率,单位kbps。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
@@ -292,7 +292,7 @@ class VideoAssetMeta:
 
     @audio_bit_rate.setter
     def audio_bit_rate(self, audio_bit_rate):
-        """Sets the audio_bit_rate of this VideoAssetMeta.
+        r"""Sets the audio_bit_rate of this VideoAssetMeta.
 
         **参数解释**： 音频平均码率,单位kbps。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
@@ -303,7 +303,7 @@ class VideoAssetMeta:
 
     @property
     def audio_channels(self):
-        """Gets the audio_channels of this VideoAssetMeta.
+        r"""Gets the audio_channels of this VideoAssetMeta.
 
         **参数解释**： 音频声道数。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
@@ -314,7 +314,7 @@ class VideoAssetMeta:
 
     @audio_channels.setter
     def audio_channels(self, audio_channels):
-        """Sets the audio_channels of this VideoAssetMeta.
+        r"""Sets the audio_channels of this VideoAssetMeta.
 
         **参数解释**： 音频声道数。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
@@ -325,7 +325,7 @@ class VideoAssetMeta:
 
     @property
     def sample(self):
-        """Gets the sample of this VideoAssetMeta.
+        r"""Gets the sample of this VideoAssetMeta.
 
         **参数解释**： 采样率,HZ。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
@@ -336,7 +336,7 @@ class VideoAssetMeta:
 
     @sample.setter
     def sample(self, sample):
-        """Sets the sample of this VideoAssetMeta.
+        r"""Sets the sample of this VideoAssetMeta.
 
         **参数解释**： 采样率,HZ。 **约束限制**： 用户无需填写，系统自行提取。 **默认取值**： 不涉及
 
@@ -347,7 +347,7 @@ class VideoAssetMeta:
 
     @property
     def mode(self):
-        """Gets the mode of this VideoAssetMeta.
+        r"""Gets the mode of this VideoAssetMeta.
 
         **参数解释**： 横向画面或纵向画面。 **约束限制**： 用户无需填写，系统自行提取。 **取值范围**： * Horizontal：横向 * Vertical：纵向  **默认取值**： 不涉及
 
@@ -358,7 +358,7 @@ class VideoAssetMeta:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this VideoAssetMeta.
+        r"""Sets the mode of this VideoAssetMeta.
 
         **参数解释**： 横向画面或纵向画面。 **约束限制**： 用户无需填写，系统自行提取。 **取值范围**： * Horizontal：横向 * Vertical：纵向  **默认取值**： 不涉及
 
@@ -369,7 +369,7 @@ class VideoAssetMeta:
 
     @property
     def video_transcoding_status(self):
-        """Gets the video_transcoding_status of this VideoAssetMeta.
+        r"""Gets the video_transcoding_status of this VideoAssetMeta.
 
         **参数解释**： 视频转码状态。 **约束限制**： 用户无需填写，系统自行填写。 **取值范围**： * WAITING：等待 * TRANSCODING：转码中 * FAILED：失败 * SUCCEEDED：成功  **默认取值**： 不涉及
 
@@ -380,7 +380,7 @@ class VideoAssetMeta:
 
     @video_transcoding_status.setter
     def video_transcoding_status(self, video_transcoding_status):
-        """Sets the video_transcoding_status of this VideoAssetMeta.
+        r"""Sets the video_transcoding_status of this VideoAssetMeta.
 
         **参数解释**： 视频转码状态。 **约束限制**： 用户无需填写，系统自行填写。 **取值范围**： * WAITING：等待 * TRANSCODING：转码中 * FAILED：失败 * SUCCEEDED：成功  **默认取值**： 不涉及
 
@@ -391,7 +391,7 @@ class VideoAssetMeta:
 
     @property
     def error_info(self):
-        """Gets the error_info of this VideoAssetMeta.
+        r"""Gets the error_info of this VideoAssetMeta.
 
         :return: The error_info of this VideoAssetMeta.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
@@ -400,7 +400,7 @@ class VideoAssetMeta:
 
     @error_info.setter
     def error_info(self, error_info):
-        """Sets the error_info of this VideoAssetMeta.
+        r"""Sets the error_info of this VideoAssetMeta.
 
         :param error_info: The error_info of this VideoAssetMeta.
         :type error_info: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`

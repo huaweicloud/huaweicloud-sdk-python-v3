@@ -31,7 +31,7 @@ class CreateHookRequest:
     }
 
     def __init__(self, x_repo_auth=None, namespace=None, project=None, body=None):
-        """CreateHookRequest
+        r"""CreateHookRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class CreateHookRequest:
 
     @property
     def x_repo_auth(self):
-        """Gets the x_repo_auth of this CreateHookRequest.
+        r"""Gets the x_repo_auth of this CreateHookRequest.
 
         授权名称。
 
@@ -72,7 +72,7 @@ class CreateHookRequest:
 
     @x_repo_auth.setter
     def x_repo_auth(self, x_repo_auth):
-        """Sets the x_repo_auth of this CreateHookRequest.
+        r"""Sets the x_repo_auth of this CreateHookRequest.
 
         授权名称。
 
@@ -83,7 +83,7 @@ class CreateHookRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this CreateHookRequest.
+        r"""Gets the namespace of this CreateHookRequest.
 
         命名空间ID或者URL编码名称。
 
@@ -94,7 +94,7 @@ class CreateHookRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this CreateHookRequest.
+        r"""Sets the namespace of this CreateHookRequest.
 
         命名空间ID或者URL编码名称。
 
@@ -105,7 +105,7 @@ class CreateHookRequest:
 
     @property
     def project(self):
-        """Gets the project of this CreateHookRequest.
+        r"""Gets the project of this CreateHookRequest.
 
         仓库项目ID，如果含有“/”，需要将“/”替换为“:”。
 
@@ -116,7 +116,7 @@ class CreateHookRequest:
 
     @project.setter
     def project(self, project):
-        """Sets the project of this CreateHookRequest.
+        r"""Sets the project of this CreateHookRequest.
 
         仓库项目ID，如果含有“/”，需要将“/”替换为“:”。
 
@@ -127,7 +127,7 @@ class CreateHookRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateHookRequest.
+        r"""Gets the body of this CreateHookRequest.
 
         :return: The body of this CreateHookRequest.
         :rtype: :class:`huaweicloudsdkservicestage.v2.HookCreate`
@@ -136,7 +136,7 @@ class CreateHookRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateHookRequest.
+        r"""Sets the body of this CreateHookRequest.
 
         :param body: The body of this CreateHookRequest.
         :type body: :class:`huaweicloudsdkservicestage.v2.HookCreate`

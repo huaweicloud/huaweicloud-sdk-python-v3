@@ -37,7 +37,7 @@ class ListDatabaseDataRequest:
     }
 
     def __init__(self, eihealth_project_id=None, limit=None, query=None, offset=None, database_id=None, sort_key=None, sort_dir=None):
-        """ListDatabaseDataRequest
+        r"""ListDatabaseDataRequest
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class ListDatabaseDataRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this ListDatabaseDataRequest.
+        r"""Gets the eihealth_project_id of this ListDatabaseDataRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -94,7 +94,7 @@ class ListDatabaseDataRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this ListDatabaseDataRequest.
+        r"""Sets the eihealth_project_id of this ListDatabaseDataRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -105,7 +105,7 @@ class ListDatabaseDataRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDatabaseDataRequest.
+        r"""Gets the limit of this ListDatabaseDataRequest.
 
         返回记录限制
 
@@ -116,7 +116,7 @@ class ListDatabaseDataRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDatabaseDataRequest.
+        r"""Sets the limit of this ListDatabaseDataRequest.
 
         返回记录限制
 
@@ -127,7 +127,7 @@ class ListDatabaseDataRequest:
 
     @property
     def query(self):
-        """Gets the query of this ListDatabaseDataRequest.
+        r"""Gets the query of this ListDatabaseDataRequest.
 
         查询条件，例如START::gte::1|END::lte::5|TAG::like::a
 
@@ -138,7 +138,7 @@ class ListDatabaseDataRequest:
 
     @query.setter
     def query(self, query):
-        """Sets the query of this ListDatabaseDataRequest.
+        r"""Sets the query of this ListDatabaseDataRequest.
 
         查询条件，例如START::gte::1|END::lte::5|TAG::like::a
 
@@ -149,7 +149,7 @@ class ListDatabaseDataRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDatabaseDataRequest.
+        r"""Gets the offset of this ListDatabaseDataRequest.
 
         偏移量
 
@@ -160,7 +160,7 @@ class ListDatabaseDataRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDatabaseDataRequest.
+        r"""Sets the offset of this ListDatabaseDataRequest.
 
         偏移量
 
@@ -171,7 +171,7 @@ class ListDatabaseDataRequest:
 
     @property
     def database_id(self):
-        """Gets the database_id of this ListDatabaseDataRequest.
+        r"""Gets the database_id of this ListDatabaseDataRequest.
 
         数据库实例id
 
@@ -182,7 +182,7 @@ class ListDatabaseDataRequest:
 
     @database_id.setter
     def database_id(self, database_id):
-        """Sets the database_id of this ListDatabaseDataRequest.
+        r"""Sets the database_id of this ListDatabaseDataRequest.
 
         数据库实例id
 
@@ -193,7 +193,7 @@ class ListDatabaseDataRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListDatabaseDataRequest.
+        r"""Gets the sort_key of this ListDatabaseDataRequest.
 
         排序字段
 
@@ -204,7 +204,7 @@ class ListDatabaseDataRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListDatabaseDataRequest.
+        r"""Sets the sort_key of this ListDatabaseDataRequest.
 
         排序字段
 
@@ -215,7 +215,7 @@ class ListDatabaseDataRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListDatabaseDataRequest.
+        r"""Gets the sort_dir of this ListDatabaseDataRequest.
 
         排序方向，升序或降序，即ASC 和DESC
 
@@ -226,7 +226,7 @@ class ListDatabaseDataRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListDatabaseDataRequest.
+        r"""Sets the sort_dir of this ListDatabaseDataRequest.
 
         排序方向，升序或降序，即ASC 和DESC
 

@@ -37,7 +37,7 @@ class HostBody:
     }
 
     def __init__(self, domain_name=None, enterprise_project_id=None, vips=None, real_server_type=None, port_http=None, port_https=None, real_server=None):
-        """HostBody
+        r"""HostBody
 
         The model defined in huaweicloud sdk
 
@@ -80,7 +80,7 @@ class HostBody:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this HostBody.
+        r"""Gets the domain_name of this HostBody.
 
         域名
 
@@ -91,7 +91,7 @@ class HostBody:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this HostBody.
+        r"""Sets the domain_name of this HostBody.
 
         域名
 
@@ -102,7 +102,7 @@ class HostBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this HostBody.
+        r"""Gets the enterprise_project_id of this HostBody.
 
         企业项目id，与接入的高防实例所属企业项目保持一致。可在华为云EPS服务中查看企业项目id，default企业项目id为\"0\"。
 
@@ -113,7 +113,7 @@ class HostBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this HostBody.
+        r"""Sets the enterprise_project_id of this HostBody.
 
         企业项目id，与接入的高防实例所属企业项目保持一致。可在华为云EPS服务中查看企业项目id，default企业项目id为\"0\"。
 
@@ -124,7 +124,7 @@ class HostBody:
 
     @property
     def vips(self):
-        """Gets the vips of this HostBody.
+        r"""Gets the vips of this HostBody.
 
         高防实例ip列表。多个高防实例ip必须属于同一企业项目。
 
@@ -135,7 +135,7 @@ class HostBody:
 
     @vips.setter
     def vips(self, vips):
-        """Sets the vips of this HostBody.
+        r"""Sets the vips of this HostBody.
 
         高防实例ip列表。多个高防实例ip必须属于同一企业项目。
 
@@ -146,7 +146,7 @@ class HostBody:
 
     @property
     def real_server_type(self):
-        """Gets the real_server_type of this HostBody.
+        r"""Gets the real_server_type of this HostBody.
 
         源站类型。 0 - 源站IP， 1 - 源站域名。
 
@@ -157,7 +157,7 @@ class HostBody:
 
     @real_server_type.setter
     def real_server_type(self, real_server_type):
-        """Sets the real_server_type of this HostBody.
+        r"""Sets the real_server_type of this HostBody.
 
         源站类型。 0 - 源站IP， 1 - 源站域名。
 
@@ -168,7 +168,7 @@ class HostBody:
 
     @property
     def port_http(self):
-        """Gets the port_http of this HostBody.
+        r"""Gets the port_http of this HostBody.
 
         HTTP端口，与port_https不能同时为空。DDoS高防支持的HTTP端口可在控制台查看。
 
@@ -179,7 +179,7 @@ class HostBody:
 
     @port_http.setter
     def port_http(self, port_http):
-        """Sets the port_http of this HostBody.
+        r"""Sets the port_http of this HostBody.
 
         HTTP端口，与port_https不能同时为空。DDoS高防支持的HTTP端口可在控制台查看。
 
@@ -190,7 +190,7 @@ class HostBody:
 
     @property
     def port_https(self):
-        """Gets the port_https of this HostBody.
+        r"""Gets the port_https of this HostBody.
 
         HTTPS端口，与port_http不能同时为空。DDoS高防支持的HTTPS端口可在控制台查看。
 
@@ -201,7 +201,7 @@ class HostBody:
 
     @port_https.setter
     def port_https(self, port_https):
-        """Sets the port_https of this HostBody.
+        r"""Sets the port_https of this HostBody.
 
         HTTPS端口，与port_http不能同时为空。DDoS高防支持的HTTPS端口可在控制台查看。
 
@@ -212,7 +212,7 @@ class HostBody:
 
     @property
     def real_server(self):
-        """Gets the real_server of this HostBody.
+        r"""Gets the real_server of this HostBody.
 
         源站ip/源站域名
 
@@ -223,7 +223,7 @@ class HostBody:
 
     @real_server.setter
     def real_server(self, real_server):
-        """Sets the real_server of this HostBody.
+        r"""Sets the real_server of this HostBody.
 
         源站ip/源站域名
 

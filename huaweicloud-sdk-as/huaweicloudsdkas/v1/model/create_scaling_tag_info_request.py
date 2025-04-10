@@ -29,7 +29,7 @@ class CreateScalingTagInfoRequest:
     }
 
     def __init__(self, resource_type=None, resource_id=None, body=None):
-        """CreateScalingTagInfoRequest
+        r"""CreateScalingTagInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateScalingTagInfoRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this CreateScalingTagInfoRequest.
+        r"""Gets the resource_type of this CreateScalingTagInfoRequest.
 
         资源类型，枚举类：scaling_group_tag。scaling_group_tag表示资源类型为伸缩组。
 
@@ -66,7 +66,7 @@ class CreateScalingTagInfoRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this CreateScalingTagInfoRequest.
+        r"""Sets the resource_type of this CreateScalingTagInfoRequest.
 
         资源类型，枚举类：scaling_group_tag。scaling_group_tag表示资源类型为伸缩组。
 
@@ -77,7 +77,7 @@ class CreateScalingTagInfoRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this CreateScalingTagInfoRequest.
+        r"""Gets the resource_id of this CreateScalingTagInfoRequest.
 
         资源ID。
 
@@ -88,7 +88,7 @@ class CreateScalingTagInfoRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this CreateScalingTagInfoRequest.
+        r"""Sets the resource_id of this CreateScalingTagInfoRequest.
 
         资源ID。
 
@@ -99,7 +99,7 @@ class CreateScalingTagInfoRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateScalingTagInfoRequest.
+        r"""Gets the body of this CreateScalingTagInfoRequest.
 
         :return: The body of this CreateScalingTagInfoRequest.
         :rtype: :class:`huaweicloudsdkas.v1.CreateTagsOption`
@@ -108,7 +108,7 @@ class CreateScalingTagInfoRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateScalingTagInfoRequest.
+        r"""Sets the body of this CreateScalingTagInfoRequest.
 
         :param body: The body of this CreateScalingTagInfoRequest.
         :type body: :class:`huaweicloudsdkas.v1.CreateTagsOption`

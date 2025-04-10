@@ -30,7 +30,7 @@ class DetectLiveFaceByFileResponse(SdkResponse):
     }
 
     def __init__(self, result=None, warning_list=None, x_request_id=None):
-        """DetectLiveFaceByFileResponse
+        r"""DetectLiveFaceByFileResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class DetectLiveFaceByFileResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this DetectLiveFaceByFileResponse.
+        r"""Gets the result of this DetectLiveFaceByFileResponse.
 
         :return: The result of this DetectLiveFaceByFileResponse.
         :rtype: :class:`huaweicloudsdkfrs.v2.LiveDetectFaceRespResult`
@@ -67,7 +67,7 @@ class DetectLiveFaceByFileResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this DetectLiveFaceByFileResponse.
+        r"""Sets the result of this DetectLiveFaceByFileResponse.
 
         :param result: The result of this DetectLiveFaceByFileResponse.
         :type result: :class:`huaweicloudsdkfrs.v2.LiveDetectFaceRespResult`
@@ -76,7 +76,7 @@ class DetectLiveFaceByFileResponse(SdkResponse):
 
     @property
     def warning_list(self):
-        """Gets the warning_list of this DetectLiveFaceByFileResponse.
+        r"""Gets the warning_list of this DetectLiveFaceByFileResponse.
 
         警告信息列表。 调用失败时无此字段。
 
@@ -87,7 +87,7 @@ class DetectLiveFaceByFileResponse(SdkResponse):
 
     @warning_list.setter
     def warning_list(self, warning_list):
-        """Sets the warning_list of this DetectLiveFaceByFileResponse.
+        r"""Sets the warning_list of this DetectLiveFaceByFileResponse.
 
         警告信息列表。 调用失败时无此字段。
 
@@ -98,7 +98,7 @@ class DetectLiveFaceByFileResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DetectLiveFaceByFileResponse.
+        r"""Gets the x_request_id of this DetectLiveFaceByFileResponse.
 
         :return: The x_request_id of this DetectLiveFaceByFileResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class DetectLiveFaceByFileResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DetectLiveFaceByFileResponse.
+        r"""Sets the x_request_id of this DetectLiveFaceByFileResponse.
 
         :param x_request_id: The x_request_id of this DetectLiveFaceByFileResponse.
         :type x_request_id: str

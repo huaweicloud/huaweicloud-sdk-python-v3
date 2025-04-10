@@ -25,7 +25,7 @@ class SwitchInstanceVpcRequest:
     }
 
     def __init__(self, body=None):
-        """SwitchInstanceVpcRequest
+        r"""SwitchInstanceVpcRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SwitchInstanceVpcRequest:
 
     @property
     def body(self):
-        """Gets the body of this SwitchInstanceVpcRequest.
+        r"""Gets the body of this SwitchInstanceVpcRequest.
 
         :return: The body of this SwitchInstanceVpcRequest.
         :rtype: :class:`huaweicloudsdkcbh.v2.SwitchVirtualPrivateCloudRequestBody`
@@ -52,7 +52,7 @@ class SwitchInstanceVpcRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SwitchInstanceVpcRequest.
+        r"""Sets the body of this SwitchInstanceVpcRequest.
 
         :param body: The body of this SwitchInstanceVpcRequest.
         :type body: :class:`huaweicloudsdkcbh.v2.SwitchVirtualPrivateCloudRequestBody`

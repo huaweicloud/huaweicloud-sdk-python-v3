@@ -29,7 +29,7 @@ class VaultAssociate:
     }
 
     def __init__(self, destination_vault_id=None, policy_id=None, add_policy_ids=None):
-        """VaultAssociate
+        r"""VaultAssociate
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class VaultAssociate:
 
     @property
     def destination_vault_id(self):
-        """Gets the destination_vault_id of this VaultAssociate.
+        r"""Gets the destination_vault_id of this VaultAssociate.
 
         目标vault ID , 只有设置复制策略时使用，而且必传
 
@@ -68,7 +68,7 @@ class VaultAssociate:
 
     @destination_vault_id.setter
     def destination_vault_id(self, destination_vault_id):
-        """Sets the destination_vault_id of this VaultAssociate.
+        r"""Sets the destination_vault_id of this VaultAssociate.
 
         目标vault ID , 只有设置复制策略时使用，而且必传
 
@@ -79,7 +79,7 @@ class VaultAssociate:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this VaultAssociate.
+        r"""Gets the policy_id of this VaultAssociate.
 
         策略ID。policy_id字段与add_policy_ids字段在一次请求中有且只有一个。
 
@@ -90,7 +90,7 @@ class VaultAssociate:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this VaultAssociate.
+        r"""Sets the policy_id of this VaultAssociate.
 
         策略ID。policy_id字段与add_policy_ids字段在一次请求中有且只有一个。
 
@@ -101,7 +101,7 @@ class VaultAssociate:
 
     @property
     def add_policy_ids(self):
-        """Gets the add_policy_ids of this VaultAssociate.
+        r"""Gets the add_policy_ids of this VaultAssociate.
 
         多策略场景下，绑定新策略的id列表。policy_id字段与add_policy_ids字段在一次请求中有且只有一个。
 
@@ -112,7 +112,7 @@ class VaultAssociate:
 
     @add_policy_ids.setter
     def add_policy_ids(self, add_policy_ids):
-        """Sets the add_policy_ids of this VaultAssociate.
+        r"""Sets the add_policy_ids of this VaultAssociate.
 
         多策略场景下，绑定新策略的id列表。policy_id字段与add_policy_ids字段在一次请求中有且只有一个。
 

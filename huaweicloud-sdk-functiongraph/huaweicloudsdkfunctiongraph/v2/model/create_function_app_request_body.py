@@ -35,7 +35,7 @@ class CreateFunctionAppRequestBody:
     }
 
     def __init__(self, name=None, template_id=None, description=None, enterprise_project_id=None, agency_name=None, params=None):
-        """CreateFunctionAppRequestBody
+        r"""CreateFunctionAppRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class CreateFunctionAppRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateFunctionAppRequestBody.
+        r"""Gets the name of this CreateFunctionAppRequestBody.
 
         应用名称
 
@@ -89,7 +89,7 @@ class CreateFunctionAppRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateFunctionAppRequestBody.
+        r"""Sets the name of this CreateFunctionAppRequestBody.
 
         应用名称
 
@@ -100,7 +100,7 @@ class CreateFunctionAppRequestBody:
 
     @property
     def template_id(self):
-        """Gets the template_id of this CreateFunctionAppRequestBody.
+        r"""Gets the template_id of this CreateFunctionAppRequestBody.
 
         应用使用的模板ID
 
@@ -111,7 +111,7 @@ class CreateFunctionAppRequestBody:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this CreateFunctionAppRequestBody.
+        r"""Sets the template_id of this CreateFunctionAppRequestBody.
 
         应用使用的模板ID
 
@@ -122,7 +122,7 @@ class CreateFunctionAppRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateFunctionAppRequestBody.
+        r"""Gets the description of this CreateFunctionAppRequestBody.
 
         应用描述
 
@@ -133,7 +133,7 @@ class CreateFunctionAppRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateFunctionAppRequestBody.
+        r"""Sets the description of this CreateFunctionAppRequestBody.
 
         应用描述
 
@@ -144,7 +144,7 @@ class CreateFunctionAppRequestBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateFunctionAppRequestBody.
+        r"""Gets the enterprise_project_id of this CreateFunctionAppRequestBody.
 
         企业项目ID
 
@@ -155,7 +155,7 @@ class CreateFunctionAppRequestBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateFunctionAppRequestBody.
+        r"""Sets the enterprise_project_id of this CreateFunctionAppRequestBody.
 
         企业项目ID
 
@@ -166,7 +166,7 @@ class CreateFunctionAppRequestBody:
 
     @property
     def agency_name(self):
-        """Gets the agency_name of this CreateFunctionAppRequestBody.
+        r"""Gets the agency_name of this CreateFunctionAppRequestBody.
 
         委托名称
 
@@ -177,7 +177,7 @@ class CreateFunctionAppRequestBody:
 
     @agency_name.setter
     def agency_name(self, agency_name):
-        """Sets the agency_name of this CreateFunctionAppRequestBody.
+        r"""Sets the agency_name of this CreateFunctionAppRequestBody.
 
         委托名称
 
@@ -188,7 +188,7 @@ class CreateFunctionAppRequestBody:
 
     @property
     def params(self):
-        """Gets the params of this CreateFunctionAppRequestBody.
+        r"""Gets the params of this CreateFunctionAppRequestBody.
 
         模板参数
 
@@ -199,7 +199,7 @@ class CreateFunctionAppRequestBody:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this CreateFunctionAppRequestBody.
+        r"""Sets the params of this CreateFunctionAppRequestBody.
 
         模板参数
 

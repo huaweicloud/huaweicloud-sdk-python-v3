@@ -25,7 +25,7 @@ class CreatePublicipTagRequestBody:
     }
 
     def __init__(self, tag=None):
-        """CreatePublicipTagRequestBody
+        r"""CreatePublicipTagRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreatePublicipTagRequestBody:
 
     @property
     def tag(self):
-        """Gets the tag of this CreatePublicipTagRequestBody.
+        r"""Gets the tag of this CreatePublicipTagRequestBody.
 
         :return: The tag of this CreatePublicipTagRequestBody.
         :rtype: :class:`huaweicloudsdkeip.v2.ResourceTagOption`
@@ -51,7 +51,7 @@ class CreatePublicipTagRequestBody:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this CreatePublicipTagRequestBody.
+        r"""Sets the tag of this CreatePublicipTagRequestBody.
 
         :param tag: The tag of this CreatePublicipTagRequestBody.
         :type tag: :class:`huaweicloudsdkeip.v2.ResourceTagOption`

@@ -27,7 +27,7 @@ class UploadExtensionFileRequest:
     }
 
     def __init__(self, official=None, body=None):
-        """UploadExtensionFileRequest
+        r"""UploadExtensionFileRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UploadExtensionFileRequest:
 
     @property
     def official(self):
-        """Gets the official of this UploadExtensionFileRequest.
+        r"""Gets the official of this UploadExtensionFileRequest.
 
         插件类型。目前只支持CodeArtsIDEOnline
 
@@ -60,7 +60,7 @@ class UploadExtensionFileRequest:
 
     @official.setter
     def official(self, official):
-        """Sets the official of this UploadExtensionFileRequest.
+        r"""Sets the official of this UploadExtensionFileRequest.
 
         插件类型。目前只支持CodeArtsIDEOnline
 
@@ -71,7 +71,7 @@ class UploadExtensionFileRequest:
 
     @property
     def body(self):
-        """Gets the body of this UploadExtensionFileRequest.
+        r"""Gets the body of this UploadExtensionFileRequest.
 
         :return: The body of this UploadExtensionFileRequest.
         :rtype: :class:`huaweicloudsdkcloudide.v2.UploadExtensionFileRequestBody`
@@ -80,7 +80,7 @@ class UploadExtensionFileRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UploadExtensionFileRequest.
+        r"""Sets the body of this UploadExtensionFileRequest.
 
         :param body: The body of this UploadExtensionFileRequest.
         :type body: :class:`huaweicloudsdkcloudide.v2.UploadExtensionFileRequestBody`

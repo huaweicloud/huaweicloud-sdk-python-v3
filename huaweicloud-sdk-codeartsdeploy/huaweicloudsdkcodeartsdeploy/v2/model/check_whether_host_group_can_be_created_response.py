@@ -26,7 +26,7 @@ class CheckWhetherHostGroupCanBeCreatedResponse(SdkResponse):
     }
 
     def __init__(self, can_created=None):
-        """CheckWhetherHostGroupCanBeCreatedResponse
+        r"""CheckWhetherHostGroupCanBeCreatedResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CheckWhetherHostGroupCanBeCreatedResponse(SdkResponse):
 
     @property
     def can_created(self):
-        """Gets the can_created of this CheckWhetherHostGroupCanBeCreatedResponse.
+        r"""Gets the can_created of this CheckWhetherHostGroupCanBeCreatedResponse.
 
         是否有创建主机集群权限，true 有权限 false 无权限
 
@@ -55,7 +55,7 @@ class CheckWhetherHostGroupCanBeCreatedResponse(SdkResponse):
 
     @can_created.setter
     def can_created(self, can_created):
-        """Sets the can_created of this CheckWhetherHostGroupCanBeCreatedResponse.
+        r"""Sets the can_created of this CheckWhetherHostGroupCanBeCreatedResponse.
 
         是否有创建主机集群权限，true 有权限 false 无权限
 

@@ -49,7 +49,7 @@ class UpdateListenerReq:
     }
 
     def __init__(self, name=None, description=None, connection_limit=None, http2_enable=None, default_pool_id=None, default_tls_container_ref=None, client_ca_tls_container_ref=None, sni_container_refs=None, insert_headers=None, tls_ciphers_policy=None, admin_state_up=None, protection_status=None, protection_reason=None):
-        """UpdateListenerReq
+        r"""UpdateListenerReq
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class UpdateListenerReq:
 
     @property
     def name(self):
-        """Gets the name of this UpdateListenerReq.
+        r"""Gets the name of this UpdateListenerReq.
 
         监听器名称。
 
@@ -138,7 +138,7 @@ class UpdateListenerReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateListenerReq.
+        r"""Sets the name of this UpdateListenerReq.
 
         监听器名称。
 
@@ -149,7 +149,7 @@ class UpdateListenerReq:
 
     @property
     def description(self):
-        """Gets the description of this UpdateListenerReq.
+        r"""Gets the description of this UpdateListenerReq.
 
         监听器的描述信息
 
@@ -160,7 +160,7 @@ class UpdateListenerReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateListenerReq.
+        r"""Sets the description of this UpdateListenerReq.
 
         监听器的描述信息
 
@@ -171,7 +171,7 @@ class UpdateListenerReq:
 
     @property
     def connection_limit(self):
-        """Gets the connection_limit of this UpdateListenerReq.
+        r"""Gets the connection_limit of this UpdateListenerReq.
 
         监听器的最大连接数。该字段为预留字段，暂未启用。默认为-1。
 
@@ -182,7 +182,7 @@ class UpdateListenerReq:
 
     @connection_limit.setter
     def connection_limit(self, connection_limit):
-        """Sets the connection_limit of this UpdateListenerReq.
+        r"""Sets the connection_limit of this UpdateListenerReq.
 
         监听器的最大连接数。该字段为预留字段，暂未启用。默认为-1。
 
@@ -193,7 +193,7 @@ class UpdateListenerReq:
 
     @property
     def http2_enable(self):
-        """Gets the http2_enable of this UpdateListenerReq.
+        r"""Gets the http2_enable of this UpdateListenerReq.
 
         HTTP2功能的开启状态。该字段只有当监听器的协议是TERMINATED_HTTPS时才有意义。
 
@@ -204,7 +204,7 @@ class UpdateListenerReq:
 
     @http2_enable.setter
     def http2_enable(self, http2_enable):
-        """Sets the http2_enable of this UpdateListenerReq.
+        r"""Sets the http2_enable of this UpdateListenerReq.
 
         HTTP2功能的开启状态。该字段只有当监听器的协议是TERMINATED_HTTPS时才有意义。
 
@@ -215,7 +215,7 @@ class UpdateListenerReq:
 
     @property
     def default_pool_id(self):
-        """Gets the default_pool_id of this UpdateListenerReq.
+        r"""Gets the default_pool_id of this UpdateListenerReq.
 
         监听器的默认后端云服务器组ID。当请求没有匹配的转发策略时，转发到默认后端云服务器上处理。当该字段为null时，表示监听器无默认的后端云服务器组。
 
@@ -226,7 +226,7 @@ class UpdateListenerReq:
 
     @default_pool_id.setter
     def default_pool_id(self, default_pool_id):
-        """Sets the default_pool_id of this UpdateListenerReq.
+        r"""Sets the default_pool_id of this UpdateListenerReq.
 
         监听器的默认后端云服务器组ID。当请求没有匹配的转发策略时，转发到默认后端云服务器上处理。当该字段为null时，表示监听器无默认的后端云服务器组。
 
@@ -237,7 +237,7 @@ class UpdateListenerReq:
 
     @property
     def default_tls_container_ref(self):
-        """Gets the default_tls_container_ref of this UpdateListenerReq.
+        r"""Gets the default_tls_container_ref of this UpdateListenerReq.
 
         监听器使用的服务器证书ID。当protocol参数为TERMINATED_HTTPS时，为必选字段
 
@@ -248,7 +248,7 @@ class UpdateListenerReq:
 
     @default_tls_container_ref.setter
     def default_tls_container_ref(self, default_tls_container_ref):
-        """Sets the default_tls_container_ref of this UpdateListenerReq.
+        r"""Sets the default_tls_container_ref of this UpdateListenerReq.
 
         监听器使用的服务器证书ID。当protocol参数为TERMINATED_HTTPS时，为必选字段
 
@@ -259,7 +259,7 @@ class UpdateListenerReq:
 
     @property
     def client_ca_tls_container_ref(self):
-        """Gets the client_ca_tls_container_ref of this UpdateListenerReq.
+        r"""Gets the client_ca_tls_container_ref of this UpdateListenerReq.
 
         监听器使用的CA证书ID。
 
@@ -270,7 +270,7 @@ class UpdateListenerReq:
 
     @client_ca_tls_container_ref.setter
     def client_ca_tls_container_ref(self, client_ca_tls_container_ref):
-        """Sets the client_ca_tls_container_ref of this UpdateListenerReq.
+        r"""Sets the client_ca_tls_container_ref of this UpdateListenerReq.
 
         监听器使用的CA证书ID。
 
@@ -281,7 +281,7 @@ class UpdateListenerReq:
 
     @property
     def sni_container_refs(self):
-        """Gets the sni_container_refs of this UpdateListenerReq.
+        r"""Gets the sni_container_refs of this UpdateListenerReq.
 
         监听器使用的SNI证书（带域名的服务器证书）ID的列表。
 
@@ -292,7 +292,7 @@ class UpdateListenerReq:
 
     @sni_container_refs.setter
     def sni_container_refs(self, sni_container_refs):
-        """Sets the sni_container_refs of this UpdateListenerReq.
+        r"""Sets the sni_container_refs of this UpdateListenerReq.
 
         监听器使用的SNI证书（带域名的服务器证书）ID的列表。
 
@@ -303,7 +303,7 @@ class UpdateListenerReq:
 
     @property
     def insert_headers(self):
-        """Gets the insert_headers of this UpdateListenerReq.
+        r"""Gets the insert_headers of this UpdateListenerReq.
 
         :return: The insert_headers of this UpdateListenerReq.
         :rtype: :class:`huaweicloudsdkelb.v2.InsertHeader`
@@ -312,7 +312,7 @@ class UpdateListenerReq:
 
     @insert_headers.setter
     def insert_headers(self, insert_headers):
-        """Sets the insert_headers of this UpdateListenerReq.
+        r"""Sets the insert_headers of this UpdateListenerReq.
 
         :param insert_headers: The insert_headers of this UpdateListenerReq.
         :type insert_headers: :class:`huaweicloudsdkelb.v2.InsertHeader`
@@ -321,7 +321,7 @@ class UpdateListenerReq:
 
     @property
     def tls_ciphers_policy(self):
-        """Gets the tls_ciphers_policy of this UpdateListenerReq.
+        r"""Gets the tls_ciphers_policy of this UpdateListenerReq.
 
         监听器使用的安全策略，仅对TERMINATED_HTTPS协议类型的监听器有效。  取值包括：tls-1-0, tls-1-1, tls-1-2, tls-1-2-strict多种安全策略。  加密套件的排序为国密套件、ecc套件、rsa套件、tls1.3协议的套件（即支持ecc又支持rsa）
 
@@ -332,7 +332,7 @@ class UpdateListenerReq:
 
     @tls_ciphers_policy.setter
     def tls_ciphers_policy(self, tls_ciphers_policy):
-        """Sets the tls_ciphers_policy of this UpdateListenerReq.
+        r"""Sets the tls_ciphers_policy of this UpdateListenerReq.
 
         监听器使用的安全策略，仅对TERMINATED_HTTPS协议类型的监听器有效。  取值包括：tls-1-0, tls-1-1, tls-1-2, tls-1-2-strict多种安全策略。  加密套件的排序为国密套件、ecc套件、rsa套件、tls1.3协议的套件（即支持ecc又支持rsa）
 
@@ -343,7 +343,7 @@ class UpdateListenerReq:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this UpdateListenerReq.
+        r"""Gets the admin_state_up of this UpdateListenerReq.
 
         监听器的管理状态。  该字段为预留字段，暂未启动。只支持设定为true
 
@@ -354,7 +354,7 @@ class UpdateListenerReq:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this UpdateListenerReq.
+        r"""Sets the admin_state_up of this UpdateListenerReq.
 
         监听器的管理状态。  该字段为预留字段，暂未启动。只支持设定为true
 
@@ -365,7 +365,7 @@ class UpdateListenerReq:
 
     @property
     def protection_status(self):
-        """Gets the protection_status of this UpdateListenerReq.
+        r"""Gets the protection_status of this UpdateListenerReq.
 
         修改保护状态, 取值： - nonProtection: 不保护 - consoleProtection: 控制台修改保护
 
@@ -376,7 +376,7 @@ class UpdateListenerReq:
 
     @protection_status.setter
     def protection_status(self, protection_status):
-        """Sets the protection_status of this UpdateListenerReq.
+        r"""Sets the protection_status of this UpdateListenerReq.
 
         修改保护状态, 取值： - nonProtection: 不保护 - consoleProtection: 控制台修改保护
 
@@ -387,7 +387,7 @@ class UpdateListenerReq:
 
     @property
     def protection_reason(self):
-        """Gets the protection_reason of this UpdateListenerReq.
+        r"""Gets the protection_reason of this UpdateListenerReq.
 
         设置保护的原因 >仅当protection_status为consoleProtection时有效。
 
@@ -398,7 +398,7 @@ class UpdateListenerReq:
 
     @protection_reason.setter
     def protection_reason(self, protection_reason):
-        """Sets the protection_reason of this UpdateListenerReq.
+        r"""Sets the protection_reason of this UpdateListenerReq.
 
         设置保护的原因 >仅当protection_status为consoleProtection时有效。
 

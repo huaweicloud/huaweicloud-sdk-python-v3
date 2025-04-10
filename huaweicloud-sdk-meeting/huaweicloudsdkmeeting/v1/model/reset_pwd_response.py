@@ -24,7 +24,7 @@ class ResetPwdResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ResetPwdResponse
+        r"""ResetPwdResponse
 
         The model defined in huaweicloud sdk
 

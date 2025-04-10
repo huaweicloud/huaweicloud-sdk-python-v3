@@ -29,7 +29,7 @@ class AssignShareFolderReq:
     }
 
     def __init__(self, storage_claim_id=None, add_items=None, del_items=None):
-        """AssignShareFolderReq
+        r"""AssignShareFolderReq
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class AssignShareFolderReq:
 
     @property
     def storage_claim_id(self):
-        """Gets the storage_claim_id of this AssignShareFolderReq.
+        r"""Gets the storage_claim_id of this AssignShareFolderReq.
 
         WKS存储目录声明ID。
 
@@ -67,7 +67,7 @@ class AssignShareFolderReq:
 
     @storage_claim_id.setter
     def storage_claim_id(self, storage_claim_id):
-        """Sets the storage_claim_id of this AssignShareFolderReq.
+        r"""Sets the storage_claim_id of this AssignShareFolderReq.
 
         WKS存储目录声明ID。
 
@@ -78,7 +78,7 @@ class AssignShareFolderReq:
 
     @property
     def add_items(self):
-        """Gets the add_items of this AssignShareFolderReq.
+        r"""Gets the add_items of this AssignShareFolderReq.
 
         增加的成员列表。
 
@@ -89,7 +89,7 @@ class AssignShareFolderReq:
 
     @add_items.setter
     def add_items(self, add_items):
-        """Sets the add_items of this AssignShareFolderReq.
+        r"""Sets the add_items of this AssignShareFolderReq.
 
         增加的成员列表。
 
@@ -100,7 +100,7 @@ class AssignShareFolderReq:
 
     @property
     def del_items(self):
-        """Gets the del_items of this AssignShareFolderReq.
+        r"""Gets the del_items of this AssignShareFolderReq.
 
         移除的成员列表。
 
@@ -111,7 +111,7 @@ class AssignShareFolderReq:
 
     @del_items.setter
     def del_items(self, del_items):
-        """Sets the del_items of this AssignShareFolderReq.
+        r"""Sets the del_items of this AssignShareFolderReq.
 
         移除的成员列表。
 

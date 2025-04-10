@@ -27,7 +27,7 @@ class UpdateCloudConnectionRequest:
     }
 
     def __init__(self, id=None, body=None):
-        """UpdateCloudConnectionRequest
+        r"""UpdateCloudConnectionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateCloudConnectionRequest:
 
     @property
     def id(self):
-        """Gets the id of this UpdateCloudConnectionRequest.
+        r"""Gets the id of this UpdateCloudConnectionRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class UpdateCloudConnectionRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateCloudConnectionRequest.
+        r"""Sets the id of this UpdateCloudConnectionRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class UpdateCloudConnectionRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateCloudConnectionRequest.
+        r"""Gets the body of this UpdateCloudConnectionRequest.
 
         :return: The body of this UpdateCloudConnectionRequest.
         :rtype: :class:`huaweicloudsdkcc.v3.UpdateCloudConnectionRequestBody`
@@ -80,7 +80,7 @@ class UpdateCloudConnectionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateCloudConnectionRequest.
+        r"""Sets the body of this UpdateCloudConnectionRequest.
 
         :param body: The body of this UpdateCloudConnectionRequest.
         :type body: :class:`huaweicloudsdkcc.v3.UpdateCloudConnectionRequestBody`

@@ -25,7 +25,7 @@ class DelOtpDevicesReq:
     }
 
     def __init__(self, otp_ids=None):
-        """DelOtpDevicesReq
+        r"""DelOtpDevicesReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DelOtpDevicesReq:
 
     @property
     def otp_ids(self):
-        """Gets the otp_ids of this DelOtpDevicesReq.
+        r"""Gets the otp_ids of this DelOtpDevicesReq.
 
         待解绑的otp配置id数组。
 
@@ -54,7 +54,7 @@ class DelOtpDevicesReq:
 
     @otp_ids.setter
     def otp_ids(self, otp_ids):
-        """Sets the otp_ids of this DelOtpDevicesReq.
+        r"""Sets the otp_ids of this DelOtpDevicesReq.
 
         待解绑的otp配置id数组。
 

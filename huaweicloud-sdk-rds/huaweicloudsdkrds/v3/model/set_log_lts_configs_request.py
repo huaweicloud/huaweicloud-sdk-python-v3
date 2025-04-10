@@ -29,7 +29,7 @@ class SetLogLtsConfigsRequest:
     }
 
     def __init__(self, engine=None, x_language=None, body=None):
-        """SetLogLtsConfigsRequest
+        r"""SetLogLtsConfigsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class SetLogLtsConfigsRequest:
 
     @property
     def engine(self):
-        """Gets the engine of this SetLogLtsConfigsRequest.
+        r"""Gets the engine of this SetLogLtsConfigsRequest.
 
         引擎。
 
@@ -67,7 +67,7 @@ class SetLogLtsConfigsRequest:
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this SetLogLtsConfigsRequest.
+        r"""Sets the engine of this SetLogLtsConfigsRequest.
 
         引擎。
 
@@ -78,7 +78,7 @@ class SetLogLtsConfigsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this SetLogLtsConfigsRequest.
+        r"""Gets the x_language of this SetLogLtsConfigsRequest.
 
         语言。
 
@@ -89,7 +89,7 @@ class SetLogLtsConfigsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this SetLogLtsConfigsRequest.
+        r"""Sets the x_language of this SetLogLtsConfigsRequest.
 
         语言。
 
@@ -100,7 +100,7 @@ class SetLogLtsConfigsRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetLogLtsConfigsRequest.
+        r"""Gets the body of this SetLogLtsConfigsRequest.
 
         :return: The body of this SetLogLtsConfigsRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.AddLogConfigResponseBody`
@@ -109,7 +109,7 @@ class SetLogLtsConfigsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetLogLtsConfigsRequest.
+        r"""Sets the body of this SetLogLtsConfigsRequest.
 
         :param body: The body of this SetLogLtsConfigsRequest.
         :type body: :class:`huaweicloudsdkrds.v3.AddLogConfigResponseBody`

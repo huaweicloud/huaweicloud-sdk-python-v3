@@ -32,7 +32,7 @@ class ListCgwsResponse(SdkResponse):
     }
 
     def __init__(self, customer_gateways=None, total_count=None, page_info=None, request_id=None):
-        """ListCgwsResponse
+        r"""ListCgwsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListCgwsResponse(SdkResponse):
 
     @property
     def customer_gateways(self):
-        """Gets the customer_gateways of this ListCgwsResponse.
+        r"""Gets the customer_gateways of this ListCgwsResponse.
 
         对端网关信息
 
@@ -76,7 +76,7 @@ class ListCgwsResponse(SdkResponse):
 
     @customer_gateways.setter
     def customer_gateways(self, customer_gateways):
-        """Sets the customer_gateways of this ListCgwsResponse.
+        r"""Sets the customer_gateways of this ListCgwsResponse.
 
         对端网关信息
 
@@ -87,7 +87,7 @@ class ListCgwsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListCgwsResponse.
+        r"""Gets the total_count of this ListCgwsResponse.
 
         租户下对端网关总数
 
@@ -98,7 +98,7 @@ class ListCgwsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListCgwsResponse.
+        r"""Sets the total_count of this ListCgwsResponse.
 
         租户下对端网关总数
 
@@ -109,7 +109,7 @@ class ListCgwsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListCgwsResponse.
+        r"""Gets the page_info of this ListCgwsResponse.
 
         :return: The page_info of this ListCgwsResponse.
         :rtype: :class:`huaweicloudsdkvpn.v5.PageInfo`
@@ -118,7 +118,7 @@ class ListCgwsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListCgwsResponse.
+        r"""Sets the page_info of this ListCgwsResponse.
 
         :param page_info: The page_info of this ListCgwsResponse.
         :type page_info: :class:`huaweicloudsdkvpn.v5.PageInfo`
@@ -127,7 +127,7 @@ class ListCgwsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListCgwsResponse.
+        r"""Gets the request_id of this ListCgwsResponse.
 
         请求id
 
@@ -138,7 +138,7 @@ class ListCgwsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListCgwsResponse.
+        r"""Sets the request_id of this ListCgwsResponse.
 
         请求id
 

@@ -26,7 +26,7 @@ class CreateNatGatewayResponse(SdkResponse):
     }
 
     def __init__(self, nat_gateway=None):
-        """CreateNatGatewayResponse
+        r"""CreateNatGatewayResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateNatGatewayResponse(SdkResponse):
 
     @property
     def nat_gateway(self):
-        """Gets the nat_gateway of this CreateNatGatewayResponse.
+        r"""Gets the nat_gateway of this CreateNatGatewayResponse.
 
         :return: The nat_gateway of this CreateNatGatewayResponse.
         :rtype: :class:`huaweicloudsdknat.v2.NatGatewayResponseBody`
@@ -53,7 +53,7 @@ class CreateNatGatewayResponse(SdkResponse):
 
     @nat_gateway.setter
     def nat_gateway(self, nat_gateway):
-        """Sets the nat_gateway of this CreateNatGatewayResponse.
+        r"""Sets the nat_gateway of this CreateNatGatewayResponse.
 
         :param nat_gateway: The nat_gateway of this CreateNatGatewayResponse.
         :type nat_gateway: :class:`huaweicloudsdknat.v2.NatGatewayResponseBody`

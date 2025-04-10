@@ -25,7 +25,7 @@ class CreateBatchJobRequest:
     }
 
     def __init__(self, body=None):
-        """CreateBatchJobRequest
+        r"""CreateBatchJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateBatchJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateBatchJobRequest.
+        r"""Gets the body of this CreateBatchJobRequest.
 
         :return: The body of this CreateBatchJobRequest.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.Job`
@@ -52,7 +52,7 @@ class CreateBatchJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateBatchJobRequest.
+        r"""Sets the body of this CreateBatchJobRequest.
 
         :param body: The body of this CreateBatchJobRequest.
         :type body: :class:`huaweicloudsdkiotanalytics.v1.Job`

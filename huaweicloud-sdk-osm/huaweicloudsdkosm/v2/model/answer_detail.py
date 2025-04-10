@@ -31,7 +31,7 @@ class AnswerDetail:
     }
 
     def __init__(self, qabot_answers=None, qa_flow_answers=None, chat_answer=None, graph_answer=None):
-        """AnswerDetail
+        r"""AnswerDetail
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class AnswerDetail:
 
     @property
     def qabot_answers(self):
-        """Gets the qabot_answers of this AnswerDetail.
+        r"""Gets the qabot_answers of this AnswerDetail.
 
         答案列表
 
@@ -75,7 +75,7 @@ class AnswerDetail:
 
     @qabot_answers.setter
     def qabot_answers(self, qabot_answers):
-        """Sets the qabot_answers of this AnswerDetail.
+        r"""Sets the qabot_answers of this AnswerDetail.
 
         答案列表
 
@@ -86,7 +86,7 @@ class AnswerDetail:
 
     @property
     def qa_flow_answers(self):
-        """Gets the qa_flow_answers of this AnswerDetail.
+        r"""Gets the qa_flow_answers of this AnswerDetail.
 
         :return: The qa_flow_answers of this AnswerDetail.
         :rtype: :class:`huaweicloudsdkosm.v2.QaFlowHitResult`
@@ -95,7 +95,7 @@ class AnswerDetail:
 
     @qa_flow_answers.setter
     def qa_flow_answers(self, qa_flow_answers):
-        """Sets the qa_flow_answers of this AnswerDetail.
+        r"""Sets the qa_flow_answers of this AnswerDetail.
 
         :param qa_flow_answers: The qa_flow_answers of this AnswerDetail.
         :type qa_flow_answers: :class:`huaweicloudsdkosm.v2.QaFlowHitResult`
@@ -104,7 +104,7 @@ class AnswerDetail:
 
     @property
     def chat_answer(self):
-        """Gets the chat_answer of this AnswerDetail.
+        r"""Gets the chat_answer of this AnswerDetail.
 
         问题
 
@@ -115,7 +115,7 @@ class AnswerDetail:
 
     @chat_answer.setter
     def chat_answer(self, chat_answer):
-        """Sets the chat_answer of this AnswerDetail.
+        r"""Sets the chat_answer of this AnswerDetail.
 
         问题
 
@@ -126,7 +126,7 @@ class AnswerDetail:
 
     @property
     def graph_answer(self):
-        """Gets the graph_answer of this AnswerDetail.
+        r"""Gets the graph_answer of this AnswerDetail.
 
         :return: The graph_answer of this AnswerDetail.
         :rtype: :class:`huaweicloudsdkosm.v2.QaGraphAnswer`
@@ -135,7 +135,7 @@ class AnswerDetail:
 
     @graph_answer.setter
     def graph_answer(self, graph_answer):
-        """Sets the graph_answer of this AnswerDetail.
+        r"""Sets the graph_answer of this AnswerDetail.
 
         :param graph_answer: The graph_answer of this AnswerDetail.
         :type graph_answer: :class:`huaweicloudsdkosm.v2.QaGraphAnswer`

@@ -45,7 +45,7 @@ class MicroserviceImportReq:
     }
 
     def __init__(self, group_info=None, service_type=None, protocol=None, apis=None, backend_timeout=None, auth_type=None, cors=None, cse_info=None, cce_info=None, cce_service_info=None, nacos_info=None):
-        """MicroserviceImportReq
+        r"""MicroserviceImportReq
 
         The model defined in huaweicloud sdk
 
@@ -110,7 +110,7 @@ class MicroserviceImportReq:
 
     @property
     def group_info(self):
-        """Gets the group_info of this MicroserviceImportReq.
+        r"""Gets the group_info of this MicroserviceImportReq.
 
         :return: The group_info of this MicroserviceImportReq.
         :rtype: :class:`huaweicloudsdkapig.v2.MicroserviceGroup`
@@ -119,7 +119,7 @@ class MicroserviceImportReq:
 
     @group_info.setter
     def group_info(self, group_info):
-        """Sets the group_info of this MicroserviceImportReq.
+        r"""Sets the group_info of this MicroserviceImportReq.
 
         :param group_info: The group_info of this MicroserviceImportReq.
         :type group_info: :class:`huaweicloudsdkapig.v2.MicroserviceGroup`
@@ -128,7 +128,7 @@ class MicroserviceImportReq:
 
     @property
     def service_type(self):
-        """Gets the service_type of this MicroserviceImportReq.
+        r"""Gets the service_type of this MicroserviceImportReq.
 
         微服务中心类型。 - CSE：CSE微服务注册中心 - CCE: CCE云容器引擎（工作负载） - CCE_SERVICE: CCE云容器引擎（Service） - NACOS: Nacos注册中心，nacos_info必填。
 
@@ -139,7 +139,7 @@ class MicroserviceImportReq:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this MicroserviceImportReq.
+        r"""Sets the service_type of this MicroserviceImportReq.
 
         微服务中心类型。 - CSE：CSE微服务注册中心 - CCE: CCE云容器引擎（工作负载） - CCE_SERVICE: CCE云容器引擎（Service） - NACOS: Nacos注册中心，nacos_info必填。
 
@@ -150,7 +150,7 @@ class MicroserviceImportReq:
 
     @property
     def protocol(self):
-        """Gets the protocol of this MicroserviceImportReq.
+        r"""Gets the protocol of this MicroserviceImportReq.
 
         API网关访问微服务的请求协议 - HTTP - HTTPS
 
@@ -161,7 +161,7 @@ class MicroserviceImportReq:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this MicroserviceImportReq.
+        r"""Sets the protocol of this MicroserviceImportReq.
 
         API网关访问微服务的请求协议 - HTTP - HTTPS
 
@@ -172,7 +172,7 @@ class MicroserviceImportReq:
 
     @property
     def apis(self):
-        """Gets the apis of this MicroserviceImportReq.
+        r"""Gets the apis of this MicroserviceImportReq.
 
         导入的api列表
 
@@ -183,7 +183,7 @@ class MicroserviceImportReq:
 
     @apis.setter
     def apis(self, apis):
-        """Sets the apis of this MicroserviceImportReq.
+        r"""Sets the apis of this MicroserviceImportReq.
 
         导入的api列表
 
@@ -194,7 +194,7 @@ class MicroserviceImportReq:
 
     @property
     def backend_timeout(self):
-        """Gets the backend_timeout of this MicroserviceImportReq.
+        r"""Gets the backend_timeout of this MicroserviceImportReq.
 
         APIG请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000，默认5000  单位：毫秒。
 
@@ -205,7 +205,7 @@ class MicroserviceImportReq:
 
     @backend_timeout.setter
     def backend_timeout(self, backend_timeout):
-        """Sets the backend_timeout of this MicroserviceImportReq.
+        r"""Sets the backend_timeout of this MicroserviceImportReq.
 
         APIG请求后端服务的超时时间。最大超时时间可通过实例特性backend_timeout配置修改，可修改的上限为600000，默认5000  单位：毫秒。
 
@@ -216,7 +216,7 @@ class MicroserviceImportReq:
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this MicroserviceImportReq.
+        r"""Gets the auth_type of this MicroserviceImportReq.
 
         API的认证方式，默认无认证。 - NONE：无认证 - APP：APP认证 - IAM：IAM认证
 
@@ -227,7 +227,7 @@ class MicroserviceImportReq:
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this MicroserviceImportReq.
+        r"""Sets the auth_type of this MicroserviceImportReq.
 
         API的认证方式，默认无认证。 - NONE：无认证 - APP：APP认证 - IAM：IAM认证
 
@@ -238,7 +238,7 @@ class MicroserviceImportReq:
 
     @property
     def cors(self):
-        """Gets the cors of this MicroserviceImportReq.
+        r"""Gets the cors of this MicroserviceImportReq.
 
         是否支持跨域，默认不支持 - true：支持 - false：不支持
 
@@ -249,7 +249,7 @@ class MicroserviceImportReq:
 
     @cors.setter
     def cors(self, cors):
-        """Sets the cors of this MicroserviceImportReq.
+        r"""Sets the cors of this MicroserviceImportReq.
 
         是否支持跨域，默认不支持 - true：支持 - false：不支持
 
@@ -260,7 +260,7 @@ class MicroserviceImportReq:
 
     @property
     def cse_info(self):
-        """Gets the cse_info of this MicroserviceImportReq.
+        r"""Gets the cse_info of this MicroserviceImportReq.
 
         :return: The cse_info of this MicroserviceImportReq.
         :rtype: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCSECreate`
@@ -269,7 +269,7 @@ class MicroserviceImportReq:
 
     @cse_info.setter
     def cse_info(self, cse_info):
-        """Sets the cse_info of this MicroserviceImportReq.
+        r"""Sets the cse_info of this MicroserviceImportReq.
 
         :param cse_info: The cse_info of this MicroserviceImportReq.
         :type cse_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCSECreate`
@@ -278,7 +278,7 @@ class MicroserviceImportReq:
 
     @property
     def cce_info(self):
-        """Gets the cce_info of this MicroserviceImportReq.
+        r"""Gets the cce_info of this MicroserviceImportReq.
 
         :return: The cce_info of this MicroserviceImportReq.
         :rtype: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCCECreate`
@@ -287,7 +287,7 @@ class MicroserviceImportReq:
 
     @cce_info.setter
     def cce_info(self, cce_info):
-        """Sets the cce_info of this MicroserviceImportReq.
+        r"""Sets the cce_info of this MicroserviceImportReq.
 
         :param cce_info: The cce_info of this MicroserviceImportReq.
         :type cce_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCCECreate`
@@ -296,7 +296,7 @@ class MicroserviceImportReq:
 
     @property
     def cce_service_info(self):
-        """Gets the cce_service_info of this MicroserviceImportReq.
+        r"""Gets the cce_service_info of this MicroserviceImportReq.
 
         :return: The cce_service_info of this MicroserviceImportReq.
         :rtype: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCCEServiceCreate`
@@ -305,7 +305,7 @@ class MicroserviceImportReq:
 
     @cce_service_info.setter
     def cce_service_info(self, cce_service_info):
-        """Sets the cce_service_info of this MicroserviceImportReq.
+        r"""Sets the cce_service_info of this MicroserviceImportReq.
 
         :param cce_service_info: The cce_service_info of this MicroserviceImportReq.
         :type cce_service_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfoCCEServiceCreate`
@@ -314,7 +314,7 @@ class MicroserviceImportReq:
 
     @property
     def nacos_info(self):
-        """Gets the nacos_info of this MicroserviceImportReq.
+        r"""Gets the nacos_info of this MicroserviceImportReq.
 
         :return: The nacos_info of this MicroserviceImportReq.
         :rtype: :class:`huaweicloudsdkapig.v2.MicroServiceInfoNacosBase`
@@ -323,7 +323,7 @@ class MicroserviceImportReq:
 
     @nacos_info.setter
     def nacos_info(self, nacos_info):
-        """Sets the nacos_info of this MicroserviceImportReq.
+        r"""Sets the nacos_info of this MicroserviceImportReq.
 
         :param nacos_info: The nacos_info of this MicroserviceImportReq.
         :type nacos_info: :class:`huaweicloudsdkapig.v2.MicroServiceInfoNacosBase`

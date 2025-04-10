@@ -25,7 +25,7 @@ class ReinstallExtendParam:
     }
 
     def __init__(self, alpha_cce_node_image_id=None):
-        """ReinstallExtendParam
+        r"""ReinstallExtendParam
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ReinstallExtendParam:
 
     @property
     def alpha_cce_node_image_id(self):
-        """Gets the alpha_cce_node_image_id of this ReinstallExtendParam.
+        r"""Gets the alpha_cce_node_image_id of this ReinstallExtendParam.
 
         指定待切换目标操作系统所使用的用户镜像ID，已废弃。 指定此参数等价于指定ReinstallVolumeSpec中imageID，原取值将被覆盖。 
 
@@ -54,7 +54,7 @@ class ReinstallExtendParam:
 
     @alpha_cce_node_image_id.setter
     def alpha_cce_node_image_id(self, alpha_cce_node_image_id):
-        """Sets the alpha_cce_node_image_id of this ReinstallExtendParam.
+        r"""Sets the alpha_cce_node_image_id of this ReinstallExtendParam.
 
         指定待切换目标操作系统所使用的用户镜像ID，已废弃。 指定此参数等价于指定ReinstallVolumeSpec中imageID，原取值将被覆盖。 
 

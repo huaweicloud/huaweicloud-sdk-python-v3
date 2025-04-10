@@ -29,7 +29,7 @@ class UpdatePwdRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, body=None):
-        """UpdatePwdRequest
+        r"""UpdatePwdRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdatePwdRequest:
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdatePwdRequest.
+        r"""Gets the x_request_id of this UpdatePwdRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -68,7 +68,7 @@ class UpdatePwdRequest:
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdatePwdRequest.
+        r"""Sets the x_request_id of this UpdatePwdRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -79,7 +79,7 @@ class UpdatePwdRequest:
 
     @property
     def accept_language(self):
-        """Gets the accept_language of this UpdatePwdRequest.
+        r"""Gets the accept_language of this UpdatePwdRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -90,7 +90,7 @@ class UpdatePwdRequest:
 
     @accept_language.setter
     def accept_language(self, accept_language):
-        """Sets the accept_language of this UpdatePwdRequest.
+        r"""Sets the accept_language of this UpdatePwdRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -101,7 +101,7 @@ class UpdatePwdRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePwdRequest.
+        r"""Gets the body of this UpdatePwdRequest.
 
         :return: The body of this UpdatePwdRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.ModPwdReqDTO`
@@ -110,7 +110,7 @@ class UpdatePwdRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePwdRequest.
+        r"""Sets the body of this UpdatePwdRequest.
 
         :param body: The body of this UpdatePwdRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.ModPwdReqDTO`

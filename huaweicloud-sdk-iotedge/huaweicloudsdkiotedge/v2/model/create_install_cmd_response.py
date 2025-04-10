@@ -26,7 +26,7 @@ class CreateInstallCmdResponse(SdkResponse):
     }
 
     def __init__(self, cmd=None):
-        """CreateInstallCmdResponse
+        r"""CreateInstallCmdResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateInstallCmdResponse(SdkResponse):
 
     @property
     def cmd(self):
-        """Gets the cmd of this CreateInstallCmdResponse.
+        r"""Gets the cmd of this CreateInstallCmdResponse.
 
         标准版节点安装/升级命令
 
@@ -55,7 +55,7 @@ class CreateInstallCmdResponse(SdkResponse):
 
     @cmd.setter
     def cmd(self, cmd):
-        """Sets the cmd of this CreateInstallCmdResponse.
+        r"""Sets the cmd of this CreateInstallCmdResponse.
 
         标准版节点安装/升级命令
 

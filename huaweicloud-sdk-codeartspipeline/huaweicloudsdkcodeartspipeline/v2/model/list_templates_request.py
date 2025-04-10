@@ -37,7 +37,7 @@ class ListTemplatesRequest:
     }
 
     def __init__(self, template_type=None, is_build_in=None, offset=None, limit=None, name=None, sort=None, asc=None):
-        """ListTemplatesRequest
+        r"""ListTemplatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class ListTemplatesRequest:
 
     @property
     def template_type(self):
-        """Gets the template_type of this ListTemplatesRequest.
+        r"""Gets the template_type of this ListTemplatesRequest.
 
         模板类型
 
@@ -94,7 +94,7 @@ class ListTemplatesRequest:
 
     @template_type.setter
     def template_type(self, template_type):
-        """Sets the template_type of this ListTemplatesRequest.
+        r"""Sets the template_type of this ListTemplatesRequest.
 
         模板类型
 
@@ -105,7 +105,7 @@ class ListTemplatesRequest:
 
     @property
     def is_build_in(self):
-        """Gets the is_build_in of this ListTemplatesRequest.
+        r"""Gets the is_build_in of this ListTemplatesRequest.
 
         是否内置模板
 
@@ -116,7 +116,7 @@ class ListTemplatesRequest:
 
     @is_build_in.setter
     def is_build_in(self, is_build_in):
-        """Sets the is_build_in of this ListTemplatesRequest.
+        r"""Sets the is_build_in of this ListTemplatesRequest.
 
         是否内置模板
 
@@ -127,7 +127,7 @@ class ListTemplatesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTemplatesRequest.
+        r"""Gets the offset of this ListTemplatesRequest.
 
         偏移量,表示从此偏移量开始查询,offset大于等于0
 
@@ -138,7 +138,7 @@ class ListTemplatesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTemplatesRequest.
+        r"""Sets the offset of this ListTemplatesRequest.
 
         偏移量,表示从此偏移量开始查询,offset大于等于0
 
@@ -149,7 +149,7 @@ class ListTemplatesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTemplatesRequest.
+        r"""Gets the limit of this ListTemplatesRequest.
 
         每页显示的条目数量
 
@@ -160,7 +160,7 @@ class ListTemplatesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTemplatesRequest.
+        r"""Sets the limit of this ListTemplatesRequest.
 
         每页显示的条目数量
 
@@ -171,7 +171,7 @@ class ListTemplatesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListTemplatesRequest.
+        r"""Gets the name of this ListTemplatesRequest.
 
         模板名称，匹配规则为模糊匹配
 
@@ -182,7 +182,7 @@ class ListTemplatesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListTemplatesRequest.
+        r"""Sets the name of this ListTemplatesRequest.
 
         模板名称，匹配规则为模糊匹配
 
@@ -193,7 +193,7 @@ class ListTemplatesRequest:
 
     @property
     def sort(self):
-        """Gets the sort of this ListTemplatesRequest.
+        r"""Gets the sort of this ListTemplatesRequest.
 
         排序字段
 
@@ -204,7 +204,7 @@ class ListTemplatesRequest:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this ListTemplatesRequest.
+        r"""Sets the sort of this ListTemplatesRequest.
 
         排序字段
 
@@ -215,7 +215,7 @@ class ListTemplatesRequest:
 
     @property
     def asc(self):
-        """Gets the asc of this ListTemplatesRequest.
+        r"""Gets the asc of this ListTemplatesRequest.
 
         是否正序
 
@@ -226,7 +226,7 @@ class ListTemplatesRequest:
 
     @asc.setter
     def asc(self, asc):
-        """Sets the asc of this ListTemplatesRequest.
+        r"""Sets the asc of this ListTemplatesRequest.
 
         是否正序
 

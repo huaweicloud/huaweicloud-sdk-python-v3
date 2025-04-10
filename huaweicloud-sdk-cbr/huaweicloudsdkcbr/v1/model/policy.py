@@ -37,7 +37,7 @@ class Policy:
     }
 
     def __init__(self, enabled=None, id=None, name=None, operation_definition=None, operation_type=None, trigger=None, associated_vaults=None):
-        """Policy
+        r"""Policy
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class Policy:
 
     @property
     def enabled(self):
-        """Gets the enabled of this Policy.
+        r"""Gets the enabled of this Policy.
 
         策略是否启用
 
@@ -90,7 +90,7 @@ class Policy:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this Policy.
+        r"""Sets the enabled of this Policy.
 
         策略是否启用
 
@@ -101,7 +101,7 @@ class Policy:
 
     @property
     def id(self):
-        """Gets the id of this Policy.
+        r"""Gets the id of this Policy.
 
         策略ID
 
@@ -112,7 +112,7 @@ class Policy:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Policy.
+        r"""Sets the id of this Policy.
 
         策略ID
 
@@ -123,7 +123,7 @@ class Policy:
 
     @property
     def name(self):
-        """Gets the name of this Policy.
+        r"""Gets the name of this Policy.
 
         策略名称
 
@@ -134,7 +134,7 @@ class Policy:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Policy.
+        r"""Sets the name of this Policy.
 
         策略名称
 
@@ -145,7 +145,7 @@ class Policy:
 
     @property
     def operation_definition(self):
-        """Gets the operation_definition of this Policy.
+        r"""Gets the operation_definition of this Policy.
 
         :return: The operation_definition of this Policy.
         :rtype: :class:`huaweicloudsdkcbr.v1.PolicyoODCreate`
@@ -154,7 +154,7 @@ class Policy:
 
     @operation_definition.setter
     def operation_definition(self, operation_definition):
-        """Sets the operation_definition of this Policy.
+        r"""Sets the operation_definition of this Policy.
 
         :param operation_definition: The operation_definition of this Policy.
         :type operation_definition: :class:`huaweicloudsdkcbr.v1.PolicyoODCreate`
@@ -163,7 +163,7 @@ class Policy:
 
     @property
     def operation_type(self):
-        """Gets the operation_type of this Policy.
+        r"""Gets the operation_type of this Policy.
 
         策略类型,例如 ‘backup’：自动备份
 
@@ -174,7 +174,7 @@ class Policy:
 
     @operation_type.setter
     def operation_type(self, operation_type):
-        """Sets the operation_type of this Policy.
+        r"""Sets the operation_type of this Policy.
 
         策略类型,例如 ‘backup’：自动备份
 
@@ -185,7 +185,7 @@ class Policy:
 
     @property
     def trigger(self):
-        """Gets the trigger of this Policy.
+        r"""Gets the trigger of this Policy.
 
         :return: The trigger of this Policy.
         :rtype: :class:`huaweicloudsdkcbr.v1.PolicyTriggerResp`
@@ -194,7 +194,7 @@ class Policy:
 
     @trigger.setter
     def trigger(self, trigger):
-        """Sets the trigger of this Policy.
+        r"""Sets the trigger of this Policy.
 
         :param trigger: The trigger of this Policy.
         :type trigger: :class:`huaweicloudsdkcbr.v1.PolicyTriggerResp`
@@ -203,7 +203,7 @@ class Policy:
 
     @property
     def associated_vaults(self):
-        """Gets the associated_vaults of this Policy.
+        r"""Gets the associated_vaults of this Policy.
 
         关联的存储库
 
@@ -214,7 +214,7 @@ class Policy:
 
     @associated_vaults.setter
     def associated_vaults(self, associated_vaults):
-        """Sets the associated_vaults of this Policy.
+        r"""Sets the associated_vaults of this Policy.
 
         关联的存储库
 

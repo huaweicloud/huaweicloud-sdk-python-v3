@@ -26,7 +26,7 @@ class InviteAccountResponse(SdkResponse):
     }
 
     def __init__(self, handshake=None):
-        """InviteAccountResponse
+        r"""InviteAccountResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class InviteAccountResponse(SdkResponse):
 
     @property
     def handshake(self):
-        """Gets the handshake of this InviteAccountResponse.
+        r"""Gets the handshake of this InviteAccountResponse.
 
         :return: The handshake of this InviteAccountResponse.
         :rtype: :class:`huaweicloudsdkorganizations.v1.HandshakeDto`
@@ -53,7 +53,7 @@ class InviteAccountResponse(SdkResponse):
 
     @handshake.setter
     def handshake(self, handshake):
-        """Sets the handshake of this InviteAccountResponse.
+        r"""Sets the handshake of this InviteAccountResponse.
 
         :param handshake: The handshake of this InviteAccountResponse.
         :type handshake: :class:`huaweicloudsdkorganizations.v1.HandshakeDto`

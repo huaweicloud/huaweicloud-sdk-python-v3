@@ -27,7 +27,7 @@ class RunAggregateResourceQueryRequest:
     }
 
     def __init__(self, aggregator_id=None, body=None):
-        """RunAggregateResourceQueryRequest
+        r"""RunAggregateResourceQueryRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RunAggregateResourceQueryRequest:
 
     @property
     def aggregator_id(self):
-        """Gets the aggregator_id of this RunAggregateResourceQueryRequest.
+        r"""Gets the aggregator_id of this RunAggregateResourceQueryRequest.
 
         资源聚合器ID。
 
@@ -60,7 +60,7 @@ class RunAggregateResourceQueryRequest:
 
     @aggregator_id.setter
     def aggregator_id(self, aggregator_id):
-        """Sets the aggregator_id of this RunAggregateResourceQueryRequest.
+        r"""Sets the aggregator_id of this RunAggregateResourceQueryRequest.
 
         资源聚合器ID。
 
@@ -71,7 +71,7 @@ class RunAggregateResourceQueryRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunAggregateResourceQueryRequest.
+        r"""Gets the body of this RunAggregateResourceQueryRequest.
 
         :return: The body of this RunAggregateResourceQueryRequest.
         :rtype: :class:`huaweicloudsdkrms.v1.QueryRunRequestBody`
@@ -80,7 +80,7 @@ class RunAggregateResourceQueryRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunAggregateResourceQueryRequest.
+        r"""Sets the body of this RunAggregateResourceQueryRequest.
 
         :param body: The body of this RunAggregateResourceQueryRequest.
         :type body: :class:`huaweicloudsdkrms.v1.QueryRunRequestBody`

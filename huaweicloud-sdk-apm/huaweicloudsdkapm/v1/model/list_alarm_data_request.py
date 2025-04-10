@@ -27,7 +27,7 @@ class ListAlarmDataRequest:
     }
 
     def __init__(self, x_business_id=None, body=None):
-        """ListAlarmDataRequest
+        r"""ListAlarmDataRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListAlarmDataRequest:
 
     @property
     def x_business_id(self):
-        """Gets the x_business_id of this ListAlarmDataRequest.
+        r"""Gets the x_business_id of this ListAlarmDataRequest.
 
         应用id。
 
@@ -60,7 +60,7 @@ class ListAlarmDataRequest:
 
     @x_business_id.setter
     def x_business_id(self, x_business_id):
-        """Sets the x_business_id of this ListAlarmDataRequest.
+        r"""Sets the x_business_id of this ListAlarmDataRequest.
 
         应用id。
 
@@ -71,7 +71,7 @@ class ListAlarmDataRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListAlarmDataRequest.
+        r"""Gets the body of this ListAlarmDataRequest.
 
         :return: The body of this ListAlarmDataRequest.
         :rtype: :class:`huaweicloudsdkapm.v1.AlarmDataListRequest`
@@ -80,7 +80,7 @@ class ListAlarmDataRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListAlarmDataRequest.
+        r"""Sets the body of this ListAlarmDataRequest.
 
         :param body: The body of this ListAlarmDataRequest.
         :type body: :class:`huaweicloudsdkapm.v1.AlarmDataListRequest`

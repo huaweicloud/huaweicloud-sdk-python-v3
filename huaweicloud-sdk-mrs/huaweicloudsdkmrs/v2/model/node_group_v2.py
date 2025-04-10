@@ -41,7 +41,7 @@ class NodeGroupV2:
     }
 
     def __init__(self, group_name=None, node_num=None, node_size=None, root_volume=None, data_volume=None, data_volume_count=None, charge_info=None, auto_scaling_policy=None, assigned_roles=None):
-        """NodeGroupV2
+        r"""NodeGroupV2
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class NodeGroupV2:
 
     @property
     def group_name(self):
-        """Gets the group_name of this NodeGroupV2.
+        r"""Gets the group_name of this NodeGroupV2.
 
         节点组名称，最大长度64，支持大小写英文、数字以及“_”。节点组配置原则如下： - master_node_default_group：Master节点组，所有集群类型均需包含该节点组。 - core_node_analysis_group：分析Core节点组，分析集群、混合集群均需包含该节点组。 - core_node_streaming_group：流式Core节点组，流式集群和混合集群均需包含该节点组。 - task_node_analysis_group：分析Task节点组，分析集群和混合集群可根据需要选择该节点组。 - task_node_streaming_group：流式Task节点组，流式集群、混合集群可根据需要选择该节点组。 - node_group{x}：自定义集群节点组，可根据需要添加多个，最多支持添加9个该节点组。
 
@@ -107,7 +107,7 @@ class NodeGroupV2:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this NodeGroupV2.
+        r"""Sets the group_name of this NodeGroupV2.
 
         节点组名称，最大长度64，支持大小写英文、数字以及“_”。节点组配置原则如下： - master_node_default_group：Master节点组，所有集群类型均需包含该节点组。 - core_node_analysis_group：分析Core节点组，分析集群、混合集群均需包含该节点组。 - core_node_streaming_group：流式Core节点组，流式集群和混合集群均需包含该节点组。 - task_node_analysis_group：分析Task节点组，分析集群和混合集群可根据需要选择该节点组。 - task_node_streaming_group：流式Task节点组，流式集群、混合集群可根据需要选择该节点组。 - node_group{x}：自定义集群节点组，可根据需要添加多个，最多支持添加9个该节点组。
 
@@ -118,7 +118,7 @@ class NodeGroupV2:
 
     @property
     def node_num(self):
-        """Gets the node_num of this NodeGroupV2.
+        r"""Gets the node_num of this NodeGroupV2.
 
         节点数量，取值范围0～500，Core与Task节点总数最大为500个。
 
@@ -129,7 +129,7 @@ class NodeGroupV2:
 
     @node_num.setter
     def node_num(self, node_num):
-        """Sets the node_num of this NodeGroupV2.
+        r"""Sets the node_num of this NodeGroupV2.
 
         节点数量，取值范围0～500，Core与Task节点总数最大为500个。
 
@@ -140,7 +140,7 @@ class NodeGroupV2:
 
     @property
     def node_size(self):
-        """Gets the node_size of this NodeGroupV2.
+        r"""Gets the node_size of this NodeGroupV2.
 
         节点的实例规格。 例如：c3.4xlarge.2.linux.bigdata。实例规格详细说明请参见[MRS所使用的弹性云服务器规格](https://support.huaweicloud.com/api-mrs/mrs_01_9006.html)和[MRS所使用的裸金属服务器规格](https://support.huaweicloud.com/api-mrs/mrs_01_9001.html)。 该参数建议从MRS控制台的集群创建页面获取对应区域对应版本所支持的规格。
 
@@ -151,7 +151,7 @@ class NodeGroupV2:
 
     @node_size.setter
     def node_size(self, node_size):
-        """Sets the node_size of this NodeGroupV2.
+        r"""Sets the node_size of this NodeGroupV2.
 
         节点的实例规格。 例如：c3.4xlarge.2.linux.bigdata。实例规格详细说明请参见[MRS所使用的弹性云服务器规格](https://support.huaweicloud.com/api-mrs/mrs_01_9006.html)和[MRS所使用的裸金属服务器规格](https://support.huaweicloud.com/api-mrs/mrs_01_9001.html)。 该参数建议从MRS控制台的集群创建页面获取对应区域对应版本所支持的规格。
 
@@ -162,7 +162,7 @@ class NodeGroupV2:
 
     @property
     def root_volume(self):
-        """Gets the root_volume of this NodeGroupV2.
+        r"""Gets the root_volume of this NodeGroupV2.
 
         :return: The root_volume of this NodeGroupV2.
         :rtype: :class:`huaweicloudsdkmrs.v2.Volume`
@@ -171,7 +171,7 @@ class NodeGroupV2:
 
     @root_volume.setter
     def root_volume(self, root_volume):
-        """Sets the root_volume of this NodeGroupV2.
+        r"""Sets the root_volume of this NodeGroupV2.
 
         :param root_volume: The root_volume of this NodeGroupV2.
         :type root_volume: :class:`huaweicloudsdkmrs.v2.Volume`
@@ -180,7 +180,7 @@ class NodeGroupV2:
 
     @property
     def data_volume(self):
-        """Gets the data_volume of this NodeGroupV2.
+        r"""Gets the data_volume of this NodeGroupV2.
 
         :return: The data_volume of this NodeGroupV2.
         :rtype: :class:`huaweicloudsdkmrs.v2.Volume`
@@ -189,7 +189,7 @@ class NodeGroupV2:
 
     @data_volume.setter
     def data_volume(self, data_volume):
-        """Sets the data_volume of this NodeGroupV2.
+        r"""Sets the data_volume of this NodeGroupV2.
 
         :param data_volume: The data_volume of this NodeGroupV2.
         :type data_volume: :class:`huaweicloudsdkmrs.v2.Volume`
@@ -198,7 +198,7 @@ class NodeGroupV2:
 
     @property
     def data_volume_count(self):
-        """Gets the data_volume_count of this NodeGroupV2.
+        r"""Gets the data_volume_count of this NodeGroupV2.
 
         节点数据磁盘存储数目，取值范围：0～20。
 
@@ -209,7 +209,7 @@ class NodeGroupV2:
 
     @data_volume_count.setter
     def data_volume_count(self, data_volume_count):
-        """Sets the data_volume_count of this NodeGroupV2.
+        r"""Sets the data_volume_count of this NodeGroupV2.
 
         节点数据磁盘存储数目，取值范围：0～20。
 
@@ -220,7 +220,7 @@ class NodeGroupV2:
 
     @property
     def charge_info(self):
-        """Gets the charge_info of this NodeGroupV2.
+        r"""Gets the charge_info of this NodeGroupV2.
 
         :return: The charge_info of this NodeGroupV2.
         :rtype: :class:`huaweicloudsdkmrs.v2.ChargeInfo`
@@ -229,7 +229,7 @@ class NodeGroupV2:
 
     @charge_info.setter
     def charge_info(self, charge_info):
-        """Sets the charge_info of this NodeGroupV2.
+        r"""Sets the charge_info of this NodeGroupV2.
 
         :param charge_info: The charge_info of this NodeGroupV2.
         :type charge_info: :class:`huaweicloudsdkmrs.v2.ChargeInfo`
@@ -238,7 +238,7 @@ class NodeGroupV2:
 
     @property
     def auto_scaling_policy(self):
-        """Gets the auto_scaling_policy of this NodeGroupV2.
+        r"""Gets the auto_scaling_policy of this NodeGroupV2.
 
         :return: The auto_scaling_policy of this NodeGroupV2.
         :rtype: :class:`huaweicloudsdkmrs.v2.AutoScalingPolicy`
@@ -247,7 +247,7 @@ class NodeGroupV2:
 
     @auto_scaling_policy.setter
     def auto_scaling_policy(self, auto_scaling_policy):
-        """Sets the auto_scaling_policy of this NodeGroupV2.
+        r"""Sets the auto_scaling_policy of this NodeGroupV2.
 
         :param auto_scaling_policy: The auto_scaling_policy of this NodeGroupV2.
         :type auto_scaling_policy: :class:`huaweicloudsdkmrs.v2.AutoScalingPolicy`
@@ -256,7 +256,7 @@ class NodeGroupV2:
 
     @property
     def assigned_roles(self):
-        """Gets the assigned_roles of this NodeGroupV2.
+        r"""Gets the assigned_roles of this NodeGroupV2.
 
         当集群类型为CUSTOM时，该参数必选。可以指定节点组中部署的角色，该参数是一个字符串数组，每个字符串表示一个角色表达式。 角色表达式定义： - 当该角色在节点组所有节点部署时： {role name}，如“DataNode”。 - 当该角色在节点组指定下标节点部署时：{role name}:{index1},{index2}…,{indexN}，如“NameNode:1,2”，下标从1开始计数。 - 部分角色支持多实例部署（即在一个节点部署多个同角色的实例）：{role name}[{instance count}]，如“EsNode[9]” 可选的角色请参考[MRS支持的角色与组件对应表](https://support.huaweicloud.com/api-mrs/mrs_02_0106.html)。
 
@@ -267,7 +267,7 @@ class NodeGroupV2:
 
     @assigned_roles.setter
     def assigned_roles(self, assigned_roles):
-        """Sets the assigned_roles of this NodeGroupV2.
+        r"""Sets the assigned_roles of this NodeGroupV2.
 
         当集群类型为CUSTOM时，该参数必选。可以指定节点组中部署的角色，该参数是一个字符串数组，每个字符串表示一个角色表达式。 角色表达式定义： - 当该角色在节点组所有节点部署时： {role name}，如“DataNode”。 - 当该角色在节点组指定下标节点部署时：{role name}:{index1},{index2}…,{indexN}，如“NameNode:1,2”，下标从1开始计数。 - 部分角色支持多实例部署（即在一个节点部署多个同角色的实例）：{role name}[{instance count}]，如“EsNode[9]” 可选的角色请参考[MRS支持的角色与组件对应表](https://support.huaweicloud.com/api-mrs/mrs_02_0106.html)。
 

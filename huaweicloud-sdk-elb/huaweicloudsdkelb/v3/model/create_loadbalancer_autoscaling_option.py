@@ -27,7 +27,7 @@ class CreateLoadbalancerAutoscalingOption:
     }
 
     def __init__(self, enable=None, min_l7_flavor_id=None):
-        """CreateLoadbalancerAutoscalingOption
+        r"""CreateLoadbalancerAutoscalingOption
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateLoadbalancerAutoscalingOption:
 
     @property
     def enable(self):
-        """Gets the enable of this CreateLoadbalancerAutoscalingOption.
+        r"""Gets the enable of this CreateLoadbalancerAutoscalingOption.
 
         参数解释：负载均衡器实例弹性扩缩容开关。 [网关型LB不支持该字段。](tag:hws_eu)  取值范围：  - true：开启。  - false：关闭。
 
@@ -60,7 +60,7 @@ class CreateLoadbalancerAutoscalingOption:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this CreateLoadbalancerAutoscalingOption.
+        r"""Sets the enable of this CreateLoadbalancerAutoscalingOption.
 
         参数解释：负载均衡器实例弹性扩缩容开关。 [网关型LB不支持该字段。](tag:hws_eu)  取值范围：  - true：开启。  - false：关闭。
 
@@ -71,7 +71,7 @@ class CreateLoadbalancerAutoscalingOption:
 
     @property
     def min_l7_flavor_id(self):
-        """Gets the min_l7_flavor_id of this CreateLoadbalancerAutoscalingOption.
+        r"""Gets the min_l7_flavor_id of this CreateLoadbalancerAutoscalingOption.
 
         参数解释：实例弹性扩缩容的最小七层规格ID。  约束限制： 该字段已经废弃，建议不要使用该字段。
 
@@ -82,7 +82,7 @@ class CreateLoadbalancerAutoscalingOption:
 
     @min_l7_flavor_id.setter
     def min_l7_flavor_id(self, min_l7_flavor_id):
-        """Sets the min_l7_flavor_id of this CreateLoadbalancerAutoscalingOption.
+        r"""Sets the min_l7_flavor_id of this CreateLoadbalancerAutoscalingOption.
 
         参数解释：实例弹性扩缩容的最小七层规格ID。  约束限制： 该字段已经废弃，建议不要使用该字段。
 

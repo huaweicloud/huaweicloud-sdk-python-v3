@@ -41,7 +41,7 @@ class ListInstancesRequest:
     }
 
     def __init__(self, workspace=None, name=None, task_type=None, run_status=None, notify_status=None, start_time=None, end_time=None, limit=None, offset=None):
-        """ListInstancesRequest
+        r"""ListInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class ListInstancesRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListInstancesRequest.
+        r"""Gets the workspace of this ListInstancesRequest.
 
         DataArts Studio工作空间ID
 
@@ -109,7 +109,7 @@ class ListInstancesRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListInstancesRequest.
+        r"""Sets the workspace of this ListInstancesRequest.
 
         DataArts Studio工作空间ID
 
@@ -120,7 +120,7 @@ class ListInstancesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListInstancesRequest.
+        r"""Gets the name of this ListInstancesRequest.
 
         规则名称
 
@@ -131,7 +131,7 @@ class ListInstancesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListInstancesRequest.
+        r"""Sets the name of this ListInstancesRequest.
 
         规则名称
 
@@ -142,7 +142,7 @@ class ListInstancesRequest:
 
     @property
     def task_type(self):
-        """Gets the task_type of this ListInstancesRequest.
+        r"""Gets the task_type of this ListInstancesRequest.
 
         任务实例类型 QUALITY_TASK:质量作业 CONSISTENCY_TASK:对账作业
 
@@ -153,7 +153,7 @@ class ListInstancesRequest:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this ListInstancesRequest.
+        r"""Sets the task_type of this ListInstancesRequest.
 
         任务实例类型 QUALITY_TASK:质量作业 CONSISTENCY_TASK:对账作业
 
@@ -164,7 +164,7 @@ class ListInstancesRequest:
 
     @property
     def run_status(self):
-        """Gets the run_status of this ListInstancesRequest.
+        r"""Gets the run_status of this ListInstancesRequest.
 
         状态, RUNNING:运行中,FAILED:失败,ALARMING:报警,SUCCESS:正常,SUSPENDING:暂停中,UNKNOWN:未定义
 
@@ -175,7 +175,7 @@ class ListInstancesRequest:
 
     @run_status.setter
     def run_status(self, run_status):
-        """Sets the run_status of this ListInstancesRequest.
+        r"""Sets the run_status of this ListInstancesRequest.
 
         状态, RUNNING:运行中,FAILED:失败,ALARMING:报警,SUCCESS:正常,SUSPENDING:暂停中,UNKNOWN:未定义
 
@@ -186,7 +186,7 @@ class ListInstancesRequest:
 
     @property
     def notify_status(self):
-        """Gets the notify_status of this ListInstancesRequest.
+        r"""Gets the notify_status of this ListInstancesRequest.
 
         通知状态 NOT_TRIGGERED:未触发,SUCCESS:成功,FAILED:失败
 
@@ -197,7 +197,7 @@ class ListInstancesRequest:
 
     @notify_status.setter
     def notify_status(self, notify_status):
-        """Sets the notify_status of this ListInstancesRequest.
+        r"""Sets the notify_status of this ListInstancesRequest.
 
         通知状态 NOT_TRIGGERED:未触发,SUCCESS:成功,FAILED:失败
 
@@ -208,7 +208,7 @@ class ListInstancesRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListInstancesRequest.
+        r"""Gets the start_time of this ListInstancesRequest.
 
         最近运行时间查询区间的开始时间,13位时间戳(精确到毫秒)
 
@@ -219,7 +219,7 @@ class ListInstancesRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListInstancesRequest.
+        r"""Sets the start_time of this ListInstancesRequest.
 
         最近运行时间查询区间的开始时间,13位时间戳(精确到毫秒)
 
@@ -230,7 +230,7 @@ class ListInstancesRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListInstancesRequest.
+        r"""Gets the end_time of this ListInstancesRequest.
 
         最近运行时间查询区间的结束时间,13位时间戳(精确到毫秒)
 
@@ -241,7 +241,7 @@ class ListInstancesRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListInstancesRequest.
+        r"""Sets the end_time of this ListInstancesRequest.
 
         最近运行时间查询区间的结束时间,13位时间戳(精确到毫秒)
 
@@ -252,7 +252,7 @@ class ListInstancesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListInstancesRequest.
+        r"""Gets the limit of this ListInstancesRequest.
 
         每页显示的条目数量,最大值为100
 
@@ -263,7 +263,7 @@ class ListInstancesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListInstancesRequest.
+        r"""Sets the limit of this ListInstancesRequest.
 
         每页显示的条目数量,最大值为100
 
@@ -274,7 +274,7 @@ class ListInstancesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListInstancesRequest.
+        r"""Gets the offset of this ListInstancesRequest.
 
         分页偏移量
 
@@ -285,7 +285,7 @@ class ListInstancesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListInstancesRequest.
+        r"""Sets the offset of this ListInstancesRequest.
 
         分页偏移量
 

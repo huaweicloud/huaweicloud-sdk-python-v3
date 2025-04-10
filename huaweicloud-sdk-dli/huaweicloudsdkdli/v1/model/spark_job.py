@@ -55,7 +55,7 @@ class SparkJob:
     }
 
     def __init__(self, id=None, state=None, app_id=None, log=None, sc_type=None, cluster_name=None, create_time=None, name=None, owner=None, proxy_user=None, kind=None, queue=None, image=None, req_body=None, update_time=None, duration=None):
-        """SparkJob
+        r"""SparkJob
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class SparkJob:
 
     @property
     def id(self):
-        """Gets the id of this SparkJob.
+        r"""Gets the id of this SparkJob.
 
         Batch作业的id。
 
@@ -159,7 +159,7 @@ class SparkJob:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SparkJob.
+        r"""Sets the id of this SparkJob.
 
         Batch作业的id。
 
@@ -170,7 +170,7 @@ class SparkJob:
 
     @property
     def state(self):
-        """Gets the state of this SparkJob.
+        r"""Gets the state of this SparkJob.
 
         Batch作业的状态。包括： starting：正在启动；running：正在执行任务；dead：session已退出；success：session停止成功；recovering：正在恢复。
 
@@ -181,7 +181,7 @@ class SparkJob:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this SparkJob.
+        r"""Sets the state of this SparkJob.
 
         Batch作业的状态。包括： starting：正在启动；running：正在执行任务；dead：session已退出；success：session停止成功；recovering：正在恢复。
 
@@ -192,7 +192,7 @@ class SparkJob:
 
     @property
     def app_id(self):
-        """Gets the app_id of this SparkJob.
+        r"""Gets the app_id of this SparkJob.
 
         批处理作业的后台app id。
 
@@ -203,7 +203,7 @@ class SparkJob:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this SparkJob.
+        r"""Sets the app_id of this SparkJob.
 
         批处理作业的后台app id。
 
@@ -214,7 +214,7 @@ class SparkJob:
 
     @property
     def log(self):
-        """Gets the log of this SparkJob.
+        r"""Gets the log of this SparkJob.
 
         显示当前Batch作业的最后10条记录。
 
@@ -225,7 +225,7 @@ class SparkJob:
 
     @log.setter
     def log(self, log):
-        """Sets the log of this SparkJob.
+        r"""Sets the log of this SparkJob.
 
         显示当前Batch作业的最后10条记录。
 
@@ -236,7 +236,7 @@ class SparkJob:
 
     @property
     def sc_type(self):
-        """Gets the sc_type of this SparkJob.
+        r"""Gets the sc_type of this SparkJob.
 
         计算资源类型。用户自定义时返回CUSTOMIZED。
 
@@ -247,7 +247,7 @@ class SparkJob:
 
     @sc_type.setter
     def sc_type(self, sc_type):
-        """Sets the sc_type of this SparkJob.
+        r"""Sets the sc_type of this SparkJob.
 
         计算资源类型。用户自定义时返回CUSTOMIZED。
 
@@ -258,7 +258,7 @@ class SparkJob:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this SparkJob.
+        r"""Gets the cluster_name of this SparkJob.
 
         会话所在队列。
 
@@ -269,7 +269,7 @@ class SparkJob:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this SparkJob.
+        r"""Sets the cluster_name of this SparkJob.
 
         会话所在队列。
 
@@ -280,7 +280,7 @@ class SparkJob:
 
     @property
     def create_time(self):
-        """Gets the create_time of this SparkJob.
+        r"""Gets the create_time of this SparkJob.
 
         Batch的创建时间。是单位为“毫秒”的时间戳。
 
@@ -291,7 +291,7 @@ class SparkJob:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this SparkJob.
+        r"""Sets the create_time of this SparkJob.
 
         Batch的创建时间。是单位为“毫秒”的时间戳。
 
@@ -302,7 +302,7 @@ class SparkJob:
 
     @property
     def name(self):
-        """Gets the name of this SparkJob.
+        r"""Gets the name of this SparkJob.
 
         创建时用户指定的批处理名称，不能超过128个字符。
 
@@ -313,7 +313,7 @@ class SparkJob:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SparkJob.
+        r"""Sets the name of this SparkJob.
 
         创建时用户指定的批处理名称，不能超过128个字符。
 
@@ -324,7 +324,7 @@ class SparkJob:
 
     @property
     def owner(self):
-        """Gets the owner of this SparkJob.
+        r"""Gets the owner of this SparkJob.
 
         批处理作业所属用户
 
@@ -335,7 +335,7 @@ class SparkJob:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this SparkJob.
+        r"""Sets the owner of this SparkJob.
 
         批处理作业所属用户
 
@@ -346,7 +346,7 @@ class SparkJob:
 
     @property
     def proxy_user(self):
-        """Gets the proxy_user of this SparkJob.
+        r"""Gets the proxy_user of this SparkJob.
 
         批处理作业所属代理用户（资源租户）。
 
@@ -357,7 +357,7 @@ class SparkJob:
 
     @proxy_user.setter
     def proxy_user(self, proxy_user):
-        """Sets the proxy_user of this SparkJob.
+        r"""Sets the proxy_user of this SparkJob.
 
         批处理作业所属代理用户（资源租户）。
 
@@ -368,7 +368,7 @@ class SparkJob:
 
     @property
     def kind(self):
-        """Gets the kind of this SparkJob.
+        r"""Gets the kind of this SparkJob.
 
         批处理作业类型，只支持spark类型参数。
 
@@ -379,7 +379,7 @@ class SparkJob:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this SparkJob.
+        r"""Sets the kind of this SparkJob.
 
         批处理作业类型，只支持spark类型参数。
 
@@ -390,7 +390,7 @@ class SparkJob:
 
     @property
     def queue(self):
-        """Gets the queue of this SparkJob.
+        r"""Gets the queue of this SparkJob.
 
         用于指定队列，填写已创建DLI的队列名
 
@@ -401,7 +401,7 @@ class SparkJob:
 
     @queue.setter
     def queue(self, queue):
-        """Sets the queue of this SparkJob.
+        r"""Sets the queue of this SparkJob.
 
         用于指定队列，填写已创建DLI的队列名
 
@@ -412,7 +412,7 @@ class SparkJob:
 
     @property
     def image(self):
-        """Gets the image of this SparkJob.
+        r"""Gets the image of this SparkJob.
 
         自定义镜像。格式为：组织名/镜像名:镜像版本。
 
@@ -423,7 +423,7 @@ class SparkJob:
 
     @image.setter
     def image(self, image):
-        """Sets the image of this SparkJob.
+        r"""Sets the image of this SparkJob.
 
         自定义镜像。格式为：组织名/镜像名:镜像版本。
 
@@ -434,7 +434,7 @@ class SparkJob:
 
     @property
     def req_body(self):
-        """Gets the req_body of this SparkJob.
+        r"""Gets the req_body of this SparkJob.
 
         请求参数详情
 
@@ -445,7 +445,7 @@ class SparkJob:
 
     @req_body.setter
     def req_body(self, req_body):
-        """Sets the req_body of this SparkJob.
+        r"""Sets the req_body of this SparkJob.
 
         请求参数详情
 
@@ -456,7 +456,7 @@ class SparkJob:
 
     @property
     def update_time(self):
-        """Gets the update_time of this SparkJob.
+        r"""Gets the update_time of this SparkJob.
 
         更新时间
 
@@ -467,7 +467,7 @@ class SparkJob:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this SparkJob.
+        r"""Sets the update_time of this SparkJob.
 
         更新时间
 
@@ -478,7 +478,7 @@ class SparkJob:
 
     @property
     def duration(self):
-        """Gets the duration of this SparkJob.
+        r"""Gets the duration of this SparkJob.
 
         作业运行时长，单位毫秒。
 
@@ -489,7 +489,7 @@ class SparkJob:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this SparkJob.
+        r"""Sets the duration of this SparkJob.
 
         作业运行时长，单位毫秒。
 

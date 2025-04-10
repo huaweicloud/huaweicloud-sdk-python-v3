@@ -29,7 +29,7 @@ class ListFunctionsRequest:
     }
 
     def __init__(self, marker=None, maxitems=None, package_name=None):
-        """ListFunctionsRequest
+        r"""ListFunctionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListFunctionsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListFunctionsRequest.
+        r"""Gets the marker of this ListFunctionsRequest.
 
         上一次查询到的最后的记录位置。
 
@@ -68,7 +68,7 @@ class ListFunctionsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListFunctionsRequest.
+        r"""Sets the marker of this ListFunctionsRequest.
 
         上一次查询到的最后的记录位置。
 
@@ -79,7 +79,7 @@ class ListFunctionsRequest:
 
     @property
     def maxitems(self):
-        """Gets the maxitems of this ListFunctionsRequest.
+        r"""Gets the maxitems of this ListFunctionsRequest.
 
         每次查询获取的最大函数记录数量 最大值：400 如果不提供该值或者提供的值大于400或等于0，则使用默认值：400 如果该值小于0，则返回参数错误。
 
@@ -90,7 +90,7 @@ class ListFunctionsRequest:
 
     @maxitems.setter
     def maxitems(self, maxitems):
-        """Sets the maxitems of this ListFunctionsRequest.
+        r"""Sets the maxitems of this ListFunctionsRequest.
 
         每次查询获取的最大函数记录数量 最大值：400 如果不提供该值或者提供的值大于400或等于0，则使用默认值：400 如果该值小于0，则返回参数错误。
 
@@ -101,7 +101,7 @@ class ListFunctionsRequest:
 
     @property
     def package_name(self):
-        """Gets the package_name of this ListFunctionsRequest.
+        r"""Gets the package_name of this ListFunctionsRequest.
 
         自定义分组名称。
 
@@ -112,7 +112,7 @@ class ListFunctionsRequest:
 
     @package_name.setter
     def package_name(self, package_name):
-        """Sets the package_name of this ListFunctionsRequest.
+        r"""Sets the package_name of this ListFunctionsRequest.
 
         自定义分组名称。
 

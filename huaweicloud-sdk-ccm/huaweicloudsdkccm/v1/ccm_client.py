@@ -34,7 +34,7 @@ class CcmClient(Client):
         return client_builder
 
     def batch_create_ca_tags(self, request):
-        """批量创建CA标签
+        r"""批量创建CA标签
 
         批量创建CA标签。
         
@@ -101,7 +101,7 @@ class CcmClient(Client):
         return http_info
 
     def batch_create_cert_tags(self, request):
-        """批量创建证书标签
+        r"""批量创建证书标签
 
         批量创建证书标签。
         
@@ -168,7 +168,7 @@ class CcmClient(Client):
         return http_info
 
     def batch_delete_ca_tags(self, request):
-        """批量删除CA标签
+        r"""批量删除CA标签
 
         批量删除CA标签。
         
@@ -235,7 +235,7 @@ class CcmClient(Client):
         return http_info
 
     def batch_delete_cert_tags(self, request):
-        """批量删除证书标签
+        r"""批量删除证书标签
 
         批量删除证书标签。
         
@@ -302,7 +302,7 @@ class CcmClient(Client):
         return http_info
 
     def count_ca_resource_instances(self, request):
-        """根据标签查询CA数量
+        r"""根据标签查询CA数量
 
         根据标签查询CA数量。
         
@@ -367,7 +367,7 @@ class CcmClient(Client):
         return http_info
 
     def count_cert_resource_instances(self, request):
-        """根据标签查询证书数量
+        r"""根据标签查询证书数量
 
         根据标签查询证书数量。
         
@@ -432,7 +432,7 @@ class CcmClient(Client):
         return http_info
 
     def create_ca_tag(self, request):
-        """创建CA标签
+        r"""创建CA标签
 
         创建CA标签。
         
@@ -499,7 +499,7 @@ class CcmClient(Client):
         return http_info
 
     def create_cert_tag(self, request):
-        """创建证书标签
+        r"""创建证书标签
 
         创建证书标签。
         
@@ -566,7 +566,7 @@ class CcmClient(Client):
         return http_info
 
     def create_certificate(self, request):
-        """申请证书
+        r"""申请证书
 
         申请证书。
         
@@ -631,7 +631,7 @@ class CcmClient(Client):
         return http_info
 
     def create_certificate_authority_obs_agency(self, request):
-        """创建委托
+        r"""创建委托
 
         用户给PCA创建OBS委托授权，用于访问OBS桶，更新吊销列表。
         &gt; 用户所使用账号token需要具备安全管理员（secu_admin）权限。
@@ -695,7 +695,7 @@ class CcmClient(Client):
         return http_info
 
     def create_certificate_authority_order(self, request):
-        """购买CA
+        r"""购买CA
 
         购买CA。
         
@@ -760,7 +760,7 @@ class CcmClient(Client):
         return http_info
 
     def create_certificate_by_csr(self, request):
-        """通过CSR签发证书
+        r"""通过CSR签发证书
 
         通过CSR签发证书。功能约束如下：
         - 1、当前默认参数如下：
@@ -844,7 +844,7 @@ class CcmClient(Client):
         return http_info
 
     def delete_certificate(self, request):
-        """删除证书
+        r"""删除证书
 
         删除证书。
         
@@ -909,7 +909,7 @@ class CcmClient(Client):
         return http_info
 
     def disable_certificate_authority_crl(self, request):
-        """禁用CRL
+        r"""禁用CRL
 
         禁用当前CA的CRL。
         
@@ -974,7 +974,7 @@ class CcmClient(Client):
         return http_info
 
     def enable_certificate_authority_crl(self, request):
-        """启用CRL
+        r"""启用CRL
 
         启用当前CA的CRL。
         
@@ -1041,7 +1041,7 @@ class CcmClient(Client):
         return http_info
 
     def export_certificate(self, request):
-        """导出证书
+        r"""导出证书
 
         导出证书。
           - 国际算法
@@ -1183,7 +1183,7 @@ class CcmClient(Client):
         return http_info
 
     def list_ca_resource_instances(self, request):
-        """根据标签查询CA列表
+        r"""根据标签查询CA列表
 
         根据标签查询CA列表。
         
@@ -1248,7 +1248,7 @@ class CcmClient(Client):
         return http_info
 
     def list_ca_tags(self, request):
-        """根据CA查询标签列表
+        r"""根据CA查询标签列表
 
         根据CA证书ID查询此CA的标签列表。
         
@@ -1313,7 +1313,7 @@ class CcmClient(Client):
         return http_info
 
     def list_cert_resource_instances(self, request):
-        """根据标签查询证书列表
+        r"""根据标签查询证书列表
 
         根据标签查询证书列表。
         
@@ -1378,7 +1378,7 @@ class CcmClient(Client):
         return http_info
 
     def list_cert_tags(self, request):
-        """根据证书查询标签列表
+        r"""根据证书查询标签列表
 
         根据证书ID查询此证书的标签列表。
         
@@ -1443,7 +1443,7 @@ class CcmClient(Client):
         return http_info
 
     def list_certificate(self, request):
-        """查询私有证书列表
+        r"""查询私有证书列表
 
         查询私有证书列表。
         
@@ -1518,7 +1518,7 @@ class CcmClient(Client):
         return http_info
 
     def list_certificate_authority_obs_bucket(self, request):
-        """查询OBS桶列表
+        r"""查询OBS桶列表
 
         查询OBS桶列表。
         &gt; 只有用户创建了委托授权，方可使用此接口。创建委托授权参见本文档：**证书吊销处理&gt;创建委托**。
@@ -1582,7 +1582,7 @@ class CcmClient(Client):
         return http_info
 
     def list_domain_ca_tags(self, request):
-        """查询所有CA标签列表
+        r"""查询所有CA标签列表
 
         查询所有CA标签列表。
         
@@ -1645,7 +1645,7 @@ class CcmClient(Client):
         return http_info
 
     def list_domain_cert_tags(self, request):
-        """查询所有证书标签列表
+        r"""查询所有证书标签列表
 
         查询所有证书标签列表。
         
@@ -1708,7 +1708,7 @@ class CcmClient(Client):
         return http_info
 
     def parse_certificate_signing_request(self, request):
-        """解析CSR
+        r"""解析CSR
 
         解析CSR。
         
@@ -1773,7 +1773,7 @@ class CcmClient(Client):
         return http_info
 
     def revoke_certificate(self, request):
-        """吊销证书
+        r"""吊销证书
 
         吊销证书。
         &gt; 注：当不想填写吊销理由时，请求body体请置为\&quot;**{}**\&quot;，否则将会报错。
@@ -1841,7 +1841,7 @@ class CcmClient(Client):
         return http_info
 
     def show_certificate(self, request):
-        """查询证书详情
+        r"""查询证书详情
 
         查询证书详情。
         
@@ -1906,7 +1906,7 @@ class CcmClient(Client):
         return http_info
 
     def show_certificate_authority_obs_agency(self, request):
-        """查看是否具有委托权限
+        r"""查看是否具有委托权限
 
         查看是否具有委托权限。
         &gt; 用户所使用账号token需要具备安全管理员（secu_admin）权限。
@@ -1970,7 +1970,7 @@ class CcmClient(Client):
         return http_info
 
     def show_certificate_quota(self, request):
-        """查询私有证书配额
+        r"""查询私有证书配额
 
         查询私有证书配额。
         
@@ -2033,7 +2033,7 @@ class CcmClient(Client):
         return http_info
 
     def create_certificate_authority(self, request):
-        """创建CA
+        r"""创建CA
 
         创建CA，分以下三种情况：
         - 创建根CA，根据参数介绍中，填写必选值；
@@ -2101,7 +2101,7 @@ class CcmClient(Client):
         return http_info
 
     def delete_certificate_authority(self, request):
-        """删除CA
+        r"""删除CA
 
         计划删除CA。计划多少天后删除CA证书，可设置7天～30天内删除。
         &gt; 只有当证书状态为”待激活“或”已禁用“状态时，才可删除。”待激活“状态下，将会立即删除证书，不支持延迟删除。
@@ -2169,7 +2169,7 @@ class CcmClient(Client):
         return http_info
 
     def disable_certificate_authority(self, request):
-        """禁用CA
+        r"""禁用CA
 
         禁用CA。
         &gt; 只有当证书处于\&quot;已激活\&quot;或\&quot;已过期\&quot;状态时，可进行禁用操作。
@@ -2235,7 +2235,7 @@ class CcmClient(Client):
         return http_info
 
     def enable_certificate_authority(self, request):
-        """启用CA
+        r"""启用CA
 
         启用CA。
         &gt; 注：只有当证书处于\&quot;已禁用\&quot;状态时，可进行启用操作。
@@ -2301,7 +2301,7 @@ class CcmClient(Client):
         return http_info
 
     def export_certificate_authority_certificate(self, request):
-        """导出CA证书
+        r"""导出CA证书
 
         导出CA证书。
         &gt; 注：只有当证书处于\&quot;已激活\&quot;或\&quot;已过期\&quot;时，可进行导出操作。
@@ -2367,7 +2367,7 @@ class CcmClient(Client):
         return http_info
 
     def export_certificate_authority_csr(self, request):
-        """导出CA的证书签名请求（CSR）
+        r"""导出CA的证书签名请求（CSR）
 
         导出CA的证书签名请求。
         &gt; 只有当CA处于\&quot;待激活\&quot;状态时，可导出证书签名请求。
@@ -2433,7 +2433,7 @@ class CcmClient(Client):
         return http_info
 
     def import_certificate_authority_certificate(self, request):
-        """导入CA证书
+        r"""导入CA证书
 
         导入CA证书，使用本接口需要满足以下条件：
           - （1）证书为“待激活”状态的从属CA；
@@ -2505,7 +2505,7 @@ class CcmClient(Client):
         return http_info
 
     def issue_certificate_authority_certificate(self, request):
-        """激活CA
+        r"""激活CA
 
         激活CA。
         &gt; 只有当证书处于\&quot;待激活\&quot;状态时，可进行激活操作。
@@ -2573,7 +2573,7 @@ class CcmClient(Client):
         return http_info
 
     def list_certificate_authority(self, request):
-        """查询CA列表
+        r"""查询CA列表
 
         查询CA列表。
         
@@ -2650,7 +2650,7 @@ class CcmClient(Client):
         return http_info
 
     def restore_certificate_authority(self, request):
-        """恢复CA
+        r"""恢复CA
 
         恢复CA，将处于“计划删除”状态的CA证书，重新恢复为“已禁用”状态。
         &gt; 注：只有处于“计划删除”状态的CA证书，才可进行恢复操作。
@@ -2716,7 +2716,7 @@ class CcmClient(Client):
         return http_info
 
     def revoke_certificate_authority(self, request):
-        """吊销CA
+        r"""吊销CA
 
         吊销子CA。
         &gt; 注：当不想填写吊销理由时，请求body体请置为\&quot;**{}**\&quot;，否则将会报错。
@@ -2784,7 +2784,7 @@ class CcmClient(Client):
         return http_info
 
     def show_certificate_authority(self, request):
-        """查询CA详情
+        r"""查询CA详情
 
         查询CA详情。
         
@@ -2849,7 +2849,7 @@ class CcmClient(Client):
         return http_info
 
     def show_certificate_authority_quota(self, request):
-        """查询CA配额
+        r"""查询CA配额
 
         查询CA证书配额。
         

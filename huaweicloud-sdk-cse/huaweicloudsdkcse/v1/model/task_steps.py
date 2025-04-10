@@ -37,7 +37,7 @@ class TaskSteps:
     }
 
     def __init__(self, task_name=None, task_names=None, status=None, start_time=None, end_time=None, task_executor_brief=None, tasks=None):
-        """TaskSteps
+        r"""TaskSteps
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class TaskSteps:
 
     @property
     def task_name(self):
-        """Gets the task_name of this TaskSteps.
+        r"""Gets the task_name of this TaskSteps.
 
         处理阶段名称
 
@@ -96,7 +96,7 @@ class TaskSteps:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this TaskSteps.
+        r"""Sets the task_name of this TaskSteps.
 
         处理阶段名称
 
@@ -107,7 +107,7 @@ class TaskSteps:
 
     @property
     def task_names(self):
-        """Gets the task_names of this TaskSteps.
+        r"""Gets the task_names of this TaskSteps.
 
         当前处理阶段包含的处理步骤名称列表
 
@@ -118,7 +118,7 @@ class TaskSteps:
 
     @task_names.setter
     def task_names(self, task_names):
-        """Sets the task_names of this TaskSteps.
+        r"""Sets the task_names of this TaskSteps.
 
         当前处理阶段包含的处理步骤名称列表
 
@@ -129,7 +129,7 @@ class TaskSteps:
 
     @property
     def status(self):
-        """Gets the status of this TaskSteps.
+        r"""Gets the status of this TaskSteps.
 
         处理阶段状态
 
@@ -140,7 +140,7 @@ class TaskSteps:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this TaskSteps.
+        r"""Sets the status of this TaskSteps.
 
         处理阶段状态
 
@@ -151,7 +151,7 @@ class TaskSteps:
 
     @property
     def start_time(self):
-        """Gets the start_time of this TaskSteps.
+        r"""Gets the start_time of this TaskSteps.
 
         处理阶段开始时间
 
@@ -162,7 +162,7 @@ class TaskSteps:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this TaskSteps.
+        r"""Sets the start_time of this TaskSteps.
 
         处理阶段开始时间
 
@@ -173,7 +173,7 @@ class TaskSteps:
 
     @property
     def end_time(self):
-        """Gets the end_time of this TaskSteps.
+        r"""Gets the end_time of this TaskSteps.
 
         处理阶段结束时间
 
@@ -184,7 +184,7 @@ class TaskSteps:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this TaskSteps.
+        r"""Sets the end_time of this TaskSteps.
 
         处理阶段结束时间
 
@@ -195,7 +195,7 @@ class TaskSteps:
 
     @property
     def task_executor_brief(self):
-        """Gets the task_executor_brief of this TaskSteps.
+        r"""Gets the task_executor_brief of this TaskSteps.
 
         :return: The task_executor_brief of this TaskSteps.
         :rtype: :class:`huaweicloudsdkcse.v1.TaskExecutorBrief`
@@ -204,7 +204,7 @@ class TaskSteps:
 
     @task_executor_brief.setter
     def task_executor_brief(self, task_executor_brief):
-        """Sets the task_executor_brief of this TaskSteps.
+        r"""Sets the task_executor_brief of this TaskSteps.
 
         :param task_executor_brief: The task_executor_brief of this TaskSteps.
         :type task_executor_brief: :class:`huaweicloudsdkcse.v1.TaskExecutorBrief`
@@ -213,7 +213,7 @@ class TaskSteps:
 
     @property
     def tasks(self):
-        """Gets the tasks of this TaskSteps.
+        r"""Gets the tasks of this TaskSteps.
 
         处理步骤
 
@@ -224,7 +224,7 @@ class TaskSteps:
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this TaskSteps.
+        r"""Sets the tasks of this TaskSteps.
 
         处理步骤
 

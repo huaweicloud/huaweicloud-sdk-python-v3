@@ -31,7 +31,7 @@ class ShowJobLogRequest:
     }
 
     def __init__(self, eihealth_project_id=None, job_id=None, task_name=None, task_index=None):
-        """ShowJobLogRequest
+        r"""ShowJobLogRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ShowJobLogRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this ShowJobLogRequest.
+        r"""Gets the eihealth_project_id of this ShowJobLogRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -72,7 +72,7 @@ class ShowJobLogRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this ShowJobLogRequest.
+        r"""Sets the eihealth_project_id of this ShowJobLogRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -83,7 +83,7 @@ class ShowJobLogRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowJobLogRequest.
+        r"""Gets the job_id of this ShowJobLogRequest.
 
         作业id
 
@@ -94,7 +94,7 @@ class ShowJobLogRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowJobLogRequest.
+        r"""Sets the job_id of this ShowJobLogRequest.
 
         作业id
 
@@ -105,7 +105,7 @@ class ShowJobLogRequest:
 
     @property
     def task_name(self):
-        """Gets the task_name of this ShowJobLogRequest.
+        r"""Gets the task_name of this ShowJobLogRequest.
 
         子任务名称
 
@@ -116,7 +116,7 @@ class ShowJobLogRequest:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this ShowJobLogRequest.
+        r"""Sets the task_name of this ShowJobLogRequest.
 
         子任务名称
 
@@ -127,7 +127,7 @@ class ShowJobLogRequest:
 
     @property
     def task_index(self):
-        """Gets the task_index of this ShowJobLogRequest.
+        r"""Gets the task_index of this ShowJobLogRequest.
 
         子任务并发的序号
 
@@ -138,7 +138,7 @@ class ShowJobLogRequest:
 
     @task_index.setter
     def task_index(self, task_index):
-        """Sets the task_index of this ShowJobLogRequest.
+        r"""Sets the task_index of this ShowJobLogRequest.
 
         子任务并发的序号
 

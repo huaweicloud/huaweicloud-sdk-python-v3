@@ -37,7 +37,7 @@ class MetaData:
     }
 
     def __init__(self, size=None, duration_ms=None, duration=None, format=None, bitrate=None, video=None, audio=None):
-        """MetaData
+        r"""MetaData
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class MetaData:
 
     @property
     def size(self):
-        """Gets the size of this MetaData.
+        r"""Gets the size of this MetaData.
 
         文件大小。 
 
@@ -96,7 +96,7 @@ class MetaData:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this MetaData.
+        r"""Sets the size of this MetaData.
 
         文件大小。 
 
@@ -107,7 +107,7 @@ class MetaData:
 
     @property
     def duration_ms(self):
-        """Gets the duration_ms of this MetaData.
+        r"""Gets the duration_ms of this MetaData.
 
         视频时长，带小数位显示。单位：秒。 
 
@@ -118,7 +118,7 @@ class MetaData:
 
     @duration_ms.setter
     def duration_ms(self, duration_ms):
-        """Sets the duration_ms of this MetaData.
+        r"""Sets the duration_ms of this MetaData.
 
         视频时长，带小数位显示。单位：秒。 
 
@@ -129,7 +129,7 @@ class MetaData:
 
     @property
     def duration(self):
-        """Gets the duration of this MetaData.
+        r"""Gets the duration of this MetaData.
 
         视频时长。单位：秒。 
 
@@ -140,7 +140,7 @@ class MetaData:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this MetaData.
+        r"""Sets the duration of this MetaData.
 
         视频时长。单位：秒。 
 
@@ -151,7 +151,7 @@ class MetaData:
 
     @property
     def format(self):
-        """Gets the format of this MetaData.
+        r"""Gets the format of this MetaData.
 
         文件封装格式。 
 
@@ -162,7 +162,7 @@ class MetaData:
 
     @format.setter
     def format(self, format):
-        """Sets the format of this MetaData.
+        r"""Sets the format of this MetaData.
 
         文件封装格式。 
 
@@ -173,7 +173,7 @@ class MetaData:
 
     @property
     def bitrate(self):
-        """Gets the bitrate of this MetaData.
+        r"""Gets the bitrate of this MetaData.
 
         总码率。单位：bit/秒 
 
@@ -184,7 +184,7 @@ class MetaData:
 
     @bitrate.setter
     def bitrate(self, bitrate):
-        """Sets the bitrate of this MetaData.
+        r"""Sets the bitrate of this MetaData.
 
         总码率。单位：bit/秒 
 
@@ -195,7 +195,7 @@ class MetaData:
 
     @property
     def video(self):
-        """Gets the video of this MetaData.
+        r"""Gets the video of this MetaData.
 
         视频流元数据。 
 
@@ -206,7 +206,7 @@ class MetaData:
 
     @video.setter
     def video(self, video):
-        """Sets the video of this MetaData.
+        r"""Sets the video of this MetaData.
 
         视频流元数据。 
 
@@ -217,7 +217,7 @@ class MetaData:
 
     @property
     def audio(self):
-        """Gets the audio of this MetaData.
+        r"""Gets the audio of this MetaData.
 
         音频流元数据。 
 
@@ -228,7 +228,7 @@ class MetaData:
 
     @audio.setter
     def audio(self, audio):
-        """Sets the audio of this MetaData.
+        r"""Sets the audio of this MetaData.
 
         音频流元数据。 
 

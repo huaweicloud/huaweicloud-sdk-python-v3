@@ -24,7 +24,7 @@ class DeleteAimMsgTemplateResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteAimMsgTemplateResponse
+        r"""DeleteAimMsgTemplateResponse
 
         The model defined in huaweicloud sdk
 

@@ -29,7 +29,7 @@ class StartInstanceRestartActionRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """StartInstanceRestartActionRequest
+        r"""StartInstanceRestartActionRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class StartInstanceRestartActionRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this StartInstanceRestartActionRequest.
+        r"""Gets the x_language of this StartInstanceRestartActionRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class StartInstanceRestartActionRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this StartInstanceRestartActionRequest.
+        r"""Sets the x_language of this StartInstanceRestartActionRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class StartInstanceRestartActionRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this StartInstanceRestartActionRequest.
+        r"""Gets the instance_id of this StartInstanceRestartActionRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class StartInstanceRestartActionRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this StartInstanceRestartActionRequest.
+        r"""Sets the instance_id of this StartInstanceRestartActionRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class StartInstanceRestartActionRequest:
 
     @property
     def body(self):
-        """Gets the body of this StartInstanceRestartActionRequest.
+        r"""Gets the body of this StartInstanceRestartActionRequest.
 
         :return: The body of this StartInstanceRestartActionRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.InstanceRestartRequsetBody`
@@ -109,7 +109,7 @@ class StartInstanceRestartActionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StartInstanceRestartActionRequest.
+        r"""Sets the body of this StartInstanceRestartActionRequest.
 
         :param body: The body of this StartInstanceRestartActionRequest.
         :type body: :class:`huaweicloudsdkrds.v3.InstanceRestartRequsetBody`

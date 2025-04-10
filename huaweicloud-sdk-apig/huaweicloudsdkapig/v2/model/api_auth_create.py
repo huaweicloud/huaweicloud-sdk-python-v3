@@ -29,7 +29,7 @@ class ApiAuthCreate:
     }
 
     def __init__(self, env_id=None, app_ids=None, api_ids=None):
-        """ApiAuthCreate
+        r"""ApiAuthCreate
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ApiAuthCreate:
 
     @property
     def env_id(self):
-        """Gets the env_id of this ApiAuthCreate.
+        r"""Gets the env_id of this ApiAuthCreate.
 
         需要授权的环境编号
 
@@ -65,7 +65,7 @@ class ApiAuthCreate:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this ApiAuthCreate.
+        r"""Sets the env_id of this ApiAuthCreate.
 
         需要授权的环境编号
 
@@ -76,7 +76,7 @@ class ApiAuthCreate:
 
     @property
     def app_ids(self):
-        """Gets the app_ids of this ApiAuthCreate.
+        r"""Gets the app_ids of this ApiAuthCreate.
 
         APP的编号列表
 
@@ -87,7 +87,7 @@ class ApiAuthCreate:
 
     @app_ids.setter
     def app_ids(self, app_ids):
-        """Sets the app_ids of this ApiAuthCreate.
+        r"""Sets the app_ids of this ApiAuthCreate.
 
         APP的编号列表
 
@@ -98,7 +98,7 @@ class ApiAuthCreate:
 
     @property
     def api_ids(self):
-        """Gets the api_ids of this ApiAuthCreate.
+        r"""Gets the api_ids of this ApiAuthCreate.
 
         API的编号列表[，可以选择租户自己的API，也可以选择从云商店上购买的API](tag:hws)。
 
@@ -109,7 +109,7 @@ class ApiAuthCreate:
 
     @api_ids.setter
     def api_ids(self, api_ids):
-        """Sets the api_ids of this ApiAuthCreate.
+        r"""Sets the api_ids of this ApiAuthCreate.
 
         API的编号列表[，可以选择租户自己的API，也可以选择从云商店上购买的API](tag:hws)。
 

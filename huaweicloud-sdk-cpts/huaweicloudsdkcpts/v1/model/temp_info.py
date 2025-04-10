@@ -43,7 +43,7 @@ class TempInfo:
     }
 
     def __init__(self, id=None, project_id=None, name=None, description=None, variables=None, contents=None, temp_type=None, for_loop_params=None, logic_controller=None, enable_pre=None):
-        """TempInfo
+        r"""TempInfo
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class TempInfo:
 
     @property
     def id(self):
-        """Gets the id of this TempInfo.
+        r"""Gets the id of this TempInfo.
 
         事务id
 
@@ -117,7 +117,7 @@ class TempInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TempInfo.
+        r"""Sets the id of this TempInfo.
 
         事务id
 
@@ -128,7 +128,7 @@ class TempInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this TempInfo.
+        r"""Gets the project_id of this TempInfo.
 
         工程id
 
@@ -139,7 +139,7 @@ class TempInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this TempInfo.
+        r"""Sets the project_id of this TempInfo.
 
         工程id
 
@@ -150,7 +150,7 @@ class TempInfo:
 
     @property
     def name(self):
-        """Gets the name of this TempInfo.
+        r"""Gets the name of this TempInfo.
 
         事务名称
 
@@ -161,7 +161,7 @@ class TempInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TempInfo.
+        r"""Sets the name of this TempInfo.
 
         事务名称
 
@@ -172,7 +172,7 @@ class TempInfo:
 
     @property
     def description(self):
-        """Gets the description of this TempInfo.
+        r"""Gets the description of this TempInfo.
 
         事务描述
 
@@ -183,7 +183,7 @@ class TempInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TempInfo.
+        r"""Sets the description of this TempInfo.
 
         事务描述
 
@@ -194,7 +194,7 @@ class TempInfo:
 
     @property
     def variables(self):
-        """Gets the variables of this TempInfo.
+        r"""Gets the variables of this TempInfo.
 
         变量
 
@@ -205,7 +205,7 @@ class TempInfo:
 
     @variables.setter
     def variables(self, variables):
-        """Sets the variables of this TempInfo.
+        r"""Sets the variables of this TempInfo.
 
         变量
 
@@ -216,7 +216,7 @@ class TempInfo:
 
     @property
     def contents(self):
-        """Gets the contents of this TempInfo.
+        r"""Gets the contents of this TempInfo.
 
         事务脚本信息
 
@@ -227,7 +227,7 @@ class TempInfo:
 
     @contents.setter
     def contents(self, contents):
-        """Sets the contents of this TempInfo.
+        r"""Sets the contents of this TempInfo.
 
         事务脚本信息
 
@@ -238,7 +238,7 @@ class TempInfo:
 
     @property
     def temp_type(self):
-        """Gets the temp_type of this TempInfo.
+        r"""Gets the temp_type of this TempInfo.
 
         事务类型（弃用）
 
@@ -249,7 +249,7 @@ class TempInfo:
 
     @temp_type.setter
     def temp_type(self, temp_type):
-        """Sets the temp_type of this TempInfo.
+        r"""Sets the temp_type of this TempInfo.
 
         事务类型（弃用）
 
@@ -260,7 +260,7 @@ class TempInfo:
 
     @property
     def for_loop_params(self):
-        """Gets the for_loop_params of this TempInfo.
+        r"""Gets the for_loop_params of this TempInfo.
 
         旧版本逻辑控制器字段，当前已未使用
 
@@ -271,7 +271,7 @@ class TempInfo:
 
     @for_loop_params.setter
     def for_loop_params(self, for_loop_params):
-        """Sets the for_loop_params of this TempInfo.
+        r"""Sets the for_loop_params of this TempInfo.
 
         旧版本逻辑控制器字段，当前已未使用
 
@@ -282,7 +282,7 @@ class TempInfo:
 
     @property
     def logic_controller(self):
-        """Gets the logic_controller of this TempInfo.
+        r"""Gets the logic_controller of this TempInfo.
 
         :return: The logic_controller of this TempInfo.
         :rtype: :class:`huaweicloudsdkcpts.v1.LogicController`
@@ -291,7 +291,7 @@ class TempInfo:
 
     @logic_controller.setter
     def logic_controller(self, logic_controller):
-        """Sets the logic_controller of this TempInfo.
+        r"""Sets the logic_controller of this TempInfo.
 
         :param logic_controller: The logic_controller of this TempInfo.
         :type logic_controller: :class:`huaweicloudsdkcpts.v1.LogicController`
@@ -300,7 +300,7 @@ class TempInfo:
 
     @property
     def enable_pre(self):
-        """Gets the enable_pre of this TempInfo.
+        r"""Gets the enable_pre of this TempInfo.
 
         是否启用预置事务，当前版本已未使用
 
@@ -311,7 +311,7 @@ class TempInfo:
 
     @enable_pre.setter
     def enable_pre(self, enable_pre):
-        """Sets the enable_pre of this TempInfo.
+        r"""Sets the enable_pre of this TempInfo.
 
         是否启用预置事务，当前版本已未使用
 

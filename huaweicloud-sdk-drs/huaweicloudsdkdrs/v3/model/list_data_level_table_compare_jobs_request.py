@@ -31,7 +31,7 @@ class ListDataLevelTableCompareJobsRequest:
     }
 
     def __init__(self, x_language=None, job_id=None, limit=None, offset=None):
-        """ListDataLevelTableCompareJobsRequest
+        r"""ListDataLevelTableCompareJobsRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListDataLevelTableCompareJobsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListDataLevelTableCompareJobsRequest.
+        r"""Gets the x_language of this ListDataLevelTableCompareJobsRequest.
 
         请求语言类型。
 
@@ -74,7 +74,7 @@ class ListDataLevelTableCompareJobsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListDataLevelTableCompareJobsRequest.
+        r"""Sets the x_language of this ListDataLevelTableCompareJobsRequest.
 
         请求语言类型。
 
@@ -85,7 +85,7 @@ class ListDataLevelTableCompareJobsRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ListDataLevelTableCompareJobsRequest.
+        r"""Gets the job_id of this ListDataLevelTableCompareJobsRequest.
 
         任务ID。
 
@@ -96,7 +96,7 @@ class ListDataLevelTableCompareJobsRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ListDataLevelTableCompareJobsRequest.
+        r"""Sets the job_id of this ListDataLevelTableCompareJobsRequest.
 
         任务ID。
 
@@ -107,7 +107,7 @@ class ListDataLevelTableCompareJobsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDataLevelTableCompareJobsRequest.
+        r"""Gets the limit of this ListDataLevelTableCompareJobsRequest.
 
         每页显示的条目数量，最大值1000。
 
@@ -118,7 +118,7 @@ class ListDataLevelTableCompareJobsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDataLevelTableCompareJobsRequest.
+        r"""Sets the limit of this ListDataLevelTableCompareJobsRequest.
 
         每页显示的条目数量，最大值1000。
 
@@ -129,7 +129,7 @@ class ListDataLevelTableCompareJobsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDataLevelTableCompareJobsRequest.
+        r"""Gets the offset of this ListDataLevelTableCompareJobsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0。
 
@@ -140,7 +140,7 @@ class ListDataLevelTableCompareJobsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDataLevelTableCompareJobsRequest.
+        r"""Sets the offset of this ListDataLevelTableCompareJobsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0。
 

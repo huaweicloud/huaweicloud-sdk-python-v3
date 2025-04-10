@@ -31,7 +31,7 @@ class HotfixRollbackInfos:
     }
 
     def __init__(self, version=None, common_patch=None, backup_sensitive=None, descripition=None):
-        """HotfixRollbackInfos
+        r"""HotfixRollbackInfos
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class HotfixRollbackInfos:
 
     @property
     def version(self):
-        """Gets the version of this HotfixRollbackInfos.
+        r"""Gets the version of this HotfixRollbackInfos.
 
         热补丁版本。
 
@@ -75,7 +75,7 @@ class HotfixRollbackInfos:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this HotfixRollbackInfos.
+        r"""Sets the version of this HotfixRollbackInfos.
 
         热补丁版本。
 
@@ -86,7 +86,7 @@ class HotfixRollbackInfos:
 
     @property
     def common_patch(self):
-        """Gets the common_patch of this HotfixRollbackInfos.
+        r"""Gets the common_patch of this HotfixRollbackInfos.
 
         通用/非通用补丁信息。 枚举值：   \"common\": 通用补丁。   \"certain\": 定制补丁。
 
@@ -97,7 +97,7 @@ class HotfixRollbackInfos:
 
     @common_patch.setter
     def common_patch(self, common_patch):
-        """Sets the common_patch of this HotfixRollbackInfos.
+        r"""Sets the common_patch of this HotfixRollbackInfos.
 
         通用/非通用补丁信息。 枚举值：   \"common\": 通用补丁。   \"certain\": 定制补丁。
 
@@ -108,7 +108,7 @@ class HotfixRollbackInfos:
 
     @property
     def backup_sensitive(self):
-        """Gets the backup_sensitive of this HotfixRollbackInfos.
+        r"""Gets the backup_sensitive of this HotfixRollbackInfos.
 
         是否和备份相关。
 
@@ -119,7 +119,7 @@ class HotfixRollbackInfos:
 
     @backup_sensitive.setter
     def backup_sensitive(self, backup_sensitive):
-        """Sets the backup_sensitive of this HotfixRollbackInfos.
+        r"""Sets the backup_sensitive of this HotfixRollbackInfos.
 
         是否和备份相关。
 
@@ -130,7 +130,7 @@ class HotfixRollbackInfos:
 
     @property
     def descripition(self):
-        """Gets the descripition of this HotfixRollbackInfos.
+        r"""Gets the descripition of this HotfixRollbackInfos.
 
         补丁的描述信息。
 
@@ -141,7 +141,7 @@ class HotfixRollbackInfos:
 
     @descripition.setter
     def descripition(self, descripition):
-        """Sets the descripition of this HotfixRollbackInfos.
+        r"""Sets the descripition of this HotfixRollbackInfos.
 
         补丁的描述信息。
 

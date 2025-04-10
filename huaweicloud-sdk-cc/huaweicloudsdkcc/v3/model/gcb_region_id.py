@@ -25,7 +25,7 @@ class GcbRegionId:
     }
 
     def __init__(self, region_id=None):
-        """GcbRegionId
+        r"""GcbRegionId
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class GcbRegionId:
 
     @property
     def region_id(self):
-        """Gets the region_id of this GcbRegionId.
+        r"""Gets the region_id of this GcbRegionId.
 
         功能说明：实例所在region，不填默认\"global\"。
 
@@ -54,7 +54,7 @@ class GcbRegionId:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this GcbRegionId.
+        r"""Sets the region_id of this GcbRegionId.
 
         功能说明：实例所在region，不填默认\"global\"。
 

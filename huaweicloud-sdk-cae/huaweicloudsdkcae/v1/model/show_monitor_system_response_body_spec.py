@@ -47,7 +47,7 @@ class ShowMonitorSystemResponseBodySpec:
     }
 
     def __init__(self, id=None, type=None, instrumentation=None, access_key=None, access_value=None, access_token=None, master_address=None, apm_application=None, version=None, image_pull_policy=None, created_at=None, updated_at=None):
-        """ShowMonitorSystemResponseBodySpec
+        r"""ShowMonitorSystemResponseBodySpec
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ShowMonitorSystemResponseBodySpec:
 
     @property
     def id(self):
-        """Gets the id of this ShowMonitorSystemResponseBodySpec.
+        r"""Gets the id of this ShowMonitorSystemResponseBodySpec.
 
         监控系统id。
 
@@ -131,7 +131,7 @@ class ShowMonitorSystemResponseBodySpec:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowMonitorSystemResponseBodySpec.
+        r"""Sets the id of this ShowMonitorSystemResponseBodySpec.
 
         监控系统id。
 
@@ -142,7 +142,7 @@ class ShowMonitorSystemResponseBodySpec:
 
     @property
     def type(self):
-        """Gets the type of this ShowMonitorSystemResponseBodySpec.
+        r"""Gets the type of this ShowMonitorSystemResponseBodySpec.
 
         采集方式。
 
@@ -153,7 +153,7 @@ class ShowMonitorSystemResponseBodySpec:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowMonitorSystemResponseBodySpec.
+        r"""Sets the type of this ShowMonitorSystemResponseBodySpec.
 
         采集方式。
 
@@ -164,7 +164,7 @@ class ShowMonitorSystemResponseBodySpec:
 
     @property
     def instrumentation(self):
-        """Gets the instrumentation of this ShowMonitorSystemResponseBodySpec.
+        r"""Gets the instrumentation of this ShowMonitorSystemResponseBodySpec.
 
         探针注入方式。
 
@@ -175,7 +175,7 @@ class ShowMonitorSystemResponseBodySpec:
 
     @instrumentation.setter
     def instrumentation(self, instrumentation):
-        """Sets the instrumentation of this ShowMonitorSystemResponseBodySpec.
+        r"""Sets the instrumentation of this ShowMonitorSystemResponseBodySpec.
 
         探针注入方式。
 
@@ -186,7 +186,7 @@ class ShowMonitorSystemResponseBodySpec:
 
     @property
     def access_key(self):
-        """Gets the access_key of this ShowMonitorSystemResponseBodySpec.
+        r"""Gets the access_key of this ShowMonitorSystemResponseBodySpec.
 
         apm2访问密钥Key。
 
@@ -197,7 +197,7 @@ class ShowMonitorSystemResponseBodySpec:
 
     @access_key.setter
     def access_key(self, access_key):
-        """Sets the access_key of this ShowMonitorSystemResponseBodySpec.
+        r"""Sets the access_key of this ShowMonitorSystemResponseBodySpec.
 
         apm2访问密钥Key。
 
@@ -208,7 +208,7 @@ class ShowMonitorSystemResponseBodySpec:
 
     @property
     def access_value(self):
-        """Gets the access_value of this ShowMonitorSystemResponseBodySpec.
+        r"""Gets the access_value of this ShowMonitorSystemResponseBodySpec.
 
         apm2访问密钥value。
 
@@ -219,7 +219,7 @@ class ShowMonitorSystemResponseBodySpec:
 
     @access_value.setter
     def access_value(self, access_value):
-        """Sets the access_value of this ShowMonitorSystemResponseBodySpec.
+        r"""Sets the access_value of this ShowMonitorSystemResponseBodySpec.
 
         apm2访问密钥value。
 
@@ -230,7 +230,7 @@ class ShowMonitorSystemResponseBodySpec:
 
     @property
     def access_token(self):
-        """Gets the access_token of this ShowMonitorSystemResponseBodySpec.
+        r"""Gets the access_token of this ShowMonitorSystemResponseBodySpec.
 
         apm2 opentelemetry接入token。
 
@@ -241,7 +241,7 @@ class ShowMonitorSystemResponseBodySpec:
 
     @access_token.setter
     def access_token(self, access_token):
-        """Sets the access_token of this ShowMonitorSystemResponseBodySpec.
+        r"""Sets the access_token of this ShowMonitorSystemResponseBodySpec.
 
         apm2 opentelemetry接入token。
 
@@ -252,7 +252,7 @@ class ShowMonitorSystemResponseBodySpec:
 
     @property
     def master_address(self):
-        """Gets the master_address of this ShowMonitorSystemResponseBodySpec.
+        r"""Gets the master_address of this ShowMonitorSystemResponseBodySpec.
 
         探针接入点。
 
@@ -263,7 +263,7 @@ class ShowMonitorSystemResponseBodySpec:
 
     @master_address.setter
     def master_address(self, master_address):
-        """Sets the master_address of this ShowMonitorSystemResponseBodySpec.
+        r"""Sets the master_address of this ShowMonitorSystemResponseBodySpec.
 
         探针接入点。
 
@@ -274,7 +274,7 @@ class ShowMonitorSystemResponseBodySpec:
 
     @property
     def apm_application(self):
-        """Gets the apm_application of this ShowMonitorSystemResponseBodySpec.
+        r"""Gets the apm_application of this ShowMonitorSystemResponseBodySpec.
 
         apm2应用。
 
@@ -285,7 +285,7 @@ class ShowMonitorSystemResponseBodySpec:
 
     @apm_application.setter
     def apm_application(self, apm_application):
-        """Sets the apm_application of this ShowMonitorSystemResponseBodySpec.
+        r"""Sets the apm_application of this ShowMonitorSystemResponseBodySpec.
 
         apm2应用。
 
@@ -296,7 +296,7 @@ class ShowMonitorSystemResponseBodySpec:
 
     @property
     def version(self):
-        """Gets the version of this ShowMonitorSystemResponseBodySpec.
+        r"""Gets the version of this ShowMonitorSystemResponseBodySpec.
 
         增强型探针/opentelemetry探针版本。
 
@@ -307,7 +307,7 @@ class ShowMonitorSystemResponseBodySpec:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowMonitorSystemResponseBodySpec.
+        r"""Sets the version of this ShowMonitorSystemResponseBodySpec.
 
         增强型探针/opentelemetry探针版本。
 
@@ -318,7 +318,7 @@ class ShowMonitorSystemResponseBodySpec:
 
     @property
     def image_pull_policy(self):
-        """Gets the image_pull_policy of this ShowMonitorSystemResponseBodySpec.
+        r"""Gets the image_pull_policy of this ShowMonitorSystemResponseBodySpec.
 
         探针镜像更新策略。
 
@@ -329,7 +329,7 @@ class ShowMonitorSystemResponseBodySpec:
 
     @image_pull_policy.setter
     def image_pull_policy(self, image_pull_policy):
-        """Sets the image_pull_policy of this ShowMonitorSystemResponseBodySpec.
+        r"""Sets the image_pull_policy of this ShowMonitorSystemResponseBodySpec.
 
         探针镜像更新策略。
 
@@ -340,7 +340,7 @@ class ShowMonitorSystemResponseBodySpec:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ShowMonitorSystemResponseBodySpec.
+        r"""Gets the created_at of this ShowMonitorSystemResponseBodySpec.
 
         创建时间。
 
@@ -351,7 +351,7 @@ class ShowMonitorSystemResponseBodySpec:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ShowMonitorSystemResponseBodySpec.
+        r"""Sets the created_at of this ShowMonitorSystemResponseBodySpec.
 
         创建时间。
 
@@ -362,7 +362,7 @@ class ShowMonitorSystemResponseBodySpec:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ShowMonitorSystemResponseBodySpec.
+        r"""Gets the updated_at of this ShowMonitorSystemResponseBodySpec.
 
         更新时间。
 
@@ -373,7 +373,7 @@ class ShowMonitorSystemResponseBodySpec:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ShowMonitorSystemResponseBodySpec.
+        r"""Sets the updated_at of this ShowMonitorSystemResponseBodySpec.
 
         更新时间。
 

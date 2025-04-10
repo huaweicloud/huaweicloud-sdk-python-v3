@@ -29,7 +29,7 @@ class ListMultiAccountRetrieveCouponsRequest:
     }
 
     def __init__(self, sub_customer_id=None, offset=None, limit=None):
-        """ListMultiAccountRetrieveCouponsRequest
+        r"""ListMultiAccountRetrieveCouponsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListMultiAccountRetrieveCouponsRequest:
 
     @property
     def sub_customer_id(self):
-        """Gets the sub_customer_id of this ListMultiAccountRetrieveCouponsRequest.
+        r"""Gets the sub_customer_id of this ListMultiAccountRetrieveCouponsRequest.
 
         企业子账户的账号ID。
 
@@ -67,7 +67,7 @@ class ListMultiAccountRetrieveCouponsRequest:
 
     @sub_customer_id.setter
     def sub_customer_id(self, sub_customer_id):
-        """Sets the sub_customer_id of this ListMultiAccountRetrieveCouponsRequest.
+        r"""Sets the sub_customer_id of this ListMultiAccountRetrieveCouponsRequest.
 
         企业子账户的账号ID。
 
@@ -78,7 +78,7 @@ class ListMultiAccountRetrieveCouponsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListMultiAccountRetrieveCouponsRequest.
+        r"""Gets the offset of this ListMultiAccountRetrieveCouponsRequest.
 
         偏移量，默认值为0。此参数不携带或携带值为空或携带值为null时，取默认值0；不支持携带值为空串。
 
@@ -89,7 +89,7 @@ class ListMultiAccountRetrieveCouponsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListMultiAccountRetrieveCouponsRequest.
+        r"""Sets the offset of this ListMultiAccountRetrieveCouponsRequest.
 
         偏移量，默认值为0。此参数不携带或携带值为空或携带值为null时，取默认值0；不支持携带值为空串。
 
@@ -100,7 +100,7 @@ class ListMultiAccountRetrieveCouponsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListMultiAccountRetrieveCouponsRequest.
+        r"""Gets the limit of this ListMultiAccountRetrieveCouponsRequest.
 
         每次查询条数，默认值为10。此参数不携带或携带值为空或携带值为null时，取默认值0；不支持携带值为空串。
 
@@ -111,7 +111,7 @@ class ListMultiAccountRetrieveCouponsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListMultiAccountRetrieveCouponsRequest.
+        r"""Sets the limit of this ListMultiAccountRetrieveCouponsRequest.
 
         每次查询条数，默认值为10。此参数不携带或携带值为空或携带值为null时，取默认值0；不支持携带值为空串。
 

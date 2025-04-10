@@ -37,7 +37,7 @@ class DbScanResultInfo:
     }
 
     def __init__(self, task_id=None, db_name=None, table_id=None, table_name=None, risk_level=None, sensitive_data_type=None, match_info=None):
-        """DbScanResultInfo
+        r"""DbScanResultInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class DbScanResultInfo:
 
     @property
     def task_id(self):
-        """Gets the task_id of this DbScanResultInfo.
+        r"""Gets the task_id of this DbScanResultInfo.
 
         任务ID
 
@@ -96,7 +96,7 @@ class DbScanResultInfo:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this DbScanResultInfo.
+        r"""Sets the task_id of this DbScanResultInfo.
 
         任务ID
 
@@ -107,7 +107,7 @@ class DbScanResultInfo:
 
     @property
     def db_name(self):
-        """Gets the db_name of this DbScanResultInfo.
+        r"""Gets the db_name of this DbScanResultInfo.
 
         数据库名称
 
@@ -118,7 +118,7 @@ class DbScanResultInfo:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this DbScanResultInfo.
+        r"""Sets the db_name of this DbScanResultInfo.
 
         数据库名称
 
@@ -129,7 +129,7 @@ class DbScanResultInfo:
 
     @property
     def table_id(self):
-        """Gets the table_id of this DbScanResultInfo.
+        r"""Gets the table_id of this DbScanResultInfo.
 
         表ID
 
@@ -140,7 +140,7 @@ class DbScanResultInfo:
 
     @table_id.setter
     def table_id(self, table_id):
-        """Sets the table_id of this DbScanResultInfo.
+        r"""Sets the table_id of this DbScanResultInfo.
 
         表ID
 
@@ -151,7 +151,7 @@ class DbScanResultInfo:
 
     @property
     def table_name(self):
-        """Gets the table_name of this DbScanResultInfo.
+        r"""Gets the table_name of this DbScanResultInfo.
 
         表名称
 
@@ -162,7 +162,7 @@ class DbScanResultInfo:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this DbScanResultInfo.
+        r"""Sets the table_name of this DbScanResultInfo.
 
         表名称
 
@@ -173,7 +173,7 @@ class DbScanResultInfo:
 
     @property
     def risk_level(self):
-        """Gets the risk_level of this DbScanResultInfo.
+        r"""Gets the risk_level of this DbScanResultInfo.
 
         风险等级
 
@@ -184,7 +184,7 @@ class DbScanResultInfo:
 
     @risk_level.setter
     def risk_level(self, risk_level):
-        """Sets the risk_level of this DbScanResultInfo.
+        r"""Sets the risk_level of this DbScanResultInfo.
 
         风险等级
 
@@ -195,7 +195,7 @@ class DbScanResultInfo:
 
     @property
     def sensitive_data_type(self):
-        """Gets the sensitive_data_type of this DbScanResultInfo.
+        r"""Gets the sensitive_data_type of this DbScanResultInfo.
 
         匹配到的规则
 
@@ -206,7 +206,7 @@ class DbScanResultInfo:
 
     @sensitive_data_type.setter
     def sensitive_data_type(self, sensitive_data_type):
-        """Sets the sensitive_data_type of this DbScanResultInfo.
+        r"""Sets the sensitive_data_type of this DbScanResultInfo.
 
         匹配到的规则
 
@@ -217,7 +217,7 @@ class DbScanResultInfo:
 
     @property
     def match_info(self):
-        """Gets the match_info of this DbScanResultInfo.
+        r"""Gets the match_info of this DbScanResultInfo.
 
         表中各列匹配到的规则
 
@@ -228,7 +228,7 @@ class DbScanResultInfo:
 
     @match_info.setter
     def match_info(self, match_info):
-        """Sets the match_info of this DbScanResultInfo.
+        r"""Sets the match_info of this DbScanResultInfo.
 
         表中各列匹配到的规则
 

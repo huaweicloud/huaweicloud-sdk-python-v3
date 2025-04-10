@@ -29,7 +29,7 @@ class Sentences:
     }
 
     def __init__(self, end_time=None, result=None, start_time=None):
-        """Sentences
+        r"""Sentences
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class Sentences:
 
     @property
     def end_time(self):
-        """Gets the end_time of this Sentences.
+        r"""Gets the end_time of this Sentences.
 
         分句结果信息
 
@@ -68,7 +68,7 @@ class Sentences:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this Sentences.
+        r"""Sets the end_time of this Sentences.
 
         分句结果信息
 
@@ -79,7 +79,7 @@ class Sentences:
 
     @property
     def result(self):
-        """Gets the result of this Sentences.
+        r"""Gets the result of this Sentences.
 
         :return: The result of this Sentences.
         :rtype: :class:`huaweicloudsdksis.v1.FlashScoreResult`
@@ -88,7 +88,7 @@ class Sentences:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this Sentences.
+        r"""Sets the result of this Sentences.
 
         :param result: The result of this Sentences.
         :type result: :class:`huaweicloudsdksis.v1.FlashScoreResult`
@@ -97,7 +97,7 @@ class Sentences:
 
     @property
     def start_time(self):
-        """Gets the start_time of this Sentences.
+        r"""Gets the start_time of this Sentences.
 
         一句话开始时间，单位毫秒
 
@@ -108,7 +108,7 @@ class Sentences:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this Sentences.
+        r"""Sets the start_time of this Sentences.
 
         一句话开始时间，单位毫秒
 

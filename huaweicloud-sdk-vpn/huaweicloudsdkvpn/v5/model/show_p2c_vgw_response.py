@@ -28,7 +28,7 @@ class ShowP2cVgwResponse(SdkResponse):
     }
 
     def __init__(self, p2c_vpn_gateway=None, request_id=None):
-        """ShowP2cVgwResponse
+        r"""ShowP2cVgwResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowP2cVgwResponse(SdkResponse):
 
     @property
     def p2c_vpn_gateway(self):
-        """Gets the p2c_vpn_gateway of this ShowP2cVgwResponse.
+        r"""Gets the p2c_vpn_gateway of this ShowP2cVgwResponse.
 
         :return: The p2c_vpn_gateway of this ShowP2cVgwResponse.
         :rtype: :class:`huaweicloudsdkvpn.v5.ShowResponseP2cVgw`
@@ -60,7 +60,7 @@ class ShowP2cVgwResponse(SdkResponse):
 
     @p2c_vpn_gateway.setter
     def p2c_vpn_gateway(self, p2c_vpn_gateway):
-        """Sets the p2c_vpn_gateway of this ShowP2cVgwResponse.
+        r"""Sets the p2c_vpn_gateway of this ShowP2cVgwResponse.
 
         :param p2c_vpn_gateway: The p2c_vpn_gateway of this ShowP2cVgwResponse.
         :type p2c_vpn_gateway: :class:`huaweicloudsdkvpn.v5.ShowResponseP2cVgw`
@@ -69,7 +69,7 @@ class ShowP2cVgwResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowP2cVgwResponse.
+        r"""Gets the request_id of this ShowP2cVgwResponse.
 
         请求ID
 
@@ -80,7 +80,7 @@ class ShowP2cVgwResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowP2cVgwResponse.
+        r"""Sets the request_id of this ShowP2cVgwResponse.
 
         请求ID
 

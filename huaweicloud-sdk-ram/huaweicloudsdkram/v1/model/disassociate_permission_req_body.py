@@ -25,7 +25,7 @@ class DisassociatePermissionReqBody:
     }
 
     def __init__(self, permission_id=None):
-        """DisassociatePermissionReqBody
+        r"""DisassociatePermissionReqBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DisassociatePermissionReqBody:
 
     @property
     def permission_id(self):
-        """Gets the permission_id of this DisassociatePermissionReqBody.
+        r"""Gets the permission_id of this DisassociatePermissionReqBody.
 
         共享资源权限的ID。
 
@@ -53,7 +53,7 @@ class DisassociatePermissionReqBody:
 
     @permission_id.setter
     def permission_id(self, permission_id):
-        """Sets the permission_id of this DisassociatePermissionReqBody.
+        r"""Sets the permission_id of this DisassociatePermissionReqBody.
 
         共享资源权限的ID。
 

@@ -29,7 +29,7 @@ class AIMSendTaskInfo:
     }
 
     def __init__(self, task_name=None, sms_channel=None, resolve_task=None):
-        """AIMSendTaskInfo
+        r"""AIMSendTaskInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AIMSendTaskInfo:
 
     @property
     def task_name(self):
-        """Gets the task_name of this AIMSendTaskInfo.
+        r"""Gets the task_name of this AIMSendTaskInfo.
 
         智能信息发送任务名称。
 
@@ -68,7 +68,7 @@ class AIMSendTaskInfo:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this AIMSendTaskInfo.
+        r"""Sets the task_name of this AIMSendTaskInfo.
 
         智能信息发送任务名称。
 
@@ -79,7 +79,7 @@ class AIMSendTaskInfo:
 
     @property
     def sms_channel(self):
-        """Gets the sms_channel of this AIMSendTaskInfo.
+        r"""Gets the sms_channel of this AIMSendTaskInfo.
 
         :return: The sms_channel of this AIMSendTaskInfo.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.AIMSendTaskSmsChannel`
@@ -88,7 +88,7 @@ class AIMSendTaskInfo:
 
     @sms_channel.setter
     def sms_channel(self, sms_channel):
-        """Sets the sms_channel of this AIMSendTaskInfo.
+        r"""Sets the sms_channel of this AIMSendTaskInfo.
 
         :param sms_channel: The sms_channel of this AIMSendTaskInfo.
         :type sms_channel: :class:`huaweicloudsdkkoomessage.v1.AIMSendTaskSmsChannel`
@@ -97,7 +97,7 @@ class AIMSendTaskInfo:
 
     @property
     def resolve_task(self):
-        """Gets the resolve_task of this AIMSendTaskInfo.
+        r"""Gets the resolve_task of this AIMSendTaskInfo.
 
         :return: The resolve_task of this AIMSendTaskInfo.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.AIMResolveTaskMode`
@@ -106,7 +106,7 @@ class AIMSendTaskInfo:
 
     @resolve_task.setter
     def resolve_task(self, resolve_task):
-        """Sets the resolve_task of this AIMSendTaskInfo.
+        r"""Sets the resolve_task of this AIMSendTaskInfo.
 
         :param resolve_task: The resolve_task of this AIMSendTaskInfo.
         :type resolve_task: :class:`huaweicloudsdkkoomessage.v1.AIMResolveTaskMode`

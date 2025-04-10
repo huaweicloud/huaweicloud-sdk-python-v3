@@ -27,7 +27,7 @@ class ServerGroupTagsInfo:
     }
 
     def __init__(self, server_group_id=None, tags=None):
-        """ServerGroupTagsInfo
+        r"""ServerGroupTagsInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ServerGroupTagsInfo:
 
     @property
     def server_group_id(self):
-        """Gets the server_group_id of this ServerGroupTagsInfo.
+        r"""Gets the server_group_id of this ServerGroupTagsInfo.
 
         服务器组唯一标识。
 
@@ -61,7 +61,7 @@ class ServerGroupTagsInfo:
 
     @server_group_id.setter
     def server_group_id(self, server_group_id):
-        """Sets the server_group_id of this ServerGroupTagsInfo.
+        r"""Sets the server_group_id of this ServerGroupTagsInfo.
 
         服务器组唯一标识。
 
@@ -72,7 +72,7 @@ class ServerGroupTagsInfo:
 
     @property
     def tags(self):
-        """Gets the tags of this ServerGroupTagsInfo.
+        r"""Gets the tags of this ServerGroupTagsInfo.
 
         标签列表
 
@@ -83,7 +83,7 @@ class ServerGroupTagsInfo:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ServerGroupTagsInfo.
+        r"""Sets the tags of this ServerGroupTagsInfo.
 
         标签列表
 

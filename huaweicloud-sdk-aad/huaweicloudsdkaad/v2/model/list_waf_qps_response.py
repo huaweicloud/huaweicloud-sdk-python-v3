@@ -26,7 +26,7 @@ class ListWafQpsResponse(SdkResponse):
     }
 
     def __init__(self, curve=None):
-        """ListWafQpsResponse
+        r"""ListWafQpsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListWafQpsResponse(SdkResponse):
 
     @property
     def curve(self):
-        """Gets the curve of this ListWafQpsResponse.
+        r"""Gets the curve of this ListWafQpsResponse.
 
         curve
 
@@ -55,7 +55,7 @@ class ListWafQpsResponse(SdkResponse):
 
     @curve.setter
     def curve(self, curve):
-        """Sets the curve of this ListWafQpsResponse.
+        r"""Sets the curve of this ListWafQpsResponse.
 
         curve
 

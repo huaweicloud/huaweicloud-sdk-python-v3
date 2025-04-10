@@ -27,7 +27,7 @@ class BatchDeleteAppGroupAuthorizationRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """BatchDeleteAppGroupAuthorizationRequest
+        r"""BatchDeleteAppGroupAuthorizationRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchDeleteAppGroupAuthorizationRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this BatchDeleteAppGroupAuthorizationRequest.
+        r"""Gets the x_language of this BatchDeleteAppGroupAuthorizationRequest.
 
         语言： - zh-cn：中文 - en-us：英文 - fr-fr: 法文
 
@@ -61,7 +61,7 @@ class BatchDeleteAppGroupAuthorizationRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this BatchDeleteAppGroupAuthorizationRequest.
+        r"""Sets the x_language of this BatchDeleteAppGroupAuthorizationRequest.
 
         语言： - zh-cn：中文 - en-us：英文 - fr-fr: 法文
 
@@ -72,7 +72,7 @@ class BatchDeleteAppGroupAuthorizationRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteAppGroupAuthorizationRequest.
+        r"""Gets the body of this BatchDeleteAppGroupAuthorizationRequest.
 
         :return: The body of this BatchDeleteAppGroupAuthorizationRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppGroupAuthorizeReq`
@@ -81,7 +81,7 @@ class BatchDeleteAppGroupAuthorizationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteAppGroupAuthorizationRequest.
+        r"""Sets the body of this BatchDeleteAppGroupAuthorizationRequest.
 
         :param body: The body of this BatchDeleteAppGroupAuthorizationRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.AppGroupAuthorizeReq`

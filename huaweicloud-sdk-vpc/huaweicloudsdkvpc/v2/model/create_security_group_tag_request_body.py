@@ -25,7 +25,7 @@ class CreateSecurityGroupTagRequestBody:
     }
 
     def __init__(self, tag=None):
-        """CreateSecurityGroupTagRequestBody
+        r"""CreateSecurityGroupTagRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateSecurityGroupTagRequestBody:
 
     @property
     def tag(self):
-        """Gets the tag of this CreateSecurityGroupTagRequestBody.
+        r"""Gets the tag of this CreateSecurityGroupTagRequestBody.
 
         :return: The tag of this CreateSecurityGroupTagRequestBody.
         :rtype: :class:`huaweicloudsdkvpc.v2.ResourceTag`
@@ -51,7 +51,7 @@ class CreateSecurityGroupTagRequestBody:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this CreateSecurityGroupTagRequestBody.
+        r"""Sets the tag of this CreateSecurityGroupTagRequestBody.
 
         :param tag: The tag of this CreateSecurityGroupTagRequestBody.
         :type tag: :class:`huaweicloudsdkvpc.v2.ResourceTag`

@@ -27,7 +27,7 @@ class UpdateRoutesRequest:
     }
 
     def __init__(self, edge_node_id=None, body=None):
-        """UpdateRoutesRequest
+        r"""UpdateRoutesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateRoutesRequest:
 
     @property
     def edge_node_id(self):
-        """Gets the edge_node_id of this UpdateRoutesRequest.
+        r"""Gets the edge_node_id of this UpdateRoutesRequest.
 
         边缘节点ID
 
@@ -60,7 +60,7 @@ class UpdateRoutesRequest:
 
     @edge_node_id.setter
     def edge_node_id(self, edge_node_id):
-        """Sets the edge_node_id of this UpdateRoutesRequest.
+        r"""Sets the edge_node_id of this UpdateRoutesRequest.
 
         边缘节点ID
 
@@ -71,7 +71,7 @@ class UpdateRoutesRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateRoutesRequest.
+        r"""Gets the body of this UpdateRoutesRequest.
 
         :return: The body of this UpdateRoutesRequest.
         :rtype: list[:class:`huaweicloudsdkiotedge.v2.CreateRouterReqDTO`]
@@ -80,7 +80,7 @@ class UpdateRoutesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateRoutesRequest.
+        r"""Sets the body of this UpdateRoutesRequest.
 
         :param body: The body of this UpdateRoutesRequest.
         :type body: list[:class:`huaweicloudsdkiotedge.v2.CreateRouterReqDTO`]

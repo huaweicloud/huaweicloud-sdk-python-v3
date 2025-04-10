@@ -28,7 +28,7 @@ class CreateRuleResponse(SdkResponse):
     }
 
     def __init__(self, status=None, rule_id=None):
-        """CreateRuleResponse
+        r"""CreateRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateRuleResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateRuleResponse.
+        r"""Gets the status of this CreateRuleResponse.
 
         创建状态
 
@@ -62,7 +62,7 @@ class CreateRuleResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateRuleResponse.
+        r"""Sets the status of this CreateRuleResponse.
 
         创建状态
 
@@ -73,7 +73,7 @@ class CreateRuleResponse(SdkResponse):
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this CreateRuleResponse.
+        r"""Gets the rule_id of this CreateRuleResponse.
 
         规则ID
 
@@ -84,7 +84,7 @@ class CreateRuleResponse(SdkResponse):
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this CreateRuleResponse.
+        r"""Sets the rule_id of this CreateRuleResponse.
 
         规则ID
 

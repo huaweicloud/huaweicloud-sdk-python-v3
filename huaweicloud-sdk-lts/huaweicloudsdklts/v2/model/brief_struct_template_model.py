@@ -33,7 +33,7 @@ class BriefStructTemplateModel:
     }
 
     def __init__(self, create_time=None, id=None, template_name=None, template_type=None, project_id=None):
-        """BriefStructTemplateModel
+        r"""BriefStructTemplateModel
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class BriefStructTemplateModel:
 
     @property
     def create_time(self):
-        """Gets the create_time of this BriefStructTemplateModel.
+        r"""Gets the create_time of this BriefStructTemplateModel.
 
         模板创建/更新时间
 
@@ -77,7 +77,7 @@ class BriefStructTemplateModel:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this BriefStructTemplateModel.
+        r"""Sets the create_time of this BriefStructTemplateModel.
 
         模板创建/更新时间
 
@@ -88,7 +88,7 @@ class BriefStructTemplateModel:
 
     @property
     def id(self):
-        """Gets the id of this BriefStructTemplateModel.
+        r"""Gets the id of this BriefStructTemplateModel.
 
         模板id
 
@@ -99,7 +99,7 @@ class BriefStructTemplateModel:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BriefStructTemplateModel.
+        r"""Sets the id of this BriefStructTemplateModel.
 
         模板id
 
@@ -110,7 +110,7 @@ class BriefStructTemplateModel:
 
     @property
     def template_name(self):
-        """Gets the template_name of this BriefStructTemplateModel.
+        r"""Gets the template_name of this BriefStructTemplateModel.
 
         模板名称
 
@@ -121,7 +121,7 @@ class BriefStructTemplateModel:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this BriefStructTemplateModel.
+        r"""Sets the template_name of this BriefStructTemplateModel.
 
         模板名称
 
@@ -132,7 +132,7 @@ class BriefStructTemplateModel:
 
     @property
     def template_type(self):
-        """Gets the template_type of this BriefStructTemplateModel.
+        r"""Gets the template_type of this BriefStructTemplateModel.
 
         结构化类型，当前支持regex,json,split,nginx
 
@@ -143,7 +143,7 @@ class BriefStructTemplateModel:
 
     @template_type.setter
     def template_type(self, template_type):
-        """Sets the template_type of this BriefStructTemplateModel.
+        r"""Sets the template_type of this BriefStructTemplateModel.
 
         结构化类型，当前支持regex,json,split,nginx
 
@@ -154,7 +154,7 @@ class BriefStructTemplateModel:
 
     @property
     def project_id(self):
-        """Gets the project_id of this BriefStructTemplateModel.
+        r"""Gets the project_id of this BriefStructTemplateModel.
 
         项目ID，获取方式请参见：获取账号ID、项目ID、日志组ID、日志流ID（https://support.huaweicloud.com/api-lts/lts_api_0006.html）。
 
@@ -165,7 +165,7 @@ class BriefStructTemplateModel:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this BriefStructTemplateModel.
+        r"""Sets the project_id of this BriefStructTemplateModel.
 
         项目ID，获取方式请参见：获取账号ID、项目ID、日志组ID、日志流ID（https://support.huaweicloud.com/api-lts/lts_api_0006.html）。
 

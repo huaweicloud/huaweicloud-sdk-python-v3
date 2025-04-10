@@ -28,7 +28,7 @@ class ShowTransitIpResponse(SdkResponse):
     }
 
     def __init__(self, transit_ip=None, request_id=None):
-        """ShowTransitIpResponse
+        r"""ShowTransitIpResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowTransitIpResponse(SdkResponse):
 
     @property
     def transit_ip(self):
-        """Gets the transit_ip of this ShowTransitIpResponse.
+        r"""Gets the transit_ip of this ShowTransitIpResponse.
 
         :return: The transit_ip of this ShowTransitIpResponse.
         :rtype: :class:`huaweicloudsdknat.v2.TransitIp`
@@ -60,7 +60,7 @@ class ShowTransitIpResponse(SdkResponse):
 
     @transit_ip.setter
     def transit_ip(self, transit_ip):
-        """Sets the transit_ip of this ShowTransitIpResponse.
+        r"""Sets the transit_ip of this ShowTransitIpResponse.
 
         :param transit_ip: The transit_ip of this ShowTransitIpResponse.
         :type transit_ip: :class:`huaweicloudsdknat.v2.TransitIp`
@@ -69,7 +69,7 @@ class ShowTransitIpResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowTransitIpResponse.
+        r"""Gets the request_id of this ShowTransitIpResponse.
 
         请求ID。
 
@@ -80,7 +80,7 @@ class ShowTransitIpResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowTransitIpResponse.
+        r"""Sets the request_id of this ShowTransitIpResponse.
 
         请求ID。
 

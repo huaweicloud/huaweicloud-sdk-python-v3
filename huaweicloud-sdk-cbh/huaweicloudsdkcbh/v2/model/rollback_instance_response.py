@@ -24,7 +24,7 @@ class RollbackInstanceResponse(SdkResponse):
     }
 
     def __init__(self):
-        """RollbackInstanceResponse
+        r"""RollbackInstanceResponse
 
         The model defined in huaweicloud sdk
 

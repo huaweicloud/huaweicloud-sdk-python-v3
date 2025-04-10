@@ -41,7 +41,7 @@ class CreateWorkspaceRequestBody:
     }
 
     def __init__(self, region_id=None, enterprise_project_id=None, enterprise_project_name=None, view_bind_id=None, is_view=None, name=None, description=None, project_name=None, tags=None):
-        """CreateWorkspaceRequestBody
+        r"""CreateWorkspaceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class CreateWorkspaceRequestBody:
 
     @property
     def region_id(self):
-        """Gets the region_id of this CreateWorkspaceRequestBody.
+        r"""Gets the region_id of this CreateWorkspaceRequestBody.
 
         区域id
 
@@ -107,7 +107,7 @@ class CreateWorkspaceRequestBody:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this CreateWorkspaceRequestBody.
+        r"""Sets the region_id of this CreateWorkspaceRequestBody.
 
         区域id
 
@@ -118,7 +118,7 @@ class CreateWorkspaceRequestBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateWorkspaceRequestBody.
+        r"""Gets the enterprise_project_id of this CreateWorkspaceRequestBody.
 
         企业项目id
 
@@ -129,7 +129,7 @@ class CreateWorkspaceRequestBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateWorkspaceRequestBody.
+        r"""Sets the enterprise_project_id of this CreateWorkspaceRequestBody.
 
         企业项目id
 
@@ -140,7 +140,7 @@ class CreateWorkspaceRequestBody:
 
     @property
     def enterprise_project_name(self):
-        """Gets the enterprise_project_name of this CreateWorkspaceRequestBody.
+        r"""Gets the enterprise_project_name of this CreateWorkspaceRequestBody.
 
         企业项目名称
 
@@ -151,7 +151,7 @@ class CreateWorkspaceRequestBody:
 
     @enterprise_project_name.setter
     def enterprise_project_name(self, enterprise_project_name):
-        """Sets the enterprise_project_name of this CreateWorkspaceRequestBody.
+        r"""Sets the enterprise_project_name of this CreateWorkspaceRequestBody.
 
         企业项目名称
 
@@ -162,7 +162,7 @@ class CreateWorkspaceRequestBody:
 
     @property
     def view_bind_id(self):
-        """Gets the view_bind_id of this CreateWorkspaceRequestBody.
+        r"""Gets the view_bind_id of this CreateWorkspaceRequestBody.
 
         视图绑定的空间id
 
@@ -173,7 +173,7 @@ class CreateWorkspaceRequestBody:
 
     @view_bind_id.setter
     def view_bind_id(self, view_bind_id):
-        """Sets the view_bind_id of this CreateWorkspaceRequestBody.
+        r"""Sets the view_bind_id of this CreateWorkspaceRequestBody.
 
         视图绑定的空间id
 
@@ -184,7 +184,7 @@ class CreateWorkspaceRequestBody:
 
     @property
     def is_view(self):
-        """Gets the is_view of this CreateWorkspaceRequestBody.
+        r"""Gets the is_view of this CreateWorkspaceRequestBody.
 
         是否是视图
 
@@ -195,7 +195,7 @@ class CreateWorkspaceRequestBody:
 
     @is_view.setter
     def is_view(self, is_view):
-        """Sets the is_view of this CreateWorkspaceRequestBody.
+        r"""Sets the is_view of this CreateWorkspaceRequestBody.
 
         是否是视图
 
@@ -206,7 +206,7 @@ class CreateWorkspaceRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateWorkspaceRequestBody.
+        r"""Gets the name of this CreateWorkspaceRequestBody.
 
         工作空间名称
 
@@ -217,7 +217,7 @@ class CreateWorkspaceRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateWorkspaceRequestBody.
+        r"""Sets the name of this CreateWorkspaceRequestBody.
 
         工作空间名称
 
@@ -228,7 +228,7 @@ class CreateWorkspaceRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateWorkspaceRequestBody.
+        r"""Gets the description of this CreateWorkspaceRequestBody.
 
         工作空间描述
 
@@ -239,7 +239,7 @@ class CreateWorkspaceRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateWorkspaceRequestBody.
+        r"""Sets the description of this CreateWorkspaceRequestBody.
 
         工作空间描述
 
@@ -250,7 +250,7 @@ class CreateWorkspaceRequestBody:
 
     @property
     def project_name(self):
-        """Gets the project_name of this CreateWorkspaceRequestBody.
+        r"""Gets the project_name of this CreateWorkspaceRequestBody.
 
         项目名称
 
@@ -261,7 +261,7 @@ class CreateWorkspaceRequestBody:
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this CreateWorkspaceRequestBody.
+        r"""Sets the project_name of this CreateWorkspaceRequestBody.
 
         项目名称
 
@@ -272,7 +272,7 @@ class CreateWorkspaceRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateWorkspaceRequestBody.
+        r"""Gets the tags of this CreateWorkspaceRequestBody.
 
         通过给账号下的资源添加标签，可以对资源进行自定义标记，实现资源的分类。可到标签管理服务使用可视化表格操作资源标签，并对标签进行批量编辑。
 
@@ -283,7 +283,7 @@ class CreateWorkspaceRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateWorkspaceRequestBody.
+        r"""Sets the tags of this CreateWorkspaceRequestBody.
 
         通过给账号下的资源添加标签，可以对资源进行自定义标记，实现资源的分类。可到标签管理服务使用可视化表格操作资源标签，并对标签进行批量编辑。
 

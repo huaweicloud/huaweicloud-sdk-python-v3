@@ -24,7 +24,7 @@ class PutCustomRoleToPermissionSetResponse(SdkResponse):
     }
 
     def __init__(self):
-        """PutCustomRoleToPermissionSetResponse
+        r"""PutCustomRoleToPermissionSetResponse
 
         The model defined in huaweicloud sdk
 

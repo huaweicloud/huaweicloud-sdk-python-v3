@@ -25,7 +25,7 @@ class CreateProductOrderRequest:
     }
 
     def __init__(self, body=None):
-        """CreateProductOrderRequest
+        r"""CreateProductOrderRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateProductOrderRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateProductOrderRequest.
+        r"""Gets the body of this CreateProductOrderRequest.
 
         :return: The body of this CreateProductOrderRequest.
         :rtype: :class:`huaweicloudsdkdsc.v1.PeriodOrderRequest`
@@ -52,7 +52,7 @@ class CreateProductOrderRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateProductOrderRequest.
+        r"""Sets the body of this CreateProductOrderRequest.
 
         :param body: The body of this CreateProductOrderRequest.
         :type body: :class:`huaweicloudsdkdsc.v1.PeriodOrderRequest`

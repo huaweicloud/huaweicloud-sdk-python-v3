@@ -26,7 +26,7 @@ class ShowLogBackupResponse(SdkResponse):
     }
 
     def __init__(self, log_list=None):
-        """ShowLogBackupResponse
+        r"""ShowLogBackupResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowLogBackupResponse(SdkResponse):
 
     @property
     def log_list(self):
-        """Gets the log_list of this ShowLogBackupResponse.
+        r"""Gets the log_list of this ShowLogBackupResponse.
 
         :return: The log_list of this ShowLogBackupResponse.
         :rtype: list[:class:`huaweicloudsdkcss.v1.LogList`]
@@ -53,7 +53,7 @@ class ShowLogBackupResponse(SdkResponse):
 
     @log_list.setter
     def log_list(self, log_list):
-        """Sets the log_list of this ShowLogBackupResponse.
+        r"""Sets the log_list of this ShowLogBackupResponse.
 
         :param log_list: The log_list of this ShowLogBackupResponse.
         :type log_list: list[:class:`huaweicloudsdkcss.v1.LogList`]

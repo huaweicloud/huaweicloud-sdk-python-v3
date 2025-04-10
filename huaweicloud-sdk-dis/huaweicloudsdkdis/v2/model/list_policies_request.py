@@ -25,7 +25,7 @@ class ListPoliciesRequest:
     }
 
     def __init__(self, stream_name=None):
-        """ListPoliciesRequest
+        r"""ListPoliciesRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListPoliciesRequest:
 
     @property
     def stream_name(self):
-        """Gets the stream_name of this ListPoliciesRequest.
+        r"""Gets the stream_name of this ListPoliciesRequest.
 
         通道名称。
 
@@ -53,7 +53,7 @@ class ListPoliciesRequest:
 
     @stream_name.setter
     def stream_name(self, stream_name):
-        """Sets the stream_name of this ListPoliciesRequest.
+        r"""Sets the stream_name of this ListPoliciesRequest.
 
         通道名称。
 

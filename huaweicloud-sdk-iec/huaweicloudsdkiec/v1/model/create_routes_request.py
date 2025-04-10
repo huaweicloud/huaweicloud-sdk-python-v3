@@ -27,7 +27,7 @@ class CreateRoutesRequest:
     }
 
     def __init__(self, routetable_id=None, body=None):
-        """CreateRoutesRequest
+        r"""CreateRoutesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateRoutesRequest:
 
     @property
     def routetable_id(self):
-        """Gets the routetable_id of this CreateRoutesRequest.
+        r"""Gets the routetable_id of this CreateRoutesRequest.
 
         路由表ID
 
@@ -60,7 +60,7 @@ class CreateRoutesRequest:
 
     @routetable_id.setter
     def routetable_id(self, routetable_id):
-        """Sets the routetable_id of this CreateRoutesRequest.
+        r"""Sets the routetable_id of this CreateRoutesRequest.
 
         路由表ID
 
@@ -71,7 +71,7 @@ class CreateRoutesRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateRoutesRequest.
+        r"""Gets the body of this CreateRoutesRequest.
 
         :return: The body of this CreateRoutesRequest.
         :rtype: :class:`huaweicloudsdkiec.v1.CreateRoutesRequestBody`
@@ -80,7 +80,7 @@ class CreateRoutesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateRoutesRequest.
+        r"""Sets the body of this CreateRoutesRequest.
 
         :param body: The body of this CreateRoutesRequest.
         :type body: :class:`huaweicloudsdkiec.v1.CreateRoutesRequestBody`

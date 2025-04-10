@@ -25,7 +25,7 @@ class CreateSubnetTagRequestBody:
     }
 
     def __init__(self, tag=None):
-        """CreateSubnetTagRequestBody
+        r"""CreateSubnetTagRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateSubnetTagRequestBody:
 
     @property
     def tag(self):
-        """Gets the tag of this CreateSubnetTagRequestBody.
+        r"""Gets the tag of this CreateSubnetTagRequestBody.
 
         :return: The tag of this CreateSubnetTagRequestBody.
         :rtype: :class:`huaweicloudsdkvpc.v2.ResourceTag`
@@ -51,7 +51,7 @@ class CreateSubnetTagRequestBody:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this CreateSubnetTagRequestBody.
+        r"""Sets the tag of this CreateSubnetTagRequestBody.
 
         :param tag: The tag of this CreateSubnetTagRequestBody.
         :type tag: :class:`huaweicloudsdkvpc.v2.ResourceTag`

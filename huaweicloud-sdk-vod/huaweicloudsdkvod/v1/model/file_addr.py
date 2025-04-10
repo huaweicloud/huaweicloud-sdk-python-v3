@@ -29,7 +29,7 @@ class FileAddr:
     }
 
     def __init__(self, bucket=None, location=None, object=None):
-        """FileAddr
+        r"""FileAddr
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class FileAddr:
 
     @property
     def bucket(self):
-        """Gets the bucket of this FileAddr.
+        r"""Gets the bucket of this FileAddr.
 
         OBS的bucket名称。
 
@@ -65,7 +65,7 @@ class FileAddr:
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this FileAddr.
+        r"""Sets the bucket of this FileAddr.
 
         OBS的bucket名称。
 
@@ -76,7 +76,7 @@ class FileAddr:
 
     @property
     def location(self):
-        """Gets the location of this FileAddr.
+        r"""Gets the location of this FileAddr.
 
         桶所在的区域名， 如“华北-北京四”的区域名为“cn-north-4”，创建的桶所在区域必须和点播服务所在区域保持一致。
 
@@ -87,7 +87,7 @@ class FileAddr:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this FileAddr.
+        r"""Sets the location of this FileAddr.
 
         桶所在的区域名， 如“华北-北京四”的区域名为“cn-north-4”，创建的桶所在区域必须和点播服务所在区域保持一致。
 
@@ -98,7 +98,7 @@ class FileAddr:
 
     @property
     def object(self):
-        """Gets the object of this FileAddr.
+        r"""Gets the object of this FileAddr.
 
         文件的存储路径。
 
@@ -109,7 +109,7 @@ class FileAddr:
 
     @object.setter
     def object(self, object):
-        """Sets the object of this FileAddr.
+        r"""Sets the object of this FileAddr.
 
         文件的存储路径。
 

@@ -39,7 +39,7 @@ class UpdateTimerRuleDetails:
     }
 
     def __init__(self, name=None, type=None, status=None, apps=None, components=None, cron=None, effective_range=None, effective_policy=None):
-        """UpdateTimerRuleDetails
+        r"""UpdateTimerRuleDetails
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class UpdateTimerRuleDetails:
 
     @property
     def name(self):
-        """Gets the name of this UpdateTimerRuleDetails.
+        r"""Gets the name of this UpdateTimerRuleDetails.
 
         定时启停规则名称。
 
@@ -97,7 +97,7 @@ class UpdateTimerRuleDetails:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateTimerRuleDetails.
+        r"""Sets the name of this UpdateTimerRuleDetails.
 
         定时启停规则名称。
 
@@ -108,7 +108,7 @@ class UpdateTimerRuleDetails:
 
     @property
     def type(self):
-        """Gets the type of this UpdateTimerRuleDetails.
+        r"""Gets the type of this UpdateTimerRuleDetails.
 
         定时启停规则的类型：stop/start。
 
@@ -119,7 +119,7 @@ class UpdateTimerRuleDetails:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this UpdateTimerRuleDetails.
+        r"""Sets the type of this UpdateTimerRuleDetails.
 
         定时启停规则的类型：stop/start。
 
@@ -130,7 +130,7 @@ class UpdateTimerRuleDetails:
 
     @property
     def status(self):
-        """Gets the status of this UpdateTimerRuleDetails.
+        r"""Gets the status of this UpdateTimerRuleDetails.
 
         定时启停规则状态（是否开启）：on/off。
 
@@ -141,7 +141,7 @@ class UpdateTimerRuleDetails:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateTimerRuleDetails.
+        r"""Sets the status of this UpdateTimerRuleDetails.
 
         定时启停规则状态（是否开启）：on/off。
 
@@ -152,7 +152,7 @@ class UpdateTimerRuleDetails:
 
     @property
     def apps(self):
-        """Gets the apps of this UpdateTimerRuleDetails.
+        r"""Gets the apps of this UpdateTimerRuleDetails.
 
         定时启停规则所包含的所有应用，只在生效范围为application的时候需要填写。
 
@@ -163,7 +163,7 @@ class UpdateTimerRuleDetails:
 
     @apps.setter
     def apps(self, apps):
-        """Sets the apps of this UpdateTimerRuleDetails.
+        r"""Sets the apps of this UpdateTimerRuleDetails.
 
         定时启停规则所包含的所有应用，只在生效范围为application的时候需要填写。
 
@@ -174,7 +174,7 @@ class UpdateTimerRuleDetails:
 
     @property
     def components(self):
-        """Gets the components of this UpdateTimerRuleDetails.
+        r"""Gets the components of this UpdateTimerRuleDetails.
 
         在定时启停规则所包含的所有组件，只在生效范围为component的时候需要填写。
 
@@ -185,7 +185,7 @@ class UpdateTimerRuleDetails:
 
     @components.setter
     def components(self, components):
-        """Sets the components of this UpdateTimerRuleDetails.
+        r"""Sets the components of this UpdateTimerRuleDetails.
 
         在定时启停规则所包含的所有组件，只在生效范围为component的时候需要填写。
 
@@ -196,7 +196,7 @@ class UpdateTimerRuleDetails:
 
     @property
     def cron(self):
-        """Gets the cron of this UpdateTimerRuleDetails.
+        r"""Gets the cron of this UpdateTimerRuleDetails.
 
         cron表达式。
 
@@ -207,7 +207,7 @@ class UpdateTimerRuleDetails:
 
     @cron.setter
     def cron(self, cron):
-        """Sets the cron of this UpdateTimerRuleDetails.
+        r"""Sets the cron of this UpdateTimerRuleDetails.
 
         cron表达式。
 
@@ -218,7 +218,7 @@ class UpdateTimerRuleDetails:
 
     @property
     def effective_range(self):
-        """Gets the effective_range of this UpdateTimerRuleDetails.
+        r"""Gets the effective_range of this UpdateTimerRuleDetails.
 
         定时启停规则生效范围: component/application/environment。
 
@@ -229,7 +229,7 @@ class UpdateTimerRuleDetails:
 
     @effective_range.setter
     def effective_range(self, effective_range):
-        """Sets the effective_range of this UpdateTimerRuleDetails.
+        r"""Sets the effective_range of this UpdateTimerRuleDetails.
 
         定时启停规则生效范围: component/application/environment。
 
@@ -240,7 +240,7 @@ class UpdateTimerRuleDetails:
 
     @property
     def effective_policy(self):
-        """Gets the effective_policy of this UpdateTimerRuleDetails.
+        r"""Gets the effective_policy of this UpdateTimerRuleDetails.
 
         定时启停规则的定时类别: onetime/periodic。
 
@@ -251,7 +251,7 @@ class UpdateTimerRuleDetails:
 
     @effective_policy.setter
     def effective_policy(self, effective_policy):
-        """Sets the effective_policy of this UpdateTimerRuleDetails.
+        r"""Sets the effective_policy of this UpdateTimerRuleDetails.
 
         定时启停规则的定时类别: onetime/periodic。
 

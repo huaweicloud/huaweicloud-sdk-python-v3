@@ -29,7 +29,7 @@ class Ports:
     }
 
     def __init__(self, container_port=None, host_port=None, host_ip=None):
-        """Ports
+        r"""Ports
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class Ports:
 
     @property
     def container_port(self):
-        """Gets the container_port of this Ports.
+        r"""Gets the container_port of this Ports.
 
         构成一堆映射的容器端口
 
@@ -68,7 +68,7 @@ class Ports:
 
     @container_port.setter
     def container_port(self, container_port):
-        """Sets the container_port of this Ports.
+        r"""Sets the container_port of this Ports.
 
         构成一堆映射的容器端口
 
@@ -79,7 +79,7 @@ class Ports:
 
     @property
     def host_port(self):
-        """Gets the host_port of this Ports.
+        r"""Gets the host_port of this Ports.
 
         构成一对映射的物理机对应网卡端口
 
@@ -90,7 +90,7 @@ class Ports:
 
     @host_port.setter
     def host_port(self, host_port):
-        """Sets the host_port of this Ports.
+        r"""Sets the host_port of this Ports.
 
         构成一对映射的物理机对应网卡端口
 
@@ -101,7 +101,7 @@ class Ports:
 
     @property
     def host_ip(self):
-        """Gets the host_ip of this Ports.
+        r"""Gets the host_ip of this Ports.
 
         对应网卡地址
 
@@ -112,7 +112,7 @@ class Ports:
 
     @host_ip.setter
     def host_ip(self, host_ip):
-        """Sets the host_ip of this Ports.
+        r"""Sets the host_ip of this Ports.
 
         对应网卡地址
 

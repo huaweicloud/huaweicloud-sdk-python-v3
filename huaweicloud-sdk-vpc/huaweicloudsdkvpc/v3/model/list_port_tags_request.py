@@ -27,7 +27,7 @@ class ListPortTagsRequest:
     }
 
     def __init__(self, limit=None, offset=None):
-        """ListPortTagsRequest
+        r"""ListPortTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListPortTagsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPortTagsRequest.
+        r"""Gets the limit of this ListPortTagsRequest.
 
         功能说明：查询记录数 取值范围：1-1000 约束：默认为1000
 
@@ -61,7 +61,7 @@ class ListPortTagsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPortTagsRequest.
+        r"""Sets the limit of this ListPortTagsRequest.
 
         功能说明：查询记录数 取值范围：1-1000 约束：默认为1000
 
@@ -72,7 +72,7 @@ class ListPortTagsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPortTagsRequest.
+        r"""Gets the offset of this ListPortTagsRequest.
 
         功能说明：索引位置， 从第一条数据偏移offset条数据后开始查询 约束：默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数
 
@@ -83,7 +83,7 @@ class ListPortTagsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPortTagsRequest.
+        r"""Sets the offset of this ListPortTagsRequest.
 
         功能说明：索引位置， 从第一条数据偏移offset条数据后开始查询 约束：默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数
 

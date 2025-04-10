@@ -37,7 +37,7 @@ class AccessConfig:
     }
 
     def __init__(self, access_mode=None, internet_access_address=None, internet_access_port=None, dedicated_access_address=None, dedicated_access_standby_address=None, standby_address_result_code=None, dedicated_cidrs=None):
-        """AccessConfig
+        r"""AccessConfig
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class AccessConfig:
 
     @property
     def access_mode(self):
-        """Gets the access_mode of this AccessConfig.
+        r"""Gets the access_mode of this AccessConfig.
 
         接入方式。 - INTERNET：表示互联网接入 - DEDICATED：表示专线接入 - BOTH：表示同时支持互联网接入和专线接入
 
@@ -96,7 +96,7 @@ class AccessConfig:
 
     @access_mode.setter
     def access_mode(self, access_mode):
-        """Sets the access_mode of this AccessConfig.
+        r"""Sets the access_mode of this AccessConfig.
 
         接入方式。 - INTERNET：表示互联网接入 - DEDICATED：表示专线接入 - BOTH：表示同时支持互联网接入和专线接入
 
@@ -107,7 +107,7 @@ class AccessConfig:
 
     @property
     def internet_access_address(self):
-        """Gets the internet_access_address of this AccessConfig.
+        r"""Gets the internet_access_address of this AccessConfig.
 
         互联网接入地址，只有access_mode为“INTERNET”或“BOTH”时才会返回该参数
 
@@ -118,7 +118,7 @@ class AccessConfig:
 
     @internet_access_address.setter
     def internet_access_address(self, internet_access_address):
-        """Sets the internet_access_address of this AccessConfig.
+        r"""Sets the internet_access_address of this AccessConfig.
 
         互联网接入地址，只有access_mode为“INTERNET”或“BOTH”时才会返回该参数
 
@@ -129,7 +129,7 @@ class AccessConfig:
 
     @property
     def internet_access_port(self):
-        """Gets the internet_access_port of this AccessConfig.
+        r"""Gets the internet_access_port of this AccessConfig.
 
         互联网接入端口
 
@@ -140,7 +140,7 @@ class AccessConfig:
 
     @internet_access_port.setter
     def internet_access_port(self, internet_access_port):
-        """Sets the internet_access_port of this AccessConfig.
+        r"""Sets the internet_access_port of this AccessConfig.
 
         互联网接入端口
 
@@ -151,7 +151,7 @@ class AccessConfig:
 
     @property
     def dedicated_access_address(self):
-        """Gets the dedicated_access_address of this AccessConfig.
+        r"""Gets the dedicated_access_address of this AccessConfig.
 
         专线接入地址，只有access_mode为“DEDICATED”或“BOTH”时才会返回该参数
 
@@ -162,7 +162,7 @@ class AccessConfig:
 
     @dedicated_access_address.setter
     def dedicated_access_address(self, dedicated_access_address):
-        """Sets the dedicated_access_address of this AccessConfig.
+        r"""Sets the dedicated_access_address of this AccessConfig.
 
         专线接入地址，只有access_mode为“DEDICATED”或“BOTH”时才会返回该参数
 
@@ -173,7 +173,7 @@ class AccessConfig:
 
     @property
     def dedicated_access_standby_address(self):
-        """Gets the dedicated_access_standby_address of this AccessConfig.
+        r"""Gets the dedicated_access_standby_address of this AccessConfig.
 
         专线接入备用地址，只有当开启专线备用线路时才会返回该参数
 
@@ -184,7 +184,7 @@ class AccessConfig:
 
     @dedicated_access_standby_address.setter
     def dedicated_access_standby_address(self, dedicated_access_standby_address):
-        """Sets the dedicated_access_standby_address of this AccessConfig.
+        r"""Sets the dedicated_access_standby_address of this AccessConfig.
 
         专线接入备用地址，只有当开启专线备用线路时才会返回该参数
 
@@ -195,7 +195,7 @@ class AccessConfig:
 
     @property
     def standby_address_result_code(self):
-        """Gets the standby_address_result_code of this AccessConfig.
+        r"""Gets the standby_address_result_code of this AccessConfig.
 
         专线备用线路失败错误码
 
@@ -206,7 +206,7 @@ class AccessConfig:
 
     @standby_address_result_code.setter
     def standby_address_result_code(self, standby_address_result_code):
-        """Sets the standby_address_result_code of this AccessConfig.
+        r"""Sets the standby_address_result_code of this AccessConfig.
 
         专线备用线路失败错误码
 
@@ -217,7 +217,7 @@ class AccessConfig:
 
     @property
     def dedicated_cidrs(self):
-        """Gets the dedicated_cidrs of this AccessConfig.
+        r"""Gets the dedicated_cidrs of this AccessConfig.
 
         专线接入网段。接入模式包含专线方式时选填，多个网段信息用分号隔开，列表长度不超过5。
 
@@ -228,7 +228,7 @@ class AccessConfig:
 
     @dedicated_cidrs.setter
     def dedicated_cidrs(self, dedicated_cidrs):
-        """Sets the dedicated_cidrs of this AccessConfig.
+        r"""Sets the dedicated_cidrs of this AccessConfig.
 
         专线接入网段。接入模式包含专线方式时选填，多个网段信息用分号隔开，列表长度不超过5。
 

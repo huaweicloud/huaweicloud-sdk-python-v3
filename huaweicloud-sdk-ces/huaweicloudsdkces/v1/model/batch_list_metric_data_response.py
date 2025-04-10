@@ -26,7 +26,7 @@ class BatchListMetricDataResponse(SdkResponse):
     }
 
     def __init__(self, metrics=None):
-        """BatchListMetricDataResponse
+        r"""BatchListMetricDataResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchListMetricDataResponse(SdkResponse):
 
     @property
     def metrics(self):
-        """Gets the metrics of this BatchListMetricDataResponse.
+        r"""Gets the metrics of this BatchListMetricDataResponse.
 
         监控指标。
 
@@ -55,7 +55,7 @@ class BatchListMetricDataResponse(SdkResponse):
 
     @metrics.setter
     def metrics(self, metrics):
-        """Sets the metrics of this BatchListMetricDataResponse.
+        r"""Sets the metrics of this BatchListMetricDataResponse.
 
         监控指标。
 

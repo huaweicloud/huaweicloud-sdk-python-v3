@@ -29,7 +29,7 @@ class UpdateDeploymentHostRequest:
     }
 
     def __init__(self, group_id=None, host_id=None, body=None):
-        """UpdateDeploymentHostRequest
+        r"""UpdateDeploymentHostRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateDeploymentHostRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this UpdateDeploymentHostRequest.
+        r"""Gets the group_id of this UpdateDeploymentHostRequest.
 
         主机集群id
 
@@ -66,7 +66,7 @@ class UpdateDeploymentHostRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this UpdateDeploymentHostRequest.
+        r"""Sets the group_id of this UpdateDeploymentHostRequest.
 
         主机集群id
 
@@ -77,7 +77,7 @@ class UpdateDeploymentHostRequest:
 
     @property
     def host_id(self):
-        """Gets the host_id of this UpdateDeploymentHostRequest.
+        r"""Gets the host_id of this UpdateDeploymentHostRequest.
 
         主机id
 
@@ -88,7 +88,7 @@ class UpdateDeploymentHostRequest:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this UpdateDeploymentHostRequest.
+        r"""Sets the host_id of this UpdateDeploymentHostRequest.
 
         主机id
 
@@ -99,7 +99,7 @@ class UpdateDeploymentHostRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDeploymentHostRequest.
+        r"""Gets the body of this UpdateDeploymentHostRequest.
 
         :return: The body of this UpdateDeploymentHostRequest.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.DeploymentHostRequest`
@@ -108,7 +108,7 @@ class UpdateDeploymentHostRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDeploymentHostRequest.
+        r"""Sets the body of this UpdateDeploymentHostRequest.
 
         :param body: The body of this UpdateDeploymentHostRequest.
         :type body: :class:`huaweicloudsdkcodeartsdeploy.v2.DeploymentHostRequest`

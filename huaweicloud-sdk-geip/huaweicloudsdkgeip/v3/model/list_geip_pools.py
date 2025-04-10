@@ -47,7 +47,7 @@ class ListGeipPools:
     }
 
     def __init__(self, id=None, name=None, en_name=None, cn_name=None, status=None, isp=None, ip_version=None, access_site=None, type=None, created_at=None, updated_at=None, allowed_bandwidth_types=None):
-        """ListGeipPools
+        r"""ListGeipPools
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ListGeipPools:
 
     @property
     def id(self):
-        """Gets the id of this ListGeipPools.
+        r"""Gets the id of this ListGeipPools.
 
         全域弹性公网IP池的ID
 
@@ -131,7 +131,7 @@ class ListGeipPools:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListGeipPools.
+        r"""Sets the id of this ListGeipPools.
 
         全域弹性公网IP池的ID
 
@@ -142,7 +142,7 @@ class ListGeipPools:
 
     @property
     def name(self):
-        """Gets the name of this ListGeipPools.
+        r"""Gets the name of this ListGeipPools.
 
         - 功能说明：全域弹性公网IP池名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -153,7 +153,7 @@ class ListGeipPools:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListGeipPools.
+        r"""Sets the name of this ListGeipPools.
 
         - 功能说明：全域弹性公网IP池名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -164,7 +164,7 @@ class ListGeipPools:
 
     @property
     def en_name(self):
-        """Gets the en_name of this ListGeipPools.
+        r"""Gets the en_name of this ListGeipPools.
 
         英文名称
 
@@ -175,7 +175,7 @@ class ListGeipPools:
 
     @en_name.setter
     def en_name(self, en_name):
-        """Sets the en_name of this ListGeipPools.
+        r"""Sets the en_name of this ListGeipPools.
 
         英文名称
 
@@ -186,7 +186,7 @@ class ListGeipPools:
 
     @property
     def cn_name(self):
-        """Gets the cn_name of this ListGeipPools.
+        r"""Gets the cn_name of this ListGeipPools.
 
         中文名称
 
@@ -197,7 +197,7 @@ class ListGeipPools:
 
     @cn_name.setter
     def cn_name(self, cn_name):
-        """Sets the cn_name of this ListGeipPools.
+        r"""Sets the cn_name of this ListGeipPools.
 
         中文名称
 
@@ -208,7 +208,7 @@ class ListGeipPools:
 
     @property
     def status(self):
-        """Gets the status of this ListGeipPools.
+        r"""Gets the status of this ListGeipPools.
 
         状态
 
@@ -219,7 +219,7 @@ class ListGeipPools:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListGeipPools.
+        r"""Sets the status of this ListGeipPools.
 
         状态
 
@@ -230,7 +230,7 @@ class ListGeipPools:
 
     @property
     def isp(self):
-        """Gets the isp of this ListGeipPools.
+        r"""Gets the isp of this ListGeipPools.
 
         全域弹性公网IP所属线路
 
@@ -241,7 +241,7 @@ class ListGeipPools:
 
     @isp.setter
     def isp(self, isp):
-        """Sets the isp of this ListGeipPools.
+        r"""Sets the isp of this ListGeipPools.
 
         全域弹性公网IP所属线路
 
@@ -252,7 +252,7 @@ class ListGeipPools:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this ListGeipPools.
+        r"""Gets the ip_version of this ListGeipPools.
 
         - 功能说明：全域弹性公网IP池的版本 - 取值范围：4、6
 
@@ -263,7 +263,7 @@ class ListGeipPools:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this ListGeipPools.
+        r"""Sets the ip_version of this ListGeipPools.
 
         - 功能说明：全域弹性公网IP池的版本 - 取值范围：4、6
 
@@ -274,7 +274,7 @@ class ListGeipPools:
 
     @property
     def access_site(self):
-        """Gets the access_site of this ListGeipPools.
+        r"""Gets the access_site of this ListGeipPools.
 
         接入点信息
 
@@ -285,7 +285,7 @@ class ListGeipPools:
 
     @access_site.setter
     def access_site(self, access_site):
-        """Sets the access_site of this ListGeipPools.
+        r"""Sets the access_site of this ListGeipPools.
 
         接入点信息
 
@@ -296,7 +296,7 @@ class ListGeipPools:
 
     @property
     def type(self):
-        """Gets the type of this ListGeipPools.
+        r"""Gets the type of this ListGeipPools.
 
         类型
 
@@ -307,7 +307,7 @@ class ListGeipPools:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListGeipPools.
+        r"""Sets the type of this ListGeipPools.
 
         类型
 
@@ -318,7 +318,7 @@ class ListGeipPools:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ListGeipPools.
+        r"""Gets the created_at of this ListGeipPools.
 
         创建时间
 
@@ -329,7 +329,7 @@ class ListGeipPools:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ListGeipPools.
+        r"""Sets the created_at of this ListGeipPools.
 
         创建时间
 
@@ -340,7 +340,7 @@ class ListGeipPools:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ListGeipPools.
+        r"""Gets the updated_at of this ListGeipPools.
 
         更新时间
 
@@ -351,7 +351,7 @@ class ListGeipPools:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ListGeipPools.
+        r"""Sets the updated_at of this ListGeipPools.
 
         更新时间
 
@@ -362,7 +362,7 @@ class ListGeipPools:
 
     @property
     def allowed_bandwidth_types(self):
-        """Gets the allowed_bandwidth_types of this ListGeipPools.
+        r"""Gets the allowed_bandwidth_types of this ListGeipPools.
 
         地址池支持的全域公网带宽类型资源
 
@@ -373,7 +373,7 @@ class ListGeipPools:
 
     @allowed_bandwidth_types.setter
     def allowed_bandwidth_types(self, allowed_bandwidth_types):
-        """Sets the allowed_bandwidth_types of this ListGeipPools.
+        r"""Sets the allowed_bandwidth_types of this ListGeipPools.
 
         地址池支持的全域公网带宽类型资源
 

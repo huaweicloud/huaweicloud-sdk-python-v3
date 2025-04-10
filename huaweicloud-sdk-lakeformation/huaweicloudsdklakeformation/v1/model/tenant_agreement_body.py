@@ -25,7 +25,7 @@ class TenantAgreementBody:
     }
 
     def __init__(self, agreements=None):
-        """TenantAgreementBody
+        r"""TenantAgreementBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class TenantAgreementBody:
 
     @property
     def agreements(self):
-        """Gets the agreements of this TenantAgreementBody.
+        r"""Gets the agreements of this TenantAgreementBody.
 
         租户协议列表
 
@@ -54,7 +54,7 @@ class TenantAgreementBody:
 
     @agreements.setter
     def agreements(self, agreements):
-        """Sets the agreements of this TenantAgreementBody.
+        r"""Sets the agreements of this TenantAgreementBody.
 
         租户协议列表
 

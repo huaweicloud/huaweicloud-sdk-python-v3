@@ -33,7 +33,7 @@ class ListSpecsRequest:
     }
 
     def __init__(self, spec_code=None, spec_types=None, offset=None, limit=None, scenario=None):
-        """ListSpecsRequest
+        r"""ListSpecsRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListSpecsRequest:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this ListSpecsRequest.
+        r"""Gets the spec_code of this ListSpecsRequest.
 
         规格编码
 
@@ -82,7 +82,7 @@ class ListSpecsRequest:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this ListSpecsRequest.
+        r"""Sets the spec_code of this ListSpecsRequest.
 
         规格编码
 
@@ -93,7 +93,7 @@ class ListSpecsRequest:
 
     @property
     def spec_types(self):
-        """Gets the spec_types of this ListSpecsRequest.
+        r"""Gets the spec_types of this ListSpecsRequest.
 
         通过资源规格类型检索
 
@@ -104,7 +104,7 @@ class ListSpecsRequest:
 
     @spec_types.setter
     def spec_types(self, spec_types):
-        """Sets the spec_types of this ListSpecsRequest.
+        r"""Sets the spec_types of this ListSpecsRequest.
 
         通过资源规格类型检索
 
@@ -115,7 +115,7 @@ class ListSpecsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSpecsRequest.
+        r"""Gets the offset of this ListSpecsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0，默认为0。
 
@@ -126,7 +126,7 @@ class ListSpecsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSpecsRequest.
+        r"""Sets the offset of this ListSpecsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0，默认为0。
 
@@ -137,7 +137,7 @@ class ListSpecsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSpecsRequest.
+        r"""Gets the limit of this ListSpecsRequest.
 
         指定每一页返回的最大条目数，取值范围[1,100]，默认为10。
 
@@ -148,7 +148,7 @@ class ListSpecsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSpecsRequest.
+        r"""Sets the limit of this ListSpecsRequest.
 
         指定每一页返回的最大条目数，取值范围[1,100]，默认为10。
 
@@ -159,7 +159,7 @@ class ListSpecsRequest:
 
     @property
     def scenario(self):
-        """Gets the scenario of this ListSpecsRequest.
+        r"""Gets the scenario of this ListSpecsRequest.
 
         规格使用场景，不填表示不限制： COMPUTE: 用于购买Ray计算资源时配置的物理节点规格 ENDPOINT: 用于创建Endpoint时配置的资源组规格大小
 
@@ -170,7 +170,7 @@ class ListSpecsRequest:
 
     @scenario.setter
     def scenario(self, scenario):
-        """Sets the scenario of this ListSpecsRequest.
+        r"""Sets the scenario of this ListSpecsRequest.
 
         规格使用场景，不填表示不限制： COMPUTE: 用于购买Ray计算资源时配置的物理节点规格 ENDPOINT: 用于创建Endpoint时配置的资源组规格大小
 

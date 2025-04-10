@@ -67,7 +67,7 @@ class TestPoint:
     }
 
     def __init__(self, app=None, create_time=None, creator_name=None, creator_num=None, delete_time=None, deleted=None, group_id=None, id=None, mindmap_id=None, name=None, node_id=None, requirement_id=None, requirement_name=None, service_id=None, status=None, status_type=None, tc_counts=None, test_cases=None, update_name=None, update_num=None, update_time=None, version=None):
-        """TestPoint
+        r"""TestPoint
 
         The model defined in huaweicloud sdk
 
@@ -190,7 +190,7 @@ class TestPoint:
 
     @property
     def app(self):
-        """Gets the app of this TestPoint.
+        r"""Gets the app of this TestPoint.
 
         app
 
@@ -201,7 +201,7 @@ class TestPoint:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this TestPoint.
+        r"""Sets the app of this TestPoint.
 
         app
 
@@ -212,7 +212,7 @@ class TestPoint:
 
     @property
     def create_time(self):
-        """Gets the create_time of this TestPoint.
+        r"""Gets the create_time of this TestPoint.
 
         创建时间
 
@@ -223,7 +223,7 @@ class TestPoint:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this TestPoint.
+        r"""Sets the create_time of this TestPoint.
 
         创建时间
 
@@ -234,7 +234,7 @@ class TestPoint:
 
     @property
     def creator_name(self):
-        """Gets the creator_name of this TestPoint.
+        r"""Gets the creator_name of this TestPoint.
 
         创建人名称
 
@@ -245,7 +245,7 @@ class TestPoint:
 
     @creator_name.setter
     def creator_name(self, creator_name):
-        """Sets the creator_name of this TestPoint.
+        r"""Sets the creator_name of this TestPoint.
 
         创建人名称
 
@@ -256,7 +256,7 @@ class TestPoint:
 
     @property
     def creator_num(self):
-        """Gets the creator_num of this TestPoint.
+        r"""Gets the creator_num of this TestPoint.
 
         创建人工号
 
@@ -267,7 +267,7 @@ class TestPoint:
 
     @creator_num.setter
     def creator_num(self, creator_num):
-        """Sets the creator_num of this TestPoint.
+        r"""Sets the creator_num of this TestPoint.
 
         创建人工号
 
@@ -278,7 +278,7 @@ class TestPoint:
 
     @property
     def delete_time(self):
-        """Gets the delete_time of this TestPoint.
+        r"""Gets the delete_time of this TestPoint.
 
         删除时间
 
@@ -289,7 +289,7 @@ class TestPoint:
 
     @delete_time.setter
     def delete_time(self, delete_time):
-        """Sets the delete_time of this TestPoint.
+        r"""Sets the delete_time of this TestPoint.
 
         删除时间
 
@@ -300,7 +300,7 @@ class TestPoint:
 
     @property
     def deleted(self):
-        """Gets the deleted of this TestPoint.
+        r"""Gets the deleted of this TestPoint.
 
         逻辑删除字段
 
@@ -311,7 +311,7 @@ class TestPoint:
 
     @deleted.setter
     def deleted(self, deleted):
-        """Sets the deleted of this TestPoint.
+        r"""Sets the deleted of this TestPoint.
 
         逻辑删除字段
 
@@ -322,7 +322,7 @@ class TestPoint:
 
     @property
     def group_id(self):
-        """Gets the group_id of this TestPoint.
+        r"""Gets the group_id of this TestPoint.
 
         分组id
 
@@ -333,7 +333,7 @@ class TestPoint:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this TestPoint.
+        r"""Sets the group_id of this TestPoint.
 
         分组id
 
@@ -344,7 +344,7 @@ class TestPoint:
 
     @property
     def id(self):
-        """Gets the id of this TestPoint.
+        r"""Gets the id of this TestPoint.
 
         id 主键
 
@@ -355,7 +355,7 @@ class TestPoint:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TestPoint.
+        r"""Sets the id of this TestPoint.
 
         id 主键
 
@@ -366,7 +366,7 @@ class TestPoint:
 
     @property
     def mindmap_id(self):
-        """Gets the mindmap_id of this TestPoint.
+        r"""Gets the mindmap_id of this TestPoint.
 
         脑图id
 
@@ -377,7 +377,7 @@ class TestPoint:
 
     @mindmap_id.setter
     def mindmap_id(self, mindmap_id):
-        """Sets the mindmap_id of this TestPoint.
+        r"""Sets the mindmap_id of this TestPoint.
 
         脑图id
 
@@ -388,7 +388,7 @@ class TestPoint:
 
     @property
     def name(self):
-        """Gets the name of this TestPoint.
+        r"""Gets the name of this TestPoint.
 
         名称
 
@@ -399,7 +399,7 @@ class TestPoint:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TestPoint.
+        r"""Sets the name of this TestPoint.
 
         名称
 
@@ -410,7 +410,7 @@ class TestPoint:
 
     @property
     def node_id(self):
-        """Gets the node_id of this TestPoint.
+        r"""Gets the node_id of this TestPoint.
 
         节点id
 
@@ -421,7 +421,7 @@ class TestPoint:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this TestPoint.
+        r"""Sets the node_id of this TestPoint.
 
         节点id
 
@@ -432,7 +432,7 @@ class TestPoint:
 
     @property
     def requirement_id(self):
-        """Gets the requirement_id of this TestPoint.
+        r"""Gets the requirement_id of this TestPoint.
 
         需求id
 
@@ -443,7 +443,7 @@ class TestPoint:
 
     @requirement_id.setter
     def requirement_id(self, requirement_id):
-        """Sets the requirement_id of this TestPoint.
+        r"""Sets the requirement_id of this TestPoint.
 
         需求id
 
@@ -454,7 +454,7 @@ class TestPoint:
 
     @property
     def requirement_name(self):
-        """Gets the requirement_name of this TestPoint.
+        r"""Gets the requirement_name of this TestPoint.
 
         需求名称
 
@@ -465,7 +465,7 @@ class TestPoint:
 
     @requirement_name.setter
     def requirement_name(self, requirement_name):
-        """Sets the requirement_name of this TestPoint.
+        r"""Sets the requirement_name of this TestPoint.
 
         需求名称
 
@@ -476,7 +476,7 @@ class TestPoint:
 
     @property
     def service_id(self):
-        """Gets the service_id of this TestPoint.
+        r"""Gets the service_id of this TestPoint.
 
         服务id
 
@@ -487,7 +487,7 @@ class TestPoint:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this TestPoint.
+        r"""Sets the service_id of this TestPoint.
 
         服务id
 
@@ -498,7 +498,7 @@ class TestPoint:
 
     @property
     def status(self):
-        """Gets the status of this TestPoint.
+        r"""Gets the status of this TestPoint.
 
         状态
 
@@ -509,7 +509,7 @@ class TestPoint:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this TestPoint.
+        r"""Sets the status of this TestPoint.
 
         状态
 
@@ -520,7 +520,7 @@ class TestPoint:
 
     @property
     def status_type(self):
-        """Gets the status_type of this TestPoint.
+        r"""Gets the status_type of this TestPoint.
 
         状体类型
 
@@ -531,7 +531,7 @@ class TestPoint:
 
     @status_type.setter
     def status_type(self, status_type):
-        """Sets the status_type of this TestPoint.
+        r"""Sets the status_type of this TestPoint.
 
         状体类型
 
@@ -542,7 +542,7 @@ class TestPoint:
 
     @property
     def tc_counts(self):
-        """Gets the tc_counts of this TestPoint.
+        r"""Gets the tc_counts of this TestPoint.
 
         tc数量
 
@@ -553,7 +553,7 @@ class TestPoint:
 
     @tc_counts.setter
     def tc_counts(self, tc_counts):
-        """Sets the tc_counts of this TestPoint.
+        r"""Sets the tc_counts of this TestPoint.
 
         tc数量
 
@@ -564,7 +564,7 @@ class TestPoint:
 
     @property
     def test_cases(self):
-        """Gets the test_cases of this TestPoint.
+        r"""Gets the test_cases of this TestPoint.
 
         测试用例
 
@@ -575,7 +575,7 @@ class TestPoint:
 
     @test_cases.setter
     def test_cases(self, test_cases):
-        """Sets the test_cases of this TestPoint.
+        r"""Sets the test_cases of this TestPoint.
 
         测试用例
 
@@ -586,7 +586,7 @@ class TestPoint:
 
     @property
     def update_name(self):
-        """Gets the update_name of this TestPoint.
+        r"""Gets the update_name of this TestPoint.
 
         更新人名称
 
@@ -597,7 +597,7 @@ class TestPoint:
 
     @update_name.setter
     def update_name(self, update_name):
-        """Sets the update_name of this TestPoint.
+        r"""Sets the update_name of this TestPoint.
 
         更新人名称
 
@@ -608,7 +608,7 @@ class TestPoint:
 
     @property
     def update_num(self):
-        """Gets the update_num of this TestPoint.
+        r"""Gets the update_num of this TestPoint.
 
         更新人工号
 
@@ -619,7 +619,7 @@ class TestPoint:
 
     @update_num.setter
     def update_num(self, update_num):
-        """Sets the update_num of this TestPoint.
+        r"""Sets the update_num of this TestPoint.
 
         更新人工号
 
@@ -630,7 +630,7 @@ class TestPoint:
 
     @property
     def update_time(self):
-        """Gets the update_time of this TestPoint.
+        r"""Gets the update_time of this TestPoint.
 
         更新时间
 
@@ -641,7 +641,7 @@ class TestPoint:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this TestPoint.
+        r"""Sets the update_time of this TestPoint.
 
         更新时间
 
@@ -652,7 +652,7 @@ class TestPoint:
 
     @property
     def version(self):
-        """Gets the version of this TestPoint.
+        r"""Gets the version of this TestPoint.
 
         版本
 
@@ -663,7 +663,7 @@ class TestPoint:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this TestPoint.
+        r"""Sets the version of this TestPoint.
 
         版本
 

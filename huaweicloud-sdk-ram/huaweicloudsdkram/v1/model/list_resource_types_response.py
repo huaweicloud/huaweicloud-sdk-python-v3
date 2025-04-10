@@ -28,7 +28,7 @@ class ListResourceTypesResponse(SdkResponse):
     }
 
     def __init__(self, resource_types=None, page_info=None):
-        """ListResourceTypesResponse
+        r"""ListResourceTypesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListResourceTypesResponse(SdkResponse):
 
     @property
     def resource_types(self):
-        """Gets the resource_types of this ListResourceTypesResponse.
+        r"""Gets the resource_types of this ListResourceTypesResponse.
 
         云服务资源的详细信息列表。
 
@@ -62,7 +62,7 @@ class ListResourceTypesResponse(SdkResponse):
 
     @resource_types.setter
     def resource_types(self, resource_types):
-        """Sets the resource_types of this ListResourceTypesResponse.
+        r"""Sets the resource_types of this ListResourceTypesResponse.
 
         云服务资源的详细信息列表。
 
@@ -73,7 +73,7 @@ class ListResourceTypesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListResourceTypesResponse.
+        r"""Gets the page_info of this ListResourceTypesResponse.
 
         :return: The page_info of this ListResourceTypesResponse.
         :rtype: :class:`huaweicloudsdkram.v1.PageInfo`
@@ -82,7 +82,7 @@ class ListResourceTypesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListResourceTypesResponse.
+        r"""Sets the page_info of this ListResourceTypesResponse.
 
         :param page_info: The page_info of this ListResourceTypesResponse.
         :type page_info: :class:`huaweicloudsdkram.v1.PageInfo`

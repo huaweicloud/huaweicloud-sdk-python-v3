@@ -25,7 +25,7 @@ class UnlockWorkspaceRequestBody:
     }
 
     def __init__(self, operate_type=None):
-        """UnlockWorkspaceRequestBody
+        r"""UnlockWorkspaceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UnlockWorkspaceRequestBody:
 
     @property
     def operate_type(self):
-        """Gets the operate_type of this UnlockWorkspaceRequestBody.
+        r"""Gets the operate_type of this UnlockWorkspaceRequestBody.
 
         解除项目锁定操作类型。
 
@@ -54,7 +54,7 @@ class UnlockWorkspaceRequestBody:
 
     @operate_type.setter
     def operate_type(self, operate_type):
-        """Sets the operate_type of this UnlockWorkspaceRequestBody.
+        r"""Sets the operate_type of this UnlockWorkspaceRequestBody.
 
         解除项目锁定操作类型。
 

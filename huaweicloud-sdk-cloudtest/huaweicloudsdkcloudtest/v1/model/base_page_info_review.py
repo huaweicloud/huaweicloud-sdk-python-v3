@@ -35,7 +35,7 @@ class BasePageInfoReview:
     }
 
     def __init__(self, total=None, list=None, offset=None, limit=None, pages=None, size=None):
-        """BasePageInfoReview
+        r"""BasePageInfoReview
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class BasePageInfoReview:
 
     @property
     def total(self):
-        """Gets the total of this BasePageInfoReview.
+        r"""Gets the total of this BasePageInfoReview.
 
         :return: The total of this BasePageInfoReview.
         :rtype: int
@@ -87,7 +87,7 @@ class BasePageInfoReview:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this BasePageInfoReview.
+        r"""Sets the total of this BasePageInfoReview.
 
         :param total: The total of this BasePageInfoReview.
         :type total: int
@@ -96,7 +96,7 @@ class BasePageInfoReview:
 
     @property
     def list(self):
-        """Gets the list of this BasePageInfoReview.
+        r"""Gets the list of this BasePageInfoReview.
 
         :return: The list of this BasePageInfoReview.
         :rtype: list[:class:`huaweicloudsdkcloudtest.v1.Review`]
@@ -105,7 +105,7 @@ class BasePageInfoReview:
 
     @list.setter
     def list(self, list):
-        """Sets the list of this BasePageInfoReview.
+        r"""Sets the list of this BasePageInfoReview.
 
         :param list: The list of this BasePageInfoReview.
         :type list: list[:class:`huaweicloudsdkcloudtest.v1.Review`]
@@ -114,7 +114,7 @@ class BasePageInfoReview:
 
     @property
     def offset(self):
-        """Gets the offset of this BasePageInfoReview.
+        r"""Gets the offset of this BasePageInfoReview.
 
         :return: The offset of this BasePageInfoReview.
         :rtype: int
@@ -123,7 +123,7 @@ class BasePageInfoReview:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this BasePageInfoReview.
+        r"""Sets the offset of this BasePageInfoReview.
 
         :param offset: The offset of this BasePageInfoReview.
         :type offset: int
@@ -132,7 +132,7 @@ class BasePageInfoReview:
 
     @property
     def limit(self):
-        """Gets the limit of this BasePageInfoReview.
+        r"""Gets the limit of this BasePageInfoReview.
 
         :return: The limit of this BasePageInfoReview.
         :rtype: int
@@ -141,7 +141,7 @@ class BasePageInfoReview:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this BasePageInfoReview.
+        r"""Sets the limit of this BasePageInfoReview.
 
         :param limit: The limit of this BasePageInfoReview.
         :type limit: int
@@ -150,7 +150,7 @@ class BasePageInfoReview:
 
     @property
     def pages(self):
-        """Gets the pages of this BasePageInfoReview.
+        r"""Gets the pages of this BasePageInfoReview.
 
         :return: The pages of this BasePageInfoReview.
         :rtype: int
@@ -159,7 +159,7 @@ class BasePageInfoReview:
 
     @pages.setter
     def pages(self, pages):
-        """Sets the pages of this BasePageInfoReview.
+        r"""Sets the pages of this BasePageInfoReview.
 
         :param pages: The pages of this BasePageInfoReview.
         :type pages: int
@@ -168,7 +168,7 @@ class BasePageInfoReview:
 
     @property
     def size(self):
-        """Gets the size of this BasePageInfoReview.
+        r"""Gets the size of this BasePageInfoReview.
 
         :return: The size of this BasePageInfoReview.
         :rtype: int
@@ -177,7 +177,7 @@ class BasePageInfoReview:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this BasePageInfoReview.
+        r"""Sets the size of this BasePageInfoReview.
 
         :param size: The size of this BasePageInfoReview.
         :type size: int

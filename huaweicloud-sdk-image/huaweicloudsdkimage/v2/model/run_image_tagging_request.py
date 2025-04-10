@@ -25,7 +25,7 @@ class RunImageTaggingRequest:
     }
 
     def __init__(self, body=None):
-        """RunImageTaggingRequest
+        r"""RunImageTaggingRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RunImageTaggingRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunImageTaggingRequest.
+        r"""Gets the body of this RunImageTaggingRequest.
 
         :return: The body of this RunImageTaggingRequest.
         :rtype: :class:`huaweicloudsdkimage.v2.ImageTaggingReq`
@@ -52,7 +52,7 @@ class RunImageTaggingRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunImageTaggingRequest.
+        r"""Sets the body of this RunImageTaggingRequest.
 
         :param body: The body of this RunImageTaggingRequest.
         :type body: :class:`huaweicloudsdkimage.v2.ImageTaggingReq`

@@ -26,7 +26,7 @@ class ImportConnectionsResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None):
-        """ImportConnectionsResponse
+        r"""ImportConnectionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ImportConnectionsResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this ImportConnectionsResponse.
+        r"""Gets the task_id of this ImportConnectionsResponse.
 
         任务id
 
@@ -55,7 +55,7 @@ class ImportConnectionsResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ImportConnectionsResponse.
+        r"""Sets the task_id of this ImportConnectionsResponse.
 
         任务id
 

@@ -43,7 +43,7 @@ class CreateCertificateAuthorityOrderRequestBody:
     }
 
     def __init__(self, cloud_service_type=None, charging_mode=None, period_type=None, period_num=None, is_auto_renew=None, promotion_info=None, subscription_num=None, is_auto_pay=None, enterprise_project_id=None, product_infos=None):
-        """CreateCertificateAuthorityOrderRequestBody
+        r"""CreateCertificateAuthorityOrderRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class CreateCertificateAuthorityOrderRequestBody:
 
     @property
     def cloud_service_type(self):
-        """Gets the cloud_service_type of this CreateCertificateAuthorityOrderRequestBody.
+        r"""Gets the cloud_service_type of this CreateCertificateAuthorityOrderRequestBody.
 
         云服务类型，固定为'hws.service.type.ccm'
 
@@ -110,7 +110,7 @@ class CreateCertificateAuthorityOrderRequestBody:
 
     @cloud_service_type.setter
     def cloud_service_type(self, cloud_service_type):
-        """Sets the cloud_service_type of this CreateCertificateAuthorityOrderRequestBody.
+        r"""Sets the cloud_service_type of this CreateCertificateAuthorityOrderRequestBody.
 
         云服务类型，固定为'hws.service.type.ccm'
 
@@ -121,7 +121,7 @@ class CreateCertificateAuthorityOrderRequestBody:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this CreateCertificateAuthorityOrderRequestBody.
+        r"""Gets the charging_mode of this CreateCertificateAuthorityOrderRequestBody.
 
         计费模式 0包周期
 
@@ -132,7 +132,7 @@ class CreateCertificateAuthorityOrderRequestBody:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this CreateCertificateAuthorityOrderRequestBody.
+        r"""Sets the charging_mode of this CreateCertificateAuthorityOrderRequestBody.
 
         计费模式 0包周期
 
@@ -143,7 +143,7 @@ class CreateCertificateAuthorityOrderRequestBody:
 
     @property
     def period_type(self):
-        """Gets the period_type of this CreateCertificateAuthorityOrderRequestBody.
+        r"""Gets the period_type of this CreateCertificateAuthorityOrderRequestBody.
 
         订购周期 2月 3年
 
@@ -154,7 +154,7 @@ class CreateCertificateAuthorityOrderRequestBody:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this CreateCertificateAuthorityOrderRequestBody.
+        r"""Sets the period_type of this CreateCertificateAuthorityOrderRequestBody.
 
         订购周期 2月 3年
 
@@ -165,7 +165,7 @@ class CreateCertificateAuthorityOrderRequestBody:
 
     @property
     def period_num(self):
-        """Gets the period_num of this CreateCertificateAuthorityOrderRequestBody.
+        r"""Gets the period_num of this CreateCertificateAuthorityOrderRequestBody.
 
         订购周期数
 
@@ -176,7 +176,7 @@ class CreateCertificateAuthorityOrderRequestBody:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this CreateCertificateAuthorityOrderRequestBody.
+        r"""Sets the period_num of this CreateCertificateAuthorityOrderRequestBody.
 
         订购周期数
 
@@ -187,7 +187,7 @@ class CreateCertificateAuthorityOrderRequestBody:
 
     @property
     def is_auto_renew(self):
-        """Gets the is_auto_renew of this CreateCertificateAuthorityOrderRequestBody.
+        r"""Gets the is_auto_renew of this CreateCertificateAuthorityOrderRequestBody.
 
         是否自动续费 1是 0否
 
@@ -198,7 +198,7 @@ class CreateCertificateAuthorityOrderRequestBody:
 
     @is_auto_renew.setter
     def is_auto_renew(self, is_auto_renew):
-        """Sets the is_auto_renew of this CreateCertificateAuthorityOrderRequestBody.
+        r"""Sets the is_auto_renew of this CreateCertificateAuthorityOrderRequestBody.
 
         是否自动续费 1是 0否
 
@@ -209,7 +209,7 @@ class CreateCertificateAuthorityOrderRequestBody:
 
     @property
     def promotion_info(self):
-        """Gets the promotion_info of this CreateCertificateAuthorityOrderRequestBody.
+        r"""Gets the promotion_info of this CreateCertificateAuthorityOrderRequestBody.
 
         折扣信息
 
@@ -220,7 +220,7 @@ class CreateCertificateAuthorityOrderRequestBody:
 
     @promotion_info.setter
     def promotion_info(self, promotion_info):
-        """Sets the promotion_info of this CreateCertificateAuthorityOrderRequestBody.
+        r"""Sets the promotion_info of this CreateCertificateAuthorityOrderRequestBody.
 
         折扣信息
 
@@ -231,7 +231,7 @@ class CreateCertificateAuthorityOrderRequestBody:
 
     @property
     def subscription_num(self):
-        """Gets the subscription_num of this CreateCertificateAuthorityOrderRequestBody.
+        r"""Gets the subscription_num of this CreateCertificateAuthorityOrderRequestBody.
 
         订购数量
 
@@ -242,7 +242,7 @@ class CreateCertificateAuthorityOrderRequestBody:
 
     @subscription_num.setter
     def subscription_num(self, subscription_num):
-        """Sets the subscription_num of this CreateCertificateAuthorityOrderRequestBody.
+        r"""Sets the subscription_num of this CreateCertificateAuthorityOrderRequestBody.
 
         订购数量
 
@@ -253,7 +253,7 @@ class CreateCertificateAuthorityOrderRequestBody:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this CreateCertificateAuthorityOrderRequestBody.
+        r"""Gets the is_auto_pay of this CreateCertificateAuthorityOrderRequestBody.
 
         是否自动支付 1是 0否 不填默认为0
 
@@ -264,7 +264,7 @@ class CreateCertificateAuthorityOrderRequestBody:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this CreateCertificateAuthorityOrderRequestBody.
+        r"""Sets the is_auto_pay of this CreateCertificateAuthorityOrderRequestBody.
 
         是否自动支付 1是 0否 不填默认为0
 
@@ -275,7 +275,7 @@ class CreateCertificateAuthorityOrderRequestBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateCertificateAuthorityOrderRequestBody.
+        r"""Gets the enterprise_project_id of this CreateCertificateAuthorityOrderRequestBody.
 
         企业项目ID
 
@@ -286,7 +286,7 @@ class CreateCertificateAuthorityOrderRequestBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateCertificateAuthorityOrderRequestBody.
+        r"""Sets the enterprise_project_id of this CreateCertificateAuthorityOrderRequestBody.
 
         企业项目ID
 
@@ -297,7 +297,7 @@ class CreateCertificateAuthorityOrderRequestBody:
 
     @property
     def product_infos(self):
-        """Gets the product_infos of this CreateCertificateAuthorityOrderRequestBody.
+        r"""Gets the product_infos of this CreateCertificateAuthorityOrderRequestBody.
 
         产品列表，详情请参见**ProductInfo**字段数据结构说明。
 
@@ -308,7 +308,7 @@ class CreateCertificateAuthorityOrderRequestBody:
 
     @product_infos.setter
     def product_infos(self, product_infos):
-        """Sets the product_infos of this CreateCertificateAuthorityOrderRequestBody.
+        r"""Sets the product_infos of this CreateCertificateAuthorityOrderRequestBody.
 
         产品列表，详情请参见**ProductInfo**字段数据结构说明。
 

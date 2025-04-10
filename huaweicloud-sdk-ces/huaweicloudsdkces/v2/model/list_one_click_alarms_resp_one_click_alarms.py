@@ -31,7 +31,7 @@ class ListOneClickAlarmsRespOneClickAlarms:
     }
 
     def __init__(self, one_click_alarm_id=None, namespace=None, description=None, enabled=None):
-        """ListOneClickAlarmsRespOneClickAlarms
+        r"""ListOneClickAlarmsRespOneClickAlarms
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ListOneClickAlarmsRespOneClickAlarms:
 
     @property
     def one_click_alarm_id(self):
-        """Gets the one_click_alarm_id of this ListOneClickAlarmsRespOneClickAlarms.
+        r"""Gets the one_click_alarm_id of this ListOneClickAlarmsRespOneClickAlarms.
 
         一键告警ID
 
@@ -71,7 +71,7 @@ class ListOneClickAlarmsRespOneClickAlarms:
 
     @one_click_alarm_id.setter
     def one_click_alarm_id(self, one_click_alarm_id):
-        """Sets the one_click_alarm_id of this ListOneClickAlarmsRespOneClickAlarms.
+        r"""Sets the one_click_alarm_id of this ListOneClickAlarmsRespOneClickAlarms.
 
         一键告警ID
 
@@ -82,7 +82,7 @@ class ListOneClickAlarmsRespOneClickAlarms:
 
     @property
     def namespace(self):
-        """Gets the namespace of this ListOneClickAlarmsRespOneClickAlarms.
+        r"""Gets the namespace of this ListOneClickAlarmsRespOneClickAlarms.
 
         查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
 
@@ -93,7 +93,7 @@ class ListOneClickAlarmsRespOneClickAlarms:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this ListOneClickAlarmsRespOneClickAlarms.
+        r"""Sets the namespace of this ListOneClickAlarmsRespOneClickAlarms.
 
         查询服务的命名空间，各服务命名空间请参考[服务命名空间](https://support.huaweicloud.com/usermanual-ces/zh-cn_topic_0202622212.html)
 
@@ -104,7 +104,7 @@ class ListOneClickAlarmsRespOneClickAlarms:
 
     @property
     def description(self):
-        """Gets the description of this ListOneClickAlarmsRespOneClickAlarms.
+        r"""Gets the description of this ListOneClickAlarmsRespOneClickAlarms.
 
         一键告警描述，长度范围[0,256]，该字段默认值为空字符串
 
@@ -115,7 +115,7 @@ class ListOneClickAlarmsRespOneClickAlarms:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListOneClickAlarmsRespOneClickAlarms.
+        r"""Sets the description of this ListOneClickAlarmsRespOneClickAlarms.
 
         一键告警描述，长度范围[0,256]，该字段默认值为空字符串
 
@@ -126,7 +126,7 @@ class ListOneClickAlarmsRespOneClickAlarms:
 
     @property
     def enabled(self):
-        """Gets the enabled of this ListOneClickAlarmsRespOneClickAlarms.
+        r"""Gets the enabled of this ListOneClickAlarmsRespOneClickAlarms.
 
         开关
 
@@ -137,7 +137,7 @@ class ListOneClickAlarmsRespOneClickAlarms:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this ListOneClickAlarmsRespOneClickAlarms.
+        r"""Sets the enabled of this ListOneClickAlarmsRespOneClickAlarms.
 
         开关
 

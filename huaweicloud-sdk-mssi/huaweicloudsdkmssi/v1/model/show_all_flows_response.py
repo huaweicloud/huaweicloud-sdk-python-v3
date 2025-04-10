@@ -28,7 +28,7 @@ class ShowAllFlowsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, flow_metas=None):
-        """ShowAllFlowsResponse
+        r"""ShowAllFlowsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowAllFlowsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowAllFlowsResponse.
+        r"""Gets the count of this ShowAllFlowsResponse.
 
         流的数量
 
@@ -62,7 +62,7 @@ class ShowAllFlowsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowAllFlowsResponse.
+        r"""Sets the count of this ShowAllFlowsResponse.
 
         流的数量
 
@@ -73,7 +73,7 @@ class ShowAllFlowsResponse(SdkResponse):
 
     @property
     def flow_metas(self):
-        """Gets the flow_metas of this ShowAllFlowsResponse.
+        r"""Gets the flow_metas of this ShowAllFlowsResponse.
 
         流列表
 
@@ -84,7 +84,7 @@ class ShowAllFlowsResponse(SdkResponse):
 
     @flow_metas.setter
     def flow_metas(self, flow_metas):
-        """Sets the flow_metas of this ShowAllFlowsResponse.
+        r"""Sets the flow_metas of this ShowAllFlowsResponse.
 
         流列表
 

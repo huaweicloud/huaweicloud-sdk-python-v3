@@ -29,7 +29,7 @@ class TranscriberResult:
     }
 
     def __init__(self, text=None, analysis_info=None, word_info=None):
-        """TranscriberResult
+        r"""TranscriberResult
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class TranscriberResult:
 
     @property
     def text(self):
-        """Gets the text of this TranscriberResult.
+        r"""Gets the text of this TranscriberResult.
 
         识别结果文本。
 
@@ -67,7 +67,7 @@ class TranscriberResult:
 
     @text.setter
     def text(self, text):
-        """Sets the text of this TranscriberResult.
+        r"""Sets the text of this TranscriberResult.
 
         识别结果文本。
 
@@ -78,7 +78,7 @@ class TranscriberResult:
 
     @property
     def analysis_info(self):
-        """Gets the analysis_info of this TranscriberResult.
+        r"""Gets the analysis_info of this TranscriberResult.
 
         :return: The analysis_info of this TranscriberResult.
         :rtype: :class:`huaweicloudsdksis.v1.AnalysisInfoResult`
@@ -87,7 +87,7 @@ class TranscriberResult:
 
     @analysis_info.setter
     def analysis_info(self, analysis_info):
-        """Sets the analysis_info of this TranscriberResult.
+        r"""Sets the analysis_info of this TranscriberResult.
 
         :param analysis_info: The analysis_info of this TranscriberResult.
         :type analysis_info: :class:`huaweicloudsdksis.v1.AnalysisInfoResult`
@@ -96,7 +96,7 @@ class TranscriberResult:
 
     @property
     def word_info(self):
-        """Gets the word_info of this TranscriberResult.
+        r"""Gets the word_info of this TranscriberResult.
 
         分词输出列表
 
@@ -107,7 +107,7 @@ class TranscriberResult:
 
     @word_info.setter
     def word_info(self, word_info):
-        """Sets the word_info of this TranscriberResult.
+        r"""Sets the word_info of this TranscriberResult.
 
         分词输出列表
 

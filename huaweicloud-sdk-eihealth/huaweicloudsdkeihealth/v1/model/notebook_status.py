@@ -36,7 +36,7 @@ class NotebookStatus:
     }
 
     def __init__(self):
-        """NotebookStatus
+        r"""NotebookStatus
 
         The model defined in huaweicloud sdk
 

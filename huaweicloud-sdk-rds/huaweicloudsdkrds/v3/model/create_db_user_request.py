@@ -29,7 +29,7 @@ class CreateDbUserRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """CreateDbUserRequest
+        r"""CreateDbUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateDbUserRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreateDbUserRequest.
+        r"""Gets the x_language of this CreateDbUserRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class CreateDbUserRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreateDbUserRequest.
+        r"""Sets the x_language of this CreateDbUserRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class CreateDbUserRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateDbUserRequest.
+        r"""Gets the instance_id of this CreateDbUserRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class CreateDbUserRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateDbUserRequest.
+        r"""Sets the instance_id of this CreateDbUserRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class CreateDbUserRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDbUserRequest.
+        r"""Gets the body of this CreateDbUserRequest.
 
         :return: The body of this CreateDbUserRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.UserForCreation`
@@ -109,7 +109,7 @@ class CreateDbUserRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDbUserRequest.
+        r"""Sets the body of this CreateDbUserRequest.
 
         :param body: The body of this CreateDbUserRequest.
         :type body: :class:`huaweicloudsdkrds.v3.UserForCreation`

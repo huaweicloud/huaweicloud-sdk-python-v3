@@ -27,7 +27,7 @@ class ExtensionQueryResult:
     }
 
     def __init__(self, extensions=None, result_metadata=None):
-        """ExtensionQueryResult
+        r"""ExtensionQueryResult
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ExtensionQueryResult:
 
     @property
     def extensions(self):
-        """Gets the extensions of this ExtensionQueryResult.
+        r"""Gets the extensions of this ExtensionQueryResult.
 
         插件列表集合
 
@@ -61,7 +61,7 @@ class ExtensionQueryResult:
 
     @extensions.setter
     def extensions(self, extensions):
-        """Sets the extensions of this ExtensionQueryResult.
+        r"""Sets the extensions of this ExtensionQueryResult.
 
         插件列表集合
 
@@ -72,7 +72,7 @@ class ExtensionQueryResult:
 
     @property
     def result_metadata(self):
-        """Gets the result_metadata of this ExtensionQueryResult.
+        r"""Gets the result_metadata of this ExtensionQueryResult.
 
         结果元数据集合
 
@@ -83,7 +83,7 @@ class ExtensionQueryResult:
 
     @result_metadata.setter
     def result_metadata(self, result_metadata):
-        """Sets the result_metadata of this ExtensionQueryResult.
+        r"""Sets the result_metadata of this ExtensionQueryResult.
 
         结果元数据集合
 

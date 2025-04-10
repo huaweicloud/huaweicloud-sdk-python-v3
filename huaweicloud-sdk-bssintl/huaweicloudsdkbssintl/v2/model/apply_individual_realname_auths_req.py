@@ -39,7 +39,7 @@ class ApplyIndividualRealnameAuthsReq:
     }
 
     def __init__(self, customer_id=None, identify_type=None, verified_type=None, verified_file_url=None, name=None, verified_number=None, change_type=None, xaccount_type=None):
-        """ApplyIndividualRealnameAuthsReq
+        r"""ApplyIndividualRealnameAuthsReq
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ApplyIndividualRealnameAuthsReq:
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this ApplyIndividualRealnameAuthsReq.
+        r"""Gets the customer_id of this ApplyIndividualRealnameAuthsReq.
 
         客户账号ID。您可以调用查询客户列表接口获取customer_id。
 
@@ -97,7 +97,7 @@ class ApplyIndividualRealnameAuthsReq:
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this ApplyIndividualRealnameAuthsReq.
+        r"""Sets the customer_id of this ApplyIndividualRealnameAuthsReq.
 
         客户账号ID。您可以调用查询客户列表接口获取customer_id。
 
@@ -108,7 +108,7 @@ class ApplyIndividualRealnameAuthsReq:
 
     @property
     def identify_type(self):
-        """Gets the identify_type of this ApplyIndividualRealnameAuthsReq.
+        r"""Gets the identify_type of this ApplyIndividualRealnameAuthsReq.
 
         认证方案： 0：个人证件认证
 
@@ -119,7 +119,7 @@ class ApplyIndividualRealnameAuthsReq:
 
     @identify_type.setter
     def identify_type(self, identify_type):
-        """Sets the identify_type of this ApplyIndividualRealnameAuthsReq.
+        r"""Sets the identify_type of this ApplyIndividualRealnameAuthsReq.
 
         认证方案： 0：个人证件认证
 
@@ -130,7 +130,7 @@ class ApplyIndividualRealnameAuthsReq:
 
     @property
     def verified_type(self):
-        """Gets the verified_type of this ApplyIndividualRealnameAuthsReq.
+        r"""Gets the verified_type of this ApplyIndividualRealnameAuthsReq.
 
         |参数名称：证件类型：0：身份证，上传的附件为3张，第1张是身份证人像面，第2张是身份证国徽面，第3张是个人手持身份证人像面；3：护照，上传的附件为3张，第1张是护照个人资料页，第2张是，护照入境盖章页，第3张是手持护照个人资料页；3：护照，上传的附件为2张，第1张是护照个人资料页，第2张是手持护照个人资料页；5：港澳通行证，上传的附件为3张，第1张是港澳居民来往内地通行证正面（人像面），第2张是港澳居民来往内地通行证反面，第3张是手持港澳居民来往内地通行证人像面；6：台湾通行证，上传的附件为3张，第1张是台湾居民来往大陆通行证正面（人像面），第2张是台湾居民来往大陆通行证反面，第3张是手持台湾居民来往大陆通行证人像面；9：港澳居民居住证，上传的附件为3张，第1张是港澳居民居住证人像面，第2张是，港澳居民居住证国徽面，第3张是手持港澳居民居住证人像面照片；10：台湾居民居住证，上传的附件为3张，第1张是台湾居民居住证人像面，第2张是台湾居民居住证国徽面，第3张是手持台湾居民居住证人像面照片。当identifyType=0的时候，该字段需要填写，否则忽略该字段的取值。| |参数的约束及描述：证件类型：0：身份证，上传的附件为3张，第1张是身份证人像面，第2张是身份证国徽面，第3张是个人手持身份证人像面；3：护照，上传的附件为3张，第1张是护照个人资料页，第2张是，护照入境盖章页，第3张是手持护照个人资料页；3：护照，上传的附件为2张，第1张是护照个人资料页，第2张是手持护照个人资料页；5：港澳通行证，上传的附件为3张，第1张是港澳居民来往内地通行证正面（人像面），第2张是港澳居民来往内地通行证反面，第3张是手持港澳居民来往内地通行证人像面；6：台湾通行证，上传的附件为3张，第1张是台湾居民来往大陆通行证正面（人像面），第2张是台湾居民来往大陆通行证反面，第3张是手持台湾居民来往大陆通行证人像面；7：海外驾照，上传的附件为2张，第1张是中国以外驾照正面照片（人像面），第2张是手持中国以外驾照人像面照片；9：港澳居民居住证，上传的附件为3张，第1张是港澳居民居住证人像面，第2张是，港澳居民居住证国徽面，第3张是手持港澳居民居住证人像面照片；10：台湾居民居住证，上传的附件为3张，第1张是台湾居民居住证人像面，第2张是台湾居民居住证国徽面，第3张是手持台湾居民居住证人像面照片。当identifyType=0的时候，该字段需要填写，否则忽略该字段的取值。|
 
@@ -141,7 +141,7 @@ class ApplyIndividualRealnameAuthsReq:
 
     @verified_type.setter
     def verified_type(self, verified_type):
-        """Sets the verified_type of this ApplyIndividualRealnameAuthsReq.
+        r"""Sets the verified_type of this ApplyIndividualRealnameAuthsReq.
 
         |参数名称：证件类型：0：身份证，上传的附件为3张，第1张是身份证人像面，第2张是身份证国徽面，第3张是个人手持身份证人像面；3：护照，上传的附件为3张，第1张是护照个人资料页，第2张是，护照入境盖章页，第3张是手持护照个人资料页；3：护照，上传的附件为2张，第1张是护照个人资料页，第2张是手持护照个人资料页；5：港澳通行证，上传的附件为3张，第1张是港澳居民来往内地通行证正面（人像面），第2张是港澳居民来往内地通行证反面，第3张是手持港澳居民来往内地通行证人像面；6：台湾通行证，上传的附件为3张，第1张是台湾居民来往大陆通行证正面（人像面），第2张是台湾居民来往大陆通行证反面，第3张是手持台湾居民来往大陆通行证人像面；9：港澳居民居住证，上传的附件为3张，第1张是港澳居民居住证人像面，第2张是，港澳居民居住证国徽面，第3张是手持港澳居民居住证人像面照片；10：台湾居民居住证，上传的附件为3张，第1张是台湾居民居住证人像面，第2张是台湾居民居住证国徽面，第3张是手持台湾居民居住证人像面照片。当identifyType=0的时候，该字段需要填写，否则忽略该字段的取值。| |参数的约束及描述：证件类型：0：身份证，上传的附件为3张，第1张是身份证人像面，第2张是身份证国徽面，第3张是个人手持身份证人像面；3：护照，上传的附件为3张，第1张是护照个人资料页，第2张是，护照入境盖章页，第3张是手持护照个人资料页；3：护照，上传的附件为2张，第1张是护照个人资料页，第2张是手持护照个人资料页；5：港澳通行证，上传的附件为3张，第1张是港澳居民来往内地通行证正面（人像面），第2张是港澳居民来往内地通行证反面，第3张是手持港澳居民来往内地通行证人像面；6：台湾通行证，上传的附件为3张，第1张是台湾居民来往大陆通行证正面（人像面），第2张是台湾居民来往大陆通行证反面，第3张是手持台湾居民来往大陆通行证人像面；7：海外驾照，上传的附件为2张，第1张是中国以外驾照正面照片（人像面），第2张是手持中国以外驾照人像面照片；9：港澳居民居住证，上传的附件为3张，第1张是港澳居民居住证人像面，第2张是，港澳居民居住证国徽面，第3张是手持港澳居民居住证人像面照片；10：台湾居民居住证，上传的附件为3张，第1张是台湾居民居住证人像面，第2张是台湾居民居住证国徽面，第3张是手持台湾居民居住证人像面照片。当identifyType=0的时候，该字段需要填写，否则忽略该字段的取值。|
 
@@ -152,7 +152,7 @@ class ApplyIndividualRealnameAuthsReq:
 
     @property
     def verified_file_url(self):
-        """Gets the verified_file_url of this ApplyIndividualRealnameAuthsReq.
+        r"""Gets the verified_file_url of this ApplyIndividualRealnameAuthsReq.
 
         个人证件认证时证件附件的文件URL，该URL地址必须按照顺序填写。以护照举例，譬如护照个人资料页文件名称是abc023，手持护照个人资料页是def004，那么这个地方需要按照 abc023 def004 的顺序填写URL（文件名称区分大小写）。 证件附件目前仅仅支持jpg、jpeg、bmp、png、gif、pdf格式，单个文件最大不超过10M。这个URL是相对URL，不需要包含桶名和download目录，只要包含download目录下的子目录和对应文件名称即可。举例如下：如果上传的证件附件在桶中的位置是：https://bucketname.obs.Endpoint.myhuaweicloud.com/download/abc023.jpg，该字段填写abc023.jpg； 如果上传的证件附件在桶中的位置是：https://bucketname.obs.Endpoint.myhuaweicloud.com/download/test/abc023.jpg，该字段填写test/abc023.jpg。
 
@@ -163,7 +163,7 @@ class ApplyIndividualRealnameAuthsReq:
 
     @verified_file_url.setter
     def verified_file_url(self, verified_file_url):
-        """Sets the verified_file_url of this ApplyIndividualRealnameAuthsReq.
+        r"""Sets the verified_file_url of this ApplyIndividualRealnameAuthsReq.
 
         个人证件认证时证件附件的文件URL，该URL地址必须按照顺序填写。以护照举例，譬如护照个人资料页文件名称是abc023，手持护照个人资料页是def004，那么这个地方需要按照 abc023 def004 的顺序填写URL（文件名称区分大小写）。 证件附件目前仅仅支持jpg、jpeg、bmp、png、gif、pdf格式，单个文件最大不超过10M。这个URL是相对URL，不需要包含桶名和download目录，只要包含download目录下的子目录和对应文件名称即可。举例如下：如果上传的证件附件在桶中的位置是：https://bucketname.obs.Endpoint.myhuaweicloud.com/download/abc023.jpg，该字段填写abc023.jpg； 如果上传的证件附件在桶中的位置是：https://bucketname.obs.Endpoint.myhuaweicloud.com/download/test/abc023.jpg，该字段填写test/abc023.jpg。
 
@@ -174,7 +174,7 @@ class ApplyIndividualRealnameAuthsReq:
 
     @property
     def name(self):
-        """Gets the name of this ApplyIndividualRealnameAuthsReq.
+        r"""Gets the name of this ApplyIndividualRealnameAuthsReq.
 
         姓名。
 
@@ -185,7 +185,7 @@ class ApplyIndividualRealnameAuthsReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApplyIndividualRealnameAuthsReq.
+        r"""Sets the name of this ApplyIndividualRealnameAuthsReq.
 
         姓名。
 
@@ -196,7 +196,7 @@ class ApplyIndividualRealnameAuthsReq:
 
     @property
     def verified_number(self):
-        """Gets the verified_number of this ApplyIndividualRealnameAuthsReq.
+        r"""Gets the verified_number of this ApplyIndividualRealnameAuthsReq.
 
         证件号码。
 
@@ -207,7 +207,7 @@ class ApplyIndividualRealnameAuthsReq:
 
     @verified_number.setter
     def verified_number(self, verified_number):
-        """Sets the verified_number of this ApplyIndividualRealnameAuthsReq.
+        r"""Sets the verified_number of this ApplyIndividualRealnameAuthsReq.
 
         证件号码。
 
@@ -218,7 +218,7 @@ class ApplyIndividualRealnameAuthsReq:
 
     @property
     def change_type(self):
-        """Gets the change_type of this ApplyIndividualRealnameAuthsReq.
+        r"""Gets the change_type of this ApplyIndividualRealnameAuthsReq.
 
         变更类型： -1：首次实名认证
 
@@ -229,7 +229,7 @@ class ApplyIndividualRealnameAuthsReq:
 
     @change_type.setter
     def change_type(self, change_type):
-        """Sets the change_type of this ApplyIndividualRealnameAuthsReq.
+        r"""Sets the change_type of this ApplyIndividualRealnameAuthsReq.
 
         变更类型： -1：首次实名认证
 
@@ -240,7 +240,7 @@ class ApplyIndividualRealnameAuthsReq:
 
     @property
     def xaccount_type(self):
-        """Gets the xaccount_type of this ApplyIndividualRealnameAuthsReq.
+        r"""Gets the xaccount_type of this ApplyIndividualRealnameAuthsReq.
 
         华为分给合作伙伴的平台标识。 该标识的具体值由华为分配。获取方法请参见如何获取xaccountType的取值。
 
@@ -251,7 +251,7 @@ class ApplyIndividualRealnameAuthsReq:
 
     @xaccount_type.setter
     def xaccount_type(self, xaccount_type):
-        """Sets the xaccount_type of this ApplyIndividualRealnameAuthsReq.
+        r"""Sets the xaccount_type of this ApplyIndividualRealnameAuthsReq.
 
         华为分给合作伙伴的平台标识。 该标识的具体值由华为分配。获取方法请参见如何获取xaccountType的取值。
 

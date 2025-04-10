@@ -35,7 +35,7 @@ class GetProjectInfoV4ResultProjectCreator:
     }
 
     def __init__(self, user_num_id=None, user_id=None, user_name=None, domain_id=None, domain_name=None, nick_name=None):
-        """GetProjectInfoV4ResultProjectCreator
+        r"""GetProjectInfoV4ResultProjectCreator
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class GetProjectInfoV4ResultProjectCreator:
 
     @property
     def user_num_id(self):
-        """Gets the user_num_id of this GetProjectInfoV4ResultProjectCreator.
+        r"""Gets the user_num_id of this GetProjectInfoV4ResultProjectCreator.
 
         创建人num_id
 
@@ -89,7 +89,7 @@ class GetProjectInfoV4ResultProjectCreator:
 
     @user_num_id.setter
     def user_num_id(self, user_num_id):
-        """Sets the user_num_id of this GetProjectInfoV4ResultProjectCreator.
+        r"""Sets the user_num_id of this GetProjectInfoV4ResultProjectCreator.
 
         创建人num_id
 
@@ -100,7 +100,7 @@ class GetProjectInfoV4ResultProjectCreator:
 
     @property
     def user_id(self):
-        """Gets the user_id of this GetProjectInfoV4ResultProjectCreator.
+        r"""Gets the user_id of this GetProjectInfoV4ResultProjectCreator.
 
         创建人uuid
 
@@ -111,7 +111,7 @@ class GetProjectInfoV4ResultProjectCreator:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this GetProjectInfoV4ResultProjectCreator.
+        r"""Sets the user_id of this GetProjectInfoV4ResultProjectCreator.
 
         创建人uuid
 
@@ -122,7 +122,7 @@ class GetProjectInfoV4ResultProjectCreator:
 
     @property
     def user_name(self):
-        """Gets the user_name of this GetProjectInfoV4ResultProjectCreator.
+        r"""Gets the user_name of this GetProjectInfoV4ResultProjectCreator.
 
         创建人姓名
 
@@ -133,7 +133,7 @@ class GetProjectInfoV4ResultProjectCreator:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this GetProjectInfoV4ResultProjectCreator.
+        r"""Sets the user_name of this GetProjectInfoV4ResultProjectCreator.
 
         创建人姓名
 
@@ -144,7 +144,7 @@ class GetProjectInfoV4ResultProjectCreator:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this GetProjectInfoV4ResultProjectCreator.
+        r"""Gets the domain_id of this GetProjectInfoV4ResultProjectCreator.
 
         创建人租户id
 
@@ -155,7 +155,7 @@ class GetProjectInfoV4ResultProjectCreator:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this GetProjectInfoV4ResultProjectCreator.
+        r"""Sets the domain_id of this GetProjectInfoV4ResultProjectCreator.
 
         创建人租户id
 
@@ -166,7 +166,7 @@ class GetProjectInfoV4ResultProjectCreator:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this GetProjectInfoV4ResultProjectCreator.
+        r"""Gets the domain_name of this GetProjectInfoV4ResultProjectCreator.
 
         创建人租户名称
 
@@ -177,7 +177,7 @@ class GetProjectInfoV4ResultProjectCreator:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this GetProjectInfoV4ResultProjectCreator.
+        r"""Sets the domain_name of this GetProjectInfoV4ResultProjectCreator.
 
         创建人租户名称
 
@@ -188,7 +188,7 @@ class GetProjectInfoV4ResultProjectCreator:
 
     @property
     def nick_name(self):
-        """Gets the nick_name of this GetProjectInfoV4ResultProjectCreator.
+        r"""Gets the nick_name of this GetProjectInfoV4ResultProjectCreator.
 
         创建人昵称
 
@@ -199,7 +199,7 @@ class GetProjectInfoV4ResultProjectCreator:
 
     @nick_name.setter
     def nick_name(self, nick_name):
-        """Sets the nick_name of this GetProjectInfoV4ResultProjectCreator.
+        r"""Sets the nick_name of this GetProjectInfoV4ResultProjectCreator.
 
         创建人昵称
 

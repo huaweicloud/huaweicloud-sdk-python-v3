@@ -25,7 +25,7 @@ class NonRequiredHostedCloud:
     }
 
     def __init__(self, hosted_cloud=None):
-        """NonRequiredHostedCloud
+        r"""NonRequiredHostedCloud
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class NonRequiredHostedCloud:
 
     @property
     def hosted_cloud(self):
-        """Gets the hosted_cloud of this NonRequiredHostedCloud.
+        r"""Gets the hosted_cloud of this NonRequiredHostedCloud.
 
         :return: The hosted_cloud of this NonRequiredHostedCloud.
         :rtype: :class:`huaweicloudsdkcc.v3.HostedCloudEnum`
@@ -52,7 +52,7 @@ class NonRequiredHostedCloud:
 
     @hosted_cloud.setter
     def hosted_cloud(self, hosted_cloud):
-        """Sets the hosted_cloud of this NonRequiredHostedCloud.
+        r"""Sets the hosted_cloud of this NonRequiredHostedCloud.
 
         :param hosted_cloud: The hosted_cloud of this NonRequiredHostedCloud.
         :type hosted_cloud: :class:`huaweicloudsdkcc.v3.HostedCloudEnum`

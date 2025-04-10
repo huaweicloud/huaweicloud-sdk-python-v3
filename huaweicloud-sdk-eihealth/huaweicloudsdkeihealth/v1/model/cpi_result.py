@@ -33,7 +33,7 @@ class CpiResult:
     }
 
     def __init__(self, header=None, fasta=None, prop_names=None, result=None, custom_props=None):
-        """CpiResult
+        r"""CpiResult
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class CpiResult:
 
     @property
     def header(self):
-        """Gets the header of this CpiResult.
+        r"""Gets the header of this CpiResult.
 
         蛋白质FASTA标题
 
@@ -80,7 +80,7 @@ class CpiResult:
 
     @header.setter
     def header(self, header):
-        """Sets the header of this CpiResult.
+        r"""Sets the header of this CpiResult.
 
         蛋白质FASTA标题
 
@@ -91,7 +91,7 @@ class CpiResult:
 
     @property
     def fasta(self):
-        """Gets the fasta of this CpiResult.
+        r"""Gets the fasta of this CpiResult.
 
         蛋白质FASTA序列
 
@@ -102,7 +102,7 @@ class CpiResult:
 
     @fasta.setter
     def fasta(self, fasta):
-        """Sets the fasta of this CpiResult.
+        r"""Sets the fasta of this CpiResult.
 
         蛋白质FASTA序列
 
@@ -113,7 +113,7 @@ class CpiResult:
 
     @property
     def prop_names(self):
-        """Gets the prop_names of this CpiResult.
+        r"""Gets the prop_names of this CpiResult.
 
         分子ADMET属性名列表
 
@@ -124,7 +124,7 @@ class CpiResult:
 
     @prop_names.setter
     def prop_names(self, prop_names):
-        """Sets the prop_names of this CpiResult.
+        r"""Sets the prop_names of this CpiResult.
 
         分子ADMET属性名列表
 
@@ -135,7 +135,7 @@ class CpiResult:
 
     @property
     def result(self):
-        """Gets the result of this CpiResult.
+        r"""Gets the result of this CpiResult.
 
         返回CPI的模型结果
 
@@ -146,7 +146,7 @@ class CpiResult:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this CpiResult.
+        r"""Sets the result of this CpiResult.
 
         返回CPI的模型结果
 
@@ -157,7 +157,7 @@ class CpiResult:
 
     @property
     def custom_props(self):
-        """Gets the custom_props of this CpiResult.
+        r"""Gets the custom_props of this CpiResult.
 
         用户已开启的自定义属性集合
 
@@ -168,7 +168,7 @@ class CpiResult:
 
     @custom_props.setter
     def custom_props(self, custom_props):
-        """Sets the custom_props of this CpiResult.
+        r"""Sets the custom_props of this CpiResult.
 
         用户已开启的自定义属性集合
 

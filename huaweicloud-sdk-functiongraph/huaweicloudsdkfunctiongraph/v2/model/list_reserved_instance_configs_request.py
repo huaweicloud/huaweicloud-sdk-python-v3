@@ -29,7 +29,7 @@ class ListReservedInstanceConfigsRequest:
     }
 
     def __init__(self, function_urn=None, marker=None, limit=None):
-        """ListReservedInstanceConfigsRequest
+        r"""ListReservedInstanceConfigsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListReservedInstanceConfigsRequest:
 
     @property
     def function_urn(self):
-        """Gets the function_urn of this ListReservedInstanceConfigsRequest.
+        r"""Gets the function_urn of this ListReservedInstanceConfigsRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -68,7 +68,7 @@ class ListReservedInstanceConfigsRequest:
 
     @function_urn.setter
     def function_urn(self, function_urn):
-        """Sets the function_urn of this ListReservedInstanceConfigsRequest.
+        r"""Sets the function_urn of this ListReservedInstanceConfigsRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -79,7 +79,7 @@ class ListReservedInstanceConfigsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListReservedInstanceConfigsRequest.
+        r"""Gets the marker of this ListReservedInstanceConfigsRequest.
 
         本次查询起始位置，默认值0
 
@@ -90,7 +90,7 @@ class ListReservedInstanceConfigsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListReservedInstanceConfigsRequest.
+        r"""Sets the marker of this ListReservedInstanceConfigsRequest.
 
         本次查询起始位置，默认值0
 
@@ -101,7 +101,7 @@ class ListReservedInstanceConfigsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListReservedInstanceConfigsRequest.
+        r"""Gets the limit of this ListReservedInstanceConfigsRequest.
 
         本次查询最大返回的数据条数，最大值500，默认值100
 
@@ -112,7 +112,7 @@ class ListReservedInstanceConfigsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListReservedInstanceConfigsRequest.
+        r"""Sets the limit of this ListReservedInstanceConfigsRequest.
 
         本次查询最大返回的数据条数，最大值500，默认值100
 

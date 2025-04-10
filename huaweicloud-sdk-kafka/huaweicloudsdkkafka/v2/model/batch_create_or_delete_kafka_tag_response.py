@@ -24,7 +24,7 @@ class BatchCreateOrDeleteKafkaTagResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchCreateOrDeleteKafkaTagResponse
+        r"""BatchCreateOrDeleteKafkaTagResponse
 
         The model defined in huaweicloud sdk
 

@@ -27,7 +27,7 @@ class PublicEndpoints:
     }
 
     def __init__(self, public_connect_info=None, jdbc_url=None):
-        """PublicEndpoints
+        r"""PublicEndpoints
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PublicEndpoints:
 
     @property
     def public_connect_info(self):
-        """Gets the public_connect_info of this PublicEndpoints.
+        r"""Gets the public_connect_info of this PublicEndpoints.
 
         公网连接信息
 
@@ -61,7 +61,7 @@ class PublicEndpoints:
 
     @public_connect_info.setter
     def public_connect_info(self, public_connect_info):
-        """Sets the public_connect_info of this PublicEndpoints.
+        r"""Sets the public_connect_info of this PublicEndpoints.
 
         公网连接信息
 
@@ -72,7 +72,7 @@ class PublicEndpoints:
 
     @property
     def jdbc_url(self):
-        """Gets the jdbc_url of this PublicEndpoints.
+        r"""Gets the jdbc_url of this PublicEndpoints.
 
         公网JDBC URL，默认格式如下： jdbc:postgresql://<public_connect_info>/<YOUR_DATABASE_name>
 
@@ -83,7 +83,7 @@ class PublicEndpoints:
 
     @jdbc_url.setter
     def jdbc_url(self, jdbc_url):
-        """Sets the jdbc_url of this PublicEndpoints.
+        r"""Sets the jdbc_url of this PublicEndpoints.
 
         公网JDBC URL，默认格式如下： jdbc:postgresql://<public_connect_info>/<YOUR_DATABASE_name>
 

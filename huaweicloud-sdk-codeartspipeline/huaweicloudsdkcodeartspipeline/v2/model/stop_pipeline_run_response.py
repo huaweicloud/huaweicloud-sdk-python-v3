@@ -26,7 +26,7 @@ class StopPipelineRunResponse(SdkResponse):
     }
 
     def __init__(self, success=None):
-        """StopPipelineRunResponse
+        r"""StopPipelineRunResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class StopPipelineRunResponse(SdkResponse):
 
     @property
     def success(self):
-        """Gets the success of this StopPipelineRunResponse.
+        r"""Gets the success of this StopPipelineRunResponse.
 
         操作是否成功
 
@@ -55,7 +55,7 @@ class StopPipelineRunResponse(SdkResponse):
 
     @success.setter
     def success(self, success):
-        """Sets the success of this StopPipelineRunResponse.
+        r"""Sets the success of this StopPipelineRunResponse.
 
         操作是否成功
 

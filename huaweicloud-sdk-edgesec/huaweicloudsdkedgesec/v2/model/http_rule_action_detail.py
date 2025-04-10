@@ -27,7 +27,7 @@ class HttpRuleActionDetail:
     }
 
     def __init__(self, redirect_url=None, response=None):
-        """HttpRuleActionDetail
+        r"""HttpRuleActionDetail
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class HttpRuleActionDetail:
 
     @property
     def redirect_url(self):
-        """Gets the redirect_url of this HttpRuleActionDetail.
+        r"""Gets the redirect_url of this HttpRuleActionDetail.
 
         返回页面重定向的url
 
@@ -61,7 +61,7 @@ class HttpRuleActionDetail:
 
     @redirect_url.setter
     def redirect_url(self, redirect_url):
-        """Sets the redirect_url of this HttpRuleActionDetail.
+        r"""Sets the redirect_url of this HttpRuleActionDetail.
 
         返回页面重定向的url
 
@@ -72,7 +72,7 @@ class HttpRuleActionDetail:
 
     @property
     def response(self):
-        """Gets the response of this HttpRuleActionDetail.
+        r"""Gets the response of this HttpRuleActionDetail.
 
         :return: The response of this HttpRuleActionDetail.
         :rtype: :class:`huaweicloudsdkedgesec.v2.HttpRuleActionResponse`
@@ -81,7 +81,7 @@ class HttpRuleActionDetail:
 
     @response.setter
     def response(self, response):
-        """Sets the response of this HttpRuleActionDetail.
+        r"""Sets the response of this HttpRuleActionDetail.
 
         :param response: The response of this HttpRuleActionDetail.
         :type response: :class:`huaweicloudsdkedgesec.v2.HttpRuleActionResponse`

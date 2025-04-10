@@ -33,7 +33,7 @@ class UpdatePolicyRuleStatusRequest:
     }
 
     def __init__(self, enterprise_project_id=None, policy_id=None, ruletype=None, rule_id=None, body=None):
-        """UpdatePolicyRuleStatusRequest
+        r"""UpdatePolicyRuleStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class UpdatePolicyRuleStatusRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this UpdatePolicyRuleStatusRequest.
+        r"""Gets the enterprise_project_id of this UpdatePolicyRuleStatusRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -79,7 +79,7 @@ class UpdatePolicyRuleStatusRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this UpdatePolicyRuleStatusRequest.
+        r"""Sets the enterprise_project_id of this UpdatePolicyRuleStatusRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -90,7 +90,7 @@ class UpdatePolicyRuleStatusRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this UpdatePolicyRuleStatusRequest.
+        r"""Gets the policy_id of this UpdatePolicyRuleStatusRequest.
 
         策略id（策略id从查询防护策略列表接口获取）
 
@@ -101,7 +101,7 @@ class UpdatePolicyRuleStatusRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this UpdatePolicyRuleStatusRequest.
+        r"""Sets the policy_id of this UpdatePolicyRuleStatusRequest.
 
         策略id（策略id从查询防护策略列表接口获取）
 
@@ -112,7 +112,7 @@ class UpdatePolicyRuleStatusRequest:
 
     @property
     def ruletype(self):
-        """Gets the ruletype of this UpdatePolicyRuleStatusRequest.
+        r"""Gets the ruletype of this UpdatePolicyRuleStatusRequest.
 
         策略类型
 
@@ -123,7 +123,7 @@ class UpdatePolicyRuleStatusRequest:
 
     @ruletype.setter
     def ruletype(self, ruletype):
-        """Sets the ruletype of this UpdatePolicyRuleStatusRequest.
+        r"""Sets the ruletype of this UpdatePolicyRuleStatusRequest.
 
         策略类型
 
@@ -134,7 +134,7 @@ class UpdatePolicyRuleStatusRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this UpdatePolicyRuleStatusRequest.
+        r"""Gets the rule_id of this UpdatePolicyRuleStatusRequest.
 
         规则id，根据不同的规则类型（ruletype）调用规则列表接口获取规则id，例如黑白名单（whiteblackip）规则id，您可以通过调用查询黑白名单规则列表（ListWhiteblackipRule）获取规则id
 
@@ -145,7 +145,7 @@ class UpdatePolicyRuleStatusRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this UpdatePolicyRuleStatusRequest.
+        r"""Sets the rule_id of this UpdatePolicyRuleStatusRequest.
 
         规则id，根据不同的规则类型（ruletype）调用规则列表接口获取规则id，例如黑白名单（whiteblackip）规则id，您可以通过调用查询黑白名单规则列表（ListWhiteblackipRule）获取规则id
 
@@ -156,7 +156,7 @@ class UpdatePolicyRuleStatusRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePolicyRuleStatusRequest.
+        r"""Gets the body of this UpdatePolicyRuleStatusRequest.
 
         :return: The body of this UpdatePolicyRuleStatusRequest.
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdatePolicyRuleStatusRequestBody`
@@ -165,7 +165,7 @@ class UpdatePolicyRuleStatusRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePolicyRuleStatusRequest.
+        r"""Sets the body of this UpdatePolicyRuleStatusRequest.
 
         :param body: The body of this UpdatePolicyRuleStatusRequest.
         :type body: :class:`huaweicloudsdkwaf.v1.UpdatePolicyRuleStatusRequestBody`

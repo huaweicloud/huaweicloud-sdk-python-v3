@@ -23,7 +23,7 @@ class ListCloudConnectionTagsRequest:
     }
 
     def __init__(self):
-        """ListCloudConnectionTagsRequest
+        r"""ListCloudConnectionTagsRequest
 
         The model defined in huaweicloud sdk
 

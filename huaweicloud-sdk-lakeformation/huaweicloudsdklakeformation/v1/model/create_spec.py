@@ -29,7 +29,7 @@ class CreateSpec:
     }
 
     def __init__(self, product_id=None, spec_code=None, stride_num=None):
-        """CreateSpec
+        r"""CreateSpec
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateSpec:
 
     @property
     def product_id(self):
-        """Gets the product_id of this CreateSpec.
+        r"""Gets the product_id of this CreateSpec.
 
         商品ID。由系统自动生成，如OFFI8XXXXXXXXXXXXXXXX4。
 
@@ -66,7 +66,7 @@ class CreateSpec:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this CreateSpec.
+        r"""Sets the product_id of this CreateSpec.
 
         商品ID。由系统自动生成，如OFFI8XXXXXXXXXXXXXXXX4。
 
@@ -77,7 +77,7 @@ class CreateSpec:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this CreateSpec.
+        r"""Gets the spec_code of this CreateSpec.
 
         规格编码。由系统自动生成，例如lakeformation.unit.basic.qps。
 
@@ -88,7 +88,7 @@ class CreateSpec:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this CreateSpec.
+        r"""Sets the spec_code of this CreateSpec.
 
         规格编码。由系统自动生成，例如lakeformation.unit.basic.qps。
 
@@ -99,7 +99,7 @@ class CreateSpec:
 
     @property
     def stride_num(self):
-        """Gets the stride_num of this CreateSpec.
+        r"""Gets the stride_num of this CreateSpec.
 
         步数。QPS为每秒最大请求数步长，最小为5，步长为1。
 
@@ -110,7 +110,7 @@ class CreateSpec:
 
     @stride_num.setter
     def stride_num(self, stride_num):
-        """Sets the stride_num of this CreateSpec.
+        r"""Sets the stride_num of this CreateSpec.
 
         步数。QPS为每秒最大请求数步长，最小为5，步长为1。
 

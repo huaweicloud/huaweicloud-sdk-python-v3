@@ -28,7 +28,7 @@ class ListErrorServersResponse(SdkResponse):
     }
 
     def __init__(self, count=None, migration_errors=None):
-        """ListErrorServersResponse
+        r"""ListErrorServersResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListErrorServersResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListErrorServersResponse.
+        r"""Gets the count of this ListErrorServersResponse.
 
         迁移过程中发生错误的源端数量
 
@@ -62,7 +62,7 @@ class ListErrorServersResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListErrorServersResponse.
+        r"""Sets the count of this ListErrorServersResponse.
 
         迁移过程中发生错误的源端数量
 
@@ -73,7 +73,7 @@ class ListErrorServersResponse(SdkResponse):
 
     @property
     def migration_errors(self):
-        """Gets the migration_errors of this ListErrorServersResponse.
+        r"""Gets the migration_errors of this ListErrorServersResponse.
 
         迁移过程中发生的错误详情
 
@@ -84,7 +84,7 @@ class ListErrorServersResponse(SdkResponse):
 
     @migration_errors.setter
     def migration_errors(self, migration_errors):
-        """Sets the migration_errors of this ListErrorServersResponse.
+        r"""Sets the migration_errors of this ListErrorServersResponse.
 
         迁移过程中发生的错误详情
 

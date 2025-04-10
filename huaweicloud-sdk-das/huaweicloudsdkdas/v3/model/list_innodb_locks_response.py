@@ -30,7 +30,7 @@ class ListInnodbLocksResponse(SdkResponse):
     }
 
     def __init__(self, innodb_trx=None, innodb_lock_waits=None, count=None):
-        """ListInnodbLocksResponse
+        r"""ListInnodbLocksResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListInnodbLocksResponse(SdkResponse):
 
     @property
     def innodb_trx(self):
-        """Gets the innodb_trx of this ListInnodbLocksResponse.
+        r"""Gets the innodb_trx of this ListInnodbLocksResponse.
 
         当前持有或等待锁的事务信息
 
@@ -69,7 +69,7 @@ class ListInnodbLocksResponse(SdkResponse):
 
     @innodb_trx.setter
     def innodb_trx(self, innodb_trx):
-        """Sets the innodb_trx of this ListInnodbLocksResponse.
+        r"""Sets the innodb_trx of this ListInnodbLocksResponse.
 
         当前持有或等待锁的事务信息
 
@@ -80,7 +80,7 @@ class ListInnodbLocksResponse(SdkResponse):
 
     @property
     def innodb_lock_waits(self):
-        """Gets the innodb_lock_waits of this ListInnodbLocksResponse.
+        r"""Gets the innodb_lock_waits of this ListInnodbLocksResponse.
 
         每个事务请求的锁以及阻塞该请求的锁的对应关系
 
@@ -91,7 +91,7 @@ class ListInnodbLocksResponse(SdkResponse):
 
     @innodb_lock_waits.setter
     def innodb_lock_waits(self, innodb_lock_waits):
-        """Sets the innodb_lock_waits of this ListInnodbLocksResponse.
+        r"""Sets the innodb_lock_waits of this ListInnodbLocksResponse.
 
         每个事务请求的锁以及阻塞该请求的锁的对应关系
 
@@ -102,7 +102,7 @@ class ListInnodbLocksResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListInnodbLocksResponse.
+        r"""Gets the count of this ListInnodbLocksResponse.
 
         当前持有或等待锁的事务数量
 
@@ -113,7 +113,7 @@ class ListInnodbLocksResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListInnodbLocksResponse.
+        r"""Sets the count of this ListInnodbLocksResponse.
 
         当前持有或等待锁的事务数量
 

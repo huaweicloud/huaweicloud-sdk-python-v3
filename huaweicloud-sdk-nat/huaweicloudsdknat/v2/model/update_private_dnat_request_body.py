@@ -25,7 +25,7 @@ class UpdatePrivateDnatRequestBody:
     }
 
     def __init__(self, dnat_rule=None):
-        """UpdatePrivateDnatRequestBody
+        r"""UpdatePrivateDnatRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdatePrivateDnatRequestBody:
 
     @property
     def dnat_rule(self):
-        """Gets the dnat_rule of this UpdatePrivateDnatRequestBody.
+        r"""Gets the dnat_rule of this UpdatePrivateDnatRequestBody.
 
         :return: The dnat_rule of this UpdatePrivateDnatRequestBody.
         :rtype: :class:`huaweicloudsdknat.v2.UpdatePrivateDnatOption`
@@ -52,7 +52,7 @@ class UpdatePrivateDnatRequestBody:
 
     @dnat_rule.setter
     def dnat_rule(self, dnat_rule):
-        """Sets the dnat_rule of this UpdatePrivateDnatRequestBody.
+        r"""Sets the dnat_rule of this UpdatePrivateDnatRequestBody.
 
         :param dnat_rule: The dnat_rule of this UpdatePrivateDnatRequestBody.
         :type dnat_rule: :class:`huaweicloudsdknat.v2.UpdatePrivateDnatOption`

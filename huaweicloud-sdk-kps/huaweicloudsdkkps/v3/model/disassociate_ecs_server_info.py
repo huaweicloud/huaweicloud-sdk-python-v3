@@ -27,7 +27,7 @@ class DisassociateEcsServerInfo:
     }
 
     def __init__(self, id=None, auth=None):
-        """DisassociateEcsServerInfo
+        r"""DisassociateEcsServerInfo
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DisassociateEcsServerInfo:
 
     @property
     def id(self):
-        """Gets the id of this DisassociateEcsServerInfo.
+        r"""Gets the id of this DisassociateEcsServerInfo.
 
         需要绑定(替换或重置)SSH密钥对的虚拟机id
 
@@ -60,7 +60,7 @@ class DisassociateEcsServerInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DisassociateEcsServerInfo.
+        r"""Sets the id of this DisassociateEcsServerInfo.
 
         需要绑定(替换或重置)SSH密钥对的虚拟机id
 
@@ -71,7 +71,7 @@ class DisassociateEcsServerInfo:
 
     @property
     def auth(self):
-        """Gets the auth of this DisassociateEcsServerInfo.
+        r"""Gets the auth of this DisassociateEcsServerInfo.
 
         :return: The auth of this DisassociateEcsServerInfo.
         :rtype: :class:`huaweicloudsdkkps.v3.Auth`
@@ -80,7 +80,7 @@ class DisassociateEcsServerInfo:
 
     @auth.setter
     def auth(self, auth):
-        """Sets the auth of this DisassociateEcsServerInfo.
+        r"""Sets the auth of this DisassociateEcsServerInfo.
 
         :param auth: The auth of this DisassociateEcsServerInfo.
         :type auth: :class:`huaweicloudsdkkps.v3.Auth`

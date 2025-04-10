@@ -25,7 +25,7 @@ class ShowServerRequest:
     }
 
     def __init__(self, source_id=None):
-        """ShowServerRequest
+        r"""ShowServerRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowServerRequest:
 
     @property
     def source_id(self):
-        """Gets the source_id of this ShowServerRequest.
+        r"""Gets the source_id of this ShowServerRequest.
 
         源端服务器在主机迁移服务中的ID
 
@@ -53,7 +53,7 @@ class ShowServerRequest:
 
     @source_id.setter
     def source_id(self, source_id):
-        """Sets the source_id of this ShowServerRequest.
+        r"""Sets the source_id of this ShowServerRequest.
 
         源端服务器在主机迁移服务中的ID
 

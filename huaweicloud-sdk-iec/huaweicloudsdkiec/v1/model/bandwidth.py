@@ -51,7 +51,7 @@ class Bandwidth:
     }
 
     def __init__(self, bandwidth_type=None, charge_mode=None, create_time=None, id=None, name=None, operator=None, publicip_info=None, share_type=None, site_id=None, site_info=None, size=None, status=None, update_time=None, pool_id=None):
-        """Bandwidth
+        r"""Bandwidth
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class Bandwidth:
 
     @property
     def bandwidth_type(self):
-        """Gets the bandwidth_type of this Bandwidth.
+        r"""Gets the bandwidth_type of this Bandwidth.
 
         带宽类型。 取值范围： share：共享类型
 
@@ -145,7 +145,7 @@ class Bandwidth:
 
     @bandwidth_type.setter
     def bandwidth_type(self, bandwidth_type):
-        """Sets the bandwidth_type of this Bandwidth.
+        r"""Sets the bandwidth_type of this Bandwidth.
 
         带宽类型。 取值范围： share：共享类型
 
@@ -156,7 +156,7 @@ class Bandwidth:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this Bandwidth.
+        r"""Gets the charge_mode of this Bandwidth.
 
         计费模式，当前只支持峰值95计费。  取值范围：  - 95peak_plus：峰值95计费
 
@@ -167,7 +167,7 @@ class Bandwidth:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this Bandwidth.
+        r"""Sets the charge_mode of this Bandwidth.
 
         计费模式，当前只支持峰值95计费。  取值范围：  - 95peak_plus：峰值95计费
 
@@ -178,7 +178,7 @@ class Bandwidth:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Bandwidth.
+        r"""Gets the create_time of this Bandwidth.
 
         创建时间。
 
@@ -189,7 +189,7 @@ class Bandwidth:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Bandwidth.
+        r"""Sets the create_time of this Bandwidth.
 
         创建时间。
 
@@ -200,7 +200,7 @@ class Bandwidth:
 
     @property
     def id(self):
-        """Gets the id of this Bandwidth.
+        r"""Gets the id of this Bandwidth.
 
         带宽ID。
 
@@ -211,7 +211,7 @@ class Bandwidth:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Bandwidth.
+        r"""Sets the id of this Bandwidth.
 
         带宽ID。
 
@@ -222,7 +222,7 @@ class Bandwidth:
 
     @property
     def name(self):
-        """Gets the name of this Bandwidth.
+        r"""Gets the name of this Bandwidth.
 
         带宽名称。
 
@@ -233,7 +233,7 @@ class Bandwidth:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Bandwidth.
+        r"""Sets the name of this Bandwidth.
 
         带宽名称。
 
@@ -244,7 +244,7 @@ class Bandwidth:
 
     @property
     def operator(self):
-        """Gets the operator of this Bandwidth.
+        r"""Gets the operator of this Bandwidth.
 
         :return: The operator of this Bandwidth.
         :rtype: :class:`huaweicloudsdkiec.v1.Operator`
@@ -253,7 +253,7 @@ class Bandwidth:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this Bandwidth.
+        r"""Sets the operator of this Bandwidth.
 
         :param operator: The operator of this Bandwidth.
         :type operator: :class:`huaweicloudsdkiec.v1.Operator`
@@ -262,7 +262,7 @@ class Bandwidth:
 
     @property
     def publicip_info(self):
-        """Gets the publicip_info of this Bandwidth.
+        r"""Gets the publicip_info of this Bandwidth.
 
         弹性公网IP信息。
 
@@ -273,7 +273,7 @@ class Bandwidth:
 
     @publicip_info.setter
     def publicip_info(self, publicip_info):
-        """Sets the publicip_info of this Bandwidth.
+        r"""Sets the publicip_info of this Bandwidth.
 
         弹性公网IP信息。
 
@@ -284,7 +284,7 @@ class Bandwidth:
 
     @property
     def share_type(self):
-        """Gets the share_type of this Bandwidth.
+        r"""Gets the share_type of this Bandwidth.
 
         共享带宽类型，标识是否是共享带宽。  取值范围：  - WHOLE：共享带宽
 
@@ -295,7 +295,7 @@ class Bandwidth:
 
     @share_type.setter
     def share_type(self, share_type):
-        """Sets the share_type of this Bandwidth.
+        r"""Sets the share_type of this Bandwidth.
 
         共享带宽类型，标识是否是共享带宽。  取值范围：  - WHOLE：共享带宽
 
@@ -306,7 +306,7 @@ class Bandwidth:
 
     @property
     def site_id(self):
-        """Gets the site_id of this Bandwidth.
+        r"""Gets the site_id of this Bandwidth.
 
         边缘站点ID。
 
@@ -317,7 +317,7 @@ class Bandwidth:
 
     @site_id.setter
     def site_id(self, site_id):
-        """Sets the site_id of this Bandwidth.
+        r"""Sets the site_id of this Bandwidth.
 
         边缘站点ID。
 
@@ -328,7 +328,7 @@ class Bandwidth:
 
     @property
     def site_info(self):
-        """Gets the site_info of this Bandwidth.
+        r"""Gets the site_info of this Bandwidth.
 
         站点信息。
 
@@ -339,7 +339,7 @@ class Bandwidth:
 
     @site_info.setter
     def site_info(self, site_info):
-        """Sets the site_info of this Bandwidth.
+        r"""Sets the site_info of this Bandwidth.
 
         站点信息。
 
@@ -350,7 +350,7 @@ class Bandwidth:
 
     @property
     def size(self):
-        """Gets the size of this Bandwidth.
+        r"""Gets the size of this Bandwidth.
 
         带宽大小。
 
@@ -361,7 +361,7 @@ class Bandwidth:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this Bandwidth.
+        r"""Sets the size of this Bandwidth.
 
         带宽大小。
 
@@ -372,7 +372,7 @@ class Bandwidth:
 
     @property
     def status(self):
-        """Gets the status of this Bandwidth.
+        r"""Gets the status of this Bandwidth.
 
         带宽的状态。  取值范围：  - FREEZED：冻结  - NORMAL：正常
 
@@ -383,7 +383,7 @@ class Bandwidth:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Bandwidth.
+        r"""Sets the status of this Bandwidth.
 
         带宽的状态。  取值范围：  - FREEZED：冻结  - NORMAL：正常
 
@@ -394,7 +394,7 @@ class Bandwidth:
 
     @property
     def update_time(self):
-        """Gets the update_time of this Bandwidth.
+        r"""Gets the update_time of this Bandwidth.
 
         更新时间。
 
@@ -405,7 +405,7 @@ class Bandwidth:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this Bandwidth.
+        r"""Sets the update_time of this Bandwidth.
 
         更新时间。
 
@@ -416,7 +416,7 @@ class Bandwidth:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this Bandwidth.
+        r"""Gets the pool_id of this Bandwidth.
 
         线路ID。
 
@@ -427,7 +427,7 @@ class Bandwidth:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this Bandwidth.
+        r"""Sets the pool_id of this Bandwidth.
 
         线路ID。
 

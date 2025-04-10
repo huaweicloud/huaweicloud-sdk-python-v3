@@ -39,7 +39,7 @@ class UpgradeInstanceData:
     }
 
     def __init__(self, basic_bandwidth=None, elastic_bandwidth=None, service_bandwidth=None, port_num=None, bind_domain_num=None, elastic_service_bandwidth_type=None, elastic_service_bandwidth=None, basic_qps=None):
-        """UpgradeInstanceData
+        r"""UpgradeInstanceData
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class UpgradeInstanceData:
 
     @property
     def basic_bandwidth(self):
-        """Gets the basic_bandwidth of this UpgradeInstanceData.
+        r"""Gets the basic_bandwidth of this UpgradeInstanceData.
 
         保底带宽(G)
 
@@ -103,7 +103,7 @@ class UpgradeInstanceData:
 
     @basic_bandwidth.setter
     def basic_bandwidth(self, basic_bandwidth):
-        """Sets the basic_bandwidth of this UpgradeInstanceData.
+        r"""Sets the basic_bandwidth of this UpgradeInstanceData.
 
         保底带宽(G)
 
@@ -114,7 +114,7 @@ class UpgradeInstanceData:
 
     @property
     def elastic_bandwidth(self):
-        """Gets the elastic_bandwidth of this UpgradeInstanceData.
+        r"""Gets the elastic_bandwidth of this UpgradeInstanceData.
 
         弹性带宽(G)
 
@@ -125,7 +125,7 @@ class UpgradeInstanceData:
 
     @elastic_bandwidth.setter
     def elastic_bandwidth(self, elastic_bandwidth):
-        """Sets the elastic_bandwidth of this UpgradeInstanceData.
+        r"""Sets the elastic_bandwidth of this UpgradeInstanceData.
 
         弹性带宽(G)
 
@@ -136,7 +136,7 @@ class UpgradeInstanceData:
 
     @property
     def service_bandwidth(self):
-        """Gets the service_bandwidth of this UpgradeInstanceData.
+        r"""Gets the service_bandwidth of this UpgradeInstanceData.
 
         业务带宽
 
@@ -147,7 +147,7 @@ class UpgradeInstanceData:
 
     @service_bandwidth.setter
     def service_bandwidth(self, service_bandwidth):
-        """Sets the service_bandwidth of this UpgradeInstanceData.
+        r"""Sets the service_bandwidth of this UpgradeInstanceData.
 
         业务带宽
 
@@ -158,7 +158,7 @@ class UpgradeInstanceData:
 
     @property
     def port_num(self):
-        """Gets the port_num of this UpgradeInstanceData.
+        r"""Gets the port_num of this UpgradeInstanceData.
 
         端口数
 
@@ -169,7 +169,7 @@ class UpgradeInstanceData:
 
     @port_num.setter
     def port_num(self, port_num):
-        """Sets the port_num of this UpgradeInstanceData.
+        r"""Sets the port_num of this UpgradeInstanceData.
 
         端口数
 
@@ -180,7 +180,7 @@ class UpgradeInstanceData:
 
     @property
     def bind_domain_num(self):
-        """Gets the bind_domain_num of this UpgradeInstanceData.
+        r"""Gets the bind_domain_num of this UpgradeInstanceData.
 
         域名数
 
@@ -191,7 +191,7 @@ class UpgradeInstanceData:
 
     @bind_domain_num.setter
     def bind_domain_num(self, bind_domain_num):
-        """Sets the bind_domain_num of this UpgradeInstanceData.
+        r"""Sets the bind_domain_num of this UpgradeInstanceData.
 
         域名数
 
@@ -202,7 +202,7 @@ class UpgradeInstanceData:
 
     @property
     def elastic_service_bandwidth_type(self):
-        """Gets the elastic_service_bandwidth_type of this UpgradeInstanceData.
+        r"""Gets the elastic_service_bandwidth_type of this UpgradeInstanceData.
 
         弹性业务带宽,0-关闭，3-月95
 
@@ -213,7 +213,7 @@ class UpgradeInstanceData:
 
     @elastic_service_bandwidth_type.setter
     def elastic_service_bandwidth_type(self, elastic_service_bandwidth_type):
-        """Sets the elastic_service_bandwidth_type of this UpgradeInstanceData.
+        r"""Sets the elastic_service_bandwidth_type of this UpgradeInstanceData.
 
         弹性业务带宽,0-关闭，3-月95
 
@@ -224,7 +224,7 @@ class UpgradeInstanceData:
 
     @property
     def elastic_service_bandwidth(self):
-        """Gets the elastic_service_bandwidth of this UpgradeInstanceData.
+        r"""Gets the elastic_service_bandwidth of this UpgradeInstanceData.
 
         弹性业务带宽增加值
 
@@ -235,7 +235,7 @@ class UpgradeInstanceData:
 
     @elastic_service_bandwidth.setter
     def elastic_service_bandwidth(self, elastic_service_bandwidth):
-        """Sets the elastic_service_bandwidth of this UpgradeInstanceData.
+        r"""Sets the elastic_service_bandwidth of this UpgradeInstanceData.
 
         弹性业务带宽增加值
 
@@ -246,7 +246,7 @@ class UpgradeInstanceData:
 
     @property
     def basic_qps(self):
-        """Gets the basic_qps of this UpgradeInstanceData.
+        r"""Gets the basic_qps of this UpgradeInstanceData.
 
         业务QPS(如果实例没购买过QPS，需要在页面上升级一次规格开通QPS，之后才可以通过接口修改规格)
 
@@ -257,7 +257,7 @@ class UpgradeInstanceData:
 
     @basic_qps.setter
     def basic_qps(self, basic_qps):
-        """Sets the basic_qps of this UpgradeInstanceData.
+        r"""Sets the basic_qps of this UpgradeInstanceData.
 
         业务QPS(如果实例没购买过QPS，需要在页面上升级一次规格开通QPS，之后才可以通过接口修改规格)
 

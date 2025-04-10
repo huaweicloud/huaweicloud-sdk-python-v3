@@ -35,7 +35,7 @@ class DomainHttpsCertInfo:
     }
 
     def __init__(self, certificate_format=None, certificate=None, certificate_key=None, force_redirect=None, gm_certificate=None, tls_certificate=None):
-        """DomainHttpsCertInfo
+        r"""DomainHttpsCertInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class DomainHttpsCertInfo:
 
     @property
     def certificate_format(self):
-        """Gets the certificate_format of this DomainHttpsCertInfo.
+        r"""Gets the certificate_format of this DomainHttpsCertInfo.
 
         证书格式，默认为PEM，当前只支持PEM格式
 
@@ -89,7 +89,7 @@ class DomainHttpsCertInfo:
 
     @certificate_format.setter
     def certificate_format(self, certificate_format):
-        """Sets the certificate_format of this DomainHttpsCertInfo.
+        r"""Sets the certificate_format of this DomainHttpsCertInfo.
 
         证书格式，默认为PEM，当前只支持PEM格式
 
@@ -100,7 +100,7 @@ class DomainHttpsCertInfo:
 
     @property
     def certificate(self):
-        """Gets the certificate of this DomainHttpsCertInfo.
+        r"""Gets the certificate of this DomainHttpsCertInfo.
 
         证书内容
 
@@ -111,7 +111,7 @@ class DomainHttpsCertInfo:
 
     @certificate.setter
     def certificate(self, certificate):
-        """Sets the certificate of this DomainHttpsCertInfo.
+        r"""Sets the certificate of this DomainHttpsCertInfo.
 
         证书内容
 
@@ -122,7 +122,7 @@ class DomainHttpsCertInfo:
 
     @property
     def certificate_key(self):
-        """Gets the certificate_key of this DomainHttpsCertInfo.
+        r"""Gets the certificate_key of this DomainHttpsCertInfo.
 
         私钥内容
 
@@ -133,7 +133,7 @@ class DomainHttpsCertInfo:
 
     @certificate_key.setter
     def certificate_key(self, certificate_key):
-        """Sets the certificate_key of this DomainHttpsCertInfo.
+        r"""Sets the certificate_key of this DomainHttpsCertInfo.
 
         私钥内容
 
@@ -144,7 +144,7 @@ class DomainHttpsCertInfo:
 
     @property
     def force_redirect(self):
-        """Gets the force_redirect of this DomainHttpsCertInfo.
+        r"""Gets the force_redirect of this DomainHttpsCertInfo.
 
         是否开启重定向，默认false
 
@@ -155,7 +155,7 @@ class DomainHttpsCertInfo:
 
     @force_redirect.setter
     def force_redirect(self, force_redirect):
-        """Sets the force_redirect of this DomainHttpsCertInfo.
+        r"""Sets the force_redirect of this DomainHttpsCertInfo.
 
         是否开启重定向，默认false
 
@@ -166,7 +166,7 @@ class DomainHttpsCertInfo:
 
     @property
     def gm_certificate(self):
-        """Gets the gm_certificate of this DomainHttpsCertInfo.
+        r"""Gets the gm_certificate of this DomainHttpsCertInfo.
 
         :return: The gm_certificate of this DomainHttpsCertInfo.
         :rtype: :class:`huaweicloudsdklive.v1.GmCertificateInfo`
@@ -175,7 +175,7 @@ class DomainHttpsCertInfo:
 
     @gm_certificate.setter
     def gm_certificate(self, gm_certificate):
-        """Sets the gm_certificate of this DomainHttpsCertInfo.
+        r"""Sets the gm_certificate of this DomainHttpsCertInfo.
 
         :param gm_certificate: The gm_certificate of this DomainHttpsCertInfo.
         :type gm_certificate: :class:`huaweicloudsdklive.v1.GmCertificateInfo`
@@ -184,7 +184,7 @@ class DomainHttpsCertInfo:
 
     @property
     def tls_certificate(self):
-        """Gets the tls_certificate of this DomainHttpsCertInfo.
+        r"""Gets the tls_certificate of this DomainHttpsCertInfo.
 
         :return: The tls_certificate of this DomainHttpsCertInfo.
         :rtype: :class:`huaweicloudsdklive.v1.TlsCertificateInfo`
@@ -193,7 +193,7 @@ class DomainHttpsCertInfo:
 
     @tls_certificate.setter
     def tls_certificate(self, tls_certificate):
-        """Sets the tls_certificate of this DomainHttpsCertInfo.
+        r"""Sets the tls_certificate of this DomainHttpsCertInfo.
 
         :param tls_certificate: The tls_certificate of this DomainHttpsCertInfo.
         :type tls_certificate: :class:`huaweicloudsdklive.v1.TlsCertificateInfo`

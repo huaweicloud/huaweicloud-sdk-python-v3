@@ -28,7 +28,7 @@ class ListSecurityPermissionSetMembersResponse(SdkResponse):
     }
 
     def __init__(self, total=None, permission_set_members=None):
-        """ListSecurityPermissionSetMembersResponse
+        r"""ListSecurityPermissionSetMembersResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSecurityPermissionSetMembersResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListSecurityPermissionSetMembersResponse.
+        r"""Gets the total of this ListSecurityPermissionSetMembersResponse.
 
         总条数
 
@@ -62,7 +62,7 @@ class ListSecurityPermissionSetMembersResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListSecurityPermissionSetMembersResponse.
+        r"""Sets the total of this ListSecurityPermissionSetMembersResponse.
 
         总条数
 
@@ -73,7 +73,7 @@ class ListSecurityPermissionSetMembersResponse(SdkResponse):
 
     @property
     def permission_set_members(self):
-        """Gets the permission_set_members of this ListSecurityPermissionSetMembersResponse.
+        r"""Gets the permission_set_members of this ListSecurityPermissionSetMembersResponse.
 
         成员列表
 
@@ -84,7 +84,7 @@ class ListSecurityPermissionSetMembersResponse(SdkResponse):
 
     @permission_set_members.setter
     def permission_set_members(self, permission_set_members):
-        """Sets the permission_set_members of this ListSecurityPermissionSetMembersResponse.
+        r"""Sets the permission_set_members of this ListSecurityPermissionSetMembersResponse.
 
         成员列表
 

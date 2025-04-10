@@ -25,7 +25,7 @@ class UpdateDescription:
     }
 
     def __init__(self, description=None):
-        """UpdateDescription
+        r"""UpdateDescription
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateDescription:
 
     @property
     def description(self):
-        """Gets the description of this UpdateDescription.
+        r"""Gets the description of this UpdateDescription.
 
         工作空间描述
 
@@ -53,7 +53,7 @@ class UpdateDescription:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateDescription.
+        r"""Sets the description of this UpdateDescription.
 
         工作空间描述
 

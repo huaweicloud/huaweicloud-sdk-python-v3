@@ -23,7 +23,7 @@ class Marker:
     }
 
     def __init__(self):
-        """Marker
+        r"""Marker
 
         The model defined in huaweicloud sdk
 

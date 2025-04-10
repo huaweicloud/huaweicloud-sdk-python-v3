@@ -49,7 +49,7 @@ class CreateLigandSvgReq:
     }
 
     def __init__(self, smiles=None, scaffold=None, size=None, height=None, width=None, alerts=None, ncols=None, bgopacity=None, bgcolor=None, fgcolor=None, ccolor=None, ncolor=None, ocolor=None):
-        """CreateLigandSvgReq
+        r"""CreateLigandSvgReq
 
         The model defined in huaweicloud sdk
 
@@ -126,7 +126,7 @@ class CreateLigandSvgReq:
 
     @property
     def smiles(self):
-        """Gets the smiles of this CreateLigandSvgReq.
+        r"""Gets the smiles of this CreateLigandSvgReq.
 
         分子SMILES表达式
 
@@ -137,7 +137,7 @@ class CreateLigandSvgReq:
 
     @smiles.setter
     def smiles(self, smiles):
-        """Sets the smiles of this CreateLigandSvgReq.
+        r"""Sets the smiles of this CreateLigandSvgReq.
 
         分子SMILES表达式
 
@@ -148,7 +148,7 @@ class CreateLigandSvgReq:
 
     @property
     def scaffold(self):
-        """Gets the scaffold of this CreateLigandSvgReq.
+        r"""Gets the scaffold of this CreateLigandSvgReq.
 
         分子骨架smiles表达式
 
@@ -159,7 +159,7 @@ class CreateLigandSvgReq:
 
     @scaffold.setter
     def scaffold(self, scaffold):
-        """Sets the scaffold of this CreateLigandSvgReq.
+        r"""Sets the scaffold of this CreateLigandSvgReq.
 
         分子骨架smiles表达式
 
@@ -170,7 +170,7 @@ class CreateLigandSvgReq:
 
     @property
     def size(self):
-        """Gets the size of this CreateLigandSvgReq.
+        r"""Gets the size of this CreateLigandSvgReq.
 
         尺寸
 
@@ -181,7 +181,7 @@ class CreateLigandSvgReq:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this CreateLigandSvgReq.
+        r"""Sets the size of this CreateLigandSvgReq.
 
         尺寸
 
@@ -192,7 +192,7 @@ class CreateLigandSvgReq:
 
     @property
     def height(self):
-        """Gets the height of this CreateLigandSvgReq.
+        r"""Gets the height of this CreateLigandSvgReq.
 
         svg高度
 
@@ -203,7 +203,7 @@ class CreateLigandSvgReq:
 
     @height.setter
     def height(self, height):
-        """Sets the height of this CreateLigandSvgReq.
+        r"""Sets the height of this CreateLigandSvgReq.
 
         svg高度
 
@@ -214,7 +214,7 @@ class CreateLigandSvgReq:
 
     @property
     def width(self):
-        """Gets the width of this CreateLigandSvgReq.
+        r"""Gets the width of this CreateLigandSvgReq.
 
         svg宽度
 
@@ -225,7 +225,7 @@ class CreateLigandSvgReq:
 
     @width.setter
     def width(self, width):
-        """Sets the width of this CreateLigandSvgReq.
+        r"""Sets the width of this CreateLigandSvgReq.
 
         svg宽度
 
@@ -236,7 +236,7 @@ class CreateLigandSvgReq:
 
     @property
     def alerts(self):
-        """Gets the alerts of this CreateLigandSvgReq.
+        r"""Gets the alerts of this CreateLigandSvgReq.
 
         高亮子结构编号
 
@@ -247,7 +247,7 @@ class CreateLigandSvgReq:
 
     @alerts.setter
     def alerts(self, alerts):
-        """Sets the alerts of this CreateLigandSvgReq.
+        r"""Sets the alerts of this CreateLigandSvgReq.
 
         高亮子结构编号
 
@@ -258,7 +258,7 @@ class CreateLigandSvgReq:
 
     @property
     def ncols(self):
-        """Gets the ncols of this CreateLigandSvgReq.
+        r"""Gets the ncols of this CreateLigandSvgReq.
 
         显示的列数
 
@@ -269,7 +269,7 @@ class CreateLigandSvgReq:
 
     @ncols.setter
     def ncols(self, ncols):
-        """Sets the ncols of this CreateLigandSvgReq.
+        r"""Sets the ncols of this CreateLigandSvgReq.
 
         显示的列数
 
@@ -280,7 +280,7 @@ class CreateLigandSvgReq:
 
     @property
     def bgopacity(self):
-        """Gets the bgopacity of this CreateLigandSvgReq.
+        r"""Gets the bgopacity of this CreateLigandSvgReq.
 
         背景透明度
 
@@ -291,7 +291,7 @@ class CreateLigandSvgReq:
 
     @bgopacity.setter
     def bgopacity(self, bgopacity):
-        """Sets the bgopacity of this CreateLigandSvgReq.
+        r"""Sets the bgopacity of this CreateLigandSvgReq.
 
         背景透明度
 
@@ -302,7 +302,7 @@ class CreateLigandSvgReq:
 
     @property
     def bgcolor(self):
-        """Gets the bgcolor of this CreateLigandSvgReq.
+        r"""Gets the bgcolor of this CreateLigandSvgReq.
 
         背景颜色
 
@@ -313,7 +313,7 @@ class CreateLigandSvgReq:
 
     @bgcolor.setter
     def bgcolor(self, bgcolor):
-        """Sets the bgcolor of this CreateLigandSvgReq.
+        r"""Sets the bgcolor of this CreateLigandSvgReq.
 
         背景颜色
 
@@ -324,7 +324,7 @@ class CreateLigandSvgReq:
 
     @property
     def fgcolor(self):
-        """Gets the fgcolor of this CreateLigandSvgReq.
+        r"""Gets the fgcolor of this CreateLigandSvgReq.
 
         前景色
 
@@ -335,7 +335,7 @@ class CreateLigandSvgReq:
 
     @fgcolor.setter
     def fgcolor(self, fgcolor):
-        """Sets the fgcolor of this CreateLigandSvgReq.
+        r"""Sets the fgcolor of this CreateLigandSvgReq.
 
         前景色
 
@@ -346,7 +346,7 @@ class CreateLigandSvgReq:
 
     @property
     def ccolor(self):
-        """Gets the ccolor of this CreateLigandSvgReq.
+        r"""Gets the ccolor of this CreateLigandSvgReq.
 
         碳颜色
 
@@ -357,7 +357,7 @@ class CreateLigandSvgReq:
 
     @ccolor.setter
     def ccolor(self, ccolor):
-        """Sets the ccolor of this CreateLigandSvgReq.
+        r"""Sets the ccolor of this CreateLigandSvgReq.
 
         碳颜色
 
@@ -368,7 +368,7 @@ class CreateLigandSvgReq:
 
     @property
     def ncolor(self):
-        """Gets the ncolor of this CreateLigandSvgReq.
+        r"""Gets the ncolor of this CreateLigandSvgReq.
 
         氮颜色
 
@@ -379,7 +379,7 @@ class CreateLigandSvgReq:
 
     @ncolor.setter
     def ncolor(self, ncolor):
-        """Sets the ncolor of this CreateLigandSvgReq.
+        r"""Sets the ncolor of this CreateLigandSvgReq.
 
         氮颜色
 
@@ -390,7 +390,7 @@ class CreateLigandSvgReq:
 
     @property
     def ocolor(self):
-        """Gets the ocolor of this CreateLigandSvgReq.
+        r"""Gets the ocolor of this CreateLigandSvgReq.
 
         氧颜色
 
@@ -401,7 +401,7 @@ class CreateLigandSvgReq:
 
     @ocolor.setter
     def ocolor(self, ocolor):
-        """Sets the ocolor of this CreateLigandSvgReq.
+        r"""Sets the ocolor of this CreateLigandSvgReq.
 
         氧颜色
 

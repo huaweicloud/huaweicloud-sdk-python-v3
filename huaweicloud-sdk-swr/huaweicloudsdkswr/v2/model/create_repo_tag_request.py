@@ -29,7 +29,7 @@ class CreateRepoTagRequest:
     }
 
     def __init__(self, namespace=None, repository=None, body=None):
-        """CreateRepoTagRequest
+        r"""CreateRepoTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateRepoTagRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this CreateRepoTagRequest.
+        r"""Gets the namespace of this CreateRepoTagRequest.
 
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
@@ -66,7 +66,7 @@ class CreateRepoTagRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this CreateRepoTagRequest.
+        r"""Sets the namespace of this CreateRepoTagRequest.
 
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
@@ -77,7 +77,7 @@ class CreateRepoTagRequest:
 
     @property
     def repository(self):
-        """Gets the repository of this CreateRepoTagRequest.
+        r"""Gets the repository of this CreateRepoTagRequest.
 
         镜像仓库名称
 
@@ -88,7 +88,7 @@ class CreateRepoTagRequest:
 
     @repository.setter
     def repository(self, repository):
-        """Sets the repository of this CreateRepoTagRequest.
+        r"""Sets the repository of this CreateRepoTagRequest.
 
         镜像仓库名称
 
@@ -99,7 +99,7 @@ class CreateRepoTagRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateRepoTagRequest.
+        r"""Gets the body of this CreateRepoTagRequest.
 
         :return: The body of this CreateRepoTagRequest.
         :rtype: :class:`huaweicloudsdkswr.v2.CreateRepoTagRequestBody`
@@ -108,7 +108,7 @@ class CreateRepoTagRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateRepoTagRequest.
+        r"""Sets the body of this CreateRepoTagRequest.
 
         :param body: The body of this CreateRepoTagRequest.
         :type body: :class:`huaweicloudsdkswr.v2.CreateRepoTagRequestBody`

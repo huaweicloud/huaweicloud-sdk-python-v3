@@ -31,7 +31,7 @@ class ServerExtendVolumeAttachment:
     }
 
     def __init__(self, id=None, delete_on_termination=None, boot_index=None, device=None):
-        """ServerExtendVolumeAttachment
+        r"""ServerExtendVolumeAttachment
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ServerExtendVolumeAttachment:
 
     @property
     def id(self):
-        """Gets the id of this ServerExtendVolumeAttachment.
+        r"""Gets the id of this ServerExtendVolumeAttachment.
 
         磁盘ID，格式为UUID。
 
@@ -72,7 +72,7 @@ class ServerExtendVolumeAttachment:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ServerExtendVolumeAttachment.
+        r"""Sets the id of this ServerExtendVolumeAttachment.
 
         磁盘ID，格式为UUID。
 
@@ -83,7 +83,7 @@ class ServerExtendVolumeAttachment:
 
     @property
     def delete_on_termination(self):
-        """Gets the delete_on_termination of this ServerExtendVolumeAttachment.
+        r"""Gets the delete_on_termination of this ServerExtendVolumeAttachment.
 
         删弹性云服务器时是否一并删除该磁盘。  - true：是 - false：否 微版本2.3及以上版本支持。
 
@@ -94,7 +94,7 @@ class ServerExtendVolumeAttachment:
 
     @delete_on_termination.setter
     def delete_on_termination(self, delete_on_termination):
-        """Sets the delete_on_termination of this ServerExtendVolumeAttachment.
+        r"""Sets the delete_on_termination of this ServerExtendVolumeAttachment.
 
         删弹性云服务器时是否一并删除该磁盘。  - true：是 - false：否 微版本2.3及以上版本支持。
 
@@ -105,7 +105,7 @@ class ServerExtendVolumeAttachment:
 
     @property
     def boot_index(self):
-        """Gets the boot_index of this ServerExtendVolumeAttachment.
+        r"""Gets the boot_index of this ServerExtendVolumeAttachment.
 
         启动标识，“0”代表启动盘，“-1“代表非启动盘。
 
@@ -116,7 +116,7 @@ class ServerExtendVolumeAttachment:
 
     @boot_index.setter
     def boot_index(self, boot_index):
-        """Sets the boot_index of this ServerExtendVolumeAttachment.
+        r"""Sets the boot_index of this ServerExtendVolumeAttachment.
 
         启动标识，“0”代表启动盘，“-1“代表非启动盘。
 
@@ -127,7 +127,7 @@ class ServerExtendVolumeAttachment:
 
     @property
     def device(self):
-        """Gets the device of this ServerExtendVolumeAttachment.
+        r"""Gets the device of this ServerExtendVolumeAttachment.
 
         云硬盘挂载盘符，即磁盘挂载点。
 
@@ -138,7 +138,7 @@ class ServerExtendVolumeAttachment:
 
     @device.setter
     def device(self, device):
-        """Sets the device of this ServerExtendVolumeAttachment.
+        r"""Sets the device of this ServerExtendVolumeAttachment.
 
         云硬盘挂载盘符，即磁盘挂载点。
 

@@ -32,7 +32,7 @@ class ListEndpointsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, size=None, items=None, x_request_id=None):
-        """ListEndpointsResponse
+        r"""ListEndpointsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListEndpointsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListEndpointsResponse.
+        r"""Gets the total of this ListEndpointsResponse.
 
         总数
 
@@ -76,7 +76,7 @@ class ListEndpointsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListEndpointsResponse.
+        r"""Sets the total of this ListEndpointsResponse.
 
         总数
 
@@ -87,7 +87,7 @@ class ListEndpointsResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListEndpointsResponse.
+        r"""Gets the size of this ListEndpointsResponse.
 
         本页数量
 
@@ -98,7 +98,7 @@ class ListEndpointsResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListEndpointsResponse.
+        r"""Sets the size of this ListEndpointsResponse.
 
         本页数量
 
@@ -109,7 +109,7 @@ class ListEndpointsResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListEndpointsResponse.
+        r"""Gets the items of this ListEndpointsResponse.
 
         对象列表
 
@@ -120,7 +120,7 @@ class ListEndpointsResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListEndpointsResponse.
+        r"""Sets the items of this ListEndpointsResponse.
 
         对象列表
 
@@ -131,7 +131,7 @@ class ListEndpointsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListEndpointsResponse.
+        r"""Gets the x_request_id of this ListEndpointsResponse.
 
         :return: The x_request_id of this ListEndpointsResponse.
         :rtype: str
@@ -140,7 +140,7 @@ class ListEndpointsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListEndpointsResponse.
+        r"""Sets the x_request_id of this ListEndpointsResponse.
 
         :param x_request_id: The x_request_id of this ListEndpointsResponse.
         :type x_request_id: str

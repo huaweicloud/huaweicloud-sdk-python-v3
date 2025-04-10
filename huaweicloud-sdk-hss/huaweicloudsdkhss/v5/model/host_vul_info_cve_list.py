@@ -27,7 +27,7 @@ class HostVulInfoCveList:
     }
 
     def __init__(self, cve_id=None, cvss=None):
-        """HostVulInfoCveList
+        r"""HostVulInfoCveList
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class HostVulInfoCveList:
 
     @property
     def cve_id(self):
-        """Gets the cve_id of this HostVulInfoCveList.
+        r"""Gets the cve_id of this HostVulInfoCveList.
 
         CVE ID
 
@@ -61,7 +61,7 @@ class HostVulInfoCveList:
 
     @cve_id.setter
     def cve_id(self, cve_id):
-        """Sets the cve_id of this HostVulInfoCveList.
+        r"""Sets the cve_id of this HostVulInfoCveList.
 
         CVE ID
 
@@ -72,7 +72,7 @@ class HostVulInfoCveList:
 
     @property
     def cvss(self):
-        """Gets the cvss of this HostVulInfoCveList.
+        r"""Gets the cvss of this HostVulInfoCveList.
 
         CVSS分值
 
@@ -83,7 +83,7 @@ class HostVulInfoCveList:
 
     @cvss.setter
     def cvss(self, cvss):
-        """Sets the cvss of this HostVulInfoCveList.
+        r"""Sets the cvss of this HostVulInfoCveList.
 
         CVSS分值
 

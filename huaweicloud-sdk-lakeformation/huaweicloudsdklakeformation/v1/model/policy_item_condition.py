@@ -27,7 +27,7 @@ class PolicyItemCondition:
     }
 
     def __init__(self, type=None, values=None):
-        """PolicyItemCondition
+        r"""PolicyItemCondition
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PolicyItemCondition:
 
     @property
     def type(self):
-        """Gets the type of this PolicyItemCondition.
+        r"""Gets the type of this PolicyItemCondition.
 
         条件类型
 
@@ -61,7 +61,7 @@ class PolicyItemCondition:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PolicyItemCondition.
+        r"""Sets the type of this PolicyItemCondition.
 
         条件类型
 
@@ -72,7 +72,7 @@ class PolicyItemCondition:
 
     @property
     def values(self):
-        """Gets the values of this PolicyItemCondition.
+        r"""Gets the values of this PolicyItemCondition.
 
         条件值
 
@@ -83,7 +83,7 @@ class PolicyItemCondition:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this PolicyItemCondition.
+        r"""Sets the values of this PolicyItemCondition.
 
         条件值
 

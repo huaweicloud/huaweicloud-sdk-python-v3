@@ -27,7 +27,7 @@ class OpenPublicIp:
     }
 
     def __init__(self, public_bind_type=None, eip_id=None):
-        """OpenPublicIp
+        r"""OpenPublicIp
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class OpenPublicIp:
 
     @property
     def public_bind_type(self):
-        """Gets the public_bind_type of this OpenPublicIp.
+        r"""Gets the public_bind_type of this OpenPublicIp.
 
         弹性IP绑定类型，取值如下： auto_assign：自动绑定 not_use：暂未使用 bind_existing ：使用已有
 
@@ -61,7 +61,7 @@ class OpenPublicIp:
 
     @public_bind_type.setter
     def public_bind_type(self, public_bind_type):
-        """Sets the public_bind_type of this OpenPublicIp.
+        r"""Sets the public_bind_type of this OpenPublicIp.
 
         弹性IP绑定类型，取值如下： auto_assign：自动绑定 not_use：暂未使用 bind_existing ：使用已有
 
@@ -72,7 +72,7 @@ class OpenPublicIp:
 
     @property
     def eip_id(self):
-        """Gets the eip_id of this OpenPublicIp.
+        r"""Gets the eip_id of this OpenPublicIp.
 
         弹性IP的ID
 
@@ -83,7 +83,7 @@ class OpenPublicIp:
 
     @eip_id.setter
     def eip_id(self, eip_id):
-        """Sets the eip_id of this OpenPublicIp.
+        r"""Sets the eip_id of this OpenPublicIp.
 
         弹性IP的ID
 

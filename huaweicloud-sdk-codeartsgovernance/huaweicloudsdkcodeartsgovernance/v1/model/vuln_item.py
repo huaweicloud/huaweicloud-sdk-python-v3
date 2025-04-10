@@ -29,7 +29,7 @@ class VulnItem:
     }
 
     def __init__(self, desc=None, risk_level=None, vuln_rules=None):
-        """VulnItem
+        r"""VulnItem
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class VulnItem:
 
     @property
     def desc(self):
-        """Gets the desc of this VulnItem.
+        r"""Gets the desc of this VulnItem.
 
         漏洞项描述
 
@@ -68,7 +68,7 @@ class VulnItem:
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this VulnItem.
+        r"""Sets the desc of this VulnItem.
 
         漏洞项描述
 
@@ -79,7 +79,7 @@ class VulnItem:
 
     @property
     def risk_level(self):
-        """Gets the risk_level of this VulnItem.
+        r"""Gets the risk_level of this VulnItem.
 
         风险等级
 
@@ -90,7 +90,7 @@ class VulnItem:
 
     @risk_level.setter
     def risk_level(self, risk_level):
-        """Sets the risk_level of this VulnItem.
+        r"""Sets the risk_level of this VulnItem.
 
         风险等级
 
@@ -101,7 +101,7 @@ class VulnItem:
 
     @property
     def vuln_rules(self):
-        """Gets the vuln_rules of this VulnItem.
+        r"""Gets the vuln_rules of this VulnItem.
 
         漏洞问题列表
 
@@ -112,7 +112,7 @@ class VulnItem:
 
     @vuln_rules.setter
     def vuln_rules(self, vuln_rules):
-        """Sets the vuln_rules of this VulnItem.
+        r"""Sets the vuln_rules of this VulnItem.
 
         漏洞问题列表
 

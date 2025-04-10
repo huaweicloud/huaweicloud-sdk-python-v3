@@ -26,7 +26,7 @@ class ShowMonthUsagesResponse(SdkResponse):
     }
 
     def __init__(self, month_usages=None):
-        """ShowMonthUsagesResponse
+        r"""ShowMonthUsagesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowMonthUsagesResponse(SdkResponse):
 
     @property
     def month_usages(self):
-        """Gets the month_usages of this ShowMonthUsagesResponse.
+        r"""Gets the month_usages of this ShowMonthUsagesResponse.
 
         月用量列表
 
@@ -55,7 +55,7 @@ class ShowMonthUsagesResponse(SdkResponse):
 
     @month_usages.setter
     def month_usages(self, month_usages):
-        """Sets the month_usages of this ShowMonthUsagesResponse.
+        r"""Sets the month_usages of this ShowMonthUsagesResponse.
 
         月用量列表
 

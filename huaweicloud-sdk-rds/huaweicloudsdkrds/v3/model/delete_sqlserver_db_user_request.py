@@ -29,7 +29,7 @@ class DeleteSqlserverDbUserRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, user_name=None):
-        """DeleteSqlserverDbUserRequest
+        r"""DeleteSqlserverDbUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteSqlserverDbUserRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this DeleteSqlserverDbUserRequest.
+        r"""Gets the x_language of this DeleteSqlserverDbUserRequest.
 
         语言
 
@@ -66,7 +66,7 @@ class DeleteSqlserverDbUserRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this DeleteSqlserverDbUserRequest.
+        r"""Sets the x_language of this DeleteSqlserverDbUserRequest.
 
         语言
 
@@ -77,7 +77,7 @@ class DeleteSqlserverDbUserRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteSqlserverDbUserRequest.
+        r"""Gets the instance_id of this DeleteSqlserverDbUserRequest.
 
         实例ID。
 
@@ -88,7 +88,7 @@ class DeleteSqlserverDbUserRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteSqlserverDbUserRequest.
+        r"""Sets the instance_id of this DeleteSqlserverDbUserRequest.
 
         实例ID。
 
@@ -99,7 +99,7 @@ class DeleteSqlserverDbUserRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this DeleteSqlserverDbUserRequest.
+        r"""Gets the user_name of this DeleteSqlserverDbUserRequest.
 
         需要删除的帐号名。
 
@@ -110,7 +110,7 @@ class DeleteSqlserverDbUserRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this DeleteSqlserverDbUserRequest.
+        r"""Sets the user_name of this DeleteSqlserverDbUserRequest.
 
         需要删除的帐号名。
 

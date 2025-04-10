@@ -27,7 +27,7 @@ class CompareConfigurationRequestBody:
     }
 
     def __init__(self, source_configuration_id=None, target_configuration_id=None):
-        """CompareConfigurationRequestBody
+        r"""CompareConfigurationRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CompareConfigurationRequestBody:
 
     @property
     def source_configuration_id(self):
-        """Gets the source_configuration_id of this CompareConfigurationRequestBody.
+        r"""Gets the source_configuration_id of this CompareConfigurationRequestBody.
 
         需要进行比较的源参数模板ID。
 
@@ -59,7 +59,7 @@ class CompareConfigurationRequestBody:
 
     @source_configuration_id.setter
     def source_configuration_id(self, source_configuration_id):
-        """Sets the source_configuration_id of this CompareConfigurationRequestBody.
+        r"""Sets the source_configuration_id of this CompareConfigurationRequestBody.
 
         需要进行比较的源参数模板ID。
 
@@ -70,7 +70,7 @@ class CompareConfigurationRequestBody:
 
     @property
     def target_configuration_id(self):
-        """Gets the target_configuration_id of this CompareConfigurationRequestBody.
+        r"""Gets the target_configuration_id of this CompareConfigurationRequestBody.
 
         需要进行比较的目标参数模板ID。
 
@@ -81,7 +81,7 @@ class CompareConfigurationRequestBody:
 
     @target_configuration_id.setter
     def target_configuration_id(self, target_configuration_id):
-        """Sets the target_configuration_id of this CompareConfigurationRequestBody.
+        r"""Sets the target_configuration_id of this CompareConfigurationRequestBody.
 
         需要进行比较的目标参数模板ID。
 

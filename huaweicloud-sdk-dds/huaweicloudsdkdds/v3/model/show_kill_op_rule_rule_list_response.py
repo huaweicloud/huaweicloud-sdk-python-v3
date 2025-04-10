@@ -28,7 +28,7 @@ class ShowKillOpRuleRuleListResponse(SdkResponse):
     }
 
     def __init__(self, rules=None, total_count=None):
-        """ShowKillOpRuleRuleListResponse
+        r"""ShowKillOpRuleRuleListResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowKillOpRuleRuleListResponse(SdkResponse):
 
     @property
     def rules(self):
-        """Gets the rules of this ShowKillOpRuleRuleListResponse.
+        r"""Gets the rules of this ShowKillOpRuleRuleListResponse.
 
         规则列表。
 
@@ -62,7 +62,7 @@ class ShowKillOpRuleRuleListResponse(SdkResponse):
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this ShowKillOpRuleRuleListResponse.
+        r"""Sets the rules of this ShowKillOpRuleRuleListResponse.
 
         规则列表。
 
@@ -73,7 +73,7 @@ class ShowKillOpRuleRuleListResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ShowKillOpRuleRuleListResponse.
+        r"""Gets the total_count of this ShowKillOpRuleRuleListResponse.
 
         总数。
 
@@ -84,7 +84,7 @@ class ShowKillOpRuleRuleListResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ShowKillOpRuleRuleListResponse.
+        r"""Sets the total_count of this ShowKillOpRuleRuleListResponse.
 
         总数。
 

@@ -26,7 +26,7 @@ class CreateTagsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None):
-        """CreateTagsResponse
+        r"""CreateTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateTagsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateTagsResponse.
+        r"""Gets the request_id of this CreateTagsResponse.
 
         请求ID。
 
@@ -55,7 +55,7 @@ class CreateTagsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateTagsResponse.
+        r"""Sets the request_id of this CreateTagsResponse.
 
         请求ID。
 

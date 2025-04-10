@@ -38,7 +38,7 @@ class ShowMigrationProjectDetailResponse(SdkResponse):
     }
 
     def __init__(self, migration_project_id=None, migration_project_name=None, evaluation_project_name=None, source_db_info=None, target_db_info=None, created_time=None, updated_time=None):
-        """ShowMigrationProjectDetailResponse
+        r"""ShowMigrationProjectDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ShowMigrationProjectDetailResponse(SdkResponse):
 
     @property
     def migration_project_id(self):
-        """Gets the migration_project_id of this ShowMigrationProjectDetailResponse.
+        r"""Gets the migration_project_id of this ShowMigrationProjectDetailResponse.
 
         迁移项目ID。
 
@@ -97,7 +97,7 @@ class ShowMigrationProjectDetailResponse(SdkResponse):
 
     @migration_project_id.setter
     def migration_project_id(self, migration_project_id):
-        """Sets the migration_project_id of this ShowMigrationProjectDetailResponse.
+        r"""Sets the migration_project_id of this ShowMigrationProjectDetailResponse.
 
         迁移项目ID。
 
@@ -108,7 +108,7 @@ class ShowMigrationProjectDetailResponse(SdkResponse):
 
     @property
     def migration_project_name(self):
-        """Gets the migration_project_name of this ShowMigrationProjectDetailResponse.
+        r"""Gets the migration_project_name of this ShowMigrationProjectDetailResponse.
 
         迁移项目状态。
 
@@ -119,7 +119,7 @@ class ShowMigrationProjectDetailResponse(SdkResponse):
 
     @migration_project_name.setter
     def migration_project_name(self, migration_project_name):
-        """Sets the migration_project_name of this ShowMigrationProjectDetailResponse.
+        r"""Sets the migration_project_name of this ShowMigrationProjectDetailResponse.
 
         迁移项目状态。
 
@@ -130,7 +130,7 @@ class ShowMigrationProjectDetailResponse(SdkResponse):
 
     @property
     def evaluation_project_name(self):
-        """Gets the evaluation_project_name of this ShowMigrationProjectDetailResponse.
+        r"""Gets the evaluation_project_name of this ShowMigrationProjectDetailResponse.
 
         对应的评估项目名称。
 
@@ -141,7 +141,7 @@ class ShowMigrationProjectDetailResponse(SdkResponse):
 
     @evaluation_project_name.setter
     def evaluation_project_name(self, evaluation_project_name):
-        """Sets the evaluation_project_name of this ShowMigrationProjectDetailResponse.
+        r"""Sets the evaluation_project_name of this ShowMigrationProjectDetailResponse.
 
         对应的评估项目名称。
 
@@ -152,7 +152,7 @@ class ShowMigrationProjectDetailResponse(SdkResponse):
 
     @property
     def source_db_info(self):
-        """Gets the source_db_info of this ShowMigrationProjectDetailResponse.
+        r"""Gets the source_db_info of this ShowMigrationProjectDetailResponse.
 
         :return: The source_db_info of this ShowMigrationProjectDetailResponse.
         :rtype: :class:`huaweicloudsdkugo.v1.DataBase`
@@ -161,7 +161,7 @@ class ShowMigrationProjectDetailResponse(SdkResponse):
 
     @source_db_info.setter
     def source_db_info(self, source_db_info):
-        """Sets the source_db_info of this ShowMigrationProjectDetailResponse.
+        r"""Sets the source_db_info of this ShowMigrationProjectDetailResponse.
 
         :param source_db_info: The source_db_info of this ShowMigrationProjectDetailResponse.
         :type source_db_info: :class:`huaweicloudsdkugo.v1.DataBase`
@@ -170,7 +170,7 @@ class ShowMigrationProjectDetailResponse(SdkResponse):
 
     @property
     def target_db_info(self):
-        """Gets the target_db_info of this ShowMigrationProjectDetailResponse.
+        r"""Gets the target_db_info of this ShowMigrationProjectDetailResponse.
 
         :return: The target_db_info of this ShowMigrationProjectDetailResponse.
         :rtype: :class:`huaweicloudsdkugo.v1.DataBase`
@@ -179,7 +179,7 @@ class ShowMigrationProjectDetailResponse(SdkResponse):
 
     @target_db_info.setter
     def target_db_info(self, target_db_info):
-        """Sets the target_db_info of this ShowMigrationProjectDetailResponse.
+        r"""Sets the target_db_info of this ShowMigrationProjectDetailResponse.
 
         :param target_db_info: The target_db_info of this ShowMigrationProjectDetailResponse.
         :type target_db_info: :class:`huaweicloudsdkugo.v1.DataBase`
@@ -188,7 +188,7 @@ class ShowMigrationProjectDetailResponse(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this ShowMigrationProjectDetailResponse.
+        r"""Gets the created_time of this ShowMigrationProjectDetailResponse.
 
         创建时间。
 
@@ -199,7 +199,7 @@ class ShowMigrationProjectDetailResponse(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this ShowMigrationProjectDetailResponse.
+        r"""Sets the created_time of this ShowMigrationProjectDetailResponse.
 
         创建时间。
 
@@ -210,7 +210,7 @@ class ShowMigrationProjectDetailResponse(SdkResponse):
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this ShowMigrationProjectDetailResponse.
+        r"""Gets the updated_time of this ShowMigrationProjectDetailResponse.
 
         更新时间。
 
@@ -221,7 +221,7 @@ class ShowMigrationProjectDetailResponse(SdkResponse):
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this ShowMigrationProjectDetailResponse.
+        r"""Sets the updated_time of this ShowMigrationProjectDetailResponse.
 
         更新时间。
 

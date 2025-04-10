@@ -30,7 +30,7 @@ class ShowMindmapBackupByIdResponse(SdkResponse):
     }
 
     def __init__(self, code=None, data=None, message=None):
-        """ShowMindmapBackupByIdResponse
+        r"""ShowMindmapBackupByIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowMindmapBackupByIdResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ShowMindmapBackupByIdResponse.
+        r"""Gets the code of this ShowMindmapBackupByIdResponse.
 
         :return: The code of this ShowMindmapBackupByIdResponse.
         :rtype: str
@@ -67,7 +67,7 @@ class ShowMindmapBackupByIdResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ShowMindmapBackupByIdResponse.
+        r"""Sets the code of this ShowMindmapBackupByIdResponse.
 
         :param code: The code of this ShowMindmapBackupByIdResponse.
         :type code: str
@@ -76,7 +76,7 @@ class ShowMindmapBackupByIdResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowMindmapBackupByIdResponse.
+        r"""Gets the data of this ShowMindmapBackupByIdResponse.
 
         :return: The data of this ShowMindmapBackupByIdResponse.
         :rtype: object
@@ -85,7 +85,7 @@ class ShowMindmapBackupByIdResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowMindmapBackupByIdResponse.
+        r"""Sets the data of this ShowMindmapBackupByIdResponse.
 
         :param data: The data of this ShowMindmapBackupByIdResponse.
         :type data: object
@@ -94,7 +94,7 @@ class ShowMindmapBackupByIdResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowMindmapBackupByIdResponse.
+        r"""Gets the message of this ShowMindmapBackupByIdResponse.
 
         :return: The message of this ShowMindmapBackupByIdResponse.
         :rtype: str
@@ -103,7 +103,7 @@ class ShowMindmapBackupByIdResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowMindmapBackupByIdResponse.
+        r"""Sets the message of this ShowMindmapBackupByIdResponse.
 
         :param message: The message of this ShowMindmapBackupByIdResponse.
         :type message: str

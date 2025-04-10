@@ -29,7 +29,7 @@ class IdentificationRuleResult:
     }
 
     def __init__(self, result=None, count=None, abnormal_info=None):
-        """IdentificationRuleResult
+        r"""IdentificationRuleResult
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class IdentificationRuleResult:
 
     @property
     def result(self):
-        """Gets the result of this IdentificationRuleResult.
+        r"""Gets the result of this IdentificationRuleResult.
 
         :return: The result of this IdentificationRuleResult.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DiagnoseResult`
@@ -66,7 +66,7 @@ class IdentificationRuleResult:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this IdentificationRuleResult.
+        r"""Sets the result of this IdentificationRuleResult.
 
         :param result: The result of this IdentificationRuleResult.
         :type result: :class:`huaweicloudsdkdataartsstudio.v1.DiagnoseResult`
@@ -75,7 +75,7 @@ class IdentificationRuleResult:
 
     @property
     def count(self):
-        """Gets the count of this IdentificationRuleResult.
+        r"""Gets the count of this IdentificationRuleResult.
 
         有风险的问题数量
 
@@ -86,7 +86,7 @@ class IdentificationRuleResult:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this IdentificationRuleResult.
+        r"""Sets the count of this IdentificationRuleResult.
 
         有风险的问题数量
 
@@ -97,7 +97,7 @@ class IdentificationRuleResult:
 
     @property
     def abnormal_info(self):
-        """Gets the abnormal_info of this IdentificationRuleResult.
+        r"""Gets the abnormal_info of this IdentificationRuleResult.
 
         没有配置识别规则的密级列表
 
@@ -108,7 +108,7 @@ class IdentificationRuleResult:
 
     @abnormal_info.setter
     def abnormal_info(self, abnormal_info):
-        """Sets the abnormal_info of this IdentificationRuleResult.
+        r"""Sets the abnormal_info of this IdentificationRuleResult.
 
         没有配置识别规则的密级列表
 

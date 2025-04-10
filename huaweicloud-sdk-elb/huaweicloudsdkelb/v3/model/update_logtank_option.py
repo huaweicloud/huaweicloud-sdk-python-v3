@@ -27,7 +27,7 @@ class UpdateLogtankOption:
     }
 
     def __init__(self, log_group_id=None, log_topic_id=None):
-        """UpdateLogtankOption
+        r"""UpdateLogtankOption
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateLogtankOption:
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this UpdateLogtankOption.
+        r"""Gets the log_group_id of this UpdateLogtankOption.
 
         日志组别id，其他（非ELB）服务提供
 
@@ -61,7 +61,7 @@ class UpdateLogtankOption:
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this UpdateLogtankOption.
+        r"""Sets the log_group_id of this UpdateLogtankOption.
 
         日志组别id，其他（非ELB）服务提供
 
@@ -72,7 +72,7 @@ class UpdateLogtankOption:
 
     @property
     def log_topic_id(self):
-        """Gets the log_topic_id of this UpdateLogtankOption.
+        r"""Gets the log_topic_id of this UpdateLogtankOption.
 
         日志订阅主题id，其他（非ELB）服务提供
 
@@ -83,7 +83,7 @@ class UpdateLogtankOption:
 
     @log_topic_id.setter
     def log_topic_id(self, log_topic_id):
-        """Sets the log_topic_id of this UpdateLogtankOption.
+        r"""Sets the log_topic_id of this UpdateLogtankOption.
 
         日志订阅主题id，其他（非ELB）服务提供
 

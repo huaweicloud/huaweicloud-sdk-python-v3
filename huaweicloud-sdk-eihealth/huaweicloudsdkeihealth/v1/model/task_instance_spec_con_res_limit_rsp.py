@@ -27,7 +27,7 @@ class TaskInstanceSpecConResLimitRsp:
     }
 
     def __init__(self, cpu=None, memory=None):
-        """TaskInstanceSpecConResLimitRsp
+        r"""TaskInstanceSpecConResLimitRsp
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TaskInstanceSpecConResLimitRsp:
 
     @property
     def cpu(self):
-        """Gets the cpu of this TaskInstanceSpecConResLimitRsp.
+        r"""Gets the cpu of this TaskInstanceSpecConResLimitRsp.
 
         CPU限制值
 
@@ -61,7 +61,7 @@ class TaskInstanceSpecConResLimitRsp:
 
     @cpu.setter
     def cpu(self, cpu):
-        """Sets the cpu of this TaskInstanceSpecConResLimitRsp.
+        r"""Sets the cpu of this TaskInstanceSpecConResLimitRsp.
 
         CPU限制值
 
@@ -72,7 +72,7 @@ class TaskInstanceSpecConResLimitRsp:
 
     @property
     def memory(self):
-        """Gets the memory of this TaskInstanceSpecConResLimitRsp.
+        r"""Gets the memory of this TaskInstanceSpecConResLimitRsp.
 
         内存限制值
 
@@ -83,7 +83,7 @@ class TaskInstanceSpecConResLimitRsp:
 
     @memory.setter
     def memory(self, memory):
-        """Sets the memory of this TaskInstanceSpecConResLimitRsp.
+        r"""Sets the memory of this TaskInstanceSpecConResLimitRsp.
 
         内存限制值
 

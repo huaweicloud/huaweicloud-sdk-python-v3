@@ -28,7 +28,7 @@ class ListJobDdlsResponse(SdkResponse):
     }
 
     def __init__(self, ddl_list=None, count=None):
-        """ListJobDdlsResponse
+        r"""ListJobDdlsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListJobDdlsResponse(SdkResponse):
 
     @property
     def ddl_list(self):
-        """Gets the ddl_list of this ListJobDdlsResponse.
+        r"""Gets the ddl_list of this ListJobDdlsResponse.
 
         DDL告警信息列表。
 
@@ -62,7 +62,7 @@ class ListJobDdlsResponse(SdkResponse):
 
     @ddl_list.setter
     def ddl_list(self, ddl_list):
-        """Sets the ddl_list of this ListJobDdlsResponse.
+        r"""Sets the ddl_list of this ListJobDdlsResponse.
 
         DDL告警信息列表。
 
@@ -73,7 +73,7 @@ class ListJobDdlsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListJobDdlsResponse.
+        r"""Gets the count of this ListJobDdlsResponse.
 
         列表中的项目总数，与分页无关。
 
@@ -84,7 +84,7 @@ class ListJobDdlsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListJobDdlsResponse.
+        r"""Sets the count of this ListJobDdlsResponse.
 
         列表中的项目总数，与分页无关。
 

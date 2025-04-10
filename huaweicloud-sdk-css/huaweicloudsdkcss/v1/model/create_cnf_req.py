@@ -31,7 +31,7 @@ class CreateCnfReq:
     }
 
     def __init__(self, name=None, conf_content=None, setting=None, sensitive_words=None):
-        """CreateCnfReq
+        r"""CreateCnfReq
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class CreateCnfReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateCnfReq.
+        r"""Gets the name of this CreateCnfReq.
 
         配置文件名称。4～32个字符，只能包含数字、字母、中划线和下划线，且必须以字母开头。
 
@@ -72,7 +72,7 @@ class CreateCnfReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateCnfReq.
+        r"""Sets the name of this CreateCnfReq.
 
         配置文件名称。4～32个字符，只能包含数字、字母、中划线和下划线，且必须以字母开头。
 
@@ -83,7 +83,7 @@ class CreateCnfReq:
 
     @property
     def conf_content(self):
-        """Gets the conf_content of this CreateCnfReq.
+        r"""Gets the conf_content of this CreateCnfReq.
 
         配置文件内容。
 
@@ -94,7 +94,7 @@ class CreateCnfReq:
 
     @conf_content.setter
     def conf_content(self, conf_content):
-        """Sets the conf_content of this CreateCnfReq.
+        r"""Sets the conf_content of this CreateCnfReq.
 
         配置文件内容。
 
@@ -105,7 +105,7 @@ class CreateCnfReq:
 
     @property
     def setting(self):
-        """Gets the setting of this CreateCnfReq.
+        r"""Gets the setting of this CreateCnfReq.
 
         :return: The setting of this CreateCnfReq.
         :rtype: :class:`huaweicloudsdkcss.v1.Setting`
@@ -114,7 +114,7 @@ class CreateCnfReq:
 
     @setting.setter
     def setting(self, setting):
-        """Sets the setting of this CreateCnfReq.
+        r"""Sets the setting of this CreateCnfReq.
 
         :param setting: The setting of this CreateCnfReq.
         :type setting: :class:`huaweicloudsdkcss.v1.Setting`
@@ -123,7 +123,7 @@ class CreateCnfReq:
 
     @property
     def sensitive_words(self):
-        """Gets the sensitive_words of this CreateCnfReq.
+        r"""Gets the sensitive_words of this CreateCnfReq.
 
         敏感字符替换 输入需要隐藏的敏感字串列表。配置隐藏字符串列表后，在返回的配置内容中，会将所有在列表中的字串隐藏为***（列表最大支持20条，单个字串最大长度512字节）
 
@@ -134,7 +134,7 @@ class CreateCnfReq:
 
     @sensitive_words.setter
     def sensitive_words(self, sensitive_words):
-        """Sets the sensitive_words of this CreateCnfReq.
+        r"""Sets the sensitive_words of this CreateCnfReq.
 
         敏感字符替换 输入需要隐藏的敏感字串列表。配置隐藏字符串列表后，在返回的配置内容中，会将所有在列表中的字串隐藏为***（列表最大支持20条，单个字串最大长度512字节）
 

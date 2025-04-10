@@ -39,7 +39,7 @@ class Ruleset:
     }
 
     def __init__(self, project_id=None, template_name=None, language=None, is_default=None, rule_ids=None, uncheck_ids=None, template_id=None, custom_attributes=None):
-        """Ruleset
+        r"""Ruleset
 
         The model defined in huaweicloud sdk
 
@@ -87,7 +87,7 @@ class Ruleset:
 
     @property
     def project_id(self):
-        """Gets the project_id of this Ruleset.
+        r"""Gets the project_id of this Ruleset.
 
         项目ID
 
@@ -98,7 +98,7 @@ class Ruleset:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this Ruleset.
+        r"""Sets the project_id of this Ruleset.
 
         项目ID
 
@@ -109,7 +109,7 @@ class Ruleset:
 
     @property
     def template_name(self):
-        """Gets the template_name of this Ruleset.
+        r"""Gets the template_name of this Ruleset.
 
         新规则集名称
 
@@ -120,7 +120,7 @@ class Ruleset:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this Ruleset.
+        r"""Sets the template_name of this Ruleset.
 
         新规则集名称
 
@@ -131,7 +131,7 @@ class Ruleset:
 
     @property
     def language(self):
-        """Gets the language of this Ruleset.
+        r"""Gets the language of this Ruleset.
 
         规则集语言
 
@@ -142,7 +142,7 @@ class Ruleset:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this Ruleset.
+        r"""Sets the language of this Ruleset.
 
         规则集语言
 
@@ -153,7 +153,7 @@ class Ruleset:
 
     @property
     def is_default(self):
-        """Gets the is_default of this Ruleset.
+        r"""Gets the is_default of this Ruleset.
 
         如果有基于的规则集则是1，没有基于的规则集则是0
 
@@ -164,7 +164,7 @@ class Ruleset:
 
     @is_default.setter
     def is_default(self, is_default):
-        """Sets the is_default of this Ruleset.
+        r"""Sets the is_default of this Ruleset.
 
         如果有基于的规则集则是1，没有基于的规则集则是0
 
@@ -175,7 +175,7 @@ class Ruleset:
 
     @property
     def rule_ids(self):
-        """Gets the rule_ids of this Ruleset.
+        r"""Gets the rule_ids of this Ruleset.
 
         新启用规则ids
 
@@ -186,7 +186,7 @@ class Ruleset:
 
     @rule_ids.setter
     def rule_ids(self, rule_ids):
-        """Sets the rule_ids of this Ruleset.
+        r"""Sets the rule_ids of this Ruleset.
 
         新启用规则ids
 
@@ -197,7 +197,7 @@ class Ruleset:
 
     @property
     def uncheck_ids(self):
-        """Gets the uncheck_ids of this Ruleset.
+        r"""Gets the uncheck_ids of this Ruleset.
 
         新关闭规则id
 
@@ -208,7 +208,7 @@ class Ruleset:
 
     @uncheck_ids.setter
     def uncheck_ids(self, uncheck_ids):
-        """Sets the uncheck_ids of this Ruleset.
+        r"""Sets the uncheck_ids of this Ruleset.
 
         新关闭规则id
 
@@ -219,7 +219,7 @@ class Ruleset:
 
     @property
     def template_id(self):
-        """Gets the template_id of this Ruleset.
+        r"""Gets the template_id of this Ruleset.
 
         规则集ID
 
@@ -230,7 +230,7 @@ class Ruleset:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this Ruleset.
+        r"""Sets the template_id of this Ruleset.
 
         规则集ID
 
@@ -241,7 +241,7 @@ class Ruleset:
 
     @property
     def custom_attributes(self):
-        """Gets the custom_attributes of this Ruleset.
+        r"""Gets the custom_attributes of this Ruleset.
 
         自定义规则参数项，支持修改规则阈值
 
@@ -252,7 +252,7 @@ class Ruleset:
 
     @custom_attributes.setter
     def custom_attributes(self, custom_attributes):
-        """Sets the custom_attributes of this Ruleset.
+        r"""Sets the custom_attributes of this Ruleset.
 
         自定义规则参数项，支持修改规则阈值
 

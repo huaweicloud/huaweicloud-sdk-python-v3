@@ -27,7 +27,7 @@ class FlavorLinkInfo:
     }
 
     def __init__(self, rel=None, hrel=None):
-        """FlavorLinkInfo
+        r"""FlavorLinkInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class FlavorLinkInfo:
 
     @property
     def rel(self):
-        """Gets the rel of this FlavorLinkInfo.
+        r"""Gets the rel of this FlavorLinkInfo.
 
         快捷链接标记名称。
 
@@ -61,7 +61,7 @@ class FlavorLinkInfo:
 
     @rel.setter
     def rel(self, rel):
-        """Sets the rel of this FlavorLinkInfo.
+        r"""Sets the rel of this FlavorLinkInfo.
 
         快捷链接标记名称。
 
@@ -72,7 +72,7 @@ class FlavorLinkInfo:
 
     @property
     def hrel(self):
-        """Gets the hrel of this FlavorLinkInfo.
+        r"""Gets the hrel of this FlavorLinkInfo.
 
         对应快捷链接。
 
@@ -83,7 +83,7 @@ class FlavorLinkInfo:
 
     @hrel.setter
     def hrel(self, hrel):
-        """Sets the hrel of this FlavorLinkInfo.
+        r"""Sets the hrel of this FlavorLinkInfo.
 
         对应快捷链接。
 

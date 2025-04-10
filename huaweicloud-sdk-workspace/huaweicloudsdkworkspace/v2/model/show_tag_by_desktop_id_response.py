@@ -26,7 +26,7 @@ class ShowTagByDesktopIdResponse(SdkResponse):
     }
 
     def __init__(self, tags=None):
-        """ShowTagByDesktopIdResponse
+        r"""ShowTagByDesktopIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowTagByDesktopIdResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowTagByDesktopIdResponse.
+        r"""Gets the tags of this ShowTagByDesktopIdResponse.
 
         标签
 
@@ -55,7 +55,7 @@ class ShowTagByDesktopIdResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowTagByDesktopIdResponse.
+        r"""Sets the tags of this ShowTagByDesktopIdResponse.
 
         标签
 

@@ -29,7 +29,7 @@ class RoleExtendGrowReq:
     }
 
     def __init__(self, type=None, nodesize=None, disksize=None):
-        """RoleExtendGrowReq
+        r"""RoleExtendGrowReq
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class RoleExtendGrowReq:
 
     @property
     def type(self):
-        """Gets the type of this RoleExtendGrowReq.
+        r"""Gets the type of this RoleExtendGrowReq.
 
         扩容实例类型。取值为ess、ess-master或ess-client，可以选择其中一个或多个之间的组合但不可以重复选择。  ess-master、ess-client节点只支持增加实例个数。
 
@@ -65,7 +65,7 @@ class RoleExtendGrowReq:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RoleExtendGrowReq.
+        r"""Sets the type of this RoleExtendGrowReq.
 
         扩容实例类型。取值为ess、ess-master或ess-client，可以选择其中一个或多个之间的组合但不可以重复选择。  ess-master、ess-client节点只支持增加实例个数。
 
@@ -76,7 +76,7 @@ class RoleExtendGrowReq:
 
     @property
     def nodesize(self):
-        """Gets the nodesize of this RoleExtendGrowReq.
+        r"""Gets the nodesize of this RoleExtendGrowReq.
 
         扩容实例个数。集群已有实例个数和增加实例个数总和不能超过32。若无需扩容该参数将该参数设置为0即可。
 
@@ -87,7 +87,7 @@ class RoleExtendGrowReq:
 
     @nodesize.setter
     def nodesize(self, nodesize):
-        """Sets the nodesize of this RoleExtendGrowReq.
+        r"""Sets the nodesize of this RoleExtendGrowReq.
 
         扩容实例个数。集群已有实例个数和增加实例个数总和不能超过32。若无需扩容该参数将该参数设置为0即可。
 
@@ -98,7 +98,7 @@ class RoleExtendGrowReq:
 
     @property
     def disksize(self):
-        """Gets the disksize of this RoleExtendGrowReq.
+        r"""Gets the disksize of this RoleExtendGrowReq.
 
         扩容实例存储容量。集群原实例存储容量和扩容实例存储容量之和不能超过创建集群时对应默认实例存储容量上限。若无需扩容该参数将该参数设置为0即可。[当集群为包周期集群时不支持同时修改节点个数和磁盘容量。](tag: hc,tag: hws)  单位：GB。  - ess节点、ess-cold节点扩容步长为20。  - ess-master节点、ess-client节点不允许扩容存储。
 
@@ -109,7 +109,7 @@ class RoleExtendGrowReq:
 
     @disksize.setter
     def disksize(self, disksize):
-        """Sets the disksize of this RoleExtendGrowReq.
+        r"""Sets the disksize of this RoleExtendGrowReq.
 
         扩容实例存储容量。集群原实例存储容量和扩容实例存储容量之和不能超过创建集群时对应默认实例存储容量上限。若无需扩容该参数将该参数设置为0即可。[当集群为包周期集群时不支持同时修改节点个数和磁盘容量。](tag: hc,tag: hws)  单位：GB。  - ess节点、ess-cold节点扩容步长为20。  - ess-master节点、ess-client节点不允许扩容存储。
 

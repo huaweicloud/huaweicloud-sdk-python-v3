@@ -24,7 +24,7 @@ class MoveToWaitingRoomResponse(SdkResponse):
     }
 
     def __init__(self):
-        """MoveToWaitingRoomResponse
+        r"""MoveToWaitingRoomResponse
 
         The model defined in huaweicloud sdk
 

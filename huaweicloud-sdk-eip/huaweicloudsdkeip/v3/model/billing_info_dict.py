@@ -27,7 +27,7 @@ class BillingInfoDict:
     }
 
     def __init__(self, order_id=None, product_id=None):
-        """BillingInfoDict
+        r"""BillingInfoDict
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BillingInfoDict:
 
     @property
     def order_id(self):
-        """Gets the order_id of this BillingInfoDict.
+        r"""Gets the order_id of this BillingInfoDict.
 
         订单信息
 
@@ -61,7 +61,7 @@ class BillingInfoDict:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this BillingInfoDict.
+        r"""Sets the order_id of this BillingInfoDict.
 
         订单信息
 
@@ -72,7 +72,7 @@ class BillingInfoDict:
 
     @property
     def product_id(self):
-        """Gets the product_id of this BillingInfoDict.
+        r"""Gets the product_id of this BillingInfoDict.
 
         产品id
 
@@ -83,7 +83,7 @@ class BillingInfoDict:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this BillingInfoDict.
+        r"""Sets the product_id of this BillingInfoDict.
 
         产品id
 

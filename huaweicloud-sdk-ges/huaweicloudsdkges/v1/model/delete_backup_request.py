@@ -27,7 +27,7 @@ class DeleteBackupRequest:
     }
 
     def __init__(self, backup_id=None, graph_id=None):
-        """DeleteBackupRequest
+        r"""DeleteBackupRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteBackupRequest:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this DeleteBackupRequest.
+        r"""Gets the backup_id of this DeleteBackupRequest.
 
         图备份ID。
 
@@ -59,7 +59,7 @@ class DeleteBackupRequest:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this DeleteBackupRequest.
+        r"""Sets the backup_id of this DeleteBackupRequest.
 
         图备份ID。
 
@@ -70,7 +70,7 @@ class DeleteBackupRequest:
 
     @property
     def graph_id(self):
-        """Gets the graph_id of this DeleteBackupRequest.
+        r"""Gets the graph_id of this DeleteBackupRequest.
 
         图ID。
 
@@ -81,7 +81,7 @@ class DeleteBackupRequest:
 
     @graph_id.setter
     def graph_id(self, graph_id):
-        """Sets the graph_id of this DeleteBackupRequest.
+        r"""Sets the graph_id of this DeleteBackupRequest.
 
         图ID。
 

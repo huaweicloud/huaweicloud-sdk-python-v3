@@ -25,7 +25,7 @@ class Ipv6BandwidthForNic:
     }
 
     def __init__(self, id=None):
-        """Ipv6BandwidthForNic
+        r"""Ipv6BandwidthForNic
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class Ipv6BandwidthForNic:
 
     @property
     def id(self):
-        """Gets the id of this Ipv6BandwidthForNic.
+        r"""Gets the id of this Ipv6BandwidthForNic.
 
         IPv6带宽的ID。
 
@@ -54,7 +54,7 @@ class Ipv6BandwidthForNic:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Ipv6BandwidthForNic.
+        r"""Sets the id of this Ipv6BandwidthForNic.
 
         IPv6带宽的ID。
 

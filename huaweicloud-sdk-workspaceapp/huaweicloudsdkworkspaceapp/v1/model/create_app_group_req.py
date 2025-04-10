@@ -33,7 +33,7 @@ class CreateAppGroupReq:
     }
 
     def __init__(self, name=None, app_server_group_id=None, description=None, authorization_type=None, app_type=None):
-        """CreateAppGroupReq
+        r"""CreateAppGroupReq
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class CreateAppGroupReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateAppGroupReq.
+        r"""Gets the name of this CreateAppGroupReq.
 
         应用组名称,名称需满足如下规则: 1. 由中文，英文大小写，数字，_-组成。 2. 长度范围1~64个字符。
 
@@ -81,7 +81,7 @@ class CreateAppGroupReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateAppGroupReq.
+        r"""Sets the name of this CreateAppGroupReq.
 
         应用组名称,名称需满足如下规则: 1. 由中文，英文大小写，数字，_-组成。 2. 长度范围1~64个字符。
 
@@ -92,7 +92,7 @@ class CreateAppGroupReq:
 
     @property
     def app_server_group_id(self):
-        """Gets the app_server_group_id of this CreateAppGroupReq.
+        r"""Gets the app_server_group_id of this CreateAppGroupReq.
 
         应用服务器组ID。
 
@@ -103,7 +103,7 @@ class CreateAppGroupReq:
 
     @app_server_group_id.setter
     def app_server_group_id(self, app_server_group_id):
-        """Sets the app_server_group_id of this CreateAppGroupReq.
+        r"""Sets the app_server_group_id of this CreateAppGroupReq.
 
         应用服务器组ID。
 
@@ -114,7 +114,7 @@ class CreateAppGroupReq:
 
     @property
     def description(self):
-        """Gets the description of this CreateAppGroupReq.
+        r"""Gets the description of this CreateAppGroupReq.
 
         应用组描述。
 
@@ -125,7 +125,7 @@ class CreateAppGroupReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateAppGroupReq.
+        r"""Sets the description of this CreateAppGroupReq.
 
         应用组描述。
 
@@ -136,7 +136,7 @@ class CreateAppGroupReq:
 
     @property
     def authorization_type(self):
-        """Gets the authorization_type of this CreateAppGroupReq.
+        r"""Gets the authorization_type of this CreateAppGroupReq.
 
         :return: The authorization_type of this CreateAppGroupReq.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AuthorizationTypeEnum`
@@ -145,7 +145,7 @@ class CreateAppGroupReq:
 
     @authorization_type.setter
     def authorization_type(self, authorization_type):
-        """Sets the authorization_type of this CreateAppGroupReq.
+        r"""Sets the authorization_type of this CreateAppGroupReq.
 
         :param authorization_type: The authorization_type of this CreateAppGroupReq.
         :type authorization_type: :class:`huaweicloudsdkworkspaceapp.v1.AuthorizationTypeEnum`
@@ -154,7 +154,7 @@ class CreateAppGroupReq:
 
     @property
     def app_type(self):
-        """Gets the app_type of this CreateAppGroupReq.
+        r"""Gets the app_type of this CreateAppGroupReq.
 
         :return: The app_type of this CreateAppGroupReq.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
@@ -163,7 +163,7 @@ class CreateAppGroupReq:
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this CreateAppGroupReq.
+        r"""Sets the app_type of this CreateAppGroupReq.
 
         :param app_type: The app_type of this CreateAppGroupReq.
         :type app_type: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`

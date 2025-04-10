@@ -41,7 +41,7 @@ class CertificateForm:
     }
 
     def __init__(self, name=None, cert_content=None, private_key=None, type=None, instance_id=None, trusted_root_ca=None, algorithm_type=None, cert_content_sign=None, private_key_sign=None):
-        """CertificateForm
+        r"""CertificateForm
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class CertificateForm:
 
     @property
     def name(self):
-        """Gets the name of this CertificateForm.
+        r"""Gets the name of this CertificateForm.
 
         证书名称
 
@@ -107,7 +107,7 @@ class CertificateForm:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CertificateForm.
+        r"""Sets the name of this CertificateForm.
 
         证书名称
 
@@ -118,7 +118,7 @@ class CertificateForm:
 
     @property
     def cert_content(self):
-        """Gets the cert_content of this CertificateForm.
+        r"""Gets the cert_content of this CertificateForm.
 
         证书内容
 
@@ -129,7 +129,7 @@ class CertificateForm:
 
     @cert_content.setter
     def cert_content(self, cert_content):
-        """Sets the cert_content of this CertificateForm.
+        r"""Sets the cert_content of this CertificateForm.
 
         证书内容
 
@@ -140,7 +140,7 @@ class CertificateForm:
 
     @property
     def private_key(self):
-        """Gets the private_key of this CertificateForm.
+        r"""Gets the private_key of this CertificateForm.
 
         证书私钥
 
@@ -151,7 +151,7 @@ class CertificateForm:
 
     @private_key.setter
     def private_key(self, private_key):
-        """Sets the private_key of this CertificateForm.
+        r"""Sets the private_key of this CertificateForm.
 
         证书私钥
 
@@ -162,7 +162,7 @@ class CertificateForm:
 
     @property
     def type(self):
-        """Gets the type of this CertificateForm.
+        r"""Gets the type of this CertificateForm.
 
         证书可见范围： - instance - global  编辑证书时不支持修改为其他可见范围
 
@@ -173,7 +173,7 @@ class CertificateForm:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CertificateForm.
+        r"""Sets the type of this CertificateForm.
 
         证书可见范围： - instance - global  编辑证书时不支持修改为其他可见范围
 
@@ -184,7 +184,7 @@ class CertificateForm:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CertificateForm.
+        r"""Gets the instance_id of this CertificateForm.
 
         所属实例ID，当type=instance时必填
 
@@ -195,7 +195,7 @@ class CertificateForm:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CertificateForm.
+        r"""Sets the instance_id of this CertificateForm.
 
         所属实例ID，当type=instance时必填
 
@@ -206,7 +206,7 @@ class CertificateForm:
 
     @property
     def trusted_root_ca(self):
-        """Gets the trusted_root_ca of this CertificateForm.
+        r"""Gets the trusted_root_ca of this CertificateForm.
 
         信任的根证书CA  [暂不支持](tag:fcs;hcs;g42;Site)
 
@@ -217,7 +217,7 @@ class CertificateForm:
 
     @trusted_root_ca.setter
     def trusted_root_ca(self, trusted_root_ca):
-        """Sets the trusted_root_ca of this CertificateForm.
+        r"""Sets the trusted_root_ca of this CertificateForm.
 
         信任的根证书CA  [暂不支持](tag:fcs;hcs;g42;Site)
 
@@ -228,7 +228,7 @@ class CertificateForm:
 
     @property
     def algorithm_type(self):
-        """Gets the algorithm_type of this CertificateForm.
+        r"""Gets the algorithm_type of this CertificateForm.
 
         证书算法类型： - RSA - ECC - SM2  [暂不支持](tag:hws;hws_hk;g42;Site)
 
@@ -239,7 +239,7 @@ class CertificateForm:
 
     @algorithm_type.setter
     def algorithm_type(self, algorithm_type):
-        """Sets the algorithm_type of this CertificateForm.
+        r"""Sets the algorithm_type of this CertificateForm.
 
         证书算法类型： - RSA - ECC - SM2  [暂不支持](tag:hws;hws_hk;g42;Site)
 
@@ -250,7 +250,7 @@ class CertificateForm:
 
     @property
     def cert_content_sign(self):
-        """Gets the cert_content_sign of this CertificateForm.
+        r"""Gets the cert_content_sign of this CertificateForm.
 
         签名类型证书内容，仅algorithm_type=SM2时必填  [暂不支持](tag:hws;hws_hk;g42;Site)
 
@@ -261,7 +261,7 @@ class CertificateForm:
 
     @cert_content_sign.setter
     def cert_content_sign(self, cert_content_sign):
-        """Sets the cert_content_sign of this CertificateForm.
+        r"""Sets the cert_content_sign of this CertificateForm.
 
         签名类型证书内容，仅algorithm_type=SM2时必填  [暂不支持](tag:hws;hws_hk;g42;Site)
 
@@ -272,7 +272,7 @@ class CertificateForm:
 
     @property
     def private_key_sign(self):
-        """Gets the private_key_sign of this CertificateForm.
+        r"""Gets the private_key_sign of this CertificateForm.
 
         签名类型私钥内容，仅algorithm_type=SM2时必填  [暂不支持](tag:hws;hws_hk;g42;Site)
 
@@ -283,7 +283,7 @@ class CertificateForm:
 
     @private_key_sign.setter
     def private_key_sign(self, private_key_sign):
-        """Sets the private_key_sign of this CertificateForm.
+        r"""Sets the private_key_sign of this CertificateForm.
 
         签名类型私钥内容，仅algorithm_type=SM2时必填  [暂不支持](tag:hws;hws_hk;g42;Site)
 

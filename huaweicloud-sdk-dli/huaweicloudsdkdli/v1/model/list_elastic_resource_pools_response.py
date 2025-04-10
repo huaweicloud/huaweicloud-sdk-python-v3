@@ -32,7 +32,7 @@ class ListElasticResourcePoolsResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, count=None, elastic_resource_pools=None):
-        """ListElasticResourcePoolsResponse
+        r"""ListElasticResourcePoolsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListElasticResourcePoolsResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ListElasticResourcePoolsResponse.
+        r"""Gets the is_success of this ListElasticResourcePoolsResponse.
 
         是否成功
 
@@ -76,7 +76,7 @@ class ListElasticResourcePoolsResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ListElasticResourcePoolsResponse.
+        r"""Sets the is_success of this ListElasticResourcePoolsResponse.
 
         是否成功
 
@@ -87,7 +87,7 @@ class ListElasticResourcePoolsResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListElasticResourcePoolsResponse.
+        r"""Gets the message of this ListElasticResourcePoolsResponse.
 
         消息
 
@@ -98,7 +98,7 @@ class ListElasticResourcePoolsResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListElasticResourcePoolsResponse.
+        r"""Sets the message of this ListElasticResourcePoolsResponse.
 
         消息
 
@@ -109,7 +109,7 @@ class ListElasticResourcePoolsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListElasticResourcePoolsResponse.
+        r"""Gets the count of this ListElasticResourcePoolsResponse.
 
         数量
 
@@ -120,7 +120,7 @@ class ListElasticResourcePoolsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListElasticResourcePoolsResponse.
+        r"""Sets the count of this ListElasticResourcePoolsResponse.
 
         数量
 
@@ -131,7 +131,7 @@ class ListElasticResourcePoolsResponse(SdkResponse):
 
     @property
     def elastic_resource_pools(self):
-        """Gets the elastic_resource_pools of this ListElasticResourcePoolsResponse.
+        r"""Gets the elastic_resource_pools of this ListElasticResourcePoolsResponse.
 
         弹性资源池列表
 
@@ -142,7 +142,7 @@ class ListElasticResourcePoolsResponse(SdkResponse):
 
     @elastic_resource_pools.setter
     def elastic_resource_pools(self, elastic_resource_pools):
-        """Sets the elastic_resource_pools of this ListElasticResourcePoolsResponse.
+        r"""Sets the elastic_resource_pools of this ListElasticResourcePoolsResponse.
 
         弹性资源池列表
 

@@ -32,7 +32,7 @@ class ShowProcessResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, json=None, extend=None):
-        """ShowProcessResponse
+        r"""ShowProcessResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowProcessResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ShowProcessResponse.
+        r"""Gets the code of this ShowProcessResponse.
 
         响应码
 
@@ -76,7 +76,7 @@ class ShowProcessResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ShowProcessResponse.
+        r"""Sets the code of this ShowProcessResponse.
 
         响应码
 
@@ -87,7 +87,7 @@ class ShowProcessResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowProcessResponse.
+        r"""Gets the message of this ShowProcessResponse.
 
         响应消息
 
@@ -98,7 +98,7 @@ class ShowProcessResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowProcessResponse.
+        r"""Sets the message of this ShowProcessResponse.
 
         响应消息
 
@@ -109,7 +109,7 @@ class ShowProcessResponse(SdkResponse):
 
     @property
     def json(self):
-        """Gets the json of this ShowProcessResponse.
+        r"""Gets the json of this ShowProcessResponse.
 
         :return: The json of this ShowProcessResponse.
         :rtype: :class:`huaweicloudsdkcpts.v1.UploadProcessJson`
@@ -118,7 +118,7 @@ class ShowProcessResponse(SdkResponse):
 
     @json.setter
     def json(self, json):
-        """Sets the json of this ShowProcessResponse.
+        r"""Sets the json of this ShowProcessResponse.
 
         :param json: The json of this ShowProcessResponse.
         :type json: :class:`huaweicloudsdkcpts.v1.UploadProcessJson`
@@ -127,7 +127,7 @@ class ShowProcessResponse(SdkResponse):
 
     @property
     def extend(self):
-        """Gets the extend of this ShowProcessResponse.
+        r"""Gets the extend of this ShowProcessResponse.
 
         扩展信息
 
@@ -138,7 +138,7 @@ class ShowProcessResponse(SdkResponse):
 
     @extend.setter
     def extend(self, extend):
-        """Sets the extend of this ShowProcessResponse.
+        r"""Sets the extend of this ShowProcessResponse.
 
         扩展信息
 

@@ -60,7 +60,7 @@ class ShowSsoConfigResponse(SdkResponse):
     }
 
     def __init__(self, enable_sso=None, domain=None, authorize_url=None, get_token_url=None, client_id=None, client_secret=None, scope=None, acc_field_name=None, get_user_info_url=None, oauth2_server_type=None, pc_schema_url=None, android_schema_url=None, ios_schema_url=None, third_name=None, third_email=None, third_mobile=None, third_access_token=None, third_head_img_url=None):
-        """ShowSsoConfigResponse
+        r"""ShowSsoConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -163,7 +163,7 @@ class ShowSsoConfigResponse(SdkResponse):
 
     @property
     def enable_sso(self):
-        """Gets the enable_sso of this ShowSsoConfigResponse.
+        r"""Gets the enable_sso of this ShowSsoConfigResponse.
 
         是否开启SSO登录。
 
@@ -174,7 +174,7 @@ class ShowSsoConfigResponse(SdkResponse):
 
     @enable_sso.setter
     def enable_sso(self, enable_sso):
-        """Sets the enable_sso of this ShowSsoConfigResponse.
+        r"""Sets the enable_sso of this ShowSsoConfigResponse.
 
         是否开启SSO登录。
 
@@ -185,7 +185,7 @@ class ShowSsoConfigResponse(SdkResponse):
 
     @property
     def domain(self):
-        """Gets the domain of this ShowSsoConfigResponse.
+        r"""Gets the domain of this ShowSsoConfigResponse.
 
         企业域名。
 
@@ -196,7 +196,7 @@ class ShowSsoConfigResponse(SdkResponse):
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ShowSsoConfigResponse.
+        r"""Sets the domain of this ShowSsoConfigResponse.
 
         企业域名。
 
@@ -207,7 +207,7 @@ class ShowSsoConfigResponse(SdkResponse):
 
     @property
     def authorize_url(self):
-        """Gets the authorize_url of this ShowSsoConfigResponse.
+        r"""Gets the authorize_url of this ShowSsoConfigResponse.
 
         鉴权中心URL。
 
@@ -218,7 +218,7 @@ class ShowSsoConfigResponse(SdkResponse):
 
     @authorize_url.setter
     def authorize_url(self, authorize_url):
-        """Sets the authorize_url of this ShowSsoConfigResponse.
+        r"""Sets the authorize_url of this ShowSsoConfigResponse.
 
         鉴权中心URL。
 
@@ -229,7 +229,7 @@ class ShowSsoConfigResponse(SdkResponse):
 
     @property
     def get_token_url(self):
-        """Gets the get_token_url of this ShowSsoConfigResponse.
+        r"""Gets the get_token_url of this ShowSsoConfigResponse.
 
         获取Token URL。
 
@@ -240,7 +240,7 @@ class ShowSsoConfigResponse(SdkResponse):
 
     @get_token_url.setter
     def get_token_url(self, get_token_url):
-        """Sets the get_token_url of this ShowSsoConfigResponse.
+        r"""Sets the get_token_url of this ShowSsoConfigResponse.
 
         获取Token URL。
 
@@ -251,7 +251,7 @@ class ShowSsoConfigResponse(SdkResponse):
 
     @property
     def client_id(self):
-        """Gets the client_id of this ShowSsoConfigResponse.
+        r"""Gets the client_id of this ShowSsoConfigResponse.
 
         APP ID。
 
@@ -262,7 +262,7 @@ class ShowSsoConfigResponse(SdkResponse):
 
     @client_id.setter
     def client_id(self, client_id):
-        """Sets the client_id of this ShowSsoConfigResponse.
+        r"""Sets the client_id of this ShowSsoConfigResponse.
 
         APP ID。
 
@@ -273,7 +273,7 @@ class ShowSsoConfigResponse(SdkResponse):
 
     @property
     def client_secret(self):
-        """Gets the client_secret of this ShowSsoConfigResponse.
+        r"""Gets the client_secret of this ShowSsoConfigResponse.
 
         APP秘钥。
 
@@ -284,7 +284,7 @@ class ShowSsoConfigResponse(SdkResponse):
 
     @client_secret.setter
     def client_secret(self, client_secret):
-        """Sets the client_secret of this ShowSsoConfigResponse.
+        r"""Sets the client_secret of this ShowSsoConfigResponse.
 
         APP秘钥。
 
@@ -295,7 +295,7 @@ class ShowSsoConfigResponse(SdkResponse):
 
     @property
     def scope(self):
-        """Gets the scope of this ShowSsoConfigResponse.
+        r"""Gets the scope of this ShowSsoConfigResponse.
 
         授权范围。 * openid：OAuth2.0的OIDC 
 
@@ -306,7 +306,7 @@ class ShowSsoConfigResponse(SdkResponse):
 
     @scope.setter
     def scope(self, scope):
-        """Sets the scope of this ShowSsoConfigResponse.
+        r"""Sets the scope of this ShowSsoConfigResponse.
 
         授权范围。 * openid：OAuth2.0的OIDC 
 
@@ -317,7 +317,7 @@ class ShowSsoConfigResponse(SdkResponse):
 
     @property
     def acc_field_name(self):
-        """Gets the acc_field_name of this ShowSsoConfigResponse.
+        r"""Gets the acc_field_name of this ShowSsoConfigResponse.
 
         第三方帐号的字段名称。
 
@@ -328,7 +328,7 @@ class ShowSsoConfigResponse(SdkResponse):
 
     @acc_field_name.setter
     def acc_field_name(self, acc_field_name):
-        """Sets the acc_field_name of this ShowSsoConfigResponse.
+        r"""Sets the acc_field_name of this ShowSsoConfigResponse.
 
         第三方帐号的字段名称。
 
@@ -339,7 +339,7 @@ class ShowSsoConfigResponse(SdkResponse):
 
     @property
     def get_user_info_url(self):
-        """Gets the get_user_info_url of this ShowSsoConfigResponse.
+        r"""Gets the get_user_info_url of this ShowSsoConfigResponse.
 
         用户信息查询URL。
 
@@ -350,7 +350,7 @@ class ShowSsoConfigResponse(SdkResponse):
 
     @get_user_info_url.setter
     def get_user_info_url(self, get_user_info_url):
-        """Sets the get_user_info_url of this ShowSsoConfigResponse.
+        r"""Sets the get_user_info_url of this ShowSsoConfigResponse.
 
         用户信息查询URL。
 
@@ -361,7 +361,7 @@ class ShowSsoConfigResponse(SdkResponse):
 
     @property
     def oauth2_server_type(self):
-        """Gets the oauth2_server_type of this ShowSsoConfigResponse.
+        r"""Gets the oauth2_server_type of this ShowSsoConfigResponse.
 
         鉴权类型。OAuth2.0鉴权时取0。 * 0：OAuth2.0鉴权 
 
@@ -372,7 +372,7 @@ class ShowSsoConfigResponse(SdkResponse):
 
     @oauth2_server_type.setter
     def oauth2_server_type(self, oauth2_server_type):
-        """Sets the oauth2_server_type of this ShowSsoConfigResponse.
+        r"""Sets the oauth2_server_type of this ShowSsoConfigResponse.
 
         鉴权类型。OAuth2.0鉴权时取0。 * 0：OAuth2.0鉴权 
 
@@ -383,7 +383,7 @@ class ShowSsoConfigResponse(SdkResponse):
 
     @property
     def pc_schema_url(self):
-        """Gets the pc_schema_url of this ShowSsoConfigResponse.
+        r"""Gets the pc_schema_url of this ShowSsoConfigResponse.
 
         拉起PC端终端的schema。
 
@@ -394,7 +394,7 @@ class ShowSsoConfigResponse(SdkResponse):
 
     @pc_schema_url.setter
     def pc_schema_url(self, pc_schema_url):
-        """Sets the pc_schema_url of this ShowSsoConfigResponse.
+        r"""Sets the pc_schema_url of this ShowSsoConfigResponse.
 
         拉起PC端终端的schema。
 
@@ -405,7 +405,7 @@ class ShowSsoConfigResponse(SdkResponse):
 
     @property
     def android_schema_url(self):
-        """Gets the android_schema_url of this ShowSsoConfigResponse.
+        r"""Gets the android_schema_url of this ShowSsoConfigResponse.
 
         拉起安卓端终端的schema。
 
@@ -416,7 +416,7 @@ class ShowSsoConfigResponse(SdkResponse):
 
     @android_schema_url.setter
     def android_schema_url(self, android_schema_url):
-        """Sets the android_schema_url of this ShowSsoConfigResponse.
+        r"""Sets the android_schema_url of this ShowSsoConfigResponse.
 
         拉起安卓端终端的schema。
 
@@ -427,7 +427,7 @@ class ShowSsoConfigResponse(SdkResponse):
 
     @property
     def ios_schema_url(self):
-        """Gets the ios_schema_url of this ShowSsoConfigResponse.
+        r"""Gets the ios_schema_url of this ShowSsoConfigResponse.
 
         拉起ios端终端的schema。
 
@@ -438,7 +438,7 @@ class ShowSsoConfigResponse(SdkResponse):
 
     @ios_schema_url.setter
     def ios_schema_url(self, ios_schema_url):
-        """Sets the ios_schema_url of this ShowSsoConfigResponse.
+        r"""Sets the ios_schema_url of this ShowSsoConfigResponse.
 
         拉起ios端终端的schema。
 
@@ -449,7 +449,7 @@ class ShowSsoConfigResponse(SdkResponse):
 
     @property
     def third_name(self):
-        """Gets the third_name of this ShowSsoConfigResponse.
+        r"""Gets the third_name of this ShowSsoConfigResponse.
 
         第三方名称的字段名称。
 
@@ -460,7 +460,7 @@ class ShowSsoConfigResponse(SdkResponse):
 
     @third_name.setter
     def third_name(self, third_name):
-        """Sets the third_name of this ShowSsoConfigResponse.
+        r"""Sets the third_name of this ShowSsoConfigResponse.
 
         第三方名称的字段名称。
 
@@ -471,7 +471,7 @@ class ShowSsoConfigResponse(SdkResponse):
 
     @property
     def third_email(self):
-        """Gets the third_email of this ShowSsoConfigResponse.
+        r"""Gets the third_email of this ShowSsoConfigResponse.
 
         第三方邮箱的字段名称。
 
@@ -482,7 +482,7 @@ class ShowSsoConfigResponse(SdkResponse):
 
     @third_email.setter
     def third_email(self, third_email):
-        """Sets the third_email of this ShowSsoConfigResponse.
+        r"""Sets the third_email of this ShowSsoConfigResponse.
 
         第三方邮箱的字段名称。
 
@@ -493,7 +493,7 @@ class ShowSsoConfigResponse(SdkResponse):
 
     @property
     def third_mobile(self):
-        """Gets the third_mobile of this ShowSsoConfigResponse.
+        r"""Gets the third_mobile of this ShowSsoConfigResponse.
 
         第三方手机号的字段名称。
 
@@ -504,7 +504,7 @@ class ShowSsoConfigResponse(SdkResponse):
 
     @third_mobile.setter
     def third_mobile(self, third_mobile):
-        """Sets the third_mobile of this ShowSsoConfigResponse.
+        r"""Sets the third_mobile of this ShowSsoConfigResponse.
 
         第三方手机号的字段名称。
 
@@ -515,7 +515,7 @@ class ShowSsoConfigResponse(SdkResponse):
 
     @property
     def third_access_token(self):
-        """Gets the third_access_token of this ShowSsoConfigResponse.
+        r"""Gets the third_access_token of this ShowSsoConfigResponse.
 
         第三方accessToken的字段名称。
 
@@ -526,7 +526,7 @@ class ShowSsoConfigResponse(SdkResponse):
 
     @third_access_token.setter
     def third_access_token(self, third_access_token):
-        """Sets the third_access_token of this ShowSsoConfigResponse.
+        r"""Sets the third_access_token of this ShowSsoConfigResponse.
 
         第三方accessToken的字段名称。
 
@@ -537,7 +537,7 @@ class ShowSsoConfigResponse(SdkResponse):
 
     @property
     def third_head_img_url(self):
-        """Gets the third_head_img_url of this ShowSsoConfigResponse.
+        r"""Gets the third_head_img_url of this ShowSsoConfigResponse.
 
         第三方头像链接的字段名称。
 
@@ -548,7 +548,7 @@ class ShowSsoConfigResponse(SdkResponse):
 
     @third_head_img_url.setter
     def third_head_img_url(self, third_head_img_url):
-        """Sets the third_head_img_url of this ShowSsoConfigResponse.
+        r"""Sets the third_head_img_url of this ShowSsoConfigResponse.
 
         第三方头像链接的字段名称。
 

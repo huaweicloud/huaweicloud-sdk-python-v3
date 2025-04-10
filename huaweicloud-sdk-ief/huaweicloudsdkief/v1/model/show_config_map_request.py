@@ -27,7 +27,7 @@ class ShowConfigMapRequest:
     }
 
     def __init__(self, ief_instance_id=None, configmap_id=None):
-        """ShowConfigMapRequest
+        r"""ShowConfigMapRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowConfigMapRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this ShowConfigMapRequest.
+        r"""Gets the ief_instance_id of this ShowConfigMapRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -60,7 +60,7 @@ class ShowConfigMapRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this ShowConfigMapRequest.
+        r"""Sets the ief_instance_id of this ShowConfigMapRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -71,7 +71,7 @@ class ShowConfigMapRequest:
 
     @property
     def configmap_id(self):
-        """Gets the configmap_id of this ShowConfigMapRequest.
+        r"""Gets the configmap_id of this ShowConfigMapRequest.
 
         配置项ID
 
@@ -82,7 +82,7 @@ class ShowConfigMapRequest:
 
     @configmap_id.setter
     def configmap_id(self, configmap_id):
-        """Sets the configmap_id of this ShowConfigMapRequest.
+        r"""Sets the configmap_id of this ShowConfigMapRequest.
 
         配置项ID
 

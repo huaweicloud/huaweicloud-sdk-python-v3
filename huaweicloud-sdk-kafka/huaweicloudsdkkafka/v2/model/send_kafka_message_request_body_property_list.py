@@ -27,7 +27,7 @@ class SendKafkaMessageRequestBodyPropertyList:
     }
 
     def __init__(self, name=None, value=None):
-        """SendKafkaMessageRequestBodyPropertyList
+        r"""SendKafkaMessageRequestBodyPropertyList
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SendKafkaMessageRequestBodyPropertyList:
 
     @property
     def name(self):
-        """Gets the name of this SendKafkaMessageRequestBodyPropertyList.
+        r"""Gets the name of this SendKafkaMessageRequestBodyPropertyList.
 
         特性名字
 
@@ -61,7 +61,7 @@ class SendKafkaMessageRequestBodyPropertyList:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SendKafkaMessageRequestBodyPropertyList.
+        r"""Sets the name of this SendKafkaMessageRequestBodyPropertyList.
 
         特性名字
 
@@ -72,7 +72,7 @@ class SendKafkaMessageRequestBodyPropertyList:
 
     @property
     def value(self):
-        """Gets the value of this SendKafkaMessageRequestBodyPropertyList.
+        r"""Gets the value of this SendKafkaMessageRequestBodyPropertyList.
 
         特性值
 
@@ -83,7 +83,7 @@ class SendKafkaMessageRequestBodyPropertyList:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this SendKafkaMessageRequestBodyPropertyList.
+        r"""Sets the value of this SendKafkaMessageRequestBodyPropertyList.
 
         特性值
 

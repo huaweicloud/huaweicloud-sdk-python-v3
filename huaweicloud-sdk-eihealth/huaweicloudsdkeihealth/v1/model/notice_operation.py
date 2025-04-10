@@ -26,7 +26,7 @@ class NoticeOperation:
     }
 
     def __init__(self):
-        """NoticeOperation
+        r"""NoticeOperation
 
         The model defined in huaweicloud sdk
 

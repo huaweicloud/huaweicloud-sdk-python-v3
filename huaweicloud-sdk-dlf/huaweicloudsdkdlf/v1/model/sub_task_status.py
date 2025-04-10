@@ -35,7 +35,7 @@ class SubTaskStatus:
     }
 
     def __init__(self, id=None, name=None, start_time=None, end_time=None, last_update=None, status=None):
-        """SubTaskStatus
+        r"""SubTaskStatus
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class SubTaskStatus:
 
     @property
     def id(self):
-        """Gets the id of this SubTaskStatus.
+        r"""Gets the id of this SubTaskStatus.
 
         :return: The id of this SubTaskStatus.
         :rtype: str
@@ -87,7 +87,7 @@ class SubTaskStatus:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SubTaskStatus.
+        r"""Sets the id of this SubTaskStatus.
 
         :param id: The id of this SubTaskStatus.
         :type id: str
@@ -96,7 +96,7 @@ class SubTaskStatus:
 
     @property
     def name(self):
-        """Gets the name of this SubTaskStatus.
+        r"""Gets the name of this SubTaskStatus.
 
         :return: The name of this SubTaskStatus.
         :rtype: str
@@ -105,7 +105,7 @@ class SubTaskStatus:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SubTaskStatus.
+        r"""Sets the name of this SubTaskStatus.
 
         :param name: The name of this SubTaskStatus.
         :type name: str
@@ -114,7 +114,7 @@ class SubTaskStatus:
 
     @property
     def start_time(self):
-        """Gets the start_time of this SubTaskStatus.
+        r"""Gets the start_time of this SubTaskStatus.
 
         :return: The start_time of this SubTaskStatus.
         :rtype: str
@@ -123,7 +123,7 @@ class SubTaskStatus:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this SubTaskStatus.
+        r"""Sets the start_time of this SubTaskStatus.
 
         :param start_time: The start_time of this SubTaskStatus.
         :type start_time: str
@@ -132,7 +132,7 @@ class SubTaskStatus:
 
     @property
     def end_time(self):
-        """Gets the end_time of this SubTaskStatus.
+        r"""Gets the end_time of this SubTaskStatus.
 
         :return: The end_time of this SubTaskStatus.
         :rtype: str
@@ -141,7 +141,7 @@ class SubTaskStatus:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this SubTaskStatus.
+        r"""Sets the end_time of this SubTaskStatus.
 
         :param end_time: The end_time of this SubTaskStatus.
         :type end_time: str
@@ -150,7 +150,7 @@ class SubTaskStatus:
 
     @property
     def last_update(self):
-        """Gets the last_update of this SubTaskStatus.
+        r"""Gets the last_update of this SubTaskStatus.
 
         :return: The last_update of this SubTaskStatus.
         :rtype: str
@@ -159,7 +159,7 @@ class SubTaskStatus:
 
     @last_update.setter
     def last_update(self, last_update):
-        """Sets the last_update of this SubTaskStatus.
+        r"""Sets the last_update of this SubTaskStatus.
 
         :param last_update: The last_update of this SubTaskStatus.
         :type last_update: str
@@ -168,7 +168,7 @@ class SubTaskStatus:
 
     @property
     def status(self):
-        """Gets the status of this SubTaskStatus.
+        r"""Gets the status of this SubTaskStatus.
 
         :return: The status of this SubTaskStatus.
         :rtype: str
@@ -177,7 +177,7 @@ class SubTaskStatus:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SubTaskStatus.
+        r"""Sets the status of this SubTaskStatus.
 
         :param status: The status of this SubTaskStatus.
         :type status: str

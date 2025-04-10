@@ -24,7 +24,7 @@ class DisassociateResourceSharePermissionResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DisassociateResourceSharePermissionResponse
+        r"""DisassociateResourceSharePermissionResponse
 
         The model defined in huaweicloud sdk
 

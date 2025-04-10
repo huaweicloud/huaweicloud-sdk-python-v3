@@ -25,7 +25,7 @@ class Tag:
     }
 
     def __init__(self, should=None):
-        """Tag
+        r"""Tag
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class Tag:
 
     @property
     def should(self):
-        """Gets the should of this Tag.
+        r"""Gets the should of this Tag.
 
         必须要包含其中之一的答案标签id列表
 
@@ -54,7 +54,7 @@ class Tag:
 
     @should.setter
     def should(self, should):
-        """Sets the should of this Tag.
+        r"""Sets the should of this Tag.
 
         必须要包含其中之一的答案标签id列表
 

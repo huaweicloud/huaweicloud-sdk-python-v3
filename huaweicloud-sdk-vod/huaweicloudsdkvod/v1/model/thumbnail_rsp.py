@@ -27,7 +27,7 @@ class ThumbnailRsp:
     }
 
     def __init__(self, offset=None, url=None):
-        """ThumbnailRsp
+        r"""ThumbnailRsp
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ThumbnailRsp:
 
     @property
     def offset(self):
-        """Gets the offset of this ThumbnailRsp.
+        r"""Gets the offset of this ThumbnailRsp.
 
         截图在视频中的时间偏移，单位为秒。
 
@@ -59,7 +59,7 @@ class ThumbnailRsp:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ThumbnailRsp.
+        r"""Sets the offset of this ThumbnailRsp.
 
         截图在视频中的时间偏移，单位为秒。
 
@@ -70,7 +70,7 @@ class ThumbnailRsp:
 
     @property
     def url(self):
-        """Gets the url of this ThumbnailRsp.
+        r"""Gets the url of this ThumbnailRsp.
 
         截图访问URL
 
@@ -81,7 +81,7 @@ class ThumbnailRsp:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ThumbnailRsp.
+        r"""Sets the url of this ThumbnailRsp.
 
         截图访问URL
 

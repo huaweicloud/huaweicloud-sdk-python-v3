@@ -33,7 +33,7 @@ class ListDevicesRequest:
     }
 
     def __init__(self, edge_node_id=None, gateway_id=None, device_name=None, offset=None, limit=None):
-        """ListDevicesRequest
+        r"""ListDevicesRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListDevicesRequest:
 
     @property
     def edge_node_id(self):
-        """Gets the edge_node_id of this ListDevicesRequest.
+        r"""Gets the edge_node_id of this ListDevicesRequest.
 
         边缘节点ID
 
@@ -81,7 +81,7 @@ class ListDevicesRequest:
 
     @edge_node_id.setter
     def edge_node_id(self, edge_node_id):
-        """Sets the edge_node_id of this ListDevicesRequest.
+        r"""Sets the edge_node_id of this ListDevicesRequest.
 
         边缘节点ID
 
@@ -92,7 +92,7 @@ class ListDevicesRequest:
 
     @property
     def gateway_id(self):
-        """Gets the gateway_id of this ListDevicesRequest.
+        r"""Gets the gateway_id of this ListDevicesRequest.
 
         父设备ID,对应之前的gatewayId的概念，传该参数时代表查询网关下的子设备，不传代表查询网关直连设备
 
@@ -103,7 +103,7 @@ class ListDevicesRequest:
 
     @gateway_id.setter
     def gateway_id(self, gateway_id):
-        """Sets the gateway_id of this ListDevicesRequest.
+        r"""Sets the gateway_id of this ListDevicesRequest.
 
         父设备ID,对应之前的gatewayId的概念，传该参数时代表查询网关下的子设备，不传代表查询网关直连设备
 
@@ -114,7 +114,7 @@ class ListDevicesRequest:
 
     @property
     def device_name(self):
-        """Gets the device_name of this ListDevicesRequest.
+        r"""Gets the device_name of this ListDevicesRequest.
 
         设备名称
 
@@ -125,7 +125,7 @@ class ListDevicesRequest:
 
     @device_name.setter
     def device_name(self, device_name):
-        """Sets the device_name of this ListDevicesRequest.
+        r"""Sets the device_name of this ListDevicesRequest.
 
         设备名称
 
@@ -136,7 +136,7 @@ class ListDevicesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDevicesRequest.
+        r"""Gets the offset of this ListDevicesRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -147,7 +147,7 @@ class ListDevicesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDevicesRequest.
+        r"""Sets the offset of this ListDevicesRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -158,7 +158,7 @@ class ListDevicesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDevicesRequest.
+        r"""Gets the limit of this ListDevicesRequest.
 
         每页记录数，默认值为10，取值区间为1-1000
 
@@ -169,7 +169,7 @@ class ListDevicesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDevicesRequest.
+        r"""Sets the limit of this ListDevicesRequest.
 
         每页记录数，默认值为10，取值区间为1-1000
 

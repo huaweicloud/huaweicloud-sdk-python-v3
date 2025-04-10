@@ -31,7 +31,7 @@ class ShrinkGaussMySqlProxyRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, proxy_id=None, body=None):
-        """ShrinkGaussMySqlProxyRequest
+        r"""ShrinkGaussMySqlProxyRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ShrinkGaussMySqlProxyRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShrinkGaussMySqlProxyRequest.
+        r"""Gets the x_language of this ShrinkGaussMySqlProxyRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -73,7 +73,7 @@ class ShrinkGaussMySqlProxyRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShrinkGaussMySqlProxyRequest.
+        r"""Sets the x_language of this ShrinkGaussMySqlProxyRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -84,7 +84,7 @@ class ShrinkGaussMySqlProxyRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShrinkGaussMySqlProxyRequest.
+        r"""Gets the instance_id of this ShrinkGaussMySqlProxyRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -95,7 +95,7 @@ class ShrinkGaussMySqlProxyRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShrinkGaussMySqlProxyRequest.
+        r"""Sets the instance_id of this ShrinkGaussMySqlProxyRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -106,7 +106,7 @@ class ShrinkGaussMySqlProxyRequest:
 
     @property
     def proxy_id(self):
-        """Gets the proxy_id of this ShrinkGaussMySqlProxyRequest.
+        r"""Gets the proxy_id of this ShrinkGaussMySqlProxyRequest.
 
         数据库代理ID，严格匹配UUID规则。
 
@@ -117,7 +117,7 @@ class ShrinkGaussMySqlProxyRequest:
 
     @proxy_id.setter
     def proxy_id(self, proxy_id):
-        """Sets the proxy_id of this ShrinkGaussMySqlProxyRequest.
+        r"""Sets the proxy_id of this ShrinkGaussMySqlProxyRequest.
 
         数据库代理ID，严格匹配UUID规则。
 
@@ -128,7 +128,7 @@ class ShrinkGaussMySqlProxyRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShrinkGaussMySqlProxyRequest.
+        r"""Gets the body of this ShrinkGaussMySqlProxyRequest.
 
         :return: The body of this ShrinkGaussMySqlProxyRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShrinkGaussMySqlProxyRequestBody`
@@ -137,7 +137,7 @@ class ShrinkGaussMySqlProxyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShrinkGaussMySqlProxyRequest.
+        r"""Sets the body of this ShrinkGaussMySqlProxyRequest.
 
         :param body: The body of this ShrinkGaussMySqlProxyRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.ShrinkGaussMySqlProxyRequestBody`

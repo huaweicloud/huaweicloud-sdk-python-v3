@@ -29,7 +29,7 @@ class DeleteClickHouseInstanceRequest:
     }
 
     def __init__(self, instance_id=None, clickhouse_instance_id=None, x_language=None):
-        """DeleteClickHouseInstanceRequest
+        r"""DeleteClickHouseInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteClickHouseInstanceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteClickHouseInstanceRequest.
+        r"""Gets the instance_id of this DeleteClickHouseInstanceRequest.
 
         TaurusDB实例ID，严格匹配UUID规则。
 
@@ -66,7 +66,7 @@ class DeleteClickHouseInstanceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteClickHouseInstanceRequest.
+        r"""Sets the instance_id of this DeleteClickHouseInstanceRequest.
 
         TaurusDB实例ID，严格匹配UUID规则。
 
@@ -77,7 +77,7 @@ class DeleteClickHouseInstanceRequest:
 
     @property
     def clickhouse_instance_id(self):
-        """Gets the clickhouse_instance_id of this DeleteClickHouseInstanceRequest.
+        r"""Gets the clickhouse_instance_id of this DeleteClickHouseInstanceRequest.
 
         ClickHouse实例ID，严格匹配UUID规则。
 
@@ -88,7 +88,7 @@ class DeleteClickHouseInstanceRequest:
 
     @clickhouse_instance_id.setter
     def clickhouse_instance_id(self, clickhouse_instance_id):
-        """Sets the clickhouse_instance_id of this DeleteClickHouseInstanceRequest.
+        r"""Sets the clickhouse_instance_id of this DeleteClickHouseInstanceRequest.
 
         ClickHouse实例ID，严格匹配UUID规则。
 
@@ -99,7 +99,7 @@ class DeleteClickHouseInstanceRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this DeleteClickHouseInstanceRequest.
+        r"""Gets the x_language of this DeleteClickHouseInstanceRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -110,7 +110,7 @@ class DeleteClickHouseInstanceRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this DeleteClickHouseInstanceRequest.
+        r"""Sets the x_language of this DeleteClickHouseInstanceRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 

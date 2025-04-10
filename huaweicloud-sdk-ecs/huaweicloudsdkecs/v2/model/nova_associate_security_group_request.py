@@ -27,7 +27,7 @@ class NovaAssociateSecurityGroupRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """NovaAssociateSecurityGroupRequest
+        r"""NovaAssociateSecurityGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class NovaAssociateSecurityGroupRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this NovaAssociateSecurityGroupRequest.
+        r"""Gets the server_id of this NovaAssociateSecurityGroupRequest.
 
         弹性云服务器ID。
 
@@ -60,7 +60,7 @@ class NovaAssociateSecurityGroupRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this NovaAssociateSecurityGroupRequest.
+        r"""Sets the server_id of this NovaAssociateSecurityGroupRequest.
 
         弹性云服务器ID。
 
@@ -71,7 +71,7 @@ class NovaAssociateSecurityGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this NovaAssociateSecurityGroupRequest.
+        r"""Gets the body of this NovaAssociateSecurityGroupRequest.
 
         :return: The body of this NovaAssociateSecurityGroupRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.NovaAssociateSecurityGroupRequestBody`
@@ -80,7 +80,7 @@ class NovaAssociateSecurityGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this NovaAssociateSecurityGroupRequest.
+        r"""Sets the body of this NovaAssociateSecurityGroupRequest.
 
         :param body: The body of this NovaAssociateSecurityGroupRequest.
         :type body: :class:`huaweicloudsdkecs.v2.NovaAssociateSecurityGroupRequestBody`

@@ -27,7 +27,7 @@ class AppQualityInfo:
     }
 
     def __init__(self, app_name=None, quality_info=None):
-        """AppQualityInfo
+        r"""AppQualityInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AppQualityInfo:
 
     @property
     def app_name(self):
-        """Gets the app_name of this AppQualityInfo.
+        r"""Gets the app_name of this AppQualityInfo.
 
         应用名称
 
@@ -61,7 +61,7 @@ class AppQualityInfo:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this AppQualityInfo.
+        r"""Sets the app_name of this AppQualityInfo.
 
         应用名称
 
@@ -72,7 +72,7 @@ class AppQualityInfo:
 
     @property
     def quality_info(self):
-        """Gets the quality_info of this AppQualityInfo.
+        r"""Gets the quality_info of this AppQualityInfo.
 
         视频质量信息
 
@@ -83,7 +83,7 @@ class AppQualityInfo:
 
     @quality_info.setter
     def quality_info(self, quality_info):
-        """Sets the quality_info of this AppQualityInfo.
+        r"""Sets the quality_info of this AppQualityInfo.
 
         视频质量信息
 

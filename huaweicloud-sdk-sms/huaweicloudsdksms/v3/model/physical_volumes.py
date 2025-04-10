@@ -41,7 +41,7 @@ class PhysicalVolumes:
     }
 
     def __init__(self, device_use=None, file_system=None, index=None, mount_point=None, name=None, size=None, inode_size=None, used_size=None, uuid=None):
-        """PhysicalVolumes
+        r"""PhysicalVolumes
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class PhysicalVolumes:
 
     @property
     def device_use(self):
-        """Gets the device_use of this PhysicalVolumes.
+        r"""Gets the device_use of this PhysicalVolumes.
 
         分区类型，普通分区，启动分区，系统分区
 
@@ -110,7 +110,7 @@ class PhysicalVolumes:
 
     @device_use.setter
     def device_use(self, device_use):
-        """Sets the device_use of this PhysicalVolumes.
+        r"""Sets the device_use of this PhysicalVolumes.
 
         分区类型，普通分区，启动分区，系统分区
 
@@ -121,7 +121,7 @@ class PhysicalVolumes:
 
     @property
     def file_system(self):
-        """Gets the file_system of this PhysicalVolumes.
+        r"""Gets the file_system of this PhysicalVolumes.
 
         文件系统类型
 
@@ -132,7 +132,7 @@ class PhysicalVolumes:
 
     @file_system.setter
     def file_system(self, file_system):
-        """Sets the file_system of this PhysicalVolumes.
+        r"""Sets the file_system of this PhysicalVolumes.
 
         文件系统类型
 
@@ -143,7 +143,7 @@ class PhysicalVolumes:
 
     @property
     def index(self):
-        """Gets the index of this PhysicalVolumes.
+        r"""Gets the index of this PhysicalVolumes.
 
         顺序
 
@@ -154,7 +154,7 @@ class PhysicalVolumes:
 
     @index.setter
     def index(self, index):
-        """Sets the index of this PhysicalVolumes.
+        r"""Sets the index of this PhysicalVolumes.
 
         顺序
 
@@ -165,7 +165,7 @@ class PhysicalVolumes:
 
     @property
     def mount_point(self):
-        """Gets the mount_point of this PhysicalVolumes.
+        r"""Gets the mount_point of this PhysicalVolumes.
 
         挂载点
 
@@ -176,7 +176,7 @@ class PhysicalVolumes:
 
     @mount_point.setter
     def mount_point(self, mount_point):
-        """Sets the mount_point of this PhysicalVolumes.
+        r"""Sets the mount_point of this PhysicalVolumes.
 
         挂载点
 
@@ -187,7 +187,7 @@ class PhysicalVolumes:
 
     @property
     def name(self):
-        """Gets the name of this PhysicalVolumes.
+        r"""Gets the name of this PhysicalVolumes.
 
         名称，windows表示盘符，Linux表示设备号
 
@@ -198,7 +198,7 @@ class PhysicalVolumes:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PhysicalVolumes.
+        r"""Sets the name of this PhysicalVolumes.
 
         名称，windows表示盘符，Linux表示设备号
 
@@ -209,7 +209,7 @@ class PhysicalVolumes:
 
     @property
     def size(self):
-        """Gets the size of this PhysicalVolumes.
+        r"""Gets the size of this PhysicalVolumes.
 
         大小
 
@@ -220,7 +220,7 @@ class PhysicalVolumes:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this PhysicalVolumes.
+        r"""Sets the size of this PhysicalVolumes.
 
         大小
 
@@ -231,7 +231,7 @@ class PhysicalVolumes:
 
     @property
     def inode_size(self):
-        """Gets the inode_size of this PhysicalVolumes.
+        r"""Gets the inode_size of this PhysicalVolumes.
 
         inode数量
 
@@ -242,7 +242,7 @@ class PhysicalVolumes:
 
     @inode_size.setter
     def inode_size(self, inode_size):
-        """Sets the inode_size of this PhysicalVolumes.
+        r"""Sets the inode_size of this PhysicalVolumes.
 
         inode数量
 
@@ -253,7 +253,7 @@ class PhysicalVolumes:
 
     @property
     def used_size(self):
-        """Gets the used_size of this PhysicalVolumes.
+        r"""Gets the used_size of this PhysicalVolumes.
 
         使用大小
 
@@ -264,7 +264,7 @@ class PhysicalVolumes:
 
     @used_size.setter
     def used_size(self, used_size):
-        """Sets the used_size of this PhysicalVolumes.
+        r"""Sets the used_size of this PhysicalVolumes.
 
         使用大小
 
@@ -275,7 +275,7 @@ class PhysicalVolumes:
 
     @property
     def uuid(self):
-        """Gets the uuid of this PhysicalVolumes.
+        r"""Gets the uuid of this PhysicalVolumes.
 
         GUID，可从源端查询
 
@@ -286,7 +286,7 @@ class PhysicalVolumes:
 
     @uuid.setter
     def uuid(self, uuid):
-        """Sets the uuid of this PhysicalVolumes.
+        r"""Sets the uuid of this PhysicalVolumes.
 
         GUID，可从源端查询
 

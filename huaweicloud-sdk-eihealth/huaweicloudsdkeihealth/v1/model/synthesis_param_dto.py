@@ -31,7 +31,7 @@ class SynthesisParamDto:
     }
 
     def __init__(self, top_n=None, max_search_depth=None, time_limit=None, max_prediction_per_product=None):
-        """SynthesisParamDto
+        r"""SynthesisParamDto
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class SynthesisParamDto:
 
     @property
     def top_n(self):
-        """Gets the top_n of this SynthesisParamDto.
+        r"""Gets the top_n of this SynthesisParamDto.
 
         期望最大返回条目数（排序后取TopN）
 
@@ -71,7 +71,7 @@ class SynthesisParamDto:
 
     @top_n.setter
     def top_n(self, top_n):
-        """Sets the top_n of this SynthesisParamDto.
+        r"""Sets the top_n of this SynthesisParamDto.
 
         期望最大返回条目数（排序后取TopN）
 
@@ -82,7 +82,7 @@ class SynthesisParamDto:
 
     @property
     def max_search_depth(self):
-        """Gets the max_search_depth of this SynthesisParamDto.
+        r"""Gets the max_search_depth of this SynthesisParamDto.
 
         预测路径的最大深度
 
@@ -93,7 +93,7 @@ class SynthesisParamDto:
 
     @max_search_depth.setter
     def max_search_depth(self, max_search_depth):
-        """Sets the max_search_depth of this SynthesisParamDto.
+        r"""Sets the max_search_depth of this SynthesisParamDto.
 
         预测路径的最大深度
 
@@ -104,7 +104,7 @@ class SynthesisParamDto:
 
     @property
     def time_limit(self):
-        """Gets the time_limit of this SynthesisParamDto.
+        r"""Gets the time_limit of this SynthesisParamDto.
 
         搜索最大时间，单位:分钟
 
@@ -115,7 +115,7 @@ class SynthesisParamDto:
 
     @time_limit.setter
     def time_limit(self, time_limit):
-        """Sets the time_limit of this SynthesisParamDto.
+        r"""Sets the time_limit of this SynthesisParamDto.
 
         搜索最大时间，单位:分钟
 
@@ -126,7 +126,7 @@ class SynthesisParamDto:
 
     @property
     def max_prediction_per_product(self):
-        """Gets the max_prediction_per_product of this SynthesisParamDto.
+        r"""Gets the max_prediction_per_product of this SynthesisParamDto.
 
         每个产物的最大反应数量
 
@@ -137,7 +137,7 @@ class SynthesisParamDto:
 
     @max_prediction_per_product.setter
     def max_prediction_per_product(self, max_prediction_per_product):
-        """Sets the max_prediction_per_product of this SynthesisParamDto.
+        r"""Sets the max_prediction_per_product of this SynthesisParamDto.
 
         每个产物的最大反应数量
 

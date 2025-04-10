@@ -55,7 +55,7 @@ class FreeResourcePackageV3:
     }
 
     def __init__(self, order_instance_id=None, order_id=None, product_id=None, product_name=None, enterprise_project_id=None, enterprise_project_scope=None, effective_time=None, expire_time=None, status=None, service_type_code=None, service_type_name=None, region_code=None, source_type=None, bundle_type=None, quota_reuse_mode=None, free_resources=None):
-        """FreeResourcePackageV3
+        r"""FreeResourcePackageV3
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class FreeResourcePackageV3:
 
     @property
     def order_instance_id(self):
-        """Gets the order_instance_id of this FreeResourcePackageV3.
+        r"""Gets the order_instance_id of this FreeResourcePackageV3.
 
         订购资源包产品后，系统生成的ID，是这个资源包列表的标识字段。
 
@@ -159,7 +159,7 @@ class FreeResourcePackageV3:
 
     @order_instance_id.setter
     def order_instance_id(self, order_instance_id):
-        """Sets the order_instance_id of this FreeResourcePackageV3.
+        r"""Sets the order_instance_id of this FreeResourcePackageV3.
 
         订购资源包产品后，系统生成的ID，是这个资源包列表的标识字段。
 
@@ -170,7 +170,7 @@ class FreeResourcePackageV3:
 
     @property
     def order_id(self):
-        """Gets the order_id of this FreeResourcePackageV3.
+        r"""Gets the order_id of this FreeResourcePackageV3.
 
         订单ID，如果source_type为“1：软开云赠送”，该字段为空。
 
@@ -181,7 +181,7 @@ class FreeResourcePackageV3:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this FreeResourcePackageV3.
+        r"""Sets the order_id of this FreeResourcePackageV3.
 
         订单ID，如果source_type为“1：软开云赠送”，该字段为空。
 
@@ -192,7 +192,7 @@ class FreeResourcePackageV3:
 
     @property
     def product_id(self):
-        """Gets the product_id of this FreeResourcePackageV3.
+        r"""Gets the product_id of this FreeResourcePackageV3.
 
         产品ID，即资源包ID。
 
@@ -203,7 +203,7 @@ class FreeResourcePackageV3:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this FreeResourcePackageV3.
+        r"""Sets the product_id of this FreeResourcePackageV3.
 
         产品ID，即资源包ID。
 
@@ -214,7 +214,7 @@ class FreeResourcePackageV3:
 
     @property
     def product_name(self):
-        """Gets the product_name of this FreeResourcePackageV3.
+        r"""Gets the product_name of this FreeResourcePackageV3.
 
         产品名称，即资源包名称。
 
@@ -225,7 +225,7 @@ class FreeResourcePackageV3:
 
     @product_name.setter
     def product_name(self, product_name):
-        """Sets the product_name of this FreeResourcePackageV3.
+        r"""Sets the product_name of this FreeResourcePackageV3.
 
         产品名称，即资源包名称。
 
@@ -236,7 +236,7 @@ class FreeResourcePackageV3:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this FreeResourcePackageV3.
+        r"""Gets the enterprise_project_id of this FreeResourcePackageV3.
 
         企业项目ID。
 
@@ -247,7 +247,7 @@ class FreeResourcePackageV3:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this FreeResourcePackageV3.
+        r"""Sets the enterprise_project_id of this FreeResourcePackageV3.
 
         企业项目ID。
 
@@ -258,7 +258,7 @@ class FreeResourcePackageV3:
 
     @property
     def enterprise_project_scope(self):
-        """Gets the enterprise_project_scope of this FreeResourcePackageV3.
+        r"""Gets the enterprise_project_scope of this FreeResourcePackageV3.
 
         企业项目应用范围： 0：应用所有1：应用到具体企业项目
 
@@ -269,7 +269,7 @@ class FreeResourcePackageV3:
 
     @enterprise_project_scope.setter
     def enterprise_project_scope(self, enterprise_project_scope):
-        """Sets the enterprise_project_scope of this FreeResourcePackageV3.
+        r"""Sets the enterprise_project_scope of this FreeResourcePackageV3.
 
         企业项目应用范围： 0：应用所有1：应用到具体企业项目
 
@@ -280,7 +280,7 @@ class FreeResourcePackageV3:
 
     @property
     def effective_time(self):
-        """Gets the effective_time of this FreeResourcePackageV3.
+        r"""Gets the effective_time of this FreeResourcePackageV3.
 
         生效时间，购买资源包的时间，格式UTC。
 
@@ -291,7 +291,7 @@ class FreeResourcePackageV3:
 
     @effective_time.setter
     def effective_time(self, effective_time):
-        """Sets the effective_time of this FreeResourcePackageV3.
+        r"""Sets the effective_time of this FreeResourcePackageV3.
 
         生效时间，购买资源包的时间，格式UTC。
 
@@ -302,7 +302,7 @@ class FreeResourcePackageV3:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this FreeResourcePackageV3.
+        r"""Gets the expire_time of this FreeResourcePackageV3.
 
         失效时间，资源包到期时间，格式UTC。
 
@@ -313,7 +313,7 @@ class FreeResourcePackageV3:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this FreeResourcePackageV3.
+        r"""Sets the expire_time of this FreeResourcePackageV3.
 
         失效时间，资源包到期时间，格式UTC。
 
@@ -324,7 +324,7 @@ class FreeResourcePackageV3:
 
     @property
     def status(self):
-        """Gets the status of this FreeResourcePackageV3.
+        r"""Gets the status of this FreeResourcePackageV3.
 
         状态： 0：未生效1：生效中2：已用完3：已失效4：已退订
 
@@ -335,7 +335,7 @@ class FreeResourcePackageV3:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this FreeResourcePackageV3.
+        r"""Sets the status of this FreeResourcePackageV3.
 
         状态： 0：未生效1：生效中2：已用完3：已失效4：已退订
 
@@ -346,7 +346,7 @@ class FreeResourcePackageV3:
 
     @property
     def service_type_code(self):
-        """Gets the service_type_code of this FreeResourcePackageV3.
+        r"""Gets the service_type_code of this FreeResourcePackageV3.
 
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
@@ -357,7 +357,7 @@ class FreeResourcePackageV3:
 
     @service_type_code.setter
     def service_type_code(self, service_type_code):
-        """Sets the service_type_code of this FreeResourcePackageV3.
+        r"""Sets the service_type_code of this FreeResourcePackageV3.
 
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
@@ -368,7 +368,7 @@ class FreeResourcePackageV3:
 
     @property
     def service_type_name(self):
-        """Gets the service_type_name of this FreeResourcePackageV3.
+        r"""Gets the service_type_name of this FreeResourcePackageV3.
 
         云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
@@ -379,7 +379,7 @@ class FreeResourcePackageV3:
 
     @service_type_name.setter
     def service_type_name(self, service_type_name):
-        """Sets the service_type_name of this FreeResourcePackageV3.
+        r"""Sets the service_type_name of this FreeResourcePackageV3.
 
         云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
@@ -390,7 +390,7 @@ class FreeResourcePackageV3:
 
     @property
     def region_code(self):
-        """Gets the region_code of this FreeResourcePackageV3.
+        r"""Gets the region_code of this FreeResourcePackageV3.
 
         云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
@@ -401,7 +401,7 @@ class FreeResourcePackageV3:
 
     @region_code.setter
     def region_code(self, region_code):
-        """Sets the region_code of this FreeResourcePackageV3.
+        r"""Sets the region_code of this FreeResourcePackageV3.
 
         云服务区编码，例如：“cn-north-1”。具体请参见地区和终端节点对应云服务的“区域”列的值。
 
@@ -412,7 +412,7 @@ class FreeResourcePackageV3:
 
     @property
     def source_type(self):
-        """Gets the source_type of this FreeResourcePackageV3.
+        r"""Gets the source_type of this FreeResourcePackageV3.
 
         资源包的来源类型： 0：订单1：软开云赠送
 
@@ -423,7 +423,7 @@ class FreeResourcePackageV3:
 
     @source_type.setter
     def source_type(self, source_type):
-        """Sets the source_type of this FreeResourcePackageV3.
+        r"""Sets the source_type of this FreeResourcePackageV3.
 
         资源包的来源类型： 0：订单1：软开云赠送
 
@@ -434,7 +434,7 @@ class FreeResourcePackageV3:
 
     @property
     def bundle_type(self):
-        """Gets the bundle_type of this FreeResourcePackageV3.
+        r"""Gets the bundle_type of this FreeResourcePackageV3.
 
         套餐绑定类型： ATOMIC_PKG：原子套餐BUNDLE_PKG：组合套餐
 
@@ -445,7 +445,7 @@ class FreeResourcePackageV3:
 
     @bundle_type.setter
     def bundle_type(self, bundle_type):
-        """Sets the bundle_type of this FreeResourcePackageV3.
+        r"""Sets the bundle_type of this FreeResourcePackageV3.
 
         套餐绑定类型： ATOMIC_PKG：原子套餐BUNDLE_PKG：组合套餐
 
@@ -456,7 +456,7 @@ class FreeResourcePackageV3:
 
     @property
     def quota_reuse_mode(self):
-        """Gets the quota_reuse_mode of this FreeResourcePackageV3.
+        r"""Gets the quota_reuse_mode of this FreeResourcePackageV3.
 
         使用模式。 1：可重置表示购买的资源包能够按照一定的周期恢复使用量。例如购买一个1年的按需资源包，使用量是40G，可重置，重置周期为1个月，表示1年内每个月会给予40G的使用量。 2：不可重置表示购买的资源包的使用量不会恢复。例如购买一个1年的按需资源包，使用量是40G，不可重置，表示1年内一共给予40G的使用量。
 
@@ -467,7 +467,7 @@ class FreeResourcePackageV3:
 
     @quota_reuse_mode.setter
     def quota_reuse_mode(self, quota_reuse_mode):
-        """Sets the quota_reuse_mode of this FreeResourcePackageV3.
+        r"""Sets the quota_reuse_mode of this FreeResourcePackageV3.
 
         使用模式。 1：可重置表示购买的资源包能够按照一定的周期恢复使用量。例如购买一个1年的按需资源包，使用量是40G，可重置，重置周期为1个月，表示1年内每个月会给予40G的使用量。 2：不可重置表示购买的资源包的使用量不会恢复。例如购买一个1年的按需资源包，使用量是40G，不可重置，表示1年内一共给予40G的使用量。
 
@@ -478,7 +478,7 @@ class FreeResourcePackageV3:
 
     @property
     def free_resources(self):
-        """Gets the free_resources of this FreeResourcePackageV3.
+        r"""Gets the free_resources of this FreeResourcePackageV3.
 
         资源套餐内的资源项信息（资源项ID级的详情），具体参见表3。
 
@@ -489,7 +489,7 @@ class FreeResourcePackageV3:
 
     @free_resources.setter
     def free_resources(self, free_resources):
-        """Sets the free_resources of this FreeResourcePackageV3.
+        r"""Sets the free_resources of this FreeResourcePackageV3.
 
         资源套餐内的资源项信息（资源项ID级的详情），具体参见表3。
 

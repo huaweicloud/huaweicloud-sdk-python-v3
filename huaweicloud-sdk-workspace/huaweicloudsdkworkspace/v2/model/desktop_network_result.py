@@ -31,7 +31,7 @@ class DesktopNetworkResult:
     }
 
     def __init__(self, computer_name=None, computer_id=None, computer_ip=None, network_infos=None):
-        """DesktopNetworkResult
+        r"""DesktopNetworkResult
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class DesktopNetworkResult:
 
     @property
     def computer_name(self):
-        """Gets the computer_name of this DesktopNetworkResult.
+        r"""Gets the computer_name of this DesktopNetworkResult.
 
         桌面名称
 
@@ -75,7 +75,7 @@ class DesktopNetworkResult:
 
     @computer_name.setter
     def computer_name(self, computer_name):
-        """Sets the computer_name of this DesktopNetworkResult.
+        r"""Sets the computer_name of this DesktopNetworkResult.
 
         桌面名称
 
@@ -86,7 +86,7 @@ class DesktopNetworkResult:
 
     @property
     def computer_id(self):
-        """Gets the computer_id of this DesktopNetworkResult.
+        r"""Gets the computer_id of this DesktopNetworkResult.
 
         桌面ID
 
@@ -97,7 +97,7 @@ class DesktopNetworkResult:
 
     @computer_id.setter
     def computer_id(self, computer_id):
-        """Sets the computer_id of this DesktopNetworkResult.
+        r"""Sets the computer_id of this DesktopNetworkResult.
 
         桌面ID
 
@@ -108,7 +108,7 @@ class DesktopNetworkResult:
 
     @property
     def computer_ip(self):
-        """Gets the computer_ip of this DesktopNetworkResult.
+        r"""Gets the computer_ip of this DesktopNetworkResult.
 
         桌面IP
 
@@ -119,7 +119,7 @@ class DesktopNetworkResult:
 
     @computer_ip.setter
     def computer_ip(self, computer_ip):
-        """Sets the computer_ip of this DesktopNetworkResult.
+        r"""Sets the computer_ip of this DesktopNetworkResult.
 
         桌面IP
 
@@ -130,7 +130,7 @@ class DesktopNetworkResult:
 
     @property
     def network_infos(self):
-        """Gets the network_infos of this DesktopNetworkResult.
+        r"""Gets the network_infos of this DesktopNetworkResult.
 
         桌面网络信息
 
@@ -141,7 +141,7 @@ class DesktopNetworkResult:
 
     @network_infos.setter
     def network_infos(self, network_infos):
-        """Sets the network_infos of this DesktopNetworkResult.
+        r"""Sets the network_infos of this DesktopNetworkResult.
 
         桌面网络信息
 

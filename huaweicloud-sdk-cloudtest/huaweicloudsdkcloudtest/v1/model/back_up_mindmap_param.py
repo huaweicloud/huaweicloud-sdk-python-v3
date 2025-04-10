@@ -29,7 +29,7 @@ class BackUpMindmapParam:
     }
 
     def __init__(self, bak_name=None, memo=None, mindmap_id=None):
-        """BackUpMindmapParam
+        r"""BackUpMindmapParam
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class BackUpMindmapParam:
 
     @property
     def bak_name(self):
-        """Gets the bak_name of this BackUpMindmapParam.
+        r"""Gets the bak_name of this BackUpMindmapParam.
 
         备份名称
 
@@ -68,7 +68,7 @@ class BackUpMindmapParam:
 
     @bak_name.setter
     def bak_name(self, bak_name):
-        """Sets the bak_name of this BackUpMindmapParam.
+        r"""Sets the bak_name of this BackUpMindmapParam.
 
         备份名称
 
@@ -79,7 +79,7 @@ class BackUpMindmapParam:
 
     @property
     def memo(self):
-        """Gets the memo of this BackUpMindmapParam.
+        r"""Gets the memo of this BackUpMindmapParam.
 
         备注
 
@@ -90,7 +90,7 @@ class BackUpMindmapParam:
 
     @memo.setter
     def memo(self, memo):
-        """Sets the memo of this BackUpMindmapParam.
+        r"""Sets the memo of this BackUpMindmapParam.
 
         备注
 
@@ -101,7 +101,7 @@ class BackUpMindmapParam:
 
     @property
     def mindmap_id(self):
-        """Gets the mindmap_id of this BackUpMindmapParam.
+        r"""Gets the mindmap_id of this BackUpMindmapParam.
 
         脑图id
 
@@ -112,7 +112,7 @@ class BackUpMindmapParam:
 
     @mindmap_id.setter
     def mindmap_id(self, mindmap_id):
-        """Sets the mindmap_id of this BackUpMindmapParam.
+        r"""Sets the mindmap_id of this BackUpMindmapParam.
 
         脑图id
 

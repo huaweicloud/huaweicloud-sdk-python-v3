@@ -39,7 +39,7 @@ class AccessPolicyInput:
     }
 
     def __init__(self, principal_list=None, resource=None, effect=None, permissions=None, grant_able_permissions=None, conditions=None, data_filter=None, data_mask=None):
-        """AccessPolicyInput
+        r"""AccessPolicyInput
 
         The model defined in huaweicloud sdk
 
@@ -88,7 +88,7 @@ class AccessPolicyInput:
 
     @property
     def principal_list(self):
-        """Gets the principal_list of this AccessPolicyInput.
+        r"""Gets the principal_list of this AccessPolicyInput.
 
         主体信息
 
@@ -99,7 +99,7 @@ class AccessPolicyInput:
 
     @principal_list.setter
     def principal_list(self, principal_list):
-        """Sets the principal_list of this AccessPolicyInput.
+        r"""Sets the principal_list of this AccessPolicyInput.
 
         主体信息
 
@@ -110,7 +110,7 @@ class AccessPolicyInput:
 
     @property
     def resource(self):
-        """Gets the resource of this AccessPolicyInput.
+        r"""Gets the resource of this AccessPolicyInput.
 
         :return: The resource of this AccessPolicyInput.
         :rtype: :class:`huaweicloudsdklakeformation.v1.ResourceInfo`
@@ -119,7 +119,7 @@ class AccessPolicyInput:
 
     @resource.setter
     def resource(self, resource):
-        """Sets the resource of this AccessPolicyInput.
+        r"""Sets the resource of this AccessPolicyInput.
 
         :param resource: The resource of this AccessPolicyInput.
         :type resource: :class:`huaweicloudsdklakeformation.v1.ResourceInfo`
@@ -128,7 +128,7 @@ class AccessPolicyInput:
 
     @property
     def effect(self):
-        """Gets the effect of this AccessPolicyInput.
+        r"""Gets the effect of this AccessPolicyInput.
 
         拒绝/允许
 
@@ -139,7 +139,7 @@ class AccessPolicyInput:
 
     @effect.setter
     def effect(self, effect):
-        """Sets the effect of this AccessPolicyInput.
+        r"""Sets the effect of this AccessPolicyInput.
 
         拒绝/允许
 
@@ -150,7 +150,7 @@ class AccessPolicyInput:
 
     @property
     def permissions(self):
-        """Gets the permissions of this AccessPolicyInput.
+        r"""Gets the permissions of this AccessPolicyInput.
 
         权限列表
 
@@ -161,7 +161,7 @@ class AccessPolicyInput:
 
     @permissions.setter
     def permissions(self, permissions):
-        """Sets the permissions of this AccessPolicyInput.
+        r"""Sets the permissions of this AccessPolicyInput.
 
         权限列表
 
@@ -172,7 +172,7 @@ class AccessPolicyInput:
 
     @property
     def grant_able_permissions(self):
-        """Gets the grant_able_permissions of this AccessPolicyInput.
+        r"""Gets the grant_able_permissions of this AccessPolicyInput.
 
         可传递的权限列表
 
@@ -183,7 +183,7 @@ class AccessPolicyInput:
 
     @grant_able_permissions.setter
     def grant_able_permissions(self, grant_able_permissions):
-        """Sets the grant_able_permissions of this AccessPolicyInput.
+        r"""Sets the grant_able_permissions of this AccessPolicyInput.
 
         可传递的权限列表
 
@@ -194,7 +194,7 @@ class AccessPolicyInput:
 
     @property
     def conditions(self):
-        """Gets the conditions of this AccessPolicyInput.
+        r"""Gets the conditions of this AccessPolicyInput.
 
         条件
 
@@ -205,7 +205,7 @@ class AccessPolicyInput:
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this AccessPolicyInput.
+        r"""Sets the conditions of this AccessPolicyInput.
 
         条件
 
@@ -216,7 +216,7 @@ class AccessPolicyInput:
 
     @property
     def data_filter(self):
-        """Gets the data_filter of this AccessPolicyInput.
+        r"""Gets the data_filter of this AccessPolicyInput.
 
         行过滤
 
@@ -227,7 +227,7 @@ class AccessPolicyInput:
 
     @data_filter.setter
     def data_filter(self, data_filter):
-        """Sets the data_filter of this AccessPolicyInput.
+        r"""Sets the data_filter of this AccessPolicyInput.
 
         行过滤
 
@@ -238,7 +238,7 @@ class AccessPolicyInput:
 
     @property
     def data_mask(self):
-        """Gets the data_mask of this AccessPolicyInput.
+        r"""Gets the data_mask of this AccessPolicyInput.
 
         列掩码
 
@@ -249,7 +249,7 @@ class AccessPolicyInput:
 
     @data_mask.setter
     def data_mask(self, data_mask):
-        """Sets the data_mask of this AccessPolicyInput.
+        r"""Sets the data_mask of this AccessPolicyInput.
 
         列掩码
 

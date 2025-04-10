@@ -26,7 +26,7 @@ class ShowDiskUsageResponse(SdkResponse):
     }
 
     def __init__(self, volumes=None):
-        """ShowDiskUsageResponse
+        r"""ShowDiskUsageResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowDiskUsageResponse(SdkResponse):
 
     @property
     def volumes(self):
-        """Gets the volumes of this ShowDiskUsageResponse.
+        r"""Gets the volumes of this ShowDiskUsageResponse.
 
         磁盘信息列表
 
@@ -55,7 +55,7 @@ class ShowDiskUsageResponse(SdkResponse):
 
     @volumes.setter
     def volumes(self, volumes):
-        """Sets the volumes of this ShowDiskUsageResponse.
+        r"""Sets the volumes of this ShowDiskUsageResponse.
 
         磁盘信息列表
 

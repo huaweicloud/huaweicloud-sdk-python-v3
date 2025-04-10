@@ -27,7 +27,7 @@ class DeleteSessionRequest:
     }
 
     def __init__(self, qabot_id=None, session_id=None):
-        """DeleteSessionRequest
+        r"""DeleteSessionRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteSessionRequest:
 
     @property
     def qabot_id(self):
-        """Gets the qabot_id of this DeleteSessionRequest.
+        r"""Gets the qabot_id of this DeleteSessionRequest.
 
         机器人标识符。
 
@@ -59,7 +59,7 @@ class DeleteSessionRequest:
 
     @qabot_id.setter
     def qabot_id(self, qabot_id):
-        """Sets the qabot_id of this DeleteSessionRequest.
+        r"""Sets the qabot_id of this DeleteSessionRequest.
 
         机器人标识符。
 
@@ -70,7 +70,7 @@ class DeleteSessionRequest:
 
     @property
     def session_id(self):
-        """Gets the session_id of this DeleteSessionRequest.
+        r"""Gets the session_id of this DeleteSessionRequest.
 
         会话标识符。
 
@@ -81,7 +81,7 @@ class DeleteSessionRequest:
 
     @session_id.setter
     def session_id(self, session_id):
-        """Sets the session_id of this DeleteSessionRequest.
+        r"""Sets the session_id of this DeleteSessionRequest.
 
         会话标识符。
 

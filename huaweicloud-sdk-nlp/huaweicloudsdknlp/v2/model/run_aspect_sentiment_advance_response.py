@@ -36,7 +36,7 @@ class RunAspectSentimentAdvanceResponse(SdkResponse):
     }
 
     def __init__(self, content=None, label=None, confidence=None, aspect_opinions=None, error_code=None, error_msg=None):
-        """RunAspectSentimentAdvanceResponse
+        r"""RunAspectSentimentAdvanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class RunAspectSentimentAdvanceResponse(SdkResponse):
 
     @property
     def content(self):
-        """Gets the content of this RunAspectSentimentAdvanceResponse.
+        r"""Gets the content of this RunAspectSentimentAdvanceResponse.
 
         待分析文本
 
@@ -90,7 +90,7 @@ class RunAspectSentimentAdvanceResponse(SdkResponse):
 
     @content.setter
     def content(self, content):
-        """Sets the content of this RunAspectSentimentAdvanceResponse.
+        r"""Sets the content of this RunAspectSentimentAdvanceResponse.
 
         待分析文本
 
@@ -101,7 +101,7 @@ class RunAspectSentimentAdvanceResponse(SdkResponse):
 
     @property
     def label(self):
-        """Gets the label of this RunAspectSentimentAdvanceResponse.
+        r"""Gets the label of this RunAspectSentimentAdvanceResponse.
 
         该文本的整体情感标签，取值如下： 0  负向 1  正向
 
@@ -112,7 +112,7 @@ class RunAspectSentimentAdvanceResponse(SdkResponse):
 
     @label.setter
     def label(self, label):
-        """Sets the label of this RunAspectSentimentAdvanceResponse.
+        r"""Sets the label of this RunAspectSentimentAdvanceResponse.
 
         该文本的整体情感标签，取值如下： 0  负向 1  正向
 
@@ -123,7 +123,7 @@ class RunAspectSentimentAdvanceResponse(SdkResponse):
 
     @property
     def confidence(self):
-        """Gets the confidence of this RunAspectSentimentAdvanceResponse.
+        r"""Gets the confidence of this RunAspectSentimentAdvanceResponse.
 
         该文本整体情感label的置信度,小数点精确到3位。
 
@@ -134,7 +134,7 @@ class RunAspectSentimentAdvanceResponse(SdkResponse):
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this RunAspectSentimentAdvanceResponse.
+        r"""Sets the confidence of this RunAspectSentimentAdvanceResponse.
 
         该文本整体情感label的置信度,小数点精确到3位。
 
@@ -145,7 +145,7 @@ class RunAspectSentimentAdvanceResponse(SdkResponse):
 
     @property
     def aspect_opinions(self):
-        """Gets the aspect_opinions of this RunAspectSentimentAdvanceResponse.
+        r"""Gets the aspect_opinions of this RunAspectSentimentAdvanceResponse.
 
         属性情感挖掘列表
 
@@ -156,7 +156,7 @@ class RunAspectSentimentAdvanceResponse(SdkResponse):
 
     @aspect_opinions.setter
     def aspect_opinions(self, aspect_opinions):
-        """Sets the aspect_opinions of this RunAspectSentimentAdvanceResponse.
+        r"""Sets the aspect_opinions of this RunAspectSentimentAdvanceResponse.
 
         属性情感挖掘列表
 
@@ -167,7 +167,7 @@ class RunAspectSentimentAdvanceResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this RunAspectSentimentAdvanceResponse.
+        r"""Gets the error_code of this RunAspectSentimentAdvanceResponse.
 
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
@@ -178,7 +178,7 @@ class RunAspectSentimentAdvanceResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this RunAspectSentimentAdvanceResponse.
+        r"""Sets the error_code of this RunAspectSentimentAdvanceResponse.
 
         调用失败时的错误码，具体请参见错误码。调用成功时无此字段。
 
@@ -189,7 +189,7 @@ class RunAspectSentimentAdvanceResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this RunAspectSentimentAdvanceResponse.
+        r"""Gets the error_msg of this RunAspectSentimentAdvanceResponse.
 
         调用失败时的错误信息。调用成功时无此字段。
 
@@ -200,7 +200,7 @@ class RunAspectSentimentAdvanceResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this RunAspectSentimentAdvanceResponse.
+        r"""Sets the error_msg of this RunAspectSentimentAdvanceResponse.
 
         调用失败时的错误信息。调用成功时无此字段。
 

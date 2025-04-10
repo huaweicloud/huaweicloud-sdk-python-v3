@@ -61,7 +61,7 @@ class TrafficEventDTO:
     }
 
     def __init__(self, status=None, event_id=None, event_source_type=None, event_source_id=None, event_class=None, event_type=None, area_code=None, event_level=None, event_params=None, event_position=None, event_description=None, reference_paths=None, event_position_name=None, start_time=None, end_time=None, note=None, event_confidence=None, created_time=None, last_modified_time=None):
-        """TrafficEventDTO
+        r"""TrafficEventDTO
 
         The model defined in huaweicloud sdk
 
@@ -169,7 +169,7 @@ class TrafficEventDTO:
 
     @property
     def status(self):
-        """Gets the status of this TrafficEventDTO.
+        r"""Gets the status of this TrafficEventDTO.
 
          **参数说明**：事件状态。  **取值范围**：  - Invalid：为过期事件，事件结束时间（end_time）在当前时间之前。  - Active：为活动事件，事件开始时间（start_time）在当前时间之前，并且事件结束时间（end_time）在当前时间之后。  - Future：为未来事件，事件开始时间（start_time）在当前时间之前。 
 
@@ -180,7 +180,7 @@ class TrafficEventDTO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this TrafficEventDTO.
+        r"""Sets the status of this TrafficEventDTO.
 
          **参数说明**：事件状态。  **取值范围**：  - Invalid：为过期事件，事件结束时间（end_time）在当前时间之前。  - Active：为活动事件，事件开始时间（start_time）在当前时间之前，并且事件结束时间（end_time）在当前时间之后。  - Future：为未来事件，事件开始时间（start_time）在当前时间之前。 
 
@@ -191,7 +191,7 @@ class TrafficEventDTO:
 
     @property
     def event_id(self):
-        """Gets the event_id of this TrafficEventDTO.
+        r"""Gets the event_id of this TrafficEventDTO.
 
         **参数说明**：事件ID，创建事件后获得。方法参见 [新增交通事件](https://support.huaweicloud.com/api-v2x/v2x_04_0048.html)。
 
@@ -202,7 +202,7 @@ class TrafficEventDTO:
 
     @event_id.setter
     def event_id(self, event_id):
-        """Sets the event_id of this TrafficEventDTO.
+        r"""Sets the event_id of this TrafficEventDTO.
 
         **参数说明**：事件ID，创建事件后获得。方法参见 [新增交通事件](https://support.huaweicloud.com/api-v2x/v2x_04_0048.html)。
 
@@ -213,7 +213,7 @@ class TrafficEventDTO:
 
     @property
     def event_source_type(self):
-        """Gets the event_source_type of this TrafficEventDTO.
+        r"""Gets the event_source_type of this TrafficEventDTO.
 
          **参数说明**：事件来源类型列表,支持事件来源。  **取值范围**：  - unknown：未知数据  - police：警方数据  - government：政府数据  - meteorological：气象数据  - internet：互联网数据  - detection：检测器检测到的数据  - v2xServer：平台上报数据  - rsu：RSU上报数据  - obu：车载终端上报数据 
 
@@ -224,7 +224,7 @@ class TrafficEventDTO:
 
     @event_source_type.setter
     def event_source_type(self, event_source_type):
-        """Sets the event_source_type of this TrafficEventDTO.
+        r"""Sets the event_source_type of this TrafficEventDTO.
 
          **参数说明**：事件来源类型列表,支持事件来源。  **取值范围**：  - unknown：未知数据  - police：警方数据  - government：政府数据  - meteorological：气象数据  - internet：互联网数据  - detection：检测器检测到的数据  - v2xServer：平台上报数据  - rsu：RSU上报数据  - obu：车载终端上报数据 
 
@@ -235,7 +235,7 @@ class TrafficEventDTO:
 
     @property
     def event_source_id(self):
-        """Gets the event_source_id of this TrafficEventDTO.
+        r"""Gets the event_source_id of this TrafficEventDTO.
 
         **参数说明**：事件来源的ID，由用户自定义。
 
@@ -246,7 +246,7 @@ class TrafficEventDTO:
 
     @event_source_id.setter
     def event_source_id(self, event_source_id):
-        """Sets the event_source_id of this TrafficEventDTO.
+        r"""Sets the event_source_id of this TrafficEventDTO.
 
         **参数说明**：事件来源的ID，由用户自定义。
 
@@ -257,7 +257,7 @@ class TrafficEventDTO:
 
     @property
     def event_class(self):
-        """Gets the event_class of this TrafficEventDTO.
+        r"""Gets the event_class of this TrafficEventDTO.
 
         **参数说明**：事件类型，参照附录[《国标交通事件及标志列表》](https://support.huaweicloud.com/api-v2x/v2x_04_0101.html)文件。当填写event_type时，event_class为必选。
 
@@ -268,7 +268,7 @@ class TrafficEventDTO:
 
     @event_class.setter
     def event_class(self, event_class):
-        """Sets the event_class of this TrafficEventDTO.
+        r"""Sets the event_class of this TrafficEventDTO.
 
         **参数说明**：事件类型，参照附录[《国标交通事件及标志列表》](https://support.huaweicloud.com/api-v2x/v2x_04_0101.html)文件。当填写event_type时，event_class为必选。
 
@@ -279,7 +279,7 @@ class TrafficEventDTO:
 
     @property
     def event_type(self):
-        """Gets the event_type of this TrafficEventDTO.
+        r"""Gets the event_type of this TrafficEventDTO.
 
         **参数说明**：事件类型，参照附录[《国标交通事件及标志列表》](https://support.huaweicloud.com/api-v2x/v2x_04_0101.html)文件。
 
@@ -290,7 +290,7 @@ class TrafficEventDTO:
 
     @event_type.setter
     def event_type(self, event_type):
-        """Sets the event_type of this TrafficEventDTO.
+        r"""Sets the event_type of this TrafficEventDTO.
 
         **参数说明**：事件类型，参照附录[《国标交通事件及标志列表》](https://support.huaweicloud.com/api-v2x/v2x_04_0101.html)文件。
 
@@ -301,7 +301,7 @@ class TrafficEventDTO:
 
     @property
     def area_code(self):
-        """Gets the area_code of this TrafficEventDTO.
+        r"""Gets the area_code of this TrafficEventDTO.
 
         **参数说明**：区域码，参考[区域码查询](http://xzqh.mca.gov.cn/map)。
 
@@ -312,7 +312,7 @@ class TrafficEventDTO:
 
     @area_code.setter
     def area_code(self, area_code):
-        """Sets the area_code of this TrafficEventDTO.
+        r"""Sets the area_code of this TrafficEventDTO.
 
         **参数说明**：区域码，参考[区域码查询](http://xzqh.mca.gov.cn/map)。
 
@@ -323,7 +323,7 @@ class TrafficEventDTO:
 
     @property
     def event_level(self):
-        """Gets the event_level of this TrafficEventDTO.
+        r"""Gets the event_level of this TrafficEventDTO.
 
         **参数说明**：事件优先级，0-7越大优先级越高。
 
@@ -334,7 +334,7 @@ class TrafficEventDTO:
 
     @event_level.setter
     def event_level(self, event_level):
-        """Sets the event_level of this TrafficEventDTO.
+        r"""Sets the event_level of this TrafficEventDTO.
 
         **参数说明**：事件优先级，0-7越大优先级越高。
 
@@ -345,7 +345,7 @@ class TrafficEventDTO:
 
     @property
     def event_params(self):
-        """Gets the event_params of this TrafficEventDTO.
+        r"""Gets the event_params of this TrafficEventDTO.
 
          **参数说明**：事件附加信息。  事件类型为如下数据时生效：  - 道路最高限：必选，设置最高限速（整数值）km/h  - 道路最低限速：必选，设置最低限速（整数值）km/h  - 建议速度：必选，建议速度（整数值）km/h  - 急弯路：可选，建议最高限速（整数值）km/h  - 雨：可选，请输入1~4：1-细雨，2-小雨，3-中雨，4-大雨  - 雪：可选，请输入1~4：1-小雪，2-中雪，3-大雪，4-暴雪  - 风：可选，设置风速值（整数值）km/h  - 雾：可选，请输入1或2：1-薄雾，2-浓雾  - 路面湿滑：可选，设置湿滑系数（0~1）  - 路面结冰：可选，请设置冰层厚度（整数值）mm  建议填写方式为：user_defined_param1: \"xx\" 
 
@@ -356,7 +356,7 @@ class TrafficEventDTO:
 
     @event_params.setter
     def event_params(self, event_params):
-        """Sets the event_params of this TrafficEventDTO.
+        r"""Sets the event_params of this TrafficEventDTO.
 
          **参数说明**：事件附加信息。  事件类型为如下数据时生效：  - 道路最高限：必选，设置最高限速（整数值）km/h  - 道路最低限速：必选，设置最低限速（整数值）km/h  - 建议速度：必选，建议速度（整数值）km/h  - 急弯路：可选，建议最高限速（整数值）km/h  - 雨：可选，请输入1~4：1-细雨，2-小雨，3-中雨，4-大雨  - 雪：可选，请输入1~4：1-小雪，2-中雪，3-大雪，4-暴雪  - 风：可选，设置风速值（整数值）km/h  - 雾：可选，请输入1或2：1-薄雾，2-浓雾  - 路面湿滑：可选，设置湿滑系数（0~1）  - 路面结冰：可选，请设置冰层厚度（整数值）mm  建议填写方式为：user_defined_param1: \"xx\" 
 
@@ -367,7 +367,7 @@ class TrafficEventDTO:
 
     @property
     def event_position(self):
-        """Gets the event_position of this TrafficEventDTO.
+        r"""Gets the event_position of this TrafficEventDTO.
 
         :return: The event_position of this TrafficEventDTO.
         :rtype: :class:`huaweicloudsdkdris.v1.EventLocation`
@@ -376,7 +376,7 @@ class TrafficEventDTO:
 
     @event_position.setter
     def event_position(self, event_position):
-        """Sets the event_position of this TrafficEventDTO.
+        r"""Sets the event_position of this TrafficEventDTO.
 
         :param event_position: The event_position of this TrafficEventDTO.
         :type event_position: :class:`huaweicloudsdkdris.v1.EventLocation`
@@ -385,7 +385,7 @@ class TrafficEventDTO:
 
     @property
     def event_description(self):
-        """Gets the event_description of this TrafficEventDTO.
+        r"""Gets the event_description of this TrafficEventDTO.
 
         **参数说明**：事件描述。支持英文字母、数字、下划线、斜杠、中文及中文常用字符：。 ？ ！ ， 、 ； ： “ ”
 
@@ -396,7 +396,7 @@ class TrafficEventDTO:
 
     @event_description.setter
     def event_description(self, event_description):
-        """Sets the event_description of this TrafficEventDTO.
+        r"""Sets the event_description of this TrafficEventDTO.
 
         **参数说明**：事件描述。支持英文字母、数字、下划线、斜杠、中文及中文常用字符：。 ？ ！ ， 、 ； ： “ ”
 
@@ -407,7 +407,7 @@ class TrafficEventDTO:
 
     @property
     def reference_paths(self):
-        """Gets the reference_paths of this TrafficEventDTO.
+        r"""Gets the reference_paths of this TrafficEventDTO.
 
         **参数说明**：事件生效的关联路径，至少需写入起始和终止位置的两个坐标点。
 
@@ -418,7 +418,7 @@ class TrafficEventDTO:
 
     @reference_paths.setter
     def reference_paths(self, reference_paths):
-        """Sets the reference_paths of this TrafficEventDTO.
+        r"""Sets the reference_paths of this TrafficEventDTO.
 
         **参数说明**：事件生效的关联路径，至少需写入起始和终止位置的两个坐标点。
 
@@ -429,7 +429,7 @@ class TrafficEventDTO:
 
     @property
     def event_position_name(self):
-        """Gets the event_position_name of this TrafficEventDTO.
+        r"""Gets the event_position_name of this TrafficEventDTO.
 
         **参数说明**：事件所在位置。
 
@@ -440,7 +440,7 @@ class TrafficEventDTO:
 
     @event_position_name.setter
     def event_position_name(self, event_position_name):
-        """Sets the event_position_name of this TrafficEventDTO.
+        r"""Sets the event_position_name of this TrafficEventDTO.
 
         **参数说明**：事件所在位置。
 
@@ -451,7 +451,7 @@ class TrafficEventDTO:
 
     @property
     def start_time(self):
-        """Gets the start_time of this TrafficEventDTO.
+        r"""Gets the start_time of this TrafficEventDTO.
 
         **参数说明**：开始时间。  格式：yyyy-MM-dd''T''HH:mm:ss''Z''。  例如 2020-09-01T01:37:01Z。 
 
@@ -462,7 +462,7 @@ class TrafficEventDTO:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this TrafficEventDTO.
+        r"""Sets the start_time of this TrafficEventDTO.
 
         **参数说明**：开始时间。  格式：yyyy-MM-dd''T''HH:mm:ss''Z''。  例如 2020-09-01T01:37:01Z。 
 
@@ -473,7 +473,7 @@ class TrafficEventDTO:
 
     @property
     def end_time(self):
-        """Gets the end_time of this TrafficEventDTO.
+        r"""Gets the end_time of this TrafficEventDTO.
 
         **参数说明**：结束时间。  格式：yyyy-MM-dd''T''HH:mm:ss''Z''。  例如 2020-09-01T01:37:01Z。 
 
@@ -484,7 +484,7 @@ class TrafficEventDTO:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this TrafficEventDTO.
+        r"""Sets the end_time of this TrafficEventDTO.
 
         **参数说明**：结束时间。  格式：yyyy-MM-dd''T''HH:mm:ss''Z''。  例如 2020-09-01T01:37:01Z。 
 
@@ -495,7 +495,7 @@ class TrafficEventDTO:
 
     @property
     def note(self):
-        """Gets the note of this TrafficEventDTO.
+        r"""Gets the note of this TrafficEventDTO.
 
         **参数说明**：备注。
 
@@ -506,7 +506,7 @@ class TrafficEventDTO:
 
     @note.setter
     def note(self, note):
-        """Sets the note of this TrafficEventDTO.
+        r"""Sets the note of this TrafficEventDTO.
 
         **参数说明**：备注。
 
@@ -517,7 +517,7 @@ class TrafficEventDTO:
 
     @property
     def event_confidence(self):
-        """Gets the event_confidence of this TrafficEventDTO.
+        r"""Gets the event_confidence of this TrafficEventDTO.
 
         **参数说明**：事件可信度。
 
@@ -528,7 +528,7 @@ class TrafficEventDTO:
 
     @event_confidence.setter
     def event_confidence(self, event_confidence):
-        """Sets the event_confidence of this TrafficEventDTO.
+        r"""Sets the event_confidence of this TrafficEventDTO.
 
         **参数说明**：事件可信度。
 
@@ -539,7 +539,7 @@ class TrafficEventDTO:
 
     @property
     def created_time(self):
-        """Gets the created_time of this TrafficEventDTO.
+        r"""Gets the created_time of this TrafficEventDTO.
 
         '**参数说明**：创建时间。  格式：yyyy-MM-dd''T''HH:mm:ss''Z''。  例如 2020-09-01T01:37:01Z。 
 
@@ -550,7 +550,7 @@ class TrafficEventDTO:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this TrafficEventDTO.
+        r"""Sets the created_time of this TrafficEventDTO.
 
         '**参数说明**：创建时间。  格式：yyyy-MM-dd''T''HH:mm:ss''Z''。  例如 2020-09-01T01:37:01Z。 
 
@@ -561,7 +561,7 @@ class TrafficEventDTO:
 
     @property
     def last_modified_time(self):
-        """Gets the last_modified_time of this TrafficEventDTO.
+        r"""Gets the last_modified_time of this TrafficEventDTO.
 
         **参数说明**：最后修改的时间。  格式：yyyy-MM-dd''T''HH:mm:ss''Z''。  例如 2020-09-01T01:37:01Z。 
 
@@ -572,7 +572,7 @@ class TrafficEventDTO:
 
     @last_modified_time.setter
     def last_modified_time(self, last_modified_time):
-        """Sets the last_modified_time of this TrafficEventDTO.
+        r"""Sets the last_modified_time of this TrafficEventDTO.
 
         **参数说明**：最后修改的时间。  格式：yyyy-MM-dd''T''HH:mm:ss''Z''。  例如 2020-09-01T01:37:01Z。 
 

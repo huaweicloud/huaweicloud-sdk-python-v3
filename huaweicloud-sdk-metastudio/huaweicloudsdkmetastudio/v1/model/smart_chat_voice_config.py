@@ -37,7 +37,7 @@ class SmartChatVoiceConfig:
     }
 
     def __init__(self, voice_asset_id=None, speed=None, pitch=None, volume=None, provider=None, language=None, language_desc=None):
-        """SmartChatVoiceConfig
+        r"""SmartChatVoiceConfig
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class SmartChatVoiceConfig:
 
     @property
     def voice_asset_id(self):
-        """Gets the voice_asset_id of this SmartChatVoiceConfig.
+        r"""Gets the voice_asset_id of this SmartChatVoiceConfig.
 
         语音合成特征字符串
 
@@ -96,7 +96,7 @@ class SmartChatVoiceConfig:
 
     @voice_asset_id.setter
     def voice_asset_id(self, voice_asset_id):
-        """Sets the voice_asset_id of this SmartChatVoiceConfig.
+        r"""Sets the voice_asset_id of this SmartChatVoiceConfig.
 
         语音合成特征字符串
 
@@ -107,7 +107,7 @@ class SmartChatVoiceConfig:
 
     @property
     def speed(self):
-        """Gets the speed of this SmartChatVoiceConfig.
+        r"""Gets the speed of this SmartChatVoiceConfig.
 
         语速。默认值100，最小值50，最大值200。 > 当取值为“100”时，表示一个成年人正常的语速，约为250字/分钟。
 
@@ -118,7 +118,7 @@ class SmartChatVoiceConfig:
 
     @speed.setter
     def speed(self, speed):
-        """Sets the speed of this SmartChatVoiceConfig.
+        r"""Sets the speed of this SmartChatVoiceConfig.
 
         语速。默认值100，最小值50，最大值200。 > 当取值为“100”时，表示一个成年人正常的语速，约为250字/分钟。
 
@@ -129,7 +129,7 @@ class SmartChatVoiceConfig:
 
     @property
     def pitch(self):
-        """Gets the pitch of this SmartChatVoiceConfig.
+        r"""Gets the pitch of this SmartChatVoiceConfig.
 
         音高。默认值100，最小值50，最大值200。
 
@@ -140,7 +140,7 @@ class SmartChatVoiceConfig:
 
     @pitch.setter
     def pitch(self, pitch):
-        """Sets the pitch of this SmartChatVoiceConfig.
+        r"""Sets the pitch of this SmartChatVoiceConfig.
 
         音高。默认值100，最小值50，最大值200。
 
@@ -151,7 +151,7 @@ class SmartChatVoiceConfig:
 
     @property
     def volume(self):
-        """Gets the volume of this SmartChatVoiceConfig.
+        r"""Gets the volume of this SmartChatVoiceConfig.
 
         音量。默认值140，最小值90，最大值240。
 
@@ -162,7 +162,7 @@ class SmartChatVoiceConfig:
 
     @volume.setter
     def volume(self, volume):
-        """Sets the volume of this SmartChatVoiceConfig.
+        r"""Sets the volume of this SmartChatVoiceConfig.
 
         音量。默认值140，最小值90，最大值240。
 
@@ -173,7 +173,7 @@ class SmartChatVoiceConfig:
 
     @property
     def provider(self):
-        """Gets the provider of this SmartChatVoiceConfig.
+        r"""Gets the provider of this SmartChatVoiceConfig.
 
         第三方TTS供应商类型。 * XIMALAYA：喜马拉雅TTS * HUAWEI_EI：EI TTS * MOBVOI：出门问问TTS
 
@@ -184,7 +184,7 @@ class SmartChatVoiceConfig:
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this SmartChatVoiceConfig.
+        r"""Sets the provider of this SmartChatVoiceConfig.
 
         第三方TTS供应商类型。 * XIMALAYA：喜马拉雅TTS * HUAWEI_EI：EI TTS * MOBVOI：出门问问TTS
 
@@ -195,7 +195,7 @@ class SmartChatVoiceConfig:
 
     @property
     def language(self):
-        """Gets the language of this SmartChatVoiceConfig.
+        r"""Gets the language of this SmartChatVoiceConfig.
 
         语言类型。默认值CN。 * CN：中文。 * EN：英文。
 
@@ -206,7 +206,7 @@ class SmartChatVoiceConfig:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this SmartChatVoiceConfig.
+        r"""Sets the language of this SmartChatVoiceConfig.
 
         语言类型。默认值CN。 * CN：中文。 * EN：英文。
 
@@ -217,7 +217,7 @@ class SmartChatVoiceConfig:
 
     @property
     def language_desc(self):
-        """Gets the language_desc of this SmartChatVoiceConfig.
+        r"""Gets the language_desc of this SmartChatVoiceConfig.
 
         语言描述。
 
@@ -228,7 +228,7 @@ class SmartChatVoiceConfig:
 
     @language_desc.setter
     def language_desc(self, language_desc):
-        """Sets the language_desc of this SmartChatVoiceConfig.
+        r"""Sets the language_desc of this SmartChatVoiceConfig.
 
         语言描述。
 

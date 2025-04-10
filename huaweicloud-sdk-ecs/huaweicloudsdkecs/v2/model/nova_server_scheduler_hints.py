@@ -27,7 +27,7 @@ class NovaServerSchedulerHints:
     }
 
     def __init__(self, tenancy=None, dedicated_host_id=None):
-        """NovaServerSchedulerHints
+        r"""NovaServerSchedulerHints
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class NovaServerSchedulerHints:
 
     @property
     def tenancy(self):
-        """Gets the tenancy of this NovaServerSchedulerHints.
+        r"""Gets the tenancy of this NovaServerSchedulerHints.
 
         在指定的专属主机或者共享主机上创建弹性云服务器。 参数值为shared或者dedicated。
 
@@ -61,7 +61,7 @@ class NovaServerSchedulerHints:
 
     @tenancy.setter
     def tenancy(self, tenancy):
-        """Sets the tenancy of this NovaServerSchedulerHints.
+        r"""Sets the tenancy of this NovaServerSchedulerHints.
 
         在指定的专属主机或者共享主机上创建弹性云服务器。 参数值为shared或者dedicated。
 
@@ -72,7 +72,7 @@ class NovaServerSchedulerHints:
 
     @property
     def dedicated_host_id(self):
-        """Gets the dedicated_host_id of this NovaServerSchedulerHints.
+        r"""Gets the dedicated_host_id of this NovaServerSchedulerHints.
 
         专属主机ID。 此属性仅在tenancy值为dedicated时有效。
 
@@ -83,7 +83,7 @@ class NovaServerSchedulerHints:
 
     @dedicated_host_id.setter
     def dedicated_host_id(self, dedicated_host_id):
-        """Sets the dedicated_host_id of this NovaServerSchedulerHints.
+        r"""Sets the dedicated_host_id of this NovaServerSchedulerHints.
 
         专属主机ID。 此属性仅在tenancy值为dedicated时有效。
 

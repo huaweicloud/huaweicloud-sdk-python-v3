@@ -28,7 +28,7 @@ class UpdateAssetNameResponse(SdkResponse):
     }
 
     def __init__(self, msg=None, status=None):
-        """UpdateAssetNameResponse
+        r"""UpdateAssetNameResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateAssetNameResponse(SdkResponse):
 
     @property
     def msg(self):
-        """Gets the msg of this UpdateAssetNameResponse.
+        r"""Gets the msg of this UpdateAssetNameResponse.
 
         返回消息
 
@@ -62,7 +62,7 @@ class UpdateAssetNameResponse(SdkResponse):
 
     @msg.setter
     def msg(self, msg):
-        """Sets the msg of this UpdateAssetNameResponse.
+        r"""Sets the msg of this UpdateAssetNameResponse.
 
         返回消息
 
@@ -73,7 +73,7 @@ class UpdateAssetNameResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateAssetNameResponse.
+        r"""Gets the status of this UpdateAssetNameResponse.
 
         返回状态，如'200','400'
 
@@ -84,7 +84,7 @@ class UpdateAssetNameResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateAssetNameResponse.
+        r"""Sets the status of this UpdateAssetNameResponse.
 
         返回状态，如'200','400'
 

@@ -33,7 +33,7 @@ class InstanceNodesInfoInstanceNodes:
     }
 
     def __init__(self, id=None, name=None, role=None, status=None, type=None):
-        """InstanceNodesInfoInstanceNodes
+        r"""InstanceNodesInfoInstanceNodes
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class InstanceNodesInfoInstanceNodes:
 
     @property
     def id(self):
-        """Gets the id of this InstanceNodesInfoInstanceNodes.
+        r"""Gets the id of this InstanceNodesInfoInstanceNodes.
 
         节点ID
 
@@ -82,7 +82,7 @@ class InstanceNodesInfoInstanceNodes:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this InstanceNodesInfoInstanceNodes.
+        r"""Sets the id of this InstanceNodesInfoInstanceNodes.
 
         节点ID
 
@@ -93,7 +93,7 @@ class InstanceNodesInfoInstanceNodes:
 
     @property
     def name(self):
-        """Gets the name of this InstanceNodesInfoInstanceNodes.
+        r"""Gets the name of this InstanceNodesInfoInstanceNodes.
 
         节点名
 
@@ -104,7 +104,7 @@ class InstanceNodesInfoInstanceNodes:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this InstanceNodesInfoInstanceNodes.
+        r"""Sets the name of this InstanceNodesInfoInstanceNodes.
 
         节点名
 
@@ -115,7 +115,7 @@ class InstanceNodesInfoInstanceNodes:
 
     @property
     def role(self):
-        """Gets the role of this InstanceNodesInfoInstanceNodes.
+        r"""Gets the role of this InstanceNodesInfoInstanceNodes.
 
         节点角色
 
@@ -126,7 +126,7 @@ class InstanceNodesInfoInstanceNodes:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this InstanceNodesInfoInstanceNodes.
+        r"""Sets the role of this InstanceNodesInfoInstanceNodes.
 
         节点角色
 
@@ -137,7 +137,7 @@ class InstanceNodesInfoInstanceNodes:
 
     @property
     def status(self):
-        """Gets the status of this InstanceNodesInfoInstanceNodes.
+        r"""Gets the status of this InstanceNodesInfoInstanceNodes.
 
         节点状态
 
@@ -148,7 +148,7 @@ class InstanceNodesInfoInstanceNodes:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this InstanceNodesInfoInstanceNodes.
+        r"""Sets the status of this InstanceNodesInfoInstanceNodes.
 
         节点状态
 
@@ -159,7 +159,7 @@ class InstanceNodesInfoInstanceNodes:
 
     @property
     def type(self):
-        """Gets the type of this InstanceNodesInfoInstanceNodes.
+        r"""Gets the type of this InstanceNodesInfoInstanceNodes.
 
         节点类型
 
@@ -170,7 +170,7 @@ class InstanceNodesInfoInstanceNodes:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this InstanceNodesInfoInstanceNodes.
+        r"""Sets the type of this InstanceNodesInfoInstanceNodes.
 
         节点类型
 

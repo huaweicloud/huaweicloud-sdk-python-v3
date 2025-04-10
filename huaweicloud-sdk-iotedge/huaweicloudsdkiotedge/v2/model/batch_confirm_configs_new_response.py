@@ -26,7 +26,7 @@ class BatchConfirmConfigsNewResponse(SdkResponse):
     }
 
     def __init__(self, ids=None):
-        """BatchConfirmConfigsNewResponse
+        r"""BatchConfirmConfigsNewResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchConfirmConfigsNewResponse(SdkResponse):
 
     @property
     def ids(self):
-        """Gets the ids of this BatchConfirmConfigsNewResponse.
+        r"""Gets the ids of this BatchConfirmConfigsNewResponse.
 
         已确认的配置项id
 
@@ -55,7 +55,7 @@ class BatchConfirmConfigsNewResponse(SdkResponse):
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this BatchConfirmConfigsNewResponse.
+        r"""Sets the ids of this BatchConfirmConfigsNewResponse.
 
         已确认的配置项id
 

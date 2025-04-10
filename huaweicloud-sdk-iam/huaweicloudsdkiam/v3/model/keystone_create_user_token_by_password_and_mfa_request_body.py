@@ -25,7 +25,7 @@ class KeystoneCreateUserTokenByPasswordAndMfaRequestBody:
     }
 
     def __init__(self, auth=None):
-        """KeystoneCreateUserTokenByPasswordAndMfaRequestBody
+        r"""KeystoneCreateUserTokenByPasswordAndMfaRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class KeystoneCreateUserTokenByPasswordAndMfaRequestBody:
 
     @property
     def auth(self):
-        """Gets the auth of this KeystoneCreateUserTokenByPasswordAndMfaRequestBody.
+        r"""Gets the auth of this KeystoneCreateUserTokenByPasswordAndMfaRequestBody.
 
         :return: The auth of this KeystoneCreateUserTokenByPasswordAndMfaRequestBody.
         :rtype: :class:`huaweicloudsdkiam.v3.MfaAuth`
@@ -51,7 +51,7 @@ class KeystoneCreateUserTokenByPasswordAndMfaRequestBody:
 
     @auth.setter
     def auth(self, auth):
-        """Sets the auth of this KeystoneCreateUserTokenByPasswordAndMfaRequestBody.
+        r"""Sets the auth of this KeystoneCreateUserTokenByPasswordAndMfaRequestBody.
 
         :param auth: The auth of this KeystoneCreateUserTokenByPasswordAndMfaRequestBody.
         :type auth: :class:`huaweicloudsdkiam.v3.MfaAuth`

@@ -27,7 +27,7 @@ class EnlargeReplicasetNodeRequestBody:
     }
 
     def __init__(self, num=None, is_auto_pay=None):
-        """EnlargeReplicasetNodeRequestBody
+        r"""EnlargeReplicasetNodeRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class EnlargeReplicasetNodeRequestBody:
 
     @property
     def num(self):
-        """Gets the num of this EnlargeReplicasetNodeRequestBody.
+        r"""Gets the num of this EnlargeReplicasetNodeRequestBody.
 
         副本集节点扩容个数，副本集有3个节点时，可以扩容2/4个节点，副本集有5个节点时，只能扩容2个
 
@@ -60,7 +60,7 @@ class EnlargeReplicasetNodeRequestBody:
 
     @num.setter
     def num(self, num):
-        """Sets the num of this EnlargeReplicasetNodeRequestBody.
+        r"""Sets the num of this EnlargeReplicasetNodeRequestBody.
 
         副本集节点扩容个数，副本集有3个节点时，可以扩容2/4个节点，副本集有5个节点时，只能扩容2个
 
@@ -71,7 +71,7 @@ class EnlargeReplicasetNodeRequestBody:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this EnlargeReplicasetNodeRequestBody.
+        r"""Gets the is_auto_pay of this EnlargeReplicasetNodeRequestBody.
 
         扩容包年包月实例的节点数量时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。   - true，表示自动从账户中支付。   - false，表示手动从账户中支付，默认为该方式。
 
@@ -82,7 +82,7 @@ class EnlargeReplicasetNodeRequestBody:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this EnlargeReplicasetNodeRequestBody.
+        r"""Sets the is_auto_pay of this EnlargeReplicasetNodeRequestBody.
 
         扩容包年包月实例的节点数量时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。   - true，表示自动从账户中支付。   - false，表示手动从账户中支付，默认为该方式。
 

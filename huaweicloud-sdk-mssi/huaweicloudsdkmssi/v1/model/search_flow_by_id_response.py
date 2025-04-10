@@ -96,7 +96,7 @@ class SearchFlowByIdResponse(SdkResponse):
     }
 
     def __init__(self, apic_id=None, apic_release_status=None, apig_url=None, connectors=None, connectors_latest=None, creatd_time=None, description=None, dev_status=None, domain_id=None, enterprise_project_id=None, enterprise_project_name=None, extend_configs=None, flow_source_type=None, functions=None, graph=None, his_transfer_status=None, icon=None, id=None, installed_connector=None, is_valid=None, label=None, name=None, notice_status=None, project_id=None, schema_version=None, status=None, steps=None, tags=None, template_id=None, template_name=None, test_result=None, type=None, updated_time=None, user_id=None, version=None, webhook=None):
-        """SearchFlowByIdResponse
+        r"""SearchFlowByIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -289,7 +289,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @property
     def apic_id(self):
-        """Gets the apic_id of this SearchFlowByIdResponse.
+        r"""Gets the apic_id of this SearchFlowByIdResponse.
 
         发布到apic的api id
 
@@ -300,7 +300,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @apic_id.setter
     def apic_id(self, apic_id):
-        """Sets the apic_id of this SearchFlowByIdResponse.
+        r"""Sets the apic_id of this SearchFlowByIdResponse.
 
         发布到apic的api id
 
@@ -311,7 +311,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @property
     def apic_release_status(self):
-        """Gets the apic_release_status of this SearchFlowByIdResponse.
+        r"""Gets the apic_release_status of this SearchFlowByIdResponse.
 
         发布到apic的状态
 
@@ -322,7 +322,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @apic_release_status.setter
     def apic_release_status(self, apic_release_status):
-        """Sets the apic_release_status of this SearchFlowByIdResponse.
+        r"""Sets the apic_release_status of this SearchFlowByIdResponse.
 
         发布到apic的状态
 
@@ -333,7 +333,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @property
     def apig_url(self):
-        """Gets the apig_url of this SearchFlowByIdResponse.
+        r"""Gets the apig_url of this SearchFlowByIdResponse.
 
         api流注册到apig的url
 
@@ -344,7 +344,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @apig_url.setter
     def apig_url(self, apig_url):
-        """Sets the apig_url of this SearchFlowByIdResponse.
+        r"""Sets the apig_url of this SearchFlowByIdResponse.
 
         api流注册到apig的url
 
@@ -355,7 +355,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @property
     def connectors(self):
-        """Gets the connectors of this SearchFlowByIdResponse.
+        r"""Gets the connectors of this SearchFlowByIdResponse.
 
         连接器
 
@@ -366,7 +366,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @connectors.setter
     def connectors(self, connectors):
-        """Sets the connectors of this SearchFlowByIdResponse.
+        r"""Sets the connectors of this SearchFlowByIdResponse.
 
         连接器
 
@@ -377,7 +377,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @property
     def connectors_latest(self):
-        """Gets the connectors_latest of this SearchFlowByIdResponse.
+        r"""Gets the connectors_latest of this SearchFlowByIdResponse.
 
         连接器最新版本
 
@@ -388,7 +388,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @connectors_latest.setter
     def connectors_latest(self, connectors_latest):
-        """Sets the connectors_latest of this SearchFlowByIdResponse.
+        r"""Sets the connectors_latest of this SearchFlowByIdResponse.
 
         连接器最新版本
 
@@ -399,7 +399,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @property
     def creatd_time(self):
-        """Gets the creatd_time of this SearchFlowByIdResponse.
+        r"""Gets the creatd_time of this SearchFlowByIdResponse.
 
         创建时间
 
@@ -410,7 +410,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @creatd_time.setter
     def creatd_time(self, creatd_time):
-        """Sets the creatd_time of this SearchFlowByIdResponse.
+        r"""Sets the creatd_time of this SearchFlowByIdResponse.
 
         创建时间
 
@@ -421,7 +421,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this SearchFlowByIdResponse.
+        r"""Gets the description of this SearchFlowByIdResponse.
 
         流的描述信息
 
@@ -432,7 +432,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this SearchFlowByIdResponse.
+        r"""Sets the description of this SearchFlowByIdResponse.
 
         流的描述信息
 
@@ -443,7 +443,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @property
     def dev_status(self):
-        """Gets the dev_status of this SearchFlowByIdResponse.
+        r"""Gets the dev_status of this SearchFlowByIdResponse.
 
         开发状态
 
@@ -454,7 +454,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @dev_status.setter
     def dev_status(self, dev_status):
-        """Sets the dev_status of this SearchFlowByIdResponse.
+        r"""Sets the dev_status of this SearchFlowByIdResponse.
 
         开发状态
 
@@ -465,7 +465,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this SearchFlowByIdResponse.
+        r"""Gets the domain_id of this SearchFlowByIdResponse.
 
         租户ID
 
@@ -476,7 +476,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this SearchFlowByIdResponse.
+        r"""Sets the domain_id of this SearchFlowByIdResponse.
 
         租户ID
 
@@ -487,7 +487,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this SearchFlowByIdResponse.
+        r"""Gets the enterprise_project_id of this SearchFlowByIdResponse.
 
         企业项目id
 
@@ -498,7 +498,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this SearchFlowByIdResponse.
+        r"""Sets the enterprise_project_id of this SearchFlowByIdResponse.
 
         企业项目id
 
@@ -509,7 +509,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @property
     def enterprise_project_name(self):
-        """Gets the enterprise_project_name of this SearchFlowByIdResponse.
+        r"""Gets the enterprise_project_name of this SearchFlowByIdResponse.
 
         企业项目名称
 
@@ -520,7 +520,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @enterprise_project_name.setter
     def enterprise_project_name(self, enterprise_project_name):
-        """Sets the enterprise_project_name of this SearchFlowByIdResponse.
+        r"""Sets the enterprise_project_name of this SearchFlowByIdResponse.
 
         企业项目名称
 
@@ -531,7 +531,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @property
     def extend_configs(self):
-        """Gets the extend_configs of this SearchFlowByIdResponse.
+        r"""Gets the extend_configs of this SearchFlowByIdResponse.
 
         流/流模板扩展配置列表
 
@@ -542,7 +542,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @extend_configs.setter
     def extend_configs(self, extend_configs):
-        """Sets the extend_configs of this SearchFlowByIdResponse.
+        r"""Sets the extend_configs of this SearchFlowByIdResponse.
 
         流/流模板扩展配置列表
 
@@ -553,7 +553,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @property
     def flow_source_type(self):
-        """Gets the flow_source_type of this SearchFlowByIdResponse.
+        r"""Gets the flow_source_type of this SearchFlowByIdResponse.
 
         流来源： inner: 公共流模板； custom： 我的流模板
 
@@ -564,7 +564,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @flow_source_type.setter
     def flow_source_type(self, flow_source_type):
-        """Sets the flow_source_type of this SearchFlowByIdResponse.
+        r"""Sets the flow_source_type of this SearchFlowByIdResponse.
 
         流来源： inner: 公共流模板； custom： 我的流模板
 
@@ -575,7 +575,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @property
     def functions(self):
-        """Gets the functions of this SearchFlowByIdResponse.
+        r"""Gets the functions of this SearchFlowByIdResponse.
 
         流/流模板函数列表
 
@@ -586,7 +586,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @functions.setter
     def functions(self, functions):
-        """Sets the functions of this SearchFlowByIdResponse.
+        r"""Sets the functions of this SearchFlowByIdResponse.
 
         流/流模板函数列表
 
@@ -597,7 +597,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @property
     def graph(self):
-        """Gets the graph of this SearchFlowByIdResponse.
+        r"""Gets the graph of this SearchFlowByIdResponse.
 
         流的编排数据(大josn)
 
@@ -608,7 +608,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @graph.setter
     def graph(self, graph):
-        """Sets the graph of this SearchFlowByIdResponse.
+        r"""Sets the graph of this SearchFlowByIdResponse.
 
         流的编排数据(大josn)
 
@@ -619,7 +619,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @property
     def his_transfer_status(self):
-        """Gets the his_transfer_status of this SearchFlowByIdResponse.
+        r"""Gets the his_transfer_status of this SearchFlowByIdResponse.
 
         :return: The his_transfer_status of this SearchFlowByIdResponse.
         :rtype: str
@@ -628,7 +628,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @his_transfer_status.setter
     def his_transfer_status(self, his_transfer_status):
-        """Sets the his_transfer_status of this SearchFlowByIdResponse.
+        r"""Sets the his_transfer_status of this SearchFlowByIdResponse.
 
         :param his_transfer_status: The his_transfer_status of this SearchFlowByIdResponse.
         :type his_transfer_status: str
@@ -637,7 +637,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @property
     def icon(self):
-        """Gets the icon of this SearchFlowByIdResponse.
+        r"""Gets the icon of this SearchFlowByIdResponse.
 
         logo base64编码
 
@@ -648,7 +648,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @icon.setter
     def icon(self, icon):
-        """Sets the icon of this SearchFlowByIdResponse.
+        r"""Sets the icon of this SearchFlowByIdResponse.
 
         logo base64编码
 
@@ -659,7 +659,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this SearchFlowByIdResponse.
+        r"""Gets the id of this SearchFlowByIdResponse.
 
         ID
 
@@ -670,7 +670,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SearchFlowByIdResponse.
+        r"""Sets the id of this SearchFlowByIdResponse.
 
         ID
 
@@ -681,7 +681,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @property
     def installed_connector(self):
-        """Gets the installed_connector of this SearchFlowByIdResponse.
+        r"""Gets the installed_connector of this SearchFlowByIdResponse.
 
         已部署的connector id
 
@@ -692,7 +692,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @installed_connector.setter
     def installed_connector(self, installed_connector):
-        """Sets the installed_connector of this SearchFlowByIdResponse.
+        r"""Sets the installed_connector of this SearchFlowByIdResponse.
 
         已部署的connector id
 
@@ -703,7 +703,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @property
     def is_valid(self):
-        """Gets the is_valid of this SearchFlowByIdResponse.
+        r"""Gets the is_valid of this SearchFlowByIdResponse.
 
         :return: The is_valid of this SearchFlowByIdResponse.
         :rtype: bool
@@ -712,7 +712,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @is_valid.setter
     def is_valid(self, is_valid):
-        """Sets the is_valid of this SearchFlowByIdResponse.
+        r"""Sets the is_valid of this SearchFlowByIdResponse.
 
         :param is_valid: The is_valid of this SearchFlowByIdResponse.
         :type is_valid: bool
@@ -721,7 +721,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @property
     def label(self):
-        """Gets the label of this SearchFlowByIdResponse.
+        r"""Gets the label of this SearchFlowByIdResponse.
 
         :return: The label of this SearchFlowByIdResponse.
         :rtype: str
@@ -730,7 +730,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @label.setter
     def label(self, label):
-        """Sets the label of this SearchFlowByIdResponse.
+        r"""Sets the label of this SearchFlowByIdResponse.
 
         :param label: The label of this SearchFlowByIdResponse.
         :type label: str
@@ -739,7 +739,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this SearchFlowByIdResponse.
+        r"""Gets the name of this SearchFlowByIdResponse.
 
         流的名称
 
@@ -750,7 +750,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SearchFlowByIdResponse.
+        r"""Sets the name of this SearchFlowByIdResponse.
 
         流的名称
 
@@ -761,7 +761,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @property
     def notice_status(self):
-        """Gets the notice_status of this SearchFlowByIdResponse.
+        r"""Gets the notice_status of this SearchFlowByIdResponse.
 
         :return: The notice_status of this SearchFlowByIdResponse.
         :rtype: str
@@ -770,7 +770,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @notice_status.setter
     def notice_status(self, notice_status):
-        """Sets the notice_status of this SearchFlowByIdResponse.
+        r"""Sets the notice_status of this SearchFlowByIdResponse.
 
         :param notice_status: The notice_status of this SearchFlowByIdResponse.
         :type notice_status: str
@@ -779,7 +779,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this SearchFlowByIdResponse.
+        r"""Gets the project_id of this SearchFlowByIdResponse.
 
         用户项目ID
 
@@ -790,7 +790,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this SearchFlowByIdResponse.
+        r"""Sets the project_id of this SearchFlowByIdResponse.
 
         用户项目ID
 
@@ -801,7 +801,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @property
     def schema_version(self):
-        """Gets the schema_version of this SearchFlowByIdResponse.
+        r"""Gets the schema_version of this SearchFlowByIdResponse.
 
         schema版本
 
@@ -812,7 +812,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @schema_version.setter
     def schema_version(self, schema_version):
-        """Sets the schema_version of this SearchFlowByIdResponse.
+        r"""Sets the schema_version of this SearchFlowByIdResponse.
 
         schema版本
 
@@ -823,7 +823,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this SearchFlowByIdResponse.
+        r"""Gets the status of this SearchFlowByIdResponse.
 
         流的状态
 
@@ -834,7 +834,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SearchFlowByIdResponse.
+        r"""Sets the status of this SearchFlowByIdResponse.
 
         流的状态
 
@@ -845,7 +845,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @property
     def steps(self):
-        """Gets the steps of this SearchFlowByIdResponse.
+        r"""Gets the steps of this SearchFlowByIdResponse.
 
         流的编排数据（大josn）
 
@@ -856,7 +856,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @steps.setter
     def steps(self, steps):
-        """Sets the steps of this SearchFlowByIdResponse.
+        r"""Sets the steps of this SearchFlowByIdResponse.
 
         流的编排数据（大josn）
 
@@ -867,7 +867,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this SearchFlowByIdResponse.
+        r"""Gets the tags of this SearchFlowByIdResponse.
 
         标签列表
 
@@ -878,7 +878,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this SearchFlowByIdResponse.
+        r"""Sets the tags of this SearchFlowByIdResponse.
 
         标签列表
 
@@ -889,7 +889,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @property
     def template_id(self):
-        """Gets the template_id of this SearchFlowByIdResponse.
+        r"""Gets the template_id of this SearchFlowByIdResponse.
 
         模板ID
 
@@ -900,7 +900,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this SearchFlowByIdResponse.
+        r"""Sets the template_id of this SearchFlowByIdResponse.
 
         模板ID
 
@@ -911,7 +911,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @property
     def template_name(self):
-        """Gets the template_name of this SearchFlowByIdResponse.
+        r"""Gets the template_name of this SearchFlowByIdResponse.
 
         模板名称
 
@@ -922,7 +922,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this SearchFlowByIdResponse.
+        r"""Sets the template_name of this SearchFlowByIdResponse.
 
         模板名称
 
@@ -933,7 +933,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @property
     def test_result(self):
-        """Gets the test_result of this SearchFlowByIdResponse.
+        r"""Gets the test_result of this SearchFlowByIdResponse.
 
         测试结果
 
@@ -944,7 +944,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @test_result.setter
     def test_result(self, test_result):
-        """Sets the test_result of this SearchFlowByIdResponse.
+        r"""Sets the test_result of this SearchFlowByIdResponse.
 
         测试结果
 
@@ -955,7 +955,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this SearchFlowByIdResponse.
+        r"""Gets the type of this SearchFlowByIdResponse.
 
         类型
 
@@ -966,7 +966,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SearchFlowByIdResponse.
+        r"""Sets the type of this SearchFlowByIdResponse.
 
         类型
 
@@ -977,7 +977,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this SearchFlowByIdResponse.
+        r"""Gets the updated_time of this SearchFlowByIdResponse.
 
         修改时间
 
@@ -988,7 +988,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this SearchFlowByIdResponse.
+        r"""Sets the updated_time of this SearchFlowByIdResponse.
 
         修改时间
 
@@ -999,7 +999,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @property
     def user_id(self):
-        """Gets the user_id of this SearchFlowByIdResponse.
+        r"""Gets the user_id of this SearchFlowByIdResponse.
 
         账号（所有者）
 
@@ -1010,7 +1010,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this SearchFlowByIdResponse.
+        r"""Sets the user_id of this SearchFlowByIdResponse.
 
         账号（所有者）
 
@@ -1021,7 +1021,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this SearchFlowByIdResponse.
+        r"""Gets the version of this SearchFlowByIdResponse.
 
         流的版本号
 
@@ -1032,7 +1032,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this SearchFlowByIdResponse.
+        r"""Sets the version of this SearchFlowByIdResponse.
 
         流的版本号
 
@@ -1043,7 +1043,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @property
     def webhook(self):
-        """Gets the webhook of this SearchFlowByIdResponse.
+        r"""Gets the webhook of this SearchFlowByIdResponse.
 
         webhook触发url的ID
 
@@ -1054,7 +1054,7 @@ class SearchFlowByIdResponse(SdkResponse):
 
     @webhook.setter
     def webhook(self, webhook):
-        """Sets the webhook of this SearchFlowByIdResponse.
+        r"""Sets the webhook of this SearchFlowByIdResponse.
 
         webhook触发url的ID
 

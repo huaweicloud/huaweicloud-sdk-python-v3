@@ -31,7 +31,7 @@ class CostDataByDimension:
     }
 
     def __init__(self, dimensions=None, costs=None, amount_by_costs=None, official_amount_by_costs=None):
-        """CostDataByDimension
+        r"""CostDataByDimension
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class CostDataByDimension:
 
     @property
     def dimensions(self):
-        """Gets the dimensions of this CostDataByDimension.
+        r"""Gets the dimensions of this CostDataByDimension.
 
         维度列表。
 
@@ -75,7 +75,7 @@ class CostDataByDimension:
 
     @dimensions.setter
     def dimensions(self, dimensions):
-        """Sets the dimensions of this CostDataByDimension.
+        r"""Sets the dimensions of this CostDataByDimension.
 
         维度列表。
 
@@ -86,7 +86,7 @@ class CostDataByDimension:
 
     @property
     def costs(self):
-        """Gets the costs of this CostDataByDimension.
+        r"""Gets the costs of this CostDataByDimension.
 
         成本值。
 
@@ -97,7 +97,7 @@ class CostDataByDimension:
 
     @costs.setter
     def costs(self, costs):
-        """Sets the costs of this CostDataByDimension.
+        r"""Sets the costs of this CostDataByDimension.
 
         成本值。
 
@@ -108,7 +108,7 @@ class CostDataByDimension:
 
     @property
     def amount_by_costs(self):
-        """Gets the amount_by_costs of this CostDataByDimension.
+        r"""Gets the amount_by_costs of this CostDataByDimension.
 
         此维度值对应整个时间跨度的成本汇总金额。
 
@@ -119,7 +119,7 @@ class CostDataByDimension:
 
     @amount_by_costs.setter
     def amount_by_costs(self, amount_by_costs):
-        """Sets the amount_by_costs of this CostDataByDimension.
+        r"""Sets the amount_by_costs of this CostDataByDimension.
 
         此维度值对应整个时间跨度的成本汇总金额。
 
@@ -130,7 +130,7 @@ class CostDataByDimension:
 
     @property
     def official_amount_by_costs(self):
-        """Gets the official_amount_by_costs of this CostDataByDimension.
+        r"""Gets the official_amount_by_costs of this CostDataByDimension.
 
         此维度值对应整个时间跨度的官网价汇总金额。
 
@@ -141,7 +141,7 @@ class CostDataByDimension:
 
     @official_amount_by_costs.setter
     def official_amount_by_costs(self, official_amount_by_costs):
-        """Sets the official_amount_by_costs of this CostDataByDimension.
+        r"""Sets the official_amount_by_costs of this CostDataByDimension.
 
         此维度值对应整个时间跨度的官网价汇总金额。
 

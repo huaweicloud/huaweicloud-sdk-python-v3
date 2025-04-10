@@ -30,7 +30,7 @@ class ShowLogStreamShardsResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, is_query_complete=None, result=None):
-        """ShowLogStreamShardsResponse
+        r"""ShowLogStreamShardsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowLogStreamShardsResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ShowLogStreamShardsResponse.
+        r"""Gets the error_code of this ShowLogStreamShardsResponse.
 
         错误码
 
@@ -69,7 +69,7 @@ class ShowLogStreamShardsResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ShowLogStreamShardsResponse.
+        r"""Sets the error_code of this ShowLogStreamShardsResponse.
 
         错误码
 
@@ -80,7 +80,7 @@ class ShowLogStreamShardsResponse(SdkResponse):
 
     @property
     def is_query_complete(self):
-        """Gets the is_query_complete of this ShowLogStreamShardsResponse.
+        r"""Gets the is_query_complete of this ShowLogStreamShardsResponse.
 
         是否完全查询
 
@@ -91,7 +91,7 @@ class ShowLogStreamShardsResponse(SdkResponse):
 
     @is_query_complete.setter
     def is_query_complete(self, is_query_complete):
-        """Sets the is_query_complete of this ShowLogStreamShardsResponse.
+        r"""Sets the is_query_complete of this ShowLogStreamShardsResponse.
 
         是否完全查询
 
@@ -102,7 +102,7 @@ class ShowLogStreamShardsResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowLogStreamShardsResponse.
+        r"""Gets the result of this ShowLogStreamShardsResponse.
 
         查询结果
 
@@ -113,7 +113,7 @@ class ShowLogStreamShardsResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowLogStreamShardsResponse.
+        r"""Sets the result of this ShowLogStreamShardsResponse.
 
         查询结果
 

@@ -25,7 +25,7 @@ class DeleteDcPointsReqDTO:
     }
 
     def __init__(self, points=None):
-        """DeleteDcPointsReqDTO
+        r"""DeleteDcPointsReqDTO
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteDcPointsReqDTO:
 
     @property
     def points(self):
-        """Gets the points of this DeleteDcPointsReqDTO.
+        r"""Gets the points of this DeleteDcPointsReqDTO.
 
         :return: The points of this DeleteDcPointsReqDTO.
         :rtype: list[str]
@@ -51,7 +51,7 @@ class DeleteDcPointsReqDTO:
 
     @points.setter
     def points(self, points):
-        """Sets the points of this DeleteDcPointsReqDTO.
+        r"""Sets the points of this DeleteDcPointsReqDTO.
 
         :param points: The points of this DeleteDcPointsReqDTO.
         :type points: list[str]

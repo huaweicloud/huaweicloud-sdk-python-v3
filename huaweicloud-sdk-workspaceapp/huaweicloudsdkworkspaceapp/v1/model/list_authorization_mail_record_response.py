@@ -28,7 +28,7 @@ class ListAuthorizationMailRecordResponse(SdkResponse):
     }
 
     def __init__(self, count=None, records=None):
-        """ListAuthorizationMailRecordResponse
+        r"""ListAuthorizationMailRecordResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAuthorizationMailRecordResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListAuthorizationMailRecordResponse.
+        r"""Gets the count of this ListAuthorizationMailRecordResponse.
 
         总数。
 
@@ -62,7 +62,7 @@ class ListAuthorizationMailRecordResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListAuthorizationMailRecordResponse.
+        r"""Sets the count of this ListAuthorizationMailRecordResponse.
 
         总数。
 
@@ -73,7 +73,7 @@ class ListAuthorizationMailRecordResponse(SdkResponse):
 
     @property
     def records(self):
-        """Gets the records of this ListAuthorizationMailRecordResponse.
+        r"""Gets the records of this ListAuthorizationMailRecordResponse.
 
         授权邮件信息。
 
@@ -84,7 +84,7 @@ class ListAuthorizationMailRecordResponse(SdkResponse):
 
     @records.setter
     def records(self, records):
-        """Sets the records of this ListAuthorizationMailRecordResponse.
+        r"""Sets the records of this ListAuthorizationMailRecordResponse.
 
         授权邮件信息。
 

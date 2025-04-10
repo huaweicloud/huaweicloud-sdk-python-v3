@@ -41,7 +41,7 @@ class ListBareMetalServersRequest:
     }
 
     def __init__(self, flavor=None, name=None, status=None, limit=None, offset=None, tags=None, reservation_id=None, detail=None, enterprise_project_id=None):
-        """ListBareMetalServersRequest
+        r"""ListBareMetalServersRequest
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ListBareMetalServersRequest:
 
     @property
     def flavor(self):
-        """Gets the flavor of this ListBareMetalServersRequest.
+        r"""Gets the flavor of this ListBareMetalServersRequest.
 
         裸金属服务器规格ID
 
@@ -110,7 +110,7 @@ class ListBareMetalServersRequest:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this ListBareMetalServersRequest.
+        r"""Sets the flavor of this ListBareMetalServersRequest.
 
         裸金属服务器规格ID
 
@@ -121,7 +121,7 @@ class ListBareMetalServersRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListBareMetalServersRequest.
+        r"""Gets the name of this ListBareMetalServersRequest.
 
         裸金属服务器名称
 
@@ -132,7 +132,7 @@ class ListBareMetalServersRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListBareMetalServersRequest.
+        r"""Sets the name of this ListBareMetalServersRequest.
 
         裸金属服务器名称
 
@@ -143,7 +143,7 @@ class ListBareMetalServersRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListBareMetalServersRequest.
+        r"""Gets the status of this ListBareMetalServersRequest.
 
         裸金属服务器状态,只有管理员可以使用DELETED状态过滤查询已经删除的裸金属服务器。取值范围：ACTIVE、BUILD、ERROR、HARD_REBOOT、REBOOT、REBUILD、SHUTOFF
 
@@ -154,7 +154,7 @@ class ListBareMetalServersRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListBareMetalServersRequest.
+        r"""Sets the status of this ListBareMetalServersRequest.
 
         裸金属服务器状态,只有管理员可以使用DELETED状态过滤查询已经删除的裸金属服务器。取值范围：ACTIVE、BUILD、ERROR、HARD_REBOOT、REBOOT、REBUILD、SHUTOFF
 
@@ -165,7 +165,7 @@ class ListBareMetalServersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListBareMetalServersRequest.
+        r"""Gets the limit of this ListBareMetalServersRequest.
 
         每页返回裸金属服务器的条数，默认值是25，最大值为1000。limit为每页返回裸金属服务器详情的条数
 
@@ -176,7 +176,7 @@ class ListBareMetalServersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListBareMetalServersRequest.
+        r"""Sets the limit of this ListBareMetalServersRequest.
 
         每页返回裸金属服务器的条数，默认值是25，最大值为1000。limit为每页返回裸金属服务器详情的条数
 
@@ -187,7 +187,7 @@ class ListBareMetalServersRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListBareMetalServersRequest.
+        r"""Gets the offset of this ListBareMetalServersRequest.
 
         此接口为分页查询接口，offset为查询页码（起始页码为1），返回值包括总条数和裸金属服务器详情列表。传入offset：按limit值分页（limit默认为1000），返回第offset页裸金属服务器详情列表和总条数，总条数最大值为limit，不足按实际情况返回。不传入offset，传入limit：返回裸金属服务器详情列表和总条数，总条数最大值为limit，不足按实际情况返回。不传入offset，不传入limit：按25条分页，返回第1页裸金属服务器详情列表，总条数最大值为25，不足按实际情况返回。
 
@@ -198,7 +198,7 @@ class ListBareMetalServersRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListBareMetalServersRequest.
+        r"""Sets the offset of this ListBareMetalServersRequest.
 
         此接口为分页查询接口，offset为查询页码（起始页码为1），返回值包括总条数和裸金属服务器详情列表。传入offset：按limit值分页（limit默认为1000），返回第offset页裸金属服务器详情列表和总条数，总条数最大值为limit，不足按实际情况返回。不传入offset，传入limit：返回裸金属服务器详情列表和总条数，总条数最大值为limit，不足按实际情况返回。不传入offset，不传入limit：按25条分页，返回第1页裸金属服务器详情列表，总条数最大值为25，不足按实际情况返回。
 
@@ -209,7 +209,7 @@ class ListBareMetalServersRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this ListBareMetalServersRequest.
+        r"""Gets the tags of this ListBareMetalServersRequest.
 
         裸金属服务器标签：__type_baremetal
 
@@ -220,7 +220,7 @@ class ListBareMetalServersRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListBareMetalServersRequest.
+        r"""Sets the tags of this ListBareMetalServersRequest.
 
         裸金属服务器标签：__type_baremetal
 
@@ -231,7 +231,7 @@ class ListBareMetalServersRequest:
 
     @property
     def reservation_id(self):
-        """Gets the reservation_id of this ListBareMetalServersRequest.
+        r"""Gets the reservation_id of this ListBareMetalServersRequest.
 
         批量创建裸金属服务器时，指定返回的ID，用于查询本次批量创建的裸金属服务器
 
@@ -242,7 +242,7 @@ class ListBareMetalServersRequest:
 
     @reservation_id.setter
     def reservation_id(self, reservation_id):
-        """Sets the reservation_id of this ListBareMetalServersRequest.
+        r"""Sets the reservation_id of this ListBareMetalServersRequest.
 
         批量创建裸金属服务器时，指定返回的ID，用于查询本次批量创建的裸金属服务器
 
@@ -253,7 +253,7 @@ class ListBareMetalServersRequest:
 
     @property
     def detail(self):
-        """Gets the detail of this ListBareMetalServersRequest.
+        r"""Gets the detail of this ListBareMetalServersRequest.
 
         查询裸金属服务器结果的详细级别，级别越高，查询到的裸金属服务器信息越多，默认为4。可使用的级别为 1，2，3，4
 
@@ -264,7 +264,7 @@ class ListBareMetalServersRequest:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this ListBareMetalServersRequest.
+        r"""Sets the detail of this ListBareMetalServersRequest.
 
         查询裸金属服务器结果的详细级别，级别越高，查询到的裸金属服务器信息越多，默认为4。可使用的级别为 1，2，3，4
 
@@ -275,7 +275,7 @@ class ListBareMetalServersRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListBareMetalServersRequest.
+        r"""Gets the enterprise_project_id of this ListBareMetalServersRequest.
 
         查询绑定某个企业项目的裸金属服务器
 
@@ -286,7 +286,7 @@ class ListBareMetalServersRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListBareMetalServersRequest.
+        r"""Sets the enterprise_project_id of this ListBareMetalServersRequest.
 
         查询绑定某个企业项目的裸金属服务器
 

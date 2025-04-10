@@ -39,7 +39,7 @@ class ListLogtanksRequest:
     }
 
     def __init__(self, limit=None, marker=None, page_reverse=None, enterprise_project_id=None, id=None, loadbalancer_id=None, log_group_id=None, log_topic_id=None):
-        """ListLogtanksRequest
+        r"""ListLogtanksRequest
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ListLogtanksRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListLogtanksRequest.
+        r"""Gets the limit of this ListLogtanksRequest.
 
         参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
 
@@ -103,7 +103,7 @@ class ListLogtanksRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListLogtanksRequest.
+        r"""Sets the limit of this ListLogtanksRequest.
 
         参数解释：每页返回的个数。  取值范围：0-2000  默认取值：2000
 
@@ -114,7 +114,7 @@ class ListLogtanksRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListLogtanksRequest.
+        r"""Gets the marker of this ListLogtanksRequest.
 
         上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
@@ -125,7 +125,7 @@ class ListLogtanksRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListLogtanksRequest.
+        r"""Sets the marker of this ListLogtanksRequest.
 
         上一页最后一条记录的ID。  使用说明： - 必须与limit一起使用。 - 不指定时表示查询第一页。 - 该字段不允许为空或无效的ID。
 
@@ -136,7 +136,7 @@ class ListLogtanksRequest:
 
     @property
     def page_reverse(self):
-        """Gets the page_reverse of this ListLogtanksRequest.
+        r"""Gets the page_reverse of this ListLogtanksRequest.
 
         是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker
 
@@ -147,7 +147,7 @@ class ListLogtanksRequest:
 
     @page_reverse.setter
     def page_reverse(self, page_reverse):
-        """Sets the page_reverse of this ListLogtanksRequest.
+        r"""Sets the page_reverse of this ListLogtanksRequest.
 
         是否反向查询。  取值： - true：查询上一页。 - false：查询下一页，默认。  使用说明： - 必须与limit一起使用。 - 当page_reverse=true时，若要查询上一页，marker取值为当前页返回值的previous_marker
 
@@ -158,7 +158,7 @@ class ListLogtanksRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListLogtanksRequest.
+        r"""Gets the enterprise_project_id of this ListLogtanksRequest.
 
         参数解释：所属的企业项目ID。 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:logtanks:list权限。 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  支持多值查询，查询条件格式： *enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
@@ -169,7 +169,7 @@ class ListLogtanksRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListLogtanksRequest.
+        r"""Sets the enterprise_project_id of this ListLogtanksRequest.
 
         参数解释：所属的企业项目ID。 如果enterprise_project_id不传值，默认查询所有企业项目下的资源，鉴权按照细粒度权限鉴权，必须在用户组下分配elb:logtanks:list权限。 如果enterprise_project_id传值，鉴权按照企业项目权限鉴权，分为传入具体eps_id和all_granted_eps两种场景，前者查询指定eps_id的eps下的资源，后者查询的是所有有list权限的eps下的资源。  支持多值查询，查询条件格式： *enterprise_project_id=xxx&enterprise_project_id=xxx*。  [不支持该字段，请勿使用。](tag:dt,hcso_dt)
 
@@ -180,7 +180,7 @@ class ListLogtanksRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListLogtanksRequest.
+        r"""Gets the id of this ListLogtanksRequest.
 
         云日志记录ID。 支持多值查询，查询条件格式：id=xxx&id=xxx。
 
@@ -191,7 +191,7 @@ class ListLogtanksRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListLogtanksRequest.
+        r"""Sets the id of this ListLogtanksRequest.
 
         云日志记录ID。 支持多值查询，查询条件格式：id=xxx&id=xxx。
 
@@ -202,7 +202,7 @@ class ListLogtanksRequest:
 
     @property
     def loadbalancer_id(self):
-        """Gets the loadbalancer_id of this ListLogtanksRequest.
+        r"""Gets the loadbalancer_id of this ListLogtanksRequest.
 
         负载均衡器ID。 支持多值查询，查询条件格式：loadbalancer_id=xxx&loadbalancer_id=xxx。
 
@@ -213,7 +213,7 @@ class ListLogtanksRequest:
 
     @loadbalancer_id.setter
     def loadbalancer_id(self, loadbalancer_id):
-        """Sets the loadbalancer_id of this ListLogtanksRequest.
+        r"""Sets the loadbalancer_id of this ListLogtanksRequest.
 
         负载均衡器ID。 支持多值查询，查询条件格式：loadbalancer_id=xxx&loadbalancer_id=xxx。
 
@@ -224,7 +224,7 @@ class ListLogtanksRequest:
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this ListLogtanksRequest.
+        r"""Gets the log_group_id of this ListLogtanksRequest.
 
         云日志分组ID。 支持多值查询，查询条件格式：log_group_id=xxx&log_group_id=xxx。
 
@@ -235,7 +235,7 @@ class ListLogtanksRequest:
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this ListLogtanksRequest.
+        r"""Sets the log_group_id of this ListLogtanksRequest.
 
         云日志分组ID。 支持多值查询，查询条件格式：log_group_id=xxx&log_group_id=xxx。
 
@@ -246,7 +246,7 @@ class ListLogtanksRequest:
 
     @property
     def log_topic_id(self):
-        """Gets the log_topic_id of this ListLogtanksRequest.
+        r"""Gets the log_topic_id of this ListLogtanksRequest.
 
         云日志主题ID 支持多值查询，查询条件格式：log_topic_id=xxx&log_topic_id=xxx。
 
@@ -257,7 +257,7 @@ class ListLogtanksRequest:
 
     @log_topic_id.setter
     def log_topic_id(self, log_topic_id):
-        """Sets the log_topic_id of this ListLogtanksRequest.
+        r"""Sets the log_topic_id of this ListLogtanksRequest.
 
         云日志主题ID 支持多值查询，查询条件格式：log_topic_id=xxx&log_topic_id=xxx。
 

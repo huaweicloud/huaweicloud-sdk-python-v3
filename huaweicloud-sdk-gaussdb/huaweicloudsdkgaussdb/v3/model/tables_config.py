@@ -27,7 +27,7 @@ class TablesConfig:
     }
 
     def __init__(self, table_name=None, table_config=None):
-        """TablesConfig
+        r"""TablesConfig
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TablesConfig:
 
     @property
     def table_name(self):
-        """Gets the table_name of this TablesConfig.
+        r"""Gets the table_name of this TablesConfig.
 
         表名。
 
@@ -61,7 +61,7 @@ class TablesConfig:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this TablesConfig.
+        r"""Sets the table_name of this TablesConfig.
 
         表名。
 
@@ -72,7 +72,7 @@ class TablesConfig:
 
     @property
     def table_config(self):
-        """Gets the table_config of this TablesConfig.
+        r"""Gets the table_config of this TablesConfig.
 
         表配置值。
 
@@ -83,7 +83,7 @@ class TablesConfig:
 
     @table_config.setter
     def table_config(self, table_config):
-        """Sets the table_config of this TablesConfig.
+        r"""Sets the table_config of this TablesConfig.
 
         表配置值。
 

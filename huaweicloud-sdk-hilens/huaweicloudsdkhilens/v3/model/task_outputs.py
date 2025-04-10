@@ -27,7 +27,7 @@ class TaskOutputs:
     }
 
     def __init__(self, data=None, type=None):
-        """TaskOutputs
+        r"""TaskOutputs
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class TaskOutputs:
 
     @property
     def data(self):
-        """Gets the data of this TaskOutputs.
+        r"""Gets the data of this TaskOutputs.
 
         输出数据
 
@@ -59,7 +59,7 @@ class TaskOutputs:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this TaskOutputs.
+        r"""Sets the data of this TaskOutputs.
 
         输出数据
 
@@ -70,7 +70,7 @@ class TaskOutputs:
 
     @property
     def type(self):
-        """Gets the type of this TaskOutputs.
+        r"""Gets the type of this TaskOutputs.
 
         输出类型
 
@@ -81,7 +81,7 @@ class TaskOutputs:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this TaskOutputs.
+        r"""Sets the type of this TaskOutputs.
 
         输出类型
 

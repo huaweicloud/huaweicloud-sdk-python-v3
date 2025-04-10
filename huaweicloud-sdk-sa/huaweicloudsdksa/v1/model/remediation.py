@@ -27,7 +27,7 @@ class Remediation:
     }
 
     def __init__(self, recommendation=None, url=None):
-        """Remediation
+        r"""Remediation
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class Remediation:
 
     @property
     def recommendation(self):
-        """Gets the recommendation of this Remediation.
+        r"""Gets the recommendation of this Remediation.
 
         处理建议，最长512个字符。
 
@@ -60,7 +60,7 @@ class Remediation:
 
     @recommendation.setter
     def recommendation(self, recommendation):
-        """Sets the recommendation of this Remediation.
+        r"""Sets the recommendation of this Remediation.
 
         处理建议，最长512个字符。
 
@@ -71,7 +71,7 @@ class Remediation:
 
     @property
     def url(self):
-        """Gets the url of this Remediation.
+        r"""Gets the url of this Remediation.
 
         链接，指向该事件的一般修复信息。该URL必须可以从公网访问，不需要提供凭证。
 
@@ -82,7 +82,7 @@ class Remediation:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this Remediation.
+        r"""Sets the url of this Remediation.
 
         链接，指向该事件的一般修复信息。该URL必须可以从公网访问，不需要提供凭证。
 

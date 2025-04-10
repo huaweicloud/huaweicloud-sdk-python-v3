@@ -26,7 +26,7 @@ class ListSampleResponse(SdkResponse):
     }
 
     def __init__(self, samples=None):
-        """ListSampleResponse
+        r"""ListSampleResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListSampleResponse(SdkResponse):
 
     @property
     def samples(self):
-        """Gets the samples of this ListSampleResponse.
+        r"""Gets the samples of this ListSampleResponse.
 
         时间序列对象列表。
 
@@ -55,7 +55,7 @@ class ListSampleResponse(SdkResponse):
 
     @samples.setter
     def samples(self, samples):
-        """Sets the samples of this ListSampleResponse.
+        r"""Sets the samples of this ListSampleResponse.
 
         时间序列对象列表。
 

@@ -29,7 +29,7 @@ class UpdateQueueResourcesRequest:
     }
 
     def __init__(self, cluster_id=None, queue_name=None, body=None):
-        """UpdateQueueResourcesRequest
+        r"""UpdateQueueResourcesRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateQueueResourcesRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdateQueueResourcesRequest.
+        r"""Gets the cluster_id of this UpdateQueueResourcesRequest.
 
         集群ID
 
@@ -66,7 +66,7 @@ class UpdateQueueResourcesRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdateQueueResourcesRequest.
+        r"""Sets the cluster_id of this UpdateQueueResourcesRequest.
 
         集群ID
 
@@ -77,7 +77,7 @@ class UpdateQueueResourcesRequest:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this UpdateQueueResourcesRequest.
+        r"""Gets the queue_name of this UpdateQueueResourcesRequest.
 
         队列名称
 
@@ -88,7 +88,7 @@ class UpdateQueueResourcesRequest:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this UpdateQueueResourcesRequest.
+        r"""Sets the queue_name of this UpdateQueueResourcesRequest.
 
         队列名称
 
@@ -99,7 +99,7 @@ class UpdateQueueResourcesRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateQueueResourcesRequest.
+        r"""Gets the body of this UpdateQueueResourcesRequest.
 
         :return: The body of this UpdateQueueResourcesRequest.
         :rtype: :class:`huaweicloudsdkdws.v2.WorkloadQueueRequest`
@@ -108,7 +108,7 @@ class UpdateQueueResourcesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateQueueResourcesRequest.
+        r"""Sets the body of this UpdateQueueResourcesRequest.
 
         :param body: The body of this UpdateQueueResourcesRequest.
         :type body: :class:`huaweicloudsdkdws.v2.WorkloadQueueRequest`

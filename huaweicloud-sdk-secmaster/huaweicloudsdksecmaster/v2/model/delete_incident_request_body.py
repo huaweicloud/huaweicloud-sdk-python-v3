@@ -25,7 +25,7 @@ class DeleteIncidentRequestBody:
     }
 
     def __init__(self, batch_ids=None):
-        """DeleteIncidentRequestBody
+        r"""DeleteIncidentRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteIncidentRequestBody:
 
     @property
     def batch_ids(self):
-        """Gets the batch_ids of this DeleteIncidentRequestBody.
+        r"""Gets the batch_ids of this DeleteIncidentRequestBody.
 
         删除事件的ID列表
 
@@ -54,7 +54,7 @@ class DeleteIncidentRequestBody:
 
     @batch_ids.setter
     def batch_ids(self, batch_ids):
-        """Sets the batch_ids of this DeleteIncidentRequestBody.
+        r"""Sets the batch_ids of this DeleteIncidentRequestBody.
 
         删除事件的ID列表
 

@@ -27,7 +27,7 @@ class UnscopedTokenInfoRoles:
     }
 
     def __init__(self, id=None, name=None):
-        """UnscopedTokenInfoRoles
+        r"""UnscopedTokenInfoRoles
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UnscopedTokenInfoRoles:
 
     @property
     def id(self):
-        """Gets the id of this UnscopedTokenInfoRoles.
+        r"""Gets the id of this UnscopedTokenInfoRoles.
 
         role id。
 
@@ -61,7 +61,7 @@ class UnscopedTokenInfoRoles:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UnscopedTokenInfoRoles.
+        r"""Sets the id of this UnscopedTokenInfoRoles.
 
         role id。
 
@@ -72,7 +72,7 @@ class UnscopedTokenInfoRoles:
 
     @property
     def name(self):
-        """Gets the name of this UnscopedTokenInfoRoles.
+        r"""Gets the name of this UnscopedTokenInfoRoles.
 
         name id。
 
@@ -83,7 +83,7 @@ class UnscopedTokenInfoRoles:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UnscopedTokenInfoRoles.
+        r"""Sets the name of this UnscopedTokenInfoRoles.
 
         name id。
 

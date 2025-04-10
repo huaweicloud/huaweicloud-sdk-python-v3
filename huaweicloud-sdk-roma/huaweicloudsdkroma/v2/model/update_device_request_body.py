@@ -31,7 +31,7 @@ class UpdateDeviceRequestBody:
     }
 
     def __init__(self, device_name=None, status=None, description=None, tags=None):
-        """UpdateDeviceRequestBody
+        r"""UpdateDeviceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class UpdateDeviceRequestBody:
 
     @property
     def device_name(self):
-        """Gets the device_name of this UpdateDeviceRequestBody.
+        r"""Gets the device_name of this UpdateDeviceRequestBody.
 
         设备名称，支持中文、中文标点符号（）。；，：“”、？《》及英文大小写、数字及英文符号()_,#.?'-@%&!, 长度2-64
 
@@ -73,7 +73,7 @@ class UpdateDeviceRequestBody:
 
     @device_name.setter
     def device_name(self, device_name):
-        """Sets the device_name of this UpdateDeviceRequestBody.
+        r"""Sets the device_name of this UpdateDeviceRequestBody.
 
         设备名称，支持中文、中文标点符号（）。；，：“”、？《》及英文大小写、数字及英文符号()_,#.?'-@%&!, 长度2-64
 
@@ -84,7 +84,7 @@ class UpdateDeviceRequestBody:
 
     @property
     def status(self):
-        """Gets the status of this UpdateDeviceRequestBody.
+        r"""Gets the status of this UpdateDeviceRequestBody.
 
         设备状态 0启用 1禁用
 
@@ -95,7 +95,7 @@ class UpdateDeviceRequestBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateDeviceRequestBody.
+        r"""Sets the status of this UpdateDeviceRequestBody.
 
         设备状态 0启用 1禁用
 
@@ -106,7 +106,7 @@ class UpdateDeviceRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateDeviceRequestBody.
+        r"""Gets the description of this UpdateDeviceRequestBody.
 
         备注
 
@@ -117,7 +117,7 @@ class UpdateDeviceRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateDeviceRequestBody.
+        r"""Sets the description of this UpdateDeviceRequestBody.
 
         备注
 
@@ -128,7 +128,7 @@ class UpdateDeviceRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this UpdateDeviceRequestBody.
+        r"""Gets the tags of this UpdateDeviceRequestBody.
 
         标签
 
@@ -139,7 +139,7 @@ class UpdateDeviceRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this UpdateDeviceRequestBody.
+        r"""Sets the tags of this UpdateDeviceRequestBody.
 
         标签
 

@@ -28,7 +28,7 @@ class ListSecurityDataClassificationRuleGroupsResponse(SdkResponse):
     }
 
     def __init__(self, rule_groups=None, total=None):
-        """ListSecurityDataClassificationRuleGroupsResponse
+        r"""ListSecurityDataClassificationRuleGroupsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSecurityDataClassificationRuleGroupsResponse(SdkResponse):
 
     @property
     def rule_groups(self):
-        """Gets the rule_groups of this ListSecurityDataClassificationRuleGroupsResponse.
+        r"""Gets the rule_groups of this ListSecurityDataClassificationRuleGroupsResponse.
 
         规则组列表
 
@@ -62,7 +62,7 @@ class ListSecurityDataClassificationRuleGroupsResponse(SdkResponse):
 
     @rule_groups.setter
     def rule_groups(self, rule_groups):
-        """Sets the rule_groups of this ListSecurityDataClassificationRuleGroupsResponse.
+        r"""Sets the rule_groups of this ListSecurityDataClassificationRuleGroupsResponse.
 
         规则组列表
 
@@ -73,7 +73,7 @@ class ListSecurityDataClassificationRuleGroupsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListSecurityDataClassificationRuleGroupsResponse.
+        r"""Gets the total of this ListSecurityDataClassificationRuleGroupsResponse.
 
         规则组总数
 
@@ -84,7 +84,7 @@ class ListSecurityDataClassificationRuleGroupsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListSecurityDataClassificationRuleGroupsResponse.
+        r"""Sets the total of this ListSecurityDataClassificationRuleGroupsResponse.
 
         规则组总数
 

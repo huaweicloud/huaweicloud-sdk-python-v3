@@ -29,7 +29,7 @@ class AdditionalInfo:
     }
 
     def __init__(self, resource_id=None, resource_name=None, event_id=None):
-        """AdditionalInfo
+        r"""AdditionalInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AdditionalInfo:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this AdditionalInfo.
+        r"""Gets the resource_id of this AdditionalInfo.
 
         该条告警记录对应的资源ID
 
@@ -68,7 +68,7 @@ class AdditionalInfo:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this AdditionalInfo.
+        r"""Sets the resource_id of this AdditionalInfo.
 
         该条告警记录对应的资源ID
 
@@ -79,7 +79,7 @@ class AdditionalInfo:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this AdditionalInfo.
+        r"""Gets the resource_name of this AdditionalInfo.
 
         该条告警记录对应的资源名称
 
@@ -90,7 +90,7 @@ class AdditionalInfo:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this AdditionalInfo.
+        r"""Sets the resource_name of this AdditionalInfo.
 
         该条告警记录对应的资源名称
 
@@ -101,7 +101,7 @@ class AdditionalInfo:
 
     @property
     def event_id(self):
-        """Gets the event_id of this AdditionalInfo.
+        r"""Gets the event_id of this AdditionalInfo.
 
         该条告警记录对应的事件监控ID，资源所产生的事件
 
@@ -112,7 +112,7 @@ class AdditionalInfo:
 
     @event_id.setter
     def event_id(self, event_id):
-        """Sets the event_id of this AdditionalInfo.
+        r"""Sets the event_id of this AdditionalInfo.
 
         该条告警记录对应的事件监控ID，资源所产生的事件
 

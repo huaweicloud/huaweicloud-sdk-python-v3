@@ -29,7 +29,7 @@ class DomainOriginHost:
     }
 
     def __init__(self, domain_id=None, origin_host_type=None, customize_domain=None):
-        """DomainOriginHost
+        r"""DomainOriginHost
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DomainOriginHost:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this DomainOriginHost.
+        r"""Gets the domain_id of this DomainOriginHost.
 
         域名ID。
 
@@ -67,7 +67,7 @@ class DomainOriginHost:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this DomainOriginHost.
+        r"""Sets the domain_id of this DomainOriginHost.
 
         域名ID。
 
@@ -78,7 +78,7 @@ class DomainOriginHost:
 
     @property
     def origin_host_type(self):
-        """Gets the origin_host_type of this DomainOriginHost.
+        r"""Gets the origin_host_type of this DomainOriginHost.
 
         回源host的类型,accelerate：选择加速域名作为回源host域名,customize：使用自定义的域名作为回源host域名。
 
@@ -89,7 +89,7 @@ class DomainOriginHost:
 
     @origin_host_type.setter
     def origin_host_type(self, origin_host_type):
-        """Sets the origin_host_type of this DomainOriginHost.
+        r"""Sets the origin_host_type of this DomainOriginHost.
 
         回源host的类型,accelerate：选择加速域名作为回源host域名,customize：使用自定义的域名作为回源host域名。
 
@@ -100,7 +100,7 @@ class DomainOriginHost:
 
     @property
     def customize_domain(self):
-        """Gets the customize_domain of this DomainOriginHost.
+        r"""Gets the customize_domain of this DomainOriginHost.
 
         自定义回源host域名。
 
@@ -111,7 +111,7 @@ class DomainOriginHost:
 
     @customize_domain.setter
     def customize_domain(self, customize_domain):
-        """Sets the customize_domain of this DomainOriginHost.
+        r"""Sets the customize_domain of this DomainOriginHost.
 
         自定义回源host域名。
 

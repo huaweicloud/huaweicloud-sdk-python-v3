@@ -27,7 +27,7 @@ class ListSpecificationsRequest:
     }
 
     def __init__(self, action=None, spec_code=None):
-        """ListSpecificationsRequest
+        r"""ListSpecificationsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListSpecificationsRequest:
 
     @property
     def action(self):
-        """Gets the action of this ListSpecificationsRequest.
+        r"""Gets the action of this ListSpecificationsRequest.
 
         查询云堡垒机规格当前动作。 - create：查询可创建云堡垒机规格信息 - update：查询可变更云堡垒机规格信息
 
@@ -60,7 +60,7 @@ class ListSpecificationsRequest:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ListSpecificationsRequest.
+        r"""Sets the action of this ListSpecificationsRequest.
 
         查询云堡垒机规格当前动作。 - create：查询可创建云堡垒机规格信息 - update：查询可变更云堡垒机规格信息
 
@@ -71,7 +71,7 @@ class ListSpecificationsRequest:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this ListSpecificationsRequest.
+        r"""Gets the spec_code of this ListSpecificationsRequest.
 
         云堡垒机规格信息，当action为update时此字段必填。
 
@@ -82,7 +82,7 @@ class ListSpecificationsRequest:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this ListSpecificationsRequest.
+        r"""Sets the spec_code of this ListSpecificationsRequest.
 
         云堡垒机规格信息，当action为update时此字段必填。
 

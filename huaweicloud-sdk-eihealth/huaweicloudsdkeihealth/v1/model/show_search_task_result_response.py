@@ -30,7 +30,7 @@ class ShowSearchTaskResultResponse(SdkResponse):
     }
 
     def __init__(self, status=None, task_data=None, result=None):
-        """ShowSearchTaskResultResponse
+        r"""ShowSearchTaskResultResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowSearchTaskResultResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowSearchTaskResultResponse.
+        r"""Gets the status of this ShowSearchTaskResultResponse.
 
         :return: The status of this ShowSearchTaskResultResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.AsyncTaskStatus`
@@ -67,7 +67,7 @@ class ShowSearchTaskResultResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowSearchTaskResultResponse.
+        r"""Sets the status of this ShowSearchTaskResultResponse.
 
         :param status: The status of this ShowSearchTaskResultResponse.
         :type status: :class:`huaweicloudsdkeihealth.v1.AsyncTaskStatus`
@@ -76,7 +76,7 @@ class ShowSearchTaskResultResponse(SdkResponse):
 
     @property
     def task_data(self):
-        """Gets the task_data of this ShowSearchTaskResultResponse.
+        r"""Gets the task_data of this ShowSearchTaskResultResponse.
 
         :return: The task_data of this ShowSearchTaskResultResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.SearchTaskData`
@@ -85,7 +85,7 @@ class ShowSearchTaskResultResponse(SdkResponse):
 
     @task_data.setter
     def task_data(self, task_data):
-        """Sets the task_data of this ShowSearchTaskResultResponse.
+        r"""Sets the task_data of this ShowSearchTaskResultResponse.
 
         :param task_data: The task_data of this ShowSearchTaskResultResponse.
         :type task_data: :class:`huaweicloudsdkeihealth.v1.SearchTaskData`
@@ -94,7 +94,7 @@ class ShowSearchTaskResultResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowSearchTaskResultResponse.
+        r"""Gets the result of this ShowSearchTaskResultResponse.
 
         :return: The result of this ShowSearchTaskResultResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.SearchResult`
@@ -103,7 +103,7 @@ class ShowSearchTaskResultResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowSearchTaskResultResponse.
+        r"""Sets the result of this ShowSearchTaskResultResponse.
 
         :param result: The result of this ShowSearchTaskResultResponse.
         :type result: :class:`huaweicloudsdkeihealth.v1.SearchResult`

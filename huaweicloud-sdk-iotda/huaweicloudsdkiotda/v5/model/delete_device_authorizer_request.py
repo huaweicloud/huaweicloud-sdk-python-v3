@@ -27,7 +27,7 @@ class DeleteDeviceAuthorizerRequest:
     }
 
     def __init__(self, instance_id=None, authorizer_id=None):
-        """DeleteDeviceAuthorizerRequest
+        r"""DeleteDeviceAuthorizerRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteDeviceAuthorizerRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteDeviceAuthorizerRequest.
+        r"""Gets the instance_id of this DeleteDeviceAuthorizerRequest.
 
         **参数说明**：实例ID。物理多租下各实例的唯一标识，建议携带该参数，在使用专业版时必须携带该参数。您可以在IoTDA管理控制台界面，选择左侧导航栏“总览”页签查看当前实例的ID，具体获取方式请参考[[查看实例详情](https://support.huaweicloud.com/usermanual-iothub/iot_01_0079.html#section1)](tag:hws) [[查看实例详情](https://support.huaweicloud.com/intl/zh-cn/usermanual-iothub/iot_01_0079.html#section1)](tag:hws_hk)。
 
@@ -60,7 +60,7 @@ class DeleteDeviceAuthorizerRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteDeviceAuthorizerRequest.
+        r"""Sets the instance_id of this DeleteDeviceAuthorizerRequest.
 
         **参数说明**：实例ID。物理多租下各实例的唯一标识，建议携带该参数，在使用专业版时必须携带该参数。您可以在IoTDA管理控制台界面，选择左侧导航栏“总览”页签查看当前实例的ID，具体获取方式请参考[[查看实例详情](https://support.huaweicloud.com/usermanual-iothub/iot_01_0079.html#section1)](tag:hws) [[查看实例详情](https://support.huaweicloud.com/intl/zh-cn/usermanual-iothub/iot_01_0079.html#section1)](tag:hws_hk)。
 
@@ -71,7 +71,7 @@ class DeleteDeviceAuthorizerRequest:
 
     @property
     def authorizer_id(self):
-        """Gets the authorizer_id of this DeleteDeviceAuthorizerRequest.
+        r"""Gets the authorizer_id of this DeleteDeviceAuthorizerRequest.
 
         自定义鉴权ID
 
@@ -82,7 +82,7 @@ class DeleteDeviceAuthorizerRequest:
 
     @authorizer_id.setter
     def authorizer_id(self, authorizer_id):
-        """Sets the authorizer_id of this DeleteDeviceAuthorizerRequest.
+        r"""Sets the authorizer_id of this DeleteDeviceAuthorizerRequest.
 
         自定义鉴权ID
 

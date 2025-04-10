@@ -27,7 +27,7 @@ class AddVolumes:
     }
 
     def __init__(self, desktop_id=None, volumes=None):
-        """AddVolumes
+        r"""AddVolumes
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AddVolumes:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this AddVolumes.
+        r"""Gets the desktop_id of this AddVolumes.
 
         桌面ID
 
@@ -59,7 +59,7 @@ class AddVolumes:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this AddVolumes.
+        r"""Sets the desktop_id of this AddVolumes.
 
         桌面ID
 
@@ -70,7 +70,7 @@ class AddVolumes:
 
     @property
     def volumes(self):
-        """Gets the volumes of this AddVolumes.
+        r"""Gets the volumes of this AddVolumes.
 
         订单的磁盘信息列表
 
@@ -81,7 +81,7 @@ class AddVolumes:
 
     @volumes.setter
     def volumes(self, volumes):
-        """Sets the volumes of this AddVolumes.
+        r"""Sets the volumes of this AddVolumes.
 
         订单的磁盘信息列表
 

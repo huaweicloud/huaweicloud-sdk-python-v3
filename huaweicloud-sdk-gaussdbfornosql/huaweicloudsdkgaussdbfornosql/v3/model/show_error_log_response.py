@@ -28,7 +28,7 @@ class ShowErrorLogResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, error_log_list=None):
-        """ShowErrorLogResponse
+        r"""ShowErrorLogResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowErrorLogResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ShowErrorLogResponse.
+        r"""Gets the total_count of this ShowErrorLogResponse.
 
         总记录数。
 
@@ -62,7 +62,7 @@ class ShowErrorLogResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ShowErrorLogResponse.
+        r"""Sets the total_count of this ShowErrorLogResponse.
 
         总记录数。
 
@@ -73,7 +73,7 @@ class ShowErrorLogResponse(SdkResponse):
 
     @property
     def error_log_list(self):
-        """Gets the error_log_list of this ShowErrorLogResponse.
+        r"""Gets the error_log_list of this ShowErrorLogResponse.
 
         :return: The error_log_list of this ShowErrorLogResponse.
         :rtype: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ErrorLogList`]
@@ -82,7 +82,7 @@ class ShowErrorLogResponse(SdkResponse):
 
     @error_log_list.setter
     def error_log_list(self, error_log_list):
-        """Sets the error_log_list of this ShowErrorLogResponse.
+        r"""Sets the error_log_list of this ShowErrorLogResponse.
 
         :param error_log_list: The error_log_list of this ShowErrorLogResponse.
         :type error_log_list: list[:class:`huaweicloudsdkgaussdbfornosql.v3.ErrorLogList`]

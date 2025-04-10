@@ -37,7 +37,7 @@ class RetryTaskGroupReq:
     }
 
     def __init__(self, src_ak=None, src_sk=None, json_auth_file=None, dst_ak=None, dst_sk=None, source_cdn_authentication_key=None, migrate_failed_object=None):
-        """RetryTaskGroupReq
+        r"""RetryTaskGroupReq
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class RetryTaskGroupReq:
 
     @property
     def src_ak(self):
-        """Gets the src_ak of this RetryTaskGroupReq.
+        r"""Gets the src_ak of this RetryTaskGroupReq.
 
         源端ak（最大长度100个字符）
 
@@ -96,7 +96,7 @@ class RetryTaskGroupReq:
 
     @src_ak.setter
     def src_ak(self, src_ak):
-        """Sets the src_ak of this RetryTaskGroupReq.
+        r"""Sets the src_ak of this RetryTaskGroupReq.
 
         源端ak（最大长度100个字符）
 
@@ -107,7 +107,7 @@ class RetryTaskGroupReq:
 
     @property
     def src_sk(self):
-        """Gets the src_sk of this RetryTaskGroupReq.
+        r"""Gets the src_sk of this RetryTaskGroupReq.
 
         源端sk（最大长度100个字符）
 
@@ -118,7 +118,7 @@ class RetryTaskGroupReq:
 
     @src_sk.setter
     def src_sk(self, src_sk):
-        """Sets the src_sk of this RetryTaskGroupReq.
+        r"""Sets the src_sk of this RetryTaskGroupReq.
 
         源端sk（最大长度100个字符）
 
@@ -129,7 +129,7 @@ class RetryTaskGroupReq:
 
     @property
     def json_auth_file(self):
-        """Gets the json_auth_file of this RetryTaskGroupReq.
+        r"""Gets the json_auth_file of this RetryTaskGroupReq.
 
         用于谷歌云Cloud Storage鉴权
 
@@ -140,7 +140,7 @@ class RetryTaskGroupReq:
 
     @json_auth_file.setter
     def json_auth_file(self, json_auth_file):
-        """Sets the json_auth_file of this RetryTaskGroupReq.
+        r"""Sets the json_auth_file of this RetryTaskGroupReq.
 
         用于谷歌云Cloud Storage鉴权
 
@@ -151,7 +151,7 @@ class RetryTaskGroupReq:
 
     @property
     def dst_ak(self):
-        """Gets the dst_ak of this RetryTaskGroupReq.
+        r"""Gets the dst_ak of this RetryTaskGroupReq.
 
         目的端ak（最大长度100个字符）
 
@@ -162,7 +162,7 @@ class RetryTaskGroupReq:
 
     @dst_ak.setter
     def dst_ak(self, dst_ak):
-        """Sets the dst_ak of this RetryTaskGroupReq.
+        r"""Sets the dst_ak of this RetryTaskGroupReq.
 
         目的端ak（最大长度100个字符）
 
@@ -173,7 +173,7 @@ class RetryTaskGroupReq:
 
     @property
     def dst_sk(self):
-        """Gets the dst_sk of this RetryTaskGroupReq.
+        r"""Gets the dst_sk of this RetryTaskGroupReq.
 
         目的端sk（最大长度100个字符）
 
@@ -184,7 +184,7 @@ class RetryTaskGroupReq:
 
     @dst_sk.setter
     def dst_sk(self, dst_sk):
-        """Sets the dst_sk of this RetryTaskGroupReq.
+        r"""Sets the dst_sk of this RetryTaskGroupReq.
 
         目的端sk（最大长度100个字符）
 
@@ -195,7 +195,7 @@ class RetryTaskGroupReq:
 
     @property
     def source_cdn_authentication_key(self):
-        """Gets the source_cdn_authentication_key of this RetryTaskGroupReq.
+        r"""Gets the source_cdn_authentication_key of this RetryTaskGroupReq.
 
         cdn鉴权秘钥
 
@@ -206,7 +206,7 @@ class RetryTaskGroupReq:
 
     @source_cdn_authentication_key.setter
     def source_cdn_authentication_key(self, source_cdn_authentication_key):
-        """Sets the source_cdn_authentication_key of this RetryTaskGroupReq.
+        r"""Sets the source_cdn_authentication_key of this RetryTaskGroupReq.
 
         cdn鉴权秘钥
 
@@ -217,7 +217,7 @@ class RetryTaskGroupReq:
 
     @property
     def migrate_failed_object(self):
-        """Gets the migrate_failed_object of this RetryTaskGroupReq.
+        r"""Gets the migrate_failed_object of this RetryTaskGroupReq.
 
         失败任务重试方式，标识是否为全量重新迁移，默认false（全量重新迁移）。 值为true时表示只重传失败对象。 值为空或者为false时表示全量重新迁移（默认跳过目的端已迁移对象）。
 
@@ -228,7 +228,7 @@ class RetryTaskGroupReq:
 
     @migrate_failed_object.setter
     def migrate_failed_object(self, migrate_failed_object):
-        """Sets the migrate_failed_object of this RetryTaskGroupReq.
+        r"""Sets the migrate_failed_object of this RetryTaskGroupReq.
 
         失败任务重试方式，标识是否为全量重新迁移，默认false（全量重新迁移）。 值为true时表示只重传失败对象。 值为空或者为false时表示全量重新迁移（默认跳过目的端已迁移对象）。
 

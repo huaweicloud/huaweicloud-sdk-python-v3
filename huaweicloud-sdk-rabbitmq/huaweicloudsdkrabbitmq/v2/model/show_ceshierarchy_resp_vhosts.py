@@ -25,7 +25,7 @@ class ShowCeshierarchyRespVhosts:
     }
 
     def __init__(self, name=None):
-        """ShowCeshierarchyRespVhosts
+        r"""ShowCeshierarchyRespVhosts
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowCeshierarchyRespVhosts:
 
     @property
     def name(self):
-        """Gets the name of this ShowCeshierarchyRespVhosts.
+        r"""Gets the name of this ShowCeshierarchyRespVhosts.
 
         Vhost名称。
 
@@ -54,7 +54,7 @@ class ShowCeshierarchyRespVhosts:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowCeshierarchyRespVhosts.
+        r"""Sets the name of this ShowCeshierarchyRespVhosts.
 
         Vhost名称。
 

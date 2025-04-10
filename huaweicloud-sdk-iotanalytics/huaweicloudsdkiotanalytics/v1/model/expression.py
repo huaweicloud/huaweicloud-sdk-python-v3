@@ -29,7 +29,7 @@ class Expression:
     }
 
     def __init__(self, formula=None, formulas=None, time_range=None):
-        """Expression
+        r"""Expression
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class Expression:
 
     @property
     def formula(self):
-        """Gets the formula of this Expression.
+        r"""Gets the formula of this Expression.
 
         公式，最多1024个字符(分析任务单输出场景，配合TransformModel或AggregateModel的output_property使用)
 
@@ -67,7 +67,7 @@ class Expression:
 
     @formula.setter
     def formula(self, formula):
-        """Sets the formula of this Expression.
+        r"""Sets the formula of this Expression.
 
         公式，最多1024个字符(分析任务单输出场景，配合TransformModel或AggregateModel的output_property使用)
 
@@ -78,7 +78,7 @@ class Expression:
 
     @property
     def formulas(self):
-        """Gets the formulas of this Expression.
+        r"""Gets the formulas of this Expression.
 
         带名称的公式
 
@@ -89,7 +89,7 @@ class Expression:
 
     @formulas.setter
     def formulas(self, formulas):
-        """Sets the formulas of this Expression.
+        r"""Sets the formulas of this Expression.
 
         带名称的公式
 
@@ -100,7 +100,7 @@ class Expression:
 
     @property
     def time_range(self):
-        """Gets the time_range of this Expression.
+        r"""Gets the time_range of this Expression.
 
         时间范围，调度时间往前的时间范围，比如1m表示调度时间往前1分钟到调度时间的时间范围，正则：\"1m|5m|15m|1h\"
 
@@ -111,7 +111,7 @@ class Expression:
 
     @time_range.setter
     def time_range(self, time_range):
-        """Sets the time_range of this Expression.
+        r"""Sets the time_range of this Expression.
 
         时间范围，调度时间往前的时间范围，比如1m表示调度时间往前1分钟到调度时间的时间范围，正则：\"1m|5m|15m|1h\"
 

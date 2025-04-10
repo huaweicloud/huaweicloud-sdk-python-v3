@@ -27,7 +27,7 @@ class JobFilterDto:
     }
 
     def __init__(self, job_name=None, job_node_labels=None):
-        """JobFilterDto
+        r"""JobFilterDto
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class JobFilterDto:
 
     @property
     def job_name(self):
-        """Gets the job_name of this JobFilterDto.
+        r"""Gets the job_name of this JobFilterDto.
 
         作业名称
 
@@ -61,7 +61,7 @@ class JobFilterDto:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this JobFilterDto.
+        r"""Sets the job_name of this JobFilterDto.
 
         作业名称
 
@@ -72,7 +72,7 @@ class JobFilterDto:
 
     @property
     def job_node_labels(self):
-        """Gets the job_node_labels of this JobFilterDto.
+        r"""Gets the job_node_labels of this JobFilterDto.
 
         计算节点标签
 
@@ -83,7 +83,7 @@ class JobFilterDto:
 
     @job_node_labels.setter
     def job_node_labels(self, job_node_labels):
-        """Sets the job_node_labels of this JobFilterDto.
+        r"""Sets the job_node_labels of this JobFilterDto.
 
         计算节点标签
 

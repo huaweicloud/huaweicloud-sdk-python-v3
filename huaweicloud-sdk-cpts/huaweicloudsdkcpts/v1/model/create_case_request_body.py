@@ -29,7 +29,7 @@ class CreateCaseRequestBody:
     }
 
     def __init__(self, name=None, type=None, task_id=None):
-        """CreateCaseRequestBody
+        r"""CreateCaseRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CreateCaseRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateCaseRequestBody.
+        r"""Gets the name of this CreateCaseRequestBody.
 
         名称
 
@@ -65,7 +65,7 @@ class CreateCaseRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateCaseRequestBody.
+        r"""Sets the name of this CreateCaseRequestBody.
 
         名称
 
@@ -76,7 +76,7 @@ class CreateCaseRequestBody:
 
     @property
     def type(self):
-        """Gets the type of this CreateCaseRequestBody.
+        r"""Gets the type of this CreateCaseRequestBody.
 
         type（0-常规用例，1-视频流用例，2-预制用例）
 
@@ -87,7 +87,7 @@ class CreateCaseRequestBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateCaseRequestBody.
+        r"""Sets the type of this CreateCaseRequestBody.
 
         type（0-常规用例，1-视频流用例，2-预制用例）
 
@@ -98,7 +98,7 @@ class CreateCaseRequestBody:
 
     @property
     def task_id(self):
-        """Gets the task_id of this CreateCaseRequestBody.
+        r"""Gets the task_id of this CreateCaseRequestBody.
 
         所属任务id
 
@@ -109,7 +109,7 @@ class CreateCaseRequestBody:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this CreateCaseRequestBody.
+        r"""Sets the task_id of this CreateCaseRequestBody.
 
         所属任务id
 

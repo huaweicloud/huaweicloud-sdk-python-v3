@@ -25,7 +25,7 @@ class BatchDeletePortTagsRequestBody:
     }
 
     def __init__(self, tags=None):
-        """BatchDeletePortTagsRequestBody
+        r"""BatchDeletePortTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchDeletePortTagsRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchDeletePortTagsRequestBody.
+        r"""Gets the tags of this BatchDeletePortTagsRequestBody.
 
         标签列表
 
@@ -53,7 +53,7 @@ class BatchDeletePortTagsRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchDeletePortTagsRequestBody.
+        r"""Sets the tags of this BatchDeletePortTagsRequestBody.
 
         标签列表
 

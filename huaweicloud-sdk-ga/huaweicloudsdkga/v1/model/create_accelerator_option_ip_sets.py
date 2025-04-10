@@ -27,7 +27,7 @@ class CreateAcceleratorOptionIpSets:
     }
 
     def __init__(self, ip_type=None, area=None):
-        """CreateAcceleratorOptionIpSets
+        r"""CreateAcceleratorOptionIpSets
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateAcceleratorOptionIpSets:
 
     @property
     def ip_type(self):
-        """Gets the ip_type of this CreateAcceleratorOptionIpSets.
+        r"""Gets the ip_type of this CreateAcceleratorOptionIpSets.
 
         IP地址类型，取值：IPV4，IPV6
 
@@ -59,7 +59,7 @@ class CreateAcceleratorOptionIpSets:
 
     @ip_type.setter
     def ip_type(self, ip_type):
-        """Sets the ip_type of this CreateAcceleratorOptionIpSets.
+        r"""Sets the ip_type of this CreateAcceleratorOptionIpSets.
 
         IP地址类型，取值：IPV4，IPV6
 
@@ -70,7 +70,7 @@ class CreateAcceleratorOptionIpSets:
 
     @property
     def area(self):
-        """Gets the area of this CreateAcceleratorOptionIpSets.
+        r"""Gets the area of this CreateAcceleratorOptionIpSets.
 
         :return: The area of this CreateAcceleratorOptionIpSets.
         :rtype: :class:`huaweicloudsdkga.v1.Area`
@@ -79,7 +79,7 @@ class CreateAcceleratorOptionIpSets:
 
     @area.setter
     def area(self, area):
-        """Sets the area of this CreateAcceleratorOptionIpSets.
+        r"""Sets the area of this CreateAcceleratorOptionIpSets.
 
         :param area: The area of this CreateAcceleratorOptionIpSets.
         :type area: :class:`huaweicloudsdkga.v1.Area`

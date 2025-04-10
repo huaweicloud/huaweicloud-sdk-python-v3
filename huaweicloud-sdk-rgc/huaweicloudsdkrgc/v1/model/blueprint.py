@@ -31,7 +31,7 @@ class Blueprint:
     }
 
     def __init__(self, blueprint_product_id=None, blueprint_product_version=None, variables=None, is_blueprint_has_multi_account_resource=None):
-        """Blueprint
+        r"""Blueprint
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class Blueprint:
 
     @property
     def blueprint_product_id(self):
-        """Gets the blueprint_product_id of this Blueprint.
+        r"""Gets the blueprint_product_id of this Blueprint.
 
         模板ID。
 
@@ -75,7 +75,7 @@ class Blueprint:
 
     @blueprint_product_id.setter
     def blueprint_product_id(self, blueprint_product_id):
-        """Sets the blueprint_product_id of this Blueprint.
+        r"""Sets the blueprint_product_id of this Blueprint.
 
         模板ID。
 
@@ -86,7 +86,7 @@ class Blueprint:
 
     @property
     def blueprint_product_version(self):
-        """Gets the blueprint_product_version of this Blueprint.
+        r"""Gets the blueprint_product_version of this Blueprint.
 
         模板版本。
 
@@ -97,7 +97,7 @@ class Blueprint:
 
     @blueprint_product_version.setter
     def blueprint_product_version(self, blueprint_product_version):
-        """Sets the blueprint_product_version of this Blueprint.
+        r"""Sets the blueprint_product_version of this Blueprint.
 
         模板版本。
 
@@ -108,7 +108,7 @@ class Blueprint:
 
     @property
     def variables(self):
-        """Gets the variables of this Blueprint.
+        r"""Gets the variables of this Blueprint.
 
         模板部署参数。
 
@@ -119,7 +119,7 @@ class Blueprint:
 
     @variables.setter
     def variables(self, variables):
-        """Sets the variables of this Blueprint.
+        r"""Sets the variables of this Blueprint.
 
         模板部署参数。
 
@@ -130,7 +130,7 @@ class Blueprint:
 
     @property
     def is_blueprint_has_multi_account_resource(self):
-        """Gets the is_blueprint_has_multi_account_resource of this Blueprint.
+        r"""Gets the is_blueprint_has_multi_account_resource of this Blueprint.
 
         模板是否包含多账号资源。
 
@@ -141,7 +141,7 @@ class Blueprint:
 
     @is_blueprint_has_multi_account_resource.setter
     def is_blueprint_has_multi_account_resource(self, is_blueprint_has_multi_account_resource):
-        """Sets the is_blueprint_has_multi_account_resource of this Blueprint.
+        r"""Sets the is_blueprint_has_multi_account_resource of this Blueprint.
 
         模板是否包含多账号资源。
 

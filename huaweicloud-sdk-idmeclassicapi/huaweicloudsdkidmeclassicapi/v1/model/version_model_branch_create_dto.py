@@ -37,7 +37,7 @@ class VersionModelBranchCreateDTO:
     }
 
     def __init__(self, create_time=None, creator=None, id=None, last_update_time=None, modifier=None, rdm_extension_type=None, tenant=None):
-        """VersionModelBranchCreateDTO
+        r"""VersionModelBranchCreateDTO
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class VersionModelBranchCreateDTO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this VersionModelBranchCreateDTO.
+        r"""Gets the create_time of this VersionModelBranchCreateDTO.
 
         创建时间。
 
@@ -96,7 +96,7 @@ class VersionModelBranchCreateDTO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this VersionModelBranchCreateDTO.
+        r"""Sets the create_time of this VersionModelBranchCreateDTO.
 
         创建时间。
 
@@ -107,7 +107,7 @@ class VersionModelBranchCreateDTO:
 
     @property
     def creator(self):
-        """Gets the creator of this VersionModelBranchCreateDTO.
+        r"""Gets the creator of this VersionModelBranchCreateDTO.
 
         创建者。
 
@@ -118,7 +118,7 @@ class VersionModelBranchCreateDTO:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this VersionModelBranchCreateDTO.
+        r"""Sets the creator of this VersionModelBranchCreateDTO.
 
         创建者。
 
@@ -129,7 +129,7 @@ class VersionModelBranchCreateDTO:
 
     @property
     def id(self):
-        """Gets the id of this VersionModelBranchCreateDTO.
+        r"""Gets the id of this VersionModelBranchCreateDTO.
 
         唯一标识。
 
@@ -140,7 +140,7 @@ class VersionModelBranchCreateDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this VersionModelBranchCreateDTO.
+        r"""Sets the id of this VersionModelBranchCreateDTO.
 
         唯一标识。
 
@@ -151,7 +151,7 @@ class VersionModelBranchCreateDTO:
 
     @property
     def last_update_time(self):
-        """Gets the last_update_time of this VersionModelBranchCreateDTO.
+        r"""Gets the last_update_time of this VersionModelBranchCreateDTO.
 
         最后更新时间。
 
@@ -162,7 +162,7 @@ class VersionModelBranchCreateDTO:
 
     @last_update_time.setter
     def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this VersionModelBranchCreateDTO.
+        r"""Sets the last_update_time of this VersionModelBranchCreateDTO.
 
         最后更新时间。
 
@@ -173,7 +173,7 @@ class VersionModelBranchCreateDTO:
 
     @property
     def modifier(self):
-        """Gets the modifier of this VersionModelBranchCreateDTO.
+        r"""Gets the modifier of this VersionModelBranchCreateDTO.
 
         修改人。
 
@@ -184,7 +184,7 @@ class VersionModelBranchCreateDTO:
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this VersionModelBranchCreateDTO.
+        r"""Sets the modifier of this VersionModelBranchCreateDTO.
 
         修改人。
 
@@ -195,7 +195,7 @@ class VersionModelBranchCreateDTO:
 
     @property
     def rdm_extension_type(self):
-        """Gets the rdm_extension_type of this VersionModelBranchCreateDTO.
+        r"""Gets the rdm_extension_type of this VersionModelBranchCreateDTO.
 
         扩展类型。
 
@@ -206,7 +206,7 @@ class VersionModelBranchCreateDTO:
 
     @rdm_extension_type.setter
     def rdm_extension_type(self, rdm_extension_type):
-        """Sets the rdm_extension_type of this VersionModelBranchCreateDTO.
+        r"""Sets the rdm_extension_type of this VersionModelBranchCreateDTO.
 
         扩展类型。
 
@@ -217,7 +217,7 @@ class VersionModelBranchCreateDTO:
 
     @property
     def tenant(self):
-        """Gets the tenant of this VersionModelBranchCreateDTO.
+        r"""Gets the tenant of this VersionModelBranchCreateDTO.
 
         :return: The tenant of this VersionModelBranchCreateDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`
@@ -226,7 +226,7 @@ class VersionModelBranchCreateDTO:
 
     @tenant.setter
     def tenant(self, tenant):
-        """Sets the tenant of this VersionModelBranchCreateDTO.
+        r"""Sets the tenant of this VersionModelBranchCreateDTO.
 
         :param tenant: The tenant of this VersionModelBranchCreateDTO.
         :type tenant: :class:`huaweicloudsdkidmeclassicapi.v1.ObjectReferenceParamDTO`

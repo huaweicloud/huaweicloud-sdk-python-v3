@@ -27,7 +27,7 @@ class ListAvailabilityZonesRequest:
     }
 
     def __init__(self, public_border_group=None, loadbalancer_id=None):
-        """ListAvailabilityZonesRequest
+        r"""ListAvailabilityZonesRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListAvailabilityZonesRequest:
 
     @property
     def public_border_group(self):
-        """Gets the public_border_group of this ListAvailabilityZonesRequest.
+        r"""Gets the public_border_group of this ListAvailabilityZonesRequest.
 
         参数解释：网络公共边界组。
 
@@ -61,7 +61,7 @@ class ListAvailabilityZonesRequest:
 
     @public_border_group.setter
     def public_border_group(self, public_border_group):
-        """Sets the public_border_group of this ListAvailabilityZonesRequest.
+        r"""Sets the public_border_group of this ListAvailabilityZonesRequest.
 
         参数解释：网络公共边界组。
 
@@ -72,7 +72,7 @@ class ListAvailabilityZonesRequest:
 
     @property
     def loadbalancer_id(self):
-        """Gets the loadbalancer_id of this ListAvailabilityZonesRequest.
+        r"""Gets the loadbalancer_id of this ListAvailabilityZonesRequest.
 
         参数解释：负载均衡器ID。
 
@@ -83,7 +83,7 @@ class ListAvailabilityZonesRequest:
 
     @loadbalancer_id.setter
     def loadbalancer_id(self, loadbalancer_id):
-        """Sets the loadbalancer_id of this ListAvailabilityZonesRequest.
+        r"""Sets the loadbalancer_id of this ListAvailabilityZonesRequest.
 
         参数解释：负载均衡器ID。
 

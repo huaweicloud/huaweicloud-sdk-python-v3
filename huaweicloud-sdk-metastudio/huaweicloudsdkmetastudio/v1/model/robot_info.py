@@ -67,7 +67,7 @@ class RobotInfo:
     }
 
     def __init__(self, robot_id=None, name=None, room_id=None, app_id=None, app_type=None, app_key=None, robot_type=None, language=None, create_time=None, update_time=None, region=None, cbs_project_id=None, llm_url=None, is_stream=None, chat_rounds=None, is_ifly_production=None, tail_silence_time=None, role_id=None, sis_region=None, sis_project_id=None, enable_hot_words=None, enable_question_audit=None):
-        """RobotInfo
+        r"""RobotInfo
 
         The model defined in huaweicloud sdk
 
@@ -190,7 +190,7 @@ class RobotInfo:
 
     @property
     def robot_id(self):
-        """Gets the robot_id of this RobotInfo.
+        r"""Gets the robot_id of this RobotInfo.
 
         应用ID。
 
@@ -201,7 +201,7 @@ class RobotInfo:
 
     @robot_id.setter
     def robot_id(self, robot_id):
-        """Sets the robot_id of this RobotInfo.
+        r"""Sets the robot_id of this RobotInfo.
 
         应用ID。
 
@@ -212,7 +212,7 @@ class RobotInfo:
 
     @property
     def name(self):
-        """Gets the name of this RobotInfo.
+        r"""Gets the name of this RobotInfo.
 
         应用名称。
 
@@ -223,7 +223,7 @@ class RobotInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RobotInfo.
+        r"""Sets the name of this RobotInfo.
 
         应用名称。
 
@@ -234,7 +234,7 @@ class RobotInfo:
 
     @property
     def room_id(self):
-        """Gets the room_id of this RobotInfo.
+        r"""Gets the room_id of this RobotInfo.
 
         智能交互对话房间ID。
 
@@ -245,7 +245,7 @@ class RobotInfo:
 
     @room_id.setter
     def room_id(self, room_id):
-        """Sets the room_id of this RobotInfo.
+        r"""Sets the room_id of this RobotInfo.
 
         智能交互对话房间ID。
 
@@ -256,7 +256,7 @@ class RobotInfo:
 
     @property
     def app_id(self):
-        """Gets the app_id of this RobotInfo.
+        r"""Gets the app_id of this RobotInfo.
 
         第三方应用ID。
 
@@ -267,7 +267,7 @@ class RobotInfo:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this RobotInfo.
+        r"""Sets the app_id of this RobotInfo.
 
         第三方应用ID。
 
@@ -278,7 +278,7 @@ class RobotInfo:
 
     @property
     def app_type(self):
-        """Gets the app_type of this RobotInfo.
+        r"""Gets the app_type of this RobotInfo.
 
         对接第三方应用厂商类型。 > 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；5：第三方驱动；6：第三方语言模型；8：奇妙问
 
@@ -289,7 +289,7 @@ class RobotInfo:
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this RobotInfo.
+        r"""Sets the app_type of this RobotInfo.
 
         对接第三方应用厂商类型。 > 0：科大讯飞AIUI；1：华为云CBS；2：科大讯飞星火交互认知大模型；5：第三方驱动；6：第三方语言模型；8：奇妙问
 
@@ -300,7 +300,7 @@ class RobotInfo:
 
     @property
     def app_key(self):
-        """Gets the app_key of this RobotInfo.
+        r"""Gets the app_key of this RobotInfo.
 
         应用的AccessKey或帐号。
 
@@ -311,7 +311,7 @@ class RobotInfo:
 
     @app_key.setter
     def app_key(self, app_key):
-        """Sets the app_key of this RobotInfo.
+        r"""Sets the app_key of this RobotInfo.
 
         应用的AccessKey或帐号。
 
@@ -322,7 +322,7 @@ class RobotInfo:
 
     @property
     def robot_type(self):
-        """Gets the robot_type of this RobotInfo.
+        r"""Gets the robot_type of this RobotInfo.
 
         :return: The robot_type of this RobotInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.RobotTypeEnum`
@@ -331,7 +331,7 @@ class RobotInfo:
 
     @robot_type.setter
     def robot_type(self, robot_type):
-        """Sets the robot_type of this RobotInfo.
+        r"""Sets the robot_type of this RobotInfo.
 
         :param robot_type: The robot_type of this RobotInfo.
         :type robot_type: :class:`huaweicloudsdkmetastudio.v1.RobotTypeEnum`
@@ -340,7 +340,7 @@ class RobotInfo:
 
     @property
     def language(self):
-        """Gets the language of this RobotInfo.
+        r"""Gets the language of this RobotInfo.
 
         :return: The language of this RobotInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
@@ -349,7 +349,7 @@ class RobotInfo:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this RobotInfo.
+        r"""Sets the language of this RobotInfo.
 
         :param language: The language of this RobotInfo.
         :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
@@ -358,7 +358,7 @@ class RobotInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this RobotInfo.
+        r"""Gets the create_time of this RobotInfo.
 
         创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -369,7 +369,7 @@ class RobotInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this RobotInfo.
+        r"""Sets the create_time of this RobotInfo.
 
         创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -380,7 +380,7 @@ class RobotInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this RobotInfo.
+        r"""Gets the update_time of this RobotInfo.
 
         更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -391,7 +391,7 @@ class RobotInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this RobotInfo.
+        r"""Sets the update_time of this RobotInfo.
 
         更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -402,7 +402,7 @@ class RobotInfo:
 
     @property
     def region(self):
-        """Gets the region of this RobotInfo.
+        r"""Gets the region of this RobotInfo.
 
         CBS所在区域
 
@@ -413,7 +413,7 @@ class RobotInfo:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this RobotInfo.
+        r"""Sets the region of this RobotInfo.
 
         CBS所在区域
 
@@ -424,7 +424,7 @@ class RobotInfo:
 
     @property
     def cbs_project_id(self):
-        """Gets the cbs_project_id of this RobotInfo.
+        r"""Gets the cbs_project_id of this RobotInfo.
 
         CBS所在区域的projectId
 
@@ -435,7 +435,7 @@ class RobotInfo:
 
     @cbs_project_id.setter
     def cbs_project_id(self, cbs_project_id):
-        """Sets the cbs_project_id of this RobotInfo.
+        r"""Sets the cbs_project_id of this RobotInfo.
 
         CBS所在区域的projectId
 
@@ -446,7 +446,7 @@ class RobotInfo:
 
     @property
     def llm_url(self):
-        """Gets the llm_url of this RobotInfo.
+        r"""Gets the llm_url of this RobotInfo.
 
         第三方语言模型地址。
 
@@ -457,7 +457,7 @@ class RobotInfo:
 
     @llm_url.setter
     def llm_url(self, llm_url):
-        """Sets the llm_url of this RobotInfo.
+        r"""Sets the llm_url of this RobotInfo.
 
         第三方语言模型地址。
 
@@ -468,7 +468,7 @@ class RobotInfo:
 
     @property
     def is_stream(self):
-        """Gets the is_stream of this RobotInfo.
+        r"""Gets the is_stream of this RobotInfo.
 
         是否采用流式响应。
 
@@ -479,7 +479,7 @@ class RobotInfo:
 
     @is_stream.setter
     def is_stream(self, is_stream):
-        """Sets the is_stream of this RobotInfo.
+        r"""Sets the is_stream of this RobotInfo.
 
         是否采用流式响应。
 
@@ -490,7 +490,7 @@ class RobotInfo:
 
     @property
     def chat_rounds(self):
-        """Gets the chat_rounds of this RobotInfo.
+        r"""Gets the chat_rounds of this RobotInfo.
 
         支持的多轮对话数量，取值大于1时，请求第三方语言模型时将携带历史对话信息。
 
@@ -501,7 +501,7 @@ class RobotInfo:
 
     @chat_rounds.setter
     def chat_rounds(self, chat_rounds):
-        """Sets the chat_rounds of this RobotInfo.
+        r"""Sets the chat_rounds of this RobotInfo.
 
         支持的多轮对话数量，取值大于1时，请求第三方语言模型时将携带历史对话信息。
 
@@ -512,7 +512,7 @@ class RobotInfo:
 
     @property
     def is_ifly_production(self):
-        """Gets the is_ifly_production of this RobotInfo.
+        r"""Gets the is_ifly_production of this RobotInfo.
 
         是否为正式环境
 
@@ -523,7 +523,7 @@ class RobotInfo:
 
     @is_ifly_production.setter
     def is_ifly_production(self, is_ifly_production):
-        """Sets the is_ifly_production of this RobotInfo.
+        r"""Sets the is_ifly_production of this RobotInfo.
 
         是否为正式环境
 
@@ -534,7 +534,7 @@ class RobotInfo:
 
     @property
     def tail_silence_time(self):
-        """Gets the tail_silence_time of this RobotInfo.
+        r"""Gets the tail_silence_time of this RobotInfo.
 
         语音识别后端点静音时长默认500ms
 
@@ -545,7 +545,7 @@ class RobotInfo:
 
     @tail_silence_time.setter
     def tail_silence_time(self, tail_silence_time):
-        """Sets the tail_silence_time of this RobotInfo.
+        r"""Sets the tail_silence_time of this RobotInfo.
 
         语音识别后端点静音时长默认500ms
 
@@ -556,7 +556,7 @@ class RobotInfo:
 
     @property
     def role_id(self):
-        """Gets the role_id of this RobotInfo.
+        r"""Gets the role_id of this RobotInfo.
 
         奇妙问角色ID。
 
@@ -567,7 +567,7 @@ class RobotInfo:
 
     @role_id.setter
     def role_id(self, role_id):
-        """Sets the role_id of this RobotInfo.
+        r"""Sets the role_id of this RobotInfo.
 
         奇妙问角色ID。
 
@@ -578,7 +578,7 @@ class RobotInfo:
 
     @property
     def sis_region(self):
-        """Gets the sis_region of this RobotInfo.
+        r"""Gets the sis_region of this RobotInfo.
 
         SIS所在区域
 
@@ -589,7 +589,7 @@ class RobotInfo:
 
     @sis_region.setter
     def sis_region(self, sis_region):
-        """Sets the sis_region of this RobotInfo.
+        r"""Sets the sis_region of this RobotInfo.
 
         SIS所在区域
 
@@ -600,7 +600,7 @@ class RobotInfo:
 
     @property
     def sis_project_id(self):
-        """Gets the sis_project_id of this RobotInfo.
+        r"""Gets the sis_project_id of this RobotInfo.
 
         SIS所在区域的projectId
 
@@ -611,7 +611,7 @@ class RobotInfo:
 
     @sis_project_id.setter
     def sis_project_id(self, sis_project_id):
-        """Sets the sis_project_id of this RobotInfo.
+        r"""Sets the sis_project_id of this RobotInfo.
 
         SIS所在区域的projectId
 
@@ -622,7 +622,7 @@ class RobotInfo:
 
     @property
     def enable_hot_words(self):
-        """Gets the enable_hot_words of this RobotInfo.
+        r"""Gets the enable_hot_words of this RobotInfo.
 
         是否开启热词
 
@@ -633,7 +633,7 @@ class RobotInfo:
 
     @enable_hot_words.setter
     def enable_hot_words(self, enable_hot_words):
-        """Sets the enable_hot_words of this RobotInfo.
+        r"""Sets the enable_hot_words of this RobotInfo.
 
         是否开启热词
 
@@ -644,7 +644,7 @@ class RobotInfo:
 
     @property
     def enable_question_audit(self):
-        """Gets the enable_question_audit of this RobotInfo.
+        r"""Gets the enable_question_audit of this RobotInfo.
 
         是否开启提问文本审核开关
 
@@ -655,7 +655,7 @@ class RobotInfo:
 
     @enable_question_audit.setter
     def enable_question_audit(self, enable_question_audit):
-        """Sets the enable_question_audit of this RobotInfo.
+        r"""Sets the enable_question_audit of this RobotInfo.
 
         是否开启提问文本审核开关
 

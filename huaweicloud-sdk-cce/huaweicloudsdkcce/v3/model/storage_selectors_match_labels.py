@@ -37,7 +37,7 @@ class StorageSelectorsMatchLabels:
     }
 
     def __init__(self, size=None, volume_type=None, iops=None, throughput=None, metadata_encrypted=None, metadata_cmkid=None, count=None):
-        """StorageSelectorsMatchLabels
+        r"""StorageSelectorsMatchLabels
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class StorageSelectorsMatchLabels:
 
     @property
     def size(self):
-        """Gets the size of this StorageSelectorsMatchLabels.
+        r"""Gets the size of this StorageSelectorsMatchLabels.
 
         匹配的磁盘大小，不填则无磁盘大小限制。例如：100.
 
@@ -96,7 +96,7 @@ class StorageSelectorsMatchLabels:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this StorageSelectorsMatchLabels.
+        r"""Sets the size of this StorageSelectorsMatchLabels.
 
         匹配的磁盘大小，不填则无磁盘大小限制。例如：100.
 
@@ -107,7 +107,7 @@ class StorageSelectorsMatchLabels:
 
     @property
     def volume_type(self):
-        """Gets the volume_type of this StorageSelectorsMatchLabels.
+        r"""Gets the volume_type of this StorageSelectorsMatchLabels.
 
         云硬盘类型，目前支持SSD\\GPSSD\\SAS\\ESSD\\SATA等。
 
@@ -118,7 +118,7 @@ class StorageSelectorsMatchLabels:
 
     @volume_type.setter
     def volume_type(self, volume_type):
-        """Sets the volume_type of this StorageSelectorsMatchLabels.
+        r"""Sets the volume_type of this StorageSelectorsMatchLabels.
 
         云硬盘类型，目前支持SSD\\GPSSD\\SAS\\ESSD\\SATA等。
 
@@ -129,7 +129,7 @@ class StorageSelectorsMatchLabels:
 
     @property
     def iops(self):
-        """Gets the iops of this StorageSelectorsMatchLabels.
+        r"""Gets the iops of this StorageSelectorsMatchLabels.
 
         匹配的磁盘iops大小，不填则无磁盘iops大小限制。当需要选择GPSSD2或ESSD2类型磁盘时，配置iops来准确选择磁盘。例如：3000.
 
@@ -140,7 +140,7 @@ class StorageSelectorsMatchLabels:
 
     @iops.setter
     def iops(self, iops):
-        """Sets the iops of this StorageSelectorsMatchLabels.
+        r"""Sets the iops of this StorageSelectorsMatchLabels.
 
         匹配的磁盘iops大小，不填则无磁盘iops大小限制。当需要选择GPSSD2或ESSD2类型磁盘时，配置iops来准确选择磁盘。例如：3000.
 
@@ -151,7 +151,7 @@ class StorageSelectorsMatchLabels:
 
     @property
     def throughput(self):
-        """Gets the throughput of this StorageSelectorsMatchLabels.
+        r"""Gets the throughput of this StorageSelectorsMatchLabels.
 
         匹配的磁盘吞吐量大小，不填则无磁盘吞吐量大小限制。当需要选择GPSSD2类型磁盘时，配置throughput来准确选择磁盘。例如：125.
 
@@ -162,7 +162,7 @@ class StorageSelectorsMatchLabels:
 
     @throughput.setter
     def throughput(self, throughput):
-        """Sets the throughput of this StorageSelectorsMatchLabels.
+        r"""Sets the throughput of this StorageSelectorsMatchLabels.
 
         匹配的磁盘吞吐量大小，不填则无磁盘吞吐量大小限制。当需要选择GPSSD2类型磁盘时，配置throughput来准确选择磁盘。例如：125.
 
@@ -173,7 +173,7 @@ class StorageSelectorsMatchLabels:
 
     @property
     def metadata_encrypted(self):
-        """Gets the metadata_encrypted of this StorageSelectorsMatchLabels.
+        r"""Gets the metadata_encrypted of this StorageSelectorsMatchLabels.
 
         磁盘加密标识符，0代表不加密，1代表加密。
 
@@ -184,7 +184,7 @@ class StorageSelectorsMatchLabels:
 
     @metadata_encrypted.setter
     def metadata_encrypted(self, metadata_encrypted):
-        """Sets the metadata_encrypted of this StorageSelectorsMatchLabels.
+        r"""Sets the metadata_encrypted of this StorageSelectorsMatchLabels.
 
         磁盘加密标识符，0代表不加密，1代表加密。
 
@@ -195,7 +195,7 @@ class StorageSelectorsMatchLabels:
 
     @property
     def metadata_cmkid(self):
-        """Gets the metadata_cmkid of this StorageSelectorsMatchLabels.
+        r"""Gets the metadata_cmkid of this StorageSelectorsMatchLabels.
 
         加密磁盘的用户主密钥ID，长度为36字节的字符串。
 
@@ -206,7 +206,7 @@ class StorageSelectorsMatchLabels:
 
     @metadata_cmkid.setter
     def metadata_cmkid(self, metadata_cmkid):
-        """Sets the metadata_cmkid of this StorageSelectorsMatchLabels.
+        r"""Sets the metadata_cmkid of this StorageSelectorsMatchLabels.
 
         加密磁盘的用户主密钥ID，长度为36字节的字符串。
 
@@ -217,7 +217,7 @@ class StorageSelectorsMatchLabels:
 
     @property
     def count(self):
-        """Gets the count of this StorageSelectorsMatchLabels.
+        r"""Gets the count of this StorageSelectorsMatchLabels.
 
         磁盘选择个数，不填则选择所有此类磁盘。
 
@@ -228,7 +228,7 @@ class StorageSelectorsMatchLabels:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this StorageSelectorsMatchLabels.
+        r"""Sets the count of this StorageSelectorsMatchLabels.
 
         磁盘选择个数，不填则选择所有此类磁盘。
 

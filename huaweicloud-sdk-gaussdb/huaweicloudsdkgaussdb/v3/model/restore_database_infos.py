@@ -29,7 +29,7 @@ class RestoreDatabaseInfos:
     }
 
     def __init__(self, name=None, total_tables=None, tables=None):
-        """RestoreDatabaseInfos
+        r"""RestoreDatabaseInfos
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class RestoreDatabaseInfos:
 
     @property
     def name(self):
-        """Gets the name of this RestoreDatabaseInfos.
+        r"""Gets the name of this RestoreDatabaseInfos.
 
         数据库名称。
 
@@ -68,7 +68,7 @@ class RestoreDatabaseInfos:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RestoreDatabaseInfos.
+        r"""Sets the name of this RestoreDatabaseInfos.
 
         数据库名称。
 
@@ -79,7 +79,7 @@ class RestoreDatabaseInfos:
 
     @property
     def total_tables(self):
-        """Gets the total_tables of this RestoreDatabaseInfos.
+        r"""Gets the total_tables of this RestoreDatabaseInfos.
 
         总表数。
 
@@ -90,7 +90,7 @@ class RestoreDatabaseInfos:
 
     @total_tables.setter
     def total_tables(self, total_tables):
-        """Sets the total_tables of this RestoreDatabaseInfos.
+        r"""Sets the total_tables of this RestoreDatabaseInfos.
 
         总表数。
 
@@ -101,7 +101,7 @@ class RestoreDatabaseInfos:
 
     @property
     def tables(self):
-        """Gets the tables of this RestoreDatabaseInfos.
+        r"""Gets the tables of this RestoreDatabaseInfos.
 
         表信息。
 
@@ -112,7 +112,7 @@ class RestoreDatabaseInfos:
 
     @tables.setter
     def tables(self, tables):
-        """Sets the tables of this RestoreDatabaseInfos.
+        r"""Sets the tables of this RestoreDatabaseInfos.
 
         表信息。
 

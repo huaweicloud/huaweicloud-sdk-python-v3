@@ -19,6 +19,7 @@ class ChangeCheckRuleActionRequest:
     openapi_types = {
         'enterprise_project_id': 'str',
         'host_id': 'str',
+        'check_cce': 'bool',
         'action': 'str',
         'body': 'CheckRuleIdListRequestInfo'
     }
@@ -26,19 +27,22 @@ class ChangeCheckRuleActionRequest:
     attribute_map = {
         'enterprise_project_id': 'enterprise_project_id',
         'host_id': 'host_id',
+        'check_cce': 'check_cce',
         'action': 'action',
         'body': 'body'
     }
 
-    def __init__(self, enterprise_project_id=None, host_id=None, action=None, body=None):
-        """ChangeCheckRuleActionRequest
+    def __init__(self, enterprise_project_id=None, host_id=None, check_cce=None, action=None, body=None):
+        r"""ChangeCheckRuleActionRequest
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param host_id: 主机ID，不赋值时，查租户所有主机
         :type host_id: str
+        :param check_cce: 是否校验cce
+        :type check_cce: bool
         :param action: 动作 - \&quot;ignore\&quot; - \&quot;unignore\&quot; - \&quot;fix\&quot; - \&quot;verify\&quot;
         :type action: str
         :param body: Body of the ChangeCheckRuleActionRequest
@@ -49,6 +53,7 @@ class ChangeCheckRuleActionRequest:
 
         self._enterprise_project_id = None
         self._host_id = None
+        self._check_cce = None
         self._action = None
         self._body = None
         self.discriminator = None
@@ -57,15 +62,17 @@ class ChangeCheckRuleActionRequest:
             self.enterprise_project_id = enterprise_project_id
         if host_id is not None:
             self.host_id = host_id
+        if check_cce is not None:
+            self.check_cce = check_cce
         self.action = action
         if body is not None:
             self.body = body
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ChangeCheckRuleActionRequest.
+        r"""Gets the enterprise_project_id of this ChangeCheckRuleActionRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ChangeCheckRuleActionRequest.
         :rtype: str
@@ -74,9 +81,9 @@ class ChangeCheckRuleActionRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ChangeCheckRuleActionRequest.
+        r"""Sets the enterprise_project_id of this ChangeCheckRuleActionRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ChangeCheckRuleActionRequest.
         :type enterprise_project_id: str
@@ -85,7 +92,7 @@ class ChangeCheckRuleActionRequest:
 
     @property
     def host_id(self):
-        """Gets the host_id of this ChangeCheckRuleActionRequest.
+        r"""Gets the host_id of this ChangeCheckRuleActionRequest.
 
         主机ID，不赋值时，查租户所有主机
 
@@ -96,7 +103,7 @@ class ChangeCheckRuleActionRequest:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this ChangeCheckRuleActionRequest.
+        r"""Sets the host_id of this ChangeCheckRuleActionRequest.
 
         主机ID，不赋值时，查租户所有主机
 
@@ -106,8 +113,30 @@ class ChangeCheckRuleActionRequest:
         self._host_id = host_id
 
     @property
+    def check_cce(self):
+        r"""Gets the check_cce of this ChangeCheckRuleActionRequest.
+
+        是否校验cce
+
+        :return: The check_cce of this ChangeCheckRuleActionRequest.
+        :rtype: bool
+        """
+        return self._check_cce
+
+    @check_cce.setter
+    def check_cce(self, check_cce):
+        r"""Sets the check_cce of this ChangeCheckRuleActionRequest.
+
+        是否校验cce
+
+        :param check_cce: The check_cce of this ChangeCheckRuleActionRequest.
+        :type check_cce: bool
+        """
+        self._check_cce = check_cce
+
+    @property
     def action(self):
-        """Gets the action of this ChangeCheckRuleActionRequest.
+        r"""Gets the action of this ChangeCheckRuleActionRequest.
 
         动作 - \"ignore\" - \"unignore\" - \"fix\" - \"verify\"
 
@@ -118,7 +147,7 @@ class ChangeCheckRuleActionRequest:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ChangeCheckRuleActionRequest.
+        r"""Sets the action of this ChangeCheckRuleActionRequest.
 
         动作 - \"ignore\" - \"unignore\" - \"fix\" - \"verify\"
 
@@ -129,7 +158,7 @@ class ChangeCheckRuleActionRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeCheckRuleActionRequest.
+        r"""Gets the body of this ChangeCheckRuleActionRequest.
 
         :return: The body of this ChangeCheckRuleActionRequest.
         :rtype: :class:`huaweicloudsdkhss.v5.CheckRuleIdListRequestInfo`
@@ -138,7 +167,7 @@ class ChangeCheckRuleActionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeCheckRuleActionRequest.
+        r"""Sets the body of this ChangeCheckRuleActionRequest.
 
         :param body: The body of this ChangeCheckRuleActionRequest.
         :type body: :class:`huaweicloudsdkhss.v5.CheckRuleIdListRequestInfo`

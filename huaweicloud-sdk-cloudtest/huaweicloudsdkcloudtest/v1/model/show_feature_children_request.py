@@ -27,7 +27,7 @@ class ShowFeatureChildrenRequest:
     }
 
     def __init__(self, feature_id=None, body=None):
-        """ShowFeatureChildrenRequest
+        r"""ShowFeatureChildrenRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowFeatureChildrenRequest:
 
     @property
     def feature_id(self):
-        """Gets the feature_id of this ShowFeatureChildrenRequest.
+        r"""Gets the feature_id of this ShowFeatureChildrenRequest.
 
         :return: The feature_id of this ShowFeatureChildrenRequest.
         :rtype: str
@@ -58,7 +58,7 @@ class ShowFeatureChildrenRequest:
 
     @feature_id.setter
     def feature_id(self, feature_id):
-        """Sets the feature_id of this ShowFeatureChildrenRequest.
+        r"""Sets the feature_id of this ShowFeatureChildrenRequest.
 
         :param feature_id: The feature_id of this ShowFeatureChildrenRequest.
         :type feature_id: str
@@ -67,7 +67,7 @@ class ShowFeatureChildrenRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowFeatureChildrenRequest.
+        r"""Gets the body of this ShowFeatureChildrenRequest.
 
         :return: The body of this ShowFeatureChildrenRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.QueryTestItemTreeInfo`
@@ -76,7 +76,7 @@ class ShowFeatureChildrenRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowFeatureChildrenRequest.
+        r"""Sets the body of this ShowFeatureChildrenRequest.
 
         :param body: The body of this ShowFeatureChildrenRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.QueryTestItemTreeInfo`

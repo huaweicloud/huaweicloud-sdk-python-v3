@@ -30,7 +30,7 @@ class CreateAttentionResponse(SdkResponse):
     }
 
     def __init__(self, status=None, trace_id=None, result=None):
-        """CreateAttentionResponse
+        r"""CreateAttentionResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateAttentionResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateAttentionResponse.
+        r"""Gets the status of this CreateAttentionResponse.
 
         结果状态
 
@@ -69,7 +69,7 @@ class CreateAttentionResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateAttentionResponse.
+        r"""Sets the status of this CreateAttentionResponse.
 
         结果状态
 
@@ -80,7 +80,7 @@ class CreateAttentionResponse(SdkResponse):
 
     @property
     def trace_id(self):
-        """Gets the trace_id of this CreateAttentionResponse.
+        r"""Gets the trace_id of this CreateAttentionResponse.
 
         请求id
 
@@ -91,7 +91,7 @@ class CreateAttentionResponse(SdkResponse):
 
     @trace_id.setter
     def trace_id(self, trace_id):
-        """Sets the trace_id of this CreateAttentionResponse.
+        r"""Sets the trace_id of this CreateAttentionResponse.
 
         请求id
 
@@ -102,7 +102,7 @@ class CreateAttentionResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this CreateAttentionResponse.
+        r"""Gets the result of this CreateAttentionResponse.
 
         请求返回结果，接口不同，返回不同
 
@@ -113,7 +113,7 @@ class CreateAttentionResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this CreateAttentionResponse.
+        r"""Sets the result of this CreateAttentionResponse.
 
         请求返回结果，接口不同，返回不同
 

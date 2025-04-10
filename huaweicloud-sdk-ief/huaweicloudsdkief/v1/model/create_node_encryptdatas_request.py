@@ -29,7 +29,7 @@ class CreateNodeEncryptdatasRequest:
     }
 
     def __init__(self, node_id=None, ief_instance_id=None, body=None):
-        """CreateNodeEncryptdatasRequest
+        r"""CreateNodeEncryptdatasRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateNodeEncryptdatasRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this CreateNodeEncryptdatasRequest.
+        r"""Gets the node_id of this CreateNodeEncryptdatasRequest.
 
         边缘节点ID
 
@@ -67,7 +67,7 @@ class CreateNodeEncryptdatasRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this CreateNodeEncryptdatasRequest.
+        r"""Sets the node_id of this CreateNodeEncryptdatasRequest.
 
         边缘节点ID
 
@@ -78,7 +78,7 @@ class CreateNodeEncryptdatasRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this CreateNodeEncryptdatasRequest.
+        r"""Gets the ief_instance_id of this CreateNodeEncryptdatasRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -89,7 +89,7 @@ class CreateNodeEncryptdatasRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this CreateNodeEncryptdatasRequest.
+        r"""Sets the ief_instance_id of this CreateNodeEncryptdatasRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -100,7 +100,7 @@ class CreateNodeEncryptdatasRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateNodeEncryptdatasRequest.
+        r"""Gets the body of this CreateNodeEncryptdatasRequest.
 
         :return: The body of this CreateNodeEncryptdatasRequest.
         :rtype: :class:`huaweicloudsdkief.v1.EncryptDataNodeReq`
@@ -109,7 +109,7 @@ class CreateNodeEncryptdatasRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateNodeEncryptdatasRequest.
+        r"""Sets the body of this CreateNodeEncryptdatasRequest.
 
         :param body: The body of this CreateNodeEncryptdatasRequest.
         :type body: :class:`huaweicloudsdkief.v1.EncryptDataNodeReq`

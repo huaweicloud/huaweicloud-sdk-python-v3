@@ -41,7 +41,7 @@ class AppQuotaInfo:
     }
 
     def __init__(self, app_quota_id=None, name=None, call_limits=None, time_unit=None, time_interval=None, remark=None, reset_time=None, create_time=None, bound_app_num=None):
-        """AppQuotaInfo
+        r"""AppQuotaInfo
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class AppQuotaInfo:
 
     @property
     def app_quota_id(self):
-        """Gets the app_quota_id of this AppQuotaInfo.
+        r"""Gets the app_quota_id of this AppQuotaInfo.
 
         客户端配额编号
 
@@ -110,7 +110,7 @@ class AppQuotaInfo:
 
     @app_quota_id.setter
     def app_quota_id(self, app_quota_id):
-        """Sets the app_quota_id of this AppQuotaInfo.
+        r"""Sets the app_quota_id of this AppQuotaInfo.
 
         客户端配额编号
 
@@ -121,7 +121,7 @@ class AppQuotaInfo:
 
     @property
     def name(self):
-        """Gets the name of this AppQuotaInfo.
+        r"""Gets the name of this AppQuotaInfo.
 
         配额名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头，3-255字符
 
@@ -132,7 +132,7 @@ class AppQuotaInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AppQuotaInfo.
+        r"""Sets the name of this AppQuotaInfo.
 
         配额名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头，3-255字符
 
@@ -143,7 +143,7 @@ class AppQuotaInfo:
 
     @property
     def call_limits(self):
-        """Gets the call_limits of this AppQuotaInfo.
+        r"""Gets the call_limits of this AppQuotaInfo.
 
         客户端配额的访问次数限制
 
@@ -154,7 +154,7 @@ class AppQuotaInfo:
 
     @call_limits.setter
     def call_limits(self, call_limits):
-        """Sets the call_limits of this AppQuotaInfo.
+        r"""Sets the call_limits of this AppQuotaInfo.
 
         客户端配额的访问次数限制
 
@@ -165,7 +165,7 @@ class AppQuotaInfo:
 
     @property
     def time_unit(self):
-        """Gets the time_unit of this AppQuotaInfo.
+        r"""Gets the time_unit of this AppQuotaInfo.
 
         限定时间单位：SECOND:秒、MINUTE:分、HOURE:时、DAY:天
 
@@ -176,7 +176,7 @@ class AppQuotaInfo:
 
     @time_unit.setter
     def time_unit(self, time_unit):
-        """Sets the time_unit of this AppQuotaInfo.
+        r"""Sets the time_unit of this AppQuotaInfo.
 
         限定时间单位：SECOND:秒、MINUTE:分、HOURE:时、DAY:天
 
@@ -187,7 +187,7 @@ class AppQuotaInfo:
 
     @property
     def time_interval(self):
-        """Gets the time_interval of this AppQuotaInfo.
+        r"""Gets the time_interval of this AppQuotaInfo.
 
         配额的限定时间值
 
@@ -198,7 +198,7 @@ class AppQuotaInfo:
 
     @time_interval.setter
     def time_interval(self, time_interval):
-        """Sets the time_interval of this AppQuotaInfo.
+        r"""Sets the time_interval of this AppQuotaInfo.
 
         配额的限定时间值
 
@@ -209,7 +209,7 @@ class AppQuotaInfo:
 
     @property
     def remark(self):
-        """Gets the remark of this AppQuotaInfo.
+        r"""Gets the remark of this AppQuotaInfo.
 
         参数说明和描述
 
@@ -220,7 +220,7 @@ class AppQuotaInfo:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this AppQuotaInfo.
+        r"""Sets the remark of this AppQuotaInfo.
 
         参数说明和描述
 
@@ -231,7 +231,7 @@ class AppQuotaInfo:
 
     @property
     def reset_time(self):
-        """Gets the reset_time of this AppQuotaInfo.
+        r"""Gets the reset_time of this AppQuotaInfo.
 
         首次配额重置时间点，不配置默认为首次调用时间计算
 
@@ -242,7 +242,7 @@ class AppQuotaInfo:
 
     @reset_time.setter
     def reset_time(self, reset_time):
-        """Sets the reset_time of this AppQuotaInfo.
+        r"""Sets the reset_time of this AppQuotaInfo.
 
         首次配额重置时间点，不配置默认为首次调用时间计算
 
@@ -253,7 +253,7 @@ class AppQuotaInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this AppQuotaInfo.
+        r"""Gets the create_time of this AppQuotaInfo.
 
         创建时间
 
@@ -264,7 +264,7 @@ class AppQuotaInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AppQuotaInfo.
+        r"""Sets the create_time of this AppQuotaInfo.
 
         创建时间
 
@@ -275,7 +275,7 @@ class AppQuotaInfo:
 
     @property
     def bound_app_num(self):
-        """Gets the bound_app_num of this AppQuotaInfo.
+        r"""Gets the bound_app_num of this AppQuotaInfo.
 
         配额策略已绑定应用数量
 
@@ -286,7 +286,7 @@ class AppQuotaInfo:
 
     @bound_app_num.setter
     def bound_app_num(self, bound_app_num):
-        """Sets the bound_app_num of this AppQuotaInfo.
+        r"""Sets the bound_app_num of this AppQuotaInfo.
 
         配额策略已绑定应用数量
 

@@ -29,7 +29,7 @@ class UpdateTaskInfoRequest:
     }
 
     def __init__(self, workspace=None, task_id=None, body=None):
-        """UpdateTaskInfoRequest
+        r"""UpdateTaskInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateTaskInfoRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this UpdateTaskInfoRequest.
+        r"""Gets the workspace of this UpdateTaskInfoRequest.
 
         DataArts Studio工作空间ID
 
@@ -66,7 +66,7 @@ class UpdateTaskInfoRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this UpdateTaskInfoRequest.
+        r"""Sets the workspace of this UpdateTaskInfoRequest.
 
         DataArts Studio工作空间ID
 
@@ -77,7 +77,7 @@ class UpdateTaskInfoRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this UpdateTaskInfoRequest.
+        r"""Gets the task_id of this UpdateTaskInfoRequest.
 
         任务id
 
@@ -88,7 +88,7 @@ class UpdateTaskInfoRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this UpdateTaskInfoRequest.
+        r"""Sets the task_id of this UpdateTaskInfoRequest.
 
         任务id
 
@@ -99,7 +99,7 @@ class UpdateTaskInfoRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateTaskInfoRequest.
+        r"""Gets the body of this UpdateTaskInfoRequest.
 
         :return: The body of this UpdateTaskInfoRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.MetadataCollectionTask`
@@ -108,7 +108,7 @@ class UpdateTaskInfoRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateTaskInfoRequest.
+        r"""Sets the body of this UpdateTaskInfoRequest.
 
         :param body: The body of this UpdateTaskInfoRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.MetadataCollectionTask`

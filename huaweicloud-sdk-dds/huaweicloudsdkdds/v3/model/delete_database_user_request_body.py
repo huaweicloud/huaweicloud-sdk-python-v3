@@ -27,7 +27,7 @@ class DeleteDatabaseUserRequestBody:
     }
 
     def __init__(self, user_name=None, db_name=None):
-        """DeleteDatabaseUserRequestBody
+        r"""DeleteDatabaseUserRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteDatabaseUserRequestBody:
 
     @property
     def user_name(self):
-        """Gets the user_name of this DeleteDatabaseUserRequestBody.
+        r"""Gets the user_name of this DeleteDatabaseUserRequestBody.
 
         数据库用户名称。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、中划线、下划线和点。
 
@@ -59,7 +59,7 @@ class DeleteDatabaseUserRequestBody:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this DeleteDatabaseUserRequestBody.
+        r"""Sets the user_name of this DeleteDatabaseUserRequestBody.
 
         数据库用户名称。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、中划线、下划线和点。
 
@@ -70,7 +70,7 @@ class DeleteDatabaseUserRequestBody:
 
     @property
     def db_name(self):
-        """Gets the db_name of this DeleteDatabaseUserRequestBody.
+        r"""Gets the db_name of this DeleteDatabaseUserRequestBody.
 
         用户所在的数据库。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、下划线。
 
@@ -81,7 +81,7 @@ class DeleteDatabaseUserRequestBody:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this DeleteDatabaseUserRequestBody.
+        r"""Sets the db_name of this DeleteDatabaseUserRequestBody.
 
         用户所在的数据库。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、下划线。
 

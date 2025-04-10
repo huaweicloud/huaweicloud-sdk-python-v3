@@ -29,7 +29,7 @@ class Deployment:
     }
 
     def __init__(self, id=None, distribution=None, edgecloud=None):
-        """Deployment
+        r"""Deployment
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class Deployment:
 
     @property
     def id(self):
-        """Gets the id of this Deployment.
+        r"""Gets the id of this Deployment.
 
         部署计划ID。
 
@@ -68,7 +68,7 @@ class Deployment:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Deployment.
+        r"""Sets the id of this Deployment.
 
         部署计划ID。
 
@@ -79,7 +79,7 @@ class Deployment:
 
     @property
     def distribution(self):
-        """Gets the distribution of this Deployment.
+        r"""Gets the distribution of this Deployment.
 
         部署位置信息列表
 
@@ -90,7 +90,7 @@ class Deployment:
 
     @distribution.setter
     def distribution(self, distribution):
-        """Sets the distribution of this Deployment.
+        r"""Sets the distribution of this Deployment.
 
         部署位置信息列表
 
@@ -101,7 +101,7 @@ class Deployment:
 
     @property
     def edgecloud(self):
-        """Gets the edgecloud of this Deployment.
+        r"""Gets the edgecloud of this Deployment.
 
         :return: The edgecloud of this Deployment.
         :rtype: :class:`huaweicloudsdkiec.v1.DeploymentEdgecloud`
@@ -110,7 +110,7 @@ class Deployment:
 
     @edgecloud.setter
     def edgecloud(self, edgecloud):
-        """Sets the edgecloud of this Deployment.
+        r"""Sets the edgecloud of this Deployment.
 
         :param edgecloud: The edgecloud of this Deployment.
         :type edgecloud: :class:`huaweicloudsdkiec.v1.DeploymentEdgecloud`

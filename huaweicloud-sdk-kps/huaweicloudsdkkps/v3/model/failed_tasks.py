@@ -39,7 +39,7 @@ class FailedTasks:
     }
 
     def __init__(self, task_id=None, operate_type=None, task_time=None, task_error_code=None, task_error_msg=None, server_name=None, server_id=None, keypair_name=None):
-        """FailedTasks
+        r"""FailedTasks
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class FailedTasks:
 
     @property
     def task_id(self):
-        """Gets the task_id of this FailedTasks.
+        r"""Gets the task_id of this FailedTasks.
 
         虚拟机ID
 
@@ -103,7 +103,7 @@ class FailedTasks:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this FailedTasks.
+        r"""Sets the task_id of this FailedTasks.
 
         虚拟机ID
 
@@ -114,7 +114,7 @@ class FailedTasks:
 
     @property
     def operate_type(self):
-        """Gets the operate_type of this FailedTasks.
+        r"""Gets the operate_type of this FailedTasks.
 
         任务的操作类型。 - FAILED_RESET 重置 - FAILED_REPLACE 替换 - FAILED_UNBIND 解绑
 
@@ -125,7 +125,7 @@ class FailedTasks:
 
     @operate_type.setter
     def operate_type(self, operate_type):
-        """Sets the operate_type of this FailedTasks.
+        r"""Sets the operate_type of this FailedTasks.
 
         任务的操作类型。 - FAILED_RESET 重置 - FAILED_REPLACE 替换 - FAILED_UNBIND 解绑
 
@@ -136,7 +136,7 @@ class FailedTasks:
 
     @property
     def task_time(self):
-        """Gets the task_time of this FailedTasks.
+        r"""Gets the task_time of this FailedTasks.
 
         任务时间
 
@@ -147,7 +147,7 @@ class FailedTasks:
 
     @task_time.setter
     def task_time(self, task_time):
-        """Sets the task_time of this FailedTasks.
+        r"""Sets the task_time of this FailedTasks.
 
         任务时间
 
@@ -158,7 +158,7 @@ class FailedTasks:
 
     @property
     def task_error_code(self):
-        """Gets the task_error_code of this FailedTasks.
+        r"""Gets the task_error_code of this FailedTasks.
 
         任务失败错误码
 
@@ -169,7 +169,7 @@ class FailedTasks:
 
     @task_error_code.setter
     def task_error_code(self, task_error_code):
-        """Sets the task_error_code of this FailedTasks.
+        r"""Sets the task_error_code of this FailedTasks.
 
         任务失败错误码
 
@@ -180,7 +180,7 @@ class FailedTasks:
 
     @property
     def task_error_msg(self):
-        """Gets the task_error_msg of this FailedTasks.
+        r"""Gets the task_error_msg of this FailedTasks.
 
         任务失败错误码
 
@@ -191,7 +191,7 @@ class FailedTasks:
 
     @task_error_msg.setter
     def task_error_msg(self, task_error_msg):
-        """Sets the task_error_msg of this FailedTasks.
+        r"""Sets the task_error_msg of this FailedTasks.
 
         任务失败错误码
 
@@ -202,7 +202,7 @@ class FailedTasks:
 
     @property
     def server_name(self):
-        """Gets the server_name of this FailedTasks.
+        r"""Gets the server_name of this FailedTasks.
 
         虚拟机名称
 
@@ -213,7 +213,7 @@ class FailedTasks:
 
     @server_name.setter
     def server_name(self, server_name):
-        """Sets the server_name of this FailedTasks.
+        r"""Sets the server_name of this FailedTasks.
 
         虚拟机名称
 
@@ -224,7 +224,7 @@ class FailedTasks:
 
     @property
     def server_id(self):
-        """Gets the server_id of this FailedTasks.
+        r"""Gets the server_id of this FailedTasks.
 
         虚拟机ID
 
@@ -235,7 +235,7 @@ class FailedTasks:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this FailedTasks.
+        r"""Sets the server_id of this FailedTasks.
 
         虚拟机ID
 
@@ -246,7 +246,7 @@ class FailedTasks:
 
     @property
     def keypair_name(self):
-        """Gets the keypair_name of this FailedTasks.
+        r"""Gets the keypair_name of this FailedTasks.
 
         密钥对名称
 
@@ -257,7 +257,7 @@ class FailedTasks:
 
     @keypair_name.setter
     def keypair_name(self, keypair_name):
-        """Sets the keypair_name of this FailedTasks.
+        r"""Sets the keypair_name of this FailedTasks.
 
         密钥对名称
 

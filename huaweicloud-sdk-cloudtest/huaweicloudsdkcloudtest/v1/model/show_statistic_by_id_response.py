@@ -30,7 +30,7 @@ class ShowStatisticByIdResponse(SdkResponse):
     }
 
     def __init__(self, code=None, data=None, message=None):
-        """ShowStatisticByIdResponse
+        r"""ShowStatisticByIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowStatisticByIdResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ShowStatisticByIdResponse.
+        r"""Gets the code of this ShowStatisticByIdResponse.
 
         :return: The code of this ShowStatisticByIdResponse.
         :rtype: str
@@ -67,7 +67,7 @@ class ShowStatisticByIdResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ShowStatisticByIdResponse.
+        r"""Sets the code of this ShowStatisticByIdResponse.
 
         :param code: The code of this ShowStatisticByIdResponse.
         :type code: str
@@ -76,7 +76,7 @@ class ShowStatisticByIdResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowStatisticByIdResponse.
+        r"""Gets the data of this ShowStatisticByIdResponse.
 
         :return: The data of this ShowStatisticByIdResponse.
         :rtype: dict(str, int)
@@ -85,7 +85,7 @@ class ShowStatisticByIdResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowStatisticByIdResponse.
+        r"""Sets the data of this ShowStatisticByIdResponse.
 
         :param data: The data of this ShowStatisticByIdResponse.
         :type data: dict(str, int)
@@ -94,7 +94,7 @@ class ShowStatisticByIdResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowStatisticByIdResponse.
+        r"""Gets the message of this ShowStatisticByIdResponse.
 
         :return: The message of this ShowStatisticByIdResponse.
         :rtype: str
@@ -103,7 +103,7 @@ class ShowStatisticByIdResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowStatisticByIdResponse.
+        r"""Sets the message of this ShowStatisticByIdResponse.
 
         :param message: The message of this ShowStatisticByIdResponse.
         :type message: str

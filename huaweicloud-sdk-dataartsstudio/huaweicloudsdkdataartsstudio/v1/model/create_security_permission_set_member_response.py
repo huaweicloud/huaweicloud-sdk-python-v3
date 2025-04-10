@@ -54,7 +54,7 @@ class CreateSecurityPermissionSetMemberResponse(SdkResponse):
     }
 
     def __init__(self, id=None, permission_set_id=None, project_id=None, instance_id=None, member_type=None, member_id=None, member_name=None, member_status=None, workspace=None, cluster_type=None, cluster_id=None, cluster_name=None, create_time=None, create_user=None, deadline=None):
-        """CreateSecurityPermissionSetMemberResponse
+        r"""CreateSecurityPermissionSetMemberResponse
 
         The model defined in huaweicloud sdk
 
@@ -142,7 +142,7 @@ class CreateSecurityPermissionSetMemberResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateSecurityPermissionSetMemberResponse.
+        r"""Gets the id of this CreateSecurityPermissionSetMemberResponse.
 
         id
 
@@ -153,7 +153,7 @@ class CreateSecurityPermissionSetMemberResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateSecurityPermissionSetMemberResponse.
+        r"""Sets the id of this CreateSecurityPermissionSetMemberResponse.
 
         id
 
@@ -164,7 +164,7 @@ class CreateSecurityPermissionSetMemberResponse(SdkResponse):
 
     @property
     def permission_set_id(self):
-        """Gets the permission_set_id of this CreateSecurityPermissionSetMemberResponse.
+        r"""Gets the permission_set_id of this CreateSecurityPermissionSetMemberResponse.
 
         权限集id
 
@@ -175,7 +175,7 @@ class CreateSecurityPermissionSetMemberResponse(SdkResponse):
 
     @permission_set_id.setter
     def permission_set_id(self, permission_set_id):
-        """Sets the permission_set_id of this CreateSecurityPermissionSetMemberResponse.
+        r"""Sets the permission_set_id of this CreateSecurityPermissionSetMemberResponse.
 
         权限集id
 
@@ -186,7 +186,7 @@ class CreateSecurityPermissionSetMemberResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateSecurityPermissionSetMemberResponse.
+        r"""Gets the project_id of this CreateSecurityPermissionSetMemberResponse.
 
         项目id
 
@@ -197,7 +197,7 @@ class CreateSecurityPermissionSetMemberResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateSecurityPermissionSetMemberResponse.
+        r"""Sets the project_id of this CreateSecurityPermissionSetMemberResponse.
 
         项目id
 
@@ -208,7 +208,7 @@ class CreateSecurityPermissionSetMemberResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateSecurityPermissionSetMemberResponse.
+        r"""Gets the instance_id of this CreateSecurityPermissionSetMemberResponse.
 
         实例id
 
@@ -219,7 +219,7 @@ class CreateSecurityPermissionSetMemberResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateSecurityPermissionSetMemberResponse.
+        r"""Sets the instance_id of this CreateSecurityPermissionSetMemberResponse.
 
         实例id
 
@@ -230,7 +230,7 @@ class CreateSecurityPermissionSetMemberResponse(SdkResponse):
 
     @property
     def member_type(self):
-        """Gets the member_type of this CreateSecurityPermissionSetMemberResponse.
+        r"""Gets the member_type of this CreateSecurityPermissionSetMemberResponse.
 
         成员类型, 用户/用户组/工作空间角色(废弃)/集群角色, USER, USER_GROUP, WORKSPACE_ROLE, CLUSTER_ROLE
 
@@ -241,7 +241,7 @@ class CreateSecurityPermissionSetMemberResponse(SdkResponse):
 
     @member_type.setter
     def member_type(self, member_type):
-        """Sets the member_type of this CreateSecurityPermissionSetMemberResponse.
+        r"""Sets the member_type of this CreateSecurityPermissionSetMemberResponse.
 
         成员类型, 用户/用户组/工作空间角色(废弃)/集群角色, USER, USER_GROUP, WORKSPACE_ROLE, CLUSTER_ROLE
 
@@ -252,7 +252,7 @@ class CreateSecurityPermissionSetMemberResponse(SdkResponse):
 
     @property
     def member_id(self):
-        """Gets the member_id of this CreateSecurityPermissionSetMemberResponse.
+        r"""Gets the member_id of this CreateSecurityPermissionSetMemberResponse.
 
         成员id
 
@@ -263,7 +263,7 @@ class CreateSecurityPermissionSetMemberResponse(SdkResponse):
 
     @member_id.setter
     def member_id(self, member_id):
-        """Sets the member_id of this CreateSecurityPermissionSetMemberResponse.
+        r"""Sets the member_id of this CreateSecurityPermissionSetMemberResponse.
 
         成员id
 
@@ -274,7 +274,7 @@ class CreateSecurityPermissionSetMemberResponse(SdkResponse):
 
     @property
     def member_name(self):
-        """Gets the member_name of this CreateSecurityPermissionSetMemberResponse.
+        r"""Gets the member_name of this CreateSecurityPermissionSetMemberResponse.
 
         成员名称
 
@@ -285,7 +285,7 @@ class CreateSecurityPermissionSetMemberResponse(SdkResponse):
 
     @member_name.setter
     def member_name(self, member_name):
-        """Sets the member_name of this CreateSecurityPermissionSetMemberResponse.
+        r"""Sets the member_name of this CreateSecurityPermissionSetMemberResponse.
 
         成员名称
 
@@ -296,7 +296,7 @@ class CreateSecurityPermissionSetMemberResponse(SdkResponse):
 
     @property
     def member_status(self):
-        """Gets the member_status of this CreateSecurityPermissionSetMemberResponse.
+        r"""Gets the member_status of this CreateSecurityPermissionSetMemberResponse.
 
         成员状态, NORMAL, UNFINISHED
 
@@ -307,7 +307,7 @@ class CreateSecurityPermissionSetMemberResponse(SdkResponse):
 
     @member_status.setter
     def member_status(self, member_status):
-        """Sets the member_status of this CreateSecurityPermissionSetMemberResponse.
+        r"""Sets the member_status of this CreateSecurityPermissionSetMemberResponse.
 
         成员状态, NORMAL, UNFINISHED
 
@@ -318,7 +318,7 @@ class CreateSecurityPermissionSetMemberResponse(SdkResponse):
 
     @property
     def workspace(self):
-        """Gets the workspace of this CreateSecurityPermissionSetMemberResponse.
+        r"""Gets the workspace of this CreateSecurityPermissionSetMemberResponse.
 
         工作空间(仅工作空间角色需要)
 
@@ -329,7 +329,7 @@ class CreateSecurityPermissionSetMemberResponse(SdkResponse):
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this CreateSecurityPermissionSetMemberResponse.
+        r"""Sets the workspace of this CreateSecurityPermissionSetMemberResponse.
 
         工作空间(仅工作空间角色需要)
 
@@ -340,7 +340,7 @@ class CreateSecurityPermissionSetMemberResponse(SdkResponse):
 
     @property
     def cluster_type(self):
-        """Gets the cluster_type of this CreateSecurityPermissionSetMemberResponse.
+        r"""Gets the cluster_type of this CreateSecurityPermissionSetMemberResponse.
 
         集群类型(仅集群角色需要), MRS, DWS, DLI
 
@@ -351,7 +351,7 @@ class CreateSecurityPermissionSetMemberResponse(SdkResponse):
 
     @cluster_type.setter
     def cluster_type(self, cluster_type):
-        """Sets the cluster_type of this CreateSecurityPermissionSetMemberResponse.
+        r"""Sets the cluster_type of this CreateSecurityPermissionSetMemberResponse.
 
         集群类型(仅集群角色需要), MRS, DWS, DLI
 
@@ -362,7 +362,7 @@ class CreateSecurityPermissionSetMemberResponse(SdkResponse):
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CreateSecurityPermissionSetMemberResponse.
+        r"""Gets the cluster_id of this CreateSecurityPermissionSetMemberResponse.
 
         集群id(仅集群角色需要)
 
@@ -373,7 +373,7 @@ class CreateSecurityPermissionSetMemberResponse(SdkResponse):
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CreateSecurityPermissionSetMemberResponse.
+        r"""Sets the cluster_id of this CreateSecurityPermissionSetMemberResponse.
 
         集群id(仅集群角色需要)
 
@@ -384,7 +384,7 @@ class CreateSecurityPermissionSetMemberResponse(SdkResponse):
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this CreateSecurityPermissionSetMemberResponse.
+        r"""Gets the cluster_name of this CreateSecurityPermissionSetMemberResponse.
 
         集群名称(仅集群角色需要)
 
@@ -395,7 +395,7 @@ class CreateSecurityPermissionSetMemberResponse(SdkResponse):
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this CreateSecurityPermissionSetMemberResponse.
+        r"""Sets the cluster_name of this CreateSecurityPermissionSetMemberResponse.
 
         集群名称(仅集群角色需要)
 
@@ -406,7 +406,7 @@ class CreateSecurityPermissionSetMemberResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreateSecurityPermissionSetMemberResponse.
+        r"""Gets the create_time of this CreateSecurityPermissionSetMemberResponse.
 
         创建时间
 
@@ -417,7 +417,7 @@ class CreateSecurityPermissionSetMemberResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreateSecurityPermissionSetMemberResponse.
+        r"""Sets the create_time of this CreateSecurityPermissionSetMemberResponse.
 
         创建时间
 
@@ -428,7 +428,7 @@ class CreateSecurityPermissionSetMemberResponse(SdkResponse):
 
     @property
     def create_user(self):
-        """Gets the create_user of this CreateSecurityPermissionSetMemberResponse.
+        r"""Gets the create_user of this CreateSecurityPermissionSetMemberResponse.
 
         创建者
 
@@ -439,7 +439,7 @@ class CreateSecurityPermissionSetMemberResponse(SdkResponse):
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this CreateSecurityPermissionSetMemberResponse.
+        r"""Sets the create_user of this CreateSecurityPermissionSetMemberResponse.
 
         创建者
 
@@ -450,7 +450,7 @@ class CreateSecurityPermissionSetMemberResponse(SdkResponse):
 
     @property
     def deadline(self):
-        """Gets the deadline of this CreateSecurityPermissionSetMemberResponse.
+        r"""Gets the deadline of this CreateSecurityPermissionSetMemberResponse.
 
         到期时间
 
@@ -461,7 +461,7 @@ class CreateSecurityPermissionSetMemberResponse(SdkResponse):
 
     @deadline.setter
     def deadline(self, deadline):
-        """Sets the deadline of this CreateSecurityPermissionSetMemberResponse.
+        r"""Sets the deadline of this CreateSecurityPermissionSetMemberResponse.
 
         到期时间
 

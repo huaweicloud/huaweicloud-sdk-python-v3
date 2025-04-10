@@ -27,7 +27,7 @@ class CreateTenantVpcIgwRequest:
     }
 
     def __init__(self, fields=None, body=None):
-        """CreateTenantVpcIgwRequest
+        r"""CreateTenantVpcIgwRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateTenantVpcIgwRequest:
 
     @property
     def fields(self):
-        """Gets the fields of this CreateTenantVpcIgwRequest.
+        r"""Gets the fields of this CreateTenantVpcIgwRequest.
 
         形式为\\\"fields=id&fields=project_id&...\\\"，支持字段：id/project_id/vpc_id/created_at/updated_at/name
 
@@ -61,7 +61,7 @@ class CreateTenantVpcIgwRequest:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this CreateTenantVpcIgwRequest.
+        r"""Sets the fields of this CreateTenantVpcIgwRequest.
 
         形式为\\\"fields=id&fields=project_id&...\\\"，支持字段：id/project_id/vpc_id/created_at/updated_at/name
 
@@ -72,7 +72,7 @@ class CreateTenantVpcIgwRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateTenantVpcIgwRequest.
+        r"""Gets the body of this CreateTenantVpcIgwRequest.
 
         :return: The body of this CreateTenantVpcIgwRequest.
         :rtype: :class:`huaweicloudsdkeip.v3.CreateTenantVpcIgwRequestBody`
@@ -81,7 +81,7 @@ class CreateTenantVpcIgwRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTenantVpcIgwRequest.
+        r"""Sets the body of this CreateTenantVpcIgwRequest.
 
         :param body: The body of this CreateTenantVpcIgwRequest.
         :type body: :class:`huaweicloudsdkeip.v3.CreateTenantVpcIgwRequestBody`

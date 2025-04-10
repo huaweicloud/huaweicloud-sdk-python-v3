@@ -27,7 +27,7 @@ class RestoreToExistingInstanceRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """RestoreToExistingInstanceRequest
+        r"""RestoreToExistingInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RestoreToExistingInstanceRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this RestoreToExistingInstanceRequest.
+        r"""Gets the x_language of this RestoreToExistingInstanceRequest.
 
         语言
 
@@ -61,7 +61,7 @@ class RestoreToExistingInstanceRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this RestoreToExistingInstanceRequest.
+        r"""Sets the x_language of this RestoreToExistingInstanceRequest.
 
         语言
 
@@ -72,7 +72,7 @@ class RestoreToExistingInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this RestoreToExistingInstanceRequest.
+        r"""Gets the body of this RestoreToExistingInstanceRequest.
 
         :return: The body of this RestoreToExistingInstanceRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.RestoreToExistingInstanceRequestBody`
@@ -81,7 +81,7 @@ class RestoreToExistingInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RestoreToExistingInstanceRequest.
+        r"""Sets the body of this RestoreToExistingInstanceRequest.
 
         :param body: The body of this RestoreToExistingInstanceRequest.
         :type body: :class:`huaweicloudsdkrds.v3.RestoreToExistingInstanceRequestBody`

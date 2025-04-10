@@ -37,7 +37,7 @@ class VpnGatewayRoutingTableEntryVo:
     }
 
     def __init__(self, destination=None, nexthop=None, outbound_interface_ip=None, origin=None, as_path=None, med=None, nexthop_resource=None):
-        """VpnGatewayRoutingTableEntryVo
+        r"""VpnGatewayRoutingTableEntryVo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class VpnGatewayRoutingTableEntryVo:
 
     @property
     def destination(self):
-        """Gets the destination of this VpnGatewayRoutingTableEntryVo.
+        r"""Gets the destination of this VpnGatewayRoutingTableEntryVo.
 
         目的地址
 
@@ -96,7 +96,7 @@ class VpnGatewayRoutingTableEntryVo:
 
     @destination.setter
     def destination(self, destination):
-        """Sets the destination of this VpnGatewayRoutingTableEntryVo.
+        r"""Sets the destination of this VpnGatewayRoutingTableEntryVo.
 
         目的地址
 
@@ -107,7 +107,7 @@ class VpnGatewayRoutingTableEntryVo:
 
     @property
     def nexthop(self):
-        """Gets the nexthop of this VpnGatewayRoutingTableEntryVo.
+        r"""Gets the nexthop of this VpnGatewayRoutingTableEntryVo.
 
         下一跳地址
 
@@ -118,7 +118,7 @@ class VpnGatewayRoutingTableEntryVo:
 
     @nexthop.setter
     def nexthop(self, nexthop):
-        """Sets the nexthop of this VpnGatewayRoutingTableEntryVo.
+        r"""Sets the nexthop of this VpnGatewayRoutingTableEntryVo.
 
         下一跳地址
 
@@ -129,7 +129,7 @@ class VpnGatewayRoutingTableEntryVo:
 
     @property
     def outbound_interface_ip(self):
-        """Gets the outbound_interface_ip of this VpnGatewayRoutingTableEntryVo.
+        r"""Gets the outbound_interface_ip of this VpnGatewayRoutingTableEntryVo.
 
         出接口地址
 
@@ -140,7 +140,7 @@ class VpnGatewayRoutingTableEntryVo:
 
     @outbound_interface_ip.setter
     def outbound_interface_ip(self, outbound_interface_ip):
-        """Sets the outbound_interface_ip of this VpnGatewayRoutingTableEntryVo.
+        r"""Sets the outbound_interface_ip of this VpnGatewayRoutingTableEntryVo.
 
         出接口地址
 
@@ -151,7 +151,7 @@ class VpnGatewayRoutingTableEntryVo:
 
     @property
     def origin(self):
-        """Gets the origin of this VpnGatewayRoutingTableEntryVo.
+        r"""Gets the origin of this VpnGatewayRoutingTableEntryVo.
 
         BGP路由来源
 
@@ -162,7 +162,7 @@ class VpnGatewayRoutingTableEntryVo:
 
     @origin.setter
     def origin(self, origin):
-        """Sets the origin of this VpnGatewayRoutingTableEntryVo.
+        r"""Sets the origin of this VpnGatewayRoutingTableEntryVo.
 
         BGP路由来源
 
@@ -173,7 +173,7 @@ class VpnGatewayRoutingTableEntryVo:
 
     @property
     def as_path(self):
-        """Gets the as_path of this VpnGatewayRoutingTableEntryVo.
+        r"""Gets the as_path of this VpnGatewayRoutingTableEntryVo.
 
         BGP路由的AS路径
 
@@ -184,7 +184,7 @@ class VpnGatewayRoutingTableEntryVo:
 
     @as_path.setter
     def as_path(self, as_path):
-        """Sets the as_path of this VpnGatewayRoutingTableEntryVo.
+        r"""Sets the as_path of this VpnGatewayRoutingTableEntryVo.
 
         BGP路由的AS路径
 
@@ -195,7 +195,7 @@ class VpnGatewayRoutingTableEntryVo:
 
     @property
     def med(self):
-        """Gets the med of this VpnGatewayRoutingTableEntryVo.
+        r"""Gets the med of this VpnGatewayRoutingTableEntryVo.
 
         BGP路由的MED值
 
@@ -206,7 +206,7 @@ class VpnGatewayRoutingTableEntryVo:
 
     @med.setter
     def med(self, med):
-        """Sets the med of this VpnGatewayRoutingTableEntryVo.
+        r"""Sets the med of this VpnGatewayRoutingTableEntryVo.
 
         BGP路由的MED值
 
@@ -217,7 +217,7 @@ class VpnGatewayRoutingTableEntryVo:
 
     @property
     def nexthop_resource(self):
-        """Gets the nexthop_resource of this VpnGatewayRoutingTableEntryVo.
+        r"""Gets the nexthop_resource of this VpnGatewayRoutingTableEntryVo.
 
         :return: The nexthop_resource of this VpnGatewayRoutingTableEntryVo.
         :rtype: :class:`huaweicloudsdkvpn.v5.NexthopResourceVo`
@@ -226,7 +226,7 @@ class VpnGatewayRoutingTableEntryVo:
 
     @nexthop_resource.setter
     def nexthop_resource(self, nexthop_resource):
-        """Sets the nexthop_resource of this VpnGatewayRoutingTableEntryVo.
+        r"""Sets the nexthop_resource of this VpnGatewayRoutingTableEntryVo.
 
         :param nexthop_resource: The nexthop_resource of this VpnGatewayRoutingTableEntryVo.
         :type nexthop_resource: :class:`huaweicloudsdkvpn.v5.NexthopResourceVo`

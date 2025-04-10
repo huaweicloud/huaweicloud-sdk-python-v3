@@ -34,7 +34,7 @@ class DdmAsyncClient(Client):
         return client_builder
 
     def change_database_version_async(self, request):
-        """变更内核版本
+        r"""变更内核版本
 
         变更内核版本
         
@@ -101,7 +101,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def list_database_available_versions_async(self, request):
-        """查询可变更内核版本
+        r"""查询可变更内核版本
 
         查询可变更内核版本
         
@@ -166,7 +166,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def list_ddm_configurations_async(self, request):
-        """获取参数模板列表
+        r"""获取参数模板列表
 
         获取参数模板列表，包括所有DDM的默认参数模板和用户创建的参数模板。
         
@@ -233,7 +233,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def roll_back_database_version_async(self, request):
-        """回滚内核版本
+        r"""回滚内核版本
 
         回滚内核版本
         
@@ -298,7 +298,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def show_configuration_async(self, request):
-        """获取指定参数模板的参数
+        r"""获取指定参数模板的参数
 
         获取指定参数模板的参数
         
@@ -363,7 +363,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def show_risk_info_async(self, request):
-        """内核版本风险提醒
+        r"""内核版本风险提醒
 
         内核版本风险提醒
         
@@ -428,7 +428,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def list_api_version_async(self, request):
-        """查询API版本列表
+        r"""查询API版本列表
 
         查询API版本列表。
         
@@ -491,7 +491,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def create_database_async(self, request):
-        """创建DDM逻辑库
+        r"""创建DDM逻辑库
 
         创建DDM逻辑库。
         
@@ -558,7 +558,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def create_ddm_database_async(self, request):
-        """创建DDM逻辑库
+        r"""创建DDM逻辑库
 
         创建DDM逻辑库。
         
@@ -625,7 +625,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def create_group_async(self, request):
-        """创建组
+        r"""创建组
 
         创建组
         
@@ -692,7 +692,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def create_instance_async(self, request):
-        """购买DDM实例
+        r"""购买DDM实例
 
         创建一个DDM实例。
         
@@ -759,7 +759,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def create_users_async(self, request):
-        """创建DDM帐号
+        r"""创建DDM帐号
 
         DDM帐号用于连接和管理逻辑库。一个DDM实例最多能创建100个DDM帐号，一个DDM帐号可以关联多个逻辑库。
         
@@ -826,7 +826,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def delete_database_async(self, request):
-        """删除DDM逻辑库
+        r"""删除DDM逻辑库
 
         删除指定的逻辑库，释放该逻辑库的所有资源。
         
@@ -895,7 +895,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def delete_ddm_database_async(self, request):
-        """删除逻辑库
+        r"""删除逻辑库
 
         删除指定的逻辑库。
         
@@ -964,7 +964,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def delete_ddm_instance_async(self, request):
-        """删除DDM实例
+        r"""删除DDM实例
 
         删除指定的DDM实例，释放该实例的所有资源。
         
@@ -1031,7 +1031,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def delete_instance_async(self, request):
-        """删除DDM实例
+        r"""删除DDM实例
 
         删除指定的DDM实例，释放该实例的所有资源。
         
@@ -1098,7 +1098,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def delete_user_async(self, request):
-        """删除DDM帐号
+        r"""删除DDM帐号
 
         删除指定的DDM实例帐号，如果帐号关联了逻辑库，则对应的关联关系也会删除。
         
@@ -1165,7 +1165,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def execute_kill_logical_processes_async(self, request):
-        """kill逻辑会话
+        r"""kill逻辑会话
 
         kill逻辑会话
         
@@ -1232,7 +1232,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def execute_kill_physical_processes_async(self, request):
-        """kill物理会话
+        r"""kill物理会话
 
         kill物理会话
         
@@ -1299,7 +1299,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def expand_ddm_instance_nodes_async(self, request):
-        """DDM实例节点扩容
+        r"""DDM实例节点扩容
 
         对指定的DDM实例的节点个数进行扩容，支持按需实例与包周期实例。
         
@@ -1366,7 +1366,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def expand_instance_nodes_async(self, request):
-        """DDM实例节点扩容
+        r"""DDM实例节点扩容
 
         对指定的DDM实例的节点个数进行扩容，支持按需实例与包周期实例。
         
@@ -1433,7 +1433,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def list_available_rds_list_async(self, request):
-        """查询创建逻辑库可选取的数据库实例列表
+        r"""查询创建逻辑库可选取的数据库实例列表
 
         查询创建逻辑库可选取的数据库实例列表。
         
@@ -1502,7 +1502,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def list_databases_async(self, request):
-        """查询DDM逻辑库列表
+        r"""查询DDM逻辑库列表
 
         查询DDM逻辑库列表。
         
@@ -1571,7 +1571,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def list_ddm_engines_async(self, request):
-        """查询DDM引擎信息
+        r"""查询DDM引擎信息
 
         查询DDM引擎信息
         
@@ -1638,7 +1638,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def list_ddm_flavors_async(self, request):
-        """查询DDM可用区规格信息
+        r"""查询DDM可用区规格信息
 
         查询DDM可用区规格信息
         
@@ -1711,7 +1711,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def list_engines_async(self, request):
-        """查询DDM引擎信息
+        r"""查询DDM引擎信息
 
         查询DDM引擎信息详情。
         
@@ -1778,7 +1778,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def list_flavors_async(self, request):
-        """查询DDM可用区规格信息
+        r"""查询DDM可用区规格信息
 
         查询DDM可用区规格信息详情。
         
@@ -1847,7 +1847,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def list_group_async(self, request):
-        """获取实例组信息列表
+        r"""获取实例组信息列表
 
         获取实例组信息列表
         
@@ -1916,7 +1916,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def list_instances_async(self, request):
-        """查询DDM实例列表
+        r"""查询DDM实例列表
 
         查询DDM实例列表。
         
@@ -1983,7 +1983,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def list_nodes_async(self, request):
-        """查询DDM实例节点列表
+        r"""查询DDM实例节点列表
 
         查询DDM实例节点列表。
         
@@ -2052,7 +2052,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def list_read_write_ratio_async(self, request):
-        """读写比例监控
+        r"""读写比例监控
 
         查询指定时间段内在DDM实例的读写次数。
         
@@ -2125,7 +2125,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def list_slow_log_async(self, request):
-        """慢日志监控
+        r"""慢日志监控
 
         查询指定时间段内在DDM实例上执行过的慢sql相关信息。
         
@@ -2198,7 +2198,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def list_slow_logs_async(self, request):
-        """慢日志监控
+        r"""慢日志监控
 
         查询指定时间段内在DDM实例上执行过的慢sql相关信息。
         
@@ -2271,7 +2271,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def list_users_async(self, request):
-        """查询DDM帐号列表
+        r"""查询DDM帐号列表
 
         查询DDM帐号列表。
         
@@ -2340,7 +2340,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def rebuild_config_async(self, request):
-        """DDM表数据重载
+        r"""DDM表数据重载
 
         DDM实例跨region容灾场景下，针对目标DDM实例实现表数据reload，使数据同步。
         
@@ -2405,7 +2405,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def reset_administrator_async(self, request):
-        """DDM管理员账号密码管理
+        r"""DDM管理员账号密码管理
 
         首次调用时新建DDM管理员帐号并设置密码。后续调用时仅更新管理员密码。
         
@@ -2472,7 +2472,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def reset_user_password_async(self, request):
-        """重置DDM账号密码
+        r"""重置DDM账号密码
 
         重置现有DDM帐号的密码。
         
@@ -2541,7 +2541,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def resize_flavor_async(self, request):
-        """变更DDM实例规格
+        r"""变更DDM实例规格
 
         变更DDM实例规格。
         
@@ -2608,7 +2608,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def restart_instance_async(self, request):
-        """重启DDM实例
+        r"""重启DDM实例
 
         重启指定的DDM实例。
         
@@ -2675,7 +2675,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def show_database_async(self, request):
-        """查询DDM逻辑库详细信息
+        r"""查询DDM逻辑库详细信息
 
         查询指定逻辑库的详细信息。
         
@@ -2742,7 +2742,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def show_ddm_job_result_async(self, request):
-        """获取指定ID的任务信息
+        r"""获取指定ID的任务信息
 
         获取指定ID的任务信息
         
@@ -2807,7 +2807,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def show_instance_async(self, request):
-        """查询DDM实例详情
+        r"""查询DDM实例详情
 
         查询指定DDM实例的详细信息。
         
@@ -2872,7 +2872,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def show_instance_param_async(self, request):
-        """查询DDM指定实例的参数详情
+        r"""查询DDM指定实例的参数详情
 
         查询DDM指定实例的参数详情。
         
@@ -2943,7 +2943,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def show_logical_processes_async(self, request):
-        """查询逻辑会话列表
+        r"""查询逻辑会话列表
 
         查询逻辑会话列表
         
@@ -3014,7 +3014,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def show_node_async(self, request):
-        """查询DDM实例节点详情
+        r"""查询DDM实例节点详情
 
         查询DDM实例节点详情。
         
@@ -3081,7 +3081,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def show_physical_processes_async(self, request):
-        """查询物理会话列表
+        r"""查询物理会话列表
 
         查询物理会话列表
         
@@ -3152,7 +3152,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def show_processes_audit_log_async(self, request):
-        """查询kill会话审计日志
+        r"""查询kill会话审计日志
 
         查询kill会话审计日志
         
@@ -3225,7 +3225,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def shrink_instance_nodes_async(self, request):
-        """DDM实例节点缩容
+        r"""DDM实例节点缩容
 
         对指定的DDM实例的节点个数进行缩容。
         
@@ -3292,7 +3292,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def switch_ssl_async(self, request):
-        """为实例设置SSL数据加密
+        r"""为实例设置SSL数据加密
 
         为实例设置SSL数据加密。
         
@@ -3359,7 +3359,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def update_database_info_async(self, request):
-        """同步DN信息
+        r"""同步DN信息
 
         同步当前DDM实例已关联的所有DN实例配置信息。
         
@@ -3424,7 +3424,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def update_instance_name_async(self, request):
-        """修改DDM实例名称
+        r"""修改DDM实例名称
 
         修改DDM实例名称。
         
@@ -3491,7 +3491,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def update_instance_param_async(self, request):
-        """修改DDM实例参数
+        r"""修改DDM实例参数
 
         修改DDM实例参数。
         
@@ -3560,7 +3560,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def update_instance_security_group_async(self, request):
-        """修改DDM实例安全组
+        r"""修改DDM实例安全组
 
         修改DDM实例安全组。
         
@@ -3627,7 +3627,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def update_read_and_write_strategy_async(self, request):
-        """修改DDM已关联的数据库实例的读策略
+        r"""修改DDM已关联的数据库实例的读策略
 
         修改DDM已关联的数据库实例的读策略。
         
@@ -3694,7 +3694,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def update_user_async(self, request):
-        """修改DDM帐号
+        r"""修改DDM帐号
 
         修改现有DDM帐号的权限或者与逻辑库的管理关系。
         
@@ -3763,7 +3763,7 @@ class DdmAsyncClient(Client):
         return http_info
 
     def validate_weak_password_async(self, request):
-        """弱密码校验
+        r"""弱密码校验
 
         弱密码校验
         

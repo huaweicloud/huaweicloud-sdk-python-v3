@@ -24,7 +24,7 @@ class DeleteWindowsBareMetalServerPasswordResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteWindowsBareMetalServerPasswordResponse
+        r"""DeleteWindowsBareMetalServerPasswordResponse
 
         The model defined in huaweicloud sdk
 

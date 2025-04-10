@@ -31,7 +31,7 @@ class HttpListCustomerIpsResponseData:
     }
 
     def __init__(self, limit=None, offset=None, total=None, records=None):
-        """HttpListCustomerIpsResponseData
+        r"""HttpListCustomerIpsResponseData
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class HttpListCustomerIpsResponseData:
 
     @property
     def limit(self):
-        """Gets the limit of this HttpListCustomerIpsResponseData.
+        r"""Gets the limit of this HttpListCustomerIpsResponseData.
 
         每页显示个数，范围为1-1024
 
@@ -75,7 +75,7 @@ class HttpListCustomerIpsResponseData:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this HttpListCustomerIpsResponseData.
+        r"""Sets the limit of this HttpListCustomerIpsResponseData.
 
         每页显示个数，范围为1-1024
 
@@ -86,7 +86,7 @@ class HttpListCustomerIpsResponseData:
 
     @property
     def offset(self):
-        """Gets the offset of this HttpListCustomerIpsResponseData.
+        r"""Gets the offset of this HttpListCustomerIpsResponseData.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
@@ -97,7 +97,7 @@ class HttpListCustomerIpsResponseData:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this HttpListCustomerIpsResponseData.
+        r"""Sets the offset of this HttpListCustomerIpsResponseData.
 
         偏移量：指定返回记录的开始位置，必须为数字，取值范围为大于或等于0，默认0
 
@@ -108,7 +108,7 @@ class HttpListCustomerIpsResponseData:
 
     @property
     def total(self):
-        """Gets the total of this HttpListCustomerIpsResponseData.
+        r"""Gets the total of this HttpListCustomerIpsResponseData.
 
         查询获得自定义ips规则列表总数
 
@@ -119,7 +119,7 @@ class HttpListCustomerIpsResponseData:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this HttpListCustomerIpsResponseData.
+        r"""Sets the total of this HttpListCustomerIpsResponseData.
 
         查询获得自定义ips规则列表总数
 
@@ -130,7 +130,7 @@ class HttpListCustomerIpsResponseData:
 
     @property
     def records(self):
-        """Gets the records of this HttpListCustomerIpsResponseData.
+        r"""Gets the records of this HttpListCustomerIpsResponseData.
 
         自定义ips规则记录
 
@@ -141,7 +141,7 @@ class HttpListCustomerIpsResponseData:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this HttpListCustomerIpsResponseData.
+        r"""Sets the records of this HttpListCustomerIpsResponseData.
 
         自定义ips规则记录
 

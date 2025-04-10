@@ -29,7 +29,7 @@ class UserGroup:
     }
 
     def __init__(self, group_name=None, group_source=None, group_id=None):
-        """UserGroup
+        r"""UserGroup
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class UserGroup:
 
     @property
     def group_name(self):
-        """Gets the group_name of this UserGroup.
+        r"""Gets the group_name of this UserGroup.
 
         用户组名
 
@@ -65,7 +65,7 @@ class UserGroup:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this UserGroup.
+        r"""Sets the group_name of this UserGroup.
 
         用户组名
 
@@ -76,7 +76,7 @@ class UserGroup:
 
     @property
     def group_source(self):
-        """Gets the group_source of this UserGroup.
+        r"""Gets the group_source of this UserGroup.
 
         用户组类型
 
@@ -87,7 +87,7 @@ class UserGroup:
 
     @group_source.setter
     def group_source(self, group_source):
-        """Sets the group_source of this UserGroup.
+        r"""Sets the group_source of this UserGroup.
 
         用户组类型
 
@@ -98,7 +98,7 @@ class UserGroup:
 
     @property
     def group_id(self):
-        """Gets the group_id of this UserGroup.
+        r"""Gets the group_id of this UserGroup.
 
         用户组id
 
@@ -109,7 +109,7 @@ class UserGroup:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this UserGroup.
+        r"""Sets the group_id of this UserGroup.
 
         用户组id
 

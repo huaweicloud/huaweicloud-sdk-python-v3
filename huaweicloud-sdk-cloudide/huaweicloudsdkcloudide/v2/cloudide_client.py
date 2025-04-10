@@ -34,7 +34,7 @@ class CloudIDEClient(Client):
         return client_builder
 
     def add_extension_evaluation(self, request):
-        """添加插件评论
+        r"""添加插件评论
 
         添加插件评论
         
@@ -99,7 +99,7 @@ class CloudIDEClient(Client):
         return http_info
 
     def add_extension_evaluation_reply(self, request):
-        """添加评论回复、回复评论回复
+        r"""添加评论回复、回复评论回复
 
         添加评论回复、回复评论回复
         
@@ -164,7 +164,7 @@ class CloudIDEClient(Client):
         return http_info
 
     def add_extension_star(self, request):
-        """添加新评星
+        r"""添加新评星
 
         添加新评星
         
@@ -229,7 +229,7 @@ class CloudIDEClient(Client):
         return http_info
 
     def check_malicious_extension_evaluation(self, request):
-        """举报评论,举报回复
+        r"""举报评论,举报回复
 
         举报评论,举报回复
         
@@ -294,7 +294,7 @@ class CloudIDEClient(Client):
         return http_info
 
     def create_extension_authorization(self, request):
-        """设置ide实例对插件的授权
+        r"""设置ide实例对插件的授权
 
         设置ide实例对插件的授权。同意、不同意、未知（下次重新询问）
         
@@ -361,7 +361,7 @@ class CloudIDEClient(Client):
         return http_info
 
     def delete_evaluation(self, request):
-        """删除评论
+        r"""删除评论
 
         删除评论
         
@@ -426,7 +426,7 @@ class CloudIDEClient(Client):
         return http_info
 
     def delete_evaluation_reply(self, request):
-        """删除回复
+        r"""删除回复
 
         删除回复
         
@@ -491,7 +491,7 @@ class CloudIDEClient(Client):
         return http_info
 
     def list_extensions(self, request):
-        """查询插件列表
+        r"""查询插件列表
 
         查询插件列表
         
@@ -556,7 +556,7 @@ class CloudIDEClient(Client):
         return http_info
 
     def list_project_templates(self, request):
-        """查询技术栈模板工程
+        r"""查询技术栈模板工程
 
         查询技术栈模板工程
         
@@ -623,7 +623,7 @@ class CloudIDEClient(Client):
         return http_info
 
     def list_publisher(self, request):
-        """获取当前用户下的发布商列表
+        r"""获取当前用户下的发布商列表
 
         获取当前用户下的发布商列表
         
@@ -688,7 +688,7 @@ class CloudIDEClient(Client):
         return http_info
 
     def list_stacks(self, request):
-        """按region获取标签所有技术栈
+        r"""按region获取标签所有技术栈
 
         按region获取标签所有技术栈
         
@@ -753,7 +753,7 @@ class CloudIDEClient(Client):
         return http_info
 
     def publish_extension(self, request):
-        """插件发布
+        r"""插件发布
 
         插件发布
         
@@ -822,7 +822,7 @@ class CloudIDEClient(Client):
         return http_info
 
     def show_account_status(self, request):
-        """查询当前帐号访问权限
+        r"""查询当前帐号访问权限
 
         查询当前帐号访问权限
         
@@ -885,7 +885,7 @@ class CloudIDEClient(Client):
         return http_info
 
     def show_category_list(self, request):
-        """查询插件分类
+        r"""查询插件分类
 
         查询插件分类
         
@@ -958,7 +958,7 @@ class CloudIDEClient(Client):
         return http_info
 
     def show_extension_authorization(self, request):
-        """查询ide实例对插件的授权情况
+        r"""查询ide实例对插件的授权情况
 
         查询ide实例对插件的授权情况，同意授权的插件能在ide实例内携带登陆用户的token调用第三方服务
         
@@ -1027,7 +1027,7 @@ class CloudIDEClient(Client):
         return http_info
 
     def show_extension_detail(self, request):
-        """查询插件详细信息
+        r"""查询插件详细信息
 
         查询插件详细信息
         
@@ -1092,7 +1092,7 @@ class CloudIDEClient(Client):
         return http_info
 
     def show_extension_evaluation(self, request):
-        """查询插件评价
+        r"""查询插件评价
 
         查询插件评价
         
@@ -1161,7 +1161,7 @@ class CloudIDEClient(Client):
         return http_info
 
     def show_extension_evaluation_star(self, request):
-        """查询插件评星
+        r"""查询插件评星
 
         查询插件评星
         
@@ -1230,7 +1230,7 @@ class CloudIDEClient(Client):
         return http_info
 
     def show_extension_testing_result(self, request):
-        """获取插件检测结果
+        r"""获取插件检测结果
 
         获取插件检测结果
         
@@ -1297,7 +1297,7 @@ class CloudIDEClient(Client):
         return http_info
 
     def show_price(self, request):
-        """获取技术栈计费信息
+        r"""获取技术栈计费信息
 
         获取技术栈计费信息
         
@@ -1360,7 +1360,7 @@ class CloudIDEClient(Client):
         return http_info
 
     def upload_extension_file(self, request):
-        """上传插件
+        r"""上传插件
 
         上传插件
         
@@ -1429,7 +1429,7 @@ class CloudIDEClient(Client):
         return http_info
 
     def upload_file_publisher(self, request):
-        """文件上传归一化
+        r"""文件上传归一化
 
         文件上传归一化
         
@@ -1518,7 +1518,7 @@ class CloudIDEClient(Client):
         return http_info
 
     def check_instance_access(self, request):
-        """查询用户是否有权限访问某个IDE实例
+        r"""查询用户是否有权限访问某个IDE实例
 
         查询用户是否有权限访问某个IDE实例
         
@@ -1583,7 +1583,7 @@ class CloudIDEClient(Client):
         return http_info
 
     def check_name(self, request):
-        """查询IDE实例名是否重复
+        r"""查询IDE实例名是否重复
 
         查询IDE实例名是否重复
         
@@ -1648,7 +1648,7 @@ class CloudIDEClient(Client):
         return http_info
 
     def create_instance(self, request):
-        """创建IDE实例
+        r"""创建IDE实例
 
         创建IDE实例
         
@@ -1715,7 +1715,7 @@ class CloudIDEClient(Client):
         return http_info
 
     def create_instance_by3rd(self, request):
-        """外部第三方集成商创建IDE实例
+        r"""外部第三方集成商创建IDE实例
 
         创建IDE实例
         
@@ -1782,7 +1782,7 @@ class CloudIDEClient(Client):
         return http_info
 
     def delete_instance(self, request):
-        """删除IDE实例
+        r"""删除IDE实例
 
         删除IDE实例（同时删除磁盘数据）
         
@@ -1847,7 +1847,7 @@ class CloudIDEClient(Client):
         return http_info
 
     def list_instances(self, request):
-        """查询IDE实例列表
+        r"""查询IDE实例列表
 
         查询IDE实例列表
         
@@ -1924,7 +1924,7 @@ class CloudIDEClient(Client):
         return http_info
 
     def list_org_instances(self, request):
-        """查询某个租户下的IDE实例列表
+        r"""查询某个租户下的IDE实例列表
 
         查询某个租户下的IDE实例列表
         
@@ -1997,7 +1997,7 @@ class CloudIDEClient(Client):
         return http_info
 
     def show_instance(self, request):
-        """查询某个IDE实例
+        r"""查询某个IDE实例
 
         查询某个IDE实例
         
@@ -2062,7 +2062,7 @@ class CloudIDEClient(Client):
         return http_info
 
     def show_instance_status_info(self, request):
-        """查询某个IDE实例的状态
+        r"""查询某个IDE实例的状态
 
         查询某个IDE实例的状态
         
@@ -2127,7 +2127,7 @@ class CloudIDEClient(Client):
         return http_info
 
     def start_instance(self, request):
-        """启动IDE实例
+        r"""启动IDE实例
 
         启动IDE实例
         
@@ -2194,7 +2194,7 @@ class CloudIDEClient(Client):
         return http_info
 
     def stop_instance(self, request):
-        """停止IDE实例
+        r"""停止IDE实例
 
         停止IDE实例（不删除磁盘数据）
         
@@ -2259,7 +2259,7 @@ class CloudIDEClient(Client):
         return http_info
 
     def update_instance(self, request):
-        """修改IDE实例
+        r"""修改IDE实例
 
         修改IDE实例
         
@@ -2326,7 +2326,7 @@ class CloudIDEClient(Client):
         return http_info
 
     def update_instance_activity(self, request):
-        """刷新IDE实例活跃状态
+        r"""刷新IDE实例活跃状态
 
         刷新IDE实例活跃状态，超过该实例设置的过期时间后实例自动关闭。
         
@@ -2391,7 +2391,7 @@ class CloudIDEClient(Client):
         return http_info
 
     def create_acceptance(self, request):
-        """CreateAcceptance接口
+        r"""CreateAcceptance接口
 
         create a acceptance
         
@@ -2456,7 +2456,7 @@ class CloudIDEClient(Client):
         return http_info
 
     def create_apply(self, request):
-        """CreateJoinRequest接口
+        r"""CreateJoinRequest接口
 
         create a join-request
         
@@ -2521,7 +2521,7 @@ class CloudIDEClient(Client):
         return http_info
 
     def create_event(self, request):
-        """CreateEvent接口
+        r"""CreateEvent接口
 
         create an event
         
@@ -2586,7 +2586,7 @@ class CloudIDEClient(Client):
         return http_info
 
     def create_login(self, request):
-        """CreateLogin接口
+        r"""CreateLogin接口
 
         create a login
         
@@ -2651,7 +2651,7 @@ class CloudIDEClient(Client):
         return http_info
 
     def create_request(self, request):
-        """Create Request接口
+        r"""Create Request接口
 
         create a code generation request.
         
@@ -2733,7 +2733,7 @@ class CloudIDEClient(Client):
         return http_info
 
     def show_result(self, request):
-        """Show Result接口
+        r"""Show Result接口
 
         get the result of the code generation request.
         
@@ -2798,7 +2798,7 @@ class CloudIDEClient(Client):
         return http_info
 
     def start_chat(self, request):
-        """start_chat_codebreezetsbot_v1_devmind_tsbot_start_chat_post接口
+        r"""start_chat_codebreezetsbot_v1_devmind_tsbot_start_chat_post接口
 
         开启对话
         :param data: example: {\&quot;user_type\&quot;: \&quot;IDE\&quot;}
@@ -2865,7 +2865,7 @@ class CloudIDEClient(Client):
         return http_info
 
     def sync_chat(self, request):
-        """async_chat_codebreezetsbot_v1_devmind_tsbot_async_chat_post接口
+        r"""async_chat_codebreezetsbot_v1_devmind_tsbot_async_chat_post接口
 
         异步聊天请求
         :param data: ChatRequestMessage
@@ -2934,7 +2934,7 @@ class CloudIDEClient(Client):
         return http_info
 
     def sync_get_chat_result(self, request):
-        """async_get_chat_result_codebreezetsbot_v1_devmind_tsbot_async_get_chat_result_post接口
+        r"""async_get_chat_result_codebreezetsbot_v1_devmind_tsbot_async_get_chat_result_post接口
 
         异步聊天获取结果
         

@@ -27,7 +27,7 @@ class VerifyCodeCheckDTO:
     }
 
     def __init__(self, user=None, code=None):
-        """VerifyCodeCheckDTO
+        r"""VerifyCodeCheckDTO
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class VerifyCodeCheckDTO:
 
     @property
     def user(self):
-        """Gets the user of this VerifyCodeCheckDTO.
+        r"""Gets the user of this VerifyCodeCheckDTO.
 
         必须和发送验证码时带的用户身份信息相同。 
 
@@ -59,7 +59,7 @@ class VerifyCodeCheckDTO:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this VerifyCodeCheckDTO.
+        r"""Sets the user of this VerifyCodeCheckDTO.
 
         必须和发送验证码时带的用户身份信息相同。 
 
@@ -70,7 +70,7 @@ class VerifyCodeCheckDTO:
 
     @property
     def code(self):
-        """Gets the code of this VerifyCodeCheckDTO.
+        r"""Gets the code of this VerifyCodeCheckDTO.
 
         验证码。 
 
@@ -81,7 +81,7 @@ class VerifyCodeCheckDTO:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this VerifyCodeCheckDTO.
+        r"""Sets the code of this VerifyCodeCheckDTO.
 
         验证码。 
 

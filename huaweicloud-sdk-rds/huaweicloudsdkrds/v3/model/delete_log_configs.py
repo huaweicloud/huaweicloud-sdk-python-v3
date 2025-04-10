@@ -27,7 +27,7 @@ class DeleteLogConfigs:
     }
 
     def __init__(self, instance_id=None, log_type=None):
-        """DeleteLogConfigs
+        r"""DeleteLogConfigs
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteLogConfigs:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteLogConfigs.
+        r"""Gets the instance_id of this DeleteLogConfigs.
 
         实例ID。
 
@@ -59,7 +59,7 @@ class DeleteLogConfigs:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteLogConfigs.
+        r"""Sets the instance_id of this DeleteLogConfigs.
 
         实例ID。
 
@@ -70,7 +70,7 @@ class DeleteLogConfigs:
 
     @property
     def log_type(self):
-        """Gets the log_type of this DeleteLogConfigs.
+        r"""Gets the log_type of this DeleteLogConfigs.
 
         日志类型。
 
@@ -81,7 +81,7 @@ class DeleteLogConfigs:
 
     @log_type.setter
     def log_type(self, log_type):
-        """Sets the log_type of this DeleteLogConfigs.
+        r"""Sets the log_type of this DeleteLogConfigs.
 
         日志类型。
 

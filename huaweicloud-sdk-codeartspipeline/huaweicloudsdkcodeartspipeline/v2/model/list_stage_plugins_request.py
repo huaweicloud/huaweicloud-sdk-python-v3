@@ -27,7 +27,7 @@ class ListStagePluginsRequest:
     }
 
     def __init__(self, domain_id=None, body=None):
-        """ListStagePluginsRequest
+        r"""ListStagePluginsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListStagePluginsRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ListStagePluginsRequest.
+        r"""Gets the domain_id of this ListStagePluginsRequest.
 
         租户ID
 
@@ -60,7 +60,7 @@ class ListStagePluginsRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ListStagePluginsRequest.
+        r"""Sets the domain_id of this ListStagePluginsRequest.
 
         租户ID
 
@@ -71,7 +71,7 @@ class ListStagePluginsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListStagePluginsRequest.
+        r"""Gets the body of this ListStagePluginsRequest.
 
         :return: The body of this ListStagePluginsRequest.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.StagePluginsQueryDTO`
@@ -80,7 +80,7 @@ class ListStagePluginsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListStagePluginsRequest.
+        r"""Sets the body of this ListStagePluginsRequest.
 
         :param body: The body of this ListStagePluginsRequest.
         :type body: :class:`huaweicloudsdkcodeartspipeline.v2.StagePluginsQueryDTO`

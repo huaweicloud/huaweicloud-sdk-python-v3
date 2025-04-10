@@ -27,7 +27,7 @@ class AccessConfigFormatUpdate:
     }
 
     def __init__(self, single=None, multi=None):
-        """AccessConfigFormatUpdate
+        r"""AccessConfigFormatUpdate
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AccessConfigFormatUpdate:
 
     @property
     def single(self):
-        """Gets the single of this AccessConfigFormatUpdate.
+        r"""Gets the single of this AccessConfigFormatUpdate.
 
         :return: The single of this AccessConfigFormatUpdate.
         :rtype: :class:`huaweicloudsdklts.v2.AccessConfigFormatSingle`
@@ -59,7 +59,7 @@ class AccessConfigFormatUpdate:
 
     @single.setter
     def single(self, single):
-        """Sets the single of this AccessConfigFormatUpdate.
+        r"""Sets the single of this AccessConfigFormatUpdate.
 
         :param single: The single of this AccessConfigFormatUpdate.
         :type single: :class:`huaweicloudsdklts.v2.AccessConfigFormatSingle`
@@ -68,7 +68,7 @@ class AccessConfigFormatUpdate:
 
     @property
     def multi(self):
-        """Gets the multi of this AccessConfigFormatUpdate.
+        r"""Gets the multi of this AccessConfigFormatUpdate.
 
         :return: The multi of this AccessConfigFormatUpdate.
         :rtype: :class:`huaweicloudsdklts.v2.AccessConfigFormatMutil`
@@ -77,7 +77,7 @@ class AccessConfigFormatUpdate:
 
     @multi.setter
     def multi(self, multi):
-        """Sets the multi of this AccessConfigFormatUpdate.
+        r"""Sets the multi of this AccessConfigFormatUpdate.
 
         :param multi: The multi of this AccessConfigFormatUpdate.
         :type multi: :class:`huaweicloudsdklts.v2.AccessConfigFormatMutil`

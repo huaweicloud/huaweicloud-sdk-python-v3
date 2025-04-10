@@ -24,7 +24,7 @@ class SetHostViewResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SetHostViewResponse
+        r"""SetHostViewResponse
 
         The model defined in huaweicloud sdk
 

@@ -29,7 +29,7 @@ class RTCRoomInfoList:
     }
 
     def __init__(self, app_id=None, room_id=None, users=None):
-        """RTCRoomInfoList
+        r"""RTCRoomInfoList
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class RTCRoomInfoList:
 
     @property
     def app_id(self):
-        """Gets the app_id of this RTCRoomInfoList.
+        r"""Gets the app_id of this RTCRoomInfoList.
 
         RTC应用ID。
 
@@ -68,7 +68,7 @@ class RTCRoomInfoList:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this RTCRoomInfoList.
+        r"""Sets the app_id of this RTCRoomInfoList.
 
         RTC应用ID。
 
@@ -79,7 +79,7 @@ class RTCRoomInfoList:
 
     @property
     def room_id(self):
-        """Gets the room_id of this RTCRoomInfoList.
+        r"""Gets the room_id of this RTCRoomInfoList.
 
         RTC房间ID。
 
@@ -90,7 +90,7 @@ class RTCRoomInfoList:
 
     @room_id.setter
     def room_id(self, room_id):
-        """Sets the room_id of this RTCRoomInfoList.
+        r"""Sets the room_id of this RTCRoomInfoList.
 
         RTC房间ID。
 
@@ -101,7 +101,7 @@ class RTCRoomInfoList:
 
     @property
     def users(self):
-        """Gets the users of this RTCRoomInfoList.
+        r"""Gets the users of this RTCRoomInfoList.
 
         加入RTC房间用户信息。
 
@@ -112,7 +112,7 @@ class RTCRoomInfoList:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this RTCRoomInfoList.
+        r"""Sets the users of this RTCRoomInfoList.
 
         加入RTC房间用户信息。
 

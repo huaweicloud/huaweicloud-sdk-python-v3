@@ -28,7 +28,7 @@ class CreateIpGroupResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, ip_group=None):
-        """CreateIpGroupResponse
+        r"""CreateIpGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateIpGroupResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateIpGroupResponse.
+        r"""Gets the request_id of this CreateIpGroupResponse.
 
         请求ID。
 
@@ -62,7 +62,7 @@ class CreateIpGroupResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateIpGroupResponse.
+        r"""Sets the request_id of this CreateIpGroupResponse.
 
         请求ID。
 
@@ -73,7 +73,7 @@ class CreateIpGroupResponse(SdkResponse):
 
     @property
     def ip_group(self):
-        """Gets the ip_group of this CreateIpGroupResponse.
+        r"""Gets the ip_group of this CreateIpGroupResponse.
 
         :return: The ip_group of this CreateIpGroupResponse.
         :rtype: :class:`huaweicloudsdkga.v1.IpGroupDetail`
@@ -82,7 +82,7 @@ class CreateIpGroupResponse(SdkResponse):
 
     @ip_group.setter
     def ip_group(self, ip_group):
-        """Sets the ip_group of this CreateIpGroupResponse.
+        r"""Sets the ip_group of this CreateIpGroupResponse.
 
         :param ip_group: The ip_group of this CreateIpGroupResponse.
         :type ip_group: :class:`huaweicloudsdkga.v1.IpGroupDetail`

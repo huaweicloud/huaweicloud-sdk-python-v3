@@ -29,7 +29,7 @@ class TemplateMessage:
     }
 
     def __init__(self, template_description=None, template_label=None, template_name=None):
-        """TemplateMessage
+        r"""TemplateMessage
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class TemplateMessage:
 
     @property
     def template_description(self):
-        """Gets the template_description of this TemplateMessage.
+        r"""Gets the template_description of this TemplateMessage.
 
         模板描述
 
@@ -66,7 +66,7 @@ class TemplateMessage:
 
     @template_description.setter
     def template_description(self, template_description):
-        """Sets the template_description of this TemplateMessage.
+        r"""Sets the template_description of this TemplateMessage.
 
         模板描述
 
@@ -77,7 +77,7 @@ class TemplateMessage:
 
     @property
     def template_label(self):
-        """Gets the template_label of this TemplateMessage.
+        r"""Gets the template_label of this TemplateMessage.
 
         模板标签
 
@@ -88,7 +88,7 @@ class TemplateMessage:
 
     @template_label.setter
     def template_label(self, template_label):
-        """Sets the template_label of this TemplateMessage.
+        r"""Sets the template_label of this TemplateMessage.
 
         模板标签
 
@@ -99,7 +99,7 @@ class TemplateMessage:
 
     @property
     def template_name(self):
-        """Gets the template_name of this TemplateMessage.
+        r"""Gets the template_name of this TemplateMessage.
 
         模板名称
 
@@ -110,7 +110,7 @@ class TemplateMessage:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this TemplateMessage.
+        r"""Sets the template_name of this TemplateMessage.
 
         模板名称
 

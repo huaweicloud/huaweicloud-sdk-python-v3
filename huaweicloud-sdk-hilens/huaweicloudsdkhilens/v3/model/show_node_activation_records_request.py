@@ -29,7 +29,7 @@ class ShowNodeActivationRecordsRequest:
     }
 
     def __init__(self, node_id=None, offset=None, limit=None):
-        """ShowNodeActivationRecordsRequest
+        r"""ShowNodeActivationRecordsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ShowNodeActivationRecordsRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ShowNodeActivationRecordsRequest.
+        r"""Gets the node_id of this ShowNodeActivationRecordsRequest.
 
         设备ID，从专业版HiLens控制台设备管理[查询设备列表](ListNodeUsingGeT.xml)获取
 
@@ -67,7 +67,7 @@ class ShowNodeActivationRecordsRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ShowNodeActivationRecordsRequest.
+        r"""Sets the node_id of this ShowNodeActivationRecordsRequest.
 
         设备ID，从专业版HiLens控制台设备管理[查询设备列表](ListNodeUsingGeT.xml)获取
 
@@ -78,7 +78,7 @@ class ShowNodeActivationRecordsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowNodeActivationRecordsRequest.
+        r"""Gets the offset of this ShowNodeActivationRecordsRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -89,7 +89,7 @@ class ShowNodeActivationRecordsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowNodeActivationRecordsRequest.
+        r"""Sets the offset of this ShowNodeActivationRecordsRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -100,7 +100,7 @@ class ShowNodeActivationRecordsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowNodeActivationRecordsRequest.
+        r"""Gets the limit of this ShowNodeActivationRecordsRequest.
 
         每页显示的条目数量，取值范围1~100，默认为100
 
@@ -111,7 +111,7 @@ class ShowNodeActivationRecordsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowNodeActivationRecordsRequest.
+        r"""Sets the limit of this ShowNodeActivationRecordsRequest.
 
         每页显示的条目数量，取值范围1~100，默认为100
 

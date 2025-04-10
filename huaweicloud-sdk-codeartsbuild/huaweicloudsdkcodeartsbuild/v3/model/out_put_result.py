@@ -37,7 +37,7 @@ class OutPutResult:
     }
 
     def __init__(self, project_id=None, name=None, version=None, package_type=None, uri=None, type=None, daily_build_number=None):
-        """OutPutResult
+        r"""OutPutResult
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class OutPutResult:
 
     @property
     def project_id(self):
-        """Gets the project_id of this OutPutResult.
+        r"""Gets the project_id of this OutPutResult.
 
         构建任务所在项目的ID
 
@@ -96,7 +96,7 @@ class OutPutResult:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this OutPutResult.
+        r"""Sets the project_id of this OutPutResult.
 
         构建任务所在项目的ID
 
@@ -107,7 +107,7 @@ class OutPutResult:
 
     @property
     def name(self):
-        """Gets the name of this OutPutResult.
+        r"""Gets the name of this OutPutResult.
 
         产物名称
 
@@ -118,7 +118,7 @@ class OutPutResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this OutPutResult.
+        r"""Sets the name of this OutPutResult.
 
         产物名称
 
@@ -129,7 +129,7 @@ class OutPutResult:
 
     @property
     def version(self):
-        """Gets the version of this OutPutResult.
+        r"""Gets the version of this OutPutResult.
 
         产物版本
 
@@ -140,7 +140,7 @@ class OutPutResult:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this OutPutResult.
+        r"""Sets the version of this OutPutResult.
 
         产物版本
 
@@ -151,7 +151,7 @@ class OutPutResult:
 
     @property
     def package_type(self):
-        """Gets the package_type of this OutPutResult.
+        r"""Gets the package_type of this OutPutResult.
 
         产物类型
 
@@ -162,7 +162,7 @@ class OutPutResult:
 
     @package_type.setter
     def package_type(self, package_type):
-        """Sets the package_type of this OutPutResult.
+        r"""Sets the package_type of this OutPutResult.
 
         产物类型
 
@@ -173,7 +173,7 @@ class OutPutResult:
 
     @property
     def uri(self):
-        """Gets the uri of this OutPutResult.
+        r"""Gets the uri of this OutPutResult.
 
         产物路径
 
@@ -184,7 +184,7 @@ class OutPutResult:
 
     @uri.setter
     def uri(self, uri):
-        """Sets the uri of this OutPutResult.
+        r"""Sets the uri of this OutPutResult.
 
         产物路径
 
@@ -195,7 +195,7 @@ class OutPutResult:
 
     @property
     def type(self):
-        """Gets the type of this OutPutResult.
+        r"""Gets the type of this OutPutResult.
 
         类型
 
@@ -206,7 +206,7 @@ class OutPutResult:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this OutPutResult.
+        r"""Sets the type of this OutPutResult.
 
         类型
 
@@ -217,7 +217,7 @@ class OutPutResult:
 
     @property
     def daily_build_number(self):
-        """Gets the daily_build_number of this OutPutResult.
+        r"""Gets the daily_build_number of this OutPutResult.
 
         构建编号，每日从1开始
 
@@ -228,7 +228,7 @@ class OutPutResult:
 
     @daily_build_number.setter
     def daily_build_number(self, daily_build_number):
-        """Sets the daily_build_number of this OutPutResult.
+        r"""Sets the daily_build_number of this OutPutResult.
 
         构建编号，每日从1开始
 

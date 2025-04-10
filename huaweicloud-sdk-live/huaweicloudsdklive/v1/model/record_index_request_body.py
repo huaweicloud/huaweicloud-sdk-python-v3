@@ -35,7 +35,7 @@ class RecordIndexRequestBody:
     }
 
     def __init__(self, publish_domain=None, app=None, stream=None, start_time=None, end_time=None, object=None):
-        """RecordIndexRequestBody
+        r"""RecordIndexRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class RecordIndexRequestBody:
 
     @property
     def publish_domain(self):
-        """Gets the publish_domain of this RecordIndexRequestBody.
+        r"""Gets the publish_domain of this RecordIndexRequestBody.
 
         推流域名
 
@@ -84,7 +84,7 @@ class RecordIndexRequestBody:
 
     @publish_domain.setter
     def publish_domain(self, publish_domain):
-        """Sets the publish_domain of this RecordIndexRequestBody.
+        r"""Sets the publish_domain of this RecordIndexRequestBody.
 
         推流域名
 
@@ -95,7 +95,7 @@ class RecordIndexRequestBody:
 
     @property
     def app(self):
-        """Gets the app of this RecordIndexRequestBody.
+        r"""Gets the app of this RecordIndexRequestBody.
 
         app名
 
@@ -106,7 +106,7 @@ class RecordIndexRequestBody:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this RecordIndexRequestBody.
+        r"""Sets the app of this RecordIndexRequestBody.
 
         app名
 
@@ -117,7 +117,7 @@ class RecordIndexRequestBody:
 
     @property
     def stream(self):
-        """Gets the stream of this RecordIndexRequestBody.
+        r"""Gets the stream of this RecordIndexRequestBody.
 
         流名
 
@@ -128,7 +128,7 @@ class RecordIndexRequestBody:
 
     @stream.setter
     def stream(self, stream):
-        """Sets the stream of this RecordIndexRequestBody.
+        r"""Sets the stream of this RecordIndexRequestBody.
 
         流名
 
@@ -139,7 +139,7 @@ class RecordIndexRequestBody:
 
     @property
     def start_time(self):
-        """Gets the start_time of this RecordIndexRequestBody.
+        r"""Gets the start_time of this RecordIndexRequestBody.
 
         开始时间。格式为：YYYY-MM-DDTHH:mm:ssZ（UTC时间），开始时间与结束时间的间隔最大为12小时。
 
@@ -150,7 +150,7 @@ class RecordIndexRequestBody:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this RecordIndexRequestBody.
+        r"""Sets the start_time of this RecordIndexRequestBody.
 
         开始时间。格式为：YYYY-MM-DDTHH:mm:ssZ（UTC时间），开始时间与结束时间的间隔最大为12小时。
 
@@ -161,7 +161,7 @@ class RecordIndexRequestBody:
 
     @property
     def end_time(self):
-        """Gets the end_time of this RecordIndexRequestBody.
+        r"""Gets the end_time of this RecordIndexRequestBody.
 
         结束时间。格式为：YYYY-MM-DDTHH:mm:ssZ（UTC时间），开始时间与结束时间的间隔最大为12小时。结束时间不允许大于当前时间。
 
@@ -172,7 +172,7 @@ class RecordIndexRequestBody:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this RecordIndexRequestBody.
+        r"""Sets the end_time of this RecordIndexRequestBody.
 
         结束时间。格式为：YYYY-MM-DDTHH:mm:ssZ（UTC时间），开始时间与结束时间的间隔最大为12小时。结束时间不允许大于当前时间。
 
@@ -183,7 +183,7 @@ class RecordIndexRequestBody:
 
     @property
     def object(self):
-        """Gets the object of this RecordIndexRequestBody.
+        r"""Gets the object of this RecordIndexRequestBody.
 
         \"m3u8文件在OBS中的储存路径。支持下列字符串的转义   - {publish_domain}   - {app}   - {stream}   - {start_time}   - {end_time} 其中{start_time},{end_time}为返回结果的实际时间。 默认值为Index/{publish_domain}/{app}/{stream}/{stream}-{start_time}-{end_time}\"
 
@@ -194,7 +194,7 @@ class RecordIndexRequestBody:
 
     @object.setter
     def object(self, object):
-        """Sets the object of this RecordIndexRequestBody.
+        r"""Sets the object of this RecordIndexRequestBody.
 
         \"m3u8文件在OBS中的储存路径。支持下列字符串的转义   - {publish_domain}   - {app}   - {stream}   - {start_time}   - {end_time} 其中{start_time},{end_time}为返回结果的实际时间。 默认值为Index/{publish_domain}/{app}/{stream}/{stream}-{start_time}-{end_time}\"
 

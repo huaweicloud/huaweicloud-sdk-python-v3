@@ -41,7 +41,7 @@ class Risks:
     }
 
     def __init__(self, instance_id=None, engine_name=None, engine_version=None, level=None, suggest=None, influence=None, guidance=None, service_impact_duration=None, upgrade_duration=None):
-        """Risks
+        r"""Risks
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class Risks:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this Risks.
+        r"""Gets the instance_id of this Risks.
 
         实例ID。
 
@@ -107,7 +107,7 @@ class Risks:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this Risks.
+        r"""Sets the instance_id of this Risks.
 
         实例ID。
 
@@ -118,7 +118,7 @@ class Risks:
 
     @property
     def engine_name(self):
-        """Gets the engine_name of this Risks.
+        r"""Gets the engine_name of this Risks.
 
         引擎名称。
 
@@ -129,7 +129,7 @@ class Risks:
 
     @engine_name.setter
     def engine_name(self, engine_name):
-        """Sets the engine_name of this Risks.
+        r"""Sets the engine_name of this Risks.
 
         引擎名称。
 
@@ -140,7 +140,7 @@ class Risks:
 
     @property
     def engine_version(self):
-        """Gets the engine_version of this Risks.
+        r"""Gets the engine_version of this Risks.
 
         当前引擎版本。
 
@@ -151,7 +151,7 @@ class Risks:
 
     @engine_version.setter
     def engine_version(self, engine_version):
-        """Sets the engine_version of this Risks.
+        r"""Sets the engine_version of this Risks.
 
         当前引擎版本。
 
@@ -162,7 +162,7 @@ class Risks:
 
     @property
     def level(self):
-        """Gets the level of this Risks.
+        r"""Gets the level of this Risks.
 
         风险等级。
 
@@ -173,7 +173,7 @@ class Risks:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this Risks.
+        r"""Sets the level of this Risks.
 
         风险等级。
 
@@ -184,7 +184,7 @@ class Risks:
 
     @property
     def suggest(self):
-        """Gets the suggest of this Risks.
+        r"""Gets the suggest of this Risks.
 
         建议升级原因。
 
@@ -195,7 +195,7 @@ class Risks:
 
     @suggest.setter
     def suggest(self, suggest):
-        """Sets the suggest of this Risks.
+        r"""Sets the suggest of this Risks.
 
         建议升级原因。
 
@@ -206,7 +206,7 @@ class Risks:
 
     @property
     def influence(self):
-        """Gets the influence of this Risks.
+        r"""Gets the influence of this Risks.
 
         升级影响。
 
@@ -217,7 +217,7 @@ class Risks:
 
     @influence.setter
     def influence(self, influence):
-        """Sets the influence of this Risks.
+        r"""Sets the influence of this Risks.
 
         升级影响。
 
@@ -228,7 +228,7 @@ class Risks:
 
     @property
     def guidance(self):
-        """Gets the guidance of this Risks.
+        r"""Gets the guidance of this Risks.
 
         指导连接。
 
@@ -239,7 +239,7 @@ class Risks:
 
     @guidance.setter
     def guidance(self, guidance):
-        """Sets the guidance of this Risks.
+        r"""Sets the guidance of this Risks.
 
         指导连接。
 
@@ -250,7 +250,7 @@ class Risks:
 
     @property
     def service_impact_duration(self):
-        """Gets the service_impact_duration of this Risks.
+        r"""Gets the service_impact_duration of this Risks.
 
         业务影响时长。
 
@@ -261,7 +261,7 @@ class Risks:
 
     @service_impact_duration.setter
     def service_impact_duration(self, service_impact_duration):
-        """Sets the service_impact_duration of this Risks.
+        r"""Sets the service_impact_duration of this Risks.
 
         业务影响时长。
 
@@ -272,7 +272,7 @@ class Risks:
 
     @property
     def upgrade_duration(self):
-        """Gets the upgrade_duration of this Risks.
+        r"""Gets the upgrade_duration of this Risks.
 
         升级时长。
 
@@ -283,7 +283,7 @@ class Risks:
 
     @upgrade_duration.setter
     def upgrade_duration(self, upgrade_duration):
-        """Sets the upgrade_duration of this Risks.
+        r"""Sets the upgrade_duration of this Risks.
 
         升级时长。
 

@@ -24,7 +24,7 @@ class ShowMeetingFileListResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ShowMeetingFileListResponse
+        r"""ShowMeetingFileListResponse
 
         The model defined in huaweicloud sdk
 

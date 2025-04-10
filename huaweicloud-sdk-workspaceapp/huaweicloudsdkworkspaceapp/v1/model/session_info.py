@@ -83,7 +83,7 @@ class SessionInfo:
     }
 
     def __init__(self, id=None, session_stamp=None, os_session_id=None, protocol_type=None, login_user=None, session_type=None, app_server_group_id=None, app_server_group_name=None, pre_conn_time=None, start_time=None, end_time=None, status_continue_time=None, machine_sid=None, machine_name=None, session_state=None, app_name=None, client_mac=None, client_name=None, client_ip=None, public_ip=None, client_version=None, client_type=None, agent_version=None, vm_ip=None, failed_reason=None, failed_code=None, last_update_status_time=None, tenant_id=None, primary_server_group_id=None, secondary_server_group_id=None):
-        """SessionInfo
+        r"""SessionInfo
 
         The model defined in huaweicloud sdk
 
@@ -246,7 +246,7 @@ class SessionInfo:
 
     @property
     def id(self):
-        """Gets the id of this SessionInfo.
+        r"""Gets the id of this SessionInfo.
 
         主键ID。
 
@@ -257,7 +257,7 @@ class SessionInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SessionInfo.
+        r"""Sets the id of this SessionInfo.
 
         主键ID。
 
@@ -268,7 +268,7 @@ class SessionInfo:
 
     @property
     def session_stamp(self):
-        """Gets the session_stamp of this SessionInfo.
+        r"""Gets the session_stamp of this SessionInfo.
 
         会话标识。
 
@@ -279,7 +279,7 @@ class SessionInfo:
 
     @session_stamp.setter
     def session_stamp(self, session_stamp):
-        """Sets the session_stamp of this SessionInfo.
+        r"""Sets the session_stamp of this SessionInfo.
 
         会话标识。
 
@@ -290,7 +290,7 @@ class SessionInfo:
 
     @property
     def os_session_id(self):
-        """Gets the os_session_id of this SessionInfo.
+        r"""Gets the os_session_id of this SessionInfo.
 
         会话在hda的os中会话id。
 
@@ -301,7 +301,7 @@ class SessionInfo:
 
     @os_session_id.setter
     def os_session_id(self, os_session_id):
-        """Sets the os_session_id of this SessionInfo.
+        r"""Sets the os_session_id of this SessionInfo.
 
         会话在hda的os中会话id。
 
@@ -312,7 +312,7 @@ class SessionInfo:
 
     @property
     def protocol_type(self):
-        """Gets the protocol_type of this SessionInfo.
+        r"""Gets the protocol_type of this SessionInfo.
 
         协议类型。
 
@@ -323,7 +323,7 @@ class SessionInfo:
 
     @protocol_type.setter
     def protocol_type(self, protocol_type):
-        """Sets the protocol_type of this SessionInfo.
+        r"""Sets the protocol_type of this SessionInfo.
 
         协议类型。
 
@@ -334,7 +334,7 @@ class SessionInfo:
 
     @property
     def login_user(self):
-        """Gets the login_user of this SessionInfo.
+        r"""Gets the login_user of this SessionInfo.
 
         当前会话的登录用户。
 
@@ -345,7 +345,7 @@ class SessionInfo:
 
     @login_user.setter
     def login_user(self, login_user):
-        """Sets the login_user of this SessionInfo.
+        r"""Sets the login_user of this SessionInfo.
 
         当前会话的登录用户。
 
@@ -356,7 +356,7 @@ class SessionInfo:
 
     @property
     def session_type(self):
-        """Gets the session_type of this SessionInfo.
+        r"""Gets the session_type of this SessionInfo.
 
         会话类型，1表示共享桌面，2表示应用。
 
@@ -367,7 +367,7 @@ class SessionInfo:
 
     @session_type.setter
     def session_type(self, session_type):
-        """Sets the session_type of this SessionInfo.
+        r"""Sets the session_type of this SessionInfo.
 
         会话类型，1表示共享桌面，2表示应用。
 
@@ -378,7 +378,7 @@ class SessionInfo:
 
     @property
     def app_server_group_id(self):
-        """Gets the app_server_group_id of this SessionInfo.
+        r"""Gets the app_server_group_id of this SessionInfo.
 
         AppServer组ID。
 
@@ -389,7 +389,7 @@ class SessionInfo:
 
     @app_server_group_id.setter
     def app_server_group_id(self, app_server_group_id):
-        """Sets the app_server_group_id of this SessionInfo.
+        r"""Sets the app_server_group_id of this SessionInfo.
 
         AppServer组ID。
 
@@ -400,7 +400,7 @@ class SessionInfo:
 
     @property
     def app_server_group_name(self):
-        """Gets the app_server_group_name of this SessionInfo.
+        r"""Gets the app_server_group_name of this SessionInfo.
 
         AppServer组名称。
 
@@ -411,7 +411,7 @@ class SessionInfo:
 
     @app_server_group_name.setter
     def app_server_group_name(self, app_server_group_name):
-        """Sets the app_server_group_name of this SessionInfo.
+        r"""Sets the app_server_group_name of this SessionInfo.
 
         AppServer组名称。
 
@@ -422,7 +422,7 @@ class SessionInfo:
 
     @property
     def pre_conn_time(self):
-        """Gets the pre_conn_time of this SessionInfo.
+        r"""Gets the pre_conn_time of this SessionInfo.
 
         预连接时间。
 
@@ -433,7 +433,7 @@ class SessionInfo:
 
     @pre_conn_time.setter
     def pre_conn_time(self, pre_conn_time):
-        """Sets the pre_conn_time of this SessionInfo.
+        r"""Sets the pre_conn_time of this SessionInfo.
 
         预连接时间。
 
@@ -444,7 +444,7 @@ class SessionInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this SessionInfo.
+        r"""Gets the start_time of this SessionInfo.
 
         会话开始时间。
 
@@ -455,7 +455,7 @@ class SessionInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this SessionInfo.
+        r"""Sets the start_time of this SessionInfo.
 
         会话开始时间。
 
@@ -466,7 +466,7 @@ class SessionInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this SessionInfo.
+        r"""Gets the end_time of this SessionInfo.
 
         会话结束时间。
 
@@ -477,7 +477,7 @@ class SessionInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this SessionInfo.
+        r"""Sets the end_time of this SessionInfo.
 
         会话结束时间。
 
@@ -488,7 +488,7 @@ class SessionInfo:
 
     @property
     def status_continue_time(self):
-        """Gets the status_continue_time of this SessionInfo.
+        r"""Gets the status_continue_time of this SessionInfo.
 
         状态持续时间。
 
@@ -499,7 +499,7 @@ class SessionInfo:
 
     @status_continue_time.setter
     def status_continue_time(self, status_continue_time):
-        """Sets the status_continue_time of this SessionInfo.
+        r"""Sets the status_continue_time of this SessionInfo.
 
         状态持续时间。
 
@@ -510,7 +510,7 @@ class SessionInfo:
 
     @property
     def machine_sid(self):
-        """Gets the machine_sid of this SessionInfo.
+        r"""Gets the machine_sid of this SessionInfo.
 
         服务器SID。
 
@@ -521,7 +521,7 @@ class SessionInfo:
 
     @machine_sid.setter
     def machine_sid(self, machine_sid):
-        """Sets the machine_sid of this SessionInfo.
+        r"""Sets the machine_sid of this SessionInfo.
 
         服务器SID。
 
@@ -532,7 +532,7 @@ class SessionInfo:
 
     @property
     def machine_name(self):
-        """Gets the machine_name of this SessionInfo.
+        r"""Gets the machine_name of this SessionInfo.
 
         服务器名称。
 
@@ -543,7 +543,7 @@ class SessionInfo:
 
     @machine_name.setter
     def machine_name(self, machine_name):
-        """Sets the machine_name of this SessionInfo.
+        r"""Sets the machine_name of this SessionInfo.
 
         服务器名称。
 
@@ -554,7 +554,7 @@ class SessionInfo:
 
     @property
     def session_state(self):
-        """Gets the session_state of this SessionInfo.
+        r"""Gets the session_state of this SessionInfo.
 
         会话状态。
 
@@ -565,7 +565,7 @@ class SessionInfo:
 
     @session_state.setter
     def session_state(self, session_state):
-        """Sets the session_state of this SessionInfo.
+        r"""Sets the session_state of this SessionInfo.
 
         会话状态。
 
@@ -576,7 +576,7 @@ class SessionInfo:
 
     @property
     def app_name(self):
-        """Gets the app_name of this SessionInfo.
+        r"""Gets the app_name of this SessionInfo.
 
         会话中的应用名称。
 
@@ -587,7 +587,7 @@ class SessionInfo:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this SessionInfo.
+        r"""Sets the app_name of this SessionInfo.
 
         会话中的应用名称。
 
@@ -598,7 +598,7 @@ class SessionInfo:
 
     @property
     def client_mac(self):
-        """Gets the client_mac of this SessionInfo.
+        r"""Gets the client_mac of this SessionInfo.
 
         客户端Mac地址。
 
@@ -609,7 +609,7 @@ class SessionInfo:
 
     @client_mac.setter
     def client_mac(self, client_mac):
-        """Sets the client_mac of this SessionInfo.
+        r"""Sets the client_mac of this SessionInfo.
 
         客户端Mac地址。
 
@@ -620,7 +620,7 @@ class SessionInfo:
 
     @property
     def client_name(self):
-        """Gets the client_name of this SessionInfo.
+        r"""Gets the client_name of this SessionInfo.
 
         客户端名称。
 
@@ -631,7 +631,7 @@ class SessionInfo:
 
     @client_name.setter
     def client_name(self, client_name):
-        """Sets the client_name of this SessionInfo.
+        r"""Sets the client_name of this SessionInfo.
 
         客户端名称。
 
@@ -642,7 +642,7 @@ class SessionInfo:
 
     @property
     def client_ip(self):
-        """Gets the client_ip of this SessionInfo.
+        r"""Gets the client_ip of this SessionInfo.
 
         客户端IP。
 
@@ -653,7 +653,7 @@ class SessionInfo:
 
     @client_ip.setter
     def client_ip(self, client_ip):
-        """Sets the client_ip of this SessionInfo.
+        r"""Sets the client_ip of this SessionInfo.
 
         客户端IP。
 
@@ -664,7 +664,7 @@ class SessionInfo:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this SessionInfo.
+        r"""Gets the public_ip of this SessionInfo.
 
         客户端出口ip。
 
@@ -675,7 +675,7 @@ class SessionInfo:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this SessionInfo.
+        r"""Sets the public_ip of this SessionInfo.
 
         客户端出口ip。
 
@@ -686,7 +686,7 @@ class SessionInfo:
 
     @property
     def client_version(self):
-        """Gets the client_version of this SessionInfo.
+        r"""Gets the client_version of this SessionInfo.
 
         客户端版本。
 
@@ -697,7 +697,7 @@ class SessionInfo:
 
     @client_version.setter
     def client_version(self, client_version):
-        """Sets the client_version of this SessionInfo.
+        r"""Sets the client_version of this SessionInfo.
 
         客户端版本。
 
@@ -708,7 +708,7 @@ class SessionInfo:
 
     @property
     def client_type(self):
-        """Gets the client_type of this SessionInfo.
+        r"""Gets the client_type of this SessionInfo.
 
         客户端类型。
 
@@ -719,7 +719,7 @@ class SessionInfo:
 
     @client_type.setter
     def client_type(self, client_type):
-        """Sets the client_type of this SessionInfo.
+        r"""Sets the client_type of this SessionInfo.
 
         客户端类型。
 
@@ -730,7 +730,7 @@ class SessionInfo:
 
     @property
     def agent_version(self):
-        """Gets the agent_version of this SessionInfo.
+        r"""Gets the agent_version of this SessionInfo.
 
         agent版本。
 
@@ -741,7 +741,7 @@ class SessionInfo:
 
     @agent_version.setter
     def agent_version(self, agent_version):
-        """Sets the agent_version of this SessionInfo.
+        r"""Sets the agent_version of this SessionInfo.
 
         agent版本。
 
@@ -752,7 +752,7 @@ class SessionInfo:
 
     @property
     def vm_ip(self):
-        """Gets the vm_ip of this SessionInfo.
+        r"""Gets the vm_ip of this SessionInfo.
 
         服务器IP。
 
@@ -763,7 +763,7 @@ class SessionInfo:
 
     @vm_ip.setter
     def vm_ip(self, vm_ip):
-        """Sets the vm_ip of this SessionInfo.
+        r"""Sets the vm_ip of this SessionInfo.
 
         服务器IP。
 
@@ -774,7 +774,7 @@ class SessionInfo:
 
     @property
     def failed_reason(self):
-        """Gets the failed_reason of this SessionInfo.
+        r"""Gets the failed_reason of this SessionInfo.
 
         错误原因消息。
 
@@ -785,7 +785,7 @@ class SessionInfo:
 
     @failed_reason.setter
     def failed_reason(self, failed_reason):
-        """Sets the failed_reason of this SessionInfo.
+        r"""Sets the failed_reason of this SessionInfo.
 
         错误原因消息。
 
@@ -796,7 +796,7 @@ class SessionInfo:
 
     @property
     def failed_code(self):
-        """Gets the failed_code of this SessionInfo.
+        r"""Gets the failed_code of this SessionInfo.
 
         错误原因码。
 
@@ -807,7 +807,7 @@ class SessionInfo:
 
     @failed_code.setter
     def failed_code(self, failed_code):
-        """Sets the failed_code of this SessionInfo.
+        r"""Sets the failed_code of this SessionInfo.
 
         错误原因码。
 
@@ -818,7 +818,7 @@ class SessionInfo:
 
     @property
     def last_update_status_time(self):
-        """Gets the last_update_status_time of this SessionInfo.
+        r"""Gets the last_update_status_time of this SessionInfo.
 
         状态最后变化时间。
 
@@ -829,7 +829,7 @@ class SessionInfo:
 
     @last_update_status_time.setter
     def last_update_status_time(self, last_update_status_time):
-        """Sets the last_update_status_time of this SessionInfo.
+        r"""Sets the last_update_status_time of this SessionInfo.
 
         状态最后变化时间。
 
@@ -840,7 +840,7 @@ class SessionInfo:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this SessionInfo.
+        r"""Gets the tenant_id of this SessionInfo.
 
         租户ID。
 
@@ -851,7 +851,7 @@ class SessionInfo:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this SessionInfo.
+        r"""Sets the tenant_id of this SessionInfo.
 
         租户ID。
 
@@ -862,7 +862,7 @@ class SessionInfo:
 
     @property
     def primary_server_group_id(self):
-        """Gets the primary_server_group_id of this SessionInfo.
+        r"""Gets the primary_server_group_id of this SessionInfo.
 
         主服务器组ID。
 
@@ -873,7 +873,7 @@ class SessionInfo:
 
     @primary_server_group_id.setter
     def primary_server_group_id(self, primary_server_group_id):
-        """Sets the primary_server_group_id of this SessionInfo.
+        r"""Sets the primary_server_group_id of this SessionInfo.
 
         主服务器组ID。
 
@@ -884,7 +884,7 @@ class SessionInfo:
 
     @property
     def secondary_server_group_id(self):
-        """Gets the secondary_server_group_id of this SessionInfo.
+        r"""Gets the secondary_server_group_id of this SessionInfo.
 
         备服务器组ID。
 
@@ -895,7 +895,7 @@ class SessionInfo:
 
     @secondary_server_group_id.setter
     def secondary_server_group_id(self, secondary_server_group_id):
-        """Sets the secondary_server_group_id of this SessionInfo.
+        r"""Sets the secondary_server_group_id of this SessionInfo.
 
         备服务器组ID。
 

@@ -35,7 +35,7 @@ class ProxyTokenDTO:
     }
 
     def __init__(self, access_token=None, long_access_token=None, valid_period=None, middle_end_url=None, middle_end_inner_url=None, enable_rerouting=None):
-        """ProxyTokenDTO
+        r"""ProxyTokenDTO
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ProxyTokenDTO:
 
     @property
     def access_token(self):
-        """Gets the access_token of this ProxyTokenDTO.
+        r"""Gets the access_token of this ProxyTokenDTO.
 
         代理鉴权服务器的短token字符串。
 
@@ -88,7 +88,7 @@ class ProxyTokenDTO:
 
     @access_token.setter
     def access_token(self, access_token):
-        """Sets the access_token of this ProxyTokenDTO.
+        r"""Sets the access_token of this ProxyTokenDTO.
 
         代理鉴权服务器的短token字符串。
 
@@ -99,7 +99,7 @@ class ProxyTokenDTO:
 
     @property
     def long_access_token(self):
-        """Gets the long_access_token of this ProxyTokenDTO.
+        r"""Gets the long_access_token of this ProxyTokenDTO.
 
         代理鉴权服务器的长token字符串。
 
@@ -110,7 +110,7 @@ class ProxyTokenDTO:
 
     @long_access_token.setter
     def long_access_token(self, long_access_token):
-        """Sets the long_access_token of this ProxyTokenDTO.
+        r"""Sets the long_access_token of this ProxyTokenDTO.
 
         代理鉴权服务器的长token字符串。
 
@@ -121,7 +121,7 @@ class ProxyTokenDTO:
 
     @property
     def valid_period(self):
-        """Gets the valid_period of this ProxyTokenDTO.
+        r"""Gets the valid_period of this ProxyTokenDTO.
 
         Token有效时长，单位：秒。
 
@@ -132,7 +132,7 @@ class ProxyTokenDTO:
 
     @valid_period.setter
     def valid_period(self, valid_period):
-        """Sets the valid_period of this ProxyTokenDTO.
+        r"""Sets the valid_period of this ProxyTokenDTO.
 
         Token有效时长，单位：秒。
 
@@ -143,7 +143,7 @@ class ProxyTokenDTO:
 
     @property
     def middle_end_url(self):
-        """Gets the middle_end_url of this ProxyTokenDTO.
+        r"""Gets the middle_end_url of this ProxyTokenDTO.
 
         中台地址。
 
@@ -154,7 +154,7 @@ class ProxyTokenDTO:
 
     @middle_end_url.setter
     def middle_end_url(self, middle_end_url):
-        """Sets the middle_end_url of this ProxyTokenDTO.
+        r"""Sets the middle_end_url of this ProxyTokenDTO.
 
         中台地址。
 
@@ -165,7 +165,7 @@ class ProxyTokenDTO:
 
     @property
     def middle_end_inner_url(self):
-        """Gets the middle_end_inner_url of this ProxyTokenDTO.
+        r"""Gets the middle_end_inner_url of this ProxyTokenDTO.
 
         中台内网地址。
 
@@ -176,7 +176,7 @@ class ProxyTokenDTO:
 
     @middle_end_inner_url.setter
     def middle_end_inner_url(self, middle_end_inner_url):
-        """Sets the middle_end_inner_url of this ProxyTokenDTO.
+        r"""Sets the middle_end_inner_url of this ProxyTokenDTO.
 
         中台内网地址。
 
@@ -187,7 +187,7 @@ class ProxyTokenDTO:
 
     @property
     def enable_rerouting(self):
-        """Gets the enable_rerouting of this ProxyTokenDTO.
+        r"""Gets the enable_rerouting of this ProxyTokenDTO.
 
         是否开启二次路由。
 
@@ -198,7 +198,7 @@ class ProxyTokenDTO:
 
     @enable_rerouting.setter
     def enable_rerouting(self, enable_rerouting):
-        """Sets the enable_rerouting of this ProxyTokenDTO.
+        r"""Sets the enable_rerouting of this ProxyTokenDTO.
 
         是否开启二次路由。
 

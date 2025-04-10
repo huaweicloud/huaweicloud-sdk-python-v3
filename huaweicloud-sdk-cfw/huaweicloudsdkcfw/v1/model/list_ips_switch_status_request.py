@@ -29,7 +29,7 @@ class ListIpsSwitchStatusRequest:
     }
 
     def __init__(self, object_id=None, enterprise_project_id=None, fw_instance_id=None):
-        """ListIpsSwitchStatusRequest
+        r"""ListIpsSwitchStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListIpsSwitchStatusRequest:
 
     @property
     def object_id(self):
-        """Gets the object_id of this ListIpsSwitchStatusRequest.
+        r"""Gets the object_id of this ListIpsSwitchStatusRequest.
 
         防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。此处仅取type为0的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。
 
@@ -67,7 +67,7 @@ class ListIpsSwitchStatusRequest:
 
     @object_id.setter
     def object_id(self, object_id):
-        """Sets the object_id of this ListIpsSwitchStatusRequest.
+        r"""Sets the object_id of this ListIpsSwitchStatusRequest.
 
         防护对象id，是创建云防火墙后用于区分互联网边界防护和VPC边界防护的标志id，可通过调用[查询防火墙实例接口](ListFirewallDetail.xml)获得，通过返回值中的data.records.protect_objects.object_id（.表示各对象之间层级的区分）获得，注意type为0的为互联网边界防护对象id，type为1的为VPC边界防护对象id。此处仅取type为0的防护对象id，可通过data.records.protect_objects.type（.表示各对象之间层级的区分）获得。
 
@@ -78,7 +78,7 @@ class ListIpsSwitchStatusRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListIpsSwitchStatusRequest.
+        r"""Gets the enterprise_project_id of this ListIpsSwitchStatusRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -89,7 +89,7 @@ class ListIpsSwitchStatusRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListIpsSwitchStatusRequest.
+        r"""Sets the enterprise_project_id of this ListIpsSwitchStatusRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -100,7 +100,7 @@ class ListIpsSwitchStatusRequest:
 
     @property
     def fw_instance_id(self):
-        """Gets the fw_instance_id of this ListIpsSwitchStatusRequest.
+        r"""Gets the fw_instance_id of this ListIpsSwitchStatusRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -111,7 +111,7 @@ class ListIpsSwitchStatusRequest:
 
     @fw_instance_id.setter
     def fw_instance_id(self, fw_instance_id):
-        """Sets the fw_instance_id of this ListIpsSwitchStatusRequest.
+        r"""Sets the fw_instance_id of this ListIpsSwitchStatusRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 

@@ -26,7 +26,7 @@ class ShowApplyHistoryResponse(SdkResponse):
     }
 
     def __init__(self, histories=None):
-        """ShowApplyHistoryResponse
+        r"""ShowApplyHistoryResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowApplyHistoryResponse(SdkResponse):
 
     @property
     def histories(self):
-        """Gets the histories of this ShowApplyHistoryResponse.
+        r"""Gets the histories of this ShowApplyHistoryResponse.
 
         参数组模板应用历史列表
 
@@ -55,7 +55,7 @@ class ShowApplyHistoryResponse(SdkResponse):
 
     @histories.setter
     def histories(self, histories):
-        """Sets the histories of this ShowApplyHistoryResponse.
+        r"""Sets the histories of this ShowApplyHistoryResponse.
 
         参数组模板应用历史列表
 

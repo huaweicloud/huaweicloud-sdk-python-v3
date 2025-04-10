@@ -27,7 +27,7 @@ class ListP2cVgwsRequest:
     }
 
     def __init__(self, limit=None, marker=None):
-        """ListP2cVgwsRequest
+        r"""ListP2cVgwsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListP2cVgwsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListP2cVgwsRequest.
+        r"""Gets the limit of this ListP2cVgwsRequest.
 
         分页查询时每页返回的记录数量
 
@@ -61,7 +61,7 @@ class ListP2cVgwsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListP2cVgwsRequest.
+        r"""Sets the limit of this ListP2cVgwsRequest.
 
         分页查询时每页返回的记录数量
 
@@ -72,7 +72,7 @@ class ListP2cVgwsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListP2cVgwsRequest.
+        r"""Gets the marker of this ListP2cVgwsRequest.
 
         上一页最后一条记录的id，为空时为查询第一页。使用说明：必须与limit一起使用。
 
@@ -83,7 +83,7 @@ class ListP2cVgwsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListP2cVgwsRequest.
+        r"""Sets the marker of this ListP2cVgwsRequest.
 
         上一页最后一条记录的id，为空时为查询第一页。使用说明：必须与limit一起使用。
 

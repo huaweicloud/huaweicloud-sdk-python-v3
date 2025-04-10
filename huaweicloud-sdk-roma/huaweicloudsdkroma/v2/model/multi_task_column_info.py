@@ -29,7 +29,7 @@ class MultiTaskColumnInfo:
     }
 
     def __init__(self, field_name=None, field_type=None, field_length=None):
-        """MultiTaskColumnInfo
+        r"""MultiTaskColumnInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class MultiTaskColumnInfo:
 
     @property
     def field_name(self):
-        """Gets the field_name of this MultiTaskColumnInfo.
+        r"""Gets the field_name of this MultiTaskColumnInfo.
 
         字段名
 
@@ -68,7 +68,7 @@ class MultiTaskColumnInfo:
 
     @field_name.setter
     def field_name(self, field_name):
-        """Sets the field_name of this MultiTaskColumnInfo.
+        r"""Sets the field_name of this MultiTaskColumnInfo.
 
         字段名
 
@@ -79,7 +79,7 @@ class MultiTaskColumnInfo:
 
     @property
     def field_type(self):
-        """Gets the field_type of this MultiTaskColumnInfo.
+        r"""Gets the field_type of this MultiTaskColumnInfo.
 
         字段类型
 
@@ -90,7 +90,7 @@ class MultiTaskColumnInfo:
 
     @field_type.setter
     def field_type(self, field_type):
-        """Sets the field_type of this MultiTaskColumnInfo.
+        r"""Sets the field_type of this MultiTaskColumnInfo.
 
         字段类型
 
@@ -101,7 +101,7 @@ class MultiTaskColumnInfo:
 
     @property
     def field_length(self):
-        """Gets the field_length of this MultiTaskColumnInfo.
+        r"""Gets the field_length of this MultiTaskColumnInfo.
 
         字段长度
 
@@ -112,7 +112,7 @@ class MultiTaskColumnInfo:
 
     @field_length.setter
     def field_length(self, field_length):
-        """Sets the field_length of this MultiTaskColumnInfo.
+        r"""Sets the field_length of this MultiTaskColumnInfo.
 
         字段长度
 

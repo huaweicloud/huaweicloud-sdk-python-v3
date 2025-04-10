@@ -35,7 +35,7 @@ class RocketMQConfigResp:
     }
 
     def __init__(self, name=None, value=None, config_type=None, default_value=None, valid_values=None, value_type=None):
-        """RocketMQConfigResp
+        r"""RocketMQConfigResp
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class RocketMQConfigResp:
 
     @property
     def name(self):
-        """Gets the name of this RocketMQConfigResp.
+        r"""Gets the name of this RocketMQConfigResp.
 
         RocketMQ配置名称。
 
@@ -89,7 +89,7 @@ class RocketMQConfigResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RocketMQConfigResp.
+        r"""Sets the name of this RocketMQConfigResp.
 
         RocketMQ配置名称。
 
@@ -100,7 +100,7 @@ class RocketMQConfigResp:
 
     @property
     def value(self):
-        """Gets the value of this RocketMQConfigResp.
+        r"""Gets the value of this RocketMQConfigResp.
 
         RocketMQ配置当前值。
 
@@ -111,7 +111,7 @@ class RocketMQConfigResp:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this RocketMQConfigResp.
+        r"""Sets the value of this RocketMQConfigResp.
 
         RocketMQ配置当前值。
 
@@ -122,7 +122,7 @@ class RocketMQConfigResp:
 
     @property
     def config_type(self):
-        """Gets the config_type of this RocketMQConfigResp.
+        r"""Gets the config_type of this RocketMQConfigResp.
 
         RocketMQ配置的类型。
 
@@ -133,7 +133,7 @@ class RocketMQConfigResp:
 
     @config_type.setter
     def config_type(self, config_type):
-        """Sets the config_type of this RocketMQConfigResp.
+        r"""Sets the config_type of this RocketMQConfigResp.
 
         RocketMQ配置的类型。
 
@@ -144,7 +144,7 @@ class RocketMQConfigResp:
 
     @property
     def default_value(self):
-        """Gets the default_value of this RocketMQConfigResp.
+        r"""Gets the default_value of this RocketMQConfigResp.
 
         RocketMQ配置的默认值。
 
@@ -155,7 +155,7 @@ class RocketMQConfigResp:
 
     @default_value.setter
     def default_value(self, default_value):
-        """Sets the default_value of this RocketMQConfigResp.
+        r"""Sets the default_value of this RocketMQConfigResp.
 
         RocketMQ配置的默认值。
 
@@ -166,7 +166,7 @@ class RocketMQConfigResp:
 
     @property
     def valid_values(self):
-        """Gets the valid_values of this RocketMQConfigResp.
+        r"""Gets the valid_values of this RocketMQConfigResp.
 
         RocketMQ配置取值的范围。
 
@@ -177,7 +177,7 @@ class RocketMQConfigResp:
 
     @valid_values.setter
     def valid_values(self, valid_values):
-        """Sets the valid_values of this RocketMQConfigResp.
+        r"""Sets the valid_values of this RocketMQConfigResp.
 
         RocketMQ配置取值的范围。
 
@@ -188,7 +188,7 @@ class RocketMQConfigResp:
 
     @property
     def value_type(self):
-        """Gets the value_type of this RocketMQConfigResp.
+        r"""Gets the value_type of this RocketMQConfigResp.
 
         RocketMQ配置值的类型。
 
@@ -199,7 +199,7 @@ class RocketMQConfigResp:
 
     @value_type.setter
     def value_type(self, value_type):
-        """Sets the value_type of this RocketMQConfigResp.
+        r"""Sets the value_type of this RocketMQConfigResp.
 
         RocketMQ配置值的类型。
 

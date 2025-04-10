@@ -29,7 +29,7 @@ class FlavorSpotOptions:
     }
 
     def __init__(self, longest_spot_duration_hours=None, largest_spot_duration_count=None, interruption_policy=None):
-        """FlavorSpotOptions
+        r"""FlavorSpotOptions
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class FlavorSpotOptions:
 
     @property
     def longest_spot_duration_hours(self):
-        """Gets the longest_spot_duration_hours of this FlavorSpotOptions.
+        r"""Gets the longest_spot_duration_hours of this FlavorSpotOptions.
 
         购买的竞价实例时长
 
@@ -68,7 +68,7 @@ class FlavorSpotOptions:
 
     @longest_spot_duration_hours.setter
     def longest_spot_duration_hours(self, longest_spot_duration_hours):
-        """Sets the longest_spot_duration_hours of this FlavorSpotOptions.
+        r"""Sets the longest_spot_duration_hours of this FlavorSpotOptions.
 
         购买的竞价实例时长
 
@@ -79,7 +79,7 @@ class FlavorSpotOptions:
 
     @property
     def largest_spot_duration_count(self):
-        """Gets the largest_spot_duration_count of this FlavorSpotOptions.
+        r"""Gets the largest_spot_duration_count of this FlavorSpotOptions.
 
         购买的“竞价实例时长”的个数。
 
@@ -90,7 +90,7 @@ class FlavorSpotOptions:
 
     @largest_spot_duration_count.setter
     def largest_spot_duration_count(self, largest_spot_duration_count):
-        """Sets the largest_spot_duration_count of this FlavorSpotOptions.
+        r"""Sets the largest_spot_duration_count of this FlavorSpotOptions.
 
         购买的“竞价实例时长”的个数。
 
@@ -101,7 +101,7 @@ class FlavorSpotOptions:
 
     @property
     def interruption_policy(self):
-        """Gets the interruption_policy of this FlavorSpotOptions.
+        r"""Gets the interruption_policy of this FlavorSpotOptions.
 
         竞价实例中断策略。  - immediate：立即释放 - delay：延迟释放
 
@@ -112,7 +112,7 @@ class FlavorSpotOptions:
 
     @interruption_policy.setter
     def interruption_policy(self, interruption_policy):
-        """Sets the interruption_policy of this FlavorSpotOptions.
+        r"""Sets the interruption_policy of this FlavorSpotOptions.
 
         竞价实例中断策略。  - immediate：立即释放 - delay：延迟释放
 

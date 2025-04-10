@@ -23,7 +23,7 @@ class ShowDomainOverviewRequest:
     }
 
     def __init__(self):
-        """ShowDomainOverviewRequest
+        r"""ShowDomainOverviewRequest
 
         The model defined in huaweicloud sdk
 

@@ -27,7 +27,7 @@ class PartitionList:
     }
 
     def __init__(self, total_count=None, partition_infos=None):
-        """PartitionList
+        r"""PartitionList
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class PartitionList:
 
     @property
     def total_count(self):
-        """Gets the total_count of this PartitionList.
+        r"""Gets the total_count of this PartitionList.
 
         总个数
 
@@ -59,7 +59,7 @@ class PartitionList:
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this PartitionList.
+        r"""Sets the total_count of this PartitionList.
 
         总个数
 
@@ -70,7 +70,7 @@ class PartitionList:
 
     @property
     def partition_infos(self):
-        """Gets the partition_infos of this PartitionList.
+        r"""Gets the partition_infos of this PartitionList.
 
         分区信息列表
 
@@ -81,7 +81,7 @@ class PartitionList:
 
     @partition_infos.setter
     def partition_infos(self, partition_infos):
-        """Sets the partition_infos of this PartitionList.
+        r"""Sets the partition_infos of this PartitionList.
 
         分区信息列表
 

@@ -31,7 +31,7 @@ class SendSmVerificationCodeReq:
     }
 
     def __init__(self, mobile_phone=None, timeout=None, language=None, sm_template_args=None):
-        """SendSmVerificationCodeReq
+        r"""SendSmVerificationCodeReq
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class SendSmVerificationCodeReq:
 
     @property
     def mobile_phone(self):
-        """Gets the mobile_phone of this SendSmVerificationCodeReq.
+        r"""Gets the mobile_phone of this SendSmVerificationCodeReq.
 
         接受短信验证码的手机号码。
 
@@ -73,7 +73,7 @@ class SendSmVerificationCodeReq:
 
     @mobile_phone.setter
     def mobile_phone(self, mobile_phone):
-        """Sets the mobile_phone of this SendSmVerificationCodeReq.
+        r"""Sets the mobile_phone of this SendSmVerificationCodeReq.
 
         接受短信验证码的手机号码。
 
@@ -84,7 +84,7 @@ class SendSmVerificationCodeReq:
 
     @property
     def timeout(self):
-        """Gets the timeout of this SendSmVerificationCodeReq.
+        r"""Gets the timeout of this SendSmVerificationCodeReq.
 
         超时时间，默认值为10分钟。 单位：分钟
 
@@ -95,7 +95,7 @@ class SendSmVerificationCodeReq:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this SendSmVerificationCodeReq.
+        r"""Sets the timeout of this SendSmVerificationCodeReq.
 
         超时时间，默认值为10分钟。 单位：分钟
 
@@ -106,7 +106,7 @@ class SendSmVerificationCodeReq:
 
     @property
     def language(self):
-        """Gets the language of this SendSmVerificationCodeReq.
+        r"""Gets the language of this SendSmVerificationCodeReq.
 
         发送的短信的语言。 zh-cn: 中文en-us: 英语 默认为偏好设置的默认语言。
 
@@ -117,7 +117,7 @@ class SendSmVerificationCodeReq:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this SendSmVerificationCodeReq.
+        r"""Sets the language of this SendSmVerificationCodeReq.
 
         发送的短信的语言。 zh-cn: 中文en-us: 英语 默认为偏好设置的默认语言。
 
@@ -128,7 +128,7 @@ class SendSmVerificationCodeReq:
 
     @property
     def sm_template_args(self):
-        """Gets the sm_template_args of this SendSmVerificationCodeReq.
+        r"""Gets the sm_template_args of this SendSmVerificationCodeReq.
 
         短信发送模板中的变量，具体参见表1。
 
@@ -139,7 +139,7 @@ class SendSmVerificationCodeReq:
 
     @sm_template_args.setter
     def sm_template_args(self, sm_template_args):
-        """Sets the sm_template_args of this SendSmVerificationCodeReq.
+        r"""Sets the sm_template_args of this SendSmVerificationCodeReq.
 
         短信发送模板中的变量，具体参见表1。
 

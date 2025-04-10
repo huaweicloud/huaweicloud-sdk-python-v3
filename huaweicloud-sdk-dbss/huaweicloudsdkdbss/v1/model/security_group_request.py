@@ -27,7 +27,7 @@ class SecurityGroupRequest:
     }
 
     def __init__(self, instance_id=None, securitygroup_ids=None):
-        """SecurityGroupRequest
+        r"""SecurityGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class SecurityGroupRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SecurityGroupRequest.
+        r"""Gets the instance_id of this SecurityGroupRequest.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 
@@ -59,7 +59,7 @@ class SecurityGroupRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SecurityGroupRequest.
+        r"""Sets the instance_id of this SecurityGroupRequest.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 
@@ -70,7 +70,7 @@ class SecurityGroupRequest:
 
     @property
     def securitygroup_ids(self):
-        """Gets the securitygroup_ids of this SecurityGroupRequest.
+        r"""Gets the securitygroup_ids of this SecurityGroupRequest.
 
         安全组ID列表(目前只支持传一个ID)
 
@@ -81,7 +81,7 @@ class SecurityGroupRequest:
 
     @securitygroup_ids.setter
     def securitygroup_ids(self, securitygroup_ids):
-        """Sets the securitygroup_ids of this SecurityGroupRequest.
+        r"""Sets the securitygroup_ids of this SecurityGroupRequest.
 
         安全组ID列表(目前只支持传一个ID)
 

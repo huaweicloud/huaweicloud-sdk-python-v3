@@ -28,7 +28,7 @@ class CheckSlideVerifyCodeResponse(SdkResponse):
     }
 
     def __init__(self, token=None, expire=None):
-        """CheckSlideVerifyCodeResponse
+        r"""CheckSlideVerifyCodeResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CheckSlideVerifyCodeResponse(SdkResponse):
 
     @property
     def token(self):
-        """Gets the token of this CheckSlideVerifyCodeResponse.
+        r"""Gets the token of this CheckSlideVerifyCodeResponse.
 
         访问Token字符串。
 
@@ -62,7 +62,7 @@ class CheckSlideVerifyCodeResponse(SdkResponse):
 
     @token.setter
     def token(self, token):
-        """Sets the token of this CheckSlideVerifyCodeResponse.
+        r"""Sets the token of this CheckSlideVerifyCodeResponse.
 
         访问Token字符串。
 
@@ -73,7 +73,7 @@ class CheckSlideVerifyCodeResponse(SdkResponse):
 
     @property
     def expire(self):
-        """Gets the expire of this CheckSlideVerifyCodeResponse.
+        r"""Gets the expire of this CheckSlideVerifyCodeResponse.
 
         过期时间，单位：秒。
 
@@ -84,7 +84,7 @@ class CheckSlideVerifyCodeResponse(SdkResponse):
 
     @expire.setter
     def expire(self, expire):
-        """Sets the expire of this CheckSlideVerifyCodeResponse.
+        r"""Sets the expire of this CheckSlideVerifyCodeResponse.
 
         过期时间，单位：秒。
 

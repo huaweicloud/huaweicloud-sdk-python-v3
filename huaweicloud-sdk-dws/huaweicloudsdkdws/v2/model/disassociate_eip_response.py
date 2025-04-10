@@ -24,7 +24,7 @@ class DisassociateEipResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DisassociateEipResponse
+        r"""DisassociateEipResponse
 
         The model defined in huaweicloud sdk
 

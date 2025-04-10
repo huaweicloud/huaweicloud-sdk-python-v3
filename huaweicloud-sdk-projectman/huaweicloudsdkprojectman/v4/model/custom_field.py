@@ -29,7 +29,7 @@ class CustomField:
     }
 
     def __init__(self, name=None, value=None, new_name=None):
-        """CustomField
+        r"""CustomField
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CustomField:
 
     @property
     def name(self):
-        """Gets the name of this CustomField.
+        r"""Gets the name of this CustomField.
 
         自定义属性名
 
@@ -68,7 +68,7 @@ class CustomField:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CustomField.
+        r"""Sets the name of this CustomField.
 
         自定义属性名
 
@@ -79,7 +79,7 @@ class CustomField:
 
     @property
     def value(self):
-        """Gets the value of this CustomField.
+        r"""Gets the value of this CustomField.
 
         自定义属性对应的值
 
@@ -90,7 +90,7 @@ class CustomField:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this CustomField.
+        r"""Sets the value of this CustomField.
 
         自定义属性对应的值
 
@@ -101,7 +101,7 @@ class CustomField:
 
     @property
     def new_name(self):
-        """Gets the new_name of this CustomField.
+        r"""Gets the new_name of this CustomField.
 
         自定义属性名
 
@@ -112,7 +112,7 @@ class CustomField:
 
     @new_name.setter
     def new_name(self, new_name):
-        """Sets the new_name of this CustomField.
+        r"""Sets the new_name of this CustomField.
 
         自定义属性名
 

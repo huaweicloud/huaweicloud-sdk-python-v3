@@ -25,7 +25,7 @@ class VerifyMacRequest:
     }
 
     def __init__(self, body=None):
-        """VerifyMacRequest
+        r"""VerifyMacRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class VerifyMacRequest:
 
     @property
     def body(self):
-        """Gets the body of this VerifyMacRequest.
+        r"""Gets the body of this VerifyMacRequest.
 
         :return: The body of this VerifyMacRequest.
         :rtype: :class:`huaweicloudsdkkms.v2.VerifyMacRequestBody`
@@ -52,7 +52,7 @@ class VerifyMacRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this VerifyMacRequest.
+        r"""Sets the body of this VerifyMacRequest.
 
         :param body: The body of this VerifyMacRequest.
         :type body: :class:`huaweicloudsdkkms.v2.VerifyMacRequestBody`

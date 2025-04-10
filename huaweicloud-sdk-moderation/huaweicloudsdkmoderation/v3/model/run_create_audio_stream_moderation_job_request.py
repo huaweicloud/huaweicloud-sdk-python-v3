@@ -25,7 +25,7 @@ class RunCreateAudioStreamModerationJobRequest:
     }
 
     def __init__(self, body=None):
-        """RunCreateAudioStreamModerationJobRequest
+        r"""RunCreateAudioStreamModerationJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RunCreateAudioStreamModerationJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunCreateAudioStreamModerationJobRequest.
+        r"""Gets the body of this RunCreateAudioStreamModerationJobRequest.
 
         :return: The body of this RunCreateAudioStreamModerationJobRequest.
         :rtype: :class:`huaweicloudsdkmoderation.v3.AudioStreamCreateRequest`
@@ -52,7 +52,7 @@ class RunCreateAudioStreamModerationJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunCreateAudioStreamModerationJobRequest.
+        r"""Sets the body of this RunCreateAudioStreamModerationJobRequest.
 
         :param body: The body of this RunCreateAudioStreamModerationJobRequest.
         :type body: :class:`huaweicloudsdkmoderation.v3.AudioStreamCreateRequest`

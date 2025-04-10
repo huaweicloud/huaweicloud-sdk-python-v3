@@ -25,7 +25,7 @@ class CreateVpcRequestBody:
     }
 
     def __init__(self, vpc=None):
-        """CreateVpcRequestBody
+        r"""CreateVpcRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateVpcRequestBody:
 
     @property
     def vpc(self):
-        """Gets the vpc of this CreateVpcRequestBody.
+        r"""Gets the vpc of this CreateVpcRequestBody.
 
         :return: The vpc of this CreateVpcRequestBody.
         :rtype: :class:`huaweicloudsdkvpc.v2.CreateVpcOption`
@@ -51,7 +51,7 @@ class CreateVpcRequestBody:
 
     @vpc.setter
     def vpc(self, vpc):
-        """Sets the vpc of this CreateVpcRequestBody.
+        r"""Sets the vpc of this CreateVpcRequestBody.
 
         :param vpc: The vpc of this CreateVpcRequestBody.
         :type vpc: :class:`huaweicloudsdkvpc.v2.CreateVpcOption`

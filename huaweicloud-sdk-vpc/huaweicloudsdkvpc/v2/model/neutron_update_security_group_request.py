@@ -27,7 +27,7 @@ class NeutronUpdateSecurityGroupRequest:
     }
 
     def __init__(self, security_group_id=None, body=None):
-        """NeutronUpdateSecurityGroupRequest
+        r"""NeutronUpdateSecurityGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class NeutronUpdateSecurityGroupRequest:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this NeutronUpdateSecurityGroupRequest.
+        r"""Gets the security_group_id of this NeutronUpdateSecurityGroupRequest.
 
         安全组ID
 
@@ -60,7 +60,7 @@ class NeutronUpdateSecurityGroupRequest:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this NeutronUpdateSecurityGroupRequest.
+        r"""Sets the security_group_id of this NeutronUpdateSecurityGroupRequest.
 
         安全组ID
 
@@ -71,7 +71,7 @@ class NeutronUpdateSecurityGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this NeutronUpdateSecurityGroupRequest.
+        r"""Gets the body of this NeutronUpdateSecurityGroupRequest.
 
         :return: The body of this NeutronUpdateSecurityGroupRequest.
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronUpdateSecurityGroupRequestBody`
@@ -80,7 +80,7 @@ class NeutronUpdateSecurityGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this NeutronUpdateSecurityGroupRequest.
+        r"""Sets the body of this NeutronUpdateSecurityGroupRequest.
 
         :param body: The body of this NeutronUpdateSecurityGroupRequest.
         :type body: :class:`huaweicloudsdkvpc.v2.NeutronUpdateSecurityGroupRequestBody`

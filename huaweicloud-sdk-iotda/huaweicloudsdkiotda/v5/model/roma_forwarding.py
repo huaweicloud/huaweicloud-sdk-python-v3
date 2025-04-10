@@ -32,7 +32,7 @@ class RomaForwarding:
     }
 
     def __init__(self, addresses=None, topic=None, username=None, password=None):
-        """RomaForwarding
+        r"""RomaForwarding
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class RomaForwarding:
 
     @property
     def addresses(self):
-        """Gets the addresses of this RomaForwarding.
+        r"""Gets the addresses of this RomaForwarding.
 
         **参数说明**：转发roma消息对应的地址列表
 
@@ -72,7 +72,7 @@ class RomaForwarding:
 
     @addresses.setter
     def addresses(self, addresses):
-        """Sets the addresses of this RomaForwarding.
+        r"""Sets the addresses of this RomaForwarding.
 
         **参数说明**：转发roma消息对应的地址列表
 
@@ -83,7 +83,7 @@ class RomaForwarding:
 
     @property
     def topic(self):
-        """Gets the topic of this RomaForwarding.
+        r"""Gets the topic of this RomaForwarding.
 
         **参数说明**：转发roma消息关联的topic信息。
 
@@ -94,7 +94,7 @@ class RomaForwarding:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this RomaForwarding.
+        r"""Sets the topic of this RomaForwarding.
 
         **参数说明**：转发roma消息关联的topic信息。
 
@@ -105,7 +105,7 @@ class RomaForwarding:
 
     @property
     def username(self):
-        """Gets the username of this RomaForwarding.
+        r"""Gets the username of this RomaForwarding.
 
         **参数说明**：转发roma关联的用户名信息。
 
@@ -116,7 +116,7 @@ class RomaForwarding:
 
     @username.setter
     def username(self, username):
-        """Sets the username of this RomaForwarding.
+        r"""Sets the username of this RomaForwarding.
 
         **参数说明**：转发roma关联的用户名信息。
 
@@ -127,7 +127,7 @@ class RomaForwarding:
 
     @property
     def password(self):
-        """Gets the password of this RomaForwarding.
+        r"""Gets the password of this RomaForwarding.
 
         **参数说明**：转发roma关联的密码信息。
 
@@ -138,7 +138,7 @@ class RomaForwarding:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this RomaForwarding.
+        r"""Sets the password of this RomaForwarding.
 
         **参数说明**：转发roma关联的密码信息。
 

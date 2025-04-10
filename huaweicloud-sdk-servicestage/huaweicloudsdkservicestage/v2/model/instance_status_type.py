@@ -40,7 +40,7 @@ class InstanceStatusType:
     }
 
     def __init__(self):
-        """InstanceStatusType
+        r"""InstanceStatusType
 
         The model defined in huaweicloud sdk
 

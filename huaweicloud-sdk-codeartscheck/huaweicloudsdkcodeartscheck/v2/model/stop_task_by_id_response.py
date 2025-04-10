@@ -24,7 +24,7 @@ class StopTaskByIdResponse(SdkResponse):
     }
 
     def __init__(self):
-        """StopTaskByIdResponse
+        r"""StopTaskByIdResponse
 
         The model defined in huaweicloud sdk
 

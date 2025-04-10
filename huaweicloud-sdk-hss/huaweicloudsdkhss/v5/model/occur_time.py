@@ -23,7 +23,7 @@ class OccurTime:
     }
 
     def __init__(self):
-        """OccurTime
+        r"""OccurTime
 
         The model defined in huaweicloud sdk
 

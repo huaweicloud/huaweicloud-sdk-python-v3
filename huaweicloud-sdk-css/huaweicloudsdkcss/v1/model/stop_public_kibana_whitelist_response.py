@@ -24,7 +24,7 @@ class StopPublicKibanaWhitelistResponse(SdkResponse):
     }
 
     def __init__(self):
-        """StopPublicKibanaWhitelistResponse
+        r"""StopPublicKibanaWhitelistResponse
 
         The model defined in huaweicloud sdk
 

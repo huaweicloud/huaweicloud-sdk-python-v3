@@ -25,7 +25,7 @@ class DeleteDatabaseResourceRequest:
     }
 
     def __init__(self, id=None):
-        """DeleteDatabaseResourceRequest
+        r"""DeleteDatabaseResourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteDatabaseResourceRequest:
 
     @property
     def id(self):
-        """Gets the id of this DeleteDatabaseResourceRequest.
+        r"""Gets the id of this DeleteDatabaseResourceRequest.
 
         数据库ID
 
@@ -53,7 +53,7 @@ class DeleteDatabaseResourceRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteDatabaseResourceRequest.
+        r"""Sets the id of this DeleteDatabaseResourceRequest.
 
         数据库ID
 

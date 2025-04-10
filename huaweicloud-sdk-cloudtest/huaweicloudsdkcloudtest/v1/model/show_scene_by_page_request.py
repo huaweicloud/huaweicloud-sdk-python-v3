@@ -27,7 +27,7 @@ class ShowSceneByPageRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """ShowSceneByPageRequest
+        r"""ShowSceneByPageRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowSceneByPageRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowSceneByPageRequest.
+        r"""Gets the project_id of this ShowSceneByPageRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -60,7 +60,7 @@ class ShowSceneByPageRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowSceneByPageRequest.
+        r"""Sets the project_id of this ShowSceneByPageRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -71,7 +71,7 @@ class ShowSceneByPageRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowSceneByPageRequest.
+        r"""Gets the body of this ShowSceneByPageRequest.
 
         :return: The body of this ShowSceneByPageRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CommRequestScenePageParam`
@@ -80,7 +80,7 @@ class ShowSceneByPageRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowSceneByPageRequest.
+        r"""Sets the body of this ShowSceneByPageRequest.
 
         :param body: The body of this ShowSceneByPageRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.CommRequestScenePageParam`

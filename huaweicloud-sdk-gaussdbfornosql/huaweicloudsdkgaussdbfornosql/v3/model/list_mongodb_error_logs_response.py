@@ -26,7 +26,7 @@ class ListMongodbErrorLogsResponse(SdkResponse):
     }
 
     def __init__(self, error_logs=None):
-        """ListMongodbErrorLogsResponse
+        r"""ListMongodbErrorLogsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListMongodbErrorLogsResponse(SdkResponse):
 
     @property
     def error_logs(self):
-        """Gets the error_logs of this ListMongodbErrorLogsResponse.
+        r"""Gets the error_logs of this ListMongodbErrorLogsResponse.
 
         错误日志具体信息。
 
@@ -55,7 +55,7 @@ class ListMongodbErrorLogsResponse(SdkResponse):
 
     @error_logs.setter
     def error_logs(self, error_logs):
-        """Sets the error_logs of this ListMongodbErrorLogsResponse.
+        r"""Sets the error_logs of this ListMongodbErrorLogsResponse.
 
         错误日志具体信息。
 

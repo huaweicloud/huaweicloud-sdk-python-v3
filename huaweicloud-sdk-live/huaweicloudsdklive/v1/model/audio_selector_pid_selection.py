@@ -25,7 +25,7 @@ class AudioSelectorPidSelection:
     }
 
     def __init__(self, pid=None):
-        """AudioSelectorPidSelection
+        r"""AudioSelectorPidSelection
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AudioSelectorPidSelection:
 
     @property
     def pid(self):
-        """Gets the pid of this AudioSelectorPidSelection.
+        r"""Gets the pid of this AudioSelectorPidSelection.
 
         设置PID的值
 
@@ -53,7 +53,7 @@ class AudioSelectorPidSelection:
 
     @pid.setter
     def pid(self, pid):
-        """Sets the pid of this AudioSelectorPidSelection.
+        r"""Sets the pid of this AudioSelectorPidSelection.
 
         设置PID的值
 

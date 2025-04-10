@@ -27,7 +27,7 @@ class RecaptureDetectResponseResultDetail:
     }
 
     def __init__(self, label=None, confidence=None):
-        """RecaptureDetectResponseResultDetail
+        r"""RecaptureDetectResponseResultDetail
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RecaptureDetectResponseResultDetail:
 
     @property
     def label(self):
-        """Gets the label of this RecaptureDetectResponseResultDetail.
+        r"""Gets the label of this RecaptureDetectResponseResultDetail.
 
         标签值。| original：原始图 recapture：翻拍图
 
@@ -61,7 +61,7 @@ class RecaptureDetectResponseResultDetail:
 
     @label.setter
     def label(self, label):
-        """Sets the label of this RecaptureDetectResponseResultDetail.
+        r"""Sets the label of this RecaptureDetectResponseResultDetail.
 
         标签值。| original：原始图 recapture：翻拍图
 
@@ -72,7 +72,7 @@ class RecaptureDetectResponseResultDetail:
 
     @property
     def confidence(self):
-        """Gets the confidence of this RecaptureDetectResponseResultDetail.
+        r"""Gets the confidence of this RecaptureDetectResponseResultDetail.
 
         置信度，取值范围（0~1）。
 
@@ -83,7 +83,7 @@ class RecaptureDetectResponseResultDetail:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this RecaptureDetectResponseResultDetail.
+        r"""Sets the confidence of this RecaptureDetectResponseResultDetail.
 
         置信度，取值范围（0~1）。
 

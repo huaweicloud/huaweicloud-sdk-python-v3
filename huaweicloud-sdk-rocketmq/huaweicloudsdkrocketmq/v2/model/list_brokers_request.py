@@ -25,7 +25,7 @@ class ListBrokersRequest:
     }
 
     def __init__(self, instance_id=None):
-        """ListBrokersRequest
+        r"""ListBrokersRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListBrokersRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListBrokersRequest.
+        r"""Gets the instance_id of this ListBrokersRequest.
 
         实例ID。
 
@@ -53,7 +53,7 @@ class ListBrokersRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListBrokersRequest.
+        r"""Sets the instance_id of this ListBrokersRequest.
 
         实例ID。
 

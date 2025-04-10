@@ -27,7 +27,7 @@ class RestorePoint:
     }
 
     def __init__(self, instance_id=None, backup_id=None):
-        """RestorePoint
+        r"""RestorePoint
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class RestorePoint:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this RestorePoint.
+        r"""Gets the instance_id of this RestorePoint.
 
         源实例ID。
 
@@ -59,7 +59,7 @@ class RestorePoint:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this RestorePoint.
+        r"""Sets the instance_id of this RestorePoint.
 
         源实例ID。
 
@@ -70,7 +70,7 @@ class RestorePoint:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this RestorePoint.
+        r"""Gets the backup_id of this RestorePoint.
 
         用于恢复的备份ID。
 
@@ -81,7 +81,7 @@ class RestorePoint:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this RestorePoint.
+        r"""Sets the backup_id of this RestorePoint.
 
         用于恢复的备份ID。
 

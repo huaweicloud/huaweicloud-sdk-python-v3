@@ -76,7 +76,7 @@ class ShowSignatureResponse(SdkResponse):
     }
 
     def __init__(self, id=None, create_time=None, update_time=None, customer_id=None, tenant=None, signature_name=None, signature_id=None, signature_type=None, app_name=None, apply_desc=None, channel_num=None, review_desc=None, file_id=None, status=None, site=None, signature_source=None, is_involved_third=None, power_attorney_file_id=None, urge_status=None, urge_time=None, urge_desc=None, app_key=None, source_title_content=None, signature_usage=None, qualification_id=None, qualification_name=None):
-        """ShowSignatureResponse
+        r"""ShowSignatureResponse
 
         The model defined in huaweicloud sdk
 
@@ -219,7 +219,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowSignatureResponse.
+        r"""Gets the id of this ShowSignatureResponse.
 
         签名主键id，用于获取、修改、删除、申请激活签名的唯一标识
 
@@ -230,7 +230,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowSignatureResponse.
+        r"""Sets the id of this ShowSignatureResponse.
 
         签名主键id，用于获取、修改、删除、申请激活签名的唯一标识
 
@@ -241,7 +241,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowSignatureResponse.
+        r"""Gets the create_time of this ShowSignatureResponse.
 
         创建时间[yyyy-MM-dd HH:mm:ss]
 
@@ -252,7 +252,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowSignatureResponse.
+        r"""Sets the create_time of this ShowSignatureResponse.
 
         创建时间[yyyy-MM-dd HH:mm:ss]
 
@@ -263,7 +263,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowSignatureResponse.
+        r"""Gets the update_time of this ShowSignatureResponse.
 
         更新时间[yyyy-MM-dd HH:mm:ss]
 
@@ -274,7 +274,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowSignatureResponse.
+        r"""Sets the update_time of this ShowSignatureResponse.
 
         更新时间[yyyy-MM-dd HH:mm:ss]
 
@@ -285,7 +285,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this ShowSignatureResponse.
+        r"""Gets the customer_id of this ShowSignatureResponse.
 
         租户customer id
 
@@ -296,7 +296,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this ShowSignatureResponse.
+        r"""Sets the customer_id of this ShowSignatureResponse.
 
         租户customer id
 
@@ -307,7 +307,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @property
     def tenant(self):
-        """Gets the tenant of this ShowSignatureResponse.
+        r"""Gets the tenant of this ShowSignatureResponse.
 
         :return: The tenant of this ShowSignatureResponse.
         :rtype: :class:`huaweicloudsdkmsgsms.v2.TenantBasic`
@@ -316,7 +316,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @tenant.setter
     def tenant(self, tenant):
-        """Sets the tenant of this ShowSignatureResponse.
+        r"""Sets the tenant of this ShowSignatureResponse.
 
         :param tenant: The tenant of this ShowSignatureResponse.
         :type tenant: :class:`huaweicloudsdkmsgsms.v2.TenantBasic`
@@ -325,7 +325,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @property
     def signature_name(self):
-        """Gets the signature_name of this ShowSignatureResponse.
+        r"""Gets the signature_name of this ShowSignatureResponse.
 
         签名名称
 
@@ -336,7 +336,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @signature_name.setter
     def signature_name(self, signature_name):
-        """Sets the signature_name of this ShowSignatureResponse.
+        r"""Sets the signature_name of this ShowSignatureResponse.
 
         签名名称
 
@@ -347,7 +347,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @property
     def signature_id(self):
-        """Gets the signature_id of this ShowSignatureResponse.
+        r"""Gets the signature_id of this ShowSignatureResponse.
 
         签名id
 
@@ -358,7 +358,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @signature_id.setter
     def signature_id(self, signature_id):
-        """Sets the signature_id of this ShowSignatureResponse.
+        r"""Sets the signature_id of this ShowSignatureResponse.
 
         签名id
 
@@ -369,7 +369,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @property
     def signature_type(self):
-        """Gets the signature_type of this ShowSignatureResponse.
+        r"""Gets the signature_type of this ShowSignatureResponse.
 
         签名类型
 
@@ -380,7 +380,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @signature_type.setter
     def signature_type(self, signature_type):
-        """Sets the signature_type of this ShowSignatureResponse.
+        r"""Sets the signature_type of this ShowSignatureResponse.
 
         签名类型
 
@@ -391,7 +391,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @property
     def app_name(self):
-        """Gets the app_name of this ShowSignatureResponse.
+        r"""Gets the app_name of this ShowSignatureResponse.
 
         应用名称
 
@@ -402,7 +402,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ShowSignatureResponse.
+        r"""Sets the app_name of this ShowSignatureResponse.
 
         应用名称
 
@@ -413,7 +413,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @property
     def apply_desc(self):
-        """Gets the apply_desc of this ShowSignatureResponse.
+        r"""Gets the apply_desc of this ShowSignatureResponse.
 
         申请描述
 
@@ -424,7 +424,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @apply_desc.setter
     def apply_desc(self, apply_desc):
-        """Sets the apply_desc of this ShowSignatureResponse.
+        r"""Sets the apply_desc of this ShowSignatureResponse.
 
         申请描述
 
@@ -435,7 +435,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @property
     def channel_num(self):
-        """Gets the channel_num of this ShowSignatureResponse.
+        r"""Gets the channel_num of this ShowSignatureResponse.
 
         国内短信通道号，仅当签名审核成功，运营人员配置完成后返回。
 
@@ -446,7 +446,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @channel_num.setter
     def channel_num(self, channel_num):
-        """Sets the channel_num of this ShowSignatureResponse.
+        r"""Sets the channel_num of this ShowSignatureResponse.
 
         国内短信通道号，仅当签名审核成功，运营人员配置完成后返回。
 
@@ -457,7 +457,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @property
     def review_desc(self):
-        """Gets the review_desc of this ShowSignatureResponse.
+        r"""Gets the review_desc of this ShowSignatureResponse.
 
         审核意见
 
@@ -468,7 +468,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @review_desc.setter
     def review_desc(self, review_desc):
-        """Sets the review_desc of this ShowSignatureResponse.
+        r"""Sets the review_desc of this ShowSignatureResponse.
 
         审核意见
 
@@ -479,7 +479,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @property
     def file_id(self):
-        """Gets the file_id of this ShowSignatureResponse.
+        r"""Gets the file_id of this ShowSignatureResponse.
 
         文件id
 
@@ -490,7 +490,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @file_id.setter
     def file_id(self, file_id):
-        """Sets the file_id of this ShowSignatureResponse.
+        r"""Sets the file_id of this ShowSignatureResponse.
 
         文件id
 
@@ -501,7 +501,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowSignatureResponse.
+        r"""Gets the status of this ShowSignatureResponse.
 
         签名状态
 
@@ -512,7 +512,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowSignatureResponse.
+        r"""Sets the status of this ShowSignatureResponse.
 
         签名状态
 
@@ -523,7 +523,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @property
     def site(self):
-        """Gets the site of this ShowSignatureResponse.
+        r"""Gets the site of this ShowSignatureResponse.
 
         站点
 
@@ -534,7 +534,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @site.setter
     def site(self, site):
-        """Sets the site of this ShowSignatureResponse.
+        r"""Sets the site of this ShowSignatureResponse.
 
         站点
 
@@ -545,7 +545,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @property
     def signature_source(self):
-        """Gets the signature_source of this ShowSignatureResponse.
+        r"""Gets the signature_source of this ShowSignatureResponse.
 
         签名来源
 
@@ -556,7 +556,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @signature_source.setter
     def signature_source(self, signature_source):
-        """Sets the signature_source of this ShowSignatureResponse.
+        r"""Sets the signature_source of this ShowSignatureResponse.
 
         签名来源
 
@@ -567,7 +567,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @property
     def is_involved_third(self):
-        """Gets the is_involved_third of this ShowSignatureResponse.
+        r"""Gets the is_involved_third of this ShowSignatureResponse.
 
         是否涉及第三方权益
 
@@ -578,7 +578,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @is_involved_third.setter
     def is_involved_third(self, is_involved_third):
-        """Sets the is_involved_third of this ShowSignatureResponse.
+        r"""Sets the is_involved_third of this ShowSignatureResponse.
 
         是否涉及第三方权益
 
@@ -589,7 +589,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @property
     def power_attorney_file_id(self):
-        """Gets the power_attorney_file_id of this ShowSignatureResponse.
+        r"""Gets the power_attorney_file_id of this ShowSignatureResponse.
 
         授权委托书文件ID
 
@@ -600,7 +600,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @power_attorney_file_id.setter
     def power_attorney_file_id(self, power_attorney_file_id):
-        """Sets the power_attorney_file_id of this ShowSignatureResponse.
+        r"""Sets the power_attorney_file_id of this ShowSignatureResponse.
 
         授权委托书文件ID
 
@@ -611,7 +611,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @property
     def urge_status(self):
-        """Gets the urge_status of this ShowSignatureResponse.
+        r"""Gets the urge_status of this ShowSignatureResponse.
 
         催审状态
 
@@ -622,7 +622,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @urge_status.setter
     def urge_status(self, urge_status):
-        """Sets the urge_status of this ShowSignatureResponse.
+        r"""Sets the urge_status of this ShowSignatureResponse.
 
         催审状态
 
@@ -633,7 +633,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @property
     def urge_time(self):
-        """Gets the urge_time of this ShowSignatureResponse.
+        r"""Gets the urge_time of this ShowSignatureResponse.
 
         催审时间
 
@@ -644,7 +644,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @urge_time.setter
     def urge_time(self, urge_time):
-        """Sets the urge_time of this ShowSignatureResponse.
+        r"""Sets the urge_time of this ShowSignatureResponse.
 
         催审时间
 
@@ -655,7 +655,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @property
     def urge_desc(self):
-        """Gets the urge_desc of this ShowSignatureResponse.
+        r"""Gets the urge_desc of this ShowSignatureResponse.
 
         催审描述
 
@@ -666,7 +666,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @urge_desc.setter
     def urge_desc(self, urge_desc):
-        """Sets the urge_desc of this ShowSignatureResponse.
+        r"""Sets the urge_desc of this ShowSignatureResponse.
 
         催审描述
 
@@ -677,7 +677,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @property
     def app_key(self):
-        """Gets the app_key of this ShowSignatureResponse.
+        r"""Gets the app_key of this ShowSignatureResponse.
 
         应用key
 
@@ -688,7 +688,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @app_key.setter
     def app_key(self, app_key):
-        """Sets the app_key of this ShowSignatureResponse.
+        r"""Sets the app_key of this ShowSignatureResponse.
 
         应用key
 
@@ -699,7 +699,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @property
     def source_title_content(self):
-        """Gets the source_title_content of this ShowSignatureResponse.
+        r"""Gets the source_title_content of this ShowSignatureResponse.
 
         标题内容
 
@@ -710,7 +710,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @source_title_content.setter
     def source_title_content(self, source_title_content):
-        """Sets the source_title_content of this ShowSignatureResponse.
+        r"""Sets the source_title_content of this ShowSignatureResponse.
 
         标题内容
 
@@ -721,7 +721,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @property
     def signature_usage(self):
-        """Gets the signature_usage of this ShowSignatureResponse.
+        r"""Gets the signature_usage of this ShowSignatureResponse.
 
         签名用途
 
@@ -732,7 +732,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @signature_usage.setter
     def signature_usage(self, signature_usage):
-        """Sets the signature_usage of this ShowSignatureResponse.
+        r"""Sets the signature_usage of this ShowSignatureResponse.
 
         签名用途
 
@@ -743,7 +743,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @property
     def qualification_id(self):
-        """Gets the qualification_id of this ShowSignatureResponse.
+        r"""Gets the qualification_id of this ShowSignatureResponse.
 
         资质ID
 
@@ -754,7 +754,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @qualification_id.setter
     def qualification_id(self, qualification_id):
-        """Sets the qualification_id of this ShowSignatureResponse.
+        r"""Sets the qualification_id of this ShowSignatureResponse.
 
         资质ID
 
@@ -765,7 +765,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @property
     def qualification_name(self):
-        """Gets the qualification_name of this ShowSignatureResponse.
+        r"""Gets the qualification_name of this ShowSignatureResponse.
 
         资质名
 
@@ -776,7 +776,7 @@ class ShowSignatureResponse(SdkResponse):
 
     @qualification_name.setter
     def qualification_name(self, qualification_name):
-        """Sets the qualification_name of this ShowSignatureResponse.
+        r"""Sets the qualification_name of this ShowSignatureResponse.
 
         资质名
 

@@ -25,7 +25,7 @@ class ModifyInstanceNameReq:
     }
 
     def __init__(self, name=None):
-        """ModifyInstanceNameReq
+        r"""ModifyInstanceNameReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ModifyInstanceNameReq:
 
     @property
     def name(self):
-        """Gets the name of this ModifyInstanceNameReq.
+        r"""Gets the name of this ModifyInstanceNameReq.
 
         DDM实例名称，命名要求如下。 - 长度为4-64个字符。 - 必须以字母开头。 - 可以包含字母、数字、中划线，不能包含其它特殊字符。
 
@@ -53,7 +53,7 @@ class ModifyInstanceNameReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ModifyInstanceNameReq.
+        r"""Sets the name of this ModifyInstanceNameReq.
 
         DDM实例名称，命名要求如下。 - 长度为4-64个字符。 - 必须以字母开头。 - 可以包含字母、数字、中划线，不能包含其它特殊字符。
 

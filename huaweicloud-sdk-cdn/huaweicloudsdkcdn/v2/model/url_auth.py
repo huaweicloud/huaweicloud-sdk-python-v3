@@ -45,7 +45,7 @@ class UrlAuth:
     }
 
     def __init__(self, status=None, type=None, expire_time=None, sign_method=None, match_type=None, inherit_config=None, key=None, backup_key=None, sign_arg=None, time_format=None, time_arg=None):
-        """UrlAuth
+        r"""UrlAuth
 
         The model defined in huaweicloud sdk
 
@@ -112,7 +112,7 @@ class UrlAuth:
 
     @property
     def status(self):
-        """Gets the status of this UrlAuth.
+        r"""Gets the status of this UrlAuth.
 
         是否开启URL鉴权，on：开启,off：关闭。
 
@@ -123,7 +123,7 @@ class UrlAuth:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UrlAuth.
+        r"""Sets the status of this UrlAuth.
 
         是否开启URL鉴权，on：开启,off：关闭。
 
@@ -134,7 +134,7 @@ class UrlAuth:
 
     @property
     def type(self):
-        """Gets the type of this UrlAuth.
+        r"""Gets the type of this UrlAuth.
 
         鉴权方式 type_a：鉴权方式A type_b：鉴权方式B type_c1：鉴权方式C1 type_c2：鉴权方式C2
 
@@ -145,7 +145,7 @@ class UrlAuth:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this UrlAuth.
+        r"""Sets the type of this UrlAuth.
 
         鉴权方式 type_a：鉴权方式A type_b：鉴权方式B type_c1：鉴权方式C1 type_c2：鉴权方式C2
 
@@ -156,7 +156,7 @@ class UrlAuth:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this UrlAuth.
+        r"""Gets the expire_time of this UrlAuth.
 
         过期时间：范围：0-31536000单位为秒。
 
@@ -167,7 +167,7 @@ class UrlAuth:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this UrlAuth.
+        r"""Sets the expire_time of this UrlAuth.
 
         过期时间：范围：0-31536000单位为秒。
 
@@ -178,7 +178,7 @@ class UrlAuth:
 
     @property
     def sign_method(self):
-        """Gets the sign_method of this UrlAuth.
+        r"""Gets the sign_method of this UrlAuth.
 
         加密的算法 可选择md5或sha256。
 
@@ -189,7 +189,7 @@ class UrlAuth:
 
     @sign_method.setter
     def sign_method(self, sign_method):
-        """Sets the sign_method of this UrlAuth.
+        r"""Sets the sign_method of this UrlAuth.
 
         加密的算法 可选择md5或sha256。
 
@@ -200,7 +200,7 @@ class UrlAuth:
 
     @property
     def match_type(self):
-        """Gets the match_type of this UrlAuth.
+        r"""Gets the match_type of this UrlAuth.
 
         鉴权范围，目前仅支持配置所有文件参与鉴权，all：所有文件。
 
@@ -211,7 +211,7 @@ class UrlAuth:
 
     @match_type.setter
     def match_type(self, match_type):
-        """Sets the match_type of this UrlAuth.
+        r"""Sets the match_type of this UrlAuth.
 
         鉴权范围，目前仅支持配置所有文件参与鉴权，all：所有文件。
 
@@ -222,7 +222,7 @@ class UrlAuth:
 
     @property
     def inherit_config(self):
-        """Gets the inherit_config of this UrlAuth.
+        r"""Gets the inherit_config of this UrlAuth.
 
         :return: The inherit_config of this UrlAuth.
         :rtype: :class:`huaweicloudsdkcdn.v2.InheritConfig`
@@ -231,7 +231,7 @@ class UrlAuth:
 
     @inherit_config.setter
     def inherit_config(self, inherit_config):
-        """Sets the inherit_config of this UrlAuth.
+        r"""Sets the inherit_config of this UrlAuth.
 
         :param inherit_config: The inherit_config of this UrlAuth.
         :type inherit_config: :class:`huaweicloudsdkcdn.v2.InheritConfig`
@@ -240,7 +240,7 @@ class UrlAuth:
 
     @property
     def key(self):
-        """Gets the key of this UrlAuth.
+        r"""Gets the key of this UrlAuth.
 
         鉴权KEY 由6-32位大小写字母、数字构成。
 
@@ -251,7 +251,7 @@ class UrlAuth:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this UrlAuth.
+        r"""Sets the key of this UrlAuth.
 
         鉴权KEY 由6-32位大小写字母、数字构成。
 
@@ -262,7 +262,7 @@ class UrlAuth:
 
     @property
     def backup_key(self):
-        """Gets the backup_key of this UrlAuth.
+        r"""Gets the backup_key of this UrlAuth.
 
         鉴权KEY（备） 由6-32位大小写字母、数字构成。
 
@@ -273,7 +273,7 @@ class UrlAuth:
 
     @backup_key.setter
     def backup_key(self, backup_key):
-        """Sets the backup_key of this UrlAuth.
+        r"""Sets the backup_key of this UrlAuth.
 
         鉴权KEY（备） 由6-32位大小写字母、数字构成。
 
@@ -284,7 +284,7 @@ class UrlAuth:
 
     @property
     def sign_arg(self):
-        """Gets the sign_arg of this UrlAuth.
+        r"""Gets the sign_arg of this UrlAuth.
 
         鉴权参数：1-100位可以由大小写字母、数字、下划线构成（不能以数字开头）。
 
@@ -295,7 +295,7 @@ class UrlAuth:
 
     @sign_arg.setter
     def sign_arg(self, sign_arg):
-        """Sets the sign_arg of this UrlAuth.
+        r"""Sets the sign_arg of this UrlAuth.
 
         鉴权参数：1-100位可以由大小写字母、数字、下划线构成（不能以数字开头）。
 
@@ -306,7 +306,7 @@ class UrlAuth:
 
     @property
     def time_format(self):
-        """Gets the time_format of this UrlAuth.
+        r"""Gets the time_format of this UrlAuth.
 
         时间格式 dec：十进制 hex：十六进制 鉴权方式A：只支持十进制 鉴权方式B：只支持十进制 鉴权方式C1：只支持十六进制鉴权方式 鉴权方式C2：支持十进制/十六进制
 
@@ -317,7 +317,7 @@ class UrlAuth:
 
     @time_format.setter
     def time_format(self, time_format):
-        """Sets the time_format of this UrlAuth.
+        r"""Sets the time_format of this UrlAuth.
 
         时间格式 dec：十进制 hex：十六进制 鉴权方式A：只支持十进制 鉴权方式B：只支持十进制 鉴权方式C1：只支持十六进制鉴权方式 鉴权方式C2：支持十进制/十六进制
 
@@ -328,7 +328,7 @@ class UrlAuth:
 
     @property
     def time_arg(self):
-        """Gets the time_arg of this UrlAuth.
+        r"""Gets the time_arg of this UrlAuth.
 
         时间参数名称：当type为“type_c2”时，该字段可选。由1-100个字符组成。必须以字母开头，后面可以衔接任意数字、字母和下划线，不允许出现其他特殊符号。鉴权方式为C2时，不传或传空默认设置为“timestamp”。
 
@@ -339,7 +339,7 @@ class UrlAuth:
 
     @time_arg.setter
     def time_arg(self, time_arg):
-        """Sets the time_arg of this UrlAuth.
+        r"""Sets the time_arg of this UrlAuth.
 
         时间参数名称：当type为“type_c2”时，该字段可选。由1-100个字符组成。必须以字母开头，后面可以衔接任意数字、字母和下划线，不允许出现其他特殊符号。鉴权方式为C2时，不传或传空默认设置为“timestamp”。
 

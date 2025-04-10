@@ -37,7 +37,7 @@ class ExectionInstanceModel:
     }
 
     def __init__(self, id=None, target_instance=None, gmt_created=None, gmt_finished=None, execute_costs=None, status=None, message=None):
-        """ExectionInstanceModel
+        r"""ExectionInstanceModel
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ExectionInstanceModel:
 
     @property
     def id(self):
-        """Gets the id of this ExectionInstanceModel.
+        r"""Gets the id of this ExectionInstanceModel.
 
         主键id
 
@@ -96,7 +96,7 @@ class ExectionInstanceModel:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ExectionInstanceModel.
+        r"""Sets the id of this ExectionInstanceModel.
 
         主键id
 
@@ -107,7 +107,7 @@ class ExectionInstanceModel:
 
     @property
     def target_instance(self):
-        """Gets the target_instance of this ExectionInstanceModel.
+        r"""Gets the target_instance of this ExectionInstanceModel.
 
         :return: The target_instance of this ExectionInstanceModel.
         :rtype: :class:`huaweicloudsdkcoc.v1.ResourceInstance`
@@ -116,7 +116,7 @@ class ExectionInstanceModel:
 
     @target_instance.setter
     def target_instance(self, target_instance):
-        """Sets the target_instance of this ExectionInstanceModel.
+        r"""Sets the target_instance of this ExectionInstanceModel.
 
         :param target_instance: The target_instance of this ExectionInstanceModel.
         :type target_instance: :class:`huaweicloudsdkcoc.v1.ResourceInstance`
@@ -125,7 +125,7 @@ class ExectionInstanceModel:
 
     @property
     def gmt_created(self):
-        """Gets the gmt_created of this ExectionInstanceModel.
+        r"""Gets the gmt_created of this ExectionInstanceModel.
 
         创建时间
 
@@ -136,7 +136,7 @@ class ExectionInstanceModel:
 
     @gmt_created.setter
     def gmt_created(self, gmt_created):
-        """Sets the gmt_created of this ExectionInstanceModel.
+        r"""Sets the gmt_created of this ExectionInstanceModel.
 
         创建时间
 
@@ -147,7 +147,7 @@ class ExectionInstanceModel:
 
     @property
     def gmt_finished(self):
-        """Gets the gmt_finished of this ExectionInstanceModel.
+        r"""Gets the gmt_finished of this ExectionInstanceModel.
 
         完成时间
 
@@ -158,7 +158,7 @@ class ExectionInstanceModel:
 
     @gmt_finished.setter
     def gmt_finished(self, gmt_finished):
-        """Sets the gmt_finished of this ExectionInstanceModel.
+        r"""Sets the gmt_finished of this ExectionInstanceModel.
 
         完成时间
 
@@ -169,7 +169,7 @@ class ExectionInstanceModel:
 
     @property
     def execute_costs(self):
-        """Gets the execute_costs of this ExectionInstanceModel.
+        r"""Gets the execute_costs of this ExectionInstanceModel.
 
         耗时时间，单位:秒
 
@@ -180,7 +180,7 @@ class ExectionInstanceModel:
 
     @execute_costs.setter
     def execute_costs(self, execute_costs):
-        """Sets the execute_costs of this ExectionInstanceModel.
+        r"""Sets the execute_costs of this ExectionInstanceModel.
 
         耗时时间，单位:秒
 
@@ -191,7 +191,7 @@ class ExectionInstanceModel:
 
     @property
     def status(self):
-        """Gets the status of this ExectionInstanceModel.
+        r"""Gets the status of this ExectionInstanceModel.
 
         实例执行状态
 
@@ -202,7 +202,7 @@ class ExectionInstanceModel:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ExectionInstanceModel.
+        r"""Sets the status of this ExectionInstanceModel.
 
         实例执行状态
 
@@ -213,7 +213,7 @@ class ExectionInstanceModel:
 
     @property
     def message(self):
-        """Gets the message of this ExectionInstanceModel.
+        r"""Gets the message of this ExectionInstanceModel.
 
         实例执行日志
 
@@ -224,7 +224,7 @@ class ExectionInstanceModel:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ExectionInstanceModel.
+        r"""Sets the message of this ExectionInstanceModel.
 
         实例执行日志
 

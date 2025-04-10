@@ -41,7 +41,7 @@ class OpenApiCalledRecord:
     }
 
     def __init__(self, user_name=None, user_id=None, domain_name=None, domain_id=None, request_url=None, request_method=None, response_code=None, fail_reason=None, timestamp=None):
-        """OpenApiCalledRecord
+        r"""OpenApiCalledRecord
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class OpenApiCalledRecord:
 
     @property
     def user_name(self):
-        """Gets the user_name of this OpenApiCalledRecord.
+        r"""Gets the user_name of this OpenApiCalledRecord.
 
         调用API的user_name
 
@@ -110,7 +110,7 @@ class OpenApiCalledRecord:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this OpenApiCalledRecord.
+        r"""Sets the user_name of this OpenApiCalledRecord.
 
         调用API的user_name
 
@@ -121,7 +121,7 @@ class OpenApiCalledRecord:
 
     @property
     def user_id(self):
-        """Gets the user_id of this OpenApiCalledRecord.
+        r"""Gets the user_id of this OpenApiCalledRecord.
 
         调用API的user_id
 
@@ -132,7 +132,7 @@ class OpenApiCalledRecord:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this OpenApiCalledRecord.
+        r"""Sets the user_id of this OpenApiCalledRecord.
 
         调用API的user_id
 
@@ -143,7 +143,7 @@ class OpenApiCalledRecord:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this OpenApiCalledRecord.
+        r"""Gets the domain_name of this OpenApiCalledRecord.
 
         调用API的domain_name
 
@@ -154,7 +154,7 @@ class OpenApiCalledRecord:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this OpenApiCalledRecord.
+        r"""Sets the domain_name of this OpenApiCalledRecord.
 
         调用API的domain_name
 
@@ -165,7 +165,7 @@ class OpenApiCalledRecord:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this OpenApiCalledRecord.
+        r"""Gets the domain_id of this OpenApiCalledRecord.
 
         调用API的domain_id
 
@@ -176,7 +176,7 @@ class OpenApiCalledRecord:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this OpenApiCalledRecord.
+        r"""Sets the domain_id of this OpenApiCalledRecord.
 
         调用API的domain_id
 
@@ -187,7 +187,7 @@ class OpenApiCalledRecord:
 
     @property
     def request_url(self):
-        """Gets the request_url of this OpenApiCalledRecord.
+        r"""Gets the request_url of this OpenApiCalledRecord.
 
         调用API的URL
 
@@ -198,7 +198,7 @@ class OpenApiCalledRecord:
 
     @request_url.setter
     def request_url(self, request_url):
-        """Sets the request_url of this OpenApiCalledRecord.
+        r"""Sets the request_url of this OpenApiCalledRecord.
 
         调用API的URL
 
@@ -209,7 +209,7 @@ class OpenApiCalledRecord:
 
     @property
     def request_method(self):
-        """Gets the request_method of this OpenApiCalledRecord.
+        r"""Gets the request_method of this OpenApiCalledRecord.
 
         http请求方法
 
@@ -220,7 +220,7 @@ class OpenApiCalledRecord:
 
     @request_method.setter
     def request_method(self, request_method):
-        """Sets the request_method of this OpenApiCalledRecord.
+        r"""Sets the request_method of this OpenApiCalledRecord.
 
         http请求方法
 
@@ -231,7 +231,7 @@ class OpenApiCalledRecord:
 
     @property
     def response_code(self):
-        """Gets the response_code of this OpenApiCalledRecord.
+        r"""Gets the response_code of this OpenApiCalledRecord.
 
         http状态码
 
@@ -242,7 +242,7 @@ class OpenApiCalledRecord:
 
     @response_code.setter
     def response_code(self, response_code):
-        """Sets the response_code of this OpenApiCalledRecord.
+        r"""Sets the response_code of this OpenApiCalledRecord.
 
         http状态码
 
@@ -253,7 +253,7 @@ class OpenApiCalledRecord:
 
     @property
     def fail_reason(self):
-        """Gets the fail_reason of this OpenApiCalledRecord.
+        r"""Gets the fail_reason of this OpenApiCalledRecord.
 
         调用API失败原因
 
@@ -264,7 +264,7 @@ class OpenApiCalledRecord:
 
     @fail_reason.setter
     def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this OpenApiCalledRecord.
+        r"""Sets the fail_reason of this OpenApiCalledRecord.
 
         调用API失败原因
 
@@ -275,7 +275,7 @@ class OpenApiCalledRecord:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this OpenApiCalledRecord.
+        r"""Gets the timestamp of this OpenApiCalledRecord.
 
         调用API的时间（Unix timestamp），单位：毫秒
 
@@ -286,7 +286,7 @@ class OpenApiCalledRecord:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this OpenApiCalledRecord.
+        r"""Sets the timestamp of this OpenApiCalledRecord.
 
         调用API的时间（Unix timestamp），单位：毫秒
 

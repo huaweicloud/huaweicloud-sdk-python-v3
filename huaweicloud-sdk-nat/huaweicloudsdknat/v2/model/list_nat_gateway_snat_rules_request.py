@@ -49,7 +49,7 @@ class ListNatGatewaySnatRulesRequest:
     }
 
     def __init__(self, admin_state_up=None, cidr=None, limit=None, floating_ip_address=None, floating_ip_id=None, id=None, description=None, created_at=None, nat_gateway_id=None, network_id=None, source_type=None, status=None, marker=None):
-        """ListNatGatewaySnatRulesRequest
+        r"""ListNatGatewaySnatRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class ListNatGatewaySnatRulesRequest:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this ListNatGatewaySnatRulesRequest.
+        r"""Gets the admin_state_up of this ListNatGatewaySnatRulesRequest.
 
         解冻/冻结状态。 取值范围： \"true\"：解冻 \"false\"：冻结
 
@@ -138,7 +138,7 @@ class ListNatGatewaySnatRulesRequest:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this ListNatGatewaySnatRulesRequest.
+        r"""Sets the admin_state_up of this ListNatGatewaySnatRulesRequest.
 
         解冻/冻结状态。 取值范围： \"true\"：解冻 \"false\"：冻结
 
@@ -149,7 +149,7 @@ class ListNatGatewaySnatRulesRequest:
 
     @property
     def cidr(self):
-        """Gets the cidr of this ListNatGatewaySnatRulesRequest.
+        r"""Gets the cidr of this ListNatGatewaySnatRulesRequest.
 
         可以是网段或者主机格式，与network_id参数二选一。 Source_type=0时，cidr必须是vpc子网网段的子集(不能相等）; Source_type=1时，cidr必须指定专线侧网段。
 
@@ -160,7 +160,7 @@ class ListNatGatewaySnatRulesRequest:
 
     @cidr.setter
     def cidr(self, cidr):
-        """Sets the cidr of this ListNatGatewaySnatRulesRequest.
+        r"""Sets the cidr of this ListNatGatewaySnatRulesRequest.
 
         可以是网段或者主机格式，与network_id参数二选一。 Source_type=0时，cidr必须是vpc子网网段的子集(不能相等）; Source_type=1时，cidr必须指定专线侧网段。
 
@@ -171,7 +171,7 @@ class ListNatGatewaySnatRulesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListNatGatewaySnatRulesRequest.
+        r"""Gets the limit of this ListNatGatewaySnatRulesRequest.
 
         功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
 
@@ -182,7 +182,7 @@ class ListNatGatewaySnatRulesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListNatGatewaySnatRulesRequest.
+        r"""Sets the limit of this ListNatGatewaySnatRulesRequest.
 
         功能说明：每页返回的个数。 取值范围：0~2000。 默认值：2000。
 
@@ -193,7 +193,7 @@ class ListNatGatewaySnatRulesRequest:
 
     @property
     def floating_ip_address(self):
-        """Gets the floating_ip_address of this ListNatGatewaySnatRulesRequest.
+        r"""Gets the floating_ip_address of this ListNatGatewaySnatRulesRequest.
 
         功能说明：弹性公网IP。
 
@@ -204,7 +204,7 @@ class ListNatGatewaySnatRulesRequest:
 
     @floating_ip_address.setter
     def floating_ip_address(self, floating_ip_address):
-        """Sets the floating_ip_address of this ListNatGatewaySnatRulesRequest.
+        r"""Sets the floating_ip_address of this ListNatGatewaySnatRulesRequest.
 
         功能说明：弹性公网IP。
 
@@ -215,7 +215,7 @@ class ListNatGatewaySnatRulesRequest:
 
     @property
     def floating_ip_id(self):
-        """Gets the floating_ip_id of this ListNatGatewaySnatRulesRequest.
+        r"""Gets the floating_ip_id of this ListNatGatewaySnatRulesRequest.
 
         功能说明：弹性公网IP的id。
 
@@ -226,7 +226,7 @@ class ListNatGatewaySnatRulesRequest:
 
     @floating_ip_id.setter
     def floating_ip_id(self, floating_ip_id):
-        """Sets the floating_ip_id of this ListNatGatewaySnatRulesRequest.
+        r"""Sets the floating_ip_id of this ListNatGatewaySnatRulesRequest.
 
         功能说明：弹性公网IP的id。
 
@@ -237,7 +237,7 @@ class ListNatGatewaySnatRulesRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListNatGatewaySnatRulesRequest.
+        r"""Gets the id of this ListNatGatewaySnatRulesRequest.
 
         SNAT规则的ID。
 
@@ -248,7 +248,7 @@ class ListNatGatewaySnatRulesRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListNatGatewaySnatRulesRequest.
+        r"""Sets the id of this ListNatGatewaySnatRulesRequest.
 
         SNAT规则的ID。
 
@@ -259,7 +259,7 @@ class ListNatGatewaySnatRulesRequest:
 
     @property
     def description(self):
-        """Gets the description of this ListNatGatewaySnatRulesRequest.
+        r"""Gets the description of this ListNatGatewaySnatRulesRequest.
 
         SNAT规则的描述，长度范围小于等于255个字符，不能包含“<”和“>”。
 
@@ -270,7 +270,7 @@ class ListNatGatewaySnatRulesRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListNatGatewaySnatRulesRequest.
+        r"""Sets the description of this ListNatGatewaySnatRulesRequest.
 
         SNAT规则的描述，长度范围小于等于255个字符，不能包含“<”和“>”。
 
@@ -281,7 +281,7 @@ class ListNatGatewaySnatRulesRequest:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ListNatGatewaySnatRulesRequest.
+        r"""Gets the created_at of this ListNatGatewaySnatRulesRequest.
 
         SNAT规则的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
 
@@ -292,7 +292,7 @@ class ListNatGatewaySnatRulesRequest:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ListNatGatewaySnatRulesRequest.
+        r"""Sets the created_at of this ListNatGatewaySnatRulesRequest.
 
         SNAT规则的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
 
@@ -303,7 +303,7 @@ class ListNatGatewaySnatRulesRequest:
 
     @property
     def nat_gateway_id(self):
-        """Gets the nat_gateway_id of this ListNatGatewaySnatRulesRequest.
+        r"""Gets the nat_gateway_id of this ListNatGatewaySnatRulesRequest.
 
         公网NAT网关实例的ID。
 
@@ -314,7 +314,7 @@ class ListNatGatewaySnatRulesRequest:
 
     @nat_gateway_id.setter
     def nat_gateway_id(self, nat_gateway_id):
-        """Sets the nat_gateway_id of this ListNatGatewaySnatRulesRequest.
+        r"""Sets the nat_gateway_id of this ListNatGatewaySnatRulesRequest.
 
         公网NAT网关实例的ID。
 
@@ -325,7 +325,7 @@ class ListNatGatewaySnatRulesRequest:
 
     @property
     def network_id(self):
-        """Gets the network_id of this ListNatGatewaySnatRulesRequest.
+        r"""Gets the network_id of this ListNatGatewaySnatRulesRequest.
 
         规则使用的网络id。与cidr参数二选一。
 
@@ -336,7 +336,7 @@ class ListNatGatewaySnatRulesRequest:
 
     @network_id.setter
     def network_id(self, network_id):
-        """Sets the network_id of this ListNatGatewaySnatRulesRequest.
+        r"""Sets the network_id of this ListNatGatewaySnatRulesRequest.
 
         规则使用的网络id。与cidr参数二选一。
 
@@ -347,7 +347,7 @@ class ListNatGatewaySnatRulesRequest:
 
     @property
     def source_type(self):
-        """Gets the source_type of this ListNatGatewaySnatRulesRequest.
+        r"""Gets the source_type of this ListNatGatewaySnatRulesRequest.
 
         0：VPC侧，可以指定network_id 或者cidr 1：专线侧，只能指定cidr 不输入默认为0（VPC）
 
@@ -358,7 +358,7 @@ class ListNatGatewaySnatRulesRequest:
 
     @source_type.setter
     def source_type(self, source_type):
-        """Sets the source_type of this ListNatGatewaySnatRulesRequest.
+        r"""Sets the source_type of this ListNatGatewaySnatRulesRequest.
 
         0：VPC侧，可以指定network_id 或者cidr 1：专线侧，只能指定cidr 不输入默认为0（VPC）
 
@@ -369,7 +369,7 @@ class ListNatGatewaySnatRulesRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListNatGatewaySnatRulesRequest.
+        r"""Gets the status of this ListNatGatewaySnatRulesRequest.
 
         SNAT规则的状态。 取值为： \"ACTIVE\": 可用 \"PENDING_CREATE\"：创建中 \"PENDING_UPDATE\"：更新中 \"PENDING_DELETE\"：删除中 \"EIP_FREEZED\"：EIP冻结 \"INACTIVE\"：不可用
 
@@ -380,7 +380,7 @@ class ListNatGatewaySnatRulesRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListNatGatewaySnatRulesRequest.
+        r"""Sets the status of this ListNatGatewaySnatRulesRequest.
 
         SNAT规则的状态。 取值为： \"ACTIVE\": 可用 \"PENDING_CREATE\"：创建中 \"PENDING_UPDATE\"：更新中 \"PENDING_DELETE\"：删除中 \"EIP_FREEZED\"：EIP冻结 \"INACTIVE\"：不可用
 
@@ -391,7 +391,7 @@ class ListNatGatewaySnatRulesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListNatGatewaySnatRulesRequest.
+        r"""Gets the marker of this ListNatGatewaySnatRulesRequest.
 
         分页查询的起始资源ID，表示从指定资源的下一条记录开始查询。 - 若不传入marker和limit参数，查询结果返回第一页全部资源记录（默认2000条）。 - 若不传入marker参数，limit为10，查询结果返回第1~10条资源记录。 - 若marker为第10条记录的资源ID，limit为10，查询结果返回第11~20条资源记录。 - 若marker为第10条记录的资源ID，不传入limit参数，查询结果返回第11条及之后的资源记录（默认2000条）。
 
@@ -402,7 +402,7 @@ class ListNatGatewaySnatRulesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListNatGatewaySnatRulesRequest.
+        r"""Sets the marker of this ListNatGatewaySnatRulesRequest.
 
         分页查询的起始资源ID，表示从指定资源的下一条记录开始查询。 - 若不传入marker和limit参数，查询结果返回第一页全部资源记录（默认2000条）。 - 若不传入marker参数，limit为10，查询结果返回第1~10条资源记录。 - 若marker为第10条记录的资源ID，limit为10，查询结果返回第11~20条资源记录。 - 若marker为第10条记录的资源ID，不传入limit参数，查询结果返回第11条及之后的资源记录（默认2000条）。
 

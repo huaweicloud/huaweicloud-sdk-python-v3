@@ -33,7 +33,7 @@ class ListApicInstancesRequest:
     }
 
     def __init__(self, workspace=None, dlm_type=None, apig_type=None, limit=None, offset=None):
-        """ListApicInstancesRequest
+        r"""ListApicInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ListApicInstancesRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListApicInstancesRequest.
+        r"""Gets the workspace of this ListApicInstancesRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -80,7 +80,7 @@ class ListApicInstancesRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListApicInstancesRequest.
+        r"""Sets the workspace of this ListApicInstancesRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -91,7 +91,7 @@ class ListApicInstancesRequest:
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this ListApicInstancesRequest.
+        r"""Gets the dlm_type of this ListApicInstancesRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -102,7 +102,7 @@ class ListApicInstancesRequest:
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this ListApicInstancesRequest.
+        r"""Sets the dlm_type of this ListApicInstancesRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -113,7 +113,7 @@ class ListApicInstancesRequest:
 
     @property
     def apig_type(self):
-        """Gets the apig_type of this ListApicInstancesRequest.
+        r"""Gets the apig_type of this ListApicInstancesRequest.
 
         网关类型。
 
@@ -124,7 +124,7 @@ class ListApicInstancesRequest:
 
     @apig_type.setter
     def apig_type(self, apig_type):
-        """Sets the apig_type of this ListApicInstancesRequest.
+        r"""Sets the apig_type of this ListApicInstancesRequest.
 
         网关类型。
 
@@ -135,7 +135,7 @@ class ListApicInstancesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListApicInstancesRequest.
+        r"""Gets the limit of this ListApicInstancesRequest.
 
         limit。
 
@@ -146,7 +146,7 @@ class ListApicInstancesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListApicInstancesRequest.
+        r"""Sets the limit of this ListApicInstancesRequest.
 
         limit。
 
@@ -157,7 +157,7 @@ class ListApicInstancesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListApicInstancesRequest.
+        r"""Gets the offset of this ListApicInstancesRequest.
 
         offset。
 
@@ -168,7 +168,7 @@ class ListApicInstancesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListApicInstancesRequest.
+        r"""Sets the offset of this ListApicInstancesRequest.
 
         offset。
 

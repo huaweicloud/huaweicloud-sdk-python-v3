@@ -25,7 +25,7 @@ class ScopedToken:
     }
 
     def __init__(self, id=None):
-        """ScopedToken
+        r"""ScopedToken
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ScopedToken:
 
     @property
     def id(self):
-        """Gets the id of this ScopedToken.
+        r"""Gets the id of this ScopedToken.
 
         联邦unscoped token的ID。
 
@@ -53,7 +53,7 @@ class ScopedToken:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ScopedToken.
+        r"""Sets the id of this ScopedToken.
 
         联邦unscoped token的ID。
 

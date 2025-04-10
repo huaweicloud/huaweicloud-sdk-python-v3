@@ -34,7 +34,7 @@ class CloudRTCAsyncClient(Client):
         return client_builder
 
     def list_rtc_abnormal_event_async(self, request):
-        """查询用户异常体验事件接口
+        r"""查询用户异常体验事件接口
 
         查询指定APP下通话的异常明细数据。可查询5天内的数据。
         
@@ -107,7 +107,7 @@ class CloudRTCAsyncClient(Client):
         return http_info
 
     def list_rtc_event_async(self, request):
-        """查询详情事件接口
+        r"""查询详情事件接口
 
         查询指定APP下通话的异常明细数据。可查询5天内的数据。
         
@@ -180,7 +180,7 @@ class CloudRTCAsyncClient(Client):
         return http_info
 
     def list_rtc_abnormal_event_dimension_async(self, request):
-        """查询异常事件用户分布
+        r"""查询异常事件用户分布
 
         查询指定APP下指定时间内的通话异常明细数据分布情况。
         
@@ -255,7 +255,7 @@ class CloudRTCAsyncClient(Client):
         return http_info
 
     def list_rtc_abnormal_events_async(self, request):
-        """查询用户异常体验事件
+        r"""查询用户异常体验事件
 
         查询指定APP下通话的异常明细数据。
         
@@ -334,7 +334,7 @@ class CloudRTCAsyncClient(Client):
         return http_info
 
     def list_rtc_client_qos_details_async(self, request):
-        """查询用户通话指标
+        r"""查询用户通话指标
 
         查询用户通话质量指标数据。
         
@@ -433,7 +433,7 @@ class CloudRTCAsyncClient(Client):
         return http_info
 
     def list_rtc_history_quality_async(self, request):
-        """查询历史质量
+        r"""查询历史质量
 
         查询质量指标过去每天的体验数据，可查询最近31天的数据。当天未结束，无法查询到当天的体验数据。
         
@@ -515,7 +515,7 @@ class CloudRTCAsyncClient(Client):
         return http_info
 
     def list_rtc_history_scale_async(self, request):
-        """查询历史规模
+        r"""查询历史规模
 
         查询指标过去每天的规模数量，可查询最近31天的数据。当天未结束，无法查到当天的房间数与用户数。
         
@@ -597,7 +597,7 @@ class CloudRTCAsyncClient(Client):
         return http_info
 
     def list_rtc_history_usage_async(self, request):
-        """查询用量
+        r"""查询用量
 
         查询过去的某一时间段内各种业务的用量数据
         
@@ -676,7 +676,7 @@ class CloudRTCAsyncClient(Client):
         return http_info
 
     def list_rtc_realtime_network_async(self, request):
-        """查询实时网络
+        r"""查询实时网络
 
         获取实时网络数据相关指标在某一时间段内每分钟的统计数据。
         
@@ -761,7 +761,7 @@ class CloudRTCAsyncClient(Client):
         return http_info
 
     def list_rtc_realtime_quality_async(self, request):
-        """查询实时质量数据
+        r"""查询实时质量数据
 
         获取实时质量数据的相关指标在某一时间段内每分钟的统计数据。
         
@@ -846,7 +846,7 @@ class CloudRTCAsyncClient(Client):
         return http_info
 
     def list_rtc_realtime_scale_async(self, request):
-        """查询实时规模
+        r"""查询实时规模
 
         获取规模相关的指标在某一时间段内每分钟的统计数据。
         
@@ -929,7 +929,7 @@ class CloudRTCAsyncClient(Client):
         return http_info
 
     def list_rtc_realtime_scale_dimension_async(self, request):
-        """查询实时规模分布
+        r"""查询实时规模分布
 
         对规模相关的数据，根据指定维度按在线用户数排名，获取规模相关的指标在指定维度下的统计数据
         
@@ -1010,7 +1010,7 @@ class CloudRTCAsyncClient(Client):
         return http_info
 
     def list_rtc_room_list_async(self, request):
-        """查询房间列表
+        r"""查询房间列表
 
         指定事件范围查询这段期间创建的房间列表。
         
@@ -1097,7 +1097,7 @@ class CloudRTCAsyncClient(Client):
         return http_info
 
     def list_rtc_user_list_async(self, request):
-        """查询用户列表
+        r"""查询用户列表
 
         指定事件范围查询这段期间加入房间的用户列表。
         

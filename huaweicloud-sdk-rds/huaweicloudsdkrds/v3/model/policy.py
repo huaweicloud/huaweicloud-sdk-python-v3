@@ -27,7 +27,7 @@ class Policy:
     }
 
     def __init__(self, period=None, retention_days=None):
-        """Policy
+        r"""Policy
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Policy:
 
     @property
     def period(self):
-        """Gets the period of this Policy.
+        r"""Gets the period of this Policy.
 
         备份周期的crontab表达式
 
@@ -59,7 +59,7 @@ class Policy:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this Policy.
+        r"""Sets the period of this Policy.
 
         备份周期的crontab表达式
 
@@ -70,7 +70,7 @@ class Policy:
 
     @property
     def retention_days(self):
-        """Gets the retention_days of this Policy.
+        r"""Gets the retention_days of this Policy.
 
         保留时长（天）
 
@@ -81,7 +81,7 @@ class Policy:
 
     @retention_days.setter
     def retention_days(self, retention_days):
-        """Sets the retention_days of this Policy.
+        r"""Sets the retention_days of this Policy.
 
         保留时长（天）
 

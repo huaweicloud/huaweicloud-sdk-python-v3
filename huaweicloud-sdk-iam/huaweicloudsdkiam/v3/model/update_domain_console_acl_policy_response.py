@@ -18,7 +18,7 @@ class UpdateDomainConsoleAclPolicyResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'console_acl_policy': 'AclPolicyResult'
+        'console_acl_policy': 'ConsoleAclPolicyResult'
     }
 
     attribute_map = {
@@ -26,12 +26,12 @@ class UpdateDomainConsoleAclPolicyResponse(SdkResponse):
     }
 
     def __init__(self, console_acl_policy=None):
-        """UpdateDomainConsoleAclPolicyResponse
+        r"""UpdateDomainConsoleAclPolicyResponse
 
         The model defined in huaweicloud sdk
 
         :param console_acl_policy: 
-        :type console_acl_policy: :class:`huaweicloudsdkiam.v3.AclPolicyResult`
+        :type console_acl_policy: :class:`huaweicloudsdkiam.v3.ConsoleAclPolicyResult`
         """
         
         super(UpdateDomainConsoleAclPolicyResponse, self).__init__()
@@ -44,19 +44,19 @@ class UpdateDomainConsoleAclPolicyResponse(SdkResponse):
 
     @property
     def console_acl_policy(self):
-        """Gets the console_acl_policy of this UpdateDomainConsoleAclPolicyResponse.
+        r"""Gets the console_acl_policy of this UpdateDomainConsoleAclPolicyResponse.
 
         :return: The console_acl_policy of this UpdateDomainConsoleAclPolicyResponse.
-        :rtype: :class:`huaweicloudsdkiam.v3.AclPolicyResult`
+        :rtype: :class:`huaweicloudsdkiam.v3.ConsoleAclPolicyResult`
         """
         return self._console_acl_policy
 
     @console_acl_policy.setter
     def console_acl_policy(self, console_acl_policy):
-        """Sets the console_acl_policy of this UpdateDomainConsoleAclPolicyResponse.
+        r"""Sets the console_acl_policy of this UpdateDomainConsoleAclPolicyResponse.
 
         :param console_acl_policy: The console_acl_policy of this UpdateDomainConsoleAclPolicyResponse.
-        :type console_acl_policy: :class:`huaweicloudsdkiam.v3.AclPolicyResult`
+        :type console_acl_policy: :class:`huaweicloudsdkiam.v3.ConsoleAclPolicyResult`
         """
         self._console_acl_policy = console_acl_policy
 

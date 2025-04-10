@@ -26,7 +26,7 @@ class CreateCallbackWorkflowResponse(SdkResponse):
     }
 
     def __init__(self, execution_id=None):
-        """CreateCallbackWorkflowResponse
+        r"""CreateCallbackWorkflowResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateCallbackWorkflowResponse(SdkResponse):
 
     @property
     def execution_id(self):
-        """Gets the execution_id of this CreateCallbackWorkflowResponse.
+        r"""Gets the execution_id of this CreateCallbackWorkflowResponse.
 
         错误码
 
@@ -55,7 +55,7 @@ class CreateCallbackWorkflowResponse(SdkResponse):
 
     @execution_id.setter
     def execution_id(self, execution_id):
-        """Sets the execution_id of this CreateCallbackWorkflowResponse.
+        r"""Sets the execution_id of this CreateCallbackWorkflowResponse.
 
         错误码
 

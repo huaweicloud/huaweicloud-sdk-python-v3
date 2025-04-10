@@ -29,7 +29,7 @@ class TaskCheckParamters:
     }
 
     def __init__(self, check_id=None, name=None, checker_configs=None):
-        """TaskCheckParamters
+        r"""TaskCheckParamters
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class TaskCheckParamters:
 
     @property
     def check_id(self):
-        """Gets the check_id of this TaskCheckParamters.
+        r"""Gets the check_id of this TaskCheckParamters.
 
         检查工具ID
 
@@ -68,7 +68,7 @@ class TaskCheckParamters:
 
     @check_id.setter
     def check_id(self, check_id):
-        """Sets the check_id of this TaskCheckParamters.
+        r"""Sets the check_id of this TaskCheckParamters.
 
         检查工具ID
 
@@ -79,7 +79,7 @@ class TaskCheckParamters:
 
     @property
     def name(self):
-        """Gets the name of this TaskCheckParamters.
+        r"""Gets the name of this TaskCheckParamters.
 
         编译参数名称
 
@@ -90,7 +90,7 @@ class TaskCheckParamters:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TaskCheckParamters.
+        r"""Sets the name of this TaskCheckParamters.
 
         编译参数名称
 
@@ -101,7 +101,7 @@ class TaskCheckParamters:
 
     @property
     def checker_configs(self):
-        """Gets the checker_configs of this TaskCheckParamters.
+        r"""Gets the checker_configs of this TaskCheckParamters.
 
         检查参数配置信息
 
@@ -112,7 +112,7 @@ class TaskCheckParamters:
 
     @checker_configs.setter
     def checker_configs(self, checker_configs):
-        """Sets the checker_configs of this TaskCheckParamters.
+        r"""Sets the checker_configs of this TaskCheckParamters.
 
         检查参数配置信息
 

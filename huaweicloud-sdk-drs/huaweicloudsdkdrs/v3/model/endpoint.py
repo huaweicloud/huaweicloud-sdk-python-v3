@@ -71,7 +71,7 @@ class Endpoint:
     }
 
     def __init__(self, db_type=None, az_code=None, region=None, inst_id=None, vpc_id=None, subnet_id=None, security_group_id=None, project_id=None, db_name=None, db_password=None, db_port=None, db_user=None, inst_name=None, ip=None, mongo_ha_mode=None, safe_mode=None, ssl_cert_password=None, ssl_cert_check_sum=None, ssl_cert_key=None, ssl_cert_name=None, ssl_link=None, topic=None, cluster_mode=None, kafka_security_config=None):
-        """Endpoint
+        r"""Endpoint
 
         The model defined in huaweicloud sdk
 
@@ -204,7 +204,7 @@ class Endpoint:
 
     @property
     def db_type(self):
-        """Gets the db_type of this Endpoint.
+        r"""Gets the db_type of this Endpoint.
 
         数据库类型，测试连接之后修改调用时必填。
 
@@ -215,7 +215,7 @@ class Endpoint:
 
     @db_type.setter
     def db_type(self, db_type):
-        """Sets the db_type of this Endpoint.
+        r"""Sets the db_type of this Endpoint.
 
         数据库类型，测试连接之后修改调用时必填。
 
@@ -226,7 +226,7 @@ class Endpoint:
 
     @property
     def az_code(self):
-        """Gets the az_code of this Endpoint.
+        r"""Gets the az_code of this Endpoint.
 
         数据库所在可用区azCode
 
@@ -237,7 +237,7 @@ class Endpoint:
 
     @az_code.setter
     def az_code(self, az_code):
-        """Sets the az_code of this Endpoint.
+        r"""Sets the az_code of this Endpoint.
 
         数据库所在可用区azCode
 
@@ -248,7 +248,7 @@ class Endpoint:
 
     @property
     def region(self):
-        """Gets the region of this Endpoint.
+        r"""Gets the region of this Endpoint.
 
         RDS实例所在Region，数据库为RDS实例时必填（灾备场景下job_direction为down时source_endpoint中该值为必填，job_direction为up时target_endpoint中该值为必填）。
 
@@ -259,7 +259,7 @@ class Endpoint:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this Endpoint.
+        r"""Sets the region of this Endpoint.
 
         RDS实例所在Region，数据库为RDS实例时必填（灾备场景下job_direction为down时source_endpoint中该值为必填，job_direction为up时target_endpoint中该值为必填）。
 
@@ -270,7 +270,7 @@ class Endpoint:
 
     @property
     def inst_id(self):
-        """Gets the inst_id of this Endpoint.
+        r"""Gets the inst_id of this Endpoint.
 
         RDS实例ID，数据库为RDS实例必填（灾备场景下job_direction为down时source_endpoint中该值为必填，job_direction为up时target_endpoint中该值为必填）。
 
@@ -281,7 +281,7 @@ class Endpoint:
 
     @inst_id.setter
     def inst_id(self, inst_id):
-        """Sets the inst_id of this Endpoint.
+        r"""Sets the inst_id of this Endpoint.
 
         RDS实例ID，数据库为RDS实例必填（灾备场景下job_direction为down时source_endpoint中该值为必填，job_direction为up时target_endpoint中该值为必填）。
 
@@ -292,7 +292,7 @@ class Endpoint:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this Endpoint.
+        r"""Gets the vpc_id of this Endpoint.
 
         数据库所在的虚拟私有云id
 
@@ -303,7 +303,7 @@ class Endpoint:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this Endpoint.
+        r"""Sets the vpc_id of this Endpoint.
 
         数据库所在的虚拟私有云id
 
@@ -314,7 +314,7 @@ class Endpoint:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this Endpoint.
+        r"""Gets the subnet_id of this Endpoint.
 
         数据库所在的子网id
 
@@ -325,7 +325,7 @@ class Endpoint:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this Endpoint.
+        r"""Sets the subnet_id of this Endpoint.
 
         数据库所在的子网id
 
@@ -336,7 +336,7 @@ class Endpoint:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this Endpoint.
+        r"""Gets the security_group_id of this Endpoint.
 
         数据库所在的安全组id。
 
@@ -347,7 +347,7 @@ class Endpoint:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this Endpoint.
+        r"""Sets the security_group_id of this Endpoint.
 
         数据库所在的安全组id。
 
@@ -358,7 +358,7 @@ class Endpoint:
 
     @property
     def project_id(self):
-        """Gets the project_id of this Endpoint.
+        r"""Gets the project_id of this Endpoint.
 
         RDS实例projectId
 
@@ -369,7 +369,7 @@ class Endpoint:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this Endpoint.
+        r"""Sets the project_id of this Endpoint.
 
         RDS实例projectId
 
@@ -380,7 +380,7 @@ class Endpoint:
 
     @property
     def db_name(self):
-        """Gets the db_name of this Endpoint.
+        r"""Gets the db_name of this Endpoint.
 
         服务名serviceName，源库为oracle场景时必填。约束：不能超过128位，不能包含!<>&'\"\\特殊字符。待还原数据库名称是指备份文件中包含的数据库名称，当您选择部分数据库恢复时，需要选择恢复一个或者多个数据库。
 
@@ -391,7 +391,7 @@ class Endpoint:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this Endpoint.
+        r"""Sets the db_name of this Endpoint.
 
         服务名serviceName，源库为oracle场景时必填。约束：不能超过128位，不能包含!<>&'\"\\特殊字符。待还原数据库名称是指备份文件中包含的数据库名称，当您选择部分数据库恢复时，需要选择恢复一个或者多个数据库。
 
@@ -402,7 +402,7 @@ class Endpoint:
 
     @property
     def db_password(self):
-        """Gets the db_password of this Endpoint.
+        r"""Gets the db_password of this Endpoint.
 
         数据库密码。
 
@@ -413,7 +413,7 @@ class Endpoint:
 
     @db_password.setter
     def db_password(self, db_password):
-        """Sets the db_password of this Endpoint.
+        r"""Sets the db_password of this Endpoint.
 
         数据库密码。
 
@@ -424,7 +424,7 @@ class Endpoint:
 
     @property
     def db_port(self):
-        """Gets the db_port of this Endpoint.
+        r"""Gets the db_port of this Endpoint.
 
         数据库端口。约束：输入范围为1-65535之间的整数。
 
@@ -435,7 +435,7 @@ class Endpoint:
 
     @db_port.setter
     def db_port(self, db_port):
-        """Sets the db_port of this Endpoint.
+        r"""Sets the db_port of this Endpoint.
 
         数据库端口。约束：输入范围为1-65535之间的整数。
 
@@ -446,7 +446,7 @@ class Endpoint:
 
     @property
     def db_user(self):
-        """Gets the db_user of this Endpoint.
+        r"""Gets the db_user of this Endpoint.
 
         数据库用户。
 
@@ -457,7 +457,7 @@ class Endpoint:
 
     @db_user.setter
     def db_user(self, db_user):
-        """Sets the db_user of this Endpoint.
+        r"""Sets the db_user of this Endpoint.
 
         数据库用户。
 
@@ -468,7 +468,7 @@ class Endpoint:
 
     @property
     def inst_name(self):
-        """Gets the inst_name of this Endpoint.
+        r"""Gets the inst_name of this Endpoint.
 
         RDS实例名称。
 
@@ -479,7 +479,7 @@ class Endpoint:
 
     @inst_name.setter
     def inst_name(self, inst_name):
-        """Sets the inst_name of this Endpoint.
+        r"""Sets the inst_name of this Endpoint.
 
         RDS实例名称。
 
@@ -490,7 +490,7 @@ class Endpoint:
 
     @property
     def ip(self):
-        """Gets the ip of this Endpoint.
+        r"""Gets the ip of this Endpoint.
 
         数据库ip
 
@@ -501,7 +501,7 @@ class Endpoint:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this Endpoint.
+        r"""Sets the ip of this Endpoint.
 
         数据库ip
 
@@ -512,7 +512,7 @@ class Endpoint:
 
     @property
     def mongo_ha_mode(self):
-        """Gets the mongo_ha_mode of this Endpoint.
+        r"""Gets the mongo_ha_mode of this Endpoint.
 
         mongo ha模式。
 
@@ -523,7 +523,7 @@ class Endpoint:
 
     @mongo_ha_mode.setter
     def mongo_ha_mode(self, mongo_ha_mode):
-        """Sets the mongo_ha_mode of this Endpoint.
+        r"""Sets the mongo_ha_mode of this Endpoint.
 
         mongo ha模式。
 
@@ -534,7 +534,7 @@ class Endpoint:
 
     @property
     def safe_mode(self):
-        """Gets the safe_mode of this Endpoint.
+        r"""Gets the safe_mode of this Endpoint.
 
         MRS集群运行模式，取值： - 0普通集群 - 1安全集群
 
@@ -545,7 +545,7 @@ class Endpoint:
 
     @safe_mode.setter
     def safe_mode(self, safe_mode):
-        """Sets the safe_mode of this Endpoint.
+        r"""Sets the safe_mode of this Endpoint.
 
         MRS集群运行模式，取值： - 0普通集群 - 1安全集群
 
@@ -556,7 +556,7 @@ class Endpoint:
 
     @property
     def ssl_cert_password(self):
-        """Gets the ssl_cert_password of this Endpoint.
+        r"""Gets the ssl_cert_password of this Endpoint.
 
         SSL证书密码，证书文件后缀为.p12
 
@@ -567,7 +567,7 @@ class Endpoint:
 
     @ssl_cert_password.setter
     def ssl_cert_password(self, ssl_cert_password):
-        """Sets the ssl_cert_password of this Endpoint.
+        r"""Sets the ssl_cert_password of this Endpoint.
 
         SSL证书密码，证书文件后缀为.p12
 
@@ -578,7 +578,7 @@ class Endpoint:
 
     @property
     def ssl_cert_check_sum(self):
-        """Gets the ssl_cert_check_sum of this Endpoint.
+        r"""Gets the ssl_cert_check_sum of this Endpoint.
 
         SSL证书内容checksum值，后端校验，源库安全连接必选。
 
@@ -589,7 +589,7 @@ class Endpoint:
 
     @ssl_cert_check_sum.setter
     def ssl_cert_check_sum(self, ssl_cert_check_sum):
-        """Sets the ssl_cert_check_sum of this Endpoint.
+        r"""Sets the ssl_cert_check_sum of this Endpoint.
 
         SSL证书内容checksum值，后端校验，源库安全连接必选。
 
@@ -600,7 +600,7 @@ class Endpoint:
 
     @property
     def ssl_cert_key(self):
-        """Gets the ssl_cert_key of this Endpoint.
+        r"""Gets the ssl_cert_key of this Endpoint.
 
         SSL证书内容，用base64加密
 
@@ -611,7 +611,7 @@ class Endpoint:
 
     @ssl_cert_key.setter
     def ssl_cert_key(self, ssl_cert_key):
-        """Sets the ssl_cert_key of this Endpoint.
+        r"""Sets the ssl_cert_key of this Endpoint.
 
         SSL证书内容，用base64加密
 
@@ -622,7 +622,7 @@ class Endpoint:
 
     @property
     def ssl_cert_name(self):
-        """Gets the ssl_cert_name of this Endpoint.
+        r"""Gets the ssl_cert_name of this Endpoint.
 
         SSL证书名字
 
@@ -633,7 +633,7 @@ class Endpoint:
 
     @ssl_cert_name.setter
     def ssl_cert_name(self, ssl_cert_name):
-        """Sets the ssl_cert_name of this Endpoint.
+        r"""Sets the ssl_cert_name of this Endpoint.
 
         SSL证书名字
 
@@ -644,7 +644,7 @@ class Endpoint:
 
     @property
     def ssl_link(self):
-        """Gets the ssl_link of this Endpoint.
+        r"""Gets the ssl_link of this Endpoint.
 
         是否SSL安全连接。
 
@@ -655,7 +655,7 @@ class Endpoint:
 
     @ssl_link.setter
     def ssl_link(self, ssl_link):
-        """Sets the ssl_link of this Endpoint.
+        r"""Sets the ssl_link of this Endpoint.
 
         是否SSL安全连接。
 
@@ -666,7 +666,7 @@ class Endpoint:
 
     @property
     def topic(self):
-        """Gets the topic of this Endpoint.
+        r"""Gets the topic of this Endpoint.
 
         kafka topic名称
 
@@ -677,7 +677,7 @@ class Endpoint:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this Endpoint.
+        r"""Sets the topic of this Endpoint.
 
         kafka topic名称
 
@@ -688,7 +688,7 @@ class Endpoint:
 
     @property
     def cluster_mode(self):
-        """Gets the cluster_mode of this Endpoint.
+        r"""Gets the cluster_mode of this Endpoint.
 
         MongDB集群4.0及以上版本，当集群实例无法获取到分片节点的IP时，source_endpoint中需要填写，值为：Sharding4.0+。
 
@@ -699,7 +699,7 @@ class Endpoint:
 
     @cluster_mode.setter
     def cluster_mode(self, cluster_mode):
-        """Sets the cluster_mode of this Endpoint.
+        r"""Sets the cluster_mode of this Endpoint.
 
         MongDB集群4.0及以上版本，当集群实例无法获取到分片节点的IP时，source_endpoint中需要填写，值为：Sharding4.0+。
 
@@ -710,7 +710,7 @@ class Endpoint:
 
     @property
     def kafka_security_config(self):
-        """Gets the kafka_security_config of this Endpoint.
+        r"""Gets the kafka_security_config of this Endpoint.
 
         :return: The kafka_security_config of this Endpoint.
         :rtype: :class:`huaweicloudsdkdrs.v3.KafkaSecurity`
@@ -719,7 +719,7 @@ class Endpoint:
 
     @kafka_security_config.setter
     def kafka_security_config(self, kafka_security_config):
-        """Sets the kafka_security_config of this Endpoint.
+        r"""Sets the kafka_security_config of this Endpoint.
 
         :param kafka_security_config: The kafka_security_config of this Endpoint.
         :type kafka_security_config: :class:`huaweicloudsdkdrs.v3.KafkaSecurity`

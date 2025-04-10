@@ -25,7 +25,7 @@ class ListDatastoreVersionsRequest:
     }
 
     def __init__(self, datastore_name=None):
-        """ListDatastoreVersionsRequest
+        r"""ListDatastoreVersionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListDatastoreVersionsRequest:
 
     @property
     def datastore_name(self):
-        """Gets the datastore_name of this ListDatastoreVersionsRequest.
+        r"""Gets the datastore_name of this ListDatastoreVersionsRequest.
 
         数据库版本类型。取值为“DDS-Community”。
 
@@ -53,7 +53,7 @@ class ListDatastoreVersionsRequest:
 
     @datastore_name.setter
     def datastore_name(self, datastore_name):
-        """Sets the datastore_name of this ListDatastoreVersionsRequest.
+        r"""Sets the datastore_name of this ListDatastoreVersionsRequest.
 
         数据库版本类型。取值为“DDS-Community”。
 

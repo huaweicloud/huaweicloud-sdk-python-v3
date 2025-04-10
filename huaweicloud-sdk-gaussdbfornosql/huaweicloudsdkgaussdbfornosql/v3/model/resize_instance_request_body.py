@@ -27,7 +27,7 @@ class ResizeInstanceRequestBody:
     }
 
     def __init__(self, resize=None, is_auto_pay=None):
-        """ResizeInstanceRequestBody
+        r"""ResizeInstanceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ResizeInstanceRequestBody:
 
     @property
     def resize(self):
-        """Gets the resize of this ResizeInstanceRequestBody.
+        r"""Gets the resize of this ResizeInstanceRequestBody.
 
         :return: The resize of this ResizeInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ResizeInstanceOption`
@@ -58,7 +58,7 @@ class ResizeInstanceRequestBody:
 
     @resize.setter
     def resize(self, resize):
-        """Sets the resize of this ResizeInstanceRequestBody.
+        r"""Sets the resize of this ResizeInstanceRequestBody.
 
         :param resize: The resize of this ResizeInstanceRequestBody.
         :type resize: :class:`huaweicloudsdkgaussdbfornosql.v3.ResizeInstanceOption`
@@ -67,7 +67,7 @@ class ResizeInstanceRequestBody:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this ResizeInstanceRequestBody.
+        r"""Gets the is_auto_pay of this ResizeInstanceRequestBody.
 
         创建包周期实例时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。 - 对于降低规格场景，该字段无效。 - 对于扩大规格场景：   - true，表示自动从账户中支付。   - false，表示手动从账户中支付，默认为该方式。
 
@@ -78,7 +78,7 @@ class ResizeInstanceRequestBody:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this ResizeInstanceRequestBody.
+        r"""Sets the is_auto_pay of this ResizeInstanceRequestBody.
 
         创建包周期实例时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。 - 对于降低规格场景，该字段无效。 - 对于扩大规格场景：   - true，表示自动从账户中支付。   - false，表示手动从账户中支付，默认为该方式。
 

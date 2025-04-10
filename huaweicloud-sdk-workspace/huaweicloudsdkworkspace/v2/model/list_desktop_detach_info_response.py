@@ -26,7 +26,7 @@ class ListDesktopDetachInfoResponse(SdkResponse):
     }
 
     def __init__(self, desktop_detach_infos=None):
-        """ListDesktopDetachInfoResponse
+        r"""ListDesktopDetachInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListDesktopDetachInfoResponse(SdkResponse):
 
     @property
     def desktop_detach_infos(self):
-        """Gets the desktop_detach_infos of this ListDesktopDetachInfoResponse.
+        r"""Gets the desktop_detach_infos of this ListDesktopDetachInfoResponse.
 
         桌面解绑信息
 
@@ -55,7 +55,7 @@ class ListDesktopDetachInfoResponse(SdkResponse):
 
     @desktop_detach_infos.setter
     def desktop_detach_infos(self, desktop_detach_infos):
-        """Sets the desktop_detach_infos of this ListDesktopDetachInfoResponse.
+        r"""Sets the desktop_detach_infos of this ListDesktopDetachInfoResponse.
 
         桌面解绑信息
 

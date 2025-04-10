@@ -35,7 +35,7 @@ class LivePlatformInfo:
     }
 
     def __init__(self, platform_id=None, access_type=None, name=None, authorization_info=None, auth_config=None, callback_config=None):
-        """LivePlatformInfo
+        r"""LivePlatformInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class LivePlatformInfo:
 
     @property
     def platform_id(self):
-        """Gets the platform_id of this LivePlatformInfo.
+        r"""Gets the platform_id of this LivePlatformInfo.
 
         平台ID
 
@@ -89,7 +89,7 @@ class LivePlatformInfo:
 
     @platform_id.setter
     def platform_id(self, platform_id):
-        """Sets the platform_id of this LivePlatformInfo.
+        r"""Sets the platform_id of this LivePlatformInfo.
 
         平台ID
 
@@ -100,7 +100,7 @@ class LivePlatformInfo:
 
     @property
     def access_type(self):
-        """Gets the access_type of this LivePlatformInfo.
+        r"""Gets the access_type of this LivePlatformInfo.
 
         :return: The access_type of this LivePlatformInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.AccessTypeEnum`
@@ -109,7 +109,7 @@ class LivePlatformInfo:
 
     @access_type.setter
     def access_type(self, access_type):
-        """Sets the access_type of this LivePlatformInfo.
+        r"""Sets the access_type of this LivePlatformInfo.
 
         :param access_type: The access_type of this LivePlatformInfo.
         :type access_type: :class:`huaweicloudsdkmetastudio.v1.AccessTypeEnum`
@@ -118,7 +118,7 @@ class LivePlatformInfo:
 
     @property
     def name(self):
-        """Gets the name of this LivePlatformInfo.
+        r"""Gets the name of this LivePlatformInfo.
 
         直播平台名称
 
@@ -129,7 +129,7 @@ class LivePlatformInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this LivePlatformInfo.
+        r"""Sets the name of this LivePlatformInfo.
 
         直播平台名称
 
@@ -140,7 +140,7 @@ class LivePlatformInfo:
 
     @property
     def authorization_info(self):
-        """Gets the authorization_info of this LivePlatformInfo.
+        r"""Gets the authorization_info of this LivePlatformInfo.
 
         :return: The authorization_info of this LivePlatformInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.PlatformAuthorizationInfo`
@@ -149,7 +149,7 @@ class LivePlatformInfo:
 
     @authorization_info.setter
     def authorization_info(self, authorization_info):
-        """Sets the authorization_info of this LivePlatformInfo.
+        r"""Sets the authorization_info of this LivePlatformInfo.
 
         :param authorization_info: The authorization_info of this LivePlatformInfo.
         :type authorization_info: :class:`huaweicloudsdkmetastudio.v1.PlatformAuthorizationInfo`
@@ -158,7 +158,7 @@ class LivePlatformInfo:
 
     @property
     def auth_config(self):
-        """Gets the auth_config of this LivePlatformInfo.
+        r"""Gets the auth_config of this LivePlatformInfo.
 
         :return: The auth_config of this LivePlatformInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CustomPlatformAuthConfig`
@@ -167,7 +167,7 @@ class LivePlatformInfo:
 
     @auth_config.setter
     def auth_config(self, auth_config):
-        """Sets the auth_config of this LivePlatformInfo.
+        r"""Sets the auth_config of this LivePlatformInfo.
 
         :param auth_config: The auth_config of this LivePlatformInfo.
         :type auth_config: :class:`huaweicloudsdkmetastudio.v1.CustomPlatformAuthConfig`
@@ -176,7 +176,7 @@ class LivePlatformInfo:
 
     @property
     def callback_config(self):
-        """Gets the callback_config of this LivePlatformInfo.
+        r"""Gets the callback_config of this LivePlatformInfo.
 
         自定义直播平台回调配置。同一种类型仅保留一个配置，如果配置多个会随机保存一个。
 
@@ -187,7 +187,7 @@ class LivePlatformInfo:
 
     @callback_config.setter
     def callback_config(self, callback_config):
-        """Sets the callback_config of this LivePlatformInfo.
+        r"""Sets the callback_config of this LivePlatformInfo.
 
         自定义直播平台回调配置。同一种类型仅保留一个配置，如果配置多个会随机保存一个。
 

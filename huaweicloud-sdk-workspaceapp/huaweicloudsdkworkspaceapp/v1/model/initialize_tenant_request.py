@@ -25,7 +25,7 @@ class InitializeTenantRequest:
     }
 
     def __init__(self, body=None):
-        """InitializeTenantRequest
+        r"""InitializeTenantRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class InitializeTenantRequest:
 
     @property
     def body(self):
-        """Gets the body of this InitializeTenantRequest.
+        r"""Gets the body of this InitializeTenantRequest.
 
         :return: The body of this InitializeTenantRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.InitializeTenantReq`
@@ -52,7 +52,7 @@ class InitializeTenantRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this InitializeTenantRequest.
+        r"""Sets the body of this InitializeTenantRequest.
 
         :param body: The body of this InitializeTenantRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.InitializeTenantReq`

@@ -29,7 +29,7 @@ class ShowRepositoryArchiveRequest:
     }
 
     def __init__(self, repository_uuid=None, sha=None, format=None):
-        """ShowRepositoryArchiveRequest
+        r"""ShowRepositoryArchiveRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ShowRepositoryArchiveRequest:
 
     @property
     def repository_uuid(self):
-        """Gets the repository_uuid of this ShowRepositoryArchiveRequest.
+        r"""Gets the repository_uuid of this ShowRepositoryArchiveRequest.
 
         仓库的uuid
 
@@ -65,7 +65,7 @@ class ShowRepositoryArchiveRequest:
 
     @repository_uuid.setter
     def repository_uuid(self, repository_uuid):
-        """Sets the repository_uuid of this ShowRepositoryArchiveRequest.
+        r"""Sets the repository_uuid of this ShowRepositoryArchiveRequest.
 
         仓库的uuid
 
@@ -76,7 +76,7 @@ class ShowRepositoryArchiveRequest:
 
     @property
     def sha(self):
-        """Gets the sha of this ShowRepositoryArchiveRequest.
+        r"""Gets the sha of this ShowRepositoryArchiveRequest.
 
         分支名称
 
@@ -87,7 +87,7 @@ class ShowRepositoryArchiveRequest:
 
     @sha.setter
     def sha(self, sha):
-        """Sets the sha of this ShowRepositoryArchiveRequest.
+        r"""Sets the sha of this ShowRepositoryArchiveRequest.
 
         分支名称
 
@@ -98,7 +98,7 @@ class ShowRepositoryArchiveRequest:
 
     @property
     def format(self):
-        """Gets the format of this ShowRepositoryArchiveRequest.
+        r"""Gets the format of this ShowRepositoryArchiveRequest.
 
         下载的压缩包格式
 
@@ -109,7 +109,7 @@ class ShowRepositoryArchiveRequest:
 
     @format.setter
     def format(self, format):
-        """Sets the format of this ShowRepositoryArchiveRequest.
+        r"""Sets the format of this ShowRepositoryArchiveRequest.
 
         下载的压缩包格式
 

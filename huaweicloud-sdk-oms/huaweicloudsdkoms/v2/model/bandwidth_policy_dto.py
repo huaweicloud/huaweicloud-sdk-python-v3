@@ -29,7 +29,7 @@ class BandwidthPolicyDto:
     }
 
     def __init__(self, end=None, max_bandwidth=None, start=None):
-        """BandwidthPolicyDto
+        r"""BandwidthPolicyDto
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class BandwidthPolicyDto:
 
     @property
     def end(self):
-        """Gets the end of this BandwidthPolicyDto.
+        r"""Gets the end of this BandwidthPolicyDto.
 
         流量控制结束时间（包含），格式为“hh:mm”。例如“12:03”表示12时03分。
 
@@ -65,7 +65,7 @@ class BandwidthPolicyDto:
 
     @end.setter
     def end(self, end):
-        """Sets the end of this BandwidthPolicyDto.
+        r"""Sets the end of this BandwidthPolicyDto.
 
         流量控制结束时间（包含），格式为“hh:mm”。例如“12:03”表示12时03分。
 
@@ -76,7 +76,7 @@ class BandwidthPolicyDto:
 
     @property
     def max_bandwidth(self):
-        """Gets the max_bandwidth of this BandwidthPolicyDto.
+        r"""Gets the max_bandwidth of this BandwidthPolicyDto.
 
         时段内允许的最大流量带宽，单位Byte/s，取值范围为>= 1048576Byte/s（相当于1MB/s）且<=209715200Byte/s（相当于200MB/s）。
 
@@ -87,7 +87,7 @@ class BandwidthPolicyDto:
 
     @max_bandwidth.setter
     def max_bandwidth(self, max_bandwidth):
-        """Sets the max_bandwidth of this BandwidthPolicyDto.
+        r"""Sets the max_bandwidth of this BandwidthPolicyDto.
 
         时段内允许的最大流量带宽，单位Byte/s，取值范围为>= 1048576Byte/s（相当于1MB/s）且<=209715200Byte/s（相当于200MB/s）。
 
@@ -98,7 +98,7 @@ class BandwidthPolicyDto:
 
     @property
     def start(self):
-        """Gets the start of this BandwidthPolicyDto.
+        r"""Gets the start of this BandwidthPolicyDto.
 
         流量控制开始时间（包含），格式为“hh:mm”。例如“12:03”表示12时03分。
 
@@ -109,7 +109,7 @@ class BandwidthPolicyDto:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this BandwidthPolicyDto.
+        r"""Sets the start of this BandwidthPolicyDto.
 
         流量控制开始时间（包含），格式为“hh:mm”。例如“12:03”表示12时03分。
 

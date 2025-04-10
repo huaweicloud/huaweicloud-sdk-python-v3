@@ -26,7 +26,7 @@ class ShowAdminConfigResponse(SdkResponse):
     }
 
     def __init__(self, log_converge_switch=None):
-        """ShowAdminConfigResponse
+        r"""ShowAdminConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowAdminConfigResponse(SdkResponse):
 
     @property
     def log_converge_switch(self):
-        """Gets the log_converge_switch of this ShowAdminConfigResponse.
+        r"""Gets the log_converge_switch of this ShowAdminConfigResponse.
 
         :return: The log_converge_switch of this ShowAdminConfigResponse.
         :rtype: bool
@@ -53,7 +53,7 @@ class ShowAdminConfigResponse(SdkResponse):
 
     @log_converge_switch.setter
     def log_converge_switch(self, log_converge_switch):
-        """Sets the log_converge_switch of this ShowAdminConfigResponse.
+        r"""Sets the log_converge_switch of this ShowAdminConfigResponse.
 
         :param log_converge_switch: The log_converge_switch of this ShowAdminConfigResponse.
         :type log_converge_switch: bool

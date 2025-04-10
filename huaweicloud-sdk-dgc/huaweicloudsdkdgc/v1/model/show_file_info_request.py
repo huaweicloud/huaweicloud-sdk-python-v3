@@ -27,7 +27,7 @@ class ShowFileInfoRequest:
     }
 
     def __init__(self, workspace=None, body=None):
-        """ShowFileInfoRequest
+        r"""ShowFileInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ShowFileInfoRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowFileInfoRequest.
+        r"""Gets the workspace of this ShowFileInfoRequest.
 
         工作空间id
 
@@ -61,7 +61,7 @@ class ShowFileInfoRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowFileInfoRequest.
+        r"""Sets the workspace of this ShowFileInfoRequest.
 
         工作空间id
 
@@ -72,7 +72,7 @@ class ShowFileInfoRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowFileInfoRequest.
+        r"""Gets the body of this ShowFileInfoRequest.
 
         :return: The body of this ShowFileInfoRequest.
         :rtype: :class:`huaweicloudsdkdgc.v1.FilePath`
@@ -81,7 +81,7 @@ class ShowFileInfoRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowFileInfoRequest.
+        r"""Sets the body of this ShowFileInfoRequest.
 
         :param body: The body of this ShowFileInfoRequest.
         :type body: :class:`huaweicloudsdkdgc.v1.FilePath`

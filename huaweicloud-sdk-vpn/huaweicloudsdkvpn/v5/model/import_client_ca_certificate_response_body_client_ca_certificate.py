@@ -25,7 +25,7 @@ class ImportClientCaCertificateResponseBodyClientCaCertificate:
     }
 
     def __init__(self, id=None):
-        """ImportClientCaCertificateResponseBodyClientCaCertificate
+        r"""ImportClientCaCertificateResponseBodyClientCaCertificate
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ImportClientCaCertificateResponseBodyClientCaCertificate:
 
     @property
     def id(self):
-        """Gets the id of this ImportClientCaCertificateResponseBodyClientCaCertificate.
+        r"""Gets the id of this ImportClientCaCertificateResponseBodyClientCaCertificate.
 
         ID
 
@@ -54,7 +54,7 @@ class ImportClientCaCertificateResponseBodyClientCaCertificate:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ImportClientCaCertificateResponseBodyClientCaCertificate.
+        r"""Sets the id of this ImportClientCaCertificateResponseBodyClientCaCertificate.
 
         ID
 

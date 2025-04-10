@@ -33,7 +33,7 @@ class SrCreateInstanceRspInstancePayInfo:
     }
 
     def __init__(self, pay_model=None, order_id=None, period=None, period_type=None, is_auto_renew=None):
-        """SrCreateInstanceRspInstancePayInfo
+        r"""SrCreateInstanceRspInstancePayInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class SrCreateInstanceRspInstancePayInfo:
 
     @property
     def pay_model(self):
-        """Gets the pay_model of this SrCreateInstanceRspInstancePayInfo.
+        r"""Gets the pay_model of this SrCreateInstanceRspInstancePayInfo.
 
         计费模式。 - 0：按需计费 - 1：包周期  StarRocks实例当前只支持按需计费，默认值为0
 
@@ -82,7 +82,7 @@ class SrCreateInstanceRspInstancePayInfo:
 
     @pay_model.setter
     def pay_model(self, pay_model):
-        """Sets the pay_model of this SrCreateInstanceRspInstancePayInfo.
+        r"""Sets the pay_model of this SrCreateInstanceRspInstancePayInfo.
 
         计费模式。 - 0：按需计费 - 1：包周期  StarRocks实例当前只支持按需计费，默认值为0
 
@@ -93,7 +93,7 @@ class SrCreateInstanceRspInstancePayInfo:
 
     @property
     def order_id(self):
-        """Gets the order_id of this SrCreateInstanceRspInstancePayInfo.
+        r"""Gets the order_id of this SrCreateInstanceRspInstancePayInfo.
 
         包周期计费ID。
 
@@ -104,7 +104,7 @@ class SrCreateInstanceRspInstancePayInfo:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this SrCreateInstanceRspInstancePayInfo.
+        r"""Sets the order_id of this SrCreateInstanceRspInstancePayInfo.
 
         包周期计费ID。
 
@@ -115,7 +115,7 @@ class SrCreateInstanceRspInstancePayInfo:
 
     @property
     def period(self):
-        """Gets the period of this SrCreateInstanceRspInstancePayInfo.
+        r"""Gets the period of this SrCreateInstanceRspInstancePayInfo.
 
         包周期周期。
 
@@ -126,7 +126,7 @@ class SrCreateInstanceRspInstancePayInfo:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this SrCreateInstanceRspInstancePayInfo.
+        r"""Sets the period of this SrCreateInstanceRspInstancePayInfo.
 
         包周期周期。
 
@@ -137,7 +137,7 @@ class SrCreateInstanceRspInstancePayInfo:
 
     @property
     def period_type(self):
-        """Gets the period_type of this SrCreateInstanceRspInstancePayInfo.
+        r"""Gets the period_type of this SrCreateInstanceRspInstancePayInfo.
 
         包周期周期类型。
 
@@ -148,7 +148,7 @@ class SrCreateInstanceRspInstancePayInfo:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this SrCreateInstanceRspInstancePayInfo.
+        r"""Sets the period_type of this SrCreateInstanceRspInstancePayInfo.
 
         包周期周期类型。
 
@@ -159,7 +159,7 @@ class SrCreateInstanceRspInstancePayInfo:
 
     @property
     def is_auto_renew(self):
-        """Gets the is_auto_renew of this SrCreateInstanceRspInstancePayInfo.
+        r"""Gets the is_auto_renew of this SrCreateInstanceRspInstancePayInfo.
 
         包周期是否自动续费。
 
@@ -170,7 +170,7 @@ class SrCreateInstanceRspInstancePayInfo:
 
     @is_auto_renew.setter
     def is_auto_renew(self, is_auto_renew):
-        """Sets the is_auto_renew of this SrCreateInstanceRspInstancePayInfo.
+        r"""Sets the is_auto_renew of this SrCreateInstanceRspInstancePayInfo.
 
         包周期是否自动续费。
 

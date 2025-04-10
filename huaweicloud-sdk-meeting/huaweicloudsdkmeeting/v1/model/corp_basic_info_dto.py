@@ -49,7 +49,7 @@ class CorpBasicInfoDTO:
     }
 
     def __init__(self, id=None, name=None, address=None, admin_name=None, account=None, phone=None, country=None, email=None, enable_sms=None, enable_cloud_disk=None, enable_pstn=None, auto_user_create=None, corp_type=None):
-        """CorpBasicInfoDTO
+        r"""CorpBasicInfoDTO
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class CorpBasicInfoDTO:
 
     @property
     def id(self):
-        """Gets the id of this CorpBasicInfoDTO.
+        r"""Gets the id of this CorpBasicInfoDTO.
 
         企业id。
 
@@ -138,7 +138,7 @@ class CorpBasicInfoDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CorpBasicInfoDTO.
+        r"""Sets the id of this CorpBasicInfoDTO.
 
         企业id。
 
@@ -149,7 +149,7 @@ class CorpBasicInfoDTO:
 
     @property
     def name(self):
-        """Gets the name of this CorpBasicInfoDTO.
+        r"""Gets the name of this CorpBasicInfoDTO.
 
         企业名称。
 
@@ -160,7 +160,7 @@ class CorpBasicInfoDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CorpBasicInfoDTO.
+        r"""Sets the name of this CorpBasicInfoDTO.
 
         企业名称。
 
@@ -171,7 +171,7 @@ class CorpBasicInfoDTO:
 
     @property
     def address(self):
-        """Gets the address of this CorpBasicInfoDTO.
+        r"""Gets the address of this CorpBasicInfoDTO.
 
         企业所在地。
 
@@ -182,7 +182,7 @@ class CorpBasicInfoDTO:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this CorpBasicInfoDTO.
+        r"""Sets the address of this CorpBasicInfoDTO.
 
         企业所在地。
 
@@ -193,7 +193,7 @@ class CorpBasicInfoDTO:
 
     @property
     def admin_name(self):
-        """Gets the admin_name of this CorpBasicInfoDTO.
+        r"""Gets the admin_name of this CorpBasicInfoDTO.
 
         管理员名称。
 
@@ -204,7 +204,7 @@ class CorpBasicInfoDTO:
 
     @admin_name.setter
     def admin_name(self, admin_name):
-        """Sets the admin_name of this CorpBasicInfoDTO.
+        r"""Sets the admin_name of this CorpBasicInfoDTO.
 
         管理员名称。
 
@@ -215,7 +215,7 @@ class CorpBasicInfoDTO:
 
     @property
     def account(self):
-        """Gets the account of this CorpBasicInfoDTO.
+        r"""Gets the account of this CorpBasicInfoDTO.
 
         管理员的华为云会议帐号。
 
@@ -226,7 +226,7 @@ class CorpBasicInfoDTO:
 
     @account.setter
     def account(self, account):
-        """Sets the account of this CorpBasicInfoDTO.
+        r"""Sets the account of this CorpBasicInfoDTO.
 
         管理员的华为云会议帐号。
 
@@ -237,7 +237,7 @@ class CorpBasicInfoDTO:
 
     @property
     def phone(self):
-        """Gets the phone of this CorpBasicInfoDTO.
+        r"""Gets the phone of this CorpBasicInfoDTO.
 
         管理员手机。
 
@@ -248,7 +248,7 @@ class CorpBasicInfoDTO:
 
     @phone.setter
     def phone(self, phone):
-        """Sets the phone of this CorpBasicInfoDTO.
+        r"""Sets the phone of this CorpBasicInfoDTO.
 
         管理员手机。
 
@@ -259,7 +259,7 @@ class CorpBasicInfoDTO:
 
     @property
     def country(self):
-        """Gets the country of this CorpBasicInfoDTO.
+        r"""Gets the country of this CorpBasicInfoDTO.
 
         [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
@@ -270,7 +270,7 @@ class CorpBasicInfoDTO:
 
     @country.setter
     def country(self, country):
-        """Sets the country of this CorpBasicInfoDTO.
+        r"""Sets the country of this CorpBasicInfoDTO.
 
         [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
@@ -281,7 +281,7 @@ class CorpBasicInfoDTO:
 
     @property
     def email(self):
-        """Gets the email of this CorpBasicInfoDTO.
+        r"""Gets the email of this CorpBasicInfoDTO.
 
         管理员邮箱。
 
@@ -292,7 +292,7 @@ class CorpBasicInfoDTO:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this CorpBasicInfoDTO.
+        r"""Sets the email of this CorpBasicInfoDTO.
 
         管理员邮箱。
 
@@ -303,7 +303,7 @@ class CorpBasicInfoDTO:
 
     @property
     def enable_sms(self):
-        """Gets the enable_sms of this CorpBasicInfoDTO.
+        r"""Gets the enable_sms of this CorpBasicInfoDTO.
 
         是否通过短信形式发送会议通知。
 
@@ -314,7 +314,7 @@ class CorpBasicInfoDTO:
 
     @enable_sms.setter
     def enable_sms(self, enable_sms):
-        """Sets the enable_sms of this CorpBasicInfoDTO.
+        r"""Sets the enable_sms of this CorpBasicInfoDTO.
 
         是否通过短信形式发送会议通知。
 
@@ -325,7 +325,7 @@ class CorpBasicInfoDTO:
 
     @property
     def enable_cloud_disk(self):
-        """Gets the enable_cloud_disk of this CorpBasicInfoDTO.
+        r"""Gets the enable_cloud_disk of this CorpBasicInfoDTO.
 
         是否开启云盘。
 
@@ -336,7 +336,7 @@ class CorpBasicInfoDTO:
 
     @enable_cloud_disk.setter
     def enable_cloud_disk(self, enable_cloud_disk):
-        """Sets the enable_cloud_disk of this CorpBasicInfoDTO.
+        r"""Sets the enable_cloud_disk of this CorpBasicInfoDTO.
 
         是否开启云盘。
 
@@ -347,7 +347,7 @@ class CorpBasicInfoDTO:
 
     @property
     def enable_pstn(self):
-        """Gets the enable_pstn of this CorpBasicInfoDTO.
+        r"""Gets the enable_pstn of this CorpBasicInfoDTO.
 
         是否具有pstn功能。
 
@@ -358,7 +358,7 @@ class CorpBasicInfoDTO:
 
     @enable_pstn.setter
     def enable_pstn(self, enable_pstn):
-        """Sets the enable_pstn of this CorpBasicInfoDTO.
+        r"""Sets the enable_pstn of this CorpBasicInfoDTO.
 
         是否具有pstn功能。
 
@@ -369,7 +369,7 @@ class CorpBasicInfoDTO:
 
     @property
     def auto_user_create(self):
-        """Gets the auto_user_create of this CorpBasicInfoDTO.
+        r"""Gets the auto_user_create of this CorpBasicInfoDTO.
 
         是否支持自动开户。
 
@@ -380,7 +380,7 @@ class CorpBasicInfoDTO:
 
     @auto_user_create.setter
     def auto_user_create(self, auto_user_create):
-        """Sets the auto_user_create of this CorpBasicInfoDTO.
+        r"""Sets the auto_user_create of this CorpBasicInfoDTO.
 
         是否支持自动开户。
 
@@ -391,7 +391,7 @@ class CorpBasicInfoDTO:
 
     @property
     def corp_type(self):
-        """Gets the corp_type of this CorpBasicInfoDTO.
+        r"""Gets the corp_type of this CorpBasicInfoDTO.
 
         企业类型。 * 0：旗舰版 * 5：免费版 * 6：标准版 
 
@@ -402,7 +402,7 @@ class CorpBasicInfoDTO:
 
     @corp_type.setter
     def corp_type(self, corp_type):
-        """Sets the corp_type of this CorpBasicInfoDTO.
+        r"""Sets the corp_type of this CorpBasicInfoDTO.
 
         企业类型。 * 0：旗舰版 * 5：免费版 * 6：标准版 
 

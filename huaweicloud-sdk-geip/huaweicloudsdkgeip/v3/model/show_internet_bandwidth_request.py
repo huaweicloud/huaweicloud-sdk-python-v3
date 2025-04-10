@@ -27,7 +27,7 @@ class ShowInternetBandwidthRequest:
     }
 
     def __init__(self, internet_bandwidth_id=None, fields=None):
-        """ShowInternetBandwidthRequest
+        r"""ShowInternetBandwidthRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowInternetBandwidthRequest:
 
     @property
     def internet_bandwidth_id(self):
-        """Gets the internet_bandwidth_id of this ShowInternetBandwidthRequest.
+        r"""Gets the internet_bandwidth_id of this ShowInternetBandwidthRequest.
 
         :return: The internet_bandwidth_id of this ShowInternetBandwidthRequest.
         :rtype: str
@@ -58,7 +58,7 @@ class ShowInternetBandwidthRequest:
 
     @internet_bandwidth_id.setter
     def internet_bandwidth_id(self, internet_bandwidth_id):
-        """Sets the internet_bandwidth_id of this ShowInternetBandwidthRequest.
+        r"""Sets the internet_bandwidth_id of this ShowInternetBandwidthRequest.
 
         :param internet_bandwidth_id: The internet_bandwidth_id of this ShowInternetBandwidthRequest.
         :type internet_bandwidth_id: str
@@ -67,7 +67,7 @@ class ShowInternetBandwidthRequest:
 
     @property
     def fields(self):
-        """Gets the fields of this ShowInternetBandwidthRequest.
+        r"""Gets the fields of this ShowInternetBandwidthRequest.
 
         :return: The fields of this ShowInternetBandwidthRequest.
         :rtype: list[str]
@@ -76,7 +76,7 @@ class ShowInternetBandwidthRequest:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this ShowInternetBandwidthRequest.
+        r"""Sets the fields of this ShowInternetBandwidthRequest.
 
         :param fields: The fields of this ShowInternetBandwidthRequest.
         :type fields: list[str]

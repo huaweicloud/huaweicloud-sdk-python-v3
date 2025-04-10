@@ -25,7 +25,7 @@ class UpdateStructTemplateRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateStructTemplateRequest
+        r"""UpdateStructTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateStructTemplateRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateStructTemplateRequest.
+        r"""Gets the body of this UpdateStructTemplateRequest.
 
         :return: The body of this UpdateStructTemplateRequest.
         :rtype: :class:`huaweicloudsdklts.v2.LtsStructTemplateInfo`
@@ -52,7 +52,7 @@ class UpdateStructTemplateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateStructTemplateRequest.
+        r"""Sets the body of this UpdateStructTemplateRequest.
 
         :param body: The body of this UpdateStructTemplateRequest.
         :type body: :class:`huaweicloudsdklts.v2.LtsStructTemplateInfo`

@@ -30,7 +30,7 @@ class UpdateNodeFirmwareResponse(SdkResponse):
     }
 
     def __init__(self, body=None, firmware_name=None, firmware_id=None):
-        """UpdateNodeFirmwareResponse
+        r"""UpdateNodeFirmwareResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class UpdateNodeFirmwareResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this UpdateNodeFirmwareResponse.
+        r"""Gets the body of this UpdateNodeFirmwareResponse.
 
         :return: The body of this UpdateNodeFirmwareResponse.
         :rtype: object
@@ -67,7 +67,7 @@ class UpdateNodeFirmwareResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateNodeFirmwareResponse.
+        r"""Sets the body of this UpdateNodeFirmwareResponse.
 
         :param body: The body of this UpdateNodeFirmwareResponse.
         :type body: object
@@ -76,7 +76,7 @@ class UpdateNodeFirmwareResponse(SdkResponse):
 
     @property
     def firmware_name(self):
-        """Gets the firmware_name of this UpdateNodeFirmwareResponse.
+        r"""Gets the firmware_name of this UpdateNodeFirmwareResponse.
 
         :return: The firmware_name of this UpdateNodeFirmwareResponse.
         :rtype: str
@@ -85,7 +85,7 @@ class UpdateNodeFirmwareResponse(SdkResponse):
 
     @firmware_name.setter
     def firmware_name(self, firmware_name):
-        """Sets the firmware_name of this UpdateNodeFirmwareResponse.
+        r"""Sets the firmware_name of this UpdateNodeFirmwareResponse.
 
         :param firmware_name: The firmware_name of this UpdateNodeFirmwareResponse.
         :type firmware_name: str
@@ -94,7 +94,7 @@ class UpdateNodeFirmwareResponse(SdkResponse):
 
     @property
     def firmware_id(self):
-        """Gets the firmware_id of this UpdateNodeFirmwareResponse.
+        r"""Gets the firmware_id of this UpdateNodeFirmwareResponse.
 
         :return: The firmware_id of this UpdateNodeFirmwareResponse.
         :rtype: str
@@ -103,7 +103,7 @@ class UpdateNodeFirmwareResponse(SdkResponse):
 
     @firmware_id.setter
     def firmware_id(self, firmware_id):
-        """Sets the firmware_id of this UpdateNodeFirmwareResponse.
+        r"""Sets the firmware_id of this UpdateNodeFirmwareResponse.
 
         :param firmware_id: The firmware_id of this UpdateNodeFirmwareResponse.
         :type firmware_id: str

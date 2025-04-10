@@ -28,7 +28,7 @@ class ListSharerProductsResponse(SdkResponse):
     }
 
     def __init__(self, products=None, total_count=None):
-        """ListSharerProductsResponse
+        r"""ListSharerProductsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSharerProductsResponse(SdkResponse):
 
     @property
     def products(self):
-        """Gets the products of this ListSharerProductsResponse.
+        r"""Gets the products of this ListSharerProductsResponse.
 
         产品列表。
 
@@ -62,7 +62,7 @@ class ListSharerProductsResponse(SdkResponse):
 
     @products.setter
     def products(self, products):
-        """Sets the products of this ListSharerProductsResponse.
+        r"""Sets the products of this ListSharerProductsResponse.
 
         产品列表。
 
@@ -73,7 +73,7 @@ class ListSharerProductsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListSharerProductsResponse.
+        r"""Gets the total_count of this ListSharerProductsResponse.
 
         对象总数。
 
@@ -84,7 +84,7 @@ class ListSharerProductsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListSharerProductsResponse.
+        r"""Sets the total_count of this ListSharerProductsResponse.
 
         对象总数。
 

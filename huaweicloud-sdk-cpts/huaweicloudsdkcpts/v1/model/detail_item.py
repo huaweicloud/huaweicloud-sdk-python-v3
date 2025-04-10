@@ -33,7 +33,7 @@ class DetailItem:
     }
 
     def __init__(self, case_aw_id=None, datum_type=None, name=None, transaction_id=None, aw_list=None):
-        """DetailItem
+        r"""DetailItem
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class DetailItem:
 
     @property
     def case_aw_id(self):
-        """Gets the case_aw_id of this DetailItem.
+        r"""Gets the case_aw_id of this DetailItem.
 
         数据库中dc_case_aw表中的主键ID
 
@@ -82,7 +82,7 @@ class DetailItem:
 
     @case_aw_id.setter
     def case_aw_id(self, case_aw_id):
-        """Sets the case_aw_id of this DetailItem.
+        r"""Sets the case_aw_id of this DetailItem.
 
         数据库中dc_case_aw表中的主键ID
 
@@ -93,7 +93,7 @@ class DetailItem:
 
     @property
     def datum_type(self):
-        """Gets the datum_type of this DetailItem.
+        r"""Gets the datum_type of this DetailItem.
 
         数据类型（用例/aw/事务）
 
@@ -104,7 +104,7 @@ class DetailItem:
 
     @datum_type.setter
     def datum_type(self, datum_type):
-        """Sets the datum_type of this DetailItem.
+        r"""Sets the datum_type of this DetailItem.
 
         数据类型（用例/aw/事务）
 
@@ -115,7 +115,7 @@ class DetailItem:
 
     @property
     def name(self):
-        """Gets the name of this DetailItem.
+        r"""Gets the name of this DetailItem.
 
         用例/aw/事务名
 
@@ -126,7 +126,7 @@ class DetailItem:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DetailItem.
+        r"""Sets the name of this DetailItem.
 
         用例/aw/事务名
 
@@ -137,7 +137,7 @@ class DetailItem:
 
     @property
     def transaction_id(self):
-        """Gets the transaction_id of this DetailItem.
+        r"""Gets the transaction_id of this DetailItem.
 
         事务ID
 
@@ -148,7 +148,7 @@ class DetailItem:
 
     @transaction_id.setter
     def transaction_id(self, transaction_id):
-        """Sets the transaction_id of this DetailItem.
+        r"""Sets the transaction_id of this DetailItem.
 
         事务ID
 
@@ -159,7 +159,7 @@ class DetailItem:
 
     @property
     def aw_list(self):
-        """Gets the aw_list of this DetailItem.
+        r"""Gets the aw_list of this DetailItem.
 
         aw列表
 
@@ -170,7 +170,7 @@ class DetailItem:
 
     @aw_list.setter
     def aw_list(self, aw_list):
-        """Sets the aw_list of this DetailItem.
+        r"""Sets the aw_list of this DetailItem.
 
         aw列表
 

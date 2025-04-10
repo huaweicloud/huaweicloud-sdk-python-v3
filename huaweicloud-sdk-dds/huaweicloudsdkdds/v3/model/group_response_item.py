@@ -35,7 +35,7 @@ class GroupResponseItem:
     }
 
     def __init__(self, type=None, id=None, name=None, status=None, volume=None, nodes=None):
-        """GroupResponseItem
+        r"""GroupResponseItem
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class GroupResponseItem:
 
     @property
     def type(self):
-        """Gets the type of this GroupResponseItem.
+        r"""Gets the type of this GroupResponseItem.
 
         节点类型。 取值： - shard - config - mongos - replica - single
 
@@ -83,7 +83,7 @@ class GroupResponseItem:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this GroupResponseItem.
+        r"""Sets the type of this GroupResponseItem.
 
         节点类型。 取值： - shard - config - mongos - replica - single
 
@@ -94,7 +94,7 @@ class GroupResponseItem:
 
     @property
     def id(self):
-        """Gets the id of this GroupResponseItem.
+        r"""Gets the id of this GroupResponseItem.
 
         组ID。节点类型为shard和config时，该参数有效。
 
@@ -105,7 +105,7 @@ class GroupResponseItem:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this GroupResponseItem.
+        r"""Sets the id of this GroupResponseItem.
 
         组ID。节点类型为shard和config时，该参数有效。
 
@@ -116,7 +116,7 @@ class GroupResponseItem:
 
     @property
     def name(self):
-        """Gets the name of this GroupResponseItem.
+        r"""Gets the name of this GroupResponseItem.
 
         组名称。节点类型为shard和config时，该参数有效。
 
@@ -127,7 +127,7 @@ class GroupResponseItem:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GroupResponseItem.
+        r"""Sets the name of this GroupResponseItem.
 
         组名称。节点类型为shard和config时，该参数有效。
 
@@ -138,7 +138,7 @@ class GroupResponseItem:
 
     @property
     def status(self):
-        """Gets the status of this GroupResponseItem.
+        r"""Gets the status of this GroupResponseItem.
 
         组状态。节点类型为shard和config时，该参数有效。
 
@@ -149,7 +149,7 @@ class GroupResponseItem:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this GroupResponseItem.
+        r"""Sets the status of this GroupResponseItem.
 
         组状态。节点类型为shard和config时，该参数有效。
 
@@ -160,7 +160,7 @@ class GroupResponseItem:
 
     @property
     def volume(self):
-        """Gets the volume of this GroupResponseItem.
+        r"""Gets the volume of this GroupResponseItem.
 
         :return: The volume of this GroupResponseItem.
         :rtype: :class:`huaweicloudsdkdds.v3.Volume`
@@ -169,7 +169,7 @@ class GroupResponseItem:
 
     @volume.setter
     def volume(self, volume):
-        """Sets the volume of this GroupResponseItem.
+        r"""Sets the volume of this GroupResponseItem.
 
         :param volume: The volume of this GroupResponseItem.
         :type volume: :class:`huaweicloudsdkdds.v3.Volume`
@@ -178,7 +178,7 @@ class GroupResponseItem:
 
     @property
     def nodes(self):
-        """Gets the nodes of this GroupResponseItem.
+        r"""Gets the nodes of this GroupResponseItem.
 
         节点信息。
 
@@ -189,7 +189,7 @@ class GroupResponseItem:
 
     @nodes.setter
     def nodes(self, nodes):
-        """Sets the nodes of this GroupResponseItem.
+        r"""Sets the nodes of this GroupResponseItem.
 
         节点信息。
 

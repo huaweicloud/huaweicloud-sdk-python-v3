@@ -37,7 +37,7 @@ class ListFlavorsRequest:
     }
 
     def __init__(self, instance_id=None, spec_code=None, cache_mode=None, engine=None, engine_version=None, cpu_type=None, capacity=None):
-        """ListFlavorsRequest
+        r"""ListFlavorsRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListFlavorsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListFlavorsRequest.
+        r"""Gets the instance_id of this ListFlavorsRequest.
 
         缓存实例ID，根据该字段可查询出实例可变更的规格
 
@@ -96,7 +96,7 @@ class ListFlavorsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListFlavorsRequest.
+        r"""Sets the instance_id of this ListFlavorsRequest.
 
         缓存实例ID，根据该字段可查询出实例可变更的规格
 
@@ -107,7 +107,7 @@ class ListFlavorsRequest:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this ListFlavorsRequest.
+        r"""Gets the spec_code of this ListFlavorsRequest.
 
         产品规格编码。
 
@@ -118,7 +118,7 @@ class ListFlavorsRequest:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this ListFlavorsRequest.
+        r"""Sets the spec_code of this ListFlavorsRequest.
 
         产品规格编码。
 
@@ -129,7 +129,7 @@ class ListFlavorsRequest:
 
     @property
     def cache_mode(self):
-        """Gets the cache_mode of this ListFlavorsRequest.
+        r"""Gets the cache_mode of this ListFlavorsRequest.
 
         缓存实例类型。取值范围如下： - single：表示单机实例 - ha：表示主备实例 - cluster：表示cluster集群实例 - proxy：表示Proxy集群实例 - ha_rw_split： 表示读写分离实例 
 
@@ -140,7 +140,7 @@ class ListFlavorsRequest:
 
     @cache_mode.setter
     def cache_mode(self, cache_mode):
-        """Sets the cache_mode of this ListFlavorsRequest.
+        r"""Sets the cache_mode of this ListFlavorsRequest.
 
         缓存实例类型。取值范围如下： - single：表示单机实例 - ha：表示主备实例 - cluster：表示cluster集群实例 - proxy：表示Proxy集群实例 - ha_rw_split： 表示读写分离实例 
 
@@ -151,7 +151,7 @@ class ListFlavorsRequest:
 
     @property
     def engine(self):
-        """Gets the engine of this ListFlavorsRequest.
+        r"""Gets the engine of this ListFlavorsRequest.
 
         缓存引擎类型。取值范围如下： - Redis - Memcached 
 
@@ -162,7 +162,7 @@ class ListFlavorsRequest:
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this ListFlavorsRequest.
+        r"""Sets the engine of this ListFlavorsRequest.
 
         缓存引擎类型。取值范围如下： - Redis - Memcached 
 
@@ -173,7 +173,7 @@ class ListFlavorsRequest:
 
     @property
     def engine_version(self):
-        """Gets the engine_version of this ListFlavorsRequest.
+        r"""Gets the engine_version of this ListFlavorsRequest.
 
         缓存版本，当缓存引擎为Redis时，取值范围如下： - 3.0 - 4.0 - 5.0 
 
@@ -184,7 +184,7 @@ class ListFlavorsRequest:
 
     @engine_version.setter
     def engine_version(self, engine_version):
-        """Sets the engine_version of this ListFlavorsRequest.
+        r"""Sets the engine_version of this ListFlavorsRequest.
 
         缓存版本，当缓存引擎为Redis时，取值范围如下： - 3.0 - 4.0 - 5.0 
 
@@ -195,7 +195,7 @@ class ListFlavorsRequest:
 
     @property
     def cpu_type(self):
-        """Gets the cpu_type of this ListFlavorsRequest.
+        r"""Gets the cpu_type of this ListFlavorsRequest.
 
         CPU架构类型。取值范围如下： - x86_64：X86架构 - aarch64：ARM架构 
 
@@ -206,7 +206,7 @@ class ListFlavorsRequest:
 
     @cpu_type.setter
     def cpu_type(self, cpu_type):
-        """Sets the cpu_type of this ListFlavorsRequest.
+        r"""Sets the cpu_type of this ListFlavorsRequest.
 
         CPU架构类型。取值范围如下： - x86_64：X86架构 - aarch64：ARM架构 
 
@@ -217,7 +217,7 @@ class ListFlavorsRequest:
 
     @property
     def capacity(self):
-        """Gets the capacity of this ListFlavorsRequest.
+        r"""Gets the capacity of this ListFlavorsRequest.
 
         缓存容量（G Byte）。 - Redis3.0：单机和主备类型实例取值：2、4、8、16、32、64。Proxy集群实例规格支持64、128、256、512和1024。 - Redis4.0和Redis5.0：单机和主备类型实例取值：0.125、0.25、0.5、1、2、4、8、16、32、64。Cluster集群实例规格支持24、32、48、64、96、128、192、256、384、512、768、1024。 - Memcached：单机和主备类型实例取值：2、4、8、16、32、64。 
 
@@ -228,7 +228,7 @@ class ListFlavorsRequest:
 
     @capacity.setter
     def capacity(self, capacity):
-        """Sets the capacity of this ListFlavorsRequest.
+        r"""Sets the capacity of this ListFlavorsRequest.
 
         缓存容量（G Byte）。 - Redis3.0：单机和主备类型实例取值：2、4、8、16、32、64。Proxy集群实例规格支持64、128、256、512和1024。 - Redis4.0和Redis5.0：单机和主备类型实例取值：0.125、0.25、0.5、1、2、4、8、16、32、64。Cluster集群实例规格支持24、32、48、64、96、128、192、256、384、512、768、1024。 - Memcached：单机和主备类型实例取值：2、4、8、16、32、64。 
 

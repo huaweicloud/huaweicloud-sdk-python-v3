@@ -29,7 +29,7 @@ class RouteBody:
     }
 
     def __init__(self, cname=None, name=None, servers=None):
-        """RouteBody
+        r"""RouteBody
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class RouteBody:
 
     @property
     def cname(self):
-        """Gets the cname of this RouteBody.
+        r"""Gets the cname of this RouteBody.
 
         WAF集群的cname后缀
 
@@ -68,7 +68,7 @@ class RouteBody:
 
     @cname.setter
     def cname(self, cname):
-        """Sets the cname of this RouteBody.
+        r"""Sets the cname of this RouteBody.
 
         WAF集群的cname后缀
 
@@ -79,7 +79,7 @@ class RouteBody:
 
     @property
     def name(self):
-        """Gets the name of this RouteBody.
+        r"""Gets the name of this RouteBody.
 
         WAF集群名称
 
@@ -90,7 +90,7 @@ class RouteBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RouteBody.
+        r"""Sets the name of this RouteBody.
 
         WAF集群名称
 
@@ -101,7 +101,7 @@ class RouteBody:
 
     @property
     def servers(self):
-        """Gets the servers of this RouteBody.
+        r"""Gets the servers of this RouteBody.
 
         防护域名源站服务器信息列表
 
@@ -112,7 +112,7 @@ class RouteBody:
 
     @servers.setter
     def servers(self, servers):
-        """Sets the servers of this RouteBody.
+        r"""Sets the servers of this RouteBody.
 
         防护域名源站服务器信息列表
 

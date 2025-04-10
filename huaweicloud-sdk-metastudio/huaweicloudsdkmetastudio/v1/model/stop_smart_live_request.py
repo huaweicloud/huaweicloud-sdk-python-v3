@@ -29,7 +29,7 @@ class StopSmartLiveRequest:
     }
 
     def __init__(self, room_id=None, job_id=None, x_app_user_id=None):
-        """StopSmartLiveRequest
+        r"""StopSmartLiveRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class StopSmartLiveRequest:
 
     @property
     def room_id(self):
-        """Gets the room_id of this StopSmartLiveRequest.
+        r"""Gets the room_id of this StopSmartLiveRequest.
 
         直播间ID。
 
@@ -66,7 +66,7 @@ class StopSmartLiveRequest:
 
     @room_id.setter
     def room_id(self, room_id):
-        """Sets the room_id of this StopSmartLiveRequest.
+        r"""Sets the room_id of this StopSmartLiveRequest.
 
         直播间ID。
 
@@ -77,7 +77,7 @@ class StopSmartLiveRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this StopSmartLiveRequest.
+        r"""Gets the job_id of this StopSmartLiveRequest.
 
         任务ID。
 
@@ -88,7 +88,7 @@ class StopSmartLiveRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this StopSmartLiveRequest.
+        r"""Sets the job_id of this StopSmartLiveRequest.
 
         任务ID。
 
@@ -99,7 +99,7 @@ class StopSmartLiveRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this StopSmartLiveRequest.
+        r"""Gets the x_app_user_id of this StopSmartLiveRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -110,7 +110,7 @@ class StopSmartLiveRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this StopSmartLiveRequest.
+        r"""Sets the x_app_user_id of this StopSmartLiveRequest.
 
         第三方用户ID。不允许输入中文。
 

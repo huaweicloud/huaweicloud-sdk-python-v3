@@ -31,7 +31,7 @@ class IntellectualPropertyV2:
     }
 
     def __init__(self, ip_type=None, ip_area=None, ip_number=None, ip_content=None):
-        """IntellectualPropertyV2
+        r"""IntellectualPropertyV2
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class IntellectualPropertyV2:
 
     @property
     def ip_type(self):
-        """Gets the ip_type of this IntellectualPropertyV2.
+        r"""Gets the ip_type of this IntellectualPropertyV2.
 
         知识产权类型,分：著作权-copyright、商标权-trademark、专利权-patent
 
@@ -75,7 +75,7 @@ class IntellectualPropertyV2:
 
     @ip_type.setter
     def ip_type(self, ip_type):
-        """Sets the ip_type of this IntellectualPropertyV2.
+        r"""Sets the ip_type of this IntellectualPropertyV2.
 
         知识产权类型,分：著作权-copyright、商标权-trademark、专利权-patent
 
@@ -86,7 +86,7 @@ class IntellectualPropertyV2:
 
     @property
     def ip_area(self):
-        """Gets the ip_area of this IntellectualPropertyV2.
+        r"""Gets the ip_area of this IntellectualPropertyV2.
 
         知识产权注册国家/地区
 
@@ -97,7 +97,7 @@ class IntellectualPropertyV2:
 
     @ip_area.setter
     def ip_area(self, ip_area):
-        """Sets the ip_area of this IntellectualPropertyV2.
+        r"""Sets the ip_area of this IntellectualPropertyV2.
 
         知识产权注册国家/地区
 
@@ -108,7 +108,7 @@ class IntellectualPropertyV2:
 
     @property
     def ip_number(self):
-        """Gets the ip_number of this IntellectualPropertyV2.
+        r"""Gets the ip_number of this IntellectualPropertyV2.
 
         商标注册号/专利申请号
 
@@ -119,7 +119,7 @@ class IntellectualPropertyV2:
 
     @ip_number.setter
     def ip_number(self, ip_number):
-        """Sets the ip_number of this IntellectualPropertyV2.
+        r"""Sets the ip_number of this IntellectualPropertyV2.
 
         商标注册号/专利申请号
 
@@ -130,7 +130,7 @@ class IntellectualPropertyV2:
 
     @property
     def ip_content(self):
-        """Gets the ip_content of this IntellectualPropertyV2.
+        r"""Gets the ip_content of this IntellectualPropertyV2.
 
         知识产权情况简述
 
@@ -141,7 +141,7 @@ class IntellectualPropertyV2:
 
     @ip_content.setter
     def ip_content(self, ip_content):
-        """Sets the ip_content of this IntellectualPropertyV2.
+        r"""Sets the ip_content of this IntellectualPropertyV2.
 
         知识产权情况简述
 

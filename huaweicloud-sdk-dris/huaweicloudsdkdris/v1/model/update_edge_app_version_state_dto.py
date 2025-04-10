@@ -25,7 +25,7 @@ class UpdateEdgeAppVersionStateDTO:
     }
 
     def __init__(self, state=None):
-        """UpdateEdgeAppVersionStateDTO
+        r"""UpdateEdgeAppVersionStateDTO
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateEdgeAppVersionStateDTO:
 
     @property
     def state(self):
-        """Gets the state of this UpdateEdgeAppVersionStateDTO.
+        r"""Gets the state of this UpdateEdgeAppVersionStateDTO.
 
         **参数说明**：应用版本状态。  **取值范围**：  - PUBLISHED：发布  - OFF_SHELF：下线
 
@@ -54,7 +54,7 @@ class UpdateEdgeAppVersionStateDTO:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this UpdateEdgeAppVersionStateDTO.
+        r"""Sets the state of this UpdateEdgeAppVersionStateDTO.
 
         **参数说明**：应用版本状态。  **取值范围**：  - PUBLISHED：发布  - OFF_SHELF：下线
 

@@ -27,7 +27,7 @@ class FrontPoint:
     }
 
     def __init__(self, time=None, value=None):
-        """FrontPoint
+        r"""FrontPoint
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class FrontPoint:
 
     @property
     def time(self):
-        """Gets the time of this FrontPoint.
+        r"""Gets the time of this FrontPoint.
 
         时间。
 
@@ -61,7 +61,7 @@ class FrontPoint:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this FrontPoint.
+        r"""Sets the time of this FrontPoint.
 
         时间。
 
@@ -72,7 +72,7 @@ class FrontPoint:
 
     @property
     def value(self):
-        """Gets the value of this FrontPoint.
+        r"""Gets the value of this FrontPoint.
 
         值。
 
@@ -83,7 +83,7 @@ class FrontPoint:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this FrontPoint.
+        r"""Sets the value of this FrontPoint.
 
         值。
 

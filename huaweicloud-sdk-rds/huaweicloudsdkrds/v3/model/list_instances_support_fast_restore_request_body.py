@@ -27,7 +27,7 @@ class ListInstancesSupportFastRestoreRequestBody:
     }
 
     def __init__(self, restore_time=None, instance_ids=None):
-        """ListInstancesSupportFastRestoreRequestBody
+        r"""ListInstancesSupportFastRestoreRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListInstancesSupportFastRestoreRequestBody:
 
     @property
     def restore_time(self):
-        """Gets the restore_time of this ListInstancesSupportFastRestoreRequestBody.
+        r"""Gets the restore_time of this ListInstancesSupportFastRestoreRequestBody.
 
         要恢复的时间点，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -59,7 +59,7 @@ class ListInstancesSupportFastRestoreRequestBody:
 
     @restore_time.setter
     def restore_time(self, restore_time):
-        """Sets the restore_time of this ListInstancesSupportFastRestoreRequestBody.
+        r"""Sets the restore_time of this ListInstancesSupportFastRestoreRequestBody.
 
         要恢复的时间点，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -70,7 +70,7 @@ class ListInstancesSupportFastRestoreRequestBody:
 
     @property
     def instance_ids(self):
-        """Gets the instance_ids of this ListInstancesSupportFastRestoreRequestBody.
+        r"""Gets the instance_ids of this ListInstancesSupportFastRestoreRequestBody.
 
         实例id列表。
 
@@ -81,7 +81,7 @@ class ListInstancesSupportFastRestoreRequestBody:
 
     @instance_ids.setter
     def instance_ids(self, instance_ids):
-        """Sets the instance_ids of this ListInstancesSupportFastRestoreRequestBody.
+        r"""Sets the instance_ids of this ListInstancesSupportFastRestoreRequestBody.
 
         实例id列表。
 

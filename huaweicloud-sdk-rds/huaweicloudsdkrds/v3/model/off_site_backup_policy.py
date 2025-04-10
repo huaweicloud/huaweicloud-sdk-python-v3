@@ -31,7 +31,7 @@ class OffSiteBackupPolicy:
     }
 
     def __init__(self, backup_type=None, keep_days=None, destination_region=None, destination_project_id=None):
-        """OffSiteBackupPolicy
+        r"""OffSiteBackupPolicy
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class OffSiteBackupPolicy:
 
     @property
     def backup_type(self):
-        """Gets the backup_type of this OffSiteBackupPolicy.
+        r"""Gets the backup_type of this OffSiteBackupPolicy.
 
         指定备份的类型。  SQL Server仅支持设置为“all”。  取值如下：  - auto：自动全量备份。 - incremental：自动增量备份。 - all：同时设置所有备份类型。   - MySQL：同时设置自动全量和自动增量备份。   - SQL Server：同时设置自动全量、自动增量备份和手动备份。
 
@@ -71,7 +71,7 @@ class OffSiteBackupPolicy:
 
     @backup_type.setter
     def backup_type(self, backup_type):
-        """Sets the backup_type of this OffSiteBackupPolicy.
+        r"""Sets the backup_type of this OffSiteBackupPolicy.
 
         指定备份的类型。  SQL Server仅支持设置为“all”。  取值如下：  - auto：自动全量备份。 - incremental：自动增量备份。 - all：同时设置所有备份类型。   - MySQL：同时设置自动全量和自动增量备份。   - SQL Server：同时设置自动全量、自动增量备份和手动备份。
 
@@ -82,7 +82,7 @@ class OffSiteBackupPolicy:
 
     @property
     def keep_days(self):
-        """Gets the keep_days of this OffSiteBackupPolicy.
+        r"""Gets the keep_days of this OffSiteBackupPolicy.
 
         备份文件可以保存的天数。
 
@@ -93,7 +93,7 @@ class OffSiteBackupPolicy:
 
     @keep_days.setter
     def keep_days(self, keep_days):
-        """Sets the keep_days of this OffSiteBackupPolicy.
+        r"""Sets the keep_days of this OffSiteBackupPolicy.
 
         备份文件可以保存的天数。
 
@@ -104,7 +104,7 @@ class OffSiteBackupPolicy:
 
     @property
     def destination_region(self):
-        """Gets the destination_region of this OffSiteBackupPolicy.
+        r"""Gets the destination_region of this OffSiteBackupPolicy.
 
         设置跨区域备份策略的目标区域ID。
 
@@ -115,7 +115,7 @@ class OffSiteBackupPolicy:
 
     @destination_region.setter
     def destination_region(self, destination_region):
-        """Sets the destination_region of this OffSiteBackupPolicy.
+        r"""Sets the destination_region of this OffSiteBackupPolicy.
 
         设置跨区域备份策略的目标区域ID。
 
@@ -126,7 +126,7 @@ class OffSiteBackupPolicy:
 
     @property
     def destination_project_id(self):
-        """Gets the destination_project_id of this OffSiteBackupPolicy.
+        r"""Gets the destination_project_id of this OffSiteBackupPolicy.
 
         设置跨区域备份策略的目标project ID。
 
@@ -137,7 +137,7 @@ class OffSiteBackupPolicy:
 
     @destination_project_id.setter
     def destination_project_id(self, destination_project_id):
-        """Sets the destination_project_id of this OffSiteBackupPolicy.
+        r"""Sets the destination_project_id of this OffSiteBackupPolicy.
 
         设置跨区域备份策略的目标project ID。
 

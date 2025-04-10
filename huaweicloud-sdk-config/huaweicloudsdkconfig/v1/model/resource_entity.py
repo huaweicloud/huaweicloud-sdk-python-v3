@@ -55,7 +55,7 @@ class ResourceEntity:
     }
 
     def __init__(self, id=None, name=None, provider=None, type=None, region_id=None, project_id=None, project_name=None, ep_id=None, ep_name=None, checksum=None, created=None, updated=None, provisioning_state=None, tags=None, properties=None, state=None):
-        """ResourceEntity
+        r"""ResourceEntity
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class ResourceEntity:
 
     @property
     def id(self):
-        """Gets the id of this ResourceEntity.
+        r"""Gets the id of this ResourceEntity.
 
         资源id
 
@@ -159,7 +159,7 @@ class ResourceEntity:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ResourceEntity.
+        r"""Sets the id of this ResourceEntity.
 
         资源id
 
@@ -170,7 +170,7 @@ class ResourceEntity:
 
     @property
     def name(self):
-        """Gets the name of this ResourceEntity.
+        r"""Gets the name of this ResourceEntity.
 
         资源名称
 
@@ -181,7 +181,7 @@ class ResourceEntity:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ResourceEntity.
+        r"""Sets the name of this ResourceEntity.
 
         资源名称
 
@@ -192,7 +192,7 @@ class ResourceEntity:
 
     @property
     def provider(self):
-        """Gets the provider of this ResourceEntity.
+        r"""Gets the provider of this ResourceEntity.
 
         云服务名称
 
@@ -203,7 +203,7 @@ class ResourceEntity:
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this ResourceEntity.
+        r"""Sets the provider of this ResourceEntity.
 
         云服务名称
 
@@ -214,7 +214,7 @@ class ResourceEntity:
 
     @property
     def type(self):
-        """Gets the type of this ResourceEntity.
+        r"""Gets the type of this ResourceEntity.
 
         资源类型
 
@@ -225,7 +225,7 @@ class ResourceEntity:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ResourceEntity.
+        r"""Sets the type of this ResourceEntity.
 
         资源类型
 
@@ -236,7 +236,7 @@ class ResourceEntity:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ResourceEntity.
+        r"""Gets the region_id of this ResourceEntity.
 
         区域id
 
@@ -247,7 +247,7 @@ class ResourceEntity:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ResourceEntity.
+        r"""Sets the region_id of this ResourceEntity.
 
         区域id
 
@@ -258,7 +258,7 @@ class ResourceEntity:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ResourceEntity.
+        r"""Gets the project_id of this ResourceEntity.
 
         Openstack中的项目id
 
@@ -269,7 +269,7 @@ class ResourceEntity:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ResourceEntity.
+        r"""Sets the project_id of this ResourceEntity.
 
         Openstack中的项目id
 
@@ -280,7 +280,7 @@ class ResourceEntity:
 
     @property
     def project_name(self):
-        """Gets the project_name of this ResourceEntity.
+        r"""Gets the project_name of this ResourceEntity.
 
         Openstack中的项目名称
 
@@ -291,7 +291,7 @@ class ResourceEntity:
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this ResourceEntity.
+        r"""Sets the project_name of this ResourceEntity.
 
         Openstack中的项目名称
 
@@ -302,7 +302,7 @@ class ResourceEntity:
 
     @property
     def ep_id(self):
-        """Gets the ep_id of this ResourceEntity.
+        r"""Gets the ep_id of this ResourceEntity.
 
         企业项目id
 
@@ -313,7 +313,7 @@ class ResourceEntity:
 
     @ep_id.setter
     def ep_id(self, ep_id):
-        """Sets the ep_id of this ResourceEntity.
+        r"""Sets the ep_id of this ResourceEntity.
 
         企业项目id
 
@@ -324,7 +324,7 @@ class ResourceEntity:
 
     @property
     def ep_name(self):
-        """Gets the ep_name of this ResourceEntity.
+        r"""Gets the ep_name of this ResourceEntity.
 
         企业项目名称
 
@@ -335,7 +335,7 @@ class ResourceEntity:
 
     @ep_name.setter
     def ep_name(self, ep_name):
-        """Sets the ep_name of this ResourceEntity.
+        r"""Sets the ep_name of this ResourceEntity.
 
         企业项目名称
 
@@ -346,7 +346,7 @@ class ResourceEntity:
 
     @property
     def checksum(self):
-        """Gets the checksum of this ResourceEntity.
+        r"""Gets the checksum of this ResourceEntity.
 
         资源详情校验码
 
@@ -357,7 +357,7 @@ class ResourceEntity:
 
     @checksum.setter
     def checksum(self, checksum):
-        """Sets the checksum of this ResourceEntity.
+        r"""Sets the checksum of this ResourceEntity.
 
         资源详情校验码
 
@@ -368,7 +368,7 @@ class ResourceEntity:
 
     @property
     def created(self):
-        """Gets the created of this ResourceEntity.
+        r"""Gets the created of this ResourceEntity.
 
         资源创建时间
 
@@ -379,7 +379,7 @@ class ResourceEntity:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this ResourceEntity.
+        r"""Sets the created of this ResourceEntity.
 
         资源创建时间
 
@@ -390,7 +390,7 @@ class ResourceEntity:
 
     @property
     def updated(self):
-        """Gets the updated of this ResourceEntity.
+        r"""Gets the updated of this ResourceEntity.
 
         资源更新时间
 
@@ -401,7 +401,7 @@ class ResourceEntity:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ResourceEntity.
+        r"""Sets the updated of this ResourceEntity.
 
         资源更新时间
 
@@ -412,7 +412,7 @@ class ResourceEntity:
 
     @property
     def provisioning_state(self):
-        """Gets the provisioning_state of this ResourceEntity.
+        r"""Gets the provisioning_state of this ResourceEntity.
 
         资源操作状态
 
@@ -423,7 +423,7 @@ class ResourceEntity:
 
     @provisioning_state.setter
     def provisioning_state(self, provisioning_state):
-        """Sets the provisioning_state of this ResourceEntity.
+        r"""Sets the provisioning_state of this ResourceEntity.
 
         资源操作状态
 
@@ -434,7 +434,7 @@ class ResourceEntity:
 
     @property
     def tags(self):
-        """Gets the tags of this ResourceEntity.
+        r"""Gets the tags of this ResourceEntity.
 
         资源Tag
 
@@ -445,7 +445,7 @@ class ResourceEntity:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ResourceEntity.
+        r"""Sets the tags of this ResourceEntity.
 
         资源Tag
 
@@ -456,7 +456,7 @@ class ResourceEntity:
 
     @property
     def properties(self):
-        """Gets the properties of this ResourceEntity.
+        r"""Gets the properties of this ResourceEntity.
 
         资源详细属性
 
@@ -467,7 +467,7 @@ class ResourceEntity:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this ResourceEntity.
+        r"""Sets the properties of this ResourceEntity.
 
         资源详细属性
 
@@ -478,7 +478,7 @@ class ResourceEntity:
 
     @property
     def state(self):
-        """Gets the state of this ResourceEntity.
+        r"""Gets the state of this ResourceEntity.
 
         资源状态，保有中（Normal）/已删除(Deleted)
 
@@ -489,7 +489,7 @@ class ResourceEntity:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ResourceEntity.
+        r"""Sets the state of this ResourceEntity.
 
         资源状态，保有中（Normal）/已删除(Deleted)
 

@@ -32,7 +32,7 @@ class ListStreamsResponse(SdkResponse):
     }
 
     def __init__(self, total_number=None, stream_names=None, has_more_streams=None, stream_info_list=None):
-        """ListStreamsResponse
+        r"""ListStreamsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListStreamsResponse(SdkResponse):
 
     @property
     def total_number(self):
-        """Gets the total_number of this ListStreamsResponse.
+        r"""Gets the total_number of this ListStreamsResponse.
 
         当前租户所有通道数量。
 
@@ -76,7 +76,7 @@ class ListStreamsResponse(SdkResponse):
 
     @total_number.setter
     def total_number(self, total_number):
-        """Sets the total_number of this ListStreamsResponse.
+        r"""Sets the total_number of this ListStreamsResponse.
 
         当前租户所有通道数量。
 
@@ -87,7 +87,7 @@ class ListStreamsResponse(SdkResponse):
 
     @property
     def stream_names(self):
-        """Gets the stream_names of this ListStreamsResponse.
+        r"""Gets the stream_names of this ListStreamsResponse.
 
         满足当前请求条件的通道名称的列表。
 
@@ -98,7 +98,7 @@ class ListStreamsResponse(SdkResponse):
 
     @stream_names.setter
     def stream_names(self, stream_names):
-        """Sets the stream_names of this ListStreamsResponse.
+        r"""Sets the stream_names of this ListStreamsResponse.
 
         满足当前请求条件的通道名称的列表。
 
@@ -109,7 +109,7 @@ class ListStreamsResponse(SdkResponse):
 
     @property
     def has_more_streams(self):
-        """Gets the has_more_streams of this ListStreamsResponse.
+        r"""Gets the has_more_streams of this ListStreamsResponse.
 
         是否还有更多满足条件的通道。  - true：是 - false：否
 
@@ -120,7 +120,7 @@ class ListStreamsResponse(SdkResponse):
 
     @has_more_streams.setter
     def has_more_streams(self, has_more_streams):
-        """Sets the has_more_streams of this ListStreamsResponse.
+        r"""Sets the has_more_streams of this ListStreamsResponse.
 
         是否还有更多满足条件的通道。  - true：是 - false：否
 
@@ -131,7 +131,7 @@ class ListStreamsResponse(SdkResponse):
 
     @property
     def stream_info_list(self):
-        """Gets the stream_info_list of this ListStreamsResponse.
+        r"""Gets the stream_info_list of this ListStreamsResponse.
 
         通道列表详情。
 
@@ -142,7 +142,7 @@ class ListStreamsResponse(SdkResponse):
 
     @stream_info_list.setter
     def stream_info_list(self, stream_info_list):
-        """Sets the stream_info_list of this ListStreamsResponse.
+        r"""Sets the stream_info_list of this ListStreamsResponse.
 
         通道列表详情。
 

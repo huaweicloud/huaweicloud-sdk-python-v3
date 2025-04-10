@@ -27,7 +27,7 @@ class ServerlessInfoResponse:
     }
 
     def __init__(self, min_compute_unit=None, max_compute_unit=None):
-        """ServerlessInfoResponse
+        r"""ServerlessInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ServerlessInfoResponse:
 
     @property
     def min_compute_unit(self):
-        """Gets the min_compute_unit of this ServerlessInfoResponse.
+        r"""Gets the min_compute_unit of this ServerlessInfoResponse.
 
         Serverless型实例的算力范围最小值。取值范围：0.5 ~ 8，单位：RCU。
 
@@ -59,7 +59,7 @@ class ServerlessInfoResponse:
 
     @min_compute_unit.setter
     def min_compute_unit(self, min_compute_unit):
-        """Sets the min_compute_unit of this ServerlessInfoResponse.
+        r"""Sets the min_compute_unit of this ServerlessInfoResponse.
 
         Serverless型实例的算力范围最小值。取值范围：0.5 ~ 8，单位：RCU。
 
@@ -70,7 +70,7 @@ class ServerlessInfoResponse:
 
     @property
     def max_compute_unit(self):
-        """Gets the max_compute_unit of this ServerlessInfoResponse.
+        r"""Gets the max_compute_unit of this ServerlessInfoResponse.
 
         Serverless型实例的算力范围最大值。取值范围：0.5 ~ 8，单位：RCU。
 
@@ -81,7 +81,7 @@ class ServerlessInfoResponse:
 
     @max_compute_unit.setter
     def max_compute_unit(self, max_compute_unit):
-        """Sets the max_compute_unit of this ServerlessInfoResponse.
+        r"""Sets the max_compute_unit of this ServerlessInfoResponse.
 
         Serverless型实例的算力范围最大值。取值范围：0.5 ~ 8，单位：RCU。
 

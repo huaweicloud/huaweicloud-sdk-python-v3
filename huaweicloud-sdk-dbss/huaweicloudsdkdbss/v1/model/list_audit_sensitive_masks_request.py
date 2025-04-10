@@ -29,7 +29,7 @@ class ListAuditSensitiveMasksRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None):
-        """ListAuditSensitiveMasksRequest
+        r"""ListAuditSensitiveMasksRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListAuditSensitiveMasksRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListAuditSensitiveMasksRequest.
+        r"""Gets the instance_id of this ListAuditSensitiveMasksRequest.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 
@@ -67,7 +67,7 @@ class ListAuditSensitiveMasksRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListAuditSensitiveMasksRequest.
+        r"""Sets the instance_id of this ListAuditSensitiveMasksRequest.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 
@@ -78,7 +78,7 @@ class ListAuditSensitiveMasksRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAuditSensitiveMasksRequest.
+        r"""Gets the offset of this ListAuditSensitiveMasksRequest.
 
         偏移量
 
@@ -89,7 +89,7 @@ class ListAuditSensitiveMasksRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAuditSensitiveMasksRequest.
+        r"""Sets the offset of this ListAuditSensitiveMasksRequest.
 
         偏移量
 
@@ -100,7 +100,7 @@ class ListAuditSensitiveMasksRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAuditSensitiveMasksRequest.
+        r"""Gets the limit of this ListAuditSensitiveMasksRequest.
 
         查询记录数
 
@@ -111,7 +111,7 @@ class ListAuditSensitiveMasksRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAuditSensitiveMasksRequest.
+        r"""Sets the limit of this ListAuditSensitiveMasksRequest.
 
         查询记录数
 

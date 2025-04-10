@@ -33,7 +33,7 @@ class QuotaInvoiceResult:
     }
 
     def __init__(self, number=None, code=None, location=None, amount=None, confidence=None):
-        """QuotaInvoiceResult
+        r"""QuotaInvoiceResult
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class QuotaInvoiceResult:
 
     @property
     def number(self):
-        """Gets the number of this QuotaInvoiceResult.
+        r"""Gets the number of this QuotaInvoiceResult.
 
         发票号码。 
 
@@ -82,7 +82,7 @@ class QuotaInvoiceResult:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this QuotaInvoiceResult.
+        r"""Sets the number of this QuotaInvoiceResult.
 
         发票号码。 
 
@@ -93,7 +93,7 @@ class QuotaInvoiceResult:
 
     @property
     def code(self):
-        """Gets the code of this QuotaInvoiceResult.
+        r"""Gets the code of this QuotaInvoiceResult.
 
         发票代码。 
 
@@ -104,7 +104,7 @@ class QuotaInvoiceResult:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this QuotaInvoiceResult.
+        r"""Sets the code of this QuotaInvoiceResult.
 
         发票代码。 
 
@@ -115,7 +115,7 @@ class QuotaInvoiceResult:
 
     @property
     def location(self):
-        """Gets the location of this QuotaInvoiceResult.
+        r"""Gets the location of this QuotaInvoiceResult.
 
         地址。 
 
@@ -126,7 +126,7 @@ class QuotaInvoiceResult:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this QuotaInvoiceResult.
+        r"""Sets the location of this QuotaInvoiceResult.
 
         地址。 
 
@@ -137,7 +137,7 @@ class QuotaInvoiceResult:
 
     @property
     def amount(self):
-        """Gets the amount of this QuotaInvoiceResult.
+        r"""Gets the amount of this QuotaInvoiceResult.
 
         发票金额。 
 
@@ -148,7 +148,7 @@ class QuotaInvoiceResult:
 
     @amount.setter
     def amount(self, amount):
-        """Sets the amount of this QuotaInvoiceResult.
+        r"""Sets the amount of this QuotaInvoiceResult.
 
         发票金额。 
 
@@ -159,7 +159,7 @@ class QuotaInvoiceResult:
 
     @property
     def confidence(self):
-        """Gets the confidence of this QuotaInvoiceResult.
+        r"""Gets the confidence of this QuotaInvoiceResult.
 
         相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。
 
@@ -170,7 +170,7 @@ class QuotaInvoiceResult:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this QuotaInvoiceResult.
+        r"""Sets the confidence of this QuotaInvoiceResult.
 
         相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。
 

@@ -29,7 +29,7 @@ class SelectDbTableObjectInfo:
     }
 
     def __init__(self, db_name=None, schema_name=None, table_name=None):
-        """SelectDbTableObjectInfo
+        r"""SelectDbTableObjectInfo
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class SelectDbTableObjectInfo:
 
     @property
     def db_name(self):
-        """Gets the db_name of this SelectDbTableObjectInfo.
+        r"""Gets the db_name of this SelectDbTableObjectInfo.
 
         数据库名称。
 
@@ -66,7 +66,7 @@ class SelectDbTableObjectInfo:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this SelectDbTableObjectInfo.
+        r"""Sets the db_name of this SelectDbTableObjectInfo.
 
         数据库名称。
 
@@ -77,7 +77,7 @@ class SelectDbTableObjectInfo:
 
     @property
     def schema_name(self):
-        """Gets the schema_name of this SelectDbTableObjectInfo.
+        r"""Gets the schema_name of this SelectDbTableObjectInfo.
 
         数据库schema名称。
 
@@ -88,7 +88,7 @@ class SelectDbTableObjectInfo:
 
     @schema_name.setter
     def schema_name(self, schema_name):
-        """Sets the schema_name of this SelectDbTableObjectInfo.
+        r"""Sets the schema_name of this SelectDbTableObjectInfo.
 
         数据库schema名称。
 
@@ -99,7 +99,7 @@ class SelectDbTableObjectInfo:
 
     @property
     def table_name(self):
-        """Gets the table_name of this SelectDbTableObjectInfo.
+        r"""Gets the table_name of this SelectDbTableObjectInfo.
 
         数据库表名称。
 
@@ -110,7 +110,7 @@ class SelectDbTableObjectInfo:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this SelectDbTableObjectInfo.
+        r"""Sets the table_name of this SelectDbTableObjectInfo.
 
         数据库表名称。
 

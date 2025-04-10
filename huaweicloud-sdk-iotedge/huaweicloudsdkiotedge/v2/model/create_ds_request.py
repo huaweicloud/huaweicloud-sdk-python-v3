@@ -27,7 +27,7 @@ class CreateDsRequest:
     }
 
     def __init__(self, edge_node_id=None, body=None):
-        """CreateDsRequest
+        r"""CreateDsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateDsRequest:
 
     @property
     def edge_node_id(self):
-        """Gets the edge_node_id of this CreateDsRequest.
+        r"""Gets the edge_node_id of this CreateDsRequest.
 
         边缘节点ID
 
@@ -60,7 +60,7 @@ class CreateDsRequest:
 
     @edge_node_id.setter
     def edge_node_id(self, edge_node_id):
-        """Sets the edge_node_id of this CreateDsRequest.
+        r"""Sets the edge_node_id of this CreateDsRequest.
 
         边缘节点ID
 
@@ -71,7 +71,7 @@ class CreateDsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDsRequest.
+        r"""Gets the body of this CreateDsRequest.
 
         :return: The body of this CreateDsRequest.
         :rtype: :class:`huaweicloudsdkiotedge.v2.CreateDcDsReqDTO`
@@ -80,7 +80,7 @@ class CreateDsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDsRequest.
+        r"""Sets the body of this CreateDsRequest.
 
         :param body: The body of this CreateDsRequest.
         :type body: :class:`huaweicloudsdkiotedge.v2.CreateDcDsReqDTO`

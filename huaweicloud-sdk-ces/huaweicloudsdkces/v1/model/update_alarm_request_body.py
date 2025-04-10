@@ -41,7 +41,7 @@ class UpdateAlarmRequestBody:
     }
 
     def __init__(self, alarm_name=None, alarm_description=None, condition=None, alarm_action_enabled=None, alarm_level=None, alarm_type=None, alarm_actions=None, insufficientdata_actions=None, ok_actions=None):
-        """UpdateAlarmRequestBody
+        r"""UpdateAlarmRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class UpdateAlarmRequestBody:
 
     @property
     def alarm_name(self):
-        """Gets the alarm_name of this UpdateAlarmRequestBody.
+        r"""Gets the alarm_name of this UpdateAlarmRequestBody.
 
         告警名称，只能包含0-9/a-z/A-Z/_/-或汉字。
 
@@ -110,7 +110,7 @@ class UpdateAlarmRequestBody:
 
     @alarm_name.setter
     def alarm_name(self, alarm_name):
-        """Sets the alarm_name of this UpdateAlarmRequestBody.
+        r"""Sets the alarm_name of this UpdateAlarmRequestBody.
 
         告警名称，只能包含0-9/a-z/A-Z/_/-或汉字。
 
@@ -121,7 +121,7 @@ class UpdateAlarmRequestBody:
 
     @property
     def alarm_description(self):
-        """Gets the alarm_description of this UpdateAlarmRequestBody.
+        r"""Gets the alarm_description of this UpdateAlarmRequestBody.
 
         告警描述，长度0-256。
 
@@ -132,7 +132,7 @@ class UpdateAlarmRequestBody:
 
     @alarm_description.setter
     def alarm_description(self, alarm_description):
-        """Sets the alarm_description of this UpdateAlarmRequestBody.
+        r"""Sets the alarm_description of this UpdateAlarmRequestBody.
 
         告警描述，长度0-256。
 
@@ -143,7 +143,7 @@ class UpdateAlarmRequestBody:
 
     @property
     def condition(self):
-        """Gets the condition of this UpdateAlarmRequestBody.
+        r"""Gets the condition of this UpdateAlarmRequestBody.
 
         :return: The condition of this UpdateAlarmRequestBody.
         :rtype: :class:`huaweicloudsdkces.v1.Condition`
@@ -152,7 +152,7 @@ class UpdateAlarmRequestBody:
 
     @condition.setter
     def condition(self, condition):
-        """Sets the condition of this UpdateAlarmRequestBody.
+        r"""Sets the condition of this UpdateAlarmRequestBody.
 
         :param condition: The condition of this UpdateAlarmRequestBody.
         :type condition: :class:`huaweicloudsdkces.v1.Condition`
@@ -161,7 +161,7 @@ class UpdateAlarmRequestBody:
 
     @property
     def alarm_action_enabled(self):
-        """Gets the alarm_action_enabled of this UpdateAlarmRequestBody.
+        r"""Gets the alarm_action_enabled of this UpdateAlarmRequestBody.
 
         是否启用该条告警触发的动作，默认为true。注：若alarm_action_enabled为true，对应的alarm_actions、ok_actions至少有一个不能为空。若alarm_actions、ok_actions同时存在时，notificationList值保持一致。
 
@@ -172,7 +172,7 @@ class UpdateAlarmRequestBody:
 
     @alarm_action_enabled.setter
     def alarm_action_enabled(self, alarm_action_enabled):
-        """Sets the alarm_action_enabled of this UpdateAlarmRequestBody.
+        r"""Sets the alarm_action_enabled of this UpdateAlarmRequestBody.
 
         是否启用该条告警触发的动作，默认为true。注：若alarm_action_enabled为true，对应的alarm_actions、ok_actions至少有一个不能为空。若alarm_actions、ok_actions同时存在时，notificationList值保持一致。
 
@@ -183,7 +183,7 @@ class UpdateAlarmRequestBody:
 
     @property
     def alarm_level(self):
-        """Gets the alarm_level of this UpdateAlarmRequestBody.
+        r"""Gets the alarm_level of this UpdateAlarmRequestBody.
 
         告警级别，默认为2，级别为1、2、3、4。分别对应紧急、重要、次要、提示。
 
@@ -194,7 +194,7 @@ class UpdateAlarmRequestBody:
 
     @alarm_level.setter
     def alarm_level(self, alarm_level):
-        """Sets the alarm_level of this UpdateAlarmRequestBody.
+        r"""Sets the alarm_level of this UpdateAlarmRequestBody.
 
         告警级别，默认为2，级别为1、2、3、4。分别对应紧急、重要、次要、提示。
 
@@ -205,7 +205,7 @@ class UpdateAlarmRequestBody:
 
     @property
     def alarm_type(self):
-        """Gets the alarm_type of this UpdateAlarmRequestBody.
+        r"""Gets the alarm_type of this UpdateAlarmRequestBody.
 
         告警类型，支持的枚举类型：EVENT.SYS：针对系统事件的告警规则；EVENT.CUSTOM：针对自定义事件的告警规则；RESOURCE_GROUP：针对资源分组的告警规则。
 
@@ -216,7 +216,7 @@ class UpdateAlarmRequestBody:
 
     @alarm_type.setter
     def alarm_type(self, alarm_type):
-        """Sets the alarm_type of this UpdateAlarmRequestBody.
+        r"""Sets the alarm_type of this UpdateAlarmRequestBody.
 
         告警类型，支持的枚举类型：EVENT.SYS：针对系统事件的告警规则；EVENT.CUSTOM：针对自定义事件的告警规则；RESOURCE_GROUP：针对资源分组的告警规则。
 
@@ -227,7 +227,7 @@ class UpdateAlarmRequestBody:
 
     @property
     def alarm_actions(self):
-        """Gets the alarm_actions of this UpdateAlarmRequestBody.
+        r"""Gets the alarm_actions of this UpdateAlarmRequestBody.
 
         告警触发的动作。 结构样例如下： { \"type\": \"notification\",\"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"] } type取值： notification：通知。 autoscaling：弹性伸缩。
 
@@ -238,7 +238,7 @@ class UpdateAlarmRequestBody:
 
     @alarm_actions.setter
     def alarm_actions(self, alarm_actions):
-        """Sets the alarm_actions of this UpdateAlarmRequestBody.
+        r"""Sets the alarm_actions of this UpdateAlarmRequestBody.
 
         告警触发的动作。 结构样例如下： { \"type\": \"notification\",\"notificationList\": [\"urn:smn:southchina:68438a86d98e427e907e0097b7e35d47:sd\"] } type取值： notification：通知。 autoscaling：弹性伸缩。
 
@@ -249,7 +249,7 @@ class UpdateAlarmRequestBody:
 
     @property
     def insufficientdata_actions(self):
-        """Gets the insufficientdata_actions of this UpdateAlarmRequestBody.
+        r"""Gets the insufficientdata_actions of this UpdateAlarmRequestBody.
 
         数据不足触发的动作（该参数已废弃，建议无需配置）。
 
@@ -260,7 +260,7 @@ class UpdateAlarmRequestBody:
 
     @insufficientdata_actions.setter
     def insufficientdata_actions(self, insufficientdata_actions):
-        """Sets the insufficientdata_actions of this UpdateAlarmRequestBody.
+        r"""Sets the insufficientdata_actions of this UpdateAlarmRequestBody.
 
         数据不足触发的动作（该参数已废弃，建议无需配置）。
 
@@ -271,7 +271,7 @@ class UpdateAlarmRequestBody:
 
     @property
     def ok_actions(self):
-        """Gets the ok_actions of this UpdateAlarmRequestBody.
+        r"""Gets the ok_actions of this UpdateAlarmRequestBody.
 
         告警恢复触发的动作
 
@@ -282,7 +282,7 @@ class UpdateAlarmRequestBody:
 
     @ok_actions.setter
     def ok_actions(self, ok_actions):
-        """Sets the ok_actions of this UpdateAlarmRequestBody.
+        r"""Sets the ok_actions of this UpdateAlarmRequestBody.
 
         告警恢复触发的动作
 

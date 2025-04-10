@@ -35,7 +35,7 @@ class OrgConformancePackStatus:
     }
 
     def __init__(self, org_conformance_pack_id=None, org_conformance_pack_name=None, state=None, error_message=None, created_at=None, updated_at=None):
-        """OrgConformancePackStatus
+        r"""OrgConformancePackStatus
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class OrgConformancePackStatus:
 
     @property
     def org_conformance_pack_id(self):
-        """Gets the org_conformance_pack_id of this OrgConformancePackStatus.
+        r"""Gets the org_conformance_pack_id of this OrgConformancePackStatus.
 
         组织合规规则包ID。
 
@@ -89,7 +89,7 @@ class OrgConformancePackStatus:
 
     @org_conformance_pack_id.setter
     def org_conformance_pack_id(self, org_conformance_pack_id):
-        """Sets the org_conformance_pack_id of this OrgConformancePackStatus.
+        r"""Sets the org_conformance_pack_id of this OrgConformancePackStatus.
 
         组织合规规则包ID。
 
@@ -100,7 +100,7 @@ class OrgConformancePackStatus:
 
     @property
     def org_conformance_pack_name(self):
-        """Gets the org_conformance_pack_name of this OrgConformancePackStatus.
+        r"""Gets the org_conformance_pack_name of this OrgConformancePackStatus.
 
         组织合规规则包名称。
 
@@ -111,7 +111,7 @@ class OrgConformancePackStatus:
 
     @org_conformance_pack_name.setter
     def org_conformance_pack_name(self, org_conformance_pack_name):
-        """Sets the org_conformance_pack_name of this OrgConformancePackStatus.
+        r"""Sets the org_conformance_pack_name of this OrgConformancePackStatus.
 
         组织合规规则包名称。
 
@@ -122,7 +122,7 @@ class OrgConformancePackStatus:
 
     @property
     def state(self):
-        """Gets the state of this OrgConformancePackStatus.
+        r"""Gets the state of this OrgConformancePackStatus.
 
         合规规则包部署状态
 
@@ -133,7 +133,7 @@ class OrgConformancePackStatus:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this OrgConformancePackStatus.
+        r"""Sets the state of this OrgConformancePackStatus.
 
         合规规则包部署状态
 
@@ -144,7 +144,7 @@ class OrgConformancePackStatus:
 
     @property
     def error_message(self):
-        """Gets the error_message of this OrgConformancePackStatus.
+        r"""Gets the error_message of this OrgConformancePackStatus.
 
         部署或删除组织合规规则包错误时的错误信息
 
@@ -155,7 +155,7 @@ class OrgConformancePackStatus:
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this OrgConformancePackStatus.
+        r"""Sets the error_message of this OrgConformancePackStatus.
 
         部署或删除组织合规规则包错误时的错误信息
 
@@ -166,7 +166,7 @@ class OrgConformancePackStatus:
 
     @property
     def created_at(self):
-        """Gets the created_at of this OrgConformancePackStatus.
+        r"""Gets the created_at of this OrgConformancePackStatus.
 
         组织合规规则包创建时间。
 
@@ -177,7 +177,7 @@ class OrgConformancePackStatus:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this OrgConformancePackStatus.
+        r"""Sets the created_at of this OrgConformancePackStatus.
 
         组织合规规则包创建时间。
 
@@ -188,7 +188,7 @@ class OrgConformancePackStatus:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this OrgConformancePackStatus.
+        r"""Gets the updated_at of this OrgConformancePackStatus.
 
         组织合规规则包更新时间。
 
@@ -199,7 +199,7 @@ class OrgConformancePackStatus:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this OrgConformancePackStatus.
+        r"""Sets the updated_at of this OrgConformancePackStatus.
 
         组织合规规则包更新时间。
 

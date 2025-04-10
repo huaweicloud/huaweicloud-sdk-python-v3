@@ -29,7 +29,7 @@ class ListUserConnectionRequest:
     }
 
     def __init__(self, limit=None, offset=None, body=None):
-        """ListUserConnectionRequest
+        r"""ListUserConnectionRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListUserConnectionRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListUserConnectionRequest.
+        r"""Gets the limit of this ListUserConnectionRequest.
 
         单次查询的大小[1-100]。
 
@@ -68,7 +68,7 @@ class ListUserConnectionRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListUserConnectionRequest.
+        r"""Sets the limit of this ListUserConnectionRequest.
 
         单次查询的大小[1-100]。
 
@@ -79,7 +79,7 @@ class ListUserConnectionRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListUserConnectionRequest.
+        r"""Gets the offset of this ListUserConnectionRequest.
 
         查询的偏移量。
 
@@ -90,7 +90,7 @@ class ListUserConnectionRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListUserConnectionRequest.
+        r"""Sets the offset of this ListUserConnectionRequest.
 
         查询的偏移量。
 
@@ -101,7 +101,7 @@ class ListUserConnectionRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListUserConnectionRequest.
+        r"""Gets the body of this ListUserConnectionRequest.
 
         :return: The body of this ListUserConnectionRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ListUserConnectionReq`
@@ -110,7 +110,7 @@ class ListUserConnectionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListUserConnectionRequest.
+        r"""Sets the body of this ListUserConnectionRequest.
 
         :param body: The body of this ListUserConnectionRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.ListUserConnectionReq`

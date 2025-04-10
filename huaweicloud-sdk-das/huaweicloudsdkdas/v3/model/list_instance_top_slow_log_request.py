@@ -33,7 +33,7 @@ class ListInstanceTopSlowLogRequest:
     }
 
     def __init__(self, num=None, x_language=None, start_at=None, end_at=None, instance_id=None):
-        """ListInstanceTopSlowLogRequest
+        r"""ListInstanceTopSlowLogRequest
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class ListInstanceTopSlowLogRequest:
 
     @property
     def num(self):
-        """Gets the num of this ListInstanceTopSlowLogRequest.
+        r"""Gets the num of this ListInstanceTopSlowLogRequest.
 
         TOP数量
 
@@ -78,7 +78,7 @@ class ListInstanceTopSlowLogRequest:
 
     @num.setter
     def num(self, num):
-        """Sets the num of this ListInstanceTopSlowLogRequest.
+        r"""Sets the num of this ListInstanceTopSlowLogRequest.
 
         TOP数量
 
@@ -89,7 +89,7 @@ class ListInstanceTopSlowLogRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListInstanceTopSlowLogRequest.
+        r"""Gets the x_language of this ListInstanceTopSlowLogRequest.
 
         语言
 
@@ -100,7 +100,7 @@ class ListInstanceTopSlowLogRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListInstanceTopSlowLogRequest.
+        r"""Sets the x_language of this ListInstanceTopSlowLogRequest.
 
         语言
 
@@ -111,7 +111,7 @@ class ListInstanceTopSlowLogRequest:
 
     @property
     def start_at(self):
-        """Gets the start_at of this ListInstanceTopSlowLogRequest.
+        r"""Gets the start_at of this ListInstanceTopSlowLogRequest.
 
         开始时间
 
@@ -122,7 +122,7 @@ class ListInstanceTopSlowLogRequest:
 
     @start_at.setter
     def start_at(self, start_at):
-        """Sets the start_at of this ListInstanceTopSlowLogRequest.
+        r"""Sets the start_at of this ListInstanceTopSlowLogRequest.
 
         开始时间
 
@@ -133,7 +133,7 @@ class ListInstanceTopSlowLogRequest:
 
     @property
     def end_at(self):
-        """Gets the end_at of this ListInstanceTopSlowLogRequest.
+        r"""Gets the end_at of this ListInstanceTopSlowLogRequest.
 
         结束时间
 
@@ -144,7 +144,7 @@ class ListInstanceTopSlowLogRequest:
 
     @end_at.setter
     def end_at(self, end_at):
-        """Sets the end_at of this ListInstanceTopSlowLogRequest.
+        r"""Sets the end_at of this ListInstanceTopSlowLogRequest.
 
         结束时间
 
@@ -155,7 +155,7 @@ class ListInstanceTopSlowLogRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListInstanceTopSlowLogRequest.
+        r"""Gets the instance_id of this ListInstanceTopSlowLogRequest.
 
         实例ID
 
@@ -166,7 +166,7 @@ class ListInstanceTopSlowLogRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListInstanceTopSlowLogRequest.
+        r"""Sets the instance_id of this ListInstanceTopSlowLogRequest.
 
         实例ID
 

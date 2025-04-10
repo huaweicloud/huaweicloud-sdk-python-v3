@@ -27,7 +27,7 @@ class Buckets:
     }
 
     def __init__(self, bucket=None):
-        """Buckets
+        r"""Buckets
 
         The model defined in huaweicloud sdk
 
@@ -45,7 +45,7 @@ class Buckets:
 
     @property
     def bucket(self):
-        """Gets the bucket of this Buckets.
+        r"""Gets the bucket of this Buckets.
 
         List of buckets. 
 
@@ -56,7 +56,7 @@ class Buckets:
 
     @bucket.setter
     def bucket(self, bucket):
-        """Sets the bucket of this Buckets.
+        r"""Sets the bucket of this Buckets.
 
         List of buckets. 
 

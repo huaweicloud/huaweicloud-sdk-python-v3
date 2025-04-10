@@ -31,7 +31,7 @@ class OpExtendInfoRestore:
     }
 
     def __init__(self, backup_id=None, backup_name=None, target_resource_id=None, target_resource_name=None):
-        """OpExtendInfoRestore
+        r"""OpExtendInfoRestore
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class OpExtendInfoRestore:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this OpExtendInfoRestore.
+        r"""Gets the backup_id of this OpExtendInfoRestore.
 
         备份副本ID
 
@@ -75,7 +75,7 @@ class OpExtendInfoRestore:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this OpExtendInfoRestore.
+        r"""Sets the backup_id of this OpExtendInfoRestore.
 
         备份副本ID
 
@@ -86,7 +86,7 @@ class OpExtendInfoRestore:
 
     @property
     def backup_name(self):
-        """Gets the backup_name of this OpExtendInfoRestore.
+        r"""Gets the backup_name of this OpExtendInfoRestore.
 
         备份名称
 
@@ -97,7 +97,7 @@ class OpExtendInfoRestore:
 
     @backup_name.setter
     def backup_name(self, backup_name):
-        """Sets the backup_name of this OpExtendInfoRestore.
+        r"""Sets the backup_name of this OpExtendInfoRestore.
 
         备份名称
 
@@ -108,7 +108,7 @@ class OpExtendInfoRestore:
 
     @property
     def target_resource_id(self):
-        """Gets the target_resource_id of this OpExtendInfoRestore.
+        r"""Gets the target_resource_id of this OpExtendInfoRestore.
 
         恢复目标资源ID
 
@@ -119,7 +119,7 @@ class OpExtendInfoRestore:
 
     @target_resource_id.setter
     def target_resource_id(self, target_resource_id):
-        """Sets the target_resource_id of this OpExtendInfoRestore.
+        r"""Sets the target_resource_id of this OpExtendInfoRestore.
 
         恢复目标资源ID
 
@@ -130,7 +130,7 @@ class OpExtendInfoRestore:
 
     @property
     def target_resource_name(self):
-        """Gets the target_resource_name of this OpExtendInfoRestore.
+        r"""Gets the target_resource_name of this OpExtendInfoRestore.
 
         恢复目标资源名称
 
@@ -141,7 +141,7 @@ class OpExtendInfoRestore:
 
     @target_resource_name.setter
     def target_resource_name(self, target_resource_name):
-        """Sets the target_resource_name of this OpExtendInfoRestore.
+        r"""Sets the target_resource_name of this OpExtendInfoRestore.
 
         恢复目标资源名称
 

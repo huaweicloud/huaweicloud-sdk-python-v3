@@ -51,13 +51,13 @@ class ListImageVulnerabilitiesRequest:
     }
 
     def __init__(self, region=None, enterprise_project_id=None, image_type=None, offset=None, limit=None, image_id=None, instance_id=None, namespace=None, image_name=None, tag_name=None, repair_necessity=None, vul_id=None, app_name=None, type=None):
-        """ListImageVulnerabilitiesRequest
+        r"""ListImageVulnerabilitiesRequest
 
         The model defined in huaweicloud sdk
 
         :param region: Region ID
         :type region: str
-        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param image_type: 镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库   - local_image : 本地镜像   - instance_image : 企业镜像
         :type image_type: str
@@ -129,7 +129,7 @@ class ListImageVulnerabilitiesRequest:
 
     @property
     def region(self):
-        """Gets the region of this ListImageVulnerabilitiesRequest.
+        r"""Gets the region of this ListImageVulnerabilitiesRequest.
 
         Region ID
 
@@ -140,7 +140,7 @@ class ListImageVulnerabilitiesRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ListImageVulnerabilitiesRequest.
+        r"""Sets the region of this ListImageVulnerabilitiesRequest.
 
         Region ID
 
@@ -151,9 +151,9 @@ class ListImageVulnerabilitiesRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListImageVulnerabilitiesRequest.
+        r"""Gets the enterprise_project_id of this ListImageVulnerabilitiesRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ListImageVulnerabilitiesRequest.
         :rtype: str
@@ -162,9 +162,9 @@ class ListImageVulnerabilitiesRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListImageVulnerabilitiesRequest.
+        r"""Sets the enterprise_project_id of this ListImageVulnerabilitiesRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ListImageVulnerabilitiesRequest.
         :type enterprise_project_id: str
@@ -173,7 +173,7 @@ class ListImageVulnerabilitiesRequest:
 
     @property
     def image_type(self):
-        """Gets the image_type of this ListImageVulnerabilitiesRequest.
+        r"""Gets the image_type of this ListImageVulnerabilitiesRequest.
 
         镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库   - local_image : 本地镜像   - instance_image : 企业镜像
 
@@ -184,7 +184,7 @@ class ListImageVulnerabilitiesRequest:
 
     @image_type.setter
     def image_type(self, image_type):
-        """Sets the image_type of this ListImageVulnerabilitiesRequest.
+        r"""Sets the image_type of this ListImageVulnerabilitiesRequest.
 
         镜像类型，包含如下:   - private_image : 私有镜像仓库   - shared_image : 共享镜像仓库   - local_image : 本地镜像   - instance_image : 企业镜像
 
@@ -195,7 +195,7 @@ class ListImageVulnerabilitiesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListImageVulnerabilitiesRequest.
+        r"""Gets the offset of this ListImageVulnerabilitiesRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -206,7 +206,7 @@ class ListImageVulnerabilitiesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListImageVulnerabilitiesRequest.
+        r"""Sets the offset of this ListImageVulnerabilitiesRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -217,7 +217,7 @@ class ListImageVulnerabilitiesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListImageVulnerabilitiesRequest.
+        r"""Gets the limit of this ListImageVulnerabilitiesRequest.
 
         每页显示数量
 
@@ -228,7 +228,7 @@ class ListImageVulnerabilitiesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListImageVulnerabilitiesRequest.
+        r"""Sets the limit of this ListImageVulnerabilitiesRequest.
 
         每页显示数量
 
@@ -239,7 +239,7 @@ class ListImageVulnerabilitiesRequest:
 
     @property
     def image_id(self):
-        """Gets the image_id of this ListImageVulnerabilitiesRequest.
+        r"""Gets the image_id of this ListImageVulnerabilitiesRequest.
 
         镜像id
 
@@ -250,7 +250,7 @@ class ListImageVulnerabilitiesRequest:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this ListImageVulnerabilitiesRequest.
+        r"""Sets the image_id of this ListImageVulnerabilitiesRequest.
 
         镜像id
 
@@ -261,7 +261,7 @@ class ListImageVulnerabilitiesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListImageVulnerabilitiesRequest.
+        r"""Gets the instance_id of this ListImageVulnerabilitiesRequest.
 
         企业仓库实例ID，swr共享版无需使用该参数
 
@@ -272,7 +272,7 @@ class ListImageVulnerabilitiesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListImageVulnerabilitiesRequest.
+        r"""Sets the instance_id of this ListImageVulnerabilitiesRequest.
 
         企业仓库实例ID，swr共享版无需使用该参数
 
@@ -283,7 +283,7 @@ class ListImageVulnerabilitiesRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this ListImageVulnerabilitiesRequest.
+        r"""Gets the namespace of this ListImageVulnerabilitiesRequest.
 
         组织名称
 
@@ -294,7 +294,7 @@ class ListImageVulnerabilitiesRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this ListImageVulnerabilitiesRequest.
+        r"""Sets the namespace of this ListImageVulnerabilitiesRequest.
 
         组织名称
 
@@ -305,7 +305,7 @@ class ListImageVulnerabilitiesRequest:
 
     @property
     def image_name(self):
-        """Gets the image_name of this ListImageVulnerabilitiesRequest.
+        r"""Gets the image_name of this ListImageVulnerabilitiesRequest.
 
         镜像名称
 
@@ -316,7 +316,7 @@ class ListImageVulnerabilitiesRequest:
 
     @image_name.setter
     def image_name(self, image_name):
-        """Sets the image_name of this ListImageVulnerabilitiesRequest.
+        r"""Sets the image_name of this ListImageVulnerabilitiesRequest.
 
         镜像名称
 
@@ -327,7 +327,7 @@ class ListImageVulnerabilitiesRequest:
 
     @property
     def tag_name(self):
-        """Gets the tag_name of this ListImageVulnerabilitiesRequest.
+        r"""Gets the tag_name of this ListImageVulnerabilitiesRequest.
 
         镜像版本
 
@@ -338,7 +338,7 @@ class ListImageVulnerabilitiesRequest:
 
     @tag_name.setter
     def tag_name(self, tag_name):
-        """Sets the tag_name of this ListImageVulnerabilitiesRequest.
+        r"""Sets the tag_name of this ListImageVulnerabilitiesRequest.
 
         镜像版本
 
@@ -349,7 +349,7 @@ class ListImageVulnerabilitiesRequest:
 
     @property
     def repair_necessity(self):
-        """Gets the repair_necessity of this ListImageVulnerabilitiesRequest.
+        r"""Gets the repair_necessity of this ListImageVulnerabilitiesRequest.
 
         危险程度，包含如下3种。   - immediate_repair ：高危。   - delay_repair ：中危。   - not_needed_repair ：低危。
 
@@ -360,7 +360,7 @@ class ListImageVulnerabilitiesRequest:
 
     @repair_necessity.setter
     def repair_necessity(self, repair_necessity):
-        """Sets the repair_necessity of this ListImageVulnerabilitiesRequest.
+        r"""Sets the repair_necessity of this ListImageVulnerabilitiesRequest.
 
         危险程度，包含如下3种。   - immediate_repair ：高危。   - delay_repair ：中危。   - not_needed_repair ：低危。
 
@@ -371,7 +371,7 @@ class ListImageVulnerabilitiesRequest:
 
     @property
     def vul_id(self):
-        """Gets the vul_id of this ListImageVulnerabilitiesRequest.
+        r"""Gets the vul_id of this ListImageVulnerabilitiesRequest.
 
         漏洞ID（支持模糊查询）
 
@@ -382,7 +382,7 @@ class ListImageVulnerabilitiesRequest:
 
     @vul_id.setter
     def vul_id(self, vul_id):
-        """Sets the vul_id of this ListImageVulnerabilitiesRequest.
+        r"""Sets the vul_id of this ListImageVulnerabilitiesRequest.
 
         漏洞ID（支持模糊查询）
 
@@ -393,7 +393,7 @@ class ListImageVulnerabilitiesRequest:
 
     @property
     def app_name(self):
-        """Gets the app_name of this ListImageVulnerabilitiesRequest.
+        r"""Gets the app_name of this ListImageVulnerabilitiesRequest.
 
         软件名
 
@@ -404,7 +404,7 @@ class ListImageVulnerabilitiesRequest:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ListImageVulnerabilitiesRequest.
+        r"""Sets the app_name of this ListImageVulnerabilitiesRequest.
 
         软件名
 
@@ -415,7 +415,7 @@ class ListImageVulnerabilitiesRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListImageVulnerabilitiesRequest.
+        r"""Gets the type of this ListImageVulnerabilitiesRequest.
 
         漏洞类型，包含如下：   -linux_vul : linux漏洞   -app_vul : 应用漏洞
 
@@ -426,7 +426,7 @@ class ListImageVulnerabilitiesRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListImageVulnerabilitiesRequest.
+        r"""Sets the type of this ListImageVulnerabilitiesRequest.
 
         漏洞类型，包含如下：   -linux_vul : linux漏洞   -app_vul : 应用漏洞
 

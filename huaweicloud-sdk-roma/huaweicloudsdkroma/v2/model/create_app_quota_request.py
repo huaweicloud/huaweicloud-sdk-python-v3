@@ -27,7 +27,7 @@ class CreateAppQuotaRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateAppQuotaRequest
+        r"""CreateAppQuotaRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateAppQuotaRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateAppQuotaRequest.
+        r"""Gets the instance_id of this CreateAppQuotaRequest.
 
         实例ID
 
@@ -60,7 +60,7 @@ class CreateAppQuotaRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateAppQuotaRequest.
+        r"""Sets the instance_id of this CreateAppQuotaRequest.
 
         实例ID
 
@@ -71,7 +71,7 @@ class CreateAppQuotaRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAppQuotaRequest.
+        r"""Gets the body of this CreateAppQuotaRequest.
 
         :return: The body of this CreateAppQuotaRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.AppQuotaCreate`
@@ -80,7 +80,7 @@ class CreateAppQuotaRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAppQuotaRequest.
+        r"""Sets the body of this CreateAppQuotaRequest.
 
         :param body: The body of this CreateAppQuotaRequest.
         :type body: :class:`huaweicloudsdkroma.v2.AppQuotaCreate`

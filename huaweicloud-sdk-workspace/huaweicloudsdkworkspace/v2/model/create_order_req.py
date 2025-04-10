@@ -39,7 +39,7 @@ class CreateOrderReq:
     }
 
     def __init__(self, type=None, enterprise_project_id=None, resources=None, order_id=None, promotion_id=None, promotion_plan_id=None, promotion_info=None, extend_param=None):
-        """CreateOrderReq
+        r"""CreateOrderReq
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class CreateOrderReq:
 
     @property
     def type(self):
-        """Gets the type of this CreateOrderReq.
+        r"""Gets the type of this CreateOrderReq.
 
         订单类型，createDesktops：创建桌面，addVolumes：添加磁盘[，createDehHosts：创建专属主机](tag:ZQ)，rebuildDesktops：重建系统盘，createDesktopPool 创建桌面池，expandDesktopPool 扩容桌面池，applyDesktopsInternet：开通桌面EIP上网，createExclusiveHosts：创建专享主机，subscribeUserSharer：订购用户协同资源，ApplySubnetBandwidth：开通云办公带宽
 
@@ -101,7 +101,7 @@ class CreateOrderReq:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateOrderReq.
+        r"""Sets the type of this CreateOrderReq.
 
         订单类型，createDesktops：创建桌面，addVolumes：添加磁盘[，createDehHosts：创建专属主机](tag:ZQ)，rebuildDesktops：重建系统盘，createDesktopPool 创建桌面池，expandDesktopPool 扩容桌面池，applyDesktopsInternet：开通桌面EIP上网，createExclusiveHosts：创建专享主机，subscribeUserSharer：订购用户协同资源，ApplySubnetBandwidth：开通云办公带宽
 
@@ -112,7 +112,7 @@ class CreateOrderReq:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateOrderReq.
+        r"""Gets the enterprise_project_id of this CreateOrderReq.
 
         企业项目ID，默认\"0\"
 
@@ -123,7 +123,7 @@ class CreateOrderReq:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateOrderReq.
+        r"""Sets the enterprise_project_id of this CreateOrderReq.
 
         企业项目ID，默认\"0\"
 
@@ -134,7 +134,7 @@ class CreateOrderReq:
 
     @property
     def resources(self):
-        """Gets the resources of this CreateOrderReq.
+        r"""Gets the resources of this CreateOrderReq.
 
         包周期资源
 
@@ -145,7 +145,7 @@ class CreateOrderReq:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this CreateOrderReq.
+        r"""Sets the resources of this CreateOrderReq.
 
         包周期资源
 
@@ -156,7 +156,7 @@ class CreateOrderReq:
 
     @property
     def order_id(self):
-        """Gets the order_id of this CreateOrderReq.
+        r"""Gets the order_id of this CreateOrderReq.
 
         组合购订单ID
 
@@ -167,7 +167,7 @@ class CreateOrderReq:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this CreateOrderReq.
+        r"""Sets the order_id of this CreateOrderReq.
 
         组合购订单ID
 
@@ -178,7 +178,7 @@ class CreateOrderReq:
 
     @property
     def promotion_id(self):
-        """Gets the promotion_id of this CreateOrderReq.
+        r"""Gets the promotion_id of this CreateOrderReq.
 
         促销ID
 
@@ -189,7 +189,7 @@ class CreateOrderReq:
 
     @promotion_id.setter
     def promotion_id(self, promotion_id):
-        """Sets the promotion_id of this CreateOrderReq.
+        r"""Sets the promotion_id of this CreateOrderReq.
 
         促销ID
 
@@ -200,7 +200,7 @@ class CreateOrderReq:
 
     @property
     def promotion_plan_id(self):
-        """Gets the promotion_plan_id of this CreateOrderReq.
+        r"""Gets the promotion_plan_id of this CreateOrderReq.
 
         促销计划ID
 
@@ -211,7 +211,7 @@ class CreateOrderReq:
 
     @promotion_plan_id.setter
     def promotion_plan_id(self, promotion_plan_id):
-        """Sets the promotion_plan_id of this CreateOrderReq.
+        r"""Sets the promotion_plan_id of this CreateOrderReq.
 
         促销计划ID
 
@@ -222,7 +222,7 @@ class CreateOrderReq:
 
     @property
     def promotion_info(self):
-        """Gets the promotion_info of this CreateOrderReq.
+        r"""Gets the promotion_info of this CreateOrderReq.
 
         促销信息
 
@@ -233,7 +233,7 @@ class CreateOrderReq:
 
     @promotion_info.setter
     def promotion_info(self, promotion_info):
-        """Sets the promotion_info of this CreateOrderReq.
+        r"""Sets the promotion_info of this CreateOrderReq.
 
         促销信息
 
@@ -244,7 +244,7 @@ class CreateOrderReq:
 
     @property
     def extend_param(self):
-        """Gets the extend_param of this CreateOrderReq.
+        r"""Gets the extend_param of this CreateOrderReq.
 
         :return: The extend_param of this CreateOrderReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.OrderExtendParam`
@@ -253,7 +253,7 @@ class CreateOrderReq:
 
     @extend_param.setter
     def extend_param(self, extend_param):
-        """Sets the extend_param of this CreateOrderReq.
+        r"""Sets the extend_param of this CreateOrderReq.
 
         :param extend_param: The extend_param of this CreateOrderReq.
         :type extend_param: :class:`huaweicloudsdkworkspace.v2.OrderExtendParam`

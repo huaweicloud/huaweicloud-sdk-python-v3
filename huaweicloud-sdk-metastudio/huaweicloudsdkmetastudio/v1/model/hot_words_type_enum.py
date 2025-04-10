@@ -26,7 +26,7 @@ class HotWordsTypeEnum:
     }
 
     def __init__(self):
-        """HotWordsTypeEnum
+        r"""HotWordsTypeEnum
 
         The model defined in huaweicloud sdk
 

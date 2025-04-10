@@ -29,7 +29,7 @@ class RouteAttachment:
     }
 
     def __init__(self, resource_id=None, resource_type=None, attachment_id=None):
-        """RouteAttachment
+        r"""RouteAttachment
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class RouteAttachment:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this RouteAttachment.
+        r"""Gets the resource_id of this RouteAttachment.
 
         连接关联的资源ID
 
@@ -65,7 +65,7 @@ class RouteAttachment:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this RouteAttachment.
+        r"""Sets the resource_id of this RouteAttachment.
 
         连接关联的资源ID
 
@@ -76,7 +76,7 @@ class RouteAttachment:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this RouteAttachment.
+        r"""Gets the resource_type of this RouteAttachment.
 
         连接关联的资源类型: - vpc：虚拟私有云 - vpn：vpn网关 - vgw：云专线的虚拟网关 - vpn：vpn网关 - vgw：云专线的虚拟网关 - peering：对等连接，通过云连接CC加载不同区域的企业路由器来创建“对等连接（Peering）”连接 -  -  -
 
@@ -87,7 +87,7 @@ class RouteAttachment:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this RouteAttachment.
+        r"""Sets the resource_type of this RouteAttachment.
 
         连接关联的资源类型: - vpc：虚拟私有云 - vpn：vpn网关 - vgw：云专线的虚拟网关 - vpn：vpn网关 - vgw：云专线的虚拟网关 - peering：对等连接，通过云连接CC加载不同区域的企业路由器来创建“对等连接（Peering）”连接 -  -  -
 
@@ -98,7 +98,7 @@ class RouteAttachment:
 
     @property
     def attachment_id(self):
-        """Gets the attachment_id of this RouteAttachment.
+        r"""Gets the attachment_id of this RouteAttachment.
 
         连接ID
 
@@ -109,7 +109,7 @@ class RouteAttachment:
 
     @attachment_id.setter
     def attachment_id(self, attachment_id):
-        """Sets the attachment_id of this RouteAttachment.
+        r"""Sets the attachment_id of this RouteAttachment.
 
         连接ID
 

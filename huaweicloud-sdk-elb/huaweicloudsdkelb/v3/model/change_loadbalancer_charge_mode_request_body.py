@@ -29,7 +29,7 @@ class ChangeLoadbalancerChargeModeRequestBody:
     }
 
     def __init__(self, loadbalancer_ids=None, charge_mode=None, prepaid_options=None):
-        """ChangeLoadbalancerChargeModeRequestBody
+        r"""ChangeLoadbalancerChargeModeRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ChangeLoadbalancerChargeModeRequestBody:
 
     @property
     def loadbalancer_ids(self):
-        """Gets the loadbalancer_ids of this ChangeLoadbalancerChargeModeRequestBody.
+        r"""Gets the loadbalancer_ids of this ChangeLoadbalancerChargeModeRequestBody.
 
         需要修改计费类型的负载均衡器ID列表。
 
@@ -66,7 +66,7 @@ class ChangeLoadbalancerChargeModeRequestBody:
 
     @loadbalancer_ids.setter
     def loadbalancer_ids(self, loadbalancer_ids):
-        """Sets the loadbalancer_ids of this ChangeLoadbalancerChargeModeRequestBody.
+        r"""Sets the loadbalancer_ids of this ChangeLoadbalancerChargeModeRequestBody.
 
         需要修改计费类型的负载均衡器ID列表。
 
@@ -77,7 +77,7 @@ class ChangeLoadbalancerChargeModeRequestBody:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this ChangeLoadbalancerChargeModeRequestBody.
+        r"""Gets the charge_mode of this ChangeLoadbalancerChargeModeRequestBody.
 
         计费模式。取值： - prepaid：包周期计费[（仅当不传pay_type时，允许设为该值）](tag:hws)
 
@@ -88,7 +88,7 @@ class ChangeLoadbalancerChargeModeRequestBody:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this ChangeLoadbalancerChargeModeRequestBody.
+        r"""Sets the charge_mode of this ChangeLoadbalancerChargeModeRequestBody.
 
         计费模式。取值： - prepaid：包周期计费[（仅当不传pay_type时，允许设为该值）](tag:hws)
 
@@ -99,7 +99,7 @@ class ChangeLoadbalancerChargeModeRequestBody:
 
     @property
     def prepaid_options(self):
-        """Gets the prepaid_options of this ChangeLoadbalancerChargeModeRequestBody.
+        r"""Gets the prepaid_options of this ChangeLoadbalancerChargeModeRequestBody.
 
         :return: The prepaid_options of this ChangeLoadbalancerChargeModeRequestBody.
         :rtype: :class:`huaweicloudsdkelb.v3.PrepaidChangeChargeModeOption`
@@ -108,7 +108,7 @@ class ChangeLoadbalancerChargeModeRequestBody:
 
     @prepaid_options.setter
     def prepaid_options(self, prepaid_options):
-        """Sets the prepaid_options of this ChangeLoadbalancerChargeModeRequestBody.
+        r"""Sets the prepaid_options of this ChangeLoadbalancerChargeModeRequestBody.
 
         :param prepaid_options: The prepaid_options of this ChangeLoadbalancerChargeModeRequestBody.
         :type prepaid_options: :class:`huaweicloudsdkelb.v3.PrepaidChangeChargeModeOption`

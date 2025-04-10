@@ -27,7 +27,7 @@ class ChangeNodesStartStopStatusRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """ChangeNodesStartStopStatusRequest
+        r"""ChangeNodesStartStopStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ChangeNodesStartStopStatusRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ChangeNodesStartStopStatusRequest.
+        r"""Gets the instance_id of this ChangeNodesStartStopStatusRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class ChangeNodesStartStopStatusRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ChangeNodesStartStopStatusRequest.
+        r"""Sets the instance_id of this ChangeNodesStartStopStatusRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class ChangeNodesStartStopStatusRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeNodesStartStopStatusRequest.
+        r"""Gets the body of this ChangeNodesStartStopStatusRequest.
 
         :return: The body of this ChangeNodesStartStopStatusRequest.
         :rtype: :class:`huaweicloudsdkdcs.v2.ChangeNodesStartStopStatusBody`
@@ -80,7 +80,7 @@ class ChangeNodesStartStopStatusRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeNodesStartStopStatusRequest.
+        r"""Sets the body of this ChangeNodesStartStopStatusRequest.
 
         :param body: The body of this ChangeNodesStartStopStatusRequest.
         :type body: :class:`huaweicloudsdkdcs.v2.ChangeNodesStartStopStatusBody`

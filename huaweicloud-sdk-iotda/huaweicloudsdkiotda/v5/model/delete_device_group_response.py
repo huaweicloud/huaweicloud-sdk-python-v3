@@ -26,7 +26,7 @@ class DeleteDeviceGroupResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DeleteDeviceGroupResponse
+        r"""DeleteDeviceGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteDeviceGroupResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this DeleteDeviceGroupResponse.
+        r"""Gets the body of this DeleteDeviceGroupResponse.
 
         :return: The body of this DeleteDeviceGroupResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteDeviceGroupResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteDeviceGroupResponse.
+        r"""Sets the body of this DeleteDeviceGroupResponse.
 
         :param body: The body of this DeleteDeviceGroupResponse.
         :type body: str

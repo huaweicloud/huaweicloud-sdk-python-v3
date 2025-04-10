@@ -29,7 +29,7 @@ class AggregatePolicyStatesRequest:
     }
 
     def __init__(self, aggregator_id=None, account_id=None, group_by_key=None):
-        """AggregatePolicyStatesRequest
+        r"""AggregatePolicyStatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class AggregatePolicyStatesRequest:
 
     @property
     def aggregator_id(self):
-        """Gets the aggregator_id of this AggregatePolicyStatesRequest.
+        r"""Gets the aggregator_id of this AggregatePolicyStatesRequest.
 
         资源聚合器ID
 
@@ -67,7 +67,7 @@ class AggregatePolicyStatesRequest:
 
     @aggregator_id.setter
     def aggregator_id(self, aggregator_id):
-        """Sets the aggregator_id of this AggregatePolicyStatesRequest.
+        r"""Sets the aggregator_id of this AggregatePolicyStatesRequest.
 
         资源聚合器ID
 
@@ -78,7 +78,7 @@ class AggregatePolicyStatesRequest:
 
     @property
     def account_id(self):
-        """Gets the account_id of this AggregatePolicyStatesRequest.
+        r"""Gets the account_id of this AggregatePolicyStatesRequest.
 
         源帐号ID
 
@@ -89,7 +89,7 @@ class AggregatePolicyStatesRequest:
 
     @account_id.setter
     def account_id(self, account_id):
-        """Sets the account_id of this AggregatePolicyStatesRequest.
+        r"""Sets the account_id of this AggregatePolicyStatesRequest.
 
         源帐号ID
 
@@ -100,7 +100,7 @@ class AggregatePolicyStatesRequest:
 
     @property
     def group_by_key(self):
-        """Gets the group_by_key of this AggregatePolicyStatesRequest.
+        r"""Gets the group_by_key of this AggregatePolicyStatesRequest.
 
         用于对资源计数进行分组的键（DOMAIN）。
 
@@ -111,7 +111,7 @@ class AggregatePolicyStatesRequest:
 
     @group_by_key.setter
     def group_by_key(self, group_by_key):
-        """Sets the group_by_key of this AggregatePolicyStatesRequest.
+        r"""Sets the group_by_key of this AggregatePolicyStatesRequest.
 
         用于对资源计数进行分组的键（DOMAIN）。
 

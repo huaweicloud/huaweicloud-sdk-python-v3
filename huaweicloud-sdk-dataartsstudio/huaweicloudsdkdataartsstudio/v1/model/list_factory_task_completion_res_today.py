@@ -27,7 +27,7 @@ class ListFactoryTaskCompletionResToday:
     }
 
     def __init__(self, record_time=None, task_completion_num=None):
-        """ListFactoryTaskCompletionResToday
+        r"""ListFactoryTaskCompletionResToday
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListFactoryTaskCompletionResToday:
 
     @property
     def record_time(self):
-        """Gets the record_time of this ListFactoryTaskCompletionResToday.
+        r"""Gets the record_time of this ListFactoryTaskCompletionResToday.
 
         整时的时间点
 
@@ -61,7 +61,7 @@ class ListFactoryTaskCompletionResToday:
 
     @record_time.setter
     def record_time(self, record_time):
-        """Sets the record_time of this ListFactoryTaskCompletionResToday.
+        r"""Sets the record_time of this ListFactoryTaskCompletionResToday.
 
         整时的时间点
 
@@ -72,7 +72,7 @@ class ListFactoryTaskCompletionResToday:
 
     @property
     def task_completion_num(self):
-        """Gets the task_completion_num of this ListFactoryTaskCompletionResToday.
+        r"""Gets the task_completion_num of this ListFactoryTaskCompletionResToday.
 
         到当前时间点完成的任务数量
 
@@ -83,7 +83,7 @@ class ListFactoryTaskCompletionResToday:
 
     @task_completion_num.setter
     def task_completion_num(self, task_completion_num):
-        """Sets the task_completion_num of this ListFactoryTaskCompletionResToday.
+        r"""Sets the task_completion_num of this ListFactoryTaskCompletionResToday.
 
         到当前时间点完成的任务数量
 

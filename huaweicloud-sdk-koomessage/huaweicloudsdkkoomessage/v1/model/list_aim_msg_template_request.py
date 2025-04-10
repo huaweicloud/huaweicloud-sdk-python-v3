@@ -41,7 +41,7 @@ class ListAimMsgTemplateRequest:
     }
 
     def __init__(self, offset=None, limit=None, app_name=None, start_time=None, end_time=None, flow_status=None, template_id=None, template_name=None, template_type=None):
-        """ListAimMsgTemplateRequest
+        r"""ListAimMsgTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ListAimMsgTemplateRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAimMsgTemplateRequest.
+        r"""Gets the offset of this ListAimMsgTemplateRequest.
 
         偏移量。表示从偏移量开始查询，offset大于等于0。
 
@@ -110,7 +110,7 @@ class ListAimMsgTemplateRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAimMsgTemplateRequest.
+        r"""Sets the offset of this ListAimMsgTemplateRequest.
 
         偏移量。表示从偏移量开始查询，offset大于等于0。
 
@@ -121,7 +121,7 @@ class ListAimMsgTemplateRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAimMsgTemplateRequest.
+        r"""Gets the limit of this ListAimMsgTemplateRequest.
 
         每页显示的条目数量。
 
@@ -132,7 +132,7 @@ class ListAimMsgTemplateRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAimMsgTemplateRequest.
+        r"""Sets the limit of this ListAimMsgTemplateRequest.
 
         每页显示的条目数量。
 
@@ -143,7 +143,7 @@ class ListAimMsgTemplateRequest:
 
     @property
     def app_name(self):
-        """Gets the app_name of this ListAimMsgTemplateRequest.
+        r"""Gets the app_name of this ListAimMsgTemplateRequest.
 
         应用名称。
 
@@ -154,7 +154,7 @@ class ListAimMsgTemplateRequest:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ListAimMsgTemplateRequest.
+        r"""Sets the app_name of this ListAimMsgTemplateRequest.
 
         应用名称。
 
@@ -165,7 +165,7 @@ class ListAimMsgTemplateRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListAimMsgTemplateRequest.
+        r"""Gets the start_time of this ListAimMsgTemplateRequest.
 
         开始时间。
 
@@ -176,7 +176,7 @@ class ListAimMsgTemplateRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListAimMsgTemplateRequest.
+        r"""Sets the start_time of this ListAimMsgTemplateRequest.
 
         开始时间。
 
@@ -187,7 +187,7 @@ class ListAimMsgTemplateRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListAimMsgTemplateRequest.
+        r"""Gets the end_time of this ListAimMsgTemplateRequest.
 
         结束时间。
 
@@ -198,7 +198,7 @@ class ListAimMsgTemplateRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListAimMsgTemplateRequest.
+        r"""Sets the end_time of this ListAimMsgTemplateRequest.
 
         结束时间。
 
@@ -209,7 +209,7 @@ class ListAimMsgTemplateRequest:
 
     @property
     def flow_status(self):
-        """Gets the flow_status of this ListAimMsgTemplateRequest.
+        r"""Gets the flow_status of this ListAimMsgTemplateRequest.
 
         流程状态。
 
@@ -220,7 +220,7 @@ class ListAimMsgTemplateRequest:
 
     @flow_status.setter
     def flow_status(self, flow_status):
-        """Sets the flow_status of this ListAimMsgTemplateRequest.
+        r"""Sets the flow_status of this ListAimMsgTemplateRequest.
 
         流程状态。
 
@@ -231,7 +231,7 @@ class ListAimMsgTemplateRequest:
 
     @property
     def template_id(self):
-        """Gets the template_id of this ListAimMsgTemplateRequest.
+        r"""Gets the template_id of this ListAimMsgTemplateRequest.
 
         模板ID。
 
@@ -242,7 +242,7 @@ class ListAimMsgTemplateRequest:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this ListAimMsgTemplateRequest.
+        r"""Sets the template_id of this ListAimMsgTemplateRequest.
 
         模板ID。
 
@@ -253,7 +253,7 @@ class ListAimMsgTemplateRequest:
 
     @property
     def template_name(self):
-        """Gets the template_name of this ListAimMsgTemplateRequest.
+        r"""Gets the template_name of this ListAimMsgTemplateRequest.
 
         模板名称。
 
@@ -264,7 +264,7 @@ class ListAimMsgTemplateRequest:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this ListAimMsgTemplateRequest.
+        r"""Sets the template_name of this ListAimMsgTemplateRequest.
 
         模板名称。
 
@@ -275,7 +275,7 @@ class ListAimMsgTemplateRequest:
 
     @property
     def template_type(self):
-        """Gets the template_type of this ListAimMsgTemplateRequest.
+        r"""Gets the template_type of this ListAimMsgTemplateRequest.
 
         模板类型。
 
@@ -286,7 +286,7 @@ class ListAimMsgTemplateRequest:
 
     @template_type.setter
     def template_type(self, template_type):
-        """Sets the template_type of this ListAimMsgTemplateRequest.
+        r"""Sets the template_type of this ListAimMsgTemplateRequest.
 
         模板类型。
 

@@ -25,7 +25,7 @@ class SecurityGroupInfo:
     }
 
     def __init__(self, id=None):
-        """SecurityGroupInfo
+        r"""SecurityGroupInfo
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SecurityGroupInfo:
 
     @property
     def id(self):
-        """Gets the id of this SecurityGroupInfo.
+        r"""Gets the id of this SecurityGroupInfo.
 
         安全组ID，UUID格式。
 
@@ -53,7 +53,7 @@ class SecurityGroupInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SecurityGroupInfo.
+        r"""Sets the id of this SecurityGroupInfo.
 
         安全组ID，UUID格式。
 

@@ -26,7 +26,7 @@ class ChangeInstanceChargeModeResponse(SdkResponse):
     }
 
     def __init__(self, order_id=None):
-        """ChangeInstanceChargeModeResponse
+        r"""ChangeInstanceChargeModeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ChangeInstanceChargeModeResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this ChangeInstanceChargeModeResponse.
+        r"""Gets the order_id of this ChangeInstanceChargeModeResponse.
 
         **参数说明**：订单号。[查看订单详情请参考[查询订单详情](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0075746564.html)。](tag:hws)\" 
 
@@ -55,7 +55,7 @@ class ChangeInstanceChargeModeResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ChangeInstanceChargeModeResponse.
+        r"""Sets the order_id of this ChangeInstanceChargeModeResponse.
 
         **参数说明**：订单号。[查看订单详情请参考[查询订单详情](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0075746564.html)。](tag:hws)\" 
 

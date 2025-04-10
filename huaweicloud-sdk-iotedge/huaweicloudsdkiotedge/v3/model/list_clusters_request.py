@@ -31,7 +31,7 @@ class ListClustersRequest:
     }
 
     def __init__(self, cluster_name=None, state=None, limit=None, offset=None):
-        """ListClustersRequest
+        r"""ListClustersRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListClustersRequest:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this ListClustersRequest.
+        r"""Gets the cluster_name of this ListClustersRequest.
 
         边缘集群名称
 
@@ -75,7 +75,7 @@ class ListClustersRequest:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this ListClustersRequest.
+        r"""Sets the cluster_name of this ListClustersRequest.
 
         边缘集群名称
 
@@ -86,7 +86,7 @@ class ListClustersRequest:
 
     @property
     def state(self):
-        """Gets the state of this ListClustersRequest.
+        r"""Gets the state of this ListClustersRequest.
 
         边缘集群状态
 
@@ -97,7 +97,7 @@ class ListClustersRequest:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ListClustersRequest.
+        r"""Sets the state of this ListClustersRequest.
 
         边缘集群状态
 
@@ -108,7 +108,7 @@ class ListClustersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListClustersRequest.
+        r"""Gets the limit of this ListClustersRequest.
 
         每页记录数，默认值为10，取值区间为1-1000。
 
@@ -119,7 +119,7 @@ class ListClustersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListClustersRequest.
+        r"""Sets the limit of this ListClustersRequest.
 
         每页记录数，默认值为10，取值区间为1-1000。
 
@@ -130,7 +130,7 @@ class ListClustersRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListClustersRequest.
+        r"""Gets the offset of this ListClustersRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0。
 
@@ -141,7 +141,7 @@ class ListClustersRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListClustersRequest.
+        r"""Sets the offset of this ListClustersRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0。
 

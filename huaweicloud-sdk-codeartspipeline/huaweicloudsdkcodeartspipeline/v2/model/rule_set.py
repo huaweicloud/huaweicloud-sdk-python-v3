@@ -41,7 +41,7 @@ class RuleSet:
     }
 
     def __init__(self, id=None, name=None, type=None, version=None, operator=None, operate_time=None, is_valid=None, level=None, is_public=None):
-        """RuleSet
+        r"""RuleSet
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class RuleSet:
 
     @property
     def id(self):
-        """Gets the id of this RuleSet.
+        r"""Gets the id of this RuleSet.
 
         规则模版实例ID
 
@@ -104,7 +104,7 @@ class RuleSet:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RuleSet.
+        r"""Sets the id of this RuleSet.
 
         规则模版实例ID
 
@@ -115,7 +115,7 @@ class RuleSet:
 
     @property
     def name(self):
-        """Gets the name of this RuleSet.
+        r"""Gets the name of this RuleSet.
 
         规则模版实例名称
 
@@ -126,7 +126,7 @@ class RuleSet:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RuleSet.
+        r"""Sets the name of this RuleSet.
 
         规则模版实例名称
 
@@ -137,7 +137,7 @@ class RuleSet:
 
     @property
     def type(self):
-        """Gets the type of this RuleSet.
+        r"""Gets the type of this RuleSet.
 
         类型
 
@@ -148,7 +148,7 @@ class RuleSet:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RuleSet.
+        r"""Sets the type of this RuleSet.
 
         类型
 
@@ -159,7 +159,7 @@ class RuleSet:
 
     @property
     def version(self):
-        """Gets the version of this RuleSet.
+        r"""Gets the version of this RuleSet.
 
         版本
 
@@ -170,7 +170,7 @@ class RuleSet:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this RuleSet.
+        r"""Sets the version of this RuleSet.
 
         版本
 
@@ -181,7 +181,7 @@ class RuleSet:
 
     @property
     def operator(self):
-        """Gets the operator of this RuleSet.
+        r"""Gets the operator of this RuleSet.
 
         最近操作人
 
@@ -192,7 +192,7 @@ class RuleSet:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this RuleSet.
+        r"""Sets the operator of this RuleSet.
 
         最近操作人
 
@@ -203,7 +203,7 @@ class RuleSet:
 
     @property
     def operate_time(self):
-        """Gets the operate_time of this RuleSet.
+        r"""Gets the operate_time of this RuleSet.
 
         最近操作时间
 
@@ -214,7 +214,7 @@ class RuleSet:
 
     @operate_time.setter
     def operate_time(self, operate_time):
-        """Sets the operate_time of this RuleSet.
+        r"""Sets the operate_time of this RuleSet.
 
         最近操作时间
 
@@ -225,7 +225,7 @@ class RuleSet:
 
     @property
     def is_valid(self):
-        """Gets the is_valid of this RuleSet.
+        r"""Gets the is_valid of this RuleSet.
 
         是否生效
 
@@ -236,7 +236,7 @@ class RuleSet:
 
     @is_valid.setter
     def is_valid(self, is_valid):
-        """Sets the is_valid of this RuleSet.
+        r"""Sets the is_valid of this RuleSet.
 
         是否生效
 
@@ -247,7 +247,7 @@ class RuleSet:
 
     @property
     def level(self):
-        """Gets the level of this RuleSet.
+        r"""Gets the level of this RuleSet.
 
         租户级、项目级
 
@@ -258,7 +258,7 @@ class RuleSet:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this RuleSet.
+        r"""Sets the level of this RuleSet.
 
         租户级、项目级
 
@@ -269,7 +269,7 @@ class RuleSet:
 
     @property
     def is_public(self):
-        """Gets the is_public of this RuleSet.
+        r"""Gets the is_public of this RuleSet.
 
         是否系统级
 
@@ -280,7 +280,7 @@ class RuleSet:
 
     @is_public.setter
     def is_public(self, is_public):
-        """Sets the is_public of this RuleSet.
+        r"""Sets the is_public of this RuleSet.
 
         是否系统级
 

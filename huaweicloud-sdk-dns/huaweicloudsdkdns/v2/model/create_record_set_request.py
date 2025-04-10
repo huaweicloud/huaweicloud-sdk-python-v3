@@ -27,7 +27,7 @@ class CreateRecordSetRequest:
     }
 
     def __init__(self, zone_id=None, body=None):
-        """CreateRecordSetRequest
+        r"""CreateRecordSetRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateRecordSetRequest:
 
     @property
     def zone_id(self):
-        """Gets the zone_id of this CreateRecordSetRequest.
+        r"""Gets the zone_id of this CreateRecordSetRequest.
 
         所属zone的ID。
 
@@ -60,7 +60,7 @@ class CreateRecordSetRequest:
 
     @zone_id.setter
     def zone_id(self, zone_id):
-        """Sets the zone_id of this CreateRecordSetRequest.
+        r"""Sets the zone_id of this CreateRecordSetRequest.
 
         所属zone的ID。
 
@@ -71,7 +71,7 @@ class CreateRecordSetRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateRecordSetRequest.
+        r"""Gets the body of this CreateRecordSetRequest.
 
         :return: The body of this CreateRecordSetRequest.
         :rtype: :class:`huaweicloudsdkdns.v2.CreateRecordSetRequestBody`
@@ -80,7 +80,7 @@ class CreateRecordSetRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateRecordSetRequest.
+        r"""Sets the body of this CreateRecordSetRequest.
 
         :param body: The body of this CreateRecordSetRequest.
         :type body: :class:`huaweicloudsdkdns.v2.CreateRecordSetRequestBody`

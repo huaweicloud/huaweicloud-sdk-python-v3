@@ -27,7 +27,7 @@ class SearchNoticesReq:
     }
 
     def __init__(self, top=None, product_type_id=None):
-        """SearchNoticesReq
+        r"""SearchNoticesReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SearchNoticesReq:
 
     @property
     def top(self):
-        """Gets the top of this SearchNoticesReq.
+        r"""Gets the top of this SearchNoticesReq.
 
         返回匹配度最高的数据条数
 
@@ -60,7 +60,7 @@ class SearchNoticesReq:
 
     @top.setter
     def top(self, top):
-        """Sets the top of this SearchNoticesReq.
+        r"""Sets the top of this SearchNoticesReq.
 
         返回匹配度最高的数据条数
 
@@ -71,7 +71,7 @@ class SearchNoticesReq:
 
     @property
     def product_type_id(self):
-        """Gets the product_type_id of this SearchNoticesReq.
+        r"""Gets the product_type_id of this SearchNoticesReq.
 
         产品类型Id
 
@@ -82,7 +82,7 @@ class SearchNoticesReq:
 
     @product_type_id.setter
     def product_type_id(self, product_type_id):
-        """Sets the product_type_id of this SearchNoticesReq.
+        r"""Sets the product_type_id of this SearchNoticesReq.
 
         产品类型Id
 

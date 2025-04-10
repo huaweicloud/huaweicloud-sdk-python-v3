@@ -41,7 +41,7 @@ class ResourceResp:
     }
 
     def __init__(self, extra_info=None, id=None, name=None, protect_status=None, size=None, type=None, backup_size=None, backup_count=None, auto_protect=None):
-        """ResourceResp
+        r"""ResourceResp
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class ResourceResp:
 
     @property
     def extra_info(self):
-        """Gets the extra_info of this ResourceResp.
+        r"""Gets the extra_info of this ResourceResp.
 
         :return: The extra_info of this ResourceResp.
         :rtype: :class:`huaweicloudsdkcbr.v1.ResourceExtraInfo`
@@ -105,7 +105,7 @@ class ResourceResp:
 
     @extra_info.setter
     def extra_info(self, extra_info):
-        """Sets the extra_info of this ResourceResp.
+        r"""Sets the extra_info of this ResourceResp.
 
         :param extra_info: The extra_info of this ResourceResp.
         :type extra_info: :class:`huaweicloudsdkcbr.v1.ResourceExtraInfo`
@@ -114,7 +114,7 @@ class ResourceResp:
 
     @property
     def id(self):
-        """Gets the id of this ResourceResp.
+        r"""Gets the id of this ResourceResp.
 
         待备份资源id
 
@@ -125,7 +125,7 @@ class ResourceResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ResourceResp.
+        r"""Sets the id of this ResourceResp.
 
         待备份资源id
 
@@ -136,7 +136,7 @@ class ResourceResp:
 
     @property
     def name(self):
-        """Gets the name of this ResourceResp.
+        r"""Gets the name of this ResourceResp.
 
         待备份资源名称
 
@@ -147,7 +147,7 @@ class ResourceResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ResourceResp.
+        r"""Sets the name of this ResourceResp.
 
         待备份资源名称
 
@@ -158,7 +158,7 @@ class ResourceResp:
 
     @property
     def protect_status(self):
-        """Gets the protect_status of this ResourceResp.
+        r"""Gets the protect_status of this ResourceResp.
 
         保护状态
 
@@ -169,7 +169,7 @@ class ResourceResp:
 
     @protect_status.setter
     def protect_status(self, protect_status):
-        """Sets the protect_status of this ResourceResp.
+        r"""Sets the protect_status of this ResourceResp.
 
         保护状态
 
@@ -180,7 +180,7 @@ class ResourceResp:
 
     @property
     def size(self):
-        """Gets the size of this ResourceResp.
+        r"""Gets the size of this ResourceResp.
 
         资源已分配容量,单位为GB
 
@@ -191,7 +191,7 @@ class ResourceResp:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ResourceResp.
+        r"""Sets the size of this ResourceResp.
 
         资源已分配容量,单位为GB
 
@@ -202,7 +202,7 @@ class ResourceResp:
 
     @property
     def type(self):
-        """Gets the type of this ResourceResp.
+        r"""Gets the type of this ResourceResp.
 
         待备份资源的类型, 云服务器: OS::Nova::Server, 云硬盘: OS::Cinder::Volume, 裸金属服务器: OS::Ironic::BareMetalServer, 线下本地服务器: OS::Native::Server, 弹性文件系统: OS::Sfs::Turbo, 云桌面：OS::Workspace::DesktopV2
 
@@ -213,7 +213,7 @@ class ResourceResp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ResourceResp.
+        r"""Sets the type of this ResourceResp.
 
         待备份资源的类型, 云服务器: OS::Nova::Server, 云硬盘: OS::Cinder::Volume, 裸金属服务器: OS::Ironic::BareMetalServer, 线下本地服务器: OS::Native::Server, 弹性文件系统: OS::Sfs::Turbo, 云桌面：OS::Workspace::DesktopV2
 
@@ -224,7 +224,7 @@ class ResourceResp:
 
     @property
     def backup_size(self):
-        """Gets the backup_size of this ResourceResp.
+        r"""Gets the backup_size of this ResourceResp.
 
         副本大小
 
@@ -235,7 +235,7 @@ class ResourceResp:
 
     @backup_size.setter
     def backup_size(self, backup_size):
-        """Sets the backup_size of this ResourceResp.
+        r"""Sets the backup_size of this ResourceResp.
 
         副本大小
 
@@ -246,7 +246,7 @@ class ResourceResp:
 
     @property
     def backup_count(self):
-        """Gets the backup_count of this ResourceResp.
+        r"""Gets the backup_count of this ResourceResp.
 
         副本数量
 
@@ -257,7 +257,7 @@ class ResourceResp:
 
     @backup_count.setter
     def backup_count(self, backup_count):
-        """Sets the backup_count of this ResourceResp.
+        r"""Sets the backup_count of this ResourceResp.
 
         副本数量
 
@@ -268,7 +268,7 @@ class ResourceResp:
 
     @property
     def auto_protect(self):
-        """Gets the auto_protect of this ResourceResp.
+        r"""Gets the auto_protect of this ResourceResp.
 
         是否跟随存储库自动备份策略进行备份
 
@@ -279,7 +279,7 @@ class ResourceResp:
 
     @auto_protect.setter
     def auto_protect(self, auto_protect):
-        """Sets the auto_protect of this ResourceResp.
+        r"""Sets the auto_protect of this ResourceResp.
 
         是否跟随存储库自动备份策略进行备份
 

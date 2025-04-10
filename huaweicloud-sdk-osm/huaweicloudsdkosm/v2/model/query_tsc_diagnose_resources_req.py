@@ -27,7 +27,7 @@ class QueryTscDiagnoseResourcesReq:
     }
 
     def __init__(self, project_id=None, region=None):
-        """QueryTscDiagnoseResourcesReq
+        r"""QueryTscDiagnoseResourcesReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class QueryTscDiagnoseResourcesReq:
 
     @property
     def project_id(self):
-        """Gets the project_id of this QueryTscDiagnoseResourcesReq.
+        r"""Gets the project_id of this QueryTscDiagnoseResourcesReq.
 
         项目ID
 
@@ -61,7 +61,7 @@ class QueryTscDiagnoseResourcesReq:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this QueryTscDiagnoseResourcesReq.
+        r"""Sets the project_id of this QueryTscDiagnoseResourcesReq.
 
         项目ID
 
@@ -72,7 +72,7 @@ class QueryTscDiagnoseResourcesReq:
 
     @property
     def region(self):
-        """Gets the region of this QueryTscDiagnoseResourcesReq.
+        r"""Gets the region of this QueryTscDiagnoseResourcesReq.
 
         区域
 
@@ -83,7 +83,7 @@ class QueryTscDiagnoseResourcesReq:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this QueryTscDiagnoseResourcesReq.
+        r"""Sets the region of this QueryTscDiagnoseResourcesReq.
 
         区域
 

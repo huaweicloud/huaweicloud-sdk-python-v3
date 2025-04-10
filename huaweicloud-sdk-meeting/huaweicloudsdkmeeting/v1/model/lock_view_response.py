@@ -24,7 +24,7 @@ class LockViewResponse(SdkResponse):
     }
 
     def __init__(self):
-        """LockViewResponse
+        r"""LockViewResponse
 
         The model defined in huaweicloud sdk
 

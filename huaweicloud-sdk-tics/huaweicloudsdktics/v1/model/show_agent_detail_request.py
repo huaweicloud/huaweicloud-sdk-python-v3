@@ -25,7 +25,7 @@ class ShowAgentDetailRequest:
     }
 
     def __init__(self, agent_id=None):
-        """ShowAgentDetailRequest
+        r"""ShowAgentDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowAgentDetailRequest:
 
     @property
     def agent_id(self):
-        """Gets the agent_id of this ShowAgentDetailRequest.
+        r"""Gets the agent_id of this ShowAgentDetailRequest.
 
         可信节点ID 
 
@@ -53,7 +53,7 @@ class ShowAgentDetailRequest:
 
     @agent_id.setter
     def agent_id(self, agent_id):
-        """Sets the agent_id of this ShowAgentDetailRequest.
+        r"""Sets the agent_id of this ShowAgentDetailRequest.
 
         可信节点ID 
 

@@ -39,7 +39,7 @@ class ListRtcHistoryUsageRequest:
     }
 
     def __init__(self, authorization=None, x_sdk_date=None, x_project_id=None, project_id=None, app=None, metric=None, start_date=None, end_date=None):
-        """ListRtcHistoryUsageRequest
+        r"""ListRtcHistoryUsageRequest
 
         The model defined in huaweicloud sdk
 
@@ -87,7 +87,7 @@ class ListRtcHistoryUsageRequest:
 
     @property
     def authorization(self):
-        """Gets the authorization of this ListRtcHistoryUsageRequest.
+        r"""Gets the authorization of this ListRtcHistoryUsageRequest.
 
         使用AK/SK方式认证时必选，携带的鉴权信息。 
 
@@ -98,7 +98,7 @@ class ListRtcHistoryUsageRequest:
 
     @authorization.setter
     def authorization(self, authorization):
-        """Sets the authorization of this ListRtcHistoryUsageRequest.
+        r"""Sets the authorization of this ListRtcHistoryUsageRequest.
 
         使用AK/SK方式认证时必选，携带的鉴权信息。 
 
@@ -109,7 +109,7 @@ class ListRtcHistoryUsageRequest:
 
     @property
     def x_sdk_date(self):
-        """Gets the x_sdk_date of this ListRtcHistoryUsageRequest.
+        r"""Gets the x_sdk_date of this ListRtcHistoryUsageRequest.
 
         使用AK/SK方式认证时必选，请求的发生时间。 
 
@@ -120,7 +120,7 @@ class ListRtcHistoryUsageRequest:
 
     @x_sdk_date.setter
     def x_sdk_date(self, x_sdk_date):
-        """Sets the x_sdk_date of this ListRtcHistoryUsageRequest.
+        r"""Sets the x_sdk_date of this ListRtcHistoryUsageRequest.
 
         使用AK/SK方式认证时必选，请求的发生时间。 
 
@@ -131,7 +131,7 @@ class ListRtcHistoryUsageRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this ListRtcHistoryUsageRequest.
+        r"""Gets the x_project_id of this ListRtcHistoryUsageRequest.
 
         使用AK/SK方式认证时必选，携带项目ID信息，与路径参数中的项目ID相同。 
 
@@ -142,7 +142,7 @@ class ListRtcHistoryUsageRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this ListRtcHistoryUsageRequest.
+        r"""Sets the x_project_id of this ListRtcHistoryUsageRequest.
 
         使用AK/SK方式认证时必选，携带项目ID信息，与路径参数中的项目ID相同。 
 
@@ -153,7 +153,7 @@ class ListRtcHistoryUsageRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListRtcHistoryUsageRequest.
+        r"""Gets the project_id of this ListRtcHistoryUsageRequest.
 
         项目ID，获取方法请参考[获取项目ID](rtc_07_0015.xml)。 
 
@@ -164,7 +164,7 @@ class ListRtcHistoryUsageRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListRtcHistoryUsageRequest.
+        r"""Sets the project_id of this ListRtcHistoryUsageRequest.
 
         项目ID，获取方法请参考[获取项目ID](rtc_07_0015.xml)。 
 
@@ -175,7 +175,7 @@ class ListRtcHistoryUsageRequest:
 
     @property
     def app(self):
-        """Gets the app of this ListRtcHistoryUsageRequest.
+        r"""Gets the app of this ListRtcHistoryUsageRequest.
 
         应用标识 
 
@@ -186,7 +186,7 @@ class ListRtcHistoryUsageRequest:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this ListRtcHistoryUsageRequest.
+        r"""Sets the app of this ListRtcHistoryUsageRequest.
 
         应用标识 
 
@@ -197,7 +197,7 @@ class ListRtcHistoryUsageRequest:
 
     @property
     def metric(self):
-        """Gets the metric of this ListRtcHistoryUsageRequest.
+        r"""Gets the metric of this ListRtcHistoryUsageRequest.
 
         查询的数据类型 - CommunicationDuration: 音视频通话时长; - TranscodeDuration：转码时长; - RecordDuration：录制时长; 
 
@@ -208,7 +208,7 @@ class ListRtcHistoryUsageRequest:
 
     @metric.setter
     def metric(self, metric):
-        """Sets the metric of this ListRtcHistoryUsageRequest.
+        r"""Sets the metric of this ListRtcHistoryUsageRequest.
 
         查询的数据类型 - CommunicationDuration: 音视频通话时长; - TranscodeDuration：转码时长; - RecordDuration：录制时长; 
 
@@ -219,7 +219,7 @@ class ListRtcHistoryUsageRequest:
 
     @property
     def start_date(self):
-        """Gets the start_date of this ListRtcHistoryUsageRequest.
+        r"""Gets the start_date of this ListRtcHistoryUsageRequest.
 
         查询起始时间。UTC时间，格式：YYYY-MM-DD，如2020-04-23。 
 
@@ -230,7 +230,7 @@ class ListRtcHistoryUsageRequest:
 
     @start_date.setter
     def start_date(self, start_date):
-        """Sets the start_date of this ListRtcHistoryUsageRequest.
+        r"""Sets the start_date of this ListRtcHistoryUsageRequest.
 
         查询起始时间。UTC时间，格式：YYYY-MM-DD，如2020-04-23。 
 
@@ -241,7 +241,7 @@ class ListRtcHistoryUsageRequest:
 
     @property
     def end_date(self):
-        """Gets the end_date of this ListRtcHistoryUsageRequest.
+        r"""Gets the end_date of this ListRtcHistoryUsageRequest.
 
         查询结束时间。UTC时间，格式：YYYY-MM-DD，如2020-04-23。 
 
@@ -252,7 +252,7 @@ class ListRtcHistoryUsageRequest:
 
     @end_date.setter
     def end_date(self, end_date):
-        """Sets the end_date of this ListRtcHistoryUsageRequest.
+        r"""Sets the end_date of this ListRtcHistoryUsageRequest.
 
         查询结束时间。UTC时间，格式：YYYY-MM-DD，如2020-04-23。 
 

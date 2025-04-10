@@ -57,7 +57,7 @@ class FlavorsItems:
     }
 
     def __init__(self, spec_code=None, cloud_service_type_code=None, cloud_resource_type_code=None, cache_mode=None, engine=None, engine_version=None, product_type=None, cpu_type=None, storage_type=None, capacity=None, billing_mode=None, tenant_ip_count=None, pricing_type=None, is_dec=None, attrs=None, flavors_available_zones=None, replica_count=None):
-        """FlavorsItems
+        r"""FlavorsItems
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class FlavorsItems:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this FlavorsItems.
+        r"""Gets the spec_code of this FlavorsItems.
 
         产品规格编码。
 
@@ -166,7 +166,7 @@ class FlavorsItems:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this FlavorsItems.
+        r"""Sets the spec_code of this FlavorsItems.
 
         产品规格编码。
 
@@ -177,7 +177,7 @@ class FlavorsItems:
 
     @property
     def cloud_service_type_code(self):
-        """Gets the cloud_service_type_code of this FlavorsItems.
+        r"""Gets the cloud_service_type_code of this FlavorsItems.
 
         云服务类型编码。
 
@@ -188,7 +188,7 @@ class FlavorsItems:
 
     @cloud_service_type_code.setter
     def cloud_service_type_code(self, cloud_service_type_code):
-        """Sets the cloud_service_type_code of this FlavorsItems.
+        r"""Sets the cloud_service_type_code of this FlavorsItems.
 
         云服务类型编码。
 
@@ -199,7 +199,7 @@ class FlavorsItems:
 
     @property
     def cloud_resource_type_code(self):
-        """Gets the cloud_resource_type_code of this FlavorsItems.
+        r"""Gets the cloud_resource_type_code of this FlavorsItems.
 
         云资源类型编码。
 
@@ -210,7 +210,7 @@ class FlavorsItems:
 
     @cloud_resource_type_code.setter
     def cloud_resource_type_code(self, cloud_resource_type_code):
-        """Sets the cloud_resource_type_code of this FlavorsItems.
+        r"""Sets the cloud_resource_type_code of this FlavorsItems.
 
         云资源类型编码。
 
@@ -221,7 +221,7 @@ class FlavorsItems:
 
     @property
     def cache_mode(self):
-        """Gets the cache_mode of this FlavorsItems.
+        r"""Gets the cache_mode of this FlavorsItems.
 
         缓存实例类型。取值范围如下： - single：表示单机实例 - ha：表示主备实例 - cluster：表示cluster集群实例 - proxy：表示Proxy集群实例 - ha_rw_split： 表示读写分离实例 
 
@@ -232,7 +232,7 @@ class FlavorsItems:
 
     @cache_mode.setter
     def cache_mode(self, cache_mode):
-        """Sets the cache_mode of this FlavorsItems.
+        r"""Sets the cache_mode of this FlavorsItems.
 
         缓存实例类型。取值范围如下： - single：表示单机实例 - ha：表示主备实例 - cluster：表示cluster集群实例 - proxy：表示Proxy集群实例 - ha_rw_split： 表示读写分离实例 
 
@@ -243,7 +243,7 @@ class FlavorsItems:
 
     @property
     def engine(self):
-        """Gets the engine of this FlavorsItems.
+        r"""Gets the engine of this FlavorsItems.
 
         缓存引擎类型。
 
@@ -254,7 +254,7 @@ class FlavorsItems:
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this FlavorsItems.
+        r"""Sets the engine of this FlavorsItems.
 
         缓存引擎类型。
 
@@ -265,7 +265,7 @@ class FlavorsItems:
 
     @property
     def engine_version(self):
-        """Gets the engine_version of this FlavorsItems.
+        r"""Gets the engine_version of this FlavorsItems.
 
         缓存版本，当缓存引擎为Redis时，取值为3.0、4.0或5.0。
 
@@ -276,7 +276,7 @@ class FlavorsItems:
 
     @engine_version.setter
     def engine_version(self, engine_version):
-        """Sets the engine_version of this FlavorsItems.
+        r"""Sets the engine_version of this FlavorsItems.
 
         缓存版本，当缓存引擎为Redis时，取值为3.0、4.0或5.0。
 
@@ -287,7 +287,7 @@ class FlavorsItems:
 
     @property
     def product_type(self):
-        """Gets the product_type of this FlavorsItems.
+        r"""Gets the product_type of this FlavorsItems.
 
         Redis缓存实例的产品类型。取值当前仅支持： generic：标准类型 
 
@@ -298,7 +298,7 @@ class FlavorsItems:
 
     @product_type.setter
     def product_type(self, product_type):
-        """Sets the product_type of this FlavorsItems.
+        r"""Sets the product_type of this FlavorsItems.
 
         Redis缓存实例的产品类型。取值当前仅支持： generic：标准类型 
 
@@ -309,7 +309,7 @@ class FlavorsItems:
 
     @property
     def cpu_type(self):
-        """Gets the cpu_type of this FlavorsItems.
+        r"""Gets the cpu_type of this FlavorsItems.
 
         CPU架构类型。取值范围如下： - x86_64：X86架构 - aarch64: ARM架构 
 
@@ -320,7 +320,7 @@ class FlavorsItems:
 
     @cpu_type.setter
     def cpu_type(self, cpu_type):
-        """Sets the cpu_type of this FlavorsItems.
+        r"""Sets the cpu_type of this FlavorsItems.
 
         CPU架构类型。取值范围如下： - x86_64：X86架构 - aarch64: ARM架构 
 
@@ -331,7 +331,7 @@ class FlavorsItems:
 
     @property
     def storage_type(self):
-        """Gets the storage_type of this FlavorsItems.
+        r"""Gets the storage_type of this FlavorsItems.
 
         存储类型，取值当前仅支持： DRAM:内存存储 
 
@@ -342,7 +342,7 @@ class FlavorsItems:
 
     @storage_type.setter
     def storage_type(self, storage_type):
-        """Sets the storage_type of this FlavorsItems.
+        r"""Sets the storage_type of this FlavorsItems.
 
         存储类型，取值当前仅支持： DRAM:内存存储 
 
@@ -353,7 +353,7 @@ class FlavorsItems:
 
     @property
     def capacity(self):
-        """Gets the capacity of this FlavorsItems.
+        r"""Gets the capacity of this FlavorsItems.
 
         缓存容量（G Byte）。
 
@@ -364,7 +364,7 @@ class FlavorsItems:
 
     @capacity.setter
     def capacity(self, capacity):
-        """Sets the capacity of this FlavorsItems.
+        r"""Sets the capacity of this FlavorsItems.
 
         缓存容量（G Byte）。
 
@@ -375,7 +375,7 @@ class FlavorsItems:
 
     @property
     def billing_mode(self):
-        """Gets the billing_mode of this FlavorsItems.
+        r"""Gets the billing_mode of this FlavorsItems.
 
         计费模式，取值范围如下： - Hourly：按需计费 - Monthly: 包月计费 - Yearly: 包周期计费 
 
@@ -386,7 +386,7 @@ class FlavorsItems:
 
     @billing_mode.setter
     def billing_mode(self, billing_mode):
-        """Sets the billing_mode of this FlavorsItems.
+        r"""Sets the billing_mode of this FlavorsItems.
 
         计费模式，取值范围如下： - Hourly：按需计费 - Monthly: 包月计费 - Yearly: 包周期计费 
 
@@ -397,7 +397,7 @@ class FlavorsItems:
 
     @property
     def tenant_ip_count(self):
-        """Gets the tenant_ip_count of this FlavorsItems.
+        r"""Gets the tenant_ip_count of this FlavorsItems.
 
         租户侧IP数量。
 
@@ -408,7 +408,7 @@ class FlavorsItems:
 
     @tenant_ip_count.setter
     def tenant_ip_count(self, tenant_ip_count):
-        """Sets the tenant_ip_count of this FlavorsItems.
+        r"""Sets the tenant_ip_count of this FlavorsItems.
 
         租户侧IP数量。
 
@@ -419,7 +419,7 @@ class FlavorsItems:
 
     @property
     def pricing_type(self):
-        """Gets the pricing_type of this FlavorsItems.
+        r"""Gets the pricing_type of this FlavorsItems.
 
         定价类型，取值如下： - tier: 阶梯定价，一个规格对应多个容量 - normal: 规格和容量一一对应 
 
@@ -430,7 +430,7 @@ class FlavorsItems:
 
     @pricing_type.setter
     def pricing_type(self, pricing_type):
-        """Sets the pricing_type of this FlavorsItems.
+        r"""Sets the pricing_type of this FlavorsItems.
 
         定价类型，取值如下： - tier: 阶梯定价，一个规格对应多个容量 - normal: 规格和容量一一对应 
 
@@ -441,7 +441,7 @@ class FlavorsItems:
 
     @property
     def is_dec(self):
-        """Gets the is_dec of this FlavorsItems.
+        r"""Gets the is_dec of this FlavorsItems.
 
         是否支持专属云。
 
@@ -452,7 +452,7 @@ class FlavorsItems:
 
     @is_dec.setter
     def is_dec(self, is_dec):
-        """Sets the is_dec of this FlavorsItems.
+        r"""Sets the is_dec of this FlavorsItems.
 
         是否支持专属云。
 
@@ -463,7 +463,7 @@ class FlavorsItems:
 
     @property
     def attrs(self):
-        """Gets the attrs of this FlavorsItems.
+        r"""Gets the attrs of this FlavorsItems.
 
         规格的其他信息。
 
@@ -474,7 +474,7 @@ class FlavorsItems:
 
     @attrs.setter
     def attrs(self, attrs):
-        """Sets the attrs of this FlavorsItems.
+        r"""Sets the attrs of this FlavorsItems.
 
         规格的其他信息。
 
@@ -485,7 +485,7 @@ class FlavorsItems:
 
     @property
     def flavors_available_zones(self):
-        """Gets the flavors_available_zones of this FlavorsItems.
+        r"""Gets the flavors_available_zones of this FlavorsItems.
 
         有资源的可用区。
 
@@ -496,7 +496,7 @@ class FlavorsItems:
 
     @flavors_available_zones.setter
     def flavors_available_zones(self, flavors_available_zones):
-        """Sets the flavors_available_zones of this FlavorsItems.
+        r"""Sets the flavors_available_zones of this FlavorsItems.
 
         有资源的可用区。
 
@@ -507,7 +507,7 @@ class FlavorsItems:
 
     @property
     def replica_count(self):
-        """Gets the replica_count of this FlavorsItems.
+        r"""Gets the replica_count of this FlavorsItems.
 
         副本数
 
@@ -518,7 +518,7 @@ class FlavorsItems:
 
     @replica_count.setter
     def replica_count(self, replica_count):
-        """Sets the replica_count of this FlavorsItems.
+        r"""Sets the replica_count of this FlavorsItems.
 
         副本数
 

@@ -29,7 +29,7 @@ class SwitchSqlLimitControlReqV3:
     }
 
     def __init__(self, db_name=None, id=None, action=None):
-        """SwitchSqlLimitControlReqV3
+        r"""SwitchSqlLimitControlReqV3
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class SwitchSqlLimitControlReqV3:
 
     @property
     def db_name(self):
-        """Gets the db_name of this SwitchSqlLimitControlReqV3.
+        r"""Gets the db_name of this SwitchSqlLimitControlReqV3.
 
         数据库名称。
 
@@ -65,7 +65,7 @@ class SwitchSqlLimitControlReqV3:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this SwitchSqlLimitControlReqV3.
+        r"""Sets the db_name of this SwitchSqlLimitControlReqV3.
 
         数据库名称。
 
@@ -76,7 +76,7 @@ class SwitchSqlLimitControlReqV3:
 
     @property
     def id(self):
-        """Gets the id of this SwitchSqlLimitControlReqV3.
+        r"""Gets the id of this SwitchSqlLimitControlReqV3.
 
         SQL限流ID。
 
@@ -87,7 +87,7 @@ class SwitchSqlLimitControlReqV3:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SwitchSqlLimitControlReqV3.
+        r"""Sets the id of this SwitchSqlLimitControlReqV3.
 
         SQL限流ID。
 
@@ -98,7 +98,7 @@ class SwitchSqlLimitControlReqV3:
 
     @property
     def action(self):
-        """Gets the action of this SwitchSqlLimitControlReqV3.
+        r"""Gets the action of this SwitchSqlLimitControlReqV3.
 
         SQL限流动作标志。 取值为“open”：表示开启当前SQL限流。 取值为“close”：表示关闭当前SQL限流。 取值为“disable_all”：表示禁用所有SQL限流。
 
@@ -109,7 +109,7 @@ class SwitchSqlLimitControlReqV3:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this SwitchSqlLimitControlReqV3.
+        r"""Sets the action of this SwitchSqlLimitControlReqV3.
 
         SQL限流动作标志。 取值为“open”：表示开启当前SQL限流。 取值为“close”：表示关闭当前SQL限流。 取值为“disable_all”：表示禁用所有SQL限流。
 

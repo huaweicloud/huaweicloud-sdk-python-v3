@@ -25,7 +25,7 @@ class ExecuteScriptReq:
     }
 
     def __init__(self, params=None):
-        """ExecuteScriptReq
+        r"""ExecuteScriptReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ExecuteScriptReq:
 
     @property
     def params(self):
-        """Gets the params of this ExecuteScriptReq.
+        r"""Gets the params of this ExecuteScriptReq.
 
         脚本的执行参数
 
@@ -54,7 +54,7 @@ class ExecuteScriptReq:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this ExecuteScriptReq.
+        r"""Sets the params of this ExecuteScriptReq.
 
         脚本的执行参数
 

@@ -49,7 +49,7 @@ class NeutronFirewallGroup:
     }
 
     def __init__(self, id=None, name=None, description=None, admin_state_up=None, egress_firewall_policy_id=None, ingress_firewall_policy_id=None, ports=None, public=None, status=None, tenant_id=None, project_id=None, created_at=None, updated_at=None):
-        """NeutronFirewallGroup
+        r"""NeutronFirewallGroup
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class NeutronFirewallGroup:
 
     @property
     def id(self):
-        """Gets the id of this NeutronFirewallGroup.
+        r"""Gets the id of this NeutronFirewallGroup.
 
         功能说明：网络ACL组的ID
 
@@ -125,7 +125,7 @@ class NeutronFirewallGroup:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NeutronFirewallGroup.
+        r"""Sets the id of this NeutronFirewallGroup.
 
         功能说明：网络ACL组的ID
 
@@ -136,7 +136,7 @@ class NeutronFirewallGroup:
 
     @property
     def name(self):
-        """Gets the name of this NeutronFirewallGroup.
+        r"""Gets the name of this NeutronFirewallGroup.
 
         功能说明：网络ACL组名称 取值范围：0-255个字符
 
@@ -147,7 +147,7 @@ class NeutronFirewallGroup:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NeutronFirewallGroup.
+        r"""Sets the name of this NeutronFirewallGroup.
 
         功能说明：网络ACL组名称 取值范围：0-255个字符
 
@@ -158,7 +158,7 @@ class NeutronFirewallGroup:
 
     @property
     def description(self):
-        """Gets the description of this NeutronFirewallGroup.
+        r"""Gets the description of this NeutronFirewallGroup.
 
         功能说明：网络ACL组描述 取值范围：0-255个字符
 
@@ -169,7 +169,7 @@ class NeutronFirewallGroup:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this NeutronFirewallGroup.
+        r"""Sets the description of this NeutronFirewallGroup.
 
         功能说明：网络ACL组描述 取值范围：0-255个字符
 
@@ -180,7 +180,7 @@ class NeutronFirewallGroup:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this NeutronFirewallGroup.
+        r"""Gets the admin_state_up of this NeutronFirewallGroup.
 
         网络ACL防火墙是否受管理员控制。
 
@@ -191,7 +191,7 @@ class NeutronFirewallGroup:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this NeutronFirewallGroup.
+        r"""Sets the admin_state_up of this NeutronFirewallGroup.
 
         网络ACL防火墙是否受管理员控制。
 
@@ -202,7 +202,7 @@ class NeutronFirewallGroup:
 
     @property
     def egress_firewall_policy_id(self):
-        """Gets the egress_firewall_policy_id of this NeutronFirewallGroup.
+        r"""Gets the egress_firewall_policy_id of this NeutronFirewallGroup.
 
         功能说明：出方向网络ACL策略ID
 
@@ -213,7 +213,7 @@ class NeutronFirewallGroup:
 
     @egress_firewall_policy_id.setter
     def egress_firewall_policy_id(self, egress_firewall_policy_id):
-        """Sets the egress_firewall_policy_id of this NeutronFirewallGroup.
+        r"""Sets the egress_firewall_policy_id of this NeutronFirewallGroup.
 
         功能说明：出方向网络ACL策略ID
 
@@ -224,7 +224,7 @@ class NeutronFirewallGroup:
 
     @property
     def ingress_firewall_policy_id(self):
-        """Gets the ingress_firewall_policy_id of this NeutronFirewallGroup.
+        r"""Gets the ingress_firewall_policy_id of this NeutronFirewallGroup.
 
         功能说明：入方向网络ACL策略ID
 
@@ -235,7 +235,7 @@ class NeutronFirewallGroup:
 
     @ingress_firewall_policy_id.setter
     def ingress_firewall_policy_id(self, ingress_firewall_policy_id):
-        """Sets the ingress_firewall_policy_id of this NeutronFirewallGroup.
+        r"""Sets the ingress_firewall_policy_id of this NeutronFirewallGroup.
 
         功能说明：入方向网络ACL策略ID
 
@@ -246,7 +246,7 @@ class NeutronFirewallGroup:
 
     @property
     def ports(self):
-        """Gets the ports of this NeutronFirewallGroup.
+        r"""Gets the ports of this NeutronFirewallGroup.
 
         取值范围：网络ACL组绑定的端口列表
 
@@ -257,7 +257,7 @@ class NeutronFirewallGroup:
 
     @ports.setter
     def ports(self, ports):
-        """Sets the ports of this NeutronFirewallGroup.
+        r"""Sets the ports of this NeutronFirewallGroup.
 
         取值范围：网络ACL组绑定的端口列表
 
@@ -268,7 +268,7 @@ class NeutronFirewallGroup:
 
     @property
     def public(self):
-        """Gets the public of this NeutronFirewallGroup.
+        r"""Gets the public of this NeutronFirewallGroup.
 
         功能说明：是否支持跨租户共享 取值范围：true/false
 
@@ -279,7 +279,7 @@ class NeutronFirewallGroup:
 
     @public.setter
     def public(self, public):
-        """Sets the public of this NeutronFirewallGroup.
+        r"""Sets the public of this NeutronFirewallGroup.
 
         功能说明：是否支持跨租户共享 取值范围：true/false
 
@@ -290,7 +290,7 @@ class NeutronFirewallGroup:
 
     @property
     def status(self):
-        """Gets the status of this NeutronFirewallGroup.
+        r"""Gets the status of this NeutronFirewallGroup.
 
         功能说明：网络ACL组状态
 
@@ -301,7 +301,7 @@ class NeutronFirewallGroup:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this NeutronFirewallGroup.
+        r"""Sets the status of this NeutronFirewallGroup.
 
         功能说明：网络ACL组状态
 
@@ -312,7 +312,7 @@ class NeutronFirewallGroup:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this NeutronFirewallGroup.
+        r"""Gets the tenant_id of this NeutronFirewallGroup.
 
         功能说明：网络ACL组所属项目ID
 
@@ -323,7 +323,7 @@ class NeutronFirewallGroup:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this NeutronFirewallGroup.
+        r"""Sets the tenant_id of this NeutronFirewallGroup.
 
         功能说明：网络ACL组所属项目ID
 
@@ -334,7 +334,7 @@ class NeutronFirewallGroup:
 
     @property
     def project_id(self):
-        """Gets the project_id of this NeutronFirewallGroup.
+        r"""Gets the project_id of this NeutronFirewallGroup.
 
         功能说明：网络ACL组所属项目ID
 
@@ -345,7 +345,7 @@ class NeutronFirewallGroup:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this NeutronFirewallGroup.
+        r"""Sets the project_id of this NeutronFirewallGroup.
 
         功能说明：网络ACL组所属项目ID
 
@@ -356,7 +356,7 @@ class NeutronFirewallGroup:
 
     @property
     def created_at(self):
-        """Gets the created_at of this NeutronFirewallGroup.
+        r"""Gets the created_at of this NeutronFirewallGroup.
 
         功能说明：资源创建时间，UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
@@ -367,7 +367,7 @@ class NeutronFirewallGroup:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this NeutronFirewallGroup.
+        r"""Sets the created_at of this NeutronFirewallGroup.
 
         功能说明：资源创建时间，UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
@@ -378,7 +378,7 @@ class NeutronFirewallGroup:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this NeutronFirewallGroup.
+        r"""Gets the updated_at of this NeutronFirewallGroup.
 
         功能说明：资源更新时间，UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 
@@ -389,7 +389,7 @@ class NeutronFirewallGroup:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this NeutronFirewallGroup.
+        r"""Sets the updated_at of this NeutronFirewallGroup.
 
         功能说明：资源更新时间，UTC时间 格式：yyyy-MM-ddTHH:mm:ss
 

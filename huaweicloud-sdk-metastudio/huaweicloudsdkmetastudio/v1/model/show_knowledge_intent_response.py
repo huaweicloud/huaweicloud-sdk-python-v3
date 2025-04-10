@@ -38,7 +38,7 @@ class ShowKnowledgeIntentResponse(SdkResponse):
     }
 
     def __init__(self, intent_id=None, name=None, identify=None, answer=None, create_time=None, update_time=None, x_request_id=None):
-        """ShowKnowledgeIntentResponse
+        r"""ShowKnowledgeIntentResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ShowKnowledgeIntentResponse(SdkResponse):
 
     @property
     def intent_id(self):
-        """Gets the intent_id of this ShowKnowledgeIntentResponse.
+        r"""Gets the intent_id of this ShowKnowledgeIntentResponse.
 
         意图ID。
 
@@ -97,7 +97,7 @@ class ShowKnowledgeIntentResponse(SdkResponse):
 
     @intent_id.setter
     def intent_id(self, intent_id):
-        """Sets the intent_id of this ShowKnowledgeIntentResponse.
+        r"""Sets the intent_id of this ShowKnowledgeIntentResponse.
 
         意图ID。
 
@@ -108,7 +108,7 @@ class ShowKnowledgeIntentResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowKnowledgeIntentResponse.
+        r"""Gets the name of this ShowKnowledgeIntentResponse.
 
         主题。
 
@@ -119,7 +119,7 @@ class ShowKnowledgeIntentResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowKnowledgeIntentResponse.
+        r"""Sets the name of this ShowKnowledgeIntentResponse.
 
         主题。
 
@@ -130,7 +130,7 @@ class ShowKnowledgeIntentResponse(SdkResponse):
 
     @property
     def identify(self):
-        """Gets the identify of this ShowKnowledgeIntentResponse.
+        r"""Gets the identify of this ShowKnowledgeIntentResponse.
 
         意图标识。
 
@@ -141,7 +141,7 @@ class ShowKnowledgeIntentResponse(SdkResponse):
 
     @identify.setter
     def identify(self, identify):
-        """Sets the identify of this ShowKnowledgeIntentResponse.
+        r"""Sets the identify of this ShowKnowledgeIntentResponse.
 
         意图标识。
 
@@ -152,7 +152,7 @@ class ShowKnowledgeIntentResponse(SdkResponse):
 
     @property
     def answer(self):
-        """Gets the answer of this ShowKnowledgeIntentResponse.
+        r"""Gets the answer of this ShowKnowledgeIntentResponse.
 
         问题答案。
 
@@ -163,7 +163,7 @@ class ShowKnowledgeIntentResponse(SdkResponse):
 
     @answer.setter
     def answer(self, answer):
-        """Sets the answer of this ShowKnowledgeIntentResponse.
+        r"""Sets the answer of this ShowKnowledgeIntentResponse.
 
         问题答案。
 
@@ -174,7 +174,7 @@ class ShowKnowledgeIntentResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowKnowledgeIntentResponse.
+        r"""Gets the create_time of this ShowKnowledgeIntentResponse.
 
         创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -185,7 +185,7 @@ class ShowKnowledgeIntentResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowKnowledgeIntentResponse.
+        r"""Sets the create_time of this ShowKnowledgeIntentResponse.
 
         创建时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -196,7 +196,7 @@ class ShowKnowledgeIntentResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowKnowledgeIntentResponse.
+        r"""Gets the update_time of this ShowKnowledgeIntentResponse.
 
         更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -207,7 +207,7 @@ class ShowKnowledgeIntentResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowKnowledgeIntentResponse.
+        r"""Sets the update_time of this ShowKnowledgeIntentResponse.
 
         更新时间，格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -218,7 +218,7 @@ class ShowKnowledgeIntentResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowKnowledgeIntentResponse.
+        r"""Gets the x_request_id of this ShowKnowledgeIntentResponse.
 
         :return: The x_request_id of this ShowKnowledgeIntentResponse.
         :rtype: str
@@ -227,7 +227,7 @@ class ShowKnowledgeIntentResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowKnowledgeIntentResponse.
+        r"""Sets the x_request_id of this ShowKnowledgeIntentResponse.
 
         :param x_request_id: The x_request_id of this ShowKnowledgeIntentResponse.
         :type x_request_id: str

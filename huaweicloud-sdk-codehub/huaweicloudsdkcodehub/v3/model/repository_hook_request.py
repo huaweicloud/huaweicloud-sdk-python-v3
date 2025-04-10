@@ -31,7 +31,7 @@ class RepositoryHookRequest:
     }
 
     def __init__(self, hook_url=None, service=None, token=None, hook_events=None):
-        """RepositoryHookRequest
+        r"""RepositoryHookRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class RepositoryHookRequest:
 
     @property
     def hook_url(self):
-        """Gets the hook_url of this RepositoryHookRequest.
+        r"""Gets the hook_url of this RepositoryHookRequest.
 
         触发url
 
@@ -72,7 +72,7 @@ class RepositoryHookRequest:
 
     @hook_url.setter
     def hook_url(self, hook_url):
-        """Sets the hook_url of this RepositoryHookRequest.
+        r"""Sets the hook_url of this RepositoryHookRequest.
 
         触发url
 
@@ -83,7 +83,7 @@ class RepositoryHookRequest:
 
     @property
     def service(self):
-        """Gets the service of this RepositoryHookRequest.
+        r"""Gets the service of this RepositoryHookRequest.
 
         事件来源
 
@@ -94,7 +94,7 @@ class RepositoryHookRequest:
 
     @service.setter
     def service(self, service):
-        """Sets the service of this RepositoryHookRequest.
+        r"""Sets the service of this RepositoryHookRequest.
 
         事件来源
 
@@ -105,7 +105,7 @@ class RepositoryHookRequest:
 
     @property
     def token(self):
-        """Gets the token of this RepositoryHookRequest.
+        r"""Gets the token of this RepositoryHookRequest.
 
         安全令牌
 
@@ -116,7 +116,7 @@ class RepositoryHookRequest:
 
     @token.setter
     def token(self, token):
-        """Sets the token of this RepositoryHookRequest.
+        r"""Sets the token of this RepositoryHookRequest.
 
         安全令牌
 
@@ -127,7 +127,7 @@ class RepositoryHookRequest:
 
     @property
     def hook_events(self):
-        """Gets the hook_events of this RepositoryHookRequest.
+        r"""Gets the hook_events of this RepositoryHookRequest.
 
         触发事件
 
@@ -138,7 +138,7 @@ class RepositoryHookRequest:
 
     @hook_events.setter
     def hook_events(self, hook_events):
-        """Sets the hook_events of this RepositoryHookRequest.
+        r"""Sets the hook_events of this RepositoryHookRequest.
 
         触发事件
 

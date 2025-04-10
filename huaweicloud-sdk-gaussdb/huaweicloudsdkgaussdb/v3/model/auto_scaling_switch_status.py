@@ -29,7 +29,7 @@ class AutoScalingSwitchStatus:
     }
 
     def __init__(self, scaling_switch=None, flavor_switch=None, read_only_switch=None):
-        """AutoScalingSwitchStatus
+        r"""AutoScalingSwitchStatus
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AutoScalingSwitchStatus:
 
     @property
     def scaling_switch(self):
-        """Gets the scaling_switch of this AutoScalingSwitchStatus.
+        r"""Gets the scaling_switch of this AutoScalingSwitchStatus.
 
         自动变配开关状态。  取值：  - ON：开启。 - OFF：关闭。
 
@@ -68,7 +68,7 @@ class AutoScalingSwitchStatus:
 
     @scaling_switch.setter
     def scaling_switch(self, scaling_switch):
-        """Sets the scaling_switch of this AutoScalingSwitchStatus.
+        r"""Sets the scaling_switch of this AutoScalingSwitchStatus.
 
         自动变配开关状态。  取值：  - ON：开启。 - OFF：关闭。
 
@@ -79,7 +79,7 @@ class AutoScalingSwitchStatus:
 
     @property
     def flavor_switch(self):
-        """Gets the flavor_switch of this AutoScalingSwitchStatus.
+        r"""Gets the flavor_switch of this AutoScalingSwitchStatus.
 
         扩缩规格开关状态。  取值：  - ON：开启。 - OFF：关闭。
 
@@ -90,7 +90,7 @@ class AutoScalingSwitchStatus:
 
     @flavor_switch.setter
     def flavor_switch(self, flavor_switch):
-        """Sets the flavor_switch of this AutoScalingSwitchStatus.
+        r"""Sets the flavor_switch of this AutoScalingSwitchStatus.
 
         扩缩规格开关状态。  取值：  - ON：开启。 - OFF：关闭。
 
@@ -101,7 +101,7 @@ class AutoScalingSwitchStatus:
 
     @property
     def read_only_switch(self):
-        """Gets the read_only_switch of this AutoScalingSwitchStatus.
+        r"""Gets the read_only_switch of this AutoScalingSwitchStatus.
 
         增删只读节点开关状态。  取值：  - ON：开启。 - OFF：关闭。
 
@@ -112,7 +112,7 @@ class AutoScalingSwitchStatus:
 
     @read_only_switch.setter
     def read_only_switch(self, read_only_switch):
-        """Sets the read_only_switch of this AutoScalingSwitchStatus.
+        r"""Sets the read_only_switch of this AutoScalingSwitchStatus.
 
         增删只读节点开关状态。  取值：  - ON：开启。 - OFF：关闭。
 

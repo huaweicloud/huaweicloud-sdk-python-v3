@@ -29,7 +29,7 @@ class BatchRestartOrDeleteInstanceReq:
     }
 
     def __init__(self, instances=None, action=None, all_failure=None):
-        """BatchRestartOrDeleteInstanceReq
+        r"""BatchRestartOrDeleteInstanceReq
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class BatchRestartOrDeleteInstanceReq:
 
     @property
     def instances(self):
-        """Gets the instances of this BatchRestartOrDeleteInstanceReq.
+        r"""Gets the instances of this BatchRestartOrDeleteInstanceReq.
 
         实例的ID列表。
 
@@ -67,7 +67,7 @@ class BatchRestartOrDeleteInstanceReq:
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this BatchRestartOrDeleteInstanceReq.
+        r"""Sets the instances of this BatchRestartOrDeleteInstanceReq.
 
         实例的ID列表。
 
@@ -78,7 +78,7 @@ class BatchRestartOrDeleteInstanceReq:
 
     @property
     def action(self):
-        """Gets the action of this BatchRestartOrDeleteInstanceReq.
+        r"""Gets the action of this BatchRestartOrDeleteInstanceReq.
 
         对实例的操作：delete
 
@@ -89,7 +89,7 @@ class BatchRestartOrDeleteInstanceReq:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this BatchRestartOrDeleteInstanceReq.
+        r"""Sets the action of this BatchRestartOrDeleteInstanceReq.
 
         对实例的操作：delete
 
@@ -100,7 +100,7 @@ class BatchRestartOrDeleteInstanceReq:
 
     @property
     def all_failure(self):
-        """Gets the all_failure of this BatchRestartOrDeleteInstanceReq.
+        r"""Gets the all_failure of this BatchRestartOrDeleteInstanceReq.
 
         是否批量删除创建失败的实例。  当参数值为“rabbitmq”时，删除租户所有创建失败的实例，此时请求参数instances可为空。
 
@@ -111,7 +111,7 @@ class BatchRestartOrDeleteInstanceReq:
 
     @all_failure.setter
     def all_failure(self, all_failure):
-        """Sets the all_failure of this BatchRestartOrDeleteInstanceReq.
+        r"""Sets the all_failure of this BatchRestartOrDeleteInstanceReq.
 
         是否批量删除创建失败的实例。  当参数值为“rabbitmq”时，删除租户所有创建失败的实例，此时请求参数instances可为空。
 

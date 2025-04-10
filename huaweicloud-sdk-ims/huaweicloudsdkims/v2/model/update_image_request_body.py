@@ -29,7 +29,7 @@ class UpdateImageRequestBody:
     }
 
     def __init__(self, op=None, path=None, value=None):
-        """UpdateImageRequestBody
+        r"""UpdateImageRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class UpdateImageRequestBody:
 
     @property
     def op(self):
-        """Gets the op of this UpdateImageRequestBody.
+        r"""Gets the op of this UpdateImageRequestBody.
 
         操作类型，目前取值为add，replace和remove。
 
@@ -65,7 +65,7 @@ class UpdateImageRequestBody:
 
     @op.setter
     def op(self, op):
-        """Sets the op of this UpdateImageRequestBody.
+        r"""Sets the op of this UpdateImageRequestBody.
 
         操作类型，目前取值为add，replace和remove。
 
@@ -76,7 +76,7 @@ class UpdateImageRequestBody:
 
     @property
     def path(self):
-        """Gets the path of this UpdateImageRequestBody.
+        r"""Gets the path of this UpdateImageRequestBody.
 
         需要更新的属性名称，需要在属性名称前加“/”。
 
@@ -87,7 +87,7 @@ class UpdateImageRequestBody:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this UpdateImageRequestBody.
+        r"""Sets the path of this UpdateImageRequestBody.
 
         需要更新的属性名称，需要在属性名称前加“/”。
 
@@ -98,7 +98,7 @@ class UpdateImageRequestBody:
 
     @property
     def value(self):
-        """Gets the value of this UpdateImageRequestBody.
+        r"""Gets the value of this UpdateImageRequestBody.
 
         需要更新属性的值。
 
@@ -109,7 +109,7 @@ class UpdateImageRequestBody:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this UpdateImageRequestBody.
+        r"""Sets the value of this UpdateImageRequestBody.
 
         需要更新属性的值。
 

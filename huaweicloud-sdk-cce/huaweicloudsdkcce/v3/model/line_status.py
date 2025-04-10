@@ -29,7 +29,7 @@ class LineStatus:
     }
 
     def __init__(self, start_point=None, end_point=None, critical=None):
-        """LineStatus
+        r"""LineStatus
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class LineStatus:
 
     @property
     def start_point(self):
-        """Gets the start_point of this LineStatus.
+        r"""Gets the start_point of this LineStatus.
 
         :return: The start_point of this LineStatus.
         :rtype: :class:`huaweicloudsdkcce.v3.Point`
@@ -66,7 +66,7 @@ class LineStatus:
 
     @start_point.setter
     def start_point(self, start_point):
-        """Sets the start_point of this LineStatus.
+        r"""Sets the start_point of this LineStatus.
 
         :param start_point: The start_point of this LineStatus.
         :type start_point: :class:`huaweicloudsdkcce.v3.Point`
@@ -75,7 +75,7 @@ class LineStatus:
 
     @property
     def end_point(self):
-        """Gets the end_point of this LineStatus.
+        r"""Gets the end_point of this LineStatus.
 
         :return: The end_point of this LineStatus.
         :rtype: :class:`huaweicloudsdkcce.v3.Point`
@@ -84,7 +84,7 @@ class LineStatus:
 
     @end_point.setter
     def end_point(self, end_point):
-        """Sets the end_point of this LineStatus.
+        r"""Sets the end_point of this LineStatus.
 
         :param end_point: The end_point of this LineStatus.
         :type end_point: :class:`huaweicloudsdkcce.v3.Point`
@@ -93,7 +93,7 @@ class LineStatus:
 
     @property
     def critical(self):
-        """Gets the critical of this LineStatus.
+        r"""Gets the critical of this LineStatus.
 
         表示是否为关键线路（关键线路未执行无法取消升级流程）
 
@@ -104,7 +104,7 @@ class LineStatus:
 
     @critical.setter
     def critical(self, critical):
-        """Sets the critical of this LineStatus.
+        r"""Sets the critical of this LineStatus.
 
         表示是否为关键线路（关键线路未执行无法取消升级流程）
 

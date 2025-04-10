@@ -29,7 +29,7 @@ class UpdateInstanceConfigurationRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """UpdateInstanceConfigurationRequest
+        r"""UpdateInstanceConfigurationRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateInstanceConfigurationRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateInstanceConfigurationRequest.
+        r"""Gets the x_language of this UpdateInstanceConfigurationRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class UpdateInstanceConfigurationRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateInstanceConfigurationRequest.
+        r"""Sets the x_language of this UpdateInstanceConfigurationRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class UpdateInstanceConfigurationRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateInstanceConfigurationRequest.
+        r"""Gets the instance_id of this UpdateInstanceConfigurationRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class UpdateInstanceConfigurationRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateInstanceConfigurationRequest.
+        r"""Sets the instance_id of this UpdateInstanceConfigurationRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class UpdateInstanceConfigurationRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateInstanceConfigurationRequest.
+        r"""Gets the body of this UpdateInstanceConfigurationRequest.
 
         :return: The body of this UpdateInstanceConfigurationRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.UpdateInstanceConfigurationRequestBody`
@@ -109,7 +109,7 @@ class UpdateInstanceConfigurationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateInstanceConfigurationRequest.
+        r"""Sets the body of this UpdateInstanceConfigurationRequest.
 
         :param body: The body of this UpdateInstanceConfigurationRequest.
         :type body: :class:`huaweicloudsdkrds.v3.UpdateInstanceConfigurationRequestBody`

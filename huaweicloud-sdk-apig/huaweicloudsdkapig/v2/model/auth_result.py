@@ -33,7 +33,7 @@ class AuthResult:
     }
 
     def __init__(self, status=None, error_msg=None, error_code=None, api_name=None, app_name=None):
-        """AuthResult
+        r"""AuthResult
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class AuthResult:
 
     @property
     def status(self):
-        """Gets the status of this AuthResult.
+        r"""Gets the status of this AuthResult.
 
         授权结果 - SUCCESS：授权成功 - SKIPPED：跳过 - FAILED：授权失败
 
@@ -82,7 +82,7 @@ class AuthResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AuthResult.
+        r"""Sets the status of this AuthResult.
 
         授权结果 - SUCCESS：授权成功 - SKIPPED：跳过 - FAILED：授权失败
 
@@ -93,7 +93,7 @@ class AuthResult:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this AuthResult.
+        r"""Gets the error_msg of this AuthResult.
 
         授权失败错误信息
 
@@ -104,7 +104,7 @@ class AuthResult:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this AuthResult.
+        r"""Sets the error_msg of this AuthResult.
 
         授权失败错误信息
 
@@ -115,7 +115,7 @@ class AuthResult:
 
     @property
     def error_code(self):
-        """Gets the error_code of this AuthResult.
+        r"""Gets the error_code of this AuthResult.
 
         授权失败错误码
 
@@ -126,7 +126,7 @@ class AuthResult:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this AuthResult.
+        r"""Sets the error_code of this AuthResult.
 
         授权失败错误码
 
@@ -137,7 +137,7 @@ class AuthResult:
 
     @property
     def api_name(self):
-        """Gets the api_name of this AuthResult.
+        r"""Gets the api_name of this AuthResult.
 
         授权失败的API名称
 
@@ -148,7 +148,7 @@ class AuthResult:
 
     @api_name.setter
     def api_name(self, api_name):
-        """Sets the api_name of this AuthResult.
+        r"""Sets the api_name of this AuthResult.
 
         授权失败的API名称
 
@@ -159,7 +159,7 @@ class AuthResult:
 
     @property
     def app_name(self):
-        """Gets the app_name of this AuthResult.
+        r"""Gets the app_name of this AuthResult.
 
         授权失败的APP名称
 
@@ -170,7 +170,7 @@ class AuthResult:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this AuthResult.
+        r"""Sets the app_name of this AuthResult.
 
         授权失败的APP名称
 

@@ -25,7 +25,7 @@ class ServerJobInfos:
     }
 
     def __init__(self, items=None):
-        """ServerJobInfos
+        r"""ServerJobInfos
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ServerJobInfos:
 
     @property
     def items(self):
-        """Gets the items of this ServerJobInfos.
+        r"""Gets the items of this ServerJobInfos.
 
         服务器任务信息。
 
@@ -54,7 +54,7 @@ class ServerJobInfos:
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ServerJobInfos.
+        r"""Sets the items of this ServerJobInfos.
 
         服务器任务信息。
 

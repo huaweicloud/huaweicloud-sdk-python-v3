@@ -34,7 +34,7 @@ class ListEntitiesRequest:
     }
 
     def __init__(self, x_security_token=None, parent_id=None, child_id=None, limit=None, marker=None):
-        """ListEntitiesRequest
+        r"""ListEntitiesRequest
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListEntitiesRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this ListEntitiesRequest.
+        r"""Gets the x_security_token of this ListEntitiesRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -83,7 +83,7 @@ class ListEntitiesRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this ListEntitiesRequest.
+        r"""Sets the x_security_token of this ListEntitiesRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -94,7 +94,7 @@ class ListEntitiesRequest:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this ListEntitiesRequest.
+        r"""Gets the parent_id of this ListEntitiesRequest.
 
         父节点（根或组织单元）的唯一标识符（ID）。
 
@@ -105,7 +105,7 @@ class ListEntitiesRequest:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this ListEntitiesRequest.
+        r"""Sets the parent_id of this ListEntitiesRequest.
 
         父节点（根或组织单元）的唯一标识符（ID）。
 
@@ -116,7 +116,7 @@ class ListEntitiesRequest:
 
     @property
     def child_id(self):
-        """Gets the child_id of this ListEntitiesRequest.
+        r"""Gets the child_id of this ListEntitiesRequest.
 
         子节点（组织单元）的唯一标识符（ID）。
 
@@ -127,7 +127,7 @@ class ListEntitiesRequest:
 
     @child_id.setter
     def child_id(self, child_id):
-        """Sets the child_id of this ListEntitiesRequest.
+        r"""Sets the child_id of this ListEntitiesRequest.
 
         子节点（组织单元）的唯一标识符（ID）。
 
@@ -138,7 +138,7 @@ class ListEntitiesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListEntitiesRequest.
+        r"""Gets the limit of this ListEntitiesRequest.
 
         页面中最大结果数量。
 
@@ -149,7 +149,7 @@ class ListEntitiesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEntitiesRequest.
+        r"""Sets the limit of this ListEntitiesRequest.
 
         页面中最大结果数量。
 
@@ -160,7 +160,7 @@ class ListEntitiesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListEntitiesRequest.
+        r"""Gets the marker of this ListEntitiesRequest.
 
         分页标记。
 
@@ -171,7 +171,7 @@ class ListEntitiesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListEntitiesRequest.
+        r"""Sets the marker of this ListEntitiesRequest.
 
         分页标记。
 

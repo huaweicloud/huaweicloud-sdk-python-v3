@@ -27,7 +27,7 @@ class RuleScope:
     }
 
     def __init__(self):
-        """RuleScope
+        r"""RuleScope
 
         The model defined in huaweicloud sdk
 

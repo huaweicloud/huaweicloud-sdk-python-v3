@@ -30,7 +30,7 @@ class GetAllRepositoryByProjectIdResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """GetAllRepositoryByProjectIdResponse
+        r"""GetAllRepositoryByProjectIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class GetAllRepositoryByProjectIdResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this GetAllRepositoryByProjectIdResponse.
+        r"""Gets the error of this GetAllRepositoryByProjectIdResponse.
 
         :return: The error of this GetAllRepositoryByProjectIdResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class GetAllRepositoryByProjectIdResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this GetAllRepositoryByProjectIdResponse.
+        r"""Sets the error of this GetAllRepositoryByProjectIdResponse.
 
         :param error: The error of this GetAllRepositoryByProjectIdResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class GetAllRepositoryByProjectIdResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this GetAllRepositoryByProjectIdResponse.
+        r"""Gets the result of this GetAllRepositoryByProjectIdResponse.
 
         :return: The result of this GetAllRepositoryByProjectIdResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.RepoListInfo`
@@ -85,7 +85,7 @@ class GetAllRepositoryByProjectIdResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this GetAllRepositoryByProjectIdResponse.
+        r"""Sets the result of this GetAllRepositoryByProjectIdResponse.
 
         :param result: The result of this GetAllRepositoryByProjectIdResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.RepoListInfo`
@@ -94,7 +94,7 @@ class GetAllRepositoryByProjectIdResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this GetAllRepositoryByProjectIdResponse.
+        r"""Gets the status of this GetAllRepositoryByProjectIdResponse.
 
         响应状态
 
@@ -105,7 +105,7 @@ class GetAllRepositoryByProjectIdResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this GetAllRepositoryByProjectIdResponse.
+        r"""Sets the status of this GetAllRepositoryByProjectIdResponse.
 
         响应状态
 

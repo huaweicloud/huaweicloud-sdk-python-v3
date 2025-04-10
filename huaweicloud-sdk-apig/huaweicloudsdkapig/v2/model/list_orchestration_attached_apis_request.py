@@ -35,7 +35,7 @@ class ListOrchestrationAttachedApisRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, orchestration_id=None, api_name=None, api_id=None):
-        """ListOrchestrationAttachedApisRequest
+        r"""ListOrchestrationAttachedApisRequest
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class ListOrchestrationAttachedApisRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListOrchestrationAttachedApisRequest.
+        r"""Gets the instance_id of this ListOrchestrationAttachedApisRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -87,7 +87,7 @@ class ListOrchestrationAttachedApisRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListOrchestrationAttachedApisRequest.
+        r"""Sets the instance_id of this ListOrchestrationAttachedApisRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -98,7 +98,7 @@ class ListOrchestrationAttachedApisRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListOrchestrationAttachedApisRequest.
+        r"""Gets the offset of this ListOrchestrationAttachedApisRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -109,7 +109,7 @@ class ListOrchestrationAttachedApisRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListOrchestrationAttachedApisRequest.
+        r"""Sets the offset of this ListOrchestrationAttachedApisRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -120,7 +120,7 @@ class ListOrchestrationAttachedApisRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListOrchestrationAttachedApisRequest.
+        r"""Gets the limit of this ListOrchestrationAttachedApisRequest.
 
         每页显示的条目数量，条目数量小于等于0时，自动转换为20，条目数量大于500时，自动转换为500
 
@@ -131,7 +131,7 @@ class ListOrchestrationAttachedApisRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListOrchestrationAttachedApisRequest.
+        r"""Sets the limit of this ListOrchestrationAttachedApisRequest.
 
         每页显示的条目数量，条目数量小于等于0时，自动转换为20，条目数量大于500时，自动转换为500
 
@@ -142,7 +142,7 @@ class ListOrchestrationAttachedApisRequest:
 
     @property
     def orchestration_id(self):
-        """Gets the orchestration_id of this ListOrchestrationAttachedApisRequest.
+        r"""Gets the orchestration_id of this ListOrchestrationAttachedApisRequest.
 
         编排规则编号
 
@@ -153,7 +153,7 @@ class ListOrchestrationAttachedApisRequest:
 
     @orchestration_id.setter
     def orchestration_id(self, orchestration_id):
-        """Sets the orchestration_id of this ListOrchestrationAttachedApisRequest.
+        r"""Sets the orchestration_id of this ListOrchestrationAttachedApisRequest.
 
         编排规则编号
 
@@ -164,7 +164,7 @@ class ListOrchestrationAttachedApisRequest:
 
     @property
     def api_name(self):
-        """Gets the api_name of this ListOrchestrationAttachedApisRequest.
+        r"""Gets the api_name of this ListOrchestrationAttachedApisRequest.
 
         API名称。
 
@@ -175,7 +175,7 @@ class ListOrchestrationAttachedApisRequest:
 
     @api_name.setter
     def api_name(self, api_name):
-        """Sets the api_name of this ListOrchestrationAttachedApisRequest.
+        r"""Sets the api_name of this ListOrchestrationAttachedApisRequest.
 
         API名称。
 
@@ -186,7 +186,7 @@ class ListOrchestrationAttachedApisRequest:
 
     @property
     def api_id(self):
-        """Gets the api_id of this ListOrchestrationAttachedApisRequest.
+        r"""Gets the api_id of this ListOrchestrationAttachedApisRequest.
 
         API编号。
 
@@ -197,7 +197,7 @@ class ListOrchestrationAttachedApisRequest:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this ListOrchestrationAttachedApisRequest.
+        r"""Sets the api_id of this ListOrchestrationAttachedApisRequest.
 
         API编号。
 

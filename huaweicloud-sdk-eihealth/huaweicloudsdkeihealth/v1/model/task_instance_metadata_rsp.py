@@ -27,7 +27,7 @@ class TaskInstanceMetadataRsp:
     }
 
     def __init__(self, name=None, namespace=None):
-        """TaskInstanceMetadataRsp
+        r"""TaskInstanceMetadataRsp
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TaskInstanceMetadataRsp:
 
     @property
     def name(self):
-        """Gets the name of this TaskInstanceMetadataRsp.
+        r"""Gets the name of this TaskInstanceMetadataRsp.
 
         实例名称
 
@@ -61,7 +61,7 @@ class TaskInstanceMetadataRsp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TaskInstanceMetadataRsp.
+        r"""Sets the name of this TaskInstanceMetadataRsp.
 
         实例名称
 
@@ -72,7 +72,7 @@ class TaskInstanceMetadataRsp:
 
     @property
     def namespace(self):
-        """Gets the namespace of this TaskInstanceMetadataRsp.
+        r"""Gets the namespace of this TaskInstanceMetadataRsp.
 
         命名空间
 
@@ -83,7 +83,7 @@ class TaskInstanceMetadataRsp:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this TaskInstanceMetadataRsp.
+        r"""Sets the namespace of this TaskInstanceMetadataRsp.
 
         命名空间
 

@@ -33,7 +33,7 @@ class UpdateRuleReq:
     }
 
     def __init__(self, rule_name=None, description=None, select=None, where=None, active=None):
-        """UpdateRuleReq
+        r"""UpdateRuleReq
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class UpdateRuleReq:
 
     @property
     def rule_name(self):
-        """Gets the rule_name of this UpdateRuleReq.
+        r"""Gets the rule_name of this UpdateRuleReq.
 
         **参数说明**：规则名称。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合
 
@@ -82,7 +82,7 @@ class UpdateRuleReq:
 
     @rule_name.setter
     def rule_name(self, rule_name):
-        """Sets the rule_name of this UpdateRuleReq.
+        r"""Sets the rule_name of this UpdateRuleReq.
 
         **参数说明**：规则名称。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合
 
@@ -93,7 +93,7 @@ class UpdateRuleReq:
 
     @property
     def description(self):
-        """Gets the description of this UpdateRuleReq.
+        r"""Gets the description of this UpdateRuleReq.
 
         **参数说明**：用户自定义的规则描述。
 
@@ -104,7 +104,7 @@ class UpdateRuleReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateRuleReq.
+        r"""Sets the description of this UpdateRuleReq.
 
         **参数说明**：用户自定义的规则描述。
 
@@ -115,7 +115,7 @@ class UpdateRuleReq:
 
     @property
     def select(self):
-        """Gets the select of this UpdateRuleReq.
+        r"""Gets the select of this UpdateRuleReq.
 
         **参数说明**：用户自定义sql select语句，最大长度2500，更新sql时，select跟where必须同时传参，如果需要清除该参数的值，输入空字符串，该参数仅供标准版和企业版用户使用。
 
@@ -126,7 +126,7 @@ class UpdateRuleReq:
 
     @select.setter
     def select(self, select):
-        """Sets the select of this UpdateRuleReq.
+        r"""Sets the select of this UpdateRuleReq.
 
         **参数说明**：用户自定义sql select语句，最大长度2500，更新sql时，select跟where必须同时传参，如果需要清除该参数的值，输入空字符串，该参数仅供标准版和企业版用户使用。
 
@@ -137,7 +137,7 @@ class UpdateRuleReq:
 
     @property
     def where(self):
-        """Gets the where of this UpdateRuleReq.
+        r"""Gets the where of this UpdateRuleReq.
 
         **参数说明**：用户自定义sql where语句，最大长度2500，更新操作时，select跟where必须同时传参，如果需要清除该参数的值，输入空字符串，该参数仅供标准版和企业版用户使用。
 
@@ -148,7 +148,7 @@ class UpdateRuleReq:
 
     @where.setter
     def where(self, where):
-        """Sets the where of this UpdateRuleReq.
+        r"""Sets the where of this UpdateRuleReq.
 
         **参数说明**：用户自定义sql where语句，最大长度2500，更新操作时，select跟where必须同时传参，如果需要清除该参数的值，输入空字符串，该参数仅供标准版和企业版用户使用。
 
@@ -159,7 +159,7 @@ class UpdateRuleReq:
 
     @property
     def active(self):
-        """Gets the active of this UpdateRuleReq.
+        r"""Gets the active of this UpdateRuleReq.
 
         **参数说明**：修改规则条件的状态是否为激活。
 
@@ -170,7 +170,7 @@ class UpdateRuleReq:
 
     @active.setter
     def active(self, active):
-        """Sets the active of this UpdateRuleReq.
+        r"""Sets the active of this UpdateRuleReq.
 
         **参数说明**：修改规则条件的状态是否为激活。
 

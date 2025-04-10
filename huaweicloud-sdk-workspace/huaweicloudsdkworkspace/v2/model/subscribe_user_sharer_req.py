@@ -31,7 +31,7 @@ class SubscribeUserSharerReq:
     }
 
     def __init__(self, user_sharer_sku=None, order_id=None, users=None, enterprise_project_id=None):
-        """SubscribeUserSharerReq
+        r"""SubscribeUserSharerReq
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class SubscribeUserSharerReq:
 
     @property
     def user_sharer_sku(self):
-        """Gets the user_sharer_sku of this SubscribeUserSharerReq.
+        r"""Gets the user_sharer_sku of this SubscribeUserSharerReq.
 
         用户协同资源SKU码
 
@@ -72,7 +72,7 @@ class SubscribeUserSharerReq:
 
     @user_sharer_sku.setter
     def user_sharer_sku(self, user_sharer_sku):
-        """Sets the user_sharer_sku of this SubscribeUserSharerReq.
+        r"""Sets the user_sharer_sku of this SubscribeUserSharerReq.
 
         用户协同资源SKU码
 
@@ -83,7 +83,7 @@ class SubscribeUserSharerReq:
 
     @property
     def order_id(self):
-        """Gets the order_id of this SubscribeUserSharerReq.
+        r"""Gets the order_id of this SubscribeUserSharerReq.
 
         订单ID
 
@@ -94,7 +94,7 @@ class SubscribeUserSharerReq:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this SubscribeUserSharerReq.
+        r"""Sets the order_id of this SubscribeUserSharerReq.
 
         订单ID
 
@@ -105,7 +105,7 @@ class SubscribeUserSharerReq:
 
     @property
     def users(self):
-        """Gets the users of this SubscribeUserSharerReq.
+        r"""Gets the users of this SubscribeUserSharerReq.
 
         开通协同的的用户列表。
 
@@ -116,7 +116,7 @@ class SubscribeUserSharerReq:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this SubscribeUserSharerReq.
+        r"""Sets the users of this SubscribeUserSharerReq.
 
         开通协同的的用户列表。
 
@@ -127,7 +127,7 @@ class SubscribeUserSharerReq:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this SubscribeUserSharerReq.
+        r"""Gets the enterprise_project_id of this SubscribeUserSharerReq.
 
         企业项目ID
 
@@ -138,7 +138,7 @@ class SubscribeUserSharerReq:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this SubscribeUserSharerReq.
+        r"""Sets the enterprise_project_id of this SubscribeUserSharerReq.
 
         企业项目ID
 

@@ -38,7 +38,7 @@ class CreateSecurityResourcePermissionPolicyResponse(SdkResponse):
     }
 
     def __init__(self, policy_id=None, policy_name=None, resources=None, members=None, create_time=None, create_user=None, update_time=None):
-        """CreateSecurityResourcePermissionPolicyResponse
+        r"""CreateSecurityResourcePermissionPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class CreateSecurityResourcePermissionPolicyResponse(SdkResponse):
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this CreateSecurityResourcePermissionPolicyResponse.
+        r"""Gets the policy_id of this CreateSecurityResourcePermissionPolicyResponse.
 
         策略id
 
@@ -97,7 +97,7 @@ class CreateSecurityResourcePermissionPolicyResponse(SdkResponse):
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this CreateSecurityResourcePermissionPolicyResponse.
+        r"""Sets the policy_id of this CreateSecurityResourcePermissionPolicyResponse.
 
         策略id
 
@@ -108,7 +108,7 @@ class CreateSecurityResourcePermissionPolicyResponse(SdkResponse):
 
     @property
     def policy_name(self):
-        """Gets the policy_name of this CreateSecurityResourcePermissionPolicyResponse.
+        r"""Gets the policy_name of this CreateSecurityResourcePermissionPolicyResponse.
 
         策略名称
 
@@ -119,7 +119,7 @@ class CreateSecurityResourcePermissionPolicyResponse(SdkResponse):
 
     @policy_name.setter
     def policy_name(self, policy_name):
-        """Sets the policy_name of this CreateSecurityResourcePermissionPolicyResponse.
+        r"""Sets the policy_name of this CreateSecurityResourcePermissionPolicyResponse.
 
         策略名称
 
@@ -130,7 +130,7 @@ class CreateSecurityResourcePermissionPolicyResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this CreateSecurityResourcePermissionPolicyResponse.
+        r"""Gets the resources of this CreateSecurityResourcePermissionPolicyResponse.
 
         资源对象列表
 
@@ -141,7 +141,7 @@ class CreateSecurityResourcePermissionPolicyResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this CreateSecurityResourcePermissionPolicyResponse.
+        r"""Sets the resources of this CreateSecurityResourcePermissionPolicyResponse.
 
         资源对象列表
 
@@ -152,7 +152,7 @@ class CreateSecurityResourcePermissionPolicyResponse(SdkResponse):
 
     @property
     def members(self):
-        """Gets the members of this CreateSecurityResourcePermissionPolicyResponse.
+        r"""Gets the members of this CreateSecurityResourcePermissionPolicyResponse.
 
         成员列表
 
@@ -163,7 +163,7 @@ class CreateSecurityResourcePermissionPolicyResponse(SdkResponse):
 
     @members.setter
     def members(self, members):
-        """Sets the members of this CreateSecurityResourcePermissionPolicyResponse.
+        r"""Sets the members of this CreateSecurityResourcePermissionPolicyResponse.
 
         成员列表
 
@@ -174,7 +174,7 @@ class CreateSecurityResourcePermissionPolicyResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreateSecurityResourcePermissionPolicyResponse.
+        r"""Gets the create_time of this CreateSecurityResourcePermissionPolicyResponse.
 
         创建时间
 
@@ -185,7 +185,7 @@ class CreateSecurityResourcePermissionPolicyResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreateSecurityResourcePermissionPolicyResponse.
+        r"""Sets the create_time of this CreateSecurityResourcePermissionPolicyResponse.
 
         创建时间
 
@@ -196,7 +196,7 @@ class CreateSecurityResourcePermissionPolicyResponse(SdkResponse):
 
     @property
     def create_user(self):
-        """Gets the create_user of this CreateSecurityResourcePermissionPolicyResponse.
+        r"""Gets the create_user of this CreateSecurityResourcePermissionPolicyResponse.
 
         创建用户
 
@@ -207,7 +207,7 @@ class CreateSecurityResourcePermissionPolicyResponse(SdkResponse):
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this CreateSecurityResourcePermissionPolicyResponse.
+        r"""Sets the create_user of this CreateSecurityResourcePermissionPolicyResponse.
 
         创建用户
 
@@ -218,7 +218,7 @@ class CreateSecurityResourcePermissionPolicyResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this CreateSecurityResourcePermissionPolicyResponse.
+        r"""Gets the update_time of this CreateSecurityResourcePermissionPolicyResponse.
 
         修改时间
 
@@ -229,7 +229,7 @@ class CreateSecurityResourcePermissionPolicyResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this CreateSecurityResourcePermissionPolicyResponse.
+        r"""Sets the update_time of this CreateSecurityResourcePermissionPolicyResponse.
 
         修改时间
 

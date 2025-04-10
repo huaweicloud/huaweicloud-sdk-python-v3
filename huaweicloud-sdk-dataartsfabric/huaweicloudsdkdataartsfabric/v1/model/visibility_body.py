@@ -25,7 +25,7 @@ class VisibilityBody:
     }
 
     def __init__(self, visibility=None):
-        """VisibilityBody
+        r"""VisibilityBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class VisibilityBody:
 
     @property
     def visibility(self):
-        """Gets the visibility of this VisibilityBody.
+        r"""Gets the visibility of this VisibilityBody.
 
         可见性：  - PRIVATE：私有  - PUBLIC：公共  默认为PRIVATE
 
@@ -54,7 +54,7 @@ class VisibilityBody:
 
     @visibility.setter
     def visibility(self, visibility):
-        """Sets the visibility of this VisibilityBody.
+        r"""Sets the visibility of this VisibilityBody.
 
         可见性：  - PRIVATE：私有  - PUBLIC：公共  默认为PRIVATE
 

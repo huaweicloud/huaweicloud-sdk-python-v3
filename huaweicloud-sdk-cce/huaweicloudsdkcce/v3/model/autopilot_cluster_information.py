@@ -27,7 +27,7 @@ class AutopilotClusterInformation:
     }
 
     def __init__(self, spec=None, metadata=None):
-        """AutopilotClusterInformation
+        r"""AutopilotClusterInformation
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AutopilotClusterInformation:
 
     @property
     def spec(self):
-        """Gets the spec of this AutopilotClusterInformation.
+        r"""Gets the spec of this AutopilotClusterInformation.
 
         :return: The spec of this AutopilotClusterInformation.
         :rtype: :class:`huaweicloudsdkcce.v3.AutopilotClusterInformationSpec`
@@ -58,7 +58,7 @@ class AutopilotClusterInformation:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this AutopilotClusterInformation.
+        r"""Sets the spec of this AutopilotClusterInformation.
 
         :param spec: The spec of this AutopilotClusterInformation.
         :type spec: :class:`huaweicloudsdkcce.v3.AutopilotClusterInformationSpec`
@@ -67,7 +67,7 @@ class AutopilotClusterInformation:
 
     @property
     def metadata(self):
-        """Gets the metadata of this AutopilotClusterInformation.
+        r"""Gets the metadata of this AutopilotClusterInformation.
 
         :return: The metadata of this AutopilotClusterInformation.
         :rtype: :class:`huaweicloudsdkcce.v3.AutopilotClusterMetadataForUpdate`
@@ -76,7 +76,7 @@ class AutopilotClusterInformation:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this AutopilotClusterInformation.
+        r"""Sets the metadata of this AutopilotClusterInformation.
 
         :param metadata: The metadata of this AutopilotClusterInformation.
         :type metadata: :class:`huaweicloudsdkcce.v3.AutopilotClusterMetadataForUpdate`

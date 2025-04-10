@@ -25,7 +25,7 @@ class UpdateEventRequestBody:
     }
 
     def __init__(self, content=None):
-        """UpdateEventRequestBody
+        r"""UpdateEventRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateEventRequestBody:
 
     @property
     def content(self):
-        """Gets the content of this UpdateEventRequestBody.
+        r"""Gets the content of this UpdateEventRequestBody.
 
         测试事件content，为json字符串的base64编码
 
@@ -53,7 +53,7 @@ class UpdateEventRequestBody:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this UpdateEventRequestBody.
+        r"""Sets the content of this UpdateEventRequestBody.
 
         测试事件content，为json字符串的base64编码
 

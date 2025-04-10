@@ -28,7 +28,7 @@ class ShowWelcomeSpeechSwitchResponse(SdkResponse):
     }
 
     def __init__(self, enable_welcome_speech=None, x_request_id=None):
-        """ShowWelcomeSpeechSwitchResponse
+        r"""ShowWelcomeSpeechSwitchResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowWelcomeSpeechSwitchResponse(SdkResponse):
 
     @property
     def enable_welcome_speech(self):
-        """Gets the enable_welcome_speech of this ShowWelcomeSpeechSwitchResponse.
+        r"""Gets the enable_welcome_speech of this ShowWelcomeSpeechSwitchResponse.
 
         欢迎词功能开关。
 
@@ -62,7 +62,7 @@ class ShowWelcomeSpeechSwitchResponse(SdkResponse):
 
     @enable_welcome_speech.setter
     def enable_welcome_speech(self, enable_welcome_speech):
-        """Sets the enable_welcome_speech of this ShowWelcomeSpeechSwitchResponse.
+        r"""Sets the enable_welcome_speech of this ShowWelcomeSpeechSwitchResponse.
 
         欢迎词功能开关。
 
@@ -73,7 +73,7 @@ class ShowWelcomeSpeechSwitchResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowWelcomeSpeechSwitchResponse.
+        r"""Gets the x_request_id of this ShowWelcomeSpeechSwitchResponse.
 
         :return: The x_request_id of this ShowWelcomeSpeechSwitchResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class ShowWelcomeSpeechSwitchResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowWelcomeSpeechSwitchResponse.
+        r"""Sets the x_request_id of this ShowWelcomeSpeechSwitchResponse.
 
         :param x_request_id: The x_request_id of this ShowWelcomeSpeechSwitchResponse.
         :type x_request_id: str

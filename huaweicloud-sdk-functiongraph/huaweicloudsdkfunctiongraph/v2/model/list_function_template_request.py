@@ -35,7 +35,7 @@ class ListFunctionTemplateRequest:
     }
 
     def __init__(self, marker=None, maxitems=None, ispublic=None, runtime=None, scene=None, service=None):
-        """ListFunctionTemplateRequest
+        r"""ListFunctionTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListFunctionTemplateRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListFunctionTemplateRequest.
+        r"""Gets the marker of this ListFunctionTemplateRequest.
 
         本次查询起始位置，默认值0
 
@@ -89,7 +89,7 @@ class ListFunctionTemplateRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListFunctionTemplateRequest.
+        r"""Sets the marker of this ListFunctionTemplateRequest.
 
         本次查询起始位置，默认值0
 
@@ -100,7 +100,7 @@ class ListFunctionTemplateRequest:
 
     @property
     def maxitems(self):
-        """Gets the maxitems of this ListFunctionTemplateRequest.
+        r"""Gets the maxitems of this ListFunctionTemplateRequest.
 
         每次查询获取的最大模板数量。
 
@@ -111,7 +111,7 @@ class ListFunctionTemplateRequest:
 
     @maxitems.setter
     def maxitems(self, maxitems):
-        """Sets the maxitems of this ListFunctionTemplateRequest.
+        r"""Sets the maxitems of this ListFunctionTemplateRequest.
 
         每次查询获取的最大模板数量。
 
@@ -122,7 +122,7 @@ class ListFunctionTemplateRequest:
 
     @property
     def ispublic(self):
-        """Gets the ispublic of this ListFunctionTemplateRequest.
+        r"""Gets the ispublic of this ListFunctionTemplateRequest.
 
         是否为公开模板
 
@@ -133,7 +133,7 @@ class ListFunctionTemplateRequest:
 
     @ispublic.setter
     def ispublic(self, ispublic):
-        """Sets the ispublic of this ListFunctionTemplateRequest.
+        r"""Sets the ispublic of this ListFunctionTemplateRequest.
 
         是否为公开模板
 
@@ -144,7 +144,7 @@ class ListFunctionTemplateRequest:
 
     @property
     def runtime(self):
-        """Gets the runtime of this ListFunctionTemplateRequest.
+        r"""Gets the runtime of this ListFunctionTemplateRequest.
 
         指定运行时模板
 
@@ -155,7 +155,7 @@ class ListFunctionTemplateRequest:
 
     @runtime.setter
     def runtime(self, runtime):
-        """Sets the runtime of this ListFunctionTemplateRequest.
+        r"""Sets the runtime of this ListFunctionTemplateRequest.
 
         指定运行时模板
 
@@ -166,7 +166,7 @@ class ListFunctionTemplateRequest:
 
     @property
     def scene(self):
-        """Gets the scene of this ListFunctionTemplateRequest.
+        r"""Gets the scene of this ListFunctionTemplateRequest.
 
         指定场景模板
 
@@ -177,7 +177,7 @@ class ListFunctionTemplateRequest:
 
     @scene.setter
     def scene(self, scene):
-        """Sets the scene of this ListFunctionTemplateRequest.
+        r"""Sets the scene of this ListFunctionTemplateRequest.
 
         指定场景模板
 
@@ -188,7 +188,7 @@ class ListFunctionTemplateRequest:
 
     @property
     def service(self):
-        """Gets the service of this ListFunctionTemplateRequest.
+        r"""Gets the service of this ListFunctionTemplateRequest.
 
         指定云服务模板
 
@@ -199,7 +199,7 @@ class ListFunctionTemplateRequest:
 
     @service.setter
     def service(self, service):
-        """Sets the service of this ListFunctionTemplateRequest.
+        r"""Sets the service of this ListFunctionTemplateRequest.
 
         指定云服务模板
 

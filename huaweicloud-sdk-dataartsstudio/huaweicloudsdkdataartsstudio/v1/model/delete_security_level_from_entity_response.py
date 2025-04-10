@@ -24,7 +24,7 @@ class DeleteSecurityLevelFromEntityResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteSecurityLevelFromEntityResponse
+        r"""DeleteSecurityLevelFromEntityResponse
 
         The model defined in huaweicloud sdk
 

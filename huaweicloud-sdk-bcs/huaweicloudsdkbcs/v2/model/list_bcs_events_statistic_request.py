@@ -29,7 +29,7 @@ class ListBcsEventsStatisticRequest:
     }
 
     def __init__(self, blockchain_id=None, type=None, body=None):
-        """ListBcsEventsStatisticRequest
+        r"""ListBcsEventsStatisticRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListBcsEventsStatisticRequest:
 
     @property
     def blockchain_id(self):
-        """Gets the blockchain_id of this ListBcsEventsStatisticRequest.
+        r"""Gets the blockchain_id of this ListBcsEventsStatisticRequest.
 
         区块链服务id
 
@@ -67,7 +67,7 @@ class ListBcsEventsStatisticRequest:
 
     @blockchain_id.setter
     def blockchain_id(self, blockchain_id):
-        """Sets the blockchain_id of this ListBcsEventsStatisticRequest.
+        r"""Sets the blockchain_id of this ListBcsEventsStatisticRequest.
 
         区块链服务id
 
@@ -78,7 +78,7 @@ class ListBcsEventsStatisticRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListBcsEventsStatisticRequest.
+        r"""Gets the type of this ListBcsEventsStatisticRequest.
 
         查询类型。type=active_alert代表查询活动告警，type=history_alert代表查询历史告警。不传或者传其他值则返回指定查询条件的所有信息
 
@@ -89,7 +89,7 @@ class ListBcsEventsStatisticRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListBcsEventsStatisticRequest.
+        r"""Sets the type of this ListBcsEventsStatisticRequest.
 
         查询类型。type=active_alert代表查询活动告警，type=history_alert代表查询历史告警。不传或者传其他值则返回指定查询条件的所有信息
 
@@ -100,7 +100,7 @@ class ListBcsEventsStatisticRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListBcsEventsStatisticRequest.
+        r"""Gets the body of this ListBcsEventsStatisticRequest.
 
         :return: The body of this ListBcsEventsStatisticRequest.
         :rtype: :class:`huaweicloudsdkbcs.v2.ListBcsEventRequestBody`
@@ -109,7 +109,7 @@ class ListBcsEventsStatisticRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListBcsEventsStatisticRequest.
+        r"""Sets the body of this ListBcsEventsStatisticRequest.
 
         :param body: The body of this ListBcsEventsStatisticRequest.
         :type body: :class:`huaweicloudsdkbcs.v2.ListBcsEventRequestBody`

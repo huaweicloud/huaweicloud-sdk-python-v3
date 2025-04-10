@@ -39,7 +39,7 @@ class TaskSettingsTaskConfig:
     }
 
     def __init__(self, scan_mode=None, port_scan=None, weak_pwd_scan=None, cve_check=None, text_check=None, picture_check=None, malicious_code=None, malicious_link=None):
-        """TaskSettingsTaskConfig
+        r"""TaskSettingsTaskConfig
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class TaskSettingsTaskConfig:
 
     @property
     def scan_mode(self):
-        """Gets the scan_mode of this TaskSettingsTaskConfig.
+        r"""Gets the scan_mode of this TaskSettingsTaskConfig.
 
         扫描模式:   * fast - 快速扫描   * normal - 标准扫描   * deep - 深度扫描 
 
@@ -103,7 +103,7 @@ class TaskSettingsTaskConfig:
 
     @scan_mode.setter
     def scan_mode(self, scan_mode):
-        """Sets the scan_mode of this TaskSettingsTaskConfig.
+        r"""Sets the scan_mode of this TaskSettingsTaskConfig.
 
         扫描模式:   * fast - 快速扫描   * normal - 标准扫描   * deep - 深度扫描 
 
@@ -114,7 +114,7 @@ class TaskSettingsTaskConfig:
 
     @property
     def port_scan(self):
-        """Gets the port_scan of this TaskSettingsTaskConfig.
+        r"""Gets the port_scan of this TaskSettingsTaskConfig.
 
         是否进行端口扫描
 
@@ -125,7 +125,7 @@ class TaskSettingsTaskConfig:
 
     @port_scan.setter
     def port_scan(self, port_scan):
-        """Sets the port_scan of this TaskSettingsTaskConfig.
+        r"""Sets the port_scan of this TaskSettingsTaskConfig.
 
         是否进行端口扫描
 
@@ -136,7 +136,7 @@ class TaskSettingsTaskConfig:
 
     @property
     def weak_pwd_scan(self):
-        """Gets the weak_pwd_scan of this TaskSettingsTaskConfig.
+        r"""Gets the weak_pwd_scan of this TaskSettingsTaskConfig.
 
         是否进行弱密码扫描
 
@@ -147,7 +147,7 @@ class TaskSettingsTaskConfig:
 
     @weak_pwd_scan.setter
     def weak_pwd_scan(self, weak_pwd_scan):
-        """Sets the weak_pwd_scan of this TaskSettingsTaskConfig.
+        r"""Sets the weak_pwd_scan of this TaskSettingsTaskConfig.
 
         是否进行弱密码扫描
 
@@ -158,7 +158,7 @@ class TaskSettingsTaskConfig:
 
     @property
     def cve_check(self):
-        """Gets the cve_check of this TaskSettingsTaskConfig.
+        r"""Gets the cve_check of this TaskSettingsTaskConfig.
 
         是否进行CVE漏洞扫描
 
@@ -169,7 +169,7 @@ class TaskSettingsTaskConfig:
 
     @cve_check.setter
     def cve_check(self, cve_check):
-        """Sets the cve_check of this TaskSettingsTaskConfig.
+        r"""Sets the cve_check of this TaskSettingsTaskConfig.
 
         是否进行CVE漏洞扫描
 
@@ -180,7 +180,7 @@ class TaskSettingsTaskConfig:
 
     @property
     def text_check(self):
-        """Gets the text_check of this TaskSettingsTaskConfig.
+        r"""Gets the text_check of this TaskSettingsTaskConfig.
 
         是否进行网站内容合规文字检测
 
@@ -191,7 +191,7 @@ class TaskSettingsTaskConfig:
 
     @text_check.setter
     def text_check(self, text_check):
-        """Sets the text_check of this TaskSettingsTaskConfig.
+        r"""Sets the text_check of this TaskSettingsTaskConfig.
 
         是否进行网站内容合规文字检测
 
@@ -202,7 +202,7 @@ class TaskSettingsTaskConfig:
 
     @property
     def picture_check(self):
-        """Gets the picture_check of this TaskSettingsTaskConfig.
+        r"""Gets the picture_check of this TaskSettingsTaskConfig.
 
         是否进行网站内容合规图片检测
 
@@ -213,7 +213,7 @@ class TaskSettingsTaskConfig:
 
     @picture_check.setter
     def picture_check(self, picture_check):
-        """Sets the picture_check of this TaskSettingsTaskConfig.
+        r"""Sets the picture_check of this TaskSettingsTaskConfig.
 
         是否进行网站内容合规图片检测
 
@@ -224,7 +224,7 @@ class TaskSettingsTaskConfig:
 
     @property
     def malicious_code(self):
-        """Gets the malicious_code of this TaskSettingsTaskConfig.
+        r"""Gets the malicious_code of this TaskSettingsTaskConfig.
 
         是否进行网站挂马检测
 
@@ -235,7 +235,7 @@ class TaskSettingsTaskConfig:
 
     @malicious_code.setter
     def malicious_code(self, malicious_code):
-        """Sets the malicious_code of this TaskSettingsTaskConfig.
+        r"""Sets the malicious_code of this TaskSettingsTaskConfig.
 
         是否进行网站挂马检测
 
@@ -246,7 +246,7 @@ class TaskSettingsTaskConfig:
 
     @property
     def malicious_link(self):
-        """Gets the malicious_link of this TaskSettingsTaskConfig.
+        r"""Gets the malicious_link of this TaskSettingsTaskConfig.
 
         是否进行链接健康检测（死链、暗链、恶意外链）
 
@@ -257,7 +257,7 @@ class TaskSettingsTaskConfig:
 
     @malicious_link.setter
     def malicious_link(self, malicious_link):
-        """Sets the malicious_link of this TaskSettingsTaskConfig.
+        r"""Sets the malicious_link of this TaskSettingsTaskConfig.
 
         是否进行链接健康检测（死链、暗链、恶意外链）
 

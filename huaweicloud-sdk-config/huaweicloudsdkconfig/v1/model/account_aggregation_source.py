@@ -25,7 +25,7 @@ class AccountAggregationSource:
     }
 
     def __init__(self, domain_ids=None):
-        """AccountAggregationSource
+        r"""AccountAggregationSource
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AccountAggregationSource:
 
     @property
     def domain_ids(self):
-        """Gets the domain_ids of this AccountAggregationSource.
+        r"""Gets the domain_ids of this AccountAggregationSource.
 
         帐号列表。
 
@@ -54,7 +54,7 @@ class AccountAggregationSource:
 
     @domain_ids.setter
     def domain_ids(self, domain_ids):
-        """Sets the domain_ids of this AccountAggregationSource.
+        r"""Sets the domain_ids of this AccountAggregationSource.
 
         帐号列表。
 

@@ -64,7 +64,7 @@ class ShowCompositeHostResponse(SdkResponse):
     }
 
     def __init__(self, id=None, hostid=None, hostname=None, policyid=None, access_code=None, protect_status=None, access_status=None, proxy=None, timestamp=None, paid_type=None, flag=None, waf_type=None, web_tag=None, access_progress=None, premium_waf_instances=None, description=None, exclusive_ip=None, region=None, server=None, enterprise_project_id=None):
-        """ShowCompositeHostResponse
+        r"""ShowCompositeHostResponse
 
         The model defined in huaweicloud sdk
 
@@ -177,7 +177,7 @@ class ShowCompositeHostResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowCompositeHostResponse.
+        r"""Gets the id of this ShowCompositeHostResponse.
 
         域名id
 
@@ -188,7 +188,7 @@ class ShowCompositeHostResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowCompositeHostResponse.
+        r"""Sets the id of this ShowCompositeHostResponse.
 
         域名id
 
@@ -199,7 +199,7 @@ class ShowCompositeHostResponse(SdkResponse):
 
     @property
     def hostid(self):
-        """Gets the hostid of this ShowCompositeHostResponse.
+        r"""Gets the hostid of this ShowCompositeHostResponse.
 
         域名id
 
@@ -210,7 +210,7 @@ class ShowCompositeHostResponse(SdkResponse):
 
     @hostid.setter
     def hostid(self, hostid):
-        """Sets the hostid of this ShowCompositeHostResponse.
+        r"""Sets the hostid of this ShowCompositeHostResponse.
 
         域名id
 
@@ -221,7 +221,7 @@ class ShowCompositeHostResponse(SdkResponse):
 
     @property
     def hostname(self):
-        """Gets the hostname of this ShowCompositeHostResponse.
+        r"""Gets the hostname of this ShowCompositeHostResponse.
 
         创建的云模式防护域名
 
@@ -232,7 +232,7 @@ class ShowCompositeHostResponse(SdkResponse):
 
     @hostname.setter
     def hostname(self, hostname):
-        """Sets the hostname of this ShowCompositeHostResponse.
+        r"""Sets the hostname of this ShowCompositeHostResponse.
 
         创建的云模式防护域名
 
@@ -243,7 +243,7 @@ class ShowCompositeHostResponse(SdkResponse):
 
     @property
     def policyid(self):
-        """Gets the policyid of this ShowCompositeHostResponse.
+        r"""Gets the policyid of this ShowCompositeHostResponse.
 
         策略id
 
@@ -254,7 +254,7 @@ class ShowCompositeHostResponse(SdkResponse):
 
     @policyid.setter
     def policyid(self, policyid):
-        """Sets the policyid of this ShowCompositeHostResponse.
+        r"""Sets the policyid of this ShowCompositeHostResponse.
 
         策略id
 
@@ -265,7 +265,7 @@ class ShowCompositeHostResponse(SdkResponse):
 
     @property
     def access_code(self):
-        """Gets the access_code of this ShowCompositeHostResponse.
+        r"""Gets the access_code of this ShowCompositeHostResponse.
 
         cname前缀
 
@@ -276,7 +276,7 @@ class ShowCompositeHostResponse(SdkResponse):
 
     @access_code.setter
     def access_code(self, access_code):
-        """Sets the access_code of this ShowCompositeHostResponse.
+        r"""Sets the access_code of this ShowCompositeHostResponse.
 
         cname前缀
 
@@ -287,7 +287,7 @@ class ShowCompositeHostResponse(SdkResponse):
 
     @property
     def protect_status(self):
-        """Gets the protect_status of this ShowCompositeHostResponse.
+        r"""Gets the protect_status of this ShowCompositeHostResponse.
 
         域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
 
@@ -298,7 +298,7 @@ class ShowCompositeHostResponse(SdkResponse):
 
     @protect_status.setter
     def protect_status(self, protect_status):
-        """Sets the protect_status of this ShowCompositeHostResponse.
+        r"""Sets the protect_status of this ShowCompositeHostResponse.
 
         域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
 
@@ -309,7 +309,7 @@ class ShowCompositeHostResponse(SdkResponse):
 
     @property
     def access_status(self):
-        """Gets the access_status of this ShowCompositeHostResponse.
+        r"""Gets the access_status of this ShowCompositeHostResponse.
 
         域名接入状态，0表示未接入，1表示已接入
 
@@ -320,7 +320,7 @@ class ShowCompositeHostResponse(SdkResponse):
 
     @access_status.setter
     def access_status(self, access_status):
-        """Sets the access_status of this ShowCompositeHostResponse.
+        r"""Sets the access_status of this ShowCompositeHostResponse.
 
         域名接入状态，0表示未接入，1表示已接入
 
@@ -331,7 +331,7 @@ class ShowCompositeHostResponse(SdkResponse):
 
     @property
     def proxy(self):
-        """Gets the proxy of this ShowCompositeHostResponse.
+        r"""Gets the proxy of this ShowCompositeHostResponse.
 
         防护域名是否使用代理   - false：不使用代理   - true：使用代理
 
@@ -342,7 +342,7 @@ class ShowCompositeHostResponse(SdkResponse):
 
     @proxy.setter
     def proxy(self, proxy):
-        """Sets the proxy of this ShowCompositeHostResponse.
+        r"""Sets the proxy of this ShowCompositeHostResponse.
 
         防护域名是否使用代理   - false：不使用代理   - true：使用代理
 
@@ -353,7 +353,7 @@ class ShowCompositeHostResponse(SdkResponse):
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this ShowCompositeHostResponse.
+        r"""Gets the timestamp of this ShowCompositeHostResponse.
 
         创建防护域名的时间
 
@@ -364,7 +364,7 @@ class ShowCompositeHostResponse(SdkResponse):
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this ShowCompositeHostResponse.
+        r"""Sets the timestamp of this ShowCompositeHostResponse.
 
         创建防护域名的时间
 
@@ -375,7 +375,7 @@ class ShowCompositeHostResponse(SdkResponse):
 
     @property
     def paid_type(self):
-        """Gets the paid_type of this ShowCompositeHostResponse.
+        r"""Gets the paid_type of this ShowCompositeHostResponse.
 
         套餐付费模式，默认值为prePaid。prePaid：包周期款模式；postPaid：按需模式。
 
@@ -386,7 +386,7 @@ class ShowCompositeHostResponse(SdkResponse):
 
     @paid_type.setter
     def paid_type(self, paid_type):
-        """Sets the paid_type of this ShowCompositeHostResponse.
+        r"""Sets the paid_type of this ShowCompositeHostResponse.
 
         套餐付费模式，默认值为prePaid。prePaid：包周期款模式；postPaid：按需模式。
 
@@ -397,7 +397,7 @@ class ShowCompositeHostResponse(SdkResponse):
 
     @property
     def flag(self):
-        """Gets the flag of this ShowCompositeHostResponse.
+        r"""Gets the flag of this ShowCompositeHostResponse.
 
         :return: The flag of this ShowCompositeHostResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.Flag`
@@ -406,7 +406,7 @@ class ShowCompositeHostResponse(SdkResponse):
 
     @flag.setter
     def flag(self, flag):
-        """Sets the flag of this ShowCompositeHostResponse.
+        r"""Sets the flag of this ShowCompositeHostResponse.
 
         :param flag: The flag of this ShowCompositeHostResponse.
         :type flag: :class:`huaweicloudsdkwaf.v1.Flag`
@@ -415,7 +415,7 @@ class ShowCompositeHostResponse(SdkResponse):
 
     @property
     def waf_type(self):
-        """Gets the waf_type of this ShowCompositeHostResponse.
+        r"""Gets the waf_type of this ShowCompositeHostResponse.
 
         域名所属WAF模式,cloud为云模式，premium为独享模式
 
@@ -426,7 +426,7 @@ class ShowCompositeHostResponse(SdkResponse):
 
     @waf_type.setter
     def waf_type(self, waf_type):
-        """Sets the waf_type of this ShowCompositeHostResponse.
+        r"""Sets the waf_type of this ShowCompositeHostResponse.
 
         域名所属WAF模式,cloud为云模式，premium为独享模式
 
@@ -437,7 +437,7 @@ class ShowCompositeHostResponse(SdkResponse):
 
     @property
     def web_tag(self):
-        """Gets the web_tag of this ShowCompositeHostResponse.
+        r"""Gets the web_tag of this ShowCompositeHostResponse.
 
         网站名称，对应WAF控制台域名详情中的网站名称
 
@@ -448,7 +448,7 @@ class ShowCompositeHostResponse(SdkResponse):
 
     @web_tag.setter
     def web_tag(self, web_tag):
-        """Sets the web_tag of this ShowCompositeHostResponse.
+        r"""Sets the web_tag of this ShowCompositeHostResponse.
 
         网站名称，对应WAF控制台域名详情中的网站名称
 
@@ -459,7 +459,7 @@ class ShowCompositeHostResponse(SdkResponse):
 
     @property
     def access_progress(self):
-        """Gets the access_progress of this ShowCompositeHostResponse.
+        r"""Gets the access_progress of this ShowCompositeHostResponse.
 
         接入进度，仅用于新版console(前端)使用
 
@@ -470,7 +470,7 @@ class ShowCompositeHostResponse(SdkResponse):
 
     @access_progress.setter
     def access_progress(self, access_progress):
-        """Sets the access_progress of this ShowCompositeHostResponse.
+        r"""Sets the access_progress of this ShowCompositeHostResponse.
 
         接入进度，仅用于新版console(前端)使用
 
@@ -481,7 +481,7 @@ class ShowCompositeHostResponse(SdkResponse):
 
     @property
     def premium_waf_instances(self):
-        """Gets the premium_waf_instances of this ShowCompositeHostResponse.
+        r"""Gets the premium_waf_instances of this ShowCompositeHostResponse.
 
         租户引擎实例信息列表
 
@@ -492,7 +492,7 @@ class ShowCompositeHostResponse(SdkResponse):
 
     @premium_waf_instances.setter
     def premium_waf_instances(self, premium_waf_instances):
-        """Sets the premium_waf_instances of this ShowCompositeHostResponse.
+        r"""Sets the premium_waf_instances of this ShowCompositeHostResponse.
 
         租户引擎实例信息列表
 
@@ -503,7 +503,7 @@ class ShowCompositeHostResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowCompositeHostResponse.
+        r"""Gets the description of this ShowCompositeHostResponse.
 
         域名描述
 
@@ -514,7 +514,7 @@ class ShowCompositeHostResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowCompositeHostResponse.
+        r"""Sets the description of this ShowCompositeHostResponse.
 
         域名描述
 
@@ -525,7 +525,7 @@ class ShowCompositeHostResponse(SdkResponse):
 
     @property
     def exclusive_ip(self):
-        """Gets the exclusive_ip of this ShowCompositeHostResponse.
+        r"""Gets the exclusive_ip of this ShowCompositeHostResponse.
 
         是否使用独享ip   - true：使用独享ip   - false：不实用独享ip
 
@@ -536,7 +536,7 @@ class ShowCompositeHostResponse(SdkResponse):
 
     @exclusive_ip.setter
     def exclusive_ip(self, exclusive_ip):
-        """Sets the exclusive_ip of this ShowCompositeHostResponse.
+        r"""Sets the exclusive_ip of this ShowCompositeHostResponse.
 
         是否使用独享ip   - true：使用独享ip   - false：不实用独享ip
 
@@ -547,7 +547,7 @@ class ShowCompositeHostResponse(SdkResponse):
 
     @property
     def region(self):
-        """Gets the region of this ShowCompositeHostResponse.
+        r"""Gets the region of this ShowCompositeHostResponse.
 
         华为云区域ID，控制台创建的域名会携带此参数，api调用创建的域名此参数为空，可以通过华为云上地区和终端节点文档查询区域ID对应的中文名称
 
@@ -558,7 +558,7 @@ class ShowCompositeHostResponse(SdkResponse):
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ShowCompositeHostResponse.
+        r"""Sets the region of this ShowCompositeHostResponse.
 
         华为云区域ID，控制台创建的域名会携带此参数，api调用创建的域名此参数为空，可以通过华为云上地区和终端节点文档查询区域ID对应的中文名称
 
@@ -569,7 +569,7 @@ class ShowCompositeHostResponse(SdkResponse):
 
     @property
     def server(self):
-        """Gets the server of this ShowCompositeHostResponse.
+        r"""Gets the server of this ShowCompositeHostResponse.
 
         防护域名的源站服务器配置信息，只有独享模式域名才返回vpc_id
 
@@ -580,7 +580,7 @@ class ShowCompositeHostResponse(SdkResponse):
 
     @server.setter
     def server(self, server):
-        """Sets the server of this ShowCompositeHostResponse.
+        r"""Sets the server of this ShowCompositeHostResponse.
 
         防护域名的源站服务器配置信息，只有独享模式域名才返回vpc_id
 
@@ -591,7 +591,7 @@ class ShowCompositeHostResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowCompositeHostResponse.
+        r"""Gets the enterprise_project_id of this ShowCompositeHostResponse.
 
         企业项目id
 
@@ -602,7 +602,7 @@ class ShowCompositeHostResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowCompositeHostResponse.
+        r"""Sets the enterprise_project_id of this ShowCompositeHostResponse.
 
         企业项目id
 

@@ -25,7 +25,7 @@ class ShowLdapConfigRequest:
     }
 
     def __init__(self, share_id=None):
-        """ShowLdapConfigRequest
+        r"""ShowLdapConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowLdapConfigRequest:
 
     @property
     def share_id(self):
-        """Gets the share_id of this ShowLdapConfigRequest.
+        r"""Gets the share_id of this ShowLdapConfigRequest.
 
         文件系统id
 
@@ -53,7 +53,7 @@ class ShowLdapConfigRequest:
 
     @share_id.setter
     def share_id(self, share_id):
-        """Sets the share_id of this ShowLdapConfigRequest.
+        r"""Sets the share_id of this ShowLdapConfigRequest.
 
         文件系统id
 

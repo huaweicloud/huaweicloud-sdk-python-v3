@@ -41,7 +41,7 @@ class AuditAgentRequest:
     }
 
     def __init__(self, db_id=None, mode=None, agent_id=None, agent_type=None, agent_os=None, agent_ip=None, agent_nic=None, cpu_threshold=None, mem_threshold=None):
-        """AuditAgentRequest
+        r"""AuditAgentRequest
 
         The model defined in huaweicloud sdk
 
@@ -95,7 +95,7 @@ class AuditAgentRequest:
 
     @property
     def db_id(self):
-        """Gets the db_id of this AuditAgentRequest.
+        r"""Gets the db_id of this AuditAgentRequest.
 
         数据库ID, 可在查询数据库列表接口的ID字段获取。
 
@@ -106,7 +106,7 @@ class AuditAgentRequest:
 
     @db_id.setter
     def db_id(self, db_id):
-        """Sets the db_id of this AuditAgentRequest.
+        r"""Sets the db_id of this AuditAgentRequest.
 
         数据库ID, 可在查询数据库列表接口的ID字段获取。
 
@@ -117,7 +117,7 @@ class AuditAgentRequest:
 
     @property
     def mode(self):
-        """Gets the mode of this AuditAgentRequest.
+        r"""Gets the mode of this AuditAgentRequest.
 
         模式 - 0：创建agent - 1：选择已有agent
 
@@ -128,7 +128,7 @@ class AuditAgentRequest:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this AuditAgentRequest.
+        r"""Sets the mode of this AuditAgentRequest.
 
         模式 - 0：创建agent - 1：选择已有agent
 
@@ -139,7 +139,7 @@ class AuditAgentRequest:
 
     @property
     def agent_id(self):
-        """Gets the agent_id of this AuditAgentRequest.
+        r"""Gets the agent_id of this AuditAgentRequest.
 
         选择已有agent时必输
 
@@ -150,7 +150,7 @@ class AuditAgentRequest:
 
     @agent_id.setter
     def agent_id(self, agent_id):
-        """Sets the agent_id of this AuditAgentRequest.
+        r"""Sets the agent_id of this AuditAgentRequest.
 
         选择已有agent时必输
 
@@ -161,7 +161,7 @@ class AuditAgentRequest:
 
     @property
     def agent_type(self):
-        """Gets the agent_type of this AuditAgentRequest.
+        r"""Gets the agent_type of this AuditAgentRequest.
 
         agent类型 - APP：应用端 - DB：数据库端
 
@@ -172,7 +172,7 @@ class AuditAgentRequest:
 
     @agent_type.setter
     def agent_type(self, agent_type):
-        """Sets the agent_type of this AuditAgentRequest.
+        r"""Sets the agent_type of this AuditAgentRequest.
 
         agent类型 - APP：应用端 - DB：数据库端
 
@@ -183,7 +183,7 @@ class AuditAgentRequest:
 
     @property
     def agent_os(self):
-        """Gets the agent_os of this AuditAgentRequest.
+        r"""Gets the agent_os of this AuditAgentRequest.
 
         agent OS类型: - LINUX64_X86 - LINUX64_ARM - WINDOWS64
 
@@ -194,7 +194,7 @@ class AuditAgentRequest:
 
     @agent_os.setter
     def agent_os(self, agent_os):
-        """Sets the agent_os of this AuditAgentRequest.
+        r"""Sets the agent_os of this AuditAgentRequest.
 
         agent OS类型: - LINUX64_X86 - LINUX64_ARM - WINDOWS64
 
@@ -205,7 +205,7 @@ class AuditAgentRequest:
 
     @property
     def agent_ip(self):
-        """Gets the agent_ip of this AuditAgentRequest.
+        r"""Gets the agent_ip of this AuditAgentRequest.
 
         agent IP，安装节点类型为应用端时必输。
 
@@ -216,7 +216,7 @@ class AuditAgentRequest:
 
     @agent_ip.setter
     def agent_ip(self, agent_ip):
-        """Sets the agent_ip of this AuditAgentRequest.
+        r"""Sets the agent_ip of this AuditAgentRequest.
 
         agent IP，安装节点类型为应用端时必输。
 
@@ -227,7 +227,7 @@ class AuditAgentRequest:
 
     @property
     def agent_nic(self):
-        """Gets the agent_nic of this AuditAgentRequest.
+        r"""Gets the agent_nic of this AuditAgentRequest.
 
         agent审计网卡名称
 
@@ -238,7 +238,7 @@ class AuditAgentRequest:
 
     @agent_nic.setter
     def agent_nic(self, agent_nic):
-        """Sets the agent_nic of this AuditAgentRequest.
+        r"""Sets the agent_nic of this AuditAgentRequest.
 
         agent审计网卡名称
 
@@ -249,7 +249,7 @@ class AuditAgentRequest:
 
     @property
     def cpu_threshold(self):
-        """Gets the cpu_threshold of this AuditAgentRequest.
+        r"""Gets the cpu_threshold of this AuditAgentRequest.
 
         CPU阈值
 
@@ -260,7 +260,7 @@ class AuditAgentRequest:
 
     @cpu_threshold.setter
     def cpu_threshold(self, cpu_threshold):
-        """Sets the cpu_threshold of this AuditAgentRequest.
+        r"""Sets the cpu_threshold of this AuditAgentRequest.
 
         CPU阈值
 
@@ -271,7 +271,7 @@ class AuditAgentRequest:
 
     @property
     def mem_threshold(self):
-        """Gets the mem_threshold of this AuditAgentRequest.
+        r"""Gets the mem_threshold of this AuditAgentRequest.
 
         内存阈值
 
@@ -282,7 +282,7 @@ class AuditAgentRequest:
 
     @mem_threshold.setter
     def mem_threshold(self, mem_threshold):
-        """Sets the mem_threshold of this AuditAgentRequest.
+        r"""Sets the mem_threshold of this AuditAgentRequest.
 
         内存阈值
 

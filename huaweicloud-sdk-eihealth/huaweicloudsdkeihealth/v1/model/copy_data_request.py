@@ -27,7 +27,7 @@ class CopyDataRequest:
     }
 
     def __init__(self, eihealth_project_id=None, body=None):
-        """CopyDataRequest
+        r"""CopyDataRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CopyDataRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this CopyDataRequest.
+        r"""Gets the eihealth_project_id of this CopyDataRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -60,7 +60,7 @@ class CopyDataRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this CopyDataRequest.
+        r"""Sets the eihealth_project_id of this CopyDataRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -71,7 +71,7 @@ class CopyDataRequest:
 
     @property
     def body(self):
-        """Gets the body of this CopyDataRequest.
+        r"""Gets the body of this CopyDataRequest.
 
         :return: The body of this CopyDataRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CloneDataReq`
@@ -80,7 +80,7 @@ class CopyDataRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CopyDataRequest.
+        r"""Sets the body of this CopyDataRequest.
 
         :param body: The body of this CopyDataRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.CloneDataReq`

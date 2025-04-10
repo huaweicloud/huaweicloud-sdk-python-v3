@@ -29,7 +29,7 @@ class ShowWorkspaceDetailByIdRequest:
     }
 
     def __init__(self, workspace=None, x_project_id=None, model_id=None):
-        """ShowWorkspaceDetailByIdRequest
+        r"""ShowWorkspaceDetailByIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowWorkspaceDetailByIdRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowWorkspaceDetailByIdRequest.
+        r"""Gets the workspace of this ShowWorkspaceDetailByIdRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -66,7 +66,7 @@ class ShowWorkspaceDetailByIdRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowWorkspaceDetailByIdRequest.
+        r"""Sets the workspace of this ShowWorkspaceDetailByIdRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -77,7 +77,7 @@ class ShowWorkspaceDetailByIdRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this ShowWorkspaceDetailByIdRequest.
+        r"""Gets the x_project_id of this ShowWorkspaceDetailByIdRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -88,7 +88,7 @@ class ShowWorkspaceDetailByIdRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this ShowWorkspaceDetailByIdRequest.
+        r"""Sets the x_project_id of this ShowWorkspaceDetailByIdRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -99,7 +99,7 @@ class ShowWorkspaceDetailByIdRequest:
 
     @property
     def model_id(self):
-        """Gets the model_id of this ShowWorkspaceDetailByIdRequest.
+        r"""Gets the model_id of this ShowWorkspaceDetailByIdRequest.
 
         所属关系建模的模型ID，ID字符串。
 
@@ -110,7 +110,7 @@ class ShowWorkspaceDetailByIdRequest:
 
     @model_id.setter
     def model_id(self, model_id):
-        """Sets the model_id of this ShowWorkspaceDetailByIdRequest.
+        r"""Sets the model_id of this ShowWorkspaceDetailByIdRequest.
 
         所属关系建模的模型ID，ID字符串。
 

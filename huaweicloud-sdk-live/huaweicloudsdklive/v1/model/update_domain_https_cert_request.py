@@ -27,7 +27,7 @@ class UpdateDomainHttpsCertRequest:
     }
 
     def __init__(self, domain=None, body=None):
-        """UpdateDomainHttpsCertRequest
+        r"""UpdateDomainHttpsCertRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateDomainHttpsCertRequest:
 
     @property
     def domain(self):
-        """Gets the domain of this UpdateDomainHttpsCertRequest.
+        r"""Gets the domain of this UpdateDomainHttpsCertRequest.
 
         直播播放域名
 
@@ -60,7 +60,7 @@ class UpdateDomainHttpsCertRequest:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this UpdateDomainHttpsCertRequest.
+        r"""Sets the domain of this UpdateDomainHttpsCertRequest.
 
         直播播放域名
 
@@ -71,7 +71,7 @@ class UpdateDomainHttpsCertRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDomainHttpsCertRequest.
+        r"""Gets the body of this UpdateDomainHttpsCertRequest.
 
         :return: The body of this UpdateDomainHttpsCertRequest.
         :rtype: :class:`huaweicloudsdklive.v1.DomainHttpsCertInfo`
@@ -80,7 +80,7 @@ class UpdateDomainHttpsCertRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDomainHttpsCertRequest.
+        r"""Sets the body of this UpdateDomainHttpsCertRequest.
 
         :param body: The body of this UpdateDomainHttpsCertRequest.
         :type body: :class:`huaweicloudsdklive.v1.DomainHttpsCertInfo`

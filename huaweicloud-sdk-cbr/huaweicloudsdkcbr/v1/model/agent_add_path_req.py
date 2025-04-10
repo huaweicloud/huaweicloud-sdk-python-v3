@@ -27,7 +27,7 @@ class AgentAddPathReq:
     }
 
     def __init__(self, add_path=None, exclude_path=None):
-        """AgentAddPathReq
+        r"""AgentAddPathReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AgentAddPathReq:
 
     @property
     def add_path(self):
-        """Gets the add_path of this AgentAddPathReq.
+        r"""Gets the add_path of this AgentAddPathReq.
 
         增加备份路径详情
 
@@ -60,7 +60,7 @@ class AgentAddPathReq:
 
     @add_path.setter
     def add_path(self, add_path):
-        """Sets the add_path of this AgentAddPathReq.
+        r"""Sets the add_path of this AgentAddPathReq.
 
         增加备份路径详情
 
@@ -71,7 +71,7 @@ class AgentAddPathReq:
 
     @property
     def exclude_path(self):
-        """Gets the exclude_path of this AgentAddPathReq.
+        r"""Gets the exclude_path of this AgentAddPathReq.
 
         增加排除目录 > 该特性目前处于公测阶段，部分region可能无法使用。
 
@@ -82,7 +82,7 @@ class AgentAddPathReq:
 
     @exclude_path.setter
     def exclude_path(self, exclude_path):
-        """Sets the exclude_path of this AgentAddPathReq.
+        r"""Sets the exclude_path of this AgentAddPathReq.
 
         增加排除目录 > 该特性目前处于公测阶段，部分region可能无法使用。
 

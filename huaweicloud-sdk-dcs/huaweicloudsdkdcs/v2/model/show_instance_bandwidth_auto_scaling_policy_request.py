@@ -25,7 +25,7 @@ class ShowInstanceBandwidthAutoScalingPolicyRequest:
     }
 
     def __init__(self, instance_id=None):
-        """ShowInstanceBandwidthAutoScalingPolicyRequest
+        r"""ShowInstanceBandwidthAutoScalingPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowInstanceBandwidthAutoScalingPolicyRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowInstanceBandwidthAutoScalingPolicyRequest.
+        r"""Gets the instance_id of this ShowInstanceBandwidthAutoScalingPolicyRequest.
 
         实例ID。
 
@@ -53,7 +53,7 @@ class ShowInstanceBandwidthAutoScalingPolicyRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowInstanceBandwidthAutoScalingPolicyRequest.
+        r"""Sets the instance_id of this ShowInstanceBandwidthAutoScalingPolicyRequest.
 
         实例ID。
 

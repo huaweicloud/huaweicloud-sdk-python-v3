@@ -53,7 +53,7 @@ class ImportTableRequestBody:
     }
 
     def __init__(self, data_path=None, data_type=None, database_name=None, table_name=None, with_column_header=None, delimiter=None, quote_char=None, escape_char=None, date_format=None, bad_records_path=None, timestamp_format=None, queue_name=None, overwrite=None, partition_spec=None, conf=None):
-        """ImportTableRequestBody
+        r"""ImportTableRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -137,7 +137,7 @@ class ImportTableRequestBody:
 
     @property
     def data_path(self):
-        """Gets the data_path of this ImportTableRequestBody.
+        r"""Gets the data_path of this ImportTableRequestBody.
 
         导入的数据路径（当前仅支持导入OBS上的数据，且OBS路径须以s3a开头）。
 
@@ -148,7 +148,7 @@ class ImportTableRequestBody:
 
     @data_path.setter
     def data_path(self, data_path):
-        """Sets the data_path of this ImportTableRequestBody.
+        r"""Sets the data_path of this ImportTableRequestBody.
 
         导入的数据路径（当前仅支持导入OBS上的数据，且OBS路径须以s3a开头）。
 
@@ -159,7 +159,7 @@ class ImportTableRequestBody:
 
     @property
     def data_type(self):
-        """Gets the data_type of this ImportTableRequestBody.
+        r"""Gets the data_type of this ImportTableRequestBody.
 
         导入的数据类型（当前支持csv、parquet、orc、json、avro数据类型）。
 
@@ -170,7 +170,7 @@ class ImportTableRequestBody:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this ImportTableRequestBody.
+        r"""Sets the data_type of this ImportTableRequestBody.
 
         导入的数据类型（当前支持csv、parquet、orc、json、avro数据类型）。
 
@@ -181,7 +181,7 @@ class ImportTableRequestBody:
 
     @property
     def database_name(self):
-        """Gets the database_name of this ImportTableRequestBody.
+        r"""Gets the database_name of this ImportTableRequestBody.
 
         导入表所属的数据库名称。
 
@@ -192,7 +192,7 @@ class ImportTableRequestBody:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this ImportTableRequestBody.
+        r"""Sets the database_name of this ImportTableRequestBody.
 
         导入表所属的数据库名称。
 
@@ -203,7 +203,7 @@ class ImportTableRequestBody:
 
     @property
     def table_name(self):
-        """Gets the table_name of this ImportTableRequestBody.
+        r"""Gets the table_name of this ImportTableRequestBody.
 
         导入表的名称。
 
@@ -214,7 +214,7 @@ class ImportTableRequestBody:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this ImportTableRequestBody.
+        r"""Sets the table_name of this ImportTableRequestBody.
 
         导入表的名称。
 
@@ -225,7 +225,7 @@ class ImportTableRequestBody:
 
     @property
     def with_column_header(self):
-        """Gets the with_column_header of this ImportTableRequestBody.
+        r"""Gets the with_column_header of this ImportTableRequestBody.
 
         导入数据中的第一行数据是否包括列名，即表头。默认为“false”，表示不包括列名。导入CSV类型数据时可指定。
 
@@ -236,7 +236,7 @@ class ImportTableRequestBody:
 
     @with_column_header.setter
     def with_column_header(self, with_column_header):
-        """Sets the with_column_header of this ImportTableRequestBody.
+        r"""Sets the with_column_header of this ImportTableRequestBody.
 
         导入数据中的第一行数据是否包括列名，即表头。默认为“false”，表示不包括列名。导入CSV类型数据时可指定。
 
@@ -247,7 +247,7 @@ class ImportTableRequestBody:
 
     @property
     def delimiter(self):
-        """Gets the delimiter of this ImportTableRequestBody.
+        r"""Gets the delimiter of this ImportTableRequestBody.
 
         用户自定义数据分隔符，默认为逗号。导入CSV类型数据时可指定。
 
@@ -258,7 +258,7 @@ class ImportTableRequestBody:
 
     @delimiter.setter
     def delimiter(self, delimiter):
-        """Sets the delimiter of this ImportTableRequestBody.
+        r"""Sets the delimiter of this ImportTableRequestBody.
 
         用户自定义数据分隔符，默认为逗号。导入CSV类型数据时可指定。
 
@@ -269,7 +269,7 @@ class ImportTableRequestBody:
 
     @property
     def quote_char(self):
-        """Gets the quote_char of this ImportTableRequestBody.
+        r"""Gets the quote_char of this ImportTableRequestBody.
 
         用户自定义引用字符，默认为双引号。导入CSV类型数据时可指定。
 
@@ -280,7 +280,7 @@ class ImportTableRequestBody:
 
     @quote_char.setter
     def quote_char(self, quote_char):
-        """Sets the quote_char of this ImportTableRequestBody.
+        r"""Sets the quote_char of this ImportTableRequestBody.
 
         用户自定义引用字符，默认为双引号。导入CSV类型数据时可指定。
 
@@ -291,7 +291,7 @@ class ImportTableRequestBody:
 
     @property
     def escape_char(self):
-        """Gets the escape_char of this ImportTableRequestBody.
+        r"""Gets the escape_char of this ImportTableRequestBody.
 
         用户自定义转义字符，默认为反斜杠。导入CSV类型数据时可指定。
 
@@ -302,7 +302,7 @@ class ImportTableRequestBody:
 
     @escape_char.setter
     def escape_char(self, escape_char):
-        """Sets the escape_char of this ImportTableRequestBody.
+        r"""Sets the escape_char of this ImportTableRequestBody.
 
         用户自定义转义字符，默认为反斜杠。导入CSV类型数据时可指定。
 
@@ -313,7 +313,7 @@ class ImportTableRequestBody:
 
     @property
     def date_format(self):
-        """Gets the date_format of this ImportTableRequestBody.
+        r"""Gets the date_format of this ImportTableRequestBody.
 
         指定特定的日期格式，默认为“yyyy-MM-dd”。日期格式字符定义详见表3。导入CSV及JSON类型数据时可指定。
 
@@ -324,7 +324,7 @@ class ImportTableRequestBody:
 
     @date_format.setter
     def date_format(self, date_format):
-        """Sets the date_format of this ImportTableRequestBody.
+        r"""Sets the date_format of this ImportTableRequestBody.
 
         指定特定的日期格式，默认为“yyyy-MM-dd”。日期格式字符定义详见表3。导入CSV及JSON类型数据时可指定。
 
@@ -335,7 +335,7 @@ class ImportTableRequestBody:
 
     @property
     def bad_records_path(self):
-        """Gets the bad_records_path of this ImportTableRequestBody.
+        r"""Gets the bad_records_path of this ImportTableRequestBody.
 
         作业执行过程中的bad records存储目录。设置该配置项后，bad records不会导入到目标表。
 
@@ -346,7 +346,7 @@ class ImportTableRequestBody:
 
     @bad_records_path.setter
     def bad_records_path(self, bad_records_path):
-        """Sets the bad_records_path of this ImportTableRequestBody.
+        r"""Sets the bad_records_path of this ImportTableRequestBody.
 
         作业执行过程中的bad records存储目录。设置该配置项后，bad records不会导入到目标表。
 
@@ -357,7 +357,7 @@ class ImportTableRequestBody:
 
     @property
     def timestamp_format(self):
-        """Gets the timestamp_format of this ImportTableRequestBody.
+        r"""Gets the timestamp_format of this ImportTableRequestBody.
 
         指定特定的时间格式，默认为“yyyy-MM-dd HH:mm:ss”。时间格式字符定义详见表3。导入CSV及JSON类型数据时可指定。
 
@@ -368,7 +368,7 @@ class ImportTableRequestBody:
 
     @timestamp_format.setter
     def timestamp_format(self, timestamp_format):
-        """Sets the timestamp_format of this ImportTableRequestBody.
+        r"""Sets the timestamp_format of this ImportTableRequestBody.
 
         指定特定的时间格式，默认为“yyyy-MM-dd HH:mm:ss”。时间格式字符定义详见表3。导入CSV及JSON类型数据时可指定。
 
@@ -379,7 +379,7 @@ class ImportTableRequestBody:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this ImportTableRequestBody.
+        r"""Gets the queue_name of this ImportTableRequestBody.
 
         指定执行该任务的队列。若不指定队列，将采用default队列执行操作。
 
@@ -390,7 +390,7 @@ class ImportTableRequestBody:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this ImportTableRequestBody.
+        r"""Sets the queue_name of this ImportTableRequestBody.
 
         指定执行该任务的队列。若不指定队列，将采用default队列执行操作。
 
@@ -401,7 +401,7 @@ class ImportTableRequestBody:
 
     @property
     def overwrite(self):
-        """Gets the overwrite of this ImportTableRequestBody.
+        r"""Gets the overwrite of this ImportTableRequestBody.
 
         是否覆盖之前的数据
 
@@ -412,7 +412,7 @@ class ImportTableRequestBody:
 
     @overwrite.setter
     def overwrite(self, overwrite):
-        """Sets the overwrite of this ImportTableRequestBody.
+        r"""Sets the overwrite of this ImportTableRequestBody.
 
         是否覆盖之前的数据
 
@@ -423,7 +423,7 @@ class ImportTableRequestBody:
 
     @property
     def partition_spec(self):
-        """Gets the partition_spec of this ImportTableRequestBody.
+        r"""Gets the partition_spec of this ImportTableRequestBody.
 
         表示需要导入到哪个分区
 
@@ -434,7 +434,7 @@ class ImportTableRequestBody:
 
     @partition_spec.setter
     def partition_spec(self, partition_spec):
-        """Sets the partition_spec of this ImportTableRequestBody.
+        r"""Sets the partition_spec of this ImportTableRequestBody.
 
         表示需要导入到哪个分区
 
@@ -445,7 +445,7 @@ class ImportTableRequestBody:
 
     @property
     def conf(self):
-        """Gets the conf of this ImportTableRequestBody.
+        r"""Gets the conf of this ImportTableRequestBody.
 
         用于定义此配置项的参数
 
@@ -456,7 +456,7 @@ class ImportTableRequestBody:
 
     @conf.setter
     def conf(self, conf):
-        """Sets the conf of this ImportTableRequestBody.
+        r"""Sets the conf of this ImportTableRequestBody.
 
         用于定义此配置项的参数
 

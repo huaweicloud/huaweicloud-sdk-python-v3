@@ -29,7 +29,7 @@ class DomainVisibleServiceVo:
     }
 
     def __init__(self, name=None, type=None, execute_type=None):
-        """DomainVisibleServiceVo
+        r"""DomainVisibleServiceVo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class DomainVisibleServiceVo:
 
     @property
     def name(self):
-        """Gets the name of this DomainVisibleServiceVo.
+        r"""Gets the name of this DomainVisibleServiceVo.
 
         第三方服务名
 
@@ -68,7 +68,7 @@ class DomainVisibleServiceVo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DomainVisibleServiceVo.
+        r"""Sets the name of this DomainVisibleServiceVo.
 
         第三方服务名
 
@@ -79,7 +79,7 @@ class DomainVisibleServiceVo:
 
     @property
     def type(self):
-        """Gets the type of this DomainVisibleServiceVo.
+        r"""Gets the type of this DomainVisibleServiceVo.
 
         第三方服务类型
 
@@ -90,7 +90,7 @@ class DomainVisibleServiceVo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DomainVisibleServiceVo.
+        r"""Sets the type of this DomainVisibleServiceVo.
 
         第三方服务类型
 
@@ -101,7 +101,7 @@ class DomainVisibleServiceVo:
 
     @property
     def execute_type(self):
-        """Gets the execute_type of this DomainVisibleServiceVo.
+        r"""Gets the execute_type of this DomainVisibleServiceVo.
 
         第三方服务执行方式（0：普通TestHub，1：对接八爪鱼TestHub）
 
@@ -112,7 +112,7 @@ class DomainVisibleServiceVo:
 
     @execute_type.setter
     def execute_type(self, execute_type):
-        """Sets the execute_type of this DomainVisibleServiceVo.
+        r"""Sets the execute_type of this DomainVisibleServiceVo.
 
         第三方服务执行方式（0：普通TestHub，1：对接八爪鱼TestHub）
 

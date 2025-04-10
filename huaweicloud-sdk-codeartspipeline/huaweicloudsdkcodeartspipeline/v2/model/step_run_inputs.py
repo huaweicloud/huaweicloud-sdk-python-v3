@@ -27,7 +27,7 @@ class StepRunInputs:
     }
 
     def __init__(self, key=None, value=None):
-        """StepRunInputs
+        r"""StepRunInputs
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class StepRunInputs:
 
     @property
     def key(self):
-        """Gets the key of this StepRunInputs.
+        r"""Gets the key of this StepRunInputs.
 
         输入参数名
 
@@ -61,7 +61,7 @@ class StepRunInputs:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this StepRunInputs.
+        r"""Sets the key of this StepRunInputs.
 
         输入参数名
 
@@ -72,7 +72,7 @@ class StepRunInputs:
 
     @property
     def value(self):
-        """Gets the value of this StepRunInputs.
+        r"""Gets the value of this StepRunInputs.
 
         输入参数值
 
@@ -83,7 +83,7 @@ class StepRunInputs:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this StepRunInputs.
+        r"""Sets the value of this StepRunInputs.
 
         输入参数值
 

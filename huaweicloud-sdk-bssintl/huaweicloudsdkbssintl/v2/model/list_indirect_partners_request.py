@@ -25,7 +25,7 @@ class ListIndirectPartnersRequest:
     }
 
     def __init__(self, body=None):
-        """ListIndirectPartnersRequest
+        r"""ListIndirectPartnersRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListIndirectPartnersRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListIndirectPartnersRequest.
+        r"""Gets the body of this ListIndirectPartnersRequest.
 
         :return: The body of this ListIndirectPartnersRequest.
         :rtype: :class:`huaweicloudsdkbssintl.v2.QueryIndirectPartnersReq`
@@ -52,7 +52,7 @@ class ListIndirectPartnersRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListIndirectPartnersRequest.
+        r"""Sets the body of this ListIndirectPartnersRequest.
 
         :param body: The body of this ListIndirectPartnersRequest.
         :type body: :class:`huaweicloudsdkbssintl.v2.QueryIndirectPartnersReq`

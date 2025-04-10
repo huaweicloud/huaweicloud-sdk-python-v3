@@ -25,7 +25,7 @@ class CreateAttentionRequest:
     }
 
     def __init__(self, body=None):
-        """CreateAttentionRequest
+        r"""CreateAttentionRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateAttentionRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAttentionRequest.
+        r"""Gets the body of this CreateAttentionRequest.
 
         :return: The body of this CreateAttentionRequest.
         :rtype: :class:`huaweicloudsdkcodeartsartifact.v2.AttentionDO`
@@ -52,7 +52,7 @@ class CreateAttentionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAttentionRequest.
+        r"""Sets the body of this CreateAttentionRequest.
 
         :param body: The body of this CreateAttentionRequest.
         :type body: :class:`huaweicloudsdkcodeartsartifact.v2.AttentionDO`

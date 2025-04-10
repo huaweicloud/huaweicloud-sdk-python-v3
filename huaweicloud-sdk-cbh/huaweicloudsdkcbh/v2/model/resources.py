@@ -33,7 +33,7 @@ class Resources:
     }
 
     def __init__(self, resource_id=None, resource_detail=None, tags=None, sys_tags=None, resource_name=None):
-        """Resources
+        r"""Resources
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class Resources:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this Resources.
+        r"""Gets the resource_id of this Resources.
 
         实例ID。
 
@@ -77,7 +77,7 @@ class Resources:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this Resources.
+        r"""Sets the resource_id of this Resources.
 
         实例ID。
 
@@ -88,7 +88,7 @@ class Resources:
 
     @property
     def resource_detail(self):
-        """Gets the resource_detail of this Resources.
+        r"""Gets the resource_detail of this Resources.
 
         :return: The resource_detail of this Resources.
         :rtype: :class:`huaweicloudsdkcbh.v2.InstanceDetail`
@@ -97,7 +97,7 @@ class Resources:
 
     @resource_detail.setter
     def resource_detail(self, resource_detail):
-        """Sets the resource_detail of this Resources.
+        r"""Sets the resource_detail of this Resources.
 
         :param resource_detail: The resource_detail of this Resources.
         :type resource_detail: :class:`huaweicloudsdkcbh.v2.InstanceDetail`
@@ -106,7 +106,7 @@ class Resources:
 
     @property
     def tags(self):
-        """Gets the tags of this Resources.
+        r"""Gets the tags of this Resources.
 
         tags。
 
@@ -117,7 +117,7 @@ class Resources:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this Resources.
+        r"""Sets the tags of this Resources.
 
         tags。
 
@@ -128,7 +128,7 @@ class Resources:
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this Resources.
+        r"""Gets the sys_tags of this Resources.
 
         sys_tags。
 
@@ -139,7 +139,7 @@ class Resources:
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this Resources.
+        r"""Sets the sys_tags of this Resources.
 
         sys_tags。
 
@@ -150,7 +150,7 @@ class Resources:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this Resources.
+        r"""Gets the resource_name of this Resources.
 
         资源名称。
 
@@ -161,7 +161,7 @@ class Resources:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this Resources.
+        r"""Sets the resource_name of this Resources.
 
         资源名称。
 

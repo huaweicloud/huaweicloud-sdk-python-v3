@@ -33,7 +33,7 @@ class StartTimeInfo:
     }
 
     def __init__(self, start_time=None, frequency=None, mode=None, day_time_frame=None, single_time_frame=None):
-        """StartTimeInfo
+        r"""StartTimeInfo
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class StartTimeInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this StartTimeInfo.
+        r"""Gets the start_time of this StartTimeInfo.
 
         任务启动时间
 
@@ -81,7 +81,7 @@ class StartTimeInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this StartTimeInfo.
+        r"""Sets the start_time of this StartTimeInfo.
 
         任务启动时间
 
@@ -92,7 +92,7 @@ class StartTimeInfo:
 
     @property
     def frequency(self):
-        """Gets the frequency of this StartTimeInfo.
+        r"""Gets the frequency of this StartTimeInfo.
 
         任务运行频率（定时任务频率，每天运行还是单次运行）
 
@@ -103,7 +103,7 @@ class StartTimeInfo:
 
     @frequency.setter
     def frequency(self, frequency):
-        """Sets the frequency of this StartTimeInfo.
+        r"""Sets the frequency of this StartTimeInfo.
 
         任务运行频率（定时任务频率，每天运行还是单次运行）
 
@@ -114,7 +114,7 @@ class StartTimeInfo:
 
     @property
     def mode(self):
-        """Gets the mode of this StartTimeInfo.
+        r"""Gets the mode of this StartTimeInfo.
 
         任务运行模式（按时间段运行还是按频率运行）
 
@@ -125,7 +125,7 @@ class StartTimeInfo:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this StartTimeInfo.
+        r"""Sets the mode of this StartTimeInfo.
 
         任务运行模式（按时间段运行还是按频率运行）
 
@@ -136,7 +136,7 @@ class StartTimeInfo:
 
     @property
     def day_time_frame(self):
-        """Gets the day_time_frame of this StartTimeInfo.
+        r"""Gets the day_time_frame of this StartTimeInfo.
 
         每天运行时间段
 
@@ -147,7 +147,7 @@ class StartTimeInfo:
 
     @day_time_frame.setter
     def day_time_frame(self, day_time_frame):
-        """Sets the day_time_frame of this StartTimeInfo.
+        r"""Sets the day_time_frame of this StartTimeInfo.
 
         每天运行时间段
 
@@ -158,7 +158,7 @@ class StartTimeInfo:
 
     @property
     def single_time_frame(self):
-        """Gets the single_time_frame of this StartTimeInfo.
+        r"""Gets the single_time_frame of this StartTimeInfo.
 
         每次运行时间段
 
@@ -169,7 +169,7 @@ class StartTimeInfo:
 
     @single_time_frame.setter
     def single_time_frame(self, single_time_frame):
-        """Sets the single_time_frame of this StartTimeInfo.
+        r"""Sets the single_time_frame of this StartTimeInfo.
 
         每次运行时间段
 

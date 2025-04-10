@@ -29,7 +29,7 @@ class ExecutionSummary:
     }
 
     def __init__(self, order_id=None, job_id=None, report_time=None):
-        """ExecutionSummary
+        r"""ExecutionSummary
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ExecutionSummary:
 
     @property
     def order_id(self):
-        """Gets the order_id of this ExecutionSummary.
+        r"""Gets the order_id of this ExecutionSummary.
 
         工单Id
 
@@ -68,7 +68,7 @@ class ExecutionSummary:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ExecutionSummary.
+        r"""Sets the order_id of this ExecutionSummary.
 
         工单Id
 
@@ -79,7 +79,7 @@ class ExecutionSummary:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ExecutionSummary.
+        r"""Gets the job_id of this ExecutionSummary.
 
         脚本执行Id
 
@@ -90,7 +90,7 @@ class ExecutionSummary:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ExecutionSummary.
+        r"""Sets the job_id of this ExecutionSummary.
 
         脚本执行Id
 
@@ -101,7 +101,7 @@ class ExecutionSummary:
 
     @property
     def report_time(self):
-        """Gets the report_time of this ExecutionSummary.
+        r"""Gets the report_time of this ExecutionSummary.
 
         报告时间
 
@@ -112,7 +112,7 @@ class ExecutionSummary:
 
     @report_time.setter
     def report_time(self, report_time):
-        """Sets the report_time of this ExecutionSummary.
+        r"""Sets the report_time of this ExecutionSummary.
 
         报告时间
 

@@ -25,7 +25,7 @@ class BatchImportCloudPhoneDataRequestBody:
     }
 
     def __init__(self, restore_infos=None):
-        """BatchImportCloudPhoneDataRequestBody
+        r"""BatchImportCloudPhoneDataRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchImportCloudPhoneDataRequestBody:
 
     @property
     def restore_infos(self):
-        """Gets the restore_infos of this BatchImportCloudPhoneDataRequestBody.
+        r"""Gets the restore_infos of this BatchImportCloudPhoneDataRequestBody.
 
         待导入数据的云手机信息。
 
@@ -53,7 +53,7 @@ class BatchImportCloudPhoneDataRequestBody:
 
     @restore_infos.setter
     def restore_infos(self, restore_infos):
-        """Sets the restore_infos of this BatchImportCloudPhoneDataRequestBody.
+        r"""Sets the restore_infos of this BatchImportCloudPhoneDataRequestBody.
 
         待导入数据的云手机信息。
 

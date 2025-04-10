@@ -28,7 +28,7 @@ class ShowUserExecuteTestCaseInfoResponse(SdkResponse):
     }
 
     def __init__(self, total=None, values=None):
-        """ShowUserExecuteTestCaseInfoResponse
+        r"""ShowUserExecuteTestCaseInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowUserExecuteTestCaseInfoResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowUserExecuteTestCaseInfoResponse.
+        r"""Gets the total of this ShowUserExecuteTestCaseInfoResponse.
 
         起始记录数大于实际总条数时，值为0。
 
@@ -62,7 +62,7 @@ class ShowUserExecuteTestCaseInfoResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowUserExecuteTestCaseInfoResponse.
+        r"""Sets the total of this ShowUserExecuteTestCaseInfoResponse.
 
         起始记录数大于实际总条数时，值为0。
 
@@ -73,7 +73,7 @@ class ShowUserExecuteTestCaseInfoResponse(SdkResponse):
 
     @property
     def values(self):
-        """Gets the values of this ShowUserExecuteTestCaseInfoResponse.
+        r"""Gets the values of this ShowUserExecuteTestCaseInfoResponse.
 
         时段内用例的执行情况
 
@@ -84,7 +84,7 @@ class ShowUserExecuteTestCaseInfoResponse(SdkResponse):
 
     @values.setter
     def values(self, values):
-        """Sets the values of this ShowUserExecuteTestCaseInfoResponse.
+        r"""Sets the values of this ShowUserExecuteTestCaseInfoResponse.
 
         时段内用例的执行情况
 

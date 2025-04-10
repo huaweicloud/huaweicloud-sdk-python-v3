@@ -52,7 +52,7 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, provider_type=None, connection_id=None, detail=None, kafka_detail=None, smn_detail=None, eg_detail=None, apigw_detail=None, retry_times=None, transform=None, dead_letter_queue=None, created_time=None, updated_time=None):
-        """ShowDetailOfSubscriptionTargetResponse
+        r"""ShowDetailOfSubscriptionTargetResponse
 
         The model defined in huaweicloud sdk
 
@@ -135,7 +135,7 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowDetailOfSubscriptionTargetResponse.
+        r"""Gets the id of this ShowDetailOfSubscriptionTargetResponse.
 
         订阅目标ID
 
@@ -146,7 +146,7 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowDetailOfSubscriptionTargetResponse.
+        r"""Sets the id of this ShowDetailOfSubscriptionTargetResponse.
 
         订阅目标ID
 
@@ -157,7 +157,7 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowDetailOfSubscriptionTargetResponse.
+        r"""Gets the name of this ShowDetailOfSubscriptionTargetResponse.
 
         订阅的事件目标名称
 
@@ -168,7 +168,7 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowDetailOfSubscriptionTargetResponse.
+        r"""Sets the name of this ShowDetailOfSubscriptionTargetResponse.
 
         订阅的事件目标名称
 
@@ -179,7 +179,7 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
 
     @property
     def provider_type(self):
-        """Gets the provider_type of this ShowDetailOfSubscriptionTargetResponse.
+        r"""Gets the provider_type of this ShowDetailOfSubscriptionTargetResponse.
 
         订阅的事件目标的提供方类型
 
@@ -190,7 +190,7 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
 
     @provider_type.setter
     def provider_type(self, provider_type):
-        """Sets the provider_type of this ShowDetailOfSubscriptionTargetResponse.
+        r"""Sets the provider_type of this ShowDetailOfSubscriptionTargetResponse.
 
         订阅的事件目标的提供方类型
 
@@ -201,7 +201,7 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this ShowDetailOfSubscriptionTargetResponse.
+        r"""Gets the connection_id of this ShowDetailOfSubscriptionTargetResponse.
 
         订阅的事件目标使用的目标链接ID
 
@@ -212,7 +212,7 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this ShowDetailOfSubscriptionTargetResponse.
+        r"""Sets the connection_id of this ShowDetailOfSubscriptionTargetResponse.
 
         订阅的事件目标使用的目标链接ID
 
@@ -223,7 +223,7 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
 
     @property
     def detail(self):
-        """Gets the detail of this ShowDetailOfSubscriptionTargetResponse.
+        r"""Gets the detail of this ShowDetailOfSubscriptionTargetResponse.
 
         订阅的事件目标参数列表
 
@@ -234,7 +234,7 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this ShowDetailOfSubscriptionTargetResponse.
+        r"""Sets the detail of this ShowDetailOfSubscriptionTargetResponse.
 
         订阅的事件目标参数列表
 
@@ -245,7 +245,7 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
 
     @property
     def kafka_detail(self):
-        """Gets the kafka_detail of this ShowDetailOfSubscriptionTargetResponse.
+        r"""Gets the kafka_detail of this ShowDetailOfSubscriptionTargetResponse.
 
         :return: The kafka_detail of this ShowDetailOfSubscriptionTargetResponse.
         :rtype: :class:`huaweicloudsdkeg.v1.KafkaTargetDetail`
@@ -254,7 +254,7 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
 
     @kafka_detail.setter
     def kafka_detail(self, kafka_detail):
-        """Sets the kafka_detail of this ShowDetailOfSubscriptionTargetResponse.
+        r"""Sets the kafka_detail of this ShowDetailOfSubscriptionTargetResponse.
 
         :param kafka_detail: The kafka_detail of this ShowDetailOfSubscriptionTargetResponse.
         :type kafka_detail: :class:`huaweicloudsdkeg.v1.KafkaTargetDetail`
@@ -263,7 +263,7 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
 
     @property
     def smn_detail(self):
-        """Gets the smn_detail of this ShowDetailOfSubscriptionTargetResponse.
+        r"""Gets the smn_detail of this ShowDetailOfSubscriptionTargetResponse.
 
         :return: The smn_detail of this ShowDetailOfSubscriptionTargetResponse.
         :rtype: :class:`huaweicloudsdkeg.v1.SmnTargetDetail`
@@ -272,7 +272,7 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
 
     @smn_detail.setter
     def smn_detail(self, smn_detail):
-        """Sets the smn_detail of this ShowDetailOfSubscriptionTargetResponse.
+        r"""Sets the smn_detail of this ShowDetailOfSubscriptionTargetResponse.
 
         :param smn_detail: The smn_detail of this ShowDetailOfSubscriptionTargetResponse.
         :type smn_detail: :class:`huaweicloudsdkeg.v1.SmnTargetDetail`
@@ -281,7 +281,7 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
 
     @property
     def eg_detail(self):
-        """Gets the eg_detail of this ShowDetailOfSubscriptionTargetResponse.
+        r"""Gets the eg_detail of this ShowDetailOfSubscriptionTargetResponse.
 
         :return: The eg_detail of this ShowDetailOfSubscriptionTargetResponse.
         :rtype: :class:`huaweicloudsdkeg.v1.EgTargetDetail`
@@ -290,7 +290,7 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
 
     @eg_detail.setter
     def eg_detail(self, eg_detail):
-        """Sets the eg_detail of this ShowDetailOfSubscriptionTargetResponse.
+        r"""Sets the eg_detail of this ShowDetailOfSubscriptionTargetResponse.
 
         :param eg_detail: The eg_detail of this ShowDetailOfSubscriptionTargetResponse.
         :type eg_detail: :class:`huaweicloudsdkeg.v1.EgTargetDetail`
@@ -299,7 +299,7 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
 
     @property
     def apigw_detail(self):
-        """Gets the apigw_detail of this ShowDetailOfSubscriptionTargetResponse.
+        r"""Gets the apigw_detail of this ShowDetailOfSubscriptionTargetResponse.
 
         :return: The apigw_detail of this ShowDetailOfSubscriptionTargetResponse.
         :rtype: :class:`huaweicloudsdkeg.v1.ApigwTargetDetail`
@@ -308,7 +308,7 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
 
     @apigw_detail.setter
     def apigw_detail(self, apigw_detail):
-        """Sets the apigw_detail of this ShowDetailOfSubscriptionTargetResponse.
+        r"""Sets the apigw_detail of this ShowDetailOfSubscriptionTargetResponse.
 
         :param apigw_detail: The apigw_detail of this ShowDetailOfSubscriptionTargetResponse.
         :type apigw_detail: :class:`huaweicloudsdkeg.v1.ApigwTargetDetail`
@@ -317,7 +317,7 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
 
     @property
     def retry_times(self):
-        """Gets the retry_times of this ShowDetailOfSubscriptionTargetResponse.
+        r"""Gets the retry_times of this ShowDetailOfSubscriptionTargetResponse.
 
         重试次数
 
@@ -328,7 +328,7 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
 
     @retry_times.setter
     def retry_times(self, retry_times):
-        """Sets the retry_times of this ShowDetailOfSubscriptionTargetResponse.
+        r"""Sets the retry_times of this ShowDetailOfSubscriptionTargetResponse.
 
         重试次数
 
@@ -339,7 +339,7 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
 
     @property
     def transform(self):
-        """Gets the transform of this ShowDetailOfSubscriptionTargetResponse.
+        r"""Gets the transform of this ShowDetailOfSubscriptionTargetResponse.
 
         :return: The transform of this ShowDetailOfSubscriptionTargetResponse.
         :rtype: :class:`huaweicloudsdkeg.v1.TransForm`
@@ -348,7 +348,7 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
 
     @transform.setter
     def transform(self, transform):
-        """Sets the transform of this ShowDetailOfSubscriptionTargetResponse.
+        r"""Sets the transform of this ShowDetailOfSubscriptionTargetResponse.
 
         :param transform: The transform of this ShowDetailOfSubscriptionTargetResponse.
         :type transform: :class:`huaweicloudsdkeg.v1.TransForm`
@@ -357,7 +357,7 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
 
     @property
     def dead_letter_queue(self):
-        """Gets the dead_letter_queue of this ShowDetailOfSubscriptionTargetResponse.
+        r"""Gets the dead_letter_queue of this ShowDetailOfSubscriptionTargetResponse.
 
         :return: The dead_letter_queue of this ShowDetailOfSubscriptionTargetResponse.
         :rtype: :class:`huaweicloudsdkeg.v1.DeadLetterQueue`
@@ -366,7 +366,7 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
 
     @dead_letter_queue.setter
     def dead_letter_queue(self, dead_letter_queue):
-        """Sets the dead_letter_queue of this ShowDetailOfSubscriptionTargetResponse.
+        r"""Sets the dead_letter_queue of this ShowDetailOfSubscriptionTargetResponse.
 
         :param dead_letter_queue: The dead_letter_queue of this ShowDetailOfSubscriptionTargetResponse.
         :type dead_letter_queue: :class:`huaweicloudsdkeg.v1.DeadLetterQueue`
@@ -375,7 +375,7 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this ShowDetailOfSubscriptionTargetResponse.
+        r"""Gets the created_time of this ShowDetailOfSubscriptionTargetResponse.
 
         创建时间
 
@@ -386,7 +386,7 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this ShowDetailOfSubscriptionTargetResponse.
+        r"""Sets the created_time of this ShowDetailOfSubscriptionTargetResponse.
 
         创建时间
 
@@ -397,7 +397,7 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this ShowDetailOfSubscriptionTargetResponse.
+        r"""Gets the updated_time of this ShowDetailOfSubscriptionTargetResponse.
 
         更新时间
 
@@ -408,7 +408,7 @@ class ShowDetailOfSubscriptionTargetResponse(SdkResponse):
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this ShowDetailOfSubscriptionTargetResponse.
+        r"""Sets the updated_time of this ShowDetailOfSubscriptionTargetResponse.
 
         更新时间
 

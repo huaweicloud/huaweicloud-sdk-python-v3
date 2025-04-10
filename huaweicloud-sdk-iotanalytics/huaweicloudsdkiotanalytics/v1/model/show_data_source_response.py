@@ -36,7 +36,7 @@ class ShowDataSourceResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, type=None, content=None, created_time=None, modified_time=None):
-        """ShowDataSourceResponse
+        r"""ShowDataSourceResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ShowDataSourceResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowDataSourceResponse.
+        r"""Gets the id of this ShowDataSourceResponse.
 
         数据源id
 
@@ -90,7 +90,7 @@ class ShowDataSourceResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowDataSourceResponse.
+        r"""Sets the id of this ShowDataSourceResponse.
 
         数据源id
 
@@ -101,7 +101,7 @@ class ShowDataSourceResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowDataSourceResponse.
+        r"""Gets the name of this ShowDataSourceResponse.
 
         数据源名称
 
@@ -112,7 +112,7 @@ class ShowDataSourceResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowDataSourceResponse.
+        r"""Sets the name of this ShowDataSourceResponse.
 
         数据源名称
 
@@ -123,7 +123,7 @@ class ShowDataSourceResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowDataSourceResponse.
+        r"""Gets the type of this ShowDataSourceResponse.
 
         数据源类型, 包括：IOTDA、API[、OBS、DIS、SMN、FUNCTION_GRAPH、MODEL_ARTS、DCS、KAFKA](tag:IoTA-Cloud-Only)、NODE。数据源不支持修改类型。
 
@@ -134,7 +134,7 @@ class ShowDataSourceResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowDataSourceResponse.
+        r"""Sets the type of this ShowDataSourceResponse.
 
         数据源类型, 包括：IOTDA、API[、OBS、DIS、SMN、FUNCTION_GRAPH、MODEL_ARTS、DCS、KAFKA](tag:IoTA-Cloud-Only)、NODE。数据源不支持修改类型。
 
@@ -145,7 +145,7 @@ class ShowDataSourceResponse(SdkResponse):
 
     @property
     def content(self):
-        """Gets the content of this ShowDataSourceResponse.
+        r"""Gets the content of this ShowDataSourceResponse.
 
         :return: The content of this ShowDataSourceResponse.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ContentDetailRsp`
@@ -154,7 +154,7 @@ class ShowDataSourceResponse(SdkResponse):
 
     @content.setter
     def content(self, content):
-        """Sets the content of this ShowDataSourceResponse.
+        r"""Sets the content of this ShowDataSourceResponse.
 
         :param content: The content of this ShowDataSourceResponse.
         :type content: :class:`huaweicloudsdkiotanalytics.v1.ContentDetailRsp`
@@ -163,7 +163,7 @@ class ShowDataSourceResponse(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this ShowDataSourceResponse.
+        r"""Gets the created_time of this ShowDataSourceResponse.
 
         创建时间，格式为：yyyy-MM-dd'T'HH:mm:ss'Z'
 
@@ -174,7 +174,7 @@ class ShowDataSourceResponse(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this ShowDataSourceResponse.
+        r"""Sets the created_time of this ShowDataSourceResponse.
 
         创建时间，格式为：yyyy-MM-dd'T'HH:mm:ss'Z'
 
@@ -185,7 +185,7 @@ class ShowDataSourceResponse(SdkResponse):
 
     @property
     def modified_time(self):
-        """Gets the modified_time of this ShowDataSourceResponse.
+        r"""Gets the modified_time of this ShowDataSourceResponse.
 
         修改时间，格式为：yyyy-MM-dd'T'HH:mm:ss'Z'
 
@@ -196,7 +196,7 @@ class ShowDataSourceResponse(SdkResponse):
 
     @modified_time.setter
     def modified_time(self, modified_time):
-        """Sets the modified_time of this ShowDataSourceResponse.
+        r"""Sets the modified_time of this ShowDataSourceResponse.
 
         修改时间，格式为：yyyy-MM-dd'T'HH:mm:ss'Z'
 

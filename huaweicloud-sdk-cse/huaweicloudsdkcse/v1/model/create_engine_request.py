@@ -27,7 +27,7 @@ class CreateEngineRequest:
     }
 
     def __init__(self, x_enterprise_project_id=None, body=None):
-        """CreateEngineRequest
+        r"""CreateEngineRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateEngineRequest:
 
     @property
     def x_enterprise_project_id(self):
-        """Gets the x_enterprise_project_id of this CreateEngineRequest.
+        r"""Gets the x_enterprise_project_id of this CreateEngineRequest.
 
         如果不带则默认企业项目为\"default\"，ID为\"0\"
 
@@ -61,7 +61,7 @@ class CreateEngineRequest:
 
     @x_enterprise_project_id.setter
     def x_enterprise_project_id(self, x_enterprise_project_id):
-        """Sets the x_enterprise_project_id of this CreateEngineRequest.
+        r"""Sets the x_enterprise_project_id of this CreateEngineRequest.
 
         如果不带则默认企业项目为\"default\"，ID为\"0\"
 
@@ -72,7 +72,7 @@ class CreateEngineRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateEngineRequest.
+        r"""Gets the body of this CreateEngineRequest.
 
         :return: The body of this CreateEngineRequest.
         :rtype: :class:`huaweicloudsdkcse.v1.EngineCreateReq`
@@ -81,7 +81,7 @@ class CreateEngineRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateEngineRequest.
+        r"""Sets the body of this CreateEngineRequest.
 
         :param body: The body of this CreateEngineRequest.
         :type body: :class:`huaweicloudsdkcse.v1.EngineCreateReq`

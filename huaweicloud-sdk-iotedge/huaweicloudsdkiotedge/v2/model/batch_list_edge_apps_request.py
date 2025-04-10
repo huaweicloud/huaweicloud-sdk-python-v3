@@ -33,7 +33,7 @@ class BatchListEdgeAppsRequest:
     }
 
     def __init__(self, edge_app_id=None, offset=None, limit=None, app_type=None, function_type=None):
-        """BatchListEdgeAppsRequest
+        r"""BatchListEdgeAppsRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class BatchListEdgeAppsRequest:
 
     @property
     def edge_app_id(self):
-        """Gets the edge_app_id of this BatchListEdgeAppsRequest.
+        r"""Gets the edge_app_id of this BatchListEdgeAppsRequest.
 
         应用ID搜索关键字
 
@@ -82,7 +82,7 @@ class BatchListEdgeAppsRequest:
 
     @edge_app_id.setter
     def edge_app_id(self, edge_app_id):
-        """Sets the edge_app_id of this BatchListEdgeAppsRequest.
+        r"""Sets the edge_app_id of this BatchListEdgeAppsRequest.
 
         应用ID搜索关键字
 
@@ -93,7 +93,7 @@ class BatchListEdgeAppsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this BatchListEdgeAppsRequest.
+        r"""Gets the offset of this BatchListEdgeAppsRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -104,7 +104,7 @@ class BatchListEdgeAppsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this BatchListEdgeAppsRequest.
+        r"""Sets the offset of this BatchListEdgeAppsRequest.
 
         查询的起始位置，取值范围为非负整数，默认为0
 
@@ -115,7 +115,7 @@ class BatchListEdgeAppsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this BatchListEdgeAppsRequest.
+        r"""Gets the limit of this BatchListEdgeAppsRequest.
 
         每页记录数，默认值为10，取值区间为1-1000
 
@@ -126,7 +126,7 @@ class BatchListEdgeAppsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this BatchListEdgeAppsRequest.
+        r"""Sets the limit of this BatchListEdgeAppsRequest.
 
         每页记录数，默认值为10，取值区间为1-1000
 
@@ -137,7 +137,7 @@ class BatchListEdgeAppsRequest:
 
     @property
     def app_type(self):
-        """Gets the app_type of this BatchListEdgeAppsRequest.
+        r"""Gets the app_type of this BatchListEdgeAppsRequest.
 
         应用id搜索关键字
 
@@ -148,7 +148,7 @@ class BatchListEdgeAppsRequest:
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this BatchListEdgeAppsRequest.
+        r"""Sets the app_type of this BatchListEdgeAppsRequest.
 
         应用id搜索关键字
 
@@ -159,7 +159,7 @@ class BatchListEdgeAppsRequest:
 
     @property
     def function_type(self):
-        """Gets the function_type of this BatchListEdgeAppsRequest.
+        r"""Gets the function_type of this BatchListEdgeAppsRequest.
 
         功能类型
 
@@ -170,7 +170,7 @@ class BatchListEdgeAppsRequest:
 
     @function_type.setter
     def function_type(self, function_type):
-        """Sets the function_type of this BatchListEdgeAppsRequest.
+        r"""Sets the function_type of this BatchListEdgeAppsRequest.
 
         功能类型
 

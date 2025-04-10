@@ -34,7 +34,7 @@ class ShowSubCustomerBudgetResponse(SdkResponse):
     }
 
     def __init__(self, budget_amount=None, used_amount=None, measure_id=None, currency=None, budget_type=None):
-        """ShowSubCustomerBudgetResponse
+        r"""ShowSubCustomerBudgetResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowSubCustomerBudgetResponse(SdkResponse):
 
     @property
     def budget_amount(self):
-        """Gets the budget_amount of this ShowSubCustomerBudgetResponse.
+        r"""Gets the budget_amount of this ShowSubCustomerBudgetResponse.
 
         初始预算金额。
 
@@ -83,7 +83,7 @@ class ShowSubCustomerBudgetResponse(SdkResponse):
 
     @budget_amount.setter
     def budget_amount(self, budget_amount):
-        """Sets the budget_amount of this ShowSubCustomerBudgetResponse.
+        r"""Sets the budget_amount of this ShowSubCustomerBudgetResponse.
 
         初始预算金额。
 
@@ -94,7 +94,7 @@ class ShowSubCustomerBudgetResponse(SdkResponse):
 
     @property
     def used_amount(self):
-        """Gets the used_amount of this ShowSubCustomerBudgetResponse.
+        r"""Gets the used_amount of this ShowSubCustomerBudgetResponse.
 
         已经使用的预算。该预算存在一定的时延和误差。
 
@@ -105,7 +105,7 @@ class ShowSubCustomerBudgetResponse(SdkResponse):
 
     @used_amount.setter
     def used_amount(self, used_amount):
-        """Sets the used_amount of this ShowSubCustomerBudgetResponse.
+        r"""Sets the used_amount of this ShowSubCustomerBudgetResponse.
 
         已经使用的预算。该预算存在一定的时延和误差。
 
@@ -116,7 +116,7 @@ class ShowSubCustomerBudgetResponse(SdkResponse):
 
     @property
     def measure_id(self):
-        """Gets the measure_id of this ShowSubCustomerBudgetResponse.
+        r"""Gets the measure_id of this ShowSubCustomerBudgetResponse.
 
         金额单位。 1：元
 
@@ -127,7 +127,7 @@ class ShowSubCustomerBudgetResponse(SdkResponse):
 
     @measure_id.setter
     def measure_id(self, measure_id):
-        """Sets the measure_id of this ShowSubCustomerBudgetResponse.
+        r"""Sets the measure_id of this ShowSubCustomerBudgetResponse.
 
         金额单位。 1：元
 
@@ -138,7 +138,7 @@ class ShowSubCustomerBudgetResponse(SdkResponse):
 
     @property
     def currency(self):
-        """Gets the currency of this ShowSubCustomerBudgetResponse.
+        r"""Gets the currency of this ShowSubCustomerBudgetResponse.
 
         币种。 USD：美金
 
@@ -149,7 +149,7 @@ class ShowSubCustomerBudgetResponse(SdkResponse):
 
     @currency.setter
     def currency(self, currency):
-        """Sets the currency of this ShowSubCustomerBudgetResponse.
+        r"""Sets the currency of this ShowSubCustomerBudgetResponse.
 
         币种。 USD：美金
 
@@ -160,7 +160,7 @@ class ShowSubCustomerBudgetResponse(SdkResponse):
 
     @property
     def budget_type(self):
-        """Gets the budget_type of this ShowSubCustomerBudgetResponse.
+        r"""Gets the budget_type of this ShowSubCustomerBudgetResponse.
 
         |参数名称：预算模式| |参数的约束及描述：MONTHLY 月度预算 PACKAGE 一次性预算|
 
@@ -171,7 +171,7 @@ class ShowSubCustomerBudgetResponse(SdkResponse):
 
     @budget_type.setter
     def budget_type(self, budget_type):
-        """Sets the budget_type of this ShowSubCustomerBudgetResponse.
+        r"""Sets the budget_type of this ShowSubCustomerBudgetResponse.
 
         |参数名称：预算模式| |参数的约束及描述：MONTHLY 月度预算 PACKAGE 一次性预算|
 

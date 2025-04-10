@@ -24,7 +24,7 @@ class DeleteFlowLogResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteFlowLogResponse
+        r"""DeleteFlowLogResponse
 
         The model defined in huaweicloud sdk
 

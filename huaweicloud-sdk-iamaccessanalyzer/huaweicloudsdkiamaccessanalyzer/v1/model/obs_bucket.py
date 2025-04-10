@@ -27,7 +27,7 @@ class OBSBucket:
     }
 
     def __init__(self, bucket_acl=None, bucket_policy=None):
-        """OBSBucket
+        r"""OBSBucket
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class OBSBucket:
 
     @property
     def bucket_acl(self):
-        """Gets the bucket_acl of this OBSBucket.
+        r"""Gets the bucket_acl of this OBSBucket.
 
         桶ACL xml文件的string格式。
 
@@ -61,7 +61,7 @@ class OBSBucket:
 
     @bucket_acl.setter
     def bucket_acl(self, bucket_acl):
-        """Sets the bucket_acl of this OBSBucket.
+        r"""Sets the bucket_acl of this OBSBucket.
 
         桶ACL xml文件的string格式。
 
@@ -72,7 +72,7 @@ class OBSBucket:
 
     @property
     def bucket_policy(self):
-        """Gets the bucket_policy of this OBSBucket.
+        r"""Gets the bucket_policy of this OBSBucket.
 
         该策略JSON格式策略文档。
 
@@ -83,7 +83,7 @@ class OBSBucket:
 
     @bucket_policy.setter
     def bucket_policy(self, bucket_policy):
-        """Sets the bucket_policy of this OBSBucket.
+        r"""Sets the bucket_policy of this OBSBucket.
 
         该策略JSON格式策略文档。
 

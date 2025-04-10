@@ -27,7 +27,7 @@ class ExerciseDetailData:
     }
 
     def __init__(self, exercise_code_resource=None, exercise_case_resource=None):
-        """ExerciseDetailData
+        r"""ExerciseDetailData
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ExerciseDetailData:
 
     @property
     def exercise_code_resource(self):
-        """Gets the exercise_code_resource of this ExerciseDetailData.
+        r"""Gets the exercise_code_resource of this ExerciseDetailData.
 
         :return: The exercise_code_resource of this ExerciseDetailData.
         :rtype: :class:`huaweicloudsdkclassroom.v3.ExerciseCodeResource`
@@ -59,7 +59,7 @@ class ExerciseDetailData:
 
     @exercise_code_resource.setter
     def exercise_code_resource(self, exercise_code_resource):
-        """Sets the exercise_code_resource of this ExerciseDetailData.
+        r"""Sets the exercise_code_resource of this ExerciseDetailData.
 
         :param exercise_code_resource: The exercise_code_resource of this ExerciseDetailData.
         :type exercise_code_resource: :class:`huaweicloudsdkclassroom.v3.ExerciseCodeResource`
@@ -68,7 +68,7 @@ class ExerciseDetailData:
 
     @property
     def exercise_case_resource(self):
-        """Gets the exercise_case_resource of this ExerciseDetailData.
+        r"""Gets the exercise_case_resource of this ExerciseDetailData.
 
         测试用例信息
 
@@ -79,7 +79,7 @@ class ExerciseDetailData:
 
     @exercise_case_resource.setter
     def exercise_case_resource(self, exercise_case_resource):
-        """Sets the exercise_case_resource of this ExerciseDetailData.
+        r"""Sets the exercise_case_resource of this ExerciseDetailData.
 
         测试用例信息
 

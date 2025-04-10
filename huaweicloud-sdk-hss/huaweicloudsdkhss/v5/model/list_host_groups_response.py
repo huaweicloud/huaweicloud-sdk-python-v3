@@ -28,7 +28,7 @@ class ListHostGroupsResponse(SdkResponse):
     }
 
     def __init__(self, total_num=None, data_list=None):
-        """ListHostGroupsResponse
+        r"""ListHostGroupsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListHostGroupsResponse(SdkResponse):
 
     @property
     def total_num(self):
-        """Gets the total_num of this ListHostGroupsResponse.
+        r"""Gets the total_num of this ListHostGroupsResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class ListHostGroupsResponse(SdkResponse):
 
     @total_num.setter
     def total_num(self, total_num):
-        """Sets the total_num of this ListHostGroupsResponse.
+        r"""Sets the total_num of this ListHostGroupsResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class ListHostGroupsResponse(SdkResponse):
 
     @property
     def data_list(self):
-        """Gets the data_list of this ListHostGroupsResponse.
+        r"""Gets the data_list of this ListHostGroupsResponse.
 
         服务器组列表
 
@@ -84,7 +84,7 @@ class ListHostGroupsResponse(SdkResponse):
 
     @data_list.setter
     def data_list(self, data_list):
-        """Sets the data_list of this ListHostGroupsResponse.
+        r"""Sets the data_list of this ListHostGroupsResponse.
 
         服务器组列表
 

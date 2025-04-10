@@ -28,7 +28,7 @@ class ListAutoLaunchChangeHistoriesResponse(SdkResponse):
     }
 
     def __init__(self, total_num=None, data_list=None):
-        """ListAutoLaunchChangeHistoriesResponse
+        r"""ListAutoLaunchChangeHistoriesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAutoLaunchChangeHistoriesResponse(SdkResponse):
 
     @property
     def total_num(self):
-        """Gets the total_num of this ListAutoLaunchChangeHistoriesResponse.
+        r"""Gets the total_num of this ListAutoLaunchChangeHistoriesResponse.
 
         自启动项变动总数
 
@@ -62,7 +62,7 @@ class ListAutoLaunchChangeHistoriesResponse(SdkResponse):
 
     @total_num.setter
     def total_num(self, total_num):
-        """Sets the total_num of this ListAutoLaunchChangeHistoriesResponse.
+        r"""Sets the total_num of this ListAutoLaunchChangeHistoriesResponse.
 
         自启动项变动总数
 
@@ -73,7 +73,7 @@ class ListAutoLaunchChangeHistoriesResponse(SdkResponse):
 
     @property
     def data_list(self):
-        """Gets the data_list of this ListAutoLaunchChangeHistoriesResponse.
+        r"""Gets the data_list of this ListAutoLaunchChangeHistoriesResponse.
 
         软件历史变动记录列表
 
@@ -84,7 +84,7 @@ class ListAutoLaunchChangeHistoriesResponse(SdkResponse):
 
     @data_list.setter
     def data_list(self, data_list):
-        """Sets the data_list of this ListAutoLaunchChangeHistoriesResponse.
+        r"""Sets the data_list of this ListAutoLaunchChangeHistoriesResponse.
 
         软件历史变动记录列表
 

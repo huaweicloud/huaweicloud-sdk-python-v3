@@ -26,7 +26,7 @@ class ListDomainCertTagsResponse(SdkResponse):
     }
 
     def __init__(self, tags=None):
-        """ListDomainCertTagsResponse
+        r"""ListDomainCertTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListDomainCertTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ListDomainCertTagsResponse.
+        r"""Gets the tags of this ListDomainCertTagsResponse.
 
         标签列表。
 
@@ -55,7 +55,7 @@ class ListDomainCertTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListDomainCertTagsResponse.
+        r"""Sets the tags of this ListDomainCertTagsResponse.
 
         标签列表。
 

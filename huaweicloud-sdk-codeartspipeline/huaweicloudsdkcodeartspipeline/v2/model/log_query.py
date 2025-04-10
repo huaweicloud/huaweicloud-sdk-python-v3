@@ -31,7 +31,7 @@ class LogQuery:
     }
 
     def __init__(self, start_offset=None, end_offset=None, limit=None, sort=None):
-        """LogQuery
+        r"""LogQuery
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class LogQuery:
 
     @property
     def start_offset(self):
-        """Gets the start_offset of this LogQuery.
+        r"""Gets the start_offset of this LogQuery.
 
         日志起始偏移
 
@@ -73,7 +73,7 @@ class LogQuery:
 
     @start_offset.setter
     def start_offset(self, start_offset):
-        """Sets the start_offset of this LogQuery.
+        r"""Sets the start_offset of this LogQuery.
 
         日志起始偏移
 
@@ -84,7 +84,7 @@ class LogQuery:
 
     @property
     def end_offset(self):
-        """Gets the end_offset of this LogQuery.
+        r"""Gets the end_offset of this LogQuery.
 
         日志结束偏移
 
@@ -95,7 +95,7 @@ class LogQuery:
 
     @end_offset.setter
     def end_offset(self, end_offset):
-        """Sets the end_offset of this LogQuery.
+        r"""Sets the end_offset of this LogQuery.
 
         日志结束偏移
 
@@ -106,7 +106,7 @@ class LogQuery:
 
     @property
     def limit(self):
-        """Gets the limit of this LogQuery.
+        r"""Gets the limit of this LogQuery.
 
         最大日志行数
 
@@ -117,7 +117,7 @@ class LogQuery:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this LogQuery.
+        r"""Sets the limit of this LogQuery.
 
         最大日志行数
 
@@ -128,7 +128,7 @@ class LogQuery:
 
     @property
     def sort(self):
-        """Gets the sort of this LogQuery.
+        r"""Gets the sort of this LogQuery.
 
         排序规则[\"asc\",\"desc\"]
 
@@ -139,7 +139,7 @@ class LogQuery:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this LogQuery.
+        r"""Sets the sort of this LogQuery.
 
         排序规则[\"asc\",\"desc\"]
 

@@ -27,7 +27,7 @@ class RemediationExceptionRequest:
     }
 
     def __init__(self, resource_id=None, message=None):
-        """RemediationExceptionRequest
+        r"""RemediationExceptionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RemediationExceptionRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this RemediationExceptionRequest.
+        r"""Gets the resource_id of this RemediationExceptionRequest.
 
         资源ID。
 
@@ -60,7 +60,7 @@ class RemediationExceptionRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this RemediationExceptionRequest.
+        r"""Sets the resource_id of this RemediationExceptionRequest.
 
         资源ID。
 
@@ -71,7 +71,7 @@ class RemediationExceptionRequest:
 
     @property
     def message(self):
-        """Gets the message of this RemediationExceptionRequest.
+        r"""Gets the message of this RemediationExceptionRequest.
 
         加入合规规则修正例外的原因。
 
@@ -82,7 +82,7 @@ class RemediationExceptionRequest:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this RemediationExceptionRequest.
+        r"""Sets the message of this RemediationExceptionRequest.
 
         加入合规规则修正例外的原因。
 

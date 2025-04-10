@@ -24,7 +24,7 @@ class BatchCreateFabricWorkspaceTagsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchCreateFabricWorkspaceTagsResponse
+        r"""BatchCreateFabricWorkspaceTagsResponse
 
         The model defined in huaweicloud sdk
 

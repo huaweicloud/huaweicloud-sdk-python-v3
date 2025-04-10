@@ -27,7 +27,7 @@ class AuthScope:
     }
 
     def __init__(self, domain=None, project=None):
-        """AuthScope
+        r"""AuthScope
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AuthScope:
 
     @property
     def domain(self):
-        """Gets the domain of this AuthScope.
+        r"""Gets the domain of this AuthScope.
 
         :return: The domain of this AuthScope.
         :rtype: :class:`huaweicloudsdkiam.v3.AuthScopeDomain`
@@ -59,7 +59,7 @@ class AuthScope:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this AuthScope.
+        r"""Sets the domain of this AuthScope.
 
         :param domain: The domain of this AuthScope.
         :type domain: :class:`huaweicloudsdkiam.v3.AuthScopeDomain`
@@ -68,7 +68,7 @@ class AuthScope:
 
     @property
     def project(self):
-        """Gets the project of this AuthScope.
+        r"""Gets the project of this AuthScope.
 
         :return: The project of this AuthScope.
         :rtype: :class:`huaweicloudsdkiam.v3.AuthScopeProject`
@@ -77,7 +77,7 @@ class AuthScope:
 
     @project.setter
     def project(self, project):
-        """Sets the project of this AuthScope.
+        r"""Sets the project of this AuthScope.
 
         :param project: The project of this AuthScope.
         :type project: :class:`huaweicloudsdkiam.v3.AuthScopeProject`

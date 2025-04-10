@@ -27,7 +27,7 @@ class CreateLoadbalancerTagsRequest:
     }
 
     def __init__(self, loadbalancer_id=None, body=None):
-        """CreateLoadbalancerTagsRequest
+        r"""CreateLoadbalancerTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateLoadbalancerTagsRequest:
 
     @property
     def loadbalancer_id(self):
-        """Gets the loadbalancer_id of this CreateLoadbalancerTagsRequest.
+        r"""Gets the loadbalancer_id of this CreateLoadbalancerTagsRequest.
 
         负载均衡器ID
 
@@ -60,7 +60,7 @@ class CreateLoadbalancerTagsRequest:
 
     @loadbalancer_id.setter
     def loadbalancer_id(self, loadbalancer_id):
-        """Sets the loadbalancer_id of this CreateLoadbalancerTagsRequest.
+        r"""Sets the loadbalancer_id of this CreateLoadbalancerTagsRequest.
 
         负载均衡器ID
 
@@ -71,7 +71,7 @@ class CreateLoadbalancerTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateLoadbalancerTagsRequest.
+        r"""Gets the body of this CreateLoadbalancerTagsRequest.
 
         :return: The body of this CreateLoadbalancerTagsRequest.
         :rtype: :class:`huaweicloudsdkelb.v2.CreateLoadbalancerTagsRequestBody`
@@ -80,7 +80,7 @@ class CreateLoadbalancerTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateLoadbalancerTagsRequest.
+        r"""Sets the body of this CreateLoadbalancerTagsRequest.
 
         :param body: The body of this CreateLoadbalancerTagsRequest.
         :type body: :class:`huaweicloudsdkelb.v2.CreateLoadbalancerTagsRequestBody`

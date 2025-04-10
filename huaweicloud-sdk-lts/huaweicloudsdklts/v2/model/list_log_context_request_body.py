@@ -31,7 +31,7 @@ class ListLogContextRequestBody:
     }
 
     def __init__(self, line_num=None, time__=None, backwards_size=None, forwards_size=None):
-        """ListLogContextRequestBody
+        r"""ListLogContextRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListLogContextRequestBody:
 
     @property
     def line_num(self):
-        """Gets the line_num of this ListLogContextRequestBody.
+        r"""Gets the line_num of this ListLogContextRequestBody.
 
         日志单行序列号，字段值需要从日志结果中获取，纳秒级时间戳。
 
@@ -75,7 +75,7 @@ class ListLogContextRequestBody:
 
     @line_num.setter
     def line_num(self, line_num):
-        """Sets the line_num of this ListLogContextRequestBody.
+        r"""Sets the line_num of this ListLogContextRequestBody.
 
         日志单行序列号，字段值需要从日志结果中获取，纳秒级时间戳。
 
@@ -86,7 +86,7 @@ class ListLogContextRequestBody:
 
     @property
     def time__(self):
-        """Gets the time__ of this ListLogContextRequestBody.
+        r"""Gets the time__ of this ListLogContextRequestBody.
 
         自定义时间特性时间字段，字段值需要从日志结果中获取，毫秒级时间戳。若已开启云端结构化自定义时间功能，需要使用该字段和line_num字段共同进行上下文查询。
 
@@ -97,7 +97,7 @@ class ListLogContextRequestBody:
 
     @time__.setter
     def time__(self, time__):
-        """Sets the time__ of this ListLogContextRequestBody.
+        r"""Sets the time__ of this ListLogContextRequestBody.
 
         自定义时间特性时间字段，字段值需要从日志结果中获取，毫秒级时间戳。若已开启云端结构化自定义时间功能，需要使用该字段和line_num字段共同进行上下文查询。
 
@@ -108,7 +108,7 @@ class ListLogContextRequestBody:
 
     @property
     def backwards_size(self):
-        """Gets the backwards_size of this ListLogContextRequestBody.
+        r"""Gets the backwards_size of this ListLogContextRequestBody.
 
         指定起始日志往前（上文）的日志条数，取值范围 [0, 500] ，默认值100
 
@@ -119,7 +119,7 @@ class ListLogContextRequestBody:
 
     @backwards_size.setter
     def backwards_size(self, backwards_size):
-        """Sets the backwards_size of this ListLogContextRequestBody.
+        r"""Sets the backwards_size of this ListLogContextRequestBody.
 
         指定起始日志往前（上文）的日志条数，取值范围 [0, 500] ，默认值100
 
@@ -130,7 +130,7 @@ class ListLogContextRequestBody:
 
     @property
     def forwards_size(self):
-        """Gets the forwards_size of this ListLogContextRequestBody.
+        r"""Gets the forwards_size of this ListLogContextRequestBody.
 
         指定起始日志往后（下文）的日志条数，取值范围 [0, 500] ，默认值100
 
@@ -141,7 +141,7 @@ class ListLogContextRequestBody:
 
     @forwards_size.setter
     def forwards_size(self, forwards_size):
-        """Sets the forwards_size of this ListLogContextRequestBody.
+        r"""Sets the forwards_size of this ListLogContextRequestBody.
 
         指定起始日志往后（下文）的日志条数，取值范围 [0, 500] ，默认值100
 

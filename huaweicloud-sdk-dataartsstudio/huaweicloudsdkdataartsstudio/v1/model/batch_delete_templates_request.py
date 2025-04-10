@@ -27,7 +27,7 @@ class BatchDeleteTemplatesRequest:
     }
 
     def __init__(self, workspace=None, body=None):
-        """BatchDeleteTemplatesRequest
+        r"""BatchDeleteTemplatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeleteTemplatesRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this BatchDeleteTemplatesRequest.
+        r"""Gets the workspace of this BatchDeleteTemplatesRequest.
 
         DataArts Studio工作空间ID
 
@@ -60,7 +60,7 @@ class BatchDeleteTemplatesRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this BatchDeleteTemplatesRequest.
+        r"""Sets the workspace of this BatchDeleteTemplatesRequest.
 
         DataArts Studio工作空间ID
 
@@ -71,7 +71,7 @@ class BatchDeleteTemplatesRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteTemplatesRequest.
+        r"""Gets the body of this BatchDeleteTemplatesRequest.
 
         :return: The body of this BatchDeleteTemplatesRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.TemplateListRO`
@@ -80,7 +80,7 @@ class BatchDeleteTemplatesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteTemplatesRequest.
+        r"""Sets the body of this BatchDeleteTemplatesRequest.
 
         :param body: The body of this BatchDeleteTemplatesRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.TemplateListRO`

@@ -37,7 +37,7 @@ class ConditionInfo:
     }
 
     def __init__(self, expression_type=None, conditions=None, logics=None, cron=None, schedule_type=None, repeat_range=None, repeat_count=None):
-        """ConditionInfo
+        r"""ConditionInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ConditionInfo:
 
     @property
     def expression_type(self):
-        """Gets the expression_type of this ConditionInfo.
+        r"""Gets the expression_type of this ConditionInfo.
 
         expression type, all, any, user_define
 
@@ -96,7 +96,7 @@ class ConditionInfo:
 
     @expression_type.setter
     def expression_type(self, expression_type):
-        """Sets the expression_type of this ConditionInfo.
+        r"""Sets the expression_type of this ConditionInfo.
 
         expression type, all, any, user_define
 
@@ -107,7 +107,7 @@ class ConditionInfo:
 
     @property
     def conditions(self):
-        """Gets the conditions of this ConditionInfo.
+        r"""Gets the conditions of this ConditionInfo.
 
         Information of conditions.
 
@@ -118,7 +118,7 @@ class ConditionInfo:
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this ConditionInfo.
+        r"""Sets the conditions of this ConditionInfo.
 
         Information of conditions.
 
@@ -129,7 +129,7 @@ class ConditionInfo:
 
     @property
     def logics(self):
-        """Gets the logics of this ConditionInfo.
+        r"""Gets the logics of this ConditionInfo.
 
         Logic item of condition.
 
@@ -140,7 +140,7 @@ class ConditionInfo:
 
     @logics.setter
     def logics(self, logics):
-        """Sets the logics of this ConditionInfo.
+        r"""Sets the logics of this ConditionInfo.
 
         Logic item of condition.
 
@@ -151,7 +151,7 @@ class ConditionInfo:
 
     @property
     def cron(self):
-        """Gets the cron of this ConditionInfo.
+        r"""Gets the cron of this ConditionInfo.
 
         Cron 表达式
 
@@ -162,7 +162,7 @@ class ConditionInfo:
 
     @cron.setter
     def cron(self, cron):
-        """Sets the cron of this ConditionInfo.
+        r"""Sets the cron of this ConditionInfo.
 
         Cron 表达式
 
@@ -173,7 +173,7 @@ class ConditionInfo:
 
     @property
     def schedule_type(self):
-        """Gets the schedule_type of this ConditionInfo.
+        r"""Gets the schedule_type of this ConditionInfo.
 
         schedule type, second hours...
 
@@ -184,7 +184,7 @@ class ConditionInfo:
 
     @schedule_type.setter
     def schedule_type(self, schedule_type):
-        """Sets the schedule_type of this ConditionInfo.
+        r"""Sets the schedule_type of this ConditionInfo.
 
         schedule type, second hours...
 
@@ -195,7 +195,7 @@ class ConditionInfo:
 
     @property
     def repeat_range(self):
-        """Gets the repeat_range of this ConditionInfo.
+        r"""Gets the repeat_range of this ConditionInfo.
 
         执行时间段 2021-01-30T23:00:00Z+0800
 
@@ -206,7 +206,7 @@ class ConditionInfo:
 
     @repeat_range.setter
     def repeat_range(self, repeat_range):
-        """Sets the repeat_range of this ConditionInfo.
+        r"""Sets the repeat_range of this ConditionInfo.
 
         执行时间段 2021-01-30T23:00:00Z+0800
 
@@ -217,7 +217,7 @@ class ConditionInfo:
 
     @property
     def repeat_count(self):
-        """Gets the repeat_count of this ConditionInfo.
+        r"""Gets the repeat_count of this ConditionInfo.
 
         重复次数
 
@@ -228,7 +228,7 @@ class ConditionInfo:
 
     @repeat_count.setter
     def repeat_count(self, repeat_count):
-        """Sets the repeat_count of this ConditionInfo.
+        r"""Sets the repeat_count of this ConditionInfo.
 
         重复次数
 

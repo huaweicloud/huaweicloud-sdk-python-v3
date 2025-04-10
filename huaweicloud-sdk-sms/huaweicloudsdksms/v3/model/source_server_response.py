@@ -39,7 +39,7 @@ class SourceServerResponse:
     }
 
     def __init__(self, id=None, ip=None, name=None, os_type=None, os_version=None, oem_system=None, state=None, migration_cycle=None):
-        """SourceServerResponse
+        r"""SourceServerResponse
 
         The model defined in huaweicloud sdk
 
@@ -89,7 +89,7 @@ class SourceServerResponse:
 
     @property
     def id(self):
-        """Gets the id of this SourceServerResponse.
+        r"""Gets the id of this SourceServerResponse.
 
         源端在SMS数据库中的ID
 
@@ -100,7 +100,7 @@ class SourceServerResponse:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SourceServerResponse.
+        r"""Sets the id of this SourceServerResponse.
 
         源端在SMS数据库中的ID
 
@@ -111,7 +111,7 @@ class SourceServerResponse:
 
     @property
     def ip(self):
-        """Gets the ip of this SourceServerResponse.
+        r"""Gets the ip of this SourceServerResponse.
 
         源端服务器ip，注册源端时必选，更新非必选
 
@@ -122,7 +122,7 @@ class SourceServerResponse:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this SourceServerResponse.
+        r"""Sets the ip of this SourceServerResponse.
 
         源端服务器ip，注册源端时必选，更新非必选
 
@@ -133,7 +133,7 @@ class SourceServerResponse:
 
     @property
     def name(self):
-        """Gets the name of this SourceServerResponse.
+        r"""Gets the name of this SourceServerResponse.
 
         用来区分不同源端服务器的名称
 
@@ -144,7 +144,7 @@ class SourceServerResponse:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SourceServerResponse.
+        r"""Sets the name of this SourceServerResponse.
 
         用来区分不同源端服务器的名称
 
@@ -155,7 +155,7 @@ class SourceServerResponse:
 
     @property
     def os_type(self):
-        """Gets the os_type of this SourceServerResponse.
+        r"""Gets the os_type of this SourceServerResponse.
 
         源端服务器的OS类型，分为Windows和Linux，注册必选，更新非必选
 
@@ -166,7 +166,7 @@ class SourceServerResponse:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this SourceServerResponse.
+        r"""Sets the os_type of this SourceServerResponse.
 
         源端服务器的OS类型，分为Windows和Linux，注册必选，更新非必选
 
@@ -177,7 +177,7 @@ class SourceServerResponse:
 
     @property
     def os_version(self):
-        """Gets the os_version of this SourceServerResponse.
+        r"""Gets the os_version of this SourceServerResponse.
 
         操作系统版本，注册必选，更新非必选
 
@@ -188,7 +188,7 @@ class SourceServerResponse:
 
     @os_version.setter
     def os_version(self, os_version):
-        """Sets the os_version of this SourceServerResponse.
+        r"""Sets the os_version of this SourceServerResponse.
 
         操作系统版本，注册必选，更新非必选
 
@@ -199,7 +199,7 @@ class SourceServerResponse:
 
     @property
     def oem_system(self):
-        """Gets the oem_system of this SourceServerResponse.
+        r"""Gets the oem_system of this SourceServerResponse.
 
         是否是OEM操作系统(Windows)
 
@@ -210,7 +210,7 @@ class SourceServerResponse:
 
     @oem_system.setter
     def oem_system(self, oem_system):
-        """Sets the oem_system of this SourceServerResponse.
+        r"""Sets the oem_system of this SourceServerResponse.
 
         是否是OEM操作系统(Windows)
 
@@ -221,7 +221,7 @@ class SourceServerResponse:
 
     @property
     def state(self):
-        """Gets the state of this SourceServerResponse.
+        r"""Gets the state of this SourceServerResponse.
 
         当前源端服务器状态 unavailable：环境校验不通过 waiting：等待 initialize：初始化 replicate：复制 syncing：持续同步 stopping：暂停中 stopped：已暂停 skipping：跳过中 deleting：删除中 error：错误 cloning：等待克隆完成 testing：测试中 finished：启动目的端完成 clearing: 清理快照资源中 cleared：清理快照资源完成 clearfailed：清理快照资源失败
 
@@ -232,7 +232,7 @@ class SourceServerResponse:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this SourceServerResponse.
+        r"""Sets the state of this SourceServerResponse.
 
         当前源端服务器状态 unavailable：环境校验不通过 waiting：等待 initialize：初始化 replicate：复制 syncing：持续同步 stopping：暂停中 stopped：已暂停 skipping：跳过中 deleting：删除中 error：错误 cloning：等待克隆完成 testing：测试中 finished：启动目的端完成 clearing: 清理快照资源中 cleared：清理快照资源完成 clearfailed：清理快照资源失败
 
@@ -243,7 +243,7 @@ class SourceServerResponse:
 
     @property
     def migration_cycle(self):
-        """Gets the migration_cycle of this SourceServerResponse.
+        r"""Gets the migration_cycle of this SourceServerResponse.
 
         迁移周期 cutovering:启动目的端中 cutovered:启动目的端完成 checking:检查中 setting:设置中 replicating:复制中 syncing:同步中 
 
@@ -254,7 +254,7 @@ class SourceServerResponse:
 
     @migration_cycle.setter
     def migration_cycle(self, migration_cycle):
-        """Sets the migration_cycle of this SourceServerResponse.
+        r"""Sets the migration_cycle of this SourceServerResponse.
 
         迁移周期 cutovering:启动目的端中 cutovered:启动目的端完成 checking:检查中 setting:设置中 replicating:复制中 syncing:同步中 
 

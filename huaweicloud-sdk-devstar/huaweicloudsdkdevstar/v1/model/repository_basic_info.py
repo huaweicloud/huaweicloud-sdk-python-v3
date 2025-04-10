@@ -35,7 +35,7 @@ class RepositoryBasicInfo:
     }
 
     def __init__(self, uuid=None, id=None, name=None, https_url=None, ssh_url=None, web_url=None):
-        """RepositoryBasicInfo
+        r"""RepositoryBasicInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class RepositoryBasicInfo:
 
     @property
     def uuid(self):
-        """Gets the uuid of this RepositoryBasicInfo.
+        r"""Gets the uuid of this RepositoryBasicInfo.
 
         仓库uuid
 
@@ -89,7 +89,7 @@ class RepositoryBasicInfo:
 
     @uuid.setter
     def uuid(self, uuid):
-        """Sets the uuid of this RepositoryBasicInfo.
+        r"""Sets the uuid of this RepositoryBasicInfo.
 
         仓库uuid
 
@@ -100,7 +100,7 @@ class RepositoryBasicInfo:
 
     @property
     def id(self):
-        """Gets the id of this RepositoryBasicInfo.
+        r"""Gets the id of this RepositoryBasicInfo.
 
         仓库id
 
@@ -111,7 +111,7 @@ class RepositoryBasicInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RepositoryBasicInfo.
+        r"""Sets the id of this RepositoryBasicInfo.
 
         仓库id
 
@@ -122,7 +122,7 @@ class RepositoryBasicInfo:
 
     @property
     def name(self):
-        """Gets the name of this RepositoryBasicInfo.
+        r"""Gets the name of this RepositoryBasicInfo.
 
         仓库名称
 
@@ -133,7 +133,7 @@ class RepositoryBasicInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RepositoryBasicInfo.
+        r"""Sets the name of this RepositoryBasicInfo.
 
         仓库名称
 
@@ -144,7 +144,7 @@ class RepositoryBasicInfo:
 
     @property
     def https_url(self):
-        """Gets the https_url of this RepositoryBasicInfo.
+        r"""Gets the https_url of this RepositoryBasicInfo.
 
         仓库git的https下载地址
 
@@ -155,7 +155,7 @@ class RepositoryBasicInfo:
 
     @https_url.setter
     def https_url(self, https_url):
-        """Sets the https_url of this RepositoryBasicInfo.
+        r"""Sets the https_url of this RepositoryBasicInfo.
 
         仓库git的https下载地址
 
@@ -166,7 +166,7 @@ class RepositoryBasicInfo:
 
     @property
     def ssh_url(self):
-        """Gets the ssh_url of this RepositoryBasicInfo.
+        r"""Gets the ssh_url of this RepositoryBasicInfo.
 
         仓库git的ssh下载地址
 
@@ -177,7 +177,7 @@ class RepositoryBasicInfo:
 
     @ssh_url.setter
     def ssh_url(self, ssh_url):
-        """Sets the ssh_url of this RepositoryBasicInfo.
+        r"""Sets the ssh_url of this RepositoryBasicInfo.
 
         仓库git的ssh下载地址
 
@@ -188,7 +188,7 @@ class RepositoryBasicInfo:
 
     @property
     def web_url(self):
-        """Gets the web_url of this RepositoryBasicInfo.
+        r"""Gets the web_url of this RepositoryBasicInfo.
 
         仓库codehub内容浏览页面地址
 
@@ -199,7 +199,7 @@ class RepositoryBasicInfo:
 
     @web_url.setter
     def web_url(self, web_url):
-        """Sets the web_url of this RepositoryBasicInfo.
+        r"""Sets the web_url of this RepositoryBasicInfo.
 
         仓库codehub内容浏览页面地址
 

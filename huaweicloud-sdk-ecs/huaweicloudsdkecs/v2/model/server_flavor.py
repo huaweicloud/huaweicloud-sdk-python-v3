@@ -37,7 +37,7 @@ class ServerFlavor:
     }
 
     def __init__(self, id=None, name=None, disk=None, vcpus=None, ram=None, gpus=None, asic_accelerators=None):
-        """ServerFlavor
+        r"""ServerFlavor
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ServerFlavor:
 
     @property
     def id(self):
-        """Gets the id of this ServerFlavor.
+        r"""Gets the id of this ServerFlavor.
 
         弹性云服务器规格ID。
 
@@ -89,7 +89,7 @@ class ServerFlavor:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ServerFlavor.
+        r"""Sets the id of this ServerFlavor.
 
         弹性云服务器规格ID。
 
@@ -100,7 +100,7 @@ class ServerFlavor:
 
     @property
     def name(self):
-        """Gets the name of this ServerFlavor.
+        r"""Gets the name of this ServerFlavor.
 
         弹性云服务器规格名称。
 
@@ -111,7 +111,7 @@ class ServerFlavor:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ServerFlavor.
+        r"""Sets the name of this ServerFlavor.
 
         弹性云服务器规格名称。
 
@@ -122,7 +122,7 @@ class ServerFlavor:
 
     @property
     def disk(self):
-        """Gets the disk of this ServerFlavor.
+        r"""Gets the disk of this ServerFlavor.
 
         该云服务器规格对应要求系统盘大小，0为不限制。此字段在本系统中无效。
 
@@ -133,7 +133,7 @@ class ServerFlavor:
 
     @disk.setter
     def disk(self, disk):
-        """Sets the disk of this ServerFlavor.
+        r"""Sets the disk of this ServerFlavor.
 
         该云服务器规格对应要求系统盘大小，0为不限制。此字段在本系统中无效。
 
@@ -144,7 +144,7 @@ class ServerFlavor:
 
     @property
     def vcpus(self):
-        """Gets the vcpus of this ServerFlavor.
+        r"""Gets the vcpus of this ServerFlavor.
 
         该云服务器规格对应的CPU核数。
 
@@ -155,7 +155,7 @@ class ServerFlavor:
 
     @vcpus.setter
     def vcpus(self, vcpus):
-        """Sets the vcpus of this ServerFlavor.
+        r"""Sets the vcpus of this ServerFlavor.
 
         该云服务器规格对应的CPU核数。
 
@@ -166,7 +166,7 @@ class ServerFlavor:
 
     @property
     def ram(self):
-        """Gets the ram of this ServerFlavor.
+        r"""Gets the ram of this ServerFlavor.
 
         该云服务器规格对应的内存大小，单位为MB。
 
@@ -177,7 +177,7 @@ class ServerFlavor:
 
     @ram.setter
     def ram(self, ram):
-        """Sets the ram of this ServerFlavor.
+        r"""Sets the ram of this ServerFlavor.
 
         该云服务器规格对应的内存大小，单位为MB。
 
@@ -188,7 +188,7 @@ class ServerFlavor:
 
     @property
     def gpus(self):
-        """Gets the gpus of this ServerFlavor.
+        r"""Gets the gpus of this ServerFlavor.
 
         该云服务器规格对应的GPU设备。
 
@@ -199,7 +199,7 @@ class ServerFlavor:
 
     @gpus.setter
     def gpus(self, gpus):
-        """Sets the gpus of this ServerFlavor.
+        r"""Sets the gpus of this ServerFlavor.
 
         该云服务器规格对应的GPU设备。
 
@@ -210,7 +210,7 @@ class ServerFlavor:
 
     @property
     def asic_accelerators(self):
-        """Gets the asic_accelerators of this ServerFlavor.
+        r"""Gets the asic_accelerators of this ServerFlavor.
 
         该云服务器规格对应的ASIC设备。
 
@@ -221,7 +221,7 @@ class ServerFlavor:
 
     @asic_accelerators.setter
     def asic_accelerators(self, asic_accelerators):
-        """Sets the asic_accelerators of this ServerFlavor.
+        r"""Sets the asic_accelerators of this ServerFlavor.
 
         该云服务器规格对应的ASIC设备。
 

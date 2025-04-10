@@ -51,7 +51,7 @@ class ProtectedIpResponse:
     }
 
     def __init__(self, id=None, ip=None, type=None, name=None, status=None, status_detail=None, policy_name=None, region=None, package_id=None, package_name=None, tags=None, tag=None, is_resale=None, package_version=None):
-        """ProtectedIpResponse
+        r"""ProtectedIpResponse
 
         The model defined in huaweicloud sdk
 
@@ -124,7 +124,7 @@ class ProtectedIpResponse:
 
     @property
     def id(self):
-        """Gets the id of this ProtectedIpResponse.
+        r"""Gets the id of this ProtectedIpResponse.
 
         防护IP的Id
 
@@ -135,7 +135,7 @@ class ProtectedIpResponse:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ProtectedIpResponse.
+        r"""Sets the id of this ProtectedIpResponse.
 
         防护IP的Id
 
@@ -146,7 +146,7 @@ class ProtectedIpResponse:
 
     @property
     def ip(self):
-        """Gets the ip of this ProtectedIpResponse.
+        r"""Gets the ip of this ProtectedIpResponse.
 
         防护IP
 
@@ -157,7 +157,7 @@ class ProtectedIpResponse:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this ProtectedIpResponse.
+        r"""Sets the ip of this ProtectedIpResponse.
 
         防护IP
 
@@ -168,7 +168,7 @@ class ProtectedIpResponse:
 
     @property
     def type(self):
-        """Gets the type of this ProtectedIpResponse.
+        r"""Gets the type of this ProtectedIpResponse.
 
         类型。VPN：VPN；NAT：NAT；VIP：VIP；CCI：CCI；EIP：弹性公网IP；ELB：弹性负载均衡；REROUTING_IP：REROUTING_IP；SubEni：SubEni；NetInterFace：NetInterFace；
 
@@ -179,7 +179,7 @@ class ProtectedIpResponse:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ProtectedIpResponse.
+        r"""Sets the type of this ProtectedIpResponse.
 
         类型。VPN：VPN；NAT：NAT；VIP：VIP；CCI：CCI；EIP：弹性公网IP；ELB：弹性负载均衡；REROUTING_IP：REROUTING_IP；SubEni：SubEni；NetInterFace：NetInterFace；
 
@@ -190,7 +190,7 @@ class ProtectedIpResponse:
 
     @property
     def name(self):
-        """Gets the name of this ProtectedIpResponse.
+        r"""Gets the name of this ProtectedIpResponse.
 
         名字
 
@@ -201,7 +201,7 @@ class ProtectedIpResponse:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ProtectedIpResponse.
+        r"""Sets the name of this ProtectedIpResponse.
 
         名字
 
@@ -212,7 +212,7 @@ class ProtectedIpResponse:
 
     @property
     def status(self):
-        """Gets the status of this ProtectedIpResponse.
+        r"""Gets the status of this ProtectedIpResponse.
 
         状态：0 - 正常， 1 - 清洗中， 2 - 黑洞中
 
@@ -223,7 +223,7 @@ class ProtectedIpResponse:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ProtectedIpResponse.
+        r"""Sets the status of this ProtectedIpResponse.
 
         状态：0 - 正常， 1 - 清洗中， 2 - 黑洞中
 
@@ -234,7 +234,7 @@ class ProtectedIpResponse:
 
     @property
     def status_detail(self):
-        """Gets the status_detail of this ProtectedIpResponse.
+        r"""Gets the status_detail of this ProtectedIpResponse.
 
         :return: The status_detail of this ProtectedIpResponse.
         :rtype: :class:`huaweicloudsdkaad.v1.IpStatusDetail`
@@ -243,7 +243,7 @@ class ProtectedIpResponse:
 
     @status_detail.setter
     def status_detail(self, status_detail):
-        """Sets the status_detail of this ProtectedIpResponse.
+        r"""Sets the status_detail of this ProtectedIpResponse.
 
         :param status_detail: The status_detail of this ProtectedIpResponse.
         :type status_detail: :class:`huaweicloudsdkaad.v1.IpStatusDetail`
@@ -252,7 +252,7 @@ class ProtectedIpResponse:
 
     @property
     def policy_name(self):
-        """Gets the policy_name of this ProtectedIpResponse.
+        r"""Gets the policy_name of this ProtectedIpResponse.
 
         策略名
 
@@ -263,7 +263,7 @@ class ProtectedIpResponse:
 
     @policy_name.setter
     def policy_name(self, policy_name):
-        """Sets the policy_name of this ProtectedIpResponse.
+        r"""Sets the policy_name of this ProtectedIpResponse.
 
         策略名
 
@@ -274,7 +274,7 @@ class ProtectedIpResponse:
 
     @property
     def region(self):
-        """Gets the region of this ProtectedIpResponse.
+        r"""Gets the region of this ProtectedIpResponse.
 
         所属region
 
@@ -285,7 +285,7 @@ class ProtectedIpResponse:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ProtectedIpResponse.
+        r"""Sets the region of this ProtectedIpResponse.
 
         所属region
 
@@ -296,7 +296,7 @@ class ProtectedIpResponse:
 
     @property
     def package_id(self):
-        """Gets the package_id of this ProtectedIpResponse.
+        r"""Gets the package_id of this ProtectedIpResponse.
 
         防护包id
 
@@ -307,7 +307,7 @@ class ProtectedIpResponse:
 
     @package_id.setter
     def package_id(self, package_id):
-        """Sets the package_id of this ProtectedIpResponse.
+        r"""Sets the package_id of this ProtectedIpResponse.
 
         防护包id
 
@@ -318,7 +318,7 @@ class ProtectedIpResponse:
 
     @property
     def package_name(self):
-        """Gets the package_name of this ProtectedIpResponse.
+        r"""Gets the package_name of this ProtectedIpResponse.
 
         防护包名
 
@@ -329,7 +329,7 @@ class ProtectedIpResponse:
 
     @package_name.setter
     def package_name(self, package_name):
-        """Sets the package_name of this ProtectedIpResponse.
+        r"""Sets the package_name of this ProtectedIpResponse.
 
         防护包名
 
@@ -340,7 +340,7 @@ class ProtectedIpResponse:
 
     @property
     def tags(self):
-        """Gets the tags of this ProtectedIpResponse.
+        r"""Gets the tags of this ProtectedIpResponse.
 
         TMS标签
 
@@ -351,7 +351,7 @@ class ProtectedIpResponse:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ProtectedIpResponse.
+        r"""Sets the tags of this ProtectedIpResponse.
 
         TMS标签
 
@@ -362,7 +362,7 @@ class ProtectedIpResponse:
 
     @property
     def tag(self):
-        """Gets the tag of this ProtectedIpResponse.
+        r"""Gets the tag of this ProtectedIpResponse.
 
         本地标签
 
@@ -373,7 +373,7 @@ class ProtectedIpResponse:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this ProtectedIpResponse.
+        r"""Sets the tag of this ProtectedIpResponse.
 
         本地标签
 
@@ -384,7 +384,7 @@ class ProtectedIpResponse:
 
     @property
     def is_resale(self):
-        """Gets the is_resale of this ProtectedIpResponse.
+        r"""Gets the is_resale of this ProtectedIpResponse.
 
         默认false，表示是否转售版的IP，不需要展示策略和报表
 
@@ -395,7 +395,7 @@ class ProtectedIpResponse:
 
     @is_resale.setter
     def is_resale(self, is_resale):
-        """Sets the is_resale of this ProtectedIpResponse.
+        r"""Sets the is_resale of this ProtectedIpResponse.
 
         默认false，表示是否转售版的IP，不需要展示策略和报表
 
@@ -406,7 +406,7 @@ class ProtectedIpResponse:
 
     @property
     def package_version(self):
-        """Gets the package_version of this ProtectedIpResponse.
+        r"""Gets the package_version of this ProtectedIpResponse.
 
         package_version。cnad_pro：专业版；cnad_ip：标准版；cnad_ep：铂金版；cnad_full_high：全力防高级版；cnad_vic：按需版；cnad_intl_ep：国际站铂金版
 
@@ -417,7 +417,7 @@ class ProtectedIpResponse:
 
     @package_version.setter
     def package_version(self, package_version):
-        """Sets the package_version of this ProtectedIpResponse.
+        r"""Sets the package_version of this ProtectedIpResponse.
 
         package_version。cnad_pro：专业版；cnad_ip：标准版；cnad_ep：铂金版；cnad_full_high：全力防高级版；cnad_vic：按需版；cnad_intl_ep：国际站铂金版
 

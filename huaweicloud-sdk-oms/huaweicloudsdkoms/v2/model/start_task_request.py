@@ -27,7 +27,7 @@ class StartTaskRequest:
     }
 
     def __init__(self, task_id=None, body=None):
-        """StartTaskRequest
+        r"""StartTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class StartTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this StartTaskRequest.
+        r"""Gets the task_id of this StartTaskRequest.
 
         迁移任务ID。
 
@@ -60,7 +60,7 @@ class StartTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this StartTaskRequest.
+        r"""Sets the task_id of this StartTaskRequest.
 
         迁移任务ID。
 
@@ -71,7 +71,7 @@ class StartTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this StartTaskRequest.
+        r"""Gets the body of this StartTaskRequest.
 
         :return: The body of this StartTaskRequest.
         :rtype: :class:`huaweicloudsdkoms.v2.StartTaskReq`
@@ -80,7 +80,7 @@ class StartTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StartTaskRequest.
+        r"""Sets the body of this StartTaskRequest.
 
         :param body: The body of this StartTaskRequest.
         :type body: :class:`huaweicloudsdkoms.v2.StartTaskReq`

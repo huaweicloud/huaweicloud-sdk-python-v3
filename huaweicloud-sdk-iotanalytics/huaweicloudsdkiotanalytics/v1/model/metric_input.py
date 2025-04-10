@@ -27,7 +27,7 @@ class MetricInput:
     }
 
     def __init__(self, name=None, property_name=None):
-        """MetricInput
+        r"""MetricInput
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class MetricInput:
 
     @property
     def name(self):
-        """Gets the name of this MetricInput.
+        r"""Gets the name of this MetricInput.
 
         指标计算表达式的入参名称
 
@@ -59,7 +59,7 @@ class MetricInput:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MetricInput.
+        r"""Sets the name of this MetricInput.
 
         指标计算表达式的入参名称
 
@@ -70,7 +70,7 @@ class MetricInput:
 
     @property
     def property_name(self):
-        """Gets the property_name of this MetricInput.
+        r"""Gets the property_name of this MetricInput.
 
         入参所对应的资产属性名称
 
@@ -81,7 +81,7 @@ class MetricInput:
 
     @property_name.setter
     def property_name(self, property_name):
-        """Sets the property_name of this MetricInput.
+        r"""Sets the property_name of this MetricInput.
 
         入参所对应的资产属性名称
 

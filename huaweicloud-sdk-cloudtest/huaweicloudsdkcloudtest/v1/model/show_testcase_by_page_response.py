@@ -30,7 +30,7 @@ class ShowTestcaseByPageResponse(SdkResponse):
     }
 
     def __init__(self, code=None, data=None, message=None):
-        """ShowTestcaseByPageResponse
+        r"""ShowTestcaseByPageResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowTestcaseByPageResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ShowTestcaseByPageResponse.
+        r"""Gets the code of this ShowTestcaseByPageResponse.
 
         :return: The code of this ShowTestcaseByPageResponse.
         :rtype: str
@@ -67,7 +67,7 @@ class ShowTestcaseByPageResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ShowTestcaseByPageResponse.
+        r"""Sets the code of this ShowTestcaseByPageResponse.
 
         :param code: The code of this ShowTestcaseByPageResponse.
         :type code: str
@@ -76,7 +76,7 @@ class ShowTestcaseByPageResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowTestcaseByPageResponse.
+        r"""Gets the data of this ShowTestcaseByPageResponse.
 
         :return: The data of this ShowTestcaseByPageResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.BasePageInfoTestCase`
@@ -85,7 +85,7 @@ class ShowTestcaseByPageResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowTestcaseByPageResponse.
+        r"""Sets the data of this ShowTestcaseByPageResponse.
 
         :param data: The data of this ShowTestcaseByPageResponse.
         :type data: :class:`huaweicloudsdkcloudtest.v1.BasePageInfoTestCase`
@@ -94,7 +94,7 @@ class ShowTestcaseByPageResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowTestcaseByPageResponse.
+        r"""Gets the message of this ShowTestcaseByPageResponse.
 
         :return: The message of this ShowTestcaseByPageResponse.
         :rtype: str
@@ -103,7 +103,7 @@ class ShowTestcaseByPageResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowTestcaseByPageResponse.
+        r"""Sets the message of this ShowTestcaseByPageResponse.
 
         :param message: The message of this ShowTestcaseByPageResponse.
         :type message: str

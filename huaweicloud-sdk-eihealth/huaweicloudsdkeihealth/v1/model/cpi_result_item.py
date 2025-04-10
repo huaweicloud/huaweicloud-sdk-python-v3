@@ -29,7 +29,7 @@ class CpiResultItem:
     }
 
     def __init__(self, smiles=None, props=None, score=None):
-        """CpiResultItem
+        r"""CpiResultItem
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CpiResultItem:
 
     @property
     def smiles(self):
-        """Gets the smiles of this CpiResultItem.
+        r"""Gets the smiles of this CpiResultItem.
 
         分子SMILES表达式
 
@@ -65,7 +65,7 @@ class CpiResultItem:
 
     @smiles.setter
     def smiles(self, smiles):
-        """Sets the smiles of this CpiResultItem.
+        r"""Sets the smiles of this CpiResultItem.
 
         分子SMILES表达式
 
@@ -76,7 +76,7 @@ class CpiResultItem:
 
     @property
     def props(self):
-        """Gets the props of this CpiResultItem.
+        r"""Gets the props of this CpiResultItem.
 
         分子ADMET属性值列表
 
@@ -87,7 +87,7 @@ class CpiResultItem:
 
     @props.setter
     def props(self, props):
-        """Sets the props of this CpiResultItem.
+        r"""Sets the props of this CpiResultItem.
 
         分子ADMET属性值列表
 
@@ -98,7 +98,7 @@ class CpiResultItem:
 
     @property
     def score(self):
-        """Gets the score of this CpiResultItem.
+        r"""Gets the score of this CpiResultItem.
 
         分子与蛋白质的打分
 
@@ -109,7 +109,7 @@ class CpiResultItem:
 
     @score.setter
     def score(self, score):
-        """Sets the score of this CpiResultItem.
+        r"""Sets the score of this CpiResultItem.
 
         分子与蛋白质的打分
 

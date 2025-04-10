@@ -25,7 +25,7 @@ class FlinkJobUpdateTime:
     }
 
     def __init__(self, update_time=None):
-        """FlinkJobUpdateTime
+        r"""FlinkJobUpdateTime
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class FlinkJobUpdateTime:
 
     @property
     def update_time(self):
-        """Gets the update_time of this FlinkJobUpdateTime.
+        r"""Gets the update_time of this FlinkJobUpdateTime.
 
         作业更新时间, 毫秒数。
 
@@ -54,7 +54,7 @@ class FlinkJobUpdateTime:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this FlinkJobUpdateTime.
+        r"""Sets the update_time of this FlinkJobUpdateTime.
 
         作业更新时间, 毫秒数。
 

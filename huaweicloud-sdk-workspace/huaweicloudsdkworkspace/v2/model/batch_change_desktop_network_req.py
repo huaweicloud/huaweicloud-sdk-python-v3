@@ -31,7 +31,7 @@ class BatchChangeDesktopNetworkReq:
     }
 
     def __init__(self, desktop_ids=None, vpc_id=None, subnet_id=None, security_group_ids=None):
-        """BatchChangeDesktopNetworkReq
+        r"""BatchChangeDesktopNetworkReq
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class BatchChangeDesktopNetworkReq:
 
     @property
     def desktop_ids(self):
-        """Gets the desktop_ids of this BatchChangeDesktopNetworkReq.
+        r"""Gets the desktop_ids of this BatchChangeDesktopNetworkReq.
 
         桌面id列表，最小为1，最大为100。
 
@@ -72,7 +72,7 @@ class BatchChangeDesktopNetworkReq:
 
     @desktop_ids.setter
     def desktop_ids(self, desktop_ids):
-        """Sets the desktop_ids of this BatchChangeDesktopNetworkReq.
+        r"""Sets the desktop_ids of this BatchChangeDesktopNetworkReq.
 
         桌面id列表，最小为1，最大为100。
 
@@ -83,7 +83,7 @@ class BatchChangeDesktopNetworkReq:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this BatchChangeDesktopNetworkReq.
+        r"""Gets the vpc_id of this BatchChangeDesktopNetworkReq.
 
         待切换VPC的ID
 
@@ -94,7 +94,7 @@ class BatchChangeDesktopNetworkReq:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this BatchChangeDesktopNetworkReq.
+        r"""Sets the vpc_id of this BatchChangeDesktopNetworkReq.
 
         待切换VPC的ID
 
@@ -105,7 +105,7 @@ class BatchChangeDesktopNetworkReq:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this BatchChangeDesktopNetworkReq.
+        r"""Gets the subnet_id of this BatchChangeDesktopNetworkReq.
 
         待切换子网的ID
 
@@ -116,7 +116,7 @@ class BatchChangeDesktopNetworkReq:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this BatchChangeDesktopNetworkReq.
+        r"""Sets the subnet_id of this BatchChangeDesktopNetworkReq.
 
         待切换子网的ID
 
@@ -127,7 +127,7 @@ class BatchChangeDesktopNetworkReq:
 
     @property
     def security_group_ids(self):
-        """Gets the security_group_ids of this BatchChangeDesktopNetworkReq.
+        r"""Gets the security_group_ids of this BatchChangeDesktopNetworkReq.
 
         安全组ID列表
 
@@ -138,7 +138,7 @@ class BatchChangeDesktopNetworkReq:
 
     @security_group_ids.setter
     def security_group_ids(self, security_group_ids):
-        """Sets the security_group_ids of this BatchChangeDesktopNetworkReq.
+        r"""Sets the security_group_ids of this BatchChangeDesktopNetworkReq.
 
         安全组ID列表
 

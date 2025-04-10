@@ -33,7 +33,7 @@ class BssParamForCreateVolume:
     }
 
     def __init__(self, charging_mode=None, is_auto_pay=None, is_auto_renew=None, period_num=None, period_type=None):
-        """BssParamForCreateVolume
+        r"""BssParamForCreateVolume
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class BssParamForCreateVolume:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this BssParamForCreateVolume.
+        r"""Gets the charging_mode of this BssParamForCreateVolume.
 
         功能说明：计费模式。默认值为postPaid。 取值范围： * prePaid：包年包月 * postPaid：按需
 
@@ -82,7 +82,7 @@ class BssParamForCreateVolume:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this BssParamForCreateVolume.
+        r"""Sets the charging_mode of this BssParamForCreateVolume.
 
         功能说明：计费模式。默认值为postPaid。 取值范围： * prePaid：包年包月 * postPaid：按需
 
@@ -93,7 +93,7 @@ class BssParamForCreateVolume:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this BssParamForCreateVolume.
+        r"""Gets the is_auto_pay of this BssParamForCreateVolume.
 
         功能说明：是否立即支付。chargingMode为PrePaid时该参数会生效。默认值为false。 取值范围： * true：立即支付，从帐户余额中自动扣费 * false：不立即支付，创建订单暂不支付 
 
@@ -104,7 +104,7 @@ class BssParamForCreateVolume:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this BssParamForCreateVolume.
+        r"""Sets the is_auto_pay of this BssParamForCreateVolume.
 
         功能说明：是否立即支付。chargingMode为PrePaid时该参数会生效。默认值为false。 取值范围： * true：立即支付，从帐户余额中自动扣费 * false：不立即支付，创建订单暂不支付 
 
@@ -115,7 +115,7 @@ class BssParamForCreateVolume:
 
     @property
     def is_auto_renew(self):
-        """Gets the is_auto_renew of this BssParamForCreateVolume.
+        r"""Gets the is_auto_renew of this BssParamForCreateVolume.
 
         功能说明：是否自动续订。chargingMode为prePaid时该参数会生效。默认值为false。 取值范围： * true：自动续订，自动续订周期与订购周期相同 * false：不自动续订 
 
@@ -126,7 +126,7 @@ class BssParamForCreateVolume:
 
     @is_auto_renew.setter
     def is_auto_renew(self, is_auto_renew):
-        """Sets the is_auto_renew of this BssParamForCreateVolume.
+        r"""Sets the is_auto_renew of this BssParamForCreateVolume.
 
         功能说明：是否自动续订。chargingMode为prePaid时该参数会生效。默认值为false。 取值范围： * true：自动续订，自动续订周期与订购周期相同 * false：不自动续订 
 
@@ -137,7 +137,7 @@ class BssParamForCreateVolume:
 
     @property
     def period_num(self):
-        """Gets the period_num of this BssParamForCreateVolume.
+        r"""Gets the period_num of this BssParamForCreateVolume.
 
         功能说明：订购周期数，chargingMode为prePaid时该参数会生效，并且该参数为为必选。 取值范围： * periodType为month时，为[1-9] * periodType为year时，为[1-1]
 
@@ -148,7 +148,7 @@ class BssParamForCreateVolume:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this BssParamForCreateVolume.
+        r"""Sets the period_num of this BssParamForCreateVolume.
 
         功能说明：订购周期数，chargingMode为prePaid时该参数会生效，并且该参数为为必选。 取值范围： * periodType为month时，为[1-9] * periodType为year时，为[1-1]
 
@@ -159,7 +159,7 @@ class BssParamForCreateVolume:
 
     @property
     def period_type(self):
-        """Gets the period_type of this BssParamForCreateVolume.
+        r"""Gets the period_type of this BssParamForCreateVolume.
 
         功能说明：订购周期单位。chargingMode为prePaid时该参数会生效，并且该参数为必选。 取值范围： * month：月 * year：年
 
@@ -170,7 +170,7 @@ class BssParamForCreateVolume:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this BssParamForCreateVolume.
+        r"""Sets the period_type of this BssParamForCreateVolume.
 
         功能说明：订购周期单位。chargingMode为prePaid时该参数会生效，并且该参数为必选。 取值范围： * month：月 * year：年
 

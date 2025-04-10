@@ -67,7 +67,7 @@ class ApprovalVO:
     }
 
     def __init__(self, id=None, tenant_id=None, name_ch=None, name_en=None, biz_id=None, biz_type=None, biz_info=None, biz_info_obj=None, biz_version=None, biz_status=None, approval_status=None, approval_type=None, submit_time=None, create_by=None, l1=None, l2=None, l3=None, approval_time=None, approver=None, email=None, msg=None, directory_path=None):
-        """ApprovalVO
+        r"""ApprovalVO
 
         The model defined in huaweicloud sdk
 
@@ -190,7 +190,7 @@ class ApprovalVO:
 
     @property
     def id(self):
-        """Gets the id of this ApprovalVO.
+        r"""Gets the id of this ApprovalVO.
 
         审批单ID，ID字符串。
 
@@ -201,7 +201,7 @@ class ApprovalVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ApprovalVO.
+        r"""Sets the id of this ApprovalVO.
 
         审批单ID，ID字符串。
 
@@ -212,7 +212,7 @@ class ApprovalVO:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this ApprovalVO.
+        r"""Gets the tenant_id of this ApprovalVO.
 
         项目ID，获取方式参考接口路径参数“project_id”。
 
@@ -223,7 +223,7 @@ class ApprovalVO:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this ApprovalVO.
+        r"""Sets the tenant_id of this ApprovalVO.
 
         项目ID，获取方式参考接口路径参数“project_id”。
 
@@ -234,7 +234,7 @@ class ApprovalVO:
 
     @property
     def name_ch(self):
-        """Gets the name_ch of this ApprovalVO.
+        r"""Gets the name_ch of this ApprovalVO.
 
         业务中文名。
 
@@ -245,7 +245,7 @@ class ApprovalVO:
 
     @name_ch.setter
     def name_ch(self, name_ch):
-        """Sets the name_ch of this ApprovalVO.
+        r"""Sets the name_ch of this ApprovalVO.
 
         业务中文名。
 
@@ -256,7 +256,7 @@ class ApprovalVO:
 
     @property
     def name_en(self):
-        """Gets the name_en of this ApprovalVO.
+        r"""Gets the name_en of this ApprovalVO.
 
         业务英文名。
 
@@ -267,7 +267,7 @@ class ApprovalVO:
 
     @name_en.setter
     def name_en(self, name_en):
-        """Sets the name_en of this ApprovalVO.
+        r"""Sets the name_en of this ApprovalVO.
 
         业务英文名。
 
@@ -278,7 +278,7 @@ class ApprovalVO:
 
     @property
     def biz_id(self):
-        """Gets the biz_id of this ApprovalVO.
+        r"""Gets the biz_id of this ApprovalVO.
 
         业务ID，ID字符串。
 
@@ -289,7 +289,7 @@ class ApprovalVO:
 
     @biz_id.setter
     def biz_id(self, biz_id):
-        """Sets the biz_id of this ApprovalVO.
+        r"""Sets the biz_id of this ApprovalVO.
 
         业务ID，ID字符串。
 
@@ -300,7 +300,7 @@ class ApprovalVO:
 
     @property
     def biz_type(self):
-        """Gets the biz_type of this ApprovalVO.
+        r"""Gets the biz_type of this ApprovalVO.
 
         :return: The biz_type of this ApprovalVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
@@ -309,7 +309,7 @@ class ApprovalVO:
 
     @biz_type.setter
     def biz_type(self, biz_type):
-        """Sets the biz_type of this ApprovalVO.
+        r"""Sets the biz_type of this ApprovalVO.
 
         :param biz_type: The biz_type of this ApprovalVO.
         :type biz_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
@@ -318,7 +318,7 @@ class ApprovalVO:
 
     @property
     def biz_info(self):
-        """Gets the biz_info of this ApprovalVO.
+        r"""Gets the biz_info of this ApprovalVO.
 
         序列化之后的业务详情，类型是string。
 
@@ -329,7 +329,7 @@ class ApprovalVO:
 
     @biz_info.setter
     def biz_info(self, biz_info):
-        """Sets the biz_info of this ApprovalVO.
+        r"""Sets the biz_info of this ApprovalVO.
 
         序列化之后的业务详情，类型是string。
 
@@ -340,7 +340,7 @@ class ApprovalVO:
 
     @property
     def biz_info_obj(self):
-        """Gets the biz_info_obj of this ApprovalVO.
+        r"""Gets the biz_info_obj of this ApprovalVO.
 
         业务详情，类型是object。
 
@@ -351,7 +351,7 @@ class ApprovalVO:
 
     @biz_info_obj.setter
     def biz_info_obj(self, biz_info_obj):
-        """Sets the biz_info_obj of this ApprovalVO.
+        r"""Sets the biz_info_obj of this ApprovalVO.
 
         业务详情，类型是object。
 
@@ -362,7 +362,7 @@ class ApprovalVO:
 
     @property
     def biz_version(self):
-        """Gets the biz_version of this ApprovalVO.
+        r"""Gets the biz_version of this ApprovalVO.
 
         业务版本。
 
@@ -373,7 +373,7 @@ class ApprovalVO:
 
     @biz_version.setter
     def biz_version(self, biz_version):
-        """Sets the biz_version of this ApprovalVO.
+        r"""Sets the biz_version of this ApprovalVO.
 
         业务版本。
 
@@ -384,7 +384,7 @@ class ApprovalVO:
 
     @property
     def biz_status(self):
-        """Gets the biz_status of this ApprovalVO.
+        r"""Gets the biz_status of this ApprovalVO.
 
         :return: The biz_status of this ApprovalVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
@@ -393,7 +393,7 @@ class ApprovalVO:
 
     @biz_status.setter
     def biz_status(self, biz_status):
-        """Sets the biz_status of this ApprovalVO.
+        r"""Sets the biz_status of this ApprovalVO.
 
         :param biz_status: The biz_status of this ApprovalVO.
         :type biz_status: :class:`huaweicloudsdkdataartsstudio.v1.BizStatusEnum`
@@ -402,7 +402,7 @@ class ApprovalVO:
 
     @property
     def approval_status(self):
-        """Gets the approval_status of this ApprovalVO.
+        r"""Gets the approval_status of this ApprovalVO.
 
         :return: The approval_status of this ApprovalVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalStatusEnum`
@@ -411,7 +411,7 @@ class ApprovalVO:
 
     @approval_status.setter
     def approval_status(self, approval_status):
-        """Sets the approval_status of this ApprovalVO.
+        r"""Sets the approval_status of this ApprovalVO.
 
         :param approval_status: The approval_status of this ApprovalVO.
         :type approval_status: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalStatusEnum`
@@ -420,7 +420,7 @@ class ApprovalVO:
 
     @property
     def approval_type(self):
-        """Gets the approval_type of this ApprovalVO.
+        r"""Gets the approval_type of this ApprovalVO.
 
         :return: The approval_type of this ApprovalVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalTypeEnum`
@@ -429,7 +429,7 @@ class ApprovalVO:
 
     @approval_type.setter
     def approval_type(self, approval_type):
-        """Sets the approval_type of this ApprovalVO.
+        r"""Sets the approval_type of this ApprovalVO.
 
         :param approval_type: The approval_type of this ApprovalVO.
         :type approval_type: :class:`huaweicloudsdkdataartsstudio.v1.ApprovalTypeEnum`
@@ -438,7 +438,7 @@ class ApprovalVO:
 
     @property
     def submit_time(self):
-        """Gets the submit_time of this ApprovalVO.
+        r"""Gets the submit_time of this ApprovalVO.
 
         提交时间。
 
@@ -449,7 +449,7 @@ class ApprovalVO:
 
     @submit_time.setter
     def submit_time(self, submit_time):
-        """Sets the submit_time of this ApprovalVO.
+        r"""Sets the submit_time of this ApprovalVO.
 
         提交时间。
 
@@ -460,7 +460,7 @@ class ApprovalVO:
 
     @property
     def create_by(self):
-        """Gets the create_by of this ApprovalVO.
+        r"""Gets the create_by of this ApprovalVO.
 
         创建者。
 
@@ -471,7 +471,7 @@ class ApprovalVO:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this ApprovalVO.
+        r"""Sets the create_by of this ApprovalVO.
 
         创建者。
 
@@ -482,7 +482,7 @@ class ApprovalVO:
 
     @property
     def l1(self):
-        """Gets the l1 of this ApprovalVO.
+        r"""Gets the l1 of this ApprovalVO.
 
         主题域分组中文名，只读，创建和更新时无需填写。
 
@@ -493,7 +493,7 @@ class ApprovalVO:
 
     @l1.setter
     def l1(self, l1):
-        """Sets the l1 of this ApprovalVO.
+        r"""Sets the l1 of this ApprovalVO.
 
         主题域分组中文名，只读，创建和更新时无需填写。
 
@@ -504,7 +504,7 @@ class ApprovalVO:
 
     @property
     def l2(self):
-        """Gets the l2 of this ApprovalVO.
+        r"""Gets the l2 of this ApprovalVO.
 
         主题域中文名，只读，创建和更新时无需填写。
 
@@ -515,7 +515,7 @@ class ApprovalVO:
 
     @l2.setter
     def l2(self, l2):
-        """Sets the l2 of this ApprovalVO.
+        r"""Sets the l2 of this ApprovalVO.
 
         主题域中文名，只读，创建和更新时无需填写。
 
@@ -526,7 +526,7 @@ class ApprovalVO:
 
     @property
     def l3(self):
-        """Gets the l3 of this ApprovalVO.
+        r"""Gets the l3 of this ApprovalVO.
 
         业务对象中文名，只读，创建和更新时无需填写。
 
@@ -537,7 +537,7 @@ class ApprovalVO:
 
     @l3.setter
     def l3(self, l3):
-        """Sets the l3 of this ApprovalVO.
+        r"""Sets the l3 of this ApprovalVO.
 
         业务对象中文名，只读，创建和更新时无需填写。
 
@@ -548,7 +548,7 @@ class ApprovalVO:
 
     @property
     def approval_time(self):
-        """Gets the approval_time of this ApprovalVO.
+        r"""Gets the approval_time of this ApprovalVO.
 
         审核时间。
 
@@ -559,7 +559,7 @@ class ApprovalVO:
 
     @approval_time.setter
     def approval_time(self, approval_time):
-        """Sets the approval_time of this ApprovalVO.
+        r"""Sets the approval_time of this ApprovalVO.
 
         审核时间。
 
@@ -570,7 +570,7 @@ class ApprovalVO:
 
     @property
     def approver(self):
-        """Gets the approver of this ApprovalVO.
+        r"""Gets the approver of this ApprovalVO.
 
         审核人。
 
@@ -581,7 +581,7 @@ class ApprovalVO:
 
     @approver.setter
     def approver(self, approver):
-        """Sets the approver of this ApprovalVO.
+        r"""Sets the approver of this ApprovalVO.
 
         审核人。
 
@@ -592,7 +592,7 @@ class ApprovalVO:
 
     @property
     def email(self):
-        """Gets the email of this ApprovalVO.
+        r"""Gets the email of this ApprovalVO.
 
         审核人邮箱。
 
@@ -603,7 +603,7 @@ class ApprovalVO:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this ApprovalVO.
+        r"""Sets the email of this ApprovalVO.
 
         审核人邮箱。
 
@@ -614,7 +614,7 @@ class ApprovalVO:
 
     @property
     def msg(self):
-        """Gets the msg of this ApprovalVO.
+        r"""Gets the msg of this ApprovalVO.
 
         审核信息。
 
@@ -625,7 +625,7 @@ class ApprovalVO:
 
     @msg.setter
     def msg(self, msg):
-        """Sets the msg of this ApprovalVO.
+        r"""Sets the msg of this ApprovalVO.
 
         审核信息。
 
@@ -636,7 +636,7 @@ class ApprovalVO:
 
     @property
     def directory_path(self):
-        """Gets the directory_path of this ApprovalVO.
+        r"""Gets the directory_path of this ApprovalVO.
 
         目录树。
 
@@ -647,7 +647,7 @@ class ApprovalVO:
 
     @directory_path.setter
     def directory_path(self, directory_path):
-        """Sets the directory_path of this ApprovalVO.
+        r"""Sets the directory_path of this ApprovalVO.
 
         目录树。
 

@@ -24,7 +24,7 @@ class ResetActivecodeResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ResetActivecodeResponse
+        r"""ResetActivecodeResponse
 
         The model defined in huaweicloud sdk
 

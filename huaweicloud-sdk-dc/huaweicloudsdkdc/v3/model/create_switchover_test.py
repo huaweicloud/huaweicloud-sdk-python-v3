@@ -29,7 +29,7 @@ class CreateSwitchoverTest:
     }
 
     def __init__(self, resource_id=None, resource_type=None, operation=None):
-        """CreateSwitchoverTest
+        r"""CreateSwitchoverTest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateSwitchoverTest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this CreateSwitchoverTest.
+        r"""Gets the resource_id of this CreateSwitchoverTest.
 
         倒换测试的资源对象ID
 
@@ -66,7 +66,7 @@ class CreateSwitchoverTest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this CreateSwitchoverTest.
+        r"""Sets the resource_id of this CreateSwitchoverTest.
 
         倒换测试的资源对象ID
 
@@ -77,7 +77,7 @@ class CreateSwitchoverTest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this CreateSwitchoverTest.
+        r"""Gets the resource_type of this CreateSwitchoverTest.
 
         倒换测试的资源对象类型
 
@@ -88,7 +88,7 @@ class CreateSwitchoverTest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this CreateSwitchoverTest.
+        r"""Sets the resource_type of this CreateSwitchoverTest.
 
         倒换测试的资源对象类型
 
@@ -99,7 +99,7 @@ class CreateSwitchoverTest:
 
     @property
     def operation(self):
-        """Gets the operation of this CreateSwitchoverTest.
+        r"""Gets the operation of this CreateSwitchoverTest.
 
         shutdown, undo_shutdown表示倒换测试操作类型
 
@@ -110,7 +110,7 @@ class CreateSwitchoverTest:
 
     @operation.setter
     def operation(self, operation):
-        """Sets the operation of this CreateSwitchoverTest.
+        r"""Sets the operation of this CreateSwitchoverTest.
 
         shutdown, undo_shutdown表示倒换测试操作类型
 

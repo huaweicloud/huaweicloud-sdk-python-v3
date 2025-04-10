@@ -76,7 +76,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
     }
 
     def __init__(self, id=None, pipeline_id=None, manifest_version=None, name=None, description=None, is_publish=None, executor_id=None, executor_name=None, status=None, trigger_type=None, run_number=None, start_time=None, end_time=None, stages=None, domain_id=None, project_id=None, region=None, component_id=None, language=None, sources=None, artifacts=None, subject_id=None, group_id=None, group_name=None, detail_url=None, current_system_time=None):
-        """ShowPipelineRunDetailResponse
+        r"""ShowPipelineRunDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -219,7 +219,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowPipelineRunDetailResponse.
+        r"""Gets the id of this ShowPipelineRunDetailResponse.
 
         流水线运行实例ID
 
@@ -230,7 +230,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowPipelineRunDetailResponse.
+        r"""Sets the id of this ShowPipelineRunDetailResponse.
 
         流水线运行实例ID
 
@@ -241,7 +241,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @property
     def pipeline_id(self):
-        """Gets the pipeline_id of this ShowPipelineRunDetailResponse.
+        r"""Gets the pipeline_id of this ShowPipelineRunDetailResponse.
 
         流水线ID
 
@@ -252,7 +252,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @pipeline_id.setter
     def pipeline_id(self, pipeline_id):
-        """Sets the pipeline_id of this ShowPipelineRunDetailResponse.
+        r"""Sets the pipeline_id of this ShowPipelineRunDetailResponse.
 
         流水线ID
 
@@ -263,7 +263,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @property
     def manifest_version(self):
-        """Gets the manifest_version of this ShowPipelineRunDetailResponse.
+        r"""Gets the manifest_version of this ShowPipelineRunDetailResponse.
 
         流水线版本
 
@@ -274,7 +274,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @manifest_version.setter
     def manifest_version(self, manifest_version):
-        """Sets the manifest_version of this ShowPipelineRunDetailResponse.
+        r"""Sets the manifest_version of this ShowPipelineRunDetailResponse.
 
         流水线版本
 
@@ -285,7 +285,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowPipelineRunDetailResponse.
+        r"""Gets the name of this ShowPipelineRunDetailResponse.
 
         流水线名称
 
@@ -296,7 +296,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowPipelineRunDetailResponse.
+        r"""Sets the name of this ShowPipelineRunDetailResponse.
 
         流水线名称
 
@@ -307,7 +307,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowPipelineRunDetailResponse.
+        r"""Gets the description of this ShowPipelineRunDetailResponse.
 
         运行描述
 
@@ -318,7 +318,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowPipelineRunDetailResponse.
+        r"""Sets the description of this ShowPipelineRunDetailResponse.
 
         运行描述
 
@@ -329,7 +329,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @property
     def is_publish(self):
-        """Gets the is_publish of this ShowPipelineRunDetailResponse.
+        r"""Gets the is_publish of this ShowPipelineRunDetailResponse.
 
         是否为变更流水线
 
@@ -340,7 +340,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @is_publish.setter
     def is_publish(self, is_publish):
-        """Sets the is_publish of this ShowPipelineRunDetailResponse.
+        r"""Sets the is_publish of this ShowPipelineRunDetailResponse.
 
         是否为变更流水线
 
@@ -351,7 +351,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @property
     def executor_id(self):
-        """Gets the executor_id of this ShowPipelineRunDetailResponse.
+        r"""Gets the executor_id of this ShowPipelineRunDetailResponse.
 
         运行人ID
 
@@ -362,7 +362,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @executor_id.setter
     def executor_id(self, executor_id):
-        """Sets the executor_id of this ShowPipelineRunDetailResponse.
+        r"""Sets the executor_id of this ShowPipelineRunDetailResponse.
 
         运行人ID
 
@@ -373,7 +373,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @property
     def executor_name(self):
-        """Gets the executor_name of this ShowPipelineRunDetailResponse.
+        r"""Gets the executor_name of this ShowPipelineRunDetailResponse.
 
         运行人名称
 
@@ -384,7 +384,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @executor_name.setter
     def executor_name(self, executor_name):
-        """Sets the executor_name of this ShowPipelineRunDetailResponse.
+        r"""Sets the executor_name of this ShowPipelineRunDetailResponse.
 
         运行人名称
 
@@ -395,7 +395,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowPipelineRunDetailResponse.
+        r"""Gets the status of this ShowPipelineRunDetailResponse.
 
         状态
 
@@ -406,7 +406,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowPipelineRunDetailResponse.
+        r"""Sets the status of this ShowPipelineRunDetailResponse.
 
         状态
 
@@ -417,7 +417,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @property
     def trigger_type(self):
-        """Gets the trigger_type of this ShowPipelineRunDetailResponse.
+        r"""Gets the trigger_type of this ShowPipelineRunDetailResponse.
 
         触发类型
 
@@ -428,7 +428,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @trigger_type.setter
     def trigger_type(self, trigger_type):
-        """Sets the trigger_type of this ShowPipelineRunDetailResponse.
+        r"""Sets the trigger_type of this ShowPipelineRunDetailResponse.
 
         触发类型
 
@@ -439,7 +439,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @property
     def run_number(self):
-        """Gets the run_number of this ShowPipelineRunDetailResponse.
+        r"""Gets the run_number of this ShowPipelineRunDetailResponse.
 
         运行序号
 
@@ -450,7 +450,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @run_number.setter
     def run_number(self, run_number):
-        """Sets the run_number of this ShowPipelineRunDetailResponse.
+        r"""Sets the run_number of this ShowPipelineRunDetailResponse.
 
         运行序号
 
@@ -461,7 +461,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowPipelineRunDetailResponse.
+        r"""Gets the start_time of this ShowPipelineRunDetailResponse.
 
         开始时间
 
@@ -472,7 +472,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowPipelineRunDetailResponse.
+        r"""Sets the start_time of this ShowPipelineRunDetailResponse.
 
         开始时间
 
@@ -483,7 +483,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowPipelineRunDetailResponse.
+        r"""Gets the end_time of this ShowPipelineRunDetailResponse.
 
         结束时间
 
@@ -494,7 +494,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowPipelineRunDetailResponse.
+        r"""Sets the end_time of this ShowPipelineRunDetailResponse.
 
         结束时间
 
@@ -505,7 +505,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @property
     def stages(self):
-        """Gets the stages of this ShowPipelineRunDetailResponse.
+        r"""Gets the stages of this ShowPipelineRunDetailResponse.
 
         阶段信息
 
@@ -516,7 +516,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @stages.setter
     def stages(self, stages):
-        """Sets the stages of this ShowPipelineRunDetailResponse.
+        r"""Sets the stages of this ShowPipelineRunDetailResponse.
 
         阶段信息
 
@@ -527,7 +527,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ShowPipelineRunDetailResponse.
+        r"""Gets the domain_id of this ShowPipelineRunDetailResponse.
 
         租户ID
 
@@ -538,7 +538,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ShowPipelineRunDetailResponse.
+        r"""Sets the domain_id of this ShowPipelineRunDetailResponse.
 
         租户ID
 
@@ -549,7 +549,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowPipelineRunDetailResponse.
+        r"""Gets the project_id of this ShowPipelineRunDetailResponse.
 
         项目ID
 
@@ -560,7 +560,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowPipelineRunDetailResponse.
+        r"""Sets the project_id of this ShowPipelineRunDetailResponse.
 
         项目ID
 
@@ -571,7 +571,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @property
     def region(self):
-        """Gets the region of this ShowPipelineRunDetailResponse.
+        r"""Gets the region of this ShowPipelineRunDetailResponse.
 
         局点
 
@@ -582,7 +582,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ShowPipelineRunDetailResponse.
+        r"""Sets the region of this ShowPipelineRunDetailResponse.
 
         局点
 
@@ -593,7 +593,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @property
     def component_id(self):
-        """Gets the component_id of this ShowPipelineRunDetailResponse.
+        r"""Gets the component_id of this ShowPipelineRunDetailResponse.
 
         组件ID
 
@@ -604,7 +604,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @component_id.setter
     def component_id(self, component_id):
-        """Sets the component_id of this ShowPipelineRunDetailResponse.
+        r"""Sets the component_id of this ShowPipelineRunDetailResponse.
 
         组件ID
 
@@ -615,7 +615,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @property
     def language(self):
-        """Gets the language of this ShowPipelineRunDetailResponse.
+        r"""Gets the language of this ShowPipelineRunDetailResponse.
 
         语言
 
@@ -626,7 +626,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @language.setter
     def language(self, language):
-        """Sets the language of this ShowPipelineRunDetailResponse.
+        r"""Sets the language of this ShowPipelineRunDetailResponse.
 
         语言
 
@@ -637,7 +637,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @property
     def sources(self):
-        """Gets the sources of this ShowPipelineRunDetailResponse.
+        r"""Gets the sources of this ShowPipelineRunDetailResponse.
 
         运行源信息
 
@@ -648,7 +648,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @sources.setter
     def sources(self, sources):
-        """Sets the sources of this ShowPipelineRunDetailResponse.
+        r"""Sets the sources of this ShowPipelineRunDetailResponse.
 
         运行源信息
 
@@ -659,7 +659,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @property
     def artifacts(self):
-        """Gets the artifacts of this ShowPipelineRunDetailResponse.
+        r"""Gets the artifacts of this ShowPipelineRunDetailResponse.
 
         流水线运行产物
 
@@ -670,7 +670,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @artifacts.setter
     def artifacts(self, artifacts):
-        """Sets the artifacts of this ShowPipelineRunDetailResponse.
+        r"""Sets the artifacts of this ShowPipelineRunDetailResponse.
 
         流水线运行产物
 
@@ -681,7 +681,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @property
     def subject_id(self):
-        """Gets the subject_id of this ShowPipelineRunDetailResponse.
+        r"""Gets the subject_id of this ShowPipelineRunDetailResponse.
 
         流水线运行实例ID
 
@@ -692,7 +692,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @subject_id.setter
     def subject_id(self, subject_id):
-        """Sets the subject_id of this ShowPipelineRunDetailResponse.
+        r"""Sets the subject_id of this ShowPipelineRunDetailResponse.
 
         流水线运行实例ID
 
@@ -703,7 +703,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @property
     def group_id(self):
-        """Gets the group_id of this ShowPipelineRunDetailResponse.
+        r"""Gets the group_id of this ShowPipelineRunDetailResponse.
 
         分组ID
 
@@ -714,7 +714,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ShowPipelineRunDetailResponse.
+        r"""Sets the group_id of this ShowPipelineRunDetailResponse.
 
         分组ID
 
@@ -725,7 +725,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @property
     def group_name(self):
-        """Gets the group_name of this ShowPipelineRunDetailResponse.
+        r"""Gets the group_name of this ShowPipelineRunDetailResponse.
 
         分组名称
 
@@ -736,7 +736,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this ShowPipelineRunDetailResponse.
+        r"""Sets the group_name of this ShowPipelineRunDetailResponse.
 
         分组名称
 
@@ -747,7 +747,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @property
     def detail_url(self):
-        """Gets the detail_url of this ShowPipelineRunDetailResponse.
+        r"""Gets the detail_url of this ShowPipelineRunDetailResponse.
 
         详情页地址
 
@@ -758,7 +758,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @detail_url.setter
     def detail_url(self, detail_url):
-        """Sets the detail_url of this ShowPipelineRunDetailResponse.
+        r"""Sets the detail_url of this ShowPipelineRunDetailResponse.
 
         详情页地址
 
@@ -769,7 +769,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @property
     def current_system_time(self):
-        """Gets the current_system_time of this ShowPipelineRunDetailResponse.
+        r"""Gets the current_system_time of this ShowPipelineRunDetailResponse.
 
         当前系统时间
 
@@ -780,7 +780,7 @@ class ShowPipelineRunDetailResponse(SdkResponse):
 
     @current_system_time.setter
     def current_system_time(self, current_system_time):
-        """Sets the current_system_time of this ShowPipelineRunDetailResponse.
+        r"""Sets the current_system_time of this ShowPipelineRunDetailResponse.
 
         当前系统时间
 

@@ -29,7 +29,7 @@ class TempDetail:
     }
 
     def __init__(self, input=None, output=None, warning=None):
-        """TempDetail
+        r"""TempDetail
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class TempDetail:
 
     @property
     def input(self):
-        """Gets the input of this TempDetail.
+        r"""Gets the input of this TempDetail.
 
         模板输入
 
@@ -68,7 +68,7 @@ class TempDetail:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this TempDetail.
+        r"""Sets the input of this TempDetail.
 
         模板输入
 
@@ -79,7 +79,7 @@ class TempDetail:
 
     @property
     def output(self):
-        """Gets the output of this TempDetail.
+        r"""Gets the output of this TempDetail.
 
         模板输出
 
@@ -90,7 +90,7 @@ class TempDetail:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this TempDetail.
+        r"""Sets the output of this TempDetail.
 
         模板输出
 
@@ -101,7 +101,7 @@ class TempDetail:
 
     @property
     def warning(self):
-        """Gets the warning of this TempDetail.
+        r"""Gets the warning of this TempDetail.
 
         警告信息
 
@@ -112,7 +112,7 @@ class TempDetail:
 
     @warning.setter
     def warning(self, warning):
-        """Sets the warning of this TempDetail.
+        r"""Sets the warning of this TempDetail.
 
         警告信息
 

@@ -28,7 +28,7 @@ class UpdateLivePlatformResponse(SdkResponse):
     }
 
     def __init__(self, platform_id=None, x_request_id=None):
-        """UpdateLivePlatformResponse
+        r"""UpdateLivePlatformResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateLivePlatformResponse(SdkResponse):
 
     @property
     def platform_id(self):
-        """Gets the platform_id of this UpdateLivePlatformResponse.
+        r"""Gets the platform_id of this UpdateLivePlatformResponse.
 
         平台ID
 
@@ -62,7 +62,7 @@ class UpdateLivePlatformResponse(SdkResponse):
 
     @platform_id.setter
     def platform_id(self, platform_id):
-        """Sets the platform_id of this UpdateLivePlatformResponse.
+        r"""Sets the platform_id of this UpdateLivePlatformResponse.
 
         平台ID
 
@@ -73,7 +73,7 @@ class UpdateLivePlatformResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdateLivePlatformResponse.
+        r"""Gets the x_request_id of this UpdateLivePlatformResponse.
 
         :return: The x_request_id of this UpdateLivePlatformResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class UpdateLivePlatformResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdateLivePlatformResponse.
+        r"""Sets the x_request_id of this UpdateLivePlatformResponse.
 
         :param x_request_id: The x_request_id of this UpdateLivePlatformResponse.
         :type x_request_id: str

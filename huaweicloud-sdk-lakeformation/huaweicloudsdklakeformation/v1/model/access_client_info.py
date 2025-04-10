@@ -39,7 +39,7 @@ class AccessClientInfo:
     }
 
     def __init__(self, id=None, name=None, access_mode=None, status=None, vpc_id=None, subnet_id=None, access_connections=None, create_time=None):
-        """AccessClientInfo
+        r"""AccessClientInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class AccessClientInfo:
 
     @property
     def id(self):
-        """Gets the id of this AccessClientInfo.
+        r"""Gets the id of this AccessClientInfo.
 
         客户端ID
 
@@ -103,7 +103,7 @@ class AccessClientInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AccessClientInfo.
+        r"""Sets the id of this AccessClientInfo.
 
         客户端ID
 
@@ -114,7 +114,7 @@ class AccessClientInfo:
 
     @property
     def name(self):
-        """Gets the name of this AccessClientInfo.
+        r"""Gets the name of this AccessClientInfo.
 
         客户端名称
 
@@ -125,7 +125,7 @@ class AccessClientInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AccessClientInfo.
+        r"""Sets the name of this AccessClientInfo.
 
         客户端名称
 
@@ -136,7 +136,7 @@ class AccessClientInfo:
 
     @property
     def access_mode(self):
-        """Gets the access_mode of this AccessClientInfo.
+        r"""Gets the access_mode of this AccessClientInfo.
 
         接入模式,SYSTEM,CUSTOM,AUTO
 
@@ -147,7 +147,7 @@ class AccessClientInfo:
 
     @access_mode.setter
     def access_mode(self, access_mode):
-        """Sets the access_mode of this AccessClientInfo.
+        r"""Sets the access_mode of this AccessClientInfo.
 
         接入模式,SYSTEM,CUSTOM,AUTO
 
@@ -158,7 +158,7 @@ class AccessClientInfo:
 
     @property
     def status(self):
-        """Gets the status of this AccessClientInfo.
+        r"""Gets the status of this AccessClientInfo.
 
         客户端状态,CREATING,RUNNING,DELETING,DELETED,CREATE_FAIL,DELETE_FAIL
 
@@ -169,7 +169,7 @@ class AccessClientInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AccessClientInfo.
+        r"""Sets the status of this AccessClientInfo.
 
         客户端状态,CREATING,RUNNING,DELETING,DELETED,CREATE_FAIL,DELETE_FAIL
 
@@ -180,7 +180,7 @@ class AccessClientInfo:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this AccessClientInfo.
+        r"""Gets the vpc_id of this AccessClientInfo.
 
         VPC ID
 
@@ -191,7 +191,7 @@ class AccessClientInfo:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this AccessClientInfo.
+        r"""Sets the vpc_id of this AccessClientInfo.
 
         VPC ID
 
@@ -202,7 +202,7 @@ class AccessClientInfo:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this AccessClientInfo.
+        r"""Gets the subnet_id of this AccessClientInfo.
 
         子网ID
 
@@ -213,7 +213,7 @@ class AccessClientInfo:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this AccessClientInfo.
+        r"""Sets the subnet_id of this AccessClientInfo.
 
         子网ID
 
@@ -224,7 +224,7 @@ class AccessClientInfo:
 
     @property
     def access_connections(self):
-        """Gets the access_connections of this AccessClientInfo.
+        r"""Gets the access_connections of this AccessClientInfo.
 
         接入连接列表
 
@@ -235,7 +235,7 @@ class AccessClientInfo:
 
     @access_connections.setter
     def access_connections(self, access_connections):
-        """Sets the access_connections of this AccessClientInfo.
+        r"""Sets the access_connections of this AccessClientInfo.
 
         接入连接列表
 
@@ -246,7 +246,7 @@ class AccessClientInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this AccessClientInfo.
+        r"""Gets the create_time of this AccessClientInfo.
 
         实例创建时间戳
 
@@ -257,7 +257,7 @@ class AccessClientInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AccessClientInfo.
+        r"""Sets the create_time of this AccessClientInfo.
 
         实例创建时间戳
 

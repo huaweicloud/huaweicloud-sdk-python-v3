@@ -26,7 +26,7 @@ class ListSubCustomerNewTagResponse(SdkResponse):
     }
 
     def __init__(self, new_customer_tags=None):
-        """ListSubCustomerNewTagResponse
+        r"""ListSubCustomerNewTagResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListSubCustomerNewTagResponse(SdkResponse):
 
     @property
     def new_customer_tags(self):
-        """Gets the new_customer_tags of this ListSubCustomerNewTagResponse.
+        r"""Gets the new_customer_tags of this ListSubCustomerNewTagResponse.
 
         新客标签信息列表。只有成功的时候才返回。 此列表不包含非子客户的数据。批量查询客户新客标签时，若入参携带了非子客户，会被过滤。 具体请参见表1 NewCustomerTagItem。
 
@@ -55,7 +55,7 @@ class ListSubCustomerNewTagResponse(SdkResponse):
 
     @new_customer_tags.setter
     def new_customer_tags(self, new_customer_tags):
-        """Sets the new_customer_tags of this ListSubCustomerNewTagResponse.
+        r"""Sets the new_customer_tags of this ListSubCustomerNewTagResponse.
 
         新客标签信息列表。只有成功的时候才返回。 此列表不包含非子客户的数据。批量查询客户新客标签时，若入参携带了非子客户，会被过滤。 具体请参见表1 NewCustomerTagItem。
 

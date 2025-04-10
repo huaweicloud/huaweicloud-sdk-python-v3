@@ -37,7 +37,7 @@ class ClientInfoDto:
     }
 
     def __init__(self, authorization_endpoint=None, client_id=None, client_id_issued_at=None, client_secret=None, client_secret_expires_at=None, token_endpoint=None, scopes=None):
-        """ClientInfoDto
+        r"""ClientInfoDto
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ClientInfoDto:
 
     @property
     def authorization_endpoint(self):
-        """Gets the authorization_endpoint of this ClientInfoDto.
+        r"""Gets the authorization_endpoint of this ClientInfoDto.
 
         客户端可以请求授权的端点
 
@@ -90,7 +90,7 @@ class ClientInfoDto:
 
     @authorization_endpoint.setter
     def authorization_endpoint(self, authorization_endpoint):
-        """Sets the authorization_endpoint of this ClientInfoDto.
+        r"""Sets the authorization_endpoint of this ClientInfoDto.
 
         客户端可以请求授权的端点
 
@@ -101,7 +101,7 @@ class ClientInfoDto:
 
     @property
     def client_id(self):
-        """Gets the client_id of this ClientInfoDto.
+        r"""Gets the client_id of this ClientInfoDto.
 
         客户端应用唯一标识
 
@@ -112,7 +112,7 @@ class ClientInfoDto:
 
     @client_id.setter
     def client_id(self, client_id):
-        """Sets the client_id of this ClientInfoDto.
+        r"""Sets the client_id of this ClientInfoDto.
 
         客户端应用唯一标识
 
@@ -123,7 +123,7 @@ class ClientInfoDto:
 
     @property
     def client_id_issued_at(self):
-        """Gets the client_id_issued_at of this ClientInfoDto.
+        r"""Gets the client_id_issued_at of this ClientInfoDto.
 
         客户端标识符和客户端密钥的注册时间
 
@@ -134,7 +134,7 @@ class ClientInfoDto:
 
     @client_id_issued_at.setter
     def client_id_issued_at(self, client_id_issued_at):
-        """Sets the client_id_issued_at of this ClientInfoDto.
+        r"""Sets the client_id_issued_at of this ClientInfoDto.
 
         客户端标识符和客户端密钥的注册时间
 
@@ -145,7 +145,7 @@ class ClientInfoDto:
 
     @property
     def client_secret(self):
-        """Gets the client_secret of this ClientInfoDto.
+        r"""Gets the client_secret of this ClientInfoDto.
 
         为客户端生成的秘密字符串。客户端将使用此字符串在后续调用中获得服务的身份验证
 
@@ -156,7 +156,7 @@ class ClientInfoDto:
 
     @client_secret.setter
     def client_secret(self, client_secret):
-        """Sets the client_secret of this ClientInfoDto.
+        r"""Sets the client_secret of this ClientInfoDto.
 
         为客户端生成的秘密字符串。客户端将使用此字符串在后续调用中获得服务的身份验证
 
@@ -167,7 +167,7 @@ class ClientInfoDto:
 
     @property
     def client_secret_expires_at(self):
-        """Gets the client_secret_expires_at of this ClientInfoDto.
+        r"""Gets the client_secret_expires_at of this ClientInfoDto.
 
         客户端标识符和客户端密钥失效的时间
 
@@ -178,7 +178,7 @@ class ClientInfoDto:
 
     @client_secret_expires_at.setter
     def client_secret_expires_at(self, client_secret_expires_at):
-        """Sets the client_secret_expires_at of this ClientInfoDto.
+        r"""Sets the client_secret_expires_at of this ClientInfoDto.
 
         客户端标识符和客户端密钥失效的时间
 
@@ -189,7 +189,7 @@ class ClientInfoDto:
 
     @property
     def token_endpoint(self):
-        """Gets the token_endpoint of this ClientInfoDto.
+        r"""Gets the token_endpoint of this ClientInfoDto.
 
         客户端可以在其中获取访问令牌的端点
 
@@ -200,7 +200,7 @@ class ClientInfoDto:
 
     @token_endpoint.setter
     def token_endpoint(self, token_endpoint):
-        """Sets the token_endpoint of this ClientInfoDto.
+        r"""Sets the token_endpoint of this ClientInfoDto.
 
         客户端可以在其中获取访问令牌的端点
 
@@ -211,7 +211,7 @@ class ClientInfoDto:
 
     @property
     def scopes(self):
-        """Gets the scopes of this ClientInfoDto.
+        r"""Gets the scopes of this ClientInfoDto.
 
         服务器为客户端注册的作用域列表。后续授权访问令牌时，权限都应该限制在此作用域列表的子集范围内
 
@@ -222,7 +222,7 @@ class ClientInfoDto:
 
     @scopes.setter
     def scopes(self, scopes):
-        """Sets the scopes of this ClientInfoDto.
+        r"""Sets the scopes of this ClientInfoDto.
 
         服务器为客户端注册的作用域列表。后续授权访问令牌时，权限都应该限制在此作用域列表的子集范围内
 

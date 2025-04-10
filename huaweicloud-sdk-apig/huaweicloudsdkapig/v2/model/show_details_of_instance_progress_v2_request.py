@@ -25,7 +25,7 @@ class ShowDetailsOfInstanceProgressV2Request:
     }
 
     def __init__(self, instance_id=None):
-        """ShowDetailsOfInstanceProgressV2Request
+        r"""ShowDetailsOfInstanceProgressV2Request
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowDetailsOfInstanceProgressV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowDetailsOfInstanceProgressV2Request.
+        r"""Gets the instance_id of this ShowDetailsOfInstanceProgressV2Request.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -53,7 +53,7 @@ class ShowDetailsOfInstanceProgressV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowDetailsOfInstanceProgressV2Request.
+        r"""Sets the instance_id of this ShowDetailsOfInstanceProgressV2Request.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 

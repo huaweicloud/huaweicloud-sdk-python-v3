@@ -27,7 +27,7 @@ class ListStoreRequestBody:
     }
 
     def __init__(self, cursor_name=None, limit=None):
-        """ListStoreRequestBody
+        r"""ListStoreRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListStoreRequestBody:
 
     @property
     def cursor_name(self):
-        """Gets the cursor_name of this ListStoreRequestBody.
+        r"""Gets the cursor_name of this ListStoreRequestBody.
 
         上次返回的游标位置，本次响应包含该仓名。 - 长度：[16,52] - 取值字符限制：[a-z0-9-]+
 
@@ -61,7 +61,7 @@ class ListStoreRequestBody:
 
     @cursor_name.setter
     def cursor_name(self, cursor_name):
-        """Sets the cursor_name of this ListStoreRequestBody.
+        r"""Sets the cursor_name of this ListStoreRequestBody.
 
         上次返回的游标位置，本次响应包含该仓名。 - 长度：[16,52] - 取值字符限制：[a-z0-9-]+
 
@@ -72,7 +72,7 @@ class ListStoreRequestBody:
 
     @property
     def limit(self):
-        """Gets the limit of this ListStoreRequestBody.
+        r"""Gets the limit of this ListStoreRequestBody.
 
         响应返回的仓个数。
 
@@ -83,7 +83,7 @@ class ListStoreRequestBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListStoreRequestBody.
+        r"""Sets the limit of this ListStoreRequestBody.
 
         响应返回的仓个数。
 

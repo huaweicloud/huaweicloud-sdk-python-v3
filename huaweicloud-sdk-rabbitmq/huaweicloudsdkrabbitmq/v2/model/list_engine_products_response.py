@@ -30,7 +30,7 @@ class ListEngineProductsResponse(SdkResponse):
     }
 
     def __init__(self, engine=None, versions=None, products=None):
-        """ListEngineProductsResponse
+        r"""ListEngineProductsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListEngineProductsResponse(SdkResponse):
 
     @property
     def engine(self):
-        """Gets the engine of this ListEngineProductsResponse.
+        r"""Gets the engine of this ListEngineProductsResponse.
 
         分布式消息服务的产品类型。
 
@@ -69,7 +69,7 @@ class ListEngineProductsResponse(SdkResponse):
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this ListEngineProductsResponse.
+        r"""Sets the engine of this ListEngineProductsResponse.
 
         分布式消息服务的产品类型。
 
@@ -80,7 +80,7 @@ class ListEngineProductsResponse(SdkResponse):
 
     @property
     def versions(self):
-        """Gets the versions of this ListEngineProductsResponse.
+        r"""Gets the versions of this ListEngineProductsResponse.
 
         支持的产品版本类型。
 
@@ -91,7 +91,7 @@ class ListEngineProductsResponse(SdkResponse):
 
     @versions.setter
     def versions(self, versions):
-        """Sets the versions of this ListEngineProductsResponse.
+        r"""Sets the versions of this ListEngineProductsResponse.
 
         支持的产品版本类型。
 
@@ -102,7 +102,7 @@ class ListEngineProductsResponse(SdkResponse):
 
     @property
     def products(self):
-        """Gets the products of this ListEngineProductsResponse.
+        r"""Gets the products of this ListEngineProductsResponse.
 
         产品规格的详细信息。
 
@@ -113,7 +113,7 @@ class ListEngineProductsResponse(SdkResponse):
 
     @products.setter
     def products(self, products):
-        """Sets the products of this ListEngineProductsResponse.
+        r"""Sets the products of this ListEngineProductsResponse.
 
         产品规格的详细信息。
 

@@ -25,7 +25,7 @@ class CreatePostPaidInstanceRequest:
     }
 
     def __init__(self, body=None):
-        """CreatePostPaidInstanceRequest
+        r"""CreatePostPaidInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreatePostPaidInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePostPaidInstanceRequest.
+        r"""Gets the body of this CreatePostPaidInstanceRequest.
 
         :return: The body of this CreatePostPaidInstanceRequest.
         :rtype: :class:`huaweicloudsdkrocketmq.v2.CreatePostPaidInstanceReq`
@@ -52,7 +52,7 @@ class CreatePostPaidInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePostPaidInstanceRequest.
+        r"""Sets the body of this CreatePostPaidInstanceRequest.
 
         :param body: The body of this CreatePostPaidInstanceRequest.
         :type body: :class:`huaweicloudsdkrocketmq.v2.CreatePostPaidInstanceReq`

@@ -29,7 +29,7 @@ class ListAgenciesV5Request:
     }
 
     def __init__(self, limit=None, marker=None, path_prefix=None):
-        """ListAgenciesV5Request
+        r"""ListAgenciesV5Request
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListAgenciesV5Request:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAgenciesV5Request.
+        r"""Gets the limit of this ListAgenciesV5Request.
 
         每页显示的条目数量。
 
@@ -68,7 +68,7 @@ class ListAgenciesV5Request:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAgenciesV5Request.
+        r"""Sets the limit of this ListAgenciesV5Request.
 
         每页显示的条目数量。
 
@@ -79,7 +79,7 @@ class ListAgenciesV5Request:
 
     @property
     def marker(self):
-        """Gets the marker of this ListAgenciesV5Request.
+        r"""Gets the marker of this ListAgenciesV5Request.
 
         分页标记，长度为4到400个字符，只包含字母、数字、\"+\"、\"/\"、\"=\"、\"-\"和\"_\"的字符串。
 
@@ -90,7 +90,7 @@ class ListAgenciesV5Request:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListAgenciesV5Request.
+        r"""Sets the marker of this ListAgenciesV5Request.
 
         分页标记，长度为4到400个字符，只包含字母、数字、\"+\"、\"/\"、\"=\"、\"-\"和\"_\"的字符串。
 
@@ -101,7 +101,7 @@ class ListAgenciesV5Request:
 
     @property
     def path_prefix(self):
-        """Gets the path_prefix of this ListAgenciesV5Request.
+        r"""Gets the path_prefix of this ListAgenciesV5Request.
 
         资源路径前缀，由若干段字符串拼接而成，每段先包含一个或多个字母、数字、\".\"、\",\"、\"+\"、\"@\"、\"=\"、\"_\"或\"-\"，并以\"/\"结尾，例如\"foo/bar/\"。
 
@@ -112,7 +112,7 @@ class ListAgenciesV5Request:
 
     @path_prefix.setter
     def path_prefix(self, path_prefix):
-        """Sets the path_prefix of this ListAgenciesV5Request.
+        r"""Sets the path_prefix of this ListAgenciesV5Request.
 
         资源路径前缀，由若干段字符串拼接而成，每段先包含一个或多个字母、数字、\".\"、\",\"、\"+\"、\"@\"、\"=\"、\"_\"或\"-\"，并以\"/\"结尾，例如\"foo/bar/\"。
 

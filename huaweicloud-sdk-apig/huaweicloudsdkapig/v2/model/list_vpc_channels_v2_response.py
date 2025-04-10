@@ -30,7 +30,7 @@ class ListVpcChannelsV2Response(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, vpc_channels=None):
-        """ListVpcChannelsV2Response
+        r"""ListVpcChannelsV2Response
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListVpcChannelsV2Response(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListVpcChannelsV2Response.
+        r"""Gets the size of this ListVpcChannelsV2Response.
 
         本次返回的列表长度
 
@@ -67,7 +67,7 @@ class ListVpcChannelsV2Response(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListVpcChannelsV2Response.
+        r"""Sets the size of this ListVpcChannelsV2Response.
 
         本次返回的列表长度
 
@@ -78,7 +78,7 @@ class ListVpcChannelsV2Response(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListVpcChannelsV2Response.
+        r"""Gets the total of this ListVpcChannelsV2Response.
 
         满足条件的记录数
 
@@ -89,7 +89,7 @@ class ListVpcChannelsV2Response(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListVpcChannelsV2Response.
+        r"""Sets the total of this ListVpcChannelsV2Response.
 
         满足条件的记录数
 
@@ -100,7 +100,7 @@ class ListVpcChannelsV2Response(SdkResponse):
 
     @property
     def vpc_channels(self):
-        """Gets the vpc_channels of this ListVpcChannelsV2Response.
+        r"""Gets the vpc_channels of this ListVpcChannelsV2Response.
 
         本次查询到的VPC通道列表
 
@@ -111,7 +111,7 @@ class ListVpcChannelsV2Response(SdkResponse):
 
     @vpc_channels.setter
     def vpc_channels(self, vpc_channels):
-        """Sets the vpc_channels of this ListVpcChannelsV2Response.
+        r"""Sets the vpc_channels of this ListVpcChannelsV2Response.
 
         本次查询到的VPC通道列表
 

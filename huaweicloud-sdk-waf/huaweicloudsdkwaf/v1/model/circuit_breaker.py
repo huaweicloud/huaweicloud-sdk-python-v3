@@ -37,7 +37,7 @@ class CircuitBreaker:
     }
 
     def __init__(self, switch=None, dead_num=None, dead_ratio=None, block_time=None, superposition_num=None, suspend_num=None, sus_block_time=None):
-        """CircuitBreaker
+        r"""CircuitBreaker
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class CircuitBreaker:
 
     @property
     def switch(self):
-        """Gets the switch of this CircuitBreaker.
+        r"""Gets the switch of this CircuitBreaker.
 
         熔断开关，是否开启连接保护   - true：开启连接保护   - false: 关闭连接保护 
 
@@ -96,7 +96,7 @@ class CircuitBreaker:
 
     @switch.setter
     def switch(self, switch):
-        """Sets the switch of this CircuitBreaker.
+        r"""Sets the switch of this CircuitBreaker.
 
         熔断开关，是否开启连接保护   - true：开启连接保护   - false: 关闭连接保护 
 
@@ -107,7 +107,7 @@ class CircuitBreaker:
 
     @property
     def dead_num(self):
-        """Gets the dead_num of this CircuitBreaker.
+        r"""Gets the dead_num of this CircuitBreaker.
 
         502/504数量阈值，每30s累加的502/504数量阈值
 
@@ -118,7 +118,7 @@ class CircuitBreaker:
 
     @dead_num.setter
     def dead_num(self, dead_num):
-        """Sets the dead_num of this CircuitBreaker.
+        r"""Sets the dead_num of this CircuitBreaker.
 
         502/504数量阈值，每30s累加的502/504数量阈值
 
@@ -129,7 +129,7 @@ class CircuitBreaker:
 
     @property
     def dead_ratio(self):
-        """Gets the dead_ratio of this CircuitBreaker.
+        r"""Gets the dead_ratio of this CircuitBreaker.
 
         502/504数量占比(%)，总请求数量中502/504数量占比达到所设定值，并且与数量阈值同时满足时触发宕机保护
 
@@ -140,7 +140,7 @@ class CircuitBreaker:
 
     @dead_ratio.setter
     def dead_ratio(self, dead_ratio):
-        """Sets the dead_ratio of this CircuitBreaker.
+        r"""Sets the dead_ratio of this CircuitBreaker.
 
         502/504数量占比(%)，总请求数量中502/504数量占比达到所设定值，并且与数量阈值同时满足时触发宕机保护
 
@@ -151,7 +151,7 @@ class CircuitBreaker:
 
     @property
     def block_time(self):
-        """Gets the block_time of this CircuitBreaker.
+        r"""Gets the block_time of this CircuitBreaker.
 
         初次触发宕机的保护时间，即WAF将停止转发用户请求的时间。
 
@@ -162,7 +162,7 @@ class CircuitBreaker:
 
     @block_time.setter
     def block_time(self, block_time):
-        """Sets the block_time of this CircuitBreaker.
+        r"""Sets the block_time of this CircuitBreaker.
 
         初次触发宕机的保护时间，即WAF将停止转发用户请求的时间。
 
@@ -173,7 +173,7 @@ class CircuitBreaker:
 
     @property
     def superposition_num(self):
-        """Gets the superposition_num of this CircuitBreaker.
+        r"""Gets the superposition_num of this CircuitBreaker.
 
         连续触发时，保护时间延长最大倍数，叠加周期为3600s。例如，“初次保护时间”设置为180s，“连续触发叠加系数”设置为3。   - 当触发次数为2（即小于3）时，保护时间为360s。   - 当次数大于等于3时，保护时间为540s。   - 当累计保护时间超过1小时（3600s），叠加次数会从头计数。
 
@@ -184,7 +184,7 @@ class CircuitBreaker:
 
     @superposition_num.setter
     def superposition_num(self, superposition_num):
-        """Sets the superposition_num of this CircuitBreaker.
+        r"""Sets the superposition_num of this CircuitBreaker.
 
         连续触发时，保护时间延长最大倍数，叠加周期为3600s。例如，“初次保护时间”设置为180s，“连续触发叠加系数”设置为3。   - 当触发次数为2（即小于3）时，保护时间为360s。   - 当次数大于等于3时，保护时间为540s。   - 当累计保护时间超过1小时（3600s），叠加次数会从头计数。
 
@@ -195,7 +195,7 @@ class CircuitBreaker:
 
     @property
     def suspend_num(self):
-        """Gets the suspend_num of this CircuitBreaker.
+        r"""Gets the suspend_num of this CircuitBreaker.
 
         读等待URL请求数量阈值，读等待URL请求数量到达设定值即触发连接保护
 
@@ -206,7 +206,7 @@ class CircuitBreaker:
 
     @suspend_num.setter
     def suspend_num(self, suspend_num):
-        """Sets the suspend_num of this CircuitBreaker.
+        r"""Sets the suspend_num of this CircuitBreaker.
 
         读等待URL请求数量阈值，读等待URL请求数量到达设定值即触发连接保护
 
@@ -217,7 +217,7 @@ class CircuitBreaker:
 
     @property
     def sus_block_time(self):
-        """Gets the sus_block_time of this CircuitBreaker.
+        r"""Gets the sus_block_time of this CircuitBreaker.
 
         读等待URL请求数量超过阈值后的熔断时间，达到数量阈值所触发的保护时间，即WAF将停止转发用户请求的时间。
 
@@ -228,7 +228,7 @@ class CircuitBreaker:
 
     @sus_block_time.setter
     def sus_block_time(self, sus_block_time):
-        """Sets the sus_block_time of this CircuitBreaker.
+        r"""Sets the sus_block_time of this CircuitBreaker.
 
         读等待URL请求数量超过阈值后的熔断时间，达到数量阈值所触发的保护时间，即WAF将停止转发用户请求的时间。
 

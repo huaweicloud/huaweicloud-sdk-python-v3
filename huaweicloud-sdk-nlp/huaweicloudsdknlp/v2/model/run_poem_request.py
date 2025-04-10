@@ -25,7 +25,7 @@ class RunPoemRequest:
     }
 
     def __init__(self, body=None):
-        """RunPoemRequest
+        r"""RunPoemRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RunPoemRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunPoemRequest.
+        r"""Gets the body of this RunPoemRequest.
 
         :return: The body of this RunPoemRequest.
         :rtype: :class:`huaweicloudsdknlp.v2.CreatePoem`
@@ -52,7 +52,7 @@ class RunPoemRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunPoemRequest.
+        r"""Sets the body of this RunPoemRequest.
 
         :param body: The body of this RunPoemRequest.
         :type body: :class:`huaweicloudsdknlp.v2.CreatePoem`

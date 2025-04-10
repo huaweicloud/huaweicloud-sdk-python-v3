@@ -27,7 +27,7 @@ class UpdateDefectRequestBody:
     }
 
     def __init__(self, defect_id=None, defect_status=None):
-        """UpdateDefectRequestBody
+        r"""UpdateDefectRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateDefectRequestBody:
 
     @property
     def defect_id(self):
-        """Gets the defect_id of this UpdateDefectRequestBody.
+        r"""Gets the defect_id of this UpdateDefectRequestBody.
 
         问题id,多个时英文逗号分隔
 
@@ -61,7 +61,7 @@ class UpdateDefectRequestBody:
 
     @defect_id.setter
     def defect_id(self, defect_id):
-        """Sets the defect_id of this UpdateDefectRequestBody.
+        r"""Sets the defect_id of this UpdateDefectRequestBody.
 
         问题id,多个时英文逗号分隔
 
@@ -72,7 +72,7 @@ class UpdateDefectRequestBody:
 
     @property
     def defect_status(self):
-        """Gets the defect_status of this UpdateDefectRequestBody.
+        r"""Gets the defect_status of this UpdateDefectRequestBody.
 
         状态2：已忽略 1：已解决 0：未解决
 
@@ -83,7 +83,7 @@ class UpdateDefectRequestBody:
 
     @defect_status.setter
     def defect_status(self, defect_status):
-        """Sets the defect_status of this UpdateDefectRequestBody.
+        r"""Sets the defect_status of this UpdateDefectRequestBody.
 
         状态2：已忽略 1：已解决 0：未解决
 

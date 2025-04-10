@@ -27,7 +27,7 @@ class SkippedCheckItemList:
     }
 
     def __init__(self, name=None, resource_selector=None):
-        """SkippedCheckItemList
+        r"""SkippedCheckItemList
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SkippedCheckItemList:
 
     @property
     def name(self):
-        """Gets the name of this SkippedCheckItemList.
+        r"""Gets the name of this SkippedCheckItemList.
 
         跳过的检查项名称
 
@@ -61,7 +61,7 @@ class SkippedCheckItemList:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SkippedCheckItemList.
+        r"""Sets the name of this SkippedCheckItemList.
 
         跳过的检查项名称
 
@@ -72,7 +72,7 @@ class SkippedCheckItemList:
 
     @property
     def resource_selector(self):
-        """Gets the resource_selector of this SkippedCheckItemList.
+        r"""Gets the resource_selector of this SkippedCheckItemList.
 
         :return: The resource_selector of this SkippedCheckItemList.
         :rtype: :class:`huaweicloudsdkcce.v3.ResourceSelector`
@@ -81,7 +81,7 @@ class SkippedCheckItemList:
 
     @resource_selector.setter
     def resource_selector(self, resource_selector):
-        """Sets the resource_selector of this SkippedCheckItemList.
+        r"""Sets the resource_selector of this SkippedCheckItemList.
 
         :param resource_selector: The resource_selector of this SkippedCheckItemList.
         :type resource_selector: :class:`huaweicloudsdkcce.v3.ResourceSelector`

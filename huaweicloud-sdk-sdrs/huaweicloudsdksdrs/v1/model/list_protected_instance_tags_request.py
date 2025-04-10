@@ -25,7 +25,7 @@ class ListProtectedInstanceTagsRequest:
     }
 
     def __init__(self, protected_instance_id=None):
-        """ListProtectedInstanceTagsRequest
+        r"""ListProtectedInstanceTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListProtectedInstanceTagsRequest:
 
     @property
     def protected_instance_id(self):
-        """Gets the protected_instance_id of this ListProtectedInstanceTagsRequest.
+        r"""Gets the protected_instance_id of this ListProtectedInstanceTagsRequest.
 
         保护实例的ID。
 
@@ -53,7 +53,7 @@ class ListProtectedInstanceTagsRequest:
 
     @protected_instance_id.setter
     def protected_instance_id(self, protected_instance_id):
-        """Sets the protected_instance_id of this ListProtectedInstanceTagsRequest.
+        r"""Sets the protected_instance_id of this ListProtectedInstanceTagsRequest.
 
         保护实例的ID。
 

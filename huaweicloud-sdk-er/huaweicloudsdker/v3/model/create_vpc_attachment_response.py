@@ -30,7 +30,7 @@ class CreateVpcAttachmentResponse(SdkResponse):
     }
 
     def __init__(self, vpc_attachment=None, request_id=None, x_client_token=None):
-        """CreateVpcAttachmentResponse
+        r"""CreateVpcAttachmentResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateVpcAttachmentResponse(SdkResponse):
 
     @property
     def vpc_attachment(self):
-        """Gets the vpc_attachment of this CreateVpcAttachmentResponse.
+        r"""Gets the vpc_attachment of this CreateVpcAttachmentResponse.
 
         :return: The vpc_attachment of this CreateVpcAttachmentResponse.
         :rtype: :class:`huaweicloudsdker.v3.VpcAttachmentDetails`
@@ -67,7 +67,7 @@ class CreateVpcAttachmentResponse(SdkResponse):
 
     @vpc_attachment.setter
     def vpc_attachment(self, vpc_attachment):
-        """Sets the vpc_attachment of this CreateVpcAttachmentResponse.
+        r"""Sets the vpc_attachment of this CreateVpcAttachmentResponse.
 
         :param vpc_attachment: The vpc_attachment of this CreateVpcAttachmentResponse.
         :type vpc_attachment: :class:`huaweicloudsdker.v3.VpcAttachmentDetails`
@@ -76,7 +76,7 @@ class CreateVpcAttachmentResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateVpcAttachmentResponse.
+        r"""Gets the request_id of this CreateVpcAttachmentResponse.
 
         请求id
 
@@ -87,7 +87,7 @@ class CreateVpcAttachmentResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateVpcAttachmentResponse.
+        r"""Sets the request_id of this CreateVpcAttachmentResponse.
 
         请求id
 
@@ -98,7 +98,7 @@ class CreateVpcAttachmentResponse(SdkResponse):
 
     @property
     def x_client_token(self):
-        """Gets the x_client_token of this CreateVpcAttachmentResponse.
+        r"""Gets the x_client_token of this CreateVpcAttachmentResponse.
 
         :return: The x_client_token of this CreateVpcAttachmentResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class CreateVpcAttachmentResponse(SdkResponse):
 
     @x_client_token.setter
     def x_client_token(self, x_client_token):
-        """Sets the x_client_token of this CreateVpcAttachmentResponse.
+        r"""Sets the x_client_token of this CreateVpcAttachmentResponse.
 
         :param x_client_token: The x_client_token of this CreateVpcAttachmentResponse.
         :type x_client_token: str

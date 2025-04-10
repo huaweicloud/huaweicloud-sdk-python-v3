@@ -29,7 +29,7 @@ class VideoResult:
     }
 
     def __init__(self, alive=None, actions=None, picture=None):
-        """VideoResult
+        r"""VideoResult
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class VideoResult:
 
     @property
     def alive(self):
-        """Gets the alive of this VideoResult.
+        r"""Gets the alive of this VideoResult.
 
         是否是活体。
 
@@ -65,7 +65,7 @@ class VideoResult:
 
     @alive.setter
     def alive(self, alive):
-        """Sets the alive of this VideoResult.
+        r"""Sets the alive of this VideoResult.
 
         是否是活体。
 
@@ -76,7 +76,7 @@ class VideoResult:
 
     @property
     def actions(self):
-        """Gets the actions of this VideoResult.
+        r"""Gets the actions of this VideoResult.
 
         动作列表。
 
@@ -87,7 +87,7 @@ class VideoResult:
 
     @actions.setter
     def actions(self, actions):
-        """Sets the actions of this VideoResult.
+        r"""Sets the actions of this VideoResult.
 
         动作列表。
 
@@ -98,7 +98,7 @@ class VideoResult:
 
     @property
     def picture(self):
-        """Gets the picture of this VideoResult.
+        r"""Gets the picture of this VideoResult.
 
         检测出最大人脸的图片base64。
 
@@ -109,7 +109,7 @@ class VideoResult:
 
     @picture.setter
     def picture(self, picture):
-        """Sets the picture of this VideoResult.
+        r"""Sets the picture of this VideoResult.
 
         检测出最大人脸的图片base64。
 

@@ -27,7 +27,7 @@ class ShowBugsPerDeveloperRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """ShowBugsPerDeveloperRequest
+        r"""ShowBugsPerDeveloperRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowBugsPerDeveloperRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowBugsPerDeveloperRequest.
+        r"""Gets the project_id of this ShowBugsPerDeveloperRequest.
 
         devcloud项目的32位id
 
@@ -60,7 +60,7 @@ class ShowBugsPerDeveloperRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowBugsPerDeveloperRequest.
+        r"""Sets the project_id of this ShowBugsPerDeveloperRequest.
 
         devcloud项目的32位id
 
@@ -71,7 +71,7 @@ class ShowBugsPerDeveloperRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowBugsPerDeveloperRequest.
+        r"""Gets the body of this ShowBugsPerDeveloperRequest.
 
         :return: The body of this ShowBugsPerDeveloperRequest.
         :rtype: :class:`huaweicloudsdkprojectman.v4.MetricRequest2`
@@ -80,7 +80,7 @@ class ShowBugsPerDeveloperRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowBugsPerDeveloperRequest.
+        r"""Sets the body of this ShowBugsPerDeveloperRequest.
 
         :param body: The body of this ShowBugsPerDeveloperRequest.
         :type body: :class:`huaweicloudsdkprojectman.v4.MetricRequest2`

@@ -26,7 +26,7 @@ class ShowDomainItemLocationDetailsResponse(SdkResponse):
     }
 
     def __init__(self, domain_item_location_details=None):
-        """ShowDomainItemLocationDetailsResponse
+        r"""ShowDomainItemLocationDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowDomainItemLocationDetailsResponse(SdkResponse):
 
     @property
     def domain_item_location_details(self):
-        """Gets the domain_item_location_details of this ShowDomainItemLocationDetailsResponse.
+        r"""Gets the domain_item_location_details of this ShowDomainItemLocationDetailsResponse.
 
         :return: The domain_item_location_details of this ShowDomainItemLocationDetailsResponse.
         :rtype: :class:`huaweicloudsdkcdn.v1.DomainItemLocationDetails`
@@ -53,7 +53,7 @@ class ShowDomainItemLocationDetailsResponse(SdkResponse):
 
     @domain_item_location_details.setter
     def domain_item_location_details(self, domain_item_location_details):
-        """Sets the domain_item_location_details of this ShowDomainItemLocationDetailsResponse.
+        r"""Sets the domain_item_location_details of this ShowDomainItemLocationDetailsResponse.
 
         :param domain_item_location_details: The domain_item_location_details of this ShowDomainItemLocationDetailsResponse.
         :type domain_item_location_details: :class:`huaweicloudsdkcdn.v1.DomainItemLocationDetails`

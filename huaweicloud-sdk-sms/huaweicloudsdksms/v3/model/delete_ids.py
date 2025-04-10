@@ -25,7 +25,7 @@ class DeleteIds:
     }
 
     def __init__(self, ids=None):
-        """DeleteIds
+        r"""DeleteIds
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteIds:
 
     @property
     def ids(self):
-        """Gets the ids of this DeleteIds.
+        r"""Gets the ids of this DeleteIds.
 
         所有删除对象ID的集合
 
@@ -53,7 +53,7 @@ class DeleteIds:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this DeleteIds.
+        r"""Sets the ids of this DeleteIds.
 
         所有删除对象ID的集合
 

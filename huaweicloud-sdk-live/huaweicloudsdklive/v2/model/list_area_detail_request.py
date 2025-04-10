@@ -43,7 +43,7 @@ class ListAreaDetailRequest:
     }
 
     def __init__(self, start_time=None, end_time=None, play_domains=None, app=None, stream=None, interval=None, isp=None, area=None, metric=None, protocol=None):
-        """ListAreaDetailRequest
+        r"""ListAreaDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -102,7 +102,7 @@ class ListAreaDetailRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListAreaDetailRequest.
+        r"""Gets the start_time of this ListAreaDetailRequest.
 
         查询起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度1天，最大查询周期90天。 
 
@@ -113,7 +113,7 @@ class ListAreaDetailRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListAreaDetailRequest.
+        r"""Sets the start_time of this ListAreaDetailRequest.
 
         查询起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度1天，最大查询周期90天。 
 
@@ -124,7 +124,7 @@ class ListAreaDetailRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListAreaDetailRequest.
+        r"""Gets the end_time of this ListAreaDetailRequest.
 
         查询结束时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度1天，最大查询周期90天。 
 
@@ -135,7 +135,7 @@ class ListAreaDetailRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListAreaDetailRequest.
+        r"""Sets the end_time of this ListAreaDetailRequest.
 
         查询结束时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度1天，最大查询周期90天。 
 
@@ -146,7 +146,7 @@ class ListAreaDetailRequest:
 
     @property
     def play_domains(self):
-        """Gets the play_domains of this ListAreaDetailRequest.
+        r"""Gets the play_domains of this ListAreaDetailRequest.
 
         需查询的播放域名列表，最多支持查询100个域名。 
 
@@ -157,7 +157,7 @@ class ListAreaDetailRequest:
 
     @play_domains.setter
     def play_domains(self, play_domains):
-        """Sets the play_domains of this ListAreaDetailRequest.
+        r"""Sets the play_domains of this ListAreaDetailRequest.
 
         需查询的播放域名列表，最多支持查询100个域名。 
 
@@ -168,7 +168,7 @@ class ListAreaDetailRequest:
 
     @property
     def app(self):
-        """Gets the app of this ListAreaDetailRequest.
+        r"""Gets the app of this ListAreaDetailRequest.
 
         需查询的app。 
 
@@ -179,7 +179,7 @@ class ListAreaDetailRequest:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this ListAreaDetailRequest.
+        r"""Sets the app of this ListAreaDetailRequest.
 
         需查询的app。 
 
@@ -190,7 +190,7 @@ class ListAreaDetailRequest:
 
     @property
     def stream(self):
-        """Gets the stream of this ListAreaDetailRequest.
+        r"""Gets the stream of this ListAreaDetailRequest.
 
         流名称。
 
@@ -201,7 +201,7 @@ class ListAreaDetailRequest:
 
     @stream.setter
     def stream(self, stream):
-        """Sets the stream of this ListAreaDetailRequest.
+        r"""Sets the stream of this ListAreaDetailRequest.
 
         流名称。
 
@@ -212,7 +212,7 @@ class ListAreaDetailRequest:
 
     @property
     def interval(self):
-        """Gets the interval of this ListAreaDetailRequest.
+        r"""Gets the interval of this ListAreaDetailRequest.
 
         查询数据的时间粒度。支持300（默认值）、3600和86400秒。若参数为空，则默认为300秒。  注意，若metric的值为player（观众数），则interval填入的值不起效果，查询粒度interval默认为60秒。 
 
@@ -223,7 +223,7 @@ class ListAreaDetailRequest:
 
     @interval.setter
     def interval(self, interval):
-        """Sets the interval of this ListAreaDetailRequest.
+        r"""Sets the interval of this ListAreaDetailRequest.
 
         查询数据的时间粒度。支持300（默认值）、3600和86400秒。若参数为空，则默认为300秒。  注意，若metric的值为player（观众数），则interval填入的值不起效果，查询粒度interval默认为60秒。 
 
@@ -234,7 +234,7 @@ class ListAreaDetailRequest:
 
     @property
     def isp(self):
-        """Gets the isp of this ListAreaDetailRequest.
+        r"""Gets the isp of this ListAreaDetailRequest.
 
         运营商列表，取值如下： - CMCC：移动 - CTCC：电信 - CUCC：联通 - OTHER：其他  若参数为空，则查询所有运营商。 
 
@@ -245,7 +245,7 @@ class ListAreaDetailRequest:
 
     @isp.setter
     def isp(self, isp):
-        """Sets the isp of this ListAreaDetailRequest.
+        r"""Sets the isp of this ListAreaDetailRequest.
 
         运营商列表，取值如下： - CMCC：移动 - CTCC：电信 - CUCC：联通 - OTHER：其他  若参数为空，则查询所有运营商。 
 
@@ -256,7 +256,7 @@ class ListAreaDetailRequest:
 
     @property
     def area(self):
-        """Gets the area of this ListAreaDetailRequest.
+        r"""Gets the area of this ListAreaDetailRequest.
 
         需查询的计费大区，取值如下： - CN：中国内地。 - AP1：亚太1区。 - AP2：亚太2区。 - AP3：亚太3区。 - MEAA：中东非洲。 - SA：南美。 - EU：欧洲。 - ALL：全部。  中国内地返回结果为省份/直辖市的中文名称，比如：广东、上海； 海外大区与地区/国家的对应关系请参考[地区/国家代码对照表](https://support.huaweicloud.com/api-live/live_03_0049.html)。 
 
@@ -267,7 +267,7 @@ class ListAreaDetailRequest:
 
     @area.setter
     def area(self, area):
-        """Sets the area of this ListAreaDetailRequest.
+        r"""Sets the area of this ListAreaDetailRequest.
 
         需查询的计费大区，取值如下： - CN：中国内地。 - AP1：亚太1区。 - AP2：亚太2区。 - AP3：亚太3区。 - MEAA：中东非洲。 - SA：南美。 - EU：欧洲。 - ALL：全部。  中国内地返回结果为省份/直辖市的中文名称，比如：广东、上海； 海外大区与地区/国家的对应关系请参考[地区/国家代码对照表](https://support.huaweicloud.com/api-live/live_03_0049.html)。 
 
@@ -278,7 +278,7 @@ class ListAreaDetailRequest:
 
     @property
     def metric(self):
-        """Gets the metric of this ListAreaDetailRequest.
+        r"""Gets the metric of this ListAreaDetailRequest.
 
         指标，取值如下： - bandwidth：带宽 - traffic：流量 - player：观众数 
 
@@ -289,7 +289,7 @@ class ListAreaDetailRequest:
 
     @metric.setter
     def metric(self, metric):
-        """Sets the metric of this ListAreaDetailRequest.
+        r"""Sets the metric of this ListAreaDetailRequest.
 
         指标，取值如下： - bandwidth：带宽 - traffic：流量 - player：观众数 
 
@@ -300,7 +300,7 @@ class ListAreaDetailRequest:
 
     @property
     def protocol(self):
-        """Gets the protocol of this ListAreaDetailRequest.
+        r"""Gets the protocol of this ListAreaDetailRequest.
 
         请求协议，取值如下： - flv - hls 
 
@@ -311,7 +311,7 @@ class ListAreaDetailRequest:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this ListAreaDetailRequest.
+        r"""Sets the protocol of this ListAreaDetailRequest.
 
         请求协议，取值如下： - flv - hls 
 

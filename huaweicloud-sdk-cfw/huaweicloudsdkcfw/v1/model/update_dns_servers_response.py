@@ -26,7 +26,7 @@ class UpdateDnsServersResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """UpdateDnsServersResponse
+        r"""UpdateDnsServersResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateDnsServersResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this UpdateDnsServersResponse.
+        r"""Gets the data of this UpdateDnsServersResponse.
 
         域名服务器列表
 
@@ -55,7 +55,7 @@ class UpdateDnsServersResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this UpdateDnsServersResponse.
+        r"""Sets the data of this UpdateDnsServersResponse.
 
         域名服务器列表
 

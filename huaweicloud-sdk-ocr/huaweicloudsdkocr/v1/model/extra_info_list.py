@@ -29,7 +29,7 @@ class ExtraInfoList:
     }
 
     def __init__(self, item=None, value=None, note=None):
-        """ExtraInfoList
+        r"""ExtraInfoList
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ExtraInfoList:
 
     @property
     def item(self):
-        """Gets the item of this ExtraInfoList.
+        r"""Gets the item of this ExtraInfoList.
 
         表示key值，可能是qq, wechat, alipay及bank等。 
 
@@ -68,7 +68,7 @@ class ExtraInfoList:
 
     @item.setter
     def item(self, item):
-        """Sets the item of this ExtraInfoList.
+        r"""Sets the item of this ExtraInfoList.
 
         表示key值，可能是qq, wechat, alipay及bank等。 
 
@@ -79,7 +79,7 @@ class ExtraInfoList:
 
     @property
     def value(self):
-        """Gets the value of this ExtraInfoList.
+        r"""Gets the value of this ExtraInfoList.
 
         表示value值，对应qq, wechat, alipay及bank等的账号。 
 
@@ -90,7 +90,7 @@ class ExtraInfoList:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ExtraInfoList.
+        r"""Sets the value of this ExtraInfoList.
 
         表示value值，对应qq, wechat, alipay及bank等的账号。 
 
@@ -101,7 +101,7 @@ class ExtraInfoList:
 
     @property
     def note(self):
-        """Gets the note of this ExtraInfoList.
+        r"""Gets the note of this ExtraInfoList.
 
         对应item关联的额外信息，为bank时第一个默认为户名，第二个为开户行，为alipay时第一个默认为账号名。 
 
@@ -112,7 +112,7 @@ class ExtraInfoList:
 
     @note.setter
     def note(self, note):
-        """Sets the note of this ExtraInfoList.
+        r"""Sets the note of this ExtraInfoList.
 
         对应item关联的额外信息，为bank时第一个默认为户名，第二个为开户行，为alipay时第一个默认为账号名。 
 

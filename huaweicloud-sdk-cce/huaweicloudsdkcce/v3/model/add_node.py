@@ -27,7 +27,7 @@ class AddNode:
     }
 
     def __init__(self, server_id=None, spec=None):
-        """AddNode
+        r"""AddNode
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AddNode:
 
     @property
     def server_id(self):
-        """Gets the server_id of this AddNode.
+        r"""Gets the server_id of this AddNode.
 
         服务器ID，获取方式请参见ECS/BMS相关资料。
 
@@ -59,7 +59,7 @@ class AddNode:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this AddNode.
+        r"""Sets the server_id of this AddNode.
 
         服务器ID，获取方式请参见ECS/BMS相关资料。
 
@@ -70,7 +70,7 @@ class AddNode:
 
     @property
     def spec(self):
-        """Gets the spec of this AddNode.
+        r"""Gets the spec of this AddNode.
 
         :return: The spec of this AddNode.
         :rtype: :class:`huaweicloudsdkcce.v3.ReinstallNodeSpec`
@@ -79,7 +79,7 @@ class AddNode:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this AddNode.
+        r"""Sets the spec of this AddNode.
 
         :param spec: The spec of this AddNode.
         :type spec: :class:`huaweicloudsdkcce.v3.ReinstallNodeSpec`

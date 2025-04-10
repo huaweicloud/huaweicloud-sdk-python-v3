@@ -27,7 +27,7 @@ class ProjectTag:
     }
 
     def __init__(self, key=None, values=None):
-        """ProjectTag
+        r"""ProjectTag
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ProjectTag:
 
     @property
     def key(self):
-        """Gets the key of this ProjectTag.
+        r"""Gets the key of this ProjectTag.
 
         键。
 
@@ -59,7 +59,7 @@ class ProjectTag:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ProjectTag.
+        r"""Sets the key of this ProjectTag.
 
         键。
 
@@ -70,7 +70,7 @@ class ProjectTag:
 
     @property
     def values(self):
-        """Gets the values of this ProjectTag.
+        r"""Gets the values of this ProjectTag.
 
         值。
 
@@ -81,7 +81,7 @@ class ProjectTag:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this ProjectTag.
+        r"""Sets the values of this ProjectTag.
 
         值。
 

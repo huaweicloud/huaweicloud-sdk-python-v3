@@ -27,7 +27,7 @@ class CreateJobRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """CreateJobRequest
+        r"""CreateJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateJobRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CreateJobRequest.
+        r"""Gets the cluster_id of this CreateJobRequest.
 
         集群ID
 
@@ -60,7 +60,7 @@ class CreateJobRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CreateJobRequest.
+        r"""Sets the cluster_id of this CreateJobRequest.
 
         集群ID
 
@@ -71,7 +71,7 @@ class CreateJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateJobRequest.
+        r"""Gets the body of this CreateJobRequest.
 
         :return: The body of this CreateJobRequest.
         :rtype: :class:`huaweicloudsdkcdm.v1.CdmCreateJobJsonReq`
@@ -80,7 +80,7 @@ class CreateJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateJobRequest.
+        r"""Sets the body of this CreateJobRequest.
 
         :param body: The body of this CreateJobRequest.
         :type body: :class:`huaweicloudsdkcdm.v1.CdmCreateJobJsonReq`

@@ -41,7 +41,7 @@ class ShowHistoryTrafficEventsRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, from_date=None, to_date=None, event_id=None, event_class=None, event_type=None, event_source=None):
-        """ShowHistoryTrafficEventsRequest
+        r"""ShowHistoryTrafficEventsRequest
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ShowHistoryTrafficEventsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowHistoryTrafficEventsRequest.
+        r"""Gets the instance_id of this ShowHistoryTrafficEventsRequest.
 
         \"**参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和横杠（-）的组合，长度36。\"
 
@@ -110,7 +110,7 @@ class ShowHistoryTrafficEventsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowHistoryTrafficEventsRequest.
+        r"""Sets the instance_id of this ShowHistoryTrafficEventsRequest.
 
         \"**参数说明**：实例ID。dris物理实例的唯一标识。获取方法参见[获取Instance-Id](https://support.huaweicloud.com/api-v2x/v2x_04_0030.html)。  **取值范围**：仅支持数字，小写字母和横杠（-）的组合，长度36。\"
 
@@ -121,7 +121,7 @@ class ShowHistoryTrafficEventsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowHistoryTrafficEventsRequest.
+        r"""Gets the offset of this ShowHistoryTrafficEventsRequest.
 
         **参数说明**：分页查询时的页码。
 
@@ -132,7 +132,7 @@ class ShowHistoryTrafficEventsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowHistoryTrafficEventsRequest.
+        r"""Sets the offset of this ShowHistoryTrafficEventsRequest.
 
         **参数说明**：分页查询时的页码。
 
@@ -143,7 +143,7 @@ class ShowHistoryTrafficEventsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowHistoryTrafficEventsRequest.
+        r"""Gets the limit of this ShowHistoryTrafficEventsRequest.
 
         **参数说明**：分页查询时每页显示的记录数。
 
@@ -154,7 +154,7 @@ class ShowHistoryTrafficEventsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowHistoryTrafficEventsRequest.
+        r"""Sets the limit of this ShowHistoryTrafficEventsRequest.
 
         **参数说明**：分页查询时每页显示的记录数。
 
@@ -165,7 +165,7 @@ class ShowHistoryTrafficEventsRequest:
 
     @property
     def from_date(self):
-        """Gets the from_date of this ShowHistoryTrafficEventsRequest.
+        r"""Gets the from_date of this ShowHistoryTrafficEventsRequest.
 
         **参数说明**：查询此时间后达到平台的消息，十位Unix时间戳，秒级，例如：1575446506。
 
@@ -176,7 +176,7 @@ class ShowHistoryTrafficEventsRequest:
 
     @from_date.setter
     def from_date(self, from_date):
-        """Sets the from_date of this ShowHistoryTrafficEventsRequest.
+        r"""Sets the from_date of this ShowHistoryTrafficEventsRequest.
 
         **参数说明**：查询此时间后达到平台的消息，十位Unix时间戳，秒级，例如：1575446506。
 
@@ -187,7 +187,7 @@ class ShowHistoryTrafficEventsRequest:
 
     @property
     def to_date(self):
-        """Gets the to_date of this ShowHistoryTrafficEventsRequest.
+        r"""Gets the to_date of this ShowHistoryTrafficEventsRequest.
 
         **参数说明**：查询此时间前达到平台的消息，十位Unix时间戳，秒级，例如：1576396905。
 
@@ -198,7 +198,7 @@ class ShowHistoryTrafficEventsRequest:
 
     @to_date.setter
     def to_date(self, to_date):
-        """Sets the to_date of this ShowHistoryTrafficEventsRequest.
+        r"""Sets the to_date of this ShowHistoryTrafficEventsRequest.
 
         **参数说明**：查询此时间前达到平台的消息，十位Unix时间戳，秒级，例如：1576396905。
 
@@ -209,7 +209,7 @@ class ShowHistoryTrafficEventsRequest:
 
     @property
     def event_id(self):
-        """Gets the event_id of this ShowHistoryTrafficEventsRequest.
+        r"""Gets the event_id of this ShowHistoryTrafficEventsRequest.
 
         **参数说明**：事件id
 
@@ -220,7 +220,7 @@ class ShowHistoryTrafficEventsRequest:
 
     @event_id.setter
     def event_id(self, event_id):
-        """Sets the event_id of this ShowHistoryTrafficEventsRequest.
+        r"""Sets the event_id of this ShowHistoryTrafficEventsRequest.
 
         **参数说明**：事件id
 
@@ -231,7 +231,7 @@ class ShowHistoryTrafficEventsRequest:
 
     @property
     def event_class(self):
-        """Gets the event_class of this ShowHistoryTrafficEventsRequest.
+        r"""Gets the event_class of this ShowHistoryTrafficEventsRequest.
 
         **参数说明**：事件的分类，event_type存在时，event_class必选。  **取值范围**：  - AbnormalTraffic：异常路况  - AbnormalVehicle：异常车况  - AdverseWeather：恶劣天气  - TrafficSign：标志标牌 
 
@@ -242,7 +242,7 @@ class ShowHistoryTrafficEventsRequest:
 
     @event_class.setter
     def event_class(self, event_class):
-        """Sets the event_class of this ShowHistoryTrafficEventsRequest.
+        r"""Sets the event_class of this ShowHistoryTrafficEventsRequest.
 
         **参数说明**：事件的分类，event_type存在时，event_class必选。  **取值范围**：  - AbnormalTraffic：异常路况  - AbnormalVehicle：异常车况  - AdverseWeather：恶劣天气  - TrafficSign：标志标牌 
 
@@ -253,7 +253,7 @@ class ShowHistoryTrafficEventsRequest:
 
     @property
     def event_type(self):
-        """Gets the event_type of this ShowHistoryTrafficEventsRequest.
+        r"""Gets the event_type of this ShowHistoryTrafficEventsRequest.
 
         **参数说明**：事件类型，参照附录[《国标交通事件及标志列表》](https://support.huaweicloud.com/api-v2x/v2x_04_0101.html)文件。
 
@@ -264,7 +264,7 @@ class ShowHistoryTrafficEventsRequest:
 
     @event_type.setter
     def event_type(self, event_type):
-        """Sets the event_type of this ShowHistoryTrafficEventsRequest.
+        r"""Sets the event_type of this ShowHistoryTrafficEventsRequest.
 
         **参数说明**：事件类型，参照附录[《国标交通事件及标志列表》](https://support.huaweicloud.com/api-v2x/v2x_04_0101.html)文件。
 
@@ -275,7 +275,7 @@ class ShowHistoryTrafficEventsRequest:
 
     @property
     def event_source(self):
-        """Gets the event_source of this ShowHistoryTrafficEventsRequest.
+        r"""Gets the event_source of this ShowHistoryTrafficEventsRequest.
 
         **参数说明**：事件来源，默认值v2xServer。  **取值范围**：  - v2xServer：来源为通过Console下发的事件  - detection：来源为边缘edge上报的RSI  - rsu：来源为通过MQTT接入的RSU上报的RSI 
 
@@ -286,7 +286,7 @@ class ShowHistoryTrafficEventsRequest:
 
     @event_source.setter
     def event_source(self, event_source):
-        """Sets the event_source of this ShowHistoryTrafficEventsRequest.
+        r"""Sets the event_source of this ShowHistoryTrafficEventsRequest.
 
         **参数说明**：事件来源，默认值v2xServer。  **取值范围**：  - v2xServer：来源为通过Console下发的事件  - detection：来源为边缘edge上报的RSI  - rsu：来源为通过MQTT接入的RSU上报的RSI 
 

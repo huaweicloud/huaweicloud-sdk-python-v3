@@ -27,7 +27,7 @@ class DeleteLogtankRequest:
     }
 
     def __init__(self, topic_urn=None, logtank_id=None):
-        """DeleteLogtankRequest
+        r"""DeleteLogtankRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteLogtankRequest:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this DeleteLogtankRequest.
+        r"""Gets the topic_urn of this DeleteLogtankRequest.
 
         Topic的唯一的资源标识，可通过[查询主题列表](smn_api_51004.xml)获取该标识。
 
@@ -59,7 +59,7 @@ class DeleteLogtankRequest:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this DeleteLogtankRequest.
+        r"""Sets the topic_urn of this DeleteLogtankRequest.
 
         Topic的唯一的资源标识，可通过[查询主题列表](smn_api_51004.xml)获取该标识。
 
@@ -70,7 +70,7 @@ class DeleteLogtankRequest:
 
     @property
     def logtank_id(self):
-        """Gets the logtank_id of this DeleteLogtankRequest.
+        r"""Gets the logtank_id of this DeleteLogtankRequest.
 
         云日志信息唯一的资源标识。可通过[查询云日志](ListLogtank.xml)获取该标识。
 
@@ -81,7 +81,7 @@ class DeleteLogtankRequest:
 
     @logtank_id.setter
     def logtank_id(self, logtank_id):
-        """Sets the logtank_id of this DeleteLogtankRequest.
+        r"""Sets the logtank_id of this DeleteLogtankRequest.
 
         云日志信息唯一的资源标识。可通过[查询云日志](ListLogtank.xml)获取该标识。
 

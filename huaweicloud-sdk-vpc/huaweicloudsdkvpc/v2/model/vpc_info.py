@@ -27,7 +27,7 @@ class VpcInfo:
     }
 
     def __init__(self, vpc_id=None, tenant_id=None):
-        """VpcInfo
+        r"""VpcInfo
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class VpcInfo:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this VpcInfo.
+        r"""Gets the vpc_id of this VpcInfo.
 
         对等连接其中一端vpc ID
 
@@ -60,7 +60,7 @@ class VpcInfo:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this VpcInfo.
+        r"""Sets the vpc_id of this VpcInfo.
 
         对等连接其中一端vpc ID
 
@@ -71,7 +71,7 @@ class VpcInfo:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this VpcInfo.
+        r"""Gets the tenant_id of this VpcInfo.
 
         对等连接其中一端vpc所属的租户ID 约束：跨租户VPC创建对等连接时必选
 
@@ -82,7 +82,7 @@ class VpcInfo:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this VpcInfo.
+        r"""Sets the tenant_id of this VpcInfo.
 
         对等连接其中一端vpc所属的租户ID 约束：跨租户VPC创建对等连接时必选
 

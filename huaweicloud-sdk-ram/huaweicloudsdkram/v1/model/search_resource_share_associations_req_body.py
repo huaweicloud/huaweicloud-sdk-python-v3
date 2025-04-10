@@ -39,7 +39,7 @@ class SearchResourceShareAssociationsReqBody:
     }
 
     def __init__(self, association_status=None, association_type=None, limit=None, marker=None, principal=None, resource_urn=None, resource_share_ids=None, resource_ids=None):
-        """SearchResourceShareAssociationsReqBody
+        r"""SearchResourceShareAssociationsReqBody
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class SearchResourceShareAssociationsReqBody:
 
     @property
     def association_status(self):
-        """Gets the association_status of this SearchResourceShareAssociationsReqBody.
+        r"""Gets the association_status of this SearchResourceShareAssociationsReqBody.
 
         指定绑定的状态。
 
@@ -102,7 +102,7 @@ class SearchResourceShareAssociationsReqBody:
 
     @association_status.setter
     def association_status(self, association_status):
-        """Sets the association_status of this SearchResourceShareAssociationsReqBody.
+        r"""Sets the association_status of this SearchResourceShareAssociationsReqBody.
 
         指定绑定的状态。
 
@@ -113,7 +113,7 @@ class SearchResourceShareAssociationsReqBody:
 
     @property
     def association_type(self):
-        """Gets the association_type of this SearchResourceShareAssociationsReqBody.
+        r"""Gets the association_type of this SearchResourceShareAssociationsReqBody.
 
         指定绑定的类型（principal或resource）。
 
@@ -124,7 +124,7 @@ class SearchResourceShareAssociationsReqBody:
 
     @association_type.setter
     def association_type(self, association_type):
-        """Sets the association_type of this SearchResourceShareAssociationsReqBody.
+        r"""Sets the association_type of this SearchResourceShareAssociationsReqBody.
 
         指定绑定的类型（principal或resource）。
 
@@ -135,7 +135,7 @@ class SearchResourceShareAssociationsReqBody:
 
     @property
     def limit(self):
-        """Gets the limit of this SearchResourceShareAssociationsReqBody.
+        r"""Gets the limit of this SearchResourceShareAssociationsReqBody.
 
         分页页面的最大值。
 
@@ -146,7 +146,7 @@ class SearchResourceShareAssociationsReqBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchResourceShareAssociationsReqBody.
+        r"""Sets the limit of this SearchResourceShareAssociationsReqBody.
 
         分页页面的最大值。
 
@@ -157,7 +157,7 @@ class SearchResourceShareAssociationsReqBody:
 
     @property
     def marker(self):
-        """Gets the marker of this SearchResourceShareAssociationsReqBody.
+        r"""Gets the marker of this SearchResourceShareAssociationsReqBody.
 
         页面标记。
 
@@ -168,7 +168,7 @@ class SearchResourceShareAssociationsReqBody:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this SearchResourceShareAssociationsReqBody.
+        r"""Sets the marker of this SearchResourceShareAssociationsReqBody.
 
         页面标记。
 
@@ -179,7 +179,7 @@ class SearchResourceShareAssociationsReqBody:
 
     @property
     def principal(self):
-        """Gets the principal of this SearchResourceShareAssociationsReqBody.
+        r"""Gets the principal of this SearchResourceShareAssociationsReqBody.
 
         指定绑定的资源使用者。
 
@@ -190,7 +190,7 @@ class SearchResourceShareAssociationsReqBody:
 
     @principal.setter
     def principal(self, principal):
-        """Sets the principal of this SearchResourceShareAssociationsReqBody.
+        r"""Sets the principal of this SearchResourceShareAssociationsReqBody.
 
         指定绑定的资源使用者。
 
@@ -201,7 +201,7 @@ class SearchResourceShareAssociationsReqBody:
 
     @property
     def resource_urn(self):
-        """Gets the resource_urn of this SearchResourceShareAssociationsReqBody.
+        r"""Gets the resource_urn of this SearchResourceShareAssociationsReqBody.
 
         指定绑定的共享资源URN。
 
@@ -212,7 +212,7 @@ class SearchResourceShareAssociationsReqBody:
 
     @resource_urn.setter
     def resource_urn(self, resource_urn):
-        """Sets the resource_urn of this SearchResourceShareAssociationsReqBody.
+        r"""Sets the resource_urn of this SearchResourceShareAssociationsReqBody.
 
         指定绑定的共享资源URN。
 
@@ -223,7 +223,7 @@ class SearchResourceShareAssociationsReqBody:
 
     @property
     def resource_share_ids(self):
-        """Gets the resource_share_ids of this SearchResourceShareAssociationsReqBody.
+        r"""Gets the resource_share_ids of this SearchResourceShareAssociationsReqBody.
 
         指定资源共享实例的ID列表。
 
@@ -234,7 +234,7 @@ class SearchResourceShareAssociationsReqBody:
 
     @resource_share_ids.setter
     def resource_share_ids(self, resource_share_ids):
-        """Sets the resource_share_ids of this SearchResourceShareAssociationsReqBody.
+        r"""Sets the resource_share_ids of this SearchResourceShareAssociationsReqBody.
 
         指定资源共享实例的ID列表。
 
@@ -245,7 +245,7 @@ class SearchResourceShareAssociationsReqBody:
 
     @property
     def resource_ids(self):
-        """Gets the resource_ids of this SearchResourceShareAssociationsReqBody.
+        r"""Gets the resource_ids of this SearchResourceShareAssociationsReqBody.
 
         指定共享资源ID列表。
 
@@ -256,7 +256,7 @@ class SearchResourceShareAssociationsReqBody:
 
     @resource_ids.setter
     def resource_ids(self, resource_ids):
-        """Sets the resource_ids of this SearchResourceShareAssociationsReqBody.
+        r"""Sets the resource_ids of this SearchResourceShareAssociationsReqBody.
 
         指定共享资源ID列表。
 

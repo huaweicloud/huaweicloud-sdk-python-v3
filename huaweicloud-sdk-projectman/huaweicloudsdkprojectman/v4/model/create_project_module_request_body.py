@@ -31,7 +31,7 @@ class CreateProjectModuleRequestBody:
     }
 
     def __init__(self, description=None, module_name=None, parent_module_id=None, owner=None):
-        """CreateProjectModuleRequestBody
+        r"""CreateProjectModuleRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class CreateProjectModuleRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateProjectModuleRequestBody.
+        r"""Gets the description of this CreateProjectModuleRequestBody.
 
         模块描述
 
@@ -73,7 +73,7 @@ class CreateProjectModuleRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateProjectModuleRequestBody.
+        r"""Sets the description of this CreateProjectModuleRequestBody.
 
         模块描述
 
@@ -84,7 +84,7 @@ class CreateProjectModuleRequestBody:
 
     @property
     def module_name(self):
-        """Gets the module_name of this CreateProjectModuleRequestBody.
+        r"""Gets the module_name of this CreateProjectModuleRequestBody.
 
         模块名称
 
@@ -95,7 +95,7 @@ class CreateProjectModuleRequestBody:
 
     @module_name.setter
     def module_name(self, module_name):
-        """Sets the module_name of this CreateProjectModuleRequestBody.
+        r"""Sets the module_name of this CreateProjectModuleRequestBody.
 
         模块名称
 
@@ -106,7 +106,7 @@ class CreateProjectModuleRequestBody:
 
     @property
     def parent_module_id(self):
-        """Gets the parent_module_id of this CreateProjectModuleRequestBody.
+        r"""Gets the parent_module_id of this CreateProjectModuleRequestBody.
 
         父模块id
 
@@ -117,7 +117,7 @@ class CreateProjectModuleRequestBody:
 
     @parent_module_id.setter
     def parent_module_id(self, parent_module_id):
-        """Sets the parent_module_id of this CreateProjectModuleRequestBody.
+        r"""Sets the parent_module_id of this CreateProjectModuleRequestBody.
 
         父模块id
 
@@ -128,7 +128,7 @@ class CreateProjectModuleRequestBody:
 
     @property
     def owner(self):
-        """Gets the owner of this CreateProjectModuleRequestBody.
+        r"""Gets the owner of this CreateProjectModuleRequestBody.
 
         :return: The owner of this CreateProjectModuleRequestBody.
         :rtype: :class:`huaweicloudsdkprojectman.v4.UserRequest`
@@ -137,7 +137,7 @@ class CreateProjectModuleRequestBody:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this CreateProjectModuleRequestBody.
+        r"""Sets the owner of this CreateProjectModuleRequestBody.
 
         :param owner: The owner of this CreateProjectModuleRequestBody.
         :type owner: :class:`huaweicloudsdkprojectman.v4.UserRequest`

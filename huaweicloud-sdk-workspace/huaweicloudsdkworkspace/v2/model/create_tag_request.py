@@ -27,7 +27,7 @@ class CreateTagRequest:
     }
 
     def __init__(self, desktop_id=None, body=None):
-        """CreateTagRequest
+        r"""CreateTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateTagRequest:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this CreateTagRequest.
+        r"""Gets the desktop_id of this CreateTagRequest.
 
         桌面id。
 
@@ -60,7 +60,7 @@ class CreateTagRequest:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this CreateTagRequest.
+        r"""Sets the desktop_id of this CreateTagRequest.
 
         桌面id。
 
@@ -71,7 +71,7 @@ class CreateTagRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateTagRequest.
+        r"""Gets the body of this CreateTagRequest.
 
         :return: The body of this CreateTagRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.CreateTagReq`
@@ -80,7 +80,7 @@ class CreateTagRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTagRequest.
+        r"""Sets the body of this CreateTagRequest.
 
         :param body: The body of this CreateTagRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.CreateTagReq`

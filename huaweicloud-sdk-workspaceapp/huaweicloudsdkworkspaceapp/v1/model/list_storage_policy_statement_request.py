@@ -27,7 +27,7 @@ class ListStoragePolicyStatementRequest:
     }
 
     def __init__(self, offset=None, limit=None):
-        """ListStoragePolicyStatementRequest
+        r"""ListStoragePolicyStatementRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListStoragePolicyStatementRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListStoragePolicyStatementRequest.
+        r"""Gets the offset of this ListStoragePolicyStatementRequest.
 
         查询的偏移量。
 
@@ -61,7 +61,7 @@ class ListStoragePolicyStatementRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListStoragePolicyStatementRequest.
+        r"""Sets the offset of this ListStoragePolicyStatementRequest.
 
         查询的偏移量。
 
@@ -72,7 +72,7 @@ class ListStoragePolicyStatementRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListStoragePolicyStatementRequest.
+        r"""Gets the limit of this ListStoragePolicyStatementRequest.
 
         单次查询的大小[1-100]。
 
@@ -83,7 +83,7 @@ class ListStoragePolicyStatementRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListStoragePolicyStatementRequest.
+        r"""Sets the limit of this ListStoragePolicyStatementRequest.
 
         单次查询的大小[1-100]。
 

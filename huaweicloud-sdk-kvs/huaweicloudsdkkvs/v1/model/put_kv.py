@@ -27,7 +27,7 @@ class PutKv:
     }
 
     def __init__(self, oper_id=None, kv_doc=None):
-        """PutKv
+        r"""PutKv
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class PutKv:
 
     @property
     def oper_id(self):
-        """Gets the oper_id of this PutKv.
+        r"""Gets the oper_id of this PutKv.
 
         请求内的操作编码，未成功的操作返回该标识。
 
@@ -60,7 +60,7 @@ class PutKv:
 
     @oper_id.setter
     def oper_id(self, oper_id):
-        """Sets the oper_id of this PutKv.
+        r"""Sets the oper_id of this PutKv.
 
         请求内的操作编码，未成功的操作返回该标识。
 
@@ -71,7 +71,7 @@ class PutKv:
 
     @property
     def kv_doc(self):
-        """Gets the kv_doc of this PutKv.
+        r"""Gets the kv_doc of this PutKv.
 
         用户文档。
 
@@ -82,7 +82,7 @@ class PutKv:
 
     @kv_doc.setter
     def kv_doc(self, kv_doc):
-        """Sets the kv_doc of this PutKv.
+        r"""Sets the kv_doc of this PutKv.
 
         用户文档。
 

@@ -27,7 +27,7 @@ class Attributes:
     }
 
     def __init__(self, created_at=None, mfa_authenticated=None):
-        """Attributes
+        r"""Attributes
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Attributes:
 
     @property
     def created_at(self):
-        """Gets the created_at of this Attributes.
+        r"""Gets the created_at of this Attributes.
 
         颁发临时安全凭证时的时间（timestamp，为标准UTC时间，毫秒级，13位数字）。
 
@@ -61,7 +61,7 @@ class Attributes:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Attributes.
+        r"""Sets the created_at of this Attributes.
 
         颁发临时安全凭证时的时间（timestamp，为标准UTC时间，毫秒级，13位数字）。
 
@@ -72,7 +72,7 @@ class Attributes:
 
     @property
     def mfa_authenticated(self):
-        """Gets the mfa_authenticated of this Attributes.
+        r"""Gets the mfa_authenticated of this Attributes.
 
         是否已经通过MFA身份认证。
 
@@ -83,7 +83,7 @@ class Attributes:
 
     @mfa_authenticated.setter
     def mfa_authenticated(self, mfa_authenticated):
-        """Sets the mfa_authenticated of this Attributes.
+        r"""Sets the mfa_authenticated of this Attributes.
 
         是否已经通过MFA身份认证。
 

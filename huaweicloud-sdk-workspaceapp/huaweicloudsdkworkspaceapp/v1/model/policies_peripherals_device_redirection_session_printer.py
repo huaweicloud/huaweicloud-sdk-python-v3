@@ -27,7 +27,7 @@ class PoliciesPeripheralsDeviceRedirectionSessionPrinter:
     }
 
     def __init__(self, session_printer_enable=None, options=None):
-        """PoliciesPeripheralsDeviceRedirectionSessionPrinter
+        r"""PoliciesPeripheralsDeviceRedirectionSessionPrinter
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PoliciesPeripheralsDeviceRedirectionSessionPrinter:
 
     @property
     def session_printer_enable(self):
-        """Gets the session_printer_enable of this PoliciesPeripheralsDeviceRedirectionSessionPrinter.
+        r"""Gets the session_printer_enable of this PoliciesPeripheralsDeviceRedirectionSessionPrinter.
 
         是否开启会话打印机。取值为： false：表示关闭。 true：表示开启。
 
@@ -61,7 +61,7 @@ class PoliciesPeripheralsDeviceRedirectionSessionPrinter:
 
     @session_printer_enable.setter
     def session_printer_enable(self, session_printer_enable):
-        """Sets the session_printer_enable of this PoliciesPeripheralsDeviceRedirectionSessionPrinter.
+        r"""Sets the session_printer_enable of this PoliciesPeripheralsDeviceRedirectionSessionPrinter.
 
         是否开启会话打印机。取值为： false：表示关闭。 true：表示开启。
 
@@ -72,7 +72,7 @@ class PoliciesPeripheralsDeviceRedirectionSessionPrinter:
 
     @property
     def options(self):
-        """Gets the options of this PoliciesPeripheralsDeviceRedirectionSessionPrinter.
+        r"""Gets the options of this PoliciesPeripheralsDeviceRedirectionSessionPrinter.
 
         :return: The options of this PoliciesPeripheralsDeviceRedirectionSessionPrinter.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.SessionPrinterOptions`
@@ -81,7 +81,7 @@ class PoliciesPeripheralsDeviceRedirectionSessionPrinter:
 
     @options.setter
     def options(self, options):
-        """Sets the options of this PoliciesPeripheralsDeviceRedirectionSessionPrinter.
+        r"""Sets the options of this PoliciesPeripheralsDeviceRedirectionSessionPrinter.
 
         :param options: The options of this PoliciesPeripheralsDeviceRedirectionSessionPrinter.
         :type options: :class:`huaweicloudsdkworkspaceapp.v1.SessionPrinterOptions`

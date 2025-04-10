@@ -35,7 +35,7 @@ class LogoffUserSessionReq:
     }
 
     def __init__(self, session_ids=None, message_type=None, message=None, title=None, delay_time=None, transaction_id=None):
-        """LogoffUserSessionReq
+        r"""LogoffUserSessionReq
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class LogoffUserSessionReq:
 
     @property
     def session_ids(self):
-        """Gets the session_ids of this LogoffUserSessionReq.
+        r"""Gets the session_ids of this LogoffUserSessionReq.
 
         会话信息id列表。
 
@@ -87,7 +87,7 @@ class LogoffUserSessionReq:
 
     @session_ids.setter
     def session_ids(self, session_ids):
-        """Sets the session_ids of this LogoffUserSessionReq.
+        r"""Sets the session_ids of this LogoffUserSessionReq.
 
         会话信息id列表。
 
@@ -98,7 +98,7 @@ class LogoffUserSessionReq:
 
     @property
     def message_type(self):
-        """Gets the message_type of this LogoffUserSessionReq.
+        r"""Gets the message_type of this LogoffUserSessionReq.
 
         客户端弹框级别，代表给会话发消息时的严重程度（比如info、warning、error级别） 0->info; 1-> warn; 2->serious。
 
@@ -109,7 +109,7 @@ class LogoffUserSessionReq:
 
     @message_type.setter
     def message_type(self, message_type):
-        """Sets the message_type of this LogoffUserSessionReq.
+        r"""Sets the message_type of this LogoffUserSessionReq.
 
         客户端弹框级别，代表给会话发消息时的严重程度（比如info、warning、error级别） 0->info; 1-> warn; 2->serious。
 
@@ -120,7 +120,7 @@ class LogoffUserSessionReq:
 
     @property
     def message(self):
-        """Gets the message of this LogoffUserSessionReq.
+        r"""Gets the message of this LogoffUserSessionReq.
 
         客户端弹框内容。
 
@@ -131,7 +131,7 @@ class LogoffUserSessionReq:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this LogoffUserSessionReq.
+        r"""Sets the message of this LogoffUserSessionReq.
 
         客户端弹框内容。
 
@@ -142,7 +142,7 @@ class LogoffUserSessionReq:
 
     @property
     def title(self):
-        """Gets the title of this LogoffUserSessionReq.
+        r"""Gets the title of this LogoffUserSessionReq.
 
         弹框标题。
 
@@ -153,7 +153,7 @@ class LogoffUserSessionReq:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this LogoffUserSessionReq.
+        r"""Sets the title of this LogoffUserSessionReq.
 
         弹框标题。
 
@@ -164,7 +164,7 @@ class LogoffUserSessionReq:
 
     @property
     def delay_time(self):
-        """Gets the delay_time of this LogoffUserSessionReq.
+        r"""Gets the delay_time of this LogoffUserSessionReq.
 
         延迟多长时间注销会话。
 
@@ -175,7 +175,7 @@ class LogoffUserSessionReq:
 
     @delay_time.setter
     def delay_time(self, delay_time):
-        """Sets the delay_time of this LogoffUserSessionReq.
+        r"""Sets the delay_time of this LogoffUserSessionReq.
 
         延迟多长时间注销会话。
 
@@ -186,7 +186,7 @@ class LogoffUserSessionReq:
 
     @property
     def transaction_id(self):
-        """Gets the transaction_id of this LogoffUserSessionReq.
+        r"""Gets the transaction_id of this LogoffUserSessionReq.
 
         事务id，用作客户端日志定位跟踪。
 
@@ -197,7 +197,7 @@ class LogoffUserSessionReq:
 
     @transaction_id.setter
     def transaction_id(self, transaction_id):
-        """Sets the transaction_id of this LogoffUserSessionReq.
+        r"""Sets the transaction_id of this LogoffUserSessionReq.
 
         事务id，用作客户端日志定位跟踪。
 

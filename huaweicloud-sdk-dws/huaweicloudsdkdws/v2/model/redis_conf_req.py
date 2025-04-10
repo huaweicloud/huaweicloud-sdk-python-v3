@@ -27,7 +27,7 @@ class RedisConfReq:
     }
 
     def __init__(self, redis_mode=None, parallel_jobs=None):
-        """RedisConfReq
+        r"""RedisConfReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class RedisConfReq:
 
     @property
     def redis_mode(self):
-        """Gets the redis_mode of this RedisConfReq.
+        r"""Gets the redis_mode of this RedisConfReq.
 
         重分布模式。offLine和onLine，默认offLine。
 
@@ -59,7 +59,7 @@ class RedisConfReq:
 
     @redis_mode.setter
     def redis_mode(self, redis_mode):
-        """Sets the redis_mode of this RedisConfReq.
+        r"""Sets the redis_mode of this RedisConfReq.
 
         重分布模式。offLine和onLine，默认offLine。
 
@@ -70,7 +70,7 @@ class RedisConfReq:
 
     @property
     def parallel_jobs(self):
-        """Gets the parallel_jobs of this RedisConfReq.
+        r"""Gets the parallel_jobs of this RedisConfReq.
 
         并行作业数量。可配置并发数在1-200之间，默认值：4。
 
@@ -81,7 +81,7 @@ class RedisConfReq:
 
     @parallel_jobs.setter
     def parallel_jobs(self, parallel_jobs):
-        """Sets the parallel_jobs of this RedisConfReq.
+        r"""Sets the parallel_jobs of this RedisConfReq.
 
         并行作业数量。可配置并发数在1-200之间，默认值：4。
 

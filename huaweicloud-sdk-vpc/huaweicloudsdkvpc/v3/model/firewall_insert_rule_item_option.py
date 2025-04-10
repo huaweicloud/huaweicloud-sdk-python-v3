@@ -47,7 +47,7 @@ class FirewallInsertRuleItemOption:
     }
 
     def __init__(self, name=None, description=None, action=None, protocol=None, ip_version=None, source_ip_address=None, destination_ip_address=None, source_port=None, destination_port=None, source_address_group_id=None, destination_address_group_id=None, enabled=None):
-        """FirewallInsertRuleItemOption
+        r"""FirewallInsertRuleItemOption
 
         The model defined in huaweicloud sdk
 
@@ -117,7 +117,7 @@ class FirewallInsertRuleItemOption:
 
     @property
     def name(self):
-        """Gets the name of this FirewallInsertRuleItemOption.
+        r"""Gets the name of this FirewallInsertRuleItemOption.
 
         功能说明：ACL规则名称 取值范围：0-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -128,7 +128,7 @@ class FirewallInsertRuleItemOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this FirewallInsertRuleItemOption.
+        r"""Sets the name of this FirewallInsertRuleItemOption.
 
         功能说明：ACL规则名称 取值范围：0-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -139,7 +139,7 @@ class FirewallInsertRuleItemOption:
 
     @property
     def description(self):
-        """Gets the description of this FirewallInsertRuleItemOption.
+        r"""Gets the description of this FirewallInsertRuleItemOption.
 
         功能说明：ACL规则描述信息 取值范围：0-255个字符 约束：不能包含“<”和“>”。
 
@@ -150,7 +150,7 @@ class FirewallInsertRuleItemOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this FirewallInsertRuleItemOption.
+        r"""Sets the description of this FirewallInsertRuleItemOption.
 
         功能说明：ACL规则描述信息 取值范围：0-255个字符 约束：不能包含“<”和“>”。
 
@@ -161,7 +161,7 @@ class FirewallInsertRuleItemOption:
 
     @property
     def action(self):
-        """Gets the action of this FirewallInsertRuleItemOption.
+        r"""Gets the action of this FirewallInsertRuleItemOption.
 
         功能说明：ACL规则对流量执行的操作放通或拒绝 取值范围：allow放通；deny拒绝
 
@@ -172,7 +172,7 @@ class FirewallInsertRuleItemOption:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this FirewallInsertRuleItemOption.
+        r"""Sets the action of this FirewallInsertRuleItemOption.
 
         功能说明：ACL规则对流量执行的操作放通或拒绝 取值范围：allow放通；deny拒绝
 
@@ -183,7 +183,7 @@ class FirewallInsertRuleItemOption:
 
     @property
     def protocol(self):
-        """Gets the protocol of this FirewallInsertRuleItemOption.
+        r"""Gets the protocol of this FirewallInsertRuleItemOption.
 
         功能说明：ACL规则协议 取值范围：支持tcp,udp,icmp,icmpv6或者协议号（0-255），any表示全部协议
 
@@ -194,7 +194,7 @@ class FirewallInsertRuleItemOption:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this FirewallInsertRuleItemOption.
+        r"""Sets the protocol of this FirewallInsertRuleItemOption.
 
         功能说明：ACL规则协议 取值范围：支持tcp,udp,icmp,icmpv6或者协议号（0-255），any表示全部协议
 
@@ -205,7 +205,7 @@ class FirewallInsertRuleItemOption:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this FirewallInsertRuleItemOption.
+        r"""Gets the ip_version of this FirewallInsertRuleItemOption.
 
         功能说明：ACL规则的ip版本 取值范围：4, 表示ipv4；6, 表示ipv6
 
@@ -216,7 +216,7 @@ class FirewallInsertRuleItemOption:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this FirewallInsertRuleItemOption.
+        r"""Sets the ip_version of this FirewallInsertRuleItemOption.
 
         功能说明：ACL规则的ip版本 取值范围：4, 表示ipv4；6, 表示ipv6
 
@@ -227,7 +227,7 @@ class FirewallInsertRuleItemOption:
 
     @property
     def source_ip_address(self):
-        """Gets the source_ip_address of this FirewallInsertRuleItemOption.
+        r"""Gets the source_ip_address of this FirewallInsertRuleItemOption.
 
         功能说明：ACL规则源IP地址或者CIDR 约束：source_ip_address和source_address_group_id不能同时设置
 
@@ -238,7 +238,7 @@ class FirewallInsertRuleItemOption:
 
     @source_ip_address.setter
     def source_ip_address(self, source_ip_address):
-        """Sets the source_ip_address of this FirewallInsertRuleItemOption.
+        r"""Sets the source_ip_address of this FirewallInsertRuleItemOption.
 
         功能说明：ACL规则源IP地址或者CIDR 约束：source_ip_address和source_address_group_id不能同时设置
 
@@ -249,7 +249,7 @@ class FirewallInsertRuleItemOption:
 
     @property
     def destination_ip_address(self):
-        """Gets the destination_ip_address of this FirewallInsertRuleItemOption.
+        r"""Gets the destination_ip_address of this FirewallInsertRuleItemOption.
 
         功能说明：ACL规则目的IP地址或者CIDR 约束：destination_ip_address和destination_address_group_id不能同时设置
 
@@ -260,7 +260,7 @@ class FirewallInsertRuleItemOption:
 
     @destination_ip_address.setter
     def destination_ip_address(self, destination_ip_address):
-        """Sets the destination_ip_address of this FirewallInsertRuleItemOption.
+        r"""Sets the destination_ip_address of this FirewallInsertRuleItemOption.
 
         功能说明：ACL规则目的IP地址或者CIDR 约束：destination_ip_address和destination_address_group_id不能同时设置
 
@@ -271,7 +271,7 @@ class FirewallInsertRuleItemOption:
 
     @property
     def source_port(self):
-        """Gets the source_port of this FirewallInsertRuleItemOption.
+        r"""Gets the source_port of this FirewallInsertRuleItemOption.
 
         功能说明：ACL规则的源端口 取值范围：支持端口号，一段端口范围，多个以逗号分隔 约束：支持的端口组的数量默认为20
 
@@ -282,7 +282,7 @@ class FirewallInsertRuleItemOption:
 
     @source_port.setter
     def source_port(self, source_port):
-        """Sets the source_port of this FirewallInsertRuleItemOption.
+        r"""Sets the source_port of this FirewallInsertRuleItemOption.
 
         功能说明：ACL规则的源端口 取值范围：支持端口号，一段端口范围，多个以逗号分隔 约束：支持的端口组的数量默认为20
 
@@ -293,7 +293,7 @@ class FirewallInsertRuleItemOption:
 
     @property
     def destination_port(self):
-        """Gets the destination_port of this FirewallInsertRuleItemOption.
+        r"""Gets the destination_port of this FirewallInsertRuleItemOption.
 
         功能说明：ACL规则的目的端口 取值范围：支持端口号，一段端口范围，多个以逗号分隔 约束：支持的端口组的数量默认为20
 
@@ -304,7 +304,7 @@ class FirewallInsertRuleItemOption:
 
     @destination_port.setter
     def destination_port(self, destination_port):
-        """Sets the destination_port of this FirewallInsertRuleItemOption.
+        r"""Sets the destination_port of this FirewallInsertRuleItemOption.
 
         功能说明：ACL规则的目的端口 取值范围：支持端口号，一段端口范围，多个以逗号分隔 约束：支持的端口组的数量默认为20
 
@@ -315,7 +315,7 @@ class FirewallInsertRuleItemOption:
 
     @property
     def source_address_group_id(self):
-        """Gets the source_address_group_id of this FirewallInsertRuleItemOption.
+        r"""Gets the source_address_group_id of this FirewallInsertRuleItemOption.
 
         功能说明：ACL规则的源地址组ID 约束：source_ip_address和source_address_group_id不能同时设置
 
@@ -326,7 +326,7 @@ class FirewallInsertRuleItemOption:
 
     @source_address_group_id.setter
     def source_address_group_id(self, source_address_group_id):
-        """Sets the source_address_group_id of this FirewallInsertRuleItemOption.
+        r"""Sets the source_address_group_id of this FirewallInsertRuleItemOption.
 
         功能说明：ACL规则的源地址组ID 约束：source_ip_address和source_address_group_id不能同时设置
 
@@ -337,7 +337,7 @@ class FirewallInsertRuleItemOption:
 
     @property
     def destination_address_group_id(self):
-        """Gets the destination_address_group_id of this FirewallInsertRuleItemOption.
+        r"""Gets the destination_address_group_id of this FirewallInsertRuleItemOption.
 
         功能说明：ACL规则的目的地址组ID 约束：destination_ip_address和destination_address_group_id不能同时设置
 
@@ -348,7 +348,7 @@ class FirewallInsertRuleItemOption:
 
     @destination_address_group_id.setter
     def destination_address_group_id(self, destination_address_group_id):
-        """Sets the destination_address_group_id of this FirewallInsertRuleItemOption.
+        r"""Sets the destination_address_group_id of this FirewallInsertRuleItemOption.
 
         功能说明：ACL规则的目的地址组ID 约束：destination_ip_address和destination_address_group_id不能同时设置
 
@@ -359,7 +359,7 @@ class FirewallInsertRuleItemOption:
 
     @property
     def enabled(self):
-        """Gets the enabled of this FirewallInsertRuleItemOption.
+        r"""Gets the enabled of this FirewallInsertRuleItemOption.
 
         功能说明：是否启用ACL规则。 取值范围：true，表示启用；false，表示停用。 默认值：true。
 
@@ -370,7 +370,7 @@ class FirewallInsertRuleItemOption:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this FirewallInsertRuleItemOption.
+        r"""Sets the enabled of this FirewallInsertRuleItemOption.
 
         功能说明：是否启用ACL规则。 取值范围：true，表示启用；false，表示停用。 默认值：true。
 

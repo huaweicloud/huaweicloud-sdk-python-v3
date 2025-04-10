@@ -37,7 +37,7 @@ class ReplicateKeyRequestBody:
     }
 
     def __init__(self, key_id=None, replica_region=None, key_alias=None, key_description=None, enterprise_project_id=None, replica_project_id=None, tags=None):
-        """ReplicateKeyRequestBody
+        r"""ReplicateKeyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -81,7 +81,7 @@ class ReplicateKeyRequestBody:
 
     @property
     def key_id(self):
-        """Gets the key_id of this ReplicateKeyRequestBody.
+        r"""Gets the key_id of this ReplicateKeyRequestBody.
 
         待复制的密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
@@ -92,7 +92,7 @@ class ReplicateKeyRequestBody:
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this ReplicateKeyRequestBody.
+        r"""Sets the key_id of this ReplicateKeyRequestBody.
 
         待复制的密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
@@ -103,7 +103,7 @@ class ReplicateKeyRequestBody:
 
     @property
     def replica_region(self):
-        """Gets the replica_region of this ReplicateKeyRequestBody.
+        r"""Gets the replica_region of this ReplicateKeyRequestBody.
 
         复制密钥的目的区域编码。如cn-north-4。
 
@@ -114,7 +114,7 @@ class ReplicateKeyRequestBody:
 
     @replica_region.setter
     def replica_region(self, replica_region):
-        """Sets the replica_region of this ReplicateKeyRequestBody.
+        r"""Sets the replica_region of this ReplicateKeyRequestBody.
 
         复制密钥的目的区域编码。如cn-north-4。
 
@@ -125,7 +125,7 @@ class ReplicateKeyRequestBody:
 
     @property
     def key_alias(self):
-        """Gets the key_alias of this ReplicateKeyRequestBody.
+        r"""Gets the key_alias of this ReplicateKeyRequestBody.
 
         指定复制出的新密钥的别名。
 
@@ -136,7 +136,7 @@ class ReplicateKeyRequestBody:
 
     @key_alias.setter
     def key_alias(self, key_alias):
-        """Sets the key_alias of this ReplicateKeyRequestBody.
+        r"""Sets the key_alias of this ReplicateKeyRequestBody.
 
         指定复制出的新密钥的别名。
 
@@ -147,7 +147,7 @@ class ReplicateKeyRequestBody:
 
     @property
     def key_description(self):
-        """Gets the key_description of this ReplicateKeyRequestBody.
+        r"""Gets the key_description of this ReplicateKeyRequestBody.
 
         指定复制出的新密钥的描述信息。
 
@@ -158,7 +158,7 @@ class ReplicateKeyRequestBody:
 
     @key_description.setter
     def key_description(self, key_description):
-        """Sets the key_description of this ReplicateKeyRequestBody.
+        r"""Sets the key_description of this ReplicateKeyRequestBody.
 
         指定复制出的新密钥的描述信息。
 
@@ -169,7 +169,7 @@ class ReplicateKeyRequestBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ReplicateKeyRequestBody.
+        r"""Gets the enterprise_project_id of this ReplicateKeyRequestBody.
 
         指定复制出的新密钥的企业多项目ID。 - 用户未开通企业多项目时，不需要输入该字段。 - 用户开通企业多项目时，创建资源可以输入该字段。若用户户不输入该字段，默认创建属于默认企业多项目ID（ID为“0”）的资源。 注意：若用户没有默认企业多项目ID（ID为“0”）下的创建权限，则接口报错。
 
@@ -180,7 +180,7 @@ class ReplicateKeyRequestBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ReplicateKeyRequestBody.
+        r"""Sets the enterprise_project_id of this ReplicateKeyRequestBody.
 
         指定复制出的新密钥的企业多项目ID。 - 用户未开通企业多项目时，不需要输入该字段。 - 用户开通企业多项目时，创建资源可以输入该字段。若用户户不输入该字段，默认创建属于默认企业多项目ID（ID为“0”）的资源。 注意：若用户没有默认企业多项目ID（ID为“0”）下的创建权限，则接口报错。
 
@@ -191,7 +191,7 @@ class ReplicateKeyRequestBody:
 
     @property
     def replica_project_id(self):
-        """Gets the replica_project_id of this ReplicateKeyRequestBody.
+        r"""Gets the replica_project_id of this ReplicateKeyRequestBody.
 
         指定复制出的新密钥的项目ID。
 
@@ -202,7 +202,7 @@ class ReplicateKeyRequestBody:
 
     @replica_project_id.setter
     def replica_project_id(self, replica_project_id):
-        """Sets the replica_project_id of this ReplicateKeyRequestBody.
+        r"""Sets the replica_project_id of this ReplicateKeyRequestBody.
 
         指定复制出的新密钥的项目ID。
 
@@ -213,7 +213,7 @@ class ReplicateKeyRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this ReplicateKeyRequestBody.
+        r"""Gets the tags of this ReplicateKeyRequestBody.
 
         标签列表，key和value键值对的集合。
 
@@ -224,7 +224,7 @@ class ReplicateKeyRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ReplicateKeyRequestBody.
+        r"""Sets the tags of this ReplicateKeyRequestBody.
 
         标签列表，key和value键值对的集合。
 

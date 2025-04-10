@@ -33,7 +33,7 @@ class EventStreamingSource:
     }
 
     def __init__(self, source_kafka=None, source_mobile_rocketmq=None, source_community_rocketmq=None, source_dms_rocketmq=None, name=None):
-        """EventStreamingSource
+        r"""EventStreamingSource
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class EventStreamingSource:
 
     @property
     def source_kafka(self):
-        """Gets the source_kafka of this EventStreamingSource.
+        r"""Gets the source_kafka of this EventStreamingSource.
 
         :return: The source_kafka of this EventStreamingSource.
         :rtype: :class:`huaweicloudsdkeg.v1.SourceKafkaMQParameters`
@@ -80,7 +80,7 @@ class EventStreamingSource:
 
     @source_kafka.setter
     def source_kafka(self, source_kafka):
-        """Sets the source_kafka of this EventStreamingSource.
+        r"""Sets the source_kafka of this EventStreamingSource.
 
         :param source_kafka: The source_kafka of this EventStreamingSource.
         :type source_kafka: :class:`huaweicloudsdkeg.v1.SourceKafkaMQParameters`
@@ -89,7 +89,7 @@ class EventStreamingSource:
 
     @property
     def source_mobile_rocketmq(self):
-        """Gets the source_mobile_rocketmq of this EventStreamingSource.
+        r"""Gets the source_mobile_rocketmq of this EventStreamingSource.
 
         :return: The source_mobile_rocketmq of this EventStreamingSource.
         :rtype: :class:`huaweicloudsdkeg.v1.SourceMobileMQParameters`
@@ -98,7 +98,7 @@ class EventStreamingSource:
 
     @source_mobile_rocketmq.setter
     def source_mobile_rocketmq(self, source_mobile_rocketmq):
-        """Sets the source_mobile_rocketmq of this EventStreamingSource.
+        r"""Sets the source_mobile_rocketmq of this EventStreamingSource.
 
         :param source_mobile_rocketmq: The source_mobile_rocketmq of this EventStreamingSource.
         :type source_mobile_rocketmq: :class:`huaweicloudsdkeg.v1.SourceMobileMQParameters`
@@ -107,7 +107,7 @@ class EventStreamingSource:
 
     @property
     def source_community_rocketmq(self):
-        """Gets the source_community_rocketmq of this EventStreamingSource.
+        r"""Gets the source_community_rocketmq of this EventStreamingSource.
 
         :return: The source_community_rocketmq of this EventStreamingSource.
         :rtype: :class:`huaweicloudsdkeg.v1.SourceCommunityMQParameters`
@@ -116,7 +116,7 @@ class EventStreamingSource:
 
     @source_community_rocketmq.setter
     def source_community_rocketmq(self, source_community_rocketmq):
-        """Sets the source_community_rocketmq of this EventStreamingSource.
+        r"""Sets the source_community_rocketmq of this EventStreamingSource.
 
         :param source_community_rocketmq: The source_community_rocketmq of this EventStreamingSource.
         :type source_community_rocketmq: :class:`huaweicloudsdkeg.v1.SourceCommunityMQParameters`
@@ -125,7 +125,7 @@ class EventStreamingSource:
 
     @property
     def source_dms_rocketmq(self):
-        """Gets the source_dms_rocketmq of this EventStreamingSource.
+        r"""Gets the source_dms_rocketmq of this EventStreamingSource.
 
         :return: The source_dms_rocketmq of this EventStreamingSource.
         :rtype: :class:`huaweicloudsdkeg.v1.SourceDMSMQParameters`
@@ -134,7 +134,7 @@ class EventStreamingSource:
 
     @source_dms_rocketmq.setter
     def source_dms_rocketmq(self, source_dms_rocketmq):
-        """Sets the source_dms_rocketmq of this EventStreamingSource.
+        r"""Sets the source_dms_rocketmq of this EventStreamingSource.
 
         :param source_dms_rocketmq: The source_dms_rocketmq of this EventStreamingSource.
         :type source_dms_rocketmq: :class:`huaweicloudsdkeg.v1.SourceDMSMQParameters`
@@ -143,7 +143,7 @@ class EventStreamingSource:
 
     @property
     def name(self):
-        """Gets the name of this EventStreamingSource.
+        r"""Gets the name of this EventStreamingSource.
 
         事件源类型名称
 
@@ -154,7 +154,7 @@ class EventStreamingSource:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EventStreamingSource.
+        r"""Sets the name of this EventStreamingSource.
 
         事件源类型名称
 

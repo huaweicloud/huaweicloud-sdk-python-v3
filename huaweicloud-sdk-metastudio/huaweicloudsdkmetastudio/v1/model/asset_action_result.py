@@ -29,7 +29,7 @@ class AssetActionResult:
     }
 
     def __init__(self, ret_status=None, asset_ids=None, error_info=None):
-        """AssetActionResult
+        r"""AssetActionResult
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AssetActionResult:
 
     @property
     def ret_status(self):
-        """Gets the ret_status of this AssetActionResult.
+        r"""Gets the ret_status of this AssetActionResult.
 
         处理状态。 * SUCCESS：成功 * FAILED：失败
 
@@ -68,7 +68,7 @@ class AssetActionResult:
 
     @ret_status.setter
     def ret_status(self, ret_status):
-        """Sets the ret_status of this AssetActionResult.
+        r"""Sets the ret_status of this AssetActionResult.
 
         处理状态。 * SUCCESS：成功 * FAILED：失败
 
@@ -79,7 +79,7 @@ class AssetActionResult:
 
     @property
     def asset_ids(self):
-        """Gets the asset_ids of this AssetActionResult.
+        r"""Gets the asset_ids of this AssetActionResult.
 
         资产ID列表
 
@@ -90,7 +90,7 @@ class AssetActionResult:
 
     @asset_ids.setter
     def asset_ids(self, asset_ids):
-        """Sets the asset_ids of this AssetActionResult.
+        r"""Sets the asset_ids of this AssetActionResult.
 
         资产ID列表
 
@@ -101,7 +101,7 @@ class AssetActionResult:
 
     @property
     def error_info(self):
-        """Gets the error_info of this AssetActionResult.
+        r"""Gets the error_info of this AssetActionResult.
 
         :return: The error_info of this AssetActionResult.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
@@ -110,7 +110,7 @@ class AssetActionResult:
 
     @error_info.setter
     def error_info(self, error_info):
-        """Sets the error_info of this AssetActionResult.
+        r"""Sets the error_info of this AssetActionResult.
 
         :param error_info: The error_info of this AssetActionResult.
         :type error_info: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`

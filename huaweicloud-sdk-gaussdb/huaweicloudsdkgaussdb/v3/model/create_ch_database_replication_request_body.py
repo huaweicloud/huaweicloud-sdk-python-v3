@@ -29,7 +29,7 @@ class CreateChDatabaseReplicationRequestBody:
     }
 
     def __init__(self, source_instance_id=None, source_node_id=None, source_database=None):
-        """CreateChDatabaseReplicationRequestBody
+        r"""CreateChDatabaseReplicationRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateChDatabaseReplicationRequestBody:
 
     @property
     def source_instance_id(self):
-        """Gets the source_instance_id of this CreateChDatabaseReplicationRequestBody.
+        r"""Gets the source_instance_id of this CreateChDatabaseReplicationRequestBody.
 
         源实例ID。
 
@@ -66,7 +66,7 @@ class CreateChDatabaseReplicationRequestBody:
 
     @source_instance_id.setter
     def source_instance_id(self, source_instance_id):
-        """Sets the source_instance_id of this CreateChDatabaseReplicationRequestBody.
+        r"""Sets the source_instance_id of this CreateChDatabaseReplicationRequestBody.
 
         源实例ID。
 
@@ -77,7 +77,7 @@ class CreateChDatabaseReplicationRequestBody:
 
     @property
     def source_node_id(self):
-        """Gets the source_node_id of this CreateChDatabaseReplicationRequestBody.
+        r"""Gets the source_node_id of this CreateChDatabaseReplicationRequestBody.
 
         源节点ID。TaurusDB只读节点ID。如为空，则取TaurusDB主节点ID。
 
@@ -88,7 +88,7 @@ class CreateChDatabaseReplicationRequestBody:
 
     @source_node_id.setter
     def source_node_id(self, source_node_id):
-        """Sets the source_node_id of this CreateChDatabaseReplicationRequestBody.
+        r"""Sets the source_node_id of this CreateChDatabaseReplicationRequestBody.
 
         源节点ID。TaurusDB只读节点ID。如为空，则取TaurusDB主节点ID。
 
@@ -99,7 +99,7 @@ class CreateChDatabaseReplicationRequestBody:
 
     @property
     def source_database(self):
-        """Gets the source_database of this CreateChDatabaseReplicationRequestBody.
+        r"""Gets the source_database of this CreateChDatabaseReplicationRequestBody.
 
         源数据库。
 
@@ -110,7 +110,7 @@ class CreateChDatabaseReplicationRequestBody:
 
     @source_database.setter
     def source_database(self, source_database):
-        """Sets the source_database of this CreateChDatabaseReplicationRequestBody.
+        r"""Sets the source_database of this CreateChDatabaseReplicationRequestBody.
 
         源数据库。
 

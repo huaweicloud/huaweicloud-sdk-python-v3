@@ -29,7 +29,7 @@ class CancelCaptureTaskRequest:
     }
 
     def __init__(self, fw_instance_id=None, enterprise_project_id=None, body=None):
-        """CancelCaptureTaskRequest
+        r"""CancelCaptureTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CancelCaptureTaskRequest:
 
     @property
     def fw_instance_id(self):
-        """Gets the fw_instance_id of this CancelCaptureTaskRequest.
+        r"""Gets the fw_instance_id of this CancelCaptureTaskRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -67,7 +67,7 @@ class CancelCaptureTaskRequest:
 
     @fw_instance_id.setter
     def fw_instance_id(self, fw_instance_id):
-        """Sets the fw_instance_id of this CancelCaptureTaskRequest.
+        r"""Sets the fw_instance_id of this CancelCaptureTaskRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -78,7 +78,7 @@ class CancelCaptureTaskRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CancelCaptureTaskRequest.
+        r"""Gets the enterprise_project_id of this CancelCaptureTaskRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -89,7 +89,7 @@ class CancelCaptureTaskRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CancelCaptureTaskRequest.
+        r"""Sets the enterprise_project_id of this CancelCaptureTaskRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -100,7 +100,7 @@ class CancelCaptureTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CancelCaptureTaskRequest.
+        r"""Gets the body of this CancelCaptureTaskRequest.
 
         :return: The body of this CancelCaptureTaskRequest.
         :rtype: :class:`huaweicloudsdkcfw.v1.CancelCaptureTaskDto`
@@ -109,7 +109,7 @@ class CancelCaptureTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CancelCaptureTaskRequest.
+        r"""Sets the body of this CancelCaptureTaskRequest.
 
         :param body: The body of this CancelCaptureTaskRequest.
         :type body: :class:`huaweicloudsdkcfw.v1.CancelCaptureTaskDto`

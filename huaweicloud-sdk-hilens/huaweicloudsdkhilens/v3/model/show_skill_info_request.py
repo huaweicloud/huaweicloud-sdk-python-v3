@@ -29,7 +29,7 @@ class ShowSkillInfoRequest:
     }
 
     def __init__(self, skill_id=None, status=None, version=None):
-        """ShowSkillInfoRequest
+        r"""ShowSkillInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ShowSkillInfoRequest:
 
     @property
     def skill_id(self):
-        """Gets the skill_id of this ShowSkillInfoRequest.
+        r"""Gets the skill_id of this ShowSkillInfoRequest.
 
         技能ID
 
@@ -67,7 +67,7 @@ class ShowSkillInfoRequest:
 
     @skill_id.setter
     def skill_id(self, skill_id):
-        """Sets the skill_id of this ShowSkillInfoRequest.
+        r"""Sets the skill_id of this ShowSkillInfoRequest.
 
         技能ID
 
@@ -78,7 +78,7 @@ class ShowSkillInfoRequest:
 
     @property
     def status(self):
-        """Gets the status of this ShowSkillInfoRequest.
+        r"""Gets the status of this ShowSkillInfoRequest.
 
         技能审核状态状态，1表示审核通过，2表示审核不通过，0表示待审核
 
@@ -89,7 +89,7 @@ class ShowSkillInfoRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowSkillInfoRequest.
+        r"""Sets the status of this ShowSkillInfoRequest.
 
         技能审核状态状态，1表示审核通过，2表示审核不通过，0表示待审核
 
@@ -100,7 +100,7 @@ class ShowSkillInfoRequest:
 
     @property
     def version(self):
-        """Gets the version of this ShowSkillInfoRequest.
+        r"""Gets the version of this ShowSkillInfoRequest.
 
         技能版本
 
@@ -111,7 +111,7 @@ class ShowSkillInfoRequest:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowSkillInfoRequest.
+        r"""Sets the version of this ShowSkillInfoRequest.
 
         技能版本
 

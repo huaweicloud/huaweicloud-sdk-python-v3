@@ -47,7 +47,7 @@ class CompareJobInfo:
     }
 
     def __init__(self, id=None, type=None, start_time=None, end_time=None, status=None, compute_type=None, export_status=None, report_remain_seconds=None, compare_job_tag=None, options=None, error_msg=None, dynamic_compare_delay=None):
-        """CompareJobInfo
+        r"""CompareJobInfo
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class CompareJobInfo:
 
     @property
     def id(self):
-        """Gets the id of this CompareJobInfo.
+        r"""Gets the id of this CompareJobInfo.
 
         对比任务ID。
 
@@ -131,7 +131,7 @@ class CompareJobInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CompareJobInfo.
+        r"""Sets the id of this CompareJobInfo.
 
         对比任务ID。
 
@@ -142,7 +142,7 @@ class CompareJobInfo:
 
     @property
     def type(self):
-        """Gets the type of this CompareJobInfo.
+        r"""Gets the type of this CompareJobInfo.
 
         对比类型。
 
@@ -153,7 +153,7 @@ class CompareJobInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CompareJobInfo.
+        r"""Sets the type of this CompareJobInfo.
 
         对比类型。
 
@@ -164,7 +164,7 @@ class CompareJobInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this CompareJobInfo.
+        r"""Gets the start_time of this CompareJobInfo.
 
         开始时间。
 
@@ -175,7 +175,7 @@ class CompareJobInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this CompareJobInfo.
+        r"""Sets the start_time of this CompareJobInfo.
 
         开始时间。
 
@@ -186,7 +186,7 @@ class CompareJobInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this CompareJobInfo.
+        r"""Gets the end_time of this CompareJobInfo.
 
         结束时间。
 
@@ -197,7 +197,7 @@ class CompareJobInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this CompareJobInfo.
+        r"""Sets the end_time of this CompareJobInfo.
 
         结束时间。
 
@@ -208,7 +208,7 @@ class CompareJobInfo:
 
     @property
     def status(self):
-        """Gets the status of this CompareJobInfo.
+        r"""Gets the status of this CompareJobInfo.
 
         对比任务的状态。取值： - RUNNING：运行中。 - WAITING_FOR_RUNNING：等待启动中。 - SUCCESSFUL：完成。 - FAILED：失败。 - CANCELLED：已取消。 - TIMEOUT_INTERRUPT：超时中断。 - FULL_DOING：全量校验中。 - INCRE_DOING：增量校验中。
 
@@ -219,7 +219,7 @@ class CompareJobInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CompareJobInfo.
+        r"""Sets the status of this CompareJobInfo.
 
         对比任务的状态。取值： - RUNNING：运行中。 - WAITING_FOR_RUNNING：等待启动中。 - SUCCESSFUL：完成。 - FAILED：失败。 - CANCELLED：已取消。 - TIMEOUT_INTERRUPT：超时中断。 - FULL_DOING：全量校验中。 - INCRE_DOING：增量校验中。
 
@@ -230,7 +230,7 @@ class CompareJobInfo:
 
     @property
     def compute_type(self):
-        """Gets the compute_type of this CompareJobInfo.
+        r"""Gets the compute_type of this CompareJobInfo.
 
         对比计算资源。
 
@@ -241,7 +241,7 @@ class CompareJobInfo:
 
     @compute_type.setter
     def compute_type(self, compute_type):
-        """Sets the compute_type of this CompareJobInfo.
+        r"""Sets the compute_type of this CompareJobInfo.
 
         对比计算资源。
 
@@ -252,7 +252,7 @@ class CompareJobInfo:
 
     @property
     def export_status(self):
-        """Gets the export_status of this CompareJobInfo.
+        r"""Gets the export_status of this CompareJobInfo.
 
         导出比对结果状态。
 
@@ -263,7 +263,7 @@ class CompareJobInfo:
 
     @export_status.setter
     def export_status(self, export_status):
-        """Sets the export_status of this CompareJobInfo.
+        r"""Sets the export_status of this CompareJobInfo.
 
         导出比对结果状态。
 
@@ -274,7 +274,7 @@ class CompareJobInfo:
 
     @property
     def report_remain_seconds(self):
-        """Gets the report_remain_seconds of this CompareJobInfo.
+        r"""Gets the report_remain_seconds of this CompareJobInfo.
 
         导出比对结果有效期剩余时间。
 
@@ -285,7 +285,7 @@ class CompareJobInfo:
 
     @report_remain_seconds.setter
     def report_remain_seconds(self, report_remain_seconds):
-        """Sets the report_remain_seconds of this CompareJobInfo.
+        r"""Sets the report_remain_seconds of this CompareJobInfo.
 
         导出比对结果有效期剩余时间。
 
@@ -296,7 +296,7 @@ class CompareJobInfo:
 
     @property
     def compare_job_tag(self):
-        """Gets the compare_job_tag of this CompareJobInfo.
+        r"""Gets the compare_job_tag of this CompareJobInfo.
 
         对比任务的标签。
 
@@ -307,7 +307,7 @@ class CompareJobInfo:
 
     @compare_job_tag.setter
     def compare_job_tag(self, compare_job_tag):
-        """Sets the compare_job_tag of this CompareJobInfo.
+        r"""Sets the compare_job_tag of this CompareJobInfo.
 
         对比任务的标签。
 
@@ -318,7 +318,7 @@ class CompareJobInfo:
 
     @property
     def options(self):
-        """Gets the options of this CompareJobInfo.
+        r"""Gets the options of this CompareJobInfo.
 
         对比任务选项。
 
@@ -329,7 +329,7 @@ class CompareJobInfo:
 
     @options.setter
     def options(self, options):
-        """Sets the options of this CompareJobInfo.
+        r"""Sets the options of this CompareJobInfo.
 
         对比任务选项。
 
@@ -340,7 +340,7 @@ class CompareJobInfo:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this CompareJobInfo.
+        r"""Gets the error_msg of this CompareJobInfo.
 
         失败原因。
 
@@ -351,7 +351,7 @@ class CompareJobInfo:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this CompareJobInfo.
+        r"""Sets the error_msg of this CompareJobInfo.
 
         失败原因。
 
@@ -362,7 +362,7 @@ class CompareJobInfo:
 
     @property
     def dynamic_compare_delay(self):
-        """Gets the dynamic_compare_delay of this CompareJobInfo.
+        r"""Gets the dynamic_compare_delay of this CompareJobInfo.
 
         动态比对时延。
 
@@ -373,7 +373,7 @@ class CompareJobInfo:
 
     @dynamic_compare_delay.setter
     def dynamic_compare_delay(self, dynamic_compare_delay):
-        """Sets the dynamic_compare_delay of this CompareJobInfo.
+        r"""Sets the dynamic_compare_delay of this CompareJobInfo.
 
         动态比对时延。
 

@@ -29,7 +29,7 @@ class ListTestCaseHistoriesRequest:
     }
 
     def __init__(self, project_id=None, testcase_id=None, body=None):
-        """ListTestCaseHistoriesRequest
+        r"""ListTestCaseHistoriesRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ListTestCaseHistoriesRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListTestCaseHistoriesRequest.
+        r"""Gets the project_id of this ListTestCaseHistoriesRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -66,7 +66,7 @@ class ListTestCaseHistoriesRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListTestCaseHistoriesRequest.
+        r"""Sets the project_id of this ListTestCaseHistoriesRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -77,7 +77,7 @@ class ListTestCaseHistoriesRequest:
 
     @property
     def testcase_id(self):
-        """Gets the testcase_id of this ListTestCaseHistoriesRequest.
+        r"""Gets the testcase_id of this ListTestCaseHistoriesRequest.
 
         用例ID，长度11-34位字符（字母和数字）。
 
@@ -88,7 +88,7 @@ class ListTestCaseHistoriesRequest:
 
     @testcase_id.setter
     def testcase_id(self, testcase_id):
-        """Sets the testcase_id of this ListTestCaseHistoriesRequest.
+        r"""Sets the testcase_id of this ListTestCaseHistoriesRequest.
 
         用例ID，长度11-34位字符（字母和数字）。
 
@@ -99,7 +99,7 @@ class ListTestCaseHistoriesRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListTestCaseHistoriesRequest.
+        r"""Gets the body of this ListTestCaseHistoriesRequest.
 
         :return: The body of this ListTestCaseHistoriesRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ListTestCaseHistoriesRequestBody`
@@ -108,7 +108,7 @@ class ListTestCaseHistoriesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListTestCaseHistoriesRequest.
+        r"""Sets the body of this ListTestCaseHistoriesRequest.
 
         :param body: The body of this ListTestCaseHistoriesRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.ListTestCaseHistoriesRequestBody`

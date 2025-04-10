@@ -63,7 +63,7 @@ class TransferDetail:
     }
 
     def __init__(self, obs_period=None, obs_encrypted_id=None, obs_prefix_name=None, obs_period_unit=None, obs_transfer_path=None, obs_eps_id=None, obs_bucket_name=None, obs_encrypted_enable=None, obs_dir_pre_fix_name=None, dis_id=None, dis_name=None, kafka_id=None, kafka_topic=None, obs_time_zone=None, obs_time_zone_id=None, tags=None, lts_tags=None, stream_tags=None, struct_fields=None, invalid_field_value=None):
-        """TransferDetail
+        r"""TransferDetail
 
         The model defined in huaweicloud sdk
 
@@ -173,7 +173,7 @@ class TransferDetail:
 
     @property
     def obs_period(self):
-        """Gets the obs_period of this TransferDetail.
+        r"""Gets the obs_period of this TransferDetail.
 
         OBS转储时间
 
@@ -184,7 +184,7 @@ class TransferDetail:
 
     @obs_period.setter
     def obs_period(self, obs_period):
-        """Sets the obs_period of this TransferDetail.
+        r"""Sets the obs_period of this TransferDetail.
 
         OBS转储时间
 
@@ -195,7 +195,7 @@ class TransferDetail:
 
     @property
     def obs_encrypted_id(self):
-        """Gets the obs_encrypted_id of this TransferDetail.
+        r"""Gets the obs_encrypted_id of this TransferDetail.
 
         OBS转储KMS秘钥ID。若OBS转储未加密则不返回此字段
 
@@ -206,7 +206,7 @@ class TransferDetail:
 
     @obs_encrypted_id.setter
     def obs_encrypted_id(self, obs_encrypted_id):
-        """Sets the obs_encrypted_id of this TransferDetail.
+        r"""Sets the obs_encrypted_id of this TransferDetail.
 
         OBS转储KMS秘钥ID。若OBS转储未加密则不返回此字段
 
@@ -217,7 +217,7 @@ class TransferDetail:
 
     @property
     def obs_prefix_name(self):
-        """Gets the obs_prefix_name of this TransferDetail.
+        r"""Gets the obs_prefix_name of this TransferDetail.
 
         OBS转储日志文件前缀
 
@@ -228,7 +228,7 @@ class TransferDetail:
 
     @obs_prefix_name.setter
     def obs_prefix_name(self, obs_prefix_name):
-        """Sets the obs_prefix_name of this TransferDetail.
+        r"""Sets the obs_prefix_name of this TransferDetail.
 
         OBS转储日志文件前缀
 
@@ -239,7 +239,7 @@ class TransferDetail:
 
     @property
     def obs_period_unit(self):
-        """Gets the obs_period_unit of this TransferDetail.
+        r"""Gets the obs_period_unit of this TransferDetail.
 
         OBS转储单位
 
@@ -250,7 +250,7 @@ class TransferDetail:
 
     @obs_period_unit.setter
     def obs_period_unit(self, obs_period_unit):
-        """Sets the obs_period_unit of this TransferDetail.
+        r"""Sets the obs_period_unit of this TransferDetail.
 
         OBS转储单位
 
@@ -261,7 +261,7 @@ class TransferDetail:
 
     @property
     def obs_transfer_path(self):
-        """Gets the obs_transfer_path of this TransferDetail.
+        r"""Gets the obs_transfer_path of this TransferDetail.
 
         OBS转储路径，指OBS日志桶中的路径
 
@@ -272,7 +272,7 @@ class TransferDetail:
 
     @obs_transfer_path.setter
     def obs_transfer_path(self, obs_transfer_path):
-        """Sets the obs_transfer_path of this TransferDetail.
+        r"""Sets the obs_transfer_path of this TransferDetail.
 
         OBS转储路径，指OBS日志桶中的路径
 
@@ -283,7 +283,7 @@ class TransferDetail:
 
     @property
     def obs_eps_id(self):
-        """Gets the obs_eps_id of this TransferDetail.
+        r"""Gets the obs_eps_id of this TransferDetail.
 
         OBS企业项目ID
 
@@ -294,7 +294,7 @@ class TransferDetail:
 
     @obs_eps_id.setter
     def obs_eps_id(self, obs_eps_id):
-        """Sets the obs_eps_id of this TransferDetail.
+        r"""Sets the obs_eps_id of this TransferDetail.
 
         OBS企业项目ID
 
@@ -305,7 +305,7 @@ class TransferDetail:
 
     @property
     def obs_bucket_name(self):
-        """Gets the obs_bucket_name of this TransferDetail.
+        r"""Gets the obs_bucket_name of this TransferDetail.
 
         OBS日志桶名称
 
@@ -316,7 +316,7 @@ class TransferDetail:
 
     @obs_bucket_name.setter
     def obs_bucket_name(self, obs_bucket_name):
-        """Sets the obs_bucket_name of this TransferDetail.
+        r"""Sets the obs_bucket_name of this TransferDetail.
 
         OBS日志桶名称
 
@@ -327,7 +327,7 @@ class TransferDetail:
 
     @property
     def obs_encrypted_enable(self):
-        """Gets the obs_encrypted_enable of this TransferDetail.
+        r"""Gets the obs_encrypted_enable of this TransferDetail.
 
         OBS是否开启加密。
 
@@ -338,7 +338,7 @@ class TransferDetail:
 
     @obs_encrypted_enable.setter
     def obs_encrypted_enable(self, obs_encrypted_enable):
-        """Sets the obs_encrypted_enable of this TransferDetail.
+        r"""Sets the obs_encrypted_enable of this TransferDetail.
 
         OBS是否开启加密。
 
@@ -349,7 +349,7 @@ class TransferDetail:
 
     @property
     def obs_dir_pre_fix_name(self):
-        """Gets the obs_dir_pre_fix_name of this TransferDetail.
+        r"""Gets the obs_dir_pre_fix_name of this TransferDetail.
 
         OBS转储自定义转储路径
 
@@ -360,7 +360,7 @@ class TransferDetail:
 
     @obs_dir_pre_fix_name.setter
     def obs_dir_pre_fix_name(self, obs_dir_pre_fix_name):
-        """Sets the obs_dir_pre_fix_name of this TransferDetail.
+        r"""Sets the obs_dir_pre_fix_name of this TransferDetail.
 
         OBS转储自定义转储路径
 
@@ -371,7 +371,7 @@ class TransferDetail:
 
     @property
     def dis_id(self):
-        """Gets the dis_id of this TransferDetail.
+        r"""Gets the dis_id of this TransferDetail.
 
         DIS转储通道ID
 
@@ -382,7 +382,7 @@ class TransferDetail:
 
     @dis_id.setter
     def dis_id(self, dis_id):
-        """Sets the dis_id of this TransferDetail.
+        r"""Sets the dis_id of this TransferDetail.
 
         DIS转储通道ID
 
@@ -393,7 +393,7 @@ class TransferDetail:
 
     @property
     def dis_name(self):
-        """Gets the dis_name of this TransferDetail.
+        r"""Gets the dis_name of this TransferDetail.
 
         DIS转储通道名称
 
@@ -404,7 +404,7 @@ class TransferDetail:
 
     @dis_name.setter
     def dis_name(self, dis_name):
-        """Sets the dis_name of this TransferDetail.
+        r"""Sets the dis_name of this TransferDetail.
 
         DIS转储通道名称
 
@@ -415,7 +415,7 @@ class TransferDetail:
 
     @property
     def kafka_id(self):
-        """Gets the kafka_id of this TransferDetail.
+        r"""Gets the kafka_id of this TransferDetail.
 
         DMS转储kafka ID
 
@@ -426,7 +426,7 @@ class TransferDetail:
 
     @kafka_id.setter
     def kafka_id(self, kafka_id):
-        """Sets the kafka_id of this TransferDetail.
+        r"""Sets the kafka_id of this TransferDetail.
 
         DMS转储kafka ID
 
@@ -437,7 +437,7 @@ class TransferDetail:
 
     @property
     def kafka_topic(self):
-        """Gets the kafka_topic of this TransferDetail.
+        r"""Gets the kafka_topic of this TransferDetail.
 
         DMS转储kafka topic
 
@@ -448,7 +448,7 @@ class TransferDetail:
 
     @kafka_topic.setter
     def kafka_topic(self, kafka_topic):
-        """Sets the kafka_topic of this TransferDetail.
+        r"""Sets the kafka_topic of this TransferDetail.
 
         DMS转储kafka topic
 
@@ -459,7 +459,7 @@ class TransferDetail:
 
     @property
     def obs_time_zone(self):
-        """Gets the obs_time_zone of this TransferDetail.
+        r"""Gets the obs_time_zone of this TransferDetail.
 
         OBS转储时区。如果选择该参数，则必须选择obs_time_zone_id。
 
@@ -470,7 +470,7 @@ class TransferDetail:
 
     @obs_time_zone.setter
     def obs_time_zone(self, obs_time_zone):
-        """Sets the obs_time_zone of this TransferDetail.
+        r"""Sets the obs_time_zone of this TransferDetail.
 
         OBS转储时区。如果选择该参数，则必须选择obs_time_zone_id。
 
@@ -481,7 +481,7 @@ class TransferDetail:
 
     @property
     def obs_time_zone_id(self):
-        """Gets the obs_time_zone_id of this TransferDetail.
+        r"""Gets the obs_time_zone_id of this TransferDetail.
 
         OBS转储时区ID。参数选择参考OBS转储时区表。如果选择该参数，则必须选择obs_time_zone。
 
@@ -492,7 +492,7 @@ class TransferDetail:
 
     @obs_time_zone_id.setter
     def obs_time_zone_id(self, obs_time_zone_id):
-        """Sets the obs_time_zone_id of this TransferDetail.
+        r"""Sets the obs_time_zone_id of this TransferDetail.
 
         OBS转储时区ID。参数选择参考OBS转储时区表。如果选择该参数，则必须选择obs_time_zone。
 
@@ -503,7 +503,7 @@ class TransferDetail:
 
     @property
     def tags(self):
-        """Gets the tags of this TransferDetail.
+        r"""Gets the tags of this TransferDetail.
 
         若开启tag投递，该字段必须包含主机信息：hostIP、hostId、hostName、pathFile、collectTime；  公共字段有：logStreamName、regionName、logGroupName、projectId，为可选填；  开启转储标签：streamTag，可选填
 
@@ -514,7 +514,7 @@ class TransferDetail:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this TransferDetail.
+        r"""Sets the tags of this TransferDetail.
 
         若开启tag投递，该字段必须包含主机信息：hostIP、hostId、hostName、pathFile、collectTime；  公共字段有：logStreamName、regionName、logGroupName、projectId，为可选填；  开启转储标签：streamTag，可选填
 
@@ -525,7 +525,7 @@ class TransferDetail:
 
     @property
     def lts_tags(self):
-        """Gets the lts_tags of this TransferDetail.
+        r"""Gets the lts_tags of this TransferDetail.
 
         dms转储JSON格式选填，可以转储tag字段
 
@@ -536,7 +536,7 @@ class TransferDetail:
 
     @lts_tags.setter
     def lts_tags(self, lts_tags):
-        """Sets the lts_tags of this TransferDetail.
+        r"""Sets the lts_tags of this TransferDetail.
 
         dms转储JSON格式选填，可以转储tag字段
 
@@ -547,7 +547,7 @@ class TransferDetail:
 
     @property
     def stream_tags(self):
-        """Gets the stream_tags of this TransferDetail.
+        r"""Gets the stream_tags of this TransferDetail.
 
         dms转储JSON格式选填，可以转储日志流标签字段
 
@@ -558,7 +558,7 @@ class TransferDetail:
 
     @stream_tags.setter
     def stream_tags(self, stream_tags):
-        """Sets the stream_tags of this TransferDetail.
+        r"""Sets the stream_tags of this TransferDetail.
 
         dms转储JSON格式选填，可以转储日志流标签字段
 
@@ -569,7 +569,7 @@ class TransferDetail:
 
     @property
     def struct_fields(self):
-        """Gets the struct_fields of this TransferDetail.
+        r"""Gets the struct_fields of this TransferDetail.
 
         dms转储JSON格式选填，可以转储结构化字段
 
@@ -580,7 +580,7 @@ class TransferDetail:
 
     @struct_fields.setter
     def struct_fields(self, struct_fields):
-        """Sets the struct_fields of this TransferDetail.
+        r"""Sets the struct_fields of this TransferDetail.
 
         dms转储JSON格式选填，可以转储结构化字段
 
@@ -591,7 +591,7 @@ class TransferDetail:
 
     @property
     def invalid_field_value(self):
-        """Gets the invalid_field_value of this TransferDetail.
+        r"""Gets the invalid_field_value of this TransferDetail.
 
         dms转储JSON格式选填，无效字段填充
 
@@ -602,7 +602,7 @@ class TransferDetail:
 
     @invalid_field_value.setter
     def invalid_field_value(self, invalid_field_value):
-        """Sets the invalid_field_value of this TransferDetail.
+        r"""Sets the invalid_field_value of this TransferDetail.
 
         dms转储JSON格式选填，无效字段填充
 

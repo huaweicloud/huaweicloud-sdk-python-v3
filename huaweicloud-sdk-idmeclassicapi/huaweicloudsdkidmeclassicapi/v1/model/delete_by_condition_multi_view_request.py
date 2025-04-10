@@ -29,7 +29,7 @@ class DeleteByConditionMultiViewRequest:
     }
 
     def __init__(self, mv_model_name=None, identifier=None, body=None):
-        """DeleteByConditionMultiViewRequest
+        r"""DeleteByConditionMultiViewRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteByConditionMultiViewRequest:
 
     @property
     def mv_model_name(self):
-        """Gets the mv_model_name of this DeleteByConditionMultiViewRequest.
+        r"""Gets the mv_model_name of this DeleteByConditionMultiViewRequest.
 
         **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、“_”，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
 
@@ -66,7 +66,7 @@ class DeleteByConditionMultiViewRequest:
 
     @mv_model_name.setter
     def mv_model_name(self, mv_model_name):
-        """Sets the mv_model_name of this DeleteByConditionMultiViewRequest.
+        r"""Sets the mv_model_name of this DeleteByConditionMultiViewRequest.
 
         **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、“_”，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
 
@@ -77,7 +77,7 @@ class DeleteByConditionMultiViewRequest:
 
     @property
     def identifier(self):
-        """Gets the identifier of this DeleteByConditionMultiViewRequest.
+        r"""Gets the identifier of this DeleteByConditionMultiViewRequest.
 
         应用ID。
 
@@ -88,7 +88,7 @@ class DeleteByConditionMultiViewRequest:
 
     @identifier.setter
     def identifier(self, identifier):
-        """Sets the identifier of this DeleteByConditionMultiViewRequest.
+        r"""Sets the identifier of this DeleteByConditionMultiViewRequest.
 
         应用ID。
 
@@ -99,7 +99,7 @@ class DeleteByConditionMultiViewRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteByConditionMultiViewRequest.
+        r"""Gets the body of this DeleteByConditionMultiViewRequest.
 
         :return: The body of this DeleteByConditionMultiViewRequest.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.RDMParamVODeleteByConditionVo`
@@ -108,7 +108,7 @@ class DeleteByConditionMultiViewRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteByConditionMultiViewRequest.
+        r"""Sets the body of this DeleteByConditionMultiViewRequest.
 
         :param body: The body of this DeleteByConditionMultiViewRequest.
         :type body: :class:`huaweicloudsdkidmeclassicapi.v1.RDMParamVODeleteByConditionVo`

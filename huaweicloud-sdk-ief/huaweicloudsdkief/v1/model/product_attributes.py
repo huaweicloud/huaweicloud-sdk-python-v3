@@ -27,7 +27,7 @@ class ProductAttributes:
     }
 
     def __init__(self, value=None, metadata=None):
-        """ProductAttributes
+        r"""ProductAttributes
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ProductAttributes:
 
     @property
     def value(self):
-        """Gets the value of this ProductAttributes.
+        r"""Gets the value of this ProductAttributes.
 
         产品属性值
 
@@ -61,7 +61,7 @@ class ProductAttributes:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ProductAttributes.
+        r"""Sets the value of this ProductAttributes.
 
         产品属性值
 
@@ -72,7 +72,7 @@ class ProductAttributes:
 
     @property
     def metadata(self):
-        """Gets the metadata of this ProductAttributes.
+        r"""Gets the metadata of this ProductAttributes.
 
         :return: The metadata of this ProductAttributes.
         :rtype: :class:`huaweicloudsdkief.v1.ProductMetadata`
@@ -81,7 +81,7 @@ class ProductAttributes:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ProductAttributes.
+        r"""Sets the metadata of this ProductAttributes.
 
         :param metadata: The metadata of this ProductAttributes.
         :type metadata: :class:`huaweicloudsdkief.v1.ProductMetadata`

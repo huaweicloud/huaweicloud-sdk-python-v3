@@ -34,7 +34,7 @@ class ServiceStageClient(Client):
         return client_builder
 
     def change_application(self, request):
-        """修改应用信息
+        r"""修改应用信息
 
         此API通过应用ID修改应用信息。
         
@@ -101,7 +101,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def change_application_configuration(self, request):
-        """修改应用配置信息
+        r"""修改应用配置信息
 
         通过此API修改应用配置信息。
         
@@ -168,7 +168,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def change_component(self, request):
-        """根据组件ID修改组件信息
+        r"""根据组件ID修改组件信息
 
         此API通过组件ID修改组件信息。
         
@@ -237,7 +237,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def change_environment(self, request):
-        """修改环境信息
+        r"""修改环境信息
 
         此API通过环境ID修改环境信息。
         
@@ -304,7 +304,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def change_instance(self, request):
-        """修改应用组件实例
+        r"""修改应用组件实例
 
         通过此API修改应用组件实例。
         
@@ -375,7 +375,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def change_resource_in_environment(self, request):
-        """修改环境资源
+        r"""修改环境资源
 
         此API用来修改环境资源。
         
@@ -442,7 +442,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def create_application(self, request):
-        """创建应用
+        r"""创建应用
 
         应用是一个功能相对完备的业务系统，由一个或多个特性相关的组件组成。
         
@@ -509,7 +509,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def create_cam_instance(self, request):
-        """创建、更新实例
+        r"""创建、更新实例
 
         创建、更新实例
 
@@ -572,7 +572,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def create_component(self, request):
-        """应用中创建组件
+        r"""应用中创建组件
 
         应用组件是组成应用的某个业务特性实现，以代码或者软件包为载体，可独立部署运行。
         
@@ -641,7 +641,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def create_environment(self, request):
-        """创建环境
+        r"""创建环境
 
         环境是用于应用部署和运行的计算、存储、网络等基础设施的集合。Servicestage把相同VPC下的CCE集群加上多个ELB、RDS、DCS实例组合为一个环境，如：开发环境，测试环境，预生产环境，生产环境。环境内网络互通，可以按环境维度来管理资源、部署服务，减少具体基础设施运维管理的复杂性。
         
@@ -708,7 +708,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def create_instance(self, request):
-        """创建组件实例
+        r"""创建组件实例
 
         此API用来创建应用组件实例。
         
@@ -777,7 +777,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def create_template(self, request):
-        """创建模板
+        r"""创建模板
 
         创建模板
 
@@ -840,7 +840,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def delete_application(self, request):
-        """根据应用ID删除应用
+        r"""根据应用ID删除应用
 
         此API通过应用ID删除应用。
         
@@ -905,7 +905,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def delete_application_configuration(self, request):
-        """删除应用配置
+        r"""删除应用配置
 
         通过此API删除应用配置信息。
         
@@ -972,7 +972,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def delete_component(self, request):
-        """根据应用组件ID删除应用组件
+        r"""根据应用组件ID删除应用组件
 
         此API通过应用组件ID删除应用组件。
         
@@ -1041,7 +1041,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def delete_environment(self, request):
-        """根据环境ID删除环境
+        r"""根据环境ID删除环境
 
         此API通过环境ID删除环境。
         
@@ -1106,7 +1106,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def delete_instance(self, request):
-        """删除应用组件实例
+        r"""删除应用组件实例
 
         通过此API删除应用组件实例。
         
@@ -1177,7 +1177,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def delete_instance_by_id(self, request):
-        """删除实例
+        r"""删除实例
 
         删除实例
 
@@ -1240,7 +1240,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def delete_template(self, request):
-        """删除模板
+        r"""删除模板
 
         删除模板
 
@@ -1303,7 +1303,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def deploy_instance(self, request):
-        """部署实例
+        r"""部署实例
 
         部署实例
 
@@ -1366,7 +1366,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def list_applications(self, request):
-        """获取所有应用
+        r"""获取所有应用
 
         通过此API可以获取所有已经创建的应用。
         
@@ -1437,7 +1437,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def list_component_overviews(self, request):
-        """获取应用所有组件部署信息
+        r"""获取应用所有组件部署信息
 
         通过此API获取应用下所有应用组件部署信息。
         
@@ -1510,7 +1510,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def list_components(self, request):
-        """获取应用所有组件
+        r"""获取应用所有组件
 
         通过此API获取应用下所有应用组件。
         
@@ -1583,7 +1583,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def list_environments(self, request):
-        """获取所有环境
+        r"""获取所有环境
 
         此API用来获取所有已经创建环境。
         
@@ -1654,7 +1654,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def list_instance_snapshots(self, request):
-        """获取组件实例快照
+        r"""获取组件实例快照
 
         通过此API获取应用组件实例快照信息。
         
@@ -1731,7 +1731,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def list_instances(self, request):
-        """获取应用组件实例
+        r"""获取应用组件实例
 
         通过此API获取组件下的所有组件实例。
         
@@ -1806,7 +1806,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def show_application_configuration(self, request):
-        """获取应用配置
+        r"""获取应用配置
 
         通过此API获取应用配置信息。
         
@@ -1873,7 +1873,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def show_application_detail(self, request):
-        """根据应用ID获取应用详细信息
+        r"""根据应用ID获取应用详细信息
 
         此API通过应用ID获取应用详细信息。
         
@@ -1938,7 +1938,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def show_component_detail(self, request):
-        """根据组件ID获取应用组件信息
+        r"""根据组件ID获取应用组件信息
 
         通过组件ID获取应用组件信息。
         
@@ -2005,7 +2005,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def show_environment_detail(self, request):
-        """根据环境ID获取环境详细信息
+        r"""根据环境ID获取环境详细信息
 
         此API通过环境ID获取环境详细信息。
         
@@ -2070,7 +2070,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def show_instance_detail(self, request):
-        """根据实例ID获取实例详细信息
+        r"""根据实例ID获取实例详细信息
 
         此API通过实例ID获取实例详细信息。
         
@@ -2139,7 +2139,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def show_job_detail(self, request):
-        """获取部署任务详细信息
+        r"""获取部署任务详细信息
 
         通过此API获取部署任务详细信息。
         
@@ -2212,7 +2212,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def update_instance_action(self, request):
-        """对组件实例的操作
+        r"""对组件实例的操作
 
         通过此API获取对组件实例的操作。
         
@@ -2283,7 +2283,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def update_template(self, request):
-        """更新模板
+        r"""更新模板
 
         更新模板
 
@@ -2348,7 +2348,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def create_file(self, request):
-        """创建仓库文件
+        r"""创建仓库文件
 
         在指定仓库项目下创建文件。
         
@@ -2423,7 +2423,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def create_hook(self, request):
-        """创建项目hook
+        r"""创建项目hook
 
         创建指定项目的hook。
         
@@ -2494,7 +2494,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def create_o_auth(self, request):
-        """创建OAuth授权
+        r"""创建OAuth授权
 
         创建指定Git仓库类型的OAuth授权。
         
@@ -2563,7 +2563,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def create_password_auth(self, request):
-        """创建口令授权
+        r"""创建口令授权
 
         创建指定Git仓库类型的口令授权。
         
@@ -2630,7 +2630,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def create_personal_auth(self, request):
-        """创建私人令牌授权
+        r"""创建私人令牌授权
 
         创建指定Git仓库类型的私人令牌授权。
         
@@ -2697,7 +2697,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def create_project(self, request):
-        """创建软件仓库项目
+        r"""创建软件仓库项目
 
         创建指定组织下的软件仓库项目。
         
@@ -2766,7 +2766,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def create_tag(self, request):
-        """创建项目tag标签
+        r"""创建项目tag标签
 
         创建指定项目的tag标签。
         
@@ -2839,7 +2839,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def delete_authorize(self, request):
-        """删除仓库授权
+        r"""删除仓库授权
 
         通过名称删除仓库授权。
         
@@ -2904,7 +2904,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def delete_file(self, request):
-        """删除仓库文件
+        r"""删除仓库文件
 
         删除指定项目仓库下的文件。
         
@@ -2981,7 +2981,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def delete_hook(self, request):
-        """删除项目hook
+        r"""删除项目hook
 
         删除指定项目的hook。
         
@@ -3052,7 +3052,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def delete_tag(self, request):
-        """删除项目tag标签
+        r"""删除项目tag标签
 
         删除指定项目的tag标签。
         
@@ -3123,7 +3123,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def list_authorizations(self, request):
-        """获取仓库授权列表
+        r"""获取仓库授权列表
 
         获取所有Git仓库授权信息。
         
@@ -3186,7 +3186,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def list_branches(self, request):
-        """获取项目分支
+        r"""获取项目分支
 
         获取指定项目的所有分支列表。
         
@@ -3255,7 +3255,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def list_commits(self, request):
-        """获取项目commit提交记录
+        r"""获取项目commit提交记录
 
         获取指定项目的最近10次commit提交记录。
         
@@ -3326,7 +3326,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def list_hooks(self, request):
-        """获取项目hooks
+        r"""获取项目hooks
 
         获取指定项目的所有hooks
         
@@ -3395,7 +3395,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def list_namespaces(self, request):
-        """获取仓库的namespaces
+        r"""获取仓库的namespaces
 
         获取仓库的namespaces。
         
@@ -3460,7 +3460,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def list_projects(self, request):
-        """获取组织下所有项目
+        r"""获取组织下所有项目
 
         获取指定组织下的所有项目。
         
@@ -3527,7 +3527,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def list_tags(self, request):
-        """获取项目的所有tag标签
+        r"""获取项目的所有tag标签
 
         获取指定项目的所有tag标签。
         
@@ -3596,7 +3596,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def list_trees(self, request):
-        """获取仓库文件列表
+        r"""获取仓库文件列表
 
         获取指定项目仓库的文件列表。
         
@@ -3667,7 +3667,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def show_content(self, request):
-        """获取仓库文件内容
+        r"""获取仓库文件内容
 
         获取指定项目仓库下文件的内容。
         
@@ -3740,7 +3740,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def show_project_detail(self, request):
-        """通过clone url 获取仓库信息
+        r"""通过clone url 获取仓库信息
 
         通过指定的clone url 获取仓库信息。
         
@@ -3807,7 +3807,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def show_redirect_url(self, request):
-        """获取授权重定向URL
+        r"""获取授权重定向URL
 
         获取指定Git仓库类型的授权重定向URL。
         
@@ -3874,7 +3874,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def update_file(self, request):
-        """更新仓库文件内容
+        r"""更新仓库文件内容
 
         更新指定项目仓库下的文件内容。
         
@@ -3949,7 +3949,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def list_flavors(self, request):
-        """获取所有支持的应用资源规格
+        r"""获取所有支持的应用资源规格
 
         通过此API获取所用支持的应用资源规格。
         
@@ -4012,7 +4012,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def list_runtimes(self, request):
-        """获取所有支持的应用组件运行时类型
+        r"""获取所有支持的应用组件运行时类型
 
         此API用来获取所有支持应用组件运行时类型。
         
@@ -4075,7 +4075,7 @@ class ServiceStageClient(Client):
         return http_info
 
     def list_templates(self, request):
-        """获取所有支持的应用组件模板
+        r"""获取所有支持的应用组件模板
 
         此API用来获取所有内置应用组件模板。
         

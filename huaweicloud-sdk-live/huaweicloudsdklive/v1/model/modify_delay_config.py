@@ -29,7 +29,7 @@ class ModifyDelayConfig:
     }
 
     def __init__(self, play_domain=None, app=None, delay=None):
-        """ModifyDelayConfig
+        r"""ModifyDelayConfig
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ModifyDelayConfig:
 
     @property
     def play_domain(self):
-        """Gets the play_domain of this ModifyDelayConfig.
+        r"""Gets the play_domain of this ModifyDelayConfig.
 
         播放域名
 
@@ -66,7 +66,7 @@ class ModifyDelayConfig:
 
     @play_domain.setter
     def play_domain(self, play_domain):
-        """Sets the play_domain of this ModifyDelayConfig.
+        r"""Sets the play_domain of this ModifyDelayConfig.
 
         播放域名
 
@@ -77,7 +77,7 @@ class ModifyDelayConfig:
 
     @property
     def app(self):
-        """Gets the app of this ModifyDelayConfig.
+        r"""Gets the app of this ModifyDelayConfig.
 
         应用名称，默认为live
 
@@ -88,7 +88,7 @@ class ModifyDelayConfig:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this ModifyDelayConfig.
+        r"""Sets the app of this ModifyDelayConfig.
 
         应用名称，默认为live
 
@@ -99,7 +99,7 @@ class ModifyDelayConfig:
 
     @property
     def delay(self):
-        """Gets the delay of this ModifyDelayConfig.
+        r"""Gets the delay of this ModifyDelayConfig.
 
         延时时间，单位：ms。  包含如下取值： - 2000（低）。 - 4000（中）。 - 6000（高）。
 
@@ -110,7 +110,7 @@ class ModifyDelayConfig:
 
     @delay.setter
     def delay(self, delay):
-        """Sets the delay of this ModifyDelayConfig.
+        r"""Sets the delay of this ModifyDelayConfig.
 
         延时时间，单位：ms。  包含如下取值： - 2000（低）。 - 4000（中）。 - 6000（高）。
 

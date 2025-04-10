@@ -29,7 +29,7 @@ class OpExtendInfoCommon:
     }
 
     def __init__(self, progress=None, request_id=None, task_id=None):
-        """OpExtendInfoCommon
+        r"""OpExtendInfoCommon
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class OpExtendInfoCommon:
 
     @property
     def progress(self):
-        """Gets the progress of this OpExtendInfoCommon.
+        r"""Gets the progress of this OpExtendInfoCommon.
 
         进度，取值为0-100
 
@@ -66,7 +66,7 @@ class OpExtendInfoCommon:
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this OpExtendInfoCommon.
+        r"""Sets the progress of this OpExtendInfoCommon.
 
         进度，取值为0-100
 
@@ -77,7 +77,7 @@ class OpExtendInfoCommon:
 
     @property
     def request_id(self):
-        """Gets the request_id of this OpExtendInfoCommon.
+        r"""Gets the request_id of this OpExtendInfoCommon.
 
         请求id
 
@@ -88,7 +88,7 @@ class OpExtendInfoCommon:
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this OpExtendInfoCommon.
+        r"""Sets the request_id of this OpExtendInfoCommon.
 
         请求id
 
@@ -99,7 +99,7 @@ class OpExtendInfoCommon:
 
     @property
     def task_id(self):
-        """Gets the task_id of this OpExtendInfoCommon.
+        r"""Gets the task_id of this OpExtendInfoCommon.
 
         备份任务id
 
@@ -110,7 +110,7 @@ class OpExtendInfoCommon:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this OpExtendInfoCommon.
+        r"""Sets the task_id of this OpExtendInfoCommon.
 
         备份任务id
 

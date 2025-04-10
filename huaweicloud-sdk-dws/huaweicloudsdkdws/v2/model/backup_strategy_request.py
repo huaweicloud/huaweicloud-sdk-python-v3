@@ -33,7 +33,7 @@ class BackupStrategyRequest:
     }
 
     def __init__(self, policy_id=None, policy_name=None, backup_strategy=None, backup_type=None, backup_level=None):
-        """BackupStrategyRequest
+        r"""BackupStrategyRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class BackupStrategyRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this BackupStrategyRequest.
+        r"""Gets the policy_id of this BackupStrategyRequest.
 
         策略ID。
 
@@ -82,7 +82,7 @@ class BackupStrategyRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this BackupStrategyRequest.
+        r"""Sets the policy_id of this BackupStrategyRequest.
 
         策略ID。
 
@@ -93,7 +93,7 @@ class BackupStrategyRequest:
 
     @property
     def policy_name(self):
-        """Gets the policy_name of this BackupStrategyRequest.
+        r"""Gets the policy_name of this BackupStrategyRequest.
 
         策略名称。添加备份策略时为必选字段。策略名称在4位到92位之间，必须以字母开头，不区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他特殊字符，并且名称唯一。
 
@@ -104,7 +104,7 @@ class BackupStrategyRequest:
 
     @policy_name.setter
     def policy_name(self, policy_name):
-        """Sets the policy_name of this BackupStrategyRequest.
+        r"""Sets the policy_name of this BackupStrategyRequest.
 
         策略名称。添加备份策略时为必选字段。策略名称在4位到92位之间，必须以字母开头，不区分大小写，可以包含字母、数字、中划线或者下划线，不能包含其他特殊字符，并且名称唯一。
 
@@ -115,7 +115,7 @@ class BackupStrategyRequest:
 
     @property
     def backup_strategy(self):
-        """Gets the backup_strategy of this BackupStrategyRequest.
+        r"""Gets the backup_strategy of this BackupStrategyRequest.
 
         执行策略。添加备份策略时为必选字段。符合Cron表达式格式。
 
@@ -126,7 +126,7 @@ class BackupStrategyRequest:
 
     @backup_strategy.setter
     def backup_strategy(self, backup_strategy):
-        """Sets the backup_strategy of this BackupStrategyRequest.
+        r"""Sets the backup_strategy of this BackupStrategyRequest.
 
         执行策略。添加备份策略时为必选字段。符合Cron表达式格式。
 
@@ -137,7 +137,7 @@ class BackupStrategyRequest:
 
     @property
     def backup_type(self):
-        """Gets the backup_type of this BackupStrategyRequest.
+        r"""Gets the backup_type of this BackupStrategyRequest.
 
         备份类型： - full：全量。 - increment：增量。
 
@@ -148,7 +148,7 @@ class BackupStrategyRequest:
 
     @backup_type.setter
     def backup_type(self, backup_type):
-        """Sets the backup_type of this BackupStrategyRequest.
+        r"""Sets the backup_type of this BackupStrategyRequest.
 
         备份类型： - full：全量。 - increment：增量。
 
@@ -159,7 +159,7 @@ class BackupStrategyRequest:
 
     @property
     def backup_level(self):
-        """Gets the backup_level of this BackupStrategyRequest.
+        r"""Gets the backup_level of this BackupStrategyRequest.
 
         备份级别： - cluster：集群级。
 
@@ -170,7 +170,7 @@ class BackupStrategyRequest:
 
     @backup_level.setter
     def backup_level(self, backup_level):
-        """Sets the backup_level of this BackupStrategyRequest.
+        r"""Sets the backup_level of this BackupStrategyRequest.
 
         备份级别： - cluster：集群级。
 

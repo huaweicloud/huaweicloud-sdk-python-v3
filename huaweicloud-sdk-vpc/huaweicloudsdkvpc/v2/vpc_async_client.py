@@ -34,7 +34,7 @@ class VpcAsyncClient(Client):
         return client_builder
 
     def accept_vpc_peering_async(self, request):
-        """接受对等连接请求
+        r"""接受对等连接请求
 
         租户A名下的VPC申请和租户B的VPC建立对等连接，需要等待租户B接受该请求。此接口用于租户接受其他租户发起的对等连接请求。
         
@@ -99,7 +99,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def associate_route_table_async(self, request):
-        """子网关联路由表
+        r"""子网关联路由表
 
         路由表关联子网。子网关联路由表A后，再关联B，不需要先跟路由表A解关联再关联路由表B
         
@@ -166,7 +166,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def batch_create_security_group_tags_async(self, request):
-        """批量创建安全组资源标签
+        r"""批量创建安全组资源标签
 
         为指定的安全组资源实例批量添加标签。
         此接口为幂等接口：创建时如果请求体中存在重复key则报错。创建时，不允许设置重复key数据，如果数据库已存在该key，就覆盖value的值。
@@ -234,7 +234,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def batch_create_subnet_tags_async(self, request):
-        """批量创建子网资源标签
+        r"""批量创建子网资源标签
 
         为指定的子网资源实例批量添加标签。
         此接口为幂等接口：创建时如果请求体中存在重复key则报错。创建时，不允许设置重复key数据，如果数据库已存在该key，就覆盖value的值。
@@ -302,7 +302,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def batch_delete_security_group_tags_async(self, request):
-        """批量删除安全组资源标签
+        r"""批量删除安全组资源标签
 
         为指定的安全组资源实例批量删除标签
         此接口为幂等接口：删除时，如果删除的标签不存在，默认处理成功；删除时不对标签字符集范围做校验。删除时tags结构体不能缺失，key不能为空，或者空字符串。
@@ -370,7 +370,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def batch_delete_subnet_tags_async(self, request):
-        """批量删除子网资源标签
+        r"""批量删除子网资源标签
 
         为指定的子网资源实例批量删除标签
         此接口为幂等接口：删除时，如果删除的标签不存在，默认处理成功；删除时不对标签字符集范围做校验。删除时tags结构体不能缺失，key不能为空，或者空字符串。
@@ -438,7 +438,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def create_flow_log_async(self, request):
-        """创建流日志
+        r"""创建流日志
 
         创建流日志。
         流日志功能可以记录虚拟私有云中的流量信息，帮助您检查和优化安全组和网络ACL防火墙控制规则、监控网络流量、进行网络攻击分析等。
@@ -505,7 +505,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def create_port_async(self, request):
-        """创建端口
+        r"""创建端口
 
         创建端口。
         
@@ -570,7 +570,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def create_route_table_async(self, request):
-        """创建路由表
+        r"""创建路由表
 
         创建路由表
         
@@ -635,7 +635,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def create_security_group_async(self, request):
-        """创建安全组
+        r"""创建安全组
 
         创建安全组。
         
@@ -700,7 +700,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def create_security_group_rule_async(self, request):
-        """创建安全组规则
+        r"""创建安全组规则
 
         创建安全组规则。
         
@@ -765,7 +765,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def create_security_group_tag_async(self, request):
-        """创建安全组资源标签
+        r"""创建安全组资源标签
 
         给指定安全组资源实例增加标签信息。
         此接口为幂等接口：创建时，如果创建的标签已经存在（key相同），则覆盖。
@@ -833,7 +833,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def create_subnet_async(self, request):
-        """创建子网
+        r"""创建子网
 
         创建子网。
         
@@ -898,7 +898,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def create_subnet_tag_async(self, request):
-        """创建子网资源标签
+        r"""创建子网资源标签
 
         给指定子网资源实例增加标签信息。
         此接口为幂等接口：创建时，如果创建的标签已经存在（key相同），则覆盖。
@@ -966,7 +966,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def create_vpc_peering_async(self, request):
-        """创建对等连接
+        r"""创建对等连接
 
         创建对等连接。
         
@@ -1031,7 +1031,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def delete_flow_log_async(self, request):
-        """删除流日志
+        r"""删除流日志
 
         删除流日志
         
@@ -1096,7 +1096,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def delete_port_async(self, request):
-        """删除端口
+        r"""删除端口
 
         删除端口。
         
@@ -1161,7 +1161,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def delete_route_table_async(self, request):
-        """删除路由表
+        r"""删除路由表
 
         删除路由表
         
@@ -1226,7 +1226,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def delete_security_group_async(self, request):
-        """删除安全组
+        r"""删除安全组
 
         删除安全组。
         
@@ -1291,7 +1291,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def delete_security_group_rule_async(self, request):
-        """删除安全组规则
+        r"""删除安全组规则
 
         删除安全组规则。
         
@@ -1356,7 +1356,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def delete_security_group_tag_async(self, request):
-        """删除安全组资源标签
+        r"""删除安全组资源标签
 
         删除指定安全组资源实例的标签信息。
         该接口为幂等接口：删除的key不存在报404，Key不能为空或者空字符串
@@ -1424,7 +1424,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def delete_subnet_async(self, request):
-        """删除子网
+        r"""删除子网
 
         删除子网
         
@@ -1491,7 +1491,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def delete_subnet_tag_async(self, request):
-        """删除子网资源标签
+        r"""删除子网资源标签
 
         删除指定子网资源实例的标签信息。
         该接口为幂等接口：删除的key不存在报404，Key不能为空或者空字符串
@@ -1559,7 +1559,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def delete_vpc_peering_async(self, request):
-        """删除对等连接
+        r"""删除对等连接
 
         删除对等连接。
         可以在在本端或对端任何一端删除对等连接。
@@ -1625,7 +1625,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def disassociate_route_table_async(self, request):
-        """子网解关联路由表
+        r"""子网解关联路由表
 
         子网解关联路由表
         
@@ -1692,7 +1692,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def list_flow_logs_async(self, request):
-        """查询流日志列表
+        r"""查询流日志列表
 
         查询提交请求的租户的所有流日志列表，并根据过滤条件进行过滤
         
@@ -1781,7 +1781,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def list_ports_async(self, request):
-        """查询端口列表
+        r"""查询端口列表
 
         查询提交请求的租户的所有端口，单次查询最多返回2000条数据。
         
@@ -1875,7 +1875,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def list_route_tables_async(self, request):
-        """查询路由表列表
+        r"""查询路由表列表
 
         查询提交请求的帐户的所有路由表列表，并根据过滤条件进行过滤
         
@@ -1948,7 +1948,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def list_security_group_rules_async(self, request):
-        """查询安全组规则列表
+        r"""查询安全组规则列表
 
         查询安全组规则列表。
         
@@ -2019,7 +2019,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def list_security_group_tags_async(self, request):
-        """查询安全组项目标签
+        r"""查询安全组项目标签
 
         查询租户在指定区域和实例类型的所有标签集合
         
@@ -2082,7 +2082,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def list_security_groups_async(self, request):
-        """查询安全组列表
+        r"""查询安全组列表
 
         查询安全组列表
         
@@ -2153,7 +2153,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def list_security_groups_by_tags_async(self, request):
-        """查询安全组资源实例
+        r"""查询安全组资源实例
 
         使用标签过滤实例
         
@@ -2218,7 +2218,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def list_subnet_tags_async(self, request):
-        """查询子网项目标签
+        r"""查询子网项目标签
 
         查询租户在指定区域和实例类型的所有标签集合
         
@@ -2281,7 +2281,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def list_subnets_async(self, request):
-        """查询子网列表
+        r"""查询子网列表
 
         查询子网列表
         
@@ -2350,7 +2350,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def list_subnets_by_tags_async(self, request):
-        """查询子网资源实例
+        r"""查询子网资源实例
 
         使用标签过滤实例
         
@@ -2415,7 +2415,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def list_vpc_peerings_async(self, request):
-        """查询对等连接列表
+        r"""查询对等连接列表
 
         查询提交请求的租户的所有对等连接。根据过滤条件进行过滤。
         
@@ -2492,7 +2492,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def reject_vpc_peering_async(self, request):
-        """拒绝对等连接请求
+        r"""拒绝对等连接请求
 
         租户A名下的VPC申请和租户B的VPC建立对等连接，需要等待租户B接受该请求。此接口用于租户拒绝其他租户发起的对等连接请求。
         
@@ -2557,7 +2557,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def show_flow_log_async(self, request):
-        """查询流日志
+        r"""查询流日志
 
         查询流日志详情
         
@@ -2622,7 +2622,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def show_port_async(self, request):
-        """查询端口
+        r"""查询端口
 
         查询单个端口详情。
         
@@ -2687,7 +2687,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def show_quota_async(self, request):
-        """查询配额
+        r"""查询配额
 
         查询单租户在VPC服务下的网络资源配额，包括vpc配额、子网配额、安全组配额、安全组规则配额、弹性公网IP配额，vpn配额等。
         
@@ -2752,7 +2752,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def show_route_table_async(self, request):
-        """查询路由表
+        r"""查询路由表
 
         查询路由表详情
         
@@ -2817,7 +2817,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def show_security_group_async(self, request):
-        """查询安全组
+        r"""查询安全组
 
         查询单个安全组详情。
         
@@ -2882,7 +2882,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def show_security_group_rule_async(self, request):
-        """查询安全组规则
+        r"""查询安全组规则
 
         查询单个安全组规则详情
         
@@ -2947,7 +2947,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def show_security_group_tags_async(self, request):
-        """查询安全组资源标签
+        r"""查询安全组资源标签
 
         查询指定安全组实例的标签信息。
         
@@ -3012,7 +3012,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def show_subnet_async(self, request):
-        """查询子网
+        r"""查询子网
 
         查询子网详情。
         
@@ -3077,7 +3077,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def show_subnet_tags_async(self, request):
-        """查询子网资源标签
+        r"""查询子网资源标签
 
         查询指定子网实例的标签信息。
         
@@ -3142,7 +3142,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def show_vpc_peering_async(self, request):
-        """查询对等连接
+        r"""查询对等连接
 
         查询对等连接详情。
         
@@ -3207,7 +3207,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def update_flow_log_async(self, request):
-        """更新流日志
+        r"""更新流日志
 
         更新流日志
         
@@ -3274,7 +3274,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def update_port_async(self, request):
-        """更新端口
+        r"""更新端口
 
         更新端口。
         
@@ -3341,7 +3341,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def update_route_table_async(self, request):
-        """更新路由表
+        r"""更新路由表
 
         更新路由表，包括可以更新路由表的名称，描述，以及新增、更新、删除路由条目
         
@@ -3408,7 +3408,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def update_subnet_async(self, request):
-        """更新子网
+        r"""更新子网
 
         更新子网。
         
@@ -3477,7 +3477,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def update_vpc_peering_async(self, request):
-        """更新对等连接
+        r"""更新对等连接
 
         更新对等连接。
         
@@ -3544,7 +3544,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def create_privateip_async(self, request):
-        """申请私有IP
+        r"""申请私有IP
 
         申请私有IP。
         
@@ -3609,7 +3609,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def delete_privateip_async(self, request):
-        """删除私有IP
+        r"""删除私有IP
 
         删除私有IP。
         
@@ -3674,7 +3674,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def list_privateips_async(self, request):
-        """查询私有IP列表
+        r"""查询私有IP列表
 
         查询指定子网下的私有IP列表。
         
@@ -3743,7 +3743,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def show_network_ip_availabilities_async(self, request):
-        """查询网络IP使用情况
+        r"""查询网络IP使用情况
 
         显示一个指定网络中的IPv4地址使用情况。
         包括此网络中的IP总数以及已用IP总数，以及网络下每一个子网的IP地址总数和可用IP地址总数。
@@ -3815,7 +3815,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def show_privateip_async(self, request):
-        """查询私有IP
+        r"""查询私有IP
 
         指定ID查询私有IP。
         
@@ -3880,7 +3880,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_add_router_interface_async(self, request):
-        """路由器添加接口
+        r"""路由器添加接口
 
         添加路由器接口。
         
@@ -3947,7 +3947,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_create_network_async(self, request):
-        """创建网络
+        r"""创建网络
 
         创建网络
         
@@ -4012,7 +4012,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_create_port_async(self, request):
-        """创建端口
+        r"""创建端口
 
         创建端口。
         
@@ -4077,7 +4077,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_create_router_async(self, request):
-        """创建路由器
+        r"""创建路由器
 
         创建路由器。
         
@@ -4142,7 +4142,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_create_security_group_async(self, request):
-        """创建安全组
+        r"""创建安全组
 
         创建安全组
         
@@ -4207,7 +4207,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_create_security_group_rule_async(self, request):
-        """创建安全组规则
+        r"""创建安全组规则
 
         创建安全组规则
         
@@ -4272,7 +4272,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_create_subnet_async(self, request):
-        """创建子网
+        r"""创建子网
 
         创建子网。
         
@@ -4337,7 +4337,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_delete_network_async(self, request):
-        """删除网络
+        r"""删除网络
 
         删除网络
         
@@ -4402,7 +4402,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_delete_port_async(self, request):
-        """删除端口
+        r"""删除端口
 
         删除端口。
         
@@ -4467,7 +4467,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_delete_router_async(self, request):
-        """删除路由器
+        r"""删除路由器
 
         删除路由器
         
@@ -4532,7 +4532,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_delete_security_group_async(self, request):
-        """删除安全组
+        r"""删除安全组
 
         删除安全组
         
@@ -4597,7 +4597,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_delete_security_group_rule_async(self, request):
-        """删除安全组规则
+        r"""删除安全组规则
 
         删除安全组规则
         
@@ -4662,7 +4662,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_delete_subnet_async(self, request):
-        """删除子网
+        r"""删除子网
 
         删除子网
         
@@ -4727,7 +4727,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_list_networks_async(self, request):
-        """查询网络列表
+        r"""查询网络列表
 
         查询提交请求的租户的所有网络，单次查询最多返回2000条数据，超过2000后会返回分页标记。分页查询请参考分页查询。
         
@@ -4810,7 +4810,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_list_ports_async(self, request):
-        """查询端口列表
+        r"""查询端口列表
 
         查询提交请求的租户的所有端口，单次查询最多返回2000条数据，超过2000后会返回分页标记。分页查询请参考分页查询。
         
@@ -4901,7 +4901,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_list_routers_async(self, request):
-        """查询路由器列表
+        r"""查询路由器列表
 
         查询提交请求的租户有权限操作的所有路由器信息，单次查询最多返回2000条数据，超过2000后会返回分页标记。
         
@@ -4976,7 +4976,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_list_security_group_rules_async(self, request):
-        """查询安全组规则列表
+        r"""查询安全组规则列表
 
         查询提交请求的租户有权限查看的所有安全组规则。单次查询最多返回2000条数据，超过2000后会返回分页标记。分页查询请参考分页查询
         
@@ -5065,7 +5065,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_list_security_groups_async(self, request):
-        """查询安全组列表
+        r"""查询安全组列表
 
         查询提交请求租户的所有安全组，单次查询最多返回2000条数据，超过2000后会返回分页标记。分页查询请参考分页查询 。
         
@@ -5140,7 +5140,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_list_subnets_async(self, request):
-        """查询子网列表
+        r"""查询子网列表
 
         查询提交请求租户的所有子网，单次查询最多返回2000条数据，超过2000后会返回分页标记。分页查询请参考分页查询 。
         
@@ -5223,7 +5223,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_remove_router_interface_async(self, request):
-        """路由器删除接口
+        r"""路由器删除接口
 
         删除路由器接口。
         
@@ -5290,7 +5290,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_show_network_async(self, request):
-        """查询网络
+        r"""查询网络
 
         查询指定的网络详情
         
@@ -5355,7 +5355,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_show_port_async(self, request):
-        """查询端口
+        r"""查询端口
 
         查询端口详情。
         
@@ -5420,7 +5420,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_show_router_async(self, request):
-        """查询路由器
+        r"""查询路由器
 
         查询路由器详情。
         
@@ -5485,7 +5485,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_show_security_group_async(self, request):
-        """查询安全组
+        r"""查询安全组
 
         查询安全组详情
         
@@ -5550,7 +5550,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_show_security_group_rule_async(self, request):
-        """查询安全组规则
+        r"""查询安全组规则
 
         查询安全组规则详情。
         
@@ -5615,7 +5615,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_show_subnet_async(self, request):
-        """查询子网
+        r"""查询子网
 
         查询子网详情
         
@@ -5680,7 +5680,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_update_network_async(self, request):
-        """更新网络
+        r"""更新网络
 
         更新网络
         
@@ -5747,7 +5747,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_update_port_async(self, request):
-        """更新端口
+        r"""更新端口
 
         更新端口
         
@@ -5814,7 +5814,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_update_router_async(self, request):
-        """更新路由器
+        r"""更新路由器
 
         更新路由器。
         
@@ -5881,7 +5881,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_update_security_group_async(self, request):
-        """更新安全组
+        r"""更新安全组
 
         更新安全组
         
@@ -5948,7 +5948,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_update_subnet_async(self, request):
-        """更新子网
+        r"""更新子网
 
         更新子网
         
@@ -6015,7 +6015,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_add_firewall_rule_async(self, request):
-        """插入网络ACL规则
+        r"""插入网络ACL规则
 
         插入一条网络ACL规则到某一网络ACL策略中。
         
@@ -6082,7 +6082,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_create_firewall_group_async(self, request):
-        """创建网络ACL组
+        r"""创建网络ACL组
 
         创建网络ACL组
         
@@ -6147,7 +6147,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_create_firewall_policy_async(self, request):
-        """创建网络ACL策略
+        r"""创建网络ACL策略
 
         创建网络ACL策略。
         
@@ -6212,7 +6212,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_create_firewall_rule_async(self, request):
-        """创建网络ACL规则
+        r"""创建网络ACL规则
 
         创建网络ACL规则。
         
@@ -6277,7 +6277,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_delete_firewall_group_async(self, request):
-        """删除网络ACL组
+        r"""删除网络ACL组
 
         删除网络ACL组
         
@@ -6342,7 +6342,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_delete_firewall_policy_async(self, request):
-        """删除网络ACL策略
+        r"""删除网络ACL策略
 
         删除网络ACL策略。
         
@@ -6407,7 +6407,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_delete_firewall_rule_async(self, request):
-        """删除网络ACL规则
+        r"""删除网络ACL规则
 
         删除网络ACL规则。
         
@@ -6472,7 +6472,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_list_firewall_groups_async(self, request):
-        """查询所有网络ACL组
+        r"""查询所有网络ACL组
 
         查询提交请求的租户有权限操作的所有网络ACL组信息。单次查询最多返回2000条数据，超过2000后会返回分页标记。
         
@@ -6552,7 +6552,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_list_firewall_policies_async(self, request):
-        """查询所有网络ACL策略
+        r"""查询所有网络ACL策略
 
         查询提交请求的租户有权限操作的所有网络ACL策略信息。单次查询最多返回2000条数据，超过2000后会返回分页标记。
         
@@ -6630,7 +6630,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_list_firewall_rules_async(self, request):
-        """查询所有网络ACL规则
+        r"""查询所有网络ACL规则
 
         查询提交请求的租户有权限操作的所有网络ACL规则信息。单次查询最多返回2000条数据，超过2000后会返回分页标记。
         
@@ -6710,7 +6710,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_remove_firewall_rule_async(self, request):
-        """移除网络ACL规则
+        r"""移除网络ACL规则
 
         从某一网络ACL策略中移除一条网络ACL规则。
         
@@ -6777,7 +6777,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_show_firewall_group_async(self, request):
-        """查询特定网络ACL组详情
+        r"""查询特定网络ACL组详情
 
         查询特定网络ACL组详情。
         
@@ -6842,7 +6842,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_show_firewall_policy_async(self, request):
-        """查询特定网络ACL策略详情
+        r"""查询特定网络ACL策略详情
 
         查询特定网络ACL策略详情。
         
@@ -6907,7 +6907,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_show_firewall_rule_async(self, request):
-        """查询特定网络ACL规则
+        r"""查询特定网络ACL规则
 
         查询特定网络ACL规则。
         
@@ -6972,7 +6972,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_update_firewall_group_async(self, request):
-        """更新网络ACL组
+        r"""更新网络ACL组
 
         更新网络ACL组。
         
@@ -7039,7 +7039,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_update_firewall_policy_async(self, request):
-        """更新网络ACL策略
+        r"""更新网络ACL策略
 
         更新网络ACL策略。
         
@@ -7106,7 +7106,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def neutron_update_firewall_rule_async(self, request):
-        """更新网络ACL规则
+        r"""更新网络ACL规则
 
         更新网络ACL规则。
         
@@ -7173,7 +7173,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def list_api_version_async(self, request):
-        """查询API版本信息列表
+        r"""查询API版本信息列表
 
         返回当前API所有可用的版本（仅针对OpenStack原生接口）。
         
@@ -7236,7 +7236,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def batch_create_vpc_tags_async(self, request):
-        """批量创建VPC资源标签
+        r"""批量创建VPC资源标签
 
         为指定的VPC资源实例批量添加标签。
         此接口为幂等接口：创建时如果请求体中存在重复key则报错。创建时，不允许设置重复key数据，如果数据库已存在该key，就覆盖value的值。
@@ -7304,7 +7304,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def batch_delete_vpc_tags_async(self, request):
-        """批量删除VPC资源标签
+        r"""批量删除VPC资源标签
 
         为指定的VPC资源实例批量删除标签。
         此接口为幂等接口：删除时，如果删除的标签不存在，默认处理成功；删除时不对标签字符集范围做校验。删除时tags结构体不能缺失，key不能为空，或者空字符串。
@@ -7372,7 +7372,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def create_vpc_async(self, request):
-        """创建VPC
+        r"""创建VPC
 
         创建虚拟私有云。
         
@@ -7437,7 +7437,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def create_vpc_resource_tag_async(self, request):
-        """创建VPC资源标签
+        r"""创建VPC资源标签
 
         给指定VPC资源实例增加标签信息
         此接口为幂等接口：创建时，如果创建的标签已经存在（key相同），则覆盖。
@@ -7505,7 +7505,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def create_vpc_route_async(self, request):
-        """创建VPC路由
+        r"""创建VPC路由
 
         创建路由
         
@@ -7570,7 +7570,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def delete_vpc_async(self, request):
-        """删除VPC
+        r"""删除VPC
 
         删除虚拟私有云。
         
@@ -7635,7 +7635,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def delete_vpc_route_async(self, request):
-        """删除VPC路由
+        r"""删除VPC路由
 
         删除路由
         
@@ -7700,7 +7700,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def delete_vpc_tag_async(self, request):
-        """删除VPC资源标签
+        r"""删除VPC资源标签
 
         删除指定VPC资源实例的标签信息
         该接口为幂等接口：删除的key不存在报404，Key不能为空或者空字符串
@@ -7768,7 +7768,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def list_vpc_routes_async(self, request):
-        """查询VPC路由列表
+        r"""查询VPC路由列表
 
         查询提交请求的租户的所有路由列表，并根据过滤条件进行过滤。
         
@@ -7845,7 +7845,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def list_vpc_tags_async(self, request):
-        """查询VPC项目标签
+        r"""查询VPC项目标签
 
         查询租户在指定区域和实例类型的所有标签集合
         
@@ -7908,7 +7908,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def list_vpcs_async(self, request):
-        """查询VPC列表
+        r"""查询VPC列表
 
         查询虚拟私有云列表。
         
@@ -7979,7 +7979,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def list_vpcs_by_tags_async(self, request):
-        """查询VPC资源实例
+        r"""查询VPC资源实例
 
         使用标签过滤实例。
         
@@ -8044,7 +8044,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def show_vpc_async(self, request):
-        """查询VPC
+        r"""查询VPC
 
         查询虚拟私有云。
         
@@ -8109,7 +8109,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def show_vpc_route_async(self, request):
-        """查询VPC路由
+        r"""查询VPC路由
 
         查询路由详情
         
@@ -8174,7 +8174,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def show_vpc_tags_async(self, request):
-        """查询VPC资源标签
+        r"""查询VPC资源标签
 
         查询指定VPC实例的标签信息
         
@@ -8239,7 +8239,7 @@ class VpcAsyncClient(Client):
         return http_info
 
     def update_vpc_async(self, request):
-        """更新VPC
+        r"""更新VPC
 
         更新虚拟私有云。
         

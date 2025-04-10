@@ -25,7 +25,7 @@ class ShowFlavorsRequest:
     }
 
     def __init__(self, datastore_id=None):
-        """ShowFlavorsRequest
+        r"""ShowFlavorsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowFlavorsRequest:
 
     @property
     def datastore_id(self):
-        """Gets the datastore_id of this ShowFlavorsRequest.
+        r"""Gets the datastore_id of this ShowFlavorsRequest.
 
         版本ID，获取方法请参见[CDM支持的版本](ShowDatastores.xml)。
 
@@ -53,7 +53,7 @@ class ShowFlavorsRequest:
 
     @datastore_id.setter
     def datastore_id(self, datastore_id):
-        """Sets the datastore_id of this ShowFlavorsRequest.
+        r"""Sets the datastore_id of this ShowFlavorsRequest.
 
         版本ID，获取方法请参见[CDM支持的版本](ShowDatastores.xml)。
 

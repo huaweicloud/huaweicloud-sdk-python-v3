@@ -26,7 +26,7 @@ class ValidateConsumedMessageResponse(SdkResponse):
     }
 
     def __init__(self, resend_results=None):
-        """ValidateConsumedMessageResponse
+        r"""ValidateConsumedMessageResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ValidateConsumedMessageResponse(SdkResponse):
 
     @property
     def resend_results(self):
-        """Gets the resend_results of this ValidateConsumedMessageResponse.
+        r"""Gets the resend_results of this ValidateConsumedMessageResponse.
 
         消费验证结果。
 
@@ -55,7 +55,7 @@ class ValidateConsumedMessageResponse(SdkResponse):
 
     @resend_results.setter
     def resend_results(self, resend_results):
-        """Sets the resend_results of this ValidateConsumedMessageResponse.
+        r"""Sets the resend_results of this ValidateConsumedMessageResponse.
 
         消费验证结果。
 

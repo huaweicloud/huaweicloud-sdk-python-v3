@@ -25,7 +25,7 @@ class CancelRemuxTaskRequest:
     }
 
     def __init__(self, task_id=None):
-        """CancelRemuxTaskRequest
+        r"""CancelRemuxTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CancelRemuxTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this CancelRemuxTaskRequest.
+        r"""Gets the task_id of this CancelRemuxTaskRequest.
 
         任务ID 
 
@@ -53,7 +53,7 @@ class CancelRemuxTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this CancelRemuxTaskRequest.
+        r"""Sets the task_id of this CancelRemuxTaskRequest.
 
         任务ID 
 

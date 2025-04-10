@@ -23,7 +23,7 @@ class CurrentCount:
     }
 
     def __init__(self):
-        """CurrentCount
+        r"""CurrentCount
 
         The model defined in huaweicloud sdk
 

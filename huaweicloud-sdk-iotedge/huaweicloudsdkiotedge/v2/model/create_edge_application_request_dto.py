@@ -33,7 +33,7 @@ class CreateEdgeApplicationRequestDTO:
     }
 
     def __init__(self, edge_app_id=None, edge_app_name=None, description=None, function_type=None, protocol=None):
-        """CreateEdgeApplicationRequestDTO
+        r"""CreateEdgeApplicationRequestDTO
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class CreateEdgeApplicationRequestDTO:
 
     @property
     def edge_app_id(self):
-        """Gets the edge_app_id of this CreateEdgeApplicationRequestDTO.
+        r"""Gets the edge_app_id of this CreateEdgeApplicationRequestDTO.
 
         应用ID
 
@@ -81,7 +81,7 @@ class CreateEdgeApplicationRequestDTO:
 
     @edge_app_id.setter
     def edge_app_id(self, edge_app_id):
-        """Sets the edge_app_id of this CreateEdgeApplicationRequestDTO.
+        r"""Sets the edge_app_id of this CreateEdgeApplicationRequestDTO.
 
         应用ID
 
@@ -92,7 +92,7 @@ class CreateEdgeApplicationRequestDTO:
 
     @property
     def edge_app_name(self):
-        """Gets the edge_app_name of this CreateEdgeApplicationRequestDTO.
+        r"""Gets the edge_app_name of this CreateEdgeApplicationRequestDTO.
 
         应用名称
 
@@ -103,7 +103,7 @@ class CreateEdgeApplicationRequestDTO:
 
     @edge_app_name.setter
     def edge_app_name(self, edge_app_name):
-        """Sets the edge_app_name of this CreateEdgeApplicationRequestDTO.
+        r"""Sets the edge_app_name of this CreateEdgeApplicationRequestDTO.
 
         应用名称
 
@@ -114,7 +114,7 @@ class CreateEdgeApplicationRequestDTO:
 
     @property
     def description(self):
-        """Gets the description of this CreateEdgeApplicationRequestDTO.
+        r"""Gets the description of this CreateEdgeApplicationRequestDTO.
 
         应用描述
 
@@ -125,7 +125,7 @@ class CreateEdgeApplicationRequestDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateEdgeApplicationRequestDTO.
+        r"""Sets the description of this CreateEdgeApplicationRequestDTO.
 
         应用描述
 
@@ -136,7 +136,7 @@ class CreateEdgeApplicationRequestDTO:
 
     @property
     def function_type(self):
-        """Gets the function_type of this CreateEdgeApplicationRequestDTO.
+        r"""Gets the function_type of this CreateEdgeApplicationRequestDTO.
 
         功能类型,分为数据处理（DATA_PROCESSING）、协议解析（PROTOCOL_PARSING）、IT集成（ON_PREMISE_INTEGRATION）和混合应用（COMPOSITE_APPLICATION），数据默认为DATA_PROCESSING，数据处理模块可以传输消息，协议解析为驱动类型，IT集成为部署南向3rdIA使用，混合应用可同时实现数据处理和协议解析。
 
@@ -147,7 +147,7 @@ class CreateEdgeApplicationRequestDTO:
 
     @function_type.setter
     def function_type(self, function_type):
-        """Sets the function_type of this CreateEdgeApplicationRequestDTO.
+        r"""Sets the function_type of this CreateEdgeApplicationRequestDTO.
 
         功能类型,分为数据处理（DATA_PROCESSING）、协议解析（PROTOCOL_PARSING）、IT集成（ON_PREMISE_INTEGRATION）和混合应用（COMPOSITE_APPLICATION），数据默认为DATA_PROCESSING，数据处理模块可以传输消息，协议解析为驱动类型，IT集成为部署南向3rdIA使用，混合应用可同时实现数据处理和协议解析。
 
@@ -158,7 +158,7 @@ class CreateEdgeApplicationRequestDTO:
 
     @property
     def protocol(self):
-        """Gets the protocol of this CreateEdgeApplicationRequestDTO.
+        r"""Gets the protocol of this CreateEdgeApplicationRequestDTO.
 
         驱动协议类型OPCUA|Modbus-TCP
 
@@ -169,7 +169,7 @@ class CreateEdgeApplicationRequestDTO:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this CreateEdgeApplicationRequestDTO.
+        r"""Sets the protocol of this CreateEdgeApplicationRequestDTO.
 
         驱动协议类型OPCUA|Modbus-TCP
 

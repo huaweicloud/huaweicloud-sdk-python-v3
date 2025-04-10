@@ -27,7 +27,7 @@ class DeleteEntityRequest:
     }
 
     def __init__(self, instance=None, guid=None):
-        """DeleteEntityRequest
+        r"""DeleteEntityRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteEntityRequest:
 
     @property
     def instance(self):
-        """Gets the instance of this DeleteEntityRequest.
+        r"""Gets the instance of this DeleteEntityRequest.
 
         实例ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -59,7 +59,7 @@ class DeleteEntityRequest:
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this DeleteEntityRequest.
+        r"""Sets the instance of this DeleteEntityRequest.
 
         实例ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -70,7 +70,7 @@ class DeleteEntityRequest:
 
     @property
     def guid(self):
-        """Gets the guid of this DeleteEntityRequest.
+        r"""Gets the guid of this DeleteEntityRequest.
 
         资产的guid，获取方法请参见[数据开发作业ID](dataartsstudio_02_0351.xml)。
 
@@ -81,7 +81,7 @@ class DeleteEntityRequest:
 
     @guid.setter
     def guid(self, guid):
-        """Sets the guid of this DeleteEntityRequest.
+        r"""Sets the guid of this DeleteEntityRequest.
 
         资产的guid，获取方法请参见[数据开发作业ID](dataartsstudio_02_0351.xml)。
 

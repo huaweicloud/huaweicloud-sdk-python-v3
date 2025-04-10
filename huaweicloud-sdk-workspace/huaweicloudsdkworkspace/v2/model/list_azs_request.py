@@ -23,7 +23,7 @@ class ListAzsRequest:
     }
 
     def __init__(self):
-        """ListAzsRequest
+        r"""ListAzsRequest
 
         The model defined in huaweicloud sdk
 

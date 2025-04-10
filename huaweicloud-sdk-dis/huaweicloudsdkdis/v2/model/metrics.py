@@ -27,7 +27,7 @@ class Metrics:
     }
 
     def __init__(self, data_points=None, label=None):
-        """Metrics
+        r"""Metrics
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Metrics:
 
     @property
     def data_points(self):
-        """Gets the data_points of this Metrics.
+        r"""Gets the data_points of this Metrics.
 
         监控数据。
 
@@ -61,7 +61,7 @@ class Metrics:
 
     @data_points.setter
     def data_points(self, data_points):
-        """Sets the data_points of this Metrics.
+        r"""Sets the data_points of this Metrics.
 
         监控数据。
 
@@ -72,7 +72,7 @@ class Metrics:
 
     @property
     def label(self):
-        """Gets the label of this Metrics.
+        r"""Gets the label of this Metrics.
 
         监控指标。
 
@@ -83,7 +83,7 @@ class Metrics:
 
     @label.setter
     def label(self, label):
-        """Sets the label of this Metrics.
+        r"""Sets the label of this Metrics.
 
         监控指标。
 

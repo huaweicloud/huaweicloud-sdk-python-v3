@@ -28,7 +28,7 @@ class ListMemberJobRecordsResponse(SdkResponse):
     }
 
     def __init__(self, records=None, total=None):
-        """ListMemberJobRecordsResponse
+        r"""ListMemberJobRecordsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListMemberJobRecordsResponse(SdkResponse):
 
     @property
     def records(self):
-        """Gets the records of this ListMemberJobRecordsResponse.
+        r"""Gets the records of this ListMemberJobRecordsResponse.
 
         习题提交列表信息
 
@@ -62,7 +62,7 @@ class ListMemberJobRecordsResponse(SdkResponse):
 
     @records.setter
     def records(self, records):
-        """Sets the records of this ListMemberJobRecordsResponse.
+        r"""Sets the records of this ListMemberJobRecordsResponse.
 
         习题提交列表信息
 
@@ -73,7 +73,7 @@ class ListMemberJobRecordsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListMemberJobRecordsResponse.
+        r"""Gets the total of this ListMemberJobRecordsResponse.
 
         习题提交总次数
 
@@ -84,7 +84,7 @@ class ListMemberJobRecordsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListMemberJobRecordsResponse.
+        r"""Sets the total of this ListMemberJobRecordsResponse.
 
         习题提交总次数
 

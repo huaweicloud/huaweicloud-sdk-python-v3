@@ -29,7 +29,7 @@ class BatchCheckinRequest:
     }
 
     def __init__(self, identifier=None, model_name=None, body=None):
-        """BatchCheckinRequest
+        r"""BatchCheckinRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class BatchCheckinRequest:
 
     @property
     def identifier(self):
-        """Gets the identifier of this BatchCheckinRequest.
+        r"""Gets the identifier of this BatchCheckinRequest.
 
         **参数解释：**  应用唯一标识。  **约束限制：**  不涉及。  **取值范围：**  由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。 
 
@@ -66,7 +66,7 @@ class BatchCheckinRequest:
 
     @identifier.setter
     def identifier(self, identifier):
-        """Sets the identifier of this BatchCheckinRequest.
+        r"""Sets the identifier of this BatchCheckinRequest.
 
         **参数解释：**  应用唯一标识。  **约束限制：**  不涉及。  **取值范围：**  由英文字母和数字组成，且长度为32个字符。  **默认取值：**  不涉及。 
 
@@ -77,7 +77,7 @@ class BatchCheckinRequest:
 
     @property
     def model_name(self):
-        """Gets the model_name of this BatchCheckinRequest.
+        r"""Gets the model_name of this BatchCheckinRequest.
 
         **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、“_”，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
 
@@ -88,7 +88,7 @@ class BatchCheckinRequest:
 
     @model_name.setter
     def model_name(self, model_name):
-        """Sets the model_name of this BatchCheckinRequest.
+        r"""Sets the model_name of this BatchCheckinRequest.
 
         **参数解释：**  数据模型的英文名称。  **约束限制：**  不涉及。  **取值范围：**  大写字母开头，只能包含字母、数字、“_”，且长度为[1-60]个字符。  **默认取值：**  不涉及。 
 
@@ -99,7 +99,7 @@ class BatchCheckinRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCheckinRequest.
+        r"""Gets the body of this BatchCheckinRequest.
 
         :return: The body of this BatchCheckinRequest.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.RDMParamVOListVersionModelVersionCheckInDTO`
@@ -108,7 +108,7 @@ class BatchCheckinRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCheckinRequest.
+        r"""Sets the body of this BatchCheckinRequest.
 
         :param body: The body of this BatchCheckinRequest.
         :type body: :class:`huaweicloudsdkidmeclassicapi.v1.RDMParamVOListVersionModelVersionCheckInDTO`

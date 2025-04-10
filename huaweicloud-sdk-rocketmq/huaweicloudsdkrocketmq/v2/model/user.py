@@ -39,7 +39,7 @@ class User:
     }
 
     def __init__(self, access_key=None, secret_key=None, white_remote_address=None, admin=None, default_topic_perm=None, default_group_perm=None, topic_perms=None, group_perms=None):
-        """User
+        r"""User
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class User:
 
     @property
     def access_key(self):
-        """Gets the access_key of this User.
+        r"""Gets the access_key of this User.
 
         用户名，只能英文字母开头，且由英文字母、数字、中划线、下划线组成，长度为7~64个字符。
 
@@ -103,7 +103,7 @@ class User:
 
     @access_key.setter
     def access_key(self, access_key):
-        """Sets the access_key of this User.
+        r"""Sets the access_key of this User.
 
         用户名，只能英文字母开头，且由英文字母、数字、中划线、下划线组成，长度为7~64个字符。
 
@@ -114,7 +114,7 @@ class User:
 
     @property
     def secret_key(self):
-        """Gets the secret_key of this User.
+        r"""Gets the secret_key of this User.
 
         密钥。 8-32个字符。 至少包含以下字符中的3种：   - 大写字母   - 小写字母   - 数字   - 特殊字符`~!@#$%^&*()-_=+\\\\|[{}];:\\'\\\",<.>/?密钥。 不能与名称或倒序的名称相同。
 
@@ -125,7 +125,7 @@ class User:
 
     @secret_key.setter
     def secret_key(self, secret_key):
-        """Sets the secret_key of this User.
+        r"""Sets the secret_key of this User.
 
         密钥。 8-32个字符。 至少包含以下字符中的3种：   - 大写字母   - 小写字母   - 数字   - 特殊字符`~!@#$%^&*()-_=+\\\\|[{}];:\\'\\\",<.>/?密钥。 不能与名称或倒序的名称相同。
 
@@ -136,7 +136,7 @@ class User:
 
     @property
     def white_remote_address(self):
-        """Gets the white_remote_address of this User.
+        r"""Gets the white_remote_address of this User.
 
         IP白名单。
 
@@ -147,7 +147,7 @@ class User:
 
     @white_remote_address.setter
     def white_remote_address(self, white_remote_address):
-        """Sets the white_remote_address of this User.
+        r"""Sets the white_remote_address of this User.
 
         IP白名单。
 
@@ -158,7 +158,7 @@ class User:
 
     @property
     def admin(self):
-        """Gets the admin of this User.
+        r"""Gets the admin of this User.
 
         是否为管理员。
 
@@ -169,7 +169,7 @@ class User:
 
     @admin.setter
     def admin(self, admin):
-        """Sets the admin of this User.
+        r"""Sets the admin of this User.
 
         是否为管理员。
 
@@ -180,7 +180,7 @@ class User:
 
     @property
     def default_topic_perm(self):
-        """Gets the default_topic_perm of this User.
+        r"""Gets the default_topic_perm of this User.
 
         默认的主题权限。
 
@@ -191,7 +191,7 @@ class User:
 
     @default_topic_perm.setter
     def default_topic_perm(self, default_topic_perm):
-        """Sets the default_topic_perm of this User.
+        r"""Sets the default_topic_perm of this User.
 
         默认的主题权限。
 
@@ -202,7 +202,7 @@ class User:
 
     @property
     def default_group_perm(self):
-        """Gets the default_group_perm of this User.
+        r"""Gets the default_group_perm of this User.
 
         默认的消费组权限。
 
@@ -213,7 +213,7 @@ class User:
 
     @default_group_perm.setter
     def default_group_perm(self, default_group_perm):
-        """Sets the default_group_perm of this User.
+        r"""Sets the default_group_perm of this User.
 
         默认的消费组权限。
 
@@ -224,7 +224,7 @@ class User:
 
     @property
     def topic_perms(self):
-        """Gets the topic_perms of this User.
+        r"""Gets the topic_perms of this User.
 
         特殊的主题权限。
 
@@ -235,7 +235,7 @@ class User:
 
     @topic_perms.setter
     def topic_perms(self, topic_perms):
-        """Sets the topic_perms of this User.
+        r"""Sets the topic_perms of this User.
 
         特殊的主题权限。
 
@@ -246,7 +246,7 @@ class User:
 
     @property
     def group_perms(self):
-        """Gets the group_perms of this User.
+        r"""Gets the group_perms of this User.
 
         特殊的消费组权限。
 
@@ -257,7 +257,7 @@ class User:
 
     @group_perms.setter
     def group_perms(self, group_perms):
-        """Sets the group_perms of this User.
+        r"""Sets the group_perms of this User.
 
         特殊的消费组权限。
 

@@ -41,7 +41,7 @@ class PropertyResponse:
     }
 
     def __init__(self, device_id=None, property_id=None, name=None, display_name=None, source_type=None, data_schema=None, unit=None, value=None, is_tag=None):
-        """PropertyResponse
+        r"""PropertyResponse
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class PropertyResponse:
 
     @property
     def device_id(self):
-        """Gets the device_id of this PropertyResponse.
+        r"""Gets the device_id of this PropertyResponse.
 
         设备ID
 
@@ -107,7 +107,7 @@ class PropertyResponse:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this PropertyResponse.
+        r"""Sets the device_id of this PropertyResponse.
 
         设备ID
 
@@ -118,7 +118,7 @@ class PropertyResponse:
 
     @property
     def property_id(self):
-        """Gets the property_id of this PropertyResponse.
+        r"""Gets the property_id of this PropertyResponse.
 
         属性ID
 
@@ -129,7 +129,7 @@ class PropertyResponse:
 
     @property_id.setter
     def property_id(self, property_id):
-        """Sets the property_id of this PropertyResponse.
+        r"""Sets the property_id of this PropertyResponse.
 
         属性ID
 
@@ -140,7 +140,7 @@ class PropertyResponse:
 
     @property
     def name(self):
-        """Gets the name of this PropertyResponse.
+        r"""Gets the name of this PropertyResponse.
 
         属性名称，正则：\"^[a-zA-Z0-9_]{1,64}$\"
 
@@ -151,7 +151,7 @@ class PropertyResponse:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PropertyResponse.
+        r"""Sets the name of this PropertyResponse.
 
         属性名称，正则：\"^[a-zA-Z0-9_]{1,64}$\"
 
@@ -162,7 +162,7 @@ class PropertyResponse:
 
     @property
     def display_name(self):
-        """Gets the display_name of this PropertyResponse.
+        r"""Gets the display_name of this PropertyResponse.
 
         属性显示名称，正则：\"^[\\\\u4E00-\\\\u9FA5A-Za-z0-9_@#.-]{1,64}$\"
 
@@ -173,7 +173,7 @@ class PropertyResponse:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this PropertyResponse.
+        r"""Sets the display_name of this PropertyResponse.
 
         属性显示名称，正则：\"^[\\\\u4E00-\\\\u9FA5A-Za-z0-9_@#.-]{1,64}$\"
 
@@ -184,7 +184,7 @@ class PropertyResponse:
 
     @property
     def source_type(self):
-        """Gets the source_type of this PropertyResponse.
+        r"""Gets the source_type of this PropertyResponse.
 
         属性类别，静态配置（static）、测量数据（measurement）、分析任务（analysis）
 
@@ -195,7 +195,7 @@ class PropertyResponse:
 
     @source_type.setter
     def source_type(self, source_type):
-        """Sets the source_type of this PropertyResponse.
+        r"""Sets the source_type of this PropertyResponse.
 
         属性类别，静态配置（static）、测量数据（measurement）、分析任务（analysis）
 
@@ -206,7 +206,7 @@ class PropertyResponse:
 
     @property
     def data_schema(self):
-        """Gets the data_schema of this PropertyResponse.
+        r"""Gets the data_schema of this PropertyResponse.
 
         :return: The data_schema of this PropertyResponse.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.DataSchema`
@@ -215,7 +215,7 @@ class PropertyResponse:
 
     @data_schema.setter
     def data_schema(self, data_schema):
-        """Sets the data_schema of this PropertyResponse.
+        r"""Sets the data_schema of this PropertyResponse.
 
         :param data_schema: The data_schema of this PropertyResponse.
         :type data_schema: :class:`huaweicloudsdkiotanalytics.v1.DataSchema`
@@ -224,7 +224,7 @@ class PropertyResponse:
 
     @property
     def unit(self):
-        """Gets the unit of this PropertyResponse.
+        r"""Gets the unit of this PropertyResponse.
 
         单位
 
@@ -235,7 +235,7 @@ class PropertyResponse:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this PropertyResponse.
+        r"""Sets the unit of this PropertyResponse.
 
         单位
 
@@ -246,7 +246,7 @@ class PropertyResponse:
 
     @property
     def value(self):
-        """Gets the value of this PropertyResponse.
+        r"""Gets the value of this PropertyResponse.
 
         静态属性的值，如：1 1.1 \"value\" {\"name\":\"value\"}
 
@@ -257,7 +257,7 @@ class PropertyResponse:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this PropertyResponse.
+        r"""Sets the value of this PropertyResponse.
 
         静态属性的值，如：1 1.1 \"value\" {\"name\":\"value\"}
 
@@ -268,7 +268,7 @@ class PropertyResponse:
 
     @property
     def is_tag(self):
-        """Gets the is_tag of this PropertyResponse.
+        r"""Gets the is_tag of this PropertyResponse.
 
         属性是否为标签。资产ID、标签属性、时间戳三者组成属性数据唯一键，两条唯一键相同性数据以覆盖方式存储；一个模型中只能配置三个属性为标签，标签配置后标签不能删除，配置标签性也不能删除；只有integer、double、string类型的属性可以被配置为标签。示例： 资产ID asset1上依次上报如下六组数据： 资产ID 属性A（标签） 属性B    属性C 时间戳 asset1 valueA_1     valueB_1  valueC_1 T1 asset1 valueA_1     valueB_2  valueC_2 T2 asset1 valueA_2     valueB_3  valueC_3 T2 asset1 valueA_2     valueB_4  valueC_4 T2 asset1              valueB_5  valueC_5 T3 asset1              valueB_6  valueC_6 T3 根据唯一键规则最终存储为如下四组数据： 资产ID 属性A（标签） 属性B    属性C 时间戳 asset1 valueA_1     valueB_1  valueC_1 T1 asset1 valueA_1     valueB_2  valueC_2 T2 asset1 valueA_2     valueB_4  valueC_4 T2 asset1              valueB_6  valueC_6 T3
 
@@ -279,7 +279,7 @@ class PropertyResponse:
 
     @is_tag.setter
     def is_tag(self, is_tag):
-        """Sets the is_tag of this PropertyResponse.
+        r"""Sets the is_tag of this PropertyResponse.
 
         属性是否为标签。资产ID、标签属性、时间戳三者组成属性数据唯一键，两条唯一键相同性数据以覆盖方式存储；一个模型中只能配置三个属性为标签，标签配置后标签不能删除，配置标签性也不能删除；只有integer、double、string类型的属性可以被配置为标签。示例： 资产ID asset1上依次上报如下六组数据： 资产ID 属性A（标签） 属性B    属性C 时间戳 asset1 valueA_1     valueB_1  valueC_1 T1 asset1 valueA_1     valueB_2  valueC_2 T2 asset1 valueA_2     valueB_3  valueC_3 T2 asset1 valueA_2     valueB_4  valueC_4 T2 asset1              valueB_5  valueC_5 T3 asset1              valueB_6  valueC_6 T3 根据唯一键规则最终存储为如下四组数据： 资产ID 属性A（标签） 属性B    属性C 时间戳 asset1 valueA_1     valueB_1  valueC_1 T1 asset1 valueA_1     valueB_2  valueC_2 T2 asset1 valueA_2     valueB_4  valueC_4 T2 asset1              valueB_6  valueC_6 T3
 

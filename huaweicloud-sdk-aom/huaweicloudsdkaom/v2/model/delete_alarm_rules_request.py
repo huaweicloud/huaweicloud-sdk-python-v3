@@ -25,7 +25,7 @@ class DeleteAlarmRulesRequest:
     }
 
     def __init__(self, body=None):
-        """DeleteAlarmRulesRequest
+        r"""DeleteAlarmRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteAlarmRulesRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteAlarmRulesRequest.
+        r"""Gets the body of this DeleteAlarmRulesRequest.
 
         :return: The body of this DeleteAlarmRulesRequest.
         :rtype: :class:`huaweicloudsdkaom.v2.DeleteAlarmRulesBody`
@@ -52,7 +52,7 @@ class DeleteAlarmRulesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteAlarmRulesRequest.
+        r"""Sets the body of this DeleteAlarmRulesRequest.
 
         :param body: The body of this DeleteAlarmRulesRequest.
         :type body: :class:`huaweicloudsdkaom.v2.DeleteAlarmRulesBody`

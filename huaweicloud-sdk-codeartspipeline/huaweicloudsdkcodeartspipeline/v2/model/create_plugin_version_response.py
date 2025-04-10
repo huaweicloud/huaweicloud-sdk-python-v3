@@ -26,7 +26,7 @@ class CreatePluginVersionResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """CreatePluginVersionResponse
+        r"""CreatePluginVersionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreatePluginVersionResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this CreatePluginVersionResponse.
+        r"""Gets the body of this CreatePluginVersionResponse.
 
         :return: The body of this CreatePluginVersionResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class CreatePluginVersionResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePluginVersionResponse.
+        r"""Sets the body of this CreatePluginVersionResponse.
 
         :param body: The body of this CreatePluginVersionResponse.
         :type body: str

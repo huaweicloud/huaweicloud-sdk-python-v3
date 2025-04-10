@@ -29,7 +29,7 @@ class ShowBackupDownloadLinkRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, backup_id=None):
-        """ShowBackupDownloadLinkRequest
+        r"""ShowBackupDownloadLinkRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowBackupDownloadLinkRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowBackupDownloadLinkRequest.
+        r"""Gets the x_language of this ShowBackupDownloadLinkRequest.
 
         语言。
 
@@ -66,7 +66,7 @@ class ShowBackupDownloadLinkRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowBackupDownloadLinkRequest.
+        r"""Sets the x_language of this ShowBackupDownloadLinkRequest.
 
         语言。
 
@@ -77,7 +77,7 @@ class ShowBackupDownloadLinkRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowBackupDownloadLinkRequest.
+        r"""Gets the instance_id of this ShowBackupDownloadLinkRequest.
 
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
@@ -88,7 +88,7 @@ class ShowBackupDownloadLinkRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowBackupDownloadLinkRequest.
+        r"""Sets the instance_id of this ShowBackupDownloadLinkRequest.
 
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
@@ -99,7 +99,7 @@ class ShowBackupDownloadLinkRequest:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this ShowBackupDownloadLinkRequest.
+        r"""Gets the backup_id of this ShowBackupDownloadLinkRequest.
 
         备份ID。
 
@@ -110,7 +110,7 @@ class ShowBackupDownloadLinkRequest:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this ShowBackupDownloadLinkRequest.
+        r"""Sets the backup_id of this ShowBackupDownloadLinkRequest.
 
         备份ID。
 

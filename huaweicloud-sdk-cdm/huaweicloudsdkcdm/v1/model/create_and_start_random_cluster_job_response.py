@@ -26,7 +26,7 @@ class CreateAndStartRandomClusterJobResponse(SdkResponse):
     }
 
     def __init__(self, submissions=None):
-        """CreateAndStartRandomClusterJobResponse
+        r"""CreateAndStartRandomClusterJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateAndStartRandomClusterJobResponse(SdkResponse):
 
     @property
     def submissions(self):
-        """Gets the submissions of this CreateAndStartRandomClusterJobResponse.
+        r"""Gets the submissions of this CreateAndStartRandomClusterJobResponse.
 
         作业运行信息，请参见submission参数说明
 
@@ -55,7 +55,7 @@ class CreateAndStartRandomClusterJobResponse(SdkResponse):
 
     @submissions.setter
     def submissions(self, submissions):
-        """Sets the submissions of this CreateAndStartRandomClusterJobResponse.
+        r"""Sets the submissions of this CreateAndStartRandomClusterJobResponse.
 
         作业运行信息，请参见submission参数说明
 

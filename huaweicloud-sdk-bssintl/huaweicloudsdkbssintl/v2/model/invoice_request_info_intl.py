@@ -67,7 +67,7 @@ class InvoiceRequestInfoIntl:
     }
 
     def __init__(self, request_id=None, cancel_reason=None, title_type=None, channel_type=None, invoice_type=None, invoice_title=None, invoice_amount=None, invoice_method=None, invoice_class=None, invoice_state=None, apply_opera=None, address_info=None, apply_time=None, invoice_mode=None, email=None, request_mode=None, src_request_id=None, sales_id=None, invoice_no=None, trade_type=None, bill_cycle=None, tax_list=None):
-        """InvoiceRequestInfoIntl
+        r"""InvoiceRequestInfoIntl
 
         The model defined in huaweicloud sdk
 
@@ -190,7 +190,7 @@ class InvoiceRequestInfoIntl:
 
     @property
     def request_id(self):
-        """Gets the request_id of this InvoiceRequestInfoIntl.
+        r"""Gets the request_id of this InvoiceRequestInfoIntl.
 
         请求ID。
 
@@ -201,7 +201,7 @@ class InvoiceRequestInfoIntl:
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this InvoiceRequestInfoIntl.
+        r"""Sets the request_id of this InvoiceRequestInfoIntl.
 
         请求ID。
 
@@ -212,7 +212,7 @@ class InvoiceRequestInfoIntl:
 
     @property
     def cancel_reason(self):
-        """Gets the cancel_reason of this InvoiceRequestInfoIntl.
+        r"""Gets the cancel_reason of this InvoiceRequestInfoIntl.
 
         驳回原因。
 
@@ -223,7 +223,7 @@ class InvoiceRequestInfoIntl:
 
     @cancel_reason.setter
     def cancel_reason(self, cancel_reason):
-        """Sets the cancel_reason of this InvoiceRequestInfoIntl.
+        r"""Sets the cancel_reason of this InvoiceRequestInfoIntl.
 
         驳回原因。
 
@@ -234,7 +234,7 @@ class InvoiceRequestInfoIntl:
 
     @property
     def title_type(self):
-        """Gets the title_type of this InvoiceRequestInfoIntl.
+        r"""Gets the title_type of this InvoiceRequestInfoIntl.
 
         开票类型。 0：个人1：企业
 
@@ -245,7 +245,7 @@ class InvoiceRequestInfoIntl:
 
     @title_type.setter
     def title_type(self, title_type):
-        """Sets the title_type of this InvoiceRequestInfoIntl.
+        r"""Sets the title_type of this InvoiceRequestInfoIntl.
 
         开票类型。 0：个人1：企业
 
@@ -256,7 +256,7 @@ class InvoiceRequestInfoIntl:
 
     @property
     def channel_type(self):
-        """Gets the channel_type of this InvoiceRequestInfoIntl.
+        r"""Gets the channel_type of this InvoiceRequestInfoIntl.
 
         渠道类型。 0：华为云
 
@@ -267,7 +267,7 @@ class InvoiceRequestInfoIntl:
 
     @channel_type.setter
     def channel_type(self, channel_type):
-        """Sets the channel_type of this InvoiceRequestInfoIntl.
+        r"""Sets the channel_type of this InvoiceRequestInfoIntl.
 
         渠道类型。 0：华为云
 
@@ -278,7 +278,7 @@ class InvoiceRequestInfoIntl:
 
     @property
     def invoice_type(self):
-        """Gets the invoice_type of this InvoiceRequestInfoIntl.
+        r"""Gets the invoice_type of this InvoiceRequestInfoIntl.
 
         发票种类。 0：增值税专用发票1：增值税普通发票
 
@@ -289,7 +289,7 @@ class InvoiceRequestInfoIntl:
 
     @invoice_type.setter
     def invoice_type(self, invoice_type):
-        """Sets the invoice_type of this InvoiceRequestInfoIntl.
+        r"""Sets the invoice_type of this InvoiceRequestInfoIntl.
 
         发票种类。 0：增值税专用发票1：增值税普通发票
 
@@ -300,7 +300,7 @@ class InvoiceRequestInfoIntl:
 
     @property
     def invoice_title(self):
-        """Gets the invoice_title of this InvoiceRequestInfoIntl.
+        r"""Gets the invoice_title of this InvoiceRequestInfoIntl.
 
         发票抬头。
 
@@ -311,7 +311,7 @@ class InvoiceRequestInfoIntl:
 
     @invoice_title.setter
     def invoice_title(self, invoice_title):
-        """Sets the invoice_title of this InvoiceRequestInfoIntl.
+        r"""Sets the invoice_title of this InvoiceRequestInfoIntl.
 
         发票抬头。
 
@@ -322,7 +322,7 @@ class InvoiceRequestInfoIntl:
 
     @property
     def invoice_amount(self):
-        """Gets the invoice_amount of this InvoiceRequestInfoIntl.
+        r"""Gets the invoice_amount of this InvoiceRequestInfoIntl.
 
         已开票金额（美元） 。
 
@@ -333,7 +333,7 @@ class InvoiceRequestInfoIntl:
 
     @invoice_amount.setter
     def invoice_amount(self, invoice_amount):
-        """Sets the invoice_amount of this InvoiceRequestInfoIntl.
+        r"""Sets the invoice_amount of this InvoiceRequestInfoIntl.
 
         已开票金额（美元） 。
 
@@ -344,7 +344,7 @@ class InvoiceRequestInfoIntl:
 
     @property
     def invoice_method(self):
-        """Gets the invoice_method of this InvoiceRequestInfoIntl.
+        r"""Gets the invoice_method of this InvoiceRequestInfoIntl.
 
         开票方式。 0：账期1：到账2：订单
 
@@ -355,7 +355,7 @@ class InvoiceRequestInfoIntl:
 
     @invoice_method.setter
     def invoice_method(self, invoice_method):
-        """Sets the invoice_method of this InvoiceRequestInfoIntl.
+        r"""Sets the invoice_method of this InvoiceRequestInfoIntl.
 
         开票方式。 0：账期1：到账2：订单
 
@@ -366,7 +366,7 @@ class InvoiceRequestInfoIntl:
 
     @property
     def invoice_class(self):
-        """Gets the invoice_class of this InvoiceRequestInfoIntl.
+        r"""Gets the invoice_class of this InvoiceRequestInfoIntl.
 
         发票类别。 0：税票1：商票
 
@@ -377,7 +377,7 @@ class InvoiceRequestInfoIntl:
 
     @invoice_class.setter
     def invoice_class(self, invoice_class):
-        """Sets the invoice_class of this InvoiceRequestInfoIntl.
+        r"""Sets the invoice_class of this InvoiceRequestInfoIntl.
 
         发票类别。 0：税票1：商票
 
@@ -388,7 +388,7 @@ class InvoiceRequestInfoIntl:
 
     @property
     def invoice_state(self):
-        """Gets the invoice_state of this InvoiceRequestInfoIntl.
+        r"""Gets the invoice_state of this InvoiceRequestInfoIntl.
 
         开票状态。 0：草稿1：待审核4：等待导出发票文件5：等待发票文件回填6：等待邮寄确认7：等待回执确认8：完成9：已退票11：等待驳回审核13：退票待审核14：待退票状态回填15：退票失败
 
@@ -399,7 +399,7 @@ class InvoiceRequestInfoIntl:
 
     @invoice_state.setter
     def invoice_state(self, invoice_state):
-        """Sets the invoice_state of this InvoiceRequestInfoIntl.
+        r"""Sets the invoice_state of this InvoiceRequestInfoIntl.
 
         开票状态。 0：草稿1：待审核4：等待导出发票文件5：等待发票文件回填6：等待邮寄确认7：等待回执确认8：完成9：已退票11：等待驳回审核13：退票待审核14：待退票状态回填15：退票失败
 
@@ -410,7 +410,7 @@ class InvoiceRequestInfoIntl:
 
     @property
     def apply_opera(self):
-        """Gets the apply_opera of this InvoiceRequestInfoIntl.
+        r"""Gets the apply_opera of this InvoiceRequestInfoIntl.
 
         发票申请人员。
 
@@ -421,7 +421,7 @@ class InvoiceRequestInfoIntl:
 
     @apply_opera.setter
     def apply_opera(self, apply_opera):
-        """Sets the apply_opera of this InvoiceRequestInfoIntl.
+        r"""Sets the apply_opera of this InvoiceRequestInfoIntl.
 
         发票申请人员。
 
@@ -432,7 +432,7 @@ class InvoiceRequestInfoIntl:
 
     @property
     def address_info(self):
-        """Gets the address_info of this InvoiceRequestInfoIntl.
+        r"""Gets the address_info of this InvoiceRequestInfoIntl.
 
         :return: The address_info of this InvoiceRequestInfoIntl.
         :rtype: :class:`huaweicloudsdkbssintl.v2.PostAddressInfoIntl`
@@ -441,7 +441,7 @@ class InvoiceRequestInfoIntl:
 
     @address_info.setter
     def address_info(self, address_info):
-        """Sets the address_info of this InvoiceRequestInfoIntl.
+        r"""Sets the address_info of this InvoiceRequestInfoIntl.
 
         :param address_info: The address_info of this InvoiceRequestInfoIntl.
         :type address_info: :class:`huaweicloudsdkbssintl.v2.PostAddressInfoIntl`
@@ -450,7 +450,7 @@ class InvoiceRequestInfoIntl:
 
     @property
     def apply_time(self):
-        """Gets the apply_time of this InvoiceRequestInfoIntl.
+        r"""Gets the apply_time of this InvoiceRequestInfoIntl.
 
         申请时间（UTC时间）。
 
@@ -461,7 +461,7 @@ class InvoiceRequestInfoIntl:
 
     @apply_time.setter
     def apply_time(self, apply_time):
-        """Sets the apply_time of this InvoiceRequestInfoIntl.
+        r"""Sets the apply_time of this InvoiceRequestInfoIntl.
 
         申请时间（UTC时间）。
 
@@ -472,7 +472,7 @@ class InvoiceRequestInfoIntl:
 
     @property
     def invoice_mode(self):
-        """Gets the invoice_mode of this InvoiceRequestInfoIntl.
+        r"""Gets the invoice_mode of this InvoiceRequestInfoIntl.
 
         发票类型。 0：纸质票
 
@@ -483,7 +483,7 @@ class InvoiceRequestInfoIntl:
 
     @invoice_mode.setter
     def invoice_mode(self, invoice_mode):
-        """Sets the invoice_mode of this InvoiceRequestInfoIntl.
+        r"""Sets the invoice_mode of this InvoiceRequestInfoIntl.
 
         发票类型。 0：纸质票
 
@@ -494,7 +494,7 @@ class InvoiceRequestInfoIntl:
 
     @property
     def email(self):
-        """Gets the email of this InvoiceRequestInfoIntl.
+        r"""Gets the email of this InvoiceRequestInfoIntl.
 
         电子发票寄送地。
 
@@ -505,7 +505,7 @@ class InvoiceRequestInfoIntl:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this InvoiceRequestInfoIntl.
+        r"""Sets the email of this InvoiceRequestInfoIntl.
 
         电子发票寄送地。
 
@@ -516,7 +516,7 @@ class InvoiceRequestInfoIntl:
 
     @property
     def request_mode(self):
-        """Gets the request_mode of this InvoiceRequestInfoIntl.
+        r"""Gets the request_mode of this InvoiceRequestInfoIntl.
 
         申请类型。 0：开票申请1：退票申请2：正向开票已退票
 
@@ -527,7 +527,7 @@ class InvoiceRequestInfoIntl:
 
     @request_mode.setter
     def request_mode(self, request_mode):
-        """Sets the request_mode of this InvoiceRequestInfoIntl.
+        r"""Sets the request_mode of this InvoiceRequestInfoIntl.
 
         申请类型。 0：开票申请1：退票申请2：正向开票已退票
 
@@ -538,7 +538,7 @@ class InvoiceRequestInfoIntl:
 
     @property
     def src_request_id(self):
-        """Gets the src_request_id of this InvoiceRequestInfoIntl.
+        r"""Gets the src_request_id of this InvoiceRequestInfoIntl.
 
         退票时的原申请ID。
 
@@ -549,7 +549,7 @@ class InvoiceRequestInfoIntl:
 
     @src_request_id.setter
     def src_request_id(self, src_request_id):
-        """Sets the src_request_id of this InvoiceRequestInfoIntl.
+        r"""Sets the src_request_id of this InvoiceRequestInfoIntl.
 
         退票时的原申请ID。
 
@@ -560,7 +560,7 @@ class InvoiceRequestInfoIntl:
 
     @property
     def sales_id(self):
-        """Gets the sales_id of this InvoiceRequestInfoIntl.
+        r"""Gets the sales_id of this InvoiceRequestInfoIntl.
 
         签约主体ID。
 
@@ -571,7 +571,7 @@ class InvoiceRequestInfoIntl:
 
     @sales_id.setter
     def sales_id(self, sales_id):
-        """Sets the sales_id of this InvoiceRequestInfoIntl.
+        r"""Sets the sales_id of this InvoiceRequestInfoIntl.
 
         签约主体ID。
 
@@ -582,7 +582,7 @@ class InvoiceRequestInfoIntl:
 
     @property
     def invoice_no(self):
-        """Gets the invoice_no of this InvoiceRequestInfoIntl.
+        r"""Gets the invoice_no of this InvoiceRequestInfoIntl.
 
         发票号码。
 
@@ -593,7 +593,7 @@ class InvoiceRequestInfoIntl:
 
     @invoice_no.setter
     def invoice_no(self, invoice_no):
-        """Sets the invoice_no of this InvoiceRequestInfoIntl.
+        r"""Sets the invoice_no of this InvoiceRequestInfoIntl.
 
         发票号码。
 
@@ -604,7 +604,7 @@ class InvoiceRequestInfoIntl:
 
     @property
     def trade_type(self):
-        """Gets the trade_type of this InvoiceRequestInfoIntl.
+        r"""Gets the trade_type of this InvoiceRequestInfoIntl.
 
         交易类型。 3：结算信用卡扣减4：结算未结清开票5：先开票后到款6：BP月结开票7：充值开票8：包年/包月在线支付开票10：普通提现开票
 
@@ -615,7 +615,7 @@ class InvoiceRequestInfoIntl:
 
     @trade_type.setter
     def trade_type(self, trade_type):
-        """Sets the trade_type of this InvoiceRequestInfoIntl.
+        r"""Sets the trade_type of this InvoiceRequestInfoIntl.
 
         交易类型。 3：结算信用卡扣减4：结算未结清开票5：先开票后到款6：BP月结开票7：充值开票8：包年/包月在线支付开票10：普通提现开票
 
@@ -626,7 +626,7 @@ class InvoiceRequestInfoIntl:
 
     @property
     def bill_cycle(self):
-        """Gets the bill_cycle of this InvoiceRequestInfoIntl.
+        r"""Gets the bill_cycle of this InvoiceRequestInfoIntl.
 
         发票账期。
 
@@ -637,7 +637,7 @@ class InvoiceRequestInfoIntl:
 
     @bill_cycle.setter
     def bill_cycle(self, bill_cycle):
-        """Sets the bill_cycle of this InvoiceRequestInfoIntl.
+        r"""Sets the bill_cycle of this InvoiceRequestInfoIntl.
 
         发票账期。
 
@@ -648,7 +648,7 @@ class InvoiceRequestInfoIntl:
 
     @property
     def tax_list(self):
-        """Gets the tax_list of this InvoiceRequestInfoIntl.
+        r"""Gets the tax_list of this InvoiceRequestInfoIntl.
 
         税务信息列表，参见表4。
 
@@ -659,7 +659,7 @@ class InvoiceRequestInfoIntl:
 
     @tax_list.setter
     def tax_list(self, tax_list):
-        """Sets the tax_list of this InvoiceRequestInfoIntl.
+        r"""Sets the tax_list of this InvoiceRequestInfoIntl.
 
         税务信息列表，参见表4。
 

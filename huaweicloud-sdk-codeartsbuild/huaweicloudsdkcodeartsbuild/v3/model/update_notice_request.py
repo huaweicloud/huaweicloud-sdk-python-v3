@@ -27,7 +27,7 @@ class UpdateNoticeRequest:
     }
 
     def __init__(self, job_id=None, body=None):
-        """UpdateNoticeRequest
+        r"""UpdateNoticeRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateNoticeRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateNoticeRequest.
+        r"""Gets the job_id of this UpdateNoticeRequest.
 
         构建的任务ID； 编辑构建任务时，浏览器URL末尾的32位数字、字母组合的字符串。
 
@@ -60,7 +60,7 @@ class UpdateNoticeRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateNoticeRequest.
+        r"""Sets the job_id of this UpdateNoticeRequest.
 
         构建的任务ID； 编辑构建任务时，浏览器URL末尾的32位数字、字母组合的字符串。
 
@@ -71,7 +71,7 @@ class UpdateNoticeRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateNoticeRequest.
+        r"""Gets the body of this UpdateNoticeRequest.
 
         :return: The body of this UpdateNoticeRequest.
         :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.UpdateNoticeRequestBody`
@@ -80,7 +80,7 @@ class UpdateNoticeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateNoticeRequest.
+        r"""Sets the body of this UpdateNoticeRequest.
 
         :param body: The body of this UpdateNoticeRequest.
         :type body: :class:`huaweicloudsdkcodeartsbuild.v3.UpdateNoticeRequestBody`

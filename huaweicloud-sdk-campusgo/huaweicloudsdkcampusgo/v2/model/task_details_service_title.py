@@ -27,7 +27,7 @@ class TaskDetailsServiceTitle:
     }
 
     def __init__(self, zh=None, en=None):
-        """TaskDetailsServiceTitle
+        r"""TaskDetailsServiceTitle
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TaskDetailsServiceTitle:
 
     @property
     def zh(self):
-        """Gets the zh of this TaskDetailsServiceTitle.
+        r"""Gets the zh of this TaskDetailsServiceTitle.
 
         作业对应服务的中文标题
 
@@ -61,7 +61,7 @@ class TaskDetailsServiceTitle:
 
     @zh.setter
     def zh(self, zh):
-        """Sets the zh of this TaskDetailsServiceTitle.
+        r"""Sets the zh of this TaskDetailsServiceTitle.
 
         作业对应服务的中文标题
 
@@ -72,7 +72,7 @@ class TaskDetailsServiceTitle:
 
     @property
     def en(self):
-        """Gets the en of this TaskDetailsServiceTitle.
+        r"""Gets the en of this TaskDetailsServiceTitle.
 
         作业对应服务的英文标题
 
@@ -83,7 +83,7 @@ class TaskDetailsServiceTitle:
 
     @en.setter
     def en(self, en):
-        """Sets the en of this TaskDetailsServiceTitle.
+        r"""Sets the en of this TaskDetailsServiceTitle.
 
         作业对应服务的英文标题
 

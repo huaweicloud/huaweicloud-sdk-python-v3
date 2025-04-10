@@ -27,7 +27,7 @@ class AppCallbacks:
     }
 
     def __init__(self, push_callback=None, record_callback=None):
-        """AppCallbacks
+        r"""AppCallbacks
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AppCallbacks:
 
     @property
     def push_callback(self):
-        """Gets the push_callback of this AppCallbacks.
+        r"""Gets the push_callback of this AppCallbacks.
 
         :return: The push_callback of this AppCallbacks.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.AppCallbackUrl`
@@ -59,7 +59,7 @@ class AppCallbacks:
 
     @push_callback.setter
     def push_callback(self, push_callback):
-        """Sets the push_callback of this AppCallbacks.
+        r"""Sets the push_callback of this AppCallbacks.
 
         :param push_callback: The push_callback of this AppCallbacks.
         :type push_callback: :class:`huaweicloudsdkcloudrtc.v2.AppCallbackUrl`
@@ -68,7 +68,7 @@ class AppCallbacks:
 
     @property
     def record_callback(self):
-        """Gets the record_callback of this AppCallbacks.
+        r"""Gets the record_callback of this AppCallbacks.
 
         :return: The record_callback of this AppCallbacks.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.AppCallbackUrl`
@@ -77,7 +77,7 @@ class AppCallbacks:
 
     @record_callback.setter
     def record_callback(self, record_callback):
-        """Sets the record_callback of this AppCallbacks.
+        r"""Sets the record_callback of this AppCallbacks.
 
         :param record_callback: The record_callback of this AppCallbacks.
         :type record_callback: :class:`huaweicloudsdkcloudrtc.v2.AppCallbackUrl`

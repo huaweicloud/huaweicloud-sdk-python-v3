@@ -29,7 +29,7 @@ class UpdateConnectionRequest:
     }
 
     def __init__(self, workspace=None, connection_name=None, body=None):
-        """UpdateConnectionRequest
+        r"""UpdateConnectionRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateConnectionRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this UpdateConnectionRequest.
+        r"""Gets the workspace of this UpdateConnectionRequest.
 
         工作空间id
 
@@ -67,7 +67,7 @@ class UpdateConnectionRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this UpdateConnectionRequest.
+        r"""Sets the workspace of this UpdateConnectionRequest.
 
         工作空间id
 
@@ -78,7 +78,7 @@ class UpdateConnectionRequest:
 
     @property
     def connection_name(self):
-        """Gets the connection_name of this UpdateConnectionRequest.
+        r"""Gets the connection_name of this UpdateConnectionRequest.
 
         连接名称.
 
@@ -89,7 +89,7 @@ class UpdateConnectionRequest:
 
     @connection_name.setter
     def connection_name(self, connection_name):
-        """Sets the connection_name of this UpdateConnectionRequest.
+        r"""Sets the connection_name of this UpdateConnectionRequest.
 
         连接名称.
 
@@ -100,7 +100,7 @@ class UpdateConnectionRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateConnectionRequest.
+        r"""Gets the body of this UpdateConnectionRequest.
 
         :return: The body of this UpdateConnectionRequest.
         :rtype: :class:`huaweicloudsdkdlf.v1.ConnectionInfo`
@@ -109,7 +109,7 @@ class UpdateConnectionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateConnectionRequest.
+        r"""Sets the body of this UpdateConnectionRequest.
 
         :param body: The body of this UpdateConnectionRequest.
         :type body: :class:`huaweicloudsdkdlf.v1.ConnectionInfo`

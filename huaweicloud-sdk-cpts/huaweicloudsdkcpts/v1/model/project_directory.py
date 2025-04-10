@@ -37,7 +37,7 @@ class ProjectDirectory:
     }
 
     def __init__(self, id=None, name=None, status=None, create_time=None, update_time=None, parent_id=None, type=None):
-        """ProjectDirectory
+        r"""ProjectDirectory
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ProjectDirectory:
 
     @property
     def id(self):
-        """Gets the id of this ProjectDirectory.
+        r"""Gets the id of this ProjectDirectory.
 
         id
 
@@ -89,7 +89,7 @@ class ProjectDirectory:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ProjectDirectory.
+        r"""Sets the id of this ProjectDirectory.
 
         id
 
@@ -100,7 +100,7 @@ class ProjectDirectory:
 
     @property
     def name(self):
-        """Gets the name of this ProjectDirectory.
+        r"""Gets the name of this ProjectDirectory.
 
         名称
 
@@ -111,7 +111,7 @@ class ProjectDirectory:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ProjectDirectory.
+        r"""Sets the name of this ProjectDirectory.
 
         名称
 
@@ -122,7 +122,7 @@ class ProjectDirectory:
 
     @property
     def status(self):
-        """Gets the status of this ProjectDirectory.
+        r"""Gets the status of this ProjectDirectory.
 
         状态（0：已删除，1：启用，2：停用）
 
@@ -133,7 +133,7 @@ class ProjectDirectory:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ProjectDirectory.
+        r"""Sets the status of this ProjectDirectory.
 
         状态（0：已删除，1：启用，2：停用）
 
@@ -144,7 +144,7 @@ class ProjectDirectory:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ProjectDirectory.
+        r"""Gets the create_time of this ProjectDirectory.
 
         创建时间
 
@@ -155,7 +155,7 @@ class ProjectDirectory:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ProjectDirectory.
+        r"""Sets the create_time of this ProjectDirectory.
 
         创建时间
 
@@ -166,7 +166,7 @@ class ProjectDirectory:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ProjectDirectory.
+        r"""Gets the update_time of this ProjectDirectory.
 
         更新时间
 
@@ -177,7 +177,7 @@ class ProjectDirectory:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ProjectDirectory.
+        r"""Sets the update_time of this ProjectDirectory.
 
         更新时间
 
@@ -188,7 +188,7 @@ class ProjectDirectory:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this ProjectDirectory.
+        r"""Gets the parent_id of this ProjectDirectory.
 
         父id
 
@@ -199,7 +199,7 @@ class ProjectDirectory:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this ProjectDirectory.
+        r"""Sets the parent_id of this ProjectDirectory.
 
         父id
 
@@ -210,7 +210,7 @@ class ProjectDirectory:
 
     @property
     def type(self):
-        """Gets the type of this ProjectDirectory.
+        r"""Gets the type of this ProjectDirectory.
 
         类型（1：目录，2：用例）
 
@@ -221,7 +221,7 @@ class ProjectDirectory:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ProjectDirectory.
+        r"""Sets the type of this ProjectDirectory.
 
         类型（1：目录，2：用例）
 

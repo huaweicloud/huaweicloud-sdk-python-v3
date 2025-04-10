@@ -32,7 +32,7 @@ class UpdateHotkeyAutoScanConfigResponse(SdkResponse):
     }
 
     def __init__(self, instance_id=None, enable_auto_scan=None, schedule_at=None, updated_at=None):
-        """UpdateHotkeyAutoScanConfigResponse
+        r"""UpdateHotkeyAutoScanConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class UpdateHotkeyAutoScanConfigResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateHotkeyAutoScanConfigResponse.
+        r"""Gets the instance_id of this UpdateHotkeyAutoScanConfigResponse.
 
         实例ID
 
@@ -76,7 +76,7 @@ class UpdateHotkeyAutoScanConfigResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateHotkeyAutoScanConfigResponse.
+        r"""Sets the instance_id of this UpdateHotkeyAutoScanConfigResponse.
 
         实例ID
 
@@ -87,7 +87,7 @@ class UpdateHotkeyAutoScanConfigResponse(SdkResponse):
 
     @property
     def enable_auto_scan(self):
-        """Gets the enable_auto_scan of this UpdateHotkeyAutoScanConfigResponse.
+        r"""Gets the enable_auto_scan of this UpdateHotkeyAutoScanConfigResponse.
 
         是否开启自动分析
 
@@ -98,7 +98,7 @@ class UpdateHotkeyAutoScanConfigResponse(SdkResponse):
 
     @enable_auto_scan.setter
     def enable_auto_scan(self, enable_auto_scan):
-        """Sets the enable_auto_scan of this UpdateHotkeyAutoScanConfigResponse.
+        r"""Sets the enable_auto_scan of this UpdateHotkeyAutoScanConfigResponse.
 
         是否开启自动分析
 
@@ -109,7 +109,7 @@ class UpdateHotkeyAutoScanConfigResponse(SdkResponse):
 
     @property
     def schedule_at(self):
-        """Gets the schedule_at of this UpdateHotkeyAutoScanConfigResponse.
+        r"""Gets the schedule_at of this UpdateHotkeyAutoScanConfigResponse.
 
         每日分析时间，时间格式为21:00
 
@@ -120,7 +120,7 @@ class UpdateHotkeyAutoScanConfigResponse(SdkResponse):
 
     @schedule_at.setter
     def schedule_at(self, schedule_at):
-        """Sets the schedule_at of this UpdateHotkeyAutoScanConfigResponse.
+        r"""Sets the schedule_at of this UpdateHotkeyAutoScanConfigResponse.
 
         每日分析时间，时间格式为21:00
 
@@ -131,7 +131,7 @@ class UpdateHotkeyAutoScanConfigResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this UpdateHotkeyAutoScanConfigResponse.
+        r"""Gets the updated_at of this UpdateHotkeyAutoScanConfigResponse.
 
         配置更新时间，时间格式为2020-06-15T02:21:18.669Z
 
@@ -142,7 +142,7 @@ class UpdateHotkeyAutoScanConfigResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this UpdateHotkeyAutoScanConfigResponse.
+        r"""Sets the updated_at of this UpdateHotkeyAutoScanConfigResponse.
 
         配置更新时间，时间格式为2020-06-15T02:21:18.669Z
 

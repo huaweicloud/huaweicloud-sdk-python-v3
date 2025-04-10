@@ -35,7 +35,7 @@ class UpdateResJobRequestBody:
     }
 
     def __init__(self, category=None, description=None, job_config=None, job_name=None, job_type=None, schedule=None):
-        """UpdateResJobRequestBody
+        r"""UpdateResJobRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class UpdateResJobRequestBody:
 
     @property
     def category(self):
-        """Gets the category of this UpdateResJobRequestBody.
+        r"""Gets the category of this UpdateResJobRequestBody.
 
         类别： - RECALL，召回作业 - DATASOURCE，数据源作业 - FILTER，过滤作业 - SORTING，排序作业 - EVALUATE，效果评估作业
 
@@ -85,7 +85,7 @@ class UpdateResJobRequestBody:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this UpdateResJobRequestBody.
+        r"""Sets the category of this UpdateResJobRequestBody.
 
         类别： - RECALL，召回作业 - DATASOURCE，数据源作业 - FILTER，过滤作业 - SORTING，排序作业 - EVALUATE，效果评估作业
 
@@ -96,7 +96,7 @@ class UpdateResJobRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateResJobRequestBody.
+        r"""Gets the description of this UpdateResJobRequestBody.
 
         描述
 
@@ -107,7 +107,7 @@ class UpdateResJobRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateResJobRequestBody.
+        r"""Sets the description of this UpdateResJobRequestBody.
 
         描述
 
@@ -118,7 +118,7 @@ class UpdateResJobRequestBody:
 
     @property
     def job_config(self):
-        """Gets the job_config of this UpdateResJobRequestBody.
+        r"""Gets the job_config of this UpdateResJobRequestBody.
 
         :return: The job_config of this UpdateResJobRequestBody.
         :rtype: :class:`huaweicloudsdkres.v1.JobConfig`
@@ -127,7 +127,7 @@ class UpdateResJobRequestBody:
 
     @job_config.setter
     def job_config(self, job_config):
-        """Sets the job_config of this UpdateResJobRequestBody.
+        r"""Sets the job_config of this UpdateResJobRequestBody.
 
         :param job_config: The job_config of this UpdateResJobRequestBody.
         :type job_config: :class:`huaweicloudsdkres.v1.JobConfig`
@@ -136,7 +136,7 @@ class UpdateResJobRequestBody:
 
     @property
     def job_name(self):
-        """Gets the job_name of this UpdateResJobRequestBody.
+        r"""Gets the job_name of this UpdateResJobRequestBody.
 
         作业名称
 
@@ -147,7 +147,7 @@ class UpdateResJobRequestBody:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this UpdateResJobRequestBody.
+        r"""Sets the job_name of this UpdateResJobRequestBody.
 
         作业名称
 
@@ -158,7 +158,7 @@ class UpdateResJobRequestBody:
 
     @property
     def job_type(self):
-        """Gets the job_type of this UpdateResJobRequestBody.
+        r"""Gets the job_type of this UpdateResJobRequestBody.
 
         作业类型： - WriteUserProfile，用户画像实时导入作业 - WriteItemProfile，物品画像实时导入作业 - UniversalProcess，行为数据实时导入作业 - NearlineRecall，近线召回作业 - EncodeProfile，近线特征工程作业 - AttributeMatch，属性匹配召回作业 - AlsCF，交替最小二乘协同过滤作业 - BhvHistory，历史行为记忆召回作业 - ItemCf，物品协同过滤召回作业 - MenEdit，人工配置候选集作业 - Ucb，UCB召回作业 - UserCf，用户协同过滤召回作业 - WeightBehavior，综合行为热度召回作业 - Filter，历史行为过滤作业 - AutoPreRank，智能ETL参数生成作业 - ETL，离线特征工程作业 - LR，LR作业 - DEEPFM，DEEPFM作业 - AutoGroup，AutoGroup作业 - StreamRank，在线训练作业 - DataStruct，识别数据结构作业 - DataExploration，数据探索作业 - DataImport，离线数据导入作业 - Evaluate，效果评估作业
 
@@ -169,7 +169,7 @@ class UpdateResJobRequestBody:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this UpdateResJobRequestBody.
+        r"""Sets the job_type of this UpdateResJobRequestBody.
 
         作业类型： - WriteUserProfile，用户画像实时导入作业 - WriteItemProfile，物品画像实时导入作业 - UniversalProcess，行为数据实时导入作业 - NearlineRecall，近线召回作业 - EncodeProfile，近线特征工程作业 - AttributeMatch，属性匹配召回作业 - AlsCF，交替最小二乘协同过滤作业 - BhvHistory，历史行为记忆召回作业 - ItemCf，物品协同过滤召回作业 - MenEdit，人工配置候选集作业 - Ucb，UCB召回作业 - UserCf，用户协同过滤召回作业 - WeightBehavior，综合行为热度召回作业 - Filter，历史行为过滤作业 - AutoPreRank，智能ETL参数生成作业 - ETL，离线特征工程作业 - LR，LR作业 - DEEPFM，DEEPFM作业 - AutoGroup，AutoGroup作业 - StreamRank，在线训练作业 - DataStruct，识别数据结构作业 - DataExploration，数据探索作业 - DataImport，离线数据导入作业 - Evaluate，效果评估作业
 
@@ -180,7 +180,7 @@ class UpdateResJobRequestBody:
 
     @property
     def schedule(self):
-        """Gets the schedule of this UpdateResJobRequestBody.
+        r"""Gets the schedule of this UpdateResJobRequestBody.
 
         调度参数
 
@@ -191,7 +191,7 @@ class UpdateResJobRequestBody:
 
     @schedule.setter
     def schedule(self, schedule):
-        """Sets the schedule of this UpdateResJobRequestBody.
+        r"""Sets the schedule of this UpdateResJobRequestBody.
 
         调度参数
 

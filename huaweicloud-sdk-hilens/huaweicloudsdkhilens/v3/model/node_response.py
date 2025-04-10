@@ -61,7 +61,7 @@ class NodeResponse:
     }
 
     def __init__(self, id=None, name=None, description=None, created_at=None, cluster_id=None, cluster_node_state=None, cluster_node_type=None, firmware_name=None, upgrade_firmware_version=None, firmware_status=None, firmware_upgrade_record=None, state=None, type=None, active_status=None, cpu=None, gpu_num=None, npu_num=None, host_ips=None, deployment_num=None):
-        """NodeResponse
+        r"""NodeResponse
 
         The model defined in huaweicloud sdk
 
@@ -169,7 +169,7 @@ class NodeResponse:
 
     @property
     def id(self):
-        """Gets the id of this NodeResponse.
+        r"""Gets the id of this NodeResponse.
 
         设备ID
 
@@ -180,7 +180,7 @@ class NodeResponse:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NodeResponse.
+        r"""Sets the id of this NodeResponse.
 
         设备ID
 
@@ -191,7 +191,7 @@ class NodeResponse:
 
     @property
     def name(self):
-        """Gets the name of this NodeResponse.
+        r"""Gets the name of this NodeResponse.
 
         设备名称，只允许中文字符、英文字母、数字、下划线、中划线，最大长度64
 
@@ -202,7 +202,7 @@ class NodeResponse:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NodeResponse.
+        r"""Sets the name of this NodeResponse.
 
         设备名称，只允许中文字符、英文字母、数字、下划线、中划线，最大长度64
 
@@ -213,7 +213,7 @@ class NodeResponse:
 
     @property
     def description(self):
-        """Gets the description of this NodeResponse.
+        r"""Gets the description of this NodeResponse.
 
         设备描述，最大长度255，不允许^, ~, ＃, $, %, &, *, <, >, (, ), [, ], {, }, ', \", \\
 
@@ -224,7 +224,7 @@ class NodeResponse:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this NodeResponse.
+        r"""Sets the description of this NodeResponse.
 
         设备描述，最大长度255，不允许^, ~, ＃, $, %, &, *, <, >, (, ), [, ], {, }, ', \", \\
 
@@ -235,7 +235,7 @@ class NodeResponse:
 
     @property
     def created_at(self):
-        """Gets the created_at of this NodeResponse.
+        r"""Gets the created_at of this NodeResponse.
 
         产生时间，如2021-10-15 14:45:22 GMT+08:00
 
@@ -246,7 +246,7 @@ class NodeResponse:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this NodeResponse.
+        r"""Sets the created_at of this NodeResponse.
 
         产生时间，如2021-10-15 14:45:22 GMT+08:00
 
@@ -257,7 +257,7 @@ class NodeResponse:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this NodeResponse.
+        r"""Gets the cluster_id of this NodeResponse.
 
         当该设备处于集群时，显示设备所属的集群ID
 
@@ -268,7 +268,7 @@ class NodeResponse:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this NodeResponse.
+        r"""Sets the cluster_id of this NodeResponse.
 
         当该设备处于集群时，显示设备所属的集群ID
 
@@ -279,7 +279,7 @@ class NodeResponse:
 
     @property
     def cluster_node_state(self):
-        """Gets the cluster_node_state of this NodeResponse.
+        r"""Gets the cluster_node_state of this NodeResponse.
 
         设备所处集群状态，集群创建（cluster_create）、集群删除（cluster_delete）、添加集群工作节点设备（cluster_add_nodes）、删除集群工作节点设备（cluster_delete_node）、集群节点设备状态更新（cluster_node_state_update）
 
@@ -290,7 +290,7 @@ class NodeResponse:
 
     @cluster_node_state.setter
     def cluster_node_state(self, cluster_node_state):
-        """Sets the cluster_node_state of this NodeResponse.
+        r"""Sets the cluster_node_state of this NodeResponse.
 
         设备所处集群状态，集群创建（cluster_create）、集群删除（cluster_delete）、添加集群工作节点设备（cluster_add_nodes）、删除集群工作节点设备（cluster_delete_node）、集群节点设备状态更新（cluster_node_state_update）
 
@@ -301,7 +301,7 @@ class NodeResponse:
 
     @property
     def cluster_node_type(self):
-        """Gets the cluster_node_type of this NodeResponse.
+        r"""Gets the cluster_node_type of this NodeResponse.
 
         当该设备处于集群时，显示所属的集群设备类型。 - cluster_controller 控制设备 - cluster_worker 工作设备
 
@@ -312,7 +312,7 @@ class NodeResponse:
 
     @cluster_node_type.setter
     def cluster_node_type(self, cluster_node_type):
-        """Sets the cluster_node_type of this NodeResponse.
+        r"""Sets the cluster_node_type of this NodeResponse.
 
         当该设备处于集群时，显示所属的集群设备类型。 - cluster_controller 控制设备 - cluster_worker 工作设备
 
@@ -323,7 +323,7 @@ class NodeResponse:
 
     @property
     def firmware_name(self):
-        """Gets the firmware_name of this NodeResponse.
+        r"""Gets the firmware_name of this NodeResponse.
 
         固件名称。可包含大小写字母、数字、下划线、中划线,长度不超过60字符。必须以字母开头,字母或数字结尾
 
@@ -334,7 +334,7 @@ class NodeResponse:
 
     @firmware_name.setter
     def firmware_name(self, firmware_name):
-        """Sets the firmware_name of this NodeResponse.
+        r"""Sets the firmware_name of this NodeResponse.
 
         固件名称。可包含大小写字母、数字、下划线、中划线,长度不超过60字符。必须以字母开头,字母或数字结尾
 
@@ -345,7 +345,7 @@ class NodeResponse:
 
     @property
     def upgrade_firmware_version(self):
-        """Gets the upgrade_firmware_version of this NodeResponse.
+        r"""Gets the upgrade_firmware_version of this NodeResponse.
 
         固件正在升级的版本
 
@@ -356,7 +356,7 @@ class NodeResponse:
 
     @upgrade_firmware_version.setter
     def upgrade_firmware_version(self, upgrade_firmware_version):
-        """Sets the upgrade_firmware_version of this NodeResponse.
+        r"""Sets the upgrade_firmware_version of this NodeResponse.
 
         固件正在升级的版本
 
@@ -367,7 +367,7 @@ class NodeResponse:
 
     @property
     def firmware_status(self):
-        """Gets the firmware_status of this NodeResponse.
+        r"""Gets the firmware_status of this NodeResponse.
 
         固件升级状态，1、2、3分别代表升级中，升级失败，升级成功
 
@@ -378,7 +378,7 @@ class NodeResponse:
 
     @firmware_status.setter
     def firmware_status(self, firmware_status):
-        """Sets the firmware_status of this NodeResponse.
+        r"""Sets the firmware_status of this NodeResponse.
 
         固件升级状态，1、2、3分别代表升级中，升级失败，升级成功
 
@@ -389,7 +389,7 @@ class NodeResponse:
 
     @property
     def firmware_upgrade_record(self):
-        """Gets the firmware_upgrade_record of this NodeResponse.
+        r"""Gets the firmware_upgrade_record of this NodeResponse.
 
         :return: The firmware_upgrade_record of this NodeResponse.
         :rtype: list[:class:`huaweicloudsdkhilens.v3.FirmwareUpdateRecord`]
@@ -398,7 +398,7 @@ class NodeResponse:
 
     @firmware_upgrade_record.setter
     def firmware_upgrade_record(self, firmware_upgrade_record):
-        """Sets the firmware_upgrade_record of this NodeResponse.
+        r"""Sets the firmware_upgrade_record of this NodeResponse.
 
         :param firmware_upgrade_record: The firmware_upgrade_record of this NodeResponse.
         :type firmware_upgrade_record: list[:class:`huaweicloudsdkhilens.v3.FirmwareUpdateRecord`]
@@ -407,7 +407,7 @@ class NodeResponse:
 
     @property
     def state(self):
-        """Gets the state of this NodeResponse.
+        r"""Gets the state of this NodeResponse.
 
         设备状态：UNCONNECTED(未注册)、RUNNING(运行中)、FAIL(故障)、STOPPED(停用)、UPGRADING(升级中)、FREEZE(冻结)
 
@@ -418,7 +418,7 @@ class NodeResponse:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this NodeResponse.
+        r"""Sets the state of this NodeResponse.
 
         设备状态：UNCONNECTED(未注册)、RUNNING(运行中)、FAIL(故障)、STOPPED(停用)、UPGRADING(升级中)、FREEZE(冻结)
 
@@ -429,7 +429,7 @@ class NodeResponse:
 
     @property
     def type(self):
-        """Gets the type of this NodeResponse.
+        r"""Gets the type of this NodeResponse.
 
         设备类型
 
@@ -440,7 +440,7 @@ class NodeResponse:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this NodeResponse.
+        r"""Sets the type of this NodeResponse.
 
         设备类型
 
@@ -451,7 +451,7 @@ class NodeResponse:
 
     @property
     def active_status(self):
-        """Gets the active_status of this NodeResponse.
+        r"""Gets the active_status of this NodeResponse.
 
         设备激活状态，未激活（INACTIVE）和已激活（ACTIVATED）
 
@@ -462,7 +462,7 @@ class NodeResponse:
 
     @active_status.setter
     def active_status(self, active_status):
-        """Sets the active_status of this NodeResponse.
+        r"""Sets the active_status of this NodeResponse.
 
         设备激活状态，未激活（INACTIVE）和已激活（ACTIVATED）
 
@@ -473,7 +473,7 @@ class NodeResponse:
 
     @property
     def cpu(self):
-        """Gets the cpu of this NodeResponse.
+        r"""Gets the cpu of this NodeResponse.
 
         设备CPU个数
 
@@ -484,7 +484,7 @@ class NodeResponse:
 
     @cpu.setter
     def cpu(self, cpu):
-        """Sets the cpu of this NodeResponse.
+        r"""Sets the cpu of this NodeResponse.
 
         设备CPU个数
 
@@ -495,7 +495,7 @@ class NodeResponse:
 
     @property
     def gpu_num(self):
-        """Gets the gpu_num of this NodeResponse.
+        r"""Gets the gpu_num of this NodeResponse.
 
         设备GPU个数
 
@@ -506,7 +506,7 @@ class NodeResponse:
 
     @gpu_num.setter
     def gpu_num(self, gpu_num):
-        """Sets the gpu_num of this NodeResponse.
+        r"""Sets the gpu_num of this NodeResponse.
 
         设备GPU个数
 
@@ -517,7 +517,7 @@ class NodeResponse:
 
     @property
     def npu_num(self):
-        """Gets the npu_num of this NodeResponse.
+        r"""Gets the npu_num of this NodeResponse.
 
         设备NPU个数
 
@@ -528,7 +528,7 @@ class NodeResponse:
 
     @npu_num.setter
     def npu_num(self, npu_num):
-        """Sets the npu_num of this NodeResponse.
+        r"""Sets the npu_num of this NodeResponse.
 
         设备NPU个数
 
@@ -539,7 +539,7 @@ class NodeResponse:
 
     @property
     def host_ips(self):
-        """Gets the host_ips of this NodeResponse.
+        r"""Gets the host_ips of this NodeResponse.
 
         主机IP列表
 
@@ -550,7 +550,7 @@ class NodeResponse:
 
     @host_ips.setter
     def host_ips(self, host_ips):
-        """Sets the host_ips of this NodeResponse.
+        r"""Sets the host_ips of this NodeResponse.
 
         主机IP列表
 
@@ -561,7 +561,7 @@ class NodeResponse:
 
     @property
     def deployment_num(self):
-        """Gets the deployment_num of this NodeResponse.
+        r"""Gets the deployment_num of this NodeResponse.
 
         节点中部署的数量
 
@@ -572,7 +572,7 @@ class NodeResponse:
 
     @deployment_num.setter
     def deployment_num(self, deployment_num):
-        """Sets the deployment_num of this NodeResponse.
+        r"""Sets the deployment_num of this NodeResponse.
 
         节点中部署的数量
 

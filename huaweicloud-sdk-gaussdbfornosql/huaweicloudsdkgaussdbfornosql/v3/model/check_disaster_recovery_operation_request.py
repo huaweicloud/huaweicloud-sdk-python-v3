@@ -27,7 +27,7 @@ class CheckDisasterRecoveryOperationRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CheckDisasterRecoveryOperationRequest
+        r"""CheckDisasterRecoveryOperationRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CheckDisasterRecoveryOperationRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CheckDisasterRecoveryOperationRequest.
+        r"""Gets the instance_id of this CheckDisasterRecoveryOperationRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class CheckDisasterRecoveryOperationRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CheckDisasterRecoveryOperationRequest.
+        r"""Sets the instance_id of this CheckDisasterRecoveryOperationRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class CheckDisasterRecoveryOperationRequest:
 
     @property
     def body(self):
-        """Gets the body of this CheckDisasterRecoveryOperationRequest.
+        r"""Gets the body of this CheckDisasterRecoveryOperationRequest.
 
         :return: The body of this CheckDisasterRecoveryOperationRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.PrecheckDisasterRecoveryOperationBody`
@@ -80,7 +80,7 @@ class CheckDisasterRecoveryOperationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CheckDisasterRecoveryOperationRequest.
+        r"""Sets the body of this CheckDisasterRecoveryOperationRequest.
 
         :param body: The body of this CheckDisasterRecoveryOperationRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.PrecheckDisasterRecoveryOperationBody`

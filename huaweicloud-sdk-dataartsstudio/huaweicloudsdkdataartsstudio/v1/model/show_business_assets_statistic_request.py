@@ -29,7 +29,7 @@ class ShowBusinessAssetsStatisticRequest:
     }
 
     def __init__(self, workspace=None, offset=None, limit=None):
-        """ShowBusinessAssetsStatisticRequest
+        r"""ShowBusinessAssetsStatisticRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ShowBusinessAssetsStatisticRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowBusinessAssetsStatisticRequest.
+        r"""Gets the workspace of this ShowBusinessAssetsStatisticRequest.
 
         DataArts Studio工作空间ID
 
@@ -67,7 +67,7 @@ class ShowBusinessAssetsStatisticRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowBusinessAssetsStatisticRequest.
+        r"""Sets the workspace of this ShowBusinessAssetsStatisticRequest.
 
         DataArts Studio工作空间ID
 
@@ -78,7 +78,7 @@ class ShowBusinessAssetsStatisticRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowBusinessAssetsStatisticRequest.
+        r"""Gets the offset of this ShowBusinessAssetsStatisticRequest.
 
         分页参数，查询偏移量，默认查询所有
 
@@ -89,7 +89,7 @@ class ShowBusinessAssetsStatisticRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowBusinessAssetsStatisticRequest.
+        r"""Sets the offset of this ShowBusinessAssetsStatisticRequest.
 
         分页参数，查询偏移量，默认查询所有
 
@@ -100,7 +100,7 @@ class ShowBusinessAssetsStatisticRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowBusinessAssetsStatisticRequest.
+        r"""Gets the limit of this ShowBusinessAssetsStatisticRequest.
 
         分页参数，每页数量，默认查询所有
 
@@ -111,7 +111,7 @@ class ShowBusinessAssetsStatisticRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowBusinessAssetsStatisticRequest.
+        r"""Sets the limit of this ShowBusinessAssetsStatisticRequest.
 
         分页参数，每页数量，默认查询所有
 

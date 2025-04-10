@@ -31,7 +31,7 @@ class ContactV2:
     }
 
     def __init__(self, contact_way=None, contact_value=None, area_code=None, verified_id=None):
-        """ContactV2
+        r"""ContactV2
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ContactV2:
 
     @property
     def contact_way(self):
-        """Gets the contact_way of this ContactV2.
+        r"""Gets the contact_way of this ContactV2.
 
         联系方式类型，0: 手机; 1: 邮箱
 
@@ -75,7 +75,7 @@ class ContactV2:
 
     @contact_way.setter
     def contact_way(self, contact_way):
-        """Sets the contact_way of this ContactV2.
+        r"""Sets the contact_way of this ContactV2.
 
         联系方式类型，0: 手机; 1: 邮箱
 
@@ -86,7 +86,7 @@ class ContactV2:
 
     @property
     def contact_value(self):
-        """Gets the contact_value of this ContactV2.
+        r"""Gets the contact_value of this ContactV2.
 
         联系方式值
 
@@ -97,7 +97,7 @@ class ContactV2:
 
     @contact_value.setter
     def contact_value(self, contact_value):
-        """Sets the contact_value of this ContactV2.
+        r"""Sets the contact_value of this ContactV2.
 
         联系方式值
 
@@ -108,7 +108,7 @@ class ContactV2:
 
     @property
     def area_code(self):
-        """Gets the area_code of this ContactV2.
+        r"""Gets the area_code of this ContactV2.
 
         国家码
 
@@ -119,7 +119,7 @@ class ContactV2:
 
     @area_code.setter
     def area_code(self, area_code):
-        """Sets the area_code of this ContactV2.
+        r"""Sets the area_code of this ContactV2.
 
         国家码
 
@@ -130,7 +130,7 @@ class ContactV2:
 
     @property
     def verified_id(self):
-        """Gets the verified_id of this ContactV2.
+        r"""Gets the verified_id of this ContactV2.
 
         验证序列号
 
@@ -141,7 +141,7 @@ class ContactV2:
 
     @verified_id.setter
     def verified_id(self, verified_id):
-        """Sets the verified_id of this ContactV2.
+        r"""Sets the verified_id of this ContactV2.
 
         验证序列号
 

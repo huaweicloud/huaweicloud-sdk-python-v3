@@ -27,7 +27,7 @@ class LigandDto:
     }
 
     def __init__(self, ligand=None, count=None):
-        """LigandDto
+        r"""LigandDto
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class LigandDto:
 
     @property
     def ligand(self):
-        """Gets the ligand of this LigandDto.
+        r"""Gets the ligand of this LigandDto.
 
         :return: The ligand of this LigandDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DrugFile`
@@ -57,7 +57,7 @@ class LigandDto:
 
     @ligand.setter
     def ligand(self, ligand):
-        """Sets the ligand of this LigandDto.
+        r"""Sets the ligand of this LigandDto.
 
         :param ligand: The ligand of this LigandDto.
         :type ligand: :class:`huaweicloudsdkeihealth.v1.DrugFile`
@@ -66,7 +66,7 @@ class LigandDto:
 
     @property
     def count(self):
-        """Gets the count of this LigandDto.
+        r"""Gets the count of this LigandDto.
 
         计算个数
 
@@ -77,7 +77,7 @@ class LigandDto:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this LigandDto.
+        r"""Sets the count of this LigandDto.
 
         计算个数
 

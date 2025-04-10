@@ -43,7 +43,7 @@ class CertificatesRspDTO:
     }
 
     def __init__(self, certificate_id=None, cn_name=None, owner=None, status=None, verify_code=None, provision_enable=None, template_id=None, create_date=None, effective_date=None, expiry_date=None):
-        """CertificatesRspDTO
+        r"""CertificatesRspDTO
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class CertificatesRspDTO:
 
     @property
     def certificate_id(self):
-        """Gets the certificate_id of this CertificatesRspDTO.
+        r"""Gets the certificate_id of this CertificatesRspDTO.
 
         CA证书ID，在上传CA证书时由平台分配的唯一标识。
 
@@ -117,7 +117,7 @@ class CertificatesRspDTO:
 
     @certificate_id.setter
     def certificate_id(self, certificate_id):
-        """Sets the certificate_id of this CertificatesRspDTO.
+        r"""Sets the certificate_id of this CertificatesRspDTO.
 
         CA证书ID，在上传CA证书时由平台分配的唯一标识。
 
@@ -128,7 +128,7 @@ class CertificatesRspDTO:
 
     @property
     def cn_name(self):
-        """Gets the cn_name of this CertificatesRspDTO.
+        r"""Gets the cn_name of this CertificatesRspDTO.
 
         CA证书CN名称。
 
@@ -139,7 +139,7 @@ class CertificatesRspDTO:
 
     @cn_name.setter
     def cn_name(self, cn_name):
-        """Sets the cn_name of this CertificatesRspDTO.
+        r"""Sets the cn_name of this CertificatesRspDTO.
 
         CA证书CN名称。
 
@@ -150,7 +150,7 @@ class CertificatesRspDTO:
 
     @property
     def owner(self):
-        """Gets the owner of this CertificatesRspDTO.
+        r"""Gets the owner of this CertificatesRspDTO.
 
         CA证书所有者。
 
@@ -161,7 +161,7 @@ class CertificatesRspDTO:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this CertificatesRspDTO.
+        r"""Sets the owner of this CertificatesRspDTO.
 
         CA证书所有者。
 
@@ -172,7 +172,7 @@ class CertificatesRspDTO:
 
     @property
     def status(self):
-        """Gets the status of this CertificatesRspDTO.
+        r"""Gets the status of this CertificatesRspDTO.
 
         CA证书验证状态。true代表证书已通过验证，可进行设备证书认证接入。false代表证书未通过验证。
 
@@ -183,7 +183,7 @@ class CertificatesRspDTO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CertificatesRspDTO.
+        r"""Sets the status of this CertificatesRspDTO.
 
         CA证书验证状态。true代表证书已通过验证，可进行设备证书认证接入。false代表证书未通过验证。
 
@@ -194,7 +194,7 @@ class CertificatesRspDTO:
 
     @property
     def verify_code(self):
-        """Gets the verify_code of this CertificatesRspDTO.
+        r"""Gets the verify_code of this CertificatesRspDTO.
 
         CA证书验证码。
 
@@ -205,7 +205,7 @@ class CertificatesRspDTO:
 
     @verify_code.setter
     def verify_code(self, verify_code):
-        """Sets the verify_code of this CertificatesRspDTO.
+        r"""Sets the verify_code of this CertificatesRspDTO.
 
         CA证书验证码。
 
@@ -216,7 +216,7 @@ class CertificatesRspDTO:
 
     @property
     def provision_enable(self):
-        """Gets the provision_enable of this CertificatesRspDTO.
+        r"""Gets the provision_enable of this CertificatesRspDTO.
 
         是否开启自注册能力，当为true时该功能必须配合自注册模板使用，true：是，false：否。
 
@@ -227,7 +227,7 @@ class CertificatesRspDTO:
 
     @provision_enable.setter
     def provision_enable(self, provision_enable):
-        """Sets the provision_enable of this CertificatesRspDTO.
+        r"""Sets the provision_enable of this CertificatesRspDTO.
 
         是否开启自注册能力，当为true时该功能必须配合自注册模板使用，true：是，false：否。
 
@@ -238,7 +238,7 @@ class CertificatesRspDTO:
 
     @property
     def template_id(self):
-        """Gets the template_id of this CertificatesRspDTO.
+        r"""Gets the template_id of this CertificatesRspDTO.
 
         绑定的自注册模板ID。
 
@@ -249,7 +249,7 @@ class CertificatesRspDTO:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this CertificatesRspDTO.
+        r"""Sets the template_id of this CertificatesRspDTO.
 
         绑定的自注册模板ID。
 
@@ -260,7 +260,7 @@ class CertificatesRspDTO:
 
     @property
     def create_date(self):
-        """Gets the create_date of this CertificatesRspDTO.
+        r"""Gets the create_date of this CertificatesRspDTO.
 
         创建证书日期。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
@@ -271,7 +271,7 @@ class CertificatesRspDTO:
 
     @create_date.setter
     def create_date(self, create_date):
-        """Sets the create_date of this CertificatesRspDTO.
+        r"""Sets the create_date of this CertificatesRspDTO.
 
         创建证书日期。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
@@ -282,7 +282,7 @@ class CertificatesRspDTO:
 
     @property
     def effective_date(self):
-        """Gets the effective_date of this CertificatesRspDTO.
+        r"""Gets the effective_date of this CertificatesRspDTO.
 
         CA证书生效日期。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
@@ -293,7 +293,7 @@ class CertificatesRspDTO:
 
     @effective_date.setter
     def effective_date(self, effective_date):
-        """Sets the effective_date of this CertificatesRspDTO.
+        r"""Sets the effective_date of this CertificatesRspDTO.
 
         CA证书生效日期。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
@@ -304,7 +304,7 @@ class CertificatesRspDTO:
 
     @property
     def expiry_date(self):
-        """Gets the expiry_date of this CertificatesRspDTO.
+        r"""Gets the expiry_date of this CertificatesRspDTO.
 
         CA证书失效日期。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
@@ -315,7 +315,7 @@ class CertificatesRspDTO:
 
     @expiry_date.setter
     def expiry_date(self, expiry_date):
-        """Sets the expiry_date of this CertificatesRspDTO.
+        r"""Sets the expiry_date of this CertificatesRspDTO.
 
         CA证书失效日期。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 

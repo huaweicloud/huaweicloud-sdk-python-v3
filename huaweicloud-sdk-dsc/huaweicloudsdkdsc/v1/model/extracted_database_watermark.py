@@ -29,7 +29,7 @@ class ExtractedDatabaseWatermark:
     }
 
     def __init__(self, watermark_key=None, columns=None, data=None):
-        """ExtractedDatabaseWatermark
+        r"""ExtractedDatabaseWatermark
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ExtractedDatabaseWatermark:
 
     @property
     def watermark_key(self):
-        """Gets the watermark_key of this ExtractedDatabaseWatermark.
+        r"""Gets the watermark_key of this ExtractedDatabaseWatermark.
 
         水印密钥
 
@@ -65,7 +65,7 @@ class ExtractedDatabaseWatermark:
 
     @watermark_key.setter
     def watermark_key(self, watermark_key):
-        """Sets the watermark_key of this ExtractedDatabaseWatermark.
+        r"""Sets the watermark_key of this ExtractedDatabaseWatermark.
 
         水印密钥
 
@@ -76,7 +76,7 @@ class ExtractedDatabaseWatermark:
 
     @property
     def columns(self):
-        """Gets the columns of this ExtractedDatabaseWatermark.
+        r"""Gets the columns of this ExtractedDatabaseWatermark.
 
         字段类型列表，最大长度100。使用时，要包含嵌入时所有“primary_key”为true的字段，和至少一个为false的字段用来提取水印
 
@@ -87,7 +87,7 @@ class ExtractedDatabaseWatermark:
 
     @columns.setter
     def columns(self, columns):
-        """Sets the columns of this ExtractedDatabaseWatermark.
+        r"""Sets the columns of this ExtractedDatabaseWatermark.
 
         字段类型列表，最大长度100。使用时，要包含嵌入时所有“primary_key”为true的字段，和至少一个为false的字段用来提取水印
 
@@ -98,7 +98,7 @@ class ExtractedDatabaseWatermark:
 
     @property
     def data(self):
-        """Gets the data of this ExtractedDatabaseWatermark.
+        r"""Gets the data of this ExtractedDatabaseWatermark.
 
         水印数据，数据条数不超过30,000条
 
@@ -109,7 +109,7 @@ class ExtractedDatabaseWatermark:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ExtractedDatabaseWatermark.
+        r"""Sets the data of this ExtractedDatabaseWatermark.
 
         水印数据，数据条数不超过30,000条
 

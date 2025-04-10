@@ -27,7 +27,7 @@ class QuotaStatisticsResponseInfo:
     }
 
     def __init__(self, version=None, total_num=None):
-        """QuotaStatisticsResponseInfo
+        r"""QuotaStatisticsResponseInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class QuotaStatisticsResponseInfo:
 
     @property
     def version(self):
-        """Gets the version of this QuotaStatisticsResponseInfo.
+        r"""Gets the version of this QuotaStatisticsResponseInfo.
 
         资源规格编码，包含如下:   - hss.version.basic : 基础版   - hss.version.advanced : 专业版   - hss.version.enterprise : 企业版   - hss.version.premium : 旗舰版   - hss.version.wtp : 网页防篡改版   - hss.version.container : 容器版
 
@@ -61,7 +61,7 @@ class QuotaStatisticsResponseInfo:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this QuotaStatisticsResponseInfo.
+        r"""Sets the version of this QuotaStatisticsResponseInfo.
 
         资源规格编码，包含如下:   - hss.version.basic : 基础版   - hss.version.advanced : 专业版   - hss.version.enterprise : 企业版   - hss.version.premium : 旗舰版   - hss.version.wtp : 网页防篡改版   - hss.version.container : 容器版
 
@@ -72,7 +72,7 @@ class QuotaStatisticsResponseInfo:
 
     @property
     def total_num(self):
-        """Gets the total_num of this QuotaStatisticsResponseInfo.
+        r"""Gets the total_num of this QuotaStatisticsResponseInfo.
 
         配额总数
 
@@ -83,7 +83,7 @@ class QuotaStatisticsResponseInfo:
 
     @total_num.setter
     def total_num(self, total_num):
-        """Sets the total_num of this QuotaStatisticsResponseInfo.
+        r"""Sets the total_num of this QuotaStatisticsResponseInfo.
 
         配额总数
 

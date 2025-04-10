@@ -28,7 +28,7 @@ class ListV2xEdgeAppResponse(SdkResponse):
     }
 
     def __init__(self, count=None, apps=None):
-        """ListV2xEdgeAppResponse
+        r"""ListV2xEdgeAppResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListV2xEdgeAppResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListV2xEdgeAppResponse.
+        r"""Gets the count of this ListV2xEdgeAppResponse.
 
         **参数说明**：满足查询条件的记录数。
 
@@ -62,7 +62,7 @@ class ListV2xEdgeAppResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListV2xEdgeAppResponse.
+        r"""Sets the count of this ListV2xEdgeAppResponse.
 
         **参数说明**：满足查询条件的记录数。
 
@@ -73,7 +73,7 @@ class ListV2xEdgeAppResponse(SdkResponse):
 
     @property
     def apps(self):
-        """Gets the apps of this ListV2xEdgeAppResponse.
+        r"""Gets the apps of this ListV2xEdgeAppResponse.
 
         **参数说明**：已部署的边缘应用列表。
 
@@ -84,7 +84,7 @@ class ListV2xEdgeAppResponse(SdkResponse):
 
     @apps.setter
     def apps(self, apps):
-        """Sets the apps of this ListV2xEdgeAppResponse.
+        r"""Sets the apps of this ListV2xEdgeAppResponse.
 
         **参数说明**：已部署的边缘应用列表。
 

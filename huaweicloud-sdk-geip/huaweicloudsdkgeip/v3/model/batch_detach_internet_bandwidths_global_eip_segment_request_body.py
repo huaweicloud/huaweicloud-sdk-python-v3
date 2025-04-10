@@ -25,7 +25,7 @@ class BatchDetachInternetBandwidthsGlobalEipSegmentRequestBody:
     }
 
     def __init__(self, global_eip_segments=None):
-        """BatchDetachInternetBandwidthsGlobalEipSegmentRequestBody
+        r"""BatchDetachInternetBandwidthsGlobalEipSegmentRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchDetachInternetBandwidthsGlobalEipSegmentRequestBody:
 
     @property
     def global_eip_segments(self):
-        """Gets the global_eip_segments of this BatchDetachInternetBandwidthsGlobalEipSegmentRequestBody.
+        r"""Gets the global_eip_segments of this BatchDetachInternetBandwidthsGlobalEipSegmentRequestBody.
 
         请求列表
 
@@ -53,7 +53,7 @@ class BatchDetachInternetBandwidthsGlobalEipSegmentRequestBody:
 
     @global_eip_segments.setter
     def global_eip_segments(self, global_eip_segments):
-        """Sets the global_eip_segments of this BatchDetachInternetBandwidthsGlobalEipSegmentRequestBody.
+        r"""Sets the global_eip_segments of this BatchDetachInternetBandwidthsGlobalEipSegmentRequestBody.
 
         请求列表
 

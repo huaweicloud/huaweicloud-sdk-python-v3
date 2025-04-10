@@ -31,7 +31,7 @@ class ApiBatchPublish:
     }
 
     def __init__(self, apis=None, env_id=None, group_id=None, remark=None):
-        """ApiBatchPublish
+        r"""ApiBatchPublish
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ApiBatchPublish:
 
     @property
     def apis(self):
-        """Gets the apis of this ApiBatchPublish.
+        r"""Gets the apis of this ApiBatchPublish.
 
         需要发布或下线的API ID列表，单次更新上限为1000个API。必须指定apis或group_id。
 
@@ -74,7 +74,7 @@ class ApiBatchPublish:
 
     @apis.setter
     def apis(self, apis):
-        """Sets the apis of this ApiBatchPublish.
+        r"""Sets the apis of this ApiBatchPublish.
 
         需要发布或下线的API ID列表，单次更新上限为1000个API。必须指定apis或group_id。
 
@@ -85,7 +85,7 @@ class ApiBatchPublish:
 
     @property
     def env_id(self):
-        """Gets the env_id of this ApiBatchPublish.
+        r"""Gets the env_id of this ApiBatchPublish.
 
         环境ID
 
@@ -96,7 +96,7 @@ class ApiBatchPublish:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this ApiBatchPublish.
+        r"""Sets the env_id of this ApiBatchPublish.
 
         环境ID
 
@@ -107,7 +107,7 @@ class ApiBatchPublish:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ApiBatchPublish.
+        r"""Gets the group_id of this ApiBatchPublish.
 
         API分组ID。必须指定apis或group_id。
 
@@ -118,7 +118,7 @@ class ApiBatchPublish:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ApiBatchPublish.
+        r"""Sets the group_id of this ApiBatchPublish.
 
         API分组ID。必须指定apis或group_id。
 
@@ -129,7 +129,7 @@ class ApiBatchPublish:
 
     @property
     def remark(self):
-        """Gets the remark of this ApiBatchPublish.
+        r"""Gets the remark of this ApiBatchPublish.
 
         对本次发布的描述信息  字符长度不超过255 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -140,7 +140,7 @@ class ApiBatchPublish:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this ApiBatchPublish.
+        r"""Sets the remark of this ApiBatchPublish.
 
         对本次发布的描述信息  字符长度不超过255 > 中文字符必须为UTF-8或者unicode编码。
 

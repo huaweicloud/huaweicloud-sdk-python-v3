@@ -26,7 +26,7 @@ class BatchCreateApplicationViewResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """BatchCreateApplicationViewResponse
+        r"""BatchCreateApplicationViewResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchCreateApplicationViewResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateApplicationViewResponse.
+        r"""Gets the body of this BatchCreateApplicationViewResponse.
 
         :return: The body of this BatchCreateApplicationViewResponse.
         :rtype: object
@@ -53,7 +53,7 @@ class BatchCreateApplicationViewResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateApplicationViewResponse.
+        r"""Sets the body of this BatchCreateApplicationViewResponse.
 
         :param body: The body of this BatchCreateApplicationViewResponse.
         :type body: object

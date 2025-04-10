@@ -27,7 +27,7 @@ class CreateWorkspaceRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """CreateWorkspaceRequest
+        r"""CreateWorkspaceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateWorkspaceRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateWorkspaceRequest.
+        r"""Gets the project_id of this CreateWorkspaceRequest.
 
         项目id
 
@@ -60,7 +60,7 @@ class CreateWorkspaceRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateWorkspaceRequest.
+        r"""Sets the project_id of this CreateWorkspaceRequest.
 
         项目id
 
@@ -71,7 +71,7 @@ class CreateWorkspaceRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateWorkspaceRequest.
+        r"""Gets the body of this CreateWorkspaceRequest.
 
         :return: The body of this CreateWorkspaceRequest.
         :rtype: :class:`huaweicloudsdksecmaster.v2.CreateWorkspaceRequestBody`
@@ -80,7 +80,7 @@ class CreateWorkspaceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateWorkspaceRequest.
+        r"""Sets the body of this CreateWorkspaceRequest.
 
         :param body: The body of this CreateWorkspaceRequest.
         :type body: :class:`huaweicloudsdksecmaster.v2.CreateWorkspaceRequestBody`

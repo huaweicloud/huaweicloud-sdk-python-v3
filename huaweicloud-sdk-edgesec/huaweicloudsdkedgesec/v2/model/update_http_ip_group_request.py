@@ -27,7 +27,7 @@ class UpdateHttpIpGroupRequest:
     }
 
     def __init__(self, ip_group_id=None, body=None):
-        """UpdateHttpIpGroupRequest
+        r"""UpdateHttpIpGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateHttpIpGroupRequest:
 
     @property
     def ip_group_id(self):
-        """Gets the ip_group_id of this UpdateHttpIpGroupRequest.
+        r"""Gets the ip_group_id of this UpdateHttpIpGroupRequest.
 
         IP地址组id
 
@@ -60,7 +60,7 @@ class UpdateHttpIpGroupRequest:
 
     @ip_group_id.setter
     def ip_group_id(self, ip_group_id):
-        """Sets the ip_group_id of this UpdateHttpIpGroupRequest.
+        r"""Sets the ip_group_id of this UpdateHttpIpGroupRequest.
 
         IP地址组id
 
@@ -71,7 +71,7 @@ class UpdateHttpIpGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateHttpIpGroupRequest.
+        r"""Gets the body of this UpdateHttpIpGroupRequest.
 
         :return: The body of this UpdateHttpIpGroupRequest.
         :rtype: :class:`huaweicloudsdkedgesec.v2.UpdateHttpIpGroupRequestBody`
@@ -80,7 +80,7 @@ class UpdateHttpIpGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateHttpIpGroupRequest.
+        r"""Sets the body of this UpdateHttpIpGroupRequest.
 
         :param body: The body of this UpdateHttpIpGroupRequest.
         :type body: :class:`huaweicloudsdkedgesec.v2.UpdateHttpIpGroupRequestBody`

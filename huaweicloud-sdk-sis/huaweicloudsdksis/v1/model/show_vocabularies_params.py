@@ -25,7 +25,7 @@ class ShowVocabulariesParams:
     }
 
     def __init__(self, name=None):
-        """ShowVocabulariesParams
+        r"""ShowVocabulariesParams
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowVocabulariesParams:
 
     @property
     def name(self):
-        """Gets the name of this ShowVocabulariesParams.
+        r"""Gets the name of this ShowVocabulariesParams.
 
         热词表的表名，用于筛选热词表表名。
 
@@ -54,7 +54,7 @@ class ShowVocabulariesParams:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowVocabulariesParams.
+        r"""Sets the name of this ShowVocabulariesParams.
 
         热词表的表名，用于筛选热词表表名。
 

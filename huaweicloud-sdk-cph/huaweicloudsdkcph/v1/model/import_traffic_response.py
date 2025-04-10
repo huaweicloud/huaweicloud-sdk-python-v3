@@ -28,7 +28,7 @@ class ImportTrafficResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, jobs=None):
-        """ImportTrafficResponse
+        r"""ImportTrafficResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ImportTrafficResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ImportTrafficResponse.
+        r"""Gets the request_id of this ImportTrafficResponse.
 
         请求的唯一标识ID。
 
@@ -62,7 +62,7 @@ class ImportTrafficResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ImportTrafficResponse.
+        r"""Sets the request_id of this ImportTrafficResponse.
 
         请求的唯一标识ID。
 
@@ -73,7 +73,7 @@ class ImportTrafficResponse(SdkResponse):
 
     @property
     def jobs(self):
-        """Gets the jobs of this ImportTrafficResponse.
+        r"""Gets the jobs of this ImportTrafficResponse.
 
         任务列表。
 
@@ -84,7 +84,7 @@ class ImportTrafficResponse(SdkResponse):
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this ImportTrafficResponse.
+        r"""Sets the jobs of this ImportTrafficResponse.
 
         任务列表。
 

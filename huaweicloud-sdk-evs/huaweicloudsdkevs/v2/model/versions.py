@@ -37,7 +37,7 @@ class Versions:
     }
 
     def __init__(self, id=None, links=None, media_types=None, min_version=None, status=None, updated=None, version=None):
-        """Versions
+        r"""Versions
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class Versions:
 
     @property
     def id(self):
-        """Gets the id of this Versions.
+        r"""Gets the id of this Versions.
 
         接口版本的ID
 
@@ -90,7 +90,7 @@ class Versions:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Versions.
+        r"""Sets the id of this Versions.
 
         接口版本的ID
 
@@ -101,7 +101,7 @@ class Versions:
 
     @property
     def links(self):
-        """Gets the links of this Versions.
+        r"""Gets the links of this Versions.
 
         接口版本信息的URI描述信息
 
@@ -112,7 +112,7 @@ class Versions:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this Versions.
+        r"""Sets the links of this Versions.
 
         接口版本信息的URI描述信息
 
@@ -123,7 +123,7 @@ class Versions:
 
     @property
     def media_types(self):
-        """Gets the media_types of this Versions.
+        r"""Gets the media_types of this Versions.
 
         接口版本的请求消息类型信息
 
@@ -134,7 +134,7 @@ class Versions:
 
     @media_types.setter
     def media_types(self, media_types):
-        """Sets the media_types of this Versions.
+        r"""Sets the media_types of this Versions.
 
         接口版本的请求消息类型信息
 
@@ -145,7 +145,7 @@ class Versions:
 
     @property
     def min_version(self):
-        """Gets the min_version of this Versions.
+        r"""Gets the min_version of this Versions.
 
         接口版本的最小版本号
 
@@ -156,7 +156,7 @@ class Versions:
 
     @min_version.setter
     def min_version(self, min_version):
-        """Sets the min_version of this Versions.
+        r"""Sets the min_version of this Versions.
 
         接口版本的最小版本号
 
@@ -167,7 +167,7 @@ class Versions:
 
     @property
     def status(self):
-        """Gets the status of this Versions.
+        r"""Gets the status of this Versions.
 
         接口版本的状态
 
@@ -178,7 +178,7 @@ class Versions:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Versions.
+        r"""Sets the status of this Versions.
 
         接口版本的状态
 
@@ -189,7 +189,7 @@ class Versions:
 
     @property
     def updated(self):
-        """Gets the updated of this Versions.
+        r"""Gets the updated of this Versions.
 
         接口版本更新时间
 
@@ -200,7 +200,7 @@ class Versions:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this Versions.
+        r"""Sets the updated of this Versions.
 
         接口版本更新时间
 
@@ -211,7 +211,7 @@ class Versions:
 
     @property
     def version(self):
-        """Gets the version of this Versions.
+        r"""Gets the version of this Versions.
 
         接口版本的版本号信息
 
@@ -222,7 +222,7 @@ class Versions:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this Versions.
+        r"""Sets the version of this Versions.
 
         接口版本的版本号信息
 

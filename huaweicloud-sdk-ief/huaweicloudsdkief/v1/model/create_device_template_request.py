@@ -27,7 +27,7 @@ class CreateDeviceTemplateRequest:
     }
 
     def __init__(self, ief_instance_id=None, body=None):
-        """CreateDeviceTemplateRequest
+        r"""CreateDeviceTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateDeviceTemplateRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this CreateDeviceTemplateRequest.
+        r"""Gets the ief_instance_id of this CreateDeviceTemplateRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -61,7 +61,7 @@ class CreateDeviceTemplateRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this CreateDeviceTemplateRequest.
+        r"""Sets the ief_instance_id of this CreateDeviceTemplateRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -72,7 +72,7 @@ class CreateDeviceTemplateRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDeviceTemplateRequest.
+        r"""Gets the body of this CreateDeviceTemplateRequest.
 
         :return: The body of this CreateDeviceTemplateRequest.
         :rtype: :class:`huaweicloudsdkief.v1.DeviceTemplate`
@@ -81,7 +81,7 @@ class CreateDeviceTemplateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDeviceTemplateRequest.
+        r"""Sets the body of this CreateDeviceTemplateRequest.
 
         :param body: The body of this CreateDeviceTemplateRequest.
         :type body: :class:`huaweicloudsdkief.v1.DeviceTemplate`

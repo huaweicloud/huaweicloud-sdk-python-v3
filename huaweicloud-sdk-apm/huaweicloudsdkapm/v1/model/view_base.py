@@ -47,7 +47,7 @@ class ViewBase:
     }
 
     def __init__(self, collector_name=None, metric_set=None, title=None, table_direction=None, group_by=None, filter=None, field_item_list=None, span=None, span_field=None, order_by=None, latest=None, view_type=None):
-        """ViewBase
+        r"""ViewBase
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ViewBase:
 
     @property
     def collector_name(self):
-        """Gets the collector_name of this ViewBase.
+        r"""Gets the collector_name of this ViewBase.
 
         采集器名称。
 
@@ -131,7 +131,7 @@ class ViewBase:
 
     @collector_name.setter
     def collector_name(self, collector_name):
-        """Sets the collector_name of this ViewBase.
+        r"""Sets the collector_name of this ViewBase.
 
         采集器名称。
 
@@ -142,7 +142,7 @@ class ViewBase:
 
     @property
     def metric_set(self):
-        """Gets the metric_set of this ViewBase.
+        r"""Gets the metric_set of this ViewBase.
 
         视图对应的指标集的名称。
 
@@ -153,7 +153,7 @@ class ViewBase:
 
     @metric_set.setter
     def metric_set(self, metric_set):
-        """Sets the metric_set of this ViewBase.
+        r"""Sets the metric_set of this ViewBase.
 
         视图对应的指标集的名称。
 
@@ -164,7 +164,7 @@ class ViewBase:
 
     @property
     def title(self):
-        """Gets the title of this ViewBase.
+        r"""Gets the title of this ViewBase.
 
         图标所需展示的标题。
 
@@ -175,7 +175,7 @@ class ViewBase:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this ViewBase.
+        r"""Sets the title of this ViewBase.
 
         图标所需展示的标题。
 
@@ -186,7 +186,7 @@ class ViewBase:
 
     @property
     def table_direction(self):
-        """Gets the table_direction of this ViewBase.
+        r"""Gets the table_direction of this ViewBase.
 
         表格的方向，H：默认，表头横向，V：表头纵向。
 
@@ -197,7 +197,7 @@ class ViewBase:
 
     @table_direction.setter
     def table_direction(self, table_direction):
-        """Sets the table_direction of this ViewBase.
+        r"""Sets the table_direction of this ViewBase.
 
         表格的方向，H：默认，表头横向，V：表头纵向。
 
@@ -208,7 +208,7 @@ class ViewBase:
 
     @property
     def group_by(self):
-        """Gets the group_by of this ViewBase.
+        r"""Gets the group_by of this ViewBase.
 
         分组规则。
 
@@ -219,7 +219,7 @@ class ViewBase:
 
     @group_by.setter
     def group_by(self, group_by):
-        """Sets the group_by of this ViewBase.
+        r"""Sets the group_by of this ViewBase.
 
         分组规则。
 
@@ -230,7 +230,7 @@ class ViewBase:
 
     @property
     def filter(self):
-        """Gets the filter of this ViewBase.
+        r"""Gets the filter of this ViewBase.
 
         过滤列表模型。
 
@@ -241,7 +241,7 @@ class ViewBase:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this ViewBase.
+        r"""Sets the filter of this ViewBase.
 
         过滤列表模型。
 
@@ -252,7 +252,7 @@ class ViewBase:
 
     @property
     def field_item_list(self):
-        """Gets the field_item_list of this ViewBase.
+        r"""Gets the field_item_list of this ViewBase.
 
         所需展示的字段列表模型。
 
@@ -263,7 +263,7 @@ class ViewBase:
 
     @field_item_list.setter
     def field_item_list(self, field_item_list):
-        """Sets the field_item_list of this ViewBase.
+        r"""Sets the field_item_list of this ViewBase.
 
         所需展示的字段列表模型。
 
@@ -274,7 +274,7 @@ class ViewBase:
 
     @property
     def span(self):
-        """Gets the span of this ViewBase.
+        r"""Gets the span of this ViewBase.
 
         span信息。
 
@@ -285,7 +285,7 @@ class ViewBase:
 
     @span.setter
     def span(self, span):
-        """Sets the span of this ViewBase.
+        r"""Sets the span of this ViewBase.
 
         span信息。
 
@@ -296,7 +296,7 @@ class ViewBase:
 
     @property
     def span_field(self):
-        """Gets the span_field of this ViewBase.
+        r"""Gets the span_field of this ViewBase.
 
         span字段属性。
 
@@ -307,7 +307,7 @@ class ViewBase:
 
     @span_field.setter
     def span_field(self, span_field):
-        """Sets the span_field of this ViewBase.
+        r"""Sets the span_field of this ViewBase.
 
         span字段属性。
 
@@ -318,7 +318,7 @@ class ViewBase:
 
     @property
     def order_by(self):
-        """Gets the order_by of this ViewBase.
+        r"""Gets the order_by of this ViewBase.
 
         排序规则。
 
@@ -329,7 +329,7 @@ class ViewBase:
 
     @order_by.setter
     def order_by(self, order_by):
-        """Sets the order_by of this ViewBase.
+        r"""Sets the order_by of this ViewBase.
 
         排序规则。
 
@@ -340,7 +340,7 @@ class ViewBase:
 
     @property
     def latest(self):
-        """Gets the latest of this ViewBase.
+        r"""Gets the latest of this ViewBase.
 
         是否只展示最近一笔数据。
 
@@ -351,7 +351,7 @@ class ViewBase:
 
     @latest.setter
     def latest(self, latest):
-        """Sets the latest of this ViewBase.
+        r"""Sets the latest of this ViewBase.
 
         是否只展示最近一笔数据。
 
@@ -362,7 +362,7 @@ class ViewBase:
 
     @property
     def view_type(self):
-        """Gets the view_type of this ViewBase.
+        r"""Gets the view_type of this ViewBase.
 
         视图类型。
 
@@ -373,7 +373,7 @@ class ViewBase:
 
     @view_type.setter
     def view_type(self, view_type):
-        """Sets the view_type of this ViewBase.
+        r"""Sets the view_type of this ViewBase.
 
         视图类型。
 

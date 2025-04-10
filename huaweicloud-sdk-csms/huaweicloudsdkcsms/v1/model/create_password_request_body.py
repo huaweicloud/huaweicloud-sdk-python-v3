@@ -41,7 +41,7 @@ class CreatePasswordRequestBody:
     }
 
     def __init__(self, password_policy_name=None, length=None, exclude_characters=None, exclude_lowercase=None, exclude_uppercase=None, exclude_numbers=None, exclude_punctuation=None, include_space=None, require_each_included_type=None):
-        """CreatePasswordRequestBody
+        r"""CreatePasswordRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class CreatePasswordRequestBody:
 
     @property
     def password_policy_name(self):
-        """Gets the password_policy_name of this CreatePasswordRequestBody.
+        r"""Gets the password_policy_name of this CreatePasswordRequestBody.
 
         策略名称
 
@@ -110,7 +110,7 @@ class CreatePasswordRequestBody:
 
     @password_policy_name.setter
     def password_policy_name(self, password_policy_name):
-        """Sets the password_policy_name of this CreatePasswordRequestBody.
+        r"""Sets the password_policy_name of this CreatePasswordRequestBody.
 
         策略名称
 
@@ -121,7 +121,7 @@ class CreatePasswordRequestBody:
 
     @property
     def length(self):
-        """Gets the length of this CreatePasswordRequestBody.
+        r"""Gets the length of this CreatePasswordRequestBody.
 
         长度，默认32
 
@@ -132,7 +132,7 @@ class CreatePasswordRequestBody:
 
     @length.setter
     def length(self, length):
-        """Sets the length of this CreatePasswordRequestBody.
+        r"""Sets the length of this CreatePasswordRequestBody.
 
         长度，默认32
 
@@ -143,7 +143,7 @@ class CreatePasswordRequestBody:
 
     @property
     def exclude_characters(self):
-        """Gets the exclude_characters of this CreatePasswordRequestBody.
+        r"""Gets the exclude_characters of this CreatePasswordRequestBody.
 
         需要排除的字符
 
@@ -154,7 +154,7 @@ class CreatePasswordRequestBody:
 
     @exclude_characters.setter
     def exclude_characters(self, exclude_characters):
-        """Sets the exclude_characters of this CreatePasswordRequestBody.
+        r"""Sets the exclude_characters of this CreatePasswordRequestBody.
 
         需要排除的字符
 
@@ -165,7 +165,7 @@ class CreatePasswordRequestBody:
 
     @property
     def exclude_lowercase(self):
-        """Gets the exclude_lowercase of this CreatePasswordRequestBody.
+        r"""Gets the exclude_lowercase of this CreatePasswordRequestBody.
 
         排除小写字母，默认false
 
@@ -176,7 +176,7 @@ class CreatePasswordRequestBody:
 
     @exclude_lowercase.setter
     def exclude_lowercase(self, exclude_lowercase):
-        """Sets the exclude_lowercase of this CreatePasswordRequestBody.
+        r"""Sets the exclude_lowercase of this CreatePasswordRequestBody.
 
         排除小写字母，默认false
 
@@ -187,7 +187,7 @@ class CreatePasswordRequestBody:
 
     @property
     def exclude_uppercase(self):
-        """Gets the exclude_uppercase of this CreatePasswordRequestBody.
+        r"""Gets the exclude_uppercase of this CreatePasswordRequestBody.
 
         排除大写字母，默认false
 
@@ -198,7 +198,7 @@ class CreatePasswordRequestBody:
 
     @exclude_uppercase.setter
     def exclude_uppercase(self, exclude_uppercase):
-        """Sets the exclude_uppercase of this CreatePasswordRequestBody.
+        r"""Sets the exclude_uppercase of this CreatePasswordRequestBody.
 
         排除大写字母，默认false
 
@@ -209,7 +209,7 @@ class CreatePasswordRequestBody:
 
     @property
     def exclude_numbers(self):
-        """Gets the exclude_numbers of this CreatePasswordRequestBody.
+        r"""Gets the exclude_numbers of this CreatePasswordRequestBody.
 
         排除数字，默认false
 
@@ -220,7 +220,7 @@ class CreatePasswordRequestBody:
 
     @exclude_numbers.setter
     def exclude_numbers(self, exclude_numbers):
-        """Sets the exclude_numbers of this CreatePasswordRequestBody.
+        r"""Sets the exclude_numbers of this CreatePasswordRequestBody.
 
         排除数字，默认false
 
@@ -231,7 +231,7 @@ class CreatePasswordRequestBody:
 
     @property
     def exclude_punctuation(self):
-        """Gets the exclude_punctuation of this CreatePasswordRequestBody.
+        r"""Gets the exclude_punctuation of this CreatePasswordRequestBody.
 
         排除符号，默认false
 
@@ -242,7 +242,7 @@ class CreatePasswordRequestBody:
 
     @exclude_punctuation.setter
     def exclude_punctuation(self, exclude_punctuation):
-        """Sets the exclude_punctuation of this CreatePasswordRequestBody.
+        r"""Sets the exclude_punctuation of this CreatePasswordRequestBody.
 
         排除符号，默认false
 
@@ -253,7 +253,7 @@ class CreatePasswordRequestBody:
 
     @property
     def include_space(self):
-        """Gets the include_space of this CreatePasswordRequestBody.
+        r"""Gets the include_space of this CreatePasswordRequestBody.
 
         包含空格，默认false
 
@@ -264,7 +264,7 @@ class CreatePasswordRequestBody:
 
     @include_space.setter
     def include_space(self, include_space):
-        """Sets the include_space of this CreatePasswordRequestBody.
+        r"""Sets the include_space of this CreatePasswordRequestBody.
 
         包含空格，默认false
 
@@ -275,7 +275,7 @@ class CreatePasswordRequestBody:
 
     @property
     def require_each_included_type(self):
-        """Gets the require_each_included_type of this CreatePasswordRequestBody.
+        r"""Gets the require_each_included_type of this CreatePasswordRequestBody.
 
         需要每个包含的类型，默认false
 
@@ -286,7 +286,7 @@ class CreatePasswordRequestBody:
 
     @require_each_included_type.setter
     def require_each_included_type(self, require_each_included_type):
-        """Sets the require_each_included_type of this CreatePasswordRequestBody.
+        r"""Sets the require_each_included_type of this CreatePasswordRequestBody.
 
         需要每个包含的类型，默认false
 

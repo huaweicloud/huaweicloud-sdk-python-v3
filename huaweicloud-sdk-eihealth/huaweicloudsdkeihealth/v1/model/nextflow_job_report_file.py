@@ -27,7 +27,7 @@ class NextflowJobReportFile:
     }
 
     def __init__(self, name=None, download_url=None):
-        """NextflowJobReportFile
+        r"""NextflowJobReportFile
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class NextflowJobReportFile:
 
     @property
     def name(self):
-        """Gets the name of this NextflowJobReportFile.
+        r"""Gets the name of this NextflowJobReportFile.
 
         报告文件名
 
@@ -59,7 +59,7 @@ class NextflowJobReportFile:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NextflowJobReportFile.
+        r"""Sets the name of this NextflowJobReportFile.
 
         报告文件名
 
@@ -70,7 +70,7 @@ class NextflowJobReportFile:
 
     @property
     def download_url(self):
-        """Gets the download_url of this NextflowJobReportFile.
+        r"""Gets the download_url of this NextflowJobReportFile.
 
         报告文件下载地址
 
@@ -81,7 +81,7 @@ class NextflowJobReportFile:
 
     @download_url.setter
     def download_url(self, download_url):
-        """Sets the download_url of this NextflowJobReportFile.
+        r"""Sets the download_url of this NextflowJobReportFile.
 
         报告文件下载地址
 

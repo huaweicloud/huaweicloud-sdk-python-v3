@@ -26,7 +26,7 @@ class ResizeClickHouseInstanceResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """ResizeClickHouseInstanceResponse
+        r"""ResizeClickHouseInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ResizeClickHouseInstanceResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ResizeClickHouseInstanceResponse.
+        r"""Gets the job_id of this ResizeClickHouseInstanceResponse.
 
         创建的任务ID。
 
@@ -55,7 +55,7 @@ class ResizeClickHouseInstanceResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ResizeClickHouseInstanceResponse.
+        r"""Sets the job_id of this ResizeClickHouseInstanceResponse.
 
         创建的任务ID。
 

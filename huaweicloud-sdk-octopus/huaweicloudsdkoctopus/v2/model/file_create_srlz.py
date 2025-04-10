@@ -43,7 +43,7 @@ class FileCreateSrlz:
     }
 
     def __init__(self, url=None, sha256=None, created_at=None, updated_at=None, post=None, put_url=None, get_url=None, expire=None, ready=None, filename=None):
-        """FileCreateSrlz
+        r"""FileCreateSrlz
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class FileCreateSrlz:
 
     @property
     def url(self):
-        """Gets the url of this FileCreateSrlz.
+        r"""Gets the url of this FileCreateSrlz.
 
         地址
 
@@ -107,7 +107,7 @@ class FileCreateSrlz:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this FileCreateSrlz.
+        r"""Sets the url of this FileCreateSrlz.
 
         地址
 
@@ -118,7 +118,7 @@ class FileCreateSrlz:
 
     @property
     def sha256(self):
-        """Gets the sha256 of this FileCreateSrlz.
+        r"""Gets the sha256 of this FileCreateSrlz.
 
         文件sha256值
 
@@ -129,7 +129,7 @@ class FileCreateSrlz:
 
     @sha256.setter
     def sha256(self, sha256):
-        """Sets the sha256 of this FileCreateSrlz.
+        r"""Sets the sha256 of this FileCreateSrlz.
 
         文件sha256值
 
@@ -140,7 +140,7 @@ class FileCreateSrlz:
 
     @property
     def created_at(self):
-        """Gets the created_at of this FileCreateSrlz.
+        r"""Gets the created_at of this FileCreateSrlz.
 
         创建时间
 
@@ -151,7 +151,7 @@ class FileCreateSrlz:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this FileCreateSrlz.
+        r"""Sets the created_at of this FileCreateSrlz.
 
         创建时间
 
@@ -162,7 +162,7 @@ class FileCreateSrlz:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this FileCreateSrlz.
+        r"""Gets the updated_at of this FileCreateSrlz.
 
         更新时间
 
@@ -173,7 +173,7 @@ class FileCreateSrlz:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this FileCreateSrlz.
+        r"""Sets the updated_at of this FileCreateSrlz.
 
         更新时间
 
@@ -184,7 +184,7 @@ class FileCreateSrlz:
 
     @property
     def post(self):
-        """Gets the post of this FileCreateSrlz.
+        r"""Gets the post of this FileCreateSrlz.
 
         POST地址
 
@@ -195,7 +195,7 @@ class FileCreateSrlz:
 
     @post.setter
     def post(self, post):
-        """Sets the post of this FileCreateSrlz.
+        r"""Sets the post of this FileCreateSrlz.
 
         POST地址
 
@@ -206,7 +206,7 @@ class FileCreateSrlz:
 
     @property
     def put_url(self):
-        """Gets the put_url of this FileCreateSrlz.
+        r"""Gets the put_url of this FileCreateSrlz.
 
         PUT地址
 
@@ -217,7 +217,7 @@ class FileCreateSrlz:
 
     @put_url.setter
     def put_url(self, put_url):
-        """Sets the put_url of this FileCreateSrlz.
+        r"""Sets the put_url of this FileCreateSrlz.
 
         PUT地址
 
@@ -228,7 +228,7 @@ class FileCreateSrlz:
 
     @property
     def get_url(self):
-        """Gets the get_url of this FileCreateSrlz.
+        r"""Gets the get_url of this FileCreateSrlz.
 
         GET地址
 
@@ -239,7 +239,7 @@ class FileCreateSrlz:
 
     @get_url.setter
     def get_url(self, get_url):
-        """Sets the get_url of this FileCreateSrlz.
+        r"""Sets the get_url of this FileCreateSrlz.
 
         GET地址
 
@@ -250,7 +250,7 @@ class FileCreateSrlz:
 
     @property
     def expire(self):
-        """Gets the expire of this FileCreateSrlz.
+        r"""Gets the expire of this FileCreateSrlz.
 
         默认失效时间为600秒.
 
@@ -261,7 +261,7 @@ class FileCreateSrlz:
 
     @expire.setter
     def expire(self, expire):
-        """Sets the expire of this FileCreateSrlz.
+        r"""Sets the expire of this FileCreateSrlz.
 
         默认失效时间为600秒.
 
@@ -272,7 +272,7 @@ class FileCreateSrlz:
 
     @property
     def ready(self):
-        """Gets the ready of this FileCreateSrlz.
+        r"""Gets the ready of this FileCreateSrlz.
 
         文件状态
 
@@ -283,7 +283,7 @@ class FileCreateSrlz:
 
     @ready.setter
     def ready(self, ready):
-        """Sets the ready of this FileCreateSrlz.
+        r"""Sets the ready of this FileCreateSrlz.
 
         文件状态
 
@@ -294,7 +294,7 @@ class FileCreateSrlz:
 
     @property
     def filename(self):
-        """Gets the filename of this FileCreateSrlz.
+        r"""Gets the filename of this FileCreateSrlz.
 
         文件名
 
@@ -305,7 +305,7 @@ class FileCreateSrlz:
 
     @filename.setter
     def filename(self, filename):
-        """Sets the filename of this FileCreateSrlz.
+        r"""Sets the filename of this FileCreateSrlz.
 
         文件名
 

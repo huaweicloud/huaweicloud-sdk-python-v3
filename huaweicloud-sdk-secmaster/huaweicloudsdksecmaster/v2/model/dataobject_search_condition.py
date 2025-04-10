@@ -27,7 +27,7 @@ class DataobjectSearchCondition:
     }
 
     def __init__(self, conditions=None, logics=None):
-        """DataobjectSearchCondition
+        r"""DataobjectSearchCondition
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DataobjectSearchCondition:
 
     @property
     def conditions(self):
-        """Gets the conditions of this DataobjectSearchCondition.
+        r"""Gets the conditions of this DataobjectSearchCondition.
 
         表达式列表
 
@@ -61,7 +61,7 @@ class DataobjectSearchCondition:
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this DataobjectSearchCondition.
+        r"""Sets the conditions of this DataobjectSearchCondition.
 
         表达式列表
 
@@ -72,7 +72,7 @@ class DataobjectSearchCondition:
 
     @property
     def logics(self):
-        """Gets the logics of this DataobjectSearchCondition.
+        r"""Gets the logics of this DataobjectSearchCondition.
 
         表达式名称列表
 
@@ -83,7 +83,7 @@ class DataobjectSearchCondition:
 
     @logics.setter
     def logics(self, logics):
-        """Sets the logics of this DataobjectSearchCondition.
+        r"""Sets the logics of this DataobjectSearchCondition.
 
         表达式名称列表
 

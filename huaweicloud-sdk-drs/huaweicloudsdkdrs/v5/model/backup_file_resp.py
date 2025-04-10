@@ -29,7 +29,7 @@ class BackupFileResp:
     }
 
     def __init__(self, file_name=None, file_size=None, file_last_modify=None):
-        """BackupFileResp
+        r"""BackupFileResp
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class BackupFileResp:
 
     @property
     def file_name(self):
-        """Gets the file_name of this BackupFileResp.
+        r"""Gets the file_name of this BackupFileResp.
 
         文件名称。
 
@@ -68,7 +68,7 @@ class BackupFileResp:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this BackupFileResp.
+        r"""Sets the file_name of this BackupFileResp.
 
         文件名称。
 
@@ -79,7 +79,7 @@ class BackupFileResp:
 
     @property
     def file_size(self):
-        """Gets the file_size of this BackupFileResp.
+        r"""Gets the file_size of this BackupFileResp.
 
         备份文件大小。
 
@@ -90,7 +90,7 @@ class BackupFileResp:
 
     @file_size.setter
     def file_size(self, file_size):
-        """Sets the file_size of this BackupFileResp.
+        r"""Sets the file_size of this BackupFileResp.
 
         备份文件大小。
 
@@ -101,7 +101,7 @@ class BackupFileResp:
 
     @property
     def file_last_modify(self):
-        """Gets the file_last_modify of this BackupFileResp.
+        r"""Gets the file_last_modify of this BackupFileResp.
 
         备份文件最近修改时间。
 
@@ -112,7 +112,7 @@ class BackupFileResp:
 
     @file_last_modify.setter
     def file_last_modify(self, file_last_modify):
-        """Sets the file_last_modify of this BackupFileResp.
+        r"""Sets the file_last_modify of this BackupFileResp.
 
         备份文件最近修改时间。
 

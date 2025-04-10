@@ -39,7 +39,7 @@ class SmsID:
     }
 
     def __init__(self, create_time=None, _from=None, origin_to=None, sms_msg_id=None, status=None, country_id=None, total=None):
-        """SmsID
+        r"""SmsID
 
         The model defined in huaweicloud sdk
 
@@ -87,7 +87,7 @@ class SmsID:
 
     @property
     def create_time(self):
-        """Gets the create_time of this SmsID.
+        r"""Gets the create_time of this SmsID.
 
         创建时间
 
@@ -98,7 +98,7 @@ class SmsID:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this SmsID.
+        r"""Sets the create_time of this SmsID.
 
         创建时间
 
@@ -109,7 +109,7 @@ class SmsID:
 
     @property
     def _from(self):
-        """Gets the _from of this SmsID.
+        r"""Gets the _from of this SmsID.
 
         发送短信号码
 
@@ -120,7 +120,7 @@ class SmsID:
 
     @_from.setter
     def _from(self, _from):
-        """Sets the _from of this SmsID.
+        r"""Sets the _from of this SmsID.
 
         发送短信号码
 
@@ -131,7 +131,7 @@ class SmsID:
 
     @property
     def origin_to(self):
-        """Gets the origin_to of this SmsID.
+        r"""Gets the origin_to of this SmsID.
 
         接收短信号码
 
@@ -142,7 +142,7 @@ class SmsID:
 
     @origin_to.setter
     def origin_to(self, origin_to):
-        """Sets the origin_to of this SmsID.
+        r"""Sets the origin_to of this SmsID.
 
         接收短信号码
 
@@ -153,7 +153,7 @@ class SmsID:
 
     @property
     def sms_msg_id(self):
-        """Gets the sms_msg_id of this SmsID.
+        r"""Gets the sms_msg_id of this SmsID.
 
         短信id
 
@@ -164,7 +164,7 @@ class SmsID:
 
     @sms_msg_id.setter
     def sms_msg_id(self, sms_msg_id):
-        """Sets the sms_msg_id of this SmsID.
+        r"""Sets the sms_msg_id of this SmsID.
 
         短信id
 
@@ -175,7 +175,7 @@ class SmsID:
 
     @property
     def status(self):
-        """Gets the status of this SmsID.
+        r"""Gets the status of this SmsID.
 
         短信当前状态
 
@@ -186,7 +186,7 @@ class SmsID:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SmsID.
+        r"""Sets the status of this SmsID.
 
         短信当前状态
 
@@ -197,7 +197,7 @@ class SmsID:
 
     @property
     def country_id(self):
-        """Gets the country_id of this SmsID.
+        r"""Gets the country_id of this SmsID.
 
         国家码
 
@@ -208,7 +208,7 @@ class SmsID:
 
     @country_id.setter
     def country_id(self, country_id):
-        """Sets the country_id of this SmsID.
+        r"""Sets the country_id of this SmsID.
 
         国家码
 
@@ -219,7 +219,7 @@ class SmsID:
 
     @property
     def total(self):
-        """Gets the total of this SmsID.
+        r"""Gets the total of this SmsID.
 
         短信拆分条数
 
@@ -230,7 +230,7 @@ class SmsID:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this SmsID.
+        r"""Sets the total of this SmsID.
 
         短信拆分条数
 

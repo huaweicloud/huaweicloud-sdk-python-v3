@@ -26,7 +26,7 @@ class DeleteGeipSegmentTagResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """DeleteGeipSegmentTagResponse
+        r"""DeleteGeipSegmentTagResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteGeipSegmentTagResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DeleteGeipSegmentTagResponse.
+        r"""Gets the x_request_id of this DeleteGeipSegmentTagResponse.
 
         :return: The x_request_id of this DeleteGeipSegmentTagResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class DeleteGeipSegmentTagResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DeleteGeipSegmentTagResponse.
+        r"""Sets the x_request_id of this DeleteGeipSegmentTagResponse.
 
         :param x_request_id: The x_request_id of this DeleteGeipSegmentTagResponse.
         :type x_request_id: str

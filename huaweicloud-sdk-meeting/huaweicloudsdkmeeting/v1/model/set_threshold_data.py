@@ -27,7 +27,7 @@ class SetThresholdData:
     }
 
     def __init__(self, receiving=None, sending=None):
-        """SetThresholdData
+        r"""SetThresholdData
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SetThresholdData:
 
     @property
     def receiving(self):
-        """Gets the receiving of this SetThresholdData.
+        r"""Gets the receiving of this SetThresholdData.
 
         接收方向阈值设定值，单位为毫秒(ms)。 取值范围：0 - 10000。
 
@@ -61,7 +61,7 @@ class SetThresholdData:
 
     @receiving.setter
     def receiving(self, receiving):
-        """Sets the receiving of this SetThresholdData.
+        r"""Sets the receiving of this SetThresholdData.
 
         接收方向阈值设定值，单位为毫秒(ms)。 取值范围：0 - 10000。
 
@@ -72,7 +72,7 @@ class SetThresholdData:
 
     @property
     def sending(self):
-        """Gets the sending of this SetThresholdData.
+        r"""Gets the sending of this SetThresholdData.
 
         发送方向阈值设定值，单位为毫秒(ms)。 取值范围：0 - 10000。
 
@@ -83,7 +83,7 @@ class SetThresholdData:
 
     @sending.setter
     def sending(self, sending):
-        """Sets the sending of this SetThresholdData.
+        r"""Sets the sending of this SetThresholdData.
 
         发送方向阈值设定值，单位为毫秒(ms)。 取值范围：0 - 10000。
 

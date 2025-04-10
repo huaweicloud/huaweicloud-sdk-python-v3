@@ -25,7 +25,7 @@ class BatchCreateUsersRequest:
     }
 
     def __init__(self, body=None):
-        """BatchCreateUsersRequest
+        r"""BatchCreateUsersRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchCreateUsersRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateUsersRequest.
+        r"""Gets the body of this BatchCreateUsersRequest.
 
         :return: The body of this BatchCreateUsersRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.BatchCreateUsersReq`
@@ -52,7 +52,7 @@ class BatchCreateUsersRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateUsersRequest.
+        r"""Sets the body of this BatchCreateUsersRequest.
 
         :param body: The body of this BatchCreateUsersRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.BatchCreateUsersReq`

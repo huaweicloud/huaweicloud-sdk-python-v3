@@ -25,7 +25,7 @@ class ListImageTagsRequest:
     }
 
     def __init__(self, image_id=None):
-        """ListImageTagsRequest
+        r"""ListImageTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListImageTagsRequest:
 
     @property
     def image_id(self):
-        """Gets the image_id of this ListImageTagsRequest.
+        r"""Gets the image_id of this ListImageTagsRequest.
 
         镜像ID。
 
@@ -53,7 +53,7 @@ class ListImageTagsRequest:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this ListImageTagsRequest.
+        r"""Sets the image_id of this ListImageTagsRequest.
 
         镜像ID。
 

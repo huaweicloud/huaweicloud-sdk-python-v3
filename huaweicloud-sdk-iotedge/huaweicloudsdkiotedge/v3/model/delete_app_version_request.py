@@ -27,7 +27,7 @@ class DeleteAppVersionRequest:
     }
 
     def __init__(self, app_id=None, version=None):
-        """DeleteAppVersionRequest
+        r"""DeleteAppVersionRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteAppVersionRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this DeleteAppVersionRequest.
+        r"""Gets the app_id of this DeleteAppVersionRequest.
 
         应用ID
 
@@ -59,7 +59,7 @@ class DeleteAppVersionRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this DeleteAppVersionRequest.
+        r"""Sets the app_id of this DeleteAppVersionRequest.
 
         应用ID
 
@@ -70,7 +70,7 @@ class DeleteAppVersionRequest:
 
     @property
     def version(self):
-        """Gets the version of this DeleteAppVersionRequest.
+        r"""Gets the version of this DeleteAppVersionRequest.
 
         应用版本
 
@@ -81,7 +81,7 @@ class DeleteAppVersionRequest:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this DeleteAppVersionRequest.
+        r"""Sets the version of this DeleteAppVersionRequest.
 
         应用版本
 

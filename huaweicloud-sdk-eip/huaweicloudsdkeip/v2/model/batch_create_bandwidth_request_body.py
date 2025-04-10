@@ -25,7 +25,7 @@ class BatchCreateBandwidthRequestBody:
     }
 
     def __init__(self, bandwidth=None):
-        """BatchCreateBandwidthRequestBody
+        r"""BatchCreateBandwidthRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchCreateBandwidthRequestBody:
 
     @property
     def bandwidth(self):
-        """Gets the bandwidth of this BatchCreateBandwidthRequestBody.
+        r"""Gets the bandwidth of this BatchCreateBandwidthRequestBody.
 
         :return: The bandwidth of this BatchCreateBandwidthRequestBody.
         :rtype: :class:`huaweicloudsdkeip.v2.BatchCreateBandwidthOption`
@@ -51,7 +51,7 @@ class BatchCreateBandwidthRequestBody:
 
     @bandwidth.setter
     def bandwidth(self, bandwidth):
-        """Sets the bandwidth of this BatchCreateBandwidthRequestBody.
+        r"""Sets the bandwidth of this BatchCreateBandwidthRequestBody.
 
         :param bandwidth: The bandwidth of this BatchCreateBandwidthRequestBody.
         :type bandwidth: :class:`huaweicloudsdkeip.v2.BatchCreateBandwidthOption`

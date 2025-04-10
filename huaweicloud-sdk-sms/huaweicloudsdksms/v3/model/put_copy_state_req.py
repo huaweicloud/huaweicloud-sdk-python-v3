@@ -27,7 +27,7 @@ class PutCopyStateReq:
     }
 
     def __init__(self, copystate=None, migrationcycle=None):
-        """PutCopyStateReq
+        r"""PutCopyStateReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PutCopyStateReq:
 
     @property
     def copystate(self):
-        """Gets the copystate of this PutCopyStateReq.
+        r"""Gets the copystate of this PutCopyStateReq.
 
         源端服务器状态 UNAVAILABLE：环境校验不通过 WAITING：等待 INIT：初始化 REPLICATE：复制 SYNCING：持续同步 STOPPING：暂停中 STOPPED：已暂停 SKIPPING：跳过中 DELETING：删除中 ERROR：错误 CLONING：等待克隆完成 CUTOVERING：启动目的端中 FINISHED：启动目的端完成 CLEARING: 清理快照资源中 CLEARED：清理快照资源完成 CLEARFAILED：清理快照资源失败
 
@@ -61,7 +61,7 @@ class PutCopyStateReq:
 
     @copystate.setter
     def copystate(self, copystate):
-        """Sets the copystate of this PutCopyStateReq.
+        r"""Sets the copystate of this PutCopyStateReq.
 
         源端服务器状态 UNAVAILABLE：环境校验不通过 WAITING：等待 INIT：初始化 REPLICATE：复制 SYNCING：持续同步 STOPPING：暂停中 STOPPED：已暂停 SKIPPING：跳过中 DELETING：删除中 ERROR：错误 CLONING：等待克隆完成 CUTOVERING：启动目的端中 FINISHED：启动目的端完成 CLEARING: 清理快照资源中 CLEARED：清理快照资源完成 CLEARFAILED：清理快照资源失败
 
@@ -72,7 +72,7 @@ class PutCopyStateReq:
 
     @property
     def migrationcycle(self):
-        """Gets the migrationcycle of this PutCopyStateReq.
+        r"""Gets the migrationcycle of this PutCopyStateReq.
 
         迁移周期 cutovering:启动目的端中 cutovered:启动目的端完成 checking:检查中 setting:设置中 replicating:复制中 syncing:同步中 
 
@@ -83,7 +83,7 @@ class PutCopyStateReq:
 
     @migrationcycle.setter
     def migrationcycle(self, migrationcycle):
-        """Sets the migrationcycle of this PutCopyStateReq.
+        r"""Sets the migrationcycle of this PutCopyStateReq.
 
         迁移周期 cutovering:启动目的端中 cutovered:启动目的端完成 checking:检查中 setting:设置中 replicating:复制中 syncing:同步中 
 

@@ -25,7 +25,7 @@ class UpdateSubscriptionRequestBody:
     }
 
     def __init__(self, remark=None):
-        """UpdateSubscriptionRequestBody
+        r"""UpdateSubscriptionRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateSubscriptionRequestBody:
 
     @property
     def remark(self):
-        """Gets the remark of this UpdateSubscriptionRequestBody.
+        r"""Gets the remark of this UpdateSubscriptionRequestBody.
 
         订阅者备注。订阅者备注的最大长度为128byte。
 
@@ -53,7 +53,7 @@ class UpdateSubscriptionRequestBody:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this UpdateSubscriptionRequestBody.
+        r"""Sets the remark of this UpdateSubscriptionRequestBody.
 
         订阅者备注。订阅者备注的最大长度为128byte。
 

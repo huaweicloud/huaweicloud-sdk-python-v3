@@ -29,7 +29,7 @@ class AgentDeleteParam:
     }
 
     def __init__(self, instance_list=None, region=None, business_id=None):
-        """AgentDeleteParam
+        r"""AgentDeleteParam
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class AgentDeleteParam:
 
     @property
     def instance_list(self):
-        """Gets the instance_list of this AgentDeleteParam.
+        r"""Gets the instance_list of this AgentDeleteParam.
 
         实例列表。
 
@@ -65,7 +65,7 @@ class AgentDeleteParam:
 
     @instance_list.setter
     def instance_list(self, instance_list):
-        """Sets the instance_list of this AgentDeleteParam.
+        r"""Sets the instance_list of this AgentDeleteParam.
 
         实例列表。
 
@@ -76,7 +76,7 @@ class AgentDeleteParam:
 
     @property
     def region(self):
-        """Gets the region of this AgentDeleteParam.
+        r"""Gets the region of this AgentDeleteParam.
 
         region英文名称。
 
@@ -87,7 +87,7 @@ class AgentDeleteParam:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this AgentDeleteParam.
+        r"""Sets the region of this AgentDeleteParam.
 
         region英文名称。
 
@@ -98,7 +98,7 @@ class AgentDeleteParam:
 
     @property
     def business_id(self):
-        """Gets the business_id of this AgentDeleteParam.
+        r"""Gets the business_id of this AgentDeleteParam.
 
         应用id。
 
@@ -109,7 +109,7 @@ class AgentDeleteParam:
 
     @business_id.setter
     def business_id(self, business_id):
-        """Sets the business_id of this AgentDeleteParam.
+        r"""Sets the business_id of this AgentDeleteParam.
 
         应用id。
 

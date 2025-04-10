@@ -25,7 +25,7 @@ class CreateTransferRequest:
     }
 
     def __init__(self, body=None):
-        """CreateTransferRequest
+        r"""CreateTransferRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateTransferRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateTransferRequest.
+        r"""Gets the body of this CreateTransferRequest.
 
         :return: The body of this CreateTransferRequest.
         :rtype: :class:`huaweicloudsdklts.v2.CreateTransferRequestBody`
@@ -52,7 +52,7 @@ class CreateTransferRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTransferRequest.
+        r"""Sets the body of this CreateTransferRequest.
 
         :param body: The body of this CreateTransferRequest.
         :type body: :class:`huaweicloudsdklts.v2.CreateTransferRequestBody`

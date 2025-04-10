@@ -33,7 +33,7 @@ class ListGroupsForDomainRequest:
     }
 
     def __init__(self, instance_id=None, group_source=None, limit=None, marker=None, reverse_page=None):
-        """ListGroupsForDomainRequest
+        r"""ListGroupsForDomainRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListGroupsForDomainRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListGroupsForDomainRequest.
+        r"""Gets the instance_id of this ListGroupsForDomainRequest.
 
         instance id
 
@@ -81,7 +81,7 @@ class ListGroupsForDomainRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListGroupsForDomainRequest.
+        r"""Sets the instance_id of this ListGroupsForDomainRequest.
 
         instance id
 
@@ -92,7 +92,7 @@ class ListGroupsForDomainRequest:
 
     @property
     def group_source(self):
-        """Gets the group_source of this ListGroupsForDomainRequest.
+        r"""Gets the group_source of this ListGroupsForDomainRequest.
 
         查询的用户组来源
 
@@ -103,7 +103,7 @@ class ListGroupsForDomainRequest:
 
     @group_source.setter
     def group_source(self, group_source):
-        """Sets the group_source of this ListGroupsForDomainRequest.
+        r"""Sets the group_source of this ListGroupsForDomainRequest.
 
         查询的用户组来源
 
@@ -114,7 +114,7 @@ class ListGroupsForDomainRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListGroupsForDomainRequest.
+        r"""Gets the limit of this ListGroupsForDomainRequest.
 
         返回的条目数量
 
@@ -125,7 +125,7 @@ class ListGroupsForDomainRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListGroupsForDomainRequest.
+        r"""Sets the limit of this ListGroupsForDomainRequest.
 
         返回的条目数量
 
@@ -136,7 +136,7 @@ class ListGroupsForDomainRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListGroupsForDomainRequest.
+        r"""Gets the marker of this ListGroupsForDomainRequest.
 
         查询的起始记录ID
 
@@ -147,7 +147,7 @@ class ListGroupsForDomainRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListGroupsForDomainRequest.
+        r"""Sets the marker of this ListGroupsForDomainRequest.
 
         查询的起始记录ID
 
@@ -158,7 +158,7 @@ class ListGroupsForDomainRequest:
 
     @property
     def reverse_page(self):
-        """Gets the reverse_page of this ListGroupsForDomainRequest.
+        r"""Gets the reverse_page of this ListGroupsForDomainRequest.
 
         是否查询上一页
 
@@ -169,7 +169,7 @@ class ListGroupsForDomainRequest:
 
     @reverse_page.setter
     def reverse_page(self, reverse_page):
-        """Sets the reverse_page of this ListGroupsForDomainRequest.
+        r"""Sets the reverse_page of this ListGroupsForDomainRequest.
 
         是否查询上一页
 

@@ -27,7 +27,7 @@ class InstanceItemTagItem:
     }
 
     def __init__(self, key=None, value=None):
-        """InstanceItemTagItem
+        r"""InstanceItemTagItem
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class InstanceItemTagItem:
 
     @property
     def key(self):
-        """Gets the key of this InstanceItemTagItem.
+        r"""Gets the key of this InstanceItemTagItem.
 
         标签键。最大长度36个unicode字符，key不能为空。 字符集：0-9，A-Z，a-z，“_”，“-”，中文。
 
@@ -61,7 +61,7 @@ class InstanceItemTagItem:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this InstanceItemTagItem.
+        r"""Sets the key of this InstanceItemTagItem.
 
         标签键。最大长度36个unicode字符，key不能为空。 字符集：0-9，A-Z，a-z，“_”，“-”，中文。
 
@@ -72,7 +72,7 @@ class InstanceItemTagItem:
 
     @property
     def value(self):
-        """Gets the value of this InstanceItemTagItem.
+        r"""Gets the value of this InstanceItemTagItem.
 
         标签值。最大长度43个unicode字符，可以为空字符串。 字符集：0-9，A-Z，a-z，“_”，“.”，“-”，中文。
 
@@ -83,7 +83,7 @@ class InstanceItemTagItem:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this InstanceItemTagItem.
+        r"""Sets the value of this InstanceItemTagItem.
 
         标签值。最大长度43个unicode字符，可以为空字符串。 字符集：0-9，A-Z，a-z，“_”，“.”，“-”，中文。
 

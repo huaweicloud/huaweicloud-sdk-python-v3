@@ -29,7 +29,7 @@ class ShowDbUserRequest:
     }
 
     def __init__(self, instance_id=None, db_user_id=None, x_language=None):
-        """ShowDbUserRequest
+        r"""ShowDbUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowDbUserRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowDbUserRequest.
+        r"""Gets the instance_id of this ShowDbUserRequest.
 
         实例ID
 
@@ -66,7 +66,7 @@ class ShowDbUserRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowDbUserRequest.
+        r"""Sets the instance_id of this ShowDbUserRequest.
 
         实例ID
 
@@ -77,7 +77,7 @@ class ShowDbUserRequest:
 
     @property
     def db_user_id(self):
-        """Gets the db_user_id of this ShowDbUserRequest.
+        r"""Gets the db_user_id of this ShowDbUserRequest.
 
         数据库用户ID。用户使用数据库账号与数据库建立的连接ID（数据库用户ID由注册数据库用户接口创建）。
 
@@ -88,7 +88,7 @@ class ShowDbUserRequest:
 
     @db_user_id.setter
     def db_user_id(self, db_user_id):
-        """Sets the db_user_id of this ShowDbUserRequest.
+        r"""Sets the db_user_id of this ShowDbUserRequest.
 
         数据库用户ID。用户使用数据库账号与数据库建立的连接ID（数据库用户ID由注册数据库用户接口创建）。
 
@@ -99,7 +99,7 @@ class ShowDbUserRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowDbUserRequest.
+        r"""Gets the x_language of this ShowDbUserRequest.
 
         语言
 
@@ -110,7 +110,7 @@ class ShowDbUserRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowDbUserRequest.
+        r"""Sets the x_language of this ShowDbUserRequest.
 
         语言
 

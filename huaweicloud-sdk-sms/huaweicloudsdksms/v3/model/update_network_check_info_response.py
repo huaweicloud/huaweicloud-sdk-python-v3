@@ -26,7 +26,7 @@ class UpdateNetworkCheckInfoResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """UpdateNetworkCheckInfoResponse
+        r"""UpdateNetworkCheckInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateNetworkCheckInfoResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this UpdateNetworkCheckInfoResponse.
+        r"""Gets the body of this UpdateNetworkCheckInfoResponse.
 
         更新网络检测结果成功。
 
@@ -55,7 +55,7 @@ class UpdateNetworkCheckInfoResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateNetworkCheckInfoResponse.
+        r"""Sets the body of this UpdateNetworkCheckInfoResponse.
 
         更新网络检测结果成功。
 

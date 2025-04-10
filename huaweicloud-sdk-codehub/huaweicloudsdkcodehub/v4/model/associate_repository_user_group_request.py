@@ -29,7 +29,7 @@ class AssociateRepositoryUserGroupRequest:
     }
 
     def __init__(self, project_id=None, repository_id=None, user_group_id=None):
-        """AssociateRepositoryUserGroupRequest
+        r"""AssociateRepositoryUserGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class AssociateRepositoryUserGroupRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this AssociateRepositoryUserGroupRequest.
+        r"""Gets the project_id of this AssociateRepositoryUserGroupRequest.
 
         项目id
 
@@ -65,7 +65,7 @@ class AssociateRepositoryUserGroupRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this AssociateRepositoryUserGroupRequest.
+        r"""Sets the project_id of this AssociateRepositoryUserGroupRequest.
 
         项目id
 
@@ -76,7 +76,7 @@ class AssociateRepositoryUserGroupRequest:
 
     @property
     def repository_id(self):
-        """Gets the repository_id of this AssociateRepositoryUserGroupRequest.
+        r"""Gets the repository_id of this AssociateRepositoryUserGroupRequest.
 
         仓库id
 
@@ -87,7 +87,7 @@ class AssociateRepositoryUserGroupRequest:
 
     @repository_id.setter
     def repository_id(self, repository_id):
-        """Sets the repository_id of this AssociateRepositoryUserGroupRequest.
+        r"""Sets the repository_id of this AssociateRepositoryUserGroupRequest.
 
         仓库id
 
@@ -98,7 +98,7 @@ class AssociateRepositoryUserGroupRequest:
 
     @property
     def user_group_id(self):
-        """Gets the user_group_id of this AssociateRepositoryUserGroupRequest.
+        r"""Gets the user_group_id of this AssociateRepositoryUserGroupRequest.
 
         成员组id
 
@@ -109,7 +109,7 @@ class AssociateRepositoryUserGroupRequest:
 
     @user_group_id.setter
     def user_group_id(self, user_group_id):
-        """Sets the user_group_id of this AssociateRepositoryUserGroupRequest.
+        r"""Sets the user_group_id of this AssociateRepositoryUserGroupRequest.
 
         成员组id
 

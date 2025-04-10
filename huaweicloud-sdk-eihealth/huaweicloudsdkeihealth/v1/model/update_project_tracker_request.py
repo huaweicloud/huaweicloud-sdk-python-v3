@@ -27,7 +27,7 @@ class UpdateProjectTrackerRequest:
     }
 
     def __init__(self, eihealth_project_id=None, body=None):
-        """UpdateProjectTrackerRequest
+        r"""UpdateProjectTrackerRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateProjectTrackerRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this UpdateProjectTrackerRequest.
+        r"""Gets the eihealth_project_id of this UpdateProjectTrackerRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -60,7 +60,7 @@ class UpdateProjectTrackerRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this UpdateProjectTrackerRequest.
+        r"""Sets the eihealth_project_id of this UpdateProjectTrackerRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -71,7 +71,7 @@ class UpdateProjectTrackerRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateProjectTrackerRequest.
+        r"""Gets the body of this UpdateProjectTrackerRequest.
 
         :return: The body of this UpdateProjectTrackerRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateTrackerReq`
@@ -80,7 +80,7 @@ class UpdateProjectTrackerRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateProjectTrackerRequest.
+        r"""Sets the body of this UpdateProjectTrackerRequest.
 
         :param body: The body of this UpdateProjectTrackerRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.UpdateTrackerReq`

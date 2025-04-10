@@ -27,7 +27,7 @@ class BatchDealResourceTagReq:
     }
 
     def __init__(self, action=None, tags=None):
-        """BatchDealResourceTagReq
+        r"""BatchDealResourceTagReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchDealResourceTagReq:
 
     @property
     def action(self):
-        """Gets the action of this BatchDealResourceTagReq.
+        r"""Gets the action of this BatchDealResourceTagReq.
 
         操作标识（区分大小写）： - 创建时为“create” - 删除时为“delete”
 
@@ -59,7 +59,7 @@ class BatchDealResourceTagReq:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this BatchDealResourceTagReq.
+        r"""Sets the action of this BatchDealResourceTagReq.
 
         操作标识（区分大小写）： - 创建时为“create” - 删除时为“delete”
 
@@ -70,7 +70,7 @@ class BatchDealResourceTagReq:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchDealResourceTagReq.
+        r"""Gets the tags of this BatchDealResourceTagReq.
 
         标签列表。最多添加10个标签。
 
@@ -81,7 +81,7 @@ class BatchDealResourceTagReq:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchDealResourceTagReq.
+        r"""Sets the tags of this BatchDealResourceTagReq.
 
         标签列表。最多添加10个标签。
 

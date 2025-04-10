@@ -41,7 +41,7 @@ class QueryTestCasesByIssueInfo:
     }
 
     def __init__(self, page_no=None, page_size=None, sort_field=None, sort_type=None, version_uri=None, relate_type=None, key_word=None, rank_ids=None, result_codes=None):
-        """QueryTestCasesByIssueInfo
+        r"""QueryTestCasesByIssueInfo
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class QueryTestCasesByIssueInfo:
 
     @property
     def page_no(self):
-        """Gets the page_no of this QueryTestCasesByIssueInfo.
+        r"""Gets the page_no of this QueryTestCasesByIssueInfo.
 
         页码
 
@@ -110,7 +110,7 @@ class QueryTestCasesByIssueInfo:
 
     @page_no.setter
     def page_no(self, page_no):
-        """Sets the page_no of this QueryTestCasesByIssueInfo.
+        r"""Sets the page_no of this QueryTestCasesByIssueInfo.
 
         页码
 
@@ -121,7 +121,7 @@ class QueryTestCasesByIssueInfo:
 
     @property
     def page_size(self):
-        """Gets the page_size of this QueryTestCasesByIssueInfo.
+        r"""Gets the page_size of this QueryTestCasesByIssueInfo.
 
         每页数量
 
@@ -132,7 +132,7 @@ class QueryTestCasesByIssueInfo:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this QueryTestCasesByIssueInfo.
+        r"""Sets the page_size of this QueryTestCasesByIssueInfo.
 
         每页数量
 
@@ -143,7 +143,7 @@ class QueryTestCasesByIssueInfo:
 
     @property
     def sort_field(self):
-        """Gets the sort_field of this QueryTestCasesByIssueInfo.
+        r"""Gets the sort_field of this QueryTestCasesByIssueInfo.
 
         排序字段
 
@@ -154,7 +154,7 @@ class QueryTestCasesByIssueInfo:
 
     @sort_field.setter
     def sort_field(self, sort_field):
-        """Sets the sort_field of this QueryTestCasesByIssueInfo.
+        r"""Sets the sort_field of this QueryTestCasesByIssueInfo.
 
         排序字段
 
@@ -165,7 +165,7 @@ class QueryTestCasesByIssueInfo:
 
     @property
     def sort_type(self):
-        """Gets the sort_type of this QueryTestCasesByIssueInfo.
+        r"""Gets the sort_type of this QueryTestCasesByIssueInfo.
 
         排序类型
 
@@ -176,7 +176,7 @@ class QueryTestCasesByIssueInfo:
 
     @sort_type.setter
     def sort_type(self, sort_type):
-        """Sets the sort_type of this QueryTestCasesByIssueInfo.
+        r"""Sets the sort_type of this QueryTestCasesByIssueInfo.
 
         排序类型
 
@@ -187,7 +187,7 @@ class QueryTestCasesByIssueInfo:
 
     @property
     def version_uri(self):
-        """Gets the version_uri of this QueryTestCasesByIssueInfo.
+        r"""Gets the version_uri of this QueryTestCasesByIssueInfo.
 
         版本uri
 
@@ -198,7 +198,7 @@ class QueryTestCasesByIssueInfo:
 
     @version_uri.setter
     def version_uri(self, version_uri):
-        """Sets the version_uri of this QueryTestCasesByIssueInfo.
+        r"""Sets the version_uri of this QueryTestCasesByIssueInfo.
 
         版本uri
 
@@ -209,7 +209,7 @@ class QueryTestCasesByIssueInfo:
 
     @property
     def relate_type(self):
-        """Gets the relate_type of this QueryTestCasesByIssueInfo.
+        r"""Gets the relate_type of this QueryTestCasesByIssueInfo.
 
         关联关系类型
 
@@ -220,7 +220,7 @@ class QueryTestCasesByIssueInfo:
 
     @relate_type.setter
     def relate_type(self, relate_type):
-        """Sets the relate_type of this QueryTestCasesByIssueInfo.
+        r"""Sets the relate_type of this QueryTestCasesByIssueInfo.
 
         关联关系类型
 
@@ -231,7 +231,7 @@ class QueryTestCasesByIssueInfo:
 
     @property
     def key_word(self):
-        """Gets the key_word of this QueryTestCasesByIssueInfo.
+        r"""Gets the key_word of this QueryTestCasesByIssueInfo.
 
         关键字
 
@@ -242,7 +242,7 @@ class QueryTestCasesByIssueInfo:
 
     @key_word.setter
     def key_word(self, key_word):
-        """Sets the key_word of this QueryTestCasesByIssueInfo.
+        r"""Sets the key_word of this QueryTestCasesByIssueInfo.
 
         关键字
 
@@ -253,7 +253,7 @@ class QueryTestCasesByIssueInfo:
 
     @property
     def rank_ids(self):
-        """Gets the rank_ids of this QueryTestCasesByIssueInfo.
+        r"""Gets the rank_ids of this QueryTestCasesByIssueInfo.
 
         用例等级ID集合
 
@@ -264,7 +264,7 @@ class QueryTestCasesByIssueInfo:
 
     @rank_ids.setter
     def rank_ids(self, rank_ids):
-        """Sets the rank_ids of this QueryTestCasesByIssueInfo.
+        r"""Sets the rank_ids of this QueryTestCasesByIssueInfo.
 
         用例等级ID集合
 
@@ -275,7 +275,7 @@ class QueryTestCasesByIssueInfo:
 
     @property
     def result_codes(self):
-        """Gets the result_codes of this QueryTestCasesByIssueInfo.
+        r"""Gets the result_codes of this QueryTestCasesByIssueInfo.
 
         结果Code集合
 
@@ -286,7 +286,7 @@ class QueryTestCasesByIssueInfo:
 
     @result_codes.setter
     def result_codes(self, result_codes):
-        """Sets the result_codes of this QueryTestCasesByIssueInfo.
+        r"""Sets the result_codes of this QueryTestCasesByIssueInfo.
 
         结果Code集合
 

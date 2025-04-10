@@ -31,7 +31,7 @@ class UpdatePostgresqlParameterValueRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, name=None, body=None):
-        """UpdatePostgresqlParameterValueRequest
+        r"""UpdatePostgresqlParameterValueRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class UpdatePostgresqlParameterValueRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdatePostgresqlParameterValueRequest.
+        r"""Gets the x_language of this UpdatePostgresqlParameterValueRequest.
 
         语言
 
@@ -73,7 +73,7 @@ class UpdatePostgresqlParameterValueRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdatePostgresqlParameterValueRequest.
+        r"""Sets the x_language of this UpdatePostgresqlParameterValueRequest.
 
         语言
 
@@ -84,7 +84,7 @@ class UpdatePostgresqlParameterValueRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdatePostgresqlParameterValueRequest.
+        r"""Gets the instance_id of this UpdatePostgresqlParameterValueRequest.
 
         实例ID。
 
@@ -95,7 +95,7 @@ class UpdatePostgresqlParameterValueRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdatePostgresqlParameterValueRequest.
+        r"""Sets the instance_id of this UpdatePostgresqlParameterValueRequest.
 
         实例ID。
 
@@ -106,7 +106,7 @@ class UpdatePostgresqlParameterValueRequest:
 
     @property
     def name(self):
-        """Gets the name of this UpdatePostgresqlParameterValueRequest.
+        r"""Gets the name of this UpdatePostgresqlParameterValueRequest.
 
         参数名称。
 
@@ -117,7 +117,7 @@ class UpdatePostgresqlParameterValueRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdatePostgresqlParameterValueRequest.
+        r"""Sets the name of this UpdatePostgresqlParameterValueRequest.
 
         参数名称。
 
@@ -128,7 +128,7 @@ class UpdatePostgresqlParameterValueRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePostgresqlParameterValueRequest.
+        r"""Gets the body of this UpdatePostgresqlParameterValueRequest.
 
         :return: The body of this UpdatePostgresqlParameterValueRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.ModifyParamRequest`
@@ -137,7 +137,7 @@ class UpdatePostgresqlParameterValueRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePostgresqlParameterValueRequest.
+        r"""Sets the body of this UpdatePostgresqlParameterValueRequest.
 
         :param body: The body of this UpdatePostgresqlParameterValueRequest.
         :type body: :class:`huaweicloudsdkrds.v3.ModifyParamRequest`

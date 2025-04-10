@@ -30,7 +30,7 @@ class ListCustomerAccountChangeRecordsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, currency=None, records=None):
-        """ListCustomerAccountChangeRecordsResponse
+        r"""ListCustomerAccountChangeRecordsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListCustomerAccountChangeRecordsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListCustomerAccountChangeRecordsResponse.
+        r"""Gets the total_count of this ListCustomerAccountChangeRecordsResponse.
 
         |参数名称：总条数| |参数的约束及描述：总条数|
 
@@ -69,7 +69,7 @@ class ListCustomerAccountChangeRecordsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListCustomerAccountChangeRecordsResponse.
+        r"""Sets the total_count of this ListCustomerAccountChangeRecordsResponse.
 
         |参数名称：总条数| |参数的约束及描述：总条数|
 
@@ -80,7 +80,7 @@ class ListCustomerAccountChangeRecordsResponse(SdkResponse):
 
     @property
     def currency(self):
-        """Gets the currency of this ListCustomerAccountChangeRecordsResponse.
+        r"""Gets the currency of this ListCustomerAccountChangeRecordsResponse.
 
         |参数名称：币种| |参数约束及描述：币种|
 
@@ -91,7 +91,7 @@ class ListCustomerAccountChangeRecordsResponse(SdkResponse):
 
     @currency.setter
     def currency(self, currency):
-        """Sets the currency of this ListCustomerAccountChangeRecordsResponse.
+        r"""Sets the currency of this ListCustomerAccountChangeRecordsResponse.
 
         |参数名称：币种| |参数约束及描述：币种|
 
@@ -102,7 +102,7 @@ class ListCustomerAccountChangeRecordsResponse(SdkResponse):
 
     @property
     def records(self):
-        """Gets the records of this ListCustomerAccountChangeRecordsResponse.
+        r"""Gets the records of this ListCustomerAccountChangeRecordsResponse.
 
         |参数名称：收支明细记录列表| |参数约束以及描述：收支明细记录列表|
 
@@ -113,7 +113,7 @@ class ListCustomerAccountChangeRecordsResponse(SdkResponse):
 
     @records.setter
     def records(self, records):
-        """Sets the records of this ListCustomerAccountChangeRecordsResponse.
+        r"""Sets the records of this ListCustomerAccountChangeRecordsResponse.
 
         |参数名称：收支明细记录列表| |参数约束以及描述：收支明细记录列表|
 

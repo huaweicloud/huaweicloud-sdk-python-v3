@@ -27,7 +27,7 @@ class ListTableModelRelationsResultDataValue:
     }
 
     def __init__(self, total=None, records=None):
-        """ListTableModelRelationsResultDataValue
+        r"""ListTableModelRelationsResultDataValue
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListTableModelRelationsResultDataValue:
 
     @property
     def total(self):
-        """Gets the total of this ListTableModelRelationsResultDataValue.
+        r"""Gets the total of this ListTableModelRelationsResultDataValue.
 
         总量。
 
@@ -61,7 +61,7 @@ class ListTableModelRelationsResultDataValue:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListTableModelRelationsResultDataValue.
+        r"""Sets the total of this ListTableModelRelationsResultDataValue.
 
         总量。
 
@@ -72,7 +72,7 @@ class ListTableModelRelationsResultDataValue:
 
     @property
     def records(self):
-        """Gets the records of this ListTableModelRelationsResultDataValue.
+        r"""Gets the records of this ListTableModelRelationsResultDataValue.
 
         RelationVO信息。
 
@@ -83,7 +83,7 @@ class ListTableModelRelationsResultDataValue:
 
     @records.setter
     def records(self, records):
-        """Sets the records of this ListTableModelRelationsResultDataValue.
+        r"""Sets the records of this ListTableModelRelationsResultDataValue.
 
         RelationVO信息。
 

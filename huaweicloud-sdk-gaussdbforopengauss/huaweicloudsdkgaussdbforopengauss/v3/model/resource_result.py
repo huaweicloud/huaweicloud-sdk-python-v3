@@ -29,7 +29,7 @@ class ResourceResult:
     }
 
     def __init__(self, type=None, used=None, quota=None):
-        """ResourceResult
+        r"""ResourceResult
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ResourceResult:
 
     @property
     def type(self):
-        """Gets the type of this ResourceResult.
+        r"""Gets the type of this ResourceResult.
 
         指定类型的配额。 - instance: 表示实例的配额
 
@@ -65,7 +65,7 @@ class ResourceResult:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ResourceResult.
+        r"""Sets the type of this ResourceResult.
 
         指定类型的配额。 - instance: 表示实例的配额
 
@@ -76,7 +76,7 @@ class ResourceResult:
 
     @property
     def used(self):
-        """Gets the used of this ResourceResult.
+        r"""Gets the used of this ResourceResult.
 
         已创建的资源个数
 
@@ -87,7 +87,7 @@ class ResourceResult:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this ResourceResult.
+        r"""Sets the used of this ResourceResult.
 
         已创建的资源个数
 
@@ -98,7 +98,7 @@ class ResourceResult:
 
     @property
     def quota(self):
-        """Gets the quota of this ResourceResult.
+        r"""Gets the quota of this ResourceResult.
 
         资源最大的配额数
 
@@ -109,7 +109,7 @@ class ResourceResult:
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this ResourceResult.
+        r"""Sets the quota of this ResourceResult.
 
         资源最大的配额数
 

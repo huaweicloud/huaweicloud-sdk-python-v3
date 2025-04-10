@@ -49,7 +49,7 @@ class QueryDeptResultDTO:
     }
 
     def __init__(self, dept_code=None, dept_level=None, dept_name=None, dept_name_path=None, is_leaf_node=None, parent_dept_code=None, dept_code_path=None, note=None, corp_id=None, in_permission=None, out_permission=None, designated_out_dept_codes=None, sort_level=None):
-        """QueryDeptResultDTO
+        r"""QueryDeptResultDTO
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class QueryDeptResultDTO:
 
     @property
     def dept_code(self):
-        """Gets the dept_code of this QueryDeptResultDTO.
+        r"""Gets the dept_code of this QueryDeptResultDTO.
 
         部门编码，企业内唯一。
 
@@ -138,7 +138,7 @@ class QueryDeptResultDTO:
 
     @dept_code.setter
     def dept_code(self, dept_code):
-        """Sets the dept_code of this QueryDeptResultDTO.
+        r"""Sets the dept_code of this QueryDeptResultDTO.
 
         部门编码，企业内唯一。
 
@@ -149,7 +149,7 @@ class QueryDeptResultDTO:
 
     @property
     def dept_level(self):
-        """Gets the dept_level of this QueryDeptResultDTO.
+        r"""Gets the dept_level of this QueryDeptResultDTO.
 
         部门层级。
 
@@ -160,7 +160,7 @@ class QueryDeptResultDTO:
 
     @dept_level.setter
     def dept_level(self, dept_level):
-        """Sets the dept_level of this QueryDeptResultDTO.
+        r"""Sets the dept_level of this QueryDeptResultDTO.
 
         部门层级。
 
@@ -171,7 +171,7 @@ class QueryDeptResultDTO:
 
     @property
     def dept_name(self):
-        """Gets the dept_name of this QueryDeptResultDTO.
+        r"""Gets the dept_name of this QueryDeptResultDTO.
 
         部门名称。
 
@@ -182,7 +182,7 @@ class QueryDeptResultDTO:
 
     @dept_name.setter
     def dept_name(self, dept_name):
-        """Sets the dept_name of this QueryDeptResultDTO.
+        r"""Sets the dept_name of this QueryDeptResultDTO.
 
         部门名称。
 
@@ -193,7 +193,7 @@ class QueryDeptResultDTO:
 
     @property
     def dept_name_path(self):
-        """Gets the dept_name_path of this QueryDeptResultDTO.
+        r"""Gets the dept_name_path of this QueryDeptResultDTO.
 
         部门名路径。
 
@@ -204,7 +204,7 @@ class QueryDeptResultDTO:
 
     @dept_name_path.setter
     def dept_name_path(self, dept_name_path):
-        """Sets the dept_name_path of this QueryDeptResultDTO.
+        r"""Sets the dept_name_path of this QueryDeptResultDTO.
 
         部门名路径。
 
@@ -215,7 +215,7 @@ class QueryDeptResultDTO:
 
     @property
     def is_leaf_node(self):
-        """Gets the is_leaf_node of this QueryDeptResultDTO.
+        r"""Gets the is_leaf_node of this QueryDeptResultDTO.
 
         是否叶子节点。
 
@@ -226,7 +226,7 @@ class QueryDeptResultDTO:
 
     @is_leaf_node.setter
     def is_leaf_node(self, is_leaf_node):
-        """Sets the is_leaf_node of this QueryDeptResultDTO.
+        r"""Sets the is_leaf_node of this QueryDeptResultDTO.
 
         是否叶子节点。
 
@@ -237,7 +237,7 @@ class QueryDeptResultDTO:
 
     @property
     def parent_dept_code(self):
-        """Gets the parent_dept_code of this QueryDeptResultDTO.
+        r"""Gets the parent_dept_code of this QueryDeptResultDTO.
 
         父部门编码。
 
@@ -248,7 +248,7 @@ class QueryDeptResultDTO:
 
     @parent_dept_code.setter
     def parent_dept_code(self, parent_dept_code):
-        """Sets the parent_dept_code of this QueryDeptResultDTO.
+        r"""Sets the parent_dept_code of this QueryDeptResultDTO.
 
         父部门编码。
 
@@ -259,7 +259,7 @@ class QueryDeptResultDTO:
 
     @property
     def dept_code_path(self):
-        """Gets the dept_code_path of this QueryDeptResultDTO.
+        r"""Gets the dept_code_path of this QueryDeptResultDTO.
 
         部门编码路径。
 
@@ -270,7 +270,7 @@ class QueryDeptResultDTO:
 
     @dept_code_path.setter
     def dept_code_path(self, dept_code_path):
-        """Sets the dept_code_path of this QueryDeptResultDTO.
+        r"""Sets the dept_code_path of this QueryDeptResultDTO.
 
         部门编码路径。
 
@@ -281,7 +281,7 @@ class QueryDeptResultDTO:
 
     @property
     def note(self):
-        """Gets the note of this QueryDeptResultDTO.
+        r"""Gets the note of this QueryDeptResultDTO.
 
         备注。
 
@@ -292,7 +292,7 @@ class QueryDeptResultDTO:
 
     @note.setter
     def note(self, note):
-        """Sets the note of this QueryDeptResultDTO.
+        r"""Sets the note of this QueryDeptResultDTO.
 
         备注。
 
@@ -303,7 +303,7 @@ class QueryDeptResultDTO:
 
     @property
     def corp_id(self):
-        """Gets the corp_id of this QueryDeptResultDTO.
+        r"""Gets the corp_id of this QueryDeptResultDTO.
 
         企业ID。
 
@@ -314,7 +314,7 @@ class QueryDeptResultDTO:
 
     @corp_id.setter
     def corp_id(self, corp_id):
-        """Sets the corp_id of this QueryDeptResultDTO.
+        r"""Sets the corp_id of this QueryDeptResultDTO.
 
         企业ID。
 
@@ -325,7 +325,7 @@ class QueryDeptResultDTO:
 
     @property
     def in_permission(self):
-        """Gets the in_permission of this QueryDeptResultDTO.
+        r"""Gets the in_permission of this QueryDeptResultDTO.
 
         其他用户对该部门下用户的访问权限。
 
@@ -336,7 +336,7 @@ class QueryDeptResultDTO:
 
     @in_permission.setter
     def in_permission(self, in_permission):
-        """Sets the in_permission of this QueryDeptResultDTO.
+        r"""Sets the in_permission of this QueryDeptResultDTO.
 
         其他用户对该部门下用户的访问权限。
 
@@ -347,7 +347,7 @@ class QueryDeptResultDTO:
 
     @property
     def out_permission(self):
-        """Gets the out_permission of this QueryDeptResultDTO.
+        r"""Gets the out_permission of this QueryDeptResultDTO.
 
         该部门下用户访问权限控制。
 
@@ -358,7 +358,7 @@ class QueryDeptResultDTO:
 
     @out_permission.setter
     def out_permission(self, out_permission):
-        """Sets the out_permission of this QueryDeptResultDTO.
+        r"""Sets the out_permission of this QueryDeptResultDTO.
 
         该部门下用户访问权限控制。
 
@@ -369,7 +369,7 @@ class QueryDeptResultDTO:
 
     @property
     def designated_out_dept_codes(self):
-        """Gets the designated_out_dept_codes of this QueryDeptResultDTO.
+        r"""Gets the designated_out_dept_codes of this QueryDeptResultDTO.
 
         允许访问的部门列表。
 
@@ -380,7 +380,7 @@ class QueryDeptResultDTO:
 
     @designated_out_dept_codes.setter
     def designated_out_dept_codes(self, designated_out_dept_codes):
-        """Sets the designated_out_dept_codes of this QueryDeptResultDTO.
+        r"""Sets the designated_out_dept_codes of this QueryDeptResultDTO.
 
         允许访问的部门列表。
 
@@ -391,7 +391,7 @@ class QueryDeptResultDTO:
 
     @property
     def sort_level(self):
-        """Gets the sort_level of this QueryDeptResultDTO.
+        r"""Gets the sort_level of this QueryDeptResultDTO.
 
         部门排序号。
 
@@ -402,7 +402,7 @@ class QueryDeptResultDTO:
 
     @sort_level.setter
     def sort_level(self, sort_level):
-        """Sets the sort_level of this QueryDeptResultDTO.
+        r"""Sets the sort_level of this QueryDeptResultDTO.
 
         部门排序号。
 

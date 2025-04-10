@@ -27,7 +27,7 @@ class UpdateUserDnsMappingRequest:
     }
 
     def __init__(self, project_id=None, body=None):
-        """UpdateUserDnsMappingRequest
+        r"""UpdateUserDnsMappingRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateUserDnsMappingRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this UpdateUserDnsMappingRequest.
+        r"""Gets the project_id of this UpdateUserDnsMappingRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -60,7 +60,7 @@ class UpdateUserDnsMappingRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UpdateUserDnsMappingRequest.
+        r"""Sets the project_id of this UpdateUserDnsMappingRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -71,7 +71,7 @@ class UpdateUserDnsMappingRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateUserDnsMappingRequest.
+        r"""Gets the body of this UpdateUserDnsMappingRequest.
 
         :return: The body of this UpdateUserDnsMappingRequest.
         :rtype: str
@@ -80,7 +80,7 @@ class UpdateUserDnsMappingRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateUserDnsMappingRequest.
+        r"""Sets the body of this UpdateUserDnsMappingRequest.
 
         :param body: The body of this UpdateUserDnsMappingRequest.
         :type body: str

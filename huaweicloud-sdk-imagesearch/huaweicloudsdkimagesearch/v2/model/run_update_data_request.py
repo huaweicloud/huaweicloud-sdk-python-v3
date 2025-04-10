@@ -27,7 +27,7 @@ class RunUpdateDataRequest:
     }
 
     def __init__(self, service_name=None, body=None):
-        """RunUpdateDataRequest
+        r"""RunUpdateDataRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RunUpdateDataRequest:
 
     @property
     def service_name(self):
-        """Gets the service_name of this RunUpdateDataRequest.
+        r"""Gets the service_name of this RunUpdateDataRequest.
 
         服务实例的名称，用户创建服务实例时指定。
 
@@ -60,7 +60,7 @@ class RunUpdateDataRequest:
 
     @service_name.setter
     def service_name(self, service_name):
-        """Sets the service_name of this RunUpdateDataRequest.
+        r"""Sets the service_name of this RunUpdateDataRequest.
 
         服务实例的名称，用户创建服务实例时指定。
 
@@ -71,7 +71,7 @@ class RunUpdateDataRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunUpdateDataRequest.
+        r"""Gets the body of this RunUpdateDataRequest.
 
         :return: The body of this RunUpdateDataRequest.
         :rtype: :class:`huaweicloudsdkimagesearch.v2.UpdateParam`
@@ -80,7 +80,7 @@ class RunUpdateDataRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunUpdateDataRequest.
+        r"""Sets the body of this RunUpdateDataRequest.
 
         :param body: The body of this RunUpdateDataRequest.
         :type body: :class:`huaweicloudsdkimagesearch.v2.UpdateParam`

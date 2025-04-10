@@ -71,7 +71,7 @@ class ComputeDimension:
     }
 
     def __init__(self, node_instance_id=None, name=None, type=None, node_type=None, job_id=None, job_instance_id=None, job_name=None, start_time_ms=None, end_time_ms=None, execute_time_ms=None, status=None, last_start_time_ms=None, last_end_time_ms=None, cpu_resource_consumption_value=None, cpu_unit=None, memory_resource_consumption_value=None, memory_unit=None, last_cpu_resource_consumption_value=None, last_cpu_unit=None, last_memory_resource_consumption_value=None, last_memory_unit=None, creator=None, warehouse_time_ms=None, extended_fields=None):
-        """ComputeDimension
+        r"""ComputeDimension
 
         The model defined in huaweicloud sdk
 
@@ -204,7 +204,7 @@ class ComputeDimension:
 
     @property
     def node_instance_id(self):
-        """Gets the node_instance_id of this ComputeDimension.
+        r"""Gets the node_instance_id of this ComputeDimension.
 
         节点实例ID
 
@@ -215,7 +215,7 @@ class ComputeDimension:
 
     @node_instance_id.setter
     def node_instance_id(self, node_instance_id):
-        """Sets the node_instance_id of this ComputeDimension.
+        r"""Sets the node_instance_id of this ComputeDimension.
 
         节点实例ID
 
@@ -226,7 +226,7 @@ class ComputeDimension:
 
     @property
     def name(self):
-        """Gets the name of this ComputeDimension.
+        r"""Gets the name of this ComputeDimension.
 
         节点名称或脚本名称
 
@@ -237,7 +237,7 @@ class ComputeDimension:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ComputeDimension.
+        r"""Sets the name of this ComputeDimension.
 
         节点名称或脚本名称
 
@@ -248,7 +248,7 @@ class ComputeDimension:
 
     @property
     def type(self):
-        """Gets the type of this ComputeDimension.
+        r"""Gets the type of this ComputeDimension.
 
         类型,用于区分节点实例和脚本
 
@@ -259,7 +259,7 @@ class ComputeDimension:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ComputeDimension.
+        r"""Sets the type of this ComputeDimension.
 
         类型,用于区分节点实例和脚本
 
@@ -270,7 +270,7 @@ class ComputeDimension:
 
     @property
     def node_type(self):
-        """Gets the node_type of this ComputeDimension.
+        r"""Gets the node_type of this ComputeDimension.
 
         节点类型
 
@@ -281,7 +281,7 @@ class ComputeDimension:
 
     @node_type.setter
     def node_type(self, node_type):
-        """Sets the node_type of this ComputeDimension.
+        r"""Sets the node_type of this ComputeDimension.
 
         节点类型
 
@@ -292,7 +292,7 @@ class ComputeDimension:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ComputeDimension.
+        r"""Gets the job_id of this ComputeDimension.
 
         作业id
 
@@ -303,7 +303,7 @@ class ComputeDimension:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ComputeDimension.
+        r"""Sets the job_id of this ComputeDimension.
 
         作业id
 
@@ -314,7 +314,7 @@ class ComputeDimension:
 
     @property
     def job_instance_id(self):
-        """Gets the job_instance_id of this ComputeDimension.
+        r"""Gets the job_instance_id of this ComputeDimension.
 
         作业实例id
 
@@ -325,7 +325,7 @@ class ComputeDimension:
 
     @job_instance_id.setter
     def job_instance_id(self, job_instance_id):
-        """Sets the job_instance_id of this ComputeDimension.
+        r"""Sets the job_instance_id of this ComputeDimension.
 
         作业实例id
 
@@ -336,7 +336,7 @@ class ComputeDimension:
 
     @property
     def job_name(self):
-        """Gets the job_name of this ComputeDimension.
+        r"""Gets the job_name of this ComputeDimension.
 
         作业名称
 
@@ -347,7 +347,7 @@ class ComputeDimension:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this ComputeDimension.
+        r"""Sets the job_name of this ComputeDimension.
 
         作业名称
 
@@ -358,7 +358,7 @@ class ComputeDimension:
 
     @property
     def start_time_ms(self):
-        """Gets the start_time_ms of this ComputeDimension.
+        r"""Gets the start_time_ms of this ComputeDimension.
 
         节点实例启动时间,单位毫秒
 
@@ -369,7 +369,7 @@ class ComputeDimension:
 
     @start_time_ms.setter
     def start_time_ms(self, start_time_ms):
-        """Sets the start_time_ms of this ComputeDimension.
+        r"""Sets the start_time_ms of this ComputeDimension.
 
         节点实例启动时间,单位毫秒
 
@@ -380,7 +380,7 @@ class ComputeDimension:
 
     @property
     def end_time_ms(self):
-        """Gets the end_time_ms of this ComputeDimension.
+        r"""Gets the end_time_ms of this ComputeDimension.
 
         节点实例结束时间,单位毫秒
 
@@ -391,7 +391,7 @@ class ComputeDimension:
 
     @end_time_ms.setter
     def end_time_ms(self, end_time_ms):
-        """Sets the end_time_ms of this ComputeDimension.
+        r"""Sets the end_time_ms of this ComputeDimension.
 
         节点实例结束时间,单位毫秒
 
@@ -402,7 +402,7 @@ class ComputeDimension:
 
     @property
     def execute_time_ms(self):
-        """Gets the execute_time_ms of this ComputeDimension.
+        r"""Gets the execute_time_ms of this ComputeDimension.
 
         节点实例执行时长,单位毫秒
 
@@ -413,7 +413,7 @@ class ComputeDimension:
 
     @execute_time_ms.setter
     def execute_time_ms(self, execute_time_ms):
-        """Sets the execute_time_ms of this ComputeDimension.
+        r"""Sets the execute_time_ms of this ComputeDimension.
 
         节点实例执行时长,单位毫秒
 
@@ -424,7 +424,7 @@ class ComputeDimension:
 
     @property
     def status(self):
-        """Gets the status of this ComputeDimension.
+        r"""Gets the status of this ComputeDimension.
 
         节点实例状态
 
@@ -435,7 +435,7 @@ class ComputeDimension:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ComputeDimension.
+        r"""Sets the status of this ComputeDimension.
 
         节点实例状态
 
@@ -446,7 +446,7 @@ class ComputeDimension:
 
     @property
     def last_start_time_ms(self):
-        """Gets the last_start_time_ms of this ComputeDimension.
+        r"""Gets the last_start_time_ms of this ComputeDimension.
 
         节点实例上次执行开始时间,单位毫秒
 
@@ -457,7 +457,7 @@ class ComputeDimension:
 
     @last_start_time_ms.setter
     def last_start_time_ms(self, last_start_time_ms):
-        """Sets the last_start_time_ms of this ComputeDimension.
+        r"""Sets the last_start_time_ms of this ComputeDimension.
 
         节点实例上次执行开始时间,单位毫秒
 
@@ -468,7 +468,7 @@ class ComputeDimension:
 
     @property
     def last_end_time_ms(self):
-        """Gets the last_end_time_ms of this ComputeDimension.
+        r"""Gets the last_end_time_ms of this ComputeDimension.
 
         节点实例上次执行结束时间,单位毫秒
 
@@ -479,7 +479,7 @@ class ComputeDimension:
 
     @last_end_time_ms.setter
     def last_end_time_ms(self, last_end_time_ms):
-        """Sets the last_end_time_ms of this ComputeDimension.
+        r"""Sets the last_end_time_ms of this ComputeDimension.
 
         节点实例上次执行结束时间,单位毫秒
 
@@ -490,7 +490,7 @@ class ComputeDimension:
 
     @property
     def cpu_resource_consumption_value(self):
-        """Gets the cpu_resource_consumption_value of this ComputeDimension.
+        r"""Gets the cpu_resource_consumption_value of this ComputeDimension.
 
         cpu消耗值
 
@@ -501,7 +501,7 @@ class ComputeDimension:
 
     @cpu_resource_consumption_value.setter
     def cpu_resource_consumption_value(self, cpu_resource_consumption_value):
-        """Sets the cpu_resource_consumption_value of this ComputeDimension.
+        r"""Sets the cpu_resource_consumption_value of this ComputeDimension.
 
         cpu消耗值
 
@@ -512,7 +512,7 @@ class ComputeDimension:
 
     @property
     def cpu_unit(self):
-        """Gets the cpu_unit of this ComputeDimension.
+        r"""Gets the cpu_unit of this ComputeDimension.
 
         cpu消耗单位
 
@@ -523,7 +523,7 @@ class ComputeDimension:
 
     @cpu_unit.setter
     def cpu_unit(self, cpu_unit):
-        """Sets the cpu_unit of this ComputeDimension.
+        r"""Sets the cpu_unit of this ComputeDimension.
 
         cpu消耗单位
 
@@ -534,7 +534,7 @@ class ComputeDimension:
 
     @property
     def memory_resource_consumption_value(self):
-        """Gets the memory_resource_consumption_value of this ComputeDimension.
+        r"""Gets the memory_resource_consumption_value of this ComputeDimension.
 
         内存消耗值
 
@@ -545,7 +545,7 @@ class ComputeDimension:
 
     @memory_resource_consumption_value.setter
     def memory_resource_consumption_value(self, memory_resource_consumption_value):
-        """Sets the memory_resource_consumption_value of this ComputeDimension.
+        r"""Sets the memory_resource_consumption_value of this ComputeDimension.
 
         内存消耗值
 
@@ -556,7 +556,7 @@ class ComputeDimension:
 
     @property
     def memory_unit(self):
-        """Gets the memory_unit of this ComputeDimension.
+        r"""Gets the memory_unit of this ComputeDimension.
 
         内存消耗单位
 
@@ -567,7 +567,7 @@ class ComputeDimension:
 
     @memory_unit.setter
     def memory_unit(self, memory_unit):
-        """Sets the memory_unit of this ComputeDimension.
+        r"""Sets the memory_unit of this ComputeDimension.
 
         内存消耗单位
 
@@ -578,7 +578,7 @@ class ComputeDimension:
 
     @property
     def last_cpu_resource_consumption_value(self):
-        """Gets the last_cpu_resource_consumption_value of this ComputeDimension.
+        r"""Gets the last_cpu_resource_consumption_value of this ComputeDimension.
 
         上次cpu消耗值
 
@@ -589,7 +589,7 @@ class ComputeDimension:
 
     @last_cpu_resource_consumption_value.setter
     def last_cpu_resource_consumption_value(self, last_cpu_resource_consumption_value):
-        """Sets the last_cpu_resource_consumption_value of this ComputeDimension.
+        r"""Sets the last_cpu_resource_consumption_value of this ComputeDimension.
 
         上次cpu消耗值
 
@@ -600,7 +600,7 @@ class ComputeDimension:
 
     @property
     def last_cpu_unit(self):
-        """Gets the last_cpu_unit of this ComputeDimension.
+        r"""Gets the last_cpu_unit of this ComputeDimension.
 
         上次cpu消耗单位
 
@@ -611,7 +611,7 @@ class ComputeDimension:
 
     @last_cpu_unit.setter
     def last_cpu_unit(self, last_cpu_unit):
-        """Sets the last_cpu_unit of this ComputeDimension.
+        r"""Sets the last_cpu_unit of this ComputeDimension.
 
         上次cpu消耗单位
 
@@ -622,7 +622,7 @@ class ComputeDimension:
 
     @property
     def last_memory_resource_consumption_value(self):
-        """Gets the last_memory_resource_consumption_value of this ComputeDimension.
+        r"""Gets the last_memory_resource_consumption_value of this ComputeDimension.
 
         上次内存消耗值
 
@@ -633,7 +633,7 @@ class ComputeDimension:
 
     @last_memory_resource_consumption_value.setter
     def last_memory_resource_consumption_value(self, last_memory_resource_consumption_value):
-        """Sets the last_memory_resource_consumption_value of this ComputeDimension.
+        r"""Sets the last_memory_resource_consumption_value of this ComputeDimension.
 
         上次内存消耗值
 
@@ -644,7 +644,7 @@ class ComputeDimension:
 
     @property
     def last_memory_unit(self):
-        """Gets the last_memory_unit of this ComputeDimension.
+        r"""Gets the last_memory_unit of this ComputeDimension.
 
         上次内存消耗单位
 
@@ -655,7 +655,7 @@ class ComputeDimension:
 
     @last_memory_unit.setter
     def last_memory_unit(self, last_memory_unit):
-        """Sets the last_memory_unit of this ComputeDimension.
+        r"""Sets the last_memory_unit of this ComputeDimension.
 
         上次内存消耗单位
 
@@ -666,7 +666,7 @@ class ComputeDimension:
 
     @property
     def creator(self):
-        """Gets the creator of this ComputeDimension.
+        r"""Gets the creator of this ComputeDimension.
 
         节点实例创建者name
 
@@ -677,7 +677,7 @@ class ComputeDimension:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ComputeDimension.
+        r"""Sets the creator of this ComputeDimension.
 
         节点实例创建者name
 
@@ -688,7 +688,7 @@ class ComputeDimension:
 
     @property
     def warehouse_time_ms(self):
-        """Gets the warehouse_time_ms of this ComputeDimension.
+        r"""Gets the warehouse_time_ms of this ComputeDimension.
 
         数据入库时间,单位毫秒
 
@@ -699,7 +699,7 @@ class ComputeDimension:
 
     @warehouse_time_ms.setter
     def warehouse_time_ms(self, warehouse_time_ms):
-        """Sets the warehouse_time_ms of this ComputeDimension.
+        r"""Sets the warehouse_time_ms of this ComputeDimension.
 
         数据入库时间,单位毫秒
 
@@ -710,7 +710,7 @@ class ComputeDimension:
 
     @property
     def extended_fields(self):
-        """Gets the extended_fields of this ComputeDimension.
+        r"""Gets the extended_fields of this ComputeDimension.
 
         扩展字段
 
@@ -721,7 +721,7 @@ class ComputeDimension:
 
     @extended_fields.setter
     def extended_fields(self, extended_fields):
-        """Sets the extended_fields of this ComputeDimension.
+        r"""Sets the extended_fields of this ComputeDimension.
 
         扩展字段
 

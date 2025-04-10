@@ -23,7 +23,7 @@ class AutoPropagateRouteEnabled:
     }
 
     def __init__(self):
-        """AutoPropagateRouteEnabled
+        r"""AutoPropagateRouteEnabled
 
         The model defined in huaweicloud sdk
 

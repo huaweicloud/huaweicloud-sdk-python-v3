@@ -27,7 +27,7 @@ class BatchCreateCertTagsRequest:
     }
 
     def __init__(self, certificate_id=None, body=None):
-        """BatchCreateCertTagsRequest
+        r"""BatchCreateCertTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchCreateCertTagsRequest:
 
     @property
     def certificate_id(self):
-        """Gets the certificate_id of this BatchCreateCertTagsRequest.
+        r"""Gets the certificate_id of this BatchCreateCertTagsRequest.
 
         所需要批量创建标签的证书ID。
 
@@ -60,7 +60,7 @@ class BatchCreateCertTagsRequest:
 
     @certificate_id.setter
     def certificate_id(self, certificate_id):
-        """Sets the certificate_id of this BatchCreateCertTagsRequest.
+        r"""Sets the certificate_id of this BatchCreateCertTagsRequest.
 
         所需要批量创建标签的证书ID。
 
@@ -71,7 +71,7 @@ class BatchCreateCertTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateCertTagsRequest.
+        r"""Gets the body of this BatchCreateCertTagsRequest.
 
         :return: The body of this BatchCreateCertTagsRequest.
         :rtype: :class:`huaweicloudsdkccm.v1.BatchOperateTagRequestBody`
@@ -80,7 +80,7 @@ class BatchCreateCertTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateCertTagsRequest.
+        r"""Sets the body of this BatchCreateCertTagsRequest.
 
         :param body: The body of this BatchCreateCertTagsRequest.
         :type body: :class:`huaweicloudsdkccm.v1.BatchOperateTagRequestBody`

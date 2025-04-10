@@ -38,7 +38,7 @@ class ShowDetailsOfAppConfigV2Response(SdkResponse):
     }
 
     def __init__(self, id=None, app_id=None, config_type=None, config_name=None, config_value=None, update_time=None, description=None):
-        """ShowDetailsOfAppConfigV2Response
+        r"""ShowDetailsOfAppConfigV2Response
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ShowDetailsOfAppConfigV2Response(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowDetailsOfAppConfigV2Response.
+        r"""Gets the id of this ShowDetailsOfAppConfigV2Response.
 
         应用配置编号
 
@@ -97,7 +97,7 @@ class ShowDetailsOfAppConfigV2Response(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowDetailsOfAppConfigV2Response.
+        r"""Sets the id of this ShowDetailsOfAppConfigV2Response.
 
         应用配置编号
 
@@ -108,7 +108,7 @@ class ShowDetailsOfAppConfigV2Response(SdkResponse):
 
     @property
     def app_id(self):
-        """Gets the app_id of this ShowDetailsOfAppConfigV2Response.
+        r"""Gets the app_id of this ShowDetailsOfAppConfigV2Response.
 
         应用编号
 
@@ -119,7 +119,7 @@ class ShowDetailsOfAppConfigV2Response(SdkResponse):
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ShowDetailsOfAppConfigV2Response.
+        r"""Sets the app_id of this ShowDetailsOfAppConfigV2Response.
 
         应用编号
 
@@ -130,7 +130,7 @@ class ShowDetailsOfAppConfigV2Response(SdkResponse):
 
     @property
     def config_type(self):
-        """Gets the config_type of this ShowDetailsOfAppConfigV2Response.
+        r"""Gets the config_type of this ShowDetailsOfAppConfigV2Response.
 
         应用配置类型
 
@@ -141,7 +141,7 @@ class ShowDetailsOfAppConfigV2Response(SdkResponse):
 
     @config_type.setter
     def config_type(self, config_type):
-        """Sets the config_type of this ShowDetailsOfAppConfigV2Response.
+        r"""Sets the config_type of this ShowDetailsOfAppConfigV2Response.
 
         应用配置类型
 
@@ -152,7 +152,7 @@ class ShowDetailsOfAppConfigV2Response(SdkResponse):
 
     @property
     def config_name(self):
-        """Gets the config_name of this ShowDetailsOfAppConfigV2Response.
+        r"""Gets the config_name of this ShowDetailsOfAppConfigV2Response.
 
         应用配置名称
 
@@ -163,7 +163,7 @@ class ShowDetailsOfAppConfigV2Response(SdkResponse):
 
     @config_name.setter
     def config_name(self, config_name):
-        """Sets the config_name of this ShowDetailsOfAppConfigV2Response.
+        r"""Sets the config_name of this ShowDetailsOfAppConfigV2Response.
 
         应用配置名称
 
@@ -174,7 +174,7 @@ class ShowDetailsOfAppConfigV2Response(SdkResponse):
 
     @property
     def config_value(self):
-        """Gets the config_value of this ShowDetailsOfAppConfigV2Response.
+        r"""Gets the config_value of this ShowDetailsOfAppConfigV2Response.
 
         应用配置值
 
@@ -185,7 +185,7 @@ class ShowDetailsOfAppConfigV2Response(SdkResponse):
 
     @config_value.setter
     def config_value(self, config_value):
-        """Sets the config_value of this ShowDetailsOfAppConfigV2Response.
+        r"""Sets the config_value of this ShowDetailsOfAppConfigV2Response.
 
         应用配置值
 
@@ -196,7 +196,7 @@ class ShowDetailsOfAppConfigV2Response(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowDetailsOfAppConfigV2Response.
+        r"""Gets the update_time of this ShowDetailsOfAppConfigV2Response.
 
         应用配置更新时间
 
@@ -207,7 +207,7 @@ class ShowDetailsOfAppConfigV2Response(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowDetailsOfAppConfigV2Response.
+        r"""Sets the update_time of this ShowDetailsOfAppConfigV2Response.
 
         应用配置更新时间
 
@@ -218,7 +218,7 @@ class ShowDetailsOfAppConfigV2Response(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowDetailsOfAppConfigV2Response.
+        r"""Gets the description of this ShowDetailsOfAppConfigV2Response.
 
         应用配置描述
 
@@ -229,7 +229,7 @@ class ShowDetailsOfAppConfigV2Response(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowDetailsOfAppConfigV2Response.
+        r"""Sets the description of this ShowDetailsOfAppConfigV2Response.
 
         应用配置描述
 

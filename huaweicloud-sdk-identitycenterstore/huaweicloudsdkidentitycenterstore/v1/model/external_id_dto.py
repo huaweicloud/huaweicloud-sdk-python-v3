@@ -29,7 +29,7 @@ class ExternalIdDto:
     }
 
     def __init__(self, id=None, issuer=None):
-        """ExternalIdDto
+        r"""ExternalIdDto
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ExternalIdDto:
 
     @property
     def id(self):
-        """Gets the id of this ExternalIdDto.
+        r"""Gets the id of this ExternalIdDto.
 
         外部身份提供商颁发给此资源的标识符
 
@@ -61,7 +61,7 @@ class ExternalIdDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ExternalIdDto.
+        r"""Sets the id of this ExternalIdDto.
 
         外部身份提供商颁发给此资源的标识符
 
@@ -72,7 +72,7 @@ class ExternalIdDto:
 
     @property
     def issuer(self):
-        """Gets the issuer of this ExternalIdDto.
+        r"""Gets the issuer of this ExternalIdDto.
 
         外部标识符的颁发者
 
@@ -83,7 +83,7 @@ class ExternalIdDto:
 
     @issuer.setter
     def issuer(self, issuer):
-        """Sets the issuer of this ExternalIdDto.
+        r"""Sets the issuer of this ExternalIdDto.
 
         外部标识符的颁发者
 

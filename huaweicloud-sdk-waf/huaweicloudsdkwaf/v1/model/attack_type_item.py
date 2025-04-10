@@ -27,7 +27,7 @@ class AttackTypeItem:
     }
 
     def __init__(self, key=None, num=None):
-        """AttackTypeItem
+        r"""AttackTypeItem
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AttackTypeItem:
 
     @property
     def key(self):
-        """Gets the key of this AttackTypeItem.
+        r"""Gets the key of this AttackTypeItem.
 
         攻击事件类型
 
@@ -61,7 +61,7 @@ class AttackTypeItem:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this AttackTypeItem.
+        r"""Sets the key of this AttackTypeItem.
 
         攻击事件类型
 
@@ -72,7 +72,7 @@ class AttackTypeItem:
 
     @property
     def num(self):
-        """Gets the num of this AttackTypeItem.
+        r"""Gets the num of this AttackTypeItem.
 
         数量
 
@@ -83,7 +83,7 @@ class AttackTypeItem:
 
     @num.setter
     def num(self, num):
-        """Sets the num of this AttackTypeItem.
+        r"""Sets the num of this AttackTypeItem.
 
         数量
 

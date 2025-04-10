@@ -55,7 +55,7 @@ class KeypairDetail:
     }
 
     def __init__(self, name=None, id=None, type=None, scope=None, public_key=None, fingerprint=None, is_key_protection=None, deleted=None, description=None, user_id=None, create_time=None, delete_time=None, update_time=None, frozen_state=None, key_id=None, algorithm=None):
-        """KeypairDetail
+        r"""KeypairDetail
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class KeypairDetail:
 
     @property
     def name(self):
-        """Gets the name of this KeypairDetail.
+        r"""Gets the name of this KeypairDetail.
 
         SSH密钥对的名称
 
@@ -159,7 +159,7 @@ class KeypairDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this KeypairDetail.
+        r"""Sets the name of this KeypairDetail.
 
         SSH密钥对的名称
 
@@ -170,7 +170,7 @@ class KeypairDetail:
 
     @property
     def id(self):
-        """Gets the id of this KeypairDetail.
+        r"""Gets the id of this KeypairDetail.
 
         SSH密钥对的ID
 
@@ -181,7 +181,7 @@ class KeypairDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this KeypairDetail.
+        r"""Sets the id of this KeypairDetail.
 
         SSH密钥对的ID
 
@@ -192,7 +192,7 @@ class KeypairDetail:
 
     @property
     def type(self):
-        """Gets the type of this KeypairDetail.
+        r"""Gets the type of this KeypairDetail.
 
         SSH密钥对的类型。ssh或x509。
 
@@ -203,7 +203,7 @@ class KeypairDetail:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this KeypairDetail.
+        r"""Sets the type of this KeypairDetail.
 
         SSH密钥对的类型。ssh或x509。
 
@@ -214,7 +214,7 @@ class KeypairDetail:
 
     @property
     def scope(self):
-        """Gets the scope of this KeypairDetail.
+        r"""Gets the scope of this KeypairDetail.
 
         租户级或者用户级。domain或user。
 
@@ -225,7 +225,7 @@ class KeypairDetail:
 
     @scope.setter
     def scope(self, scope):
-        """Sets the scope of this KeypairDetail.
+        r"""Sets the scope of this KeypairDetail.
 
         租户级或者用户级。domain或user。
 
@@ -236,7 +236,7 @@ class KeypairDetail:
 
     @property
     def public_key(self):
-        """Gets the public_key of this KeypairDetail.
+        r"""Gets the public_key of this KeypairDetail.
 
         SSH密钥对对应的publicKey信息
 
@@ -247,7 +247,7 @@ class KeypairDetail:
 
     @public_key.setter
     def public_key(self, public_key):
-        """Sets the public_key of this KeypairDetail.
+        r"""Sets the public_key of this KeypairDetail.
 
         SSH密钥对对应的publicKey信息
 
@@ -258,7 +258,7 @@ class KeypairDetail:
 
     @property
     def fingerprint(self):
-        """Gets the fingerprint of this KeypairDetail.
+        r"""Gets the fingerprint of this KeypairDetail.
 
         SSH密钥对应指纹信息
 
@@ -269,7 +269,7 @@ class KeypairDetail:
 
     @fingerprint.setter
     def fingerprint(self, fingerprint):
-        """Sets the fingerprint of this KeypairDetail.
+        r"""Sets the fingerprint of this KeypairDetail.
 
         SSH密钥对应指纹信息
 
@@ -280,7 +280,7 @@ class KeypairDetail:
 
     @property
     def is_key_protection(self):
-        """Gets the is_key_protection of this KeypairDetail.
+        r"""Gets the is_key_protection of this KeypairDetail.
 
         是否托管密钥
 
@@ -291,7 +291,7 @@ class KeypairDetail:
 
     @is_key_protection.setter
     def is_key_protection(self, is_key_protection):
-        """Sets the is_key_protection of this KeypairDetail.
+        r"""Sets the is_key_protection of this KeypairDetail.
 
         是否托管密钥
 
@@ -302,7 +302,7 @@ class KeypairDetail:
 
     @property
     def deleted(self):
-        """Gets the deleted of this KeypairDetail.
+        r"""Gets the deleted of this KeypairDetail.
 
         SSH密钥对删除的标记
 
@@ -313,7 +313,7 @@ class KeypairDetail:
 
     @deleted.setter
     def deleted(self, deleted):
-        """Sets the deleted of this KeypairDetail.
+        r"""Sets the deleted of this KeypairDetail.
 
         SSH密钥对删除的标记
 
@@ -324,7 +324,7 @@ class KeypairDetail:
 
     @property
     def description(self):
-        """Gets the description of this KeypairDetail.
+        r"""Gets the description of this KeypairDetail.
 
         SSH密钥对的描述信息
 
@@ -335,7 +335,7 @@ class KeypairDetail:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this KeypairDetail.
+        r"""Sets the description of this KeypairDetail.
 
         SSH密钥对的描述信息
 
@@ -346,7 +346,7 @@ class KeypairDetail:
 
     @property
     def user_id(self):
-        """Gets the user_id of this KeypairDetail.
+        r"""Gets the user_id of this KeypairDetail.
 
         SSH密钥对所属的用户信息
 
@@ -357,7 +357,7 @@ class KeypairDetail:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this KeypairDetail.
+        r"""Sets the user_id of this KeypairDetail.
 
         SSH密钥对所属的用户信息
 
@@ -368,7 +368,7 @@ class KeypairDetail:
 
     @property
     def create_time(self):
-        """Gets the create_time of this KeypairDetail.
+        r"""Gets the create_time of this KeypairDetail.
 
         SSH密钥对创建的时间，时间戳，即从1970年1月1日至该时间的总秒数
 
@@ -379,7 +379,7 @@ class KeypairDetail:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this KeypairDetail.
+        r"""Sets the create_time of this KeypairDetail.
 
         SSH密钥对创建的时间，时间戳，即从1970年1月1日至该时间的总秒数
 
@@ -390,7 +390,7 @@ class KeypairDetail:
 
     @property
     def delete_time(self):
-        """Gets the delete_time of this KeypairDetail.
+        r"""Gets the delete_time of this KeypairDetail.
 
         SSH密钥对删除的时间，时间戳，即从1970年1月1日至该时间的总秒数
 
@@ -401,7 +401,7 @@ class KeypairDetail:
 
     @delete_time.setter
     def delete_time(self, delete_time):
-        """Sets the delete_time of this KeypairDetail.
+        r"""Sets the delete_time of this KeypairDetail.
 
         SSH密钥对删除的时间，时间戳，即从1970年1月1日至该时间的总秒数
 
@@ -412,7 +412,7 @@ class KeypairDetail:
 
     @property
     def update_time(self):
-        """Gets the update_time of this KeypairDetail.
+        r"""Gets the update_time of this KeypairDetail.
 
         SSH密钥对的更新时间，时间戳，即从1970年1月1日至该时间的总秒数
 
@@ -423,7 +423,7 @@ class KeypairDetail:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this KeypairDetail.
+        r"""Sets the update_time of this KeypairDetail.
 
         SSH密钥对的更新时间，时间戳，即从1970年1月1日至该时间的总秒数
 
@@ -434,7 +434,7 @@ class KeypairDetail:
 
     @property
     def frozen_state(self):
-        """Gets the frozen_state of this KeypairDetail.
+        r"""Gets the frozen_state of this KeypairDetail.
 
         冻结状态 - 0：正常状态 - 1：普通冻结 - 2：公安冻结 - 3：普通冻结及公安冻结 - 4：违规冻结 - 5：普通冻结及违规冻结 - 6：公安冻结及违规冻结 - 7：普通冻结、公安冻结及违规冻结 - 8：未实名认证冻结 - 9：普通冻结及未实名认证冻结 - 10：公安冻结及未实名认证冻结
 
@@ -445,7 +445,7 @@ class KeypairDetail:
 
     @frozen_state.setter
     def frozen_state(self, frozen_state):
-        """Sets the frozen_state of this KeypairDetail.
+        r"""Sets the frozen_state of this KeypairDetail.
 
         冻结状态 - 0：正常状态 - 1：普通冻结 - 2：公安冻结 - 3：普通冻结及公安冻结 - 4：违规冻结 - 5：普通冻结及违规冻结 - 6：公安冻结及违规冻结 - 7：普通冻结、公安冻结及违规冻结 - 8：未实名认证冻结 - 9：普通冻结及未实名认证冻结 - 10：公安冻结及未实名认证冻结
 
@@ -456,7 +456,7 @@ class KeypairDetail:
 
     @property
     def key_id(self):
-        """Gets the key_id of this KeypairDetail.
+        r"""Gets the key_id of this KeypairDetail.
 
         密钥ID。
 
@@ -467,7 +467,7 @@ class KeypairDetail:
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this KeypairDetail.
+        r"""Sets the key_id of this KeypairDetail.
 
         密钥ID。
 
@@ -478,7 +478,7 @@ class KeypairDetail:
 
     @property
     def algorithm(self):
-        """Gets the algorithm of this KeypairDetail.
+        r"""Gets the algorithm of this KeypairDetail.
 
         生成算法。
 
@@ -489,7 +489,7 @@ class KeypairDetail:
 
     @algorithm.setter
     def algorithm(self, algorithm):
-        """Sets the algorithm of this KeypairDetail.
+        r"""Sets the algorithm of this KeypairDetail.
 
         生成算法。
 

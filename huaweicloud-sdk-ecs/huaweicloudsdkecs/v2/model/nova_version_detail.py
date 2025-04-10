@@ -37,7 +37,7 @@ class NovaVersionDetail:
     }
 
     def __init__(self, id=None, links=None, media_types=None, min_version=None, status=None, updated=None, version=None):
-        """NovaVersionDetail
+        r"""NovaVersionDetail
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class NovaVersionDetail:
 
     @property
     def id(self):
-        """Gets the id of this NovaVersionDetail.
+        r"""Gets the id of this NovaVersionDetail.
 
         所讨论的版本的通用名称。仅仅是信息性的，它没有真正的语义。
 
@@ -89,7 +89,7 @@ class NovaVersionDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NovaVersionDetail.
+        r"""Sets the id of this NovaVersionDetail.
 
         所讨论的版本的通用名称。仅仅是信息性的，它没有真正的语义。
 
@@ -100,7 +100,7 @@ class NovaVersionDetail:
 
     @property
     def links(self):
-        """Gets the links of this NovaVersionDetail.
+        r"""Gets the links of this NovaVersionDetail.
 
         链接到资源的问题。有关更多信息，请参见[OpenStack Documentation](http://developer.openstack.org/api-guide/compute/links_and_references.html)。
 
@@ -111,7 +111,7 @@ class NovaVersionDetail:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this NovaVersionDetail.
+        r"""Sets the links of this NovaVersionDetail.
 
         链接到资源的问题。有关更多信息，请参见[OpenStack Documentation](http://developer.openstack.org/api-guide/compute/links_and_references.html)。
 
@@ -122,7 +122,7 @@ class NovaVersionDetail:
 
     @property
     def media_types(self):
-        """Gets the media_types of this NovaVersionDetail.
+        r"""Gets the media_types of this NovaVersionDetail.
 
         媒体类型。
 
@@ -133,7 +133,7 @@ class NovaVersionDetail:
 
     @media_types.setter
     def media_types(self, media_types):
-        """Sets the media_types of this NovaVersionDetail.
+        r"""Sets the media_types of this NovaVersionDetail.
 
         媒体类型。
 
@@ -144,7 +144,7 @@ class NovaVersionDetail:
 
     @property
     def min_version(self):
-        """Gets the min_version of this NovaVersionDetail.
+        r"""Gets the min_version of this NovaVersionDetail.
 
         如果API的这个版本支持微版本，则支持最小的微版本。如果不支持微版本，这将是空字符串。
 
@@ -155,7 +155,7 @@ class NovaVersionDetail:
 
     @min_version.setter
     def min_version(self, min_version):
-        """Sets the min_version of this NovaVersionDetail.
+        r"""Sets the min_version of this NovaVersionDetail.
 
         如果API的这个版本支持微版本，则支持最小的微版本。如果不支持微版本，这将是空字符串。
 
@@ -166,7 +166,7 @@ class NovaVersionDetail:
 
     @property
     def status(self):
-        """Gets the status of this NovaVersionDetail.
+        r"""Gets the status of this NovaVersionDetail.
 
         这个是API版本的状态。  可以是：  - CURRENT这是使用的API的首选版本； - SUPPORTED：这是一个较老的，但仍然支持的API版本； - DEPRECATED：一个被废弃的API版本，该版本将被删除
 
@@ -177,7 +177,7 @@ class NovaVersionDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this NovaVersionDetail.
+        r"""Sets the status of this NovaVersionDetail.
 
         这个是API版本的状态。  可以是：  - CURRENT这是使用的API的首选版本； - SUPPORTED：这是一个较老的，但仍然支持的API版本； - DEPRECATED：一个被废弃的API版本，该版本将被删除
 
@@ -188,7 +188,7 @@ class NovaVersionDetail:
 
     @property
     def updated(self):
-        """Gets the updated of this NovaVersionDetail.
+        r"""Gets the updated of this NovaVersionDetail.
 
         一个有特定值的字符串。API版本为2.0时，值为'2011-01-21T11:33:21Z' ，API版本是2.1时，值为' 2013-07-23T11:33:21Z'。
 
@@ -199,7 +199,7 @@ class NovaVersionDetail:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this NovaVersionDetail.
+        r"""Sets the updated of this NovaVersionDetail.
 
         一个有特定值的字符串。API版本为2.0时，值为'2011-01-21T11:33:21Z' ，API版本是2.1时，值为' 2013-07-23T11:33:21Z'。
 
@@ -210,7 +210,7 @@ class NovaVersionDetail:
 
     @property
     def version(self):
-        """Gets the version of this NovaVersionDetail.
+        r"""Gets the version of this NovaVersionDetail.
 
         如果API的这个版本支持微版本，则支持最大的微版本。如果不支持微版本，这将是空字符串。
 
@@ -221,7 +221,7 @@ class NovaVersionDetail:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this NovaVersionDetail.
+        r"""Sets the version of this NovaVersionDetail.
 
         如果API的这个版本支持微版本，则支持最大的微版本。如果不支持微版本，这将是空字符串。
 

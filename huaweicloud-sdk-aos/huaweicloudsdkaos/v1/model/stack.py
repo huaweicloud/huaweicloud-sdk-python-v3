@@ -37,7 +37,7 @@ class Stack:
     }
 
     def __init__(self, stack_name=None, description=None, stack_id=None, status=None, create_time=None, update_time=None, status_message=None):
-        """Stack
+        r"""Stack
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class Stack:
 
     @property
     def stack_name(self):
-        """Gets the stack_name of this Stack.
+        r"""Gets the stack_name of this Stack.
 
         资源栈的名称。此名字在domain_id+区域+project_id下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
@@ -95,7 +95,7 @@ class Stack:
 
     @stack_name.setter
     def stack_name(self, stack_name):
-        """Sets the stack_name of this Stack.
+        r"""Sets the stack_name of this Stack.
 
         资源栈的名称。此名字在domain_id+区域+project_id下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
@@ -106,7 +106,7 @@ class Stack:
 
     @property
     def description(self):
-        """Gets the description of this Stack.
+        r"""Gets the description of this Stack.
 
         资源栈的描述。可用于客户识别自己的资源栈。
 
@@ -117,7 +117,7 @@ class Stack:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Stack.
+        r"""Sets the description of this Stack.
 
         资源栈的描述。可用于客户识别自己的资源栈。
 
@@ -128,7 +128,7 @@ class Stack:
 
     @property
     def stack_id(self):
-        """Gets the stack_id of this Stack.
+        r"""Gets the stack_id of this Stack.
 
         资源栈（stack）的唯一ID。  此ID由资源编排服务在生成资源栈的时候生成，为UUID。  由于资源栈名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的资源栈，删除，再重新创建一个同名资源栈。  对于团队并行开发，用户可能希望确保，当前我操作的资源栈就是我认为的那个，而不是其他队友删除后创建的同名资源栈。因此，使用ID就可以做到强匹配。  资源编排服务保证每次创建的资源栈所对应的ID都不相同，更新不会影响ID。如果给予的stack_id和当前资源栈的ID不一致，则返回400
 
@@ -139,7 +139,7 @@ class Stack:
 
     @stack_id.setter
     def stack_id(self, stack_id):
-        """Sets the stack_id of this Stack.
+        r"""Sets the stack_id of this Stack.
 
         资源栈（stack）的唯一ID。  此ID由资源编排服务在生成资源栈的时候生成，为UUID。  由于资源栈名仅仅在同一时间下唯一，即用户允许先生成一个叫HelloWorld的资源栈，删除，再重新创建一个同名资源栈。  对于团队并行开发，用户可能希望确保，当前我操作的资源栈就是我认为的那个，而不是其他队友删除后创建的同名资源栈。因此，使用ID就可以做到强匹配。  资源编排服务保证每次创建的资源栈所对应的ID都不相同，更新不会影响ID。如果给予的stack_id和当前资源栈的ID不一致，则返回400
 
@@ -150,7 +150,7 @@ class Stack:
 
     @property
     def status(self):
-        """Gets the status of this Stack.
+        r"""Gets the status of this Stack.
 
         资源栈的状态    * `CREATION_COMPLETE` - 生成空资源栈完成，并没有任何部署    * `DEPLOYMENT_IN_PROGRESS` - 正在部署，请等待    * `DEPLOYMENT_FAILED` - 部署失败。请从status_message获取错误信息汇总，或者调用ListStackEvents获得事件详情    * `DEPLOYMENT_COMPLETE` - 部署完成    * `ROLLBACK_IN_PROGRESS` - 部署失败，正在回滚，请等待    * `ROLLBACK_FAILED` - 回滚失败。请从status_message获取错误信息汇总，或者调用ListStackEvents获得事件详情    * `ROLLBACK_COMPLETE` - 回滚完成    * `DELETION_IN_PROGRESS` - 正在删除，请等待    * `DELETION_FAILED` - 删除失败。请从status_message获取错误信息汇总，或者调用ListStackEvents获得事件详情
 
@@ -161,7 +161,7 @@ class Stack:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Stack.
+        r"""Sets the status of this Stack.
 
         资源栈的状态    * `CREATION_COMPLETE` - 生成空资源栈完成，并没有任何部署    * `DEPLOYMENT_IN_PROGRESS` - 正在部署，请等待    * `DEPLOYMENT_FAILED` - 部署失败。请从status_message获取错误信息汇总，或者调用ListStackEvents获得事件详情    * `DEPLOYMENT_COMPLETE` - 部署完成    * `ROLLBACK_IN_PROGRESS` - 部署失败，正在回滚，请等待    * `ROLLBACK_FAILED` - 回滚失败。请从status_message获取错误信息汇总，或者调用ListStackEvents获得事件详情    * `ROLLBACK_COMPLETE` - 回滚完成    * `DELETION_IN_PROGRESS` - 正在删除，请等待    * `DELETION_FAILED` - 删除失败。请从status_message获取错误信息汇总，或者调用ListStackEvents获得事件详情
 
@@ -172,7 +172,7 @@ class Stack:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Stack.
+        r"""Gets the create_time of this Stack.
 
         资源栈的生成时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z
 
@@ -183,7 +183,7 @@ class Stack:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Stack.
+        r"""Sets the create_time of this Stack.
 
         资源栈的生成时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z
 
@@ -194,7 +194,7 @@ class Stack:
 
     @property
     def update_time(self):
-        """Gets the update_time of this Stack.
+        r"""Gets the update_time of this Stack.
 
         资源栈的更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z
 
@@ -205,7 +205,7 @@ class Stack:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this Stack.
+        r"""Sets the update_time of this Stack.
 
         资源栈的更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z
 
@@ -216,7 +216,7 @@ class Stack:
 
     @property
     def status_message(self):
-        """Gets the status_message of this Stack.
+        r"""Gets the status_message of this Stack.
 
         在失败的时候（资源栈状态以FAILED结尾）会显示简要的错误信息总结以供debug
 
@@ -227,7 +227,7 @@ class Stack:
 
     @status_message.setter
     def status_message(self, status_message):
-        """Sets the status_message of this Stack.
+        r"""Sets the status_message of this Stack.
 
         在失败的时候（资源栈状态以FAILED结尾）会显示简要的错误信息总结以供debug
 

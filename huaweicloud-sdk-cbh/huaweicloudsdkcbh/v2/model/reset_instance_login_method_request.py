@@ -25,7 +25,7 @@ class ResetInstanceLoginMethodRequest:
     }
 
     def __init__(self, body=None):
-        """ResetInstanceLoginMethodRequest
+        r"""ResetInstanceLoginMethodRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ResetInstanceLoginMethodRequest:
 
     @property
     def body(self):
-        """Gets the body of this ResetInstanceLoginMethodRequest.
+        r"""Gets the body of this ResetInstanceLoginMethodRequest.
 
         :return: The body of this ResetInstanceLoginMethodRequest.
         :rtype: :class:`huaweicloudsdkcbh.v2.CommonCbhRequestBody`
@@ -52,7 +52,7 @@ class ResetInstanceLoginMethodRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ResetInstanceLoginMethodRequest.
+        r"""Sets the body of this ResetInstanceLoginMethodRequest.
 
         :param body: The body of this ResetInstanceLoginMethodRequest.
         :type body: :class:`huaweicloudsdkcbh.v2.CommonCbhRequestBody`

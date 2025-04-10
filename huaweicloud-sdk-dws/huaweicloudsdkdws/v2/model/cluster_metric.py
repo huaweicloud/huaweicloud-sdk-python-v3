@@ -35,7 +35,7 @@ class ClusterMetric:
     }
 
     def __init__(self, scope=None, fields=None, metric_name=None, collect_rate=None, collect_range=None, create_time=None):
-        """ClusterMetric
+        r"""ClusterMetric
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ClusterMetric:
 
     @property
     def scope(self):
-        """Gets the scope of this ClusterMetric.
+        r"""Gets the scope of this ClusterMetric.
 
         指标名称。
 
@@ -89,7 +89,7 @@ class ClusterMetric:
 
     @scope.setter
     def scope(self, scope):
-        """Sets the scope of this ClusterMetric.
+        r"""Sets the scope of this ClusterMetric.
 
         指标名称。
 
@@ -100,7 +100,7 @@ class ClusterMetric:
 
     @property
     def fields(self):
-        """Gets the fields of this ClusterMetric.
+        r"""Gets the fields of this ClusterMetric.
 
         指标表相关字段信息。
 
@@ -111,7 +111,7 @@ class ClusterMetric:
 
     @fields.setter
     def fields(self, fields):
-        """Sets the fields of this ClusterMetric.
+        r"""Sets the fields of this ClusterMetric.
 
         指标表相关字段信息。
 
@@ -122,7 +122,7 @@ class ClusterMetric:
 
     @property
     def metric_name(self):
-        """Gets the metric_name of this ClusterMetric.
+        r"""Gets the metric_name of this ClusterMetric.
 
         作用域。
 
@@ -133,7 +133,7 @@ class ClusterMetric:
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        """Sets the metric_name of this ClusterMetric.
+        r"""Sets the metric_name of this ClusterMetric.
 
         作用域。
 
@@ -144,7 +144,7 @@ class ClusterMetric:
 
     @property
     def collect_rate(self):
-        """Gets the collect_rate of this ClusterMetric.
+        r"""Gets the collect_rate of this ClusterMetric.
 
         采集速率。
 
@@ -155,7 +155,7 @@ class ClusterMetric:
 
     @collect_rate.setter
     def collect_rate(self, collect_rate):
-        """Sets the collect_rate of this ClusterMetric.
+        r"""Sets the collect_rate of this ClusterMetric.
 
         采集速率。
 
@@ -166,7 +166,7 @@ class ClusterMetric:
 
     @property
     def collect_range(self):
-        """Gets the collect_range of this ClusterMetric.
+        r"""Gets the collect_range of this ClusterMetric.
 
         采集时间范围。
 
@@ -177,7 +177,7 @@ class ClusterMetric:
 
     @collect_range.setter
     def collect_range(self, collect_range):
-        """Sets the collect_range of this ClusterMetric.
+        r"""Sets the collect_range of this ClusterMetric.
 
         采集时间范围。
 
@@ -188,7 +188,7 @@ class ClusterMetric:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ClusterMetric.
+        r"""Gets the create_time of this ClusterMetric.
 
         创建时间。
 
@@ -199,7 +199,7 @@ class ClusterMetric:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ClusterMetric.
+        r"""Sets the create_time of this ClusterMetric.
 
         创建时间。
 

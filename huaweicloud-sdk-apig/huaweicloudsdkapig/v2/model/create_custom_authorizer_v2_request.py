@@ -27,7 +27,7 @@ class CreateCustomAuthorizerV2Request:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateCustomAuthorizerV2Request
+        r"""CreateCustomAuthorizerV2Request
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateCustomAuthorizerV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateCustomAuthorizerV2Request.
+        r"""Gets the instance_id of this CreateCustomAuthorizerV2Request.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -60,7 +60,7 @@ class CreateCustomAuthorizerV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateCustomAuthorizerV2Request.
+        r"""Sets the instance_id of this CreateCustomAuthorizerV2Request.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -71,7 +71,7 @@ class CreateCustomAuthorizerV2Request:
 
     @property
     def body(self):
-        """Gets the body of this CreateCustomAuthorizerV2Request.
+        r"""Gets the body of this CreateCustomAuthorizerV2Request.
 
         :return: The body of this CreateCustomAuthorizerV2Request.
         :rtype: :class:`huaweicloudsdkapig.v2.AuthorizerCreate`
@@ -80,7 +80,7 @@ class CreateCustomAuthorizerV2Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateCustomAuthorizerV2Request.
+        r"""Sets the body of this CreateCustomAuthorizerV2Request.
 
         :param body: The body of this CreateCustomAuthorizerV2Request.
         :type body: :class:`huaweicloudsdkapig.v2.AuthorizerCreate`

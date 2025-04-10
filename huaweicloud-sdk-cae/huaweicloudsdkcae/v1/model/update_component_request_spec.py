@@ -33,7 +33,7 @@ class UpdateComponentRequestSpec:
     }
 
     def __init__(self, runtime=None, source=None, build=None, resource_limit=None, replica=None):
-        """UpdateComponentRequestSpec
+        r"""UpdateComponentRequestSpec
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class UpdateComponentRequestSpec:
 
     @property
     def runtime(self):
-        """Gets the runtime of this UpdateComponentRequestSpec.
+        r"""Gets the runtime of this UpdateComponentRequestSpec.
 
         语言/运行时。
 
@@ -81,7 +81,7 @@ class UpdateComponentRequestSpec:
 
     @runtime.setter
     def runtime(self, runtime):
-        """Sets the runtime of this UpdateComponentRequestSpec.
+        r"""Sets the runtime of this UpdateComponentRequestSpec.
 
         语言/运行时。
 
@@ -92,7 +92,7 @@ class UpdateComponentRequestSpec:
 
     @property
     def source(self):
-        """Gets the source of this UpdateComponentRequestSpec.
+        r"""Gets the source of this UpdateComponentRequestSpec.
 
         :return: The source of this UpdateComponentRequestSpec.
         :rtype: :class:`huaweicloudsdkcae.v1.Source`
@@ -101,7 +101,7 @@ class UpdateComponentRequestSpec:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this UpdateComponentRequestSpec.
+        r"""Sets the source of this UpdateComponentRequestSpec.
 
         :param source: The source of this UpdateComponentRequestSpec.
         :type source: :class:`huaweicloudsdkcae.v1.Source`
@@ -110,7 +110,7 @@ class UpdateComponentRequestSpec:
 
     @property
     def build(self):
-        """Gets the build of this UpdateComponentRequestSpec.
+        r"""Gets the build of this UpdateComponentRequestSpec.
 
         :return: The build of this UpdateComponentRequestSpec.
         :rtype: :class:`huaweicloudsdkcae.v1.Build`
@@ -119,7 +119,7 @@ class UpdateComponentRequestSpec:
 
     @build.setter
     def build(self, build):
-        """Sets the build of this UpdateComponentRequestSpec.
+        r"""Sets the build of this UpdateComponentRequestSpec.
 
         :param build: The build of this UpdateComponentRequestSpec.
         :type build: :class:`huaweicloudsdkcae.v1.Build`
@@ -128,7 +128,7 @@ class UpdateComponentRequestSpec:
 
     @property
     def resource_limit(self):
-        """Gets the resource_limit of this UpdateComponentRequestSpec.
+        r"""Gets the resource_limit of this UpdateComponentRequestSpec.
 
         :return: The resource_limit of this UpdateComponentRequestSpec.
         :rtype: :class:`huaweicloudsdkcae.v1.ResourceLimit`
@@ -137,7 +137,7 @@ class UpdateComponentRequestSpec:
 
     @resource_limit.setter
     def resource_limit(self, resource_limit):
-        """Sets the resource_limit of this UpdateComponentRequestSpec.
+        r"""Sets the resource_limit of this UpdateComponentRequestSpec.
 
         :param resource_limit: The resource_limit of this UpdateComponentRequestSpec.
         :type resource_limit: :class:`huaweicloudsdkcae.v1.ResourceLimit`
@@ -146,7 +146,7 @@ class UpdateComponentRequestSpec:
 
     @property
     def replica(self):
-        """Gets the replica of this UpdateComponentRequestSpec.
+        r"""Gets the replica of this UpdateComponentRequestSpec.
 
         实例个数。
 
@@ -157,7 +157,7 @@ class UpdateComponentRequestSpec:
 
     @replica.setter
     def replica(self, replica):
-        """Sets the replica of this UpdateComponentRequestSpec.
+        r"""Sets the replica of this UpdateComponentRequestSpec.
 
         实例个数。
 

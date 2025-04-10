@@ -25,7 +25,7 @@ class UpdateDrugJobReq:
     }
 
     def __init__(self, labels=None):
-        """UpdateDrugJobReq
+        r"""UpdateDrugJobReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateDrugJobReq:
 
     @property
     def labels(self):
-        """Gets the labels of this UpdateDrugJobReq.
+        r"""Gets the labels of this UpdateDrugJobReq.
 
         标签，取值范围[0,5]，单个标签最大长度32字符，支持中文、字母、数字、空格、下划线和中划线，且不能以空格开头或者尾
 
@@ -54,7 +54,7 @@ class UpdateDrugJobReq:
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this UpdateDrugJobReq.
+        r"""Sets the labels of this UpdateDrugJobReq.
 
         标签，取值范围[0,5]，单个标签最大长度32字符，支持中文、字母、数字、空格、下划线和中划线，且不能以空格开头或者尾
 

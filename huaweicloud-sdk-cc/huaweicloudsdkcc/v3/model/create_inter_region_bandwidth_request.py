@@ -25,7 +25,7 @@ class CreateInterRegionBandwidthRequest:
     }
 
     def __init__(self, body=None):
-        """CreateInterRegionBandwidthRequest
+        r"""CreateInterRegionBandwidthRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateInterRegionBandwidthRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateInterRegionBandwidthRequest.
+        r"""Gets the body of this CreateInterRegionBandwidthRequest.
 
         :return: The body of this CreateInterRegionBandwidthRequest.
         :rtype: :class:`huaweicloudsdkcc.v3.CreateInterRegionBandwidthRequestBody`
@@ -52,7 +52,7 @@ class CreateInterRegionBandwidthRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateInterRegionBandwidthRequest.
+        r"""Sets the body of this CreateInterRegionBandwidthRequest.
 
         :param body: The body of this CreateInterRegionBandwidthRequest.
         :type body: :class:`huaweicloudsdkcc.v3.CreateInterRegionBandwidthRequestBody`

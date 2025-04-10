@@ -36,7 +36,7 @@ class SearchBaselineResponse(SdkResponse):
     }
 
     def __init__(self, code=None, total=None, size=None, page=None, success=None, data=None):
-        """SearchBaselineResponse
+        r"""SearchBaselineResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class SearchBaselineResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this SearchBaselineResponse.
+        r"""Gets the code of this SearchBaselineResponse.
 
         错误码
 
@@ -90,7 +90,7 @@ class SearchBaselineResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this SearchBaselineResponse.
+        r"""Sets the code of this SearchBaselineResponse.
 
         错误码
 
@@ -101,7 +101,7 @@ class SearchBaselineResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this SearchBaselineResponse.
+        r"""Gets the total of this SearchBaselineResponse.
 
         查询结果总数
 
@@ -112,7 +112,7 @@ class SearchBaselineResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this SearchBaselineResponse.
+        r"""Sets the total of this SearchBaselineResponse.
 
         查询结果总数
 
@@ -123,7 +123,7 @@ class SearchBaselineResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this SearchBaselineResponse.
+        r"""Gets the size of this SearchBaselineResponse.
 
         分页大小
 
@@ -134,7 +134,7 @@ class SearchBaselineResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this SearchBaselineResponse.
+        r"""Sets the size of this SearchBaselineResponse.
 
         分页大小
 
@@ -145,7 +145,7 @@ class SearchBaselineResponse(SdkResponse):
 
     @property
     def page(self):
-        """Gets the page of this SearchBaselineResponse.
+        r"""Gets the page of this SearchBaselineResponse.
 
         偏移量
 
@@ -156,7 +156,7 @@ class SearchBaselineResponse(SdkResponse):
 
     @page.setter
     def page(self, page):
-        """Sets the page of this SearchBaselineResponse.
+        r"""Sets the page of this SearchBaselineResponse.
 
         偏移量
 
@@ -167,7 +167,7 @@ class SearchBaselineResponse(SdkResponse):
 
     @property
     def success(self):
-        """Gets the success of this SearchBaselineResponse.
+        r"""Gets the success of this SearchBaselineResponse.
 
         是否成功
 
@@ -178,7 +178,7 @@ class SearchBaselineResponse(SdkResponse):
 
     @success.setter
     def success(self, success):
-        """Sets the success of this SearchBaselineResponse.
+        r"""Sets the success of this SearchBaselineResponse.
 
         是否成功
 
@@ -189,7 +189,7 @@ class SearchBaselineResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this SearchBaselineResponse.
+        r"""Gets the data of this SearchBaselineResponse.
 
         查询结果列表
 
@@ -200,7 +200,7 @@ class SearchBaselineResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this SearchBaselineResponse.
+        r"""Sets the data of this SearchBaselineResponse.
 
         查询结果列表
 

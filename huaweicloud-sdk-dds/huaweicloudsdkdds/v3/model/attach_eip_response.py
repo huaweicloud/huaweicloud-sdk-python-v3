@@ -34,7 +34,7 @@ class AttachEipResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, node_id=None, node_name=None, public_ip_id=None, public_ip=None):
-        """AttachEipResponse
+        r"""AttachEipResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class AttachEipResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this AttachEipResponse.
+        r"""Gets the job_id of this AttachEipResponse.
 
         任务ID。
 
@@ -83,7 +83,7 @@ class AttachEipResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this AttachEipResponse.
+        r"""Sets the job_id of this AttachEipResponse.
 
         任务ID。
 
@@ -94,7 +94,7 @@ class AttachEipResponse(SdkResponse):
 
     @property
     def node_id(self):
-        """Gets the node_id of this AttachEipResponse.
+        r"""Gets the node_id of this AttachEipResponse.
 
         节点ID。
 
@@ -105,7 +105,7 @@ class AttachEipResponse(SdkResponse):
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this AttachEipResponse.
+        r"""Sets the node_id of this AttachEipResponse.
 
         节点ID。
 
@@ -116,7 +116,7 @@ class AttachEipResponse(SdkResponse):
 
     @property
     def node_name(self):
-        """Gets the node_name of this AttachEipResponse.
+        r"""Gets the node_name of this AttachEipResponse.
 
         节点名称。
 
@@ -127,7 +127,7 @@ class AttachEipResponse(SdkResponse):
 
     @node_name.setter
     def node_name(self, node_name):
-        """Sets the node_name of this AttachEipResponse.
+        r"""Sets the node_name of this AttachEipResponse.
 
         节点名称。
 
@@ -138,7 +138,7 @@ class AttachEipResponse(SdkResponse):
 
     @property
     def public_ip_id(self):
-        """Gets the public_ip_id of this AttachEipResponse.
+        r"""Gets the public_ip_id of this AttachEipResponse.
 
         公网IP的ID。
 
@@ -149,7 +149,7 @@ class AttachEipResponse(SdkResponse):
 
     @public_ip_id.setter
     def public_ip_id(self, public_ip_id):
-        """Sets the public_ip_id of this AttachEipResponse.
+        r"""Sets the public_ip_id of this AttachEipResponse.
 
         公网IP的ID。
 
@@ -160,7 +160,7 @@ class AttachEipResponse(SdkResponse):
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this AttachEipResponse.
+        r"""Gets the public_ip of this AttachEipResponse.
 
         公网IP。
 
@@ -171,7 +171,7 @@ class AttachEipResponse(SdkResponse):
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this AttachEipResponse.
+        r"""Sets the public_ip of this AttachEipResponse.
 
         公网IP。
 

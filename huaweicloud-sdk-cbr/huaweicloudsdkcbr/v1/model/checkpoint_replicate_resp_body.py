@@ -39,7 +39,7 @@ class CheckpointReplicateRespBody:
     }
 
     def __init__(self, backups=None, destination_project_id=None, destination_region=None, destination_vault_id=None, project_id=None, provider_id=None, source_region=None, vault_id=None):
-        """CheckpointReplicateRespBody
+        r"""CheckpointReplicateRespBody
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class CheckpointReplicateRespBody:
 
     @property
     def backups(self):
-        """Gets the backups of this CheckpointReplicateRespBody.
+        r"""Gets the backups of this CheckpointReplicateRespBody.
 
         待复制的备份列表
 
@@ -95,7 +95,7 @@ class CheckpointReplicateRespBody:
 
     @backups.setter
     def backups(self, backups):
-        """Sets the backups of this CheckpointReplicateRespBody.
+        r"""Sets the backups of this CheckpointReplicateRespBody.
 
         待复制的备份列表
 
@@ -106,7 +106,7 @@ class CheckpointReplicateRespBody:
 
     @property
     def destination_project_id(self):
-        """Gets the destination_project_id of this CheckpointReplicateRespBody.
+        r"""Gets the destination_project_id of this CheckpointReplicateRespBody.
 
         复制的目标项目ID
 
@@ -117,7 +117,7 @@ class CheckpointReplicateRespBody:
 
     @destination_project_id.setter
     def destination_project_id(self, destination_project_id):
-        """Sets the destination_project_id of this CheckpointReplicateRespBody.
+        r"""Sets the destination_project_id of this CheckpointReplicateRespBody.
 
         复制的目标项目ID
 
@@ -128,7 +128,7 @@ class CheckpointReplicateRespBody:
 
     @property
     def destination_region(self):
-        """Gets the destination_region of this CheckpointReplicateRespBody.
+        r"""Gets the destination_region of this CheckpointReplicateRespBody.
 
         复制的目标区域
 
@@ -139,7 +139,7 @@ class CheckpointReplicateRespBody:
 
     @destination_region.setter
     def destination_region(self, destination_region):
-        """Sets the destination_region of this CheckpointReplicateRespBody.
+        r"""Sets the destination_region of this CheckpointReplicateRespBody.
 
         复制的目标区域
 
@@ -150,7 +150,7 @@ class CheckpointReplicateRespBody:
 
     @property
     def destination_vault_id(self):
-        """Gets the destination_vault_id of this CheckpointReplicateRespBody.
+        r"""Gets the destination_vault_id of this CheckpointReplicateRespBody.
 
         目标区域存储库ID
 
@@ -161,7 +161,7 @@ class CheckpointReplicateRespBody:
 
     @destination_vault_id.setter
     def destination_vault_id(self, destination_vault_id):
-        """Sets the destination_vault_id of this CheckpointReplicateRespBody.
+        r"""Sets the destination_vault_id of this CheckpointReplicateRespBody.
 
         目标区域存储库ID
 
@@ -172,7 +172,7 @@ class CheckpointReplicateRespBody:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CheckpointReplicateRespBody.
+        r"""Gets the project_id of this CheckpointReplicateRespBody.
 
         执行复制的项目ID
 
@@ -183,7 +183,7 @@ class CheckpointReplicateRespBody:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CheckpointReplicateRespBody.
+        r"""Sets the project_id of this CheckpointReplicateRespBody.
 
         执行复制的项目ID
 
@@ -194,7 +194,7 @@ class CheckpointReplicateRespBody:
 
     @property
     def provider_id(self):
-        """Gets the provider_id of this CheckpointReplicateRespBody.
+        r"""Gets the provider_id of this CheckpointReplicateRespBody.
 
         备份提供商ID
 
@@ -205,7 +205,7 @@ class CheckpointReplicateRespBody:
 
     @provider_id.setter
     def provider_id(self, provider_id):
-        """Sets the provider_id of this CheckpointReplicateRespBody.
+        r"""Sets the provider_id of this CheckpointReplicateRespBody.
 
         备份提供商ID
 
@@ -216,7 +216,7 @@ class CheckpointReplicateRespBody:
 
     @property
     def source_region(self):
-        """Gets the source_region of this CheckpointReplicateRespBody.
+        r"""Gets the source_region of this CheckpointReplicateRespBody.
 
         复制的源区域
 
@@ -227,7 +227,7 @@ class CheckpointReplicateRespBody:
 
     @source_region.setter
     def source_region(self, source_region):
-        """Sets the source_region of this CheckpointReplicateRespBody.
+        r"""Sets the source_region of this CheckpointReplicateRespBody.
 
         复制的源区域
 
@@ -238,7 +238,7 @@ class CheckpointReplicateRespBody:
 
     @property
     def vault_id(self):
-        """Gets the vault_id of this CheckpointReplicateRespBody.
+        r"""Gets the vault_id of this CheckpointReplicateRespBody.
 
         存储库ID
 
@@ -249,7 +249,7 @@ class CheckpointReplicateRespBody:
 
     @vault_id.setter
     def vault_id(self, vault_id):
-        """Sets the vault_id of this CheckpointReplicateRespBody.
+        r"""Sets the vault_id of this CheckpointReplicateRespBody.
 
         存储库ID
 

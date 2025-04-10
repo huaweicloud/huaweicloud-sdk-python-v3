@@ -27,7 +27,7 @@ class ShowTopicStatusRespBrokers:
     }
 
     def __init__(self, queues=None, broker_name=None):
-        """ShowTopicStatusRespBrokers
+        r"""ShowTopicStatusRespBrokers
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ShowTopicStatusRespBrokers:
 
     @property
     def queues(self):
-        """Gets the queues of this ShowTopicStatusRespBrokers.
+        r"""Gets the queues of this ShowTopicStatusRespBrokers.
 
         队列列表。
 
@@ -61,7 +61,7 @@ class ShowTopicStatusRespBrokers:
 
     @queues.setter
     def queues(self, queues):
-        """Sets the queues of this ShowTopicStatusRespBrokers.
+        r"""Sets the queues of this ShowTopicStatusRespBrokers.
 
         队列列表。
 
@@ -72,7 +72,7 @@ class ShowTopicStatusRespBrokers:
 
     @property
     def broker_name(self):
-        """Gets the broker_name of this ShowTopicStatusRespBrokers.
+        r"""Gets the broker_name of this ShowTopicStatusRespBrokers.
 
         节点名称。
 
@@ -83,7 +83,7 @@ class ShowTopicStatusRespBrokers:
 
     @broker_name.setter
     def broker_name(self, broker_name):
-        """Sets the broker_name of this ShowTopicStatusRespBrokers.
+        r"""Sets the broker_name of this ShowTopicStatusRespBrokers.
 
         节点名称。
 

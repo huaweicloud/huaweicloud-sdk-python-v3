@@ -28,7 +28,7 @@ class CreateTemplateViewHistoriesResponse(SdkResponse):
     }
 
     def __init__(self, templates=None, count=None):
-        """CreateTemplateViewHistoriesResponse
+        r"""CreateTemplateViewHistoriesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateTemplateViewHistoriesResponse(SdkResponse):
 
     @property
     def templates(self):
-        """Gets the templates of this CreateTemplateViewHistoriesResponse.
+        r"""Gets the templates of this CreateTemplateViewHistoriesResponse.
 
         我浏览的模板。
 
@@ -62,7 +62,7 @@ class CreateTemplateViewHistoriesResponse(SdkResponse):
 
     @templates.setter
     def templates(self, templates):
-        """Sets the templates of this CreateTemplateViewHistoriesResponse.
+        r"""Sets the templates of this CreateTemplateViewHistoriesResponse.
 
         我浏览的模板。
 
@@ -73,7 +73,7 @@ class CreateTemplateViewHistoriesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this CreateTemplateViewHistoriesResponse.
+        r"""Gets the count of this CreateTemplateViewHistoriesResponse.
 
         我浏览的模板数量。
 
@@ -84,7 +84,7 @@ class CreateTemplateViewHistoriesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this CreateTemplateViewHistoriesResponse.
+        r"""Sets the count of this CreateTemplateViewHistoriesResponse.
 
         我浏览的模板数量。
 

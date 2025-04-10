@@ -39,7 +39,7 @@ class CreateNatGatewayOption:
     }
 
     def __init__(self, name=None, router_id=None, internal_network_id=None, description=None, spec=None, enterprise_project_id=None, session_conf=None, ngport_ip_address=None):
-        """CreateNatGatewayOption
+        r"""CreateNatGatewayOption
 
         The model defined in huaweicloud sdk
 
@@ -88,7 +88,7 @@ class CreateNatGatewayOption:
 
     @property
     def name(self):
-        """Gets the name of this CreateNatGatewayOption.
+        r"""Gets the name of this CreateNatGatewayOption.
 
         公网NAT网关实例的名字，长度限制为64。 公网NAT网关实例的名字仅支持数字、字母、_（下划线）、-（中划线）、中文。 
 
@@ -99,7 +99,7 @@ class CreateNatGatewayOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateNatGatewayOption.
+        r"""Sets the name of this CreateNatGatewayOption.
 
         公网NAT网关实例的名字，长度限制为64。 公网NAT网关实例的名字仅支持数字、字母、_（下划线）、-（中划线）、中文。 
 
@@ -110,7 +110,7 @@ class CreateNatGatewayOption:
 
     @property
     def router_id(self):
-        """Gets the router_id of this CreateNatGatewayOption.
+        r"""Gets the router_id of this CreateNatGatewayOption.
 
         VPC的id。
 
@@ -121,7 +121,7 @@ class CreateNatGatewayOption:
 
     @router_id.setter
     def router_id(self, router_id):
-        """Sets the router_id of this CreateNatGatewayOption.
+        r"""Sets the router_id of this CreateNatGatewayOption.
 
         VPC的id。
 
@@ -132,7 +132,7 @@ class CreateNatGatewayOption:
 
     @property
     def internal_network_id(self):
-        """Gets the internal_network_id of this CreateNatGatewayOption.
+        r"""Gets the internal_network_id of this CreateNatGatewayOption.
 
         公网NAT网关下行口（DVR的下一跳）所属的network id。
 
@@ -143,7 +143,7 @@ class CreateNatGatewayOption:
 
     @internal_network_id.setter
     def internal_network_id(self, internal_network_id):
-        """Sets the internal_network_id of this CreateNatGatewayOption.
+        r"""Sets the internal_network_id of this CreateNatGatewayOption.
 
         公网NAT网关下行口（DVR的下一跳）所属的network id。
 
@@ -154,7 +154,7 @@ class CreateNatGatewayOption:
 
     @property
     def description(self):
-        """Gets the description of this CreateNatGatewayOption.
+        r"""Gets the description of this CreateNatGatewayOption.
 
         公网NAT网关实例的描述，长度范围小于等于255个字符，不能包含“<”和“>”。
 
@@ -165,7 +165,7 @@ class CreateNatGatewayOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateNatGatewayOption.
+        r"""Sets the description of this CreateNatGatewayOption.
 
         公网NAT网关实例的描述，长度范围小于等于255个字符，不能包含“<”和“>”。
 
@@ -176,7 +176,7 @@ class CreateNatGatewayOption:
 
     @property
     def spec(self):
-        """Gets the spec of this CreateNatGatewayOption.
+        r"""Gets the spec of this CreateNatGatewayOption.
 
         公网NAT网关的规格。 取值为： “1”：小型，SNAT最大连接数10000 “2”：中型，SNAT最大连接数50000 “3”：大型，SNAT最大连接数200000 “4”：超大型，SNAT最大连接数1000000 
 
@@ -187,7 +187,7 @@ class CreateNatGatewayOption:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this CreateNatGatewayOption.
+        r"""Sets the spec of this CreateNatGatewayOption.
 
         公网NAT网关的规格。 取值为： “1”：小型，SNAT最大连接数10000 “2”：中型，SNAT最大连接数50000 “3”：大型，SNAT最大连接数200000 “4”：超大型，SNAT最大连接数1000000 
 
@@ -198,7 +198,7 @@ class CreateNatGatewayOption:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateNatGatewayOption.
+        r"""Gets the enterprise_project_id of this CreateNatGatewayOption.
 
         企业项目ID 创建公网NAT网关实例时，关联的企业项目ID。 关于企业项目ID的获取及企业项目特性的详细信息，请参考《企业管理用户指南》。
 
@@ -209,7 +209,7 @@ class CreateNatGatewayOption:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateNatGatewayOption.
+        r"""Sets the enterprise_project_id of this CreateNatGatewayOption.
 
         企业项目ID 创建公网NAT网关实例时，关联的企业项目ID。 关于企业项目ID的获取及企业项目特性的详细信息，请参考《企业管理用户指南》。
 
@@ -220,7 +220,7 @@ class CreateNatGatewayOption:
 
     @property
     def session_conf(self):
-        """Gets the session_conf of this CreateNatGatewayOption.
+        r"""Gets the session_conf of this CreateNatGatewayOption.
 
         :return: The session_conf of this CreateNatGatewayOption.
         :rtype: :class:`huaweicloudsdknat.v2.SessionConfiguration`
@@ -229,7 +229,7 @@ class CreateNatGatewayOption:
 
     @session_conf.setter
     def session_conf(self, session_conf):
-        """Sets the session_conf of this CreateNatGatewayOption.
+        r"""Sets the session_conf of this CreateNatGatewayOption.
 
         :param session_conf: The session_conf of this CreateNatGatewayOption.
         :type session_conf: :class:`huaweicloudsdknat.v2.SessionConfiguration`
@@ -238,7 +238,7 @@ class CreateNatGatewayOption:
 
     @property
     def ngport_ip_address(self):
-        """Gets the ngport_ip_address of this CreateNatGatewayOption.
+        r"""Gets the ngport_ip_address of this CreateNatGatewayOption.
 
         公网NAT网关私有IP地址，由VPC中子网分配。
 
@@ -249,7 +249,7 @@ class CreateNatGatewayOption:
 
     @ngport_ip_address.setter
     def ngport_ip_address(self, ngport_ip_address):
-        """Sets the ngport_ip_address of this CreateNatGatewayOption.
+        r"""Sets the ngport_ip_address of this CreateNatGatewayOption.
 
         公网NAT网关私有IP地址，由VPC中子网分配。
 

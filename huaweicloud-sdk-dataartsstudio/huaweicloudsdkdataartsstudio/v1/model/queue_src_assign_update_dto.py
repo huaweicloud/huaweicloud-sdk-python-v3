@@ -27,7 +27,7 @@ class QueueSrcAssignUpdateDTO:
     }
 
     def __init__(self, queue_attr=None, description=None):
-        """QueueSrcAssignUpdateDTO
+        r"""QueueSrcAssignUpdateDTO
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class QueueSrcAssignUpdateDTO:
 
     @property
     def queue_attr(self):
-        """Gets the queue_attr of this QueueSrcAssignUpdateDTO.
+        r"""Gets the queue_attr of this QueueSrcAssignUpdateDTO.
 
         队列属性(0:默认,1:实时队列,2:离线队列), 当前只有yarn队列涉及。
 
@@ -61,7 +61,7 @@ class QueueSrcAssignUpdateDTO:
 
     @queue_attr.setter
     def queue_attr(self, queue_attr):
-        """Sets the queue_attr of this QueueSrcAssignUpdateDTO.
+        r"""Sets the queue_attr of this QueueSrcAssignUpdateDTO.
 
         队列属性(0:默认,1:实时队列,2:离线队列), 当前只有yarn队列涉及。
 
@@ -72,7 +72,7 @@ class QueueSrcAssignUpdateDTO:
 
     @property
     def description(self):
-        """Gets the description of this QueueSrcAssignUpdateDTO.
+        r"""Gets the description of this QueueSrcAssignUpdateDTO.
 
         当前空间分配资源附加的描述信息。
 
@@ -83,7 +83,7 @@ class QueueSrcAssignUpdateDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this QueueSrcAssignUpdateDTO.
+        r"""Sets the description of this QueueSrcAssignUpdateDTO.
 
         当前空间分配资源附加的描述信息。
 

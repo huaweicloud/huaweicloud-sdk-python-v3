@@ -29,7 +29,7 @@ class ShowUnblockRecordRequest:
     }
 
     def __init__(self, domain_id=None, start_time=None, end_time=None):
-        """ShowUnblockRecordRequest
+        r"""ShowUnblockRecordRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ShowUnblockRecordRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ShowUnblockRecordRequest.
+        r"""Gets the domain_id of this ShowUnblockRecordRequest.
 
         租户id
 
@@ -65,7 +65,7 @@ class ShowUnblockRecordRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ShowUnblockRecordRequest.
+        r"""Sets the domain_id of this ShowUnblockRecordRequest.
 
         租户id
 
@@ -76,7 +76,7 @@ class ShowUnblockRecordRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowUnblockRecordRequest.
+        r"""Gets the start_time of this ShowUnblockRecordRequest.
 
         开始时间
 
@@ -87,7 +87,7 @@ class ShowUnblockRecordRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowUnblockRecordRequest.
+        r"""Sets the start_time of this ShowUnblockRecordRequest.
 
         开始时间
 
@@ -98,7 +98,7 @@ class ShowUnblockRecordRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowUnblockRecordRequest.
+        r"""Gets the end_time of this ShowUnblockRecordRequest.
 
         结束时间
 
@@ -109,7 +109,7 @@ class ShowUnblockRecordRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowUnblockRecordRequest.
+        r"""Sets the end_time of this ShowUnblockRecordRequest.
 
         结束时间
 

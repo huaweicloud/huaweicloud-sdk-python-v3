@@ -28,7 +28,7 @@ class KeystoneCreateScopedTokenResponse(SdkResponse):
     }
 
     def __init__(self, token=None, x_subject_token=None):
-        """KeystoneCreateScopedTokenResponse
+        r"""KeystoneCreateScopedTokenResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class KeystoneCreateScopedTokenResponse(SdkResponse):
 
     @property
     def token(self):
-        """Gets the token of this KeystoneCreateScopedTokenResponse.
+        r"""Gets the token of this KeystoneCreateScopedTokenResponse.
 
         :return: The token of this KeystoneCreateScopedTokenResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.ScopeTokenResult`
@@ -60,7 +60,7 @@ class KeystoneCreateScopedTokenResponse(SdkResponse):
 
     @token.setter
     def token(self, token):
-        """Sets the token of this KeystoneCreateScopedTokenResponse.
+        r"""Sets the token of this KeystoneCreateScopedTokenResponse.
 
         :param token: The token of this KeystoneCreateScopedTokenResponse.
         :type token: :class:`huaweicloudsdkiam.v3.ScopeTokenResult`
@@ -69,7 +69,7 @@ class KeystoneCreateScopedTokenResponse(SdkResponse):
 
     @property
     def x_subject_token(self):
-        """Gets the x_subject_token of this KeystoneCreateScopedTokenResponse.
+        r"""Gets the x_subject_token of this KeystoneCreateScopedTokenResponse.
 
         :return: The x_subject_token of this KeystoneCreateScopedTokenResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class KeystoneCreateScopedTokenResponse(SdkResponse):
 
     @x_subject_token.setter
     def x_subject_token(self, x_subject_token):
-        """Sets the x_subject_token of this KeystoneCreateScopedTokenResponse.
+        r"""Sets the x_subject_token of this KeystoneCreateScopedTokenResponse.
 
         :param x_subject_token: The x_subject_token of this KeystoneCreateScopedTokenResponse.
         :type x_subject_token: str

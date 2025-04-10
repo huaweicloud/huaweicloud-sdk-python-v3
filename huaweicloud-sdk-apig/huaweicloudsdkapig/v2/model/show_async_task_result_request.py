@@ -27,7 +27,7 @@ class ShowAsyncTaskResultRequest:
     }
 
     def __init__(self, instance_id=None, task_id=None):
-        """ShowAsyncTaskResultRequest
+        r"""ShowAsyncTaskResultRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowAsyncTaskResultRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowAsyncTaskResultRequest.
+        r"""Gets the instance_id of this ShowAsyncTaskResultRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -59,7 +59,7 @@ class ShowAsyncTaskResultRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowAsyncTaskResultRequest.
+        r"""Sets the instance_id of this ShowAsyncTaskResultRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -70,7 +70,7 @@ class ShowAsyncTaskResultRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowAsyncTaskResultRequest.
+        r"""Gets the task_id of this ShowAsyncTaskResultRequest.
 
         异步任务ID
 
@@ -81,7 +81,7 @@ class ShowAsyncTaskResultRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowAsyncTaskResultRequest.
+        r"""Sets the task_id of this ShowAsyncTaskResultRequest.
 
         异步任务ID
 

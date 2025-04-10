@@ -29,7 +29,7 @@ class JobParam:
     }
 
     def __init__(self, name=None, value=None, param_type=None):
-        """JobParam
+        r"""JobParam
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class JobParam:
 
     @property
     def name(self):
-        """Gets the name of this JobParam.
+        r"""Gets the name of this JobParam.
 
         :return: The name of this JobParam.
         :rtype: str
@@ -66,7 +66,7 @@ class JobParam:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this JobParam.
+        r"""Sets the name of this JobParam.
 
         :param name: The name of this JobParam.
         :type name: str
@@ -75,7 +75,7 @@ class JobParam:
 
     @property
     def value(self):
-        """Gets the value of this JobParam.
+        r"""Gets the value of this JobParam.
 
         :return: The value of this JobParam.
         :rtype: str
@@ -84,7 +84,7 @@ class JobParam:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this JobParam.
+        r"""Sets the value of this JobParam.
 
         :param value: The value of this JobParam.
         :type value: str
@@ -93,7 +93,7 @@ class JobParam:
 
     @property
     def param_type(self):
-        """Gets the param_type of this JobParam.
+        r"""Gets the param_type of this JobParam.
 
         :return: The param_type of this JobParam.
         :rtype: str
@@ -102,7 +102,7 @@ class JobParam:
 
     @param_type.setter
     def param_type(self, param_type):
-        """Sets the param_type of this JobParam.
+        r"""Sets the param_type of this JobParam.
 
         :param param_type: The param_type of this JobParam.
         :type param_type: str

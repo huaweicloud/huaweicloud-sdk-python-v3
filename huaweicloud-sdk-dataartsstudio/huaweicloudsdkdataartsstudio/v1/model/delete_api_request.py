@@ -29,7 +29,7 @@ class DeleteApiRequest:
     }
 
     def __init__(self, workspace=None, dlm_type=None, body=None):
-        """DeleteApiRequest
+        r"""DeleteApiRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DeleteApiRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this DeleteApiRequest.
+        r"""Gets the workspace of this DeleteApiRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -67,7 +67,7 @@ class DeleteApiRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this DeleteApiRequest.
+        r"""Sets the workspace of this DeleteApiRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -78,7 +78,7 @@ class DeleteApiRequest:
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this DeleteApiRequest.
+        r"""Gets the dlm_type of this DeleteApiRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -89,7 +89,7 @@ class DeleteApiRequest:
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this DeleteApiRequest.
+        r"""Sets the dlm_type of this DeleteApiRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -100,7 +100,7 @@ class DeleteApiRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteApiRequest.
+        r"""Gets the body of this DeleteApiRequest.
 
         API删除ID列表
 
@@ -111,7 +111,7 @@ class DeleteApiRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteApiRequest.
+        r"""Sets the body of this DeleteApiRequest.
 
         API删除ID列表
 

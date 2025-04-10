@@ -27,7 +27,7 @@ class ConfigurationEnvParam:
     }
 
     def __init__(self, name=None, value=None):
-        """ConfigurationEnvParam
+        r"""ConfigurationEnvParam
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ConfigurationEnvParam:
 
     @property
     def name(self):
-        """Gets the name of this ConfigurationEnvParam.
+        r"""Gets the name of this ConfigurationEnvParam.
 
         环境变量名称。
 
@@ -59,7 +59,7 @@ class ConfigurationEnvParam:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ConfigurationEnvParam.
+        r"""Sets the name of this ConfigurationEnvParam.
 
         环境变量名称。
 
@@ -70,7 +70,7 @@ class ConfigurationEnvParam:
 
     @property
     def value(self):
-        """Gets the value of this ConfigurationEnvParam.
+        r"""Gets the value of this ConfigurationEnvParam.
 
         环境变量取值。
 
@@ -81,7 +81,7 @@ class ConfigurationEnvParam:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ConfigurationEnvParam.
+        r"""Sets the value of this ConfigurationEnvParam.
 
         环境变量取值。
 

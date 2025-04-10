@@ -25,7 +25,7 @@ class DeleteAimMsgTemplateRequest:
     }
 
     def __init__(self, template_id=None):
-        """DeleteAimMsgTemplateRequest
+        r"""DeleteAimMsgTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteAimMsgTemplateRequest:
 
     @property
     def template_id(self):
-        """Gets the template_id of this DeleteAimMsgTemplateRequest.
+        r"""Gets the template_id of this DeleteAimMsgTemplateRequest.
 
         短信模板ID。
 
@@ -53,7 +53,7 @@ class DeleteAimMsgTemplateRequest:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this DeleteAimMsgTemplateRequest.
+        r"""Sets the template_id of this DeleteAimMsgTemplateRequest.
 
         短信模板ID。
 

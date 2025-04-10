@@ -31,7 +31,7 @@ class QueryLtsStructLogParamsNew:
     }
 
     def __init__(self, query=None, format=None, time_range=None, whether_to_rows=None):
-        """QueryLtsStructLogParamsNew
+        r"""QueryLtsStructLogParamsNew
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class QueryLtsStructLogParamsNew:
 
     @property
     def query(self):
-        """Gets the query of this QueryLtsStructLogParamsNew.
+        r"""Gets the query of this QueryLtsStructLogParamsNew.
 
         sql语句字符串。
 
@@ -72,7 +72,7 @@ class QueryLtsStructLogParamsNew:
 
     @query.setter
     def query(self, query):
-        """Sets the query of this QueryLtsStructLogParamsNew.
+        r"""Sets the query of this QueryLtsStructLogParamsNew.
 
         sql语句字符串。
 
@@ -83,7 +83,7 @@ class QueryLtsStructLogParamsNew:
 
     @property
     def format(self):
-        """Gets the format of this QueryLtsStructLogParamsNew.
+        r"""Gets the format of this QueryLtsStructLogParamsNew.
 
         查询结果格式。当前仅支持：\"k-v\"。
 
@@ -94,7 +94,7 @@ class QueryLtsStructLogParamsNew:
 
     @format.setter
     def format(self, format):
-        """Sets the format of this QueryLtsStructLogParamsNew.
+        r"""Sets the format of this QueryLtsStructLogParamsNew.
 
         查询结果格式。当前仅支持：\"k-v\"。
 
@@ -105,7 +105,7 @@ class QueryLtsStructLogParamsNew:
 
     @property
     def time_range(self):
-        """Gets the time_range of this QueryLtsStructLogParamsNew.
+        r"""Gets the time_range of this QueryLtsStructLogParamsNew.
 
         :return: The time_range of this QueryLtsStructLogParamsNew.
         :rtype: :class:`huaweicloudsdklts.v2.TimeRange`
@@ -114,7 +114,7 @@ class QueryLtsStructLogParamsNew:
 
     @time_range.setter
     def time_range(self, time_range):
-        """Sets the time_range of this QueryLtsStructLogParamsNew.
+        r"""Sets the time_range of this QueryLtsStructLogParamsNew.
 
         :param time_range: The time_range of this QueryLtsStructLogParamsNew.
         :type time_range: :class:`huaweicloudsdklts.v2.TimeRange`
@@ -123,7 +123,7 @@ class QueryLtsStructLogParamsNew:
 
     @property
     def whether_to_rows(self):
-        """Gets the whether_to_rows of this QueryLtsStructLogParamsNew.
+        r"""Gets the whether_to_rows of this QueryLtsStructLogParamsNew.
 
         返回数据格式，是否为行数据，默认为false。
 
@@ -134,7 +134,7 @@ class QueryLtsStructLogParamsNew:
 
     @whether_to_rows.setter
     def whether_to_rows(self, whether_to_rows):
-        """Sets the whether_to_rows of this QueryLtsStructLogParamsNew.
+        r"""Sets the whether_to_rows of this QueryLtsStructLogParamsNew.
 
         返回数据格式，是否为行数据，默认为false。
 

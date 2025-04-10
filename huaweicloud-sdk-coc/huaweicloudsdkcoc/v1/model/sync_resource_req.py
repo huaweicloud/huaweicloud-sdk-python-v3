@@ -27,7 +27,7 @@ class SyncResourceReq:
     }
 
     def __init__(self, provider=None, type=None):
-        """SyncResourceReq
+        r"""SyncResourceReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class SyncResourceReq:
 
     @property
     def provider(self):
-        """Gets the provider of this SyncResourceReq.
+        r"""Gets the provider of this SyncResourceReq.
 
         资源提供者
 
@@ -59,7 +59,7 @@ class SyncResourceReq:
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this SyncResourceReq.
+        r"""Sets the provider of this SyncResourceReq.
 
         资源提供者
 
@@ -70,7 +70,7 @@ class SyncResourceReq:
 
     @property
     def type(self):
-        """Gets the type of this SyncResourceReq.
+        r"""Gets the type of this SyncResourceReq.
 
         资源类型
 
@@ -81,7 +81,7 @@ class SyncResourceReq:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SyncResourceReq.
+        r"""Sets the type of this SyncResourceReq.
 
         资源类型
 

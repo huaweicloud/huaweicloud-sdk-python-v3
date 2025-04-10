@@ -76,7 +76,7 @@ class ShowCertificateResponse(SdkResponse):
     }
 
     def __init__(self, id=None, status=None, order_id=None, name=None, type=None, brand=None, push_support=None, revoke_reason=None, signature_algorithm=None, issue_time=None, not_before=None, not_after=None, validity_period=None, validation_method=None, domain_type=None, multi_domain_type=None, domain=None, sans=None, domain_count=None, wildcard_count=None, fingerprint=None, shared=None, application_info=None, description=None, enterprise_project_id=None, authentification=None):
-        """ShowCertificateResponse
+        r"""ShowCertificateResponse
 
         The model defined in huaweicloud sdk
 
@@ -219,7 +219,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowCertificateResponse.
+        r"""Gets the id of this ShowCertificateResponse.
 
         证书id。
 
@@ -230,7 +230,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowCertificateResponse.
+        r"""Sets the id of this ShowCertificateResponse.
 
         证书id。
 
@@ -241,7 +241,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowCertificateResponse.
+        r"""Gets the status of this ShowCertificateResponse.
 
         证书状态。取值如下： - PAID：证书已支付，待申请证书。 - ISSUED：证书已签发。 - CHECKING：证书申请审核中。 - CANCELCHECKING：取消证书申请审核中。 - UNPASSED：证书申请未通过。 - EXPIRED：证书已过期。 - REVOKING：证书吊销申请审核中。 - REVOKED：证书已吊销。 - UPLOAD：证书托管中。 - SUPPLEMENTCHECKING：多域名证书新增附加域名审核中。 - CANCELSUPPLEMENTING：取消新增附加域名审核中。
 
@@ -252,7 +252,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowCertificateResponse.
+        r"""Sets the status of this ShowCertificateResponse.
 
         证书状态。取值如下： - PAID：证书已支付，待申请证书。 - ISSUED：证书已签发。 - CHECKING：证书申请审核中。 - CANCELCHECKING：取消证书申请审核中。 - UNPASSED：证书申请未通过。 - EXPIRED：证书已过期。 - REVOKING：证书吊销申请审核中。 - REVOKED：证书已吊销。 - UPLOAD：证书托管中。 - SUPPLEMENTCHECKING：多域名证书新增附加域名审核中。 - CANCELSUPPLEMENTING：取消新增附加域名审核中。
 
@@ -263,7 +263,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this ShowCertificateResponse.
+        r"""Gets the order_id of this ShowCertificateResponse.
 
         订单id。
 
@@ -274,7 +274,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ShowCertificateResponse.
+        r"""Sets the order_id of this ShowCertificateResponse.
 
         订单id。
 
@@ -285,7 +285,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowCertificateResponse.
+        r"""Gets the name of this ShowCertificateResponse.
 
         证书名称。
 
@@ -296,7 +296,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowCertificateResponse.
+        r"""Sets the name of this ShowCertificateResponse.
 
         证书名称。
 
@@ -307,7 +307,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowCertificateResponse.
+        r"""Gets the type of this ShowCertificateResponse.
 
         证书类型。取值如下： DV_SSL_CERT、DV_SSL_CERT_BASIC、EV_SSL_CERT、 EV_SSL_CERT_PRO、OV_SSL_CERT、OV_SSL_CERT_PRO。
 
@@ -318,7 +318,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowCertificateResponse.
+        r"""Sets the type of this ShowCertificateResponse.
 
         证书类型。取值如下： DV_SSL_CERT、DV_SSL_CERT_BASIC、EV_SSL_CERT、 EV_SSL_CERT_PRO、OV_SSL_CERT、OV_SSL_CERT_PRO。
 
@@ -329,7 +329,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @property
     def brand(self):
-        """Gets the brand of this ShowCertificateResponse.
+        r"""Gets the brand of this ShowCertificateResponse.
 
         证书品牌。取值如下： GLOBALSIGN、SYMANTEC、GEOTRUST、CFCA。
 
@@ -340,7 +340,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @brand.setter
     def brand(self, brand):
-        """Sets the brand of this ShowCertificateResponse.
+        r"""Sets the brand of this ShowCertificateResponse.
 
         证书品牌。取值如下： GLOBALSIGN、SYMANTEC、GEOTRUST、CFCA。
 
@@ -351,7 +351,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @property
     def push_support(self):
-        """Gets the push_support of this ShowCertificateResponse.
+        r"""Gets the push_support of this ShowCertificateResponse.
 
         证书是否支持推送。
 
@@ -362,7 +362,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @push_support.setter
     def push_support(self, push_support):
-        """Sets the push_support of this ShowCertificateResponse.
+        r"""Sets the push_support of this ShowCertificateResponse.
 
         证书是否支持推送。
 
@@ -373,7 +373,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @property
     def revoke_reason(self):
-        """Gets the revoke_reason of this ShowCertificateResponse.
+        r"""Gets the revoke_reason of this ShowCertificateResponse.
 
         证书吊销原因。
 
@@ -384,7 +384,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @revoke_reason.setter
     def revoke_reason(self, revoke_reason):
-        """Sets the revoke_reason of this ShowCertificateResponse.
+        r"""Sets the revoke_reason of this ShowCertificateResponse.
 
         证书吊销原因。
 
@@ -395,7 +395,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @property
     def signature_algorithm(self):
-        """Gets the signature_algorithm of this ShowCertificateResponse.
+        r"""Gets the signature_algorithm of this ShowCertificateResponse.
 
         签名算法。
 
@@ -406,7 +406,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @signature_algorithm.setter
     def signature_algorithm(self, signature_algorithm):
-        """Sets the signature_algorithm of this ShowCertificateResponse.
+        r"""Sets the signature_algorithm of this ShowCertificateResponse.
 
         签名算法。
 
@@ -417,7 +417,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @property
     def issue_time(self):
-        """Gets the issue_time of this ShowCertificateResponse.
+        r"""Gets the issue_time of this ShowCertificateResponse.
 
         证书签发时间，没有获取到有效值时为空。
 
@@ -428,7 +428,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @issue_time.setter
     def issue_time(self, issue_time):
-        """Sets the issue_time of this ShowCertificateResponse.
+        r"""Sets the issue_time of this ShowCertificateResponse.
 
         证书签发时间，没有获取到有效值时为空。
 
@@ -439,7 +439,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @property
     def not_before(self):
-        """Gets the not_before of this ShowCertificateResponse.
+        r"""Gets the not_before of this ShowCertificateResponse.
 
         证书生效时间，没有获取到有效值时为空。
 
@@ -450,7 +450,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @not_before.setter
     def not_before(self, not_before):
-        """Sets the not_before of this ShowCertificateResponse.
+        r"""Sets the not_before of this ShowCertificateResponse.
 
         证书生效时间，没有获取到有效值时为空。
 
@@ -461,7 +461,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @property
     def not_after(self):
-        """Gets the not_after of this ShowCertificateResponse.
+        r"""Gets the not_after of this ShowCertificateResponse.
 
         证书失效时间，没有获取到有效值时为空。
 
@@ -472,7 +472,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @not_after.setter
     def not_after(self, not_after):
-        """Sets the not_after of this ShowCertificateResponse.
+        r"""Sets the not_after of this ShowCertificateResponse.
 
         证书失效时间，没有获取到有效值时为空。
 
@@ -483,7 +483,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @property
     def validity_period(self):
-        """Gets the validity_period of this ShowCertificateResponse.
+        r"""Gets the validity_period of this ShowCertificateResponse.
 
         证书有效期，按月为单位。[云证书管理服务提供了一种购买多年有效期证书的解决方案，这种多年有效期证书生效方式为多张有效期为1年的SSL证书叠加生效，例如：有效期为“3年”的证书实际包含3张有效期为1年且规格相同的SSL证书，在第一张证书到期前30天，系统自动以第一张证书的信息申请第二张证书，在第二张证书到期前30天，系统自动以第一张证书的信息申请第三张证书。](tag:hws)
 
@@ -494,7 +494,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @validity_period.setter
     def validity_period(self, validity_period):
-        """Sets the validity_period of this ShowCertificateResponse.
+        r"""Sets the validity_period of this ShowCertificateResponse.
 
         证书有效期，按月为单位。[云证书管理服务提供了一种购买多年有效期证书的解决方案，这种多年有效期证书生效方式为多张有效期为1年的SSL证书叠加生效，例如：有效期为“3年”的证书实际包含3张有效期为1年且规格相同的SSL证书，在第一张证书到期前30天，系统自动以第一张证书的信息申请第二张证书，在第二张证书到期前30天，系统自动以第一张证书的信息申请第三张证书。](tag:hws)
 
@@ -505,7 +505,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @property
     def validation_method(self):
-        """Gets the validation_method of this ShowCertificateResponse.
+        r"""Gets the validation_method of this ShowCertificateResponse.
 
         域名认证方式，取值如下：DNS、FILE、EMAIL。
 
@@ -516,7 +516,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @validation_method.setter
     def validation_method(self, validation_method):
-        """Sets the validation_method of this ShowCertificateResponse.
+        r"""Sets the validation_method of this ShowCertificateResponse.
 
         域名认证方式，取值如下：DNS、FILE、EMAIL。
 
@@ -527,7 +527,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @property
     def domain_type(self):
-        """Gets the domain_type of this ShowCertificateResponse.
+        r"""Gets the domain_type of this ShowCertificateResponse.
 
         域名类型，取值如下： - SINGLE_DOMAIN：单域名 - WILDCARD：通配符 - MULTI_DOMAIN：多域名
 
@@ -538,7 +538,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @domain_type.setter
     def domain_type(self, domain_type):
-        """Sets the domain_type of this ShowCertificateResponse.
+        r"""Sets the domain_type of this ShowCertificateResponse.
 
         域名类型，取值如下： - SINGLE_DOMAIN：单域名 - WILDCARD：通配符 - MULTI_DOMAIN：多域名
 
@@ -549,7 +549,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @property
     def multi_domain_type(self):
-        """Gets the multi_domain_type of this ShowCertificateResponse.
+        r"""Gets the multi_domain_type of this ShowCertificateResponse.
 
         多域名类型，取值如下： - primary_single：主单域名 - primary_wildcard：主泛域名
 
@@ -560,7 +560,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @multi_domain_type.setter
     def multi_domain_type(self, multi_domain_type):
-        """Sets the multi_domain_type of this ShowCertificateResponse.
+        r"""Sets the multi_domain_type of this ShowCertificateResponse.
 
         多域名类型，取值如下： - primary_single：主单域名 - primary_wildcard：主泛域名
 
@@ -571,7 +571,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @property
     def domain(self):
-        """Gets the domain of this ShowCertificateResponse.
+        r"""Gets the domain of this ShowCertificateResponse.
 
         证书绑定域名。
 
@@ -582,7 +582,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ShowCertificateResponse.
+        r"""Sets the domain of this ShowCertificateResponse.
 
         证书绑定域名。
 
@@ -593,7 +593,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @property
     def sans(self):
-        """Gets the sans of this ShowCertificateResponse.
+        r"""Gets the sans of this ShowCertificateResponse.
 
         证书绑定的附加域名信息。
 
@@ -604,7 +604,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @sans.setter
     def sans(self, sans):
-        """Sets the sans of this ShowCertificateResponse.
+        r"""Sets the sans of this ShowCertificateResponse.
 
         证书绑定的附加域名信息。
 
@@ -615,7 +615,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @property
     def domain_count(self):
-        """Gets the domain_count of this ShowCertificateResponse.
+        r"""Gets the domain_count of this ShowCertificateResponse.
 
         证书可绑定域名个数。
 
@@ -626,7 +626,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @domain_count.setter
     def domain_count(self, domain_count):
-        """Sets the domain_count of this ShowCertificateResponse.
+        r"""Sets the domain_count of this ShowCertificateResponse.
 
         证书可绑定域名个数。
 
@@ -637,7 +637,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @property
     def wildcard_count(self):
-        """Gets the wildcard_count of this ShowCertificateResponse.
+        r"""Gets the wildcard_count of this ShowCertificateResponse.
 
         证书可绑定附加域名个数。
 
@@ -648,7 +648,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @wildcard_count.setter
     def wildcard_count(self, wildcard_count):
-        """Sets the wildcard_count of this ShowCertificateResponse.
+        r"""Sets the wildcard_count of this ShowCertificateResponse.
 
         证书可绑定附加域名个数。
 
@@ -659,7 +659,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @property
     def fingerprint(self):
-        """Gets the fingerprint of this ShowCertificateResponse.
+        r"""Gets the fingerprint of this ShowCertificateResponse.
 
         证书的SHA-1指纹。
 
@@ -670,7 +670,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @fingerprint.setter
     def fingerprint(self, fingerprint):
-        """Sets the fingerprint of this ShowCertificateResponse.
+        r"""Sets the fingerprint of this ShowCertificateResponse.
 
         证书的SHA-1指纹。
 
@@ -681,7 +681,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @property
     def shared(self):
-        """Gets the shared of this ShowCertificateResponse.
+        r"""Gets the shared of this ShowCertificateResponse.
 
         是否是共享资源。
 
@@ -692,7 +692,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @shared.setter
     def shared(self, shared):
-        """Sets the shared of this ShowCertificateResponse.
+        r"""Sets the shared of this ShowCertificateResponse.
 
         是否是共享资源。
 
@@ -703,7 +703,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @property
     def application_info(self):
-        """Gets the application_info of this ShowCertificateResponse.
+        r"""Gets the application_info of this ShowCertificateResponse.
 
         :return: The application_info of this ShowCertificateResponse.
         :rtype: :class:`huaweicloudsdkscm.v3.ShowCertificateResponseBodyApplicationInfo`
@@ -712,7 +712,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @application_info.setter
     def application_info(self, application_info):
-        """Sets the application_info of this ShowCertificateResponse.
+        r"""Sets the application_info of this ShowCertificateResponse.
 
         :param application_info: The application_info of this ShowCertificateResponse.
         :type application_info: :class:`huaweicloudsdkscm.v3.ShowCertificateResponseBodyApplicationInfo`
@@ -721,7 +721,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowCertificateResponse.
+        r"""Gets the description of this ShowCertificateResponse.
 
         证书的描述。
 
@@ -732,7 +732,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowCertificateResponse.
+        r"""Sets the description of this ShowCertificateResponse.
 
         证书的描述。
 
@@ -743,7 +743,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowCertificateResponse.
+        r"""Gets the enterprise_project_id of this ShowCertificateResponse.
 
         企业项目ID，默认为“0”。 对于开通企业项目的用户，表示资源处于默认企业项目下。 对于未开通企业项目的用户，表示资源未处于企业项目下。
 
@@ -754,7 +754,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowCertificateResponse.
+        r"""Sets the enterprise_project_id of this ShowCertificateResponse.
 
         企业项目ID，默认为“0”。 对于开通企业项目的用户，表示资源处于默认企业项目下。 对于未开通企业项目的用户，表示资源未处于企业项目下。
 
@@ -765,7 +765,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @property
     def authentification(self):
-        """Gets the authentification of this ShowCertificateResponse.
+        r"""Gets the authentification of this ShowCertificateResponse.
 
         域名所有权认证信息，详情请参见Authentification字段数据结构说明。
 
@@ -776,7 +776,7 @@ class ShowCertificateResponse(SdkResponse):
 
     @authentification.setter
     def authentification(self, authentification):
-        """Sets the authentification of this ShowCertificateResponse.
+        r"""Sets the authentification of this ShowCertificateResponse.
 
         域名所有权认证信息，详情请参见Authentification字段数据结构说明。
 

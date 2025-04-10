@@ -34,7 +34,7 @@ class ListAccountsRequest:
     }
 
     def __init__(self, x_security_token=None, region=None, limit=None, offset=None, enterprise_project_id=None):
-        """ListAccountsRequest
+        r"""ListAccountsRequest
 
         The model defined in huaweicloud sdk
 
@@ -46,7 +46,7 @@ class ListAccountsRequest:
         :type limit: int
         :param offset: 偏移量：指定返回记录的开始位置
         :type offset: int
-        :param enterprise_project_id: 企业租户ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         """
         
@@ -71,7 +71,7 @@ class ListAccountsRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this ListAccountsRequest.
+        r"""Gets the x_security_token of this ListAccountsRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -82,7 +82,7 @@ class ListAccountsRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this ListAccountsRequest.
+        r"""Sets the x_security_token of this ListAccountsRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -93,7 +93,7 @@ class ListAccountsRequest:
 
     @property
     def region(self):
-        """Gets the region of this ListAccountsRequest.
+        r"""Gets the region of this ListAccountsRequest.
 
         Region ID
 
@@ -104,7 +104,7 @@ class ListAccountsRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ListAccountsRequest.
+        r"""Sets the region of this ListAccountsRequest.
 
         Region ID
 
@@ -115,7 +115,7 @@ class ListAccountsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAccountsRequest.
+        r"""Gets the limit of this ListAccountsRequest.
 
         每页显示数量
 
@@ -126,7 +126,7 @@ class ListAccountsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAccountsRequest.
+        r"""Sets the limit of this ListAccountsRequest.
 
         每页显示数量
 
@@ -137,7 +137,7 @@ class ListAccountsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAccountsRequest.
+        r"""Gets the offset of this ListAccountsRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -148,7 +148,7 @@ class ListAccountsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAccountsRequest.
+        r"""Sets the offset of this ListAccountsRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -159,9 +159,9 @@ class ListAccountsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListAccountsRequest.
+        r"""Gets the enterprise_project_id of this ListAccountsRequest.
 
-        企业租户ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ListAccountsRequest.
         :rtype: str
@@ -170,9 +170,9 @@ class ListAccountsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListAccountsRequest.
+        r"""Sets the enterprise_project_id of this ListAccountsRequest.
 
-        企业租户ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ListAccountsRequest.
         :type enterprise_project_id: str

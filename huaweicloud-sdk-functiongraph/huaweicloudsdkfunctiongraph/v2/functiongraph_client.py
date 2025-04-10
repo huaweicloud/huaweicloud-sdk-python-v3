@@ -34,7 +34,7 @@ class FunctionGraphClient(Client):
         return client_builder
 
     def async_invoke_function(self, request):
-        """异步执行函数
+        r"""异步执行函数
 
         异步执行函数。
         
@@ -103,7 +103,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def batch_delete_function_triggers(self, request):
-        """删除指定函数的所有触发器
+        r"""删除指定函数的所有触发器
 
         删除指定函数所有触发器设置。
         
@@ -172,7 +172,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def batch_delete_workflows(self, request):
-        """删除函数流
+        r"""删除函数流
 
         删除函数流
         
@@ -237,7 +237,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def cancel_async_invocation(self, request):
-        """停止函数异步调用请求
+        r"""停止函数异步调用请求
 
         -| 当前仅支持参数recursive为false且force为true的函数。 在1：N的函数做并发异步调用的场景下调用停止异步请求接口时，同一函数实例同时在执行的其他请求也会被一并停止并返回4208 function invocation canceled
         
@@ -304,7 +304,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def create_callback_workflow(self, request):
-        """回调工作流
+        r"""回调工作流
 
         回调工作流
         
@@ -375,7 +375,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def create_dependency_version(self, request):
-        """创建依赖包版本
+        r"""创建依赖包版本
 
         创建依赖包版本
         
@@ -440,7 +440,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def create_event(self, request):
-        """创建测试事件
+        r"""创建测试事件
 
         创建测试事件
         
@@ -507,7 +507,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def create_function(self, request):
-        """创建函数
+        r"""创建函数
 
         创建指定的函数。
         
@@ -572,7 +572,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def create_function_app(self, request):
-        """创建应用程序
+        r"""创建应用程序
 
         创建应用程序（该功能目前仅支持华北-北京四、华东-上海一）
         
@@ -637,7 +637,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def create_function_trigger(self, request):
-        """创建触发器
+        r"""创建触发器
 
         创建触发器。
         
@@ -708,7 +708,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def create_function_version(self, request):
-        """发布函数版本
+        r"""发布函数版本
 
         发布函数版本。
         
@@ -775,7 +775,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def create_tags(self, request):
-        """创建资源标签
+        r"""创建资源标签
 
         创建资源标签。
         
@@ -844,7 +844,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def create_version_alias(self, request):
-        """创建函数版本别名
+        r"""创建函数版本别名
 
         创建函数灰度版本别名。
         
@@ -911,7 +911,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def create_vpc_endpoint(self, request):
-        """创建下沉入口
+        r"""创建下沉入口
 
         创建下沉入口。（该功能目前仅支持华北-北京四、华东-上海一、华东-上海二、西南-贵阳一）
         
@@ -976,7 +976,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def create_workflow(self, request):
-        """创建函数流
+        r"""创建函数流
 
         创建函数流
         
@@ -1041,7 +1041,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def delete_dependency_version(self, request):
-        """删除依赖包版本
+        r"""删除依赖包版本
 
         删除依赖包版本
         
@@ -1108,7 +1108,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def delete_event(self, request):
-        """删除指定测试事件
+        r"""删除指定测试事件
 
         删除指定测试事件
         
@@ -1175,7 +1175,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def delete_function(self, request):
-        """删除函数/版本
+        r"""删除函数/版本
 
         删除指定的函数或者特定的版本（不允许删除latest版本）。
         
@@ -1243,7 +1243,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def delete_function_app(self, request):
-        """删除应用程序
+        r"""删除应用程序
 
         删除应用程序（该功能目前仅支持华北-北京四、华东-上海一）
         
@@ -1308,7 +1308,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def delete_function_async_invoke_config(self, request):
-        """删除函数异步配置信息
+        r"""删除函数异步配置信息
 
         删除函数异步配置信息。
         
@@ -1373,7 +1373,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def delete_function_trigger(self, request):
-        """删除触发器
+        r"""删除触发器
 
         删除触发器。
         
@@ -1442,7 +1442,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def delete_tags(self, request):
-        """删除资源标签
+        r"""删除资源标签
 
         删除资源标签。
         
@@ -1511,7 +1511,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def delete_version_alias(self, request):
-        """删除函数版本别名
+        r"""删除函数版本别名
 
         删除函数版本别名。
         
@@ -1578,7 +1578,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def delete_vpc_endpoint(self, request):
-        """删除下沉入口
+        r"""删除下沉入口
 
         删除下沉入口。（该功能目前仅支持华北-北京四、华东-上海一、华东-上海二、西南-贵阳一）
         
@@ -1645,7 +1645,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def enable_async_status_log(self, request):
-        """允许异步状态通知
+        r"""允许异步状态通知
 
         允许异步状态通知。
         
@@ -1708,7 +1708,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def enable_lts_logs(self, request):
-        """开通lts日志上报功能
+        r"""开通lts日志上报功能
 
         开通lts日志上报功能。
         
@@ -1771,7 +1771,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def export_function(self, request):
-        """导出函数
+        r"""导出函数
 
         导出函数
         
@@ -1842,7 +1842,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def import_function(self, request):
-        """导入函数
+        r"""导入函数
 
         导入函数
         
@@ -1907,7 +1907,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def invoke_function(self, request):
-        """同步执行函数
+        r"""同步执行函数
 
         同步调用指的是客户端请求需要明确等到响应结果，也就是说这样的请求必须得调用到用户的函数，并且等到调用完成才返回。
         
@@ -1980,7 +1980,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def list_active_async_invocations(self, request):
-        """获取函数活跃异步调用请求列表
+        r"""获取函数活跃异步调用请求列表
 
         获取函数异步调用活跃请求列表
         
@@ -2057,7 +2057,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def list_app_templates(self, request):
-        """查询应用程序模板列表
+        r"""查询应用程序模板列表
 
         查询应用程序模板列表（该功能目前仅支持华北-北京四、华东-上海一）
         
@@ -2130,7 +2130,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def list_async_invocations(self, request):
-        """获取函数异步调用请求列表
+        r"""获取函数异步调用请求列表
 
         获取函数异步调用请求列表
         
@@ -2207,7 +2207,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def list_bridge_functions(self, request):
-        """获取指定函数绑定的servicebridge函数列表
+        r"""获取指定函数绑定的servicebridge函数列表
 
         获取指定函数绑定的servicebridge函数列表信息。
         
@@ -2274,7 +2274,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def list_bridge_versions(self, request):
-        """获取servicebridge可用的版本
+        r"""获取servicebridge可用的版本
 
         获取servicebridge可用的版本
         
@@ -2339,7 +2339,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def list_dependencies(self, request):
-        """获取依赖包列表
+        r"""获取依赖包列表
 
         获取依赖包列表
         
@@ -2416,7 +2416,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def list_dependency_version(self, request):
-        """获取依赖包版本列表
+        r"""获取依赖包版本列表
 
         获取依赖包版本列表
         
@@ -2485,7 +2485,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def list_events(self, request):
-        """获取指定函数的测试事件列表
+        r"""获取指定函数的测试事件列表
 
         获取指定函数的测试事件列表
         
@@ -2550,7 +2550,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def list_function_applications(self, request):
-        """查询应用程序列表
+        r"""查询应用程序列表
 
         查询应用程序列表（该功能目前仅支持华北-北京四、华东-上海一）
         
@@ -2617,7 +2617,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def list_function_as_metric(self, request):
-        """获取按指定指标排序的函数列表
+        r"""获取按指定指标排序的函数列表
 
         按指定指标排序的函数列表。
         
@@ -2690,7 +2690,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def list_function_async_invoke_config(self, request):
-        """获取函数异步配置列表
+        r"""获取函数异步配置列表
 
         获取指定函数所有版本的异步配置列表。。
         
@@ -2759,7 +2759,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def list_function_reserved_instances(self, request):
-        """获取函数预留实例数量
+        r"""获取函数预留实例数量
 
         获取函数预留实例数量。
         
@@ -2828,7 +2828,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def list_function_statistics(self, request):
-        """获取指定时间段的函数运行指标
+        r"""获取指定时间段的函数运行指标
 
         获取指定时间段的函数运行指标。
         
@@ -2895,7 +2895,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def list_function_tags(self, request):
-        """查询函数标签列表
+        r"""查询函数标签列表
 
         查询函数标签列表
         
@@ -2962,7 +2962,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def list_function_template(self, request):
-        """获取函数模板列表
+        r"""获取函数模板列表
 
         获取函数模板列表
         
@@ -3037,7 +3037,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def list_function_triggers(self, request):
-        """获取指定函数的所有触发器
+        r"""获取指定函数的所有触发器
 
         获取指定函数的所有触发器设置。
         
@@ -3102,7 +3102,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def list_function_versions(self, request):
-        """获取指定函数的版本列表
+        r"""获取指定函数的版本列表
 
         获取指定函数的版本列表。
         
@@ -3171,7 +3171,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def list_functions(self, request):
-        """获取函数列表
+        r"""获取函数列表
 
         获取函数列表
         
@@ -3240,7 +3240,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def list_quotas(self, request):
-        """查询租户配额
+        r"""查询租户配额
 
         查询租户配额
         
@@ -3303,7 +3303,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def list_reserved_instance_configs(self, request):
-        """获取函数预留实例配置列表
+        r"""获取函数预留实例配置列表
 
         获取函数预留实例配置列表
         
@@ -3372,7 +3372,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def list_statistics(self, request):
-        """租户函数统计信息
+        r"""租户函数统计信息
 
         租户函数统计信息。
         
@@ -3448,7 +3448,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def list_version_aliases(self, request):
-        """获取指定函数所有版本别名列表
+        r"""获取指定函数所有版本别名列表
 
         获取函数版本别名列表。
         
@@ -3513,7 +3513,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def list_workflow(self, request):
-        """查询函数流
+        r"""查询函数流
 
         查询函数流
         
@@ -3586,7 +3586,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def list_workflow_executions(self, request):
-        """获取指定函数流执行实例列表
+        r"""获取指定函数流执行实例列表
 
         获取指定函数流执行实例列表
         
@@ -3661,7 +3661,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def retry_work_flow(self, request):
-        """重试函数流
+        r"""重试函数流
 
         重试函数流
         
@@ -3728,7 +3728,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def show_app_template(self, request):
-        """查询应用程序模板详情
+        r"""查询应用程序模板详情
 
         查询应用程序模板详情（该功能目前仅支持华北-北京四、华东-上海一）
         
@@ -3793,7 +3793,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def show_dependency_version(self, request):
-        """获取依赖包版本详情
+        r"""获取依赖包版本详情
 
         获取依赖包版本详情
         
@@ -3860,7 +3860,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def show_event(self, request):
-        """获取测试事件详细信息
+        r"""获取测试事件详细信息
 
         获取测试事件详细信息
         
@@ -3927,7 +3927,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def show_func_reserved_instance_metrics(self, request):
-        """查询函数实例使用情况指标
+        r"""查询函数实例使用情况指标
 
         查询函数实例使用情况指标。
         
@@ -4002,7 +4002,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def show_func_snapshot_state(self, request):
-        """查询函数快照制作状态
+        r"""查询函数快照制作状态
 
         查询函数快照制作状态。
         
@@ -4069,7 +4069,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def show_function_app(self, request):
-        """查询应用程序详情
+        r"""查询应用程序详情
 
         查询应用程序详情（该功能目前仅支持华北-北京四、华东-上海一）
         
@@ -4134,7 +4134,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def show_function_async_invoke_config(self, request):
-        """获取函数异步配置信息
+        r"""获取函数异步配置信息
 
         获取指定函数某一版本的异步配置信息。
         
@@ -4199,7 +4199,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def show_function_code(self, request):
-        """获取指定函数代码
+        r"""获取指定函数代码
 
         获取指定函数的代码。
         
@@ -4264,7 +4264,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def show_function_config(self, request):
-        """获取函数的metadata
+        r"""获取函数的metadata
 
         获取指定函数的metadata。
         
@@ -4329,7 +4329,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def show_function_metrics(self, request):
-        """查询函数实例流量指标
+        r"""查询函数实例流量指标
 
         查询函数流量指标。
         
@@ -4396,7 +4396,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def show_function_template(self, request):
-        """获取指定函数模板
+        r"""获取指定函数模板
 
         获取指定函数模板
         
@@ -4461,7 +4461,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def show_function_trigger(self, request):
-        """获取指定触发器的信息
+        r"""获取指定触发器的信息
 
         获取特定触发器的信息。
         
@@ -4530,7 +4530,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def show_lts_log_details(self, request):
-        """获取指定函数的lts日志组日志流配置
+        r"""获取指定函数的lts日志组日志流配置
 
         获取指定函数的lts日志组日志流配置。
         
@@ -4595,7 +4595,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def show_project_async_status_log_info(self, request):
-        """查询异步日志详情
+        r"""查询异步日志详情
 
         查询异步日志详情
         
@@ -4658,7 +4658,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def show_project_tags_list(self, request):
-        """查询资源标签
+        r"""查询资源标签
 
         查询资源标签。
         
@@ -4723,7 +4723,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def show_res_instance_info(self, request):
-        """查询资源实例
+        r"""查询资源实例
 
         查询资源实例。
         
@@ -4792,7 +4792,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def show_tenant_metric(self, request):
-        """获取函数流指标
+        r"""获取函数流指标
 
         获取函数流指标
         
@@ -4863,7 +4863,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def show_tracing(self, request):
-        """获取函数调用链配置
+        r"""获取函数调用链配置
 
         获取函数调用链配置
         
@@ -4928,7 +4928,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def show_version_alias(self, request):
-        """获取函数版本的指定别名信息
+        r"""获取函数版本的指定别名信息
 
         获取函数指定的版本别名信息。
         
@@ -4995,7 +4995,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def show_work_flow(self, request):
-        """获取指定函数流实例的元数据
+        r"""获取指定函数流实例的元数据
 
         获取指定函数流实例的元数据
         
@@ -5060,7 +5060,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def show_work_flow_metric(self, request):
-        """获取指定函数流指标
+        r"""获取指定函数流指标
 
         获取指定函数流指标
         
@@ -5131,7 +5131,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def show_workflow_execution(self, request):
-        """获取指定函数流执行实例
+        r"""获取指定函数流执行实例
 
         获取指定函数流执行实例。
         
@@ -5200,7 +5200,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def show_workflow_execution_for_page(self, request):
-        """分页获取指定函数流执行实例列表
+        r"""分页获取指定函数流执行实例列表
 
         分页获取指定函数流执行实例列表
         
@@ -5273,7 +5273,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def start_sync_workflow_execution(self, request):
-        """同步执行函数流
+        r"""同步执行函数流
 
         以同步执行方式启动函数流（仅快速模式函数流支持）
         
@@ -5340,7 +5340,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def start_workflow_execution(self, request):
-        """开始执行函数流
+        r"""开始执行函数流
 
         以异步执行方式启动函数流
         
@@ -5413,7 +5413,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def stop_work_flow(self, request):
-        """停止函数流
+        r"""停止函数流
 
         停止函数流
         
@@ -5480,7 +5480,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def update_event(self, request):
-        """更新测试事件详细信息
+        r"""更新测试事件详细信息
 
         更新测试事件详细信息
         
@@ -5549,7 +5549,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def update_func_snapshot(self, request):
-        """禁用/启动函数快照
+        r"""禁用/启动函数快照
 
         禁用/启动函数快照，仅支持java运行时函数，且为非latest版本才能开启函数快照功能。
         
@@ -5616,7 +5616,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def update_function_async_invoke_config(self, request):
-        """设置函数异步配置信息
+        r"""设置函数异步配置信息
 
         设置函数异步配置信息。
         
@@ -5683,7 +5683,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def update_function_code(self, request):
-        """修改函数代码
+        r"""修改函数代码
 
         修改指定的函数的代码。
         
@@ -5750,7 +5750,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def update_function_collect_state(self, request):
-        """更新函数置顶状态
+        r"""更新函数置顶状态
 
         更新函数置顶状态
         
@@ -5817,7 +5817,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def update_function_config(self, request):
-        """修改函数的metadata信息
+        r"""修改函数的metadata信息
 
         修改指定的函数的metadata信息。
         
@@ -5884,7 +5884,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def update_function_max_instance_config(self, request):
-        """更新函数最大实例数
+        r"""更新函数最大实例数
 
         更新函数最大实例数
         
@@ -5951,7 +5951,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def update_function_reserved_instances_count(self, request):
-        """修改函数预留实例数量
+        r"""修改函数预留实例数量
 
         修改函数预留实例数量。
         
@@ -6018,7 +6018,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def update_tracing(self, request):
-        """修改函数调用链配置
+        r"""修改函数调用链配置
 
         修改函数调用链配置,开通/修改传入aksk，关闭aksk传空
         
@@ -6085,7 +6085,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def update_trigger(self, request):
-        """更新触发器
+        r"""更新触发器
 
         更新触发器
         
@@ -6156,7 +6156,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def update_version_alias(self, request):
-        """修改函数版本别名信息
+        r"""修改函数版本别名信息
 
         修改函数版本别名信息。
         
@@ -6225,7 +6225,7 @@ class FunctionGraphClient(Client):
         return http_info
 
     def update_work_flow(self, request):
-        """修改指定函数流实例的元数据
+        r"""修改指定函数流实例的元数据
 
         修改指定函数流实例的元数据
         

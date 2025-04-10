@@ -49,7 +49,7 @@ class VoiceCapability:
     }
 
     def __init__(self, is_support_phoneme_en=None, is_support_phoneme=None, is_support_break_time=None, is_support_break_strength=None, is_support_speed=None, is_support_prosody=None, is_support_ssml_say_as=None, is_support_ssml_sub=None, is_support_word=None, is_support_voice_cache=None, conversion_rate=None, conversion_rate_en=None, is_support_srt=None):
-        """VoiceCapability
+        r"""VoiceCapability
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class VoiceCapability:
 
     @property
     def is_support_phoneme_en(self):
-        """Gets the is_support_phoneme_en of this VoiceCapability.
+        r"""Gets the is_support_phoneme_en of this VoiceCapability.
 
         **参数解释**： 该声音是否支持英文音标。 **约束限制**： 不涉及 **取值范围**： * true: 支持英文音标 * false: 不支持英文音标
 
@@ -138,7 +138,7 @@ class VoiceCapability:
 
     @is_support_phoneme_en.setter
     def is_support_phoneme_en(self, is_support_phoneme_en):
-        """Sets the is_support_phoneme_en of this VoiceCapability.
+        r"""Sets the is_support_phoneme_en of this VoiceCapability.
 
         **参数解释**： 该声音是否支持英文音标。 **约束限制**： 不涉及 **取值范围**： * true: 支持英文音标 * false: 不支持英文音标
 
@@ -149,7 +149,7 @@ class VoiceCapability:
 
     @property
     def is_support_phoneme(self):
-        """Gets the is_support_phoneme of this VoiceCapability.
+        r"""Gets the is_support_phoneme of this VoiceCapability.
 
         **参数解释**： 该声音是否支持中文多音字。 **约束限制**： 不涉及 **取值范围**： * true: 支持中文多音字 * false: 不支持中文多音字
 
@@ -160,7 +160,7 @@ class VoiceCapability:
 
     @is_support_phoneme.setter
     def is_support_phoneme(self, is_support_phoneme):
-        """Sets the is_support_phoneme of this VoiceCapability.
+        r"""Sets the is_support_phoneme of this VoiceCapability.
 
         **参数解释**： 该声音是否支持中文多音字。 **约束限制**： 不涉及 **取值范围**： * true: 支持中文多音字 * false: 不支持中文多音字
 
@@ -171,7 +171,7 @@ class VoiceCapability:
 
     @property
     def is_support_break_time(self):
-        """Gets the is_support_break_time of this VoiceCapability.
+        r"""Gets the is_support_break_time of this VoiceCapability.
 
         **参数解释**： 该声音是否支持停顿。 **约束限制**： 不涉及 **取值范围**： * true: 支持停顿 * false: 不支持停顿
 
@@ -182,7 +182,7 @@ class VoiceCapability:
 
     @is_support_break_time.setter
     def is_support_break_time(self, is_support_break_time):
-        """Sets the is_support_break_time of this VoiceCapability.
+        r"""Sets the is_support_break_time of this VoiceCapability.
 
         **参数解释**： 该声音是否支持停顿。 **约束限制**： 不涉及 **取值范围**： * true: 支持停顿 * false: 不支持停顿
 
@@ -193,7 +193,7 @@ class VoiceCapability:
 
     @property
     def is_support_break_strength(self):
-        """Gets the is_support_break_strength of this VoiceCapability.
+        r"""Gets the is_support_break_strength of this VoiceCapability.
 
         **参数解释**： 该声音是否支持韵律。 **约束限制**： 不涉及 **取值范围**： * true: 支持韵律 * false: 不支持韵律
 
@@ -204,7 +204,7 @@ class VoiceCapability:
 
     @is_support_break_strength.setter
     def is_support_break_strength(self, is_support_break_strength):
-        """Sets the is_support_break_strength of this VoiceCapability.
+        r"""Sets the is_support_break_strength of this VoiceCapability.
 
         **参数解释**： 该声音是否支持韵律。 **约束限制**： 不涉及 **取值范围**： * true: 支持韵律 * false: 不支持韵律
 
@@ -215,7 +215,7 @@ class VoiceCapability:
 
     @property
     def is_support_speed(self):
-        """Gets the is_support_speed of this VoiceCapability.
+        r"""Gets the is_support_speed of this VoiceCapability.
 
         **参数解释**： 该声音是否支持全局语速。 **约束限制**： 不涉及 **取值范围**： * true: 支持全局语速 * false: 不支持全局语速
 
@@ -226,7 +226,7 @@ class VoiceCapability:
 
     @is_support_speed.setter
     def is_support_speed(self, is_support_speed):
-        """Sets the is_support_speed of this VoiceCapability.
+        r"""Sets the is_support_speed of this VoiceCapability.
 
         **参数解释**： 该声音是否支持全局语速。 **约束限制**： 不涉及 **取值范围**： * true: 支持全局语速 * false: 不支持全局语速
 
@@ -237,7 +237,7 @@ class VoiceCapability:
 
     @property
     def is_support_prosody(self):
-        """Gets the is_support_prosody of this VoiceCapability.
+        r"""Gets the is_support_prosody of this VoiceCapability.
 
         **参数解释**： 该声音是否支持局部语速。 **约束限制**： 不涉及 **取值范围**： * true: 支持局部语速 * false: 不支持局部语速
 
@@ -248,7 +248,7 @@ class VoiceCapability:
 
     @is_support_prosody.setter
     def is_support_prosody(self, is_support_prosody):
-        """Sets the is_support_prosody of this VoiceCapability.
+        r"""Sets the is_support_prosody of this VoiceCapability.
 
         **参数解释**： 该声音是否支持局部语速。 **约束限制**： 不涉及 **取值范围**： * true: 支持局部语速 * false: 不支持局部语速
 
@@ -259,7 +259,7 @@ class VoiceCapability:
 
     @property
     def is_support_ssml_say_as(self):
-        """Gets the is_support_ssml_say_as of this VoiceCapability.
+        r"""Gets the is_support_ssml_say_as of this VoiceCapability.
 
         **参数解释**： 该声音是否支持SSML的say-as标签。 **约束限制**： 不涉及 **取值范围**： * true: 支持SSML的say-as标签 * false: 不支持SSML的say-as标签
 
@@ -270,7 +270,7 @@ class VoiceCapability:
 
     @is_support_ssml_say_as.setter
     def is_support_ssml_say_as(self, is_support_ssml_say_as):
-        """Sets the is_support_ssml_say_as of this VoiceCapability.
+        r"""Sets the is_support_ssml_say_as of this VoiceCapability.
 
         **参数解释**： 该声音是否支持SSML的say-as标签。 **约束限制**： 不涉及 **取值范围**： * true: 支持SSML的say-as标签 * false: 不支持SSML的say-as标签
 
@@ -281,7 +281,7 @@ class VoiceCapability:
 
     @property
     def is_support_ssml_sub(self):
-        """Gets the is_support_ssml_sub of this VoiceCapability.
+        r"""Gets the is_support_ssml_sub of this VoiceCapability.
 
         **参数解释**： 该声音是否支持SSML的sub标签。 **约束限制**： 不涉及 **取值范围**： * true: 支持SSML的sub标签 * false: 不支持SSML的sub标签
 
@@ -292,7 +292,7 @@ class VoiceCapability:
 
     @is_support_ssml_sub.setter
     def is_support_ssml_sub(self, is_support_ssml_sub):
-        """Sets the is_support_ssml_sub of this VoiceCapability.
+        r"""Sets the is_support_ssml_sub of this VoiceCapability.
 
         **参数解释**： 该声音是否支持SSML的sub标签。 **约束限制**： 不涉及 **取值范围**： * true: 支持SSML的sub标签 * false: 不支持SSML的sub标签
 
@@ -303,7 +303,7 @@ class VoiceCapability:
 
     @property
     def is_support_word(self):
-        """Gets the is_support_word of this VoiceCapability.
+        r"""Gets the is_support_word of this VoiceCapability.
 
         **参数解释**： 该声音是否支持连读。 **约束限制**： 不涉及 **取值范围**： * true: 支持连读 * false: 不支持连读
 
@@ -314,7 +314,7 @@ class VoiceCapability:
 
     @is_support_word.setter
     def is_support_word(self, is_support_word):
-        """Sets the is_support_word of this VoiceCapability.
+        r"""Sets the is_support_word of this VoiceCapability.
 
         **参数解释**： 该声音是否支持连读。 **约束限制**： 不涉及 **取值范围**： * true: 支持连读 * false: 不支持连读
 
@@ -325,7 +325,7 @@ class VoiceCapability:
 
     @property
     def is_support_voice_cache(self):
-        """Gets the is_support_voice_cache of this VoiceCapability.
+        r"""Gets the is_support_voice_cache of this VoiceCapability.
 
         是否支持缓存。
 
@@ -336,7 +336,7 @@ class VoiceCapability:
 
     @is_support_voice_cache.setter
     def is_support_voice_cache(self, is_support_voice_cache):
-        """Sets the is_support_voice_cache of this VoiceCapability.
+        r"""Sets the is_support_voice_cache of this VoiceCapability.
 
         是否支持缓存。
 
@@ -347,7 +347,7 @@ class VoiceCapability:
 
     @property
     def conversion_rate(self):
-        """Gets the conversion_rate of this VoiceCapability.
+        r"""Gets the conversion_rate of this VoiceCapability.
 
         **参数解释**： 合成率。 **约束限制**： 不涉及 **取值范围**： * 0-50
 
@@ -358,7 +358,7 @@ class VoiceCapability:
 
     @conversion_rate.setter
     def conversion_rate(self, conversion_rate):
-        """Sets the conversion_rate of this VoiceCapability.
+        r"""Sets the conversion_rate of this VoiceCapability.
 
         **参数解释**： 合成率。 **约束限制**： 不涉及 **取值范围**： * 0-50
 
@@ -369,7 +369,7 @@ class VoiceCapability:
 
     @property
     def conversion_rate_en(self):
-        """Gets the conversion_rate_en of this VoiceCapability.
+        r"""Gets the conversion_rate_en of this VoiceCapability.
 
         **参数解释**： 英语的合成率。 **约束限制**： 不涉及 **取值范围**： * 0-50
 
@@ -380,7 +380,7 @@ class VoiceCapability:
 
     @conversion_rate_en.setter
     def conversion_rate_en(self, conversion_rate_en):
-        """Sets the conversion_rate_en of this VoiceCapability.
+        r"""Sets the conversion_rate_en of this VoiceCapability.
 
         **参数解释**： 英语的合成率。 **约束限制**： 不涉及 **取值范围**： * 0-50
 
@@ -391,7 +391,7 @@ class VoiceCapability:
 
     @property
     def is_support_srt(self):
-        """Gets the is_support_srt of this VoiceCapability.
+        r"""Gets the is_support_srt of this VoiceCapability.
 
         是否支持生成STR字幕文件。
 
@@ -402,7 +402,7 @@ class VoiceCapability:
 
     @is_support_srt.setter
     def is_support_srt(self, is_support_srt):
-        """Sets the is_support_srt of this VoiceCapability.
+        r"""Sets the is_support_srt of this VoiceCapability.
 
         是否支持生成STR字幕文件。
 

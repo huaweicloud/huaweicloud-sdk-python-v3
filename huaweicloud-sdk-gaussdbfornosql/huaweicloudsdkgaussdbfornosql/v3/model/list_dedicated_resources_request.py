@@ -27,7 +27,7 @@ class ListDedicatedResourcesRequest:
     }
 
     def __init__(self, offset=None, limit=None):
-        """ListDedicatedResourcesRequest
+        r"""ListDedicatedResourcesRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListDedicatedResourcesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDedicatedResourcesRequest.
+        r"""Gets the offset of this ListDedicatedResourcesRequest.
 
         索引位置偏移量。   - 索引位置偏移量，表示从指定project ID下最新的专属资源创建时间开始，按时间的先后顺序偏移offset条数据后查询对应的专属资源信息。   - 取值大于或等于0。   - 不传该参数时，查询偏移量默认为0，表示从最新的创建时间对应的专属资源开始查询。
 
@@ -61,7 +61,7 @@ class ListDedicatedResourcesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDedicatedResourcesRequest.
+        r"""Sets the offset of this ListDedicatedResourcesRequest.
 
         索引位置偏移量。   - 索引位置偏移量，表示从指定project ID下最新的专属资源创建时间开始，按时间的先后顺序偏移offset条数据后查询对应的专属资源信息。   - 取值大于或等于0。   - 不传该参数时，查询偏移量默认为0，表示从最新的创建时间对应的专属资源开始查询。
 
@@ -72,7 +72,7 @@ class ListDedicatedResourcesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDedicatedResourcesRequest.
+        r"""Gets the limit of this ListDedicatedResourcesRequest.
 
         查询专属资源个数上限值。   - 取值范围：1~100。不传该参数时，默认查询前100条实例信息。
 
@@ -83,7 +83,7 @@ class ListDedicatedResourcesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDedicatedResourcesRequest.
+        r"""Sets the limit of this ListDedicatedResourcesRequest.
 
         查询专属资源个数上限值。   - 取值范围：1~100。不传该参数时，默认查询前100条实例信息。
 

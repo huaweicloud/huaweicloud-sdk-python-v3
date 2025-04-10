@@ -35,7 +35,7 @@ class AvailableZone:
     }
 
     def __init__(self, name=None, id=None, code=None, port=None, local_name=None, specs=None):
-        """AvailableZone
+        r"""AvailableZone
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class AvailableZone:
 
     @property
     def name(self):
-        """Gets the name of this AvailableZone.
+        r"""Gets the name of this AvailableZone.
 
         可用区名称。
 
@@ -89,7 +89,7 @@ class AvailableZone:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AvailableZone.
+        r"""Sets the name of this AvailableZone.
 
         可用区名称。
 
@@ -100,7 +100,7 @@ class AvailableZone:
 
     @property
     def id(self):
-        """Gets the id of this AvailableZone.
+        r"""Gets the id of this AvailableZone.
 
         实例创建失败错误信息
 
@@ -111,7 +111,7 @@ class AvailableZone:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AvailableZone.
+        r"""Sets the id of this AvailableZone.
 
         实例创建失败错误信息
 
@@ -122,7 +122,7 @@ class AvailableZone:
 
     @property
     def code(self):
-        """Gets the code of this AvailableZone.
+        r"""Gets the code of this AvailableZone.
 
         可用区编码。
 
@@ -133,7 +133,7 @@ class AvailableZone:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this AvailableZone.
+        r"""Sets the code of this AvailableZone.
 
         可用区编码。
 
@@ -144,7 +144,7 @@ class AvailableZone:
 
     @property
     def port(self):
-        """Gets the port of this AvailableZone.
+        r"""Gets the port of this AvailableZone.
 
         可用区端口号。
 
@@ -155,7 +155,7 @@ class AvailableZone:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this AvailableZone.
+        r"""Sets the port of this AvailableZone.
 
         可用区端口号。
 
@@ -166,7 +166,7 @@ class AvailableZone:
 
     @property
     def local_name(self):
-        """Gets the local_name of this AvailableZone.
+        r"""Gets the local_name of this AvailableZone.
 
         :return: The local_name of this AvailableZone.
         :rtype: :class:`huaweicloudsdkapig.v2.LocalName`
@@ -175,7 +175,7 @@ class AvailableZone:
 
     @local_name.setter
     def local_name(self, local_name):
-        """Sets the local_name of this AvailableZone.
+        r"""Sets the local_name of this AvailableZone.
 
         :param local_name: The local_name of this AvailableZone.
         :type local_name: :class:`huaweicloudsdkapig.v2.LocalName`
@@ -184,7 +184,7 @@ class AvailableZone:
 
     @property
     def specs(self):
-        """Gets the specs of this AvailableZone.
+        r"""Gets the specs of this AvailableZone.
 
         可用区支持的实例规格。
 
@@ -195,7 +195,7 @@ class AvailableZone:
 
     @specs.setter
     def specs(self, specs):
-        """Sets the specs of this AvailableZone.
+        r"""Sets the specs of this AvailableZone.
 
         可用区支持的实例规格。
 

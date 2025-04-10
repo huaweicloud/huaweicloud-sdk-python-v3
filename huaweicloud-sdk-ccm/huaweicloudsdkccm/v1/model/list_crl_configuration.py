@@ -33,7 +33,7 @@ class ListCrlConfiguration:
     }
 
     def __init__(self, enabled=None, crl_name=None, obs_bucket_name=None, valid_days=None, crl_dis_point=None):
-        """ListCrlConfiguration
+        r"""ListCrlConfiguration
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class ListCrlConfiguration:
 
     @property
     def enabled(self):
-        """Gets the enabled of this ListCrlConfiguration.
+        r"""Gets the enabled of this ListCrlConfiguration.
 
         是否启用CRL发布功能。 - **true** - **false**
 
@@ -77,7 +77,7 @@ class ListCrlConfiguration:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this ListCrlConfiguration.
+        r"""Sets the enabled of this ListCrlConfiguration.
 
         是否启用CRL发布功能。 - **true** - **false**
 
@@ -88,7 +88,7 @@ class ListCrlConfiguration:
 
     @property
     def crl_name(self):
-        """Gets the crl_name of this ListCrlConfiguration.
+        r"""Gets the crl_name of this ListCrlConfiguration.
 
         吊销列表文件名称。 > 若用户不指定，系统将默认采用当前证书的父CA ID。
 
@@ -99,7 +99,7 @@ class ListCrlConfiguration:
 
     @crl_name.setter
     def crl_name(self, crl_name):
-        """Sets the crl_name of this ListCrlConfiguration.
+        r"""Sets the crl_name of this ListCrlConfiguration.
 
         吊销列表文件名称。 > 若用户不指定，系统将默认采用当前证书的父CA ID。
 
@@ -110,7 +110,7 @@ class ListCrlConfiguration:
 
     @property
     def obs_bucket_name(self):
-        """Gets the obs_bucket_name of this ListCrlConfiguration.
+        r"""Gets the obs_bucket_name of this ListCrlConfiguration.
 
         OBS桶名称。
 
@@ -121,7 +121,7 @@ class ListCrlConfiguration:
 
     @obs_bucket_name.setter
     def obs_bucket_name(self, obs_bucket_name):
-        """Sets the obs_bucket_name of this ListCrlConfiguration.
+        r"""Sets the obs_bucket_name of this ListCrlConfiguration.
 
         OBS桶名称。
 
@@ -132,7 +132,7 @@ class ListCrlConfiguration:
 
     @property
     def valid_days(self):
-        """Gets the valid_days of this ListCrlConfiguration.
+        r"""Gets the valid_days of this ListCrlConfiguration.
 
         CRL更新周期，单位为\"天\"。当启用CRL发布功能，为必填项。
 
@@ -143,7 +143,7 @@ class ListCrlConfiguration:
 
     @valid_days.setter
     def valid_days(self, valid_days):
-        """Sets the valid_days of this ListCrlConfiguration.
+        r"""Sets the valid_days of this ListCrlConfiguration.
 
         CRL更新周期，单位为\"天\"。当启用CRL发布功能，为必填项。
 
@@ -154,7 +154,7 @@ class ListCrlConfiguration:
 
     @property
     def crl_dis_point(self):
-        """Gets the crl_dis_point of this ListCrlConfiguration.
+        r"""Gets the crl_dis_point of this ListCrlConfiguration.
 
         吊销列表分发地址，即对应的OBS桶中的CRL文件地址。 > 本参数由程序根据crl_name、obs_bucket_name以及OBS地址进行拼接而成。
 
@@ -165,7 +165,7 @@ class ListCrlConfiguration:
 
     @crl_dis_point.setter
     def crl_dis_point(self, crl_dis_point):
-        """Sets the crl_dis_point of this ListCrlConfiguration.
+        r"""Sets the crl_dis_point of this ListCrlConfiguration.
 
         吊销列表分发地址，即对应的OBS桶中的CRL文件地址。 > 本参数由程序根据crl_name、obs_bucket_name以及OBS地址进行拼接而成。
 

@@ -25,7 +25,7 @@ class Metadata:
     }
 
     def __init__(self, total_count=None):
-        """Metadata
+        r"""Metadata
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class Metadata:
 
     @property
     def total_count(self):
-        """Gets the total_count of this Metadata.
+        r"""Gets the total_count of this Metadata.
 
         满足查询条件的资源总数，不受分页（即limit、offset参数）影响。
 
@@ -54,7 +54,7 @@ class Metadata:
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this Metadata.
+        r"""Sets the total_count of this Metadata.
 
         满足查询条件的资源总数，不受分页（即limit、offset参数）影响。
 

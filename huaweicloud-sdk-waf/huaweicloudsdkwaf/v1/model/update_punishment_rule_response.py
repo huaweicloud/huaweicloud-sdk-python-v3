@@ -34,7 +34,7 @@ class UpdatePunishmentRuleResponse(SdkResponse):
     }
 
     def __init__(self, id=None, policyid=None, block_time=None, category=None, description=None):
-        """UpdatePunishmentRuleResponse
+        r"""UpdatePunishmentRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class UpdatePunishmentRuleResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdatePunishmentRuleResponse.
+        r"""Gets the id of this UpdatePunishmentRuleResponse.
 
         规则id
 
@@ -83,7 +83,7 @@ class UpdatePunishmentRuleResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdatePunishmentRuleResponse.
+        r"""Sets the id of this UpdatePunishmentRuleResponse.
 
         规则id
 
@@ -94,7 +94,7 @@ class UpdatePunishmentRuleResponse(SdkResponse):
 
     @property
     def policyid(self):
-        """Gets the policyid of this UpdatePunishmentRuleResponse.
+        r"""Gets the policyid of this UpdatePunishmentRuleResponse.
 
         所属策略id
 
@@ -105,7 +105,7 @@ class UpdatePunishmentRuleResponse(SdkResponse):
 
     @policyid.setter
     def policyid(self, policyid):
-        """Sets the policyid of this UpdatePunishmentRuleResponse.
+        r"""Sets the policyid of this UpdatePunishmentRuleResponse.
 
         所属策略id
 
@@ -116,7 +116,7 @@ class UpdatePunishmentRuleResponse(SdkResponse):
 
     @property
     def block_time(self):
-        """Gets the block_time of this UpdatePunishmentRuleResponse.
+        r"""Gets the block_time of this UpdatePunishmentRuleResponse.
 
         拦截时间
 
@@ -127,7 +127,7 @@ class UpdatePunishmentRuleResponse(SdkResponse):
 
     @block_time.setter
     def block_time(self, block_time):
-        """Sets the block_time of this UpdatePunishmentRuleResponse.
+        r"""Sets the block_time of this UpdatePunishmentRuleResponse.
 
         拦截时间
 
@@ -138,7 +138,7 @@ class UpdatePunishmentRuleResponse(SdkResponse):
 
     @property
     def category(self):
-        """Gets the category of this UpdatePunishmentRuleResponse.
+        r"""Gets the category of this UpdatePunishmentRuleResponse.
 
         攻击惩罚类别
 
@@ -149,7 +149,7 @@ class UpdatePunishmentRuleResponse(SdkResponse):
 
     @category.setter
     def category(self, category):
-        """Sets the category of this UpdatePunishmentRuleResponse.
+        r"""Sets the category of this UpdatePunishmentRuleResponse.
 
         攻击惩罚类别
 
@@ -160,7 +160,7 @@ class UpdatePunishmentRuleResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdatePunishmentRuleResponse.
+        r"""Gets the description of this UpdatePunishmentRuleResponse.
 
         规则描述
 
@@ -171,7 +171,7 @@ class UpdatePunishmentRuleResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdatePunishmentRuleResponse.
+        r"""Sets the description of this UpdatePunishmentRuleResponse.
 
         规则描述
 

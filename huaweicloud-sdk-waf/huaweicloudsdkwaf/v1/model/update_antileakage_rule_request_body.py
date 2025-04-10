@@ -33,7 +33,7 @@ class UpdateAntileakageRuleRequestBody:
     }
 
     def __init__(self, url=None, category=None, contents=None, action=None, description=None):
-        """UpdateAntileakageRuleRequestBody
+        r"""UpdateAntileakageRuleRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class UpdateAntileakageRuleRequestBody:
 
     @property
     def url(self):
-        """Gets the url of this UpdateAntileakageRuleRequestBody.
+        r"""Gets the url of this UpdateAntileakageRuleRequestBody.
 
         规则应用的url
 
@@ -79,7 +79,7 @@ class UpdateAntileakageRuleRequestBody:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this UpdateAntileakageRuleRequestBody.
+        r"""Sets the url of this UpdateAntileakageRuleRequestBody.
 
         规则应用的url
 
@@ -90,7 +90,7 @@ class UpdateAntileakageRuleRequestBody:
 
     @property
     def category(self):
-        """Gets the category of this UpdateAntileakageRuleRequestBody.
+        r"""Gets the category of this UpdateAntileakageRuleRequestBody.
 
         类别（响应码：code，敏感信息：sensitive）
 
@@ -101,7 +101,7 @@ class UpdateAntileakageRuleRequestBody:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this UpdateAntileakageRuleRequestBody.
+        r"""Sets the category of this UpdateAntileakageRuleRequestBody.
 
         类别（响应码：code，敏感信息：sensitive）
 
@@ -112,7 +112,7 @@ class UpdateAntileakageRuleRequestBody:
 
     @property
     def contents(self):
-        """Gets the contents of this UpdateAntileakageRuleRequestBody.
+        r"""Gets the contents of this UpdateAntileakageRuleRequestBody.
 
         内容（http状态码：400 、401、402 、 403 、404 、 405 、500 、501 、502 、503、 504 、507；手机：phone、身份证号：id_card、邮箱：email）
 
@@ -123,7 +123,7 @@ class UpdateAntileakageRuleRequestBody:
 
     @contents.setter
     def contents(self, contents):
-        """Sets the contents of this UpdateAntileakageRuleRequestBody.
+        r"""Sets the contents of this UpdateAntileakageRuleRequestBody.
 
         内容（http状态码：400 、401、402 、 403 、404 、 405 、500 、501 、502 、503、 504 、507；手机：phone、身份证号：id_card、邮箱：email）
 
@@ -134,7 +134,7 @@ class UpdateAntileakageRuleRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this UpdateAntileakageRuleRequestBody.
+        r"""Gets the action of this UpdateAntileakageRuleRequestBody.
 
         :return: The action of this UpdateAntileakageRuleRequestBody.
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateAntileakageRuleRequestBodyAction`
@@ -143,7 +143,7 @@ class UpdateAntileakageRuleRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this UpdateAntileakageRuleRequestBody.
+        r"""Sets the action of this UpdateAntileakageRuleRequestBody.
 
         :param action: The action of this UpdateAntileakageRuleRequestBody.
         :type action: :class:`huaweicloudsdkwaf.v1.CreateAntileakageRuleRequestBodyAction`
@@ -152,7 +152,7 @@ class UpdateAntileakageRuleRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateAntileakageRuleRequestBody.
+        r"""Gets the description of this UpdateAntileakageRuleRequestBody.
 
         规则描述
 
@@ -163,7 +163,7 @@ class UpdateAntileakageRuleRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateAntileakageRuleRequestBody.
+        r"""Sets the description of this UpdateAntileakageRuleRequestBody.
 
         规则描述
 

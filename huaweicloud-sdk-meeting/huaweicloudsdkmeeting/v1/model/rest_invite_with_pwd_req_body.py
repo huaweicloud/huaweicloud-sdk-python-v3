@@ -35,7 +35,7 @@ class RestInviteWithPwdReqBody:
     }
 
     def __init__(self, call_num=None, org_id=None, conf_id=None, pwd=None, num_belongs_type=None, is_not_overlay_pid_name=None):
-        """RestInviteWithPwdReqBody
+        r"""RestInviteWithPwdReqBody
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class RestInviteWithPwdReqBody:
 
     @property
     def call_num(self):
-        """Gets the call_num of this RestInviteWithPwdReqBody.
+        r"""Gets the call_num of this RestInviteWithPwdReqBody.
 
         被邀请者的SIP号码。
 
@@ -86,7 +86,7 @@ class RestInviteWithPwdReqBody:
 
     @call_num.setter
     def call_num(self, call_num):
-        """Sets the call_num of this RestInviteWithPwdReqBody.
+        r"""Sets the call_num of this RestInviteWithPwdReqBody.
 
         被邀请者的SIP号码。
 
@@ -97,7 +97,7 @@ class RestInviteWithPwdReqBody:
 
     @property
     def org_id(self):
-        """Gets the org_id of this RestInviteWithPwdReqBody.
+        r"""Gets the org_id of this RestInviteWithPwdReqBody.
 
         被邀请者所属企业ID。
 
@@ -108,7 +108,7 @@ class RestInviteWithPwdReqBody:
 
     @org_id.setter
     def org_id(self, org_id):
-        """Sets the org_id of this RestInviteWithPwdReqBody.
+        r"""Sets the org_id of this RestInviteWithPwdReqBody.
 
         被邀请者所属企业ID。
 
@@ -119,7 +119,7 @@ class RestInviteWithPwdReqBody:
 
     @property
     def conf_id(self):
-        """Gets the conf_id of this RestInviteWithPwdReqBody.
+        r"""Gets the conf_id of this RestInviteWithPwdReqBody.
 
         会议ID。
 
@@ -130,7 +130,7 @@ class RestInviteWithPwdReqBody:
 
     @conf_id.setter
     def conf_id(self, conf_id):
-        """Sets the conf_id of this RestInviteWithPwdReqBody.
+        r"""Sets the conf_id of this RestInviteWithPwdReqBody.
 
         会议ID。
 
@@ -141,7 +141,7 @@ class RestInviteWithPwdReqBody:
 
     @property
     def pwd(self):
-        """Gets the pwd of this RestInviteWithPwdReqBody.
+        r"""Gets the pwd of this RestInviteWithPwdReqBody.
 
         会议的密码（主持人或者来宾）。
 
@@ -152,7 +152,7 @@ class RestInviteWithPwdReqBody:
 
     @pwd.setter
     def pwd(self, pwd):
-        """Sets the pwd of this RestInviteWithPwdReqBody.
+        r"""Sets the pwd of this RestInviteWithPwdReqBody.
 
         会议的密码（主持人或者来宾）。
 
@@ -163,7 +163,7 @@ class RestInviteWithPwdReqBody:
 
     @property
     def num_belongs_type(self):
-        """Gets the num_belongs_type of this RestInviteWithPwdReqBody.
+        r"""Gets the num_belongs_type of this RestInviteWithPwdReqBody.
 
         SIP号码类型。默认是0。 * 0：华为云会议的号码 * 1：VC会议的号码 
 
@@ -174,7 +174,7 @@ class RestInviteWithPwdReqBody:
 
     @num_belongs_type.setter
     def num_belongs_type(self, num_belongs_type):
-        """Sets the num_belongs_type of this RestInviteWithPwdReqBody.
+        r"""Sets the num_belongs_type of this RestInviteWithPwdReqBody.
 
         SIP号码类型。默认是0。 * 0：华为云会议的号码 * 1：VC会议的号码 
 
@@ -185,7 +185,7 @@ class RestInviteWithPwdReqBody:
 
     @property
     def is_not_overlay_pid_name(self):
-        """Gets the is_not_overlay_pid_name of this RestInviteWithPwdReqBody.
+        r"""Gets the is_not_overlay_pid_name of this RestInviteWithPwdReqBody.
 
         是否不叠加会场名（VDC场景下适用）。
 
@@ -196,7 +196,7 @@ class RestInviteWithPwdReqBody:
 
     @is_not_overlay_pid_name.setter
     def is_not_overlay_pid_name(self, is_not_overlay_pid_name):
-        """Sets the is_not_overlay_pid_name of this RestInviteWithPwdReqBody.
+        r"""Sets the is_not_overlay_pid_name of this RestInviteWithPwdReqBody.
 
         是否不叠加会场名（VDC场景下适用）。
 

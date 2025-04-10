@@ -29,7 +29,7 @@ class CreatePostgresqlExtensionRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """CreatePostgresqlExtensionRequest
+        r"""CreatePostgresqlExtensionRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreatePostgresqlExtensionRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreatePostgresqlExtensionRequest.
+        r"""Gets the x_language of this CreatePostgresqlExtensionRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class CreatePostgresqlExtensionRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreatePostgresqlExtensionRequest.
+        r"""Sets the x_language of this CreatePostgresqlExtensionRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class CreatePostgresqlExtensionRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreatePostgresqlExtensionRequest.
+        r"""Gets the instance_id of this CreatePostgresqlExtensionRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class CreatePostgresqlExtensionRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreatePostgresqlExtensionRequest.
+        r"""Sets the instance_id of this CreatePostgresqlExtensionRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class CreatePostgresqlExtensionRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePostgresqlExtensionRequest.
+        r"""Gets the body of this CreatePostgresqlExtensionRequest.
 
         :return: The body of this CreatePostgresqlExtensionRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.ExtensionRequest`
@@ -109,7 +109,7 @@ class CreatePostgresqlExtensionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePostgresqlExtensionRequest.
+        r"""Sets the body of this CreatePostgresqlExtensionRequest.
 
         :param body: The body of this CreatePostgresqlExtensionRequest.
         :type body: :class:`huaweicloudsdkrds.v3.ExtensionRequest`

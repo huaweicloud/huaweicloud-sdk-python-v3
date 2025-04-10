@@ -29,7 +29,7 @@ class CreateBatchOrderAlertsRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, body=None):
-        """CreateBatchOrderAlertsRequest
+        r"""CreateBatchOrderAlertsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateBatchOrderAlertsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateBatchOrderAlertsRequest.
+        r"""Gets the project_id of this CreateBatchOrderAlertsRequest.
 
         ID of project
 
@@ -66,7 +66,7 @@ class CreateBatchOrderAlertsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateBatchOrderAlertsRequest.
+        r"""Sets the project_id of this CreateBatchOrderAlertsRequest.
 
         ID of project
 
@@ -77,7 +77,7 @@ class CreateBatchOrderAlertsRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this CreateBatchOrderAlertsRequest.
+        r"""Gets the workspace_id of this CreateBatchOrderAlertsRequest.
 
         ID of workspace
 
@@ -88,7 +88,7 @@ class CreateBatchOrderAlertsRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this CreateBatchOrderAlertsRequest.
+        r"""Sets the workspace_id of this CreateBatchOrderAlertsRequest.
 
         ID of workspace
 
@@ -99,7 +99,7 @@ class CreateBatchOrderAlertsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateBatchOrderAlertsRequest.
+        r"""Gets the body of this CreateBatchOrderAlertsRequest.
 
         :return: The body of this CreateBatchOrderAlertsRequest.
         :rtype: :class:`huaweicloudsdksa.v2.OrderAlert`
@@ -108,7 +108,7 @@ class CreateBatchOrderAlertsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateBatchOrderAlertsRequest.
+        r"""Sets the body of this CreateBatchOrderAlertsRequest.
 
         :param body: The body of this CreateBatchOrderAlertsRequest.
         :type body: :class:`huaweicloudsdksa.v2.OrderAlert`

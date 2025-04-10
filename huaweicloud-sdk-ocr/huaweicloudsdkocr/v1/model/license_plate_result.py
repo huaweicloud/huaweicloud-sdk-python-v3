@@ -31,7 +31,7 @@ class LicensePlateResult:
     }
 
     def __init__(self, plate_number=None, plate_color=None, plate_location=None, confidence=None):
-        """LicensePlateResult
+        r"""LicensePlateResult
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class LicensePlateResult:
 
     @property
     def plate_number(self):
-        """Gets the plate_number of this LicensePlateResult.
+        r"""Gets the plate_number of this LicensePlateResult.
 
         车牌内容。 
 
@@ -71,7 +71,7 @@ class LicensePlateResult:
 
     @plate_number.setter
     def plate_number(self, plate_number):
-        """Sets the plate_number of this LicensePlateResult.
+        r"""Sets the plate_number of this LicensePlateResult.
 
         车牌内容。 
 
@@ -82,7 +82,7 @@ class LicensePlateResult:
 
     @property
     def plate_color(self):
-        """Gets the plate_color of this LicensePlateResult.
+        r"""Gets the plate_color of this LicensePlateResult.
 
         当前版本支持的车牌底色类型：  - blue: 蓝色  - green: 绿色（小型新能源车牌）  - black: 黑色  - white: 白色  - yellow: 黄色  - yellow_green: 黄绿（大型新能源车牌） 
 
@@ -93,7 +93,7 @@ class LicensePlateResult:
 
     @plate_color.setter
     def plate_color(self, plate_color):
-        """Sets the plate_color of this LicensePlateResult.
+        r"""Sets the plate_color of this LicensePlateResult.
 
         当前版本支持的车牌底色类型：  - blue: 蓝色  - green: 绿色（小型新能源车牌）  - black: 黑色  - white: 白色  - yellow: 黄色  - yellow_green: 黄绿（大型新能源车牌） 
 
@@ -104,7 +104,7 @@ class LicensePlateResult:
 
     @property
     def plate_location(self):
-        """Gets the plate_location of this LicensePlateResult.
+        r"""Gets the plate_location of this LicensePlateResult.
 
         车牌的区域位置信息，列表形式，包含文字区域四个顶点的二维坐标（x,y）;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -115,7 +115,7 @@ class LicensePlateResult:
 
     @plate_location.setter
     def plate_location(self, plate_location):
-        """Sets the plate_location of this LicensePlateResult.
+        r"""Sets the plate_location of this LicensePlateResult.
 
         车牌的区域位置信息，列表形式，包含文字区域四个顶点的二维坐标（x,y）;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -126,7 +126,7 @@ class LicensePlateResult:
 
     @property
     def confidence(self):
-        """Gets the confidence of this LicensePlateResult.
+        r"""Gets the confidence of this LicensePlateResult.
 
         相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。 
 
@@ -137,7 +137,7 @@ class LicensePlateResult:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this LicensePlateResult.
+        r"""Sets the confidence of this LicensePlateResult.
 
         相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。 
 

@@ -27,7 +27,7 @@ class UpgradeDbMajorVersionRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """UpgradeDbMajorVersionRequest
+        r"""UpgradeDbMajorVersionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpgradeDbMajorVersionRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpgradeDbMajorVersionRequest.
+        r"""Gets the instance_id of this UpgradeDbMajorVersionRequest.
 
         实例ID
 
@@ -60,7 +60,7 @@ class UpgradeDbMajorVersionRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpgradeDbMajorVersionRequest.
+        r"""Sets the instance_id of this UpgradeDbMajorVersionRequest.
 
         实例ID
 
@@ -71,7 +71,7 @@ class UpgradeDbMajorVersionRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpgradeDbMajorVersionRequest.
+        r"""Gets the body of this UpgradeDbMajorVersionRequest.
 
         :return: The body of this UpgradeDbMajorVersionRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.UpgradePgMajorVersion`
@@ -80,7 +80,7 @@ class UpgradeDbMajorVersionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpgradeDbMajorVersionRequest.
+        r"""Sets the body of this UpgradeDbMajorVersionRequest.
 
         :param body: The body of this UpgradeDbMajorVersionRequest.
         :type body: :class:`huaweicloudsdkrds.v3.UpgradePgMajorVersion`

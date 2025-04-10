@@ -31,7 +31,7 @@ class SfsInfo:
     }
 
     def __init__(self, pvc_name=None, name=None, addr=None, type=None):
-        """SfsInfo
+        r"""SfsInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class SfsInfo:
 
     @property
     def pvc_name(self):
-        """Gets the pvc_name of this SfsInfo.
+        r"""Gets the pvc_name of this SfsInfo.
 
         BCS服务下的SFS文件系统名称
 
@@ -75,7 +75,7 @@ class SfsInfo:
 
     @pvc_name.setter
     def pvc_name(self, pvc_name):
-        """Sets the pvc_name of this SfsInfo.
+        r"""Sets the pvc_name of this SfsInfo.
 
         BCS服务下的SFS文件系统名称
 
@@ -86,7 +86,7 @@ class SfsInfo:
 
     @property
     def name(self):
-        """Gets the name of this SfsInfo.
+        r"""Gets the name of this SfsInfo.
 
         BCS服务网络存储名称
 
@@ -97,7 +97,7 @@ class SfsInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SfsInfo.
+        r"""Sets the name of this SfsInfo.
 
         BCS服务网络存储名称
 
@@ -108,7 +108,7 @@ class SfsInfo:
 
     @property
     def addr(self):
-        """Gets the addr of this SfsInfo.
+        r"""Gets the addr of this SfsInfo.
 
         BCS服务网络存储地址
 
@@ -119,7 +119,7 @@ class SfsInfo:
 
     @addr.setter
     def addr(self, addr):
-        """Sets the addr of this SfsInfo.
+        r"""Sets the addr of this SfsInfo.
 
         BCS服务网络存储地址
 
@@ -130,7 +130,7 @@ class SfsInfo:
 
     @property
     def type(self):
-        """Gets the type of this SfsInfo.
+        r"""Gets the type of this SfsInfo.
 
         BCS服务网络存储类型
 
@@ -141,7 +141,7 @@ class SfsInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SfsInfo.
+        r"""Sets the type of this SfsInfo.
 
         BCS服务网络存储类型
 

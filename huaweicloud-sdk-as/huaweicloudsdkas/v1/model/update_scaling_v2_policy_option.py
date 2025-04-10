@@ -43,7 +43,7 @@ class UpdateScalingV2PolicyOption:
     }
 
     def __init__(self, scaling_policy_name=None, scaling_resource_id=None, scaling_resource_type=None, scaling_policy_type=None, alarm_id=None, scheduled_policy=None, scaling_policy_action=None, interval_alarm_actions=None, cool_down_time=None, description=None):
-        """UpdateScalingV2PolicyOption
+        r"""UpdateScalingV2PolicyOption
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class UpdateScalingV2PolicyOption:
 
     @property
     def scaling_policy_name(self):
-        """Gets the scaling_policy_name of this UpdateScalingV2PolicyOption.
+        r"""Gets the scaling_policy_name of this UpdateScalingV2PolicyOption.
 
         策略名称（1-64）字符，可以用中文、字母、数字、下划线、中划线的组合。
 
@@ -117,7 +117,7 @@ class UpdateScalingV2PolicyOption:
 
     @scaling_policy_name.setter
     def scaling_policy_name(self, scaling_policy_name):
-        """Sets the scaling_policy_name of this UpdateScalingV2PolicyOption.
+        r"""Sets the scaling_policy_name of this UpdateScalingV2PolicyOption.
 
         策略名称（1-64）字符，可以用中文、字母、数字、下划线、中划线的组合。
 
@@ -128,7 +128,7 @@ class UpdateScalingV2PolicyOption:
 
     @property
     def scaling_resource_id(self):
-        """Gets the scaling_resource_id of this UpdateScalingV2PolicyOption.
+        r"""Gets the scaling_resource_id of this UpdateScalingV2PolicyOption.
 
         伸缩资源ID，伸缩组唯一标识或带宽唯一标识。如果scaling_resource_type为SCALING_GROUP，对应伸缩组唯一标识。如果scaling_resource_type为BANDWIDTH，对应带宽唯一标识。
 
@@ -139,7 +139,7 @@ class UpdateScalingV2PolicyOption:
 
     @scaling_resource_id.setter
     def scaling_resource_id(self, scaling_resource_id):
-        """Sets the scaling_resource_id of this UpdateScalingV2PolicyOption.
+        r"""Sets the scaling_resource_id of this UpdateScalingV2PolicyOption.
 
         伸缩资源ID，伸缩组唯一标识或带宽唯一标识。如果scaling_resource_type为SCALING_GROUP，对应伸缩组唯一标识。如果scaling_resource_type为BANDWIDTH，对应带宽唯一标识。
 
@@ -150,7 +150,7 @@ class UpdateScalingV2PolicyOption:
 
     @property
     def scaling_resource_type(self):
-        """Gets the scaling_resource_type of this UpdateScalingV2PolicyOption.
+        r"""Gets the scaling_resource_type of this UpdateScalingV2PolicyOption.
 
         伸缩资源类型。伸缩组：SCALING_GROUP。带宽：BANDWIDTH。
 
@@ -161,7 +161,7 @@ class UpdateScalingV2PolicyOption:
 
     @scaling_resource_type.setter
     def scaling_resource_type(self, scaling_resource_type):
-        """Sets the scaling_resource_type of this UpdateScalingV2PolicyOption.
+        r"""Sets the scaling_resource_type of this UpdateScalingV2PolicyOption.
 
         伸缩资源类型。伸缩组：SCALING_GROUP。带宽：BANDWIDTH。
 
@@ -172,7 +172,7 @@ class UpdateScalingV2PolicyOption:
 
     @property
     def scaling_policy_type(self):
-        """Gets the scaling_policy_type of this UpdateScalingV2PolicyOption.
+        r"""Gets the scaling_policy_type of this UpdateScalingV2PolicyOption.
 
         策略类型。告警策略：ALARM（与alarm_id对应）；定时策略：SCHEDULED（与scheduled_policy对应）；周期策略：RECURRENCE（与scheduled_policy对应）
 
@@ -183,7 +183,7 @@ class UpdateScalingV2PolicyOption:
 
     @scaling_policy_type.setter
     def scaling_policy_type(self, scaling_policy_type):
-        """Sets the scaling_policy_type of this UpdateScalingV2PolicyOption.
+        r"""Sets the scaling_policy_type of this UpdateScalingV2PolicyOption.
 
         策略类型。告警策略：ALARM（与alarm_id对应）；定时策略：SCHEDULED（与scheduled_policy对应）；周期策略：RECURRENCE（与scheduled_policy对应）
 
@@ -194,7 +194,7 @@ class UpdateScalingV2PolicyOption:
 
     @property
     def alarm_id(self):
-        """Gets the alarm_id of this UpdateScalingV2PolicyOption.
+        r"""Gets the alarm_id of this UpdateScalingV2PolicyOption.
 
         告警ID，即告警规则的ID，当scaling_policy_type为ALARM时该项必选，此时scheduled_policy不生效。创建告警策略成功后，会自动为该告警ID对应的告警规则的alarm_actions字段增加类型为autoscaling的告警触发动作。告警ID通过查询云监控告警规则列表获取，详见《云监控API参考》的“查询告警规则列表”。
 
@@ -205,7 +205,7 @@ class UpdateScalingV2PolicyOption:
 
     @alarm_id.setter
     def alarm_id(self, alarm_id):
-        """Sets the alarm_id of this UpdateScalingV2PolicyOption.
+        r"""Sets the alarm_id of this UpdateScalingV2PolicyOption.
 
         告警ID，即告警规则的ID，当scaling_policy_type为ALARM时该项必选，此时scheduled_policy不生效。创建告警策略成功后，会自动为该告警ID对应的告警规则的alarm_actions字段增加类型为autoscaling的告警触发动作。告警ID通过查询云监控告警规则列表获取，详见《云监控API参考》的“查询告警规则列表”。
 
@@ -216,7 +216,7 @@ class UpdateScalingV2PolicyOption:
 
     @property
     def scheduled_policy(self):
-        """Gets the scheduled_policy of this UpdateScalingV2PolicyOption.
+        r"""Gets the scheduled_policy of this UpdateScalingV2PolicyOption.
 
         :return: The scheduled_policy of this UpdateScalingV2PolicyOption.
         :rtype: :class:`huaweicloudsdkas.v1.ScheduledPolicy`
@@ -225,7 +225,7 @@ class UpdateScalingV2PolicyOption:
 
     @scheduled_policy.setter
     def scheduled_policy(self, scheduled_policy):
-        """Sets the scheduled_policy of this UpdateScalingV2PolicyOption.
+        r"""Sets the scheduled_policy of this UpdateScalingV2PolicyOption.
 
         :param scheduled_policy: The scheduled_policy of this UpdateScalingV2PolicyOption.
         :type scheduled_policy: :class:`huaweicloudsdkas.v1.ScheduledPolicy`
@@ -234,7 +234,7 @@ class UpdateScalingV2PolicyOption:
 
     @property
     def scaling_policy_action(self):
-        """Gets the scaling_policy_action of this UpdateScalingV2PolicyOption.
+        r"""Gets the scaling_policy_action of this UpdateScalingV2PolicyOption.
 
         :return: The scaling_policy_action of this UpdateScalingV2PolicyOption.
         :rtype: :class:`huaweicloudsdkas.v1.ScalingPolicyActionV2`
@@ -243,7 +243,7 @@ class UpdateScalingV2PolicyOption:
 
     @scaling_policy_action.setter
     def scaling_policy_action(self, scaling_policy_action):
-        """Sets the scaling_policy_action of this UpdateScalingV2PolicyOption.
+        r"""Sets the scaling_policy_action of this UpdateScalingV2PolicyOption.
 
         :param scaling_policy_action: The scaling_policy_action of this UpdateScalingV2PolicyOption.
         :type scaling_policy_action: :class:`huaweicloudsdkas.v1.ScalingPolicyActionV2`
@@ -252,7 +252,7 @@ class UpdateScalingV2PolicyOption:
 
     @property
     def interval_alarm_actions(self):
-        """Gets the interval_alarm_actions of this UpdateScalingV2PolicyOption.
+        r"""Gets the interval_alarm_actions of this UpdateScalingV2PolicyOption.
 
         :return: The interval_alarm_actions of this UpdateScalingV2PolicyOption.
         :rtype: list[:class:`huaweicloudsdkas.v1.IntervalAlarmActionsV2`]
@@ -261,7 +261,7 @@ class UpdateScalingV2PolicyOption:
 
     @interval_alarm_actions.setter
     def interval_alarm_actions(self, interval_alarm_actions):
-        """Sets the interval_alarm_actions of this UpdateScalingV2PolicyOption.
+        r"""Sets the interval_alarm_actions of this UpdateScalingV2PolicyOption.
 
         :param interval_alarm_actions: The interval_alarm_actions of this UpdateScalingV2PolicyOption.
         :type interval_alarm_actions: list[:class:`huaweicloudsdkas.v1.IntervalAlarmActionsV2`]
@@ -270,7 +270,7 @@ class UpdateScalingV2PolicyOption:
 
     @property
     def cool_down_time(self):
-        """Gets the cool_down_time of this UpdateScalingV2PolicyOption.
+        r"""Gets the cool_down_time of this UpdateScalingV2PolicyOption.
 
         冷却时间，取值范围0-86400，默认为300，单位是秒。
 
@@ -281,7 +281,7 @@ class UpdateScalingV2PolicyOption:
 
     @cool_down_time.setter
     def cool_down_time(self, cool_down_time):
-        """Sets the cool_down_time of this UpdateScalingV2PolicyOption.
+        r"""Sets the cool_down_time of this UpdateScalingV2PolicyOption.
 
         冷却时间，取值范围0-86400，默认为300，单位是秒。
 
@@ -292,7 +292,7 @@ class UpdateScalingV2PolicyOption:
 
     @property
     def description(self):
-        """Gets the description of this UpdateScalingV2PolicyOption.
+        r"""Gets the description of this UpdateScalingV2PolicyOption.
 
         伸缩策略描述（1-256个字符）
 
@@ -303,7 +303,7 @@ class UpdateScalingV2PolicyOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateScalingV2PolicyOption.
+        r"""Sets the description of this UpdateScalingV2PolicyOption.
 
         伸缩策略描述（1-256个字符）
 

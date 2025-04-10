@@ -31,7 +31,7 @@ class UploadBasicPluginRequest:
     }
 
     def __init__(self, domain_id=None, plugin_name=None, business_type=None, body=None):
-        """UploadBasicPluginRequest
+        r"""UploadBasicPluginRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class UploadBasicPluginRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this UploadBasicPluginRequest.
+        r"""Gets the domain_id of this UploadBasicPluginRequest.
 
         租户ID
 
@@ -72,7 +72,7 @@ class UploadBasicPluginRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this UploadBasicPluginRequest.
+        r"""Sets the domain_id of this UploadBasicPluginRequest.
 
         租户ID
 
@@ -83,7 +83,7 @@ class UploadBasicPluginRequest:
 
     @property
     def plugin_name(self):
-        """Gets the plugin_name of this UploadBasicPluginRequest.
+        r"""Gets the plugin_name of this UploadBasicPluginRequest.
 
         插件名
 
@@ -94,7 +94,7 @@ class UploadBasicPluginRequest:
 
     @plugin_name.setter
     def plugin_name(self, plugin_name):
-        """Sets the plugin_name of this UploadBasicPluginRequest.
+        r"""Sets the plugin_name of this UploadBasicPluginRequest.
 
         插件名
 
@@ -105,7 +105,7 @@ class UploadBasicPluginRequest:
 
     @property
     def business_type(self):
-        """Gets the business_type of this UploadBasicPluginRequest.
+        r"""Gets the business_type of this UploadBasicPluginRequest.
 
         业务类型
 
@@ -116,7 +116,7 @@ class UploadBasicPluginRequest:
 
     @business_type.setter
     def business_type(self, business_type):
-        """Sets the business_type of this UploadBasicPluginRequest.
+        r"""Sets the business_type of this UploadBasicPluginRequest.
 
         业务类型
 
@@ -127,7 +127,7 @@ class UploadBasicPluginRequest:
 
     @property
     def body(self):
-        """Gets the body of this UploadBasicPluginRequest.
+        r"""Gets the body of this UploadBasicPluginRequest.
 
         :return: The body of this UploadBasicPluginRequest.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.UploadBasicPluginRequestBody`
@@ -136,7 +136,7 @@ class UploadBasicPluginRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UploadBasicPluginRequest.
+        r"""Sets the body of this UploadBasicPluginRequest.
 
         :param body: The body of this UploadBasicPluginRequest.
         :type body: :class:`huaweicloudsdkcodeartspipeline.v2.UploadBasicPluginRequestBody`

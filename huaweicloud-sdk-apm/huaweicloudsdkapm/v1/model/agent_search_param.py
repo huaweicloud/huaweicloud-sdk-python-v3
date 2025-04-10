@@ -39,7 +39,7 @@ class AgentSearchParam:
     }
 
     def __init__(self, business_id=None, env_id=None, status=None, region=None, order_by_status=None, page=None, page_size=None, keyword=None):
-        """AgentSearchParam
+        r"""AgentSearchParam
 
         The model defined in huaweicloud sdk
 
@@ -89,7 +89,7 @@ class AgentSearchParam:
 
     @property
     def business_id(self):
-        """Gets the business_id of this AgentSearchParam.
+        r"""Gets the business_id of this AgentSearchParam.
 
         应用id。
 
@@ -100,7 +100,7 @@ class AgentSearchParam:
 
     @business_id.setter
     def business_id(self, business_id):
-        """Sets the business_id of this AgentSearchParam.
+        r"""Sets the business_id of this AgentSearchParam.
 
         应用id。
 
@@ -111,7 +111,7 @@ class AgentSearchParam:
 
     @property
     def env_id(self):
-        """Gets the env_id of this AgentSearchParam.
+        r"""Gets the env_id of this AgentSearchParam.
 
         环境id
 
@@ -122,7 +122,7 @@ class AgentSearchParam:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this AgentSearchParam.
+        r"""Sets the env_id of this AgentSearchParam.
 
         环境id
 
@@ -133,7 +133,7 @@ class AgentSearchParam:
 
     @property
     def status(self):
-        """Gets the status of this AgentSearchParam.
+        r"""Gets the status of this AgentSearchParam.
 
         探针状态。
 
@@ -144,7 +144,7 @@ class AgentSearchParam:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AgentSearchParam.
+        r"""Sets the status of this AgentSearchParam.
 
         探针状态。
 
@@ -155,7 +155,7 @@ class AgentSearchParam:
 
     @property
     def region(self):
-        """Gets the region of this AgentSearchParam.
+        r"""Gets the region of this AgentSearchParam.
 
         region英文名称。
 
@@ -166,7 +166,7 @@ class AgentSearchParam:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this AgentSearchParam.
+        r"""Sets the region of this AgentSearchParam.
 
         region英文名称。
 
@@ -177,7 +177,7 @@ class AgentSearchParam:
 
     @property
     def order_by_status(self):
-        """Gets the order_by_status of this AgentSearchParam.
+        r"""Gets the order_by_status of this AgentSearchParam.
 
         是否按照采集状态排序,默认不填则不按状态排序，填y则按照状态排序。
 
@@ -188,7 +188,7 @@ class AgentSearchParam:
 
     @order_by_status.setter
     def order_by_status(self, order_by_status):
-        """Sets the order_by_status of this AgentSearchParam.
+        r"""Sets the order_by_status of this AgentSearchParam.
 
         是否按照采集状态排序,默认不填则不按状态排序，填y则按照状态排序。
 
@@ -199,7 +199,7 @@ class AgentSearchParam:
 
     @property
     def page(self):
-        """Gets the page of this AgentSearchParam.
+        r"""Gets the page of this AgentSearchParam.
 
         需要查询的页码，最小数为1。
 
@@ -210,7 +210,7 @@ class AgentSearchParam:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this AgentSearchParam.
+        r"""Sets the page of this AgentSearchParam.
 
         需要查询的页码，最小数为1。
 
@@ -221,7 +221,7 @@ class AgentSearchParam:
 
     @property
     def page_size(self):
-        """Gets the page_size of this AgentSearchParam.
+        r"""Gets the page_size of this AgentSearchParam.
 
         查询结果每页最多显示的条数。
 
@@ -232,7 +232,7 @@ class AgentSearchParam:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this AgentSearchParam.
+        r"""Sets the page_size of this AgentSearchParam.
 
         查询结果每页最多显示的条数。
 
@@ -243,7 +243,7 @@ class AgentSearchParam:
 
     @property
     def keyword(self):
-        """Gets the keyword of this AgentSearchParam.
+        r"""Gets the keyword of this AgentSearchParam.
 
         关键字。
 
@@ -254,7 +254,7 @@ class AgentSearchParam:
 
     @keyword.setter
     def keyword(self, keyword):
-        """Sets the keyword of this AgentSearchParam.
+        r"""Sets the keyword of this AgentSearchParam.
 
         关键字。
 

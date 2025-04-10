@@ -27,7 +27,7 @@ class UpdateAgencyMappingRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """UpdateAgencyMappingRequest
+        r"""UpdateAgencyMappingRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateAgencyMappingRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdateAgencyMappingRequest.
+        r"""Gets the cluster_id of this UpdateAgencyMappingRequest.
 
         集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
 
@@ -60,7 +60,7 @@ class UpdateAgencyMappingRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdateAgencyMappingRequest.
+        r"""Sets the cluster_id of this UpdateAgencyMappingRequest.
 
         集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
 
@@ -71,7 +71,7 @@ class UpdateAgencyMappingRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAgencyMappingRequest.
+        r"""Gets the body of this UpdateAgencyMappingRequest.
 
         :return: The body of this UpdateAgencyMappingRequest.
         :rtype: :class:`huaweicloudsdkmrs.v2.AgencyMappingArray`
@@ -80,7 +80,7 @@ class UpdateAgencyMappingRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAgencyMappingRequest.
+        r"""Sets the body of this UpdateAgencyMappingRequest.
 
         :param body: The body of this UpdateAgencyMappingRequest.
         :type body: :class:`huaweicloudsdkmrs.v2.AgencyMappingArray`

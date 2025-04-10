@@ -39,7 +39,7 @@ class IndicatorDetail:
     }
 
     def __init__(self, id=None, name=None, data_object=None, workspace_id=None, project_id=None, dataclass_ref=None, create_time=None, update_time=None):
-        """IndicatorDetail
+        r"""IndicatorDetail
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class IndicatorDetail:
 
     @property
     def id(self):
-        """Gets the id of this IndicatorDetail.
+        r"""Gets the id of this IndicatorDetail.
 
         威胁情报ID
 
@@ -102,7 +102,7 @@ class IndicatorDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this IndicatorDetail.
+        r"""Sets the id of this IndicatorDetail.
 
         威胁情报ID
 
@@ -113,7 +113,7 @@ class IndicatorDetail:
 
     @property
     def name(self):
-        """Gets the name of this IndicatorDetail.
+        r"""Gets the name of this IndicatorDetail.
 
         威胁情报名称
 
@@ -124,7 +124,7 @@ class IndicatorDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this IndicatorDetail.
+        r"""Sets the name of this IndicatorDetail.
 
         威胁情报名称
 
@@ -135,7 +135,7 @@ class IndicatorDetail:
 
     @property
     def data_object(self):
-        """Gets the data_object of this IndicatorDetail.
+        r"""Gets the data_object of this IndicatorDetail.
 
         :return: The data_object of this IndicatorDetail.
         :rtype: :class:`huaweicloudsdksecmaster.v2.IndicatorDataObjectDetail`
@@ -144,7 +144,7 @@ class IndicatorDetail:
 
     @data_object.setter
     def data_object(self, data_object):
-        """Sets the data_object of this IndicatorDetail.
+        r"""Sets the data_object of this IndicatorDetail.
 
         :param data_object: The data_object of this IndicatorDetail.
         :type data_object: :class:`huaweicloudsdksecmaster.v2.IndicatorDataObjectDetail`
@@ -153,7 +153,7 @@ class IndicatorDetail:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this IndicatorDetail.
+        r"""Gets the workspace_id of this IndicatorDetail.
 
         工作空间ID
 
@@ -164,7 +164,7 @@ class IndicatorDetail:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this IndicatorDetail.
+        r"""Sets the workspace_id of this IndicatorDetail.
 
         工作空间ID
 
@@ -175,7 +175,7 @@ class IndicatorDetail:
 
     @property
     def project_id(self):
-        """Gets the project_id of this IndicatorDetail.
+        r"""Gets the project_id of this IndicatorDetail.
 
         项目ID
 
@@ -186,7 +186,7 @@ class IndicatorDetail:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this IndicatorDetail.
+        r"""Sets the project_id of this IndicatorDetail.
 
         项目ID
 
@@ -197,7 +197,7 @@ class IndicatorDetail:
 
     @property
     def dataclass_ref(self):
-        """Gets the dataclass_ref of this IndicatorDetail.
+        r"""Gets the dataclass_ref of this IndicatorDetail.
 
         :return: The dataclass_ref of this IndicatorDetail.
         :rtype: :class:`huaweicloudsdksecmaster.v2.DataClassRefPojo`
@@ -206,7 +206,7 @@ class IndicatorDetail:
 
     @dataclass_ref.setter
     def dataclass_ref(self, dataclass_ref):
-        """Sets the dataclass_ref of this IndicatorDetail.
+        r"""Sets the dataclass_ref of this IndicatorDetail.
 
         :param dataclass_ref: The dataclass_ref of this IndicatorDetail.
         :type dataclass_ref: :class:`huaweicloudsdksecmaster.v2.DataClassRefPojo`
@@ -215,7 +215,7 @@ class IndicatorDetail:
 
     @property
     def create_time(self):
-        """Gets the create_time of this IndicatorDetail.
+        r"""Gets the create_time of this IndicatorDetail.
 
         创建时间
 
@@ -226,7 +226,7 @@ class IndicatorDetail:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this IndicatorDetail.
+        r"""Sets the create_time of this IndicatorDetail.
 
         创建时间
 
@@ -237,7 +237,7 @@ class IndicatorDetail:
 
     @property
     def update_time(self):
-        """Gets the update_time of this IndicatorDetail.
+        r"""Gets the update_time of this IndicatorDetail.
 
         更新时间
 
@@ -248,7 +248,7 @@ class IndicatorDetail:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this IndicatorDetail.
+        r"""Sets the update_time of this IndicatorDetail.
 
         更新时间
 

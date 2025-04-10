@@ -32,7 +32,7 @@ class ListUpComingWebinarsResponse(SdkResponse):
     }
 
     def __init__(self, offset=None, limit=None, count=None, data=None):
-        """ListUpComingWebinarsResponse
+        r"""ListUpComingWebinarsResponse
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListUpComingWebinarsResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListUpComingWebinarsResponse.
+        r"""Gets the offset of this ListUpComingWebinarsResponse.
 
         偏移量。
 
@@ -73,7 +73,7 @@ class ListUpComingWebinarsResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListUpComingWebinarsResponse.
+        r"""Sets the offset of this ListUpComingWebinarsResponse.
 
         偏移量。
 
@@ -84,7 +84,7 @@ class ListUpComingWebinarsResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListUpComingWebinarsResponse.
+        r"""Gets the limit of this ListUpComingWebinarsResponse.
 
         每页的记录数。
 
@@ -95,7 +95,7 @@ class ListUpComingWebinarsResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListUpComingWebinarsResponse.
+        r"""Sets the limit of this ListUpComingWebinarsResponse.
 
         每页的记录数。
 
@@ -106,7 +106,7 @@ class ListUpComingWebinarsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListUpComingWebinarsResponse.
+        r"""Gets the count of this ListUpComingWebinarsResponse.
 
         总记录数。
 
@@ -117,7 +117,7 @@ class ListUpComingWebinarsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListUpComingWebinarsResponse.
+        r"""Sets the count of this ListUpComingWebinarsResponse.
 
         总记录数。
 
@@ -128,7 +128,7 @@ class ListUpComingWebinarsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListUpComingWebinarsResponse.
+        r"""Gets the data of this ListUpComingWebinarsResponse.
 
         即将召开研讨会信息列表。
 
@@ -139,7 +139,7 @@ class ListUpComingWebinarsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListUpComingWebinarsResponse.
+        r"""Sets the data of this ListUpComingWebinarsResponse.
 
         即将召开研讨会信息列表。
 

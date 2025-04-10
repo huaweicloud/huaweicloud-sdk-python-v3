@@ -29,7 +29,7 @@ class ShowWorkflowRequest:
     }
 
     def __init__(self, show_param_detail=None, eihealth_project_id=None, workflow_id=None):
-        """ShowWorkflowRequest
+        r"""ShowWorkflowRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowWorkflowRequest:
 
     @property
     def show_param_detail(self):
-        """Gets the show_param_detail of this ShowWorkflowRequest.
+        r"""Gets the show_param_detail of this ShowWorkflowRequest.
 
         是否显示模板参数详情
 
@@ -66,7 +66,7 @@ class ShowWorkflowRequest:
 
     @show_param_detail.setter
     def show_param_detail(self, show_param_detail):
-        """Sets the show_param_detail of this ShowWorkflowRequest.
+        r"""Sets the show_param_detail of this ShowWorkflowRequest.
 
         是否显示模板参数详情
 
@@ -77,7 +77,7 @@ class ShowWorkflowRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this ShowWorkflowRequest.
+        r"""Gets the eihealth_project_id of this ShowWorkflowRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -88,7 +88,7 @@ class ShowWorkflowRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this ShowWorkflowRequest.
+        r"""Sets the eihealth_project_id of this ShowWorkflowRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -99,7 +99,7 @@ class ShowWorkflowRequest:
 
     @property
     def workflow_id(self):
-        """Gets the workflow_id of this ShowWorkflowRequest.
+        r"""Gets the workflow_id of this ShowWorkflowRequest.
 
         流程id
 
@@ -110,7 +110,7 @@ class ShowWorkflowRequest:
 
     @workflow_id.setter
     def workflow_id(self, workflow_id):
-        """Sets the workflow_id of this ShowWorkflowRequest.
+        r"""Sets the workflow_id of this ShowWorkflowRequest.
 
         流程id
 

@@ -30,7 +30,7 @@ class DeleteMindmapRecycleByIdResponse(SdkResponse):
     }
 
     def __init__(self, code=None, data=None, message=None):
-        """DeleteMindmapRecycleByIdResponse
+        r"""DeleteMindmapRecycleByIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class DeleteMindmapRecycleByIdResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this DeleteMindmapRecycleByIdResponse.
+        r"""Gets the code of this DeleteMindmapRecycleByIdResponse.
 
         :return: The code of this DeleteMindmapRecycleByIdResponse.
         :rtype: str
@@ -67,7 +67,7 @@ class DeleteMindmapRecycleByIdResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this DeleteMindmapRecycleByIdResponse.
+        r"""Sets the code of this DeleteMindmapRecycleByIdResponse.
 
         :param code: The code of this DeleteMindmapRecycleByIdResponse.
         :type code: str
@@ -76,7 +76,7 @@ class DeleteMindmapRecycleByIdResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this DeleteMindmapRecycleByIdResponse.
+        r"""Gets the data of this DeleteMindmapRecycleByIdResponse.
 
         :return: The data of this DeleteMindmapRecycleByIdResponse.
         :rtype: object
@@ -85,7 +85,7 @@ class DeleteMindmapRecycleByIdResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this DeleteMindmapRecycleByIdResponse.
+        r"""Sets the data of this DeleteMindmapRecycleByIdResponse.
 
         :param data: The data of this DeleteMindmapRecycleByIdResponse.
         :type data: object
@@ -94,7 +94,7 @@ class DeleteMindmapRecycleByIdResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this DeleteMindmapRecycleByIdResponse.
+        r"""Gets the message of this DeleteMindmapRecycleByIdResponse.
 
         :return: The message of this DeleteMindmapRecycleByIdResponse.
         :rtype: str
@@ -103,7 +103,7 @@ class DeleteMindmapRecycleByIdResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this DeleteMindmapRecycleByIdResponse.
+        r"""Sets the message of this DeleteMindmapRecycleByIdResponse.
 
         :param message: The message of this DeleteMindmapRecycleByIdResponse.
         :type message: str

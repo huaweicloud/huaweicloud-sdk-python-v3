@@ -29,7 +29,7 @@ class UpdateAutopilotUpgradePlanRequest:
     }
 
     def __init__(self, cluster_id=None, upgrade_plan_id=None, body=None):
-        """UpdateAutopilotUpgradePlanRequest
+        r"""UpdateAutopilotUpgradePlanRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateAutopilotUpgradePlanRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdateAutopilotUpgradePlanRequest.
+        r"""Gets the cluster_id of this UpdateAutopilotUpgradePlanRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -66,7 +66,7 @@ class UpdateAutopilotUpgradePlanRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdateAutopilotUpgradePlanRequest.
+        r"""Sets the cluster_id of this UpdateAutopilotUpgradePlanRequest.
 
         集群ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -77,7 +77,7 @@ class UpdateAutopilotUpgradePlanRequest:
 
     @property
     def upgrade_plan_id(self):
-        """Gets the upgrade_plan_id of this UpdateAutopilotUpgradePlanRequest.
+        r"""Gets the upgrade_plan_id of this UpdateAutopilotUpgradePlanRequest.
 
         集群自动升级计划ID
 
@@ -88,7 +88,7 @@ class UpdateAutopilotUpgradePlanRequest:
 
     @upgrade_plan_id.setter
     def upgrade_plan_id(self, upgrade_plan_id):
-        """Sets the upgrade_plan_id of this UpdateAutopilotUpgradePlanRequest.
+        r"""Sets the upgrade_plan_id of this UpdateAutopilotUpgradePlanRequest.
 
         集群自动升级计划ID
 
@@ -99,7 +99,7 @@ class UpdateAutopilotUpgradePlanRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAutopilotUpgradePlanRequest.
+        r"""Gets the body of this UpdateAutopilotUpgradePlanRequest.
 
         :return: The body of this UpdateAutopilotUpgradePlanRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.DelayUpgradePlanRequestBody`
@@ -108,7 +108,7 @@ class UpdateAutopilotUpgradePlanRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAutopilotUpgradePlanRequest.
+        r"""Sets the body of this UpdateAutopilotUpgradePlanRequest.
 
         :param body: The body of this UpdateAutopilotUpgradePlanRequest.
         :type body: :class:`huaweicloudsdkcce.v3.DelayUpgradePlanRequestBody`

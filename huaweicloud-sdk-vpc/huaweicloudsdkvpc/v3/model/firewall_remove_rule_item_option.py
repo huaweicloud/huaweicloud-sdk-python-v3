@@ -25,7 +25,7 @@ class FirewallRemoveRuleItemOption:
     }
 
     def __init__(self, id=None):
-        """FirewallRemoveRuleItemOption
+        r"""FirewallRemoveRuleItemOption
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class FirewallRemoveRuleItemOption:
 
     @property
     def id(self):
-        """Gets the id of this FirewallRemoveRuleItemOption.
+        r"""Gets the id of this FirewallRemoveRuleItemOption.
 
         功能说明：要删除的ACL规则id
 
@@ -53,7 +53,7 @@ class FirewallRemoveRuleItemOption:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this FirewallRemoveRuleItemOption.
+        r"""Sets the id of this FirewallRemoveRuleItemOption.
 
         功能说明：要删除的ACL规则id
 

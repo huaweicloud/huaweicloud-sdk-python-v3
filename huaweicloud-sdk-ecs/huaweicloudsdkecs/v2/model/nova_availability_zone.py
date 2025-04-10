@@ -29,7 +29,7 @@ class NovaAvailabilityZone:
     }
 
     def __init__(self, hosts=None, zone_name=None, zone_state=None):
-        """NovaAvailabilityZone
+        r"""NovaAvailabilityZone
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class NovaAvailabilityZone:
 
     @property
     def hosts(self):
-        """Gets the hosts of this NovaAvailabilityZone.
+        r"""Gets the hosts of this NovaAvailabilityZone.
 
         该字段的值为null。
 
@@ -65,7 +65,7 @@ class NovaAvailabilityZone:
 
     @hosts.setter
     def hosts(self, hosts):
-        """Sets the hosts of this NovaAvailabilityZone.
+        r"""Sets the hosts of this NovaAvailabilityZone.
 
         该字段的值为null。
 
@@ -76,7 +76,7 @@ class NovaAvailabilityZone:
 
     @property
     def zone_name(self):
-        """Gets the zone_name of this NovaAvailabilityZone.
+        r"""Gets the zone_name of this NovaAvailabilityZone.
 
         可用域的名称。
 
@@ -87,7 +87,7 @@ class NovaAvailabilityZone:
 
     @zone_name.setter
     def zone_name(self, zone_name):
-        """Sets the zone_name of this NovaAvailabilityZone.
+        r"""Sets the zone_name of this NovaAvailabilityZone.
 
         可用域的名称。
 
@@ -98,7 +98,7 @@ class NovaAvailabilityZone:
 
     @property
     def zone_state(self):
-        """Gets the zone_state of this NovaAvailabilityZone.
+        r"""Gets the zone_state of this NovaAvailabilityZone.
 
         :return: The zone_state of this NovaAvailabilityZone.
         :rtype: :class:`huaweicloudsdkecs.v2.NovaAvailabilityZoneState`
@@ -107,7 +107,7 @@ class NovaAvailabilityZone:
 
     @zone_state.setter
     def zone_state(self, zone_state):
-        """Sets the zone_state of this NovaAvailabilityZone.
+        r"""Sets the zone_state of this NovaAvailabilityZone.
 
         :param zone_state: The zone_state of this NovaAvailabilityZone.
         :type zone_state: :class:`huaweicloudsdkecs.v2.NovaAvailabilityZoneState`

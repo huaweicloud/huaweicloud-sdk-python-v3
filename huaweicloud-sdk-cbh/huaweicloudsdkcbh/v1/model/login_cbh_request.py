@@ -25,7 +25,7 @@ class LoginCbhRequest:
     }
 
     def __init__(self, body=None):
-        """LoginCbhRequest
+        r"""LoginCbhRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class LoginCbhRequest:
 
     @property
     def body(self):
-        """Gets the body of this LoginCbhRequest.
+        r"""Gets the body of this LoginCbhRequest.
 
         :return: The body of this LoginCbhRequest.
         :rtype: :class:`huaweicloudsdkcbh.v1.LoginCbhRequestBody`
@@ -52,7 +52,7 @@ class LoginCbhRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this LoginCbhRequest.
+        r"""Sets the body of this LoginCbhRequest.
 
         :param body: The body of this LoginCbhRequest.
         :type body: :class:`huaweicloudsdkcbh.v1.LoginCbhRequestBody`

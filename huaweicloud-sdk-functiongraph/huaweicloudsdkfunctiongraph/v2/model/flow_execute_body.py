@@ -27,7 +27,7 @@ class FlowExecuteBody:
     }
 
     def __init__(self, headers=None, input=None):
-        """FlowExecuteBody
+        r"""FlowExecuteBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class FlowExecuteBody:
 
     @property
     def headers(self):
-        """Gets the headers of this FlowExecuteBody.
+        r"""Gets the headers of this FlowExecuteBody.
 
         函数执行时需要的Header
 
@@ -60,7 +60,7 @@ class FlowExecuteBody:
 
     @headers.setter
     def headers(self, headers):
-        """Sets the headers of this FlowExecuteBody.
+        r"""Sets the headers of this FlowExecuteBody.
 
         函数执行时需要的Header
 
@@ -71,7 +71,7 @@ class FlowExecuteBody:
 
     @property
     def input(self):
-        """Gets the input of this FlowExecuteBody.
+        r"""Gets the input of this FlowExecuteBody.
 
         定义函数执行时的入参，支持使用JSONPATH进行映射，以及指定默认值
 
@@ -82,7 +82,7 @@ class FlowExecuteBody:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this FlowExecuteBody.
+        r"""Sets the input of this FlowExecuteBody.
 
         定义函数执行时的入参，支持使用JSONPATH进行映射，以及指定默认值
 

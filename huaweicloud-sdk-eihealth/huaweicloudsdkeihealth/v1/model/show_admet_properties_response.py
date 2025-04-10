@@ -26,7 +26,7 @@ class ShowAdmetPropertiesResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ShowAdmetPropertiesResponse
+        r"""ShowAdmetPropertiesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowAdmetPropertiesResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ShowAdmetPropertiesResponse.
+        r"""Gets the body of this ShowAdmetPropertiesResponse.
 
         分子ADMET属性字典
 
@@ -55,7 +55,7 @@ class ShowAdmetPropertiesResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowAdmetPropertiesResponse.
+        r"""Sets the body of this ShowAdmetPropertiesResponse.
 
         分子ADMET属性字典
 

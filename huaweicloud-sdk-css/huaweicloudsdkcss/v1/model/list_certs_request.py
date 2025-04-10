@@ -31,7 +31,7 @@ class ListCertsRequest:
     }
 
     def __init__(self, cluster_id=None, start=None, limit=None, certs_type=None):
-        """ListCertsRequest
+        r"""ListCertsRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListCertsRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListCertsRequest.
+        r"""Gets the cluster_id of this ListCertsRequest.
 
         指定待查询的集群ID。
 
@@ -74,7 +74,7 @@ class ListCertsRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListCertsRequest.
+        r"""Sets the cluster_id of this ListCertsRequest.
 
         指定待查询的集群ID。
 
@@ -85,7 +85,7 @@ class ListCertsRequest:
 
     @property
     def start(self):
-        """Gets the start of this ListCertsRequest.
+        r"""Gets the start of this ListCertsRequest.
 
         指定查询起始值，默认值为1，即从第1个证书开始查询。
 
@@ -96,7 +96,7 @@ class ListCertsRequest:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this ListCertsRequest.
+        r"""Sets the start of this ListCertsRequest.
 
         指定查询起始值，默认值为1，即从第1个证书开始查询。
 
@@ -107,7 +107,7 @@ class ListCertsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListCertsRequest.
+        r"""Gets the limit of this ListCertsRequest.
 
         指定查询个数，默认值为10，即一次查询10个证书信息。
 
@@ -118,7 +118,7 @@ class ListCertsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListCertsRequest.
+        r"""Sets the limit of this ListCertsRequest.
 
         指定查询个数，默认值为10，即一次查询10个证书信息。
 
@@ -129,7 +129,7 @@ class ListCertsRequest:
 
     @property
     def certs_type(self):
-        """Gets the certs_type of this ListCertsRequest.
+        r"""Gets the certs_type of this ListCertsRequest.
 
         证书类型。defaultCerts为默认证书类型，不指定查询证书类型默认查找自定义证书列表。
 
@@ -140,7 +140,7 @@ class ListCertsRequest:
 
     @certs_type.setter
     def certs_type(self, certs_type):
-        """Sets the certs_type of this ListCertsRequest.
+        r"""Sets the certs_type of this ListCertsRequest.
 
         证书类型。defaultCerts为默认证书类型，不指定查询证书类型默认查找自定义证书列表。
 

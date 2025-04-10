@@ -26,7 +26,7 @@ class CreateConfigurationResponse(SdkResponse):
     }
 
     def __init__(self, configuration=None):
-        """CreateConfigurationResponse
+        r"""CreateConfigurationResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateConfigurationResponse(SdkResponse):
 
     @property
     def configuration(self):
-        """Gets the configuration of this CreateConfigurationResponse.
+        r"""Gets the configuration of this CreateConfigurationResponse.
 
         :return: The configuration of this CreateConfigurationResponse.
         :rtype: :class:`huaweicloudsdkrds.v3.ConfigurationSummaryForCreate`
@@ -53,7 +53,7 @@ class CreateConfigurationResponse(SdkResponse):
 
     @configuration.setter
     def configuration(self, configuration):
-        """Sets the configuration of this CreateConfigurationResponse.
+        r"""Sets the configuration of this CreateConfigurationResponse.
 
         :param configuration: The configuration of this CreateConfigurationResponse.
         :type configuration: :class:`huaweicloudsdkrds.v3.ConfigurationSummaryForCreate`

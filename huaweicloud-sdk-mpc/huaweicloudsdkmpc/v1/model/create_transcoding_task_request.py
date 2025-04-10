@@ -25,7 +25,7 @@ class CreateTranscodingTaskRequest:
     }
 
     def __init__(self, body=None):
-        """CreateTranscodingTaskRequest
+        r"""CreateTranscodingTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateTranscodingTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateTranscodingTaskRequest.
+        r"""Gets the body of this CreateTranscodingTaskRequest.
 
         :return: The body of this CreateTranscodingTaskRequest.
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateTranscodingReq`
@@ -52,7 +52,7 @@ class CreateTranscodingTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTranscodingTaskRequest.
+        r"""Sets the body of this CreateTranscodingTaskRequest.
 
         :param body: The body of this CreateTranscodingTaskRequest.
         :type body: :class:`huaweicloudsdkmpc.v1.CreateTranscodingReq`

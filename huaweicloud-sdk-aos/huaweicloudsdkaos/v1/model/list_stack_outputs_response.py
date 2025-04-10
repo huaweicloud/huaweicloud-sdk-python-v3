@@ -26,7 +26,7 @@ class ListStackOutputsResponse(SdkResponse):
     }
 
     def __init__(self, outputs=None):
-        """ListStackOutputsResponse
+        r"""ListStackOutputsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListStackOutputsResponse(SdkResponse):
 
     @property
     def outputs(self):
-        """Gets the outputs of this ListStackOutputsResponse.
+        r"""Gets the outputs of this ListStackOutputsResponse.
 
         资源栈输出列表
 
@@ -55,7 +55,7 @@ class ListStackOutputsResponse(SdkResponse):
 
     @outputs.setter
     def outputs(self, outputs):
-        """Sets the outputs of this ListStackOutputsResponse.
+        r"""Sets the outputs of this ListStackOutputsResponse.
 
         资源栈输出列表
 

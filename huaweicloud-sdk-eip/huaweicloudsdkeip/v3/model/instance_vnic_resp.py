@@ -45,7 +45,7 @@ class InstanceVnicResp:
     }
 
     def __init__(self, private_ip_address=None, device_id=None, device_owner=None, vpc_id=None, port_id=None, mac=None, vtep=None, vni=None, instance_id=None, instance_type=None, port_profile=None):
-        """InstanceVnicResp
+        r"""InstanceVnicResp
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class InstanceVnicResp:
 
     @property
     def private_ip_address(self):
-        """Gets the private_ip_address of this InstanceVnicResp.
+        r"""Gets the private_ip_address of this InstanceVnicResp.
 
         实例port的ip地址
 
@@ -124,7 +124,7 @@ class InstanceVnicResp:
 
     @private_ip_address.setter
     def private_ip_address(self, private_ip_address):
-        """Sets the private_ip_address of this InstanceVnicResp.
+        r"""Sets the private_ip_address of this InstanceVnicResp.
 
         实例port的ip地址
 
@@ -135,7 +135,7 @@ class InstanceVnicResp:
 
     @property
     def device_id(self):
-        """Gets the device_id of this InstanceVnicResp.
+        r"""Gets the device_id of this InstanceVnicResp.
 
         port的device_id
 
@@ -146,7 +146,7 @@ class InstanceVnicResp:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this InstanceVnicResp.
+        r"""Sets the device_id of this InstanceVnicResp.
 
         port的device_id
 
@@ -157,7 +157,7 @@ class InstanceVnicResp:
 
     @property
     def device_owner(self):
-        """Gets the device_owner of this InstanceVnicResp.
+        r"""Gets the device_owner of this InstanceVnicResp.
 
         port的device_owner
 
@@ -168,7 +168,7 @@ class InstanceVnicResp:
 
     @device_owner.setter
     def device_owner(self, device_owner):
-        """Sets the device_owner of this InstanceVnicResp.
+        r"""Sets the device_owner of this InstanceVnicResp.
 
         port的device_owner
 
@@ -179,7 +179,7 @@ class InstanceVnicResp:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this InstanceVnicResp.
+        r"""Gets the vpc_id of this InstanceVnicResp.
 
         port的vpc_id
 
@@ -190,7 +190,7 @@ class InstanceVnicResp:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this InstanceVnicResp.
+        r"""Sets the vpc_id of this InstanceVnicResp.
 
         port的vpc_id
 
@@ -201,7 +201,7 @@ class InstanceVnicResp:
 
     @property
     def port_id(self):
-        """Gets the port_id of this InstanceVnicResp.
+        r"""Gets the port_id of this InstanceVnicResp.
 
         port的uuid
 
@@ -212,7 +212,7 @@ class InstanceVnicResp:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this InstanceVnicResp.
+        r"""Sets the port_id of this InstanceVnicResp.
 
         port的uuid
 
@@ -223,7 +223,7 @@ class InstanceVnicResp:
 
     @property
     def mac(self):
-        """Gets the mac of this InstanceVnicResp.
+        r"""Gets the mac of this InstanceVnicResp.
 
         port的mac地址
 
@@ -234,7 +234,7 @@ class InstanceVnicResp:
 
     @mac.setter
     def mac(self, mac):
-        """Sets the mac of this InstanceVnicResp.
+        r"""Sets the mac of this InstanceVnicResp.
 
         port的mac地址
 
@@ -245,7 +245,7 @@ class InstanceVnicResp:
 
     @property
     def vtep(self):
-        """Gets the vtep of this InstanceVnicResp.
+        r"""Gets the vtep of this InstanceVnicResp.
 
         port的vtep地址
 
@@ -256,7 +256,7 @@ class InstanceVnicResp:
 
     @vtep.setter
     def vtep(self, vtep):
-        """Sets the vtep of this InstanceVnicResp.
+        r"""Sets the vtep of this InstanceVnicResp.
 
         port的vtep地址
 
@@ -267,7 +267,7 @@ class InstanceVnicResp:
 
     @property
     def vni(self):
-        """Gets the vni of this InstanceVnicResp.
+        r"""Gets the vni of this InstanceVnicResp.
 
         port的vni
 
@@ -278,7 +278,7 @@ class InstanceVnicResp:
 
     @vni.setter
     def vni(self, vni):
-        """Sets the vni of this InstanceVnicResp.
+        r"""Sets the vni of this InstanceVnicResp.
 
         port的vni
 
@@ -289,7 +289,7 @@ class InstanceVnicResp:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this InstanceVnicResp.
+        r"""Gets the instance_id of this InstanceVnicResp.
 
         port的实例id
 
@@ -300,7 +300,7 @@ class InstanceVnicResp:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this InstanceVnicResp.
+        r"""Sets the instance_id of this InstanceVnicResp.
 
         port的实例id
 
@@ -311,7 +311,7 @@ class InstanceVnicResp:
 
     @property
     def instance_type(self):
-        """Gets the instance_type of this InstanceVnicResp.
+        r"""Gets the instance_type of this InstanceVnicResp.
 
         port的实例类型
 
@@ -322,7 +322,7 @@ class InstanceVnicResp:
 
     @instance_type.setter
     def instance_type(self, instance_type):
-        """Sets the instance_type of this InstanceVnicResp.
+        r"""Sets the instance_type of this InstanceVnicResp.
 
         port的实例类型
 
@@ -333,7 +333,7 @@ class InstanceVnicResp:
 
     @property
     def port_profile(self):
-        """Gets the port_profile of this InstanceVnicResp.
+        r"""Gets the port_profile of this InstanceVnicResp.
 
         port的profile
 
@@ -344,7 +344,7 @@ class InstanceVnicResp:
 
     @port_profile.setter
     def port_profile(self, port_profile):
-        """Sets the port_profile of this InstanceVnicResp.
+        r"""Sets the port_profile of this InstanceVnicResp.
 
         port的profile
 

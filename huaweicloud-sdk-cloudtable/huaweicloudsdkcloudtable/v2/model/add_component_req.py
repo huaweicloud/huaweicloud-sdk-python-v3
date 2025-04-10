@@ -25,7 +25,7 @@ class AddComponentReq:
     }
 
     def __init__(self, node_num=None):
-        """AddComponentReq
+        r"""AddComponentReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AddComponentReq:
 
     @property
     def node_num(self):
-        """Gets the node_num of this AddComponentReq.
+        r"""Gets the node_num of this AddComponentReq.
 
         节点个数, 范围是[2,10]
 
@@ -53,7 +53,7 @@ class AddComponentReq:
 
     @node_num.setter
     def node_num(self, node_num):
-        """Sets the node_num of this AddComponentReq.
+        r"""Sets the node_num of this AddComponentReq.
 
         节点个数, 范围是[2,10]
 

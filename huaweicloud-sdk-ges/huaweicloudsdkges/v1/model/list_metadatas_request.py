@@ -27,7 +27,7 @@ class ListMetadatasRequest:
     }
 
     def __init__(self, limit=None, offset=None):
-        """ListMetadatasRequest
+        r"""ListMetadatasRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListMetadatasRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListMetadatasRequest.
+        r"""Gets the limit of this ListMetadatasRequest.
 
         每页资源数量的最大值，默认为10。
 
@@ -61,7 +61,7 @@ class ListMetadatasRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListMetadatasRequest.
+        r"""Sets the limit of this ListMetadatasRequest.
 
         每页资源数量的最大值，默认为10。
 
@@ -72,7 +72,7 @@ class ListMetadatasRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListMetadatasRequest.
+        r"""Gets the offset of this ListMetadatasRequest.
 
         本次请求的起始位置，默认为0。
 
@@ -83,7 +83,7 @@ class ListMetadatasRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListMetadatasRequest.
+        r"""Sets the offset of this ListMetadatasRequest.
 
         本次请求的起始位置，默认为0。
 

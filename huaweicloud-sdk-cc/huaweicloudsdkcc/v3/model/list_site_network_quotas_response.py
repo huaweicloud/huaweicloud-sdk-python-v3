@@ -28,7 +28,7 @@ class ListSiteNetworkQuotasResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, quotas=None):
-        """ListSiteNetworkQuotasResponse
+        r"""ListSiteNetworkQuotasResponse
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListSiteNetworkQuotasResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListSiteNetworkQuotasResponse.
+        r"""Gets the request_id of this ListSiteNetworkQuotasResponse.
 
         请求ID。
 
@@ -60,7 +60,7 @@ class ListSiteNetworkQuotasResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListSiteNetworkQuotasResponse.
+        r"""Sets the request_id of this ListSiteNetworkQuotasResponse.
 
         请求ID。
 
@@ -71,7 +71,7 @@ class ListSiteNetworkQuotasResponse(SdkResponse):
 
     @property
     def quotas(self):
-        """Gets the quotas of this ListSiteNetworkQuotasResponse.
+        r"""Gets the quotas of this ListSiteNetworkQuotasResponse.
 
         分支网络的配额列表。
 
@@ -82,7 +82,7 @@ class ListSiteNetworkQuotasResponse(SdkResponse):
 
     @quotas.setter
     def quotas(self, quotas):
-        """Sets the quotas of this ListSiteNetworkQuotasResponse.
+        r"""Sets the quotas of this ListSiteNetworkQuotasResponse.
 
         分支网络的配额列表。
 

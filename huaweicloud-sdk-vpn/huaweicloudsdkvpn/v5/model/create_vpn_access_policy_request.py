@@ -30,7 +30,7 @@ class CreateVpnAccessPolicyRequest:
     }
 
     def __init__(self, vpn_server_id=None, x_client_token=None, body=None):
-        """CreateVpnAccessPolicyRequest
+        r"""CreateVpnAccessPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CreateVpnAccessPolicyRequest:
 
     @property
     def vpn_server_id(self):
-        """Gets the vpn_server_id of this CreateVpnAccessPolicyRequest.
+        r"""Gets the vpn_server_id of this CreateVpnAccessPolicyRequest.
 
         VPN服务端 ID
 
@@ -68,7 +68,7 @@ class CreateVpnAccessPolicyRequest:
 
     @vpn_server_id.setter
     def vpn_server_id(self, vpn_server_id):
-        """Sets the vpn_server_id of this CreateVpnAccessPolicyRequest.
+        r"""Sets the vpn_server_id of this CreateVpnAccessPolicyRequest.
 
         VPN服务端 ID
 
@@ -79,7 +79,7 @@ class CreateVpnAccessPolicyRequest:
 
     @property
     def x_client_token(self):
-        """Gets the x_client_token of this CreateVpnAccessPolicyRequest.
+        r"""Gets the x_client_token of this CreateVpnAccessPolicyRequest.
 
         幂等性标识
 
@@ -90,7 +90,7 @@ class CreateVpnAccessPolicyRequest:
 
     @x_client_token.setter
     def x_client_token(self, x_client_token):
-        """Sets the x_client_token of this CreateVpnAccessPolicyRequest.
+        r"""Sets the x_client_token of this CreateVpnAccessPolicyRequest.
 
         幂等性标识
 
@@ -101,7 +101,7 @@ class CreateVpnAccessPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateVpnAccessPolicyRequest.
+        r"""Gets the body of this CreateVpnAccessPolicyRequest.
 
         :return: The body of this CreateVpnAccessPolicyRequest.
         :rtype: :class:`huaweicloudsdkvpn.v5.CreateVpnAccessPolicyRequestBody`
@@ -110,7 +110,7 @@ class CreateVpnAccessPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateVpnAccessPolicyRequest.
+        r"""Sets the body of this CreateVpnAccessPolicyRequest.
 
         :param body: The body of this CreateVpnAccessPolicyRequest.
         :type body: :class:`huaweicloudsdkvpn.v5.CreateVpnAccessPolicyRequestBody`

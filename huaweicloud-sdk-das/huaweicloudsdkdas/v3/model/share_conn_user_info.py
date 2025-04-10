@@ -27,7 +27,7 @@ class ShareConnUserInfo:
     }
 
     def __init__(self, user_id=None, user_name=None):
-        """ShareConnUserInfo
+        r"""ShareConnUserInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShareConnUserInfo:
 
     @property
     def user_id(self):
-        """Gets the user_id of this ShareConnUserInfo.
+        r"""Gets the user_id of this ShareConnUserInfo.
 
         用户ID
 
@@ -59,7 +59,7 @@ class ShareConnUserInfo:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ShareConnUserInfo.
+        r"""Sets the user_id of this ShareConnUserInfo.
 
         用户ID
 
@@ -70,7 +70,7 @@ class ShareConnUserInfo:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ShareConnUserInfo.
+        r"""Gets the user_name of this ShareConnUserInfo.
 
         用户名
 
@@ -81,7 +81,7 @@ class ShareConnUserInfo:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ShareConnUserInfo.
+        r"""Sets the user_name of this ShareConnUserInfo.
 
         用户名
 

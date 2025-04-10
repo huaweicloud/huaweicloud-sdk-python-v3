@@ -29,7 +29,7 @@ class FullStagePluginsRelationVOAllSteps:
     }
 
     def __init__(self, plugin_name=None, display_name=None, version=None):
-        """FullStagePluginsRelationVOAllSteps
+        r"""FullStagePluginsRelationVOAllSteps
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class FullStagePluginsRelationVOAllSteps:
 
     @property
     def plugin_name(self):
-        """Gets the plugin_name of this FullStagePluginsRelationVOAllSteps.
+        r"""Gets the plugin_name of this FullStagePluginsRelationVOAllSteps.
 
         插件名
 
@@ -68,7 +68,7 @@ class FullStagePluginsRelationVOAllSteps:
 
     @plugin_name.setter
     def plugin_name(self, plugin_name):
-        """Sets the plugin_name of this FullStagePluginsRelationVOAllSteps.
+        r"""Sets the plugin_name of this FullStagePluginsRelationVOAllSteps.
 
         插件名
 
@@ -79,7 +79,7 @@ class FullStagePluginsRelationVOAllSteps:
 
     @property
     def display_name(self):
-        """Gets the display_name of this FullStagePluginsRelationVOAllSteps.
+        r"""Gets the display_name of this FullStagePluginsRelationVOAllSteps.
 
         展示名
 
@@ -90,7 +90,7 @@ class FullStagePluginsRelationVOAllSteps:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this FullStagePluginsRelationVOAllSteps.
+        r"""Sets the display_name of this FullStagePluginsRelationVOAllSteps.
 
         展示名
 
@@ -101,7 +101,7 @@ class FullStagePluginsRelationVOAllSteps:
 
     @property
     def version(self):
-        """Gets the version of this FullStagePluginsRelationVOAllSteps.
+        r"""Gets the version of this FullStagePluginsRelationVOAllSteps.
 
         版本
 
@@ -112,7 +112,7 @@ class FullStagePluginsRelationVOAllSteps:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this FullStagePluginsRelationVOAllSteps.
+        r"""Sets the version of this FullStagePluginsRelationVOAllSteps.
 
         版本
 

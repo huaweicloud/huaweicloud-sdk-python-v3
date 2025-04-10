@@ -24,7 +24,7 @@ class DisableKeyRotationResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DisableKeyRotationResponse
+        r"""DisableKeyRotationResponse
 
         The model defined in huaweicloud sdk
 

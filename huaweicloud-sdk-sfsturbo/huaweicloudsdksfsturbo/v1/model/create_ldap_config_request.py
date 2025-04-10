@@ -27,7 +27,7 @@ class CreateLdapConfigRequest:
     }
 
     def __init__(self, share_id=None, body=None):
-        """CreateLdapConfigRequest
+        r"""CreateLdapConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateLdapConfigRequest:
 
     @property
     def share_id(self):
-        """Gets the share_id of this CreateLdapConfigRequest.
+        r"""Gets the share_id of this CreateLdapConfigRequest.
 
         文件系统id
 
@@ -60,7 +60,7 @@ class CreateLdapConfigRequest:
 
     @share_id.setter
     def share_id(self, share_id):
-        """Sets the share_id of this CreateLdapConfigRequest.
+        r"""Sets the share_id of this CreateLdapConfigRequest.
 
         文件系统id
 
@@ -71,7 +71,7 @@ class CreateLdapConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateLdapConfigRequest.
+        r"""Gets the body of this CreateLdapConfigRequest.
 
         :return: The body of this CreateLdapConfigRequest.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.CreateLdapConfigRequestBody`
@@ -80,7 +80,7 @@ class CreateLdapConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateLdapConfigRequest.
+        r"""Sets the body of this CreateLdapConfigRequest.
 
         :param body: The body of this CreateLdapConfigRequest.
         :type body: :class:`huaweicloudsdksfsturbo.v1.CreateLdapConfigRequestBody`

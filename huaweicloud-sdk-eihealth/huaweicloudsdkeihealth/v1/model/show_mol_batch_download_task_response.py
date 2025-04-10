@@ -32,7 +32,7 @@ class ShowMolBatchDownloadTaskResponse(SdkResponse):
     }
 
     def __init__(self, status=None, filename=None, out_dir=None, progress=None):
-        """ShowMolBatchDownloadTaskResponse
+        r"""ShowMolBatchDownloadTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowMolBatchDownloadTaskResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowMolBatchDownloadTaskResponse.
+        r"""Gets the status of this ShowMolBatchDownloadTaskResponse.
 
         任务状态：WAITING、RUNNING、FINISHED、CANCELLED、ABNORMAL、FAILED
 
@@ -76,7 +76,7 @@ class ShowMolBatchDownloadTaskResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowMolBatchDownloadTaskResponse.
+        r"""Sets the status of this ShowMolBatchDownloadTaskResponse.
 
         任务状态：WAITING、RUNNING、FINISHED、CANCELLED、ABNORMAL、FAILED
 
@@ -87,7 +87,7 @@ class ShowMolBatchDownloadTaskResponse(SdkResponse):
 
     @property
     def filename(self):
-        """Gets the filename of this ShowMolBatchDownloadTaskResponse.
+        r"""Gets the filename of this ShowMolBatchDownloadTaskResponse.
 
         下载文件名
 
@@ -98,7 +98,7 @@ class ShowMolBatchDownloadTaskResponse(SdkResponse):
 
     @filename.setter
     def filename(self, filename):
-        """Sets the filename of this ShowMolBatchDownloadTaskResponse.
+        r"""Sets the filename of this ShowMolBatchDownloadTaskResponse.
 
         下载文件名
 
@@ -109,7 +109,7 @@ class ShowMolBatchDownloadTaskResponse(SdkResponse):
 
     @property
     def out_dir(self):
-        """Gets the out_dir of this ShowMolBatchDownloadTaskResponse.
+        r"""Gets the out_dir of this ShowMolBatchDownloadTaskResponse.
 
         下载路径
 
@@ -120,7 +120,7 @@ class ShowMolBatchDownloadTaskResponse(SdkResponse):
 
     @out_dir.setter
     def out_dir(self, out_dir):
-        """Sets the out_dir of this ShowMolBatchDownloadTaskResponse.
+        r"""Sets the out_dir of this ShowMolBatchDownloadTaskResponse.
 
         下载路径
 
@@ -131,7 +131,7 @@ class ShowMolBatchDownloadTaskResponse(SdkResponse):
 
     @property
     def progress(self):
-        """Gets the progress of this ShowMolBatchDownloadTaskResponse.
+        r"""Gets the progress of this ShowMolBatchDownloadTaskResponse.
 
         :return: The progress of this ShowMolBatchDownloadTaskResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.TaskProgress`
@@ -140,7 +140,7 @@ class ShowMolBatchDownloadTaskResponse(SdkResponse):
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this ShowMolBatchDownloadTaskResponse.
+        r"""Sets the progress of this ShowMolBatchDownloadTaskResponse.
 
         :param progress: The progress of this ShowMolBatchDownloadTaskResponse.
         :type progress: :class:`huaweicloudsdkeihealth.v1.TaskProgress`

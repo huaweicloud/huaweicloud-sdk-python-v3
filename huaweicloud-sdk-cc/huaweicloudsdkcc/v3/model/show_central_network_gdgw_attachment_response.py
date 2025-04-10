@@ -28,7 +28,7 @@ class ShowCentralNetworkGdgwAttachmentResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, central_network_gdgw_attachment=None):
-        """ShowCentralNetworkGdgwAttachmentResponse
+        r"""ShowCentralNetworkGdgwAttachmentResponse
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowCentralNetworkGdgwAttachmentResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowCentralNetworkGdgwAttachmentResponse.
+        r"""Gets the request_id of this ShowCentralNetworkGdgwAttachmentResponse.
 
         请求ID。
 
@@ -60,7 +60,7 @@ class ShowCentralNetworkGdgwAttachmentResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowCentralNetworkGdgwAttachmentResponse.
+        r"""Sets the request_id of this ShowCentralNetworkGdgwAttachmentResponse.
 
         请求ID。
 
@@ -71,7 +71,7 @@ class ShowCentralNetworkGdgwAttachmentResponse(SdkResponse):
 
     @property
     def central_network_gdgw_attachment(self):
-        """Gets the central_network_gdgw_attachment of this ShowCentralNetworkGdgwAttachmentResponse.
+        r"""Gets the central_network_gdgw_attachment of this ShowCentralNetworkGdgwAttachmentResponse.
 
         :return: The central_network_gdgw_attachment of this ShowCentralNetworkGdgwAttachmentResponse.
         :rtype: :class:`huaweicloudsdkcc.v3.CentralNetworkGdgwAttachment`
@@ -80,7 +80,7 @@ class ShowCentralNetworkGdgwAttachmentResponse(SdkResponse):
 
     @central_network_gdgw_attachment.setter
     def central_network_gdgw_attachment(self, central_network_gdgw_attachment):
-        """Sets the central_network_gdgw_attachment of this ShowCentralNetworkGdgwAttachmentResponse.
+        r"""Sets the central_network_gdgw_attachment of this ShowCentralNetworkGdgwAttachmentResponse.
 
         :param central_network_gdgw_attachment: The central_network_gdgw_attachment of this ShowCentralNetworkGdgwAttachmentResponse.
         :type central_network_gdgw_attachment: :class:`huaweicloudsdkcc.v3.CentralNetworkGdgwAttachment`

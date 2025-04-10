@@ -28,7 +28,7 @@ class ShowVendorResponse(SdkResponse):
     }
 
     def __init__(self, logo=None, name=None):
-        """ShowVendorResponse
+        r"""ShowVendorResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowVendorResponse(SdkResponse):
 
     @property
     def logo(self):
-        """Gets the logo of this ShowVendorResponse.
+        r"""Gets the logo of this ShowVendorResponse.
 
         商标Base64
 
@@ -62,7 +62,7 @@ class ShowVendorResponse(SdkResponse):
 
     @logo.setter
     def logo(self, logo):
-        """Sets the logo of this ShowVendorResponse.
+        r"""Sets the logo of this ShowVendorResponse.
 
         商标Base64
 
@@ -73,7 +73,7 @@ class ShowVendorResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowVendorResponse.
+        r"""Gets the name of this ShowVendorResponse.
 
         名称
 
@@ -84,7 +84,7 @@ class ShowVendorResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowVendorResponse.
+        r"""Sets the name of this ShowVendorResponse.
 
         名称
 

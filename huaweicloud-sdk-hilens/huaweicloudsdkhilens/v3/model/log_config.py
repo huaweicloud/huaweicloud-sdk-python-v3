@@ -35,7 +35,7 @@ class LogConfig:
     }
 
     def __init__(self, component=None, level=None, rotate_num=None, rotate_period=None, size=None, type=None):
-        """LogConfig
+        r"""LogConfig
 
         The model defined in huaweicloud sdk
 
@@ -76,7 +76,7 @@ class LogConfig:
 
     @property
     def component(self):
-        """Gets the component of this LogConfig.
+        r"""Gets the component of this LogConfig.
 
         app：应用日志。 system：系统的日志
 
@@ -87,7 +87,7 @@ class LogConfig:
 
     @component.setter
     def component(self, component):
-        """Sets the component of this LogConfig.
+        r"""Sets the component of this LogConfig.
 
         app：应用日志。 system：系统的日志
 
@@ -98,7 +98,7 @@ class LogConfig:
 
     @property
     def level(self):
-        """Gets the level of this LogConfig.
+        r"""Gets the level of this LogConfig.
 
         系统级日志可配置为/error/warning/info/debug ; 不传会默认为info。
 
@@ -109,7 +109,7 @@ class LogConfig:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this LogConfig.
+        r"""Sets the level of this LogConfig.
 
         系统级日志可配置为/error/warning/info/debug ; 不传会默认为info。
 
@@ -120,7 +120,7 @@ class LogConfig:
 
     @property
     def rotate_num(self):
-        """Gets the rotate_num of this LogConfig.
+        r"""Gets the rotate_num of this LogConfig.
 
         日志rotate个数，默认5，hilens取值范围1-30，ief取值范围1-10
 
@@ -131,7 +131,7 @@ class LogConfig:
 
     @rotate_num.setter
     def rotate_num(self, rotate_num):
-        """Sets the rotate_num of this LogConfig.
+        r"""Sets the rotate_num of this LogConfig.
 
         日志rotate个数，默认5，hilens取值范围1-30，ief取值范围1-10
 
@@ -142,7 +142,7 @@ class LogConfig:
 
     @property
     def rotate_period(self):
-        """Gets the rotate_period of this LogConfig.
+        r"""Gets the rotate_period of this LogConfig.
 
         日志rotate周期，可选项，只支持ief：daily monthly weekly yearly.
 
@@ -153,7 +153,7 @@ class LogConfig:
 
     @rotate_period.setter
     def rotate_period(self, rotate_period):
-        """Sets the rotate_period of this LogConfig.
+        r"""Sets the rotate_period of this LogConfig.
 
         日志rotate周期，可选项，只支持ief：daily monthly weekly yearly.
 
@@ -164,7 +164,7 @@ class LogConfig:
 
     @property
     def size(self):
-        """Gets the size of this LogConfig.
+        r"""Gets the size of this LogConfig.
 
         应用日志文件大小限制，单位MB，默认50，取值范围10-1000。
 
@@ -175,7 +175,7 @@ class LogConfig:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this LogConfig.
+        r"""Sets the size of this LogConfig.
 
         应用日志文件大小限制，单位MB，默认50，取值范围10-1000。
 
@@ -186,7 +186,7 @@ class LogConfig:
 
     @property
     def type(self):
-        """Gets the type of this LogConfig.
+        r"""Gets the type of this LogConfig.
 
         - LTS 将日志发送到云日志服务（Log Tank Service，简称LTS） - local 本地日志
 
@@ -197,7 +197,7 @@ class LogConfig:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this LogConfig.
+        r"""Sets the type of this LogConfig.
 
         - LTS 将日志发送到云日志服务（Log Tank Service，简称LTS） - local 本地日志
 

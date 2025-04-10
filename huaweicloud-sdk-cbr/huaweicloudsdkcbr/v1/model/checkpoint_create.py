@@ -35,7 +35,7 @@ class CheckpointCreate:
     }
 
     def __init__(self, created_at=None, id=None, project_id=None, status=None, vault=None, extra_info=None):
-        """CheckpointCreate
+        r"""CheckpointCreate
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class CheckpointCreate:
 
     @property
     def created_at(self):
-        """Gets the created_at of this CheckpointCreate.
+        r"""Gets the created_at of this CheckpointCreate.
 
         创建时间，例如:\"2020-02-05T10:38:34.209782\"
 
@@ -85,7 +85,7 @@ class CheckpointCreate:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this CheckpointCreate.
+        r"""Sets the created_at of this CheckpointCreate.
 
         创建时间，例如:\"2020-02-05T10:38:34.209782\"
 
@@ -96,7 +96,7 @@ class CheckpointCreate:
 
     @property
     def id(self):
-        """Gets the id of this CheckpointCreate.
+        r"""Gets the id of this CheckpointCreate.
 
         还原点ID
 
@@ -107,7 +107,7 @@ class CheckpointCreate:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CheckpointCreate.
+        r"""Sets the id of this CheckpointCreate.
 
         还原点ID
 
@@ -118,7 +118,7 @@ class CheckpointCreate:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CheckpointCreate.
+        r"""Gets the project_id of this CheckpointCreate.
 
         项目ID
 
@@ -129,7 +129,7 @@ class CheckpointCreate:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CheckpointCreate.
+        r"""Sets the project_id of this CheckpointCreate.
 
         项目ID
 
@@ -140,7 +140,7 @@ class CheckpointCreate:
 
     @property
     def status(self):
-        """Gets the status of this CheckpointCreate.
+        r"""Gets the status of this CheckpointCreate.
 
         状态:available,deleting,protecting,deleted,error-deleting,error
 
@@ -151,7 +151,7 @@ class CheckpointCreate:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CheckpointCreate.
+        r"""Sets the status of this CheckpointCreate.
 
         状态:available,deleting,protecting,deleted,error-deleting,error
 
@@ -162,7 +162,7 @@ class CheckpointCreate:
 
     @property
     def vault(self):
-        """Gets the vault of this CheckpointCreate.
+        r"""Gets the vault of this CheckpointCreate.
 
         :return: The vault of this CheckpointCreate.
         :rtype: :class:`huaweicloudsdkcbr.v1.CheckpointPlanCreate`
@@ -171,7 +171,7 @@ class CheckpointCreate:
 
     @vault.setter
     def vault(self, vault):
-        """Sets the vault of this CheckpointCreate.
+        r"""Sets the vault of this CheckpointCreate.
 
         :param vault: The vault of this CheckpointCreate.
         :type vault: :class:`huaweicloudsdkcbr.v1.CheckpointPlanCreate`
@@ -180,7 +180,7 @@ class CheckpointCreate:
 
     @property
     def extra_info(self):
-        """Gets the extra_info of this CheckpointCreate.
+        r"""Gets the extra_info of this CheckpointCreate.
 
         :return: The extra_info of this CheckpointCreate.
         :rtype: :class:`huaweicloudsdkcbr.v1.CheckpointExtraInfoResp`
@@ -189,7 +189,7 @@ class CheckpointCreate:
 
     @extra_info.setter
     def extra_info(self, extra_info):
-        """Sets the extra_info of this CheckpointCreate.
+        r"""Sets the extra_info of this CheckpointCreate.
 
         :param extra_info: The extra_info of this CheckpointCreate.
         :type extra_info: :class:`huaweicloudsdkcbr.v1.CheckpointExtraInfoResp`

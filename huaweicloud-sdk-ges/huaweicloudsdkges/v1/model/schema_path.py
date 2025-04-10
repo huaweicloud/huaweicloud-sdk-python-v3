@@ -31,7 +31,7 @@ class SchemaPath:
     }
 
     def __init__(self, path=None, log=None, status=None, cause=None):
-        """SchemaPath
+        r"""SchemaPath
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class SchemaPath:
 
     @property
     def path(self):
-        """Gets the path of this SchemaPath.
+        r"""Gets the path of this SchemaPath.
 
         OBS文件路径
 
@@ -73,7 +73,7 @@ class SchemaPath:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this SchemaPath.
+        r"""Sets the path of this SchemaPath.
 
         OBS文件路径
 
@@ -84,7 +84,7 @@ class SchemaPath:
 
     @property
     def log(self):
-        """Gets the log of this SchemaPath.
+        r"""Gets the log of this SchemaPath.
 
         OBS文件导入日志存储文件
 
@@ -95,7 +95,7 @@ class SchemaPath:
 
     @log.setter
     def log(self, log):
-        """Sets the log of this SchemaPath.
+        r"""Sets the log of this SchemaPath.
 
         OBS文件导入日志存储文件
 
@@ -106,7 +106,7 @@ class SchemaPath:
 
     @property
     def status(self):
-        """Gets the status of this SchemaPath.
+        r"""Gets the status of this SchemaPath.
 
         - OBS文件导入状态。 - success：完全成功 - failed：完全失败 - partFailed：部分成功
 
@@ -117,7 +117,7 @@ class SchemaPath:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SchemaPath.
+        r"""Sets the status of this SchemaPath.
 
         - OBS文件导入状态。 - success：完全成功 - failed：完全失败 - partFailed：部分成功
 
@@ -128,7 +128,7 @@ class SchemaPath:
 
     @property
     def cause(self):
-        """Gets the cause of this SchemaPath.
+        r"""Gets the cause of this SchemaPath.
 
         导入失败原因
 
@@ -139,7 +139,7 @@ class SchemaPath:
 
     @cause.setter
     def cause(self, cause):
-        """Sets the cause of this SchemaPath.
+        r"""Sets the cause of this SchemaPath.
 
         导入失败原因
 

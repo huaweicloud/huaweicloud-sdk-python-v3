@@ -29,7 +29,7 @@ class ApplyObject:
     }
 
     def __init__(self, object_id=None, object_type=None, object_name=None):
-        """ApplyObject
+        r"""ApplyObject
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ApplyObject:
 
     @property
     def object_id(self):
-        """Gets the object_id of this ApplyObject.
+        r"""Gets the object_id of this ApplyObject.
 
         对象ID。
 
@@ -68,7 +68,7 @@ class ApplyObject:
 
     @object_id.setter
     def object_id(self, object_id):
-        """Sets the object_id of this ApplyObject.
+        r"""Sets the object_id of this ApplyObject.
 
         对象ID。
 
@@ -79,7 +79,7 @@ class ApplyObject:
 
     @property
     def object_type(self):
-        """Gets the object_type of this ApplyObject.
+        r"""Gets the object_type of this ApplyObject.
 
         对象类型，可选值为： - DESKTOP：桌面。 - DESKTOP_POOL：桌面池。 - ALL_DESKTOPS: 所有桌面，仅供触发式任务使用。 - DESKTOP_TAG：桌面标签
 
@@ -90,7 +90,7 @@ class ApplyObject:
 
     @object_type.setter
     def object_type(self, object_type):
-        """Sets the object_type of this ApplyObject.
+        r"""Sets the object_type of this ApplyObject.
 
         对象类型，可选值为： - DESKTOP：桌面。 - DESKTOP_POOL：桌面池。 - ALL_DESKTOPS: 所有桌面，仅供触发式任务使用。 - DESKTOP_TAG：桌面标签
 
@@ -101,7 +101,7 @@ class ApplyObject:
 
     @property
     def object_name(self):
-        """Gets the object_name of this ApplyObject.
+        r"""Gets the object_name of this ApplyObject.
 
         对象名称。
 
@@ -112,7 +112,7 @@ class ApplyObject:
 
     @object_name.setter
     def object_name(self, object_name):
-        """Sets the object_name of this ApplyObject.
+        r"""Sets the object_name of this ApplyObject.
 
         对象名称。
 

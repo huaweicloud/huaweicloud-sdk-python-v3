@@ -31,7 +31,7 @@ class UpdateHttpReferenceTableRequestBody:
     }
 
     def __init__(self, name=None, type=None, values=None, description=None):
-        """UpdateHttpReferenceTableRequestBody
+        r"""UpdateHttpReferenceTableRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class UpdateHttpReferenceTableRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateHttpReferenceTableRequestBody.
+        r"""Gets the name of this UpdateHttpReferenceTableRequestBody.
 
         引用表名称
 
@@ -72,7 +72,7 @@ class UpdateHttpReferenceTableRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateHttpReferenceTableRequestBody.
+        r"""Sets the name of this UpdateHttpReferenceTableRequestBody.
 
         引用表名称
 
@@ -83,7 +83,7 @@ class UpdateHttpReferenceTableRequestBody:
 
     @property
     def type(self):
-        """Gets the type of this UpdateHttpReferenceTableRequestBody.
+        r"""Gets the type of this UpdateHttpReferenceTableRequestBody.
 
         引用表类型，可选值为：url、params、ip、cookie、referer、user-agent、header、response_code、response_header、response_body。
 
@@ -94,7 +94,7 @@ class UpdateHttpReferenceTableRequestBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this UpdateHttpReferenceTableRequestBody.
+        r"""Sets the type of this UpdateHttpReferenceTableRequestBody.
 
         引用表类型，可选值为：url、params、ip、cookie、referer、user-agent、header、response_code、response_header、response_body。
 
@@ -105,7 +105,7 @@ class UpdateHttpReferenceTableRequestBody:
 
     @property
     def values(self):
-        """Gets the values of this UpdateHttpReferenceTableRequestBody.
+        r"""Gets the values of this UpdateHttpReferenceTableRequestBody.
 
         引用表的值
 
@@ -116,7 +116,7 @@ class UpdateHttpReferenceTableRequestBody:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this UpdateHttpReferenceTableRequestBody.
+        r"""Sets the values of this UpdateHttpReferenceTableRequestBody.
 
         引用表的值
 
@@ -127,7 +127,7 @@ class UpdateHttpReferenceTableRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateHttpReferenceTableRequestBody.
+        r"""Gets the description of this UpdateHttpReferenceTableRequestBody.
 
         引用表描述，最长128字符
 
@@ -138,7 +138,7 @@ class UpdateHttpReferenceTableRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateHttpReferenceTableRequestBody.
+        r"""Sets the description of this UpdateHttpReferenceTableRequestBody.
 
         引用表描述，最长128字符
 

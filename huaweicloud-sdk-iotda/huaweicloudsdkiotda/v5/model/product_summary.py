@@ -45,7 +45,7 @@ class ProductSummary:
     }
 
     def __init__(self, app_id=None, app_name=None, product_id=None, name=None, device_type=None, protocol_type=None, data_format=None, manufacturer_name=None, industry=None, description=None, create_time=None):
-        """ProductSummary
+        r"""ProductSummary
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ProductSummary:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ProductSummary.
+        r"""Gets the app_id of this ProductSummary.
 
         资源空间ID。
 
@@ -124,7 +124,7 @@ class ProductSummary:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ProductSummary.
+        r"""Sets the app_id of this ProductSummary.
 
         资源空间ID。
 
@@ -135,7 +135,7 @@ class ProductSummary:
 
     @property
     def app_name(self):
-        """Gets the app_name of this ProductSummary.
+        r"""Gets the app_name of this ProductSummary.
 
         资源空间名称。
 
@@ -146,7 +146,7 @@ class ProductSummary:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ProductSummary.
+        r"""Sets the app_name of this ProductSummary.
 
         资源空间名称。
 
@@ -157,7 +157,7 @@ class ProductSummary:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ProductSummary.
+        r"""Gets the product_id of this ProductSummary.
 
         产品ID，用于唯一标识一个产品，在物联网平台创建产品后由平台分配获得。
 
@@ -168,7 +168,7 @@ class ProductSummary:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ProductSummary.
+        r"""Sets the product_id of this ProductSummary.
 
         产品ID，用于唯一标识一个产品，在物联网平台创建产品后由平台分配获得。
 
@@ -179,7 +179,7 @@ class ProductSummary:
 
     @property
     def name(self):
-        """Gets the name of this ProductSummary.
+        r"""Gets the name of this ProductSummary.
 
         产品名称。
 
@@ -190,7 +190,7 @@ class ProductSummary:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ProductSummary.
+        r"""Sets the name of this ProductSummary.
 
         产品名称。
 
@@ -201,7 +201,7 @@ class ProductSummary:
 
     @property
     def device_type(self):
-        """Gets the device_type of this ProductSummary.
+        r"""Gets the device_type of this ProductSummary.
 
         设备类型。
 
@@ -212,7 +212,7 @@ class ProductSummary:
 
     @device_type.setter
     def device_type(self, device_type):
-        """Sets the device_type of this ProductSummary.
+        r"""Sets the device_type of this ProductSummary.
 
         设备类型。
 
@@ -223,7 +223,7 @@ class ProductSummary:
 
     @property
     def protocol_type(self):
-        """Gets the protocol_type of this ProductSummary.
+        r"""Gets the protocol_type of this ProductSummary.
 
         设备使用的协议类型。取值范围：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF， OPC-UA，OPC-DA，Other，TCP，UDP。
 
@@ -234,7 +234,7 @@ class ProductSummary:
 
     @protocol_type.setter
     def protocol_type(self, protocol_type):
-        """Sets the protocol_type of this ProductSummary.
+        r"""Sets the protocol_type of this ProductSummary.
 
         设备使用的协议类型。取值范围：MQTT，CoAP，HTTP，HTTPS，Modbus，ONVIF， OPC-UA，OPC-DA，Other，TCP，UDP。
 
@@ -245,7 +245,7 @@ class ProductSummary:
 
     @property
     def data_format(self):
-        """Gets the data_format of this ProductSummary.
+        r"""Gets the data_format of this ProductSummary.
 
         设备上报数据的格式，取值范围：json，binary。
 
@@ -256,7 +256,7 @@ class ProductSummary:
 
     @data_format.setter
     def data_format(self, data_format):
-        """Sets the data_format of this ProductSummary.
+        r"""Sets the data_format of this ProductSummary.
 
         设备上报数据的格式，取值范围：json，binary。
 
@@ -267,7 +267,7 @@ class ProductSummary:
 
     @property
     def manufacturer_name(self):
-        """Gets the manufacturer_name of this ProductSummary.
+        r"""Gets the manufacturer_name of this ProductSummary.
 
         厂商名称。
 
@@ -278,7 +278,7 @@ class ProductSummary:
 
     @manufacturer_name.setter
     def manufacturer_name(self, manufacturer_name):
-        """Sets the manufacturer_name of this ProductSummary.
+        r"""Sets the manufacturer_name of this ProductSummary.
 
         厂商名称。
 
@@ -289,7 +289,7 @@ class ProductSummary:
 
     @property
     def industry(self):
-        """Gets the industry of this ProductSummary.
+        r"""Gets the industry of this ProductSummary.
 
         设备所属行业。
 
@@ -300,7 +300,7 @@ class ProductSummary:
 
     @industry.setter
     def industry(self, industry):
-        """Sets the industry of this ProductSummary.
+        r"""Sets the industry of this ProductSummary.
 
         设备所属行业。
 
@@ -311,7 +311,7 @@ class ProductSummary:
 
     @property
     def description(self):
-        """Gets the description of this ProductSummary.
+        r"""Gets the description of this ProductSummary.
 
         产品的描述信息。
 
@@ -322,7 +322,7 @@ class ProductSummary:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ProductSummary.
+        r"""Sets the description of this ProductSummary.
 
         产品的描述信息。
 
@@ -333,7 +333,7 @@ class ProductSummary:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ProductSummary.
+        r"""Gets the create_time of this ProductSummary.
 
         在物联网平台创建产品的时间，格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
@@ -344,7 +344,7 @@ class ProductSummary:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ProductSummary.
+        r"""Sets the create_time of this ProductSummary.
 
         在物联网平台创建产品的时间，格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 

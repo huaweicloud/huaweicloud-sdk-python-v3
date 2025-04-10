@@ -27,7 +27,7 @@ class CreateGraphReqGraphPublicIp:
     }
 
     def __init__(self, public_bind_type=None, eip_id=None):
-        """CreateGraphReqGraphPublicIp
+        r"""CreateGraphReqGraphPublicIp
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateGraphReqGraphPublicIp:
 
     @property
     def public_bind_type(self):
-        """Gets the public_bind_type of this CreateGraphReqGraphPublicIp.
+        r"""Gets the public_bind_type of this CreateGraphReqGraphPublicIp.
 
         弹性IP绑定类型，取值如下。  - auto_assign：自动绑定。 - bind_existing：使用已有。
 
@@ -61,7 +61,7 @@ class CreateGraphReqGraphPublicIp:
 
     @public_bind_type.setter
     def public_bind_type(self, public_bind_type):
-        """Sets the public_bind_type of this CreateGraphReqGraphPublicIp.
+        r"""Sets the public_bind_type of this CreateGraphReqGraphPublicIp.
 
         弹性IP绑定类型，取值如下。  - auto_assign：自动绑定。 - bind_existing：使用已有。
 
@@ -72,7 +72,7 @@ class CreateGraphReqGraphPublicIp:
 
     @property
     def eip_id(self):
-        """Gets the eip_id of this CreateGraphReqGraphPublicIp.
+        r"""Gets the eip_id of this CreateGraphReqGraphPublicIp.
 
         弹性IP的id，当publicBindType设置为bind_existing时，该值为用户某个已创建但尚未绑定的EIP的ID；当publicBindType设置为auto_assign时，该值设置为空。
 
@@ -83,7 +83,7 @@ class CreateGraphReqGraphPublicIp:
 
     @eip_id.setter
     def eip_id(self, eip_id):
-        """Sets the eip_id of this CreateGraphReqGraphPublicIp.
+        r"""Sets the eip_id of this CreateGraphReqGraphPublicIp.
 
         弹性IP的id，当publicBindType设置为bind_existing时，该值为用户某个已创建但尚未绑定的EIP的ID；当publicBindType设置为auto_assign时，该值设置为空。
 

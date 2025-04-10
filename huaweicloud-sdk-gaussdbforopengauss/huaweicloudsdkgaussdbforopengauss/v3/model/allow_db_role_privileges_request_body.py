@@ -27,7 +27,7 @@ class AllowDbRolePrivilegesRequestBody:
     }
 
     def __init__(self, db_name=None, user=None):
-        """AllowDbRolePrivilegesRequestBody
+        r"""AllowDbRolePrivilegesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AllowDbRolePrivilegesRequestBody:
 
     @property
     def db_name(self):
-        """Gets the db_name of this AllowDbRolePrivilegesRequestBody.
+        r"""Gets the db_name of this AllowDbRolePrivilegesRequestBody.
 
         数据库名称。 不能使用模板库，且是已存在的数据库名称。 模板库包括postgres， template0 ，template1，templatea，template_pdb，templatem。
 
@@ -59,7 +59,7 @@ class AllowDbRolePrivilegesRequestBody:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this AllowDbRolePrivilegesRequestBody.
+        r"""Sets the db_name of this AllowDbRolePrivilegesRequestBody.
 
         数据库名称。 不能使用模板库，且是已存在的数据库名称。 模板库包括postgres， template0 ，template1，templatea，template_pdb，templatem。
 
@@ -70,7 +70,7 @@ class AllowDbRolePrivilegesRequestBody:
 
     @property
     def user(self):
-        """Gets the user of this AllowDbRolePrivilegesRequestBody.
+        r"""Gets the user of this AllowDbRolePrivilegesRequestBody.
 
         :return: The user of this AllowDbRolePrivilegesRequestBody.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.GaussDBforOpenGaussRoleAttributes`
@@ -79,7 +79,7 @@ class AllowDbRolePrivilegesRequestBody:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this AllowDbRolePrivilegesRequestBody.
+        r"""Sets the user of this AllowDbRolePrivilegesRequestBody.
 
         :param user: The user of this AllowDbRolePrivilegesRequestBody.
         :type user: :class:`huaweicloudsdkgaussdbforopengauss.v3.GaussDBforOpenGaussRoleAttributes`

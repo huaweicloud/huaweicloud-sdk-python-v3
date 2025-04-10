@@ -27,7 +27,7 @@ class UpdatePrePaidBandwidthRequest:
     }
 
     def __init__(self, bandwidth_id=None, body=None):
-        """UpdatePrePaidBandwidthRequest
+        r"""UpdatePrePaidBandwidthRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdatePrePaidBandwidthRequest:
 
     @property
     def bandwidth_id(self):
-        """Gets the bandwidth_id of this UpdatePrePaidBandwidthRequest.
+        r"""Gets the bandwidth_id of this UpdatePrePaidBandwidthRequest.
 
         带宽唯一标识。通过弹性公网IP详情获取，且此弹性公网IP是包周期的。
 
@@ -60,7 +60,7 @@ class UpdatePrePaidBandwidthRequest:
 
     @bandwidth_id.setter
     def bandwidth_id(self, bandwidth_id):
-        """Sets the bandwidth_id of this UpdatePrePaidBandwidthRequest.
+        r"""Sets the bandwidth_id of this UpdatePrePaidBandwidthRequest.
 
         带宽唯一标识。通过弹性公网IP详情获取，且此弹性公网IP是包周期的。
 
@@ -71,7 +71,7 @@ class UpdatePrePaidBandwidthRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePrePaidBandwidthRequest.
+        r"""Gets the body of this UpdatePrePaidBandwidthRequest.
 
         :return: The body of this UpdatePrePaidBandwidthRequest.
         :rtype: :class:`huaweicloudsdkeip.v2.UpdatePrePaidBandwidthRequestBody`
@@ -80,7 +80,7 @@ class UpdatePrePaidBandwidthRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePrePaidBandwidthRequest.
+        r"""Sets the body of this UpdatePrePaidBandwidthRequest.
 
         :param body: The body of this UpdatePrePaidBandwidthRequest.
         :type body: :class:`huaweicloudsdkeip.v2.UpdatePrePaidBandwidthRequestBody`

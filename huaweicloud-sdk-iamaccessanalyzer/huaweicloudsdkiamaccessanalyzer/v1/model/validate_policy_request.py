@@ -31,7 +31,7 @@ class ValidatePolicyRequest:
     }
 
     def __init__(self, limit=None, marker=None, x_language=None, body=None):
-        """ValidatePolicyRequest
+        r"""ValidatePolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ValidatePolicyRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ValidatePolicyRequest.
+        r"""Gets the limit of this ValidatePolicyRequest.
 
         单页最大结果数。
 
@@ -75,7 +75,7 @@ class ValidatePolicyRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ValidatePolicyRequest.
+        r"""Sets the limit of this ValidatePolicyRequest.
 
         单页最大结果数。
 
@@ -86,7 +86,7 @@ class ValidatePolicyRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ValidatePolicyRequest.
+        r"""Gets the marker of this ValidatePolicyRequest.
 
         页面标记。
 
@@ -97,7 +97,7 @@ class ValidatePolicyRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ValidatePolicyRequest.
+        r"""Sets the marker of this ValidatePolicyRequest.
 
         页面标记。
 
@@ -108,7 +108,7 @@ class ValidatePolicyRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ValidatePolicyRequest.
+        r"""Gets the x_language of this ValidatePolicyRequest.
 
         返回消息的语言，默认值为'zh-cn'，表示中文。
 
@@ -119,7 +119,7 @@ class ValidatePolicyRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ValidatePolicyRequest.
+        r"""Sets the x_language of this ValidatePolicyRequest.
 
         返回消息的语言，默认值为'zh-cn'，表示中文。
 
@@ -130,7 +130,7 @@ class ValidatePolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this ValidatePolicyRequest.
+        r"""Gets the body of this ValidatePolicyRequest.
 
         :return: The body of this ValidatePolicyRequest.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.ValidatePolicyReqBody`
@@ -139,7 +139,7 @@ class ValidatePolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ValidatePolicyRequest.
+        r"""Sets the body of this ValidatePolicyRequest.
 
         :param body: The body of this ValidatePolicyRequest.
         :type body: :class:`huaweicloudsdkiamaccessanalyzer.v1.ValidatePolicyReqBody`

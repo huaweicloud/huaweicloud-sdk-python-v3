@@ -27,7 +27,7 @@ class PostgresqlDatabaseForListSchema:
     }
 
     def __init__(self, schema_name=None, owner=None):
-        """PostgresqlDatabaseForListSchema
+        r"""PostgresqlDatabaseForListSchema
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class PostgresqlDatabaseForListSchema:
 
     @property
     def schema_name(self):
-        """Gets the schema_name of this PostgresqlDatabaseForListSchema.
+        r"""Gets the schema_name of this PostgresqlDatabaseForListSchema.
 
         schema名称。
 
@@ -59,7 +59,7 @@ class PostgresqlDatabaseForListSchema:
 
     @schema_name.setter
     def schema_name(self, schema_name):
-        """Sets the schema_name of this PostgresqlDatabaseForListSchema.
+        r"""Sets the schema_name of this PostgresqlDatabaseForListSchema.
 
         schema名称。
 
@@ -70,7 +70,7 @@ class PostgresqlDatabaseForListSchema:
 
     @property
     def owner(self):
-        """Gets the owner of this PostgresqlDatabaseForListSchema.
+        r"""Gets the owner of this PostgresqlDatabaseForListSchema.
 
         schema所属用户。
 
@@ -81,7 +81,7 @@ class PostgresqlDatabaseForListSchema:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this PostgresqlDatabaseForListSchema.
+        r"""Sets the owner of this PostgresqlDatabaseForListSchema.
 
         schema所属用户。
 

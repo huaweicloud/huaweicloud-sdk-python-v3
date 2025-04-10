@@ -35,7 +35,7 @@ class QosSendReceiveInfo:
     }
 
     def __init__(self, bitrate=None, latency=None, jitter=None, packet_loss_max=None, resolution=None, frame=None):
-        """QosSendReceiveInfo
+        r"""QosSendReceiveInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class QosSendReceiveInfo:
 
     @property
     def bitrate(self):
-        """Gets the bitrate of this QosSendReceiveInfo.
+        r"""Gets the bitrate of this QosSendReceiveInfo.
 
         码率, 单位kbps，不含阈值告警。当qosType = audio/video/screen 时有效。
 
@@ -89,7 +89,7 @@ class QosSendReceiveInfo:
 
     @bitrate.setter
     def bitrate(self, bitrate):
-        """Sets the bitrate of this QosSendReceiveInfo.
+        r"""Sets the bitrate of this QosSendReceiveInfo.
 
         码率, 单位kbps，不含阈值告警。当qosType = audio/video/screen 时有效。
 
@@ -100,7 +100,7 @@ class QosSendReceiveInfo:
 
     @property
     def latency(self):
-        """Gets the latency of this QosSendReceiveInfo.
+        r"""Gets the latency of this QosSendReceiveInfo.
 
         时延，单位毫秒, 含阈值告警。当qosType = audio/video/screen 时有效。
 
@@ -111,7 +111,7 @@ class QosSendReceiveInfo:
 
     @latency.setter
     def latency(self, latency):
-        """Sets the latency of this QosSendReceiveInfo.
+        r"""Sets the latency of this QosSendReceiveInfo.
 
         时延，单位毫秒, 含阈值告警。当qosType = audio/video/screen 时有效。
 
@@ -122,7 +122,7 @@ class QosSendReceiveInfo:
 
     @property
     def jitter(self):
-        """Gets the jitter of this QosSendReceiveInfo.
+        r"""Gets the jitter of this QosSendReceiveInfo.
 
         抖动, 单位毫秒，含阈值告警。当qosType = audio/video/screen 时有效。
 
@@ -133,7 +133,7 @@ class QosSendReceiveInfo:
 
     @jitter.setter
     def jitter(self, jitter):
-        """Sets the jitter of this QosSendReceiveInfo.
+        r"""Sets the jitter of this QosSendReceiveInfo.
 
         抖动, 单位毫秒，含阈值告警。当qosType = audio/video/screen 时有效。
 
@@ -144,7 +144,7 @@ class QosSendReceiveInfo:
 
     @property
     def packet_loss_max(self):
-        """Gets the packet_loss_max of this QosSendReceiveInfo.
+        r"""Gets the packet_loss_max of this QosSendReceiveInfo.
 
         最大丢包率, 单位百分比 含阈值告警。当qosType = audio/video/screen 时有效。
 
@@ -155,7 +155,7 @@ class QosSendReceiveInfo:
 
     @packet_loss_max.setter
     def packet_loss_max(self, packet_loss_max):
-        """Sets the packet_loss_max of this QosSendReceiveInfo.
+        r"""Sets the packet_loss_max of this QosSendReceiveInfo.
 
         最大丢包率, 单位百分比 含阈值告警。当qosType = audio/video/screen 时有效。
 
@@ -166,7 +166,7 @@ class QosSendReceiveInfo:
 
     @property
     def resolution(self):
-        """Gets the resolution of this QosSendReceiveInfo.
+        r"""Gets the resolution of this QosSendReceiveInfo.
 
         分辨率, 不含阈值告警。当qosType = video/screen 时有效。
 
@@ -177,7 +177,7 @@ class QosSendReceiveInfo:
 
     @resolution.setter
     def resolution(self, resolution):
-        """Sets the resolution of this QosSendReceiveInfo.
+        r"""Sets the resolution of this QosSendReceiveInfo.
 
         分辨率, 不含阈值告警。当qosType = video/screen 时有效。
 
@@ -188,7 +188,7 @@ class QosSendReceiveInfo:
 
     @property
     def frame(self):
-        """Gets the frame of this QosSendReceiveInfo.
+        r"""Gets the frame of this QosSendReceiveInfo.
 
         帧率, 单位fps，不含阈值告警。当qosType = video/screen 时有效。
 
@@ -199,7 +199,7 @@ class QosSendReceiveInfo:
 
     @frame.setter
     def frame(self, frame):
-        """Sets the frame of this QosSendReceiveInfo.
+        r"""Sets the frame of this QosSendReceiveInfo.
 
         帧率, 单位fps，不含阈值告警。当qosType = video/screen 时有效。
 

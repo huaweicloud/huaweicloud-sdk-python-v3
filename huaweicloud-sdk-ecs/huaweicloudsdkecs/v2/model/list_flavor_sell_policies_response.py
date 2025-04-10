@@ -28,7 +28,7 @@ class ListFlavorSellPoliciesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, sell_policies=None):
-        """ListFlavorSellPoliciesResponse
+        r"""ListFlavorSellPoliciesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListFlavorSellPoliciesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListFlavorSellPoliciesResponse.
+        r"""Gets the count of this ListFlavorSellPoliciesResponse.
 
         云服务器规格销售策略数量。
 
@@ -62,7 +62,7 @@ class ListFlavorSellPoliciesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListFlavorSellPoliciesResponse.
+        r"""Sets the count of this ListFlavorSellPoliciesResponse.
 
         云服务器规格销售策略数量。
 
@@ -73,7 +73,7 @@ class ListFlavorSellPoliciesResponse(SdkResponse):
 
     @property
     def sell_policies(self):
-        """Gets the sell_policies of this ListFlavorSellPoliciesResponse.
+        r"""Gets the sell_policies of this ListFlavorSellPoliciesResponse.
 
         云服务器规格销售策略。
 
@@ -84,7 +84,7 @@ class ListFlavorSellPoliciesResponse(SdkResponse):
 
     @sell_policies.setter
     def sell_policies(self, sell_policies):
-        """Sets the sell_policies of this ListFlavorSellPoliciesResponse.
+        r"""Sets the sell_policies of this ListFlavorSellPoliciesResponse.
 
         云服务器规格销售策略。
 

@@ -25,7 +25,7 @@ class UpdateHlsConfigRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateHlsConfigRequest
+        r"""UpdateHlsConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateHlsConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateHlsConfigRequest.
+        r"""Gets the body of this UpdateHlsConfigRequest.
 
         :return: The body of this UpdateHlsConfigRequest.
         :rtype: :class:`huaweicloudsdklive.v1.ModifyHlsConfig`
@@ -52,7 +52,7 @@ class UpdateHlsConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateHlsConfigRequest.
+        r"""Sets the body of this UpdateHlsConfigRequest.
 
         :param body: The body of this UpdateHlsConfigRequest.
         :type body: :class:`huaweicloudsdklive.v1.ModifyHlsConfig`

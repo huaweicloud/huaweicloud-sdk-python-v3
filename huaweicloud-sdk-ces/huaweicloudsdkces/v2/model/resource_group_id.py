@@ -23,7 +23,7 @@ class ResourceGroupID:
     }
 
     def __init__(self):
-        """ResourceGroupID
+        r"""ResourceGroupID
 
         The model defined in huaweicloud sdk
 

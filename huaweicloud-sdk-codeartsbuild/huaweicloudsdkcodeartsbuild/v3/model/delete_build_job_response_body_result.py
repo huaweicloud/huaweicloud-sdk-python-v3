@@ -27,7 +27,7 @@ class DeleteBuildJobResponseBodyResult:
     }
 
     def __init__(self, job_id=None, project_id=None):
-        """DeleteBuildJobResponseBodyResult
+        r"""DeleteBuildJobResponseBodyResult
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DeleteBuildJobResponseBodyResult:
 
     @property
     def job_id(self):
-        """Gets the job_id of this DeleteBuildJobResponseBodyResult.
+        r"""Gets the job_id of this DeleteBuildJobResponseBodyResult.
 
         构建任务ID
 
@@ -61,7 +61,7 @@ class DeleteBuildJobResponseBodyResult:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DeleteBuildJobResponseBodyResult.
+        r"""Sets the job_id of this DeleteBuildJobResponseBodyResult.
 
         构建任务ID
 
@@ -72,7 +72,7 @@ class DeleteBuildJobResponseBodyResult:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DeleteBuildJobResponseBodyResult.
+        r"""Gets the project_id of this DeleteBuildJobResponseBodyResult.
 
         构建任务所在项目的ID
 
@@ -83,7 +83,7 @@ class DeleteBuildJobResponseBodyResult:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DeleteBuildJobResponseBodyResult.
+        r"""Sets the project_id of this DeleteBuildJobResponseBodyResult.
 
         构建任务所在项目的ID
 

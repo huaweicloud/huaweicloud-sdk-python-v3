@@ -27,7 +27,7 @@ class DbParamInfo:
     }
 
     def __init__(self, common=None, performance=None):
-        """DbParamInfo
+        r"""DbParamInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DbParamInfo:
 
     @property
     def common(self):
-        """Gets the common of this DbParamInfo.
+        r"""Gets the common of this DbParamInfo.
 
         常规参数。只有对比结果为不一致的目标库参数能被修改。
 
@@ -61,7 +61,7 @@ class DbParamInfo:
 
     @common.setter
     def common(self, common):
-        """Sets the common of this DbParamInfo.
+        r"""Sets the common of this DbParamInfo.
 
         常规参数。只有对比结果为不一致的目标库参数能被修改。
 
@@ -72,7 +72,7 @@ class DbParamInfo:
 
     @property
     def performance(self):
-        """Gets the performance of this DbParamInfo.
+        r"""Gets the performance of this DbParamInfo.
 
         性能参数。对比结果一致也可以修改目标库的值。
 
@@ -83,7 +83,7 @@ class DbParamInfo:
 
     @performance.setter
     def performance(self, performance):
-        """Sets the performance of this DbParamInfo.
+        r"""Sets the performance of this DbParamInfo.
 
         性能参数。对比结果一致也可以修改目标库的值。
 

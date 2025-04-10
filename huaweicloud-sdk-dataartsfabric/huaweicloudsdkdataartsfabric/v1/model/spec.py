@@ -43,7 +43,7 @@ class Spec:
     }
 
     def __init__(self, spec_code=None, spec_type=None, resource_type=None, stride=None, unit=None, min_stride_num=None, max_stride_num=None, usage_measure_id=None, usage_factor=None, stride_num_whitelist=None):
-        """Spec
+        r"""Spec
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class Spec:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this Spec.
+        r"""Gets the spec_code of this Spec.
 
         资源规格，从规格列表查询获取。
 
@@ -117,7 +117,7 @@ class Spec:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this Spec.
+        r"""Sets the spec_code of this Spec.
 
         资源规格，从规格列表查询获取。
 
@@ -128,7 +128,7 @@ class Spec:
 
     @property
     def spec_type(self):
-        """Gets the spec_type of this Spec.
+        r"""Gets the spec_type of this Spec.
 
         :return: The spec_type of this Spec.
         :rtype: :class:`huaweicloudsdkdataartsfabric.v1.SpecType`
@@ -137,7 +137,7 @@ class Spec:
 
     @spec_type.setter
     def spec_type(self, spec_type):
-        """Sets the spec_type of this Spec.
+        r"""Sets the spec_type of this Spec.
 
         :param spec_type: The spec_type of this Spec.
         :type spec_type: :class:`huaweicloudsdkdataartsfabric.v1.SpecType`
@@ -146,7 +146,7 @@ class Spec:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this Spec.
+        r"""Gets the resource_type of this Spec.
 
         资源类型
 
@@ -157,7 +157,7 @@ class Spec:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this Spec.
+        r"""Sets the resource_type of this Spec.
 
         资源类型
 
@@ -168,7 +168,7 @@ class Spec:
 
     @property
     def stride(self):
-        """Gets the stride of this Spec.
+        r"""Gets the stride of this Spec.
 
         步长
 
@@ -179,7 +179,7 @@ class Spec:
 
     @stride.setter
     def stride(self, stride):
-        """Sets the stride of this Spec.
+        r"""Sets the stride of this Spec.
 
         步长
 
@@ -190,7 +190,7 @@ class Spec:
 
     @property
     def unit(self):
-        """Gets the unit of this Spec.
+        r"""Gets the unit of this Spec.
 
         单位
 
@@ -201,7 +201,7 @@ class Spec:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this Spec.
+        r"""Sets the unit of this Spec.
 
         单位
 
@@ -212,7 +212,7 @@ class Spec:
 
     @property
     def min_stride_num(self):
-        """Gets the min_stride_num of this Spec.
+        r"""Gets the min_stride_num of this Spec.
 
         资源步数，最小为10000，步长为1。输入范围还需要满足规格列表接口的步长白名单
 
@@ -223,7 +223,7 @@ class Spec:
 
     @min_stride_num.setter
     def min_stride_num(self, min_stride_num):
-        """Sets the min_stride_num of this Spec.
+        r"""Sets the min_stride_num of this Spec.
 
         资源步数，最小为10000，步长为1。输入范围还需要满足规格列表接口的步长白名单
 
@@ -234,7 +234,7 @@ class Spec:
 
     @property
     def max_stride_num(self):
-        """Gets the max_stride_num of this Spec.
+        r"""Gets the max_stride_num of this Spec.
 
         资源步数，最小为10000，步长为1。输入范围还需要满足规格列表接口的步长白名单
 
@@ -245,7 +245,7 @@ class Spec:
 
     @max_stride_num.setter
     def max_stride_num(self, max_stride_num):
-        """Sets the max_stride_num of this Spec.
+        r"""Sets the max_stride_num of this Spec.
 
         资源步数，最小为10000，步长为1。输入范围还需要满足规格列表接口的步长白名单
 
@@ -256,7 +256,7 @@ class Spec:
 
     @property
     def usage_measure_id(self):
-        """Gets the usage_measure_id of this Spec.
+        r"""Gets the usage_measure_id of this Spec.
 
         使用量单位标识
 
@@ -267,7 +267,7 @@ class Spec:
 
     @usage_measure_id.setter
     def usage_measure_id(self, usage_measure_id):
-        """Sets the usage_measure_id of this Spec.
+        r"""Sets the usage_measure_id of this Spec.
 
         使用量单位标识
 
@@ -278,7 +278,7 @@ class Spec:
 
     @property
     def usage_factor(self):
-        """Gets the usage_factor of this Spec.
+        r"""Gets the usage_factor of this Spec.
 
         使用量因子
 
@@ -289,7 +289,7 @@ class Spec:
 
     @usage_factor.setter
     def usage_factor(self, usage_factor):
-        """Sets the usage_factor of this Spec.
+        r"""Sets the usage_factor of this Spec.
 
         使用量因子
 
@@ -300,7 +300,7 @@ class Spec:
 
     @property
     def stride_num_whitelist(self):
-        """Gets the stride_num_whitelist of this Spec.
+        r"""Gets the stride_num_whitelist of this Spec.
 
         步数白名单，返回时，步数必须是白名单中的值
 
@@ -311,7 +311,7 @@ class Spec:
 
     @stride_num_whitelist.setter
     def stride_num_whitelist(self, stride_num_whitelist):
-        """Sets the stride_num_whitelist of this Spec.
+        r"""Sets the stride_num_whitelist of this Spec.
 
         步数白名单，返回时，步数必须是白名单中的值
 

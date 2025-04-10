@@ -27,7 +27,7 @@ class UpdateWorkflowRequest:
     }
 
     def __init__(self, graph_name=None, body=None):
-        """UpdateWorkflowRequest
+        r"""UpdateWorkflowRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateWorkflowRequest:
 
     @property
     def graph_name(self):
-        """Gets the graph_name of this UpdateWorkflowRequest.
+        r"""Gets the graph_name of this UpdateWorkflowRequest.
 
         工作流名称。
 
@@ -60,7 +60,7 @@ class UpdateWorkflowRequest:
 
     @graph_name.setter
     def graph_name(self, graph_name):
-        """Sets the graph_name of this UpdateWorkflowRequest.
+        r"""Sets the graph_name of this UpdateWorkflowRequest.
 
         工作流名称。
 
@@ -71,7 +71,7 @@ class UpdateWorkflowRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateWorkflowRequest.
+        r"""Gets the body of this UpdateWorkflowRequest.
 
         :return: The body of this UpdateWorkflowRequest.
         :rtype: :class:`huaweicloudsdkdwr.v3.UpdateWorkflowBody`
@@ -80,7 +80,7 @@ class UpdateWorkflowRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateWorkflowRequest.
+        r"""Sets the body of this UpdateWorkflowRequest.
 
         :param body: The body of this UpdateWorkflowRequest.
         :type body: :class:`huaweicloudsdkdwr.v3.UpdateWorkflowBody`

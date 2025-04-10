@@ -43,7 +43,7 @@ class UpdateNotMavenRepoDO:
     }
 
     def __init__(self, repo_name=None, format=None, description=None, repository_ids=None, includes_pattern=None, deployment_policy=None, auto_clean_snapshot=None, snapshot_alive_days=None, max_unique_snapshots=None, allow_anonymous=None):
-        """UpdateNotMavenRepoDO
+        r"""UpdateNotMavenRepoDO
 
         The model defined in huaweicloud sdk
 
@@ -103,7 +103,7 @@ class UpdateNotMavenRepoDO:
 
     @property
     def repo_name(self):
-        """Gets the repo_name of this UpdateNotMavenRepoDO.
+        r"""Gets the repo_name of this UpdateNotMavenRepoDO.
 
         仓库名称
 
@@ -114,7 +114,7 @@ class UpdateNotMavenRepoDO:
 
     @repo_name.setter
     def repo_name(self, repo_name):
-        """Sets the repo_name of this UpdateNotMavenRepoDO.
+        r"""Sets the repo_name of this UpdateNotMavenRepoDO.
 
         仓库名称
 
@@ -125,7 +125,7 @@ class UpdateNotMavenRepoDO:
 
     @property
     def format(self):
-        """Gets the format of this UpdateNotMavenRepoDO.
+        r"""Gets the format of this UpdateNotMavenRepoDO.
 
         仓库格式
 
@@ -136,7 +136,7 @@ class UpdateNotMavenRepoDO:
 
     @format.setter
     def format(self, format):
-        """Sets the format of this UpdateNotMavenRepoDO.
+        r"""Sets the format of this UpdateNotMavenRepoDO.
 
         仓库格式
 
@@ -147,7 +147,7 @@ class UpdateNotMavenRepoDO:
 
     @property
     def description(self):
-        """Gets the description of this UpdateNotMavenRepoDO.
+        r"""Gets the description of this UpdateNotMavenRepoDO.
 
         仓库描述
 
@@ -158,7 +158,7 @@ class UpdateNotMavenRepoDO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateNotMavenRepoDO.
+        r"""Sets the description of this UpdateNotMavenRepoDO.
 
         仓库描述
 
@@ -169,7 +169,7 @@ class UpdateNotMavenRepoDO:
 
     @property
     def repository_ids(self):
-        """Gets the repository_ids of this UpdateNotMavenRepoDO.
+        r"""Gets the repository_ids of this UpdateNotMavenRepoDO.
 
         仓库id列表
 
@@ -180,7 +180,7 @@ class UpdateNotMavenRepoDO:
 
     @repository_ids.setter
     def repository_ids(self, repository_ids):
-        """Sets the repository_ids of this UpdateNotMavenRepoDO.
+        r"""Sets the repository_ids of this UpdateNotMavenRepoDO.
 
         仓库id列表
 
@@ -191,7 +191,7 @@ class UpdateNotMavenRepoDO:
 
     @property
     def includes_pattern(self):
-        """Gets the includes_pattern of this UpdateNotMavenRepoDO.
+        r"""Gets the includes_pattern of this UpdateNotMavenRepoDO.
 
         路径白名单
 
@@ -202,7 +202,7 @@ class UpdateNotMavenRepoDO:
 
     @includes_pattern.setter
     def includes_pattern(self, includes_pattern):
-        """Sets the includes_pattern of this UpdateNotMavenRepoDO.
+        r"""Sets the includes_pattern of this UpdateNotMavenRepoDO.
 
         路径白名单
 
@@ -213,7 +213,7 @@ class UpdateNotMavenRepoDO:
 
     @property
     def deployment_policy(self):
-        """Gets the deployment_policy of this UpdateNotMavenRepoDO.
+        r"""Gets the deployment_policy of this UpdateNotMavenRepoDO.
 
         仓库属性-覆盖策略
 
@@ -224,7 +224,7 @@ class UpdateNotMavenRepoDO:
 
     @deployment_policy.setter
     def deployment_policy(self, deployment_policy):
-        """Sets the deployment_policy of this UpdateNotMavenRepoDO.
+        r"""Sets the deployment_policy of this UpdateNotMavenRepoDO.
 
         仓库属性-覆盖策略
 
@@ -235,7 +235,7 @@ class UpdateNotMavenRepoDO:
 
     @property
     def auto_clean_snapshot(self):
-        """Gets the auto_clean_snapshot of this UpdateNotMavenRepoDO.
+        r"""Gets the auto_clean_snapshot of this UpdateNotMavenRepoDO.
 
         自动清理快照
 
@@ -246,7 +246,7 @@ class UpdateNotMavenRepoDO:
 
     @auto_clean_snapshot.setter
     def auto_clean_snapshot(self, auto_clean_snapshot):
-        """Sets the auto_clean_snapshot of this UpdateNotMavenRepoDO.
+        r"""Sets the auto_clean_snapshot of this UpdateNotMavenRepoDO.
 
         自动清理快照
 
@@ -257,7 +257,7 @@ class UpdateNotMavenRepoDO:
 
     @property
     def snapshot_alive_days(self):
-        """Gets the snapshot_alive_days of this UpdateNotMavenRepoDO.
+        r"""Gets the snapshot_alive_days of this UpdateNotMavenRepoDO.
 
         快照保存时间长度
 
@@ -268,7 +268,7 @@ class UpdateNotMavenRepoDO:
 
     @snapshot_alive_days.setter
     def snapshot_alive_days(self, snapshot_alive_days):
-        """Sets the snapshot_alive_days of this UpdateNotMavenRepoDO.
+        r"""Sets the snapshot_alive_days of this UpdateNotMavenRepoDO.
 
         快照保存时间长度
 
@@ -279,7 +279,7 @@ class UpdateNotMavenRepoDO:
 
     @property
     def max_unique_snapshots(self):
-        """Gets the max_unique_snapshots of this UpdateNotMavenRepoDO.
+        r"""Gets the max_unique_snapshots of this UpdateNotMavenRepoDO.
 
         最大不同快照个数
 
@@ -290,7 +290,7 @@ class UpdateNotMavenRepoDO:
 
     @max_unique_snapshots.setter
     def max_unique_snapshots(self, max_unique_snapshots):
-        """Sets the max_unique_snapshots of this UpdateNotMavenRepoDO.
+        r"""Sets the max_unique_snapshots of this UpdateNotMavenRepoDO.
 
         最大不同快照个数
 
@@ -301,7 +301,7 @@ class UpdateNotMavenRepoDO:
 
     @property
     def allow_anonymous(self):
-        """Gets the allow_anonymous of this UpdateNotMavenRepoDO.
+        r"""Gets the allow_anonymous of this UpdateNotMavenRepoDO.
 
         是否允许匿名
 
@@ -312,7 +312,7 @@ class UpdateNotMavenRepoDO:
 
     @allow_anonymous.setter
     def allow_anonymous(self, allow_anonymous):
-        """Sets the allow_anonymous of this UpdateNotMavenRepoDO.
+        r"""Sets the allow_anonymous of this UpdateNotMavenRepoDO.
 
         是否允许匿名
 

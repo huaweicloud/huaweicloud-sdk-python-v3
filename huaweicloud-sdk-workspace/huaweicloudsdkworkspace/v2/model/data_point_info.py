@@ -27,7 +27,7 @@ class DataPointInfo:
     }
 
     def __init__(self, time=None, value=None):
-        """DataPointInfo
+        r"""DataPointInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DataPointInfo:
 
     @property
     def time(self):
-        """Gets the time of this DataPointInfo.
+        r"""Gets the time of this DataPointInfo.
 
         计算出该条告警记录的资源监控数据上报的UTC时间
 
@@ -61,7 +61,7 @@ class DataPointInfo:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this DataPointInfo.
+        r"""Sets the time of this DataPointInfo.
 
         计算出该条告警记录的资源监控数据上报的UTC时间
 
@@ -72,7 +72,7 @@ class DataPointInfo:
 
     @property
     def value(self):
-        """Gets the value of this DataPointInfo.
+        r"""Gets the value of this DataPointInfo.
 
         计算出该条告警记录的资源监控数据在该时间点的监控数值
 
@@ -83,7 +83,7 @@ class DataPointInfo:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this DataPointInfo.
+        r"""Sets the value of this DataPointInfo.
 
         计算出该条告警记录的资源监控数据在该时间点的监控数值
 

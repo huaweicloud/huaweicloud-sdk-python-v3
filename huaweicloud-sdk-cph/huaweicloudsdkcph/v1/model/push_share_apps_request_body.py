@@ -33,7 +33,7 @@ class PushShareAppsRequestBody:
     }
 
     def __init__(self, package_name=None, pre_install_app=None, bucket_name=None, object_path=None, server_ids=None):
-        """PushShareAppsRequestBody
+        r"""PushShareAppsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class PushShareAppsRequestBody:
 
     @property
     def package_name(self):
-        """Gets the package_name of this PushShareAppsRequestBody.
+        r"""Gets the package_name of this PushShareAppsRequestBody.
 
         合法的应用包名。
 
@@ -78,7 +78,7 @@ class PushShareAppsRequestBody:
 
     @package_name.setter
     def package_name(self, package_name):
-        """Sets the package_name of this PushShareAppsRequestBody.
+        r"""Sets the package_name of this PushShareAppsRequestBody.
 
         合法的应用包名。
 
@@ -89,7 +89,7 @@ class PushShareAppsRequestBody:
 
     @property
     def pre_install_app(self):
-        """Gets the pre_install_app of this PushShareAppsRequestBody.
+        r"""Gets the pre_install_app of this PushShareAppsRequestBody.
 
         是否预装应用。 - 1：预装 - 0：不预装；默认不预装
 
@@ -100,7 +100,7 @@ class PushShareAppsRequestBody:
 
     @pre_install_app.setter
     def pre_install_app(self, pre_install_app):
-        """Sets the pre_install_app of this PushShareAppsRequestBody.
+        r"""Sets the pre_install_app of this PushShareAppsRequestBody.
 
         是否预装应用。 - 1：预装 - 0：不预装；默认不预装
 
@@ -111,7 +111,7 @@ class PushShareAppsRequestBody:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this PushShareAppsRequestBody.
+        r"""Gets the bucket_name of this PushShareAppsRequestBody.
 
         合法的OBS桶名，3-63个字符，只能由小写字母、数字、中划线（-）和小数点组成
 
@@ -122,7 +122,7 @@ class PushShareAppsRequestBody:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this PushShareAppsRequestBody.
+        r"""Sets the bucket_name of this PushShareAppsRequestBody.
 
         合法的OBS桶名，3-63个字符，只能由小写字母、数字、中划线（-）和小数点组成
 
@@ -133,7 +133,7 @@ class PushShareAppsRequestBody:
 
     @property
     def object_path(self):
-        """Gets the object_path of this PushShareAppsRequestBody.
+        r"""Gets the object_path of this PushShareAppsRequestBody.
 
         合法的OBS对象key，最大长度1024字符。仅支持大小写字母、数字、小数点（.）、斜线（/）、中划线（-）、下划线（_）、加号（+）、井号（#）、等号等这些字符。 推送的文件只支持tar文件类型。推送时，按tar文件解压后的文件目录结构推送到手机。
 
@@ -144,7 +144,7 @@ class PushShareAppsRequestBody:
 
     @object_path.setter
     def object_path(self, object_path):
-        """Sets the object_path of this PushShareAppsRequestBody.
+        r"""Sets the object_path of this PushShareAppsRequestBody.
 
         合法的OBS对象key，最大长度1024字符。仅支持大小写字母、数字、小数点（.）、斜线（/）、中划线（-）、下划线（_）、加号（+）、井号（#）、等号等这些字符。 推送的文件只支持tar文件类型。推送时，按tar文件解压后的文件目录结构推送到手机。
 
@@ -155,7 +155,7 @@ class PushShareAppsRequestBody:
 
     @property
     def server_ids(self):
-        """Gets the server_ids of this PushShareAppsRequestBody.
+        r"""Gets the server_ids of this PushShareAppsRequestBody.
 
         云手机服务器ID列表。传入的服务器id个数范围为[1, 100]。
 
@@ -166,7 +166,7 @@ class PushShareAppsRequestBody:
 
     @server_ids.setter
     def server_ids(self, server_ids):
-        """Sets the server_ids of this PushShareAppsRequestBody.
+        r"""Sets the server_ids of this PushShareAppsRequestBody.
 
         云手机服务器ID列表。传入的服务器id个数范围为[1, 100]。
 

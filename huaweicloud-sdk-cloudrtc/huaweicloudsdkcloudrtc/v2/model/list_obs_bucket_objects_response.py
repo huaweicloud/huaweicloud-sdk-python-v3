@@ -30,7 +30,7 @@ class ListObsBucketObjectsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, objects=None, x_request_id=None):
-        """ListObsBucketObjectsResponse
+        r"""ListObsBucketObjectsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListObsBucketObjectsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListObsBucketObjectsResponse.
+        r"""Gets the count of this ListObsBucketObjectsResponse.
 
         对象的总数
 
@@ -69,7 +69,7 @@ class ListObsBucketObjectsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListObsBucketObjectsResponse.
+        r"""Sets the count of this ListObsBucketObjectsResponse.
 
         对象的总数
 
@@ -80,7 +80,7 @@ class ListObsBucketObjectsResponse(SdkResponse):
 
     @property
     def objects(self):
-        """Gets the objects of this ListObsBucketObjectsResponse.
+        r"""Gets the objects of this ListObsBucketObjectsResponse.
 
         obs文件
 
@@ -91,7 +91,7 @@ class ListObsBucketObjectsResponse(SdkResponse):
 
     @objects.setter
     def objects(self, objects):
-        """Sets the objects of this ListObsBucketObjectsResponse.
+        r"""Sets the objects of this ListObsBucketObjectsResponse.
 
         obs文件
 
@@ -102,7 +102,7 @@ class ListObsBucketObjectsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListObsBucketObjectsResponse.
+        r"""Gets the x_request_id of this ListObsBucketObjectsResponse.
 
         :return: The x_request_id of this ListObsBucketObjectsResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListObsBucketObjectsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListObsBucketObjectsResponse.
+        r"""Sets the x_request_id of this ListObsBucketObjectsResponse.
 
         :param x_request_id: The x_request_id of this ListObsBucketObjectsResponse.
         :type x_request_id: str

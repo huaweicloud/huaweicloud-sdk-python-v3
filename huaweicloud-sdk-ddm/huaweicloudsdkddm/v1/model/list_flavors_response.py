@@ -26,7 +26,7 @@ class ListFlavorsResponse(SdkResponse):
     }
 
     def __init__(self, compute_flavor_groups=None):
-        """ListFlavorsResponse
+        r"""ListFlavorsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListFlavorsResponse(SdkResponse):
 
     @property
     def compute_flavor_groups(self):
-        """Gets the compute_flavor_groups of this ListFlavorsResponse.
+        r"""Gets the compute_flavor_groups of this ListFlavorsResponse.
 
         计算类型规格组。
 
@@ -55,7 +55,7 @@ class ListFlavorsResponse(SdkResponse):
 
     @compute_flavor_groups.setter
     def compute_flavor_groups(self, compute_flavor_groups):
-        """Sets the compute_flavor_groups of this ListFlavorsResponse.
+        r"""Sets the compute_flavor_groups of this ListFlavorsResponse.
 
         计算类型规格组。
 

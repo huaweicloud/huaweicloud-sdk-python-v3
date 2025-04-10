@@ -47,7 +47,7 @@ class NotificationsResponseBody:
     }
 
     def __init__(self, notification_name=None, operation_type=None, agency_name=None, operations=None, notify_user_list=None, status=None, topic_id=None, notification_id=None, notification_type=None, project_id=None, create_time=None, filter=None):
-        """NotificationsResponseBody
+        r"""NotificationsResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class NotificationsResponseBody:
 
     @property
     def notification_name(self):
-        """Gets the notification_name of this NotificationsResponseBody.
+        r"""Gets the notification_name of this NotificationsResponseBody.
 
         标识关键操作名称。
 
@@ -131,7 +131,7 @@ class NotificationsResponseBody:
 
     @notification_name.setter
     def notification_name(self, notification_name):
-        """Sets the notification_name of this NotificationsResponseBody.
+        r"""Sets the notification_name of this NotificationsResponseBody.
 
         标识关键操作名称。
 
@@ -142,7 +142,7 @@ class NotificationsResponseBody:
 
     @property
     def operation_type(self):
-        """Gets the operation_type of this NotificationsResponseBody.
+        r"""Gets the operation_type of this NotificationsResponseBody.
 
         标识操作类型。 目前支持的操作类型有完整类型(complete)和自定义类型(customized)。 完整类型下，CTS发送通知的对象为已对接服务的所有事件。 自定义类型下，CTS发送通知的对象是在operations列表中指定的事件。
 
@@ -153,7 +153,7 @@ class NotificationsResponseBody:
 
     @operation_type.setter
     def operation_type(self, operation_type):
-        """Sets the operation_type of this NotificationsResponseBody.
+        r"""Sets the operation_type of this NotificationsResponseBody.
 
         标识操作类型。 目前支持的操作类型有完整类型(complete)和自定义类型(customized)。 完整类型下，CTS发送通知的对象为已对接服务的所有事件。 自定义类型下，CTS发送通知的对象是在operations列表中指定的事件。
 
@@ -164,7 +164,7 @@ class NotificationsResponseBody:
 
     @property
     def agency_name(self):
-        """Gets the agency_name of this NotificationsResponseBody.
+        r"""Gets the agency_name of this NotificationsResponseBody.
 
         云服务委托名称。
 
@@ -175,7 +175,7 @@ class NotificationsResponseBody:
 
     @agency_name.setter
     def agency_name(self, agency_name):
-        """Sets the agency_name of this NotificationsResponseBody.
+        r"""Sets the agency_name of this NotificationsResponseBody.
 
         云服务委托名称。
 
@@ -186,7 +186,7 @@ class NotificationsResponseBody:
 
     @property
     def operations(self):
-        """Gets the operations of this NotificationsResponseBody.
+        r"""Gets the operations of this NotificationsResponseBody.
 
         操作事件列表。
 
@@ -197,7 +197,7 @@ class NotificationsResponseBody:
 
     @operations.setter
     def operations(self, operations):
-        """Sets the operations of this NotificationsResponseBody.
+        r"""Sets the operations of this NotificationsResponseBody.
 
         操作事件列表。
 
@@ -208,7 +208,7 @@ class NotificationsResponseBody:
 
     @property
     def notify_user_list(self):
-        """Gets the notify_user_list of this NotificationsResponseBody.
+        r"""Gets the notify_user_list of this NotificationsResponseBody.
 
         通知用户列表，目前最多支持对10个用户组和50个用户发起的操作进行配置。
 
@@ -219,7 +219,7 @@ class NotificationsResponseBody:
 
     @notify_user_list.setter
     def notify_user_list(self, notify_user_list):
-        """Sets the notify_user_list of this NotificationsResponseBody.
+        r"""Sets the notify_user_list of this NotificationsResponseBody.
 
         通知用户列表，目前最多支持对10个用户组和50个用户发起的操作进行配置。
 
@@ -230,7 +230,7 @@ class NotificationsResponseBody:
 
     @property
     def status(self):
-        """Gets the status of this NotificationsResponseBody.
+        r"""Gets the status of this NotificationsResponseBody.
 
         标识关键操作通知状态，包括正常(enabled)，停止(disabled)两种状态。
 
@@ -241,7 +241,7 @@ class NotificationsResponseBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this NotificationsResponseBody.
+        r"""Sets the status of this NotificationsResponseBody.
 
         标识关键操作通知状态，包括正常(enabled)，停止(disabled)两种状态。
 
@@ -252,7 +252,7 @@ class NotificationsResponseBody:
 
     @property
     def topic_id(self):
-        """Gets the topic_id of this NotificationsResponseBody.
+        r"""Gets the topic_id of this NotificationsResponseBody.
 
         消息通知服务的topic_urn或者函数工作流的func_urn。 - 消息通知服务的topic_urn可以通过消息通知服务的查询主题列表API获取，示例：urn:smn:regionId:f96188c7ccaf4ffba0c9aa149ab2bd57:test_topic_v2。 - 函数工作流的func_urn可以通过函数工作流的获取函数列表API获取，示例：urn:fss:xxxxxxxxx:7aad83af3e8d42e99ac194e8419e2c9b:function:default:test。
 
@@ -263,7 +263,7 @@ class NotificationsResponseBody:
 
     @topic_id.setter
     def topic_id(self, topic_id):
-        """Sets the topic_id of this NotificationsResponseBody.
+        r"""Sets the topic_id of this NotificationsResponseBody.
 
         消息通知服务的topic_urn或者函数工作流的func_urn。 - 消息通知服务的topic_urn可以通过消息通知服务的查询主题列表API获取，示例：urn:smn:regionId:f96188c7ccaf4ffba0c9aa149ab2bd57:test_topic_v2。 - 函数工作流的func_urn可以通过函数工作流的获取函数列表API获取，示例：urn:fss:xxxxxxxxx:7aad83af3e8d42e99ac194e8419e2c9b:function:default:test。
 
@@ -274,7 +274,7 @@ class NotificationsResponseBody:
 
     @property
     def notification_id(self):
-        """Gets the notification_id of this NotificationsResponseBody.
+        r"""Gets the notification_id of this NotificationsResponseBody.
 
         关键操作通知的唯一标识。
 
@@ -285,7 +285,7 @@ class NotificationsResponseBody:
 
     @notification_id.setter
     def notification_id(self, notification_id):
-        """Sets the notification_id of this NotificationsResponseBody.
+        r"""Sets the notification_id of this NotificationsResponseBody.
 
         关键操作通知的唯一标识。
 
@@ -296,7 +296,7 @@ class NotificationsResponseBody:
 
     @property
     def notification_type(self):
-        """Gets the notification_type of this NotificationsResponseBody.
+        r"""Gets the notification_type of this NotificationsResponseBody.
 
         关键操作通知类型，根据topic_id区分为消息通知服务(smn)和函数工作流(fun)。
 
@@ -307,7 +307,7 @@ class NotificationsResponseBody:
 
     @notification_type.setter
     def notification_type(self, notification_type):
-        """Sets the notification_type of this NotificationsResponseBody.
+        r"""Sets the notification_type of this NotificationsResponseBody.
 
         关键操作通知类型，根据topic_id区分为消息通知服务(smn)和函数工作流(fun)。
 
@@ -318,7 +318,7 @@ class NotificationsResponseBody:
 
     @property
     def project_id(self):
-        """Gets the project_id of this NotificationsResponseBody.
+        r"""Gets the project_id of this NotificationsResponseBody.
 
         项目ID。
 
@@ -329,7 +329,7 @@ class NotificationsResponseBody:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this NotificationsResponseBody.
+        r"""Sets the project_id of this NotificationsResponseBody.
 
         项目ID。
 
@@ -340,7 +340,7 @@ class NotificationsResponseBody:
 
     @property
     def create_time(self):
-        """Gets the create_time of this NotificationsResponseBody.
+        r"""Gets the create_time of this NotificationsResponseBody.
 
         关键操作通知创建时间戳。
 
@@ -351,7 +351,7 @@ class NotificationsResponseBody:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this NotificationsResponseBody.
+        r"""Sets the create_time of this NotificationsResponseBody.
 
         关键操作通知创建时间戳。
 
@@ -362,7 +362,7 @@ class NotificationsResponseBody:
 
     @property
     def filter(self):
-        """Gets the filter of this NotificationsResponseBody.
+        r"""Gets the filter of this NotificationsResponseBody.
 
         :return: The filter of this NotificationsResponseBody.
         :rtype: :class:`huaweicloudsdkcts.v3.Filter`
@@ -371,7 +371,7 @@ class NotificationsResponseBody:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this NotificationsResponseBody.
+        r"""Sets the filter of this NotificationsResponseBody.
 
         :param filter: The filter of this NotificationsResponseBody.
         :type filter: :class:`huaweicloudsdkcts.v3.Filter`

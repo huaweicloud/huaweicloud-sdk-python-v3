@@ -30,7 +30,7 @@ class ImportClientCaResponse(SdkResponse):
     }
 
     def __init__(self, client_ca_certificate=None, request_id=None, header_response_token=None):
-        """ImportClientCaResponse
+        r"""ImportClientCaResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ImportClientCaResponse(SdkResponse):
 
     @property
     def client_ca_certificate(self):
-        """Gets the client_ca_certificate of this ImportClientCaResponse.
+        r"""Gets the client_ca_certificate of this ImportClientCaResponse.
 
         :return: The client_ca_certificate of this ImportClientCaResponse.
         :rtype: :class:`huaweicloudsdkvpn.v5.ImportClientCaCertificateResponseBodyClientCaCertificate`
@@ -67,7 +67,7 @@ class ImportClientCaResponse(SdkResponse):
 
     @client_ca_certificate.setter
     def client_ca_certificate(self, client_ca_certificate):
-        """Sets the client_ca_certificate of this ImportClientCaResponse.
+        r"""Sets the client_ca_certificate of this ImportClientCaResponse.
 
         :param client_ca_certificate: The client_ca_certificate of this ImportClientCaResponse.
         :type client_ca_certificate: :class:`huaweicloudsdkvpn.v5.ImportClientCaCertificateResponseBodyClientCaCertificate`
@@ -76,7 +76,7 @@ class ImportClientCaResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ImportClientCaResponse.
+        r"""Gets the request_id of this ImportClientCaResponse.
 
         请求id
 
@@ -87,7 +87,7 @@ class ImportClientCaResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ImportClientCaResponse.
+        r"""Sets the request_id of this ImportClientCaResponse.
 
         请求id
 
@@ -98,7 +98,7 @@ class ImportClientCaResponse(SdkResponse):
 
     @property
     def header_response_token(self):
-        """Gets the header_response_token of this ImportClientCaResponse.
+        r"""Gets the header_response_token of this ImportClientCaResponse.
 
         :return: The header_response_token of this ImportClientCaResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class ImportClientCaResponse(SdkResponse):
 
     @header_response_token.setter
     def header_response_token(self, header_response_token):
-        """Sets the header_response_token of this ImportClientCaResponse.
+        r"""Sets the header_response_token of this ImportClientCaResponse.
 
         :param header_response_token: The header_response_token of this ImportClientCaResponse.
         :type header_response_token: str

@@ -39,7 +39,7 @@ class WeakConstraintDto:
     }
 
     def __init__(self, id=None, name=None, type=None, bool=None, range=None, struct=None, quantiles=None, interaction=None):
-        """WeakConstraintDto
+        r"""WeakConstraintDto
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class WeakConstraintDto:
 
     @property
     def id(self):
-        """Gets the id of this WeakConstraintDto.
+        r"""Gets the id of this WeakConstraintDto.
 
         自定义模型id，仅弱约束为模型时填写
 
@@ -102,7 +102,7 @@ class WeakConstraintDto:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this WeakConstraintDto.
+        r"""Sets the id of this WeakConstraintDto.
 
         自定义模型id，仅弱约束为模型时填写
 
@@ -113,7 +113,7 @@ class WeakConstraintDto:
 
     @property
     def name(self):
-        """Gets the name of this WeakConstraintDto.
+        r"""Gets the name of this WeakConstraintDto.
 
         属性名称
 
@@ -124,7 +124,7 @@ class WeakConstraintDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this WeakConstraintDto.
+        r"""Sets the name of this WeakConstraintDto.
 
         属性名称
 
@@ -135,7 +135,7 @@ class WeakConstraintDto:
 
     @property
     def type(self):
-        """Gets the type of this WeakConstraintDto.
+        r"""Gets the type of this WeakConstraintDto.
 
         :return: The type of this WeakConstraintDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.WeakConstraintType`
@@ -144,7 +144,7 @@ class WeakConstraintDto:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this WeakConstraintDto.
+        r"""Sets the type of this WeakConstraintDto.
 
         :param type: The type of this WeakConstraintDto.
         :type type: :class:`huaweicloudsdkeihealth.v1.WeakConstraintType`
@@ -153,7 +153,7 @@ class WeakConstraintDto:
 
     @property
     def bool(self):
-        """Gets the bool of this WeakConstraintDto.
+        r"""Gets the bool of this WeakConstraintDto.
 
         属性约束类型bool的参数
 
@@ -164,7 +164,7 @@ class WeakConstraintDto:
 
     @bool.setter
     def bool(self, bool):
-        """Sets the bool of this WeakConstraintDto.
+        r"""Sets the bool of this WeakConstraintDto.
 
         属性约束类型bool的参数
 
@@ -175,7 +175,7 @@ class WeakConstraintDto:
 
     @property
     def range(self):
-        """Gets the range of this WeakConstraintDto.
+        r"""Gets the range of this WeakConstraintDto.
 
         属性约束类型range的参数
 
@@ -186,7 +186,7 @@ class WeakConstraintDto:
 
     @range.setter
     def range(self, range):
-        """Sets the range of this WeakConstraintDto.
+        r"""Sets the range of this WeakConstraintDto.
 
         属性约束类型range的参数
 
@@ -197,7 +197,7 @@ class WeakConstraintDto:
 
     @property
     def struct(self):
-        """Gets the struct of this WeakConstraintDto.
+        r"""Gets the struct of this WeakConstraintDto.
 
         :return: The struct of this WeakConstraintDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.StructureConstraintParamsDto`
@@ -206,7 +206,7 @@ class WeakConstraintDto:
 
     @struct.setter
     def struct(self, struct):
-        """Sets the struct of this WeakConstraintDto.
+        r"""Sets the struct of this WeakConstraintDto.
 
         :param struct: The struct of this WeakConstraintDto.
         :type struct: :class:`huaweicloudsdkeihealth.v1.StructureConstraintParamsDto`
@@ -215,7 +215,7 @@ class WeakConstraintDto:
 
     @property
     def quantiles(self):
-        """Gets the quantiles of this WeakConstraintDto.
+        r"""Gets the quantiles of this WeakConstraintDto.
 
         属性约束类型minimize和maximize的参数
 
@@ -226,7 +226,7 @@ class WeakConstraintDto:
 
     @quantiles.setter
     def quantiles(self, quantiles):
-        """Sets the quantiles of this WeakConstraintDto.
+        r"""Sets the quantiles of this WeakConstraintDto.
 
         属性约束类型minimize和maximize的参数
 
@@ -237,7 +237,7 @@ class WeakConstraintDto:
 
     @property
     def interaction(self):
-        """Gets the interaction of this WeakConstraintDto.
+        r"""Gets the interaction of this WeakConstraintDto.
 
         :return: The interaction of this WeakConstraintDto.
         :rtype: :class:`huaweicloudsdkeihealth.v1.InteractionConstraintDto`
@@ -246,7 +246,7 @@ class WeakConstraintDto:
 
     @interaction.setter
     def interaction(self, interaction):
-        """Sets the interaction of this WeakConstraintDto.
+        r"""Sets the interaction of this WeakConstraintDto.
 
         :param interaction: The interaction of this WeakConstraintDto.
         :type interaction: :class:`huaweicloudsdkeihealth.v1.InteractionConstraintDto`

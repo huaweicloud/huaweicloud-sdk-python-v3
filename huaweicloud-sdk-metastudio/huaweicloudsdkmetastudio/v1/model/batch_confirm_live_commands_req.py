@@ -29,7 +29,7 @@ class BatchConfirmLiveCommandsReq:
     }
 
     def __init__(self, command=None, action=None, command_ids=None):
-        """BatchConfirmLiveCommandsReq
+        r"""BatchConfirmLiveCommandsReq
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class BatchConfirmLiveCommandsReq:
 
     @property
     def command(self):
-        """Gets the command of this BatchConfirmLiveCommandsReq.
+        r"""Gets the command of this BatchConfirmLiveCommandsReq.
 
         命令名称。 - REWRITE_PLAY_SCRIPT: 动态编辑未播放剧本。 - REWRITE_INTERACTION_RULES: 动态修改互动规则。
 
@@ -68,7 +68,7 @@ class BatchConfirmLiveCommandsReq:
 
     @command.setter
     def command(self, command):
-        """Sets the command of this BatchConfirmLiveCommandsReq.
+        r"""Sets the command of this BatchConfirmLiveCommandsReq.
 
         命令名称。 - REWRITE_PLAY_SCRIPT: 动态编辑未播放剧本。 - REWRITE_INTERACTION_RULES: 动态修改互动规则。
 
@@ -79,7 +79,7 @@ class BatchConfirmLiveCommandsReq:
 
     @property
     def action(self):
-        """Gets the action of this BatchConfirmLiveCommandsReq.
+        r"""Gets the action of this BatchConfirmLiveCommandsReq.
 
         确认操作。 * confirm: 确认。 * reject: 拒绝。
 
@@ -90,7 +90,7 @@ class BatchConfirmLiveCommandsReq:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this BatchConfirmLiveCommandsReq.
+        r"""Sets the action of this BatchConfirmLiveCommandsReq.
 
         确认操作。 * confirm: 确认。 * reject: 拒绝。
 
@@ -101,7 +101,7 @@ class BatchConfirmLiveCommandsReq:
 
     @property
     def command_ids(self):
-        """Gets the command_ids of this BatchConfirmLiveCommandsReq.
+        r"""Gets the command_ids of this BatchConfirmLiveCommandsReq.
 
         命令ID列表。不填则为全部未播放的插入命令均清理。
 
@@ -112,7 +112,7 @@ class BatchConfirmLiveCommandsReq:
 
     @command_ids.setter
     def command_ids(self, command_ids):
-        """Sets the command_ids of this BatchConfirmLiveCommandsReq.
+        r"""Sets the command_ids of this BatchConfirmLiveCommandsReq.
 
         命令ID列表。不填则为全部未播放的插入命令均清理。
 

@@ -25,7 +25,7 @@ class ShowLineGroupRequest:
     }
 
     def __init__(self, linegroup_id=None):
-        """ShowLineGroupRequest
+        r"""ShowLineGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowLineGroupRequest:
 
     @property
     def linegroup_id(self):
-        """Gets the linegroup_id of this ShowLineGroupRequest.
+        r"""Gets the linegroup_id of this ShowLineGroupRequest.
 
         线路分组ID
 
@@ -53,7 +53,7 @@ class ShowLineGroupRequest:
 
     @linegroup_id.setter
     def linegroup_id(self, linegroup_id):
-        """Sets the linegroup_id of this ShowLineGroupRequest.
+        r"""Sets the linegroup_id of this ShowLineGroupRequest.
 
         线路分组ID
 

@@ -37,7 +37,7 @@ class ListHistoryStreamsRequest:
     }
 
     def __init__(self, domain=None, app=None, stream=None, start_time=None, end_time=None, offset=None, limit=None):
-        """ListHistoryStreamsRequest
+        r"""ListHistoryStreamsRequest
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class ListHistoryStreamsRequest:
 
     @property
     def domain(self):
-        """Gets the domain of this ListHistoryStreamsRequest.
+        r"""Gets the domain of this ListHistoryStreamsRequest.
 
         推流域名。 
 
@@ -95,7 +95,7 @@ class ListHistoryStreamsRequest:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ListHistoryStreamsRequest.
+        r"""Sets the domain of this ListHistoryStreamsRequest.
 
         推流域名。 
 
@@ -106,7 +106,7 @@ class ListHistoryStreamsRequest:
 
     @property
     def app(self):
-        """Gets the app of this ListHistoryStreamsRequest.
+        r"""Gets the app of this ListHistoryStreamsRequest.
 
         应用名称。
 
@@ -117,7 +117,7 @@ class ListHistoryStreamsRequest:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this ListHistoryStreamsRequest.
+        r"""Sets the app of this ListHistoryStreamsRequest.
 
         应用名称。
 
@@ -128,7 +128,7 @@ class ListHistoryStreamsRequest:
 
     @property
     def stream(self):
-        """Gets the stream of this ListHistoryStreamsRequest.
+        r"""Gets the stream of this ListHistoryStreamsRequest.
 
         流名称。
 
@@ -139,7 +139,7 @@ class ListHistoryStreamsRequest:
 
     @stream.setter
     def stream(self, stream):
-        """Sets the stream of this ListHistoryStreamsRequest.
+        r"""Sets the stream of this ListHistoryStreamsRequest.
 
         流名称。
 
@@ -150,7 +150,7 @@ class ListHistoryStreamsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListHistoryStreamsRequest.
+        r"""Gets the start_time of this ListHistoryStreamsRequest.
 
         起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度1天。  若参数为空，默认查询1天数据。 
 
@@ -161,7 +161,7 @@ class ListHistoryStreamsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListHistoryStreamsRequest.
+        r"""Sets the start_time of this ListHistoryStreamsRequest.
 
         起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。最大查询跨度1天。  若参数为空，默认查询1天数据。 
 
@@ -172,7 +172,7 @@ class ListHistoryStreamsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListHistoryStreamsRequest.
+        r"""Gets the end_time of this ListHistoryStreamsRequest.
 
         结束时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间，最大查询跨度1天。结束时间需大于起始时间。 
 
@@ -183,7 +183,7 @@ class ListHistoryStreamsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListHistoryStreamsRequest.
+        r"""Sets the end_time of this ListHistoryStreamsRequest.
 
         结束时间。日期格式按照ISO8601表示法，并使用UTC时间。 格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间，最大查询跨度1天。结束时间需大于起始时间。 
 
@@ -194,7 +194,7 @@ class ListHistoryStreamsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListHistoryStreamsRequest.
+        r"""Gets the offset of this ListHistoryStreamsRequest.
 
         分页编号，默认为0
 
@@ -205,7 +205,7 @@ class ListHistoryStreamsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListHistoryStreamsRequest.
+        r"""Sets the offset of this ListHistoryStreamsRequest.
 
         分页编号，默认为0
 
@@ -216,7 +216,7 @@ class ListHistoryStreamsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListHistoryStreamsRequest.
+        r"""Gets the limit of this ListHistoryStreamsRequest.
 
         每页记录数。  取值范围：[1,100]  默认值：10。 
 
@@ -227,7 +227,7 @@ class ListHistoryStreamsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListHistoryStreamsRequest.
+        r"""Sets the limit of this ListHistoryStreamsRequest.
 
         每页记录数。  取值范围：[1,100]  默认值：10。 
 

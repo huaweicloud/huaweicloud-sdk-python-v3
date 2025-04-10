@@ -26,7 +26,7 @@ class ValidateSqlResponse(SdkResponse):
     }
 
     def __init__(self, valid=None):
-        """ValidateSqlResponse
+        r"""ValidateSqlResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ValidateSqlResponse(SdkResponse):
 
     @property
     def valid(self):
-        """Gets the valid of this ValidateSqlResponse.
+        r"""Gets the valid of this ValidateSqlResponse.
 
         SQL是否通过语法校验
 
@@ -55,7 +55,7 @@ class ValidateSqlResponse(SdkResponse):
 
     @valid.setter
     def valid(self, valid):
-        """Sets the valid of this ValidateSqlResponse.
+        r"""Sets the valid of this ValidateSqlResponse.
 
         SQL是否通过语法校验
 

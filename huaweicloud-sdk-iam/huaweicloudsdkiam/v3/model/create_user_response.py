@@ -26,7 +26,7 @@ class CreateUserResponse(SdkResponse):
     }
 
     def __init__(self, user=None):
-        """CreateUserResponse
+        r"""CreateUserResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateUserResponse(SdkResponse):
 
     @property
     def user(self):
-        """Gets the user of this CreateUserResponse.
+        r"""Gets the user of this CreateUserResponse.
 
         :return: The user of this CreateUserResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.CreateUserResult`
@@ -53,7 +53,7 @@ class CreateUserResponse(SdkResponse):
 
     @user.setter
     def user(self, user):
-        """Sets the user of this CreateUserResponse.
+        r"""Sets the user of this CreateUserResponse.
 
         :param user: The user of this CreateUserResponse.
         :type user: :class:`huaweicloudsdkiam.v3.CreateUserResult`

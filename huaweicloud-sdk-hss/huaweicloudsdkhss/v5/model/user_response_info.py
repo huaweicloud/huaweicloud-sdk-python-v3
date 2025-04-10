@@ -49,7 +49,7 @@ class UserResponseInfo:
     }
 
     def __init__(self, agent_id=None, host_id=None, host_name=None, host_ip=None, user_name=None, login_permission=None, root_permission=None, user_group_name=None, user_home_dir=None, shell=None, recent_scan_time=None, container_id=None, container_name=None):
-        """UserResponseInfo
+        r"""UserResponseInfo
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class UserResponseInfo:
 
     @property
     def agent_id(self):
-        """Gets the agent_id of this UserResponseInfo.
+        r"""Gets the agent_id of this UserResponseInfo.
 
         Agent ID
 
@@ -138,7 +138,7 @@ class UserResponseInfo:
 
     @agent_id.setter
     def agent_id(self, agent_id):
-        """Sets the agent_id of this UserResponseInfo.
+        r"""Sets the agent_id of this UserResponseInfo.
 
         Agent ID
 
@@ -149,7 +149,7 @@ class UserResponseInfo:
 
     @property
     def host_id(self):
-        """Gets the host_id of this UserResponseInfo.
+        r"""Gets the host_id of this UserResponseInfo.
 
         主机ID
 
@@ -160,7 +160,7 @@ class UserResponseInfo:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this UserResponseInfo.
+        r"""Sets the host_id of this UserResponseInfo.
 
         主机ID
 
@@ -171,7 +171,7 @@ class UserResponseInfo:
 
     @property
     def host_name(self):
-        """Gets the host_name of this UserResponseInfo.
+        r"""Gets the host_name of this UserResponseInfo.
 
         服务器名称
 
@@ -182,7 +182,7 @@ class UserResponseInfo:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this UserResponseInfo.
+        r"""Sets the host_name of this UserResponseInfo.
 
         服务器名称
 
@@ -193,7 +193,7 @@ class UserResponseInfo:
 
     @property
     def host_ip(self):
-        """Gets the host_ip of this UserResponseInfo.
+        r"""Gets the host_ip of this UserResponseInfo.
 
         服务器ip
 
@@ -204,7 +204,7 @@ class UserResponseInfo:
 
     @host_ip.setter
     def host_ip(self, host_ip):
-        """Sets the host_ip of this UserResponseInfo.
+        r"""Sets the host_ip of this UserResponseInfo.
 
         服务器ip
 
@@ -215,7 +215,7 @@ class UserResponseInfo:
 
     @property
     def user_name(self):
-        """Gets the user_name of this UserResponseInfo.
+        r"""Gets the user_name of this UserResponseInfo.
 
         用户名
 
@@ -226,7 +226,7 @@ class UserResponseInfo:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this UserResponseInfo.
+        r"""Sets the user_name of this UserResponseInfo.
 
         用户名
 
@@ -237,7 +237,7 @@ class UserResponseInfo:
 
     @property
     def login_permission(self):
-        """Gets the login_permission of this UserResponseInfo.
+        r"""Gets the login_permission of this UserResponseInfo.
 
         是否有登录权限
 
@@ -248,7 +248,7 @@ class UserResponseInfo:
 
     @login_permission.setter
     def login_permission(self, login_permission):
-        """Sets the login_permission of this UserResponseInfo.
+        r"""Sets the login_permission of this UserResponseInfo.
 
         是否有登录权限
 
@@ -259,7 +259,7 @@ class UserResponseInfo:
 
     @property
     def root_permission(self):
-        """Gets the root_permission of this UserResponseInfo.
+        r"""Gets the root_permission of this UserResponseInfo.
 
         是否有root权限
 
@@ -270,7 +270,7 @@ class UserResponseInfo:
 
     @root_permission.setter
     def root_permission(self, root_permission):
-        """Sets the root_permission of this UserResponseInfo.
+        r"""Sets the root_permission of this UserResponseInfo.
 
         是否有root权限
 
@@ -281,7 +281,7 @@ class UserResponseInfo:
 
     @property
     def user_group_name(self):
-        """Gets the user_group_name of this UserResponseInfo.
+        r"""Gets the user_group_name of this UserResponseInfo.
 
         用户组
 
@@ -292,7 +292,7 @@ class UserResponseInfo:
 
     @user_group_name.setter
     def user_group_name(self, user_group_name):
-        """Sets the user_group_name of this UserResponseInfo.
+        r"""Sets the user_group_name of this UserResponseInfo.
 
         用户组
 
@@ -303,7 +303,7 @@ class UserResponseInfo:
 
     @property
     def user_home_dir(self):
-        """Gets the user_home_dir of this UserResponseInfo.
+        r"""Gets the user_home_dir of this UserResponseInfo.
 
         用户目录
 
@@ -314,7 +314,7 @@ class UserResponseInfo:
 
     @user_home_dir.setter
     def user_home_dir(self, user_home_dir):
-        """Sets the user_home_dir of this UserResponseInfo.
+        r"""Sets the user_home_dir of this UserResponseInfo.
 
         用户目录
 
@@ -325,7 +325,7 @@ class UserResponseInfo:
 
     @property
     def shell(self):
-        """Gets the shell of this UserResponseInfo.
+        r"""Gets the shell of this UserResponseInfo.
 
         用户启动shell
 
@@ -336,7 +336,7 @@ class UserResponseInfo:
 
     @shell.setter
     def shell(self, shell):
-        """Sets the shell of this UserResponseInfo.
+        r"""Sets the shell of this UserResponseInfo.
 
         用户启动shell
 
@@ -347,7 +347,7 @@ class UserResponseInfo:
 
     @property
     def recent_scan_time(self):
-        """Gets the recent_scan_time of this UserResponseInfo.
+        r"""Gets the recent_scan_time of this UserResponseInfo.
 
         最近扫描时间
 
@@ -358,7 +358,7 @@ class UserResponseInfo:
 
     @recent_scan_time.setter
     def recent_scan_time(self, recent_scan_time):
-        """Sets the recent_scan_time of this UserResponseInfo.
+        r"""Sets the recent_scan_time of this UserResponseInfo.
 
         最近扫描时间
 
@@ -369,7 +369,7 @@ class UserResponseInfo:
 
     @property
     def container_id(self):
-        """Gets the container_id of this UserResponseInfo.
+        r"""Gets the container_id of this UserResponseInfo.
 
         容器id
 
@@ -380,7 +380,7 @@ class UserResponseInfo:
 
     @container_id.setter
     def container_id(self, container_id):
-        """Sets the container_id of this UserResponseInfo.
+        r"""Sets the container_id of this UserResponseInfo.
 
         容器id
 
@@ -391,7 +391,7 @@ class UserResponseInfo:
 
     @property
     def container_name(self):
-        """Gets the container_name of this UserResponseInfo.
+        r"""Gets the container_name of this UserResponseInfo.
 
         容器名称
 
@@ -402,7 +402,7 @@ class UserResponseInfo:
 
     @container_name.setter
     def container_name(self, container_name):
-        """Sets the container_name of this UserResponseInfo.
+        r"""Sets the container_name of this UserResponseInfo.
 
         容器名称
 

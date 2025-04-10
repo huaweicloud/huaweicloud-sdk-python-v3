@@ -40,7 +40,7 @@ class ShowRiskConfigDetailResponse(SdkResponse):
     }
 
     def __init__(self, severity=None, check_type=None, check_type_desc=None, check_rule_num=None, failed_rule_num=None, passed_rule_num=None, ignored_rule_num=None, host_num=None):
-        """ShowRiskConfigDetailResponse
+        r"""ShowRiskConfigDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ShowRiskConfigDetailResponse(SdkResponse):
 
     @property
     def severity(self):
-        """Gets the severity of this ShowRiskConfigDetailResponse.
+        r"""Gets the severity of this ShowRiskConfigDetailResponse.
 
         风险等级，包含如下:   - Low : 低危   - Medium : 中危   - High : 高危
 
@@ -104,7 +104,7 @@ class ShowRiskConfigDetailResponse(SdkResponse):
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this ShowRiskConfigDetailResponse.
+        r"""Sets the severity of this ShowRiskConfigDetailResponse.
 
         风险等级，包含如下:   - Low : 低危   - Medium : 中危   - High : 高危
 
@@ -115,7 +115,7 @@ class ShowRiskConfigDetailResponse(SdkResponse):
 
     @property
     def check_type(self):
-        """Gets the check_type of this ShowRiskConfigDetailResponse.
+        r"""Gets the check_type of this ShowRiskConfigDetailResponse.
 
         配置检查（基线）的类型,例如SSH、CentOS 7、Windows Server 2019 R2、Windows Server 2016 R2、MySQL5-Windows
 
@@ -126,7 +126,7 @@ class ShowRiskConfigDetailResponse(SdkResponse):
 
     @check_type.setter
     def check_type(self, check_type):
-        """Sets the check_type of this ShowRiskConfigDetailResponse.
+        r"""Sets the check_type of this ShowRiskConfigDetailResponse.
 
         配置检查（基线）的类型,例如SSH、CentOS 7、Windows Server 2019 R2、Windows Server 2016 R2、MySQL5-Windows
 
@@ -137,7 +137,7 @@ class ShowRiskConfigDetailResponse(SdkResponse):
 
     @property
     def check_type_desc(self):
-        """Gets the check_type_desc of this ShowRiskConfigDetailResponse.
+        r"""Gets the check_type_desc of this ShowRiskConfigDetailResponse.
 
         对配置检查（基线）类型的描述信息，概括当前基线包含的检查项是根据什么标准制定的，能够审计哪些方面的问题。
 
@@ -148,7 +148,7 @@ class ShowRiskConfigDetailResponse(SdkResponse):
 
     @check_type_desc.setter
     def check_type_desc(self, check_type_desc):
-        """Sets the check_type_desc of this ShowRiskConfigDetailResponse.
+        r"""Sets the check_type_desc of this ShowRiskConfigDetailResponse.
 
         对配置检查（基线）类型的描述信息，概括当前基线包含的检查项是根据什么标准制定的，能够审计哪些方面的问题。
 
@@ -159,7 +159,7 @@ class ShowRiskConfigDetailResponse(SdkResponse):
 
     @property
     def check_rule_num(self):
-        """Gets the check_rule_num of this ShowRiskConfigDetailResponse.
+        r"""Gets the check_rule_num of this ShowRiskConfigDetailResponse.
 
         当前配置检查（基线）类型下，用户共检测了多少个检查项。例如标准类型为hw_standard的SSH基线，主机安全提供了17个检查项，但用户所有主机都只检测了SSH基线的其中5个检查项，check_rule_num就是5。用户有一台主机进行了全量检查项检测，check_rule_num就是17。
 
@@ -170,7 +170,7 @@ class ShowRiskConfigDetailResponse(SdkResponse):
 
     @check_rule_num.setter
     def check_rule_num(self, check_rule_num):
-        """Sets the check_rule_num of this ShowRiskConfigDetailResponse.
+        r"""Sets the check_rule_num of this ShowRiskConfigDetailResponse.
 
         当前配置检查（基线）类型下，用户共检测了多少个检查项。例如标准类型为hw_standard的SSH基线，主机安全提供了17个检查项，但用户所有主机都只检测了SSH基线的其中5个检查项，check_rule_num就是5。用户有一台主机进行了全量检查项检测，check_rule_num就是17。
 
@@ -181,7 +181,7 @@ class ShowRiskConfigDetailResponse(SdkResponse):
 
     @property
     def failed_rule_num(self):
-        """Gets the failed_rule_num of this ShowRiskConfigDetailResponse.
+        r"""Gets the failed_rule_num of this ShowRiskConfigDetailResponse.
 
         未通过的检查项数量，check_rule_num中只要有一台主机没通过某个检查项，这个检查项就会被计算在failed_rule_num中
 
@@ -192,7 +192,7 @@ class ShowRiskConfigDetailResponse(SdkResponse):
 
     @failed_rule_num.setter
     def failed_rule_num(self, failed_rule_num):
-        """Sets the failed_rule_num of this ShowRiskConfigDetailResponse.
+        r"""Sets the failed_rule_num of this ShowRiskConfigDetailResponse.
 
         未通过的检查项数量，check_rule_num中只要有一台主机没通过某个检查项，这个检查项就会被计算在failed_rule_num中
 
@@ -203,7 +203,7 @@ class ShowRiskConfigDetailResponse(SdkResponse):
 
     @property
     def passed_rule_num(self):
-        """Gets the passed_rule_num of this ShowRiskConfigDetailResponse.
+        r"""Gets the passed_rule_num of this ShowRiskConfigDetailResponse.
 
         已通过的检查项数量，check_rule_num中只要有一台主机通过了某个检查项，这个检查项就会被计算在passed_rule_num中
 
@@ -214,7 +214,7 @@ class ShowRiskConfigDetailResponse(SdkResponse):
 
     @passed_rule_num.setter
     def passed_rule_num(self, passed_rule_num):
-        """Sets the passed_rule_num of this ShowRiskConfigDetailResponse.
+        r"""Sets the passed_rule_num of this ShowRiskConfigDetailResponse.
 
         已通过的检查项数量，check_rule_num中只要有一台主机通过了某个检查项，这个检查项就会被计算在passed_rule_num中
 
@@ -225,7 +225,7 @@ class ShowRiskConfigDetailResponse(SdkResponse):
 
     @property
     def ignored_rule_num(self):
-        """Gets the ignored_rule_num of this ShowRiskConfigDetailResponse.
+        r"""Gets the ignored_rule_num of this ShowRiskConfigDetailResponse.
 
         已忽略的检查项数量，check_rule_num中只要有一台主机忽略了某个检查项，这个检查项就会被计算在ignored_rule_num中
 
@@ -236,7 +236,7 @@ class ShowRiskConfigDetailResponse(SdkResponse):
 
     @ignored_rule_num.setter
     def ignored_rule_num(self, ignored_rule_num):
-        """Sets the ignored_rule_num of this ShowRiskConfigDetailResponse.
+        r"""Sets the ignored_rule_num of this ShowRiskConfigDetailResponse.
 
         已忽略的检查项数量，check_rule_num中只要有一台主机忽略了某个检查项，这个检查项就会被计算在ignored_rule_num中
 
@@ -247,7 +247,7 @@ class ShowRiskConfigDetailResponse(SdkResponse):
 
     @property
     def host_num(self):
-        """Gets the host_num of this ShowRiskConfigDetailResponse.
+        r"""Gets the host_num of this ShowRiskConfigDetailResponse.
 
         受影响的服务器的数量，进行了当前基线检测的服务器数量
 
@@ -258,7 +258,7 @@ class ShowRiskConfigDetailResponse(SdkResponse):
 
     @host_num.setter
     def host_num(self, host_num):
-        """Sets the host_num of this ShowRiskConfigDetailResponse.
+        r"""Sets the host_num of this ShowRiskConfigDetailResponse.
 
         受影响的服务器的数量，进行了当前基线检测的服务器数量
 

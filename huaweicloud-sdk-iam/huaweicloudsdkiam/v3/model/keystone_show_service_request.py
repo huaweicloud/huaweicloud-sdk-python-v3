@@ -25,7 +25,7 @@ class KeystoneShowServiceRequest:
     }
 
     def __init__(self, service_id=None):
-        """KeystoneShowServiceRequest
+        r"""KeystoneShowServiceRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class KeystoneShowServiceRequest:
 
     @property
     def service_id(self):
-        """Gets the service_id of this KeystoneShowServiceRequest.
+        r"""Gets the service_id of this KeystoneShowServiceRequest.
 
         待查询的服务ID。
 
@@ -53,7 +53,7 @@ class KeystoneShowServiceRequest:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this KeystoneShowServiceRequest.
+        r"""Sets the service_id of this KeystoneShowServiceRequest.
 
         待查询的服务ID。
 

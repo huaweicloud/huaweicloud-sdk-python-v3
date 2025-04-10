@@ -25,7 +25,7 @@ class LogicalClusterRingInfo:
     }
 
     def __init__(self, ring_hosts=None):
-        """LogicalClusterRingInfo
+        r"""LogicalClusterRingInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class LogicalClusterRingInfo:
 
     @property
     def ring_hosts(self):
-        """Gets the ring_hosts of this LogicalClusterRingInfo.
+        r"""Gets the ring_hosts of this LogicalClusterRingInfo.
 
         集群主机环信息
 
@@ -54,7 +54,7 @@ class LogicalClusterRingInfo:
 
     @ring_hosts.setter
     def ring_hosts(self, ring_hosts):
-        """Sets the ring_hosts of this LogicalClusterRingInfo.
+        r"""Sets the ring_hosts of this LogicalClusterRingInfo.
 
         集群主机环信息
 

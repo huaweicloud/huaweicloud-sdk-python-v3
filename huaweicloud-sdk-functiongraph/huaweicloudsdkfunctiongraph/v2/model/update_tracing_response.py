@@ -24,7 +24,7 @@ class UpdateTracingResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateTracingResponse
+        r"""UpdateTracingResponse
 
         The model defined in huaweicloud sdk
 

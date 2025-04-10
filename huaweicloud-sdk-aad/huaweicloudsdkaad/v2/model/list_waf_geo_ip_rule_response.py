@@ -28,7 +28,7 @@ class ListWafGeoIpRuleResponse(SdkResponse):
     }
 
     def __init__(self, total=None, items=None):
-        """ListWafGeoIpRuleResponse
+        r"""ListWafGeoIpRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListWafGeoIpRuleResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListWafGeoIpRuleResponse.
+        r"""Gets the total of this ListWafGeoIpRuleResponse.
 
         total
 
@@ -62,7 +62,7 @@ class ListWafGeoIpRuleResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListWafGeoIpRuleResponse.
+        r"""Sets the total of this ListWafGeoIpRuleResponse.
 
         total
 
@@ -73,7 +73,7 @@ class ListWafGeoIpRuleResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListWafGeoIpRuleResponse.
+        r"""Gets the items of this ListWafGeoIpRuleResponse.
 
         items
 
@@ -84,7 +84,7 @@ class ListWafGeoIpRuleResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListWafGeoIpRuleResponse.
+        r"""Sets the items of this ListWafGeoIpRuleResponse.
 
         items
 

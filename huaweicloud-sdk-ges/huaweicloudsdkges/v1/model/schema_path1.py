@@ -29,7 +29,7 @@ class SchemaPath1:
     }
 
     def __init__(self, job_id=None, path=None, status=None):
-        """SchemaPath1
+        r"""SchemaPath1
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class SchemaPath1:
 
     @property
     def job_id(self):
-        """Gets the job_id of this SchemaPath1.
+        r"""Gets the job_id of this SchemaPath1.
 
         导入OBS文件对应的jobId。
 
@@ -65,7 +65,7 @@ class SchemaPath1:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this SchemaPath1.
+        r"""Sets the job_id of this SchemaPath1.
 
         导入OBS文件对应的jobId。
 
@@ -76,7 +76,7 @@ class SchemaPath1:
 
     @property
     def path(self):
-        """Gets the path of this SchemaPath1.
+        r"""Gets the path of this SchemaPath1.
 
         OBS存储路径，不包含OBS Endpoint。
 
@@ -87,7 +87,7 @@ class SchemaPath1:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this SchemaPath1.
+        r"""Sets the path of this SchemaPath1.
 
         OBS存储路径，不包含OBS Endpoint。
 
@@ -98,7 +98,7 @@ class SchemaPath1:
 
     @property
     def status(self):
-        """Gets the status of this SchemaPath1.
+        r"""Gets the status of this SchemaPath1.
 
         OBS文件导入状态。 - success：完全导入成功 - partiallyFailed：部分失败 - failed：完全导入失败
 
@@ -109,7 +109,7 @@ class SchemaPath1:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SchemaPath1.
+        r"""Sets the status of this SchemaPath1.
 
         OBS文件导入状态。 - success：完全导入成功 - partiallyFailed：部分失败 - failed：完全导入失败
 

@@ -27,7 +27,7 @@ class CreateEndpointRequest:
     }
 
     def __init__(self, endpoint_group_id=None, body=None):
-        """CreateEndpointRequest
+        r"""CreateEndpointRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateEndpointRequest:
 
     @property
     def endpoint_group_id(self):
-        """Gets the endpoint_group_id of this CreateEndpointRequest.
+        r"""Gets the endpoint_group_id of this CreateEndpointRequest.
 
         终端节点组ID。
 
@@ -60,7 +60,7 @@ class CreateEndpointRequest:
 
     @endpoint_group_id.setter
     def endpoint_group_id(self, endpoint_group_id):
-        """Sets the endpoint_group_id of this CreateEndpointRequest.
+        r"""Sets the endpoint_group_id of this CreateEndpointRequest.
 
         终端节点组ID。
 
@@ -71,7 +71,7 @@ class CreateEndpointRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateEndpointRequest.
+        r"""Gets the body of this CreateEndpointRequest.
 
         :return: The body of this CreateEndpointRequest.
         :rtype: :class:`huaweicloudsdkga.v1.CreateEndpointRequestBody`
@@ -80,7 +80,7 @@ class CreateEndpointRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateEndpointRequest.
+        r"""Sets the body of this CreateEndpointRequest.
 
         :param body: The body of this CreateEndpointRequest.
         :type body: :class:`huaweicloudsdkga.v1.CreateEndpointRequestBody`

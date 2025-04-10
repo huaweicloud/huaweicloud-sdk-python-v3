@@ -41,7 +41,7 @@ class UpdateNotificationMasksRequestBody:
     }
 
     def __init__(self, mask_name=None, relation_ids=None, relation_type=None, resources=None, mask_type=None, start_date=None, start_time=None, end_date=None, end_time=None):
-        """UpdateNotificationMasksRequestBody
+        r"""UpdateNotificationMasksRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class UpdateNotificationMasksRequestBody:
 
     @property
     def mask_name(self):
-        """Gets the mask_name of this UpdateNotificationMasksRequestBody.
+        r"""Gets the mask_name of this UpdateNotificationMasksRequestBody.
 
         屏蔽规则名称，只能为字母、数字、汉字、-、_，最大长度为64
 
@@ -107,7 +107,7 @@ class UpdateNotificationMasksRequestBody:
 
     @mask_name.setter
     def mask_name(self, mask_name):
-        """Sets the mask_name of this UpdateNotificationMasksRequestBody.
+        r"""Sets the mask_name of this UpdateNotificationMasksRequestBody.
 
         屏蔽规则名称，只能为字母、数字、汉字、-、_，最大长度为64
 
@@ -118,7 +118,7 @@ class UpdateNotificationMasksRequestBody:
 
     @property
     def relation_ids(self):
-        """Gets the relation_ids of this UpdateNotificationMasksRequestBody.
+        r"""Gets the relation_ids of this UpdateNotificationMasksRequestBody.
 
         关联编号，relation_type为ALARM_RULE时填屏蔽的告警规则编号；relation_type为RESOURCE_POLICY_NOTIFICATION、RESOURCE_POLICY_ALARM时填屏蔽的告警策略编号；
 
@@ -129,7 +129,7 @@ class UpdateNotificationMasksRequestBody:
 
     @relation_ids.setter
     def relation_ids(self, relation_ids):
-        """Sets the relation_ids of this UpdateNotificationMasksRequestBody.
+        r"""Sets the relation_ids of this UpdateNotificationMasksRequestBody.
 
         关联编号，relation_type为ALARM_RULE时填屏蔽的告警规则编号；relation_type为RESOURCE_POLICY_NOTIFICATION、RESOURCE_POLICY_ALARM时填屏蔽的告警策略编号；
 
@@ -140,7 +140,7 @@ class UpdateNotificationMasksRequestBody:
 
     @property
     def relation_type(self):
-        """Gets the relation_type of this UpdateNotificationMasksRequestBody.
+        r"""Gets the relation_type of this UpdateNotificationMasksRequestBody.
 
         :return: The relation_type of this UpdateNotificationMasksRequestBody.
         :rtype: :class:`huaweicloudsdkces.v2.RelationType`
@@ -149,7 +149,7 @@ class UpdateNotificationMasksRequestBody:
 
     @relation_type.setter
     def relation_type(self, relation_type):
-        """Sets the relation_type of this UpdateNotificationMasksRequestBody.
+        r"""Sets the relation_type of this UpdateNotificationMasksRequestBody.
 
         :param relation_type: The relation_type of this UpdateNotificationMasksRequestBody.
         :type relation_type: :class:`huaweicloudsdkces.v2.RelationType`
@@ -158,7 +158,7 @@ class UpdateNotificationMasksRequestBody:
 
     @property
     def resources(self):
-        """Gets the resources of this UpdateNotificationMasksRequestBody.
+        r"""Gets the resources of this UpdateNotificationMasksRequestBody.
 
         关联资源
 
@@ -169,7 +169,7 @@ class UpdateNotificationMasksRequestBody:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this UpdateNotificationMasksRequestBody.
+        r"""Sets the resources of this UpdateNotificationMasksRequestBody.
 
         关联资源
 
@@ -180,7 +180,7 @@ class UpdateNotificationMasksRequestBody:
 
     @property
     def mask_type(self):
-        """Gets the mask_type of this UpdateNotificationMasksRequestBody.
+        r"""Gets the mask_type of this UpdateNotificationMasksRequestBody.
 
         :return: The mask_type of this UpdateNotificationMasksRequestBody.
         :rtype: :class:`huaweicloudsdkces.v2.MaskType`
@@ -189,7 +189,7 @@ class UpdateNotificationMasksRequestBody:
 
     @mask_type.setter
     def mask_type(self, mask_type):
-        """Sets the mask_type of this UpdateNotificationMasksRequestBody.
+        r"""Sets the mask_type of this UpdateNotificationMasksRequestBody.
 
         :param mask_type: The mask_type of this UpdateNotificationMasksRequestBody.
         :type mask_type: :class:`huaweicloudsdkces.v2.MaskType`
@@ -198,7 +198,7 @@ class UpdateNotificationMasksRequestBody:
 
     @property
     def start_date(self):
-        """Gets the start_date of this UpdateNotificationMasksRequestBody.
+        r"""Gets the start_date of this UpdateNotificationMasksRequestBody.
 
         屏蔽起始日期，yyyy-MM-dd。
 
@@ -209,7 +209,7 @@ class UpdateNotificationMasksRequestBody:
 
     @start_date.setter
     def start_date(self, start_date):
-        """Sets the start_date of this UpdateNotificationMasksRequestBody.
+        r"""Sets the start_date of this UpdateNotificationMasksRequestBody.
 
         屏蔽起始日期，yyyy-MM-dd。
 
@@ -220,7 +220,7 @@ class UpdateNotificationMasksRequestBody:
 
     @property
     def start_time(self):
-        """Gets the start_time of this UpdateNotificationMasksRequestBody.
+        r"""Gets the start_time of this UpdateNotificationMasksRequestBody.
 
         屏蔽起始时间，HH:mm:ss。
 
@@ -231,7 +231,7 @@ class UpdateNotificationMasksRequestBody:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this UpdateNotificationMasksRequestBody.
+        r"""Sets the start_time of this UpdateNotificationMasksRequestBody.
 
         屏蔽起始时间，HH:mm:ss。
 
@@ -242,7 +242,7 @@ class UpdateNotificationMasksRequestBody:
 
     @property
     def end_date(self):
-        """Gets the end_date of this UpdateNotificationMasksRequestBody.
+        r"""Gets the end_date of this UpdateNotificationMasksRequestBody.
 
         屏蔽截止日期，yyyy-MM-dd。
 
@@ -253,7 +253,7 @@ class UpdateNotificationMasksRequestBody:
 
     @end_date.setter
     def end_date(self, end_date):
-        """Sets the end_date of this UpdateNotificationMasksRequestBody.
+        r"""Sets the end_date of this UpdateNotificationMasksRequestBody.
 
         屏蔽截止日期，yyyy-MM-dd。
 
@@ -264,7 +264,7 @@ class UpdateNotificationMasksRequestBody:
 
     @property
     def end_time(self):
-        """Gets the end_time of this UpdateNotificationMasksRequestBody.
+        r"""Gets the end_time of this UpdateNotificationMasksRequestBody.
 
         屏蔽截止时间，HH:mm:ss。
 
@@ -275,7 +275,7 @@ class UpdateNotificationMasksRequestBody:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this UpdateNotificationMasksRequestBody.
+        r"""Sets the end_time of this UpdateNotificationMasksRequestBody.
 
         屏蔽截止时间，HH:mm:ss。
 

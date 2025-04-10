@@ -25,7 +25,7 @@ class RecyclePolicy:
     }
 
     def __init__(self, retention_period_in_days=None):
-        """RecyclePolicy
+        r"""RecyclePolicy
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RecyclePolicy:
 
     @property
     def retention_period_in_days(self):
-        """Gets the retention_period_in_days of this RecyclePolicy.
+        r"""Gets the retention_period_in_days of this RecyclePolicy.
 
         策略保持时长（1-7天），天数为正整数，默认7天。
 
@@ -54,7 +54,7 @@ class RecyclePolicy:
 
     @retention_period_in_days.setter
     def retention_period_in_days(self, retention_period_in_days):
-        """Sets the retention_period_in_days of this RecyclePolicy.
+        r"""Sets the retention_period_in_days of this RecyclePolicy.
 
         策略保持时长（1-7天），天数为正整数，默认7天。
 

@@ -36,7 +36,7 @@ class ListInstancesResponse(SdkResponse):
     }
 
     def __init__(self, instances=None, instance_num=None, page_no=None, page_size=None, total_record=None, total_page=None):
-        """ListInstancesResponse
+        r"""ListInstancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ListInstancesResponse(SdkResponse):
 
     @property
     def instances(self):
-        """Gets the instances of this ListInstancesResponse.
+        r"""Gets the instances of this ListInstancesResponse.
 
         DDM实例的信息。
 
@@ -90,7 +90,7 @@ class ListInstancesResponse(SdkResponse):
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this ListInstancesResponse.
+        r"""Sets the instances of this ListInstancesResponse.
 
         DDM实例的信息。
 
@@ -101,7 +101,7 @@ class ListInstancesResponse(SdkResponse):
 
     @property
     def instance_num(self):
-        """Gets the instance_num of this ListInstancesResponse.
+        r"""Gets the instance_num of this ListInstancesResponse.
 
         租户下的DDM实例个数
 
@@ -112,7 +112,7 @@ class ListInstancesResponse(SdkResponse):
 
     @instance_num.setter
     def instance_num(self, instance_num):
-        """Sets the instance_num of this ListInstancesResponse.
+        r"""Sets the instance_num of this ListInstancesResponse.
 
         租户下的DDM实例个数
 
@@ -123,7 +123,7 @@ class ListInstancesResponse(SdkResponse):
 
     @property
     def page_no(self):
-        """Gets the page_no of this ListInstancesResponse.
+        r"""Gets the page_no of this ListInstancesResponse.
 
         当前页码
 
@@ -134,7 +134,7 @@ class ListInstancesResponse(SdkResponse):
 
     @page_no.setter
     def page_no(self, page_no):
-        """Sets the page_no of this ListInstancesResponse.
+        r"""Sets the page_no of this ListInstancesResponse.
 
         当前页码
 
@@ -145,7 +145,7 @@ class ListInstancesResponse(SdkResponse):
 
     @property
     def page_size(self):
-        """Gets the page_size of this ListInstancesResponse.
+        r"""Gets the page_size of this ListInstancesResponse.
 
         当前页码的数据条数
 
@@ -156,7 +156,7 @@ class ListInstancesResponse(SdkResponse):
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ListInstancesResponse.
+        r"""Sets the page_size of this ListInstancesResponse.
 
         当前页码的数据条数
 
@@ -167,7 +167,7 @@ class ListInstancesResponse(SdkResponse):
 
     @property
     def total_record(self):
-        """Gets the total_record of this ListInstancesResponse.
+        r"""Gets the total_record of this ListInstancesResponse.
 
         总条数
 
@@ -178,7 +178,7 @@ class ListInstancesResponse(SdkResponse):
 
     @total_record.setter
     def total_record(self, total_record):
-        """Sets the total_record of this ListInstancesResponse.
+        r"""Sets the total_record of this ListInstancesResponse.
 
         总条数
 
@@ -189,7 +189,7 @@ class ListInstancesResponse(SdkResponse):
 
     @property
     def total_page(self):
-        """Gets the total_page of this ListInstancesResponse.
+        r"""Gets the total_page of this ListInstancesResponse.
 
         总页数
 
@@ -200,7 +200,7 @@ class ListInstancesResponse(SdkResponse):
 
     @total_page.setter
     def total_page(self, total_page):
-        """Sets the total_page of this ListInstancesResponse.
+        r"""Sets the total_page of this ListInstancesResponse.
 
         总页数
 

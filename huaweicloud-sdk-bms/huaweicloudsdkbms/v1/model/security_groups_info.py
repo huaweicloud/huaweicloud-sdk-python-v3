@@ -25,7 +25,7 @@ class SecurityGroupsInfo:
     }
 
     def __init__(self, id=None):
-        """SecurityGroupsInfo
+        r"""SecurityGroupsInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SecurityGroupsInfo:
 
     @property
     def id(self):
-        """Gets the id of this SecurityGroupsInfo.
+        r"""Gets the id of this SecurityGroupsInfo.
 
         裸金属服务器对应的安全组ID，对创建裸金属服务器中配置的所有网卡生效。当该参数未指定时默认给裸金属服务器绑定default安全组。当该参数传值（UUID格式）时需要指定已有安全组的ID。获取已有安全组的方法请参见《虚拟私有云API参考》的“查询安全组列表”章节。
 
@@ -54,7 +54,7 @@ class SecurityGroupsInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SecurityGroupsInfo.
+        r"""Sets the id of this SecurityGroupsInfo.
 
         裸金属服务器对应的安全组ID，对创建裸金属服务器中配置的所有网卡生效。当该参数未指定时默认给裸金属服务器绑定default安全组。当该参数传值（UUID格式）时需要指定已有安全组的ID。获取已有安全组的方法请参见《虚拟私有云API参考》的“查询安全组列表”章节。
 

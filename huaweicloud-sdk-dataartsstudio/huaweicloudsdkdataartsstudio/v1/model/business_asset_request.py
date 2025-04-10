@@ -37,7 +37,7 @@ class BusinessAssetRequest:
     }
 
     def __init__(self, search_all_attributes=None, tags=None, limit=None, offset=None, guid=None, query=None, type=None):
-        """BusinessAssetRequest
+        r"""BusinessAssetRequest
 
         The model defined in huaweicloud sdk
 
@@ -80,7 +80,7 @@ class BusinessAssetRequest:
 
     @property
     def search_all_attributes(self):
-        """Gets the search_all_attributes of this BusinessAssetRequest.
+        r"""Gets the search_all_attributes of this BusinessAssetRequest.
 
         关键字查询是否匹配所有属性，true为查询所有属性，false为仅查询名称描述
 
@@ -91,7 +91,7 @@ class BusinessAssetRequest:
 
     @search_all_attributes.setter
     def search_all_attributes(self, search_all_attributes):
-        """Sets the search_all_attributes of this BusinessAssetRequest.
+        r"""Sets the search_all_attributes of this BusinessAssetRequest.
 
         关键字查询是否匹配所有属性，true为查询所有属性，false为仅查询名称描述
 
@@ -102,7 +102,7 @@ class BusinessAssetRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this BusinessAssetRequest.
+        r"""Gets the tags of this BusinessAssetRequest.
 
         标签信息 Set<String>
 
@@ -113,7 +113,7 @@ class BusinessAssetRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BusinessAssetRequest.
+        r"""Sets the tags of this BusinessAssetRequest.
 
         标签信息 Set<String>
 
@@ -124,7 +124,7 @@ class BusinessAssetRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this BusinessAssetRequest.
+        r"""Gets the limit of this BusinessAssetRequest.
 
         查询返回数目
 
@@ -135,7 +135,7 @@ class BusinessAssetRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this BusinessAssetRequest.
+        r"""Sets the limit of this BusinessAssetRequest.
 
         查询返回数目
 
@@ -146,7 +146,7 @@ class BusinessAssetRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this BusinessAssetRequest.
+        r"""Gets the offset of this BusinessAssetRequest.
 
         查询偏移量
 
@@ -157,7 +157,7 @@ class BusinessAssetRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this BusinessAssetRequest.
+        r"""Sets the offset of this BusinessAssetRequest.
 
         查询偏移量
 
@@ -168,7 +168,7 @@ class BusinessAssetRequest:
 
     @property
     def guid(self):
-        """Gets the guid of this BusinessAssetRequest.
+        r"""Gets the guid of this BusinessAssetRequest.
 
         查询节点的guid
 
@@ -179,7 +179,7 @@ class BusinessAssetRequest:
 
     @guid.setter
     def guid(self, guid):
-        """Sets the guid of this BusinessAssetRequest.
+        r"""Sets the guid of this BusinessAssetRequest.
 
         查询节点的guid
 
@@ -190,7 +190,7 @@ class BusinessAssetRequest:
 
     @property
     def query(self):
-        """Gets the query of this BusinessAssetRequest.
+        r"""Gets the query of this BusinessAssetRequest.
 
         查询关键字
 
@@ -201,7 +201,7 @@ class BusinessAssetRequest:
 
     @query.setter
     def query(self, query):
-        """Sets the query of this BusinessAssetRequest.
+        r"""Sets the query of this BusinessAssetRequest.
 
         查询关键字
 
@@ -212,7 +212,7 @@ class BusinessAssetRequest:
 
     @property
     def type(self):
-        """Gets the type of this BusinessAssetRequest.
+        r"""Gets the type of this BusinessAssetRequest.
 
         查询类型
 
@@ -223,7 +223,7 @@ class BusinessAssetRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this BusinessAssetRequest.
+        r"""Sets the type of this BusinessAssetRequest.
 
         查询类型
 

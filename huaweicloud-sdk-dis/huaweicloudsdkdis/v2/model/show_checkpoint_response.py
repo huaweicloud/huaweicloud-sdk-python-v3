@@ -28,7 +28,7 @@ class ShowCheckpointResponse(SdkResponse):
     }
 
     def __init__(self, sequence_number=None, metadata=None):
-        """ShowCheckpointResponse
+        r"""ShowCheckpointResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowCheckpointResponse(SdkResponse):
 
     @property
     def sequence_number(self):
-        """Gets the sequence_number of this ShowCheckpointResponse.
+        r"""Gets the sequence_number of this ShowCheckpointResponse.
 
         序列号，用来记录该通道的消费检查点。
 
@@ -62,7 +62,7 @@ class ShowCheckpointResponse(SdkResponse):
 
     @sequence_number.setter
     def sequence_number(self, sequence_number):
-        """Sets the sequence_number of this ShowCheckpointResponse.
+        r"""Sets the sequence_number of this ShowCheckpointResponse.
 
         序列号，用来记录该通道的消费检查点。
 
@@ -73,7 +73,7 @@ class ShowCheckpointResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this ShowCheckpointResponse.
+        r"""Gets the metadata of this ShowCheckpointResponse.
 
         用户消费程序端的元数据信息。
 
@@ -84,7 +84,7 @@ class ShowCheckpointResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ShowCheckpointResponse.
+        r"""Sets the metadata of this ShowCheckpointResponse.
 
         用户消费程序端的元数据信息。
 

@@ -27,7 +27,7 @@ class InputModel:
     }
 
     def __init__(self, name=None, property_reference=None):
-        """InputModel
+        r"""InputModel
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class InputModel:
 
     @property
     def name(self):
-        """Gets the name of this InputModel.
+        r"""Gets the name of this InputModel.
 
         参数名称，正则：\"^[A-Za-z][A-Za-z_]{0,31}$\"
 
@@ -59,7 +59,7 @@ class InputModel:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this InputModel.
+        r"""Sets the name of this InputModel.
 
         参数名称，正则：\"^[A-Za-z][A-Za-z_]{0,31}$\"
 
@@ -70,7 +70,7 @@ class InputModel:
 
     @property
     def property_reference(self):
-        """Gets the property_reference of this InputModel.
+        r"""Gets the property_reference of this InputModel.
 
         :return: The property_reference of this InputModel.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.PropertyReferenceModel`
@@ -79,7 +79,7 @@ class InputModel:
 
     @property_reference.setter
     def property_reference(self, property_reference):
-        """Sets the property_reference of this InputModel.
+        r"""Sets the property_reference of this InputModel.
 
         :param property_reference: The property_reference of this InputModel.
         :type property_reference: :class:`huaweicloudsdkiotanalytics.v1.PropertyReferenceModel`

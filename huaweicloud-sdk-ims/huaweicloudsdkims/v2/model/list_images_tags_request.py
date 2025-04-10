@@ -23,7 +23,7 @@ class ListImagesTagsRequest:
     }
 
     def __init__(self):
-        """ListImagesTagsRequest
+        r"""ListImagesTagsRequest
 
         The model defined in huaweicloud sdk
 

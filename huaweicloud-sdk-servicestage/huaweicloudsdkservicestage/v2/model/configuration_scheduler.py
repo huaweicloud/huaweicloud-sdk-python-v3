@@ -27,7 +27,7 @@ class ConfigurationScheduler:
     }
 
     def __init__(self, affinity=None, anti_affinity=None):
-        """ConfigurationScheduler
+        r"""ConfigurationScheduler
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ConfigurationScheduler:
 
     @property
     def affinity(self):
-        """Gets the affinity of this ConfigurationScheduler.
+        r"""Gets the affinity of this ConfigurationScheduler.
 
         :return: The affinity of this ConfigurationScheduler.
         :rtype: :class:`huaweicloudsdkservicestage.v2.SchedulerAffinity`
@@ -59,7 +59,7 @@ class ConfigurationScheduler:
 
     @affinity.setter
     def affinity(self, affinity):
-        """Sets the affinity of this ConfigurationScheduler.
+        r"""Sets the affinity of this ConfigurationScheduler.
 
         :param affinity: The affinity of this ConfigurationScheduler.
         :type affinity: :class:`huaweicloudsdkservicestage.v2.SchedulerAffinity`
@@ -68,7 +68,7 @@ class ConfigurationScheduler:
 
     @property
     def anti_affinity(self):
-        """Gets the anti_affinity of this ConfigurationScheduler.
+        r"""Gets the anti_affinity of this ConfigurationScheduler.
 
         :return: The anti_affinity of this ConfigurationScheduler.
         :rtype: :class:`huaweicloudsdkservicestage.v2.SchedulerAffinity`
@@ -77,7 +77,7 @@ class ConfigurationScheduler:
 
     @anti_affinity.setter
     def anti_affinity(self, anti_affinity):
-        """Sets the anti_affinity of this ConfigurationScheduler.
+        r"""Sets the anti_affinity of this ConfigurationScheduler.
 
         :param anti_affinity: The anti_affinity of this ConfigurationScheduler.
         :type anti_affinity: :class:`huaweicloudsdkservicestage.v2.SchedulerAffinity`

@@ -42,7 +42,7 @@ class CreateSpecialThrottlingConfigurationV2Response(SdkResponse):
     }
 
     def __init__(self, id=None, call_limits=None, apply_time=None, app_name=None, app_id=None, object_id=None, object_type=None, object_name=None, throttle_id=None):
-        """CreateSpecialThrottlingConfigurationV2Response
+        r"""CreateSpecialThrottlingConfigurationV2Response
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class CreateSpecialThrottlingConfigurationV2Response(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateSpecialThrottlingConfigurationV2Response.
+        r"""Gets the id of this CreateSpecialThrottlingConfigurationV2Response.
 
         特殊配置的编号
 
@@ -111,7 +111,7 @@ class CreateSpecialThrottlingConfigurationV2Response(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateSpecialThrottlingConfigurationV2Response.
+        r"""Sets the id of this CreateSpecialThrottlingConfigurationV2Response.
 
         特殊配置的编号
 
@@ -122,7 +122,7 @@ class CreateSpecialThrottlingConfigurationV2Response(SdkResponse):
 
     @property
     def call_limits(self):
-        """Gets the call_limits of this CreateSpecialThrottlingConfigurationV2Response.
+        r"""Gets the call_limits of this CreateSpecialThrottlingConfigurationV2Response.
 
         特殊对象在流控时间内能够访问API的最大次数限制
 
@@ -133,7 +133,7 @@ class CreateSpecialThrottlingConfigurationV2Response(SdkResponse):
 
     @call_limits.setter
     def call_limits(self, call_limits):
-        """Sets the call_limits of this CreateSpecialThrottlingConfigurationV2Response.
+        r"""Sets the call_limits of this CreateSpecialThrottlingConfigurationV2Response.
 
         特殊对象在流控时间内能够访问API的最大次数限制
 
@@ -144,7 +144,7 @@ class CreateSpecialThrottlingConfigurationV2Response(SdkResponse):
 
     @property
     def apply_time(self):
-        """Gets the apply_time of this CreateSpecialThrottlingConfigurationV2Response.
+        r"""Gets the apply_time of this CreateSpecialThrottlingConfigurationV2Response.
 
         设置时间
 
@@ -155,7 +155,7 @@ class CreateSpecialThrottlingConfigurationV2Response(SdkResponse):
 
     @apply_time.setter
     def apply_time(self, apply_time):
-        """Sets the apply_time of this CreateSpecialThrottlingConfigurationV2Response.
+        r"""Sets the apply_time of this CreateSpecialThrottlingConfigurationV2Response.
 
         设置时间
 
@@ -166,7 +166,7 @@ class CreateSpecialThrottlingConfigurationV2Response(SdkResponse):
 
     @property
     def app_name(self):
-        """Gets the app_name of this CreateSpecialThrottlingConfigurationV2Response.
+        r"""Gets the app_name of this CreateSpecialThrottlingConfigurationV2Response.
 
         作用的APP名称
 
@@ -177,7 +177,7 @@ class CreateSpecialThrottlingConfigurationV2Response(SdkResponse):
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this CreateSpecialThrottlingConfigurationV2Response.
+        r"""Sets the app_name of this CreateSpecialThrottlingConfigurationV2Response.
 
         作用的APP名称
 
@@ -188,7 +188,7 @@ class CreateSpecialThrottlingConfigurationV2Response(SdkResponse):
 
     @property
     def app_id(self):
-        """Gets the app_id of this CreateSpecialThrottlingConfigurationV2Response.
+        r"""Gets the app_id of this CreateSpecialThrottlingConfigurationV2Response.
 
         作用的APP编号
 
@@ -199,7 +199,7 @@ class CreateSpecialThrottlingConfigurationV2Response(SdkResponse):
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this CreateSpecialThrottlingConfigurationV2Response.
+        r"""Sets the app_id of this CreateSpecialThrottlingConfigurationV2Response.
 
         作用的APP编号
 
@@ -210,7 +210,7 @@ class CreateSpecialThrottlingConfigurationV2Response(SdkResponse):
 
     @property
     def object_id(self):
-        """Gets the object_id of this CreateSpecialThrottlingConfigurationV2Response.
+        r"""Gets the object_id of this CreateSpecialThrottlingConfigurationV2Response.
 
         特殊对象的身份标识
 
@@ -221,7 +221,7 @@ class CreateSpecialThrottlingConfigurationV2Response(SdkResponse):
 
     @object_id.setter
     def object_id(self, object_id):
-        """Sets the object_id of this CreateSpecialThrottlingConfigurationV2Response.
+        r"""Sets the object_id of this CreateSpecialThrottlingConfigurationV2Response.
 
         特殊对象的身份标识
 
@@ -232,7 +232,7 @@ class CreateSpecialThrottlingConfigurationV2Response(SdkResponse):
 
     @property
     def object_type(self):
-        """Gets the object_type of this CreateSpecialThrottlingConfigurationV2Response.
+        r"""Gets the object_type of this CreateSpecialThrottlingConfigurationV2Response.
 
         特殊对象类型：APP、USER
 
@@ -243,7 +243,7 @@ class CreateSpecialThrottlingConfigurationV2Response(SdkResponse):
 
     @object_type.setter
     def object_type(self, object_type):
-        """Sets the object_type of this CreateSpecialThrottlingConfigurationV2Response.
+        r"""Sets the object_type of this CreateSpecialThrottlingConfigurationV2Response.
 
         特殊对象类型：APP、USER
 
@@ -254,7 +254,7 @@ class CreateSpecialThrottlingConfigurationV2Response(SdkResponse):
 
     @property
     def object_name(self):
-        """Gets the object_name of this CreateSpecialThrottlingConfigurationV2Response.
+        r"""Gets the object_name of this CreateSpecialThrottlingConfigurationV2Response.
 
         [作用的APP或租户的名称](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)[作用的APP或租户ID](tag:Site)
 
@@ -265,7 +265,7 @@ class CreateSpecialThrottlingConfigurationV2Response(SdkResponse):
 
     @object_name.setter
     def object_name(self, object_name):
-        """Sets the object_name of this CreateSpecialThrottlingConfigurationV2Response.
+        r"""Sets the object_name of this CreateSpecialThrottlingConfigurationV2Response.
 
         [作用的APP或租户的名称](tag:hws,hws_hk,hcs,hcs_sm,fcs,g42)[作用的APP或租户ID](tag:Site)
 
@@ -276,7 +276,7 @@ class CreateSpecialThrottlingConfigurationV2Response(SdkResponse):
 
     @property
     def throttle_id(self):
-        """Gets the throttle_id of this CreateSpecialThrottlingConfigurationV2Response.
+        r"""Gets the throttle_id of this CreateSpecialThrottlingConfigurationV2Response.
 
         流控策略编号
 
@@ -287,7 +287,7 @@ class CreateSpecialThrottlingConfigurationV2Response(SdkResponse):
 
     @throttle_id.setter
     def throttle_id(self, throttle_id):
-        """Sets the throttle_id of this CreateSpecialThrottlingConfigurationV2Response.
+        r"""Sets the throttle_id of this CreateSpecialThrottlingConfigurationV2Response.
 
         流控策略编号
 

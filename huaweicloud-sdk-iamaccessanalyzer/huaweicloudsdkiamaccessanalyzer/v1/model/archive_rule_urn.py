@@ -23,7 +23,7 @@ class ArchiveRuleUrn:
     }
 
     def __init__(self):
-        """ArchiveRuleUrn
+        r"""ArchiveRuleUrn
 
         The model defined in huaweicloud sdk
 

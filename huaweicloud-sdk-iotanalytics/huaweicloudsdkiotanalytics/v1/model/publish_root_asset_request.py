@@ -25,7 +25,7 @@ class PublishRootAssetRequest:
     }
 
     def __init__(self, root_asset_id=None):
-        """PublishRootAssetRequest
+        r"""PublishRootAssetRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class PublishRootAssetRequest:
 
     @property
     def root_asset_id(self):
-        """Gets the root_asset_id of this PublishRootAssetRequest.
+        r"""Gets the root_asset_id of this PublishRootAssetRequest.
 
         根资产ID
 
@@ -53,7 +53,7 @@ class PublishRootAssetRequest:
 
     @root_asset_id.setter
     def root_asset_id(self, root_asset_id):
-        """Sets the root_asset_id of this PublishRootAssetRequest.
+        r"""Sets the root_asset_id of this PublishRootAssetRequest.
 
         根资产ID
 

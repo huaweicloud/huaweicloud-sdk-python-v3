@@ -39,7 +39,7 @@ class ApiCheckInfoV2:
     }
 
     def __init__(self, name=None, req_method=None, req_uri=None, match_mode=None, group_id=None, roma_app_id=None, api_id=None, type=None):
-        """ApiCheckInfoV2
+        r"""ApiCheckInfoV2
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ApiCheckInfoV2:
 
     @property
     def name(self):
-        """Gets the name of this ApiCheckInfoV2.
+        r"""Gets the name of this ApiCheckInfoV2.
 
         API名称。  type = name时必填
 
@@ -103,7 +103,7 @@ class ApiCheckInfoV2:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ApiCheckInfoV2.
+        r"""Sets the name of this ApiCheckInfoV2.
 
         API名称。  type = name时必填
 
@@ -114,7 +114,7 @@ class ApiCheckInfoV2:
 
     @property
     def req_method(self):
-        """Gets the req_method of this ApiCheckInfoV2.
+        r"""Gets the req_method of this ApiCheckInfoV2.
 
         请求方式。  type = path时必填
 
@@ -125,7 +125,7 @@ class ApiCheckInfoV2:
 
     @req_method.setter
     def req_method(self, req_method):
-        """Sets the req_method of this ApiCheckInfoV2.
+        r"""Sets the req_method of this ApiCheckInfoV2.
 
         请求方式。  type = path时必填
 
@@ -136,7 +136,7 @@ class ApiCheckInfoV2:
 
     @property
     def req_uri(self):
-        """Gets the req_uri of this ApiCheckInfoV2.
+        r"""Gets the req_uri of this ApiCheckInfoV2.
 
         API的访问地址。  type = path时必填
 
@@ -147,7 +147,7 @@ class ApiCheckInfoV2:
 
     @req_uri.setter
     def req_uri(self, req_uri):
-        """Sets the req_uri of this ApiCheckInfoV2.
+        r"""Sets the req_uri of this ApiCheckInfoV2.
 
         API的访问地址。  type = path时必填
 
@@ -158,7 +158,7 @@ class ApiCheckInfoV2:
 
     @property
     def match_mode(self):
-        """Gets the match_mode of this ApiCheckInfoV2.
+        r"""Gets the match_mode of this ApiCheckInfoV2.
 
         API的匹配方式 - SWA：前缀匹配 - NORMAL：正常匹配（绝对匹配）  type = path时必填
 
@@ -169,7 +169,7 @@ class ApiCheckInfoV2:
 
     @match_mode.setter
     def match_mode(self, match_mode):
-        """Sets the match_mode of this ApiCheckInfoV2.
+        r"""Sets the match_mode of this ApiCheckInfoV2.
 
         API的匹配方式 - SWA：前缀匹配 - NORMAL：正常匹配（绝对匹配）  type = path时必填
 
@@ -180,7 +180,7 @@ class ApiCheckInfoV2:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ApiCheckInfoV2.
+        r"""Gets the group_id of this ApiCheckInfoV2.
 
         分组ID。  校验分组下API定义是否重复时必填
 
@@ -191,7 +191,7 @@ class ApiCheckInfoV2:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ApiCheckInfoV2.
+        r"""Sets the group_id of this ApiCheckInfoV2.
 
         分组ID。  校验分组下API定义是否重复时必填
 
@@ -202,7 +202,7 @@ class ApiCheckInfoV2:
 
     @property
     def roma_app_id(self):
-        """Gets the roma_app_id of this ApiCheckInfoV2.
+        r"""Gets the roma_app_id of this ApiCheckInfoV2.
 
         集成应用ID。  校验应用下API定义是否重复时必填
 
@@ -213,7 +213,7 @@ class ApiCheckInfoV2:
 
     @roma_app_id.setter
     def roma_app_id(self, roma_app_id):
-        """Sets the roma_app_id of this ApiCheckInfoV2.
+        r"""Sets the roma_app_id of this ApiCheckInfoV2.
 
         集成应用ID。  校验应用下API定义是否重复时必填
 
@@ -224,7 +224,7 @@ class ApiCheckInfoV2:
 
     @property
     def api_id(self):
-        """Gets the api_id of this ApiCheckInfoV2.
+        r"""Gets the api_id of this ApiCheckInfoV2.
 
         需要对比的API ID
 
@@ -235,7 +235,7 @@ class ApiCheckInfoV2:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this ApiCheckInfoV2.
+        r"""Sets the api_id of this ApiCheckInfoV2.
 
         需要对比的API ID
 
@@ -246,7 +246,7 @@ class ApiCheckInfoV2:
 
     @property
     def type(self):
-        """Gets the type of this ApiCheckInfoV2.
+        r"""Gets the type of this ApiCheckInfoV2.
 
         校验类型：   - path：路径类型   - name：名称类型
 
@@ -257,7 +257,7 @@ class ApiCheckInfoV2:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ApiCheckInfoV2.
+        r"""Sets the type of this ApiCheckInfoV2.
 
         校验类型：   - path：路径类型   - name：名称类型
 

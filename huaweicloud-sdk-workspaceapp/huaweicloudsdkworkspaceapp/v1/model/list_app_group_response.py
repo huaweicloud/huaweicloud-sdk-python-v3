@@ -28,7 +28,7 @@ class ListAppGroupResponse(SdkResponse):
     }
 
     def __init__(self, count=None, items=None):
-        """ListAppGroupResponse
+        r"""ListAppGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAppGroupResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListAppGroupResponse.
+        r"""Gets the count of this ListAppGroupResponse.
 
         总数。
 
@@ -62,7 +62,7 @@ class ListAppGroupResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListAppGroupResponse.
+        r"""Sets the count of this ListAppGroupResponse.
 
         总数。
 
@@ -73,7 +73,7 @@ class ListAppGroupResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListAppGroupResponse.
+        r"""Gets the items of this ListAppGroupResponse.
 
         应用组列表。
 
@@ -84,7 +84,7 @@ class ListAppGroupResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListAppGroupResponse.
+        r"""Sets the items of this ListAppGroupResponse.
 
         应用组列表。
 

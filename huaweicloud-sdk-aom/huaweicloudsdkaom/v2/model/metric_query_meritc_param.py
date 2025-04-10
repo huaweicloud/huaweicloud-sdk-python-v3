@@ -29,7 +29,7 @@ class MetricQueryMeritcParam:
     }
 
     def __init__(self, dimensions=None, metric_name=None, namespace=None):
-        """MetricQueryMeritcParam
+        r"""MetricQueryMeritcParam
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class MetricQueryMeritcParam:
 
     @property
     def dimensions(self):
-        """Gets the dimensions of this MetricQueryMeritcParam.
+        r"""Gets the dimensions of this MetricQueryMeritcParam.
 
         指标维度列表。取值范围：数组不能为空，同时数组中任何一个dimension对象name和value属性的值也不能为空。
 
@@ -65,7 +65,7 @@ class MetricQueryMeritcParam:
 
     @dimensions.setter
     def dimensions(self, dimensions):
-        """Sets the dimensions of this MetricQueryMeritcParam.
+        r"""Sets the dimensions of this MetricQueryMeritcParam.
 
         指标维度列表。取值范围：数组不能为空，同时数组中任何一个dimension对象name和value属性的值也不能为空。
 
@@ -76,7 +76,7 @@ class MetricQueryMeritcParam:
 
     @property
     def metric_name(self):
-        """Gets the metric_name of this MetricQueryMeritcParam.
+        r"""Gets the metric_name of this MetricQueryMeritcParam.
 
         指标名称。名称长度取值范围为1~255个字符。取值范围：AOM提供的基础指标，cpuUsage、cpuCoreUsed等cpuUsage：cpu使用率；cpuCoreUsed：cpu内核占用；用户上报的自定义指标名称。
 
@@ -87,7 +87,7 @@ class MetricQueryMeritcParam:
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        """Sets the metric_name of this MetricQueryMeritcParam.
+        r"""Sets the metric_name of this MetricQueryMeritcParam.
 
         指标名称。名称长度取值范围为1~255个字符。取值范围：AOM提供的基础指标，cpuUsage、cpuCoreUsed等cpuUsage：cpu使用率；cpuCoreUsed：cpu内核占用；用户上报的自定义指标名称。
 
@@ -98,7 +98,7 @@ class MetricQueryMeritcParam:
 
     @property
     def namespace(self):
-        """Gets the namespace of this MetricQueryMeritcParam.
+        r"""Gets the namespace of this MetricQueryMeritcParam.
 
         指标命名空间。取值范围：PAAS.CONTAINER：组件指标、实例指标、进程指标和容器指标的命名空间，PAAS.NODE： 主机指标、网络指标、磁盘指标和文件系统指标的命名空间，PAAS.SLA：SLA指标的命名空间，PAAS.AGGR：集群指标的命名空间，CUSTOMMETRICS：默认的自定义指标的命名空间。
 
@@ -109,7 +109,7 @@ class MetricQueryMeritcParam:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this MetricQueryMeritcParam.
+        r"""Sets the namespace of this MetricQueryMeritcParam.
 
         指标命名空间。取值范围：PAAS.CONTAINER：组件指标、实例指标、进程指标和容器指标的命名空间，PAAS.NODE： 主机指标、网络指标、磁盘指标和文件系统指标的命名空间，PAAS.SLA：SLA指标的命名空间，PAAS.AGGR：集群指标的命名空间，CUSTOMMETRICS：默认的自定义指标的命名空间。
 

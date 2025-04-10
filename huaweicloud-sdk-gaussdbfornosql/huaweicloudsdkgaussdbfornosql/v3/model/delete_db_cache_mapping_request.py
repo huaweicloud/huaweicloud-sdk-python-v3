@@ -25,7 +25,7 @@ class DeleteDbCacheMappingRequest:
     }
 
     def __init__(self, body=None):
-        """DeleteDbCacheMappingRequest
+        r"""DeleteDbCacheMappingRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteDbCacheMappingRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteDbCacheMappingRequest.
+        r"""Gets the body of this DeleteDbCacheMappingRequest.
 
         :return: The body of this DeleteDbCacheMappingRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.DeleteDbCacheMappingRequestBody`
@@ -52,7 +52,7 @@ class DeleteDbCacheMappingRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteDbCacheMappingRequest.
+        r"""Sets the body of this DeleteDbCacheMappingRequest.
 
         :param body: The body of this DeleteDbCacheMappingRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.DeleteDbCacheMappingRequestBody`

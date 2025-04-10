@@ -27,7 +27,7 @@ class DeleteCustomIngressPortRequest:
     }
 
     def __init__(self, instance_id=None, ingress_port_id=None):
-        """DeleteCustomIngressPortRequest
+        r"""DeleteCustomIngressPortRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteCustomIngressPortRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteCustomIngressPortRequest.
+        r"""Gets the instance_id of this DeleteCustomIngressPortRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -59,7 +59,7 @@ class DeleteCustomIngressPortRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteCustomIngressPortRequest.
+        r"""Sets the instance_id of this DeleteCustomIngressPortRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -70,7 +70,7 @@ class DeleteCustomIngressPortRequest:
 
     @property
     def ingress_port_id(self):
-        """Gets the ingress_port_id of this DeleteCustomIngressPortRequest.
+        r"""Gets the ingress_port_id of this DeleteCustomIngressPortRequest.
 
         实例自定义入方向端口ID。
 
@@ -81,7 +81,7 @@ class DeleteCustomIngressPortRequest:
 
     @ingress_port_id.setter
     def ingress_port_id(self, ingress_port_id):
-        """Sets the ingress_port_id of this DeleteCustomIngressPortRequest.
+        r"""Sets the ingress_port_id of this DeleteCustomIngressPortRequest.
 
         实例自定义入方向端口ID。
 

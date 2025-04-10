@@ -27,7 +27,7 @@ class AllowedAddressPair:
     }
 
     def __init__(self, ip_address=None, mac_address=None):
-        """AllowedAddressPair
+        r"""AllowedAddressPair
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AllowedAddressPair:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this AllowedAddressPair.
+        r"""Gets the ip_address of this AllowedAddressPair.
 
         - 功能说明：IP地址 - 约束：     IP地址不支持“0.0.0.0/0”     如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组。     如果allowed_address_pairs的IP地址为“1.1.1.1/0”，表示关闭源目地址检查开关。
 
@@ -60,7 +60,7 @@ class AllowedAddressPair:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this AllowedAddressPair.
+        r"""Sets the ip_address of this AllowedAddressPair.
 
         - 功能说明：IP地址 - 约束：     IP地址不支持“0.0.0.0/0”     如果allowed_address_pairs配置地址池较大的CIDR（掩码小于24位），建议为该port配置一个单独的安全组。     如果allowed_address_pairs的IP地址为“1.1.1.1/0”，表示关闭源目地址检查开关。
 
@@ -71,7 +71,7 @@ class AllowedAddressPair:
 
     @property
     def mac_address(self):
-        """Gets the mac_address of this AllowedAddressPair.
+        r"""Gets the mac_address of this AllowedAddressPair.
 
         MAC地址
 
@@ -82,7 +82,7 @@ class AllowedAddressPair:
 
     @mac_address.setter
     def mac_address(self, mac_address):
-        """Sets the mac_address of this AllowedAddressPair.
+        r"""Sets the mac_address of this AllowedAddressPair.
 
         MAC地址
 

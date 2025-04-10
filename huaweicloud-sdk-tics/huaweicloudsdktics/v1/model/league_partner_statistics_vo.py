@@ -39,7 +39,7 @@ class LeaguePartnerStatisticsVo:
     }
 
     def __init__(self, partner_access_cnt=None, partner_domain_alias=None, partner_domain_name=None, partner_job_cnt=None, partner_job_ins_cnt=None, partner_job_ins_fail_cnt=None, partner_job_ins_intercept_cnt=None, partner_job_ins_success_cnt=None):
-        """LeaguePartnerStatisticsVo
+        r"""LeaguePartnerStatisticsVo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class LeaguePartnerStatisticsVo:
 
     @property
     def partner_access_cnt(self):
-        """Gets the partner_access_cnt of this LeaguePartnerStatisticsVo.
+        r"""Gets the partner_access_cnt of this LeaguePartnerStatisticsVo.
 
         合作方访问次数
 
@@ -103,7 +103,7 @@ class LeaguePartnerStatisticsVo:
 
     @partner_access_cnt.setter
     def partner_access_cnt(self, partner_access_cnt):
-        """Sets the partner_access_cnt of this LeaguePartnerStatisticsVo.
+        r"""Sets the partner_access_cnt of this LeaguePartnerStatisticsVo.
 
         合作方访问次数
 
@@ -114,7 +114,7 @@ class LeaguePartnerStatisticsVo:
 
     @property
     def partner_domain_alias(self):
-        """Gets the partner_domain_alias of this LeaguePartnerStatisticsVo.
+        r"""Gets the partner_domain_alias of this LeaguePartnerStatisticsVo.
 
         租户别名
 
@@ -125,7 +125,7 @@ class LeaguePartnerStatisticsVo:
 
     @partner_domain_alias.setter
     def partner_domain_alias(self, partner_domain_alias):
-        """Sets the partner_domain_alias of this LeaguePartnerStatisticsVo.
+        r"""Sets the partner_domain_alias of this LeaguePartnerStatisticsVo.
 
         租户别名
 
@@ -136,7 +136,7 @@ class LeaguePartnerStatisticsVo:
 
     @property
     def partner_domain_name(self):
-        """Gets the partner_domain_name of this LeaguePartnerStatisticsVo.
+        r"""Gets the partner_domain_name of this LeaguePartnerStatisticsVo.
 
         租户名
 
@@ -147,7 +147,7 @@ class LeaguePartnerStatisticsVo:
 
     @partner_domain_name.setter
     def partner_domain_name(self, partner_domain_name):
-        """Sets the partner_domain_name of this LeaguePartnerStatisticsVo.
+        r"""Sets the partner_domain_name of this LeaguePartnerStatisticsVo.
 
         租户名
 
@@ -158,7 +158,7 @@ class LeaguePartnerStatisticsVo:
 
     @property
     def partner_job_cnt(self):
-        """Gets the partner_job_cnt of this LeaguePartnerStatisticsVo.
+        r"""Gets the partner_job_cnt of this LeaguePartnerStatisticsVo.
 
         作业总数
 
@@ -169,7 +169,7 @@ class LeaguePartnerStatisticsVo:
 
     @partner_job_cnt.setter
     def partner_job_cnt(self, partner_job_cnt):
-        """Sets the partner_job_cnt of this LeaguePartnerStatisticsVo.
+        r"""Sets the partner_job_cnt of this LeaguePartnerStatisticsVo.
 
         作业总数
 
@@ -180,7 +180,7 @@ class LeaguePartnerStatisticsVo:
 
     @property
     def partner_job_ins_cnt(self):
-        """Gets the partner_job_ins_cnt of this LeaguePartnerStatisticsVo.
+        r"""Gets the partner_job_ins_cnt of this LeaguePartnerStatisticsVo.
 
         实例总数
 
@@ -191,7 +191,7 @@ class LeaguePartnerStatisticsVo:
 
     @partner_job_ins_cnt.setter
     def partner_job_ins_cnt(self, partner_job_ins_cnt):
-        """Sets the partner_job_ins_cnt of this LeaguePartnerStatisticsVo.
+        r"""Sets the partner_job_ins_cnt of this LeaguePartnerStatisticsVo.
 
         实例总数
 
@@ -202,7 +202,7 @@ class LeaguePartnerStatisticsVo:
 
     @property
     def partner_job_ins_fail_cnt(self):
-        """Gets the partner_job_ins_fail_cnt of this LeaguePartnerStatisticsVo.
+        r"""Gets the partner_job_ins_fail_cnt of this LeaguePartnerStatisticsVo.
 
         实例失败数
 
@@ -213,7 +213,7 @@ class LeaguePartnerStatisticsVo:
 
     @partner_job_ins_fail_cnt.setter
     def partner_job_ins_fail_cnt(self, partner_job_ins_fail_cnt):
-        """Sets the partner_job_ins_fail_cnt of this LeaguePartnerStatisticsVo.
+        r"""Sets the partner_job_ins_fail_cnt of this LeaguePartnerStatisticsVo.
 
         实例失败数
 
@@ -224,7 +224,7 @@ class LeaguePartnerStatisticsVo:
 
     @property
     def partner_job_ins_intercept_cnt(self):
-        """Gets the partner_job_ins_intercept_cnt of this LeaguePartnerStatisticsVo.
+        r"""Gets the partner_job_ins_intercept_cnt of this LeaguePartnerStatisticsVo.
 
         实例拦截数
 
@@ -235,7 +235,7 @@ class LeaguePartnerStatisticsVo:
 
     @partner_job_ins_intercept_cnt.setter
     def partner_job_ins_intercept_cnt(self, partner_job_ins_intercept_cnt):
-        """Sets the partner_job_ins_intercept_cnt of this LeaguePartnerStatisticsVo.
+        r"""Sets the partner_job_ins_intercept_cnt of this LeaguePartnerStatisticsVo.
 
         实例拦截数
 
@@ -246,7 +246,7 @@ class LeaguePartnerStatisticsVo:
 
     @property
     def partner_job_ins_success_cnt(self):
-        """Gets the partner_job_ins_success_cnt of this LeaguePartnerStatisticsVo.
+        r"""Gets the partner_job_ins_success_cnt of this LeaguePartnerStatisticsVo.
 
         实例成功数
 
@@ -257,7 +257,7 @@ class LeaguePartnerStatisticsVo:
 
     @partner_job_ins_success_cnt.setter
     def partner_job_ins_success_cnt(self, partner_job_ins_success_cnt):
-        """Sets the partner_job_ins_success_cnt of this LeaguePartnerStatisticsVo.
+        r"""Sets the partner_job_ins_success_cnt of this LeaguePartnerStatisticsVo.
 
         实例成功数
 

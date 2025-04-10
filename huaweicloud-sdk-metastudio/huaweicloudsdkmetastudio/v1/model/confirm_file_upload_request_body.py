@@ -25,7 +25,7 @@ class ConfirmFileUploadRequestBody:
     }
 
     def __init__(self, state=None):
-        """ConfirmFileUploadRequestBody
+        r"""ConfirmFileUploadRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ConfirmFileUploadRequestBody:
 
     @property
     def state(self):
-        """Gets the state of this ConfirmFileUploadRequestBody.
+        r"""Gets the state of this ConfirmFileUploadRequestBody.
 
         **参数解释**： 文件上传状态。 **约束限制**： 不涉及 **取值范围**： * CREATED：上传完成 * FAILED：上传失败 * CANCELLED：取消上传  **默认取值**： 不涉及
 
@@ -53,7 +53,7 @@ class ConfirmFileUploadRequestBody:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ConfirmFileUploadRequestBody.
+        r"""Sets the state of this ConfirmFileUploadRequestBody.
 
         **参数解释**： 文件上传状态。 **约束限制**： 不涉及 **取值范围**： * CREATED：上传完成 * FAILED：上传失败 * CANCELLED：取消上传  **默认取值**： 不涉及
 

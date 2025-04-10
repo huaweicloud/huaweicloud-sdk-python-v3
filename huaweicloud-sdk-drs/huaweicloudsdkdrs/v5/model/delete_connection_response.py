@@ -26,7 +26,7 @@ class DeleteConnectionResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DeleteConnectionResponse
+        r"""DeleteConnectionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteConnectionResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this DeleteConnectionResponse.
+        r"""Gets the body of this DeleteConnectionResponse.
 
         空响应体。
 
@@ -55,7 +55,7 @@ class DeleteConnectionResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteConnectionResponse.
+        r"""Sets the body of this DeleteConnectionResponse.
 
         空响应体。
 

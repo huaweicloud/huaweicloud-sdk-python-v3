@@ -25,7 +25,7 @@ class DeleteSnapshotRequest:
     }
 
     def __init__(self, snapshot_id=None):
-        """DeleteSnapshotRequest
+        r"""DeleteSnapshotRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteSnapshotRequest:
 
     @property
     def snapshot_id(self):
-        """Gets the snapshot_id of this DeleteSnapshotRequest.
+        r"""Gets the snapshot_id of this DeleteSnapshotRequest.
 
         快照ID。
 
@@ -53,7 +53,7 @@ class DeleteSnapshotRequest:
 
     @snapshot_id.setter
     def snapshot_id(self, snapshot_id):
-        """Sets the snapshot_id of this DeleteSnapshotRequest.
+        r"""Sets the snapshot_id of this DeleteSnapshotRequest.
 
         快照ID。
 

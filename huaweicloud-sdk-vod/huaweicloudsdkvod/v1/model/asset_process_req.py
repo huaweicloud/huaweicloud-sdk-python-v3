@@ -33,7 +33,7 @@ class AssetProcessReq:
     }
 
     def __init__(self, asset_id=None, template_group_name=None, auto_encrypt=None, thumbnail=None, subtitle_id=None):
-        """AssetProcessReq
+        r"""AssetProcessReq
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class AssetProcessReq:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this AssetProcessReq.
+        r"""Gets the asset_id of this AssetProcessReq.
 
         媒资ID。
 
@@ -81,7 +81,7 @@ class AssetProcessReq:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this AssetProcessReq.
+        r"""Sets the asset_id of this AssetProcessReq.
 
         媒资ID。
 
@@ -92,7 +92,7 @@ class AssetProcessReq:
 
     @property
     def template_group_name(self):
-        """Gets the template_group_name of this AssetProcessReq.
+        r"""Gets the template_group_name of this AssetProcessReq.
 
         转码模板组名称。 若不为空，则使用指定的转码模板对上传的音视频进行转码，您可以在视频点播控制台配置转码模板，具体请参见[转码设置](https://support.huaweicloud.com/usermanual-vod/vod_01_0072.html)。
 
@@ -103,7 +103,7 @@ class AssetProcessReq:
 
     @template_group_name.setter
     def template_group_name(self, template_group_name):
-        """Sets the template_group_name of this AssetProcessReq.
+        r"""Sets the template_group_name of this AssetProcessReq.
 
         转码模板组名称。 若不为空，则使用指定的转码模板对上传的音视频进行转码，您可以在视频点播控制台配置转码模板，具体请参见[转码设置](https://support.huaweicloud.com/usermanual-vod/vod_01_0072.html)。
 
@@ -114,7 +114,7 @@ class AssetProcessReq:
 
     @property
     def auto_encrypt(self):
-        """Gets the auto_encrypt of this AssetProcessReq.
+        r"""Gets the auto_encrypt of this AssetProcessReq.
 
         是否自动加密。  取值如下： - 0：表示不加密。 - 1：表示需要加密。  默认值：0。  加密与转码必须要一起进行，当需要加密时，转码参数不能为空，且转码输出格式必须要为HLS。
 
@@ -125,7 +125,7 @@ class AssetProcessReq:
 
     @auto_encrypt.setter
     def auto_encrypt(self, auto_encrypt):
-        """Sets the auto_encrypt of this AssetProcessReq.
+        r"""Sets the auto_encrypt of this AssetProcessReq.
 
         是否自动加密。  取值如下： - 0：表示不加密。 - 1：表示需要加密。  默认值：0。  加密与转码必须要一起进行，当需要加密时，转码参数不能为空，且转码输出格式必须要为HLS。
 
@@ -136,7 +136,7 @@ class AssetProcessReq:
 
     @property
     def thumbnail(self):
-        """Gets the thumbnail of this AssetProcessReq.
+        r"""Gets the thumbnail of this AssetProcessReq.
 
         :return: The thumbnail of this AssetProcessReq.
         :rtype: :class:`huaweicloudsdkvod.v1.Thumbnail`
@@ -145,7 +145,7 @@ class AssetProcessReq:
 
     @thumbnail.setter
     def thumbnail(self, thumbnail):
-        """Sets the thumbnail of this AssetProcessReq.
+        r"""Sets the thumbnail of this AssetProcessReq.
 
         :param thumbnail: The thumbnail of this AssetProcessReq.
         :type thumbnail: :class:`huaweicloudsdkvod.v1.Thumbnail`
@@ -154,7 +154,7 @@ class AssetProcessReq:
 
     @property
     def subtitle_id(self):
-        """Gets the subtitle_id of this AssetProcessReq.
+        r"""Gets the subtitle_id of this AssetProcessReq.
 
         字幕文件ID。  > 仅在[创建媒资](https://support.huaweicloud.com/api-vod/vod_04_0196.html)时，请求参数设置了“**subtitles**”时，该参数设置才生效。
 
@@ -165,7 +165,7 @@ class AssetProcessReq:
 
     @subtitle_id.setter
     def subtitle_id(self, subtitle_id):
-        """Sets the subtitle_id of this AssetProcessReq.
+        r"""Sets the subtitle_id of this AssetProcessReq.
 
         字幕文件ID。  > 仅在[创建媒资](https://support.huaweicloud.com/api-vod/vod_04_0196.html)时，请求参数设置了“**subtitles**”时，该参数设置才生效。
 

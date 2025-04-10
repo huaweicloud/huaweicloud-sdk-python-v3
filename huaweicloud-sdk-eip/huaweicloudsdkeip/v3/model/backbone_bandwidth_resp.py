@@ -35,7 +35,7 @@ class BackboneBandwidthResp:
     }
 
     def __init__(self, id=None, admin_status=None, size=None, short_id=None, sla_level=None, dscp=None):
-        """BackboneBandwidthResp
+        r"""BackboneBandwidthResp
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class BackboneBandwidthResp:
 
     @property
     def id(self):
-        """Gets the id of this BackboneBandwidthResp.
+        r"""Gets the id of this BackboneBandwidthResp.
 
         骨干带宽的uuid
 
@@ -89,7 +89,7 @@ class BackboneBandwidthResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BackboneBandwidthResp.
+        r"""Sets the id of this BackboneBandwidthResp.
 
         骨干带宽的uuid
 
@@ -100,7 +100,7 @@ class BackboneBandwidthResp:
 
     @property
     def admin_status(self):
-        """Gets the admin_status of this BackboneBandwidthResp.
+        r"""Gets the admin_status of this BackboneBandwidthResp.
 
         骨干带宽的状态
 
@@ -111,7 +111,7 @@ class BackboneBandwidthResp:
 
     @admin_status.setter
     def admin_status(self, admin_status):
-        """Sets the admin_status of this BackboneBandwidthResp.
+        r"""Sets the admin_status of this BackboneBandwidthResp.
 
         骨干带宽的状态
 
@@ -122,7 +122,7 @@ class BackboneBandwidthResp:
 
     @property
     def size(self):
-        """Gets the size of this BackboneBandwidthResp.
+        r"""Gets the size of this BackboneBandwidthResp.
 
         骨干带宽的大小
 
@@ -133,7 +133,7 @@ class BackboneBandwidthResp:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this BackboneBandwidthResp.
+        r"""Sets the size of this BackboneBandwidthResp.
 
         骨干带宽的大小
 
@@ -144,7 +144,7 @@ class BackboneBandwidthResp:
 
     @property
     def short_id(self):
-        """Gets the short_id of this BackboneBandwidthResp.
+        r"""Gets the short_id of this BackboneBandwidthResp.
 
         骨干带宽的short_id
 
@@ -155,7 +155,7 @@ class BackboneBandwidthResp:
 
     @short_id.setter
     def short_id(self, short_id):
-        """Sets the short_id of this BackboneBandwidthResp.
+        r"""Sets the short_id of this BackboneBandwidthResp.
 
         骨干带宽的short_id
 
@@ -166,7 +166,7 @@ class BackboneBandwidthResp:
 
     @property
     def sla_level(self):
-        """Gets the sla_level of this BackboneBandwidthResp.
+        r"""Gets the sla_level of this BackboneBandwidthResp.
 
         描述网络等级，从高到低分为铂金、金、银、铜
 
@@ -177,7 +177,7 @@ class BackboneBandwidthResp:
 
     @sla_level.setter
     def sla_level(self, sla_level):
-        """Sets the sla_level of this BackboneBandwidthResp.
+        r"""Sets the sla_level of this BackboneBandwidthResp.
 
         描述网络等级，从高到低分为铂金、金、银、铜
 
@@ -188,7 +188,7 @@ class BackboneBandwidthResp:
 
     @property
     def dscp(self):
-        """Gets the dscp of this BackboneBandwidthResp.
+        r"""Gets the dscp of this BackboneBandwidthResp.
 
         线路质量金银铜对应的DSCP值
 
@@ -199,7 +199,7 @@ class BackboneBandwidthResp:
 
     @dscp.setter
     def dscp(self, dscp):
-        """Sets the dscp of this BackboneBandwidthResp.
+        r"""Sets the dscp of this BackboneBandwidthResp.
 
         线路质量金银铜对应的DSCP值
 

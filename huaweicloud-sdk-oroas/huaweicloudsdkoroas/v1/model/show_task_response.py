@@ -42,7 +42,7 @@ class ShowTaskResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None, status=None, input_json=None, input_url=None, start_time=None, end_time=None, create_time=None, output_json=None, output_url=None):
-        """ShowTaskResponse
+        r"""ShowTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowTaskResponse.
+        r"""Gets the task_id of this ShowTaskResponse.
 
         任务编号
 
@@ -111,7 +111,7 @@ class ShowTaskResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowTaskResponse.
+        r"""Sets the task_id of this ShowTaskResponse.
 
         任务编号
 
@@ -122,7 +122,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowTaskResponse.
+        r"""Gets the status of this ShowTaskResponse.
 
         任务运行状态，暂考虑取值仅为 Running/Failed/Successed
 
@@ -133,7 +133,7 @@ class ShowTaskResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowTaskResponse.
+        r"""Sets the status of this ShowTaskResponse.
 
         任务运行状态，暂考虑取值仅为 Running/Failed/Successed
 
@@ -144,7 +144,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def input_json(self):
-        """Gets the input_json of this ShowTaskResponse.
+        r"""Gets the input_json of this ShowTaskResponse.
 
         如果提交任务使用了input_enable参数，并且创建任务使用的是json格式非文件方式，该值为输入的字符串; 对应数据结构参见创建任务时的结构体
 
@@ -155,7 +155,7 @@ class ShowTaskResponse(SdkResponse):
 
     @input_json.setter
     def input_json(self, input_json):
-        """Sets the input_json of this ShowTaskResponse.
+        r"""Sets the input_json of this ShowTaskResponse.
 
         如果提交任务使用了input_enable参数，并且创建任务使用的是json格式非文件方式，该值为输入的字符串; 对应数据结构参见创建任务时的结构体
 
@@ -166,7 +166,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def input_url(self):
-        """Gets the input_url of this ShowTaskResponse.
+        r"""Gets the input_url of this ShowTaskResponse.
 
         如果提交任务使用了input_enable参数，并且创建任务使用的是文件方式，该值为OBS对应的文件绝对路径
 
@@ -177,7 +177,7 @@ class ShowTaskResponse(SdkResponse):
 
     @input_url.setter
     def input_url(self, input_url):
-        """Sets the input_url of this ShowTaskResponse.
+        r"""Sets the input_url of this ShowTaskResponse.
 
         如果提交任务使用了input_enable参数，并且创建任务使用的是文件方式，该值为OBS对应的文件绝对路径
 
@@ -188,7 +188,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowTaskResponse.
+        r"""Gets the start_time of this ShowTaskResponse.
 
         开始时间（UTC）
 
@@ -199,7 +199,7 @@ class ShowTaskResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowTaskResponse.
+        r"""Sets the start_time of this ShowTaskResponse.
 
         开始时间（UTC）
 
@@ -210,7 +210,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowTaskResponse.
+        r"""Gets the end_time of this ShowTaskResponse.
 
         结束时间（UTC）
 
@@ -221,7 +221,7 @@ class ShowTaskResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowTaskResponse.
+        r"""Sets the end_time of this ShowTaskResponse.
 
         结束时间（UTC）
 
@@ -232,7 +232,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowTaskResponse.
+        r"""Gets the create_time of this ShowTaskResponse.
 
         创建时间（UTC）
 
@@ -243,7 +243,7 @@ class ShowTaskResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowTaskResponse.
+        r"""Sets the create_time of this ShowTaskResponse.
 
         创建时间（UTC）
 
@@ -254,7 +254,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def output_json(self):
-        """Gets the output_json of this ShowTaskResponse.
+        r"""Gets the output_json of this ShowTaskResponse.
 
         任务处理结果，json格式；每个子服务该对象结构不同，框架层不解析具体key，运行态直接拷贝算法服务返回信息、
 
@@ -265,7 +265,7 @@ class ShowTaskResponse(SdkResponse):
 
     @output_json.setter
     def output_json(self, output_json):
-        """Sets the output_json of this ShowTaskResponse.
+        r"""Sets the output_json of this ShowTaskResponse.
 
         任务处理结果，json格式；每个子服务该对象结构不同，框架层不解析具体key，运行态直接拷贝算法服务返回信息、
 
@@ -276,7 +276,7 @@ class ShowTaskResponse(SdkResponse):
 
     @property
     def output_url(self):
-        """Gets the output_url of this ShowTaskResponse.
+        r"""Gets the output_url of this ShowTaskResponse.
 
         任务结果文件对应的绝对地址，具体值由租户OBS对应的待存储路径前缀和文件名组成，文件名服务端固定用task_id命名
 
@@ -287,7 +287,7 @@ class ShowTaskResponse(SdkResponse):
 
     @output_url.setter
     def output_url(self, output_url):
-        """Sets the output_url of this ShowTaskResponse.
+        r"""Sets the output_url of this ShowTaskResponse.
 
         任务结果文件对应的绝对地址，具体值由租户OBS对应的待存储路径前缀和文件名组成，文件名服务端固定用task_id命名
 

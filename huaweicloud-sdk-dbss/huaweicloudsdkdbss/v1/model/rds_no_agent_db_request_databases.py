@@ -43,7 +43,7 @@ class RdsNoAgentDbRequestDatabases:
     }
 
     def __init__(self, id=None, db_name=None, status=None, port=None, ip=None, instance_name=None, version=None, type=None, enterprise_id=None, enterprise_name=None):
-        """RdsNoAgentDbRequestDatabases
+        r"""RdsNoAgentDbRequestDatabases
 
         The model defined in huaweicloud sdk
 
@@ -97,7 +97,7 @@ class RdsNoAgentDbRequestDatabases:
 
     @property
     def id(self):
-        """Gets the id of this RdsNoAgentDbRequestDatabases.
+        r"""Gets the id of this RdsNoAgentDbRequestDatabases.
 
         数据库ID
 
@@ -108,7 +108,7 @@ class RdsNoAgentDbRequestDatabases:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RdsNoAgentDbRequestDatabases.
+        r"""Sets the id of this RdsNoAgentDbRequestDatabases.
 
         数据库ID
 
@@ -119,7 +119,7 @@ class RdsNoAgentDbRequestDatabases:
 
     @property
     def db_name(self):
-        """Gets the db_name of this RdsNoAgentDbRequestDatabases.
+        r"""Gets the db_name of this RdsNoAgentDbRequestDatabases.
 
         数据库名称
 
@@ -130,7 +130,7 @@ class RdsNoAgentDbRequestDatabases:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this RdsNoAgentDbRequestDatabases.
+        r"""Sets the db_name of this RdsNoAgentDbRequestDatabases.
 
         数据库名称
 
@@ -141,7 +141,7 @@ class RdsNoAgentDbRequestDatabases:
 
     @property
     def status(self):
-        """Gets the status of this RdsNoAgentDbRequestDatabases.
+        r"""Gets the status of this RdsNoAgentDbRequestDatabases.
 
         数据库状态
 
@@ -152,7 +152,7 @@ class RdsNoAgentDbRequestDatabases:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this RdsNoAgentDbRequestDatabases.
+        r"""Sets the status of this RdsNoAgentDbRequestDatabases.
 
         数据库状态
 
@@ -163,7 +163,7 @@ class RdsNoAgentDbRequestDatabases:
 
     @property
     def port(self):
-        """Gets the port of this RdsNoAgentDbRequestDatabases.
+        r"""Gets the port of this RdsNoAgentDbRequestDatabases.
 
         数据库端口
 
@@ -174,7 +174,7 @@ class RdsNoAgentDbRequestDatabases:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this RdsNoAgentDbRequestDatabases.
+        r"""Sets the port of this RdsNoAgentDbRequestDatabases.
 
         数据库端口
 
@@ -185,7 +185,7 @@ class RdsNoAgentDbRequestDatabases:
 
     @property
     def ip(self):
-        """Gets the ip of this RdsNoAgentDbRequestDatabases.
+        r"""Gets the ip of this RdsNoAgentDbRequestDatabases.
 
         数据库IP
 
@@ -196,7 +196,7 @@ class RdsNoAgentDbRequestDatabases:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this RdsNoAgentDbRequestDatabases.
+        r"""Sets the ip of this RdsNoAgentDbRequestDatabases.
 
         数据库IP
 
@@ -207,7 +207,7 @@ class RdsNoAgentDbRequestDatabases:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this RdsNoAgentDbRequestDatabases.
+        r"""Gets the instance_name of this RdsNoAgentDbRequestDatabases.
 
         数据库实例名称
 
@@ -218,7 +218,7 @@ class RdsNoAgentDbRequestDatabases:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this RdsNoAgentDbRequestDatabases.
+        r"""Sets the instance_name of this RdsNoAgentDbRequestDatabases.
 
         数据库实例名称
 
@@ -229,7 +229,7 @@ class RdsNoAgentDbRequestDatabases:
 
     @property
     def version(self):
-        """Gets the version of this RdsNoAgentDbRequestDatabases.
+        r"""Gets the version of this RdsNoAgentDbRequestDatabases.
 
         数据库版本
 
@@ -240,7 +240,7 @@ class RdsNoAgentDbRequestDatabases:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this RdsNoAgentDbRequestDatabases.
+        r"""Sets the version of this RdsNoAgentDbRequestDatabases.
 
         数据库版本
 
@@ -251,7 +251,7 @@ class RdsNoAgentDbRequestDatabases:
 
     @property
     def type(self):
-        """Gets the type of this RdsNoAgentDbRequestDatabases.
+        r"""Gets the type of this RdsNoAgentDbRequestDatabases.
 
         数据库类型
 
@@ -262,7 +262,7 @@ class RdsNoAgentDbRequestDatabases:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this RdsNoAgentDbRequestDatabases.
+        r"""Sets the type of this RdsNoAgentDbRequestDatabases.
 
         数据库类型
 
@@ -273,7 +273,7 @@ class RdsNoAgentDbRequestDatabases:
 
     @property
     def enterprise_id(self):
-        """Gets the enterprise_id of this RdsNoAgentDbRequestDatabases.
+        r"""Gets the enterprise_id of this RdsNoAgentDbRequestDatabases.
 
         企业项目ID
 
@@ -284,7 +284,7 @@ class RdsNoAgentDbRequestDatabases:
 
     @enterprise_id.setter
     def enterprise_id(self, enterprise_id):
-        """Sets the enterprise_id of this RdsNoAgentDbRequestDatabases.
+        r"""Sets the enterprise_id of this RdsNoAgentDbRequestDatabases.
 
         企业项目ID
 
@@ -295,7 +295,7 @@ class RdsNoAgentDbRequestDatabases:
 
     @property
     def enterprise_name(self):
-        """Gets the enterprise_name of this RdsNoAgentDbRequestDatabases.
+        r"""Gets the enterprise_name of this RdsNoAgentDbRequestDatabases.
 
         企业项目名称
 
@@ -306,7 +306,7 @@ class RdsNoAgentDbRequestDatabases:
 
     @enterprise_name.setter
     def enterprise_name(self, enterprise_name):
-        """Sets the enterprise_name of this RdsNoAgentDbRequestDatabases.
+        r"""Sets the enterprise_name of this RdsNoAgentDbRequestDatabases.
 
         企业项目名称
 

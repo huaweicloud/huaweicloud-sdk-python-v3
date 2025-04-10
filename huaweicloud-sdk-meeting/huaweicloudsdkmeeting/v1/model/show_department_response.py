@@ -32,7 +32,7 @@ class ShowDepartmentResponse(SdkResponse):
     }
 
     def __init__(self, dept_code=None, dept_name=None, is_leaf_nodes=None, child_depts=None):
-        """ShowDepartmentResponse
+        r"""ShowDepartmentResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowDepartmentResponse(SdkResponse):
 
     @property
     def dept_code(self):
-        """Gets the dept_code of this ShowDepartmentResponse.
+        r"""Gets the dept_code of this ShowDepartmentResponse.
 
         部门编码。
 
@@ -76,7 +76,7 @@ class ShowDepartmentResponse(SdkResponse):
 
     @dept_code.setter
     def dept_code(self, dept_code):
-        """Sets the dept_code of this ShowDepartmentResponse.
+        r"""Sets the dept_code of this ShowDepartmentResponse.
 
         部门编码。
 
@@ -87,7 +87,7 @@ class ShowDepartmentResponse(SdkResponse):
 
     @property
     def dept_name(self):
-        """Gets the dept_name of this ShowDepartmentResponse.
+        r"""Gets the dept_name of this ShowDepartmentResponse.
 
         部门名称。
 
@@ -98,7 +98,7 @@ class ShowDepartmentResponse(SdkResponse):
 
     @dept_name.setter
     def dept_name(self, dept_name):
-        """Sets the dept_name of this ShowDepartmentResponse.
+        r"""Sets the dept_name of this ShowDepartmentResponse.
 
         部门名称。
 
@@ -109,7 +109,7 @@ class ShowDepartmentResponse(SdkResponse):
 
     @property
     def is_leaf_nodes(self):
-        """Gets the is_leaf_nodes of this ShowDepartmentResponse.
+        r"""Gets the is_leaf_nodes of this ShowDepartmentResponse.
 
         是否为叶子节点（没有子部门的称为叶子节点）。
 
@@ -120,7 +120,7 @@ class ShowDepartmentResponse(SdkResponse):
 
     @is_leaf_nodes.setter
     def is_leaf_nodes(self, is_leaf_nodes):
-        """Sets the is_leaf_nodes of this ShowDepartmentResponse.
+        r"""Sets the is_leaf_nodes of this ShowDepartmentResponse.
 
         是否为叶子节点（没有子部门的称为叶子节点）。
 
@@ -131,7 +131,7 @@ class ShowDepartmentResponse(SdkResponse):
 
     @property
     def child_depts(self):
-        """Gets the child_depts of this ShowDepartmentResponse.
+        r"""Gets the child_depts of this ShowDepartmentResponse.
 
         子部门详情。
 
@@ -142,7 +142,7 @@ class ShowDepartmentResponse(SdkResponse):
 
     @child_depts.setter
     def child_depts(self, child_depts):
-        """Sets the child_depts of this ShowDepartmentResponse.
+        r"""Sets the child_depts of this ShowDepartmentResponse.
 
         子部门详情。
 

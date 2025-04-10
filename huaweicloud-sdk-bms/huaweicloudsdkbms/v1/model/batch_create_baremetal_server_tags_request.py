@@ -27,7 +27,7 @@ class BatchCreateBaremetalServerTagsRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """BatchCreateBaremetalServerTagsRequest
+        r"""BatchCreateBaremetalServerTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchCreateBaremetalServerTagsRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this BatchCreateBaremetalServerTagsRequest.
+        r"""Gets the server_id of this BatchCreateBaremetalServerTagsRequest.
 
         裸金属服务器ID。
 
@@ -60,7 +60,7 @@ class BatchCreateBaremetalServerTagsRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this BatchCreateBaremetalServerTagsRequest.
+        r"""Sets the server_id of this BatchCreateBaremetalServerTagsRequest.
 
         裸金属服务器ID。
 
@@ -71,7 +71,7 @@ class BatchCreateBaremetalServerTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateBaremetalServerTagsRequest.
+        r"""Gets the body of this BatchCreateBaremetalServerTagsRequest.
 
         :return: The body of this BatchCreateBaremetalServerTagsRequest.
         :rtype: :class:`huaweicloudsdkbms.v1.BatchCreateBaremetalServerTagsRequestBody`
@@ -80,7 +80,7 @@ class BatchCreateBaremetalServerTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateBaremetalServerTagsRequest.
+        r"""Sets the body of this BatchCreateBaremetalServerTagsRequest.
 
         :param body: The body of this BatchCreateBaremetalServerTagsRequest.
         :type body: :class:`huaweicloudsdkbms.v1.BatchCreateBaremetalServerTagsRequestBody`

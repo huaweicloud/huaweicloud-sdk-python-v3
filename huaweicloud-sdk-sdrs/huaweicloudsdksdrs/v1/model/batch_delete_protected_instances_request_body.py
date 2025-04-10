@@ -29,7 +29,7 @@ class BatchDeleteProtectedInstancesRequestBody:
     }
 
     def __init__(self, protected_instances=None, delete_target_server=None, delete_target_eip=None):
-        """BatchDeleteProtectedInstancesRequestBody
+        r"""BatchDeleteProtectedInstancesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class BatchDeleteProtectedInstancesRequestBody:
 
     @property
     def protected_instances(self):
-        """Gets the protected_instances of this BatchDeleteProtectedInstancesRequestBody.
+        r"""Gets the protected_instances of this BatchDeleteProtectedInstancesRequestBody.
 
         所需要删除的保护实例列表。
 
@@ -67,7 +67,7 @@ class BatchDeleteProtectedInstancesRequestBody:
 
     @protected_instances.setter
     def protected_instances(self, protected_instances):
-        """Sets the protected_instances of this BatchDeleteProtectedInstancesRequestBody.
+        r"""Sets the protected_instances of this BatchDeleteProtectedInstancesRequestBody.
 
         所需要删除的保护实例列表。
 
@@ -78,7 +78,7 @@ class BatchDeleteProtectedInstancesRequestBody:
 
     @property
     def delete_target_server(self):
-        """Gets the delete_target_server of this BatchDeleteProtectedInstancesRequestBody.
+        r"""Gets the delete_target_server of this BatchDeleteProtectedInstancesRequestBody.
 
         是否删除容灾站点服务器，默认值为false。
 
@@ -89,7 +89,7 @@ class BatchDeleteProtectedInstancesRequestBody:
 
     @delete_target_server.setter
     def delete_target_server(self, delete_target_server):
-        """Sets the delete_target_server of this BatchDeleteProtectedInstancesRequestBody.
+        r"""Sets the delete_target_server of this BatchDeleteProtectedInstancesRequestBody.
 
         是否删除容灾站点服务器，默认值为false。
 
@@ -100,7 +100,7 @@ class BatchDeleteProtectedInstancesRequestBody:
 
     @property
     def delete_target_eip(self):
-        """Gets the delete_target_eip of this BatchDeleteProtectedInstancesRequestBody.
+        r"""Gets the delete_target_eip of this BatchDeleteProtectedInstancesRequestBody.
 
         是否删除容灾站点弹性IP，默认值为false。
 
@@ -111,7 +111,7 @@ class BatchDeleteProtectedInstancesRequestBody:
 
     @delete_target_eip.setter
     def delete_target_eip(self, delete_target_eip):
-        """Sets the delete_target_eip of this BatchDeleteProtectedInstancesRequestBody.
+        r"""Sets the delete_target_eip of this BatchDeleteProtectedInstancesRequestBody.
 
         是否删除容灾站点弹性IP，默认值为false。
 

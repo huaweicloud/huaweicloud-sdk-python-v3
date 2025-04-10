@@ -27,7 +27,7 @@ class TokenProjectDomainResult:
     }
 
     def __init__(self, name=None, id=None):
-        """TokenProjectDomainResult
+        r"""TokenProjectDomainResult
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class TokenProjectDomainResult:
 
     @property
     def name(self):
-        """Gets the name of this TokenProjectDomainResult.
+        r"""Gets the name of this TokenProjectDomainResult.
 
         账号名。
 
@@ -59,7 +59,7 @@ class TokenProjectDomainResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TokenProjectDomainResult.
+        r"""Sets the name of this TokenProjectDomainResult.
 
         账号名。
 
@@ -70,7 +70,7 @@ class TokenProjectDomainResult:
 
     @property
     def id(self):
-        """Gets the id of this TokenProjectDomainResult.
+        r"""Gets the id of this TokenProjectDomainResult.
 
         账号ID。
 
@@ -81,7 +81,7 @@ class TokenProjectDomainResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TokenProjectDomainResult.
+        r"""Sets the id of this TokenProjectDomainResult.
 
         账号ID。
 

@@ -42,7 +42,7 @@ class ExecuteQaChatResponse(SdkResponse):
     }
 
     def __init__(self, reply_type=None, qabot_answers=None, chat_answers=None, taskbot_answers=None, docqa_answers=None, tableqa_answers=None, session_id=None, kbqa_answers=None, request_id=None):
-        """ExecuteQaChatResponse
+        r"""ExecuteQaChatResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class ExecuteQaChatResponse(SdkResponse):
 
     @property
     def reply_type(self):
-        """Gets the reply_type of this ExecuteQaChatResponse.
+        r"""Gets the reply_type of this ExecuteQaChatResponse.
 
         回复类型： 0   问答型机器人回复。 1   任务型机器人回复。 2   闲聊回复。 3   图谱问答回复。 4   文档问答回复。 5   表格问答回复。
 
@@ -111,7 +111,7 @@ class ExecuteQaChatResponse(SdkResponse):
 
     @reply_type.setter
     def reply_type(self, reply_type):
-        """Sets the reply_type of this ExecuteQaChatResponse.
+        r"""Sets the reply_type of this ExecuteQaChatResponse.
 
         回复类型： 0   问答型机器人回复。 1   任务型机器人回复。 2   闲聊回复。 3   图谱问答回复。 4   文档问答回复。 5   表格问答回复。
 
@@ -122,7 +122,7 @@ class ExecuteQaChatResponse(SdkResponse):
 
     @property
     def qabot_answers(self):
-        """Gets the qabot_answers of this ExecuteQaChatResponse.
+        r"""Gets the qabot_answers of this ExecuteQaChatResponse.
 
         :return: The qabot_answers of this ExecuteQaChatResponse.
         :rtype: :class:`huaweicloudsdkcbs.v1.QaBotAnswersNew`
@@ -131,7 +131,7 @@ class ExecuteQaChatResponse(SdkResponse):
 
     @qabot_answers.setter
     def qabot_answers(self, qabot_answers):
-        """Sets the qabot_answers of this ExecuteQaChatResponse.
+        r"""Sets the qabot_answers of this ExecuteQaChatResponse.
 
         :param qabot_answers: The qabot_answers of this ExecuteQaChatResponse.
         :type qabot_answers: :class:`huaweicloudsdkcbs.v1.QaBotAnswersNew`
@@ -140,7 +140,7 @@ class ExecuteQaChatResponse(SdkResponse):
 
     @property
     def chat_answers(self):
-        """Gets the chat_answers of this ExecuteQaChatResponse.
+        r"""Gets the chat_answers of this ExecuteQaChatResponse.
 
         :return: The chat_answers of this ExecuteQaChatResponse.
         :rtype: :class:`huaweicloudsdkcbs.v1.ChatAnswers`
@@ -149,7 +149,7 @@ class ExecuteQaChatResponse(SdkResponse):
 
     @chat_answers.setter
     def chat_answers(self, chat_answers):
-        """Sets the chat_answers of this ExecuteQaChatResponse.
+        r"""Sets the chat_answers of this ExecuteQaChatResponse.
 
         :param chat_answers: The chat_answers of this ExecuteQaChatResponse.
         :type chat_answers: :class:`huaweicloudsdkcbs.v1.ChatAnswers`
@@ -158,7 +158,7 @@ class ExecuteQaChatResponse(SdkResponse):
 
     @property
     def taskbot_answers(self):
-        """Gets the taskbot_answers of this ExecuteQaChatResponse.
+        r"""Gets the taskbot_answers of this ExecuteQaChatResponse.
 
         :return: The taskbot_answers of this ExecuteQaChatResponse.
         :rtype: :class:`huaweicloudsdkcbs.v1.TaskBotAnswers`
@@ -167,7 +167,7 @@ class ExecuteQaChatResponse(SdkResponse):
 
     @taskbot_answers.setter
     def taskbot_answers(self, taskbot_answers):
-        """Sets the taskbot_answers of this ExecuteQaChatResponse.
+        r"""Sets the taskbot_answers of this ExecuteQaChatResponse.
 
         :param taskbot_answers: The taskbot_answers of this ExecuteQaChatResponse.
         :type taskbot_answers: :class:`huaweicloudsdkcbs.v1.TaskBotAnswers`
@@ -176,7 +176,7 @@ class ExecuteQaChatResponse(SdkResponse):
 
     @property
     def docqa_answers(self):
-        """Gets the docqa_answers of this ExecuteQaChatResponse.
+        r"""Gets the docqa_answers of this ExecuteQaChatResponse.
 
         :return: The docqa_answers of this ExecuteQaChatResponse.
         :rtype: :class:`huaweicloudsdkcbs.v1.DocBotAnswers`
@@ -185,7 +185,7 @@ class ExecuteQaChatResponse(SdkResponse):
 
     @docqa_answers.setter
     def docqa_answers(self, docqa_answers):
-        """Sets the docqa_answers of this ExecuteQaChatResponse.
+        r"""Sets the docqa_answers of this ExecuteQaChatResponse.
 
         :param docqa_answers: The docqa_answers of this ExecuteQaChatResponse.
         :type docqa_answers: :class:`huaweicloudsdkcbs.v1.DocBotAnswers`
@@ -194,7 +194,7 @@ class ExecuteQaChatResponse(SdkResponse):
 
     @property
     def tableqa_answers(self):
-        """Gets the tableqa_answers of this ExecuteQaChatResponse.
+        r"""Gets the tableqa_answers of this ExecuteQaChatResponse.
 
         :return: The tableqa_answers of this ExecuteQaChatResponse.
         :rtype: :class:`huaweicloudsdkcbs.v1.TableQaAnswers`
@@ -203,7 +203,7 @@ class ExecuteQaChatResponse(SdkResponse):
 
     @tableqa_answers.setter
     def tableqa_answers(self, tableqa_answers):
-        """Sets the tableqa_answers of this ExecuteQaChatResponse.
+        r"""Sets the tableqa_answers of this ExecuteQaChatResponse.
 
         :param tableqa_answers: The tableqa_answers of this ExecuteQaChatResponse.
         :type tableqa_answers: :class:`huaweicloudsdkcbs.v1.TableQaAnswers`
@@ -212,7 +212,7 @@ class ExecuteQaChatResponse(SdkResponse):
 
     @property
     def session_id(self):
-        """Gets the session_id of this ExecuteQaChatResponse.
+        r"""Gets the session_id of this ExecuteQaChatResponse.
 
         会话ID，在下一次请求中传入改id表示继续会话。
 
@@ -223,7 +223,7 @@ class ExecuteQaChatResponse(SdkResponse):
 
     @session_id.setter
     def session_id(self, session_id):
-        """Sets the session_id of this ExecuteQaChatResponse.
+        r"""Sets the session_id of this ExecuteQaChatResponse.
 
         会话ID，在下一次请求中传入改id表示继续会话。
 
@@ -234,7 +234,7 @@ class ExecuteQaChatResponse(SdkResponse):
 
     @property
     def kbqa_answers(self):
-        """Gets the kbqa_answers of this ExecuteQaChatResponse.
+        r"""Gets the kbqa_answers of this ExecuteQaChatResponse.
 
         :return: The kbqa_answers of this ExecuteQaChatResponse.
         :rtype: :class:`huaweicloudsdkcbs.v1.KbqaAnswers`
@@ -243,7 +243,7 @@ class ExecuteQaChatResponse(SdkResponse):
 
     @kbqa_answers.setter
     def kbqa_answers(self, kbqa_answers):
-        """Sets the kbqa_answers of this ExecuteQaChatResponse.
+        r"""Sets the kbqa_answers of this ExecuteQaChatResponse.
 
         :param kbqa_answers: The kbqa_answers of this ExecuteQaChatResponse.
         :type kbqa_answers: :class:`huaweicloudsdkcbs.v1.KbqaAnswers`
@@ -252,7 +252,7 @@ class ExecuteQaChatResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ExecuteQaChatResponse.
+        r"""Gets the request_id of this ExecuteQaChatResponse.
 
         请求ID。用来标记调用失败时，用来标记本次问答。
 
@@ -263,7 +263,7 @@ class ExecuteQaChatResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ExecuteQaChatResponse.
+        r"""Sets the request_id of this ExecuteQaChatResponse.
 
         请求ID。用来标记调用失败时，用来标记本次问答。
 

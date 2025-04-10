@@ -27,7 +27,7 @@ class UpdateEnterpriseProjectRequest:
     }
 
     def __init__(self, enterprise_project_id=None, body=None):
-        """UpdateEnterpriseProjectRequest
+        r"""UpdateEnterpriseProjectRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateEnterpriseProjectRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this UpdateEnterpriseProjectRequest.
+        r"""Gets the enterprise_project_id of this UpdateEnterpriseProjectRequest.
 
         企业项目ID，不能为0。 可以通过查询企业项目列表接口获取。
 
@@ -60,7 +60,7 @@ class UpdateEnterpriseProjectRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this UpdateEnterpriseProjectRequest.
+        r"""Sets the enterprise_project_id of this UpdateEnterpriseProjectRequest.
 
         企业项目ID，不能为0。 可以通过查询企业项目列表接口获取。
 
@@ -71,7 +71,7 @@ class UpdateEnterpriseProjectRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateEnterpriseProjectRequest.
+        r"""Gets the body of this UpdateEnterpriseProjectRequest.
 
         :return: The body of this UpdateEnterpriseProjectRequest.
         :rtype: :class:`huaweicloudsdkeps.v1.EnterpriseProject`
@@ -80,7 +80,7 @@ class UpdateEnterpriseProjectRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateEnterpriseProjectRequest.
+        r"""Sets the body of this UpdateEnterpriseProjectRequest.
 
         :param body: The body of this UpdateEnterpriseProjectRequest.
         :type body: :class:`huaweicloudsdkeps.v1.EnterpriseProject`

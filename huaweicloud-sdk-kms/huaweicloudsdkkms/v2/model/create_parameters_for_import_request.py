@@ -25,7 +25,7 @@ class CreateParametersForImportRequest:
     }
 
     def __init__(self, body=None):
-        """CreateParametersForImportRequest
+        r"""CreateParametersForImportRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateParametersForImportRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateParametersForImportRequest.
+        r"""Gets the body of this CreateParametersForImportRequest.
 
         :return: The body of this CreateParametersForImportRequest.
         :rtype: :class:`huaweicloudsdkkms.v2.GetParametersForImportRequestBody`
@@ -52,7 +52,7 @@ class CreateParametersForImportRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateParametersForImportRequest.
+        r"""Sets the body of this CreateParametersForImportRequest.
 
         :param body: The body of this CreateParametersForImportRequest.
         :type body: :class:`huaweicloudsdkkms.v2.GetParametersForImportRequestBody`

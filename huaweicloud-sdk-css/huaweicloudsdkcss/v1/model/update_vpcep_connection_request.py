@@ -27,7 +27,7 @@ class UpdateVpcepConnectionRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """UpdateVpcepConnectionRequest
+        r"""UpdateVpcepConnectionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateVpcepConnectionRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdateVpcepConnectionRequest.
+        r"""Gets the cluster_id of this UpdateVpcepConnectionRequest.
 
         指定更新终端节点的集群ID。
 
@@ -60,7 +60,7 @@ class UpdateVpcepConnectionRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdateVpcepConnectionRequest.
+        r"""Sets the cluster_id of this UpdateVpcepConnectionRequest.
 
         指定更新终端节点的集群ID。
 
@@ -71,7 +71,7 @@ class UpdateVpcepConnectionRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateVpcepConnectionRequest.
+        r"""Gets the body of this UpdateVpcepConnectionRequest.
 
         :return: The body of this UpdateVpcepConnectionRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateVpcepConnectionReq`
@@ -80,7 +80,7 @@ class UpdateVpcepConnectionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateVpcepConnectionRequest.
+        r"""Sets the body of this UpdateVpcepConnectionRequest.
 
         :param body: The body of this UpdateVpcepConnectionRequest.
         :type body: :class:`huaweicloudsdkcss.v1.UpdateVpcepConnectionReq`

@@ -55,7 +55,7 @@ class Resource:
     }
 
     def __init__(self, period_type=None, period_num=None, is_auto_renew=None, add_volumes=None, create_desktops=None, deh_hosts=None, rebuild_desktops=None, attach_desktops=None, create_exclusive_hosts=None, resize_exclusive_lites=None, create_desktop_pool=None, expand_desktop_pool=None, apply_desktops_internet=None, apply_subnet_bandwidth=None, subscribe_user_sharer=None, cloud_service_console_url=None):
-        """Resource
+        r"""Resource
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class Resource:
 
     @property
     def period_type(self):
-        """Gets the period_type of this Resource.
+        r"""Gets the period_type of this Resource.
 
         订购周期类型：2：月；3：年；4：包小时（仅限带宽加油包购买场景使用）5：绝对时间；（追加附属资源场景使用，比如主机上追加云硬盘）6：一次性（chargingMode=1 一次性计费场景使用），必填
 
@@ -159,7 +159,7 @@ class Resource:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this Resource.
+        r"""Sets the period_type of this Resource.
 
         订购周期类型：2：月；3：年；4：包小时（仅限带宽加油包购买场景使用）5：绝对时间；（追加附属资源场景使用，比如主机上追加云硬盘）6：一次性（chargingMode=1 一次性计费场景使用），必填
 
@@ -170,7 +170,7 @@ class Resource:
 
     @property
     def period_num(self):
-        """Gets the period_num of this Resource.
+        r"""Gets the period_num of this Resource.
 
         订购周期数
 
@@ -181,7 +181,7 @@ class Resource:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this Resource.
+        r"""Sets the period_num of this Resource.
 
         订购周期数
 
@@ -192,7 +192,7 @@ class Resource:
 
     @property
     def is_auto_renew(self):
-        """Gets the is_auto_renew of this Resource.
+        r"""Gets the is_auto_renew of this Resource.
 
         是否续订
 
@@ -203,7 +203,7 @@ class Resource:
 
     @is_auto_renew.setter
     def is_auto_renew(self, is_auto_renew):
-        """Sets the is_auto_renew of this Resource.
+        r"""Sets the is_auto_renew of this Resource.
 
         是否续订
 
@@ -214,7 +214,7 @@ class Resource:
 
     @property
     def add_volumes(self):
-        """Gets the add_volumes of this Resource.
+        r"""Gets the add_volumes of this Resource.
 
         :return: The add_volumes of this Resource.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AddVolumes`
@@ -223,7 +223,7 @@ class Resource:
 
     @add_volumes.setter
     def add_volumes(self, add_volumes):
-        """Sets the add_volumes of this Resource.
+        r"""Sets the add_volumes of this Resource.
 
         :param add_volumes: The add_volumes of this Resource.
         :type add_volumes: :class:`huaweicloudsdkworkspace.v2.AddVolumes`
@@ -232,7 +232,7 @@ class Resource:
 
     @property
     def create_desktops(self):
-        """Gets the create_desktops of this Resource.
+        r"""Gets the create_desktops of this Resource.
 
         :return: The create_desktops of this Resource.
         :rtype: :class:`huaweicloudsdkworkspace.v2.CreateDesktopReq`
@@ -241,7 +241,7 @@ class Resource:
 
     @create_desktops.setter
     def create_desktops(self, create_desktops):
-        """Sets the create_desktops of this Resource.
+        r"""Sets the create_desktops of this Resource.
 
         :param create_desktops: The create_desktops of this Resource.
         :type create_desktops: :class:`huaweicloudsdkworkspace.v2.CreateDesktopReq`
@@ -250,7 +250,7 @@ class Resource:
 
     @property
     def deh_hosts(self):
-        """Gets the deh_hosts of this Resource.
+        r"""Gets the deh_hosts of this Resource.
 
         :return: The deh_hosts of this Resource.
         :rtype: :class:`huaweicloudsdkworkspace.v2.Hosts`
@@ -259,7 +259,7 @@ class Resource:
 
     @deh_hosts.setter
     def deh_hosts(self, deh_hosts):
-        """Sets the deh_hosts of this Resource.
+        r"""Sets the deh_hosts of this Resource.
 
         :param deh_hosts: The deh_hosts of this Resource.
         :type deh_hosts: :class:`huaweicloudsdkworkspace.v2.Hosts`
@@ -268,7 +268,7 @@ class Resource:
 
     @property
     def rebuild_desktops(self):
-        """Gets the rebuild_desktops of this Resource.
+        r"""Gets the rebuild_desktops of this Resource.
 
         :return: The rebuild_desktops of this Resource.
         :rtype: :class:`huaweicloudsdkworkspace.v2.RebuildDesktopsReq`
@@ -277,7 +277,7 @@ class Resource:
 
     @rebuild_desktops.setter
     def rebuild_desktops(self, rebuild_desktops):
-        """Sets the rebuild_desktops of this Resource.
+        r"""Sets the rebuild_desktops of this Resource.
 
         :param rebuild_desktops: The rebuild_desktops of this Resource.
         :type rebuild_desktops: :class:`huaweicloudsdkworkspace.v2.RebuildDesktopsReq`
@@ -286,7 +286,7 @@ class Resource:
 
     @property
     def attach_desktops(self):
-        """Gets the attach_desktops of this Resource.
+        r"""Gets the attach_desktops of this Resource.
 
         :return: The attach_desktops of this Resource.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AttachInstancesReq`
@@ -295,7 +295,7 @@ class Resource:
 
     @attach_desktops.setter
     def attach_desktops(self, attach_desktops):
-        """Sets the attach_desktops of this Resource.
+        r"""Sets the attach_desktops of this Resource.
 
         :param attach_desktops: The attach_desktops of this Resource.
         :type attach_desktops: :class:`huaweicloudsdkworkspace.v2.AttachInstancesReq`
@@ -304,7 +304,7 @@ class Resource:
 
     @property
     def create_exclusive_hosts(self):
-        """Gets the create_exclusive_hosts of this Resource.
+        r"""Gets the create_exclusive_hosts of this Resource.
 
         :return: The create_exclusive_hosts of this Resource.
         :rtype: :class:`huaweicloudsdkworkspace.v2.CreateExclusiveHostsReq`
@@ -313,7 +313,7 @@ class Resource:
 
     @create_exclusive_hosts.setter
     def create_exclusive_hosts(self, create_exclusive_hosts):
-        """Sets the create_exclusive_hosts of this Resource.
+        r"""Sets the create_exclusive_hosts of this Resource.
 
         :param create_exclusive_hosts: The create_exclusive_hosts of this Resource.
         :type create_exclusive_hosts: :class:`huaweicloudsdkworkspace.v2.CreateExclusiveHostsReq`
@@ -322,7 +322,7 @@ class Resource:
 
     @property
     def resize_exclusive_lites(self):
-        """Gets the resize_exclusive_lites of this Resource.
+        r"""Gets the resize_exclusive_lites of this Resource.
 
         :return: The resize_exclusive_lites of this Resource.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ResizeExclusiveLitesReq`
@@ -331,7 +331,7 @@ class Resource:
 
     @resize_exclusive_lites.setter
     def resize_exclusive_lites(self, resize_exclusive_lites):
-        """Sets the resize_exclusive_lites of this Resource.
+        r"""Sets the resize_exclusive_lites of this Resource.
 
         :param resize_exclusive_lites: The resize_exclusive_lites of this Resource.
         :type resize_exclusive_lites: :class:`huaweicloudsdkworkspace.v2.ResizeExclusiveLitesReq`
@@ -340,7 +340,7 @@ class Resource:
 
     @property
     def create_desktop_pool(self):
-        """Gets the create_desktop_pool of this Resource.
+        r"""Gets the create_desktop_pool of this Resource.
 
         :return: The create_desktop_pool of this Resource.
         :rtype: :class:`huaweicloudsdkworkspace.v2.CreateDesktopPoolReq`
@@ -349,7 +349,7 @@ class Resource:
 
     @create_desktop_pool.setter
     def create_desktop_pool(self, create_desktop_pool):
-        """Sets the create_desktop_pool of this Resource.
+        r"""Sets the create_desktop_pool of this Resource.
 
         :param create_desktop_pool: The create_desktop_pool of this Resource.
         :type create_desktop_pool: :class:`huaweicloudsdkworkspace.v2.CreateDesktopPoolReq`
@@ -358,7 +358,7 @@ class Resource:
 
     @property
     def expand_desktop_pool(self):
-        """Gets the expand_desktop_pool of this Resource.
+        r"""Gets the expand_desktop_pool of this Resource.
 
         :return: The expand_desktop_pool of this Resource.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ExpandDesktopPoolOrderReq`
@@ -367,7 +367,7 @@ class Resource:
 
     @expand_desktop_pool.setter
     def expand_desktop_pool(self, expand_desktop_pool):
-        """Sets the expand_desktop_pool of this Resource.
+        r"""Sets the expand_desktop_pool of this Resource.
 
         :param expand_desktop_pool: The expand_desktop_pool of this Resource.
         :type expand_desktop_pool: :class:`huaweicloudsdkworkspace.v2.ExpandDesktopPoolOrderReq`
@@ -376,7 +376,7 @@ class Resource:
 
     @property
     def apply_desktops_internet(self):
-        """Gets the apply_desktops_internet of this Resource.
+        r"""Gets the apply_desktops_internet of this Resource.
 
         :return: The apply_desktops_internet of this Resource.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ApplyDesktopsInternet`
@@ -385,7 +385,7 @@ class Resource:
 
     @apply_desktops_internet.setter
     def apply_desktops_internet(self, apply_desktops_internet):
-        """Sets the apply_desktops_internet of this Resource.
+        r"""Sets the apply_desktops_internet of this Resource.
 
         :param apply_desktops_internet: The apply_desktops_internet of this Resource.
         :type apply_desktops_internet: :class:`huaweicloudsdkworkspace.v2.ApplyDesktopsInternet`
@@ -394,7 +394,7 @@ class Resource:
 
     @property
     def apply_subnet_bandwidth(self):
-        """Gets the apply_subnet_bandwidth of this Resource.
+        r"""Gets the apply_subnet_bandwidth of this Resource.
 
         :return: The apply_subnet_bandwidth of this Resource.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ApplySubnetBandwidthReq`
@@ -403,7 +403,7 @@ class Resource:
 
     @apply_subnet_bandwidth.setter
     def apply_subnet_bandwidth(self, apply_subnet_bandwidth):
-        """Sets the apply_subnet_bandwidth of this Resource.
+        r"""Sets the apply_subnet_bandwidth of this Resource.
 
         :param apply_subnet_bandwidth: The apply_subnet_bandwidth of this Resource.
         :type apply_subnet_bandwidth: :class:`huaweicloudsdkworkspace.v2.ApplySubnetBandwidthReq`
@@ -412,7 +412,7 @@ class Resource:
 
     @property
     def subscribe_user_sharer(self):
-        """Gets the subscribe_user_sharer of this Resource.
+        r"""Gets the subscribe_user_sharer of this Resource.
 
         :return: The subscribe_user_sharer of this Resource.
         :rtype: :class:`huaweicloudsdkworkspace.v2.SubscribeUserSharerReq`
@@ -421,7 +421,7 @@ class Resource:
 
     @subscribe_user_sharer.setter
     def subscribe_user_sharer(self, subscribe_user_sharer):
-        """Sets the subscribe_user_sharer of this Resource.
+        r"""Sets the subscribe_user_sharer of this Resource.
 
         :param subscribe_user_sharer: The subscribe_user_sharer of this Resource.
         :type subscribe_user_sharer: :class:`huaweicloudsdkworkspace.v2.SubscribeUserSharerReq`
@@ -430,7 +430,7 @@ class Resource:
 
     @property
     def cloud_service_console_url(self):
-        """Gets the cloud_service_console_url of this Resource.
+        r"""Gets the cloud_service_console_url of this Resource.
 
         支付后跳转的地址
 
@@ -441,7 +441,7 @@ class Resource:
 
     @cloud_service_console_url.setter
     def cloud_service_console_url(self, cloud_service_console_url):
-        """Sets the cloud_service_console_url of this Resource.
+        r"""Sets the cloud_service_console_url of this Resource.
 
         支付后跳转的地址
 

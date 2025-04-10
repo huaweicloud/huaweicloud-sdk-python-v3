@@ -49,7 +49,7 @@ class BillSumInfoV2:
     }
 
     def __init__(self, customer_id=None, cloud_service_type=None, cloud_service_type_name=None, bill_type=None, charge_mode=None, amount=None, debt_amount=None, adjustment_amount=None, discount_amount=None, measure_id=None, account_details=None, resource_type_code=None, resource_type_name=None):
-        """BillSumInfoV2
+        r"""BillSumInfoV2
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class BillSumInfoV2:
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this BillSumInfoV2.
+        r"""Gets the customer_id of this BillSumInfoV2.
 
         客户账号ID。
 
@@ -138,7 +138,7 @@ class BillSumInfoV2:
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this BillSumInfoV2.
+        r"""Sets the customer_id of this BillSumInfoV2.
 
         客户账号ID。
 
@@ -149,7 +149,7 @@ class BillSumInfoV2:
 
     @property
     def cloud_service_type(self):
-        """Gets the cloud_service_type of this BillSumInfoV2.
+        r"""Gets the cloud_service_type of this BillSumInfoV2.
 
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。
 
@@ -160,7 +160,7 @@ class BillSumInfoV2:
 
     @cloud_service_type.setter
     def cloud_service_type(self, cloud_service_type):
-        """Sets the cloud_service_type of this BillSumInfoV2.
+        r"""Sets the cloud_service_type of this BillSumInfoV2.
 
         云服务类型编码，例如OBS的云服务类型编码为“hws.service.type.obs”。
 
@@ -171,7 +171,7 @@ class BillSumInfoV2:
 
     @property
     def cloud_service_type_name(self):
-        """Gets the cloud_service_type_name of this BillSumInfoV2.
+        r"""Gets the cloud_service_type_name of this BillSumInfoV2.
 
         云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
@@ -182,7 +182,7 @@ class BillSumInfoV2:
 
     @cloud_service_type_name.setter
     def cloud_service_type_name(self, cloud_service_type_name):
-        """Sets the cloud_service_type_name of this BillSumInfoV2.
+        r"""Sets the cloud_service_type_name of this BillSumInfoV2.
 
         云服务类型名称。例如ECS的云服务类型名称为“弹性云服务器”。
 
@@ -193,7 +193,7 @@ class BillSumInfoV2:
 
     @property
     def bill_type(self):
-        """Gets the bill_type of this BillSumInfoV2.
+        r"""Gets the bill_type of this BillSumInfoV2.
 
         账单类型。 0：正常1：退订2：华为核销
 
@@ -204,7 +204,7 @@ class BillSumInfoV2:
 
     @bill_type.setter
     def bill_type(self, bill_type):
-        """Sets the bill_type of this BillSumInfoV2.
+        r"""Sets the bill_type of this BillSumInfoV2.
 
         账单类型。 0：正常1：退订2：华为核销
 
@@ -215,7 +215,7 @@ class BillSumInfoV2:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this BillSumInfoV2.
+        r"""Gets the charge_mode of this BillSumInfoV2.
 
         计费模式。 1：包年/包月3: 按需
 
@@ -226,7 +226,7 @@ class BillSumInfoV2:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this BillSumInfoV2.
+        r"""Sets the charge_mode of this BillSumInfoV2.
 
         计费模式。 1：包年/包月3: 按需
 
@@ -237,7 +237,7 @@ class BillSumInfoV2:
 
     @property
     def amount(self):
-        """Gets the amount of this BillSumInfoV2.
+        r"""Gets the amount of this BillSumInfoV2.
 
         金额。 对于billType=1或者2的账单，该金额为负值。
 
@@ -248,7 +248,7 @@ class BillSumInfoV2:
 
     @amount.setter
     def amount(self, amount):
-        """Sets the amount of this BillSumInfoV2.
+        r"""Sets the amount of this BillSumInfoV2.
 
         金额。 对于billType=1或者2的账单，该金额为负值。
 
@@ -259,7 +259,7 @@ class BillSumInfoV2:
 
     @property
     def debt_amount(self):
-        """Gets the debt_amount of this BillSumInfoV2.
+        r"""Gets the debt_amount of this BillSumInfoV2.
 
         欠费金额，指从客户账户扣费的时候，客户账户金额不足，欠费的金额，华为核销或者退订的时候没有该字段。
 
@@ -270,7 +270,7 @@ class BillSumInfoV2:
 
     @debt_amount.setter
     def debt_amount(self, debt_amount):
-        """Sets the debt_amount of this BillSumInfoV2.
+        r"""Sets the debt_amount of this BillSumInfoV2.
 
         欠费金额，指从客户账户扣费的时候，客户账户金额不足，欠费的金额，华为核销或者退订的时候没有该字段。
 
@@ -281,7 +281,7 @@ class BillSumInfoV2:
 
     @property
     def adjustment_amount(self):
-        """Gets the adjustment_amount of this BillSumInfoV2.
+        r"""Gets the adjustment_amount of this BillSumInfoV2.
 
         核销欠款，华为核销或者退订的时候没有该字段。
 
@@ -292,7 +292,7 @@ class BillSumInfoV2:
 
     @adjustment_amount.setter
     def adjustment_amount(self, adjustment_amount):
-        """Sets the adjustment_amount of this BillSumInfoV2.
+        r"""Sets the adjustment_amount of this BillSumInfoV2.
 
         核销欠款，华为核销或者退订的时候没有该字段。
 
@@ -303,7 +303,7 @@ class BillSumInfoV2:
 
     @property
     def discount_amount(self):
-        """Gets the discount_amount of this BillSumInfoV2.
+        r"""Gets the discount_amount of this BillSumInfoV2.
 
         折扣金额，华为核销或者退订的时候没有该字段。
 
@@ -314,7 +314,7 @@ class BillSumInfoV2:
 
     @discount_amount.setter
     def discount_amount(self, discount_amount):
-        """Sets the discount_amount of this BillSumInfoV2.
+        r"""Sets the discount_amount of this BillSumInfoV2.
 
         折扣金额，华为核销或者退订的时候没有该字段。
 
@@ -325,7 +325,7 @@ class BillSumInfoV2:
 
     @property
     def measure_id(self):
-        """Gets the measure_id of this BillSumInfoV2.
+        r"""Gets the measure_id of this BillSumInfoV2.
 
         金额单位。 1：元
 
@@ -336,7 +336,7 @@ class BillSumInfoV2:
 
     @measure_id.setter
     def measure_id(self, measure_id):
-        """Sets the measure_id of this BillSumInfoV2.
+        r"""Sets the measure_id of this BillSumInfoV2.
 
         金额单位。 1：元
 
@@ -347,7 +347,7 @@ class BillSumInfoV2:
 
     @property
     def account_details(self):
-        """Gets the account_details of this BillSumInfoV2.
+        r"""Gets the account_details of this BillSumInfoV2.
 
         按不同账户消费类型和付费方式区分的支付总金额。 具体请参见表3。
 
@@ -358,7 +358,7 @@ class BillSumInfoV2:
 
     @account_details.setter
     def account_details(self, account_details):
-        """Sets the account_details of this BillSumInfoV2.
+        r"""Sets the account_details of this BillSumInfoV2.
 
         按不同账户消费类型和付费方式区分的支付总金额。 具体请参见表3。
 
@@ -369,7 +369,7 @@ class BillSumInfoV2:
 
     @property
     def resource_type_code(self):
-        """Gets the resource_type_code of this BillSumInfoV2.
+        r"""Gets the resource_type_code of this BillSumInfoV2.
 
         资源类型编码，例如ECS的VM为“hws.resource.type.vm”。
 
@@ -380,7 +380,7 @@ class BillSumInfoV2:
 
     @resource_type_code.setter
     def resource_type_code(self, resource_type_code):
-        """Sets the resource_type_code of this BillSumInfoV2.
+        r"""Sets the resource_type_code of this BillSumInfoV2.
 
         资源类型编码，例如ECS的VM为“hws.resource.type.vm”。
 
@@ -391,7 +391,7 @@ class BillSumInfoV2:
 
     @property
     def resource_type_name(self):
-        """Gets the resource_type_name of this BillSumInfoV2.
+        r"""Gets the resource_type_name of this BillSumInfoV2.
 
         资源类型名称。例如ECS的资源类型名称为“云主机”。
 
@@ -402,7 +402,7 @@ class BillSumInfoV2:
 
     @resource_type_name.setter
     def resource_type_name(self, resource_type_name):
-        """Sets the resource_type_name of this BillSumInfoV2.
+        r"""Sets the resource_type_name of this BillSumInfoV2.
 
         资源类型名称。例如ECS的资源类型名称为“云主机”。
 

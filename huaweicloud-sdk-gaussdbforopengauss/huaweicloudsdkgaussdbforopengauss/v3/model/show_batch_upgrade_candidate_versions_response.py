@@ -34,7 +34,7 @@ class ShowBatchUpgradeCandidateVersionsResponse(SdkResponse):
     }
 
     def __init__(self, upgrade_type_list=None, target_version=None, upgrade_candidate_versions=None, hotfix_upgrade_infos=None, hotfix_rollback_infos=None):
-        """ShowBatchUpgradeCandidateVersionsResponse
+        r"""ShowBatchUpgradeCandidateVersionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowBatchUpgradeCandidateVersionsResponse(SdkResponse):
 
     @property
     def upgrade_type_list(self):
-        """Gets the upgrade_type_list of this ShowBatchUpgradeCandidateVersionsResponse.
+        r"""Gets the upgrade_type_list of this ShowBatchUpgradeCandidateVersionsResponse.
 
         升级类型信息列表。
 
@@ -83,7 +83,7 @@ class ShowBatchUpgradeCandidateVersionsResponse(SdkResponse):
 
     @upgrade_type_list.setter
     def upgrade_type_list(self, upgrade_type_list):
-        """Sets the upgrade_type_list of this ShowBatchUpgradeCandidateVersionsResponse.
+        r"""Sets the upgrade_type_list of this ShowBatchUpgradeCandidateVersionsResponse.
 
         升级类型信息列表。
 
@@ -94,7 +94,7 @@ class ShowBatchUpgradeCandidateVersionsResponse(SdkResponse):
 
     @property
     def target_version(self):
-        """Gets the target_version of this ShowBatchUpgradeCandidateVersionsResponse.
+        r"""Gets the target_version of this ShowBatchUpgradeCandidateVersionsResponse.
 
         升级目标版本，没有在滚动升级中返回null。
 
@@ -105,7 +105,7 @@ class ShowBatchUpgradeCandidateVersionsResponse(SdkResponse):
 
     @target_version.setter
     def target_version(self, target_version):
-        """Sets the target_version of this ShowBatchUpgradeCandidateVersionsResponse.
+        r"""Sets the target_version of this ShowBatchUpgradeCandidateVersionsResponse.
 
         升级目标版本，没有在滚动升级中返回null。
 
@@ -116,7 +116,7 @@ class ShowBatchUpgradeCandidateVersionsResponse(SdkResponse):
 
     @property
     def upgrade_candidate_versions(self):
-        """Gets the upgrade_candidate_versions of this ShowBatchUpgradeCandidateVersionsResponse.
+        r"""Gets the upgrade_candidate_versions of this ShowBatchUpgradeCandidateVersionsResponse.
 
         可以升级的版本，包括大小版本。
 
@@ -127,7 +127,7 @@ class ShowBatchUpgradeCandidateVersionsResponse(SdkResponse):
 
     @upgrade_candidate_versions.setter
     def upgrade_candidate_versions(self, upgrade_candidate_versions):
-        """Sets the upgrade_candidate_versions of this ShowBatchUpgradeCandidateVersionsResponse.
+        r"""Sets the upgrade_candidate_versions of this ShowBatchUpgradeCandidateVersionsResponse.
 
         可以升级的版本，包括大小版本。
 
@@ -138,7 +138,7 @@ class ShowBatchUpgradeCandidateVersionsResponse(SdkResponse):
 
     @property
     def hotfix_upgrade_infos(self):
-        """Gets the hotfix_upgrade_infos of this ShowBatchUpgradeCandidateVersionsResponse.
+        r"""Gets the hotfix_upgrade_infos of this ShowBatchUpgradeCandidateVersionsResponse.
 
         可以升级的热补丁信息。
 
@@ -149,7 +149,7 @@ class ShowBatchUpgradeCandidateVersionsResponse(SdkResponse):
 
     @hotfix_upgrade_infos.setter
     def hotfix_upgrade_infos(self, hotfix_upgrade_infos):
-        """Sets the hotfix_upgrade_infos of this ShowBatchUpgradeCandidateVersionsResponse.
+        r"""Sets the hotfix_upgrade_infos of this ShowBatchUpgradeCandidateVersionsResponse.
 
         可以升级的热补丁信息。
 
@@ -160,7 +160,7 @@ class ShowBatchUpgradeCandidateVersionsResponse(SdkResponse):
 
     @property
     def hotfix_rollback_infos(self):
-        """Gets the hotfix_rollback_infos of this ShowBatchUpgradeCandidateVersionsResponse.
+        r"""Gets the hotfix_rollback_infos of this ShowBatchUpgradeCandidateVersionsResponse.
 
         可以回滚的热补丁信息。
 
@@ -171,7 +171,7 @@ class ShowBatchUpgradeCandidateVersionsResponse(SdkResponse):
 
     @hotfix_rollback_infos.setter
     def hotfix_rollback_infos(self, hotfix_rollback_infos):
-        """Sets the hotfix_rollback_infos of this ShowBatchUpgradeCandidateVersionsResponse.
+        r"""Sets the hotfix_rollback_infos of this ShowBatchUpgradeCandidateVersionsResponse.
 
         可以回滚的热补丁信息。
 

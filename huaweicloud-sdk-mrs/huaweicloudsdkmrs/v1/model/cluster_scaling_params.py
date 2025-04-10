@@ -41,7 +41,7 @@ class ClusterScalingParams:
     }
 
     def __init__(self, order_id=None, scale_type=None, node_id=None, node_group=None, skip_bootstrap_scripts=None, scale_without_start=None, server_ids=None, instances=None, task_node_info=None):
-        """ClusterScalingParams
+        r"""ClusterScalingParams
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class ClusterScalingParams:
 
     @property
     def order_id(self):
-        """Gets the order_id of this ClusterScalingParams.
+        r"""Gets the order_id of this ClusterScalingParams.
 
         扩容/缩容时系统获取的订单号，用户不需要配置。
 
@@ -107,7 +107,7 @@ class ClusterScalingParams:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ClusterScalingParams.
+        r"""Sets the order_id of this ClusterScalingParams.
 
         扩容/缩容时系统获取的订单号，用户不需要配置。
 
@@ -118,7 +118,7 @@ class ClusterScalingParams:
 
     @property
     def scale_type(self):
-        """Gets the scale_type of this ClusterScalingParams.
+        r"""Gets the scale_type of this ClusterScalingParams.
 
         - scale_in：缩容 - scale_out：扩容
 
@@ -129,7 +129,7 @@ class ClusterScalingParams:
 
     @scale_type.setter
     def scale_type(self, scale_type):
-        """Sets the scale_type of this ClusterScalingParams.
+        r"""Sets the scale_type of this ClusterScalingParams.
 
         - scale_in：缩容 - scale_out：扩容
 
@@ -140,7 +140,7 @@ class ClusterScalingParams:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ClusterScalingParams.
+        r"""Gets the node_id of this ClusterScalingParams.
 
         扩容/缩容时新增或者减少节点的ID标识,参数值固定为node_orderadd。
 
@@ -151,7 +151,7 @@ class ClusterScalingParams:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ClusterScalingParams.
+        r"""Sets the node_id of this ClusterScalingParams.
 
         扩容/缩容时新增或者减少节点的ID标识,参数值固定为node_orderadd。
 
@@ -162,7 +162,7 @@ class ClusterScalingParams:
 
     @property
     def node_group(self):
-        """Gets the node_group of this ClusterScalingParams.
+        r"""Gets the node_group of this ClusterScalingParams.
 
         扩容或缩容的节点组。 - 如果node_group为core_node_default_group，表示Core节点组。 - 如果node_group为task_node_default_group，表示Task节点组。  该字段可以为空，为空时，系统默认值为core_node_default_group。
 
@@ -173,7 +173,7 @@ class ClusterScalingParams:
 
     @node_group.setter
     def node_group(self, node_group):
-        """Sets the node_group of this ClusterScalingParams.
+        r"""Sets the node_group of this ClusterScalingParams.
 
         扩容或缩容的节点组。 - 如果node_group为core_node_default_group，表示Core节点组。 - 如果node_group为task_node_default_group，表示Task节点组。  该字段可以为空，为空时，系统默认值为core_node_default_group。
 
@@ -184,7 +184,7 @@ class ClusterScalingParams:
 
     @property
     def skip_bootstrap_scripts(self):
-        """Gets the skip_bootstrap_scripts of this ClusterScalingParams.
+        r"""Gets the skip_bootstrap_scripts of this ClusterScalingParams.
 
         是否跳过引导操作，默认为false，即执行引导操作。 仅在创建集群时配置了引导操作且扩容时有意义，表示扩容时是否在新增节点上执行创建集群时指定的引导操作。
 
@@ -195,7 +195,7 @@ class ClusterScalingParams:
 
     @skip_bootstrap_scripts.setter
     def skip_bootstrap_scripts(self, skip_bootstrap_scripts):
-        """Sets the skip_bootstrap_scripts of this ClusterScalingParams.
+        r"""Sets the skip_bootstrap_scripts of this ClusterScalingParams.
 
         是否跳过引导操作，默认为false，即执行引导操作。 仅在创建集群时配置了引导操作且扩容时有意义，表示扩容时是否在新增节点上执行创建集群时指定的引导操作。
 
@@ -206,7 +206,7 @@ class ClusterScalingParams:
 
     @property
     def scale_without_start(self):
-        """Gets the scale_without_start of this ClusterScalingParams.
+        r"""Gets the scale_without_start of this ClusterScalingParams.
 
         扩容后是否启动扩容节点上的组件。  - true：扩容后不启动组件。 - false：扩容后启动组件。
 
@@ -217,7 +217,7 @@ class ClusterScalingParams:
 
     @scale_without_start.setter
     def scale_without_start(self, scale_without_start):
-        """Sets the scale_without_start of this ClusterScalingParams.
+        r"""Sets the scale_without_start of this ClusterScalingParams.
 
         扩容后是否启动扩容节点上的组件。  - true：扩容后不启动组件。 - false：扩容后启动组件。
 
@@ -228,7 +228,7 @@ class ClusterScalingParams:
 
     @property
     def server_ids(self):
-        """Gets the server_ids of this ClusterScalingParams.
+        r"""Gets the server_ids of this ClusterScalingParams.
 
         缩容Task节点时指定待删除Task节点的ID列表。  - 当scale_type为扩容时，该参数不生效。 - 当scale_type为缩容且该参数不为空时，删除指定的Task节点。 - 当scale_type为缩容且server_ids为空时，按照系统规则自动选择删除Task节点。
 
@@ -239,7 +239,7 @@ class ClusterScalingParams:
 
     @server_ids.setter
     def server_ids(self, server_ids):
-        """Sets the server_ids of this ClusterScalingParams.
+        r"""Sets the server_ids of this ClusterScalingParams.
 
         缩容Task节点时指定待删除Task节点的ID列表。  - 当scale_type为扩容时，该参数不生效。 - 当scale_type为缩容且该参数不为空时，删除指定的Task节点。 - 当scale_type为缩容且server_ids为空时，按照系统规则自动选择删除Task节点。
 
@@ -250,7 +250,7 @@ class ClusterScalingParams:
 
     @property
     def instances(self):
-        """Gets the instances of this ClusterScalingParams.
+        r"""Gets the instances of this ClusterScalingParams.
 
         扩容或缩容的节点数。  - 扩容时的最大节点数为（500 - 集群Core/Task节点数）。例如，当前集群Core节点数为3，此处扩容的节点数必须小于等于497。     Core和Task节点总数最大值为500，如果用户需要的Core/Task节点数大于500，可以联系技术支持人员或者调用后台接口修改数据库。   - 缩容时Core节点数大于3或者Task节点数大于0可以进行节点删除。例如，当前集群Core节点和Task节点数均为5，Core节点可缩容的节点数为2（5减去3），Task节点可缩容节点数为小于等于5。
 
@@ -261,7 +261,7 @@ class ClusterScalingParams:
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this ClusterScalingParams.
+        r"""Sets the instances of this ClusterScalingParams.
 
         扩容或缩容的节点数。  - 扩容时的最大节点数为（500 - 集群Core/Task节点数）。例如，当前集群Core节点数为3，此处扩容的节点数必须小于等于497。     Core和Task节点总数最大值为500，如果用户需要的Core/Task节点数大于500，可以联系技术支持人员或者调用后台接口修改数据库。   - 缩容时Core节点数大于3或者Task节点数大于0可以进行节点删除。例如，当前集群Core节点和Task节点数均为5，Core节点可缩容的节点数为2（5减去3），Task节点可缩容节点数为小于等于5。
 
@@ -272,7 +272,7 @@ class ClusterScalingParams:
 
     @property
     def task_node_info(self):
-        """Gets the task_node_info of this ClusterScalingParams.
+        r"""Gets the task_node_info of this ClusterScalingParams.
 
         :return: The task_node_info of this ClusterScalingParams.
         :rtype: :class:`huaweicloudsdkmrs.v1.TaskNodeInfo`
@@ -281,7 +281,7 @@ class ClusterScalingParams:
 
     @task_node_info.setter
     def task_node_info(self, task_node_info):
-        """Sets the task_node_info of this ClusterScalingParams.
+        r"""Sets the task_node_info of this ClusterScalingParams.
 
         :param task_node_info: The task_node_info of this ClusterScalingParams.
         :type task_node_info: :class:`huaweicloudsdkmrs.v1.TaskNodeInfo`

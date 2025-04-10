@@ -29,7 +29,7 @@ class FirewallInsertRuleOption:
     }
 
     def __init__(self, ingress_rules=None, egress_rules=None, insert_after_rule=None):
-        """FirewallInsertRuleOption
+        r"""FirewallInsertRuleOption
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class FirewallInsertRuleOption:
 
     @property
     def ingress_rules(self):
-        """Gets the ingress_rules of this FirewallInsertRuleOption.
+        r"""Gets the ingress_rules of this FirewallInsertRuleOption.
 
         功能说明：ACL添加入方向规则列表
 
@@ -68,7 +68,7 @@ class FirewallInsertRuleOption:
 
     @ingress_rules.setter
     def ingress_rules(self, ingress_rules):
-        """Sets the ingress_rules of this FirewallInsertRuleOption.
+        r"""Sets the ingress_rules of this FirewallInsertRuleOption.
 
         功能说明：ACL添加入方向规则列表
 
@@ -79,7 +79,7 @@ class FirewallInsertRuleOption:
 
     @property
     def egress_rules(self):
-        """Gets the egress_rules of this FirewallInsertRuleOption.
+        r"""Gets the egress_rules of this FirewallInsertRuleOption.
 
         功能说明：ACL添加出方向规则列表
 
@@ -90,7 +90,7 @@ class FirewallInsertRuleOption:
 
     @egress_rules.setter
     def egress_rules(self, egress_rules):
-        """Sets the egress_rules of this FirewallInsertRuleOption.
+        r"""Sets the egress_rules of this FirewallInsertRuleOption.
 
         功能说明：ACL添加出方向规则列表
 
@@ -101,7 +101,7 @@ class FirewallInsertRuleOption:
 
     @property
     def insert_after_rule(self):
-        """Gets the insert_after_rule of this FirewallInsertRuleOption.
+        r"""Gets the insert_after_rule of this FirewallInsertRuleOption.
 
         功能说明：插入ACL的规则在入方向或者出方向某条规则位置后，不指定则在入方向或者出方向规则列表最前面插入规则 约束：指定了insert_after_rule，ingress_rules和egress_rules只能同时设置一个，且该规则在入方向或者出方向规则中存在
 
@@ -112,7 +112,7 @@ class FirewallInsertRuleOption:
 
     @insert_after_rule.setter
     def insert_after_rule(self, insert_after_rule):
-        """Sets the insert_after_rule of this FirewallInsertRuleOption.
+        r"""Sets the insert_after_rule of this FirewallInsertRuleOption.
 
         功能说明：插入ACL的规则在入方向或者出方向某条规则位置后，不指定则在入方向或者出方向规则列表最前面插入规则 约束：指定了insert_after_rule，ingress_rules和egress_rules只能同时设置一个，且该规则在入方向或者出方向规则中存在
 

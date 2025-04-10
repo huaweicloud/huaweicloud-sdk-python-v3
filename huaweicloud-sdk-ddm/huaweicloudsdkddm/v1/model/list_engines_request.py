@@ -27,7 +27,7 @@ class ListEnginesRequest:
     }
 
     def __init__(self, offset=None, limit=None):
-        """ListEnginesRequest
+        r"""ListEnginesRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListEnginesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListEnginesRequest.
+        r"""Gets the offset of this ListEnginesRequest.
 
         分页参数：起始值 [大于等于0] 。默认值是0。
 
@@ -61,7 +61,7 @@ class ListEnginesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListEnginesRequest.
+        r"""Sets the offset of this ListEnginesRequest.
 
         分页参数：起始值 [大于等于0] 。默认值是0。
 
@@ -72,7 +72,7 @@ class ListEnginesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListEnginesRequest.
+        r"""Gets the limit of this ListEnginesRequest.
 
         分页参数：每页多少条 [大于0且小于等于128]。默认值是128。
 
@@ -83,7 +83,7 @@ class ListEnginesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEnginesRequest.
+        r"""Sets the limit of this ListEnginesRequest.
 
         分页参数：每页多少条 [大于0且小于等于128]。默认值是128。
 

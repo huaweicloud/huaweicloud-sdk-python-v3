@@ -33,7 +33,7 @@ class ProbeParameter:
     }
 
     def __init__(self, scheme=None, host=None, port=None, path=None, command=None):
-        """ProbeParameter
+        r"""ProbeParameter
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ProbeParameter:
 
     @property
     def scheme(self):
-        """Gets the scheme of this ProbeParameter.
+        r"""Gets the scheme of this ProbeParameter.
 
         type为http类型时生效
 
@@ -82,7 +82,7 @@ class ProbeParameter:
 
     @scheme.setter
     def scheme(self, scheme):
-        """Sets the scheme of this ProbeParameter.
+        r"""Sets the scheme of this ProbeParameter.
 
         type为http类型时生效
 
@@ -93,7 +93,7 @@ class ProbeParameter:
 
     @property
     def host(self):
-        """Gets the host of this ProbeParameter.
+        r"""Gets the host of this ProbeParameter.
 
         type为http类型时生效。默认为POD的IP, 可以指定自定义的IP
 
@@ -104,7 +104,7 @@ class ProbeParameter:
 
     @host.setter
     def host(self, host):
-        """Sets the host of this ProbeParameter.
+        r"""Sets the host of this ProbeParameter.
 
         type为http类型时生效。默认为POD的IP, 可以指定自定义的IP
 
@@ -115,7 +115,7 @@ class ProbeParameter:
 
     @property
     def port(self):
-        """Gets the port of this ProbeParameter.
+        r"""Gets the port of this ProbeParameter.
 
         type为http和tcp类型时生效。
 
@@ -126,7 +126,7 @@ class ProbeParameter:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this ProbeParameter.
+        r"""Sets the port of this ProbeParameter.
 
         type为http和tcp类型时生效。
 
@@ -137,7 +137,7 @@ class ProbeParameter:
 
     @property
     def path(self):
-        """Gets the path of this ProbeParameter.
+        r"""Gets the path of this ProbeParameter.
 
         type为http类型时生效。请求路径。
 
@@ -148,7 +148,7 @@ class ProbeParameter:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ProbeParameter.
+        r"""Sets the path of this ProbeParameter.
 
         type为http类型时生效。请求路径。
 
@@ -159,7 +159,7 @@ class ProbeParameter:
 
     @property
     def command(self):
-        """Gets the command of this ProbeParameter.
+        r"""Gets the command of this ProbeParameter.
 
         type为command类型时生效。命令列表
 
@@ -170,7 +170,7 @@ class ProbeParameter:
 
     @command.setter
     def command(self, command):
-        """Sets the command of this ProbeParameter.
+        r"""Sets the command of this ProbeParameter.
 
         type为command类型时生效。命令列表
 

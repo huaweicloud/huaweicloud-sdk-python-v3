@@ -41,7 +41,7 @@ class NovaServerFlavor:
     }
 
     def __init__(self, id=None, links=None, vcpus=None, ram=None, disk=None, ephemeral=None, swap=None, original_name=None, extra_specs=None):
-        """NovaServerFlavor
+        r"""NovaServerFlavor
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class NovaServerFlavor:
 
     @property
     def id(self):
-        """Gets the id of this NovaServerFlavor.
+        r"""Gets the id of this NovaServerFlavor.
 
         云服务器类型ID。  微版本2.47后不支持。
 
@@ -110,7 +110,7 @@ class NovaServerFlavor:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NovaServerFlavor.
+        r"""Sets the id of this NovaServerFlavor.
 
         云服务器类型ID。  微版本2.47后不支持。
 
@@ -121,7 +121,7 @@ class NovaServerFlavor:
 
     @property
     def links(self):
-        """Gets the links of this NovaServerFlavor.
+        r"""Gets the links of this NovaServerFlavor.
 
         云服务器类型相关标记快捷链接信息。  微版本2.47后不支持。
 
@@ -132,7 +132,7 @@ class NovaServerFlavor:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this NovaServerFlavor.
+        r"""Sets the links of this NovaServerFlavor.
 
         云服务器类型相关标记快捷链接信息。  微版本2.47后不支持。
 
@@ -143,7 +143,7 @@ class NovaServerFlavor:
 
     @property
     def vcpus(self):
-        """Gets the vcpus of this NovaServerFlavor.
+        r"""Gets the vcpus of this NovaServerFlavor.
 
         该云服务器规格对应的CPU核数。  在微版本2.47后支持。
 
@@ -154,7 +154,7 @@ class NovaServerFlavor:
 
     @vcpus.setter
     def vcpus(self, vcpus):
-        """Sets the vcpus of this NovaServerFlavor.
+        r"""Sets the vcpus of this NovaServerFlavor.
 
         该云服务器规格对应的CPU核数。  在微版本2.47后支持。
 
@@ -165,7 +165,7 @@ class NovaServerFlavor:
 
     @property
     def ram(self):
-        """Gets the ram of this NovaServerFlavor.
+        r"""Gets the ram of this NovaServerFlavor.
 
         该云服务器规格对应的内存大小，单位为MB。  在微版本2.47后支持。
 
@@ -176,7 +176,7 @@ class NovaServerFlavor:
 
     @ram.setter
     def ram(self, ram):
-        """Sets the ram of this NovaServerFlavor.
+        r"""Sets the ram of this NovaServerFlavor.
 
         该云服务器规格对应的内存大小，单位为MB。  在微版本2.47后支持。
 
@@ -187,7 +187,7 @@ class NovaServerFlavor:
 
     @property
     def disk(self):
-        """Gets the disk of this NovaServerFlavor.
+        r"""Gets the disk of this NovaServerFlavor.
 
         该云服务器规格对应要求系统盘大小，0为不限制。  在微版本2.47后支持。
 
@@ -198,7 +198,7 @@ class NovaServerFlavor:
 
     @disk.setter
     def disk(self, disk):
-        """Sets the disk of this NovaServerFlavor.
+        r"""Sets the disk of this NovaServerFlavor.
 
         该云服务器规格对应要求系统盘大小，0为不限制。  在微版本2.47后支持。
 
@@ -209,7 +209,7 @@ class NovaServerFlavor:
 
     @property
     def ephemeral(self):
-        """Gets the ephemeral of this NovaServerFlavor.
+        r"""Gets the ephemeral of this NovaServerFlavor.
 
         未使用。  在微版本2.47后支持。
 
@@ -220,7 +220,7 @@ class NovaServerFlavor:
 
     @ephemeral.setter
     def ephemeral(self, ephemeral):
-        """Sets the ephemeral of this NovaServerFlavor.
+        r"""Sets the ephemeral of this NovaServerFlavor.
 
         未使用。  在微版本2.47后支持。
 
@@ -231,7 +231,7 @@ class NovaServerFlavor:
 
     @property
     def swap(self):
-        """Gets the swap of this NovaServerFlavor.
+        r"""Gets the swap of this NovaServerFlavor.
 
         未使用。  在微版本2.47后支持。
 
@@ -242,7 +242,7 @@ class NovaServerFlavor:
 
     @swap.setter
     def swap(self, swap):
-        """Sets the swap of this NovaServerFlavor.
+        r"""Sets the swap of this NovaServerFlavor.
 
         未使用。  在微版本2.47后支持。
 
@@ -253,7 +253,7 @@ class NovaServerFlavor:
 
     @property
     def original_name(self):
-        """Gets the original_name of this NovaServerFlavor.
+        r"""Gets the original_name of this NovaServerFlavor.
 
         云服务器规格名称。  在微版本2.47后支持。
 
@@ -264,7 +264,7 @@ class NovaServerFlavor:
 
     @original_name.setter
     def original_name(self, original_name):
-        """Sets the original_name of this NovaServerFlavor.
+        r"""Sets the original_name of this NovaServerFlavor.
 
         云服务器规格名称。  在微版本2.47后支持。
 
@@ -275,7 +275,7 @@ class NovaServerFlavor:
 
     @property
     def extra_specs(self):
-        """Gets the extra_specs of this NovaServerFlavor.
+        r"""Gets the extra_specs of this NovaServerFlavor.
 
         flavor扩展字段。  在微版本2.47后支持。
 
@@ -286,7 +286,7 @@ class NovaServerFlavor:
 
     @extra_specs.setter
     def extra_specs(self, extra_specs):
-        """Sets the extra_specs of this NovaServerFlavor.
+        r"""Sets the extra_specs of this NovaServerFlavor.
 
         flavor扩展字段。  在微版本2.47后支持。
 

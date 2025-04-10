@@ -25,7 +25,7 @@ class TwainBandwidthPercentageOptions:
     }
 
     def __init__(self, twain_bandwidth_percentage_value=None):
-        """TwainBandwidthPercentageOptions
+        r"""TwainBandwidthPercentageOptions
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class TwainBandwidthPercentageOptions:
 
     @property
     def twain_bandwidth_percentage_value(self):
-        """Gets the twain_bandwidth_percentage_value of this TwainBandwidthPercentageOptions.
+        r"""Gets the twain_bandwidth_percentage_value of this TwainBandwidthPercentageOptions.
 
         TWAIN带宽百分比控制量（%）。取值范围为[0-100]。默认：15。
 
@@ -54,7 +54,7 @@ class TwainBandwidthPercentageOptions:
 
     @twain_bandwidth_percentage_value.setter
     def twain_bandwidth_percentage_value(self, twain_bandwidth_percentage_value):
-        """Sets the twain_bandwidth_percentage_value of this TwainBandwidthPercentageOptions.
+        r"""Sets the twain_bandwidth_percentage_value of this TwainBandwidthPercentageOptions.
 
         TWAIN带宽百分比控制量（%）。取值范围为[0-100]。默认：15。
 

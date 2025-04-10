@@ -31,7 +31,7 @@ class ValueRange:
     }
 
     def __init__(self, lower=None, lower_inclusive=None, upper=None, upper_inclusive=None):
-        """ValueRange
+        r"""ValueRange
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ValueRange:
 
     @property
     def lower(self):
-        """Gets the lower of this ValueRange.
+        r"""Gets the lower of this ValueRange.
 
         值域下限
 
@@ -75,7 +75,7 @@ class ValueRange:
 
     @lower.setter
     def lower(self, lower):
-        """Sets the lower of this ValueRange.
+        r"""Sets the lower of this ValueRange.
 
         值域下限
 
@@ -86,7 +86,7 @@ class ValueRange:
 
     @property
     def lower_inclusive(self):
-        """Gets the lower_inclusive of this ValueRange.
+        r"""Gets the lower_inclusive of this ValueRange.
 
         是否包含值域下限
 
@@ -97,7 +97,7 @@ class ValueRange:
 
     @lower_inclusive.setter
     def lower_inclusive(self, lower_inclusive):
-        """Sets the lower_inclusive of this ValueRange.
+        r"""Sets the lower_inclusive of this ValueRange.
 
         是否包含值域下限
 
@@ -108,7 +108,7 @@ class ValueRange:
 
     @property
     def upper(self):
-        """Gets the upper of this ValueRange.
+        r"""Gets the upper of this ValueRange.
 
         值域上限
 
@@ -119,7 +119,7 @@ class ValueRange:
 
     @upper.setter
     def upper(self, upper):
-        """Sets the upper of this ValueRange.
+        r"""Sets the upper of this ValueRange.
 
         值域上限
 
@@ -130,7 +130,7 @@ class ValueRange:
 
     @property
     def upper_inclusive(self):
-        """Gets the upper_inclusive of this ValueRange.
+        r"""Gets the upper_inclusive of this ValueRange.
 
         是否包含值域上限
 
@@ -141,7 +141,7 @@ class ValueRange:
 
     @upper_inclusive.setter
     def upper_inclusive(self, upper_inclusive):
-        """Sets the upper_inclusive of this ValueRange.
+        r"""Sets the upper_inclusive of this ValueRange.
 
         是否包含值域上限
 

@@ -29,7 +29,7 @@ class UpdateIgnorePathRequest:
     }
 
     def __init__(self, project_id=None, task_id=None, body=None):
-        """UpdateIgnorePathRequest
+        r"""UpdateIgnorePathRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateIgnorePathRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this UpdateIgnorePathRequest.
+        r"""Gets the project_id of this UpdateIgnorePathRequest.
 
         项目ID
 
@@ -66,7 +66,7 @@ class UpdateIgnorePathRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UpdateIgnorePathRequest.
+        r"""Sets the project_id of this UpdateIgnorePathRequest.
 
         项目ID
 
@@ -77,7 +77,7 @@ class UpdateIgnorePathRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this UpdateIgnorePathRequest.
+        r"""Gets the task_id of this UpdateIgnorePathRequest.
 
         任务ID
 
@@ -88,7 +88,7 @@ class UpdateIgnorePathRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this UpdateIgnorePathRequest.
+        r"""Sets the task_id of this UpdateIgnorePathRequest.
 
         任务ID
 
@@ -99,7 +99,7 @@ class UpdateIgnorePathRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateIgnorePathRequest.
+        r"""Gets the body of this UpdateIgnorePathRequest.
 
         :return: The body of this UpdateIgnorePathRequest.
         :rtype: :class:`huaweicloudsdkcodeartscheck.v2.UpdateIgnorePathRequestBody`
@@ -108,7 +108,7 @@ class UpdateIgnorePathRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateIgnorePathRequest.
+        r"""Sets the body of this UpdateIgnorePathRequest.
 
         :param body: The body of this UpdateIgnorePathRequest.
         :type body: :class:`huaweicloudsdkcodeartscheck.v2.UpdateIgnorePathRequestBody`

@@ -47,7 +47,7 @@ class ServiceInstanceBriefInfo:
     }
 
     def __init__(self, visibility=None, source=None, id=None, name=None, description=None, endpoint_id=None, status=None, create_time=None, update_time=None, duration=None, create_user=None, type=None):
-        """ServiceInstanceBriefInfo
+        r"""ServiceInstanceBriefInfo
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ServiceInstanceBriefInfo:
 
     @property
     def visibility(self):
-        """Gets the visibility of this ServiceInstanceBriefInfo.
+        r"""Gets the visibility of this ServiceInstanceBriefInfo.
 
         可见性：  - PRIVATE：私有  - PUBLIC：公共  默认为PRIVATE
 
@@ -131,7 +131,7 @@ class ServiceInstanceBriefInfo:
 
     @visibility.setter
     def visibility(self, visibility):
-        """Sets the visibility of this ServiceInstanceBriefInfo.
+        r"""Sets the visibility of this ServiceInstanceBriefInfo.
 
         可见性：  - PRIVATE：私有  - PUBLIC：公共  默认为PRIVATE
 
@@ -142,7 +142,7 @@ class ServiceInstanceBriefInfo:
 
     @property
     def source(self):
-        """Gets the source of this ServiceInstanceBriefInfo.
+        r"""Gets the source of this ServiceInstanceBriefInfo.
 
         :return: The source of this ServiceInstanceBriefInfo.
         :rtype: :class:`huaweicloudsdkdataartsfabricep.v1.SourceRef`
@@ -151,7 +151,7 @@ class ServiceInstanceBriefInfo:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this ServiceInstanceBriefInfo.
+        r"""Sets the source of this ServiceInstanceBriefInfo.
 
         :param source: The source of this ServiceInstanceBriefInfo.
         :type source: :class:`huaweicloudsdkdataartsfabricep.v1.SourceRef`
@@ -160,7 +160,7 @@ class ServiceInstanceBriefInfo:
 
     @property
     def id(self):
-        """Gets the id of this ServiceInstanceBriefInfo.
+        r"""Gets the id of this ServiceInstanceBriefInfo.
 
         Service Instance的ID
 
@@ -171,7 +171,7 @@ class ServiceInstanceBriefInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ServiceInstanceBriefInfo.
+        r"""Sets the id of this ServiceInstanceBriefInfo.
 
         Service Instance的ID
 
@@ -182,7 +182,7 @@ class ServiceInstanceBriefInfo:
 
     @property
     def name(self):
-        """Gets the name of this ServiceInstanceBriefInfo.
+        r"""Gets the name of this ServiceInstanceBriefInfo.
 
         一个Service Instance的名称，只能包含中文、字母、数字、下划线、中划线、点、空格
 
@@ -193,7 +193,7 @@ class ServiceInstanceBriefInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ServiceInstanceBriefInfo.
+        r"""Sets the name of this ServiceInstanceBriefInfo.
 
         一个Service Instance的名称，只能包含中文、字母、数字、下划线、中划线、点、空格
 
@@ -204,7 +204,7 @@ class ServiceInstanceBriefInfo:
 
     @property
     def description(self):
-        """Gets the description of this ServiceInstanceBriefInfo.
+        r"""Gets the description of this ServiceInstanceBriefInfo.
 
         描述信息
 
@@ -215,7 +215,7 @@ class ServiceInstanceBriefInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ServiceInstanceBriefInfo.
+        r"""Sets the description of this ServiceInstanceBriefInfo.
 
         描述信息
 
@@ -226,7 +226,7 @@ class ServiceInstanceBriefInfo:
 
     @property
     def endpoint_id(self):
-        """Gets the endpoint_id of this ServiceInstanceBriefInfo.
+        r"""Gets the endpoint_id of this ServiceInstanceBriefInfo.
 
         endpoint空间id
 
@@ -237,7 +237,7 @@ class ServiceInstanceBriefInfo:
 
     @endpoint_id.setter
     def endpoint_id(self, endpoint_id):
-        """Sets the endpoint_id of this ServiceInstanceBriefInfo.
+        r"""Sets the endpoint_id of this ServiceInstanceBriefInfo.
 
         endpoint空间id
 
@@ -248,7 +248,7 @@ class ServiceInstanceBriefInfo:
 
     @property
     def status(self):
-        """Gets the status of this ServiceInstanceBriefInfo.
+        r"""Gets the status of this ServiceInstanceBriefInfo.
 
         :return: The status of this ServiceInstanceBriefInfo.
         :rtype: :class:`huaweicloudsdkdataartsfabricep.v1.StatusEnum`
@@ -257,7 +257,7 @@ class ServiceInstanceBriefInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ServiceInstanceBriefInfo.
+        r"""Sets the status of this ServiceInstanceBriefInfo.
 
         :param status: The status of this ServiceInstanceBriefInfo.
         :type status: :class:`huaweicloudsdkdataartsfabricep.v1.StatusEnum`
@@ -266,7 +266,7 @@ class ServiceInstanceBriefInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ServiceInstanceBriefInfo.
+        r"""Gets the create_time of this ServiceInstanceBriefInfo.
 
         创建时间
 
@@ -277,7 +277,7 @@ class ServiceInstanceBriefInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ServiceInstanceBriefInfo.
+        r"""Sets the create_time of this ServiceInstanceBriefInfo.
 
         创建时间
 
@@ -288,7 +288,7 @@ class ServiceInstanceBriefInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ServiceInstanceBriefInfo.
+        r"""Gets the update_time of this ServiceInstanceBriefInfo.
 
         更新时间
 
@@ -299,7 +299,7 @@ class ServiceInstanceBriefInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ServiceInstanceBriefInfo.
+        r"""Sets the update_time of this ServiceInstanceBriefInfo.
 
         更新时间
 
@@ -310,7 +310,7 @@ class ServiceInstanceBriefInfo:
 
     @property
     def duration(self):
-        """Gets the duration of this ServiceInstanceBriefInfo.
+        r"""Gets the duration of this ServiceInstanceBriefInfo.
 
         运行时长
 
@@ -321,7 +321,7 @@ class ServiceInstanceBriefInfo:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this ServiceInstanceBriefInfo.
+        r"""Sets the duration of this ServiceInstanceBriefInfo.
 
         运行时长
 
@@ -332,7 +332,7 @@ class ServiceInstanceBriefInfo:
 
     @property
     def create_user(self):
-        """Gets the create_user of this ServiceInstanceBriefInfo.
+        r"""Gets the create_user of this ServiceInstanceBriefInfo.
 
         :return: The create_user of this ServiceInstanceBriefInfo.
         :rtype: :class:`huaweicloudsdkdataartsfabricep.v1.User`
@@ -341,7 +341,7 @@ class ServiceInstanceBriefInfo:
 
     @create_user.setter
     def create_user(self, create_user):
-        """Sets the create_user of this ServiceInstanceBriefInfo.
+        r"""Sets the create_user of this ServiceInstanceBriefInfo.
 
         :param create_user: The create_user of this ServiceInstanceBriefInfo.
         :type create_user: :class:`huaweicloudsdkdataartsfabricep.v1.User`
@@ -350,7 +350,7 @@ class ServiceInstanceBriefInfo:
 
     @property
     def type(self):
-        """Gets the type of this ServiceInstanceBriefInfo.
+        r"""Gets the type of this ServiceInstanceBriefInfo.
 
         :return: The type of this ServiceInstanceBriefInfo.
         :rtype: :class:`huaweicloudsdkdataartsfabricep.v1.ServiceType`
@@ -359,7 +359,7 @@ class ServiceInstanceBriefInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ServiceInstanceBriefInfo.
+        r"""Sets the type of this ServiceInstanceBriefInfo.
 
         :param type: The type of this ServiceInstanceBriefInfo.
         :type type: :class:`huaweicloudsdkdataartsfabricep.v1.ServiceType`

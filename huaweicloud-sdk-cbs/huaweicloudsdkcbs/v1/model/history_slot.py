@@ -29,7 +29,7 @@ class HistorySlot:
     }
 
     def __init__(self, slot_name=None, slot_values=None, slot_identification=None):
-        """HistorySlot
+        r"""HistorySlot
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class HistorySlot:
 
     @property
     def slot_name(self):
-        """Gets the slot_name of this HistorySlot.
+        r"""Gets the slot_name of this HistorySlot.
 
         槽位名称。
 
@@ -66,7 +66,7 @@ class HistorySlot:
 
     @slot_name.setter
     def slot_name(self, slot_name):
-        """Sets the slot_name of this HistorySlot.
+        r"""Sets the slot_name of this HistorySlot.
 
         槽位名称。
 
@@ -77,7 +77,7 @@ class HistorySlot:
 
     @property
     def slot_values(self):
-        """Gets the slot_values of this HistorySlot.
+        r"""Gets the slot_values of this HistorySlot.
 
         槽信息。
 
@@ -88,7 +88,7 @@ class HistorySlot:
 
     @slot_values.setter
     def slot_values(self, slot_values):
-        """Sets the slot_values of this HistorySlot.
+        r"""Sets the slot_values of this HistorySlot.
 
         槽信息。
 
@@ -99,7 +99,7 @@ class HistorySlot:
 
     @property
     def slot_identification(self):
-        """Gets the slot_identification of this HistorySlot.
+        r"""Gets the slot_identification of this HistorySlot.
 
         用户设置的槽位标识。
 
@@ -110,7 +110,7 @@ class HistorySlot:
 
     @slot_identification.setter
     def slot_identification(self, slot_identification):
-        """Sets the slot_identification of this HistorySlot.
+        r"""Sets the slot_identification of this HistorySlot.
 
         用户设置的槽位标识。
 

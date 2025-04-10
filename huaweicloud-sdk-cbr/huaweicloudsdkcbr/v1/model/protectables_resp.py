@@ -39,7 +39,7 @@ class ProtectablesResp:
     }
 
     def __init__(self, children=None, detail=None, id=None, name=None, protectable=None, size=None, status=None, type=None):
-        """ProtectablesResp
+        r"""ProtectablesResp
 
         The model defined in huaweicloud sdk
 
@@ -87,7 +87,7 @@ class ProtectablesResp:
 
     @property
     def children(self):
-        """Gets the children of this ProtectablesResp.
+        r"""Gets the children of this ProtectablesResp.
 
         子资源
 
@@ -98,7 +98,7 @@ class ProtectablesResp:
 
     @children.setter
     def children(self, children):
-        """Sets the children of this ProtectablesResp.
+        r"""Sets the children of this ProtectablesResp.
 
         子资源
 
@@ -109,7 +109,7 @@ class ProtectablesResp:
 
     @property
     def detail(self):
-        """Gets the detail of this ProtectablesResp.
+        r"""Gets the detail of this ProtectablesResp.
 
         资源详情
 
@@ -120,7 +120,7 @@ class ProtectablesResp:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this ProtectablesResp.
+        r"""Sets the detail of this ProtectablesResp.
 
         资源详情
 
@@ -131,7 +131,7 @@ class ProtectablesResp:
 
     @property
     def id(self):
-        """Gets the id of this ProtectablesResp.
+        r"""Gets the id of this ProtectablesResp.
 
         id
 
@@ -142,7 +142,7 @@ class ProtectablesResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ProtectablesResp.
+        r"""Sets the id of this ProtectablesResp.
 
         id
 
@@ -153,7 +153,7 @@ class ProtectablesResp:
 
     @property
     def name(self):
-        """Gets the name of this ProtectablesResp.
+        r"""Gets the name of this ProtectablesResp.
 
         名称
 
@@ -164,7 +164,7 @@ class ProtectablesResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ProtectablesResp.
+        r"""Sets the name of this ProtectablesResp.
 
         名称
 
@@ -175,7 +175,7 @@ class ProtectablesResp:
 
     @property
     def protectable(self):
-        """Gets the protectable of this ProtectablesResp.
+        r"""Gets the protectable of this ProtectablesResp.
 
         :return: The protectable of this ProtectablesResp.
         :rtype: :class:`huaweicloudsdkcbr.v1.ProtectableResult`
@@ -184,7 +184,7 @@ class ProtectablesResp:
 
     @protectable.setter
     def protectable(self, protectable):
-        """Sets the protectable of this ProtectablesResp.
+        r"""Sets the protectable of this ProtectablesResp.
 
         :param protectable: The protectable of this ProtectablesResp.
         :type protectable: :class:`huaweicloudsdkcbr.v1.ProtectableResult`
@@ -193,7 +193,7 @@ class ProtectablesResp:
 
     @property
     def size(self):
-        """Gets the size of this ProtectablesResp.
+        r"""Gets the size of this ProtectablesResp.
 
         大小，单位GB
 
@@ -204,7 +204,7 @@ class ProtectablesResp:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ProtectablesResp.
+        r"""Sets the size of this ProtectablesResp.
 
         大小，单位GB
 
@@ -215,7 +215,7 @@ class ProtectablesResp:
 
     @property
     def status(self):
-        """Gets the status of this ProtectablesResp.
+        r"""Gets the status of this ProtectablesResp.
 
         资源状态
 
@@ -226,7 +226,7 @@ class ProtectablesResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ProtectablesResp.
+        r"""Sets the status of this ProtectablesResp.
 
         资源状态
 
@@ -237,7 +237,7 @@ class ProtectablesResp:
 
     @property
     def type(self):
-        """Gets the type of this ProtectablesResp.
+        r"""Gets the type of this ProtectablesResp.
 
         待备份资源的类型, 云服务器: OS::Nova::Server, 云硬盘: OS::Cinder::Volume, 裸金属服务器: OS::Ironic::BareMetalServer, 线下本地服务器: OS::Native::Server, 弹性文件系统: OS::Sfs::Turbo, 云桌面：OS::Workspace::DesktopV2
 
@@ -248,7 +248,7 @@ class ProtectablesResp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ProtectablesResp.
+        r"""Sets the type of this ProtectablesResp.
 
         待备份资源的类型, 云服务器: OS::Nova::Server, 云硬盘: OS::Cinder::Volume, 裸金属服务器: OS::Ironic::BareMetalServer, 线下本地服务器: OS::Native::Server, 弹性文件系统: OS::Sfs::Turbo, 云桌面：OS::Workspace::DesktopV2
 

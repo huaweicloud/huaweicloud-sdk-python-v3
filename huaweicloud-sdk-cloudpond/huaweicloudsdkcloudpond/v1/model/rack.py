@@ -59,7 +59,7 @@ class Rack:
     }
 
     def __init__(self, id=None, name=None, edge_site_id=None, rack_category_id=None, rack_type=None, status=None, storage_assigned_size=None, description=None, rack_sn_no=None, rack_location_no=None, created_at=None, updated_at=None, effected_at=None, market_options=None, compute_unit=None, storage_unit=None, rack_info=None, product_info=None):
-        """Rack
+        r"""Rack
 
         The model defined in huaweicloud sdk
 
@@ -162,7 +162,7 @@ class Rack:
 
     @property
     def id(self):
-        """Gets the id of this Rack.
+        r"""Gets the id of this Rack.
 
         机柜ID
 
@@ -173,7 +173,7 @@ class Rack:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Rack.
+        r"""Sets the id of this Rack.
 
         机柜ID
 
@@ -184,7 +184,7 @@ class Rack:
 
     @property
     def name(self):
-        """Gets the name of this Rack.
+        r"""Gets the name of this Rack.
 
         机柜名称
 
@@ -195,7 +195,7 @@ class Rack:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Rack.
+        r"""Sets the name of this Rack.
 
         机柜名称
 
@@ -206,7 +206,7 @@ class Rack:
 
     @property
     def edge_site_id(self):
-        """Gets the edge_site_id of this Rack.
+        r"""Gets the edge_site_id of this Rack.
 
         边缘小站ID
 
@@ -217,7 +217,7 @@ class Rack:
 
     @edge_site_id.setter
     def edge_site_id(self, edge_site_id):
-        """Sets the edge_site_id of this Rack.
+        r"""Sets the edge_site_id of this Rack.
 
         边缘小站ID
 
@@ -228,7 +228,7 @@ class Rack:
 
     @property
     def rack_category_id(self):
-        """Gets the rack_category_id of this Rack.
+        r"""Gets the rack_category_id of this Rack.
 
         机柜目录ID
 
@@ -239,7 +239,7 @@ class Rack:
 
     @rack_category_id.setter
     def rack_category_id(self, rack_category_id):
-        """Sets the rack_category_id of this Rack.
+        r"""Sets the rack_category_id of this Rack.
 
         机柜目录ID
 
@@ -250,7 +250,7 @@ class Rack:
 
     @property
     def rack_type(self):
-        """Gets the rack_type of this Rack.
+        r"""Gets the rack_type of this Rack.
 
         机柜类型
 
@@ -261,7 +261,7 @@ class Rack:
 
     @rack_type.setter
     def rack_type(self, rack_type):
-        """Sets the rack_type of this Rack.
+        r"""Sets the rack_type of this Rack.
 
         机柜类型
 
@@ -272,7 +272,7 @@ class Rack:
 
     @property
     def status(self):
-        """Gets the status of this Rack.
+        r"""Gets the status of this Rack.
 
         :return: The status of this Rack.
         :rtype: :class:`huaweicloudsdkcloudpond.v1.RackStatus`
@@ -281,7 +281,7 @@ class Rack:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Rack.
+        r"""Sets the status of this Rack.
 
         :param status: The status of this Rack.
         :type status: :class:`huaweicloudsdkcloudpond.v1.RackStatus`
@@ -290,7 +290,7 @@ class Rack:
 
     @property
     def storage_assigned_size(self):
-        """Gets the storage_assigned_size of this Rack.
+        r"""Gets the storage_assigned_size of this Rack.
 
         已分配存储容量
 
@@ -301,7 +301,7 @@ class Rack:
 
     @storage_assigned_size.setter
     def storage_assigned_size(self, storage_assigned_size):
-        """Sets the storage_assigned_size of this Rack.
+        r"""Sets the storage_assigned_size of this Rack.
 
         已分配存储容量
 
@@ -312,7 +312,7 @@ class Rack:
 
     @property
     def description(self):
-        """Gets the description of this Rack.
+        r"""Gets the description of this Rack.
 
         机柜描述
 
@@ -323,7 +323,7 @@ class Rack:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Rack.
+        r"""Sets the description of this Rack.
 
         机柜描述
 
@@ -334,7 +334,7 @@ class Rack:
 
     @property
     def rack_sn_no(self):
-        """Gets the rack_sn_no of this Rack.
+        r"""Gets the rack_sn_no of this Rack.
 
         机柜SN号
 
@@ -345,7 +345,7 @@ class Rack:
 
     @rack_sn_no.setter
     def rack_sn_no(self, rack_sn_no):
-        """Sets the rack_sn_no of this Rack.
+        r"""Sets the rack_sn_no of this Rack.
 
         机柜SN号
 
@@ -356,7 +356,7 @@ class Rack:
 
     @property
     def rack_location_no(self):
-        """Gets the rack_location_no of this Rack.
+        r"""Gets the rack_location_no of this Rack.
 
         机柜位置号
 
@@ -367,7 +367,7 @@ class Rack:
 
     @rack_location_no.setter
     def rack_location_no(self, rack_location_no):
-        """Sets the rack_location_no of this Rack.
+        r"""Sets the rack_location_no of this Rack.
 
         机柜位置号
 
@@ -378,7 +378,7 @@ class Rack:
 
     @property
     def created_at(self):
-        """Gets the created_at of this Rack.
+        r"""Gets the created_at of this Rack.
 
         创建时间
 
@@ -389,7 +389,7 @@ class Rack:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Rack.
+        r"""Sets the created_at of this Rack.
 
         创建时间
 
@@ -400,7 +400,7 @@ class Rack:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this Rack.
+        r"""Gets the updated_at of this Rack.
 
         更新时间
 
@@ -411,7 +411,7 @@ class Rack:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this Rack.
+        r"""Sets the updated_at of this Rack.
 
         更新时间
 
@@ -422,7 +422,7 @@ class Rack:
 
     @property
     def effected_at(self):
-        """Gets the effected_at of this Rack.
+        r"""Gets the effected_at of this Rack.
 
         生效时间
 
@@ -433,7 +433,7 @@ class Rack:
 
     @effected_at.setter
     def effected_at(self, effected_at):
-        """Sets the effected_at of this Rack.
+        r"""Sets the effected_at of this Rack.
 
         生效时间
 
@@ -444,7 +444,7 @@ class Rack:
 
     @property
     def market_options(self):
-        """Gets the market_options of this Rack.
+        r"""Gets the market_options of this Rack.
 
         :return: The market_options of this Rack.
         :rtype: :class:`huaweicloudsdkcloudpond.v1.MarketOptions`
@@ -453,7 +453,7 @@ class Rack:
 
     @market_options.setter
     def market_options(self, market_options):
-        """Sets the market_options of this Rack.
+        r"""Sets the market_options of this Rack.
 
         :param market_options: The market_options of this Rack.
         :type market_options: :class:`huaweicloudsdkcloudpond.v1.MarketOptions`
@@ -462,7 +462,7 @@ class Rack:
 
     @property
     def compute_unit(self):
-        """Gets the compute_unit of this Rack.
+        r"""Gets the compute_unit of this Rack.
 
         计算单元信息
 
@@ -473,7 +473,7 @@ class Rack:
 
     @compute_unit.setter
     def compute_unit(self, compute_unit):
-        """Sets the compute_unit of this Rack.
+        r"""Sets the compute_unit of this Rack.
 
         计算单元信息
 
@@ -484,7 +484,7 @@ class Rack:
 
     @property
     def storage_unit(self):
-        """Gets the storage_unit of this Rack.
+        r"""Gets the storage_unit of this Rack.
 
         :return: The storage_unit of this Rack.
         :rtype: :class:`huaweicloudsdkcloudpond.v1.StorageUnit`
@@ -493,7 +493,7 @@ class Rack:
 
     @storage_unit.setter
     def storage_unit(self, storage_unit):
-        """Sets the storage_unit of this Rack.
+        r"""Sets the storage_unit of this Rack.
 
         :param storage_unit: The storage_unit of this Rack.
         :type storage_unit: :class:`huaweicloudsdkcloudpond.v1.StorageUnit`
@@ -502,7 +502,7 @@ class Rack:
 
     @property
     def rack_info(self):
-        """Gets the rack_info of this Rack.
+        r"""Gets the rack_info of this Rack.
 
         :return: The rack_info of this Rack.
         :rtype: :class:`huaweicloudsdkcloudpond.v1.RackInfo`
@@ -511,7 +511,7 @@ class Rack:
 
     @rack_info.setter
     def rack_info(self, rack_info):
-        """Sets the rack_info of this Rack.
+        r"""Sets the rack_info of this Rack.
 
         :param rack_info: The rack_info of this Rack.
         :type rack_info: :class:`huaweicloudsdkcloudpond.v1.RackInfo`
@@ -520,7 +520,7 @@ class Rack:
 
     @property
     def product_info(self):
-        """Gets the product_info of this Rack.
+        r"""Gets the product_info of this Rack.
 
         :return: The product_info of this Rack.
         :rtype: :class:`huaweicloudsdkcloudpond.v1.ProductInfo`
@@ -529,7 +529,7 @@ class Rack:
 
     @product_info.setter
     def product_info(self, product_info):
-        """Sets the product_info of this Rack.
+        r"""Sets the product_info of this Rack.
 
         :param product_info: The product_info of this Rack.
         :type product_info: :class:`huaweicloudsdkcloudpond.v1.ProductInfo`

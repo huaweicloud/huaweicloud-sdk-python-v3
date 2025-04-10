@@ -31,7 +31,7 @@ class ListDDosStatusRequest:
     }
 
     def __init__(self, status=None, limit=None, offset=None, ip=None):
-        """ListDDosStatusRequest
+        r"""ListDDosStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListDDosStatusRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListDDosStatusRequest.
+        r"""Gets the status of this ListDDosStatusRequest.
 
         可选范围： - normal：表示正常 - configging：表示设置中 - notConfig：表示未设置 - packetcleaning：表示清洗 - packetdropping：表示黑洞  不带此参数默认所有列表，以neutron查询到的顺序为准。
 
@@ -75,7 +75,7 @@ class ListDDosStatusRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListDDosStatusRequest.
+        r"""Sets the status of this ListDDosStatusRequest.
 
         可选范围： - normal：表示正常 - configging：表示设置中 - notConfig：表示未设置 - packetcleaning：表示清洗 - packetdropping：表示黑洞  不带此参数默认所有列表，以neutron查询到的顺序为准。
 
@@ -86,7 +86,7 @@ class ListDDosStatusRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDDosStatusRequest.
+        r"""Gets the limit of this ListDDosStatusRequest.
 
         返回结果个数限制，取值范围：1~100
 
@@ -97,7 +97,7 @@ class ListDDosStatusRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDDosStatusRequest.
+        r"""Sets the limit of this ListDDosStatusRequest.
 
         返回结果个数限制，取值范围：1~100
 
@@ -108,7 +108,7 @@ class ListDDosStatusRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDDosStatusRequest.
+        r"""Gets the offset of this ListDDosStatusRequest.
 
         偏移量，取值范围：0~2147483647
 
@@ -119,7 +119,7 @@ class ListDDosStatusRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDDosStatusRequest.
+        r"""Sets the offset of this ListDDosStatusRequest.
 
         偏移量，取值范围：0~2147483647
 
@@ -130,7 +130,7 @@ class ListDDosStatusRequest:
 
     @property
     def ip(self):
-        """Gets the ip of this ListDDosStatusRequest.
+        r"""Gets the ip of this ListDDosStatusRequest.
 
         IP地址，支持IPv4格式和IPv6格式输入，支持部分查询。例如“？ip=192.168”，会返回192.168.111.1和10.192.168.8所对应的EIP防护状态。
 
@@ -141,7 +141,7 @@ class ListDDosStatusRequest:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this ListDDosStatusRequest.
+        r"""Sets the ip of this ListDDosStatusRequest.
 
         IP地址，支持IPv4格式和IPv6格式输入，支持部分查询。例如“？ip=192.168”，会返回192.168.111.1和10.192.168.8所对应的EIP防护状态。
 

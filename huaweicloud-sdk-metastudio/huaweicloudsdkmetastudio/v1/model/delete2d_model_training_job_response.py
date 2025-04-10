@@ -26,7 +26,7 @@ class Delete2dModelTrainingJobResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """Delete2dModelTrainingJobResponse
+        r"""Delete2dModelTrainingJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class Delete2dModelTrainingJobResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this Delete2dModelTrainingJobResponse.
+        r"""Gets the x_request_id of this Delete2dModelTrainingJobResponse.
 
         :return: The x_request_id of this Delete2dModelTrainingJobResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class Delete2dModelTrainingJobResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this Delete2dModelTrainingJobResponse.
+        r"""Sets the x_request_id of this Delete2dModelTrainingJobResponse.
 
         :param x_request_id: The x_request_id of this Delete2dModelTrainingJobResponse.
         :type x_request_id: str

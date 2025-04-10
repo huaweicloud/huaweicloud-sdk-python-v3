@@ -27,7 +27,7 @@ class CreateTestCaseInPlanRequestBody:
     }
 
     def __init__(self, service_id=None, testcase_id_list=None):
-        """CreateTestCaseInPlanRequestBody
+        r"""CreateTestCaseInPlanRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateTestCaseInPlanRequestBody:
 
     @property
     def service_id(self):
-        """Gets the service_id of this CreateTestCaseInPlanRequestBody.
+        r"""Gets the service_id of this CreateTestCaseInPlanRequestBody.
 
         注册测试类型服务接口返回的服务id
 
@@ -59,7 +59,7 @@ class CreateTestCaseInPlanRequestBody:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this CreateTestCaseInPlanRequestBody.
+        r"""Sets the service_id of this CreateTestCaseInPlanRequestBody.
 
         注册测试类型服务接口返回的服务id
 
@@ -70,7 +70,7 @@ class CreateTestCaseInPlanRequestBody:
 
     @property
     def testcase_id_list(self):
-        """Gets the testcase_id_list of this CreateTestCaseInPlanRequestBody.
+        r"""Gets the testcase_id_list of this CreateTestCaseInPlanRequestBody.
 
         计划下包含的用例个数，数组长度小于50个，只能包含一种测试类型
 
@@ -81,7 +81,7 @@ class CreateTestCaseInPlanRequestBody:
 
     @testcase_id_list.setter
     def testcase_id_list(self, testcase_id_list):
-        """Sets the testcase_id_list of this CreateTestCaseInPlanRequestBody.
+        r"""Sets the testcase_id_list of this CreateTestCaseInPlanRequestBody.
 
         计划下包含的用例个数，数组长度小于50个，只能包含一种测试类型
 

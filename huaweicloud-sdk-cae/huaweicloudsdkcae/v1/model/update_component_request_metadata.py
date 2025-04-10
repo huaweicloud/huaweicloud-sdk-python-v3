@@ -27,7 +27,7 @@ class UpdateComponentRequestMetadata:
     }
 
     def __init__(self, name=None, annotations=None):
-        """UpdateComponentRequestMetadata
+        r"""UpdateComponentRequestMetadata
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateComponentRequestMetadata:
 
     @property
     def name(self):
-        """Gets the name of this UpdateComponentRequestMetadata.
+        r"""Gets the name of this UpdateComponentRequestMetadata.
 
         组件名称。
 
@@ -60,7 +60,7 @@ class UpdateComponentRequestMetadata:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateComponentRequestMetadata.
+        r"""Sets the name of this UpdateComponentRequestMetadata.
 
         组件名称。
 
@@ -71,7 +71,7 @@ class UpdateComponentRequestMetadata:
 
     @property
     def annotations(self):
-        """Gets the annotations of this UpdateComponentRequestMetadata.
+        r"""Gets the annotations of this UpdateComponentRequestMetadata.
 
         更新组件请求体附加参数，当前只支持version参数，此参数必填。
 
@@ -82,7 +82,7 @@ class UpdateComponentRequestMetadata:
 
     @annotations.setter
     def annotations(self, annotations):
-        """Sets the annotations of this UpdateComponentRequestMetadata.
+        r"""Sets the annotations of this UpdateComponentRequestMetadata.
 
         更新组件请求体附加参数，当前只支持version参数，此参数必填。
 

@@ -25,7 +25,7 @@ class DeleteFsDirRequestBody:
     }
 
     def __init__(self, path=None):
-        """DeleteFsDirRequestBody
+        r"""DeleteFsDirRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteFsDirRequestBody:
 
     @property
     def path(self):
-        """Gets the path of this DeleteFsDirRequestBody.
+        r"""Gets the path of this DeleteFsDirRequestBody.
 
         合法的目录全路径
 
@@ -53,7 +53,7 @@ class DeleteFsDirRequestBody:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this DeleteFsDirRequestBody.
+        r"""Sets the path of this DeleteFsDirRequestBody.
 
         合法的目录全路径
 

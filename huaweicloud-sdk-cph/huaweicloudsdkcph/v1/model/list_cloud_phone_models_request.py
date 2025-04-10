@@ -29,7 +29,7 @@ class ListCloudPhoneModelsRequest:
     }
 
     def __init__(self, status=None, offset=None, limit=None):
-        """ListCloudPhoneModelsRequest
+        r"""ListCloudPhoneModelsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListCloudPhoneModelsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListCloudPhoneModelsRequest.
+        r"""Gets the status of this ListCloudPhoneModelsRequest.
 
         规格状态 - 0：下线状态 - 1：正常使用 不传该参数表示查询所有状态的规格。
 
@@ -68,7 +68,7 @@ class ListCloudPhoneModelsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListCloudPhoneModelsRequest.
+        r"""Sets the status of this ListCloudPhoneModelsRequest.
 
         规格状态 - 0：下线状态 - 1：正常使用 不传该参数表示查询所有状态的规格。
 
@@ -79,7 +79,7 @@ class ListCloudPhoneModelsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListCloudPhoneModelsRequest.
+        r"""Gets the offset of this ListCloudPhoneModelsRequest.
 
         偏移量为一个大于等于0整数，表示查询该偏移量后面的所有的资源数，默认值为0。
 
@@ -90,7 +90,7 @@ class ListCloudPhoneModelsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListCloudPhoneModelsRequest.
+        r"""Sets the offset of this ListCloudPhoneModelsRequest.
 
         偏移量为一个大于等于0整数，表示查询该偏移量后面的所有的资源数，默认值为0。
 
@@ -101,7 +101,7 @@ class ListCloudPhoneModelsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListCloudPhoneModelsRequest.
+        r"""Gets the limit of this ListCloudPhoneModelsRequest.
 
         每页返回的资源个数。取值范围：1~100（默认值为100），一般设置为10、20、50。
 
@@ -112,7 +112,7 @@ class ListCloudPhoneModelsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListCloudPhoneModelsRequest.
+        r"""Sets the limit of this ListCloudPhoneModelsRequest.
 
         每页返回的资源个数。取值范围：1~100（默认值为100），一般设置为10、20、50。
 

@@ -41,7 +41,7 @@ class ListJobInstancesRequest:
     }
 
     def __init__(self, workspace=None, limit=None, offset=None, min_plan_time=None, max_plan_time=None, status=None, precise_query=None, job_name=None, instance_type=None):
-        """ListJobInstancesRequest
+        r"""ListJobInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ListJobInstancesRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListJobInstancesRequest.
+        r"""Gets the workspace of this ListJobInstancesRequest.
 
         工作空间id
 
@@ -110,7 +110,7 @@ class ListJobInstancesRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListJobInstancesRequest.
+        r"""Sets the workspace of this ListJobInstancesRequest.
 
         工作空间id
 
@@ -121,7 +121,7 @@ class ListJobInstancesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListJobInstancesRequest.
+        r"""Gets the limit of this ListJobInstancesRequest.
 
         分页参数:每页限定数量
 
@@ -132,7 +132,7 @@ class ListJobInstancesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListJobInstancesRequest.
+        r"""Sets the limit of this ListJobInstancesRequest.
 
         分页参数:每页限定数量
 
@@ -143,7 +143,7 @@ class ListJobInstancesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListJobInstancesRequest.
+        r"""Gets the offset of this ListJobInstancesRequest.
 
         分页参数：页数
 
@@ -154,7 +154,7 @@ class ListJobInstancesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListJobInstancesRequest.
+        r"""Sets the offset of this ListJobInstancesRequest.
 
         分页参数：页数
 
@@ -165,7 +165,7 @@ class ListJobInstancesRequest:
 
     @property
     def min_plan_time(self):
-        """Gets the min_plan_time of this ListJobInstancesRequest.
+        r"""Gets the min_plan_time of this ListJobInstancesRequest.
 
         返回作业实际开始时间大于minPlanTime的作业实例，单位为毫秒ms。
 
@@ -176,7 +176,7 @@ class ListJobInstancesRequest:
 
     @min_plan_time.setter
     def min_plan_time(self, min_plan_time):
-        """Sets the min_plan_time of this ListJobInstancesRequest.
+        r"""Sets the min_plan_time of this ListJobInstancesRequest.
 
         返回作业实际开始时间大于minPlanTime的作业实例，单位为毫秒ms。
 
@@ -187,7 +187,7 @@ class ListJobInstancesRequest:
 
     @property
     def max_plan_time(self):
-        """Gets the max_plan_time of this ListJobInstancesRequest.
+        r"""Gets the max_plan_time of this ListJobInstancesRequest.
 
         返回作业实际开始时间小于maxPlanTime的作业实例，单位为毫秒ms。
 
@@ -198,7 +198,7 @@ class ListJobInstancesRequest:
 
     @max_plan_time.setter
     def max_plan_time(self, max_plan_time):
-        """Sets the max_plan_time of this ListJobInstancesRequest.
+        r"""Sets the max_plan_time of this ListJobInstancesRequest.
 
         返回作业实际开始时间小于maxPlanTime的作业实例，单位为毫秒ms。
 
@@ -209,7 +209,7 @@ class ListJobInstancesRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListJobInstancesRequest.
+        r"""Gets the status of this ListJobInstancesRequest.
 
         实例运行状态： - waiting：等待运行 - running：运行中 - success：运行成功 - fail： 运行失败 - running-exception：运行异常 - pause： 暂停 - manual-stop：取消
 
@@ -220,7 +220,7 @@ class ListJobInstancesRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListJobInstancesRequest.
+        r"""Sets the status of this ListJobInstancesRequest.
 
         实例运行状态： - waiting：等待运行 - running：运行中 - success：运行成功 - fail： 运行失败 - running-exception：运行异常 - pause： 暂停 - manual-stop：取消
 
@@ -231,7 +231,7 @@ class ListJobInstancesRequest:
 
     @property
     def precise_query(self):
-        """Gets the precise_query of this ListJobInstancesRequest.
+        r"""Gets the precise_query of this ListJobInstancesRequest.
 
         支持通过作业名进行精确查询。
 
@@ -242,7 +242,7 @@ class ListJobInstancesRequest:
 
     @precise_query.setter
     def precise_query(self, precise_query):
-        """Sets the precise_query of this ListJobInstancesRequest.
+        r"""Sets the precise_query of this ListJobInstancesRequest.
 
         支持通过作业名进行精确查询。
 
@@ -253,7 +253,7 @@ class ListJobInstancesRequest:
 
     @property
     def job_name(self):
-        """Gets the job_name of this ListJobInstancesRequest.
+        r"""Gets the job_name of this ListJobInstancesRequest.
 
         作业名称。如果要查询指定批处理作业的实例列表，jobName就是批处理作业名称；如果要查询实时作业下某个节点关联的子作业，jobName格式为[实时作业名称]_[节点名称]。
 
@@ -264,7 +264,7 @@ class ListJobInstancesRequest:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this ListJobInstancesRequest.
+        r"""Sets the job_name of this ListJobInstancesRequest.
 
         作业名称。如果要查询指定批处理作业的实例列表，jobName就是批处理作业名称；如果要查询实时作业下某个节点关联的子作业，jobName格式为[实时作业名称]_[节点名称]。
 
@@ -275,7 +275,7 @@ class ListJobInstancesRequest:
 
     @property
     def instance_type(self):
-        """Gets the instance_type of this ListJobInstancesRequest.
+        r"""Gets the instance_type of this ListJobInstancesRequest.
 
         作业调度方式： - 0：正常调度 - 2：手工调度 - 5：补数据 - 6：子作业调度 - 7：单次调度
 
@@ -286,7 +286,7 @@ class ListJobInstancesRequest:
 
     @instance_type.setter
     def instance_type(self, instance_type):
-        """Sets the instance_type of this ListJobInstancesRequest.
+        r"""Sets the instance_type of this ListJobInstancesRequest.
 
         作业调度方式： - 0：正常调度 - 2：手工调度 - 5：补数据 - 6：子作业调度 - 7：单次调度
 

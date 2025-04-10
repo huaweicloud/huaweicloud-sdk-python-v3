@@ -35,7 +35,7 @@ class PocketDetectionParamDto:
     }
 
     def __init__(self, timestep_size=None, num_minimization_steps=None, pre_equilibrium_time=None, pocket_detection_time=None, num_surface_points=None, probe_radius=None):
-        """PocketDetectionParamDto
+        r"""PocketDetectionParamDto
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class PocketDetectionParamDto:
 
     @property
     def timestep_size(self):
-        """Gets the timestep_size of this PocketDetectionParamDto.
+        r"""Gets the timestep_size of this PocketDetectionParamDto.
 
         时间步长，单位ps
 
@@ -89,7 +89,7 @@ class PocketDetectionParamDto:
 
     @timestep_size.setter
     def timestep_size(self, timestep_size):
-        """Sets the timestep_size of this PocketDetectionParamDto.
+        r"""Sets the timestep_size of this PocketDetectionParamDto.
 
         时间步长，单位ps
 
@@ -100,7 +100,7 @@ class PocketDetectionParamDto:
 
     @property
     def num_minimization_steps(self):
-        """Gets the num_minimization_steps of this PocketDetectionParamDto.
+        r"""Gets the num_minimization_steps of this PocketDetectionParamDto.
 
         最小化步数
 
@@ -111,7 +111,7 @@ class PocketDetectionParamDto:
 
     @num_minimization_steps.setter
     def num_minimization_steps(self, num_minimization_steps):
-        """Sets the num_minimization_steps of this PocketDetectionParamDto.
+        r"""Sets the num_minimization_steps of this PocketDetectionParamDto.
 
         最小化步数
 
@@ -122,7 +122,7 @@ class PocketDetectionParamDto:
 
     @property
     def pre_equilibrium_time(self):
-        """Gets the pre_equilibrium_time of this PocketDetectionParamDto.
+        r"""Gets the pre_equilibrium_time of this PocketDetectionParamDto.
 
         预平衡时长，单位ps
 
@@ -133,7 +133,7 @@ class PocketDetectionParamDto:
 
     @pre_equilibrium_time.setter
     def pre_equilibrium_time(self, pre_equilibrium_time):
-        """Sets the pre_equilibrium_time of this PocketDetectionParamDto.
+        r"""Sets the pre_equilibrium_time of this PocketDetectionParamDto.
 
         预平衡时长，单位ps
 
@@ -144,7 +144,7 @@ class PocketDetectionParamDto:
 
     @property
     def pocket_detection_time(self):
-        """Gets the pocket_detection_time of this PocketDetectionParamDto.
+        r"""Gets the pocket_detection_time of this PocketDetectionParamDto.
 
         口袋发现时长，单位ns
 
@@ -155,7 +155,7 @@ class PocketDetectionParamDto:
 
     @pocket_detection_time.setter
     def pocket_detection_time(self, pocket_detection_time):
-        """Sets the pocket_detection_time of this PocketDetectionParamDto.
+        r"""Sets the pocket_detection_time of this PocketDetectionParamDto.
 
         口袋发现时长，单位ns
 
@@ -166,7 +166,7 @@ class PocketDetectionParamDto:
 
     @property
     def num_surface_points(self):
-        """Gets the num_surface_points of this PocketDetectionParamDto.
+        r"""Gets the num_surface_points of this PocketDetectionParamDto.
 
         表面原子离散点数量
 
@@ -177,7 +177,7 @@ class PocketDetectionParamDto:
 
     @num_surface_points.setter
     def num_surface_points(self, num_surface_points):
-        """Sets the num_surface_points of this PocketDetectionParamDto.
+        r"""Sets the num_surface_points of this PocketDetectionParamDto.
 
         表面原子离散点数量
 
@@ -188,7 +188,7 @@ class PocketDetectionParamDto:
 
     @property
     def probe_radius(self):
-        """Gets the probe_radius of this PocketDetectionParamDto.
+        r"""Gets the probe_radius of this PocketDetectionParamDto.
 
         探针半径，单位A
 
@@ -199,7 +199,7 @@ class PocketDetectionParamDto:
 
     @probe_radius.setter
     def probe_radius(self, probe_radius):
-        """Sets the probe_radius of this PocketDetectionParamDto.
+        r"""Sets the probe_radius of this PocketDetectionParamDto.
 
         探针半径，单位A
 

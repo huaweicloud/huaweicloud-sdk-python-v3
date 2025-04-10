@@ -25,7 +25,7 @@ class ShowIncreBackupPolicyRespBodyIncreBackupPolicy:
     }
 
     def __init__(self, interval=None):
-        """ShowIncreBackupPolicyRespBodyIncreBackupPolicy
+        r"""ShowIncreBackupPolicyRespBodyIncreBackupPolicy
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowIncreBackupPolicyRespBodyIncreBackupPolicy:
 
     @property
     def interval(self):
-        """Gets the interval of this ShowIncreBackupPolicyRespBodyIncreBackupPolicy.
+        r"""Gets the interval of this ShowIncreBackupPolicyRespBodyIncreBackupPolicy.
 
         增备时间间隔（分）
 
@@ -54,7 +54,7 @@ class ShowIncreBackupPolicyRespBodyIncreBackupPolicy:
 
     @interval.setter
     def interval(self, interval):
-        """Sets the interval of this ShowIncreBackupPolicyRespBodyIncreBackupPolicy.
+        r"""Sets the interval of this ShowIncreBackupPolicyRespBodyIncreBackupPolicy.
 
         增备时间间隔（分）
 

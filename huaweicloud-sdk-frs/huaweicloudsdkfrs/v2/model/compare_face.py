@@ -25,7 +25,7 @@ class CompareFace:
     }
 
     def __init__(self, bounding_box=None):
-        """CompareFace
+        r"""CompareFace
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CompareFace:
 
     @property
     def bounding_box(self):
-        """Gets the bounding_box of this CompareFace.
+        r"""Gets the bounding_box of this CompareFace.
 
         :return: The bounding_box of this CompareFace.
         :rtype: :class:`huaweicloudsdkfrs.v2.BoundingBox`
@@ -51,7 +51,7 @@ class CompareFace:
 
     @bounding_box.setter
     def bounding_box(self, bounding_box):
-        """Sets the bounding_box of this CompareFace.
+        r"""Sets the bounding_box of this CompareFace.
 
         :param bounding_box: The bounding_box of this CompareFace.
         :type bounding_box: :class:`huaweicloudsdkfrs.v2.BoundingBox`

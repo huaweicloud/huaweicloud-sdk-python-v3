@@ -30,7 +30,7 @@ class ShowSubnetBandwidthControlListResponse(SdkResponse):
     }
 
     def __init__(self, control_mode=None, control_list=None, total_count=None):
-        """ShowSubnetBandwidthControlListResponse
+        r"""ShowSubnetBandwidthControlListResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowSubnetBandwidthControlListResponse(SdkResponse):
 
     @property
     def control_mode(self):
-        """Gets the control_mode of this ShowSubnetBandwidthControlListResponse.
+        r"""Gets the control_mode of this ShowSubnetBandwidthControlListResponse.
 
         控制模式 - BLACK：黑名单控制。 - WHITE：白名单控制。
 
@@ -69,7 +69,7 @@ class ShowSubnetBandwidthControlListResponse(SdkResponse):
 
     @control_mode.setter
     def control_mode(self, control_mode):
-        """Sets the control_mode of this ShowSubnetBandwidthControlListResponse.
+        r"""Sets the control_mode of this ShowSubnetBandwidthControlListResponse.
 
         控制模式 - BLACK：黑名单控制。 - WHITE：白名单控制。
 
@@ -80,7 +80,7 @@ class ShowSubnetBandwidthControlListResponse(SdkResponse):
 
     @property
     def control_list(self):
-        """Gets the control_list of this ShowSubnetBandwidthControlListResponse.
+        r"""Gets the control_list of this ShowSubnetBandwidthControlListResponse.
 
         控制的桌面列表。
 
@@ -91,7 +91,7 @@ class ShowSubnetBandwidthControlListResponse(SdkResponse):
 
     @control_list.setter
     def control_list(self, control_list):
-        """Sets the control_list of this ShowSubnetBandwidthControlListResponse.
+        r"""Sets the control_list of this ShowSubnetBandwidthControlListResponse.
 
         控制的桌面列表。
 
@@ -102,7 +102,7 @@ class ShowSubnetBandwidthControlListResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ShowSubnetBandwidthControlListResponse.
+        r"""Gets the total_count of this ShowSubnetBandwidthControlListResponse.
 
         总数。
 
@@ -113,7 +113,7 @@ class ShowSubnetBandwidthControlListResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ShowSubnetBandwidthControlListResponse.
+        r"""Sets the total_count of this ShowSubnetBandwidthControlListResponse.
 
         总数。
 

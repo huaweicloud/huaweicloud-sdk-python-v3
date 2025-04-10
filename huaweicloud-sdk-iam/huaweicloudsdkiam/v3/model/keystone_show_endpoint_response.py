@@ -26,7 +26,7 @@ class KeystoneShowEndpointResponse(SdkResponse):
     }
 
     def __init__(self, endpoint=None):
-        """KeystoneShowEndpointResponse
+        r"""KeystoneShowEndpointResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class KeystoneShowEndpointResponse(SdkResponse):
 
     @property
     def endpoint(self):
-        """Gets the endpoint of this KeystoneShowEndpointResponse.
+        r"""Gets the endpoint of this KeystoneShowEndpointResponse.
 
         :return: The endpoint of this KeystoneShowEndpointResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.Endpoint`
@@ -53,7 +53,7 @@ class KeystoneShowEndpointResponse(SdkResponse):
 
     @endpoint.setter
     def endpoint(self, endpoint):
-        """Sets the endpoint of this KeystoneShowEndpointResponse.
+        r"""Sets the endpoint of this KeystoneShowEndpointResponse.
 
         :param endpoint: The endpoint of this KeystoneShowEndpointResponse.
         :type endpoint: :class:`huaweicloudsdkiam.v3.Endpoint`

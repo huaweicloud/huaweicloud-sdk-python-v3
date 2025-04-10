@@ -37,7 +37,7 @@ class Volume:
     }
 
     def __init__(self, id=None, resource_info=None, resource_name=None, resource_type=None, resource_sub_type=None, access=None, time=None):
-        """Volume
+        r"""Volume
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class Volume:
 
     @property
     def id(self):
-        """Gets the id of this Volume.
+        r"""Gets the id of this Volume.
 
         云存储ID。
 
@@ -96,7 +96,7 @@ class Volume:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Volume.
+        r"""Sets the id of this Volume.
 
         云存储ID。
 
@@ -107,7 +107,7 @@ class Volume:
 
     @property
     def resource_info(self):
-        """Gets the resource_info of this Volume.
+        r"""Gets the resource_info of this Volume.
 
         存储资源详情。
 
@@ -118,7 +118,7 @@ class Volume:
 
     @resource_info.setter
     def resource_info(self, resource_info):
-        """Sets the resource_info of this Volume.
+        r"""Sets the resource_info of this Volume.
 
         存储资源详情。
 
@@ -129,7 +129,7 @@ class Volume:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this Volume.
+        r"""Gets the resource_name of this Volume.
 
         云存储名称。
 
@@ -140,7 +140,7 @@ class Volume:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this Volume.
+        r"""Sets the resource_name of this Volume.
 
         云存储名称。
 
@@ -151,7 +151,7 @@ class Volume:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this Volume.
+        r"""Gets the resource_type of this Volume.
 
         资源类型，当前只支持“obs”和“sfs”。
 
@@ -162,7 +162,7 @@ class Volume:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this Volume.
+        r"""Sets the resource_type of this Volume.
 
         资源类型，当前只支持“obs”和“sfs”。
 
@@ -173,7 +173,7 @@ class Volume:
 
     @property
     def resource_sub_type(self):
-        """Gets the resource_sub_type of this Volume.
+        r"""Gets the resource_sub_type of this Volume.
 
         存储资源子类型。
 
@@ -184,7 +184,7 @@ class Volume:
 
     @resource_sub_type.setter
     def resource_sub_type(self, resource_sub_type):
-        """Sets the resource_sub_type of this Volume.
+        r"""Sets the resource_sub_type of this Volume.
 
         存储资源子类型。
 
@@ -195,7 +195,7 @@ class Volume:
 
     @property
     def access(self):
-        """Gets the access of this Volume.
+        r"""Gets the access of this Volume.
 
         用户access key。
 
@@ -206,7 +206,7 @@ class Volume:
 
     @access.setter
     def access(self, access):
-        """Sets the access of this Volume.
+        r"""Sets the access of this Volume.
 
         用户access key。
 
@@ -217,7 +217,7 @@ class Volume:
 
     @property
     def time(self):
-        """Gets the time of this Volume.
+        r"""Gets the time of this Volume.
 
         创建时间。
 
@@ -228,7 +228,7 @@ class Volume:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this Volume.
+        r"""Sets the time of this Volume.
 
         创建时间。
 

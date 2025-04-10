@@ -28,7 +28,7 @@ class UpdateComponentActionResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, result=None):
-        """UpdateComponentActionResponse
+        r"""UpdateComponentActionResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateComponentActionResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateComponentActionResponse.
+        r"""Gets the job_id of this UpdateComponentActionResponse.
 
         任务id
 
@@ -62,7 +62,7 @@ class UpdateComponentActionResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateComponentActionResponse.
+        r"""Sets the job_id of this UpdateComponentActionResponse.
 
         任务id
 
@@ -73,7 +73,7 @@ class UpdateComponentActionResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this UpdateComponentActionResponse.
+        r"""Gets the result of this UpdateComponentActionResponse.
 
         任务结果
 
@@ -84,7 +84,7 @@ class UpdateComponentActionResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this UpdateComponentActionResponse.
+        r"""Sets the result of this UpdateComponentActionResponse.
 
         任务结果
 

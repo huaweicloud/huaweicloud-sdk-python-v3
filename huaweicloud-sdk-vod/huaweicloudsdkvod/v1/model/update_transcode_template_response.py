@@ -24,7 +24,7 @@ class UpdateTranscodeTemplateResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateTranscodeTemplateResponse
+        r"""UpdateTranscodeTemplateResponse
 
         The model defined in huaweicloud sdk
 

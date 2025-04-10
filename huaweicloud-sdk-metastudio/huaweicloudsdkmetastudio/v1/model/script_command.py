@@ -33,7 +33,7 @@ class ScriptCommand:
     }
 
     def __init__(self, room_id=None, job_id=None, command_id=None, command_time=None, scene_scripts=None):
-        """ScriptCommand
+        r"""ScriptCommand
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ScriptCommand:
 
     @property
     def room_id(self):
-        """Gets the room_id of this ScriptCommand.
+        r"""Gets the room_id of this ScriptCommand.
 
         直播间ID
 
@@ -82,7 +82,7 @@ class ScriptCommand:
 
     @room_id.setter
     def room_id(self, room_id):
-        """Sets the room_id of this ScriptCommand.
+        r"""Sets the room_id of this ScriptCommand.
 
         直播间ID
 
@@ -93,7 +93,7 @@ class ScriptCommand:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ScriptCommand.
+        r"""Gets the job_id of this ScriptCommand.
 
         直播任务ID。
 
@@ -104,7 +104,7 @@ class ScriptCommand:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ScriptCommand.
+        r"""Sets the job_id of this ScriptCommand.
 
         直播任务ID。
 
@@ -115,7 +115,7 @@ class ScriptCommand:
 
     @property
     def command_id(self):
-        """Gets the command_id of this ScriptCommand.
+        r"""Gets the command_id of this ScriptCommand.
 
         命令ID。
 
@@ -126,7 +126,7 @@ class ScriptCommand:
 
     @command_id.setter
     def command_id(self, command_id):
-        """Sets the command_id of this ScriptCommand.
+        r"""Sets the command_id of this ScriptCommand.
 
         命令ID。
 
@@ -137,7 +137,7 @@ class ScriptCommand:
 
     @property
     def command_time(self):
-        """Gets the command_time of this ScriptCommand.
+        r"""Gets the command_time of this ScriptCommand.
 
         命令时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -148,7 +148,7 @@ class ScriptCommand:
 
     @command_time.setter
     def command_time(self, command_time):
-        """Sets the command_time of this ScriptCommand.
+        r"""Sets the command_time of this ScriptCommand.
 
         命令时间。格式遵循：RFC 3339 如\"2021-01-10T08:43:17Z\"。
 
@@ -159,7 +159,7 @@ class ScriptCommand:
 
     @property
     def scene_scripts(self):
-        """Gets the scene_scripts of this ScriptCommand.
+        r"""Gets the scene_scripts of this ScriptCommand.
 
         直播剧本列表。
 
@@ -170,7 +170,7 @@ class ScriptCommand:
 
     @scene_scripts.setter
     def scene_scripts(self, scene_scripts):
-        """Sets the scene_scripts of this ScriptCommand.
+        r"""Sets the scene_scripts of this ScriptCommand.
 
         直播剧本列表。
 

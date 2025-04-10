@@ -31,7 +31,7 @@ class MdStepParam:
     }
 
     def __init__(self, energy_minimization_steps=None, nvt=None, npt=None, simulation_time=None):
-        """MdStepParam
+        r"""MdStepParam
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class MdStepParam:
 
     @property
     def energy_minimization_steps(self):
-        """Gets the energy_minimization_steps of this MdStepParam.
+        r"""Gets the energy_minimization_steps of this MdStepParam.
 
         能量最小化的步骤
 
@@ -75,7 +75,7 @@ class MdStepParam:
 
     @energy_minimization_steps.setter
     def energy_minimization_steps(self, energy_minimization_steps):
-        """Sets the energy_minimization_steps of this MdStepParam.
+        r"""Sets the energy_minimization_steps of this MdStepParam.
 
         能量最小化的步骤
 
@@ -86,7 +86,7 @@ class MdStepParam:
 
     @property
     def nvt(self):
-        """Gets the nvt of this MdStepParam.
+        r"""Gets the nvt of this MdStepParam.
 
         等温等体步骤模拟的时长，单位ps
 
@@ -97,7 +97,7 @@ class MdStepParam:
 
     @nvt.setter
     def nvt(self, nvt):
-        """Sets the nvt of this MdStepParam.
+        r"""Sets the nvt of this MdStepParam.
 
         等温等体步骤模拟的时长，单位ps
 
@@ -108,7 +108,7 @@ class MdStepParam:
 
     @property
     def npt(self):
-        """Gets the npt of this MdStepParam.
+        r"""Gets the npt of this MdStepParam.
 
         等压等温步骤模拟的时长，单位ps
 
@@ -119,7 +119,7 @@ class MdStepParam:
 
     @npt.setter
     def npt(self, npt):
-        """Sets the npt of this MdStepParam.
+        r"""Sets the npt of this MdStepParam.
 
         等压等温步骤模拟的时长，单位ps
 
@@ -130,7 +130,7 @@ class MdStepParam:
 
     @property
     def simulation_time(self):
-        """Gets the simulation_time of this MdStepParam.
+        r"""Gets the simulation_time of this MdStepParam.
 
         平衡步骤模拟的时长，单位ns
 
@@ -141,7 +141,7 @@ class MdStepParam:
 
     @simulation_time.setter
     def simulation_time(self, simulation_time):
-        """Sets the simulation_time of this MdStepParam.
+        r"""Sets the simulation_time of this MdStepParam.
 
         平衡步骤模拟的时长，单位ns
 

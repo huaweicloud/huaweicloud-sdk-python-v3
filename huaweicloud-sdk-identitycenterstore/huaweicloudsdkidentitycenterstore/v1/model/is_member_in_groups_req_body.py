@@ -27,7 +27,7 @@ class IsMemberInGroupsReqBody:
     }
 
     def __init__(self, group_ids=None, member_id=None):
-        """IsMemberInGroupsReqBody
+        r"""IsMemberInGroupsReqBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class IsMemberInGroupsReqBody:
 
     @property
     def group_ids(self):
-        """Gets the group_ids of this IsMemberInGroupsReqBody.
+        r"""Gets the group_ids of this IsMemberInGroupsReqBody.
 
         用户组标识符列表
 
@@ -59,7 +59,7 @@ class IsMemberInGroupsReqBody:
 
     @group_ids.setter
     def group_ids(self, group_ids):
-        """Sets the group_ids of this IsMemberInGroupsReqBody.
+        r"""Sets the group_ids of this IsMemberInGroupsReqBody.
 
         用户组标识符列表
 
@@ -70,7 +70,7 @@ class IsMemberInGroupsReqBody:
 
     @property
     def member_id(self):
-        """Gets the member_id of this IsMemberInGroupsReqBody.
+        r"""Gets the member_id of this IsMemberInGroupsReqBody.
 
         :return: The member_id of this IsMemberInGroupsReqBody.
         :rtype: :class:`huaweicloudsdkidentitycenterstore.v1.MemberIdDto`
@@ -79,7 +79,7 @@ class IsMemberInGroupsReqBody:
 
     @member_id.setter
     def member_id(self, member_id):
-        """Sets the member_id of this IsMemberInGroupsReqBody.
+        r"""Sets the member_id of this IsMemberInGroupsReqBody.
 
         :param member_id: The member_id of this IsMemberInGroupsReqBody.
         :type member_id: :class:`huaweicloudsdkidentitycenterstore.v1.MemberIdDto`

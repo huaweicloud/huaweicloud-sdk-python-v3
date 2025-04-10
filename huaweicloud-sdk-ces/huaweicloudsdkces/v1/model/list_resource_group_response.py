@@ -28,7 +28,7 @@ class ListResourceGroupResponse(SdkResponse):
     }
 
     def __init__(self, resource_groups=None, meta_data=None):
-        """ListResourceGroupResponse
+        r"""ListResourceGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListResourceGroupResponse(SdkResponse):
 
     @property
     def resource_groups(self):
-        """Gets the resource_groups of this ListResourceGroupResponse.
+        r"""Gets the resource_groups of this ListResourceGroupResponse.
 
         一个或者多个资源分组信息。
 
@@ -62,7 +62,7 @@ class ListResourceGroupResponse(SdkResponse):
 
     @resource_groups.setter
     def resource_groups(self, resource_groups):
-        """Sets the resource_groups of this ListResourceGroupResponse.
+        r"""Sets the resource_groups of this ListResourceGroupResponse.
 
         一个或者多个资源分组信息。
 
@@ -73,7 +73,7 @@ class ListResourceGroupResponse(SdkResponse):
 
     @property
     def meta_data(self):
-        """Gets the meta_data of this ListResourceGroupResponse.
+        r"""Gets the meta_data of this ListResourceGroupResponse.
 
         :return: The meta_data of this ListResourceGroupResponse.
         :rtype: :class:`huaweicloudsdkces.v1.TotalMetaData`
@@ -82,7 +82,7 @@ class ListResourceGroupResponse(SdkResponse):
 
     @meta_data.setter
     def meta_data(self, meta_data):
-        """Sets the meta_data of this ListResourceGroupResponse.
+        r"""Sets the meta_data of this ListResourceGroupResponse.
 
         :param meta_data: The meta_data of this ListResourceGroupResponse.
         :type meta_data: :class:`huaweicloudsdkces.v1.TotalMetaData`

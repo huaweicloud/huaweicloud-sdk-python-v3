@@ -37,7 +37,7 @@ class CustomReportListVo:
     }
 
     def __init__(self, id=None, name=None, filter=None, workpiece_type=None, analysis_dimension=None, compare_dimension=None, chart_data=None):
-        """CustomReportListVo
+        r"""CustomReportListVo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class CustomReportListVo:
 
     @property
     def id(self):
-        """Gets the id of this CustomReportListVo.
+        r"""Gets the id of this CustomReportListVo.
 
         报表id
 
@@ -96,7 +96,7 @@ class CustomReportListVo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CustomReportListVo.
+        r"""Sets the id of this CustomReportListVo.
 
         报表id
 
@@ -107,7 +107,7 @@ class CustomReportListVo:
 
     @property
     def name(self):
-        """Gets the name of this CustomReportListVo.
+        r"""Gets the name of this CustomReportListVo.
 
         报表名称
 
@@ -118,7 +118,7 @@ class CustomReportListVo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CustomReportListVo.
+        r"""Sets the name of this CustomReportListVo.
 
         报表名称
 
@@ -129,7 +129,7 @@ class CustomReportListVo:
 
     @property
     def filter(self):
-        """Gets the filter of this CustomReportListVo.
+        r"""Gets the filter of this CustomReportListVo.
 
         :return: The filter of this CustomReportListVo.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ReportFilter`
@@ -138,7 +138,7 @@ class CustomReportListVo:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this CustomReportListVo.
+        r"""Sets the filter of this CustomReportListVo.
 
         :param filter: The filter of this CustomReportListVo.
         :type filter: :class:`huaweicloudsdkcloudtest.v1.ReportFilter`
@@ -147,7 +147,7 @@ class CustomReportListVo:
 
     @property
     def workpiece_type(self):
-        """Gets the workpiece_type of this CustomReportListVo.
+        r"""Gets the workpiece_type of this CustomReportListVo.
 
         工件类型(用例：case,测试套：task)
 
@@ -158,7 +158,7 @@ class CustomReportListVo:
 
     @workpiece_type.setter
     def workpiece_type(self, workpiece_type):
-        """Sets the workpiece_type of this CustomReportListVo.
+        r"""Sets the workpiece_type of this CustomReportListVo.
 
         工件类型(用例：case,测试套：task)
 
@@ -169,7 +169,7 @@ class CustomReportListVo:
 
     @property
     def analysis_dimension(self):
-        """Gets the analysis_dimension of this CustomReportListVo.
+        r"""Gets the analysis_dimension of this CustomReportListVo.
 
         分析维度
 
@@ -180,7 +180,7 @@ class CustomReportListVo:
 
     @analysis_dimension.setter
     def analysis_dimension(self, analysis_dimension):
-        """Sets the analysis_dimension of this CustomReportListVo.
+        r"""Sets the analysis_dimension of this CustomReportListVo.
 
         分析维度
 
@@ -191,7 +191,7 @@ class CustomReportListVo:
 
     @property
     def compare_dimension(self):
-        """Gets the compare_dimension of this CustomReportListVo.
+        r"""Gets the compare_dimension of this CustomReportListVo.
 
         对比维度
 
@@ -202,7 +202,7 @@ class CustomReportListVo:
 
     @compare_dimension.setter
     def compare_dimension(self, compare_dimension):
-        """Sets the compare_dimension of this CustomReportListVo.
+        r"""Sets the compare_dimension of this CustomReportListVo.
 
         对比维度
 
@@ -213,7 +213,7 @@ class CustomReportListVo:
 
     @property
     def chart_data(self):
-        """Gets the chart_data of this CustomReportListVo.
+        r"""Gets the chart_data of this CustomReportListVo.
 
         报表数据
 
@@ -224,7 +224,7 @@ class CustomReportListVo:
 
     @chart_data.setter
     def chart_data(self, chart_data):
-        """Sets the chart_data of this CustomReportListVo.
+        r"""Sets the chart_data of this CustomReportListVo.
 
         报表数据
 

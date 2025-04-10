@@ -27,7 +27,7 @@ class MountUser:
     }
 
     def __init__(self, user_id=None, user_group_id=None):
-        """MountUser
+        r"""MountUser
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class MountUser:
 
     @property
     def user_id(self):
-        """Gets the user_id of this MountUser.
+        r"""Gets the user_id of this MountUser.
 
         用户ID(-1~65534的非0整数)
 
@@ -59,7 +59,7 @@ class MountUser:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this MountUser.
+        r"""Sets the user_id of this MountUser.
 
         用户ID(-1~65534的非0整数)
 
@@ -70,7 +70,7 @@ class MountUser:
 
     @property
     def user_group_id(self):
-        """Gets the user_group_id of this MountUser.
+        r"""Gets the user_group_id of this MountUser.
 
         用户组ID(-1~65534的非0整数)
 
@@ -81,7 +81,7 @@ class MountUser:
 
     @user_group_id.setter
     def user_group_id(self, user_group_id):
-        """Sets the user_group_id of this MountUser.
+        r"""Sets the user_group_id of this MountUser.
 
         用户组ID(-1~65534的非0整数)
 

@@ -43,7 +43,7 @@ class CreateLoadbalancerReq:
     }
 
     def __init__(self, tenant_id=None, name=None, description=None, vip_subnet_id=None, vip_address=None, provider=None, admin_state_up=None, enterprise_project_id=None, protection_status=None, protection_reason=None):
-        """CreateLoadbalancerReq
+        r"""CreateLoadbalancerReq
 
         The model defined in huaweicloud sdk
 
@@ -105,7 +105,7 @@ class CreateLoadbalancerReq:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this CreateLoadbalancerReq.
+        r"""Gets the tenant_id of this CreateLoadbalancerReq.
 
         负载均衡器所在的项目ID。
 
@@ -116,7 +116,7 @@ class CreateLoadbalancerReq:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this CreateLoadbalancerReq.
+        r"""Sets the tenant_id of this CreateLoadbalancerReq.
 
         负载均衡器所在的项目ID。
 
@@ -127,7 +127,7 @@ class CreateLoadbalancerReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateLoadbalancerReq.
+        r"""Gets the name of this CreateLoadbalancerReq.
 
         负载均衡器名称。
 
@@ -138,7 +138,7 @@ class CreateLoadbalancerReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateLoadbalancerReq.
+        r"""Sets the name of this CreateLoadbalancerReq.
 
         负载均衡器名称。
 
@@ -149,7 +149,7 @@ class CreateLoadbalancerReq:
 
     @property
     def description(self):
-        """Gets the description of this CreateLoadbalancerReq.
+        r"""Gets the description of this CreateLoadbalancerReq.
 
         负载均衡器的描述信息
 
@@ -160,7 +160,7 @@ class CreateLoadbalancerReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateLoadbalancerReq.
+        r"""Sets the description of this CreateLoadbalancerReq.
 
         负载均衡器的描述信息
 
@@ -171,7 +171,7 @@ class CreateLoadbalancerReq:
 
     @property
     def vip_subnet_id(self):
-        """Gets the vip_subnet_id of this CreateLoadbalancerReq.
+        r"""Gets the vip_subnet_id of this CreateLoadbalancerReq.
 
         负载均衡器所在的子网IPv4子网ID
 
@@ -182,7 +182,7 @@ class CreateLoadbalancerReq:
 
     @vip_subnet_id.setter
     def vip_subnet_id(self, vip_subnet_id):
-        """Sets the vip_subnet_id of this CreateLoadbalancerReq.
+        r"""Sets the vip_subnet_id of this CreateLoadbalancerReq.
 
         负载均衡器所在的子网IPv4子网ID
 
@@ -193,7 +193,7 @@ class CreateLoadbalancerReq:
 
     @property
     def vip_address(self):
-        """Gets the vip_address of this CreateLoadbalancerReq.
+        r"""Gets the vip_address of this CreateLoadbalancerReq.
 
         负载均衡器的虚拟IP。
 
@@ -204,7 +204,7 @@ class CreateLoadbalancerReq:
 
     @vip_address.setter
     def vip_address(self, vip_address):
-        """Sets the vip_address of this CreateLoadbalancerReq.
+        r"""Sets the vip_address of this CreateLoadbalancerReq.
 
         负载均衡器的虚拟IP。
 
@@ -215,7 +215,7 @@ class CreateLoadbalancerReq:
 
     @property
     def provider(self):
-        """Gets the provider of this CreateLoadbalancerReq.
+        r"""Gets the provider of this CreateLoadbalancerReq.
 
         负载均衡器的供应者名称。只支持vlb
 
@@ -226,7 +226,7 @@ class CreateLoadbalancerReq:
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this CreateLoadbalancerReq.
+        r"""Sets the provider of this CreateLoadbalancerReq.
 
         负载均衡器的供应者名称。只支持vlb
 
@@ -237,7 +237,7 @@ class CreateLoadbalancerReq:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this CreateLoadbalancerReq.
+        r"""Gets the admin_state_up of this CreateLoadbalancerReq.
 
         负载均衡器的管理状态。只支持设定为true，该字段的值无实际意义。
 
@@ -248,7 +248,7 @@ class CreateLoadbalancerReq:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this CreateLoadbalancerReq.
+        r"""Sets the admin_state_up of this CreateLoadbalancerReq.
 
         负载均衡器的管理状态。只支持设定为true，该字段的值无实际意义。
 
@@ -259,7 +259,7 @@ class CreateLoadbalancerReq:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateLoadbalancerReq.
+        r"""Gets the enterprise_project_id of this CreateLoadbalancerReq.
 
         企业项目ID。创建负载均衡器时，给负载均衡器绑定企业项目ID。取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。 关于企业项目ID的获取及企业项目特性的详细信息，请参见《企业管理用户指南》。
 
@@ -270,7 +270,7 @@ class CreateLoadbalancerReq:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateLoadbalancerReq.
+        r"""Sets the enterprise_project_id of this CreateLoadbalancerReq.
 
         企业项目ID。创建负载均衡器时，给负载均衡器绑定企业项目ID。取值范围：最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。“0”表示默认企业项目。 关于企业项目ID的获取及企业项目特性的详细信息，请参见《企业管理用户指南》。
 
@@ -281,7 +281,7 @@ class CreateLoadbalancerReq:
 
     @property
     def protection_status(self):
-        """Gets the protection_status of this CreateLoadbalancerReq.
+        r"""Gets the protection_status of this CreateLoadbalancerReq.
 
         修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
 
@@ -292,7 +292,7 @@ class CreateLoadbalancerReq:
 
     @protection_status.setter
     def protection_status(self, protection_status):
-        """Sets the protection_status of this CreateLoadbalancerReq.
+        r"""Sets the protection_status of this CreateLoadbalancerReq.
 
         修改保护状态, 取值： - nonProtection: 不保护，默认值为nonProtection - consoleProtection: 控制台修改保护
 
@@ -303,7 +303,7 @@ class CreateLoadbalancerReq:
 
     @property
     def protection_reason(self):
-        """Gets the protection_reason of this CreateLoadbalancerReq.
+        r"""Gets the protection_reason of this CreateLoadbalancerReq.
 
         设置保护的原因 >仅当protection_status为consoleProtection时有效。
 
@@ -314,7 +314,7 @@ class CreateLoadbalancerReq:
 
     @protection_reason.setter
     def protection_reason(self, protection_reason):
-        """Sets the protection_reason of this CreateLoadbalancerReq.
+        r"""Sets the protection_reason of this CreateLoadbalancerReq.
 
         设置保护的原因 >仅当protection_status为consoleProtection时有效。
 

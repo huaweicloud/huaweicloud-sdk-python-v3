@@ -27,7 +27,7 @@ class ListInfluxdbSlowLogsRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """ListInfluxdbSlowLogsRequest
+        r"""ListInfluxdbSlowLogsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListInfluxdbSlowLogsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListInfluxdbSlowLogsRequest.
+        r"""Gets the instance_id of this ListInfluxdbSlowLogsRequest.
 
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
@@ -60,7 +60,7 @@ class ListInfluxdbSlowLogsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListInfluxdbSlowLogsRequest.
+        r"""Sets the instance_id of this ListInfluxdbSlowLogsRequest.
 
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
@@ -71,7 +71,7 @@ class ListInfluxdbSlowLogsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListInfluxdbSlowLogsRequest.
+        r"""Gets the body of this ListInfluxdbSlowLogsRequest.
 
         :return: The body of this ListInfluxdbSlowLogsRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInfluxdbSlowLogsRequestBody`
@@ -80,7 +80,7 @@ class ListInfluxdbSlowLogsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListInfluxdbSlowLogsRequest.
+        r"""Sets the body of this ListInfluxdbSlowLogsRequest.
 
         :param body: The body of this ListInfluxdbSlowLogsRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInfluxdbSlowLogsRequestBody`

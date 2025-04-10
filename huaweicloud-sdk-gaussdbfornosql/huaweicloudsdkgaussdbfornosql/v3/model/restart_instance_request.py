@@ -27,7 +27,7 @@ class RestartInstanceRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """RestartInstanceRequest
+        r"""RestartInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RestartInstanceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this RestartInstanceRequest.
+        r"""Gets the instance_id of this RestartInstanceRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class RestartInstanceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this RestartInstanceRequest.
+        r"""Sets the instance_id of this RestartInstanceRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class RestartInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this RestartInstanceRequest.
+        r"""Gets the body of this RestartInstanceRequest.
 
         :return: The body of this RestartInstanceRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.RestartInstanceRequestBody`
@@ -80,7 +80,7 @@ class RestartInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RestartInstanceRequest.
+        r"""Sets the body of this RestartInstanceRequest.
 
         :param body: The body of this RestartInstanceRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.RestartInstanceRequestBody`

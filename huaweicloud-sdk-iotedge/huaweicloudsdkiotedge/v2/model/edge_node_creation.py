@@ -75,7 +75,7 @@ class EdgeNodeCreation:
     }
 
     def __init__(self, edge_node_id=None, name=None, type=None, verify_code=None, time_out=None, arch=None, os_type=None, instance_id=None, space_id=None, resource_ids=None, security_level=None, reliability_level=None, storage_period=None, ai_card_type=None, npu_library_path=None, base_path=None, log_configs=None, apps=None, network_access_point=None, hardware_model=None, offline_cache_configs=None, device_auth_info=None, device_data_format=None, automatic_upgrade=None, device_data_record=None, metric_report=None):
-        """EdgeNodeCreation
+        r"""EdgeNodeCreation
 
         The model defined in huaweicloud sdk
 
@@ -216,7 +216,7 @@ class EdgeNodeCreation:
 
     @property
     def edge_node_id(self):
-        """Gets the edge_node_id of this EdgeNodeCreation.
+        r"""Gets the edge_node_id of this EdgeNodeCreation.
 
         边缘节点ID
 
@@ -227,7 +227,7 @@ class EdgeNodeCreation:
 
     @edge_node_id.setter
     def edge_node_id(self, edge_node_id):
-        """Sets the edge_node_id of this EdgeNodeCreation.
+        r"""Sets the edge_node_id of this EdgeNodeCreation.
 
         边缘节点ID
 
@@ -238,7 +238,7 @@ class EdgeNodeCreation:
 
     @property
     def name(self):
-        """Gets the name of this EdgeNodeCreation.
+        r"""Gets the name of this EdgeNodeCreation.
 
         边缘节点名称，只允许中、数字、英文大小写、中划线、下划线
 
@@ -249,7 +249,7 @@ class EdgeNodeCreation:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EdgeNodeCreation.
+        r"""Sets the name of this EdgeNodeCreation.
 
         边缘节点名称，只允许中、数字、英文大小写、中划线、下划线
 
@@ -260,7 +260,7 @@ class EdgeNodeCreation:
 
     @property
     def type(self):
-        """Gets the type of this EdgeNodeCreation.
+        r"""Gets the type of this EdgeNodeCreation.
 
         节点所属资源类型：advanced|standard
 
@@ -271,7 +271,7 @@ class EdgeNodeCreation:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this EdgeNodeCreation.
+        r"""Sets the type of this EdgeNodeCreation.
 
         节点所属资源类型：advanced|standard
 
@@ -282,7 +282,7 @@ class EdgeNodeCreation:
 
     @property
     def verify_code(self):
-        """Gets the verify_code of this EdgeNodeCreation.
+        r"""Gets the verify_code of this EdgeNodeCreation.
 
         边缘节点注册使用的验证码，如果不输入则平台随机生成。
 
@@ -293,7 +293,7 @@ class EdgeNodeCreation:
 
     @verify_code.setter
     def verify_code(self, verify_code):
-        """Sets the verify_code of this EdgeNodeCreation.
+        r"""Sets the verify_code of this EdgeNodeCreation.
 
         边缘节点注册使用的验证码，如果不输入则平台随机生成。
 
@@ -304,7 +304,7 @@ class EdgeNodeCreation:
 
     @property
     def time_out(self):
-        """Gets the time_out of this EdgeNodeCreation.
+        r"""Gets the time_out of this EdgeNodeCreation.
 
         验证码的有效时间单位秒，默认1800秒，范围为1~864000，过期后平台会随机生成。
 
@@ -315,7 +315,7 @@ class EdgeNodeCreation:
 
     @time_out.setter
     def time_out(self, time_out):
-        """Sets the time_out of this EdgeNodeCreation.
+        r"""Sets the time_out of this EdgeNodeCreation.
 
         验证码的有效时间单位秒，默认1800秒，范围为1~864000，过期后平台会随机生成。
 
@@ -326,7 +326,7 @@ class EdgeNodeCreation:
 
     @property
     def arch(self):
-        """Gets the arch of this EdgeNodeCreation.
+        r"""Gets the arch of this EdgeNodeCreation.
 
         系统架构。包括：arm64，arm32，x86_64。
 
@@ -337,7 +337,7 @@ class EdgeNodeCreation:
 
     @arch.setter
     def arch(self, arch):
-        """Sets the arch of this EdgeNodeCreation.
+        r"""Sets the arch of this EdgeNodeCreation.
 
         系统架构。包括：arm64，arm32，x86_64。
 
@@ -348,7 +348,7 @@ class EdgeNodeCreation:
 
     @property
     def os_type(self):
-        """Gets the os_type of this EdgeNodeCreation.
+        r"""Gets the os_type of this EdgeNodeCreation.
 
         系统类型。包括：generalLinux通用系统，openHarmony。
 
@@ -359,7 +359,7 @@ class EdgeNodeCreation:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this EdgeNodeCreation.
+        r"""Sets the os_type of this EdgeNodeCreation.
 
         系统类型。包括：generalLinux通用系统，openHarmony。
 
@@ -370,7 +370,7 @@ class EdgeNodeCreation:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this EdgeNodeCreation.
+        r"""Gets the instance_id of this EdgeNodeCreation.
 
         实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
@@ -381,7 +381,7 @@ class EdgeNodeCreation:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this EdgeNodeCreation.
+        r"""Sets the instance_id of this EdgeNodeCreation.
 
         实例ID。物理多租下各实例的唯一标识，一般华为云租户无需携带该参数，仅在物理多租场景下从管理面访问API时需要携带该参数。
 
@@ -392,7 +392,7 @@ class EdgeNodeCreation:
 
     @property
     def space_id(self):
-        """Gets the space_id of this EdgeNodeCreation.
+        r"""Gets the space_id of this EdgeNodeCreation.
 
         资源空间id，对应IOTDA云服务接口参数中的app_id。
 
@@ -403,7 +403,7 @@ class EdgeNodeCreation:
 
     @space_id.setter
     def space_id(self, space_id):
-        """Sets the space_id of this EdgeNodeCreation.
+        r"""Sets the space_id of this EdgeNodeCreation.
 
         资源空间id，对应IOTDA云服务接口参数中的app_id。
 
@@ -414,7 +414,7 @@ class EdgeNodeCreation:
 
     @property
     def resource_ids(self):
-        """Gets the resource_ids of this EdgeNodeCreation.
+        r"""Gets the resource_ids of this EdgeNodeCreation.
 
         资源id列表，创建节点时需绑定已购买的资源包，资源可叠加。
 
@@ -425,7 +425,7 @@ class EdgeNodeCreation:
 
     @resource_ids.setter
     def resource_ids(self, resource_ids):
-        """Sets the resource_ids of this EdgeNodeCreation.
+        r"""Sets the resource_ids of this EdgeNodeCreation.
 
         资源id列表，创建节点时需绑定已购买的资源包，资源可叠加。
 
@@ -436,7 +436,7 @@ class EdgeNodeCreation:
 
     @property
     def security_level(self):
-        """Gets the security_level of this EdgeNodeCreation.
+        r"""Gets the security_level of this EdgeNodeCreation.
 
         节点的安全等级，MEDIUM表示本地明文存储，HIGH表示本地加密存储。
 
@@ -447,7 +447,7 @@ class EdgeNodeCreation:
 
     @security_level.setter
     def security_level(self, security_level):
-        """Sets the security_level of this EdgeNodeCreation.
+        r"""Sets the security_level of this EdgeNodeCreation.
 
         节点的安全等级，MEDIUM表示本地明文存储，HIGH表示本地加密存储。
 
@@ -458,7 +458,7 @@ class EdgeNodeCreation:
 
     @property
     def reliability_level(self):
-        """Gets the reliability_level of this EdgeNodeCreation.
+        r"""Gets the reliability_level of this EdgeNodeCreation.
 
         节点的可靠性等级。
 
@@ -469,7 +469,7 @@ class EdgeNodeCreation:
 
     @reliability_level.setter
     def reliability_level(self, reliability_level):
-        """Sets the reliability_level of this EdgeNodeCreation.
+        r"""Sets the reliability_level of this EdgeNodeCreation.
 
         节点的可靠性等级。
 
@@ -480,7 +480,7 @@ class EdgeNodeCreation:
 
     @property
     def storage_period(self):
-        """Gets the storage_period of this EdgeNodeCreation.
+        r"""Gets the storage_period of this EdgeNodeCreation.
 
         节点的存储周期，默认0天，取值范围0~7天，0天则不存储。
 
@@ -491,7 +491,7 @@ class EdgeNodeCreation:
 
     @storage_period.setter
     def storage_period(self, storage_period):
-        """Sets the storage_period of this EdgeNodeCreation.
+        r"""Sets the storage_period of this EdgeNodeCreation.
 
         节点的存储周期，默认0天，取值范围0~7天，0天则不存储。
 
@@ -502,7 +502,7 @@ class EdgeNodeCreation:
 
     @property
     def ai_card_type(self):
-        """Gets the ai_card_type of this EdgeNodeCreation.
+        r"""Gets the ai_card_type of this EdgeNodeCreation.
 
         AI加速卡类型，如华为昇腾AI加速卡NPU、图像处理加速卡GPU。
 
@@ -513,7 +513,7 @@ class EdgeNodeCreation:
 
     @ai_card_type.setter
     def ai_card_type(self, ai_card_type):
-        """Sets the ai_card_type of this EdgeNodeCreation.
+        r"""Sets the ai_card_type of this EdgeNodeCreation.
 
         AI加速卡类型，如华为昇腾AI加速卡NPU、图像处理加速卡GPU。
 
@@ -524,7 +524,7 @@ class EdgeNodeCreation:
 
     @property
     def npu_library_path(self):
-        """Gets the npu_library_path of this EdgeNodeCreation.
+        r"""Gets the npu_library_path of this EdgeNodeCreation.
 
         npu驱动动态库路径
 
@@ -535,7 +535,7 @@ class EdgeNodeCreation:
 
     @npu_library_path.setter
     def npu_library_path(self, npu_library_path):
-        """Sets the npu_library_path of this EdgeNodeCreation.
+        r"""Sets the npu_library_path of this EdgeNodeCreation.
 
         npu驱动动态库路径
 
@@ -546,7 +546,7 @@ class EdgeNodeCreation:
 
     @property
     def base_path(self):
-        """Gets the base_path of this EdgeNodeCreation.
+        r"""Gets the base_path of this EdgeNodeCreation.
 
         :return: The base_path of this EdgeNodeCreation.
         :rtype: :class:`huaweicloudsdkiotedge.v2.BasePathDTO`
@@ -555,7 +555,7 @@ class EdgeNodeCreation:
 
     @base_path.setter
     def base_path(self, base_path):
-        """Sets the base_path of this EdgeNodeCreation.
+        r"""Sets the base_path of this EdgeNodeCreation.
 
         :param base_path: The base_path of this EdgeNodeCreation.
         :type base_path: :class:`huaweicloudsdkiotedge.v2.BasePathDTO`
@@ -564,7 +564,7 @@ class EdgeNodeCreation:
 
     @property
     def log_configs(self):
-        """Gets the log_configs of this EdgeNodeCreation.
+        r"""Gets the log_configs of this EdgeNodeCreation.
 
         边缘节点在IEF日志配置参数，仅高级版支持。
 
@@ -575,7 +575,7 @@ class EdgeNodeCreation:
 
     @log_configs.setter
     def log_configs(self, log_configs):
-        """Sets the log_configs of this EdgeNodeCreation.
+        r"""Sets the log_configs of this EdgeNodeCreation.
 
         边缘节点在IEF日志配置参数，仅高级版支持。
 
@@ -586,7 +586,7 @@ class EdgeNodeCreation:
 
     @property
     def apps(self):
-        """Gets the apps of this EdgeNodeCreation.
+        r"""Gets the apps of this EdgeNodeCreation.
 
         用户预置第三方边缘应用
 
@@ -597,7 +597,7 @@ class EdgeNodeCreation:
 
     @apps.setter
     def apps(self, apps):
-        """Sets the apps of this EdgeNodeCreation.
+        r"""Sets the apps of this EdgeNodeCreation.
 
         用户预置第三方边缘应用
 
@@ -608,7 +608,7 @@ class EdgeNodeCreation:
 
     @property
     def network_access_point(self):
-        """Gets the network_access_point of this EdgeNodeCreation.
+        r"""Gets the network_access_point of this EdgeNodeCreation.
 
         网络接入方式类型
 
@@ -619,7 +619,7 @@ class EdgeNodeCreation:
 
     @network_access_point.setter
     def network_access_point(self, network_access_point):
-        """Sets the network_access_point of this EdgeNodeCreation.
+        r"""Sets the network_access_point of this EdgeNodeCreation.
 
         网络接入方式类型
 
@@ -630,7 +630,7 @@ class EdgeNodeCreation:
 
     @property
     def hardware_model(self):
-        """Gets the hardware_model of this EdgeNodeCreation.
+        r"""Gets the hardware_model of this EdgeNodeCreation.
 
         网关型号
 
@@ -641,7 +641,7 @@ class EdgeNodeCreation:
 
     @hardware_model.setter
     def hardware_model(self, hardware_model):
-        """Sets the hardware_model of this EdgeNodeCreation.
+        r"""Sets the hardware_model of this EdgeNodeCreation.
 
         网关型号
 
@@ -652,7 +652,7 @@ class EdgeNodeCreation:
 
     @property
     def offline_cache_configs(self):
-        """Gets the offline_cache_configs of this EdgeNodeCreation.
+        r"""Gets the offline_cache_configs of this EdgeNodeCreation.
 
         :return: The offline_cache_configs of this EdgeNodeCreation.
         :rtype: :class:`huaweicloudsdkiotedge.v2.OfflineCacheConfigsDTO`
@@ -661,7 +661,7 @@ class EdgeNodeCreation:
 
     @offline_cache_configs.setter
     def offline_cache_configs(self, offline_cache_configs):
-        """Sets the offline_cache_configs of this EdgeNodeCreation.
+        r"""Sets the offline_cache_configs of this EdgeNodeCreation.
 
         :param offline_cache_configs: The offline_cache_configs of this EdgeNodeCreation.
         :type offline_cache_configs: :class:`huaweicloudsdkiotedge.v2.OfflineCacheConfigsDTO`
@@ -670,7 +670,7 @@ class EdgeNodeCreation:
 
     @property
     def device_auth_info(self):
-        """Gets the device_auth_info of this EdgeNodeCreation.
+        r"""Gets the device_auth_info of this EdgeNodeCreation.
 
         :return: The device_auth_info of this EdgeNodeCreation.
         :rtype: :class:`huaweicloudsdkiotedge.v2.DeviceAuthInfoDTO`
@@ -679,7 +679,7 @@ class EdgeNodeCreation:
 
     @device_auth_info.setter
     def device_auth_info(self, device_auth_info):
-        """Sets the device_auth_info of this EdgeNodeCreation.
+        r"""Sets the device_auth_info of this EdgeNodeCreation.
 
         :param device_auth_info: The device_auth_info of this EdgeNodeCreation.
         :type device_auth_info: :class:`huaweicloudsdkiotedge.v2.DeviceAuthInfoDTO`
@@ -688,7 +688,7 @@ class EdgeNodeCreation:
 
     @property
     def device_data_format(self):
-        """Gets the device_data_format of this EdgeNodeCreation.
+        r"""Gets the device_data_format of this EdgeNodeCreation.
 
         节点使用的数据格式，默认为iotda物模型1.0格式，可以选择属性平铺数据格式flat_json
 
@@ -699,7 +699,7 @@ class EdgeNodeCreation:
 
     @device_data_format.setter
     def device_data_format(self, device_data_format):
-        """Sets the device_data_format of this EdgeNodeCreation.
+        r"""Sets the device_data_format of this EdgeNodeCreation.
 
         节点使用的数据格式，默认为iotda物模型1.0格式，可以选择属性平铺数据格式flat_json
 
@@ -710,7 +710,7 @@ class EdgeNodeCreation:
 
     @property
     def automatic_upgrade(self):
-        """Gets the automatic_upgrade of this EdgeNodeCreation.
+        r"""Gets the automatic_upgrade of this EdgeNodeCreation.
 
         自动升级系统应用的节点开关，默认为关闭：OFF，IMMEDIATE表示节点开关打开
 
@@ -721,7 +721,7 @@ class EdgeNodeCreation:
 
     @automatic_upgrade.setter
     def automatic_upgrade(self, automatic_upgrade):
-        """Sets the automatic_upgrade of this EdgeNodeCreation.
+        r"""Sets the automatic_upgrade of this EdgeNodeCreation.
 
         自动升级系统应用的节点开关，默认为关闭：OFF，IMMEDIATE表示节点开关打开
 
@@ -732,7 +732,7 @@ class EdgeNodeCreation:
 
     @property
     def device_data_record(self):
-        """Gets the device_data_record of this EdgeNodeCreation.
+        r"""Gets the device_data_record of this EdgeNodeCreation.
 
         :return: The device_data_record of this EdgeNodeCreation.
         :rtype: :class:`huaweicloudsdkiotedge.v2.DeviceDataRecord`
@@ -741,7 +741,7 @@ class EdgeNodeCreation:
 
     @device_data_record.setter
     def device_data_record(self, device_data_record):
-        """Sets the device_data_record of this EdgeNodeCreation.
+        r"""Sets the device_data_record of this EdgeNodeCreation.
 
         :param device_data_record: The device_data_record of this EdgeNodeCreation.
         :type device_data_record: :class:`huaweicloudsdkiotedge.v2.DeviceDataRecord`
@@ -750,7 +750,7 @@ class EdgeNodeCreation:
 
     @property
     def metric_report(self):
-        """Gets the metric_report of this EdgeNodeCreation.
+        r"""Gets the metric_report of this EdgeNodeCreation.
 
         omagent监控运维工具是否上报指标
 
@@ -761,7 +761,7 @@ class EdgeNodeCreation:
 
     @metric_report.setter
     def metric_report(self, metric_report):
-        """Sets the metric_report of this EdgeNodeCreation.
+        r"""Sets the metric_report of this EdgeNodeCreation.
 
         omagent监控运维工具是否上报指标
 

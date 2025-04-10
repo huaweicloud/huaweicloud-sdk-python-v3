@@ -29,7 +29,7 @@ class CreateAppCodeV2Request:
     }
 
     def __init__(self, instance_id=None, app_id=None, body=None):
-        """CreateAppCodeV2Request
+        r"""CreateAppCodeV2Request
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateAppCodeV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateAppCodeV2Request.
+        r"""Gets the instance_id of this CreateAppCodeV2Request.
 
         实例ID
 
@@ -66,7 +66,7 @@ class CreateAppCodeV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateAppCodeV2Request.
+        r"""Sets the instance_id of this CreateAppCodeV2Request.
 
         实例ID
 
@@ -77,7 +77,7 @@ class CreateAppCodeV2Request:
 
     @property
     def app_id(self):
-        """Gets the app_id of this CreateAppCodeV2Request.
+        r"""Gets the app_id of this CreateAppCodeV2Request.
 
         应用编号
 
@@ -88,7 +88,7 @@ class CreateAppCodeV2Request:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this CreateAppCodeV2Request.
+        r"""Sets the app_id of this CreateAppCodeV2Request.
 
         应用编号
 
@@ -99,7 +99,7 @@ class CreateAppCodeV2Request:
 
     @property
     def body(self):
-        """Gets the body of this CreateAppCodeV2Request.
+        r"""Gets the body of this CreateAppCodeV2Request.
 
         :return: The body of this CreateAppCodeV2Request.
         :rtype: :class:`huaweicloudsdkroma.v2.AppCodeCreate`
@@ -108,7 +108,7 @@ class CreateAppCodeV2Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAppCodeV2Request.
+        r"""Sets the body of this CreateAppCodeV2Request.
 
         :param body: The body of this CreateAppCodeV2Request.
         :type body: :class:`huaweicloudsdkroma.v2.AppCodeCreate`

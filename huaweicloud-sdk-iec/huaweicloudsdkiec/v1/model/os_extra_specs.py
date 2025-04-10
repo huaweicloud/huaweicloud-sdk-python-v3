@@ -45,7 +45,7 @@ class OsExtraSpecs:
     }
 
     def __init__(self, condoperationstatus=None, ecsgeneration=None, ecsperformancetype=None, ecsvirtualization_env_types=None, infocpuname=None, infogpuname=None, pci_passthroughalias=None, pci_passthroughenable_gpu=None, pci_passthroughgpu_specs=None, resource_type=None, condnetwork=None):
-        """OsExtraSpecs
+        r"""OsExtraSpecs
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class OsExtraSpecs:
 
     @property
     def condoperationstatus(self):
-        """Gets the condoperationstatus of this OsExtraSpecs.
+        r"""Gets the condoperationstatus of this OsExtraSpecs.
 
         此参数是Region级配置，某个AZ没有在cond:operation:az参数中配置时默认使用此参数的取值。不配置或无此参数时等同于“normal”。
 
@@ -124,7 +124,7 @@ class OsExtraSpecs:
 
     @condoperationstatus.setter
     def condoperationstatus(self, condoperationstatus):
-        """Sets the condoperationstatus of this OsExtraSpecs.
+        r"""Sets the condoperationstatus of this OsExtraSpecs.
 
         此参数是Region级配置，某个AZ没有在cond:operation:az参数中配置时默认使用此参数的取值。不配置或无此参数时等同于“normal”。
 
@@ -135,7 +135,7 @@ class OsExtraSpecs:
 
     @property
     def ecsgeneration(self):
-        """Gets the ecsgeneration of this OsExtraSpecs.
+        r"""Gets the ecsgeneration of this OsExtraSpecs.
 
         边缘实例类型的代数。
 
@@ -146,7 +146,7 @@ class OsExtraSpecs:
 
     @ecsgeneration.setter
     def ecsgeneration(self, ecsgeneration):
-        """Sets the ecsgeneration of this OsExtraSpecs.
+        r"""Sets the ecsgeneration of this OsExtraSpecs.
 
         边缘实例类型的代数。
 
@@ -157,7 +157,7 @@ class OsExtraSpecs:
 
     @property
     def ecsperformancetype(self):
-        """Gets the ecsperformancetype of this OsExtraSpecs.
+        r"""Gets the ecsperformancetype of this OsExtraSpecs.
 
         边缘实例规格的分类。
 
@@ -168,7 +168,7 @@ class OsExtraSpecs:
 
     @ecsperformancetype.setter
     def ecsperformancetype(self, ecsperformancetype):
-        """Sets the ecsperformancetype of this OsExtraSpecs.
+        r"""Sets the ecsperformancetype of this OsExtraSpecs.
 
         边缘实例规格的分类。
 
@@ -179,7 +179,7 @@ class OsExtraSpecs:
 
     @property
     def ecsvirtualization_env_types(self):
-        """Gets the ecsvirtualization_env_types of this OsExtraSpecs.
+        r"""Gets the ecsvirtualization_env_types of this OsExtraSpecs.
 
         虚拟化类型。
 
@@ -190,7 +190,7 @@ class OsExtraSpecs:
 
     @ecsvirtualization_env_types.setter
     def ecsvirtualization_env_types(self, ecsvirtualization_env_types):
-        """Sets the ecsvirtualization_env_types of this OsExtraSpecs.
+        r"""Sets the ecsvirtualization_env_types of this OsExtraSpecs.
 
         虚拟化类型。
 
@@ -201,7 +201,7 @@ class OsExtraSpecs:
 
     @property
     def infocpuname(self):
-        """Gets the infocpuname of this OsExtraSpecs.
+        r"""Gets the infocpuname of this OsExtraSpecs.
 
         此参数是规格的CPU详细信息。
 
@@ -212,7 +212,7 @@ class OsExtraSpecs:
 
     @infocpuname.setter
     def infocpuname(self, infocpuname):
-        """Sets the infocpuname of this OsExtraSpecs.
+        r"""Sets the infocpuname of this OsExtraSpecs.
 
         此参数是规格的CPU详细信息。
 
@@ -223,7 +223,7 @@ class OsExtraSpecs:
 
     @property
     def infogpuname(self):
-        """Gets the infogpuname of this OsExtraSpecs.
+        r"""Gets the infogpuname of this OsExtraSpecs.
 
         此参数是规格的GPU详细信息。
 
@@ -234,7 +234,7 @@ class OsExtraSpecs:
 
     @infogpuname.setter
     def infogpuname(self, infogpuname):
-        """Sets the infogpuname of this OsExtraSpecs.
+        r"""Sets the infogpuname of this OsExtraSpecs.
 
         此参数是规格的GPU详细信息。
 
@@ -245,7 +245,7 @@ class OsExtraSpecs:
 
     @property
     def pci_passthroughalias(self):
-        """Gets the pci_passthroughalias of this OsExtraSpecs.
+        r"""Gets the pci_passthroughalias of this OsExtraSpecs.
 
         P1型本地直通GPU的型号和数量，参数值可设置为“nvidia-p100:1”，表示使用该规格创建的边缘实例将占用1张NVIDIA P100显卡。
 
@@ -256,7 +256,7 @@ class OsExtraSpecs:
 
     @pci_passthroughalias.setter
     def pci_passthroughalias(self, pci_passthroughalias):
-        """Sets the pci_passthroughalias of this OsExtraSpecs.
+        r"""Sets the pci_passthroughalias of this OsExtraSpecs.
 
         P1型本地直通GPU的型号和数量，参数值可设置为“nvidia-p100:1”，表示使用该规格创建的边缘实例将占用1张NVIDIA P100显卡。
 
@@ -267,7 +267,7 @@ class OsExtraSpecs:
 
     @property
     def pci_passthroughenable_gpu(self):
-        """Gets the pci_passthroughenable_gpu of this OsExtraSpecs.
+        r"""Gets the pci_passthroughenable_gpu of this OsExtraSpecs.
 
         显卡是否直通。 值为“true”，表示GPU直通。
 
@@ -278,7 +278,7 @@ class OsExtraSpecs:
 
     @pci_passthroughenable_gpu.setter
     def pci_passthroughenable_gpu(self, pci_passthroughenable_gpu):
-        """Sets the pci_passthroughenable_gpu of this OsExtraSpecs.
+        r"""Sets the pci_passthroughenable_gpu of this OsExtraSpecs.
 
         显卡是否直通。 值为“true”，表示GPU直通。
 
@@ -289,7 +289,7 @@ class OsExtraSpecs:
 
     @property
     def pci_passthroughgpu_specs(self):
-        """Gets the pci_passthroughgpu_specs of this OsExtraSpecs.
+        r"""Gets the pci_passthroughgpu_specs of this OsExtraSpecs.
 
         G1型和G2型边缘实例应用的技术，包括GPU虚拟化和GPU直通。
 
@@ -300,7 +300,7 @@ class OsExtraSpecs:
 
     @pci_passthroughgpu_specs.setter
     def pci_passthroughgpu_specs(self, pci_passthroughgpu_specs):
-        """Sets the pci_passthroughgpu_specs of this OsExtraSpecs.
+        r"""Sets the pci_passthroughgpu_specs of this OsExtraSpecs.
 
         G1型和G2型边缘实例应用的技术，包括GPU虚拟化和GPU直通。
 
@@ -311,7 +311,7 @@ class OsExtraSpecs:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this OsExtraSpecs.
+        r"""Gets the resource_type of this OsExtraSpecs.
 
         资源类型，resource_type是为了区分边缘实例的物理主机类型。
 
@@ -322,7 +322,7 @@ class OsExtraSpecs:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this OsExtraSpecs.
+        r"""Sets the resource_type of this OsExtraSpecs.
 
         资源类型，resource_type是为了区分边缘实例的物理主机类型。
 
@@ -333,7 +333,7 @@ class OsExtraSpecs:
 
     @property
     def condnetwork(self):
-        """Gets the condnetwork of this OsExtraSpecs.
+        r"""Gets the condnetwork of this OsExtraSpecs.
 
         网络约束  支持网络特性，不配置时以控制台默认配置为准。
 
@@ -344,7 +344,7 @@ class OsExtraSpecs:
 
     @condnetwork.setter
     def condnetwork(self, condnetwork):
-        """Sets the condnetwork of this OsExtraSpecs.
+        r"""Sets the condnetwork of this OsExtraSpecs.
 
         网络约束  支持网络特性，不配置时以控制台默认配置为准。
 

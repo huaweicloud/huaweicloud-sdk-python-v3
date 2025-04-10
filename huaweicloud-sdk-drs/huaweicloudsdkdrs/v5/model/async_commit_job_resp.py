@@ -29,7 +29,7 @@ class AsyncCommitJobResp:
     }
 
     def __init__(self, async_job_id=None, status=None, msg=None):
-        """AsyncCommitJobResp
+        r"""AsyncCommitJobResp
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class AsyncCommitJobResp:
 
     @property
     def async_job_id(self):
-        """Gets the async_job_id of this AsyncCommitJobResp.
+        r"""Gets the async_job_id of this AsyncCommitJobResp.
 
         批量异步任务ID。
 
@@ -65,7 +65,7 @@ class AsyncCommitJobResp:
 
     @async_job_id.setter
     def async_job_id(self, async_job_id):
-        """Sets the async_job_id of this AsyncCommitJobResp.
+        r"""Sets the async_job_id of this AsyncCommitJobResp.
 
         批量异步任务ID。
 
@@ -76,7 +76,7 @@ class AsyncCommitJobResp:
 
     @property
     def status(self):
-        """Gets the status of this AsyncCommitJobResp.
+        r"""Gets the status of this AsyncCommitJobResp.
 
         批量异步任务状态。
 
@@ -87,7 +87,7 @@ class AsyncCommitJobResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AsyncCommitJobResp.
+        r"""Sets the status of this AsyncCommitJobResp.
 
         批量异步任务状态。
 
@@ -98,7 +98,7 @@ class AsyncCommitJobResp:
 
     @property
     def msg(self):
-        """Gets the msg of this AsyncCommitJobResp.
+        r"""Gets the msg of this AsyncCommitJobResp.
 
         提交指定ID批量异步任务结果信息。
 
@@ -109,7 +109,7 @@ class AsyncCommitJobResp:
 
     @msg.setter
     def msg(self, msg):
-        """Sets the msg of this AsyncCommitJobResp.
+        r"""Sets the msg of this AsyncCommitJobResp.
 
         提交指定ID批量异步任务结果信息。
 

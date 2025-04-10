@@ -44,7 +44,7 @@ class UpdateLakeFormationInstanceResponse(SdkResponse):
     }
 
     def __init__(self, instance_id=None, name=None, description=None, enterprise_project_id=None, shared=None, default_instance=None, create_time=None, update_time=None, status=None, in_recycle_bin=None):
-        """UpdateLakeFormationInstanceResponse
+        r"""UpdateLakeFormationInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class UpdateLakeFormationInstanceResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateLakeFormationInstanceResponse.
+        r"""Gets the instance_id of this UpdateLakeFormationInstanceResponse.
 
         LakeFormation实例ID。
 
@@ -118,7 +118,7 @@ class UpdateLakeFormationInstanceResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateLakeFormationInstanceResponse.
+        r"""Sets the instance_id of this UpdateLakeFormationInstanceResponse.
 
         LakeFormation实例ID。
 
@@ -129,7 +129,7 @@ class UpdateLakeFormationInstanceResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateLakeFormationInstanceResponse.
+        r"""Gets the name of this UpdateLakeFormationInstanceResponse.
 
         实例名称。
 
@@ -140,7 +140,7 @@ class UpdateLakeFormationInstanceResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateLakeFormationInstanceResponse.
+        r"""Sets the name of this UpdateLakeFormationInstanceResponse.
 
         实例名称。
 
@@ -151,7 +151,7 @@ class UpdateLakeFormationInstanceResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdateLakeFormationInstanceResponse.
+        r"""Gets the description of this UpdateLakeFormationInstanceResponse.
 
         描述。
 
@@ -162,7 +162,7 @@ class UpdateLakeFormationInstanceResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateLakeFormationInstanceResponse.
+        r"""Sets the description of this UpdateLakeFormationInstanceResponse.
 
         描述。
 
@@ -173,7 +173,7 @@ class UpdateLakeFormationInstanceResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this UpdateLakeFormationInstanceResponse.
+        r"""Gets the enterprise_project_id of this UpdateLakeFormationInstanceResponse.
 
         企业项目ID。
 
@@ -184,7 +184,7 @@ class UpdateLakeFormationInstanceResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this UpdateLakeFormationInstanceResponse.
+        r"""Sets the enterprise_project_id of this UpdateLakeFormationInstanceResponse.
 
         企业项目ID。
 
@@ -195,7 +195,7 @@ class UpdateLakeFormationInstanceResponse(SdkResponse):
 
     @property
     def shared(self):
-        """Gets the shared of this UpdateLakeFormationInstanceResponse.
+        r"""Gets the shared of this UpdateLakeFormationInstanceResponse.
 
         逻辑多租和物理多租的判断。false为物理多租；true为逻辑多租。
 
@@ -206,7 +206,7 @@ class UpdateLakeFormationInstanceResponse(SdkResponse):
 
     @shared.setter
     def shared(self, shared):
-        """Sets the shared of this UpdateLakeFormationInstanceResponse.
+        r"""Sets the shared of this UpdateLakeFormationInstanceResponse.
 
         逻辑多租和物理多租的判断。false为物理多租；true为逻辑多租。
 
@@ -217,7 +217,7 @@ class UpdateLakeFormationInstanceResponse(SdkResponse):
 
     @property
     def default_instance(self):
-        """Gets the default_instance of this UpdateLakeFormationInstanceResponse.
+        r"""Gets the default_instance of this UpdateLakeFormationInstanceResponse.
 
         是否为默认实例
 
@@ -228,7 +228,7 @@ class UpdateLakeFormationInstanceResponse(SdkResponse):
 
     @default_instance.setter
     def default_instance(self, default_instance):
-        """Sets the default_instance of this UpdateLakeFormationInstanceResponse.
+        r"""Sets the default_instance of this UpdateLakeFormationInstanceResponse.
 
         是否为默认实例
 
@@ -239,7 +239,7 @@ class UpdateLakeFormationInstanceResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this UpdateLakeFormationInstanceResponse.
+        r"""Gets the create_time of this UpdateLakeFormationInstanceResponse.
 
         实例创建时间戳
 
@@ -250,7 +250,7 @@ class UpdateLakeFormationInstanceResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this UpdateLakeFormationInstanceResponse.
+        r"""Sets the create_time of this UpdateLakeFormationInstanceResponse.
 
         实例创建时间戳
 
@@ -261,7 +261,7 @@ class UpdateLakeFormationInstanceResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this UpdateLakeFormationInstanceResponse.
+        r"""Gets the update_time of this UpdateLakeFormationInstanceResponse.
 
         实例更新时间戳
 
@@ -272,7 +272,7 @@ class UpdateLakeFormationInstanceResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this UpdateLakeFormationInstanceResponse.
+        r"""Sets the update_time of this UpdateLakeFormationInstanceResponse.
 
         实例更新时间戳
 
@@ -283,7 +283,7 @@ class UpdateLakeFormationInstanceResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateLakeFormationInstanceResponse.
+        r"""Gets the status of this UpdateLakeFormationInstanceResponse.
 
         实例状态,RESOURCE_PREPARATION-实例资源准备中,RUNNING-实例运行中,RESOURCE_RELEASE-实例资源释放中,DELETED-实例已释放,RESOURCE_PREPARATION_FAIL-实例资源准备失败,FROZEN_RELEASABLE-可恢复冻结,FROZEN_UNRELEASABLE-不可恢复冻结,RECOVERING-恢复中,DELETING-删除中,SCALING-扩容中,SCALE_FAIL-扩容失败
 
@@ -294,7 +294,7 @@ class UpdateLakeFormationInstanceResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateLakeFormationInstanceResponse.
+        r"""Sets the status of this UpdateLakeFormationInstanceResponse.
 
         实例状态,RESOURCE_PREPARATION-实例资源准备中,RUNNING-实例运行中,RESOURCE_RELEASE-实例资源释放中,DELETED-实例已释放,RESOURCE_PREPARATION_FAIL-实例资源准备失败,FROZEN_RELEASABLE-可恢复冻结,FROZEN_UNRELEASABLE-不可恢复冻结,RECOVERING-恢复中,DELETING-删除中,SCALING-扩容中,SCALE_FAIL-扩容失败
 
@@ -305,7 +305,7 @@ class UpdateLakeFormationInstanceResponse(SdkResponse):
 
     @property
     def in_recycle_bin(self):
-        """Gets the in_recycle_bin of this UpdateLakeFormationInstanceResponse.
+        r"""Gets the in_recycle_bin of this UpdateLakeFormationInstanceResponse.
 
         是否在回收站
 
@@ -316,7 +316,7 @@ class UpdateLakeFormationInstanceResponse(SdkResponse):
 
     @in_recycle_bin.setter
     def in_recycle_bin(self, in_recycle_bin):
-        """Sets the in_recycle_bin of this UpdateLakeFormationInstanceResponse.
+        r"""Sets the in_recycle_bin of this UpdateLakeFormationInstanceResponse.
 
         是否在回收站
 

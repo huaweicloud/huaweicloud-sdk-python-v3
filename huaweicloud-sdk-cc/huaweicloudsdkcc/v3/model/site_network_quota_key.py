@@ -25,7 +25,7 @@ class SiteNetworkQuotaKey:
     }
 
     def __init__(self, quota_key=None):
-        """SiteNetworkQuotaKey
+        r"""SiteNetworkQuotaKey
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SiteNetworkQuotaKey:
 
     @property
     def quota_key(self):
-        """Gets the quota_key of this SiteNetworkQuotaKey.
+        r"""Gets the quota_key of this SiteNetworkQuotaKey.
 
         :return: The quota_key of this SiteNetworkQuotaKey.
         :rtype: :class:`huaweicloudsdkcc.v3.SiteNetworkQuotaKeyEnum`
@@ -51,7 +51,7 @@ class SiteNetworkQuotaKey:
 
     @quota_key.setter
     def quota_key(self, quota_key):
-        """Sets the quota_key of this SiteNetworkQuotaKey.
+        r"""Sets the quota_key of this SiteNetworkQuotaKey.
 
         :param quota_key: The quota_key of this SiteNetworkQuotaKey.
         :type quota_key: :class:`huaweicloudsdkcc.v3.SiteNetworkQuotaKeyEnum`

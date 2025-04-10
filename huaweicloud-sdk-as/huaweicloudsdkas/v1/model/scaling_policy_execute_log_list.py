@@ -53,7 +53,7 @@ class ScalingPolicyExecuteLogList:
     }
 
     def __init__(self, status=None, failed_reason=None, execute_type=None, execute_time=None, id=None, tenant_id=None, scaling_policy_id=None, scaling_resource_type=None, scaling_resource_id=None, old_value=None, desire_value=None, limit_value=None, type=None, job_records=None, meta_data=None):
-        """ScalingPolicyExecuteLogList
+        r"""ScalingPolicyExecuteLogList
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class ScalingPolicyExecuteLogList:
 
     @property
     def status(self):
-        """Gets the status of this ScalingPolicyExecuteLogList.
+        r"""Gets the status of this ScalingPolicyExecuteLogList.
 
         策略执行状态：SUCCESS：成功。FAIL：失败。EXECUTING：执行中
 
@@ -152,7 +152,7 @@ class ScalingPolicyExecuteLogList:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ScalingPolicyExecuteLogList.
+        r"""Sets the status of this ScalingPolicyExecuteLogList.
 
         策略执行状态：SUCCESS：成功。FAIL：失败。EXECUTING：执行中
 
@@ -163,7 +163,7 @@ class ScalingPolicyExecuteLogList:
 
     @property
     def failed_reason(self):
-        """Gets the failed_reason of this ScalingPolicyExecuteLogList.
+        r"""Gets the failed_reason of this ScalingPolicyExecuteLogList.
 
         策略执行失败原因。
 
@@ -174,7 +174,7 @@ class ScalingPolicyExecuteLogList:
 
     @failed_reason.setter
     def failed_reason(self, failed_reason):
-        """Sets the failed_reason of this ScalingPolicyExecuteLogList.
+        r"""Sets the failed_reason of this ScalingPolicyExecuteLogList.
 
         策略执行失败原因。
 
@@ -185,7 +185,7 @@ class ScalingPolicyExecuteLogList:
 
     @property
     def execute_type(self):
-        """Gets the execute_type of this ScalingPolicyExecuteLogList.
+        r"""Gets the execute_type of this ScalingPolicyExecuteLogList.
 
         策略执行类型：SCHEDULE：自动触发（定时）。RECURRENCE：自动触发（周期）。ALARM：自动警告（告警）。MANUAL：手动触发
 
@@ -196,7 +196,7 @@ class ScalingPolicyExecuteLogList:
 
     @execute_type.setter
     def execute_type(self, execute_type):
-        """Sets the execute_type of this ScalingPolicyExecuteLogList.
+        r"""Sets the execute_type of this ScalingPolicyExecuteLogList.
 
         策略执行类型：SCHEDULE：自动触发（定时）。RECURRENCE：自动触发（周期）。ALARM：自动警告（告警）。MANUAL：手动触发
 
@@ -207,7 +207,7 @@ class ScalingPolicyExecuteLogList:
 
     @property
     def execute_time(self):
-        """Gets the execute_time of this ScalingPolicyExecuteLogList.
+        r"""Gets the execute_time of this ScalingPolicyExecuteLogList.
 
         策略执行时间，遵循UTC时间。
 
@@ -218,7 +218,7 @@ class ScalingPolicyExecuteLogList:
 
     @execute_time.setter
     def execute_time(self, execute_time):
-        """Sets the execute_time of this ScalingPolicyExecuteLogList.
+        r"""Sets the execute_time of this ScalingPolicyExecuteLogList.
 
         策略执行时间，遵循UTC时间。
 
@@ -229,7 +229,7 @@ class ScalingPolicyExecuteLogList:
 
     @property
     def id(self):
-        """Gets the id of this ScalingPolicyExecuteLogList.
+        r"""Gets the id of this ScalingPolicyExecuteLogList.
 
         策略执行日志ID。
 
@@ -240,7 +240,7 @@ class ScalingPolicyExecuteLogList:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ScalingPolicyExecuteLogList.
+        r"""Sets the id of this ScalingPolicyExecuteLogList.
 
         策略执行日志ID。
 
@@ -251,7 +251,7 @@ class ScalingPolicyExecuteLogList:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this ScalingPolicyExecuteLogList.
+        r"""Gets the tenant_id of this ScalingPolicyExecuteLogList.
 
         租户id。
 
@@ -262,7 +262,7 @@ class ScalingPolicyExecuteLogList:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this ScalingPolicyExecuteLogList.
+        r"""Sets the tenant_id of this ScalingPolicyExecuteLogList.
 
         租户id。
 
@@ -273,7 +273,7 @@ class ScalingPolicyExecuteLogList:
 
     @property
     def scaling_policy_id(self):
-        """Gets the scaling_policy_id of this ScalingPolicyExecuteLogList.
+        r"""Gets the scaling_policy_id of this ScalingPolicyExecuteLogList.
 
         伸缩策略ID。
 
@@ -284,7 +284,7 @@ class ScalingPolicyExecuteLogList:
 
     @scaling_policy_id.setter
     def scaling_policy_id(self, scaling_policy_id):
-        """Sets the scaling_policy_id of this ScalingPolicyExecuteLogList.
+        r"""Sets the scaling_policy_id of this ScalingPolicyExecuteLogList.
 
         伸缩策略ID。
 
@@ -295,7 +295,7 @@ class ScalingPolicyExecuteLogList:
 
     @property
     def scaling_resource_type(self):
-        """Gets the scaling_resource_type of this ScalingPolicyExecuteLogList.
+        r"""Gets the scaling_resource_type of this ScalingPolicyExecuteLogList.
 
         伸缩资源类型：伸缩组：SCALING_GROUP 带宽：BANDWIDTH
 
@@ -306,7 +306,7 @@ class ScalingPolicyExecuteLogList:
 
     @scaling_resource_type.setter
     def scaling_resource_type(self, scaling_resource_type):
-        """Sets the scaling_resource_type of this ScalingPolicyExecuteLogList.
+        r"""Sets the scaling_resource_type of this ScalingPolicyExecuteLogList.
 
         伸缩资源类型：伸缩组：SCALING_GROUP 带宽：BANDWIDTH
 
@@ -317,7 +317,7 @@ class ScalingPolicyExecuteLogList:
 
     @property
     def scaling_resource_id(self):
-        """Gets the scaling_resource_id of this ScalingPolicyExecuteLogList.
+        r"""Gets the scaling_resource_id of this ScalingPolicyExecuteLogList.
 
         伸缩资源ID。
 
@@ -328,7 +328,7 @@ class ScalingPolicyExecuteLogList:
 
     @scaling_resource_id.setter
     def scaling_resource_id(self, scaling_resource_id):
-        """Sets the scaling_resource_id of this ScalingPolicyExecuteLogList.
+        r"""Sets the scaling_resource_id of this ScalingPolicyExecuteLogList.
 
         伸缩资源ID。
 
@@ -339,7 +339,7 @@ class ScalingPolicyExecuteLogList:
 
     @property
     def old_value(self):
-        """Gets the old_value of this ScalingPolicyExecuteLogList.
+        r"""Gets the old_value of this ScalingPolicyExecuteLogList.
 
         伸缩原始值。
 
@@ -350,7 +350,7 @@ class ScalingPolicyExecuteLogList:
 
     @old_value.setter
     def old_value(self, old_value):
-        """Sets the old_value of this ScalingPolicyExecuteLogList.
+        r"""Sets the old_value of this ScalingPolicyExecuteLogList.
 
         伸缩原始值。
 
@@ -361,7 +361,7 @@ class ScalingPolicyExecuteLogList:
 
     @property
     def desire_value(self):
-        """Gets the desire_value of this ScalingPolicyExecuteLogList.
+        r"""Gets the desire_value of this ScalingPolicyExecuteLogList.
 
         伸缩目标值。
 
@@ -372,7 +372,7 @@ class ScalingPolicyExecuteLogList:
 
     @desire_value.setter
     def desire_value(self, desire_value):
-        """Sets the desire_value of this ScalingPolicyExecuteLogList.
+        r"""Sets the desire_value of this ScalingPolicyExecuteLogList.
 
         伸缩目标值。
 
@@ -383,7 +383,7 @@ class ScalingPolicyExecuteLogList:
 
     @property
     def limit_value(self):
-        """Gets the limit_value of this ScalingPolicyExecuteLogList.
+        r"""Gets the limit_value of this ScalingPolicyExecuteLogList.
 
         操作限制。当scaling_resource_type为BANDWIDTH时，且operation不为SET时，limit_value生效，单位为Mbit/s。此时，当operation为ADD时，limit_value表示最高带宽限制；当operation为REDUCE时，limit_value表示最低带宽限制。
 
@@ -394,7 +394,7 @@ class ScalingPolicyExecuteLogList:
 
     @limit_value.setter
     def limit_value(self, limit_value):
-        """Sets the limit_value of this ScalingPolicyExecuteLogList.
+        r"""Sets the limit_value of this ScalingPolicyExecuteLogList.
 
         操作限制。当scaling_resource_type为BANDWIDTH时，且operation不为SET时，limit_value生效，单位为Mbit/s。此时，当operation为ADD时，limit_value表示最高带宽限制；当operation为REDUCE时，limit_value表示最低带宽限制。
 
@@ -405,7 +405,7 @@ class ScalingPolicyExecuteLogList:
 
     @property
     def type(self):
-        """Gets the type of this ScalingPolicyExecuteLogList.
+        r"""Gets the type of this ScalingPolicyExecuteLogList.
 
         策略执行任务类型。ADD：添加。REMOVE：减少。SET：设置为
 
@@ -416,7 +416,7 @@ class ScalingPolicyExecuteLogList:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ScalingPolicyExecuteLogList.
+        r"""Sets the type of this ScalingPolicyExecuteLogList.
 
         策略执行任务类型。ADD：添加。REMOVE：减少。SET：设置为
 
@@ -427,7 +427,7 @@ class ScalingPolicyExecuteLogList:
 
     @property
     def job_records(self):
-        """Gets the job_records of this ScalingPolicyExecuteLogList.
+        r"""Gets the job_records of this ScalingPolicyExecuteLogList.
 
         策略执行动作包含的具体任务
 
@@ -438,7 +438,7 @@ class ScalingPolicyExecuteLogList:
 
     @job_records.setter
     def job_records(self, job_records):
-        """Sets the job_records of this ScalingPolicyExecuteLogList.
+        r"""Sets the job_records of this ScalingPolicyExecuteLogList.
 
         策略执行动作包含的具体任务
 
@@ -449,7 +449,7 @@ class ScalingPolicyExecuteLogList:
 
     @property
     def meta_data(self):
-        """Gets the meta_data of this ScalingPolicyExecuteLogList.
+        r"""Gets the meta_data of this ScalingPolicyExecuteLogList.
 
         :return: The meta_data of this ScalingPolicyExecuteLogList.
         :rtype: :class:`huaweicloudsdkas.v1.EipMetaData`
@@ -458,7 +458,7 @@ class ScalingPolicyExecuteLogList:
 
     @meta_data.setter
     def meta_data(self, meta_data):
-        """Sets the meta_data of this ScalingPolicyExecuteLogList.
+        r"""Sets the meta_data of this ScalingPolicyExecuteLogList.
 
         :param meta_data: The meta_data of this ScalingPolicyExecuteLogList.
         :type meta_data: :class:`huaweicloudsdkas.v1.EipMetaData`

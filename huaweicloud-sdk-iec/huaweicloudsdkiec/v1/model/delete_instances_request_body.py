@@ -25,7 +25,7 @@ class DeleteInstancesRequestBody:
     }
 
     def __init__(self, servers=None):
-        """DeleteInstancesRequestBody
+        r"""DeleteInstancesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteInstancesRequestBody:
 
     @property
     def servers(self):
-        """Gets the servers of this DeleteInstancesRequestBody.
+        r"""Gets the servers of this DeleteInstancesRequestBody.
 
         边缘实例ID列表。 > IEC默认同步删除边缘实例的弹性公网IP和磁盘。
 
@@ -53,7 +53,7 @@ class DeleteInstancesRequestBody:
 
     @servers.setter
     def servers(self, servers):
-        """Sets the servers of this DeleteInstancesRequestBody.
+        r"""Sets the servers of this DeleteInstancesRequestBody.
 
         边缘实例ID列表。 > IEC默认同步删除边缘实例的弹性公网IP和磁盘。
 

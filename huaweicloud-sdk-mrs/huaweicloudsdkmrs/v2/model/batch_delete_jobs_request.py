@@ -27,7 +27,7 @@ class BatchDeleteJobsRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """BatchDeleteJobsRequest
+        r"""BatchDeleteJobsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeleteJobsRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this BatchDeleteJobsRequest.
+        r"""Gets the cluster_id of this BatchDeleteJobsRequest.
 
         集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
 
@@ -60,7 +60,7 @@ class BatchDeleteJobsRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this BatchDeleteJobsRequest.
+        r"""Sets the cluster_id of this BatchDeleteJobsRequest.
 
         集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
 
@@ -71,7 +71,7 @@ class BatchDeleteJobsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteJobsRequest.
+        r"""Gets the body of this BatchDeleteJobsRequest.
 
         :return: The body of this BatchDeleteJobsRequest.
         :rtype: :class:`huaweicloudsdkmrs.v2.JobBatchDelete`
@@ -80,7 +80,7 @@ class BatchDeleteJobsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteJobsRequest.
+        r"""Sets the body of this BatchDeleteJobsRequest.
 
         :param body: The body of this BatchDeleteJobsRequest.
         :type body: :class:`huaweicloudsdkmrs.v2.JobBatchDelete`

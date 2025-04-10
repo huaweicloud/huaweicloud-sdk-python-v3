@@ -55,7 +55,7 @@ class ListAppsResponseBodyResult:
     }
 
     def __init__(self, id=None, project_id=None, mark_for_delete=None, create_by=None, create_time=None, update_by=None, update_time=None, name_cn=None, name_en=None, desc_cn=None, desc_en=None, database_type=None, environment=None, owners=None, app_type=None, permission_control=None):
-        """ListAppsResponseBodyResult
+        r"""ListAppsResponseBodyResult
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class ListAppsResponseBodyResult:
 
     @property
     def id(self):
-        """Gets the id of this ListAppsResponseBodyResult.
+        r"""Gets the id of this ListAppsResponseBodyResult.
 
         应用ID。
 
@@ -159,7 +159,7 @@ class ListAppsResponseBodyResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListAppsResponseBodyResult.
+        r"""Sets the id of this ListAppsResponseBodyResult.
 
         应用ID。
 
@@ -170,7 +170,7 @@ class ListAppsResponseBodyResult:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListAppsResponseBodyResult.
+        r"""Gets the project_id of this ListAppsResponseBodyResult.
 
         项目ID。
 
@@ -181,7 +181,7 @@ class ListAppsResponseBodyResult:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListAppsResponseBodyResult.
+        r"""Sets the project_id of this ListAppsResponseBodyResult.
 
         项目ID。
 
@@ -192,7 +192,7 @@ class ListAppsResponseBodyResult:
 
     @property
     def mark_for_delete(self):
-        """Gets the mark_for_delete of this ListAppsResponseBodyResult.
+        r"""Gets the mark_for_delete of this ListAppsResponseBodyResult.
 
         删除标记。 - 0：未删除 - 1：删除
 
@@ -203,7 +203,7 @@ class ListAppsResponseBodyResult:
 
     @mark_for_delete.setter
     def mark_for_delete(self, mark_for_delete):
-        """Sets the mark_for_delete of this ListAppsResponseBodyResult.
+        r"""Sets the mark_for_delete of this ListAppsResponseBodyResult.
 
         删除标记。 - 0：未删除 - 1：删除
 
@@ -214,7 +214,7 @@ class ListAppsResponseBodyResult:
 
     @property
     def create_by(self):
-        """Gets the create_by of this ListAppsResponseBodyResult.
+        r"""Gets the create_by of this ListAppsResponseBodyResult.
 
         创建人。
 
@@ -225,7 +225,7 @@ class ListAppsResponseBodyResult:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this ListAppsResponseBodyResult.
+        r"""Sets the create_by of this ListAppsResponseBodyResult.
 
         创建人。
 
@@ -236,7 +236,7 @@ class ListAppsResponseBodyResult:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ListAppsResponseBodyResult.
+        r"""Gets the create_time of this ListAppsResponseBodyResult.
 
         创建时间。
 
@@ -247,7 +247,7 @@ class ListAppsResponseBodyResult:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ListAppsResponseBodyResult.
+        r"""Sets the create_time of this ListAppsResponseBodyResult.
 
         创建时间。
 
@@ -258,7 +258,7 @@ class ListAppsResponseBodyResult:
 
     @property
     def update_by(self):
-        """Gets the update_by of this ListAppsResponseBodyResult.
+        r"""Gets the update_by of this ListAppsResponseBodyResult.
 
         更新人。
 
@@ -269,7 +269,7 @@ class ListAppsResponseBodyResult:
 
     @update_by.setter
     def update_by(self, update_by):
-        """Sets the update_by of this ListAppsResponseBodyResult.
+        r"""Sets the update_by of this ListAppsResponseBodyResult.
 
         更新人。
 
@@ -280,7 +280,7 @@ class ListAppsResponseBodyResult:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ListAppsResponseBodyResult.
+        r"""Gets the update_time of this ListAppsResponseBodyResult.
 
         更新时间。
 
@@ -291,7 +291,7 @@ class ListAppsResponseBodyResult:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ListAppsResponseBodyResult.
+        r"""Sets the update_time of this ListAppsResponseBodyResult.
 
         更新时间。
 
@@ -302,7 +302,7 @@ class ListAppsResponseBodyResult:
 
     @property
     def name_cn(self):
-        """Gets the name_cn of this ListAppsResponseBodyResult.
+        r"""Gets the name_cn of this ListAppsResponseBodyResult.
 
         应用的中文名称。
 
@@ -313,7 +313,7 @@ class ListAppsResponseBodyResult:
 
     @name_cn.setter
     def name_cn(self, name_cn):
-        """Sets the name_cn of this ListAppsResponseBodyResult.
+        r"""Sets the name_cn of this ListAppsResponseBodyResult.
 
         应用的中文名称。
 
@@ -324,7 +324,7 @@ class ListAppsResponseBodyResult:
 
     @property
     def name_en(self):
-        """Gets the name_en of this ListAppsResponseBodyResult.
+        r"""Gets the name_en of this ListAppsResponseBodyResult.
 
         应用的英文名称。
 
@@ -335,7 +335,7 @@ class ListAppsResponseBodyResult:
 
     @name_en.setter
     def name_en(self, name_en):
-        """Sets the name_en of this ListAppsResponseBodyResult.
+        r"""Sets the name_en of this ListAppsResponseBodyResult.
 
         应用的英文名称。
 
@@ -346,7 +346,7 @@ class ListAppsResponseBodyResult:
 
     @property
     def desc_cn(self):
-        """Gets the desc_cn of this ListAppsResponseBodyResult.
+        r"""Gets the desc_cn of this ListAppsResponseBodyResult.
 
         应用的中文描述。
 
@@ -357,7 +357,7 @@ class ListAppsResponseBodyResult:
 
     @desc_cn.setter
     def desc_cn(self, desc_cn):
-        """Sets the desc_cn of this ListAppsResponseBodyResult.
+        r"""Sets the desc_cn of this ListAppsResponseBodyResult.
 
         应用的中文描述。
 
@@ -368,7 +368,7 @@ class ListAppsResponseBodyResult:
 
     @property
     def desc_en(self):
-        """Gets the desc_en of this ListAppsResponseBodyResult.
+        r"""Gets the desc_en of this ListAppsResponseBodyResult.
 
         应用的英文描述。
 
@@ -379,7 +379,7 @@ class ListAppsResponseBodyResult:
 
     @desc_en.setter
     def desc_en(self, desc_en):
-        """Sets the desc_en of this ListAppsResponseBodyResult.
+        r"""Sets the desc_en of this ListAppsResponseBodyResult.
 
         应用的英文描述。
 
@@ -390,7 +390,7 @@ class ListAppsResponseBodyResult:
 
     @property
     def database_type(self):
-        """Gets the database_type of this ListAppsResponseBodyResult.
+        r"""Gets the database_type of this ListAppsResponseBodyResult.
 
         应用的数据库类型。
 
@@ -401,7 +401,7 @@ class ListAppsResponseBodyResult:
 
     @database_type.setter
     def database_type(self, database_type):
-        """Sets the database_type of this ListAppsResponseBodyResult.
+        r"""Sets the database_type of this ListAppsResponseBodyResult.
 
         应用的数据库类型。
 
@@ -412,7 +412,7 @@ class ListAppsResponseBodyResult:
 
     @property
     def environment(self):
-        """Gets the environment of this ListAppsResponseBodyResult.
+        r"""Gets the environment of this ListAppsResponseBodyResult.
 
         运行服务的环境标识。
 
@@ -423,7 +423,7 @@ class ListAppsResponseBodyResult:
 
     @environment.setter
     def environment(self, environment):
-        """Sets the environment of this ListAppsResponseBodyResult.
+        r"""Sets the environment of this ListAppsResponseBodyResult.
 
         运行服务的环境标识。
 
@@ -434,7 +434,7 @@ class ListAppsResponseBodyResult:
 
     @property
     def owners(self):
-        """Gets the owners of this ListAppsResponseBodyResult.
+        r"""Gets the owners of this ListAppsResponseBodyResult.
 
         应用责任人。
 
@@ -445,7 +445,7 @@ class ListAppsResponseBodyResult:
 
     @owners.setter
     def owners(self, owners):
-        """Sets the owners of this ListAppsResponseBodyResult.
+        r"""Sets the owners of this ListAppsResponseBodyResult.
 
         应用责任人。
 
@@ -456,7 +456,7 @@ class ListAppsResponseBodyResult:
 
     @property
     def app_type(self):
-        """Gets the app_type of this ListAppsResponseBodyResult.
+        r"""Gets the app_type of this ListAppsResponseBodyResult.
 
         App类型。
 
@@ -467,7 +467,7 @@ class ListAppsResponseBodyResult:
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this ListAppsResponseBodyResult.
+        r"""Sets the app_type of this ListAppsResponseBodyResult.
 
         App类型。
 
@@ -478,7 +478,7 @@ class ListAppsResponseBodyResult:
 
     @property
     def permission_control(self):
-        """Gets the permission_control of this ListAppsResponseBodyResult.
+        r"""Gets the permission_control of this ListAppsResponseBodyResult.
 
         App权限控制。
 
@@ -489,7 +489,7 @@ class ListAppsResponseBodyResult:
 
     @permission_control.setter
     def permission_control(self, permission_control):
-        """Sets the permission_control of this ListAppsResponseBodyResult.
+        r"""Sets the permission_control of this ListAppsResponseBodyResult.
 
         App权限控制。
 

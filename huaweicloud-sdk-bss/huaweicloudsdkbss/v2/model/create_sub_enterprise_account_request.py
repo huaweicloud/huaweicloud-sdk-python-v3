@@ -25,7 +25,7 @@ class CreateSubEnterpriseAccountRequest:
     }
 
     def __init__(self, body=None):
-        """CreateSubEnterpriseAccountRequest
+        r"""CreateSubEnterpriseAccountRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateSubEnterpriseAccountRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSubEnterpriseAccountRequest.
+        r"""Gets the body of this CreateSubEnterpriseAccountRequest.
 
         :return: The body of this CreateSubEnterpriseAccountRequest.
         :rtype: :class:`huaweicloudsdkbss.v2.CreateSubCustomerReqV2`
@@ -52,7 +52,7 @@ class CreateSubEnterpriseAccountRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSubEnterpriseAccountRequest.
+        r"""Sets the body of this CreateSubEnterpriseAccountRequest.
 
         :param body: The body of this CreateSubEnterpriseAccountRequest.
         :type body: :class:`huaweicloudsdkbss.v2.CreateSubCustomerReqV2`

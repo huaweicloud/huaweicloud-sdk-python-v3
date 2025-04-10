@@ -25,7 +25,7 @@ class SiteCode:
     }
 
     def __init__(self, site_code=None):
-        """SiteCode
+        r"""SiteCode
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SiteCode:
 
     @property
     def site_code(self):
-        """Gets the site_code of this SiteCode.
+        r"""Gets the site_code of this SiteCode.
 
         站点编码定义
 
@@ -53,7 +53,7 @@ class SiteCode:
 
     @site_code.setter
     def site_code(self, site_code):
-        """Sets the site_code of this SiteCode.
+        r"""Sets the site_code of this SiteCode.
 
         站点编码定义
 

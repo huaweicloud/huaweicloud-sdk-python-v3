@@ -43,7 +43,7 @@ class EnvironmentDetail:
     }
 
     def __init__(self, id=None, name=None, description=None, os=None, nick_name=None, deploy_type=None, created_time=None, instance_count=None, created_by=None, permission=None):
-        """EnvironmentDetail
+        r"""EnvironmentDetail
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class EnvironmentDetail:
 
     @property
     def id(self):
-        """Gets the id of this EnvironmentDetail.
+        r"""Gets the id of this EnvironmentDetail.
 
         环境id
 
@@ -117,7 +117,7 @@ class EnvironmentDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EnvironmentDetail.
+        r"""Sets the id of this EnvironmentDetail.
 
         环境id
 
@@ -128,7 +128,7 @@ class EnvironmentDetail:
 
     @property
     def name(self):
-        """Gets the name of this EnvironmentDetail.
+        r"""Gets the name of this EnvironmentDetail.
 
         环境名称
 
@@ -139,7 +139,7 @@ class EnvironmentDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EnvironmentDetail.
+        r"""Sets the name of this EnvironmentDetail.
 
         环境名称
 
@@ -150,7 +150,7 @@ class EnvironmentDetail:
 
     @property
     def description(self):
-        """Gets the description of this EnvironmentDetail.
+        r"""Gets the description of this EnvironmentDetail.
 
         环境描述
 
@@ -161,7 +161,7 @@ class EnvironmentDetail:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EnvironmentDetail.
+        r"""Sets the description of this EnvironmentDetail.
 
         环境描述
 
@@ -172,7 +172,7 @@ class EnvironmentDetail:
 
     @property
     def os(self):
-        """Gets the os of this EnvironmentDetail.
+        r"""Gets the os of this EnvironmentDetail.
 
         操作系统
 
@@ -183,7 +183,7 @@ class EnvironmentDetail:
 
     @os.setter
     def os(self, os):
-        """Sets the os of this EnvironmentDetail.
+        r"""Sets the os of this EnvironmentDetail.
 
         操作系统
 
@@ -194,7 +194,7 @@ class EnvironmentDetail:
 
     @property
     def nick_name(self):
-        """Gets the nick_name of this EnvironmentDetail.
+        r"""Gets the nick_name of this EnvironmentDetail.
 
         用户昵称
 
@@ -205,7 +205,7 @@ class EnvironmentDetail:
 
     @nick_name.setter
     def nick_name(self, nick_name):
-        """Sets the nick_name of this EnvironmentDetail.
+        r"""Sets the nick_name of this EnvironmentDetail.
 
         用户昵称
 
@@ -216,7 +216,7 @@ class EnvironmentDetail:
 
     @property
     def deploy_type(self):
-        """Gets the deploy_type of this EnvironmentDetail.
+        r"""Gets the deploy_type of this EnvironmentDetail.
 
         部署类型：0表示主机, 1表示kubernetes
 
@@ -227,7 +227,7 @@ class EnvironmentDetail:
 
     @deploy_type.setter
     def deploy_type(self, deploy_type):
-        """Sets the deploy_type of this EnvironmentDetail.
+        r"""Sets the deploy_type of this EnvironmentDetail.
 
         部署类型：0表示主机, 1表示kubernetes
 
@@ -238,7 +238,7 @@ class EnvironmentDetail:
 
     @property
     def created_time(self):
-        """Gets the created_time of this EnvironmentDetail.
+        r"""Gets the created_time of this EnvironmentDetail.
 
         创建时间
 
@@ -249,7 +249,7 @@ class EnvironmentDetail:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this EnvironmentDetail.
+        r"""Sets the created_time of this EnvironmentDetail.
 
         创建时间
 
@@ -260,7 +260,7 @@ class EnvironmentDetail:
 
     @property
     def instance_count(self):
-        """Gets the instance_count of this EnvironmentDetail.
+        r"""Gets the instance_count of this EnvironmentDetail.
 
         环境下主机实例数量
 
@@ -271,7 +271,7 @@ class EnvironmentDetail:
 
     @instance_count.setter
     def instance_count(self, instance_count):
-        """Sets the instance_count of this EnvironmentDetail.
+        r"""Sets the instance_count of this EnvironmentDetail.
 
         环境下主机实例数量
 
@@ -282,7 +282,7 @@ class EnvironmentDetail:
 
     @property
     def created_by(self):
-        """Gets the created_by of this EnvironmentDetail.
+        r"""Gets the created_by of this EnvironmentDetail.
 
         :return: The created_by of this EnvironmentDetail.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.UserInfo`
@@ -291,7 +291,7 @@ class EnvironmentDetail:
 
     @created_by.setter
     def created_by(self, created_by):
-        """Sets the created_by of this EnvironmentDetail.
+        r"""Sets the created_by of this EnvironmentDetail.
 
         :param created_by: The created_by of this EnvironmentDetail.
         :type created_by: :class:`huaweicloudsdkcodeartsdeploy.v2.UserInfo`
@@ -300,7 +300,7 @@ class EnvironmentDetail:
 
     @property
     def permission(self):
-        """Gets the permission of this EnvironmentDetail.
+        r"""Gets the permission of this EnvironmentDetail.
 
         :return: The permission of this EnvironmentDetail.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.EnvironmentPermissionDetail`
@@ -309,7 +309,7 @@ class EnvironmentDetail:
 
     @permission.setter
     def permission(self, permission):
-        """Sets the permission of this EnvironmentDetail.
+        r"""Sets the permission of this EnvironmentDetail.
 
         :param permission: The permission of this EnvironmentDetail.
         :type permission: :class:`huaweicloudsdkcodeartsdeploy.v2.EnvironmentPermissionDetail`

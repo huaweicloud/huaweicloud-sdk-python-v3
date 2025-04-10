@@ -23,7 +23,7 @@ class L2:
     }
 
     def __init__(self):
-        """L2
+        r"""L2
 
         The model defined in huaweicloud sdk
 

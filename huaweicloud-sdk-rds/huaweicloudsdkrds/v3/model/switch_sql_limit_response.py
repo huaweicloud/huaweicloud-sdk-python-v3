@@ -26,7 +26,7 @@ class SwitchSqlLimitResponse(SdkResponse):
     }
 
     def __init__(self, resp=None):
-        """SwitchSqlLimitResponse
+        r"""SwitchSqlLimitResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SwitchSqlLimitResponse(SdkResponse):
 
     @property
     def resp(self):
-        """Gets the resp of this SwitchSqlLimitResponse.
+        r"""Gets the resp of this SwitchSqlLimitResponse.
 
         调用正常时，返回“successful”。
 
@@ -55,7 +55,7 @@ class SwitchSqlLimitResponse(SdkResponse):
 
     @resp.setter
     def resp(self, resp):
-        """Sets the resp of this SwitchSqlLimitResponse.
+        r"""Sets the resp of this SwitchSqlLimitResponse.
 
         调用正常时，返回“successful”。
 

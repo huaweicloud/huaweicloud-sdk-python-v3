@@ -77,7 +77,7 @@ class ClusterList:
     }
 
     def __init__(self, datastore=None, instances=None, public_kibana_resp=None, elb_white_list=None, updated=None, name=None, public_ip=None, created=None, id=None, status=None, endpoint=None, vpc_id=None, subnet_id=None, security_group_id=None, bandwidth_size=None, https_enable=None, authority_enable=None, disk_encrypted=None, backup_available=None, action_progress=None, actions=None, enterprise_project_id=None, tags=None, failed_reason=None, period=None, bandwidth_resource_id=None, ipv6_endpoint=None):
-        """ClusterList
+        r"""ClusterList
 
         The model defined in huaweicloud sdk
 
@@ -225,7 +225,7 @@ class ClusterList:
 
     @property
     def datastore(self):
-        """Gets the datastore of this ClusterList.
+        r"""Gets the datastore of this ClusterList.
 
         :return: The datastore of this ClusterList.
         :rtype: :class:`huaweicloudsdkcss.v1.ClusterListDatastore`
@@ -234,7 +234,7 @@ class ClusterList:
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this ClusterList.
+        r"""Sets the datastore of this ClusterList.
 
         :param datastore: The datastore of this ClusterList.
         :type datastore: :class:`huaweicloudsdkcss.v1.ClusterListDatastore`
@@ -243,7 +243,7 @@ class ClusterList:
 
     @property
     def instances(self):
-        """Gets the instances of this ClusterList.
+        r"""Gets the instances of this ClusterList.
 
         节点对象列表。
 
@@ -254,7 +254,7 @@ class ClusterList:
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this ClusterList.
+        r"""Sets the instances of this ClusterList.
 
         节点对象列表。
 
@@ -265,7 +265,7 @@ class ClusterList:
 
     @property
     def public_kibana_resp(self):
-        """Gets the public_kibana_resp of this ClusterList.
+        r"""Gets the public_kibana_resp of this ClusterList.
 
         :return: The public_kibana_resp of this ClusterList.
         :rtype: :class:`huaweicloudsdkcss.v1.PublicKibanaRespBody`
@@ -274,7 +274,7 @@ class ClusterList:
 
     @public_kibana_resp.setter
     def public_kibana_resp(self, public_kibana_resp):
-        """Sets the public_kibana_resp of this ClusterList.
+        r"""Sets the public_kibana_resp of this ClusterList.
 
         :param public_kibana_resp: The public_kibana_resp of this ClusterList.
         :type public_kibana_resp: :class:`huaweicloudsdkcss.v1.PublicKibanaRespBody`
@@ -283,7 +283,7 @@ class ClusterList:
 
     @property
     def elb_white_list(self):
-        """Gets the elb_white_list of this ClusterList.
+        r"""Gets the elb_white_list of this ClusterList.
 
         :return: The elb_white_list of this ClusterList.
         :rtype: :class:`huaweicloudsdkcss.v1.ElbWhiteListResp`
@@ -292,7 +292,7 @@ class ClusterList:
 
     @elb_white_list.setter
     def elb_white_list(self, elb_white_list):
-        """Sets the elb_white_list of this ClusterList.
+        r"""Sets the elb_white_list of this ClusterList.
 
         :param elb_white_list: The elb_white_list of this ClusterList.
         :type elb_white_list: :class:`huaweicloudsdkcss.v1.ElbWhiteListResp`
@@ -301,7 +301,7 @@ class ClusterList:
 
     @property
     def updated(self):
-        """Gets the updated of this ClusterList.
+        r"""Gets the updated of this ClusterList.
 
         集群上次修改时间，格式为ISO8601： CCYY-MM-DDThh:mm:ss。
 
@@ -312,7 +312,7 @@ class ClusterList:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ClusterList.
+        r"""Sets the updated of this ClusterList.
 
         集群上次修改时间，格式为ISO8601： CCYY-MM-DDThh:mm:ss。
 
@@ -323,7 +323,7 @@ class ClusterList:
 
     @property
     def name(self):
-        """Gets the name of this ClusterList.
+        r"""Gets the name of this ClusterList.
 
         集群名称。
 
@@ -334,7 +334,7 @@ class ClusterList:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ClusterList.
+        r"""Sets the name of this ClusterList.
 
         集群名称。
 
@@ -345,7 +345,7 @@ class ClusterList:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this ClusterList.
+        r"""Gets the public_ip of this ClusterList.
 
         公网IP信息。
 
@@ -356,7 +356,7 @@ class ClusterList:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this ClusterList.
+        r"""Sets the public_ip of this ClusterList.
 
         公网IP信息。
 
@@ -367,7 +367,7 @@ class ClusterList:
 
     @property
     def created(self):
-        """Gets the created of this ClusterList.
+        r"""Gets the created of this ClusterList.
 
         集群创建时间，格式为ISO8601：CCYY-MM-DDThh:mm:ss。  返回的集群列表信息按照创建时间降序排序，即创建时间最新的集群排在最前。
 
@@ -378,7 +378,7 @@ class ClusterList:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this ClusterList.
+        r"""Sets the created of this ClusterList.
 
         集群创建时间，格式为ISO8601：CCYY-MM-DDThh:mm:ss。  返回的集群列表信息按照创建时间降序排序，即创建时间最新的集群排在最前。
 
@@ -389,7 +389,7 @@ class ClusterList:
 
     @property
     def id(self):
-        """Gets the id of this ClusterList.
+        r"""Gets the id of this ClusterList.
 
         集群ID。
 
@@ -400,7 +400,7 @@ class ClusterList:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ClusterList.
+        r"""Sets the id of this ClusterList.
 
         集群ID。
 
@@ -411,7 +411,7 @@ class ClusterList:
 
     @property
     def status(self):
-        """Gets the status of this ClusterList.
+        r"""Gets the status of this ClusterList.
 
         集群状态值。  - 100：创建中。 - 200：可用。 - 303：不可用，如创建失败。
 
@@ -422,7 +422,7 @@ class ClusterList:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ClusterList.
+        r"""Sets the status of this ClusterList.
 
         集群状态值。  - 100：创建中。 - 200：可用。 - 303：不可用，如创建失败。
 
@@ -433,7 +433,7 @@ class ClusterList:
 
     @property
     def endpoint(self):
-        """Gets the endpoint of this ClusterList.
+        r"""Gets the endpoint of this ClusterList.
 
         用户VPC访问IP地址和端口号。
 
@@ -444,7 +444,7 @@ class ClusterList:
 
     @endpoint.setter
     def endpoint(self, endpoint):
-        """Sets the endpoint of this ClusterList.
+        r"""Sets the endpoint of this ClusterList.
 
         用户VPC访问IP地址和端口号。
 
@@ -455,7 +455,7 @@ class ClusterList:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ClusterList.
+        r"""Gets the vpc_id of this ClusterList.
 
         VPC ID。
 
@@ -466,7 +466,7 @@ class ClusterList:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ClusterList.
+        r"""Sets the vpc_id of this ClusterList.
 
         VPC ID。
 
@@ -477,7 +477,7 @@ class ClusterList:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ClusterList.
+        r"""Gets the subnet_id of this ClusterList.
 
         子网ID。
 
@@ -488,7 +488,7 @@ class ClusterList:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ClusterList.
+        r"""Sets the subnet_id of this ClusterList.
 
         子网ID。
 
@@ -499,7 +499,7 @@ class ClusterList:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this ClusterList.
+        r"""Gets the security_group_id of this ClusterList.
 
         安全组ID。
 
@@ -510,7 +510,7 @@ class ClusterList:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this ClusterList.
+        r"""Sets the security_group_id of this ClusterList.
 
         安全组ID。
 
@@ -521,7 +521,7 @@ class ClusterList:
 
     @property
     def bandwidth_size(self):
-        """Gets the bandwidth_size of this ClusterList.
+        r"""Gets the bandwidth_size of this ClusterList.
 
         公网带宽大小。单位：Mbit/s
 
@@ -532,7 +532,7 @@ class ClusterList:
 
     @bandwidth_size.setter
     def bandwidth_size(self, bandwidth_size):
-        """Sets the bandwidth_size of this ClusterList.
+        r"""Sets the bandwidth_size of this ClusterList.
 
         公网带宽大小。单位：Mbit/s
 
@@ -543,7 +543,7 @@ class ClusterList:
 
     @property
     def https_enable(self):
-        """Gets the https_enable of this ClusterList.
+        r"""Gets the https_enable of this ClusterList.
 
         通信加密状态。 - false：未设置通信加密。 - true：已设置通信加密。
 
@@ -554,7 +554,7 @@ class ClusterList:
 
     @https_enable.setter
     def https_enable(self, https_enable):
-        """Sets the https_enable of this ClusterList.
+        r"""Sets the https_enable of this ClusterList.
 
         通信加密状态。 - false：未设置通信加密。 - true：已设置通信加密。
 
@@ -565,7 +565,7 @@ class ClusterList:
 
     @property
     def authority_enable(self):
-        """Gets the authority_enable of this ClusterList.
+        r"""Gets the authority_enable of this ClusterList.
 
         是否开启认证。 - true：表示集群开启认证。 - false：表示集群不开启认证。
 
@@ -576,7 +576,7 @@ class ClusterList:
 
     @authority_enable.setter
     def authority_enable(self, authority_enable):
-        """Sets the authority_enable of this ClusterList.
+        r"""Sets the authority_enable of this ClusterList.
 
         是否开启认证。 - true：表示集群开启认证。 - false：表示集群不开启认证。
 
@@ -587,7 +587,7 @@ class ClusterList:
 
     @property
     def disk_encrypted(self):
-        """Gets the disk_encrypted of this ClusterList.
+        r"""Gets the disk_encrypted of this ClusterList.
 
         磁盘是否加密。  - true : 磁盘已加密。 - false : 磁盘未加密。
 
@@ -598,7 +598,7 @@ class ClusterList:
 
     @disk_encrypted.setter
     def disk_encrypted(self, disk_encrypted):
-        """Sets the disk_encrypted of this ClusterList.
+        r"""Sets the disk_encrypted of this ClusterList.
 
         磁盘是否加密。  - true : 磁盘已加密。 - false : 磁盘未加密。
 
@@ -609,7 +609,7 @@ class ClusterList:
 
     @property
     def backup_available(self):
-        """Gets the backup_available of this ClusterList.
+        r"""Gets the backup_available of this ClusterList.
 
         快照是否开启。 - true: 快照开启状态。 - false: 快照关闭状态。
 
@@ -620,7 +620,7 @@ class ClusterList:
 
     @backup_available.setter
     def backup_available(self, backup_available):
-        """Sets the backup_available of this ClusterList.
+        r"""Sets the backup_available of this ClusterList.
 
         快照是否开启。 - true: 快照开启状态。 - false: 快照关闭状态。
 
@@ -631,7 +631,7 @@ class ClusterList:
 
     @property
     def action_progress(self):
-        """Gets the action_progress of this ClusterList.
+        r"""Gets the action_progress of this ClusterList.
 
         集群行为进度，显示创建或扩容进度的百分比等。CREATING表示创建的百分比。
 
@@ -642,7 +642,7 @@ class ClusterList:
 
     @action_progress.setter
     def action_progress(self, action_progress):
-        """Sets the action_progress of this ClusterList.
+        r"""Sets the action_progress of this ClusterList.
 
         集群行为进度，显示创建或扩容进度的百分比等。CREATING表示创建的百分比。
 
@@ -653,7 +653,7 @@ class ClusterList:
 
     @property
     def actions(self):
-        """Gets the actions of this ClusterList.
+        r"""Gets the actions of this ClusterList.
 
         集群当前行为。REBOOTING表示重启、GROWING表示扩容、RESTORING表示恢复集群、SNAPSHOTTING表示创建快照等。
 
@@ -664,7 +664,7 @@ class ClusterList:
 
     @actions.setter
     def actions(self, actions):
-        """Sets the actions of this ClusterList.
+        r"""Sets the actions of this ClusterList.
 
         集群当前行为。REBOOTING表示重启、GROWING表示扩容、RESTORING表示恢复集群、SNAPSHOTTING表示创建快照等。
 
@@ -675,7 +675,7 @@ class ClusterList:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ClusterList.
+        r"""Gets the enterprise_project_id of this ClusterList.
 
         集群所属的企业项目ID。 如果集群所属用户没有开通企业项目，则不会返回该参数。
 
@@ -686,7 +686,7 @@ class ClusterList:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ClusterList.
+        r"""Sets the enterprise_project_id of this ClusterList.
 
         集群所属的企业项目ID。 如果集群所属用户没有开通企业项目，则不会返回该参数。
 
@@ -697,7 +697,7 @@ class ClusterList:
 
     @property
     def tags(self):
-        """Gets the tags of this ClusterList.
+        r"""Gets the tags of this ClusterList.
 
         集群标签。
 
@@ -708,7 +708,7 @@ class ClusterList:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ClusterList.
+        r"""Sets the tags of this ClusterList.
 
         集群标签。
 
@@ -719,7 +719,7 @@ class ClusterList:
 
     @property
     def failed_reason(self):
-        """Gets the failed_reason of this ClusterList.
+        r"""Gets the failed_reason of this ClusterList.
 
         :return: The failed_reason of this ClusterList.
         :rtype: :class:`huaweicloudsdkcss.v1.ClusterListFailedReasons`
@@ -728,7 +728,7 @@ class ClusterList:
 
     @failed_reason.setter
     def failed_reason(self, failed_reason):
-        """Sets the failed_reason of this ClusterList.
+        r"""Sets the failed_reason of this ClusterList.
 
         :param failed_reason: The failed_reason of this ClusterList.
         :type failed_reason: :class:`huaweicloudsdkcss.v1.ClusterListFailedReasons`
@@ -737,7 +737,7 @@ class ClusterList:
 
     @property
     def period(self):
-        """Gets the period of this ClusterList.
+        r"""Gets the period of this ClusterList.
 
         是否为包周期集群。 - \"true\" 表示是包周期计费的集群。 - \"false\" 表示是按需计费的集群。
 
@@ -748,7 +748,7 @@ class ClusterList:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this ClusterList.
+        r"""Sets the period of this ClusterList.
 
         是否为包周期集群。 - \"true\" 表示是包周期计费的集群。 - \"false\" 表示是按需计费的集群。
 
@@ -759,7 +759,7 @@ class ClusterList:
 
     @property
     def bandwidth_resource_id(self):
-        """Gets the bandwidth_resource_id of this ClusterList.
+        r"""Gets the bandwidth_resource_id of this ClusterList.
 
         es公网访问的资源id。
 
@@ -770,7 +770,7 @@ class ClusterList:
 
     @bandwidth_resource_id.setter
     def bandwidth_resource_id(self, bandwidth_resource_id):
-        """Sets the bandwidth_resource_id of this ClusterList.
+        r"""Sets the bandwidth_resource_id of this ClusterList.
 
         es公网访问的资源id。
 
@@ -781,7 +781,7 @@ class ClusterList:
 
     @property
     def ipv6_endpoint(self):
-        """Gets the ipv6_endpoint of this ClusterList.
+        r"""Gets the ipv6_endpoint of this ClusterList.
 
         集群内网访问IPv6地址和端口号。
 
@@ -792,7 +792,7 @@ class ClusterList:
 
     @ipv6_endpoint.setter
     def ipv6_endpoint(self, ipv6_endpoint):
-        """Sets the ipv6_endpoint of this ClusterList.
+        r"""Sets the ipv6_endpoint of this ClusterList.
 
         集群内网访问IPv6地址和端口号。
 

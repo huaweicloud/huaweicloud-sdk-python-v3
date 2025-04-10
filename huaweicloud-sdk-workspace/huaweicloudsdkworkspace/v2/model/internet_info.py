@@ -41,7 +41,7 @@ class InternetInfo:
     }
 
     def __init__(self, vpc_name=None, subnet_id=None, subnet_name=None, nat_id=None, nat_name=None, eip=None, created_at=None, status=None, enterprise_project_id=None):
-        """InternetInfo
+        r"""InternetInfo
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class InternetInfo:
 
     @property
     def vpc_name(self):
-        """Gets the vpc_name of this InternetInfo.
+        r"""Gets the vpc_name of this InternetInfo.
 
         VPC名称
 
@@ -110,7 +110,7 @@ class InternetInfo:
 
     @vpc_name.setter
     def vpc_name(self, vpc_name):
-        """Sets the vpc_name of this InternetInfo.
+        r"""Sets the vpc_name of this InternetInfo.
 
         VPC名称
 
@@ -121,7 +121,7 @@ class InternetInfo:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this InternetInfo.
+        r"""Gets the subnet_id of this InternetInfo.
 
         子网id
 
@@ -132,7 +132,7 @@ class InternetInfo:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this InternetInfo.
+        r"""Sets the subnet_id of this InternetInfo.
 
         子网id
 
@@ -143,7 +143,7 @@ class InternetInfo:
 
     @property
     def subnet_name(self):
-        """Gets the subnet_name of this InternetInfo.
+        r"""Gets the subnet_name of this InternetInfo.
 
         子网名称
 
@@ -154,7 +154,7 @@ class InternetInfo:
 
     @subnet_name.setter
     def subnet_name(self, subnet_name):
-        """Sets the subnet_name of this InternetInfo.
+        r"""Sets the subnet_name of this InternetInfo.
 
         子网名称
 
@@ -165,7 +165,7 @@ class InternetInfo:
 
     @property
     def nat_id(self):
-        """Gets the nat_id of this InternetInfo.
+        r"""Gets the nat_id of this InternetInfo.
 
         NAT id
 
@@ -176,7 +176,7 @@ class InternetInfo:
 
     @nat_id.setter
     def nat_id(self, nat_id):
-        """Sets the nat_id of this InternetInfo.
+        r"""Sets the nat_id of this InternetInfo.
 
         NAT id
 
@@ -187,7 +187,7 @@ class InternetInfo:
 
     @property
     def nat_name(self):
-        """Gets the nat_name of this InternetInfo.
+        r"""Gets the nat_name of this InternetInfo.
 
         NAT名称
 
@@ -198,7 +198,7 @@ class InternetInfo:
 
     @nat_name.setter
     def nat_name(self, nat_name):
-        """Sets the nat_name of this InternetInfo.
+        r"""Sets the nat_name of this InternetInfo.
 
         NAT名称
 
@@ -209,7 +209,7 @@ class InternetInfo:
 
     @property
     def eip(self):
-        """Gets the eip of this InternetInfo.
+        r"""Gets the eip of this InternetInfo.
 
         弹性公网IP
 
@@ -220,7 +220,7 @@ class InternetInfo:
 
     @eip.setter
     def eip(self, eip):
-        """Sets the eip of this InternetInfo.
+        r"""Sets the eip of this InternetInfo.
 
         弹性公网IP
 
@@ -231,7 +231,7 @@ class InternetInfo:
 
     @property
     def created_at(self):
-        """Gets the created_at of this InternetInfo.
+        r"""Gets the created_at of this InternetInfo.
 
         创建时间
 
@@ -242,7 +242,7 @@ class InternetInfo:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this InternetInfo.
+        r"""Sets the created_at of this InternetInfo.
 
         创建时间
 
@@ -253,7 +253,7 @@ class InternetInfo:
 
     @property
     def status(self):
-        """Gets the status of this InternetInfo.
+        r"""Gets the status of this InternetInfo.
 
         状态
 
@@ -264,7 +264,7 @@ class InternetInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this InternetInfo.
+        r"""Sets the status of this InternetInfo.
 
         状态
 
@@ -275,7 +275,7 @@ class InternetInfo:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this InternetInfo.
+        r"""Gets the enterprise_project_id of this InternetInfo.
 
         企业项目ID
 
@@ -286,7 +286,7 @@ class InternetInfo:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this InternetInfo.
+        r"""Sets the enterprise_project_id of this InternetInfo.
 
         企业项目ID
 

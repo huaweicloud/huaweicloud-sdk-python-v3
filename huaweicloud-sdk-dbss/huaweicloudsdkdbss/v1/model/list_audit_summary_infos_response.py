@@ -44,7 +44,7 @@ class ListAuditSummaryInfosResponse(SdkResponse):
     }
 
     def __init__(self, project_id=None, audit_duration=None, total_sql=None, total_risk=None, today_sql=None, today_risk=None, today_session=None, update_time=None, data_list=None, total=None):
-        """ListAuditSummaryInfosResponse
+        r"""ListAuditSummaryInfosResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class ListAuditSummaryInfosResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListAuditSummaryInfosResponse.
+        r"""Gets the project_id of this ListAuditSummaryInfosResponse.
 
         项目ID
 
@@ -118,7 +118,7 @@ class ListAuditSummaryInfosResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListAuditSummaryInfosResponse.
+        r"""Sets the project_id of this ListAuditSummaryInfosResponse.
 
         项目ID
 
@@ -129,7 +129,7 @@ class ListAuditSummaryInfosResponse(SdkResponse):
 
     @property
     def audit_duration(self):
-        """Gets the audit_duration of this ListAuditSummaryInfosResponse.
+        r"""Gets the audit_duration of this ListAuditSummaryInfosResponse.
 
         审计总时长
 
@@ -140,7 +140,7 @@ class ListAuditSummaryInfosResponse(SdkResponse):
 
     @audit_duration.setter
     def audit_duration(self, audit_duration):
-        """Sets the audit_duration of this ListAuditSummaryInfosResponse.
+        r"""Sets the audit_duration of this ListAuditSummaryInfosResponse.
 
         审计总时长
 
@@ -151,7 +151,7 @@ class ListAuditSummaryInfosResponse(SdkResponse):
 
     @property
     def total_sql(self):
-        """Gets the total_sql of this ListAuditSummaryInfosResponse.
+        r"""Gets the total_sql of this ListAuditSummaryInfosResponse.
 
         语句总量
 
@@ -162,7 +162,7 @@ class ListAuditSummaryInfosResponse(SdkResponse):
 
     @total_sql.setter
     def total_sql(self, total_sql):
-        """Sets the total_sql of this ListAuditSummaryInfosResponse.
+        r"""Sets the total_sql of this ListAuditSummaryInfosResponse.
 
         语句总量
 
@@ -173,7 +173,7 @@ class ListAuditSummaryInfosResponse(SdkResponse):
 
     @property
     def total_risk(self):
-        """Gets the total_risk of this ListAuditSummaryInfosResponse.
+        r"""Gets the total_risk of this ListAuditSummaryInfosResponse.
 
         风险总量
 
@@ -184,7 +184,7 @@ class ListAuditSummaryInfosResponse(SdkResponse):
 
     @total_risk.setter
     def total_risk(self, total_risk):
-        """Sets the total_risk of this ListAuditSummaryInfosResponse.
+        r"""Sets the total_risk of this ListAuditSummaryInfosResponse.
 
         风险总量
 
@@ -195,7 +195,7 @@ class ListAuditSummaryInfosResponse(SdkResponse):
 
     @property
     def today_sql(self):
-        """Gets the today_sql of this ListAuditSummaryInfosResponse.
+        r"""Gets the today_sql of this ListAuditSummaryInfosResponse.
 
         今日语句
 
@@ -206,7 +206,7 @@ class ListAuditSummaryInfosResponse(SdkResponse):
 
     @today_sql.setter
     def today_sql(self, today_sql):
-        """Sets the today_sql of this ListAuditSummaryInfosResponse.
+        r"""Sets the today_sql of this ListAuditSummaryInfosResponse.
 
         今日语句
 
@@ -217,7 +217,7 @@ class ListAuditSummaryInfosResponse(SdkResponse):
 
     @property
     def today_risk(self):
-        """Gets the today_risk of this ListAuditSummaryInfosResponse.
+        r"""Gets the today_risk of this ListAuditSummaryInfosResponse.
 
         今日风险
 
@@ -228,7 +228,7 @@ class ListAuditSummaryInfosResponse(SdkResponse):
 
     @today_risk.setter
     def today_risk(self, today_risk):
-        """Sets the today_risk of this ListAuditSummaryInfosResponse.
+        r"""Sets the today_risk of this ListAuditSummaryInfosResponse.
 
         今日风险
 
@@ -239,7 +239,7 @@ class ListAuditSummaryInfosResponse(SdkResponse):
 
     @property
     def today_session(self):
-        """Gets the today_session of this ListAuditSummaryInfosResponse.
+        r"""Gets the today_session of this ListAuditSummaryInfosResponse.
 
         今日会话
 
@@ -250,7 +250,7 @@ class ListAuditSummaryInfosResponse(SdkResponse):
 
     @today_session.setter
     def today_session(self, today_session):
-        """Sets the today_session of this ListAuditSummaryInfosResponse.
+        r"""Sets the today_session of this ListAuditSummaryInfosResponse.
 
         今日会话
 
@@ -261,7 +261,7 @@ class ListAuditSummaryInfosResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ListAuditSummaryInfosResponse.
+        r"""Gets the update_time of this ListAuditSummaryInfosResponse.
 
         更新时间
 
@@ -272,7 +272,7 @@ class ListAuditSummaryInfosResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ListAuditSummaryInfosResponse.
+        r"""Sets the update_time of this ListAuditSummaryInfosResponse.
 
         更新时间
 
@@ -283,7 +283,7 @@ class ListAuditSummaryInfosResponse(SdkResponse):
 
     @property
     def data_list(self):
-        """Gets the data_list of this ListAuditSummaryInfosResponse.
+        r"""Gets the data_list of this ListAuditSummaryInfosResponse.
 
         列表信息
 
@@ -294,7 +294,7 @@ class ListAuditSummaryInfosResponse(SdkResponse):
 
     @data_list.setter
     def data_list(self, data_list):
-        """Sets the data_list of this ListAuditSummaryInfosResponse.
+        r"""Sets the data_list of this ListAuditSummaryInfosResponse.
 
         列表信息
 
@@ -305,7 +305,7 @@ class ListAuditSummaryInfosResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListAuditSummaryInfosResponse.
+        r"""Gets the total of this ListAuditSummaryInfosResponse.
 
         总数
 
@@ -316,7 +316,7 @@ class ListAuditSummaryInfosResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListAuditSummaryInfosResponse.
+        r"""Sets the total of this ListAuditSummaryInfosResponse.
 
         总数
 

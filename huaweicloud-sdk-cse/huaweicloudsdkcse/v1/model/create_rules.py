@@ -29,7 +29,7 @@ class CreateRules:
     }
 
     def __init__(self, precedence=None, match=None, route=None):
-        """CreateRules
+        r"""CreateRules
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CreateRules:
 
     @property
     def precedence(self):
-        """Gets the precedence of this CreateRules.
+        r"""Gets the precedence of this CreateRules.
 
         优先级，数字越大，优先级越高。
 
@@ -68,7 +68,7 @@ class CreateRules:
 
     @precedence.setter
     def precedence(self, precedence):
-        """Sets the precedence of this CreateRules.
+        r"""Sets the precedence of this CreateRules.
 
         优先级，数字越大，优先级越高。
 
@@ -79,7 +79,7 @@ class CreateRules:
 
     @property
     def match(self):
-        """Gets the match of this CreateRules.
+        r"""Gets the match of this CreateRules.
 
         :return: The match of this CreateRules.
         :rtype: :class:`huaweicloudsdkcse.v1.CreateMatch`
@@ -88,7 +88,7 @@ class CreateRules:
 
     @match.setter
     def match(self, match):
-        """Sets the match of this CreateRules.
+        r"""Sets the match of this CreateRules.
 
         :param match: The match of this CreateRules.
         :type match: :class:`huaweicloudsdkcse.v1.CreateMatch`
@@ -97,7 +97,7 @@ class CreateRules:
 
     @property
     def route(self):
-        """Gets the route of this CreateRules.
+        r"""Gets the route of this CreateRules.
 
         路由规则列表。
 
@@ -108,7 +108,7 @@ class CreateRules:
 
     @route.setter
     def route(self, route):
-        """Sets the route of this CreateRules.
+        r"""Sets the route of this CreateRules.
 
         路由规则列表。
 

@@ -23,7 +23,7 @@ class MetaStoreId:
     }
 
     def __init__(self):
-        """MetaStoreId
+        r"""MetaStoreId
 
         The model defined in huaweicloud sdk
 

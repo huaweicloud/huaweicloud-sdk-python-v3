@@ -30,7 +30,7 @@ class CreateProjectAndforkRepositoriesResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """CreateProjectAndforkRepositoriesResponse
+        r"""CreateProjectAndforkRepositoriesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateProjectAndforkRepositoriesResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this CreateProjectAndforkRepositoriesResponse.
+        r"""Gets the error of this CreateProjectAndforkRepositoriesResponse.
 
         :return: The error of this CreateProjectAndforkRepositoriesResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class CreateProjectAndforkRepositoriesResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this CreateProjectAndforkRepositoriesResponse.
+        r"""Sets the error of this CreateProjectAndforkRepositoriesResponse.
 
         :param error: The error of this CreateProjectAndforkRepositoriesResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class CreateProjectAndforkRepositoriesResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this CreateProjectAndforkRepositoriesResponse.
+        r"""Gets the result of this CreateProjectAndforkRepositoriesResponse.
 
         :return: The result of this CreateProjectAndforkRepositoriesResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.ProjectRepository`
@@ -85,7 +85,7 @@ class CreateProjectAndforkRepositoriesResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this CreateProjectAndforkRepositoriesResponse.
+        r"""Sets the result of this CreateProjectAndforkRepositoriesResponse.
 
         :param result: The result of this CreateProjectAndforkRepositoriesResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.ProjectRepository`
@@ -94,7 +94,7 @@ class CreateProjectAndforkRepositoriesResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateProjectAndforkRepositoriesResponse.
+        r"""Gets the status of this CreateProjectAndforkRepositoriesResponse.
 
         响应状态
 
@@ -105,7 +105,7 @@ class CreateProjectAndforkRepositoriesResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateProjectAndforkRepositoriesResponse.
+        r"""Sets the status of this CreateProjectAndforkRepositoriesResponse.
 
         响应状态
 

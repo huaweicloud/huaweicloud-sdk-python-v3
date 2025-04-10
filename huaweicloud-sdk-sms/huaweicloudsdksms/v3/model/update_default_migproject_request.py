@@ -25,7 +25,7 @@ class UpdateDefaultMigprojectRequest:
     }
 
     def __init__(self, mig_project_id=None):
-        """UpdateDefaultMigprojectRequest
+        r"""UpdateDefaultMigprojectRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateDefaultMigprojectRequest:
 
     @property
     def mig_project_id(self):
-        """Gets the mig_project_id of this UpdateDefaultMigprojectRequest.
+        r"""Gets the mig_project_id of this UpdateDefaultMigprojectRequest.
 
         迁移项目ID
 
@@ -53,7 +53,7 @@ class UpdateDefaultMigprojectRequest:
 
     @mig_project_id.setter
     def mig_project_id(self, mig_project_id):
-        """Sets the mig_project_id of this UpdateDefaultMigprojectRequest.
+        r"""Sets the mig_project_id of this UpdateDefaultMigprojectRequest.
 
         迁移项目ID
 

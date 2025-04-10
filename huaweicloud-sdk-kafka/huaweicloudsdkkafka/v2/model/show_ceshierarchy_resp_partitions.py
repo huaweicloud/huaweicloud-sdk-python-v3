@@ -25,7 +25,7 @@ class ShowCeshierarchyRespPartitions:
     }
 
     def __init__(self, name=None):
-        """ShowCeshierarchyRespPartitions
+        r"""ShowCeshierarchyRespPartitions
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowCeshierarchyRespPartitions:
 
     @property
     def name(self):
-        """Gets the name of this ShowCeshierarchyRespPartitions.
+        r"""Gets the name of this ShowCeshierarchyRespPartitions.
 
         分区名称。
 
@@ -54,7 +54,7 @@ class ShowCeshierarchyRespPartitions:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowCeshierarchyRespPartitions.
+        r"""Sets the name of this ShowCeshierarchyRespPartitions.
 
         分区名称。
 

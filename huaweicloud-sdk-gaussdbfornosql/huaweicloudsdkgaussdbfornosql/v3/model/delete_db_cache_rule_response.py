@@ -24,7 +24,7 @@ class DeleteDbCacheRuleResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteDbCacheRuleResponse
+        r"""DeleteDbCacheRuleResponse
 
         The model defined in huaweicloud sdk
 

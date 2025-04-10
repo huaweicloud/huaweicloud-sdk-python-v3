@@ -29,7 +29,7 @@ class OfficialWebsiteRatingResultV2:
     }
 
     def __init__(self, official_website_amount=None, installment_official_website_amount=None, installment_period_type=None):
-        """OfficialWebsiteRatingResultV2
+        r"""OfficialWebsiteRatingResultV2
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class OfficialWebsiteRatingResultV2:
 
     @property
     def official_website_amount(self):
-        """Gets the official_website_amount of this OfficialWebsiteRatingResultV2.
+        r"""Gets the official_website_amount of this OfficialWebsiteRatingResultV2.
 
         |参数名称：官网价格。单位为元| |参数约束及描述：官网价格。单位为元|
 
@@ -68,7 +68,7 @@ class OfficialWebsiteRatingResultV2:
 
     @official_website_amount.setter
     def official_website_amount(self, official_website_amount):
-        """Sets the official_website_amount of this OfficialWebsiteRatingResultV2.
+        r"""Sets the official_website_amount of this OfficialWebsiteRatingResultV2.
 
         |参数名称：官网价格。单位为元| |参数约束及描述：官网价格。单位为元|
 
@@ -79,7 +79,7 @@ class OfficialWebsiteRatingResultV2:
 
     @property
     def installment_official_website_amount(self):
-        """Gets the installment_official_website_amount of this OfficialWebsiteRatingResultV2.
+        r"""Gets the installment_official_website_amount of this OfficialWebsiteRatingResultV2.
 
         |参数名称：分期金额的官网价。单位为元| |参数约束及描述：分期金额的官网价。单位为元|
 
@@ -90,7 +90,7 @@ class OfficialWebsiteRatingResultV2:
 
     @installment_official_website_amount.setter
     def installment_official_website_amount(self, installment_official_website_amount):
-        """Sets the installment_official_website_amount of this OfficialWebsiteRatingResultV2.
+        r"""Sets the installment_official_website_amount of this OfficialWebsiteRatingResultV2.
 
         |参数名称：分期金额的官网价。单位为元| |参数约束及描述：分期金额的官网价。单位为元|
 
@@ -101,7 +101,7 @@ class OfficialWebsiteRatingResultV2:
 
     @property
     def installment_period_type(self):
-        """Gets the installment_period_type of this OfficialWebsiteRatingResultV2.
+        r"""Gets the installment_period_type of this OfficialWebsiteRatingResultV2.
 
         |参数名称：分期付款的周期类型。2：月| |参数的约束及描述：分期付款的周期类型。2：月|
 
@@ -112,7 +112,7 @@ class OfficialWebsiteRatingResultV2:
 
     @installment_period_type.setter
     def installment_period_type(self, installment_period_type):
-        """Sets the installment_period_type of this OfficialWebsiteRatingResultV2.
+        r"""Sets the installment_period_type of this OfficialWebsiteRatingResultV2.
 
         |参数名称：分期付款的周期类型。2：月| |参数的约束及描述：分期付款的周期类型。2：月|
 

@@ -27,7 +27,7 @@ class ApigInstanceDTO:
     }
 
     def __init__(self, instance_id=None, instance_name=None):
-        """ApigInstanceDTO
+        r"""ApigInstanceDTO
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ApigInstanceDTO:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ApigInstanceDTO.
+        r"""Gets the instance_id of this ApigInstanceDTO.
 
         网关实例编号
 
@@ -61,7 +61,7 @@ class ApigInstanceDTO:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ApigInstanceDTO.
+        r"""Sets the instance_id of this ApigInstanceDTO.
 
         网关实例编号
 
@@ -72,7 +72,7 @@ class ApigInstanceDTO:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this ApigInstanceDTO.
+        r"""Gets the instance_name of this ApigInstanceDTO.
 
         网关实例名称
 
@@ -83,7 +83,7 @@ class ApigInstanceDTO:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this ApigInstanceDTO.
+        r"""Sets the instance_name of this ApigInstanceDTO.
 
         网关实例名称
 

@@ -47,7 +47,7 @@ class ApproverVO:
     }
 
     def __init__(self, id=None, approver_name=None, user_id=None, user_name=None, email=None, user_type=None, phone_number=None, create_by=None, create_time=None, app_name=None, topic_urn=None, project_id=None):
-        """ApproverVO
+        r"""ApproverVO
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ApproverVO:
 
     @property
     def id(self):
-        """Gets the id of this ApproverVO.
+        r"""Gets the id of this ApproverVO.
 
         审批单ID，ID字符串。
 
@@ -131,7 +131,7 @@ class ApproverVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ApproverVO.
+        r"""Sets the id of this ApproverVO.
 
         审批单ID，ID字符串。
 
@@ -142,7 +142,7 @@ class ApproverVO:
 
     @property
     def approver_name(self):
-        """Gets the approver_name of this ApproverVO.
+        r"""Gets the approver_name of this ApproverVO.
 
         审批人姓名。
 
@@ -153,7 +153,7 @@ class ApproverVO:
 
     @approver_name.setter
     def approver_name(self, approver_name):
-        """Sets the approver_name of this ApproverVO.
+        r"""Sets the approver_name of this ApproverVO.
 
         审批人姓名。
 
@@ -164,7 +164,7 @@ class ApproverVO:
 
     @property
     def user_id(self):
-        """Gets the user_id of this ApproverVO.
+        r"""Gets the user_id of this ApproverVO.
 
         审批人ID。
 
@@ -175,7 +175,7 @@ class ApproverVO:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ApproverVO.
+        r"""Sets the user_id of this ApproverVO.
 
         审批人ID。
 
@@ -186,7 +186,7 @@ class ApproverVO:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ApproverVO.
+        r"""Gets the user_name of this ApproverVO.
 
         审批人名称。
 
@@ -197,7 +197,7 @@ class ApproverVO:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ApproverVO.
+        r"""Sets the user_name of this ApproverVO.
 
         审批人名称。
 
@@ -208,7 +208,7 @@ class ApproverVO:
 
     @property
     def email(self):
-        """Gets the email of this ApproverVO.
+        r"""Gets the email of this ApproverVO.
 
         email信息。
 
@@ -219,7 +219,7 @@ class ApproverVO:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this ApproverVO.
+        r"""Sets the email of this ApproverVO.
 
         email信息。
 
@@ -230,7 +230,7 @@ class ApproverVO:
 
     @property
     def user_type(self):
-        """Gets the user_type of this ApproverVO.
+        r"""Gets the user_type of this ApproverVO.
 
         用户类型。 枚举值：   - BIZ_METRIC_OWNER: 业务指标责任人   - APPROVER: 审批人   - BIZ_METRIC_OWNER_AND_APPROVER: 业务指标责任人是审核人 
 
@@ -241,7 +241,7 @@ class ApproverVO:
 
     @user_type.setter
     def user_type(self, user_type):
-        """Sets the user_type of this ApproverVO.
+        r"""Sets the user_type of this ApproverVO.
 
         用户类型。 枚举值：   - BIZ_METRIC_OWNER: 业务指标责任人   - APPROVER: 审批人   - BIZ_METRIC_OWNER_AND_APPROVER: 业务指标责任人是审核人 
 
@@ -252,7 +252,7 @@ class ApproverVO:
 
     @property
     def phone_number(self):
-        """Gets the phone_number of this ApproverVO.
+        r"""Gets the phone_number of this ApproverVO.
 
         电话号码。
 
@@ -263,7 +263,7 @@ class ApproverVO:
 
     @phone_number.setter
     def phone_number(self, phone_number):
-        """Sets the phone_number of this ApproverVO.
+        r"""Sets the phone_number of this ApproverVO.
 
         电话号码。
 
@@ -274,7 +274,7 @@ class ApproverVO:
 
     @property
     def create_by(self):
-        """Gets the create_by of this ApproverVO.
+        r"""Gets the create_by of this ApproverVO.
 
         创建人。
 
@@ -285,7 +285,7 @@ class ApproverVO:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this ApproverVO.
+        r"""Sets the create_by of this ApproverVO.
 
         创建人。
 
@@ -296,7 +296,7 @@ class ApproverVO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ApproverVO.
+        r"""Gets the create_time of this ApproverVO.
 
         创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -307,7 +307,7 @@ class ApproverVO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ApproverVO.
+        r"""Sets the create_time of this ApproverVO.
 
         创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -318,7 +318,7 @@ class ApproverVO:
 
     @property
     def app_name(self):
-        """Gets the app_name of this ApproverVO.
+        r"""Gets the app_name of this ApproverVO.
 
         业务系统名称。
 
@@ -329,7 +329,7 @@ class ApproverVO:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ApproverVO.
+        r"""Sets the app_name of this ApproverVO.
 
         业务系统名称。
 
@@ -340,7 +340,7 @@ class ApproverVO:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this ApproverVO.
+        r"""Gets the topic_urn of this ApproverVO.
 
         smn主题urn。
 
@@ -351,7 +351,7 @@ class ApproverVO:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this ApproverVO.
+        r"""Sets the topic_urn of this ApproverVO.
 
         smn主题urn。
 
@@ -362,7 +362,7 @@ class ApproverVO:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ApproverVO.
+        r"""Gets the project_id of this ApproverVO.
 
         项目ID。
 
@@ -373,7 +373,7 @@ class ApproverVO:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ApproverVO.
+        r"""Sets the project_id of this ApproverVO.
 
         项目ID。
 

@@ -32,7 +32,7 @@ class ShowApiInfoResponse(SdkResponse):
     }
 
     def __init__(self, id=None, links=None, status=None, updated=None):
-        """ShowApiInfoResponse
+        r"""ShowApiInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowApiInfoResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowApiInfoResponse.
+        r"""Gets the id of this ShowApiInfoResponse.
 
         版本号，例如v1。
 
@@ -76,7 +76,7 @@ class ShowApiInfoResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowApiInfoResponse.
+        r"""Sets the id of this ShowApiInfoResponse.
 
         版本号，例如v1。
 
@@ -87,7 +87,7 @@ class ShowApiInfoResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this ShowApiInfoResponse.
+        r"""Gets the links of this ShowApiInfoResponse.
 
         链接地址信息。
 
@@ -98,7 +98,7 @@ class ShowApiInfoResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this ShowApiInfoResponse.
+        r"""Sets the links of this ShowApiInfoResponse.
 
         链接地址信息。
 
@@ -109,7 +109,7 @@ class ShowApiInfoResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowApiInfoResponse.
+        r"""Gets the status of this ShowApiInfoResponse.
 
         版本状态。  取值“CURRENT”，表示该版本为主推版本。  取值\"SUPPORTED\"，表示支持该版本。  取值“DEPRECATED”，表示为废弃版本，存在后续删除的可能。
 
@@ -120,7 +120,7 @@ class ShowApiInfoResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowApiInfoResponse.
+        r"""Sets the status of this ShowApiInfoResponse.
 
         版本状态。  取值“CURRENT”，表示该版本为主推版本。  取值\"SUPPORTED\"，表示支持该版本。  取值“DEPRECATED”，表示为废弃版本，存在后续删除的可能。
 
@@ -131,7 +131,7 @@ class ShowApiInfoResponse(SdkResponse):
 
     @property
     def updated(self):
-        """Gets the updated of this ShowApiInfoResponse.
+        r"""Gets the updated of this ShowApiInfoResponse.
 
         版本更新时间。  格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指UTC时间。
 
@@ -142,7 +142,7 @@ class ShowApiInfoResponse(SdkResponse):
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ShowApiInfoResponse.
+        r"""Sets the updated of this ShowApiInfoResponse.
 
         版本更新时间。  格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指UTC时间。
 

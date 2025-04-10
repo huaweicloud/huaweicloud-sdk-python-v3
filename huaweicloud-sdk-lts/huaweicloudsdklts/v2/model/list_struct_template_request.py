@@ -25,7 +25,7 @@ class ListStructTemplateRequest:
     }
 
     def __init__(self, id=None):
-        """ListStructTemplateRequest
+        r"""ListStructTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListStructTemplateRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListStructTemplateRequest.
+        r"""Gets the id of this ListStructTemplateRequest.
 
         待查询模板id,非必填，不传时返回项目下所有自定义结构化模板
 
@@ -54,7 +54,7 @@ class ListStructTemplateRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListStructTemplateRequest.
+        r"""Sets the id of this ListStructTemplateRequest.
 
         待查询模板id,非必填，不传时返回项目下所有自定义结构化模板
 

@@ -29,7 +29,7 @@ class ProlongMeetingRequest:
     }
 
     def __init__(self, conference_id=None, x_conference_authorization=None, body=None):
-        """ProlongMeetingRequest
+        r"""ProlongMeetingRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ProlongMeetingRequest:
 
     @property
     def conference_id(self):
-        """Gets the conference_id of this ProlongMeetingRequest.
+        r"""Gets the conference_id of this ProlongMeetingRequest.
 
         会议ID。
 
@@ -66,7 +66,7 @@ class ProlongMeetingRequest:
 
     @conference_id.setter
     def conference_id(self, conference_id):
-        """Sets the conference_id of this ProlongMeetingRequest.
+        r"""Sets the conference_id of this ProlongMeetingRequest.
 
         会议ID。
 
@@ -77,7 +77,7 @@ class ProlongMeetingRequest:
 
     @property
     def x_conference_authorization(self):
-        """Gets the x_conference_authorization of this ProlongMeetingRequest.
+        r"""Gets the x_conference_authorization of this ProlongMeetingRequest.
 
         会控Token，通过[[获取会控token](https://support.huaweicloud.com/api-meeting/meeting_21_0027.html)](tag:hws)[[获取会控token](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0027.html)](tag:hk)接口获得。
 
@@ -88,7 +88,7 @@ class ProlongMeetingRequest:
 
     @x_conference_authorization.setter
     def x_conference_authorization(self, x_conference_authorization):
-        """Sets the x_conference_authorization of this ProlongMeetingRequest.
+        r"""Sets the x_conference_authorization of this ProlongMeetingRequest.
 
         会控Token，通过[[获取会控token](https://support.huaweicloud.com/api-meeting/meeting_21_0027.html)](tag:hws)[[获取会控token](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0027.html)](tag:hk)接口获得。
 
@@ -99,7 +99,7 @@ class ProlongMeetingRequest:
 
     @property
     def body(self):
-        """Gets the body of this ProlongMeetingRequest.
+        r"""Gets the body of this ProlongMeetingRequest.
 
         :return: The body of this ProlongMeetingRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RestProlongDurReqBody`
@@ -108,7 +108,7 @@ class ProlongMeetingRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ProlongMeetingRequest.
+        r"""Sets the body of this ProlongMeetingRequest.
 
         :param body: The body of this ProlongMeetingRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.RestProlongDurReqBody`

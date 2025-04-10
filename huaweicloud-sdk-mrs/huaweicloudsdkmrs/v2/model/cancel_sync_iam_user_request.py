@@ -27,7 +27,7 @@ class CancelSyncIamUserRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """CancelSyncIamUserRequest
+        r"""CancelSyncIamUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CancelSyncIamUserRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CancelSyncIamUserRequest.
+        r"""Gets the cluster_id of this CancelSyncIamUserRequest.
 
         集群ID
 
@@ -60,7 +60,7 @@ class CancelSyncIamUserRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CancelSyncIamUserRequest.
+        r"""Sets the cluster_id of this CancelSyncIamUserRequest.
 
         集群ID
 
@@ -71,7 +71,7 @@ class CancelSyncIamUserRequest:
 
     @property
     def body(self):
-        """Gets the body of this CancelSyncIamUserRequest.
+        r"""Gets the body of this CancelSyncIamUserRequest.
 
         :return: The body of this CancelSyncIamUserRequest.
         :rtype: :class:`huaweicloudsdkmrs.v2.CancelSyncRequest`
@@ -80,7 +80,7 @@ class CancelSyncIamUserRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CancelSyncIamUserRequest.
+        r"""Sets the body of this CancelSyncIamUserRequest.
 
         :param body: The body of this CancelSyncIamUserRequest.
         :type body: :class:`huaweicloudsdkmrs.v2.CancelSyncRequest`

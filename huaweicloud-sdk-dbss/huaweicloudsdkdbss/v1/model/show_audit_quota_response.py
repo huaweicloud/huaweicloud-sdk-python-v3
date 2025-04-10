@@ -32,7 +32,7 @@ class ShowAuditQuotaResponse(SdkResponse):
     }
 
     def __init__(self, project_id=None, audit_quota=None, cpu=None, ram=None):
-        """ShowAuditQuotaResponse
+        r"""ShowAuditQuotaResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowAuditQuotaResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowAuditQuotaResponse.
+        r"""Gets the project_id of this ShowAuditQuotaResponse.
 
         项目ID。
 
@@ -76,7 +76,7 @@ class ShowAuditQuotaResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowAuditQuotaResponse.
+        r"""Sets the project_id of this ShowAuditQuotaResponse.
 
         项目ID。
 
@@ -87,7 +87,7 @@ class ShowAuditQuotaResponse(SdkResponse):
 
     @property
     def audit_quota(self):
-        """Gets the audit_quota of this ShowAuditQuotaResponse.
+        r"""Gets the audit_quota of this ShowAuditQuotaResponse.
 
         审计实例剩余配额。
 
@@ -98,7 +98,7 @@ class ShowAuditQuotaResponse(SdkResponse):
 
     @audit_quota.setter
     def audit_quota(self, audit_quota):
-        """Sets the audit_quota of this ShowAuditQuotaResponse.
+        r"""Sets the audit_quota of this ShowAuditQuotaResponse.
 
         审计实例剩余配额。
 
@@ -109,7 +109,7 @@ class ShowAuditQuotaResponse(SdkResponse):
 
     @property
     def cpu(self):
-        """Gets the cpu of this ShowAuditQuotaResponse.
+        r"""Gets the cpu of this ShowAuditQuotaResponse.
 
         CPU剩余配额。
 
@@ -120,7 +120,7 @@ class ShowAuditQuotaResponse(SdkResponse):
 
     @cpu.setter
     def cpu(self, cpu):
-        """Sets the cpu of this ShowAuditQuotaResponse.
+        r"""Sets the cpu of this ShowAuditQuotaResponse.
 
         CPU剩余配额。
 
@@ -131,7 +131,7 @@ class ShowAuditQuotaResponse(SdkResponse):
 
     @property
     def ram(self):
-        """Gets the ram of this ShowAuditQuotaResponse.
+        r"""Gets the ram of this ShowAuditQuotaResponse.
 
         内存剩余配额。
 
@@ -142,7 +142,7 @@ class ShowAuditQuotaResponse(SdkResponse):
 
     @ram.setter
     def ram(self, ram):
-        """Sets the ram of this ShowAuditQuotaResponse.
+        r"""Sets the ram of this ShowAuditQuotaResponse.
 
         内存剩余配额。
 

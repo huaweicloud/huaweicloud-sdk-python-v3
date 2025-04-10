@@ -25,7 +25,7 @@ class CreateOrUpdateScalingPolicyRequest:
     }
 
     def __init__(self, body=None):
-        """CreateOrUpdateScalingPolicyRequest
+        r"""CreateOrUpdateScalingPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateOrUpdateScalingPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateOrUpdateScalingPolicyRequest.
+        r"""Gets the body of this CreateOrUpdateScalingPolicyRequest.
 
         :return: The body of this CreateOrUpdateScalingPolicyRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.CreateOrUpdateScalingPolicyReq`
@@ -52,7 +52,7 @@ class CreateOrUpdateScalingPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateOrUpdateScalingPolicyRequest.
+        r"""Sets the body of this CreateOrUpdateScalingPolicyRequest.
 
         :param body: The body of this CreateOrUpdateScalingPolicyRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.CreateOrUpdateScalingPolicyReq`

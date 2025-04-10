@@ -25,7 +25,7 @@ class KeystoneDeleteMappingRequest:
     }
 
     def __init__(self, id=None):
-        """KeystoneDeleteMappingRequest
+        r"""KeystoneDeleteMappingRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class KeystoneDeleteMappingRequest:
 
     @property
     def id(self):
-        """Gets the id of this KeystoneDeleteMappingRequest.
+        r"""Gets the id of this KeystoneDeleteMappingRequest.
 
         待删除的映射ID。
 
@@ -53,7 +53,7 @@ class KeystoneDeleteMappingRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this KeystoneDeleteMappingRequest.
+        r"""Sets the id of this KeystoneDeleteMappingRequest.
 
         待删除的映射ID。
 

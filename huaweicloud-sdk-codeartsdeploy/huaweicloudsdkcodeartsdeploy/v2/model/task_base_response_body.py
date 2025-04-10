@@ -29,7 +29,7 @@ class TaskBaseResponseBody:
     }
 
     def __init__(self, id=None, state=None, deploy_system=None):
-        """TaskBaseResponseBody
+        r"""TaskBaseResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class TaskBaseResponseBody:
 
     @property
     def id(self):
-        """Gets the id of this TaskBaseResponseBody.
+        r"""Gets the id of this TaskBaseResponseBody.
 
         部署任务id
 
@@ -68,7 +68,7 @@ class TaskBaseResponseBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TaskBaseResponseBody.
+        r"""Sets the id of this TaskBaseResponseBody.
 
         部署任务id
 
@@ -79,7 +79,7 @@ class TaskBaseResponseBody:
 
     @property
     def state(self):
-        """Gets the state of this TaskBaseResponseBody.
+        r"""Gets the state of this TaskBaseResponseBody.
 
         部署任务状态
 
@@ -90,7 +90,7 @@ class TaskBaseResponseBody:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this TaskBaseResponseBody.
+        r"""Sets the state of this TaskBaseResponseBody.
 
         部署任务状态
 
@@ -101,7 +101,7 @@ class TaskBaseResponseBody:
 
     @property
     def deploy_system(self):
-        """Gets the deploy_system of this TaskBaseResponseBody.
+        r"""Gets the deploy_system of this TaskBaseResponseBody.
 
         部署任务类型
 
@@ -112,7 +112,7 @@ class TaskBaseResponseBody:
 
     @deploy_system.setter
     def deploy_system(self, deploy_system):
-        """Sets the deploy_system of this TaskBaseResponseBody.
+        r"""Sets the deploy_system of this TaskBaseResponseBody.
 
         部署任务类型
 

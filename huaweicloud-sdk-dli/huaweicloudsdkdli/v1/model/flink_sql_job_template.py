@@ -37,7 +37,7 @@ class FlinkSqlJobTemplate:
     }
 
     def __init__(self, template_id=None, name=None, desc=None, create_time=None, update_time=None, sql_body=None, job_type=None):
-        """FlinkSqlJobTemplate
+        r"""FlinkSqlJobTemplate
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class FlinkSqlJobTemplate:
 
     @property
     def template_id(self):
-        """Gets the template_id of this FlinkSqlJobTemplate.
+        r"""Gets the template_id of this FlinkSqlJobTemplate.
 
         模板ID。
 
@@ -96,7 +96,7 @@ class FlinkSqlJobTemplate:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this FlinkSqlJobTemplate.
+        r"""Sets the template_id of this FlinkSqlJobTemplate.
 
         模板ID。
 
@@ -107,7 +107,7 @@ class FlinkSqlJobTemplate:
 
     @property
     def name(self):
-        """Gets the name of this FlinkSqlJobTemplate.
+        r"""Gets the name of this FlinkSqlJobTemplate.
 
         模板名称。
 
@@ -118,7 +118,7 @@ class FlinkSqlJobTemplate:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this FlinkSqlJobTemplate.
+        r"""Sets the name of this FlinkSqlJobTemplate.
 
         模板名称。
 
@@ -129,7 +129,7 @@ class FlinkSqlJobTemplate:
 
     @property
     def desc(self):
-        """Gets the desc of this FlinkSqlJobTemplate.
+        r"""Gets the desc of this FlinkSqlJobTemplate.
 
         模板描述。
 
@@ -140,7 +140,7 @@ class FlinkSqlJobTemplate:
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this FlinkSqlJobTemplate.
+        r"""Sets the desc of this FlinkSqlJobTemplate.
 
         模板描述。
 
@@ -151,7 +151,7 @@ class FlinkSqlJobTemplate:
 
     @property
     def create_time(self):
-        """Gets the create_time of this FlinkSqlJobTemplate.
+        r"""Gets the create_time of this FlinkSqlJobTemplate.
 
         模板创建时间。
 
@@ -162,7 +162,7 @@ class FlinkSqlJobTemplate:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this FlinkSqlJobTemplate.
+        r"""Sets the create_time of this FlinkSqlJobTemplate.
 
         模板创建时间。
 
@@ -173,7 +173,7 @@ class FlinkSqlJobTemplate:
 
     @property
     def update_time(self):
-        """Gets the update_time of this FlinkSqlJobTemplate.
+        r"""Gets the update_time of this FlinkSqlJobTemplate.
 
         模板更新时间。
 
@@ -184,7 +184,7 @@ class FlinkSqlJobTemplate:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this FlinkSqlJobTemplate.
+        r"""Sets the update_time of this FlinkSqlJobTemplate.
 
         模板更新时间。
 
@@ -195,7 +195,7 @@ class FlinkSqlJobTemplate:
 
     @property
     def sql_body(self):
-        """Gets the sql_body of this FlinkSqlJobTemplate.
+        r"""Gets the sql_body of this FlinkSqlJobTemplate.
 
         Stream SQL语句, 至少包含source, query, sink三个部分。
 
@@ -206,7 +206,7 @@ class FlinkSqlJobTemplate:
 
     @sql_body.setter
     def sql_body(self, sql_body):
-        """Sets the sql_body of this FlinkSqlJobTemplate.
+        r"""Sets the sql_body of this FlinkSqlJobTemplate.
 
         Stream SQL语句, 至少包含source, query, sink三个部分。
 
@@ -217,7 +217,7 @@ class FlinkSqlJobTemplate:
 
     @property
     def job_type(self):
-        """Gets the job_type of this FlinkSqlJobTemplate.
+        r"""Gets the job_type of this FlinkSqlJobTemplate.
 
         作业模板的类型。
 
@@ -228,7 +228,7 @@ class FlinkSqlJobTemplate:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this FlinkSqlJobTemplate.
+        r"""Sets the job_type of this FlinkSqlJobTemplate.
 
         作业模板的类型。
 

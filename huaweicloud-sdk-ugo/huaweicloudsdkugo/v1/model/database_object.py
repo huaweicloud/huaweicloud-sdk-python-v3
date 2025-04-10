@@ -37,7 +37,7 @@ class DatabaseObject:
     }
 
     def __init__(self, object_type=None, total_count=None, succeed_count=None, failed_count=None, ignored_count=None, manual_count=None, success_rate=None):
-        """DatabaseObject
+        r"""DatabaseObject
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class DatabaseObject:
 
     @property
     def object_type(self):
-        """Gets the object_type of this DatabaseObject.
+        r"""Gets the object_type of this DatabaseObject.
 
         对象类型。
 
@@ -89,7 +89,7 @@ class DatabaseObject:
 
     @object_type.setter
     def object_type(self, object_type):
-        """Sets the object_type of this DatabaseObject.
+        r"""Sets the object_type of this DatabaseObject.
 
         对象类型。
 
@@ -100,7 +100,7 @@ class DatabaseObject:
 
     @property
     def total_count(self):
-        """Gets the total_count of this DatabaseObject.
+        r"""Gets the total_count of this DatabaseObject.
 
         该类型对象的总数。
 
@@ -111,7 +111,7 @@ class DatabaseObject:
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this DatabaseObject.
+        r"""Sets the total_count of this DatabaseObject.
 
         该类型对象的总数。
 
@@ -122,7 +122,7 @@ class DatabaseObject:
 
     @property
     def succeed_count(self):
-        """Gets the succeed_count of this DatabaseObject.
+        r"""Gets the succeed_count of this DatabaseObject.
 
         成功的对象数量。
 
@@ -133,7 +133,7 @@ class DatabaseObject:
 
     @succeed_count.setter
     def succeed_count(self, succeed_count):
-        """Sets the succeed_count of this DatabaseObject.
+        r"""Sets the succeed_count of this DatabaseObject.
 
         成功的对象数量。
 
@@ -144,7 +144,7 @@ class DatabaseObject:
 
     @property
     def failed_count(self):
-        """Gets the failed_count of this DatabaseObject.
+        r"""Gets the failed_count of this DatabaseObject.
 
         失败的对象数量。
 
@@ -155,7 +155,7 @@ class DatabaseObject:
 
     @failed_count.setter
     def failed_count(self, failed_count):
-        """Sets the failed_count of this DatabaseObject.
+        r"""Sets the failed_count of this DatabaseObject.
 
         失败的对象数量。
 
@@ -166,7 +166,7 @@ class DatabaseObject:
 
     @property
     def ignored_count(self):
-        """Gets the ignored_count of this DatabaseObject.
+        r"""Gets the ignored_count of this DatabaseObject.
 
         忽略的对象数量。
 
@@ -177,7 +177,7 @@ class DatabaseObject:
 
     @ignored_count.setter
     def ignored_count(self, ignored_count):
-        """Sets the ignored_count of this DatabaseObject.
+        r"""Sets the ignored_count of this DatabaseObject.
 
         忽略的对象数量。
 
@@ -188,7 +188,7 @@ class DatabaseObject:
 
     @property
     def manual_count(self):
-        """Gets the manual_count of this DatabaseObject.
+        r"""Gets the manual_count of this DatabaseObject.
 
         手动操作的对象数量。
 
@@ -199,7 +199,7 @@ class DatabaseObject:
 
     @manual_count.setter
     def manual_count(self, manual_count):
-        """Sets the manual_count of this DatabaseObject.
+        r"""Sets the manual_count of this DatabaseObject.
 
         手动操作的对象数量。
 
@@ -210,7 +210,7 @@ class DatabaseObject:
 
     @property
     def success_rate(self):
-        """Gets the success_rate of this DatabaseObject.
+        r"""Gets the success_rate of this DatabaseObject.
 
         成功率。
 
@@ -221,7 +221,7 @@ class DatabaseObject:
 
     @success_rate.setter
     def success_rate(self, success_rate):
-        """Sets the success_rate of this DatabaseObject.
+        r"""Sets the success_rate of this DatabaseObject.
 
         成功率。
 

@@ -29,7 +29,7 @@ class ProtocolResult:
     }
 
     def __init__(self, id=None, mapping_id=None, links=None):
-        """ProtocolResult
+        r"""ProtocolResult
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ProtocolResult:
 
     @property
     def id(self):
-        """Gets the id of this ProtocolResult.
+        r"""Gets the id of this ProtocolResult.
 
         协议ID。
 
@@ -65,7 +65,7 @@ class ProtocolResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ProtocolResult.
+        r"""Sets the id of this ProtocolResult.
 
         协议ID。
 
@@ -76,7 +76,7 @@ class ProtocolResult:
 
     @property
     def mapping_id(self):
-        """Gets the mapping_id of this ProtocolResult.
+        r"""Gets the mapping_id of this ProtocolResult.
 
         映射ID。
 
@@ -87,7 +87,7 @@ class ProtocolResult:
 
     @mapping_id.setter
     def mapping_id(self, mapping_id):
-        """Sets the mapping_id of this ProtocolResult.
+        r"""Sets the mapping_id of this ProtocolResult.
 
         映射ID。
 
@@ -98,7 +98,7 @@ class ProtocolResult:
 
     @property
     def links(self):
-        """Gets the links of this ProtocolResult.
+        r"""Gets the links of this ProtocolResult.
 
         :return: The links of this ProtocolResult.
         :rtype: :class:`huaweicloudsdkiam.v3.ProtocolLinks`
@@ -107,7 +107,7 @@ class ProtocolResult:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this ProtocolResult.
+        r"""Sets the links of this ProtocolResult.
 
         :param links: The links of this ProtocolResult.
         :type links: :class:`huaweicloudsdkiam.v3.ProtocolLinks`

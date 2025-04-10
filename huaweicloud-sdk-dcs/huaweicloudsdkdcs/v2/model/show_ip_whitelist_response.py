@@ -30,7 +30,7 @@ class ShowIpWhitelistResponse(SdkResponse):
     }
 
     def __init__(self, instance_id=None, enable_whitelist=None, whitelist=None):
-        """ShowIpWhitelistResponse
+        r"""ShowIpWhitelistResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowIpWhitelistResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowIpWhitelistResponse.
+        r"""Gets the instance_id of this ShowIpWhitelistResponse.
 
         实例ID
 
@@ -69,7 +69,7 @@ class ShowIpWhitelistResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowIpWhitelistResponse.
+        r"""Sets the instance_id of this ShowIpWhitelistResponse.
 
         实例ID
 
@@ -80,7 +80,7 @@ class ShowIpWhitelistResponse(SdkResponse):
 
     @property
     def enable_whitelist(self):
-        """Gets the enable_whitelist of this ShowIpWhitelistResponse.
+        r"""Gets the enable_whitelist of this ShowIpWhitelistResponse.
 
         是否启用白名单（true/false）。
 
@@ -91,7 +91,7 @@ class ShowIpWhitelistResponse(SdkResponse):
 
     @enable_whitelist.setter
     def enable_whitelist(self, enable_whitelist):
-        """Sets the enable_whitelist of this ShowIpWhitelistResponse.
+        r"""Sets the enable_whitelist of this ShowIpWhitelistResponse.
 
         是否启用白名单（true/false）。
 
@@ -102,7 +102,7 @@ class ShowIpWhitelistResponse(SdkResponse):
 
     @property
     def whitelist(self):
-        """Gets the whitelist of this ShowIpWhitelistResponse.
+        r"""Gets the whitelist of this ShowIpWhitelistResponse.
 
         IP白名单分组列表。
 
@@ -113,7 +113,7 @@ class ShowIpWhitelistResponse(SdkResponse):
 
     @whitelist.setter
     def whitelist(self, whitelist):
-        """Sets the whitelist of this ShowIpWhitelistResponse.
+        r"""Sets the whitelist of this ShowIpWhitelistResponse.
 
         IP白名单分组列表。
 

@@ -31,7 +31,7 @@ class HandleExternalIncidentRequest:
     }
 
     def __init__(self, incident_num=None, operator=None, operate_key=None, parameter=None):
-        """HandleExternalIncidentRequest
+        r"""HandleExternalIncidentRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class HandleExternalIncidentRequest:
 
     @property
     def incident_num(self):
-        """Gets the incident_num of this HandleExternalIncidentRequest.
+        r"""Gets the incident_num of this HandleExternalIncidentRequest.
 
         事件单号
 
@@ -72,7 +72,7 @@ class HandleExternalIncidentRequest:
 
     @incident_num.setter
     def incident_num(self, incident_num):
-        """Sets the incident_num of this HandleExternalIncidentRequest.
+        r"""Sets the incident_num of this HandleExternalIncidentRequest.
 
         事件单号
 
@@ -83,7 +83,7 @@ class HandleExternalIncidentRequest:
 
     @property
     def operator(self):
-        """Gets the operator of this HandleExternalIncidentRequest.
+        r"""Gets the operator of this HandleExternalIncidentRequest.
 
         操作人ID
 
@@ -94,7 +94,7 @@ class HandleExternalIncidentRequest:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this HandleExternalIncidentRequest.
+        r"""Sets the operator of this HandleExternalIncidentRequest.
 
         操作人ID
 
@@ -105,7 +105,7 @@ class HandleExternalIncidentRequest:
 
     @property
     def operate_key(self):
-        """Gets the operate_key of this HandleExternalIncidentRequest.
+        r"""Gets the operate_key of this HandleExternalIncidentRequest.
 
         操作类型
 
@@ -116,7 +116,7 @@ class HandleExternalIncidentRequest:
 
     @operate_key.setter
     def operate_key(self, operate_key):
-        """Sets the operate_key of this HandleExternalIncidentRequest.
+        r"""Sets the operate_key of this HandleExternalIncidentRequest.
 
         操作类型
 
@@ -127,7 +127,7 @@ class HandleExternalIncidentRequest:
 
     @property
     def parameter(self):
-        """Gets the parameter of this HandleExternalIncidentRequest.
+        r"""Gets the parameter of this HandleExternalIncidentRequest.
 
         入参
 
@@ -138,7 +138,7 @@ class HandleExternalIncidentRequest:
 
     @parameter.setter
     def parameter(self, parameter):
-        """Sets the parameter of this HandleExternalIncidentRequest.
+        r"""Sets the parameter of this HandleExternalIncidentRequest.
 
         入参
 

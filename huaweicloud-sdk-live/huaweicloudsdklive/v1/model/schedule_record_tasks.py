@@ -39,7 +39,7 @@ class ScheduleRecordTasks:
     }
 
     def __init__(self, domain=None, app=None, stream=None, start_time=None, end_time=None, template_id=None, stop_time=None, task_id=None):
-        """ScheduleRecordTasks
+        r"""ScheduleRecordTasks
 
         The model defined in huaweicloud sdk
 
@@ -87,7 +87,7 @@ class ScheduleRecordTasks:
 
     @property
     def domain(self):
-        """Gets the domain of this ScheduleRecordTasks.
+        r"""Gets the domain of this ScheduleRecordTasks.
 
         推流域名
 
@@ -98,7 +98,7 @@ class ScheduleRecordTasks:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this ScheduleRecordTasks.
+        r"""Sets the domain of this ScheduleRecordTasks.
 
         推流域名
 
@@ -109,7 +109,7 @@ class ScheduleRecordTasks:
 
     @property
     def app(self):
-        """Gets the app of this ScheduleRecordTasks.
+        r"""Gets the app of this ScheduleRecordTasks.
 
         应用名称
 
@@ -120,7 +120,7 @@ class ScheduleRecordTasks:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this ScheduleRecordTasks.
+        r"""Sets the app of this ScheduleRecordTasks.
 
         应用名称
 
@@ -131,7 +131,7 @@ class ScheduleRecordTasks:
 
     @property
     def stream(self):
-        """Gets the stream of this ScheduleRecordTasks.
+        r"""Gets the stream of this ScheduleRecordTasks.
 
         流名称
 
@@ -142,7 +142,7 @@ class ScheduleRecordTasks:
 
     @stream.setter
     def stream(self, stream):
-        """Sets the stream of this ScheduleRecordTasks.
+        r"""Sets the stream of this ScheduleRecordTasks.
 
         流名称
 
@@ -153,7 +153,7 @@ class ScheduleRecordTasks:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ScheduleRecordTasks.
+        r"""Gets the start_time of this ScheduleRecordTasks.
 
         录制任务开始时间，Unix时间戳。如果不填表示立即启动录制。EndTime - StartTime不能超过24小时。
 
@@ -164,7 +164,7 @@ class ScheduleRecordTasks:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ScheduleRecordTasks.
+        r"""Sets the start_time of this ScheduleRecordTasks.
 
         录制任务开始时间，Unix时间戳。如果不填表示立即启动录制。EndTime - StartTime不能超过24小时。
 
@@ -175,7 +175,7 @@ class ScheduleRecordTasks:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ScheduleRecordTasks.
+        r"""Gets the end_time of this ScheduleRecordTasks.
 
         录制任务结束时间，Unix时间戳。设置时间必须大于StartTime及当前时间，且小于当前时间+7天。
 
@@ -186,7 +186,7 @@ class ScheduleRecordTasks:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ScheduleRecordTasks.
+        r"""Sets the end_time of this ScheduleRecordTasks.
 
         录制任务结束时间，Unix时间戳。设置时间必须大于StartTime及当前时间，且小于当前时间+7天。
 
@@ -197,7 +197,7 @@ class ScheduleRecordTasks:
 
     @property
     def template_id(self):
-        """Gets the template_id of this ScheduleRecordTasks.
+        r"""Gets the template_id of this ScheduleRecordTasks.
 
         录制模板ID，对应模板必须存在否则会启动失败。
 
@@ -208,7 +208,7 @@ class ScheduleRecordTasks:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this ScheduleRecordTasks.
+        r"""Sets the template_id of this ScheduleRecordTasks.
 
         录制模板ID，对应模板必须存在否则会启动失败。
 
@@ -219,7 +219,7 @@ class ScheduleRecordTasks:
 
     @property
     def stop_time(self):
-        """Gets the stop_time of this ScheduleRecordTasks.
+        r"""Gets the stop_time of this ScheduleRecordTasks.
 
         任务停止时间，当前还在生效的任务此值为0，任务未被停止但是超过了end_time后此值为自动停止时间。
 
@@ -230,7 +230,7 @@ class ScheduleRecordTasks:
 
     @stop_time.setter
     def stop_time(self, stop_time):
-        """Sets the stop_time of this ScheduleRecordTasks.
+        r"""Sets the stop_time of this ScheduleRecordTasks.
 
         任务停止时间，当前还在生效的任务此值为0，任务未被停止但是超过了end_time后此值为自动停止时间。
 
@@ -241,7 +241,7 @@ class ScheduleRecordTasks:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ScheduleRecordTasks.
+        r"""Gets the task_id of this ScheduleRecordTasks.
 
         录制任务ID
 
@@ -252,7 +252,7 @@ class ScheduleRecordTasks:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ScheduleRecordTasks.
+        r"""Sets the task_id of this ScheduleRecordTasks.
 
         录制任务ID
 

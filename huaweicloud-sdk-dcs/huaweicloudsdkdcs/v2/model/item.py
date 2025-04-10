@@ -27,7 +27,7 @@ class Item:
     }
 
     def __init__(self, result=None, id=None):
-        """Item
+        r"""Item
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Item:
 
     @property
     def result(self):
-        """Gets the result of this Item.
+        r"""Gets the result of this Item.
 
         诊断结果
 
@@ -61,7 +61,7 @@ class Item:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this Item.
+        r"""Sets the result of this Item.
 
         诊断结果
 
@@ -72,7 +72,7 @@ class Item:
 
     @property
     def id(self):
-        """Gets the id of this Item.
+        r"""Gets the id of this Item.
 
         诊断报告ID
 
@@ -83,7 +83,7 @@ class Item:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Item.
+        r"""Sets the id of this Item.
 
         诊断报告ID
 

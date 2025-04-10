@@ -33,7 +33,7 @@ class CreateSnapshotOption:
     }
 
     def __init__(self, volume_id=None, force=None, metadata=None, description=None, name=None):
-        """CreateSnapshotOption
+        r"""CreateSnapshotOption
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class CreateSnapshotOption:
 
     @property
     def volume_id(self):
-        """Gets the volume_id of this CreateSnapshotOption.
+        r"""Gets the volume_id of this CreateSnapshotOption.
 
         源云硬盘的ID。
 
@@ -81,7 +81,7 @@ class CreateSnapshotOption:
 
     @volume_id.setter
     def volume_id(self, volume_id):
-        """Sets the volume_id of this CreateSnapshotOption.
+        r"""Sets the volume_id of this CreateSnapshotOption.
 
         源云硬盘的ID。
 
@@ -92,7 +92,7 @@ class CreateSnapshotOption:
 
     @property
     def force(self):
-        """Gets the force of this CreateSnapshotOption.
+        r"""Gets the force of this CreateSnapshotOption.
 
         强制创快照标示，默认为false。 当force标记为false时，云硬盘处于挂载状态时，不能强制创建快照。 当force标记为true时，即使云硬盘处于挂载状态时，仍可以创建快照。
 
@@ -103,7 +103,7 @@ class CreateSnapshotOption:
 
     @force.setter
     def force(self, force):
-        """Sets the force of this CreateSnapshotOption.
+        r"""Sets the force of this CreateSnapshotOption.
 
         强制创快照标示，默认为false。 当force标记为false时，云硬盘处于挂载状态时，不能强制创建快照。 当force标记为true时，即使云硬盘处于挂载状态时，仍可以创建快照。
 
@@ -114,7 +114,7 @@ class CreateSnapshotOption:
 
     @property
     def metadata(self):
-        """Gets the metadata of this CreateSnapshotOption.
+        r"""Gets the metadata of this CreateSnapshotOption.
 
         云硬盘快照的元数据信息。
 
@@ -125,7 +125,7 @@ class CreateSnapshotOption:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this CreateSnapshotOption.
+        r"""Sets the metadata of this CreateSnapshotOption.
 
         云硬盘快照的元数据信息。
 
@@ -136,7 +136,7 @@ class CreateSnapshotOption:
 
     @property
     def description(self):
-        """Gets the description of this CreateSnapshotOption.
+        r"""Gets the description of this CreateSnapshotOption.
 
         云硬盘快照描述，最大支持255个字节。
 
@@ -147,7 +147,7 @@ class CreateSnapshotOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateSnapshotOption.
+        r"""Sets the description of this CreateSnapshotOption.
 
         云硬盘快照描述，最大支持255个字节。
 
@@ -158,7 +158,7 @@ class CreateSnapshotOption:
 
     @property
     def name(self):
-        """Gets the name of this CreateSnapshotOption.
+        r"""Gets the name of this CreateSnapshotOption.
 
         云硬盘快照名称。最大支持255个字节。  > > 说明： > 对云硬盘创建备份时，同时会创建以autobk_snapshot_为名称前缀的快照，云硬盘控制台对此类快照会有操作限制。因此建议不要创建以> > autobk_snapshot_为名称前缀的快照，避免影响快照的正常使用
 
@@ -169,7 +169,7 @@ class CreateSnapshotOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateSnapshotOption.
+        r"""Sets the name of this CreateSnapshotOption.
 
         云硬盘快照名称。最大支持255个字节。  > > 说明： > 对云硬盘创建备份时，同时会创建以autobk_snapshot_为名称前缀的快照，云硬盘控制台对此类快照会有操作限制。因此建议不要创建以> > autobk_snapshot_为名称前缀的快照，避免影响快照的正常使用
 

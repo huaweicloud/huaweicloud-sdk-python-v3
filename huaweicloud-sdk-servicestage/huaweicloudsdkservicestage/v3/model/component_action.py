@@ -27,7 +27,7 @@ class ComponentAction:
     }
 
     def __init__(self, action=None, parameters=None):
-        """ComponentAction
+        r"""ComponentAction
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ComponentAction:
 
     @property
     def action(self):
-        """Gets the action of this ComponentAction.
+        r"""Gets the action of this ComponentAction.
 
         :return: The action of this ComponentAction.
         :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentActionType`
@@ -58,7 +58,7 @@ class ComponentAction:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ComponentAction.
+        r"""Sets the action of this ComponentAction.
 
         :param action: The action of this ComponentAction.
         :type action: :class:`huaweicloudsdkservicestage.v3.ComponentActionType`
@@ -67,7 +67,7 @@ class ComponentAction:
 
     @property
     def parameters(self):
-        """Gets the parameters of this ComponentAction.
+        r"""Gets the parameters of this ComponentAction.
 
         :return: The parameters of this ComponentAction.
         :rtype: :class:`huaweicloudsdkservicestage.v3.ComponentActionParameters`
@@ -76,7 +76,7 @@ class ComponentAction:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this ComponentAction.
+        r"""Sets the parameters of this ComponentAction.
 
         :param parameters: The parameters of this ComponentAction.
         :type parameters: :class:`huaweicloudsdkservicestage.v3.ComponentActionParameters`

@@ -27,7 +27,7 @@ class BlackWhiteIpRequestBody:
     }
 
     def __init__(self, type=None, ip_list=None):
-        """BlackWhiteIpRequestBody
+        r"""BlackWhiteIpRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BlackWhiteIpRequestBody:
 
     @property
     def type(self):
-        """Gets the type of this BlackWhiteIpRequestBody.
+        r"""Gets the type of this BlackWhiteIpRequestBody.
 
         类型。white：白名单，black：黑名单
 
@@ -59,7 +59,7 @@ class BlackWhiteIpRequestBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this BlackWhiteIpRequestBody.
+        r"""Sets the type of this BlackWhiteIpRequestBody.
 
         类型。white：白名单，black：黑名单
 
@@ -70,7 +70,7 @@ class BlackWhiteIpRequestBody:
 
     @property
     def ip_list(self):
-        """Gets the ip_list of this BlackWhiteIpRequestBody.
+        r"""Gets the ip_list of this BlackWhiteIpRequestBody.
 
         ip列表
 
@@ -81,7 +81,7 @@ class BlackWhiteIpRequestBody:
 
     @ip_list.setter
     def ip_list(self, ip_list):
-        """Sets the ip_list of this BlackWhiteIpRequestBody.
+        r"""Sets the ip_list of this BlackWhiteIpRequestBody.
 
         ip列表
 

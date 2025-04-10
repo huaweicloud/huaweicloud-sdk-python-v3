@@ -27,7 +27,7 @@ class NovaShowServerInterfaceRequest:
     }
 
     def __init__(self, port_id=None, server_id=None):
-        """NovaShowServerInterfaceRequest
+        r"""NovaShowServerInterfaceRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class NovaShowServerInterfaceRequest:
 
     @property
     def port_id(self):
-        """Gets the port_id of this NovaShowServerInterfaceRequest.
+        r"""Gets the port_id of this NovaShowServerInterfaceRequest.
 
         网卡port id
 
@@ -59,7 +59,7 @@ class NovaShowServerInterfaceRequest:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this NovaShowServerInterfaceRequest.
+        r"""Sets the port_id of this NovaShowServerInterfaceRequest.
 
         网卡port id
 
@@ -70,7 +70,7 @@ class NovaShowServerInterfaceRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this NovaShowServerInterfaceRequest.
+        r"""Gets the server_id of this NovaShowServerInterfaceRequest.
 
         云服务器ID。
 
@@ -81,7 +81,7 @@ class NovaShowServerInterfaceRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this NovaShowServerInterfaceRequest.
+        r"""Sets the server_id of this NovaShowServerInterfaceRequest.
 
         云服务器ID。
 

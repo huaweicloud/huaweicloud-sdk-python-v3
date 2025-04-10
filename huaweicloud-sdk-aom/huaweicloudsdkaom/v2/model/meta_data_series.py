@@ -31,7 +31,7 @@ class MetaDataSeries:
     }
 
     def __init__(self, count=None, offset=None, total=None, next_token=None):
-        """MetaDataSeries
+        r"""MetaDataSeries
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class MetaDataSeries:
 
     @property
     def count(self):
-        """Gets the count of this MetaDataSeries.
+        r"""Gets the count of this MetaDataSeries.
 
         当前返回结果条数。
 
@@ -75,7 +75,7 @@ class MetaDataSeries:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this MetaDataSeries.
+        r"""Sets the count of this MetaDataSeries.
 
         当前返回结果条数。
 
@@ -86,7 +86,7 @@ class MetaDataSeries:
 
     @property
     def offset(self):
-        """Gets the offset of this MetaDataSeries.
+        r"""Gets the offset of this MetaDataSeries.
 
         下一个开始的标记，用于分页，null表示无更多数据。
 
@@ -97,7 +97,7 @@ class MetaDataSeries:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this MetaDataSeries.
+        r"""Sets the offset of this MetaDataSeries.
 
         下一个开始的标记，用于分页，null表示无更多数据。
 
@@ -108,7 +108,7 @@ class MetaDataSeries:
 
     @property
     def total(self):
-        """Gets the total of this MetaDataSeries.
+        r"""Gets the total of this MetaDataSeries.
 
         总条数。
 
@@ -119,7 +119,7 @@ class MetaDataSeries:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this MetaDataSeries.
+        r"""Sets the total of this MetaDataSeries.
 
         总条数。
 
@@ -130,7 +130,7 @@ class MetaDataSeries:
 
     @property
     def next_token(self):
-        """Gets the next_token of this MetaDataSeries.
+        r"""Gets the next_token of this MetaDataSeries.
 
         偏移量。
 
@@ -141,7 +141,7 @@ class MetaDataSeries:
 
     @next_token.setter
     def next_token(self, next_token):
-        """Sets the next_token of this MetaDataSeries.
+        r"""Sets the next_token of this MetaDataSeries.
 
         偏移量。
 

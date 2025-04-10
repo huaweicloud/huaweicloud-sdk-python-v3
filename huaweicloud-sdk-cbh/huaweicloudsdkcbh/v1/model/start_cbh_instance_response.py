@@ -24,7 +24,7 @@ class StartCbhInstanceResponse(SdkResponse):
     }
 
     def __init__(self):
-        """StartCbhInstanceResponse
+        r"""StartCbhInstanceResponse
 
         The model defined in huaweicloud sdk
 

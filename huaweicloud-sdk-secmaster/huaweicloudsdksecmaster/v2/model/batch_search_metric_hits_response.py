@@ -26,7 +26,7 @@ class BatchSearchMetricHitsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """BatchSearchMetricHitsResponse
+        r"""BatchSearchMetricHitsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchSearchMetricHitsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this BatchSearchMetricHitsResponse.
+        r"""Gets the body of this BatchSearchMetricHitsResponse.
 
         :return: The body of this BatchSearchMetricHitsResponse.
         :rtype: list[:class:`huaweicloudsdksecmaster.v2.ShowMetricResultResponseBody`]
@@ -53,7 +53,7 @@ class BatchSearchMetricHitsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchSearchMetricHitsResponse.
+        r"""Sets the body of this BatchSearchMetricHitsResponse.
 
         :param body: The body of this BatchSearchMetricHitsResponse.
         :type body: list[:class:`huaweicloudsdksecmaster.v2.ShowMetricResultResponseBody`]

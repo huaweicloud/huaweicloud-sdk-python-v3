@@ -31,7 +31,7 @@ class CategoryDto:
     }
 
     def __init__(self, key=None, name_zh=None, name_en=None, sub_categories=None):
-        """CategoryDto
+        r"""CategoryDto
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class CategoryDto:
 
     @property
     def key(self):
-        """Gets the key of this CategoryDto.
+        r"""Gets the key of this CategoryDto.
 
         key
 
@@ -75,7 +75,7 @@ class CategoryDto:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this CategoryDto.
+        r"""Sets the key of this CategoryDto.
 
         key
 
@@ -86,7 +86,7 @@ class CategoryDto:
 
     @property
     def name_zh(self):
-        """Gets the name_zh of this CategoryDto.
+        r"""Gets the name_zh of this CategoryDto.
 
         中文名
 
@@ -97,7 +97,7 @@ class CategoryDto:
 
     @name_zh.setter
     def name_zh(self, name_zh):
-        """Sets the name_zh of this CategoryDto.
+        r"""Sets the name_zh of this CategoryDto.
 
         中文名
 
@@ -108,7 +108,7 @@ class CategoryDto:
 
     @property
     def name_en(self):
-        """Gets the name_en of this CategoryDto.
+        r"""Gets the name_en of this CategoryDto.
 
         英文名
 
@@ -119,7 +119,7 @@ class CategoryDto:
 
     @name_en.setter
     def name_en(self, name_en):
-        """Sets the name_en of this CategoryDto.
+        r"""Sets the name_en of this CategoryDto.
 
         英文名
 
@@ -130,7 +130,7 @@ class CategoryDto:
 
     @property
     def sub_categories(self):
-        """Gets the sub_categories of this CategoryDto.
+        r"""Gets the sub_categories of this CategoryDto.
 
         二级分类
 
@@ -141,7 +141,7 @@ class CategoryDto:
 
     @sub_categories.setter
     def sub_categories(self, sub_categories):
-        """Sets the sub_categories of this CategoryDto.
+        r"""Sets the sub_categories of this CategoryDto.
 
         二级分类
 

@@ -28,7 +28,7 @@ class ShowApplicationReleaseRepositoriesResponse(SdkResponse):
     }
 
     def __init__(self, release_repositories=None, count=None):
-        """ShowApplicationReleaseRepositoriesResponse
+        r"""ShowApplicationReleaseRepositoriesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowApplicationReleaseRepositoriesResponse(SdkResponse):
 
     @property
     def release_repositories(self):
-        """Gets the release_repositories of this ShowApplicationReleaseRepositoriesResponse.
+        r"""Gets the release_repositories of this ShowApplicationReleaseRepositoriesResponse.
 
         软件包列表
 
@@ -62,7 +62,7 @@ class ShowApplicationReleaseRepositoriesResponse(SdkResponse):
 
     @release_repositories.setter
     def release_repositories(self, release_repositories):
-        """Sets the release_repositories of this ShowApplicationReleaseRepositoriesResponse.
+        r"""Sets the release_repositories of this ShowApplicationReleaseRepositoriesResponse.
 
         软件包列表
 
@@ -73,7 +73,7 @@ class ShowApplicationReleaseRepositoriesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowApplicationReleaseRepositoriesResponse.
+        r"""Gets the count of this ShowApplicationReleaseRepositoriesResponse.
 
         软件包总条数
 
@@ -84,7 +84,7 @@ class ShowApplicationReleaseRepositoriesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowApplicationReleaseRepositoriesResponse.
+        r"""Sets the count of this ShowApplicationReleaseRepositoriesResponse.
 
         软件包总条数
 

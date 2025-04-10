@@ -39,7 +39,7 @@ class PrivacyResponseBody:
     }
 
     def __init__(self, id=None, policyid=None, timestamp=None, status=None, url=None, category=None, index=None, description=None):
-        """PrivacyResponseBody
+        r"""PrivacyResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class PrivacyResponseBody:
 
     @property
     def id(self):
-        """Gets the id of this PrivacyResponseBody.
+        r"""Gets the id of this PrivacyResponseBody.
 
         规则id
 
@@ -103,7 +103,7 @@ class PrivacyResponseBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PrivacyResponseBody.
+        r"""Sets the id of this PrivacyResponseBody.
 
         规则id
 
@@ -114,7 +114,7 @@ class PrivacyResponseBody:
 
     @property
     def policyid(self):
-        """Gets the policyid of this PrivacyResponseBody.
+        r"""Gets the policyid of this PrivacyResponseBody.
 
         策略id
 
@@ -125,7 +125,7 @@ class PrivacyResponseBody:
 
     @policyid.setter
     def policyid(self, policyid):
-        """Sets the policyid of this PrivacyResponseBody.
+        r"""Sets the policyid of this PrivacyResponseBody.
 
         策略id
 
@@ -136,7 +136,7 @@ class PrivacyResponseBody:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this PrivacyResponseBody.
+        r"""Gets the timestamp of this PrivacyResponseBody.
 
         创建规则的时间，格式为13位毫秒时间戳
 
@@ -147,7 +147,7 @@ class PrivacyResponseBody:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this PrivacyResponseBody.
+        r"""Sets the timestamp of this PrivacyResponseBody.
 
         创建规则的时间，格式为13位毫秒时间戳
 
@@ -158,7 +158,7 @@ class PrivacyResponseBody:
 
     @property
     def status(self):
-        """Gets the status of this PrivacyResponseBody.
+        r"""Gets the status of this PrivacyResponseBody.
 
         规则状态，0：关闭，1：开启
 
@@ -169,7 +169,7 @@ class PrivacyResponseBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PrivacyResponseBody.
+        r"""Sets the status of this PrivacyResponseBody.
 
         规则状态，0：关闭，1：开启
 
@@ -180,7 +180,7 @@ class PrivacyResponseBody:
 
     @property
     def url(self):
-        """Gets the url of this PrivacyResponseBody.
+        r"""Gets the url of this PrivacyResponseBody.
 
         隐私屏蔽规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/*,以\"*\"号结尾代表路径前缀
 
@@ -191,7 +191,7 @@ class PrivacyResponseBody:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this PrivacyResponseBody.
+        r"""Sets the url of this PrivacyResponseBody.
 
         隐私屏蔽规则防护的url，需要填写标准的url格式，例如/admin/xxx或者/admin/*,以\"*\"号结尾代表路径前缀
 
@@ -202,7 +202,7 @@ class PrivacyResponseBody:
 
     @property
     def category(self):
-        """Gets the category of this PrivacyResponseBody.
+        r"""Gets the category of this PrivacyResponseBody.
 
         屏蔽字段   - Params：请求参数   - Cookie：根据Cookie区分的Web访问者   - Header：自定义HTTP首部   - Form：表单参数
 
@@ -213,7 +213,7 @@ class PrivacyResponseBody:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this PrivacyResponseBody.
+        r"""Sets the category of this PrivacyResponseBody.
 
         屏蔽字段   - Params：请求参数   - Cookie：根据Cookie区分的Web访问者   - Header：自定义HTTP首部   - Form：表单参数
 
@@ -224,7 +224,7 @@ class PrivacyResponseBody:
 
     @property
     def index(self):
-        """Gets the index of this PrivacyResponseBody.
+        r"""Gets the index of this PrivacyResponseBody.
 
         屏蔽字段名，根据“屏蔽字段”设置字段名，被屏蔽的字段将不会出现在日志中。
 
@@ -235,7 +235,7 @@ class PrivacyResponseBody:
 
     @index.setter
     def index(self, index):
-        """Sets the index of this PrivacyResponseBody.
+        r"""Sets the index of this PrivacyResponseBody.
 
         屏蔽字段名，根据“屏蔽字段”设置字段名，被屏蔽的字段将不会出现在日志中。
 
@@ -246,7 +246,7 @@ class PrivacyResponseBody:
 
     @property
     def description(self):
-        """Gets the description of this PrivacyResponseBody.
+        r"""Gets the description of this PrivacyResponseBody.
 
         规则描述，可选参数，设置该规则的备注信息。
 
@@ -257,7 +257,7 @@ class PrivacyResponseBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PrivacyResponseBody.
+        r"""Sets the description of this PrivacyResponseBody.
 
         规则描述，可选参数，设置该规则的备注信息。
 

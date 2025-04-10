@@ -32,7 +32,7 @@ class ShowDetailsOfAppCodeV2Response(SdkResponse):
     }
 
     def __init__(self, app_code=None, id=None, app_id=None, create_time=None):
-        """ShowDetailsOfAppCodeV2Response
+        r"""ShowDetailsOfAppCodeV2Response
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ShowDetailsOfAppCodeV2Response(SdkResponse):
 
     @property
     def app_code(self):
-        """Gets the app_code of this ShowDetailsOfAppCodeV2Response.
+        r"""Gets the app_code of this ShowDetailsOfAppCodeV2Response.
 
         App Code值  支持英文，+_!@#$%+/=，且只能以英文和+、/开头。
 
@@ -75,7 +75,7 @@ class ShowDetailsOfAppCodeV2Response(SdkResponse):
 
     @app_code.setter
     def app_code(self, app_code):
-        """Sets the app_code of this ShowDetailsOfAppCodeV2Response.
+        r"""Sets the app_code of this ShowDetailsOfAppCodeV2Response.
 
         App Code值  支持英文，+_!@#$%+/=，且只能以英文和+、/开头。
 
@@ -86,7 +86,7 @@ class ShowDetailsOfAppCodeV2Response(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowDetailsOfAppCodeV2Response.
+        r"""Gets the id of this ShowDetailsOfAppCodeV2Response.
 
         编号
 
@@ -97,7 +97,7 @@ class ShowDetailsOfAppCodeV2Response(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowDetailsOfAppCodeV2Response.
+        r"""Sets the id of this ShowDetailsOfAppCodeV2Response.
 
         编号
 
@@ -108,7 +108,7 @@ class ShowDetailsOfAppCodeV2Response(SdkResponse):
 
     @property
     def app_id(self):
-        """Gets the app_id of this ShowDetailsOfAppCodeV2Response.
+        r"""Gets the app_id of this ShowDetailsOfAppCodeV2Response.
 
         应用编号
 
@@ -119,7 +119,7 @@ class ShowDetailsOfAppCodeV2Response(SdkResponse):
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ShowDetailsOfAppCodeV2Response.
+        r"""Sets the app_id of this ShowDetailsOfAppCodeV2Response.
 
         应用编号
 
@@ -130,7 +130,7 @@ class ShowDetailsOfAppCodeV2Response(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowDetailsOfAppCodeV2Response.
+        r"""Gets the create_time of this ShowDetailsOfAppCodeV2Response.
 
         创建时间
 
@@ -141,7 +141,7 @@ class ShowDetailsOfAppCodeV2Response(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowDetailsOfAppCodeV2Response.
+        r"""Sets the create_time of this ShowDetailsOfAppCodeV2Response.
 
         创建时间
 

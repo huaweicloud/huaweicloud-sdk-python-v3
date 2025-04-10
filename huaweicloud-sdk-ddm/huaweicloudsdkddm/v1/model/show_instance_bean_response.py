@@ -67,7 +67,7 @@ class ShowInstanceBeanResponse:
     }
 
     def __init__(self, id=None, status=None, name=None, created=None, updated=None, available_zone=None, vpc_id=None, subnet_id=None, security_group_id=None, node_count=None, access_ip=None, access_port=None, core_count=None, ram_capacity=None, error_msg=None, node_status=None, enterprise_project_id=None, project_id=None, engine_version=None, order_id=None, enable_ssl=None, flavor_ref=None):
-        """ShowInstanceBeanResponse
+        r"""ShowInstanceBeanResponse
 
         The model defined in huaweicloud sdk
 
@@ -172,7 +172,7 @@ class ShowInstanceBeanResponse:
 
     @property
     def id(self):
-        """Gets the id of this ShowInstanceBeanResponse.
+        r"""Gets the id of this ShowInstanceBeanResponse.
 
         DDM实例ID。
 
@@ -183,7 +183,7 @@ class ShowInstanceBeanResponse:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowInstanceBeanResponse.
+        r"""Sets the id of this ShowInstanceBeanResponse.
 
         DDM实例ID。
 
@@ -194,7 +194,7 @@ class ShowInstanceBeanResponse:
 
     @property
     def status(self):
-        """Gets the status of this ShowInstanceBeanResponse.
+        r"""Gets the status of this ShowInstanceBeanResponse.
 
         DDM实例状态。
 
@@ -205,7 +205,7 @@ class ShowInstanceBeanResponse:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowInstanceBeanResponse.
+        r"""Sets the status of this ShowInstanceBeanResponse.
 
         DDM实例状态。
 
@@ -216,7 +216,7 @@ class ShowInstanceBeanResponse:
 
     @property
     def name(self):
-        """Gets the name of this ShowInstanceBeanResponse.
+        r"""Gets the name of this ShowInstanceBeanResponse.
 
         创建的实例名称。
 
@@ -227,7 +227,7 @@ class ShowInstanceBeanResponse:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowInstanceBeanResponse.
+        r"""Sets the name of this ShowInstanceBeanResponse.
 
         创建的实例名称。
 
@@ -238,7 +238,7 @@ class ShowInstanceBeanResponse:
 
     @property
     def created(self):
-        """Gets the created of this ShowInstanceBeanResponse.
+        r"""Gets the created of this ShowInstanceBeanResponse.
 
         创建时间，格式为yyyy-mm-dd Thh:mm:ssZ。  其中，T指定某个时间的开始；Z指示 UTC 时间。
 
@@ -249,7 +249,7 @@ class ShowInstanceBeanResponse:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this ShowInstanceBeanResponse.
+        r"""Sets the created of this ShowInstanceBeanResponse.
 
         创建时间，格式为yyyy-mm-dd Thh:mm:ssZ。  其中，T指定某个时间的开始；Z指示 UTC 时间。
 
@@ -260,7 +260,7 @@ class ShowInstanceBeanResponse:
 
     @property
     def updated(self):
-        """Gets the updated of this ShowInstanceBeanResponse.
+        r"""Gets the updated of this ShowInstanceBeanResponse.
 
         更新时间，格式与“created”完全相同。
 
@@ -271,7 +271,7 @@ class ShowInstanceBeanResponse:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ShowInstanceBeanResponse.
+        r"""Sets the updated of this ShowInstanceBeanResponse.
 
         更新时间，格式与“created”完全相同。
 
@@ -282,7 +282,7 @@ class ShowInstanceBeanResponse:
 
     @property
     def available_zone(self):
-        """Gets the available_zone of this ShowInstanceBeanResponse.
+        r"""Gets the available_zone of this ShowInstanceBeanResponse.
 
         可用区名称
 
@@ -293,7 +293,7 @@ class ShowInstanceBeanResponse:
 
     @available_zone.setter
     def available_zone(self, available_zone):
-        """Sets the available_zone of this ShowInstanceBeanResponse.
+        r"""Sets the available_zone of this ShowInstanceBeanResponse.
 
         可用区名称
 
@@ -304,7 +304,7 @@ class ShowInstanceBeanResponse:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ShowInstanceBeanResponse.
+        r"""Gets the vpc_id of this ShowInstanceBeanResponse.
 
         虚拟私有云的ID。
 
@@ -315,7 +315,7 @@ class ShowInstanceBeanResponse:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ShowInstanceBeanResponse.
+        r"""Sets the vpc_id of this ShowInstanceBeanResponse.
 
         虚拟私有云的ID。
 
@@ -326,7 +326,7 @@ class ShowInstanceBeanResponse:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ShowInstanceBeanResponse.
+        r"""Gets the subnet_id of this ShowInstanceBeanResponse.
 
         子网ID。
 
@@ -337,7 +337,7 @@ class ShowInstanceBeanResponse:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ShowInstanceBeanResponse.
+        r"""Sets the subnet_id of this ShowInstanceBeanResponse.
 
         子网ID。
 
@@ -348,7 +348,7 @@ class ShowInstanceBeanResponse:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this ShowInstanceBeanResponse.
+        r"""Gets the security_group_id of this ShowInstanceBeanResponse.
 
         安全组ID。
 
@@ -359,7 +359,7 @@ class ShowInstanceBeanResponse:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this ShowInstanceBeanResponse.
+        r"""Sets the security_group_id of this ShowInstanceBeanResponse.
 
         安全组ID。
 
@@ -370,7 +370,7 @@ class ShowInstanceBeanResponse:
 
     @property
     def node_count(self):
-        """Gets the node_count of this ShowInstanceBeanResponse.
+        r"""Gets the node_count of this ShowInstanceBeanResponse.
 
         节点数量。
 
@@ -381,7 +381,7 @@ class ShowInstanceBeanResponse:
 
     @node_count.setter
     def node_count(self, node_count):
-        """Sets the node_count of this ShowInstanceBeanResponse.
+        r"""Sets the node_count of this ShowInstanceBeanResponse.
 
         节点数量。
 
@@ -392,7 +392,7 @@ class ShowInstanceBeanResponse:
 
     @property
     def access_ip(self):
-        """Gets the access_ip of this ShowInstanceBeanResponse.
+        r"""Gets the access_ip of this ShowInstanceBeanResponse.
 
         DDM实例访问地址。
 
@@ -403,7 +403,7 @@ class ShowInstanceBeanResponse:
 
     @access_ip.setter
     def access_ip(self, access_ip):
-        """Sets the access_ip of this ShowInstanceBeanResponse.
+        r"""Sets the access_ip of this ShowInstanceBeanResponse.
 
         DDM实例访问地址。
 
@@ -414,7 +414,7 @@ class ShowInstanceBeanResponse:
 
     @property
     def access_port(self):
-        """Gets the access_port of this ShowInstanceBeanResponse.
+        r"""Gets the access_port of this ShowInstanceBeanResponse.
 
         DDM实例访问端口。
 
@@ -425,7 +425,7 @@ class ShowInstanceBeanResponse:
 
     @access_port.setter
     def access_port(self, access_port):
-        """Sets the access_port of this ShowInstanceBeanResponse.
+        r"""Sets the access_port of this ShowInstanceBeanResponse.
 
         DDM实例访问端口。
 
@@ -436,7 +436,7 @@ class ShowInstanceBeanResponse:
 
     @property
     def core_count(self):
-        """Gets the core_count of this ShowInstanceBeanResponse.
+        r"""Gets the core_count of this ShowInstanceBeanResponse.
 
         cpu个数。
 
@@ -447,7 +447,7 @@ class ShowInstanceBeanResponse:
 
     @core_count.setter
     def core_count(self, core_count):
-        """Sets the core_count of this ShowInstanceBeanResponse.
+        r"""Sets the core_count of this ShowInstanceBeanResponse.
 
         cpu个数。
 
@@ -458,7 +458,7 @@ class ShowInstanceBeanResponse:
 
     @property
     def ram_capacity(self):
-        """Gets the ram_capacity of this ShowInstanceBeanResponse.
+        r"""Gets the ram_capacity of this ShowInstanceBeanResponse.
 
         内存大小，单位为G。
 
@@ -469,7 +469,7 @@ class ShowInstanceBeanResponse:
 
     @ram_capacity.setter
     def ram_capacity(self, ram_capacity):
-        """Sets the ram_capacity of this ShowInstanceBeanResponse.
+        r"""Sets the ram_capacity of this ShowInstanceBeanResponse.
 
         内存大小，单位为G。
 
@@ -480,7 +480,7 @@ class ShowInstanceBeanResponse:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ShowInstanceBeanResponse.
+        r"""Gets the error_msg of this ShowInstanceBeanResponse.
 
         响应信息，若无异常信息则不返回该参数 
 
@@ -491,7 +491,7 @@ class ShowInstanceBeanResponse:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ShowInstanceBeanResponse.
+        r"""Sets the error_msg of this ShowInstanceBeanResponse.
 
         响应信息，若无异常信息则不返回该参数 
 
@@ -502,7 +502,7 @@ class ShowInstanceBeanResponse:
 
     @property
     def node_status(self):
-        """Gets the node_status of this ShowInstanceBeanResponse.
+        r"""Gets the node_status of this ShowInstanceBeanResponse.
 
         节点状态。
 
@@ -513,7 +513,7 @@ class ShowInstanceBeanResponse:
 
     @node_status.setter
     def node_status(self, node_status):
-        """Sets the node_status of this ShowInstanceBeanResponse.
+        r"""Sets the node_status of this ShowInstanceBeanResponse.
 
         节点状态。
 
@@ -524,7 +524,7 @@ class ShowInstanceBeanResponse:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowInstanceBeanResponse.
+        r"""Gets the enterprise_project_id of this ShowInstanceBeanResponse.
 
         企业项目ID。
 
@@ -535,7 +535,7 @@ class ShowInstanceBeanResponse:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowInstanceBeanResponse.
+        r"""Sets the enterprise_project_id of this ShowInstanceBeanResponse.
 
         企业项目ID。
 
@@ -546,7 +546,7 @@ class ShowInstanceBeanResponse:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowInstanceBeanResponse.
+        r"""Gets the project_id of this ShowInstanceBeanResponse.
 
         租户在某一region下的project ID。
 
@@ -557,7 +557,7 @@ class ShowInstanceBeanResponse:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowInstanceBeanResponse.
+        r"""Sets the project_id of this ShowInstanceBeanResponse.
 
         租户在某一region下的project ID。
 
@@ -568,7 +568,7 @@ class ShowInstanceBeanResponse:
 
     @property
     def engine_version(self):
-        """Gets the engine_version of this ShowInstanceBeanResponse.
+        r"""Gets the engine_version of this ShowInstanceBeanResponse.
 
         引擎版本号（Core实例版本号）。
 
@@ -579,7 +579,7 @@ class ShowInstanceBeanResponse:
 
     @engine_version.setter
     def engine_version(self, engine_version):
-        """Sets the engine_version of this ShowInstanceBeanResponse.
+        r"""Sets the engine_version of this ShowInstanceBeanResponse.
 
         引擎版本号（Core实例版本号）。
 
@@ -590,7 +590,7 @@ class ShowInstanceBeanResponse:
 
     @property
     def order_id(self):
-        """Gets the order_id of this ShowInstanceBeanResponse.
+        r"""Gets the order_id of this ShowInstanceBeanResponse.
 
         包周期的实例，有订单id。
 
@@ -601,7 +601,7 @@ class ShowInstanceBeanResponse:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ShowInstanceBeanResponse.
+        r"""Sets the order_id of this ShowInstanceBeanResponse.
 
         包周期的实例，有订单id。
 
@@ -612,7 +612,7 @@ class ShowInstanceBeanResponse:
 
     @property
     def enable_ssl(self):
-        """Gets the enable_ssl of this ShowInstanceBeanResponse.
+        r"""Gets the enable_ssl of this ShowInstanceBeanResponse.
 
         是否开启SSL。
 
@@ -623,7 +623,7 @@ class ShowInstanceBeanResponse:
 
     @enable_ssl.setter
     def enable_ssl(self, enable_ssl):
-        """Sets the enable_ssl of this ShowInstanceBeanResponse.
+        r"""Sets the enable_ssl of this ShowInstanceBeanResponse.
 
         是否开启SSL。
 
@@ -634,7 +634,7 @@ class ShowInstanceBeanResponse:
 
     @property
     def flavor_ref(self):
-        """Gets the flavor_ref of this ShowInstanceBeanResponse.
+        r"""Gets the flavor_ref of this ShowInstanceBeanResponse.
 
         规格码。
 
@@ -645,7 +645,7 @@ class ShowInstanceBeanResponse:
 
     @flavor_ref.setter
     def flavor_ref(self, flavor_ref):
-        """Sets the flavor_ref of this ShowInstanceBeanResponse.
+        r"""Sets the flavor_ref of this ShowInstanceBeanResponse.
 
         规格码。
 

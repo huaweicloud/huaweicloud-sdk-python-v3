@@ -37,7 +37,7 @@ class ReplayConfigInfo:
     }
 
     def __init__(self, db_instance_id=None, cloud_type=None, ak=None, sk=None, db_source=None, region=None, traffic_source=None):
-        """ReplayConfigInfo
+        r"""ReplayConfigInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ReplayConfigInfo:
 
     @property
     def db_instance_id(self):
-        """Gets the db_instance_id of this ReplayConfigInfo.
+        r"""Gets the db_instance_id of this ReplayConfigInfo.
 
         源实例ID。
 
@@ -89,7 +89,7 @@ class ReplayConfigInfo:
 
     @db_instance_id.setter
     def db_instance_id(self, db_instance_id):
-        """Sets the db_instance_id of this ReplayConfigInfo.
+        r"""Sets the db_instance_id of this ReplayConfigInfo.
 
         源实例ID。
 
@@ -100,7 +100,7 @@ class ReplayConfigInfo:
 
     @property
     def cloud_type(self):
-        """Gets the cloud_type of this ReplayConfigInfo.
+        r"""Gets the cloud_type of this ReplayConfigInfo.
 
         云类型： - AWSCloud：亚马逊云。 - TencentCloud：腾讯云。 - AliCloud：阿里云。
 
@@ -111,7 +111,7 @@ class ReplayConfigInfo:
 
     @cloud_type.setter
     def cloud_type(self, cloud_type):
-        """Sets the cloud_type of this ReplayConfigInfo.
+        r"""Sets the cloud_type of this ReplayConfigInfo.
 
         云类型： - AWSCloud：亚马逊云。 - TencentCloud：腾讯云。 - AliCloud：阿里云。
 
@@ -122,7 +122,7 @@ class ReplayConfigInfo:
 
     @property
     def ak(self):
-        """Gets the ak of this ReplayConfigInfo.
+        r"""Gets the ak of this ReplayConfigInfo.
 
         其他云AK信息。
 
@@ -133,7 +133,7 @@ class ReplayConfigInfo:
 
     @ak.setter
     def ak(self, ak):
-        """Sets the ak of this ReplayConfigInfo.
+        r"""Sets the ak of this ReplayConfigInfo.
 
         其他云AK信息。
 
@@ -144,7 +144,7 @@ class ReplayConfigInfo:
 
     @property
     def sk(self):
-        """Gets the sk of this ReplayConfigInfo.
+        r"""Gets the sk of this ReplayConfigInfo.
 
         其他云SK信息。
 
@@ -155,7 +155,7 @@ class ReplayConfigInfo:
 
     @sk.setter
     def sk(self, sk):
-        """Sets the sk of this ReplayConfigInfo.
+        r"""Sets the sk of this ReplayConfigInfo.
 
         其他云SK信息。
 
@@ -166,7 +166,7 @@ class ReplayConfigInfo:
 
     @property
     def db_source(self):
-        """Gets the db_source of this ReplayConfigInfo.
+        r"""Gets the db_source of this ReplayConfigInfo.
 
         源数据库来源。取值： - aws_aurora_mysql：Amazon Aurora MySQL。 - tencent_tdsql_c：腾讯云TDSQL-C MySQL。 - ali_rds_mysql：阿里云RDS MySQL。
 
@@ -177,7 +177,7 @@ class ReplayConfigInfo:
 
     @db_source.setter
     def db_source(self, db_source):
-        """Sets the db_source of this ReplayConfigInfo.
+        r"""Sets the db_source of this ReplayConfigInfo.
 
         源数据库来源。取值： - aws_aurora_mysql：Amazon Aurora MySQL。 - tencent_tdsql_c：腾讯云TDSQL-C MySQL。 - ali_rds_mysql：阿里云RDS MySQL。
 
@@ -188,7 +188,7 @@ class ReplayConfigInfo:
 
     @property
     def region(self):
-        """Gets the region of this ReplayConfigInfo.
+        r"""Gets the region of this ReplayConfigInfo.
 
         其他云Region名称。
 
@@ -199,7 +199,7 @@ class ReplayConfigInfo:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ReplayConfigInfo.
+        r"""Sets the region of this ReplayConfigInfo.
 
         其他云Region名称。
 
@@ -210,7 +210,7 @@ class ReplayConfigInfo:
 
     @property
     def traffic_source(self):
-        """Gets the traffic_source of this ReplayConfigInfo.
+        r"""Gets the traffic_source of this ReplayConfigInfo.
 
         流量文件来源。 - sdk：通过三方云API接口方式下载审计日志。
 
@@ -221,7 +221,7 @@ class ReplayConfigInfo:
 
     @traffic_source.setter
     def traffic_source(self, traffic_source):
-        """Sets the traffic_source of this ReplayConfigInfo.
+        r"""Sets the traffic_source of this ReplayConfigInfo.
 
         流量文件来源。 - sdk：通过三方云API接口方式下载审计日志。
 

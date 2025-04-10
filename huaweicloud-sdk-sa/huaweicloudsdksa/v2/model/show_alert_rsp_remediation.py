@@ -27,7 +27,7 @@ class ShowAlertRspRemediation:
     }
 
     def __init__(self, recommendation=None, url=None):
-        """ShowAlertRspRemediation
+        r"""ShowAlertRspRemediation
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ShowAlertRspRemediation:
 
     @property
     def recommendation(self):
-        """Gets the recommendation of this ShowAlertRspRemediation.
+        r"""Gets the recommendation of this ShowAlertRspRemediation.
 
         The name, display only
 
@@ -61,7 +61,7 @@ class ShowAlertRspRemediation:
 
     @recommendation.setter
     def recommendation(self, recommendation):
-        """Sets the recommendation of this ShowAlertRspRemediation.
+        r"""Sets the recommendation of this ShowAlertRspRemediation.
 
         The name, display only
 
@@ -72,7 +72,7 @@ class ShowAlertRspRemediation:
 
     @property
     def url(self):
-        """Gets the url of this ShowAlertRspRemediation.
+        r"""Gets the url of this ShowAlertRspRemediation.
 
         The name, display only
 
@@ -83,7 +83,7 @@ class ShowAlertRspRemediation:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ShowAlertRspRemediation.
+        r"""Sets the url of this ShowAlertRspRemediation.
 
         The name, display only
 

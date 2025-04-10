@@ -25,7 +25,7 @@ class UserSyncReq:
     }
 
     def __init__(self, action=None):
-        """UserSyncReq
+        r"""UserSyncReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UserSyncReq:
 
     @property
     def action(self):
-        """Gets the action of this UserSyncReq.
+        r"""Gets the action of this UserSyncReq.
 
         StarRocks账号同步动作。
 
@@ -53,7 +53,7 @@ class UserSyncReq:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this UserSyncReq.
+        r"""Sets the action of this UserSyncReq.
 
         StarRocks账号同步动作。
 

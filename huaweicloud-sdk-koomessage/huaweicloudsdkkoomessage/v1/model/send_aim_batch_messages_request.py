@@ -25,7 +25,7 @@ class SendAimBatchMessagesRequest:
     }
 
     def __init__(self, body=None):
-        """SendAimBatchMessagesRequest
+        r"""SendAimBatchMessagesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SendAimBatchMessagesRequest:
 
     @property
     def body(self):
-        """Gets the body of this SendAimBatchMessagesRequest.
+        r"""Gets the body of this SendAimBatchMessagesRequest.
 
         :return: The body of this SendAimBatchMessagesRequest.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.SmsTaskReq`
@@ -52,7 +52,7 @@ class SendAimBatchMessagesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SendAimBatchMessagesRequest.
+        r"""Sets the body of this SendAimBatchMessagesRequest.
 
         :param body: The body of this SendAimBatchMessagesRequest.
         :type body: :class:`huaweicloudsdkkoomessage.v1.SmsTaskReq`

@@ -31,7 +31,7 @@ class ShowPlaybookRuleRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, version_id=None, rule_id=None):
-        """ShowPlaybookRuleRequest
+        r"""ShowPlaybookRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ShowPlaybookRuleRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowPlaybookRuleRequest.
+        r"""Gets the project_id of this ShowPlaybookRuleRequest.
 
         ID of project
 
@@ -71,7 +71,7 @@ class ShowPlaybookRuleRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowPlaybookRuleRequest.
+        r"""Sets the project_id of this ShowPlaybookRuleRequest.
 
         ID of project
 
@@ -82,7 +82,7 @@ class ShowPlaybookRuleRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ShowPlaybookRuleRequest.
+        r"""Gets the workspace_id of this ShowPlaybookRuleRequest.
 
         ID of workspace
 
@@ -93,7 +93,7 @@ class ShowPlaybookRuleRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ShowPlaybookRuleRequest.
+        r"""Sets the workspace_id of this ShowPlaybookRuleRequest.
 
         ID of workspace
 
@@ -104,7 +104,7 @@ class ShowPlaybookRuleRequest:
 
     @property
     def version_id(self):
-        """Gets the version_id of this ShowPlaybookRuleRequest.
+        r"""Gets the version_id of this ShowPlaybookRuleRequest.
 
         version Id value
 
@@ -115,7 +115,7 @@ class ShowPlaybookRuleRequest:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this ShowPlaybookRuleRequest.
+        r"""Sets the version_id of this ShowPlaybookRuleRequest.
 
         version Id value
 
@@ -126,7 +126,7 @@ class ShowPlaybookRuleRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this ShowPlaybookRuleRequest.
+        r"""Gets the rule_id of this ShowPlaybookRuleRequest.
 
         version Id value
 
@@ -137,7 +137,7 @@ class ShowPlaybookRuleRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this ShowPlaybookRuleRequest.
+        r"""Sets the rule_id of this ShowPlaybookRuleRequest.
 
         version Id value
 

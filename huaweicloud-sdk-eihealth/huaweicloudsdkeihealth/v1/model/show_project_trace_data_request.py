@@ -27,7 +27,7 @@ class ShowProjectTraceDataRequest:
     }
 
     def __init__(self, eihealth_project_id=None, path=None):
-        """ShowProjectTraceDataRequest
+        r"""ShowProjectTraceDataRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowProjectTraceDataRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this ShowProjectTraceDataRequest.
+        r"""Gets the eihealth_project_id of this ShowProjectTraceDataRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -59,7 +59,7 @@ class ShowProjectTraceDataRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this ShowProjectTraceDataRequest.
+        r"""Sets the eihealth_project_id of this ShowProjectTraceDataRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -70,7 +70,7 @@ class ShowProjectTraceDataRequest:
 
     @property
     def path(self):
-        """Gets the path of this ShowProjectTraceDataRequest.
+        r"""Gets the path of this ShowProjectTraceDataRequest.
 
         审计日志全路径（路径）
 
@@ -81,7 +81,7 @@ class ShowProjectTraceDataRequest:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ShowProjectTraceDataRequest.
+        r"""Sets the path of this ShowProjectTraceDataRequest.
 
         审计日志全路径（路径）
 

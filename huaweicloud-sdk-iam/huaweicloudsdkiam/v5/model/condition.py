@@ -31,7 +31,7 @@ class Condition:
     }
 
     def __init__(self, key=None, value_type=None, multi_valued=None, description=None):
-        """Condition
+        r"""Condition
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class Condition:
 
     @property
     def key(self):
-        """Gets the key of this Condition.
+        r"""Gets the key of this Condition.
 
         条件键的名称。
 
@@ -71,7 +71,7 @@ class Condition:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this Condition.
+        r"""Sets the key of this Condition.
 
         条件键的名称。
 
@@ -82,7 +82,7 @@ class Condition:
 
     @property
     def value_type(self):
-        """Gets the value_type of this Condition.
+        r"""Gets the value_type of this Condition.
 
         条件值的数据类型。
 
@@ -93,7 +93,7 @@ class Condition:
 
     @value_type.setter
     def value_type(self, value_type):
-        """Sets the value_type of this Condition.
+        r"""Sets the value_type of this Condition.
 
         条件值的数据类型。
 
@@ -104,7 +104,7 @@ class Condition:
 
     @property
     def multi_valued(self):
-        """Gets the multi_valued of this Condition.
+        r"""Gets the multi_valued of this Condition.
 
         条件值是否为多值。
 
@@ -115,7 +115,7 @@ class Condition:
 
     @multi_valued.setter
     def multi_valued(self, multi_valued):
-        """Sets the multi_valued of this Condition.
+        r"""Sets the multi_valued of this Condition.
 
         条件值是否为多值。
 
@@ -126,7 +126,7 @@ class Condition:
 
     @property
     def description(self):
-        """Gets the description of this Condition.
+        r"""Gets the description of this Condition.
 
         :return: The description of this Condition.
         :rtype: :class:`huaweicloudsdkiam.v5.Description`
@@ -135,7 +135,7 @@ class Condition:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Condition.
+        r"""Sets the description of this Condition.
 
         :param description: The description of this Condition.
         :type description: :class:`huaweicloudsdkiam.v5.Description`

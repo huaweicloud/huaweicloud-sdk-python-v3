@@ -27,7 +27,7 @@ class OpenGaussVolume:
     }
 
     def __init__(self, type=None, size=None):
-        """OpenGaussVolume
+        r"""OpenGaussVolume
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class OpenGaussVolume:
 
     @property
     def type(self):
-        """Gets the type of this OpenGaussVolume.
+        r"""Gets the type of this OpenGaussVolume.
 
         磁盘类型。  仅支持ULTRAHIGH和ESSD，区分大小写，分别表示SSD和急速云盘。
 
@@ -59,7 +59,7 @@ class OpenGaussVolume:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this OpenGaussVolume.
+        r"""Sets the type of this OpenGaussVolume.
 
         磁盘类型。  仅支持ULTRAHIGH和ESSD，区分大小写，分别表示SSD和急速云盘。
 
@@ -70,7 +70,7 @@ class OpenGaussVolume:
 
     @property
     def size(self):
-        """Gets the size of this OpenGaussVolume.
+        r"""Gets the size of this OpenGaussVolume.
 
         磁盘大小。例如：该参数填写为“40”，表示为创建的实例分配40GB的磁盘空间。  取值范围：（分片数*40GB）~（分片数*16TB），且大小只能为分片数*40的整数倍。
 
@@ -81,7 +81,7 @@ class OpenGaussVolume:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this OpenGaussVolume.
+        r"""Sets the size of this OpenGaussVolume.
 
         磁盘大小。例如：该参数填写为“40”，表示为创建的实例分配40GB的磁盘空间。  取值范围：（分片数*40GB）~（分片数*16TB），且大小只能为分片数*40的整数倍。
 

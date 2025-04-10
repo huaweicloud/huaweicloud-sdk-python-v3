@@ -29,7 +29,7 @@ class ShowInstanceExtendProductInfoRespMonthly:
     }
 
     def __init__(self, name=None, version=None, values=None):
-        """ShowInstanceExtendProductInfoRespMonthly
+        r"""ShowInstanceExtendProductInfoRespMonthly
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ShowInstanceExtendProductInfoRespMonthly:
 
     @property
     def name(self):
-        """Gets the name of this ShowInstanceExtendProductInfoRespMonthly.
+        r"""Gets the name of this ShowInstanceExtendProductInfoRespMonthly.
 
         消息引擎的名称，该字段显示为rabbitmq。
 
@@ -68,7 +68,7 @@ class ShowInstanceExtendProductInfoRespMonthly:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowInstanceExtendProductInfoRespMonthly.
+        r"""Sets the name of this ShowInstanceExtendProductInfoRespMonthly.
 
         消息引擎的名称，该字段显示为rabbitmq。
 
@@ -79,7 +79,7 @@ class ShowInstanceExtendProductInfoRespMonthly:
 
     @property
     def version(self):
-        """Gets the version of this ShowInstanceExtendProductInfoRespMonthly.
+        r"""Gets the version of this ShowInstanceExtendProductInfoRespMonthly.
 
         消息引擎的版本，当前支持3.8.35[和3.7.17](tag:cmcc,sbc,hk_sbc,tm,hk_tm)
 
@@ -90,7 +90,7 @@ class ShowInstanceExtendProductInfoRespMonthly:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowInstanceExtendProductInfoRespMonthly.
+        r"""Sets the version of this ShowInstanceExtendProductInfoRespMonthly.
 
         消息引擎的版本，当前支持3.8.35[和3.7.17](tag:cmcc,sbc,hk_sbc,tm,hk_tm)
 
@@ -101,7 +101,7 @@ class ShowInstanceExtendProductInfoRespMonthly:
 
     @property
     def values(self):
-        """Gets the values of this ShowInstanceExtendProductInfoRespMonthly.
+        r"""Gets the values of this ShowInstanceExtendProductInfoRespMonthly.
 
         产品规格列表。
 
@@ -112,7 +112,7 @@ class ShowInstanceExtendProductInfoRespMonthly:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this ShowInstanceExtendProductInfoRespMonthly.
+        r"""Sets the values of this ShowInstanceExtendProductInfoRespMonthly.
 
         产品规格列表。
 

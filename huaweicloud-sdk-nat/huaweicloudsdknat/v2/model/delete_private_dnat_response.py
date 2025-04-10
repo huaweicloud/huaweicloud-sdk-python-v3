@@ -24,7 +24,7 @@ class DeletePrivateDnatResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeletePrivateDnatResponse
+        r"""DeletePrivateDnatResponse
 
         The model defined in huaweicloud sdk
 

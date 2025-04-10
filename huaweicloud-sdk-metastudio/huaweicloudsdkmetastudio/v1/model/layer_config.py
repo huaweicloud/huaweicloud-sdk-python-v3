@@ -41,7 +41,7 @@ class LayerConfig:
     }
 
     def __init__(self, layer_type=None, asset_id=None, group_id=None, position=None, size=None, rotation=None, image_config=None, video_config=None, text_config=None):
-        """LayerConfig
+        r"""LayerConfig
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class LayerConfig:
 
     @property
     def layer_type(self):
-        """Gets the layer_type of this LayerConfig.
+        r"""Gets the layer_type of this LayerConfig.
 
         **参数解释**： 图层类型。 **约束限制**： 不涉及。 **取值范围**： * HUMAN:  人物图层 * IMAGE： 素材图片图层 * VIDEO： 素材视频图层 * TEXT: 素材文字图层  **默认取值**： 不涉及
 
@@ -109,7 +109,7 @@ class LayerConfig:
 
     @layer_type.setter
     def layer_type(self, layer_type):
-        """Sets the layer_type of this LayerConfig.
+        r"""Sets the layer_type of this LayerConfig.
 
         **参数解释**： 图层类型。 **约束限制**： 不涉及。 **取值范围**： * HUMAN:  人物图层 * IMAGE： 素材图片图层 * VIDEO： 素材视频图层 * TEXT: 素材文字图层  **默认取值**： 不涉及
 
@@ -120,7 +120,7 @@ class LayerConfig:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this LayerConfig.
+        r"""Gets the asset_id of this LayerConfig.
 
         **参数解释**： 图层所需资产的资产id，外部资产信息无需填写。 **约束限制**： 不涉及。 **取值范围**： 字符长度0-64位 **默认取值**： 不涉及
 
@@ -131,7 +131,7 @@ class LayerConfig:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this LayerConfig.
+        r"""Sets the asset_id of this LayerConfig.
 
         **参数解释**： 图层所需资产的资产id，外部资产信息无需填写。 **约束限制**： 不涉及。 **取值范围**： 字符长度0-64位 **默认取值**： 不涉及
 
@@ -142,7 +142,7 @@ class LayerConfig:
 
     @property
     def group_id(self):
-        """Gets the group_id of this LayerConfig.
+        r"""Gets the group_id of this LayerConfig.
 
         **参数解释**： 多场景素材编组。同一group_id的素材，在应用全局时共享位置信息。 **约束限制**： 不涉及。 **取值范围**： 字符长度0-64位 **默认取值**： 不涉及
 
@@ -153,7 +153,7 @@ class LayerConfig:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this LayerConfig.
+        r"""Sets the group_id of this LayerConfig.
 
         **参数解释**： 多场景素材编组。同一group_id的素材，在应用全局时共享位置信息。 **约束限制**： 不涉及。 **取值范围**： 字符长度0-64位 **默认取值**： 不涉及
 
@@ -164,7 +164,7 @@ class LayerConfig:
 
     @property
     def position(self):
-        """Gets the position of this LayerConfig.
+        r"""Gets the position of this LayerConfig.
 
         :return: The position of this LayerConfig.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.LayerPositionConfig`
@@ -173,7 +173,7 @@ class LayerConfig:
 
     @position.setter
     def position(self, position):
-        """Sets the position of this LayerConfig.
+        r"""Sets the position of this LayerConfig.
 
         :param position: The position of this LayerConfig.
         :type position: :class:`huaweicloudsdkmetastudio.v1.LayerPositionConfig`
@@ -182,7 +182,7 @@ class LayerConfig:
 
     @property
     def size(self):
-        """Gets the size of this LayerConfig.
+        r"""Gets the size of this LayerConfig.
 
         :return: The size of this LayerConfig.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.LayerSizeConfig`
@@ -191,7 +191,7 @@ class LayerConfig:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this LayerConfig.
+        r"""Sets the size of this LayerConfig.
 
         :param size: The size of this LayerConfig.
         :type size: :class:`huaweicloudsdkmetastudio.v1.LayerSizeConfig`
@@ -200,7 +200,7 @@ class LayerConfig:
 
     @property
     def rotation(self):
-        """Gets the rotation of this LayerConfig.
+        r"""Gets the rotation of this LayerConfig.
 
         :return: The rotation of this LayerConfig.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.LayerRotationConfig`
@@ -209,7 +209,7 @@ class LayerConfig:
 
     @rotation.setter
     def rotation(self, rotation):
-        """Sets the rotation of this LayerConfig.
+        r"""Sets the rotation of this LayerConfig.
 
         :param rotation: The rotation of this LayerConfig.
         :type rotation: :class:`huaweicloudsdkmetastudio.v1.LayerRotationConfig`
@@ -218,7 +218,7 @@ class LayerConfig:
 
     @property
     def image_config(self):
-        """Gets the image_config of this LayerConfig.
+        r"""Gets the image_config of this LayerConfig.
 
         :return: The image_config of this LayerConfig.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ImageLayerConfig`
@@ -227,7 +227,7 @@ class LayerConfig:
 
     @image_config.setter
     def image_config(self, image_config):
-        """Sets the image_config of this LayerConfig.
+        r"""Sets the image_config of this LayerConfig.
 
         :param image_config: The image_config of this LayerConfig.
         :type image_config: :class:`huaweicloudsdkmetastudio.v1.ImageLayerConfig`
@@ -236,7 +236,7 @@ class LayerConfig:
 
     @property
     def video_config(self):
-        """Gets the video_config of this LayerConfig.
+        r"""Gets the video_config of this LayerConfig.
 
         :return: The video_config of this LayerConfig.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.VideoLayerConfig`
@@ -245,7 +245,7 @@ class LayerConfig:
 
     @video_config.setter
     def video_config(self, video_config):
-        """Sets the video_config of this LayerConfig.
+        r"""Sets the video_config of this LayerConfig.
 
         :param video_config: The video_config of this LayerConfig.
         :type video_config: :class:`huaweicloudsdkmetastudio.v1.VideoLayerConfig`
@@ -254,7 +254,7 @@ class LayerConfig:
 
     @property
     def text_config(self):
-        """Gets the text_config of this LayerConfig.
+        r"""Gets the text_config of this LayerConfig.
 
         :return: The text_config of this LayerConfig.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.TextLayerConfig`
@@ -263,7 +263,7 @@ class LayerConfig:
 
     @text_config.setter
     def text_config(self, text_config):
-        """Sets the text_config of this LayerConfig.
+        r"""Sets the text_config of this LayerConfig.
 
         :param text_config: The text_config of this LayerConfig.
         :type text_config: :class:`huaweicloudsdkmetastudio.v1.TextLayerConfig`

@@ -28,7 +28,7 @@ class ListLoginRecordsNewResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, records=None):
-        """ListLoginRecordsNewResponse
+        r"""ListLoginRecordsNewResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListLoginRecordsNewResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListLoginRecordsNewResponse.
+        r"""Gets the total_count of this ListLoginRecordsNewResponse.
 
         用户登录记录总数。
 
@@ -62,7 +62,7 @@ class ListLoginRecordsNewResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListLoginRecordsNewResponse.
+        r"""Sets the total_count of this ListLoginRecordsNewResponse.
 
         用户登录记录总数。
 
@@ -73,7 +73,7 @@ class ListLoginRecordsNewResponse(SdkResponse):
 
     @property
     def records(self):
-        """Gets the records of this ListLoginRecordsNewResponse.
+        r"""Gets the records of this ListLoginRecordsNewResponse.
 
         用户登录记录。
 
@@ -84,7 +84,7 @@ class ListLoginRecordsNewResponse(SdkResponse):
 
     @records.setter
     def records(self, records):
-        """Sets the records of this ListLoginRecordsNewResponse.
+        r"""Sets the records of this ListLoginRecordsNewResponse.
 
         用户登录记录。
 

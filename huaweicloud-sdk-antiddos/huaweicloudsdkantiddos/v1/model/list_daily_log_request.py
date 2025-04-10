@@ -33,7 +33,7 @@ class ListDailyLogRequest:
     }
 
     def __init__(self, floating_ip_id=None, sort_dir=None, limit=None, offset=None, ip=None):
-        """ListDailyLogRequest
+        r"""ListDailyLogRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListDailyLogRequest:
 
     @property
     def floating_ip_id(self):
-        """Gets the floating_ip_id of this ListDailyLogRequest.
+        r"""Gets the floating_ip_id of this ListDailyLogRequest.
 
         用户EIP对应的ID
 
@@ -81,7 +81,7 @@ class ListDailyLogRequest:
 
     @floating_ip_id.setter
     def floating_ip_id(self, floating_ip_id):
-        """Sets the floating_ip_id of this ListDailyLogRequest.
+        r"""Sets the floating_ip_id of this ListDailyLogRequest.
 
         用户EIP对应的ID
 
@@ -92,7 +92,7 @@ class ListDailyLogRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListDailyLogRequest.
+        r"""Gets the sort_dir of this ListDailyLogRequest.
 
         可选范围： - desc：表示时间降序 - asc：表示时间升序 默认值为“desc”。
 
@@ -103,7 +103,7 @@ class ListDailyLogRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListDailyLogRequest.
+        r"""Sets the sort_dir of this ListDailyLogRequest.
 
         可选范围： - desc：表示时间降序 - asc：表示时间升序 默认值为“desc”。
 
@@ -114,7 +114,7 @@ class ListDailyLogRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDailyLogRequest.
+        r"""Gets the limit of this ListDailyLogRequest.
 
         返回结果个数限制，此次查询返回数量最大值，取值范围：1～100，与offset配合使用。 若“limit”与“offset”均不携带则返回所有主机列表。
 
@@ -125,7 +125,7 @@ class ListDailyLogRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDailyLogRequest.
+        r"""Sets the limit of this ListDailyLogRequest.
 
         返回结果个数限制，此次查询返回数量最大值，取值范围：1～100，与offset配合使用。 若“limit”与“offset”均不携带则返回所有主机列表。
 
@@ -136,7 +136,7 @@ class ListDailyLogRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDailyLogRequest.
+        r"""Gets the offset of this ListDailyLogRequest.
 
         偏移量，“limit”携带时此字段有效。
 
@@ -147,7 +147,7 @@ class ListDailyLogRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDailyLogRequest.
+        r"""Sets the offset of this ListDailyLogRequest.
 
         偏移量，“limit”携带时此字段有效。
 
@@ -158,7 +158,7 @@ class ListDailyLogRequest:
 
     @property
     def ip(self):
-        """Gets the ip of this ListDailyLogRequest.
+        r"""Gets the ip of this ListDailyLogRequest.
 
         用户EIP
 
@@ -169,7 +169,7 @@ class ListDailyLogRequest:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this ListDailyLogRequest.
+        r"""Sets the ip of this ListDailyLogRequest.
 
         用户EIP
 

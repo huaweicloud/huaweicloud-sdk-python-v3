@@ -29,7 +29,7 @@ class UpdateCentralNetworkConnectionRequest:
     }
 
     def __init__(self, central_network_id=None, connection_id=None, body=None):
-        """UpdateCentralNetworkConnectionRequest
+        r"""UpdateCentralNetworkConnectionRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateCentralNetworkConnectionRequest:
 
     @property
     def central_network_id(self):
-        """Gets the central_network_id of this UpdateCentralNetworkConnectionRequest.
+        r"""Gets the central_network_id of this UpdateCentralNetworkConnectionRequest.
 
         中心网络的ID。
 
@@ -66,7 +66,7 @@ class UpdateCentralNetworkConnectionRequest:
 
     @central_network_id.setter
     def central_network_id(self, central_network_id):
-        """Sets the central_network_id of this UpdateCentralNetworkConnectionRequest.
+        r"""Sets the central_network_id of this UpdateCentralNetworkConnectionRequest.
 
         中心网络的ID。
 
@@ -77,7 +77,7 @@ class UpdateCentralNetworkConnectionRequest:
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this UpdateCentralNetworkConnectionRequest.
+        r"""Gets the connection_id of this UpdateCentralNetworkConnectionRequest.
 
         中心网络连接ID。
 
@@ -88,7 +88,7 @@ class UpdateCentralNetworkConnectionRequest:
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this UpdateCentralNetworkConnectionRequest.
+        r"""Sets the connection_id of this UpdateCentralNetworkConnectionRequest.
 
         中心网络连接ID。
 
@@ -99,7 +99,7 @@ class UpdateCentralNetworkConnectionRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateCentralNetworkConnectionRequest.
+        r"""Gets the body of this UpdateCentralNetworkConnectionRequest.
 
         :return: The body of this UpdateCentralNetworkConnectionRequest.
         :rtype: :class:`huaweicloudsdkcc.v3.UpdateCentralNetworkConnectionRequestBody`
@@ -108,7 +108,7 @@ class UpdateCentralNetworkConnectionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateCentralNetworkConnectionRequest.
+        r"""Sets the body of this UpdateCentralNetworkConnectionRequest.
 
         :param body: The body of this UpdateCentralNetworkConnectionRequest.
         :type body: :class:`huaweicloudsdkcc.v3.UpdateCentralNetworkConnectionRequestBody`

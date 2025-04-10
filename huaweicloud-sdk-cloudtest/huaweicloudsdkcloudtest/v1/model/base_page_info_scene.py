@@ -35,7 +35,7 @@ class BasePageInfoScene:
     }
 
     def __init__(self, limit=None, list=None, offset=None, pages=None, size=None, total=None):
-        """BasePageInfoScene
+        r"""BasePageInfoScene
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class BasePageInfoScene:
 
     @property
     def limit(self):
-        """Gets the limit of this BasePageInfoScene.
+        r"""Gets the limit of this BasePageInfoScene.
 
         :return: The limit of this BasePageInfoScene.
         :rtype: int
@@ -87,7 +87,7 @@ class BasePageInfoScene:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this BasePageInfoScene.
+        r"""Sets the limit of this BasePageInfoScene.
 
         :param limit: The limit of this BasePageInfoScene.
         :type limit: int
@@ -96,7 +96,7 @@ class BasePageInfoScene:
 
     @property
     def list(self):
-        """Gets the list of this BasePageInfoScene.
+        r"""Gets the list of this BasePageInfoScene.
 
         :return: The list of this BasePageInfoScene.
         :rtype: list[:class:`huaweicloudsdkcloudtest.v1.Scene`]
@@ -105,7 +105,7 @@ class BasePageInfoScene:
 
     @list.setter
     def list(self, list):
-        """Sets the list of this BasePageInfoScene.
+        r"""Sets the list of this BasePageInfoScene.
 
         :param list: The list of this BasePageInfoScene.
         :type list: list[:class:`huaweicloudsdkcloudtest.v1.Scene`]
@@ -114,7 +114,7 @@ class BasePageInfoScene:
 
     @property
     def offset(self):
-        """Gets the offset of this BasePageInfoScene.
+        r"""Gets the offset of this BasePageInfoScene.
 
         :return: The offset of this BasePageInfoScene.
         :rtype: int
@@ -123,7 +123,7 @@ class BasePageInfoScene:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this BasePageInfoScene.
+        r"""Sets the offset of this BasePageInfoScene.
 
         :param offset: The offset of this BasePageInfoScene.
         :type offset: int
@@ -132,7 +132,7 @@ class BasePageInfoScene:
 
     @property
     def pages(self):
-        """Gets the pages of this BasePageInfoScene.
+        r"""Gets the pages of this BasePageInfoScene.
 
         :return: The pages of this BasePageInfoScene.
         :rtype: int
@@ -141,7 +141,7 @@ class BasePageInfoScene:
 
     @pages.setter
     def pages(self, pages):
-        """Sets the pages of this BasePageInfoScene.
+        r"""Sets the pages of this BasePageInfoScene.
 
         :param pages: The pages of this BasePageInfoScene.
         :type pages: int
@@ -150,7 +150,7 @@ class BasePageInfoScene:
 
     @property
     def size(self):
-        """Gets the size of this BasePageInfoScene.
+        r"""Gets the size of this BasePageInfoScene.
 
         :return: The size of this BasePageInfoScene.
         :rtype: int
@@ -159,7 +159,7 @@ class BasePageInfoScene:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this BasePageInfoScene.
+        r"""Sets the size of this BasePageInfoScene.
 
         :param size: The size of this BasePageInfoScene.
         :type size: int
@@ -168,7 +168,7 @@ class BasePageInfoScene:
 
     @property
     def total(self):
-        """Gets the total of this BasePageInfoScene.
+        r"""Gets the total of this BasePageInfoScene.
 
         :return: The total of this BasePageInfoScene.
         :rtype: int
@@ -177,7 +177,7 @@ class BasePageInfoScene:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this BasePageInfoScene.
+        r"""Sets the total of this BasePageInfoScene.
 
         :param total: The total of this BasePageInfoScene.
         :type total: int

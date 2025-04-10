@@ -29,7 +29,7 @@ class ConfigMigrationInstanceBody:
     }
 
     def __init__(self, id=None, addrs=None, password=None):
-        """ConfigMigrationInstanceBody
+        r"""ConfigMigrationInstanceBody
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ConfigMigrationInstanceBody:
 
     @property
     def id(self):
-        """Gets the id of this ConfigMigrationInstanceBody.
+        r"""Gets the id of this ConfigMigrationInstanceBody.
 
         Redis实例ID。（Redis类型为云服务Redis时必须填写）
 
@@ -68,7 +68,7 @@ class ConfigMigrationInstanceBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ConfigMigrationInstanceBody.
+        r"""Sets the id of this ConfigMigrationInstanceBody.
 
         Redis实例ID。（Redis类型为云服务Redis时必须填写）
 
@@ -79,7 +79,7 @@ class ConfigMigrationInstanceBody:
 
     @property
     def addrs(self):
-        """Gets the addrs of this ConfigMigrationInstanceBody.
+        r"""Gets the addrs of this ConfigMigrationInstanceBody.
 
         Redis实例地址。（Redis类型为自建Redis时必须填写）。
 
@@ -90,7 +90,7 @@ class ConfigMigrationInstanceBody:
 
     @addrs.setter
     def addrs(self, addrs):
-        """Sets the addrs of this ConfigMigrationInstanceBody.
+        r"""Sets the addrs of this ConfigMigrationInstanceBody.
 
         Redis实例地址。（Redis类型为自建Redis时必须填写）。
 
@@ -101,7 +101,7 @@ class ConfigMigrationInstanceBody:
 
     @property
     def password(self):
-        """Gets the password of this ConfigMigrationInstanceBody.
+        r"""Gets the password of this ConfigMigrationInstanceBody.
 
         Redis密码，如果设置了密码，则必须填写。
 
@@ -112,7 +112,7 @@ class ConfigMigrationInstanceBody:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this ConfigMigrationInstanceBody.
+        r"""Sets the password of this ConfigMigrationInstanceBody.
 
         Redis密码，如果设置了密码，则必须填写。
 

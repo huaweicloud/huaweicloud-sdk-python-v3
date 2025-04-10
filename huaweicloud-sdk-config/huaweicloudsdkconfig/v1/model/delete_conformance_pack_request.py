@@ -25,7 +25,7 @@ class DeleteConformancePackRequest:
     }
 
     def __init__(self, conformance_pack_id=None):
-        """DeleteConformancePackRequest
+        r"""DeleteConformancePackRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteConformancePackRequest:
 
     @property
     def conformance_pack_id(self):
-        """Gets the conformance_pack_id of this DeleteConformancePackRequest.
+        r"""Gets the conformance_pack_id of this DeleteConformancePackRequest.
 
         合规规则包ID。
 
@@ -53,7 +53,7 @@ class DeleteConformancePackRequest:
 
     @conformance_pack_id.setter
     def conformance_pack_id(self, conformance_pack_id):
-        """Sets the conformance_pack_id of this DeleteConformancePackRequest.
+        r"""Sets the conformance_pack_id of this DeleteConformancePackRequest.
 
         合规规则包ID。
 

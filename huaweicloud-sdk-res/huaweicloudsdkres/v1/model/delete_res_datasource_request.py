@@ -29,7 +29,7 @@ class DeleteResDatasourceRequest:
     }
 
     def __init__(self, content_type=None, workspace_id=None, datasource_id=None):
-        """DeleteResDatasourceRequest
+        r"""DeleteResDatasourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DeleteResDatasourceRequest:
 
     @property
     def content_type(self):
-        """Gets the content_type of this DeleteResDatasourceRequest.
+        r"""Gets the content_type of this DeleteResDatasourceRequest.
 
         内容类型，取值为application/json。
 
@@ -65,7 +65,7 @@ class DeleteResDatasourceRequest:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this DeleteResDatasourceRequest.
+        r"""Sets the content_type of this DeleteResDatasourceRequest.
 
         内容类型，取值为application/json。
 
@@ -76,7 +76,7 @@ class DeleteResDatasourceRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this DeleteResDatasourceRequest.
+        r"""Gets the workspace_id of this DeleteResDatasourceRequest.
 
         工作空间id。
 
@@ -87,7 +87,7 @@ class DeleteResDatasourceRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this DeleteResDatasourceRequest.
+        r"""Sets the workspace_id of this DeleteResDatasourceRequest.
 
         工作空间id。
 
@@ -98,7 +98,7 @@ class DeleteResDatasourceRequest:
 
     @property
     def datasource_id(self):
-        """Gets the datasource_id of this DeleteResDatasourceRequest.
+        r"""Gets the datasource_id of this DeleteResDatasourceRequest.
 
         数据源id。
 
@@ -109,7 +109,7 @@ class DeleteResDatasourceRequest:
 
     @datasource_id.setter
     def datasource_id(self, datasource_id):
-        """Sets the datasource_id of this DeleteResDatasourceRequest.
+        r"""Sets the datasource_id of this DeleteResDatasourceRequest.
 
         数据源id。
 

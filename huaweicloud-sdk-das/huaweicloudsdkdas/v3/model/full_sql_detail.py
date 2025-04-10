@@ -79,7 +79,7 @@ class FullSqlDetail:
     }
 
     def __init__(self, sql=None, sql_template_id=None, operate_type=None, status=None, error_no=None, database=None, thread_id=None, client=None, user=None, execute_at=None, query_time=None, lock_time=None, rows_examined=None, rows_sent=None, rows_affected=None, trx_id=None, cpu_time=None, send_bytes=None, query_tables=None, innodb_io_read_bytes=None, innodb_io_read=None, innodb_io_read_wait=None, innodb_lock_wait=None, innodb_queue_wait=None, kernel_version=None, query_time_detail=None, session_id=None, node_id=None):
-        """FullSqlDetail
+        r"""FullSqlDetail
 
         The model defined in huaweicloud sdk
 
@@ -204,7 +204,7 @@ class FullSqlDetail:
 
     @property
     def sql(self):
-        """Gets the sql of this FullSqlDetail.
+        r"""Gets the sql of this FullSqlDetail.
 
         SQL语句。
 
@@ -215,7 +215,7 @@ class FullSqlDetail:
 
     @sql.setter
     def sql(self, sql):
-        """Sets the sql of this FullSqlDetail.
+        r"""Sets the sql of this FullSqlDetail.
 
         SQL语句。
 
@@ -226,7 +226,7 @@ class FullSqlDetail:
 
     @property
     def sql_template_id(self):
-        """Gets the sql_template_id of this FullSqlDetail.
+        r"""Gets the sql_template_id of this FullSqlDetail.
 
         SQL模板ID。
 
@@ -237,7 +237,7 @@ class FullSqlDetail:
 
     @sql_template_id.setter
     def sql_template_id(self, sql_template_id):
-        """Sets the sql_template_id of this FullSqlDetail.
+        r"""Sets the sql_template_id of this FullSqlDetail.
 
         SQL模板ID。
 
@@ -248,7 +248,7 @@ class FullSqlDetail:
 
     @property
     def operate_type(self):
-        """Gets the operate_type of this FullSqlDetail.
+        r"""Gets the operate_type of this FullSqlDetail.
 
         操作类型。
 
@@ -259,7 +259,7 @@ class FullSqlDetail:
 
     @operate_type.setter
     def operate_type(self, operate_type):
-        """Sets the operate_type of this FullSqlDetail.
+        r"""Sets the operate_type of this FullSqlDetail.
 
         操作类型。
 
@@ -270,7 +270,7 @@ class FullSqlDetail:
 
     @property
     def status(self):
-        """Gets the status of this FullSqlDetail.
+        r"""Gets the status of this FullSqlDetail.
 
         状态。
 
@@ -281,7 +281,7 @@ class FullSqlDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this FullSqlDetail.
+        r"""Sets the status of this FullSqlDetail.
 
         状态。
 
@@ -292,7 +292,7 @@ class FullSqlDetail:
 
     @property
     def error_no(self):
-        """Gets the error_no of this FullSqlDetail.
+        r"""Gets the error_no of this FullSqlDetail.
 
         错误码。
 
@@ -303,7 +303,7 @@ class FullSqlDetail:
 
     @error_no.setter
     def error_no(self, error_no):
-        """Sets the error_no of this FullSqlDetail.
+        r"""Sets the error_no of this FullSqlDetail.
 
         错误码。
 
@@ -314,7 +314,7 @@ class FullSqlDetail:
 
     @property
     def database(self):
-        """Gets the database of this FullSqlDetail.
+        r"""Gets the database of this FullSqlDetail.
 
         数据库。
 
@@ -325,7 +325,7 @@ class FullSqlDetail:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this FullSqlDetail.
+        r"""Sets the database of this FullSqlDetail.
 
         数据库。
 
@@ -336,7 +336,7 @@ class FullSqlDetail:
 
     @property
     def thread_id(self):
-        """Gets the thread_id of this FullSqlDetail.
+        r"""Gets the thread_id of this FullSqlDetail.
 
         线程ID。
 
@@ -347,7 +347,7 @@ class FullSqlDetail:
 
     @thread_id.setter
     def thread_id(self, thread_id):
-        """Sets the thread_id of this FullSqlDetail.
+        r"""Sets the thread_id of this FullSqlDetail.
 
         线程ID。
 
@@ -358,7 +358,7 @@ class FullSqlDetail:
 
     @property
     def client(self):
-        """Gets the client of this FullSqlDetail.
+        r"""Gets the client of this FullSqlDetail.
 
         客户端。
 
@@ -369,7 +369,7 @@ class FullSqlDetail:
 
     @client.setter
     def client(self, client):
-        """Sets the client of this FullSqlDetail.
+        r"""Sets the client of this FullSqlDetail.
 
         客户端。
 
@@ -380,7 +380,7 @@ class FullSqlDetail:
 
     @property
     def user(self):
-        """Gets the user of this FullSqlDetail.
+        r"""Gets the user of this FullSqlDetail.
 
         用户。
 
@@ -391,7 +391,7 @@ class FullSqlDetail:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this FullSqlDetail.
+        r"""Sets the user of this FullSqlDetail.
 
         用户。
 
@@ -402,7 +402,7 @@ class FullSqlDetail:
 
     @property
     def execute_at(self):
-        """Gets the execute_at of this FullSqlDetail.
+        r"""Gets the execute_at of this FullSqlDetail.
 
         执行开始时间（Unix timestamp），单位：毫秒。
 
@@ -413,7 +413,7 @@ class FullSqlDetail:
 
     @execute_at.setter
     def execute_at(self, execute_at):
-        """Sets the execute_at of this FullSqlDetail.
+        r"""Sets the execute_at of this FullSqlDetail.
 
         执行开始时间（Unix timestamp），单位：毫秒。
 
@@ -424,7 +424,7 @@ class FullSqlDetail:
 
     @property
     def query_time(self):
-        """Gets the query_time of this FullSqlDetail.
+        r"""Gets the query_time of this FullSqlDetail.
 
         执行耗时（毫秒）。
 
@@ -435,7 +435,7 @@ class FullSqlDetail:
 
     @query_time.setter
     def query_time(self, query_time):
-        """Sets the query_time of this FullSqlDetail.
+        r"""Sets the query_time of this FullSqlDetail.
 
         执行耗时（毫秒）。
 
@@ -446,7 +446,7 @@ class FullSqlDetail:
 
     @property
     def lock_time(self):
-        """Gets the lock_time of this FullSqlDetail.
+        r"""Gets the lock_time of this FullSqlDetail.
 
         锁等待耗时（毫秒）。
 
@@ -457,7 +457,7 @@ class FullSqlDetail:
 
     @lock_time.setter
     def lock_time(self, lock_time):
-        """Sets the lock_time of this FullSqlDetail.
+        r"""Sets the lock_time of this FullSqlDetail.
 
         锁等待耗时（毫秒）。
 
@@ -468,7 +468,7 @@ class FullSqlDetail:
 
     @property
     def rows_examined(self):
-        """Gets the rows_examined of this FullSqlDetail.
+        r"""Gets the rows_examined of this FullSqlDetail.
 
         扫描行数。
 
@@ -479,7 +479,7 @@ class FullSqlDetail:
 
     @rows_examined.setter
     def rows_examined(self, rows_examined):
-        """Sets the rows_examined of this FullSqlDetail.
+        r"""Sets the rows_examined of this FullSqlDetail.
 
         扫描行数。
 
@@ -490,7 +490,7 @@ class FullSqlDetail:
 
     @property
     def rows_sent(self):
-        """Gets the rows_sent of this FullSqlDetail.
+        r"""Gets the rows_sent of this FullSqlDetail.
 
         返回行数。
 
@@ -501,7 +501,7 @@ class FullSqlDetail:
 
     @rows_sent.setter
     def rows_sent(self, rows_sent):
-        """Sets the rows_sent of this FullSqlDetail.
+        r"""Sets the rows_sent of this FullSqlDetail.
 
         返回行数。
 
@@ -512,7 +512,7 @@ class FullSqlDetail:
 
     @property
     def rows_affected(self):
-        """Gets the rows_affected of this FullSqlDetail.
+        r"""Gets the rows_affected of this FullSqlDetail.
 
         更新行数。
 
@@ -523,7 +523,7 @@ class FullSqlDetail:
 
     @rows_affected.setter
     def rows_affected(self, rows_affected):
-        """Sets the rows_affected of this FullSqlDetail.
+        r"""Sets the rows_affected of this FullSqlDetail.
 
         更新行数。
 
@@ -534,7 +534,7 @@ class FullSqlDetail:
 
     @property
     def trx_id(self):
-        """Gets the trx_id of this FullSqlDetail.
+        r"""Gets the trx_id of this FullSqlDetail.
 
         事务ID。
 
@@ -545,7 +545,7 @@ class FullSqlDetail:
 
     @trx_id.setter
     def trx_id(self, trx_id):
-        """Sets the trx_id of this FullSqlDetail.
+        r"""Sets the trx_id of this FullSqlDetail.
 
         事务ID。
 
@@ -556,7 +556,7 @@ class FullSqlDetail:
 
     @property
     def cpu_time(self):
-        """Gets the cpu_time of this FullSqlDetail.
+        r"""Gets the cpu_time of this FullSqlDetail.
 
         CPU耗时（微秒）。
 
@@ -567,7 +567,7 @@ class FullSqlDetail:
 
     @cpu_time.setter
     def cpu_time(self, cpu_time):
-        """Sets the cpu_time of this FullSqlDetail.
+        r"""Sets the cpu_time of this FullSqlDetail.
 
         CPU耗时（微秒）。
 
@@ -578,7 +578,7 @@ class FullSqlDetail:
 
     @property
     def send_bytes(self):
-        """Gets the send_bytes of this FullSqlDetail.
+        r"""Gets the send_bytes of this FullSqlDetail.
 
         网络发送字节数。
 
@@ -589,7 +589,7 @@ class FullSqlDetail:
 
     @send_bytes.setter
     def send_bytes(self, send_bytes):
-        """Sets the send_bytes of this FullSqlDetail.
+        r"""Sets the send_bytes of this FullSqlDetail.
 
         网络发送字节数。
 
@@ -600,7 +600,7 @@ class FullSqlDetail:
 
     @property
     def query_tables(self):
-        """Gets the query_tables of this FullSqlDetail.
+        r"""Gets the query_tables of this FullSqlDetail.
 
         查询中所有的表名（格式：库名.表名|库名.表名）。
 
@@ -611,7 +611,7 @@ class FullSqlDetail:
 
     @query_tables.setter
     def query_tables(self, query_tables):
-        """Sets the query_tables of this FullSqlDetail.
+        r"""Sets the query_tables of this FullSqlDetail.
 
         查询中所有的表名（格式：库名.表名|库名.表名）。
 
@@ -622,7 +622,7 @@ class FullSqlDetail:
 
     @property
     def innodb_io_read_bytes(self):
-        """Gets the innodb_io_read_bytes of this FullSqlDetail.
+        r"""Gets the innodb_io_read_bytes of this FullSqlDetail.
 
         物理I/O读字节数。
 
@@ -633,7 +633,7 @@ class FullSqlDetail:
 
     @innodb_io_read_bytes.setter
     def innodb_io_read_bytes(self, innodb_io_read_bytes):
-        """Sets the innodb_io_read_bytes of this FullSqlDetail.
+        r"""Sets the innodb_io_read_bytes of this FullSqlDetail.
 
         物理I/O读字节数。
 
@@ -644,7 +644,7 @@ class FullSqlDetail:
 
     @property
     def innodb_io_read(self):
-        """Gets the innodb_io_read of this FullSqlDetail.
+        r"""Gets the innodb_io_read of this FullSqlDetail.
 
         物理I/O读次数。
 
@@ -655,7 +655,7 @@ class FullSqlDetail:
 
     @innodb_io_read.setter
     def innodb_io_read(self, innodb_io_read):
-        """Sets the innodb_io_read of this FullSqlDetail.
+        r"""Sets the innodb_io_read of this FullSqlDetail.
 
         物理I/O读次数。
 
@@ -666,7 +666,7 @@ class FullSqlDetail:
 
     @property
     def innodb_io_read_wait(self):
-        """Gets the innodb_io_read_wait of this FullSqlDetail.
+        r"""Gets the innodb_io_read_wait of this FullSqlDetail.
 
         物理I/O读取等待耗时（毫秒）。
 
@@ -677,7 +677,7 @@ class FullSqlDetail:
 
     @innodb_io_read_wait.setter
     def innodb_io_read_wait(self, innodb_io_read_wait):
-        """Sets the innodb_io_read_wait of this FullSqlDetail.
+        r"""Sets the innodb_io_read_wait of this FullSqlDetail.
 
         物理I/O读取等待耗时（毫秒）。
 
@@ -688,7 +688,7 @@ class FullSqlDetail:
 
     @property
     def innodb_lock_wait(self):
-        """Gets the innodb_lock_wait of this FullSqlDetail.
+        r"""Gets the innodb_lock_wait of this FullSqlDetail.
 
         行锁等待耗时（毫秒）。
 
@@ -699,7 +699,7 @@ class FullSqlDetail:
 
     @innodb_lock_wait.setter
     def innodb_lock_wait(self, innodb_lock_wait):
-        """Sets the innodb_lock_wait of this FullSqlDetail.
+        r"""Sets the innodb_lock_wait of this FullSqlDetail.
 
         行锁等待耗时（毫秒）。
 
@@ -710,7 +710,7 @@ class FullSqlDetail:
 
     @property
     def innodb_queue_wait(self):
-        """Gets the innodb_queue_wait of this FullSqlDetail.
+        r"""Gets the innodb_queue_wait of this FullSqlDetail.
 
         进入innodb的等待耗时（毫秒）。
 
@@ -721,7 +721,7 @@ class FullSqlDetail:
 
     @innodb_queue_wait.setter
     def innodb_queue_wait(self, innodb_queue_wait):
-        """Sets the innodb_queue_wait of this FullSqlDetail.
+        r"""Sets the innodb_queue_wait of this FullSqlDetail.
 
         进入innodb的等待耗时（毫秒）。
 
@@ -732,7 +732,7 @@ class FullSqlDetail:
 
     @property
     def kernel_version(self):
-        """Gets the kernel_version of this FullSqlDetail.
+        r"""Gets the kernel_version of this FullSqlDetail.
 
         内核版本号，DDM实例使用。
 
@@ -743,7 +743,7 @@ class FullSqlDetail:
 
     @kernel_version.setter
     def kernel_version(self, kernel_version):
-        """Sets the kernel_version of this FullSqlDetail.
+        r"""Sets the kernel_version of this FullSqlDetail.
 
         内核版本号，DDM实例使用。
 
@@ -754,7 +754,7 @@ class FullSqlDetail:
 
     @property
     def query_time_detail(self):
-        """Gets the query_time_detail of this FullSqlDetail.
+        r"""Gets the query_time_detail of this FullSqlDetail.
 
         SQL执行各阶段细分耗时，DDM实例使用。
 
@@ -765,7 +765,7 @@ class FullSqlDetail:
 
     @query_time_detail.setter
     def query_time_detail(self, query_time_detail):
-        """Sets the query_time_detail of this FullSqlDetail.
+        r"""Sets the query_time_detail of this FullSqlDetail.
 
         SQL执行各阶段细分耗时，DDM实例使用。
 
@@ -776,7 +776,7 @@ class FullSqlDetail:
 
     @property
     def session_id(self):
-        """Gets the session_id of this FullSqlDetail.
+        r"""Gets the session_id of this FullSqlDetail.
 
         会话ID。
 
@@ -787,7 +787,7 @@ class FullSqlDetail:
 
     @session_id.setter
     def session_id(self, session_id):
-        """Sets the session_id of this FullSqlDetail.
+        r"""Sets the session_id of this FullSqlDetail.
 
         会话ID。
 
@@ -798,7 +798,7 @@ class FullSqlDetail:
 
     @property
     def node_id(self):
-        """Gets the node_id of this FullSqlDetail.
+        r"""Gets the node_id of this FullSqlDetail.
 
         节点ID。
 
@@ -809,7 +809,7 @@ class FullSqlDetail:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this FullSqlDetail.
+        r"""Sets the node_id of this FullSqlDetail.
 
         节点ID。
 

@@ -51,7 +51,7 @@ class CBHInstances:
     }
 
     def __init__(self, flavor_ref=None, instance_name=None, vpc_id=None, nics=None, public_ip=None, security_groups=None, availability_zone=None, slave_availability_zone=None, comment=None, region=None, hx_password=None, bastion_type=None, ipv6_enable=None, enterprise_project_id=None):
-        """CBHInstances
+        r"""CBHInstances
 
         The model defined in huaweicloud sdk
 
@@ -124,7 +124,7 @@ class CBHInstances:
 
     @property
     def flavor_ref(self):
-        """Gets the flavor_ref of this CBHInstances.
+        r"""Gets the flavor_ref of this CBHInstances.
 
         待创建云堡垒机规格ID，例如： - cbh.basic.50 - cbh.enhance.50 已上线的规格请参见《云堡垒机产品介绍》的[服务版本差异](https://support.huaweicloud.com/productdesc-cbh/cbh_01_0010.html)章节。
 
@@ -135,7 +135,7 @@ class CBHInstances:
 
     @flavor_ref.setter
     def flavor_ref(self, flavor_ref):
-        """Sets the flavor_ref of this CBHInstances.
+        r"""Sets the flavor_ref of this CBHInstances.
 
         待创建云堡垒机规格ID，例如： - cbh.basic.50 - cbh.enhance.50 已上线的规格请参见《云堡垒机产品介绍》的[服务版本差异](https://support.huaweicloud.com/productdesc-cbh/cbh_01_0010.html)章节。
 
@@ -146,7 +146,7 @@ class CBHInstances:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this CBHInstances.
+        r"""Gets the instance_name of this CBHInstances.
 
         云堡垒机实例名称，取值范围： - 只能由中文字符、英文字母、数字及“_”、“-”组成，且长度为[1-64]个字符。 例如：CBH-6b8e
 
@@ -157,7 +157,7 @@ class CBHInstances:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this CBHInstances.
+        r"""Sets the instance_name of this CBHInstances.
 
         云堡垒机实例名称，取值范围： - 只能由中文字符、英文字母、数字及“_”、“-”组成，且长度为[1-64]个字符。 例如：CBH-6b8e
 
@@ -168,7 +168,7 @@ class CBHInstances:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CBHInstances.
+        r"""Gets the vpc_id of this CBHInstances.
 
         待创建云服务器所属虚拟私有云（简称VPC），需要指定已创建VPC的ID，UUID格式。 VPC的ID可以从控制台或者参考《虚拟私有云接口参考》的“查询VPC”章节获取。 例如：03211ecf-697e-4306-a7a0-6e939bf948de
 
@@ -179,7 +179,7 @@ class CBHInstances:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CBHInstances.
+        r"""Sets the vpc_id of this CBHInstances.
 
         待创建云服务器所属虚拟私有云（简称VPC），需要指定已创建VPC的ID，UUID格式。 VPC的ID可以从控制台或者参考《虚拟私有云接口参考》的“查询VPC”章节获取。 例如：03211ecf-697e-4306-a7a0-6e939bf948de
 
@@ -190,7 +190,7 @@ class CBHInstances:
 
     @property
     def nics(self):
-        """Gets the nics of this CBHInstances.
+        r"""Gets the nics of this CBHInstances.
 
         :return: The nics of this CBHInstances.
         :rtype: list[:class:`huaweicloudsdkcbh.v1.Nics`]
@@ -199,7 +199,7 @@ class CBHInstances:
 
     @nics.setter
     def nics(self, nics):
-        """Sets the nics of this CBHInstances.
+        r"""Sets the nics of this CBHInstances.
 
         :param nics: The nics of this CBHInstances.
         :type nics: list[:class:`huaweicloudsdkcbh.v1.Nics`]
@@ -208,7 +208,7 @@ class CBHInstances:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this CBHInstances.
+        r"""Gets the public_ip of this CBHInstances.
 
         :return: The public_ip of this CBHInstances.
         :rtype: :class:`huaweicloudsdkcbh.v1.PublicIp`
@@ -217,7 +217,7 @@ class CBHInstances:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this CBHInstances.
+        r"""Sets the public_ip of this CBHInstances.
 
         :param public_ip: The public_ip of this CBHInstances.
         :type public_ip: :class:`huaweicloudsdkcbh.v1.PublicIp`
@@ -226,7 +226,7 @@ class CBHInstances:
 
     @property
     def security_groups(self):
-        """Gets the security_groups of this CBHInstances.
+        r"""Gets the security_groups of this CBHInstances.
 
         :return: The security_groups of this CBHInstances.
         :rtype: list[:class:`huaweicloudsdkcbh.v1.SecurityGroup`]
@@ -235,7 +235,7 @@ class CBHInstances:
 
     @security_groups.setter
     def security_groups(self, security_groups):
-        """Sets the security_groups of this CBHInstances.
+        r"""Sets the security_groups of this CBHInstances.
 
         :param security_groups: The security_groups of this CBHInstances.
         :type security_groups: list[:class:`huaweicloudsdkcbh.v1.SecurityGroup`]
@@ -244,7 +244,7 @@ class CBHInstances:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this CBHInstances.
+        r"""Gets the availability_zone of this CBHInstances.
 
         创建云堡垒机所在的可用区，需要指定可用区名称。 可参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取
 
@@ -255,7 +255,7 @@ class CBHInstances:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this CBHInstances.
+        r"""Sets the availability_zone of this CBHInstances.
 
         创建云堡垒机所在的可用区，需要指定可用区名称。 可参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取
 
@@ -266,7 +266,7 @@ class CBHInstances:
 
     @property
     def slave_availability_zone(self):
-        """Gets the slave_availability_zone of this CBHInstances.
+        r"""Gets the slave_availability_zone of this CBHInstances.
 
         创建云堡垒机所在的备机可用区，需要指定备机可用区名称。(当前字段未启用,填写默认值null) 可参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取
 
@@ -277,7 +277,7 @@ class CBHInstances:
 
     @slave_availability_zone.setter
     def slave_availability_zone(self, slave_availability_zone):
-        """Sets the slave_availability_zone of this CBHInstances.
+        r"""Sets the slave_availability_zone of this CBHInstances.
 
         创建云堡垒机所在的备机可用区，需要指定备机可用区名称。(当前字段未启用,填写默认值null) 可参考[地区和终端节点](https://developer.huaweicloud.com/endpoint)获取
 
@@ -288,7 +288,7 @@ class CBHInstances:
 
     @property
     def comment(self):
-        """Gets the comment of this CBHInstances.
+        r"""Gets the comment of this CBHInstances.
 
         云堡垒机实例描述信息。
 
@@ -299,7 +299,7 @@ class CBHInstances:
 
     @comment.setter
     def comment(self, comment):
-        """Sets the comment of this CBHInstances.
+        r"""Sets the comment of this CBHInstances.
 
         云堡垒机实例描述信息。
 
@@ -310,7 +310,7 @@ class CBHInstances:
 
     @property
     def region(self):
-        """Gets the region of this CBHInstances.
+        r"""Gets the region of this CBHInstances.
 
         云服务所在局点ID。
 
@@ -321,7 +321,7 @@ class CBHInstances:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this CBHInstances.
+        r"""Sets the region of this CBHInstances.
 
         云服务所在局点ID。
 
@@ -332,7 +332,7 @@ class CBHInstances:
 
     @property
     def hx_password(self):
-        """Gets the hx_password of this CBHInstances.
+        r"""Gets the hx_password of this CBHInstances.
 
         堡垒机实例前端登录密码。密码规则：8-32位,不能包含amdin或nidma及其大写形式,必须包含大小写数字特殊字符四种类型中的三种。
 
@@ -343,7 +343,7 @@ class CBHInstances:
 
     @hx_password.setter
     def hx_password(self, hx_password):
-        """Sets the hx_password of this CBHInstances.
+        r"""Sets the hx_password of this CBHInstances.
 
         堡垒机实例前端登录密码。密码规则：8-32位,不能包含amdin或nidma及其大写形式,必须包含大小写数字特殊字符四种类型中的三种。
 
@@ -354,7 +354,7 @@ class CBHInstances:
 
     @property
     def bastion_type(self):
-        """Gets the bastion_type of this CBHInstances.
+        r"""Gets the bastion_type of this CBHInstances.
 
         堡垒机实例类型，填写“OEM”即可。
 
@@ -365,7 +365,7 @@ class CBHInstances:
 
     @bastion_type.setter
     def bastion_type(self, bastion_type):
-        """Sets the bastion_type of this CBHInstances.
+        r"""Sets the bastion_type of this CBHInstances.
 
         堡垒机实例类型，填写“OEM”即可。
 
@@ -376,7 +376,7 @@ class CBHInstances:
 
     @property
     def ipv6_enable(self):
-        """Gets the ipv6_enable of this CBHInstances.
+        r"""Gets the ipv6_enable of this CBHInstances.
 
         是否支持IPV6，不填默认为false。
 
@@ -387,7 +387,7 @@ class CBHInstances:
 
     @ipv6_enable.setter
     def ipv6_enable(self, ipv6_enable):
-        """Sets the ipv6_enable of this CBHInstances.
+        r"""Sets the ipv6_enable of this CBHInstances.
 
         是否支持IPV6，不填默认为false。
 
@@ -398,7 +398,7 @@ class CBHInstances:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CBHInstances.
+        r"""Gets the enterprise_project_id of this CBHInstances.
 
         企业项目ID，不填默认为0。
 
@@ -409,7 +409,7 @@ class CBHInstances:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CBHInstances.
+        r"""Sets the enterprise_project_id of this CBHInstances.
 
         企业项目ID，不填默认为0。
 

@@ -59,7 +59,7 @@ class SimPoolVO:
     }
 
     def __init__(self, id=None, pool_name=None, price_plan_name=None, price_plan_id=None, effective_time=None, expired_time=None, billing_cycle=None, flow_total=None, flow_used=None, flow_left=None, quantity=None, modify_time=None, order_id=None, activated_sim_quantity=None, inactive_sim_quantity=None, disassembled_sim_quantity=None, order_ids=None, status=None):
-        """SimPoolVO
+        r"""SimPoolVO
 
         The model defined in huaweicloud sdk
 
@@ -162,7 +162,7 @@ class SimPoolVO:
 
     @property
     def id(self):
-        """Gets the id of this SimPoolVO.
+        r"""Gets the id of this SimPoolVO.
 
         流量池标识
 
@@ -173,7 +173,7 @@ class SimPoolVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SimPoolVO.
+        r"""Sets the id of this SimPoolVO.
 
         流量池标识
 
@@ -184,7 +184,7 @@ class SimPoolVO:
 
     @property
     def pool_name(self):
-        """Gets the pool_name of this SimPoolVO.
+        r"""Gets the pool_name of this SimPoolVO.
 
         流量池名称
 
@@ -195,7 +195,7 @@ class SimPoolVO:
 
     @pool_name.setter
     def pool_name(self, pool_name):
-        """Sets the pool_name of this SimPoolVO.
+        r"""Sets the pool_name of this SimPoolVO.
 
         流量池名称
 
@@ -206,7 +206,7 @@ class SimPoolVO:
 
     @property
     def price_plan_name(self):
-        """Gets the price_plan_name of this SimPoolVO.
+        r"""Gets the price_plan_name of this SimPoolVO.
 
         套餐名称
 
@@ -217,7 +217,7 @@ class SimPoolVO:
 
     @price_plan_name.setter
     def price_plan_name(self, price_plan_name):
-        """Sets the price_plan_name of this SimPoolVO.
+        r"""Sets the price_plan_name of this SimPoolVO.
 
         套餐名称
 
@@ -228,7 +228,7 @@ class SimPoolVO:
 
     @property
     def price_plan_id(self):
-        """Gets the price_plan_id of this SimPoolVO.
+        r"""Gets the price_plan_id of this SimPoolVO.
 
         套餐标识
 
@@ -239,7 +239,7 @@ class SimPoolVO:
 
     @price_plan_id.setter
     def price_plan_id(self, price_plan_id):
-        """Sets the price_plan_id of this SimPoolVO.
+        r"""Sets the price_plan_id of this SimPoolVO.
 
         套餐标识
 
@@ -250,7 +250,7 @@ class SimPoolVO:
 
     @property
     def effective_time(self):
-        """Gets the effective_time of this SimPoolVO.
+        r"""Gets the effective_time of this SimPoolVO.
 
         生效时间
 
@@ -261,7 +261,7 @@ class SimPoolVO:
 
     @effective_time.setter
     def effective_time(self, effective_time):
-        """Sets the effective_time of this SimPoolVO.
+        r"""Sets the effective_time of this SimPoolVO.
 
         生效时间
 
@@ -272,7 +272,7 @@ class SimPoolVO:
 
     @property
     def expired_time(self):
-        """Gets the expired_time of this SimPoolVO.
+        r"""Gets the expired_time of this SimPoolVO.
 
         失效时间
 
@@ -283,7 +283,7 @@ class SimPoolVO:
 
     @expired_time.setter
     def expired_time(self, expired_time):
-        """Sets the expired_time of this SimPoolVO.
+        r"""Sets the expired_time of this SimPoolVO.
 
         失效时间
 
@@ -294,7 +294,7 @@ class SimPoolVO:
 
     @property
     def billing_cycle(self):
-        """Gets the billing_cycle of this SimPoolVO.
+        r"""Gets the billing_cycle of this SimPoolVO.
 
         账期
 
@@ -305,7 +305,7 @@ class SimPoolVO:
 
     @billing_cycle.setter
     def billing_cycle(self, billing_cycle):
-        """Sets the billing_cycle of this SimPoolVO.
+        r"""Sets the billing_cycle of this SimPoolVO.
 
         账期
 
@@ -316,7 +316,7 @@ class SimPoolVO:
 
     @property
     def flow_total(self):
-        """Gets the flow_total of this SimPoolVO.
+        r"""Gets the flow_total of this SimPoolVO.
 
         可用流量(查询账期所在月份)，单位MB
 
@@ -327,7 +327,7 @@ class SimPoolVO:
 
     @flow_total.setter
     def flow_total(self, flow_total):
-        """Sets the flow_total of this SimPoolVO.
+        r"""Sets the flow_total of this SimPoolVO.
 
         可用流量(查询账期所在月份)，单位MB
 
@@ -338,7 +338,7 @@ class SimPoolVO:
 
     @property
     def flow_used(self):
-        """Gets the flow_used of this SimPoolVO.
+        r"""Gets the flow_used of this SimPoolVO.
 
         已用流量(查询账期所在月份), 单位MB
 
@@ -349,7 +349,7 @@ class SimPoolVO:
 
     @flow_used.setter
     def flow_used(self, flow_used):
-        """Sets the flow_used of this SimPoolVO.
+        r"""Sets the flow_used of this SimPoolVO.
 
         已用流量(查询账期所在月份), 单位MB
 
@@ -360,7 +360,7 @@ class SimPoolVO:
 
     @property
     def flow_left(self):
-        """Gets the flow_left of this SimPoolVO.
+        r"""Gets the flow_left of this SimPoolVO.
 
         剩余流量(查询账期所在月份), 单位MB
 
@@ -371,7 +371,7 @@ class SimPoolVO:
 
     @flow_left.setter
     def flow_left(self, flow_left):
-        """Sets the flow_left of this SimPoolVO.
+        r"""Sets the flow_left of this SimPoolVO.
 
         剩余流量(查询账期所在月份), 单位MB
 
@@ -382,7 +382,7 @@ class SimPoolVO:
 
     @property
     def quantity(self):
-        """Gets the quantity of this SimPoolVO.
+        r"""Gets the quantity of this SimPoolVO.
 
         流量池成员数量
 
@@ -393,7 +393,7 @@ class SimPoolVO:
 
     @quantity.setter
     def quantity(self, quantity):
-        """Sets the quantity of this SimPoolVO.
+        r"""Sets the quantity of this SimPoolVO.
 
         流量池成员数量
 
@@ -404,7 +404,7 @@ class SimPoolVO:
 
     @property
     def modify_time(self):
-        """Gets the modify_time of this SimPoolVO.
+        r"""Gets the modify_time of this SimPoolVO.
 
         更新时间
 
@@ -415,7 +415,7 @@ class SimPoolVO:
 
     @modify_time.setter
     def modify_time(self, modify_time):
-        """Sets the modify_time of this SimPoolVO.
+        r"""Sets the modify_time of this SimPoolVO.
 
         更新时间
 
@@ -426,7 +426,7 @@ class SimPoolVO:
 
     @property
     def order_id(self):
-        """Gets the order_id of this SimPoolVO.
+        r"""Gets the order_id of this SimPoolVO.
 
         批次号
 
@@ -437,7 +437,7 @@ class SimPoolVO:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this SimPoolVO.
+        r"""Sets the order_id of this SimPoolVO.
 
         批次号
 
@@ -448,7 +448,7 @@ class SimPoolVO:
 
     @property
     def activated_sim_quantity(self):
-        """Gets the activated_sim_quantity of this SimPoolVO.
+        r"""Gets the activated_sim_quantity of this SimPoolVO.
 
         已激活成员数量
 
@@ -459,7 +459,7 @@ class SimPoolVO:
 
     @activated_sim_quantity.setter
     def activated_sim_quantity(self, activated_sim_quantity):
-        """Sets the activated_sim_quantity of this SimPoolVO.
+        r"""Sets the activated_sim_quantity of this SimPoolVO.
 
         已激活成员数量
 
@@ -470,7 +470,7 @@ class SimPoolVO:
 
     @property
     def inactive_sim_quantity(self):
-        """Gets the inactive_sim_quantity of this SimPoolVO.
+        r"""Gets the inactive_sim_quantity of this SimPoolVO.
 
         未激活成员数量
 
@@ -481,7 +481,7 @@ class SimPoolVO:
 
     @inactive_sim_quantity.setter
     def inactive_sim_quantity(self, inactive_sim_quantity):
-        """Sets the inactive_sim_quantity of this SimPoolVO.
+        r"""Sets the inactive_sim_quantity of this SimPoolVO.
 
         未激活成员数量
 
@@ -492,7 +492,7 @@ class SimPoolVO:
 
     @property
     def disassembled_sim_quantity(self):
-        """Gets the disassembled_sim_quantity of this SimPoolVO.
+        r"""Gets the disassembled_sim_quantity of this SimPoolVO.
 
         已拆机成员数量
 
@@ -503,7 +503,7 @@ class SimPoolVO:
 
     @disassembled_sim_quantity.setter
     def disassembled_sim_quantity(self, disassembled_sim_quantity):
-        """Sets the disassembled_sim_quantity of this SimPoolVO.
+        r"""Sets the disassembled_sim_quantity of this SimPoolVO.
 
         已拆机成员数量
 
@@ -514,7 +514,7 @@ class SimPoolVO:
 
     @property
     def order_ids(self):
-        """Gets the order_ids of this SimPoolVO.
+        r"""Gets the order_ids of this SimPoolVO.
 
         组成流量池的批次号列表
 
@@ -525,7 +525,7 @@ class SimPoolVO:
 
     @order_ids.setter
     def order_ids(self, order_ids):
-        """Sets the order_ids of this SimPoolVO.
+        r"""Sets the order_ids of this SimPoolVO.
 
         组成流量池的批次号列表
 
@@ -536,7 +536,7 @@ class SimPoolVO:
 
     @property
     def status(self):
-        """Gets the status of this SimPoolVO.
+        r"""Gets the status of this SimPoolVO.
 
         流量池状态，0：废弃，1：在用
 
@@ -547,7 +547,7 @@ class SimPoolVO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SimPoolVO.
+        r"""Sets the status of this SimPoolVO.
 
         流量池状态，0：废弃，1：在用
 

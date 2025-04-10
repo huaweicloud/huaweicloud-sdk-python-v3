@@ -27,7 +27,7 @@ class LinkInfo:
     }
 
     def __init__(self, href=None, rel=None):
-        """LinkInfo
+        r"""LinkInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class LinkInfo:
 
     @property
     def href(self):
-        """Gets the href of this LinkInfo.
+        r"""Gets the href of this LinkInfo.
 
         对应该API的URL
 
@@ -61,7 +61,7 @@ class LinkInfo:
 
     @href.setter
     def href(self, href):
-        """Sets the href of this LinkInfo.
+        r"""Sets the href of this LinkInfo.
 
         对应该API的URL
 
@@ -72,7 +72,7 @@ class LinkInfo:
 
     @property
     def rel(self):
-        """Gets the rel of this LinkInfo.
+        r"""Gets the rel of this LinkInfo.
 
         取值为“self”，表示href为本地链接。
 
@@ -83,7 +83,7 @@ class LinkInfo:
 
     @rel.setter
     def rel(self, rel):
-        """Sets the rel of this LinkInfo.
+        r"""Sets the rel of this LinkInfo.
 
         取值为“self”，表示href为本地链接。
 

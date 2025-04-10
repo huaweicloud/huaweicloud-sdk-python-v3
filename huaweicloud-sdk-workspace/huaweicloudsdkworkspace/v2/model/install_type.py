@@ -28,7 +28,7 @@ class InstallType:
     }
 
     def __init__(self):
-        """InstallType
+        r"""InstallType
 
         The model defined in huaweicloud sdk
 

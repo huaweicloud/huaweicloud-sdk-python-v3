@@ -25,7 +25,7 @@ class DropDatabaseV3Req:
     }
 
     def __init__(self, is_force_delete=None):
-        """DropDatabaseV3Req
+        r"""DropDatabaseV3Req
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DropDatabaseV3Req:
 
     @property
     def is_force_delete(self):
-        """Gets the is_force_delete of this DropDatabaseV3Req.
+        r"""Gets the is_force_delete of this DropDatabaseV3Req.
 
         是否强制删除数据库，默认是false。
 
@@ -54,7 +54,7 @@ class DropDatabaseV3Req:
 
     @is_force_delete.setter
     def is_force_delete(self, is_force_delete):
-        """Sets the is_force_delete of this DropDatabaseV3Req.
+        r"""Sets the is_force_delete of this DropDatabaseV3Req.
 
         是否强制删除数据库，默认是false。
 

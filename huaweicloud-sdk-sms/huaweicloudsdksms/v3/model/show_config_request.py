@@ -23,7 +23,7 @@ class ShowConfigRequest:
     }
 
     def __init__(self):
-        """ShowConfigRequest
+        r"""ShowConfigRequest
 
         The model defined in huaweicloud sdk
 

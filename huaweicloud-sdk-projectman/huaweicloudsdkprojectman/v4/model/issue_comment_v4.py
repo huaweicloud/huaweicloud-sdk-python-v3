@@ -33,7 +33,7 @@ class IssueCommentV4:
     }
 
     def __init__(self, comment=None, id=None, created_time=None, timestamp=None, user=None):
-        """IssueCommentV4
+        r"""IssueCommentV4
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class IssueCommentV4:
 
     @property
     def comment(self):
-        """Gets the comment of this IssueCommentV4.
+        r"""Gets the comment of this IssueCommentV4.
 
         评论内容
 
@@ -82,7 +82,7 @@ class IssueCommentV4:
 
     @comment.setter
     def comment(self, comment):
-        """Sets the comment of this IssueCommentV4.
+        r"""Sets the comment of this IssueCommentV4.
 
         评论内容
 
@@ -93,7 +93,7 @@ class IssueCommentV4:
 
     @property
     def id(self):
-        """Gets the id of this IssueCommentV4.
+        r"""Gets the id of this IssueCommentV4.
 
         评论id
 
@@ -104,7 +104,7 @@ class IssueCommentV4:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this IssueCommentV4.
+        r"""Sets the id of this IssueCommentV4.
 
         评论id
 
@@ -115,7 +115,7 @@ class IssueCommentV4:
 
     @property
     def created_time(self):
-        """Gets the created_time of this IssueCommentV4.
+        r"""Gets the created_time of this IssueCommentV4.
 
         评论时间
 
@@ -126,7 +126,7 @@ class IssueCommentV4:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this IssueCommentV4.
+        r"""Sets the created_time of this IssueCommentV4.
 
         评论时间
 
@@ -137,7 +137,7 @@ class IssueCommentV4:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this IssueCommentV4.
+        r"""Gets the timestamp of this IssueCommentV4.
 
         评论时间戳
 
@@ -148,7 +148,7 @@ class IssueCommentV4:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this IssueCommentV4.
+        r"""Sets the timestamp of this IssueCommentV4.
 
         评论时间戳
 
@@ -159,7 +159,7 @@ class IssueCommentV4:
 
     @property
     def user(self):
-        """Gets the user of this IssueCommentV4.
+        r"""Gets the user of this IssueCommentV4.
 
         :return: The user of this IssueCommentV4.
         :rtype: :class:`huaweicloudsdkprojectman.v4.CommentUserV4`
@@ -168,7 +168,7 @@ class IssueCommentV4:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this IssueCommentV4.
+        r"""Sets the user of this IssueCommentV4.
 
         :param user: The user of this IssueCommentV4.
         :type user: :class:`huaweicloudsdkprojectman.v4.CommentUserV4`

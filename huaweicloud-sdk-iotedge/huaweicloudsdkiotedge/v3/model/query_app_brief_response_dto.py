@@ -35,7 +35,7 @@ class QueryAppBriefResponseDTO:
     }
 
     def __init__(self, app_id=None, description=None, app_type=None, provider_type=None, create_time=None, update_time=None):
-        """QueryAppBriefResponseDTO
+        r"""QueryAppBriefResponseDTO
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class QueryAppBriefResponseDTO:
 
     @property
     def app_id(self):
-        """Gets the app_id of this QueryAppBriefResponseDTO.
+        r"""Gets the app_id of this QueryAppBriefResponseDTO.
 
         应用模板ID
 
@@ -89,7 +89,7 @@ class QueryAppBriefResponseDTO:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this QueryAppBriefResponseDTO.
+        r"""Sets the app_id of this QueryAppBriefResponseDTO.
 
         应用模板ID
 
@@ -100,7 +100,7 @@ class QueryAppBriefResponseDTO:
 
     @property
     def description(self):
-        """Gets the description of this QueryAppBriefResponseDTO.
+        r"""Gets the description of this QueryAppBriefResponseDTO.
 
         应用描述
 
@@ -111,7 +111,7 @@ class QueryAppBriefResponseDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this QueryAppBriefResponseDTO.
+        r"""Sets the description of this QueryAppBriefResponseDTO.
 
         应用描述
 
@@ -122,7 +122,7 @@ class QueryAppBriefResponseDTO:
 
     @property
     def app_type(self):
-        """Gets the app_type of this QueryAppBriefResponseDTO.
+        r"""Gets the app_type of this QueryAppBriefResponseDTO.
 
         应用类型
 
@@ -133,7 +133,7 @@ class QueryAppBriefResponseDTO:
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this QueryAppBriefResponseDTO.
+        r"""Sets the app_type of this QueryAppBriefResponseDTO.
 
         应用类型
 
@@ -144,7 +144,7 @@ class QueryAppBriefResponseDTO:
 
     @property
     def provider_type(self):
-        """Gets the provider_type of this QueryAppBriefResponseDTO.
+        r"""Gets the provider_type of this QueryAppBriefResponseDTO.
 
         应用来源
 
@@ -155,7 +155,7 @@ class QueryAppBriefResponseDTO:
 
     @provider_type.setter
     def provider_type(self, provider_type):
-        """Sets the provider_type of this QueryAppBriefResponseDTO.
+        r"""Sets the provider_type of this QueryAppBriefResponseDTO.
 
         应用来源
 
@@ -166,7 +166,7 @@ class QueryAppBriefResponseDTO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this QueryAppBriefResponseDTO.
+        r"""Gets the create_time of this QueryAppBriefResponseDTO.
 
         创建时间
 
@@ -177,7 +177,7 @@ class QueryAppBriefResponseDTO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this QueryAppBriefResponseDTO.
+        r"""Sets the create_time of this QueryAppBriefResponseDTO.
 
         创建时间
 
@@ -188,7 +188,7 @@ class QueryAppBriefResponseDTO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this QueryAppBriefResponseDTO.
+        r"""Gets the update_time of this QueryAppBriefResponseDTO.
 
         最后一次修改时间
 
@@ -199,7 +199,7 @@ class QueryAppBriefResponseDTO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this QueryAppBriefResponseDTO.
+        r"""Sets the update_time of this QueryAppBriefResponseDTO.
 
         最后一次修改时间
 

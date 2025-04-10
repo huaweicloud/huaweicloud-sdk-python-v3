@@ -45,7 +45,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo:
     }
 
     def __init__(self, id=None, name=None, description=None, type=None, enterprise_project_id=None, charge_mode=None, bandwidth=None, size=None, local_area=None, remote_area=None, tags=None):
-        """AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo
+        r"""AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo:
 
     @property
     def id(self):
-        """Gets the id of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
+        r"""Gets the id of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
 
         骨干带宽的ID
 
@@ -124,7 +124,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
+        r"""Sets the id of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
 
         骨干带宽的ID
 
@@ -135,7 +135,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo:
 
     @property
     def name(self):
-        """Gets the name of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
+        r"""Gets the name of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
 
         - 功能说明：骨干带宽的名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -146,7 +146,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
+        r"""Sets the name of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
 
         - 功能说明：骨干带宽的名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -157,7 +157,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo:
 
     @property
     def description(self):
-        """Gets the description of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
+        r"""Gets the description of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
 
         骨干带宽描述信息
 
@@ -168,7 +168,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
+        r"""Sets the description of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
 
         骨干带宽描述信息
 
@@ -179,7 +179,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo:
 
     @property
     def type(self):
-        """Gets the type of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
+        r"""Gets the type of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
 
         骨干带宽类型
 
@@ -190,7 +190,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
+        r"""Sets the type of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
 
         骨干带宽类型
 
@@ -201,7 +201,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
+        r"""Gets the enterprise_project_id of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
 
         - 企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。 - 创建全域弹性公网IP时，给全域弹性公网IP绑定企业项目ID。 - 不指定该参数时，默认值是 0 - 关于企业项目ID的获取及企业项目特性的详细信息，请参见[《企业管理用户指南》](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
 
@@ -212,7 +212,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
+        r"""Sets the enterprise_project_id of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
 
         - 企业项目ID。最大长度36字节，带“-”连字符的UUID格式，或者是字符串“0”。 - 创建全域弹性公网IP时，给全域弹性公网IP绑定企业项目ID。 - 不指定该参数时，默认值是 0 - 关于企业项目ID的获取及企业项目特性的详细信息，请参见[《企业管理用户指南》](https://support.huaweicloud.com/usermanual-em/zh-cn_topic_0126101490.html)。
 
@@ -223,7 +223,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
+        r"""Gets the charge_mode of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
 
         计费模式
 
@@ -234,7 +234,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
+        r"""Sets the charge_mode of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
 
         计费模式
 
@@ -245,7 +245,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo:
 
     @property
     def bandwidth(self):
-        """Gets the bandwidth of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
+        r"""Gets the bandwidth of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
 
         域间带宽值
 
@@ -256,7 +256,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo:
 
     @bandwidth.setter
     def bandwidth(self, bandwidth):
-        """Sets the bandwidth of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
+        r"""Sets the bandwidth of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
 
         域间带宽值
 
@@ -267,7 +267,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo:
 
     @property
     def size(self):
-        """Gets the size of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
+        r"""Gets the size of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
 
         域间带宽大小
 
@@ -278,7 +278,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
+        r"""Sets the size of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
 
         域间带宽大小
 
@@ -289,7 +289,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo:
 
     @property
     def local_area(self):
-        """Gets the local_area of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
+        r"""Gets the local_area of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
 
         骨干带宽的两端之一：A点
 
@@ -300,7 +300,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo:
 
     @local_area.setter
     def local_area(self, local_area):
-        """Sets the local_area of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
+        r"""Sets the local_area of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
 
         骨干带宽的两端之一：A点
 
@@ -311,7 +311,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo:
 
     @property
     def remote_area(self):
-        """Gets the remote_area of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
+        r"""Gets the remote_area of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
 
         骨干带宽的两端之一：B点
 
@@ -322,7 +322,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo:
 
     @remote_area.setter
     def remote_area(self, remote_area):
-        """Sets the remote_area of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
+        r"""Sets the remote_area of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
 
         骨干带宽的两端之一：B点
 
@@ -333,7 +333,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo:
 
     @property
     def tags(self):
-        """Gets the tags of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
+        r"""Gets the tags of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
 
         全域弹性公网IP标签
 
@@ -344,7 +344,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
+        r"""Sets the tags of this AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo.
 
         全域弹性公网IP标签
 

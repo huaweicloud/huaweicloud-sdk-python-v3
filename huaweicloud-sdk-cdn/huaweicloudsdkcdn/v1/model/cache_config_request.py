@@ -31,7 +31,7 @@ class CacheConfigRequest:
     }
 
     def __init__(self, ignore_url_parameter=None, follow_origin=None, compress=None, rules=None):
-        """CacheConfigRequest
+        r"""CacheConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class CacheConfigRequest:
 
     @property
     def ignore_url_parameter(self):
-        """Gets the ignore_url_parameter of this CacheConfigRequest.
+        r"""Gets the ignore_url_parameter of this CacheConfigRequest.
 
         是否忽略url中的参数。
 
@@ -75,7 +75,7 @@ class CacheConfigRequest:
 
     @ignore_url_parameter.setter
     def ignore_url_parameter(self, ignore_url_parameter):
-        """Sets the ignore_url_parameter of this CacheConfigRequest.
+        r"""Sets the ignore_url_parameter of this CacheConfigRequest.
 
         是否忽略url中的参数。
 
@@ -86,7 +86,7 @@ class CacheConfigRequest:
 
     @property
     def follow_origin(self):
-        """Gets the follow_origin of this CacheConfigRequest.
+        r"""Gets the follow_origin of this CacheConfigRequest.
 
         缓存规则是否遵循源站。
 
@@ -97,7 +97,7 @@ class CacheConfigRequest:
 
     @follow_origin.setter
     def follow_origin(self, follow_origin):
-        """Sets the follow_origin of this CacheConfigRequest.
+        r"""Sets the follow_origin of this CacheConfigRequest.
 
         缓存规则是否遵循源站。
 
@@ -108,7 +108,7 @@ class CacheConfigRequest:
 
     @property
     def compress(self):
-        """Gets the compress of this CacheConfigRequest.
+        r"""Gets the compress of this CacheConfigRequest.
 
         :return: The compress of this CacheConfigRequest.
         :rtype: :class:`huaweicloudsdkcdn.v1.CompressRequest`
@@ -117,7 +117,7 @@ class CacheConfigRequest:
 
     @compress.setter
     def compress(self, compress):
-        """Sets the compress of this CacheConfigRequest.
+        r"""Sets the compress of this CacheConfigRequest.
 
         :param compress: The compress of this CacheConfigRequest.
         :type compress: :class:`huaweicloudsdkcdn.v1.CompressRequest`
@@ -126,7 +126,7 @@ class CacheConfigRequest:
 
     @property
     def rules(self):
-        """Gets the rules of this CacheConfigRequest.
+        r"""Gets the rules of this CacheConfigRequest.
 
         缓存规则，将覆盖之前的规则配置。规则为空重置为默认规则。
 
@@ -137,7 +137,7 @@ class CacheConfigRequest:
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this CacheConfigRequest.
+        r"""Sets the rules of this CacheConfigRequest.
 
         缓存规则，将覆盖之前的规则配置。规则为空重置为默认规则。
 

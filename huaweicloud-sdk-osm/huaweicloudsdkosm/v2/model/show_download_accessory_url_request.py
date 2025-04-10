@@ -31,7 +31,7 @@ class ShowDownloadAccessoryUrlRequest:
     }
 
     def __init__(self, accessory_id=None, relation_type=None, relation_id=None, incident_id=None):
-        """ShowDownloadAccessoryUrlRequest
+        r"""ShowDownloadAccessoryUrlRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ShowDownloadAccessoryUrlRequest:
 
     @property
     def accessory_id(self):
-        """Gets the accessory_id of this ShowDownloadAccessoryUrlRequest.
+        r"""Gets the accessory_id of this ShowDownloadAccessoryUrlRequest.
 
         附件id
 
@@ -73,7 +73,7 @@ class ShowDownloadAccessoryUrlRequest:
 
     @accessory_id.setter
     def accessory_id(self, accessory_id):
-        """Sets the accessory_id of this ShowDownloadAccessoryUrlRequest.
+        r"""Sets the accessory_id of this ShowDownloadAccessoryUrlRequest.
 
         附件id
 
@@ -84,7 +84,7 @@ class ShowDownloadAccessoryUrlRequest:
 
     @property
     def relation_type(self):
-        """Gets the relation_type of this ShowDownloadAccessoryUrlRequest.
+        r"""Gets the relation_type of this ShowDownloadAccessoryUrlRequest.
 
         - DEFAULT:  - NO_RELATION:  - NOTIFICATION:  - INCIDENT:  - MESSAGE:  - INSPECTION:  - CONNECT:  
 
@@ -95,7 +95,7 @@ class ShowDownloadAccessoryUrlRequest:
 
     @relation_type.setter
     def relation_type(self, relation_type):
-        """Sets the relation_type of this ShowDownloadAccessoryUrlRequest.
+        r"""Sets the relation_type of this ShowDownloadAccessoryUrlRequest.
 
         - DEFAULT:  - NO_RELATION:  - NOTIFICATION:  - INCIDENT:  - MESSAGE:  - INSPECTION:  - CONNECT:  
 
@@ -106,7 +106,7 @@ class ShowDownloadAccessoryUrlRequest:
 
     @property
     def relation_id(self):
-        """Gets the relation_id of this ShowDownloadAccessoryUrlRequest.
+        r"""Gets the relation_id of this ShowDownloadAccessoryUrlRequest.
 
         关联id
 
@@ -117,7 +117,7 @@ class ShowDownloadAccessoryUrlRequest:
 
     @relation_id.setter
     def relation_id(self, relation_id):
-        """Sets the relation_id of this ShowDownloadAccessoryUrlRequest.
+        r"""Sets the relation_id of this ShowDownloadAccessoryUrlRequest.
 
         关联id
 
@@ -128,7 +128,7 @@ class ShowDownloadAccessoryUrlRequest:
 
     @property
     def incident_id(self):
-        """Gets the incident_id of this ShowDownloadAccessoryUrlRequest.
+        r"""Gets the incident_id of this ShowDownloadAccessoryUrlRequest.
 
         工单id
 
@@ -139,7 +139,7 @@ class ShowDownloadAccessoryUrlRequest:
 
     @incident_id.setter
     def incident_id(self, incident_id):
-        """Sets the incident_id of this ShowDownloadAccessoryUrlRequest.
+        r"""Sets the incident_id of this ShowDownloadAccessoryUrlRequest.
 
         工单id
 

@@ -29,7 +29,7 @@ class QueryTaskTestCasesVo:
     }
 
     def __init__(self, related_case_uris=None, not_related_case_uris=None, case_task_info=None):
-        """QueryTaskTestCasesVo
+        r"""QueryTaskTestCasesVo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class QueryTaskTestCasesVo:
 
     @property
     def related_case_uris(self):
-        """Gets the related_case_uris of this QueryTaskTestCasesVo.
+        r"""Gets the related_case_uris of this QueryTaskTestCasesVo.
 
         关联的用例uris
 
@@ -68,7 +68,7 @@ class QueryTaskTestCasesVo:
 
     @related_case_uris.setter
     def related_case_uris(self, related_case_uris):
-        """Sets the related_case_uris of this QueryTaskTestCasesVo.
+        r"""Sets the related_case_uris of this QueryTaskTestCasesVo.
 
         关联的用例uris
 
@@ -79,7 +79,7 @@ class QueryTaskTestCasesVo:
 
     @property
     def not_related_case_uris(self):
-        """Gets the not_related_case_uris of this QueryTaskTestCasesVo.
+        r"""Gets the not_related_case_uris of this QueryTaskTestCasesVo.
 
         未关联的用例uris
 
@@ -90,7 +90,7 @@ class QueryTaskTestCasesVo:
 
     @not_related_case_uris.setter
     def not_related_case_uris(self, not_related_case_uris):
-        """Sets the not_related_case_uris of this QueryTaskTestCasesVo.
+        r"""Sets the not_related_case_uris of this QueryTaskTestCasesVo.
 
         未关联的用例uris
 
@@ -101,7 +101,7 @@ class QueryTaskTestCasesVo:
 
     @property
     def case_task_info(self):
-        """Gets the case_task_info of this QueryTaskTestCasesVo.
+        r"""Gets the case_task_info of this QueryTaskTestCasesVo.
 
         用例及任务信息
 
@@ -112,7 +112,7 @@ class QueryTaskTestCasesVo:
 
     @case_task_info.setter
     def case_task_info(self, case_task_info):
-        """Sets the case_task_info of this QueryTaskTestCasesVo.
+        r"""Sets the case_task_info of this QueryTaskTestCasesVo.
 
         用例及任务信息
 

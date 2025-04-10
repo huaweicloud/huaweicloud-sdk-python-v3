@@ -44,7 +44,7 @@ class ShowDigitalHumanBusinessCardResponse(SdkResponse):
     }
 
     def __init__(self, job_info=None, card_templet_asset_id=None, card_text_config=None, card_image_url=None, introduction_type=None, introduction_text=None, voice_asset_id=None, introduction_audio_asset_id=None, gender=None, x_request_id=None):
-        """ShowDigitalHumanBusinessCardResponse
+        r"""ShowDigitalHumanBusinessCardResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class ShowDigitalHumanBusinessCardResponse(SdkResponse):
 
     @property
     def job_info(self):
-        """Gets the job_info of this ShowDigitalHumanBusinessCardResponse.
+        r"""Gets the job_info of this ShowDigitalHumanBusinessCardResponse.
 
         :return: The job_info of this ShowDigitalHumanBusinessCardResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.DigitalHumanBusinessCardJobInfo`
@@ -116,7 +116,7 @@ class ShowDigitalHumanBusinessCardResponse(SdkResponse):
 
     @job_info.setter
     def job_info(self, job_info):
-        """Sets the job_info of this ShowDigitalHumanBusinessCardResponse.
+        r"""Sets the job_info of this ShowDigitalHumanBusinessCardResponse.
 
         :param job_info: The job_info of this ShowDigitalHumanBusinessCardResponse.
         :type job_info: :class:`huaweicloudsdkmetastudio.v1.DigitalHumanBusinessCardJobInfo`
@@ -125,7 +125,7 @@ class ShowDigitalHumanBusinessCardResponse(SdkResponse):
 
     @property
     def card_templet_asset_id(self):
-        """Gets the card_templet_asset_id of this ShowDigitalHumanBusinessCardResponse.
+        r"""Gets the card_templet_asset_id of this ShowDigitalHumanBusinessCardResponse.
 
         数字人名片模板资产ID，可以从资产库中查询。
 
@@ -136,7 +136,7 @@ class ShowDigitalHumanBusinessCardResponse(SdkResponse):
 
     @card_templet_asset_id.setter
     def card_templet_asset_id(self, card_templet_asset_id):
-        """Sets the card_templet_asset_id of this ShowDigitalHumanBusinessCardResponse.
+        r"""Sets the card_templet_asset_id of this ShowDigitalHumanBusinessCardResponse.
 
         数字人名片模板资产ID，可以从资产库中查询。
 
@@ -147,7 +147,7 @@ class ShowDigitalHumanBusinessCardResponse(SdkResponse):
 
     @property
     def card_text_config(self):
-        """Gets the card_text_config of this ShowDigitalHumanBusinessCardResponse.
+        r"""Gets the card_text_config of this ShowDigitalHumanBusinessCardResponse.
 
         :return: The card_text_config of this ShowDigitalHumanBusinessCardResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.BusinessCardTextConfig`
@@ -156,7 +156,7 @@ class ShowDigitalHumanBusinessCardResponse(SdkResponse):
 
     @card_text_config.setter
     def card_text_config(self, card_text_config):
-        """Sets the card_text_config of this ShowDigitalHumanBusinessCardResponse.
+        r"""Sets the card_text_config of this ShowDigitalHumanBusinessCardResponse.
 
         :param card_text_config: The card_text_config of this ShowDigitalHumanBusinessCardResponse.
         :type card_text_config: :class:`huaweicloudsdkmetastudio.v1.BusinessCardTextConfig`
@@ -165,7 +165,7 @@ class ShowDigitalHumanBusinessCardResponse(SdkResponse):
 
     @property
     def card_image_url(self):
-        """Gets the card_image_url of this ShowDigitalHumanBusinessCardResponse.
+        r"""Gets the card_image_url of this ShowDigitalHumanBusinessCardResponse.
 
         :return: The card_image_url of this ShowDigitalHumanBusinessCardResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.BusinessCardImageUrl`
@@ -174,7 +174,7 @@ class ShowDigitalHumanBusinessCardResponse(SdkResponse):
 
     @card_image_url.setter
     def card_image_url(self, card_image_url):
-        """Sets the card_image_url of this ShowDigitalHumanBusinessCardResponse.
+        r"""Sets the card_image_url of this ShowDigitalHumanBusinessCardResponse.
 
         :param card_image_url: The card_image_url of this ShowDigitalHumanBusinessCardResponse.
         :type card_image_url: :class:`huaweicloudsdkmetastudio.v1.BusinessCardImageUrl`
@@ -183,7 +183,7 @@ class ShowDigitalHumanBusinessCardResponse(SdkResponse):
 
     @property
     def introduction_type(self):
-        """Gets the introduction_type of this ShowDigitalHumanBusinessCardResponse.
+        r"""Gets the introduction_type of this ShowDigitalHumanBusinessCardResponse.
 
         自我介绍驱动方式。 * TEXT: 文本驱动，即通过TTS合成语音 * AUDIO: 语音驱动，需要在资产库中先上传语音资产
 
@@ -194,7 +194,7 @@ class ShowDigitalHumanBusinessCardResponse(SdkResponse):
 
     @introduction_type.setter
     def introduction_type(self, introduction_type):
-        """Sets the introduction_type of this ShowDigitalHumanBusinessCardResponse.
+        r"""Sets the introduction_type of this ShowDigitalHumanBusinessCardResponse.
 
         自我介绍驱动方式。 * TEXT: 文本驱动，即通过TTS合成语音 * AUDIO: 语音驱动，需要在资产库中先上传语音资产
 
@@ -205,7 +205,7 @@ class ShowDigitalHumanBusinessCardResponse(SdkResponse):
 
     @property
     def introduction_text(self):
-        """Gets the introduction_text of this ShowDigitalHumanBusinessCardResponse.
+        r"""Gets the introduction_text of this ShowDigitalHumanBusinessCardResponse.
 
         自我介绍文本，用于驱动数字人口型。
 
@@ -216,7 +216,7 @@ class ShowDigitalHumanBusinessCardResponse(SdkResponse):
 
     @introduction_text.setter
     def introduction_text(self, introduction_text):
-        """Sets the introduction_text of this ShowDigitalHumanBusinessCardResponse.
+        r"""Sets the introduction_text of this ShowDigitalHumanBusinessCardResponse.
 
         自我介绍文本，用于驱动数字人口型。
 
@@ -227,7 +227,7 @@ class ShowDigitalHumanBusinessCardResponse(SdkResponse):
 
     @property
     def voice_asset_id(self):
-        """Gets the voice_asset_id of this ShowDigitalHumanBusinessCardResponse.
+        r"""Gets the voice_asset_id of this ShowDigitalHumanBusinessCardResponse.
 
         音色资产ID，可以从资产库中查询。
 
@@ -238,7 +238,7 @@ class ShowDigitalHumanBusinessCardResponse(SdkResponse):
 
     @voice_asset_id.setter
     def voice_asset_id(self, voice_asset_id):
-        """Sets the voice_asset_id of this ShowDigitalHumanBusinessCardResponse.
+        r"""Sets the voice_asset_id of this ShowDigitalHumanBusinessCardResponse.
 
         音色资产ID，可以从资产库中查询。
 
@@ -249,7 +249,7 @@ class ShowDigitalHumanBusinessCardResponse(SdkResponse):
 
     @property
     def introduction_audio_asset_id(self):
-        """Gets the introduction_audio_asset_id of this ShowDigitalHumanBusinessCardResponse.
+        r"""Gets the introduction_audio_asset_id of this ShowDigitalHumanBusinessCardResponse.
 
         自我介绍语音资产ID，用于驱动数字人口型。 > * 介绍语音需要作为asset_type=AUDIO资产先上传至资产库。 > * 使用时从资产库中查询。
 
@@ -260,7 +260,7 @@ class ShowDigitalHumanBusinessCardResponse(SdkResponse):
 
     @introduction_audio_asset_id.setter
     def introduction_audio_asset_id(self, introduction_audio_asset_id):
-        """Sets the introduction_audio_asset_id of this ShowDigitalHumanBusinessCardResponse.
+        r"""Sets the introduction_audio_asset_id of this ShowDigitalHumanBusinessCardResponse.
 
         自我介绍语音资产ID，用于驱动数字人口型。 > * 介绍语音需要作为asset_type=AUDIO资产先上传至资产库。 > * 使用时从资产库中查询。
 
@@ -271,7 +271,7 @@ class ShowDigitalHumanBusinessCardResponse(SdkResponse):
 
     @property
     def gender(self):
-        """Gets the gender of this ShowDigitalHumanBusinessCardResponse.
+        r"""Gets the gender of this ShowDigitalHumanBusinessCardResponse.
 
         性别。 * MALE：男性 * FEMALE：女性
 
@@ -282,7 +282,7 @@ class ShowDigitalHumanBusinessCardResponse(SdkResponse):
 
     @gender.setter
     def gender(self, gender):
-        """Sets the gender of this ShowDigitalHumanBusinessCardResponse.
+        r"""Sets the gender of this ShowDigitalHumanBusinessCardResponse.
 
         性别。 * MALE：男性 * FEMALE：女性
 
@@ -293,7 +293,7 @@ class ShowDigitalHumanBusinessCardResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowDigitalHumanBusinessCardResponse.
+        r"""Gets the x_request_id of this ShowDigitalHumanBusinessCardResponse.
 
         :return: The x_request_id of this ShowDigitalHumanBusinessCardResponse.
         :rtype: str
@@ -302,7 +302,7 @@ class ShowDigitalHumanBusinessCardResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowDigitalHumanBusinessCardResponse.
+        r"""Sets the x_request_id of this ShowDigitalHumanBusinessCardResponse.
 
         :param x_request_id: The x_request_id of this ShowDigitalHumanBusinessCardResponse.
         :type x_request_id: str

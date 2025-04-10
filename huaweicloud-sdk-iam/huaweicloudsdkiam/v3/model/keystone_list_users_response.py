@@ -28,7 +28,7 @@ class KeystoneListUsersResponse(SdkResponse):
     }
 
     def __init__(self, links=None, users=None):
-        """KeystoneListUsersResponse
+        r"""KeystoneListUsersResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class KeystoneListUsersResponse(SdkResponse):
 
     @property
     def links(self):
-        """Gets the links of this KeystoneListUsersResponse.
+        r"""Gets the links of this KeystoneListUsersResponse.
 
         :return: The links of this KeystoneListUsersResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.Links`
@@ -60,7 +60,7 @@ class KeystoneListUsersResponse(SdkResponse):
 
     @links.setter
     def links(self, links):
-        """Sets the links of this KeystoneListUsersResponse.
+        r"""Sets the links of this KeystoneListUsersResponse.
 
         :param links: The links of this KeystoneListUsersResponse.
         :type links: :class:`huaweicloudsdkiam.v3.Links`
@@ -69,7 +69,7 @@ class KeystoneListUsersResponse(SdkResponse):
 
     @property
     def users(self):
-        """Gets the users of this KeystoneListUsersResponse.
+        r"""Gets the users of this KeystoneListUsersResponse.
 
         IAM用户信息列表。
 
@@ -80,7 +80,7 @@ class KeystoneListUsersResponse(SdkResponse):
 
     @users.setter
     def users(self, users):
-        """Sets the users of this KeystoneListUsersResponse.
+        r"""Sets the users of this KeystoneListUsersResponse.
 
         IAM用户信息列表。
 

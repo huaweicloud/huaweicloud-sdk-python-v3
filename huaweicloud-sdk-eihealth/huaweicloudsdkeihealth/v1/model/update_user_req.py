@@ -32,7 +32,7 @@ class UpdateUserReq:
     }
 
     def __init__(self, mobile=None, areacode=None, email=None, ticket=None):
-        """UpdateUserReq
+        r"""UpdateUserReq
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class UpdateUserReq:
 
     @property
     def mobile(self):
-        """Gets the mobile of this UpdateUserReq.
+        r"""Gets the mobile of this UpdateUserReq.
 
         用户手机号，纯数字，长度小于等于32位，当且仅当重置手机号时传入空串。必须与国家码同时存在。
 
@@ -76,7 +76,7 @@ class UpdateUserReq:
 
     @mobile.setter
     def mobile(self, mobile):
-        """Sets the mobile of this UpdateUserReq.
+        r"""Sets the mobile of this UpdateUserReq.
 
         用户手机号，纯数字，长度小于等于32位，当且仅当重置手机号时传入空串。必须与国家码同时存在。
 
@@ -87,7 +87,7 @@ class UpdateUserReq:
 
     @property
     def areacode(self):
-        """Gets the areacode of this UpdateUserReq.
+        r"""Gets the areacode of this UpdateUserReq.
 
         国家码，当且仅当重置手机号时传入空串。中国大陆为“0086”
 
@@ -98,7 +98,7 @@ class UpdateUserReq:
 
     @areacode.setter
     def areacode(self, areacode):
-        """Sets the areacode of this UpdateUserReq.
+        r"""Sets the areacode of this UpdateUserReq.
 
         国家码，当且仅当重置手机号时传入空串。中国大陆为“0086”
 
@@ -109,7 +109,7 @@ class UpdateUserReq:
 
     @property
     def email(self):
-        """Gets the email of this UpdateUserReq.
+        r"""Gets the email of this UpdateUserReq.
 
         用户邮箱，需符合邮箱格式
 
@@ -120,7 +120,7 @@ class UpdateUserReq:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this UpdateUserReq.
+        r"""Sets the email of this UpdateUserReq.
 
         用户邮箱，需符合邮箱格式
 
@@ -131,7 +131,7 @@ class UpdateUserReq:
 
     @property
     def ticket(self):
-        """Gets the ticket of this UpdateUserReq.
+        r"""Gets the ticket of this UpdateUserReq.
 
         预验证凭证
 
@@ -142,7 +142,7 @@ class UpdateUserReq:
 
     @ticket.setter
     def ticket(self, ticket):
-        """Sets the ticket of this UpdateUserReq.
+        r"""Sets the ticket of this UpdateUserReq.
 
         预验证凭证
 

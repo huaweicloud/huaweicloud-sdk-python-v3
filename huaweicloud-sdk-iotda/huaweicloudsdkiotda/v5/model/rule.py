@@ -39,7 +39,7 @@ class Rule:
     }
 
     def __init__(self, name=None, description=None, condition_group=None, actions=None, rule_type=None, status=None, app_id=None, device_side=None):
-        """Rule
+        r"""Rule
 
         The model defined in huaweicloud sdk
 
@@ -88,7 +88,7 @@ class Rule:
 
     @property
     def name(self):
-        """Gets the name of this Rule.
+        r"""Gets the name of this Rule.
 
         **参数说明**：规则名称。
 
@@ -99,7 +99,7 @@ class Rule:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Rule.
+        r"""Sets the name of this Rule.
 
         **参数说明**：规则名称。
 
@@ -110,7 +110,7 @@ class Rule:
 
     @property
     def description(self):
-        """Gets the description of this Rule.
+        r"""Gets the description of this Rule.
 
         **参数说明**：规则的描述信息。
 
@@ -121,7 +121,7 @@ class Rule:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Rule.
+        r"""Sets the description of this Rule.
 
         **参数说明**：规则的描述信息。
 
@@ -132,7 +132,7 @@ class Rule:
 
     @property
     def condition_group(self):
-        """Gets the condition_group of this Rule.
+        r"""Gets the condition_group of this Rule.
 
         :return: The condition_group of this Rule.
         :rtype: :class:`huaweicloudsdkiotda.v5.ConditionGroup`
@@ -141,7 +141,7 @@ class Rule:
 
     @condition_group.setter
     def condition_group(self, condition_group):
-        """Sets the condition_group of this Rule.
+        r"""Sets the condition_group of this Rule.
 
         :param condition_group: The condition_group of this Rule.
         :type condition_group: :class:`huaweicloudsdkiotda.v5.ConditionGroup`
@@ -150,7 +150,7 @@ class Rule:
 
     @property
     def actions(self):
-        """Gets the actions of this Rule.
+        r"""Gets the actions of this Rule.
 
         **参数说明**：规则的动作列表，单个规则最多支持设置10个动作。
 
@@ -161,7 +161,7 @@ class Rule:
 
     @actions.setter
     def actions(self, actions):
-        """Sets the actions of this Rule.
+        r"""Sets the actions of this Rule.
 
         **参数说明**：规则的动作列表，单个规则最多支持设置10个动作。
 
@@ -172,7 +172,7 @@ class Rule:
 
     @property
     def rule_type(self):
-        """Gets the rule_type of this Rule.
+        r"""Gets the rule_type of this Rule.
 
         **参数说明**：规则的类型。 **取值范围**： - DEVICE_LINKAGE：云端联动规则。  - DEVICE_SIDE：端侧规则。
 
@@ -183,7 +183,7 @@ class Rule:
 
     @rule_type.setter
     def rule_type(self, rule_type):
-        """Sets the rule_type of this Rule.
+        r"""Sets the rule_type of this Rule.
 
         **参数说明**：规则的类型。 **取值范围**： - DEVICE_LINKAGE：云端联动规则。  - DEVICE_SIDE：端侧规则。
 
@@ -194,7 +194,7 @@ class Rule:
 
     @property
     def status(self):
-        """Gets the status of this Rule.
+        r"""Gets the status of this Rule.
 
         **参数说明**：规则的状态，默认值：active。 **取值范围**： - active：激活。 - inactive：未激活。
 
@@ -205,7 +205,7 @@ class Rule:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Rule.
+        r"""Sets the status of this Rule.
 
         **参数说明**：规则的状态，默认值：active。 **取值范围**： - active：激活。 - inactive：未激活。
 
@@ -216,7 +216,7 @@ class Rule:
 
     @property
     def app_id(self):
-        """Gets the app_id of this Rule.
+        r"""Gets the app_id of this Rule.
 
         **参数说明**：资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数指定创建的规则归属到哪个资源空间下，否则创建的规则将会归属到[[默认资源空间](https://support.huaweicloud.com/usermanual-iothub/iot_01_0006.html#section0)](tag:hws)[[默认资源空间](https://support.huaweicloud.com/intl/zh-cn/usermanual-iothub/iot_01_0006.html#section0)](tag:hws_hk)下。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -227,7 +227,7 @@ class Rule:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this Rule.
+        r"""Sets the app_id of this Rule.
 
         **参数说明**：资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数指定创建的规则归属到哪个资源空间下，否则创建的规则将会归属到[[默认资源空间](https://support.huaweicloud.com/usermanual-iothub/iot_01_0006.html#section0)](tag:hws)[[默认资源空间](https://support.huaweicloud.com/intl/zh-cn/usermanual-iothub/iot_01_0006.html#section0)](tag:hws_hk)下。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -238,7 +238,7 @@ class Rule:
 
     @property
     def device_side(self):
-        """Gets the device_side of this Rule.
+        r"""Gets the device_side of this Rule.
 
         :return: The device_side of this Rule.
         :rtype: :class:`huaweicloudsdkiotda.v5.DeviceSide`
@@ -247,7 +247,7 @@ class Rule:
 
     @device_side.setter
     def device_side(self, device_side):
-        """Sets the device_side of this Rule.
+        r"""Sets the device_side of this Rule.
 
         :param device_side: The device_side of this Rule.
         :type device_side: :class:`huaweicloudsdkiotda.v5.DeviceSide`

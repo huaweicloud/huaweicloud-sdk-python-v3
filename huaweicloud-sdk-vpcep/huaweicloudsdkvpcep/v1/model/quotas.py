@@ -29,7 +29,7 @@ class Quotas:
     }
 
     def __init__(self, type=None, used=None, quota=None):
-        """Quotas
+        r"""Quotas
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class Quotas:
 
     @property
     def type(self):
-        """Gets the type of this Quotas.
+        r"""Gets the type of this Quotas.
 
         资源类型。支持根据资源类型过滤查询指定类型的配额。  - endpoint_service：终端节点服务  - endpoint：终端节点
 
@@ -68,7 +68,7 @@ class Quotas:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Quotas.
+        r"""Sets the type of this Quotas.
 
         资源类型。支持根据资源类型过滤查询指定类型的配额。  - endpoint_service：终端节点服务  - endpoint：终端节点
 
@@ -79,7 +79,7 @@ class Quotas:
 
     @property
     def used(self):
-        """Gets the used of this Quotas.
+        r"""Gets the used of this Quotas.
 
         已创建的资源个数。 取值范围：0~quota数。
 
@@ -90,7 +90,7 @@ class Quotas:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this Quotas.
+        r"""Sets the used of this Quotas.
 
         已创建的资源个数。 取值范围：0~quota数。
 
@@ -101,7 +101,7 @@ class Quotas:
 
     @property
     def quota(self):
-        """Gets the quota of this Quotas.
+        r"""Gets the quota of this Quotas.
 
         资源的最大配额数。 取值范围：各类型资源默认配额数的最大值。
 
@@ -112,7 +112,7 @@ class Quotas:
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this Quotas.
+        r"""Sets the quota of this Quotas.
 
         资源的最大配额数。 取值范围：各类型资源默认配额数的最大值。
 

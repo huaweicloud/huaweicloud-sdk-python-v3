@@ -27,7 +27,7 @@ class CreateExecuteJobRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """CreateExecuteJobRequest
+        r"""CreateExecuteJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateExecuteJobRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CreateExecuteJobRequest.
+        r"""Gets the cluster_id of this CreateExecuteJobRequest.
 
         集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
 
@@ -60,7 +60,7 @@ class CreateExecuteJobRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CreateExecuteJobRequest.
+        r"""Sets the cluster_id of this CreateExecuteJobRequest.
 
         集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
 
@@ -71,7 +71,7 @@ class CreateExecuteJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateExecuteJobRequest.
+        r"""Gets the body of this CreateExecuteJobRequest.
 
         :return: The body of this CreateExecuteJobRequest.
         :rtype: :class:`huaweicloudsdkmrs.v2.JobExecution`
@@ -80,7 +80,7 @@ class CreateExecuteJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateExecuteJobRequest.
+        r"""Sets the body of this CreateExecuteJobRequest.
 
         :param body: The body of this CreateExecuteJobRequest.
         :type body: :class:`huaweicloudsdkmrs.v2.JobExecution`

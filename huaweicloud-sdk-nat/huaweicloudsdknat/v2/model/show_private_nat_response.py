@@ -28,7 +28,7 @@ class ShowPrivateNatResponse(SdkResponse):
     }
 
     def __init__(self, gateway=None, request_id=None):
-        """ShowPrivateNatResponse
+        r"""ShowPrivateNatResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowPrivateNatResponse(SdkResponse):
 
     @property
     def gateway(self):
-        """Gets the gateway of this ShowPrivateNatResponse.
+        r"""Gets the gateway of this ShowPrivateNatResponse.
 
         :return: The gateway of this ShowPrivateNatResponse.
         :rtype: :class:`huaweicloudsdknat.v2.PrivateNat`
@@ -60,7 +60,7 @@ class ShowPrivateNatResponse(SdkResponse):
 
     @gateway.setter
     def gateway(self, gateway):
-        """Sets the gateway of this ShowPrivateNatResponse.
+        r"""Sets the gateway of this ShowPrivateNatResponse.
 
         :param gateway: The gateway of this ShowPrivateNatResponse.
         :type gateway: :class:`huaweicloudsdknat.v2.PrivateNat`
@@ -69,7 +69,7 @@ class ShowPrivateNatResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowPrivateNatResponse.
+        r"""Gets the request_id of this ShowPrivateNatResponse.
 
         请求ID。
 
@@ -80,7 +80,7 @@ class ShowPrivateNatResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowPrivateNatResponse.
+        r"""Sets the request_id of this ShowPrivateNatResponse.
 
         请求ID。
 

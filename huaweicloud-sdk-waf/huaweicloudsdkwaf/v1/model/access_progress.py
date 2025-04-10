@@ -27,7 +27,7 @@ class AccessProgress:
     }
 
     def __init__(self, step=None, status=None):
-        """AccessProgress
+        r"""AccessProgress
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AccessProgress:
 
     @property
     def step(self):
-        """Gets the step of this AccessProgress.
+        r"""Gets the step of this AccessProgress.
 
         步骤   - 1: 指回源IP加白   - 2: 指本地验证   - 3：指修改DNS解析
 
@@ -61,7 +61,7 @@ class AccessProgress:
 
     @step.setter
     def step(self, step):
-        """Sets the step of this AccessProgress.
+        r"""Sets the step of this AccessProgress.
 
         步骤   - 1: 指回源IP加白   - 2: 指本地验证   - 3：指修改DNS解析
 
@@ -72,7 +72,7 @@ class AccessProgress:
 
     @property
     def status(self):
-        """Gets the status of this AccessProgress.
+        r"""Gets the status of this AccessProgress.
 
         状态，0：未完成这个步骤；1：已完成这个状态”
 
@@ -83,7 +83,7 @@ class AccessProgress:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AccessProgress.
+        r"""Sets the status of this AccessProgress.
 
         状态，0：未完成这个步骤；1：已完成这个状态”
 

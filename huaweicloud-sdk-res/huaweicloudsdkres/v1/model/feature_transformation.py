@@ -29,7 +29,7 @@ class FeatureTransformation:
     }
 
     def __init__(self, attr=None, discrete_method=None, params=None):
-        """FeatureTransformation
+        r"""FeatureTransformation
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class FeatureTransformation:
 
     @property
     def attr(self):
-        """Gets the attr of this FeatureTransformation.
+        r"""Gets the attr of this FeatureTransformation.
 
         :return: The attr of this FeatureTransformation.
         :rtype: :class:`huaweicloudsdkres.v1.Attribute`
@@ -66,7 +66,7 @@ class FeatureTransformation:
 
     @attr.setter
     def attr(self, attr):
-        """Sets the attr of this FeatureTransformation.
+        r"""Sets the attr of this FeatureTransformation.
 
         :param attr: The attr of this FeatureTransformation.
         :type attr: :class:`huaweicloudsdkres.v1.Attribute`
@@ -75,7 +75,7 @@ class FeatureTransformation:
 
     @property
     def discrete_method(self):
-        """Gets the discrete_method of this FeatureTransformation.
+        r"""Gets the discrete_method of this FeatureTransformation.
 
         离散方法： - equal_distance_discrete，等距离散 - user_define_discrete，自定义离散 - normalize，归一化 - null，不离散 
 
@@ -86,7 +86,7 @@ class FeatureTransformation:
 
     @discrete_method.setter
     def discrete_method(self, discrete_method):
-        """Sets the discrete_method of this FeatureTransformation.
+        r"""Sets the discrete_method of this FeatureTransformation.
 
         离散方法： - equal_distance_discrete，等距离散 - user_define_discrete，自定义离散 - normalize，归一化 - null，不离散 
 
@@ -97,7 +97,7 @@ class FeatureTransformation:
 
     @property
     def params(self):
-        """Gets the params of this FeatureTransformation.
+        r"""Gets the params of this FeatureTransformation.
 
         具体处理参数。
 
@@ -108,7 +108,7 @@ class FeatureTransformation:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this FeatureTransformation.
+        r"""Sets the params of this FeatureTransformation.
 
         具体处理参数。
 

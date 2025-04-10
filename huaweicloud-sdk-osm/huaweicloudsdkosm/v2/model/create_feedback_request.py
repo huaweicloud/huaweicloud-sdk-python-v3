@@ -25,7 +25,7 @@ class CreateFeedbackRequest:
     }
 
     def __init__(self, body=None):
-        """CreateFeedbackRequest
+        r"""CreateFeedbackRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateFeedbackRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateFeedbackRequest.
+        r"""Gets the body of this CreateFeedbackRequest.
 
         :return: The body of this CreateFeedbackRequest.
         :rtype: :class:`huaweicloudsdkosm.v2.CreateFeedbackV2Req`
@@ -52,7 +52,7 @@ class CreateFeedbackRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateFeedbackRequest.
+        r"""Sets the body of this CreateFeedbackRequest.
 
         :param body: The body of this CreateFeedbackRequest.
         :type body: :class:`huaweicloudsdkosm.v2.CreateFeedbackV2Req`

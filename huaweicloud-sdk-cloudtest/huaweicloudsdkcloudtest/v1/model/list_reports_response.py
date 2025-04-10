@@ -28,7 +28,7 @@ class ListReportsResponse(SdkResponse):
     }
 
     def __init__(self, status=None, result=None):
-        """ListReportsResponse
+        r"""ListReportsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListReportsResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListReportsResponse.
+        r"""Gets the status of this ListReportsResponse.
 
         对外时：success|error; 对内时：ok|failed
 
@@ -62,7 +62,7 @@ class ListReportsResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListReportsResponse.
+        r"""Sets the status of this ListReportsResponse.
 
         对外时：success|error; 对内时：ok|failed
 
@@ -73,7 +73,7 @@ class ListReportsResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListReportsResponse.
+        r"""Gets the result of this ListReportsResponse.
 
         :return: The result of this ListReportsResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ResultValueListCustomReportListVo`
@@ -82,7 +82,7 @@ class ListReportsResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListReportsResponse.
+        r"""Sets the result of this ListReportsResponse.
 
         :param result: The result of this ListReportsResponse.
         :type result: :class:`huaweicloudsdkcloudtest.v1.ResultValueListCustomReportListVo`

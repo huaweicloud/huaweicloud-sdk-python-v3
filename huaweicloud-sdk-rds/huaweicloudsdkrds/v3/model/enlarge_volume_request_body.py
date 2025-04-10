@@ -25,7 +25,7 @@ class EnlargeVolumeRequestBody:
     }
 
     def __init__(self, enlarge_volume=None):
-        """EnlargeVolumeRequestBody
+        r"""EnlargeVolumeRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class EnlargeVolumeRequestBody:
 
     @property
     def enlarge_volume(self):
-        """Gets the enlarge_volume of this EnlargeVolumeRequestBody.
+        r"""Gets the enlarge_volume of this EnlargeVolumeRequestBody.
 
         :return: The enlarge_volume of this EnlargeVolumeRequestBody.
         :rtype: :class:`huaweicloudsdkrds.v3.EnlargeVolumeObject`
@@ -51,7 +51,7 @@ class EnlargeVolumeRequestBody:
 
     @enlarge_volume.setter
     def enlarge_volume(self, enlarge_volume):
-        """Sets the enlarge_volume of this EnlargeVolumeRequestBody.
+        r"""Sets the enlarge_volume of this EnlargeVolumeRequestBody.
 
         :param enlarge_volume: The enlarge_volume of this EnlargeVolumeRequestBody.
         :type enlarge_volume: :class:`huaweicloudsdkrds.v3.EnlargeVolumeObject`

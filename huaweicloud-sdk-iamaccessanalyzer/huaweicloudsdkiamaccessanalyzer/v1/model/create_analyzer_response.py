@@ -28,7 +28,7 @@ class CreateAnalyzerResponse(SdkResponse):
     }
 
     def __init__(self, id=None, urn=None):
-        """CreateAnalyzerResponse
+        r"""CreateAnalyzerResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateAnalyzerResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateAnalyzerResponse.
+        r"""Gets the id of this CreateAnalyzerResponse.
 
         分析器的唯一标识符。
 
@@ -62,7 +62,7 @@ class CreateAnalyzerResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateAnalyzerResponse.
+        r"""Sets the id of this CreateAnalyzerResponse.
 
         分析器的唯一标识符。
 
@@ -73,7 +73,7 @@ class CreateAnalyzerResponse(SdkResponse):
 
     @property
     def urn(self):
-        """Gets the urn of this CreateAnalyzerResponse.
+        r"""Gets the urn of this CreateAnalyzerResponse.
 
         分析器的唯一资源标识符。
 
@@ -84,7 +84,7 @@ class CreateAnalyzerResponse(SdkResponse):
 
     @urn.setter
     def urn(self, urn):
-        """Sets the urn of this CreateAnalyzerResponse.
+        r"""Sets the urn of this CreateAnalyzerResponse.
 
         分析器的唯一资源标识符。
 

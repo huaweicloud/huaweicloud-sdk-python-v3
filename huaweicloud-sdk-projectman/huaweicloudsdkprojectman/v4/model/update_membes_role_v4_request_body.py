@@ -27,7 +27,7 @@ class UpdateMembesRoleV4RequestBody:
     }
 
     def __init__(self, role_id=None, user_ids=None):
-        """UpdateMembesRoleV4RequestBody
+        r"""UpdateMembesRoleV4RequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UpdateMembesRoleV4RequestBody:
 
     @property
     def role_id(self):
-        """Gets the role_id of this UpdateMembesRoleV4RequestBody.
+        r"""Gets the role_id of this UpdateMembesRoleV4RequestBody.
 
         成员角色, -1 项目创建者, 3 项目经理, 4 开发人员, 5 测试经理, 6 测试人员, 7 参与者, 8 浏览者, 9 运维经理
 
@@ -59,7 +59,7 @@ class UpdateMembesRoleV4RequestBody:
 
     @role_id.setter
     def role_id(self, role_id):
-        """Sets the role_id of this UpdateMembesRoleV4RequestBody.
+        r"""Sets the role_id of this UpdateMembesRoleV4RequestBody.
 
         成员角色, -1 项目创建者, 3 项目经理, 4 开发人员, 5 测试经理, 6 测试人员, 7 参与者, 8 浏览者, 9 运维经理
 
@@ -70,7 +70,7 @@ class UpdateMembesRoleV4RequestBody:
 
     @property
     def user_ids(self):
-        """Gets the user_ids of this UpdateMembesRoleV4RequestBody.
+        r"""Gets the user_ids of this UpdateMembesRoleV4RequestBody.
 
         用户id
 
@@ -81,7 +81,7 @@ class UpdateMembesRoleV4RequestBody:
 
     @user_ids.setter
     def user_ids(self, user_ids):
-        """Sets the user_ids of this UpdateMembesRoleV4RequestBody.
+        r"""Sets the user_ids of this UpdateMembesRoleV4RequestBody.
 
         用户id
 

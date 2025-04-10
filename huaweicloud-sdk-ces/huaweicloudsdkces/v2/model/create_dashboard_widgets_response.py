@@ -26,7 +26,7 @@ class CreateDashboardWidgetsResponse(SdkResponse):
     }
 
     def __init__(self, widget_ids=None):
-        """CreateDashboardWidgetsResponse
+        r"""CreateDashboardWidgetsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateDashboardWidgetsResponse(SdkResponse):
 
     @property
     def widget_ids(self):
-        """Gets the widget_ids of this CreateDashboardWidgetsResponse.
+        r"""Gets the widget_ids of this CreateDashboardWidgetsResponse.
 
         批量创建监控视图返回结果
 
@@ -55,7 +55,7 @@ class CreateDashboardWidgetsResponse(SdkResponse):
 
     @widget_ids.setter
     def widget_ids(self, widget_ids):
-        """Sets the widget_ids of this CreateDashboardWidgetsResponse.
+        r"""Sets the widget_ids of this CreateDashboardWidgetsResponse.
 
         批量创建监控视图返回结果
 

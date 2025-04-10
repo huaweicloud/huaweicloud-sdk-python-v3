@@ -37,7 +37,7 @@ class Event:
     }
 
     def __init__(self, name=None, event_id=None, event_types=None, state=None, create_time=None, update_time=None, notification=None):
-        """Event
+        r"""Event
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class Event:
 
     @property
     def name(self):
-        """Gets the name of this Event.
+        r"""Gets the name of this Event.
 
         事件通知名称。
 
@@ -96,7 +96,7 @@ class Event:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Event.
+        r"""Sets the name of this Event.
 
         事件通知名称。
 
@@ -107,7 +107,7 @@ class Event:
 
     @property
     def event_id(self):
-        """Gets the event_id of this Event.
+        r"""Gets the event_id of this Event.
 
         事件通知的资源标识符。
 
@@ -118,7 +118,7 @@ class Event:
 
     @event_id.setter
     def event_id(self, event_id):
-        """Sets the event_id of this Event.
+        r"""Sets the event_id of this Event.
 
         事件通知的资源标识符。
 
@@ -129,7 +129,7 @@ class Event:
 
     @property
     def event_types(self):
-        """Gets the event_types of this Event.
+        r"""Gets the event_types of this Event.
 
         设置事件的基础事件类型列表,。  约束：数组大小：最小1，最大12。
 
@@ -140,7 +140,7 @@ class Event:
 
     @event_types.setter
     def event_types(self, event_types):
-        """Sets the event_types of this Event.
+        r"""Sets the event_types of this Event.
 
         设置事件的基础事件类型列表,。  约束：数组大小：最小1，最大12。
 
@@ -151,7 +151,7 @@ class Event:
 
     @property
     def state(self):
-        """Gets the state of this Event.
+        r"""Gets the state of this Event.
 
         事件通知状态，取值如下。  ENABLED：表示启用状态 DISABLED：表示禁用状态
 
@@ -162,7 +162,7 @@ class Event:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this Event.
+        r"""Sets the state of this Event.
 
         事件通知状态，取值如下。  ENABLED：表示启用状态 DISABLED：表示禁用状态
 
@@ -173,7 +173,7 @@ class Event:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Event.
+        r"""Gets the create_time of this Event.
 
         事件通知创建时间，时间戳，即从1970年1月1日至该时间的总秒数。
 
@@ -184,7 +184,7 @@ class Event:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Event.
+        r"""Sets the create_time of this Event.
 
         事件通知创建时间，时间戳，即从1970年1月1日至该时间的总秒数。
 
@@ -195,7 +195,7 @@ class Event:
 
     @property
     def update_time(self):
-        """Gets the update_time of this Event.
+        r"""Gets the update_time of this Event.
 
         事件通知上次更新时间，时间戳，即从1970年1月1日至该时间的总秒数。
 
@@ -206,7 +206,7 @@ class Event:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this Event.
+        r"""Sets the update_time of this Event.
 
         事件通知上次更新时间，时间戳，即从1970年1月1日至该时间的总秒数。
 
@@ -217,7 +217,7 @@ class Event:
 
     @property
     def notification(self):
-        """Gets the notification of this Event.
+        r"""Gets the notification of this Event.
 
         :return: The notification of this Event.
         :rtype: :class:`huaweicloudsdkcsms.v1.Notification`
@@ -226,7 +226,7 @@ class Event:
 
     @notification.setter
     def notification(self, notification):
-        """Sets the notification of this Event.
+        r"""Sets the notification of this Event.
 
         :param notification: The notification of this Event.
         :type notification: :class:`huaweicloudsdkcsms.v1.Notification`

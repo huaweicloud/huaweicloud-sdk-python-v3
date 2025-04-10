@@ -31,7 +31,7 @@ class CustomStatement:
     }
 
     def __init__(self, action=None, effect=None, condition=None, resource=None):
-        """CustomStatement
+        r"""CustomStatement
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class CustomStatement:
 
     @property
     def action(self):
-        """Gets the action of this CustomStatement.
+        r"""Gets the action of this CustomStatement.
 
         授权项，指对资源的具体操作权限。 > - 格式为：服务名:资源类型:操作，例：vpc:ports:create。 > - 服务名为产品名称，例如ecs、evs和vpc等，服务名仅支持小写。 资源类型和操作没有大小写，要求支持通配符号*，无需罗列全部授权项。
 
@@ -73,7 +73,7 @@ class CustomStatement:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this CustomStatement.
+        r"""Sets the action of this CustomStatement.
 
         授权项，指对资源的具体操作权限。 > - 格式为：服务名:资源类型:操作，例：vpc:ports:create。 > - 服务名为产品名称，例如ecs、evs和vpc等，服务名仅支持小写。 资源类型和操作没有大小写，要求支持通配符号*，无需罗列全部授权项。
 
@@ -84,7 +84,7 @@ class CustomStatement:
 
     @property
     def effect(self):
-        """Gets the effect of this CustomStatement.
+        r"""Gets the effect of this CustomStatement.
 
         作用。包含两种：允许（Allow）和拒绝（Deny），既有Allow又有Deny的授权语句时，遵循Deny优先的原则。
 
@@ -95,7 +95,7 @@ class CustomStatement:
 
     @effect.setter
     def effect(self, effect):
-        """Sets the effect of this CustomStatement.
+        r"""Sets the effect of this CustomStatement.
 
         作用。包含两种：允许（Allow）和拒绝（Deny），既有Allow又有Deny的授权语句时，遵循Deny优先的原则。
 
@@ -106,7 +106,7 @@ class CustomStatement:
 
     @property
     def condition(self):
-        """Gets the condition of this CustomStatement.
+        r"""Gets the condition of this CustomStatement.
 
         :return: The condition of this CustomStatement.
         :rtype: dict(str, dict(str, list[str]))
@@ -115,7 +115,7 @@ class CustomStatement:
 
     @condition.setter
     def condition(self, condition):
-        """Sets the condition of this CustomStatement.
+        r"""Sets the condition of this CustomStatement.
 
         :param condition: The condition of this CustomStatement.
         :type condition: dict(str, dict(str, list[str]))
@@ -124,7 +124,7 @@ class CustomStatement:
 
     @property
     def resource(self):
-        """Gets the resource of this CustomStatement.
+        r"""Gets the resource of this CustomStatement.
 
         资源。规则如下： > - 可填 * 的五段式：<service-name>:<region>:<account-id>:<resource-type>:<resource-path>，例：\"obs:*:*:bucket:*\"。 > - region字段为*或用户可访问的region。service必须存在且resource属于对应service。
 
@@ -135,7 +135,7 @@ class CustomStatement:
 
     @resource.setter
     def resource(self, resource):
-        """Sets the resource of this CustomStatement.
+        r"""Sets the resource of this CustomStatement.
 
         资源。规则如下： > - 可填 * 的五段式：<service-name>:<region>:<account-id>:<resource-type>:<resource-path>，例：\"obs:*:*:bucket:*\"。 > - region字段为*或用户可访问的region。service必须存在且resource属于对应service。
 

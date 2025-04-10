@@ -25,7 +25,7 @@ class DeleteLdapConfigRequest:
     }
 
     def __init__(self, share_id=None):
-        """DeleteLdapConfigRequest
+        r"""DeleteLdapConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteLdapConfigRequest:
 
     @property
     def share_id(self):
-        """Gets the share_id of this DeleteLdapConfigRequest.
+        r"""Gets the share_id of this DeleteLdapConfigRequest.
 
         文件系统id
 
@@ -53,7 +53,7 @@ class DeleteLdapConfigRequest:
 
     @share_id.setter
     def share_id(self, share_id):
-        """Sets the share_id of this DeleteLdapConfigRequest.
+        r"""Sets the share_id of this DeleteLdapConfigRequest.
 
         文件系统id
 

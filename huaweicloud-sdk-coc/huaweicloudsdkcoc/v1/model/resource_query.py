@@ -27,7 +27,7 @@ class ResourceQuery:
     }
 
     def __init__(self, key=None, value=None):
-        """ResourceQuery
+        r"""ResourceQuery
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ResourceQuery:
 
     @property
     def key(self):
-        """Gets the key of this ResourceQuery.
+        r"""Gets the key of this ResourceQuery.
 
         参数名
 
@@ -59,7 +59,7 @@ class ResourceQuery:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ResourceQuery.
+        r"""Sets the key of this ResourceQuery.
 
         参数名
 
@@ -70,7 +70,7 @@ class ResourceQuery:
 
     @property
     def value(self):
-        """Gets the value of this ResourceQuery.
+        r"""Gets the value of this ResourceQuery.
 
         参数值
 
@@ -81,7 +81,7 @@ class ResourceQuery:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ResourceQuery.
+        r"""Sets the value of this ResourceQuery.
 
         参数值
 

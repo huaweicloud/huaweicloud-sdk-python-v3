@@ -43,7 +43,7 @@ class ListAlertDetail:
     }
 
     def __init__(self, create_time=None, data_object=None, dataclass_ref=None, format_version=None, id=None, type=None, project_id=None, update_time=None, version=None, workspace_id=None):
-        """ListAlertDetail
+        r"""ListAlertDetail
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ListAlertDetail:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ListAlertDetail.
+        r"""Gets the create_time of this ListAlertDetail.
 
         记录时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区
 
@@ -117,7 +117,7 @@ class ListAlertDetail:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ListAlertDetail.
+        r"""Sets the create_time of this ListAlertDetail.
 
         记录时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区
 
@@ -128,7 +128,7 @@ class ListAlertDetail:
 
     @property
     def data_object(self):
-        """Gets the data_object of this ListAlertDetail.
+        r"""Gets the data_object of this ListAlertDetail.
 
         :return: The data_object of this ListAlertDetail.
         :rtype: :class:`huaweicloudsdksecmaster.v2.ListAlertRsp`
@@ -137,7 +137,7 @@ class ListAlertDetail:
 
     @data_object.setter
     def data_object(self, data_object):
-        """Sets the data_object of this ListAlertDetail.
+        r"""Sets the data_object of this ListAlertDetail.
 
         :param data_object: The data_object of this ListAlertDetail.
         :type data_object: :class:`huaweicloudsdksecmaster.v2.ListAlertRsp`
@@ -146,7 +146,7 @@ class ListAlertDetail:
 
     @property
     def dataclass_ref(self):
-        """Gets the dataclass_ref of this ListAlertDetail.
+        r"""Gets the dataclass_ref of this ListAlertDetail.
 
         :return: The dataclass_ref of this ListAlertDetail.
         :rtype: :class:`huaweicloudsdksecmaster.v2.AlertDetailDataclassRef`
@@ -155,7 +155,7 @@ class ListAlertDetail:
 
     @dataclass_ref.setter
     def dataclass_ref(self, dataclass_ref):
-        """Sets the dataclass_ref of this ListAlertDetail.
+        r"""Sets the dataclass_ref of this ListAlertDetail.
 
         :param dataclass_ref: The dataclass_ref of this ListAlertDetail.
         :type dataclass_ref: :class:`huaweicloudsdksecmaster.v2.AlertDetailDataclassRef`
@@ -164,7 +164,7 @@ class ListAlertDetail:
 
     @property
     def format_version(self):
-        """Gets the format_version of this ListAlertDetail.
+        r"""Gets the format_version of this ListAlertDetail.
 
         格式版本
 
@@ -175,7 +175,7 @@ class ListAlertDetail:
 
     @format_version.setter
     def format_version(self, format_version):
-        """Sets the format_version of this ListAlertDetail.
+        r"""Sets the format_version of this ListAlertDetail.
 
         格式版本
 
@@ -186,7 +186,7 @@ class ListAlertDetail:
 
     @property
     def id(self):
-        """Gets the id of this ListAlertDetail.
+        r"""Gets the id of this ListAlertDetail.
 
         告警唯一标识，UUID格式，最大36个字符
 
@@ -197,7 +197,7 @@ class ListAlertDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListAlertDetail.
+        r"""Sets the id of this ListAlertDetail.
 
         告警唯一标识，UUID格式，最大36个字符
 
@@ -208,7 +208,7 @@ class ListAlertDetail:
 
     @property
     def type(self):
-        """Gets the type of this ListAlertDetail.
+        r"""Gets the type of this ListAlertDetail.
 
         数据类型
 
@@ -219,7 +219,7 @@ class ListAlertDetail:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListAlertDetail.
+        r"""Sets the type of this ListAlertDetail.
 
         数据类型
 
@@ -230,7 +230,7 @@ class ListAlertDetail:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListAlertDetail.
+        r"""Gets the project_id of this ListAlertDetail.
 
         当前项目的id
 
@@ -241,7 +241,7 @@ class ListAlertDetail:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListAlertDetail.
+        r"""Sets the project_id of this ListAlertDetail.
 
         当前项目的id
 
@@ -252,7 +252,7 @@ class ListAlertDetail:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ListAlertDetail.
+        r"""Gets the update_time of this ListAlertDetail.
 
         更新时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区
 
@@ -263,7 +263,7 @@ class ListAlertDetail:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ListAlertDetail.
+        r"""Sets the update_time of this ListAlertDetail.
 
         更新时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区
 
@@ -274,7 +274,7 @@ class ListAlertDetail:
 
     @property
     def version(self):
-        """Gets the version of this ListAlertDetail.
+        r"""Gets the version of this ListAlertDetail.
 
         版本
 
@@ -285,7 +285,7 @@ class ListAlertDetail:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ListAlertDetail.
+        r"""Sets the version of this ListAlertDetail.
 
         版本
 
@@ -296,7 +296,7 @@ class ListAlertDetail:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ListAlertDetail.
+        r"""Gets the workspace_id of this ListAlertDetail.
 
         当前的工作空间id
 
@@ -307,7 +307,7 @@ class ListAlertDetail:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ListAlertDetail.
+        r"""Sets the workspace_id of this ListAlertDetail.
 
         当前的工作空间id
 

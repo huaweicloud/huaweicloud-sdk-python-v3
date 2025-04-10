@@ -24,7 +24,7 @@ class StartProtectionResponse(SdkResponse):
     }
 
     def __init__(self):
-        """StartProtectionResponse
+        r"""StartProtectionResponse
 
         The model defined in huaweicloud sdk
 

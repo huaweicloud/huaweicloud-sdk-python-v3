@@ -25,7 +25,7 @@ class ImportDataRequest:
     }
 
     def __init__(self, body=None):
-        """ImportDataRequest
+        r"""ImportDataRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ImportDataRequest:
 
     @property
     def body(self):
-        """Gets the body of this ImportDataRequest.
+        r"""Gets the body of this ImportDataRequest.
 
         :return: The body of this ImportDataRequest.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ImportDataRequestBody`
@@ -52,7 +52,7 @@ class ImportDataRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ImportDataRequest.
+        r"""Sets the body of this ImportDataRequest.
 
         :param body: The body of this ImportDataRequest.
         :type body: :class:`huaweicloudsdkiotanalytics.v1.ImportDataRequestBody`

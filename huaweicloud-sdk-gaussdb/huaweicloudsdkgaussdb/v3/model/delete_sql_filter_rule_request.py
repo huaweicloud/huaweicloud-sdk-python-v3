@@ -29,7 +29,7 @@ class DeleteSqlFilterRuleRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """DeleteSqlFilterRuleRequest
+        r"""DeleteSqlFilterRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DeleteSqlFilterRuleRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this DeleteSqlFilterRuleRequest.
+        r"""Gets the x_language of this DeleteSqlFilterRuleRequest.
 
         语言。
 
@@ -67,7 +67,7 @@ class DeleteSqlFilterRuleRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this DeleteSqlFilterRuleRequest.
+        r"""Sets the x_language of this DeleteSqlFilterRuleRequest.
 
         语言。
 
@@ -78,7 +78,7 @@ class DeleteSqlFilterRuleRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteSqlFilterRuleRequest.
+        r"""Gets the instance_id of this DeleteSqlFilterRuleRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class DeleteSqlFilterRuleRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteSqlFilterRuleRequest.
+        r"""Sets the instance_id of this DeleteSqlFilterRuleRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class DeleteSqlFilterRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteSqlFilterRuleRequest.
+        r"""Gets the body of this DeleteSqlFilterRuleRequest.
 
         :return: The body of this DeleteSqlFilterRuleRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteSqlFilterRuleReq`
@@ -109,7 +109,7 @@ class DeleteSqlFilterRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteSqlFilterRuleRequest.
+        r"""Sets the body of this DeleteSqlFilterRuleRequest.
 
         :param body: The body of this DeleteSqlFilterRuleRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.DeleteSqlFilterRuleReq`

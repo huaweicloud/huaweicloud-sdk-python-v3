@@ -30,7 +30,7 @@ class ShowDataProcessingRulesResultResponse(SdkResponse):
     }
 
     def __init__(self, id=None, status=None, job_id=None):
-        """ShowDataProcessingRulesResultResponse
+        r"""ShowDataProcessingRulesResultResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowDataProcessingRulesResultResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowDataProcessingRulesResultResponse.
+        r"""Gets the id of this ShowDataProcessingRulesResultResponse.
 
         查询结果id
 
@@ -69,7 +69,7 @@ class ShowDataProcessingRulesResultResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowDataProcessingRulesResultResponse.
+        r"""Sets the id of this ShowDataProcessingRulesResultResponse.
 
         查询结果id
 
@@ -80,7 +80,7 @@ class ShowDataProcessingRulesResultResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowDataProcessingRulesResultResponse.
+        r"""Gets the status of this ShowDataProcessingRulesResultResponse.
 
         查询状态 pending：处理中 failed：失败 success：成功
 
@@ -91,7 +91,7 @@ class ShowDataProcessingRulesResultResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowDataProcessingRulesResultResponse.
+        r"""Sets the status of this ShowDataProcessingRulesResultResponse.
 
         查询状态 pending：处理中 failed：失败 success：成功
 
@@ -102,7 +102,7 @@ class ShowDataProcessingRulesResultResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowDataProcessingRulesResultResponse.
+        r"""Gets the job_id of this ShowDataProcessingRulesResultResponse.
 
         任务ID
 
@@ -113,7 +113,7 @@ class ShowDataProcessingRulesResultResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowDataProcessingRulesResultResponse.
+        r"""Sets the job_id of this ShowDataProcessingRulesResultResponse.
 
         任务ID
 

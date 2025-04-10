@@ -31,7 +31,7 @@ class StartJobResp:
     }
 
     def __init__(self, id=None, status=None, error_code=None, error_msg=None):
-        """StartJobResp
+        r"""StartJobResp
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class StartJobResp:
 
     @property
     def id(self):
-        """Gets the id of this StartJobResp.
+        r"""Gets the id of this StartJobResp.
 
         任务id
 
@@ -74,7 +74,7 @@ class StartJobResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this StartJobResp.
+        r"""Sets the id of this StartJobResp.
 
         任务id
 
@@ -85,7 +85,7 @@ class StartJobResp:
 
     @property
     def status(self):
-        """Gets the status of this StartJobResp.
+        r"""Gets the status of this StartJobResp.
 
         状态。
 
@@ -96,7 +96,7 @@ class StartJobResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this StartJobResp.
+        r"""Sets the status of this StartJobResp.
 
         状态。
 
@@ -107,7 +107,7 @@ class StartJobResp:
 
     @property
     def error_code(self):
-        """Gets the error_code of this StartJobResp.
+        r"""Gets the error_code of this StartJobResp.
 
         错误码。
 
@@ -118,7 +118,7 @@ class StartJobResp:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this StartJobResp.
+        r"""Sets the error_code of this StartJobResp.
 
         错误码。
 
@@ -129,7 +129,7 @@ class StartJobResp:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this StartJobResp.
+        r"""Gets the error_msg of this StartJobResp.
 
         错误信息。
 
@@ -140,7 +140,7 @@ class StartJobResp:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this StartJobResp.
+        r"""Sets the error_msg of this StartJobResp.
 
         错误信息。
 

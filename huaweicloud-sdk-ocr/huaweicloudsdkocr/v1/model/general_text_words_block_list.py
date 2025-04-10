@@ -31,7 +31,7 @@ class GeneralTextWordsBlockList:
     }
 
     def __init__(self, words=None, location=None, confidence=None, char_list=None):
-        """GeneralTextWordsBlockList
+        r"""GeneralTextWordsBlockList
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class GeneralTextWordsBlockList:
 
     @property
     def words(self):
-        """Gets the words of this GeneralTextWordsBlockList.
+        r"""Gets the words of this GeneralTextWordsBlockList.
 
         文字块识别结果。 
 
@@ -71,7 +71,7 @@ class GeneralTextWordsBlockList:
 
     @words.setter
     def words(self, words):
-        """Sets the words of this GeneralTextWordsBlockList.
+        r"""Sets the words of this GeneralTextWordsBlockList.
 
         文字块识别结果。 
 
@@ -82,7 +82,7 @@ class GeneralTextWordsBlockList:
 
     @property
     def location(self):
-        """Gets the location of this GeneralTextWordsBlockList.
+        r"""Gets the location of this GeneralTextWordsBlockList.
 
         文字块的区域位置信息，列表形式，包含文字区域四个顶点的二维坐标（x,y）;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -93,7 +93,7 @@ class GeneralTextWordsBlockList:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this GeneralTextWordsBlockList.
+        r"""Sets the location of this GeneralTextWordsBlockList.
 
         文字块的区域位置信息，列表形式，包含文字区域四个顶点的二维坐标（x,y）;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -104,7 +104,7 @@ class GeneralTextWordsBlockList:
 
     @property
     def confidence(self):
-        """Gets the confidence of this GeneralTextWordsBlockList.
+        r"""Gets the confidence of this GeneralTextWordsBlockList.
 
         文字块识别结果的置信度。 
 
@@ -115,7 +115,7 @@ class GeneralTextWordsBlockList:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this GeneralTextWordsBlockList.
+        r"""Sets the confidence of this GeneralTextWordsBlockList.
 
         文字块识别结果的置信度。 
 
@@ -126,7 +126,7 @@ class GeneralTextWordsBlockList:
 
     @property
     def char_list(self):
-        """Gets the char_list of this GeneralTextWordsBlockList.
+        r"""Gets the char_list of this GeneralTextWordsBlockList.
 
         文字块对应的单字符识别列表，输出顺序从左到右，先上后下。 
 
@@ -137,7 +137,7 @@ class GeneralTextWordsBlockList:
 
     @char_list.setter
     def char_list(self, char_list):
-        """Sets the char_list of this GeneralTextWordsBlockList.
+        r"""Sets the char_list of this GeneralTextWordsBlockList.
 
         文字块对应的单字符识别列表，输出顺序从左到右，先上后下。 
 

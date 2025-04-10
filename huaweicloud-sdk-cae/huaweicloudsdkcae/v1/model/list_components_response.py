@@ -32,7 +32,7 @@ class ListComponentsResponse(SdkResponse):
     }
 
     def __init__(self, api_version=None, kind=None, items=None, total_count=None):
-        """ListComponentsResponse
+        r"""ListComponentsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListComponentsResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this ListComponentsResponse.
+        r"""Gets the api_version of this ListComponentsResponse.
 
         :return: The api_version of this ListComponentsResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -74,7 +74,7 @@ class ListComponentsResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this ListComponentsResponse.
+        r"""Sets the api_version of this ListComponentsResponse.
 
         :param api_version: The api_version of this ListComponentsResponse.
         :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -83,7 +83,7 @@ class ListComponentsResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this ListComponentsResponse.
+        r"""Gets the kind of this ListComponentsResponse.
 
         :return: The kind of this ListComponentsResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.ComponentKindObj`
@@ -92,7 +92,7 @@ class ListComponentsResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ListComponentsResponse.
+        r"""Sets the kind of this ListComponentsResponse.
 
         :param kind: The kind of this ListComponentsResponse.
         :type kind: :class:`huaweicloudsdkcae.v1.ComponentKindObj`
@@ -101,7 +101,7 @@ class ListComponentsResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListComponentsResponse.
+        r"""Gets the items of this ListComponentsResponse.
 
         组件列表。
 
@@ -112,7 +112,7 @@ class ListComponentsResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListComponentsResponse.
+        r"""Sets the items of this ListComponentsResponse.
 
         组件列表。
 
@@ -123,7 +123,7 @@ class ListComponentsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListComponentsResponse.
+        r"""Gets the total_count of this ListComponentsResponse.
 
         分页总数。
 
@@ -134,7 +134,7 @@ class ListComponentsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListComponentsResponse.
+        r"""Sets the total_count of this ListComponentsResponse.
 
         分页总数。
 

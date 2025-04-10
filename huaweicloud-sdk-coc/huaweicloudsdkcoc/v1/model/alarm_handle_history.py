@@ -39,7 +39,7 @@ class AlarmHandleHistory:
     }
 
     def __init__(self, work_order_id=None, create_name=None, create_alias=None, task_type=None, start_time=None, end_time=None, duration=None, status=None):
-        """AlarmHandleHistory
+        r"""AlarmHandleHistory
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class AlarmHandleHistory:
 
     @property
     def work_order_id(self):
-        """Gets the work_order_id of this AlarmHandleHistory.
+        r"""Gets the work_order_id of this AlarmHandleHistory.
 
         执行工单id
 
@@ -103,7 +103,7 @@ class AlarmHandleHistory:
 
     @work_order_id.setter
     def work_order_id(self, work_order_id):
-        """Sets the work_order_id of this AlarmHandleHistory.
+        r"""Sets the work_order_id of this AlarmHandleHistory.
 
         执行工单id
 
@@ -114,7 +114,7 @@ class AlarmHandleHistory:
 
     @property
     def create_name(self):
-        """Gets the create_name of this AlarmHandleHistory.
+        r"""Gets the create_name of this AlarmHandleHistory.
 
         创建人名
 
@@ -125,7 +125,7 @@ class AlarmHandleHistory:
 
     @create_name.setter
     def create_name(self, create_name):
-        """Sets the create_name of this AlarmHandleHistory.
+        r"""Sets the create_name of this AlarmHandleHistory.
 
         创建人名
 
@@ -136,7 +136,7 @@ class AlarmHandleHistory:
 
     @property
     def create_alias(self):
-        """Gets the create_alias of this AlarmHandleHistory.
+        r"""Gets the create_alias of this AlarmHandleHistory.
 
         创建人名
 
@@ -147,7 +147,7 @@ class AlarmHandleHistory:
 
     @create_alias.setter
     def create_alias(self, create_alias):
-        """Sets the create_alias of this AlarmHandleHistory.
+        r"""Sets the create_alias of this AlarmHandleHistory.
 
         创建人名
 
@@ -158,7 +158,7 @@ class AlarmHandleHistory:
 
     @property
     def task_type(self):
-        """Gets the task_type of this AlarmHandleHistory.
+        r"""Gets the task_type of this AlarmHandleHistory.
 
         任务类型
 
@@ -169,7 +169,7 @@ class AlarmHandleHistory:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this AlarmHandleHistory.
+        r"""Sets the task_type of this AlarmHandleHistory.
 
         任务类型
 
@@ -180,7 +180,7 @@ class AlarmHandleHistory:
 
     @property
     def start_time(self):
-        """Gets the start_time of this AlarmHandleHistory.
+        r"""Gets the start_time of this AlarmHandleHistory.
 
         开始时间
 
@@ -191,7 +191,7 @@ class AlarmHandleHistory:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this AlarmHandleHistory.
+        r"""Sets the start_time of this AlarmHandleHistory.
 
         开始时间
 
@@ -202,7 +202,7 @@ class AlarmHandleHistory:
 
     @property
     def end_time(self):
-        """Gets the end_time of this AlarmHandleHistory.
+        r"""Gets the end_time of this AlarmHandleHistory.
 
         结束时间
 
@@ -213,7 +213,7 @@ class AlarmHandleHistory:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this AlarmHandleHistory.
+        r"""Sets the end_time of this AlarmHandleHistory.
 
         结束时间
 
@@ -224,7 +224,7 @@ class AlarmHandleHistory:
 
     @property
     def duration(self):
-        """Gets the duration of this AlarmHandleHistory.
+        r"""Gets the duration of this AlarmHandleHistory.
 
         总耗时
 
@@ -235,7 +235,7 @@ class AlarmHandleHistory:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this AlarmHandleHistory.
+        r"""Sets the duration of this AlarmHandleHistory.
 
         总耗时
 
@@ -246,7 +246,7 @@ class AlarmHandleHistory:
 
     @property
     def status(self):
-        """Gets the status of this AlarmHandleHistory.
+        r"""Gets the status of this AlarmHandleHistory.
 
         状态
 
@@ -257,7 +257,7 @@ class AlarmHandleHistory:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AlarmHandleHistory.
+        r"""Sets the status of this AlarmHandleHistory.
 
         状态
 

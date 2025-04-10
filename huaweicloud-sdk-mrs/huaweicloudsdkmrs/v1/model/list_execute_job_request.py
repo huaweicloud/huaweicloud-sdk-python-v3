@@ -35,7 +35,7 @@ class ListExecuteJobRequest:
     }
 
     def __init__(self, page_size=None, current_page=None, job_name=None, cluster_id=None, state=None, id=None):
-        """ListExecuteJobRequest
+        r"""ListExecuteJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListExecuteJobRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ListExecuteJobRequest.
+        r"""Gets the page_size of this ListExecuteJobRequest.
 
         分页查询每页返回的最大作业数量。  取值范围：[1～100]
 
@@ -88,7 +88,7 @@ class ListExecuteJobRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ListExecuteJobRequest.
+        r"""Sets the page_size of this ListExecuteJobRequest.
 
         分页查询每页返回的最大作业数量。  取值范围：[1～100]
 
@@ -99,7 +99,7 @@ class ListExecuteJobRequest:
 
     @property
     def current_page(self):
-        """Gets the current_page of this ListExecuteJobRequest.
+        r"""Gets the current_page of this ListExecuteJobRequest.
 
         当前查询页码。
 
@@ -110,7 +110,7 @@ class ListExecuteJobRequest:
 
     @current_page.setter
     def current_page(self, current_page):
-        """Sets the current_page of this ListExecuteJobRequest.
+        r"""Sets the current_page of this ListExecuteJobRequest.
 
         当前查询页码。
 
@@ -121,7 +121,7 @@ class ListExecuteJobRequest:
 
     @property
     def job_name(self):
-        """Gets the job_name of this ListExecuteJobRequest.
+        r"""Gets the job_name of this ListExecuteJobRequest.
 
         作业名称。
 
@@ -132,7 +132,7 @@ class ListExecuteJobRequest:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this ListExecuteJobRequest.
+        r"""Sets the job_name of this ListExecuteJobRequest.
 
         作业名称。
 
@@ -143,7 +143,7 @@ class ListExecuteJobRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListExecuteJobRequest.
+        r"""Gets the cluster_id of this ListExecuteJobRequest.
 
         集群编号。
 
@@ -154,7 +154,7 @@ class ListExecuteJobRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListExecuteJobRequest.
+        r"""Sets the cluster_id of this ListExecuteJobRequest.
 
         集群编号。
 
@@ -165,7 +165,7 @@ class ListExecuteJobRequest:
 
     @property
     def state(self):
-        """Gets the state of this ListExecuteJobRequest.
+        r"""Gets the state of this ListExecuteJobRequest.
 
         作业状态编码：  - 1：Terminated表示已终止的作业状态 - 2：Running表示运行中的作业状态 - 3：Completed表示已完成的作业状态 - 4：Abnormal表示异常的作业状态
 
@@ -176,7 +176,7 @@ class ListExecuteJobRequest:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ListExecuteJobRequest.
+        r"""Sets the state of this ListExecuteJobRequest.
 
         作业状态编码：  - 1：Terminated表示已终止的作业状态 - 2：Running表示运行中的作业状态 - 3：Completed表示已完成的作业状态 - 4：Abnormal表示异常的作业状态
 
@@ -187,7 +187,7 @@ class ListExecuteJobRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListExecuteJobRequest.
+        r"""Gets the id of this ListExecuteJobRequest.
 
         作业执行对象的编号。
 
@@ -198,7 +198,7 @@ class ListExecuteJobRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListExecuteJobRequest.
+        r"""Sets the id of this ListExecuteJobRequest.
 
         作业执行对象的编号。
 

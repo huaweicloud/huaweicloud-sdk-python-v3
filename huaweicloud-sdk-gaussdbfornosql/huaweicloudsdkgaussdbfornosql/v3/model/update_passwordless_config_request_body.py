@@ -25,7 +25,7 @@ class UpdatePasswordlessConfigRequestBody:
     }
 
     def __init__(self, config_ips=None):
-        """UpdatePasswordlessConfigRequestBody
+        r"""UpdatePasswordlessConfigRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdatePasswordlessConfigRequestBody:
 
     @property
     def config_ips(self):
-        """Gets the config_ips of this UpdatePasswordlessConfigRequestBody.
+        r"""Gets the config_ips of this UpdatePasswordlessConfigRequestBody.
 
         要设置的免密配置,ip与网段的列表,空列表表示清空免密配置。
 
@@ -53,7 +53,7 @@ class UpdatePasswordlessConfigRequestBody:
 
     @config_ips.setter
     def config_ips(self, config_ips):
-        """Sets the config_ips of this UpdatePasswordlessConfigRequestBody.
+        r"""Sets the config_ips of this UpdatePasswordlessConfigRequestBody.
 
         要设置的免密配置,ip与网段的列表,空列表表示清空免密配置。
 

@@ -33,7 +33,7 @@ class GetBackupDownloadLinkFiles:
     }
 
     def __init__(self, name=None, size=None, download_link=None, link_expired_time=None, database_name=None):
-        """GetBackupDownloadLinkFiles
+        r"""GetBackupDownloadLinkFiles
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class GetBackupDownloadLinkFiles:
 
     @property
     def name(self):
-        """Gets the name of this GetBackupDownloadLinkFiles.
+        r"""Gets the name of this GetBackupDownloadLinkFiles.
 
         文件名。
 
@@ -77,7 +77,7 @@ class GetBackupDownloadLinkFiles:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GetBackupDownloadLinkFiles.
+        r"""Sets the name of this GetBackupDownloadLinkFiles.
 
         文件名。
 
@@ -88,7 +88,7 @@ class GetBackupDownloadLinkFiles:
 
     @property
     def size(self):
-        """Gets the size of this GetBackupDownloadLinkFiles.
+        r"""Gets the size of this GetBackupDownloadLinkFiles.
 
         文件大小，单位为KB。
 
@@ -99,7 +99,7 @@ class GetBackupDownloadLinkFiles:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this GetBackupDownloadLinkFiles.
+        r"""Sets the size of this GetBackupDownloadLinkFiles.
 
         文件大小，单位为KB。
 
@@ -110,7 +110,7 @@ class GetBackupDownloadLinkFiles:
 
     @property
     def download_link(self):
-        """Gets the download_link of this GetBackupDownloadLinkFiles.
+        r"""Gets the download_link of this GetBackupDownloadLinkFiles.
 
         文件下载链接。
 
@@ -121,7 +121,7 @@ class GetBackupDownloadLinkFiles:
 
     @download_link.setter
     def download_link(self, download_link):
-        """Sets the download_link of this GetBackupDownloadLinkFiles.
+        r"""Sets the download_link of this GetBackupDownloadLinkFiles.
 
         文件下载链接。
 
@@ -132,7 +132,7 @@ class GetBackupDownloadLinkFiles:
 
     @property
     def link_expired_time(self):
-        """Gets the link_expired_time of this GetBackupDownloadLinkFiles.
+        r"""Gets the link_expired_time of this GetBackupDownloadLinkFiles.
 
         下载链接过期时间，格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始，Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -143,7 +143,7 @@ class GetBackupDownloadLinkFiles:
 
     @link_expired_time.setter
     def link_expired_time(self, link_expired_time):
-        """Sets the link_expired_time of this GetBackupDownloadLinkFiles.
+        r"""Sets the link_expired_time of this GetBackupDownloadLinkFiles.
 
         下载链接过期时间，格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始，Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -154,7 +154,7 @@ class GetBackupDownloadLinkFiles:
 
     @property
     def database_name(self):
-        """Gets the database_name of this GetBackupDownloadLinkFiles.
+        r"""Gets the database_name of this GetBackupDownloadLinkFiles.
 
         数据库名。若文件不是数据库备份，则返回空
 
@@ -165,7 +165,7 @@ class GetBackupDownloadLinkFiles:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this GetBackupDownloadLinkFiles.
+        r"""Sets the database_name of this GetBackupDownloadLinkFiles.
 
         数据库名。若文件不是数据库备份，则返回空
 

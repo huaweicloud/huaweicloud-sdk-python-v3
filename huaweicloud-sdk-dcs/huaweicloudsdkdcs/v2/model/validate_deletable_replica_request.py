@@ -25,7 +25,7 @@ class ValidateDeletableReplicaRequest:
     }
 
     def __init__(self, instance_id=None):
-        """ValidateDeletableReplicaRequest
+        r"""ValidateDeletableReplicaRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ValidateDeletableReplicaRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ValidateDeletableReplicaRequest.
+        r"""Gets the instance_id of this ValidateDeletableReplicaRequest.
 
         实例ID
 
@@ -53,7 +53,7 @@ class ValidateDeletableReplicaRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ValidateDeletableReplicaRequest.
+        r"""Sets the instance_id of this ValidateDeletableReplicaRequest.
 
         实例ID
 

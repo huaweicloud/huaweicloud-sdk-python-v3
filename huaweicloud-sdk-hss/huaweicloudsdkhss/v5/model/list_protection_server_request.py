@@ -41,13 +41,13 @@ class ListProtectionServerRequest:
     }
 
     def __init__(self, region=None, enterprise_project_id=None, offset=None, limit=None, host_name=None, os_type=None, host_ip=None, host_status=None, last_days=None):
-        """ListProtectionServerRequest
+        r"""ListProtectionServerRequest
 
         The model defined in huaweicloud sdk
 
         :param region: Region ID
         :type region: str
-        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param offset: 偏移量：指定返回记录的开始位置
         :type offset: int
@@ -98,7 +98,7 @@ class ListProtectionServerRequest:
 
     @property
     def region(self):
-        """Gets the region of this ListProtectionServerRequest.
+        r"""Gets the region of this ListProtectionServerRequest.
 
         Region ID
 
@@ -109,7 +109,7 @@ class ListProtectionServerRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ListProtectionServerRequest.
+        r"""Sets the region of this ListProtectionServerRequest.
 
         Region ID
 
@@ -120,9 +120,9 @@ class ListProtectionServerRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListProtectionServerRequest.
+        r"""Gets the enterprise_project_id of this ListProtectionServerRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ListProtectionServerRequest.
         :rtype: str
@@ -131,9 +131,9 @@ class ListProtectionServerRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListProtectionServerRequest.
+        r"""Sets the enterprise_project_id of this ListProtectionServerRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ListProtectionServerRequest.
         :type enterprise_project_id: str
@@ -142,7 +142,7 @@ class ListProtectionServerRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListProtectionServerRequest.
+        r"""Gets the offset of this ListProtectionServerRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -153,7 +153,7 @@ class ListProtectionServerRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListProtectionServerRequest.
+        r"""Sets the offset of this ListProtectionServerRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -164,7 +164,7 @@ class ListProtectionServerRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListProtectionServerRequest.
+        r"""Gets the limit of this ListProtectionServerRequest.
 
         每页显示个数
 
@@ -175,7 +175,7 @@ class ListProtectionServerRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListProtectionServerRequest.
+        r"""Sets the limit of this ListProtectionServerRequest.
 
         每页显示个数
 
@@ -186,7 +186,7 @@ class ListProtectionServerRequest:
 
     @property
     def host_name(self):
-        """Gets the host_name of this ListProtectionServerRequest.
+        r"""Gets the host_name of this ListProtectionServerRequest.
 
         服务器名称
 
@@ -197,7 +197,7 @@ class ListProtectionServerRequest:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this ListProtectionServerRequest.
+        r"""Sets the host_name of this ListProtectionServerRequest.
 
         服务器名称
 
@@ -208,7 +208,7 @@ class ListProtectionServerRequest:
 
     @property
     def os_type(self):
-        """Gets the os_type of this ListProtectionServerRequest.
+        r"""Gets the os_type of this ListProtectionServerRequest.
 
         操作系统类型，包含如下2种。   - Linux ：Linux。   - Windows ：Windows。
 
@@ -219,7 +219,7 @@ class ListProtectionServerRequest:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this ListProtectionServerRequest.
+        r"""Sets the os_type of this ListProtectionServerRequest.
 
         操作系统类型，包含如下2种。   - Linux ：Linux。   - Windows ：Windows。
 
@@ -230,7 +230,7 @@ class ListProtectionServerRequest:
 
     @property
     def host_ip(self):
-        """Gets the host_ip of this ListProtectionServerRequest.
+        r"""Gets the host_ip of this ListProtectionServerRequest.
 
         服务器IP地址
 
@@ -241,7 +241,7 @@ class ListProtectionServerRequest:
 
     @host_ip.setter
     def host_ip(self, host_ip):
-        """Sets the host_ip of this ListProtectionServerRequest.
+        r"""Sets the host_ip of this ListProtectionServerRequest.
 
         服务器IP地址
 
@@ -252,7 +252,7 @@ class ListProtectionServerRequest:
 
     @property
     def host_status(self):
-        """Gets the host_status of this ListProtectionServerRequest.
+        r"""Gets the host_status of this ListProtectionServerRequest.
 
         主机状态，包含如下3种。   - 不传参默认为全部。   - ACTIVE ：正在运行。   - SHUTOFF ：关机。
 
@@ -263,7 +263,7 @@ class ListProtectionServerRequest:
 
     @host_status.setter
     def host_status(self, host_status):
-        """Sets the host_status of this ListProtectionServerRequest.
+        r"""Sets the host_status of this ListProtectionServerRequest.
 
         主机状态，包含如下3种。   - 不传参默认为全部。   - ACTIVE ：正在运行。   - SHUTOFF ：关机。
 
@@ -274,7 +274,7 @@ class ListProtectionServerRequest:
 
     @property
     def last_days(self):
-        """Gets the last_days of this ListProtectionServerRequest.
+        r"""Gets the last_days of this ListProtectionServerRequest.
 
         查询时间范围天数，最近7天为last_days=7，若不填，则默认查询一天内的防护事件和已有备份数
 
@@ -285,7 +285,7 @@ class ListProtectionServerRequest:
 
     @last_days.setter
     def last_days(self, last_days):
-        """Sets the last_days of this ListProtectionServerRequest.
+        r"""Sets the last_days of this ListProtectionServerRequest.
 
         查询时间范围天数，最近7天为last_days=7，若不填，则默认查询一天内的防护事件和已有备份数
 

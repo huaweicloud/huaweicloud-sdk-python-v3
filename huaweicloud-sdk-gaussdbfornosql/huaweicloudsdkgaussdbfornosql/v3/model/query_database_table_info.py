@@ -27,7 +27,7 @@ class QueryDatabaseTableInfo:
     }
 
     def __init__(self, database_name=None, table_names=None):
-        """QueryDatabaseTableInfo
+        r"""QueryDatabaseTableInfo
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class QueryDatabaseTableInfo:
 
     @property
     def database_name(self):
-        """Gets the database_name of this QueryDatabaseTableInfo.
+        r"""Gets the database_name of this QueryDatabaseTableInfo.
 
         数据库名称。
 
@@ -60,7 +60,7 @@ class QueryDatabaseTableInfo:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this QueryDatabaseTableInfo.
+        r"""Sets the database_name of this QueryDatabaseTableInfo.
 
         数据库名称。
 
@@ -71,7 +71,7 @@ class QueryDatabaseTableInfo:
 
     @property
     def table_names(self):
-        """Gets the table_names of this QueryDatabaseTableInfo.
+        r"""Gets the table_names of this QueryDatabaseTableInfo.
 
         表名称列表。 - table_names为空的时候，表示库级别查询。 - table_names非空的时候，表示表级别查询。
 
@@ -82,7 +82,7 @@ class QueryDatabaseTableInfo:
 
     @table_names.setter
     def table_names(self, table_names):
-        """Sets the table_names of this QueryDatabaseTableInfo.
+        r"""Sets the table_names of this QueryDatabaseTableInfo.
 
         表名称列表。 - table_names为空的时候，表示库级别查询。 - table_names非空的时候，表示表级别查询。
 

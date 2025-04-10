@@ -35,7 +35,7 @@ class ShowActiveActiveDomainParams:
     }
 
     def __init__(self, id=None, name=None, description=None, sold_out=None, local_replication_cluster=None, remote_replication_cluster=None):
-        """ShowActiveActiveDomainParams
+        r"""ShowActiveActiveDomainParams
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowActiveActiveDomainParams:
 
     @property
     def id(self):
-        """Gets the id of this ShowActiveActiveDomainParams.
+        r"""Gets the id of this ShowActiveActiveDomainParams.
 
         双活域ID。
 
@@ -83,7 +83,7 @@ class ShowActiveActiveDomainParams:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowActiveActiveDomainParams.
+        r"""Sets the id of this ShowActiveActiveDomainParams.
 
         双活域ID。
 
@@ -94,7 +94,7 @@ class ShowActiveActiveDomainParams:
 
     @property
     def name(self):
-        """Gets the name of this ShowActiveActiveDomainParams.
+        r"""Gets the name of this ShowActiveActiveDomainParams.
 
         双活域名称。
 
@@ -105,7 +105,7 @@ class ShowActiveActiveDomainParams:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowActiveActiveDomainParams.
+        r"""Sets the name of this ShowActiveActiveDomainParams.
 
         双活域名称。
 
@@ -116,7 +116,7 @@ class ShowActiveActiveDomainParams:
 
     @property
     def description(self):
-        """Gets the description of this ShowActiveActiveDomainParams.
+        r"""Gets the description of this ShowActiveActiveDomainParams.
 
         双活域描述。
 
@@ -127,7 +127,7 @@ class ShowActiveActiveDomainParams:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowActiveActiveDomainParams.
+        r"""Sets the description of this ShowActiveActiveDomainParams.
 
         双活域描述。
 
@@ -138,7 +138,7 @@ class ShowActiveActiveDomainParams:
 
     @property
     def sold_out(self):
-        """Gets the sold_out of this ShowActiveActiveDomainParams.
+        r"""Gets the sold_out of this ShowActiveActiveDomainParams.
 
         表示该双活域下的资源是否售罄。
 
@@ -149,7 +149,7 @@ class ShowActiveActiveDomainParams:
 
     @sold_out.setter
     def sold_out(self, sold_out):
-        """Sets the sold_out of this ShowActiveActiveDomainParams.
+        r"""Sets the sold_out of this ShowActiveActiveDomainParams.
 
         表示该双活域下的资源是否售罄。
 
@@ -160,7 +160,7 @@ class ShowActiveActiveDomainParams:
 
     @property
     def local_replication_cluster(self):
-        """Gets the local_replication_cluster of this ShowActiveActiveDomainParams.
+        r"""Gets the local_replication_cluster of this ShowActiveActiveDomainParams.
 
         :return: The local_replication_cluster of this ShowActiveActiveDomainParams.
         :rtype: :class:`huaweicloudsdksdrs.v1.ReplicationClusterParams`
@@ -169,7 +169,7 @@ class ShowActiveActiveDomainParams:
 
     @local_replication_cluster.setter
     def local_replication_cluster(self, local_replication_cluster):
-        """Sets the local_replication_cluster of this ShowActiveActiveDomainParams.
+        r"""Sets the local_replication_cluster of this ShowActiveActiveDomainParams.
 
         :param local_replication_cluster: The local_replication_cluster of this ShowActiveActiveDomainParams.
         :type local_replication_cluster: :class:`huaweicloudsdksdrs.v1.ReplicationClusterParams`
@@ -178,7 +178,7 @@ class ShowActiveActiveDomainParams:
 
     @property
     def remote_replication_cluster(self):
-        """Gets the remote_replication_cluster of this ShowActiveActiveDomainParams.
+        r"""Gets the remote_replication_cluster of this ShowActiveActiveDomainParams.
 
         :return: The remote_replication_cluster of this ShowActiveActiveDomainParams.
         :rtype: :class:`huaweicloudsdksdrs.v1.ReplicationClusterParams`
@@ -187,7 +187,7 @@ class ShowActiveActiveDomainParams:
 
     @remote_replication_cluster.setter
     def remote_replication_cluster(self, remote_replication_cluster):
-        """Sets the remote_replication_cluster of this ShowActiveActiveDomainParams.
+        r"""Sets the remote_replication_cluster of this ShowActiveActiveDomainParams.
 
         :param remote_replication_cluster: The remote_replication_cluster of this ShowActiveActiveDomainParams.
         :type remote_replication_cluster: :class:`huaweicloudsdksdrs.v1.ReplicationClusterParams`

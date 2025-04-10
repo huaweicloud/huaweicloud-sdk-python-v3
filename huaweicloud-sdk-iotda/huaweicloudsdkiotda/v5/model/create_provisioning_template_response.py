@@ -36,7 +36,7 @@ class CreateProvisioningTemplateResponse(SdkResponse):
     }
 
     def __init__(self, template_id=None, template_name=None, description=None, template_body=None, create_time=None, update_time=None):
-        """CreateProvisioningTemplateResponse
+        r"""CreateProvisioningTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class CreateProvisioningTemplateResponse(SdkResponse):
 
     @property
     def template_id(self):
-        """Gets the template_id of this CreateProvisioningTemplateResponse.
+        r"""Gets the template_id of this CreateProvisioningTemplateResponse.
 
         **参数说明**：预调配模板ID。
 
@@ -90,7 +90,7 @@ class CreateProvisioningTemplateResponse(SdkResponse):
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this CreateProvisioningTemplateResponse.
+        r"""Sets the template_id of this CreateProvisioningTemplateResponse.
 
         **参数说明**：预调配模板ID。
 
@@ -101,7 +101,7 @@ class CreateProvisioningTemplateResponse(SdkResponse):
 
     @property
     def template_name(self):
-        """Gets the template_name of this CreateProvisioningTemplateResponse.
+        r"""Gets the template_name of this CreateProvisioningTemplateResponse.
 
         **参数说明**：预调配模板名称。 **取值范围**：长度不超过128，只允许中文、字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -112,7 +112,7 @@ class CreateProvisioningTemplateResponse(SdkResponse):
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this CreateProvisioningTemplateResponse.
+        r"""Sets the template_name of this CreateProvisioningTemplateResponse.
 
         **参数说明**：预调配模板名称。 **取值范围**：长度不超过128，只允许中文、字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -123,7 +123,7 @@ class CreateProvisioningTemplateResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreateProvisioningTemplateResponse.
+        r"""Gets the description of this CreateProvisioningTemplateResponse.
 
         **参数说明**：预调配模板的描述信息。 **取值范围**：长度不超过2048，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合
 
@@ -134,7 +134,7 @@ class CreateProvisioningTemplateResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateProvisioningTemplateResponse.
+        r"""Sets the description of this CreateProvisioningTemplateResponse.
 
         **参数说明**：预调配模板的描述信息。 **取值范围**：长度不超过2048，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合
 
@@ -145,7 +145,7 @@ class CreateProvisioningTemplateResponse(SdkResponse):
 
     @property
     def template_body(self):
-        """Gets the template_body of this CreateProvisioningTemplateResponse.
+        r"""Gets the template_body of this CreateProvisioningTemplateResponse.
 
         :return: The template_body of this CreateProvisioningTemplateResponse.
         :rtype: :class:`huaweicloudsdkiotda.v5.ProvisioningTemplateBody`
@@ -154,7 +154,7 @@ class CreateProvisioningTemplateResponse(SdkResponse):
 
     @template_body.setter
     def template_body(self, template_body):
-        """Sets the template_body of this CreateProvisioningTemplateResponse.
+        r"""Sets the template_body of this CreateProvisioningTemplateResponse.
 
         :param template_body: The template_body of this CreateProvisioningTemplateResponse.
         :type template_body: :class:`huaweicloudsdkiotda.v5.ProvisioningTemplateBody`
@@ -163,7 +163,7 @@ class CreateProvisioningTemplateResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreateProvisioningTemplateResponse.
+        r"""Gets the create_time of this CreateProvisioningTemplateResponse.
 
         在物联网平台创建预调配模板的时间。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
@@ -174,7 +174,7 @@ class CreateProvisioningTemplateResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreateProvisioningTemplateResponse.
+        r"""Sets the create_time of this CreateProvisioningTemplateResponse.
 
         在物联网平台创建预调配模板的时间。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
@@ -185,7 +185,7 @@ class CreateProvisioningTemplateResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this CreateProvisioningTemplateResponse.
+        r"""Gets the update_time of this CreateProvisioningTemplateResponse.
 
         在物联网平台更新预调配模板的时间。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
@@ -196,7 +196,7 @@ class CreateProvisioningTemplateResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this CreateProvisioningTemplateResponse.
+        r"""Sets the update_time of this CreateProvisioningTemplateResponse.
 
         在物联网平台更新预调配模板的时间。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 

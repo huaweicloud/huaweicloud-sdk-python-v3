@@ -25,7 +25,7 @@ class ShowRecordRuleRequest:
     }
 
     def __init__(self, id=None):
-        """ShowRecordRuleRequest
+        r"""ShowRecordRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowRecordRuleRequest:
 
     @property
     def id(self):
-        """Gets the id of this ShowRecordRuleRequest.
+        r"""Gets the id of this ShowRecordRuleRequest.
 
         规则ID
 
@@ -53,7 +53,7 @@ class ShowRecordRuleRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowRecordRuleRequest.
+        r"""Sets the id of this ShowRecordRuleRequest.
 
         规则ID
 

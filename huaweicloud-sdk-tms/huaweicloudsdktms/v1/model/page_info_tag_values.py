@@ -27,7 +27,7 @@ class PageInfoTagValues:
     }
 
     def __init__(self, next_marker=None, current_count=None):
-        """PageInfoTagValues
+        r"""PageInfoTagValues
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class PageInfoTagValues:
 
     @property
     def next_marker(self):
-        """Gets the next_marker of this PageInfoTagValues.
+        r"""Gets the next_marker of this PageInfoTagValues.
 
         分页位置标识（索引）
 
@@ -59,7 +59,7 @@ class PageInfoTagValues:
 
     @next_marker.setter
     def next_marker(self, next_marker):
-        """Sets the next_marker of this PageInfoTagValues.
+        r"""Sets the next_marker of this PageInfoTagValues.
 
         分页位置标识（索引）
 
@@ -70,7 +70,7 @@ class PageInfoTagValues:
 
     @property
     def current_count(self):
-        """Gets the current_count of this PageInfoTagValues.
+        r"""Gets the current_count of this PageInfoTagValues.
 
         当前页标签值的数量
 
@@ -81,7 +81,7 @@ class PageInfoTagValues:
 
     @current_count.setter
     def current_count(self, current_count):
-        """Sets the current_count of this PageInfoTagValues.
+        r"""Sets the current_count of this PageInfoTagValues.
 
         当前页标签值的数量
 

@@ -29,7 +29,7 @@ class CentralNetworkPlaneDocument:
     }
 
     def __init__(self, name=None, associate_er_tables=None, exclude_er_connections=None):
-        """CentralNetworkPlaneDocument
+        r"""CentralNetworkPlaneDocument
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CentralNetworkPlaneDocument:
 
     @property
     def name(self):
-        """Gets the name of this CentralNetworkPlaneDocument.
+        r"""Gets the name of this CentralNetworkPlaneDocument.
 
         实例名字。
 
@@ -67,7 +67,7 @@ class CentralNetworkPlaneDocument:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CentralNetworkPlaneDocument.
+        r"""Sets the name of this CentralNetworkPlaneDocument.
 
         实例名字。
 
@@ -78,7 +78,7 @@ class CentralNetworkPlaneDocument:
 
     @property
     def associate_er_tables(self):
-        """Gets the associate_er_tables of this CentralNetworkPlaneDocument.
+        r"""Gets the associate_er_tables of this CentralNetworkPlaneDocument.
 
         关联的中心网络ER实例列表。
 
@@ -89,7 +89,7 @@ class CentralNetworkPlaneDocument:
 
     @associate_er_tables.setter
     def associate_er_tables(self, associate_er_tables):
-        """Sets the associate_er_tables of this CentralNetworkPlaneDocument.
+        r"""Sets the associate_er_tables of this CentralNetworkPlaneDocument.
 
         关联的中心网络ER实例列表。
 
@@ -100,7 +100,7 @@ class CentralNetworkPlaneDocument:
 
     @property
     def exclude_er_connections(self):
-        """Gets the exclude_er_connections of this CentralNetworkPlaneDocument.
+        r"""Gets the exclude_er_connections of this CentralNetworkPlaneDocument.
 
         当自动连接所有ER实例时，排除中心网络的ER实例的连接。
 
@@ -111,7 +111,7 @@ class CentralNetworkPlaneDocument:
 
     @exclude_er_connections.setter
     def exclude_er_connections(self, exclude_er_connections):
-        """Sets the exclude_er_connections of this CentralNetworkPlaneDocument.
+        r"""Sets the exclude_er_connections of this CentralNetworkPlaneDocument.
 
         当自动连接所有ER实例时，排除中心网络的ER实例的连接。
 

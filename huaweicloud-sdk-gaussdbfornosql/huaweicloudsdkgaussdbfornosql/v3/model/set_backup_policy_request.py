@@ -27,7 +27,7 @@ class SetBackupPolicyRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """SetBackupPolicyRequest
+        r"""SetBackupPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SetBackupPolicyRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SetBackupPolicyRequest.
+        r"""Gets the instance_id of this SetBackupPolicyRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class SetBackupPolicyRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SetBackupPolicyRequest.
+        r"""Sets the instance_id of this SetBackupPolicyRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class SetBackupPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this SetBackupPolicyRequest.
+        r"""Gets the body of this SetBackupPolicyRequest.
 
         :return: The body of this SetBackupPolicyRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.SetBackupPolicyRequestBody`
@@ -80,7 +80,7 @@ class SetBackupPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SetBackupPolicyRequest.
+        r"""Sets the body of this SetBackupPolicyRequest.
 
         :param body: The body of this SetBackupPolicyRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.SetBackupPolicyRequestBody`

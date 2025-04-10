@@ -37,7 +37,7 @@ class ShowApisDetailRequest:
     }
 
     def __init__(self, workspace=None, dlm_type=None, api_id=None, instance_id=None, start_time=None, end_time=None, time_unit=None):
-        """ShowApisDetailRequest
+        r"""ShowApisDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -80,7 +80,7 @@ class ShowApisDetailRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowApisDetailRequest.
+        r"""Gets the workspace of this ShowApisDetailRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -91,7 +91,7 @@ class ShowApisDetailRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowApisDetailRequest.
+        r"""Sets the workspace of this ShowApisDetailRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -102,7 +102,7 @@ class ShowApisDetailRequest:
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this ShowApisDetailRequest.
+        r"""Gets the dlm_type of this ShowApisDetailRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -113,7 +113,7 @@ class ShowApisDetailRequest:
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this ShowApisDetailRequest.
+        r"""Sets the dlm_type of this ShowApisDetailRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -124,7 +124,7 @@ class ShowApisDetailRequest:
 
     @property
     def api_id(self):
-        """Gets the api_id of this ShowApisDetailRequest.
+        r"""Gets the api_id of this ShowApisDetailRequest.
 
         api编号。
 
@@ -135,7 +135,7 @@ class ShowApisDetailRequest:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this ShowApisDetailRequest.
+        r"""Sets the api_id of this ShowApisDetailRequest.
 
         api编号。
 
@@ -146,7 +146,7 @@ class ShowApisDetailRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowApisDetailRequest.
+        r"""Gets the instance_id of this ShowApisDetailRequest.
 
         集群编号。
 
@@ -157,7 +157,7 @@ class ShowApisDetailRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowApisDetailRequest.
+        r"""Sets the instance_id of this ShowApisDetailRequest.
 
         集群编号。
 
@@ -168,7 +168,7 @@ class ShowApisDetailRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowApisDetailRequest.
+        r"""Gets the start_time of this ShowApisDetailRequest.
 
         开始时间（13位时间戳）。
 
@@ -179,7 +179,7 @@ class ShowApisDetailRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowApisDetailRequest.
+        r"""Sets the start_time of this ShowApisDetailRequest.
 
         开始时间（13位时间戳）。
 
@@ -190,7 +190,7 @@ class ShowApisDetailRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowApisDetailRequest.
+        r"""Gets the end_time of this ShowApisDetailRequest.
 
         结束时间（13位时间戳）。
 
@@ -201,7 +201,7 @@ class ShowApisDetailRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowApisDetailRequest.
+        r"""Sets the end_time of this ShowApisDetailRequest.
 
         结束时间（13位时间戳）。
 
@@ -212,7 +212,7 @@ class ShowApisDetailRequest:
 
     @property
     def time_unit(self):
-        """Gets the time_unit of this ShowApisDetailRequest.
+        r"""Gets the time_unit of this ShowApisDetailRequest.
 
         时间单位。
 
@@ -223,7 +223,7 @@ class ShowApisDetailRequest:
 
     @time_unit.setter
     def time_unit(self, time_unit):
-        """Sets the time_unit of this ShowApisDetailRequest.
+        r"""Sets the time_unit of this ShowApisDetailRequest.
 
         时间单位。
 

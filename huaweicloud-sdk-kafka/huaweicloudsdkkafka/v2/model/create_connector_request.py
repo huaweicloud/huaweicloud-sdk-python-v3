@@ -27,7 +27,7 @@ class CreateConnectorRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateConnectorRequest
+        r"""CreateConnectorRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateConnectorRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateConnectorRequest.
+        r"""Gets the instance_id of this CreateConnectorRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class CreateConnectorRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateConnectorRequest.
+        r"""Sets the instance_id of this CreateConnectorRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class CreateConnectorRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateConnectorRequest.
+        r"""Gets the body of this CreateConnectorRequest.
 
         :return: The body of this CreateConnectorRequest.
         :rtype: :class:`huaweicloudsdkkafka.v2.CreateConnectorReq`
@@ -80,7 +80,7 @@ class CreateConnectorRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateConnectorRequest.
+        r"""Sets the body of this CreateConnectorRequest.
 
         :param body: The body of this CreateConnectorRequest.
         :type body: :class:`huaweicloudsdkkafka.v2.CreateConnectorReq`

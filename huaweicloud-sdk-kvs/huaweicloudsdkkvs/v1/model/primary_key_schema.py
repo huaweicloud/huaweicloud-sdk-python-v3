@@ -29,7 +29,7 @@ class PrimaryKeySchema:
     }
 
     def __init__(self, shard_key_fields=None, shard_mode=None, sort_key_fields=None):
-        """PrimaryKeySchema
+        r"""PrimaryKeySchema
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class PrimaryKeySchema:
 
     @property
     def shard_key_fields(self):
-        """Gets the shard_key_fields of this PrimaryKeySchema.
+        r"""Gets the shard_key_fields of this PrimaryKeySchema.
 
         分区键字段名数组，顺序组合。
 
@@ -67,7 +67,7 @@ class PrimaryKeySchema:
 
     @shard_key_fields.setter
     def shard_key_fields(self, shard_key_fields):
-        """Sets the shard_key_fields of this PrimaryKeySchema.
+        r"""Sets the shard_key_fields of this PrimaryKeySchema.
 
         分区键字段名数组，顺序组合。
 
@@ -78,7 +78,7 @@ class PrimaryKeySchema:
 
     @property
     def shard_mode(self):
-        """Gets the shard_mode of this PrimaryKeySchema.
+        r"""Gets the shard_mode of this PrimaryKeySchema.
 
         分区模式。
 
@@ -89,7 +89,7 @@ class PrimaryKeySchema:
 
     @shard_mode.setter
     def shard_mode(self, shard_mode):
-        """Sets the shard_mode of this PrimaryKeySchema.
+        r"""Sets the shard_mode of this PrimaryKeySchema.
 
         分区模式。
 
@@ -100,7 +100,7 @@ class PrimaryKeySchema:
 
     @property
     def sort_key_fields(self):
-        """Gets the sort_key_fields of this PrimaryKeySchema.
+        r"""Gets the sort_key_fields of this PrimaryKeySchema.
 
         排序键字段名数组，顺序组合。
 
@@ -111,7 +111,7 @@ class PrimaryKeySchema:
 
     @sort_key_fields.setter
     def sort_key_fields(self, sort_key_fields):
-        """Sets the sort_key_fields of this PrimaryKeySchema.
+        r"""Sets the sort_key_fields of this PrimaryKeySchema.
 
         排序键字段名数组，顺序组合。
 

@@ -30,7 +30,7 @@ class ShowRepositoryInfoResponse(SdkResponse):
     }
 
     def __init__(self, status=None, trace_id=None, result=None):
-        """ShowRepositoryInfoResponse
+        r"""ShowRepositoryInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowRepositoryInfoResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowRepositoryInfoResponse.
+        r"""Gets the status of this ShowRepositoryInfoResponse.
 
         结果状态
 
@@ -69,7 +69,7 @@ class ShowRepositoryInfoResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowRepositoryInfoResponse.
+        r"""Sets the status of this ShowRepositoryInfoResponse.
 
         结果状态
 
@@ -80,7 +80,7 @@ class ShowRepositoryInfoResponse(SdkResponse):
 
     @property
     def trace_id(self):
-        """Gets the trace_id of this ShowRepositoryInfoResponse.
+        r"""Gets the trace_id of this ShowRepositoryInfoResponse.
 
         请求id
 
@@ -91,7 +91,7 @@ class ShowRepositoryInfoResponse(SdkResponse):
 
     @trace_id.setter
     def trace_id(self, trace_id):
-        """Sets the trace_id of this ShowRepositoryInfoResponse.
+        r"""Sets the trace_id of this ShowRepositoryInfoResponse.
 
         请求id
 
@@ -102,7 +102,7 @@ class ShowRepositoryInfoResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowRepositoryInfoResponse.
+        r"""Gets the result of this ShowRepositoryInfoResponse.
 
         请求返回结果，接口不同，返回不同
 
@@ -113,7 +113,7 @@ class ShowRepositoryInfoResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowRepositoryInfoResponse.
+        r"""Sets the result of this ShowRepositoryInfoResponse.
 
         请求返回结果，接口不同，返回不同
 

@@ -27,7 +27,7 @@ class LifecycleProcess:
     }
 
     def __init__(self, type=None, parameters=None):
-        """LifecycleProcess
+        r"""LifecycleProcess
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class LifecycleProcess:
 
     @property
     def type(self):
-        """Gets the type of this LifecycleProcess.
+        r"""Gets the type of this LifecycleProcess.
 
         取值为command或者http。command为执行命令行，http为发送http请求。
 
@@ -61,7 +61,7 @@ class LifecycleProcess:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this LifecycleProcess.
+        r"""Sets the type of this LifecycleProcess.
 
         取值为command或者http。command为执行命令行，http为发送http请求。
 
@@ -72,7 +72,7 @@ class LifecycleProcess:
 
     @property
     def parameters(self):
-        """Gets the parameters of this LifecycleProcess.
+        r"""Gets the parameters of this LifecycleProcess.
 
         :return: The parameters of this LifecycleProcess.
         :rtype: :class:`huaweicloudsdkservicestage.v2.LifecycleProcessParameter`
@@ -81,7 +81,7 @@ class LifecycleProcess:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this LifecycleProcess.
+        r"""Sets the parameters of this LifecycleProcess.
 
         :param parameters: The parameters of this LifecycleProcess.
         :type parameters: :class:`huaweicloudsdkservicestage.v2.LifecycleProcessParameter`

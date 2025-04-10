@@ -33,7 +33,7 @@ class Cluster:
     }
 
     def __init__(self, kind=None, api_version=None, metadata=None, spec=None, status=None):
-        """Cluster
+        r"""Cluster
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class Cluster:
 
     @property
     def kind(self):
-        """Gets the kind of this Cluster.
+        r"""Gets the kind of this Cluster.
 
         API类型，固定值“Cluster”或“cluster”，该值不可修改。  
 
@@ -78,7 +78,7 @@ class Cluster:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this Cluster.
+        r"""Sets the kind of this Cluster.
 
         API类型，固定值“Cluster”或“cluster”，该值不可修改。  
 
@@ -89,7 +89,7 @@ class Cluster:
 
     @property
     def api_version(self):
-        """Gets the api_version of this Cluster.
+        r"""Gets the api_version of this Cluster.
 
         API版本，固定值“v3”，该值不可修改。  
 
@@ -100,7 +100,7 @@ class Cluster:
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this Cluster.
+        r"""Sets the api_version of this Cluster.
 
         API版本，固定值“v3”，该值不可修改。  
 
@@ -111,7 +111,7 @@ class Cluster:
 
     @property
     def metadata(self):
-        """Gets the metadata of this Cluster.
+        r"""Gets the metadata of this Cluster.
 
         :return: The metadata of this Cluster.
         :rtype: :class:`huaweicloudsdkcce.v3.ClusterMetadata`
@@ -120,7 +120,7 @@ class Cluster:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this Cluster.
+        r"""Sets the metadata of this Cluster.
 
         :param metadata: The metadata of this Cluster.
         :type metadata: :class:`huaweicloudsdkcce.v3.ClusterMetadata`
@@ -129,7 +129,7 @@ class Cluster:
 
     @property
     def spec(self):
-        """Gets the spec of this Cluster.
+        r"""Gets the spec of this Cluster.
 
         :return: The spec of this Cluster.
         :rtype: :class:`huaweicloudsdkcce.v3.ClusterSpec`
@@ -138,7 +138,7 @@ class Cluster:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this Cluster.
+        r"""Sets the spec of this Cluster.
 
         :param spec: The spec of this Cluster.
         :type spec: :class:`huaweicloudsdkcce.v3.ClusterSpec`
@@ -147,7 +147,7 @@ class Cluster:
 
     @property
     def status(self):
-        """Gets the status of this Cluster.
+        r"""Gets the status of this Cluster.
 
         :return: The status of this Cluster.
         :rtype: :class:`huaweicloudsdkcce.v3.ClusterStatus`
@@ -156,7 +156,7 @@ class Cluster:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Cluster.
+        r"""Sets the status of this Cluster.
 
         :param status: The status of this Cluster.
         :type status: :class:`huaweicloudsdkcce.v3.ClusterStatus`

@@ -29,7 +29,7 @@ class ListVideoMotionCaptureJobsRequest:
     }
 
     def __init__(self, x_app_user_id=None, offset=None, limit=None):
-        """ListVideoMotionCaptureJobsRequest
+        r"""ListVideoMotionCaptureJobsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListVideoMotionCaptureJobsRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this ListVideoMotionCaptureJobsRequest.
+        r"""Gets the x_app_user_id of this ListVideoMotionCaptureJobsRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -68,7 +68,7 @@ class ListVideoMotionCaptureJobsRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this ListVideoMotionCaptureJobsRequest.
+        r"""Sets the x_app_user_id of this ListVideoMotionCaptureJobsRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -79,7 +79,7 @@ class ListVideoMotionCaptureJobsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListVideoMotionCaptureJobsRequest.
+        r"""Gets the offset of this ListVideoMotionCaptureJobsRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -90,7 +90,7 @@ class ListVideoMotionCaptureJobsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListVideoMotionCaptureJobsRequest.
+        r"""Sets the offset of this ListVideoMotionCaptureJobsRequest.
 
         偏移量，表示从此偏移量开始查询。
 
@@ -101,7 +101,7 @@ class ListVideoMotionCaptureJobsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListVideoMotionCaptureJobsRequest.
+        r"""Gets the limit of this ListVideoMotionCaptureJobsRequest.
 
         每页显示的条目数量。
 
@@ -112,7 +112,7 @@ class ListVideoMotionCaptureJobsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListVideoMotionCaptureJobsRequest.
+        r"""Sets the limit of this ListVideoMotionCaptureJobsRequest.
 
         每页显示的条目数量。
 

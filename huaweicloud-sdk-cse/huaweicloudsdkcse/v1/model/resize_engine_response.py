@@ -30,7 +30,7 @@ class ResizeEngineResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, job_id=None):
-        """ResizeEngineResponse
+        r"""ResizeEngineResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ResizeEngineResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ResizeEngineResponse.
+        r"""Gets the id of this ResizeEngineResponse.
 
         引擎id
 
@@ -69,7 +69,7 @@ class ResizeEngineResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ResizeEngineResponse.
+        r"""Sets the id of this ResizeEngineResponse.
 
         引擎id
 
@@ -80,7 +80,7 @@ class ResizeEngineResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ResizeEngineResponse.
+        r"""Gets the name of this ResizeEngineResponse.
 
         引擎名字
 
@@ -91,7 +91,7 @@ class ResizeEngineResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ResizeEngineResponse.
+        r"""Sets the name of this ResizeEngineResponse.
 
         引擎名字
 
@@ -102,7 +102,7 @@ class ResizeEngineResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ResizeEngineResponse.
+        r"""Gets the job_id of this ResizeEngineResponse.
 
         jobID
 
@@ -113,7 +113,7 @@ class ResizeEngineResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ResizeEngineResponse.
+        r"""Sets the job_id of this ResizeEngineResponse.
 
         jobID
 

@@ -27,7 +27,7 @@ class BandwidthInfoExternal:
     }
 
     def __init__(self, bandwidth_size=None, gcb_id=None):
-        """BandwidthInfoExternal
+        r"""BandwidthInfoExternal
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BandwidthInfoExternal:
 
     @property
     def bandwidth_size(self):
-        """Gets the bandwidth_size of this BandwidthInfoExternal.
+        r"""Gets the bandwidth_size of this BandwidthInfoExternal.
 
         带宽值
 
@@ -61,7 +61,7 @@ class BandwidthInfoExternal:
 
     @bandwidth_size.setter
     def bandwidth_size(self, bandwidth_size):
-        """Sets the bandwidth_size of this BandwidthInfoExternal.
+        r"""Sets the bandwidth_size of this BandwidthInfoExternal.
 
         带宽值
 
@@ -72,7 +72,7 @@ class BandwidthInfoExternal:
 
     @property
     def gcb_id(self):
-        """Gets the gcb_id of this BandwidthInfoExternal.
+        r"""Gets the gcb_id of this BandwidthInfoExternal.
 
         带宽包ID
 
@@ -83,7 +83,7 @@ class BandwidthInfoExternal:
 
     @gcb_id.setter
     def gcb_id(self, gcb_id):
-        """Sets the gcb_id of this BandwidthInfoExternal.
+        r"""Sets the gcb_id of this BandwidthInfoExternal.
 
         带宽包ID
 

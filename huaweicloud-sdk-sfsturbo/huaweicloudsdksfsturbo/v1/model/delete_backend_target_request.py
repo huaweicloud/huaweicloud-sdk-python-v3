@@ -29,7 +29,7 @@ class DeleteBackendTargetRequest:
     }
 
     def __init__(self, share_id=None, target_id=None, delete_data_in_file_system=None):
-        """DeleteBackendTargetRequest
+        r"""DeleteBackendTargetRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DeleteBackendTargetRequest:
 
     @property
     def share_id(self):
-        """Gets the share_id of this DeleteBackendTargetRequest.
+        r"""Gets the share_id of this DeleteBackendTargetRequest.
 
         文件系统id
 
@@ -66,7 +66,7 @@ class DeleteBackendTargetRequest:
 
     @share_id.setter
     def share_id(self, share_id):
-        """Sets the share_id of this DeleteBackendTargetRequest.
+        r"""Sets the share_id of this DeleteBackendTargetRequest.
 
         文件系统id
 
@@ -77,7 +77,7 @@ class DeleteBackendTargetRequest:
 
     @property
     def target_id(self):
-        """Gets the target_id of this DeleteBackendTargetRequest.
+        r"""Gets the target_id of this DeleteBackendTargetRequest.
 
         绑定关系id
 
@@ -88,7 +88,7 @@ class DeleteBackendTargetRequest:
 
     @target_id.setter
     def target_id(self, target_id):
-        """Sets the target_id of this DeleteBackendTargetRequest.
+        r"""Sets the target_id of this DeleteBackendTargetRequest.
 
         绑定关系id
 
@@ -99,7 +99,7 @@ class DeleteBackendTargetRequest:
 
     @property
     def delete_data_in_file_system(self):
-        """Gets the delete_data_in_file_system of this DeleteBackendTargetRequest.
+        r"""Gets the delete_data_in_file_system of this DeleteBackendTargetRequest.
 
         删除后端存储时是否同时删除文件系统内的联动目录及其数据文件，默认为 false。数据删除后无法恢复，请谨慎操作。
 
@@ -110,7 +110,7 @@ class DeleteBackendTargetRequest:
 
     @delete_data_in_file_system.setter
     def delete_data_in_file_system(self, delete_data_in_file_system):
-        """Sets the delete_data_in_file_system of this DeleteBackendTargetRequest.
+        r"""Sets the delete_data_in_file_system of this DeleteBackendTargetRequest.
 
         删除后端存储时是否同时删除文件系统内的联动目录及其数据文件，默认为 false。数据删除后无法恢复，请谨慎操作。
 

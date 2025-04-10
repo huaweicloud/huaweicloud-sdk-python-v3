@@ -26,7 +26,7 @@ class ListNotificationTemplateResponse(SdkResponse):
     }
 
     def __init__(self, template=None):
-        """ListNotificationTemplateResponse
+        r"""ListNotificationTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListNotificationTemplateResponse(SdkResponse):
 
     @property
     def template(self):
-        """Gets the template of this ListNotificationTemplateResponse.
+        r"""Gets the template of this ListNotificationTemplateResponse.
 
         为一个html文本，需要进行相应的解析后展示
 
@@ -55,7 +55,7 @@ class ListNotificationTemplateResponse(SdkResponse):
 
     @template.setter
     def template(self, template):
-        """Sets the template of this ListNotificationTemplateResponse.
+        r"""Sets the template of this ListNotificationTemplateResponse.
 
         为一个html文本，需要进行相应的解析后展示
 

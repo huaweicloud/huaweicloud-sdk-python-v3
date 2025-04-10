@@ -30,7 +30,7 @@ class SendImmediateEventResponse(SdkResponse):
     }
 
     def __init__(self, event_id=None, send_config=None, immediate_event=None):
-        """SendImmediateEventResponse
+        r"""SendImmediateEventResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class SendImmediateEventResponse(SdkResponse):
 
     @property
     def event_id(self):
-        """Gets the event_id of this SendImmediateEventResponse.
+        r"""Gets the event_id of this SendImmediateEventResponse.
 
         **参数说明**：即时事件ID。
 
@@ -69,7 +69,7 @@ class SendImmediateEventResponse(SdkResponse):
 
     @event_id.setter
     def event_id(self, event_id):
-        """Sets the event_id of this SendImmediateEventResponse.
+        r"""Sets the event_id of this SendImmediateEventResponse.
 
         **参数说明**：即时事件ID。
 
@@ -80,7 +80,7 @@ class SendImmediateEventResponse(SdkResponse):
 
     @property
     def send_config(self):
-        """Gets the send_config of this SendImmediateEventResponse.
+        r"""Gets the send_config of this SendImmediateEventResponse.
 
         :return: The send_config of this SendImmediateEventResponse.
         :rtype: :class:`huaweicloudsdkdris.v1.SendConfigResponse`
@@ -89,7 +89,7 @@ class SendImmediateEventResponse(SdkResponse):
 
     @send_config.setter
     def send_config(self, send_config):
-        """Sets the send_config of this SendImmediateEventResponse.
+        r"""Sets the send_config of this SendImmediateEventResponse.
 
         :param send_config: The send_config of this SendImmediateEventResponse.
         :type send_config: :class:`huaweicloudsdkdris.v1.SendConfigResponse`
@@ -98,7 +98,7 @@ class SendImmediateEventResponse(SdkResponse):
 
     @property
     def immediate_event(self):
-        """Gets the immediate_event of this SendImmediateEventResponse.
+        r"""Gets the immediate_event of this SendImmediateEventResponse.
 
         :return: The immediate_event of this SendImmediateEventResponse.
         :rtype: :class:`huaweicloudsdkdris.v1.ImmediateEventResponseDTO`
@@ -107,7 +107,7 @@ class SendImmediateEventResponse(SdkResponse):
 
     @immediate_event.setter
     def immediate_event(self, immediate_event):
-        """Sets the immediate_event of this SendImmediateEventResponse.
+        r"""Sets the immediate_event of this SendImmediateEventResponse.
 
         :param immediate_event: The immediate_event of this SendImmediateEventResponse.
         :type immediate_event: :class:`huaweicloudsdkdris.v1.ImmediateEventResponseDTO`

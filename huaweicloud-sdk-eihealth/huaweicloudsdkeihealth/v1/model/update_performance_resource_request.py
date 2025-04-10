@@ -27,7 +27,7 @@ class UpdatePerformanceResourceRequest:
     }
 
     def __init__(self, id=None, body=None):
-        """UpdatePerformanceResourceRequest
+        r"""UpdatePerformanceResourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdatePerformanceResourceRequest:
 
     @property
     def id(self):
-        """Gets the id of this UpdatePerformanceResourceRequest.
+        r"""Gets the id of this UpdatePerformanceResourceRequest.
 
         性能加速ID
 
@@ -60,7 +60,7 @@ class UpdatePerformanceResourceRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdatePerformanceResourceRequest.
+        r"""Sets the id of this UpdatePerformanceResourceRequest.
 
         性能加速ID
 
@@ -71,7 +71,7 @@ class UpdatePerformanceResourceRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePerformanceResourceRequest.
+        r"""Gets the body of this UpdatePerformanceResourceRequest.
 
         :return: The body of this UpdatePerformanceResourceRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdatePerformanceResourceReq`
@@ -80,7 +80,7 @@ class UpdatePerformanceResourceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePerformanceResourceRequest.
+        r"""Sets the body of this UpdatePerformanceResourceRequest.
 
         :param body: The body of this UpdatePerformanceResourceRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.UpdatePerformanceResourceReq`

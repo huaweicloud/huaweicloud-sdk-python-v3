@@ -35,7 +35,7 @@ class ListProjectsV4ResponseBodyCreator:
     }
 
     def __init__(self, user_num_id=None, user_id=None, user_name=None, domain_id=None, domain_name=None, nick_name=None):
-        """ListProjectsV4ResponseBodyCreator
+        r"""ListProjectsV4ResponseBodyCreator
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListProjectsV4ResponseBodyCreator:
 
     @property
     def user_num_id(self):
-        """Gets the user_num_id of this ListProjectsV4ResponseBodyCreator.
+        r"""Gets the user_num_id of this ListProjectsV4ResponseBodyCreator.
 
         创建人numId
 
@@ -89,7 +89,7 @@ class ListProjectsV4ResponseBodyCreator:
 
     @user_num_id.setter
     def user_num_id(self, user_num_id):
-        """Sets the user_num_id of this ListProjectsV4ResponseBodyCreator.
+        r"""Sets the user_num_id of this ListProjectsV4ResponseBodyCreator.
 
         创建人numId
 
@@ -100,7 +100,7 @@ class ListProjectsV4ResponseBodyCreator:
 
     @property
     def user_id(self):
-        """Gets the user_id of this ListProjectsV4ResponseBodyCreator.
+        r"""Gets the user_id of this ListProjectsV4ResponseBodyCreator.
 
         创建人id
 
@@ -111,7 +111,7 @@ class ListProjectsV4ResponseBodyCreator:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ListProjectsV4ResponseBodyCreator.
+        r"""Sets the user_id of this ListProjectsV4ResponseBodyCreator.
 
         创建人id
 
@@ -122,7 +122,7 @@ class ListProjectsV4ResponseBodyCreator:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ListProjectsV4ResponseBodyCreator.
+        r"""Gets the user_name of this ListProjectsV4ResponseBodyCreator.
 
         创建人姓名
 
@@ -133,7 +133,7 @@ class ListProjectsV4ResponseBodyCreator:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ListProjectsV4ResponseBodyCreator.
+        r"""Sets the user_name of this ListProjectsV4ResponseBodyCreator.
 
         创建人姓名
 
@@ -144,7 +144,7 @@ class ListProjectsV4ResponseBodyCreator:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ListProjectsV4ResponseBodyCreator.
+        r"""Gets the domain_id of this ListProjectsV4ResponseBodyCreator.
 
         创建人租户id
 
@@ -155,7 +155,7 @@ class ListProjectsV4ResponseBodyCreator:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ListProjectsV4ResponseBodyCreator.
+        r"""Sets the domain_id of this ListProjectsV4ResponseBodyCreator.
 
         创建人租户id
 
@@ -166,7 +166,7 @@ class ListProjectsV4ResponseBodyCreator:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ListProjectsV4ResponseBodyCreator.
+        r"""Gets the domain_name of this ListProjectsV4ResponseBodyCreator.
 
         创建人租户名称
 
@@ -177,7 +177,7 @@ class ListProjectsV4ResponseBodyCreator:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ListProjectsV4ResponseBodyCreator.
+        r"""Sets the domain_name of this ListProjectsV4ResponseBodyCreator.
 
         创建人租户名称
 
@@ -188,7 +188,7 @@ class ListProjectsV4ResponseBodyCreator:
 
     @property
     def nick_name(self):
-        """Gets the nick_name of this ListProjectsV4ResponseBodyCreator.
+        r"""Gets the nick_name of this ListProjectsV4ResponseBodyCreator.
 
         创建人租户昵称
 
@@ -199,7 +199,7 @@ class ListProjectsV4ResponseBodyCreator:
 
     @nick_name.setter
     def nick_name(self, nick_name):
-        """Sets the nick_name of this ListProjectsV4ResponseBodyCreator.
+        r"""Sets the nick_name of this ListProjectsV4ResponseBodyCreator.
 
         创建人租户昵称
 

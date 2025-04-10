@@ -29,7 +29,7 @@ class UpdateAlertNoticeConfigRequest:
     }
 
     def __init__(self, x_language=None, alert_id=None, body=None):
-        """UpdateAlertNoticeConfigRequest
+        r"""UpdateAlertNoticeConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateAlertNoticeConfigRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateAlertNoticeConfigRequest.
+        r"""Gets the x_language of this UpdateAlertNoticeConfigRequest.
 
         zh-cn/en-us
 
@@ -66,7 +66,7 @@ class UpdateAlertNoticeConfigRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateAlertNoticeConfigRequest.
+        r"""Sets the x_language of this UpdateAlertNoticeConfigRequest.
 
         zh-cn/en-us
 
@@ -77,7 +77,7 @@ class UpdateAlertNoticeConfigRequest:
 
     @property
     def alert_id(self):
-        """Gets the alert_id of this UpdateAlertNoticeConfigRequest.
+        r"""Gets the alert_id of this UpdateAlertNoticeConfigRequest.
 
         告警通知id
 
@@ -88,7 +88,7 @@ class UpdateAlertNoticeConfigRequest:
 
     @alert_id.setter
     def alert_id(self, alert_id):
-        """Sets the alert_id of this UpdateAlertNoticeConfigRequest.
+        r"""Sets the alert_id of this UpdateAlertNoticeConfigRequest.
 
         告警通知id
 
@@ -99,7 +99,7 @@ class UpdateAlertNoticeConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAlertNoticeConfigRequest.
+        r"""Gets the body of this UpdateAlertNoticeConfigRequest.
 
         :return: The body of this UpdateAlertNoticeConfigRequest.
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateAlertNoticeConfigRequestBody`
@@ -108,7 +108,7 @@ class UpdateAlertNoticeConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAlertNoticeConfigRequest.
+        r"""Sets the body of this UpdateAlertNoticeConfigRequest.
 
         :param body: The body of this UpdateAlertNoticeConfigRequest.
         :type body: :class:`huaweicloudsdkwaf.v1.UpdateAlertNoticeConfigRequestBody`

@@ -45,7 +45,7 @@ class ShowRepoDomainsResponse:
     }
 
     def __init__(self, namespace=None, repository=None, access_domain=None, permit=None, deadline=None, description=None, creator_id=None, creator_name=None, created=None, updated=None, status=None):
-        """ShowRepoDomainsResponse
+        r"""ShowRepoDomainsResponse
 
         The model defined in huaweicloud sdk
 
@@ -102,7 +102,7 @@ class ShowRepoDomainsResponse:
 
     @property
     def namespace(self):
-        """Gets the namespace of this ShowRepoDomainsResponse.
+        r"""Gets the namespace of this ShowRepoDomainsResponse.
 
         组织
 
@@ -113,7 +113,7 @@ class ShowRepoDomainsResponse:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this ShowRepoDomainsResponse.
+        r"""Sets the namespace of this ShowRepoDomainsResponse.
 
         组织
 
@@ -124,7 +124,7 @@ class ShowRepoDomainsResponse:
 
     @property
     def repository(self):
-        """Gets the repository of this ShowRepoDomainsResponse.
+        r"""Gets the repository of this ShowRepoDomainsResponse.
 
         镜像仓库
 
@@ -135,7 +135,7 @@ class ShowRepoDomainsResponse:
 
     @repository.setter
     def repository(self, repository):
-        """Sets the repository of this ShowRepoDomainsResponse.
+        r"""Sets the repository of this ShowRepoDomainsResponse.
 
         镜像仓库
 
@@ -146,7 +146,7 @@ class ShowRepoDomainsResponse:
 
     @property
     def access_domain(self):
-        """Gets the access_domain of this ShowRepoDomainsResponse.
+        r"""Gets the access_domain of this ShowRepoDomainsResponse.
 
         共享租户名
 
@@ -157,7 +157,7 @@ class ShowRepoDomainsResponse:
 
     @access_domain.setter
     def access_domain(self, access_domain):
-        """Sets the access_domain of this ShowRepoDomainsResponse.
+        r"""Sets the access_domain of this ShowRepoDomainsResponse.
 
         共享租户名
 
@@ -168,7 +168,7 @@ class ShowRepoDomainsResponse:
 
     @property
     def permit(self):
-        """Gets the permit of this ShowRepoDomainsResponse.
+        r"""Gets the permit of this ShowRepoDomainsResponse.
 
         权限
 
@@ -179,7 +179,7 @@ class ShowRepoDomainsResponse:
 
     @permit.setter
     def permit(self, permit):
-        """Sets the permit of this ShowRepoDomainsResponse.
+        r"""Sets the permit of this ShowRepoDomainsResponse.
 
         权限
 
@@ -190,7 +190,7 @@ class ShowRepoDomainsResponse:
 
     @property
     def deadline(self):
-        """Gets the deadline of this ShowRepoDomainsResponse.
+        r"""Gets the deadline of this ShowRepoDomainsResponse.
 
         截止时间
 
@@ -201,7 +201,7 @@ class ShowRepoDomainsResponse:
 
     @deadline.setter
     def deadline(self, deadline):
-        """Sets the deadline of this ShowRepoDomainsResponse.
+        r"""Sets the deadline of this ShowRepoDomainsResponse.
 
         截止时间
 
@@ -212,7 +212,7 @@ class ShowRepoDomainsResponse:
 
     @property
     def description(self):
-        """Gets the description of this ShowRepoDomainsResponse.
+        r"""Gets the description of this ShowRepoDomainsResponse.
 
         描述
 
@@ -223,7 +223,7 @@ class ShowRepoDomainsResponse:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowRepoDomainsResponse.
+        r"""Sets the description of this ShowRepoDomainsResponse.
 
         描述
 
@@ -234,7 +234,7 @@ class ShowRepoDomainsResponse:
 
     @property
     def creator_id(self):
-        """Gets the creator_id of this ShowRepoDomainsResponse.
+        r"""Gets the creator_id of this ShowRepoDomainsResponse.
 
         创建者ID
 
@@ -245,7 +245,7 @@ class ShowRepoDomainsResponse:
 
     @creator_id.setter
     def creator_id(self, creator_id):
-        """Sets the creator_id of this ShowRepoDomainsResponse.
+        r"""Sets the creator_id of this ShowRepoDomainsResponse.
 
         创建者ID
 
@@ -256,7 +256,7 @@ class ShowRepoDomainsResponse:
 
     @property
     def creator_name(self):
-        """Gets the creator_name of this ShowRepoDomainsResponse.
+        r"""Gets the creator_name of this ShowRepoDomainsResponse.
 
         创建者名称
 
@@ -267,7 +267,7 @@ class ShowRepoDomainsResponse:
 
     @creator_name.setter
     def creator_name(self, creator_name):
-        """Sets the creator_name of this ShowRepoDomainsResponse.
+        r"""Sets the creator_name of this ShowRepoDomainsResponse.
 
         创建者名称
 
@@ -278,7 +278,7 @@ class ShowRepoDomainsResponse:
 
     @property
     def created(self):
-        """Gets the created of this ShowRepoDomainsResponse.
+        r"""Gets the created of this ShowRepoDomainsResponse.
 
         镜像创建时间，UTC时间格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
 
@@ -289,7 +289,7 @@ class ShowRepoDomainsResponse:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this ShowRepoDomainsResponse.
+        r"""Sets the created of this ShowRepoDomainsResponse.
 
         镜像创建时间，UTC时间格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
 
@@ -300,7 +300,7 @@ class ShowRepoDomainsResponse:
 
     @property
     def updated(self):
-        """Gets the updated of this ShowRepoDomainsResponse.
+        r"""Gets the updated of this ShowRepoDomainsResponse.
 
         镜像更新时间，UTC时间格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
 
@@ -311,7 +311,7 @@ class ShowRepoDomainsResponse:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ShowRepoDomainsResponse.
+        r"""Sets the updated of this ShowRepoDomainsResponse.
 
         镜像更新时间，UTC时间格式，时间为UTC标准时间，用户需要根据本地时间计算偏移量；如东8区需要+8:00
 
@@ -322,7 +322,7 @@ class ShowRepoDomainsResponse:
 
     @property
     def status(self):
-        """Gets the status of this ShowRepoDomainsResponse.
+        r"""Gets the status of this ShowRepoDomainsResponse.
 
         是否过期：true:有效；false:过期
 
@@ -333,7 +333,7 @@ class ShowRepoDomainsResponse:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowRepoDomainsResponse.
+        r"""Sets the status of this ShowRepoDomainsResponse.
 
         是否过期：true:有效；false:过期
 

@@ -144,7 +144,7 @@ class GlanceUpdateImageResponse(SdkResponse):
     }
 
     def __init__(self, backup_id=None, data_origin=None, description=None, image_size=None, image_source_type=None, imagetype=None, isregistered=None, originalimagename=None, os_bit=None, os_type=None, os_version=None, platform=None, productcode=None, support_diskintensive=None, support_highperformance=None, support_kvm=None, support_kvm_gpu_type=None, support_kvm_infiniband=None, support_largememory=None, support_xen=None, support_xen_gpu_type=None, support_xen_hana=None, checksum=None, container_format=None, created_at=None, disk_format=None, file=None, id=None, min_disk=None, min_ram=None, name=None, owner=None, protected=None, schema=None, _self=None, size=None, status=None, tags=None, updated_at=None, virtual_env_type=None, virtual_size=None, visibility=None, support_fc_inject=None, enterprise_project_id=None, hw_firmware_type=None, support_arm=None, is_offshelved=None, lazyloading=None, os_feature_list=None, root_origin=None, sequence_num=None, support_agent_list=None, system__cmkid=None, active_at=None, hw_vif_multiqueue_enabled=None, max_ram=None, image_location=None, is_config_init=None, account_code=None, support_amd=None):
-        """GlanceUpdateImageResponse
+        r"""GlanceUpdateImageResponse
 
         The model defined in huaweicloud sdk
 
@@ -457,7 +457,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this GlanceUpdateImageResponse.
+        r"""Gets the backup_id of this GlanceUpdateImageResponse.
 
         备份ID。如果是备份创建的镜像，则填写为备份的ID，否则为空。
 
@@ -468,7 +468,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this GlanceUpdateImageResponse.
+        r"""Sets the backup_id of this GlanceUpdateImageResponse.
 
         备份ID。如果是备份创建的镜像，则填写为备份的ID，否则为空。
 
@@ -479,7 +479,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def data_origin(self):
-        """Gets the data_origin of this GlanceUpdateImageResponse.
+        r"""Gets the data_origin of this GlanceUpdateImageResponse.
 
         镜像来源。公共镜像为空。
 
@@ -490,7 +490,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @data_origin.setter
     def data_origin(self, data_origin):
-        """Sets the data_origin of this GlanceUpdateImageResponse.
+        r"""Sets the data_origin of this GlanceUpdateImageResponse.
 
         镜像来源。公共镜像为空。
 
@@ -501,7 +501,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this GlanceUpdateImageResponse.
+        r"""Gets the description of this GlanceUpdateImageResponse.
 
         镜像描述信息。
 
@@ -512,7 +512,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this GlanceUpdateImageResponse.
+        r"""Sets the description of this GlanceUpdateImageResponse.
 
         镜像描述信息。
 
@@ -523,7 +523,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def image_size(self):
-        """Gets the image_size of this GlanceUpdateImageResponse.
+        r"""Gets the image_size of this GlanceUpdateImageResponse.
 
         镜像文件的大小，单位为字节。目前取值为大于0的字符串。
 
@@ -534,7 +534,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @image_size.setter
     def image_size(self, image_size):
-        """Sets the image_size of this GlanceUpdateImageResponse.
+        r"""Sets the image_size of this GlanceUpdateImageResponse.
 
         镜像文件的大小，单位为字节。目前取值为大于0的字符串。
 
@@ -545,7 +545,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def image_source_type(self):
-        """Gets the image_source_type of this GlanceUpdateImageResponse.
+        r"""Gets the image_source_type of this GlanceUpdateImageResponse.
 
         镜像后端存储类型，目前只支持uds
 
@@ -556,7 +556,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @image_source_type.setter
     def image_source_type(self, image_source_type):
-        """Sets the image_source_type of this GlanceUpdateImageResponse.
+        r"""Sets the image_source_type of this GlanceUpdateImageResponse.
 
         镜像后端存储类型，目前只支持uds
 
@@ -567,7 +567,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def imagetype(self):
-        """Gets the imagetype of this GlanceUpdateImageResponse.
+        r"""Gets the imagetype of this GlanceUpdateImageResponse.
 
         镜像类型，目前支持以下类型：公共镜像：gold私有镜像：private共享镜像：shared 市场镜像：market
 
@@ -578,7 +578,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @imagetype.setter
     def imagetype(self, imagetype):
-        """Sets the imagetype of this GlanceUpdateImageResponse.
+        r"""Sets the imagetype of this GlanceUpdateImageResponse.
 
         镜像类型，目前支持以下类型：公共镜像：gold私有镜像：private共享镜像：shared 市场镜像：market
 
@@ -589,7 +589,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def isregistered(self):
-        """Gets the isregistered of this GlanceUpdateImageResponse.
+        r"""Gets the isregistered of this GlanceUpdateImageResponse.
 
         是否是注册过的镜像，取值为“true”或者“false”。
 
@@ -600,7 +600,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @isregistered.setter
     def isregistered(self, isregistered):
-        """Sets the isregistered of this GlanceUpdateImageResponse.
+        r"""Sets the isregistered of this GlanceUpdateImageResponse.
 
         是否是注册过的镜像，取值为“true”或者“false”。
 
@@ -611,7 +611,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def originalimagename(self):
-        """Gets the originalimagename of this GlanceUpdateImageResponse.
+        r"""Gets the originalimagename of this GlanceUpdateImageResponse.
 
         父镜像ID。公共镜像或通过文件创建的私有镜像，取值为空。
 
@@ -622,7 +622,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @originalimagename.setter
     def originalimagename(self, originalimagename):
-        """Sets the originalimagename of this GlanceUpdateImageResponse.
+        r"""Sets the originalimagename of this GlanceUpdateImageResponse.
 
         父镜像ID。公共镜像或通过文件创建的私有镜像，取值为空。
 
@@ -633,7 +633,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def os_bit(self):
-        """Gets the os_bit of this GlanceUpdateImageResponse.
+        r"""Gets the os_bit of this GlanceUpdateImageResponse.
 
         操作系统位数，一般取值为“32”或者“64”。
 
@@ -644,7 +644,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @os_bit.setter
     def os_bit(self, os_bit):
-        """Sets the os_bit of this GlanceUpdateImageResponse.
+        r"""Sets the os_bit of this GlanceUpdateImageResponse.
 
         操作系统位数，一般取值为“32”或者“64”。
 
@@ -655,7 +655,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def os_type(self):
-        """Gets the os_type of this GlanceUpdateImageResponse.
+        r"""Gets the os_type of this GlanceUpdateImageResponse.
 
         操作系统类型，目前取值Linux， Windows，Other。
 
@@ -666,7 +666,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this GlanceUpdateImageResponse.
+        r"""Sets the os_type of this GlanceUpdateImageResponse.
 
         操作系统类型，目前取值Linux， Windows，Other。
 
@@ -677,7 +677,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def os_version(self):
-        """Gets the os_version of this GlanceUpdateImageResponse.
+        r"""Gets the os_version of this GlanceUpdateImageResponse.
 
         操作系统具体版本。
 
@@ -688,7 +688,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @os_version.setter
     def os_version(self, os_version):
-        """Sets the os_version of this GlanceUpdateImageResponse.
+        r"""Sets the os_version of this GlanceUpdateImageResponse.
 
         操作系统具体版本。
 
@@ -699,7 +699,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def platform(self):
-        """Gets the platform of this GlanceUpdateImageResponse.
+        r"""Gets the platform of this GlanceUpdateImageResponse.
 
         镜像平台分类，取值为Windows，Ubuntu，RedHat，SUSE，CentOS，Debian，OpenSUSE, Oracle Linux，Fedora，Other，CoreOS和EulerOS。
 
@@ -710,7 +710,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @platform.setter
     def platform(self, platform):
-        """Sets the platform of this GlanceUpdateImageResponse.
+        r"""Sets the platform of this GlanceUpdateImageResponse.
 
         镜像平台分类，取值为Windows，Ubuntu，RedHat，SUSE，CentOS，Debian，OpenSUSE, Oracle Linux，Fedora，Other，CoreOS和EulerOS。
 
@@ -721,7 +721,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def productcode(self):
-        """Gets the productcode of this GlanceUpdateImageResponse.
+        r"""Gets the productcode of this GlanceUpdateImageResponse.
 
         市场镜像的产品ID。
 
@@ -732,7 +732,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @productcode.setter
     def productcode(self, productcode):
-        """Sets the productcode of this GlanceUpdateImageResponse.
+        r"""Sets the productcode of this GlanceUpdateImageResponse.
 
         市场镜像的产品ID。
 
@@ -743,7 +743,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def support_diskintensive(self):
-        """Gets the support_diskintensive of this GlanceUpdateImageResponse.
+        r"""Gets the support_diskintensive of this GlanceUpdateImageResponse.
 
         表示该镜像支持密集存储。如果镜像支持密集存储性能，则值为true，否则无需增加该属性。
 
@@ -754,7 +754,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @support_diskintensive.setter
     def support_diskintensive(self, support_diskintensive):
-        """Sets the support_diskintensive of this GlanceUpdateImageResponse.
+        r"""Sets the support_diskintensive of this GlanceUpdateImageResponse.
 
         表示该镜像支持密集存储。如果镜像支持密集存储性能，则值为true，否则无需增加该属性。
 
@@ -765,7 +765,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def support_highperformance(self):
-        """Gets the support_highperformance of this GlanceUpdateImageResponse.
+        r"""Gets the support_highperformance of this GlanceUpdateImageResponse.
 
         表示该镜像支持高计算性能。如果镜像支持高计算性能，则值为true，否则无需增加该属性。
 
@@ -776,7 +776,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @support_highperformance.setter
     def support_highperformance(self, support_highperformance):
-        """Sets the support_highperformance of this GlanceUpdateImageResponse.
+        r"""Sets the support_highperformance of this GlanceUpdateImageResponse.
 
         表示该镜像支持高计算性能。如果镜像支持高计算性能，则值为true，否则无需增加该属性。
 
@@ -787,7 +787,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def support_kvm(self):
-        """Gets the support_kvm of this GlanceUpdateImageResponse.
+        r"""Gets the support_kvm of this GlanceUpdateImageResponse.
 
         如果镜像支持KVM，取值为true，否则无需增加该属性。
 
@@ -798,7 +798,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @support_kvm.setter
     def support_kvm(self, support_kvm):
-        """Sets the support_kvm of this GlanceUpdateImageResponse.
+        r"""Sets the support_kvm of this GlanceUpdateImageResponse.
 
         如果镜像支持KVM，取值为true，否则无需增加该属性。
 
@@ -809,7 +809,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def support_kvm_gpu_type(self):
-        """Gets the support_kvm_gpu_type of this GlanceUpdateImageResponse.
+        r"""Gets the support_kvm_gpu_type of this GlanceUpdateImageResponse.
 
         表示该镜像是支持KVM虚拟化平台下的GPU类型，如果不支持KVM虚拟机下GPU类型，无需添加该属性。该属性与“__support_xen”和“__support_kvm”属性不共存。
 
@@ -820,7 +820,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @support_kvm_gpu_type.setter
     def support_kvm_gpu_type(self, support_kvm_gpu_type):
-        """Sets the support_kvm_gpu_type of this GlanceUpdateImageResponse.
+        r"""Sets the support_kvm_gpu_type of this GlanceUpdateImageResponse.
 
         表示该镜像是支持KVM虚拟化平台下的GPU类型，如果不支持KVM虚拟机下GPU类型，无需添加该属性。该属性与“__support_xen”和“__support_kvm”属性不共存。
 
@@ -831,7 +831,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def support_kvm_infiniband(self):
-        """Gets the support_kvm_infiniband of this GlanceUpdateImageResponse.
+        r"""Gets the support_kvm_infiniband of this GlanceUpdateImageResponse.
 
         如果镜像支持KVM虚拟化下Infiniband网卡类型，取值为true。否则，无需添加该属性。该属性与“__support_xen”属性不共存。
 
@@ -842,7 +842,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @support_kvm_infiniband.setter
     def support_kvm_infiniband(self, support_kvm_infiniband):
-        """Sets the support_kvm_infiniband of this GlanceUpdateImageResponse.
+        r"""Sets the support_kvm_infiniband of this GlanceUpdateImageResponse.
 
         如果镜像支持KVM虚拟化下Infiniband网卡类型，取值为true。否则，无需添加该属性。该属性与“__support_xen”属性不共存。
 
@@ -853,7 +853,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def support_largememory(self):
-        """Gets the support_largememory of this GlanceUpdateImageResponse.
+        r"""Gets the support_largememory of this GlanceUpdateImageResponse.
 
         表示该镜像支持超大内存。如果镜像支持超大内存，取值为true，否则无需增加该属性
 
@@ -864,7 +864,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @support_largememory.setter
     def support_largememory(self, support_largememory):
-        """Sets the support_largememory of this GlanceUpdateImageResponse.
+        r"""Sets the support_largememory of this GlanceUpdateImageResponse.
 
         表示该镜像支持超大内存。如果镜像支持超大内存，取值为true，否则无需增加该属性
 
@@ -875,7 +875,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def support_xen(self):
-        """Gets the support_xen of this GlanceUpdateImageResponse.
+        r"""Gets the support_xen of this GlanceUpdateImageResponse.
 
         如果镜像支持XEN，取值为true，否则无需增加该属性。
 
@@ -886,7 +886,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @support_xen.setter
     def support_xen(self, support_xen):
-        """Sets the support_xen of this GlanceUpdateImageResponse.
+        r"""Sets the support_xen of this GlanceUpdateImageResponse.
 
         如果镜像支持XEN，取值为true，否则无需增加该属性。
 
@@ -897,7 +897,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def support_xen_gpu_type(self):
-        """Gets the support_xen_gpu_type of this GlanceUpdateImageResponse.
+        r"""Gets the support_xen_gpu_type of this GlanceUpdateImageResponse.
 
         表示该镜像是支持XEN虚拟化平台下的GPU优化类型，取值参考8.10-表 镜像支持的GPU类型说明。镜像操作系统类型请参考8.10-表 镜像类型。如果不支持XEN虚拟化下GPU类型，无需添加该属性。该属性与“__support_xen”和“__support_kvm”属性不共存。
 
@@ -908,7 +908,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @support_xen_gpu_type.setter
     def support_xen_gpu_type(self, support_xen_gpu_type):
-        """Sets the support_xen_gpu_type of this GlanceUpdateImageResponse.
+        r"""Sets the support_xen_gpu_type of this GlanceUpdateImageResponse.
 
         表示该镜像是支持XEN虚拟化平台下的GPU优化类型，取值参考8.10-表 镜像支持的GPU类型说明。镜像操作系统类型请参考8.10-表 镜像类型。如果不支持XEN虚拟化下GPU类型，无需添加该属性。该属性与“__support_xen”和“__support_kvm”属性不共存。
 
@@ -919,7 +919,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def support_xen_hana(self):
-        """Gets the support_xen_hana of this GlanceUpdateImageResponse.
+        r"""Gets the support_xen_hana of this GlanceUpdateImageResponse.
 
         如果镜像支持XEN虚拟化下HANA类型，取值为true。否则，无需添加该属性。该属性与“__support_xen”和“__support_kvm”属性不共存。
 
@@ -930,7 +930,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @support_xen_hana.setter
     def support_xen_hana(self, support_xen_hana):
-        """Sets the support_xen_hana of this GlanceUpdateImageResponse.
+        r"""Sets the support_xen_hana of this GlanceUpdateImageResponse.
 
         如果镜像支持XEN虚拟化下HANA类型，取值为true。否则，无需添加该属性。该属性与“__support_xen”和“__support_kvm”属性不共存。
 
@@ -941,7 +941,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def checksum(self):
-        """Gets the checksum of this GlanceUpdateImageResponse.
+        r"""Gets the checksum of this GlanceUpdateImageResponse.
 
         目前暂时不使用。
 
@@ -952,7 +952,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @checksum.setter
     def checksum(self, checksum):
-        """Sets the checksum of this GlanceUpdateImageResponse.
+        r"""Sets the checksum of this GlanceUpdateImageResponse.
 
         目前暂时不使用。
 
@@ -963,7 +963,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def container_format(self):
-        """Gets the container_format of this GlanceUpdateImageResponse.
+        r"""Gets the container_format of this GlanceUpdateImageResponse.
 
         容器类型。
 
@@ -974,7 +974,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @container_format.setter
     def container_format(self, container_format):
-        """Sets the container_format of this GlanceUpdateImageResponse.
+        r"""Sets the container_format of this GlanceUpdateImageResponse.
 
         容器类型。
 
@@ -985,7 +985,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this GlanceUpdateImageResponse.
+        r"""Gets the created_at of this GlanceUpdateImageResponse.
 
         创建时间。格式为UTC时间。
 
@@ -996,7 +996,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this GlanceUpdateImageResponse.
+        r"""Sets the created_at of this GlanceUpdateImageResponse.
 
         创建时间。格式为UTC时间。
 
@@ -1007,7 +1007,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def disk_format(self):
-        """Gets the disk_format of this GlanceUpdateImageResponse.
+        r"""Gets the disk_format of this GlanceUpdateImageResponse.
 
         镜像的格式，目前支持vhd，zvhd、raw，qcow2,zvhd2。默认值是vhd。
 
@@ -1018,7 +1018,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @disk_format.setter
     def disk_format(self, disk_format):
-        """Sets the disk_format of this GlanceUpdateImageResponse.
+        r"""Sets the disk_format of this GlanceUpdateImageResponse.
 
         镜像的格式，目前支持vhd，zvhd、raw，qcow2,zvhd2。默认值是vhd。
 
@@ -1029,7 +1029,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def file(self):
-        """Gets the file of this GlanceUpdateImageResponse.
+        r"""Gets the file of this GlanceUpdateImageResponse.
 
         镜像文件下载和上传链接。
 
@@ -1040,7 +1040,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @file.setter
     def file(self, file):
-        """Sets the file of this GlanceUpdateImageResponse.
+        r"""Sets the file of this GlanceUpdateImageResponse.
 
         镜像文件下载和上传链接。
 
@@ -1051,7 +1051,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this GlanceUpdateImageResponse.
+        r"""Gets the id of this GlanceUpdateImageResponse.
 
         镜像ID。
 
@@ -1062,7 +1062,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this GlanceUpdateImageResponse.
+        r"""Sets the id of this GlanceUpdateImageResponse.
 
         镜像ID。
 
@@ -1073,7 +1073,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def min_disk(self):
-        """Gets the min_disk of this GlanceUpdateImageResponse.
+        r"""Gets the min_disk of this GlanceUpdateImageResponse.
 
         镜像运行需要的最小磁盘容量，单位为GB 
 
@@ -1084,7 +1084,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @min_disk.setter
     def min_disk(self, min_disk):
-        """Sets the min_disk of this GlanceUpdateImageResponse.
+        r"""Sets the min_disk of this GlanceUpdateImageResponse.
 
         镜像运行需要的最小磁盘容量，单位为GB 
 
@@ -1095,7 +1095,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def min_ram(self):
-        """Gets the min_ram of this GlanceUpdateImageResponse.
+        r"""Gets the min_ram of this GlanceUpdateImageResponse.
 
         镜像运行最小内存，单位为MB。
 
@@ -1106,7 +1106,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @min_ram.setter
     def min_ram(self, min_ram):
-        """Sets the min_ram of this GlanceUpdateImageResponse.
+        r"""Sets the min_ram of this GlanceUpdateImageResponse.
 
         镜像运行最小内存，单位为MB。
 
@@ -1117,7 +1117,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this GlanceUpdateImageResponse.
+        r"""Gets the name of this GlanceUpdateImageResponse.
 
         镜像名称。
 
@@ -1128,7 +1128,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GlanceUpdateImageResponse.
+        r"""Sets the name of this GlanceUpdateImageResponse.
 
         镜像名称。
 
@@ -1139,7 +1139,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def owner(self):
-        """Gets the owner of this GlanceUpdateImageResponse.
+        r"""Gets the owner of this GlanceUpdateImageResponse.
 
         镜像属于哪个租户。
 
@@ -1150,7 +1150,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this GlanceUpdateImageResponse.
+        r"""Sets the owner of this GlanceUpdateImageResponse.
 
         镜像属于哪个租户。
 
@@ -1161,7 +1161,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def protected(self):
-        """Gets the protected of this GlanceUpdateImageResponse.
+        r"""Gets the protected of this GlanceUpdateImageResponse.
 
         是否是受保护的，受保护的镜像不允许删除。取值为true或false。
 
@@ -1172,7 +1172,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @protected.setter
     def protected(self, protected):
-        """Sets the protected of this GlanceUpdateImageResponse.
+        r"""Sets the protected of this GlanceUpdateImageResponse.
 
         是否是受保护的，受保护的镜像不允许删除。取值为true或false。
 
@@ -1183,7 +1183,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def schema(self):
-        """Gets the schema of this GlanceUpdateImageResponse.
+        r"""Gets the schema of this GlanceUpdateImageResponse.
 
         镜像视图。
 
@@ -1194,7 +1194,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this GlanceUpdateImageResponse.
+        r"""Sets the schema of this GlanceUpdateImageResponse.
 
         镜像视图。
 
@@ -1205,7 +1205,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def _self(self):
-        """Gets the _self of this GlanceUpdateImageResponse.
+        r"""Gets the _self of this GlanceUpdateImageResponse.
 
         镜像链接信息。
 
@@ -1216,7 +1216,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @_self.setter
     def _self(self, _self):
-        """Sets the _self of this GlanceUpdateImageResponse.
+        r"""Sets the _self of this GlanceUpdateImageResponse.
 
         镜像链接信息。
 
@@ -1227,7 +1227,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this GlanceUpdateImageResponse.
+        r"""Gets the size of this GlanceUpdateImageResponse.
 
         目前暂时不使用。
 
@@ -1238,7 +1238,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this GlanceUpdateImageResponse.
+        r"""Sets the size of this GlanceUpdateImageResponse.
 
         目前暂时不使用。
 
@@ -1249,7 +1249,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this GlanceUpdateImageResponse.
+        r"""Gets the status of this GlanceUpdateImageResponse.
 
         镜像状态。取值如下：queued：表示镜像元数据已经创建成功，等待上传镜像文件。saving：表示镜像正在上传文件到后端存储。deleted：表示镜像已经删除。killed：表示镜像上传错误。active：表示镜像可以正常使用。
 
@@ -1260,7 +1260,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this GlanceUpdateImageResponse.
+        r"""Sets the status of this GlanceUpdateImageResponse.
 
         镜像状态。取值如下：queued：表示镜像元数据已经创建成功，等待上传镜像文件。saving：表示镜像正在上传文件到后端存储。deleted：表示镜像已经删除。killed：表示镜像上传错误。active：表示镜像可以正常使用。
 
@@ -1271,7 +1271,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this GlanceUpdateImageResponse.
+        r"""Gets the tags of this GlanceUpdateImageResponse.
 
         镜像标签列表，提供用户可以自定义管理私有镜像的能力。用户可以通过镜像标签接口为每个镜像增加不同的标签，在查询接口中可以根据标签进行过滤。
 
@@ -1282,7 +1282,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this GlanceUpdateImageResponse.
+        r"""Sets the tags of this GlanceUpdateImageResponse.
 
         镜像标签列表，提供用户可以自定义管理私有镜像的能力。用户可以通过镜像标签接口为每个镜像增加不同的标签，在查询接口中可以根据标签进行过滤。
 
@@ -1293,7 +1293,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this GlanceUpdateImageResponse.
+        r"""Gets the updated_at of this GlanceUpdateImageResponse.
 
         更新时间。格式为UTC时间。
 
@@ -1304,7 +1304,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this GlanceUpdateImageResponse.
+        r"""Sets the updated_at of this GlanceUpdateImageResponse.
 
         更新时间。格式为UTC时间。
 
@@ -1315,7 +1315,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def virtual_env_type(self):
-        """Gets the virtual_env_type of this GlanceUpdateImageResponse.
+        r"""Gets the virtual_env_type of this GlanceUpdateImageResponse.
 
         镜像使用环境类型：FusionCompute，Ironic，DataImage。
 
@@ -1326,7 +1326,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @virtual_env_type.setter
     def virtual_env_type(self, virtual_env_type):
-        """Sets the virtual_env_type of this GlanceUpdateImageResponse.
+        r"""Sets the virtual_env_type of this GlanceUpdateImageResponse.
 
         镜像使用环境类型：FusionCompute，Ironic，DataImage。
 
@@ -1337,7 +1337,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def virtual_size(self):
-        """Gets the virtual_size of this GlanceUpdateImageResponse.
+        r"""Gets the virtual_size of this GlanceUpdateImageResponse.
 
         目前暂时不使用。
 
@@ -1348,7 +1348,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @virtual_size.setter
     def virtual_size(self, virtual_size):
-        """Sets the virtual_size of this GlanceUpdateImageResponse.
+        r"""Sets the virtual_size of this GlanceUpdateImageResponse.
 
         目前暂时不使用。
 
@@ -1359,7 +1359,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def visibility(self):
-        """Gets the visibility of this GlanceUpdateImageResponse.
+        r"""Gets the visibility of this GlanceUpdateImageResponse.
 
         是否被其他租户可见，取值如下：private：私有镜像public：公共镜像shared：共享镜像
 
@@ -1370,7 +1370,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @visibility.setter
     def visibility(self, visibility):
-        """Sets the visibility of this GlanceUpdateImageResponse.
+        r"""Sets the visibility of this GlanceUpdateImageResponse.
 
         是否被其他租户可见，取值如下：private：私有镜像public：公共镜像shared：共享镜像
 
@@ -1381,7 +1381,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def support_fc_inject(self):
-        """Gets the support_fc_inject of this GlanceUpdateImageResponse.
+        r"""Gets the support_fc_inject of this GlanceUpdateImageResponse.
 
         表示当前镜像支持CloudInit密码/密钥注入方式，建议设置为\"true\"或者\"false\"。如果取值为\"true\"，表示该镜像不支持CloudInit注入密码/密钥，其他取值时表示支持CloudInit注入密钥/密码。
 
@@ -1392,7 +1392,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @support_fc_inject.setter
     def support_fc_inject(self, support_fc_inject):
-        """Sets the support_fc_inject of this GlanceUpdateImageResponse.
+        r"""Sets the support_fc_inject of this GlanceUpdateImageResponse.
 
         表示当前镜像支持CloudInit密码/密钥注入方式，建议设置为\"true\"或者\"false\"。如果取值为\"true\"，表示该镜像不支持CloudInit注入密码/密钥，其他取值时表示支持CloudInit注入密钥/密码。
 
@@ -1403,7 +1403,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this GlanceUpdateImageResponse.
+        r"""Gets the enterprise_project_id of this GlanceUpdateImageResponse.
 
         表示当前镜像所属的企业项目。 取值为0或无该值，表示属于default企业项目。 取值为UUID，表示属于该UUID对应的企业项目。 关于企业项目ID的获取及企业项目特性的详细信息，请参考《企业管理用户指南》。
 
@@ -1414,7 +1414,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this GlanceUpdateImageResponse.
+        r"""Sets the enterprise_project_id of this GlanceUpdateImageResponse.
 
         表示当前镜像所属的企业项目。 取值为0或无该值，表示属于default企业项目。 取值为UUID，表示属于该UUID对应的企业项目。 关于企业项目ID的获取及企业项目特性的详细信息，请参考《企业管理用户指南》。
 
@@ -1425,7 +1425,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def hw_firmware_type(self):
-        """Gets the hw_firmware_type of this GlanceUpdateImageResponse.
+        r"""Gets the hw_firmware_type of this GlanceUpdateImageResponse.
 
         云主机云服务器的启动方式。目前支持： bios：表示bios引导启动。 uefi：表示uefi引导启动。
 
@@ -1436,7 +1436,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @hw_firmware_type.setter
     def hw_firmware_type(self, hw_firmware_type):
-        """Sets the hw_firmware_type of this GlanceUpdateImageResponse.
+        r"""Sets the hw_firmware_type of this GlanceUpdateImageResponse.
 
         云主机云服务器的启动方式。目前支持： bios：表示bios引导启动。 uefi：表示uefi引导启动。
 
@@ -1447,7 +1447,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def support_arm(self):
-        """Gets the support_arm of this GlanceUpdateImageResponse.
+        r"""Gets the support_arm of this GlanceUpdateImageResponse.
 
         是否为ARM架构类型的镜像，取值为“true”或者“false”。
 
@@ -1458,7 +1458,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @support_arm.setter
     def support_arm(self, support_arm):
-        """Sets the support_arm of this GlanceUpdateImageResponse.
+        r"""Sets the support_arm of this GlanceUpdateImageResponse.
 
         是否为ARM架构类型的镜像，取值为“true”或者“false”。
 
@@ -1469,7 +1469,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def is_offshelved(self):
-        """Gets the is_offshelved of this GlanceUpdateImageResponse.
+        r"""Gets the is_offshelved of this GlanceUpdateImageResponse.
 
         表示当前市场镜像是否下架。 true：已下架 false：未下架
 
@@ -1480,7 +1480,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @is_offshelved.setter
     def is_offshelved(self, is_offshelved):
-        """Sets the is_offshelved of this GlanceUpdateImageResponse.
+        r"""Sets the is_offshelved of this GlanceUpdateImageResponse.
 
         表示当前市场镜像是否下架。 true：已下架 false：未下架
 
@@ -1491,7 +1491,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def lazyloading(self):
-        """Gets the lazyloading of this GlanceUpdateImageResponse.
+        r"""Gets the lazyloading of this GlanceUpdateImageResponse.
 
         镜像是否支持延迟加载。取值为True或False。
 
@@ -1502,7 +1502,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @lazyloading.setter
     def lazyloading(self, lazyloading):
-        """Sets the lazyloading of this GlanceUpdateImageResponse.
+        r"""Sets the lazyloading of this GlanceUpdateImageResponse.
 
         镜像是否支持延迟加载。取值为True或False。
 
@@ -1513,7 +1513,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def os_feature_list(self):
-        """Gets the os_feature_list of this GlanceUpdateImageResponse.
+        r"""Gets the os_feature_list of this GlanceUpdateImageResponse.
 
         镜像附加属性。该属性采用JSON格式来标识镜像支持的高级特性清单。
 
@@ -1524,7 +1524,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @os_feature_list.setter
     def os_feature_list(self, os_feature_list):
-        """Sets the os_feature_list of this GlanceUpdateImageResponse.
+        r"""Sets the os_feature_list of this GlanceUpdateImageResponse.
 
         镜像附加属性。该属性采用JSON格式来标识镜像支持的高级特性清单。
 
@@ -1535,7 +1535,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def root_origin(self):
-        """Gets the root_origin of this GlanceUpdateImageResponse.
+        r"""Gets the root_origin of this GlanceUpdateImageResponse.
 
         表示当前镜像来源是从外部导入。取值：file。
 
@@ -1546,7 +1546,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @root_origin.setter
     def root_origin(self, root_origin):
-        """Sets the root_origin of this GlanceUpdateImageResponse.
+        r"""Sets the root_origin of this GlanceUpdateImageResponse.
 
         表示当前镜像来源是从外部导入。取值：file。
 
@@ -1557,7 +1557,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def sequence_num(self):
-        """Gets the sequence_num of this GlanceUpdateImageResponse.
+        r"""Gets the sequence_num of this GlanceUpdateImageResponse.
 
         目前暂时不用
 
@@ -1568,7 +1568,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @sequence_num.setter
     def sequence_num(self, sequence_num):
-        """Sets the sequence_num of this GlanceUpdateImageResponse.
+        r"""Sets the sequence_num of this GlanceUpdateImageResponse.
 
         目前暂时不用
 
@@ -1579,7 +1579,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def support_agent_list(self):
-        """Gets the support_agent_list of this GlanceUpdateImageResponse.
+        r"""Gets the support_agent_list of this GlanceUpdateImageResponse.
 
         镜像是否支持企业主机安全或主机监控。 hss：企业主机安全 ces：主机监控
 
@@ -1590,7 +1590,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @support_agent_list.setter
     def support_agent_list(self, support_agent_list):
-        """Sets the support_agent_list of this GlanceUpdateImageResponse.
+        r"""Sets the support_agent_list of this GlanceUpdateImageResponse.
 
         镜像是否支持企业主机安全或主机监控。 hss：企业主机安全 ces：主机监控
 
@@ -1601,7 +1601,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def system__cmkid(self):
-        """Gets the system__cmkid of this GlanceUpdateImageResponse.
+        r"""Gets the system__cmkid of this GlanceUpdateImageResponse.
 
         加密镜像所使用的密钥ID。
 
@@ -1612,7 +1612,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @system__cmkid.setter
     def system__cmkid(self, system__cmkid):
-        """Sets the system__cmkid of this GlanceUpdateImageResponse.
+        r"""Sets the system__cmkid of this GlanceUpdateImageResponse.
 
         加密镜像所使用的密钥ID。
 
@@ -1623,7 +1623,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def active_at(self):
-        """Gets the active_at of this GlanceUpdateImageResponse.
+        r"""Gets the active_at of this GlanceUpdateImageResponse.
 
         镜像状态变为正常的时间。
 
@@ -1634,7 +1634,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @active_at.setter
     def active_at(self, active_at):
-        """Sets the active_at of this GlanceUpdateImageResponse.
+        r"""Sets the active_at of this GlanceUpdateImageResponse.
 
         镜像状态变为正常的时间。
 
@@ -1645,7 +1645,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def hw_vif_multiqueue_enabled(self):
-        """Gets the hw_vif_multiqueue_enabled of this GlanceUpdateImageResponse.
+        r"""Gets the hw_vif_multiqueue_enabled of this GlanceUpdateImageResponse.
 
         镜像是否支持网卡多队列。取值为true或者false。
 
@@ -1656,7 +1656,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @hw_vif_multiqueue_enabled.setter
     def hw_vif_multiqueue_enabled(self, hw_vif_multiqueue_enabled):
-        """Sets the hw_vif_multiqueue_enabled of this GlanceUpdateImageResponse.
+        r"""Sets the hw_vif_multiqueue_enabled of this GlanceUpdateImageResponse.
 
         镜像是否支持网卡多队列。取值为true或者false。
 
@@ -1667,7 +1667,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def max_ram(self):
-        """Gets the max_ram of this GlanceUpdateImageResponse.
+        r"""Gets the max_ram of this GlanceUpdateImageResponse.
 
         镜像支持的最大内存，单位为MB。取值可以参考云服务器规格限制，一般不设置。
 
@@ -1678,7 +1678,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @max_ram.setter
     def max_ram(self, max_ram):
-        """Sets the max_ram of this GlanceUpdateImageResponse.
+        r"""Sets the max_ram of this GlanceUpdateImageResponse.
 
         镜像支持的最大内存，单位为MB。取值可以参考云服务器规格限制，一般不设置。
 
@@ -1689,7 +1689,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def image_location(self):
-        """Gets the image_location of this GlanceUpdateImageResponse.
+        r"""Gets the image_location of this GlanceUpdateImageResponse.
 
         镜像的存储位置。
 
@@ -1700,7 +1700,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @image_location.setter
     def image_location(self, image_location):
-        """Sets the image_location of this GlanceUpdateImageResponse.
+        r"""Sets the image_location of this GlanceUpdateImageResponse.
 
         镜像的存储位置。
 
@@ -1711,7 +1711,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def is_config_init(self):
-        """Gets the is_config_init of this GlanceUpdateImageResponse.
+        r"""Gets the is_config_init of this GlanceUpdateImageResponse.
 
         是否完成了初始化配置。取值为true或false
 
@@ -1722,7 +1722,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @is_config_init.setter
     def is_config_init(self, is_config_init):
-        """Sets the is_config_init of this GlanceUpdateImageResponse.
+        r"""Sets the is_config_init of this GlanceUpdateImageResponse.
 
         是否完成了初始化配置。取值为true或false
 
@@ -1733,7 +1733,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def account_code(self):
-        """Gets the account_code of this GlanceUpdateImageResponse.
+        r"""Gets the account_code of this GlanceUpdateImageResponse.
 
         收费镜像标识。
 
@@ -1744,7 +1744,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @account_code.setter
     def account_code(self, account_code):
-        """Sets the account_code of this GlanceUpdateImageResponse.
+        r"""Sets the account_code of this GlanceUpdateImageResponse.
 
         收费镜像标识。
 
@@ -1755,7 +1755,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @property
     def support_amd(self):
-        """Gets the support_amd of this GlanceUpdateImageResponse.
+        r"""Gets the support_amd of this GlanceUpdateImageResponse.
 
         是否是AMD架构类型的镜像。取值为“true”或者“false”。
 
@@ -1766,7 +1766,7 @@ class GlanceUpdateImageResponse(SdkResponse):
 
     @support_amd.setter
     def support_amd(self, support_amd):
-        """Sets the support_amd of this GlanceUpdateImageResponse.
+        r"""Sets the support_amd of this GlanceUpdateImageResponse.
 
         是否是AMD架构类型的镜像。取值为“true”或者“false”。
 

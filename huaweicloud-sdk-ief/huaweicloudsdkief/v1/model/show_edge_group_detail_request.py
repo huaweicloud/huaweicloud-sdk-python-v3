@@ -27,7 +27,7 @@ class ShowEdgeGroupDetailRequest:
     }
 
     def __init__(self, ief_instance_id=None, group_id=None):
-        """ShowEdgeGroupDetailRequest
+        r"""ShowEdgeGroupDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowEdgeGroupDetailRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this ShowEdgeGroupDetailRequest.
+        r"""Gets the ief_instance_id of this ShowEdgeGroupDetailRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -60,7 +60,7 @@ class ShowEdgeGroupDetailRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this ShowEdgeGroupDetailRequest.
+        r"""Sets the ief_instance_id of this ShowEdgeGroupDetailRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -71,7 +71,7 @@ class ShowEdgeGroupDetailRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ShowEdgeGroupDetailRequest.
+        r"""Gets the group_id of this ShowEdgeGroupDetailRequest.
 
         边缘节点组ID
 
@@ -82,7 +82,7 @@ class ShowEdgeGroupDetailRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ShowEdgeGroupDetailRequest.
+        r"""Sets the group_id of this ShowEdgeGroupDetailRequest.
 
         边缘节点组ID
 

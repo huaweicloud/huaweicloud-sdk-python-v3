@@ -30,7 +30,7 @@ class ListOrchestrationsResponse(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, orchestrations=None):
-        """ListOrchestrationsResponse
+        r"""ListOrchestrationsResponse
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListOrchestrationsResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListOrchestrationsResponse.
+        r"""Gets the size of this ListOrchestrationsResponse.
 
         本次返回的列表长度
 
@@ -67,7 +67,7 @@ class ListOrchestrationsResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListOrchestrationsResponse.
+        r"""Sets the size of this ListOrchestrationsResponse.
 
         本次返回的列表长度
 
@@ -78,7 +78,7 @@ class ListOrchestrationsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListOrchestrationsResponse.
+        r"""Gets the total of this ListOrchestrationsResponse.
 
         满足条件的记录数
 
@@ -89,7 +89,7 @@ class ListOrchestrationsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListOrchestrationsResponse.
+        r"""Sets the total of this ListOrchestrationsResponse.
 
         满足条件的记录数
 
@@ -100,7 +100,7 @@ class ListOrchestrationsResponse(SdkResponse):
 
     @property
     def orchestrations(self):
-        """Gets the orchestrations of this ListOrchestrationsResponse.
+        r"""Gets the orchestrations of this ListOrchestrationsResponse.
 
         本次查询到的编排规则列表。
 
@@ -111,7 +111,7 @@ class ListOrchestrationsResponse(SdkResponse):
 
     @orchestrations.setter
     def orchestrations(self, orchestrations):
-        """Sets the orchestrations of this ListOrchestrationsResponse.
+        r"""Sets the orchestrations of this ListOrchestrationsResponse.
 
         本次查询到的编排规则列表。
 

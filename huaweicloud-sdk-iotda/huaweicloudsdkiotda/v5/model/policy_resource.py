@@ -25,7 +25,7 @@ class PolicyResource:
     }
 
     def __init__(self, policy_ids=None):
-        """PolicyResource
+        r"""PolicyResource
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PolicyResource:
 
     @property
     def policy_ids(self):
-        """Gets the policy_ids of this PolicyResource.
+        r"""Gets the policy_ids of this PolicyResource.
 
         **参数说明**：设备需要绑定的策略id列表
 
@@ -54,7 +54,7 @@ class PolicyResource:
 
     @policy_ids.setter
     def policy_ids(self, policy_ids):
-        """Sets the policy_ids of this PolicyResource.
+        r"""Sets the policy_ids of this PolicyResource.
 
         **参数说明**：设备需要绑定的策略id列表
 

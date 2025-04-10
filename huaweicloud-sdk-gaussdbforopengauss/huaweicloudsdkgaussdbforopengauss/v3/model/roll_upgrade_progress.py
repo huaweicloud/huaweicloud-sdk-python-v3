@@ -33,7 +33,7 @@ class RollUpgradeProgress:
     }
 
     def __init__(self, upgraded_dn_group_numbers=None, total_dn_group_numbers=None, not_fully_upgraded_az=None, already_upgraded_az=None, az_description_map=None):
-        """RollUpgradeProgress
+        r"""RollUpgradeProgress
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class RollUpgradeProgress:
 
     @property
     def upgraded_dn_group_numbers(self):
-        """Gets the upgraded_dn_group_numbers of this RollUpgradeProgress.
+        r"""Gets the upgraded_dn_group_numbers of this RollUpgradeProgress.
 
         已升级分片数，非独立部署返回null。
 
@@ -82,7 +82,7 @@ class RollUpgradeProgress:
 
     @upgraded_dn_group_numbers.setter
     def upgraded_dn_group_numbers(self, upgraded_dn_group_numbers):
-        """Sets the upgraded_dn_group_numbers of this RollUpgradeProgress.
+        r"""Sets the upgraded_dn_group_numbers of this RollUpgradeProgress.
 
         已升级分片数，非独立部署返回null。
 
@@ -93,7 +93,7 @@ class RollUpgradeProgress:
 
     @property
     def total_dn_group_numbers(self):
-        """Gets the total_dn_group_numbers of this RollUpgradeProgress.
+        r"""Gets the total_dn_group_numbers of this RollUpgradeProgress.
 
         总分片数，非独立部署返回null。
 
@@ -104,7 +104,7 @@ class RollUpgradeProgress:
 
     @total_dn_group_numbers.setter
     def total_dn_group_numbers(self, total_dn_group_numbers):
-        """Sets the total_dn_group_numbers of this RollUpgradeProgress.
+        r"""Sets the total_dn_group_numbers of this RollUpgradeProgress.
 
         总分片数，非独立部署返回null。
 
@@ -115,7 +115,7 @@ class RollUpgradeProgress:
 
     @property
     def not_fully_upgraded_az(self):
-        """Gets the not_fully_upgraded_az of this RollUpgradeProgress.
+        r"""Gets the not_fully_upgraded_az of this RollUpgradeProgress.
 
         未完成升级的az，以“,”隔开，独立部署返回null。
 
@@ -126,7 +126,7 @@ class RollUpgradeProgress:
 
     @not_fully_upgraded_az.setter
     def not_fully_upgraded_az(self, not_fully_upgraded_az):
-        """Sets the not_fully_upgraded_az of this RollUpgradeProgress.
+        r"""Sets the not_fully_upgraded_az of this RollUpgradeProgress.
 
         未完成升级的az，以“,”隔开，独立部署返回null。
 
@@ -137,7 +137,7 @@ class RollUpgradeProgress:
 
     @property
     def already_upgraded_az(self):
-        """Gets the already_upgraded_az of this RollUpgradeProgress.
+        r"""Gets the already_upgraded_az of this RollUpgradeProgress.
 
         已升级az，以“,”隔开，独立部署返回null。
 
@@ -148,7 +148,7 @@ class RollUpgradeProgress:
 
     @already_upgraded_az.setter
     def already_upgraded_az(self, already_upgraded_az):
-        """Sets the already_upgraded_az of this RollUpgradeProgress.
+        r"""Sets the already_upgraded_az of this RollUpgradeProgress.
 
         已升级az，以“,”隔开，独立部署返回null。
 
@@ -159,7 +159,7 @@ class RollUpgradeProgress:
 
     @property
     def az_description_map(self):
-        """Gets the az_description_map of this RollUpgradeProgress.
+        r"""Gets the az_description_map of this RollUpgradeProgress.
 
         az描述键值对Map<String,String>。
 
@@ -170,7 +170,7 @@ class RollUpgradeProgress:
 
     @az_description_map.setter
     def az_description_map(self, az_description_map):
-        """Sets the az_description_map of this RollUpgradeProgress.
+        r"""Sets the az_description_map of this RollUpgradeProgress.
 
         az描述键值对Map<String,String>。
 

@@ -41,7 +41,7 @@ class LocationDetail:
     }
 
     def __init__(self, name=None, zone_code=None, address=None, description=None, country=None, province=None, city=None, district=None, condition=None):
-        """LocationDetail
+        r"""LocationDetail
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class LocationDetail:
 
     @property
     def name(self):
-        """Gets the name of this LocationDetail.
+        r"""Gets the name of this LocationDetail.
 
         场地名称（已废弃），传入该参数不会再生效，新建站点也不会再返回该字段
 
@@ -110,7 +110,7 @@ class LocationDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this LocationDetail.
+        r"""Sets the name of this LocationDetail.
 
         场地名称（已废弃），传入该参数不会再生效，新建站点也不会再返回该字段
 
@@ -121,7 +121,7 @@ class LocationDetail:
 
     @property
     def zone_code(self):
-        """Gets the zone_code of this LocationDetail.
+        r"""Gets the zone_code of this LocationDetail.
 
         场地所在地区
 
@@ -132,7 +132,7 @@ class LocationDetail:
 
     @zone_code.setter
     def zone_code(self, zone_code):
-        """Sets the zone_code of this LocationDetail.
+        r"""Sets the zone_code of this LocationDetail.
 
         场地所在地区
 
@@ -143,7 +143,7 @@ class LocationDetail:
 
     @property
     def address(self):
-        """Gets the address of this LocationDetail.
+        r"""Gets the address of this LocationDetail.
 
         部署位置
 
@@ -154,7 +154,7 @@ class LocationDetail:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this LocationDetail.
+        r"""Sets the address of this LocationDetail.
 
         部署位置
 
@@ -165,7 +165,7 @@ class LocationDetail:
 
     @property
     def description(self):
-        """Gets the description of this LocationDetail.
+        r"""Gets the description of this LocationDetail.
 
         场地描述
 
@@ -176,7 +176,7 @@ class LocationDetail:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this LocationDetail.
+        r"""Sets the description of this LocationDetail.
 
         场地描述
 
@@ -187,7 +187,7 @@ class LocationDetail:
 
     @property
     def country(self):
-        """Gets the country of this LocationDetail.
+        r"""Gets the country of this LocationDetail.
 
         场地所在国家（逐步下线，使用zone_code替代）
 
@@ -198,7 +198,7 @@ class LocationDetail:
 
     @country.setter
     def country(self, country):
-        """Sets the country of this LocationDetail.
+        r"""Sets the country of this LocationDetail.
 
         场地所在国家（逐步下线，使用zone_code替代）
 
@@ -209,7 +209,7 @@ class LocationDetail:
 
     @property
     def province(self):
-        """Gets the province of this LocationDetail.
+        r"""Gets the province of this LocationDetail.
 
         场地所在省/自治区/直辖市
 
@@ -220,7 +220,7 @@ class LocationDetail:
 
     @province.setter
     def province(self, province):
-        """Sets the province of this LocationDetail.
+        r"""Sets the province of this LocationDetail.
 
         场地所在省/自治区/直辖市
 
@@ -231,7 +231,7 @@ class LocationDetail:
 
     @property
     def city(self):
-        """Gets the city of this LocationDetail.
+        r"""Gets the city of this LocationDetail.
 
         场地所在市/区
 
@@ -242,7 +242,7 @@ class LocationDetail:
 
     @city.setter
     def city(self, city):
-        """Sets the city of this LocationDetail.
+        r"""Sets the city of this LocationDetail.
 
         场地所在市/区
 
@@ -253,7 +253,7 @@ class LocationDetail:
 
     @property
     def district(self):
-        """Gets the district of this LocationDetail.
+        r"""Gets the district of this LocationDetail.
 
         场地所在区/县
 
@@ -264,7 +264,7 @@ class LocationDetail:
 
     @district.setter
     def district(self, district):
-        """Sets the district of this LocationDetail.
+        r"""Sets the district of this LocationDetail.
 
         场地所在区/县
 
@@ -275,7 +275,7 @@ class LocationDetail:
 
     @property
     def condition(self):
-        """Gets the condition of this LocationDetail.
+        r"""Gets the condition of this LocationDetail.
 
         :return: The condition of this LocationDetail.
         :rtype: :class:`huaweicloudsdkcloudpond.v1.Condition`
@@ -284,7 +284,7 @@ class LocationDetail:
 
     @condition.setter
     def condition(self, condition):
-        """Sets the condition of this LocationDetail.
+        r"""Sets the condition of this LocationDetail.
 
         :param condition: The condition of this LocationDetail.
         :type condition: :class:`huaweicloudsdkcloudpond.v1.Condition`

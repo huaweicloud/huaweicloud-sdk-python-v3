@@ -31,7 +31,7 @@ class ListUsageTypesRequest:
     }
 
     def __init__(self, x_language=None, resource_type_code=None, offset=None, limit=None):
-        """ListUsageTypesRequest
+        r"""ListUsageTypesRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListUsageTypesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListUsageTypesRequest.
+        r"""Gets the x_language of this ListUsageTypesRequest.
 
         语言。中文：zh_CN英文：en_US缺省为zh_CN。
 
@@ -75,7 +75,7 @@ class ListUsageTypesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListUsageTypesRequest.
+        r"""Sets the x_language of this ListUsageTypesRequest.
 
         语言。中文：zh_CN英文：en_US缺省为zh_CN。
 
@@ -86,7 +86,7 @@ class ListUsageTypesRequest:
 
     @property
     def resource_type_code(self):
-        """Gets the resource_type_code of this ListUsageTypesRequest.
+        r"""Gets the resource_type_code of this ListUsageTypesRequest.
 
         资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
@@ -97,7 +97,7 @@ class ListUsageTypesRequest:
 
     @resource_type_code.setter
     def resource_type_code(self, resource_type_code):
-        """Sets the resource_type_code of this ListUsageTypesRequest.
+        r"""Sets the resource_type_code of this ListUsageTypesRequest.
 
         资源类型编码，例如ECS的VM为“hws.resource.type.vm”。您可以调用查询资源类型列表接口获取。
 
@@ -108,7 +108,7 @@ class ListUsageTypesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListUsageTypesRequest.
+        r"""Gets the offset of this ListUsageTypesRequest.
 
         偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -119,7 +119,7 @@ class ListUsageTypesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListUsageTypesRequest.
+        r"""Sets the offset of this ListUsageTypesRequest.
 
         偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -130,7 +130,7 @@ class ListUsageTypesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListUsageTypesRequest.
+        r"""Gets the limit of this ListUsageTypesRequest.
 
         每次查询的数量，默认值为10。
 
@@ -141,7 +141,7 @@ class ListUsageTypesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListUsageTypesRequest.
+        r"""Sets the limit of this ListUsageTypesRequest.
 
         每次查询的数量，默认值为10。
 

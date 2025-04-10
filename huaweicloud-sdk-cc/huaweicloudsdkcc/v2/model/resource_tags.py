@@ -27,7 +27,7 @@ class ResourceTags:
     }
 
     def __init__(self, action=None, tags=None):
-        """ResourceTags
+        r"""ResourceTags
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ResourceTags:
 
     @property
     def action(self):
-        """Gets the action of this ResourceTags.
+        r"""Gets the action of this ResourceTags.
 
         动作。|- create：创建。 delete：删除。
 
@@ -61,7 +61,7 @@ class ResourceTags:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ResourceTags.
+        r"""Sets the action of this ResourceTags.
 
         动作。|- create：创建。 delete：删除。
 
@@ -72,7 +72,7 @@ class ResourceTags:
 
     @property
     def tags(self):
-        """Gets the tags of this ResourceTags.
+        r"""Gets the tags of this ResourceTags.
 
         批量添加/删除资源标签
 
@@ -83,7 +83,7 @@ class ResourceTags:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ResourceTags.
+        r"""Sets the tags of this ResourceTags.
 
         批量添加/删除资源标签
 

@@ -27,7 +27,7 @@ class ListWorkloadQueueRequest:
     }
 
     def __init__(self, cluster_id=None, logical_cluster_name=None):
-        """ListWorkloadQueueRequest
+        r"""ListWorkloadQueueRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListWorkloadQueueRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListWorkloadQueueRequest.
+        r"""Gets the cluster_id of this ListWorkloadQueueRequest.
 
         集群ID
 
@@ -60,7 +60,7 @@ class ListWorkloadQueueRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListWorkloadQueueRequest.
+        r"""Sets the cluster_id of this ListWorkloadQueueRequest.
 
         集群ID
 
@@ -71,7 +71,7 @@ class ListWorkloadQueueRequest:
 
     @property
     def logical_cluster_name(self):
-        """Gets the logical_cluster_name of this ListWorkloadQueueRequest.
+        r"""Gets the logical_cluster_name of this ListWorkloadQueueRequest.
 
         逻辑集群名称。逻辑集群模式下该字段必填。
 
@@ -82,7 +82,7 @@ class ListWorkloadQueueRequest:
 
     @logical_cluster_name.setter
     def logical_cluster_name(self, logical_cluster_name):
-        """Sets the logical_cluster_name of this ListWorkloadQueueRequest.
+        r"""Sets the logical_cluster_name of this ListWorkloadQueueRequest.
 
         逻辑集群名称。逻辑集群模式下该字段必填。
 

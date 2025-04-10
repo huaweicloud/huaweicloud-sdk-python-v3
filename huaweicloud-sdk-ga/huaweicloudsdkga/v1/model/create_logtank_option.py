@@ -31,7 +31,7 @@ class CreateLogtankOption:
     }
 
     def __init__(self, resource_type=None, resource_id=None, log_group_id=None, log_stream_id=None):
-        """CreateLogtankOption
+        r"""CreateLogtankOption
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class CreateLogtankOption:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this CreateLogtankOption.
+        r"""Gets the resource_type of this CreateLogtankOption.
 
         :return: The resource_type of this CreateLogtankOption.
         :rtype: :class:`huaweicloudsdkga.v1.LogtankResourceType`
@@ -69,7 +69,7 @@ class CreateLogtankOption:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this CreateLogtankOption.
+        r"""Sets the resource_type of this CreateLogtankOption.
 
         :param resource_type: The resource_type of this CreateLogtankOption.
         :type resource_type: :class:`huaweicloudsdkga.v1.LogtankResourceType`
@@ -78,7 +78,7 @@ class CreateLogtankOption:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this CreateLogtankOption.
+        r"""Gets the resource_id of this CreateLogtankOption.
 
         开启云日志的资源ID。
 
@@ -89,7 +89,7 @@ class CreateLogtankOption:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this CreateLogtankOption.
+        r"""Sets the resource_id of this CreateLogtankOption.
 
         开启云日志的资源ID。
 
@@ -100,7 +100,7 @@ class CreateLogtankOption:
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this CreateLogtankOption.
+        r"""Gets the log_group_id of this CreateLogtankOption.
 
         云日志服务提供的日志组ID。
 
@@ -111,7 +111,7 @@ class CreateLogtankOption:
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this CreateLogtankOption.
+        r"""Sets the log_group_id of this CreateLogtankOption.
 
         云日志服务提供的日志组ID。
 
@@ -122,7 +122,7 @@ class CreateLogtankOption:
 
     @property
     def log_stream_id(self):
-        """Gets the log_stream_id of this CreateLogtankOption.
+        r"""Gets the log_stream_id of this CreateLogtankOption.
 
         云日志服务提供的日志流ID。
 
@@ -133,7 +133,7 @@ class CreateLogtankOption:
 
     @log_stream_id.setter
     def log_stream_id(self, log_stream_id):
-        """Sets the log_stream_id of this CreateLogtankOption.
+        r"""Sets the log_stream_id of this CreateLogtankOption.
 
         云日志服务提供的日志流ID。
 

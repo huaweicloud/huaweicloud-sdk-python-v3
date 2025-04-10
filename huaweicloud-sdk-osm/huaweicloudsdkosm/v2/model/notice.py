@@ -31,7 +31,7 @@ class Notice:
     }
 
     def __init__(self, id=None, content=None, create_time=None, update_time=None):
-        """Notice
+        r"""Notice
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class Notice:
 
     @property
     def id(self):
-        """Gets the id of this Notice.
+        r"""Gets the id of this Notice.
 
         公告Id
 
@@ -72,7 +72,7 @@ class Notice:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Notice.
+        r"""Sets the id of this Notice.
 
         公告Id
 
@@ -83,7 +83,7 @@ class Notice:
 
     @property
     def content(self):
-        """Gets the content of this Notice.
+        r"""Gets the content of this Notice.
 
         公告内容
 
@@ -94,7 +94,7 @@ class Notice:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this Notice.
+        r"""Sets the content of this Notice.
 
         公告内容
 
@@ -105,7 +105,7 @@ class Notice:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Notice.
+        r"""Gets the create_time of this Notice.
 
         创建时间
 
@@ -116,7 +116,7 @@ class Notice:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Notice.
+        r"""Sets the create_time of this Notice.
 
         创建时间
 
@@ -127,7 +127,7 @@ class Notice:
 
     @property
     def update_time(self):
-        """Gets the update_time of this Notice.
+        r"""Gets the update_time of this Notice.
 
         更新时间
 
@@ -138,7 +138,7 @@ class Notice:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this Notice.
+        r"""Sets the update_time of this Notice.
 
         更新时间
 

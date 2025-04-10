@@ -33,7 +33,7 @@ class ContentDiffDetailInfo:
     }
 
     def __init__(self, count=None, target_meta_is_null=None, source_meta_is_null=None, source_target_meta_not_null=None, contents_infos=None):
-        """ContentDiffDetailInfo
+        r"""ContentDiffDetailInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ContentDiffDetailInfo:
 
     @property
     def count(self):
-        """Gets the count of this ContentDiffDetailInfo.
+        r"""Gets the count of this ContentDiffDetailInfo.
 
         数量。
 
@@ -82,7 +82,7 @@ class ContentDiffDetailInfo:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ContentDiffDetailInfo.
+        r"""Sets the count of this ContentDiffDetailInfo.
 
         数量。
 
@@ -93,7 +93,7 @@ class ContentDiffDetailInfo:
 
     @property
     def target_meta_is_null(self):
-        """Gets the target_meta_is_null of this ContentDiffDetailInfo.
+        r"""Gets the target_meta_is_null of this ContentDiffDetailInfo.
 
         对比不一致详情：只有源库存在。
 
@@ -104,7 +104,7 @@ class ContentDiffDetailInfo:
 
     @target_meta_is_null.setter
     def target_meta_is_null(self, target_meta_is_null):
-        """Sets the target_meta_is_null of this ContentDiffDetailInfo.
+        r"""Sets the target_meta_is_null of this ContentDiffDetailInfo.
 
         对比不一致详情：只有源库存在。
 
@@ -115,7 +115,7 @@ class ContentDiffDetailInfo:
 
     @property
     def source_meta_is_null(self):
-        """Gets the source_meta_is_null of this ContentDiffDetailInfo.
+        r"""Gets the source_meta_is_null of this ContentDiffDetailInfo.
 
         对比不一致详情：只有目标库存在。
 
@@ -126,7 +126,7 @@ class ContentDiffDetailInfo:
 
     @source_meta_is_null.setter
     def source_meta_is_null(self, source_meta_is_null):
-        """Sets the source_meta_is_null of this ContentDiffDetailInfo.
+        r"""Sets the source_meta_is_null of this ContentDiffDetailInfo.
 
         对比不一致详情：只有目标库存在。
 
@@ -137,7 +137,7 @@ class ContentDiffDetailInfo:
 
     @property
     def source_target_meta_not_null(self):
-        """Gets the source_target_meta_not_null of this ContentDiffDetailInfo.
+        r"""Gets the source_target_meta_not_null of this ContentDiffDetailInfo.
 
         对比不一致详情：源和目标端均存在。
 
@@ -148,7 +148,7 @@ class ContentDiffDetailInfo:
 
     @source_target_meta_not_null.setter
     def source_target_meta_not_null(self, source_target_meta_not_null):
-        """Sets the source_target_meta_not_null of this ContentDiffDetailInfo.
+        r"""Sets the source_target_meta_not_null of this ContentDiffDetailInfo.
 
         对比不一致详情：源和目标端均存在。
 
@@ -159,7 +159,7 @@ class ContentDiffDetailInfo:
 
     @property
     def contents_infos(self):
-        """Gets the contents_infos of this ContentDiffDetailInfo.
+        r"""Gets the contents_infos of this ContentDiffDetailInfo.
 
         信息列表。
 
@@ -170,7 +170,7 @@ class ContentDiffDetailInfo:
 
     @contents_infos.setter
     def contents_infos(self, contents_infos):
-        """Sets the contents_infos of this ContentDiffDetailInfo.
+        r"""Sets the contents_infos of this ContentDiffDetailInfo.
 
         信息列表。
 

@@ -27,7 +27,7 @@ class FindingCondition:
     }
 
     def __init__(self, key=None, value=None):
-        """FindingCondition
+        r"""FindingCondition
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class FindingCondition:
 
     @property
     def key(self):
-        """Gets the key of this FindingCondition.
+        r"""Gets the key of this FindingCondition.
 
         条件\"键\"的标识符或名称。
 
@@ -59,7 +59,7 @@ class FindingCondition:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this FindingCondition.
+        r"""Sets the key of this FindingCondition.
 
         条件\"键\"的标识符或名称。
 
@@ -70,7 +70,7 @@ class FindingCondition:
 
     @property
     def value(self):
-        """Gets the value of this FindingCondition.
+        r"""Gets the value of this FindingCondition.
 
         条件\"键\"对应的\"值\"。
 
@@ -81,7 +81,7 @@ class FindingCondition:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this FindingCondition.
+        r"""Sets the value of this FindingCondition.
 
         条件\"键\"对应的\"值\"。
 

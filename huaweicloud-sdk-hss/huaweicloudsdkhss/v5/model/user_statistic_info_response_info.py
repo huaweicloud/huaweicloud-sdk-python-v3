@@ -27,7 +27,7 @@ class UserStatisticInfoResponseInfo:
     }
 
     def __init__(self, user_name=None, num=None):
-        """UserStatisticInfoResponseInfo
+        r"""UserStatisticInfoResponseInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UserStatisticInfoResponseInfo:
 
     @property
     def user_name(self):
-        """Gets the user_name of this UserStatisticInfoResponseInfo.
+        r"""Gets the user_name of this UserStatisticInfoResponseInfo.
 
         账号名称，参考windows文件命名规则，支持字母、数字、下划线，特殊字符!@.-等
 
@@ -61,7 +61,7 @@ class UserStatisticInfoResponseInfo:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this UserStatisticInfoResponseInfo.
+        r"""Sets the user_name of this UserStatisticInfoResponseInfo.
 
         账号名称，参考windows文件命名规则，支持字母、数字、下划线，特殊字符!@.-等
 
@@ -72,7 +72,7 @@ class UserStatisticInfoResponseInfo:
 
     @property
     def num(self):
-        """Gets the num of this UserStatisticInfoResponseInfo.
+        r"""Gets the num of this UserStatisticInfoResponseInfo.
 
         当前账号的主机数量
 
@@ -83,7 +83,7 @@ class UserStatisticInfoResponseInfo:
 
     @num.setter
     def num(self, num):
-        """Sets the num of this UserStatisticInfoResponseInfo.
+        r"""Sets the num of this UserStatisticInfoResponseInfo.
 
         当前账号的主机数量
 

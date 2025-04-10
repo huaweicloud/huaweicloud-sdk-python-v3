@@ -38,7 +38,7 @@ class ShowSlaOrderResponse(SdkResponse):
     }
 
     def __init__(self, id=None, order_title=None, order_id=None, trigger_type=None, order_level=None, create_time=None, sla_record=None):
-        """ShowSlaOrderResponse
+        r"""ShowSlaOrderResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ShowSlaOrderResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowSlaOrderResponse.
+        r"""Gets the id of this ShowSlaOrderResponse.
 
         主键
 
@@ -97,7 +97,7 @@ class ShowSlaOrderResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowSlaOrderResponse.
+        r"""Sets the id of this ShowSlaOrderResponse.
 
         主键
 
@@ -108,7 +108,7 @@ class ShowSlaOrderResponse(SdkResponse):
 
     @property
     def order_title(self):
-        """Gets the order_title of this ShowSlaOrderResponse.
+        r"""Gets the order_title of this ShowSlaOrderResponse.
 
         工单标题
 
@@ -119,7 +119,7 @@ class ShowSlaOrderResponse(SdkResponse):
 
     @order_title.setter
     def order_title(self, order_title):
-        """Sets the order_title of this ShowSlaOrderResponse.
+        r"""Sets the order_title of this ShowSlaOrderResponse.
 
         工单标题
 
@@ -130,7 +130,7 @@ class ShowSlaOrderResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this ShowSlaOrderResponse.
+        r"""Gets the order_id of this ShowSlaOrderResponse.
 
         工单ID
 
@@ -141,7 +141,7 @@ class ShowSlaOrderResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ShowSlaOrderResponse.
+        r"""Sets the order_id of this ShowSlaOrderResponse.
 
         工单ID
 
@@ -152,7 +152,7 @@ class ShowSlaOrderResponse(SdkResponse):
 
     @property
     def trigger_type(self):
-        """Gets the trigger_type of this ShowSlaOrderResponse.
+        r"""Gets the trigger_type of this ShowSlaOrderResponse.
 
         触发类型(EVENT_TICKET,ALARM_TICKET,CHANGE_NOTE,TO_DO_TASKS,ISSUE_TICKET)
 
@@ -163,7 +163,7 @@ class ShowSlaOrderResponse(SdkResponse):
 
     @trigger_type.setter
     def trigger_type(self, trigger_type):
-        """Sets the trigger_type of this ShowSlaOrderResponse.
+        r"""Sets the trigger_type of this ShowSlaOrderResponse.
 
         触发类型(EVENT_TICKET,ALARM_TICKET,CHANGE_NOTE,TO_DO_TASKS,ISSUE_TICKET)
 
@@ -174,7 +174,7 @@ class ShowSlaOrderResponse(SdkResponse):
 
     @property
     def order_level(self):
-        """Gets the order_level of this ShowSlaOrderResponse.
+        r"""Gets the order_level of this ShowSlaOrderResponse.
 
         工单等级
 
@@ -185,7 +185,7 @@ class ShowSlaOrderResponse(SdkResponse):
 
     @order_level.setter
     def order_level(self, order_level):
-        """Sets the order_level of this ShowSlaOrderResponse.
+        r"""Sets the order_level of this ShowSlaOrderResponse.
 
         工单等级
 
@@ -196,7 +196,7 @@ class ShowSlaOrderResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowSlaOrderResponse.
+        r"""Gets the create_time of this ShowSlaOrderResponse.
 
         工单开始时间
 
@@ -207,7 +207,7 @@ class ShowSlaOrderResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowSlaOrderResponse.
+        r"""Sets the create_time of this ShowSlaOrderResponse.
 
         工单开始时间
 
@@ -218,7 +218,7 @@ class ShowSlaOrderResponse(SdkResponse):
 
     @property
     def sla_record(self):
-        """Gets the sla_record of this ShowSlaOrderResponse.
+        r"""Gets the sla_record of this ShowSlaOrderResponse.
 
         SLA规则记录
 
@@ -229,7 +229,7 @@ class ShowSlaOrderResponse(SdkResponse):
 
     @sla_record.setter
     def sla_record(self, sla_record):
-        """Sets the sla_record of this ShowSlaOrderResponse.
+        r"""Sets the sla_record of this ShowSlaOrderResponse.
 
         SLA规则记录
 

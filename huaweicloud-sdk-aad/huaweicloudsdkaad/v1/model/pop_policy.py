@@ -43,7 +43,7 @@ class PopPolicy:
     }
 
     def __init__(self, block_location=None, block_protocol=None, bw_list=None, connection_protection=None, connection_protection_list=None, fingerprint_count=None, port_block_count=None, watermark_count=None, if_exist_traffic=None, pop=None):
-        """PopPolicy
+        r"""PopPolicy
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class PopPolicy:
 
     @property
     def block_location(self):
-        """Gets the block_location of this PopPolicy.
+        r"""Gets the block_location of this PopPolicy.
 
         位置封禁列表
 
@@ -107,7 +107,7 @@ class PopPolicy:
 
     @block_location.setter
     def block_location(self, block_location):
-        """Sets the block_location of this PopPolicy.
+        r"""Sets the block_location of this PopPolicy.
 
         位置封禁列表
 
@@ -118,7 +118,7 @@ class PopPolicy:
 
     @property
     def block_protocol(self):
-        """Gets the block_protocol of this PopPolicy.
+        r"""Gets the block_protocol of this PopPolicy.
 
         协议封禁列表
 
@@ -129,7 +129,7 @@ class PopPolicy:
 
     @block_protocol.setter
     def block_protocol(self, block_protocol):
-        """Sets the block_protocol of this PopPolicy.
+        r"""Sets the block_protocol of this PopPolicy.
 
         协议封禁列表
 
@@ -140,7 +140,7 @@ class PopPolicy:
 
     @property
     def bw_list(self):
-        """Gets the bw_list of this PopPolicy.
+        r"""Gets the bw_list of this PopPolicy.
 
         :return: The bw_list of this PopPolicy.
         :rtype: :class:`huaweicloudsdkaad.v1.Bw`
@@ -149,7 +149,7 @@ class PopPolicy:
 
     @bw_list.setter
     def bw_list(self, bw_list):
-        """Sets the bw_list of this PopPolicy.
+        r"""Sets the bw_list of this PopPolicy.
 
         :param bw_list: The bw_list of this PopPolicy.
         :type bw_list: :class:`huaweicloudsdkaad.v1.Bw`
@@ -158,7 +158,7 @@ class PopPolicy:
 
     @property
     def connection_protection(self):
-        """Gets the connection_protection of this PopPolicy.
+        r"""Gets the connection_protection of this PopPolicy.
 
         是否开启连接防护
 
@@ -169,7 +169,7 @@ class PopPolicy:
 
     @connection_protection.setter
     def connection_protection(self, connection_protection):
-        """Sets the connection_protection of this PopPolicy.
+        r"""Sets the connection_protection of this PopPolicy.
 
         是否开启连接防护
 
@@ -180,7 +180,7 @@ class PopPolicy:
 
     @property
     def connection_protection_list(self):
-        """Gets the connection_protection_list of this PopPolicy.
+        r"""Gets the connection_protection_list of this PopPolicy.
 
         连接防护列表
 
@@ -191,7 +191,7 @@ class PopPolicy:
 
     @connection_protection_list.setter
     def connection_protection_list(self, connection_protection_list):
-        """Sets the connection_protection_list of this PopPolicy.
+        r"""Sets the connection_protection_list of this PopPolicy.
 
         连接防护列表
 
@@ -202,7 +202,7 @@ class PopPolicy:
 
     @property
     def fingerprint_count(self):
-        """Gets the fingerprint_count of this PopPolicy.
+        r"""Gets the fingerprint_count of this PopPolicy.
 
         指纹数
 
@@ -213,7 +213,7 @@ class PopPolicy:
 
     @fingerprint_count.setter
     def fingerprint_count(self, fingerprint_count):
-        """Sets the fingerprint_count of this PopPolicy.
+        r"""Sets the fingerprint_count of this PopPolicy.
 
         指纹数
 
@@ -224,7 +224,7 @@ class PopPolicy:
 
     @property
     def port_block_count(self):
-        """Gets the port_block_count of this PopPolicy.
+        r"""Gets the port_block_count of this PopPolicy.
 
         端口封禁数
 
@@ -235,7 +235,7 @@ class PopPolicy:
 
     @port_block_count.setter
     def port_block_count(self, port_block_count):
-        """Sets the port_block_count of this PopPolicy.
+        r"""Sets the port_block_count of this PopPolicy.
 
         端口封禁数
 
@@ -246,7 +246,7 @@ class PopPolicy:
 
     @property
     def watermark_count(self):
-        """Gets the watermark_count of this PopPolicy.
+        r"""Gets the watermark_count of this PopPolicy.
 
         水印数
 
@@ -257,7 +257,7 @@ class PopPolicy:
 
     @watermark_count.setter
     def watermark_count(self, watermark_count):
-        """Sets the watermark_count of this PopPolicy.
+        r"""Sets the watermark_count of this PopPolicy.
 
         水印数
 
@@ -268,7 +268,7 @@ class PopPolicy:
 
     @property
     def if_exist_traffic(self):
-        """Gets the if_exist_traffic of this PopPolicy.
+        r"""Gets the if_exist_traffic of this PopPolicy.
 
         是否存在流量
 
@@ -279,7 +279,7 @@ class PopPolicy:
 
     @if_exist_traffic.setter
     def if_exist_traffic(self, if_exist_traffic):
-        """Sets the if_exist_traffic of this PopPolicy.
+        r"""Sets the if_exist_traffic of this PopPolicy.
 
         是否存在流量
 
@@ -290,7 +290,7 @@ class PopPolicy:
 
     @property
     def pop(self):
-        """Gets the pop of this PopPolicy.
+        r"""Gets the pop of this PopPolicy.
 
         固定值ALL
 
@@ -301,7 +301,7 @@ class PopPolicy:
 
     @pop.setter
     def pop(self, pop):
-        """Sets the pop of this PopPolicy.
+        r"""Sets the pop of this PopPolicy.
 
         固定值ALL
 

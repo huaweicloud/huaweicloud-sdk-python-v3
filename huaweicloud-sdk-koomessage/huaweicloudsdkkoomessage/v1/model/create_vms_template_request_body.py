@@ -37,7 +37,7 @@ class CreateVmsTemplateRequestBody:
     }
 
     def __init__(self, expiration_time=None, tpl_name=None, title=None, reslist=None, remarks=None, callbackurl=None, is_draft=None):
-        """CreateVmsTemplateRequestBody
+        r"""CreateVmsTemplateRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -81,7 +81,7 @@ class CreateVmsTemplateRequestBody:
 
     @property
     def expiration_time(self):
-        """Gets the expiration_time of this CreateVmsTemplateRequestBody.
+        r"""Gets the expiration_time of this CreateVmsTemplateRequestBody.
 
         智能信息基础版模板有效期。单位：天，必须取整，最长9999天。
 
@@ -92,7 +92,7 @@ class CreateVmsTemplateRequestBody:
 
     @expiration_time.setter
     def expiration_time(self, expiration_time):
-        """Sets the expiration_time of this CreateVmsTemplateRequestBody.
+        r"""Sets the expiration_time of this CreateVmsTemplateRequestBody.
 
         智能信息基础版模板有效期。单位：天，必须取整，最长9999天。
 
@@ -103,7 +103,7 @@ class CreateVmsTemplateRequestBody:
 
     @property
     def tpl_name(self):
-        """Gets the tpl_name of this CreateVmsTemplateRequestBody.
+        r"""Gets the tpl_name of this CreateVmsTemplateRequestBody.
 
         智能信息基础版模板名称。模板的别名，用来帮助记忆。最大不超过100个字，若使用中文需经过UTF-8编码。
 
@@ -114,7 +114,7 @@ class CreateVmsTemplateRequestBody:
 
     @tpl_name.setter
     def tpl_name(self, tpl_name):
-        """Sets the tpl_name of this CreateVmsTemplateRequestBody.
+        r"""Sets the tpl_name of this CreateVmsTemplateRequestBody.
 
         智能信息基础版模板名称。模板的别名，用来帮助记忆。最大不超过100个字，若使用中文需经过UTF-8编码。
 
@@ -125,7 +125,7 @@ class CreateVmsTemplateRequestBody:
 
     @property
     def title(self):
-        """Gets the title of this CreateVmsTemplateRequestBody.
+        r"""Gets the title of this CreateVmsTemplateRequestBody.
 
         智能信息基础版模板主题，最大不超过20个字，若使用中文需经过UTF-8 编码，主题不能包含“【】”，否则审核会不通过。
 
@@ -136,7 +136,7 @@ class CreateVmsTemplateRequestBody:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this CreateVmsTemplateRequestBody.
+        r"""Sets the title of this CreateVmsTemplateRequestBody.
 
         智能信息基础版模板主题，最大不超过20个字，若使用中文需经过UTF-8 编码，主题不能包含“【】”，否则审核会不通过。
 
@@ -147,7 +147,7 @@ class CreateVmsTemplateRequestBody:
 
     @property
     def reslist(self):
-        """Gets the reslist of this CreateVmsTemplateRequestBody.
+        r"""Gets the reslist of this CreateVmsTemplateRequestBody.
 
          模板资源列表，由按顺序排列的资源组成，资源类型支持文本、图片、音频、视频。  > 资源在JSON数组中的顺序将决定其在手机上的显示顺序，数组大小不能超过10。 
 
@@ -158,7 +158,7 @@ class CreateVmsTemplateRequestBody:
 
     @reslist.setter
     def reslist(self, reslist):
-        """Sets the reslist of this CreateVmsTemplateRequestBody.
+        r"""Sets the reslist of this CreateVmsTemplateRequestBody.
 
          模板资源列表，由按顺序排列的资源组成，资源类型支持文本、图片、音频、视频。  > 资源在JSON数组中的顺序将决定其在手机上的显示顺序，数组大小不能超过10。 
 
@@ -169,7 +169,7 @@ class CreateVmsTemplateRequestBody:
 
     @property
     def remarks(self):
-        """Gets the remarks of this CreateVmsTemplateRequestBody.
+        r"""Gets the remarks of this CreateVmsTemplateRequestBody.
 
         智能信息基础版模板备注信息，用于填写对模板审核的期望或要求，最大不超过200个字。例如：希望这个模板绑定的通道类型是三网合一通道，默认优先绑定三网合一通道。
 
@@ -180,7 +180,7 @@ class CreateVmsTemplateRequestBody:
 
     @remarks.setter
     def remarks(self, remarks):
-        """Sets the remarks of this CreateVmsTemplateRequestBody.
+        r"""Sets the remarks of this CreateVmsTemplateRequestBody.
 
         智能信息基础版模板备注信息，用于填写对模板审核的期望或要求，最大不超过200个字。例如：希望这个模板绑定的通道类型是三网合一通道，默认优先绑定三网合一通道。
 
@@ -191,7 +191,7 @@ class CreateVmsTemplateRequestBody:
 
     @property
     def callbackurl(self):
-        """Gets the callbackurl of this CreateVmsTemplateRequestBody.
+        r"""Gets the callbackurl of this CreateVmsTemplateRequestBody.
 
         客户系统回调URL，可用于通知对端模板审核状态信息。  > 接口规格需参照定义智能信息基础版模板状态回执完成实现。 
 
@@ -202,7 +202,7 @@ class CreateVmsTemplateRequestBody:
 
     @callbackurl.setter
     def callbackurl(self, callbackurl):
-        """Sets the callbackurl of this CreateVmsTemplateRequestBody.
+        r"""Sets the callbackurl of this CreateVmsTemplateRequestBody.
 
         客户系统回调URL，可用于通知对端模板审核状态信息。  > 接口规格需参照定义智能信息基础版模板状态回执完成实现。 
 
@@ -213,7 +213,7 @@ class CreateVmsTemplateRequestBody:
 
     @property
     def is_draft(self):
-        """Gets the is_draft of this CreateVmsTemplateRequestBody.
+        r"""Gets the is_draft of this CreateVmsTemplateRequestBody.
 
         以草稿状态提交模板。 - 0：非草稿模板 - 1：草稿模板 
 
@@ -224,7 +224,7 @@ class CreateVmsTemplateRequestBody:
 
     @is_draft.setter
     def is_draft(self, is_draft):
-        """Sets the is_draft of this CreateVmsTemplateRequestBody.
+        r"""Sets the is_draft of this CreateVmsTemplateRequestBody.
 
         以草稿状态提交模板。 - 0：非草稿模板 - 1：草稿模板 
 

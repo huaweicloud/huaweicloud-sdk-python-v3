@@ -33,7 +33,7 @@ class CreateOrUpdateScalingPolicyReq:
     }
 
     def __init__(self, enable=None, max_scaling_amount=None, single_expansion_count=None, scaling_policy_by_session=None, server_group_id=None):
-        """CreateOrUpdateScalingPolicyReq
+        r"""CreateOrUpdateScalingPolicyReq
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class CreateOrUpdateScalingPolicyReq:
 
     @property
     def enable(self):
-        """Gets the enable of this CreateOrUpdateScalingPolicyReq.
+        r"""Gets the enable of this CreateOrUpdateScalingPolicyReq.
 
         是否启用策略,默认启用： 'true': 启用 'false': 禁用
 
@@ -78,7 +78,7 @@ class CreateOrUpdateScalingPolicyReq:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this CreateOrUpdateScalingPolicyReq.
+        r"""Sets the enable of this CreateOrUpdateScalingPolicyReq.
 
         是否启用策略,默认启用： 'true': 启用 'false': 禁用
 
@@ -89,7 +89,7 @@ class CreateOrUpdateScalingPolicyReq:
 
     @property
     def max_scaling_amount(self):
-        """Gets the max_scaling_amount of this CreateOrUpdateScalingPolicyReq.
+        r"""Gets the max_scaling_amount of this CreateOrUpdateScalingPolicyReq.
 
         最大扩容数量。
 
@@ -100,7 +100,7 @@ class CreateOrUpdateScalingPolicyReq:
 
     @max_scaling_amount.setter
     def max_scaling_amount(self, max_scaling_amount):
-        """Sets the max_scaling_amount of this CreateOrUpdateScalingPolicyReq.
+        r"""Sets the max_scaling_amount of this CreateOrUpdateScalingPolicyReq.
 
         最大扩容数量。
 
@@ -111,7 +111,7 @@ class CreateOrUpdateScalingPolicyReq:
 
     @property
     def single_expansion_count(self):
-        """Gets the single_expansion_count of this CreateOrUpdateScalingPolicyReq.
+        r"""Gets the single_expansion_count of this CreateOrUpdateScalingPolicyReq.
 
         单次扩容数量。
 
@@ -122,7 +122,7 @@ class CreateOrUpdateScalingPolicyReq:
 
     @single_expansion_count.setter
     def single_expansion_count(self, single_expansion_count):
-        """Sets the single_expansion_count of this CreateOrUpdateScalingPolicyReq.
+        r"""Sets the single_expansion_count of this CreateOrUpdateScalingPolicyReq.
 
         单次扩容数量。
 
@@ -133,7 +133,7 @@ class CreateOrUpdateScalingPolicyReq:
 
     @property
     def scaling_policy_by_session(self):
-        """Gets the scaling_policy_by_session of this CreateOrUpdateScalingPolicyReq.
+        r"""Gets the scaling_policy_by_session of this CreateOrUpdateScalingPolicyReq.
 
         :return: The scaling_policy_by_session of this CreateOrUpdateScalingPolicyReq.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ScalingPolicyBySession`
@@ -142,7 +142,7 @@ class CreateOrUpdateScalingPolicyReq:
 
     @scaling_policy_by_session.setter
     def scaling_policy_by_session(self, scaling_policy_by_session):
-        """Sets the scaling_policy_by_session of this CreateOrUpdateScalingPolicyReq.
+        r"""Sets the scaling_policy_by_session of this CreateOrUpdateScalingPolicyReq.
 
         :param scaling_policy_by_session: The scaling_policy_by_session of this CreateOrUpdateScalingPolicyReq.
         :type scaling_policy_by_session: :class:`huaweicloudsdkworkspaceapp.v1.ScalingPolicyBySession`
@@ -151,7 +151,7 @@ class CreateOrUpdateScalingPolicyReq:
 
     @property
     def server_group_id(self):
-        """Gets the server_group_id of this CreateOrUpdateScalingPolicyReq.
+        r"""Gets the server_group_id of this CreateOrUpdateScalingPolicyReq.
 
         服务器组唯一标识(仅按需服务器组支持该操作)。
 
@@ -162,7 +162,7 @@ class CreateOrUpdateScalingPolicyReq:
 
     @server_group_id.setter
     def server_group_id(self, server_group_id):
-        """Sets the server_group_id of this CreateOrUpdateScalingPolicyReq.
+        r"""Sets the server_group_id of this CreateOrUpdateScalingPolicyReq.
 
         服务器组唯一标识(仅按需服务器组支持该操作)。
 

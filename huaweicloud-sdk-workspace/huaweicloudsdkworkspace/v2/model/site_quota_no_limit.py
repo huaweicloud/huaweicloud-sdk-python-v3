@@ -27,7 +27,7 @@ class SiteQuotaNoLimit:
     }
 
     def __init__(self, resources=None, site_id=None):
-        """SiteQuotaNoLimit
+        r"""SiteQuotaNoLimit
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SiteQuotaNoLimit:
 
     @property
     def resources(self):
-        """Gets the resources of this SiteQuotaNoLimit.
+        r"""Gets the resources of this SiteQuotaNoLimit.
 
         配额资源列表
 
@@ -60,7 +60,7 @@ class SiteQuotaNoLimit:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this SiteQuotaNoLimit.
+        r"""Sets the resources of this SiteQuotaNoLimit.
 
         配额资源列表
 
@@ -71,7 +71,7 @@ class SiteQuotaNoLimit:
 
     @property
     def site_id(self):
-        """Gets the site_id of this SiteQuotaNoLimit.
+        r"""Gets the site_id of this SiteQuotaNoLimit.
 
         站点ID
 
@@ -82,7 +82,7 @@ class SiteQuotaNoLimit:
 
     @site_id.setter
     def site_id(self, site_id):
-        """Sets the site_id of this SiteQuotaNoLimit.
+        r"""Sets the site_id of this SiteQuotaNoLimit.
 
         站点ID
 

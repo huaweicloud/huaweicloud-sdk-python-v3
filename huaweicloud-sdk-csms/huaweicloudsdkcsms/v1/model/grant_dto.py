@@ -35,7 +35,7 @@ class GrantDTO:
     }
 
     def __init__(self, id=None, name=None, type=None, grantee_user=None, create_time=None, update_time=None):
-        """GrantDTO
+        r"""GrantDTO
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class GrantDTO:
 
     @property
     def id(self):
-        """Gets the id of this GrantDTO.
+        r"""Gets the id of this GrantDTO.
 
         授权id，授权给个人时存在
 
@@ -86,7 +86,7 @@ class GrantDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this GrantDTO.
+        r"""Sets the id of this GrantDTO.
 
         授权id，授权给个人时存在
 
@@ -97,7 +97,7 @@ class GrantDTO:
 
     @property
     def name(self):
-        """Gets the name of this GrantDTO.
+        r"""Gets the name of this GrantDTO.
 
         授权name
 
@@ -108,7 +108,7 @@ class GrantDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GrantDTO.
+        r"""Sets the name of this GrantDTO.
 
         授权name
 
@@ -119,7 +119,7 @@ class GrantDTO:
 
     @property
     def type(self):
-        """Gets the type of this GrantDTO.
+        r"""Gets the type of this GrantDTO.
 
         授权类型（SECRET，GROUP）
 
@@ -130,7 +130,7 @@ class GrantDTO:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this GrantDTO.
+        r"""Sets the type of this GrantDTO.
 
         授权类型（SECRET，GROUP）
 
@@ -141,7 +141,7 @@ class GrantDTO:
 
     @property
     def grantee_user(self):
-        """Gets the grantee_user of this GrantDTO.
+        r"""Gets the grantee_user of this GrantDTO.
 
         被授权用户信息
 
@@ -152,7 +152,7 @@ class GrantDTO:
 
     @grantee_user.setter
     def grantee_user(self, grantee_user):
-        """Sets the grantee_user of this GrantDTO.
+        r"""Sets the grantee_user of this GrantDTO.
 
         被授权用户信息
 
@@ -163,7 +163,7 @@ class GrantDTO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this GrantDTO.
+        r"""Gets the create_time of this GrantDTO.
 
         创建时间
 
@@ -174,7 +174,7 @@ class GrantDTO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this GrantDTO.
+        r"""Sets the create_time of this GrantDTO.
 
         创建时间
 
@@ -185,7 +185,7 @@ class GrantDTO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this GrantDTO.
+        r"""Gets the update_time of this GrantDTO.
 
         更新时间
 
@@ -196,7 +196,7 @@ class GrantDTO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this GrantDTO.
+        r"""Sets the update_time of this GrantDTO.
 
         更新时间
 

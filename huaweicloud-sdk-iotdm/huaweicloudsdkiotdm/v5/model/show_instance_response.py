@@ -54,7 +54,7 @@ class ShowInstanceResponse(SdkResponse):
     }
 
     def __init__(self, instance_type=None, instance_id=None, charge_mode=None, name=None, flavor=None, status=None, description=None, access_infos=None, create_time=None, update_time=None, enterprise_project_id=None, tags=None, order_id=None, operate_window=None, additional_params=None):
-        """ShowInstanceResponse
+        r"""ShowInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -142,7 +142,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def instance_type(self):
-        """Gets the instance_type of this ShowInstanceResponse.
+        r"""Gets the instance_type of this ShowInstanceResponse.
 
         **参数说明**：实例类型。 **取值范围**： - standard：标准版实例 - enterprise：企业版实例 
 
@@ -153,7 +153,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @instance_type.setter
     def instance_type(self, instance_type):
-        """Sets the instance_type of this ShowInstanceResponse.
+        r"""Sets the instance_type of this ShowInstanceResponse.
 
         **参数说明**：实例类型。 **取值范围**： - standard：标准版实例 - enterprise：企业版实例 
 
@@ -164,7 +164,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowInstanceResponse.
+        r"""Gets the instance_id of this ShowInstanceResponse.
 
         **参数说明**：实例ID。 **取值范围**：长度不超过36，由小写字母[a-f]、数字、连接符（-）的组成。 
 
@@ -175,7 +175,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowInstanceResponse.
+        r"""Sets the instance_id of this ShowInstanceResponse.
 
         **参数说明**：实例ID。 **取值范围**：长度不超过36，由小写字母[a-f]、数字、连接符（-）的组成。 
 
@@ -186,7 +186,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this ShowInstanceResponse.
+        r"""Gets the charge_mode of this ShowInstanceResponse.
 
         **参数说明**：实例的付费方式。 **取值范围**： - prePaid：包年/包月 - postPaid：按需计费 
 
@@ -197,7 +197,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this ShowInstanceResponse.
+        r"""Sets the charge_mode of this ShowInstanceResponse.
 
         **参数说明**：实例的付费方式。 **取值范围**： - prePaid：包年/包月 - postPaid：按需计费 
 
@@ -208,7 +208,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowInstanceResponse.
+        r"""Gets the name of this ShowInstanceResponse.
 
         **参数说明**：实例名称 **取值范围**：由中文字符，英文字母、数字及“_”、“-”组成，且长度为[1-64]个字符。 
 
@@ -219,7 +219,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowInstanceResponse.
+        r"""Sets the name of this ShowInstanceResponse.
 
         **参数说明**：实例名称 **取值范围**：由中文字符，英文字母、数字及“_”、“-”组成，且长度为[1-64]个字符。 
 
@@ -230,7 +230,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def flavor(self):
-        """Gets the flavor of this ShowInstanceResponse.
+        r"""Gets the flavor of this ShowInstanceResponse.
 
         :return: The flavor of this ShowInstanceResponse.
         :rtype: :class:`huaweicloudsdkiotdm.v5.Flavor`
@@ -239,7 +239,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this ShowInstanceResponse.
+        r"""Sets the flavor of this ShowInstanceResponse.
 
         :param flavor: The flavor of this ShowInstanceResponse.
         :type flavor: :class:`huaweicloudsdkiotdm.v5.Flavor`
@@ -248,7 +248,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowInstanceResponse.
+        r"""Gets the status of this ShowInstanceResponse.
 
         **参数说明**：实例状态。 **取值范围**： - CREATING：实例正在创建 - ACTIVE：实例正常 - FROZEN：实例冻结 - MODIFYING：实例正在变更规格 - FAILED：实例创建失败 
 
@@ -259,7 +259,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowInstanceResponse.
+        r"""Sets the status of this ShowInstanceResponse.
 
         **参数说明**：实例状态。 **取值范围**： - CREATING：实例正在创建 - ACTIVE：实例正常 - FROZEN：实例冻结 - MODIFYING：实例正在变更规格 - FAILED：实例创建失败 
 
@@ -270,7 +270,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowInstanceResponse.
+        r"""Gets the description of this ShowInstanceResponse.
 
         **参数说明**：设备接入实例的描述信息。 **取值范围**：由中文，字母，数字，句号，逗号，下划线（“_”），中划线（“-”），空格组成，且长度为[1-256]个字符。 
 
@@ -281,7 +281,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowInstanceResponse.
+        r"""Sets the description of this ShowInstanceResponse.
 
         **参数说明**：设备接入实例的描述信息。 **取值范围**：由中文，字母，数字，句号，逗号，下划线（“_”），中划线（“-”），空格组成，且长度为[1-256]个字符。 
 
@@ -292,7 +292,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def access_infos(self):
-        """Gets the access_infos of this ShowInstanceResponse.
+        r"""Gets the access_infos of this ShowInstanceResponse.
 
         **参数说明**：设备接入实例的接入信息 
 
@@ -303,7 +303,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @access_infos.setter
     def access_infos(self, access_infos):
-        """Sets the access_infos of this ShowInstanceResponse.
+        r"""Sets the access_infos of this ShowInstanceResponse.
 
         **参数说明**：设备接入实例的接入信息 
 
@@ -314,7 +314,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowInstanceResponse.
+        r"""Gets the create_time of this ShowInstanceResponse.
 
         **参数说明**：实例的创建时间。时间格式例如：2023-01-28T06:57:52Z 
 
@@ -325,7 +325,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowInstanceResponse.
+        r"""Sets the create_time of this ShowInstanceResponse.
 
         **参数说明**：实例的创建时间。时间格式例如：2023-01-28T06:57:52Z 
 
@@ -336,7 +336,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowInstanceResponse.
+        r"""Gets the update_time of this ShowInstanceResponse.
 
         **参数说明**：实例的最近一次更新的时间。时间格式例如：2023-01-28T06:57:52Z 
 
@@ -347,7 +347,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowInstanceResponse.
+        r"""Sets the update_time of this ShowInstanceResponse.
 
         **参数说明**：实例的最近一次更新的时间。时间格式例如：2023-01-28T06:57:52Z 
 
@@ -358,7 +358,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowInstanceResponse.
+        r"""Gets the enterprise_project_id of this ShowInstanceResponse.
 
         **参数说明**：企业项目Id。
 
@@ -369,7 +369,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowInstanceResponse.
+        r"""Sets the enterprise_project_id of this ShowInstanceResponse.
 
         **参数说明**：企业项目Id。
 
@@ -380,7 +380,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowInstanceResponse.
+        r"""Gets the tags of this ShowInstanceResponse.
 
         **参数说明**: 设备接入实例的标签信息。如果实例有标签，则会有该字段，否则该字段为空。 
 
@@ -391,7 +391,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowInstanceResponse.
+        r"""Sets the tags of this ShowInstanceResponse.
 
         **参数说明**: 设备接入实例的标签信息。如果实例有标签，则会有该字段，否则该字段为空。 
 
@@ -402,7 +402,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this ShowInstanceResponse.
+        r"""Gets the order_id of this ShowInstanceResponse.
 
         **参数说明**：订单号，仅包年包月实例返回该参数。[查看订单详情请参考[[查询订单详情](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0075746564.html)。]](tag:hws)
 
@@ -413,7 +413,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ShowInstanceResponse.
+        r"""Sets the order_id of this ShowInstanceResponse.
 
         **参数说明**：订单号，仅包年包月实例返回该参数。[查看订单详情请参考[[查询订单详情](https://support.huaweicloud.com/api-bpconsole/zh-cn_topic_0075746564.html)。]](tag:hws)
 
@@ -424,7 +424,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def operate_window(self):
-        """Gets the operate_window of this ShowInstanceResponse.
+        r"""Gets the operate_window of this ShowInstanceResponse.
 
         :return: The operate_window of this ShowInstanceResponse.
         :rtype: :class:`huaweicloudsdkiotdm.v5.OperateWindow`
@@ -433,7 +433,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @operate_window.setter
     def operate_window(self, operate_window):
-        """Sets the operate_window of this ShowInstanceResponse.
+        r"""Sets the operate_window of this ShowInstanceResponse.
 
         :param operate_window: The operate_window of this ShowInstanceResponse.
         :type operate_window: :class:`huaweicloudsdkiotdm.v5.OperateWindow`
@@ -442,7 +442,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def additional_params(self):
-        """Gets the additional_params of this ShowInstanceResponse.
+        r"""Gets the additional_params of this ShowInstanceResponse.
 
         :return: The additional_params of this ShowInstanceResponse.
         :rtype: :class:`huaweicloudsdkiotdm.v5.AdditionalParamsResp`
@@ -451,7 +451,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @additional_params.setter
     def additional_params(self, additional_params):
-        """Sets the additional_params of this ShowInstanceResponse.
+        r"""Sets the additional_params of this ShowInstanceResponse.
 
         :param additional_params: The additional_params of this ShowInstanceResponse.
         :type additional_params: :class:`huaweicloudsdkiotdm.v5.AdditionalParamsResp`

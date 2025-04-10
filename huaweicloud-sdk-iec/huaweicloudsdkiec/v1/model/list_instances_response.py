@@ -30,7 +30,7 @@ class ListInstancesResponse(SdkResponse):
     }
 
     def __init__(self, err_sites=None, count=None, servers=None):
-        """ListInstancesResponse
+        r"""ListInstancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListInstancesResponse(SdkResponse):
 
     @property
     def err_sites(self):
-        """Gets the err_sites of this ListInstancesResponse.
+        r"""Gets the err_sites of this ListInstancesResponse.
 
         异常站点。
 
@@ -69,7 +69,7 @@ class ListInstancesResponse(SdkResponse):
 
     @err_sites.setter
     def err_sites(self, err_sites):
-        """Sets the err_sites of this ListInstancesResponse.
+        r"""Sets the err_sites of this ListInstancesResponse.
 
         异常站点。
 
@@ -80,7 +80,7 @@ class ListInstancesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListInstancesResponse.
+        r"""Gets the count of this ListInstancesResponse.
 
         边缘实例列表的总数。
 
@@ -91,7 +91,7 @@ class ListInstancesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListInstancesResponse.
+        r"""Sets the count of this ListInstancesResponse.
 
         边缘实例列表的总数。
 
@@ -102,7 +102,7 @@ class ListInstancesResponse(SdkResponse):
 
     @property
     def servers(self):
-        """Gets the servers of this ListInstancesResponse.
+        r"""Gets the servers of this ListInstancesResponse.
 
         边缘实例列表。
 
@@ -113,7 +113,7 @@ class ListInstancesResponse(SdkResponse):
 
     @servers.setter
     def servers(self, servers):
-        """Sets the servers of this ListInstancesResponse.
+        r"""Sets the servers of this ListInstancesResponse.
 
         边缘实例列表。
 

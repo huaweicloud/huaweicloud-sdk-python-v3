@@ -31,7 +31,7 @@ class ShowProxyVersionRequest:
     }
 
     def __init__(self, instance_id=None, engine_name=None, proxy_id=None, x_language=None):
-        """ShowProxyVersionRequest
+        r"""ShowProxyVersionRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class ShowProxyVersionRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowProxyVersionRequest.
+        r"""Gets the instance_id of this ShowProxyVersionRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -72,7 +72,7 @@ class ShowProxyVersionRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowProxyVersionRequest.
+        r"""Sets the instance_id of this ShowProxyVersionRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -83,7 +83,7 @@ class ShowProxyVersionRequest:
 
     @property
     def engine_name(self):
-        """Gets the engine_name of this ShowProxyVersionRequest.
+        r"""Gets the engine_name of this ShowProxyVersionRequest.
 
         engine
 
@@ -94,7 +94,7 @@ class ShowProxyVersionRequest:
 
     @engine_name.setter
     def engine_name(self, engine_name):
-        """Sets the engine_name of this ShowProxyVersionRequest.
+        r"""Sets the engine_name of this ShowProxyVersionRequest.
 
         engine
 
@@ -105,7 +105,7 @@ class ShowProxyVersionRequest:
 
     @property
     def proxy_id(self):
-        """Gets the proxy_id of this ShowProxyVersionRequest.
+        r"""Gets the proxy_id of this ShowProxyVersionRequest.
 
         数据库代理ID，严格匹配UUID规则。
 
@@ -116,7 +116,7 @@ class ShowProxyVersionRequest:
 
     @proxy_id.setter
     def proxy_id(self, proxy_id):
-        """Sets the proxy_id of this ShowProxyVersionRequest.
+        r"""Sets the proxy_id of this ShowProxyVersionRequest.
 
         数据库代理ID，严格匹配UUID规则。
 
@@ -127,7 +127,7 @@ class ShowProxyVersionRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowProxyVersionRequest.
+        r"""Gets the x_language of this ShowProxyVersionRequest.
 
         语言。
 
@@ -138,7 +138,7 @@ class ShowProxyVersionRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowProxyVersionRequest.
+        r"""Sets the x_language of this ShowProxyVersionRequest.
 
         语言。
 

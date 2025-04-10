@@ -26,7 +26,7 @@ class ListNatGatewaysResponse(SdkResponse):
     }
 
     def __init__(self, nat_gateways=None):
-        """ListNatGatewaysResponse
+        r"""ListNatGatewaysResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListNatGatewaysResponse(SdkResponse):
 
     @property
     def nat_gateways(self):
-        """Gets the nat_gateways of this ListNatGatewaysResponse.
+        r"""Gets the nat_gateways of this ListNatGatewaysResponse.
 
         网关实例信息列表。
 
@@ -55,7 +55,7 @@ class ListNatGatewaysResponse(SdkResponse):
 
     @nat_gateways.setter
     def nat_gateways(self, nat_gateways):
-        """Sets the nat_gateways of this ListNatGatewaysResponse.
+        r"""Sets the nat_gateways of this ListNatGatewaysResponse.
 
         网关实例信息列表。
 

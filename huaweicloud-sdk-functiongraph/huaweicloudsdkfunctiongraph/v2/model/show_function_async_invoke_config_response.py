@@ -38,7 +38,7 @@ class ShowFunctionAsyncInvokeConfigResponse(SdkResponse):
     }
 
     def __init__(self, func_urn=None, max_async_event_age_in_seconds=None, max_async_retry_attempts=None, destination_config=None, created_time=None, last_modified=None, enable_async_status_log=None):
-        """ShowFunctionAsyncInvokeConfigResponse
+        r"""ShowFunctionAsyncInvokeConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ShowFunctionAsyncInvokeConfigResponse(SdkResponse):
 
     @property
     def func_urn(self):
-        """Gets the func_urn of this ShowFunctionAsyncInvokeConfigResponse.
+        r"""Gets the func_urn of this ShowFunctionAsyncInvokeConfigResponse.
 
         函数URN。
 
@@ -97,7 +97,7 @@ class ShowFunctionAsyncInvokeConfigResponse(SdkResponse):
 
     @func_urn.setter
     def func_urn(self, func_urn):
-        """Sets the func_urn of this ShowFunctionAsyncInvokeConfigResponse.
+        r"""Sets the func_urn of this ShowFunctionAsyncInvokeConfigResponse.
 
         函数URN。
 
@@ -108,7 +108,7 @@ class ShowFunctionAsyncInvokeConfigResponse(SdkResponse):
 
     @property
     def max_async_event_age_in_seconds(self):
-        """Gets the max_async_event_age_in_seconds of this ShowFunctionAsyncInvokeConfigResponse.
+        r"""Gets the max_async_event_age_in_seconds of this ShowFunctionAsyncInvokeConfigResponse.
 
         消息最大存活时长，取值范围[60，86400]。单位：秒。
 
@@ -119,7 +119,7 @@ class ShowFunctionAsyncInvokeConfigResponse(SdkResponse):
 
     @max_async_event_age_in_seconds.setter
     def max_async_event_age_in_seconds(self, max_async_event_age_in_seconds):
-        """Sets the max_async_event_age_in_seconds of this ShowFunctionAsyncInvokeConfigResponse.
+        r"""Sets the max_async_event_age_in_seconds of this ShowFunctionAsyncInvokeConfigResponse.
 
         消息最大存活时长，取值范围[60，86400]。单位：秒。
 
@@ -130,7 +130,7 @@ class ShowFunctionAsyncInvokeConfigResponse(SdkResponse):
 
     @property
     def max_async_retry_attempts(self):
-        """Gets the max_async_retry_attempts of this ShowFunctionAsyncInvokeConfigResponse.
+        r"""Gets the max_async_retry_attempts of this ShowFunctionAsyncInvokeConfigResponse.
 
         异步调用失败后的最大重试次数，默认值为3。取值范围[0，8]。
 
@@ -141,7 +141,7 @@ class ShowFunctionAsyncInvokeConfigResponse(SdkResponse):
 
     @max_async_retry_attempts.setter
     def max_async_retry_attempts(self, max_async_retry_attempts):
-        """Sets the max_async_retry_attempts of this ShowFunctionAsyncInvokeConfigResponse.
+        r"""Sets the max_async_retry_attempts of this ShowFunctionAsyncInvokeConfigResponse.
 
         异步调用失败后的最大重试次数，默认值为3。取值范围[0，8]。
 
@@ -152,7 +152,7 @@ class ShowFunctionAsyncInvokeConfigResponse(SdkResponse):
 
     @property
     def destination_config(self):
-        """Gets the destination_config of this ShowFunctionAsyncInvokeConfigResponse.
+        r"""Gets the destination_config of this ShowFunctionAsyncInvokeConfigResponse.
 
         :return: The destination_config of this ShowFunctionAsyncInvokeConfigResponse.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.FuncAsyncDestinationConfig`
@@ -161,7 +161,7 @@ class ShowFunctionAsyncInvokeConfigResponse(SdkResponse):
 
     @destination_config.setter
     def destination_config(self, destination_config):
-        """Sets the destination_config of this ShowFunctionAsyncInvokeConfigResponse.
+        r"""Sets the destination_config of this ShowFunctionAsyncInvokeConfigResponse.
 
         :param destination_config: The destination_config of this ShowFunctionAsyncInvokeConfigResponse.
         :type destination_config: :class:`huaweicloudsdkfunctiongraph.v2.FuncAsyncDestinationConfig`
@@ -170,7 +170,7 @@ class ShowFunctionAsyncInvokeConfigResponse(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this ShowFunctionAsyncInvokeConfigResponse.
+        r"""Gets the created_time of this ShowFunctionAsyncInvokeConfigResponse.
 
         异步调用配置的创建时间。
 
@@ -181,7 +181,7 @@ class ShowFunctionAsyncInvokeConfigResponse(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this ShowFunctionAsyncInvokeConfigResponse.
+        r"""Sets the created_time of this ShowFunctionAsyncInvokeConfigResponse.
 
         异步调用配置的创建时间。
 
@@ -192,7 +192,7 @@ class ShowFunctionAsyncInvokeConfigResponse(SdkResponse):
 
     @property
     def last_modified(self):
-        """Gets the last_modified of this ShowFunctionAsyncInvokeConfigResponse.
+        r"""Gets the last_modified of this ShowFunctionAsyncInvokeConfigResponse.
 
         异步调用配置的最后更改时间。
 
@@ -203,7 +203,7 @@ class ShowFunctionAsyncInvokeConfigResponse(SdkResponse):
 
     @last_modified.setter
     def last_modified(self, last_modified):
-        """Sets the last_modified of this ShowFunctionAsyncInvokeConfigResponse.
+        r"""Sets the last_modified of this ShowFunctionAsyncInvokeConfigResponse.
 
         异步调用配置的最后更改时间。
 
@@ -214,7 +214,7 @@ class ShowFunctionAsyncInvokeConfigResponse(SdkResponse):
 
     @property
     def enable_async_status_log(self):
-        """Gets the enable_async_status_log of this ShowFunctionAsyncInvokeConfigResponse.
+        r"""Gets the enable_async_status_log of this ShowFunctionAsyncInvokeConfigResponse.
 
         开启异步调用状态持久化
 
@@ -225,7 +225,7 @@ class ShowFunctionAsyncInvokeConfigResponse(SdkResponse):
 
     @enable_async_status_log.setter
     def enable_async_status_log(self, enable_async_status_log):
-        """Sets the enable_async_status_log of this ShowFunctionAsyncInvokeConfigResponse.
+        r"""Sets the enable_async_status_log of this ShowFunctionAsyncInvokeConfigResponse.
 
         开启异步调用状态持久化
 

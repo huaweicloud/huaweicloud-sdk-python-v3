@@ -26,7 +26,7 @@ class UpdateStackInstancesResponse(SdkResponse):
     }
 
     def __init__(self, stack_set_operation_id=None):
-        """UpdateStackInstancesResponse
+        r"""UpdateStackInstancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateStackInstancesResponse(SdkResponse):
 
     @property
     def stack_set_operation_id(self):
-        """Gets the stack_set_operation_id of this UpdateStackInstancesResponse.
+        r"""Gets the stack_set_operation_id of this UpdateStackInstancesResponse.
 
         资源栈集操作（stack_set_operation）的唯一Id。  此ID由资源编排服务在生成资源栈集操作的时候生成，为UUID。
 
@@ -55,7 +55,7 @@ class UpdateStackInstancesResponse(SdkResponse):
 
     @stack_set_operation_id.setter
     def stack_set_operation_id(self, stack_set_operation_id):
-        """Sets the stack_set_operation_id of this UpdateStackInstancesResponse.
+        r"""Sets the stack_set_operation_id of this UpdateStackInstancesResponse.
 
         资源栈集操作（stack_set_operation）的唯一Id。  此ID由资源编排服务在生成资源栈集操作的时候生成，为UUID。
 

@@ -27,7 +27,7 @@ class IpClassificationItem:
     }
 
     def __init__(self, total=None, items=None):
-        """IpClassificationItem
+        r"""IpClassificationItem
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class IpClassificationItem:
 
     @property
     def total(self):
-        """Gets the total of this IpClassificationItem.
+        r"""Gets the total of this IpClassificationItem.
 
         IpItem的总数量
 
@@ -61,7 +61,7 @@ class IpClassificationItem:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this IpClassificationItem.
+        r"""Sets the total of this IpClassificationItem.
 
         IpItem的总数量
 
@@ -72,7 +72,7 @@ class IpClassificationItem:
 
     @property
     def items(self):
-        """Gets the items of this IpClassificationItem.
+        r"""Gets the items of this IpClassificationItem.
 
         IpItem详细信息
 
@@ -83,7 +83,7 @@ class IpClassificationItem:
 
     @items.setter
     def items(self, items):
-        """Sets the items of this IpClassificationItem.
+        r"""Sets the items of this IpClassificationItem.
 
         IpItem详细信息
 

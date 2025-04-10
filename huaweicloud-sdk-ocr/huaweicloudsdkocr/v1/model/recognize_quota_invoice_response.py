@@ -28,7 +28,7 @@ class RecognizeQuotaInvoiceResponse(SdkResponse):
     }
 
     def __init__(self, result=None, x_request_id=None):
-        """RecognizeQuotaInvoiceResponse
+        r"""RecognizeQuotaInvoiceResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RecognizeQuotaInvoiceResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RecognizeQuotaInvoiceResponse.
+        r"""Gets the result of this RecognizeQuotaInvoiceResponse.
 
         :return: The result of this RecognizeQuotaInvoiceResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.QuotaInvoiceResult`
@@ -60,7 +60,7 @@ class RecognizeQuotaInvoiceResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RecognizeQuotaInvoiceResponse.
+        r"""Sets the result of this RecognizeQuotaInvoiceResponse.
 
         :param result: The result of this RecognizeQuotaInvoiceResponse.
         :type result: :class:`huaweicloudsdkocr.v1.QuotaInvoiceResult`
@@ -69,7 +69,7 @@ class RecognizeQuotaInvoiceResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this RecognizeQuotaInvoiceResponse.
+        r"""Gets the x_request_id of this RecognizeQuotaInvoiceResponse.
 
         :return: The x_request_id of this RecognizeQuotaInvoiceResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class RecognizeQuotaInvoiceResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this RecognizeQuotaInvoiceResponse.
+        r"""Sets the x_request_id of this RecognizeQuotaInvoiceResponse.
 
         :param x_request_id: The x_request_id of this RecognizeQuotaInvoiceResponse.
         :type x_request_id: str

@@ -27,7 +27,7 @@ class EcnWithIegRequest:
     }
 
     def __init__(self, ieg_id=None, region_id=None):
-        """EcnWithIegRequest
+        r"""EcnWithIegRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class EcnWithIegRequest:
 
     @property
     def ieg_id(self):
-        """Gets the ieg_id of this EcnWithIegRequest.
+        r"""Gets the ieg_id of this EcnWithIegRequest.
 
         智能企业网关ID
 
@@ -59,7 +59,7 @@ class EcnWithIegRequest:
 
     @ieg_id.setter
     def ieg_id(self, ieg_id):
-        """Sets the ieg_id of this EcnWithIegRequest.
+        r"""Sets the ieg_id of this EcnWithIegRequest.
 
         智能企业网关ID
 
@@ -70,7 +70,7 @@ class EcnWithIegRequest:
 
     @property
     def region_id(self):
-        """Gets the region_id of this EcnWithIegRequest.
+        r"""Gets the region_id of this EcnWithIegRequest.
 
         区域ID
 
@@ -81,7 +81,7 @@ class EcnWithIegRequest:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this EcnWithIegRequest.
+        r"""Sets the region_id of this EcnWithIegRequest.
 
         区域ID
 

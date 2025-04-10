@@ -25,7 +25,7 @@ class TrustedServiceReqBody:
     }
 
     def __init__(self, service_principal=None):
-        """TrustedServiceReqBody
+        r"""TrustedServiceReqBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class TrustedServiceReqBody:
 
     @property
     def service_principal(self):
-        """Gets the service_principal of this TrustedServiceReqBody.
+        r"""Gets the service_principal of this TrustedServiceReqBody.
 
         服务主体名称。
 
@@ -53,7 +53,7 @@ class TrustedServiceReqBody:
 
     @service_principal.setter
     def service_principal(self, service_principal):
-        """Sets the service_principal of this TrustedServiceReqBody.
+        r"""Sets the service_principal of this TrustedServiceReqBody.
 
         服务主体名称。
 

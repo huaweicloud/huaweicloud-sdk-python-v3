@@ -29,7 +29,7 @@ class Assignment:
     }
 
     def __init__(self, policy_statement_id=None, attach=None, attach_type=None):
-        """Assignment
+        r"""Assignment
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class Assignment:
 
     @property
     def policy_statement_id(self):
-        """Gets the policy_statement_id of this Assignment.
+        r"""Gets the policy_statement_id of this Assignment.
 
         策略ID。
 
@@ -65,7 +65,7 @@ class Assignment:
 
     @policy_statement_id.setter
     def policy_statement_id(self, policy_statement_id):
-        """Sets the policy_statement_id of this Assignment.
+        r"""Sets the policy_statement_id of this Assignment.
 
         策略ID。
 
@@ -76,7 +76,7 @@ class Assignment:
 
     @property
     def attach(self):
-        """Gets the attach of this Assignment.
+        r"""Gets the attach of this Assignment.
 
         目标。
 
@@ -87,7 +87,7 @@ class Assignment:
 
     @attach.setter
     def attach(self, attach):
-        """Sets the attach of this Assignment.
+        r"""Sets the attach of this Assignment.
 
         目标。
 
@@ -98,7 +98,7 @@ class Assignment:
 
     @property
     def attach_type(self):
-        """Gets the attach_type of this Assignment.
+        r"""Gets the attach_type of this Assignment.
 
         :return: The attach_type of this Assignment.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AttachType`
@@ -107,7 +107,7 @@ class Assignment:
 
     @attach_type.setter
     def attach_type(self, attach_type):
-        """Sets the attach_type of this Assignment.
+        r"""Sets the attach_type of this Assignment.
 
         :param attach_type: The attach_type of this Assignment.
         :type attach_type: :class:`huaweicloudsdkworkspaceapp.v1.AttachType`

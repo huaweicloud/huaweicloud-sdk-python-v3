@@ -26,7 +26,7 @@ class ShowDedicatedHostTagsResponse(SdkResponse):
     }
 
     def __init__(self, tags=None):
-        """ShowDedicatedHostTagsResponse
+        r"""ShowDedicatedHostTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowDedicatedHostTagsResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowDedicatedHostTagsResponse.
+        r"""Gets the tags of this ShowDedicatedHostTagsResponse.
 
         专属主机标签列表。
 
@@ -55,7 +55,7 @@ class ShowDedicatedHostTagsResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowDedicatedHostTagsResponse.
+        r"""Sets the tags of this ShowDedicatedHostTagsResponse.
 
         专属主机标签列表。
 

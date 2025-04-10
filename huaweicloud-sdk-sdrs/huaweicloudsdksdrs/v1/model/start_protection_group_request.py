@@ -27,7 +27,7 @@ class StartProtectionGroupRequest:
     }
 
     def __init__(self, server_group_id=None, body=None):
-        """StartProtectionGroupRequest
+        r"""StartProtectionGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class StartProtectionGroupRequest:
 
     @property
     def server_group_id(self):
-        """Gets the server_group_id of this StartProtectionGroupRequest.
+        r"""Gets the server_group_id of this StartProtectionGroupRequest.
 
         保护组的ID。
 
@@ -60,7 +60,7 @@ class StartProtectionGroupRequest:
 
     @server_group_id.setter
     def server_group_id(self, server_group_id):
-        """Sets the server_group_id of this StartProtectionGroupRequest.
+        r"""Sets the server_group_id of this StartProtectionGroupRequest.
 
         保护组的ID。
 
@@ -71,7 +71,7 @@ class StartProtectionGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this StartProtectionGroupRequest.
+        r"""Gets the body of this StartProtectionGroupRequest.
 
         :return: The body of this StartProtectionGroupRequest.
         :rtype: :class:`huaweicloudsdksdrs.v1.StartProtectionGroupRequestBody`
@@ -80,7 +80,7 @@ class StartProtectionGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StartProtectionGroupRequest.
+        r"""Sets the body of this StartProtectionGroupRequest.
 
         :param body: The body of this StartProtectionGroupRequest.
         :type body: :class:`huaweicloudsdksdrs.v1.StartProtectionGroupRequestBody`

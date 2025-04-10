@@ -33,7 +33,7 @@ class EncryptDataRequestBody:
     }
 
     def __init__(self, key_id=None, plain_text=None, encryption_algorithm=None, additional_authenticated_data=None, sequence=None):
-        """EncryptDataRequestBody
+        r"""EncryptDataRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class EncryptDataRequestBody:
 
     @property
     def key_id(self):
-        """Gets the key_id of this EncryptDataRequestBody.
+        r"""Gets the key_id of this EncryptDataRequestBody.
 
         密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
@@ -80,7 +80,7 @@ class EncryptDataRequestBody:
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this EncryptDataRequestBody.
+        r"""Sets the key_id of this EncryptDataRequestBody.
 
         密钥ID，36字节，满足正则匹配“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”。 例如：0d0466b0-e727-4d9c-b35d-f84bb474a37f。
 
@@ -91,7 +91,7 @@ class EncryptDataRequestBody:
 
     @property
     def plain_text(self):
-        """Gets the plain_text of this EncryptDataRequestBody.
+        r"""Gets the plain_text of this EncryptDataRequestBody.
 
         明文数据，1~4096字节，满足正则匹配“^.{1,4096}$”，且转化为byte数组后长度取值范围为1~4096字节。
 
@@ -102,7 +102,7 @@ class EncryptDataRequestBody:
 
     @plain_text.setter
     def plain_text(self, plain_text):
-        """Sets the plain_text of this EncryptDataRequestBody.
+        r"""Sets the plain_text of this EncryptDataRequestBody.
 
         明文数据，1~4096字节，满足正则匹配“^.{1,4096}$”，且转化为byte数组后长度取值范围为1~4096字节。
 
@@ -113,7 +113,7 @@ class EncryptDataRequestBody:
 
     @property
     def encryption_algorithm(self):
-        """Gets the encryption_algorithm of this EncryptDataRequestBody.
+        r"""Gets the encryption_algorithm of this EncryptDataRequestBody.
 
         数据加密算法，仅使用非对称密钥需要指定该参数，默认值为“SYMMETRIC_DEFAULT”，合法枚举值如下：  - SYMMETRIC_DEFAULT  - RSAES_OAEP_SHA_256  - SM2_ENCRYPT
 
@@ -124,7 +124,7 @@ class EncryptDataRequestBody:
 
     @encryption_algorithm.setter
     def encryption_algorithm(self, encryption_algorithm):
-        """Sets the encryption_algorithm of this EncryptDataRequestBody.
+        r"""Sets the encryption_algorithm of this EncryptDataRequestBody.
 
         数据加密算法，仅使用非对称密钥需要指定该参数，默认值为“SYMMETRIC_DEFAULT”，合法枚举值如下：  - SYMMETRIC_DEFAULT  - RSAES_OAEP_SHA_256  - SM2_ENCRYPT
 
@@ -135,7 +135,7 @@ class EncryptDataRequestBody:
 
     @property
     def additional_authenticated_data(self):
-        """Gets the additional_authenticated_data of this EncryptDataRequestBody.
+        r"""Gets the additional_authenticated_data of this EncryptDataRequestBody.
 
         身份验证的非敏感额外数据。任意字符串，长度不超过128字节。
 
@@ -146,7 +146,7 @@ class EncryptDataRequestBody:
 
     @additional_authenticated_data.setter
     def additional_authenticated_data(self, additional_authenticated_data):
-        """Sets the additional_authenticated_data of this EncryptDataRequestBody.
+        r"""Sets the additional_authenticated_data of this EncryptDataRequestBody.
 
         身份验证的非敏感额外数据。任意字符串，长度不超过128字节。
 
@@ -157,7 +157,7 @@ class EncryptDataRequestBody:
 
     @property
     def sequence(self):
-        """Gets the sequence of this EncryptDataRequestBody.
+        r"""Gets the sequence of this EncryptDataRequestBody.
 
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 
@@ -168,7 +168,7 @@ class EncryptDataRequestBody:
 
     @sequence.setter
     def sequence(self, sequence):
-        """Sets the sequence of this EncryptDataRequestBody.
+        r"""Sets the sequence of this EncryptDataRequestBody.
 
         请求消息序列号，36字节序列号。 例如：919c82d4-8046-4722-9094-35c3c6524cff
 

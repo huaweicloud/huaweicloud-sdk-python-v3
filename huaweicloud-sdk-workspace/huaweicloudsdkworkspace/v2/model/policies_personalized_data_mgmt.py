@@ -39,7 +39,7 @@ class PoliciesPersonalizedDataMgmt:
     }
 
     def __init__(self, personalized_data_mgmt_path=None, user_data_roaming_enable=None, user_data_roaming_options=None, user_folder_redirection_enable=None, user_folder_redirection_options=None, logoff_delete_user_configuration=None, network_drive_mapping_enable=None, network_drive_mapping_options=None):
-        """PoliciesPersonalizedDataMgmt
+        r"""PoliciesPersonalizedDataMgmt
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class PoliciesPersonalizedDataMgmt:
 
     @property
     def personalized_data_mgmt_path(self):
-        """Gets the personalized_data_mgmt_path of this PoliciesPersonalizedDataMgmt.
+        r"""Gets the personalized_data_mgmt_path of this PoliciesPersonalizedDataMgmt.
 
         个性化数据管理路径。
 
@@ -103,7 +103,7 @@ class PoliciesPersonalizedDataMgmt:
 
     @personalized_data_mgmt_path.setter
     def personalized_data_mgmt_path(self, personalized_data_mgmt_path):
-        """Sets the personalized_data_mgmt_path of this PoliciesPersonalizedDataMgmt.
+        r"""Sets the personalized_data_mgmt_path of this PoliciesPersonalizedDataMgmt.
 
         个性化数据管理路径。
 
@@ -114,7 +114,7 @@ class PoliciesPersonalizedDataMgmt:
 
     @property
     def user_data_roaming_enable(self):
-        """Gets the user_data_roaming_enable of this PoliciesPersonalizedDataMgmt.
+        r"""Gets the user_data_roaming_enable of this PoliciesPersonalizedDataMgmt.
 
         用户数据漫游
 
@@ -125,7 +125,7 @@ class PoliciesPersonalizedDataMgmt:
 
     @user_data_roaming_enable.setter
     def user_data_roaming_enable(self, user_data_roaming_enable):
-        """Sets the user_data_roaming_enable of this PoliciesPersonalizedDataMgmt.
+        r"""Sets the user_data_roaming_enable of this PoliciesPersonalizedDataMgmt.
 
         用户数据漫游
 
@@ -136,7 +136,7 @@ class PoliciesPersonalizedDataMgmt:
 
     @property
     def user_data_roaming_options(self):
-        """Gets the user_data_roaming_options of this PoliciesPersonalizedDataMgmt.
+        r"""Gets the user_data_roaming_options of this PoliciesPersonalizedDataMgmt.
 
         :return: The user_data_roaming_options of this PoliciesPersonalizedDataMgmt.
         :rtype: :class:`huaweicloudsdkworkspace.v2.PoliciesPersonalizedDataMgmtUserDataRoamingOptions`
@@ -145,7 +145,7 @@ class PoliciesPersonalizedDataMgmt:
 
     @user_data_roaming_options.setter
     def user_data_roaming_options(self, user_data_roaming_options):
-        """Sets the user_data_roaming_options of this PoliciesPersonalizedDataMgmt.
+        r"""Sets the user_data_roaming_options of this PoliciesPersonalizedDataMgmt.
 
         :param user_data_roaming_options: The user_data_roaming_options of this PoliciesPersonalizedDataMgmt.
         :type user_data_roaming_options: :class:`huaweicloudsdkworkspace.v2.PoliciesPersonalizedDataMgmtUserDataRoamingOptions`
@@ -154,7 +154,7 @@ class PoliciesPersonalizedDataMgmt:
 
     @property
     def user_folder_redirection_enable(self):
-        """Gets the user_folder_redirection_enable of this PoliciesPersonalizedDataMgmt.
+        r"""Gets the user_folder_redirection_enable of this PoliciesPersonalizedDataMgmt.
 
         启用用户文件夹重定向
 
@@ -165,7 +165,7 @@ class PoliciesPersonalizedDataMgmt:
 
     @user_folder_redirection_enable.setter
     def user_folder_redirection_enable(self, user_folder_redirection_enable):
-        """Sets the user_folder_redirection_enable of this PoliciesPersonalizedDataMgmt.
+        r"""Sets the user_folder_redirection_enable of this PoliciesPersonalizedDataMgmt.
 
         启用用户文件夹重定向
 
@@ -176,7 +176,7 @@ class PoliciesPersonalizedDataMgmt:
 
     @property
     def user_folder_redirection_options(self):
-        """Gets the user_folder_redirection_options of this PoliciesPersonalizedDataMgmt.
+        r"""Gets the user_folder_redirection_options of this PoliciesPersonalizedDataMgmt.
 
         :return: The user_folder_redirection_options of this PoliciesPersonalizedDataMgmt.
         :rtype: :class:`huaweicloudsdkworkspace.v2.PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions`
@@ -185,7 +185,7 @@ class PoliciesPersonalizedDataMgmt:
 
     @user_folder_redirection_options.setter
     def user_folder_redirection_options(self, user_folder_redirection_options):
-        """Sets the user_folder_redirection_options of this PoliciesPersonalizedDataMgmt.
+        r"""Sets the user_folder_redirection_options of this PoliciesPersonalizedDataMgmt.
 
         :param user_folder_redirection_options: The user_folder_redirection_options of this PoliciesPersonalizedDataMgmt.
         :type user_folder_redirection_options: :class:`huaweicloudsdkworkspace.v2.PoliciesPersonalizedDataMgmtUserFolderRedirectionOptions`
@@ -194,7 +194,7 @@ class PoliciesPersonalizedDataMgmt:
 
     @property
     def logoff_delete_user_configuration(self):
-        """Gets the logoff_delete_user_configuration of this PoliciesPersonalizedDataMgmt.
+        r"""Gets the logoff_delete_user_configuration of this PoliciesPersonalizedDataMgmt.
 
         启用用户文件夹重定向
 
@@ -205,7 +205,7 @@ class PoliciesPersonalizedDataMgmt:
 
     @logoff_delete_user_configuration.setter
     def logoff_delete_user_configuration(self, logoff_delete_user_configuration):
-        """Sets the logoff_delete_user_configuration of this PoliciesPersonalizedDataMgmt.
+        r"""Sets the logoff_delete_user_configuration of this PoliciesPersonalizedDataMgmt.
 
         启用用户文件夹重定向
 
@@ -216,7 +216,7 @@ class PoliciesPersonalizedDataMgmt:
 
     @property
     def network_drive_mapping_enable(self):
-        """Gets the network_drive_mapping_enable of this PoliciesPersonalizedDataMgmt.
+        r"""Gets the network_drive_mapping_enable of this PoliciesPersonalizedDataMgmt.
 
         启用用户文件夹重定向
 
@@ -227,7 +227,7 @@ class PoliciesPersonalizedDataMgmt:
 
     @network_drive_mapping_enable.setter
     def network_drive_mapping_enable(self, network_drive_mapping_enable):
-        """Sets the network_drive_mapping_enable of this PoliciesPersonalizedDataMgmt.
+        r"""Sets the network_drive_mapping_enable of this PoliciesPersonalizedDataMgmt.
 
         启用用户文件夹重定向
 
@@ -238,7 +238,7 @@ class PoliciesPersonalizedDataMgmt:
 
     @property
     def network_drive_mapping_options(self):
-        """Gets the network_drive_mapping_options of this PoliciesPersonalizedDataMgmt.
+        r"""Gets the network_drive_mapping_options of this PoliciesPersonalizedDataMgmt.
 
         :return: The network_drive_mapping_options of this PoliciesPersonalizedDataMgmt.
         :rtype: :class:`huaweicloudsdkworkspace.v2.PoliciesPersonalizedDataMgmtNetworkDriveMappingOptions`
@@ -247,7 +247,7 @@ class PoliciesPersonalizedDataMgmt:
 
     @network_drive_mapping_options.setter
     def network_drive_mapping_options(self, network_drive_mapping_options):
-        """Sets the network_drive_mapping_options of this PoliciesPersonalizedDataMgmt.
+        r"""Sets the network_drive_mapping_options of this PoliciesPersonalizedDataMgmt.
 
         :param network_drive_mapping_options: The network_drive_mapping_options of this PoliciesPersonalizedDataMgmt.
         :type network_drive_mapping_options: :class:`huaweicloudsdkworkspace.v2.PoliciesPersonalizedDataMgmtNetworkDriveMappingOptions`

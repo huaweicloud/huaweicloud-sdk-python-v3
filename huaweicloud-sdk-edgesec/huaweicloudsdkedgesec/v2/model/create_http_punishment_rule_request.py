@@ -27,7 +27,7 @@ class CreateHttpPunishmentRuleRequest:
     }
 
     def __init__(self, policy_id=None, body=None):
-        """CreateHttpPunishmentRuleRequest
+        r"""CreateHttpPunishmentRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateHttpPunishmentRuleRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this CreateHttpPunishmentRuleRequest.
+        r"""Gets the policy_id of this CreateHttpPunishmentRuleRequest.
 
         策略id
 
@@ -60,7 +60,7 @@ class CreateHttpPunishmentRuleRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this CreateHttpPunishmentRuleRequest.
+        r"""Sets the policy_id of this CreateHttpPunishmentRuleRequest.
 
         策略id
 
@@ -71,7 +71,7 @@ class CreateHttpPunishmentRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateHttpPunishmentRuleRequest.
+        r"""Gets the body of this CreateHttpPunishmentRuleRequest.
 
         :return: The body of this CreateHttpPunishmentRuleRequest.
         :rtype: :class:`huaweicloudsdkedgesec.v2.CreateHttpPunishmentRuleRequestBody`
@@ -80,7 +80,7 @@ class CreateHttpPunishmentRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateHttpPunishmentRuleRequest.
+        r"""Sets the body of this CreateHttpPunishmentRuleRequest.
 
         :param body: The body of this CreateHttpPunishmentRuleRequest.
         :type body: :class:`huaweicloudsdkedgesec.v2.CreateHttpPunishmentRuleRequestBody`

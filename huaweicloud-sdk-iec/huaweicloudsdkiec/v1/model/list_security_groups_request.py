@@ -27,7 +27,7 @@ class ListSecurityGroupsRequest:
     }
 
     def __init__(self, limit=None, offset=None):
-        """ListSecurityGroupsRequest
+        r"""ListSecurityGroupsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListSecurityGroupsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSecurityGroupsRequest.
+        r"""Gets the limit of this ListSecurityGroupsRequest.
 
         查询返回边缘安全组列表数量。取值范围：0~1000。
 
@@ -61,7 +61,7 @@ class ListSecurityGroupsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSecurityGroupsRequest.
+        r"""Sets the limit of this ListSecurityGroupsRequest.
 
         查询返回边缘安全组列表数量。取值范围：0~1000。
 
@@ -72,7 +72,7 @@ class ListSecurityGroupsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSecurityGroupsRequest.
+        r"""Gets the offset of this ListSecurityGroupsRequest.
 
         查询的偏移量。
 
@@ -83,7 +83,7 @@ class ListSecurityGroupsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSecurityGroupsRequest.
+        r"""Sets the offset of this ListSecurityGroupsRequest.
 
         查询的偏移量。
 

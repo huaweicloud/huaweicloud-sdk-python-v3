@@ -30,7 +30,7 @@ class ListHealthChecksResponse(SdkResponse):
     }
 
     def __init__(self, health_checks=None, page_info=None, request_id=None):
-        """ListHealthChecksResponse
+        r"""ListHealthChecksResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListHealthChecksResponse(SdkResponse):
 
     @property
     def health_checks(self):
-        """Gets the health_checks of this ListHealthChecksResponse.
+        r"""Gets the health_checks of this ListHealthChecksResponse.
 
         健康检查列表。
 
@@ -69,7 +69,7 @@ class ListHealthChecksResponse(SdkResponse):
 
     @health_checks.setter
     def health_checks(self, health_checks):
-        """Sets the health_checks of this ListHealthChecksResponse.
+        r"""Sets the health_checks of this ListHealthChecksResponse.
 
         健康检查列表。
 
@@ -80,7 +80,7 @@ class ListHealthChecksResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListHealthChecksResponse.
+        r"""Gets the page_info of this ListHealthChecksResponse.
 
         :return: The page_info of this ListHealthChecksResponse.
         :rtype: :class:`huaweicloudsdkga.v1.PageInfo`
@@ -89,7 +89,7 @@ class ListHealthChecksResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListHealthChecksResponse.
+        r"""Sets the page_info of this ListHealthChecksResponse.
 
         :param page_info: The page_info of this ListHealthChecksResponse.
         :type page_info: :class:`huaweicloudsdkga.v1.PageInfo`
@@ -98,7 +98,7 @@ class ListHealthChecksResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListHealthChecksResponse.
+        r"""Gets the request_id of this ListHealthChecksResponse.
 
         请求ID。
 
@@ -109,7 +109,7 @@ class ListHealthChecksResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListHealthChecksResponse.
+        r"""Sets the request_id of this ListHealthChecksResponse.
 
         请求ID。
 

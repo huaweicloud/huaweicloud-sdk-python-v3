@@ -25,7 +25,7 @@ class UnlockTargetEcsRequest:
     }
 
     def __init__(self, task_id=None):
-        """UnlockTargetEcsRequest
+        r"""UnlockTargetEcsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UnlockTargetEcsRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this UnlockTargetEcsRequest.
+        r"""Gets the task_id of this UnlockTargetEcsRequest.
 
         指定任务的ID
 
@@ -53,7 +53,7 @@ class UnlockTargetEcsRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this UnlockTargetEcsRequest.
+        r"""Sets the task_id of this UnlockTargetEcsRequest.
 
         指定任务的ID
 

@@ -33,7 +33,7 @@ class ListEventsRequest:
     }
 
     def __init__(self, type=None, enterprise_project_id=None, limit=None, marker=None, body=None):
-        """ListEventsRequest
+        r"""ListEventsRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListEventsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListEventsRequest.
+        r"""Gets the type of this ListEventsRequest.
 
         查询类型。type=active_alert代表查询活动告警，type=history_alert代表查询历史告警。不传或者传其他值则返回指定查询条件的所有信息。
 
@@ -82,7 +82,7 @@ class ListEventsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListEventsRequest.
+        r"""Sets the type of this ListEventsRequest.
 
         查询类型。type=active_alert代表查询活动告警，type=history_alert代表查询历史告警。不传或者传其他值则返回指定查询条件的所有信息。
 
@@ -93,7 +93,7 @@ class ListEventsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListEventsRequest.
+        r"""Gets the enterprise_project_id of this ListEventsRequest.
 
         企业项目id。 - 查询单个企业项目下实例，填写企业项目id。 - 查询所有企业项目下实例，填写“all_granted_eps”。
 
@@ -104,7 +104,7 @@ class ListEventsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListEventsRequest.
+        r"""Sets the enterprise_project_id of this ListEventsRequest.
 
         企业项目id。 - 查询单个企业项目下实例，填写企业项目id。 - 查询所有企业项目下实例，填写“all_granted_eps”。
 
@@ -115,7 +115,7 @@ class ListEventsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListEventsRequest.
+        r"""Gets the limit of this ListEventsRequest.
 
         不填默认值为1000
 
@@ -126,7 +126,7 @@ class ListEventsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEventsRequest.
+        r"""Sets the limit of this ListEventsRequest.
 
         不填默认值为1000
 
@@ -137,7 +137,7 @@ class ListEventsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListEventsRequest.
+        r"""Gets the marker of this ListEventsRequest.
 
         分页标记，初始为0，后续值为返回体中的next_marker
 
@@ -148,7 +148,7 @@ class ListEventsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListEventsRequest.
+        r"""Sets the marker of this ListEventsRequest.
 
         分页标记，初始为0，后续值为返回体中的next_marker
 
@@ -159,7 +159,7 @@ class ListEventsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListEventsRequest.
+        r"""Gets the body of this ListEventsRequest.
 
         :return: The body of this ListEventsRequest.
         :rtype: :class:`huaweicloudsdkaom.v2.EventQueryParam2`
@@ -168,7 +168,7 @@ class ListEventsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListEventsRequest.
+        r"""Sets the body of this ListEventsRequest.
 
         :param body: The body of this ListEventsRequest.
         :type body: :class:`huaweicloudsdkaom.v2.EventQueryParam2`

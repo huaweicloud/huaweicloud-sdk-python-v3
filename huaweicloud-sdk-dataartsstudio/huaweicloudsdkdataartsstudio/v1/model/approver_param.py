@@ -37,7 +37,7 @@ class ApproverParam:
     }
 
     def __init__(self, app_name=None, approver_name=None, user_id=None, email=None, phone_number=None, email_notify=None, sms_notify=None):
-        """ApproverParam
+        r"""ApproverParam
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class ApproverParam:
 
     @property
     def app_name(self):
-        """Gets the app_name of this ApproverParam.
+        r"""Gets the app_name of this ApproverParam.
 
         调用审核系统的应用名称，开发人员自己定。
 
@@ -94,7 +94,7 @@ class ApproverParam:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ApproverParam.
+        r"""Sets the app_name of this ApproverParam.
 
         调用审核系统的应用名称，开发人员自己定。
 
@@ -105,7 +105,7 @@ class ApproverParam:
 
     @property
     def approver_name(self):
-        """Gets the approver_name of this ApproverParam.
+        r"""Gets the approver_name of this ApproverParam.
 
         审批人姓名。
 
@@ -116,7 +116,7 @@ class ApproverParam:
 
     @approver_name.setter
     def approver_name(self, approver_name):
-        """Sets the approver_name of this ApproverParam.
+        r"""Sets the approver_name of this ApproverParam.
 
         审批人姓名。
 
@@ -127,7 +127,7 @@ class ApproverParam:
 
     @property
     def user_id(self):
-        """Gets the user_id of this ApproverParam.
+        r"""Gets the user_id of this ApproverParam.
 
         审批人ID。
 
@@ -138,7 +138,7 @@ class ApproverParam:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ApproverParam.
+        r"""Sets the user_id of this ApproverParam.
 
         审批人ID。
 
@@ -149,7 +149,7 @@ class ApproverParam:
 
     @property
     def email(self):
-        """Gets the email of this ApproverParam.
+        r"""Gets the email of this ApproverParam.
 
         邮箱地址。
 
@@ -160,7 +160,7 @@ class ApproverParam:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this ApproverParam.
+        r"""Sets the email of this ApproverParam.
 
         邮箱地址。
 
@@ -171,7 +171,7 @@ class ApproverParam:
 
     @property
     def phone_number(self):
-        """Gets the phone_number of this ApproverParam.
+        r"""Gets the phone_number of this ApproverParam.
 
         电话号码。
 
@@ -182,7 +182,7 @@ class ApproverParam:
 
     @phone_number.setter
     def phone_number(self, phone_number):
-        """Sets the phone_number of this ApproverParam.
+        r"""Sets the phone_number of this ApproverParam.
 
         电话号码。
 
@@ -193,7 +193,7 @@ class ApproverParam:
 
     @property
     def email_notify(self):
-        """Gets the email_notify of this ApproverParam.
+        r"""Gets the email_notify of this ApproverParam.
 
         邮件通知。
 
@@ -204,7 +204,7 @@ class ApproverParam:
 
     @email_notify.setter
     def email_notify(self, email_notify):
-        """Sets the email_notify of this ApproverParam.
+        r"""Sets the email_notify of this ApproverParam.
 
         邮件通知。
 
@@ -215,7 +215,7 @@ class ApproverParam:
 
     @property
     def sms_notify(self):
-        """Gets the sms_notify of this ApproverParam.
+        r"""Gets the sms_notify of this ApproverParam.
 
         短信通知。
 
@@ -226,7 +226,7 @@ class ApproverParam:
 
     @sms_notify.setter
     def sms_notify(self, sms_notify):
-        """Sets the sms_notify of this ApproverParam.
+        r"""Sets the sms_notify of this ApproverParam.
 
         短信通知。
 

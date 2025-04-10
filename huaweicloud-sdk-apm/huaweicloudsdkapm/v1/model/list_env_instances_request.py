@@ -27,7 +27,7 @@ class ListEnvInstancesRequest:
     }
 
     def __init__(self, x_business_id=None, body=None):
-        """ListEnvInstancesRequest
+        r"""ListEnvInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListEnvInstancesRequest:
 
     @property
     def x_business_id(self):
-        """Gets the x_business_id of this ListEnvInstancesRequest.
+        r"""Gets the x_business_id of this ListEnvInstancesRequest.
 
         应用id。
 
@@ -60,7 +60,7 @@ class ListEnvInstancesRequest:
 
     @x_business_id.setter
     def x_business_id(self, x_business_id):
-        """Sets the x_business_id of this ListEnvInstancesRequest.
+        r"""Sets the x_business_id of this ListEnvInstancesRequest.
 
         应用id。
 
@@ -71,7 +71,7 @@ class ListEnvInstancesRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListEnvInstancesRequest.
+        r"""Gets the body of this ListEnvInstancesRequest.
 
         :return: The body of this ListEnvInstancesRequest.
         :rtype: :class:`huaweicloudsdkapm.v1.InstanceSearchParam`
@@ -80,7 +80,7 @@ class ListEnvInstancesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListEnvInstancesRequest.
+        r"""Sets the body of this ListEnvInstancesRequest.
 
         :param body: The body of this ListEnvInstancesRequest.
         :type body: :class:`huaweicloudsdkapm.v1.InstanceSearchParam`

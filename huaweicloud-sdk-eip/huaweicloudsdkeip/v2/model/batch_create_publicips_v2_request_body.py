@@ -31,7 +31,7 @@ class BatchCreatePublicipsV2RequestBody:
     }
 
     def __init__(self, bandwidth=None, publicip=None, publicip_number=None, enterprise_project_id=None):
-        """BatchCreatePublicipsV2RequestBody
+        r"""BatchCreatePublicipsV2RequestBody
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class BatchCreatePublicipsV2RequestBody:
 
     @property
     def bandwidth(self):
-        """Gets the bandwidth of this BatchCreatePublicipsV2RequestBody.
+        r"""Gets the bandwidth of this BatchCreatePublicipsV2RequestBody.
 
         :return: The bandwidth of this BatchCreatePublicipsV2RequestBody.
         :rtype: :class:`huaweicloudsdkeip.v2.BatchBandwidth`
@@ -69,7 +69,7 @@ class BatchCreatePublicipsV2RequestBody:
 
     @bandwidth.setter
     def bandwidth(self, bandwidth):
-        """Sets the bandwidth of this BatchCreatePublicipsV2RequestBody.
+        r"""Sets the bandwidth of this BatchCreatePublicipsV2RequestBody.
 
         :param bandwidth: The bandwidth of this BatchCreatePublicipsV2RequestBody.
         :type bandwidth: :class:`huaweicloudsdkeip.v2.BatchBandwidth`
@@ -78,7 +78,7 @@ class BatchCreatePublicipsV2RequestBody:
 
     @property
     def publicip(self):
-        """Gets the publicip of this BatchCreatePublicipsV2RequestBody.
+        r"""Gets the publicip of this BatchCreatePublicipsV2RequestBody.
 
         :return: The publicip of this BatchCreatePublicipsV2RequestBody.
         :rtype: :class:`huaweicloudsdkeip.v2.BatchPublicIp`
@@ -87,7 +87,7 @@ class BatchCreatePublicipsV2RequestBody:
 
     @publicip.setter
     def publicip(self, publicip):
-        """Sets the publicip of this BatchCreatePublicipsV2RequestBody.
+        r"""Sets the publicip of this BatchCreatePublicipsV2RequestBody.
 
         :param publicip: The publicip of this BatchCreatePublicipsV2RequestBody.
         :type publicip: :class:`huaweicloudsdkeip.v2.BatchPublicIp`
@@ -96,7 +96,7 @@ class BatchCreatePublicipsV2RequestBody:
 
     @property
     def publicip_number(self):
-        """Gets the publicip_number of this BatchCreatePublicipsV2RequestBody.
+        r"""Gets the publicip_number of this BatchCreatePublicipsV2RequestBody.
 
         批量创建EIP的个数
 
@@ -107,7 +107,7 @@ class BatchCreatePublicipsV2RequestBody:
 
     @publicip_number.setter
     def publicip_number(self, publicip_number):
-        """Sets the publicip_number of this BatchCreatePublicipsV2RequestBody.
+        r"""Sets the publicip_number of this BatchCreatePublicipsV2RequestBody.
 
         批量创建EIP的个数
 
@@ -118,7 +118,7 @@ class BatchCreatePublicipsV2RequestBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this BatchCreatePublicipsV2RequestBody.
+        r"""Gets the enterprise_project_id of this BatchCreatePublicipsV2RequestBody.
 
         企业项目id
 
@@ -129,7 +129,7 @@ class BatchCreatePublicipsV2RequestBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this BatchCreatePublicipsV2RequestBody.
+        r"""Sets the enterprise_project_id of this BatchCreatePublicipsV2RequestBody.
 
         企业项目id
 

@@ -29,7 +29,7 @@ class StandardResponseResult:
     }
 
     def __init__(self, data=None, total_records=None, total_pages=None):
-        """StandardResponseResult
+        r"""StandardResponseResult
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class StandardResponseResult:
 
     @property
     def data(self):
-        """Gets the data of this StandardResponseResult.
+        r"""Gets the data of this StandardResponseResult.
 
         符合条件的结果列表
 
@@ -68,7 +68,7 @@ class StandardResponseResult:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this StandardResponseResult.
+        r"""Sets the data of this StandardResponseResult.
 
         符合条件的结果列表
 
@@ -79,7 +79,7 @@ class StandardResponseResult:
 
     @property
     def total_records(self):
-        """Gets the total_records of this StandardResponseResult.
+        r"""Gets the total_records of this StandardResponseResult.
 
         符合条件的结果总数
 
@@ -90,7 +90,7 @@ class StandardResponseResult:
 
     @total_records.setter
     def total_records(self, total_records):
-        """Sets the total_records of this StandardResponseResult.
+        r"""Sets the total_records of this StandardResponseResult.
 
         符合条件的结果总数
 
@@ -101,7 +101,7 @@ class StandardResponseResult:
 
     @property
     def total_pages(self):
-        """Gets the total_pages of this StandardResponseResult.
+        r"""Gets the total_pages of this StandardResponseResult.
 
         符合条件的结果总页数
 
@@ -112,7 +112,7 @@ class StandardResponseResult:
 
     @total_pages.setter
     def total_pages(self, total_pages):
-        """Sets the total_pages of this StandardResponseResult.
+        r"""Sets the total_pages of this StandardResponseResult.
 
         符合条件的结果总页数
 

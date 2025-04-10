@@ -25,7 +25,7 @@ class DeleteTasksReq:
     }
 
     def __init__(self, ids=None):
-        """DeleteTasksReq
+        r"""DeleteTasksReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteTasksReq:
 
     @property
     def ids(self):
-        """Gets the ids of this DeleteTasksReq.
+        r"""Gets the ids of this DeleteTasksReq.
 
         待删除的任务ID列表
 
@@ -53,7 +53,7 @@ class DeleteTasksReq:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this DeleteTasksReq.
+        r"""Sets the ids of this DeleteTasksReq.
 
         待删除的任务ID列表
 

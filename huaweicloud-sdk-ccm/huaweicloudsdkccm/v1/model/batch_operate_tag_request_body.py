@@ -25,7 +25,7 @@ class BatchOperateTagRequestBody:
     }
 
     def __init__(self, tags=None):
-        """BatchOperateTagRequestBody
+        r"""BatchOperateTagRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchOperateTagRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchOperateTagRequestBody.
+        r"""Gets the tags of this BatchOperateTagRequestBody.
 
         标签列表，key和value键值对的集合。
 
@@ -54,7 +54,7 @@ class BatchOperateTagRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchOperateTagRequestBody.
+        r"""Sets the tags of this BatchOperateTagRequestBody.
 
         标签列表，key和value键值对的集合。
 

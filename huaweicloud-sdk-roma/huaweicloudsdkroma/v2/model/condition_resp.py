@@ -41,7 +41,7 @@ class ConditionResp:
     }
 
     def __init__(self, req_param_name=None, sys_param_name=None, cookie_param_name=None, condition_type=None, condition_origin=None, condition_value=None, id=None, req_param_id=None, req_param_location=None):
-        """ConditionResp
+        r"""ConditionResp
 
         The model defined in huaweicloud sdk
 
@@ -97,7 +97,7 @@ class ConditionResp:
 
     @property
     def req_param_name(self):
-        """Gets the req_param_name of this ConditionResp.
+        r"""Gets the req_param_name of this ConditionResp.
 
         关联的请求参数对象名称。策略类型为param时必选
 
@@ -108,7 +108,7 @@ class ConditionResp:
 
     @req_param_name.setter
     def req_param_name(self, req_param_name):
-        """Sets the req_param_name of this ConditionResp.
+        r"""Sets the req_param_name of this ConditionResp.
 
         关联的请求参数对象名称。策略类型为param时必选
 
@@ -119,7 +119,7 @@ class ConditionResp:
 
     @property
     def sys_param_name(self):
-        """Gets the sys_param_name of this ConditionResp.
+        r"""Gets the sys_param_name of this ConditionResp.
 
         系统参数名称。策略类型为system时必选。支持以下系统参数 - req_path：请求路径。如 /a/b - req_method：请求方法。如 GET - reqPath：请求路径，废弃。如 /a/b - reqMethod：请求方法，废弃。如 GET 
 
@@ -130,7 +130,7 @@ class ConditionResp:
 
     @sys_param_name.setter
     def sys_param_name(self, sys_param_name):
-        """Sets the sys_param_name of this ConditionResp.
+        r"""Sets the sys_param_name of this ConditionResp.
 
         系统参数名称。策略类型为system时必选。支持以下系统参数 - req_path：请求路径。如 /a/b - req_method：请求方法。如 GET - reqPath：请求路径，废弃。如 /a/b - reqMethod：请求方法，废弃。如 GET 
 
@@ -141,7 +141,7 @@ class ConditionResp:
 
     @property
     def cookie_param_name(self):
-        """Gets the cookie_param_name of this ConditionResp.
+        r"""Gets the cookie_param_name of this ConditionResp.
 
         COOKIE参数名称;策略类型为cookie时必选
 
@@ -152,7 +152,7 @@ class ConditionResp:
 
     @cookie_param_name.setter
     def cookie_param_name(self, cookie_param_name):
-        """Sets the cookie_param_name of this ConditionResp.
+        r"""Sets the cookie_param_name of this ConditionResp.
 
         COOKIE参数名称;策略类型为cookie时必选
 
@@ -163,7 +163,7 @@ class ConditionResp:
 
     @property
     def condition_type(self):
-        """Gets the condition_type of this ConditionResp.
+        r"""Gets the condition_type of this ConditionResp.
 
         策略条件 - exact：绝对匹配 - enum：枚举 - pattern：正则  策略类型为param或cookie时必选 
 
@@ -174,7 +174,7 @@ class ConditionResp:
 
     @condition_type.setter
     def condition_type(self, condition_type):
-        """Sets the condition_type of this ConditionResp.
+        r"""Sets the condition_type of this ConditionResp.
 
         策略条件 - exact：绝对匹配 - enum：枚举 - pattern：正则  策略类型为param或cookie时必选 
 
@@ -185,7 +185,7 @@ class ConditionResp:
 
     @property
     def condition_origin(self):
-        """Gets the condition_origin of this ConditionResp.
+        r"""Gets the condition_origin of this ConditionResp.
 
         策略类型 - param：参数 - source：源IP - system：系统参数 - cookie: COOKIE参数
 
@@ -196,7 +196,7 @@ class ConditionResp:
 
     @condition_origin.setter
     def condition_origin(self, condition_origin):
-        """Sets the condition_origin of this ConditionResp.
+        r"""Sets the condition_origin of this ConditionResp.
 
         策略类型 - param：参数 - source：源IP - system：系统参数 - cookie: COOKIE参数
 
@@ -207,7 +207,7 @@ class ConditionResp:
 
     @property
     def condition_value(self):
-        """Gets the condition_value of this ConditionResp.
+        r"""Gets the condition_value of this ConditionResp.
 
         策略值;策略类型为param，source,cookie时必填
 
@@ -218,7 +218,7 @@ class ConditionResp:
 
     @condition_value.setter
     def condition_value(self, condition_value):
-        """Sets the condition_value of this ConditionResp.
+        r"""Sets the condition_value of this ConditionResp.
 
         策略值;策略类型为param，source,cookie时必填
 
@@ -229,7 +229,7 @@ class ConditionResp:
 
     @property
     def id(self):
-        """Gets the id of this ConditionResp.
+        r"""Gets the id of this ConditionResp.
 
         编号
 
@@ -240,7 +240,7 @@ class ConditionResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ConditionResp.
+        r"""Sets the id of this ConditionResp.
 
         编号
 
@@ -251,7 +251,7 @@ class ConditionResp:
 
     @property
     def req_param_id(self):
-        """Gets the req_param_id of this ConditionResp.
+        r"""Gets the req_param_id of this ConditionResp.
 
         关联的请求参数对象编号
 
@@ -262,7 +262,7 @@ class ConditionResp:
 
     @req_param_id.setter
     def req_param_id(self, req_param_id):
-        """Sets the req_param_id of this ConditionResp.
+        r"""Sets the req_param_id of this ConditionResp.
 
         关联的请求参数对象编号
 
@@ -273,7 +273,7 @@ class ConditionResp:
 
     @property
     def req_param_location(self):
-        """Gets the req_param_location of this ConditionResp.
+        r"""Gets the req_param_location of this ConditionResp.
 
         关联的请求参数对象位置
 
@@ -284,7 +284,7 @@ class ConditionResp:
 
     @req_param_location.setter
     def req_param_location(self, req_param_location):
-        """Sets the req_param_location of this ConditionResp.
+        r"""Sets the req_param_location of this ConditionResp.
 
         关联的请求参数对象位置
 

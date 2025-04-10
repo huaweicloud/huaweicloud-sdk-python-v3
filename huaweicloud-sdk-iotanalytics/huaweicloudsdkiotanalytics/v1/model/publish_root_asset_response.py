@@ -24,7 +24,7 @@ class PublishRootAssetResponse(SdkResponse):
     }
 
     def __init__(self):
-        """PublishRootAssetResponse
+        r"""PublishRootAssetResponse
 
         The model defined in huaweicloud sdk
 

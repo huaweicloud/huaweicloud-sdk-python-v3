@@ -25,7 +25,7 @@ class OpenAPISpec:
     }
 
     def __init__(self, spec=None):
-        """OpenAPISpec
+        r"""OpenAPISpec
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class OpenAPISpec:
 
     @property
     def spec(self):
-        """Gets the spec of this OpenAPISpec.
+        r"""Gets the spec of this OpenAPISpec.
 
         :return: The spec of this OpenAPISpec.
         :rtype: :class:`huaweicloudsdkcce.v3.OpenAPISpecSpec`
@@ -52,7 +52,7 @@ class OpenAPISpec:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this OpenAPISpec.
+        r"""Sets the spec of this OpenAPISpec.
 
         :param spec: The spec of this OpenAPISpec.
         :type spec: :class:`huaweicloudsdkcce.v3.OpenAPISpecSpec`

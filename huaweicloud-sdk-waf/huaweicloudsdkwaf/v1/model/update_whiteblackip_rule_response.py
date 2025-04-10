@@ -44,7 +44,7 @@ class UpdateWhiteblackipRuleResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, policyid=None, addr=None, description=None, white=None, time_mode=None, start=None, terminal=None, ip_group=None):
-        """UpdateWhiteblackipRuleResponse
+        r"""UpdateWhiteblackipRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class UpdateWhiteblackipRuleResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateWhiteblackipRuleResponse.
+        r"""Gets the id of this UpdateWhiteblackipRuleResponse.
 
         规则id
 
@@ -118,7 +118,7 @@ class UpdateWhiteblackipRuleResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateWhiteblackipRuleResponse.
+        r"""Sets the id of this UpdateWhiteblackipRuleResponse.
 
         规则id
 
@@ -129,7 +129,7 @@ class UpdateWhiteblackipRuleResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateWhiteblackipRuleResponse.
+        r"""Gets the name of this UpdateWhiteblackipRuleResponse.
 
         黑白名单规则名称
 
@@ -140,7 +140,7 @@ class UpdateWhiteblackipRuleResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateWhiteblackipRuleResponse.
+        r"""Sets the name of this UpdateWhiteblackipRuleResponse.
 
         黑白名单规则名称
 
@@ -151,7 +151,7 @@ class UpdateWhiteblackipRuleResponse(SdkResponse):
 
     @property
     def policyid(self):
-        """Gets the policyid of this UpdateWhiteblackipRuleResponse.
+        r"""Gets the policyid of this UpdateWhiteblackipRuleResponse.
 
         策略id
 
@@ -162,7 +162,7 @@ class UpdateWhiteblackipRuleResponse(SdkResponse):
 
     @policyid.setter
     def policyid(self, policyid):
-        """Sets the policyid of this UpdateWhiteblackipRuleResponse.
+        r"""Sets the policyid of this UpdateWhiteblackipRuleResponse.
 
         策略id
 
@@ -173,7 +173,7 @@ class UpdateWhiteblackipRuleResponse(SdkResponse):
 
     @property
     def addr(self):
-        """Gets the addr of this UpdateWhiteblackipRuleResponse.
+        r"""Gets the addr of this UpdateWhiteblackipRuleResponse.
 
         黑白名单Ip/IP段
 
@@ -184,7 +184,7 @@ class UpdateWhiteblackipRuleResponse(SdkResponse):
 
     @addr.setter
     def addr(self, addr):
-        """Sets the addr of this UpdateWhiteblackipRuleResponse.
+        r"""Sets the addr of this UpdateWhiteblackipRuleResponse.
 
         黑白名单Ip/IP段
 
@@ -195,7 +195,7 @@ class UpdateWhiteblackipRuleResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdateWhiteblackipRuleResponse.
+        r"""Gets the description of this UpdateWhiteblackipRuleResponse.
 
         黑白名单规则描述
 
@@ -206,7 +206,7 @@ class UpdateWhiteblackipRuleResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateWhiteblackipRuleResponse.
+        r"""Sets the description of this UpdateWhiteblackipRuleResponse.
 
         黑白名单规则描述
 
@@ -217,7 +217,7 @@ class UpdateWhiteblackipRuleResponse(SdkResponse):
 
     @property
     def white(self):
-        """Gets the white of this UpdateWhiteblackipRuleResponse.
+        r"""Gets the white of this UpdateWhiteblackipRuleResponse.
 
         防护动作：  - 0 拦截  - 1 放行  - 2 仅记录
 
@@ -228,7 +228,7 @@ class UpdateWhiteblackipRuleResponse(SdkResponse):
 
     @white.setter
     def white(self, white):
-        """Sets the white of this UpdateWhiteblackipRuleResponse.
+        r"""Sets the white of this UpdateWhiteblackipRuleResponse.
 
         防护动作：  - 0 拦截  - 1 放行  - 2 仅记录
 
@@ -239,7 +239,7 @@ class UpdateWhiteblackipRuleResponse(SdkResponse):
 
     @property
     def time_mode(self):
-        """Gets the time_mode of this UpdateWhiteblackipRuleResponse.
+        r"""Gets the time_mode of this UpdateWhiteblackipRuleResponse.
 
         生效模式，默认为permanent（立即生效）
 
@@ -250,7 +250,7 @@ class UpdateWhiteblackipRuleResponse(SdkResponse):
 
     @time_mode.setter
     def time_mode(self, time_mode):
-        """Sets the time_mode of this UpdateWhiteblackipRuleResponse.
+        r"""Sets the time_mode of this UpdateWhiteblackipRuleResponse.
 
         生效模式，默认为permanent（立即生效）
 
@@ -261,7 +261,7 @@ class UpdateWhiteblackipRuleResponse(SdkResponse):
 
     @property
     def start(self):
-        """Gets the start of this UpdateWhiteblackipRuleResponse.
+        r"""Gets the start of this UpdateWhiteblackipRuleResponse.
 
         规则生效开始时间，生效模式为自定义时，此字段才有效
 
@@ -272,7 +272,7 @@ class UpdateWhiteblackipRuleResponse(SdkResponse):
 
     @start.setter
     def start(self, start):
-        """Sets the start of this UpdateWhiteblackipRuleResponse.
+        r"""Sets the start of this UpdateWhiteblackipRuleResponse.
 
         规则生效开始时间，生效模式为自定义时，此字段才有效
 
@@ -283,7 +283,7 @@ class UpdateWhiteblackipRuleResponse(SdkResponse):
 
     @property
     def terminal(self):
-        """Gets the terminal of this UpdateWhiteblackipRuleResponse.
+        r"""Gets the terminal of this UpdateWhiteblackipRuleResponse.
 
         规则生效结束时间，生效模式为自定义时，此字段才有效
 
@@ -294,7 +294,7 @@ class UpdateWhiteblackipRuleResponse(SdkResponse):
 
     @terminal.setter
     def terminal(self, terminal):
-        """Sets the terminal of this UpdateWhiteblackipRuleResponse.
+        r"""Sets the terminal of this UpdateWhiteblackipRuleResponse.
 
         规则生效结束时间，生效模式为自定义时，此字段才有效
 
@@ -305,7 +305,7 @@ class UpdateWhiteblackipRuleResponse(SdkResponse):
 
     @property
     def ip_group(self):
-        """Gets the ip_group of this UpdateWhiteblackipRuleResponse.
+        r"""Gets the ip_group of this UpdateWhiteblackipRuleResponse.
 
         :return: The ip_group of this UpdateWhiteblackipRuleResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.IpGroup`
@@ -314,7 +314,7 @@ class UpdateWhiteblackipRuleResponse(SdkResponse):
 
     @ip_group.setter
     def ip_group(self, ip_group):
-        """Sets the ip_group of this UpdateWhiteblackipRuleResponse.
+        r"""Sets the ip_group of this UpdateWhiteblackipRuleResponse.
 
         :param ip_group: The ip_group of this UpdateWhiteblackipRuleResponse.
         :type ip_group: :class:`huaweicloudsdkwaf.v1.IpGroup`

@@ -29,7 +29,7 @@ class VerificationCodeDTO:
     }
 
     def __init__(self, contact=None, verification_code=None, country=None):
-        """VerificationCodeDTO
+        r"""VerificationCodeDTO
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class VerificationCodeDTO:
 
     @property
     def contact(self):
-        """Gets the contact of this VerificationCodeDTO.
+        r"""Gets the contact of this VerificationCodeDTO.
 
         后台自动识别是手机号还是邮箱。 如果为手机号，必须加上国家码，例如中国大陆手机为“+86xxxxxxxxxxx”，当填写手机号时 “country”参数必填。 
 
@@ -67,7 +67,7 @@ class VerificationCodeDTO:
 
     @contact.setter
     def contact(self, contact):
-        """Sets the contact of this VerificationCodeDTO.
+        r"""Sets the contact of this VerificationCodeDTO.
 
         后台自动识别是手机号还是邮箱。 如果为手机号，必须加上国家码，例如中国大陆手机为“+86xxxxxxxxxxx”，当填写手机号时 “country”参数必填。 
 
@@ -78,7 +78,7 @@ class VerificationCodeDTO:
 
     @property
     def verification_code(self):
-        """Gets the verification_code of this VerificationCodeDTO.
+        r"""Gets the verification_code of this VerificationCodeDTO.
 
         验证码，在校验的场景时需要携带。
 
@@ -89,7 +89,7 @@ class VerificationCodeDTO:
 
     @verification_code.setter
     def verification_code(self, verification_code):
-        """Sets the verification_code of this VerificationCodeDTO.
+        r"""Sets the verification_code of this VerificationCodeDTO.
 
         验证码，在校验的场景时需要携带。
 
@@ -100,7 +100,7 @@ class VerificationCodeDTO:
 
     @property
     def country(self):
-        """Gets the country of this VerificationCodeDTO.
+        r"""Gets the country of this VerificationCodeDTO.
 
         [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
@@ -111,7 +111,7 @@ class VerificationCodeDTO:
 
     @country.setter
     def country(self, country):
-        """Sets the country of this VerificationCodeDTO.
+        r"""Sets the country of this VerificationCodeDTO.
 
         [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 

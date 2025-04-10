@@ -27,7 +27,7 @@ class LatencyStats:
     }
 
     def __init__(self, max_latency=None, avg_latency=None):
-        """LatencyStats
+        r"""LatencyStats
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class LatencyStats:
 
     @property
     def max_latency(self):
-        """Gets the max_latency of this LatencyStats.
+        r"""Gets the max_latency of this LatencyStats.
 
         最大延时
 
@@ -61,7 +61,7 @@ class LatencyStats:
 
     @max_latency.setter
     def max_latency(self, max_latency):
-        """Sets the max_latency of this LatencyStats.
+        r"""Sets the max_latency of this LatencyStats.
 
         最大延时
 
@@ -72,7 +72,7 @@ class LatencyStats:
 
     @property
     def avg_latency(self):
-        """Gets the avg_latency of this LatencyStats.
+        r"""Gets the avg_latency of this LatencyStats.
 
         平均延时
 
@@ -83,7 +83,7 @@ class LatencyStats:
 
     @avg_latency.setter
     def avg_latency(self, avg_latency):
-        """Sets the avg_latency of this LatencyStats.
+        r"""Sets the avg_latency of this LatencyStats.
 
         平均延时
 

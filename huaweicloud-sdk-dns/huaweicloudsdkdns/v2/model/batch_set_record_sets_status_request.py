@@ -25,7 +25,7 @@ class BatchSetRecordSetsStatusRequest:
     }
 
     def __init__(self, body=None):
-        """BatchSetRecordSetsStatusRequest
+        r"""BatchSetRecordSetsStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchSetRecordSetsStatusRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchSetRecordSetsStatusRequest.
+        r"""Gets the body of this BatchSetRecordSetsStatusRequest.
 
         :return: The body of this BatchSetRecordSetsStatusRequest.
         :rtype: :class:`huaweicloudsdkdns.v2.BatchSetRecordSetsStatusRequestBody`
@@ -52,7 +52,7 @@ class BatchSetRecordSetsStatusRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchSetRecordSetsStatusRequest.
+        r"""Sets the body of this BatchSetRecordSetsStatusRequest.
 
         :param body: The body of this BatchSetRecordSetsStatusRequest.
         :type body: :class:`huaweicloudsdkdns.v2.BatchSetRecordSetsStatusRequestBody`

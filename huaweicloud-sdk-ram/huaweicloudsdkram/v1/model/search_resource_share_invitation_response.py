@@ -28,7 +28,7 @@ class SearchResourceShareInvitationResponse(SdkResponse):
     }
 
     def __init__(self, resource_share_invitations=None, page_info=None):
-        """SearchResourceShareInvitationResponse
+        r"""SearchResourceShareInvitationResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class SearchResourceShareInvitationResponse(SdkResponse):
 
     @property
     def resource_share_invitations(self):
-        """Gets the resource_share_invitations of this SearchResourceShareInvitationResponse.
+        r"""Gets the resource_share_invitations of this SearchResourceShareInvitationResponse.
 
         :return: The resource_share_invitations of this SearchResourceShareInvitationResponse.
         :rtype: list[:class:`huaweicloudsdkram.v1.ResourceShareInvitation`]
@@ -60,7 +60,7 @@ class SearchResourceShareInvitationResponse(SdkResponse):
 
     @resource_share_invitations.setter
     def resource_share_invitations(self, resource_share_invitations):
-        """Sets the resource_share_invitations of this SearchResourceShareInvitationResponse.
+        r"""Sets the resource_share_invitations of this SearchResourceShareInvitationResponse.
 
         :param resource_share_invitations: The resource_share_invitations of this SearchResourceShareInvitationResponse.
         :type resource_share_invitations: list[:class:`huaweicloudsdkram.v1.ResourceShareInvitation`]
@@ -69,7 +69,7 @@ class SearchResourceShareInvitationResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this SearchResourceShareInvitationResponse.
+        r"""Gets the page_info of this SearchResourceShareInvitationResponse.
 
         :return: The page_info of this SearchResourceShareInvitationResponse.
         :rtype: :class:`huaweicloudsdkram.v1.PageInfo`
@@ -78,7 +78,7 @@ class SearchResourceShareInvitationResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this SearchResourceShareInvitationResponse.
+        r"""Sets the page_info of this SearchResourceShareInvitationResponse.
 
         :param page_info: The page_info of this SearchResourceShareInvitationResponse.
         :type page_info: :class:`huaweicloudsdkram.v1.PageInfo`

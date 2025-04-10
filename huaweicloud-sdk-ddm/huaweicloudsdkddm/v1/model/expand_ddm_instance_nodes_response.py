@@ -28,7 +28,7 @@ class ExpandDdmInstanceNodesResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, order_id=None):
-        """ExpandDdmInstanceNodesResponse
+        r"""ExpandDdmInstanceNodesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ExpandDdmInstanceNodesResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ExpandDdmInstanceNodesResponse.
+        r"""Gets the job_id of this ExpandDdmInstanceNodesResponse.
 
         任务ID，仅创建按需实例时会返回该参数。
 
@@ -62,7 +62,7 @@ class ExpandDdmInstanceNodesResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ExpandDdmInstanceNodesResponse.
+        r"""Sets the job_id of this ExpandDdmInstanceNodesResponse.
 
         任务ID，仅创建按需实例时会返回该参数。
 
@@ -73,7 +73,7 @@ class ExpandDdmInstanceNodesResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this ExpandDdmInstanceNodesResponse.
+        r"""Gets the order_id of this ExpandDdmInstanceNodesResponse.
 
         订单号，创建包年包月时返回该参数。
 
@@ -84,7 +84,7 @@ class ExpandDdmInstanceNodesResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ExpandDdmInstanceNodesResponse.
+        r"""Sets the order_id of this ExpandDdmInstanceNodesResponse.
 
         订单号，创建包年包月时返回该参数。
 

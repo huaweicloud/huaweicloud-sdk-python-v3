@@ -33,7 +33,7 @@ class ModifyApplicationRequestBody:
     }
 
     def __init__(self, id=None, description=None, description_en=None, permission_control=None, app_user_list=None):
-        """ModifyApplicationRequestBody
+        r"""ModifyApplicationRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class ModifyApplicationRequestBody:
 
     @property
     def id(self):
-        """Gets the id of this ModifyApplicationRequestBody.
+        r"""Gets the id of this ModifyApplicationRequestBody.
 
         应用ID。
 
@@ -78,7 +78,7 @@ class ModifyApplicationRequestBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ModifyApplicationRequestBody.
+        r"""Sets the id of this ModifyApplicationRequestBody.
 
         应用ID。
 
@@ -89,7 +89,7 @@ class ModifyApplicationRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this ModifyApplicationRequestBody.
+        r"""Gets the description of this ModifyApplicationRequestBody.
 
         应用的中文描述。
 
@@ -100,7 +100,7 @@ class ModifyApplicationRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ModifyApplicationRequestBody.
+        r"""Sets the description of this ModifyApplicationRequestBody.
 
         应用的中文描述。
 
@@ -111,7 +111,7 @@ class ModifyApplicationRequestBody:
 
     @property
     def description_en(self):
-        """Gets the description_en of this ModifyApplicationRequestBody.
+        r"""Gets the description_en of this ModifyApplicationRequestBody.
 
         应用的英文描述。
 
@@ -122,7 +122,7 @@ class ModifyApplicationRequestBody:
 
     @description_en.setter
     def description_en(self, description_en):
-        """Sets the description_en of this ModifyApplicationRequestBody.
+        r"""Sets the description_en of this ModifyApplicationRequestBody.
 
         应用的英文描述。
 
@@ -133,7 +133,7 @@ class ModifyApplicationRequestBody:
 
     @property
     def permission_control(self):
-        """Gets the permission_control of this ModifyApplicationRequestBody.
+        r"""Gets the permission_control of this ModifyApplicationRequestBody.
 
         app权限控制。 - NONE：关闭权限校验 - ALL：开启所有校验
 
@@ -144,7 +144,7 @@ class ModifyApplicationRequestBody:
 
     @permission_control.setter
     def permission_control(self, permission_control):
-        """Sets the permission_control of this ModifyApplicationRequestBody.
+        r"""Sets the permission_control of this ModifyApplicationRequestBody.
 
         app权限控制。 - NONE：关闭权限校验 - ALL：开启所有校验
 
@@ -155,7 +155,7 @@ class ModifyApplicationRequestBody:
 
     @property
     def app_user_list(self):
-        """Gets the app_user_list of this ModifyApplicationRequestBody.
+        r"""Gets the app_user_list of this ModifyApplicationRequestBody.
 
         应用责任人。
 
@@ -166,7 +166,7 @@ class ModifyApplicationRequestBody:
 
     @app_user_list.setter
     def app_user_list(self, app_user_list):
-        """Sets the app_user_list of this ModifyApplicationRequestBody.
+        r"""Sets the app_user_list of this ModifyApplicationRequestBody.
 
         应用责任人。
 

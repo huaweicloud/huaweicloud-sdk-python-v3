@@ -39,7 +39,7 @@ class CreateHarvestTaskInfoReq:
     }
 
     def __init__(self, domain=None, app_name=None, id=None, start_time=None, end_time=None, event_name=None, task_desc=None, package_info=None):
-        """CreateHarvestTaskInfoReq
+        r"""CreateHarvestTaskInfoReq
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class CreateHarvestTaskInfoReq:
 
     @property
     def domain(self):
-        """Gets the domain of this CreateHarvestTaskInfoReq.
+        r"""Gets the domain of this CreateHarvestTaskInfoReq.
 
         频道推流域名
 
@@ -97,7 +97,7 @@ class CreateHarvestTaskInfoReq:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this CreateHarvestTaskInfoReq.
+        r"""Sets the domain of this CreateHarvestTaskInfoReq.
 
         频道推流域名
 
@@ -108,7 +108,7 @@ class CreateHarvestTaskInfoReq:
 
     @property
     def app_name(self):
-        """Gets the app_name of this CreateHarvestTaskInfoReq.
+        r"""Gets the app_name of this CreateHarvestTaskInfoReq.
 
         组名或应用名
 
@@ -119,7 +119,7 @@ class CreateHarvestTaskInfoReq:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this CreateHarvestTaskInfoReq.
+        r"""Sets the app_name of this CreateHarvestTaskInfoReq.
 
         组名或应用名
 
@@ -130,7 +130,7 @@ class CreateHarvestTaskInfoReq:
 
     @property
     def id(self):
-        """Gets the id of this CreateHarvestTaskInfoReq.
+        r"""Gets the id of this CreateHarvestTaskInfoReq.
 
         频道ID。频道唯一标识，为必填项。
 
@@ -141,7 +141,7 @@ class CreateHarvestTaskInfoReq:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateHarvestTaskInfoReq.
+        r"""Sets the id of this CreateHarvestTaskInfoReq.
 
         频道ID。频道唯一标识，为必填项。
 
@@ -152,7 +152,7 @@ class CreateHarvestTaskInfoReq:
 
     @property
     def start_time(self):
-        """Gets the start_time of this CreateHarvestTaskInfoReq.
+        r"""Gets the start_time of this CreateHarvestTaskInfoReq.
 
         开始时间。Unix时间戳：单位是秒
 
@@ -163,7 +163,7 @@ class CreateHarvestTaskInfoReq:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this CreateHarvestTaskInfoReq.
+        r"""Sets the start_time of this CreateHarvestTaskInfoReq.
 
         开始时间。Unix时间戳：单位是秒
 
@@ -174,7 +174,7 @@ class CreateHarvestTaskInfoReq:
 
     @property
     def end_time(self):
-        """Gets the end_time of this CreateHarvestTaskInfoReq.
+        r"""Gets the end_time of this CreateHarvestTaskInfoReq.
 
         结束时间。Unix时间戳：单位是秒
 
@@ -185,7 +185,7 @@ class CreateHarvestTaskInfoReq:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this CreateHarvestTaskInfoReq.
+        r"""Sets the end_time of this CreateHarvestTaskInfoReq.
 
         结束时间。Unix时间戳：单位是秒
 
@@ -196,7 +196,7 @@ class CreateHarvestTaskInfoReq:
 
     @property
     def event_name(self):
-        """Gets the event_name of this CreateHarvestTaskInfoReq.
+        r"""Gets the event_name of this CreateHarvestTaskInfoReq.
 
         事件名称。必选配置
 
@@ -207,7 +207,7 @@ class CreateHarvestTaskInfoReq:
 
     @event_name.setter
     def event_name(self, event_name):
-        """Sets the event_name of this CreateHarvestTaskInfoReq.
+        r"""Sets the event_name of this CreateHarvestTaskInfoReq.
 
         事件名称。必选配置
 
@@ -218,7 +218,7 @@ class CreateHarvestTaskInfoReq:
 
     @property
     def task_desc(self):
-        """Gets the task_desc of this CreateHarvestTaskInfoReq.
+        r"""Gets the task_desc of this CreateHarvestTaskInfoReq.
 
         任务描述，可选配置
 
@@ -229,7 +229,7 @@ class CreateHarvestTaskInfoReq:
 
     @task_desc.setter
     def task_desc(self, task_desc):
-        """Sets the task_desc of this CreateHarvestTaskInfoReq.
+        r"""Sets the task_desc of this CreateHarvestTaskInfoReq.
 
         任务描述，可选配置
 
@@ -240,7 +240,7 @@ class CreateHarvestTaskInfoReq:
 
     @property
     def package_info(self):
-        """Gets the package_info of this CreateHarvestTaskInfoReq.
+        r"""Gets the package_info of this CreateHarvestTaskInfoReq.
 
         :return: The package_info of this CreateHarvestTaskInfoReq.
         :rtype: :class:`huaweicloudsdklive.v1.VodPackageInfo`
@@ -249,7 +249,7 @@ class CreateHarvestTaskInfoReq:
 
     @package_info.setter
     def package_info(self, package_info):
-        """Sets the package_info of this CreateHarvestTaskInfoReq.
+        r"""Sets the package_info of this CreateHarvestTaskInfoReq.
 
         :param package_info: The package_info of this CreateHarvestTaskInfoReq.
         :type package_info: :class:`huaweicloudsdklive.v1.VodPackageInfo`

@@ -28,7 +28,7 @@ class DeleteRelationsByOneCaseResponse(SdkResponse):
     }
 
     def __init__(self, status=None, result=None):
-        """DeleteRelationsByOneCaseResponse
+        r"""DeleteRelationsByOneCaseResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class DeleteRelationsByOneCaseResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this DeleteRelationsByOneCaseResponse.
+        r"""Gets the status of this DeleteRelationsByOneCaseResponse.
 
         对外时：success|error;
 
@@ -62,7 +62,7 @@ class DeleteRelationsByOneCaseResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DeleteRelationsByOneCaseResponse.
+        r"""Sets the status of this DeleteRelationsByOneCaseResponse.
 
         对外时：success|error;
 
@@ -73,7 +73,7 @@ class DeleteRelationsByOneCaseResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this DeleteRelationsByOneCaseResponse.
+        r"""Gets the result of this DeleteRelationsByOneCaseResponse.
 
         :return: The result of this DeleteRelationsByOneCaseResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ResultValueStringForOk`
@@ -82,7 +82,7 @@ class DeleteRelationsByOneCaseResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this DeleteRelationsByOneCaseResponse.
+        r"""Sets the result of this DeleteRelationsByOneCaseResponse.
 
         :param result: The result of this DeleteRelationsByOneCaseResponse.
         :type result: :class:`huaweicloudsdkcloudtest.v1.ResultValueStringForOk`

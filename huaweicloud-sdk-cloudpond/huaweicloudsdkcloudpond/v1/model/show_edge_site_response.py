@@ -26,7 +26,7 @@ class ShowEdgeSiteResponse(SdkResponse):
     }
 
     def __init__(self, edge_site=None):
-        """ShowEdgeSiteResponse
+        r"""ShowEdgeSiteResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowEdgeSiteResponse(SdkResponse):
 
     @property
     def edge_site(self):
-        """Gets the edge_site of this ShowEdgeSiteResponse.
+        r"""Gets the edge_site of this ShowEdgeSiteResponse.
 
         :return: The edge_site of this ShowEdgeSiteResponse.
         :rtype: :class:`huaweicloudsdkcloudpond.v1.EdgeSiteDetail`
@@ -53,7 +53,7 @@ class ShowEdgeSiteResponse(SdkResponse):
 
     @edge_site.setter
     def edge_site(self, edge_site):
-        """Sets the edge_site of this ShowEdgeSiteResponse.
+        r"""Sets the edge_site of this ShowEdgeSiteResponse.
 
         :param edge_site: The edge_site of this ShowEdgeSiteResponse.
         :type edge_site: :class:`huaweicloudsdkcloudpond.v1.EdgeSiteDetail`

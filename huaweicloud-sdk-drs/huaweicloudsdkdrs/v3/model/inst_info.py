@@ -37,7 +37,7 @@ class InstInfo:
     }
 
     def __init__(self, engine_type=None, inst_type=None, ip=None, public_ip=None, start_time=None, status=None, volume_size=None):
-        """InstInfo
+        r"""InstInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class InstInfo:
 
     @property
     def engine_type(self):
-        """Gets the engine_type of this InstInfo.
+        r"""Gets the engine_type of this InstInfo.
 
         引擎类型
 
@@ -96,7 +96,7 @@ class InstInfo:
 
     @engine_type.setter
     def engine_type(self, engine_type):
-        """Sets the engine_type of this InstInfo.
+        r"""Sets the engine_type of this InstInfo.
 
         引擎类型
 
@@ -107,7 +107,7 @@ class InstInfo:
 
     @property
     def inst_type(self):
-        """Gets the inst_type of this InstInfo.
+        r"""Gets the inst_type of this InstInfo.
 
         实例类型
 
@@ -118,7 +118,7 @@ class InstInfo:
 
     @inst_type.setter
     def inst_type(self, inst_type):
-        """Sets the inst_type of this InstInfo.
+        r"""Sets the inst_type of this InstInfo.
 
         实例类型
 
@@ -129,7 +129,7 @@ class InstInfo:
 
     @property
     def ip(self):
-        """Gets the ip of this InstInfo.
+        r"""Gets the ip of this InstInfo.
 
         迁移实例所在的私有IP
 
@@ -140,7 +140,7 @@ class InstInfo:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this InstInfo.
+        r"""Sets the ip of this InstInfo.
 
         迁移实例所在的私有IP
 
@@ -151,7 +151,7 @@ class InstInfo:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this InstInfo.
+        r"""Gets the public_ip of this InstInfo.
 
         迁移实例所在的公网IP
 
@@ -162,7 +162,7 @@ class InstInfo:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this InstInfo.
+        r"""Sets the public_ip of this InstInfo.
 
         迁移实例所在的公网IP
 
@@ -173,7 +173,7 @@ class InstInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this InstInfo.
+        r"""Gets the start_time of this InstInfo.
 
         迁移实例任务定时启动时间
 
@@ -184,7 +184,7 @@ class InstInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this InstInfo.
+        r"""Sets the start_time of this InstInfo.
 
         迁移实例任务定时启动时间
 
@@ -195,7 +195,7 @@ class InstInfo:
 
     @property
     def status(self):
-        """Gets the status of this InstInfo.
+        r"""Gets the status of this InstInfo.
 
         迁移实例的状态
 
@@ -206,7 +206,7 @@ class InstInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this InstInfo.
+        r"""Sets the status of this InstInfo.
 
         迁移实例的状态
 
@@ -217,7 +217,7 @@ class InstInfo:
 
     @property
     def volume_size(self):
-        """Gets the volume_size of this InstInfo.
+        r"""Gets the volume_size of this InstInfo.
 
         迁移实例的磁盘大小
 
@@ -228,7 +228,7 @@ class InstInfo:
 
     @volume_size.setter
     def volume_size(self, volume_size):
-        """Sets the volume_size of this InstInfo.
+        r"""Sets the volume_size of this InstInfo.
 
         迁移实例的磁盘大小
 

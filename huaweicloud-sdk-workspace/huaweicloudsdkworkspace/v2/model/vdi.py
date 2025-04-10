@@ -39,7 +39,7 @@ class Vdi:
     }
 
     def __init__(self, auto_lock_enable=None, auto_lock_options=None, disconnect_logout_enable=None, disconnect_logout_options=None, disconnect_hibernate_enable=None, disconnect_hibernate_options=None, no_operation_hibernate_enable=None, no_operation_hibernate_options=None):
-        """Vdi
+        r"""Vdi
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class Vdi:
 
     @property
     def auto_lock_enable(self):
-        """Gets the auto_lock_enable of this Vdi.
+        r"""Gets the auto_lock_enable of this Vdi.
 
         是否开启自动锁屏。取值为：false：表示关闭。true：表示开启。
 
@@ -103,7 +103,7 @@ class Vdi:
 
     @auto_lock_enable.setter
     def auto_lock_enable(self, auto_lock_enable):
-        """Sets the auto_lock_enable of this Vdi.
+        r"""Sets the auto_lock_enable of this Vdi.
 
         是否开启自动锁屏。取值为：false：表示关闭。true：表示开启。
 
@@ -114,7 +114,7 @@ class Vdi:
 
     @property
     def auto_lock_options(self):
-        """Gets the auto_lock_options of this Vdi.
+        r"""Gets the auto_lock_options of this Vdi.
 
         :return: The auto_lock_options of this Vdi.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AutoLockOptions`
@@ -123,7 +123,7 @@ class Vdi:
 
     @auto_lock_options.setter
     def auto_lock_options(self, auto_lock_options):
-        """Sets the auto_lock_options of this Vdi.
+        r"""Sets the auto_lock_options of this Vdi.
 
         :param auto_lock_options: The auto_lock_options of this Vdi.
         :type auto_lock_options: :class:`huaweicloudsdkworkspace.v2.AutoLockOptions`
@@ -132,7 +132,7 @@ class Vdi:
 
     @property
     def disconnect_logout_enable(self):
-        """Gets the disconnect_logout_enable of this Vdi.
+        r"""Gets the disconnect_logout_enable of this Vdi.
 
         是否开启断开后自动注销。取值为：0：表示关闭。1：表示开启。
 
@@ -143,7 +143,7 @@ class Vdi:
 
     @disconnect_logout_enable.setter
     def disconnect_logout_enable(self, disconnect_logout_enable):
-        """Sets the disconnect_logout_enable of this Vdi.
+        r"""Sets the disconnect_logout_enable of this Vdi.
 
         是否开启断开后自动注销。取值为：0：表示关闭。1：表示开启。
 
@@ -154,7 +154,7 @@ class Vdi:
 
     @property
     def disconnect_logout_options(self):
-        """Gets the disconnect_logout_options of this Vdi.
+        r"""Gets the disconnect_logout_options of this Vdi.
 
         :return: The disconnect_logout_options of this Vdi.
         :rtype: :class:`huaweicloudsdkworkspace.v2.DisconnectLogoutOptions`
@@ -163,7 +163,7 @@ class Vdi:
 
     @disconnect_logout_options.setter
     def disconnect_logout_options(self, disconnect_logout_options):
-        """Sets the disconnect_logout_options of this Vdi.
+        r"""Sets the disconnect_logout_options of this Vdi.
 
         :param disconnect_logout_options: The disconnect_logout_options of this Vdi.
         :type disconnect_logout_options: :class:`huaweicloudsdkworkspace.v2.DisconnectLogoutOptions`
@@ -172,7 +172,7 @@ class Vdi:
 
     @property
     def disconnect_hibernate_enable(self):
-        """Gets the disconnect_hibernate_enable of this Vdi.
+        r"""Gets the disconnect_hibernate_enable of this Vdi.
 
         是否开启断开后自动注销。取值为：0：表示关闭。1：表示开启。
 
@@ -183,7 +183,7 @@ class Vdi:
 
     @disconnect_hibernate_enable.setter
     def disconnect_hibernate_enable(self, disconnect_hibernate_enable):
-        """Sets the disconnect_hibernate_enable of this Vdi.
+        r"""Sets the disconnect_hibernate_enable of this Vdi.
 
         是否开启断开后自动注销。取值为：0：表示关闭。1：表示开启。
 
@@ -194,7 +194,7 @@ class Vdi:
 
     @property
     def disconnect_hibernate_options(self):
-        """Gets the disconnect_hibernate_options of this Vdi.
+        r"""Gets the disconnect_hibernate_options of this Vdi.
 
         :return: The disconnect_hibernate_options of this Vdi.
         :rtype: :class:`huaweicloudsdkworkspace.v2.VdiDisconnectHibernateOptions`
@@ -203,7 +203,7 @@ class Vdi:
 
     @disconnect_hibernate_options.setter
     def disconnect_hibernate_options(self, disconnect_hibernate_options):
-        """Sets the disconnect_hibernate_options of this Vdi.
+        r"""Sets the disconnect_hibernate_options of this Vdi.
 
         :param disconnect_hibernate_options: The disconnect_hibernate_options of this Vdi.
         :type disconnect_hibernate_options: :class:`huaweicloudsdkworkspace.v2.VdiDisconnectHibernateOptions`
@@ -212,7 +212,7 @@ class Vdi:
 
     @property
     def no_operation_hibernate_enable(self):
-        """Gets the no_operation_hibernate_enable of this Vdi.
+        r"""Gets the no_operation_hibernate_enable of this Vdi.
 
         是否开启断开后自动注销。取值为：0：表示关闭。1：表示开启。
 
@@ -223,7 +223,7 @@ class Vdi:
 
     @no_operation_hibernate_enable.setter
     def no_operation_hibernate_enable(self, no_operation_hibernate_enable):
-        """Sets the no_operation_hibernate_enable of this Vdi.
+        r"""Sets the no_operation_hibernate_enable of this Vdi.
 
         是否开启断开后自动注销。取值为：0：表示关闭。1：表示开启。
 
@@ -234,7 +234,7 @@ class Vdi:
 
     @property
     def no_operation_hibernate_options(self):
-        """Gets the no_operation_hibernate_options of this Vdi.
+        r"""Gets the no_operation_hibernate_options of this Vdi.
 
         :return: The no_operation_hibernate_options of this Vdi.
         :rtype: :class:`huaweicloudsdkworkspace.v2.VdiNoOperationHibernateOptions`
@@ -243,7 +243,7 @@ class Vdi:
 
     @no_operation_hibernate_options.setter
     def no_operation_hibernate_options(self, no_operation_hibernate_options):
-        """Sets the no_operation_hibernate_options of this Vdi.
+        r"""Sets the no_operation_hibernate_options of this Vdi.
 
         :param no_operation_hibernate_options: The no_operation_hibernate_options of this Vdi.
         :type no_operation_hibernate_options: :class:`huaweicloudsdkworkspace.v2.VdiNoOperationHibernateOptions`

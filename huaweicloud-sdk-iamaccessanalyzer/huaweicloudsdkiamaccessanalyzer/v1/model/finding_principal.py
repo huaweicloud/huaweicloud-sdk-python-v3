@@ -27,7 +27,7 @@ class FindingPrincipal:
     }
 
     def __init__(self, identifier=None, type=None):
-        """FindingPrincipal
+        r"""FindingPrincipal
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class FindingPrincipal:
 
     @property
     def identifier(self):
-        """Gets the identifier of this FindingPrincipal.
+        r"""Gets the identifier of this FindingPrincipal.
 
         外部主体身份的标识符。
 
@@ -59,7 +59,7 @@ class FindingPrincipal:
 
     @identifier.setter
     def identifier(self, identifier):
-        """Sets the identifier of this FindingPrincipal.
+        r"""Sets the identifier of this FindingPrincipal.
 
         外部主体身份的标识符。
 
@@ -70,7 +70,7 @@ class FindingPrincipal:
 
     @property
     def type(self):
-        """Gets the type of this FindingPrincipal.
+        r"""Gets the type of this FindingPrincipal.
 
         外部主体身份的类型。
 
@@ -81,7 +81,7 @@ class FindingPrincipal:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this FindingPrincipal.
+        r"""Sets the type of this FindingPrincipal.
 
         外部主体身份的类型。
 

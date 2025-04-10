@@ -39,7 +39,7 @@ class ExportTableRequestBody:
     }
 
     def __init__(self, data_path=None, data_type=None, database_name=None, table_name=None, compress=None, queue_name=None, export_mode=None, with_column_header=None):
-        """ExportTableRequestBody
+        r"""ExportTableRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -87,7 +87,7 @@ class ExportTableRequestBody:
 
     @property
     def data_path(self):
-        """Gets the data_path of this ExportTableRequestBody.
+        r"""Gets the data_path of this ExportTableRequestBody.
 
         导出数据的储存路径（当前仅支持将数据存储在OBS上，且OBS路径须以s3a开头）。另外，“export_mode”配置为“errorifexists”时，该路径下的文件夹须不存在，如请求样例中的“test”文件夹。
 
@@ -98,7 +98,7 @@ class ExportTableRequestBody:
 
     @data_path.setter
     def data_path(self, data_path):
-        """Sets the data_path of this ExportTableRequestBody.
+        r"""Sets the data_path of this ExportTableRequestBody.
 
         导出数据的储存路径（当前仅支持将数据存储在OBS上，且OBS路径须以s3a开头）。另外，“export_mode”配置为“errorifexists”时，该路径下的文件夹须不存在，如请求样例中的“test”文件夹。
 
@@ -109,7 +109,7 @@ class ExportTableRequestBody:
 
     @property
     def data_type(self):
-        """Gets the data_type of this ExportTableRequestBody.
+        r"""Gets the data_type of this ExportTableRequestBody.
 
         导出数据的类型（当前仅支持csv格式数据）。
 
@@ -120,7 +120,7 @@ class ExportTableRequestBody:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this ExportTableRequestBody.
+        r"""Sets the data_type of this ExportTableRequestBody.
 
         导出数据的类型（当前仅支持csv格式数据）。
 
@@ -131,7 +131,7 @@ class ExportTableRequestBody:
 
     @property
     def database_name(self):
-        """Gets the database_name of this ExportTableRequestBody.
+        r"""Gets the database_name of this ExportTableRequestBody.
 
         被导出数据的表所在的数据库名称。
 
@@ -142,7 +142,7 @@ class ExportTableRequestBody:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this ExportTableRequestBody.
+        r"""Sets the database_name of this ExportTableRequestBody.
 
         被导出数据的表所在的数据库名称。
 
@@ -153,7 +153,7 @@ class ExportTableRequestBody:
 
     @property
     def table_name(self):
-        """Gets the table_name of this ExportTableRequestBody.
+        r"""Gets the table_name of this ExportTableRequestBody.
 
         被导出数据的表名称。
 
@@ -164,7 +164,7 @@ class ExportTableRequestBody:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this ExportTableRequestBody.
+        r"""Sets the table_name of this ExportTableRequestBody.
 
         被导出数据的表名称。
 
@@ -175,7 +175,7 @@ class ExportTableRequestBody:
 
     @property
     def compress(self):
-        """Gets the compress of this ExportTableRequestBody.
+        r"""Gets the compress of this ExportTableRequestBody.
 
         导出数据的压缩方法。目前支持gzip、bzip2、deflate压缩方式；若不希望压缩，则输入none。
 
@@ -186,7 +186,7 @@ class ExportTableRequestBody:
 
     @compress.setter
     def compress(self, compress):
-        """Sets the compress of this ExportTableRequestBody.
+        r"""Sets the compress of this ExportTableRequestBody.
 
         导出数据的压缩方法。目前支持gzip、bzip2、deflate压缩方式；若不希望压缩，则输入none。
 
@@ -197,7 +197,7 @@ class ExportTableRequestBody:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this ExportTableRequestBody.
+        r"""Gets the queue_name of this ExportTableRequestBody.
 
         指定执行该任务的队列。若不指定队列，将采用default队列执行操作。
 
@@ -208,7 +208,7 @@ class ExportTableRequestBody:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this ExportTableRequestBody.
+        r"""Sets the queue_name of this ExportTableRequestBody.
 
         指定执行该任务的队列。若不指定队列，将采用default队列执行操作。
 
@@ -219,7 +219,7 @@ class ExportTableRequestBody:
 
     @property
     def export_mode(self):
-        """Gets the export_mode of this ExportTableRequestBody.
+        r"""Gets the export_mode of this ExportTableRequestBody.
 
         导出模式，目前支持“ErrorIfExists”，“Overwrite”，不指定“export_mode”则默认为“ErrorIfExists”。  “ErrorIfExists”：存在即报错。指定的导出目录必须不存在，如果指定目录已经存在，系统将返回错误信息，无法执行导出操作。 “Overwrite”：覆盖。在指定目录下新建文件，会删除已有文件。
 
@@ -230,7 +230,7 @@ class ExportTableRequestBody:
 
     @export_mode.setter
     def export_mode(self, export_mode):
-        """Sets the export_mode of this ExportTableRequestBody.
+        r"""Sets the export_mode of this ExportTableRequestBody.
 
         导出模式，目前支持“ErrorIfExists”，“Overwrite”，不指定“export_mode”则默认为“ErrorIfExists”。  “ErrorIfExists”：存在即报错。指定的导出目录必须不存在，如果指定目录已经存在，系统将返回错误信息，无法执行导出操作。 “Overwrite”：覆盖。在指定目录下新建文件，会删除已有文件。
 
@@ -241,7 +241,7 @@ class ExportTableRequestBody:
 
     @property
     def with_column_header(self):
-        """Gets the with_column_header of this ExportTableRequestBody.
+        r"""Gets the with_column_header of this ExportTableRequestBody.
 
         导出csv格式数据时，是否导出列名。  设置为“true”，表示导出列名。 设置为“false”，表示不导出列名。 若为空，默认为“false”。
 
@@ -252,7 +252,7 @@ class ExportTableRequestBody:
 
     @with_column_header.setter
     def with_column_header(self, with_column_header):
-        """Sets the with_column_header of this ExportTableRequestBody.
+        r"""Sets the with_column_header of this ExportTableRequestBody.
 
         导出csv格式数据时，是否导出列名。  设置为“true”，表示导出列名。 设置为“false”，表示不导出列名。 若为空，默认为“false”。
 

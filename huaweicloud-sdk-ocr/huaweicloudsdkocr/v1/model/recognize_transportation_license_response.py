@@ -28,7 +28,7 @@ class RecognizeTransportationLicenseResponse(SdkResponse):
     }
 
     def __init__(self, result=None, x_request_id=None):
-        """RecognizeTransportationLicenseResponse
+        r"""RecognizeTransportationLicenseResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RecognizeTransportationLicenseResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RecognizeTransportationLicenseResponse.
+        r"""Gets the result of this RecognizeTransportationLicenseResponse.
 
         :return: The result of this RecognizeTransportationLicenseResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.TransportationLicenseResult`
@@ -60,7 +60,7 @@ class RecognizeTransportationLicenseResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RecognizeTransportationLicenseResponse.
+        r"""Sets the result of this RecognizeTransportationLicenseResponse.
 
         :param result: The result of this RecognizeTransportationLicenseResponse.
         :type result: :class:`huaweicloudsdkocr.v1.TransportationLicenseResult`
@@ -69,7 +69,7 @@ class RecognizeTransportationLicenseResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this RecognizeTransportationLicenseResponse.
+        r"""Gets the x_request_id of this RecognizeTransportationLicenseResponse.
 
         :return: The x_request_id of this RecognizeTransportationLicenseResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class RecognizeTransportationLicenseResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this RecognizeTransportationLicenseResponse.
+        r"""Sets the x_request_id of this RecognizeTransportationLicenseResponse.
 
         :param x_request_id: The x_request_id of this RecognizeTransportationLicenseResponse.
         :type x_request_id: str

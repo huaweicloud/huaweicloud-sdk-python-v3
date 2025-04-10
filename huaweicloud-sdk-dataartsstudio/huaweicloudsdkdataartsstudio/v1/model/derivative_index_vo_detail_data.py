@@ -25,7 +25,7 @@ class DerivativeIndexVODetailData:
     }
 
     def __init__(self, value=None):
-        """DerivativeIndexVODetailData
+        r"""DerivativeIndexVODetailData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DerivativeIndexVODetailData:
 
     @property
     def value(self):
-        """Gets the value of this DerivativeIndexVODetailData.
+        r"""Gets the value of this DerivativeIndexVODetailData.
 
         :return: The value of this DerivativeIndexVODetailData.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DerivativeIndexVO`
@@ -52,7 +52,7 @@ class DerivativeIndexVODetailData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this DerivativeIndexVODetailData.
+        r"""Sets the value of this DerivativeIndexVODetailData.
 
         :param value: The value of this DerivativeIndexVODetailData.
         :type value: :class:`huaweicloudsdkdataartsstudio.v1.DerivativeIndexVO`

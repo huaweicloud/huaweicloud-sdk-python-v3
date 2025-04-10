@@ -27,7 +27,7 @@ class DeleteTransitIpTagRequest:
     }
 
     def __init__(self, key=None, resource_id=None):
-        """DeleteTransitIpTagRequest
+        r"""DeleteTransitIpTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteTransitIpTagRequest:
 
     @property
     def key(self):
-        """Gets the key of this DeleteTransitIpTagRequest.
+        r"""Gets the key of this DeleteTransitIpTagRequest.
 
         标签key。
 
@@ -59,7 +59,7 @@ class DeleteTransitIpTagRequest:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this DeleteTransitIpTagRequest.
+        r"""Sets the key of this DeleteTransitIpTagRequest.
 
         标签key。
 
@@ -70,7 +70,7 @@ class DeleteTransitIpTagRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this DeleteTransitIpTagRequest.
+        r"""Gets the resource_id of this DeleteTransitIpTagRequest.
 
         中转IP的ID。
 
@@ -81,7 +81,7 @@ class DeleteTransitIpTagRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this DeleteTransitIpTagRequest.
+        r"""Sets the resource_id of this DeleteTransitIpTagRequest.
 
         中转IP的ID。
 

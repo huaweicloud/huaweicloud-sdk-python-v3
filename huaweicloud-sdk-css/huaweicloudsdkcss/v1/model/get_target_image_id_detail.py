@@ -35,7 +35,7 @@ class GetTargetImageIdDetail:
     }
 
     def __init__(self, id=None, display_name=None, image_desc=None, datastore_type=None, datastore_version=None, priority=None):
-        """GetTargetImageIdDetail
+        r"""GetTargetImageIdDetail
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class GetTargetImageIdDetail:
 
     @property
     def id(self):
-        """Gets the id of this GetTargetImageIdDetail.
+        r"""Gets the id of this GetTargetImageIdDetail.
 
         可以升级的目标镜像ID。
 
@@ -89,7 +89,7 @@ class GetTargetImageIdDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this GetTargetImageIdDetail.
+        r"""Sets the id of this GetTargetImageIdDetail.
 
         可以升级的目标镜像ID。
 
@@ -100,7 +100,7 @@ class GetTargetImageIdDetail:
 
     @property
     def display_name(self):
-        """Gets the display_name of this GetTargetImageIdDetail.
+        r"""Gets the display_name of this GetTargetImageIdDetail.
 
         可以升级的目标镜像名称。
 
@@ -111,7 +111,7 @@ class GetTargetImageIdDetail:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this GetTargetImageIdDetail.
+        r"""Sets the display_name of this GetTargetImageIdDetail.
 
         可以升级的目标镜像名称。
 
@@ -122,7 +122,7 @@ class GetTargetImageIdDetail:
 
     @property
     def image_desc(self):
-        """Gets the image_desc of this GetTargetImageIdDetail.
+        r"""Gets the image_desc of this GetTargetImageIdDetail.
 
         镜像描述信息。
 
@@ -133,7 +133,7 @@ class GetTargetImageIdDetail:
 
     @image_desc.setter
     def image_desc(self, image_desc):
-        """Sets the image_desc of this GetTargetImageIdDetail.
+        r"""Sets the image_desc of this GetTargetImageIdDetail.
 
         镜像描述信息。
 
@@ -144,7 +144,7 @@ class GetTargetImageIdDetail:
 
     @property
     def datastore_type(self):
-        """Gets the datastore_type of this GetTargetImageIdDetail.
+        r"""Gets the datastore_type of this GetTargetImageIdDetail.
 
         镜像引擎类型。
 
@@ -155,7 +155,7 @@ class GetTargetImageIdDetail:
 
     @datastore_type.setter
     def datastore_type(self, datastore_type):
-        """Sets the datastore_type of this GetTargetImageIdDetail.
+        r"""Sets the datastore_type of this GetTargetImageIdDetail.
 
         镜像引擎类型。
 
@@ -166,7 +166,7 @@ class GetTargetImageIdDetail:
 
     @property
     def datastore_version(self):
-        """Gets the datastore_version of this GetTargetImageIdDetail.
+        r"""Gets the datastore_version of this GetTargetImageIdDetail.
 
         镜像引擎版本。
 
@@ -177,7 +177,7 @@ class GetTargetImageIdDetail:
 
     @datastore_version.setter
     def datastore_version(self, datastore_version):
-        """Sets the datastore_version of this GetTargetImageIdDetail.
+        r"""Sets the datastore_version of this GetTargetImageIdDetail.
 
         镜像引擎版本。
 
@@ -188,7 +188,7 @@ class GetTargetImageIdDetail:
 
     @property
     def priority(self):
-        """Gets the priority of this GetTargetImageIdDetail.
+        r"""Gets the priority of this GetTargetImageIdDetail.
 
         优先级。
 
@@ -199,7 +199,7 @@ class GetTargetImageIdDetail:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this GetTargetImageIdDetail.
+        r"""Sets the priority of this GetTargetImageIdDetail.
 
         优先级。
 

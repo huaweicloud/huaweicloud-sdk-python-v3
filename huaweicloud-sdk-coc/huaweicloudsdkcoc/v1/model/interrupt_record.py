@@ -51,7 +51,7 @@ class InterruptRecord:
     }
 
     def __init__(self, id=None, sources=None, sources_id=None, sources_name=None, region=None, unavailable_start_time=None, unavailable_end_time=None, descriptions=None, creator_id=None, creator=None, modified_id=None, modified_by=None, create_time=None, update_time=None):
-        """InterruptRecord
+        r"""InterruptRecord
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class InterruptRecord:
 
     @property
     def id(self):
-        """Gets the id of this InterruptRecord.
+        r"""Gets the id of this InterruptRecord.
 
         记录ID
 
@@ -145,7 +145,7 @@ class InterruptRecord:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this InterruptRecord.
+        r"""Sets the id of this InterruptRecord.
 
         记录ID
 
@@ -156,7 +156,7 @@ class InterruptRecord:
 
     @property
     def sources(self):
-        """Gets the sources of this InterruptRecord.
+        r"""Gets the sources of this InterruptRecord.
 
         来源 SLI SLI指标 WARROOM warroom ALERTS 告警 MALFUNCTIONS 故障 OTHERS 其他
 
@@ -167,7 +167,7 @@ class InterruptRecord:
 
     @sources.setter
     def sources(self, sources):
-        """Sets the sources of this InterruptRecord.
+        r"""Sets the sources of this InterruptRecord.
 
         来源 SLI SLI指标 WARROOM warroom ALERTS 告警 MALFUNCTIONS 故障 OTHERS 其他
 
@@ -178,7 +178,7 @@ class InterruptRecord:
 
     @property
     def sources_id(self):
-        """Gets the sources_id of this InterruptRecord.
+        r"""Gets the sources_id of this InterruptRecord.
 
         来源ID
 
@@ -189,7 +189,7 @@ class InterruptRecord:
 
     @sources_id.setter
     def sources_id(self, sources_id):
-        """Sets the sources_id of this InterruptRecord.
+        r"""Sets the sources_id of this InterruptRecord.
 
         来源ID
 
@@ -200,7 +200,7 @@ class InterruptRecord:
 
     @property
     def sources_name(self):
-        """Gets the sources_name of this InterruptRecord.
+        r"""Gets the sources_name of this InterruptRecord.
 
         来源名称
 
@@ -211,7 +211,7 @@ class InterruptRecord:
 
     @sources_name.setter
     def sources_name(self, sources_name):
-        """Sets the sources_name of this InterruptRecord.
+        r"""Sets the sources_name of this InterruptRecord.
 
         来源名称
 
@@ -222,7 +222,7 @@ class InterruptRecord:
 
     @property
     def region(self):
-        """Gets the region of this InterruptRecord.
+        r"""Gets the region of this InterruptRecord.
 
         region
 
@@ -233,7 +233,7 @@ class InterruptRecord:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this InterruptRecord.
+        r"""Sets the region of this InterruptRecord.
 
         region
 
@@ -244,7 +244,7 @@ class InterruptRecord:
 
     @property
     def unavailable_start_time(self):
-        """Gets the unavailable_start_time of this InterruptRecord.
+        r"""Gets the unavailable_start_time of this InterruptRecord.
 
         不可用开始时间
 
@@ -255,7 +255,7 @@ class InterruptRecord:
 
     @unavailable_start_time.setter
     def unavailable_start_time(self, unavailable_start_time):
-        """Sets the unavailable_start_time of this InterruptRecord.
+        r"""Sets the unavailable_start_time of this InterruptRecord.
 
         不可用开始时间
 
@@ -266,7 +266,7 @@ class InterruptRecord:
 
     @property
     def unavailable_end_time(self):
-        """Gets the unavailable_end_time of this InterruptRecord.
+        r"""Gets the unavailable_end_time of this InterruptRecord.
 
         不可用结束时间
 
@@ -277,7 +277,7 @@ class InterruptRecord:
 
     @unavailable_end_time.setter
     def unavailable_end_time(self, unavailable_end_time):
-        """Sets the unavailable_end_time of this InterruptRecord.
+        r"""Sets the unavailable_end_time of this InterruptRecord.
 
         不可用结束时间
 
@@ -288,7 +288,7 @@ class InterruptRecord:
 
     @property
     def descriptions(self):
-        """Gets the descriptions of this InterruptRecord.
+        r"""Gets the descriptions of this InterruptRecord.
 
         描述
 
@@ -299,7 +299,7 @@ class InterruptRecord:
 
     @descriptions.setter
     def descriptions(self, descriptions):
-        """Sets the descriptions of this InterruptRecord.
+        r"""Sets the descriptions of this InterruptRecord.
 
         描述
 
@@ -310,7 +310,7 @@ class InterruptRecord:
 
     @property
     def creator_id(self):
-        """Gets the creator_id of this InterruptRecord.
+        r"""Gets the creator_id of this InterruptRecord.
 
         创建人Id
 
@@ -321,7 +321,7 @@ class InterruptRecord:
 
     @creator_id.setter
     def creator_id(self, creator_id):
-        """Sets the creator_id of this InterruptRecord.
+        r"""Sets the creator_id of this InterruptRecord.
 
         创建人Id
 
@@ -332,7 +332,7 @@ class InterruptRecord:
 
     @property
     def creator(self):
-        """Gets the creator of this InterruptRecord.
+        r"""Gets the creator of this InterruptRecord.
 
         创建人
 
@@ -343,7 +343,7 @@ class InterruptRecord:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this InterruptRecord.
+        r"""Sets the creator of this InterruptRecord.
 
         创建人
 
@@ -354,7 +354,7 @@ class InterruptRecord:
 
     @property
     def modified_id(self):
-        """Gets the modified_id of this InterruptRecord.
+        r"""Gets the modified_id of this InterruptRecord.
 
         修改人ID
 
@@ -365,7 +365,7 @@ class InterruptRecord:
 
     @modified_id.setter
     def modified_id(self, modified_id):
-        """Sets the modified_id of this InterruptRecord.
+        r"""Sets the modified_id of this InterruptRecord.
 
         修改人ID
 
@@ -376,7 +376,7 @@ class InterruptRecord:
 
     @property
     def modified_by(self):
-        """Gets the modified_by of this InterruptRecord.
+        r"""Gets the modified_by of this InterruptRecord.
 
         修改人
 
@@ -387,7 +387,7 @@ class InterruptRecord:
 
     @modified_by.setter
     def modified_by(self, modified_by):
-        """Sets the modified_by of this InterruptRecord.
+        r"""Sets the modified_by of this InterruptRecord.
 
         修改人
 
@@ -398,7 +398,7 @@ class InterruptRecord:
 
     @property
     def create_time(self):
-        """Gets the create_time of this InterruptRecord.
+        r"""Gets the create_time of this InterruptRecord.
 
         创建时间
 
@@ -409,7 +409,7 @@ class InterruptRecord:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this InterruptRecord.
+        r"""Sets the create_time of this InterruptRecord.
 
         创建时间
 
@@ -420,7 +420,7 @@ class InterruptRecord:
 
     @property
     def update_time(self):
-        """Gets the update_time of this InterruptRecord.
+        r"""Gets the update_time of this InterruptRecord.
 
         修改时间
 
@@ -431,7 +431,7 @@ class InterruptRecord:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this InterruptRecord.
+        r"""Sets the update_time of this InterruptRecord.
 
         修改时间
 

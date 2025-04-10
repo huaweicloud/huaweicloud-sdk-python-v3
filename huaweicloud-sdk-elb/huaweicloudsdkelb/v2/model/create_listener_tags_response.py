@@ -24,7 +24,7 @@ class CreateListenerTagsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateListenerTagsResponse
+        r"""CreateListenerTagsResponse
 
         The model defined in huaweicloud sdk
 

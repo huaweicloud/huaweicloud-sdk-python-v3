@@ -25,7 +25,7 @@ class BatchDeleteRuleGroupsBaseDTO:
     }
 
     def __init__(self, rule_group_ids=None):
-        """BatchDeleteRuleGroupsBaseDTO
+        r"""BatchDeleteRuleGroupsBaseDTO
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchDeleteRuleGroupsBaseDTO:
 
     @property
     def rule_group_ids(self):
-        """Gets the rule_group_ids of this BatchDeleteRuleGroupsBaseDTO.
+        r"""Gets the rule_group_ids of this BatchDeleteRuleGroupsBaseDTO.
 
         识别规则组id列表
 
@@ -53,7 +53,7 @@ class BatchDeleteRuleGroupsBaseDTO:
 
     @rule_group_ids.setter
     def rule_group_ids(self, rule_group_ids):
-        """Sets the rule_group_ids of this BatchDeleteRuleGroupsBaseDTO.
+        r"""Sets the rule_group_ids of this BatchDeleteRuleGroupsBaseDTO.
 
         识别规则组id列表
 

@@ -29,7 +29,7 @@ class ListErrorlogForLtsRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, body=None):
-        """ListErrorlogForLtsRequest
+        r"""ListErrorlogForLtsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListErrorlogForLtsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListErrorlogForLtsRequest.
+        r"""Gets the instance_id of this ListErrorlogForLtsRequest.
 
         实例ID。
 
@@ -67,7 +67,7 @@ class ListErrorlogForLtsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListErrorlogForLtsRequest.
+        r"""Sets the instance_id of this ListErrorlogForLtsRequest.
 
         实例ID。
 
@@ -78,7 +78,7 @@ class ListErrorlogForLtsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListErrorlogForLtsRequest.
+        r"""Gets the x_language of this ListErrorlogForLtsRequest.
 
         语言。默认en-us。
 
@@ -89,7 +89,7 @@ class ListErrorlogForLtsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListErrorlogForLtsRequest.
+        r"""Sets the x_language of this ListErrorlogForLtsRequest.
 
         语言。默认en-us。
 
@@ -100,7 +100,7 @@ class ListErrorlogForLtsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListErrorlogForLtsRequest.
+        r"""Gets the body of this ListErrorlogForLtsRequest.
 
         :return: The body of this ListErrorlogForLtsRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.ErrorlogForLtsRequest`
@@ -109,7 +109,7 @@ class ListErrorlogForLtsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListErrorlogForLtsRequest.
+        r"""Sets the body of this ListErrorlogForLtsRequest.
 
         :param body: The body of this ListErrorlogForLtsRequest.
         :type body: :class:`huaweicloudsdkrds.v3.ErrorlogForLtsRequest`

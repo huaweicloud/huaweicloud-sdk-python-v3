@@ -25,7 +25,7 @@ class ReclaimIndirectPartnerAccountRequest:
     }
 
     def __init__(self, body=None):
-        """ReclaimIndirectPartnerAccountRequest
+        r"""ReclaimIndirectPartnerAccountRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ReclaimIndirectPartnerAccountRequest:
 
     @property
     def body(self):
-        """Gets the body of this ReclaimIndirectPartnerAccountRequest.
+        r"""Gets the body of this ReclaimIndirectPartnerAccountRequest.
 
         :return: The body of this ReclaimIndirectPartnerAccountRequest.
         :rtype: :class:`huaweicloudsdkbss.v2.ReclaimIndirectPartnerAccountReq`
@@ -52,7 +52,7 @@ class ReclaimIndirectPartnerAccountRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ReclaimIndirectPartnerAccountRequest.
+        r"""Sets the body of this ReclaimIndirectPartnerAccountRequest.
 
         :param body: The body of this ReclaimIndirectPartnerAccountRequest.
         :type body: :class:`huaweicloudsdkbss.v2.ReclaimIndirectPartnerAccountReq`

@@ -27,7 +27,7 @@ class HookCreate:
     }
 
     def __init__(self, secret=None, url=None):
-        """HookCreate
+        r"""HookCreate
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class HookCreate:
 
     @property
     def secret(self):
-        """Gets the secret of this HookCreate.
+        r"""Gets the secret of this HookCreate.
 
         无法猜测的随机字符串，用于验证接收到的payloads。
 
@@ -59,7 +59,7 @@ class HookCreate:
 
     @secret.setter
     def secret(self, secret):
-        """Sets the secret of this HookCreate.
+        r"""Sets the secret of this HookCreate.
 
         无法猜测的随机字符串，用于验证接收到的payloads。
 
@@ -70,7 +70,7 @@ class HookCreate:
 
     @property
     def url(self):
-        """Gets the url of this HookCreate.
+        r"""Gets the url of this HookCreate.
 
         hook触发时的回调URL。
 
@@ -81,7 +81,7 @@ class HookCreate:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this HookCreate.
+        r"""Sets the url of this HookCreate.
 
         hook触发时的回调URL。
 

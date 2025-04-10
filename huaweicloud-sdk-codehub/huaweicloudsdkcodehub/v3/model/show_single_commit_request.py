@@ -29,7 +29,7 @@ class ShowSingleCommitRequest:
     }
 
     def __init__(self, repo_id=None, sha=None, stats=None):
-        """ShowSingleCommitRequest
+        r"""ShowSingleCommitRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowSingleCommitRequest:
 
     @property
     def repo_id(self):
-        """Gets the repo_id of this ShowSingleCommitRequest.
+        r"""Gets the repo_id of this ShowSingleCommitRequest.
 
         仓库短id
 
@@ -66,7 +66,7 @@ class ShowSingleCommitRequest:
 
     @repo_id.setter
     def repo_id(self, repo_id):
-        """Sets the repo_id of this ShowSingleCommitRequest.
+        r"""Sets the repo_id of this ShowSingleCommitRequest.
 
         仓库短id
 
@@ -77,7 +77,7 @@ class ShowSingleCommitRequest:
 
     @property
     def sha(self):
-        """Gets the sha of this ShowSingleCommitRequest.
+        r"""Gets the sha of this ShowSingleCommitRequest.
 
         commit id，仓库的branch名或tag名
 
@@ -88,7 +88,7 @@ class ShowSingleCommitRequest:
 
     @sha.setter
     def sha(self, sha):
-        """Sets the sha of this ShowSingleCommitRequest.
+        r"""Sets the sha of this ShowSingleCommitRequest.
 
         commit id，仓库的branch名或tag名
 
@@ -99,7 +99,7 @@ class ShowSingleCommitRequest:
 
     @property
     def stats(self):
-        """Gets the stats of this ShowSingleCommitRequest.
+        r"""Gets the stats of this ShowSingleCommitRequest.
 
         包括提交统计信息。默认值为true
 
@@ -110,7 +110,7 @@ class ShowSingleCommitRequest:
 
     @stats.setter
     def stats(self, stats):
-        """Sets the stats of this ShowSingleCommitRequest.
+        r"""Sets the stats of this ShowSingleCommitRequest.
 
         包括提交统计信息。默认值为true
 

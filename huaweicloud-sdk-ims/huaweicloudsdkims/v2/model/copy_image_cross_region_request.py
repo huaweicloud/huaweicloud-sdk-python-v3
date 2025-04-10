@@ -27,7 +27,7 @@ class CopyImageCrossRegionRequest:
     }
 
     def __init__(self, image_id=None, body=None):
-        """CopyImageCrossRegionRequest
+        r"""CopyImageCrossRegionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CopyImageCrossRegionRequest:
 
     @property
     def image_id(self):
-        """Gets the image_id of this CopyImageCrossRegionRequest.
+        r"""Gets the image_id of this CopyImageCrossRegionRequest.
 
         镜像ID
 
@@ -60,7 +60,7 @@ class CopyImageCrossRegionRequest:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this CopyImageCrossRegionRequest.
+        r"""Sets the image_id of this CopyImageCrossRegionRequest.
 
         镜像ID
 
@@ -71,7 +71,7 @@ class CopyImageCrossRegionRequest:
 
     @property
     def body(self):
-        """Gets the body of this CopyImageCrossRegionRequest.
+        r"""Gets the body of this CopyImageCrossRegionRequest.
 
         :return: The body of this CopyImageCrossRegionRequest.
         :rtype: :class:`huaweicloudsdkims.v2.CopyImageCrossRegionRequestBody`
@@ -80,7 +80,7 @@ class CopyImageCrossRegionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CopyImageCrossRegionRequest.
+        r"""Sets the body of this CopyImageCrossRegionRequest.
 
         :param body: The body of this CopyImageCrossRegionRequest.
         :type body: :class:`huaweicloudsdkims.v2.CopyImageCrossRegionRequestBody`

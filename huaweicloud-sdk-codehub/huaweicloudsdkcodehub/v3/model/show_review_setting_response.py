@@ -30,7 +30,7 @@ class ShowReviewSettingResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """ShowReviewSettingResponse
+        r"""ShowReviewSettingResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowReviewSettingResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ShowReviewSettingResponse.
+        r"""Gets the error of this ShowReviewSettingResponse.
 
         :return: The error of this ShowReviewSettingResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class ShowReviewSettingResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ShowReviewSettingResponse.
+        r"""Sets the error of this ShowReviewSettingResponse.
 
         :param error: The error of this ShowReviewSettingResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class ShowReviewSettingResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowReviewSettingResponse.
+        r"""Gets the result of this ShowReviewSettingResponse.
 
         :return: The result of this ShowReviewSettingResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.ReviewSettingDto`
@@ -85,7 +85,7 @@ class ShowReviewSettingResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowReviewSettingResponse.
+        r"""Sets the result of this ShowReviewSettingResponse.
 
         :param result: The result of this ShowReviewSettingResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.ReviewSettingDto`
@@ -94,7 +94,7 @@ class ShowReviewSettingResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowReviewSettingResponse.
+        r"""Gets the status of this ShowReviewSettingResponse.
 
         响应状态
 
@@ -105,7 +105,7 @@ class ShowReviewSettingResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowReviewSettingResponse.
+        r"""Sets the status of this ShowReviewSettingResponse.
 
         响应状态
 

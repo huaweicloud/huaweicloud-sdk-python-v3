@@ -25,7 +25,7 @@ class ShowServerTagsRequest:
     }
 
     def __init__(self, server_id=None):
-        """ShowServerTagsRequest
+        r"""ShowServerTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowServerTagsRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ShowServerTagsRequest.
+        r"""Gets the server_id of this ShowServerTagsRequest.
 
         云服务器ID。
 
@@ -53,7 +53,7 @@ class ShowServerTagsRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ShowServerTagsRequest.
+        r"""Sets the server_id of this ShowServerTagsRequest.
 
         云服务器ID。
 

@@ -52,7 +52,7 @@ class ShowDetailOfEventSourceResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, label=None, description=None, provider_type=None, event_types=None, created_time=None, updated_time=None, channel_id=None, channel_name=None, type=None, detail=None, status=None, error_info=None):
-        """ShowDetailOfEventSourceResponse
+        r"""ShowDetailOfEventSourceResponse
 
         The model defined in huaweicloud sdk
 
@@ -135,7 +135,7 @@ class ShowDetailOfEventSourceResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowDetailOfEventSourceResponse.
+        r"""Gets the id of this ShowDetailOfEventSourceResponse.
 
         事件源ID
 
@@ -146,7 +146,7 @@ class ShowDetailOfEventSourceResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowDetailOfEventSourceResponse.
+        r"""Sets the id of this ShowDetailOfEventSourceResponse.
 
         事件源ID
 
@@ -157,7 +157,7 @@ class ShowDetailOfEventSourceResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowDetailOfEventSourceResponse.
+        r"""Gets the name of this ShowDetailOfEventSourceResponse.
 
         事件源名称
 
@@ -168,7 +168,7 @@ class ShowDetailOfEventSourceResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowDetailOfEventSourceResponse.
+        r"""Sets the name of this ShowDetailOfEventSourceResponse.
 
         事件源名称
 
@@ -179,7 +179,7 @@ class ShowDetailOfEventSourceResponse(SdkResponse):
 
     @property
     def label(self):
-        """Gets the label of this ShowDetailOfEventSourceResponse.
+        r"""Gets the label of this ShowDetailOfEventSourceResponse.
 
         事件源名称展示
 
@@ -190,7 +190,7 @@ class ShowDetailOfEventSourceResponse(SdkResponse):
 
     @label.setter
     def label(self, label):
-        """Sets the label of this ShowDetailOfEventSourceResponse.
+        r"""Sets the label of this ShowDetailOfEventSourceResponse.
 
         事件源名称展示
 
@@ -201,7 +201,7 @@ class ShowDetailOfEventSourceResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowDetailOfEventSourceResponse.
+        r"""Gets the description of this ShowDetailOfEventSourceResponse.
 
         事件源描述
 
@@ -212,7 +212,7 @@ class ShowDetailOfEventSourceResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowDetailOfEventSourceResponse.
+        r"""Sets the description of this ShowDetailOfEventSourceResponse.
 
         事件源描述
 
@@ -223,7 +223,7 @@ class ShowDetailOfEventSourceResponse(SdkResponse):
 
     @property
     def provider_type(self):
-        """Gets the provider_type of this ShowDetailOfEventSourceResponse.
+        r"""Gets the provider_type of this ShowDetailOfEventSourceResponse.
 
         事件源提供方类型，OFFICIAL：官方云服务事件源；CUSTOM：用户创建的自定义事件源；PARTNER：伙伴事件源
 
@@ -234,7 +234,7 @@ class ShowDetailOfEventSourceResponse(SdkResponse):
 
     @provider_type.setter
     def provider_type(self, provider_type):
-        """Sets the provider_type of this ShowDetailOfEventSourceResponse.
+        r"""Sets the provider_type of this ShowDetailOfEventSourceResponse.
 
         事件源提供方类型，OFFICIAL：官方云服务事件源；CUSTOM：用户创建的自定义事件源；PARTNER：伙伴事件源
 
@@ -245,7 +245,7 @@ class ShowDetailOfEventSourceResponse(SdkResponse):
 
     @property
     def event_types(self):
-        """Gets the event_types of this ShowDetailOfEventSourceResponse.
+        r"""Gets the event_types of this ShowDetailOfEventSourceResponse.
 
         事件源提供的事件类型列表，只有官方云服务事件源提供事件类型
 
@@ -256,7 +256,7 @@ class ShowDetailOfEventSourceResponse(SdkResponse):
 
     @event_types.setter
     def event_types(self, event_types):
-        """Sets the event_types of this ShowDetailOfEventSourceResponse.
+        r"""Sets the event_types of this ShowDetailOfEventSourceResponse.
 
         事件源提供的事件类型列表，只有官方云服务事件源提供事件类型
 
@@ -267,7 +267,7 @@ class ShowDetailOfEventSourceResponse(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this ShowDetailOfEventSourceResponse.
+        r"""Gets the created_time of this ShowDetailOfEventSourceResponse.
 
         创建UTC时间
 
@@ -278,7 +278,7 @@ class ShowDetailOfEventSourceResponse(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this ShowDetailOfEventSourceResponse.
+        r"""Sets the created_time of this ShowDetailOfEventSourceResponse.
 
         创建UTC时间
 
@@ -289,7 +289,7 @@ class ShowDetailOfEventSourceResponse(SdkResponse):
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this ShowDetailOfEventSourceResponse.
+        r"""Gets the updated_time of this ShowDetailOfEventSourceResponse.
 
         更新UTC时间
 
@@ -300,7 +300,7 @@ class ShowDetailOfEventSourceResponse(SdkResponse):
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this ShowDetailOfEventSourceResponse.
+        r"""Sets the updated_time of this ShowDetailOfEventSourceResponse.
 
         更新UTC时间
 
@@ -311,7 +311,7 @@ class ShowDetailOfEventSourceResponse(SdkResponse):
 
     @property
     def channel_id(self):
-        """Gets the channel_id of this ShowDetailOfEventSourceResponse.
+        r"""Gets the channel_id of this ShowDetailOfEventSourceResponse.
 
         事件源归属的事件通道ID
 
@@ -322,7 +322,7 @@ class ShowDetailOfEventSourceResponse(SdkResponse):
 
     @channel_id.setter
     def channel_id(self, channel_id):
-        """Sets the channel_id of this ShowDetailOfEventSourceResponse.
+        r"""Sets the channel_id of this ShowDetailOfEventSourceResponse.
 
         事件源归属的事件通道ID
 
@@ -333,7 +333,7 @@ class ShowDetailOfEventSourceResponse(SdkResponse):
 
     @property
     def channel_name(self):
-        """Gets the channel_name of this ShowDetailOfEventSourceResponse.
+        r"""Gets the channel_name of this ShowDetailOfEventSourceResponse.
 
         事件源归属的事件通道名称
 
@@ -344,7 +344,7 @@ class ShowDetailOfEventSourceResponse(SdkResponse):
 
     @channel_name.setter
     def channel_name(self, channel_name):
-        """Sets the channel_name of this ShowDetailOfEventSourceResponse.
+        r"""Sets the channel_name of this ShowDetailOfEventSourceResponse.
 
         事件源归属的事件通道名称
 
@@ -355,7 +355,7 @@ class ShowDetailOfEventSourceResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowDetailOfEventSourceResponse.
+        r"""Gets the type of this ShowDetailOfEventSourceResponse.
 
         事件源类型
 
@@ -366,7 +366,7 @@ class ShowDetailOfEventSourceResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowDetailOfEventSourceResponse.
+        r"""Sets the type of this ShowDetailOfEventSourceResponse.
 
         事件源类型
 
@@ -377,7 +377,7 @@ class ShowDetailOfEventSourceResponse(SdkResponse):
 
     @property
     def detail(self):
-        """Gets the detail of this ShowDetailOfEventSourceResponse.
+        r"""Gets the detail of this ShowDetailOfEventSourceResponse.
 
         json格式封装消息实例链接信息：如RabbitMQ实例的instance_id字段、虚拟主机vhost字段、队列queue字段、用户名、密码等
 
@@ -388,7 +388,7 @@ class ShowDetailOfEventSourceResponse(SdkResponse):
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this ShowDetailOfEventSourceResponse.
+        r"""Sets the detail of this ShowDetailOfEventSourceResponse.
 
         json格式封装消息实例链接信息：如RabbitMQ实例的instance_id字段、虚拟主机vhost字段、队列queue字段、用户名、密码等
 
@@ -399,7 +399,7 @@ class ShowDetailOfEventSourceResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowDetailOfEventSourceResponse.
+        r"""Gets the status of this ShowDetailOfEventSourceResponse.
 
         自定义事件源状态
 
@@ -410,7 +410,7 @@ class ShowDetailOfEventSourceResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowDetailOfEventSourceResponse.
+        r"""Sets the status of this ShowDetailOfEventSourceResponse.
 
         自定义事件源状态
 
@@ -421,7 +421,7 @@ class ShowDetailOfEventSourceResponse(SdkResponse):
 
     @property
     def error_info(self):
-        """Gets the error_info of this ShowDetailOfEventSourceResponse.
+        r"""Gets the error_info of this ShowDetailOfEventSourceResponse.
 
         :return: The error_info of this ShowDetailOfEventSourceResponse.
         :rtype: :class:`huaweicloudsdkeg.v1.ErrorInfo`
@@ -430,7 +430,7 @@ class ShowDetailOfEventSourceResponse(SdkResponse):
 
     @error_info.setter
     def error_info(self, error_info):
-        """Sets the error_info of this ShowDetailOfEventSourceResponse.
+        r"""Sets the error_info of this ShowDetailOfEventSourceResponse.
 
         :param error_info: The error_info of this ShowDetailOfEventSourceResponse.
         :type error_info: :class:`huaweicloudsdkeg.v1.ErrorInfo`

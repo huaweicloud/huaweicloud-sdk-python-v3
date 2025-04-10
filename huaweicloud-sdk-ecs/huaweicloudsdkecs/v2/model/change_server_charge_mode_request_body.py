@@ -31,7 +31,7 @@ class ChangeServerChargeModeRequestBody:
     }
 
     def __init__(self, server_ids=None, charge_mode=None, prepaid_options=None, dry_run=None):
-        """ChangeServerChargeModeRequestBody
+        r"""ChangeServerChargeModeRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ChangeServerChargeModeRequestBody:
 
     @property
     def server_ids(self):
-        """Gets the server_ids of this ChangeServerChargeModeRequestBody.
+        r"""Gets the server_ids of this ChangeServerChargeModeRequestBody.
 
         云服务器ID列表
 
@@ -73,7 +73,7 @@ class ChangeServerChargeModeRequestBody:
 
     @server_ids.setter
     def server_ids(self, server_ids):
-        """Sets the server_ids of this ChangeServerChargeModeRequestBody.
+        r"""Sets the server_ids of this ChangeServerChargeModeRequestBody.
 
         云服务器ID列表
 
@@ -84,7 +84,7 @@ class ChangeServerChargeModeRequestBody:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this ChangeServerChargeModeRequestBody.
+        r"""Gets the charge_mode of this ChangeServerChargeModeRequestBody.
 
         更换后的计费模式：prePaid包周期计费模式
 
@@ -95,7 +95,7 @@ class ChangeServerChargeModeRequestBody:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this ChangeServerChargeModeRequestBody.
+        r"""Sets the charge_mode of this ChangeServerChargeModeRequestBody.
 
         更换后的计费模式：prePaid包周期计费模式
 
@@ -106,7 +106,7 @@ class ChangeServerChargeModeRequestBody:
 
     @property
     def prepaid_options(self):
-        """Gets the prepaid_options of this ChangeServerChargeModeRequestBody.
+        r"""Gets the prepaid_options of this ChangeServerChargeModeRequestBody.
 
         :return: The prepaid_options of this ChangeServerChargeModeRequestBody.
         :rtype: :class:`huaweicloudsdkecs.v2.ChangeServerChargeModePrepaidOption`
@@ -115,7 +115,7 @@ class ChangeServerChargeModeRequestBody:
 
     @prepaid_options.setter
     def prepaid_options(self, prepaid_options):
-        """Sets the prepaid_options of this ChangeServerChargeModeRequestBody.
+        r"""Sets the prepaid_options of this ChangeServerChargeModeRequestBody.
 
         :param prepaid_options: The prepaid_options of this ChangeServerChargeModeRequestBody.
         :type prepaid_options: :class:`huaweicloudsdkecs.v2.ChangeServerChargeModePrepaidOption`
@@ -124,7 +124,7 @@ class ChangeServerChargeModeRequestBody:
 
     @property
     def dry_run(self):
-        """Gets the dry_run of this ChangeServerChargeModeRequestBody.
+        r"""Gets the dry_run of this ChangeServerChargeModeRequestBody.
 
         是否预先校验此次请求。 true: 发送检查请求，不触发真正的计费转换操作 false: 发送正常请求，触发计费转换操作。 默认值为false
 
@@ -135,7 +135,7 @@ class ChangeServerChargeModeRequestBody:
 
     @dry_run.setter
     def dry_run(self, dry_run):
-        """Sets the dry_run of this ChangeServerChargeModeRequestBody.
+        r"""Sets the dry_run of this ChangeServerChargeModeRequestBody.
 
         是否预先校验此次请求。 true: 发送检查请求，不触发真正的计费转换操作 false: 发送正常请求，触发计费转换操作。 默认值为false
 

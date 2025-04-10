@@ -37,7 +37,7 @@ class CreateDictionary:
     }
 
     def __init__(self, name=None, remark=None, code=None, order=None, extend_one=None, extend_two=None, parent_code=None):
-        """CreateDictionary
+        r"""CreateDictionary
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class CreateDictionary:
 
     @property
     def name(self):
-        """Gets the name of this CreateDictionary.
+        r"""Gets the name of this CreateDictionary.
 
         字典名称 - 字符集：中文、英文字母、数字、下划线和空格 - 约束：实例下唯一
 
@@ -94,7 +94,7 @@ class CreateDictionary:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateDictionary.
+        r"""Sets the name of this CreateDictionary.
 
         字典名称 - 字符集：中文、英文字母、数字、下划线和空格 - 约束：实例下唯一
 
@@ -105,7 +105,7 @@ class CreateDictionary:
 
     @property
     def remark(self):
-        """Gets the remark of this CreateDictionary.
+        r"""Gets the remark of this CreateDictionary.
 
         字典描述
 
@@ -116,7 +116,7 @@ class CreateDictionary:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this CreateDictionary.
+        r"""Sets the remark of this CreateDictionary.
 
         字典描述
 
@@ -127,7 +127,7 @@ class CreateDictionary:
 
     @property
     def code(self):
-        """Gets the code of this CreateDictionary.
+        r"""Gets the code of this CreateDictionary.
 
         字典编码 - 字符集：英文字母、数字、下划线和空格 - 约束：实例下唯一
 
@@ -138,7 +138,7 @@ class CreateDictionary:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this CreateDictionary.
+        r"""Sets the code of this CreateDictionary.
 
         字典编码 - 字符集：英文字母、数字、下划线和空格 - 约束：实例下唯一
 
@@ -149,7 +149,7 @@ class CreateDictionary:
 
     @property
     def order(self):
-        """Gets the order of this CreateDictionary.
+        r"""Gets the order of this CreateDictionary.
 
         字典排序，值越小顺序越靠前
 
@@ -160,7 +160,7 @@ class CreateDictionary:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this CreateDictionary.
+        r"""Sets the order of this CreateDictionary.
 
         字典排序，值越小顺序越靠前
 
@@ -171,7 +171,7 @@ class CreateDictionary:
 
     @property
     def extend_one(self):
-        """Gets the extend_one of this CreateDictionary.
+        r"""Gets the extend_one of this CreateDictionary.
 
         字典扩展字段1 - 字符集：中文、英文字母、数字、下划线和空格
 
@@ -182,7 +182,7 @@ class CreateDictionary:
 
     @extend_one.setter
     def extend_one(self, extend_one):
-        """Sets the extend_one of this CreateDictionary.
+        r"""Sets the extend_one of this CreateDictionary.
 
         字典扩展字段1 - 字符集：中文、英文字母、数字、下划线和空格
 
@@ -193,7 +193,7 @@ class CreateDictionary:
 
     @property
     def extend_two(self):
-        """Gets the extend_two of this CreateDictionary.
+        r"""Gets the extend_two of this CreateDictionary.
 
         字典扩展字段2 - 字符集：中文、英文字母、数字、下划线和空格
 
@@ -204,7 +204,7 @@ class CreateDictionary:
 
     @extend_two.setter
     def extend_two(self, extend_two):
-        """Sets the extend_two of this CreateDictionary.
+        r"""Sets the extend_two of this CreateDictionary.
 
         字典扩展字段2 - 字符集：中文、英文字母、数字、下划线和空格
 
@@ -215,7 +215,7 @@ class CreateDictionary:
 
     @property
     def parent_code(self):
-        """Gets the parent_code of this CreateDictionary.
+        r"""Gets the parent_code of this CreateDictionary.
 
         父字典编码,为空时代表自身就是最顶级字典
 
@@ -226,7 +226,7 @@ class CreateDictionary:
 
     @parent_code.setter
     def parent_code(self, parent_code):
-        """Sets the parent_code of this CreateDictionary.
+        r"""Sets the parent_code of this CreateDictionary.
 
         父字典编码,为空时代表自身就是最顶级字典
 

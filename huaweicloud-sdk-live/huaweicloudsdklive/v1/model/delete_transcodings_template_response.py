@@ -24,7 +24,7 @@ class DeleteTranscodingsTemplateResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteTranscodingsTemplateResponse
+        r"""DeleteTranscodingsTemplateResponse
 
         The model defined in huaweicloud sdk
 

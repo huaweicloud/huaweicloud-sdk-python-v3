@@ -27,7 +27,7 @@ class StartNewPipelineRequest:
     }
 
     def __init__(self, pipeline_id=None, body=None):
-        """StartNewPipelineRequest
+        r"""StartNewPipelineRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class StartNewPipelineRequest:
 
     @property
     def pipeline_id(self):
-        """Gets the pipeline_id of this StartNewPipelineRequest.
+        r"""Gets the pipeline_id of this StartNewPipelineRequest.
 
         流水线ID
 
@@ -60,7 +60,7 @@ class StartNewPipelineRequest:
 
     @pipeline_id.setter
     def pipeline_id(self, pipeline_id):
-        """Sets the pipeline_id of this StartNewPipelineRequest.
+        r"""Sets the pipeline_id of this StartNewPipelineRequest.
 
         流水线ID
 
@@ -71,7 +71,7 @@ class StartNewPipelineRequest:
 
     @property
     def body(self):
-        """Gets the body of this StartNewPipelineRequest.
+        r"""Gets the body of this StartNewPipelineRequest.
 
         :return: The body of this StartNewPipelineRequest.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.StartPipelineParameters`
@@ -80,7 +80,7 @@ class StartNewPipelineRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StartNewPipelineRequest.
+        r"""Sets the body of this StartNewPipelineRequest.
 
         :param body: The body of this StartNewPipelineRequest.
         :type body: :class:`huaweicloudsdkcodeartspipeline.v2.StartPipelineParameters`

@@ -33,7 +33,7 @@ class Timezones:
     }
 
     def __init__(self, time_zone_desc=None, time_zone=None, time_zone_name=None, time_zone_desc_us=None, time_zone_desc_cn=None):
-        """Timezones
+        r"""Timezones
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class Timezones:
 
     @property
     def time_zone_desc(self):
-        """Gets the time_zone_desc of this Timezones.
+        r"""Gets the time_zone_desc of this Timezones.
 
         时区描述
 
@@ -82,7 +82,7 @@ class Timezones:
 
     @time_zone_desc.setter
     def time_zone_desc(self, time_zone_desc):
-        """Sets the time_zone_desc of this Timezones.
+        r"""Sets the time_zone_desc of this Timezones.
 
         时区描述
 
@@ -93,7 +93,7 @@ class Timezones:
 
     @property
     def time_zone(self):
-        """Gets the time_zone of this Timezones.
+        r"""Gets the time_zone of this Timezones.
 
         时区偏移量
 
@@ -104,7 +104,7 @@ class Timezones:
 
     @time_zone.setter
     def time_zone(self, time_zone):
-        """Sets the time_zone of this Timezones.
+        r"""Sets the time_zone of this Timezones.
 
         时区偏移量
 
@@ -115,7 +115,7 @@ class Timezones:
 
     @property
     def time_zone_name(self):
-        """Gets the time_zone_name of this Timezones.
+        r"""Gets the time_zone_name of this Timezones.
 
         时区地名
 
@@ -126,7 +126,7 @@ class Timezones:
 
     @time_zone_name.setter
     def time_zone_name(self, time_zone_name):
-        """Sets the time_zone_name of this Timezones.
+        r"""Sets the time_zone_name of this Timezones.
 
         时区地名
 
@@ -137,7 +137,7 @@ class Timezones:
 
     @property
     def time_zone_desc_us(self):
-        """Gets the time_zone_desc_us of this Timezones.
+        r"""Gets the time_zone_desc_us of this Timezones.
 
         时区英文描述
 
@@ -148,7 +148,7 @@ class Timezones:
 
     @time_zone_desc_us.setter
     def time_zone_desc_us(self, time_zone_desc_us):
-        """Sets the time_zone_desc_us of this Timezones.
+        r"""Sets the time_zone_desc_us of this Timezones.
 
         时区英文描述
 
@@ -159,7 +159,7 @@ class Timezones:
 
     @property
     def time_zone_desc_cn(self):
-        """Gets the time_zone_desc_cn of this Timezones.
+        r"""Gets the time_zone_desc_cn of this Timezones.
 
         时区中文描述
 
@@ -170,7 +170,7 @@ class Timezones:
 
     @time_zone_desc_cn.setter
     def time_zone_desc_cn(self, time_zone_desc_cn):
-        """Sets the time_zone_desc_cn of this Timezones.
+        r"""Sets the time_zone_desc_cn of this Timezones.
 
         时区中文描述
 

@@ -67,7 +67,7 @@ class PlaybookVersionListEntity:
     }
 
     def __init__(self, id=None, description=None, create_time=None, update_time=None, project_id=None, creator_id=None, modifier_id=None, playbook_id=None, version=None, enabled=None, status=None, action_strategy=None, rule_enable=None, dataclass_id=None, trigger_type=None, dataobject_create=None, dataobject_update=None, dataobject_delete=None, version_type=None, rule_id=None, dataclass_name=None, approve_name=None):
-        """PlaybookVersionListEntity
+        r"""PlaybookVersionListEntity
 
         The model defined in huaweicloud sdk
 
@@ -190,7 +190,7 @@ class PlaybookVersionListEntity:
 
     @property
     def id(self):
-        """Gets the id of this PlaybookVersionListEntity.
+        r"""Gets the id of this PlaybookVersionListEntity.
 
         剧本版本ID
 
@@ -201,7 +201,7 @@ class PlaybookVersionListEntity:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PlaybookVersionListEntity.
+        r"""Sets the id of this PlaybookVersionListEntity.
 
         剧本版本ID
 
@@ -212,7 +212,7 @@ class PlaybookVersionListEntity:
 
     @property
     def description(self):
-        """Gets the description of this PlaybookVersionListEntity.
+        r"""Gets the description of this PlaybookVersionListEntity.
 
         描述
 
@@ -223,7 +223,7 @@ class PlaybookVersionListEntity:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PlaybookVersionListEntity.
+        r"""Sets the description of this PlaybookVersionListEntity.
 
         描述
 
@@ -234,7 +234,7 @@ class PlaybookVersionListEntity:
 
     @property
     def create_time(self):
-        """Gets the create_time of this PlaybookVersionListEntity.
+        r"""Gets the create_time of this PlaybookVersionListEntity.
 
         创建时间
 
@@ -245,7 +245,7 @@ class PlaybookVersionListEntity:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this PlaybookVersionListEntity.
+        r"""Sets the create_time of this PlaybookVersionListEntity.
 
         创建时间
 
@@ -256,7 +256,7 @@ class PlaybookVersionListEntity:
 
     @property
     def update_time(self):
-        """Gets the update_time of this PlaybookVersionListEntity.
+        r"""Gets the update_time of this PlaybookVersionListEntity.
 
         更新时间
 
@@ -267,7 +267,7 @@ class PlaybookVersionListEntity:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this PlaybookVersionListEntity.
+        r"""Sets the update_time of this PlaybookVersionListEntity.
 
         更新时间
 
@@ -278,7 +278,7 @@ class PlaybookVersionListEntity:
 
     @property
     def project_id(self):
-        """Gets the project_id of this PlaybookVersionListEntity.
+        r"""Gets the project_id of this PlaybookVersionListEntity.
 
         项目ID
 
@@ -289,7 +289,7 @@ class PlaybookVersionListEntity:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this PlaybookVersionListEntity.
+        r"""Sets the project_id of this PlaybookVersionListEntity.
 
         项目ID
 
@@ -300,7 +300,7 @@ class PlaybookVersionListEntity:
 
     @property
     def creator_id(self):
-        """Gets the creator_id of this PlaybookVersionListEntity.
+        r"""Gets the creator_id of this PlaybookVersionListEntity.
 
         创建者ID
 
@@ -311,7 +311,7 @@ class PlaybookVersionListEntity:
 
     @creator_id.setter
     def creator_id(self, creator_id):
-        """Sets the creator_id of this PlaybookVersionListEntity.
+        r"""Sets the creator_id of this PlaybookVersionListEntity.
 
         创建者ID
 
@@ -322,7 +322,7 @@ class PlaybookVersionListEntity:
 
     @property
     def modifier_id(self):
-        """Gets the modifier_id of this PlaybookVersionListEntity.
+        r"""Gets the modifier_id of this PlaybookVersionListEntity.
 
         修改者ID
 
@@ -333,7 +333,7 @@ class PlaybookVersionListEntity:
 
     @modifier_id.setter
     def modifier_id(self, modifier_id):
-        """Sets the modifier_id of this PlaybookVersionListEntity.
+        r"""Sets the modifier_id of this PlaybookVersionListEntity.
 
         修改者ID
 
@@ -344,7 +344,7 @@ class PlaybookVersionListEntity:
 
     @property
     def playbook_id(self):
-        """Gets the playbook_id of this PlaybookVersionListEntity.
+        r"""Gets the playbook_id of this PlaybookVersionListEntity.
 
         剧本ID
 
@@ -355,7 +355,7 @@ class PlaybookVersionListEntity:
 
     @playbook_id.setter
     def playbook_id(self, playbook_id):
-        """Sets the playbook_id of this PlaybookVersionListEntity.
+        r"""Sets the playbook_id of this PlaybookVersionListEntity.
 
         剧本ID
 
@@ -366,7 +366,7 @@ class PlaybookVersionListEntity:
 
     @property
     def version(self):
-        """Gets the version of this PlaybookVersionListEntity.
+        r"""Gets the version of this PlaybookVersionListEntity.
 
         版本号
 
@@ -377,7 +377,7 @@ class PlaybookVersionListEntity:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this PlaybookVersionListEntity.
+        r"""Sets the version of this PlaybookVersionListEntity.
 
         版本号
 
@@ -388,7 +388,7 @@ class PlaybookVersionListEntity:
 
     @property
     def enabled(self):
-        """Gets the enabled of this PlaybookVersionListEntity.
+        r"""Gets the enabled of this PlaybookVersionListEntity.
 
         是否激活
 
@@ -399,7 +399,7 @@ class PlaybookVersionListEntity:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this PlaybookVersionListEntity.
+        r"""Sets the enabled of this PlaybookVersionListEntity.
 
         是否激活
 
@@ -410,7 +410,7 @@ class PlaybookVersionListEntity:
 
     @property
     def status(self):
-        """Gets the status of this PlaybookVersionListEntity.
+        r"""Gets the status of this PlaybookVersionListEntity.
 
         状态. (EDITING--编辑中, APPROVING--审核中, UNPASSED--审核不通过, PUBLISHED--审核通过)
 
@@ -421,7 +421,7 @@ class PlaybookVersionListEntity:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PlaybookVersionListEntity.
+        r"""Sets the status of this PlaybookVersionListEntity.
 
         状态. (EDITING--编辑中, APPROVING--审核中, UNPASSED--审核不通过, PUBLISHED--审核通过)
 
@@ -432,7 +432,7 @@ class PlaybookVersionListEntity:
 
     @property
     def action_strategy(self):
-        """Gets the action_strategy of this PlaybookVersionListEntity.
+        r"""Gets the action_strategy of this PlaybookVersionListEntity.
 
         执行策略. 目前仅支持异步并发执行，对应值为ASYNC
 
@@ -443,7 +443,7 @@ class PlaybookVersionListEntity:
 
     @action_strategy.setter
     def action_strategy(self, action_strategy):
-        """Sets the action_strategy of this PlaybookVersionListEntity.
+        r"""Sets the action_strategy of this PlaybookVersionListEntity.
 
         执行策略. 目前仅支持异步并发执行，对应值为ASYNC
 
@@ -454,7 +454,7 @@ class PlaybookVersionListEntity:
 
     @property
     def rule_enable(self):
-        """Gets the rule_enable of this PlaybookVersionListEntity.
+        r"""Gets the rule_enable of this PlaybookVersionListEntity.
 
         过滤规则是否启用
 
@@ -465,7 +465,7 @@ class PlaybookVersionListEntity:
 
     @rule_enable.setter
     def rule_enable(self, rule_enable):
-        """Sets the rule_enable of this PlaybookVersionListEntity.
+        r"""Sets the rule_enable of this PlaybookVersionListEntity.
 
         过滤规则是否启用
 
@@ -476,7 +476,7 @@ class PlaybookVersionListEntity:
 
     @property
     def dataclass_id(self):
-        """Gets the dataclass_id of this PlaybookVersionListEntity.
+        r"""Gets the dataclass_id of this PlaybookVersionListEntity.
 
         数据类ID
 
@@ -487,7 +487,7 @@ class PlaybookVersionListEntity:
 
     @dataclass_id.setter
     def dataclass_id(self, dataclass_id):
-        """Sets the dataclass_id of this PlaybookVersionListEntity.
+        r"""Sets the dataclass_id of this PlaybookVersionListEntity.
 
         数据类ID
 
@@ -498,7 +498,7 @@ class PlaybookVersionListEntity:
 
     @property
     def trigger_type(self):
-        """Gets the trigger_type of this PlaybookVersionListEntity.
+        r"""Gets the trigger_type of this PlaybookVersionListEntity.
 
         触发方式. EVENT--事件触发, TIMER--定时触发
 
@@ -509,7 +509,7 @@ class PlaybookVersionListEntity:
 
     @trigger_type.setter
     def trigger_type(self, trigger_type):
-        """Sets the trigger_type of this PlaybookVersionListEntity.
+        r"""Sets the trigger_type of this PlaybookVersionListEntity.
 
         触发方式. EVENT--事件触发, TIMER--定时触发
 
@@ -520,7 +520,7 @@ class PlaybookVersionListEntity:
 
     @property
     def dataobject_create(self):
-        """Gets the dataobject_create of this PlaybookVersionListEntity.
+        r"""Gets the dataobject_create of this PlaybookVersionListEntity.
 
         标识数据对象是否创建时触发剧本
 
@@ -531,7 +531,7 @@ class PlaybookVersionListEntity:
 
     @dataobject_create.setter
     def dataobject_create(self, dataobject_create):
-        """Sets the dataobject_create of this PlaybookVersionListEntity.
+        r"""Sets the dataobject_create of this PlaybookVersionListEntity.
 
         标识数据对象是否创建时触发剧本
 
@@ -542,7 +542,7 @@ class PlaybookVersionListEntity:
 
     @property
     def dataobject_update(self):
-        """Gets the dataobject_update of this PlaybookVersionListEntity.
+        r"""Gets the dataobject_update of this PlaybookVersionListEntity.
 
         标识数据对象是否更新时触发剧本
 
@@ -553,7 +553,7 @@ class PlaybookVersionListEntity:
 
     @dataobject_update.setter
     def dataobject_update(self, dataobject_update):
-        """Sets the dataobject_update of this PlaybookVersionListEntity.
+        r"""Sets the dataobject_update of this PlaybookVersionListEntity.
 
         标识数据对象是否更新时触发剧本
 
@@ -564,7 +564,7 @@ class PlaybookVersionListEntity:
 
     @property
     def dataobject_delete(self):
-        """Gets the dataobject_delete of this PlaybookVersionListEntity.
+        r"""Gets the dataobject_delete of this PlaybookVersionListEntity.
 
         标识数据对象是否删除时触发剧本
 
@@ -575,7 +575,7 @@ class PlaybookVersionListEntity:
 
     @dataobject_delete.setter
     def dataobject_delete(self, dataobject_delete):
-        """Sets the dataobject_delete of this PlaybookVersionListEntity.
+        r"""Sets the dataobject_delete of this PlaybookVersionListEntity.
 
         标识数据对象是否删除时触发剧本
 
@@ -586,7 +586,7 @@ class PlaybookVersionListEntity:
 
     @property
     def version_type(self):
-        """Gets the version_type of this PlaybookVersionListEntity.
+        r"""Gets the version_type of this PlaybookVersionListEntity.
 
         版本类型
 
@@ -597,7 +597,7 @@ class PlaybookVersionListEntity:
 
     @version_type.setter
     def version_type(self, version_type):
-        """Sets the version_type of this PlaybookVersionListEntity.
+        r"""Sets the version_type of this PlaybookVersionListEntity.
 
         版本类型
 
@@ -608,7 +608,7 @@ class PlaybookVersionListEntity:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this PlaybookVersionListEntity.
+        r"""Gets the rule_id of this PlaybookVersionListEntity.
 
         过滤规则ID
 
@@ -619,7 +619,7 @@ class PlaybookVersionListEntity:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this PlaybookVersionListEntity.
+        r"""Sets the rule_id of this PlaybookVersionListEntity.
 
         过滤规则ID
 
@@ -630,7 +630,7 @@ class PlaybookVersionListEntity:
 
     @property
     def dataclass_name(self):
-        """Gets the dataclass_name of this PlaybookVersionListEntity.
+        r"""Gets the dataclass_name of this PlaybookVersionListEntity.
 
         数据类名称
 
@@ -641,7 +641,7 @@ class PlaybookVersionListEntity:
 
     @dataclass_name.setter
     def dataclass_name(self, dataclass_name):
-        """Sets the dataclass_name of this PlaybookVersionListEntity.
+        r"""Sets the dataclass_name of this PlaybookVersionListEntity.
 
         数据类名称
 
@@ -652,7 +652,7 @@ class PlaybookVersionListEntity:
 
     @property
     def approve_name(self):
-        """Gets the approve_name of this PlaybookVersionListEntity.
+        r"""Gets the approve_name of this PlaybookVersionListEntity.
 
         审核者
 
@@ -663,7 +663,7 @@ class PlaybookVersionListEntity:
 
     @approve_name.setter
     def approve_name(self, approve_name):
-        """Sets the approve_name of this PlaybookVersionListEntity.
+        r"""Sets the approve_name of this PlaybookVersionListEntity.
 
         审核者
 

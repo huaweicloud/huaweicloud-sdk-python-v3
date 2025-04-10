@@ -36,7 +36,7 @@ class ListAuthorizationPrivilegesResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, object_name=None, object_type=None, count=None, privileges=None):
-        """ListAuthorizationPrivilegesResponse
+        r"""ListAuthorizationPrivilegesResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ListAuthorizationPrivilegesResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ListAuthorizationPrivilegesResponse.
+        r"""Gets the is_success of this ListAuthorizationPrivilegesResponse.
 
         成功标识
 
@@ -90,7 +90,7 @@ class ListAuthorizationPrivilegesResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ListAuthorizationPrivilegesResponse.
+        r"""Sets the is_success of this ListAuthorizationPrivilegesResponse.
 
         成功标识
 
@@ -101,7 +101,7 @@ class ListAuthorizationPrivilegesResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListAuthorizationPrivilegesResponse.
+        r"""Gets the message of this ListAuthorizationPrivilegesResponse.
 
         响应信息
 
@@ -112,7 +112,7 @@ class ListAuthorizationPrivilegesResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListAuthorizationPrivilegesResponse.
+        r"""Sets the message of this ListAuthorizationPrivilegesResponse.
 
         响应信息
 
@@ -123,7 +123,7 @@ class ListAuthorizationPrivilegesResponse(SdkResponse):
 
     @property
     def object_name(self):
-        """Gets the object_name of this ListAuthorizationPrivilegesResponse.
+        r"""Gets the object_name of this ListAuthorizationPrivilegesResponse.
 
         对象名称
 
@@ -134,7 +134,7 @@ class ListAuthorizationPrivilegesResponse(SdkResponse):
 
     @object_name.setter
     def object_name(self, object_name):
-        """Sets the object_name of this ListAuthorizationPrivilegesResponse.
+        r"""Sets the object_name of this ListAuthorizationPrivilegesResponse.
 
         对象名称
 
@@ -145,7 +145,7 @@ class ListAuthorizationPrivilegesResponse(SdkResponse):
 
     @property
     def object_type(self):
-        """Gets the object_type of this ListAuthorizationPrivilegesResponse.
+        r"""Gets the object_type of this ListAuthorizationPrivilegesResponse.
 
         对象类型
 
@@ -156,7 +156,7 @@ class ListAuthorizationPrivilegesResponse(SdkResponse):
 
     @object_type.setter
     def object_type(self, object_type):
-        """Sets the object_type of this ListAuthorizationPrivilegesResponse.
+        r"""Sets the object_type of this ListAuthorizationPrivilegesResponse.
 
         对象类型
 
@@ -167,7 +167,7 @@ class ListAuthorizationPrivilegesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListAuthorizationPrivilegesResponse.
+        r"""Gets the count of this ListAuthorizationPrivilegesResponse.
 
         对象类型
 
@@ -178,7 +178,7 @@ class ListAuthorizationPrivilegesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListAuthorizationPrivilegesResponse.
+        r"""Sets the count of this ListAuthorizationPrivilegesResponse.
 
         对象类型
 
@@ -189,7 +189,7 @@ class ListAuthorizationPrivilegesResponse(SdkResponse):
 
     @property
     def privileges(self):
-        """Gets the privileges of this ListAuthorizationPrivilegesResponse.
+        r"""Gets the privileges of this ListAuthorizationPrivilegesResponse.
 
         权限信息
 
@@ -200,7 +200,7 @@ class ListAuthorizationPrivilegesResponse(SdkResponse):
 
     @privileges.setter
     def privileges(self, privileges):
-        """Sets the privileges of this ListAuthorizationPrivilegesResponse.
+        r"""Sets the privileges of this ListAuthorizationPrivilegesResponse.
 
         权限信息
 

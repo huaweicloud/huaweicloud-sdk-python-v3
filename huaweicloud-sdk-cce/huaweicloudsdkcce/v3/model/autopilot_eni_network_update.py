@@ -25,7 +25,7 @@ class AutopilotEniNetworkUpdate:
     }
 
     def __init__(self, subnets=None):
-        """AutopilotEniNetworkUpdate
+        r"""AutopilotEniNetworkUpdate
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AutopilotEniNetworkUpdate:
 
     @property
     def subnets(self):
-        """Gets the subnets of this AutopilotEniNetworkUpdate.
+        r"""Gets the subnets of this AutopilotEniNetworkUpdate.
 
         IPv4子网ID列表。 只允许新增子网，不可删除已有子网，请谨慎选择。  请求体中需包含所有已经存在的subnet。
 
@@ -54,7 +54,7 @@ class AutopilotEniNetworkUpdate:
 
     @subnets.setter
     def subnets(self, subnets):
-        """Sets the subnets of this AutopilotEniNetworkUpdate.
+        r"""Sets the subnets of this AutopilotEniNetworkUpdate.
 
         IPv4子网ID列表。 只允许新增子网，不可删除已有子网，请谨慎选择。  请求体中需包含所有已经存在的subnet。
 

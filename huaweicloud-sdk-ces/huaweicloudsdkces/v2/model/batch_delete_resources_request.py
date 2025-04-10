@@ -27,7 +27,7 @@ class BatchDeleteResourcesRequest:
     }
 
     def __init__(self, group_id=None, body=None):
-        """BatchDeleteResourcesRequest
+        r"""BatchDeleteResourcesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeleteResourcesRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this BatchDeleteResourcesRequest.
+        r"""Gets the group_id of this BatchDeleteResourcesRequest.
 
         资源分组ID，以rg开头，后跟22位由字母或数字组成的字符串
 
@@ -60,7 +60,7 @@ class BatchDeleteResourcesRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this BatchDeleteResourcesRequest.
+        r"""Sets the group_id of this BatchDeleteResourcesRequest.
 
         资源分组ID，以rg开头，后跟22位由字母或数字组成的字符串
 
@@ -71,7 +71,7 @@ class BatchDeleteResourcesRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteResourcesRequest.
+        r"""Gets the body of this BatchDeleteResourcesRequest.
 
         :return: The body of this BatchDeleteResourcesRequest.
         :rtype: :class:`huaweicloudsdkces.v2.ResourcesReq`
@@ -80,7 +80,7 @@ class BatchDeleteResourcesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteResourcesRequest.
+        r"""Sets the body of this BatchDeleteResourcesRequest.
 
         :param body: The body of this BatchDeleteResourcesRequest.
         :type body: :class:`huaweicloudsdkces.v2.ResourcesReq`

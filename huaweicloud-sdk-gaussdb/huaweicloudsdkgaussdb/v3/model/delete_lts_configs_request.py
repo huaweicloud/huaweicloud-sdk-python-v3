@@ -27,7 +27,7 @@ class DeleteLtsConfigsRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """DeleteLtsConfigsRequest
+        r"""DeleteLtsConfigsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DeleteLtsConfigsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this DeleteLtsConfigsRequest.
+        r"""Gets the x_language of this DeleteLtsConfigsRequest.
 
         语言。
 
@@ -61,7 +61,7 @@ class DeleteLtsConfigsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this DeleteLtsConfigsRequest.
+        r"""Sets the x_language of this DeleteLtsConfigsRequest.
 
         语言。
 
@@ -72,7 +72,7 @@ class DeleteLtsConfigsRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteLtsConfigsRequest.
+        r"""Gets the body of this DeleteLtsConfigsRequest.
 
         :return: The body of this DeleteLtsConfigsRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteLtsConfigsRequestBody`
@@ -81,7 +81,7 @@ class DeleteLtsConfigsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteLtsConfigsRequest.
+        r"""Sets the body of this DeleteLtsConfigsRequest.
 
         :param body: The body of this DeleteLtsConfigsRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.DeleteLtsConfigsRequestBody`

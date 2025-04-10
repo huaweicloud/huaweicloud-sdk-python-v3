@@ -31,7 +31,7 @@ class LockViewRequest:
     }
 
     def __init__(self, conference_id=None, participant_id=None, x_conference_authorization=None, body=None):
-        """LockViewRequest
+        r"""LockViewRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class LockViewRequest:
 
     @property
     def conference_id(self):
-        """Gets the conference_id of this LockViewRequest.
+        r"""Gets the conference_id of this LockViewRequest.
 
         会议ID。
 
@@ -72,7 +72,7 @@ class LockViewRequest:
 
     @conference_id.setter
     def conference_id(self, conference_id):
-        """Sets the conference_id of this LockViewRequest.
+        r"""Sets the conference_id of this LockViewRequest.
 
         会议ID。
 
@@ -83,7 +83,7 @@ class LockViewRequest:
 
     @property
     def participant_id(self):
-        """Gets the participant_id of this LockViewRequest.
+        r"""Gets the participant_id of this LockViewRequest.
 
         专业会议终端的与会者标识。
 
@@ -94,7 +94,7 @@ class LockViewRequest:
 
     @participant_id.setter
     def participant_id(self, participant_id):
-        """Sets the participant_id of this LockViewRequest.
+        r"""Sets the participant_id of this LockViewRequest.
 
         专业会议终端的与会者标识。
 
@@ -105,7 +105,7 @@ class LockViewRequest:
 
     @property
     def x_conference_authorization(self):
-        """Gets the x_conference_authorization of this LockViewRequest.
+        r"""Gets the x_conference_authorization of this LockViewRequest.
 
         会控Token，通过[[获取会控token](https://support.huaweicloud.com/api-meeting/meeting_21_0027.html)](tag:hws)[[获取会控token](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0027.html)](tag:hk)接口获得。
 
@@ -116,7 +116,7 @@ class LockViewRequest:
 
     @x_conference_authorization.setter
     def x_conference_authorization(self, x_conference_authorization):
-        """Sets the x_conference_authorization of this LockViewRequest.
+        r"""Sets the x_conference_authorization of this LockViewRequest.
 
         会控Token，通过[[获取会控token](https://support.huaweicloud.com/api-meeting/meeting_21_0027.html)](tag:hws)[[获取会控token](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0027.html)](tag:hk)接口获得。
 
@@ -127,7 +127,7 @@ class LockViewRequest:
 
     @property
     def body(self):
-        """Gets the body of this LockViewRequest.
+        r"""Gets the body of this LockViewRequest.
 
         :return: The body of this LockViewRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RestLockSiteViewReqBody`
@@ -136,7 +136,7 @@ class LockViewRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this LockViewRequest.
+        r"""Sets the body of this LockViewRequest.
 
         :param body: The body of this LockViewRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.RestLockSiteViewReqBody`

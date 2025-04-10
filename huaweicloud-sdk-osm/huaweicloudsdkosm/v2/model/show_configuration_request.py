@@ -25,7 +25,7 @@ class ShowConfigurationRequest:
     }
 
     def __init__(self, config_key=None):
-        """ShowConfigurationRequest
+        r"""ShowConfigurationRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowConfigurationRequest:
 
     @property
     def config_key(self):
-        """Gets the config_key of this ShowConfigurationRequest.
+        r"""Gets the config_key of this ShowConfigurationRequest.
 
         配置项键值
 
@@ -53,7 +53,7 @@ class ShowConfigurationRequest:
 
     @config_key.setter
     def config_key(self, config_key):
-        """Sets the config_key of this ShowConfigurationRequest.
+        r"""Sets the config_key of this ShowConfigurationRequest.
 
         配置项键值
 

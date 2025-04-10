@@ -30,7 +30,7 @@ class ListTranscodingTaskResponse(SdkResponse):
     }
 
     def __init__(self, task_array=None, is_truncated=None, total=None):
-        """ListTranscodingTaskResponse
+        r"""ListTranscodingTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListTranscodingTaskResponse(SdkResponse):
 
     @property
     def task_array(self):
-        """Gets the task_array of this ListTranscodingTaskResponse.
+        r"""Gets the task_array of this ListTranscodingTaskResponse.
 
         返回任务组
 
@@ -69,7 +69,7 @@ class ListTranscodingTaskResponse(SdkResponse):
 
     @task_array.setter
     def task_array(self, task_array):
-        """Sets the task_array of this ListTranscodingTaskResponse.
+        r"""Sets the task_array of this ListTranscodingTaskResponse.
 
         返回任务组
 
@@ -80,7 +80,7 @@ class ListTranscodingTaskResponse(SdkResponse):
 
     @property
     def is_truncated(self):
-        """Gets the is_truncated of this ListTranscodingTaskResponse.
+        r"""Gets the is_truncated of this ListTranscodingTaskResponse.
 
         查询结果是否被截取。 - 1：表示被截取，即还有结果未被返回，可以通过设置page和size参数继续查询。 - 0：表示未被截取，即所有结果已被返回。 
 
@@ -91,7 +91,7 @@ class ListTranscodingTaskResponse(SdkResponse):
 
     @is_truncated.setter
     def is_truncated(self, is_truncated):
-        """Sets the is_truncated of this ListTranscodingTaskResponse.
+        r"""Sets the is_truncated of this ListTranscodingTaskResponse.
 
         查询结果是否被截取。 - 1：表示被截取，即还有结果未被返回，可以通过设置page和size参数继续查询。 - 0：表示未被截取，即所有结果已被返回。 
 
@@ -102,7 +102,7 @@ class ListTranscodingTaskResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListTranscodingTaskResponse.
+        r"""Gets the total of this ListTranscodingTaskResponse.
 
         查询结果的数量。 
 
@@ -113,7 +113,7 @@ class ListTranscodingTaskResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListTranscodingTaskResponse.
+        r"""Sets the total of this ListTranscodingTaskResponse.
 
         查询结果的数量。 
 

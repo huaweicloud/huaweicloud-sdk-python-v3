@@ -27,7 +27,7 @@ class BatchDeleteMessageDiagnosisRespResults:
     }
 
     def __init__(self, result=None, id=None):
-        """BatchDeleteMessageDiagnosisRespResults
+        r"""BatchDeleteMessageDiagnosisRespResults
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchDeleteMessageDiagnosisRespResults:
 
     @property
     def result(self):
-        """Gets the result of this BatchDeleteMessageDiagnosisRespResults.
+        r"""Gets the result of this BatchDeleteMessageDiagnosisRespResults.
 
         报告删除结果
 
@@ -59,7 +59,7 @@ class BatchDeleteMessageDiagnosisRespResults:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this BatchDeleteMessageDiagnosisRespResults.
+        r"""Sets the result of this BatchDeleteMessageDiagnosisRespResults.
 
         报告删除结果
 
@@ -70,7 +70,7 @@ class BatchDeleteMessageDiagnosisRespResults:
 
     @property
     def id(self):
-        """Gets the id of this BatchDeleteMessageDiagnosisRespResults.
+        r"""Gets the id of this BatchDeleteMessageDiagnosisRespResults.
 
         报告ID
 
@@ -81,7 +81,7 @@ class BatchDeleteMessageDiagnosisRespResults:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BatchDeleteMessageDiagnosisRespResults.
+        r"""Sets the id of this BatchDeleteMessageDiagnosisRespResults.
 
         报告ID
 

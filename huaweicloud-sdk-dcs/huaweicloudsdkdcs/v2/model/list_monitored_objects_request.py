@@ -29,7 +29,7 @@ class ListMonitoredObjectsRequest:
     }
 
     def __init__(self, dim_name=None, offset=None, limit=None):
-        """ListMonitoredObjectsRequest
+        r"""ListMonitoredObjectsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListMonitoredObjectsRequest:
 
     @property
     def dim_name(self):
-        """Gets the dim_name of this ListMonitoredObjectsRequest.
+        r"""Gets the dim_name of this ListMonitoredObjectsRequest.
 
         主维度ID，当前支持dcs_instance_id，dcs_memcached_instance_id。
 
@@ -67,7 +67,7 @@ class ListMonitoredObjectsRequest:
 
     @dim_name.setter
     def dim_name(self, dim_name):
-        """Sets the dim_name of this ListMonitoredObjectsRequest.
+        r"""Sets the dim_name of this ListMonitoredObjectsRequest.
 
         主维度ID，当前支持dcs_instance_id，dcs_memcached_instance_id。
 
@@ -78,7 +78,7 @@ class ListMonitoredObjectsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListMonitoredObjectsRequest.
+        r"""Gets the offset of this ListMonitoredObjectsRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0
 
@@ -89,7 +89,7 @@ class ListMonitoredObjectsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListMonitoredObjectsRequest.
+        r"""Sets the offset of this ListMonitoredObjectsRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0
 
@@ -100,7 +100,7 @@ class ListMonitoredObjectsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListMonitoredObjectsRequest.
+        r"""Gets the limit of this ListMonitoredObjectsRequest.
 
         每页显示的条目数量
 
@@ -111,7 +111,7 @@ class ListMonitoredObjectsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListMonitoredObjectsRequest.
+        r"""Sets the limit of this ListMonitoredObjectsRequest.
 
         每页显示的条目数量
 

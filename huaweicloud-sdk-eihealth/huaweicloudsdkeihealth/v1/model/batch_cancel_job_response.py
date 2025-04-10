@@ -26,7 +26,7 @@ class BatchCancelJobResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """BatchCancelJobResponse
+        r"""BatchCancelJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchCancelJobResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this BatchCancelJobResponse.
+        r"""Gets the body of this BatchCancelJobResponse.
 
         :return: The body of this BatchCancelJobResponse.
         :rtype: list[:class:`huaweicloudsdkeihealth.v1.BatchOperateJobRsp`]
@@ -53,7 +53,7 @@ class BatchCancelJobResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCancelJobResponse.
+        r"""Sets the body of this BatchCancelJobResponse.
 
         :param body: The body of this BatchCancelJobResponse.
         :type body: list[:class:`huaweicloudsdkeihealth.v1.BatchOperateJobRsp`]

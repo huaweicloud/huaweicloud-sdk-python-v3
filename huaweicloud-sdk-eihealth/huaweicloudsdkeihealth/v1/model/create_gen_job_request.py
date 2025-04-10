@@ -27,7 +27,7 @@ class CreateGenJobRequest:
     }
 
     def __init__(self, eihealth_project_id=None, body=None):
-        """CreateGenJobRequest
+        r"""CreateGenJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateGenJobRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this CreateGenJobRequest.
+        r"""Gets the eihealth_project_id of this CreateGenJobRequest.
 
         平台项目ID。
 
@@ -60,7 +60,7 @@ class CreateGenJobRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this CreateGenJobRequest.
+        r"""Sets the eihealth_project_id of this CreateGenJobRequest.
 
         平台项目ID。
 
@@ -71,7 +71,7 @@ class CreateGenJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateGenJobRequest.
+        r"""Gets the body of this CreateGenJobRequest.
 
         :return: The body of this CreateGenJobRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateGenJobReq`
@@ -80,7 +80,7 @@ class CreateGenJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateGenJobRequest.
+        r"""Sets the body of this CreateGenJobRequest.
 
         :param body: The body of this CreateGenJobRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.CreateGenJobReq`

@@ -26,7 +26,7 @@ class ListSessionByUserNameResponse(SdkResponse):
     }
 
     def __init__(self, session_info_list=None):
-        """ListSessionByUserNameResponse
+        r"""ListSessionByUserNameResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListSessionByUserNameResponse(SdkResponse):
 
     @property
     def session_info_list(self):
-        """Gets the session_info_list of this ListSessionByUserNameResponse.
+        r"""Gets the session_info_list of this ListSessionByUserNameResponse.
 
         会话信息列表。
 
@@ -55,7 +55,7 @@ class ListSessionByUserNameResponse(SdkResponse):
 
     @session_info_list.setter
     def session_info_list(self, session_info_list):
-        """Sets the session_info_list of this ListSessionByUserNameResponse.
+        r"""Sets the session_info_list of this ListSessionByUserNameResponse.
 
         会话信息列表。
 

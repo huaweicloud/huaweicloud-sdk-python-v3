@@ -32,7 +32,7 @@ class ChangeAlertResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, data=None, x_request_id=None):
-        """ChangeAlertResponse
+        r"""ChangeAlertResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ChangeAlertResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ChangeAlertResponse.
+        r"""Gets the code of this ChangeAlertResponse.
 
         Id value
 
@@ -76,7 +76,7 @@ class ChangeAlertResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ChangeAlertResponse.
+        r"""Sets the code of this ChangeAlertResponse.
 
         Id value
 
@@ -87,7 +87,7 @@ class ChangeAlertResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ChangeAlertResponse.
+        r"""Gets the message of this ChangeAlertResponse.
 
         Error message
 
@@ -98,7 +98,7 @@ class ChangeAlertResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ChangeAlertResponse.
+        r"""Sets the message of this ChangeAlertResponse.
 
         Error message
 
@@ -109,7 +109,7 @@ class ChangeAlertResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ChangeAlertResponse.
+        r"""Gets the data of this ChangeAlertResponse.
 
         :return: The data of this ChangeAlertResponse.
         :rtype: :class:`huaweicloudsdksa.v2.AlertDetail`
@@ -118,7 +118,7 @@ class ChangeAlertResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ChangeAlertResponse.
+        r"""Sets the data of this ChangeAlertResponse.
 
         :param data: The data of this ChangeAlertResponse.
         :type data: :class:`huaweicloudsdksa.v2.AlertDetail`
@@ -127,7 +127,7 @@ class ChangeAlertResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ChangeAlertResponse.
+        r"""Gets the x_request_id of this ChangeAlertResponse.
 
         :return: The x_request_id of this ChangeAlertResponse.
         :rtype: str
@@ -136,7 +136,7 @@ class ChangeAlertResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ChangeAlertResponse.
+        r"""Sets the x_request_id of this ChangeAlertResponse.
 
         :param x_request_id: The x_request_id of this ChangeAlertResponse.
         :type x_request_id: str

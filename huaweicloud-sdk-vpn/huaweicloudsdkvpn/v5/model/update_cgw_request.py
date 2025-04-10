@@ -27,7 +27,7 @@ class UpdateCgwRequest:
     }
 
     def __init__(self, customer_gateway_id=None, body=None):
-        """UpdateCgwRequest
+        r"""UpdateCgwRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateCgwRequest:
 
     @property
     def customer_gateway_id(self):
-        """Gets the customer_gateway_id of this UpdateCgwRequest.
+        r"""Gets the customer_gateway_id of this UpdateCgwRequest.
 
         对端网关ID
 
@@ -60,7 +60,7 @@ class UpdateCgwRequest:
 
     @customer_gateway_id.setter
     def customer_gateway_id(self, customer_gateway_id):
-        """Sets the customer_gateway_id of this UpdateCgwRequest.
+        r"""Sets the customer_gateway_id of this UpdateCgwRequest.
 
         对端网关ID
 
@@ -71,7 +71,7 @@ class UpdateCgwRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateCgwRequest.
+        r"""Gets the body of this UpdateCgwRequest.
 
         :return: The body of this UpdateCgwRequest.
         :rtype: :class:`huaweicloudsdkvpn.v5.UpdateCgwRequestBody`
@@ -80,7 +80,7 @@ class UpdateCgwRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateCgwRequest.
+        r"""Sets the body of this UpdateCgwRequest.
 
         :param body: The body of this UpdateCgwRequest.
         :type body: :class:`huaweicloudsdkvpn.v5.UpdateCgwRequestBody`

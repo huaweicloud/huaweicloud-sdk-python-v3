@@ -35,7 +35,7 @@ class BtrfsSubvolumn:
     }
 
     def __init__(self, uuid=None, is_snapshot=None, subvol_id=None, parent_id=None, subvol_name=None, subvol_mount_path=None):
-        """BtrfsSubvolumn
+        r"""BtrfsSubvolumn
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class BtrfsSubvolumn:
 
     @property
     def uuid(self):
-        """Gets the uuid of this BtrfsSubvolumn.
+        r"""Gets the uuid of this BtrfsSubvolumn.
 
         父卷的uuid
 
@@ -83,7 +83,7 @@ class BtrfsSubvolumn:
 
     @uuid.setter
     def uuid(self, uuid):
-        """Sets the uuid of this BtrfsSubvolumn.
+        r"""Sets the uuid of this BtrfsSubvolumn.
 
         父卷的uuid
 
@@ -94,7 +94,7 @@ class BtrfsSubvolumn:
 
     @property
     def is_snapshot(self):
-        """Gets the is_snapshot of this BtrfsSubvolumn.
+        r"""Gets the is_snapshot of this BtrfsSubvolumn.
 
         子卷是否为快照
 
@@ -105,7 +105,7 @@ class BtrfsSubvolumn:
 
     @is_snapshot.setter
     def is_snapshot(self, is_snapshot):
-        """Sets the is_snapshot of this BtrfsSubvolumn.
+        r"""Sets the is_snapshot of this BtrfsSubvolumn.
 
         子卷是否为快照
 
@@ -116,7 +116,7 @@ class BtrfsSubvolumn:
 
     @property
     def subvol_id(self):
-        """Gets the subvol_id of this BtrfsSubvolumn.
+        r"""Gets the subvol_id of this BtrfsSubvolumn.
 
         子卷的ID
 
@@ -127,7 +127,7 @@ class BtrfsSubvolumn:
 
     @subvol_id.setter
     def subvol_id(self, subvol_id):
-        """Sets the subvol_id of this BtrfsSubvolumn.
+        r"""Sets the subvol_id of this BtrfsSubvolumn.
 
         子卷的ID
 
@@ -138,7 +138,7 @@ class BtrfsSubvolumn:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this BtrfsSubvolumn.
+        r"""Gets the parent_id of this BtrfsSubvolumn.
 
         父卷ID
 
@@ -149,7 +149,7 @@ class BtrfsSubvolumn:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this BtrfsSubvolumn.
+        r"""Sets the parent_id of this BtrfsSubvolumn.
 
         父卷ID
 
@@ -160,7 +160,7 @@ class BtrfsSubvolumn:
 
     @property
     def subvol_name(self):
-        """Gets the subvol_name of this BtrfsSubvolumn.
+        r"""Gets the subvol_name of this BtrfsSubvolumn.
 
         子卷的名称
 
@@ -171,7 +171,7 @@ class BtrfsSubvolumn:
 
     @subvol_name.setter
     def subvol_name(self, subvol_name):
-        """Sets the subvol_name of this BtrfsSubvolumn.
+        r"""Sets the subvol_name of this BtrfsSubvolumn.
 
         子卷的名称
 
@@ -182,7 +182,7 @@ class BtrfsSubvolumn:
 
     @property
     def subvol_mount_path(self):
-        """Gets the subvol_mount_path of this BtrfsSubvolumn.
+        r"""Gets the subvol_mount_path of this BtrfsSubvolumn.
 
         子卷的挂载路径
 
@@ -193,7 +193,7 @@ class BtrfsSubvolumn:
 
     @subvol_mount_path.setter
     def subvol_mount_path(self, subvol_mount_path):
-        """Sets the subvol_mount_path of this BtrfsSubvolumn.
+        r"""Sets the subvol_mount_path of this BtrfsSubvolumn.
 
         子卷的挂载路径
 

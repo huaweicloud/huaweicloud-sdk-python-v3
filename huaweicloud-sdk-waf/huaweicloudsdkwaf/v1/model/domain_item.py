@@ -29,7 +29,7 @@ class DomainItem:
     }
 
     def __init__(self, key=None, num=None, web_tag=None):
-        """DomainItem
+        r"""DomainItem
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class DomainItem:
 
     @property
     def key(self):
-        """Gets the key of this DomainItem.
+        r"""Gets the key of this DomainItem.
 
         域名
 
@@ -68,7 +68,7 @@ class DomainItem:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this DomainItem.
+        r"""Sets the key of this DomainItem.
 
         域名
 
@@ -79,7 +79,7 @@ class DomainItem:
 
     @property
     def num(self):
-        """Gets the num of this DomainItem.
+        r"""Gets the num of this DomainItem.
 
         数量
 
@@ -90,7 +90,7 @@ class DomainItem:
 
     @num.setter
     def num(self, num):
-        """Sets the num of this DomainItem.
+        r"""Sets the num of this DomainItem.
 
         数量
 
@@ -101,7 +101,7 @@ class DomainItem:
 
     @property
     def web_tag(self):
-        """Gets the web_tag of this DomainItem.
+        r"""Gets the web_tag of this DomainItem.
 
         网站名称，对应WAF控制台域名详情中的网站名称
 
@@ -112,7 +112,7 @@ class DomainItem:
 
     @web_tag.setter
     def web_tag(self, web_tag):
-        """Sets the web_tag of this DomainItem.
+        r"""Sets the web_tag of this DomainItem.
 
         网站名称，对应WAF控制台域名详情中的网站名称
 

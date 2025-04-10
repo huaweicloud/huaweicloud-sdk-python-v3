@@ -43,7 +43,7 @@ class PoliciesPeripheralsUsbPortRedirectionOptions:
     }
 
     def __init__(self, usb_image_enable=None, usb_video_enable=None, usb_printer_enable=None, usb_storage_enable=None, wireless_devices_enable=None, network_devices_enable=None, usb_smart_card_enable=None, other_usb_devices_enable=None, usb_redirection_customization_policy=None, usb_redirection_mode=None):
-        """PoliciesPeripheralsUsbPortRedirectionOptions
+        r"""PoliciesPeripheralsUsbPortRedirectionOptions
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class PoliciesPeripheralsUsbPortRedirectionOptions:
 
     @property
     def usb_image_enable(self):
-        """Gets the usb_image_enable of this PoliciesPeripheralsUsbPortRedirectionOptions.
+        r"""Gets the usb_image_enable of this PoliciesPeripheralsUsbPortRedirectionOptions.
 
         是否开启图像设备（如: 扫描仪）。取值为： false：表示关闭。 true：表示开启。
 
@@ -117,7 +117,7 @@ class PoliciesPeripheralsUsbPortRedirectionOptions:
 
     @usb_image_enable.setter
     def usb_image_enable(self, usb_image_enable):
-        """Sets the usb_image_enable of this PoliciesPeripheralsUsbPortRedirectionOptions.
+        r"""Sets the usb_image_enable of this PoliciesPeripheralsUsbPortRedirectionOptions.
 
         是否开启图像设备（如: 扫描仪）。取值为： false：表示关闭。 true：表示开启。
 
@@ -128,7 +128,7 @@ class PoliciesPeripheralsUsbPortRedirectionOptions:
 
     @property
     def usb_video_enable(self):
-        """Gets the usb_video_enable of this PoliciesPeripheralsUsbPortRedirectionOptions.
+        r"""Gets the usb_video_enable of this PoliciesPeripheralsUsbPortRedirectionOptions.
 
         是否开启视频设备（如: 摄像头）。取值为： false：表示关闭。 true：表示开启。
 
@@ -139,7 +139,7 @@ class PoliciesPeripheralsUsbPortRedirectionOptions:
 
     @usb_video_enable.setter
     def usb_video_enable(self, usb_video_enable):
-        """Sets the usb_video_enable of this PoliciesPeripheralsUsbPortRedirectionOptions.
+        r"""Sets the usb_video_enable of this PoliciesPeripheralsUsbPortRedirectionOptions.
 
         是否开启视频设备（如: 摄像头）。取值为： false：表示关闭。 true：表示开启。
 
@@ -150,7 +150,7 @@ class PoliciesPeripheralsUsbPortRedirectionOptions:
 
     @property
     def usb_printer_enable(self):
-        """Gets the usb_printer_enable of this PoliciesPeripheralsUsbPortRedirectionOptions.
+        r"""Gets the usb_printer_enable of this PoliciesPeripheralsUsbPortRedirectionOptions.
 
         是否开启打印设备（如: 打印机）。取值为： false：表示关闭。 true：表示开启。
 
@@ -161,7 +161,7 @@ class PoliciesPeripheralsUsbPortRedirectionOptions:
 
     @usb_printer_enable.setter
     def usb_printer_enable(self, usb_printer_enable):
-        """Sets the usb_printer_enable of this PoliciesPeripheralsUsbPortRedirectionOptions.
+        r"""Sets the usb_printer_enable of this PoliciesPeripheralsUsbPortRedirectionOptions.
 
         是否开启打印设备（如: 打印机）。取值为： false：表示关闭。 true：表示开启。
 
@@ -172,7 +172,7 @@ class PoliciesPeripheralsUsbPortRedirectionOptions:
 
     @property
     def usb_storage_enable(self):
-        """Gets the usb_storage_enable of this PoliciesPeripheralsUsbPortRedirectionOptions.
+        r"""Gets the usb_storage_enable of this PoliciesPeripheralsUsbPortRedirectionOptions.
 
         是否开启存储设备（如: U盘）。取值为： false：表示关闭。 true：表示开启。
 
@@ -183,7 +183,7 @@ class PoliciesPeripheralsUsbPortRedirectionOptions:
 
     @usb_storage_enable.setter
     def usb_storage_enable(self, usb_storage_enable):
-        """Sets the usb_storage_enable of this PoliciesPeripheralsUsbPortRedirectionOptions.
+        r"""Sets the usb_storage_enable of this PoliciesPeripheralsUsbPortRedirectionOptions.
 
         是否开启存储设备（如: U盘）。取值为： false：表示关闭。 true：表示开启。
 
@@ -194,7 +194,7 @@ class PoliciesPeripheralsUsbPortRedirectionOptions:
 
     @property
     def wireless_devices_enable(self):
-        """Gets the wireless_devices_enable of this PoliciesPeripheralsUsbPortRedirectionOptions.
+        r"""Gets the wireless_devices_enable of this PoliciesPeripheralsUsbPortRedirectionOptions.
 
         是否开启无线设备（如：蓝牙）。取值为： false：表示关闭。 true：表示开启。
 
@@ -205,7 +205,7 @@ class PoliciesPeripheralsUsbPortRedirectionOptions:
 
     @wireless_devices_enable.setter
     def wireless_devices_enable(self, wireless_devices_enable):
-        """Sets the wireless_devices_enable of this PoliciesPeripheralsUsbPortRedirectionOptions.
+        r"""Sets the wireless_devices_enable of this PoliciesPeripheralsUsbPortRedirectionOptions.
 
         是否开启无线设备（如：蓝牙）。取值为： false：表示关闭。 true：表示开启。
 
@@ -216,7 +216,7 @@ class PoliciesPeripheralsUsbPortRedirectionOptions:
 
     @property
     def network_devices_enable(self):
-        """Gets the network_devices_enable of this PoliciesPeripheralsUsbPortRedirectionOptions.
+        r"""Gets the network_devices_enable of this PoliciesPeripheralsUsbPortRedirectionOptions.
 
         是否开启网路设备（如：无线网卡）。取值为： false：表示关闭。 true：表示开启。
 
@@ -227,7 +227,7 @@ class PoliciesPeripheralsUsbPortRedirectionOptions:
 
     @network_devices_enable.setter
     def network_devices_enable(self, network_devices_enable):
-        """Sets the network_devices_enable of this PoliciesPeripheralsUsbPortRedirectionOptions.
+        r"""Sets the network_devices_enable of this PoliciesPeripheralsUsbPortRedirectionOptions.
 
         是否开启网路设备（如：无线网卡）。取值为： false：表示关闭。 true：表示开启。
 
@@ -238,7 +238,7 @@ class PoliciesPeripheralsUsbPortRedirectionOptions:
 
     @property
     def usb_smart_card_enable(self):
-        """Gets the usb_smart_card_enable of this PoliciesPeripheralsUsbPortRedirectionOptions.
+        r"""Gets the usb_smart_card_enable of this PoliciesPeripheralsUsbPortRedirectionOptions.
 
         是否开启智能卡设备（如：Ukey）。取值为： false：表示关闭。 true：表示开启。
 
@@ -249,7 +249,7 @@ class PoliciesPeripheralsUsbPortRedirectionOptions:
 
     @usb_smart_card_enable.setter
     def usb_smart_card_enable(self, usb_smart_card_enable):
-        """Sets the usb_smart_card_enable of this PoliciesPeripheralsUsbPortRedirectionOptions.
+        r"""Sets the usb_smart_card_enable of this PoliciesPeripheralsUsbPortRedirectionOptions.
 
         是否开启智能卡设备（如：Ukey）。取值为： false：表示关闭。 true：表示开启。
 
@@ -260,7 +260,7 @@ class PoliciesPeripheralsUsbPortRedirectionOptions:
 
     @property
     def other_usb_devices_enable(self):
-        """Gets the other_usb_devices_enable of this PoliciesPeripheralsUsbPortRedirectionOptions.
+        r"""Gets the other_usb_devices_enable of this PoliciesPeripheralsUsbPortRedirectionOptions.
 
         是否开启其他USB设备重定向。取值为： false：表示关闭。 true：表示开启。
 
@@ -271,7 +271,7 @@ class PoliciesPeripheralsUsbPortRedirectionOptions:
 
     @other_usb_devices_enable.setter
     def other_usb_devices_enable(self, other_usb_devices_enable):
-        """Sets the other_usb_devices_enable of this PoliciesPeripheralsUsbPortRedirectionOptions.
+        r"""Sets the other_usb_devices_enable of this PoliciesPeripheralsUsbPortRedirectionOptions.
 
         是否开启其他USB设备重定向。取值为： false：表示关闭。 true：表示开启。
 
@@ -282,7 +282,7 @@ class PoliciesPeripheralsUsbPortRedirectionOptions:
 
     @property
     def usb_redirection_customization_policy(self):
-        """Gets the usb_redirection_customization_policy of this PoliciesPeripheralsUsbPortRedirectionOptions.
+        r"""Gets the usb_redirection_customization_policy of this PoliciesPeripheralsUsbPortRedirectionOptions.
 
         USB端口重定向自定义策略。
 
@@ -293,7 +293,7 @@ class PoliciesPeripheralsUsbPortRedirectionOptions:
 
     @usb_redirection_customization_policy.setter
     def usb_redirection_customization_policy(self, usb_redirection_customization_policy):
-        """Sets the usb_redirection_customization_policy of this PoliciesPeripheralsUsbPortRedirectionOptions.
+        r"""Sets the usb_redirection_customization_policy of this PoliciesPeripheralsUsbPortRedirectionOptions.
 
         USB端口重定向自定义策略。
 
@@ -304,7 +304,7 @@ class PoliciesPeripheralsUsbPortRedirectionOptions:
 
     @property
     def usb_redirection_mode(self):
-        """Gets the usb_redirection_mode of this PoliciesPeripheralsUsbPortRedirectionOptions.
+        r"""Gets the usb_redirection_mode of this PoliciesPeripheralsUsbPortRedirectionOptions.
 
         USB 重定向模式。取值为： 经典模式：Classical mode。 通用模式：Common mode。
 
@@ -315,7 +315,7 @@ class PoliciesPeripheralsUsbPortRedirectionOptions:
 
     @usb_redirection_mode.setter
     def usb_redirection_mode(self, usb_redirection_mode):
-        """Sets the usb_redirection_mode of this PoliciesPeripheralsUsbPortRedirectionOptions.
+        r"""Sets the usb_redirection_mode of this PoliciesPeripheralsUsbPortRedirectionOptions.
 
         USB 重定向模式。取值为： 经典模式：Classical mode。 通用模式：Common mode。
 

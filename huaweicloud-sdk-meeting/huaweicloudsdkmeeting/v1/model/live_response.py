@@ -24,7 +24,7 @@ class LiveResponse(SdkResponse):
     }
 
     def __init__(self):
-        """LiveResponse
+        r"""LiveResponse
 
         The model defined in huaweicloud sdk
 

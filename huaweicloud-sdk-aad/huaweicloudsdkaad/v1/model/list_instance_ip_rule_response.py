@@ -28,7 +28,7 @@ class ListInstanceIpRuleResponse(SdkResponse):
     }
 
     def __init__(self, total=None, rules=None):
-        """ListInstanceIpRuleResponse
+        r"""ListInstanceIpRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListInstanceIpRuleResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListInstanceIpRuleResponse.
+        r"""Gets the total of this ListInstanceIpRuleResponse.
 
         转发规则总数
 
@@ -62,7 +62,7 @@ class ListInstanceIpRuleResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListInstanceIpRuleResponse.
+        r"""Sets the total of this ListInstanceIpRuleResponse.
 
         转发规则总数
 
@@ -73,7 +73,7 @@ class ListInstanceIpRuleResponse(SdkResponse):
 
     @property
     def rules(self):
-        """Gets the rules of this ListInstanceIpRuleResponse.
+        r"""Gets the rules of this ListInstanceIpRuleResponse.
 
         转发规则列表
 
@@ -84,7 +84,7 @@ class ListInstanceIpRuleResponse(SdkResponse):
 
     @rules.setter
     def rules(self, rules):
-        """Sets the rules of this ListInstanceIpRuleResponse.
+        r"""Sets the rules of this ListInstanceIpRuleResponse.
 
         转发规则列表
 

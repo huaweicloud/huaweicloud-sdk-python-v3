@@ -29,7 +29,7 @@ class MoveToWaitingRoomRequest:
     }
 
     def __init__(self, conference_id=None, x_conference_authorization=None, body=None):
-        """MoveToWaitingRoomRequest
+        r"""MoveToWaitingRoomRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class MoveToWaitingRoomRequest:
 
     @property
     def conference_id(self):
-        """Gets the conference_id of this MoveToWaitingRoomRequest.
+        r"""Gets the conference_id of this MoveToWaitingRoomRequest.
 
         会议ID。
 
@@ -66,7 +66,7 @@ class MoveToWaitingRoomRequest:
 
     @conference_id.setter
     def conference_id(self, conference_id):
-        """Sets the conference_id of this MoveToWaitingRoomRequest.
+        r"""Sets the conference_id of this MoveToWaitingRoomRequest.
 
         会议ID。
 
@@ -77,7 +77,7 @@ class MoveToWaitingRoomRequest:
 
     @property
     def x_conference_authorization(self):
-        """Gets the x_conference_authorization of this MoveToWaitingRoomRequest.
+        r"""Gets the x_conference_authorization of this MoveToWaitingRoomRequest.
 
         会控Token，通过[[获取会控token](https://support.huaweicloud.com/api-meeting/meeting_21_0027.html)](tag:hws)[[获取会控token](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0027.html)](tag:hk)接口获得。
 
@@ -88,7 +88,7 @@ class MoveToWaitingRoomRequest:
 
     @x_conference_authorization.setter
     def x_conference_authorization(self, x_conference_authorization):
-        """Sets the x_conference_authorization of this MoveToWaitingRoomRequest.
+        r"""Sets the x_conference_authorization of this MoveToWaitingRoomRequest.
 
         会控Token，通过[[获取会控token](https://support.huaweicloud.com/api-meeting/meeting_21_0027.html)](tag:hws)[[获取会控token](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0027.html)](tag:hk)接口获得。
 
@@ -99,7 +99,7 @@ class MoveToWaitingRoomRequest:
 
     @property
     def body(self):
-        """Gets the body of this MoveToWaitingRoomRequest.
+        r"""Gets the body of this MoveToWaitingRoomRequest.
 
         :return: The body of this MoveToWaitingRoomRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RestMoveToWaitingRoomReqBody`
@@ -108,7 +108,7 @@ class MoveToWaitingRoomRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this MoveToWaitingRoomRequest.
+        r"""Sets the body of this MoveToWaitingRoomRequest.
 
         :param body: The body of this MoveToWaitingRoomRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.RestMoveToWaitingRoomReqBody`

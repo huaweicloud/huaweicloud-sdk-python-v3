@@ -38,7 +38,7 @@ class PermissionActions:
     }
 
     def __init__(self):
-        """PermissionActions
+        r"""PermissionActions
 
         The model defined in huaweicloud sdk
 

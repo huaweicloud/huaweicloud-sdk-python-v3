@@ -27,7 +27,7 @@ class ImportLineageRequest:
     }
 
     def __init__(self, workspace=None, body=None):
-        """ImportLineageRequest
+        r"""ImportLineageRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ImportLineageRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ImportLineageRequest.
+        r"""Gets the workspace of this ImportLineageRequest.
 
         DataArts Studio工作空间ID
 
@@ -60,7 +60,7 @@ class ImportLineageRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ImportLineageRequest.
+        r"""Sets the workspace of this ImportLineageRequest.
 
         DataArts Studio工作空间ID
 
@@ -71,7 +71,7 @@ class ImportLineageRequest:
 
     @property
     def body(self):
-        """Gets the body of this ImportLineageRequest.
+        r"""Gets the body of this ImportLineageRequest.
 
         血缘信息列表
 
@@ -82,7 +82,7 @@ class ImportLineageRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ImportLineageRequest.
+        r"""Sets the body of this ImportLineageRequest.
 
         血缘信息列表
 

@@ -25,7 +25,7 @@ class CentralNetworkDefaultPlaneId:
     }
 
     def __init__(self, default_plane_id=None):
-        """CentralNetworkDefaultPlaneId
+        r"""CentralNetworkDefaultPlaneId
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CentralNetworkDefaultPlaneId:
 
     @property
     def default_plane_id(self):
-        """Gets the default_plane_id of this CentralNetworkDefaultPlaneId.
+        r"""Gets the default_plane_id of this CentralNetworkDefaultPlaneId.
 
         中心网络默认平面的ID。
 
@@ -53,7 +53,7 @@ class CentralNetworkDefaultPlaneId:
 
     @default_plane_id.setter
     def default_plane_id(self, default_plane_id):
-        """Sets the default_plane_id of this CentralNetworkDefaultPlaneId.
+        r"""Sets the default_plane_id of this CentralNetworkDefaultPlaneId.
 
         中心网络默认平面的ID。
 

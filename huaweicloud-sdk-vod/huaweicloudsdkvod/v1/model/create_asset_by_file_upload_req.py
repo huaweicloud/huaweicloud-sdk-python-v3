@@ -57,7 +57,7 @@ class CreateAssetByFileUploadReq:
     }
 
     def __init__(self, title=None, description=None, video_name=None, video_type=None, category_id=None, video_md5=None, cover_type=None, cover_md5=None, subtitles=None, tags=None, auto_publish=None, template_group_name=None, auto_encrypt=None, auto_preheat=None, thumbnail=None, review=None, workflow_name=None):
-        """CreateAssetByFileUploadReq
+        r"""CreateAssetByFileUploadReq
 
         The model defined in huaweicloud sdk
 
@@ -152,7 +152,7 @@ class CreateAssetByFileUploadReq:
 
     @property
     def title(self):
-        """Gets the title of this CreateAssetByFileUploadReq.
+        r"""Gets the title of this CreateAssetByFileUploadReq.
 
         媒资标题，长度不超过128个字节，UTF-8编码。
 
@@ -163,7 +163,7 @@ class CreateAssetByFileUploadReq:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this CreateAssetByFileUploadReq.
+        r"""Sets the title of this CreateAssetByFileUploadReq.
 
         媒资标题，长度不超过128个字节，UTF-8编码。
 
@@ -174,7 +174,7 @@ class CreateAssetByFileUploadReq:
 
     @property
     def description(self):
-        """Gets the description of this CreateAssetByFileUploadReq.
+        r"""Gets the description of this CreateAssetByFileUploadReq.
 
         视频描述，长度不超过1024个字节。
 
@@ -185,7 +185,7 @@ class CreateAssetByFileUploadReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateAssetByFileUploadReq.
+        r"""Sets the description of this CreateAssetByFileUploadReq.
 
         视频描述，长度不超过1024个字节。
 
@@ -196,7 +196,7 @@ class CreateAssetByFileUploadReq:
 
     @property
     def video_name(self):
-        """Gets the video_name of this CreateAssetByFileUploadReq.
+        r"""Gets the video_name of this CreateAssetByFileUploadReq.
 
         音视频文件名，长度不超过128个字节。  文件名后缀可选。
 
@@ -207,7 +207,7 @@ class CreateAssetByFileUploadReq:
 
     @video_name.setter
     def video_name(self, video_name):
-        """Sets the video_name of this CreateAssetByFileUploadReq.
+        r"""Sets the video_name of this CreateAssetByFileUploadReq.
 
         音视频文件名，长度不超过128个字节。  文件名后缀可选。
 
@@ -218,7 +218,7 @@ class CreateAssetByFileUploadReq:
 
     @property
     def video_type(self):
-        """Gets the video_type of this CreateAssetByFileUploadReq.
+        r"""Gets the video_type of this CreateAssetByFileUploadReq.
 
         上传音视频文件的格式。  取值如下： - 视频文件：MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG、3GP、ASF、MKV、HLS - 音频文件：MP3、OGG、WAV、WMA、APE、FLAC、AAC、AC3、MMF、AMR、M4A、M4R、WV、MP2  若上传格式为音频文件，则不支持转码、添加水印和字幕。
 
@@ -229,7 +229,7 @@ class CreateAssetByFileUploadReq:
 
     @video_type.setter
     def video_type(self, video_type):
-        """Sets the video_type of this CreateAssetByFileUploadReq.
+        r"""Sets the video_type of this CreateAssetByFileUploadReq.
 
         上传音视频文件的格式。  取值如下： - 视频文件：MP4、TS、MOV、MXF、MPG、FLV、WMV、AVI、M4V、F4V、MPEG、3GP、ASF、MKV、HLS - 音频文件：MP3、OGG、WAV、WMA、APE、FLAC、AAC、AC3、MMF、AMR、M4A、M4R、WV、MP2  若上传格式为音频文件，则不支持转码、添加水印和字幕。
 
@@ -240,7 +240,7 @@ class CreateAssetByFileUploadReq:
 
     @property
     def category_id(self):
-        """Gets the category_id of this CreateAssetByFileUploadReq.
+        r"""Gets the category_id of this CreateAssetByFileUploadReq.
 
         媒资分类ID。  您可以调用[创建媒资分类](https://support.huaweicloud.com/api-vod/vod_04_0028.html)接口或在点播控制台的[分类设置](https://support.huaweicloud.com/usermanual-vod/vod010006.html)中创建对应的媒资分类，并获取分类ID。  > 若不设置或者设置为-1，则上传的音视频归类到系统预置的“其它”分类中。
 
@@ -251,7 +251,7 @@ class CreateAssetByFileUploadReq:
 
     @category_id.setter
     def category_id(self, category_id):
-        """Sets the category_id of this CreateAssetByFileUploadReq.
+        r"""Sets the category_id of this CreateAssetByFileUploadReq.
 
         媒资分类ID。  您可以调用[创建媒资分类](https://support.huaweicloud.com/api-vod/vod_04_0028.html)接口或在点播控制台的[分类设置](https://support.huaweicloud.com/usermanual-vod/vod010006.html)中创建对应的媒资分类，并获取分类ID。  > 若不设置或者设置为-1，则上传的音视频归类到系统预置的“其它”分类中。
 
@@ -262,7 +262,7 @@ class CreateAssetByFileUploadReq:
 
     @property
     def video_md5(self):
-        """Gets the video_md5 of this CreateAssetByFileUploadReq.
+        r"""Gets the video_md5 of this CreateAssetByFileUploadReq.
 
         视频文件MD5值。  建议参考[媒资上传和更新](https://support.huaweicloud.com/api-vod/vod_04_0212.html)生成对应的MD5值。
 
@@ -273,7 +273,7 @@ class CreateAssetByFileUploadReq:
 
     @video_md5.setter
     def video_md5(self, video_md5):
-        """Sets the video_md5 of this CreateAssetByFileUploadReq.
+        r"""Sets the video_md5 of this CreateAssetByFileUploadReq.
 
         视频文件MD5值。  建议参考[媒资上传和更新](https://support.huaweicloud.com/api-vod/vod_04_0212.html)生成对应的MD5值。
 
@@ -284,7 +284,7 @@ class CreateAssetByFileUploadReq:
 
     @property
     def cover_type(self):
-        """Gets the cover_type of this CreateAssetByFileUploadReq.
+        r"""Gets the cover_type of this CreateAssetByFileUploadReq.
 
         封面图片文件类型。  取值如下： - JPG - PNG  上传后的封面名称是固定的，后缀名为封面类型缩写。例如cover0.jpg，cover1.png 若不指定类型，则封面文件无后缀名。  > 如果设置了图片格式，则不会执行首帧截图作为封面动作，需自行上传封面。
 
@@ -295,7 +295,7 @@ class CreateAssetByFileUploadReq:
 
     @cover_type.setter
     def cover_type(self, cover_type):
-        """Sets the cover_type of this CreateAssetByFileUploadReq.
+        r"""Sets the cover_type of this CreateAssetByFileUploadReq.
 
         封面图片文件类型。  取值如下： - JPG - PNG  上传后的封面名称是固定的，后缀名为封面类型缩写。例如cover0.jpg，cover1.png 若不指定类型，则封面文件无后缀名。  > 如果设置了图片格式，则不会执行首帧截图作为封面动作，需自行上传封面。
 
@@ -306,7 +306,7 @@ class CreateAssetByFileUploadReq:
 
     @property
     def cover_md5(self):
-        """Gets the cover_md5 of this CreateAssetByFileUploadReq.
+        r"""Gets the cover_md5 of this CreateAssetByFileUploadReq.
 
         封面文件MD5值
 
@@ -317,7 +317,7 @@ class CreateAssetByFileUploadReq:
 
     @cover_md5.setter
     def cover_md5(self, cover_md5):
-        """Sets the cover_md5 of this CreateAssetByFileUploadReq.
+        r"""Sets the cover_md5 of this CreateAssetByFileUploadReq.
 
         封面文件MD5值
 
@@ -328,7 +328,7 @@ class CreateAssetByFileUploadReq:
 
     @property
     def subtitles(self):
-        """Gets the subtitles of this CreateAssetByFileUploadReq.
+        r"""Gets the subtitles of this CreateAssetByFileUploadReq.
 
         字幕文件信息
 
@@ -339,7 +339,7 @@ class CreateAssetByFileUploadReq:
 
     @subtitles.setter
     def subtitles(self, subtitles):
-        """Sets the subtitles of this CreateAssetByFileUploadReq.
+        r"""Sets the subtitles of this CreateAssetByFileUploadReq.
 
         字幕文件信息
 
@@ -350,7 +350,7 @@ class CreateAssetByFileUploadReq:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateAssetByFileUploadReq.
+        r"""Gets the tags of this CreateAssetByFileUploadReq.
 
         视频标签。  单个标签不超过16个字节，最多不超过16个标签。  多个用逗号分隔，UTF8编码。
 
@@ -361,7 +361,7 @@ class CreateAssetByFileUploadReq:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateAssetByFileUploadReq.
+        r"""Sets the tags of this CreateAssetByFileUploadReq.
 
         视频标签。  单个标签不超过16个字节，最多不超过16个标签。  多个用逗号分隔，UTF8编码。
 
@@ -372,7 +372,7 @@ class CreateAssetByFileUploadReq:
 
     @property
     def auto_publish(self):
-        """Gets the auto_publish of this CreateAssetByFileUploadReq.
+        r"""Gets the auto_publish of this CreateAssetByFileUploadReq.
 
         是否自动发布。  取值如下： - 0：表示不自动发布。 - 1：表示自动发布。  默认值：1。
 
@@ -383,7 +383,7 @@ class CreateAssetByFileUploadReq:
 
     @auto_publish.setter
     def auto_publish(self, auto_publish):
-        """Sets the auto_publish of this CreateAssetByFileUploadReq.
+        r"""Sets the auto_publish of this CreateAssetByFileUploadReq.
 
         是否自动发布。  取值如下： - 0：表示不自动发布。 - 1：表示自动发布。  默认值：1。
 
@@ -394,7 +394,7 @@ class CreateAssetByFileUploadReq:
 
     @property
     def template_group_name(self):
-        """Gets the template_group_name of this CreateAssetByFileUploadReq.
+        r"""Gets the template_group_name of this CreateAssetByFileUploadReq.
 
         转码模板组名称。  若不为空，则使用指定的转码模板对上传的音视频进行转码，您可以在视频点播控制台配置转码模板，具体请参见[转码设置](https://support.huaweicloud.com/usermanual-vod/vod_01_0072.html)。  > 若同时设置了“**template_group_name**”和“**workflow_name**”字段，则“**template_group_name**”字段生效。
 
@@ -405,7 +405,7 @@ class CreateAssetByFileUploadReq:
 
     @template_group_name.setter
     def template_group_name(self, template_group_name):
-        """Sets the template_group_name of this CreateAssetByFileUploadReq.
+        r"""Sets the template_group_name of this CreateAssetByFileUploadReq.
 
         转码模板组名称。  若不为空，则使用指定的转码模板对上传的音视频进行转码，您可以在视频点播控制台配置转码模板，具体请参见[转码设置](https://support.huaweicloud.com/usermanual-vod/vod_01_0072.html)。  > 若同时设置了“**template_group_name**”和“**workflow_name**”字段，则“**template_group_name**”字段生效。
 
@@ -416,7 +416,7 @@ class CreateAssetByFileUploadReq:
 
     @property
     def auto_encrypt(self):
-        """Gets the auto_encrypt of this CreateAssetByFileUploadReq.
+        r"""Gets the auto_encrypt of this CreateAssetByFileUploadReq.
 
         是否自动加密。  取值如下： - 0：表示不加密。 - 1：表示需要加密。  默认值：0。  加密与转码必须要一起进行，当需要加密时，转码参数不能为空，且转码输出格式必须要为HLS。
 
@@ -427,7 +427,7 @@ class CreateAssetByFileUploadReq:
 
     @auto_encrypt.setter
     def auto_encrypt(self, auto_encrypt):
-        """Sets the auto_encrypt of this CreateAssetByFileUploadReq.
+        r"""Sets the auto_encrypt of this CreateAssetByFileUploadReq.
 
         是否自动加密。  取值如下： - 0：表示不加密。 - 1：表示需要加密。  默认值：0。  加密与转码必须要一起进行，当需要加密时，转码参数不能为空，且转码输出格式必须要为HLS。
 
@@ -438,7 +438,7 @@ class CreateAssetByFileUploadReq:
 
     @property
     def auto_preheat(self):
-        """Gets the auto_preheat of this CreateAssetByFileUploadReq.
+        r"""Gets the auto_preheat of this CreateAssetByFileUploadReq.
 
         是否自动预热到CDN。  取值如下： - 0：表示不自动预热。 - 1：表示自动预热。  默认值：0。
 
@@ -449,7 +449,7 @@ class CreateAssetByFileUploadReq:
 
     @auto_preheat.setter
     def auto_preheat(self, auto_preheat):
-        """Sets the auto_preheat of this CreateAssetByFileUploadReq.
+        r"""Sets the auto_preheat of this CreateAssetByFileUploadReq.
 
         是否自动预热到CDN。  取值如下： - 0：表示不自动预热。 - 1：表示自动预热。  默认值：0。
 
@@ -460,7 +460,7 @@ class CreateAssetByFileUploadReq:
 
     @property
     def thumbnail(self):
-        """Gets the thumbnail of this CreateAssetByFileUploadReq.
+        r"""Gets the thumbnail of this CreateAssetByFileUploadReq.
 
         :return: The thumbnail of this CreateAssetByFileUploadReq.
         :rtype: :class:`huaweicloudsdkvod.v1.Thumbnail`
@@ -469,7 +469,7 @@ class CreateAssetByFileUploadReq:
 
     @thumbnail.setter
     def thumbnail(self, thumbnail):
-        """Sets the thumbnail of this CreateAssetByFileUploadReq.
+        r"""Sets the thumbnail of this CreateAssetByFileUploadReq.
 
         :param thumbnail: The thumbnail of this CreateAssetByFileUploadReq.
         :type thumbnail: :class:`huaweicloudsdkvod.v1.Thumbnail`
@@ -478,7 +478,7 @@ class CreateAssetByFileUploadReq:
 
     @property
     def review(self):
-        """Gets the review of this CreateAssetByFileUploadReq.
+        r"""Gets the review of this CreateAssetByFileUploadReq.
 
         :return: The review of this CreateAssetByFileUploadReq.
         :rtype: :class:`huaweicloudsdkvod.v1.Review`
@@ -487,7 +487,7 @@ class CreateAssetByFileUploadReq:
 
     @review.setter
     def review(self, review):
-        """Sets the review of this CreateAssetByFileUploadReq.
+        r"""Sets the review of this CreateAssetByFileUploadReq.
 
         :param review: The review of this CreateAssetByFileUploadReq.
         :type review: :class:`huaweicloudsdkvod.v1.Review`
@@ -496,7 +496,7 @@ class CreateAssetByFileUploadReq:
 
     @property
     def workflow_name(self):
-        """Gets the workflow_name of this CreateAssetByFileUploadReq.
+        r"""Gets the workflow_name of this CreateAssetByFileUploadReq.
 
         工作流名称。  若不为空，则使用指定的工作流对上传的音视频进行处理，您可以在视频点播控制台配置工作流，具体请参见[工作流设置](https://support.huaweicloud.com/usermanual-vod/vod010041.html)。
 
@@ -507,7 +507,7 @@ class CreateAssetByFileUploadReq:
 
     @workflow_name.setter
     def workflow_name(self, workflow_name):
-        """Sets the workflow_name of this CreateAssetByFileUploadReq.
+        r"""Sets the workflow_name of this CreateAssetByFileUploadReq.
 
         工作流名称。  若不为空，则使用指定的工作流对上传的音视频进行处理，您可以在视频点播控制台配置工作流，具体请参见[工作流设置](https://support.huaweicloud.com/usermanual-vod/vod010041.html)。
 

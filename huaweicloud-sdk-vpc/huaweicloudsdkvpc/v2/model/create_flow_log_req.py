@@ -39,7 +39,7 @@ class CreateFlowLogReq:
     }
 
     def __init__(self, name=None, description=None, resource_type=None, resource_id=None, traffic_type=None, log_group_id=None, log_topic_id=None, index_enabled=None):
-        """CreateFlowLogReq
+        r"""CreateFlowLogReq
 
         The model defined in huaweicloud sdk
 
@@ -87,7 +87,7 @@ class CreateFlowLogReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateFlowLogReq.
+        r"""Gets the name of this CreateFlowLogReq.
 
         功能说明：流日志名称 取值范围：0-64个字符，支持数字、字母、中文、_（下划线）、-（中划线）、.（点）
 
@@ -98,7 +98,7 @@ class CreateFlowLogReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateFlowLogReq.
+        r"""Sets the name of this CreateFlowLogReq.
 
         功能说明：流日志名称 取值范围：0-64个字符，支持数字、字母、中文、_（下划线）、-（中划线）、.（点）
 
@@ -109,7 +109,7 @@ class CreateFlowLogReq:
 
     @property
     def description(self):
-        """Gets the description of this CreateFlowLogReq.
+        r"""Gets the description of this CreateFlowLogReq.
 
         功能说明：流日志描述 取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -120,7 +120,7 @@ class CreateFlowLogReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateFlowLogReq.
+        r"""Sets the description of this CreateFlowLogReq.
 
         功能说明：流日志描述 取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -131,7 +131,7 @@ class CreateFlowLogReq:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this CreateFlowLogReq.
+        r"""Gets the resource_type of this CreateFlowLogReq.
 
         功能说明：流日志所属资源类型 取值范围：支持port、network、vpc 类型。
 
@@ -142,7 +142,7 @@ class CreateFlowLogReq:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this CreateFlowLogReq.
+        r"""Sets the resource_type of this CreateFlowLogReq.
 
         功能说明：流日志所属资源类型 取值范围：支持port、network、vpc 类型。
 
@@ -153,7 +153,7 @@ class CreateFlowLogReq:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this CreateFlowLogReq.
+        r"""Gets the resource_id of this CreateFlowLogReq.
 
         resource_type对应资源的唯一ID
 
@@ -164,7 +164,7 @@ class CreateFlowLogReq:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this CreateFlowLogReq.
+        r"""Sets the resource_id of this CreateFlowLogReq.
 
         resource_type对应资源的唯一ID
 
@@ -175,7 +175,7 @@ class CreateFlowLogReq:
 
     @property
     def traffic_type(self):
-        """Gets the traffic_type of this CreateFlowLogReq.
+        r"""Gets the traffic_type of this CreateFlowLogReq.
 
         功能说明：流日志采集类型 取值范围：     1）all：采集指定资源的全部流量。     2）accept：采集指定资源允许传入、传出的流量。     3）reject：采集指定资源拒绝传入、传出的流量。
 
@@ -186,7 +186,7 @@ class CreateFlowLogReq:
 
     @traffic_type.setter
     def traffic_type(self, traffic_type):
-        """Sets the traffic_type of this CreateFlowLogReq.
+        r"""Sets the traffic_type of this CreateFlowLogReq.
 
         功能说明：流日志采集类型 取值范围：     1）all：采集指定资源的全部流量。     2）accept：采集指定资源允许传入、传出的流量。     3）reject：采集指定资源拒绝传入、传出的流量。
 
@@ -197,7 +197,7 @@ class CreateFlowLogReq:
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this CreateFlowLogReq.
+        r"""Gets the log_group_id of this CreateFlowLogReq.
 
         日志组ID 请在云日志服务中获取，详情请参见《云日志服务用户指南》。
 
@@ -208,7 +208,7 @@ class CreateFlowLogReq:
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this CreateFlowLogReq.
+        r"""Sets the log_group_id of this CreateFlowLogReq.
 
         日志组ID 请在云日志服务中获取，详情请参见《云日志服务用户指南》。
 
@@ -219,7 +219,7 @@ class CreateFlowLogReq:
 
     @property
     def log_topic_id(self):
-        """Gets the log_topic_id of this CreateFlowLogReq.
+        r"""Gets the log_topic_id of this CreateFlowLogReq.
 
         日志主题ID 请在云日志服务中获取，详情请参见《云日志服务用户指南》。
 
@@ -230,7 +230,7 @@ class CreateFlowLogReq:
 
     @log_topic_id.setter
     def log_topic_id(self, log_topic_id):
-        """Sets the log_topic_id of this CreateFlowLogReq.
+        r"""Sets the log_topic_id of this CreateFlowLogReq.
 
         日志主题ID 请在云日志服务中获取，详情请参见《云日志服务用户指南》。
 
@@ -241,7 +241,7 @@ class CreateFlowLogReq:
 
     @property
     def index_enabled(self):
-        """Gets the index_enabled of this CreateFlowLogReq.
+        r"""Gets the index_enabled of this CreateFlowLogReq.
 
         功能说明：是否开启日志索引 取值范围：true，false
 
@@ -252,7 +252,7 @@ class CreateFlowLogReq:
 
     @index_enabled.setter
     def index_enabled(self, index_enabled):
-        """Sets the index_enabled of this CreateFlowLogReq.
+        r"""Sets the index_enabled of this CreateFlowLogReq.
 
         功能说明：是否开启日志索引 取值范围：true，false
 

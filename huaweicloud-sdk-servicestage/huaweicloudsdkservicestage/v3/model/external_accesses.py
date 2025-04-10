@@ -29,7 +29,7 @@ class ExternalAccesses:
     }
 
     def __init__(self, protocol=None, address=None, forward_port=None):
-        """ExternalAccesses
+        r"""ExternalAccesses
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ExternalAccesses:
 
     @property
     def protocol(self):
-        """Gets the protocol of this ExternalAccesses.
+        r"""Gets the protocol of this ExternalAccesses.
 
         :return: The protocol of this ExternalAccesses.
         :rtype: str
@@ -66,7 +66,7 @@ class ExternalAccesses:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this ExternalAccesses.
+        r"""Sets the protocol of this ExternalAccesses.
 
         :param protocol: The protocol of this ExternalAccesses.
         :type protocol: str
@@ -75,7 +75,7 @@ class ExternalAccesses:
 
     @property
     def address(self):
-        """Gets the address of this ExternalAccesses.
+        r"""Gets the address of this ExternalAccesses.
 
         :return: The address of this ExternalAccesses.
         :rtype: str
@@ -84,7 +84,7 @@ class ExternalAccesses:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this ExternalAccesses.
+        r"""Sets the address of this ExternalAccesses.
 
         :param address: The address of this ExternalAccesses.
         :type address: str
@@ -93,7 +93,7 @@ class ExternalAccesses:
 
     @property
     def forward_port(self):
-        """Gets the forward_port of this ExternalAccesses.
+        r"""Gets the forward_port of this ExternalAccesses.
 
         :return: The forward_port of this ExternalAccesses.
         :rtype: int
@@ -102,7 +102,7 @@ class ExternalAccesses:
 
     @forward_port.setter
     def forward_port(self, forward_port):
-        """Sets the forward_port of this ExternalAccesses.
+        r"""Sets the forward_port of this ExternalAccesses.
 
         :param forward_port: The forward_port of this ExternalAccesses.
         :type forward_port: int

@@ -27,7 +27,7 @@ class VirtualPortResponse:
     }
 
     def __init__(self, ipv6_bandwidth_id=None, port_id=None):
-        """VirtualPortResponse
+        r"""VirtualPortResponse
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class VirtualPortResponse:
 
     @property
     def ipv6_bandwidth_id(self):
-        """Gets the ipv6_bandwidth_id of this VirtualPortResponse.
+        r"""Gets the ipv6_bandwidth_id of this VirtualPortResponse.
 
         IPv6带宽ID。
 
@@ -61,7 +61,7 @@ class VirtualPortResponse:
 
     @ipv6_bandwidth_id.setter
     def ipv6_bandwidth_id(self, ipv6_bandwidth_id):
-        """Sets the ipv6_bandwidth_id of this VirtualPortResponse.
+        r"""Sets the ipv6_bandwidth_id of this VirtualPortResponse.
 
         IPv6带宽ID。
 
@@ -72,7 +72,7 @@ class VirtualPortResponse:
 
     @property
     def port_id(self):
-        """Gets the port_id of this VirtualPortResponse.
+        r"""Gets the port_id of this VirtualPortResponse.
 
         IPv6虚拟IP或私网IP ID。
 
@@ -83,7 +83,7 @@ class VirtualPortResponse:
 
     @port_id.setter
     def port_id(self, port_id):
-        """Sets the port_id of this VirtualPortResponse.
+        r"""Sets the port_id of this VirtualPortResponse.
 
         IPv6虚拟IP或私网IP ID。
 

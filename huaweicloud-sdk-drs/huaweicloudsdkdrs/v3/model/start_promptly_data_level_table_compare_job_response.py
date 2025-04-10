@@ -26,7 +26,7 @@ class StartPromptlyDataLevelTableCompareJobResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """StartPromptlyDataLevelTableCompareJobResponse
+        r"""StartPromptlyDataLevelTableCompareJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class StartPromptlyDataLevelTableCompareJobResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this StartPromptlyDataLevelTableCompareJobResponse.
+        r"""Gets the body of this StartPromptlyDataLevelTableCompareJobResponse.
 
         空响应体。
 
@@ -55,7 +55,7 @@ class StartPromptlyDataLevelTableCompareJobResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StartPromptlyDataLevelTableCompareJobResponse.
+        r"""Sets the body of this StartPromptlyDataLevelTableCompareJobResponse.
 
         空响应体。
 

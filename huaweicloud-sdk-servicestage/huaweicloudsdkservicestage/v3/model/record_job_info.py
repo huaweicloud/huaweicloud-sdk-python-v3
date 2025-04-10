@@ -35,7 +35,7 @@ class RecordJobInfo:
     }
 
     def __init__(self, deploy_type=None, source_url=None, first_batch_weight=None, first_batch_replica=None, replica=None, remaining_batch=None):
-        """RecordJobInfo
+        r"""RecordJobInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class RecordJobInfo:
 
     @property
     def deploy_type(self):
-        """Gets the deploy_type of this RecordJobInfo.
+        r"""Gets the deploy_type of this RecordJobInfo.
 
         :return: The deploy_type of this RecordJobInfo.
         :rtype: str
@@ -87,7 +87,7 @@ class RecordJobInfo:
 
     @deploy_type.setter
     def deploy_type(self, deploy_type):
-        """Sets the deploy_type of this RecordJobInfo.
+        r"""Sets the deploy_type of this RecordJobInfo.
 
         :param deploy_type: The deploy_type of this RecordJobInfo.
         :type deploy_type: str
@@ -96,7 +96,7 @@ class RecordJobInfo:
 
     @property
     def source_url(self):
-        """Gets the source_url of this RecordJobInfo.
+        r"""Gets the source_url of this RecordJobInfo.
 
         组件来源的url
 
@@ -107,7 +107,7 @@ class RecordJobInfo:
 
     @source_url.setter
     def source_url(self, source_url):
-        """Sets the source_url of this RecordJobInfo.
+        r"""Sets the source_url of this RecordJobInfo.
 
         组件来源的url
 
@@ -118,7 +118,7 @@ class RecordJobInfo:
 
     @property
     def first_batch_weight(self):
-        """Gets the first_batch_weight of this RecordJobInfo.
+        r"""Gets the first_batch_weight of this RecordJobInfo.
 
         :return: The first_batch_weight of this RecordJobInfo.
         :rtype: int
@@ -127,7 +127,7 @@ class RecordJobInfo:
 
     @first_batch_weight.setter
     def first_batch_weight(self, first_batch_weight):
-        """Sets the first_batch_weight of this RecordJobInfo.
+        r"""Sets the first_batch_weight of this RecordJobInfo.
 
         :param first_batch_weight: The first_batch_weight of this RecordJobInfo.
         :type first_batch_weight: int
@@ -136,7 +136,7 @@ class RecordJobInfo:
 
     @property
     def first_batch_replica(self):
-        """Gets the first_batch_replica of this RecordJobInfo.
+        r"""Gets the first_batch_replica of this RecordJobInfo.
 
         :return: The first_batch_replica of this RecordJobInfo.
         :rtype: int
@@ -145,7 +145,7 @@ class RecordJobInfo:
 
     @first_batch_replica.setter
     def first_batch_replica(self, first_batch_replica):
-        """Sets the first_batch_replica of this RecordJobInfo.
+        r"""Sets the first_batch_replica of this RecordJobInfo.
 
         :param first_batch_replica: The first_batch_replica of this RecordJobInfo.
         :type first_batch_replica: int
@@ -154,7 +154,7 @@ class RecordJobInfo:
 
     @property
     def replica(self):
-        """Gets the replica of this RecordJobInfo.
+        r"""Gets the replica of this RecordJobInfo.
 
         :return: The replica of this RecordJobInfo.
         :rtype: int
@@ -163,7 +163,7 @@ class RecordJobInfo:
 
     @replica.setter
     def replica(self, replica):
-        """Sets the replica of this RecordJobInfo.
+        r"""Sets the replica of this RecordJobInfo.
 
         :param replica: The replica of this RecordJobInfo.
         :type replica: int
@@ -172,7 +172,7 @@ class RecordJobInfo:
 
     @property
     def remaining_batch(self):
-        """Gets the remaining_batch of this RecordJobInfo.
+        r"""Gets the remaining_batch of this RecordJobInfo.
 
         :return: The remaining_batch of this RecordJobInfo.
         :rtype: int
@@ -181,7 +181,7 @@ class RecordJobInfo:
 
     @remaining_batch.setter
     def remaining_batch(self, remaining_batch):
-        """Sets the remaining_batch of this RecordJobInfo.
+        r"""Sets the remaining_batch of this RecordJobInfo.
 
         :param remaining_batch: The remaining_batch of this RecordJobInfo.
         :type remaining_batch: int

@@ -26,7 +26,7 @@ class ListDedicatedHostTypesResponse(SdkResponse):
     }
 
     def __init__(self, dedicated_host_types=None):
-        """ListDedicatedHostTypesResponse
+        r"""ListDedicatedHostTypesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListDedicatedHostTypesResponse(SdkResponse):
 
     @property
     def dedicated_host_types(self):
-        """Gets the dedicated_host_types of this ListDedicatedHostTypesResponse.
+        r"""Gets the dedicated_host_types of this ListDedicatedHostTypesResponse.
 
         可用的专属主机类型。
 
@@ -55,7 +55,7 @@ class ListDedicatedHostTypesResponse(SdkResponse):
 
     @dedicated_host_types.setter
     def dedicated_host_types(self, dedicated_host_types):
-        """Sets the dedicated_host_types of this ListDedicatedHostTypesResponse.
+        r"""Sets the dedicated_host_types of this ListDedicatedHostTypesResponse.
 
         可用的专属主机类型。
 

@@ -26,7 +26,7 @@ class CreateVpcPeeringResponse(SdkResponse):
     }
 
     def __init__(self, peering=None):
-        """CreateVpcPeeringResponse
+        r"""CreateVpcPeeringResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateVpcPeeringResponse(SdkResponse):
 
     @property
     def peering(self):
-        """Gets the peering of this CreateVpcPeeringResponse.
+        r"""Gets the peering of this CreateVpcPeeringResponse.
 
         :return: The peering of this CreateVpcPeeringResponse.
         :rtype: :class:`huaweicloudsdkvpc.v2.VpcPeering`
@@ -53,7 +53,7 @@ class CreateVpcPeeringResponse(SdkResponse):
 
     @peering.setter
     def peering(self, peering):
-        """Sets the peering of this CreateVpcPeeringResponse.
+        r"""Sets the peering of this CreateVpcPeeringResponse.
 
         :param peering: The peering of this CreateVpcPeeringResponse.
         :type peering: :class:`huaweicloudsdkvpc.v2.VpcPeering`

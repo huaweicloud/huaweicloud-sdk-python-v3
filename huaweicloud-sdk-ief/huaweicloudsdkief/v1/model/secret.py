@@ -25,7 +25,7 @@ class Secret:
     }
 
     def __init__(self, secret=None):
-        """Secret
+        r"""Secret
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class Secret:
 
     @property
     def secret(self):
-        """Gets the secret of this Secret.
+        r"""Gets the secret of this Secret.
 
         :return: The secret of this Secret.
         :rtype: :class:`huaweicloudsdkief.v1.SecretDetail`
@@ -51,7 +51,7 @@ class Secret:
 
     @secret.setter
     def secret(self, secret):
-        """Sets the secret of this Secret.
+        r"""Sets the secret of this Secret.
 
         :param secret: The secret of this Secret.
         :type secret: :class:`huaweicloudsdkief.v1.SecretDetail`

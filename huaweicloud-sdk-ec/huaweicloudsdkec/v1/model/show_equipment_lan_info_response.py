@@ -26,7 +26,7 @@ class ShowEquipmentLanInfoResponse(SdkResponse):
     }
 
     def __init__(self, lan_interfaces=None):
-        """ShowEquipmentLanInfoResponse
+        r"""ShowEquipmentLanInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowEquipmentLanInfoResponse(SdkResponse):
 
     @property
     def lan_interfaces(self):
-        """Gets the lan_interfaces of this ShowEquipmentLanInfoResponse.
+        r"""Gets the lan_interfaces of this ShowEquipmentLanInfoResponse.
 
         设备LAN口配置列表
 
@@ -55,7 +55,7 @@ class ShowEquipmentLanInfoResponse(SdkResponse):
 
     @lan_interfaces.setter
     def lan_interfaces(self, lan_interfaces):
-        """Sets the lan_interfaces of this ShowEquipmentLanInfoResponse.
+        r"""Sets the lan_interfaces of this ShowEquipmentLanInfoResponse.
 
         设备LAN口配置列表
 

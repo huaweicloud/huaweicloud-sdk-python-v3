@@ -29,7 +29,7 @@ class CoordinatorNode:
     }
 
     def __init__(self, id=None, name=None, private_ip=None):
-        """CoordinatorNode
+        r"""CoordinatorNode
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CoordinatorNode:
 
     @property
     def id(self):
-        """Gets the id of this CoordinatorNode.
+        r"""Gets the id of this CoordinatorNode.
 
         节点ID。
 
@@ -65,7 +65,7 @@ class CoordinatorNode:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CoordinatorNode.
+        r"""Sets the id of this CoordinatorNode.
 
         节点ID。
 
@@ -76,7 +76,7 @@ class CoordinatorNode:
 
     @property
     def name(self):
-        """Gets the name of this CoordinatorNode.
+        r"""Gets the name of this CoordinatorNode.
 
         节点名称。
 
@@ -87,7 +87,7 @@ class CoordinatorNode:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CoordinatorNode.
+        r"""Sets the name of this CoordinatorNode.
 
         节点名称。
 
@@ -98,7 +98,7 @@ class CoordinatorNode:
 
     @property
     def private_ip(self):
-        """Gets the private_ip of this CoordinatorNode.
+        r"""Gets the private_ip of this CoordinatorNode.
 
         内网IP。
 
@@ -109,7 +109,7 @@ class CoordinatorNode:
 
     @private_ip.setter
     def private_ip(self, private_ip):
-        """Sets the private_ip of this CoordinatorNode.
+        r"""Sets the private_ip of this CoordinatorNode.
 
         内网IP。
 

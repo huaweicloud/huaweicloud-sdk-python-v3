@@ -27,7 +27,7 @@ class UpdateWorkFlowRequest:
     }
 
     def __init__(self, workflow_id=None, body=None):
-        """UpdateWorkFlowRequest
+        r"""UpdateWorkFlowRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateWorkFlowRequest:
 
     @property
     def workflow_id(self):
-        """Gets the workflow_id of this UpdateWorkFlowRequest.
+        r"""Gets the workflow_id of this UpdateWorkFlowRequest.
 
         函数工作流ID
 
@@ -60,7 +60,7 @@ class UpdateWorkFlowRequest:
 
     @workflow_id.setter
     def workflow_id(self, workflow_id):
-        """Sets the workflow_id of this UpdateWorkFlowRequest.
+        r"""Sets the workflow_id of this UpdateWorkFlowRequest.
 
         函数工作流ID
 
@@ -71,7 +71,7 @@ class UpdateWorkFlowRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateWorkFlowRequest.
+        r"""Gets the body of this UpdateWorkFlowRequest.
 
         :return: The body of this UpdateWorkFlowRequest.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.WorkflowCreateBody`
@@ -80,7 +80,7 @@ class UpdateWorkFlowRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateWorkFlowRequest.
+        r"""Sets the body of this UpdateWorkFlowRequest.
 
         :param body: The body of this UpdateWorkFlowRequest.
         :type body: :class:`huaweicloudsdkfunctiongraph.v2.WorkflowCreateBody`

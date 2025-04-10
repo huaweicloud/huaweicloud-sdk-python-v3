@@ -25,7 +25,7 @@ class OsfederationProtocol:
     }
 
     def __init__(self, id=None):
-        """OsfederationProtocol
+        r"""OsfederationProtocol
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class OsfederationProtocol:
 
     @property
     def id(self):
-        """Gets the id of this OsfederationProtocol.
+        r"""Gets the id of this OsfederationProtocol.
 
         协议ID。
 
@@ -53,7 +53,7 @@ class OsfederationProtocol:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this OsfederationProtocol.
+        r"""Sets the id of this OsfederationProtocol.
 
         协议ID。
 

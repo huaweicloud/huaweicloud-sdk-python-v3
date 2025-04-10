@@ -29,7 +29,7 @@ class MysqlDatastoreInReq:
     }
 
     def __init__(self, type=None, version=None, kernel_version=None):
-        """MysqlDatastoreInReq
+        r"""MysqlDatastoreInReq
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class MysqlDatastoreInReq:
 
     @property
     def type(self):
-        """Gets the type of this MysqlDatastoreInReq.
+        r"""Gets the type of this MysqlDatastoreInReq.
 
         数据库引擎，现在只支持gaussdb-mysql。
 
@@ -66,7 +66,7 @@ class MysqlDatastoreInReq:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this MysqlDatastoreInReq.
+        r"""Sets the type of this MysqlDatastoreInReq.
 
         数据库引擎，现在只支持gaussdb-mysql。
 
@@ -77,7 +77,7 @@ class MysqlDatastoreInReq:
 
     @property
     def version(self):
-        """Gets the version of this MysqlDatastoreInReq.
+        r"""Gets the version of this MysqlDatastoreInReq.
 
         兼容的三位开源数据库版本号。  获取方法请参见[查询数据库引擎的版本](https://support.huaweicloud.com/api-taurusdb/ShowGaussMySqlEngineVersion.html)返回的version字段。
 
@@ -88,7 +88,7 @@ class MysqlDatastoreInReq:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this MysqlDatastoreInReq.
+        r"""Sets the version of this MysqlDatastoreInReq.
 
         兼容的三位开源数据库版本号。  获取方法请参见[查询数据库引擎的版本](https://support.huaweicloud.com/api-taurusdb/ShowGaussMySqlEngineVersion.html)返回的version字段。
 
@@ -99,7 +99,7 @@ class MysqlDatastoreInReq:
 
     @property
     def kernel_version(self):
-        """Gets the kernel_version of this MysqlDatastoreInReq.
+        r"""Gets the kernel_version of this MysqlDatastoreInReq.
 
         内核数据库版本。如果需要指定具体的内核版本，请联系客服人员添加白名单。  完整的四位内核数据库版本，获取方法请参见[查询数据库引擎的版本](https://support.huaweicloud.com/api-taurusdb/ShowGaussMySqlEngineVersion.html)返回的kernel_version字段。
 
@@ -110,7 +110,7 @@ class MysqlDatastoreInReq:
 
     @kernel_version.setter
     def kernel_version(self, kernel_version):
-        """Sets the kernel_version of this MysqlDatastoreInReq.
+        r"""Sets the kernel_version of this MysqlDatastoreInReq.
 
         内核数据库版本。如果需要指定具体的内核版本，请联系客服人员添加白名单。  完整的四位内核数据库版本，获取方法请参见[查询数据库引擎的版本](https://support.huaweicloud.com/api-taurusdb/ShowGaussMySqlEngineVersion.html)返回的kernel_version字段。
 

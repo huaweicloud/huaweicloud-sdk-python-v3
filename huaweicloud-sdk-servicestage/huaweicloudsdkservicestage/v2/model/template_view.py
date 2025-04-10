@@ -33,7 +33,7 @@ class TemplateView:
     }
 
     def __init__(self, template_name=None, template_desc=None, source_type=None, source_repo_url=None, runtime=None):
-        """TemplateView
+        r"""TemplateView
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class TemplateView:
 
     @property
     def template_name(self):
-        """Gets the template_name of this TemplateView.
+        r"""Gets the template_name of this TemplateView.
 
         :return: The template_name of this TemplateView.
         :rtype: :class:`huaweicloudsdkservicestage.v2.Template`
@@ -80,7 +80,7 @@ class TemplateView:
 
     @template_name.setter
     def template_name(self, template_name):
-        """Sets the template_name of this TemplateView.
+        r"""Sets the template_name of this TemplateView.
 
         :param template_name: The template_name of this TemplateView.
         :type template_name: :class:`huaweicloudsdkservicestage.v2.Template`
@@ -89,7 +89,7 @@ class TemplateView:
 
     @property
     def template_desc(self):
-        """Gets the template_desc of this TemplateView.
+        r"""Gets the template_desc of this TemplateView.
 
         模板描述。
 
@@ -100,7 +100,7 @@ class TemplateView:
 
     @template_desc.setter
     def template_desc(self, template_desc):
-        """Sets the template_desc of this TemplateView.
+        r"""Sets the template_desc of this TemplateView.
 
         模板描述。
 
@@ -111,7 +111,7 @@ class TemplateView:
 
     @property
     def source_type(self):
-        """Gets the source_type of this TemplateView.
+        r"""Gets the source_type of this TemplateView.
 
         模板类别。
 
@@ -122,7 +122,7 @@ class TemplateView:
 
     @source_type.setter
     def source_type(self, source_type):
-        """Sets the source_type of this TemplateView.
+        r"""Sets the source_type of this TemplateView.
 
         模板类别。
 
@@ -133,7 +133,7 @@ class TemplateView:
 
     @property
     def source_repo_url(self):
-        """Gets the source_repo_url of this TemplateView.
+        r"""Gets the source_repo_url of this TemplateView.
 
         源码仓库URL
 
@@ -144,7 +144,7 @@ class TemplateView:
 
     @source_repo_url.setter
     def source_repo_url(self, source_repo_url):
-        """Sets the source_repo_url of this TemplateView.
+        r"""Sets the source_repo_url of this TemplateView.
 
         源码仓库URL
 
@@ -155,7 +155,7 @@ class TemplateView:
 
     @property
     def runtime(self):
-        """Gets the runtime of this TemplateView.
+        r"""Gets the runtime of this TemplateView.
 
         :return: The runtime of this TemplateView.
         :rtype: :class:`huaweicloudsdkservicestage.v2.RuntimeType`
@@ -164,7 +164,7 @@ class TemplateView:
 
     @runtime.setter
     def runtime(self, runtime):
-        """Sets the runtime of this TemplateView.
+        r"""Sets the runtime of this TemplateView.
 
         :param runtime: The runtime of this TemplateView.
         :type runtime: :class:`huaweicloudsdkservicestage.v2.RuntimeType`

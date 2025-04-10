@@ -25,7 +25,7 @@ class DeleteLoadBalancerCascadeRequestBody:
     }
 
     def __init__(self, loadbalancer=None):
-        """DeleteLoadBalancerCascadeRequestBody
+        r"""DeleteLoadBalancerCascadeRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteLoadBalancerCascadeRequestBody:
 
     @property
     def loadbalancer(self):
-        """Gets the loadbalancer of this DeleteLoadBalancerCascadeRequestBody.
+        r"""Gets the loadbalancer of this DeleteLoadBalancerCascadeRequestBody.
 
         :return: The loadbalancer of this DeleteLoadBalancerCascadeRequestBody.
         :rtype: :class:`huaweicloudsdkelb.v3.DeleteLoadBalancerCascadeOption`
@@ -51,7 +51,7 @@ class DeleteLoadBalancerCascadeRequestBody:
 
     @loadbalancer.setter
     def loadbalancer(self, loadbalancer):
-        """Sets the loadbalancer of this DeleteLoadBalancerCascadeRequestBody.
+        r"""Sets the loadbalancer of this DeleteLoadBalancerCascadeRequestBody.
 
         :param loadbalancer: The loadbalancer of this DeleteLoadBalancerCascadeRequestBody.
         :type loadbalancer: :class:`huaweicloudsdkelb.v3.DeleteLoadBalancerCascadeOption`

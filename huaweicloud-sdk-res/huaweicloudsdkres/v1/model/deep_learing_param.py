@@ -39,7 +39,7 @@ class DeepLearingParam:
     }
 
     def __init__(self, initial_parameters=None, optimize_parameters=None, regular_parameters=None, max_iterations=None, early_stop_iterations=None, batch_size=None, dataset_split_parts=None, restart_train=None):
-        """DeepLearingParam
+        r"""DeepLearingParam
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class DeepLearingParam:
 
     @property
     def initial_parameters(self):
-        """Gets the initial_parameters of this DeepLearingParam.
+        r"""Gets the initial_parameters of this DeepLearingParam.
 
         :return: The initial_parameters of this DeepLearingParam.
         :rtype: :class:`huaweicloudsdkres.v1.Initial`
@@ -101,7 +101,7 @@ class DeepLearingParam:
 
     @initial_parameters.setter
     def initial_parameters(self, initial_parameters):
-        """Sets the initial_parameters of this DeepLearingParam.
+        r"""Sets the initial_parameters of this DeepLearingParam.
 
         :param initial_parameters: The initial_parameters of this DeepLearingParam.
         :type initial_parameters: :class:`huaweicloudsdkres.v1.Initial`
@@ -110,7 +110,7 @@ class DeepLearingParam:
 
     @property
     def optimize_parameters(self):
-        """Gets the optimize_parameters of this DeepLearingParam.
+        r"""Gets the optimize_parameters of this DeepLearingParam.
 
         :return: The optimize_parameters of this DeepLearingParam.
         :rtype: :class:`huaweicloudsdkres.v1.Optimizer`
@@ -119,7 +119,7 @@ class DeepLearingParam:
 
     @optimize_parameters.setter
     def optimize_parameters(self, optimize_parameters):
-        """Sets the optimize_parameters of this DeepLearingParam.
+        r"""Sets the optimize_parameters of this DeepLearingParam.
 
         :param optimize_parameters: The optimize_parameters of this DeepLearingParam.
         :type optimize_parameters: :class:`huaweicloudsdkres.v1.Optimizer`
@@ -128,7 +128,7 @@ class DeepLearingParam:
 
     @property
     def regular_parameters(self):
-        """Gets the regular_parameters of this DeepLearingParam.
+        r"""Gets the regular_parameters of this DeepLearingParam.
 
         :return: The regular_parameters of this DeepLearingParam.
         :rtype: :class:`huaweicloudsdkres.v1.Regular`
@@ -137,7 +137,7 @@ class DeepLearingParam:
 
     @regular_parameters.setter
     def regular_parameters(self, regular_parameters):
-        """Sets the regular_parameters of this DeepLearingParam.
+        r"""Sets the regular_parameters of this DeepLearingParam.
 
         :param regular_parameters: The regular_parameters of this DeepLearingParam.
         :type regular_parameters: :class:`huaweicloudsdkres.v1.Regular`
@@ -146,7 +146,7 @@ class DeepLearingParam:
 
     @property
     def max_iterations(self):
-        """Gets the max_iterations of this DeepLearingParam.
+        r"""Gets the max_iterations of this DeepLearingParam.
 
         最大迭代轮数。
 
@@ -157,7 +157,7 @@ class DeepLearingParam:
 
     @max_iterations.setter
     def max_iterations(self, max_iterations):
-        """Sets the max_iterations of this DeepLearingParam.
+        r"""Sets the max_iterations of this DeepLearingParam.
 
         最大迭代轮数。
 
@@ -168,7 +168,7 @@ class DeepLearingParam:
 
     @property
     def early_stop_iterations(self):
-        """Gets the early_stop_iterations of this DeepLearingParam.
+        r"""Gets the early_stop_iterations of this DeepLearingParam.
 
         提前终止训练轮数。
 
@@ -179,7 +179,7 @@ class DeepLearingParam:
 
     @early_stop_iterations.setter
     def early_stop_iterations(self, early_stop_iterations):
-        """Sets the early_stop_iterations of this DeepLearingParam.
+        r"""Sets the early_stop_iterations of this DeepLearingParam.
 
         提前终止训练轮数。
 
@@ -190,7 +190,7 @@ class DeepLearingParam:
 
     @property
     def batch_size(self):
-        """Gets the batch_size of this DeepLearingParam.
+        r"""Gets the batch_size of this DeepLearingParam.
 
         批量大小。
 
@@ -201,7 +201,7 @@ class DeepLearingParam:
 
     @batch_size.setter
     def batch_size(self, batch_size):
-        """Sets the batch_size of this DeepLearingParam.
+        r"""Sets the batch_size of this DeepLearingParam.
 
         批量大小。
 
@@ -212,7 +212,7 @@ class DeepLearingParam:
 
     @property
     def dataset_split_parts(self):
-        """Gets the dataset_split_parts of this DeepLearingParam.
+        r"""Gets the dataset_split_parts of this DeepLearingParam.
 
         训练数据集切分数量。
 
@@ -223,7 +223,7 @@ class DeepLearingParam:
 
     @dataset_split_parts.setter
     def dataset_split_parts(self, dataset_split_parts):
-        """Sets the dataset_split_parts of this DeepLearingParam.
+        r"""Sets the dataset_split_parts of this DeepLearingParam.
 
         训练数据集切分数量。
 
@@ -234,7 +234,7 @@ class DeepLearingParam:
 
     @property
     def restart_train(self):
-        """Gets the restart_train of this DeepLearingParam.
+        r"""Gets the restart_train of this DeepLearingParam.
 
         重新训练。
 
@@ -245,7 +245,7 @@ class DeepLearingParam:
 
     @restart_train.setter
     def restart_train(self, restart_train):
-        """Sets the restart_train of this DeepLearingParam.
+        r"""Sets the restart_train of this DeepLearingParam.
 
         重新训练。
 

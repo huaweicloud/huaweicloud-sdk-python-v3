@@ -23,7 +23,7 @@ class AutoAssociateRouteEnabled:
     }
 
     def __init__(self):
-        """AutoAssociateRouteEnabled
+        r"""AutoAssociateRouteEnabled
 
         The model defined in huaweicloud sdk
 

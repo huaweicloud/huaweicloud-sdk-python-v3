@@ -26,7 +26,7 @@ class ShowProjectQuotasResponse(SdkResponse):
     }
 
     def __init__(self, quotas=None):
-        """ShowProjectQuotasResponse
+        r"""ShowProjectQuotasResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowProjectQuotasResponse(SdkResponse):
 
     @property
     def quotas(self):
-        """Gets the quotas of this ShowProjectQuotasResponse.
+        r"""Gets the quotas of this ShowProjectQuotasResponse.
 
         :return: The quotas of this ShowProjectQuotasResponse.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ProjectQuotasResult`
@@ -53,7 +53,7 @@ class ShowProjectQuotasResponse(SdkResponse):
 
     @quotas.setter
     def quotas(self, quotas):
-        """Sets the quotas of this ShowProjectQuotasResponse.
+        r"""Sets the quotas of this ShowProjectQuotasResponse.
 
         :param quotas: The quotas of this ShowProjectQuotasResponse.
         :type quotas: :class:`huaweicloudsdkgaussdbforopengauss.v3.ProjectQuotasResult`

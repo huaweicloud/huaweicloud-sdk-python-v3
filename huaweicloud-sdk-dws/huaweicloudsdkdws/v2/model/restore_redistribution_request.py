@@ -25,7 +25,7 @@ class RestoreRedistributionRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """RestoreRedistributionRequest
+        r"""RestoreRedistributionRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RestoreRedistributionRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this RestoreRedistributionRequest.
+        r"""Gets the cluster_id of this RestoreRedistributionRequest.
 
         指定恢复重分布集群的ID
 
@@ -53,7 +53,7 @@ class RestoreRedistributionRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this RestoreRedistributionRequest.
+        r"""Sets the cluster_id of this RestoreRedistributionRequest.
 
         指定恢复重分布集群的ID
 

@@ -45,7 +45,7 @@ class InstanceDomainItem:
     }
 
     def __init__(self, domain_id=None, domain_name=None, cname=None, domain_status=None, cc_status=None, https_cert_status=None, cert_name=None, protocol_type=None, real_server_type=None, real_servers=None, waf_status=None):
-        """InstanceDomainItem
+        r"""InstanceDomainItem
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class InstanceDomainItem:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this InstanceDomainItem.
+        r"""Gets the domain_id of this InstanceDomainItem.
 
         域名ID
 
@@ -124,7 +124,7 @@ class InstanceDomainItem:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this InstanceDomainItem.
+        r"""Sets the domain_id of this InstanceDomainItem.
 
         域名ID
 
@@ -135,7 +135,7 @@ class InstanceDomainItem:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this InstanceDomainItem.
+        r"""Gets the domain_name of this InstanceDomainItem.
 
         域名
 
@@ -146,7 +146,7 @@ class InstanceDomainItem:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this InstanceDomainItem.
+        r"""Sets the domain_name of this InstanceDomainItem.
 
         域名
 
@@ -157,7 +157,7 @@ class InstanceDomainItem:
 
     @property
     def cname(self):
-        """Gets the cname of this InstanceDomainItem.
+        r"""Gets the cname of this InstanceDomainItem.
 
         域名cname
 
@@ -168,7 +168,7 @@ class InstanceDomainItem:
 
     @cname.setter
     def cname(self, cname):
-        """Sets the cname of this InstanceDomainItem.
+        r"""Sets the cname of this InstanceDomainItem.
 
         域名cname
 
@@ -179,7 +179,7 @@ class InstanceDomainItem:
 
     @property
     def domain_status(self):
-        """Gets the domain_status of this InstanceDomainItem.
+        r"""Gets the domain_status of this InstanceDomainItem.
 
         域名状态 NORMAL = '0', FREEZE = '1'
 
@@ -190,7 +190,7 @@ class InstanceDomainItem:
 
     @domain_status.setter
     def domain_status(self, domain_status):
-        """Sets the domain_status of this InstanceDomainItem.
+        r"""Sets the domain_status of this InstanceDomainItem.
 
         域名状态 NORMAL = '0', FREEZE = '1'
 
@@ -201,7 +201,7 @@ class InstanceDomainItem:
 
     @property
     def cc_status(self):
-        """Gets the cc_status of this InstanceDomainItem.
+        r"""Gets the cc_status of this InstanceDomainItem.
 
         cc防护状态
 
@@ -212,7 +212,7 @@ class InstanceDomainItem:
 
     @cc_status.setter
     def cc_status(self, cc_status):
-        """Sets the cc_status of this InstanceDomainItem.
+        r"""Sets the cc_status of this InstanceDomainItem.
 
         cc防护状态
 
@@ -223,7 +223,7 @@ class InstanceDomainItem:
 
     @property
     def https_cert_status(self):
-        """Gets the https_cert_status of this InstanceDomainItem.
+        r"""Gets the https_cert_status of this InstanceDomainItem.
 
         证书状态：1---已上传  2---未上传
 
@@ -234,7 +234,7 @@ class InstanceDomainItem:
 
     @https_cert_status.setter
     def https_cert_status(self, https_cert_status):
-        """Sets the https_cert_status of this InstanceDomainItem.
+        r"""Sets the https_cert_status of this InstanceDomainItem.
 
         证书状态：1---已上传  2---未上传
 
@@ -245,7 +245,7 @@ class InstanceDomainItem:
 
     @property
     def cert_name(self):
-        """Gets the cert_name of this InstanceDomainItem.
+        r"""Gets the cert_name of this InstanceDomainItem.
 
         证书名称
 
@@ -256,7 +256,7 @@ class InstanceDomainItem:
 
     @cert_name.setter
     def cert_name(self, cert_name):
-        """Sets the cert_name of this InstanceDomainItem.
+        r"""Sets the cert_name of this InstanceDomainItem.
 
         证书名称
 
@@ -267,7 +267,7 @@ class InstanceDomainItem:
 
     @property
     def protocol_type(self):
-        """Gets the protocol_type of this InstanceDomainItem.
+        r"""Gets the protocol_type of this InstanceDomainItem.
 
         域名协议
 
@@ -278,7 +278,7 @@ class InstanceDomainItem:
 
     @protocol_type.setter
     def protocol_type(self, protocol_type):
-        """Sets the protocol_type of this InstanceDomainItem.
+        r"""Sets the protocol_type of this InstanceDomainItem.
 
         域名协议
 
@@ -289,7 +289,7 @@ class InstanceDomainItem:
 
     @property
     def real_server_type(self):
-        """Gets the real_server_type of this InstanceDomainItem.
+        r"""Gets the real_server_type of this InstanceDomainItem.
 
         源站类型
 
@@ -300,7 +300,7 @@ class InstanceDomainItem:
 
     @real_server_type.setter
     def real_server_type(self, real_server_type):
-        """Sets the real_server_type of this InstanceDomainItem.
+        r"""Sets the real_server_type of this InstanceDomainItem.
 
         源站类型
 
@@ -311,7 +311,7 @@ class InstanceDomainItem:
 
     @property
     def real_servers(self):
-        """Gets the real_servers of this InstanceDomainItem.
+        r"""Gets the real_servers of this InstanceDomainItem.
 
         源站
 
@@ -322,7 +322,7 @@ class InstanceDomainItem:
 
     @real_servers.setter
     def real_servers(self, real_servers):
-        """Sets the real_servers of this InstanceDomainItem.
+        r"""Sets the real_servers of this InstanceDomainItem.
 
         源站
 
@@ -333,7 +333,7 @@ class InstanceDomainItem:
 
     @property
     def waf_status(self):
-        """Gets the waf_status of this InstanceDomainItem.
+        r"""Gets the waf_status of this InstanceDomainItem.
 
         waf防护状态
 
@@ -344,7 +344,7 @@ class InstanceDomainItem:
 
     @waf_status.setter
     def waf_status(self, waf_status):
-        """Sets the waf_status of this InstanceDomainItem.
+        r"""Sets the waf_status of this InstanceDomainItem.
 
         waf防护状态
 

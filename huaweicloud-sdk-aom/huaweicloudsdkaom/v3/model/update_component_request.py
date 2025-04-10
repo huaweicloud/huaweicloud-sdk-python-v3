@@ -27,7 +27,7 @@ class UpdateComponentRequest:
     }
 
     def __init__(self, component_id=None, body=None):
-        """UpdateComponentRequest
+        r"""UpdateComponentRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateComponentRequest:
 
     @property
     def component_id(self):
-        """Gets the component_id of this UpdateComponentRequest.
+        r"""Gets the component_id of this UpdateComponentRequest.
 
         组件id
 
@@ -60,7 +60,7 @@ class UpdateComponentRequest:
 
     @component_id.setter
     def component_id(self, component_id):
-        """Sets the component_id of this UpdateComponentRequest.
+        r"""Sets the component_id of this UpdateComponentRequest.
 
         组件id
 
@@ -71,7 +71,7 @@ class UpdateComponentRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateComponentRequest.
+        r"""Gets the body of this UpdateComponentRequest.
 
         :return: The body of this UpdateComponentRequest.
         :rtype: :class:`huaweicloudsdkaom.v3.ComponentUpdateParam`
@@ -80,7 +80,7 @@ class UpdateComponentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateComponentRequest.
+        r"""Sets the body of this UpdateComponentRequest.
 
         :param body: The body of this UpdateComponentRequest.
         :type body: :class:`huaweicloudsdkaom.v3.ComponentUpdateParam`

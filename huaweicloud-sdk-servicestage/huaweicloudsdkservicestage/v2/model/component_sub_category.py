@@ -32,7 +32,7 @@ class ComponentSubCategory:
     }
 
     def __init__(self):
-        """ComponentSubCategory
+        r"""ComponentSubCategory
 
         The model defined in huaweicloud sdk
 

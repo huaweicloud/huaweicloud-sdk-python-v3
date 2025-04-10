@@ -30,7 +30,7 @@ class GetGroupMembershipIdRequest:
     }
 
     def __init__(self, x_security_token=None, identity_store_id=None, body=None):
-        """GetGroupMembershipIdRequest
+        r"""GetGroupMembershipIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class GetGroupMembershipIdRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this GetGroupMembershipIdRequest.
+        r"""Gets the x_security_token of this GetGroupMembershipIdRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -68,7 +68,7 @@ class GetGroupMembershipIdRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this GetGroupMembershipIdRequest.
+        r"""Sets the x_security_token of this GetGroupMembershipIdRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -79,7 +79,7 @@ class GetGroupMembershipIdRequest:
 
     @property
     def identity_store_id(self):
-        """Gets the identity_store_id of this GetGroupMembershipIdRequest.
+        r"""Gets the identity_store_id of this GetGroupMembershipIdRequest.
 
         身份源的全局唯一标识符（ID）
 
@@ -90,7 +90,7 @@ class GetGroupMembershipIdRequest:
 
     @identity_store_id.setter
     def identity_store_id(self, identity_store_id):
-        """Sets the identity_store_id of this GetGroupMembershipIdRequest.
+        r"""Sets the identity_store_id of this GetGroupMembershipIdRequest.
 
         身份源的全局唯一标识符（ID）
 
@@ -101,7 +101,7 @@ class GetGroupMembershipIdRequest:
 
     @property
     def body(self):
-        """Gets the body of this GetGroupMembershipIdRequest.
+        r"""Gets the body of this GetGroupMembershipIdRequest.
 
         :return: The body of this GetGroupMembershipIdRequest.
         :rtype: :class:`huaweicloudsdkidentitycenterstore.v1.GetGroupMembershipIdReqBody`
@@ -110,7 +110,7 @@ class GetGroupMembershipIdRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this GetGroupMembershipIdRequest.
+        r"""Sets the body of this GetGroupMembershipIdRequest.
 
         :param body: The body of this GetGroupMembershipIdRequest.
         :type body: :class:`huaweicloudsdkidentitycenterstore.v1.GetGroupMembershipIdReqBody`

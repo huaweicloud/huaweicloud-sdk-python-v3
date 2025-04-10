@@ -28,7 +28,7 @@ class ListProcessesResponse(SdkResponse):
     }
 
     def __init__(self, processes=None, count=None):
-        """ListProcessesResponse
+        r"""ListProcessesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListProcessesResponse(SdkResponse):
 
     @property
     def processes(self):
-        """Gets the processes of this ListProcessesResponse.
+        r"""Gets the processes of this ListProcessesResponse.
 
         会话列表
 
@@ -62,7 +62,7 @@ class ListProcessesResponse(SdkResponse):
 
     @processes.setter
     def processes(self, processes):
-        """Sets the processes of this ListProcessesResponse.
+        r"""Sets the processes of this ListProcessesResponse.
 
         会话列表
 
@@ -73,7 +73,7 @@ class ListProcessesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListProcessesResponse.
+        r"""Gets the count of this ListProcessesResponse.
 
         总记录数
 
@@ -84,7 +84,7 @@ class ListProcessesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListProcessesResponse.
+        r"""Sets the count of this ListProcessesResponse.
 
         总记录数
 

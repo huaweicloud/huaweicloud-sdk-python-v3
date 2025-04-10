@@ -26,7 +26,7 @@ class ListTrackersResponse(SdkResponse):
     }
 
     def __init__(self, trackers=None):
-        """ListTrackersResponse
+        r"""ListTrackersResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListTrackersResponse(SdkResponse):
 
     @property
     def trackers(self):
-        """Gets the trackers of this ListTrackersResponse.
+        r"""Gets the trackers of this ListTrackersResponse.
 
         本次查询追踪器列表返回的追踪器数组。
 
@@ -55,7 +55,7 @@ class ListTrackersResponse(SdkResponse):
 
     @trackers.setter
     def trackers(self, trackers):
-        """Sets the trackers of this ListTrackersResponse.
+        r"""Sets the trackers of this ListTrackersResponse.
 
         本次查询追踪器列表返回的追踪器数组。
 

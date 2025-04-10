@@ -25,7 +25,7 @@ class ShowClusterEnterpriseProjectsRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """ShowClusterEnterpriseProjectsRequest
+        r"""ShowClusterEnterpriseProjectsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowClusterEnterpriseProjectsRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowClusterEnterpriseProjectsRequest.
+        r"""Gets the cluster_id of this ShowClusterEnterpriseProjectsRequest.
 
         集群ID
 
@@ -53,7 +53,7 @@ class ShowClusterEnterpriseProjectsRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowClusterEnterpriseProjectsRequest.
+        r"""Sets the cluster_id of this ShowClusterEnterpriseProjectsRequest.
 
         集群ID
 

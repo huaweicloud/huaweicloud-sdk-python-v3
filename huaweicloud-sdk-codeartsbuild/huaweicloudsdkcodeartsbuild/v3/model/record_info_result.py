@@ -89,7 +89,7 @@ class RecordInfoResult:
     }
 
     def __init__(self, id=None, build_project_id=None, build_record_id=None, parent_record_id=None, devcloud_project_id=None, codeci_job_id=None, user_id=None, build_no=None, daily_build_num=None, execution_id=None, repo_name=None, repo_id=None, branch=None, tag=None, commit=None, commit_message=None, commit_create_time=None, trigger_type=None, build_type=None, status=None, domain_id=None, create_time=None, schedule_time=None, queued_time=None, start_time=None, runnable_time=None, finish_time=None, duration=None, record_status=None, use_private_slave=None, region=None, err_msg=None, build_config_type=None):
-        """RecordInfoResult
+        r"""RecordInfoResult
 
         The model defined in huaweicloud sdk
 
@@ -267,7 +267,7 @@ class RecordInfoResult:
 
     @property
     def id(self):
-        """Gets the id of this RecordInfoResult.
+        r"""Gets the id of this RecordInfoResult.
 
         id
 
@@ -278,7 +278,7 @@ class RecordInfoResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this RecordInfoResult.
+        r"""Sets the id of this RecordInfoResult.
 
         id
 
@@ -289,7 +289,7 @@ class RecordInfoResult:
 
     @property
     def build_project_id(self):
-        """Gets the build_project_id of this RecordInfoResult.
+        r"""Gets the build_project_id of this RecordInfoResult.
 
         构建工程ID,唯一对应codeci_job_id
 
@@ -300,7 +300,7 @@ class RecordInfoResult:
 
     @build_project_id.setter
     def build_project_id(self, build_project_id):
-        """Sets the build_project_id of this RecordInfoResult.
+        r"""Sets the build_project_id of this RecordInfoResult.
 
         构建工程ID,唯一对应codeci_job_id
 
@@ -311,7 +311,7 @@ class RecordInfoResult:
 
     @property
     def build_record_id(self):
-        """Gets the build_record_id of this RecordInfoResult.
+        r"""Gets the build_record_id of this RecordInfoResult.
 
         构建记录ID
 
@@ -322,7 +322,7 @@ class RecordInfoResult:
 
     @build_record_id.setter
     def build_record_id(self, build_record_id):
-        """Sets the build_record_id of this RecordInfoResult.
+        r"""Sets the build_record_id of this RecordInfoResult.
 
         构建记录ID
 
@@ -333,7 +333,7 @@ class RecordInfoResult:
 
     @property
     def parent_record_id(self):
-        """Gets the parent_record_id of this RecordInfoResult.
+        r"""Gets the parent_record_id of this RecordInfoResult.
 
         父构建记录ID
 
@@ -344,7 +344,7 @@ class RecordInfoResult:
 
     @parent_record_id.setter
     def parent_record_id(self, parent_record_id):
-        """Sets the parent_record_id of this RecordInfoResult.
+        r"""Sets the parent_record_id of this RecordInfoResult.
 
         父构建记录ID
 
@@ -355,7 +355,7 @@ class RecordInfoResult:
 
     @property
     def devcloud_project_id(self):
-        """Gets the devcloud_project_id of this RecordInfoResult.
+        r"""Gets the devcloud_project_id of this RecordInfoResult.
 
         项目ID
 
@@ -366,7 +366,7 @@ class RecordInfoResult:
 
     @devcloud_project_id.setter
     def devcloud_project_id(self, devcloud_project_id):
-        """Sets the devcloud_project_id of this RecordInfoResult.
+        r"""Sets the devcloud_project_id of this RecordInfoResult.
 
         项目ID
 
@@ -377,7 +377,7 @@ class RecordInfoResult:
 
     @property
     def codeci_job_id(self):
-        """Gets the codeci_job_id of this RecordInfoResult.
+        r"""Gets the codeci_job_id of this RecordInfoResult.
 
         codeci任务ID,唯一对应build_project_id
 
@@ -388,7 +388,7 @@ class RecordInfoResult:
 
     @codeci_job_id.setter
     def codeci_job_id(self, codeci_job_id):
-        """Sets the codeci_job_id of this RecordInfoResult.
+        r"""Sets the codeci_job_id of this RecordInfoResult.
 
         codeci任务ID,唯一对应build_project_id
 
@@ -399,7 +399,7 @@ class RecordInfoResult:
 
     @property
     def user_id(self):
-        """Gets the user_id of this RecordInfoResult.
+        r"""Gets the user_id of this RecordInfoResult.
 
         用户ID
 
@@ -410,7 +410,7 @@ class RecordInfoResult:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this RecordInfoResult.
+        r"""Sets the user_id of this RecordInfoResult.
 
         用户ID
 
@@ -421,7 +421,7 @@ class RecordInfoResult:
 
     @property
     def build_no(self):
-        """Gets the build_no of this RecordInfoResult.
+        r"""Gets the build_no of this RecordInfoResult.
 
         构建编号
 
@@ -432,7 +432,7 @@ class RecordInfoResult:
 
     @build_no.setter
     def build_no(self, build_no):
-        """Sets the build_no of this RecordInfoResult.
+        r"""Sets the build_no of this RecordInfoResult.
 
         构建编号
 
@@ -443,7 +443,7 @@ class RecordInfoResult:
 
     @property
     def daily_build_num(self):
-        """Gets the daily_build_num of this RecordInfoResult.
+        r"""Gets the daily_build_num of this RecordInfoResult.
 
         每日构建编号，每日从1开始
 
@@ -454,7 +454,7 @@ class RecordInfoResult:
 
     @daily_build_num.setter
     def daily_build_num(self, daily_build_num):
-        """Sets the daily_build_num of this RecordInfoResult.
+        r"""Sets the daily_build_num of this RecordInfoResult.
 
         每日构建编号，每日从1开始
 
@@ -465,7 +465,7 @@ class RecordInfoResult:
 
     @property
     def execution_id(self):
-        """Gets the execution_id of this RecordInfoResult.
+        r"""Gets the execution_id of this RecordInfoResult.
 
         八爪鱼任务ID
 
@@ -476,7 +476,7 @@ class RecordInfoResult:
 
     @execution_id.setter
     def execution_id(self, execution_id):
-        """Sets the execution_id of this RecordInfoResult.
+        r"""Sets the execution_id of this RecordInfoResult.
 
         八爪鱼任务ID
 
@@ -487,7 +487,7 @@ class RecordInfoResult:
 
     @property
     def repo_name(self):
-        """Gets the repo_name of this RecordInfoResult.
+        r"""Gets the repo_name of this RecordInfoResult.
 
         仓库名称
 
@@ -498,7 +498,7 @@ class RecordInfoResult:
 
     @repo_name.setter
     def repo_name(self, repo_name):
-        """Sets the repo_name of this RecordInfoResult.
+        r"""Sets the repo_name of this RecordInfoResult.
 
         仓库名称
 
@@ -509,7 +509,7 @@ class RecordInfoResult:
 
     @property
     def repo_id(self):
-        """Gets the repo_id of this RecordInfoResult.
+        r"""Gets the repo_id of this RecordInfoResult.
 
         仓库id
 
@@ -520,7 +520,7 @@ class RecordInfoResult:
 
     @repo_id.setter
     def repo_id(self, repo_id):
-        """Sets the repo_id of this RecordInfoResult.
+        r"""Sets the repo_id of this RecordInfoResult.
 
         仓库id
 
@@ -531,7 +531,7 @@ class RecordInfoResult:
 
     @property
     def branch(self):
-        """Gets the branch of this RecordInfoResult.
+        r"""Gets the branch of this RecordInfoResult.
 
         仓库分支
 
@@ -542,7 +542,7 @@ class RecordInfoResult:
 
     @branch.setter
     def branch(self, branch):
-        """Sets the branch of this RecordInfoResult.
+        r"""Sets the branch of this RecordInfoResult.
 
         仓库分支
 
@@ -553,7 +553,7 @@ class RecordInfoResult:
 
     @property
     def tag(self):
-        """Gets the tag of this RecordInfoResult.
+        r"""Gets the tag of this RecordInfoResult.
 
         仓库tag
 
@@ -564,7 +564,7 @@ class RecordInfoResult:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this RecordInfoResult.
+        r"""Sets the tag of this RecordInfoResult.
 
         仓库tag
 
@@ -575,7 +575,7 @@ class RecordInfoResult:
 
     @property
     def commit(self):
-        """Gets the commit of this RecordInfoResult.
+        r"""Gets the commit of this RecordInfoResult.
 
         仓库commit ID
 
@@ -586,7 +586,7 @@ class RecordInfoResult:
 
     @commit.setter
     def commit(self, commit):
-        """Sets the commit of this RecordInfoResult.
+        r"""Sets the commit of this RecordInfoResult.
 
         仓库commit ID
 
@@ -597,7 +597,7 @@ class RecordInfoResult:
 
     @property
     def commit_message(self):
-        """Gets the commit_message of this RecordInfoResult.
+        r"""Gets the commit_message of this RecordInfoResult.
 
         仓库commit提交信息
 
@@ -608,7 +608,7 @@ class RecordInfoResult:
 
     @commit_message.setter
     def commit_message(self, commit_message):
-        """Sets the commit_message of this RecordInfoResult.
+        r"""Sets the commit_message of this RecordInfoResult.
 
         仓库commit提交信息
 
@@ -619,7 +619,7 @@ class RecordInfoResult:
 
     @property
     def commit_create_time(self):
-        """Gets the commit_create_time of this RecordInfoResult.
+        r"""Gets the commit_create_time of this RecordInfoResult.
 
         commit创建时间
 
@@ -630,7 +630,7 @@ class RecordInfoResult:
 
     @commit_create_time.setter
     def commit_create_time(self, commit_create_time):
-        """Sets the commit_create_time of this RecordInfoResult.
+        r"""Sets the commit_create_time of this RecordInfoResult.
 
         commit创建时间
 
@@ -641,7 +641,7 @@ class RecordInfoResult:
 
     @property
     def trigger_type(self):
-        """Gets the trigger_type of this RecordInfoResult.
+        r"""Gets the trigger_type of this RecordInfoResult.
 
         触发类型
 
@@ -652,7 +652,7 @@ class RecordInfoResult:
 
     @trigger_type.setter
     def trigger_type(self, trigger_type):
-        """Sets the trigger_type of this RecordInfoResult.
+        r"""Sets the trigger_type of this RecordInfoResult.
 
         触发类型
 
@@ -663,7 +663,7 @@ class RecordInfoResult:
 
     @property
     def build_type(self):
-        """Gets the build_type of this RecordInfoResult.
+        r"""Gets the build_type of this RecordInfoResult.
 
         构建类型
 
@@ -674,7 +674,7 @@ class RecordInfoResult:
 
     @build_type.setter
     def build_type(self, build_type):
-        """Sets the build_type of this RecordInfoResult.
+        r"""Sets the build_type of this RecordInfoResult.
 
         构建类型
 
@@ -685,7 +685,7 @@ class RecordInfoResult:
 
     @property
     def status(self):
-        """Gets the status of this RecordInfoResult.
+        r"""Gets the status of this RecordInfoResult.
 
         构建状态
 
@@ -696,7 +696,7 @@ class RecordInfoResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this RecordInfoResult.
+        r"""Sets the status of this RecordInfoResult.
 
         构建状态
 
@@ -707,7 +707,7 @@ class RecordInfoResult:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this RecordInfoResult.
+        r"""Gets the domain_id of this RecordInfoResult.
 
         租户ID
 
@@ -718,7 +718,7 @@ class RecordInfoResult:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this RecordInfoResult.
+        r"""Sets the domain_id of this RecordInfoResult.
 
         租户ID
 
@@ -729,7 +729,7 @@ class RecordInfoResult:
 
     @property
     def create_time(self):
-        """Gets the create_time of this RecordInfoResult.
+        r"""Gets the create_time of this RecordInfoResult.
 
         任务创建时间
 
@@ -740,7 +740,7 @@ class RecordInfoResult:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this RecordInfoResult.
+        r"""Sets the create_time of this RecordInfoResult.
 
         任务创建时间
 
@@ -751,7 +751,7 @@ class RecordInfoResult:
 
     @property
     def schedule_time(self):
-        """Gets the schedule_time of this RecordInfoResult.
+        r"""Gets the schedule_time of this RecordInfoResult.
 
         构建下发耗时
 
@@ -762,7 +762,7 @@ class RecordInfoResult:
 
     @schedule_time.setter
     def schedule_time(self, schedule_time):
-        """Sets the schedule_time of this RecordInfoResult.
+        r"""Sets the schedule_time of this RecordInfoResult.
 
         构建下发耗时
 
@@ -773,7 +773,7 @@ class RecordInfoResult:
 
     @property
     def queued_time(self):
-        """Gets the queued_time of this RecordInfoResult.
+        r"""Gets the queued_time of this RecordInfoResult.
 
         构建排队耗时
 
@@ -784,7 +784,7 @@ class RecordInfoResult:
 
     @queued_time.setter
     def queued_time(self, queued_time):
-        """Sets the queued_time of this RecordInfoResult.
+        r"""Sets the queued_time of this RecordInfoResult.
 
         构建排队耗时
 
@@ -795,7 +795,7 @@ class RecordInfoResult:
 
     @property
     def start_time(self):
-        """Gets the start_time of this RecordInfoResult.
+        r"""Gets the start_time of this RecordInfoResult.
 
         开始构建时间
 
@@ -806,7 +806,7 @@ class RecordInfoResult:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this RecordInfoResult.
+        r"""Sets the start_time of this RecordInfoResult.
 
         开始构建时间
 
@@ -817,7 +817,7 @@ class RecordInfoResult:
 
     @property
     def runnable_time(self):
-        """Gets the runnable_time of this RecordInfoResult.
+        r"""Gets the runnable_time of this RecordInfoResult.
 
         八爪鱼真正开始构建时间
 
@@ -828,7 +828,7 @@ class RecordInfoResult:
 
     @runnable_time.setter
     def runnable_time(self, runnable_time):
-        """Sets the runnable_time of this RecordInfoResult.
+        r"""Sets the runnable_time of this RecordInfoResult.
 
         八爪鱼真正开始构建时间
 
@@ -839,7 +839,7 @@ class RecordInfoResult:
 
     @property
     def finish_time(self):
-        """Gets the finish_time of this RecordInfoResult.
+        r"""Gets the finish_time of this RecordInfoResult.
 
         构建结束时间
 
@@ -850,7 +850,7 @@ class RecordInfoResult:
 
     @finish_time.setter
     def finish_time(self, finish_time):
-        """Sets the finish_time of this RecordInfoResult.
+        r"""Sets the finish_time of this RecordInfoResult.
 
         构建结束时间
 
@@ -861,7 +861,7 @@ class RecordInfoResult:
 
     @property
     def duration(self):
-        """Gets the duration of this RecordInfoResult.
+        r"""Gets the duration of this RecordInfoResult.
 
         构建时长
 
@@ -872,7 +872,7 @@ class RecordInfoResult:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this RecordInfoResult.
+        r"""Sets the duration of this RecordInfoResult.
 
         构建时长
 
@@ -883,7 +883,7 @@ class RecordInfoResult:
 
     @property
     def record_status(self):
-        """Gets the record_status of this RecordInfoResult.
+        r"""Gets the record_status of this RecordInfoResult.
 
         record状态
 
@@ -894,7 +894,7 @@ class RecordInfoResult:
 
     @record_status.setter
     def record_status(self, record_status):
-        """Sets the record_status of this RecordInfoResult.
+        r"""Sets the record_status of this RecordInfoResult.
 
         record状态
 
@@ -905,7 +905,7 @@ class RecordInfoResult:
 
     @property
     def use_private_slave(self):
-        """Gets the use_private_slave of this RecordInfoResult.
+        r"""Gets the use_private_slave of this RecordInfoResult.
 
         是否使用自定义执行机
 
@@ -916,7 +916,7 @@ class RecordInfoResult:
 
     @use_private_slave.setter
     def use_private_slave(self, use_private_slave):
-        """Sets the use_private_slave of this RecordInfoResult.
+        r"""Sets the use_private_slave of this RecordInfoResult.
 
         是否使用自定义执行机
 
@@ -927,7 +927,7 @@ class RecordInfoResult:
 
     @property
     def region(self):
-        """Gets the region of this RecordInfoResult.
+        r"""Gets the region of this RecordInfoResult.
 
         租户所在region
 
@@ -938,7 +938,7 @@ class RecordInfoResult:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this RecordInfoResult.
+        r"""Sets the region of this RecordInfoResult.
 
         租户所在region
 
@@ -949,7 +949,7 @@ class RecordInfoResult:
 
     @property
     def err_msg(self):
-        """Gets the err_msg of this RecordInfoResult.
+        r"""Gets the err_msg of this RecordInfoResult.
 
         错误信息
 
@@ -960,7 +960,7 @@ class RecordInfoResult:
 
     @err_msg.setter
     def err_msg(self, err_msg):
-        """Sets the err_msg of this RecordInfoResult.
+        r"""Sets the err_msg of this RecordInfoResult.
 
         错误信息
 
@@ -971,7 +971,7 @@ class RecordInfoResult:
 
     @property
     def build_config_type(self):
-        """Gets the build_config_type of this RecordInfoResult.
+        r"""Gets the build_config_type of this RecordInfoResult.
 
         构建配置类型，YAML或ACTION
 
@@ -982,7 +982,7 @@ class RecordInfoResult:
 
     @build_config_type.setter
     def build_config_type(self, build_config_type):
-        """Sets the build_config_type of this RecordInfoResult.
+        r"""Sets the build_config_type of this RecordInfoResult.
 
         构建配置类型，YAML或ACTION
 

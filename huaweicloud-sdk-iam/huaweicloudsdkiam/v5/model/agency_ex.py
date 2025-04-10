@@ -45,7 +45,7 @@ class AgencyEx:
     }
 
     def __init__(self, urn=None, trust_policy=None, created_at=None, description=None, max_session_duration=None, path=None, agency_id=None, agency_name=None, trust_domain_id=None, trust_domain_name=None, tags=None):
-        """AgencyEx
+        r"""AgencyEx
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class AgencyEx:
 
     @property
     def urn(self):
-        """Gets the urn of this AgencyEx.
+        r"""Gets the urn of this AgencyEx.
 
         统一资源名称。
 
@@ -117,7 +117,7 @@ class AgencyEx:
 
     @urn.setter
     def urn(self, urn):
-        """Sets the urn of this AgencyEx.
+        r"""Sets the urn of this AgencyEx.
 
         统一资源名称。
 
@@ -128,7 +128,7 @@ class AgencyEx:
 
     @property
     def trust_policy(self):
-        """Gets the trust_policy of this AgencyEx.
+        r"""Gets the trust_policy of this AgencyEx.
 
         信任委托信任策略的策略文档的json格式。下面的字符`= < > ( ) |`是语法中的特殊字符，不包含在信任策略中。  问号`?`表示元素是可选的。例如`sid_block?`。  竖线`|`表示可选项，括号定义了可选项的范围。例如`(\"Allow\" | \"Deny\")`。  当一个元素允许多个值时，使用重复值、`,`以及`...`表示。例如`[ <policy_statement>, <policy_statement>, ... ]`。  下面的递归文法描述了信任策略的语法： ``` policy = {   <version_block>,   <statement_block> }  <version_block> = \"Version\" : (\"5.0\")  <statement_block> = \"Statement\" : [ <policy_statement>, <policy_statement>, ... ]  <policy_statement> = {   <sid_block?>,   <principal_block>,   <effect_block>,   <action_block>,   <resource_block?>,   <condition_block?> }  <sid_block> = \"Sid\" : <sid_string>  <principal_block> = (\"Principal\" | \"NotPrincipal\") : <principal_map>  <principal_map> = { <principal_map_entry>, <principal_map_entry>, ... }  <principal_map_entry> = (\"IAM\" | \"Service\") : [ <principal_id_string>, <principal_id_string>, ... ]  <effect_block> = \"Effect\" : (\"Allow\" | \"Deny\")  <action_block> = (\"Action\" | \"NotAction\") : [ <action_string>, <action_string>, ... ]  <resource_block> = (\"Resource\" | \"NotResource\") : [ <resource_string>, <resource_string>, ... ]  <condition_block> = \"Condition\" : { <condition_map> }  <condition_map> = {   <condition_type_string> : { <condition_key_string> : <condition_value_list> },   <condition_type_string> : { <condition_key_string> : <condition_value_list> },   ... }  <condition_value_list> = ( <condition_value> | [ <condition_value>, <condition_value>, ... ] )  <condition_value> = \"string\" ``` 
 
@@ -139,7 +139,7 @@ class AgencyEx:
 
     @trust_policy.setter
     def trust_policy(self, trust_policy):
-        """Sets the trust_policy of this AgencyEx.
+        r"""Sets the trust_policy of this AgencyEx.
 
         信任委托信任策略的策略文档的json格式。下面的字符`= < > ( ) |`是语法中的特殊字符，不包含在信任策略中。  问号`?`表示元素是可选的。例如`sid_block?`。  竖线`|`表示可选项，括号定义了可选项的范围。例如`(\"Allow\" | \"Deny\")`。  当一个元素允许多个值时，使用重复值、`,`以及`...`表示。例如`[ <policy_statement>, <policy_statement>, ... ]`。  下面的递归文法描述了信任策略的语法： ``` policy = {   <version_block>,   <statement_block> }  <version_block> = \"Version\" : (\"5.0\")  <statement_block> = \"Statement\" : [ <policy_statement>, <policy_statement>, ... ]  <policy_statement> = {   <sid_block?>,   <principal_block>,   <effect_block>,   <action_block>,   <resource_block?>,   <condition_block?> }  <sid_block> = \"Sid\" : <sid_string>  <principal_block> = (\"Principal\" | \"NotPrincipal\") : <principal_map>  <principal_map> = { <principal_map_entry>, <principal_map_entry>, ... }  <principal_map_entry> = (\"IAM\" | \"Service\") : [ <principal_id_string>, <principal_id_string>, ... ]  <effect_block> = \"Effect\" : (\"Allow\" | \"Deny\")  <action_block> = (\"Action\" | \"NotAction\") : [ <action_string>, <action_string>, ... ]  <resource_block> = (\"Resource\" | \"NotResource\") : [ <resource_string>, <resource_string>, ... ]  <condition_block> = \"Condition\" : { <condition_map> }  <condition_map> = {   <condition_type_string> : { <condition_key_string> : <condition_value_list> },   <condition_type_string> : { <condition_key_string> : <condition_value_list> },   ... }  <condition_value_list> = ( <condition_value> | [ <condition_value>, <condition_value>, ... ] )  <condition_value> = \"string\" ``` 
 
@@ -150,7 +150,7 @@ class AgencyEx:
 
     @property
     def created_at(self):
-        """Gets the created_at of this AgencyEx.
+        r"""Gets the created_at of this AgencyEx.
 
         委托或信任委托创建时间。
 
@@ -161,7 +161,7 @@ class AgencyEx:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this AgencyEx.
+        r"""Sets the created_at of this AgencyEx.
 
         委托或信任委托创建时间。
 
@@ -172,7 +172,7 @@ class AgencyEx:
 
     @property
     def description(self):
-        """Gets the description of this AgencyEx.
+        r"""Gets the description of this AgencyEx.
 
         委托或信任委托描述信息。
 
@@ -183,7 +183,7 @@ class AgencyEx:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AgencyEx.
+        r"""Sets the description of this AgencyEx.
 
         委托或信任委托描述信息。
 
@@ -194,7 +194,7 @@ class AgencyEx:
 
     @property
     def max_session_duration(self):
-        """Gets the max_session_duration of this AgencyEx.
+        r"""Gets the max_session_duration of this AgencyEx.
 
         委托或信任委托最大会话时长，默认为3600秒。
 
@@ -205,7 +205,7 @@ class AgencyEx:
 
     @max_session_duration.setter
     def max_session_duration(self, max_session_duration):
-        """Sets the max_session_duration of this AgencyEx.
+        r"""Sets the max_session_duration of this AgencyEx.
 
         委托或信任委托最大会话时长，默认为3600秒。
 
@@ -216,7 +216,7 @@ class AgencyEx:
 
     @property
     def path(self):
-        """Gets the path of this AgencyEx.
+        r"""Gets the path of this AgencyEx.
 
         资源路径，默认为空串。由若干段字符串拼接而成，每段先包含一个或多个字母、数字、\".\"、\",\"、\"+\"、\"@\"、\"=\"、\"_\"或\"-\"，并以\"/\"结尾，例如\"foo/bar/\"。
 
@@ -227,7 +227,7 @@ class AgencyEx:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this AgencyEx.
+        r"""Sets the path of this AgencyEx.
 
         资源路径，默认为空串。由若干段字符串拼接而成，每段先包含一个或多个字母、数字、\".\"、\",\"、\"+\"、\"@\"、\"=\"、\"_\"或\"-\"，并以\"/\"结尾，例如\"foo/bar/\"。
 
@@ -238,7 +238,7 @@ class AgencyEx:
 
     @property
     def agency_id(self):
-        """Gets the agency_id of this AgencyEx.
+        r"""Gets the agency_id of this AgencyEx.
 
         委托或信任委托ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -249,7 +249,7 @@ class AgencyEx:
 
     @agency_id.setter
     def agency_id(self, agency_id):
-        """Sets the agency_id of this AgencyEx.
+        r"""Sets the agency_id of this AgencyEx.
 
         委托或信任委托ID，长度为1到64个字符，只包含字母、数字和\"-\"的字符串。
 
@@ -260,7 +260,7 @@ class AgencyEx:
 
     @property
     def agency_name(self):
-        """Gets the agency_name of this AgencyEx.
+        r"""Gets the agency_name of this AgencyEx.
 
         委托或信任委托名称，长度为1到64个字符，只包含字母、数字、\"_\"、\"+\"、\"=\"、\",\"、\".\"、\"@\"和\"-\"的字符串。
 
@@ -271,7 +271,7 @@ class AgencyEx:
 
     @agency_name.setter
     def agency_name(self, agency_name):
-        """Sets the agency_name of this AgencyEx.
+        r"""Sets the agency_name of this AgencyEx.
 
         委托或信任委托名称，长度为1到64个字符，只包含字母、数字、\"_\"、\"+\"、\"=\"、\",\"、\".\"、\"@\"和\"-\"的字符串。
 
@@ -282,7 +282,7 @@ class AgencyEx:
 
     @property
     def trust_domain_id(self):
-        """Gets the trust_domain_id of this AgencyEx.
+        r"""Gets the trust_domain_id of this AgencyEx.
 
         被委托方账号ID，仅存在于委托中，不存在于信任委托中。
 
@@ -293,7 +293,7 @@ class AgencyEx:
 
     @trust_domain_id.setter
     def trust_domain_id(self, trust_domain_id):
-        """Sets the trust_domain_id of this AgencyEx.
+        r"""Sets the trust_domain_id of this AgencyEx.
 
         被委托方账号ID，仅存在于委托中，不存在于信任委托中。
 
@@ -304,7 +304,7 @@ class AgencyEx:
 
     @property
     def trust_domain_name(self):
-        """Gets the trust_domain_name of this AgencyEx.
+        r"""Gets the trust_domain_name of this AgencyEx.
 
         被委托方账号名，仅存在于委托中，不存在于信任委托中。
 
@@ -315,7 +315,7 @@ class AgencyEx:
 
     @trust_domain_name.setter
     def trust_domain_name(self, trust_domain_name):
-        """Sets the trust_domain_name of this AgencyEx.
+        r"""Sets the trust_domain_name of this AgencyEx.
 
         被委托方账号名，仅存在于委托中，不存在于信任委托中。
 
@@ -326,7 +326,7 @@ class AgencyEx:
 
     @property
     def tags(self):
-        """Gets the tags of this AgencyEx.
+        r"""Gets the tags of this AgencyEx.
 
         自定义标签列表。
 
@@ -337,7 +337,7 @@ class AgencyEx:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this AgencyEx.
+        r"""Sets the tags of this AgencyEx.
 
         自定义标签列表。
 

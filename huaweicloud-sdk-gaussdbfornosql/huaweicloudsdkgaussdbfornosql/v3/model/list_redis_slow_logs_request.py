@@ -27,7 +27,7 @@ class ListRedisSlowLogsRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """ListRedisSlowLogsRequest
+        r"""ListRedisSlowLogsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListRedisSlowLogsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListRedisSlowLogsRequest.
+        r"""Gets the instance_id of this ListRedisSlowLogsRequest.
 
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
@@ -60,7 +60,7 @@ class ListRedisSlowLogsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListRedisSlowLogsRequest.
+        r"""Sets the instance_id of this ListRedisSlowLogsRequest.
 
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
@@ -71,7 +71,7 @@ class ListRedisSlowLogsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListRedisSlowLogsRequest.
+        r"""Gets the body of this ListRedisSlowLogsRequest.
 
         :return: The body of this ListRedisSlowLogsRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListRedisSlowLogsRequestBody`
@@ -80,7 +80,7 @@ class ListRedisSlowLogsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListRedisSlowLogsRequest.
+        r"""Sets the body of this ListRedisSlowLogsRequest.
 
         :param body: The body of this ListRedisSlowLogsRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.ListRedisSlowLogsRequestBody`

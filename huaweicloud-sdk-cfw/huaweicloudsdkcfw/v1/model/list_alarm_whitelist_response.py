@@ -26,7 +26,7 @@ class ListAlarmWhitelistResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ListAlarmWhitelistResponse
+        r"""ListAlarmWhitelistResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListAlarmWhitelistResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListAlarmWhitelistResponse.
+        r"""Gets the data of this ListAlarmWhitelistResponse.
 
         :return: The data of this ListAlarmWhitelistResponse.
         :rtype: :class:`huaweicloudsdkcfw.v1.PageInfo`
@@ -53,7 +53,7 @@ class ListAlarmWhitelistResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListAlarmWhitelistResponse.
+        r"""Sets the data of this ListAlarmWhitelistResponse.
 
         :param data: The data of this ListAlarmWhitelistResponse.
         :type data: :class:`huaweicloudsdkcfw.v1.PageInfo`

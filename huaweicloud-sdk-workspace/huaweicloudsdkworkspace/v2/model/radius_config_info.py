@@ -47,7 +47,7 @@ class RadiusConfigInfo:
     }
 
     def __init__(self, radius_configs=None, radius_secret=None, radius_timeout=None, radius_attempt_time=None, domain_in_user_prefix=None, radius_auth_type=None, enable=None, auth_protocol=None, verification_code_display_enable=None, verification_code_conditions=None, obtain_code_attributes=None, check_code_attributes=None):
-        """RadiusConfigInfo
+        r"""RadiusConfigInfo
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class RadiusConfigInfo:
 
     @property
     def radius_configs(self):
-        """Gets the radius_configs of this RadiusConfigInfo.
+        r"""Gets the radius_configs of this RadiusConfigInfo.
 
         Radius主机信息
 
@@ -131,7 +131,7 @@ class RadiusConfigInfo:
 
     @radius_configs.setter
     def radius_configs(self, radius_configs):
-        """Sets the radius_configs of this RadiusConfigInfo.
+        r"""Sets the radius_configs of this RadiusConfigInfo.
 
         Radius主机信息
 
@@ -142,7 +142,7 @@ class RadiusConfigInfo:
 
     @property
     def radius_secret(self):
-        """Gets the radius_secret of this RadiusConfigInfo.
+        r"""Gets the radius_secret of this RadiusConfigInfo.
 
         Radius密码
 
@@ -153,7 +153,7 @@ class RadiusConfigInfo:
 
     @radius_secret.setter
     def radius_secret(self, radius_secret):
-        """Sets the radius_secret of this RadiusConfigInfo.
+        r"""Sets the radius_secret of this RadiusConfigInfo.
 
         Radius密码
 
@@ -164,7 +164,7 @@ class RadiusConfigInfo:
 
     @property
     def radius_timeout(self):
-        """Gets the radius_timeout of this RadiusConfigInfo.
+        r"""Gets the radius_timeout of this RadiusConfigInfo.
 
         超时
 
@@ -175,7 +175,7 @@ class RadiusConfigInfo:
 
     @radius_timeout.setter
     def radius_timeout(self, radius_timeout):
-        """Sets the radius_timeout of this RadiusConfigInfo.
+        r"""Sets the radius_timeout of this RadiusConfigInfo.
 
         超时
 
@@ -186,7 +186,7 @@ class RadiusConfigInfo:
 
     @property
     def radius_attempt_time(self):
-        """Gets the radius_attempt_time of this RadiusConfigInfo.
+        r"""Gets the radius_attempt_time of this RadiusConfigInfo.
 
         尝试次数
 
@@ -197,7 +197,7 @@ class RadiusConfigInfo:
 
     @radius_attempt_time.setter
     def radius_attempt_time(self, radius_attempt_time):
-        """Sets the radius_attempt_time of this RadiusConfigInfo.
+        r"""Sets the radius_attempt_time of this RadiusConfigInfo.
 
         尝试次数
 
@@ -208,7 +208,7 @@ class RadiusConfigInfo:
 
     @property
     def domain_in_user_prefix(self):
-        """Gets the domain_in_user_prefix of this RadiusConfigInfo.
+        r"""Gets the domain_in_user_prefix of this RadiusConfigInfo.
 
         用户前缀中的域，0代表禁用，1代表开启域前缀，2代表开启域后缀，默认值为0。
 
@@ -219,7 +219,7 @@ class RadiusConfigInfo:
 
     @domain_in_user_prefix.setter
     def domain_in_user_prefix(self, domain_in_user_prefix):
-        """Sets the domain_in_user_prefix of this RadiusConfigInfo.
+        r"""Sets the domain_in_user_prefix of this RadiusConfigInfo.
 
         用户前缀中的域，0代表禁用，1代表开启域前缀，2代表开启域后缀，默认值为0。
 
@@ -230,7 +230,7 @@ class RadiusConfigInfo:
 
     @property
     def radius_auth_type(self):
-        """Gets the radius_auth_type of this RadiusConfigInfo.
+        r"""Gets the radius_auth_type of this RadiusConfigInfo.
 
         认证类型，STATIC代表静态密码，DYNAMIC代表动态口令。
 
@@ -241,7 +241,7 @@ class RadiusConfigInfo:
 
     @radius_auth_type.setter
     def radius_auth_type(self, radius_auth_type):
-        """Sets the radius_auth_type of this RadiusConfigInfo.
+        r"""Sets the radius_auth_type of this RadiusConfigInfo.
 
         认证类型，STATIC代表静态密码，DYNAMIC代表动态口令。
 
@@ -252,7 +252,7 @@ class RadiusConfigInfo:
 
     @property
     def enable(self):
-        """Gets the enable of this RadiusConfigInfo.
+        r"""Gets the enable of this RadiusConfigInfo.
 
         是否启用
 
@@ -263,7 +263,7 @@ class RadiusConfigInfo:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this RadiusConfigInfo.
+        r"""Sets the enable of this RadiusConfigInfo.
 
         是否启用
 
@@ -274,7 +274,7 @@ class RadiusConfigInfo:
 
     @property
     def auth_protocol(self):
-        """Gets the auth_protocol of this RadiusConfigInfo.
+        r"""Gets the auth_protocol of this RadiusConfigInfo.
 
         认证协议，pap或chap，选择短信验证码时才可用。
 
@@ -285,7 +285,7 @@ class RadiusConfigInfo:
 
     @auth_protocol.setter
     def auth_protocol(self, auth_protocol):
-        """Sets the auth_protocol of this RadiusConfigInfo.
+        r"""Sets the auth_protocol of this RadiusConfigInfo.
 
         认证协议，pap或chap，选择短信验证码时才可用。
 
@@ -296,7 +296,7 @@ class RadiusConfigInfo:
 
     @property
     def verification_code_display_enable(self):
-        """Gets the verification_code_display_enable of this RadiusConfigInfo.
+        r"""Gets the verification_code_display_enable of this RadiusConfigInfo.
 
         验证码开关，默认开启
 
@@ -307,7 +307,7 @@ class RadiusConfigInfo:
 
     @verification_code_display_enable.setter
     def verification_code_display_enable(self, verification_code_display_enable):
-        """Sets the verification_code_display_enable of this RadiusConfigInfo.
+        r"""Sets the verification_code_display_enable of this RadiusConfigInfo.
 
         验证码开关，默认开启
 
@@ -318,7 +318,7 @@ class RadiusConfigInfo:
 
     @property
     def verification_code_conditions(self):
-        """Gets the verification_code_conditions of this RadiusConfigInfo.
+        r"""Gets the verification_code_conditions of this RadiusConfigInfo.
 
         验证码失败次数
 
@@ -329,7 +329,7 @@ class RadiusConfigInfo:
 
     @verification_code_conditions.setter
     def verification_code_conditions(self, verification_code_conditions):
-        """Sets the verification_code_conditions of this RadiusConfigInfo.
+        r"""Sets the verification_code_conditions of this RadiusConfigInfo.
 
         验证码失败次数
 
@@ -340,7 +340,7 @@ class RadiusConfigInfo:
 
     @property
     def obtain_code_attributes(self):
-        """Gets the obtain_code_attributes of this RadiusConfigInfo.
+        r"""Gets the obtain_code_attributes of this RadiusConfigInfo.
 
         过滤短信拓展字段
 
@@ -351,7 +351,7 @@ class RadiusConfigInfo:
 
     @obtain_code_attributes.setter
     def obtain_code_attributes(self, obtain_code_attributes):
-        """Sets the obtain_code_attributes of this RadiusConfigInfo.
+        r"""Sets the obtain_code_attributes of this RadiusConfigInfo.
 
         过滤短信拓展字段
 
@@ -362,7 +362,7 @@ class RadiusConfigInfo:
 
     @property
     def check_code_attributes(self):
-        """Gets the check_code_attributes of this RadiusConfigInfo.
+        r"""Gets the check_code_attributes of this RadiusConfigInfo.
 
         过滤短信拓展字段
 
@@ -373,7 +373,7 @@ class RadiusConfigInfo:
 
     @check_code_attributes.setter
     def check_code_attributes(self, check_code_attributes):
-        """Sets the check_code_attributes of this RadiusConfigInfo.
+        r"""Sets the check_code_attributes of this RadiusConfigInfo.
 
         过滤短信拓展字段
 

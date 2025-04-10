@@ -27,7 +27,7 @@ class ModifySecurityAdminRequest:
     }
 
     def __init__(self, workspace=None, body=None):
-        """ModifySecurityAdminRequest
+        r"""ModifySecurityAdminRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ModifySecurityAdminRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ModifySecurityAdminRequest.
+        r"""Gets the workspace of this ModifySecurityAdminRequest.
 
         DataArts Studio工作空间ID
 
@@ -60,7 +60,7 @@ class ModifySecurityAdminRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ModifySecurityAdminRequest.
+        r"""Sets the workspace of this ModifySecurityAdminRequest.
 
         DataArts Studio工作空间ID
 
@@ -71,7 +71,7 @@ class ModifySecurityAdminRequest:
 
     @property
     def body(self):
-        """Gets the body of this ModifySecurityAdminRequest.
+        r"""Gets the body of this ModifySecurityAdminRequest.
 
         :return: The body of this ModifySecurityAdminRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DlsAdmin`
@@ -80,7 +80,7 @@ class ModifySecurityAdminRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ModifySecurityAdminRequest.
+        r"""Sets the body of this ModifySecurityAdminRequest.
 
         :param body: The body of this ModifySecurityAdminRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.DlsAdmin`

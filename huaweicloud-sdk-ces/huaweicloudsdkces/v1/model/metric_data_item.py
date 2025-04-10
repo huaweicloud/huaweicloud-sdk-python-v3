@@ -35,7 +35,7 @@ class MetricDataItem:
     }
 
     def __init__(self, metric=None, ttl=None, collect_time=None, value=None, unit=None, type=None):
-        """MetricDataItem
+        r"""MetricDataItem
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class MetricDataItem:
 
     @property
     def metric(self):
-        """Gets the metric of this MetricDataItem.
+        r"""Gets the metric of this MetricDataItem.
 
         :return: The metric of this MetricDataItem.
         :rtype: :class:`huaweicloudsdkces.v1.MetricInfo`
@@ -83,7 +83,7 @@ class MetricDataItem:
 
     @metric.setter
     def metric(self, metric):
-        """Sets the metric of this MetricDataItem.
+        r"""Sets the metric of this MetricDataItem.
 
         :param metric: The metric of this MetricDataItem.
         :type metric: :class:`huaweicloudsdkces.v1.MetricInfo`
@@ -92,7 +92,7 @@ class MetricDataItem:
 
     @property
     def ttl(self):
-        """Gets the ttl of this MetricDataItem.
+        r"""Gets the ttl of this MetricDataItem.
 
         数据的有效期，超出该有效期则自动删除该数据，单位秒，最大值604800。
 
@@ -103,7 +103,7 @@ class MetricDataItem:
 
     @ttl.setter
     def ttl(self, ttl):
-        """Sets the ttl of this MetricDataItem.
+        r"""Sets the ttl of this MetricDataItem.
 
         数据的有效期，超出该有效期则自动删除该数据，单位秒，最大值604800。
 
@@ -114,7 +114,7 @@ class MetricDataItem:
 
     @property
     def collect_time(self):
-        """Gets the collect_time of this MetricDataItem.
+        r"""Gets the collect_time of this MetricDataItem.
 
         数据收集时间  UNIX时间戳，单位毫秒。  说明： 因为客户端到服务器端有延时，因此插入数据的时间戳应该在[当前时间-3天+20秒，当前时间+10分钟-20秒]区间内，保证到达服务器时不会因为传输时延造成数据不能插入数据库。
 
@@ -125,7 +125,7 @@ class MetricDataItem:
 
     @collect_time.setter
     def collect_time(self, collect_time):
-        """Sets the collect_time of this MetricDataItem.
+        r"""Sets the collect_time of this MetricDataItem.
 
         数据收集时间  UNIX时间戳，单位毫秒。  说明： 因为客户端到服务器端有延时，因此插入数据的时间戳应该在[当前时间-3天+20秒，当前时间+10分钟-20秒]区间内，保证到达服务器时不会因为传输时延造成数据不能插入数据库。
 
@@ -136,7 +136,7 @@ class MetricDataItem:
 
     @property
     def value(self):
-        """Gets the value of this MetricDataItem.
+        r"""Gets the value of this MetricDataItem.
 
         指标数据的值。
 
@@ -147,7 +147,7 @@ class MetricDataItem:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this MetricDataItem.
+        r"""Sets the value of this MetricDataItem.
 
         指标数据的值。
 
@@ -158,7 +158,7 @@ class MetricDataItem:
 
     @property
     def unit(self):
-        """Gets the unit of this MetricDataItem.
+        r"""Gets the unit of this MetricDataItem.
 
         数据的单位。
 
@@ -169,7 +169,7 @@ class MetricDataItem:
 
     @unit.setter
     def unit(self, unit):
-        """Sets the unit of this MetricDataItem.
+        r"""Sets the unit of this MetricDataItem.
 
         数据的单位。
 
@@ -180,7 +180,7 @@ class MetricDataItem:
 
     @property
     def type(self):
-        """Gets the type of this MetricDataItem.
+        r"""Gets the type of this MetricDataItem.
 
         数据的类型，只能是\"int\"或\"float\"
 
@@ -191,7 +191,7 @@ class MetricDataItem:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this MetricDataItem.
+        r"""Sets the type of this MetricDataItem.
 
         数据的类型，只能是\"int\"或\"float\"
 

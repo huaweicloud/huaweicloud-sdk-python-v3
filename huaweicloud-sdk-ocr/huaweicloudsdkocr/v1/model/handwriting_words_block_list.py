@@ -31,7 +31,7 @@ class HandwritingWordsBlockList:
     }
 
     def __init__(self, words=None, type=None, confidence=None, location=None):
-        """HandwritingWordsBlockList
+        r"""HandwritingWordsBlockList
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class HandwritingWordsBlockList:
 
     @property
     def words(self):
-        """Gets the words of this HandwritingWordsBlockList.
+        r"""Gets the words of this HandwritingWordsBlockList.
 
         文字块识别结果。 
 
@@ -75,7 +75,7 @@ class HandwritingWordsBlockList:
 
     @words.setter
     def words(self, words):
-        """Sets the words of this HandwritingWordsBlockList.
+        r"""Sets the words of this HandwritingWordsBlockList.
 
         文字块识别结果。 
 
@@ -86,7 +86,7 @@ class HandwritingWordsBlockList:
 
     @property
     def type(self):
-        """Gets the type of this HandwritingWordsBlockList.
+        r"""Gets the type of this HandwritingWordsBlockList.
 
         说明该识别结果所属类型，例如：handwriting。 
 
@@ -97,7 +97,7 @@ class HandwritingWordsBlockList:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this HandwritingWordsBlockList.
+        r"""Sets the type of this HandwritingWordsBlockList.
 
         说明该识别结果所属类型，例如：handwriting。 
 
@@ -108,7 +108,7 @@ class HandwritingWordsBlockList:
 
     @property
     def confidence(self):
-        """Gets the confidence of this HandwritingWordsBlockList.
+        r"""Gets the confidence of this HandwritingWordsBlockList.
 
         文字块words的置信度。 
 
@@ -119,7 +119,7 @@ class HandwritingWordsBlockList:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this HandwritingWordsBlockList.
+        r"""Sets the confidence of this HandwritingWordsBlockList.
 
         文字块words的置信度。 
 
@@ -130,7 +130,7 @@ class HandwritingWordsBlockList:
 
     @property
     def location(self):
-        """Gets the location of this HandwritingWordsBlockList.
+        r"""Gets the location of this HandwritingWordsBlockList.
 
         文字块words的区域位置信息，列表形式，分别表示文字块顶点的x, y坐标;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -141,7 +141,7 @@ class HandwritingWordsBlockList:
 
     @location.setter
     def location(self, location):
-        """Sets the location of this HandwritingWordsBlockList.
+        r"""Sets the location of this HandwritingWordsBlockList.
 
         文字块words的区域位置信息，列表形式，分别表示文字块顶点的x, y坐标;坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 

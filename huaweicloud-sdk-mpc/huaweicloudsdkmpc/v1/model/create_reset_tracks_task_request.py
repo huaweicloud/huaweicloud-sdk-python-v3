@@ -25,7 +25,7 @@ class CreateResetTracksTaskRequest:
     }
 
     def __init__(self, body=None):
-        """CreateResetTracksTaskRequest
+        r"""CreateResetTracksTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateResetTracksTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateResetTracksTaskRequest.
+        r"""Gets the body of this CreateResetTracksTaskRequest.
 
         :return: The body of this CreateResetTracksTaskRequest.
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateResetTracksReq`
@@ -52,7 +52,7 @@ class CreateResetTracksTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateResetTracksTaskRequest.
+        r"""Sets the body of this CreateResetTracksTaskRequest.
 
         :param body: The body of this CreateResetTracksTaskRequest.
         :type body: :class:`huaweicloudsdkmpc.v1.CreateResetTracksReq`

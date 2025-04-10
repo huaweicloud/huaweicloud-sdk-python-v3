@@ -27,7 +27,7 @@ class CreateRestoreTableInfo:
     }
 
     def __init__(self, old_name=None, new_name=None):
-        """CreateRestoreTableInfo
+        r"""CreateRestoreTableInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateRestoreTableInfo:
 
     @property
     def old_name(self):
-        """Gets the old_name of this CreateRestoreTableInfo.
+        r"""Gets the old_name of this CreateRestoreTableInfo.
 
         恢复前表名。
 
@@ -59,7 +59,7 @@ class CreateRestoreTableInfo:
 
     @old_name.setter
     def old_name(self, old_name):
-        """Sets the old_name of this CreateRestoreTableInfo.
+        r"""Sets the old_name of this CreateRestoreTableInfo.
 
         恢复前表名。
 
@@ -70,7 +70,7 @@ class CreateRestoreTableInfo:
 
     @property
     def new_name(self):
-        """Gets the new_name of this CreateRestoreTableInfo.
+        r"""Gets the new_name of this CreateRestoreTableInfo.
 
         恢复后表名。
 
@@ -81,7 +81,7 @@ class CreateRestoreTableInfo:
 
     @new_name.setter
     def new_name(self, new_name):
-        """Sets the new_name of this CreateRestoreTableInfo.
+        r"""Sets the new_name of this CreateRestoreTableInfo.
 
         恢复后表名。
 

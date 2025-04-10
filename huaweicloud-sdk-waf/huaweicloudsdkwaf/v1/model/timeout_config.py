@@ -29,7 +29,7 @@ class TimeoutConfig:
     }
 
     def __init__(self, connect_timeout=None, send_timeout=None, read_timeout=None):
-        """TimeoutConfig
+        r"""TimeoutConfig
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class TimeoutConfig:
 
     @property
     def connect_timeout(self):
-        """Gets the connect_timeout of this TimeoutConfig.
+        r"""Gets the connect_timeout of this TimeoutConfig.
 
         WAF连接源站超时配置
 
@@ -68,7 +68,7 @@ class TimeoutConfig:
 
     @connect_timeout.setter
     def connect_timeout(self, connect_timeout):
-        """Sets the connect_timeout of this TimeoutConfig.
+        r"""Sets the connect_timeout of this TimeoutConfig.
 
         WAF连接源站超时配置
 
@@ -79,7 +79,7 @@ class TimeoutConfig:
 
     @property
     def send_timeout(self):
-        """Gets the send_timeout of this TimeoutConfig.
+        r"""Gets the send_timeout of this TimeoutConfig.
 
         WAF发送请求到源站超时配置
 
@@ -90,7 +90,7 @@ class TimeoutConfig:
 
     @send_timeout.setter
     def send_timeout(self, send_timeout):
-        """Sets the send_timeout of this TimeoutConfig.
+        r"""Sets the send_timeout of this TimeoutConfig.
 
         WAF发送请求到源站超时配置
 
@@ -101,7 +101,7 @@ class TimeoutConfig:
 
     @property
     def read_timeout(self):
-        """Gets the read_timeout of this TimeoutConfig.
+        r"""Gets the read_timeout of this TimeoutConfig.
 
         WAF接收源站响应超时配置
 
@@ -112,7 +112,7 @@ class TimeoutConfig:
 
     @read_timeout.setter
     def read_timeout(self, read_timeout):
-        """Sets the read_timeout of this TimeoutConfig.
+        r"""Sets the read_timeout of this TimeoutConfig.
 
         WAF接收源站响应超时配置
 

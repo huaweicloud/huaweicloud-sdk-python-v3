@@ -28,7 +28,7 @@ class ListVgwsResponse(SdkResponse):
     }
 
     def __init__(self, vpn_gateways=None, request_id=None):
-        """ListVgwsResponse
+        r"""ListVgwsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListVgwsResponse(SdkResponse):
 
     @property
     def vpn_gateways(self):
-        """Gets the vpn_gateways of this ListVgwsResponse.
+        r"""Gets the vpn_gateways of this ListVgwsResponse.
 
         网关信息
 
@@ -62,7 +62,7 @@ class ListVgwsResponse(SdkResponse):
 
     @vpn_gateways.setter
     def vpn_gateways(self, vpn_gateways):
-        """Sets the vpn_gateways of this ListVgwsResponse.
+        r"""Sets the vpn_gateways of this ListVgwsResponse.
 
         网关信息
 
@@ -73,7 +73,7 @@ class ListVgwsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListVgwsResponse.
+        r"""Gets the request_id of this ListVgwsResponse.
 
         请求ID
 
@@ -84,7 +84,7 @@ class ListVgwsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListVgwsResponse.
+        r"""Sets the request_id of this ListVgwsResponse.
 
         请求ID
 

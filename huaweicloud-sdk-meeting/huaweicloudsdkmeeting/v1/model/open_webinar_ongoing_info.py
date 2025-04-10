@@ -59,7 +59,7 @@ class OpenWebinarOngoingInfo:
     }
 
     def __init__(self, online_attendee_count=None, conf_uuid=None, dept_name=None, conference_id=None, corp_id=None, subject=None, description=None, start_time=None, time_zone_id=None, scheduser_id=None, scheduser_name=None, vmr_pkg_name=None, chair_join_uri=None, chair_passwd=None, guest_join_uri=None, guest_passwd=None, audience_join_uri=None, audience_passwd=None):
-        """OpenWebinarOngoingInfo
+        r"""OpenWebinarOngoingInfo
 
         The model defined in huaweicloud sdk
 
@@ -162,7 +162,7 @@ class OpenWebinarOngoingInfo:
 
     @property
     def online_attendee_count(self):
-        """Gets the online_attendee_count of this OpenWebinarOngoingInfo.
+        r"""Gets the online_attendee_count of this OpenWebinarOngoingInfo.
 
         实时在线人数。
 
@@ -173,7 +173,7 @@ class OpenWebinarOngoingInfo:
 
     @online_attendee_count.setter
     def online_attendee_count(self, online_attendee_count):
-        """Sets the online_attendee_count of this OpenWebinarOngoingInfo.
+        r"""Sets the online_attendee_count of this OpenWebinarOngoingInfo.
 
         实时在线人数。
 
@@ -184,7 +184,7 @@ class OpenWebinarOngoingInfo:
 
     @property
     def conf_uuid(self):
-        """Gets the conf_uuid of this OpenWebinarOngoingInfo.
+        r"""Gets the conf_uuid of this OpenWebinarOngoingInfo.
 
         网络研讨会UUID。
 
@@ -195,7 +195,7 @@ class OpenWebinarOngoingInfo:
 
     @conf_uuid.setter
     def conf_uuid(self, conf_uuid):
-        """Sets the conf_uuid of this OpenWebinarOngoingInfo.
+        r"""Sets the conf_uuid of this OpenWebinarOngoingInfo.
 
         网络研讨会UUID。
 
@@ -206,7 +206,7 @@ class OpenWebinarOngoingInfo:
 
     @property
     def dept_name(self):
-        """Gets the dept_name of this OpenWebinarOngoingInfo.
+        r"""Gets the dept_name of this OpenWebinarOngoingInfo.
 
         预订人部门名称。
 
@@ -217,7 +217,7 @@ class OpenWebinarOngoingInfo:
 
     @dept_name.setter
     def dept_name(self, dept_name):
-        """Sets the dept_name of this OpenWebinarOngoingInfo.
+        r"""Sets the dept_name of this OpenWebinarOngoingInfo.
 
         预订人部门名称。
 
@@ -228,7 +228,7 @@ class OpenWebinarOngoingInfo:
 
     @property
     def conference_id(self):
-        """Gets the conference_id of this OpenWebinarOngoingInfo.
+        r"""Gets the conference_id of this OpenWebinarOngoingInfo.
 
         网络研讨会ID。
 
@@ -239,7 +239,7 @@ class OpenWebinarOngoingInfo:
 
     @conference_id.setter
     def conference_id(self, conference_id):
-        """Sets the conference_id of this OpenWebinarOngoingInfo.
+        r"""Sets the conference_id of this OpenWebinarOngoingInfo.
 
         网络研讨会ID。
 
@@ -250,7 +250,7 @@ class OpenWebinarOngoingInfo:
 
     @property
     def corp_id(self):
-        """Gets the corp_id of this OpenWebinarOngoingInfo.
+        r"""Gets the corp_id of this OpenWebinarOngoingInfo.
 
         企业ID。
 
@@ -261,7 +261,7 @@ class OpenWebinarOngoingInfo:
 
     @corp_id.setter
     def corp_id(self, corp_id):
-        """Sets the corp_id of this OpenWebinarOngoingInfo.
+        r"""Sets the corp_id of this OpenWebinarOngoingInfo.
 
         企业ID。
 
@@ -272,7 +272,7 @@ class OpenWebinarOngoingInfo:
 
     @property
     def subject(self):
-        """Gets the subject of this OpenWebinarOngoingInfo.
+        r"""Gets the subject of this OpenWebinarOngoingInfo.
 
         网络研讨会主题。
 
@@ -283,7 +283,7 @@ class OpenWebinarOngoingInfo:
 
     @subject.setter
     def subject(self, subject):
-        """Sets the subject of this OpenWebinarOngoingInfo.
+        r"""Sets the subject of this OpenWebinarOngoingInfo.
 
         网络研讨会主题。
 
@@ -294,7 +294,7 @@ class OpenWebinarOngoingInfo:
 
     @property
     def description(self):
-        """Gets the description of this OpenWebinarOngoingInfo.
+        r"""Gets the description of this OpenWebinarOngoingInfo.
 
         网络研讨会描述。
 
@@ -305,7 +305,7 @@ class OpenWebinarOngoingInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this OpenWebinarOngoingInfo.
+        r"""Sets the description of this OpenWebinarOngoingInfo.
 
         网络研讨会描述。
 
@@ -316,7 +316,7 @@ class OpenWebinarOngoingInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this OpenWebinarOngoingInfo.
+        r"""Gets the start_time of this OpenWebinarOngoingInfo.
 
         网络研讨会开始时间（UTC时间），格式“yyyy-MM-dd HH:mm”。
 
@@ -327,7 +327,7 @@ class OpenWebinarOngoingInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this OpenWebinarOngoingInfo.
+        r"""Sets the start_time of this OpenWebinarOngoingInfo.
 
         网络研讨会开始时间（UTC时间），格式“yyyy-MM-dd HH:mm”。
 
@@ -338,7 +338,7 @@ class OpenWebinarOngoingInfo:
 
     @property
     def time_zone_id(self):
-        """Gets the time_zone_id of this OpenWebinarOngoingInfo.
+        r"""Gets the time_zone_id of this OpenWebinarOngoingInfo.
 
         会议通知中会议时间的时区信息。时区信息，参考[[时区映射关系](https://support.huaweicloud.com/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hws)[[时区映射关系](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hk)。 > * 举例：“timeZoneID”:\"26\"，则通过华为云会议发送的会议通知中的时间将会标记为如“2021/11/11 星期四 00:00 - 02:00 (GMT) 格林威治标准时间:都柏林, 爱丁堡, 里斯本, 伦敦”。 
 
@@ -349,7 +349,7 @@ class OpenWebinarOngoingInfo:
 
     @time_zone_id.setter
     def time_zone_id(self, time_zone_id):
-        """Sets the time_zone_id of this OpenWebinarOngoingInfo.
+        r"""Sets the time_zone_id of this OpenWebinarOngoingInfo.
 
         会议通知中会议时间的时区信息。时区信息，参考[[时区映射关系](https://support.huaweicloud.com/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hws)[[时区映射关系](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0110.html#ZH-CN_TOPIC_0212714472__table137407441463)](tag:hk)。 > * 举例：“timeZoneID”:\"26\"，则通过华为云会议发送的会议通知中的时间将会标记为如“2021/11/11 星期四 00:00 - 02:00 (GMT) 格林威治标准时间:都柏林, 爱丁堡, 里斯本, 伦敦”。 
 
@@ -360,7 +360,7 @@ class OpenWebinarOngoingInfo:
 
     @property
     def scheduser_id(self):
-        """Gets the scheduser_id of this OpenWebinarOngoingInfo.
+        r"""Gets the scheduser_id of this OpenWebinarOngoingInfo.
 
         网络研讨会预订者的用户UUID。
 
@@ -371,7 +371,7 @@ class OpenWebinarOngoingInfo:
 
     @scheduser_id.setter
     def scheduser_id(self, scheduser_id):
-        """Sets the scheduser_id of this OpenWebinarOngoingInfo.
+        r"""Sets the scheduser_id of this OpenWebinarOngoingInfo.
 
         网络研讨会预订者的用户UUID。
 
@@ -382,7 +382,7 @@ class OpenWebinarOngoingInfo:
 
     @property
     def scheduser_name(self):
-        """Gets the scheduser_name of this OpenWebinarOngoingInfo.
+        r"""Gets the scheduser_name of this OpenWebinarOngoingInfo.
 
         预订者名称。
 
@@ -393,7 +393,7 @@ class OpenWebinarOngoingInfo:
 
     @scheduser_name.setter
     def scheduser_name(self, scheduser_name):
-        """Sets the scheduser_name of this OpenWebinarOngoingInfo.
+        r"""Sets the scheduser_name of this OpenWebinarOngoingInfo.
 
         预订者名称。
 
@@ -404,7 +404,7 @@ class OpenWebinarOngoingInfo:
 
     @property
     def vmr_pkg_name(self):
-        """Gets the vmr_pkg_name of this OpenWebinarOngoingInfo.
+        r"""Gets the vmr_pkg_name of this OpenWebinarOngoingInfo.
 
         网络研讨会VMR名称。
 
@@ -415,7 +415,7 @@ class OpenWebinarOngoingInfo:
 
     @vmr_pkg_name.setter
     def vmr_pkg_name(self, vmr_pkg_name):
-        """Sets the vmr_pkg_name of this OpenWebinarOngoingInfo.
+        r"""Sets the vmr_pkg_name of this OpenWebinarOngoingInfo.
 
         网络研讨会VMR名称。
 
@@ -426,7 +426,7 @@ class OpenWebinarOngoingInfo:
 
     @property
     def chair_join_uri(self):
-        """Gets the chair_join_uri of this OpenWebinarOngoingInfo.
+        r"""Gets the chair_join_uri of this OpenWebinarOngoingInfo.
 
         主持人入会地址。
 
@@ -437,7 +437,7 @@ class OpenWebinarOngoingInfo:
 
     @chair_join_uri.setter
     def chair_join_uri(self, chair_join_uri):
-        """Sets the chair_join_uri of this OpenWebinarOngoingInfo.
+        r"""Sets the chair_join_uri of this OpenWebinarOngoingInfo.
 
         主持人入会地址。
 
@@ -448,7 +448,7 @@ class OpenWebinarOngoingInfo:
 
     @property
     def chair_passwd(self):
-        """Gets the chair_passwd of this OpenWebinarOngoingInfo.
+        r"""Gets the chair_passwd of this OpenWebinarOngoingInfo.
 
         主持人密码。
 
@@ -459,7 +459,7 @@ class OpenWebinarOngoingInfo:
 
     @chair_passwd.setter
     def chair_passwd(self, chair_passwd):
-        """Sets the chair_passwd of this OpenWebinarOngoingInfo.
+        r"""Sets the chair_passwd of this OpenWebinarOngoingInfo.
 
         主持人密码。
 
@@ -470,7 +470,7 @@ class OpenWebinarOngoingInfo:
 
     @property
     def guest_join_uri(self):
-        """Gets the guest_join_uri of this OpenWebinarOngoingInfo.
+        r"""Gets the guest_join_uri of this OpenWebinarOngoingInfo.
 
         嘉宾入会地址。
 
@@ -481,7 +481,7 @@ class OpenWebinarOngoingInfo:
 
     @guest_join_uri.setter
     def guest_join_uri(self, guest_join_uri):
-        """Sets the guest_join_uri of this OpenWebinarOngoingInfo.
+        r"""Sets the guest_join_uri of this OpenWebinarOngoingInfo.
 
         嘉宾入会地址。
 
@@ -492,7 +492,7 @@ class OpenWebinarOngoingInfo:
 
     @property
     def guest_passwd(self):
-        """Gets the guest_passwd of this OpenWebinarOngoingInfo.
+        r"""Gets the guest_passwd of this OpenWebinarOngoingInfo.
 
         嘉宾密码。
 
@@ -503,7 +503,7 @@ class OpenWebinarOngoingInfo:
 
     @guest_passwd.setter
     def guest_passwd(self, guest_passwd):
-        """Sets the guest_passwd of this OpenWebinarOngoingInfo.
+        r"""Sets the guest_passwd of this OpenWebinarOngoingInfo.
 
         嘉宾密码。
 
@@ -514,7 +514,7 @@ class OpenWebinarOngoingInfo:
 
     @property
     def audience_join_uri(self):
-        """Gets the audience_join_uri of this OpenWebinarOngoingInfo.
+        r"""Gets the audience_join_uri of this OpenWebinarOngoingInfo.
 
         观众入会地址。
 
@@ -525,7 +525,7 @@ class OpenWebinarOngoingInfo:
 
     @audience_join_uri.setter
     def audience_join_uri(self, audience_join_uri):
-        """Sets the audience_join_uri of this OpenWebinarOngoingInfo.
+        r"""Sets the audience_join_uri of this OpenWebinarOngoingInfo.
 
         观众入会地址。
 
@@ -536,7 +536,7 @@ class OpenWebinarOngoingInfo:
 
     @property
     def audience_passwd(self):
-        """Gets the audience_passwd of this OpenWebinarOngoingInfo.
+        r"""Gets the audience_passwd of this OpenWebinarOngoingInfo.
 
         观众密码。
 
@@ -547,7 +547,7 @@ class OpenWebinarOngoingInfo:
 
     @audience_passwd.setter
     def audience_passwd(self, audience_passwd):
-        """Sets the audience_passwd of this OpenWebinarOngoingInfo.
+        r"""Sets the audience_passwd of this OpenWebinarOngoingInfo.
 
         观众密码。
 

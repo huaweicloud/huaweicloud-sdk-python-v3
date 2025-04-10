@@ -29,7 +29,7 @@ class ListAlarmRuleResourcesRequest:
     }
 
     def __init__(self, alarm_id=None, offset=None, limit=None):
-        """ListAlarmRuleResourcesRequest
+        r"""ListAlarmRuleResourcesRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListAlarmRuleResourcesRequest:
 
     @property
     def alarm_id(self):
-        """Gets the alarm_id of this ListAlarmRuleResourcesRequest.
+        r"""Gets the alarm_id of this ListAlarmRuleResourcesRequest.
 
         Alarm实例ID
 
@@ -67,7 +67,7 @@ class ListAlarmRuleResourcesRequest:
 
     @alarm_id.setter
     def alarm_id(self, alarm_id):
-        """Sets the alarm_id of this ListAlarmRuleResourcesRequest.
+        r"""Sets the alarm_id of this ListAlarmRuleResourcesRequest.
 
         Alarm实例ID
 
@@ -78,7 +78,7 @@ class ListAlarmRuleResourcesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAlarmRuleResourcesRequest.
+        r"""Gets the offset of this ListAlarmRuleResourcesRequest.
 
         分页偏移量
 
@@ -89,7 +89,7 @@ class ListAlarmRuleResourcesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAlarmRuleResourcesRequest.
+        r"""Sets the offset of this ListAlarmRuleResourcesRequest.
 
         分页偏移量
 
@@ -100,7 +100,7 @@ class ListAlarmRuleResourcesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAlarmRuleResourcesRequest.
+        r"""Gets the limit of this ListAlarmRuleResourcesRequest.
 
         分页大小
 
@@ -111,7 +111,7 @@ class ListAlarmRuleResourcesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAlarmRuleResourcesRequest.
+        r"""Sets the limit of this ListAlarmRuleResourcesRequest.
 
         分页大小
 

@@ -28,7 +28,7 @@ class ListPublishedTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, templates=None):
-        """ListPublishedTemplatesResponse
+        r"""ListPublishedTemplatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListPublishedTemplatesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListPublishedTemplatesResponse.
+        r"""Gets the count of this ListPublishedTemplatesResponse.
 
         返回模板的数量。
 
@@ -62,7 +62,7 @@ class ListPublishedTemplatesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListPublishedTemplatesResponse.
+        r"""Sets the count of this ListPublishedTemplatesResponse.
 
         返回模板的数量。
 
@@ -73,7 +73,7 @@ class ListPublishedTemplatesResponse(SdkResponse):
 
     @property
     def templates(self):
-        """Gets the templates of this ListPublishedTemplatesResponse.
+        r"""Gets the templates of this ListPublishedTemplatesResponse.
 
         返回模板的列表。
 
@@ -84,7 +84,7 @@ class ListPublishedTemplatesResponse(SdkResponse):
 
     @templates.setter
     def templates(self, templates):
-        """Sets the templates of this ListPublishedTemplatesResponse.
+        r"""Sets the templates of this ListPublishedTemplatesResponse.
 
         返回模板的列表。
 

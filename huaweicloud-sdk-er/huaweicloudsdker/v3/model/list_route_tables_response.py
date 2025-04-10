@@ -30,7 +30,7 @@ class ListRouteTablesResponse(SdkResponse):
     }
 
     def __init__(self, route_tables=None, request_id=None, page_info=None):
-        """ListRouteTablesResponse
+        r"""ListRouteTablesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListRouteTablesResponse(SdkResponse):
 
     @property
     def route_tables(self):
-        """Gets the route_tables of this ListRouteTablesResponse.
+        r"""Gets the route_tables of this ListRouteTablesResponse.
 
         路由表列表
 
@@ -69,7 +69,7 @@ class ListRouteTablesResponse(SdkResponse):
 
     @route_tables.setter
     def route_tables(self, route_tables):
-        """Sets the route_tables of this ListRouteTablesResponse.
+        r"""Sets the route_tables of this ListRouteTablesResponse.
 
         路由表列表
 
@@ -80,7 +80,7 @@ class ListRouteTablesResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListRouteTablesResponse.
+        r"""Gets the request_id of this ListRouteTablesResponse.
 
         请求ID
 
@@ -91,7 +91,7 @@ class ListRouteTablesResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListRouteTablesResponse.
+        r"""Sets the request_id of this ListRouteTablesResponse.
 
         请求ID
 
@@ -102,7 +102,7 @@ class ListRouteTablesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListRouteTablesResponse.
+        r"""Gets the page_info of this ListRouteTablesResponse.
 
         :return: The page_info of this ListRouteTablesResponse.
         :rtype: :class:`huaweicloudsdker.v3.PageInfo`
@@ -111,7 +111,7 @@ class ListRouteTablesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListRouteTablesResponse.
+        r"""Sets the page_info of this ListRouteTablesResponse.
 
         :param page_info: The page_info of this ListRouteTablesResponse.
         :type page_info: :class:`huaweicloudsdker.v3.PageInfo`

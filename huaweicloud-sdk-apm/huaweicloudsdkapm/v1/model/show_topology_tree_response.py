@@ -26,7 +26,7 @@ class ShowTopologyTreeResponse(SdkResponse):
     }
 
     def __init__(self, topology_tree=None):
-        """ShowTopologyTreeResponse
+        r"""ShowTopologyTreeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowTopologyTreeResponse(SdkResponse):
 
     @property
     def topology_tree(self):
-        """Gets the topology_tree of this ShowTopologyTreeResponse.
+        r"""Gets the topology_tree of this ShowTopologyTreeResponse.
 
         :return: The topology_tree of this ShowTopologyTreeResponse.
         :rtype: :class:`huaweicloudsdkapm.v1.TopologyTree`
@@ -53,7 +53,7 @@ class ShowTopologyTreeResponse(SdkResponse):
 
     @topology_tree.setter
     def topology_tree(self, topology_tree):
-        """Sets the topology_tree of this ShowTopologyTreeResponse.
+        r"""Sets the topology_tree of this ShowTopologyTreeResponse.
 
         :param topology_tree: The topology_tree of this ShowTopologyTreeResponse.
         :type topology_tree: :class:`huaweicloudsdkapm.v1.TopologyTree`

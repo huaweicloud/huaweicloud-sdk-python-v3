@@ -25,7 +25,7 @@ class LogReplayDatabaseReq:
     }
 
     def __init__(self, databases=None):
-        """LogReplayDatabaseReq
+        r"""LogReplayDatabaseReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class LogReplayDatabaseReq:
 
     @property
     def databases(self):
-        """Gets the databases of this LogReplayDatabaseReq.
+        r"""Gets the databases of this LogReplayDatabaseReq.
 
         需要恢复的库名列表
 
@@ -53,7 +53,7 @@ class LogReplayDatabaseReq:
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this LogReplayDatabaseReq.
+        r"""Sets the databases of this LogReplayDatabaseReq.
 
         需要恢复的库名列表
 

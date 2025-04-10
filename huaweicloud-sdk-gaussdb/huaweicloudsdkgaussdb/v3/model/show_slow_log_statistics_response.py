@@ -28,7 +28,7 @@ class ShowSlowLogStatisticsResponse(SdkResponse):
     }
 
     def __init__(self, slow_log_list=None, total_count=None):
-        """ShowSlowLogStatisticsResponse
+        r"""ShowSlowLogStatisticsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowSlowLogStatisticsResponse(SdkResponse):
 
     @property
     def slow_log_list(self):
-        """Gets the slow_log_list of this ShowSlowLogStatisticsResponse.
+        r"""Gets the slow_log_list of this ShowSlowLogStatisticsResponse.
 
         慢日志统计信息列表。
 
@@ -62,7 +62,7 @@ class ShowSlowLogStatisticsResponse(SdkResponse):
 
     @slow_log_list.setter
     def slow_log_list(self, slow_log_list):
-        """Sets the slow_log_list of this ShowSlowLogStatisticsResponse.
+        r"""Sets the slow_log_list of this ShowSlowLogStatisticsResponse.
 
         慢日志统计信息列表。
 
@@ -73,7 +73,7 @@ class ShowSlowLogStatisticsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ShowSlowLogStatisticsResponse.
+        r"""Gets the total_count of this ShowSlowLogStatisticsResponse.
 
         总条数。
 
@@ -84,7 +84,7 @@ class ShowSlowLogStatisticsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ShowSlowLogStatisticsResponse.
+        r"""Sets the total_count of this ShowSlowLogStatisticsResponse.
 
         总条数。
 

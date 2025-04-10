@@ -26,7 +26,7 @@ class ShowDDosStatusResponse(SdkResponse):
     }
 
     def __init__(self, status=None):
-        """ShowDDosStatusResponse
+        r"""ShowDDosStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowDDosStatusResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowDDosStatusResponse.
+        r"""Gets the status of this ShowDDosStatusResponse.
 
         防护状态，可选范围：   - normal：表示正常   - configging：表示设置中   - notConfig：表示未设置   - packetcleaning：表示清洗   - packetdropping：表示黑洞
 
@@ -55,7 +55,7 @@ class ShowDDosStatusResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowDDosStatusResponse.
+        r"""Sets the status of this ShowDDosStatusResponse.
 
         防护状态，可选范围：   - normal：表示正常   - configging：表示设置中   - notConfig：表示未设置   - packetcleaning：表示清洗   - packetdropping：表示黑洞
 

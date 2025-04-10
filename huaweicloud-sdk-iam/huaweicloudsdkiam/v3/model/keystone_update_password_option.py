@@ -27,7 +27,7 @@ class KeystoneUpdatePasswordOption:
     }
 
     def __init__(self, password=None, original_password=None):
-        """KeystoneUpdatePasswordOption
+        r"""KeystoneUpdatePasswordOption
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class KeystoneUpdatePasswordOption:
 
     @property
     def password(self):
-        """Gets the password of this KeystoneUpdatePasswordOption.
+        r"""Gets the password of this KeystoneUpdatePasswordOption.
 
         IAM用户的新密码。 - 系统默认密码最小长度为6位字符，在6-32位之间支持用户自定义密码长度。 - 至少包含以下四种字符中的两种： 大写字母、小写字母、数字和特殊字符。 - 不能包含手机号和邮箱。 - 必须满足用户所属账号的[密码策略](https://support.huaweicloud.com/usermanual-iam/iam_01_0607.html)要求。 - 新密码不能与当前密码相同。
 
@@ -59,7 +59,7 @@ class KeystoneUpdatePasswordOption:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this KeystoneUpdatePasswordOption.
+        r"""Sets the password of this KeystoneUpdatePasswordOption.
 
         IAM用户的新密码。 - 系统默认密码最小长度为6位字符，在6-32位之间支持用户自定义密码长度。 - 至少包含以下四种字符中的两种： 大写字母、小写字母、数字和特殊字符。 - 不能包含手机号和邮箱。 - 必须满足用户所属账号的[密码策略](https://support.huaweicloud.com/usermanual-iam/iam_01_0607.html)要求。 - 新密码不能与当前密码相同。
 
@@ -70,7 +70,7 @@ class KeystoneUpdatePasswordOption:
 
     @property
     def original_password(self):
-        """Gets the original_password of this KeystoneUpdatePasswordOption.
+        r"""Gets the original_password of this KeystoneUpdatePasswordOption.
 
         IAM用户的原密码。
 
@@ -81,7 +81,7 @@ class KeystoneUpdatePasswordOption:
 
     @original_password.setter
     def original_password(self, original_password):
-        """Sets the original_password of this KeystoneUpdatePasswordOption.
+        r"""Sets the original_password of this KeystoneUpdatePasswordOption.
 
         IAM用户的原密码。
 

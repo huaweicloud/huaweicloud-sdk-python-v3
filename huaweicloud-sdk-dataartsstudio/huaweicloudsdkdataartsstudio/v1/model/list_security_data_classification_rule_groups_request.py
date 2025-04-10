@@ -37,7 +37,7 @@ class ListSecurityDataClassificationRuleGroupsRequest:
     }
 
     def __init__(self, workspace=None, limit=None, offset=None, name=None, creator=None, order_by=None, desc=None):
-        """ListSecurityDataClassificationRuleGroupsRequest
+        r"""ListSecurityDataClassificationRuleGroupsRequest
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class ListSecurityDataClassificationRuleGroupsRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListSecurityDataClassificationRuleGroupsRequest.
+        r"""Gets the workspace of this ListSecurityDataClassificationRuleGroupsRequest.
 
         DataArts Studio工作空间ID
 
@@ -95,7 +95,7 @@ class ListSecurityDataClassificationRuleGroupsRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListSecurityDataClassificationRuleGroupsRequest.
+        r"""Sets the workspace of this ListSecurityDataClassificationRuleGroupsRequest.
 
         DataArts Studio工作空间ID
 
@@ -106,7 +106,7 @@ class ListSecurityDataClassificationRuleGroupsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSecurityDataClassificationRuleGroupsRequest.
+        r"""Gets the limit of this ListSecurityDataClassificationRuleGroupsRequest.
 
         limit
 
@@ -117,7 +117,7 @@ class ListSecurityDataClassificationRuleGroupsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSecurityDataClassificationRuleGroupsRequest.
+        r"""Sets the limit of this ListSecurityDataClassificationRuleGroupsRequest.
 
         limit
 
@@ -128,7 +128,7 @@ class ListSecurityDataClassificationRuleGroupsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSecurityDataClassificationRuleGroupsRequest.
+        r"""Gets the offset of this ListSecurityDataClassificationRuleGroupsRequest.
 
         offset
 
@@ -139,7 +139,7 @@ class ListSecurityDataClassificationRuleGroupsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSecurityDataClassificationRuleGroupsRequest.
+        r"""Sets the offset of this ListSecurityDataClassificationRuleGroupsRequest.
 
         offset
 
@@ -150,7 +150,7 @@ class ListSecurityDataClassificationRuleGroupsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListSecurityDataClassificationRuleGroupsRequest.
+        r"""Gets the name of this ListSecurityDataClassificationRuleGroupsRequest.
 
         规则组名称
 
@@ -161,7 +161,7 @@ class ListSecurityDataClassificationRuleGroupsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListSecurityDataClassificationRuleGroupsRequest.
+        r"""Sets the name of this ListSecurityDataClassificationRuleGroupsRequest.
 
         规则组名称
 
@@ -172,7 +172,7 @@ class ListSecurityDataClassificationRuleGroupsRequest:
 
     @property
     def creator(self):
-        """Gets the creator of this ListSecurityDataClassificationRuleGroupsRequest.
+        r"""Gets the creator of this ListSecurityDataClassificationRuleGroupsRequest.
 
         规则组创建者
 
@@ -183,7 +183,7 @@ class ListSecurityDataClassificationRuleGroupsRequest:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ListSecurityDataClassificationRuleGroupsRequest.
+        r"""Sets the creator of this ListSecurityDataClassificationRuleGroupsRequest.
 
         规则组创建者
 
@@ -194,7 +194,7 @@ class ListSecurityDataClassificationRuleGroupsRequest:
 
     @property
     def order_by(self):
-        """Gets the order_by of this ListSecurityDataClassificationRuleGroupsRequest.
+        r"""Gets the order_by of this ListSecurityDataClassificationRuleGroupsRequest.
 
         排序字段, createdAt, createdBy, updatedAt, updatedBy, name, description
 
@@ -205,7 +205,7 @@ class ListSecurityDataClassificationRuleGroupsRequest:
 
     @order_by.setter
     def order_by(self, order_by):
-        """Sets the order_by of this ListSecurityDataClassificationRuleGroupsRequest.
+        r"""Sets the order_by of this ListSecurityDataClassificationRuleGroupsRequest.
 
         排序字段, createdAt, createdBy, updatedAt, updatedBy, name, description
 
@@ -216,7 +216,7 @@ class ListSecurityDataClassificationRuleGroupsRequest:
 
     @property
     def desc(self):
-        """Gets the desc of this ListSecurityDataClassificationRuleGroupsRequest.
+        r"""Gets the desc of this ListSecurityDataClassificationRuleGroupsRequest.
 
         是否降序
 
@@ -227,7 +227,7 @@ class ListSecurityDataClassificationRuleGroupsRequest:
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this ListSecurityDataClassificationRuleGroupsRequest.
+        r"""Sets the desc of this ListSecurityDataClassificationRuleGroupsRequest.
 
         是否降序
 

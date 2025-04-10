@@ -36,7 +36,7 @@ class AddFunctionsResponse(SdkResponse):
     }
 
     def __init__(self, app_id=None, product_id=None, function_id=None, urn=None, description=None, create_time=None):
-        """AddFunctionsResponse
+        r"""AddFunctionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class AddFunctionsResponse(SdkResponse):
 
     @property
     def app_id(self):
-        """Gets the app_id of this AddFunctionsResponse.
+        r"""Gets the app_id of this AddFunctionsResponse.
 
         **参数说明**：资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，可以携带该参数查询指定资源空间下的产品列表，不携带该参数则会查询该用户下所有产品列表。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -90,7 +90,7 @@ class AddFunctionsResponse(SdkResponse):
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this AddFunctionsResponse.
+        r"""Sets the app_id of this AddFunctionsResponse.
 
         **参数说明**：资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，可以携带该参数查询指定资源空间下的产品列表，不携带该参数则会查询该用户下所有产品列表。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -101,7 +101,7 @@ class AddFunctionsResponse(SdkResponse):
 
     @property
     def product_id(self):
-        """Gets the product_id of this AddFunctionsResponse.
+        r"""Gets the product_id of this AddFunctionsResponse.
 
         **参数说明**：设备关联的产品ID，用于唯一标识一个产品模型，创建产品后获得。方法请参见 [[创建产品](https://support.huaweicloud.com/api-iothub/iot_06_v5_0050.html)](tag:hws)[[创建产品](https://support.huaweicloud.com/intl/zh-cn/api-iothub/iot_06_v5_0050.html)](tag:hws_hk)。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -112,7 +112,7 @@ class AddFunctionsResponse(SdkResponse):
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this AddFunctionsResponse.
+        r"""Sets the product_id of this AddFunctionsResponse.
 
         **参数说明**：设备关联的产品ID，用于唯一标识一个产品模型，创建产品后获得。方法请参见 [[创建产品](https://support.huaweicloud.com/api-iothub/iot_06_v5_0050.html)](tag:hws)[[创建产品](https://support.huaweicloud.com/intl/zh-cn/api-iothub/iot_06_v5_0050.html)](tag:hws_hk)。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -123,7 +123,7 @@ class AddFunctionsResponse(SdkResponse):
 
     @property
     def function_id(self):
-        """Gets the function_id of this AddFunctionsResponse.
+        r"""Gets the function_id of this AddFunctionsResponse.
 
         **参数说明**：函数ID，产品配置函数后生成的唯一标识。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -134,7 +134,7 @@ class AddFunctionsResponse(SdkResponse):
 
     @function_id.setter
     def function_id(self, function_id):
-        """Sets the function_id of this AddFunctionsResponse.
+        r"""Sets the function_id of this AddFunctionsResponse.
 
         **参数说明**：函数ID，产品配置函数后生成的唯一标识。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -145,7 +145,7 @@ class AddFunctionsResponse(SdkResponse):
 
     @property
     def urn(self):
-        """Gets the urn of this AddFunctionsResponse.
+        r"""Gets the urn of this AddFunctionsResponse.
 
         **参数说明**：产品关联函数的URN（Uniform Resource Name）。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）、分隔符（:）的组合。
 
@@ -156,7 +156,7 @@ class AddFunctionsResponse(SdkResponse):
 
     @urn.setter
     def urn(self, urn):
-        """Sets the urn of this AddFunctionsResponse.
+        r"""Sets the urn of this AddFunctionsResponse.
 
         **参数说明**：产品关联函数的URN（Uniform Resource Name）。 **取值范围**：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）、分隔符（:）的组合。
 
@@ -167,7 +167,7 @@ class AddFunctionsResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this AddFunctionsResponse.
+        r"""Gets the description of this AddFunctionsResponse.
 
         **参数说明**：编解码函数描述信息。 **取值范围**：128，只允许中文、字母、数字、以及_? '#().,&%@!-等字符的组合。
 
@@ -178,7 +178,7 @@ class AddFunctionsResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AddFunctionsResponse.
+        r"""Sets the description of this AddFunctionsResponse.
 
         **参数说明**：编解码函数描述信息。 **取值范围**：128，只允许中文、字母、数字、以及_? '#().,&%@!-等字符的组合。
 
@@ -189,7 +189,7 @@ class AddFunctionsResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this AddFunctionsResponse.
+        r"""Gets the create_time of this AddFunctionsResponse.
 
         **参数说明**：产品函数创建时间。**格式**：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
@@ -200,7 +200,7 @@ class AddFunctionsResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AddFunctionsResponse.
+        r"""Sets the create_time of this AddFunctionsResponse.
 
         **参数说明**：产品函数创建时间。**格式**：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 

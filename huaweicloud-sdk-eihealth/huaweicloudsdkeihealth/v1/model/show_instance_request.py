@@ -27,7 +27,7 @@ class ShowInstanceRequest:
     }
 
     def __init__(self, eihealth_project_id=None, database_id=None):
-        """ShowInstanceRequest
+        r"""ShowInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowInstanceRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this ShowInstanceRequest.
+        r"""Gets the eihealth_project_id of this ShowInstanceRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -59,7 +59,7 @@ class ShowInstanceRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this ShowInstanceRequest.
+        r"""Sets the eihealth_project_id of this ShowInstanceRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -70,7 +70,7 @@ class ShowInstanceRequest:
 
     @property
     def database_id(self):
-        """Gets the database_id of this ShowInstanceRequest.
+        r"""Gets the database_id of this ShowInstanceRequest.
 
         数据库实例id
 
@@ -81,7 +81,7 @@ class ShowInstanceRequest:
 
     @database_id.setter
     def database_id(self, database_id):
-        """Sets the database_id of this ShowInstanceRequest.
+        r"""Sets the database_id of this ShowInstanceRequest.
 
         数据库实例id
 

@@ -31,7 +31,7 @@ class AppConfigCreateRequestV2:
     }
 
     def __init__(self, config_type=None, config_value=None, description=None, config_name=None):
-        """AppConfigCreateRequestV2
+        r"""AppConfigCreateRequestV2
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class AppConfigCreateRequestV2:
 
     @property
     def config_type(self):
-        """Gets the config_type of this AppConfigCreateRequestV2.
+        r"""Gets the config_type of this AppConfigCreateRequestV2.
 
         应用配置类型： - variable：模板变量 - password：密码 - certificate：证书
 
@@ -74,7 +74,7 @@ class AppConfigCreateRequestV2:
 
     @config_type.setter
     def config_type(self, config_type):
-        """Sets the config_type of this AppConfigCreateRequestV2.
+        r"""Sets the config_type of this AppConfigCreateRequestV2.
 
         应用配置类型： - variable：模板变量 - password：密码 - certificate：证书
 
@@ -85,7 +85,7 @@ class AppConfigCreateRequestV2:
 
     @property
     def config_value(self):
-        """Gets the config_value of this AppConfigCreateRequestV2.
+        r"""Gets the config_value of this AppConfigCreateRequestV2.
 
         应用配置值： - config_type = variable：config_value为模板变量的值 - config_type = password：config_value为密码值 - config_type = certificate：config_value需要包含证书public_key（必填），私钥private_key（必填）和密码passphrase（非必填），格式如：\"{\\\\\"public_key\\\\\": \\\"\\,\\\\\"private_key\\\\\":\\\\\"\\\\\",\\\\\"passphrase\\\\\":\\\\\"\\\\\"}\"
 
@@ -96,7 +96,7 @@ class AppConfigCreateRequestV2:
 
     @config_value.setter
     def config_value(self, config_value):
-        """Sets the config_value of this AppConfigCreateRequestV2.
+        r"""Sets the config_value of this AppConfigCreateRequestV2.
 
         应用配置值： - config_type = variable：config_value为模板变量的值 - config_type = password：config_value为密码值 - config_type = certificate：config_value需要包含证书public_key（必填），私钥private_key（必填）和密码passphrase（非必填），格式如：\"{\\\\\"public_key\\\\\": \\\"\\,\\\\\"private_key\\\\\":\\\\\"\\\\\",\\\\\"passphrase\\\\\":\\\\\"\\\\\"}\"
 
@@ -107,7 +107,7 @@ class AppConfigCreateRequestV2:
 
     @property
     def description(self):
-        """Gets the description of this AppConfigCreateRequestV2.
+        r"""Gets the description of this AppConfigCreateRequestV2.
 
         应用配置描述
 
@@ -118,7 +118,7 @@ class AppConfigCreateRequestV2:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AppConfigCreateRequestV2.
+        r"""Sets the description of this AppConfigCreateRequestV2.
 
         应用配置描述
 
@@ -129,7 +129,7 @@ class AppConfigCreateRequestV2:
 
     @property
     def config_name(self):
-        """Gets the config_name of this AppConfigCreateRequestV2.
+        r"""Gets the config_name of this AppConfigCreateRequestV2.
 
         应用配置名称。  支持英文大小写字符、数字、下划线、中划线、点和@，且只能以英文字母开头。
 
@@ -140,7 +140,7 @@ class AppConfigCreateRequestV2:
 
     @config_name.setter
     def config_name(self, config_name):
-        """Sets the config_name of this AppConfigCreateRequestV2.
+        r"""Sets the config_name of this AppConfigCreateRequestV2.
 
         应用配置名称。  支持英文大小写字符、数字、下划线、中划线、点和@，且只能以英文字母开头。
 

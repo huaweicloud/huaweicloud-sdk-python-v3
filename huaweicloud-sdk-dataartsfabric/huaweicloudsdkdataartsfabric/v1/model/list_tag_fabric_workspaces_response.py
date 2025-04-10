@@ -30,7 +30,7 @@ class ListTagFabricWorkspacesResponse(SdkResponse):
     }
 
     def __init__(self, resources=None, total_count=None, x_request_id=None):
-        """ListTagFabricWorkspacesResponse
+        r"""ListTagFabricWorkspacesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListTagFabricWorkspacesResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ListTagFabricWorkspacesResponse.
+        r"""Gets the resources of this ListTagFabricWorkspacesResponse.
 
         资源列表。
 
@@ -69,7 +69,7 @@ class ListTagFabricWorkspacesResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ListTagFabricWorkspacesResponse.
+        r"""Sets the resources of this ListTagFabricWorkspacesResponse.
 
         资源列表。
 
@@ -80,7 +80,7 @@ class ListTagFabricWorkspacesResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListTagFabricWorkspacesResponse.
+        r"""Gets the total_count of this ListTagFabricWorkspacesResponse.
 
         资源总数
 
@@ -91,7 +91,7 @@ class ListTagFabricWorkspacesResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListTagFabricWorkspacesResponse.
+        r"""Sets the total_count of this ListTagFabricWorkspacesResponse.
 
         资源总数
 
@@ -102,7 +102,7 @@ class ListTagFabricWorkspacesResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListTagFabricWorkspacesResponse.
+        r"""Gets the x_request_id of this ListTagFabricWorkspacesResponse.
 
         :return: The x_request_id of this ListTagFabricWorkspacesResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListTagFabricWorkspacesResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListTagFabricWorkspacesResponse.
+        r"""Sets the x_request_id of this ListTagFabricWorkspacesResponse.
 
         :param x_request_id: The x_request_id of this ListTagFabricWorkspacesResponse.
         :type x_request_id: str

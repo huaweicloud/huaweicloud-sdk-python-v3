@@ -26,7 +26,7 @@ class ListQuotasResponse(SdkResponse):
     }
 
     def __init__(self, quotas=None):
-        """ListQuotasResponse
+        r"""ListQuotasResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListQuotasResponse(SdkResponse):
 
     @property
     def quotas(self):
-        """Gets the quotas of this ListQuotasResponse.
+        r"""Gets the quotas of this ListQuotasResponse.
 
         :return: The quotas of this ListQuotasResponse.
         :rtype: :class:`huaweicloudsdkcloudpond.v1.QuotaResources`
@@ -53,7 +53,7 @@ class ListQuotasResponse(SdkResponse):
 
     @quotas.setter
     def quotas(self, quotas):
-        """Sets the quotas of this ListQuotasResponse.
+        r"""Sets the quotas of this ListQuotasResponse.
 
         :param quotas: The quotas of this ListQuotasResponse.
         :type quotas: :class:`huaweicloudsdkcloudpond.v1.QuotaResources`

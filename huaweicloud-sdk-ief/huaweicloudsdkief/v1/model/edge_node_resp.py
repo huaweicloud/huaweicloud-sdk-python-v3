@@ -133,7 +133,7 @@ class EdgeNodeResp:
     }
 
     def __init__(self, id=None, name=None, description=None, created_at=None, updated_at=None, project_id=None, private_key=None, certificate=None, ca=None, state=None, package=None, master_addr=None, cpu=None, memory=None, os_name=None, os_version=None, pause_docker_image=None, arch=None, os_type=None, deployment_num=None, enable_gpu=None, log_configs=None, device_infos=None, edged_version=None, gpu_num=None, host_ips=None, relation=None, comment=None, gpu_info=None, device_num=None, enable_npu=None, npu_type=None, nics=None, host_name=None, ief_node_version=None, upgrade_flag=None, product_id=None, group_ids=None, upgrade_history=None, attributes=None, docker_enable=None, mqtt_mode=None, mqtt_external=None, mqtt_internal=None, node_type=None, ntp_configs=None, error_reason=None, tags=None, npu_num=None, npu_info=None, container_runtime_version=None, identifier=None, purchase_id=None, state_details=None, cert_remaining_valid_time=None):
-        """EdgeNodeResp
+        r"""EdgeNodeResp
 
         The model defined in huaweicloud sdk
 
@@ -370,7 +370,7 @@ class EdgeNodeResp:
 
     @property
     def id(self):
-        """Gets the id of this EdgeNodeResp.
+        r"""Gets the id of this EdgeNodeResp.
 
         边缘节点ID
 
@@ -381,7 +381,7 @@ class EdgeNodeResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EdgeNodeResp.
+        r"""Sets the id of this EdgeNodeResp.
 
         边缘节点ID
 
@@ -392,7 +392,7 @@ class EdgeNodeResp:
 
     @property
     def name(self):
-        """Gets the name of this EdgeNodeResp.
+        r"""Gets the name of this EdgeNodeResp.
 
         边缘节点名称，只允许中文字符、英文字母、数字、下划线、中划线，最大长度64 Name为必填字段，且本账号中唯一。
 
@@ -403,7 +403,7 @@ class EdgeNodeResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EdgeNodeResp.
+        r"""Sets the name of this EdgeNodeResp.
 
         边缘节点名称，只允许中文字符、英文字母、数字、下划线、中划线，最大长度64 Name为必填字段，且本账号中唯一。
 
@@ -414,7 +414,7 @@ class EdgeNodeResp:
 
     @property
     def description(self):
-        """Gets the description of this EdgeNodeResp.
+        r"""Gets the description of this EdgeNodeResp.
 
         边缘节点描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -425,7 +425,7 @@ class EdgeNodeResp:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EdgeNodeResp.
+        r"""Sets the description of this EdgeNodeResp.
 
         边缘节点描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -436,7 +436,7 @@ class EdgeNodeResp:
 
     @property
     def created_at(self):
-        """Gets the created_at of this EdgeNodeResp.
+        r"""Gets the created_at of this EdgeNodeResp.
 
         创建时间
 
@@ -447,7 +447,7 @@ class EdgeNodeResp:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this EdgeNodeResp.
+        r"""Sets the created_at of this EdgeNodeResp.
 
         创建时间
 
@@ -458,7 +458,7 @@ class EdgeNodeResp:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this EdgeNodeResp.
+        r"""Gets the updated_at of this EdgeNodeResp.
 
         更新时间
 
@@ -469,7 +469,7 @@ class EdgeNodeResp:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this EdgeNodeResp.
+        r"""Sets the updated_at of this EdgeNodeResp.
 
         更新时间
 
@@ -480,7 +480,7 @@ class EdgeNodeResp:
 
     @property
     def project_id(self):
-        """Gets the project_id of this EdgeNodeResp.
+        r"""Gets the project_id of this EdgeNodeResp.
 
         项目ID
 
@@ -491,7 +491,7 @@ class EdgeNodeResp:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this EdgeNodeResp.
+        r"""Sets the project_id of this EdgeNodeResp.
 
         项目ID
 
@@ -502,7 +502,7 @@ class EdgeNodeResp:
 
     @property
     def private_key(self):
-        """Gets the private_key of this EdgeNodeResp.
+        r"""Gets the private_key of this EdgeNodeResp.
 
         私钥
 
@@ -513,7 +513,7 @@ class EdgeNodeResp:
 
     @private_key.setter
     def private_key(self, private_key):
-        """Sets the private_key of this EdgeNodeResp.
+        r"""Sets the private_key of this EdgeNodeResp.
 
         私钥
 
@@ -524,7 +524,7 @@ class EdgeNodeResp:
 
     @property
     def certificate(self):
-        """Gets the certificate of this EdgeNodeResp.
+        r"""Gets the certificate of this EdgeNodeResp.
 
         证书
 
@@ -535,7 +535,7 @@ class EdgeNodeResp:
 
     @certificate.setter
     def certificate(self, certificate):
-        """Sets the certificate of this EdgeNodeResp.
+        r"""Sets the certificate of this EdgeNodeResp.
 
         证书
 
@@ -546,7 +546,7 @@ class EdgeNodeResp:
 
     @property
     def ca(self):
-        """Gets the ca of this EdgeNodeResp.
+        r"""Gets the ca of this EdgeNodeResp.
 
         根证书
 
@@ -557,7 +557,7 @@ class EdgeNodeResp:
 
     @ca.setter
     def ca(self, ca):
-        """Sets the ca of this EdgeNodeResp.
+        r"""Sets the ca of this EdgeNodeResp.
 
         根证书
 
@@ -568,7 +568,7 @@ class EdgeNodeResp:
 
     @property
     def state(self):
-        """Gets the state of this EdgeNodeResp.
+        r"""Gets the state of this EdgeNodeResp.
 
         边缘节点状态 - UNCONNECTED（未注册） - RUNNING（运行中） - FAIL（故障） - STOPPED（停用） - UPGRADING（升级中） - FREEZE（冻结）
 
@@ -579,7 +579,7 @@ class EdgeNodeResp:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this EdgeNodeResp.
+        r"""Sets the state of this EdgeNodeResp.
 
         边缘节点状态 - UNCONNECTED（未注册） - RUNNING（运行中） - FAIL（故障） - STOPPED（停用） - UPGRADING（升级中） - FREEZE（冻结）
 
@@ -590,7 +590,7 @@ class EdgeNodeResp:
 
     @property
     def package(self):
-        """Gets the package of this EdgeNodeResp.
+        r"""Gets the package of this EdgeNodeResp.
 
         将证书文件certificate/ca/private_key打成.tar.gz包后用base64编码的字符串。 使用时请使用base64解码成.tar.gz包。
 
@@ -601,7 +601,7 @@ class EdgeNodeResp:
 
     @package.setter
     def package(self, package):
-        """Sets the package of this EdgeNodeResp.
+        r"""Sets the package of this EdgeNodeResp.
 
         将证书文件certificate/ca/private_key打成.tar.gz包后用base64编码的字符串。 使用时请使用base64解码成.tar.gz包。
 
@@ -612,7 +612,7 @@ class EdgeNodeResp:
 
     @property
     def master_addr(self):
-        """Gets the master_addr of this EdgeNodeResp.
+        r"""Gets the master_addr of this EdgeNodeResp.
 
         云端服务URL
 
@@ -623,7 +623,7 @@ class EdgeNodeResp:
 
     @master_addr.setter
     def master_addr(self, master_addr):
-        """Sets the master_addr of this EdgeNodeResp.
+        r"""Sets the master_addr of this EdgeNodeResp.
 
         云端服务URL
 
@@ -634,7 +634,7 @@ class EdgeNodeResp:
 
     @property
     def cpu(self):
-        """Gets the cpu of this EdgeNodeResp.
+        r"""Gets the cpu of this EdgeNodeResp.
 
         边缘节点CPU核心数
 
@@ -645,7 +645,7 @@ class EdgeNodeResp:
 
     @cpu.setter
     def cpu(self, cpu):
-        """Sets the cpu of this EdgeNodeResp.
+        r"""Sets the cpu of this EdgeNodeResp.
 
         边缘节点CPU核心数
 
@@ -656,7 +656,7 @@ class EdgeNodeResp:
 
     @property
     def memory(self):
-        """Gets the memory of this EdgeNodeResp.
+        r"""Gets the memory of this EdgeNodeResp.
 
         边缘节点内存大小，单位M
 
@@ -667,7 +667,7 @@ class EdgeNodeResp:
 
     @memory.setter
     def memory(self, memory):
-        """Sets the memory of this EdgeNodeResp.
+        r"""Sets the memory of this EdgeNodeResp.
 
         边缘节点内存大小，单位M
 
@@ -678,7 +678,7 @@ class EdgeNodeResp:
 
     @property
     def os_name(self):
-        """Gets the os_name of this EdgeNodeResp.
+        r"""Gets the os_name of this EdgeNodeResp.
 
         边缘节点操作系统名称
 
@@ -689,7 +689,7 @@ class EdgeNodeResp:
 
     @os_name.setter
     def os_name(self, os_name):
-        """Sets the os_name of this EdgeNodeResp.
+        r"""Sets the os_name of this EdgeNodeResp.
 
         边缘节点操作系统名称
 
@@ -700,7 +700,7 @@ class EdgeNodeResp:
 
     @property
     def os_version(self):
-        """Gets the os_version of this EdgeNodeResp.
+        r"""Gets the os_version of this EdgeNodeResp.
 
         边缘节点操作系统版本
 
@@ -711,7 +711,7 @@ class EdgeNodeResp:
 
     @os_version.setter
     def os_version(self, os_version):
-        """Sets the os_version of this EdgeNodeResp.
+        r"""Sets the os_version of this EdgeNodeResp.
 
         边缘节点操作系统版本
 
@@ -722,7 +722,7 @@ class EdgeNodeResp:
 
     @property
     def pause_docker_image(self):
-        """Gets the pause_docker_image of this EdgeNodeResp.
+        r"""Gets the pause_docker_image of this EdgeNodeResp.
 
         pause容器镜像URL
 
@@ -733,7 +733,7 @@ class EdgeNodeResp:
 
     @pause_docker_image.setter
     def pause_docker_image(self, pause_docker_image):
-        """Sets the pause_docker_image of this EdgeNodeResp.
+        r"""Sets the pause_docker_image of this EdgeNodeResp.
 
         pause容器镜像URL
 
@@ -744,7 +744,7 @@ class EdgeNodeResp:
 
     @property
     def arch(self):
-        """Gets the arch of this EdgeNodeResp.
+        r"""Gets the arch of this EdgeNodeResp.
 
         边缘节点架构
 
@@ -755,7 +755,7 @@ class EdgeNodeResp:
 
     @arch.setter
     def arch(self, arch):
-        """Sets the arch of this EdgeNodeResp.
+        r"""Sets the arch of this EdgeNodeResp.
 
         边缘节点架构
 
@@ -766,7 +766,7 @@ class EdgeNodeResp:
 
     @property
     def os_type(self):
-        """Gets the os_type of this EdgeNodeResp.
+        r"""Gets the os_type of this EdgeNodeResp.
 
         边缘节点操作系统类型
 
@@ -777,7 +777,7 @@ class EdgeNodeResp:
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this EdgeNodeResp.
+        r"""Sets the os_type of this EdgeNodeResp.
 
         边缘节点操作系统类型
 
@@ -788,7 +788,7 @@ class EdgeNodeResp:
 
     @property
     def deployment_num(self):
-        """Gets the deployment_num of this EdgeNodeResp.
+        r"""Gets the deployment_num of this EdgeNodeResp.
 
         部署在该边缘节点上的应用实例个数
 
@@ -799,7 +799,7 @@ class EdgeNodeResp:
 
     @deployment_num.setter
     def deployment_num(self, deployment_num):
-        """Sets the deployment_num of this EdgeNodeResp.
+        r"""Sets the deployment_num of this EdgeNodeResp.
 
         部署在该边缘节点上的应用实例个数
 
@@ -810,7 +810,7 @@ class EdgeNodeResp:
 
     @property
     def enable_gpu(self):
-        """Gets the enable_gpu of this EdgeNodeResp.
+        r"""Gets the enable_gpu of this EdgeNodeResp.
 
         边缘节点是否开启GPU，默认为false
 
@@ -821,7 +821,7 @@ class EdgeNodeResp:
 
     @enable_gpu.setter
     def enable_gpu(self, enable_gpu):
-        """Sets the enable_gpu of this EdgeNodeResp.
+        r"""Sets the enable_gpu of this EdgeNodeResp.
 
         边缘节点是否开启GPU，默认为false
 
@@ -832,7 +832,7 @@ class EdgeNodeResp:
 
     @property
     def log_configs(self):
-        """Gets the log_configs of this EdgeNodeResp.
+        r"""Gets the log_configs of this EdgeNodeResp.
 
         边缘节点日志配置，当用户未配置日志相关字段时，将默认打开日志上传到云端功能。
 
@@ -843,7 +843,7 @@ class EdgeNodeResp:
 
     @log_configs.setter
     def log_configs(self, log_configs):
-        """Sets the log_configs of this EdgeNodeResp.
+        r"""Sets the log_configs of this EdgeNodeResp.
 
         边缘节点日志配置，当用户未配置日志相关字段时，将默认打开日志上传到云端功能。
 
@@ -854,7 +854,7 @@ class EdgeNodeResp:
 
     @property
     def device_infos(self):
-        """Gets the device_infos of this EdgeNodeResp.
+        r"""Gets the device_infos of this EdgeNodeResp.
 
         关联设备信息
 
@@ -865,7 +865,7 @@ class EdgeNodeResp:
 
     @device_infos.setter
     def device_infos(self, device_infos):
-        """Sets the device_infos of this EdgeNodeResp.
+        r"""Sets the device_infos of this EdgeNodeResp.
 
         关联设备信息
 
@@ -876,7 +876,7 @@ class EdgeNodeResp:
 
     @property
     def edged_version(self):
-        """Gets the edged_version of this EdgeNodeResp.
+        r"""Gets the edged_version of this EdgeNodeResp.
 
         edged版本
 
@@ -887,7 +887,7 @@ class EdgeNodeResp:
 
     @edged_version.setter
     def edged_version(self, edged_version):
-        """Sets the edged_version of this EdgeNodeResp.
+        r"""Sets the edged_version of this EdgeNodeResp.
 
         edged版本
 
@@ -898,7 +898,7 @@ class EdgeNodeResp:
 
     @property
     def gpu_num(self):
-        """Gets the gpu_num of this EdgeNodeResp.
+        r"""Gets the gpu_num of this EdgeNodeResp.
 
         gpu个数
 
@@ -909,7 +909,7 @@ class EdgeNodeResp:
 
     @gpu_num.setter
     def gpu_num(self, gpu_num):
-        """Sets the gpu_num of this EdgeNodeResp.
+        r"""Sets the gpu_num of this EdgeNodeResp.
 
         gpu个数
 
@@ -920,7 +920,7 @@ class EdgeNodeResp:
 
     @property
     def host_ips(self):
-        """Gets the host_ips of this EdgeNodeResp.
+        r"""Gets the host_ips of this EdgeNodeResp.
 
         主机IP，默认返回eth0网卡的IP。
 
@@ -931,7 +931,7 @@ class EdgeNodeResp:
 
     @host_ips.setter
     def host_ips(self, host_ips):
-        """Sets the host_ips of this EdgeNodeResp.
+        r"""Sets the host_ips of this EdgeNodeResp.
 
         主机IP，默认返回eth0网卡的IP。
 
@@ -942,7 +942,7 @@ class EdgeNodeResp:
 
     @property
     def relation(self):
-        """Gets the relation of this EdgeNodeResp.
+        r"""Gets the relation of this EdgeNodeResp.
 
         与device绑定关系名称（通过device id查询node时有值）
 
@@ -953,7 +953,7 @@ class EdgeNodeResp:
 
     @relation.setter
     def relation(self, relation):
-        """Sets the relation of this EdgeNodeResp.
+        r"""Sets the relation of this EdgeNodeResp.
 
         与device绑定关系名称（通过device id查询node时有值）
 
@@ -964,7 +964,7 @@ class EdgeNodeResp:
 
     @property
     def comment(self):
-        """Gets the comment of this EdgeNodeResp.
+        r"""Gets the comment of this EdgeNodeResp.
 
         与device绑定关系描述（通过device id查询node时有值）
 
@@ -975,7 +975,7 @@ class EdgeNodeResp:
 
     @comment.setter
     def comment(self, comment):
-        """Sets the comment of this EdgeNodeResp.
+        r"""Sets the comment of this EdgeNodeResp.
 
         与device绑定关系描述（通过device id查询node时有值）
 
@@ -986,7 +986,7 @@ class EdgeNodeResp:
 
     @property
     def gpu_info(self):
-        """Gets the gpu_info of this EdgeNodeResp.
+        r"""Gets the gpu_info of this EdgeNodeResp.
 
         gpu型号和gpu memory大小
 
@@ -997,7 +997,7 @@ class EdgeNodeResp:
 
     @gpu_info.setter
     def gpu_info(self, gpu_info):
-        """Sets the gpu_info of this EdgeNodeResp.
+        r"""Sets the gpu_info of this EdgeNodeResp.
 
         gpu型号和gpu memory大小
 
@@ -1008,7 +1008,7 @@ class EdgeNodeResp:
 
     @property
     def device_num(self):
-        """Gets the device_num of this EdgeNodeResp.
+        r"""Gets the device_num of this EdgeNodeResp.
 
         关联设备数量
 
@@ -1019,7 +1019,7 @@ class EdgeNodeResp:
 
     @device_num.setter
     def device_num(self, device_num):
-        """Sets the device_num of this EdgeNodeResp.
+        r"""Sets the device_num of this EdgeNodeResp.
 
         关联设备数量
 
@@ -1030,7 +1030,7 @@ class EdgeNodeResp:
 
     @property
     def enable_npu(self):
-        """Gets the enable_npu of this EdgeNodeResp.
+        r"""Gets the enable_npu of this EdgeNodeResp.
 
         边缘节点是否开启NPU，true表示开启，false表示不开启，默认为false
 
@@ -1041,7 +1041,7 @@ class EdgeNodeResp:
 
     @enable_npu.setter
     def enable_npu(self, enable_npu):
-        """Sets the enable_npu of this EdgeNodeResp.
+        r"""Sets the enable_npu of this EdgeNodeResp.
 
         边缘节点是否开启NPU，true表示开启，false表示不开启，默认为false
 
@@ -1052,7 +1052,7 @@ class EdgeNodeResp:
 
     @property
     def npu_type(self):
-        """Gets the npu_type of this EdgeNodeResp.
+        r"""Gets the npu_type of this EdgeNodeResp.
 
         NPU类型，支持D310、D310B，支持填写： - D310：D310类型 - D310B：D310B类型 - 空值：D310类型。
 
@@ -1063,7 +1063,7 @@ class EdgeNodeResp:
 
     @npu_type.setter
     def npu_type(self, npu_type):
-        """Sets the npu_type of this EdgeNodeResp.
+        r"""Sets the npu_type of this EdgeNodeResp.
 
         NPU类型，支持D310、D310B，支持填写： - D310：D310类型 - D310B：D310B类型 - 空值：D310类型。
 
@@ -1074,7 +1074,7 @@ class EdgeNodeResp:
 
     @property
     def nics(self):
-        """Gets the nics of this EdgeNodeResp.
+        r"""Gets the nics of this EdgeNodeResp.
 
         节点网卡和对应IP地址信息
 
@@ -1085,7 +1085,7 @@ class EdgeNodeResp:
 
     @nics.setter
     def nics(self, nics):
-        """Sets the nics of this EdgeNodeResp.
+        r"""Sets the nics of this EdgeNodeResp.
 
         节点网卡和对应IP地址信息
 
@@ -1096,7 +1096,7 @@ class EdgeNodeResp:
 
     @property
     def host_name(self):
-        """Gets the host_name of this EdgeNodeResp.
+        r"""Gets the host_name of this EdgeNodeResp.
 
         边缘节点主机名
 
@@ -1107,7 +1107,7 @@ class EdgeNodeResp:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this EdgeNodeResp.
+        r"""Sets the host_name of this EdgeNodeResp.
 
         边缘节点主机名
 
@@ -1118,7 +1118,7 @@ class EdgeNodeResp:
 
     @property
     def ief_node_version(self):
-        """Gets the ief_node_version of this EdgeNodeResp.
+        r"""Gets the ief_node_version of this EdgeNodeResp.
 
         边缘节点版本
 
@@ -1129,7 +1129,7 @@ class EdgeNodeResp:
 
     @ief_node_version.setter
     def ief_node_version(self, ief_node_version):
-        """Sets the ief_node_version of this EdgeNodeResp.
+        r"""Sets the ief_node_version of this EdgeNodeResp.
 
         边缘节点版本
 
@@ -1140,7 +1140,7 @@ class EdgeNodeResp:
 
     @property
     def upgrade_flag(self):
-        """Gets the upgrade_flag of this EdgeNodeResp.
+        r"""Gets the upgrade_flag of this EdgeNodeResp.
 
         是否能升级的标志 - true：需要升级 - false：不需要升级
 
@@ -1151,7 +1151,7 @@ class EdgeNodeResp:
 
     @upgrade_flag.setter
     def upgrade_flag(self, upgrade_flag):
-        """Sets the upgrade_flag of this EdgeNodeResp.
+        r"""Sets the upgrade_flag of this EdgeNodeResp.
 
         是否能升级的标志 - true：需要升级 - false：不需要升级
 
@@ -1162,7 +1162,7 @@ class EdgeNodeResp:
 
     @property
     def product_id(self):
-        """Gets the product_id of this EdgeNodeResp.
+        r"""Gets the product_id of this EdgeNodeResp.
 
         产品ID（通过产品证书方式纳管）
 
@@ -1173,7 +1173,7 @@ class EdgeNodeResp:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this EdgeNodeResp.
+        r"""Sets the product_id of this EdgeNodeResp.
 
         产品ID（通过产品证书方式纳管）
 
@@ -1184,7 +1184,7 @@ class EdgeNodeResp:
 
     @property
     def group_ids(self):
-        """Gets the group_ids of this EdgeNodeResp.
+        r"""Gets the group_ids of this EdgeNodeResp.
 
         节点组ID（一个节点属于多个节点组）
 
@@ -1195,7 +1195,7 @@ class EdgeNodeResp:
 
     @group_ids.setter
     def group_ids(self, group_ids):
-        """Sets the group_ids of this EdgeNodeResp.
+        r"""Sets the group_ids of this EdgeNodeResp.
 
         节点组ID（一个节点属于多个节点组）
 
@@ -1206,7 +1206,7 @@ class EdgeNodeResp:
 
     @property
     def upgrade_history(self):
-        """Gets the upgrade_history of this EdgeNodeResp.
+        r"""Gets the upgrade_history of this EdgeNodeResp.
 
         节点安装或升级记录
 
@@ -1217,7 +1217,7 @@ class EdgeNodeResp:
 
     @upgrade_history.setter
     def upgrade_history(self, upgrade_history):
-        """Sets the upgrade_history of this EdgeNodeResp.
+        r"""Sets the upgrade_history of this EdgeNodeResp.
 
         节点安装或升级记录
 
@@ -1228,7 +1228,7 @@ class EdgeNodeResp:
 
     @property
     def attributes(self):
-        """Gets the attributes of this EdgeNodeResp.
+        r"""Gets the attributes of this EdgeNodeResp.
 
         边缘节点属性，关联属性个数最多为32个
 
@@ -1239,7 +1239,7 @@ class EdgeNodeResp:
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this EdgeNodeResp.
+        r"""Sets the attributes of this EdgeNodeResp.
 
         边缘节点属性，关联属性个数最多为32个
 
@@ -1250,7 +1250,7 @@ class EdgeNodeResp:
 
     @property
     def docker_enable(self):
-        """Gets the docker_enable of this EdgeNodeResp.
+        r"""Gets the docker_enable of this EdgeNodeResp.
 
         节点是否开启Docker
 
@@ -1261,7 +1261,7 @@ class EdgeNodeResp:
 
     @docker_enable.setter
     def docker_enable(self, docker_enable):
-        """Sets the docker_enable of this EdgeNodeResp.
+        r"""Sets the docker_enable of this EdgeNodeResp.
 
         节点是否开启Docker
 
@@ -1272,7 +1272,7 @@ class EdgeNodeResp:
 
     @property
     def mqtt_mode(self):
-        """Gets the mqtt_mode of this EdgeNodeResp.
+        r"""Gets the mqtt_mode of this EdgeNodeResp.
 
         mqtt集成模式 - internal：edgecore内置mqtt - external：外置开源mqtt
 
@@ -1283,7 +1283,7 @@ class EdgeNodeResp:
 
     @mqtt_mode.setter
     def mqtt_mode(self, mqtt_mode):
-        """Sets the mqtt_mode of this EdgeNodeResp.
+        r"""Sets the mqtt_mode of this EdgeNodeResp.
 
         mqtt集成模式 - internal：edgecore内置mqtt - external：外置开源mqtt
 
@@ -1294,7 +1294,7 @@ class EdgeNodeResp:
 
     @property
     def mqtt_external(self):
-        """Gets the mqtt_external of this EdgeNodeResp.
+        r"""Gets the mqtt_external of this EdgeNodeResp.
 
         外置开源mqtt地址
 
@@ -1305,7 +1305,7 @@ class EdgeNodeResp:
 
     @mqtt_external.setter
     def mqtt_external(self, mqtt_external):
-        """Sets the mqtt_external of this EdgeNodeResp.
+        r"""Sets the mqtt_external of this EdgeNodeResp.
 
         外置开源mqtt地址
 
@@ -1316,7 +1316,7 @@ class EdgeNodeResp:
 
     @property
     def mqtt_internal(self):
-        """Gets the mqtt_internal of this EdgeNodeResp.
+        r"""Gets the mqtt_internal of this EdgeNodeResp.
 
         edgecore内置的mqtt地址
 
@@ -1327,7 +1327,7 @@ class EdgeNodeResp:
 
     @mqtt_internal.setter
     def mqtt_internal(self, mqtt_internal):
-        """Sets the mqtt_internal of this EdgeNodeResp.
+        r"""Sets the mqtt_internal of this EdgeNodeResp.
 
         edgecore内置的mqtt地址
 
@@ -1338,7 +1338,7 @@ class EdgeNodeResp:
 
     @property
     def node_type(self):
-        """Gets the node_type of this EdgeNodeResp.
+        r"""Gets the node_type of this EdgeNodeResp.
 
         节点类型，默认为空，非空时为小站节点
 
@@ -1349,7 +1349,7 @@ class EdgeNodeResp:
 
     @node_type.setter
     def node_type(self, node_type):
-        """Sets the node_type of this EdgeNodeResp.
+        r"""Sets the node_type of this EdgeNodeResp.
 
         节点类型，默认为空，非空时为小站节点
 
@@ -1360,7 +1360,7 @@ class EdgeNodeResp:
 
     @property
     def ntp_configs(self):
-        """Gets the ntp_configs of this EdgeNodeResp.
+        r"""Gets the ntp_configs of this EdgeNodeResp.
 
         :return: The ntp_configs of this EdgeNodeResp.
         :rtype: :class:`huaweicloudsdkief.v1.NtpConfigs`
@@ -1369,7 +1369,7 @@ class EdgeNodeResp:
 
     @ntp_configs.setter
     def ntp_configs(self, ntp_configs):
-        """Sets the ntp_configs of this EdgeNodeResp.
+        r"""Sets the ntp_configs of this EdgeNodeResp.
 
         :param ntp_configs: The ntp_configs of this EdgeNodeResp.
         :type ntp_configs: :class:`huaweicloudsdkief.v1.NtpConfigs`
@@ -1378,7 +1378,7 @@ class EdgeNodeResp:
 
     @property
     def error_reason(self):
-        """Gets the error_reason of this EdgeNodeResp.
+        r"""Gets the error_reason of this EdgeNodeResp.
 
         节点故障原因
 
@@ -1389,7 +1389,7 @@ class EdgeNodeResp:
 
     @error_reason.setter
     def error_reason(self, error_reason):
-        """Sets the error_reason of this EdgeNodeResp.
+        r"""Sets the error_reason of this EdgeNodeResp.
 
         节点故障原因
 
@@ -1400,7 +1400,7 @@ class EdgeNodeResp:
 
     @property
     def tags(self):
-        """Gets the tags of this EdgeNodeResp.
+        r"""Gets the tags of this EdgeNodeResp.
 
         边缘节点标签，标签个数最多为20个
 
@@ -1411,7 +1411,7 @@ class EdgeNodeResp:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this EdgeNodeResp.
+        r"""Sets the tags of this EdgeNodeResp.
 
         边缘节点标签，标签个数最多为20个
 
@@ -1422,7 +1422,7 @@ class EdgeNodeResp:
 
     @property
     def npu_num(self):
-        """Gets the npu_num of this EdgeNodeResp.
+        r"""Gets the npu_num of this EdgeNodeResp.
 
         NPU数量
 
@@ -1433,7 +1433,7 @@ class EdgeNodeResp:
 
     @npu_num.setter
     def npu_num(self, npu_num):
-        """Sets the npu_num of this EdgeNodeResp.
+        r"""Sets the npu_num of this EdgeNodeResp.
 
         NPU数量
 
@@ -1444,7 +1444,7 @@ class EdgeNodeResp:
 
     @property
     def npu_info(self):
-        """Gets the npu_info of this EdgeNodeResp.
+        r"""Gets the npu_info of this EdgeNodeResp.
 
         NPU型号和NPU Memory大小
 
@@ -1455,7 +1455,7 @@ class EdgeNodeResp:
 
     @npu_info.setter
     def npu_info(self, npu_info):
-        """Sets the npu_info of this EdgeNodeResp.
+        r"""Sets the npu_info of this EdgeNodeResp.
 
         NPU型号和NPU Memory大小
 
@@ -1466,7 +1466,7 @@ class EdgeNodeResp:
 
     @property
     def container_runtime_version(self):
-        """Gets the container_runtime_version of this EdgeNodeResp.
+        r"""Gets the container_runtime_version of this EdgeNodeResp.
 
         容器运行时版本
 
@@ -1477,7 +1477,7 @@ class EdgeNodeResp:
 
     @container_runtime_version.setter
     def container_runtime_version(self, container_runtime_version):
-        """Sets the container_runtime_version of this EdgeNodeResp.
+        r"""Sets the container_runtime_version of this EdgeNodeResp.
 
         容器运行时版本
 
@@ -1488,7 +1488,7 @@ class EdgeNodeResp:
 
     @property
     def identifier(self):
-        """Gets the identifier of this EdgeNodeResp.
+        r"""Gets the identifier of this EdgeNodeResp.
 
         边缘节点使用token注册时的凭证
 
@@ -1499,7 +1499,7 @@ class EdgeNodeResp:
 
     @identifier.setter
     def identifier(self, identifier):
-        """Sets the identifier of this EdgeNodeResp.
+        r"""Sets the identifier of this EdgeNodeResp.
 
         边缘节点使用token注册时的凭证
 
@@ -1510,7 +1510,7 @@ class EdgeNodeResp:
 
     @property
     def purchase_id(self):
-        """Gets the purchase_id of this EdgeNodeResp.
+        r"""Gets the purchase_id of this EdgeNodeResp.
 
         IEC/IES节点id
 
@@ -1521,7 +1521,7 @@ class EdgeNodeResp:
 
     @purchase_id.setter
     def purchase_id(self, purchase_id):
-        """Sets the purchase_id of this EdgeNodeResp.
+        r"""Sets the purchase_id of this EdgeNodeResp.
 
         IEC/IES节点id
 
@@ -1532,7 +1532,7 @@ class EdgeNodeResp:
 
     @property
     def state_details(self):
-        """Gets the state_details of this EdgeNodeResp.
+        r"""Gets the state_details of this EdgeNodeResp.
 
         :return: The state_details of this EdgeNodeResp.
         :rtype: :class:`huaweicloudsdkief.v1.StateDetails`
@@ -1541,7 +1541,7 @@ class EdgeNodeResp:
 
     @state_details.setter
     def state_details(self, state_details):
-        """Sets the state_details of this EdgeNodeResp.
+        r"""Sets the state_details of this EdgeNodeResp.
 
         :param state_details: The state_details of this EdgeNodeResp.
         :type state_details: :class:`huaweicloudsdkief.v1.StateDetails`
@@ -1550,7 +1550,7 @@ class EdgeNodeResp:
 
     @property
     def cert_remaining_valid_time(self):
-        """Gets the cert_remaining_valid_time of this EdgeNodeResp.
+        r"""Gets the cert_remaining_valid_time of this EdgeNodeResp.
 
         证书有效期持续时间
 
@@ -1561,7 +1561,7 @@ class EdgeNodeResp:
 
     @cert_remaining_valid_time.setter
     def cert_remaining_valid_time(self, cert_remaining_valid_time):
-        """Sets the cert_remaining_valid_time of this EdgeNodeResp.
+        r"""Sets the cert_remaining_valid_time of this EdgeNodeResp.
 
         证书有效期持续时间
 

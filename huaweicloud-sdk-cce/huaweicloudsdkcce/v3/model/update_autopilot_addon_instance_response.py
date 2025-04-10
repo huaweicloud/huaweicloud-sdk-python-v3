@@ -34,7 +34,7 @@ class UpdateAutopilotAddonInstanceResponse(SdkResponse):
     }
 
     def __init__(self, kind=None, api_version=None, metadata=None, spec=None, status=None):
-        """UpdateAutopilotAddonInstanceResponse
+        r"""UpdateAutopilotAddonInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class UpdateAutopilotAddonInstanceResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this UpdateAutopilotAddonInstanceResponse.
+        r"""Gets the kind of this UpdateAutopilotAddonInstanceResponse.
 
         API类型，固定值“Addon”，该值不可修改。
 
@@ -83,7 +83,7 @@ class UpdateAutopilotAddonInstanceResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this UpdateAutopilotAddonInstanceResponse.
+        r"""Sets the kind of this UpdateAutopilotAddonInstanceResponse.
 
         API类型，固定值“Addon”，该值不可修改。
 
@@ -94,7 +94,7 @@ class UpdateAutopilotAddonInstanceResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this UpdateAutopilotAddonInstanceResponse.
+        r"""Gets the api_version of this UpdateAutopilotAddonInstanceResponse.
 
         API版本，固定值“v3”，该值不可修改。
 
@@ -105,7 +105,7 @@ class UpdateAutopilotAddonInstanceResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this UpdateAutopilotAddonInstanceResponse.
+        r"""Sets the api_version of this UpdateAutopilotAddonInstanceResponse.
 
         API版本，固定值“v3”，该值不可修改。
 
@@ -116,7 +116,7 @@ class UpdateAutopilotAddonInstanceResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this UpdateAutopilotAddonInstanceResponse.
+        r"""Gets the metadata of this UpdateAutopilotAddonInstanceResponse.
 
         :return: The metadata of this UpdateAutopilotAddonInstanceResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.AddonMetadata`
@@ -125,7 +125,7 @@ class UpdateAutopilotAddonInstanceResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this UpdateAutopilotAddonInstanceResponse.
+        r"""Sets the metadata of this UpdateAutopilotAddonInstanceResponse.
 
         :param metadata: The metadata of this UpdateAutopilotAddonInstanceResponse.
         :type metadata: :class:`huaweicloudsdkcce.v3.AddonMetadata`
@@ -134,7 +134,7 @@ class UpdateAutopilotAddonInstanceResponse(SdkResponse):
 
     @property
     def spec(self):
-        """Gets the spec of this UpdateAutopilotAddonInstanceResponse.
+        r"""Gets the spec of this UpdateAutopilotAddonInstanceResponse.
 
         :return: The spec of this UpdateAutopilotAddonInstanceResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.InstanceSpec`
@@ -143,7 +143,7 @@ class UpdateAutopilotAddonInstanceResponse(SdkResponse):
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this UpdateAutopilotAddonInstanceResponse.
+        r"""Sets the spec of this UpdateAutopilotAddonInstanceResponse.
 
         :param spec: The spec of this UpdateAutopilotAddonInstanceResponse.
         :type spec: :class:`huaweicloudsdkcce.v3.InstanceSpec`
@@ -152,7 +152,7 @@ class UpdateAutopilotAddonInstanceResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateAutopilotAddonInstanceResponse.
+        r"""Gets the status of this UpdateAutopilotAddonInstanceResponse.
 
         :return: The status of this UpdateAutopilotAddonInstanceResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.AddonInstanceStatus`
@@ -161,7 +161,7 @@ class UpdateAutopilotAddonInstanceResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateAutopilotAddonInstanceResponse.
+        r"""Sets the status of this UpdateAutopilotAddonInstanceResponse.
 
         :param status: The status of this UpdateAutopilotAddonInstanceResponse.
         :type status: :class:`huaweicloudsdkcce.v3.AddonInstanceStatus`

@@ -29,7 +29,7 @@ class UpdateSubnetBandwidthControlListReq:
     }
 
     def __init__(self, control_mode=None, add_control_list=None, remove_control_list=None):
-        """UpdateSubnetBandwidthControlListReq
+        r"""UpdateSubnetBandwidthControlListReq
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateSubnetBandwidthControlListReq:
 
     @property
     def control_mode(self):
-        """Gets the control_mode of this UpdateSubnetBandwidthControlListReq.
+        r"""Gets the control_mode of this UpdateSubnetBandwidthControlListReq.
 
         控制模式 - BLACK：黑名单控制。 - WHITE：白名单控制。
 
@@ -68,7 +68,7 @@ class UpdateSubnetBandwidthControlListReq:
 
     @control_mode.setter
     def control_mode(self, control_mode):
-        """Sets the control_mode of this UpdateSubnetBandwidthControlListReq.
+        r"""Sets the control_mode of this UpdateSubnetBandwidthControlListReq.
 
         控制模式 - BLACK：黑名单控制。 - WHITE：白名单控制。
 
@@ -79,7 +79,7 @@ class UpdateSubnetBandwidthControlListReq:
 
     @property
     def add_control_list(self):
-        """Gets the add_control_list of this UpdateSubnetBandwidthControlListReq.
+        r"""Gets the add_control_list of this UpdateSubnetBandwidthControlListReq.
 
         待添加的桌面。
 
@@ -90,7 +90,7 @@ class UpdateSubnetBandwidthControlListReq:
 
     @add_control_list.setter
     def add_control_list(self, add_control_list):
-        """Sets the add_control_list of this UpdateSubnetBandwidthControlListReq.
+        r"""Sets the add_control_list of this UpdateSubnetBandwidthControlListReq.
 
         待添加的桌面。
 
@@ -101,7 +101,7 @@ class UpdateSubnetBandwidthControlListReq:
 
     @property
     def remove_control_list(self):
-        """Gets the remove_control_list of this UpdateSubnetBandwidthControlListReq.
+        r"""Gets the remove_control_list of this UpdateSubnetBandwidthControlListReq.
 
         待删除的桌面。
 
@@ -112,7 +112,7 @@ class UpdateSubnetBandwidthControlListReq:
 
     @remove_control_list.setter
     def remove_control_list(self, remove_control_list):
-        """Sets the remove_control_list of this UpdateSubnetBandwidthControlListReq.
+        r"""Sets the remove_control_list of this UpdateSubnetBandwidthControlListReq.
 
         待删除的桌面。
 

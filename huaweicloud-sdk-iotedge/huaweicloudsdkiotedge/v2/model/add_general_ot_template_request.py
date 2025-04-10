@@ -23,7 +23,7 @@ class AddGeneralOtTemplateRequest:
     }
 
     def __init__(self):
-        """AddGeneralOtTemplateRequest
+        r"""AddGeneralOtTemplateRequest
 
         The model defined in huaweicloud sdk
 

@@ -28,7 +28,7 @@ class UpdateCloudConnectionResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, cloud_connection=None):
-        """UpdateCloudConnectionResponse
+        r"""UpdateCloudConnectionResponse
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateCloudConnectionResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this UpdateCloudConnectionResponse.
+        r"""Gets the request_id of this UpdateCloudConnectionResponse.
 
         请求ID。
 
@@ -60,7 +60,7 @@ class UpdateCloudConnectionResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this UpdateCloudConnectionResponse.
+        r"""Sets the request_id of this UpdateCloudConnectionResponse.
 
         请求ID。
 
@@ -71,7 +71,7 @@ class UpdateCloudConnectionResponse(SdkResponse):
 
     @property
     def cloud_connection(self):
-        """Gets the cloud_connection of this UpdateCloudConnectionResponse.
+        r"""Gets the cloud_connection of this UpdateCloudConnectionResponse.
 
         :return: The cloud_connection of this UpdateCloudConnectionResponse.
         :rtype: :class:`huaweicloudsdkcc.v3.CloudConnection`
@@ -80,7 +80,7 @@ class UpdateCloudConnectionResponse(SdkResponse):
 
     @cloud_connection.setter
     def cloud_connection(self, cloud_connection):
-        """Sets the cloud_connection of this UpdateCloudConnectionResponse.
+        r"""Sets the cloud_connection of this UpdateCloudConnectionResponse.
 
         :param cloud_connection: The cloud_connection of this UpdateCloudConnectionResponse.
         :type cloud_connection: :class:`huaweicloudsdkcc.v3.CloudConnection`

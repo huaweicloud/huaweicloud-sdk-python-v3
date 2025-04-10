@@ -25,7 +25,7 @@ class UpdateMessageTemplateRequestBody:
     }
 
     def __init__(self, content=None):
-        """UpdateMessageTemplateRequestBody
+        r"""UpdateMessageTemplateRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateMessageTemplateRequestBody:
 
     @property
     def content(self):
-        """Gets the content of this UpdateMessageTemplateRequestBody.
+        r"""Gets the content of this UpdateMessageTemplateRequestBody.
 
         模板内容。
 
@@ -53,7 +53,7 @@ class UpdateMessageTemplateRequestBody:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this UpdateMessageTemplateRequestBody.
+        r"""Sets the content of this UpdateMessageTemplateRequestBody.
 
         模板内容。
 

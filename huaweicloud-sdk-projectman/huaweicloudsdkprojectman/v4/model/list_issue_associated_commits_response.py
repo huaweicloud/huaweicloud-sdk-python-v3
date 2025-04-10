@@ -28,7 +28,7 @@ class ListIssueAssociatedCommitsResponse(SdkResponse):
     }
 
     def __init__(self, commits=None, total=None):
-        """ListIssueAssociatedCommitsResponse
+        r"""ListIssueAssociatedCommitsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListIssueAssociatedCommitsResponse(SdkResponse):
 
     @property
     def commits(self):
-        """Gets the commits of this ListIssueAssociatedCommitsResponse.
+        r"""Gets the commits of this ListIssueAssociatedCommitsResponse.
 
         提交记录列表
 
@@ -62,7 +62,7 @@ class ListIssueAssociatedCommitsResponse(SdkResponse):
 
     @commits.setter
     def commits(self, commits):
-        """Sets the commits of this ListIssueAssociatedCommitsResponse.
+        r"""Sets the commits of this ListIssueAssociatedCommitsResponse.
 
         提交记录列表
 
@@ -73,7 +73,7 @@ class ListIssueAssociatedCommitsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListIssueAssociatedCommitsResponse.
+        r"""Gets the total of this ListIssueAssociatedCommitsResponse.
 
         总数
 
@@ -84,7 +84,7 @@ class ListIssueAssociatedCommitsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListIssueAssociatedCommitsResponse.
+        r"""Sets the total of this ListIssueAssociatedCommitsResponse.
 
         总数
 

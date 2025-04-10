@@ -25,7 +25,7 @@ class BatchDeleteScalingConfigOption:
     }
 
     def __init__(self, scaling_configuration_id=None):
-        """BatchDeleteScalingConfigOption
+        r"""BatchDeleteScalingConfigOption
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchDeleteScalingConfigOption:
 
     @property
     def scaling_configuration_id(self):
-        """Gets the scaling_configuration_id of this BatchDeleteScalingConfigOption.
+        r"""Gets the scaling_configuration_id of this BatchDeleteScalingConfigOption.
 
         伸缩配置ID。
 
@@ -53,7 +53,7 @@ class BatchDeleteScalingConfigOption:
 
     @scaling_configuration_id.setter
     def scaling_configuration_id(self, scaling_configuration_id):
-        """Sets the scaling_configuration_id of this BatchDeleteScalingConfigOption.
+        r"""Sets the scaling_configuration_id of this BatchDeleteScalingConfigOption.
 
         伸缩配置ID。
 

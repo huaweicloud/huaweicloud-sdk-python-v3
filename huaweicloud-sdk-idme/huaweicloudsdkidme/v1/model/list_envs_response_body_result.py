@@ -69,7 +69,7 @@ class ListEnvsResponseBodyResult:
     }
 
     def __init__(self, project_id=None, region_id=None, env_id=None, env_name=None, env_status=None, env_app_link_status=None, env_app_link_status_msg=None, endpoint=None, job_id=None, env_conf_info=None, app_id=None, app_version=None, app_name_en=None, app_name_cn=None, enabled=None, expire_time=None, last_deploy_time=None, deploy_user_id=None, charging_mode=None, create_time=None, resource_id=None, deployable=None, uninstallable=None):
-        """ListEnvsResponseBodyResult
+        r"""ListEnvsResponseBodyResult
 
         The model defined in huaweicloud sdk
 
@@ -197,7 +197,7 @@ class ListEnvsResponseBodyResult:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListEnvsResponseBodyResult.
+        r"""Gets the project_id of this ListEnvsResponseBodyResult.
 
         项目ID。
 
@@ -208,7 +208,7 @@ class ListEnvsResponseBodyResult:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListEnvsResponseBodyResult.
+        r"""Sets the project_id of this ListEnvsResponseBodyResult.
 
         项目ID。
 
@@ -219,7 +219,7 @@ class ListEnvsResponseBodyResult:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ListEnvsResponseBodyResult.
+        r"""Gets the region_id of this ListEnvsResponseBodyResult.
 
         区域ID。
 
@@ -230,7 +230,7 @@ class ListEnvsResponseBodyResult:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ListEnvsResponseBodyResult.
+        r"""Sets the region_id of this ListEnvsResponseBodyResult.
 
         区域ID。
 
@@ -241,7 +241,7 @@ class ListEnvsResponseBodyResult:
 
     @property
     def env_id(self):
-        """Gets the env_id of this ListEnvsResponseBodyResult.
+        r"""Gets the env_id of this ListEnvsResponseBodyResult.
 
         运行服务的ID。
 
@@ -252,7 +252,7 @@ class ListEnvsResponseBodyResult:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this ListEnvsResponseBodyResult.
+        r"""Sets the env_id of this ListEnvsResponseBodyResult.
 
         运行服务的ID。
 
@@ -263,7 +263,7 @@ class ListEnvsResponseBodyResult:
 
     @property
     def env_name(self):
-        """Gets the env_name of this ListEnvsResponseBodyResult.
+        r"""Gets the env_name of this ListEnvsResponseBodyResult.
 
         运行服务的名称。
 
@@ -274,7 +274,7 @@ class ListEnvsResponseBodyResult:
 
     @env_name.setter
     def env_name(self, env_name):
-        """Sets the env_name of this ListEnvsResponseBodyResult.
+        r"""Sets the env_name of this ListEnvsResponseBodyResult.
 
         运行服务的名称。
 
@@ -285,7 +285,7 @@ class ListEnvsResponseBodyResult:
 
     @property
     def env_status(self):
-        """Gets the env_status of this ListEnvsResponseBodyResult.
+        r"""Gets the env_status of this ListEnvsResponseBodyResult.
 
         运行服务的状态。
 
@@ -296,7 +296,7 @@ class ListEnvsResponseBodyResult:
 
     @env_status.setter
     def env_status(self, env_status):
-        """Sets the env_status of this ListEnvsResponseBodyResult.
+        r"""Sets the env_status of this ListEnvsResponseBodyResult.
 
         运行服务的状态。
 
@@ -307,7 +307,7 @@ class ListEnvsResponseBodyResult:
 
     @property
     def env_app_link_status(self):
-        """Gets the env_app_link_status of this ListEnvsResponseBodyResult.
+        r"""Gets the env_app_link_status of this ListEnvsResponseBodyResult.
 
         运行服务与应用间的状态。
 
@@ -318,7 +318,7 @@ class ListEnvsResponseBodyResult:
 
     @env_app_link_status.setter
     def env_app_link_status(self, env_app_link_status):
-        """Sets the env_app_link_status of this ListEnvsResponseBodyResult.
+        r"""Sets the env_app_link_status of this ListEnvsResponseBodyResult.
 
         运行服务与应用间的状态。
 
@@ -329,7 +329,7 @@ class ListEnvsResponseBodyResult:
 
     @property
     def env_app_link_status_msg(self):
-        """Gets the env_app_link_status_msg of this ListEnvsResponseBodyResult.
+        r"""Gets the env_app_link_status_msg of this ListEnvsResponseBodyResult.
 
         运行服务与应用间的状态信息。
 
@@ -340,7 +340,7 @@ class ListEnvsResponseBodyResult:
 
     @env_app_link_status_msg.setter
     def env_app_link_status_msg(self, env_app_link_status_msg):
-        """Sets the env_app_link_status_msg of this ListEnvsResponseBodyResult.
+        r"""Sets the env_app_link_status_msg of this ListEnvsResponseBodyResult.
 
         运行服务与应用间的状态信息。
 
@@ -351,7 +351,7 @@ class ListEnvsResponseBodyResult:
 
     @property
     def endpoint(self):
-        """Gets the endpoint of this ListEnvsResponseBodyResult.
+        r"""Gets the endpoint of this ListEnvsResponseBodyResult.
 
         访问方式。
 
@@ -362,7 +362,7 @@ class ListEnvsResponseBodyResult:
 
     @endpoint.setter
     def endpoint(self, endpoint):
-        """Sets the endpoint of this ListEnvsResponseBodyResult.
+        r"""Sets the endpoint of this ListEnvsResponseBodyResult.
 
         访问方式。
 
@@ -373,7 +373,7 @@ class ListEnvsResponseBodyResult:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ListEnvsResponseBodyResult.
+        r"""Gets the job_id of this ListEnvsResponseBodyResult.
 
         创建运行服务的jobId。
 
@@ -384,7 +384,7 @@ class ListEnvsResponseBodyResult:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ListEnvsResponseBodyResult.
+        r"""Sets the job_id of this ListEnvsResponseBodyResult.
 
         创建运行服务的jobId。
 
@@ -395,7 +395,7 @@ class ListEnvsResponseBodyResult:
 
     @property
     def env_conf_info(self):
-        """Gets the env_conf_info of this ListEnvsResponseBodyResult.
+        r"""Gets the env_conf_info of this ListEnvsResponseBodyResult.
 
         运行服务的配置信息。
 
@@ -406,7 +406,7 @@ class ListEnvsResponseBodyResult:
 
     @env_conf_info.setter
     def env_conf_info(self, env_conf_info):
-        """Sets the env_conf_info of this ListEnvsResponseBodyResult.
+        r"""Sets the env_conf_info of this ListEnvsResponseBodyResult.
 
         运行服务的配置信息。
 
@@ -417,7 +417,7 @@ class ListEnvsResponseBodyResult:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ListEnvsResponseBodyResult.
+        r"""Gets the app_id of this ListEnvsResponseBodyResult.
 
         部署的应用ID。
 
@@ -428,7 +428,7 @@ class ListEnvsResponseBodyResult:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ListEnvsResponseBodyResult.
+        r"""Sets the app_id of this ListEnvsResponseBodyResult.
 
         部署的应用ID。
 
@@ -439,7 +439,7 @@ class ListEnvsResponseBodyResult:
 
     @property
     def app_version(self):
-        """Gets the app_version of this ListEnvsResponseBodyResult.
+        r"""Gets the app_version of this ListEnvsResponseBodyResult.
 
         部署的应用版本。
 
@@ -450,7 +450,7 @@ class ListEnvsResponseBodyResult:
 
     @app_version.setter
     def app_version(self, app_version):
-        """Sets the app_version of this ListEnvsResponseBodyResult.
+        r"""Sets the app_version of this ListEnvsResponseBodyResult.
 
         部署的应用版本。
 
@@ -461,7 +461,7 @@ class ListEnvsResponseBodyResult:
 
     @property
     def app_name_en(self):
-        """Gets the app_name_en of this ListEnvsResponseBodyResult.
+        r"""Gets the app_name_en of this ListEnvsResponseBodyResult.
 
         部署应用的英文名称。
 
@@ -472,7 +472,7 @@ class ListEnvsResponseBodyResult:
 
     @app_name_en.setter
     def app_name_en(self, app_name_en):
-        """Sets the app_name_en of this ListEnvsResponseBodyResult.
+        r"""Sets the app_name_en of this ListEnvsResponseBodyResult.
 
         部署应用的英文名称。
 
@@ -483,7 +483,7 @@ class ListEnvsResponseBodyResult:
 
     @property
     def app_name_cn(self):
-        """Gets the app_name_cn of this ListEnvsResponseBodyResult.
+        r"""Gets the app_name_cn of this ListEnvsResponseBodyResult.
 
         部署应用的中文名称。
 
@@ -494,7 +494,7 @@ class ListEnvsResponseBodyResult:
 
     @app_name_cn.setter
     def app_name_cn(self, app_name_cn):
-        """Sets the app_name_cn of this ListEnvsResponseBodyResult.
+        r"""Sets the app_name_cn of this ListEnvsResponseBodyResult.
 
         部署应用的中文名称。
 
@@ -505,7 +505,7 @@ class ListEnvsResponseBodyResult:
 
     @property
     def enabled(self):
-        """Gets the enabled of this ListEnvsResponseBodyResult.
+        r"""Gets the enabled of this ListEnvsResponseBodyResult.
 
         应用是否可用。 - 0：被认为是false。 - 非0：被认为是true。
 
@@ -516,7 +516,7 @@ class ListEnvsResponseBodyResult:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this ListEnvsResponseBodyResult.
+        r"""Sets the enabled of this ListEnvsResponseBodyResult.
 
         应用是否可用。 - 0：被认为是false。 - 非0：被认为是true。
 
@@ -527,7 +527,7 @@ class ListEnvsResponseBodyResult:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this ListEnvsResponseBodyResult.
+        r"""Gets the expire_time of this ListEnvsResponseBodyResult.
 
         运行服务的过期时间。
 
@@ -538,7 +538,7 @@ class ListEnvsResponseBodyResult:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this ListEnvsResponseBodyResult.
+        r"""Sets the expire_time of this ListEnvsResponseBodyResult.
 
         运行服务的过期时间。
 
@@ -549,7 +549,7 @@ class ListEnvsResponseBodyResult:
 
     @property
     def last_deploy_time(self):
-        """Gets the last_deploy_time of this ListEnvsResponseBodyResult.
+        r"""Gets the last_deploy_time of this ListEnvsResponseBodyResult.
 
         最后部署时间。
 
@@ -560,7 +560,7 @@ class ListEnvsResponseBodyResult:
 
     @last_deploy_time.setter
     def last_deploy_time(self, last_deploy_time):
-        """Sets the last_deploy_time of this ListEnvsResponseBodyResult.
+        r"""Sets the last_deploy_time of this ListEnvsResponseBodyResult.
 
         最后部署时间。
 
@@ -571,7 +571,7 @@ class ListEnvsResponseBodyResult:
 
     @property
     def deploy_user_id(self):
-        """Gets the deploy_user_id of this ListEnvsResponseBodyResult.
+        r"""Gets the deploy_user_id of this ListEnvsResponseBodyResult.
 
         上次部署应用的IAM用户ID。
 
@@ -582,7 +582,7 @@ class ListEnvsResponseBodyResult:
 
     @deploy_user_id.setter
     def deploy_user_id(self, deploy_user_id):
-        """Sets the deploy_user_id of this ListEnvsResponseBodyResult.
+        r"""Sets the deploy_user_id of this ListEnvsResponseBodyResult.
 
         上次部署应用的IAM用户ID。
 
@@ -593,7 +593,7 @@ class ListEnvsResponseBodyResult:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this ListEnvsResponseBodyResult.
+        r"""Gets the charging_mode of this ListEnvsResponseBodyResult.
 
         计费模式。
 
@@ -604,7 +604,7 @@ class ListEnvsResponseBodyResult:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this ListEnvsResponseBodyResult.
+        r"""Sets the charging_mode of this ListEnvsResponseBodyResult.
 
         计费模式。
 
@@ -615,7 +615,7 @@ class ListEnvsResponseBodyResult:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ListEnvsResponseBodyResult.
+        r"""Gets the create_time of this ListEnvsResponseBodyResult.
 
         运行服务的创建时间。
 
@@ -626,7 +626,7 @@ class ListEnvsResponseBodyResult:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ListEnvsResponseBodyResult.
+        r"""Sets the create_time of this ListEnvsResponseBodyResult.
 
         运行服务的创建时间。
 
@@ -637,7 +637,7 @@ class ListEnvsResponseBodyResult:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ListEnvsResponseBodyResult.
+        r"""Gets the resource_id of this ListEnvsResponseBodyResult.
 
         绑定主资源ID。
 
@@ -648,7 +648,7 @@ class ListEnvsResponseBodyResult:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ListEnvsResponseBodyResult.
+        r"""Sets the resource_id of this ListEnvsResponseBodyResult.
 
         绑定主资源ID。
 
@@ -659,7 +659,7 @@ class ListEnvsResponseBodyResult:
 
     @property
     def deployable(self):
-        """Gets the deployable of this ListEnvsResponseBodyResult.
+        r"""Gets the deployable of this ListEnvsResponseBodyResult.
 
         是否支持部署。
 
@@ -670,7 +670,7 @@ class ListEnvsResponseBodyResult:
 
     @deployable.setter
     def deployable(self, deployable):
-        """Sets the deployable of this ListEnvsResponseBodyResult.
+        r"""Sets the deployable of this ListEnvsResponseBodyResult.
 
         是否支持部署。
 
@@ -681,7 +681,7 @@ class ListEnvsResponseBodyResult:
 
     @property
     def uninstallable(self):
-        """Gets the uninstallable of this ListEnvsResponseBodyResult.
+        r"""Gets the uninstallable of this ListEnvsResponseBodyResult.
 
         是否支持卸载。
 
@@ -692,7 +692,7 @@ class ListEnvsResponseBodyResult:
 
     @uninstallable.setter
     def uninstallable(self, uninstallable):
-        """Sets the uninstallable of this ListEnvsResponseBodyResult.
+        r"""Sets the uninstallable of this ListEnvsResponseBodyResult.
 
         是否支持卸载。
 

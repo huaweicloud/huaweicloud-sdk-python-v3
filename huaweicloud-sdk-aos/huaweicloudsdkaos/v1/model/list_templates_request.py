@@ -25,7 +25,7 @@ class ListTemplatesRequest:
     }
 
     def __init__(self, client_request_id=None):
-        """ListTemplatesRequest
+        r"""ListTemplatesRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListTemplatesRequest:
 
     @property
     def client_request_id(self):
-        """Gets the client_request_id of this ListTemplatesRequest.
+        r"""Gets the client_request_id of this ListTemplatesRequest.
 
         用户指定的，对于此请求的唯一ID，用于定位某个请求，推荐使用UUID
 
@@ -53,7 +53,7 @@ class ListTemplatesRequest:
 
     @client_request_id.setter
     def client_request_id(self, client_request_id):
-        """Sets the client_request_id of this ListTemplatesRequest.
+        r"""Sets the client_request_id of this ListTemplatesRequest.
 
         用户指定的，对于此请求的唯一ID，用于定位某个请求，推荐使用UUID
 

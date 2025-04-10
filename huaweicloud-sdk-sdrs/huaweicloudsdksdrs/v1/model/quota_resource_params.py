@@ -33,7 +33,7 @@ class QuotaResourceParams:
     }
 
     def __init__(self, type=None, used=None, quota=None, min=None, max=None):
-        """QuotaResourceParams
+        r"""QuotaResourceParams
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class QuotaResourceParams:
 
     @property
     def type(self):
-        """Gets the type of this QuotaResourceParams.
+        r"""Gets the type of this QuotaResourceParams.
 
         资源类型server_groups：表示保护组资源类型。replications：表示复制对资源类型。
 
@@ -77,7 +77,7 @@ class QuotaResourceParams:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this QuotaResourceParams.
+        r"""Sets the type of this QuotaResourceParams.
 
         资源类型server_groups：表示保护组资源类型。replications：表示复制对资源类型。
 
@@ -88,7 +88,7 @@ class QuotaResourceParams:
 
     @property
     def used(self):
-        """Gets the used of this QuotaResourceParams.
+        r"""Gets the used of this QuotaResourceParams.
 
         已经使用的资源个数。
 
@@ -99,7 +99,7 @@ class QuotaResourceParams:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this QuotaResourceParams.
+        r"""Sets the used of this QuotaResourceParams.
 
         已经使用的资源个数。
 
@@ -110,7 +110,7 @@ class QuotaResourceParams:
 
     @property
     def quota(self):
-        """Gets the quota of this QuotaResourceParams.
+        r"""Gets the quota of this QuotaResourceParams.
 
         资源配额。-1：表示无穷大。
 
@@ -121,7 +121,7 @@ class QuotaResourceParams:
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this QuotaResourceParams.
+        r"""Sets the quota of this QuotaResourceParams.
 
         资源配额。-1：表示无穷大。
 
@@ -132,7 +132,7 @@ class QuotaResourceParams:
 
     @property
     def min(self):
-        """Gets the min of this QuotaResourceParams.
+        r"""Gets the min of this QuotaResourceParams.
 
         设置该资源配额允许的最小值。
 
@@ -143,7 +143,7 @@ class QuotaResourceParams:
 
     @min.setter
     def min(self, min):
-        """Sets the min of this QuotaResourceParams.
+        r"""Sets the min of this QuotaResourceParams.
 
         设置该资源配额允许的最小值。
 
@@ -154,7 +154,7 @@ class QuotaResourceParams:
 
     @property
     def max(self):
-        """Gets the max of this QuotaResourceParams.
+        r"""Gets the max of this QuotaResourceParams.
 
         设置该资源配额允许的最大值。-1：表示无穷大。
 
@@ -165,7 +165,7 @@ class QuotaResourceParams:
 
     @max.setter
     def max(self, max):
-        """Sets the max of this QuotaResourceParams.
+        r"""Sets the max of this QuotaResourceParams.
 
         设置该资源配额允许的最大值。-1：表示无穷大。
 

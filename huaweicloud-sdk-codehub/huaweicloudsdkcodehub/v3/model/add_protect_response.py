@@ -43,7 +43,7 @@ class AddProtectResponse:
     }
 
     def __init__(self, name=None, commit=None, protected=None, developers_can_push=None, developers_can_merge=None, master_can_push=None, master_can_merge=None, no_one_can_push=None, no_one_can_merge=None, in_an_opened_merge_request=None):
-        """AddProtectResponse
+        r"""AddProtectResponse
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class AddProtectResponse:
 
     @property
     def name(self):
-        """Gets the name of this AddProtectResponse.
+        r"""Gets the name of this AddProtectResponse.
 
         分支名称
 
@@ -117,7 +117,7 @@ class AddProtectResponse:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AddProtectResponse.
+        r"""Sets the name of this AddProtectResponse.
 
         分支名称
 
@@ -128,7 +128,7 @@ class AddProtectResponse:
 
     @property
     def commit(self):
-        """Gets the commit of this AddProtectResponse.
+        r"""Gets the commit of this AddProtectResponse.
 
         :return: The commit of this AddProtectResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.CommitRepoV2`
@@ -137,7 +137,7 @@ class AddProtectResponse:
 
     @commit.setter
     def commit(self, commit):
-        """Sets the commit of this AddProtectResponse.
+        r"""Sets the commit of this AddProtectResponse.
 
         :param commit: The commit of this AddProtectResponse.
         :type commit: :class:`huaweicloudsdkcodehub.v3.CommitRepoV2`
@@ -146,7 +146,7 @@ class AddProtectResponse:
 
     @property
     def protected(self):
-        """Gets the protected of this AddProtectResponse.
+        r"""Gets the protected of this AddProtectResponse.
 
         是否保护
 
@@ -157,7 +157,7 @@ class AddProtectResponse:
 
     @protected.setter
     def protected(self, protected):
-        """Sets the protected of this AddProtectResponse.
+        r"""Sets the protected of this AddProtectResponse.
 
         是否保护
 
@@ -168,7 +168,7 @@ class AddProtectResponse:
 
     @property
     def developers_can_push(self):
-        """Gets the developers_can_push of this AddProtectResponse.
+        r"""Gets the developers_can_push of this AddProtectResponse.
 
         是否允许开发者提交
 
@@ -179,7 +179,7 @@ class AddProtectResponse:
 
     @developers_can_push.setter
     def developers_can_push(self, developers_can_push):
-        """Sets the developers_can_push of this AddProtectResponse.
+        r"""Sets the developers_can_push of this AddProtectResponse.
 
         是否允许开发者提交
 
@@ -190,7 +190,7 @@ class AddProtectResponse:
 
     @property
     def developers_can_merge(self):
-        """Gets the developers_can_merge of this AddProtectResponse.
+        r"""Gets the developers_can_merge of this AddProtectResponse.
 
         是否允许开发者合并
 
@@ -201,7 +201,7 @@ class AddProtectResponse:
 
     @developers_can_merge.setter
     def developers_can_merge(self, developers_can_merge):
-        """Sets the developers_can_merge of this AddProtectResponse.
+        r"""Sets the developers_can_merge of this AddProtectResponse.
 
         是否允许开发者合并
 
@@ -212,7 +212,7 @@ class AddProtectResponse:
 
     @property
     def master_can_push(self):
-        """Gets the master_can_push of this AddProtectResponse.
+        r"""Gets the master_can_push of this AddProtectResponse.
 
         是否允许管理员提交
 
@@ -223,7 +223,7 @@ class AddProtectResponse:
 
     @master_can_push.setter
     def master_can_push(self, master_can_push):
-        """Sets the master_can_push of this AddProtectResponse.
+        r"""Sets the master_can_push of this AddProtectResponse.
 
         是否允许管理员提交
 
@@ -234,7 +234,7 @@ class AddProtectResponse:
 
     @property
     def master_can_merge(self):
-        """Gets the master_can_merge of this AddProtectResponse.
+        r"""Gets the master_can_merge of this AddProtectResponse.
 
         是否允许管理员合并
 
@@ -245,7 +245,7 @@ class AddProtectResponse:
 
     @master_can_merge.setter
     def master_can_merge(self, master_can_merge):
-        """Sets the master_can_merge of this AddProtectResponse.
+        r"""Sets the master_can_merge of this AddProtectResponse.
 
         是否允许管理员合并
 
@@ -256,7 +256,7 @@ class AddProtectResponse:
 
     @property
     def no_one_can_push(self):
-        """Gets the no_one_can_push of this AddProtectResponse.
+        r"""Gets the no_one_can_push of this AddProtectResponse.
 
         没有人允许提交
 
@@ -267,7 +267,7 @@ class AddProtectResponse:
 
     @no_one_can_push.setter
     def no_one_can_push(self, no_one_can_push):
-        """Sets the no_one_can_push of this AddProtectResponse.
+        r"""Sets the no_one_can_push of this AddProtectResponse.
 
         没有人允许提交
 
@@ -278,7 +278,7 @@ class AddProtectResponse:
 
     @property
     def no_one_can_merge(self):
-        """Gets the no_one_can_merge of this AddProtectResponse.
+        r"""Gets the no_one_can_merge of this AddProtectResponse.
 
         没有人允许合并
 
@@ -289,7 +289,7 @@ class AddProtectResponse:
 
     @no_one_can_merge.setter
     def no_one_can_merge(self, no_one_can_merge):
-        """Sets the no_one_can_merge of this AddProtectResponse.
+        r"""Sets the no_one_can_merge of this AddProtectResponse.
 
         没有人允许合并
 
@@ -300,7 +300,7 @@ class AddProtectResponse:
 
     @property
     def in_an_opened_merge_request(self):
-        """Gets the in_an_opened_merge_request of this AddProtectResponse.
+        r"""Gets the in_an_opened_merge_request of this AddProtectResponse.
 
         是否在一个打开的合并请求
 
@@ -311,7 +311,7 @@ class AddProtectResponse:
 
     @in_an_opened_merge_request.setter
     def in_an_opened_merge_request(self, in_an_opened_merge_request):
-        """Sets the in_an_opened_merge_request of this AddProtectResponse.
+        r"""Sets the in_an_opened_merge_request of this AddProtectResponse.
 
         是否在一个打开的合并请求
 

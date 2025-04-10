@@ -41,7 +41,7 @@ class KeystoneUpdateProjectResult:
     }
 
     def __init__(self, is_domain=None, description=None, extra=None, links=None, enabled=None, id=None, parent_id=None, domain_id=None, name=None):
-        """KeystoneUpdateProjectResult
+        r"""KeystoneUpdateProjectResult
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class KeystoneUpdateProjectResult:
 
     @property
     def is_domain(self):
-        """Gets the is_domain of this KeystoneUpdateProjectResult.
+        r"""Gets the is_domain of this KeystoneUpdateProjectResult.
 
         false.
 
@@ -102,7 +102,7 @@ class KeystoneUpdateProjectResult:
 
     @is_domain.setter
     def is_domain(self, is_domain):
-        """Sets the is_domain of this KeystoneUpdateProjectResult.
+        r"""Sets the is_domain of this KeystoneUpdateProjectResult.
 
         false.
 
@@ -113,7 +113,7 @@ class KeystoneUpdateProjectResult:
 
     @property
     def description(self):
-        """Gets the description of this KeystoneUpdateProjectResult.
+        r"""Gets the description of this KeystoneUpdateProjectResult.
 
         项目描述信息。
 
@@ -124,7 +124,7 @@ class KeystoneUpdateProjectResult:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this KeystoneUpdateProjectResult.
+        r"""Sets the description of this KeystoneUpdateProjectResult.
 
         项目描述信息。
 
@@ -135,7 +135,7 @@ class KeystoneUpdateProjectResult:
 
     @property
     def extra(self):
-        """Gets the extra of this KeystoneUpdateProjectResult.
+        r"""Gets the extra of this KeystoneUpdateProjectResult.
 
         项目的其他信息。
 
@@ -146,7 +146,7 @@ class KeystoneUpdateProjectResult:
 
     @extra.setter
     def extra(self, extra):
-        """Sets the extra of this KeystoneUpdateProjectResult.
+        r"""Sets the extra of this KeystoneUpdateProjectResult.
 
         项目的其他信息。
 
@@ -157,7 +157,7 @@ class KeystoneUpdateProjectResult:
 
     @property
     def links(self):
-        """Gets the links of this KeystoneUpdateProjectResult.
+        r"""Gets the links of this KeystoneUpdateProjectResult.
 
         :return: The links of this KeystoneUpdateProjectResult.
         :rtype: :class:`huaweicloudsdkiam.v3.LinksSelf`
@@ -166,7 +166,7 @@ class KeystoneUpdateProjectResult:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this KeystoneUpdateProjectResult.
+        r"""Sets the links of this KeystoneUpdateProjectResult.
 
         :param links: The links of this KeystoneUpdateProjectResult.
         :type links: :class:`huaweicloudsdkiam.v3.LinksSelf`
@@ -175,7 +175,7 @@ class KeystoneUpdateProjectResult:
 
     @property
     def enabled(self):
-        """Gets the enabled of this KeystoneUpdateProjectResult.
+        r"""Gets the enabled of this KeystoneUpdateProjectResult.
 
         项目是否可用。
 
@@ -186,7 +186,7 @@ class KeystoneUpdateProjectResult:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this KeystoneUpdateProjectResult.
+        r"""Sets the enabled of this KeystoneUpdateProjectResult.
 
         项目是否可用。
 
@@ -197,7 +197,7 @@ class KeystoneUpdateProjectResult:
 
     @property
     def id(self):
-        """Gets the id of this KeystoneUpdateProjectResult.
+        r"""Gets the id of this KeystoneUpdateProjectResult.
 
         项目ID。
 
@@ -208,7 +208,7 @@ class KeystoneUpdateProjectResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this KeystoneUpdateProjectResult.
+        r"""Sets the id of this KeystoneUpdateProjectResult.
 
         项目ID。
 
@@ -219,7 +219,7 @@ class KeystoneUpdateProjectResult:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this KeystoneUpdateProjectResult.
+        r"""Gets the parent_id of this KeystoneUpdateProjectResult.
 
         区域对应的项目ID，例如区域“华北-北京一”区域对应的项目ID为：04dd42abe48026ad2fa3c01ad7fa.....。
 
@@ -230,7 +230,7 @@ class KeystoneUpdateProjectResult:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this KeystoneUpdateProjectResult.
+        r"""Sets the parent_id of this KeystoneUpdateProjectResult.
 
         区域对应的项目ID，例如区域“华北-北京一”区域对应的项目ID为：04dd42abe48026ad2fa3c01ad7fa.....。
 
@@ -241,7 +241,7 @@ class KeystoneUpdateProjectResult:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this KeystoneUpdateProjectResult.
+        r"""Gets the domain_id of this KeystoneUpdateProjectResult.
 
         项目所属账号ID。
 
@@ -252,7 +252,7 @@ class KeystoneUpdateProjectResult:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this KeystoneUpdateProjectResult.
+        r"""Sets the domain_id of this KeystoneUpdateProjectResult.
 
         项目所属账号ID。
 
@@ -263,7 +263,7 @@ class KeystoneUpdateProjectResult:
 
     @property
     def name(self):
-        """Gets the name of this KeystoneUpdateProjectResult.
+        r"""Gets the name of this KeystoneUpdateProjectResult.
 
         项目名称。
 
@@ -274,7 +274,7 @@ class KeystoneUpdateProjectResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this KeystoneUpdateProjectResult.
+        r"""Sets the name of this KeystoneUpdateProjectResult.
 
         项目名称。
 

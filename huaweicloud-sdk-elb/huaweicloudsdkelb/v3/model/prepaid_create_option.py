@@ -31,7 +31,7 @@ class PrepaidCreateOption:
     }
 
     def __init__(self, period_type=None, period_num=None, auto_renew=None, auto_pay=None):
-        """PrepaidCreateOption
+        r"""PrepaidCreateOption
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class PrepaidCreateOption:
 
     @property
     def period_type(self):
-        """Gets the period_type of this PrepaidCreateOption.
+        r"""Gets the period_type of this PrepaidCreateOption.
 
         参数解释：预付费实例的订购周期类型，当前支持月和年。  取值范围：  - month：月。  - year：年。
 
@@ -74,7 +74,7 @@ class PrepaidCreateOption:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this PrepaidCreateOption.
+        r"""Sets the period_type of this PrepaidCreateOption.
 
         参数解释：预付费实例的订购周期类型，当前支持月和年。  取值范围：  - month：月。  - year：年。
 
@@ -85,7 +85,7 @@ class PrepaidCreateOption:
 
     @property
     def period_num(self):
-        """Gets the period_num of this PrepaidCreateOption.
+        r"""Gets the period_num of this PrepaidCreateOption.
 
         参数解释：预付费实例的订购周期数。  取值范围： - period_type为month时，为[1,9]。 - period_type为year时，为[1,3]。
 
@@ -96,7 +96,7 @@ class PrepaidCreateOption:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this PrepaidCreateOption.
+        r"""Sets the period_num of this PrepaidCreateOption.
 
         参数解释：预付费实例的订购周期数。  取值范围： - period_type为month时，为[1,9]。 - period_type为year时，为[1,3]。
 
@@ -107,7 +107,7 @@ class PrepaidCreateOption:
 
     @property
     def auto_renew(self):
-        """Gets the auto_renew of this PrepaidCreateOption.
+        r"""Gets the auto_renew of this PrepaidCreateOption.
 
         参数解释：自动续订开关。  取值范围： - true：开启自动续订。 - false：关闭自动续订。
 
@@ -118,7 +118,7 @@ class PrepaidCreateOption:
 
     @auto_renew.setter
     def auto_renew(self, auto_renew):
-        """Sets the auto_renew of this PrepaidCreateOption.
+        r"""Sets the auto_renew of this PrepaidCreateOption.
 
         参数解释：自动续订开关。  取值范围： - true：开启自动续订。 - false：关闭自动续订。
 
@@ -129,7 +129,7 @@ class PrepaidCreateOption:
 
     @property
     def auto_pay(self):
-        """Gets the auto_pay of this PrepaidCreateOption.
+        r"""Gets the auto_pay of this PrepaidCreateOption.
 
         参数解释：自动支付开关。下单订购后，是否自动从客户的账户中支付。  约束限制：开启自动支付时，只能使用账户的现金支付；如果要使用代金券，请选择关闭自动支付，然后在用户费用中心，选择代金券支付。  取值范围：  - true：开启自动支付。  - false：关闭自动支付。
 
@@ -140,7 +140,7 @@ class PrepaidCreateOption:
 
     @auto_pay.setter
     def auto_pay(self, auto_pay):
-        """Sets the auto_pay of this PrepaidCreateOption.
+        r"""Sets the auto_pay of this PrepaidCreateOption.
 
         参数解释：自动支付开关。下单订购后，是否自动从客户的账户中支付。  约束限制：开启自动支付时，只能使用账户的现金支付；如果要使用代金券，请选择关闭自动支付，然后在用户费用中心，选择代金券支付。  取值范围：  - true：开启自动支付。  - false：关闭自动支付。
 

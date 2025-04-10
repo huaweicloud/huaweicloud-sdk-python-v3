@@ -24,7 +24,7 @@ class UpdateDomainIp6SwitchResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateDomainIp6SwitchResponse
+        r"""UpdateDomainIp6SwitchResponse
 
         The model defined in huaweicloud sdk
 

@@ -28,7 +28,7 @@ class ShowPacifyWordsTriggerTimeResponse(SdkResponse):
     }
 
     def __init__(self, trigger_time=None, x_request_id=None):
-        """ShowPacifyWordsTriggerTimeResponse
+        r"""ShowPacifyWordsTriggerTimeResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowPacifyWordsTriggerTimeResponse(SdkResponse):
 
     @property
     def trigger_time(self):
-        """Gets the trigger_time of this ShowPacifyWordsTriggerTimeResponse.
+        r"""Gets the trigger_time of this ShowPacifyWordsTriggerTimeResponse.
 
         安抚话术等待触发时长，单位毫秒
 
@@ -62,7 +62,7 @@ class ShowPacifyWordsTriggerTimeResponse(SdkResponse):
 
     @trigger_time.setter
     def trigger_time(self, trigger_time):
-        """Sets the trigger_time of this ShowPacifyWordsTriggerTimeResponse.
+        r"""Sets the trigger_time of this ShowPacifyWordsTriggerTimeResponse.
 
         安抚话术等待触发时长，单位毫秒
 
@@ -73,7 +73,7 @@ class ShowPacifyWordsTriggerTimeResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowPacifyWordsTriggerTimeResponse.
+        r"""Gets the x_request_id of this ShowPacifyWordsTriggerTimeResponse.
 
         :return: The x_request_id of this ShowPacifyWordsTriggerTimeResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class ShowPacifyWordsTriggerTimeResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowPacifyWordsTriggerTimeResponse.
+        r"""Sets the x_request_id of this ShowPacifyWordsTriggerTimeResponse.
 
         :param x_request_id: The x_request_id of this ShowPacifyWordsTriggerTimeResponse.
         :type x_request_id: str

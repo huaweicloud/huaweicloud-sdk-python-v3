@@ -25,7 +25,7 @@ class CreateEventSchemaRequest:
     }
 
     def __init__(self, body=None):
-        """CreateEventSchemaRequest
+        r"""CreateEventSchemaRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateEventSchemaRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateEventSchemaRequest.
+        r"""Gets the body of this CreateEventSchemaRequest.
 
         :return: The body of this CreateEventSchemaRequest.
         :rtype: :class:`huaweicloudsdkeg.v1.CustomizeSchemaCreateReq`
@@ -52,7 +52,7 @@ class CreateEventSchemaRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateEventSchemaRequest.
+        r"""Sets the body of this CreateEventSchemaRequest.
 
         :param body: The body of this CreateEventSchemaRequest.
         :type body: :class:`huaweicloudsdkeg.v1.CustomizeSchemaCreateReq`

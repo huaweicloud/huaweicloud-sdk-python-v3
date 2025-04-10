@@ -27,7 +27,7 @@ class BlackWhiteListBody:
     }
 
     def __init__(self, type=None, ip_list=None):
-        """BlackWhiteListBody
+        r"""BlackWhiteListBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BlackWhiteListBody:
 
     @property
     def type(self):
-        """Gets the type of this BlackWhiteListBody.
+        r"""Gets the type of this BlackWhiteListBody.
 
         IP黑白名单类型（0：关闭IP黑白名单功能，1：黑名单，2：白名单）。
 
@@ -60,7 +60,7 @@ class BlackWhiteListBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this BlackWhiteListBody.
+        r"""Sets the type of this BlackWhiteListBody.
 
         IP黑白名单类型（0：关闭IP黑白名单功能，1：黑名单，2：白名单）。
 
@@ -71,7 +71,7 @@ class BlackWhiteListBody:
 
     @property
     def ip_list(self):
-        """Gets the ip_list of this BlackWhiteListBody.
+        r"""Gets the ip_list of this BlackWhiteListBody.
 
         IP黑白名单列表。
 
@@ -82,7 +82,7 @@ class BlackWhiteListBody:
 
     @ip_list.setter
     def ip_list(self, ip_list):
-        """Sets the ip_list of this BlackWhiteListBody.
+        r"""Sets the ip_list of this BlackWhiteListBody.
 
         IP黑白名单列表。
 

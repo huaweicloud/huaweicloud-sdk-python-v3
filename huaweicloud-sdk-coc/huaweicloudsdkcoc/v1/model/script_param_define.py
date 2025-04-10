@@ -33,7 +33,7 @@ class ScriptParamDefine:
     }
 
     def __init__(self, param_name=None, param_value=None, param_description=None, param_order=None, sensitive=None):
-        """ScriptParamDefine
+        r"""ScriptParamDefine
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class ScriptParamDefine:
 
     @property
     def param_name(self):
-        """Gets the param_name of this ScriptParamDefine.
+        r"""Gets the param_name of this ScriptParamDefine.
 
         参数名仅支持字母、数字以及下划线
 
@@ -77,7 +77,7 @@ class ScriptParamDefine:
 
     @param_name.setter
     def param_name(self, param_name):
-        """Sets the param_name of this ScriptParamDefine.
+        r"""Sets the param_name of this ScriptParamDefine.
 
         参数名仅支持字母、数字以及下划线
 
@@ -88,7 +88,7 @@ class ScriptParamDefine:
 
     @property
     def param_value(self):
-        """Gets the param_value of this ScriptParamDefine.
+        r"""Gets the param_value of this ScriptParamDefine.
 
         1.参数长度为1-4096位 2.可以包含大写字母、小写字母、数字及特殊字符(_-/.* ?:\",=+@#\\[{]}) 3.禁止出现连续'.'
 
@@ -99,7 +99,7 @@ class ScriptParamDefine:
 
     @param_value.setter
     def param_value(self, param_value):
-        """Sets the param_value of this ScriptParamDefine.
+        r"""Sets the param_value of this ScriptParamDefine.
 
         1.参数长度为1-4096位 2.可以包含大写字母、小写字母、数字及特殊字符(_-/.* ?:\",=+@#\\[{]}) 3.禁止出现连续'.'
 
@@ -110,7 +110,7 @@ class ScriptParamDefine:
 
     @property
     def param_description(self):
-        """Gets the param_description of this ScriptParamDefine.
+        r"""Gets the param_description of this ScriptParamDefine.
 
         参数描述
 
@@ -121,7 +121,7 @@ class ScriptParamDefine:
 
     @param_description.setter
     def param_description(self, param_description):
-        """Sets the param_description of this ScriptParamDefine.
+        r"""Sets the param_description of this ScriptParamDefine.
 
         参数描述
 
@@ -132,7 +132,7 @@ class ScriptParamDefine:
 
     @property
     def param_order(self):
-        """Gets the param_order of this ScriptParamDefine.
+        r"""Gets the param_order of this ScriptParamDefine.
 
         该参数已废弃，传入该参数不会生效。
 
@@ -143,7 +143,7 @@ class ScriptParamDefine:
 
     @param_order.setter
     def param_order(self, param_order):
-        """Sets the param_order of this ScriptParamDefine.
+        r"""Sets the param_order of this ScriptParamDefine.
 
         该参数已废弃，传入该参数不会生效。
 
@@ -154,7 +154,7 @@ class ScriptParamDefine:
 
     @property
     def sensitive(self):
-        """Gets the sensitive of this ScriptParamDefine.
+        r"""Gets the sensitive of this ScriptParamDefine.
 
         是否是敏感参数
 
@@ -165,7 +165,7 @@ class ScriptParamDefine:
 
     @sensitive.setter
     def sensitive(self, sensitive):
-        """Sets the sensitive of this ScriptParamDefine.
+        r"""Sets the sensitive of this ScriptParamDefine.
 
         是否是敏感参数
 

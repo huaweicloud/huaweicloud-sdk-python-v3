@@ -31,7 +31,7 @@ class UpdateDevice:
     }
 
     def __init__(self, device_name=None, description=None, extension_info=None, auth_info=None):
-        """UpdateDevice
+        r"""UpdateDevice
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class UpdateDevice:
 
     @property
     def device_name(self):
-        """Gets the device_name of this UpdateDevice.
+        r"""Gets the device_name of this UpdateDevice.
 
         **参数说明**：设备名称。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合，建议不少于4个字符。
 
@@ -75,7 +75,7 @@ class UpdateDevice:
 
     @device_name.setter
     def device_name(self, device_name):
-        """Sets the device_name of this UpdateDevice.
+        r"""Sets the device_name of this UpdateDevice.
 
         **参数说明**：设备名称。 **取值范围**：长度不超过256，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合，建议不少于4个字符。
 
@@ -86,7 +86,7 @@ class UpdateDevice:
 
     @property
     def description(self):
-        """Gets the description of this UpdateDevice.
+        r"""Gets the description of this UpdateDevice.
 
         **参数说明**：设备的描述信息。 **取值范围**：长度不超过2048，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合
 
@@ -97,7 +97,7 @@ class UpdateDevice:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateDevice.
+        r"""Sets the description of this UpdateDevice.
 
         **参数说明**：设备的描述信息。 **取值范围**：长度不超过2048，只允许中文、字母、数字、以及_?'#().,&%@!-等字符的组合
 
@@ -108,7 +108,7 @@ class UpdateDevice:
 
     @property
     def extension_info(self):
-        """Gets the extension_info of this UpdateDevice.
+        r"""Gets the extension_info of this UpdateDevice.
 
         **参数说明**：设备扩展信息。用户可以自定义任何想要的扩展信息，修改子设备信息时不会下发给网关。
 
@@ -119,7 +119,7 @@ class UpdateDevice:
 
     @extension_info.setter
     def extension_info(self, extension_info):
-        """Sets the extension_info of this UpdateDevice.
+        r"""Sets the extension_info of this UpdateDevice.
 
         **参数说明**：设备扩展信息。用户可以自定义任何想要的扩展信息，修改子设备信息时不会下发给网关。
 
@@ -130,7 +130,7 @@ class UpdateDevice:
 
     @property
     def auth_info(self):
-        """Gets the auth_info of this UpdateDevice.
+        r"""Gets the auth_info of this UpdateDevice.
 
         :return: The auth_info of this UpdateDevice.
         :rtype: :class:`huaweicloudsdkiotda.v5.AuthInfoWithoutSecret`
@@ -139,7 +139,7 @@ class UpdateDevice:
 
     @auth_info.setter
     def auth_info(self, auth_info):
-        """Sets the auth_info of this UpdateDevice.
+        r"""Sets the auth_info of this UpdateDevice.
 
         :param auth_info: The auth_info of this UpdateDevice.
         :type auth_info: :class:`huaweicloudsdkiotda.v5.AuthInfoWithoutSecret`

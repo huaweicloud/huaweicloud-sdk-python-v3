@@ -25,7 +25,7 @@ class ShowInstanceConfigsRequest:
     }
 
     def __init__(self, instance_id=None):
-        """ShowInstanceConfigsRequest
+        r"""ShowInstanceConfigsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowInstanceConfigsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowInstanceConfigsRequest.
+        r"""Gets the instance_id of this ShowInstanceConfigsRequest.
 
         实例ID。
 
@@ -53,7 +53,7 @@ class ShowInstanceConfigsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowInstanceConfigsRequest.
+        r"""Sets the instance_id of this ShowInstanceConfigsRequest.
 
         实例ID。
 

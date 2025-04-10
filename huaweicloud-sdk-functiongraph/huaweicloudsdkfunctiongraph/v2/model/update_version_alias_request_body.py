@@ -31,7 +31,7 @@ class UpdateVersionAliasRequestBody:
     }
 
     def __init__(self, version=None, description=None, additional_version_weights=None, additional_version_strategy=None):
-        """UpdateVersionAliasRequestBody
+        r"""UpdateVersionAliasRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class UpdateVersionAliasRequestBody:
 
     @property
     def version(self):
-        """Gets the version of this UpdateVersionAliasRequestBody.
+        r"""Gets the version of this UpdateVersionAliasRequestBody.
 
         别名对应的版本名称。
 
@@ -74,7 +74,7 @@ class UpdateVersionAliasRequestBody:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this UpdateVersionAliasRequestBody.
+        r"""Sets the version of this UpdateVersionAliasRequestBody.
 
         别名对应的版本名称。
 
@@ -85,7 +85,7 @@ class UpdateVersionAliasRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateVersionAliasRequestBody.
+        r"""Gets the description of this UpdateVersionAliasRequestBody.
 
         别名描述信息。
 
@@ -96,7 +96,7 @@ class UpdateVersionAliasRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateVersionAliasRequestBody.
+        r"""Sets the description of this UpdateVersionAliasRequestBody.
 
         别名描述信息。
 
@@ -107,7 +107,7 @@ class UpdateVersionAliasRequestBody:
 
     @property
     def additional_version_weights(self):
-        """Gets the additional_version_weights of this UpdateVersionAliasRequestBody.
+        r"""Gets the additional_version_weights of this UpdateVersionAliasRequestBody.
 
         灰度版本信息
 
@@ -118,7 +118,7 @@ class UpdateVersionAliasRequestBody:
 
     @additional_version_weights.setter
     def additional_version_weights(self, additional_version_weights):
-        """Sets the additional_version_weights of this UpdateVersionAliasRequestBody.
+        r"""Sets the additional_version_weights of this UpdateVersionAliasRequestBody.
 
         灰度版本信息
 
@@ -129,7 +129,7 @@ class UpdateVersionAliasRequestBody:
 
     @property
     def additional_version_strategy(self):
-        """Gets the additional_version_strategy of this UpdateVersionAliasRequestBody.
+        r"""Gets the additional_version_strategy of this UpdateVersionAliasRequestBody.
 
         指定规则灰度策略信息
 
@@ -140,7 +140,7 @@ class UpdateVersionAliasRequestBody:
 
     @additional_version_strategy.setter
     def additional_version_strategy(self, additional_version_strategy):
-        """Sets the additional_version_strategy of this UpdateVersionAliasRequestBody.
+        r"""Sets the additional_version_strategy of this UpdateVersionAliasRequestBody.
 
         指定规则灰度策略信息
 

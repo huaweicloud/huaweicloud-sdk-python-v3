@@ -33,7 +33,7 @@ class LogConfigInfo:
     }
 
     def __init__(self, enable_lts_log=None, enable_obs_log=None, obs_path=None, log_group_id=None, log_streams=None):
-        """LogConfigInfo
+        r"""LogConfigInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class LogConfigInfo:
 
     @property
     def enable_lts_log(self):
-        """Gets the enable_lts_log of this LogConfigInfo.
+        r"""Gets the enable_lts_log of this LogConfigInfo.
 
         是否开启日志并记录到LTS,默认不开启
 
@@ -82,7 +82,7 @@ class LogConfigInfo:
 
     @enable_lts_log.setter
     def enable_lts_log(self, enable_lts_log):
-        """Sets the enable_lts_log of this LogConfigInfo.
+        r"""Sets the enable_lts_log of this LogConfigInfo.
 
         是否开启日志并记录到LTS,默认不开启
 
@@ -93,7 +93,7 @@ class LogConfigInfo:
 
     @property
     def enable_obs_log(self):
-        """Gets the enable_obs_log of this LogConfigInfo.
+        r"""Gets the enable_obs_log of this LogConfigInfo.
 
         是否开启日志转储到OBS，默认不开启 开启的时候需要先开启日志记录到LTS，否则无法开启。
 
@@ -104,7 +104,7 @@ class LogConfigInfo:
 
     @enable_obs_log.setter
     def enable_obs_log(self, enable_obs_log):
-        """Sets the enable_obs_log of this LogConfigInfo.
+        r"""Sets the enable_obs_log of this LogConfigInfo.
 
         是否开启日志转储到OBS，默认不开启 开启的时候需要先开启日志记录到LTS，否则无法开启。
 
@@ -115,7 +115,7 @@ class LogConfigInfo:
 
     @property
     def obs_path(self):
-        """Gets the obs_path of this LogConfigInfo.
+        r"""Gets the obs_path of this LogConfigInfo.
 
         日志存储的OBS路径
 
@@ -126,7 +126,7 @@ class LogConfigInfo:
 
     @obs_path.setter
     def obs_path(self, obs_path):
-        """Sets the obs_path of this LogConfigInfo.
+        r"""Sets the obs_path of this LogConfigInfo.
 
         日志存储的OBS路径
 
@@ -137,7 +137,7 @@ class LogConfigInfo:
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this LogConfigInfo.
+        r"""Gets the log_group_id of this LogConfigInfo.
 
         日志组ID
 
@@ -148,7 +148,7 @@ class LogConfigInfo:
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this LogConfigInfo.
+        r"""Sets the log_group_id of this LogConfigInfo.
 
         日志组ID
 
@@ -159,7 +159,7 @@ class LogConfigInfo:
 
     @property
     def log_streams(self):
-        """Gets the log_streams of this LogConfigInfo.
+        r"""Gets the log_streams of this LogConfigInfo.
 
         日志流ID集合
 
@@ -170,7 +170,7 @@ class LogConfigInfo:
 
     @log_streams.setter
     def log_streams(self, log_streams):
-        """Sets the log_streams of this LogConfigInfo.
+        r"""Sets the log_streams of this LogConfigInfo.
 
         日志流ID集合
 

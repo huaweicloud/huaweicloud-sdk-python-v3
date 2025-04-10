@@ -27,7 +27,7 @@ class DeleteRuleRequest:
     }
 
     def __init__(self, ief_instance_id=None, rule_id=None):
-        """DeleteRuleRequest
+        r"""DeleteRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteRuleRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this DeleteRuleRequest.
+        r"""Gets the ief_instance_id of this DeleteRuleRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -60,7 +60,7 @@ class DeleteRuleRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this DeleteRuleRequest.
+        r"""Sets the ief_instance_id of this DeleteRuleRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -71,7 +71,7 @@ class DeleteRuleRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this DeleteRuleRequest.
+        r"""Gets the rule_id of this DeleteRuleRequest.
 
         规则ID
 
@@ -82,7 +82,7 @@ class DeleteRuleRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this DeleteRuleRequest.
+        r"""Sets the rule_id of this DeleteRuleRequest.
 
         规则ID
 

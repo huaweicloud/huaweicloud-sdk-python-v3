@@ -28,7 +28,7 @@ class DeregisterDelegatedAdministratorRequest:
     }
 
     def __init__(self, x_security_token=None, body=None):
-        """DeregisterDelegatedAdministratorRequest
+        r"""DeregisterDelegatedAdministratorRequest
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class DeregisterDelegatedAdministratorRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this DeregisterDelegatedAdministratorRequest.
+        r"""Gets the x_security_token of this DeregisterDelegatedAdministratorRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -62,7 +62,7 @@ class DeregisterDelegatedAdministratorRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this DeregisterDelegatedAdministratorRequest.
+        r"""Sets the x_security_token of this DeregisterDelegatedAdministratorRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -73,7 +73,7 @@ class DeregisterDelegatedAdministratorRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeregisterDelegatedAdministratorRequest.
+        r"""Gets the body of this DeregisterDelegatedAdministratorRequest.
 
         :return: The body of this DeregisterDelegatedAdministratorRequest.
         :rtype: :class:`huaweicloudsdkorganizations.v1.DelegatedAdministratorReqBody`
@@ -82,7 +82,7 @@ class DeregisterDelegatedAdministratorRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeregisterDelegatedAdministratorRequest.
+        r"""Sets the body of this DeregisterDelegatedAdministratorRequest.
 
         :param body: The body of this DeregisterDelegatedAdministratorRequest.
         :type body: :class:`huaweicloudsdkorganizations.v1.DelegatedAdministratorReqBody`

@@ -24,7 +24,7 @@ class CancelExtractAudioTaskResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CancelExtractAudioTaskResponse
+        r"""CancelExtractAudioTaskResponse
 
         The model defined in huaweicloud sdk
 

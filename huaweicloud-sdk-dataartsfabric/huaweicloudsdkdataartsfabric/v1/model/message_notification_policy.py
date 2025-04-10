@@ -33,7 +33,7 @@ class MessageNotificationPolicy:
     }
 
     def __init__(self, id=None, message_type=None, name_pattern=None, notification_types=None, topic_urn=None):
-        """MessageNotificationPolicy
+        r"""MessageNotificationPolicy
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class MessageNotificationPolicy:
 
     @property
     def id(self):
-        """Gets the id of this MessageNotificationPolicy.
+        r"""Gets the id of this MessageNotificationPolicy.
 
         id
 
@@ -77,7 +77,7 @@ class MessageNotificationPolicy:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MessageNotificationPolicy.
+        r"""Sets the id of this MessageNotificationPolicy.
 
         id
 
@@ -88,7 +88,7 @@ class MessageNotificationPolicy:
 
     @property
     def message_type(self):
-        """Gets the message_type of this MessageNotificationPolicy.
+        r"""Gets the message_type of this MessageNotificationPolicy.
 
         消息类型。job:任务执行结果。
 
@@ -99,7 +99,7 @@ class MessageNotificationPolicy:
 
     @message_type.setter
     def message_type(self, message_type):
-        """Sets the message_type of this MessageNotificationPolicy.
+        r"""Sets the message_type of this MessageNotificationPolicy.
 
         消息类型。job:任务执行结果。
 
@@ -110,7 +110,7 @@ class MessageNotificationPolicy:
 
     @property
     def name_pattern(self):
-        """Gets the name_pattern of this MessageNotificationPolicy.
+        r"""Gets the name_pattern of this MessageNotificationPolicy.
 
         名称样式，用来匹配消息类型中所有符合该样式的消息。比如，message_type设置为job，name_pattern设置为ray_job*，表示匹配到所有以\"ray_job\"开头的job发出的消息。
 
@@ -121,7 +121,7 @@ class MessageNotificationPolicy:
 
     @name_pattern.setter
     def name_pattern(self, name_pattern):
-        """Sets the name_pattern of this MessageNotificationPolicy.
+        r"""Sets the name_pattern of this MessageNotificationPolicy.
 
         名称样式，用来匹配消息类型中所有符合该样式的消息。比如，message_type设置为job，name_pattern设置为ray_job*，表示匹配到所有以\"ray_job\"开头的job发出的消息。
 
@@ -132,7 +132,7 @@ class MessageNotificationPolicy:
 
     @property
     def notification_types(self):
-        """Gets the notification_types of this MessageNotificationPolicy.
+        r"""Gets the notification_types of this MessageNotificationPolicy.
 
         通知类型。SUCCESS:成功通知；FAILED：失败通知
 
@@ -143,7 +143,7 @@ class MessageNotificationPolicy:
 
     @notification_types.setter
     def notification_types(self, notification_types):
-        """Sets the notification_types of this MessageNotificationPolicy.
+        r"""Sets the notification_types of this MessageNotificationPolicy.
 
         通知类型。SUCCESS:成功通知；FAILED：失败通知
 
@@ -154,7 +154,7 @@ class MessageNotificationPolicy:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this MessageNotificationPolicy.
+        r"""Gets the topic_urn of this MessageNotificationPolicy.
 
         消息通知主题。
 
@@ -165,7 +165,7 @@ class MessageNotificationPolicy:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this MessageNotificationPolicy.
+        r"""Sets the topic_urn of this MessageNotificationPolicy.
 
         消息通知主题。
 

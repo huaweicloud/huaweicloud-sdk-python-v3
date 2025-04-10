@@ -41,7 +41,7 @@ class MetricMonitorVO:
     }
 
     def __init__(self, id=None, other_metric_ids=None, other_metric_names=None, other_compound_metric_ids=None, other_compound_metric_names=None, expression=None, metric_id=None, front_configs=None, metric_type=None):
-        """MetricMonitorVO
+        r"""MetricMonitorVO
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class MetricMonitorVO:
 
     @property
     def id(self):
-        """Gets the id of this MetricMonitorVO.
+        r"""Gets the id of this MetricMonitorVO.
 
         编码，ID字符串。
 
@@ -110,7 +110,7 @@ class MetricMonitorVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MetricMonitorVO.
+        r"""Sets the id of this MetricMonitorVO.
 
         编码，ID字符串。
 
@@ -121,7 +121,7 @@ class MetricMonitorVO:
 
     @property
     def other_metric_ids(self):
-        """Gets the other_metric_ids of this MetricMonitorVO.
+        r"""Gets the other_metric_ids of this MetricMonitorVO.
 
         其他指标ID，ID字符串。
 
@@ -132,7 +132,7 @@ class MetricMonitorVO:
 
     @other_metric_ids.setter
     def other_metric_ids(self, other_metric_ids):
-        """Sets the other_metric_ids of this MetricMonitorVO.
+        r"""Sets the other_metric_ids of this MetricMonitorVO.
 
         其他指标ID，ID字符串。
 
@@ -143,7 +143,7 @@ class MetricMonitorVO:
 
     @property
     def other_metric_names(self):
-        """Gets the other_metric_names of this MetricMonitorVO.
+        r"""Gets the other_metric_names of this MetricMonitorVO.
 
         其他指标名称，只读。
 
@@ -154,7 +154,7 @@ class MetricMonitorVO:
 
     @other_metric_names.setter
     def other_metric_names(self, other_metric_names):
-        """Sets the other_metric_names of this MetricMonitorVO.
+        r"""Sets the other_metric_names of this MetricMonitorVO.
 
         其他指标名称，只读。
 
@@ -165,7 +165,7 @@ class MetricMonitorVO:
 
     @property
     def other_compound_metric_ids(self):
-        """Gets the other_compound_metric_ids of this MetricMonitorVO.
+        r"""Gets the other_compound_metric_ids of this MetricMonitorVO.
 
         其他复合指标ID。
 
@@ -176,7 +176,7 @@ class MetricMonitorVO:
 
     @other_compound_metric_ids.setter
     def other_compound_metric_ids(self, other_compound_metric_ids):
-        """Sets the other_compound_metric_ids of this MetricMonitorVO.
+        r"""Sets the other_compound_metric_ids of this MetricMonitorVO.
 
         其他复合指标ID。
 
@@ -187,7 +187,7 @@ class MetricMonitorVO:
 
     @property
     def other_compound_metric_names(self):
-        """Gets the other_compound_metric_names of this MetricMonitorVO.
+        r"""Gets the other_compound_metric_names of this MetricMonitorVO.
 
         其他复合指标名称。
 
@@ -198,7 +198,7 @@ class MetricMonitorVO:
 
     @other_compound_metric_names.setter
     def other_compound_metric_names(self, other_compound_metric_names):
-        """Sets the other_compound_metric_names of this MetricMonitorVO.
+        r"""Sets the other_compound_metric_names of this MetricMonitorVO.
 
         其他复合指标名称。
 
@@ -209,7 +209,7 @@ class MetricMonitorVO:
 
     @property
     def expression(self):
-        """Gets the expression of this MetricMonitorVO.
+        r"""Gets the expression of this MetricMonitorVO.
 
         告警表达式。
 
@@ -220,7 +220,7 @@ class MetricMonitorVO:
 
     @expression.setter
     def expression(self, expression):
-        """Sets the expression of this MetricMonitorVO.
+        r"""Sets the expression of this MetricMonitorVO.
 
         告警表达式。
 
@@ -231,7 +231,7 @@ class MetricMonitorVO:
 
     @property
     def metric_id(self):
-        """Gets the metric_id of this MetricMonitorVO.
+        r"""Gets the metric_id of this MetricMonitorVO.
 
         挂载指ID，ID字符串。
 
@@ -242,7 +242,7 @@ class MetricMonitorVO:
 
     @metric_id.setter
     def metric_id(self, metric_id):
-        """Sets the metric_id of this MetricMonitorVO.
+        r"""Sets the metric_id of this MetricMonitorVO.
 
         挂载指ID，ID字符串。
 
@@ -253,7 +253,7 @@ class MetricMonitorVO:
 
     @property
     def front_configs(self):
-        """Gets the front_configs of this MetricMonitorVO.
+        r"""Gets the front_configs of this MetricMonitorVO.
 
         前端表达式配置，用于前端数据恢复。
 
@@ -264,7 +264,7 @@ class MetricMonitorVO:
 
     @front_configs.setter
     def front_configs(self, front_configs):
-        """Sets the front_configs of this MetricMonitorVO.
+        r"""Sets the front_configs of this MetricMonitorVO.
 
         前端表达式配置，用于前端数据恢复。
 
@@ -275,7 +275,7 @@ class MetricMonitorVO:
 
     @property
     def metric_type(self):
-        """Gets the metric_type of this MetricMonitorVO.
+        r"""Gets the metric_type of this MetricMonitorVO.
 
         :return: The metric_type of this MetricMonitorVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`
@@ -284,7 +284,7 @@ class MetricMonitorVO:
 
     @metric_type.setter
     def metric_type(self, metric_type):
-        """Sets the metric_type of this MetricMonitorVO.
+        r"""Sets the metric_type of this MetricMonitorVO.
 
         :param metric_type: The metric_type of this MetricMonitorVO.
         :type metric_type: :class:`huaweicloudsdkdataartsstudio.v1.BizTypeEnum`

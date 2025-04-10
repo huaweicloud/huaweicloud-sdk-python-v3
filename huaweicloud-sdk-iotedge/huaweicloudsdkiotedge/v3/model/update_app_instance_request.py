@@ -29,7 +29,7 @@ class UpdateAppInstanceRequest:
     }
 
     def __init__(self, cluster_id=None, app_instance_id=None, body=None):
-        """UpdateAppInstanceRequest
+        r"""UpdateAppInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateAppInstanceRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdateAppInstanceRequest.
+        r"""Gets the cluster_id of this UpdateAppInstanceRequest.
 
         边缘集群ID
 
@@ -66,7 +66,7 @@ class UpdateAppInstanceRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdateAppInstanceRequest.
+        r"""Sets the cluster_id of this UpdateAppInstanceRequest.
 
         边缘集群ID
 
@@ -77,7 +77,7 @@ class UpdateAppInstanceRequest:
 
     @property
     def app_instance_id(self):
-        """Gets the app_instance_id of this UpdateAppInstanceRequest.
+        r"""Gets the app_instance_id of this UpdateAppInstanceRequest.
 
         应用实例ID
 
@@ -88,7 +88,7 @@ class UpdateAppInstanceRequest:
 
     @app_instance_id.setter
     def app_instance_id(self, app_instance_id):
-        """Sets the app_instance_id of this UpdateAppInstanceRequest.
+        r"""Sets the app_instance_id of this UpdateAppInstanceRequest.
 
         应用实例ID
 
@@ -99,7 +99,7 @@ class UpdateAppInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAppInstanceRequest.
+        r"""Gets the body of this UpdateAppInstanceRequest.
 
         :return: The body of this UpdateAppInstanceRequest.
         :rtype: :class:`huaweicloudsdkiotedge.v3.UpdateAppInstanceRequestDTO`
@@ -108,7 +108,7 @@ class UpdateAppInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAppInstanceRequest.
+        r"""Sets the body of this UpdateAppInstanceRequest.
 
         :param body: The body of this UpdateAppInstanceRequest.
         :type body: :class:`huaweicloudsdkiotedge.v3.UpdateAppInstanceRequestDTO`

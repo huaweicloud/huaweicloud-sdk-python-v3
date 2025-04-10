@@ -25,7 +25,7 @@ class GcbBindingServiceAll:
     }
 
     def __init__(self, binding_service=None):
-        """GcbBindingServiceAll
+        r"""GcbBindingServiceAll
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class GcbBindingServiceAll:
 
     @property
     def binding_service(self):
-        """Gets the binding_service of this GcbBindingServiceAll.
+        r"""Gets the binding_service of this GcbBindingServiceAll.
 
         功能说明：绑定的服务类型。实例类型： - CC: 云连接 - GEIP: 全域弹性公网IP - GCN: 中心网络 - GSN: 分支网络 - ALL: 所有实例类型
 
@@ -54,7 +54,7 @@ class GcbBindingServiceAll:
 
     @binding_service.setter
     def binding_service(self, binding_service):
-        """Sets the binding_service of this GcbBindingServiceAll.
+        r"""Sets the binding_service of this GcbBindingServiceAll.
 
         功能说明：绑定的服务类型。实例类型： - CC: 云连接 - GEIP: 全域弹性公网IP - GCN: 中心网络 - GSN: 分支网络 - ALL: 所有实例类型
 

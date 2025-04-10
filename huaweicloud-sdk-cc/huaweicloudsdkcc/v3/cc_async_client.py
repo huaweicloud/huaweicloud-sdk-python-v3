@@ -34,7 +34,7 @@ class CcAsyncClient(Client):
         return client_builder
 
     def create_authorisation_async(self, request):
-        """创建授权
+        r"""创建授权
 
         网络实例所属租户授予云连接实例所属租户加载其网络实例的权限。
         
@@ -99,7 +99,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def delete_authorisation_async(self, request):
-        """删除授权
+        r"""删除授权
 
         网络实例所属租户取消授予云连接实例所属租户加载其网络实例的权限。
         
@@ -164,7 +164,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def list_authorisations_async(self, request):
-        """查询授权列表
+        r"""查询授权列表
 
         网络实例所属租户查看其已经授予其他租户的权限。
         分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效。
@@ -247,7 +247,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def list_permissions_async(self, request):
-        """查询权限列表
+        r"""查询权限列表
 
         云连接实例所属租户查询其可加载其他租户的网络实例权限。
         分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效。
@@ -330,7 +330,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def update_authorisation_async(self, request):
-        """更新授权
+        r"""更新授权
 
         更新授权实例。
         
@@ -397,7 +397,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def associate_bandwidth_package_async(self, request):
-        """将带宽包实例绑定到云连接实例
+        r"""将带宽包实例绑定到云连接实例
 
         将带宽包实例绑定到云连接实例。
         
@@ -464,7 +464,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def create_bandwidth_package_async(self, request):
-        """创建带宽包实例
+        r"""创建带宽包实例
 
         创建带宽包实例。
         
@@ -529,7 +529,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def delete_bandwidth_package_async(self, request):
-        """删除带宽包实例
+        r"""删除带宽包实例
 
         删除带宽包实例。
         
@@ -594,7 +594,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def disassociate_bandwidth_package_async(self, request):
-        """解除带宽包实例与云连接实例的绑定
+        r"""解除带宽包实例与云连接实例的绑定
 
         解除带宽包实例与云连接实例的绑定。
         
@@ -661,7 +661,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def list_bandwidth_package_tags_async(self, request):
-        """查询带宽包的标签信息
+        r"""查询带宽包的标签信息
 
         查询带宽包的标签信息。
         
@@ -724,7 +724,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def list_bandwidth_packages_async(self, request):
-        """查询带宽包列表
+        r"""查询带宽包列表
 
         查询带宽包列表。
         分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效。
@@ -813,7 +813,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def list_bandwidth_packages_by_tags_async(self, request):
-        """通过标签过滤带宽包实例
+        r"""通过标签过滤带宽包实例
 
         通过标签过滤带宽包实例。
         
@@ -878,7 +878,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def show_bandwidth_package_async(self, request):
-        """查询带宽包实例
+        r"""查询带宽包实例
 
         查询带宽包实例。
         
@@ -943,7 +943,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def tag_bandwidth_package_async(self, request):
-        """创建带宽包标签
+        r"""创建带宽包标签
 
         创建带宽包标签。
         
@@ -1010,7 +1010,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def untag_bandwidth_package_async(self, request):
-        """删除带宽包标签
+        r"""删除带宽包标签
 
         删除带宽包标签。
         
@@ -1077,7 +1077,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def update_bandwidth_package_async(self, request):
-        """更新带宽包实例
+        r"""更新带宽包实例
 
         更新带宽包实例。
         
@@ -1144,7 +1144,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def apply_central_network_policy_async(self, request):
-        """应用中心网络策略
+        r"""应用中心网络策略
 
         应用中心网络策略。
         
@@ -1211,7 +1211,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def create_central_network_async(self, request):
-        """创建中心网络
+        r"""创建中心网络
 
         创建中心网络。
         
@@ -1276,7 +1276,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def create_central_network_policy_async(self, request):
-        """创建一个新版本的中心网络策略
+        r"""创建一个新版本的中心网络策略
 
         创建一份只读的中心网络的策略。如果您有策略文档内容改动，需要基于此版本重新创建一个新版本的策略。
         
@@ -1343,7 +1343,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def delete_central_network_async(self, request):
-        """删除中心网络
+        r"""删除中心网络
 
         删除中心网络，请先清除附件后再删除中心网络。
         
@@ -1408,7 +1408,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def delete_central_network_policy_async(self, request):
-        """删除中心网络策略版本
+        r"""删除中心网络策略版本
 
         删除中心网络策略版本。您无法删除正在被应用的中心策略。
         
@@ -1475,7 +1475,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def list_central_network_policies_async(self, request):
-        """查询所有版本的中心网络策略列表
+        r"""查询所有版本的中心网络策略列表
 
         查询所有版本的中心网络策略列表。
         分页查询使用的参数为marker、limit。limit默认值为0，没有指定marker时返回第一条数据。
@@ -1560,7 +1560,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def list_central_network_policy_change_set_async(self, request):
-        """查询中心网络策略变化集
+        r"""查询中心网络策略变化集
 
         查询与当前应用中心网络策略的变化集。
         
@@ -1627,7 +1627,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def list_central_network_tags_async(self, request):
-        """查询中心网络的标签信息
+        r"""查询中心网络的标签信息
 
         查询中心网络的标签信息。
         
@@ -1690,7 +1690,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def list_central_networks_async(self, request):
-        """查询中心网络列表
+        r"""查询中心网络列表
 
         查询中心网络列表。
         分页查询使用的参数为marker、limit。limit默认值为0，没有指定marker时返回第一条数据。
@@ -1786,7 +1786,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def list_central_networks_by_tags_async(self, request):
-        """通过标签过滤中心网络实例
+        r"""通过标签过滤中心网络实例
 
         通过标签过滤中心网络实例。
         
@@ -1855,7 +1855,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def show_central_network_async(self, request):
-        """查询中心网络详情
+        r"""查询中心网络详情
 
         查询中心网络详情。
         
@@ -1920,7 +1920,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def tag_central_network_async(self, request):
-        """创建中心网络标签
+        r"""创建中心网络标签
 
         创建中心网络标签。
         
@@ -1987,7 +1987,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def untag_central_network_async(self, request):
-        """删除中心网络标签
+        r"""删除中心网络标签
 
         删除中心网络标签。
         
@@ -2054,7 +2054,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def update_central_network_async(self, request):
-        """更新中心网络详情
+        r"""更新中心网络详情
 
         更新中心网络详情。
         
@@ -2121,7 +2121,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def create_central_network_er_route_table_attachment_async(self, request):
-        """创建中心网络ER路由表附件
+        r"""创建中心网络ER路由表附件
 
         创建中心网络的路由表附件。
         
@@ -2188,7 +2188,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def create_central_network_gdgw_attachment_async(self, request):
-        """创建中心网络GDGW附件
+        r"""创建中心网络GDGW附件
 
         创建中心网络的GDGW附件。
         
@@ -2255,7 +2255,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def delete_central_network_attachment_async(self, request):
-        """删除中心网络附件
+        r"""删除中心网络附件
 
         删除中心网络附件。
         
@@ -2322,7 +2322,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def list_central_network_attachments_async(self, request):
-        """查询中心网络附件列表
+        r"""查询中心网络附件列表
 
         查询中心网络附件列表，分页查询使用的参数为marker、limit。limit默认值为0，没有指定marker时返回第一条数据。
         
@@ -2410,7 +2410,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def list_central_network_er_route_table_attachments_async(self, request):
-        """查询中心网络ER路由表附件列表
+        r"""查询中心网络ER路由表附件列表
 
         查询中心网络ER路由表附件列表。
         分页查询使用的参数为marker、limit。limit默认值为0，没有指定marker时返回第一条数据。
@@ -2496,7 +2496,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def list_central_network_gdgw_attachments_async(self, request):
-        """查询中心网络GDGW附件列表
+        r"""查询中心网络GDGW附件列表
 
         查询中心网络GDGW附件列表。
         分页查询使用的参数为marker、limit。limit默认值为0，没有指定marker时返回第一条数据。
@@ -2582,7 +2582,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def show_central_network_er_route_table_attachment_async(self, request):
-        """查询中心网络ER路由表附件详情
+        r"""查询中心网络ER路由表附件详情
 
         查询中心网络ER路由表附件详情。
         
@@ -2649,7 +2649,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def show_central_network_gdgw_attachment_async(self, request):
-        """查询中心网络GDGW附件详情
+        r"""查询中心网络GDGW附件详情
 
         查询中心网络GDGW附件详情。
         
@@ -2716,7 +2716,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def update_central_network_er_route_table_attachment_async(self, request):
-        """更新中心网络ER路由表附件
+        r"""更新中心网络ER路由表附件
 
         更新中心网络ER路由表附件。
         
@@ -2785,7 +2785,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def update_central_network_gdgw_attachment_async(self, request):
-        """更新中心网络GDGW附件
+        r"""更新中心网络GDGW附件
 
         更新中心网络GDGW附件。
         
@@ -2854,7 +2854,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def list_central_network_capabilities_async(self, request):
-        """查询中心网络能力列表
+        r"""查询中心网络能力列表
 
         查询中心网络能力列表。
         
@@ -2920,7 +2920,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def list_central_network_connections_async(self, request):
-        """查询中心网络连接列表
+        r"""查询中心网络连接列表
 
         查询中心网络连接列表接口。
         分页查询使用的参数为marker、limit。limit默认值为0，没有指定marker时返回第一条数据。
@@ -3012,7 +3012,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def update_central_network_connection_async(self, request):
-        """更新中心网络连接接口
+        r"""更新中心网络连接接口
 
         更新中心网络连接接口（仅支持更新带宽）。
         
@@ -3081,7 +3081,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def list_central_network_quotas_async(self, request):
-        """查询中心网络配额
+        r"""查询中心网络配额
 
         查询中心网络配额。
         
@@ -3151,7 +3151,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def create_cloud_connection_async(self, request):
-        """创建云连接实例
+        r"""创建云连接实例
 
         创建云连接实例。
         
@@ -3216,7 +3216,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def delete_cloud_connection_async(self, request):
-        """删除云连接实例
+        r"""删除云连接实例
 
         删除云连接实例。
         
@@ -3281,7 +3281,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def list_cloud_connection_tags_async(self, request):
-        """查询云连接实例的标签信息
+        r"""查询云连接实例的标签信息
 
         查询云连接实例的标签信息。
         
@@ -3344,7 +3344,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def list_cloud_connections_async(self, request):
-        """查询云连接列表
+        r"""查询云连接列表
 
         查询云连接列表。
         分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效。
@@ -3433,7 +3433,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def list_cloud_connections_by_tags_async(self, request):
-        """通过标签过滤云连接实例
+        r"""通过标签过滤云连接实例
 
         通过标签过滤云连接实例。
         
@@ -3498,7 +3498,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def show_cloud_connection_async(self, request):
-        """查询云连接实例
+        r"""查询云连接实例
 
         查询云连接实例。
         
@@ -3563,7 +3563,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def tag_cloud_connection_async(self, request):
-        """创建云连接实例标签
+        r"""创建云连接实例标签
 
         创建云连接实例标签。
         
@@ -3630,7 +3630,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def untag_cloud_connection_async(self, request):
-        """删除云连接实例标签
+        r"""删除云连接实例标签
 
         删除云连接实例标签。
         
@@ -3697,7 +3697,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def update_cloud_connection_async(self, request):
-        """更新云连接实例
+        r"""更新云连接实例
 
         更新云连接实例。
         
@@ -3764,7 +3764,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def list_cloud_connection_quotas_async(self, request):
-        """查询云连接配额
+        r"""查询云连接配额
 
         查询云连接配额。
         
@@ -3837,7 +3837,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def list_cloud_connection_routes_async(self, request):
-        """查询云连接路由条目列表
+        r"""查询云连接路由条目列表
 
         查询云连接路由条目列表。
         分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效。
@@ -3915,7 +3915,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def show_cloud_connection_routes_async(self, request):
-        """查询云连接路由条目详情
+        r"""查询云连接路由条目详情
 
         查询云连接路由条目列表。
         分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效。
@@ -3981,7 +3981,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def batch_create_gcb_resource_tags_async(self, request):
-        """批量添加账户全域互联带宽资源标签
+        r"""批量添加账户全域互联带宽资源标签
 
         TMS批量添加资源标签
         
@@ -4048,7 +4048,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def batch_delete_gcb_resource_tags_async(self, request):
-        """批量删除账户全域互联带宽资源标签
+        r"""批量删除账户全域互联带宽资源标签
 
         批量删除账户全域互联带宽资源标签
         
@@ -4115,7 +4115,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def count_gcb_resource_by_tag_async(self, request):
-        """查询账户全域互联带宽资源标签数量
+        r"""查询账户全域互联带宽资源标签数量
 
         查询账户全域互联带宽资源标签数量
         
@@ -4180,7 +4180,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def create_gcb_resource_tag_async(self, request):
-        """添加账户全域互联带宽资源标签
+        r"""添加账户全域互联带宽资源标签
 
         添加账户全域互联带宽资源标签
         
@@ -4247,7 +4247,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def delete_gcb_resource_tag_async(self, request):
-        """删除账户全域互联带宽资源标签
+        r"""删除账户全域互联带宽资源标签
 
         删除账户全域互联带宽资源标签
         
@@ -4314,7 +4314,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def list_gcb_resource_by_tag_async(self, request):
-        """查询账户全域互联带宽资源实例列表
+        r"""查询账户全域互联带宽资源实例列表
 
         查询账户全域互联带宽资源实例列表
         
@@ -4383,7 +4383,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def list_gcb_resource_tags_async(self, request):
-        """查询账户全域互联带宽资源的标签
+        r"""查询账户全域互联带宽资源的标签
 
         查询账户全域互联带宽资源的标签
         
@@ -4448,7 +4448,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def list_gcb_tenant_tags_async(self, request):
-        """查询账户全域互联带宽所有资源标签
+        r"""查询账户全域互联带宽所有资源标签
 
         查询账户全域互联带宽所有资源标签
         
@@ -4511,7 +4511,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def associate_global_connection_bandwidth_instance_async(self, request):
-        """全域互联带宽绑定实例
+        r"""全域互联带宽绑定实例
 
         全域互联带宽绑定实例。
         
@@ -4578,7 +4578,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def create_global_connection_bandwidth_async(self, request):
-        """创建全域互联带宽
+        r"""创建全域互联带宽
 
         创建全域互联带宽。
         
@@ -4643,7 +4643,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def delete_global_connection_bandwidth_async(self, request):
-        """删除全域互联带宽
+        r"""删除全域互联带宽
 
         删除全域互联带宽。
         
@@ -4708,7 +4708,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def disassociate_global_connection_bandwidth_instance_async(self, request):
-        """全域互联带宽解绑实例
+        r"""全域互联带宽解绑实例
 
         全域互联带宽解绑实例。
         
@@ -4775,7 +4775,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def list_global_connection_bandwidth_configs_async(self, request):
-        """查询全域互联带宽租户配置信息
+        r"""查询全域互联带宽租户配置信息
 
         查询全域互联带宽租户配置信息。
         
@@ -4838,7 +4838,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def list_global_connection_bandwidth_line_levels_async(self, request):
-        """查询线路等级列表
+        r"""查询线路等级列表
 
         查询线路等级列表。
         分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效。
@@ -4916,7 +4916,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def list_global_connection_bandwidth_sites_async(self, request):
-        """查询站点列表
+        r"""查询站点列表
 
         查询站点列表。
         分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效。
@@ -4995,7 +4995,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def list_global_connection_bandwidth_spec_codes_async(self, request):
-        """查询线路规格列表
+        r"""查询线路规格列表
 
         查询线路规格列表。租户白名单控制，默认为空。
         分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效。
@@ -5073,7 +5073,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def list_global_connection_bandwidths_async(self, request):
-        """查询全域互联带宽列表
+        r"""查询全域互联带宽列表
 
         查询全域互联带宽列表。
         分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效。
@@ -5168,7 +5168,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def list_support_binding_connection_bandwidths_async(self, request):
-        """查询符合绑定条件的全域互联带宽列表
+        r"""查询符合绑定条件的全域互联带宽列表
 
         查询符合绑定条件的全域互联带宽列表。
         分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效。
@@ -5245,7 +5245,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def show_global_connection_bandwidth_async(self, request):
-        """查询全域互联带宽详情
+        r"""查询全域互联带宽详情
 
         查询全域互联带宽详情。
         
@@ -5310,7 +5310,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def update_global_connection_bandwidth_async(self, request):
-        """更新全域互联带宽详情
+        r"""更新全域互联带宽详情
 
         更新全域互联带宽详情。
         
@@ -5377,7 +5377,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def create_inter_region_bandwidth_async(self, request):
-        """创建域间带宽实例
+        r"""创建域间带宽实例
 
         创建域间带宽实例。
         
@@ -5442,7 +5442,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def delete_inter_region_bandwidth_async(self, request):
-        """删除域间带宽实例
+        r"""删除域间带宽实例
 
         删除域间带宽实例。
         
@@ -5507,7 +5507,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def list_inter_region_bandwidths_async(self, request):
-        """查询域间带宽列表
+        r"""查询域间带宽列表
 
         查询域间带宽列表。
         分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效。
@@ -5587,7 +5587,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def show_inter_region_bandwidth_async(self, request):
-        """查询域间带宽实例
+        r"""查询域间带宽实例
 
         查询域间带宽实例。
         
@@ -5652,7 +5652,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def update_inter_region_bandwidth_async(self, request):
-        """更新域间带宽实例
+        r"""更新域间带宽实例
 
         更新域间带宽实例。
         
@@ -5719,7 +5719,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def create_network_instance_async(self, request):
-        """创建网络实例
+        r"""创建网络实例
 
         创建网络实例。
         
@@ -5784,7 +5784,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def delete_network_instance_async(self, request):
-        """删除网络实例
+        r"""删除网络实例
 
         删除网络实例。
         
@@ -5849,7 +5849,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def list_network_instances_async(self, request):
-        """查询网络实例列表
+        r"""查询网络实例列表
 
         查询云连接列表。
         分页查询使用的参数为marker、limit。marker和limit一起使用时才会生效，单独使用无效。
@@ -5941,7 +5941,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def show_network_instance_async(self, request):
-        """查询网络实例
+        r"""查询网络实例
 
         查询网络实例。
         
@@ -6006,7 +6006,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def update_network_instance_async(self, request):
-        """更新网络实例
+        r"""更新网络实例
 
         更新网络实例。
         
@@ -6073,7 +6073,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def associate_site_network_bandwidth_async(self, request):
-        """关联分支连接带宽
+        r"""关联分支连接带宽
 
         关联分支连接带宽。
         
@@ -6142,7 +6142,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def disassociate_site_network_bandwidth_async(self, request):
-        """解关联分支连接带宽
+        r"""解关联分支连接带宽
 
         解关联分支连接带宽。
         
@@ -6209,7 +6209,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def update_site_network_bandwidth_async(self, request):
-        """更改分支连接带宽包
+        r"""更改分支连接带宽包
 
         更改分支连接带宽包。
         
@@ -6278,7 +6278,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def update_site_network_bandwidth_size_async(self, request):
-        """更改分支连接带宽大小
+        r"""更改分支连接带宽大小
 
         更改分支连接带宽大小。
         
@@ -6347,7 +6347,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def create_p2_p_site_network_async(self, request):
-        """创建P2P类型的分支网络
+        r"""创建P2P类型的分支网络
 
         创建P2P类型的分支网络。
         
@@ -6412,7 +6412,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def delete_site_network_async(self, request):
-        """删除分支网络
+        r"""删除分支网络
 
         删除分支网络。
         
@@ -6477,7 +6477,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def list_site_networks_async(self, request):
-        """查询分支网络列表
+        r"""查询分支网络列表
 
         查询分支网络列表。
         分页查询使用的参数为marker、limit。limit默认值为0，没有指定marker时返回第一条数据。
@@ -6570,7 +6570,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def show_site_network_async(self, request):
-        """查询分支网络详情
+        r"""查询分支网络详情
 
         查询分支网络详情。
         
@@ -6635,7 +6635,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def update_site_network_async(self, request):
-        """更新分支网络详情
+        r"""更新分支网络详情
 
         更新分支网络详情。
         
@@ -6702,7 +6702,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def list_site_network_capabilities_async(self, request):
-        """查询分支网络的能力列表
+        r"""查询分支网络的能力列表
 
         查询分支网络的能力列表。
         
@@ -6768,7 +6768,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def list_site_network_quotas_async(self, request):
-        """查询分支网络配额
+        r"""查询分支网络配额
 
         查询分支网络配额。
         
@@ -6838,7 +6838,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def list_bandwidth_package_levels_async(self, request):
-        """查询带宽包等级列表
+        r"""查询带宽包等级列表
 
         查询带宽包等级列表
         
@@ -6905,7 +6905,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def list_bandwidth_package_lines_async(self, request):
-        """查询带宽包线路列表
+        r"""查询带宽包线路列表
 
         查询带宽包线路列表
         
@@ -6972,7 +6972,7 @@ class CcAsyncClient(Client):
         return http_info
 
     def list_bandwidth_package_sites_async(self, request):
-        """查询带宽包站点列表
+        r"""查询带宽包站点列表
 
         查询带宽包站点列表
         

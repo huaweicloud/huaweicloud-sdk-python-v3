@@ -26,7 +26,7 @@ class ShowRuntimeStacksResponse(SdkResponse):
     }
 
     def __init__(self, runtimestacks=None):
-        """ShowRuntimeStacksResponse
+        r"""ShowRuntimeStacksResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowRuntimeStacksResponse(SdkResponse):
 
     @property
     def runtimestacks(self):
-        """Gets the runtimestacks of this ShowRuntimeStacksResponse.
+        r"""Gets the runtimestacks of this ShowRuntimeStacksResponse.
 
         :return: The runtimestacks of this ShowRuntimeStacksResponse.
         :rtype: list[:class:`huaweicloudsdkservicestage.v3.RuntimeStackView`]
@@ -53,7 +53,7 @@ class ShowRuntimeStacksResponse(SdkResponse):
 
     @runtimestacks.setter
     def runtimestacks(self, runtimestacks):
-        """Sets the runtimestacks of this ShowRuntimeStacksResponse.
+        r"""Sets the runtimestacks of this ShowRuntimeStacksResponse.
 
         :param runtimestacks: The runtimestacks of this ShowRuntimeStacksResponse.
         :type runtimestacks: list[:class:`huaweicloudsdkservicestage.v3.RuntimeStackView`]

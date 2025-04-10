@@ -35,7 +35,7 @@ class MysqlProxyNodeV3:
     }
 
     def __init__(self, id=None, instance_id=None, status=None, name=None, weight=None, availability_zone=None):
-        """MysqlProxyNodeV3
+        r"""MysqlProxyNodeV3
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class MysqlProxyNodeV3:
 
     @property
     def id(self):
-        """Gets the id of this MysqlProxyNodeV3.
+        r"""Gets the id of this MysqlProxyNodeV3.
 
         节点ID。
 
@@ -89,7 +89,7 @@ class MysqlProxyNodeV3:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MysqlProxyNodeV3.
+        r"""Sets the id of this MysqlProxyNodeV3.
 
         节点ID。
 
@@ -100,7 +100,7 @@ class MysqlProxyNodeV3:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this MysqlProxyNodeV3.
+        r"""Gets the instance_id of this MysqlProxyNodeV3.
 
         实例ID。
 
@@ -111,7 +111,7 @@ class MysqlProxyNodeV3:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this MysqlProxyNodeV3.
+        r"""Sets the instance_id of this MysqlProxyNodeV3.
 
         实例ID。
 
@@ -122,7 +122,7 @@ class MysqlProxyNodeV3:
 
     @property
     def status(self):
-        """Gets the status of this MysqlProxyNodeV3.
+        r"""Gets the status of this MysqlProxyNodeV3.
 
         节点状态。
 
@@ -133,7 +133,7 @@ class MysqlProxyNodeV3:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this MysqlProxyNodeV3.
+        r"""Sets the status of this MysqlProxyNodeV3.
 
         节点状态。
 
@@ -144,7 +144,7 @@ class MysqlProxyNodeV3:
 
     @property
     def name(self):
-        """Gets the name of this MysqlProxyNodeV3.
+        r"""Gets the name of this MysqlProxyNodeV3.
 
         节点名称。
 
@@ -155,7 +155,7 @@ class MysqlProxyNodeV3:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MysqlProxyNodeV3.
+        r"""Sets the name of this MysqlProxyNodeV3.
 
         节点名称。
 
@@ -166,7 +166,7 @@ class MysqlProxyNodeV3:
 
     @property
     def weight(self):
-        """Gets the weight of this MysqlProxyNodeV3.
+        r"""Gets the weight of this MysqlProxyNodeV3.
 
         节点读写分离读权重。
 
@@ -177,7 +177,7 @@ class MysqlProxyNodeV3:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this MysqlProxyNodeV3.
+        r"""Sets the weight of this MysqlProxyNodeV3.
 
         节点读写分离读权重。
 
@@ -188,7 +188,7 @@ class MysqlProxyNodeV3:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this MysqlProxyNodeV3.
+        r"""Gets the availability_zone of this MysqlProxyNodeV3.
 
         主实例所有节点的可用区信息。
 
@@ -199,7 +199,7 @@ class MysqlProxyNodeV3:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this MysqlProxyNodeV3.
+        r"""Sets the availability_zone of this MysqlProxyNodeV3.
 
         主实例所有节点的可用区信息。
 

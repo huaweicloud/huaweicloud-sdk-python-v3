@@ -37,7 +37,7 @@ class Stages:
     }
 
     def __init__(self, result=None, status=None, name=None, parameters=None, order=None, dsl_method=None, display_name=None):
-        """Stages
+        r"""Stages
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class Stages:
 
     @property
     def result(self):
-        """Gets the result of this Stages.
+        r"""Gets the result of this Stages.
 
         阶段执行结果。取值及含义：success：成功；error：失败；aborted：终止
 
@@ -89,7 +89,7 @@ class Stages:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this Stages.
+        r"""Sets the result of this Stages.
 
         阶段执行结果。取值及含义：success：成功；error：失败；aborted：终止
 
@@ -100,7 +100,7 @@ class Stages:
 
     @property
     def status(self):
-        """Gets the status of this Stages.
+        r"""Gets the status of this Stages.
 
         阶段执行状态。取值和含义:waiting:等待;running:执行中;verifying:待审核;suspending:挂起;completed:完成
 
@@ -111,7 +111,7 @@ class Stages:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Stages.
+        r"""Sets the status of this Stages.
 
         阶段执行状态。取值和含义:waiting:等待;running:执行中;verifying:待审核;suspending:挂起;completed:完成
 
@@ -122,7 +122,7 @@ class Stages:
 
     @property
     def name(self):
-        """Gets the name of this Stages.
+        r"""Gets the name of this Stages.
 
         阶段名字
 
@@ -133,7 +133,7 @@ class Stages:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Stages.
+        r"""Sets the name of this Stages.
 
         阶段名字
 
@@ -144,7 +144,7 @@ class Stages:
 
     @property
     def parameters(self):
-        """Gets the parameters of this Stages.
+        r"""Gets the parameters of this Stages.
 
         -
 
@@ -155,7 +155,7 @@ class Stages:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this Stages.
+        r"""Sets the parameters of this Stages.
 
         -
 
@@ -166,7 +166,7 @@ class Stages:
 
     @property
     def order(self):
-        """Gets the order of this Stages.
+        r"""Gets the order of this Stages.
 
         阶段顺序
 
@@ -177,7 +177,7 @@ class Stages:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this Stages.
+        r"""Sets the order of this Stages.
 
         阶段顺序
 
@@ -188,7 +188,7 @@ class Stages:
 
     @property
     def dsl_method(self):
-        """Gets the dsl_method of this Stages.
+        r"""Gets the dsl_method of this Stages.
 
         阶段类型
 
@@ -199,7 +199,7 @@ class Stages:
 
     @dsl_method.setter
     def dsl_method(self, dsl_method):
-        """Sets the dsl_method of this Stages.
+        r"""Sets the dsl_method of this Stages.
 
         阶段类型
 
@@ -210,7 +210,7 @@ class Stages:
 
     @property
     def display_name(self):
-        """Gets the display_name of this Stages.
+        r"""Gets the display_name of this Stages.
 
         阶段显示名称
 
@@ -221,7 +221,7 @@ class Stages:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this Stages.
+        r"""Sets the display_name of this Stages.
 
         阶段显示名称
 

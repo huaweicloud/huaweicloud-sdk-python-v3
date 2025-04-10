@@ -24,7 +24,7 @@ class DeleteSqlAlarmRuleResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteSqlAlarmRuleResponse
+        r"""DeleteSqlAlarmRuleResponse
 
         The model defined in huaweicloud sdk
 

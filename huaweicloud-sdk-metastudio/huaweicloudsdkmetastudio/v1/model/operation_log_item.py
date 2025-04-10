@@ -31,7 +31,7 @@ class OperationLogItem:
     }
 
     def __init__(self, time=None, action=None, operator=None, external_info=None):
-        """OperationLogItem
+        r"""OperationLogItem
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class OperationLogItem:
 
     @property
     def time(self):
-        """Gets the time of this OperationLogItem.
+        r"""Gets the time of this OperationLogItem.
 
         操作时间
 
@@ -75,7 +75,7 @@ class OperationLogItem:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this OperationLogItem.
+        r"""Sets the time of this OperationLogItem.
 
         操作时间
 
@@ -86,7 +86,7 @@ class OperationLogItem:
 
     @property
     def action(self):
-        """Gets the action of this OperationLogItem.
+        r"""Gets the action of this OperationLogItem.
 
         操作名称,当前已有的action为CREATE_JOB(创建任务),COMMIT_JOB(提交任务),SYSTEM_AUDIT_PASS(系统审核通过),ADMIN_AUDIT_PASS(管理员审核通过),AUDIT_NOT_PASS(审核未通过),TRAINING_FINISH(训练完成),UPLOADING_MODEL(上传语音模型),COMPLETE_JOB(任务完成)
 
@@ -97,7 +97,7 @@ class OperationLogItem:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this OperationLogItem.
+        r"""Sets the action of this OperationLogItem.
 
         操作名称,当前已有的action为CREATE_JOB(创建任务),COMMIT_JOB(提交任务),SYSTEM_AUDIT_PASS(系统审核通过),ADMIN_AUDIT_PASS(管理员审核通过),AUDIT_NOT_PASS(审核未通过),TRAINING_FINISH(训练完成),UPLOADING_MODEL(上传语音模型),COMPLETE_JOB(任务完成)
 
@@ -108,7 +108,7 @@ class OperationLogItem:
 
     @property
     def operator(self):
-        """Gets the operator of this OperationLogItem.
+        r"""Gets the operator of this OperationLogItem.
 
         操作者,USER(用户),ADMIN(管理员),SYSTEM(用户)
 
@@ -119,7 +119,7 @@ class OperationLogItem:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this OperationLogItem.
+        r"""Sets the operator of this OperationLogItem.
 
         操作者,USER(用户),ADMIN(管理员),SYSTEM(用户)
 
@@ -130,7 +130,7 @@ class OperationLogItem:
 
     @property
     def external_info(self):
-        """Gets the external_info of this OperationLogItem.
+        r"""Gets the external_info of this OperationLogItem.
 
         :return: The external_info of this OperationLogItem.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.OpExternalInfo`
@@ -139,7 +139,7 @@ class OperationLogItem:
 
     @external_info.setter
     def external_info(self, external_info):
-        """Sets the external_info of this OperationLogItem.
+        r"""Sets the external_info of this OperationLogItem.
 
         :param external_info: The external_info of this OperationLogItem.
         :type external_info: :class:`huaweicloudsdkmetastudio.v1.OpExternalInfo`

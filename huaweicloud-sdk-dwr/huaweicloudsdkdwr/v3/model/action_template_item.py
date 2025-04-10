@@ -27,7 +27,7 @@ class ActionTemplateItem:
     }
 
     def __init__(self, name=None, category=None):
-        """ActionTemplateItem
+        r"""ActionTemplateItem
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ActionTemplateItem:
 
     @property
     def name(self):
-        """Gets the name of this ActionTemplateItem.
+        r"""Gets the name of this ActionTemplateItem.
 
         名称。
 
@@ -61,7 +61,7 @@ class ActionTemplateItem:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ActionTemplateItem.
+        r"""Sets the name of this ActionTemplateItem.
 
         名称。
 
@@ -72,7 +72,7 @@ class ActionTemplateItem:
 
     @property
     def category(self):
-        """Gets the category of this ActionTemplateItem.
+        r"""Gets the category of this ActionTemplateItem.
 
         第三方算子模板的分类。默认分类为FileProcess,MediaProcess,ImageProcess,ContentReview,NotificationProcess,VoiceInteraction
 
@@ -83,7 +83,7 @@ class ActionTemplateItem:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ActionTemplateItem.
+        r"""Sets the category of this ActionTemplateItem.
 
         第三方算子模板的分类。默认分类为FileProcess,MediaProcess,ImageProcess,ContentReview,NotificationProcess,VoiceInteraction
 

@@ -36,7 +36,7 @@ class ShowProjectTraceDataResponse(SdkResponse):
     }
 
     def __init__(self, path=None, name=None, type=None, size=None, create_time=None, download_url=None):
-        """ShowProjectTraceDataResponse
+        r"""ShowProjectTraceDataResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ShowProjectTraceDataResponse(SdkResponse):
 
     @property
     def path(self):
-        """Gets the path of this ShowProjectTraceDataResponse.
+        r"""Gets the path of this ShowProjectTraceDataResponse.
 
         对象全路径（项目名称:/路径）
 
@@ -90,7 +90,7 @@ class ShowProjectTraceDataResponse(SdkResponse):
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ShowProjectTraceDataResponse.
+        r"""Sets the path of this ShowProjectTraceDataResponse.
 
         对象全路径（项目名称:/路径）
 
@@ -101,7 +101,7 @@ class ShowProjectTraceDataResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowProjectTraceDataResponse.
+        r"""Gets the name of this ShowProjectTraceDataResponse.
 
         名称
 
@@ -112,7 +112,7 @@ class ShowProjectTraceDataResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowProjectTraceDataResponse.
+        r"""Sets the name of this ShowProjectTraceDataResponse.
 
         名称
 
@@ -123,7 +123,7 @@ class ShowProjectTraceDataResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowProjectTraceDataResponse.
+        r"""Gets the type of this ShowProjectTraceDataResponse.
 
         :return: The type of this ShowProjectTraceDataResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.PathType`
@@ -132,7 +132,7 @@ class ShowProjectTraceDataResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowProjectTraceDataResponse.
+        r"""Sets the type of this ShowProjectTraceDataResponse.
 
         :param type: The type of this ShowProjectTraceDataResponse.
         :type type: :class:`huaweicloudsdkeihealth.v1.PathType`
@@ -141,7 +141,7 @@ class ShowProjectTraceDataResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ShowProjectTraceDataResponse.
+        r"""Gets the size of this ShowProjectTraceDataResponse.
 
         大小
 
@@ -152,7 +152,7 @@ class ShowProjectTraceDataResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ShowProjectTraceDataResponse.
+        r"""Sets the size of this ShowProjectTraceDataResponse.
 
         大小
 
@@ -163,7 +163,7 @@ class ShowProjectTraceDataResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowProjectTraceDataResponse.
+        r"""Gets the create_time of this ShowProjectTraceDataResponse.
 
         创建时间
 
@@ -174,7 +174,7 @@ class ShowProjectTraceDataResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowProjectTraceDataResponse.
+        r"""Sets the create_time of this ShowProjectTraceDataResponse.
 
         创建时间
 
@@ -185,7 +185,7 @@ class ShowProjectTraceDataResponse(SdkResponse):
 
     @property
     def download_url(self):
-        """Gets the download_url of this ShowProjectTraceDataResponse.
+        r"""Gets the download_url of this ShowProjectTraceDataResponse.
 
         下载链接
 
@@ -196,7 +196,7 @@ class ShowProjectTraceDataResponse(SdkResponse):
 
     @download_url.setter
     def download_url(self, download_url):
-        """Sets the download_url of this ShowProjectTraceDataResponse.
+        r"""Sets the download_url of this ShowProjectTraceDataResponse.
 
         下载链接
 

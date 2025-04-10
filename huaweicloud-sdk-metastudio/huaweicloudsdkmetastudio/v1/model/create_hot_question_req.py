@@ -29,7 +29,7 @@ class CreateHotQuestionReq:
     }
 
     def __init__(self, robot_id=None, hot_question=None, language=None):
-        """CreateHotQuestionReq
+        r"""CreateHotQuestionReq
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateHotQuestionReq:
 
     @property
     def robot_id(self):
-        """Gets the robot_id of this CreateHotQuestionReq.
+        r"""Gets the robot_id of this CreateHotQuestionReq.
 
         机器人ID。
 
@@ -66,7 +66,7 @@ class CreateHotQuestionReq:
 
     @robot_id.setter
     def robot_id(self, robot_id):
-        """Sets the robot_id of this CreateHotQuestionReq.
+        r"""Sets the robot_id of this CreateHotQuestionReq.
 
         机器人ID。
 
@@ -77,7 +77,7 @@ class CreateHotQuestionReq:
 
     @property
     def hot_question(self):
-        """Gets the hot_question of this CreateHotQuestionReq.
+        r"""Gets the hot_question of this CreateHotQuestionReq.
 
         热点问题。
 
@@ -88,7 +88,7 @@ class CreateHotQuestionReq:
 
     @hot_question.setter
     def hot_question(self, hot_question):
-        """Sets the hot_question of this CreateHotQuestionReq.
+        r"""Sets the hot_question of this CreateHotQuestionReq.
 
         热点问题。
 
@@ -99,7 +99,7 @@ class CreateHotQuestionReq:
 
     @property
     def language(self):
-        """Gets the language of this CreateHotQuestionReq.
+        r"""Gets the language of this CreateHotQuestionReq.
 
         :return: The language of this CreateHotQuestionReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
@@ -108,7 +108,7 @@ class CreateHotQuestionReq:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this CreateHotQuestionReq.
+        r"""Sets the language of this CreateHotQuestionReq.
 
         :param language: The language of this CreateHotQuestionReq.
         :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`

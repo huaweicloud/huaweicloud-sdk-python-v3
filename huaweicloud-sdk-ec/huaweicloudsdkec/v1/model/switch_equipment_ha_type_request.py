@@ -27,7 +27,7 @@ class SwitchEquipmentHaTypeRequest:
     }
 
     def __init__(self, ieg_id=None, body=None):
-        """SwitchEquipmentHaTypeRequest
+        r"""SwitchEquipmentHaTypeRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SwitchEquipmentHaTypeRequest:
 
     @property
     def ieg_id(self):
-        """Gets the ieg_id of this SwitchEquipmentHaTypeRequest.
+        r"""Gets the ieg_id of this SwitchEquipmentHaTypeRequest.
 
         智能企业网关ID
 
@@ -60,7 +60,7 @@ class SwitchEquipmentHaTypeRequest:
 
     @ieg_id.setter
     def ieg_id(self, ieg_id):
-        """Sets the ieg_id of this SwitchEquipmentHaTypeRequest.
+        r"""Sets the ieg_id of this SwitchEquipmentHaTypeRequest.
 
         智能企业网关ID
 
@@ -71,7 +71,7 @@ class SwitchEquipmentHaTypeRequest:
 
     @property
     def body(self):
-        """Gets the body of this SwitchEquipmentHaTypeRequest.
+        r"""Gets the body of this SwitchEquipmentHaTypeRequest.
 
         :return: The body of this SwitchEquipmentHaTypeRequest.
         :rtype: :class:`huaweicloudsdkec.v1.SwitchHaTypeBody`
@@ -80,7 +80,7 @@ class SwitchEquipmentHaTypeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SwitchEquipmentHaTypeRequest.
+        r"""Sets the body of this SwitchEquipmentHaTypeRequest.
 
         :param body: The body of this SwitchEquipmentHaTypeRequest.
         :type body: :class:`huaweicloudsdkec.v1.SwitchHaTypeBody`

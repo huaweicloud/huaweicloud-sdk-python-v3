@@ -29,7 +29,7 @@ class Notification:
     }
 
     def __init__(self, target_type=None, target_id=None, target_name=None):
-        """Notification
+        r"""Notification
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class Notification:
 
     @property
     def target_type(self):
-        """Gets the target_type of this Notification.
+        r"""Gets the target_type of this Notification.
 
         事件通知的对象类型。
 
@@ -65,7 +65,7 @@ class Notification:
 
     @target_type.setter
     def target_type(self, target_type):
-        """Sets the target_type of this Notification.
+        r"""Sets the target_type of this Notification.
 
         事件通知的对象类型。
 
@@ -76,7 +76,7 @@ class Notification:
 
     @property
     def target_id(self):
-        """Gets the target_id of this Notification.
+        r"""Gets the target_id of this Notification.
 
         事件通知的对象ID。
 
@@ -87,7 +87,7 @@ class Notification:
 
     @target_id.setter
     def target_id(self, target_id):
-        """Sets the target_id of this Notification.
+        r"""Sets the target_id of this Notification.
 
         事件通知的对象ID。
 
@@ -98,7 +98,7 @@ class Notification:
 
     @property
     def target_name(self):
-        """Gets the target_name of this Notification.
+        r"""Gets the target_name of this Notification.
 
         事件通知的对象名称。
 
@@ -109,7 +109,7 @@ class Notification:
 
     @target_name.setter
     def target_name(self, target_name):
-        """Sets the target_name of this Notification.
+        r"""Sets the target_name of this Notification.
 
         事件通知的对象名称。
 

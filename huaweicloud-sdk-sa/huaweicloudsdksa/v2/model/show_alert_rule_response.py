@@ -62,7 +62,7 @@ class ShowAlertRuleResponse(SdkResponse):
     }
 
     def __init__(self, rule_id=None, pipe_id=None, pipe_name=None, create_by=None, create_time=None, update_by=None, update_time=None, delete_time=None, rule_name=None, query=None, query_type=None, status=None, severity=None, accumulated_times=None, custom_properties=None, event_grouping=None, schedule=None, triggers=None, x_request_id=None):
-        """ShowAlertRuleResponse
+        r"""ShowAlertRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -170,7 +170,7 @@ class ShowAlertRuleResponse(SdkResponse):
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this ShowAlertRuleResponse.
+        r"""Gets the rule_id of this ShowAlertRuleResponse.
 
         rule_id
 
@@ -181,7 +181,7 @@ class ShowAlertRuleResponse(SdkResponse):
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this ShowAlertRuleResponse.
+        r"""Sets the rule_id of this ShowAlertRuleResponse.
 
         rule_id
 
@@ -192,7 +192,7 @@ class ShowAlertRuleResponse(SdkResponse):
 
     @property
     def pipe_id(self):
-        """Gets the pipe_id of this ShowAlertRuleResponse.
+        r"""Gets the pipe_id of this ShowAlertRuleResponse.
 
         pipe_id
 
@@ -203,7 +203,7 @@ class ShowAlertRuleResponse(SdkResponse):
 
     @pipe_id.setter
     def pipe_id(self, pipe_id):
-        """Sets the pipe_id of this ShowAlertRuleResponse.
+        r"""Sets the pipe_id of this ShowAlertRuleResponse.
 
         pipe_id
 
@@ -214,7 +214,7 @@ class ShowAlertRuleResponse(SdkResponse):
 
     @property
     def pipe_name(self):
-        """Gets the pipe_name of this ShowAlertRuleResponse.
+        r"""Gets the pipe_name of this ShowAlertRuleResponse.
 
         pipe_name
 
@@ -225,7 +225,7 @@ class ShowAlertRuleResponse(SdkResponse):
 
     @pipe_name.setter
     def pipe_name(self, pipe_name):
-        """Sets the pipe_name of this ShowAlertRuleResponse.
+        r"""Sets the pipe_name of this ShowAlertRuleResponse.
 
         pipe_name
 
@@ -236,7 +236,7 @@ class ShowAlertRuleResponse(SdkResponse):
 
     @property
     def create_by(self):
-        """Gets the create_by of this ShowAlertRuleResponse.
+        r"""Gets the create_by of this ShowAlertRuleResponse.
 
         create_by
 
@@ -247,7 +247,7 @@ class ShowAlertRuleResponse(SdkResponse):
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this ShowAlertRuleResponse.
+        r"""Sets the create_by of this ShowAlertRuleResponse.
 
         create_by
 
@@ -258,7 +258,7 @@ class ShowAlertRuleResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowAlertRuleResponse.
+        r"""Gets the create_time of this ShowAlertRuleResponse.
 
         create_time
 
@@ -269,7 +269,7 @@ class ShowAlertRuleResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowAlertRuleResponse.
+        r"""Sets the create_time of this ShowAlertRuleResponse.
 
         create_time
 
@@ -280,7 +280,7 @@ class ShowAlertRuleResponse(SdkResponse):
 
     @property
     def update_by(self):
-        """Gets the update_by of this ShowAlertRuleResponse.
+        r"""Gets the update_by of this ShowAlertRuleResponse.
 
         update_by
 
@@ -291,7 +291,7 @@ class ShowAlertRuleResponse(SdkResponse):
 
     @update_by.setter
     def update_by(self, update_by):
-        """Sets the update_by of this ShowAlertRuleResponse.
+        r"""Sets the update_by of this ShowAlertRuleResponse.
 
         update_by
 
@@ -302,7 +302,7 @@ class ShowAlertRuleResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowAlertRuleResponse.
+        r"""Gets the update_time of this ShowAlertRuleResponse.
 
         update_time
 
@@ -313,7 +313,7 @@ class ShowAlertRuleResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowAlertRuleResponse.
+        r"""Sets the update_time of this ShowAlertRuleResponse.
 
         update_time
 
@@ -324,7 +324,7 @@ class ShowAlertRuleResponse(SdkResponse):
 
     @property
     def delete_time(self):
-        """Gets the delete_time of this ShowAlertRuleResponse.
+        r"""Gets the delete_time of this ShowAlertRuleResponse.
 
         delete_time
 
@@ -335,7 +335,7 @@ class ShowAlertRuleResponse(SdkResponse):
 
     @delete_time.setter
     def delete_time(self, delete_time):
-        """Sets the delete_time of this ShowAlertRuleResponse.
+        r"""Sets the delete_time of this ShowAlertRuleResponse.
 
         delete_time
 
@@ -346,7 +346,7 @@ class ShowAlertRuleResponse(SdkResponse):
 
     @property
     def rule_name(self):
-        """Gets the rule_name of this ShowAlertRuleResponse.
+        r"""Gets the rule_name of this ShowAlertRuleResponse.
 
         rule_name
 
@@ -357,7 +357,7 @@ class ShowAlertRuleResponse(SdkResponse):
 
     @rule_name.setter
     def rule_name(self, rule_name):
-        """Sets the rule_name of this ShowAlertRuleResponse.
+        r"""Sets the rule_name of this ShowAlertRuleResponse.
 
         rule_name
 
@@ -368,7 +368,7 @@ class ShowAlertRuleResponse(SdkResponse):
 
     @property
     def query(self):
-        """Gets the query of this ShowAlertRuleResponse.
+        r"""Gets the query of this ShowAlertRuleResponse.
 
         query
 
@@ -379,7 +379,7 @@ class ShowAlertRuleResponse(SdkResponse):
 
     @query.setter
     def query(self, query):
-        """Sets the query of this ShowAlertRuleResponse.
+        r"""Sets the query of this ShowAlertRuleResponse.
 
         query
 
@@ -390,7 +390,7 @@ class ShowAlertRuleResponse(SdkResponse):
 
     @property
     def query_type(self):
-        """Gets the query_type of this ShowAlertRuleResponse.
+        r"""Gets the query_type of this ShowAlertRuleResponse.
 
         query_type. SQL, CBSL.
 
@@ -401,7 +401,7 @@ class ShowAlertRuleResponse(SdkResponse):
 
     @query_type.setter
     def query_type(self, query_type):
-        """Sets the query_type of this ShowAlertRuleResponse.
+        r"""Sets the query_type of this ShowAlertRuleResponse.
 
         query_type. SQL, CBSL.
 
@@ -412,7 +412,7 @@ class ShowAlertRuleResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowAlertRuleResponse.
+        r"""Gets the status of this ShowAlertRuleResponse.
 
         status. ENABLED, DISABLED
 
@@ -423,7 +423,7 @@ class ShowAlertRuleResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowAlertRuleResponse.
+        r"""Sets the status of this ShowAlertRuleResponse.
 
         status. ENABLED, DISABLED
 
@@ -434,7 +434,7 @@ class ShowAlertRuleResponse(SdkResponse):
 
     @property
     def severity(self):
-        """Gets the severity of this ShowAlertRuleResponse.
+        r"""Gets the severity of this ShowAlertRuleResponse.
 
         severity. TIPS, LOW, MEDIUM, HIGH, FATAL
 
@@ -445,7 +445,7 @@ class ShowAlertRuleResponse(SdkResponse):
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this ShowAlertRuleResponse.
+        r"""Sets the severity of this ShowAlertRuleResponse.
 
         severity. TIPS, LOW, MEDIUM, HIGH, FATAL
 
@@ -456,7 +456,7 @@ class ShowAlertRuleResponse(SdkResponse):
 
     @property
     def accumulated_times(self):
-        """Gets the accumulated_times of this ShowAlertRuleResponse.
+        r"""Gets the accumulated_times of this ShowAlertRuleResponse.
 
         accumulated_times
 
@@ -467,7 +467,7 @@ class ShowAlertRuleResponse(SdkResponse):
 
     @accumulated_times.setter
     def accumulated_times(self, accumulated_times):
-        """Sets the accumulated_times of this ShowAlertRuleResponse.
+        r"""Sets the accumulated_times of this ShowAlertRuleResponse.
 
         accumulated_times
 
@@ -478,7 +478,7 @@ class ShowAlertRuleResponse(SdkResponse):
 
     @property
     def custom_properties(self):
-        """Gets the custom_properties of this ShowAlertRuleResponse.
+        r"""Gets the custom_properties of this ShowAlertRuleResponse.
 
         custom_properties
 
@@ -489,7 +489,7 @@ class ShowAlertRuleResponse(SdkResponse):
 
     @custom_properties.setter
     def custom_properties(self, custom_properties):
-        """Sets the custom_properties of this ShowAlertRuleResponse.
+        r"""Sets the custom_properties of this ShowAlertRuleResponse.
 
         custom_properties
 
@@ -500,7 +500,7 @@ class ShowAlertRuleResponse(SdkResponse):
 
     @property
     def event_grouping(self):
-        """Gets the event_grouping of this ShowAlertRuleResponse.
+        r"""Gets the event_grouping of this ShowAlertRuleResponse.
 
         event_grouping
 
@@ -511,7 +511,7 @@ class ShowAlertRuleResponse(SdkResponse):
 
     @event_grouping.setter
     def event_grouping(self, event_grouping):
-        """Sets the event_grouping of this ShowAlertRuleResponse.
+        r"""Sets the event_grouping of this ShowAlertRuleResponse.
 
         event_grouping
 
@@ -522,7 +522,7 @@ class ShowAlertRuleResponse(SdkResponse):
 
     @property
     def schedule(self):
-        """Gets the schedule of this ShowAlertRuleResponse.
+        r"""Gets the schedule of this ShowAlertRuleResponse.
 
         :return: The schedule of this ShowAlertRuleResponse.
         :rtype: :class:`huaweicloudsdksa.v2.Schedule`
@@ -531,7 +531,7 @@ class ShowAlertRuleResponse(SdkResponse):
 
     @schedule.setter
     def schedule(self, schedule):
-        """Sets the schedule of this ShowAlertRuleResponse.
+        r"""Sets the schedule of this ShowAlertRuleResponse.
 
         :param schedule: The schedule of this ShowAlertRuleResponse.
         :type schedule: :class:`huaweicloudsdksa.v2.Schedule`
@@ -540,7 +540,7 @@ class ShowAlertRuleResponse(SdkResponse):
 
     @property
     def triggers(self):
-        """Gets the triggers of this ShowAlertRuleResponse.
+        r"""Gets the triggers of this ShowAlertRuleResponse.
 
         triggers
 
@@ -551,7 +551,7 @@ class ShowAlertRuleResponse(SdkResponse):
 
     @triggers.setter
     def triggers(self, triggers):
-        """Sets the triggers of this ShowAlertRuleResponse.
+        r"""Sets the triggers of this ShowAlertRuleResponse.
 
         triggers
 
@@ -562,7 +562,7 @@ class ShowAlertRuleResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowAlertRuleResponse.
+        r"""Gets the x_request_id of this ShowAlertRuleResponse.
 
         :return: The x_request_id of this ShowAlertRuleResponse.
         :rtype: str
@@ -571,7 +571,7 @@ class ShowAlertRuleResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowAlertRuleResponse.
+        r"""Sets the x_request_id of this ShowAlertRuleResponse.
 
         :param x_request_id: The x_request_id of this ShowAlertRuleResponse.
         :type x_request_id: str

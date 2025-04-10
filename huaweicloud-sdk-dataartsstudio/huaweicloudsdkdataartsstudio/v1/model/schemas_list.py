@@ -27,7 +27,7 @@ class SchemasList:
     }
 
     def __init__(self, schema_name=None, description=None):
-        """SchemasList
+        r"""SchemasList
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class SchemasList:
 
     @property
     def schema_name(self):
-        """Gets the schema_name of this SchemasList.
+        r"""Gets the schema_name of this SchemasList.
 
         schema名称
 
@@ -61,7 +61,7 @@ class SchemasList:
 
     @schema_name.setter
     def schema_name(self, schema_name):
-        """Sets the schema_name of this SchemasList.
+        r"""Sets the schema_name of this SchemasList.
 
         schema名称
 
@@ -72,7 +72,7 @@ class SchemasList:
 
     @property
     def description(self):
-        """Gets the description of this SchemasList.
+        r"""Gets the description of this SchemasList.
 
         schema描述
 
@@ -83,7 +83,7 @@ class SchemasList:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this SchemasList.
+        r"""Sets the description of this SchemasList.
 
         schema描述
 

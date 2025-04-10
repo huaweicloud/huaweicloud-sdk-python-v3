@@ -29,7 +29,7 @@ class CustomPropsResult:
     }
 
     def __init__(self, id=None, prop_definition=None, metrics=None):
-        """CustomPropsResult
+        r"""CustomPropsResult
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CustomPropsResult:
 
     @property
     def id(self):
-        """Gets the id of this CustomPropsResult.
+        r"""Gets the id of this CustomPropsResult.
 
         自定义属性ID（API侧）
 
@@ -65,7 +65,7 @@ class CustomPropsResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CustomPropsResult.
+        r"""Sets the id of this CustomPropsResult.
 
         自定义属性ID（API侧）
 
@@ -76,7 +76,7 @@ class CustomPropsResult:
 
     @property
     def prop_definition(self):
-        """Gets the prop_definition of this CustomPropsResult.
+        r"""Gets the prop_definition of this CustomPropsResult.
 
         :return: The prop_definition of this CustomPropsResult.
         :rtype: :class:`huaweicloudsdkeihealth.v1.PropDefinition`
@@ -85,7 +85,7 @@ class CustomPropsResult:
 
     @prop_definition.setter
     def prop_definition(self, prop_definition):
-        """Sets the prop_definition of this CustomPropsResult.
+        r"""Sets the prop_definition of this CustomPropsResult.
 
         :param prop_definition: The prop_definition of this CustomPropsResult.
         :type prop_definition: :class:`huaweicloudsdkeihealth.v1.PropDefinition`
@@ -94,7 +94,7 @@ class CustomPropsResult:
 
     @property
     def metrics(self):
-        """Gets the metrics of this CustomPropsResult.
+        r"""Gets the metrics of this CustomPropsResult.
 
         自定义属性建模的评估指标集合
 
@@ -105,7 +105,7 @@ class CustomPropsResult:
 
     @metrics.setter
     def metrics(self, metrics):
-        """Sets the metrics of this CustomPropsResult.
+        r"""Sets the metrics of this CustomPropsResult.
 
         自定义属性建模的评估指标集合
 

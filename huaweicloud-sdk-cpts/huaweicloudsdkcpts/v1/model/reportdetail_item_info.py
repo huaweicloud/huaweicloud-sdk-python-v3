@@ -29,7 +29,7 @@ class ReportdetailItemInfo:
     }
 
     def __init__(self, custom_transactions=None, detail_datas=None, performance=None):
-        """ReportdetailItemInfo
+        r"""ReportdetailItemInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ReportdetailItemInfo:
 
     @property
     def custom_transactions(self):
-        """Gets the custom_transactions of this ReportdetailItemInfo.
+        r"""Gets the custom_transactions of this ReportdetailItemInfo.
 
         自定义事务数据
 
@@ -68,7 +68,7 @@ class ReportdetailItemInfo:
 
     @custom_transactions.setter
     def custom_transactions(self, custom_transactions):
-        """Sets the custom_transactions of this ReportdetailItemInfo.
+        r"""Sets the custom_transactions of this ReportdetailItemInfo.
 
         自定义事务数据
 
@@ -79,7 +79,7 @@ class ReportdetailItemInfo:
 
     @property
     def detail_datas(self):
-        """Gets the detail_datas of this ReportdetailItemInfo.
+        r"""Gets the detail_datas of this ReportdetailItemInfo.
 
         aw数据
 
@@ -90,7 +90,7 @@ class ReportdetailItemInfo:
 
     @detail_datas.setter
     def detail_datas(self, detail_datas):
-        """Sets the detail_datas of this ReportdetailItemInfo.
+        r"""Sets the detail_datas of this ReportdetailItemInfo.
 
         aw数据
 
@@ -101,7 +101,7 @@ class ReportdetailItemInfo:
 
     @property
     def performance(self):
-        """Gets the performance of this ReportdetailItemInfo.
+        r"""Gets the performance of this ReportdetailItemInfo.
 
         :return: The performance of this ReportdetailItemInfo.
         :rtype: :class:`huaweicloudsdkcpts.v1.PerformanceInfo`
@@ -110,7 +110,7 @@ class ReportdetailItemInfo:
 
     @performance.setter
     def performance(self, performance):
-        """Sets the performance of this ReportdetailItemInfo.
+        r"""Sets the performance of this ReportdetailItemInfo.
 
         :param performance: The performance of this ReportdetailItemInfo.
         :type performance: :class:`huaweicloudsdkcpts.v1.PerformanceInfo`

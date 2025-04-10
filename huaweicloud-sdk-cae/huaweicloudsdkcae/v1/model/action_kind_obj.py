@@ -26,7 +26,7 @@ class ActionKindObj:
     }
 
     def __init__(self):
-        """ActionKindObj
+        r"""ActionKindObj
 
         The model defined in huaweicloud sdk
 

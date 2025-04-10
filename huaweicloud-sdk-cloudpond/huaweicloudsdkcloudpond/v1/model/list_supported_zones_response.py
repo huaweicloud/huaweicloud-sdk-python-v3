@@ -28,7 +28,7 @@ class ListSupportedZonesResponse(SdkResponse):
     }
 
     def __init__(self, zones=None, page_info=None):
-        """ListSupportedZonesResponse
+        r"""ListSupportedZonesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSupportedZonesResponse(SdkResponse):
 
     @property
     def zones(self):
-        """Gets the zones of this ListSupportedZonesResponse.
+        r"""Gets the zones of this ListSupportedZonesResponse.
 
         地区列表
 
@@ -62,7 +62,7 @@ class ListSupportedZonesResponse(SdkResponse):
 
     @zones.setter
     def zones(self, zones):
-        """Sets the zones of this ListSupportedZonesResponse.
+        r"""Sets the zones of this ListSupportedZonesResponse.
 
         地区列表
 
@@ -73,7 +73,7 @@ class ListSupportedZonesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListSupportedZonesResponse.
+        r"""Gets the page_info of this ListSupportedZonesResponse.
 
         :return: The page_info of this ListSupportedZonesResponse.
         :rtype: :class:`huaweicloudsdkcloudpond.v1.PageInfo`
@@ -82,7 +82,7 @@ class ListSupportedZonesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListSupportedZonesResponse.
+        r"""Sets the page_info of this ListSupportedZonesResponse.
 
         :param page_info: The page_info of this ListSupportedZonesResponse.
         :type page_info: :class:`huaweicloudsdkcloudpond.v1.PageInfo`

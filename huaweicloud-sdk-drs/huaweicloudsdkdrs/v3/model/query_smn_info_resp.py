@@ -35,7 +35,7 @@ class QuerySmnInfoResp:
     }
 
     def __init__(self, subscriptions=None, topic_name=None, delay_time=None, rto_delay=None, rpo_delay=None, alarm_to_user=None):
-        """QuerySmnInfoResp
+        r"""QuerySmnInfoResp
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class QuerySmnInfoResp:
 
     @property
     def subscriptions(self):
-        """Gets the subscriptions of this QuerySmnInfoResp.
+        r"""Gets the subscriptions of this QuerySmnInfoResp.
 
         SMN信息
 
@@ -89,7 +89,7 @@ class QuerySmnInfoResp:
 
     @subscriptions.setter
     def subscriptions(self, subscriptions):
-        """Sets the subscriptions of this QuerySmnInfoResp.
+        r"""Sets the subscriptions of this QuerySmnInfoResp.
 
         SMN信息
 
@@ -100,7 +100,7 @@ class QuerySmnInfoResp:
 
     @property
     def topic_name(self):
-        """Gets the topic_name of this QuerySmnInfoResp.
+        r"""Gets the topic_name of this QuerySmnInfoResp.
 
         主题名称
 
@@ -111,7 +111,7 @@ class QuerySmnInfoResp:
 
     @topic_name.setter
     def topic_name(self, topic_name):
-        """Sets the topic_name of this QuerySmnInfoResp.
+        r"""Sets the topic_name of this QuerySmnInfoResp.
 
         主题名称
 
@@ -122,7 +122,7 @@ class QuerySmnInfoResp:
 
     @property
     def delay_time(self):
-        """Gets the delay_time of this QuerySmnInfoResp.
+        r"""Gets the delay_time of this QuerySmnInfoResp.
 
         订阅延迟时间
 
@@ -133,7 +133,7 @@ class QuerySmnInfoResp:
 
     @delay_time.setter
     def delay_time(self, delay_time):
-        """Sets the delay_time of this QuerySmnInfoResp.
+        r"""Sets the delay_time of this QuerySmnInfoResp.
 
         订阅延迟时间
 
@@ -144,7 +144,7 @@ class QuerySmnInfoResp:
 
     @property
     def rto_delay(self):
-        """Gets the rto_delay of this QuerySmnInfoResp.
+        r"""Gets the rto_delay of this QuerySmnInfoResp.
 
         rto延迟时间
 
@@ -155,7 +155,7 @@ class QuerySmnInfoResp:
 
     @rto_delay.setter
     def rto_delay(self, rto_delay):
-        """Sets the rto_delay of this QuerySmnInfoResp.
+        r"""Sets the rto_delay of this QuerySmnInfoResp.
 
         rto延迟时间
 
@@ -166,7 +166,7 @@ class QuerySmnInfoResp:
 
     @property
     def rpo_delay(self):
-        """Gets the rpo_delay of this QuerySmnInfoResp.
+        r"""Gets the rpo_delay of this QuerySmnInfoResp.
 
         rpo延迟时间
 
@@ -177,7 +177,7 @@ class QuerySmnInfoResp:
 
     @rpo_delay.setter
     def rpo_delay(self, rpo_delay):
-        """Sets the rpo_delay of this QuerySmnInfoResp.
+        r"""Sets the rpo_delay of this QuerySmnInfoResp.
 
         rpo延迟时间
 
@@ -188,7 +188,7 @@ class QuerySmnInfoResp:
 
     @property
     def alarm_to_user(self):
-        """Gets the alarm_to_user of this QuerySmnInfoResp.
+        r"""Gets the alarm_to_user of this QuerySmnInfoResp.
 
         异常告警是否通知用户
 
@@ -199,7 +199,7 @@ class QuerySmnInfoResp:
 
     @alarm_to_user.setter
     def alarm_to_user(self, alarm_to_user):
-        """Sets the alarm_to_user of this QuerySmnInfoResp.
+        r"""Sets the alarm_to_user of this QuerySmnInfoResp.
 
         异常告警是否通知用户
 

@@ -51,7 +51,7 @@ class Authorisation:
     }
 
     def __init__(self, id=None, name=None, description=None, instance_id=None, project_id=None, region_id=None, created_at=None, updated_at=None, domain_id=None, cloud_connection_id=None, status=None, instance_type=None, cloud_connection_domain_id=None, is_loaded_by_cloud_connection=None):
-        """Authorisation
+        r"""Authorisation
 
         The model defined in huaweicloud sdk
 
@@ -125,7 +125,7 @@ class Authorisation:
 
     @property
     def id(self):
-        """Gets the id of this Authorisation.
+        r"""Gets the id of this Authorisation.
 
         实例ID。
 
@@ -136,7 +136,7 @@ class Authorisation:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Authorisation.
+        r"""Sets the id of this Authorisation.
 
         实例ID。
 
@@ -147,7 +147,7 @@ class Authorisation:
 
     @property
     def name(self):
-        """Gets the name of this Authorisation.
+        r"""Gets the name of this Authorisation.
 
         实例名字。
 
@@ -158,7 +158,7 @@ class Authorisation:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Authorisation.
+        r"""Sets the name of this Authorisation.
 
         实例名字。
 
@@ -169,7 +169,7 @@ class Authorisation:
 
     @property
     def description(self):
-        """Gets the description of this Authorisation.
+        r"""Gets the description of this Authorisation.
 
         实例描述。不支持 <>。
 
@@ -180,7 +180,7 @@ class Authorisation:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Authorisation.
+        r"""Sets the description of this Authorisation.
 
         实例描述。不支持 <>。
 
@@ -191,7 +191,7 @@ class Authorisation:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this Authorisation.
+        r"""Gets the instance_id of this Authorisation.
 
         网络实例（VPC，VGW）的ID。
 
@@ -202,7 +202,7 @@ class Authorisation:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this Authorisation.
+        r"""Sets the instance_id of this Authorisation.
 
         网络实例（VPC，VGW）的ID。
 
@@ -213,7 +213,7 @@ class Authorisation:
 
     @property
     def project_id(self):
-        """Gets the project_id of this Authorisation.
+        r"""Gets the project_id of this Authorisation.
 
         实例所属项目ID。
 
@@ -224,7 +224,7 @@ class Authorisation:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this Authorisation.
+        r"""Sets the project_id of this Authorisation.
 
         实例所属项目ID。
 
@@ -235,7 +235,7 @@ class Authorisation:
 
     @property
     def region_id(self):
-        """Gets the region_id of this Authorisation.
+        r"""Gets the region_id of this Authorisation.
 
         RegionID。
 
@@ -246,7 +246,7 @@ class Authorisation:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this Authorisation.
+        r"""Sets the region_id of this Authorisation.
 
         RegionID。
 
@@ -257,7 +257,7 @@ class Authorisation:
 
     @property
     def created_at(self):
-        """Gets the created_at of this Authorisation.
+        r"""Gets the created_at of this Authorisation.
 
         实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -268,7 +268,7 @@ class Authorisation:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Authorisation.
+        r"""Sets the created_at of this Authorisation.
 
         实例创建时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -279,7 +279,7 @@ class Authorisation:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this Authorisation.
+        r"""Gets the updated_at of this Authorisation.
 
         实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -290,7 +290,7 @@ class Authorisation:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this Authorisation.
+        r"""Sets the updated_at of this Authorisation.
 
         实例更新时间。UTC时间格式，yyyy-MM-ddTHH:mm:ss。
 
@@ -301,7 +301,7 @@ class Authorisation:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this Authorisation.
+        r"""Gets the domain_id of this Authorisation.
 
         实例所属账号ID。
 
@@ -312,7 +312,7 @@ class Authorisation:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this Authorisation.
+        r"""Sets the domain_id of this Authorisation.
 
         实例所属账号ID。
 
@@ -323,7 +323,7 @@ class Authorisation:
 
     @property
     def cloud_connection_id(self):
-        """Gets the cloud_connection_id of this Authorisation.
+        r"""Gets the cloud_connection_id of this Authorisation.
 
         云连接实例ID。
 
@@ -334,7 +334,7 @@ class Authorisation:
 
     @cloud_connection_id.setter
     def cloud_connection_id(self, cloud_connection_id):
-        """Sets the cloud_connection_id of this Authorisation.
+        r"""Sets the cloud_connection_id of this Authorisation.
 
         云连接实例ID。
 
@@ -345,7 +345,7 @@ class Authorisation:
 
     @property
     def status(self):
-        """Gets the status of this Authorisation.
+        r"""Gets the status of this Authorisation.
 
         授权的状态。
 
@@ -356,7 +356,7 @@ class Authorisation:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Authorisation.
+        r"""Sets the status of this Authorisation.
 
         授权的状态。
 
@@ -367,7 +367,7 @@ class Authorisation:
 
     @property
     def instance_type(self):
-        """Gets the instance_type of this Authorisation.
+        r"""Gets the instance_type of this Authorisation.
 
         授权实例的类型。
 
@@ -378,7 +378,7 @@ class Authorisation:
 
     @instance_type.setter
     def instance_type(self, instance_type):
-        """Sets the instance_type of this Authorisation.
+        r"""Sets the instance_type of this Authorisation.
 
         授权实例的类型。
 
@@ -389,7 +389,7 @@ class Authorisation:
 
     @property
     def cloud_connection_domain_id(self):
-        """Gets the cloud_connection_domain_id of this Authorisation.
+        r"""Gets the cloud_connection_domain_id of this Authorisation.
 
         被授权云连接实例所属的账户ID。
 
@@ -400,7 +400,7 @@ class Authorisation:
 
     @cloud_connection_domain_id.setter
     def cloud_connection_domain_id(self, cloud_connection_domain_id):
-        """Sets the cloud_connection_domain_id of this Authorisation.
+        r"""Sets the cloud_connection_domain_id of this Authorisation.
 
         被授权云连接实例所属的账户ID。
 
@@ -411,7 +411,7 @@ class Authorisation:
 
     @property
     def is_loaded_by_cloud_connection(self):
-        """Gets the is_loaded_by_cloud_connection of this Authorisation.
+        r"""Gets the is_loaded_by_cloud_connection of this Authorisation.
 
         是否已经被云连接加载。
 
@@ -422,7 +422,7 @@ class Authorisation:
 
     @is_loaded_by_cloud_connection.setter
     def is_loaded_by_cloud_connection(self, is_loaded_by_cloud_connection):
-        """Sets the is_loaded_by_cloud_connection of this Authorisation.
+        r"""Sets the is_loaded_by_cloud_connection of this Authorisation.
 
         是否已经被云连接加载。
 

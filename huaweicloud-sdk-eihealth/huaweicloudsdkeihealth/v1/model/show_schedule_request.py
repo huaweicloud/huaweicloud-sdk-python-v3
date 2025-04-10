@@ -25,7 +25,7 @@ class ShowScheduleRequest:
     }
 
     def __init__(self, id=None):
-        """ShowScheduleRequest
+        r"""ShowScheduleRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowScheduleRequest:
 
     @property
     def id(self):
-        """Gets the id of this ShowScheduleRequest.
+        r"""Gets the id of this ShowScheduleRequest.
 
         计算资源id
 
@@ -53,7 +53,7 @@ class ShowScheduleRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowScheduleRequest.
+        r"""Sets the id of this ShowScheduleRequest.
 
         计算资源id
 

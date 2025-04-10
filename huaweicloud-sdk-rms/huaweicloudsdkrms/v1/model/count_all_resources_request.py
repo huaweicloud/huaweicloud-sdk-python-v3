@@ -37,7 +37,7 @@ class CountAllResourcesRequest:
     }
 
     def __init__(self, id=None, name=None, type=None, region_id=None, ep_id=None, project_id=None, tags=None):
-        """CountAllResourcesRequest
+        r"""CountAllResourcesRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class CountAllResourcesRequest:
 
     @property
     def id(self):
-        """Gets the id of this CountAllResourcesRequest.
+        r"""Gets the id of this CountAllResourcesRequest.
 
         资源ID
 
@@ -96,7 +96,7 @@ class CountAllResourcesRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CountAllResourcesRequest.
+        r"""Sets the id of this CountAllResourcesRequest.
 
         资源ID
 
@@ -107,7 +107,7 @@ class CountAllResourcesRequest:
 
     @property
     def name(self):
-        """Gets the name of this CountAllResourcesRequest.
+        r"""Gets the name of this CountAllResourcesRequest.
 
         资源名称
 
@@ -118,7 +118,7 @@ class CountAllResourcesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CountAllResourcesRequest.
+        r"""Sets the name of this CountAllResourcesRequest.
 
         资源名称
 
@@ -129,7 +129,7 @@ class CountAllResourcesRequest:
 
     @property
     def type(self):
-        """Gets the type of this CountAllResourcesRequest.
+        r"""Gets the type of this CountAllResourcesRequest.
 
         资源类型（provider.type）
 
@@ -140,7 +140,7 @@ class CountAllResourcesRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CountAllResourcesRequest.
+        r"""Sets the type of this CountAllResourcesRequest.
 
         资源类型（provider.type）
 
@@ -151,7 +151,7 @@ class CountAllResourcesRequest:
 
     @property
     def region_id(self):
-        """Gets the region_id of this CountAllResourcesRequest.
+        r"""Gets the region_id of this CountAllResourcesRequest.
 
         区域ID列表
 
@@ -162,7 +162,7 @@ class CountAllResourcesRequest:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this CountAllResourcesRequest.
+        r"""Sets the region_id of this CountAllResourcesRequest.
 
         区域ID列表
 
@@ -173,7 +173,7 @@ class CountAllResourcesRequest:
 
     @property
     def ep_id(self):
-        """Gets the ep_id of this CountAllResourcesRequest.
+        r"""Gets the ep_id of this CountAllResourcesRequest.
 
         企业项目ID列表
 
@@ -184,7 +184,7 @@ class CountAllResourcesRequest:
 
     @ep_id.setter
     def ep_id(self, ep_id):
-        """Sets the ep_id of this CountAllResourcesRequest.
+        r"""Sets the ep_id of this CountAllResourcesRequest.
 
         企业项目ID列表
 
@@ -195,7 +195,7 @@ class CountAllResourcesRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CountAllResourcesRequest.
+        r"""Gets the project_id of this CountAllResourcesRequest.
 
         项目ID
 
@@ -206,7 +206,7 @@ class CountAllResourcesRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CountAllResourcesRequest.
+        r"""Sets the project_id of this CountAllResourcesRequest.
 
         项目ID
 
@@ -217,7 +217,7 @@ class CountAllResourcesRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this CountAllResourcesRequest.
+        r"""Gets the tags of this CountAllResourcesRequest.
 
         标签列表
 
@@ -228,7 +228,7 @@ class CountAllResourcesRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CountAllResourcesRequest.
+        r"""Sets the tags of this CountAllResourcesRequest.
 
         标签列表
 

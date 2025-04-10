@@ -39,7 +39,7 @@ class ListRouteTablesRequest:
     }
 
     def __init__(self, er_id=None, limit=None, marker=None, state=None, is_default_propagation_table=None, is_default_association_table=None, sort_key=None, sort_dir=None):
-        """ListRouteTablesRequest
+        r"""ListRouteTablesRequest
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class ListRouteTablesRequest:
 
     @property
     def er_id(self):
-        """Gets the er_id of this ListRouteTablesRequest.
+        r"""Gets the er_id of this ListRouteTablesRequest.
 
         企业路由器实例ID
 
@@ -102,7 +102,7 @@ class ListRouteTablesRequest:
 
     @er_id.setter
     def er_id(self, er_id):
-        """Sets the er_id of this ListRouteTablesRequest.
+        r"""Sets the er_id of this ListRouteTablesRequest.
 
         企业路由器实例ID
 
@@ -113,7 +113,7 @@ class ListRouteTablesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRouteTablesRequest.
+        r"""Gets the limit of this ListRouteTablesRequest.
 
         每页返回的个数。 取值范围：0~2000。
 
@@ -124,7 +124,7 @@ class ListRouteTablesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRouteTablesRequest.
+        r"""Sets the limit of this ListRouteTablesRequest.
 
         每页返回的个数。 取值范围：0~2000。
 
@@ -135,7 +135,7 @@ class ListRouteTablesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListRouteTablesRequest.
+        r"""Gets the marker of this ListRouteTablesRequest.
 
         上一页最后一条记录的企业路由器实例的id，为空时为查询第一页。 使用说明：必须与limit一起使用。
 
@@ -146,7 +146,7 @@ class ListRouteTablesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListRouteTablesRequest.
+        r"""Sets the marker of this ListRouteTablesRequest.
 
         上一页最后一条记录的企业路由器实例的id，为空时为查询第一页。 使用说明：必须与limit一起使用。
 
@@ -157,7 +157,7 @@ class ListRouteTablesRequest:
 
     @property
     def state(self):
-        """Gets the state of this ListRouteTablesRequest.
+        r"""Gets the state of this ListRouteTablesRequest.
 
         状态
 
@@ -168,7 +168,7 @@ class ListRouteTablesRequest:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ListRouteTablesRequest.
+        r"""Sets the state of this ListRouteTablesRequest.
 
         状态
 
@@ -179,7 +179,7 @@ class ListRouteTablesRequest:
 
     @property
     def is_default_propagation_table(self):
-        """Gets the is_default_propagation_table of this ListRouteTablesRequest.
+        r"""Gets the is_default_propagation_table of this ListRouteTablesRequest.
 
         是否为默认传播路由表
 
@@ -190,7 +190,7 @@ class ListRouteTablesRequest:
 
     @is_default_propagation_table.setter
     def is_default_propagation_table(self, is_default_propagation_table):
-        """Sets the is_default_propagation_table of this ListRouteTablesRequest.
+        r"""Sets the is_default_propagation_table of this ListRouteTablesRequest.
 
         是否为默认传播路由表
 
@@ -201,7 +201,7 @@ class ListRouteTablesRequest:
 
     @property
     def is_default_association_table(self):
-        """Gets the is_default_association_table of this ListRouteTablesRequest.
+        r"""Gets the is_default_association_table of this ListRouteTablesRequest.
 
         是否为默认关联路由表
 
@@ -212,7 +212,7 @@ class ListRouteTablesRequest:
 
     @is_default_association_table.setter
     def is_default_association_table(self, is_default_association_table):
-        """Sets the is_default_association_table of this ListRouteTablesRequest.
+        r"""Sets the is_default_association_table of this ListRouteTablesRequest.
 
         是否为默认关联路由表
 
@@ -223,7 +223,7 @@ class ListRouteTablesRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListRouteTablesRequest.
+        r"""Gets the sort_key of this ListRouteTablesRequest.
 
         按关键字排序，默认按照id排序，可选值:id|name|state
 
@@ -234,7 +234,7 @@ class ListRouteTablesRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListRouteTablesRequest.
+        r"""Sets the sort_key of this ListRouteTablesRequest.
 
         按关键字排序，默认按照id排序，可选值:id|name|state
 
@@ -245,7 +245,7 @@ class ListRouteTablesRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListRouteTablesRequest.
+        r"""Gets the sort_dir of this ListRouteTablesRequest.
 
         返回结果按照升序或降序排列，默认为asc,降序为desc
 
@@ -256,7 +256,7 @@ class ListRouteTablesRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListRouteTablesRequest.
+        r"""Sets the sort_dir of this ListRouteTablesRequest.
 
         返回结果按照升序或降序排列，默认为asc,降序为desc
 

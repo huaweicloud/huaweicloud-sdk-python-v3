@@ -25,7 +25,7 @@ class MasterEIPRequest:
     }
 
     def __init__(self, spec=None):
-        """MasterEIPRequest
+        r"""MasterEIPRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class MasterEIPRequest:
 
     @property
     def spec(self):
-        """Gets the spec of this MasterEIPRequest.
+        r"""Gets the spec of this MasterEIPRequest.
 
         :return: The spec of this MasterEIPRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.MasterEIPRequestSpec`
@@ -51,7 +51,7 @@ class MasterEIPRequest:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this MasterEIPRequest.
+        r"""Sets the spec of this MasterEIPRequest.
 
         :param spec: The spec of this MasterEIPRequest.
         :type spec: :class:`huaweicloudsdkcce.v3.MasterEIPRequestSpec`

@@ -42,7 +42,7 @@ class ShowPackageDetailResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, tag_name=None, school=None, teacher_name=None, order_count=None, image_url=None, description=None, exercise_cnt=None):
-        """ShowPackageDetailResponse
+        r"""ShowPackageDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class ShowPackageDetailResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowPackageDetailResponse.
+        r"""Gets the id of this ShowPackageDetailResponse.
 
         习题库id
 
@@ -111,7 +111,7 @@ class ShowPackageDetailResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowPackageDetailResponse.
+        r"""Sets the id of this ShowPackageDetailResponse.
 
         习题库id
 
@@ -122,7 +122,7 @@ class ShowPackageDetailResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowPackageDetailResponse.
+        r"""Gets the name of this ShowPackageDetailResponse.
 
         习题库名称
 
@@ -133,7 +133,7 @@ class ShowPackageDetailResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowPackageDetailResponse.
+        r"""Sets the name of this ShowPackageDetailResponse.
 
         习题库名称
 
@@ -144,7 +144,7 @@ class ShowPackageDetailResponse(SdkResponse):
 
     @property
     def tag_name(self):
-        """Gets the tag_name of this ShowPackageDetailResponse.
+        r"""Gets the tag_name of this ShowPackageDetailResponse.
 
         标签名称
 
@@ -155,7 +155,7 @@ class ShowPackageDetailResponse(SdkResponse):
 
     @tag_name.setter
     def tag_name(self, tag_name):
-        """Sets the tag_name of this ShowPackageDetailResponse.
+        r"""Sets the tag_name of this ShowPackageDetailResponse.
 
         标签名称
 
@@ -166,7 +166,7 @@ class ShowPackageDetailResponse(SdkResponse):
 
     @property
     def school(self):
-        """Gets the school of this ShowPackageDetailResponse.
+        r"""Gets the school of this ShowPackageDetailResponse.
 
         学习名称
 
@@ -177,7 +177,7 @@ class ShowPackageDetailResponse(SdkResponse):
 
     @school.setter
     def school(self, school):
-        """Sets the school of this ShowPackageDetailResponse.
+        r"""Sets the school of this ShowPackageDetailResponse.
 
         学习名称
 
@@ -188,7 +188,7 @@ class ShowPackageDetailResponse(SdkResponse):
 
     @property
     def teacher_name(self):
-        """Gets the teacher_name of this ShowPackageDetailResponse.
+        r"""Gets the teacher_name of this ShowPackageDetailResponse.
 
         教师名称
 
@@ -199,7 +199,7 @@ class ShowPackageDetailResponse(SdkResponse):
 
     @teacher_name.setter
     def teacher_name(self, teacher_name):
-        """Sets the teacher_name of this ShowPackageDetailResponse.
+        r"""Sets the teacher_name of this ShowPackageDetailResponse.
 
         教师名称
 
@@ -210,7 +210,7 @@ class ShowPackageDetailResponse(SdkResponse):
 
     @property
     def order_count(self):
-        """Gets the order_count of this ShowPackageDetailResponse.
+        r"""Gets the order_count of this ShowPackageDetailResponse.
 
         租户习题库编号
 
@@ -221,7 +221,7 @@ class ShowPackageDetailResponse(SdkResponse):
 
     @order_count.setter
     def order_count(self, order_count):
-        """Sets the order_count of this ShowPackageDetailResponse.
+        r"""Sets the order_count of this ShowPackageDetailResponse.
 
         租户习题库编号
 
@@ -232,7 +232,7 @@ class ShowPackageDetailResponse(SdkResponse):
 
     @property
     def image_url(self):
-        """Gets the image_url of this ShowPackageDetailResponse.
+        r"""Gets the image_url of this ShowPackageDetailResponse.
 
         背景图url
 
@@ -243,7 +243,7 @@ class ShowPackageDetailResponse(SdkResponse):
 
     @image_url.setter
     def image_url(self, image_url):
-        """Sets the image_url of this ShowPackageDetailResponse.
+        r"""Sets the image_url of this ShowPackageDetailResponse.
 
         背景图url
 
@@ -254,7 +254,7 @@ class ShowPackageDetailResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowPackageDetailResponse.
+        r"""Gets the description of this ShowPackageDetailResponse.
 
         习题库描述
 
@@ -265,7 +265,7 @@ class ShowPackageDetailResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowPackageDetailResponse.
+        r"""Sets the description of this ShowPackageDetailResponse.
 
         习题库描述
 
@@ -276,7 +276,7 @@ class ShowPackageDetailResponse(SdkResponse):
 
     @property
     def exercise_cnt(self):
-        """Gets the exercise_cnt of this ShowPackageDetailResponse.
+        r"""Gets the exercise_cnt of this ShowPackageDetailResponse.
 
         习题库里的习题数量
 
@@ -287,7 +287,7 @@ class ShowPackageDetailResponse(SdkResponse):
 
     @exercise_cnt.setter
     def exercise_cnt(self, exercise_cnt):
-        """Sets the exercise_cnt of this ShowPackageDetailResponse.
+        r"""Sets the exercise_cnt of this ShowPackageDetailResponse.
 
         习题库里的习题数量
 

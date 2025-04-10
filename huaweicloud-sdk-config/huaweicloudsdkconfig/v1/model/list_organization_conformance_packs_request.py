@@ -33,7 +33,7 @@ class ListOrganizationConformancePacksRequest:
     }
 
     def __init__(self, organization_id=None, limit=None, marker=None, organization_conformance_pack_id=None, conformance_pack_name=None):
-        """ListOrganizationConformancePacksRequest
+        r"""ListOrganizationConformancePacksRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListOrganizationConformancePacksRequest:
 
     @property
     def organization_id(self):
-        """Gets the organization_id of this ListOrganizationConformancePacksRequest.
+        r"""Gets the organization_id of this ListOrganizationConformancePacksRequest.
 
         组织ID。
 
@@ -81,7 +81,7 @@ class ListOrganizationConformancePacksRequest:
 
     @organization_id.setter
     def organization_id(self, organization_id):
-        """Sets the organization_id of this ListOrganizationConformancePacksRequest.
+        r"""Sets the organization_id of this ListOrganizationConformancePacksRequest.
 
         组织ID。
 
@@ -92,7 +92,7 @@ class ListOrganizationConformancePacksRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListOrganizationConformancePacksRequest.
+        r"""Gets the limit of this ListOrganizationConformancePacksRequest.
 
         最大的返回数量
 
@@ -103,7 +103,7 @@ class ListOrganizationConformancePacksRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListOrganizationConformancePacksRequest.
+        r"""Sets the limit of this ListOrganizationConformancePacksRequest.
 
         最大的返回数量
 
@@ -114,7 +114,7 @@ class ListOrganizationConformancePacksRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListOrganizationConformancePacksRequest.
+        r"""Gets the marker of this ListOrganizationConformancePacksRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -125,7 +125,7 @@ class ListOrganizationConformancePacksRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListOrganizationConformancePacksRequest.
+        r"""Sets the marker of this ListOrganizationConformancePacksRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -136,7 +136,7 @@ class ListOrganizationConformancePacksRequest:
 
     @property
     def organization_conformance_pack_id(self):
-        """Gets the organization_conformance_pack_id of this ListOrganizationConformancePacksRequest.
+        r"""Gets the organization_conformance_pack_id of this ListOrganizationConformancePacksRequest.
 
         组织合规规则包ID。
 
@@ -147,7 +147,7 @@ class ListOrganizationConformancePacksRequest:
 
     @organization_conformance_pack_id.setter
     def organization_conformance_pack_id(self, organization_conformance_pack_id):
-        """Sets the organization_conformance_pack_id of this ListOrganizationConformancePacksRequest.
+        r"""Sets the organization_conformance_pack_id of this ListOrganizationConformancePacksRequest.
 
         组织合规规则包ID。
 
@@ -158,7 +158,7 @@ class ListOrganizationConformancePacksRequest:
 
     @property
     def conformance_pack_name(self):
-        """Gets the conformance_pack_name of this ListOrganizationConformancePacksRequest.
+        r"""Gets the conformance_pack_name of this ListOrganizationConformancePacksRequest.
 
         合规规则包名称。
 
@@ -169,7 +169,7 @@ class ListOrganizationConformancePacksRequest:
 
     @conformance_pack_name.setter
     def conformance_pack_name(self, conformance_pack_name):
-        """Sets the conformance_pack_name of this ListOrganizationConformancePacksRequest.
+        r"""Sets the conformance_pack_name of this ListOrganizationConformancePacksRequest.
 
         合规规则包名称。
 

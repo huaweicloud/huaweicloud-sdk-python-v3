@@ -33,7 +33,7 @@ class ShowOrganizationPolicyAssignmentDetailedStatusRequest:
     }
 
     def __init__(self, organization_id=None, organization_policy_assignment_name=None, status=None, limit=None, marker=None):
-        """ShowOrganizationPolicyAssignmentDetailedStatusRequest
+        r"""ShowOrganizationPolicyAssignmentDetailedStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ShowOrganizationPolicyAssignmentDetailedStatusRequest:
 
     @property
     def organization_id(self):
-        """Gets the organization_id of this ShowOrganizationPolicyAssignmentDetailedStatusRequest.
+        r"""Gets the organization_id of this ShowOrganizationPolicyAssignmentDetailedStatusRequest.
 
         组织ID。
 
@@ -80,7 +80,7 @@ class ShowOrganizationPolicyAssignmentDetailedStatusRequest:
 
     @organization_id.setter
     def organization_id(self, organization_id):
-        """Sets the organization_id of this ShowOrganizationPolicyAssignmentDetailedStatusRequest.
+        r"""Sets the organization_id of this ShowOrganizationPolicyAssignmentDetailedStatusRequest.
 
         组织ID。
 
@@ -91,7 +91,7 @@ class ShowOrganizationPolicyAssignmentDetailedStatusRequest:
 
     @property
     def organization_policy_assignment_name(self):
-        """Gets the organization_policy_assignment_name of this ShowOrganizationPolicyAssignmentDetailedStatusRequest.
+        r"""Gets the organization_policy_assignment_name of this ShowOrganizationPolicyAssignmentDetailedStatusRequest.
 
         组织合规规则名称。
 
@@ -102,7 +102,7 @@ class ShowOrganizationPolicyAssignmentDetailedStatusRequest:
 
     @organization_policy_assignment_name.setter
     def organization_policy_assignment_name(self, organization_policy_assignment_name):
-        """Sets the organization_policy_assignment_name of this ShowOrganizationPolicyAssignmentDetailedStatusRequest.
+        r"""Sets the organization_policy_assignment_name of this ShowOrganizationPolicyAssignmentDetailedStatusRequest.
 
         组织合规规则名称。
 
@@ -113,7 +113,7 @@ class ShowOrganizationPolicyAssignmentDetailedStatusRequest:
 
     @property
     def status(self):
-        """Gets the status of this ShowOrganizationPolicyAssignmentDetailedStatusRequest.
+        r"""Gets the status of this ShowOrganizationPolicyAssignmentDetailedStatusRequest.
 
         成员帐号规则部署状态，区分大小写。
 
@@ -124,7 +124,7 @@ class ShowOrganizationPolicyAssignmentDetailedStatusRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowOrganizationPolicyAssignmentDetailedStatusRequest.
+        r"""Sets the status of this ShowOrganizationPolicyAssignmentDetailedStatusRequest.
 
         成员帐号规则部署状态，区分大小写。
 
@@ -135,7 +135,7 @@ class ShowOrganizationPolicyAssignmentDetailedStatusRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowOrganizationPolicyAssignmentDetailedStatusRequest.
+        r"""Gets the limit of this ShowOrganizationPolicyAssignmentDetailedStatusRequest.
 
         最大的返回数量
 
@@ -146,7 +146,7 @@ class ShowOrganizationPolicyAssignmentDetailedStatusRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowOrganizationPolicyAssignmentDetailedStatusRequest.
+        r"""Sets the limit of this ShowOrganizationPolicyAssignmentDetailedStatusRequest.
 
         最大的返回数量
 
@@ -157,7 +157,7 @@ class ShowOrganizationPolicyAssignmentDetailedStatusRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ShowOrganizationPolicyAssignmentDetailedStatusRequest.
+        r"""Gets the marker of this ShowOrganizationPolicyAssignmentDetailedStatusRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 
@@ -168,7 +168,7 @@ class ShowOrganizationPolicyAssignmentDetailedStatusRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ShowOrganizationPolicyAssignmentDetailedStatusRequest.
+        r"""Sets the marker of this ShowOrganizationPolicyAssignmentDetailedStatusRequest.
 
         分页参数，通过上一个请求中返回的marker信息作为输入，获取当前页
 

@@ -27,7 +27,7 @@ class CreateShareFolderRequest:
     }
 
     def __init__(self, storage_id=None, body=None):
-        """CreateShareFolderRequest
+        r"""CreateShareFolderRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateShareFolderRequest:
 
     @property
     def storage_id(self):
-        """Gets the storage_id of this CreateShareFolderRequest.
+        r"""Gets the storage_id of this CreateShareFolderRequest.
 
         WKS存储ID。
 
@@ -60,7 +60,7 @@ class CreateShareFolderRequest:
 
     @storage_id.setter
     def storage_id(self, storage_id):
-        """Sets the storage_id of this CreateShareFolderRequest.
+        r"""Sets the storage_id of this CreateShareFolderRequest.
 
         WKS存储ID。
 
@@ -71,7 +71,7 @@ class CreateShareFolderRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateShareFolderRequest.
+        r"""Gets the body of this CreateShareFolderRequest.
 
         :return: The body of this CreateShareFolderRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.CreateShareFolderReq`
@@ -80,7 +80,7 @@ class CreateShareFolderRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateShareFolderRequest.
+        r"""Sets the body of this CreateShareFolderRequest.
 
         :param body: The body of this CreateShareFolderRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.CreateShareFolderReq`

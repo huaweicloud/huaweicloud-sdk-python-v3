@@ -39,7 +39,7 @@ class CreateHostRequestBody:
     }
 
     def __init__(self, host_name=None, ip=None, port=None, os=None, as_proxy=None, proxy_host_id=None, authorization=None, install_icagent=None):
-        """CreateHostRequestBody
+        r"""CreateHostRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class CreateHostRequestBody:
 
     @property
     def host_name(self):
-        """Gets the host_name of this CreateHostRequestBody.
+        r"""Gets the host_name of this CreateHostRequestBody.
 
         主机名称
 
@@ -97,7 +97,7 @@ class CreateHostRequestBody:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this CreateHostRequestBody.
+        r"""Sets the host_name of this CreateHostRequestBody.
 
         主机名称
 
@@ -108,7 +108,7 @@ class CreateHostRequestBody:
 
     @property
     def ip(self):
-        """Gets the ip of this CreateHostRequestBody.
+        r"""Gets the ip of this CreateHostRequestBody.
 
         IP，请输入弹性ip格式：161.17.101.12
 
@@ -119,7 +119,7 @@ class CreateHostRequestBody:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this CreateHostRequestBody.
+        r"""Sets the ip of this CreateHostRequestBody.
 
         IP，请输入弹性ip格式：161.17.101.12
 
@@ -130,7 +130,7 @@ class CreateHostRequestBody:
 
     @property
     def port(self):
-        """Gets the port of this CreateHostRequestBody.
+        r"""Gets the port of this CreateHostRequestBody.
 
         ssh端口，如：22
 
@@ -141,7 +141,7 @@ class CreateHostRequestBody:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this CreateHostRequestBody.
+        r"""Sets the port of this CreateHostRequestBody.
 
         ssh端口，如：22
 
@@ -152,7 +152,7 @@ class CreateHostRequestBody:
 
     @property
     def os(self):
-        """Gets the os of this CreateHostRequestBody.
+        r"""Gets the os of this CreateHostRequestBody.
 
         操作系统：windows|linux，需要和主机集群保持一致
 
@@ -163,7 +163,7 @@ class CreateHostRequestBody:
 
     @os.setter
     def os(self, os):
-        """Sets the os of this CreateHostRequestBody.
+        r"""Sets the os of this CreateHostRequestBody.
 
         操作系统：windows|linux，需要和主机集群保持一致
 
@@ -174,7 +174,7 @@ class CreateHostRequestBody:
 
     @property
     def as_proxy(self):
-        """Gets the as_proxy of this CreateHostRequestBody.
+        r"""Gets the as_proxy of this CreateHostRequestBody.
 
         是否为代理机
 
@@ -185,7 +185,7 @@ class CreateHostRequestBody:
 
     @as_proxy.setter
     def as_proxy(self, as_proxy):
-        """Sets the as_proxy of this CreateHostRequestBody.
+        r"""Sets the as_proxy of this CreateHostRequestBody.
 
         是否为代理机
 
@@ -196,7 +196,7 @@ class CreateHostRequestBody:
 
     @property
     def proxy_host_id(self):
-        """Gets the proxy_host_id of this CreateHostRequestBody.
+        r"""Gets the proxy_host_id of this CreateHostRequestBody.
 
         代理机id
 
@@ -207,7 +207,7 @@ class CreateHostRequestBody:
 
     @proxy_host_id.setter
     def proxy_host_id(self, proxy_host_id):
-        """Sets the proxy_host_id of this CreateHostRequestBody.
+        r"""Sets the proxy_host_id of this CreateHostRequestBody.
 
         代理机id
 
@@ -218,7 +218,7 @@ class CreateHostRequestBody:
 
     @property
     def authorization(self):
-        """Gets the authorization of this CreateHostRequestBody.
+        r"""Gets the authorization of this CreateHostRequestBody.
 
         :return: The authorization of this CreateHostRequestBody.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.HostAuthorizationBody`
@@ -227,7 +227,7 @@ class CreateHostRequestBody:
 
     @authorization.setter
     def authorization(self, authorization):
-        """Sets the authorization of this CreateHostRequestBody.
+        r"""Sets the authorization of this CreateHostRequestBody.
 
         :param authorization: The authorization of this CreateHostRequestBody.
         :type authorization: :class:`huaweicloudsdkcodeartsdeploy.v2.HostAuthorizationBody`
@@ -236,7 +236,7 @@ class CreateHostRequestBody:
 
     @property
     def install_icagent(self):
-        """Gets the install_icagent of this CreateHostRequestBody.
+        r"""Gets the install_icagent of this CreateHostRequestBody.
 
         免费启用应用运维服务（AOM），提供指标监控、日志查询、告警功能（自动安装数据采集器 ICAgent，仅支持华为云linux主机）
 
@@ -247,7 +247,7 @@ class CreateHostRequestBody:
 
     @install_icagent.setter
     def install_icagent(self, install_icagent):
-        """Sets the install_icagent of this CreateHostRequestBody.
+        r"""Sets the install_icagent of this CreateHostRequestBody.
 
         免费启用应用运维服务（AOM），提供指标监控、日志查询、告警功能（自动安装数据采集器 ICAgent，仅支持华为云linux主机）
 

@@ -35,7 +35,7 @@ class MediaDetail:
     }
 
     def __init__(self, features=None, origin_para=None, output_video_paras=None, replace_sub_index=None, output_thumbnail_para=None, output_watermark_paras=None):
-        """MediaDetail
+        r"""MediaDetail
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class MediaDetail:
 
     @property
     def features(self):
-        """Gets the features of this MediaDetail.
+        r"""Gets the features of this MediaDetail.
 
         任务名称
 
@@ -89,7 +89,7 @@ class MediaDetail:
 
     @features.setter
     def features(self, features):
-        """Sets the features of this MediaDetail.
+        r"""Sets the features of this MediaDetail.
 
         任务名称
 
@@ -100,7 +100,7 @@ class MediaDetail:
 
     @property
     def origin_para(self):
-        """Gets the origin_para of this MediaDetail.
+        r"""Gets the origin_para of this MediaDetail.
 
         :return: The origin_para of this MediaDetail.
         :rtype: :class:`huaweicloudsdkmpc.v1.OriginPara`
@@ -109,7 +109,7 @@ class MediaDetail:
 
     @origin_para.setter
     def origin_para(self, origin_para):
-        """Sets the origin_para of this MediaDetail.
+        r"""Sets the origin_para of this MediaDetail.
 
         :param origin_para: The origin_para of this MediaDetail.
         :type origin_para: :class:`huaweicloudsdkmpc.v1.OriginPara`
@@ -118,7 +118,7 @@ class MediaDetail:
 
     @property
     def output_video_paras(self):
-        """Gets the output_video_paras of this MediaDetail.
+        r"""Gets the output_video_paras of this MediaDetail.
 
         多路输出片源信息
 
@@ -129,7 +129,7 @@ class MediaDetail:
 
     @output_video_paras.setter
     def output_video_paras(self, output_video_paras):
-        """Sets the output_video_paras of this MediaDetail.
+        r"""Sets the output_video_paras of this MediaDetail.
 
         多路输出片源信息
 
@@ -140,7 +140,7 @@ class MediaDetail:
 
     @property
     def replace_sub_index(self):
-        """Gets the replace_sub_index of this MediaDetail.
+        r"""Gets the replace_sub_index of this MediaDetail.
 
         被替换的子索引文件 
 
@@ -151,7 +151,7 @@ class MediaDetail:
 
     @replace_sub_index.setter
     def replace_sub_index(self, replace_sub_index):
-        """Sets the replace_sub_index of this MediaDetail.
+        r"""Sets the replace_sub_index of this MediaDetail.
 
         被替换的子索引文件 
 
@@ -162,7 +162,7 @@ class MediaDetail:
 
     @property
     def output_thumbnail_para(self):
-        """Gets the output_thumbnail_para of this MediaDetail.
+        r"""Gets the output_thumbnail_para of this MediaDetail.
 
         :return: The output_thumbnail_para of this MediaDetail.
         :rtype: :class:`huaweicloudsdkmpc.v1.OutputThumbnailPara`
@@ -171,7 +171,7 @@ class MediaDetail:
 
     @output_thumbnail_para.setter
     def output_thumbnail_para(self, output_thumbnail_para):
-        """Sets the output_thumbnail_para of this MediaDetail.
+        r"""Sets the output_thumbnail_para of this MediaDetail.
 
         :param output_thumbnail_para: The output_thumbnail_para of this MediaDetail.
         :type output_thumbnail_para: :class:`huaweicloudsdkmpc.v1.OutputThumbnailPara`
@@ -180,7 +180,7 @@ class MediaDetail:
 
     @property
     def output_watermark_paras(self):
-        """Gets the output_watermark_paras of this MediaDetail.
+        r"""Gets the output_watermark_paras of this MediaDetail.
 
         :return: The output_watermark_paras of this MediaDetail.
         :rtype: :class:`huaweicloudsdkmpc.v1.OutputWatermarkPara`
@@ -189,7 +189,7 @@ class MediaDetail:
 
     @output_watermark_paras.setter
     def output_watermark_paras(self, output_watermark_paras):
-        """Sets the output_watermark_paras of this MediaDetail.
+        r"""Sets the output_watermark_paras of this MediaDetail.
 
         :param output_watermark_paras: The output_watermark_paras of this MediaDetail.
         :type output_watermark_paras: :class:`huaweicloudsdkmpc.v1.OutputWatermarkPara`

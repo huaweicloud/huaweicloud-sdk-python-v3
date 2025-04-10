@@ -28,7 +28,7 @@ class NeutronListFirewallGroupsResponse(SdkResponse):
     }
 
     def __init__(self, firewall_groups=None, firewall_groups_links=None):
-        """NeutronListFirewallGroupsResponse
+        r"""NeutronListFirewallGroupsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class NeutronListFirewallGroupsResponse(SdkResponse):
 
     @property
     def firewall_groups(self):
-        """Gets the firewall_groups of this NeutronListFirewallGroupsResponse.
+        r"""Gets the firewall_groups of this NeutronListFirewallGroupsResponse.
 
         firewall_group对象列表
 
@@ -62,7 +62,7 @@ class NeutronListFirewallGroupsResponse(SdkResponse):
 
     @firewall_groups.setter
     def firewall_groups(self, firewall_groups):
-        """Sets the firewall_groups of this NeutronListFirewallGroupsResponse.
+        r"""Sets the firewall_groups of this NeutronListFirewallGroupsResponse.
 
         firewall_group对象列表
 
@@ -73,7 +73,7 @@ class NeutronListFirewallGroupsResponse(SdkResponse):
 
     @property
     def firewall_groups_links(self):
-        """Gets the firewall_groups_links of this NeutronListFirewallGroupsResponse.
+        r"""Gets the firewall_groups_links of this NeutronListFirewallGroupsResponse.
 
         分页信息
 
@@ -84,7 +84,7 @@ class NeutronListFirewallGroupsResponse(SdkResponse):
 
     @firewall_groups_links.setter
     def firewall_groups_links(self, firewall_groups_links):
-        """Sets the firewall_groups_links of this NeutronListFirewallGroupsResponse.
+        r"""Sets the firewall_groups_links of this NeutronListFirewallGroupsResponse.
 
         分页信息
 

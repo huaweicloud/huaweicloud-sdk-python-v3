@@ -29,7 +29,7 @@ class ImportHostToEnvironmentRequest:
     }
 
     def __init__(self, application_id=None, environment_id=None, body=None):
-        """ImportHostToEnvironmentRequest
+        r"""ImportHostToEnvironmentRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ImportHostToEnvironmentRequest:
 
     @property
     def application_id(self):
-        """Gets the application_id of this ImportHostToEnvironmentRequest.
+        r"""Gets the application_id of this ImportHostToEnvironmentRequest.
 
         应用id
 
@@ -66,7 +66,7 @@ class ImportHostToEnvironmentRequest:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this ImportHostToEnvironmentRequest.
+        r"""Sets the application_id of this ImportHostToEnvironmentRequest.
 
         应用id
 
@@ -77,7 +77,7 @@ class ImportHostToEnvironmentRequest:
 
     @property
     def environment_id(self):
-        """Gets the environment_id of this ImportHostToEnvironmentRequest.
+        r"""Gets the environment_id of this ImportHostToEnvironmentRequest.
 
         环境id
 
@@ -88,7 +88,7 @@ class ImportHostToEnvironmentRequest:
 
     @environment_id.setter
     def environment_id(self, environment_id):
-        """Sets the environment_id of this ImportHostToEnvironmentRequest.
+        r"""Sets the environment_id of this ImportHostToEnvironmentRequest.
 
         环境id
 
@@ -99,7 +99,7 @@ class ImportHostToEnvironmentRequest:
 
     @property
     def body(self):
-        """Gets the body of this ImportHostToEnvironmentRequest.
+        r"""Gets the body of this ImportHostToEnvironmentRequest.
 
         :return: The body of this ImportHostToEnvironmentRequest.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.ImportHostToEnvironmentRequestBody`
@@ -108,7 +108,7 @@ class ImportHostToEnvironmentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ImportHostToEnvironmentRequest.
+        r"""Sets the body of this ImportHostToEnvironmentRequest.
 
         :param body: The body of this ImportHostToEnvironmentRequest.
         :type body: :class:`huaweicloudsdkcodeartsdeploy.v2.ImportHostToEnvironmentRequestBody`

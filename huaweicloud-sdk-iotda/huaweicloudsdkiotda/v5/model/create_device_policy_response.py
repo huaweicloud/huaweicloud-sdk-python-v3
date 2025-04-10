@@ -36,7 +36,7 @@ class CreateDevicePolicyResponse(SdkResponse):
     }
 
     def __init__(self, app_id=None, policy_id=None, policy_name=None, statement=None, create_time=None, update_time=None):
-        """CreateDevicePolicyResponse
+        r"""CreateDevicePolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class CreateDevicePolicyResponse(SdkResponse):
 
     @property
     def app_id(self):
-        """Gets the app_id of this CreateDevicePolicyResponse.
+        r"""Gets the app_id of this CreateDevicePolicyResponse.
 
         **参数说明**：资源空间ID。
 
@@ -90,7 +90,7 @@ class CreateDevicePolicyResponse(SdkResponse):
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this CreateDevicePolicyResponse.
+        r"""Sets the app_id of this CreateDevicePolicyResponse.
 
         **参数说明**：资源空间ID。
 
@@ -101,7 +101,7 @@ class CreateDevicePolicyResponse(SdkResponse):
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this CreateDevicePolicyResponse.
+        r"""Gets the policy_id of this CreateDevicePolicyResponse.
 
         策略ID。
 
@@ -112,7 +112,7 @@ class CreateDevicePolicyResponse(SdkResponse):
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this CreateDevicePolicyResponse.
+        r"""Sets the policy_id of this CreateDevicePolicyResponse.
 
         策略ID。
 
@@ -123,7 +123,7 @@ class CreateDevicePolicyResponse(SdkResponse):
 
     @property
     def policy_name(self):
-        """Gets the policy_name of this CreateDevicePolicyResponse.
+        r"""Gets the policy_name of this CreateDevicePolicyResponse.
 
         策略名称。
 
@@ -134,7 +134,7 @@ class CreateDevicePolicyResponse(SdkResponse):
 
     @policy_name.setter
     def policy_name(self, policy_name):
-        """Sets the policy_name of this CreateDevicePolicyResponse.
+        r"""Sets the policy_name of this CreateDevicePolicyResponse.
 
         策略名称。
 
@@ -145,7 +145,7 @@ class CreateDevicePolicyResponse(SdkResponse):
 
     @property
     def statement(self):
-        """Gets the statement of this CreateDevicePolicyResponse.
+        r"""Gets the statement of this CreateDevicePolicyResponse.
 
         策略文档。
 
@@ -156,7 +156,7 @@ class CreateDevicePolicyResponse(SdkResponse):
 
     @statement.setter
     def statement(self, statement):
-        """Sets the statement of this CreateDevicePolicyResponse.
+        r"""Sets the statement of this CreateDevicePolicyResponse.
 
         策略文档。
 
@@ -167,7 +167,7 @@ class CreateDevicePolicyResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreateDevicePolicyResponse.
+        r"""Gets the create_time of this CreateDevicePolicyResponse.
 
         在物联网平台创建策略的时间。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
@@ -178,7 +178,7 @@ class CreateDevicePolicyResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreateDevicePolicyResponse.
+        r"""Sets the create_time of this CreateDevicePolicyResponse.
 
         在物联网平台创建策略的时间。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
@@ -189,7 +189,7 @@ class CreateDevicePolicyResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this CreateDevicePolicyResponse.
+        r"""Gets the update_time of this CreateDevicePolicyResponse.
 
         在物联网平台更新策略的时间。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 
@@ -200,7 +200,7 @@ class CreateDevicePolicyResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this CreateDevicePolicyResponse.
+        r"""Sets the update_time of this CreateDevicePolicyResponse.
 
         在物联网平台更新策略的时间。格式：yyyyMMdd'T'HHmmss'Z'，如20151212T121212Z。
 

@@ -26,7 +26,7 @@ class ShowServerBlockDeviceResponse(SdkResponse):
     }
 
     def __init__(self, volume_attachment=None):
-        """ShowServerBlockDeviceResponse
+        r"""ShowServerBlockDeviceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowServerBlockDeviceResponse(SdkResponse):
 
     @property
     def volume_attachment(self):
-        """Gets the volume_attachment of this ShowServerBlockDeviceResponse.
+        r"""Gets the volume_attachment of this ShowServerBlockDeviceResponse.
 
         :return: The volume_attachment of this ShowServerBlockDeviceResponse.
         :rtype: :class:`huaweicloudsdkecs.v2.ServerBlockDevice`
@@ -53,7 +53,7 @@ class ShowServerBlockDeviceResponse(SdkResponse):
 
     @volume_attachment.setter
     def volume_attachment(self, volume_attachment):
-        """Sets the volume_attachment of this ShowServerBlockDeviceResponse.
+        r"""Sets the volume_attachment of this ShowServerBlockDeviceResponse.
 
         :param volume_attachment: The volume_attachment of this ShowServerBlockDeviceResponse.
         :type volume_attachment: :class:`huaweicloudsdkecs.v2.ServerBlockDevice`

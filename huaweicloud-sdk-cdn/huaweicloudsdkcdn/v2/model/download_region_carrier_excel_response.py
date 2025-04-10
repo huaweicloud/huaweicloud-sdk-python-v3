@@ -24,7 +24,7 @@ class DownloadRegionCarrierExcelResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DownloadRegionCarrierExcelResponse
+        r"""DownloadRegionCarrierExcelResponse
 
         The model defined in huaweicloud sdk
 

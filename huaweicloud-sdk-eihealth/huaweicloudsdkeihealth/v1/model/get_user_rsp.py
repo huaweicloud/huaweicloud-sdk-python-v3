@@ -47,7 +47,7 @@ class GetUserRsp:
     }
 
     def __init__(self, id=None, name=None, role=None, status=None, email=None, phone=None, areacode=None, is_domain_owner=None, create_time=None, pwd_status=None, update_time=None, source=None):
-        """GetUserRsp
+        r"""GetUserRsp
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class GetUserRsp:
 
     @property
     def id(self):
-        """Gets the id of this GetUserRsp.
+        r"""Gets the id of this GetUserRsp.
 
         用户id
 
@@ -131,7 +131,7 @@ class GetUserRsp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this GetUserRsp.
+        r"""Sets the id of this GetUserRsp.
 
         用户id
 
@@ -142,7 +142,7 @@ class GetUserRsp:
 
     @property
     def name(self):
-        """Gets the name of this GetUserRsp.
+        r"""Gets the name of this GetUserRsp.
 
         用户名，长度4~31之间，首位不能为数字，特殊字符只能包含下划线“_”、中划线“-”和空格
 
@@ -153,7 +153,7 @@ class GetUserRsp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GetUserRsp.
+        r"""Sets the name of this GetUserRsp.
 
         用户名，长度4~31之间，首位不能为数字，特殊字符只能包含下划线“_”、中划线“-”和空格
 
@@ -164,7 +164,7 @@ class GetUserRsp:
 
     @property
     def role(self):
-        """Gets the role of this GetUserRsp.
+        r"""Gets the role of this GetUserRsp.
 
         角色类型：管理员(ADMIN)、操作者(OPERATOR)
 
@@ -175,7 +175,7 @@ class GetUserRsp:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this GetUserRsp.
+        r"""Sets the role of this GetUserRsp.
 
         角色类型：管理员(ADMIN)、操作者(OPERATOR)
 
@@ -186,7 +186,7 @@ class GetUserRsp:
 
     @property
     def status(self):
-        """Gets the status of this GetUserRsp.
+        r"""Gets the status of this GetUserRsp.
 
         状态
 
@@ -197,7 +197,7 @@ class GetUserRsp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this GetUserRsp.
+        r"""Sets the status of this GetUserRsp.
 
         状态
 
@@ -208,7 +208,7 @@ class GetUserRsp:
 
     @property
     def email(self):
-        """Gets the email of this GetUserRsp.
+        r"""Gets the email of this GetUserRsp.
 
         用户邮箱，需符合邮箱格式
 
@@ -219,7 +219,7 @@ class GetUserRsp:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this GetUserRsp.
+        r"""Sets the email of this GetUserRsp.
 
         用户邮箱，需符合邮箱格式
 
@@ -230,7 +230,7 @@ class GetUserRsp:
 
     @property
     def phone(self):
-        """Gets the phone of this GetUserRsp.
+        r"""Gets the phone of this GetUserRsp.
 
         用户手机号，纯数字，长度小于等于32位。必须与国家码同时存在。
 
@@ -241,7 +241,7 @@ class GetUserRsp:
 
     @phone.setter
     def phone(self, phone):
-        """Sets the phone of this GetUserRsp.
+        r"""Sets the phone of this GetUserRsp.
 
         用户手机号，纯数字，长度小于等于32位。必须与国家码同时存在。
 
@@ -252,7 +252,7 @@ class GetUserRsp:
 
     @property
     def areacode(self):
-        """Gets the areacode of this GetUserRsp.
+        r"""Gets the areacode of this GetUserRsp.
 
         国家码。中国大陆为“0086”
 
@@ -263,7 +263,7 @@ class GetUserRsp:
 
     @areacode.setter
     def areacode(self, areacode):
-        """Sets the areacode of this GetUserRsp.
+        r"""Sets the areacode of this GetUserRsp.
 
         国家码。中国大陆为“0086”
 
@@ -274,7 +274,7 @@ class GetUserRsp:
 
     @property
     def is_domain_owner(self):
-        """Gets the is_domain_owner of this GetUserRsp.
+        r"""Gets the is_domain_owner of this GetUserRsp.
 
         是否domain用户
 
@@ -285,7 +285,7 @@ class GetUserRsp:
 
     @is_domain_owner.setter
     def is_domain_owner(self, is_domain_owner):
-        """Sets the is_domain_owner of this GetUserRsp.
+        r"""Sets the is_domain_owner of this GetUserRsp.
 
         是否domain用户
 
@@ -296,7 +296,7 @@ class GetUserRsp:
 
     @property
     def create_time(self):
-        """Gets the create_time of this GetUserRsp.
+        r"""Gets the create_time of this GetUserRsp.
 
         用户创建时间，UTC时间
 
@@ -307,7 +307,7 @@ class GetUserRsp:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this GetUserRsp.
+        r"""Sets the create_time of this GetUserRsp.
 
         用户创建时间，UTC时间
 
@@ -318,7 +318,7 @@ class GetUserRsp:
 
     @property
     def pwd_status(self):
-        """Gets the pwd_status of this GetUserRsp.
+        r"""Gets the pwd_status of this GetUserRsp.
 
         是否需要修改密码
 
@@ -329,7 +329,7 @@ class GetUserRsp:
 
     @pwd_status.setter
     def pwd_status(self, pwd_status):
-        """Sets the pwd_status of this GetUserRsp.
+        r"""Sets the pwd_status of this GetUserRsp.
 
         是否需要修改密码
 
@@ -340,7 +340,7 @@ class GetUserRsp:
 
     @property
     def update_time(self):
-        """Gets the update_time of this GetUserRsp.
+        r"""Gets the update_time of this GetUserRsp.
 
         更新时间，UTC时间
 
@@ -351,7 +351,7 @@ class GetUserRsp:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this GetUserRsp.
+        r"""Sets the update_time of this GetUserRsp.
 
         更新时间，UTC时间
 
@@ -362,7 +362,7 @@ class GetUserRsp:
 
     @property
     def source(self):
-        """Gets the source of this GetUserRsp.
+        r"""Gets the source of this GetUserRsp.
 
         来源，PLATFORM或者IAM
 
@@ -373,7 +373,7 @@ class GetUserRsp:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this GetUserRsp.
+        r"""Sets the source of this GetUserRsp.
 
         来源，PLATFORM或者IAM
 

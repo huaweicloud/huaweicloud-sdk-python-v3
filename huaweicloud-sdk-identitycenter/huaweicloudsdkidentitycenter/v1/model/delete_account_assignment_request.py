@@ -30,7 +30,7 @@ class DeleteAccountAssignmentRequest:
     }
 
     def __init__(self, x_security_token=None, instance_id=None, body=None):
-        """DeleteAccountAssignmentRequest
+        r"""DeleteAccountAssignmentRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class DeleteAccountAssignmentRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this DeleteAccountAssignmentRequest.
+        r"""Gets the x_security_token of this DeleteAccountAssignmentRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -68,7 +68,7 @@ class DeleteAccountAssignmentRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this DeleteAccountAssignmentRequest.
+        r"""Sets the x_security_token of this DeleteAccountAssignmentRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -79,7 +79,7 @@ class DeleteAccountAssignmentRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteAccountAssignmentRequest.
+        r"""Gets the instance_id of this DeleteAccountAssignmentRequest.
 
         IAM身份中心实例的全局唯一标识符（ID）。
 
@@ -90,7 +90,7 @@ class DeleteAccountAssignmentRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteAccountAssignmentRequest.
+        r"""Sets the instance_id of this DeleteAccountAssignmentRequest.
 
         IAM身份中心实例的全局唯一标识符（ID）。
 
@@ -101,7 +101,7 @@ class DeleteAccountAssignmentRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteAccountAssignmentRequest.
+        r"""Gets the body of this DeleteAccountAssignmentRequest.
 
         :return: The body of this DeleteAccountAssignmentRequest.
         :rtype: :class:`huaweicloudsdkidentitycenter.v1.DeleteAccountAssignmentReqBody`
@@ -110,7 +110,7 @@ class DeleteAccountAssignmentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteAccountAssignmentRequest.
+        r"""Sets the body of this DeleteAccountAssignmentRequest.
 
         :param body: The body of this DeleteAccountAssignmentRequest.
         :type body: :class:`huaweicloudsdkidentitycenter.v1.DeleteAccountAssignmentReqBody`

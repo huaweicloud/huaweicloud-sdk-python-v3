@@ -27,7 +27,7 @@ class ChDatabaseTablesConfigsInfo:
     }
 
     def __init__(self, table_name=None, table_config=None):
-        """ChDatabaseTablesConfigsInfo
+        r"""ChDatabaseTablesConfigsInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ChDatabaseTablesConfigsInfo:
 
     @property
     def table_name(self):
-        """Gets the table_name of this ChDatabaseTablesConfigsInfo.
+        r"""Gets the table_name of this ChDatabaseTablesConfigsInfo.
 
         数据库表名。
 
@@ -59,7 +59,7 @@ class ChDatabaseTablesConfigsInfo:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this ChDatabaseTablesConfigsInfo.
+        r"""Sets the table_name of this ChDatabaseTablesConfigsInfo.
 
         数据库表名。
 
@@ -70,7 +70,7 @@ class ChDatabaseTablesConfigsInfo:
 
     @property
     def table_config(self):
-        """Gets the table_config of this ChDatabaseTablesConfigsInfo.
+        r"""Gets the table_config of this ChDatabaseTablesConfigsInfo.
 
         表配置值。  允许输入的列操作有：PARTITION BY, COLUMNS, ORDER BY, SAMPLE BY, PRIMARY KEY, TTL
 
@@ -81,7 +81,7 @@ class ChDatabaseTablesConfigsInfo:
 
     @table_config.setter
     def table_config(self, table_config):
-        """Sets the table_config of this ChDatabaseTablesConfigsInfo.
+        r"""Sets the table_config of this ChDatabaseTablesConfigsInfo.
 
         表配置值。  允许输入的列操作有：PARTITION BY, COLUMNS, ORDER BY, SAMPLE BY, PRIMARY KEY, TTL
 

@@ -31,7 +31,7 @@ class ExpandDdmInstanceNodesRequestBody:
     }
 
     def __init__(self, group_id=None, subnet_id=None, is_auto_pay=None, nodes=None):
-        """ExpandDdmInstanceNodesRequestBody
+        r"""ExpandDdmInstanceNodesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ExpandDdmInstanceNodesRequestBody:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ExpandDdmInstanceNodesRequestBody.
+        r"""Gets the group_id of this ExpandDdmInstanceNodesRequestBody.
 
         组id，指定当前进行节点扩容的组。当实例的组>1时，必填。
 
@@ -74,7 +74,7 @@ class ExpandDdmInstanceNodesRequestBody:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ExpandDdmInstanceNodesRequestBody.
+        r"""Sets the group_id of this ExpandDdmInstanceNodesRequestBody.
 
         组id，指定当前进行节点扩容的组。当实例的组>1时，必填。
 
@@ -85,7 +85,7 @@ class ExpandDdmInstanceNodesRequestBody:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ExpandDdmInstanceNodesRequestBody.
+        r"""Gets the subnet_id of this ExpandDdmInstanceNodesRequestBody.
 
         子网ID，当组内节点的subnetId>1时，必填。
 
@@ -96,7 +96,7 @@ class ExpandDdmInstanceNodesRequestBody:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ExpandDdmInstanceNodesRequestBody.
+        r"""Sets the subnet_id of this ExpandDdmInstanceNodesRequestBody.
 
         子网ID，当组内节点的subnetId>1时，必填。
 
@@ -107,7 +107,7 @@ class ExpandDdmInstanceNodesRequestBody:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this ExpandDdmInstanceNodesRequestBody.
+        r"""Gets the is_auto_pay of this ExpandDdmInstanceNodesRequestBody.
 
         变更包年包月实例规格时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。true，表示自动从账户中支付。false，表示手动从账户中支付，默认为该方式。
 
@@ -118,7 +118,7 @@ class ExpandDdmInstanceNodesRequestBody:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this ExpandDdmInstanceNodesRequestBody.
+        r"""Sets the is_auto_pay of this ExpandDdmInstanceNodesRequestBody.
 
         变更包年包月实例规格时可指定，表示是否自动从账户中支付，此字段不影响自动续订的支付方式。true，表示自动从账户中支付。false，表示手动从账户中支付，默认为该方式。
 
@@ -129,7 +129,7 @@ class ExpandDdmInstanceNodesRequestBody:
 
     @property
     def nodes(self):
-        """Gets the nodes of this ExpandDdmInstanceNodesRequestBody.
+        r"""Gets the nodes of this ExpandDdmInstanceNodesRequestBody.
 
         节点信息列表。最小1，最大32
 
@@ -140,7 +140,7 @@ class ExpandDdmInstanceNodesRequestBody:
 
     @nodes.setter
     def nodes(self, nodes):
-        """Sets the nodes of this ExpandDdmInstanceNodesRequestBody.
+        r"""Sets the nodes of this ExpandDdmInstanceNodesRequestBody.
 
         节点信息列表。最小1，最大32
 

@@ -115,7 +115,7 @@ class TestResultVo:
     }
 
     def __init__(self, uri=None, name=None, author=None, rank=None, result=None, round=None, preparation=None, description=None, region=None, steps=None, number=None, author_name=None, begin_time=None, begin_time_timestamp=None, end_time=None, end_time_timestamp=None, creation_date=None, creation_date_timestamp=None, last_modified=None, last_modified_timestamp=None, last_change_time=None, last_change_time_timestamp=None, dfx_test_result=None, failure_cause=None, parent_uri=None, test_case_uri=None, test_case_name=None, task_uri=None, result_name=None, test_result_ae=None, executor_id=None, executor_name=None, task_id=None, execute_id=None, time_cost=None, step_txt=None, step_expect=None, step_actual=None, step_result=None, release_dev=None, creation_version_uri=None, version_uri=None, project_id=None, report_url=None, test_case_number=None, service_type=None):
-        """TestResultVo
+        r"""TestResultVo
 
         The model defined in huaweicloud sdk
 
@@ -358,7 +358,7 @@ class TestResultVo:
 
     @property
     def uri(self):
-        """Gets the uri of this TestResultVo.
+        r"""Gets the uri of this TestResultVo.
 
         结果URI
 
@@ -369,7 +369,7 @@ class TestResultVo:
 
     @uri.setter
     def uri(self, uri):
-        """Sets the uri of this TestResultVo.
+        r"""Sets the uri of this TestResultVo.
 
         结果URI
 
@@ -380,7 +380,7 @@ class TestResultVo:
 
     @property
     def name(self):
-        """Gets the name of this TestResultVo.
+        r"""Gets the name of this TestResultVo.
 
         用例结果名称
 
@@ -391,7 +391,7 @@ class TestResultVo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TestResultVo.
+        r"""Sets the name of this TestResultVo.
 
         用例结果名称
 
@@ -402,7 +402,7 @@ class TestResultVo:
 
     @property
     def author(self):
-        """Gets the author of this TestResultVo.
+        r"""Gets the author of this TestResultVo.
 
         创建人ID
 
@@ -413,7 +413,7 @@ class TestResultVo:
 
     @author.setter
     def author(self, author):
-        """Sets the author of this TestResultVo.
+        r"""Sets the author of this TestResultVo.
 
         创建人ID
 
@@ -424,7 +424,7 @@ class TestResultVo:
 
     @property
     def rank(self):
-        """Gets the rank of this TestResultVo.
+        r"""Gets the rank of this TestResultVo.
 
         级别
 
@@ -435,7 +435,7 @@ class TestResultVo:
 
     @rank.setter
     def rank(self, rank):
-        """Sets the rank of this TestResultVo.
+        r"""Sets the rank of this TestResultVo.
 
         级别
 
@@ -446,7 +446,7 @@ class TestResultVo:
 
     @property
     def result(self):
-        """Gets the result of this TestResultVo.
+        r"""Gets the result of this TestResultVo.
 
         测试结果Code
 
@@ -457,7 +457,7 @@ class TestResultVo:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this TestResultVo.
+        r"""Sets the result of this TestResultVo.
 
         测试结果Code
 
@@ -468,7 +468,7 @@ class TestResultVo:
 
     @property
     def round(self):
-        """Gets the round of this TestResultVo.
+        r"""Gets the round of this TestResultVo.
 
         执行批次
 
@@ -479,7 +479,7 @@ class TestResultVo:
 
     @round.setter
     def round(self, round):
-        """Sets the round of this TestResultVo.
+        r"""Sets the round of this TestResultVo.
 
         执行批次
 
@@ -490,7 +490,7 @@ class TestResultVo:
 
     @property
     def preparation(self):
-        """Gets the preparation of this TestResultVo.
+        r"""Gets the preparation of this TestResultVo.
 
         前置条件
 
@@ -501,7 +501,7 @@ class TestResultVo:
 
     @preparation.setter
     def preparation(self, preparation):
-        """Sets the preparation of this TestResultVo.
+        r"""Sets the preparation of this TestResultVo.
 
         前置条件
 
@@ -512,7 +512,7 @@ class TestResultVo:
 
     @property
     def description(self):
-        """Gets the description of this TestResultVo.
+        r"""Gets the description of this TestResultVo.
 
         描述
 
@@ -523,7 +523,7 @@ class TestResultVo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TestResultVo.
+        r"""Sets the description of this TestResultVo.
 
         描述
 
@@ -534,7 +534,7 @@ class TestResultVo:
 
     @property
     def region(self):
-        """Gets the region of this TestResultVo.
+        r"""Gets the region of this TestResultVo.
 
         逻辑Region
 
@@ -545,7 +545,7 @@ class TestResultVo:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this TestResultVo.
+        r"""Sets the region of this TestResultVo.
 
         逻辑Region
 
@@ -556,7 +556,7 @@ class TestResultVo:
 
     @property
     def steps(self):
-        """Gets the steps of this TestResultVo.
+        r"""Gets the steps of this TestResultVo.
 
         测试步骤信息
 
@@ -567,7 +567,7 @@ class TestResultVo:
 
     @steps.setter
     def steps(self, steps):
-        """Sets the steps of this TestResultVo.
+        r"""Sets the steps of this TestResultVo.
 
         测试步骤信息
 
@@ -578,7 +578,7 @@ class TestResultVo:
 
     @property
     def number(self):
-        """Gets the number of this TestResultVo.
+        r"""Gets the number of this TestResultVo.
 
         用例结果编号
 
@@ -589,7 +589,7 @@ class TestResultVo:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this TestResultVo.
+        r"""Sets the number of this TestResultVo.
 
         用例结果编号
 
@@ -600,7 +600,7 @@ class TestResultVo:
 
     @property
     def author_name(self):
-        """Gets the author_name of this TestResultVo.
+        r"""Gets the author_name of this TestResultVo.
 
         创建人名称
 
@@ -611,7 +611,7 @@ class TestResultVo:
 
     @author_name.setter
     def author_name(self, author_name):
-        """Sets the author_name of this TestResultVo.
+        r"""Sets the author_name of this TestResultVo.
 
         创建人名称
 
@@ -622,7 +622,7 @@ class TestResultVo:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this TestResultVo.
+        r"""Gets the begin_time of this TestResultVo.
 
         执行开始时间
 
@@ -633,7 +633,7 @@ class TestResultVo:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this TestResultVo.
+        r"""Sets the begin_time of this TestResultVo.
 
         执行开始时间
 
@@ -644,7 +644,7 @@ class TestResultVo:
 
     @property
     def begin_time_timestamp(self):
-        """Gets the begin_time_timestamp of this TestResultVo.
+        r"""Gets the begin_time_timestamp of this TestResultVo.
 
         执行开始时间时间戳
 
@@ -655,7 +655,7 @@ class TestResultVo:
 
     @begin_time_timestamp.setter
     def begin_time_timestamp(self, begin_time_timestamp):
-        """Sets the begin_time_timestamp of this TestResultVo.
+        r"""Sets the begin_time_timestamp of this TestResultVo.
 
         执行开始时间时间戳
 
@@ -666,7 +666,7 @@ class TestResultVo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this TestResultVo.
+        r"""Gets the end_time of this TestResultVo.
 
         执行结束时间
 
@@ -677,7 +677,7 @@ class TestResultVo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this TestResultVo.
+        r"""Sets the end_time of this TestResultVo.
 
         执行结束时间
 
@@ -688,7 +688,7 @@ class TestResultVo:
 
     @property
     def end_time_timestamp(self):
-        """Gets the end_time_timestamp of this TestResultVo.
+        r"""Gets the end_time_timestamp of this TestResultVo.
 
         执行结束时间时间戳
 
@@ -699,7 +699,7 @@ class TestResultVo:
 
     @end_time_timestamp.setter
     def end_time_timestamp(self, end_time_timestamp):
-        """Sets the end_time_timestamp of this TestResultVo.
+        r"""Sets the end_time_timestamp of this TestResultVo.
 
         执行结束时间时间戳
 
@@ -710,7 +710,7 @@ class TestResultVo:
 
     @property
     def creation_date(self):
-        """Gets the creation_date of this TestResultVo.
+        r"""Gets the creation_date of this TestResultVo.
 
         创建时间
 
@@ -721,7 +721,7 @@ class TestResultVo:
 
     @creation_date.setter
     def creation_date(self, creation_date):
-        """Sets the creation_date of this TestResultVo.
+        r"""Sets the creation_date of this TestResultVo.
 
         创建时间
 
@@ -732,7 +732,7 @@ class TestResultVo:
 
     @property
     def creation_date_timestamp(self):
-        """Gets the creation_date_timestamp of this TestResultVo.
+        r"""Gets the creation_date_timestamp of this TestResultVo.
 
         创建时间时间戳
 
@@ -743,7 +743,7 @@ class TestResultVo:
 
     @creation_date_timestamp.setter
     def creation_date_timestamp(self, creation_date_timestamp):
-        """Sets the creation_date_timestamp of this TestResultVo.
+        r"""Sets the creation_date_timestamp of this TestResultVo.
 
         创建时间时间戳
 
@@ -754,7 +754,7 @@ class TestResultVo:
 
     @property
     def last_modified(self):
-        """Gets the last_modified of this TestResultVo.
+        r"""Gets the last_modified of this TestResultVo.
 
         最后修改时间
 
@@ -765,7 +765,7 @@ class TestResultVo:
 
     @last_modified.setter
     def last_modified(self, last_modified):
-        """Sets the last_modified of this TestResultVo.
+        r"""Sets the last_modified of this TestResultVo.
 
         最后修改时间
 
@@ -776,7 +776,7 @@ class TestResultVo:
 
     @property
     def last_modified_timestamp(self):
-        """Gets the last_modified_timestamp of this TestResultVo.
+        r"""Gets the last_modified_timestamp of this TestResultVo.
 
         最后修改时间
 
@@ -787,7 +787,7 @@ class TestResultVo:
 
     @last_modified_timestamp.setter
     def last_modified_timestamp(self, last_modified_timestamp):
-        """Sets the last_modified_timestamp of this TestResultVo.
+        r"""Sets the last_modified_timestamp of this TestResultVo.
 
         最后修改时间
 
@@ -798,7 +798,7 @@ class TestResultVo:
 
     @property
     def last_change_time(self):
-        """Gets the last_change_time of this TestResultVo.
+        r"""Gets the last_change_time of this TestResultVo.
 
         最后变更时间
 
@@ -809,7 +809,7 @@ class TestResultVo:
 
     @last_change_time.setter
     def last_change_time(self, last_change_time):
-        """Sets the last_change_time of this TestResultVo.
+        r"""Sets the last_change_time of this TestResultVo.
 
         最后变更时间
 
@@ -820,7 +820,7 @@ class TestResultVo:
 
     @property
     def last_change_time_timestamp(self):
-        """Gets the last_change_time_timestamp of this TestResultVo.
+        r"""Gets the last_change_time_timestamp of this TestResultVo.
 
         最后变更时间
 
@@ -831,7 +831,7 @@ class TestResultVo:
 
     @last_change_time_timestamp.setter
     def last_change_time_timestamp(self, last_change_time_timestamp):
-        """Sets the last_change_time_timestamp of this TestResultVo.
+        r"""Sets the last_change_time_timestamp of this TestResultVo.
 
         最后变更时间
 
@@ -842,7 +842,7 @@ class TestResultVo:
 
     @property
     def dfx_test_result(self):
-        """Gets the dfx_test_result of this TestResultVo.
+        r"""Gets the dfx_test_result of this TestResultVo.
 
         DFX测试结果
 
@@ -853,7 +853,7 @@ class TestResultVo:
 
     @dfx_test_result.setter
     def dfx_test_result(self, dfx_test_result):
-        """Sets the dfx_test_result of this TestResultVo.
+        r"""Sets the dfx_test_result of this TestResultVo.
 
         DFX测试结果
 
@@ -864,7 +864,7 @@ class TestResultVo:
 
     @property
     def failure_cause(self):
-        """Gets the failure_cause of this TestResultVo.
+        r"""Gets the failure_cause of this TestResultVo.
 
         失败原因
 
@@ -875,7 +875,7 @@ class TestResultVo:
 
     @failure_cause.setter
     def failure_cause(self, failure_cause):
-        """Sets the failure_cause of this TestResultVo.
+        r"""Sets the failure_cause of this TestResultVo.
 
         失败原因
 
@@ -886,7 +886,7 @@ class TestResultVo:
 
     @property
     def parent_uri(self):
-        """Gets the parent_uri of this TestResultVo.
+        r"""Gets the parent_uri of this TestResultVo.
 
         父节点URI(分支用例URI或迭代用例URI)
 
@@ -897,7 +897,7 @@ class TestResultVo:
 
     @parent_uri.setter
     def parent_uri(self, parent_uri):
-        """Sets the parent_uri of this TestResultVo.
+        r"""Sets the parent_uri of this TestResultVo.
 
         父节点URI(分支用例URI或迭代用例URI)
 
@@ -908,7 +908,7 @@ class TestResultVo:
 
     @property
     def test_case_uri(self):
-        """Gets the test_case_uri of this TestResultVo.
+        r"""Gets the test_case_uri of this TestResultVo.
 
         分支用例URI
 
@@ -919,7 +919,7 @@ class TestResultVo:
 
     @test_case_uri.setter
     def test_case_uri(self, test_case_uri):
-        """Sets the test_case_uri of this TestResultVo.
+        r"""Sets the test_case_uri of this TestResultVo.
 
         分支用例URI
 
@@ -930,7 +930,7 @@ class TestResultVo:
 
     @property
     def test_case_name(self):
-        """Gets the test_case_name of this TestResultVo.
+        r"""Gets the test_case_name of this TestResultVo.
 
         用例名称
 
@@ -941,7 +941,7 @@ class TestResultVo:
 
     @test_case_name.setter
     def test_case_name(self, test_case_name):
-        """Sets the test_case_name of this TestResultVo.
+        r"""Sets the test_case_name of this TestResultVo.
 
         用例名称
 
@@ -952,7 +952,7 @@ class TestResultVo:
 
     @property
     def task_uri(self):
-        """Gets the task_uri of this TestResultVo.
+        r"""Gets the task_uri of this TestResultVo.
 
         测试任务URI
 
@@ -963,7 +963,7 @@ class TestResultVo:
 
     @task_uri.setter
     def task_uri(self, task_uri):
-        """Sets the task_uri of this TestResultVo.
+        r"""Sets the task_uri of this TestResultVo.
 
         测试任务URI
 
@@ -974,7 +974,7 @@ class TestResultVo:
 
     @property
     def result_name(self):
-        """Gets the result_name of this TestResultVo.
+        r"""Gets the result_name of this TestResultVo.
 
         测试结果
 
@@ -985,7 +985,7 @@ class TestResultVo:
 
     @result_name.setter
     def result_name(self, result_name):
-        """Sets the result_name of this TestResultVo.
+        r"""Sets the result_name of this TestResultVo.
 
         测试结果
 
@@ -996,7 +996,7 @@ class TestResultVo:
 
     @property
     def test_result_ae(self):
-        """Gets the test_result_ae of this TestResultVo.
+        r"""Gets the test_result_ae of this TestResultVo.
 
         是否自动化执行
 
@@ -1007,7 +1007,7 @@ class TestResultVo:
 
     @test_result_ae.setter
     def test_result_ae(self, test_result_ae):
-        """Sets the test_result_ae of this TestResultVo.
+        r"""Sets the test_result_ae of this TestResultVo.
 
         是否自动化执行
 
@@ -1018,7 +1018,7 @@ class TestResultVo:
 
     @property
     def executor_id(self):
-        """Gets the executor_id of this TestResultVo.
+        r"""Gets the executor_id of this TestResultVo.
 
         执行人ID
 
@@ -1029,7 +1029,7 @@ class TestResultVo:
 
     @executor_id.setter
     def executor_id(self, executor_id):
-        """Sets the executor_id of this TestResultVo.
+        r"""Sets the executor_id of this TestResultVo.
 
         执行人ID
 
@@ -1040,7 +1040,7 @@ class TestResultVo:
 
     @property
     def executor_name(self):
-        """Gets the executor_name of this TestResultVo.
+        r"""Gets the executor_name of this TestResultVo.
 
         执行人名称
 
@@ -1051,7 +1051,7 @@ class TestResultVo:
 
     @executor_name.setter
     def executor_name(self, executor_name):
-        """Sets the executor_name of this TestResultVo.
+        r"""Sets the executor_name of this TestResultVo.
 
         执行人名称
 
@@ -1062,7 +1062,7 @@ class TestResultVo:
 
     @property
     def task_id(self):
-        """Gets the task_id of this TestResultVo.
+        r"""Gets the task_id of this TestResultVo.
 
         执行机任务ID
 
@@ -1073,7 +1073,7 @@ class TestResultVo:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this TestResultVo.
+        r"""Sets the task_id of this TestResultVo.
 
         执行机任务ID
 
@@ -1084,7 +1084,7 @@ class TestResultVo:
 
     @property
     def execute_id(self):
-        """Gets the execute_id of this TestResultVo.
+        r"""Gets the execute_id of this TestResultVo.
 
         执行ID
 
@@ -1095,7 +1095,7 @@ class TestResultVo:
 
     @execute_id.setter
     def execute_id(self, execute_id):
-        """Sets the execute_id of this TestResultVo.
+        r"""Sets the execute_id of this TestResultVo.
 
         执行ID
 
@@ -1106,7 +1106,7 @@ class TestResultVo:
 
     @property
     def time_cost(self):
-        """Gets the time_cost of this TestResultVo.
+        r"""Gets the time_cost of this TestResultVo.
 
         执行耗时
 
@@ -1117,7 +1117,7 @@ class TestResultVo:
 
     @time_cost.setter
     def time_cost(self, time_cost):
-        """Sets the time_cost of this TestResultVo.
+        r"""Sets the time_cost of this TestResultVo.
 
         执行耗时
 
@@ -1128,7 +1128,7 @@ class TestResultVo:
 
     @property
     def step_txt(self):
-        """Gets the step_txt of this TestResultVo.
+        r"""Gets the step_txt of this TestResultVo.
 
         测试步骤
 
@@ -1139,7 +1139,7 @@ class TestResultVo:
 
     @step_txt.setter
     def step_txt(self, step_txt):
-        """Sets the step_txt of this TestResultVo.
+        r"""Sets the step_txt of this TestResultVo.
 
         测试步骤
 
@@ -1150,7 +1150,7 @@ class TestResultVo:
 
     @property
     def step_expect(self):
-        """Gets the step_expect of this TestResultVo.
+        r"""Gets the step_expect of this TestResultVo.
 
         测试步骤期望结果
 
@@ -1161,7 +1161,7 @@ class TestResultVo:
 
     @step_expect.setter
     def step_expect(self, step_expect):
-        """Sets the step_expect of this TestResultVo.
+        r"""Sets the step_expect of this TestResultVo.
 
         测试步骤期望结果
 
@@ -1172,7 +1172,7 @@ class TestResultVo:
 
     @property
     def step_actual(self):
-        """Gets the step_actual of this TestResultVo.
+        r"""Gets the step_actual of this TestResultVo.
 
         测试步骤实际结果
 
@@ -1183,7 +1183,7 @@ class TestResultVo:
 
     @step_actual.setter
     def step_actual(self, step_actual):
-        """Sets the step_actual of this TestResultVo.
+        r"""Sets the step_actual of this TestResultVo.
 
         测试步骤实际结果
 
@@ -1194,7 +1194,7 @@ class TestResultVo:
 
     @property
     def step_result(self):
-        """Gets the step_result of this TestResultVo.
+        r"""Gets the step_result of this TestResultVo.
 
         测试步骤结果
 
@@ -1205,7 +1205,7 @@ class TestResultVo:
 
     @step_result.setter
     def step_result(self, step_result):
-        """Sets the step_result of this TestResultVo.
+        r"""Sets the step_result of this TestResultVo.
 
         测试步骤结果
 
@@ -1216,7 +1216,7 @@ class TestResultVo:
 
     @property
     def release_dev(self):
-        """Gets the release_dev of this TestResultVo.
+        r"""Gets the release_dev of this TestResultVo.
 
         版本号
 
@@ -1227,7 +1227,7 @@ class TestResultVo:
 
     @release_dev.setter
     def release_dev(self, release_dev):
-        """Sets the release_dev of this TestResultVo.
+        r"""Sets the release_dev of this TestResultVo.
 
         版本号
 
@@ -1238,7 +1238,7 @@ class TestResultVo:
 
     @property
     def creation_version_uri(self):
-        """Gets the creation_version_uri of this TestResultVo.
+        r"""Gets the creation_version_uri of this TestResultVo.
 
         创建版本URI
 
@@ -1249,7 +1249,7 @@ class TestResultVo:
 
     @creation_version_uri.setter
     def creation_version_uri(self, creation_version_uri):
-        """Sets the creation_version_uri of this TestResultVo.
+        r"""Sets the creation_version_uri of this TestResultVo.
 
         创建版本URI
 
@@ -1260,7 +1260,7 @@ class TestResultVo:
 
     @property
     def version_uri(self):
-        """Gets the version_uri of this TestResultVo.
+        r"""Gets the version_uri of this TestResultVo.
 
         版本URI
 
@@ -1271,7 +1271,7 @@ class TestResultVo:
 
     @version_uri.setter
     def version_uri(self, version_uri):
-        """Sets the version_uri of this TestResultVo.
+        r"""Sets the version_uri of this TestResultVo.
 
         版本URI
 
@@ -1282,7 +1282,7 @@ class TestResultVo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this TestResultVo.
+        r"""Gets the project_id of this TestResultVo.
 
         项目ID
 
@@ -1293,7 +1293,7 @@ class TestResultVo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this TestResultVo.
+        r"""Sets the project_id of this TestResultVo.
 
         项目ID
 
@@ -1304,7 +1304,7 @@ class TestResultVo:
 
     @property
     def report_url(self):
-        """Gets the report_url of this TestResultVo.
+        r"""Gets the report_url of this TestResultVo.
 
         第三方过来的执行结果，返回跳转到第三方的url
 
@@ -1315,7 +1315,7 @@ class TestResultVo:
 
     @report_url.setter
     def report_url(self, report_url):
-        """Sets the report_url of this TestResultVo.
+        r"""Sets the report_url of this TestResultVo.
 
         第三方过来的执行结果，返回跳转到第三方的url
 
@@ -1326,7 +1326,7 @@ class TestResultVo:
 
     @property
     def test_case_number(self):
-        """Gets the test_case_number of this TestResultVo.
+        r"""Gets the test_case_number of this TestResultVo.
 
         测试用例编号
 
@@ -1337,7 +1337,7 @@ class TestResultVo:
 
     @test_case_number.setter
     def test_case_number(self, test_case_number):
-        """Sets the test_case_number of this TestResultVo.
+        r"""Sets the test_case_number of this TestResultVo.
 
         测试用例编号
 
@@ -1348,7 +1348,7 @@ class TestResultVo:
 
     @property
     def service_type(self):
-        """Gets the service_type of this TestResultVo.
+        r"""Gets the service_type of this TestResultVo.
 
         测试类型
 
@@ -1359,7 +1359,7 @@ class TestResultVo:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this TestResultVo.
+        r"""Sets the service_type of this TestResultVo.
 
         测试类型
 

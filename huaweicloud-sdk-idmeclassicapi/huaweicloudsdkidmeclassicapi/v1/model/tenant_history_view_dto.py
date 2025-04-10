@@ -59,7 +59,7 @@ class TenantHistoryViewDTO:
     }
 
     def __init__(self, class_name=None, code=None, create_time=None, creator=None, data_source=None, description=None, disable_flag=None, id=None, kiaguid=None, last_update_time=None, modifier=None, name=None, rdm_delete_flag=None, rdm_extension_type=None, rdm_operation_type=None, rdm_version=None, security_level=None, tenant=None):
-        """TenantHistoryViewDTO
+        r"""TenantHistoryViewDTO
 
         The model defined in huaweicloud sdk
 
@@ -160,7 +160,7 @@ class TenantHistoryViewDTO:
 
     @property
     def class_name(self):
-        """Gets the class_name of this TenantHistoryViewDTO.
+        r"""Gets the class_name of this TenantHistoryViewDTO.
 
         **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -171,7 +171,7 @@ class TenantHistoryViewDTO:
 
     @class_name.setter
     def class_name(self, class_name):
-        """Sets the class_name of this TenantHistoryViewDTO.
+        r"""Sets the class_name of this TenantHistoryViewDTO.
 
         **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -182,7 +182,7 @@ class TenantHistoryViewDTO:
 
     @property
     def code(self):
-        """Gets the code of this TenantHistoryViewDTO.
+        r"""Gets the code of this TenantHistoryViewDTO.
 
         **参数解释：**  租户编码。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -193,7 +193,7 @@ class TenantHistoryViewDTO:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this TenantHistoryViewDTO.
+        r"""Sets the code of this TenantHistoryViewDTO.
 
         **参数解释：**  租户编码。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -204,7 +204,7 @@ class TenantHistoryViewDTO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this TenantHistoryViewDTO.
+        r"""Gets the create_time of this TenantHistoryViewDTO.
 
         **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -215,7 +215,7 @@ class TenantHistoryViewDTO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this TenantHistoryViewDTO.
+        r"""Sets the create_time of this TenantHistoryViewDTO.
 
         **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -226,7 +226,7 @@ class TenantHistoryViewDTO:
 
     @property
     def creator(self):
-        """Gets the creator of this TenantHistoryViewDTO.
+        r"""Gets the creator of this TenantHistoryViewDTO.
 
         **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -237,7 +237,7 @@ class TenantHistoryViewDTO:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this TenantHistoryViewDTO.
+        r"""Sets the creator of this TenantHistoryViewDTO.
 
         **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -248,7 +248,7 @@ class TenantHistoryViewDTO:
 
     @property
     def data_source(self):
-        """Gets the data_source of this TenantHistoryViewDTO.
+        r"""Gets the data_source of this TenantHistoryViewDTO.
 
         **参数解释：**  租户使用的数据源名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -259,7 +259,7 @@ class TenantHistoryViewDTO:
 
     @data_source.setter
     def data_source(self, data_source):
-        """Sets the data_source of this TenantHistoryViewDTO.
+        r"""Sets the data_source of this TenantHistoryViewDTO.
 
         **参数解释：**  租户使用的数据源名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -270,7 +270,7 @@ class TenantHistoryViewDTO:
 
     @property
     def description(self):
-        """Gets the description of this TenantHistoryViewDTO.
+        r"""Gets the description of this TenantHistoryViewDTO.
 
         **参数解释：**  描述信息。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -281,7 +281,7 @@ class TenantHistoryViewDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TenantHistoryViewDTO.
+        r"""Sets the description of this TenantHistoryViewDTO.
 
         **参数解释：**  描述信息。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -292,7 +292,7 @@ class TenantHistoryViewDTO:
 
     @property
     def disable_flag(self):
-        """Gets the disable_flag of this TenantHistoryViewDTO.
+        r"""Gets the disable_flag of this TenantHistoryViewDTO.
 
         **参数解释：**  失效标识。  **取值范围：**  - true：失效。  - false：未失效。  **默认取值：**  不涉及。 
 
@@ -303,7 +303,7 @@ class TenantHistoryViewDTO:
 
     @disable_flag.setter
     def disable_flag(self, disable_flag):
-        """Sets the disable_flag of this TenantHistoryViewDTO.
+        r"""Sets the disable_flag of this TenantHistoryViewDTO.
 
         **参数解释：**  失效标识。  **取值范围：**  - true：失效。  - false：未失效。  **默认取值：**  不涉及。 
 
@@ -314,7 +314,7 @@ class TenantHistoryViewDTO:
 
     @property
     def id(self):
-        """Gets the id of this TenantHistoryViewDTO.
+        r"""Gets the id of this TenantHistoryViewDTO.
 
         **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -325,7 +325,7 @@ class TenantHistoryViewDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TenantHistoryViewDTO.
+        r"""Sets the id of this TenantHistoryViewDTO.
 
         **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -336,7 +336,7 @@ class TenantHistoryViewDTO:
 
     @property
     def kiaguid(self):
-        """Gets the kiaguid of this TenantHistoryViewDTO.
+        r"""Gets the kiaguid of this TenantHistoryViewDTO.
 
         **参数解释：**  KIA密级。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -347,7 +347,7 @@ class TenantHistoryViewDTO:
 
     @kiaguid.setter
     def kiaguid(self, kiaguid):
-        """Sets the kiaguid of this TenantHistoryViewDTO.
+        r"""Sets the kiaguid of this TenantHistoryViewDTO.
 
         **参数解释：**  KIA密级。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -358,7 +358,7 @@ class TenantHistoryViewDTO:
 
     @property
     def last_update_time(self):
-        """Gets the last_update_time of this TenantHistoryViewDTO.
+        r"""Gets the last_update_time of this TenantHistoryViewDTO.
 
         **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -369,7 +369,7 @@ class TenantHistoryViewDTO:
 
     @last_update_time.setter
     def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this TenantHistoryViewDTO.
+        r"""Sets the last_update_time of this TenantHistoryViewDTO.
 
         **参数解释：**  最后更新时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -380,7 +380,7 @@ class TenantHistoryViewDTO:
 
     @property
     def modifier(self):
-        """Gets the modifier of this TenantHistoryViewDTO.
+        r"""Gets the modifier of this TenantHistoryViewDTO.
 
         **参数解释：**  更新者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -391,7 +391,7 @@ class TenantHistoryViewDTO:
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this TenantHistoryViewDTO.
+        r"""Sets the modifier of this TenantHistoryViewDTO.
 
         **参数解释：**  更新者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -402,7 +402,7 @@ class TenantHistoryViewDTO:
 
     @property
     def name(self):
-        """Gets the name of this TenantHistoryViewDTO.
+        r"""Gets the name of this TenantHistoryViewDTO.
 
         **参数解释：**  中文名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -413,7 +413,7 @@ class TenantHistoryViewDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TenantHistoryViewDTO.
+        r"""Sets the name of this TenantHistoryViewDTO.
 
         **参数解释：**  中文名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -424,7 +424,7 @@ class TenantHistoryViewDTO:
 
     @property
     def rdm_delete_flag(self):
-        """Gets the rdm_delete_flag of this TenantHistoryViewDTO.
+        r"""Gets the rdm_delete_flag of this TenantHistoryViewDTO.
 
         **参数解释：**  软删除标识，参数值为0或1。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。  **默认取值：**  0。 
 
@@ -435,7 +435,7 @@ class TenantHistoryViewDTO:
 
     @rdm_delete_flag.setter
     def rdm_delete_flag(self, rdm_delete_flag):
-        """Sets the rdm_delete_flag of this TenantHistoryViewDTO.
+        r"""Sets the rdm_delete_flag of this TenantHistoryViewDTO.
 
         **参数解释：**  软删除标识，参数值为0或1。  **取值范围：**  - 0：表示未删除。 - 1：表示已删除。  **默认取值：**  0。 
 
@@ -446,7 +446,7 @@ class TenantHistoryViewDTO:
 
     @property
     def rdm_extension_type(self):
-        """Gets the rdm_extension_type of this TenantHistoryViewDTO.
+        r"""Gets the rdm_extension_type of this TenantHistoryViewDTO.
 
         **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -457,7 +457,7 @@ class TenantHistoryViewDTO:
 
     @rdm_extension_type.setter
     def rdm_extension_type(self, rdm_extension_type):
-        """Sets the rdm_extension_type of this TenantHistoryViewDTO.
+        r"""Sets the rdm_extension_type of this TenantHistoryViewDTO.
 
         **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -468,7 +468,7 @@ class TenantHistoryViewDTO:
 
     @property
     def rdm_operation_type(self):
-        """Gets the rdm_operation_type of this TenantHistoryViewDTO.
+        r"""Gets the rdm_operation_type of this TenantHistoryViewDTO.
 
         **参数解释：**  操作类型。  **取值范围：**  - CREATE：创建操作。  - UPDATE：更新操作。 - LOGICALDELETE：软删除操作。 - DELETE：删除操作。 - CASCADE：级联操作。  **默认取值：**  不涉及。 
 
@@ -479,7 +479,7 @@ class TenantHistoryViewDTO:
 
     @rdm_operation_type.setter
     def rdm_operation_type(self, rdm_operation_type):
-        """Sets the rdm_operation_type of this TenantHistoryViewDTO.
+        r"""Sets the rdm_operation_type of this TenantHistoryViewDTO.
 
         **参数解释：**  操作类型。  **取值范围：**  - CREATE：创建操作。  - UPDATE：更新操作。 - LOGICALDELETE：软删除操作。 - DELETE：删除操作。 - CASCADE：级联操作。  **默认取值：**  不涉及。 
 
@@ -490,7 +490,7 @@ class TenantHistoryViewDTO:
 
     @property
     def rdm_version(self):
-        """Gets the rdm_version of this TenantHistoryViewDTO.
+        r"""Gets the rdm_version of this TenantHistoryViewDTO.
 
         **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -501,7 +501,7 @@ class TenantHistoryViewDTO:
 
     @rdm_version.setter
     def rdm_version(self, rdm_version):
-        """Sets the rdm_version of this TenantHistoryViewDTO.
+        r"""Sets the rdm_version of this TenantHistoryViewDTO.
 
         **参数解释：**  系统版本。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -512,7 +512,7 @@ class TenantHistoryViewDTO:
 
     @property
     def security_level(self):
-        """Gets the security_level of this TenantHistoryViewDTO.
+        r"""Gets the security_level of this TenantHistoryViewDTO.
 
         **参数解释：**  安全密级。  **取值范围：**  - INTERNAL：内部公开。 - SECRET：秘密。 - CONFIDENTIAL：机密。 - TOP_SECRET：绝密。  **默认取值：**  不涉及。 
 
@@ -523,7 +523,7 @@ class TenantHistoryViewDTO:
 
     @security_level.setter
     def security_level(self, security_level):
-        """Sets the security_level of this TenantHistoryViewDTO.
+        r"""Sets the security_level of this TenantHistoryViewDTO.
 
         **参数解释：**  安全密级。  **取值范围：**  - INTERNAL：内部公开。 - SECRET：秘密。 - CONFIDENTIAL：机密。 - TOP_SECRET：绝密。  **默认取值：**  不涉及。 
 
@@ -534,7 +534,7 @@ class TenantHistoryViewDTO:
 
     @property
     def tenant(self):
-        """Gets the tenant of this TenantHistoryViewDTO.
+        r"""Gets the tenant of this TenantHistoryViewDTO.
 
         :return: The tenant of this TenantHistoryViewDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.TenantHistoryViewDTO`
@@ -543,7 +543,7 @@ class TenantHistoryViewDTO:
 
     @tenant.setter
     def tenant(self, tenant):
-        """Sets the tenant of this TenantHistoryViewDTO.
+        r"""Sets the tenant of this TenantHistoryViewDTO.
 
         :param tenant: The tenant of this TenantHistoryViewDTO.
         :type tenant: :class:`huaweicloudsdkidmeclassicapi.v1.TenantHistoryViewDTO`

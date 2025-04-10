@@ -31,7 +31,7 @@ class EnableComponentRequest:
     }
 
     def __init__(self, cluster_id=None, component_name=None, x_language=None, body=None):
-        """EnableComponentRequest
+        r"""EnableComponentRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class EnableComponentRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this EnableComponentRequest.
+        r"""Gets the cluster_id of this EnableComponentRequest.
 
         集群ID
 
@@ -73,7 +73,7 @@ class EnableComponentRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this EnableComponentRequest.
+        r"""Sets the cluster_id of this EnableComponentRequest.
 
         集群ID
 
@@ -84,7 +84,7 @@ class EnableComponentRequest:
 
     @property
     def component_name(self):
-        """Gets the component_name of this EnableComponentRequest.
+        r"""Gets the component_name of this EnableComponentRequest.
 
         组件类型，取值为tsdb
 
@@ -95,7 +95,7 @@ class EnableComponentRequest:
 
     @component_name.setter
     def component_name(self, component_name):
-        """Sets the component_name of this EnableComponentRequest.
+        r"""Sets the component_name of this EnableComponentRequest.
 
         组件类型，取值为tsdb
 
@@ -106,7 +106,7 @@ class EnableComponentRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this EnableComponentRequest.
+        r"""Gets the x_language of this EnableComponentRequest.
 
         语言类型
 
@@ -117,7 +117,7 @@ class EnableComponentRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this EnableComponentRequest.
+        r"""Sets the x_language of this EnableComponentRequest.
 
         语言类型
 
@@ -128,7 +128,7 @@ class EnableComponentRequest:
 
     @property
     def body(self):
-        """Gets the body of this EnableComponentRequest.
+        r"""Gets the body of this EnableComponentRequest.
 
         :return: The body of this EnableComponentRequest.
         :rtype: :class:`huaweicloudsdkcloudtable.v2.AddComponentReq`
@@ -137,7 +137,7 @@ class EnableComponentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this EnableComponentRequest.
+        r"""Sets the body of this EnableComponentRequest.
 
         :param body: The body of this EnableComponentRequest.
         :type body: :class:`huaweicloudsdkcloudtable.v2.AddComponentReq`

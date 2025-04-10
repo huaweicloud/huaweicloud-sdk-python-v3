@@ -29,7 +29,7 @@ class CreateSpaceAnalysisTaskRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, body=None):
-        """CreateSpaceAnalysisTaskRequest
+        r"""CreateSpaceAnalysisTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateSpaceAnalysisTaskRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateSpaceAnalysisTaskRequest.
+        r"""Gets the instance_id of this CreateSpaceAnalysisTaskRequest.
 
         实例ID
 
@@ -67,7 +67,7 @@ class CreateSpaceAnalysisTaskRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateSpaceAnalysisTaskRequest.
+        r"""Sets the instance_id of this CreateSpaceAnalysisTaskRequest.
 
         实例ID
 
@@ -78,7 +78,7 @@ class CreateSpaceAnalysisTaskRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreateSpaceAnalysisTaskRequest.
+        r"""Gets the x_language of this CreateSpaceAnalysisTaskRequest.
 
         语言
 
@@ -89,7 +89,7 @@ class CreateSpaceAnalysisTaskRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreateSpaceAnalysisTaskRequest.
+        r"""Sets the x_language of this CreateSpaceAnalysisTaskRequest.
 
         语言
 
@@ -100,7 +100,7 @@ class CreateSpaceAnalysisTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSpaceAnalysisTaskRequest.
+        r"""Gets the body of this CreateSpaceAnalysisTaskRequest.
 
         :return: The body of this CreateSpaceAnalysisTaskRequest.
         :rtype: :class:`huaweicloudsdkdas.v3.CreateSpaceAnalysisTaskBody`
@@ -109,7 +109,7 @@ class CreateSpaceAnalysisTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSpaceAnalysisTaskRequest.
+        r"""Sets the body of this CreateSpaceAnalysisTaskRequest.
 
         :param body: The body of this CreateSpaceAnalysisTaskRequest.
         :type body: :class:`huaweicloudsdkdas.v3.CreateSpaceAnalysisTaskBody`

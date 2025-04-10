@@ -26,7 +26,7 @@ class UpdateKnowledgeSkillResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """UpdateKnowledgeSkillResponse
+        r"""UpdateKnowledgeSkillResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateKnowledgeSkillResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdateKnowledgeSkillResponse.
+        r"""Gets the x_request_id of this UpdateKnowledgeSkillResponse.
 
         :return: The x_request_id of this UpdateKnowledgeSkillResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class UpdateKnowledgeSkillResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdateKnowledgeSkillResponse.
+        r"""Sets the x_request_id of this UpdateKnowledgeSkillResponse.
 
         :param x_request_id: The x_request_id of this UpdateKnowledgeSkillResponse.
         :type x_request_id: str

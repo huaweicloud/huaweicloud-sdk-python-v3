@@ -60,7 +60,7 @@ class ShowPatchBaselineResponse(SdkResponse):
     }
 
     def __init__(self, baseline_id=None, name=None, description=None, region=None, baseline_scene=None, rule_type=None, operating_system=None, type=None, approval_rules=None, custom_baseline_rules=None, default_patch_baseline=None, rejected_patches=None, rejected_action=None, approved_patches=None, approved_compliance=None, enable_security_approved=None, created_time=None, modified_time=None):
-        """ShowPatchBaselineResponse
+        r"""ShowPatchBaselineResponse
 
         The model defined in huaweicloud sdk
 
@@ -163,7 +163,7 @@ class ShowPatchBaselineResponse(SdkResponse):
 
     @property
     def baseline_id(self):
-        """Gets the baseline_id of this ShowPatchBaselineResponse.
+        r"""Gets the baseline_id of this ShowPatchBaselineResponse.
 
         补丁基准ID
 
@@ -174,7 +174,7 @@ class ShowPatchBaselineResponse(SdkResponse):
 
     @baseline_id.setter
     def baseline_id(self, baseline_id):
-        """Sets the baseline_id of this ShowPatchBaselineResponse.
+        r"""Sets the baseline_id of this ShowPatchBaselineResponse.
 
         补丁基准ID
 
@@ -185,7 +185,7 @@ class ShowPatchBaselineResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowPatchBaselineResponse.
+        r"""Gets the name of this ShowPatchBaselineResponse.
 
         补丁基准名称
 
@@ -196,7 +196,7 @@ class ShowPatchBaselineResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowPatchBaselineResponse.
+        r"""Sets the name of this ShowPatchBaselineResponse.
 
         补丁基准名称
 
@@ -207,7 +207,7 @@ class ShowPatchBaselineResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowPatchBaselineResponse.
+        r"""Gets the description of this ShowPatchBaselineResponse.
 
         补丁基准描述
 
@@ -218,7 +218,7 @@ class ShowPatchBaselineResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowPatchBaselineResponse.
+        r"""Sets the description of this ShowPatchBaselineResponse.
 
         补丁基准描述
 
@@ -229,7 +229,7 @@ class ShowPatchBaselineResponse(SdkResponse):
 
     @property
     def region(self):
-        """Gets the region of this ShowPatchBaselineResponse.
+        r"""Gets the region of this ShowPatchBaselineResponse.
 
         区域
 
@@ -240,7 +240,7 @@ class ShowPatchBaselineResponse(SdkResponse):
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ShowPatchBaselineResponse.
+        r"""Sets the region of this ShowPatchBaselineResponse.
 
         区域
 
@@ -251,7 +251,7 @@ class ShowPatchBaselineResponse(SdkResponse):
 
     @property
     def baseline_scene(self):
-        """Gets the baseline_scene of this ShowPatchBaselineResponse.
+        r"""Gets the baseline_scene of this ShowPatchBaselineResponse.
 
         基线使用场景(CCE、ECS、BMS)
 
@@ -262,7 +262,7 @@ class ShowPatchBaselineResponse(SdkResponse):
 
     @baseline_scene.setter
     def baseline_scene(self, baseline_scene):
-        """Sets the baseline_scene of this ShowPatchBaselineResponse.
+        r"""Sets the baseline_scene of this ShowPatchBaselineResponse.
 
         基线使用场景(CCE、ECS、BMS)
 
@@ -273,7 +273,7 @@ class ShowPatchBaselineResponse(SdkResponse):
 
     @property
     def rule_type(self):
-        """Gets the rule_type of this ShowPatchBaselineResponse.
+        r"""Gets the rule_type of this ShowPatchBaselineResponse.
 
         基线规则类型(Standard,Custom)
 
@@ -284,7 +284,7 @@ class ShowPatchBaselineResponse(SdkResponse):
 
     @rule_type.setter
     def rule_type(self, rule_type):
-        """Sets the rule_type of this ShowPatchBaselineResponse.
+        r"""Sets the rule_type of this ShowPatchBaselineResponse.
 
         基线规则类型(Standard,Custom)
 
@@ -295,7 +295,7 @@ class ShowPatchBaselineResponse(SdkResponse):
 
     @property
     def operating_system(self):
-        """Gets the operating_system of this ShowPatchBaselineResponse.
+        r"""Gets the operating_system of this ShowPatchBaselineResponse.
 
         操作系统
 
@@ -306,7 +306,7 @@ class ShowPatchBaselineResponse(SdkResponse):
 
     @operating_system.setter
     def operating_system(self, operating_system):
-        """Sets the operating_system of this ShowPatchBaselineResponse.
+        r"""Sets the operating_system of this ShowPatchBaselineResponse.
 
         操作系统
 
@@ -317,7 +317,7 @@ class ShowPatchBaselineResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowPatchBaselineResponse.
+        r"""Gets the type of this ShowPatchBaselineResponse.
 
         补丁基准类型（公共/自定义）
 
@@ -328,7 +328,7 @@ class ShowPatchBaselineResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowPatchBaselineResponse.
+        r"""Sets the type of this ShowPatchBaselineResponse.
 
         补丁基准类型（公共/自定义）
 
@@ -339,7 +339,7 @@ class ShowPatchBaselineResponse(SdkResponse):
 
     @property
     def approval_rules(self):
-        """Gets the approval_rules of this ShowPatchBaselineResponse.
+        r"""Gets the approval_rules of this ShowPatchBaselineResponse.
 
         操作系统的批准规则
 
@@ -350,7 +350,7 @@ class ShowPatchBaselineResponse(SdkResponse):
 
     @approval_rules.setter
     def approval_rules(self, approval_rules):
-        """Sets the approval_rules of this ShowPatchBaselineResponse.
+        r"""Sets the approval_rules of this ShowPatchBaselineResponse.
 
         操作系统的批准规则
 
@@ -361,7 +361,7 @@ class ShowPatchBaselineResponse(SdkResponse):
 
     @property
     def custom_baseline_rules(self):
-        """Gets the custom_baseline_rules of this ShowPatchBaselineResponse.
+        r"""Gets the custom_baseline_rules of this ShowPatchBaselineResponse.
 
         自定义基线列表
 
@@ -372,7 +372,7 @@ class ShowPatchBaselineResponse(SdkResponse):
 
     @custom_baseline_rules.setter
     def custom_baseline_rules(self, custom_baseline_rules):
-        """Sets the custom_baseline_rules of this ShowPatchBaselineResponse.
+        r"""Sets the custom_baseline_rules of this ShowPatchBaselineResponse.
 
         自定义基线列表
 
@@ -383,7 +383,7 @@ class ShowPatchBaselineResponse(SdkResponse):
 
     @property
     def default_patch_baseline(self):
-        """Gets the default_patch_baseline of this ShowPatchBaselineResponse.
+        r"""Gets the default_patch_baseline of this ShowPatchBaselineResponse.
 
         是否默认基准
 
@@ -394,7 +394,7 @@ class ShowPatchBaselineResponse(SdkResponse):
 
     @default_patch_baseline.setter
     def default_patch_baseline(self, default_patch_baseline):
-        """Sets the default_patch_baseline of this ShowPatchBaselineResponse.
+        r"""Sets the default_patch_baseline of this ShowPatchBaselineResponse.
 
         是否默认基准
 
@@ -405,7 +405,7 @@ class ShowPatchBaselineResponse(SdkResponse):
 
     @property
     def rejected_patches(self):
-        """Gets the rejected_patches of this ShowPatchBaselineResponse.
+        r"""Gets the rejected_patches of this ShowPatchBaselineResponse.
 
         拒绝的补丁
 
@@ -416,7 +416,7 @@ class ShowPatchBaselineResponse(SdkResponse):
 
     @rejected_patches.setter
     def rejected_patches(self, rejected_patches):
-        """Sets the rejected_patches of this ShowPatchBaselineResponse.
+        r"""Sets the rejected_patches of this ShowPatchBaselineResponse.
 
         拒绝的补丁
 
@@ -427,7 +427,7 @@ class ShowPatchBaselineResponse(SdkResponse):
 
     @property
     def rejected_action(self):
-        """Gets the rejected_action of this ShowPatchBaselineResponse.
+        r"""Gets the rejected_action of this ShowPatchBaselineResponse.
 
         拒绝策略
 
@@ -438,7 +438,7 @@ class ShowPatchBaselineResponse(SdkResponse):
 
     @rejected_action.setter
     def rejected_action(self, rejected_action):
-        """Sets the rejected_action of this ShowPatchBaselineResponse.
+        r"""Sets the rejected_action of this ShowPatchBaselineResponse.
 
         拒绝策略
 
@@ -449,7 +449,7 @@ class ShowPatchBaselineResponse(SdkResponse):
 
     @property
     def approved_patches(self):
-        """Gets the approved_patches of this ShowPatchBaselineResponse.
+        r"""Gets the approved_patches of this ShowPatchBaselineResponse.
 
         批准的补丁
 
@@ -460,7 +460,7 @@ class ShowPatchBaselineResponse(SdkResponse):
 
     @approved_patches.setter
     def approved_patches(self, approved_patches):
-        """Sets the approved_patches of this ShowPatchBaselineResponse.
+        r"""Sets the approved_patches of this ShowPatchBaselineResponse.
 
         批准的补丁
 
@@ -471,7 +471,7 @@ class ShowPatchBaselineResponse(SdkResponse):
 
     @property
     def approved_compliance(self):
-        """Gets the approved_compliance of this ShowPatchBaselineResponse.
+        r"""Gets the approved_compliance of this ShowPatchBaselineResponse.
 
         批准的补丁合规性级别
 
@@ -482,7 +482,7 @@ class ShowPatchBaselineResponse(SdkResponse):
 
     @approved_compliance.setter
     def approved_compliance(self, approved_compliance):
-        """Sets the approved_compliance of this ShowPatchBaselineResponse.
+        r"""Sets the approved_compliance of this ShowPatchBaselineResponse.
 
         批准的补丁合规性级别
 
@@ -493,7 +493,7 @@ class ShowPatchBaselineResponse(SdkResponse):
 
     @property
     def enable_security_approved(self):
-        """Gets the enable_security_approved of this ShowPatchBaselineResponse.
+        r"""Gets the enable_security_approved of this ShowPatchBaselineResponse.
 
         批准的补丁是否安全更新
 
@@ -504,7 +504,7 @@ class ShowPatchBaselineResponse(SdkResponse):
 
     @enable_security_approved.setter
     def enable_security_approved(self, enable_security_approved):
-        """Sets the enable_security_approved of this ShowPatchBaselineResponse.
+        r"""Sets the enable_security_approved of this ShowPatchBaselineResponse.
 
         批准的补丁是否安全更新
 
@@ -515,7 +515,7 @@ class ShowPatchBaselineResponse(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this ShowPatchBaselineResponse.
+        r"""Gets the created_time of this ShowPatchBaselineResponse.
 
         创建时间
 
@@ -526,7 +526,7 @@ class ShowPatchBaselineResponse(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this ShowPatchBaselineResponse.
+        r"""Sets the created_time of this ShowPatchBaselineResponse.
 
         创建时间
 
@@ -537,7 +537,7 @@ class ShowPatchBaselineResponse(SdkResponse):
 
     @property
     def modified_time(self):
-        """Gets the modified_time of this ShowPatchBaselineResponse.
+        r"""Gets the modified_time of this ShowPatchBaselineResponse.
 
         modifiedTime
 
@@ -548,7 +548,7 @@ class ShowPatchBaselineResponse(SdkResponse):
 
     @modified_time.setter
     def modified_time(self, modified_time):
-        """Sets the modified_time of this ShowPatchBaselineResponse.
+        r"""Sets the modified_time of this ShowPatchBaselineResponse.
 
         modifiedTime
 

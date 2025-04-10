@@ -27,7 +27,7 @@ class BatchDeleteSecurityResourcePermissionPoliciesRequest:
     }
 
     def __init__(self, workspace=None, body=None):
-        """BatchDeleteSecurityResourcePermissionPoliciesRequest
+        r"""BatchDeleteSecurityResourcePermissionPoliciesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeleteSecurityResourcePermissionPoliciesRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this BatchDeleteSecurityResourcePermissionPoliciesRequest.
+        r"""Gets the workspace of this BatchDeleteSecurityResourcePermissionPoliciesRequest.
 
         DataArts Studio工作空间ID
 
@@ -60,7 +60,7 @@ class BatchDeleteSecurityResourcePermissionPoliciesRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this BatchDeleteSecurityResourcePermissionPoliciesRequest.
+        r"""Sets the workspace of this BatchDeleteSecurityResourcePermissionPoliciesRequest.
 
         DataArts Studio工作空间ID
 
@@ -71,7 +71,7 @@ class BatchDeleteSecurityResourcePermissionPoliciesRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteSecurityResourcePermissionPoliciesRequest.
+        r"""Gets the body of this BatchDeleteSecurityResourcePermissionPoliciesRequest.
 
         :return: The body of this BatchDeleteSecurityResourcePermissionPoliciesRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BatchDeleteResourcePolicyDTO`
@@ -80,7 +80,7 @@ class BatchDeleteSecurityResourcePermissionPoliciesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteSecurityResourcePermissionPoliciesRequest.
+        r"""Sets the body of this BatchDeleteSecurityResourcePermissionPoliciesRequest.
 
         :param body: The body of this BatchDeleteSecurityResourcePermissionPoliciesRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.BatchDeleteResourcePolicyDTO`

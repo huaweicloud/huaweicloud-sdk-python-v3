@@ -27,7 +27,7 @@ class InstanceSecurityGroup:
     }
 
     def __init__(self, name=None, id=None):
-        """InstanceSecurityGroup
+        r"""InstanceSecurityGroup
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class InstanceSecurityGroup:
 
     @property
     def name(self):
-        """Gets the name of this InstanceSecurityGroup.
+        r"""Gets the name of this InstanceSecurityGroup.
 
         安全组名称或者UUID。
 
@@ -61,7 +61,7 @@ class InstanceSecurityGroup:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this InstanceSecurityGroup.
+        r"""Sets the name of this InstanceSecurityGroup.
 
         安全组名称或者UUID。
 
@@ -72,7 +72,7 @@ class InstanceSecurityGroup:
 
     @property
     def id(self):
-        """Gets the id of this InstanceSecurityGroup.
+        r"""Gets the id of this InstanceSecurityGroup.
 
         实例使用安全组规则的ID。
 
@@ -83,7 +83,7 @@ class InstanceSecurityGroup:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this InstanceSecurityGroup.
+        r"""Sets the id of this InstanceSecurityGroup.
 
         实例使用安全组规则的ID。
 

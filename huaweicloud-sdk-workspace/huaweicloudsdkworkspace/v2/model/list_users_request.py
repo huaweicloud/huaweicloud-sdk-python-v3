@@ -43,7 +43,7 @@ class ListUsersRequest:
     }
 
     def __init__(self, user_name=None, user_email=None, limit=None, offset=None, description=None, active_type=None, group_name=None, share_space_subscription=None, share_space_desktops=None, is_query_total_desktops=None):
-        """ListUsersRequest
+        r"""ListUsersRequest
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ListUsersRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ListUsersRequest.
+        r"""Gets the user_name of this ListUsersRequest.
 
         桌面用户名，长度范围为1-20，不能包含特殊字符，不能以数字开头。
 
@@ -117,7 +117,7 @@ class ListUsersRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ListUsersRequest.
+        r"""Sets the user_name of this ListUsersRequest.
 
         桌面用户名，长度范围为1-20，不能包含特殊字符，不能以数字开头。
 
@@ -128,7 +128,7 @@ class ListUsersRequest:
 
     @property
     def user_email(self):
-        """Gets the user_email of this ListUsersRequest.
+        r"""Gets the user_email of this ListUsersRequest.
 
         用户邮箱。
 
@@ -139,7 +139,7 @@ class ListUsersRequest:
 
     @user_email.setter
     def user_email(self, user_email):
-        """Sets the user_email of this ListUsersRequest.
+        r"""Sets the user_email of this ListUsersRequest.
 
         用户邮箱。
 
@@ -150,7 +150,7 @@ class ListUsersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListUsersRequest.
+        r"""Gets the limit of this ListUsersRequest.
 
         用于分页查询，返回用户数量限制。如果不指定，则返回所有符合条件的用户。
 
@@ -161,7 +161,7 @@ class ListUsersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListUsersRequest.
+        r"""Sets the limit of this ListUsersRequest.
 
         用于分页查询，返回用户数量限制。如果不指定，则返回所有符合条件的用户。
 
@@ -172,7 +172,7 @@ class ListUsersRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListUsersRequest.
+        r"""Gets the offset of this ListUsersRequest.
 
         分页查询起始条数。
 
@@ -183,7 +183,7 @@ class ListUsersRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListUsersRequest.
+        r"""Sets the offset of this ListUsersRequest.
 
         分页查询起始条数。
 
@@ -194,7 +194,7 @@ class ListUsersRequest:
 
     @property
     def description(self):
-        """Gets the description of this ListUsersRequest.
+        r"""Gets the description of this ListUsersRequest.
 
         用户描述查询，模糊匹配。
 
@@ -205,7 +205,7 @@ class ListUsersRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListUsersRequest.
+        r"""Sets the description of this ListUsersRequest.
 
         用户描述查询，模糊匹配。
 
@@ -216,7 +216,7 @@ class ListUsersRequest:
 
     @property
     def active_type(self):
-        """Gets the active_type of this ListUsersRequest.
+        r"""Gets the active_type of this ListUsersRequest.
 
         激活类型，默认为用户激活。 * USER_ACTIVATE： 用户激活 * ADMIN_ACTIVATE： 管理员激活
 
@@ -227,7 +227,7 @@ class ListUsersRequest:
 
     @active_type.setter
     def active_type(self, active_type):
-        """Sets the active_type of this ListUsersRequest.
+        r"""Sets the active_type of this ListUsersRequest.
 
         激活类型，默认为用户激活。 * USER_ACTIVATE： 用户激活 * ADMIN_ACTIVATE： 管理员激活
 
@@ -238,7 +238,7 @@ class ListUsersRequest:
 
     @property
     def group_name(self):
-        """Gets the group_name of this ListUsersRequest.
+        r"""Gets the group_name of this ListUsersRequest.
 
         桌面用户组名，精确匹配。
 
@@ -249,7 +249,7 @@ class ListUsersRequest:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this ListUsersRequest.
+        r"""Sets the group_name of this ListUsersRequest.
 
         桌面用户组名，精确匹配。
 
@@ -260,7 +260,7 @@ class ListUsersRequest:
 
     @property
     def share_space_subscription(self):
-        """Gets the share_space_subscription of this ListUsersRequest.
+        r"""Gets the share_space_subscription of this ListUsersRequest.
 
         用户是否已订阅协同，true/false
 
@@ -271,7 +271,7 @@ class ListUsersRequest:
 
     @share_space_subscription.setter
     def share_space_subscription(self, share_space_subscription):
-        """Sets the share_space_subscription of this ListUsersRequest.
+        r"""Sets the share_space_subscription of this ListUsersRequest.
 
         用户是否已订阅协同，true/false
 
@@ -282,7 +282,7 @@ class ListUsersRequest:
 
     @property
     def share_space_desktops(self):
-        """Gets the share_space_desktops of this ListUsersRequest.
+        r"""Gets the share_space_desktops of this ListUsersRequest.
 
         用户是否已绑定协同桌面,true/false
 
@@ -293,7 +293,7 @@ class ListUsersRequest:
 
     @share_space_desktops.setter
     def share_space_desktops(self, share_space_desktops):
-        """Sets the share_space_desktops of this ListUsersRequest.
+        r"""Sets the share_space_desktops of this ListUsersRequest.
 
         用户是否已绑定协同桌面,true/false
 
@@ -304,7 +304,7 @@ class ListUsersRequest:
 
     @property
     def is_query_total_desktops(self):
-        """Gets the is_query_total_desktops of this ListUsersRequest.
+        r"""Gets the is_query_total_desktops of this ListUsersRequest.
 
         是否查询用户绑定的桌面数,true/false,默认true
 
@@ -315,7 +315,7 @@ class ListUsersRequest:
 
     @is_query_total_desktops.setter
     def is_query_total_desktops(self, is_query_total_desktops):
-        """Sets the is_query_total_desktops of this ListUsersRequest.
+        r"""Sets the is_query_total_desktops of this ListUsersRequest.
 
         是否查询用户绑定的桌面数,true/false,默认true
 

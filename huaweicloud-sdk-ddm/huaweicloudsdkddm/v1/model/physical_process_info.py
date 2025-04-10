@@ -41,7 +41,7 @@ class PhysicalProcessInfo:
     }
 
     def __init__(self, id=None, user=None, host=None, db=None, state=None, command=None, info=None, time=None, trx_executed_time=None):
-        """PhysicalProcessInfo
+        r"""PhysicalProcessInfo
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class PhysicalProcessInfo:
 
     @property
     def id(self):
-        """Gets the id of this PhysicalProcessInfo.
+        r"""Gets the id of this PhysicalProcessInfo.
 
         会话id
 
@@ -110,7 +110,7 @@ class PhysicalProcessInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PhysicalProcessInfo.
+        r"""Sets the id of this PhysicalProcessInfo.
 
         会话id
 
@@ -121,7 +121,7 @@ class PhysicalProcessInfo:
 
     @property
     def user(self):
-        """Gets the user of this PhysicalProcessInfo.
+        r"""Gets the user of this PhysicalProcessInfo.
 
         用户
 
@@ -132,7 +132,7 @@ class PhysicalProcessInfo:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this PhysicalProcessInfo.
+        r"""Sets the user of this PhysicalProcessInfo.
 
         用户
 
@@ -143,7 +143,7 @@ class PhysicalProcessInfo:
 
     @property
     def host(self):
-        """Gets the host of this PhysicalProcessInfo.
+        r"""Gets the host of this PhysicalProcessInfo.
 
         主机
 
@@ -154,7 +154,7 @@ class PhysicalProcessInfo:
 
     @host.setter
     def host(self, host):
-        """Sets the host of this PhysicalProcessInfo.
+        r"""Sets the host of this PhysicalProcessInfo.
 
         主机
 
@@ -165,7 +165,7 @@ class PhysicalProcessInfo:
 
     @property
     def db(self):
-        """Gets the db of this PhysicalProcessInfo.
+        r"""Gets the db of this PhysicalProcessInfo.
 
         数据库
 
@@ -176,7 +176,7 @@ class PhysicalProcessInfo:
 
     @db.setter
     def db(self, db):
-        """Sets the db of this PhysicalProcessInfo.
+        r"""Sets the db of this PhysicalProcessInfo.
 
         数据库
 
@@ -187,7 +187,7 @@ class PhysicalProcessInfo:
 
     @property
     def state(self):
-        """Gets the state of this PhysicalProcessInfo.
+        r"""Gets the state of this PhysicalProcessInfo.
 
         状态
 
@@ -198,7 +198,7 @@ class PhysicalProcessInfo:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this PhysicalProcessInfo.
+        r"""Sets the state of this PhysicalProcessInfo.
 
         状态
 
@@ -209,7 +209,7 @@ class PhysicalProcessInfo:
 
     @property
     def command(self):
-        """Gets the command of this PhysicalProcessInfo.
+        r"""Gets the command of this PhysicalProcessInfo.
 
         连接状态，一般是休眠（sleep），查询（query），连接（connect）
 
@@ -220,7 +220,7 @@ class PhysicalProcessInfo:
 
     @command.setter
     def command(self, command):
-        """Sets the command of this PhysicalProcessInfo.
+        r"""Sets the command of this PhysicalProcessInfo.
 
         连接状态，一般是休眠（sleep），查询（query），连接（connect）
 
@@ -231,7 +231,7 @@ class PhysicalProcessInfo:
 
     @property
     def info(self):
-        """Gets the info of this PhysicalProcessInfo.
+        r"""Gets the info of this PhysicalProcessInfo.
 
         线程执行的 sql 语句
 
@@ -242,7 +242,7 @@ class PhysicalProcessInfo:
 
     @info.setter
     def info(self, info):
-        """Sets the info of this PhysicalProcessInfo.
+        r"""Sets the info of this PhysicalProcessInfo.
 
         线程执行的 sql 语句
 
@@ -253,7 +253,7 @@ class PhysicalProcessInfo:
 
     @property
     def time(self):
-        """Gets the time of this PhysicalProcessInfo.
+        r"""Gets the time of this PhysicalProcessInfo.
 
         会话持续时间，单位秒
 
@@ -264,7 +264,7 @@ class PhysicalProcessInfo:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this PhysicalProcessInfo.
+        r"""Sets the time of this PhysicalProcessInfo.
 
         会话持续时间，单位秒
 
@@ -275,7 +275,7 @@ class PhysicalProcessInfo:
 
     @property
     def trx_executed_time(self):
-        """Gets the trx_executed_time of this PhysicalProcessInfo.
+        r"""Gets the trx_executed_time of this PhysicalProcessInfo.
 
         事务持续时间，单位秒
 
@@ -286,7 +286,7 @@ class PhysicalProcessInfo:
 
     @trx_executed_time.setter
     def trx_executed_time(self, trx_executed_time):
-        """Sets the trx_executed_time of this PhysicalProcessInfo.
+        r"""Sets the trx_executed_time of this PhysicalProcessInfo.
 
         事务持续时间，单位秒
 

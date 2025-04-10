@@ -27,7 +27,7 @@ class CreateClusterInstanceVolumeBody:
     }
 
     def __init__(self, volume_type=None, size=None):
-        """CreateClusterInstanceVolumeBody
+        r"""CreateClusterInstanceVolumeBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateClusterInstanceVolumeBody:
 
     @property
     def volume_type(self):
-        """Gets the volume_type of this CreateClusterInstanceVolumeBody.
+        r"""Gets the volume_type of this CreateClusterInstanceVolumeBody.
 
         卷类型。  - COMMON：普通I/O。 - HIGH：高I/O。 - ULTRAHIGH：超高I/O。
 
@@ -59,7 +59,7 @@ class CreateClusterInstanceVolumeBody:
 
     @volume_type.setter
     def volume_type(self, volume_type):
-        """Sets the volume_type of this CreateClusterInstanceVolumeBody.
+        r"""Sets the volume_type of this CreateClusterInstanceVolumeBody.
 
         卷类型。  - COMMON：普通I/O。 - HIGH：高I/O。 - ULTRAHIGH：超高I/O。
 
@@ -70,7 +70,7 @@ class CreateClusterInstanceVolumeBody:
 
     @property
     def size(self):
-        """Gets the size of this CreateClusterInstanceVolumeBody.
+        r"""Gets the size of this CreateClusterInstanceVolumeBody.
 
         卷大小，必须为大于0且为4和10的公倍数，磁盘规格大小可以通过[获取实例规格列表](ListFlavors.xml)中diskrange属性获得。 单位：GB。  >ess-master节点和ess-client节点默认大小为40G，且不可更改。
 
@@ -81,7 +81,7 @@ class CreateClusterInstanceVolumeBody:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this CreateClusterInstanceVolumeBody.
+        r"""Sets the size of this CreateClusterInstanceVolumeBody.
 
         卷大小，必须为大于0且为4和10的公倍数，磁盘规格大小可以通过[获取实例规格列表](ListFlavors.xml)中diskrange属性获得。 单位：GB。  >ess-master节点和ess-client节点默认大小为40G，且不可更改。
 

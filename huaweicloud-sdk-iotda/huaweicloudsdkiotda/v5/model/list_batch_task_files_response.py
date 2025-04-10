@@ -26,7 +26,7 @@ class ListBatchTaskFilesResponse(SdkResponse):
     }
 
     def __init__(self, files=None):
-        """ListBatchTaskFilesResponse
+        r"""ListBatchTaskFilesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListBatchTaskFilesResponse(SdkResponse):
 
     @property
     def files(self):
-        """Gets the files of this ListBatchTaskFilesResponse.
+        r"""Gets the files of this ListBatchTaskFilesResponse.
 
         批量任务文件列表。
 
@@ -55,7 +55,7 @@ class ListBatchTaskFilesResponse(SdkResponse):
 
     @files.setter
     def files(self, files):
-        """Sets the files of this ListBatchTaskFilesResponse.
+        r"""Sets the files of this ListBatchTaskFilesResponse.
 
         批量任务文件列表。
 

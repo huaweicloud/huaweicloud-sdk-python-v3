@@ -23,7 +23,7 @@ class ListSecurityGroupTagsRequest:
     }
 
     def __init__(self):
-        """ListSecurityGroupTagsRequest
+        r"""ListSecurityGroupTagsRequest
 
         The model defined in huaweicloud sdk
 

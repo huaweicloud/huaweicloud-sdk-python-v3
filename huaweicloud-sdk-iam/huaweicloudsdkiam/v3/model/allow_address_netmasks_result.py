@@ -27,7 +27,7 @@ class AllowAddressNetmasksResult:
     }
 
     def __init__(self, address_netmask=None, description=None):
-        """AllowAddressNetmasksResult
+        r"""AllowAddressNetmasksResult
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AllowAddressNetmasksResult:
 
     @property
     def address_netmask(self):
-        """Gets the address_netmask of this AllowAddressNetmasksResult.
+        r"""Gets the address_netmask of this AllowAddressNetmasksResult.
 
         IP地址或网段，例如：192.168.0.1/24。
 
@@ -59,7 +59,7 @@ class AllowAddressNetmasksResult:
 
     @address_netmask.setter
     def address_netmask(self, address_netmask):
-        """Sets the address_netmask of this AllowAddressNetmasksResult.
+        r"""Sets the address_netmask of this AllowAddressNetmasksResult.
 
         IP地址或网段，例如：192.168.0.1/24。
 
@@ -70,7 +70,7 @@ class AllowAddressNetmasksResult:
 
     @property
     def description(self):
-        """Gets the description of this AllowAddressNetmasksResult.
+        r"""Gets the description of this AllowAddressNetmasksResult.
 
         描述信息。
 
@@ -81,7 +81,7 @@ class AllowAddressNetmasksResult:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AllowAddressNetmasksResult.
+        r"""Sets the description of this AllowAddressNetmasksResult.
 
         描述信息。
 

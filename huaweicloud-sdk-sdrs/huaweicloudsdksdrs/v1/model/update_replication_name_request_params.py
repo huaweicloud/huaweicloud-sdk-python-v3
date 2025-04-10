@@ -25,7 +25,7 @@ class UpdateReplicationNameRequestParams:
     }
 
     def __init__(self, name=None):
-        """UpdateReplicationNameRequestParams
+        r"""UpdateReplicationNameRequestParams
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateReplicationNameRequestParams:
 
     @property
     def name(self):
-        """Gets the name of this UpdateReplicationNameRequestParams.
+        r"""Gets the name of this UpdateReplicationNameRequestParams.
 
         复制对的名称。最大支持长度为64个字节。只包含中文字符、英文字母（a～ｚ、Ａ～Ｚ）、数字（０~９）、小数点（．）、下划线（_）、中划线（-）。
 
@@ -53,7 +53,7 @@ class UpdateReplicationNameRequestParams:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateReplicationNameRequestParams.
+        r"""Sets the name of this UpdateReplicationNameRequestParams.
 
         复制对的名称。最大支持长度为64个字节。只包含中文字符、英文字母（a～ｚ、Ａ～Ｚ）、数字（０~９）、小数点（．）、下划线（_）、中划线（-）。
 

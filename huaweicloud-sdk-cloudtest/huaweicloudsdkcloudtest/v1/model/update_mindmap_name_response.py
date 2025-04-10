@@ -30,7 +30,7 @@ class UpdateMindmapNameResponse(SdkResponse):
     }
 
     def __init__(self, code=None, data=None, message=None):
-        """UpdateMindmapNameResponse
+        r"""UpdateMindmapNameResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class UpdateMindmapNameResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this UpdateMindmapNameResponse.
+        r"""Gets the code of this UpdateMindmapNameResponse.
 
         :return: The code of this UpdateMindmapNameResponse.
         :rtype: str
@@ -67,7 +67,7 @@ class UpdateMindmapNameResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this UpdateMindmapNameResponse.
+        r"""Sets the code of this UpdateMindmapNameResponse.
 
         :param code: The code of this UpdateMindmapNameResponse.
         :type code: str
@@ -76,7 +76,7 @@ class UpdateMindmapNameResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this UpdateMindmapNameResponse.
+        r"""Gets the data of this UpdateMindmapNameResponse.
 
         :return: The data of this UpdateMindmapNameResponse.
         :rtype: object
@@ -85,7 +85,7 @@ class UpdateMindmapNameResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this UpdateMindmapNameResponse.
+        r"""Sets the data of this UpdateMindmapNameResponse.
 
         :param data: The data of this UpdateMindmapNameResponse.
         :type data: object
@@ -94,7 +94,7 @@ class UpdateMindmapNameResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this UpdateMindmapNameResponse.
+        r"""Gets the message of this UpdateMindmapNameResponse.
 
         :return: The message of this UpdateMindmapNameResponse.
         :rtype: str
@@ -103,7 +103,7 @@ class UpdateMindmapNameResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this UpdateMindmapNameResponse.
+        r"""Sets the message of this UpdateMindmapNameResponse.
 
         :param message: The message of this UpdateMindmapNameResponse.
         :type message: str

@@ -27,7 +27,7 @@ class Volume:
     }
 
     def __init__(self, volume=None, capacity=None):
-        """Volume
+        r"""Volume
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class Volume:
 
     @property
     def volume(self):
-        """Gets the volume of this Volume.
+        r"""Gets the volume of this Volume.
 
         磁盘名称，取值范围为 SSD（超高IO）,高IO（SAS），普通IO（SATA）
 
@@ -60,7 +60,7 @@ class Volume:
 
     @volume.setter
     def volume(self, volume):
-        """Sets the volume of this Volume.
+        r"""Sets the volume of this Volume.
 
         磁盘名称，取值范围为 SSD（超高IO）,高IO（SAS），普通IO（SATA）
 
@@ -71,7 +71,7 @@ class Volume:
 
     @property
     def capacity(self):
-        """Gets the capacity of this Volume.
+        r"""Gets the capacity of this Volume.
 
         磁盘容量,单位：GB
 
@@ -82,7 +82,7 @@ class Volume:
 
     @capacity.setter
     def capacity(self, capacity):
-        """Sets the capacity of this Volume.
+        r"""Sets the capacity of this Volume.
 
         磁盘容量,单位：GB
 

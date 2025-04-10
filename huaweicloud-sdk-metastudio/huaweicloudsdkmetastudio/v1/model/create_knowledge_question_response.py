@@ -28,7 +28,7 @@ class CreateKnowledgeQuestionResponse(SdkResponse):
     }
 
     def __init__(self, question_id=None, x_request_id=None):
-        """CreateKnowledgeQuestionResponse
+        r"""CreateKnowledgeQuestionResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateKnowledgeQuestionResponse(SdkResponse):
 
     @property
     def question_id(self):
-        """Gets the question_id of this CreateKnowledgeQuestionResponse.
+        r"""Gets the question_id of this CreateKnowledgeQuestionResponse.
 
         问法ID。
 
@@ -62,7 +62,7 @@ class CreateKnowledgeQuestionResponse(SdkResponse):
 
     @question_id.setter
     def question_id(self, question_id):
-        """Sets the question_id of this CreateKnowledgeQuestionResponse.
+        r"""Sets the question_id of this CreateKnowledgeQuestionResponse.
 
         问法ID。
 
@@ -73,7 +73,7 @@ class CreateKnowledgeQuestionResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreateKnowledgeQuestionResponse.
+        r"""Gets the x_request_id of this CreateKnowledgeQuestionResponse.
 
         :return: The x_request_id of this CreateKnowledgeQuestionResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class CreateKnowledgeQuestionResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreateKnowledgeQuestionResponse.
+        r"""Sets the x_request_id of this CreateKnowledgeQuestionResponse.
 
         :param x_request_id: The x_request_id of this CreateKnowledgeQuestionResponse.
         :type x_request_id: str

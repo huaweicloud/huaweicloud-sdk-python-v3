@@ -28,7 +28,7 @@ class ListVpcsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, vpcs=None):
-        """ListVpcsResponse
+        r"""ListVpcsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListVpcsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListVpcsResponse.
+        r"""Gets the count of this ListVpcsResponse.
 
         虚拟私有云的总数。
 
@@ -62,7 +62,7 @@ class ListVpcsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListVpcsResponse.
+        r"""Sets the count of this ListVpcsResponse.
 
         虚拟私有云的总数。
 
@@ -73,7 +73,7 @@ class ListVpcsResponse(SdkResponse):
 
     @property
     def vpcs(self):
-        """Gets the vpcs of this ListVpcsResponse.
+        r"""Gets the vpcs of this ListVpcsResponse.
 
         虚拟私有云数组对象。
 
@@ -84,7 +84,7 @@ class ListVpcsResponse(SdkResponse):
 
     @vpcs.setter
     def vpcs(self, vpcs):
-        """Sets the vpcs of this ListVpcsResponse.
+        r"""Sets the vpcs of this ListVpcsResponse.
 
         虚拟私有云数组对象。
 

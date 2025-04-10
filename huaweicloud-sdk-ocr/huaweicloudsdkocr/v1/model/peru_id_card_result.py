@@ -75,7 +75,7 @@ class PeruIdCardResult:
     }
 
     def __init__(self, cui_number=None, first_surname=None, second_surname=None, given_name=None, sex=None, marital_status=None, birth_date=None, nationality=None, issue_date=None, expiry_date=None, birth_place=None, voting_group=None, organ_donation=None, registration_date=None, portrait_image=None, portrait_location=None, address=None, department=None, province=None, district=None, remarks=None, machine_code1=None, machine_code2=None, machine_code3=None, duplicate=None, confidence=None):
-        """PeruIdCardResult
+        r"""PeruIdCardResult
 
         The model defined in huaweicloud sdk
 
@@ -218,7 +218,7 @@ class PeruIdCardResult:
 
     @property
     def cui_number(self):
-        """Gets the cui_number of this PeruIdCardResult.
+        r"""Gets the cui_number of this PeruIdCardResult.
 
         身份证号。
 
@@ -229,7 +229,7 @@ class PeruIdCardResult:
 
     @cui_number.setter
     def cui_number(self, cui_number):
-        """Sets the cui_number of this PeruIdCardResult.
+        r"""Sets the cui_number of this PeruIdCardResult.
 
         身份证号。
 
@@ -240,7 +240,7 @@ class PeruIdCardResult:
 
     @property
     def first_surname(self):
-        """Gets the first_surname of this PeruIdCardResult.
+        r"""Gets the first_surname of this PeruIdCardResult.
 
         第一姓氏。
 
@@ -251,7 +251,7 @@ class PeruIdCardResult:
 
     @first_surname.setter
     def first_surname(self, first_surname):
-        """Sets the first_surname of this PeruIdCardResult.
+        r"""Sets the first_surname of this PeruIdCardResult.
 
         第一姓氏。
 
@@ -262,7 +262,7 @@ class PeruIdCardResult:
 
     @property
     def second_surname(self):
-        """Gets the second_surname of this PeruIdCardResult.
+        r"""Gets the second_surname of this PeruIdCardResult.
 
         第二姓氏。
 
@@ -273,7 +273,7 @@ class PeruIdCardResult:
 
     @second_surname.setter
     def second_surname(self, second_surname):
-        """Sets the second_surname of this PeruIdCardResult.
+        r"""Sets the second_surname of this PeruIdCardResult.
 
         第二姓氏。
 
@@ -284,7 +284,7 @@ class PeruIdCardResult:
 
     @property
     def given_name(self):
-        """Gets the given_name of this PeruIdCardResult.
+        r"""Gets the given_name of this PeruIdCardResult.
 
         名。
 
@@ -295,7 +295,7 @@ class PeruIdCardResult:
 
     @given_name.setter
     def given_name(self, given_name):
-        """Sets the given_name of this PeruIdCardResult.
+        r"""Sets the given_name of this PeruIdCardResult.
 
         名。
 
@@ -306,7 +306,7 @@ class PeruIdCardResult:
 
     @property
     def sex(self):
-        """Gets the sex of this PeruIdCardResult.
+        r"""Gets the sex of this PeruIdCardResult.
 
         性别。
 
@@ -317,7 +317,7 @@ class PeruIdCardResult:
 
     @sex.setter
     def sex(self, sex):
-        """Sets the sex of this PeruIdCardResult.
+        r"""Sets the sex of this PeruIdCardResult.
 
         性别。
 
@@ -328,7 +328,7 @@ class PeruIdCardResult:
 
     @property
     def marital_status(self):
-        """Gets the marital_status of this PeruIdCardResult.
+        r"""Gets the marital_status of this PeruIdCardResult.
 
         婚姻状况。
 
@@ -339,7 +339,7 @@ class PeruIdCardResult:
 
     @marital_status.setter
     def marital_status(self, marital_status):
-        """Sets the marital_status of this PeruIdCardResult.
+        r"""Sets the marital_status of this PeruIdCardResult.
 
         婚姻状况。
 
@@ -350,7 +350,7 @@ class PeruIdCardResult:
 
     @property
     def birth_date(self):
-        """Gets the birth_date of this PeruIdCardResult.
+        r"""Gets the birth_date of this PeruIdCardResult.
 
         出生日期。
 
@@ -361,7 +361,7 @@ class PeruIdCardResult:
 
     @birth_date.setter
     def birth_date(self, birth_date):
-        """Sets the birth_date of this PeruIdCardResult.
+        r"""Sets the birth_date of this PeruIdCardResult.
 
         出生日期。
 
@@ -372,7 +372,7 @@ class PeruIdCardResult:
 
     @property
     def nationality(self):
-        """Gets the nationality of this PeruIdCardResult.
+        r"""Gets the nationality of this PeruIdCardResult.
 
         国籍。
 
@@ -383,7 +383,7 @@ class PeruIdCardResult:
 
     @nationality.setter
     def nationality(self, nationality):
-        """Sets the nationality of this PeruIdCardResult.
+        r"""Sets the nationality of this PeruIdCardResult.
 
         国籍。
 
@@ -394,7 +394,7 @@ class PeruIdCardResult:
 
     @property
     def issue_date(self):
-        """Gets the issue_date of this PeruIdCardResult.
+        r"""Gets the issue_date of this PeruIdCardResult.
 
         发行日期。
 
@@ -405,7 +405,7 @@ class PeruIdCardResult:
 
     @issue_date.setter
     def issue_date(self, issue_date):
-        """Sets the issue_date of this PeruIdCardResult.
+        r"""Sets the issue_date of this PeruIdCardResult.
 
         发行日期。
 
@@ -416,7 +416,7 @@ class PeruIdCardResult:
 
     @property
     def expiry_date(self):
-        """Gets the expiry_date of this PeruIdCardResult.
+        r"""Gets the expiry_date of this PeruIdCardResult.
 
         失效日期。
 
@@ -427,7 +427,7 @@ class PeruIdCardResult:
 
     @expiry_date.setter
     def expiry_date(self, expiry_date):
-        """Sets the expiry_date of this PeruIdCardResult.
+        r"""Sets the expiry_date of this PeruIdCardResult.
 
         失效日期。
 
@@ -438,7 +438,7 @@ class PeruIdCardResult:
 
     @property
     def birth_place(self):
-        """Gets the birth_place of this PeruIdCardResult.
+        r"""Gets the birth_place of this PeruIdCardResult.
 
         出生地编码。
 
@@ -449,7 +449,7 @@ class PeruIdCardResult:
 
     @birth_place.setter
     def birth_place(self, birth_place):
-        """Sets the birth_place of this PeruIdCardResult.
+        r"""Sets the birth_place of this PeruIdCardResult.
 
         出生地编码。
 
@@ -460,7 +460,7 @@ class PeruIdCardResult:
 
     @property
     def voting_group(self):
-        """Gets the voting_group of this PeruIdCardResult.
+        r"""Gets the voting_group of this PeruIdCardResult.
 
         投票组。
 
@@ -471,7 +471,7 @@ class PeruIdCardResult:
 
     @voting_group.setter
     def voting_group(self, voting_group):
-        """Sets the voting_group of this PeruIdCardResult.
+        r"""Sets the voting_group of this PeruIdCardResult.
 
         投票组。
 
@@ -482,7 +482,7 @@ class PeruIdCardResult:
 
     @property
     def organ_donation(self):
-        """Gets the organ_donation of this PeruIdCardResult.
+        r"""Gets the organ_donation of this PeruIdCardResult.
 
         器官捐赠意愿。
 
@@ -493,7 +493,7 @@ class PeruIdCardResult:
 
     @organ_donation.setter
     def organ_donation(self, organ_donation):
-        """Sets the organ_donation of this PeruIdCardResult.
+        r"""Sets the organ_donation of this PeruIdCardResult.
 
         器官捐赠意愿。
 
@@ -504,7 +504,7 @@ class PeruIdCardResult:
 
     @property
     def registration_date(self):
-        """Gets the registration_date of this PeruIdCardResult.
+        r"""Gets the registration_date of this PeruIdCardResult.
 
         注册日期。
 
@@ -515,7 +515,7 @@ class PeruIdCardResult:
 
     @registration_date.setter
     def registration_date(self, registration_date):
-        """Sets the registration_date of this PeruIdCardResult.
+        r"""Sets the registration_date of this PeruIdCardResult.
 
         注册日期。
 
@@ -526,7 +526,7 @@ class PeruIdCardResult:
 
     @property
     def portrait_image(self):
-        """Gets the portrait_image of this PeruIdCardResult.
+        r"""Gets the portrait_image of this PeruIdCardResult.
 
         头像的base64编码。当输入参数“return_portrait_image”为“true”时，才返回该参数。
 
@@ -537,7 +537,7 @@ class PeruIdCardResult:
 
     @portrait_image.setter
     def portrait_image(self, portrait_image):
-        """Sets the portrait_image of this PeruIdCardResult.
+        r"""Sets the portrait_image of this PeruIdCardResult.
 
         头像的base64编码。当输入参数“return_portrait_image”为“true”时，才返回该参数。
 
@@ -548,7 +548,7 @@ class PeruIdCardResult:
 
     @property
     def portrait_location(self):
-        """Gets the portrait_location of this PeruIdCardResult.
+        r"""Gets the portrait_location of this PeruIdCardResult.
 
         头像在原图上的位置。 当输入参数“return_portrait_location”为“true”时，才返回该参数。以列表形式显示，包含头像区域四个顶点的二维坐标（x,y），坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -559,7 +559,7 @@ class PeruIdCardResult:
 
     @portrait_location.setter
     def portrait_location(self, portrait_location):
-        """Sets the portrait_location of this PeruIdCardResult.
+        r"""Sets the portrait_location of this PeruIdCardResult.
 
         头像在原图上的位置。 当输入参数“return_portrait_location”为“true”时，才返回该参数。以列表形式显示，包含头像区域四个顶点的二维坐标（x,y），坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -570,7 +570,7 @@ class PeruIdCardResult:
 
     @property
     def address(self):
-        """Gets the address of this PeruIdCardResult.
+        r"""Gets the address of this PeruIdCardResult.
 
         地址。
 
@@ -581,7 +581,7 @@ class PeruIdCardResult:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this PeruIdCardResult.
+        r"""Sets the address of this PeruIdCardResult.
 
         地址。
 
@@ -592,7 +592,7 @@ class PeruIdCardResult:
 
     @property
     def department(self):
-        """Gets the department of this PeruIdCardResult.
+        r"""Gets the department of this PeruIdCardResult.
 
         大区。
 
@@ -603,7 +603,7 @@ class PeruIdCardResult:
 
     @department.setter
     def department(self, department):
-        """Sets the department of this PeruIdCardResult.
+        r"""Sets the department of this PeruIdCardResult.
 
         大区。
 
@@ -614,7 +614,7 @@ class PeruIdCardResult:
 
     @property
     def province(self):
-        """Gets the province of this PeruIdCardResult.
+        r"""Gets the province of this PeruIdCardResult.
 
         省。
 
@@ -625,7 +625,7 @@ class PeruIdCardResult:
 
     @province.setter
     def province(self, province):
-        """Sets the province of this PeruIdCardResult.
+        r"""Sets the province of this PeruIdCardResult.
 
         省。
 
@@ -636,7 +636,7 @@ class PeruIdCardResult:
 
     @property
     def district(self):
-        """Gets the district of this PeruIdCardResult.
+        r"""Gets the district of this PeruIdCardResult.
 
         区。
 
@@ -647,7 +647,7 @@ class PeruIdCardResult:
 
     @district.setter
     def district(self, district):
-        """Sets the district of this PeruIdCardResult.
+        r"""Sets the district of this PeruIdCardResult.
 
         区。
 
@@ -658,7 +658,7 @@ class PeruIdCardResult:
 
     @property
     def remarks(self):
-        """Gets the remarks of this PeruIdCardResult.
+        r"""Gets the remarks of this PeruIdCardResult.
 
         备注。
 
@@ -669,7 +669,7 @@ class PeruIdCardResult:
 
     @remarks.setter
     def remarks(self, remarks):
-        """Sets the remarks of this PeruIdCardResult.
+        r"""Sets the remarks of this PeruIdCardResult.
 
         备注。
 
@@ -680,7 +680,7 @@ class PeruIdCardResult:
 
     @property
     def machine_code1(self):
-        """Gets the machine_code1 of this PeruIdCardResult.
+        r"""Gets the machine_code1 of this PeruIdCardResult.
 
         机器码第一行。
 
@@ -691,7 +691,7 @@ class PeruIdCardResult:
 
     @machine_code1.setter
     def machine_code1(self, machine_code1):
-        """Sets the machine_code1 of this PeruIdCardResult.
+        r"""Sets the machine_code1 of this PeruIdCardResult.
 
         机器码第一行。
 
@@ -702,7 +702,7 @@ class PeruIdCardResult:
 
     @property
     def machine_code2(self):
-        """Gets the machine_code2 of this PeruIdCardResult.
+        r"""Gets the machine_code2 of this PeruIdCardResult.
 
         机器码第二行。
 
@@ -713,7 +713,7 @@ class PeruIdCardResult:
 
     @machine_code2.setter
     def machine_code2(self, machine_code2):
-        """Sets the machine_code2 of this PeruIdCardResult.
+        r"""Sets the machine_code2 of this PeruIdCardResult.
 
         机器码第二行。
 
@@ -724,7 +724,7 @@ class PeruIdCardResult:
 
     @property
     def machine_code3(self):
-        """Gets the machine_code3 of this PeruIdCardResult.
+        r"""Gets the machine_code3 of this PeruIdCardResult.
 
         机器码第三行。
 
@@ -735,7 +735,7 @@ class PeruIdCardResult:
 
     @machine_code3.setter
     def machine_code3(self, machine_code3):
-        """Sets the machine_code3 of this PeruIdCardResult.
+        r"""Sets the machine_code3 of this PeruIdCardResult.
 
         机器码第三行。
 
@@ -746,7 +746,7 @@ class PeruIdCardResult:
 
     @property
     def duplicate(self):
-        """Gets the duplicate of this PeruIdCardResult.
+        r"""Gets the duplicate of this PeruIdCardResult.
 
         是否重新登记过。可选值如下所示： -  true: 已重新登记过 -  false: 未重新登记过 
 
@@ -757,7 +757,7 @@ class PeruIdCardResult:
 
     @duplicate.setter
     def duplicate(self, duplicate):
-        """Sets the duplicate of this PeruIdCardResult.
+        r"""Sets the duplicate of this PeruIdCardResult.
 
         是否重新登记过。可选值如下所示： -  true: 已重新登记过 -  false: 未重新登记过 
 
@@ -768,7 +768,7 @@ class PeruIdCardResult:
 
     @property
     def confidence(self):
-        """Gets the confidence of this PeruIdCardResult.
+        r"""Gets the confidence of this PeruIdCardResult.
 
         相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。注：置信度由算法给出，不直接等价于对应字段的准确率。
 
@@ -779,7 +779,7 @@ class PeruIdCardResult:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this PeruIdCardResult.
+        r"""Sets the confidence of this PeruIdCardResult.
 
         相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。注：置信度由算法给出，不直接等价于对应字段的准确率。
 

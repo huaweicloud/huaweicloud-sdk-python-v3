@@ -35,7 +35,7 @@ class NeutronListSecurityGroupsRequest:
     }
 
     def __init__(self, limit=None, marker=None, id=None, name=None, description=None, tenant_id=None):
-        """NeutronListSecurityGroupsRequest
+        r"""NeutronListSecurityGroupsRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class NeutronListSecurityGroupsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this NeutronListSecurityGroupsRequest.
+        r"""Gets the limit of this NeutronListSecurityGroupsRequest.
 
         每页返回的个数
 
@@ -89,7 +89,7 @@ class NeutronListSecurityGroupsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this NeutronListSecurityGroupsRequest.
+        r"""Sets the limit of this NeutronListSecurityGroupsRequest.
 
         每页返回的个数
 
@@ -100,7 +100,7 @@ class NeutronListSecurityGroupsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this NeutronListSecurityGroupsRequest.
+        r"""Gets the marker of this NeutronListSecurityGroupsRequest.
 
         分页查询起始的资源ID，为空时查询第一页
 
@@ -111,7 +111,7 @@ class NeutronListSecurityGroupsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this NeutronListSecurityGroupsRequest.
+        r"""Sets the marker of this NeutronListSecurityGroupsRequest.
 
         分页查询起始的资源ID，为空时查询第一页
 
@@ -122,7 +122,7 @@ class NeutronListSecurityGroupsRequest:
 
     @property
     def id(self):
-        """Gets the id of this NeutronListSecurityGroupsRequest.
+        r"""Gets the id of this NeutronListSecurityGroupsRequest.
 
         按照安全组对应的ID过滤查询
 
@@ -133,7 +133,7 @@ class NeutronListSecurityGroupsRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NeutronListSecurityGroupsRequest.
+        r"""Sets the id of this NeutronListSecurityGroupsRequest.
 
         按照安全组对应的ID过滤查询
 
@@ -144,7 +144,7 @@ class NeutronListSecurityGroupsRequest:
 
     @property
     def name(self):
-        """Gets the name of this NeutronListSecurityGroupsRequest.
+        r"""Gets the name of this NeutronListSecurityGroupsRequest.
 
         按照安全组的名称过滤查询
 
@@ -155,7 +155,7 @@ class NeutronListSecurityGroupsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this NeutronListSecurityGroupsRequest.
+        r"""Sets the name of this NeutronListSecurityGroupsRequest.
 
         按照安全组的名称过滤查询
 
@@ -166,7 +166,7 @@ class NeutronListSecurityGroupsRequest:
 
     @property
     def description(self):
-        """Gets the description of this NeutronListSecurityGroupsRequest.
+        r"""Gets the description of this NeutronListSecurityGroupsRequest.
 
         按照安全组的描述过滤查询
 
@@ -177,7 +177,7 @@ class NeutronListSecurityGroupsRequest:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this NeutronListSecurityGroupsRequest.
+        r"""Sets the description of this NeutronListSecurityGroupsRequest.
 
         按照安全组的描述过滤查询
 
@@ -188,7 +188,7 @@ class NeutronListSecurityGroupsRequest:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this NeutronListSecurityGroupsRequest.
+        r"""Gets the tenant_id of this NeutronListSecurityGroupsRequest.
 
         按照安全组所属的项目ID过滤查询
 
@@ -199,7 +199,7 @@ class NeutronListSecurityGroupsRequest:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this NeutronListSecurityGroupsRequest.
+        r"""Sets the tenant_id of this NeutronListSecurityGroupsRequest.
 
         按照安全组所属的项目ID过滤查询
 

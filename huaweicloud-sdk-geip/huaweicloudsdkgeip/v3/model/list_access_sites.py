@@ -39,7 +39,7 @@ class ListAccessSites:
     }
 
     def __init__(self, id=None, name=None, proxy_region=None, iec_az_code=None, en_name=None, cn_name=None, created_at=None, updated_at=None):
-        """ListAccessSites
+        r"""ListAccessSites
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ListAccessSites:
 
     @property
     def id(self):
-        """Gets the id of this ListAccessSites.
+        r"""Gets the id of this ListAccessSites.
 
         接入点的ID
 
@@ -103,7 +103,7 @@ class ListAccessSites:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListAccessSites.
+        r"""Sets the id of this ListAccessSites.
 
         接入点的ID
 
@@ -114,7 +114,7 @@ class ListAccessSites:
 
     @property
     def name(self):
-        """Gets the name of this ListAccessSites.
+        r"""Gets the name of this ListAccessSites.
 
         - 功能说明：接入点名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -125,7 +125,7 @@ class ListAccessSites:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListAccessSites.
+        r"""Sets the name of this ListAccessSites.
 
         - 功能说明：接入点名称 - 取值范围：1-64，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -136,7 +136,7 @@ class ListAccessSites:
 
     @property
     def proxy_region(self):
-        """Gets the proxy_region of this ListAccessSites.
+        r"""Gets the proxy_region of this ListAccessSites.
 
         pop站点托管的region(id)
 
@@ -147,7 +147,7 @@ class ListAccessSites:
 
     @proxy_region.setter
     def proxy_region(self, proxy_region):
-        """Sets the proxy_region of this ListAccessSites.
+        r"""Sets the proxy_region of this ListAccessSites.
 
         pop站点托管的region(id)
 
@@ -158,7 +158,7 @@ class ListAccessSites:
 
     @property
     def iec_az_code(self):
-        """Gets the iec_az_code of this ListAccessSites.
+        r"""Gets the iec_az_code of this ListAccessSites.
 
         边缘站点az
 
@@ -169,7 +169,7 @@ class ListAccessSites:
 
     @iec_az_code.setter
     def iec_az_code(self, iec_az_code):
-        """Sets the iec_az_code of this ListAccessSites.
+        r"""Sets the iec_az_code of this ListAccessSites.
 
         边缘站点az
 
@@ -180,7 +180,7 @@ class ListAccessSites:
 
     @property
     def en_name(self):
-        """Gets the en_name of this ListAccessSites.
+        r"""Gets the en_name of this ListAccessSites.
 
         英文名称
 
@@ -191,7 +191,7 @@ class ListAccessSites:
 
     @en_name.setter
     def en_name(self, en_name):
-        """Sets the en_name of this ListAccessSites.
+        r"""Sets the en_name of this ListAccessSites.
 
         英文名称
 
@@ -202,7 +202,7 @@ class ListAccessSites:
 
     @property
     def cn_name(self):
-        """Gets the cn_name of this ListAccessSites.
+        r"""Gets the cn_name of this ListAccessSites.
 
         中文名称
 
@@ -213,7 +213,7 @@ class ListAccessSites:
 
     @cn_name.setter
     def cn_name(self, cn_name):
-        """Sets the cn_name of this ListAccessSites.
+        r"""Sets the cn_name of this ListAccessSites.
 
         中文名称
 
@@ -224,7 +224,7 @@ class ListAccessSites:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ListAccessSites.
+        r"""Gets the created_at of this ListAccessSites.
 
         创建时间
 
@@ -235,7 +235,7 @@ class ListAccessSites:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ListAccessSites.
+        r"""Sets the created_at of this ListAccessSites.
 
         创建时间
 
@@ -246,7 +246,7 @@ class ListAccessSites:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ListAccessSites.
+        r"""Gets the updated_at of this ListAccessSites.
 
         更新时间
 
@@ -257,7 +257,7 @@ class ListAccessSites:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ListAccessSites.
+        r"""Sets the updated_at of this ListAccessSites.
 
         更新时间
 

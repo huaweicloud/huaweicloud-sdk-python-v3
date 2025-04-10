@@ -48,7 +48,7 @@ class CreateOrganizationPolicyAssignmentResponse(SdkResponse):
     }
 
     def __init__(self, owner_id=None, organization_id=None, organization_policy_assignment_urn=None, organization_policy_assignment_id=None, organization_policy_assignment_name=None, description=None, period=None, policy_filter=None, parameters=None, policy_definition_id=None, created_at=None, updated_at=None):
-        """CreateOrganizationPolicyAssignmentResponse
+        r"""CreateOrganizationPolicyAssignmentResponse
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class CreateOrganizationPolicyAssignmentResponse(SdkResponse):
 
     @property
     def owner_id(self):
-        """Gets the owner_id of this CreateOrganizationPolicyAssignmentResponse.
+        r"""Gets the owner_id of this CreateOrganizationPolicyAssignmentResponse.
 
         组织合规规则创建者。
 
@@ -132,7 +132,7 @@ class CreateOrganizationPolicyAssignmentResponse(SdkResponse):
 
     @owner_id.setter
     def owner_id(self, owner_id):
-        """Sets the owner_id of this CreateOrganizationPolicyAssignmentResponse.
+        r"""Sets the owner_id of this CreateOrganizationPolicyAssignmentResponse.
 
         组织合规规则创建者。
 
@@ -143,7 +143,7 @@ class CreateOrganizationPolicyAssignmentResponse(SdkResponse):
 
     @property
     def organization_id(self):
-        """Gets the organization_id of this CreateOrganizationPolicyAssignmentResponse.
+        r"""Gets the organization_id of this CreateOrganizationPolicyAssignmentResponse.
 
         组织ID。
 
@@ -154,7 +154,7 @@ class CreateOrganizationPolicyAssignmentResponse(SdkResponse):
 
     @organization_id.setter
     def organization_id(self, organization_id):
-        """Sets the organization_id of this CreateOrganizationPolicyAssignmentResponse.
+        r"""Sets the organization_id of this CreateOrganizationPolicyAssignmentResponse.
 
         组织ID。
 
@@ -165,7 +165,7 @@ class CreateOrganizationPolicyAssignmentResponse(SdkResponse):
 
     @property
     def organization_policy_assignment_urn(self):
-        """Gets the organization_policy_assignment_urn of this CreateOrganizationPolicyAssignmentResponse.
+        r"""Gets the organization_policy_assignment_urn of this CreateOrganizationPolicyAssignmentResponse.
 
         组织合规规则资源唯一标识。
 
@@ -176,7 +176,7 @@ class CreateOrganizationPolicyAssignmentResponse(SdkResponse):
 
     @organization_policy_assignment_urn.setter
     def organization_policy_assignment_urn(self, organization_policy_assignment_urn):
-        """Sets the organization_policy_assignment_urn of this CreateOrganizationPolicyAssignmentResponse.
+        r"""Sets the organization_policy_assignment_urn of this CreateOrganizationPolicyAssignmentResponse.
 
         组织合规规则资源唯一标识。
 
@@ -187,7 +187,7 @@ class CreateOrganizationPolicyAssignmentResponse(SdkResponse):
 
     @property
     def organization_policy_assignment_id(self):
-        """Gets the organization_policy_assignment_id of this CreateOrganizationPolicyAssignmentResponse.
+        r"""Gets the organization_policy_assignment_id of this CreateOrganizationPolicyAssignmentResponse.
 
         组织合规规则ID。
 
@@ -198,7 +198,7 @@ class CreateOrganizationPolicyAssignmentResponse(SdkResponse):
 
     @organization_policy_assignment_id.setter
     def organization_policy_assignment_id(self, organization_policy_assignment_id):
-        """Sets the organization_policy_assignment_id of this CreateOrganizationPolicyAssignmentResponse.
+        r"""Sets the organization_policy_assignment_id of this CreateOrganizationPolicyAssignmentResponse.
 
         组织合规规则ID。
 
@@ -209,7 +209,7 @@ class CreateOrganizationPolicyAssignmentResponse(SdkResponse):
 
     @property
     def organization_policy_assignment_name(self):
-        """Gets the organization_policy_assignment_name of this CreateOrganizationPolicyAssignmentResponse.
+        r"""Gets the organization_policy_assignment_name of this CreateOrganizationPolicyAssignmentResponse.
 
         组织合规规则名称。
 
@@ -220,7 +220,7 @@ class CreateOrganizationPolicyAssignmentResponse(SdkResponse):
 
     @organization_policy_assignment_name.setter
     def organization_policy_assignment_name(self, organization_policy_assignment_name):
-        """Sets the organization_policy_assignment_name of this CreateOrganizationPolicyAssignmentResponse.
+        r"""Sets the organization_policy_assignment_name of this CreateOrganizationPolicyAssignmentResponse.
 
         组织合规规则名称。
 
@@ -231,7 +231,7 @@ class CreateOrganizationPolicyAssignmentResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreateOrganizationPolicyAssignmentResponse.
+        r"""Gets the description of this CreateOrganizationPolicyAssignmentResponse.
 
         描述信息。
 
@@ -242,7 +242,7 @@ class CreateOrganizationPolicyAssignmentResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateOrganizationPolicyAssignmentResponse.
+        r"""Sets the description of this CreateOrganizationPolicyAssignmentResponse.
 
         描述信息。
 
@@ -253,7 +253,7 @@ class CreateOrganizationPolicyAssignmentResponse(SdkResponse):
 
     @property
     def period(self):
-        """Gets the period of this CreateOrganizationPolicyAssignmentResponse.
+        r"""Gets the period of this CreateOrganizationPolicyAssignmentResponse.
 
         触发周期。
 
@@ -264,7 +264,7 @@ class CreateOrganizationPolicyAssignmentResponse(SdkResponse):
 
     @period.setter
     def period(self, period):
-        """Sets the period of this CreateOrganizationPolicyAssignmentResponse.
+        r"""Sets the period of this CreateOrganizationPolicyAssignmentResponse.
 
         触发周期。
 
@@ -275,7 +275,7 @@ class CreateOrganizationPolicyAssignmentResponse(SdkResponse):
 
     @property
     def policy_filter(self):
-        """Gets the policy_filter of this CreateOrganizationPolicyAssignmentResponse.
+        r"""Gets the policy_filter of this CreateOrganizationPolicyAssignmentResponse.
 
         :return: The policy_filter of this CreateOrganizationPolicyAssignmentResponse.
         :rtype: :class:`huaweicloudsdkconfig.v1.PolicyFilterDefinition`
@@ -284,7 +284,7 @@ class CreateOrganizationPolicyAssignmentResponse(SdkResponse):
 
     @policy_filter.setter
     def policy_filter(self, policy_filter):
-        """Sets the policy_filter of this CreateOrganizationPolicyAssignmentResponse.
+        r"""Sets the policy_filter of this CreateOrganizationPolicyAssignmentResponse.
 
         :param policy_filter: The policy_filter of this CreateOrganizationPolicyAssignmentResponse.
         :type policy_filter: :class:`huaweicloudsdkconfig.v1.PolicyFilterDefinition`
@@ -293,7 +293,7 @@ class CreateOrganizationPolicyAssignmentResponse(SdkResponse):
 
     @property
     def parameters(self):
-        """Gets the parameters of this CreateOrganizationPolicyAssignmentResponse.
+        r"""Gets the parameters of this CreateOrganizationPolicyAssignmentResponse.
 
         规则参数。
 
@@ -304,7 +304,7 @@ class CreateOrganizationPolicyAssignmentResponse(SdkResponse):
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this CreateOrganizationPolicyAssignmentResponse.
+        r"""Sets the parameters of this CreateOrganizationPolicyAssignmentResponse.
 
         规则参数。
 
@@ -315,7 +315,7 @@ class CreateOrganizationPolicyAssignmentResponse(SdkResponse):
 
     @property
     def policy_definition_id(self):
-        """Gets the policy_definition_id of this CreateOrganizationPolicyAssignmentResponse.
+        r"""Gets the policy_definition_id of this CreateOrganizationPolicyAssignmentResponse.
 
         策略ID。
 
@@ -326,7 +326,7 @@ class CreateOrganizationPolicyAssignmentResponse(SdkResponse):
 
     @policy_definition_id.setter
     def policy_definition_id(self, policy_definition_id):
-        """Sets the policy_definition_id of this CreateOrganizationPolicyAssignmentResponse.
+        r"""Sets the policy_definition_id of this CreateOrganizationPolicyAssignmentResponse.
 
         策略ID。
 
@@ -337,7 +337,7 @@ class CreateOrganizationPolicyAssignmentResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this CreateOrganizationPolicyAssignmentResponse.
+        r"""Gets the created_at of this CreateOrganizationPolicyAssignmentResponse.
 
         创建时间。
 
@@ -348,7 +348,7 @@ class CreateOrganizationPolicyAssignmentResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this CreateOrganizationPolicyAssignmentResponse.
+        r"""Sets the created_at of this CreateOrganizationPolicyAssignmentResponse.
 
         创建时间。
 
@@ -359,7 +359,7 @@ class CreateOrganizationPolicyAssignmentResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this CreateOrganizationPolicyAssignmentResponse.
+        r"""Gets the updated_at of this CreateOrganizationPolicyAssignmentResponse.
 
         更新时间。
 
@@ -370,7 +370,7 @@ class CreateOrganizationPolicyAssignmentResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this CreateOrganizationPolicyAssignmentResponse.
+        r"""Sets the updated_at of this CreateOrganizationPolicyAssignmentResponse.
 
         更新时间。
 

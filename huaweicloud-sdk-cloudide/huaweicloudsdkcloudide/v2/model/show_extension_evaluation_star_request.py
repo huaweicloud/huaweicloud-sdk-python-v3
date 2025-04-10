@@ -29,7 +29,7 @@ class ShowExtensionEvaluationStarRequest:
     }
 
     def __init__(self, extension_id=None, limit=None, offset=None):
-        """ShowExtensionEvaluationStarRequest
+        r"""ShowExtensionEvaluationStarRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ShowExtensionEvaluationStarRequest:
 
     @property
     def extension_id(self):
-        """Gets the extension_id of this ShowExtensionEvaluationStarRequest.
+        r"""Gets the extension_id of this ShowExtensionEvaluationStarRequest.
 
         插件id
 
@@ -67,7 +67,7 @@ class ShowExtensionEvaluationStarRequest:
 
     @extension_id.setter
     def extension_id(self, extension_id):
-        """Sets the extension_id of this ShowExtensionEvaluationStarRequest.
+        r"""Sets the extension_id of this ShowExtensionEvaluationStarRequest.
 
         插件id
 
@@ -78,7 +78,7 @@ class ShowExtensionEvaluationStarRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowExtensionEvaluationStarRequest.
+        r"""Gets the limit of this ShowExtensionEvaluationStarRequest.
 
         每页显示的条目数量
 
@@ -89,7 +89,7 @@ class ShowExtensionEvaluationStarRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowExtensionEvaluationStarRequest.
+        r"""Sets the limit of this ShowExtensionEvaluationStarRequest.
 
         每页显示的条目数量
 
@@ -100,7 +100,7 @@ class ShowExtensionEvaluationStarRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowExtensionEvaluationStarRequest.
+        r"""Gets the offset of this ShowExtensionEvaluationStarRequest.
 
         偏移量，表示从此偏移量开始查询
 
@@ -111,7 +111,7 @@ class ShowExtensionEvaluationStarRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowExtensionEvaluationStarRequest.
+        r"""Sets the offset of this ShowExtensionEvaluationStarRequest.
 
         偏移量，表示从此偏移量开始查询
 

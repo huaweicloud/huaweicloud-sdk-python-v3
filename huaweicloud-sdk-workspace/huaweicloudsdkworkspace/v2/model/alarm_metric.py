@@ -29,7 +29,7 @@ class AlarmMetric:
     }
 
     def __init__(self, namespace=None, metric_name=None, dimensions=None):
-        """AlarmMetric
+        r"""AlarmMetric
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AlarmMetric:
 
     @property
     def namespace(self):
-        """Gets the namespace of this AlarmMetric.
+        r"""Gets the namespace of this AlarmMetric.
 
         查询服务的命名空间
 
@@ -68,7 +68,7 @@ class AlarmMetric:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this AlarmMetric.
+        r"""Sets the namespace of this AlarmMetric.
 
         查询服务的命名空间
 
@@ -79,7 +79,7 @@ class AlarmMetric:
 
     @property
     def metric_name(self):
-        """Gets the metric_name of this AlarmMetric.
+        r"""Gets the metric_name of this AlarmMetric.
 
         资源的监控指标名称
 
@@ -90,7 +90,7 @@ class AlarmMetric:
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        """Sets the metric_name of this AlarmMetric.
+        r"""Sets the metric_name of this AlarmMetric.
 
         资源的监控指标名称
 
@@ -101,7 +101,7 @@ class AlarmMetric:
 
     @property
     def dimensions(self):
-        """Gets the dimensions of this AlarmMetric.
+        r"""Gets the dimensions of this AlarmMetric.
 
         指标维度，目前最大可添加4个维度。
 
@@ -112,7 +112,7 @@ class AlarmMetric:
 
     @dimensions.setter
     def dimensions(self, dimensions):
-        """Sets the dimensions of this AlarmMetric.
+        r"""Sets the dimensions of this AlarmMetric.
 
         指标维度，目前最大可添加4个维度。
 

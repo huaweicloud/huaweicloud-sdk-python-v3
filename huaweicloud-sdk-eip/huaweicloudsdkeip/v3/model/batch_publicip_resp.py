@@ -27,7 +27,7 @@ class BatchPublicipResp:
     }
 
     def __init__(self, status_code=None, publicip=None):
-        """BatchPublicipResp
+        r"""BatchPublicipResp
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchPublicipResp:
 
     @property
     def status_code(self):
-        """Gets the status_code of this BatchPublicipResp.
+        r"""Gets the status_code of this BatchPublicipResp.
 
         响应码
 
@@ -59,7 +59,7 @@ class BatchPublicipResp:
 
     @status_code.setter
     def status_code(self, status_code):
-        """Sets the status_code of this BatchPublicipResp.
+        r"""Sets the status_code of this BatchPublicipResp.
 
         响应码
 
@@ -70,7 +70,7 @@ class BatchPublicipResp:
 
     @property
     def publicip(self):
-        """Gets the publicip of this BatchPublicipResp.
+        r"""Gets the publicip of this BatchPublicipResp.
 
         :return: The publicip of this BatchPublicipResp.
         :rtype: :class:`huaweicloudsdkeip.v3.PublicipResp`
@@ -79,7 +79,7 @@ class BatchPublicipResp:
 
     @publicip.setter
     def publicip(self, publicip):
-        """Sets the publicip of this BatchPublicipResp.
+        r"""Sets the publicip of this BatchPublicipResp.
 
         :param publicip: The publicip of this BatchPublicipResp.
         :type publicip: :class:`huaweicloudsdkeip.v3.PublicipResp`

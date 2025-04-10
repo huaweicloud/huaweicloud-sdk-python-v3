@@ -27,7 +27,7 @@ class UpdateReplicationNameRequest:
     }
 
     def __init__(self, replication_id=None, body=None):
-        """UpdateReplicationNameRequest
+        r"""UpdateReplicationNameRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateReplicationNameRequest:
 
     @property
     def replication_id(self):
-        """Gets the replication_id of this UpdateReplicationNameRequest.
+        r"""Gets the replication_id of this UpdateReplicationNameRequest.
 
         replication_id
 
@@ -60,7 +60,7 @@ class UpdateReplicationNameRequest:
 
     @replication_id.setter
     def replication_id(self, replication_id):
-        """Sets the replication_id of this UpdateReplicationNameRequest.
+        r"""Sets the replication_id of this UpdateReplicationNameRequest.
 
         replication_id
 
@@ -71,7 +71,7 @@ class UpdateReplicationNameRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateReplicationNameRequest.
+        r"""Gets the body of this UpdateReplicationNameRequest.
 
         :return: The body of this UpdateReplicationNameRequest.
         :rtype: :class:`huaweicloudsdksdrs.v1.UpdateReplicationNameRequestBody`
@@ -80,7 +80,7 @@ class UpdateReplicationNameRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateReplicationNameRequest.
+        r"""Sets the body of this UpdateReplicationNameRequest.
 
         :param body: The body of this UpdateReplicationNameRequest.
         :type body: :class:`huaweicloudsdksdrs.v1.UpdateReplicationNameRequestBody`

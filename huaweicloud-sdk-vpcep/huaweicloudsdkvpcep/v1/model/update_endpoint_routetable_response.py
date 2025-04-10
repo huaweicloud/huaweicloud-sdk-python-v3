@@ -28,7 +28,7 @@ class UpdateEndpointRoutetableResponse(SdkResponse):
     }
 
     def __init__(self, routetables=None, error=None):
-        """UpdateEndpointRoutetableResponse
+        r"""UpdateEndpointRoutetableResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateEndpointRoutetableResponse(SdkResponse):
 
     @property
     def routetables(self):
-        """Gets the routetables of this UpdateEndpointRoutetableResponse.
+        r"""Gets the routetables of this UpdateEndpointRoutetableResponse.
 
         路由表ID列表。 若未指定，返回默认VPC下路由表ID。 更新Gateway类型终端节点服务的终端节点时，显示此参数。
 
@@ -62,7 +62,7 @@ class UpdateEndpointRoutetableResponse(SdkResponse):
 
     @routetables.setter
     def routetables(self, routetables):
-        """Sets the routetables of this UpdateEndpointRoutetableResponse.
+        r"""Sets the routetables of this UpdateEndpointRoutetableResponse.
 
         路由表ID列表。 若未指定，返回默认VPC下路由表ID。 更新Gateway类型终端节点服务的终端节点时，显示此参数。
 
@@ -73,7 +73,7 @@ class UpdateEndpointRoutetableResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this UpdateEndpointRoutetableResponse.
+        r"""Gets the error of this UpdateEndpointRoutetableResponse.
 
         当修改终端节点子网路由表失败时，返回错误提示信息
 
@@ -84,7 +84,7 @@ class UpdateEndpointRoutetableResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this UpdateEndpointRoutetableResponse.
+        r"""Sets the error of this UpdateEndpointRoutetableResponse.
 
         当修改终端节点子网路由表失败时，返回错误提示信息
 

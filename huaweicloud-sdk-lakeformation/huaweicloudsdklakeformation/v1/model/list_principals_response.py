@@ -28,7 +28,7 @@ class ListPrincipalsResponse(SdkResponse):
     }
 
     def __init__(self, principals=None, page_info=None):
-        """ListPrincipalsResponse
+        r"""ListPrincipalsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListPrincipalsResponse(SdkResponse):
 
     @property
     def principals(self):
-        """Gets the principals of this ListPrincipalsResponse.
+        r"""Gets the principals of this ListPrincipalsResponse.
 
         主体列表
 
@@ -62,7 +62,7 @@ class ListPrincipalsResponse(SdkResponse):
 
     @principals.setter
     def principals(self, principals):
-        """Sets the principals of this ListPrincipalsResponse.
+        r"""Sets the principals of this ListPrincipalsResponse.
 
         主体列表
 
@@ -73,7 +73,7 @@ class ListPrincipalsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListPrincipalsResponse.
+        r"""Gets the page_info of this ListPrincipalsResponse.
 
         :return: The page_info of this ListPrincipalsResponse.
         :rtype: :class:`huaweicloudsdklakeformation.v1.PagedInfo`
@@ -82,7 +82,7 @@ class ListPrincipalsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListPrincipalsResponse.
+        r"""Sets the page_info of this ListPrincipalsResponse.
 
         :param page_info: The page_info of this ListPrincipalsResponse.
         :type page_info: :class:`huaweicloudsdklakeformation.v1.PagedInfo`

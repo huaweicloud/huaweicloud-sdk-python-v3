@@ -134,7 +134,7 @@ class ShowInstanceResponse(SdkResponse):
     }
 
     def __init__(self, name=None, engine=None, status=None, description=None, type=None, specification=None, engine_version=None, instance_id=None, charging_mode=None, vpc_id=None, vpc_name=None, created_at=None, product_id=None, security_group_id=None, security_group_name=None, subnet_id=None, subnet_name=None, subnet_cidr=None, available_zones=None, available_zone_names=None, user_id=None, user_name=None, maintain_begin=None, maintain_end=None, enable_log_collection=None, storage_space=None, used_storage_space=None, enable_publicip=None, publicip_id=None, publicip_address=None, ssl_enable=None, cross_vpc_info=None, storage_resource_id=None, storage_spec_code=None, service_type=None, storage_type=None, extend_times=None, ipv6_enable=None, support_features=None, disk_encrypted=None, ces_version=None, node_num=None, new_spec_billing_enable=None, enable_acl=None, broker_num=None, namesrv_address=None, broker_address=None, public_namesrv_address=None, public_broker_address=None, grpc_address=None, public_grpc_address=None, enterprise_project_id=None, tags=None, total_storage_space=None, resource_spec_code=None):
-        """ShowInstanceResponse
+        r"""ShowInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -422,7 +422,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowInstanceResponse.
+        r"""Gets the name of this ShowInstanceResponse.
 
         实例名称。
 
@@ -433,7 +433,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowInstanceResponse.
+        r"""Sets the name of this ShowInstanceResponse.
 
         实例名称。
 
@@ -444,7 +444,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def engine(self):
-        """Gets the engine of this ShowInstanceResponse.
+        r"""Gets the engine of this ShowInstanceResponse.
 
         引擎。
 
@@ -455,7 +455,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this ShowInstanceResponse.
+        r"""Sets the engine of this ShowInstanceResponse.
 
         引擎。
 
@@ -466,7 +466,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowInstanceResponse.
+        r"""Gets the status of this ShowInstanceResponse.
 
         状态。
 
@@ -477,7 +477,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowInstanceResponse.
+        r"""Sets the status of this ShowInstanceResponse.
 
         状态。
 
@@ -488,7 +488,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowInstanceResponse.
+        r"""Gets the description of this ShowInstanceResponse.
 
         消息描述。
 
@@ -499,7 +499,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowInstanceResponse.
+        r"""Sets the description of this ShowInstanceResponse.
 
         消息描述。
 
@@ -510,7 +510,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowInstanceResponse.
+        r"""Gets the type of this ShowInstanceResponse.
 
         实例类型：集群，cluster。
 
@@ -521,7 +521,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowInstanceResponse.
+        r"""Sets the type of this ShowInstanceResponse.
 
         实例类型：集群，cluster。
 
@@ -532,7 +532,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def specification(self):
-        """Gets the specification of this ShowInstanceResponse.
+        r"""Gets the specification of this ShowInstanceResponse.
 
         实例规格。
 
@@ -543,7 +543,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @specification.setter
     def specification(self, specification):
-        """Sets the specification of this ShowInstanceResponse.
+        r"""Sets the specification of this ShowInstanceResponse.
 
         实例规格。
 
@@ -554,7 +554,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def engine_version(self):
-        """Gets the engine_version of this ShowInstanceResponse.
+        r"""Gets the engine_version of this ShowInstanceResponse.
 
         版本。
 
@@ -565,7 +565,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @engine_version.setter
     def engine_version(self, engine_version):
-        """Sets the engine_version of this ShowInstanceResponse.
+        r"""Sets the engine_version of this ShowInstanceResponse.
 
         版本。
 
@@ -576,7 +576,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowInstanceResponse.
+        r"""Gets the instance_id of this ShowInstanceResponse.
 
         实例ID。
 
@@ -587,7 +587,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowInstanceResponse.
+        r"""Sets the instance_id of this ShowInstanceResponse.
 
         实例ID。
 
@@ -598,7 +598,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this ShowInstanceResponse.
+        r"""Gets the charging_mode of this ShowInstanceResponse.
 
         [付费模式，1表示按需计费。](tag:hws_eu,g42,hk_g42,tm,sbc,hk_sbc,hk_tm)[付费模式，1表示按需计费，0表示包年/包月计费。](tag:hws,hws_eu,hws_hk,ctc) [计费模式，参数暂未使用。](tag:ocb,hws_ocb,hcs,fcs)
 
@@ -609,7 +609,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this ShowInstanceResponse.
+        r"""Sets the charging_mode of this ShowInstanceResponse.
 
         [付费模式，1表示按需计费。](tag:hws_eu,g42,hk_g42,tm,sbc,hk_sbc,hk_tm)[付费模式，1表示按需计费，0表示包年/包月计费。](tag:hws,hws_eu,hws_hk,ctc) [计费模式，参数暂未使用。](tag:ocb,hws_ocb,hcs,fcs)
 
@@ -620,7 +620,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ShowInstanceResponse.
+        r"""Gets the vpc_id of this ShowInstanceResponse.
 
         私有云ID。
 
@@ -631,7 +631,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ShowInstanceResponse.
+        r"""Sets the vpc_id of this ShowInstanceResponse.
 
         私有云ID。
 
@@ -642,7 +642,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def vpc_name(self):
-        """Gets the vpc_name of this ShowInstanceResponse.
+        r"""Gets the vpc_name of this ShowInstanceResponse.
 
         私有云名称。
 
@@ -653,7 +653,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @vpc_name.setter
     def vpc_name(self, vpc_name):
-        """Sets the vpc_name of this ShowInstanceResponse.
+        r"""Sets the vpc_name of this ShowInstanceResponse.
 
         私有云名称。
 
@@ -664,7 +664,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this ShowInstanceResponse.
+        r"""Gets the created_at of this ShowInstanceResponse.
 
         完成创建时间。  格式为时间戳，指从格林威治时间1970年01月01日00时00分00秒起至指定时间的偏差总毫秒数。
 
@@ -675,7 +675,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ShowInstanceResponse.
+        r"""Sets the created_at of this ShowInstanceResponse.
 
         完成创建时间。  格式为时间戳，指从格林威治时间1970年01月01日00时00分00秒起至指定时间的偏差总毫秒数。
 
@@ -686,7 +686,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def product_id(self):
-        """Gets the product_id of this ShowInstanceResponse.
+        r"""Gets the product_id of this ShowInstanceResponse.
 
         产品标识。
 
@@ -697,7 +697,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ShowInstanceResponse.
+        r"""Sets the product_id of this ShowInstanceResponse.
 
         产品标识。
 
@@ -708,7 +708,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this ShowInstanceResponse.
+        r"""Gets the security_group_id of this ShowInstanceResponse.
 
         安全组ID。
 
@@ -719,7 +719,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this ShowInstanceResponse.
+        r"""Sets the security_group_id of this ShowInstanceResponse.
 
         安全组ID。
 
@@ -730,7 +730,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def security_group_name(self):
-        """Gets the security_group_name of this ShowInstanceResponse.
+        r"""Gets the security_group_name of this ShowInstanceResponse.
 
         租户安全组名称。
 
@@ -741,7 +741,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @security_group_name.setter
     def security_group_name(self, security_group_name):
-        """Sets the security_group_name of this ShowInstanceResponse.
+        r"""Sets the security_group_name of this ShowInstanceResponse.
 
         租户安全组名称。
 
@@ -752,7 +752,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ShowInstanceResponse.
+        r"""Gets the subnet_id of this ShowInstanceResponse.
 
         子网ID。
 
@@ -763,7 +763,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ShowInstanceResponse.
+        r"""Sets the subnet_id of this ShowInstanceResponse.
 
         子网ID。
 
@@ -774,7 +774,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def subnet_name(self):
-        """Gets the subnet_name of this ShowInstanceResponse.
+        r"""Gets the subnet_name of this ShowInstanceResponse.
 
         子网名称。
 
@@ -785,7 +785,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @subnet_name.setter
     def subnet_name(self, subnet_name):
-        """Sets the subnet_name of this ShowInstanceResponse.
+        r"""Sets the subnet_name of this ShowInstanceResponse.
 
         子网名称。
 
@@ -796,7 +796,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def subnet_cidr(self):
-        """Gets the subnet_cidr of this ShowInstanceResponse.
+        r"""Gets the subnet_cidr of this ShowInstanceResponse.
 
         子网路由（仅RocketMQ 5.x版本会显示此字段）。
 
@@ -807,7 +807,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @subnet_cidr.setter
     def subnet_cidr(self, subnet_cidr):
-        """Sets the subnet_cidr of this ShowInstanceResponse.
+        r"""Sets the subnet_cidr of this ShowInstanceResponse.
 
         子网路由（仅RocketMQ 5.x版本会显示此字段）。
 
@@ -818,7 +818,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def available_zones(self):
-        """Gets the available_zones of this ShowInstanceResponse.
+        r"""Gets the available_zones of this ShowInstanceResponse.
 
         可用区ID列表。
 
@@ -829,7 +829,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @available_zones.setter
     def available_zones(self, available_zones):
-        """Sets the available_zones of this ShowInstanceResponse.
+        r"""Sets the available_zones of this ShowInstanceResponse.
 
         可用区ID列表。
 
@@ -840,7 +840,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def available_zone_names(self):
-        """Gets the available_zone_names of this ShowInstanceResponse.
+        r"""Gets the available_zone_names of this ShowInstanceResponse.
 
         可用区名称列表。
 
@@ -851,7 +851,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @available_zone_names.setter
     def available_zone_names(self, available_zone_names):
-        """Sets the available_zone_names of this ShowInstanceResponse.
+        r"""Sets the available_zone_names of this ShowInstanceResponse.
 
         可用区名称列表。
 
@@ -862,7 +862,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def user_id(self):
-        """Gets the user_id of this ShowInstanceResponse.
+        r"""Gets the user_id of this ShowInstanceResponse.
 
         用户ID。
 
@@ -873,7 +873,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ShowInstanceResponse.
+        r"""Sets the user_id of this ShowInstanceResponse.
 
         用户ID。
 
@@ -884,7 +884,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def user_name(self):
-        """Gets the user_name of this ShowInstanceResponse.
+        r"""Gets the user_name of this ShowInstanceResponse.
 
         用户名。
 
@@ -895,7 +895,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ShowInstanceResponse.
+        r"""Sets the user_name of this ShowInstanceResponse.
 
         用户名。
 
@@ -906,7 +906,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def maintain_begin(self):
-        """Gets the maintain_begin of this ShowInstanceResponse.
+        r"""Gets the maintain_begin of this ShowInstanceResponse.
 
         维护时间窗开始时间，格式为HH:mm:ss。
 
@@ -917,7 +917,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @maintain_begin.setter
     def maintain_begin(self, maintain_begin):
-        """Sets the maintain_begin of this ShowInstanceResponse.
+        r"""Sets the maintain_begin of this ShowInstanceResponse.
 
         维护时间窗开始时间，格式为HH:mm:ss。
 
@@ -928,7 +928,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def maintain_end(self):
-        """Gets the maintain_end of this ShowInstanceResponse.
+        r"""Gets the maintain_end of this ShowInstanceResponse.
 
         维护时间窗结束时间，格式为HH:mm:ss。
 
@@ -939,7 +939,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @maintain_end.setter
     def maintain_end(self, maintain_end):
-        """Sets the maintain_end of this ShowInstanceResponse.
+        r"""Sets the maintain_end of this ShowInstanceResponse.
 
         维护时间窗结束时间，格式为HH:mm:ss。
 
@@ -950,7 +950,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def enable_log_collection(self):
-        """Gets the enable_log_collection of this ShowInstanceResponse.
+        r"""Gets the enable_log_collection of this ShowInstanceResponse.
 
         是否开启消息收集功能。
 
@@ -961,7 +961,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @enable_log_collection.setter
     def enable_log_collection(self, enable_log_collection):
-        """Sets the enable_log_collection of this ShowInstanceResponse.
+        r"""Sets the enable_log_collection of this ShowInstanceResponse.
 
         是否开启消息收集功能。
 
@@ -972,7 +972,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def storage_space(self):
-        """Gets the storage_space of this ShowInstanceResponse.
+        r"""Gets the storage_space of this ShowInstanceResponse.
 
         存储空间，单位：GB。
 
@@ -983,7 +983,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @storage_space.setter
     def storage_space(self, storage_space):
-        """Sets the storage_space of this ShowInstanceResponse.
+        r"""Sets the storage_space of this ShowInstanceResponse.
 
         存储空间，单位：GB。
 
@@ -994,7 +994,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def used_storage_space(self):
-        """Gets the used_storage_space of this ShowInstanceResponse.
+        r"""Gets the used_storage_space of this ShowInstanceResponse.
 
         已用消息存储空间，单位：GB。
 
@@ -1005,7 +1005,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @used_storage_space.setter
     def used_storage_space(self, used_storage_space):
-        """Sets the used_storage_space of this ShowInstanceResponse.
+        r"""Sets the used_storage_space of this ShowInstanceResponse.
 
         已用消息存储空间，单位：GB。
 
@@ -1016,7 +1016,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def enable_publicip(self):
-        """Gets the enable_publicip of this ShowInstanceResponse.
+        r"""Gets the enable_publicip of this ShowInstanceResponse.
 
         是否开启公网。
 
@@ -1027,7 +1027,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @enable_publicip.setter
     def enable_publicip(self, enable_publicip):
-        """Sets the enable_publicip of this ShowInstanceResponse.
+        r"""Sets the enable_publicip of this ShowInstanceResponse.
 
         是否开启公网。
 
@@ -1038,7 +1038,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def publicip_id(self):
-        """Gets the publicip_id of this ShowInstanceResponse.
+        r"""Gets the publicip_id of this ShowInstanceResponse.
 
         实例绑定的弹性IP地址的ID。 以英文逗号隔开多个弹性IP地址的ID。 如果开启了公网访问功能（即enable_publicip为true），该字段为必选。
 
@@ -1049,7 +1049,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @publicip_id.setter
     def publicip_id(self, publicip_id):
-        """Sets the publicip_id of this ShowInstanceResponse.
+        r"""Sets the publicip_id of this ShowInstanceResponse.
 
         实例绑定的弹性IP地址的ID。 以英文逗号隔开多个弹性IP地址的ID。 如果开启了公网访问功能（即enable_publicip为true），该字段为必选。
 
@@ -1060,7 +1060,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def publicip_address(self):
-        """Gets the publicip_address of this ShowInstanceResponse.
+        r"""Gets the publicip_address of this ShowInstanceResponse.
 
         公网IP地址。
 
@@ -1071,7 +1071,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @publicip_address.setter
     def publicip_address(self, publicip_address):
-        """Sets the publicip_address of this ShowInstanceResponse.
+        r"""Sets the publicip_address of this ShowInstanceResponse.
 
         公网IP地址。
 
@@ -1082,7 +1082,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def ssl_enable(self):
-        """Gets the ssl_enable of this ShowInstanceResponse.
+        r"""Gets the ssl_enable of this ShowInstanceResponse.
 
         是否开启SSL。
 
@@ -1093,7 +1093,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @ssl_enable.setter
     def ssl_enable(self, ssl_enable):
-        """Sets the ssl_enable of this ShowInstanceResponse.
+        r"""Sets the ssl_enable of this ShowInstanceResponse.
 
         是否开启SSL。
 
@@ -1104,7 +1104,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def cross_vpc_info(self):
-        """Gets the cross_vpc_info of this ShowInstanceResponse.
+        r"""Gets the cross_vpc_info of this ShowInstanceResponse.
 
         跨VPC访问信息。
 
@@ -1115,7 +1115,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @cross_vpc_info.setter
     def cross_vpc_info(self, cross_vpc_info):
-        """Sets the cross_vpc_info of this ShowInstanceResponse.
+        r"""Sets the cross_vpc_info of this ShowInstanceResponse.
 
         跨VPC访问信息。
 
@@ -1126,7 +1126,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def storage_resource_id(self):
-        """Gets the storage_resource_id of this ShowInstanceResponse.
+        r"""Gets the storage_resource_id of this ShowInstanceResponse.
 
         存储资源ID。
 
@@ -1137,7 +1137,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @storage_resource_id.setter
     def storage_resource_id(self, storage_resource_id):
-        """Sets the storage_resource_id of this ShowInstanceResponse.
+        r"""Sets the storage_resource_id of this ShowInstanceResponse.
 
         存储资源ID。
 
@@ -1148,7 +1148,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def storage_spec_code(self):
-        """Gets the storage_spec_code of this ShowInstanceResponse.
+        r"""Gets the storage_spec_code of this ShowInstanceResponse.
 
         存储规格代码。
 
@@ -1159,7 +1159,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @storage_spec_code.setter
     def storage_spec_code(self, storage_spec_code):
-        """Sets the storage_spec_code of this ShowInstanceResponse.
+        r"""Sets the storage_spec_code of this ShowInstanceResponse.
 
         存储规格代码。
 
@@ -1170,7 +1170,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def service_type(self):
-        """Gets the service_type of this ShowInstanceResponse.
+        r"""Gets the service_type of this ShowInstanceResponse.
 
         服务类型。
 
@@ -1181,7 +1181,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this ShowInstanceResponse.
+        r"""Sets the service_type of this ShowInstanceResponse.
 
         服务类型。
 
@@ -1192,7 +1192,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def storage_type(self):
-        """Gets the storage_type of this ShowInstanceResponse.
+        r"""Gets the storage_type of this ShowInstanceResponse.
 
         存储类型。
 
@@ -1203,7 +1203,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @storage_type.setter
     def storage_type(self, storage_type):
-        """Sets the storage_type of this ShowInstanceResponse.
+        r"""Sets the storage_type of this ShowInstanceResponse.
 
         存储类型。
 
@@ -1214,7 +1214,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def extend_times(self):
-        """Gets the extend_times of this ShowInstanceResponse.
+        r"""Gets the extend_times of this ShowInstanceResponse.
 
         扩展时间。
 
@@ -1225,7 +1225,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @extend_times.setter
     def extend_times(self, extend_times):
-        """Sets the extend_times of this ShowInstanceResponse.
+        r"""Sets the extend_times of this ShowInstanceResponse.
 
         扩展时间。
 
@@ -1236,7 +1236,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def ipv6_enable(self):
-        """Gets the ipv6_enable of this ShowInstanceResponse.
+        r"""Gets the ipv6_enable of this ShowInstanceResponse.
 
         是否开启IPv6。
 
@@ -1247,7 +1247,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @ipv6_enable.setter
     def ipv6_enable(self, ipv6_enable):
-        """Sets the ipv6_enable of this ShowInstanceResponse.
+        r"""Sets the ipv6_enable of this ShowInstanceResponse.
 
         是否开启IPv6。
 
@@ -1258,7 +1258,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def support_features(self):
-        """Gets the support_features of this ShowInstanceResponse.
+        r"""Gets the support_features of this ShowInstanceResponse.
 
         实例支持的特性功能。
 
@@ -1269,7 +1269,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @support_features.setter
     def support_features(self, support_features):
-        """Sets the support_features of this ShowInstanceResponse.
+        r"""Sets the support_features of this ShowInstanceResponse.
 
         实例支持的特性功能。
 
@@ -1280,7 +1280,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def disk_encrypted(self):
-        """Gets the disk_encrypted of this ShowInstanceResponse.
+        r"""Gets the disk_encrypted of this ShowInstanceResponse.
 
         是否开启磁盘加密。
 
@@ -1291,7 +1291,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @disk_encrypted.setter
     def disk_encrypted(self, disk_encrypted):
-        """Sets the disk_encrypted of this ShowInstanceResponse.
+        r"""Sets the disk_encrypted of this ShowInstanceResponse.
 
         是否开启磁盘加密。
 
@@ -1302,7 +1302,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def ces_version(self):
-        """Gets the ces_version of this ShowInstanceResponse.
+        r"""Gets the ces_version of this ShowInstanceResponse.
 
         云监控版本。
 
@@ -1313,7 +1313,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @ces_version.setter
     def ces_version(self, ces_version):
-        """Sets the ces_version of this ShowInstanceResponse.
+        r"""Sets the ces_version of this ShowInstanceResponse.
 
         云监控版本。
 
@@ -1324,7 +1324,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def node_num(self):
-        """Gets the node_num of this ShowInstanceResponse.
+        r"""Gets the node_num of this ShowInstanceResponse.
 
         节点数。
 
@@ -1335,7 +1335,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @node_num.setter
     def node_num(self, node_num):
-        """Sets the node_num of this ShowInstanceResponse.
+        r"""Sets the node_num of this ShowInstanceResponse.
 
         节点数。
 
@@ -1346,7 +1346,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def new_spec_billing_enable(self):
-        """Gets the new_spec_billing_enable of this ShowInstanceResponse.
+        r"""Gets the new_spec_billing_enable of this ShowInstanceResponse.
 
         是否启用新规格计费。
 
@@ -1357,7 +1357,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @new_spec_billing_enable.setter
     def new_spec_billing_enable(self, new_spec_billing_enable):
-        """Sets the new_spec_billing_enable of this ShowInstanceResponse.
+        r"""Sets the new_spec_billing_enable of this ShowInstanceResponse.
 
         是否启用新规格计费。
 
@@ -1368,7 +1368,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def enable_acl(self):
-        """Gets the enable_acl of this ShowInstanceResponse.
+        r"""Gets the enable_acl of this ShowInstanceResponse.
 
         是否开启访问控制列表。
 
@@ -1379,7 +1379,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @enable_acl.setter
     def enable_acl(self, enable_acl):
-        """Sets the enable_acl of this ShowInstanceResponse.
+        r"""Sets the enable_acl of this ShowInstanceResponse.
 
         是否开启访问控制列表。
 
@@ -1390,7 +1390,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def broker_num(self):
-        """Gets the broker_num of this ShowInstanceResponse.
+        r"""Gets the broker_num of this ShowInstanceResponse.
 
         节点数（仅RocketMQ 4.8.0版本会显示此字段）。
 
@@ -1401,7 +1401,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @broker_num.setter
     def broker_num(self, broker_num):
-        """Sets the broker_num of this ShowInstanceResponse.
+        r"""Sets the broker_num of this ShowInstanceResponse.
 
         节点数（仅RocketMQ 4.8.0版本会显示此字段）。
 
@@ -1412,7 +1412,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def namesrv_address(self):
-        """Gets the namesrv_address of this ShowInstanceResponse.
+        r"""Gets the namesrv_address of this ShowInstanceResponse.
 
         元数据地址。
 
@@ -1423,7 +1423,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @namesrv_address.setter
     def namesrv_address(self, namesrv_address):
-        """Sets the namesrv_address of this ShowInstanceResponse.
+        r"""Sets the namesrv_address of this ShowInstanceResponse.
 
         元数据地址。
 
@@ -1434,7 +1434,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def broker_address(self):
-        """Gets the broker_address of this ShowInstanceResponse.
+        r"""Gets the broker_address of this ShowInstanceResponse.
 
         业务数据地址。
 
@@ -1445,7 +1445,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @broker_address.setter
     def broker_address(self, broker_address):
-        """Sets the broker_address of this ShowInstanceResponse.
+        r"""Sets the broker_address of this ShowInstanceResponse.
 
         业务数据地址。
 
@@ -1456,7 +1456,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def public_namesrv_address(self):
-        """Gets the public_namesrv_address of this ShowInstanceResponse.
+        r"""Gets the public_namesrv_address of this ShowInstanceResponse.
 
         公网元数据地址。
 
@@ -1467,7 +1467,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @public_namesrv_address.setter
     def public_namesrv_address(self, public_namesrv_address):
-        """Sets the public_namesrv_address of this ShowInstanceResponse.
+        r"""Sets the public_namesrv_address of this ShowInstanceResponse.
 
         公网元数据地址。
 
@@ -1478,7 +1478,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def public_broker_address(self):
-        """Gets the public_broker_address of this ShowInstanceResponse.
+        r"""Gets the public_broker_address of this ShowInstanceResponse.
 
         公网业务数据地址。
 
@@ -1489,7 +1489,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @public_broker_address.setter
     def public_broker_address(self, public_broker_address):
-        """Sets the public_broker_address of this ShowInstanceResponse.
+        r"""Sets the public_broker_address of this ShowInstanceResponse.
 
         公网业务数据地址。
 
@@ -1500,7 +1500,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def grpc_address(self):
-        """Gets the grpc_address of this ShowInstanceResponse.
+        r"""Gets the grpc_address of this ShowInstanceResponse.
 
         grpc连接地址（仅RocketMQ 5.x版本会显示此字段）。
 
@@ -1511,7 +1511,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @grpc_address.setter
     def grpc_address(self, grpc_address):
-        """Sets the grpc_address of this ShowInstanceResponse.
+        r"""Sets the grpc_address of this ShowInstanceResponse.
 
         grpc连接地址（仅RocketMQ 5.x版本会显示此字段）。
 
@@ -1522,7 +1522,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def public_grpc_address(self):
-        """Gets the public_grpc_address of this ShowInstanceResponse.
+        r"""Gets the public_grpc_address of this ShowInstanceResponse.
 
         公网grpc连接地址（仅RocketMQ 5.x版本会显示此字段）。
 
@@ -1533,7 +1533,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @public_grpc_address.setter
     def public_grpc_address(self, public_grpc_address):
-        """Sets the public_grpc_address of this ShowInstanceResponse.
+        r"""Sets the public_grpc_address of this ShowInstanceResponse.
 
         公网grpc连接地址（仅RocketMQ 5.x版本会显示此字段）。
 
@@ -1544,7 +1544,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowInstanceResponse.
+        r"""Gets the enterprise_project_id of this ShowInstanceResponse.
 
         企业项目ID。
 
@@ -1555,7 +1555,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowInstanceResponse.
+        r"""Sets the enterprise_project_id of this ShowInstanceResponse.
 
         企业项目ID。
 
@@ -1566,7 +1566,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowInstanceResponse.
+        r"""Gets the tags of this ShowInstanceResponse.
 
         标签列表。
 
@@ -1577,7 +1577,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowInstanceResponse.
+        r"""Sets the tags of this ShowInstanceResponse.
 
         标签列表。
 
@@ -1588,7 +1588,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def total_storage_space(self):
-        """Gets the total_storage_space of this ShowInstanceResponse.
+        r"""Gets the total_storage_space of this ShowInstanceResponse.
 
         总存储空间。
 
@@ -1599,7 +1599,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @total_storage_space.setter
     def total_storage_space(self, total_storage_space):
-        """Sets the total_storage_space of this ShowInstanceResponse.
+        r"""Sets the total_storage_space of this ShowInstanceResponse.
 
         总存储空间。
 
@@ -1610,7 +1610,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @property
     def resource_spec_code(self):
-        """Gets the resource_spec_code of this ShowInstanceResponse.
+        r"""Gets the resource_spec_code of this ShowInstanceResponse.
 
         资源规格。
 
@@ -1621,7 +1621,7 @@ class ShowInstanceResponse(SdkResponse):
 
     @resource_spec_code.setter
     def resource_spec_code(self, resource_spec_code):
-        """Sets the resource_spec_code of this ShowInstanceResponse.
+        r"""Sets the resource_spec_code of this ShowInstanceResponse.
 
         资源规格。
 

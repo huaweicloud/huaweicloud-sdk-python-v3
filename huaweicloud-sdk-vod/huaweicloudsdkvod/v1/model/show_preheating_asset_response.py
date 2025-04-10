@@ -26,7 +26,7 @@ class ShowPreheatingAssetResponse(SdkResponse):
     }
 
     def __init__(self, preheating_results=None):
-        """ShowPreheatingAssetResponse
+        r"""ShowPreheatingAssetResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowPreheatingAssetResponse(SdkResponse):
 
     @property
     def preheating_results(self):
-        """Gets the preheating_results of this ShowPreheatingAssetResponse.
+        r"""Gets the preheating_results of this ShowPreheatingAssetResponse.
 
         预热任务数组 
 
@@ -55,7 +55,7 @@ class ShowPreheatingAssetResponse(SdkResponse):
 
     @preheating_results.setter
     def preheating_results(self, preheating_results):
-        """Sets the preheating_results of this ShowPreheatingAssetResponse.
+        r"""Sets the preheating_results of this ShowPreheatingAssetResponse.
 
         预热任务数组 
 

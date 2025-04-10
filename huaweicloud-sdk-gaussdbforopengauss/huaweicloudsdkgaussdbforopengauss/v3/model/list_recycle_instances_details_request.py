@@ -31,7 +31,7 @@ class ListRecycleInstancesDetailsRequest:
     }
 
     def __init__(self, x_language=None, instance_name=None, offset=None, limit=None):
-        """ListRecycleInstancesDetailsRequest
+        r"""ListRecycleInstancesDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListRecycleInstancesDetailsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListRecycleInstancesDetailsRequest.
+        r"""Gets the x_language of this ListRecycleInstancesDetailsRequest.
 
         语言。默认值：en-us。
 
@@ -75,7 +75,7 @@ class ListRecycleInstancesDetailsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListRecycleInstancesDetailsRequest.
+        r"""Sets the x_language of this ListRecycleInstancesDetailsRequest.
 
         语言。默认值：en-us。
 
@@ -86,7 +86,7 @@ class ListRecycleInstancesDetailsRequest:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this ListRecycleInstancesDetailsRequest.
+        r"""Gets the instance_name of this ListRecycleInstancesDetailsRequest.
 
         实例名称。
 
@@ -97,7 +97,7 @@ class ListRecycleInstancesDetailsRequest:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this ListRecycleInstancesDetailsRequest.
+        r"""Sets the instance_name of this ListRecycleInstancesDetailsRequest.
 
         实例名称。
 
@@ -108,7 +108,7 @@ class ListRecycleInstancesDetailsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListRecycleInstancesDetailsRequest.
+        r"""Gets the offset of this ListRecycleInstancesDetailsRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -119,7 +119,7 @@ class ListRecycleInstancesDetailsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListRecycleInstancesDetailsRequest.
+        r"""Sets the offset of this ListRecycleInstancesDetailsRequest.
 
         索引位置，偏移量。从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询），必须为数字，不能为负数。
 
@@ -130,7 +130,7 @@ class ListRecycleInstancesDetailsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRecycleInstancesDetailsRequest.
+        r"""Gets the limit of this ListRecycleInstancesDetailsRequest.
 
         查询记录数。默认为50，不能为负数，最小值为1，最大值为50。
 
@@ -141,7 +141,7 @@ class ListRecycleInstancesDetailsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRecycleInstancesDetailsRequest.
+        r"""Sets the limit of this ListRecycleInstancesDetailsRequest.
 
         查询记录数。默认为50，不能为负数，最小值为1，最大值为50。
 

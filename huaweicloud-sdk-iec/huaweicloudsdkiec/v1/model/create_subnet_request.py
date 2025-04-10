@@ -25,7 +25,7 @@ class CreateSubnetRequest:
     }
 
     def __init__(self, body=None):
-        """CreateSubnetRequest
+        r"""CreateSubnetRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateSubnetRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSubnetRequest.
+        r"""Gets the body of this CreateSubnetRequest.
 
         :return: The body of this CreateSubnetRequest.
         :rtype: :class:`huaweicloudsdkiec.v1.CreateSubnetRequestBody`
@@ -52,7 +52,7 @@ class CreateSubnetRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSubnetRequest.
+        r"""Sets the body of this CreateSubnetRequest.
 
         :param body: The body of this CreateSubnetRequest.
         :type body: :class:`huaweicloudsdkiec.v1.CreateSubnetRequestBody`

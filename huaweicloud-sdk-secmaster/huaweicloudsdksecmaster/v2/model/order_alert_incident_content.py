@@ -27,7 +27,7 @@ class OrderAlertIncidentContent:
     }
 
     def __init__(self, title=None, incident_type=None):
-        """OrderAlertIncidentContent
+        r"""OrderAlertIncidentContent
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class OrderAlertIncidentContent:
 
     @property
     def title(self):
-        """Gets the title of this OrderAlertIncidentContent.
+        r"""Gets the title of this OrderAlertIncidentContent.
 
         事件名称
 
@@ -61,7 +61,7 @@ class OrderAlertIncidentContent:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this OrderAlertIncidentContent.
+        r"""Sets the title of this OrderAlertIncidentContent.
 
         事件名称
 
@@ -72,7 +72,7 @@ class OrderAlertIncidentContent:
 
     @property
     def incident_type(self):
-        """Gets the incident_type of this OrderAlertIncidentContent.
+        r"""Gets the incident_type of this OrderAlertIncidentContent.
 
         :return: The incident_type of this OrderAlertIncidentContent.
         :rtype: :class:`huaweicloudsdksecmaster.v2.OrderAlertIncidentContentIncidentType`
@@ -81,7 +81,7 @@ class OrderAlertIncidentContent:
 
     @incident_type.setter
     def incident_type(self, incident_type):
-        """Sets the incident_type of this OrderAlertIncidentContent.
+        r"""Sets the incident_type of this OrderAlertIncidentContent.
 
         :param incident_type: The incident_type of this OrderAlertIncidentContent.
         :type incident_type: :class:`huaweicloudsdksecmaster.v2.OrderAlertIncidentContentIncidentType`

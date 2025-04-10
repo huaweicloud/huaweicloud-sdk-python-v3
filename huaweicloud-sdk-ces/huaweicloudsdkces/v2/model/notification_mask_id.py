@@ -23,7 +23,7 @@ class NotificationMaskID:
     }
 
     def __init__(self):
-        """NotificationMaskID
+        r"""NotificationMaskID
 
         The model defined in huaweicloud sdk
 

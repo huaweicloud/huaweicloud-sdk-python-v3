@@ -23,7 +23,7 @@ class ShowAgreementRequest:
     }
 
     def __init__(self):
-        """ShowAgreementRequest
+        r"""ShowAgreementRequest
 
         The model defined in huaweicloud sdk
 

@@ -33,7 +33,7 @@ class ShowConsumerListOrDetailsRequest:
     }
 
     def __init__(self, instance_id=None, group=None, topic=None, limit=None, offset=None):
-        """ShowConsumerListOrDetailsRequest
+        r"""ShowConsumerListOrDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ShowConsumerListOrDetailsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowConsumerListOrDetailsRequest.
+        r"""Gets the instance_id of this ShowConsumerListOrDetailsRequest.
 
         实例ID。
 
@@ -80,7 +80,7 @@ class ShowConsumerListOrDetailsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowConsumerListOrDetailsRequest.
+        r"""Sets the instance_id of this ShowConsumerListOrDetailsRequest.
 
         实例ID。
 
@@ -91,7 +91,7 @@ class ShowConsumerListOrDetailsRequest:
 
     @property
     def group(self):
-        """Gets the group of this ShowConsumerListOrDetailsRequest.
+        r"""Gets the group of this ShowConsumerListOrDetailsRequest.
 
         消费组名称。
 
@@ -102,7 +102,7 @@ class ShowConsumerListOrDetailsRequest:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this ShowConsumerListOrDetailsRequest.
+        r"""Sets the group of this ShowConsumerListOrDetailsRequest.
 
         消费组名称。
 
@@ -113,7 +113,7 @@ class ShowConsumerListOrDetailsRequest:
 
     @property
     def topic(self):
-        """Gets the topic of this ShowConsumerListOrDetailsRequest.
+        r"""Gets the topic of this ShowConsumerListOrDetailsRequest.
 
         待查询的Topic，不指定时查询Topic列表，指定时查询详情。
 
@@ -124,7 +124,7 @@ class ShowConsumerListOrDetailsRequest:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this ShowConsumerListOrDetailsRequest.
+        r"""Sets the topic of this ShowConsumerListOrDetailsRequest.
 
         待查询的Topic，不指定时查询Topic列表，指定时查询详情。
 
@@ -135,7 +135,7 @@ class ShowConsumerListOrDetailsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowConsumerListOrDetailsRequest.
+        r"""Gets the limit of this ShowConsumerListOrDetailsRequest.
 
         当次查询返回的最大个数，默认值为10，取值范围为1~50。
 
@@ -146,7 +146,7 @@ class ShowConsumerListOrDetailsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowConsumerListOrDetailsRequest.
+        r"""Sets the limit of this ShowConsumerListOrDetailsRequest.
 
         当次查询返回的最大个数，默认值为10，取值范围为1~50。
 
@@ -157,7 +157,7 @@ class ShowConsumerListOrDetailsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowConsumerListOrDetailsRequest.
+        r"""Gets the offset of this ShowConsumerListOrDetailsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0。
 
@@ -168,7 +168,7 @@ class ShowConsumerListOrDetailsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowConsumerListOrDetailsRequest.
+        r"""Sets the offset of this ShowConsumerListOrDetailsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0。
 

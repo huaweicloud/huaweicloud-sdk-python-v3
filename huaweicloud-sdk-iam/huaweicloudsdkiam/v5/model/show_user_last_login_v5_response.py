@@ -26,7 +26,7 @@ class ShowUserLastLoginV5Response(SdkResponse):
     }
 
     def __init__(self, user_last_login=None):
-        """ShowUserLastLoginV5Response
+        r"""ShowUserLastLoginV5Response
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowUserLastLoginV5Response(SdkResponse):
 
     @property
     def user_last_login(self):
-        """Gets the user_last_login of this ShowUserLastLoginV5Response.
+        r"""Gets the user_last_login of this ShowUserLastLoginV5Response.
 
         :return: The user_last_login of this ShowUserLastLoginV5Response.
         :rtype: :class:`huaweicloudsdkiam.v5.UserLastLogin`
@@ -53,7 +53,7 @@ class ShowUserLastLoginV5Response(SdkResponse):
 
     @user_last_login.setter
     def user_last_login(self, user_last_login):
-        """Sets the user_last_login of this ShowUserLastLoginV5Response.
+        r"""Sets the user_last_login of this ShowUserLastLoginV5Response.
 
         :param user_last_login: The user_last_login of this ShowUserLastLoginV5Response.
         :type user_last_login: :class:`huaweicloudsdkiam.v5.UserLastLogin`

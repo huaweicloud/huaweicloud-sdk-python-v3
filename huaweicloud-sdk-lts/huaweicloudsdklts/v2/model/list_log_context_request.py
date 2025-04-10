@@ -29,7 +29,7 @@ class ListLogContextRequest:
     }
 
     def __init__(self, log_group_id=None, log_stream_id=None, body=None):
-        """ListLogContextRequest
+        r"""ListLogContextRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ListLogContextRequest:
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this ListLogContextRequest.
+        r"""Gets the log_group_id of this ListLogContextRequest.
 
         日志组ID，获取方式请参见：[获取项目ID，获取账号ID，日志组ID、日志流ID](lts_api_0006.xml)
 
@@ -66,7 +66,7 @@ class ListLogContextRequest:
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this ListLogContextRequest.
+        r"""Sets the log_group_id of this ListLogContextRequest.
 
         日志组ID，获取方式请参见：[获取项目ID，获取账号ID，日志组ID、日志流ID](lts_api_0006.xml)
 
@@ -77,7 +77,7 @@ class ListLogContextRequest:
 
     @property
     def log_stream_id(self):
-        """Gets the log_stream_id of this ListLogContextRequest.
+        r"""Gets the log_stream_id of this ListLogContextRequest.
 
         日志流ID，获取方式请参见：[获取项目ID，获取账号ID，日志组ID、日志流ID](lts_api_0006.xml)
 
@@ -88,7 +88,7 @@ class ListLogContextRequest:
 
     @log_stream_id.setter
     def log_stream_id(self, log_stream_id):
-        """Sets the log_stream_id of this ListLogContextRequest.
+        r"""Sets the log_stream_id of this ListLogContextRequest.
 
         日志流ID，获取方式请参见：[获取项目ID，获取账号ID，日志组ID、日志流ID](lts_api_0006.xml)
 
@@ -99,7 +99,7 @@ class ListLogContextRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListLogContextRequest.
+        r"""Gets the body of this ListLogContextRequest.
 
         :return: The body of this ListLogContextRequest.
         :rtype: :class:`huaweicloudsdklts.v2.ListLogContextRequestBody`
@@ -108,7 +108,7 @@ class ListLogContextRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListLogContextRequest.
+        r"""Sets the body of this ListLogContextRequest.
 
         :param body: The body of this ListLogContextRequest.
         :type body: :class:`huaweicloudsdklts.v2.ListLogContextRequestBody`

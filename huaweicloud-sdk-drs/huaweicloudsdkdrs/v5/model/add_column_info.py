@@ -31,7 +31,7 @@ class AddColumnInfo:
     }
 
     def __init__(self, column_type=None, column_name=None, column_value=None, data_type=None):
-        """AddColumnInfo
+        r"""AddColumnInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class AddColumnInfo:
 
     @property
     def column_type(self):
-        """Gets the column_type of this AddColumnInfo.
+        r"""Gets the column_type of this AddColumnInfo.
 
         列类型
 
@@ -75,7 +75,7 @@ class AddColumnInfo:
 
     @column_type.setter
     def column_type(self, column_type):
-        """Sets the column_type of this AddColumnInfo.
+        r"""Sets the column_type of this AddColumnInfo.
 
         列类型
 
@@ -86,7 +86,7 @@ class AddColumnInfo:
 
     @property
     def column_name(self):
-        """Gets the column_name of this AddColumnInfo.
+        r"""Gets the column_name of this AddColumnInfo.
 
         列名称
 
@@ -97,7 +97,7 @@ class AddColumnInfo:
 
     @column_name.setter
     def column_name(self, column_name):
-        """Sets the column_name of this AddColumnInfo.
+        r"""Sets the column_name of this AddColumnInfo.
 
         列名称
 
@@ -108,7 +108,7 @@ class AddColumnInfo:
 
     @property
     def column_value(self):
-        """Gets the column_value of this AddColumnInfo.
+        r"""Gets the column_value of this AddColumnInfo.
 
         列填充值
 
@@ -119,7 +119,7 @@ class AddColumnInfo:
 
     @column_value.setter
     def column_value(self, column_value):
-        """Sets the column_value of this AddColumnInfo.
+        r"""Sets the column_value of this AddColumnInfo.
 
         列填充值
 
@@ -130,7 +130,7 @@ class AddColumnInfo:
 
     @property
     def data_type(self):
-        """Gets the data_type of this AddColumnInfo.
+        r"""Gets the data_type of this AddColumnInfo.
 
         填充列的数据类型
 
@@ -141,7 +141,7 @@ class AddColumnInfo:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this AddColumnInfo.
+        r"""Sets the data_type of this AddColumnInfo.
 
         填充列的数据类型
 

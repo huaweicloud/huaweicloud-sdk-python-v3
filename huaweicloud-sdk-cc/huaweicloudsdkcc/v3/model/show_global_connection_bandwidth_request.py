@@ -25,7 +25,7 @@ class ShowGlobalConnectionBandwidthRequest:
     }
 
     def __init__(self, id=None):
-        """ShowGlobalConnectionBandwidthRequest
+        r"""ShowGlobalConnectionBandwidthRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowGlobalConnectionBandwidthRequest:
 
     @property
     def id(self):
-        """Gets the id of this ShowGlobalConnectionBandwidthRequest.
+        r"""Gets the id of this ShowGlobalConnectionBandwidthRequest.
 
         实例ID。
 
@@ -53,7 +53,7 @@ class ShowGlobalConnectionBandwidthRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowGlobalConnectionBandwidthRequest.
+        r"""Sets the id of this ShowGlobalConnectionBandwidthRequest.
 
         实例ID。
 

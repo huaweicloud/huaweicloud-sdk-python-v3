@@ -25,7 +25,7 @@ class RedisCreateDbUserRequest:
     }
 
     def __init__(self, users=None):
-        """RedisCreateDbUserRequest
+        r"""RedisCreateDbUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RedisCreateDbUserRequest:
 
     @property
     def users(self):
-        """Gets the users of this RedisCreateDbUserRequest.
+        r"""Gets the users of this RedisCreateDbUserRequest.
 
         需要创建的账号列表
 
@@ -54,7 +54,7 @@ class RedisCreateDbUserRequest:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this RedisCreateDbUserRequest.
+        r"""Sets the users of this RedisCreateDbUserRequest.
 
         需要创建的账号列表
 

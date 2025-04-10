@@ -27,7 +27,7 @@ class DeletePluginRequest:
     }
 
     def __init__(self, instance_id=None, plugin_id=None):
-        """DeletePluginRequest
+        r"""DeletePluginRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeletePluginRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeletePluginRequest.
+        r"""Gets the instance_id of this DeletePluginRequest.
 
         实例ID
 
@@ -59,7 +59,7 @@ class DeletePluginRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeletePluginRequest.
+        r"""Sets the instance_id of this DeletePluginRequest.
 
         实例ID
 
@@ -70,7 +70,7 @@ class DeletePluginRequest:
 
     @property
     def plugin_id(self):
-        """Gets the plugin_id of this DeletePluginRequest.
+        r"""Gets the plugin_id of this DeletePluginRequest.
 
         插件编号
 
@@ -81,7 +81,7 @@ class DeletePluginRequest:
 
     @plugin_id.setter
     def plugin_id(self, plugin_id):
-        """Sets the plugin_id of this DeletePluginRequest.
+        r"""Sets the plugin_id of this DeletePluginRequest.
 
         插件编号
 

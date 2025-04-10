@@ -27,7 +27,7 @@ class ColumnInfo:
     }
 
     def __init__(self, column_name=None, filter=None):
-        """ColumnInfo
+        r"""ColumnInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ColumnInfo:
 
     @property
     def column_name(self):
-        """Gets the column_name of this ColumnInfo.
+        r"""Gets the column_name of this ColumnInfo.
 
         列名
 
@@ -59,7 +59,7 @@ class ColumnInfo:
 
     @column_name.setter
     def column_name(self, column_name):
-        """Sets the column_name of this ColumnInfo.
+        r"""Sets the column_name of this ColumnInfo.
 
         列名
 
@@ -70,7 +70,7 @@ class ColumnInfo:
 
     @property
     def filter(self):
-        """Gets the filter of this ColumnInfo.
+        r"""Gets the filter of this ColumnInfo.
 
         是否排除：Include包含,Exclude排除
 
@@ -81,7 +81,7 @@ class ColumnInfo:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this ColumnInfo.
+        r"""Sets the filter of this ColumnInfo.
 
         是否排除：Include包含,Exclude排除
 

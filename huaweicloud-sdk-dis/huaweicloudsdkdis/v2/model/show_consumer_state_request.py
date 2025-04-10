@@ -33,7 +33,7 @@ class ShowConsumerStateRequest:
     }
 
     def __init__(self, app_name=None, stream_name=None, limit=None, start_partition_id=None, checkpoint_type=None):
-        """ShowConsumerStateRequest
+        r"""ShowConsumerStateRequest
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class ShowConsumerStateRequest:
 
     @property
     def app_name(self):
-        """Gets the app_name of this ShowConsumerStateRequest.
+        r"""Gets the app_name of this ShowConsumerStateRequest.
 
         需要查询的App名称。
 
@@ -79,7 +79,7 @@ class ShowConsumerStateRequest:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this ShowConsumerStateRequest.
+        r"""Sets the app_name of this ShowConsumerStateRequest.
 
         需要查询的App名称。
 
@@ -90,7 +90,7 @@ class ShowConsumerStateRequest:
 
     @property
     def stream_name(self):
-        """Gets the stream_name of this ShowConsumerStateRequest.
+        r"""Gets the stream_name of this ShowConsumerStateRequest.
 
         需要查询的通道名称。
 
@@ -101,7 +101,7 @@ class ShowConsumerStateRequest:
 
     @stream_name.setter
     def stream_name(self, stream_name):
-        """Sets the stream_name of this ShowConsumerStateRequest.
+        r"""Sets the stream_name of this ShowConsumerStateRequest.
 
         需要查询的通道名称。
 
@@ -112,7 +112,7 @@ class ShowConsumerStateRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowConsumerStateRequest.
+        r"""Gets the limit of this ShowConsumerStateRequest.
 
         单次请求返回的最大分区数。最小值是1，最大值是1000；默认值是100。
 
@@ -123,7 +123,7 @@ class ShowConsumerStateRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowConsumerStateRequest.
+        r"""Sets the limit of this ShowConsumerStateRequest.
 
         单次请求返回的最大分区数。最小值是1，最大值是1000；默认值是100。
 
@@ -134,7 +134,7 @@ class ShowConsumerStateRequest:
 
     @property
     def start_partition_id(self):
-        """Gets the start_partition_id of this ShowConsumerStateRequest.
+        r"""Gets the start_partition_id of this ShowConsumerStateRequest.
 
         从该分区值开始返回分区列表，返回的分区列表不包括此分区。
 
@@ -145,7 +145,7 @@ class ShowConsumerStateRequest:
 
     @start_partition_id.setter
     def start_partition_id(self, start_partition_id):
-        """Sets the start_partition_id of this ShowConsumerStateRequest.
+        r"""Sets the start_partition_id of this ShowConsumerStateRequest.
 
         从该分区值开始返回分区列表，返回的分区列表不包括此分区。
 
@@ -156,7 +156,7 @@ class ShowConsumerStateRequest:
 
     @property
     def checkpoint_type(self):
-        """Gets the checkpoint_type of this ShowConsumerStateRequest.
+        r"""Gets the checkpoint_type of this ShowConsumerStateRequest.
 
         Checkpoint类型。  - LAST_READ：在数据库中只记录序列号。
 
@@ -167,7 +167,7 @@ class ShowConsumerStateRequest:
 
     @checkpoint_type.setter
     def checkpoint_type(self, checkpoint_type):
-        """Sets the checkpoint_type of this ShowConsumerStateRequest.
+        r"""Sets the checkpoint_type of this ShowConsumerStateRequest.
 
         Checkpoint类型。  - LAST_READ：在数据库中只记录序列号。
 

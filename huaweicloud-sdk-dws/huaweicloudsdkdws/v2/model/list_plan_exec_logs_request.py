@@ -31,7 +31,7 @@ class ListPlanExecLogsRequest:
     }
 
     def __init__(self, cluster_id=None, plan_id=None, limit=None, offset=None):
-        """ListPlanExecLogsRequest
+        r"""ListPlanExecLogsRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListPlanExecLogsRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListPlanExecLogsRequest.
+        r"""Gets the cluster_id of this ListPlanExecLogsRequest.
 
         集群ID
 
@@ -73,7 +73,7 @@ class ListPlanExecLogsRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListPlanExecLogsRequest.
+        r"""Sets the cluster_id of this ListPlanExecLogsRequest.
 
         集群ID
 
@@ -84,7 +84,7 @@ class ListPlanExecLogsRequest:
 
     @property
     def plan_id(self):
-        """Gets the plan_id of this ListPlanExecLogsRequest.
+        r"""Gets the plan_id of this ListPlanExecLogsRequest.
 
         计划ID
 
@@ -95,7 +95,7 @@ class ListPlanExecLogsRequest:
 
     @plan_id.setter
     def plan_id(self, plan_id):
-        """Sets the plan_id of this ListPlanExecLogsRequest.
+        r"""Sets the plan_id of this ListPlanExecLogsRequest.
 
         计划ID
 
@@ -106,7 +106,7 @@ class ListPlanExecLogsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPlanExecLogsRequest.
+        r"""Gets the limit of this ListPlanExecLogsRequest.
 
         查询条数
 
@@ -117,7 +117,7 @@ class ListPlanExecLogsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPlanExecLogsRequest.
+        r"""Sets the limit of this ListPlanExecLogsRequest.
 
         查询条数
 
@@ -128,7 +128,7 @@ class ListPlanExecLogsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPlanExecLogsRequest.
+        r"""Gets the offset of this ListPlanExecLogsRequest.
 
         偏移量
 
@@ -139,7 +139,7 @@ class ListPlanExecLogsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPlanExecLogsRequest.
+        r"""Sets the offset of this ListPlanExecLogsRequest.
 
         偏移量
 

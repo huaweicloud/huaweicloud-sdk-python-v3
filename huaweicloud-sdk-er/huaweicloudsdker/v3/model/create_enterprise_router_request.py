@@ -28,7 +28,7 @@ class CreateEnterpriseRouterRequest:
     }
 
     def __init__(self, x_client_token=None, body=None):
-        """CreateEnterpriseRouterRequest
+        r"""CreateEnterpriseRouterRequest
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateEnterpriseRouterRequest:
 
     @property
     def x_client_token(self):
-        """Gets the x_client_token of this CreateEnterpriseRouterRequest.
+        r"""Gets the x_client_token of this CreateEnterpriseRouterRequest.
 
         幂等性标识
 
@@ -62,7 +62,7 @@ class CreateEnterpriseRouterRequest:
 
     @x_client_token.setter
     def x_client_token(self, x_client_token):
-        """Sets the x_client_token of this CreateEnterpriseRouterRequest.
+        r"""Sets the x_client_token of this CreateEnterpriseRouterRequest.
 
         幂等性标识
 
@@ -73,7 +73,7 @@ class CreateEnterpriseRouterRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateEnterpriseRouterRequest.
+        r"""Gets the body of this CreateEnterpriseRouterRequest.
 
         :return: The body of this CreateEnterpriseRouterRequest.
         :rtype: :class:`huaweicloudsdker.v3.CreateEnterpriseRouterRequestBody`
@@ -82,7 +82,7 @@ class CreateEnterpriseRouterRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateEnterpriseRouterRequest.
+        r"""Sets the body of this CreateEnterpriseRouterRequest.
 
         :param body: The body of this CreateEnterpriseRouterRequest.
         :type body: :class:`huaweicloudsdker.v3.CreateEnterpriseRouterRequestBody`

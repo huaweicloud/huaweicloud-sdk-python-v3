@@ -27,7 +27,7 @@ class UpdateDatabasesRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """UpdateDatabasesRequest
+        r"""UpdateDatabasesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateDatabasesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateDatabasesRequest.
+        r"""Gets the instance_id of this UpdateDatabasesRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class UpdateDatabasesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateDatabasesRequest.
+        r"""Sets the instance_id of this UpdateDatabasesRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class UpdateDatabasesRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDatabasesRequest.
+        r"""Gets the body of this UpdateDatabasesRequest.
 
         :return: The body of this UpdateDatabasesRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.UpdateDatabasesRequestBody`
@@ -80,7 +80,7 @@ class UpdateDatabasesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDatabasesRequest.
+        r"""Sets the body of this UpdateDatabasesRequest.
 
         :param body: The body of this UpdateDatabasesRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.UpdateDatabasesRequestBody`

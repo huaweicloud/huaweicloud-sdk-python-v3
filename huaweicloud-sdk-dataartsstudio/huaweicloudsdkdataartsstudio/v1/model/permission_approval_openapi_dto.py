@@ -67,7 +67,7 @@ class PermissionApprovalOpenapiDTO:
     }
 
     def __init__(self, approval_dispatch_error_msg=None, approval_dispatch_status=None, approval_type=None, approve_reason=None, current_node_id=None, current_node_name=None, current_node_type=None, detail=None, end_time=None, expire_time=None, id=None, instance_id=None, permission_set_id=None, project_id=None, proposer_id=None, proposer_name=None, proposer_workspace_id=None, reason=None, start_time=None, status=None, workspace_id=None, workspace_name=None):
-        """PermissionApprovalOpenapiDTO
+        r"""PermissionApprovalOpenapiDTO
 
         The model defined in huaweicloud sdk
 
@@ -190,7 +190,7 @@ class PermissionApprovalOpenapiDTO:
 
     @property
     def approval_dispatch_error_msg(self):
-        """Gets the approval_dispatch_error_msg of this PermissionApprovalOpenapiDTO.
+        r"""Gets the approval_dispatch_error_msg of this PermissionApprovalOpenapiDTO.
 
         审批外发失败消息
 
@@ -201,7 +201,7 @@ class PermissionApprovalOpenapiDTO:
 
     @approval_dispatch_error_msg.setter
     def approval_dispatch_error_msg(self, approval_dispatch_error_msg):
-        """Sets the approval_dispatch_error_msg of this PermissionApprovalOpenapiDTO.
+        r"""Sets the approval_dispatch_error_msg of this PermissionApprovalOpenapiDTO.
 
         审批外发失败消息
 
@@ -212,7 +212,7 @@ class PermissionApprovalOpenapiDTO:
 
     @property
     def approval_dispatch_status(self):
-        """Gets the approval_dispatch_status of this PermissionApprovalOpenapiDTO.
+        r"""Gets the approval_dispatch_status of this PermissionApprovalOpenapiDTO.
 
         审批外发状态，0表示成功，1表示失败，null表示非SMN节点
 
@@ -223,7 +223,7 @@ class PermissionApprovalOpenapiDTO:
 
     @approval_dispatch_status.setter
     def approval_dispatch_status(self, approval_dispatch_status):
-        """Sets the approval_dispatch_status of this PermissionApprovalOpenapiDTO.
+        r"""Sets the approval_dispatch_status of this PermissionApprovalOpenapiDTO.
 
         审批外发状态，0表示成功，1表示失败，null表示非SMN节点
 
@@ -234,7 +234,7 @@ class PermissionApprovalOpenapiDTO:
 
     @property
     def approval_type(self):
-        """Gets the approval_type of this PermissionApprovalOpenapiDTO.
+        r"""Gets the approval_type of this PermissionApprovalOpenapiDTO.
 
         申请类型, DATA_PERMISSION
 
@@ -245,7 +245,7 @@ class PermissionApprovalOpenapiDTO:
 
     @approval_type.setter
     def approval_type(self, approval_type):
-        """Sets the approval_type of this PermissionApprovalOpenapiDTO.
+        r"""Sets the approval_type of this PermissionApprovalOpenapiDTO.
 
         申请类型, DATA_PERMISSION
 
@@ -256,7 +256,7 @@ class PermissionApprovalOpenapiDTO:
 
     @property
     def approve_reason(self):
-        """Gets the approve_reason of this PermissionApprovalOpenapiDTO.
+        r"""Gets the approve_reason of this PermissionApprovalOpenapiDTO.
 
         申请原因
 
@@ -267,7 +267,7 @@ class PermissionApprovalOpenapiDTO:
 
     @approve_reason.setter
     def approve_reason(self, approve_reason):
-        """Sets the approve_reason of this PermissionApprovalOpenapiDTO.
+        r"""Sets the approve_reason of this PermissionApprovalOpenapiDTO.
 
         申请原因
 
@@ -278,7 +278,7 @@ class PermissionApprovalOpenapiDTO:
 
     @property
     def current_node_id(self):
-        """Gets the current_node_id of this PermissionApprovalOpenapiDTO.
+        r"""Gets the current_node_id of this PermissionApprovalOpenapiDTO.
 
         当前审批节点id
 
@@ -289,7 +289,7 @@ class PermissionApprovalOpenapiDTO:
 
     @current_node_id.setter
     def current_node_id(self, current_node_id):
-        """Sets the current_node_id of this PermissionApprovalOpenapiDTO.
+        r"""Sets the current_node_id of this PermissionApprovalOpenapiDTO.
 
         当前审批节点id
 
@@ -300,7 +300,7 @@ class PermissionApprovalOpenapiDTO:
 
     @property
     def current_node_name(self):
-        """Gets the current_node_name of this PermissionApprovalOpenapiDTO.
+        r"""Gets the current_node_name of this PermissionApprovalOpenapiDTO.
 
         当前审批节点审批人
 
@@ -311,7 +311,7 @@ class PermissionApprovalOpenapiDTO:
 
     @current_node_name.setter
     def current_node_name(self, current_node_name):
-        """Sets the current_node_name of this PermissionApprovalOpenapiDTO.
+        r"""Sets the current_node_name of this PermissionApprovalOpenapiDTO.
 
         当前审批节点审批人
 
@@ -322,7 +322,7 @@ class PermissionApprovalOpenapiDTO:
 
     @property
     def current_node_type(self):
-        """Gets the current_node_type of this PermissionApprovalOpenapiDTO.
+        r"""Gets the current_node_type of this PermissionApprovalOpenapiDTO.
 
         当前审批节点审批人类型
 
@@ -333,7 +333,7 @@ class PermissionApprovalOpenapiDTO:
 
     @current_node_type.setter
     def current_node_type(self, current_node_type):
-        """Sets the current_node_type of this PermissionApprovalOpenapiDTO.
+        r"""Sets the current_node_type of this PermissionApprovalOpenapiDTO.
 
         当前审批节点审批人类型
 
@@ -344,7 +344,7 @@ class PermissionApprovalOpenapiDTO:
 
     @property
     def detail(self):
-        """Gets the detail of this PermissionApprovalOpenapiDTO.
+        r"""Gets the detail of this PermissionApprovalOpenapiDTO.
 
         :return: The detail of this PermissionApprovalOpenapiDTO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.PermissionApprovalDetailDTO`
@@ -353,7 +353,7 @@ class PermissionApprovalOpenapiDTO:
 
     @detail.setter
     def detail(self, detail):
-        """Sets the detail of this PermissionApprovalOpenapiDTO.
+        r"""Sets the detail of this PermissionApprovalOpenapiDTO.
 
         :param detail: The detail of this PermissionApprovalOpenapiDTO.
         :type detail: :class:`huaweicloudsdkdataartsstudio.v1.PermissionApprovalDetailDTO`
@@ -362,7 +362,7 @@ class PermissionApprovalOpenapiDTO:
 
     @property
     def end_time(self):
-        """Gets the end_time of this PermissionApprovalOpenapiDTO.
+        r"""Gets the end_time of this PermissionApprovalOpenapiDTO.
 
         工单结束时间
 
@@ -373,7 +373,7 @@ class PermissionApprovalOpenapiDTO:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this PermissionApprovalOpenapiDTO.
+        r"""Sets the end_time of this PermissionApprovalOpenapiDTO.
 
         工单结束时间
 
@@ -384,7 +384,7 @@ class PermissionApprovalOpenapiDTO:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this PermissionApprovalOpenapiDTO.
+        r"""Gets the expire_time of this PermissionApprovalOpenapiDTO.
 
         到期时间
 
@@ -395,7 +395,7 @@ class PermissionApprovalOpenapiDTO:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this PermissionApprovalOpenapiDTO.
+        r"""Sets the expire_time of this PermissionApprovalOpenapiDTO.
 
         到期时间
 
@@ -406,7 +406,7 @@ class PermissionApprovalOpenapiDTO:
 
     @property
     def id(self):
-        """Gets the id of this PermissionApprovalOpenapiDTO.
+        r"""Gets the id of this PermissionApprovalOpenapiDTO.
 
         工单id
 
@@ -417,7 +417,7 @@ class PermissionApprovalOpenapiDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PermissionApprovalOpenapiDTO.
+        r"""Sets the id of this PermissionApprovalOpenapiDTO.
 
         工单id
 
@@ -428,7 +428,7 @@ class PermissionApprovalOpenapiDTO:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this PermissionApprovalOpenapiDTO.
+        r"""Gets the instance_id of this PermissionApprovalOpenapiDTO.
 
         实例id
 
@@ -439,7 +439,7 @@ class PermissionApprovalOpenapiDTO:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this PermissionApprovalOpenapiDTO.
+        r"""Sets the instance_id of this PermissionApprovalOpenapiDTO.
 
         实例id
 
@@ -450,7 +450,7 @@ class PermissionApprovalOpenapiDTO:
 
     @property
     def permission_set_id(self):
-        """Gets the permission_set_id of this PermissionApprovalOpenapiDTO.
+        r"""Gets the permission_set_id of this PermissionApprovalOpenapiDTO.
 
         审批人所在权限集id
 
@@ -461,7 +461,7 @@ class PermissionApprovalOpenapiDTO:
 
     @permission_set_id.setter
     def permission_set_id(self, permission_set_id):
-        """Sets the permission_set_id of this PermissionApprovalOpenapiDTO.
+        r"""Sets the permission_set_id of this PermissionApprovalOpenapiDTO.
 
         审批人所在权限集id
 
@@ -472,7 +472,7 @@ class PermissionApprovalOpenapiDTO:
 
     @property
     def project_id(self):
-        """Gets the project_id of this PermissionApprovalOpenapiDTO.
+        r"""Gets the project_id of this PermissionApprovalOpenapiDTO.
 
         项目id
 
@@ -483,7 +483,7 @@ class PermissionApprovalOpenapiDTO:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this PermissionApprovalOpenapiDTO.
+        r"""Sets the project_id of this PermissionApprovalOpenapiDTO.
 
         项目id
 
@@ -494,7 +494,7 @@ class PermissionApprovalOpenapiDTO:
 
     @property
     def proposer_id(self):
-        """Gets the proposer_id of this PermissionApprovalOpenapiDTO.
+        r"""Gets the proposer_id of this PermissionApprovalOpenapiDTO.
 
         申请人id
 
@@ -505,7 +505,7 @@ class PermissionApprovalOpenapiDTO:
 
     @proposer_id.setter
     def proposer_id(self, proposer_id):
-        """Sets the proposer_id of this PermissionApprovalOpenapiDTO.
+        r"""Sets the proposer_id of this PermissionApprovalOpenapiDTO.
 
         申请人id
 
@@ -516,7 +516,7 @@ class PermissionApprovalOpenapiDTO:
 
     @property
     def proposer_name(self):
-        """Gets the proposer_name of this PermissionApprovalOpenapiDTO.
+        r"""Gets the proposer_name of this PermissionApprovalOpenapiDTO.
 
         申请人名称
 
@@ -527,7 +527,7 @@ class PermissionApprovalOpenapiDTO:
 
     @proposer_name.setter
     def proposer_name(self, proposer_name):
-        """Sets the proposer_name of this PermissionApprovalOpenapiDTO.
+        r"""Sets the proposer_name of this PermissionApprovalOpenapiDTO.
 
         申请人名称
 
@@ -538,7 +538,7 @@ class PermissionApprovalOpenapiDTO:
 
     @property
     def proposer_workspace_id(self):
-        """Gets the proposer_workspace_id of this PermissionApprovalOpenapiDTO.
+        r"""Gets the proposer_workspace_id of this PermissionApprovalOpenapiDTO.
 
         用户申请权限时所在工作空间id
 
@@ -549,7 +549,7 @@ class PermissionApprovalOpenapiDTO:
 
     @proposer_workspace_id.setter
     def proposer_workspace_id(self, proposer_workspace_id):
-        """Sets the proposer_workspace_id of this PermissionApprovalOpenapiDTO.
+        r"""Sets the proposer_workspace_id of this PermissionApprovalOpenapiDTO.
 
         用户申请权限时所在工作空间id
 
@@ -560,7 +560,7 @@ class PermissionApprovalOpenapiDTO:
 
     @property
     def reason(self):
-        """Gets the reason of this PermissionApprovalOpenapiDTO.
+        r"""Gets the reason of this PermissionApprovalOpenapiDTO.
 
         拒绝理由
 
@@ -571,7 +571,7 @@ class PermissionApprovalOpenapiDTO:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this PermissionApprovalOpenapiDTO.
+        r"""Sets the reason of this PermissionApprovalOpenapiDTO.
 
         拒绝理由
 
@@ -582,7 +582,7 @@ class PermissionApprovalOpenapiDTO:
 
     @property
     def start_time(self):
-        """Gets the start_time of this PermissionApprovalOpenapiDTO.
+        r"""Gets the start_time of this PermissionApprovalOpenapiDTO.
 
         工单开始时间
 
@@ -593,7 +593,7 @@ class PermissionApprovalOpenapiDTO:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this PermissionApprovalOpenapiDTO.
+        r"""Sets the start_time of this PermissionApprovalOpenapiDTO.
 
         工单开始时间
 
@@ -604,7 +604,7 @@ class PermissionApprovalOpenapiDTO:
 
     @property
     def status(self):
-        """Gets the status of this PermissionApprovalOpenapiDTO.
+        r"""Gets the status of this PermissionApprovalOpenapiDTO.
 
         工单状态, WAITING_APPROVE,APPROVED,REJECT,REVOKE
 
@@ -615,7 +615,7 @@ class PermissionApprovalOpenapiDTO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PermissionApprovalOpenapiDTO.
+        r"""Sets the status of this PermissionApprovalOpenapiDTO.
 
         工单状态, WAITING_APPROVE,APPROVED,REJECT,REVOKE
 
@@ -626,7 +626,7 @@ class PermissionApprovalOpenapiDTO:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this PermissionApprovalOpenapiDTO.
+        r"""Gets the workspace_id of this PermissionApprovalOpenapiDTO.
 
         工作空间id
 
@@ -637,7 +637,7 @@ class PermissionApprovalOpenapiDTO:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this PermissionApprovalOpenapiDTO.
+        r"""Sets the workspace_id of this PermissionApprovalOpenapiDTO.
 
         工作空间id
 
@@ -648,7 +648,7 @@ class PermissionApprovalOpenapiDTO:
 
     @property
     def workspace_name(self):
-        """Gets the workspace_name of this PermissionApprovalOpenapiDTO.
+        r"""Gets the workspace_name of this PermissionApprovalOpenapiDTO.
 
         工作空间名称
 
@@ -659,7 +659,7 @@ class PermissionApprovalOpenapiDTO:
 
     @workspace_name.setter
     def workspace_name(self, workspace_name):
-        """Sets the workspace_name of this PermissionApprovalOpenapiDTO.
+        r"""Sets the workspace_name of this PermissionApprovalOpenapiDTO.
 
         工作空间名称
 

@@ -37,7 +37,7 @@ class PersistentVolumeClaimSpec:
     }
 
     def __init__(self, volume_id=None, storage_type=None, access_modes=None, storage_class_name=None, volume_name=None, resources=None, volume_mode=None):
-        """PersistentVolumeClaimSpec
+        r"""PersistentVolumeClaimSpec
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class PersistentVolumeClaimSpec:
 
     @property
     def volume_id(self):
-        """Gets the volume_id of this PersistentVolumeClaimSpec.
+        r"""Gets the volume_id of this PersistentVolumeClaimSpec.
 
         资源需为已经存在的存储资源 - 如果存储资源类型是SFS、EVS、SFS-Turbo，本参数需要填入对应资源的ID - 如果资源类型为OBS，本参数填入OBS名称
 
@@ -93,7 +93,7 @@ class PersistentVolumeClaimSpec:
 
     @volume_id.setter
     def volume_id(self, volume_id):
-        """Sets the volume_id of this PersistentVolumeClaimSpec.
+        r"""Sets the volume_id of this PersistentVolumeClaimSpec.
 
         资源需为已经存在的存储资源 - 如果存储资源类型是SFS、EVS、SFS-Turbo，本参数需要填入对应资源的ID - 如果资源类型为OBS，本参数填入OBS名称
 
@@ -104,7 +104,7 @@ class PersistentVolumeClaimSpec:
 
     @property
     def storage_type(self):
-        """Gets the storage_type of this PersistentVolumeClaimSpec.
+        r"""Gets the storage_type of this PersistentVolumeClaimSpec.
 
         云存储的类型，和volumeID搭配使用。即volumeID和storageType必须同时被配置。  - bs：EVS云存储 - nfs：SFS弹性文件存储 - obs：OBS对象存储 - efs：SFS Turbo极速文件存储
 
@@ -115,7 +115,7 @@ class PersistentVolumeClaimSpec:
 
     @storage_type.setter
     def storage_type(self, storage_type):
-        """Sets the storage_type of this PersistentVolumeClaimSpec.
+        r"""Sets the storage_type of this PersistentVolumeClaimSpec.
 
         云存储的类型，和volumeID搭配使用。即volumeID和storageType必须同时被配置。  - bs：EVS云存储 - nfs：SFS弹性文件存储 - obs：OBS对象存储 - efs：SFS Turbo极速文件存储
 
@@ -126,7 +126,7 @@ class PersistentVolumeClaimSpec:
 
     @property
     def access_modes(self):
-        """Gets the access_modes of this PersistentVolumeClaimSpec.
+        r"""Gets the access_modes of this PersistentVolumeClaimSpec.
 
         指定volume应该具有的访问模式，列表中仅第一个配置参数有效。 - ReadWriteOnce：该卷可以被单个节点以读/写模式挂载   >集群版本为v1.13.10且storage-driver版本为1.0.19时，才支持此功能。 - ReadOnlyMany：该卷可以被多个节点以只读模式挂载（默认） - ReadWriteMany：该卷可以被多个节点以读/写模式挂载
 
@@ -137,7 +137,7 @@ class PersistentVolumeClaimSpec:
 
     @access_modes.setter
     def access_modes(self, access_modes):
-        """Sets the access_modes of this PersistentVolumeClaimSpec.
+        r"""Sets the access_modes of this PersistentVolumeClaimSpec.
 
         指定volume应该具有的访问模式，列表中仅第一个配置参数有效。 - ReadWriteOnce：该卷可以被单个节点以读/写模式挂载   >集群版本为v1.13.10且storage-driver版本为1.0.19时，才支持此功能。 - ReadOnlyMany：该卷可以被多个节点以只读模式挂载（默认） - ReadWriteMany：该卷可以被多个节点以读/写模式挂载
 
@@ -148,7 +148,7 @@ class PersistentVolumeClaimSpec:
 
     @property
     def storage_class_name(self):
-        """Gets the storage_class_name of this PersistentVolumeClaimSpec.
+        r"""Gets the storage_class_name of this PersistentVolumeClaimSpec.
 
         PVC的StorageClass名称
 
@@ -159,7 +159,7 @@ class PersistentVolumeClaimSpec:
 
     @storage_class_name.setter
     def storage_class_name(self, storage_class_name):
-        """Sets the storage_class_name of this PersistentVolumeClaimSpec.
+        r"""Sets the storage_class_name of this PersistentVolumeClaimSpec.
 
         PVC的StorageClass名称
 
@@ -170,7 +170,7 @@ class PersistentVolumeClaimSpec:
 
     @property
     def volume_name(self):
-        """Gets the volume_name of this PersistentVolumeClaimSpec.
+        r"""Gets the volume_name of this PersistentVolumeClaimSpec.
 
         PVC绑定的PV名称
 
@@ -181,7 +181,7 @@ class PersistentVolumeClaimSpec:
 
     @volume_name.setter
     def volume_name(self, volume_name):
-        """Sets the volume_name of this PersistentVolumeClaimSpec.
+        r"""Sets the volume_name of this PersistentVolumeClaimSpec.
 
         PVC绑定的PV名称
 
@@ -192,7 +192,7 @@ class PersistentVolumeClaimSpec:
 
     @property
     def resources(self):
-        """Gets the resources of this PersistentVolumeClaimSpec.
+        r"""Gets the resources of this PersistentVolumeClaimSpec.
 
         :return: The resources of this PersistentVolumeClaimSpec.
         :rtype: :class:`huaweicloudsdkcce.v3.ResourceRequirements`
@@ -201,7 +201,7 @@ class PersistentVolumeClaimSpec:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this PersistentVolumeClaimSpec.
+        r"""Sets the resources of this PersistentVolumeClaimSpec.
 
         :param resources: The resources of this PersistentVolumeClaimSpec.
         :type resources: :class:`huaweicloudsdkcce.v3.ResourceRequirements`
@@ -210,7 +210,7 @@ class PersistentVolumeClaimSpec:
 
     @property
     def volume_mode(self):
-        """Gets the volume_mode of this PersistentVolumeClaimSpec.
+        r"""Gets the volume_mode of this PersistentVolumeClaimSpec.
 
         PVC指定的PV类型
 
@@ -221,7 +221,7 @@ class PersistentVolumeClaimSpec:
 
     @volume_mode.setter
     def volume_mode(self, volume_mode):
-        """Sets the volume_mode of this PersistentVolumeClaimSpec.
+        r"""Sets the volume_mode of this PersistentVolumeClaimSpec.
 
         PVC指定的PV类型
 

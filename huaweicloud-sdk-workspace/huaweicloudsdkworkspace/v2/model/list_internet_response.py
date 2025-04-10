@@ -26,7 +26,7 @@ class ListInternetResponse(SdkResponse):
     }
 
     def __init__(self, internet_infos=None):
-        """ListInternetResponse
+        r"""ListInternetResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListInternetResponse(SdkResponse):
 
     @property
     def internet_infos(self):
-        """Gets the internet_infos of this ListInternetResponse.
+        r"""Gets the internet_infos of this ListInternetResponse.
 
         上网信息
 
@@ -55,7 +55,7 @@ class ListInternetResponse(SdkResponse):
 
     @internet_infos.setter
     def internet_infos(self, internet_infos):
-        """Sets the internet_infos of this ListInternetResponse.
+        r"""Sets the internet_infos of this ListInternetResponse.
 
         上网信息
 

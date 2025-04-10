@@ -29,7 +29,7 @@ class DisableAlertRuleRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, body=None):
-        """DisableAlertRuleRequest
+        r"""DisableAlertRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class DisableAlertRuleRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this DisableAlertRuleRequest.
+        r"""Gets the project_id of this DisableAlertRuleRequest.
 
         project_id
 
@@ -66,7 +66,7 @@ class DisableAlertRuleRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DisableAlertRuleRequest.
+        r"""Sets the project_id of this DisableAlertRuleRequest.
 
         project_id
 
@@ -77,7 +77,7 @@ class DisableAlertRuleRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this DisableAlertRuleRequest.
+        r"""Gets the workspace_id of this DisableAlertRuleRequest.
 
         workspace_id
 
@@ -88,7 +88,7 @@ class DisableAlertRuleRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this DisableAlertRuleRequest.
+        r"""Sets the workspace_id of this DisableAlertRuleRequest.
 
         workspace_id
 
@@ -99,7 +99,7 @@ class DisableAlertRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this DisableAlertRuleRequest.
+        r"""Gets the body of this DisableAlertRuleRequest.
 
         :return: The body of this DisableAlertRuleRequest.
         :rtype: list[str]
@@ -108,7 +108,7 @@ class DisableAlertRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DisableAlertRuleRequest.
+        r"""Sets the body of this DisableAlertRuleRequest.
 
         :param body: The body of this DisableAlertRuleRequest.
         :type body: list[str]

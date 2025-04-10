@@ -28,7 +28,7 @@ class CreateComponentResponse(SdkResponse):
     }
 
     def __init__(self, component_id=None, job_id=None):
-        """CreateComponentResponse
+        r"""CreateComponentResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateComponentResponse(SdkResponse):
 
     @property
     def component_id(self):
-        """Gets the component_id of this CreateComponentResponse.
+        r"""Gets the component_id of this CreateComponentResponse.
 
         组件id
 
@@ -62,7 +62,7 @@ class CreateComponentResponse(SdkResponse):
 
     @component_id.setter
     def component_id(self, component_id):
-        """Sets the component_id of this CreateComponentResponse.
+        r"""Sets the component_id of this CreateComponentResponse.
 
         组件id
 
@@ -73,7 +73,7 @@ class CreateComponentResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateComponentResponse.
+        r"""Gets the job_id of this CreateComponentResponse.
 
         任务id
 
@@ -84,7 +84,7 @@ class CreateComponentResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateComponentResponse.
+        r"""Sets the job_id of this CreateComponentResponse.
 
         任务id
 

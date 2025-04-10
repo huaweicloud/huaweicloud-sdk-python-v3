@@ -37,7 +37,7 @@ class CustomImage:
     }
 
     def __init__(self, enabled=None, image=None, command=None, args=None, working_dir=None, uid=None, gid=None):
-        """CustomImage
+        r"""CustomImage
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class CustomImage:
 
     @property
     def enabled(self):
-        """Gets the enabled of this CustomImage.
+        r"""Gets the enabled of this CustomImage.
 
         是否启用
 
@@ -96,7 +96,7 @@ class CustomImage:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this CustomImage.
+        r"""Sets the enabled of this CustomImage.
 
         是否启用
 
@@ -107,7 +107,7 @@ class CustomImage:
 
     @property
     def image(self):
-        """Gets the image of this CustomImage.
+        r"""Gets the image of this CustomImage.
 
         镜像地址
 
@@ -118,7 +118,7 @@ class CustomImage:
 
     @image.setter
     def image(self, image):
-        """Sets the image of this CustomImage.
+        r"""Sets the image of this CustomImage.
 
         镜像地址
 
@@ -129,7 +129,7 @@ class CustomImage:
 
     @property
     def command(self):
-        """Gets the command of this CustomImage.
+        r"""Gets the command of this CustomImage.
 
         启动容器镜像的命令
 
@@ -140,7 +140,7 @@ class CustomImage:
 
     @command.setter
     def command(self, command):
-        """Sets the command of this CustomImage.
+        r"""Sets the command of this CustomImage.
 
         启动容器镜像的命令
 
@@ -151,7 +151,7 @@ class CustomImage:
 
     @property
     def args(self):
-        """Gets the args of this CustomImage.
+        r"""Gets the args of this CustomImage.
 
         启动容器镜像的命令行参数
 
@@ -162,7 +162,7 @@ class CustomImage:
 
     @args.setter
     def args(self, args):
-        """Sets the args of this CustomImage.
+        r"""Sets the args of this CustomImage.
 
         启动容器镜像的命令行参数
 
@@ -173,7 +173,7 @@ class CustomImage:
 
     @property
     def working_dir(self):
-        """Gets the working_dir of this CustomImage.
+        r"""Gets the working_dir of this CustomImage.
 
         镜像容器工作目录
 
@@ -184,7 +184,7 @@ class CustomImage:
 
     @working_dir.setter
     def working_dir(self, working_dir):
-        """Sets the working_dir of this CustomImage.
+        r"""Sets the working_dir of this CustomImage.
 
         镜像容器工作目录
 
@@ -195,7 +195,7 @@ class CustomImage:
 
     @property
     def uid(self):
-        """Gets the uid of this CustomImage.
+        r"""Gets the uid of this CustomImage.
 
         镜像容器的用户id
 
@@ -206,7 +206,7 @@ class CustomImage:
 
     @uid.setter
     def uid(self, uid):
-        """Sets the uid of this CustomImage.
+        r"""Sets the uid of this CustomImage.
 
         镜像容器的用户id
 
@@ -217,7 +217,7 @@ class CustomImage:
 
     @property
     def gid(self):
-        """Gets the gid of this CustomImage.
+        r"""Gets the gid of this CustomImage.
 
         镜像容器的用户组id
 
@@ -228,7 +228,7 @@ class CustomImage:
 
     @gid.setter
     def gid(self, gid):
-        """Sets the gid of this CustomImage.
+        r"""Sets the gid of this CustomImage.
 
         镜像容器的用户组id
 

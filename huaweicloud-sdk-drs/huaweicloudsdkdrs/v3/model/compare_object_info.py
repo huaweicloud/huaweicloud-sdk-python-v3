@@ -27,7 +27,7 @@ class CompareObjectInfo:
     }
 
     def __init__(self, db_name=None, table_name=None):
-        """CompareObjectInfo
+        r"""CompareObjectInfo
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CompareObjectInfo:
 
     @property
     def db_name(self):
-        """Gets the db_name of this CompareObjectInfo.
+        r"""Gets the db_name of this CompareObjectInfo.
 
         库名。
 
@@ -60,7 +60,7 @@ class CompareObjectInfo:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this CompareObjectInfo.
+        r"""Sets the db_name of this CompareObjectInfo.
 
         库名。
 
@@ -71,7 +71,7 @@ class CompareObjectInfo:
 
     @property
     def table_name(self):
-        """Gets the table_name of this CompareObjectInfo.
+        r"""Gets the table_name of this CompareObjectInfo.
 
         该库下的表名列表。
 
@@ -82,7 +82,7 @@ class CompareObjectInfo:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this CompareObjectInfo.
+        r"""Sets the table_name of this CompareObjectInfo.
 
         该库下的表名列表。
 

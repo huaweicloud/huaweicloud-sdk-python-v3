@@ -27,7 +27,7 @@ class CreatePublicIpBandwidthOption:
     }
 
     def __init__(self, id=None, bandwidth_type=None):
-        """CreatePublicIpBandwidthOption
+        r"""CreatePublicIpBandwidthOption
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreatePublicIpBandwidthOption:
 
     @property
     def id(self):
-        """Gets the id of this CreatePublicIpBandwidthOption.
+        r"""Gets the id of this CreatePublicIpBandwidthOption.
 
         带宽id。
 
@@ -61,7 +61,7 @@ class CreatePublicIpBandwidthOption:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreatePublicIpBandwidthOption.
+        r"""Sets the id of this CreatePublicIpBandwidthOption.
 
         带宽id。
 
@@ -72,7 +72,7 @@ class CreatePublicIpBandwidthOption:
 
     @property
     def bandwidth_type(self):
-        """Gets the bandwidth_type of this CreatePublicIpBandwidthOption.
+        r"""Gets the bandwidth_type of this CreatePublicIpBandwidthOption.
 
         带宽类型。  指定带宽ID，则该参数不生效。 不指定带宽的情况下，如果当前带宽类型下没有带宽，自动在该带宽类型下创建带宽，有则使用最近创建的带宽。
 
@@ -83,7 +83,7 @@ class CreatePublicIpBandwidthOption:
 
     @bandwidth_type.setter
     def bandwidth_type(self, bandwidth_type):
-        """Sets the bandwidth_type of this CreatePublicIpBandwidthOption.
+        r"""Sets the bandwidth_type of this CreatePublicIpBandwidthOption.
 
         带宽类型。  指定带宽ID，则该参数不生效。 不指定带宽的情况下，如果当前带宽类型下没有带宽，自动在该带宽类型下创建带宽，有则使用最近创建的带宽。
 

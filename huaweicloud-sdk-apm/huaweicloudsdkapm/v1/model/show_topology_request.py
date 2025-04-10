@@ -25,7 +25,7 @@ class ShowTopologyRequest:
     }
 
     def __init__(self, trace_id=None):
-        """ShowTopologyRequest
+        r"""ShowTopologyRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowTopologyRequest:
 
     @property
     def trace_id(self):
-        """Gets the trace_id of this ShowTopologyRequest.
+        r"""Gets the trace_id of this ShowTopologyRequest.
 
         调用链traceId。
 
@@ -53,7 +53,7 @@ class ShowTopologyRequest:
 
     @trace_id.setter
     def trace_id(self, trace_id):
-        """Sets the trace_id of this ShowTopologyRequest.
+        r"""Sets the trace_id of this ShowTopologyRequest.
 
         调用链traceId。
 

@@ -24,7 +24,7 @@ class CreateVhostResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateVhostResponse
+        r"""CreateVhostResponse
 
         The model defined in huaweicloud sdk
 

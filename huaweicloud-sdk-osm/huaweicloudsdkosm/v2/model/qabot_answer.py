@@ -41,7 +41,7 @@ class QabotAnswer:
     }
 
     def __init__(self, question=None, answer=None, score=None, domain=None, link=None, qa_pair_id=None, domain_id=None, top_score_question=None, relevance_details=None):
-        """QabotAnswer
+        r"""QabotAnswer
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class QabotAnswer:
 
     @property
     def question(self):
-        """Gets the question of this QabotAnswer.
+        r"""Gets the question of this QabotAnswer.
 
         问题
 
@@ -110,7 +110,7 @@ class QabotAnswer:
 
     @question.setter
     def question(self, question):
-        """Sets the question of this QabotAnswer.
+        r"""Sets the question of this QabotAnswer.
 
         问题
 
@@ -121,7 +121,7 @@ class QabotAnswer:
 
     @property
     def answer(self):
-        """Gets the answer of this QabotAnswer.
+        r"""Gets the answer of this QabotAnswer.
 
         答案
 
@@ -132,7 +132,7 @@ class QabotAnswer:
 
     @answer.setter
     def answer(self, answer):
-        """Sets the answer of this QabotAnswer.
+        r"""Sets the answer of this QabotAnswer.
 
         答案
 
@@ -143,7 +143,7 @@ class QabotAnswer:
 
     @property
     def score(self):
-        """Gets the score of this QabotAnswer.
+        r"""Gets the score of this QabotAnswer.
 
         评分
 
@@ -154,7 +154,7 @@ class QabotAnswer:
 
     @score.setter
     def score(self, score):
-        """Sets the score of this QabotAnswer.
+        r"""Sets the score of this QabotAnswer.
 
         评分
 
@@ -165,7 +165,7 @@ class QabotAnswer:
 
     @property
     def domain(self):
-        """Gets the domain of this QabotAnswer.
+        r"""Gets the domain of this QabotAnswer.
 
         主题
 
@@ -176,7 +176,7 @@ class QabotAnswer:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this QabotAnswer.
+        r"""Sets the domain of this QabotAnswer.
 
         主题
 
@@ -187,7 +187,7 @@ class QabotAnswer:
 
     @property
     def link(self):
-        """Gets the link of this QabotAnswer.
+        r"""Gets the link of this QabotAnswer.
 
         链接地址
 
@@ -198,7 +198,7 @@ class QabotAnswer:
 
     @link.setter
     def link(self, link):
-        """Sets the link of this QabotAnswer.
+        r"""Sets the link of this QabotAnswer.
 
         链接地址
 
@@ -209,7 +209,7 @@ class QabotAnswer:
 
     @property
     def qa_pair_id(self):
-        """Gets the qa_pair_id of this QabotAnswer.
+        r"""Gets the qa_pair_id of this QabotAnswer.
 
         语料id
 
@@ -220,7 +220,7 @@ class QabotAnswer:
 
     @qa_pair_id.setter
     def qa_pair_id(self, qa_pair_id):
-        """Sets the qa_pair_id of this QabotAnswer.
+        r"""Sets the qa_pair_id of this QabotAnswer.
 
         语料id
 
@@ -231,7 +231,7 @@ class QabotAnswer:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this QabotAnswer.
+        r"""Gets the domain_id of this QabotAnswer.
 
         主题id
 
@@ -242,7 +242,7 @@ class QabotAnswer:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this QabotAnswer.
+        r"""Sets the domain_id of this QabotAnswer.
 
         主题id
 
@@ -253,7 +253,7 @@ class QabotAnswer:
 
     @property
     def top_score_question(self):
-        """Gets the top_score_question of this QabotAnswer.
+        r"""Gets the top_score_question of this QabotAnswer.
 
         推荐答案
 
@@ -264,7 +264,7 @@ class QabotAnswer:
 
     @top_score_question.setter
     def top_score_question(self, top_score_question):
-        """Sets the top_score_question of this QabotAnswer.
+        r"""Sets the top_score_question of this QabotAnswer.
 
         推荐答案
 
@@ -275,7 +275,7 @@ class QabotAnswer:
 
     @property
     def relevance_details(self):
-        """Gets the relevance_details of this QabotAnswer.
+        r"""Gets the relevance_details of this QabotAnswer.
 
         相关问题列表
 
@@ -286,7 +286,7 @@ class QabotAnswer:
 
     @relevance_details.setter
     def relevance_details(self, relevance_details):
-        """Sets the relevance_details of this QabotAnswer.
+        r"""Sets the relevance_details of this QabotAnswer.
 
         相关问题列表
 

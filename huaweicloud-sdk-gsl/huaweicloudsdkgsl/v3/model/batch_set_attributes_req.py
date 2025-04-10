@@ -27,7 +27,7 @@ class BatchSetAttributesReq:
     }
 
     def __init__(self, file_temp_id=None, attributes=None):
-        """BatchSetAttributesReq
+        r"""BatchSetAttributesReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchSetAttributesReq:
 
     @property
     def file_temp_id(self):
-        """Gets the file_temp_id of this BatchSetAttributesReq.
+        r"""Gets the file_temp_id of this BatchSetAttributesReq.
 
         临时文件ID，如果通过接口调用，此字段为空
 
@@ -61,7 +61,7 @@ class BatchSetAttributesReq:
 
     @file_temp_id.setter
     def file_temp_id(self, file_temp_id):
-        """Sets the file_temp_id of this BatchSetAttributesReq.
+        r"""Sets the file_temp_id of this BatchSetAttributesReq.
 
         临时文件ID，如果通过接口调用，此字段为空
 
@@ -72,7 +72,7 @@ class BatchSetAttributesReq:
 
     @property
     def attributes(self):
-        """Gets the attributes of this BatchSetAttributesReq.
+        r"""Gets the attributes of this BatchSetAttributesReq.
 
         自定义属性集合
 
@@ -83,7 +83,7 @@ class BatchSetAttributesReq:
 
     @attributes.setter
     def attributes(self, attributes):
-        """Sets the attributes of this BatchSetAttributesReq.
+        r"""Sets the attributes of this BatchSetAttributesReq.
 
         自定义属性集合
 

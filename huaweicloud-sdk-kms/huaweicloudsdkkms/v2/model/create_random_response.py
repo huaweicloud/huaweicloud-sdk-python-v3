@@ -26,7 +26,7 @@ class CreateRandomResponse(SdkResponse):
     }
 
     def __init__(self, random_data=None):
-        """CreateRandomResponse
+        r"""CreateRandomResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateRandomResponse(SdkResponse):
 
     @property
     def random_data(self):
-        """Gets the random_data of this CreateRandomResponse.
+        r"""Gets the random_data of this CreateRandomResponse.
 
         随机数16进制表示，两位表示1byte。随机数的长度与用户传入的参数 “random_data_length”的长度保持一致。
 
@@ -55,7 +55,7 @@ class CreateRandomResponse(SdkResponse):
 
     @random_data.setter
     def random_data(self, random_data):
-        """Sets the random_data of this CreateRandomResponse.
+        r"""Sets the random_data of this CreateRandomResponse.
 
         随机数16进制表示，两位表示1byte。随机数的长度与用户传入的参数 “random_data_length”的长度保持一致。
 

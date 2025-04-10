@@ -34,7 +34,7 @@ class ListUserDnsMappingResponse(SdkResponse):
     }
 
     def __init__(self, error=None, reason=None, result=None, status=None, code=None):
-        """ListUserDnsMappingResponse
+        r"""ListUserDnsMappingResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListUserDnsMappingResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ListUserDnsMappingResponse.
+        r"""Gets the error of this ListUserDnsMappingResponse.
 
         :return: The error of this ListUserDnsMappingResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CommonResponseErrorOfAPITest`
@@ -81,7 +81,7 @@ class ListUserDnsMappingResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ListUserDnsMappingResponse.
+        r"""Sets the error of this ListUserDnsMappingResponse.
 
         :param error: The error of this ListUserDnsMappingResponse.
         :type error: :class:`huaweicloudsdkcloudtest.v1.CommonResponseErrorOfAPITest`
@@ -90,7 +90,7 @@ class ListUserDnsMappingResponse(SdkResponse):
 
     @property
     def reason(self):
-        """Gets the reason of this ListUserDnsMappingResponse.
+        r"""Gets the reason of this ListUserDnsMappingResponse.
 
         错误原因
 
@@ -101,7 +101,7 @@ class ListUserDnsMappingResponse(SdkResponse):
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this ListUserDnsMappingResponse.
+        r"""Sets the reason of this ListUserDnsMappingResponse.
 
         错误原因
 
@@ -112,7 +112,7 @@ class ListUserDnsMappingResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListUserDnsMappingResponse.
+        r"""Gets the result of this ListUserDnsMappingResponse.
 
         :return: The result of this ListUserDnsMappingResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.DnsMapping`
@@ -121,7 +121,7 @@ class ListUserDnsMappingResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListUserDnsMappingResponse.
+        r"""Sets the result of this ListUserDnsMappingResponse.
 
         :param result: The result of this ListUserDnsMappingResponse.
         :type result: :class:`huaweicloudsdkcloudtest.v1.DnsMapping`
@@ -130,7 +130,7 @@ class ListUserDnsMappingResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListUserDnsMappingResponse.
+        r"""Gets the status of this ListUserDnsMappingResponse.
 
         状态值，如success、error
 
@@ -141,7 +141,7 @@ class ListUserDnsMappingResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListUserDnsMappingResponse.
+        r"""Sets the status of this ListUserDnsMappingResponse.
 
         状态值，如success、error
 
@@ -152,7 +152,7 @@ class ListUserDnsMappingResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ListUserDnsMappingResponse.
+        r"""Gets the code of this ListUserDnsMappingResponse.
 
         错误码
 
@@ -163,7 +163,7 @@ class ListUserDnsMappingResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ListUserDnsMappingResponse.
+        r"""Sets the code of this ListUserDnsMappingResponse.
 
         错误码
 

@@ -27,7 +27,7 @@ class BatchTagActionRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """BatchTagActionRequest
+        r"""BatchTagActionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchTagActionRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this BatchTagActionRequest.
+        r"""Gets the instance_id of this BatchTagActionRequest.
 
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
@@ -60,7 +60,7 @@ class BatchTagActionRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this BatchTagActionRequest.
+        r"""Sets the instance_id of this BatchTagActionRequest.
 
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
@@ -71,7 +71,7 @@ class BatchTagActionRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchTagActionRequest.
+        r"""Gets the body of this BatchTagActionRequest.
 
         :return: The body of this BatchTagActionRequest.
         :rtype: :class:`huaweicloudsdkdds.v3.BatchOperateInstanceTagRequestBody`
@@ -80,7 +80,7 @@ class BatchTagActionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchTagActionRequest.
+        r"""Sets the body of this BatchTagActionRequest.
 
         :param body: The body of this BatchTagActionRequest.
         :type body: :class:`huaweicloudsdkdds.v3.BatchOperateInstanceTagRequestBody`

@@ -29,7 +29,7 @@ class UpdateWelcomeSpeechSwitchReq:
     }
 
     def __init__(self, robot_id=None, enable_welcome_speech=None, language=None):
-        """UpdateWelcomeSpeechSwitchReq
+        r"""UpdateWelcomeSpeechSwitchReq
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateWelcomeSpeechSwitchReq:
 
     @property
     def robot_id(self):
-        """Gets the robot_id of this UpdateWelcomeSpeechSwitchReq.
+        r"""Gets the robot_id of this UpdateWelcomeSpeechSwitchReq.
 
         应用ID。
 
@@ -66,7 +66,7 @@ class UpdateWelcomeSpeechSwitchReq:
 
     @robot_id.setter
     def robot_id(self, robot_id):
-        """Sets the robot_id of this UpdateWelcomeSpeechSwitchReq.
+        r"""Sets the robot_id of this UpdateWelcomeSpeechSwitchReq.
 
         应用ID。
 
@@ -77,7 +77,7 @@ class UpdateWelcomeSpeechSwitchReq:
 
     @property
     def enable_welcome_speech(self):
-        """Gets the enable_welcome_speech of this UpdateWelcomeSpeechSwitchReq.
+        r"""Gets the enable_welcome_speech of this UpdateWelcomeSpeechSwitchReq.
 
         欢迎词功能开关。
 
@@ -88,7 +88,7 @@ class UpdateWelcomeSpeechSwitchReq:
 
     @enable_welcome_speech.setter
     def enable_welcome_speech(self, enable_welcome_speech):
-        """Sets the enable_welcome_speech of this UpdateWelcomeSpeechSwitchReq.
+        r"""Sets the enable_welcome_speech of this UpdateWelcomeSpeechSwitchReq.
 
         欢迎词功能开关。
 
@@ -99,7 +99,7 @@ class UpdateWelcomeSpeechSwitchReq:
 
     @property
     def language(self):
-        """Gets the language of this UpdateWelcomeSpeechSwitchReq.
+        r"""Gets the language of this UpdateWelcomeSpeechSwitchReq.
 
         :return: The language of this UpdateWelcomeSpeechSwitchReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`
@@ -108,7 +108,7 @@ class UpdateWelcomeSpeechSwitchReq:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this UpdateWelcomeSpeechSwitchReq.
+        r"""Sets the language of this UpdateWelcomeSpeechSwitchReq.
 
         :param language: The language of this UpdateWelcomeSpeechSwitchReq.
         :type language: :class:`huaweicloudsdkmetastudio.v1.LanguageEnum`

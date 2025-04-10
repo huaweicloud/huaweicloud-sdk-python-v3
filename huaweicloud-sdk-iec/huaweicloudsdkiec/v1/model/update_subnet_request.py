@@ -27,7 +27,7 @@ class UpdateSubnetRequest:
     }
 
     def __init__(self, subnet_id=None, body=None):
-        """UpdateSubnetRequest
+        r"""UpdateSubnetRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateSubnetRequest:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this UpdateSubnetRequest.
+        r"""Gets the subnet_id of this UpdateSubnetRequest.
 
         子网ID。
 
@@ -60,7 +60,7 @@ class UpdateSubnetRequest:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this UpdateSubnetRequest.
+        r"""Sets the subnet_id of this UpdateSubnetRequest.
 
         子网ID。
 
@@ -71,7 +71,7 @@ class UpdateSubnetRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSubnetRequest.
+        r"""Gets the body of this UpdateSubnetRequest.
 
         :return: The body of this UpdateSubnetRequest.
         :rtype: :class:`huaweicloudsdkiec.v1.UpdateSubnetRequestBody`
@@ -80,7 +80,7 @@ class UpdateSubnetRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSubnetRequest.
+        r"""Sets the body of this UpdateSubnetRequest.
 
         :param body: The body of this UpdateSubnetRequest.
         :type body: :class:`huaweicloudsdkiec.v1.UpdateSubnetRequestBody`

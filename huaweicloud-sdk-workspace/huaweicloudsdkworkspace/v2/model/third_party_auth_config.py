@@ -47,7 +47,7 @@ class ThirdPartyAuthConfig:
     }
 
     def __init__(self, update_type=None, enable=None, is_cooperate_password=None, update_object=None, auth_type=None, client_interface_config=None, server_interface_config=None, third_password_update_type=None, custom_definition=None, oauth_configs=None, ldap_configs=None, third_password_name=None):
-        """ThirdPartyAuthConfig
+        r"""ThirdPartyAuthConfig
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ThirdPartyAuthConfig:
 
     @property
     def update_type(self):
-        """Gets the update_type of this ThirdPartyAuthConfig.
+        r"""Gets the update_type of this ThirdPartyAuthConfig.
 
         更新认证配置类型，认证类型为第三方单点登录时使用
 
@@ -131,7 +131,7 @@ class ThirdPartyAuthConfig:
 
     @update_type.setter
     def update_type(self, update_type):
-        """Sets the update_type of this ThirdPartyAuthConfig.
+        r"""Sets the update_type of this ThirdPartyAuthConfig.
 
         更新认证配置类型，认证类型为第三方单点登录时使用
 
@@ -142,7 +142,7 @@ class ThirdPartyAuthConfig:
 
     @property
     def enable(self):
-        """Gets the enable of this ThirdPartyAuthConfig.
+        r"""Gets the enable of this ThirdPartyAuthConfig.
 
         是否启用
 
@@ -153,7 +153,7 @@ class ThirdPartyAuthConfig:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this ThirdPartyAuthConfig.
+        r"""Sets the enable of this ThirdPartyAuthConfig.
 
         是否启用
 
@@ -164,7 +164,7 @@ class ThirdPartyAuthConfig:
 
     @property
     def is_cooperate_password(self):
-        """Gets the is_cooperate_password of this ThirdPartyAuthConfig.
+        r"""Gets the is_cooperate_password of this ThirdPartyAuthConfig.
 
         是否支持密码认证
 
@@ -175,7 +175,7 @@ class ThirdPartyAuthConfig:
 
     @is_cooperate_password.setter
     def is_cooperate_password(self, is_cooperate_password):
-        """Sets the is_cooperate_password of this ThirdPartyAuthConfig.
+        r"""Sets the is_cooperate_password of this ThirdPartyAuthConfig.
 
         是否支持密码认证
 
@@ -186,7 +186,7 @@ class ThirdPartyAuthConfig:
 
     @property
     def update_object(self):
-        """Gets the update_object of this ThirdPartyAuthConfig.
+        r"""Gets the update_object of this ThirdPartyAuthConfig.
 
         更新认证配置对象，认证类型为第三方单点登录时使用
 
@@ -197,7 +197,7 @@ class ThirdPartyAuthConfig:
 
     @update_object.setter
     def update_object(self, update_object):
-        """Sets the update_object of this ThirdPartyAuthConfig.
+        r"""Sets the update_object of this ThirdPartyAuthConfig.
 
         更新认证配置对象，认证类型为第三方单点登录时使用
 
@@ -208,7 +208,7 @@ class ThirdPartyAuthConfig:
 
     @property
     def auth_type(self):
-        """Gets the auth_type of this ThirdPartyAuthConfig.
+        r"""Gets the auth_type of this ThirdPartyAuthConfig.
 
         认证类型
 
@@ -219,7 +219,7 @@ class ThirdPartyAuthConfig:
 
     @auth_type.setter
     def auth_type(self, auth_type):
-        """Sets the auth_type of this ThirdPartyAuthConfig.
+        r"""Sets the auth_type of this ThirdPartyAuthConfig.
 
         认证类型
 
@@ -230,7 +230,7 @@ class ThirdPartyAuthConfig:
 
     @property
     def client_interface_config(self):
-        """Gets the client_interface_config of this ThirdPartyAuthConfig.
+        r"""Gets the client_interface_config of this ThirdPartyAuthConfig.
 
         :return: The client_interface_config of this ThirdPartyAuthConfig.
         :rtype: :class:`huaweicloudsdkworkspace.v2.InterfacesConfig`
@@ -239,7 +239,7 @@ class ThirdPartyAuthConfig:
 
     @client_interface_config.setter
     def client_interface_config(self, client_interface_config):
-        """Sets the client_interface_config of this ThirdPartyAuthConfig.
+        r"""Sets the client_interface_config of this ThirdPartyAuthConfig.
 
         :param client_interface_config: The client_interface_config of this ThirdPartyAuthConfig.
         :type client_interface_config: :class:`huaweicloudsdkworkspace.v2.InterfacesConfig`
@@ -248,7 +248,7 @@ class ThirdPartyAuthConfig:
 
     @property
     def server_interface_config(self):
-        """Gets the server_interface_config of this ThirdPartyAuthConfig.
+        r"""Gets the server_interface_config of this ThirdPartyAuthConfig.
 
         :return: The server_interface_config of this ThirdPartyAuthConfig.
         :rtype: :class:`huaweicloudsdkworkspace.v2.InterfacesConfig`
@@ -257,7 +257,7 @@ class ThirdPartyAuthConfig:
 
     @server_interface_config.setter
     def server_interface_config(self, server_interface_config):
-        """Sets the server_interface_config of this ThirdPartyAuthConfig.
+        r"""Sets the server_interface_config of this ThirdPartyAuthConfig.
 
         :param server_interface_config: The server_interface_config of this ThirdPartyAuthConfig.
         :type server_interface_config: :class:`huaweicloudsdkworkspace.v2.InterfacesConfig`
@@ -266,7 +266,7 @@ class ThirdPartyAuthConfig:
 
     @property
     def third_password_update_type(self):
-        """Gets the third_password_update_type of this ThirdPartyAuthConfig.
+        r"""Gets the third_password_update_type of this ThirdPartyAuthConfig.
 
         更新认证配置类型，认证类型为第三方密码时使用。ADD代表新增，UPDATE代表修改，DELETE代表删除。
 
@@ -277,7 +277,7 @@ class ThirdPartyAuthConfig:
 
     @third_password_update_type.setter
     def third_password_update_type(self, third_password_update_type):
-        """Sets the third_password_update_type of this ThirdPartyAuthConfig.
+        r"""Sets the third_password_update_type of this ThirdPartyAuthConfig.
 
         更新认证配置类型，认证类型为第三方密码时使用。ADD代表新增，UPDATE代表修改，DELETE代表删除。
 
@@ -288,7 +288,7 @@ class ThirdPartyAuthConfig:
 
     @property
     def custom_definition(self):
-        """Gets the custom_definition of this ThirdPartyAuthConfig.
+        r"""Gets the custom_definition of this ThirdPartyAuthConfig.
 
         自定义接口配置
 
@@ -299,7 +299,7 @@ class ThirdPartyAuthConfig:
 
     @custom_definition.setter
     def custom_definition(self, custom_definition):
-        """Sets the custom_definition of this ThirdPartyAuthConfig.
+        r"""Sets the custom_definition of this ThirdPartyAuthConfig.
 
         自定义接口配置
 
@@ -310,7 +310,7 @@ class ThirdPartyAuthConfig:
 
     @property
     def oauth_configs(self):
-        """Gets the oauth_configs of this ThirdPartyAuthConfig.
+        r"""Gets the oauth_configs of this ThirdPartyAuthConfig.
 
         oauth2配置
 
@@ -321,7 +321,7 @@ class ThirdPartyAuthConfig:
 
     @oauth_configs.setter
     def oauth_configs(self, oauth_configs):
-        """Sets the oauth_configs of this ThirdPartyAuthConfig.
+        r"""Sets the oauth_configs of this ThirdPartyAuthConfig.
 
         oauth2配置
 
@@ -332,7 +332,7 @@ class ThirdPartyAuthConfig:
 
     @property
     def ldap_configs(self):
-        """Gets the ldap_configs of this ThirdPartyAuthConfig.
+        r"""Gets the ldap_configs of this ThirdPartyAuthConfig.
 
         单点登录配置信息列表
 
@@ -343,7 +343,7 @@ class ThirdPartyAuthConfig:
 
     @ldap_configs.setter
     def ldap_configs(self, ldap_configs):
-        """Sets the ldap_configs of this ThirdPartyAuthConfig.
+        r"""Sets the ldap_configs of this ThirdPartyAuthConfig.
 
         单点登录配置信息列表
 
@@ -354,7 +354,7 @@ class ThirdPartyAuthConfig:
 
     @property
     def third_password_name(self):
-        """Gets the third_password_name of this ThirdPartyAuthConfig.
+        r"""Gets the third_password_name of this ThirdPartyAuthConfig.
 
         更新认证配置对象，认证类型为第三方密码时使用
 
@@ -365,7 +365,7 @@ class ThirdPartyAuthConfig:
 
     @third_password_name.setter
     def third_password_name(self, third_password_name):
-        """Sets the third_password_name of this ThirdPartyAuthConfig.
+        r"""Sets the third_password_name of this ThirdPartyAuthConfig.
 
         更新认证配置对象，认证类型为第三方密码时使用
 

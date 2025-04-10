@@ -25,7 +25,7 @@ class ShowQuotasRequest:
     }
 
     def __init__(self, x_language=None):
-        """ShowQuotasRequest
+        r"""ShowQuotasRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowQuotasRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowQuotasRequest.
+        r"""Gets the x_language of this ShowQuotasRequest.
 
         语言
 
@@ -54,7 +54,7 @@ class ShowQuotasRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowQuotasRequest.
+        r"""Sets the x_language of this ShowQuotasRequest.
 
         语言
 

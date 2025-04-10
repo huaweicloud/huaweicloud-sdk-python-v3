@@ -29,7 +29,7 @@ class CreatePubInfoRequestBody:
     }
 
     def __init__(self, pub_request_body=None, portal_request_body=None, menu_request_body=None):
-        """CreatePubInfoRequestBody
+        r"""CreatePubInfoRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CreatePubInfoRequestBody:
 
     @property
     def pub_request_body(self):
-        """Gets the pub_request_body of this CreatePubInfoRequestBody.
+        r"""Gets the pub_request_body of this CreatePubInfoRequestBody.
 
         :return: The pub_request_body of this CreatePubInfoRequestBody.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.PubInfoRequestBody`
@@ -63,7 +63,7 @@ class CreatePubInfoRequestBody:
 
     @pub_request_body.setter
     def pub_request_body(self, pub_request_body):
-        """Sets the pub_request_body of this CreatePubInfoRequestBody.
+        r"""Sets the pub_request_body of this CreatePubInfoRequestBody.
 
         :param pub_request_body: The pub_request_body of this CreatePubInfoRequestBody.
         :type pub_request_body: :class:`huaweicloudsdkkoomessage.v1.PubInfoRequestBody`
@@ -72,7 +72,7 @@ class CreatePubInfoRequestBody:
 
     @property
     def portal_request_body(self):
-        """Gets the portal_request_body of this CreatePubInfoRequestBody.
+        r"""Gets the portal_request_body of this CreatePubInfoRequestBody.
 
         :return: The portal_request_body of this CreatePubInfoRequestBody.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.PortalInfoRequestBody`
@@ -81,7 +81,7 @@ class CreatePubInfoRequestBody:
 
     @portal_request_body.setter
     def portal_request_body(self, portal_request_body):
-        """Sets the portal_request_body of this CreatePubInfoRequestBody.
+        r"""Sets the portal_request_body of this CreatePubInfoRequestBody.
 
         :param portal_request_body: The portal_request_body of this CreatePubInfoRequestBody.
         :type portal_request_body: :class:`huaweicloudsdkkoomessage.v1.PortalInfoRequestBody`
@@ -90,7 +90,7 @@ class CreatePubInfoRequestBody:
 
     @property
     def menu_request_body(self):
-        """Gets the menu_request_body of this CreatePubInfoRequestBody.
+        r"""Gets the menu_request_body of this CreatePubInfoRequestBody.
 
         :return: The menu_request_body of this CreatePubInfoRequestBody.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.MenuInfoRequestBody`
@@ -99,7 +99,7 @@ class CreatePubInfoRequestBody:
 
     @menu_request_body.setter
     def menu_request_body(self, menu_request_body):
-        """Sets the menu_request_body of this CreatePubInfoRequestBody.
+        r"""Sets the menu_request_body of this CreatePubInfoRequestBody.
 
         :param menu_request_body: The menu_request_body of this CreatePubInfoRequestBody.
         :type menu_request_body: :class:`huaweicloudsdkkoomessage.v1.MenuInfoRequestBody`

@@ -27,7 +27,7 @@ class CreateFirewallRequestBody:
     }
 
     def __init__(self, firewall=None, dry_run=None):
-        """CreateFirewallRequestBody
+        r"""CreateFirewallRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateFirewallRequestBody:
 
     @property
     def firewall(self):
-        """Gets the firewall of this CreateFirewallRequestBody.
+        r"""Gets the firewall of this CreateFirewallRequestBody.
 
         :return: The firewall of this CreateFirewallRequestBody.
         :rtype: :class:`huaweicloudsdkvpc.v3.CreateFirewallOption`
@@ -58,7 +58,7 @@ class CreateFirewallRequestBody:
 
     @firewall.setter
     def firewall(self, firewall):
-        """Sets the firewall of this CreateFirewallRequestBody.
+        r"""Sets the firewall of this CreateFirewallRequestBody.
 
         :param firewall: The firewall of this CreateFirewallRequestBody.
         :type firewall: :class:`huaweicloudsdkvpc.v3.CreateFirewallOption`
@@ -67,7 +67,7 @@ class CreateFirewallRequestBody:
 
     @property
     def dry_run(self):
-        """Gets the dry_run of this CreateFirewallRequestBody.
+        r"""Gets the dry_run of this CreateFirewallRequestBody.
 
         功能说明：是否只预检此次请求 取值范围： -true：发送检查请求，不会创建ACL。检查项包括是否填写了必需参数、请求格式、业务限制。如果检查不通过，则返回对应错误。如果检查通过，则返回响应码202。 -false（默认值）：发送正常请求，并直接创建ACL。
 
@@ -78,7 +78,7 @@ class CreateFirewallRequestBody:
 
     @dry_run.setter
     def dry_run(self, dry_run):
-        """Sets the dry_run of this CreateFirewallRequestBody.
+        r"""Sets the dry_run of this CreateFirewallRequestBody.
 
         功能说明：是否只预检此次请求 取值范围： -true：发送检查请求，不会创建ACL。检查项包括是否填写了必需参数、请求格式、业务限制。如果检查不通过，则返回对应错误。如果检查通过，则返回响应码202。 -false（默认值）：发送正常请求，并直接创建ACL。
 

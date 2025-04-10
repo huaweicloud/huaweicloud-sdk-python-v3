@@ -28,7 +28,7 @@ class CreateExtensionAuthorizationResponse(SdkResponse):
     }
 
     def __init__(self, result=None, status=None):
-        """CreateExtensionAuthorizationResponse
+        r"""CreateExtensionAuthorizationResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateExtensionAuthorizationResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this CreateExtensionAuthorizationResponse.
+        r"""Gets the result of this CreateExtensionAuthorizationResponse.
 
         返回值
 
@@ -62,7 +62,7 @@ class CreateExtensionAuthorizationResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this CreateExtensionAuthorizationResponse.
+        r"""Sets the result of this CreateExtensionAuthorizationResponse.
 
         返回值
 
@@ -73,7 +73,7 @@ class CreateExtensionAuthorizationResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateExtensionAuthorizationResponse.
+        r"""Gets the status of this CreateExtensionAuthorizationResponse.
 
         状态
 
@@ -84,7 +84,7 @@ class CreateExtensionAuthorizationResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateExtensionAuthorizationResponse.
+        r"""Sets the status of this CreateExtensionAuthorizationResponse.
 
         状态
 

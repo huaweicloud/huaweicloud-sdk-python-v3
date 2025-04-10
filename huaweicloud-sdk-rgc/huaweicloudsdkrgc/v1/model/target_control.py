@@ -49,7 +49,7 @@ class TargetControl:
     }
 
     def __init__(self, manage_account_id=None, control_identifier=None, state=None, version=None, name=None, description=None, control_objective=None, behavior=None, owner=None, regional_preference=None, guidance=None, service=None, implementation=None):
-        """TargetControl
+        r"""TargetControl
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class TargetControl:
 
     @property
     def manage_account_id(self):
-        """Gets the manage_account_id of this TargetControl.
+        r"""Gets the manage_account_id of this TargetControl.
 
         管理纳管账号ID。
 
@@ -138,7 +138,7 @@ class TargetControl:
 
     @manage_account_id.setter
     def manage_account_id(self, manage_account_id):
-        """Sets the manage_account_id of this TargetControl.
+        r"""Sets the manage_account_id of this TargetControl.
 
         管理纳管账号ID。
 
@@ -149,7 +149,7 @@ class TargetControl:
 
     @property
     def control_identifier(self):
-        """Gets the control_identifier of this TargetControl.
+        r"""Gets the control_identifier of this TargetControl.
 
         控制策略标识。
 
@@ -160,7 +160,7 @@ class TargetControl:
 
     @control_identifier.setter
     def control_identifier(self, control_identifier):
-        """Sets the control_identifier of this TargetControl.
+        r"""Sets the control_identifier of this TargetControl.
 
         控制策略标识。
 
@@ -171,7 +171,7 @@ class TargetControl:
 
     @property
     def state(self):
-        """Gets the state of this TargetControl.
+        r"""Gets the state of this TargetControl.
 
         控制策略启用状态。
 
@@ -182,7 +182,7 @@ class TargetControl:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this TargetControl.
+        r"""Sets the state of this TargetControl.
 
         控制策略启用状态。
 
@@ -193,7 +193,7 @@ class TargetControl:
 
     @property
     def version(self):
-        """Gets the version of this TargetControl.
+        r"""Gets the version of this TargetControl.
 
         控制策略当前版本号。
 
@@ -204,7 +204,7 @@ class TargetControl:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this TargetControl.
+        r"""Sets the version of this TargetControl.
 
         控制策略当前版本号。
 
@@ -215,7 +215,7 @@ class TargetControl:
 
     @property
     def name(self):
-        """Gets the name of this TargetControl.
+        r"""Gets the name of this TargetControl.
 
         控制策略名称。
 
@@ -226,7 +226,7 @@ class TargetControl:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TargetControl.
+        r"""Sets the name of this TargetControl.
 
         控制策略名称。
 
@@ -237,7 +237,7 @@ class TargetControl:
 
     @property
     def description(self):
-        """Gets the description of this TargetControl.
+        r"""Gets the description of this TargetControl.
 
         控制策略描述信息。
 
@@ -248,7 +248,7 @@ class TargetControl:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TargetControl.
+        r"""Sets the description of this TargetControl.
 
         控制策略描述信息。
 
@@ -259,7 +259,7 @@ class TargetControl:
 
     @property
     def control_objective(self):
-        """Gets the control_objective of this TargetControl.
+        r"""Gets the control_objective of this TargetControl.
 
         控制策略目标。
 
@@ -270,7 +270,7 @@ class TargetControl:
 
     @control_objective.setter
     def control_objective(self, control_objective):
-        """Sets the control_objective of this TargetControl.
+        r"""Sets the control_objective of this TargetControl.
 
         控制策略目标。
 
@@ -281,7 +281,7 @@ class TargetControl:
 
     @property
     def behavior(self):
-        """Gets the behavior of this TargetControl.
+        r"""Gets the behavior of this TargetControl.
 
         控制策略类型。包括主动性控制策略Proactive、检测性控制策略Detective、预防性控制策略Preventive。
 
@@ -292,7 +292,7 @@ class TargetControl:
 
     @behavior.setter
     def behavior(self, behavior):
-        """Sets the behavior of this TargetControl.
+        r"""Sets the behavior of this TargetControl.
 
         控制策略类型。包括主动性控制策略Proactive、检测性控制策略Detective、预防性控制策略Preventive。
 
@@ -303,7 +303,7 @@ class TargetControl:
 
     @property
     def owner(self):
-        """Gets the owner of this TargetControl.
+        r"""Gets the owner of this TargetControl.
 
         纳管账号的创建来源，包括CUSTOM和RGC。
 
@@ -314,7 +314,7 @@ class TargetControl:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this TargetControl.
+        r"""Sets the owner of this TargetControl.
 
         纳管账号的创建来源，包括CUSTOM和RGC。
 
@@ -325,7 +325,7 @@ class TargetControl:
 
     @property
     def regional_preference(self):
-        """Gets the regional_preference of this TargetControl.
+        r"""Gets the regional_preference of this TargetControl.
 
         区域选项，取值有两种分别是：区域的regional和全局的global。
 
@@ -336,7 +336,7 @@ class TargetControl:
 
     @regional_preference.setter
     def regional_preference(self, regional_preference):
-        """Sets the regional_preference of this TargetControl.
+        r"""Sets the regional_preference of this TargetControl.
 
         区域选项，取值有两种分别是：区域的regional和全局的global。
 
@@ -347,7 +347,7 @@ class TargetControl:
 
     @property
     def guidance(self):
-        """Gets the guidance of this TargetControl.
+        r"""Gets the guidance of this TargetControl.
 
         控制策略必须性。
 
@@ -358,7 +358,7 @@ class TargetControl:
 
     @guidance.setter
     def guidance(self, guidance):
-        """Sets the guidance of this TargetControl.
+        r"""Sets the guidance of this TargetControl.
 
         控制策略必须性。
 
@@ -369,7 +369,7 @@ class TargetControl:
 
     @property
     def service(self):
-        """Gets the service of this TargetControl.
+        r"""Gets the service of this TargetControl.
 
         控制策略所属服务。
 
@@ -380,7 +380,7 @@ class TargetControl:
 
     @service.setter
     def service(self, service):
-        """Sets the service of this TargetControl.
+        r"""Sets the service of this TargetControl.
 
         控制策略所属服务。
 
@@ -391,7 +391,7 @@ class TargetControl:
 
     @property
     def implementation(self):
-        """Gets the implementation of this TargetControl.
+        r"""Gets the implementation of this TargetControl.
 
         服务控制策略（SCP），配置规则。
 
@@ -402,7 +402,7 @@ class TargetControl:
 
     @implementation.setter
     def implementation(self, implementation):
-        """Sets the implementation of this TargetControl.
+        r"""Sets the implementation of this TargetControl.
 
         服务控制策略（SCP），配置规则。
 

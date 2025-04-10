@@ -25,7 +25,7 @@ class UpdateEquipmentInfoBody:
     }
 
     def __init__(self, name=None):
-        """UpdateEquipmentInfoBody
+        r"""UpdateEquipmentInfoBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateEquipmentInfoBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateEquipmentInfoBody.
+        r"""Gets the name of this UpdateEquipmentInfoBody.
 
         设备名称
 
@@ -53,7 +53,7 @@ class UpdateEquipmentInfoBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateEquipmentInfoBody.
+        r"""Sets the name of this UpdateEquipmentInfoBody.
 
         设备名称
 

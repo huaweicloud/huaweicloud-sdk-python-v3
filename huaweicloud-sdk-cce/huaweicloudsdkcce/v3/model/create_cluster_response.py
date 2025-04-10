@@ -34,7 +34,7 @@ class CreateClusterResponse(SdkResponse):
     }
 
     def __init__(self, kind=None, api_version=None, metadata=None, spec=None, status=None):
-        """CreateClusterResponse
+        r"""CreateClusterResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class CreateClusterResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this CreateClusterResponse.
+        r"""Gets the kind of this CreateClusterResponse.
 
         API类型，固定值“Cluster”或“cluster”，该值不可修改。  
 
@@ -83,7 +83,7 @@ class CreateClusterResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this CreateClusterResponse.
+        r"""Sets the kind of this CreateClusterResponse.
 
         API类型，固定值“Cluster”或“cluster”，该值不可修改。  
 
@@ -94,7 +94,7 @@ class CreateClusterResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this CreateClusterResponse.
+        r"""Gets the api_version of this CreateClusterResponse.
 
         API版本，固定值“v3”，该值不可修改。  
 
@@ -105,7 +105,7 @@ class CreateClusterResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this CreateClusterResponse.
+        r"""Sets the api_version of this CreateClusterResponse.
 
         API版本，固定值“v3”，该值不可修改。  
 
@@ -116,7 +116,7 @@ class CreateClusterResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this CreateClusterResponse.
+        r"""Gets the metadata of this CreateClusterResponse.
 
         :return: The metadata of this CreateClusterResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.ClusterMetadata`
@@ -125,7 +125,7 @@ class CreateClusterResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this CreateClusterResponse.
+        r"""Sets the metadata of this CreateClusterResponse.
 
         :param metadata: The metadata of this CreateClusterResponse.
         :type metadata: :class:`huaweicloudsdkcce.v3.ClusterMetadata`
@@ -134,7 +134,7 @@ class CreateClusterResponse(SdkResponse):
 
     @property
     def spec(self):
-        """Gets the spec of this CreateClusterResponse.
+        r"""Gets the spec of this CreateClusterResponse.
 
         :return: The spec of this CreateClusterResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.ClusterSpec`
@@ -143,7 +143,7 @@ class CreateClusterResponse(SdkResponse):
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this CreateClusterResponse.
+        r"""Sets the spec of this CreateClusterResponse.
 
         :param spec: The spec of this CreateClusterResponse.
         :type spec: :class:`huaweicloudsdkcce.v3.ClusterSpec`
@@ -152,7 +152,7 @@ class CreateClusterResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateClusterResponse.
+        r"""Gets the status of this CreateClusterResponse.
 
         :return: The status of this CreateClusterResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.ClusterStatus`
@@ -161,7 +161,7 @@ class CreateClusterResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateClusterResponse.
+        r"""Sets the status of this CreateClusterResponse.
 
         :param status: The status of this CreateClusterResponse.
         :type status: :class:`huaweicloudsdkcce.v3.ClusterStatus`

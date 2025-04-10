@@ -27,7 +27,7 @@ class DeleteEcnWithErRequest:
     }
 
     def __init__(self, ecn_id=None, relation_id=None):
-        """DeleteEcnWithErRequest
+        r"""DeleteEcnWithErRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteEcnWithErRequest:
 
     @property
     def ecn_id(self):
-        """Gets the ecn_id of this DeleteEcnWithErRequest.
+        r"""Gets the ecn_id of this DeleteEcnWithErRequest.
 
         企业连接网络ID
 
@@ -59,7 +59,7 @@ class DeleteEcnWithErRequest:
 
     @ecn_id.setter
     def ecn_id(self, ecn_id):
-        """Sets the ecn_id of this DeleteEcnWithErRequest.
+        r"""Sets the ecn_id of this DeleteEcnWithErRequest.
 
         企业连接网络ID
 
@@ -70,7 +70,7 @@ class DeleteEcnWithErRequest:
 
     @property
     def relation_id(self):
-        """Gets the relation_id of this DeleteEcnWithErRequest.
+        r"""Gets the relation_id of this DeleteEcnWithErRequest.
 
         企业连接网络绑定关系ID
 
@@ -81,7 +81,7 @@ class DeleteEcnWithErRequest:
 
     @relation_id.setter
     def relation_id(self, relation_id):
-        """Sets the relation_id of this DeleteEcnWithErRequest.
+        r"""Sets the relation_id of this DeleteEcnWithErRequest.
 
         企业连接网络绑定关系ID
 

@@ -43,7 +43,7 @@ class OpExtendInfoReplication:
     }
 
     def __init__(self, destination_backup_id=None, destination_checkpoint_id=None, destination_project_id=None, destination_region=None, source_backup_id=None, source_checkpoint_id=None, source_project_id=None, source_region=None, source_backup_name=None, destination_backup_name=None):
-        """OpExtendInfoReplication
+        r"""OpExtendInfoReplication
 
         The model defined in huaweicloud sdk
 
@@ -101,7 +101,7 @@ class OpExtendInfoReplication:
 
     @property
     def destination_backup_id(self):
-        """Gets the destination_backup_id of this OpExtendInfoReplication.
+        r"""Gets the destination_backup_id of this OpExtendInfoReplication.
 
         目标副本ID
 
@@ -112,7 +112,7 @@ class OpExtendInfoReplication:
 
     @destination_backup_id.setter
     def destination_backup_id(self, destination_backup_id):
-        """Sets the destination_backup_id of this OpExtendInfoReplication.
+        r"""Sets the destination_backup_id of this OpExtendInfoReplication.
 
         目标副本ID
 
@@ -123,7 +123,7 @@ class OpExtendInfoReplication:
 
     @property
     def destination_checkpoint_id(self):
-        """Gets the destination_checkpoint_id of this OpExtendInfoReplication.
+        r"""Gets the destination_checkpoint_id of this OpExtendInfoReplication.
 
         目标还原点ID
 
@@ -134,7 +134,7 @@ class OpExtendInfoReplication:
 
     @destination_checkpoint_id.setter
     def destination_checkpoint_id(self, destination_checkpoint_id):
-        """Sets the destination_checkpoint_id of this OpExtendInfoReplication.
+        r"""Sets the destination_checkpoint_id of this OpExtendInfoReplication.
 
         目标还原点ID
 
@@ -145,7 +145,7 @@ class OpExtendInfoReplication:
 
     @property
     def destination_project_id(self):
-        """Gets the destination_project_id of this OpExtendInfoReplication.
+        r"""Gets the destination_project_id of this OpExtendInfoReplication.
 
         目标project_id
 
@@ -156,7 +156,7 @@ class OpExtendInfoReplication:
 
     @destination_project_id.setter
     def destination_project_id(self, destination_project_id):
-        """Sets the destination_project_id of this OpExtendInfoReplication.
+        r"""Sets the destination_project_id of this OpExtendInfoReplication.
 
         目标project_id
 
@@ -167,7 +167,7 @@ class OpExtendInfoReplication:
 
     @property
     def destination_region(self):
-        """Gets the destination_region of this OpExtendInfoReplication.
+        r"""Gets the destination_region of this OpExtendInfoReplication.
 
         目标区域
 
@@ -178,7 +178,7 @@ class OpExtendInfoReplication:
 
     @destination_region.setter
     def destination_region(self, destination_region):
-        """Sets the destination_region of this OpExtendInfoReplication.
+        r"""Sets the destination_region of this OpExtendInfoReplication.
 
         目标区域
 
@@ -189,7 +189,7 @@ class OpExtendInfoReplication:
 
     @property
     def source_backup_id(self):
-        """Gets the source_backup_id of this OpExtendInfoReplication.
+        r"""Gets the source_backup_id of this OpExtendInfoReplication.
 
         源副本ID
 
@@ -200,7 +200,7 @@ class OpExtendInfoReplication:
 
     @source_backup_id.setter
     def source_backup_id(self, source_backup_id):
-        """Sets the source_backup_id of this OpExtendInfoReplication.
+        r"""Sets the source_backup_id of this OpExtendInfoReplication.
 
         源副本ID
 
@@ -211,7 +211,7 @@ class OpExtendInfoReplication:
 
     @property
     def source_checkpoint_id(self):
-        """Gets the source_checkpoint_id of this OpExtendInfoReplication.
+        r"""Gets the source_checkpoint_id of this OpExtendInfoReplication.
 
         源还原点ID
 
@@ -222,7 +222,7 @@ class OpExtendInfoReplication:
 
     @source_checkpoint_id.setter
     def source_checkpoint_id(self, source_checkpoint_id):
-        """Sets the source_checkpoint_id of this OpExtendInfoReplication.
+        r"""Sets the source_checkpoint_id of this OpExtendInfoReplication.
 
         源还原点ID
 
@@ -233,7 +233,7 @@ class OpExtendInfoReplication:
 
     @property
     def source_project_id(self):
-        """Gets the source_project_id of this OpExtendInfoReplication.
+        r"""Gets the source_project_id of this OpExtendInfoReplication.
 
         源project_id
 
@@ -244,7 +244,7 @@ class OpExtendInfoReplication:
 
     @source_project_id.setter
     def source_project_id(self, source_project_id):
-        """Sets the source_project_id of this OpExtendInfoReplication.
+        r"""Sets the source_project_id of this OpExtendInfoReplication.
 
         源project_id
 
@@ -255,7 +255,7 @@ class OpExtendInfoReplication:
 
     @property
     def source_region(self):
-        """Gets the source_region of this OpExtendInfoReplication.
+        r"""Gets the source_region of this OpExtendInfoReplication.
 
         源区域
 
@@ -266,7 +266,7 @@ class OpExtendInfoReplication:
 
     @source_region.setter
     def source_region(self, source_region):
-        """Sets the source_region of this OpExtendInfoReplication.
+        r"""Sets the source_region of this OpExtendInfoReplication.
 
         源区域
 
@@ -277,7 +277,7 @@ class OpExtendInfoReplication:
 
     @property
     def source_backup_name(self):
-        """Gets the source_backup_name of this OpExtendInfoReplication.
+        r"""Gets the source_backup_name of this OpExtendInfoReplication.
 
         源备份名称
 
@@ -288,7 +288,7 @@ class OpExtendInfoReplication:
 
     @source_backup_name.setter
     def source_backup_name(self, source_backup_name):
-        """Sets the source_backup_name of this OpExtendInfoReplication.
+        r"""Sets the source_backup_name of this OpExtendInfoReplication.
 
         源备份名称
 
@@ -299,7 +299,7 @@ class OpExtendInfoReplication:
 
     @property
     def destination_backup_name(self):
-        """Gets the destination_backup_name of this OpExtendInfoReplication.
+        r"""Gets the destination_backup_name of this OpExtendInfoReplication.
 
         目标备份名称
 
@@ -310,7 +310,7 @@ class OpExtendInfoReplication:
 
     @destination_backup_name.setter
     def destination_backup_name(self, destination_backup_name):
-        """Sets the destination_backup_name of this OpExtendInfoReplication.
+        r"""Sets the destination_backup_name of this OpExtendInfoReplication.
 
         目标备份名称
 

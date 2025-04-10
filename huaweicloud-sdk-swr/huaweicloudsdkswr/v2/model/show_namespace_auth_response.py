@@ -34,7 +34,7 @@ class ShowNamespaceAuthResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, creator_name=None, self_auth=None, others_auths=None):
-        """ShowNamespaceAuthResponse
+        r"""ShowNamespaceAuthResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowNamespaceAuthResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowNamespaceAuthResponse.
+        r"""Gets the id of this ShowNamespaceAuthResponse.
 
         id
 
@@ -83,7 +83,7 @@ class ShowNamespaceAuthResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowNamespaceAuthResponse.
+        r"""Sets the id of this ShowNamespaceAuthResponse.
 
         id
 
@@ -94,7 +94,7 @@ class ShowNamespaceAuthResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowNamespaceAuthResponse.
+        r"""Gets the name of this ShowNamespaceAuthResponse.
 
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
@@ -105,7 +105,7 @@ class ShowNamespaceAuthResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowNamespaceAuthResponse.
+        r"""Sets the name of this ShowNamespaceAuthResponse.
 
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
@@ -116,7 +116,7 @@ class ShowNamespaceAuthResponse(SdkResponse):
 
     @property
     def creator_name(self):
-        """Gets the creator_name of this ShowNamespaceAuthResponse.
+        r"""Gets the creator_name of this ShowNamespaceAuthResponse.
 
         组织创建者
 
@@ -127,7 +127,7 @@ class ShowNamespaceAuthResponse(SdkResponse):
 
     @creator_name.setter
     def creator_name(self, creator_name):
-        """Sets the creator_name of this ShowNamespaceAuthResponse.
+        r"""Sets the creator_name of this ShowNamespaceAuthResponse.
 
         组织创建者
 
@@ -138,7 +138,7 @@ class ShowNamespaceAuthResponse(SdkResponse):
 
     @property
     def self_auth(self):
-        """Gets the self_auth of this ShowNamespaceAuthResponse.
+        r"""Gets the self_auth of this ShowNamespaceAuthResponse.
 
         :return: The self_auth of this ShowNamespaceAuthResponse.
         :rtype: :class:`huaweicloudsdkswr.v2.UserAuth`
@@ -147,7 +147,7 @@ class ShowNamespaceAuthResponse(SdkResponse):
 
     @self_auth.setter
     def self_auth(self, self_auth):
-        """Sets the self_auth of this ShowNamespaceAuthResponse.
+        r"""Sets the self_auth of this ShowNamespaceAuthResponse.
 
         :param self_auth: The self_auth of this ShowNamespaceAuthResponse.
         :type self_auth: :class:`huaweicloudsdkswr.v2.UserAuth`
@@ -156,7 +156,7 @@ class ShowNamespaceAuthResponse(SdkResponse):
 
     @property
     def others_auths(self):
-        """Gets the others_auths of this ShowNamespaceAuthResponse.
+        r"""Gets the others_auths of this ShowNamespaceAuthResponse.
 
         其他用户的权限
 
@@ -167,7 +167,7 @@ class ShowNamespaceAuthResponse(SdkResponse):
 
     @others_auths.setter
     def others_auths(self, others_auths):
-        """Sets the others_auths of this ShowNamespaceAuthResponse.
+        r"""Sets the others_auths of this ShowNamespaceAuthResponse.
 
         其他用户的权限
 

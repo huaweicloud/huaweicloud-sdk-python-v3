@@ -41,7 +41,7 @@ class TransactionConfigItem:
     }
 
     def __init__(self, id=None, business_id=None, env_id=None, method=None, env_name=None, region=None, type=None, app_name=None, url=None):
-        """TransactionConfigItem
+        r"""TransactionConfigItem
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class TransactionConfigItem:
 
     @property
     def id(self):
-        """Gets the id of this TransactionConfigItem.
+        r"""Gets the id of this TransactionConfigItem.
 
         配置id。
 
@@ -110,7 +110,7 @@ class TransactionConfigItem:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TransactionConfigItem.
+        r"""Sets the id of this TransactionConfigItem.
 
         配置id。
 
@@ -121,7 +121,7 @@ class TransactionConfigItem:
 
     @property
     def business_id(self):
-        """Gets the business_id of this TransactionConfigItem.
+        r"""Gets the business_id of this TransactionConfigItem.
 
         应用id。
 
@@ -132,7 +132,7 @@ class TransactionConfigItem:
 
     @business_id.setter
     def business_id(self, business_id):
-        """Sets the business_id of this TransactionConfigItem.
+        r"""Sets the business_id of this TransactionConfigItem.
 
         应用id。
 
@@ -143,7 +143,7 @@ class TransactionConfigItem:
 
     @property
     def env_id(self):
-        """Gets the env_id of this TransactionConfigItem.
+        r"""Gets the env_id of this TransactionConfigItem.
 
         环境id。
 
@@ -154,7 +154,7 @@ class TransactionConfigItem:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this TransactionConfigItem.
+        r"""Sets the env_id of this TransactionConfigItem.
 
         环境id。
 
@@ -165,7 +165,7 @@ class TransactionConfigItem:
 
     @property
     def method(self):
-        """Gets the method of this TransactionConfigItem.
+        r"""Gets the method of this TransactionConfigItem.
 
         请求方式。
 
@@ -176,7 +176,7 @@ class TransactionConfigItem:
 
     @method.setter
     def method(self, method):
-        """Sets the method of this TransactionConfigItem.
+        r"""Sets the method of this TransactionConfigItem.
 
         请求方式。
 
@@ -187,7 +187,7 @@ class TransactionConfigItem:
 
     @property
     def env_name(self):
-        """Gets the env_name of this TransactionConfigItem.
+        r"""Gets the env_name of this TransactionConfigItem.
 
         环境名称。
 
@@ -198,7 +198,7 @@ class TransactionConfigItem:
 
     @env_name.setter
     def env_name(self, env_name):
-        """Sets the env_name of this TransactionConfigItem.
+        r"""Sets the env_name of this TransactionConfigItem.
 
         环境名称。
 
@@ -209,7 +209,7 @@ class TransactionConfigItem:
 
     @property
     def region(self):
-        """Gets the region of this TransactionConfigItem.
+        r"""Gets the region of this TransactionConfigItem.
 
         region显示英文名称。
 
@@ -220,7 +220,7 @@ class TransactionConfigItem:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this TransactionConfigItem.
+        r"""Sets the region of this TransactionConfigItem.
 
         region显示英文名称。
 
@@ -231,7 +231,7 @@ class TransactionConfigItem:
 
     @property
     def type(self):
-        """Gets the type of this TransactionConfigItem.
+        r"""Gets the type of this TransactionConfigItem.
 
         类型。
 
@@ -242,7 +242,7 @@ class TransactionConfigItem:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this TransactionConfigItem.
+        r"""Sets the type of this TransactionConfigItem.
 
         类型。
 
@@ -253,7 +253,7 @@ class TransactionConfigItem:
 
     @property
     def app_name(self):
-        """Gets the app_name of this TransactionConfigItem.
+        r"""Gets the app_name of this TransactionConfigItem.
 
         应用名称。
 
@@ -264,7 +264,7 @@ class TransactionConfigItem:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this TransactionConfigItem.
+        r"""Sets the app_name of this TransactionConfigItem.
 
         应用名称。
 
@@ -275,7 +275,7 @@ class TransactionConfigItem:
 
     @property
     def url(self):
-        """Gets the url of this TransactionConfigItem.
+        r"""Gets the url of this TransactionConfigItem.
 
         url地址。
 
@@ -286,7 +286,7 @@ class TransactionConfigItem:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this TransactionConfigItem.
+        r"""Sets the url of this TransactionConfigItem.
 
         url地址。
 

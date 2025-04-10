@@ -55,7 +55,7 @@ class AimPersonalTemplateContent:
     }
 
     def __init__(self, type=None, content=None, content_child=None, src_type=None, src=None, cover=None, is_text_title=None, action_type=None, position_number=None, visible=None, currency_display=None, oppo_background=None, vivo_background=None, ratio=None, action=None, button_type=None):
-        """AimPersonalTemplateContent
+        r"""AimPersonalTemplateContent
 
         The model defined in huaweicloud sdk
 
@@ -146,7 +146,7 @@ class AimPersonalTemplateContent:
 
     @property
     def type(self):
-        """Gets the type of this AimPersonalTemplateContent.
+        r"""Gets the type of this AimPersonalTemplateContent.
 
         模板资源类型。 - text：表示文本 - image：表示图片 - video：表示视频 - button：表示按钮 - followPub：表示华为服务号，暂不支持  > 图片轮播类模板最多可以放5张图片，即card_id为CarouselSquareImage、CarouselImageSixteenToNine、CarouselVerticalImage时，type为image的资源最多有5个。 
 
@@ -157,7 +157,7 @@ class AimPersonalTemplateContent:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AimPersonalTemplateContent.
+        r"""Sets the type of this AimPersonalTemplateContent.
 
         模板资源类型。 - text：表示文本 - image：表示图片 - video：表示视频 - button：表示按钮 - followPub：表示华为服务号，暂不支持  > 图片轮播类模板最多可以放5张图片，即card_id为CarouselSquareImage、CarouselImageSixteenToNine、CarouselVerticalImage时，type为image的资源最多有5个。 
 
@@ -168,7 +168,7 @@ class AimPersonalTemplateContent:
 
     @property
     def content(self):
-        """Gets the content of this AimPersonalTemplateContent.
+        r"""Gets the content of this AimPersonalTemplateContent.
 
         资源类型为Text或Button时，为必填。文本长度限制请按智能短信模板版式格式标准。  > 智能信息模板标准版式要求可登录KooMessage控制台，在创建智能信息模板中查看。 
 
@@ -179,7 +179,7 @@ class AimPersonalTemplateContent:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this AimPersonalTemplateContent.
+        r"""Sets the content of this AimPersonalTemplateContent.
 
         资源类型为Text或Button时，为必填。文本长度限制请按智能短信模板版式格式标准。  > 智能信息模板标准版式要求可登录KooMessage控制台，在创建智能信息模板中查看。 
 
@@ -190,7 +190,7 @@ class AimPersonalTemplateContent:
 
     @property
     def content_child(self):
-        """Gets the content_child of this AimPersonalTemplateContent.
+        r"""Gets the content_child of this AimPersonalTemplateContent.
 
         子内容。非必填，文本长度限制请参考智能信息模板标准版式要求。  > 智能信息模板标准版式要求可登录KooMessage控制台，在创建智能信息模板中查看。 
 
@@ -201,7 +201,7 @@ class AimPersonalTemplateContent:
 
     @content_child.setter
     def content_child(self, content_child):
-        """Sets the content_child of this AimPersonalTemplateContent.
+        r"""Sets the content_child of this AimPersonalTemplateContent.
 
         子内容。非必填，文本长度限制请参考智能信息模板标准版式要求。  > 智能信息模板标准版式要求可登录KooMessage控制台，在创建智能信息模板中查看。 
 
@@ -212,7 +212,7 @@ class AimPersonalTemplateContent:
 
     @property
     def src_type(self):
-        """Gets the src_type of this AimPersonalTemplateContent.
+        r"""Gets the src_type of this AimPersonalTemplateContent.
 
         src类型。资源类型为Image或Video时，该项为必填项。 - 1：指资源ID  - 2：指资源地址  > src_type为2，即资源地址时，src或cover内容必须是存储在客户侧服务器上的资源地址。 
 
@@ -223,7 +223,7 @@ class AimPersonalTemplateContent:
 
     @src_type.setter
     def src_type(self, src_type):
-        """Sets the src_type of this AimPersonalTemplateContent.
+        r"""Sets the src_type of this AimPersonalTemplateContent.
 
         src类型。资源类型为Image或Video时，该项为必填项。 - 1：指资源ID  - 2：指资源地址  > src_type为2，即资源地址时，src或cover内容必须是存储在客户侧服务器上的资源地址。 
 
@@ -234,7 +234,7 @@ class AimPersonalTemplateContent:
 
     @property
     def src(self):
-        """Gets the src of this AimPersonalTemplateContent.
+        r"""Gets the src of this AimPersonalTemplateContent.
 
         资源来源，资源类型为Image或Video时，为必填，通过设置视频模板封面图接口设置视频封面。 > - 如上src_type为1，即资源ID时，参数填入上传模板素材接口中返回的aim_resource_id，如：691996319597764608 > - 如上src_type为2，即资源地址时，参数填写资源完整的URL，最大长度不超过1000个字符  
 
@@ -245,7 +245,7 @@ class AimPersonalTemplateContent:
 
     @src.setter
     def src(self, src):
-        """Sets the src of this AimPersonalTemplateContent.
+        r"""Sets the src of this AimPersonalTemplateContent.
 
         资源来源，资源类型为Image或Video时，为必填，通过设置视频模板封面图接口设置视频封面。 > - 如上src_type为1，即资源ID时，参数填入上传模板素材接口中返回的aim_resource_id，如：691996319597764608 > - 如上src_type为2，即资源地址时，参数填写资源完整的URL，最大长度不超过1000个字符  
 
@@ -256,7 +256,7 @@ class AimPersonalTemplateContent:
 
     @property
     def cover(self):
-        """Gets the cover of this AimPersonalTemplateContent.
+        r"""Gets the cover of this AimPersonalTemplateContent.
 
         视频封面。 > 资源类型为Video时，为必填。 > - 如上src_type为1，即资源ID时，参数填入上传模板素材接口中返回的aim_resource_id，如：691996319597764608 > - 如上src_type为2，即资源地址时，参数填写资源完整的URL，最大长度不超过1000个字符 
 
@@ -267,7 +267,7 @@ class AimPersonalTemplateContent:
 
     @cover.setter
     def cover(self, cover):
-        """Sets the cover of this AimPersonalTemplateContent.
+        r"""Sets the cover of this AimPersonalTemplateContent.
 
         视频封面。 > 资源类型为Video时，为必填。 > - 如上src_type为1，即资源ID时，参数填入上传模板素材接口中返回的aim_resource_id，如：691996319597764608 > - 如上src_type为2，即资源地址时，参数填写资源完整的URL，最大长度不超过1000个字符 
 
@@ -278,7 +278,7 @@ class AimPersonalTemplateContent:
 
     @property
     def is_text_title(self):
-        """Gets the is_text_title of this AimPersonalTemplateContent.
+        r"""Gets the is_text_title of this AimPersonalTemplateContent.
 
         是否为文本标题。  - true：是 - false：不是  > 不填默认为false。 
 
@@ -289,7 +289,7 @@ class AimPersonalTemplateContent:
 
     @is_text_title.setter
     def is_text_title(self, is_text_title):
-        """Sets the is_text_title of this AimPersonalTemplateContent.
+        r"""Sets the is_text_title of this AimPersonalTemplateContent.
 
         是否为文本标题。  - true：是 - false：不是  > 不填默认为false。 
 
@@ -300,7 +300,7 @@ class AimPersonalTemplateContent:
 
     @property
     def action_type(self):
-        """Gets the action_type of this AimPersonalTemplateContent.
+        r"""Gets the action_type of this AimPersonalTemplateContent.
 
         功能类型。  - OPEN_URL：表示跳转H5 - OPEN_QUICK：表示跳转快应用 - OPEN_APP：表示跳转APP - DIAL_PHONE：表示拉起拨号盘 - OPEN_SMS：表示新建短信息 - OPEN_EMAIL：表示打开邮箱 - OPEN_SCHEDULE：表示新建日程 - OPEN_MAP：表示位置定位 - OPEN_BROWSER：表示打开浏览器 - OPEN_POPUP：表示弹窗 - COPY_PARAMETER：表示复制 - VIEW_PIC：表示打开大图  > - type为Image和Button时为必填项，必须绑定事件 > - type为其他类型时则不必填 > - OPPO厂商点击事件类型只支持打开浏览器、打开快应用、打开APP、跳转H5 > - VIVO厂商点击事件类型不支持打开邮箱、打开地图 > - MEIZU厂商点击事件类型不支持打开大图 > - 横滑类1、横滑类2版式的图片不支持绑定事件，默认与按钮事件一致 > - 三星厂商点击事件类型不支持新建日程、打开大图  
 
@@ -311,7 +311,7 @@ class AimPersonalTemplateContent:
 
     @action_type.setter
     def action_type(self, action_type):
-        """Sets the action_type of this AimPersonalTemplateContent.
+        r"""Sets the action_type of this AimPersonalTemplateContent.
 
         功能类型。  - OPEN_URL：表示跳转H5 - OPEN_QUICK：表示跳转快应用 - OPEN_APP：表示跳转APP - DIAL_PHONE：表示拉起拨号盘 - OPEN_SMS：表示新建短信息 - OPEN_EMAIL：表示打开邮箱 - OPEN_SCHEDULE：表示新建日程 - OPEN_MAP：表示位置定位 - OPEN_BROWSER：表示打开浏览器 - OPEN_POPUP：表示弹窗 - COPY_PARAMETER：表示复制 - VIEW_PIC：表示打开大图  > - type为Image和Button时为必填项，必须绑定事件 > - type为其他类型时则不必填 > - OPPO厂商点击事件类型只支持打开浏览器、打开快应用、打开APP、跳转H5 > - VIVO厂商点击事件类型不支持打开邮箱、打开地图 > - MEIZU厂商点击事件类型不支持打开大图 > - 横滑类1、横滑类2版式的图片不支持绑定事件，默认与按钮事件一致 > - 三星厂商点击事件类型不支持新建日程、打开大图  
 
@@ -322,7 +322,7 @@ class AimPersonalTemplateContent:
 
     @property
     def position_number(self):
-        """Gets the position_number of this AimPersonalTemplateContent.
+        r"""Gets the position_number of this AimPersonalTemplateContent.
 
         卡片组件的位置序号。 > 资源在卡片上相对的位置序号，按照优先从左到右，再从上到下的编排原则，统一编号。 
 
@@ -333,7 +333,7 @@ class AimPersonalTemplateContent:
 
     @position_number.setter
     def position_number(self, position_number):
-        """Sets the position_number of this AimPersonalTemplateContent.
+        r"""Sets the position_number of this AimPersonalTemplateContent.
 
         卡片组件的位置序号。 > 资源在卡片上相对的位置序号，按照优先从左到右，再从上到下的编排原则，统一编号。 
 
@@ -344,7 +344,7 @@ class AimPersonalTemplateContent:
 
     @property
     def visible(self):
-        """Gets the visible of this AimPersonalTemplateContent.
+        r"""Gets the visible of this AimPersonalTemplateContent.
 
         组件是否可见。 - 0：隐藏（某些组件可设置隐藏） - 1：可见  > 目前仅针对电商多商品（Ecommerce）、多卡券（CardVouchers）、增强机票类（PlaneTrip）这三种版式起效。 
 
@@ -355,7 +355,7 @@ class AimPersonalTemplateContent:
 
     @visible.setter
     def visible(self, visible):
-        """Sets the visible of this AimPersonalTemplateContent.
+        r"""Sets the visible of this AimPersonalTemplateContent.
 
         组件是否可见。 - 0：隐藏（某些组件可设置隐藏） - 1：可见  > 目前仅针对电商多商品（Ecommerce）、多卡券（CardVouchers）、增强机票类（PlaneTrip）这三种版式起效。 
 
@@ -366,7 +366,7 @@ class AimPersonalTemplateContent:
 
     @property
     def currency_display(self):
-        """Gets the currency_display of this AimPersonalTemplateContent.
+        r"""Gets the currency_display of this AimPersonalTemplateContent.
 
         是否显示货币符号。  - 0：隐藏  - 1：可见  > 当模板为电商类时是否显示￥符号，默认可见。 
 
@@ -377,7 +377,7 @@ class AimPersonalTemplateContent:
 
     @currency_display.setter
     def currency_display(self, currency_display):
-        """Sets the currency_display of this AimPersonalTemplateContent.
+        r"""Sets the currency_display of this AimPersonalTemplateContent.
 
         是否显示货币符号。  - 0：隐藏  - 1：可见  > 当模板为电商类时是否显示￥符号，默认可见。 
 
@@ -388,7 +388,7 @@ class AimPersonalTemplateContent:
 
     @property
     def oppo_background(self):
-        """Gets the oppo_background of this AimPersonalTemplateContent.
+        r"""Gets the oppo_background of this AimPersonalTemplateContent.
 
         OPPO红包背景。  > - 当src_type为1时，即资源ID时，参数填入上传模板素材接口中返回的aim_resource_id，如：691996319597764608 > - 当src_type为2时，即资源地址时，参数填写资源完整的URL，最大长度不超过1000个字符 >- 当模板为红包类，即card_id为RedPacket时用于指定OPPO厂商红包背景图，具体使用可参考创建红包类模板请求示例 
 
@@ -399,7 +399,7 @@ class AimPersonalTemplateContent:
 
     @oppo_background.setter
     def oppo_background(self, oppo_background):
-        """Sets the oppo_background of this AimPersonalTemplateContent.
+        r"""Sets the oppo_background of this AimPersonalTemplateContent.
 
         OPPO红包背景。  > - 当src_type为1时，即资源ID时，参数填入上传模板素材接口中返回的aim_resource_id，如：691996319597764608 > - 当src_type为2时，即资源地址时，参数填写资源完整的URL，最大长度不超过1000个字符 >- 当模板为红包类，即card_id为RedPacket时用于指定OPPO厂商红包背景图，具体使用可参考创建红包类模板请求示例 
 
@@ -410,7 +410,7 @@ class AimPersonalTemplateContent:
 
     @property
     def vivo_background(self):
-        """Gets the vivo_background of this AimPersonalTemplateContent.
+        r"""Gets the vivo_background of this AimPersonalTemplateContent.
 
         VIVO红包背景。  > - 当src_type为1时，即资源ID时，参数填入上传模板素材接口中返回的aim_resource_id，如：691996319597764608 > - 当src_type为2时，即资源地址时，参数填写资源完整的URL，最大长度不超过1000个字符 
 
@@ -421,7 +421,7 @@ class AimPersonalTemplateContent:
 
     @vivo_background.setter
     def vivo_background(self, vivo_background):
-        """Sets the vivo_background of this AimPersonalTemplateContent.
+        r"""Sets the vivo_background of this AimPersonalTemplateContent.
 
         VIVO红包背景。  > - 当src_type为1时，即资源ID时，参数填入上传模板素材接口中返回的aim_resource_id，如：691996319597764608 > - 当src_type为2时，即资源地址时，参数填写资源完整的URL，最大长度不超过1000个字符 
 
@@ -432,7 +432,7 @@ class AimPersonalTemplateContent:
 
     @property
     def ratio(self):
-        """Gets the ratio of this AimPersonalTemplateContent.
+        r"""Gets the ratio of this AimPersonalTemplateContent.
 
         表示短视频模板视频和封面的宽高比。即card_id为ShortVideo时，此项有值。 - threeToFour: 宽高比为3:4 - oneToOne: 宽高比为1:1 
 
@@ -443,7 +443,7 @@ class AimPersonalTemplateContent:
 
     @ratio.setter
     def ratio(self, ratio):
-        """Sets the ratio of this AimPersonalTemplateContent.
+        r"""Sets the ratio of this AimPersonalTemplateContent.
 
         表示短视频模板视频和封面的宽高比。即card_id为ShortVideo时，此项有值。 - threeToFour: 宽高比为3:4 - oneToOne: 宽高比为1:1 
 
@@ -454,7 +454,7 @@ class AimPersonalTemplateContent:
 
     @property
     def action(self):
-        """Gets the action of this AimPersonalTemplateContent.
+        r"""Gets the action of this AimPersonalTemplateContent.
 
         :return: The action of this AimPersonalTemplateContent.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.AimPersonalTemplateContentAction`
@@ -463,7 +463,7 @@ class AimPersonalTemplateContent:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this AimPersonalTemplateContent.
+        r"""Sets the action of this AimPersonalTemplateContent.
 
         :param action: The action of this AimPersonalTemplateContent.
         :type action: :class:`huaweicloudsdkkoomessage.v1.AimPersonalTemplateContentAction`
@@ -472,7 +472,7 @@ class AimPersonalTemplateContent:
 
     @property
     def button_type(self):
-        """Gets the button_type of this AimPersonalTemplateContent.
+        r"""Gets the button_type of this AimPersonalTemplateContent.
 
         当模板为电商领券类竖版，即card_id为EcommerceCouponVertical时用于指定按钮类型，具体使用可参考创建电商领券类竖版模板请求示例。 - static：静态按钮 - dynamic：动态按钮 
 
@@ -483,7 +483,7 @@ class AimPersonalTemplateContent:
 
     @button_type.setter
     def button_type(self, button_type):
-        """Sets the button_type of this AimPersonalTemplateContent.
+        r"""Sets the button_type of this AimPersonalTemplateContent.
 
         当模板为电商领券类竖版，即card_id为EcommerceCouponVertical时用于指定按钮类型，具体使用可参考创建电商领券类竖版模板请求示例。 - static：静态按钮 - dynamic：动态按钮 
 

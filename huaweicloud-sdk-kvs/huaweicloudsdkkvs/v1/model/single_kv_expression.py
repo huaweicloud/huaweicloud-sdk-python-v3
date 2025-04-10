@@ -25,7 +25,7 @@ class SingleKvExpression:
     }
 
     def __init__(self, func=None):
-        """SingleKvExpression
+        r"""SingleKvExpression
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SingleKvExpression:
 
     @property
     def func(self):
-        """Gets the func of this SingleKvExpression.
+        r"""Gets the func of this SingleKvExpression.
 
         取值：\"is_doc\", \"is_blob\", \"is_exist\", \"not_exist\"。
 
@@ -53,7 +53,7 @@ class SingleKvExpression:
 
     @func.setter
     def func(self, func):
-        """Sets the func of this SingleKvExpression.
+        r"""Sets the func of this SingleKvExpression.
 
         取值：\"is_doc\", \"is_blob\", \"is_exist\", \"not_exist\"。
 

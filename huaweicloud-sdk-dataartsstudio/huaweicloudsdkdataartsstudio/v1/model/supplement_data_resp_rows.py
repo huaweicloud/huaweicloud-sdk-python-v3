@@ -45,7 +45,7 @@ class SupplementDataRespRows:
     }
 
     def __init__(self, end_date=None, job_list=None, name=None, parallel=None, start_date=None, status=None, submitted_date=None, supplement_data_instance_time=None, supplement_data_run_time=None, type=None, user_name=None):
-        """SupplementDataRespRows
+        r"""SupplementDataRespRows
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class SupplementDataRespRows:
 
     @property
     def end_date(self):
-        """Gets the end_date of this SupplementDataRespRows.
+        r"""Gets the end_date of this SupplementDataRespRows.
 
         作业的开始日期 13位时间戳
 
@@ -124,7 +124,7 @@ class SupplementDataRespRows:
 
     @end_date.setter
     def end_date(self, end_date):
-        """Sets the end_date of this SupplementDataRespRows.
+        r"""Sets the end_date of this SupplementDataRespRows.
 
         作业的开始日期 13位时间戳
 
@@ -135,7 +135,7 @@ class SupplementDataRespRows:
 
     @property
     def job_list(self):
-        """Gets the job_list of this SupplementDataRespRows.
+        r"""Gets the job_list of this SupplementDataRespRows.
 
         补数据作业名称，可能有依赖的作业，故会有多个作业的情况。
 
@@ -146,7 +146,7 @@ class SupplementDataRespRows:
 
     @job_list.setter
     def job_list(self, job_list):
-        """Sets the job_list of this SupplementDataRespRows.
+        r"""Sets the job_list of this SupplementDataRespRows.
 
         补数据作业名称，可能有依赖的作业，故会有多个作业的情况。
 
@@ -157,7 +157,7 @@ class SupplementDataRespRows:
 
     @property
     def name(self):
-        """Gets the name of this SupplementDataRespRows.
+        r"""Gets the name of this SupplementDataRespRows.
 
         补数据名称
 
@@ -168,7 +168,7 @@ class SupplementDataRespRows:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SupplementDataRespRows.
+        r"""Sets the name of this SupplementDataRespRows.
 
         补数据名称
 
@@ -179,7 +179,7 @@ class SupplementDataRespRows:
 
     @property
     def parallel(self):
-        """Gets the parallel of this SupplementDataRespRows.
+        r"""Gets the parallel of this SupplementDataRespRows.
 
         并行周期数，取值范围[1,5]
 
@@ -190,7 +190,7 @@ class SupplementDataRespRows:
 
     @parallel.setter
     def parallel(self, parallel):
-        """Sets the parallel of this SupplementDataRespRows.
+        r"""Sets the parallel of this SupplementDataRespRows.
 
         并行周期数，取值范围[1,5]
 
@@ -201,7 +201,7 @@ class SupplementDataRespRows:
 
     @property
     def start_date(self):
-        """Gets the start_date of this SupplementDataRespRows.
+        r"""Gets the start_date of this SupplementDataRespRows.
 
         作业的结束日期 13位时间戳
 
@@ -212,7 +212,7 @@ class SupplementDataRespRows:
 
     @start_date.setter
     def start_date(self, start_date):
-        """Sets the start_date of this SupplementDataRespRows.
+        r"""Sets the start_date of this SupplementDataRespRows.
 
         作业的结束日期 13位时间戳
 
@@ -223,7 +223,7 @@ class SupplementDataRespRows:
 
     @property
     def status(self):
-        """Gets the status of this SupplementDataRespRows.
+        r"""Gets the status of this SupplementDataRespRows.
 
         实例状态：SUCCESS：成功RUNNING ：运行中CANCLE：取消
 
@@ -234,7 +234,7 @@ class SupplementDataRespRows:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SupplementDataRespRows.
+        r"""Sets the status of this SupplementDataRespRows.
 
         实例状态：SUCCESS：成功RUNNING ：运行中CANCLE：取消
 
@@ -245,7 +245,7 @@ class SupplementDataRespRows:
 
     @property
     def submitted_date(self):
-        """Gets the submitted_date of this SupplementDataRespRows.
+        r"""Gets the submitted_date of this SupplementDataRespRows.
 
         作业提交时间，13位时间戳
 
@@ -256,7 +256,7 @@ class SupplementDataRespRows:
 
     @submitted_date.setter
     def submitted_date(self, submitted_date):
-        """Sets the submitted_date of this SupplementDataRespRows.
+        r"""Sets the submitted_date of this SupplementDataRespRows.
 
         作业提交时间，13位时间戳
 
@@ -267,7 +267,7 @@ class SupplementDataRespRows:
 
     @property
     def supplement_data_instance_time(self):
-        """Gets the supplement_data_instance_time of this SupplementDataRespRows.
+        r"""Gets the supplement_data_instance_time of this SupplementDataRespRows.
 
         :return: The supplement_data_instance_time of this SupplementDataRespRows.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SupplementDataRespSupplementDataInstanceTime`
@@ -276,7 +276,7 @@ class SupplementDataRespRows:
 
     @supplement_data_instance_time.setter
     def supplement_data_instance_time(self, supplement_data_instance_time):
-        """Sets the supplement_data_instance_time of this SupplementDataRespRows.
+        r"""Sets the supplement_data_instance_time of this SupplementDataRespRows.
 
         :param supplement_data_instance_time: The supplement_data_instance_time of this SupplementDataRespRows.
         :type supplement_data_instance_time: :class:`huaweicloudsdkdataartsstudio.v1.SupplementDataRespSupplementDataInstanceTime`
@@ -285,7 +285,7 @@ class SupplementDataRespRows:
 
     @property
     def supplement_data_run_time(self):
-        """Gets the supplement_data_run_time of this SupplementDataRespRows.
+        r"""Gets the supplement_data_run_time of this SupplementDataRespRows.
 
         :return: The supplement_data_run_time of this SupplementDataRespRows.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SupplementDataRespSupplementDataRunTime`
@@ -294,7 +294,7 @@ class SupplementDataRespRows:
 
     @supplement_data_run_time.setter
     def supplement_data_run_time(self, supplement_data_run_time):
-        """Sets the supplement_data_run_time of this SupplementDataRespRows.
+        r"""Sets the supplement_data_run_time of this SupplementDataRespRows.
 
         :param supplement_data_run_time: The supplement_data_run_time of this SupplementDataRespRows.
         :type supplement_data_run_time: :class:`huaweicloudsdkdataartsstudio.v1.SupplementDataRespSupplementDataRunTime`
@@ -303,7 +303,7 @@ class SupplementDataRespRows:
 
     @property
     def type(self):
-        """Gets the type of this SupplementDataRespRows.
+        r"""Gets the type of this SupplementDataRespRows.
 
         触发补数据的类型，取值范围[0, 1]。0代表作业监控界面触发的补数据，1代表恢复动作触发的补数据
 
@@ -314,7 +314,7 @@ class SupplementDataRespRows:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SupplementDataRespRows.
+        r"""Sets the type of this SupplementDataRespRows.
 
         触发补数据的类型，取值范围[0, 1]。0代表作业监控界面触发的补数据，1代表恢复动作触发的补数据
 
@@ -325,7 +325,7 @@ class SupplementDataRespRows:
 
     @property
     def user_name(self):
-        """Gets the user_name of this SupplementDataRespRows.
+        r"""Gets the user_name of this SupplementDataRespRows.
 
         用户名称
 
@@ -336,7 +336,7 @@ class SupplementDataRespRows:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this SupplementDataRespRows.
+        r"""Sets the user_name of this SupplementDataRespRows.
 
         用户名称
 

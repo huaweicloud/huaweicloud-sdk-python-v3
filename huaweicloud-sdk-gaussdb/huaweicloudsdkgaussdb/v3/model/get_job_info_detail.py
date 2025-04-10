@@ -41,7 +41,7 @@ class GetJobInfoDetail:
     }
 
     def __init__(self, id=None, name=None, status=None, created=None, ended=None, process=None, instance=None, entities=None, fail_reason=None):
-        """GetJobInfoDetail
+        r"""GetJobInfoDetail
 
         The model defined in huaweicloud sdk
 
@@ -94,7 +94,7 @@ class GetJobInfoDetail:
 
     @property
     def id(self):
-        """Gets the id of this GetJobInfoDetail.
+        r"""Gets the id of this GetJobInfoDetail.
 
         任务ID。
 
@@ -105,7 +105,7 @@ class GetJobInfoDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this GetJobInfoDetail.
+        r"""Sets the id of this GetJobInfoDetail.
 
         任务ID。
 
@@ -116,7 +116,7 @@ class GetJobInfoDetail:
 
     @property
     def name(self):
-        """Gets the name of this GetJobInfoDetail.
+        r"""Gets the name of this GetJobInfoDetail.
 
         任务名称。
 
@@ -127,7 +127,7 @@ class GetJobInfoDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GetJobInfoDetail.
+        r"""Sets the name of this GetJobInfoDetail.
 
         任务名称。
 
@@ -138,7 +138,7 @@ class GetJobInfoDetail:
 
     @property
     def status(self):
-        """Gets the status of this GetJobInfoDetail.
+        r"""Gets the status of this GetJobInfoDetail.
 
         任务执行状态。  取值： - 值为“Pending”，表示延时任务，未执行。 - 值为“Running”，表示任务正在执行。 - 值为“Completed”，表示任务执行成功。 - 值为“Failed”，表示任务执行失败。
 
@@ -149,7 +149,7 @@ class GetJobInfoDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this GetJobInfoDetail.
+        r"""Sets the status of this GetJobInfoDetail.
 
         任务执行状态。  取值： - 值为“Pending”，表示延时任务，未执行。 - 值为“Running”，表示任务正在执行。 - 值为“Completed”，表示任务执行成功。 - 值为“Failed”，表示任务执行失败。
 
@@ -160,7 +160,7 @@ class GetJobInfoDetail:
 
     @property
     def created(self):
-        """Gets the created of this GetJobInfoDetail.
+        r"""Gets the created of this GetJobInfoDetail.
 
         创建时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。  说明：创建时返回值为空，数据库实例创建成功后该值不为空。
 
@@ -171,7 +171,7 @@ class GetJobInfoDetail:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this GetJobInfoDetail.
+        r"""Sets the created of this GetJobInfoDetail.
 
         创建时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。  说明：创建时返回值为空，数据库实例创建成功后该值不为空。
 
@@ -182,7 +182,7 @@ class GetJobInfoDetail:
 
     @property
     def ended(self):
-        """Gets the ended of this GetJobInfoDetail.
+        r"""Gets the ended of this GetJobInfoDetail.
 
         结束时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。  说明：创建时返回值为空，数据库实例创建成功后该值不为空。
 
@@ -193,7 +193,7 @@ class GetJobInfoDetail:
 
     @ended.setter
     def ended(self, ended):
-        """Sets the ended of this GetJobInfoDetail.
+        r"""Sets the ended of this GetJobInfoDetail.
 
         结束时间，格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如偏移1个小时显示为+0100。  说明：创建时返回值为空，数据库实例创建成功后该值不为空。
 
@@ -204,7 +204,7 @@ class GetJobInfoDetail:
 
     @property
     def process(self):
-        """Gets the process of this GetJobInfoDetail.
+        r"""Gets the process of this GetJobInfoDetail.
 
         任务执行进度。执行中状态才返回执行进度，例如60%，否则返回\"\"。
 
@@ -215,7 +215,7 @@ class GetJobInfoDetail:
 
     @process.setter
     def process(self, process):
-        """Sets the process of this GetJobInfoDetail.
+        r"""Sets the process of this GetJobInfoDetail.
 
         任务执行进度。执行中状态才返回执行进度，例如60%，否则返回\"\"。
 
@@ -226,7 +226,7 @@ class GetJobInfoDetail:
 
     @property
     def instance(self):
-        """Gets the instance of this GetJobInfoDetail.
+        r"""Gets the instance of this GetJobInfoDetail.
 
         :return: The instance of this GetJobInfoDetail.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.GetJobInstanceInfoDetail`
@@ -235,7 +235,7 @@ class GetJobInfoDetail:
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this GetJobInfoDetail.
+        r"""Sets the instance of this GetJobInfoDetail.
 
         :param instance: The instance of this GetJobInfoDetail.
         :type instance: :class:`huaweicloudsdkgaussdb.v3.GetJobInstanceInfoDetail`
@@ -244,7 +244,7 @@ class GetJobInfoDetail:
 
     @property
     def entities(self):
-        """Gets the entities of this GetJobInfoDetail.
+        r"""Gets the entities of this GetJobInfoDetail.
 
         :return: The entities of this GetJobInfoDetail.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.GetJobEntitiesInfoDetail`
@@ -253,7 +253,7 @@ class GetJobInfoDetail:
 
     @entities.setter
     def entities(self, entities):
-        """Sets the entities of this GetJobInfoDetail.
+        r"""Sets the entities of this GetJobInfoDetail.
 
         :param entities: The entities of this GetJobInfoDetail.
         :type entities: :class:`huaweicloudsdkgaussdb.v3.GetJobEntitiesInfoDetail`
@@ -262,7 +262,7 @@ class GetJobInfoDetail:
 
     @property
     def fail_reason(self):
-        """Gets the fail_reason of this GetJobInfoDetail.
+        r"""Gets the fail_reason of this GetJobInfoDetail.
 
         任务执行失败时的错误信息。
 
@@ -273,7 +273,7 @@ class GetJobInfoDetail:
 
     @fail_reason.setter
     def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this GetJobInfoDetail.
+        r"""Sets the fail_reason of this GetJobInfoDetail.
 
         任务执行失败时的错误信息。
 

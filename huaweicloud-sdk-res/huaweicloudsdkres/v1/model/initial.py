@@ -33,7 +33,7 @@ class Initial:
     }
 
     def __init__(self, initial_method=None, mean_value=None, standard_deviation=None, min_value=None, max_value=None):
-        """Initial
+        r"""Initial
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class Initial:
 
     @property
     def initial_method(self):
-        """Gets the initial_method of this Initial.
+        r"""Gets the initial_method of this Initial.
 
         初始化方法。
 
@@ -81,7 +81,7 @@ class Initial:
 
     @initial_method.setter
     def initial_method(self, initial_method):
-        """Sets the initial_method of this Initial.
+        r"""Sets the initial_method of this Initial.
 
         初始化方法。
 
@@ -92,7 +92,7 @@ class Initial:
 
     @property
     def mean_value(self):
-        """Gets the mean_value of this Initial.
+        r"""Gets the mean_value of this Initial.
 
         平均值。
 
@@ -103,7 +103,7 @@ class Initial:
 
     @mean_value.setter
     def mean_value(self, mean_value):
-        """Sets the mean_value of this Initial.
+        r"""Sets the mean_value of this Initial.
 
         平均值。
 
@@ -114,7 +114,7 @@ class Initial:
 
     @property
     def standard_deviation(self):
-        """Gets the standard_deviation of this Initial.
+        r"""Gets the standard_deviation of this Initial.
 
         标准差。
 
@@ -125,7 +125,7 @@ class Initial:
 
     @standard_deviation.setter
     def standard_deviation(self, standard_deviation):
-        """Sets the standard_deviation of this Initial.
+        r"""Sets the standard_deviation of this Initial.
 
         标准差。
 
@@ -136,7 +136,7 @@ class Initial:
 
     @property
     def min_value(self):
-        """Gets the min_value of this Initial.
+        r"""Gets the min_value of this Initial.
 
         最小值。
 
@@ -147,7 +147,7 @@ class Initial:
 
     @min_value.setter
     def min_value(self, min_value):
-        """Sets the min_value of this Initial.
+        r"""Sets the min_value of this Initial.
 
         最小值。
 
@@ -158,7 +158,7 @@ class Initial:
 
     @property
     def max_value(self):
-        """Gets the max_value of this Initial.
+        r"""Gets the max_value of this Initial.
 
         最大值。
 
@@ -169,7 +169,7 @@ class Initial:
 
     @max_value.setter
     def max_value(self, max_value):
-        """Sets the max_value of this Initial.
+        r"""Sets the max_value of this Initial.
 
         最大值。
 

@@ -33,7 +33,7 @@ class ListCaptureResultRequest:
     }
 
     def __init__(self, fw_instance_id=None, task_id=None, type=None, ip=None, enterprise_project_id=None):
-        """ListCaptureResultRequest
+        r"""ListCaptureResultRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class ListCaptureResultRequest:
 
     @property
     def fw_instance_id(self):
-        """Gets the fw_instance_id of this ListCaptureResultRequest.
+        r"""Gets the fw_instance_id of this ListCaptureResultRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -80,7 +80,7 @@ class ListCaptureResultRequest:
 
     @fw_instance_id.setter
     def fw_instance_id(self, fw_instance_id):
-        """Sets the fw_instance_id of this ListCaptureResultRequest.
+        r"""Sets the fw_instance_id of this ListCaptureResultRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -91,7 +91,7 @@ class ListCaptureResultRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ListCaptureResultRequest.
+        r"""Gets the task_id of this ListCaptureResultRequest.
 
         抓包任务id，可通过[查询抓包任务接口](ListCaptureTask.xml)查询获得，通过返回值中的data.records.task_id（.表示各对象之间层级的区分）获得。
 
@@ -102,7 +102,7 @@ class ListCaptureResultRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ListCaptureResultRequest.
+        r"""Sets the task_id of this ListCaptureResultRequest.
 
         抓包任务id，可通过[查询抓包任务接口](ListCaptureTask.xml)查询获得，通过返回值中的data.records.task_id（.表示各对象之间层级的区分）获得。
 
@@ -113,7 +113,7 @@ class ListCaptureResultRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListCaptureResultRequest.
+        r"""Gets the type of this ListCaptureResultRequest.
 
         是否指定公网ip下载，0：无限制，1：指定公网ip下载
 
@@ -124,7 +124,7 @@ class ListCaptureResultRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListCaptureResultRequest.
+        r"""Sets the type of this ListCaptureResultRequest.
 
         是否指定公网ip下载，0：无限制，1：指定公网ip下载
 
@@ -135,7 +135,7 @@ class ListCaptureResultRequest:
 
     @property
     def ip(self):
-        """Gets the ip of this ListCaptureResultRequest.
+        r"""Gets the ip of this ListCaptureResultRequest.
 
         指定公网ip
 
@@ -146,7 +146,7 @@ class ListCaptureResultRequest:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this ListCaptureResultRequest.
+        r"""Sets the ip of this ListCaptureResultRequest.
 
         指定公网ip
 
@@ -157,7 +157,7 @@ class ListCaptureResultRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListCaptureResultRequest.
+        r"""Gets the enterprise_project_id of this ListCaptureResultRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -168,7 +168,7 @@ class ListCaptureResultRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListCaptureResultRequest.
+        r"""Sets the enterprise_project_id of this ListCaptureResultRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 

@@ -33,7 +33,7 @@ class ScaleConfigurationDataAdvanced:
     }
 
     def __init__(self, scaledown_stabilization_seconds=None, scaledown_rate=None, scaleup_stabilization_seconds=None, scaleup_rate=None, disable_scaledown=None):
-        """ScaleConfigurationDataAdvanced
+        r"""ScaleConfigurationDataAdvanced
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ScaleConfigurationDataAdvanced:
 
     @property
     def scaledown_stabilization_seconds(self):
-        """Gets the scaledown_stabilization_seconds of this ScaleConfigurationDataAdvanced.
+        r"""Gets the scaledown_stabilization_seconds of this ScaleConfigurationDataAdvanced.
 
         缩容冷却时间窗。
 
@@ -82,7 +82,7 @@ class ScaleConfigurationDataAdvanced:
 
     @scaledown_stabilization_seconds.setter
     def scaledown_stabilization_seconds(self, scaledown_stabilization_seconds):
-        """Sets the scaledown_stabilization_seconds of this ScaleConfigurationDataAdvanced.
+        r"""Sets the scaledown_stabilization_seconds of this ScaleConfigurationDataAdvanced.
 
         缩容冷却时间窗。
 
@@ -93,7 +93,7 @@ class ScaleConfigurationDataAdvanced:
 
     @property
     def scaledown_rate(self):
-        """Gets the scaledown_rate of this ScaleConfigurationDataAdvanced.
+        r"""Gets the scaledown_rate of this ScaleConfigurationDataAdvanced.
 
         缩容步长。
 
@@ -104,7 +104,7 @@ class ScaleConfigurationDataAdvanced:
 
     @scaledown_rate.setter
     def scaledown_rate(self, scaledown_rate):
-        """Sets the scaledown_rate of this ScaleConfigurationDataAdvanced.
+        r"""Sets the scaledown_rate of this ScaleConfigurationDataAdvanced.
 
         缩容步长。
 
@@ -115,7 +115,7 @@ class ScaleConfigurationDataAdvanced:
 
     @property
     def scaleup_stabilization_seconds(self):
-        """Gets the scaleup_stabilization_seconds of this ScaleConfigurationDataAdvanced.
+        r"""Gets the scaleup_stabilization_seconds of this ScaleConfigurationDataAdvanced.
 
         扩容冷却时间窗。
 
@@ -126,7 +126,7 @@ class ScaleConfigurationDataAdvanced:
 
     @scaleup_stabilization_seconds.setter
     def scaleup_stabilization_seconds(self, scaleup_stabilization_seconds):
-        """Sets the scaleup_stabilization_seconds of this ScaleConfigurationDataAdvanced.
+        r"""Sets the scaleup_stabilization_seconds of this ScaleConfigurationDataAdvanced.
 
         扩容冷却时间窗。
 
@@ -137,7 +137,7 @@ class ScaleConfigurationDataAdvanced:
 
     @property
     def scaleup_rate(self):
-        """Gets the scaleup_rate of this ScaleConfigurationDataAdvanced.
+        r"""Gets the scaleup_rate of this ScaleConfigurationDataAdvanced.
 
         扩容步长。
 
@@ -148,7 +148,7 @@ class ScaleConfigurationDataAdvanced:
 
     @scaleup_rate.setter
     def scaleup_rate(self, scaleup_rate):
-        """Sets the scaleup_rate of this ScaleConfigurationDataAdvanced.
+        r"""Sets the scaleup_rate of this ScaleConfigurationDataAdvanced.
 
         扩容步长。
 
@@ -159,7 +159,7 @@ class ScaleConfigurationDataAdvanced:
 
     @property
     def disable_scaledown(self):
-        """Gets the disable_scaledown of this ScaleConfigurationDataAdvanced.
+        r"""Gets the disable_scaledown of this ScaleConfigurationDataAdvanced.
 
         是否禁用自动缩容。
 
@@ -170,7 +170,7 @@ class ScaleConfigurationDataAdvanced:
 
     @disable_scaledown.setter
     def disable_scaledown(self, disable_scaledown):
-        """Sets the disable_scaledown of this ScaleConfigurationDataAdvanced.
+        r"""Sets the disable_scaledown of this ScaleConfigurationDataAdvanced.
 
         是否禁用自动缩容。
 

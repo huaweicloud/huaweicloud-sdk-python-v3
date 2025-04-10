@@ -24,7 +24,7 @@ class CreateDesktopPoolAuthorizedObjectsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateDesktopPoolAuthorizedObjectsResponse
+        r"""CreateDesktopPoolAuthorizedObjectsResponse
 
         The model defined in huaweicloud sdk
 

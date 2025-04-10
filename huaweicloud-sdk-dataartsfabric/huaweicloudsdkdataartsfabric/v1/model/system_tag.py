@@ -27,7 +27,7 @@ class SystemTag:
     }
 
     def __init__(self, key=None, value=None):
-        """SystemTag
+        r"""SystemTag
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class SystemTag:
 
     @property
     def key(self):
-        """Gets the key of this SystemTag.
+        r"""Gets the key of this SystemTag.
 
         键，固定值。
 
@@ -59,7 +59,7 @@ class SystemTag:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this SystemTag.
+        r"""Sets the key of this SystemTag.
 
         键，固定值。
 
@@ -70,7 +70,7 @@ class SystemTag:
 
     @property
     def value(self):
-        """Gets the value of this SystemTag.
+        r"""Gets the value of this SystemTag.
 
         企业项目ID。
 
@@ -81,7 +81,7 @@ class SystemTag:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this SystemTag.
+        r"""Sets the value of this SystemTag.
 
         企业项目ID。
 

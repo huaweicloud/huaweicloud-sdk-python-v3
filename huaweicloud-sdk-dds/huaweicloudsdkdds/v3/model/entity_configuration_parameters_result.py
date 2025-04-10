@@ -37,7 +37,7 @@ class EntityConfigurationParametersResult:
     }
 
     def __init__(self, name=None, value=None, value_range=None, restart_required=None, readonly=None, type=None, description=None):
-        """EntityConfigurationParametersResult
+        r"""EntityConfigurationParametersResult
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class EntityConfigurationParametersResult:
 
     @property
     def name(self):
-        """Gets the name of this EntityConfigurationParametersResult.
+        r"""Gets the name of this EntityConfigurationParametersResult.
 
         参数名称。
 
@@ -89,7 +89,7 @@ class EntityConfigurationParametersResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EntityConfigurationParametersResult.
+        r"""Sets the name of this EntityConfigurationParametersResult.
 
         参数名称。
 
@@ -100,7 +100,7 @@ class EntityConfigurationParametersResult:
 
     @property
     def value(self):
-        """Gets the value of this EntityConfigurationParametersResult.
+        r"""Gets the value of this EntityConfigurationParametersResult.
 
         参数值。
 
@@ -111,7 +111,7 @@ class EntityConfigurationParametersResult:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this EntityConfigurationParametersResult.
+        r"""Sets the value of this EntityConfigurationParametersResult.
 
         参数值。
 
@@ -122,7 +122,7 @@ class EntityConfigurationParametersResult:
 
     @property
     def value_range(self):
-        """Gets the value_range of this EntityConfigurationParametersResult.
+        r"""Gets the value_range of this EntityConfigurationParametersResult.
 
         参数值范围。示例：Integer类型取值范围为0~1、Boolean类型取值为“true”或“false”。
 
@@ -133,7 +133,7 @@ class EntityConfigurationParametersResult:
 
     @value_range.setter
     def value_range(self, value_range):
-        """Sets the value_range of this EntityConfigurationParametersResult.
+        r"""Sets the value_range of this EntityConfigurationParametersResult.
 
         参数值范围。示例：Integer类型取值范围为0~1、Boolean类型取值为“true”或“false”。
 
@@ -144,7 +144,7 @@ class EntityConfigurationParametersResult:
 
     @property
     def restart_required(self):
-        """Gets the restart_required of this EntityConfigurationParametersResult.
+        r"""Gets the restart_required of this EntityConfigurationParametersResult.
 
         参数是否需要重启。 - 取值为“true”，需要重启。 - 取值为“false”，不需要重启。
 
@@ -155,7 +155,7 @@ class EntityConfigurationParametersResult:
 
     @restart_required.setter
     def restart_required(self, restart_required):
-        """Sets the restart_required of this EntityConfigurationParametersResult.
+        r"""Sets the restart_required of this EntityConfigurationParametersResult.
 
         参数是否需要重启。 - 取值为“true”，需要重启。 - 取值为“false”，不需要重启。
 
@@ -166,7 +166,7 @@ class EntityConfigurationParametersResult:
 
     @property
     def readonly(self):
-        """Gets the readonly of this EntityConfigurationParametersResult.
+        r"""Gets the readonly of this EntityConfigurationParametersResult.
 
         是否只读。 - 取值为“false”，非只读参数。 - 取值为“true”，只读参数。
 
@@ -177,7 +177,7 @@ class EntityConfigurationParametersResult:
 
     @readonly.setter
     def readonly(self, readonly):
-        """Sets the readonly of this EntityConfigurationParametersResult.
+        r"""Sets the readonly of this EntityConfigurationParametersResult.
 
         是否只读。 - 取值为“false”，非只读参数。 - 取值为“true”，只读参数。
 
@@ -188,7 +188,7 @@ class EntityConfigurationParametersResult:
 
     @property
     def type(self):
-        """Gets the type of this EntityConfigurationParametersResult.
+        r"""Gets the type of this EntityConfigurationParametersResult.
 
         参数类型，取值为“integer”，“string”，“boolean”，“float”或“list”。
 
@@ -199,7 +199,7 @@ class EntityConfigurationParametersResult:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this EntityConfigurationParametersResult.
+        r"""Sets the type of this EntityConfigurationParametersResult.
 
         参数类型，取值为“integer”，“string”，“boolean”，“float”或“list”。
 
@@ -210,7 +210,7 @@ class EntityConfigurationParametersResult:
 
     @property
     def description(self):
-        """Gets the description of this EntityConfigurationParametersResult.
+        r"""Gets the description of this EntityConfigurationParametersResult.
 
         参数描述。
 
@@ -221,7 +221,7 @@ class EntityConfigurationParametersResult:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EntityConfigurationParametersResult.
+        r"""Sets the description of this EntityConfigurationParametersResult.
 
         参数描述。
 

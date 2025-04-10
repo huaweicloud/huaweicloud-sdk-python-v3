@@ -24,7 +24,7 @@ class SetOffSiteBackupPolicyResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SetOffSiteBackupPolicyResponse
+        r"""SetOffSiteBackupPolicyResponse
 
         The model defined in huaweicloud sdk
 

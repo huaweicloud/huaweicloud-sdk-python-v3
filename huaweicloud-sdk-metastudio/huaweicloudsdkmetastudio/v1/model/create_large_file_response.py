@@ -30,7 +30,7 @@ class CreateLargeFileResponse(SdkResponse):
     }
 
     def __init__(self, file_id=None, upload_urls=None, x_request_id=None):
-        """CreateLargeFileResponse
+        r"""CreateLargeFileResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateLargeFileResponse(SdkResponse):
 
     @property
     def file_id(self):
-        """Gets the file_id of this CreateLargeFileResponse.
+        r"""Gets the file_id of this CreateLargeFileResponse.
 
         文件ID。
 
@@ -69,7 +69,7 @@ class CreateLargeFileResponse(SdkResponse):
 
     @file_id.setter
     def file_id(self, file_id):
-        """Sets the file_id of this CreateLargeFileResponse.
+        r"""Sets the file_id of this CreateLargeFileResponse.
 
         文件ID。
 
@@ -80,7 +80,7 @@ class CreateLargeFileResponse(SdkResponse):
 
     @property
     def upload_urls(self):
-        """Gets the upload_urls of this CreateLargeFileResponse.
+        r"""Gets the upload_urls of this CreateLargeFileResponse.
 
         文件分段上传URL。
 
@@ -91,7 +91,7 @@ class CreateLargeFileResponse(SdkResponse):
 
     @upload_urls.setter
     def upload_urls(self, upload_urls):
-        """Sets the upload_urls of this CreateLargeFileResponse.
+        r"""Sets the upload_urls of this CreateLargeFileResponse.
 
         文件分段上传URL。
 
@@ -102,7 +102,7 @@ class CreateLargeFileResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreateLargeFileResponse.
+        r"""Gets the x_request_id of this CreateLargeFileResponse.
 
         :return: The x_request_id of this CreateLargeFileResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class CreateLargeFileResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreateLargeFileResponse.
+        r"""Sets the x_request_id of this CreateLargeFileResponse.
 
         :param x_request_id: The x_request_id of this CreateLargeFileResponse.
         :type x_request_id: str

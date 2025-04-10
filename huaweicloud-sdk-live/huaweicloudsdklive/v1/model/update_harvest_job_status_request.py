@@ -29,7 +29,7 @@ class UpdateHarvestJobStatusRequest:
     }
 
     def __init__(self, access_control_allow_internal=None, access_control_allow_external=None, body=None):
-        """UpdateHarvestJobStatusRequest
+        r"""UpdateHarvestJobStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateHarvestJobStatusRequest:
 
     @property
     def access_control_allow_internal(self):
-        """Gets the access_control_allow_internal of this UpdateHarvestJobStatusRequest.
+        r"""Gets the access_control_allow_internal of this UpdateHarvestJobStatusRequest.
 
         服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-Internal访问服务。
 
@@ -68,7 +68,7 @@ class UpdateHarvestJobStatusRequest:
 
     @access_control_allow_internal.setter
     def access_control_allow_internal(self, access_control_allow_internal):
-        """Sets the access_control_allow_internal of this UpdateHarvestJobStatusRequest.
+        r"""Sets the access_control_allow_internal of this UpdateHarvestJobStatusRequest.
 
         服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-Internal访问服务。
 
@@ -79,7 +79,7 @@ class UpdateHarvestJobStatusRequest:
 
     @property
     def access_control_allow_external(self):
-        """Gets the access_control_allow_external of this UpdateHarvestJobStatusRequest.
+        r"""Gets the access_control_allow_external of this UpdateHarvestJobStatusRequest.
 
         服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-External访问服务。
 
@@ -90,7 +90,7 @@ class UpdateHarvestJobStatusRequest:
 
     @access_control_allow_external.setter
     def access_control_allow_external(self, access_control_allow_external):
-        """Sets the access_control_allow_external of this UpdateHarvestJobStatusRequest.
+        r"""Sets the access_control_allow_external of this UpdateHarvestJobStatusRequest.
 
         服务鉴权Token，服务开启鉴权，必须携带Access-Control-Allow-External访问服务。
 
@@ -101,7 +101,7 @@ class UpdateHarvestJobStatusRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateHarvestJobStatusRequest.
+        r"""Gets the body of this UpdateHarvestJobStatusRequest.
 
         :return: The body of this UpdateHarvestJobStatusRequest.
         :rtype: :class:`huaweicloudsdklive.v1.UpdateHarvestJobStatusRequestBody`
@@ -110,7 +110,7 @@ class UpdateHarvestJobStatusRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateHarvestJobStatusRequest.
+        r"""Sets the body of this UpdateHarvestJobStatusRequest.
 
         :param body: The body of this UpdateHarvestJobStatusRequest.
         :type body: :class:`huaweicloudsdklive.v1.UpdateHarvestJobStatusRequestBody`

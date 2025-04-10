@@ -26,7 +26,7 @@ class ApplyJudgementResponse(SdkResponse):
     }
 
     def __init__(self, judgement_id=None):
-        """ApplyJudgementResponse
+        r"""ApplyJudgementResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ApplyJudgementResponse(SdkResponse):
 
     @property
     def judgement_id(self):
-        """Gets the judgement_id of this ApplyJudgementResponse.
+        r"""Gets the judgement_id of this ApplyJudgementResponse.
 
         判题任务ID
 
@@ -55,7 +55,7 @@ class ApplyJudgementResponse(SdkResponse):
 
     @judgement_id.setter
     def judgement_id(self, judgement_id):
-        """Sets the judgement_id of this ApplyJudgementResponse.
+        r"""Sets the judgement_id of this ApplyJudgementResponse.
 
         判题任务ID
 

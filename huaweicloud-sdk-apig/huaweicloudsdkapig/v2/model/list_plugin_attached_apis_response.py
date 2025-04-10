@@ -30,7 +30,7 @@ class ListPluginAttachedApisResponse(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, apis=None):
-        """ListPluginAttachedApisResponse
+        r"""ListPluginAttachedApisResponse
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListPluginAttachedApisResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListPluginAttachedApisResponse.
+        r"""Gets the size of this ListPluginAttachedApisResponse.
 
         本次返回的列表长度
 
@@ -67,7 +67,7 @@ class ListPluginAttachedApisResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListPluginAttachedApisResponse.
+        r"""Sets the size of this ListPluginAttachedApisResponse.
 
         本次返回的列表长度
 
@@ -78,7 +78,7 @@ class ListPluginAttachedApisResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListPluginAttachedApisResponse.
+        r"""Gets the total of this ListPluginAttachedApisResponse.
 
         满足条件的记录数
 
@@ -89,7 +89,7 @@ class ListPluginAttachedApisResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListPluginAttachedApisResponse.
+        r"""Sets the total of this ListPluginAttachedApisResponse.
 
         满足条件的记录数
 
@@ -100,7 +100,7 @@ class ListPluginAttachedApisResponse(SdkResponse):
 
     @property
     def apis(self):
-        """Gets the apis of this ListPluginAttachedApisResponse.
+        r"""Gets the apis of this ListPluginAttachedApisResponse.
 
         绑定插件的API列表。
 
@@ -111,7 +111,7 @@ class ListPluginAttachedApisResponse(SdkResponse):
 
     @apis.setter
     def apis(self, apis):
-        """Sets the apis of this ListPluginAttachedApisResponse.
+        r"""Sets the apis of this ListPluginAttachedApisResponse.
 
         绑定插件的API列表。
 

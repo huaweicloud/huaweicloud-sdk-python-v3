@@ -29,7 +29,7 @@ class UpdateTransactionSplitStatusRequest:
     }
 
     def __init__(self, instance_id=None, x_language=None, body=None):
-        """UpdateTransactionSplitStatusRequest
+        r"""UpdateTransactionSplitStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateTransactionSplitStatusRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateTransactionSplitStatusRequest.
+        r"""Gets the instance_id of this UpdateTransactionSplitStatusRequest.
 
         实例ID。
 
@@ -67,7 +67,7 @@ class UpdateTransactionSplitStatusRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateTransactionSplitStatusRequest.
+        r"""Sets the instance_id of this UpdateTransactionSplitStatusRequest.
 
         实例ID。
 
@@ -78,7 +78,7 @@ class UpdateTransactionSplitStatusRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateTransactionSplitStatusRequest.
+        r"""Gets the x_language of this UpdateTransactionSplitStatusRequest.
 
         语言。
 
@@ -89,7 +89,7 @@ class UpdateTransactionSplitStatusRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateTransactionSplitStatusRequest.
+        r"""Sets the x_language of this UpdateTransactionSplitStatusRequest.
 
         语言。
 
@@ -100,7 +100,7 @@ class UpdateTransactionSplitStatusRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateTransactionSplitStatusRequest.
+        r"""Gets the body of this UpdateTransactionSplitStatusRequest.
 
         :return: The body of this UpdateTransactionSplitStatusRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ProxyTransactionSplitRequest`
@@ -109,7 +109,7 @@ class UpdateTransactionSplitStatusRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateTransactionSplitStatusRequest.
+        r"""Sets the body of this UpdateTransactionSplitStatusRequest.
 
         :param body: The body of this UpdateTransactionSplitStatusRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.ProxyTransactionSplitRequest`

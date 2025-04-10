@@ -25,7 +25,7 @@ class CreateResetTracksReq:
     }
 
     def __init__(self, audio_file=None):
-        """CreateResetTracksReq
+        r"""CreateResetTracksReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateResetTracksReq:
 
     @property
     def audio_file(self):
-        """Gets the audio_file of this CreateResetTracksReq.
+        r"""Gets the audio_file of this CreateResetTracksReq.
 
         :return: The audio_file of this CreateResetTracksReq.
         :rtype: :class:`huaweicloudsdkmpc.v1.SubAudioFile`
@@ -52,7 +52,7 @@ class CreateResetTracksReq:
 
     @audio_file.setter
     def audio_file(self, audio_file):
-        """Sets the audio_file of this CreateResetTracksReq.
+        r"""Sets the audio_file of this CreateResetTracksReq.
 
         :param audio_file: The audio_file of this CreateResetTracksReq.
         :type audio_file: :class:`huaweicloudsdkmpc.v1.SubAudioFile`

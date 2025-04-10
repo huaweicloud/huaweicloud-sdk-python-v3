@@ -55,7 +55,7 @@ class JobDetailInfo:
     }
 
     def __init__(self, id=None, job_type=None, entities=None, begin_time=None, end_time=None, status=None, error_code=None, fail_reason=None, host=None, project_id=None, job_id=None, success_result=None, process=None, attach_user=None, entity=None, ip_address=None):
-        """JobDetailInfo
+        r"""JobDetailInfo
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class JobDetailInfo:
 
     @property
     def id(self):
-        """Gets the id of this JobDetailInfo.
+        r"""Gets the id of this JobDetailInfo.
 
         子任务ID。
 
@@ -159,7 +159,7 @@ class JobDetailInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this JobDetailInfo.
+        r"""Sets the id of this JobDetailInfo.
 
         子任务ID。
 
@@ -170,7 +170,7 @@ class JobDetailInfo:
 
     @property
     def job_type(self):
-        """Gets the job_type of this JobDetailInfo.
+        r"""Gets the job_type of this JobDetailInfo.
 
         任务类型。
 
@@ -181,7 +181,7 @@ class JobDetailInfo:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this JobDetailInfo.
+        r"""Sets the job_type of this JobDetailInfo.
 
         任务类型。
 
@@ -192,7 +192,7 @@ class JobDetailInfo:
 
     @property
     def entities(self):
-        """Gets the entities of this JobDetailInfo.
+        r"""Gets the entities of this JobDetailInfo.
 
         :return: The entities of this JobDetailInfo.
         :rtype: :class:`huaweicloudsdkworkspace.v2.JobEntities`
@@ -201,7 +201,7 @@ class JobDetailInfo:
 
     @entities.setter
     def entities(self, entities):
-        """Sets the entities of this JobDetailInfo.
+        r"""Sets the entities of this JobDetailInfo.
 
         :param entities: The entities of this JobDetailInfo.
         :type entities: :class:`huaweicloudsdkworkspace.v2.JobEntities`
@@ -210,7 +210,7 @@ class JobDetailInfo:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this JobDetailInfo.
+        r"""Gets the begin_time of this JobDetailInfo.
 
         任务创建时间。
 
@@ -221,7 +221,7 @@ class JobDetailInfo:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this JobDetailInfo.
+        r"""Sets the begin_time of this JobDetailInfo.
 
         任务创建时间。
 
@@ -232,7 +232,7 @@ class JobDetailInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this JobDetailInfo.
+        r"""Gets the end_time of this JobDetailInfo.
 
         任务结束时间。
 
@@ -243,7 +243,7 @@ class JobDetailInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this JobDetailInfo.
+        r"""Sets the end_time of this JobDetailInfo.
 
         任务结束时间。
 
@@ -254,7 +254,7 @@ class JobDetailInfo:
 
     @property
     def status(self):
-        """Gets the status of this JobDetailInfo.
+        r"""Gets the status of this JobDetailInfo.
 
         任务状态。
 
@@ -265,7 +265,7 @@ class JobDetailInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this JobDetailInfo.
+        r"""Sets the status of this JobDetailInfo.
 
         任务状态。
 
@@ -276,7 +276,7 @@ class JobDetailInfo:
 
     @property
     def error_code(self):
-        """Gets the error_code of this JobDetailInfo.
+        r"""Gets the error_code of this JobDetailInfo.
 
         任务执行失败时的错误码。
 
@@ -287,7 +287,7 @@ class JobDetailInfo:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this JobDetailInfo.
+        r"""Sets the error_code of this JobDetailInfo.
 
         任务执行失败时的错误码。
 
@@ -298,7 +298,7 @@ class JobDetailInfo:
 
     @property
     def fail_reason(self):
-        """Gets the fail_reason of this JobDetailInfo.
+        r"""Gets the fail_reason of this JobDetailInfo.
 
         任务失败原因。
 
@@ -309,7 +309,7 @@ class JobDetailInfo:
 
     @fail_reason.setter
     def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this JobDetailInfo.
+        r"""Sets the fail_reason of this JobDetailInfo.
 
         任务失败原因。
 
@@ -320,7 +320,7 @@ class JobDetailInfo:
 
     @property
     def host(self):
-        """Gets the host of this JobDetailInfo.
+        r"""Gets the host of this JobDetailInfo.
 
         任务执行的服务器IP。
 
@@ -331,7 +331,7 @@ class JobDetailInfo:
 
     @host.setter
     def host(self, host):
-        """Sets the host of this JobDetailInfo.
+        r"""Sets the host of this JobDetailInfo.
 
         任务执行的服务器IP。
 
@@ -342,7 +342,7 @@ class JobDetailInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this JobDetailInfo.
+        r"""Gets the project_id of this JobDetailInfo.
 
         项目ID。
 
@@ -353,7 +353,7 @@ class JobDetailInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this JobDetailInfo.
+        r"""Sets the project_id of this JobDetailInfo.
 
         项目ID。
 
@@ -364,7 +364,7 @@ class JobDetailInfo:
 
     @property
     def job_id(self):
-        """Gets the job_id of this JobDetailInfo.
+        r"""Gets the job_id of this JobDetailInfo.
 
         任务ID。
 
@@ -375,7 +375,7 @@ class JobDetailInfo:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this JobDetailInfo.
+        r"""Sets the job_id of this JobDetailInfo.
 
         任务ID。
 
@@ -386,7 +386,7 @@ class JobDetailInfo:
 
     @property
     def success_result(self):
-        """Gets the success_result of this JobDetailInfo.
+        r"""Gets the success_result of this JobDetailInfo.
 
         任务成功结果。
 
@@ -397,7 +397,7 @@ class JobDetailInfo:
 
     @success_result.setter
     def success_result(self, success_result):
-        """Sets the success_result of this JobDetailInfo.
+        r"""Sets the success_result of this JobDetailInfo.
 
         任务成功结果。
 
@@ -408,7 +408,7 @@ class JobDetailInfo:
 
     @property
     def process(self):
-        """Gets the process of this JobDetailInfo.
+        r"""Gets the process of this JobDetailInfo.
 
         任务进度。
 
@@ -419,7 +419,7 @@ class JobDetailInfo:
 
     @process.setter
     def process(self, process):
-        """Sets the process of this JobDetailInfo.
+        r"""Sets the process of this JobDetailInfo.
 
         任务进度。
 
@@ -430,7 +430,7 @@ class JobDetailInfo:
 
     @property
     def attach_user(self):
-        """Gets the attach_user of this JobDetailInfo.
+        r"""Gets the attach_user of this JobDetailInfo.
 
         关联用户。
 
@@ -441,7 +441,7 @@ class JobDetailInfo:
 
     @attach_user.setter
     def attach_user(self, attach_user):
-        """Sets the attach_user of this JobDetailInfo.
+        r"""Sets the attach_user of this JobDetailInfo.
 
         关联用户。
 
@@ -452,7 +452,7 @@ class JobDetailInfo:
 
     @property
     def entity(self):
-        """Gets the entity of this JobDetailInfo.
+        r"""Gets the entity of this JobDetailInfo.
 
         操作对象。
 
@@ -463,7 +463,7 @@ class JobDetailInfo:
 
     @entity.setter
     def entity(self, entity):
-        """Sets the entity of this JobDetailInfo.
+        r"""Sets the entity of this JobDetailInfo.
 
         操作对象。
 
@@ -474,7 +474,7 @@ class JobDetailInfo:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this JobDetailInfo.
+        r"""Gets the ip_address of this JobDetailInfo.
 
         ip地址。
 
@@ -485,7 +485,7 @@ class JobDetailInfo:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this JobDetailInfo.
+        r"""Sets the ip_address of this JobDetailInfo.
 
         ip地址。
 

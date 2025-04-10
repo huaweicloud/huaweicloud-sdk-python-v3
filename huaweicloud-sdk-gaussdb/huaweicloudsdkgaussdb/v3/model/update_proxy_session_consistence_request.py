@@ -31,7 +31,7 @@ class UpdateProxySessionConsistenceRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, proxy_id=None, body=None):
-        """UpdateProxySessionConsistenceRequest
+        r"""UpdateProxySessionConsistenceRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class UpdateProxySessionConsistenceRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateProxySessionConsistenceRequest.
+        r"""Gets the x_language of this UpdateProxySessionConsistenceRequest.
 
         语言。
 
@@ -73,7 +73,7 @@ class UpdateProxySessionConsistenceRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateProxySessionConsistenceRequest.
+        r"""Sets the x_language of this UpdateProxySessionConsistenceRequest.
 
         语言。
 
@@ -84,7 +84,7 @@ class UpdateProxySessionConsistenceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateProxySessionConsistenceRequest.
+        r"""Gets the instance_id of this UpdateProxySessionConsistenceRequest.
 
         租户在某一project下的实例ID。
 
@@ -95,7 +95,7 @@ class UpdateProxySessionConsistenceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateProxySessionConsistenceRequest.
+        r"""Sets the instance_id of this UpdateProxySessionConsistenceRequest.
 
         租户在某一project下的实例ID。
 
@@ -106,7 +106,7 @@ class UpdateProxySessionConsistenceRequest:
 
     @property
     def proxy_id(self):
-        """Gets the proxy_id of this UpdateProxySessionConsistenceRequest.
+        r"""Gets the proxy_id of this UpdateProxySessionConsistenceRequest.
 
         租户在某一instance下的数据库代理ID。
 
@@ -117,7 +117,7 @@ class UpdateProxySessionConsistenceRequest:
 
     @proxy_id.setter
     def proxy_id(self, proxy_id):
-        """Sets the proxy_id of this UpdateProxySessionConsistenceRequest.
+        r"""Sets the proxy_id of this UpdateProxySessionConsistenceRequest.
 
         租户在某一instance下的数据库代理ID。
 
@@ -128,7 +128,7 @@ class UpdateProxySessionConsistenceRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateProxySessionConsistenceRequest.
+        r"""Gets the body of this UpdateProxySessionConsistenceRequest.
 
         :return: The body of this UpdateProxySessionConsistenceRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ModifyProxyConsistRequest`
@@ -137,7 +137,7 @@ class UpdateProxySessionConsistenceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateProxySessionConsistenceRequest.
+        r"""Sets the body of this UpdateProxySessionConsistenceRequest.
 
         :param body: The body of this UpdateProxySessionConsistenceRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.ModifyProxyConsistRequest`

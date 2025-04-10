@@ -24,7 +24,7 @@ class BatchCreateUsersResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchCreateUsersResponse
+        r"""BatchCreateUsersResponse
 
         The model defined in huaweicloud sdk
 

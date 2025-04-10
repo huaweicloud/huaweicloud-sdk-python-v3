@@ -31,7 +31,7 @@ class DebugCaseRequestBody:
     }
 
     def __init__(self, status=None, cluster_id=None, cluster_type=None, without_package=None):
-        """DebugCaseRequestBody
+        r"""DebugCaseRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class DebugCaseRequestBody:
 
     @property
     def status(self):
-        """Gets the status of this DebugCaseRequestBody.
+        r"""Gets the status of this DebugCaseRequestBody.
 
         状态（9：启动调试）
 
@@ -71,7 +71,7 @@ class DebugCaseRequestBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DebugCaseRequestBody.
+        r"""Sets the status of this DebugCaseRequestBody.
 
         状态（9：启动调试）
 
@@ -82,7 +82,7 @@ class DebugCaseRequestBody:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this DebugCaseRequestBody.
+        r"""Gets the cluster_id of this DebugCaseRequestBody.
 
         资源组id
 
@@ -93,7 +93,7 @@ class DebugCaseRequestBody:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this DebugCaseRequestBody.
+        r"""Sets the cluster_id of this DebugCaseRequestBody.
 
         资源组id
 
@@ -104,7 +104,7 @@ class DebugCaseRequestBody:
 
     @property
     def cluster_type(self):
-        """Gets the cluster_type of this DebugCaseRequestBody.
+        r"""Gets the cluster_type of this DebugCaseRequestBody.
 
         资源组类型（共享资源组：shared-cluster-internet；私有资源组：private-cluster）
 
@@ -115,7 +115,7 @@ class DebugCaseRequestBody:
 
     @cluster_type.setter
     def cluster_type(self, cluster_type):
-        """Sets the cluster_type of this DebugCaseRequestBody.
+        r"""Sets the cluster_type of this DebugCaseRequestBody.
 
         资源组类型（共享资源组：shared-cluster-internet；私有资源组：private-cluster）
 
@@ -126,7 +126,7 @@ class DebugCaseRequestBody:
 
     @property
     def without_package(self):
-        """Gets the without_package of this DebugCaseRequestBody.
+        r"""Gets the without_package of this DebugCaseRequestBody.
 
         套餐包VUM不足的情况下用户选择是不是要走按需计费模式（当前版本固定值：0）
 
@@ -137,7 +137,7 @@ class DebugCaseRequestBody:
 
     @without_package.setter
     def without_package(self, without_package):
-        """Sets the without_package of this DebugCaseRequestBody.
+        r"""Sets the without_package of this DebugCaseRequestBody.
 
         套餐包VUM不足的情况下用户选择是不是要走按需计费模式（当前版本固定值：0）
 

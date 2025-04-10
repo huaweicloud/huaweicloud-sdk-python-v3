@@ -58,7 +58,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, icon=None, manifest_version=None, language=None, description=None, is_system=None, region=None, domain_id=None, variables=None, creator_id=None, updater_id=None, create_time=None, update_time=None, is_collect=None, is_show_source=None, definition=None):
-        """ShowPipelineTemplateDetailResponse
+        r"""ShowPipelineTemplateDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -156,7 +156,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowPipelineTemplateDetailResponse.
+        r"""Gets the id of this ShowPipelineTemplateDetailResponse.
 
         模板ID
 
@@ -167,7 +167,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowPipelineTemplateDetailResponse.
+        r"""Sets the id of this ShowPipelineTemplateDetailResponse.
 
         模板ID
 
@@ -178,7 +178,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowPipelineTemplateDetailResponse.
+        r"""Gets the name of this ShowPipelineTemplateDetailResponse.
 
         模板名称
 
@@ -189,7 +189,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowPipelineTemplateDetailResponse.
+        r"""Sets the name of this ShowPipelineTemplateDetailResponse.
 
         模板名称
 
@@ -200,7 +200,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
 
     @property
     def icon(self):
-        """Gets the icon of this ShowPipelineTemplateDetailResponse.
+        r"""Gets the icon of this ShowPipelineTemplateDetailResponse.
 
         模板图标
 
@@ -211,7 +211,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
 
     @icon.setter
     def icon(self, icon):
-        """Sets the icon of this ShowPipelineTemplateDetailResponse.
+        r"""Sets the icon of this ShowPipelineTemplateDetailResponse.
 
         模板图标
 
@@ -222,7 +222,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
 
     @property
     def manifest_version(self):
-        """Gets the manifest_version of this ShowPipelineTemplateDetailResponse.
+        r"""Gets the manifest_version of this ShowPipelineTemplateDetailResponse.
 
         流水线结构定义版本，新版默认为3.0
 
@@ -233,7 +233,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
 
     @manifest_version.setter
     def manifest_version(self, manifest_version):
-        """Sets the manifest_version of this ShowPipelineTemplateDetailResponse.
+        r"""Sets the manifest_version of this ShowPipelineTemplateDetailResponse.
 
         流水线结构定义版本，新版默认为3.0
 
@@ -244,7 +244,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
 
     @property
     def language(self):
-        """Gets the language of this ShowPipelineTemplateDetailResponse.
+        r"""Gets the language of this ShowPipelineTemplateDetailResponse.
 
         模板语言
 
@@ -255,7 +255,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
 
     @language.setter
     def language(self, language):
-        """Sets the language of this ShowPipelineTemplateDetailResponse.
+        r"""Sets the language of this ShowPipelineTemplateDetailResponse.
 
         模板语言
 
@@ -266,7 +266,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowPipelineTemplateDetailResponse.
+        r"""Gets the description of this ShowPipelineTemplateDetailResponse.
 
         模板描述
 
@@ -277,7 +277,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowPipelineTemplateDetailResponse.
+        r"""Sets the description of this ShowPipelineTemplateDetailResponse.
 
         模板描述
 
@@ -288,7 +288,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
 
     @property
     def is_system(self):
-        """Gets the is_system of this ShowPipelineTemplateDetailResponse.
+        r"""Gets the is_system of this ShowPipelineTemplateDetailResponse.
 
         是否系统模板
 
@@ -299,7 +299,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
 
     @is_system.setter
     def is_system(self, is_system):
-        """Sets the is_system of this ShowPipelineTemplateDetailResponse.
+        r"""Sets the is_system of this ShowPipelineTemplateDetailResponse.
 
         是否系统模板
 
@@ -310,7 +310,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
 
     @property
     def region(self):
-        """Gets the region of this ShowPipelineTemplateDetailResponse.
+        r"""Gets the region of this ShowPipelineTemplateDetailResponse.
 
         所属局点
 
@@ -321,7 +321,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ShowPipelineTemplateDetailResponse.
+        r"""Sets the region of this ShowPipelineTemplateDetailResponse.
 
         所属局点
 
@@ -332,7 +332,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ShowPipelineTemplateDetailResponse.
+        r"""Gets the domain_id of this ShowPipelineTemplateDetailResponse.
 
         所属租户ID
 
@@ -343,7 +343,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ShowPipelineTemplateDetailResponse.
+        r"""Sets the domain_id of this ShowPipelineTemplateDetailResponse.
 
         所属租户ID
 
@@ -354,7 +354,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
 
     @property
     def variables(self):
-        """Gets the variables of this ShowPipelineTemplateDetailResponse.
+        r"""Gets the variables of this ShowPipelineTemplateDetailResponse.
 
         使用的自定义参数
 
@@ -365,7 +365,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
 
     @variables.setter
     def variables(self, variables):
-        """Sets the variables of this ShowPipelineTemplateDetailResponse.
+        r"""Sets the variables of this ShowPipelineTemplateDetailResponse.
 
         使用的自定义参数
 
@@ -376,7 +376,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
 
     @property
     def creator_id(self):
-        """Gets the creator_id of this ShowPipelineTemplateDetailResponse.
+        r"""Gets the creator_id of this ShowPipelineTemplateDetailResponse.
 
         创建人ID
 
@@ -387,7 +387,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
 
     @creator_id.setter
     def creator_id(self, creator_id):
-        """Sets the creator_id of this ShowPipelineTemplateDetailResponse.
+        r"""Sets the creator_id of this ShowPipelineTemplateDetailResponse.
 
         创建人ID
 
@@ -398,7 +398,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
 
     @property
     def updater_id(self):
-        """Gets the updater_id of this ShowPipelineTemplateDetailResponse.
+        r"""Gets the updater_id of this ShowPipelineTemplateDetailResponse.
 
         编辑人ID
 
@@ -409,7 +409,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
 
     @updater_id.setter
     def updater_id(self, updater_id):
-        """Sets the updater_id of this ShowPipelineTemplateDetailResponse.
+        r"""Sets the updater_id of this ShowPipelineTemplateDetailResponse.
 
         编辑人ID
 
@@ -420,7 +420,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowPipelineTemplateDetailResponse.
+        r"""Gets the create_time of this ShowPipelineTemplateDetailResponse.
 
         创建日期
 
@@ -431,7 +431,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowPipelineTemplateDetailResponse.
+        r"""Sets the create_time of this ShowPipelineTemplateDetailResponse.
 
         创建日期
 
@@ -442,7 +442,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowPipelineTemplateDetailResponse.
+        r"""Gets the update_time of this ShowPipelineTemplateDetailResponse.
 
         更新日期
 
@@ -453,7 +453,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowPipelineTemplateDetailResponse.
+        r"""Sets the update_time of this ShowPipelineTemplateDetailResponse.
 
         更新日期
 
@@ -464,7 +464,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
 
     @property
     def is_collect(self):
-        """Gets the is_collect of this ShowPipelineTemplateDetailResponse.
+        r"""Gets the is_collect of this ShowPipelineTemplateDetailResponse.
 
         是否收藏
 
@@ -475,7 +475,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
 
     @is_collect.setter
     def is_collect(self, is_collect):
-        """Sets the is_collect of this ShowPipelineTemplateDetailResponse.
+        r"""Sets the is_collect of this ShowPipelineTemplateDetailResponse.
 
         是否收藏
 
@@ -486,7 +486,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
 
     @property
     def is_show_source(self):
-        """Gets the is_show_source of this ShowPipelineTemplateDetailResponse.
+        r"""Gets the is_show_source of this ShowPipelineTemplateDetailResponse.
 
         是否显示流水线源
 
@@ -497,7 +497,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
 
     @is_show_source.setter
     def is_show_source(self, is_show_source):
-        """Sets the is_show_source of this ShowPipelineTemplateDetailResponse.
+        r"""Sets the is_show_source of this ShowPipelineTemplateDetailResponse.
 
         是否显示流水线源
 
@@ -508,7 +508,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
 
     @property
     def definition(self):
-        """Gets the definition of this ShowPipelineTemplateDetailResponse.
+        r"""Gets the definition of this ShowPipelineTemplateDetailResponse.
 
         模板编排json，包含stages
 
@@ -519,7 +519,7 @@ class ShowPipelineTemplateDetailResponse(SdkResponse):
 
     @definition.setter
     def definition(self, definition):
-        """Sets the definition of this ShowPipelineTemplateDetailResponse.
+        r"""Sets the definition of this ShowPipelineTemplateDetailResponse.
 
         模板编排json，包含stages
 

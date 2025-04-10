@@ -43,7 +43,7 @@ class TxItemVo:
     }
 
     def __init__(self, app_name=None, env_name=None, tx_display_name=None, business_id=None, env_id=None, app_id=None, tx_name=None, invoke_count=None, total_time=None, error_count=None):
-        """TxItemVo
+        r"""TxItemVo
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class TxItemVo:
 
     @property
     def app_name(self):
-        """Gets the app_name of this TxItemVo.
+        r"""Gets the app_name of this TxItemVo.
 
         组件名称。
 
@@ -117,7 +117,7 @@ class TxItemVo:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this TxItemVo.
+        r"""Sets the app_name of this TxItemVo.
 
         组件名称。
 
@@ -128,7 +128,7 @@ class TxItemVo:
 
     @property
     def env_name(self):
-        """Gets the env_name of this TxItemVo.
+        r"""Gets the env_name of this TxItemVo.
 
         环境名称。
 
@@ -139,7 +139,7 @@ class TxItemVo:
 
     @env_name.setter
     def env_name(self, env_name):
-        """Sets the env_name of this TxItemVo.
+        r"""Sets the env_name of this TxItemVo.
 
         环境名称。
 
@@ -150,7 +150,7 @@ class TxItemVo:
 
     @property
     def tx_display_name(self):
-        """Gets the tx_display_name of this TxItemVo.
+        r"""Gets the tx_display_name of this TxItemVo.
 
         事务显示名称。
 
@@ -161,7 +161,7 @@ class TxItemVo:
 
     @tx_display_name.setter
     def tx_display_name(self, tx_display_name):
-        """Sets the tx_display_name of this TxItemVo.
+        r"""Sets the tx_display_name of this TxItemVo.
 
         事务显示名称。
 
@@ -172,7 +172,7 @@ class TxItemVo:
 
     @property
     def business_id(self):
-        """Gets the business_id of this TxItemVo.
+        r"""Gets the business_id of this TxItemVo.
 
         应用id。
 
@@ -183,7 +183,7 @@ class TxItemVo:
 
     @business_id.setter
     def business_id(self, business_id):
-        """Sets the business_id of this TxItemVo.
+        r"""Sets the business_id of this TxItemVo.
 
         应用id。
 
@@ -194,7 +194,7 @@ class TxItemVo:
 
     @property
     def env_id(self):
-        """Gets the env_id of this TxItemVo.
+        r"""Gets the env_id of this TxItemVo.
 
         环境id。
 
@@ -205,7 +205,7 @@ class TxItemVo:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this TxItemVo.
+        r"""Sets the env_id of this TxItemVo.
 
         环境id。
 
@@ -216,7 +216,7 @@ class TxItemVo:
 
     @property
     def app_id(self):
-        """Gets the app_id of this TxItemVo.
+        r"""Gets the app_id of this TxItemVo.
 
         组件id。
 
@@ -227,7 +227,7 @@ class TxItemVo:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this TxItemVo.
+        r"""Sets the app_id of this TxItemVo.
 
         组件id。
 
@@ -238,7 +238,7 @@ class TxItemVo:
 
     @property
     def tx_name(self):
-        """Gets the tx_name of this TxItemVo.
+        r"""Gets the tx_name of this TxItemVo.
 
         事务名称。
 
@@ -249,7 +249,7 @@ class TxItemVo:
 
     @tx_name.setter
     def tx_name(self, tx_name):
-        """Sets the tx_name of this TxItemVo.
+        r"""Sets the tx_name of this TxItemVo.
 
         事务名称。
 
@@ -260,7 +260,7 @@ class TxItemVo:
 
     @property
     def invoke_count(self):
-        """Gets the invoke_count of this TxItemVo.
+        r"""Gets the invoke_count of this TxItemVo.
 
         调用次数。
 
@@ -271,7 +271,7 @@ class TxItemVo:
 
     @invoke_count.setter
     def invoke_count(self, invoke_count):
-        """Sets the invoke_count of this TxItemVo.
+        r"""Sets the invoke_count of this TxItemVo.
 
         调用次数。
 
@@ -282,7 +282,7 @@ class TxItemVo:
 
     @property
     def total_time(self):
-        """Gets the total_time of this TxItemVo.
+        r"""Gets the total_time of this TxItemVo.
 
         总耗时。
 
@@ -293,7 +293,7 @@ class TxItemVo:
 
     @total_time.setter
     def total_time(self, total_time):
-        """Sets the total_time of this TxItemVo.
+        r"""Sets the total_time of this TxItemVo.
 
         总耗时。
 
@@ -304,7 +304,7 @@ class TxItemVo:
 
     @property
     def error_count(self):
-        """Gets the error_count of this TxItemVo.
+        r"""Gets the error_count of this TxItemVo.
 
         错误次数。
 
@@ -315,7 +315,7 @@ class TxItemVo:
 
     @error_count.setter
     def error_count(self, error_count):
-        """Sets the error_count of this TxItemVo.
+        r"""Sets the error_count of this TxItemVo.
 
         错误次数。
 

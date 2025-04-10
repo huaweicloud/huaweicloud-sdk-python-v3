@@ -31,7 +31,7 @@ class CreateOfflineTaskReq:
     }
 
     def __init__(self, base_info=None, target_db_info=None, backup_info=None, options=None):
-        """CreateOfflineTaskReq
+        r"""CreateOfflineTaskReq
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class CreateOfflineTaskReq:
 
     @property
     def base_info(self):
-        """Gets the base_info of this CreateOfflineTaskReq.
+        r"""Gets the base_info of this CreateOfflineTaskReq.
 
         :return: The base_info of this CreateOfflineTaskReq.
         :rtype: :class:`huaweicloudsdkdrs.v5.BackupJobBaseInfo`
@@ -69,7 +69,7 @@ class CreateOfflineTaskReq:
 
     @base_info.setter
     def base_info(self, base_info):
-        """Sets the base_info of this CreateOfflineTaskReq.
+        r"""Sets the base_info of this CreateOfflineTaskReq.
 
         :param base_info: The base_info of this CreateOfflineTaskReq.
         :type base_info: :class:`huaweicloudsdkdrs.v5.BackupJobBaseInfo`
@@ -78,7 +78,7 @@ class CreateOfflineTaskReq:
 
     @property
     def target_db_info(self):
-        """Gets the target_db_info of this CreateOfflineTaskReq.
+        r"""Gets the target_db_info of this CreateOfflineTaskReq.
 
         :return: The target_db_info of this CreateOfflineTaskReq.
         :rtype: :class:`huaweicloudsdkdrs.v5.BackupJobEndpointInfo`
@@ -87,7 +87,7 @@ class CreateOfflineTaskReq:
 
     @target_db_info.setter
     def target_db_info(self, target_db_info):
-        """Sets the target_db_info of this CreateOfflineTaskReq.
+        r"""Sets the target_db_info of this CreateOfflineTaskReq.
 
         :param target_db_info: The target_db_info of this CreateOfflineTaskReq.
         :type target_db_info: :class:`huaweicloudsdkdrs.v5.BackupJobEndpointInfo`
@@ -96,7 +96,7 @@ class CreateOfflineTaskReq:
 
     @property
     def backup_info(self):
-        """Gets the backup_info of this CreateOfflineTaskReq.
+        r"""Gets the backup_info of this CreateOfflineTaskReq.
 
         :return: The backup_info of this CreateOfflineTaskReq.
         :rtype: :class:`huaweicloudsdkdrs.v5.BackupInfo`
@@ -105,7 +105,7 @@ class CreateOfflineTaskReq:
 
     @backup_info.setter
     def backup_info(self, backup_info):
-        """Sets the backup_info of this CreateOfflineTaskReq.
+        r"""Sets the backup_info of this CreateOfflineTaskReq.
 
         :param backup_info: The backup_info of this CreateOfflineTaskReq.
         :type backup_info: :class:`huaweicloudsdkdrs.v5.BackupInfo`
@@ -114,7 +114,7 @@ class CreateOfflineTaskReq:
 
     @property
     def options(self):
-        """Gets the options of this CreateOfflineTaskReq.
+        r"""Gets the options of this CreateOfflineTaskReq.
 
         :return: The options of this CreateOfflineTaskReq.
         :rtype: :class:`huaweicloudsdkdrs.v5.BackupRestoreOptionInfo`
@@ -123,7 +123,7 @@ class CreateOfflineTaskReq:
 
     @options.setter
     def options(self, options):
-        """Sets the options of this CreateOfflineTaskReq.
+        r"""Sets the options of this CreateOfflineTaskReq.
 
         :param options: The options of this CreateOfflineTaskReq.
         :type options: :class:`huaweicloudsdkdrs.v5.BackupRestoreOptionInfo`

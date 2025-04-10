@@ -27,7 +27,7 @@ class ResetReplicaReqPartitions:
     }
 
     def __init__(self, partition=None, replicas=None):
-        """ResetReplicaReqPartitions
+        r"""ResetReplicaReqPartitions
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ResetReplicaReqPartitions:
 
     @property
     def partition(self):
-        """Gets the partition of this ResetReplicaReqPartitions.
+        r"""Gets the partition of this ResetReplicaReqPartitions.
 
         分区ID。
 
@@ -61,7 +61,7 @@ class ResetReplicaReqPartitions:
 
     @partition.setter
     def partition(self, partition):
-        """Sets the partition of this ResetReplicaReqPartitions.
+        r"""Sets the partition of this ResetReplicaReqPartitions.
 
         分区ID。
 
@@ -72,7 +72,7 @@ class ResetReplicaReqPartitions:
 
     @property
     def replicas(self):
-        """Gets the replicas of this ResetReplicaReqPartitions.
+        r"""Gets the replicas of this ResetReplicaReqPartitions.
 
         副本期望所在的broker ID。其中Array首位为leader副本，所有分区需要有同样数量的副本，副本数不能大于总broker的数量。
 
@@ -83,7 +83,7 @@ class ResetReplicaReqPartitions:
 
     @replicas.setter
     def replicas(self, replicas):
-        """Sets the replicas of this ResetReplicaReqPartitions.
+        r"""Sets the replicas of this ResetReplicaReqPartitions.
 
         副本期望所在的broker ID。其中Array首位为leader副本，所有分区需要有同样数量的副本，副本数不能大于总broker的数量。
 

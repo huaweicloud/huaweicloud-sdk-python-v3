@@ -25,7 +25,7 @@ class SecurityGroup:
     }
 
     def __init__(self, id=None):
-        """SecurityGroup
+        r"""SecurityGroup
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SecurityGroup:
 
     @property
     def id(self):
-        """Gets the id of this SecurityGroup.
+        r"""Gets the id of this SecurityGroup.
 
         安全组ID。
 
@@ -53,7 +53,7 @@ class SecurityGroup:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SecurityGroup.
+        r"""Sets the id of this SecurityGroup.
 
         安全组ID。
 

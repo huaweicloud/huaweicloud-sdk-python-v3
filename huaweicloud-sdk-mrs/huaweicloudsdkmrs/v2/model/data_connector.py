@@ -29,7 +29,7 @@ class DataConnector:
     }
 
     def __init__(self, connector_name=None, source_type=None, source_info=None):
-        """DataConnector
+        r"""DataConnector
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DataConnector:
 
     @property
     def connector_name(self):
-        """Gets the connector_name of this DataConnector.
+        r"""Gets the connector_name of this DataConnector.
 
         数据连接名称。
 
@@ -65,7 +65,7 @@ class DataConnector:
 
     @connector_name.setter
     def connector_name(self, connector_name):
-        """Sets the connector_name of this DataConnector.
+        r"""Sets the connector_name of this DataConnector.
 
         数据连接名称。
 
@@ -76,7 +76,7 @@ class DataConnector:
 
     @property
     def source_type(self):
-        """Gets the source_type of this DataConnector.
+        r"""Gets the source_type of this DataConnector.
 
         数据连接类型。 - RDS_POSTGRES：RDS服务PostgreSQL数据库 - RDS_MYSQL：RDS服务MySQL数据库 - gaussdb-mysql：云数据库GaussDB(for MySQL)
 
@@ -87,7 +87,7 @@ class DataConnector:
 
     @source_type.setter
     def source_type(self, source_type):
-        """Sets the source_type of this DataConnector.
+        r"""Sets the source_type of this DataConnector.
 
         数据连接类型。 - RDS_POSTGRES：RDS服务PostgreSQL数据库 - RDS_MYSQL：RDS服务MySQL数据库 - gaussdb-mysql：云数据库GaussDB(for MySQL)
 
@@ -98,7 +98,7 @@ class DataConnector:
 
     @property
     def source_info(self):
-        """Gets the source_info of this DataConnector.
+        r"""Gets the source_info of this DataConnector.
 
         数据源信息，为json格式，不同数据连接有不同的信息，各数据源的source_info请求内容可参见示例。
 
@@ -109,7 +109,7 @@ class DataConnector:
 
     @source_info.setter
     def source_info(self, source_info):
-        """Sets the source_info of this DataConnector.
+        r"""Sets the source_info of this DataConnector.
 
         数据源信息，为json格式，不同数据连接有不同的信息，各数据源的source_info请求内容可参见示例。
 

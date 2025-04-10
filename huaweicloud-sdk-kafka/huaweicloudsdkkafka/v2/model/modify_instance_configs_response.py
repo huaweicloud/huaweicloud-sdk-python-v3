@@ -30,7 +30,7 @@ class ModifyInstanceConfigsResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, dynamic_config=None, static_config=None):
-        """ModifyInstanceConfigsResponse
+        r"""ModifyInstanceConfigsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ModifyInstanceConfigsResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ModifyInstanceConfigsResponse.
+        r"""Gets the job_id of this ModifyInstanceConfigsResponse.
 
         配置修改任务ID。
 
@@ -69,7 +69,7 @@ class ModifyInstanceConfigsResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ModifyInstanceConfigsResponse.
+        r"""Sets the job_id of this ModifyInstanceConfigsResponse.
 
         配置修改任务ID。
 
@@ -80,7 +80,7 @@ class ModifyInstanceConfigsResponse(SdkResponse):
 
     @property
     def dynamic_config(self):
-        """Gets the dynamic_config of this ModifyInstanceConfigsResponse.
+        r"""Gets the dynamic_config of this ModifyInstanceConfigsResponse.
 
         本次修改动态配置参数个数。
 
@@ -91,7 +91,7 @@ class ModifyInstanceConfigsResponse(SdkResponse):
 
     @dynamic_config.setter
     def dynamic_config(self, dynamic_config):
-        """Sets the dynamic_config of this ModifyInstanceConfigsResponse.
+        r"""Sets the dynamic_config of this ModifyInstanceConfigsResponse.
 
         本次修改动态配置参数个数。
 
@@ -102,7 +102,7 @@ class ModifyInstanceConfigsResponse(SdkResponse):
 
     @property
     def static_config(self):
-        """Gets the static_config of this ModifyInstanceConfigsResponse.
+        r"""Gets the static_config of this ModifyInstanceConfigsResponse.
 
         本次修改静态配置参数个数。
 
@@ -113,7 +113,7 @@ class ModifyInstanceConfigsResponse(SdkResponse):
 
     @static_config.setter
     def static_config(self, static_config):
-        """Sets the static_config of this ModifyInstanceConfigsResponse.
+        r"""Sets the static_config of this ModifyInstanceConfigsResponse.
 
         本次修改静态配置参数个数。
 

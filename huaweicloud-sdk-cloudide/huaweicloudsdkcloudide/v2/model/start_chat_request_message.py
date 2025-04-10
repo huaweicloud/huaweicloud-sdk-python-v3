@@ -27,7 +27,7 @@ class StartChatRequestMessage:
     }
 
     def __init__(self, user_type=None, user_id=None):
-        """StartChatRequestMessage
+        r"""StartChatRequestMessage
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class StartChatRequestMessage:
 
     @property
     def user_type(self):
-        """Gets the user_type of this StartChatRequestMessage.
+        r"""Gets the user_type of this StartChatRequestMessage.
 
         user type
 
@@ -61,7 +61,7 @@ class StartChatRequestMessage:
 
     @user_type.setter
     def user_type(self, user_type):
-        """Sets the user_type of this StartChatRequestMessage.
+        r"""Sets the user_type of this StartChatRequestMessage.
 
         user type
 
@@ -72,7 +72,7 @@ class StartChatRequestMessage:
 
     @property
     def user_id(self):
-        """Gets the user_id of this StartChatRequestMessage.
+        r"""Gets the user_id of this StartChatRequestMessage.
 
         user id
 
@@ -83,7 +83,7 @@ class StartChatRequestMessage:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this StartChatRequestMessage.
+        r"""Sets the user_id of this StartChatRequestMessage.
 
         user id
 

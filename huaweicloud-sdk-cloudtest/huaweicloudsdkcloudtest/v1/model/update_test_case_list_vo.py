@@ -31,7 +31,7 @@ class UpdateTestCaseListVo:
     }
 
     def __init__(self, id=None, name=None, success_list=None, failed_list=None):
-        """UpdateTestCaseListVo
+        r"""UpdateTestCaseListVo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class UpdateTestCaseListVo:
 
     @property
     def id(self):
-        """Gets the id of this UpdateTestCaseListVo.
+        r"""Gets the id of this UpdateTestCaseListVo.
 
         CTS需要返回资源id
 
@@ -75,7 +75,7 @@ class UpdateTestCaseListVo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateTestCaseListVo.
+        r"""Sets the id of this UpdateTestCaseListVo.
 
         CTS需要返回资源id
 
@@ -86,7 +86,7 @@ class UpdateTestCaseListVo:
 
     @property
     def name(self):
-        """Gets the name of this UpdateTestCaseListVo.
+        r"""Gets the name of this UpdateTestCaseListVo.
 
         CTS需要返回资源name
 
@@ -97,7 +97,7 @@ class UpdateTestCaseListVo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateTestCaseListVo.
+        r"""Sets the name of this UpdateTestCaseListVo.
 
         CTS需要返回资源name
 
@@ -108,7 +108,7 @@ class UpdateTestCaseListVo:
 
     @property
     def success_list(self):
-        """Gets the success_list of this UpdateTestCaseListVo.
+        r"""Gets the success_list of this UpdateTestCaseListVo.
 
         成功批量更新用例的id列表
 
@@ -119,7 +119,7 @@ class UpdateTestCaseListVo:
 
     @success_list.setter
     def success_list(self, success_list):
-        """Sets the success_list of this UpdateTestCaseListVo.
+        r"""Sets the success_list of this UpdateTestCaseListVo.
 
         成功批量更新用例的id列表
 
@@ -130,7 +130,7 @@ class UpdateTestCaseListVo:
 
     @property
     def failed_list(self):
-        """Gets the failed_list of this UpdateTestCaseListVo.
+        r"""Gets the failed_list of this UpdateTestCaseListVo.
 
         没有批量更新用例的id列表
 
@@ -141,7 +141,7 @@ class UpdateTestCaseListVo:
 
     @failed_list.setter
     def failed_list(self, failed_list):
-        """Sets the failed_list of this UpdateTestCaseListVo.
+        r"""Sets the failed_list of this UpdateTestCaseListVo.
 
         没有批量更新用例的id列表
 

@@ -27,7 +27,7 @@ class UpdateHpcShareRequestBody:
     }
 
     def __init__(self, action=None, gc_time=None):
-        """UpdateHpcShareRequestBody
+        r"""UpdateHpcShareRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UpdateHpcShareRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this UpdateHpcShareRequestBody.
+        r"""Gets the action of this UpdateHpcShareRequestBody.
 
         更新文件系统的操作类型。当前仅支持取值 config_gc_time
 
@@ -59,7 +59,7 @@ class UpdateHpcShareRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this UpdateHpcShareRequestBody.
+        r"""Sets the action of this UpdateHpcShareRequestBody.
 
         更新文件系统的操作类型。当前仅支持取值 config_gc_time
 
@@ -70,7 +70,7 @@ class UpdateHpcShareRequestBody:
 
     @property
     def gc_time(self):
-        """Gets the gc_time of this UpdateHpcShareRequestBody.
+        r"""Gets the gc_time of this UpdateHpcShareRequestBody.
 
         文件系统冷数据淘汰时间，单位为小时，取值范围 [1, 100000000]。系统默认为 60 小时
 
@@ -81,7 +81,7 @@ class UpdateHpcShareRequestBody:
 
     @gc_time.setter
     def gc_time(self, gc_time):
-        """Sets the gc_time of this UpdateHpcShareRequestBody.
+        r"""Sets the gc_time of this UpdateHpcShareRequestBody.
 
         文件系统冷数据淘汰时间，单位为小时，取值范围 [1, 100000000]。系统默认为 60 小时
 

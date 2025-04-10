@@ -37,7 +37,7 @@ class ListServerMetricDataRequest:
     }
 
     def __init__(self, server_id=None, namespace=None, metric_name=None, _from=None, to=None, period=None, filter=None):
-        """ListServerMetricDataRequest
+        r"""ListServerMetricDataRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListServerMetricDataRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ListServerMetricDataRequest.
+        r"""Gets the server_id of this ListServerMetricDataRequest.
 
         服务器唯一标识。
 
@@ -89,7 +89,7 @@ class ListServerMetricDataRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ListServerMetricDataRequest.
+        r"""Sets the server_id of this ListServerMetricDataRequest.
 
         服务器唯一标识。
 
@@ -100,7 +100,7 @@ class ListServerMetricDataRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this ListServerMetricDataRequest.
+        r"""Gets the namespace of this ListServerMetricDataRequest.
 
         服务的命名空间：例如 \"SYS.ECS/AGT.ECS\"，当namespace为AGT.ECS，则查询GPU监控指标：  - SYS.ECS：弹性云服务器的基础监控指标。  - AGT.ECS：弹性云服务器操作系统监控的监控指标（GPU指标）。
 
@@ -111,7 +111,7 @@ class ListServerMetricDataRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this ListServerMetricDataRequest.
+        r"""Sets the namespace of this ListServerMetricDataRequest.
 
         服务的命名空间：例如 \"SYS.ECS/AGT.ECS\"，当namespace为AGT.ECS，则查询GPU监控指标：  - SYS.ECS：弹性云服务器的基础监控指标。  - AGT.ECS：弹性云服务器操作系统监控的监控指标（GPU指标）。
 
@@ -122,7 +122,7 @@ class ListServerMetricDataRequest:
 
     @property
     def metric_name(self):
-        """Gets the metric_name of this ListServerMetricDataRequest.
+        r"""Gets the metric_name of this ListServerMetricDataRequest.
 
         监控查询指标名称:  - SYS.ECS命名空间的指标名称,请参考帮助文档：“[弹性云服务器支持的基础监控指标](https://support.huaweicloud.com/usermanual-ecs/ecs_03_1002.html)”。  - AGT.ECS命名空间的指标名称,请参考帮助文档：“[操作系统监控指标：GPU](https://support.huaweicloud.com/usermanual-ecs/ecs_03_1003.html#section11)”。
 
@@ -133,7 +133,7 @@ class ListServerMetricDataRequest:
 
     @metric_name.setter
     def metric_name(self, metric_name):
-        """Sets the metric_name of this ListServerMetricDataRequest.
+        r"""Sets the metric_name of this ListServerMetricDataRequest.
 
         监控查询指标名称:  - SYS.ECS命名空间的指标名称,请参考帮助文档：“[弹性云服务器支持的基础监控指标](https://support.huaweicloud.com/usermanual-ecs/ecs_03_1002.html)”。  - AGT.ECS命名空间的指标名称,请参考帮助文档：“[操作系统监控指标：GPU](https://support.huaweicloud.com/usermanual-ecs/ecs_03_1003.html#section11)”。
 
@@ -144,7 +144,7 @@ class ListServerMetricDataRequest:
 
     @property
     def _from(self):
-        """Gets the _from of this ListServerMetricDataRequest.
+        r"""Gets the _from of this ListServerMetricDataRequest.
 
         查询数据起始时间，UNIX时间戳，单位毫秒。
 
@@ -155,7 +155,7 @@ class ListServerMetricDataRequest:
 
     @_from.setter
     def _from(self, _from):
-        """Sets the _from of this ListServerMetricDataRequest.
+        r"""Sets the _from of this ListServerMetricDataRequest.
 
         查询数据起始时间，UNIX时间戳，单位毫秒。
 
@@ -166,7 +166,7 @@ class ListServerMetricDataRequest:
 
     @property
     def to(self):
-        """Gets the to of this ListServerMetricDataRequest.
+        r"""Gets the to of this ListServerMetricDataRequest.
 
         查询数据截止时间UNIX时间戳，单位毫秒。from必须小于to。
 
@@ -177,7 +177,7 @@ class ListServerMetricDataRequest:
 
     @to.setter
     def to(self, to):
-        """Sets the to of this ListServerMetricDataRequest.
+        r"""Sets the to of this ListServerMetricDataRequest.
 
         查询数据截止时间UNIX时间戳，单位毫秒。from必须小于to。
 
@@ -188,7 +188,7 @@ class ListServerMetricDataRequest:
 
     @property
     def period(self):
-        """Gets the period of this ListServerMetricDataRequest.
+        r"""Gets the period of this ListServerMetricDataRequest.
 
         监控数据粒度。 取值范围：  - 1: 实时数据。  - 300: 5分钟粒度。  - 1200: 20分钟粒度。  - 3600: 1小时粒度。  - 14400: 4小时粒度。  - 86400: 1天粒度。
 
@@ -199,7 +199,7 @@ class ListServerMetricDataRequest:
 
     @period.setter
     def period(self, period):
-        """Sets the period of this ListServerMetricDataRequest.
+        r"""Sets the period of this ListServerMetricDataRequest.
 
         监控数据粒度。 取值范围：  - 1: 实时数据。  - 300: 5分钟粒度。  - 1200: 20分钟粒度。  - 3600: 1小时粒度。  - 14400: 4小时粒度。  - 86400: 1天粒度。
 
@@ -210,7 +210,7 @@ class ListServerMetricDataRequest:
 
     @property
     def filter(self):
-        """Gets the filter of this ListServerMetricDataRequest.
+        r"""Gets the filter of this ListServerMetricDataRequest.
 
         数据聚合方式，支持的聚合方式如下:  - average：聚合周期内指标数据的平均值。  - max：聚合周期内指标数据的最大值。  - min：聚合周期内指标数据的最小值。  - sum：聚合周期内指标数据的求和值。  - variance：聚合周期内指标数据的方差。
 
@@ -221,7 +221,7 @@ class ListServerMetricDataRequest:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this ListServerMetricDataRequest.
+        r"""Sets the filter of this ListServerMetricDataRequest.
 
         数据聚合方式，支持的聚合方式如下:  - average：聚合周期内指标数据的平均值。  - max：聚合周期内指标数据的最大值。  - min：聚合周期内指标数据的最小值。  - sum：聚合周期内指标数据的求和值。  - variance：聚合周期内指标数据的方差。
 

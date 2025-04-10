@@ -24,7 +24,7 @@ class DeleteHttp2RpcResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteHttp2RpcResponse
+        r"""DeleteHttp2RpcResponse
 
         The model defined in huaweicloud sdk
 

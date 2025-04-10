@@ -24,7 +24,7 @@ class DeletePortResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeletePortResponse
+        r"""DeletePortResponse
 
         The model defined in huaweicloud sdk
 

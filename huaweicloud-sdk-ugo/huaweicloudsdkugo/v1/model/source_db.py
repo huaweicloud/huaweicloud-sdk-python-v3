@@ -35,7 +35,7 @@ class SourceDB:
     }
 
     def __init__(self, user_name=None, connection_string=None, source_db_type=None, service_name=None, ip=None, port=None):
-        """SourceDB
+        r"""SourceDB
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class SourceDB:
 
     @property
     def user_name(self):
-        """Gets the user_name of this SourceDB.
+        r"""Gets the user_name of this SourceDB.
 
         用户名。
 
@@ -86,7 +86,7 @@ class SourceDB:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this SourceDB.
+        r"""Sets the user_name of this SourceDB.
 
         用户名。
 
@@ -97,7 +97,7 @@ class SourceDB:
 
     @property
     def connection_string(self):
-        """Gets the connection_string of this SourceDB.
+        r"""Gets the connection_string of this SourceDB.
 
         连接字符串。
 
@@ -108,7 +108,7 @@ class SourceDB:
 
     @connection_string.setter
     def connection_string(self, connection_string):
-        """Sets the connection_string of this SourceDB.
+        r"""Sets the connection_string of this SourceDB.
 
         连接字符串。
 
@@ -119,7 +119,7 @@ class SourceDB:
 
     @property
     def source_db_type(self):
-        """Gets the source_db_type of this SourceDB.
+        r"""Gets the source_db_type of this SourceDB.
 
         源数据库类型。
 
@@ -130,7 +130,7 @@ class SourceDB:
 
     @source_db_type.setter
     def source_db_type(self, source_db_type):
-        """Sets the source_db_type of this SourceDB.
+        r"""Sets the source_db_type of this SourceDB.
 
         源数据库类型。
 
@@ -141,7 +141,7 @@ class SourceDB:
 
     @property
     def service_name(self):
-        """Gets the service_name of this SourceDB.
+        r"""Gets the service_name of this SourceDB.
 
         service名称。
 
@@ -152,7 +152,7 @@ class SourceDB:
 
     @service_name.setter
     def service_name(self, service_name):
-        """Sets the service_name of this SourceDB.
+        r"""Sets the service_name of this SourceDB.
 
         service名称。
 
@@ -163,7 +163,7 @@ class SourceDB:
 
     @property
     def ip(self):
-        """Gets the ip of this SourceDB.
+        r"""Gets the ip of this SourceDB.
 
         ip。
 
@@ -174,7 +174,7 @@ class SourceDB:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this SourceDB.
+        r"""Sets the ip of this SourceDB.
 
         ip。
 
@@ -185,7 +185,7 @@ class SourceDB:
 
     @property
     def port(self):
-        """Gets the port of this SourceDB.
+        r"""Gets the port of this SourceDB.
 
         port。
 
@@ -196,7 +196,7 @@ class SourceDB:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this SourceDB.
+        r"""Sets the port of this SourceDB.
 
         port。
 

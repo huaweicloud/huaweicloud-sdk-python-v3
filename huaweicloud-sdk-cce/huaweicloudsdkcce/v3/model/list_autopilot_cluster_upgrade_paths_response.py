@@ -32,7 +32,7 @@ class ListAutopilotClusterUpgradePathsResponse(SdkResponse):
     }
 
     def __init__(self, api_version=None, kind=None, metadata=None, upgrade_paths=None):
-        """ListAutopilotClusterUpgradePathsResponse
+        r"""ListAutopilotClusterUpgradePathsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListAutopilotClusterUpgradePathsResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this ListAutopilotClusterUpgradePathsResponse.
+        r"""Gets the api_version of this ListAutopilotClusterUpgradePathsResponse.
 
         API版本
 
@@ -76,7 +76,7 @@ class ListAutopilotClusterUpgradePathsResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this ListAutopilotClusterUpgradePathsResponse.
+        r"""Sets the api_version of this ListAutopilotClusterUpgradePathsResponse.
 
         API版本
 
@@ -87,7 +87,7 @@ class ListAutopilotClusterUpgradePathsResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this ListAutopilotClusterUpgradePathsResponse.
+        r"""Gets the kind of this ListAutopilotClusterUpgradePathsResponse.
 
         资源类型
 
@@ -98,7 +98,7 @@ class ListAutopilotClusterUpgradePathsResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ListAutopilotClusterUpgradePathsResponse.
+        r"""Sets the kind of this ListAutopilotClusterUpgradePathsResponse.
 
         资源类型
 
@@ -109,7 +109,7 @@ class ListAutopilotClusterUpgradePathsResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this ListAutopilotClusterUpgradePathsResponse.
+        r"""Gets the metadata of this ListAutopilotClusterUpgradePathsResponse.
 
         :return: The metadata of this ListAutopilotClusterUpgradePathsResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.Metadata`
@@ -118,7 +118,7 @@ class ListAutopilotClusterUpgradePathsResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ListAutopilotClusterUpgradePathsResponse.
+        r"""Sets the metadata of this ListAutopilotClusterUpgradePathsResponse.
 
         :param metadata: The metadata of this ListAutopilotClusterUpgradePathsResponse.
         :type metadata: :class:`huaweicloudsdkcce.v3.Metadata`
@@ -127,7 +127,7 @@ class ListAutopilotClusterUpgradePathsResponse(SdkResponse):
 
     @property
     def upgrade_paths(self):
-        """Gets the upgrade_paths of this ListAutopilotClusterUpgradePathsResponse.
+        r"""Gets the upgrade_paths of this ListAutopilotClusterUpgradePathsResponse.
 
         升级路径集合
 
@@ -138,7 +138,7 @@ class ListAutopilotClusterUpgradePathsResponse(SdkResponse):
 
     @upgrade_paths.setter
     def upgrade_paths(self, upgrade_paths):
-        """Sets the upgrade_paths of this ListAutopilotClusterUpgradePathsResponse.
+        r"""Sets the upgrade_paths of this ListAutopilotClusterUpgradePathsResponse.
 
         升级路径集合
 

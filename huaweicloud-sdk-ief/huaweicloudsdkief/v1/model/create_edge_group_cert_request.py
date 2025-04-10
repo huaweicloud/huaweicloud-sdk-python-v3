@@ -29,7 +29,7 @@ class CreateEdgeGroupCertRequest:
     }
 
     def __init__(self, ief_instance_id=None, group_id=None, body=None):
-        """CreateEdgeGroupCertRequest
+        r"""CreateEdgeGroupCertRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateEdgeGroupCertRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this CreateEdgeGroupCertRequest.
+        r"""Gets the ief_instance_id of this CreateEdgeGroupCertRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -67,7 +67,7 @@ class CreateEdgeGroupCertRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this CreateEdgeGroupCertRequest.
+        r"""Sets the ief_instance_id of this CreateEdgeGroupCertRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -78,7 +78,7 @@ class CreateEdgeGroupCertRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this CreateEdgeGroupCertRequest.
+        r"""Gets the group_id of this CreateEdgeGroupCertRequest.
 
         边缘节点组ID
 
@@ -89,7 +89,7 @@ class CreateEdgeGroupCertRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this CreateEdgeGroupCertRequest.
+        r"""Sets the group_id of this CreateEdgeGroupCertRequest.
 
         边缘节点组ID
 
@@ -100,7 +100,7 @@ class CreateEdgeGroupCertRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateEdgeGroupCertRequest.
+        r"""Gets the body of this CreateEdgeGroupCertRequest.
 
         :return: The body of this CreateEdgeGroupCertRequest.
         :rtype: :class:`huaweicloudsdkief.v1.EdgeGroupCertRequest`
@@ -109,7 +109,7 @@ class CreateEdgeGroupCertRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateEdgeGroupCertRequest.
+        r"""Sets the body of this CreateEdgeGroupCertRequest.
 
         :param body: The body of this CreateEdgeGroupCertRequest.
         :type body: :class:`huaweicloudsdkief.v1.EdgeGroupCertRequest`

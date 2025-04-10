@@ -27,7 +27,7 @@ class ShowProgressRequest:
     }
 
     def __init__(self, project_uuid=None, operation_uri=None):
-        """ShowProgressRequest
+        r"""ShowProgressRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowProgressRequest:
 
     @property
     def project_uuid(self):
-        """Gets the project_uuid of this ShowProgressRequest.
+        r"""Gets the project_uuid of this ShowProgressRequest.
 
         项目ID
 
@@ -60,7 +60,7 @@ class ShowProgressRequest:
 
     @project_uuid.setter
     def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this ShowProgressRequest.
+        r"""Sets the project_uuid of this ShowProgressRequest.
 
         项目ID
 
@@ -71,7 +71,7 @@ class ShowProgressRequest:
 
     @property
     def operation_uri(self):
-        """Gets the operation_uri of this ShowProgressRequest.
+        r"""Gets the operation_uri of this ShowProgressRequest.
 
         异步操作uri
 
@@ -82,7 +82,7 @@ class ShowProgressRequest:
 
     @operation_uri.setter
     def operation_uri(self, operation_uri):
-        """Sets the operation_uri of this ShowProgressRequest.
+        r"""Sets the operation_uri of this ShowProgressRequest.
 
         异步操作uri
 

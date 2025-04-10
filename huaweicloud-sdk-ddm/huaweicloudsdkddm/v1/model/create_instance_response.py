@@ -30,7 +30,7 @@ class CreateInstanceResponse(SdkResponse):
     }
 
     def __init__(self, id=None, order_id=None, job_id=None):
-        """CreateInstanceResponse
+        r"""CreateInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateInstanceResponse.
+        r"""Gets the id of this CreateInstanceResponse.
 
         实例ID，创建按需付费实例时返回该参数。
 
@@ -69,7 +69,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateInstanceResponse.
+        r"""Sets the id of this CreateInstanceResponse.
 
         实例ID，创建按需付费实例时返回该参数。
 
@@ -80,7 +80,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this CreateInstanceResponse.
+        r"""Gets the order_id of this CreateInstanceResponse.
 
         订单号，创建包年/包月实例时返回该参数。
 
@@ -91,7 +91,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this CreateInstanceResponse.
+        r"""Sets the order_id of this CreateInstanceResponse.
 
         订单号，创建包年/包月实例时返回该参数。
 
@@ -102,7 +102,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateInstanceResponse.
+        r"""Gets the job_id of this CreateInstanceResponse.
 
         任务id，创建按需付费实例时返回该参数
 
@@ -113,7 +113,7 @@ class CreateInstanceResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateInstanceResponse.
+        r"""Sets the job_id of this CreateInstanceResponse.
 
         任务id，创建按需付费实例时返回该参数
 

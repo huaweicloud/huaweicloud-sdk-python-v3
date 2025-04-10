@@ -27,7 +27,7 @@ class UpdateTaskSpeedRequest:
     }
 
     def __init__(self, task_id=None, body=None):
-        """UpdateTaskSpeedRequest
+        r"""UpdateTaskSpeedRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateTaskSpeedRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this UpdateTaskSpeedRequest.
+        r"""Gets the task_id of this UpdateTaskSpeedRequest.
 
         主机迁移任务的ID
 
@@ -60,7 +60,7 @@ class UpdateTaskSpeedRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this UpdateTaskSpeedRequest.
+        r"""Sets the task_id of this UpdateTaskSpeedRequest.
 
         主机迁移任务的ID
 
@@ -71,7 +71,7 @@ class UpdateTaskSpeedRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateTaskSpeedRequest.
+        r"""Gets the body of this UpdateTaskSpeedRequest.
 
         :return: The body of this UpdateTaskSpeedRequest.
         :rtype: :class:`huaweicloudsdksms.v3.UpdateTaskSpeedReq`
@@ -80,7 +80,7 @@ class UpdateTaskSpeedRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateTaskSpeedRequest.
+        r"""Sets the body of this UpdateTaskSpeedRequest.
 
         :param body: The body of this UpdateTaskSpeedRequest.
         :type body: :class:`huaweicloudsdksms.v3.UpdateTaskSpeedReq`

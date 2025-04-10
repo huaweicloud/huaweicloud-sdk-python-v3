@@ -28,7 +28,7 @@ class UploadKieResponse(SdkResponse):
     }
 
     def __init__(self, success=None, failure=None):
-        """UploadKieResponse
+        r"""UploadKieResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UploadKieResponse(SdkResponse):
 
     @property
     def success(self):
-        """Gets the success of this UploadKieResponse.
+        r"""Gets the success of this UploadKieResponse.
 
         导入成功的配置项列表。
 
@@ -62,7 +62,7 @@ class UploadKieResponse(SdkResponse):
 
     @success.setter
     def success(self, success):
-        """Sets the success of this UploadKieResponse.
+        r"""Sets the success of this UploadKieResponse.
 
         导入成功的配置项列表。
 
@@ -73,7 +73,7 @@ class UploadKieResponse(SdkResponse):
 
     @property
     def failure(self):
-        """Gets the failure of this UploadKieResponse.
+        r"""Gets the failure of this UploadKieResponse.
 
         导入失败的配置项及其错误列表。
 
@@ -84,7 +84,7 @@ class UploadKieResponse(SdkResponse):
 
     @failure.setter
     def failure(self, failure):
-        """Sets the failure of this UploadKieResponse.
+        r"""Sets the failure of this UploadKieResponse.
 
         导入失败的配置项及其错误列表。
 

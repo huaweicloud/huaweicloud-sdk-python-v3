@@ -25,7 +25,7 @@ class CreateScalingV2PolicyRequest:
     }
 
     def __init__(self, body=None):
-        """CreateScalingV2PolicyRequest
+        r"""CreateScalingV2PolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateScalingV2PolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateScalingV2PolicyRequest.
+        r"""Gets the body of this CreateScalingV2PolicyRequest.
 
         :return: The body of this CreateScalingV2PolicyRequest.
         :rtype: :class:`huaweicloudsdkas.v1.CreateScalingPolicyV2Option`
@@ -52,7 +52,7 @@ class CreateScalingV2PolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateScalingV2PolicyRequest.
+        r"""Sets the body of this CreateScalingV2PolicyRequest.
 
         :param body: The body of this CreateScalingV2PolicyRequest.
         :type body: :class:`huaweicloudsdkas.v1.CreateScalingPolicyV2Option`

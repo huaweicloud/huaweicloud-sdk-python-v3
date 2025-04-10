@@ -30,7 +30,7 @@ class CheckPermissionResponse(SdkResponse):
     }
 
     def __init__(self, code=None, data=None, message=None):
-        """CheckPermissionResponse
+        r"""CheckPermissionResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CheckPermissionResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this CheckPermissionResponse.
+        r"""Gets the code of this CheckPermissionResponse.
 
         接口调用失败错误码
 
@@ -69,7 +69,7 @@ class CheckPermissionResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this CheckPermissionResponse.
+        r"""Sets the code of this CheckPermissionResponse.
 
         接口调用失败错误码
 
@@ -80,7 +80,7 @@ class CheckPermissionResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this CheckPermissionResponse.
+        r"""Gets the data of this CheckPermissionResponse.
 
         当前用户权限
 
@@ -91,7 +91,7 @@ class CheckPermissionResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this CheckPermissionResponse.
+        r"""Sets the data of this CheckPermissionResponse.
 
         当前用户权限
 
@@ -102,7 +102,7 @@ class CheckPermissionResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this CheckPermissionResponse.
+        r"""Gets the message of this CheckPermissionResponse.
 
         接口调用错误信息
 
@@ -113,7 +113,7 @@ class CheckPermissionResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CheckPermissionResponse.
+        r"""Sets the message of this CheckPermissionResponse.
 
         接口调用错误信息
 

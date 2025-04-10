@@ -25,7 +25,7 @@ class DisableCertificateAuthorityRequest:
     }
 
     def __init__(self, ca_id=None):
-        """DisableCertificateAuthorityRequest
+        r"""DisableCertificateAuthorityRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DisableCertificateAuthorityRequest:
 
     @property
     def ca_id(self):
-        """Gets the ca_id of this DisableCertificateAuthorityRequest.
+        r"""Gets the ca_id of this DisableCertificateAuthorityRequest.
 
         所要禁用CA证书ID。
 
@@ -53,7 +53,7 @@ class DisableCertificateAuthorityRequest:
 
     @ca_id.setter
     def ca_id(self, ca_id):
-        """Sets the ca_id of this DisableCertificateAuthorityRequest.
+        r"""Sets the ca_id of this DisableCertificateAuthorityRequest.
 
         所要禁用CA证书ID。
 

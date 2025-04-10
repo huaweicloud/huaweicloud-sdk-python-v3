@@ -49,7 +49,7 @@ class MindmapRecycle:
     }
 
     def __init__(self, app=None, create_time=None, creator_name=None, creator_num=None, folder_id=None, folder_root_id=None, id=None, map_version=None, mindmap=None, name=None, privacy=None, project_id=None, update_time=None):
-        """MindmapRecycle
+        r"""MindmapRecycle
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class MindmapRecycle:
 
     @property
     def app(self):
-        """Gets the app of this MindmapRecycle.
+        r"""Gets the app of this MindmapRecycle.
 
         app
 
@@ -138,7 +138,7 @@ class MindmapRecycle:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this MindmapRecycle.
+        r"""Sets the app of this MindmapRecycle.
 
         app
 
@@ -149,7 +149,7 @@ class MindmapRecycle:
 
     @property
     def create_time(self):
-        """Gets the create_time of this MindmapRecycle.
+        r"""Gets the create_time of this MindmapRecycle.
 
         创建时间
 
@@ -160,7 +160,7 @@ class MindmapRecycle:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this MindmapRecycle.
+        r"""Sets the create_time of this MindmapRecycle.
 
         创建时间
 
@@ -171,7 +171,7 @@ class MindmapRecycle:
 
     @property
     def creator_name(self):
-        """Gets the creator_name of this MindmapRecycle.
+        r"""Gets the creator_name of this MindmapRecycle.
 
         创建人名称
 
@@ -182,7 +182,7 @@ class MindmapRecycle:
 
     @creator_name.setter
     def creator_name(self, creator_name):
-        """Sets the creator_name of this MindmapRecycle.
+        r"""Sets the creator_name of this MindmapRecycle.
 
         创建人名称
 
@@ -193,7 +193,7 @@ class MindmapRecycle:
 
     @property
     def creator_num(self):
-        """Gets the creator_num of this MindmapRecycle.
+        r"""Gets the creator_num of this MindmapRecycle.
 
         创建人工号
 
@@ -204,7 +204,7 @@ class MindmapRecycle:
 
     @creator_num.setter
     def creator_num(self, creator_num):
-        """Sets the creator_num of this MindmapRecycle.
+        r"""Sets the creator_num of this MindmapRecycle.
 
         创建人工号
 
@@ -215,7 +215,7 @@ class MindmapRecycle:
 
     @property
     def folder_id(self):
-        """Gets the folder_id of this MindmapRecycle.
+        r"""Gets the folder_id of this MindmapRecycle.
 
         文件路径
 
@@ -226,7 +226,7 @@ class MindmapRecycle:
 
     @folder_id.setter
     def folder_id(self, folder_id):
-        """Sets the folder_id of this MindmapRecycle.
+        r"""Sets the folder_id of this MindmapRecycle.
 
         文件路径
 
@@ -237,7 +237,7 @@ class MindmapRecycle:
 
     @property
     def folder_root_id(self):
-        """Gets the folder_root_id of this MindmapRecycle.
+        r"""Gets the folder_root_id of this MindmapRecycle.
 
         根目录id
 
@@ -248,7 +248,7 @@ class MindmapRecycle:
 
     @folder_root_id.setter
     def folder_root_id(self, folder_root_id):
-        """Sets the folder_root_id of this MindmapRecycle.
+        r"""Sets the folder_root_id of this MindmapRecycle.
 
         根目录id
 
@@ -259,7 +259,7 @@ class MindmapRecycle:
 
     @property
     def id(self):
-        """Gets the id of this MindmapRecycle.
+        r"""Gets the id of this MindmapRecycle.
 
         id 主键
 
@@ -270,7 +270,7 @@ class MindmapRecycle:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this MindmapRecycle.
+        r"""Sets the id of this MindmapRecycle.
 
         id 主键
 
@@ -281,7 +281,7 @@ class MindmapRecycle:
 
     @property
     def map_version(self):
-        """Gets the map_version of this MindmapRecycle.
+        r"""Gets the map_version of this MindmapRecycle.
 
         脑图版本
 
@@ -292,7 +292,7 @@ class MindmapRecycle:
 
     @map_version.setter
     def map_version(self, map_version):
-        """Sets the map_version of this MindmapRecycle.
+        r"""Sets the map_version of this MindmapRecycle.
 
         脑图版本
 
@@ -303,7 +303,7 @@ class MindmapRecycle:
 
     @property
     def mindmap(self):
-        """Gets the mindmap of this MindmapRecycle.
+        r"""Gets the mindmap of this MindmapRecycle.
 
         脑图JSON
 
@@ -314,7 +314,7 @@ class MindmapRecycle:
 
     @mindmap.setter
     def mindmap(self, mindmap):
-        """Sets the mindmap of this MindmapRecycle.
+        r"""Sets the mindmap of this MindmapRecycle.
 
         脑图JSON
 
@@ -325,7 +325,7 @@ class MindmapRecycle:
 
     @property
     def name(self):
-        """Gets the name of this MindmapRecycle.
+        r"""Gets the name of this MindmapRecycle.
 
         脑图名称
 
@@ -336,7 +336,7 @@ class MindmapRecycle:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MindmapRecycle.
+        r"""Sets the name of this MindmapRecycle.
 
         脑图名称
 
@@ -347,7 +347,7 @@ class MindmapRecycle:
 
     @property
     def privacy(self):
-        """Gets the privacy of this MindmapRecycle.
+        r"""Gets the privacy of this MindmapRecycle.
 
         脑图是否私有
 
@@ -358,7 +358,7 @@ class MindmapRecycle:
 
     @privacy.setter
     def privacy(self, privacy):
-        """Sets the privacy of this MindmapRecycle.
+        r"""Sets the privacy of this MindmapRecycle.
 
         脑图是否私有
 
@@ -369,7 +369,7 @@ class MindmapRecycle:
 
     @property
     def project_id(self):
-        """Gets the project_id of this MindmapRecycle.
+        r"""Gets the project_id of this MindmapRecycle.
 
         项目id
 
@@ -380,7 +380,7 @@ class MindmapRecycle:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this MindmapRecycle.
+        r"""Sets the project_id of this MindmapRecycle.
 
         项目id
 
@@ -391,7 +391,7 @@ class MindmapRecycle:
 
     @property
     def update_time(self):
-        """Gets the update_time of this MindmapRecycle.
+        r"""Gets the update_time of this MindmapRecycle.
 
         更新时间
 
@@ -402,7 +402,7 @@ class MindmapRecycle:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this MindmapRecycle.
+        r"""Sets the update_time of this MindmapRecycle.
 
         更新时间
 

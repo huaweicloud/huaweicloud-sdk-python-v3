@@ -28,7 +28,7 @@ class CancelSqlResponse(SdkResponse):
     }
 
     def __init__(self, message=None, status=None):
-        """CancelSqlResponse
+        r"""CancelSqlResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CancelSqlResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this CancelSqlResponse.
+        r"""Gets the message of this CancelSqlResponse.
 
         错误信息。
 
@@ -62,7 +62,7 @@ class CancelSqlResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CancelSqlResponse.
+        r"""Sets the message of this CancelSqlResponse.
 
         错误信息。
 
@@ -73,7 +73,7 @@ class CancelSqlResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CancelSqlResponse.
+        r"""Gets the status of this CancelSqlResponse.
 
         取消SQL的执行结果。 说明： 默认返回SUCCEED，对于已经结束的任务也会返回SUCCEED，只有取消正在运行的SQL时没成功才会FAILED。 枚举值： - SUCCEED：成功 - FAILED：失败
 
@@ -84,7 +84,7 @@ class CancelSqlResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CancelSqlResponse.
+        r"""Sets the status of this CancelSqlResponse.
 
         取消SQL的执行结果。 说明： 默认返回SUCCEED，对于已经结束的任务也会返回SUCCEED，只有取消正在运行的SQL时没成功才会FAILED。 枚举值： - SUCCEED：成功 - FAILED：失败
 

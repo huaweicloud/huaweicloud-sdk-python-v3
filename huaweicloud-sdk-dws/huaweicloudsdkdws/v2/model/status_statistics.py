@@ -27,7 +27,7 @@ class StatusStatistics:
     }
 
     def __init__(self, active=None, total=None):
-        """StatusStatistics
+        r"""StatusStatistics
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class StatusStatistics:
 
     @property
     def active(self):
-        """Gets the active of this StatusStatistics.
+        r"""Gets the active of this StatusStatistics.
 
         活跃资源
 
@@ -61,7 +61,7 @@ class StatusStatistics:
 
     @active.setter
     def active(self, active):
-        """Sets the active of this StatusStatistics.
+        r"""Sets the active of this StatusStatistics.
 
         活跃资源
 
@@ -72,7 +72,7 @@ class StatusStatistics:
 
     @property
     def total(self):
-        """Gets the total of this StatusStatistics.
+        r"""Gets the total of this StatusStatistics.
 
         总资源
 
@@ -83,7 +83,7 @@ class StatusStatistics:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this StatusStatistics.
+        r"""Sets the total of this StatusStatistics.
 
         总资源
 

@@ -25,7 +25,7 @@ class ResetLinkAttributeAndStandardResultData:
     }
 
     def __init__(self, value=None):
-        """ResetLinkAttributeAndStandardResultData
+        r"""ResetLinkAttributeAndStandardResultData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ResetLinkAttributeAndStandardResultData:
 
     @property
     def value(self):
-        """Gets the value of this ResetLinkAttributeAndStandardResultData.
+        r"""Gets the value of this ResetLinkAttributeAndStandardResultData.
 
         :return: The value of this ResetLinkAttributeAndStandardResultData.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.LinkAttributeAndElementVO`
@@ -52,7 +52,7 @@ class ResetLinkAttributeAndStandardResultData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ResetLinkAttributeAndStandardResultData.
+        r"""Sets the value of this ResetLinkAttributeAndStandardResultData.
 
         :param value: The value of this ResetLinkAttributeAndStandardResultData.
         :type value: :class:`huaweicloudsdkdataartsstudio.v1.LinkAttributeAndElementVO`

@@ -25,7 +25,7 @@ class ShowNetworkIpAvailabilitiesRequest:
     }
 
     def __init__(self, network_id=None):
-        """ShowNetworkIpAvailabilitiesRequest
+        r"""ShowNetworkIpAvailabilitiesRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowNetworkIpAvailabilitiesRequest:
 
     @property
     def network_id(self):
-        """Gets the network_id of this ShowNetworkIpAvailabilitiesRequest.
+        r"""Gets the network_id of this ShowNetworkIpAvailabilitiesRequest.
 
         网络ID
 
@@ -53,7 +53,7 @@ class ShowNetworkIpAvailabilitiesRequest:
 
     @network_id.setter
     def network_id(self, network_id):
-        """Sets the network_id of this ShowNetworkIpAvailabilitiesRequest.
+        r"""Sets the network_id of this ShowNetworkIpAvailabilitiesRequest.
 
         网络ID
 

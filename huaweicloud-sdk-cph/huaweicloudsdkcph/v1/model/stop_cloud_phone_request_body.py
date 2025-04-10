@@ -25,7 +25,7 @@ class StopCloudPhoneRequestBody:
     }
 
     def __init__(self, phone_ids=None):
-        """StopCloudPhoneRequestBody
+        r"""StopCloudPhoneRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class StopCloudPhoneRequestBody:
 
     @property
     def phone_ids(self):
-        """Gets the phone_ids of this StopCloudPhoneRequestBody.
+        r"""Gets the phone_ids of this StopCloudPhoneRequestBody.
 
         云手机id列表。
 
@@ -53,7 +53,7 @@ class StopCloudPhoneRequestBody:
 
     @phone_ids.setter
     def phone_ids(self, phone_ids):
-        """Sets the phone_ids of this StopCloudPhoneRequestBody.
+        r"""Sets the phone_ids of this StopCloudPhoneRequestBody.
 
         云手机id列表。
 

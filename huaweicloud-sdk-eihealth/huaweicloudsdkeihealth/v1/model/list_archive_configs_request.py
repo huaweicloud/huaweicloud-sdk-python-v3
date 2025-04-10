@@ -23,7 +23,7 @@ class ListArchiveConfigsRequest:
     }
 
     def __init__(self):
-        """ListArchiveConfigsRequest
+        r"""ListArchiveConfigsRequest
 
         The model defined in huaweicloud sdk
 

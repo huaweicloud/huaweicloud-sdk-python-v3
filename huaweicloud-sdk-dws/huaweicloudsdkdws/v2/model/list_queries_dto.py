@@ -143,7 +143,7 @@ class ListQueriesDto:
     }
 
     def __init__(self, virtual_cluster_id=None, ctime=None, pid=None, inst_name=None, waiting=None, enqueue=None, warning=None, query=None, lane=None, db_name=None, priority=None, query_id=None, query_band=None, job_name=None, job_inst=None, user_name=None, application_name=None, client_address=None, client_hostname=None, client_port=None, start_time=None, block_time=None, duration=None, estimate_total_time=None, estimate_left_time=None, resource_pool=None, control_group=None, min_peak_memory=None, max_peak_memory=None, average_peak_memory=None, memory_skew_percent=None, estimate_memory=None, spill_info=None, min_spill_size=None, max_spill_size=None, average_spill_size=None, spill_skew_percent=None, min_dn_time=None, max_dn_time=None, average_dn_time=None, dntime_skew_percent=None, min_cpu_time=None, max_cpu_time=None, total_cpu_time=None, cpu_skew_percent=None, average_peak_iops=None, iops_skew_percent=None, max_peak_iops=None, min_peak_iops=None, query_plan=None, query_status=None, wlm_status=None, wlm_attrib=None, system_query=None, backend_start=None, elapsed_time=None, curr_xact_start=None, state_change=None, query_start=None, query_elapsed_time=None):
-        """ListQueriesDto
+        r"""ListQueriesDto
 
         The model defined in huaweicloud sdk
 
@@ -456,7 +456,7 @@ class ListQueriesDto:
 
     @property
     def virtual_cluster_id(self):
-        """Gets the virtual_cluster_id of this ListQueriesDto.
+        r"""Gets the virtual_cluster_id of this ListQueriesDto.
 
         虚拟集群ID
 
@@ -467,7 +467,7 @@ class ListQueriesDto:
 
     @virtual_cluster_id.setter
     def virtual_cluster_id(self, virtual_cluster_id):
-        """Sets the virtual_cluster_id of this ListQueriesDto.
+        r"""Sets the virtual_cluster_id of this ListQueriesDto.
 
         虚拟集群ID
 
@@ -478,7 +478,7 @@ class ListQueriesDto:
 
     @property
     def ctime(self):
-        """Gets the ctime of this ListQueriesDto.
+        r"""Gets the ctime of this ListQueriesDto.
 
         采集时间
 
@@ -489,7 +489,7 @@ class ListQueriesDto:
 
     @ctime.setter
     def ctime(self, ctime):
-        """Sets the ctime of this ListQueriesDto.
+        r"""Sets the ctime of this ListQueriesDto.
 
         采集时间
 
@@ -500,7 +500,7 @@ class ListQueriesDto:
 
     @property
     def pid(self):
-        """Gets the pid of this ListQueriesDto.
+        r"""Gets the pid of this ListQueriesDto.
 
         会话id。
 
@@ -511,7 +511,7 @@ class ListQueriesDto:
 
     @pid.setter
     def pid(self, pid):
-        """Sets the pid of this ListQueriesDto.
+        r"""Sets the pid of this ListQueriesDto.
 
         会话id。
 
@@ -522,7 +522,7 @@ class ListQueriesDto:
 
     @property
     def inst_name(self):
-        """Gets the inst_name of this ListQueriesDto.
+        r"""Gets the inst_name of this ListQueriesDto.
 
         实例名称。
 
@@ -533,7 +533,7 @@ class ListQueriesDto:
 
     @inst_name.setter
     def inst_name(self, inst_name):
-        """Sets the inst_name of this ListQueriesDto.
+        r"""Sets the inst_name of this ListQueriesDto.
 
         实例名称。
 
@@ -544,7 +544,7 @@ class ListQueriesDto:
 
     @property
     def waiting(self):
-        """Gets the waiting of this ListQueriesDto.
+        r"""Gets the waiting of this ListQueriesDto.
 
         如果后台当前正等待锁则为true。
 
@@ -555,7 +555,7 @@ class ListQueriesDto:
 
     @waiting.setter
     def waiting(self, waiting):
-        """Sets the waiting of this ListQueriesDto.
+        r"""Sets the waiting of this ListQueriesDto.
 
         如果后台当前正等待锁则为true。
 
@@ -566,7 +566,7 @@ class ListQueriesDto:
 
     @property
     def enqueue(self):
-        """Gets the enqueue of this ListQueriesDto.
+        r"""Gets the enqueue of this ListQueriesDto.
 
         工作负载管理资源状态。
 
@@ -577,7 +577,7 @@ class ListQueriesDto:
 
     @enqueue.setter
     def enqueue(self, enqueue):
-        """Sets the enqueue of this ListQueriesDto.
+        r"""Sets the enqueue of this ListQueriesDto.
 
         工作负载管理资源状态。
 
@@ -588,7 +588,7 @@ class ListQueriesDto:
 
     @property
     def warning(self):
-        """Gets the warning of this ListQueriesDto.
+        r"""Gets the warning of this ListQueriesDto.
 
         主要显示如下几类告警信息以及sql自诊断调优相关告警。
 
@@ -599,7 +599,7 @@ class ListQueriesDto:
 
     @warning.setter
     def warning(self, warning):
-        """Sets the warning of this ListQueriesDto.
+        r"""Sets the warning of this ListQueriesDto.
 
         主要显示如下几类告警信息以及sql自诊断调优相关告警。
 
@@ -610,7 +610,7 @@ class ListQueriesDto:
 
     @property
     def query(self):
-        """Gets the query of this ListQueriesDto.
+        r"""Gets the query of this ListQueriesDto.
 
         查询语句。
 
@@ -621,7 +621,7 @@ class ListQueriesDto:
 
     @query.setter
     def query(self, query):
-        """Sets the query of this ListQueriesDto.
+        r"""Sets the query of this ListQueriesDto.
 
         查询语句。
 
@@ -632,7 +632,7 @@ class ListQueriesDto:
 
     @property
     def lane(self):
-        """Gets the lane of this ListQueriesDto.
+        r"""Gets the lane of this ListQueriesDto.
 
         快慢车道 (fast or slow)。
 
@@ -643,7 +643,7 @@ class ListQueriesDto:
 
     @lane.setter
     def lane(self, lane):
-        """Sets the lane of this ListQueriesDto.
+        r"""Sets the lane of this ListQueriesDto.
 
         快慢车道 (fast or slow)。
 
@@ -654,7 +654,7 @@ class ListQueriesDto:
 
     @property
     def db_name(self):
-        """Gets the db_name of this ListQueriesDto.
+        r"""Gets the db_name of this ListQueriesDto.
 
         数据库名称。
 
@@ -665,7 +665,7 @@ class ListQueriesDto:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this ListQueriesDto.
+        r"""Sets the db_name of this ListQueriesDto.
 
         数据库名称。
 
@@ -676,7 +676,7 @@ class ListQueriesDto:
 
     @property
     def priority(self):
-        """Gets the priority of this ListQueriesDto.
+        r"""Gets the priority of this ListQueriesDto.
 
         job在资源池中的优先级，取值：1,2,4,8（rush、high、medium、low）。
 
@@ -687,7 +687,7 @@ class ListQueriesDto:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this ListQueriesDto.
+        r"""Sets the priority of this ListQueriesDto.
 
         job在资源池中的优先级，取值：1,2,4,8（rush、high、medium、low）。
 
@@ -698,7 +698,7 @@ class ListQueriesDto:
 
     @property
     def query_id(self):
-        """Gets the query_id of this ListQueriesDto.
+        r"""Gets the query_id of this ListQueriesDto.
 
         语句执行使用的内部query_id。
 
@@ -709,7 +709,7 @@ class ListQueriesDto:
 
     @query_id.setter
     def query_id(self, query_id):
-        """Sets the query_id of this ListQueriesDto.
+        r"""Sets the query_id of this ListQueriesDto.
 
         语句执行使用的内部query_id。
 
@@ -720,7 +720,7 @@ class ListQueriesDto:
 
     @property
     def query_band(self):
-        """Gets the query_band of this ListQueriesDto.
+        r"""Gets the query_band of this ListQueriesDto.
 
         用于标示作业类型，可通过guc参数query_band进行设置，默认为空字符串。
 
@@ -731,7 +731,7 @@ class ListQueriesDto:
 
     @query_band.setter
     def query_band(self, query_band):
-        """Sets the query_band of this ListQueriesDto.
+        r"""Sets the query_band of this ListQueriesDto.
 
         用于标示作业类型，可通过guc参数query_band进行设置，默认为空字符串。
 
@@ -742,7 +742,7 @@ class ListQueriesDto:
 
     @property
     def job_name(self):
-        """Gets the job_name of this ListQueriesDto.
+        r"""Gets the job_name of this ListQueriesDto.
 
         这个值是从query_band的字段中取出来的，位置0。
 
@@ -753,7 +753,7 @@ class ListQueriesDto:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this ListQueriesDto.
+        r"""Sets the job_name of this ListQueriesDto.
 
         这个值是从query_band的字段中取出来的，位置0。
 
@@ -764,7 +764,7 @@ class ListQueriesDto:
 
     @property
     def job_inst(self):
-        """Gets the job_inst of this ListQueriesDto.
+        r"""Gets the job_inst of this ListQueriesDto.
 
         这个值是从query_band的字段中取出来的，位置1。
 
@@ -775,7 +775,7 @@ class ListQueriesDto:
 
     @job_inst.setter
     def job_inst(self, job_inst):
-        """Sets the job_inst of this ListQueriesDto.
+        r"""Sets the job_inst of this ListQueriesDto.
 
         这个值是从query_band的字段中取出来的，位置1。
 
@@ -786,7 +786,7 @@ class ListQueriesDto:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ListQueriesDto.
+        r"""Gets the user_name of this ListQueriesDto.
 
         连接到后端的用户名。
 
@@ -797,7 +797,7 @@ class ListQueriesDto:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ListQueriesDto.
+        r"""Sets the user_name of this ListQueriesDto.
 
         连接到后端的用户名。
 
@@ -808,7 +808,7 @@ class ListQueriesDto:
 
     @property
     def application_name(self):
-        """Gets the application_name of this ListQueriesDto.
+        r"""Gets the application_name of this ListQueriesDto.
 
         连接到后端的应用名。
 
@@ -819,7 +819,7 @@ class ListQueriesDto:
 
     @application_name.setter
     def application_name(self, application_name):
-        """Sets the application_name of this ListQueriesDto.
+        r"""Sets the application_name of this ListQueriesDto.
 
         连接到后端的应用名。
 
@@ -830,7 +830,7 @@ class ListQueriesDto:
 
     @property
     def client_address(self):
-        """Gets the client_address of this ListQueriesDto.
+        r"""Gets the client_address of this ListQueriesDto.
 
         连接到后端的客户端的ip地址。
 
@@ -841,7 +841,7 @@ class ListQueriesDto:
 
     @client_address.setter
     def client_address(self, client_address):
-        """Sets the client_address of this ListQueriesDto.
+        r"""Sets the client_address of this ListQueriesDto.
 
         连接到后端的客户端的ip地址。
 
@@ -852,7 +852,7 @@ class ListQueriesDto:
 
     @property
     def client_hostname(self):
-        """Gets the client_hostname of this ListQueriesDto.
+        r"""Gets the client_hostname of this ListQueriesDto.
 
         客户端的主机名。
 
@@ -863,7 +863,7 @@ class ListQueriesDto:
 
     @client_hostname.setter
     def client_hostname(self, client_hostname):
-        """Sets the client_hostname of this ListQueriesDto.
+        r"""Sets the client_hostname of this ListQueriesDto.
 
         客户端的主机名。
 
@@ -874,7 +874,7 @@ class ListQueriesDto:
 
     @property
     def client_port(self):
-        """Gets the client_port of this ListQueriesDto.
+        r"""Gets the client_port of this ListQueriesDto.
 
         客户端用于与后端通讯的tcp端口号。
 
@@ -885,7 +885,7 @@ class ListQueriesDto:
 
     @client_port.setter
     def client_port(self, client_port):
-        """Sets the client_port of this ListQueriesDto.
+        r"""Sets the client_port of this ListQueriesDto.
 
         客户端用于与后端通讯的tcp端口号。
 
@@ -896,7 +896,7 @@ class ListQueriesDto:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListQueriesDto.
+        r"""Gets the start_time of this ListQueriesDto.
 
         语句执行的开始时间。
 
@@ -907,7 +907,7 @@ class ListQueriesDto:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListQueriesDto.
+        r"""Sets the start_time of this ListQueriesDto.
 
         语句执行的开始时间。
 
@@ -918,7 +918,7 @@ class ListQueriesDto:
 
     @property
     def block_time(self):
-        """Gets the block_time of this ListQueriesDto.
+        r"""Gets the block_time of this ListQueriesDto.
 
         语句执行前的阻塞时间 （单位ms）。
 
@@ -929,7 +929,7 @@ class ListQueriesDto:
 
     @block_time.setter
     def block_time(self, block_time):
-        """Sets the block_time of this ListQueriesDto.
+        r"""Sets the block_time of this ListQueriesDto.
 
         语句执行前的阻塞时间 （单位ms）。
 
@@ -940,7 +940,7 @@ class ListQueriesDto:
 
     @property
     def duration(self):
-        """Gets the duration of this ListQueriesDto.
+        r"""Gets the duration of this ListQueriesDto.
 
         语句已经执行的时间 （单位ms）。
 
@@ -951,7 +951,7 @@ class ListQueriesDto:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this ListQueriesDto.
+        r"""Sets the duration of this ListQueriesDto.
 
         语句已经执行的时间 （单位ms）。
 
@@ -962,7 +962,7 @@ class ListQueriesDto:
 
     @property
     def estimate_total_time(self):
-        """Gets the estimate_total_time of this ListQueriesDto.
+        r"""Gets the estimate_total_time of this ListQueriesDto.
 
         语句执行预估总时间 （单位ms）。
 
@@ -973,7 +973,7 @@ class ListQueriesDto:
 
     @estimate_total_time.setter
     def estimate_total_time(self, estimate_total_time):
-        """Sets the estimate_total_time of this ListQueriesDto.
+        r"""Sets the estimate_total_time of this ListQueriesDto.
 
         语句执行预估总时间 （单位ms）。
 
@@ -984,7 +984,7 @@ class ListQueriesDto:
 
     @property
     def estimate_left_time(self):
-        """Gets the estimate_left_time of this ListQueriesDto.
+        r"""Gets the estimate_left_time of this ListQueriesDto.
 
         语句执行预估剩余时间 （单位ms）。
 
@@ -995,7 +995,7 @@ class ListQueriesDto:
 
     @estimate_left_time.setter
     def estimate_left_time(self, estimate_left_time):
-        """Sets the estimate_left_time of this ListQueriesDto.
+        r"""Sets the estimate_left_time of this ListQueriesDto.
 
         语句执行预估剩余时间 （单位ms）。
 
@@ -1006,7 +1006,7 @@ class ListQueriesDto:
 
     @property
     def resource_pool(self):
-        """Gets the resource_pool of this ListQueriesDto.
+        r"""Gets the resource_pool of this ListQueriesDto.
 
         用户使用的资源池。
 
@@ -1017,7 +1017,7 @@ class ListQueriesDto:
 
     @resource_pool.setter
     def resource_pool(self, resource_pool):
-        """Sets the resource_pool of this ListQueriesDto.
+        r"""Sets the resource_pool of this ListQueriesDto.
 
         用户使用的资源池。
 
@@ -1028,7 +1028,7 @@ class ListQueriesDto:
 
     @property
     def control_group(self):
-        """Gets the control_group of this ListQueriesDto.
+        r"""Gets the control_group of this ListQueriesDto.
 
         语句所使用的cgroup。
 
@@ -1039,7 +1039,7 @@ class ListQueriesDto:
 
     @control_group.setter
     def control_group(self, control_group):
-        """Sets the control_group of this ListQueriesDto.
+        r"""Sets the control_group of this ListQueriesDto.
 
         语句所使用的cgroup。
 
@@ -1050,7 +1050,7 @@ class ListQueriesDto:
 
     @property
     def min_peak_memory(self):
-        """Gets the min_peak_memory of this ListQueriesDto.
+        r"""Gets the min_peak_memory of this ListQueriesDto.
 
         语句在所有dn上的最小内存峰值 （单位mb）。
 
@@ -1061,7 +1061,7 @@ class ListQueriesDto:
 
     @min_peak_memory.setter
     def min_peak_memory(self, min_peak_memory):
-        """Sets the min_peak_memory of this ListQueriesDto.
+        r"""Sets the min_peak_memory of this ListQueriesDto.
 
         语句在所有dn上的最小内存峰值 （单位mb）。
 
@@ -1072,7 +1072,7 @@ class ListQueriesDto:
 
     @property
     def max_peak_memory(self):
-        """Gets the max_peak_memory of this ListQueriesDto.
+        r"""Gets the max_peak_memory of this ListQueriesDto.
 
         语句在所有dn上的最大内存峰值 （单位mb）。
 
@@ -1083,7 +1083,7 @@ class ListQueriesDto:
 
     @max_peak_memory.setter
     def max_peak_memory(self, max_peak_memory):
-        """Sets the max_peak_memory of this ListQueriesDto.
+        r"""Sets the max_peak_memory of this ListQueriesDto.
 
         语句在所有dn上的最大内存峰值 （单位mb）。
 
@@ -1094,7 +1094,7 @@ class ListQueriesDto:
 
     @property
     def average_peak_memory(self):
-        """Gets the average_peak_memory of this ListQueriesDto.
+        r"""Gets the average_peak_memory of this ListQueriesDto.
 
         语句执行过程中的内存使用平均值 （单位mb）。
 
@@ -1105,7 +1105,7 @@ class ListQueriesDto:
 
     @average_peak_memory.setter
     def average_peak_memory(self, average_peak_memory):
-        """Sets the average_peak_memory of this ListQueriesDto.
+        r"""Sets the average_peak_memory of this ListQueriesDto.
 
         语句执行过程中的内存使用平均值 （单位mb）。
 
@@ -1116,7 +1116,7 @@ class ListQueriesDto:
 
     @property
     def memory_skew_percent(self):
-        """Gets the memory_skew_percent of this ListQueriesDto.
+        r"""Gets the memory_skew_percent of this ListQueriesDto.
 
         语句在各dn间的内存使用倾斜率。
 
@@ -1127,7 +1127,7 @@ class ListQueriesDto:
 
     @memory_skew_percent.setter
     def memory_skew_percent(self, memory_skew_percent):
-        """Sets the memory_skew_percent of this ListQueriesDto.
+        r"""Sets the memory_skew_percent of this ListQueriesDto.
 
         语句在各dn间的内存使用倾斜率。
 
@@ -1138,7 +1138,7 @@ class ListQueriesDto:
 
     @property
     def estimate_memory(self):
-        """Gets the estimate_memory of this ListQueriesDto.
+        r"""Gets the estimate_memory of this ListQueriesDto.
 
         语句预估使用内存 （单位mb）。
 
@@ -1149,7 +1149,7 @@ class ListQueriesDto:
 
     @estimate_memory.setter
     def estimate_memory(self, estimate_memory):
-        """Sets the estimate_memory of this ListQueriesDto.
+        r"""Sets the estimate_memory of this ListQueriesDto.
 
         语句预估使用内存 （单位mb）。
 
@@ -1160,7 +1160,7 @@ class ListQueriesDto:
 
     @property
     def spill_info(self):
-        """Gets the spill_info of this ListQueriesDto.
+        r"""Gets the spill_info of this ListQueriesDto.
 
         语句在所有dn上的下盘信息。
 
@@ -1171,7 +1171,7 @@ class ListQueriesDto:
 
     @spill_info.setter
     def spill_info(self, spill_info):
-        """Sets the spill_info of this ListQueriesDto.
+        r"""Sets the spill_info of this ListQueriesDto.
 
         语句在所有dn上的下盘信息。
 
@@ -1182,7 +1182,7 @@ class ListQueriesDto:
 
     @property
     def min_spill_size(self):
-        """Gets the min_spill_size of this ListQueriesDto.
+        r"""Gets the min_spill_size of this ListQueriesDto.
 
         若发生下盘，所有dn上下盘的最小数据量 (单位mb) 默认为0。
 
@@ -1193,7 +1193,7 @@ class ListQueriesDto:
 
     @min_spill_size.setter
     def min_spill_size(self, min_spill_size):
-        """Sets the min_spill_size of this ListQueriesDto.
+        r"""Sets the min_spill_size of this ListQueriesDto.
 
         若发生下盘，所有dn上下盘的最小数据量 (单位mb) 默认为0。
 
@@ -1204,7 +1204,7 @@ class ListQueriesDto:
 
     @property
     def max_spill_size(self):
-        """Gets the max_spill_size of this ListQueriesDto.
+        r"""Gets the max_spill_size of this ListQueriesDto.
 
         若发生下盘，所有dn上下盘的最大数据量 (单位mb) 默认为0。
 
@@ -1215,7 +1215,7 @@ class ListQueriesDto:
 
     @max_spill_size.setter
     def max_spill_size(self, max_spill_size):
-        """Sets the max_spill_size of this ListQueriesDto.
+        r"""Sets the max_spill_size of this ListQueriesDto.
 
         若发生下盘，所有dn上下盘的最大数据量 (单位mb) 默认为0。
 
@@ -1226,7 +1226,7 @@ class ListQueriesDto:
 
     @property
     def average_spill_size(self):
-        """Gets the average_spill_size of this ListQueriesDto.
+        r"""Gets the average_spill_size of this ListQueriesDto.
 
         若发生下盘，所有dn上下盘的平均数据量 (单位mb) 默认为0。
 
@@ -1237,7 +1237,7 @@ class ListQueriesDto:
 
     @average_spill_size.setter
     def average_spill_size(self, average_spill_size):
-        """Sets the average_spill_size of this ListQueriesDto.
+        r"""Sets the average_spill_size of this ListQueriesDto.
 
         若发生下盘，所有dn上下盘的平均数据量 (单位mb) 默认为0。
 
@@ -1248,7 +1248,7 @@ class ListQueriesDto:
 
     @property
     def spill_skew_percent(self):
-        """Gets the spill_skew_percent of this ListQueriesDto.
+        r"""Gets the spill_skew_percent of this ListQueriesDto.
 
         若发生下盘，dn间下盘倾斜率。
 
@@ -1259,7 +1259,7 @@ class ListQueriesDto:
 
     @spill_skew_percent.setter
     def spill_skew_percent(self, spill_skew_percent):
-        """Sets the spill_skew_percent of this ListQueriesDto.
+        r"""Sets the spill_skew_percent of this ListQueriesDto.
 
         若发生下盘，dn间下盘倾斜率。
 
@@ -1270,7 +1270,7 @@ class ListQueriesDto:
 
     @property
     def min_dn_time(self):
-        """Gets the min_dn_time of this ListQueriesDto.
+        r"""Gets the min_dn_time of this ListQueriesDto.
 
         语句在所有dn上的最小执行时间 (单位ms)。
 
@@ -1281,7 +1281,7 @@ class ListQueriesDto:
 
     @min_dn_time.setter
     def min_dn_time(self, min_dn_time):
-        """Sets the min_dn_time of this ListQueriesDto.
+        r"""Sets the min_dn_time of this ListQueriesDto.
 
         语句在所有dn上的最小执行时间 (单位ms)。
 
@@ -1292,7 +1292,7 @@ class ListQueriesDto:
 
     @property
     def max_dn_time(self):
-        """Gets the max_dn_time of this ListQueriesDto.
+        r"""Gets the max_dn_time of this ListQueriesDto.
 
         语句在所有dn上的最大执行时间 (单位ms)。
 
@@ -1303,7 +1303,7 @@ class ListQueriesDto:
 
     @max_dn_time.setter
     def max_dn_time(self, max_dn_time):
-        """Sets the max_dn_time of this ListQueriesDto.
+        r"""Sets the max_dn_time of this ListQueriesDto.
 
         语句在所有dn上的最大执行时间 (单位ms)。
 
@@ -1314,7 +1314,7 @@ class ListQueriesDto:
 
     @property
     def average_dn_time(self):
-        """Gets the average_dn_time of this ListQueriesDto.
+        r"""Gets the average_dn_time of this ListQueriesDto.
 
         语句在所有dn上的平均执行时间 (单位ms)。
 
@@ -1325,7 +1325,7 @@ class ListQueriesDto:
 
     @average_dn_time.setter
     def average_dn_time(self, average_dn_time):
-        """Sets the average_dn_time of this ListQueriesDto.
+        r"""Sets the average_dn_time of this ListQueriesDto.
 
         语句在所有dn上的平均执行时间 (单位ms)。
 
@@ -1336,7 +1336,7 @@ class ListQueriesDto:
 
     @property
     def dntime_skew_percent(self):
-        """Gets the dntime_skew_percent of this ListQueriesDto.
+        r"""Gets the dntime_skew_percent of this ListQueriesDto.
 
         语句在各dn间的执行时间倾斜率。
 
@@ -1347,7 +1347,7 @@ class ListQueriesDto:
 
     @dntime_skew_percent.setter
     def dntime_skew_percent(self, dntime_skew_percent):
-        """Sets the dntime_skew_percent of this ListQueriesDto.
+        r"""Sets the dntime_skew_percent of this ListQueriesDto.
 
         语句在各dn间的执行时间倾斜率。
 
@@ -1358,7 +1358,7 @@ class ListQueriesDto:
 
     @property
     def min_cpu_time(self):
-        """Gets the min_cpu_time of this ListQueriesDto.
+        r"""Gets the min_cpu_time of this ListQueriesDto.
 
         语句在所有dn上的最小cpu时间 (单位ms)。
 
@@ -1369,7 +1369,7 @@ class ListQueriesDto:
 
     @min_cpu_time.setter
     def min_cpu_time(self, min_cpu_time):
-        """Sets the min_cpu_time of this ListQueriesDto.
+        r"""Sets the min_cpu_time of this ListQueriesDto.
 
         语句在所有dn上的最小cpu时间 (单位ms)。
 
@@ -1380,7 +1380,7 @@ class ListQueriesDto:
 
     @property
     def max_cpu_time(self):
-        """Gets the max_cpu_time of this ListQueriesDto.
+        r"""Gets the max_cpu_time of this ListQueriesDto.
 
         语句在所有dn上的最大cpu时间 (单位ms)。
 
@@ -1391,7 +1391,7 @@ class ListQueriesDto:
 
     @max_cpu_time.setter
     def max_cpu_time(self, max_cpu_time):
-        """Sets the max_cpu_time of this ListQueriesDto.
+        r"""Sets the max_cpu_time of this ListQueriesDto.
 
         语句在所有dn上的最大cpu时间 (单位ms)。
 
@@ -1402,7 +1402,7 @@ class ListQueriesDto:
 
     @property
     def total_cpu_time(self):
-        """Gets the total_cpu_time of this ListQueriesDto.
+        r"""Gets the total_cpu_time of this ListQueriesDto.
 
         语句在所有dn上的cpu总时间 (单位ms)。
 
@@ -1413,7 +1413,7 @@ class ListQueriesDto:
 
     @total_cpu_time.setter
     def total_cpu_time(self, total_cpu_time):
-        """Sets the total_cpu_time of this ListQueriesDto.
+        r"""Sets the total_cpu_time of this ListQueriesDto.
 
         语句在所有dn上的cpu总时间 (单位ms)。
 
@@ -1424,7 +1424,7 @@ class ListQueriesDto:
 
     @property
     def cpu_skew_percent(self):
-        """Gets the cpu_skew_percent of this ListQueriesDto.
+        r"""Gets the cpu_skew_percent of this ListQueriesDto.
 
         语句在各dn间的cpu时间倾斜率。
 
@@ -1435,7 +1435,7 @@ class ListQueriesDto:
 
     @cpu_skew_percent.setter
     def cpu_skew_percent(self, cpu_skew_percent):
-        """Sets the cpu_skew_percent of this ListQueriesDto.
+        r"""Sets the cpu_skew_percent of this ListQueriesDto.
 
         语句在各dn间的cpu时间倾斜率。
 
@@ -1446,7 +1446,7 @@ class ListQueriesDto:
 
     @property
     def average_peak_iops(self):
-        """Gets the average_peak_iops of this ListQueriesDto.
+        r"""Gets the average_peak_iops of this ListQueriesDto.
 
         语句在所有dn上的每秒平均io峰值（列存单位是次/s，行存单位是万次/s）。
 
@@ -1457,7 +1457,7 @@ class ListQueriesDto:
 
     @average_peak_iops.setter
     def average_peak_iops(self, average_peak_iops):
-        """Sets the average_peak_iops of this ListQueriesDto.
+        r"""Sets the average_peak_iops of this ListQueriesDto.
 
         语句在所有dn上的每秒平均io峰值（列存单位是次/s，行存单位是万次/s）。
 
@@ -1468,7 +1468,7 @@ class ListQueriesDto:
 
     @property
     def iops_skew_percent(self):
-        """Gets the iops_skew_percent of this ListQueriesDto.
+        r"""Gets the iops_skew_percent of this ListQueriesDto.
 
         语句在dn间的io倾斜率。
 
@@ -1479,7 +1479,7 @@ class ListQueriesDto:
 
     @iops_skew_percent.setter
     def iops_skew_percent(self, iops_skew_percent):
-        """Sets the iops_skew_percent of this ListQueriesDto.
+        r"""Sets the iops_skew_percent of this ListQueriesDto.
 
         语句在dn间的io倾斜率。
 
@@ -1490,7 +1490,7 @@ class ListQueriesDto:
 
     @property
     def max_peak_iops(self):
-        """Gets the max_peak_iops of this ListQueriesDto.
+        r"""Gets the max_peak_iops of this ListQueriesDto.
 
         语句在所有dn上的每秒最大io峰值（列存单位是次/s，行存单位是万次/s）。
 
@@ -1501,7 +1501,7 @@ class ListQueriesDto:
 
     @max_peak_iops.setter
     def max_peak_iops(self, max_peak_iops):
-        """Sets the max_peak_iops of this ListQueriesDto.
+        r"""Sets the max_peak_iops of this ListQueriesDto.
 
         语句在所有dn上的每秒最大io峰值（列存单位是次/s，行存单位是万次/s）。
 
@@ -1512,7 +1512,7 @@ class ListQueriesDto:
 
     @property
     def min_peak_iops(self):
-        """Gets the min_peak_iops of this ListQueriesDto.
+        r"""Gets the min_peak_iops of this ListQueriesDto.
 
         语句在所有dn上的每秒最小io峰值（列存单位是次/s，行存单位是万次/s）。
 
@@ -1523,7 +1523,7 @@ class ListQueriesDto:
 
     @min_peak_iops.setter
     def min_peak_iops(self, min_peak_iops):
-        """Sets the min_peak_iops of this ListQueriesDto.
+        r"""Sets the min_peak_iops of this ListQueriesDto.
 
         语句在所有dn上的每秒最小io峰值（列存单位是次/s，行存单位是万次/s）。
 
@@ -1534,7 +1534,7 @@ class ListQueriesDto:
 
     @property
     def query_plan(self):
-        """Gets the query_plan of this ListQueriesDto.
+        r"""Gets the query_plan of this ListQueriesDto.
 
         查询计划。
 
@@ -1545,7 +1545,7 @@ class ListQueriesDto:
 
     @query_plan.setter
     def query_plan(self, query_plan):
-        """Sets the query_plan of this ListQueriesDto.
+        r"""Sets the query_plan of this ListQueriesDto.
 
         查询计划。
 
@@ -1556,7 +1556,7 @@ class ListQueriesDto:
 
     @property
     def query_status(self):
-        """Gets the query_status of this ListQueriesDto.
+        r"""Gets the query_status of this ListQueriesDto.
 
         当前查询语句的实时运行状态 (active, idle, idle in transaction, idle in transaction(aborted), fastpath function call, disabled)。
 
@@ -1567,7 +1567,7 @@ class ListQueriesDto:
 
     @query_status.setter
     def query_status(self, query_status):
-        """Sets the query_status of this ListQueriesDto.
+        r"""Sets the query_status of this ListQueriesDto.
 
         当前查询语句的实时运行状态 (active, idle, idle in transaction, idle in transaction(aborted), fastpath function call, disabled)。
 
@@ -1578,7 +1578,7 @@ class ListQueriesDto:
 
     @property
     def wlm_status(self):
-        """Gets the wlm_status of this ListQueriesDto.
+        r"""Gets the wlm_status of this ListQueriesDto.
 
         当前查询语句在资源池上的运行状态 (pending, running, finished, aborted, active, unknown)。
 
@@ -1589,7 +1589,7 @@ class ListQueriesDto:
 
     @wlm_status.setter
     def wlm_status(self, wlm_status):
-        """Sets the wlm_status of this ListQueriesDto.
+        r"""Sets the wlm_status of this ListQueriesDto.
 
         当前查询语句在资源池上的运行状态 (pending, running, finished, aborted, active, unknown)。
 
@@ -1600,7 +1600,7 @@ class ListQueriesDto:
 
     @property
     def wlm_attrib(self):
-        """Gets the wlm_attrib of this ListQueriesDto.
+        r"""Gets the wlm_attrib of this ListQueriesDto.
 
         语句的属性 (ordinary, simple, complicated, internal)
 
@@ -1611,7 +1611,7 @@ class ListQueriesDto:
 
     @wlm_attrib.setter
     def wlm_attrib(self, wlm_attrib):
-        """Sets the wlm_attrib of this ListQueriesDto.
+        r"""Sets the wlm_attrib of this ListQueriesDto.
 
         语句的属性 (ordinary, simple, complicated, internal)
 
@@ -1622,7 +1622,7 @@ class ListQueriesDto:
 
     @property
     def system_query(self):
-        """Gets the system_query of this ListQueriesDto.
+        r"""Gets the system_query of this ListQueriesDto.
 
         是否系统查询。
 
@@ -1633,7 +1633,7 @@ class ListQueriesDto:
 
     @system_query.setter
     def system_query(self, system_query):
-        """Sets the system_query of this ListQueriesDto.
+        r"""Sets the system_query of this ListQueriesDto.
 
         是否系统查询。
 
@@ -1644,7 +1644,7 @@ class ListQueriesDto:
 
     @property
     def backend_start(self):
-        """Gets the backend_start of this ListQueriesDto.
+        r"""Gets the backend_start of this ListQueriesDto.
 
         该过程开始的时间，即当客户端连接服务器时。
 
@@ -1655,7 +1655,7 @@ class ListQueriesDto:
 
     @backend_start.setter
     def backend_start(self, backend_start):
-        """Sets the backend_start of this ListQueriesDto.
+        r"""Sets the backend_start of this ListQueriesDto.
 
         该过程开始的时间，即当客户端连接服务器时。
 
@@ -1666,7 +1666,7 @@ class ListQueriesDto:
 
     @property
     def elapsed_time(self):
-        """Gets the elapsed_time of this ListQueriesDto.
+        r"""Gets the elapsed_time of this ListQueriesDto.
 
         到目前为止的执行时间。
 
@@ -1677,7 +1677,7 @@ class ListQueriesDto:
 
     @elapsed_time.setter
     def elapsed_time(self, elapsed_time):
-        """Sets the elapsed_time of this ListQueriesDto.
+        r"""Sets the elapsed_time of this ListQueriesDto.
 
         到目前为止的执行时间。
 
@@ -1688,7 +1688,7 @@ class ListQueriesDto:
 
     @property
     def curr_xact_start(self):
-        """Gets the curr_xact_start of this ListQueriesDto.
+        r"""Gets the curr_xact_start of this ListQueriesDto.
 
         启动当前事务的时间，如果没有事务是活跃的，则为null。如果当前查询是首个事务，则这列等同于query_start列。
 
@@ -1699,7 +1699,7 @@ class ListQueriesDto:
 
     @curr_xact_start.setter
     def curr_xact_start(self, curr_xact_start):
-        """Sets the curr_xact_start of this ListQueriesDto.
+        r"""Sets the curr_xact_start of this ListQueriesDto.
 
         启动当前事务的时间，如果没有事务是活跃的，则为null。如果当前查询是首个事务，则这列等同于query_start列。
 
@@ -1710,7 +1710,7 @@ class ListQueriesDto:
 
     @property
     def state_change(self):
-        """Gets the state_change of this ListQueriesDto.
+        r"""Gets the state_change of this ListQueriesDto.
 
         上次状态改变的时间。
 
@@ -1721,7 +1721,7 @@ class ListQueriesDto:
 
     @state_change.setter
     def state_change(self, state_change):
-        """Sets the state_change of this ListQueriesDto.
+        r"""Sets the state_change of this ListQueriesDto.
 
         上次状态改变的时间。
 
@@ -1732,7 +1732,7 @@ class ListQueriesDto:
 
     @property
     def query_start(self):
-        """Gets the query_start of this ListQueriesDto.
+        r"""Gets the query_start of this ListQueriesDto.
 
         语句执行的开始时间。
 
@@ -1743,7 +1743,7 @@ class ListQueriesDto:
 
     @query_start.setter
     def query_start(self, query_start):
-        """Sets the query_start of this ListQueriesDto.
+        r"""Sets the query_start of this ListQueriesDto.
 
         语句执行的开始时间。
 
@@ -1754,7 +1754,7 @@ class ListQueriesDto:
 
     @property
     def query_elapsed_time(self):
-        """Gets the query_elapsed_time of this ListQueriesDto.
+        r"""Gets the query_elapsed_time of this ListQueriesDto.
 
         语句当前为止的实际执行时间，(单位：s)。
 
@@ -1765,7 +1765,7 @@ class ListQueriesDto:
 
     @query_elapsed_time.setter
     def query_elapsed_time(self, query_elapsed_time):
-        """Sets the query_elapsed_time of this ListQueriesDto.
+        r"""Sets the query_elapsed_time of this ListQueriesDto.
 
         语句当前为止的实际执行时间，(单位：s)。
 

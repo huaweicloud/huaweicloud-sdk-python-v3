@@ -31,7 +31,7 @@ class Column:
     }
 
     def __init__(self, column_family_name=None, column_name=None, value=None, type=None):
-        """Column
+        r"""Column
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class Column:
 
     @property
     def column_family_name(self):
-        """Gets the column_family_name of this Column.
+        r"""Gets the column_family_name of this Column.
 
         存储该通道数据的HBase表数据的列族名称。
 
@@ -71,7 +71,7 @@ class Column:
 
     @column_family_name.setter
     def column_family_name(self, column_family_name):
-        """Sets the column_family_name of this Column.
+        r"""Sets the column_family_name of this Column.
 
         存储该通道数据的HBase表数据的列族名称。
 
@@ -82,7 +82,7 @@ class Column:
 
     @property
     def column_name(self):
-        """Gets the column_name of this Column.
+        r"""Gets the column_name of this Column.
 
         存储该通道数据的HBase表数据的列名称。  取值范围：1～32，只能包含英文字母、数字和下划线。
 
@@ -93,7 +93,7 @@ class Column:
 
     @column_name.setter
     def column_name(self, column_name):
-        """Sets the column_name of this Column.
+        r"""Sets the column_name of this Column.
 
         存储该通道数据的HBase表数据的列名称。  取值范围：1～32，只能包含英文字母、数字和下划线。
 
@@ -104,7 +104,7 @@ class Column:
 
     @property
     def value(self):
-        """Gets the value of this Column.
+        r"""Gets the value of this Column.
 
         通道内JSON数据的JSON属性名，用于生成HBase数据的列值。
 
@@ -115,7 +115,7 @@ class Column:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this Column.
+        r"""Sets the value of this Column.
 
         通道内JSON数据的JSON属性名，用于生成HBase数据的列值。
 
@@ -126,7 +126,7 @@ class Column:
 
     @property
     def type(self):
-        """Gets the type of this Column.
+        r"""Gets the type of this Column.
 
         通道内JSON数据的JSON属性的类型名称。
 
@@ -137,7 +137,7 @@ class Column:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Column.
+        r"""Sets the type of this Column.
 
         通道内JSON数据的JSON属性的类型名称。
 

@@ -37,7 +37,7 @@ class SlowlogForLtsRequest:
     }
 
     def __init__(self, start_time=None, end_time=None, type=None, line_num=None, limit=None, search_type=None, database=None):
-        """SlowlogForLtsRequest
+        r"""SlowlogForLtsRequest
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class SlowlogForLtsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this SlowlogForLtsRequest.
+        r"""Gets the start_time of this SlowlogForLtsRequest.
 
         开始日期，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -94,7 +94,7 @@ class SlowlogForLtsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this SlowlogForLtsRequest.
+        r"""Sets the start_time of this SlowlogForLtsRequest.
 
         开始日期，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -105,7 +105,7 @@ class SlowlogForLtsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this SlowlogForLtsRequest.
+        r"""Gets the end_time of this SlowlogForLtsRequest.
 
         结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。只能查询当前时间前一个月内的慢日志。
 
@@ -116,7 +116,7 @@ class SlowlogForLtsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this SlowlogForLtsRequest.
+        r"""Sets the end_time of this SlowlogForLtsRequest.
 
         结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。只能查询当前时间前一个月内的慢日志。
 
@@ -127,7 +127,7 @@ class SlowlogForLtsRequest:
 
     @property
     def type(self):
-        """Gets the type of this SlowlogForLtsRequest.
+        r"""Gets the type of this SlowlogForLtsRequest.
 
         语句类型，取空值，表示查询所有语句类型。
 
@@ -138,7 +138,7 @@ class SlowlogForLtsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SlowlogForLtsRequest.
+        r"""Sets the type of this SlowlogForLtsRequest.
 
         语句类型，取空值，表示查询所有语句类型。
 
@@ -149,7 +149,7 @@ class SlowlogForLtsRequest:
 
     @property
     def line_num(self):
-        """Gets the line_num of this SlowlogForLtsRequest.
+        r"""Gets the line_num of this SlowlogForLtsRequest.
 
         日志单行序列号，第一次查询时不需要此参数，后续分页查询时需要使用，可从上次查询的返回信息中获取。line_num应在start_time和end_time之间。
 
@@ -160,7 +160,7 @@ class SlowlogForLtsRequest:
 
     @line_num.setter
     def line_num(self, line_num):
-        """Sets the line_num of this SlowlogForLtsRequest.
+        r"""Sets the line_num of this SlowlogForLtsRequest.
 
         日志单行序列号，第一次查询时不需要此参数，后续分页查询时需要使用，可从上次查询的返回信息中获取。line_num应在start_time和end_time之间。
 
@@ -171,7 +171,7 @@ class SlowlogForLtsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this SlowlogForLtsRequest.
+        r"""Gets the limit of this SlowlogForLtsRequest.
 
         每页多少条记录（查询结果），取值范围是1~100，不填时默认为10。
 
@@ -182,7 +182,7 @@ class SlowlogForLtsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SlowlogForLtsRequest.
+        r"""Sets the limit of this SlowlogForLtsRequest.
 
         每页多少条记录（查询结果），取值范围是1~100，不填时默认为10。
 
@@ -193,7 +193,7 @@ class SlowlogForLtsRequest:
 
     @property
     def search_type(self):
-        """Gets the search_type of this SlowlogForLtsRequest.
+        r"""Gets the search_type of this SlowlogForLtsRequest.
 
         搜索方式。默认forwards。配合line_num使用，以line_num为起点，向前搜索或向后搜索。
 
@@ -204,7 +204,7 @@ class SlowlogForLtsRequest:
 
     @search_type.setter
     def search_type(self, search_type):
-        """Sets the search_type of this SlowlogForLtsRequest.
+        r"""Sets the search_type of this SlowlogForLtsRequest.
 
         搜索方式。默认forwards。配合line_num使用，以line_num为起点，向前搜索或向后搜索。
 
@@ -215,7 +215,7 @@ class SlowlogForLtsRequest:
 
     @property
     def database(self):
-        """Gets the database of this SlowlogForLtsRequest.
+        r"""Gets the database of this SlowlogForLtsRequest.
 
         数据库名称。
 
@@ -226,7 +226,7 @@ class SlowlogForLtsRequest:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this SlowlogForLtsRequest.
+        r"""Sets the database of this SlowlogForLtsRequest.
 
         数据库名称。
 

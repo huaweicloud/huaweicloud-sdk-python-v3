@@ -27,7 +27,7 @@ class UpdateLogtankRequestBody:
     }
 
     def __init__(self, log_group_id=None, log_stream_id=None):
-        """UpdateLogtankRequestBody
+        r"""UpdateLogtankRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UpdateLogtankRequestBody:
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this UpdateLogtankRequestBody.
+        r"""Gets the log_group_id of this UpdateLogtankRequestBody.
 
         云日志服务日志组ID。
 
@@ -59,7 +59,7 @@ class UpdateLogtankRequestBody:
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this UpdateLogtankRequestBody.
+        r"""Sets the log_group_id of this UpdateLogtankRequestBody.
 
         云日志服务日志组ID。
 
@@ -70,7 +70,7 @@ class UpdateLogtankRequestBody:
 
     @property
     def log_stream_id(self):
-        """Gets the log_stream_id of this UpdateLogtankRequestBody.
+        r"""Gets the log_stream_id of this UpdateLogtankRequestBody.
 
         云日志服务日志流ID。
 
@@ -81,7 +81,7 @@ class UpdateLogtankRequestBody:
 
     @log_stream_id.setter
     def log_stream_id(self, log_stream_id):
-        """Sets the log_stream_id of this UpdateLogtankRequestBody.
+        r"""Sets the log_stream_id of this UpdateLogtankRequestBody.
 
         云日志服务日志流ID。
 

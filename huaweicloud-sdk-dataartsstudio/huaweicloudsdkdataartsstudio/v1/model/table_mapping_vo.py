@@ -53,7 +53,7 @@ class TableMappingVO:
     }
 
     def __init__(self, id=None, name=None, description=None, target_table_id=None, src_model_id=None, src_model_name=None, view_text=None, target_table_name=None, details=None, source_tables=None, source_fields=None, create_time=None, update_time=None, create_by=None, update_by=None):
-        """TableMappingVO
+        r"""TableMappingVO
 
         The model defined in huaweicloud sdk
 
@@ -140,7 +140,7 @@ class TableMappingVO:
 
     @property
     def id(self):
-        """Gets the id of this TableMappingVO.
+        r"""Gets the id of this TableMappingVO.
 
         编码，ID字符串。
 
@@ -151,7 +151,7 @@ class TableMappingVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TableMappingVO.
+        r"""Sets the id of this TableMappingVO.
 
         编码，ID字符串。
 
@@ -162,7 +162,7 @@ class TableMappingVO:
 
     @property
     def name(self):
-        """Gets the name of this TableMappingVO.
+        r"""Gets the name of this TableMappingVO.
 
         名称。
 
@@ -173,7 +173,7 @@ class TableMappingVO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TableMappingVO.
+        r"""Sets the name of this TableMappingVO.
 
         名称。
 
@@ -184,7 +184,7 @@ class TableMappingVO:
 
     @property
     def description(self):
-        """Gets the description of this TableMappingVO.
+        r"""Gets the description of this TableMappingVO.
 
         描述。
 
@@ -195,7 +195,7 @@ class TableMappingVO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TableMappingVO.
+        r"""Sets the description of this TableMappingVO.
 
         描述。
 
@@ -206,7 +206,7 @@ class TableMappingVO:
 
     @property
     def target_table_id(self):
-        """Gets the target_table_id of this TableMappingVO.
+        r"""Gets the target_table_id of this TableMappingVO.
 
         目的表ID，ID字符串。
 
@@ -217,7 +217,7 @@ class TableMappingVO:
 
     @target_table_id.setter
     def target_table_id(self, target_table_id):
-        """Sets the target_table_id of this TableMappingVO.
+        r"""Sets the target_table_id of this TableMappingVO.
 
         目的表ID，ID字符串。
 
@@ -228,7 +228,7 @@ class TableMappingVO:
 
     @property
     def src_model_id(self):
-        """Gets the src_model_id of this TableMappingVO.
+        r"""Gets the src_model_id of this TableMappingVO.
 
         来源表在关系建模中的模型ID，ID字符串。
 
@@ -239,7 +239,7 @@ class TableMappingVO:
 
     @src_model_id.setter
     def src_model_id(self, src_model_id):
-        """Sets the src_model_id of this TableMappingVO.
+        r"""Sets the src_model_id of this TableMappingVO.
 
         来源表在关系建模中的模型ID，ID字符串。
 
@@ -250,7 +250,7 @@ class TableMappingVO:
 
     @property
     def src_model_name(self):
-        """Gets the src_model_name of this TableMappingVO.
+        r"""Gets the src_model_name of this TableMappingVO.
 
         来源模型名称。
 
@@ -261,7 +261,7 @@ class TableMappingVO:
 
     @src_model_name.setter
     def src_model_name(self, src_model_name):
-        """Sets the src_model_name of this TableMappingVO.
+        r"""Sets the src_model_name of this TableMappingVO.
 
         来源模型名称。
 
@@ -272,7 +272,7 @@ class TableMappingVO:
 
     @property
     def view_text(self):
-        """Gets the view_text of this TableMappingVO.
+        r"""Gets the view_text of this TableMappingVO.
 
         采集的视图来源，dws视图逆向使用。
 
@@ -283,7 +283,7 @@ class TableMappingVO:
 
     @view_text.setter
     def view_text(self, view_text):
-        """Sets the view_text of this TableMappingVO.
+        r"""Sets the view_text of this TableMappingVO.
 
         采集的视图来源，dws视图逆向使用。
 
@@ -294,7 +294,7 @@ class TableMappingVO:
 
     @property
     def target_table_name(self):
-        """Gets the target_table_name of this TableMappingVO.
+        r"""Gets the target_table_name of this TableMappingVO.
 
         目的表名称。
 
@@ -305,7 +305,7 @@ class TableMappingVO:
 
     @target_table_name.setter
     def target_table_name(self, target_table_name):
-        """Sets the target_table_name of this TableMappingVO.
+        r"""Sets the target_table_name of this TableMappingVO.
 
         目的表名称。
 
@@ -316,7 +316,7 @@ class TableMappingVO:
 
     @property
     def details(self):
-        """Gets the details of this TableMappingVO.
+        r"""Gets the details of this TableMappingVO.
 
         详情。
 
@@ -327,7 +327,7 @@ class TableMappingVO:
 
     @details.setter
     def details(self, details):
-        """Sets the details of this TableMappingVO.
+        r"""Sets the details of this TableMappingVO.
 
         详情。
 
@@ -338,7 +338,7 @@ class TableMappingVO:
 
     @property
     def source_tables(self):
-        """Gets the source_tables of this TableMappingVO.
+        r"""Gets the source_tables of this TableMappingVO.
 
         映射的表信息。
 
@@ -349,7 +349,7 @@ class TableMappingVO:
 
     @source_tables.setter
     def source_tables(self, source_tables):
-        """Sets the source_tables of this TableMappingVO.
+        r"""Sets the source_tables of this TableMappingVO.
 
         映射的表信息。
 
@@ -360,7 +360,7 @@ class TableMappingVO:
 
     @property
     def source_fields(self):
-        """Gets the source_fields of this TableMappingVO.
+        r"""Gets the source_fields of this TableMappingVO.
 
         映射的字段信息。
 
@@ -371,7 +371,7 @@ class TableMappingVO:
 
     @source_fields.setter
     def source_fields(self, source_fields):
-        """Sets the source_fields of this TableMappingVO.
+        r"""Sets the source_fields of this TableMappingVO.
 
         映射的字段信息。
 
@@ -382,7 +382,7 @@ class TableMappingVO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this TableMappingVO.
+        r"""Gets the create_time of this TableMappingVO.
 
         创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -393,7 +393,7 @@ class TableMappingVO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this TableMappingVO.
+        r"""Sets the create_time of this TableMappingVO.
 
         创建时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -404,7 +404,7 @@ class TableMappingVO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this TableMappingVO.
+        r"""Gets the update_time of this TableMappingVO.
 
         更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -415,7 +415,7 @@ class TableMappingVO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this TableMappingVO.
+        r"""Sets the update_time of this TableMappingVO.
 
         更新时间，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -426,7 +426,7 @@ class TableMappingVO:
 
     @property
     def create_by(self):
-        """Gets the create_by of this TableMappingVO.
+        r"""Gets the create_by of this TableMappingVO.
 
         创建人。
 
@@ -437,7 +437,7 @@ class TableMappingVO:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this TableMappingVO.
+        r"""Sets the create_by of this TableMappingVO.
 
         创建人。
 
@@ -448,7 +448,7 @@ class TableMappingVO:
 
     @property
     def update_by(self):
-        """Gets the update_by of this TableMappingVO.
+        r"""Gets the update_by of this TableMappingVO.
 
         更新人。
 
@@ -459,7 +459,7 @@ class TableMappingVO:
 
     @update_by.setter
     def update_by(self, update_by):
-        """Sets the update_by of this TableMappingVO.
+        r"""Sets the update_by of this TableMappingVO.
 
         更新人。
 

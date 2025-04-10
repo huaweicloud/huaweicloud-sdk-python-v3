@@ -26,7 +26,7 @@ class ChangeGaussMySqlProxySpecificationResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """ChangeGaussMySqlProxySpecificationResponse
+        r"""ChangeGaussMySqlProxySpecificationResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ChangeGaussMySqlProxySpecificationResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ChangeGaussMySqlProxySpecificationResponse.
+        r"""Gets the job_id of this ChangeGaussMySqlProxySpecificationResponse.
 
         任务ID。
 
@@ -55,7 +55,7 @@ class ChangeGaussMySqlProxySpecificationResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ChangeGaussMySqlProxySpecificationResponse.
+        r"""Sets the job_id of this ChangeGaussMySqlProxySpecificationResponse.
 
         任务ID。
 

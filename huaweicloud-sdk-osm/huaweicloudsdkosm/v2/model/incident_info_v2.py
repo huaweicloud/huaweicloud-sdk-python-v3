@@ -55,7 +55,7 @@ class IncidentInfoV2:
     }
 
     def __init__(self, xcustomer_id=None, xcustomer_name=None, status=None, incident_id=None, business_type_name=None, incident_type_name=None, product_category_name=None, incident_service_type=None, customer_id=None, dc_name=None, simple_description=None, root_cause=None, resolution=None, create_time=None, confirmed_time=None, label_list=None):
-        """IncidentInfoV2
+        r"""IncidentInfoV2
 
         The model defined in huaweicloud sdk
 
@@ -140,7 +140,7 @@ class IncidentInfoV2:
 
     @property
     def xcustomer_id(self):
-        """Gets the xcustomer_id of this IncidentInfoV2.
+        r"""Gets the xcustomer_id of this IncidentInfoV2.
 
         子用户id
 
@@ -151,7 +151,7 @@ class IncidentInfoV2:
 
     @xcustomer_id.setter
     def xcustomer_id(self, xcustomer_id):
-        """Sets the xcustomer_id of this IncidentInfoV2.
+        r"""Sets the xcustomer_id of this IncidentInfoV2.
 
         子用户id
 
@@ -162,7 +162,7 @@ class IncidentInfoV2:
 
     @property
     def xcustomer_name(self):
-        """Gets the xcustomer_name of this IncidentInfoV2.
+        r"""Gets the xcustomer_name of this IncidentInfoV2.
 
         子用户名称
 
@@ -173,7 +173,7 @@ class IncidentInfoV2:
 
     @xcustomer_name.setter
     def xcustomer_name(self, xcustomer_name):
-        """Sets the xcustomer_name of this IncidentInfoV2.
+        r"""Sets the xcustomer_name of this IncidentInfoV2.
 
         子用户名称
 
@@ -184,7 +184,7 @@ class IncidentInfoV2:
 
     @property
     def status(self):
-        """Gets the status of this IncidentInfoV2.
+        r"""Gets the status of this IncidentInfoV2.
 
         状态 0：待受理 1：处理中 2：待确认结果 3：已完成 4：已撤销 12：无效 17： 待反馈
 
@@ -195,7 +195,7 @@ class IncidentInfoV2:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this IncidentInfoV2.
+        r"""Sets the status of this IncidentInfoV2.
 
         状态 0：待受理 1：处理中 2：待确认结果 3：已完成 4：已撤销 12：无效 17： 待反馈
 
@@ -206,7 +206,7 @@ class IncidentInfoV2:
 
     @property
     def incident_id(self):
-        """Gets the incident_id of this IncidentInfoV2.
+        r"""Gets the incident_id of this IncidentInfoV2.
 
         工单id
 
@@ -217,7 +217,7 @@ class IncidentInfoV2:
 
     @incident_id.setter
     def incident_id(self, incident_id):
-        """Sets the incident_id of this IncidentInfoV2.
+        r"""Sets the incident_id of this IncidentInfoV2.
 
         工单id
 
@@ -228,7 +228,7 @@ class IncidentInfoV2:
 
     @property
     def business_type_name(self):
-        """Gets the business_type_name of this IncidentInfoV2.
+        r"""Gets the business_type_name of this IncidentInfoV2.
 
         问题类型名称
 
@@ -239,7 +239,7 @@ class IncidentInfoV2:
 
     @business_type_name.setter
     def business_type_name(self, business_type_name):
-        """Sets the business_type_name of this IncidentInfoV2.
+        r"""Sets the business_type_name of this IncidentInfoV2.
 
         问题类型名称
 
@@ -250,7 +250,7 @@ class IncidentInfoV2:
 
     @property
     def incident_type_name(self):
-        """Gets the incident_type_name of this IncidentInfoV2.
+        r"""Gets the incident_type_name of this IncidentInfoV2.
 
         工单类型名称
 
@@ -261,7 +261,7 @@ class IncidentInfoV2:
 
     @incident_type_name.setter
     def incident_type_name(self, incident_type_name):
-        """Sets the incident_type_name of this IncidentInfoV2.
+        r"""Sets the incident_type_name of this IncidentInfoV2.
 
         工单类型名称
 
@@ -272,7 +272,7 @@ class IncidentInfoV2:
 
     @property
     def product_category_name(self):
-        """Gets the product_category_name of this IncidentInfoV2.
+        r"""Gets the product_category_name of this IncidentInfoV2.
 
         产品类型名称
 
@@ -283,7 +283,7 @@ class IncidentInfoV2:
 
     @product_category_name.setter
     def product_category_name(self, product_category_name):
-        """Sets the product_category_name of this IncidentInfoV2.
+        r"""Sets the product_category_name of this IncidentInfoV2.
 
         产品类型名称
 
@@ -294,7 +294,7 @@ class IncidentInfoV2:
 
     @property
     def incident_service_type(self):
-        """Gets the incident_service_type of this IncidentInfoV2.
+        r"""Gets the incident_service_type of this IncidentInfoV2.
 
         服务类型
 
@@ -305,7 +305,7 @@ class IncidentInfoV2:
 
     @incident_service_type.setter
     def incident_service_type(self, incident_service_type):
-        """Sets the incident_service_type of this IncidentInfoV2.
+        r"""Sets the incident_service_type of this IncidentInfoV2.
 
         服务类型
 
@@ -316,7 +316,7 @@ class IncidentInfoV2:
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this IncidentInfoV2.
+        r"""Gets the customer_id of this IncidentInfoV2.
 
         客户id
 
@@ -327,7 +327,7 @@ class IncidentInfoV2:
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this IncidentInfoV2.
+        r"""Sets the customer_id of this IncidentInfoV2.
 
         客户id
 
@@ -338,7 +338,7 @@ class IncidentInfoV2:
 
     @property
     def dc_name(self):
-        """Gets the dc_name of this IncidentInfoV2.
+        r"""Gets the dc_name of this IncidentInfoV2.
 
         区域名称
 
@@ -349,7 +349,7 @@ class IncidentInfoV2:
 
     @dc_name.setter
     def dc_name(self, dc_name):
-        """Sets the dc_name of this IncidentInfoV2.
+        r"""Sets the dc_name of this IncidentInfoV2.
 
         区域名称
 
@@ -360,7 +360,7 @@ class IncidentInfoV2:
 
     @property
     def simple_description(self):
-        """Gets the simple_description of this IncidentInfoV2.
+        r"""Gets the simple_description of this IncidentInfoV2.
 
         简要描述
 
@@ -371,7 +371,7 @@ class IncidentInfoV2:
 
     @simple_description.setter
     def simple_description(self, simple_description):
-        """Sets the simple_description of this IncidentInfoV2.
+        r"""Sets the simple_description of this IncidentInfoV2.
 
         简要描述
 
@@ -382,7 +382,7 @@ class IncidentInfoV2:
 
     @property
     def root_cause(self):
-        """Gets the root_cause of this IncidentInfoV2.
+        r"""Gets the root_cause of this IncidentInfoV2.
 
         问题归属方
 
@@ -393,7 +393,7 @@ class IncidentInfoV2:
 
     @root_cause.setter
     def root_cause(self, root_cause):
-        """Sets the root_cause of this IncidentInfoV2.
+        r"""Sets the root_cause of this IncidentInfoV2.
 
         问题归属方
 
@@ -404,7 +404,7 @@ class IncidentInfoV2:
 
     @property
     def resolution(self):
-        """Gets the resolution of this IncidentInfoV2.
+        r"""Gets the resolution of this IncidentInfoV2.
 
         解决方案
 
@@ -415,7 +415,7 @@ class IncidentInfoV2:
 
     @resolution.setter
     def resolution(self, resolution):
-        """Sets the resolution of this IncidentInfoV2.
+        r"""Sets the resolution of this IncidentInfoV2.
 
         解决方案
 
@@ -426,7 +426,7 @@ class IncidentInfoV2:
 
     @property
     def create_time(self):
-        """Gets the create_time of this IncidentInfoV2.
+        r"""Gets the create_time of this IncidentInfoV2.
 
         创建时间
 
@@ -437,7 +437,7 @@ class IncidentInfoV2:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this IncidentInfoV2.
+        r"""Sets the create_time of this IncidentInfoV2.
 
         创建时间
 
@@ -448,7 +448,7 @@ class IncidentInfoV2:
 
     @property
     def confirmed_time(self):
-        """Gets the confirmed_time of this IncidentInfoV2.
+        r"""Gets the confirmed_time of this IncidentInfoV2.
 
         解决时间
 
@@ -459,7 +459,7 @@ class IncidentInfoV2:
 
     @confirmed_time.setter
     def confirmed_time(self, confirmed_time):
-        """Sets the confirmed_time of this IncidentInfoV2.
+        r"""Sets the confirmed_time of this IncidentInfoV2.
 
         解决时间
 
@@ -470,7 +470,7 @@ class IncidentInfoV2:
 
     @property
     def label_list(self):
-        """Gets the label_list of this IncidentInfoV2.
+        r"""Gets the label_list of this IncidentInfoV2.
 
         标签列表
 
@@ -481,7 +481,7 @@ class IncidentInfoV2:
 
     @label_list.setter
     def label_list(self, label_list):
-        """Sets the label_list of this IncidentInfoV2.
+        r"""Sets the label_list of this IncidentInfoV2.
 
         标签列表
 

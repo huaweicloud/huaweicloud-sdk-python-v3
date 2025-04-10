@@ -30,7 +30,7 @@ class ListTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, result=None, error=None, status=None):
-        """ListTemplatesResponse
+        r"""ListTemplatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListTemplatesResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListTemplatesResponse.
+        r"""Gets the result of this ListTemplatesResponse.
 
         :return: The result of this ListTemplatesResponse.
         :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.QueryTemplatesResult`
@@ -67,7 +67,7 @@ class ListTemplatesResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListTemplatesResponse.
+        r"""Sets the result of this ListTemplatesResponse.
 
         :param result: The result of this ListTemplatesResponse.
         :type result: :class:`huaweicloudsdkcodeartsbuild.v3.QueryTemplatesResult`
@@ -76,7 +76,7 @@ class ListTemplatesResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ListTemplatesResponse.
+        r"""Gets the error of this ListTemplatesResponse.
 
         返回错误信息
 
@@ -87,7 +87,7 @@ class ListTemplatesResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ListTemplatesResponse.
+        r"""Sets the error of this ListTemplatesResponse.
 
         返回错误信息
 
@@ -98,7 +98,7 @@ class ListTemplatesResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListTemplatesResponse.
+        r"""Gets the status of this ListTemplatesResponse.
 
         返回状态信息
 
@@ -109,7 +109,7 @@ class ListTemplatesResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListTemplatesResponse.
+        r"""Sets the status of this ListTemplatesResponse.
 
         返回状态信息
 

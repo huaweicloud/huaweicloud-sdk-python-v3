@@ -27,7 +27,7 @@ class MigrateAzRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """MigrateAzRequest
+        r"""MigrateAzRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class MigrateAzRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this MigrateAzRequest.
+        r"""Gets the instance_id of this MigrateAzRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class MigrateAzRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this MigrateAzRequest.
+        r"""Sets the instance_id of this MigrateAzRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class MigrateAzRequest:
 
     @property
     def body(self):
-        """Gets the body of this MigrateAzRequest.
+        r"""Gets the body of this MigrateAzRequest.
 
         :return: The body of this MigrateAzRequest.
         :rtype: :class:`huaweicloudsdkdds.v3.MigrateAzRequestBody`
@@ -80,7 +80,7 @@ class MigrateAzRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this MigrateAzRequest.
+        r"""Sets the body of this MigrateAzRequest.
 
         :param body: The body of this MigrateAzRequest.
         :type body: :class:`huaweicloudsdkdds.v3.MigrateAzRequestBody`

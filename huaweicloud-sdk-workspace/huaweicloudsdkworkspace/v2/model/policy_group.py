@@ -41,7 +41,7 @@ class PolicyGroup:
     }
 
     def __init__(self, policy_group_id=None, policy_group_name=None, priority=None, update_time=None, description=None, scope_flag=None, tenant_id=None, targets=None, policies=None):
-        """PolicyGroup
+        r"""PolicyGroup
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class PolicyGroup:
 
     @property
     def policy_group_id(self):
-        """Gets the policy_group_id of this PolicyGroup.
+        r"""Gets the policy_group_id of this PolicyGroup.
 
         策略组ID。
 
@@ -110,7 +110,7 @@ class PolicyGroup:
 
     @policy_group_id.setter
     def policy_group_id(self, policy_group_id):
-        """Sets the policy_group_id of this PolicyGroup.
+        r"""Sets the policy_group_id of this PolicyGroup.
 
         策略组ID。
 
@@ -121,7 +121,7 @@ class PolicyGroup:
 
     @property
     def policy_group_name(self):
-        """Gets the policy_group_name of this PolicyGroup.
+        r"""Gets the policy_group_name of this PolicyGroup.
 
         策略组名称。
 
@@ -132,7 +132,7 @@ class PolicyGroup:
 
     @policy_group_name.setter
     def policy_group_name(self, policy_group_name):
-        """Sets the policy_group_name of this PolicyGroup.
+        r"""Sets the policy_group_name of this PolicyGroup.
 
         策略组名称。
 
@@ -143,7 +143,7 @@ class PolicyGroup:
 
     @property
     def priority(self):
-        """Gets the priority of this PolicyGroup.
+        r"""Gets the priority of this PolicyGroup.
 
         优先级。
 
@@ -154,7 +154,7 @@ class PolicyGroup:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this PolicyGroup.
+        r"""Sets the priority of this PolicyGroup.
 
         优先级。
 
@@ -165,7 +165,7 @@ class PolicyGroup:
 
     @property
     def update_time(self):
-        """Gets the update_time of this PolicyGroup.
+        r"""Gets the update_time of this PolicyGroup.
 
         更新日期。
 
@@ -176,7 +176,7 @@ class PolicyGroup:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this PolicyGroup.
+        r"""Sets the update_time of this PolicyGroup.
 
         更新日期。
 
@@ -187,7 +187,7 @@ class PolicyGroup:
 
     @property
     def description(self):
-        """Gets the description of this PolicyGroup.
+        r"""Gets the description of this PolicyGroup.
 
         策略组描述。
 
@@ -198,7 +198,7 @@ class PolicyGroup:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PolicyGroup.
+        r"""Sets the description of this PolicyGroup.
 
         策略组描述。
 
@@ -209,7 +209,7 @@ class PolicyGroup:
 
     @property
     def scope_flag(self):
-        """Gets the scope_flag of this PolicyGroup.
+        r"""Gets the scope_flag of this PolicyGroup.
 
         策略来源。
 
@@ -220,7 +220,7 @@ class PolicyGroup:
 
     @scope_flag.setter
     def scope_flag(self, scope_flag):
-        """Sets the scope_flag of this PolicyGroup.
+        r"""Sets the scope_flag of this PolicyGroup.
 
         策略来源。
 
@@ -231,7 +231,7 @@ class PolicyGroup:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this PolicyGroup.
+        r"""Gets the tenant_id of this PolicyGroup.
 
         租户ID。
 
@@ -242,7 +242,7 @@ class PolicyGroup:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this PolicyGroup.
+        r"""Sets the tenant_id of this PolicyGroup.
 
         租户ID。
 
@@ -253,7 +253,7 @@ class PolicyGroup:
 
     @property
     def targets(self):
-        """Gets the targets of this PolicyGroup.
+        r"""Gets the targets of this PolicyGroup.
 
         应用对象列表。
 
@@ -264,7 +264,7 @@ class PolicyGroup:
 
     @targets.setter
     def targets(self, targets):
-        """Sets the targets of this PolicyGroup.
+        r"""Sets the targets of this PolicyGroup.
 
         应用对象列表。
 
@@ -275,7 +275,7 @@ class PolicyGroup:
 
     @property
     def policies(self):
-        """Gets the policies of this PolicyGroup.
+        r"""Gets the policies of this PolicyGroup.
 
         :return: The policies of this PolicyGroup.
         :rtype: :class:`huaweicloudsdkworkspace.v2.Policies`
@@ -284,7 +284,7 @@ class PolicyGroup:
 
     @policies.setter
     def policies(self, policies):
-        """Sets the policies of this PolicyGroup.
+        r"""Sets the policies of this PolicyGroup.
 
         :param policies: The policies of this PolicyGroup.
         :type policies: :class:`huaweicloudsdkworkspace.v2.Policies`

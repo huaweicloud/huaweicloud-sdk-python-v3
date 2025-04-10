@@ -91,7 +91,7 @@ class StreamingMediaReport:
     }
 
     def __init__(self, streaming_play_times=None, streaming_error_times=None, streaming_success_rate=None, sent_packets_per_second=None, received_packets_per_second=None, recv_packets=None, send_packets=None, audio_sent_bytes=None, audio_rec_bytes=None, video_sent_bytes=None, video_rec_bytes=None, sum_recv_key_frame_delay=None, avg_recv_key_frame_delay=None, min_recv_key_frame_delay=None, max_recv_key_frame_delay=None, sum_send_key_frame_delay=None, avg_send_key_frame_delay=None, min_send_key_frame_delay=None, max_send_key_frame_delay=None, key_frame_send_cnt=None, key_frame_receive_cnt=None, tcp_connect_failed=None, hand_shake_failed=None, rtmp_connect_failed=None, create_stream_failed=None, play_failed=None, publish_failed=None, retry_failed=None, parse_file_failed=None, illegal_url_failed=None, illegal_flv_header_failed=None, http_timeout_failed=None, parse_flv_file_failed=None, unknown_failed=None):
-        """StreamingMediaReport
+        r"""StreamingMediaReport
 
         The model defined in huaweicloud sdk
 
@@ -274,7 +274,7 @@ class StreamingMediaReport:
 
     @property
     def streaming_play_times(self):
-        """Gets the streaming_play_times of this StreamingMediaReport.
+        r"""Gets the streaming_play_times of this StreamingMediaReport.
 
         流媒体播放次数(流媒体aw执行次数)
 
@@ -285,7 +285,7 @@ class StreamingMediaReport:
 
     @streaming_play_times.setter
     def streaming_play_times(self, streaming_play_times):
-        """Sets the streaming_play_times of this StreamingMediaReport.
+        r"""Sets the streaming_play_times of this StreamingMediaReport.
 
         流媒体播放次数(流媒体aw执行次数)
 
@@ -296,7 +296,7 @@ class StreamingMediaReport:
 
     @property
     def streaming_error_times(self):
-        """Gets the streaming_error_times of this StreamingMediaReport.
+        r"""Gets the streaming_error_times of this StreamingMediaReport.
 
         流媒体播放出现失败的次数(失败的流媒体aw次数)
 
@@ -307,7 +307,7 @@ class StreamingMediaReport:
 
     @streaming_error_times.setter
     def streaming_error_times(self, streaming_error_times):
-        """Sets the streaming_error_times of this StreamingMediaReport.
+        r"""Sets the streaming_error_times of this StreamingMediaReport.
 
         流媒体播放出现失败的次数(失败的流媒体aw次数)
 
@@ -318,7 +318,7 @@ class StreamingMediaReport:
 
     @property
     def streaming_success_rate(self):
-        """Gets the streaming_success_rate of this StreamingMediaReport.
+        r"""Gets the streaming_success_rate of this StreamingMediaReport.
 
         流媒体播放成功率
 
@@ -329,7 +329,7 @@ class StreamingMediaReport:
 
     @streaming_success_rate.setter
     def streaming_success_rate(self, streaming_success_rate):
-        """Sets the streaming_success_rate of this StreamingMediaReport.
+        r"""Sets the streaming_success_rate of this StreamingMediaReport.
 
         流媒体播放成功率
 
@@ -340,7 +340,7 @@ class StreamingMediaReport:
 
     @property
     def sent_packets_per_second(self):
-        """Gets the sent_packets_per_second of this StreamingMediaReport.
+        r"""Gets the sent_packets_per_second of this StreamingMediaReport.
 
         每秒发送数据包大小
 
@@ -351,7 +351,7 @@ class StreamingMediaReport:
 
     @sent_packets_per_second.setter
     def sent_packets_per_second(self, sent_packets_per_second):
-        """Sets the sent_packets_per_second of this StreamingMediaReport.
+        r"""Sets the sent_packets_per_second of this StreamingMediaReport.
 
         每秒发送数据包大小
 
@@ -362,7 +362,7 @@ class StreamingMediaReport:
 
     @property
     def received_packets_per_second(self):
-        """Gets the received_packets_per_second of this StreamingMediaReport.
+        r"""Gets the received_packets_per_second of this StreamingMediaReport.
 
         每秒接收数据包大小
 
@@ -373,7 +373,7 @@ class StreamingMediaReport:
 
     @received_packets_per_second.setter
     def received_packets_per_second(self, received_packets_per_second):
-        """Sets the received_packets_per_second of this StreamingMediaReport.
+        r"""Sets the received_packets_per_second of this StreamingMediaReport.
 
         每秒接收数据包大小
 
@@ -384,7 +384,7 @@ class StreamingMediaReport:
 
     @property
     def recv_packets(self):
-        """Gets the recv_packets of this StreamingMediaReport.
+        r"""Gets the recv_packets of this StreamingMediaReport.
 
         接收数据包大小
 
@@ -395,7 +395,7 @@ class StreamingMediaReport:
 
     @recv_packets.setter
     def recv_packets(self, recv_packets):
-        """Sets the recv_packets of this StreamingMediaReport.
+        r"""Sets the recv_packets of this StreamingMediaReport.
 
         接收数据包大小
 
@@ -406,7 +406,7 @@ class StreamingMediaReport:
 
     @property
     def send_packets(self):
-        """Gets the send_packets of this StreamingMediaReport.
+        r"""Gets the send_packets of this StreamingMediaReport.
 
         发送数据包大小
 
@@ -417,7 +417,7 @@ class StreamingMediaReport:
 
     @send_packets.setter
     def send_packets(self, send_packets):
-        """Sets the send_packets of this StreamingMediaReport.
+        r"""Sets the send_packets of this StreamingMediaReport.
 
         发送数据包大小
 
@@ -428,7 +428,7 @@ class StreamingMediaReport:
 
     @property
     def audio_sent_bytes(self):
-        """Gets the audio_sent_bytes of this StreamingMediaReport.
+        r"""Gets the audio_sent_bytes of this StreamingMediaReport.
 
         音频发送字节大小
 
@@ -439,7 +439,7 @@ class StreamingMediaReport:
 
     @audio_sent_bytes.setter
     def audio_sent_bytes(self, audio_sent_bytes):
-        """Sets the audio_sent_bytes of this StreamingMediaReport.
+        r"""Sets the audio_sent_bytes of this StreamingMediaReport.
 
         音频发送字节大小
 
@@ -450,7 +450,7 @@ class StreamingMediaReport:
 
     @property
     def audio_rec_bytes(self):
-        """Gets the audio_rec_bytes of this StreamingMediaReport.
+        r"""Gets the audio_rec_bytes of this StreamingMediaReport.
 
         音频接收字节大小
 
@@ -461,7 +461,7 @@ class StreamingMediaReport:
 
     @audio_rec_bytes.setter
     def audio_rec_bytes(self, audio_rec_bytes):
-        """Sets the audio_rec_bytes of this StreamingMediaReport.
+        r"""Sets the audio_rec_bytes of this StreamingMediaReport.
 
         音频接收字节大小
 
@@ -472,7 +472,7 @@ class StreamingMediaReport:
 
     @property
     def video_sent_bytes(self):
-        """Gets the video_sent_bytes of this StreamingMediaReport.
+        r"""Gets the video_sent_bytes of this StreamingMediaReport.
 
         视频发送字节大小
 
@@ -483,7 +483,7 @@ class StreamingMediaReport:
 
     @video_sent_bytes.setter
     def video_sent_bytes(self, video_sent_bytes):
-        """Sets the video_sent_bytes of this StreamingMediaReport.
+        r"""Sets the video_sent_bytes of this StreamingMediaReport.
 
         视频发送字节大小
 
@@ -494,7 +494,7 @@ class StreamingMediaReport:
 
     @property
     def video_rec_bytes(self):
-        """Gets the video_rec_bytes of this StreamingMediaReport.
+        r"""Gets the video_rec_bytes of this StreamingMediaReport.
 
         视频接收字节大小
 
@@ -505,7 +505,7 @@ class StreamingMediaReport:
 
     @video_rec_bytes.setter
     def video_rec_bytes(self, video_rec_bytes):
-        """Sets the video_rec_bytes of this StreamingMediaReport.
+        r"""Sets the video_rec_bytes of this StreamingMediaReport.
 
         视频接收字节大小
 
@@ -516,7 +516,7 @@ class StreamingMediaReport:
 
     @property
     def sum_recv_key_frame_delay(self):
-        """Gets the sum_recv_key_frame_delay of this StreamingMediaReport.
+        r"""Gets the sum_recv_key_frame_delay of this StreamingMediaReport.
 
         接收关键帧延迟之和
 
@@ -527,7 +527,7 @@ class StreamingMediaReport:
 
     @sum_recv_key_frame_delay.setter
     def sum_recv_key_frame_delay(self, sum_recv_key_frame_delay):
-        """Sets the sum_recv_key_frame_delay of this StreamingMediaReport.
+        r"""Sets the sum_recv_key_frame_delay of this StreamingMediaReport.
 
         接收关键帧延迟之和
 
@@ -538,7 +538,7 @@ class StreamingMediaReport:
 
     @property
     def avg_recv_key_frame_delay(self):
-        """Gets the avg_recv_key_frame_delay of this StreamingMediaReport.
+        r"""Gets the avg_recv_key_frame_delay of this StreamingMediaReport.
 
         平均接收关键帧延迟
 
@@ -549,7 +549,7 @@ class StreamingMediaReport:
 
     @avg_recv_key_frame_delay.setter
     def avg_recv_key_frame_delay(self, avg_recv_key_frame_delay):
-        """Sets the avg_recv_key_frame_delay of this StreamingMediaReport.
+        r"""Sets the avg_recv_key_frame_delay of this StreamingMediaReport.
 
         平均接收关键帧延迟
 
@@ -560,7 +560,7 @@ class StreamingMediaReport:
 
     @property
     def min_recv_key_frame_delay(self):
-        """Gets the min_recv_key_frame_delay of this StreamingMediaReport.
+        r"""Gets the min_recv_key_frame_delay of this StreamingMediaReport.
 
         最小接收关键帧延迟
 
@@ -571,7 +571,7 @@ class StreamingMediaReport:
 
     @min_recv_key_frame_delay.setter
     def min_recv_key_frame_delay(self, min_recv_key_frame_delay):
-        """Sets the min_recv_key_frame_delay of this StreamingMediaReport.
+        r"""Sets the min_recv_key_frame_delay of this StreamingMediaReport.
 
         最小接收关键帧延迟
 
@@ -582,7 +582,7 @@ class StreamingMediaReport:
 
     @property
     def max_recv_key_frame_delay(self):
-        """Gets the max_recv_key_frame_delay of this StreamingMediaReport.
+        r"""Gets the max_recv_key_frame_delay of this StreamingMediaReport.
 
         最大接收关键帧延迟
 
@@ -593,7 +593,7 @@ class StreamingMediaReport:
 
     @max_recv_key_frame_delay.setter
     def max_recv_key_frame_delay(self, max_recv_key_frame_delay):
-        """Sets the max_recv_key_frame_delay of this StreamingMediaReport.
+        r"""Sets the max_recv_key_frame_delay of this StreamingMediaReport.
 
         最大接收关键帧延迟
 
@@ -604,7 +604,7 @@ class StreamingMediaReport:
 
     @property
     def sum_send_key_frame_delay(self):
-        """Gets the sum_send_key_frame_delay of this StreamingMediaReport.
+        r"""Gets the sum_send_key_frame_delay of this StreamingMediaReport.
 
         发送关键帧延迟之和
 
@@ -615,7 +615,7 @@ class StreamingMediaReport:
 
     @sum_send_key_frame_delay.setter
     def sum_send_key_frame_delay(self, sum_send_key_frame_delay):
-        """Sets the sum_send_key_frame_delay of this StreamingMediaReport.
+        r"""Sets the sum_send_key_frame_delay of this StreamingMediaReport.
 
         发送关键帧延迟之和
 
@@ -626,7 +626,7 @@ class StreamingMediaReport:
 
     @property
     def avg_send_key_frame_delay(self):
-        """Gets the avg_send_key_frame_delay of this StreamingMediaReport.
+        r"""Gets the avg_send_key_frame_delay of this StreamingMediaReport.
 
         平均发送关键帧延迟
 
@@ -637,7 +637,7 @@ class StreamingMediaReport:
 
     @avg_send_key_frame_delay.setter
     def avg_send_key_frame_delay(self, avg_send_key_frame_delay):
-        """Sets the avg_send_key_frame_delay of this StreamingMediaReport.
+        r"""Sets the avg_send_key_frame_delay of this StreamingMediaReport.
 
         平均发送关键帧延迟
 
@@ -648,7 +648,7 @@ class StreamingMediaReport:
 
     @property
     def min_send_key_frame_delay(self):
-        """Gets the min_send_key_frame_delay of this StreamingMediaReport.
+        r"""Gets the min_send_key_frame_delay of this StreamingMediaReport.
 
         最小发送关键帧延迟
 
@@ -659,7 +659,7 @@ class StreamingMediaReport:
 
     @min_send_key_frame_delay.setter
     def min_send_key_frame_delay(self, min_send_key_frame_delay):
-        """Sets the min_send_key_frame_delay of this StreamingMediaReport.
+        r"""Sets the min_send_key_frame_delay of this StreamingMediaReport.
 
         最小发送关键帧延迟
 
@@ -670,7 +670,7 @@ class StreamingMediaReport:
 
     @property
     def max_send_key_frame_delay(self):
-        """Gets the max_send_key_frame_delay of this StreamingMediaReport.
+        r"""Gets the max_send_key_frame_delay of this StreamingMediaReport.
 
         最大发送关键帧延迟
 
@@ -681,7 +681,7 @@ class StreamingMediaReport:
 
     @max_send_key_frame_delay.setter
     def max_send_key_frame_delay(self, max_send_key_frame_delay):
-        """Sets the max_send_key_frame_delay of this StreamingMediaReport.
+        r"""Sets the max_send_key_frame_delay of this StreamingMediaReport.
 
         最大发送关键帧延迟
 
@@ -692,7 +692,7 @@ class StreamingMediaReport:
 
     @property
     def key_frame_send_cnt(self):
-        """Gets the key_frame_send_cnt of this StreamingMediaReport.
+        r"""Gets the key_frame_send_cnt of this StreamingMediaReport.
 
         关键帧发送次数
 
@@ -703,7 +703,7 @@ class StreamingMediaReport:
 
     @key_frame_send_cnt.setter
     def key_frame_send_cnt(self, key_frame_send_cnt):
-        """Sets the key_frame_send_cnt of this StreamingMediaReport.
+        r"""Sets the key_frame_send_cnt of this StreamingMediaReport.
 
         关键帧发送次数
 
@@ -714,7 +714,7 @@ class StreamingMediaReport:
 
     @property
     def key_frame_receive_cnt(self):
-        """Gets the key_frame_receive_cnt of this StreamingMediaReport.
+        r"""Gets the key_frame_receive_cnt of this StreamingMediaReport.
 
         关键帧接收次数
 
@@ -725,7 +725,7 @@ class StreamingMediaReport:
 
     @key_frame_receive_cnt.setter
     def key_frame_receive_cnt(self, key_frame_receive_cnt):
-        """Sets the key_frame_receive_cnt of this StreamingMediaReport.
+        r"""Sets the key_frame_receive_cnt of this StreamingMediaReport.
 
         关键帧接收次数
 
@@ -736,7 +736,7 @@ class StreamingMediaReport:
 
     @property
     def tcp_connect_failed(self):
-        """Gets the tcp_connect_failed of this StreamingMediaReport.
+        r"""Gets the tcp_connect_failed of this StreamingMediaReport.
 
         TCP连接失败数
 
@@ -747,7 +747,7 @@ class StreamingMediaReport:
 
     @tcp_connect_failed.setter
     def tcp_connect_failed(self, tcp_connect_failed):
-        """Sets the tcp_connect_failed of this StreamingMediaReport.
+        r"""Sets the tcp_connect_failed of this StreamingMediaReport.
 
         TCP连接失败数
 
@@ -758,7 +758,7 @@ class StreamingMediaReport:
 
     @property
     def hand_shake_failed(self):
-        """Gets the hand_shake_failed of this StreamingMediaReport.
+        r"""Gets the hand_shake_failed of this StreamingMediaReport.
 
         握手失败数
 
@@ -769,7 +769,7 @@ class StreamingMediaReport:
 
     @hand_shake_failed.setter
     def hand_shake_failed(self, hand_shake_failed):
-        """Sets the hand_shake_failed of this StreamingMediaReport.
+        r"""Sets the hand_shake_failed of this StreamingMediaReport.
 
         握手失败数
 
@@ -780,7 +780,7 @@ class StreamingMediaReport:
 
     @property
     def rtmp_connect_failed(self):
-        """Gets the rtmp_connect_failed of this StreamingMediaReport.
+        r"""Gets the rtmp_connect_failed of this StreamingMediaReport.
 
         RTMP连接失败数
 
@@ -791,7 +791,7 @@ class StreamingMediaReport:
 
     @rtmp_connect_failed.setter
     def rtmp_connect_failed(self, rtmp_connect_failed):
-        """Sets the rtmp_connect_failed of this StreamingMediaReport.
+        r"""Sets the rtmp_connect_failed of this StreamingMediaReport.
 
         RTMP连接失败数
 
@@ -802,7 +802,7 @@ class StreamingMediaReport:
 
     @property
     def create_stream_failed(self):
-        """Gets the create_stream_failed of this StreamingMediaReport.
+        r"""Gets the create_stream_failed of this StreamingMediaReport.
 
         创建流失败数
 
@@ -813,7 +813,7 @@ class StreamingMediaReport:
 
     @create_stream_failed.setter
     def create_stream_failed(self, create_stream_failed):
-        """Sets the create_stream_failed of this StreamingMediaReport.
+        r"""Sets the create_stream_failed of this StreamingMediaReport.
 
         创建流失败数
 
@@ -824,7 +824,7 @@ class StreamingMediaReport:
 
     @property
     def play_failed(self):
-        """Gets the play_failed of this StreamingMediaReport.
+        r"""Gets the play_failed of this StreamingMediaReport.
 
         播放失败数
 
@@ -835,7 +835,7 @@ class StreamingMediaReport:
 
     @play_failed.setter
     def play_failed(self, play_failed):
-        """Sets the play_failed of this StreamingMediaReport.
+        r"""Sets the play_failed of this StreamingMediaReport.
 
         播放失败数
 
@@ -846,7 +846,7 @@ class StreamingMediaReport:
 
     @property
     def publish_failed(self):
-        """Gets the publish_failed of this StreamingMediaReport.
+        r"""Gets the publish_failed of this StreamingMediaReport.
 
         发布失败数
 
@@ -857,7 +857,7 @@ class StreamingMediaReport:
 
     @publish_failed.setter
     def publish_failed(self, publish_failed):
-        """Sets the publish_failed of this StreamingMediaReport.
+        r"""Sets the publish_failed of this StreamingMediaReport.
 
         发布失败数
 
@@ -868,7 +868,7 @@ class StreamingMediaReport:
 
     @property
     def retry_failed(self):
-        """Gets the retry_failed of this StreamingMediaReport.
+        r"""Gets the retry_failed of this StreamingMediaReport.
 
         重试失败数
 
@@ -879,7 +879,7 @@ class StreamingMediaReport:
 
     @retry_failed.setter
     def retry_failed(self, retry_failed):
-        """Sets the retry_failed of this StreamingMediaReport.
+        r"""Sets the retry_failed of this StreamingMediaReport.
 
         重试失败数
 
@@ -890,7 +890,7 @@ class StreamingMediaReport:
 
     @property
     def parse_file_failed(self):
-        """Gets the parse_file_failed of this StreamingMediaReport.
+        r"""Gets the parse_file_failed of this StreamingMediaReport.
 
         解析文件失败数
 
@@ -901,7 +901,7 @@ class StreamingMediaReport:
 
     @parse_file_failed.setter
     def parse_file_failed(self, parse_file_failed):
-        """Sets the parse_file_failed of this StreamingMediaReport.
+        r"""Sets the parse_file_failed of this StreamingMediaReport.
 
         解析文件失败数
 
@@ -912,7 +912,7 @@ class StreamingMediaReport:
 
     @property
     def illegal_url_failed(self):
-        """Gets the illegal_url_failed of this StreamingMediaReport.
+        r"""Gets the illegal_url_failed of this StreamingMediaReport.
 
         非法URL失败数
 
@@ -923,7 +923,7 @@ class StreamingMediaReport:
 
     @illegal_url_failed.setter
     def illegal_url_failed(self, illegal_url_failed):
-        """Sets the illegal_url_failed of this StreamingMediaReport.
+        r"""Sets the illegal_url_failed of this StreamingMediaReport.
 
         非法URL失败数
 
@@ -934,7 +934,7 @@ class StreamingMediaReport:
 
     @property
     def illegal_flv_header_failed(self):
-        """Gets the illegal_flv_header_failed of this StreamingMediaReport.
+        r"""Gets the illegal_flv_header_failed of this StreamingMediaReport.
 
         非法FLV Header失败数
 
@@ -945,7 +945,7 @@ class StreamingMediaReport:
 
     @illegal_flv_header_failed.setter
     def illegal_flv_header_failed(self, illegal_flv_header_failed):
-        """Sets the illegal_flv_header_failed of this StreamingMediaReport.
+        r"""Sets the illegal_flv_header_failed of this StreamingMediaReport.
 
         非法FLV Header失败数
 
@@ -956,7 +956,7 @@ class StreamingMediaReport:
 
     @property
     def http_timeout_failed(self):
-        """Gets the http_timeout_failed of this StreamingMediaReport.
+        r"""Gets the http_timeout_failed of this StreamingMediaReport.
 
         HTTP连接超时数
 
@@ -967,7 +967,7 @@ class StreamingMediaReport:
 
     @http_timeout_failed.setter
     def http_timeout_failed(self, http_timeout_failed):
-        """Sets the http_timeout_failed of this StreamingMediaReport.
+        r"""Sets the http_timeout_failed of this StreamingMediaReport.
 
         HTTP连接超时数
 
@@ -978,7 +978,7 @@ class StreamingMediaReport:
 
     @property
     def parse_flv_file_failed(self):
-        """Gets the parse_flv_file_failed of this StreamingMediaReport.
+        r"""Gets the parse_flv_file_failed of this StreamingMediaReport.
 
         解析FLV文件失败数
 
@@ -989,7 +989,7 @@ class StreamingMediaReport:
 
     @parse_flv_file_failed.setter
     def parse_flv_file_failed(self, parse_flv_file_failed):
-        """Sets the parse_flv_file_failed of this StreamingMediaReport.
+        r"""Sets the parse_flv_file_failed of this StreamingMediaReport.
 
         解析FLV文件失败数
 
@@ -1000,7 +1000,7 @@ class StreamingMediaReport:
 
     @property
     def unknown_failed(self):
-        """Gets the unknown_failed of this StreamingMediaReport.
+        r"""Gets the unknown_failed of this StreamingMediaReport.
 
         未知错误数
 
@@ -1011,7 +1011,7 @@ class StreamingMediaReport:
 
     @unknown_failed.setter
     def unknown_failed(self, unknown_failed):
-        """Sets the unknown_failed of this StreamingMediaReport.
+        r"""Sets the unknown_failed of this StreamingMediaReport.
 
         未知错误数
 

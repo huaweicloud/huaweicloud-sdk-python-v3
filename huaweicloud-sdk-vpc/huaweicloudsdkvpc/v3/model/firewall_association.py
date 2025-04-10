@@ -25,7 +25,7 @@ class FirewallAssociation:
     }
 
     def __init__(self, virsubnet_id=None):
-        """FirewallAssociation
+        r"""FirewallAssociation
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class FirewallAssociation:
 
     @property
     def virsubnet_id(self):
-        """Gets the virsubnet_id of this FirewallAssociation.
+        r"""Gets the virsubnet_id of this FirewallAssociation.
 
         功能说明：ACL绑定的子网ID
 
@@ -53,7 +53,7 @@ class FirewallAssociation:
 
     @virsubnet_id.setter
     def virsubnet_id(self, virsubnet_id):
-        """Sets the virsubnet_id of this FirewallAssociation.
+        r"""Sets the virsubnet_id of this FirewallAssociation.
 
         功能说明：ACL绑定的子网ID
 

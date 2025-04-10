@@ -29,7 +29,7 @@ class Segment:
     }
 
     def __init__(self, start_time=None, end_time=None, result=None):
-        """Segment
+        r"""Segment
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class Segment:
 
     @property
     def start_time(self):
-        """Gets the start_time of this Segment.
+        r"""Gets the start_time of this Segment.
 
         一句的起始时间戳，单位ms。
 
@@ -65,7 +65,7 @@ class Segment:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this Segment.
+        r"""Sets the start_time of this Segment.
 
         一句的起始时间戳，单位ms。
 
@@ -76,7 +76,7 @@ class Segment:
 
     @property
     def end_time(self):
-        """Gets the end_time of this Segment.
+        r"""Gets the end_time of this Segment.
 
         一句的结束时间戳，单位ms。
 
@@ -87,7 +87,7 @@ class Segment:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this Segment.
+        r"""Sets the end_time of this Segment.
 
         一句的结束时间戳，单位ms。
 
@@ -98,7 +98,7 @@ class Segment:
 
     @property
     def result(self):
-        """Gets the result of this Segment.
+        r"""Gets the result of this Segment.
 
         :return: The result of this Segment.
         :rtype: :class:`huaweicloudsdksis.v1.TranscriberResult`
@@ -107,7 +107,7 @@ class Segment:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this Segment.
+        r"""Sets the result of this Segment.
 
         :param result: The result of this Segment.
         :type result: :class:`huaweicloudsdksis.v1.TranscriberResult`

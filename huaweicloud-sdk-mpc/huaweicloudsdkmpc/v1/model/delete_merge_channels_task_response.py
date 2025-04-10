@@ -24,7 +24,7 @@ class DeleteMergeChannelsTaskResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteMergeChannelsTaskResponse
+        r"""DeleteMergeChannelsTaskResponse
 
         The model defined in huaweicloud sdk
 

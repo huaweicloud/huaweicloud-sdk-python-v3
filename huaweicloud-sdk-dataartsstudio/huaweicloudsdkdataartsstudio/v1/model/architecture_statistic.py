@@ -31,7 +31,7 @@ class ArchitectureStatistic:
     }
 
     def __init__(self, children=None, count=None, guid=None, name=None):
-        """ArchitectureStatistic
+        r"""ArchitectureStatistic
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ArchitectureStatistic:
 
     @property
     def children(self):
-        """Gets the children of this ArchitectureStatistic.
+        r"""Gets the children of this ArchitectureStatistic.
 
         子指标
 
@@ -75,7 +75,7 @@ class ArchitectureStatistic:
 
     @children.setter
     def children(self, children):
-        """Sets the children of this ArchitectureStatistic.
+        r"""Sets the children of this ArchitectureStatistic.
 
         子指标
 
@@ -86,7 +86,7 @@ class ArchitectureStatistic:
 
     @property
     def count(self):
-        """Gets the count of this ArchitectureStatistic.
+        r"""Gets the count of this ArchitectureStatistic.
 
         子指标个数
 
@@ -97,7 +97,7 @@ class ArchitectureStatistic:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ArchitectureStatistic.
+        r"""Sets the count of this ArchitectureStatistic.
 
         子指标个数
 
@@ -108,7 +108,7 @@ class ArchitectureStatistic:
 
     @property
     def guid(self):
-        """Gets the guid of this ArchitectureStatistic.
+        r"""Gets the guid of this ArchitectureStatistic.
 
         guid
 
@@ -119,7 +119,7 @@ class ArchitectureStatistic:
 
     @guid.setter
     def guid(self, guid):
-        """Sets the guid of this ArchitectureStatistic.
+        r"""Sets the guid of this ArchitectureStatistic.
 
         guid
 
@@ -130,7 +130,7 @@ class ArchitectureStatistic:
 
     @property
     def name(self):
-        """Gets the name of this ArchitectureStatistic.
+        r"""Gets the name of this ArchitectureStatistic.
 
         名称
 
@@ -141,7 +141,7 @@ class ArchitectureStatistic:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ArchitectureStatistic.
+        r"""Sets the name of this ArchitectureStatistic.
 
         名称
 

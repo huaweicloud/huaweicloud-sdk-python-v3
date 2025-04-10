@@ -39,7 +39,7 @@ class ImageWatermarkSetting:
     }
 
     def __init__(self, dx=None, dy=None, referpos=None, timeline_start=None, timeline_duration=None, overlay_input=None, input=None, base=None):
-        """ImageWatermarkSetting
+        r"""ImageWatermarkSetting
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ImageWatermarkSetting:
 
     @property
     def dx(self):
-        """Gets the dx of this ImageWatermarkSetting.
+        r"""Gets the dx of this ImageWatermarkSetting.
 
         水印图片起点相对输出视频顶点的水平偏移量。  设置方法有如下两种：  - 整数型：表示图片起点水平偏移视频顶点的像素值，单位px。取值范围：[0，4096] - 小数型：表示图片起点相对于视频分辨率宽的水平偏移比率。取值范围：(0，1)，支持4位小数，如0.9999，超出部分系统自动丢弃。  示例：输出视频分辨率宽1920，设置“dx”为“0.1”，“referpos”为“TopRight”（右上角），则水印图片右上角到视频右顶点在水平方向上偏移距离为192。 
 
@@ -103,7 +103,7 @@ class ImageWatermarkSetting:
 
     @dx.setter
     def dx(self, dx):
-        """Sets the dx of this ImageWatermarkSetting.
+        r"""Sets the dx of this ImageWatermarkSetting.
 
         水印图片起点相对输出视频顶点的水平偏移量。  设置方法有如下两种：  - 整数型：表示图片起点水平偏移视频顶点的像素值，单位px。取值范围：[0，4096] - 小数型：表示图片起点相对于视频分辨率宽的水平偏移比率。取值范围：(0，1)，支持4位小数，如0.9999，超出部分系统自动丢弃。  示例：输出视频分辨率宽1920，设置“dx”为“0.1”，“referpos”为“TopRight”（右上角），则水印图片右上角到视频右顶点在水平方向上偏移距离为192。 
 
@@ -114,7 +114,7 @@ class ImageWatermarkSetting:
 
     @property
     def dy(self):
-        """Gets the dy of this ImageWatermarkSetting.
+        r"""Gets the dy of this ImageWatermarkSetting.
 
         水印图片起点相对输出视频顶点的垂直偏移量。  - 设置方法有如下两种：整数型：表示图片起点垂直偏移视频顶点的像素值，单位px。取值范围：[0，4096] - 小数型：表示图片起点相对于视频分辨率高的垂直偏移比率。取值范围：(0，1)，支持4位小数，如0.9999，超出部分系统自动丢弃。  示例：输出视频分辨率高1080，设置“dy”为“0.1”，“referpos”为“TopRight”（右上角），则水印图片右上角到视频右顶点在垂直方向上的偏移距离为108。 
 
@@ -125,7 +125,7 @@ class ImageWatermarkSetting:
 
     @dy.setter
     def dy(self, dy):
-        """Sets the dy of this ImageWatermarkSetting.
+        r"""Sets the dy of this ImageWatermarkSetting.
 
         水印图片起点相对输出视频顶点的垂直偏移量。  - 设置方法有如下两种：整数型：表示图片起点垂直偏移视频顶点的像素值，单位px。取值范围：[0，4096] - 小数型：表示图片起点相对于视频分辨率高的垂直偏移比率。取值范围：(0，1)，支持4位小数，如0.9999，超出部分系统自动丢弃。  示例：输出视频分辨率高1080，设置“dy”为“0.1”，“referpos”为“TopRight”（右上角），则水印图片右上角到视频右顶点在垂直方向上的偏移距离为108。 
 
@@ -136,7 +136,7 @@ class ImageWatermarkSetting:
 
     @property
     def referpos(self):
-        """Gets the referpos of this ImageWatermarkSetting.
+        r"""Gets the referpos of this ImageWatermarkSetting.
 
         水印的位置。  取值如下： - TopRight：右上角。 - TopLeft：左上角。 - BottomRight：右下角。 - BottomLeft：左下角。 
 
@@ -147,7 +147,7 @@ class ImageWatermarkSetting:
 
     @referpos.setter
     def referpos(self, referpos):
-        """Sets the referpos of this ImageWatermarkSetting.
+        r"""Sets the referpos of this ImageWatermarkSetting.
 
         水印的位置。  取值如下： - TopRight：右上角。 - TopLeft：左上角。 - BottomRight：右下角。 - BottomLeft：左下角。 
 
@@ -158,7 +158,7 @@ class ImageWatermarkSetting:
 
     @property
     def timeline_start(self):
-        """Gets the timeline_start of this ImageWatermarkSetting.
+        r"""Gets the timeline_start of this ImageWatermarkSetting.
 
         水印开始时间，与“timeline_duration”配合使用。  取值范围：数字。  单位：秒。 
 
@@ -169,7 +169,7 @@ class ImageWatermarkSetting:
 
     @timeline_start.setter
     def timeline_start(self, timeline_start):
-        """Sets the timeline_start of this ImageWatermarkSetting.
+        r"""Sets the timeline_start of this ImageWatermarkSetting.
 
         水印开始时间，与“timeline_duration”配合使用。  取值范围：数字。  单位：秒。 
 
@@ -180,7 +180,7 @@ class ImageWatermarkSetting:
 
     @property
     def timeline_duration(self):
-        """Gets the timeline_duration of this ImageWatermarkSetting.
+        r"""Gets the timeline_duration of this ImageWatermarkSetting.
 
         水印持续时间，与“timeline_start”配合使用。  取值范围：[数字，ToEND]。“ToEND”表示持续到视频结束。  默认值：ToEND。 
 
@@ -191,7 +191,7 @@ class ImageWatermarkSetting:
 
     @timeline_duration.setter
     def timeline_duration(self, timeline_duration):
-        """Sets the timeline_duration of this ImageWatermarkSetting.
+        r"""Sets the timeline_duration of this ImageWatermarkSetting.
 
         水印持续时间，与“timeline_start”配合使用。  取值范围：[数字，ToEND]。“ToEND”表示持续到视频结束。  默认值：ToEND。 
 
@@ -202,7 +202,7 @@ class ImageWatermarkSetting:
 
     @property
     def overlay_input(self):
-        """Gets the overlay_input of this ImageWatermarkSetting.
+        r"""Gets the overlay_input of this ImageWatermarkSetting.
 
         对应拼接列表中第几个片段打水印，从0开始，\"0表示第1个，“1”表示第二个，不带或填\"ALL\"表示所有拼接片源打水印。 
 
@@ -213,7 +213,7 @@ class ImageWatermarkSetting:
 
     @overlay_input.setter
     def overlay_input(self, overlay_input):
-        """Sets the overlay_input of this ImageWatermarkSetting.
+        r"""Sets the overlay_input of this ImageWatermarkSetting.
 
         对应拼接列表中第几个片段打水印，从0开始，\"0表示第1个，“1”表示第二个，不带或填\"ALL\"表示所有拼接片源打水印。 
 
@@ -224,7 +224,7 @@ class ImageWatermarkSetting:
 
     @property
     def input(self):
-        """Gets the input of this ImageWatermarkSetting.
+        r"""Gets the input of this ImageWatermarkSetting.
 
         :return: The input of this ImageWatermarkSetting.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -233,7 +233,7 @@ class ImageWatermarkSetting:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this ImageWatermarkSetting.
+        r"""Sets the input of this ImageWatermarkSetting.
 
         :param input: The input of this ImageWatermarkSetting.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -242,7 +242,7 @@ class ImageWatermarkSetting:
 
     @property
     def base(self):
-        """Gets the base of this ImageWatermarkSetting.
+        r"""Gets the base of this ImageWatermarkSetting.
 
         水印叠加母体  取值如下： - input ：水印叠加在输入片源上，转码输出后实际大小按图像等比例缩放 - output ：水印叠加在转码输出文件上。 
 
@@ -253,7 +253,7 @@ class ImageWatermarkSetting:
 
     @base.setter
     def base(self, base):
-        """Sets the base of this ImageWatermarkSetting.
+        r"""Sets the base of this ImageWatermarkSetting.
 
         水印叠加母体  取值如下： - input ：水印叠加在输入片源上，转码输出后实际大小按图像等比例缩放 - output ：水印叠加在转码输出文件上。 
 

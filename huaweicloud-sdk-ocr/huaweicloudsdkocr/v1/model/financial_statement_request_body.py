@@ -39,7 +39,7 @@ class FinancialStatementRequestBody:
     }
 
     def __init__(self, image=None, url=None, return_text_location=None, return_confidence=None, return_excel=None, return_table_location=None, return_image_size=None, return_rectification_matrix=None):
-        """FinancialStatementRequestBody
+        r"""FinancialStatementRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class FinancialStatementRequestBody:
 
     @property
     def image(self):
-        """Gets the image of this FinancialStatementRequestBody.
+        r"""Gets the image of this FinancialStatementRequestBody.
 
         与url二选一  图像数据，base64编码，要求base64编码后大小不超过10MB。图片最小边不小于15px，最长边不超过8192px，支持JPEG、JPG、PNG、BMP、TIFF格式。  图片文件Base64编码字符串，点击[这里](https://support.huaweicloud.com/ocr_faq/ocr_01_0032.html)查看详细获取方式。   
 
@@ -103,7 +103,7 @@ class FinancialStatementRequestBody:
 
     @image.setter
     def image(self, image):
-        """Sets the image of this FinancialStatementRequestBody.
+        r"""Sets the image of this FinancialStatementRequestBody.
 
         与url二选一  图像数据，base64编码，要求base64编码后大小不超过10MB。图片最小边不小于15px，最长边不超过8192px，支持JPEG、JPG、PNG、BMP、TIFF格式。  图片文件Base64编码字符串，点击[这里](https://support.huaweicloud.com/ocr_faq/ocr_01_0032.html)查看详细获取方式。   
 
@@ -114,7 +114,7 @@ class FinancialStatementRequestBody:
 
     @property
     def url(self):
-        """Gets the url of this FinancialStatementRequestBody.
+        r"""Gets the url of this FinancialStatementRequestBody.
 
         与image二选一  要求base64编码后大小不超过10MB。 图片最小边不小于15px，最长边不超过8192px，支持JPEG、JPG、PNG、BMP、TIFF格式。 图片的URL路径，目前支持： - 公网http/https url - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，详情参见[配置OBS访问权限](https://support.huaweicloud.com/api-ocr/ocr_03_0132.html)。 > 说明： - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 - url中不能存在中文字符，若存在，中文需要进行utf8编码。 
 
@@ -125,7 +125,7 @@ class FinancialStatementRequestBody:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this FinancialStatementRequestBody.
+        r"""Sets the url of this FinancialStatementRequestBody.
 
         与image二选一  要求base64编码后大小不超过10MB。 图片最小边不小于15px，最长边不超过8192px，支持JPEG、JPG、PNG、BMP、TIFF格式。 图片的URL路径，目前支持： - 公网http/https url - OBS提供的url，使用OBS数据需要进行授权。包括对服务授权、临时授权、匿名公开授权，详情参见[配置OBS访问权限](https://support.huaweicloud.com/api-ocr/ocr_03_0132.html)。 > 说明： - 接口响应时间依赖于图片的下载时间，如果图片下载时间过长，会返回接口调用失败。 - 请保证被检测图片所在的存储服务稳定可靠，推荐使用OBS服务存储图片数据。 - url中不能存在中文字符，若存在，中文需要进行utf8编码。 
 
@@ -136,7 +136,7 @@ class FinancialStatementRequestBody:
 
     @property
     def return_text_location(self):
-        """Gets the return_text_location of this FinancialStatementRequestBody.
+        r"""Gets the return_text_location of this FinancialStatementRequestBody.
 
         返回文本块坐标及单元格坐标信息，可选值包括： - true：返回文本块和单元格坐标; - false：不返回。  > 说明： - 未传入该参数时默认为false，即不返回。 
 
@@ -147,7 +147,7 @@ class FinancialStatementRequestBody:
 
     @return_text_location.setter
     def return_text_location(self, return_text_location):
-        """Sets the return_text_location of this FinancialStatementRequestBody.
+        r"""Sets the return_text_location of this FinancialStatementRequestBody.
 
         返回文本块坐标及单元格坐标信息，可选值包括： - true：返回文本块和单元格坐标; - false：不返回。  > 说明： - 未传入该参数时默认为false，即不返回。 
 
@@ -158,7 +158,7 @@ class FinancialStatementRequestBody:
 
     @property
     def return_confidence(self):
-        """Gets the return_confidence of this FinancialStatementRequestBody.
+        r"""Gets the return_confidence of this FinancialStatementRequestBody.
 
         返回字段识别置信度，小数点后四位。可选值包括： - true：返回字段置信度; - false：不返回。  > 说明： - 未传入该参数时默认为false，即不返回字段置信度。 
 
@@ -169,7 +169,7 @@ class FinancialStatementRequestBody:
 
     @return_confidence.setter
     def return_confidence(self, return_confidence):
-        """Sets the return_confidence of this FinancialStatementRequestBody.
+        r"""Sets the return_confidence of this FinancialStatementRequestBody.
 
         返回字段识别置信度，小数点后四位。可选值包括： - true：返回字段置信度; - false：不返回。  > 说明： - 未传入该参数时默认为false，即不返回字段置信度。 
 
@@ -180,7 +180,7 @@ class FinancialStatementRequestBody:
 
     @property
     def return_excel(self):
-        """Gets the return_excel of this FinancialStatementRequestBody.
+        r"""Gets the return_excel of this FinancialStatementRequestBody.
 
         是否返回表格转换Microsoft Excel的base64编码字段。可选值包括： - true：返回’excel’字段，表示xlsx格式的表格识别结果的base64编码; - false：不返回。  > 说明： - 对返回的Excel编码，可用Python函数 base64.b64decode解码后保存为xlsx文件。 
 
@@ -191,7 +191,7 @@ class FinancialStatementRequestBody:
 
     @return_excel.setter
     def return_excel(self, return_excel):
-        """Sets the return_excel of this FinancialStatementRequestBody.
+        r"""Sets the return_excel of this FinancialStatementRequestBody.
 
         是否返回表格转换Microsoft Excel的base64编码字段。可选值包括： - true：返回’excel’字段，表示xlsx格式的表格识别结果的base64编码; - false：不返回。  > 说明： - 对返回的Excel编码，可用Python函数 base64.b64decode解码后保存为xlsx文件。 
 
@@ -202,7 +202,7 @@ class FinancialStatementRequestBody:
 
     @property
     def return_table_location(self):
-        """Gets the return_table_location of this FinancialStatementRequestBody.
+        r"""Gets the return_table_location of this FinancialStatementRequestBody.
 
         返回表格坐标，可选值包括： - true：返回表格坐标; - false：不返回。  > 说明： - 未传入该参数时默认为false，即不返回。 
 
@@ -213,7 +213,7 @@ class FinancialStatementRequestBody:
 
     @return_table_location.setter
     def return_table_location(self, return_table_location):
-        """Sets the return_table_location of this FinancialStatementRequestBody.
+        r"""Sets the return_table_location of this FinancialStatementRequestBody.
 
         返回表格坐标，可选值包括： - true：返回表格坐标; - false：不返回。  > 说明： - 未传入该参数时默认为false，即不返回。 
 
@@ -224,7 +224,7 @@ class FinancialStatementRequestBody:
 
     @property
     def return_image_size(self):
-        """Gets the return_image_size of this FinancialStatementRequestBody.
+        r"""Gets the return_image_size of this FinancialStatementRequestBody.
 
         返回矫正后的图像大小，可选值包括： - true：返回矫正图像大小; - false：不返回。  > 说明： - 未传入该参数时默认为false，即不返回。 
 
@@ -235,7 +235,7 @@ class FinancialStatementRequestBody:
 
     @return_image_size.setter
     def return_image_size(self, return_image_size):
-        """Sets the return_image_size of this FinancialStatementRequestBody.
+        r"""Sets the return_image_size of this FinancialStatementRequestBody.
 
         返回矫正后的图像大小，可选值包括： - true：返回矫正图像大小; - false：不返回。  > 说明： - 未传入该参数时默认为false，即不返回。 
 
@@ -246,7 +246,7 @@ class FinancialStatementRequestBody:
 
     @property
     def return_rectification_matrix(self):
-        """Gets the return_rectification_matrix of this FinancialStatementRequestBody.
+        r"""Gets the return_rectification_matrix of this FinancialStatementRequestBody.
 
         透视变换矩阵，可选值包括： - true：返回透视变换矩阵; - false：不返回。  > 说明： - 未传入该参数时默认为false，即不返回透视变换矩阵。 
 
@@ -257,7 +257,7 @@ class FinancialStatementRequestBody:
 
     @return_rectification_matrix.setter
     def return_rectification_matrix(self, return_rectification_matrix):
-        """Sets the return_rectification_matrix of this FinancialStatementRequestBody.
+        r"""Sets the return_rectification_matrix of this FinancialStatementRequestBody.
 
         透视变换矩阵，可选值包括： - true：返回透视变换矩阵; - false：不返回。  > 说明： - 未传入该参数时默认为false，即不返回透视变换矩阵。 
 

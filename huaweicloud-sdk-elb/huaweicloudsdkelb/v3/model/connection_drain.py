@@ -27,7 +27,7 @@ class ConnectionDrain:
     }
 
     def __init__(self, enable=None, timeout=None):
-        """ConnectionDrain
+        r"""ConnectionDrain
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ConnectionDrain:
 
     @property
     def enable(self):
-        """Gets the enable of this ConnectionDrain.
+        r"""Gets the enable of this ConnectionDrain.
 
         参数解释：延迟注销功能开关。  取值范围：true 开启，false 关闭。  默认取值：true。
 
@@ -61,7 +61,7 @@ class ConnectionDrain:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this ConnectionDrain.
+        r"""Sets the enable of this ConnectionDrain.
 
         参数解释：延迟注销功能开关。  取值范围：true 开启，false 关闭。  默认取值：true。
 
@@ -72,7 +72,7 @@ class ConnectionDrain:
 
     @property
     def timeout(self):
-        """Gets the timeout of this ConnectionDrain.
+        r"""Gets the timeout of this ConnectionDrain.
 
         参数解释：延迟注销时间。  取值范围：10~4000，单位：秒。
 
@@ -83,7 +83,7 @@ class ConnectionDrain:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this ConnectionDrain.
+        r"""Sets the timeout of this ConnectionDrain.
 
         参数解释：延迟注销时间。  取值范围：10~4000，单位：秒。
 

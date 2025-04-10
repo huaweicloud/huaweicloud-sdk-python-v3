@@ -40,7 +40,7 @@ class ShowMetadataResponse(SdkResponse):
     }
 
     def __init__(self, id=None, idp_id=None, entity_id=None, protocol_id=None, domain_id=None, xaccount_type=None, update_time=None, data=None):
-        """ShowMetadataResponse
+        r"""ShowMetadataResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ShowMetadataResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowMetadataResponse.
+        r"""Gets the id of this ShowMetadataResponse.
 
         Metadata的ID。
 
@@ -104,7 +104,7 @@ class ShowMetadataResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowMetadataResponse.
+        r"""Sets the id of this ShowMetadataResponse.
 
         Metadata的ID。
 
@@ -115,7 +115,7 @@ class ShowMetadataResponse(SdkResponse):
 
     @property
     def idp_id(self):
-        """Gets the idp_id of this ShowMetadataResponse.
+        r"""Gets the idp_id of this ShowMetadataResponse.
 
         身份提供商ID。
 
@@ -126,7 +126,7 @@ class ShowMetadataResponse(SdkResponse):
 
     @idp_id.setter
     def idp_id(self, idp_id):
-        """Sets the idp_id of this ShowMetadataResponse.
+        r"""Sets the idp_id of this ShowMetadataResponse.
 
         身份提供商ID。
 
@@ -137,7 +137,7 @@ class ShowMetadataResponse(SdkResponse):
 
     @property
     def entity_id(self):
-        """Gets the entity_id of this ShowMetadataResponse.
+        r"""Gets the entity_id of this ShowMetadataResponse.
 
         Metadata文件中的entityID字段。
 
@@ -148,7 +148,7 @@ class ShowMetadataResponse(SdkResponse):
 
     @entity_id.setter
     def entity_id(self, entity_id):
-        """Sets the entity_id of this ShowMetadataResponse.
+        r"""Sets the entity_id of this ShowMetadataResponse.
 
         Metadata文件中的entityID字段。
 
@@ -159,7 +159,7 @@ class ShowMetadataResponse(SdkResponse):
 
     @property
     def protocol_id(self):
-        """Gets the protocol_id of this ShowMetadataResponse.
+        r"""Gets the protocol_id of this ShowMetadataResponse.
 
         协议ID。
 
@@ -170,7 +170,7 @@ class ShowMetadataResponse(SdkResponse):
 
     @protocol_id.setter
     def protocol_id(self, protocol_id):
-        """Sets the protocol_id of this ShowMetadataResponse.
+        r"""Sets the protocol_id of this ShowMetadataResponse.
 
         协议ID。
 
@@ -181,7 +181,7 @@ class ShowMetadataResponse(SdkResponse):
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ShowMetadataResponse.
+        r"""Gets the domain_id of this ShowMetadataResponse.
 
         用户所属账号ID。
 
@@ -192,7 +192,7 @@ class ShowMetadataResponse(SdkResponse):
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ShowMetadataResponse.
+        r"""Sets the domain_id of this ShowMetadataResponse.
 
         用户所属账号ID。
 
@@ -203,7 +203,7 @@ class ShowMetadataResponse(SdkResponse):
 
     @property
     def xaccount_type(self):
-        """Gets the xaccount_type of this ShowMetadataResponse.
+        r"""Gets the xaccount_type of this ShowMetadataResponse.
 
         账号来源，默认为空。
 
@@ -214,7 +214,7 @@ class ShowMetadataResponse(SdkResponse):
 
     @xaccount_type.setter
     def xaccount_type(self, xaccount_type):
-        """Sets the xaccount_type of this ShowMetadataResponse.
+        r"""Sets the xaccount_type of this ShowMetadataResponse.
 
         账号来源，默认为空。
 
@@ -225,7 +225,7 @@ class ShowMetadataResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowMetadataResponse.
+        r"""Gets the update_time of this ShowMetadataResponse.
 
         导入或更新Metadata文件的时间。
 
@@ -236,7 +236,7 @@ class ShowMetadataResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowMetadataResponse.
+        r"""Sets the update_time of this ShowMetadataResponse.
 
         导入或更新Metadata文件的时间。
 
@@ -247,7 +247,7 @@ class ShowMetadataResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowMetadataResponse.
+        r"""Gets the data of this ShowMetadataResponse.
 
         Metadata文件的内容。
 
@@ -258,7 +258,7 @@ class ShowMetadataResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowMetadataResponse.
+        r"""Sets the data of this ShowMetadataResponse.
 
         Metadata文件的内容。
 

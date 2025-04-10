@@ -82,7 +82,7 @@ class ShowTaskDetailResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None, task_name=None, creator_id=None, git_url=None, git_branch=None, last_check_time=None, code_line_total=None, code_line=None, code_quality=None, issue_count=None, risk_coefficient=None, duplication_ratio=None, complexity_count=None, duplicated_lines=None, comment_lines=None, comment_ratio=None, duplicated_blocks=None, last_exec_time=None, check_type=None, created_at=None, cyclomatic_complexity_per_method=None, cyclomatic_complexity_per_file=None, critical_count=None, major_count=None, minor_count=None, suggestion_count=None, is_access=None, trigger_type=None, file_duplication_ratio=None):
-        """ShowTaskDetailResponse
+        r"""ShowTaskDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -240,7 +240,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowTaskDetailResponse.
+        r"""Gets the task_id of this ShowTaskDetailResponse.
 
         任务id
 
@@ -251,7 +251,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowTaskDetailResponse.
+        r"""Sets the task_id of this ShowTaskDetailResponse.
 
         任务id
 
@@ -262,7 +262,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @property
     def task_name(self):
-        """Gets the task_name of this ShowTaskDetailResponse.
+        r"""Gets the task_name of this ShowTaskDetailResponse.
 
         任务名字
 
@@ -273,7 +273,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this ShowTaskDetailResponse.
+        r"""Sets the task_name of this ShowTaskDetailResponse.
 
         任务名字
 
@@ -284,7 +284,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @property
     def creator_id(self):
-        """Gets the creator_id of this ShowTaskDetailResponse.
+        r"""Gets the creator_id of this ShowTaskDetailResponse.
 
         创建者id
 
@@ -295,7 +295,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @creator_id.setter
     def creator_id(self, creator_id):
-        """Sets the creator_id of this ShowTaskDetailResponse.
+        r"""Sets the creator_id of this ShowTaskDetailResponse.
 
         创建者id
 
@@ -306,7 +306,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @property
     def git_url(self):
-        """Gets the git_url of this ShowTaskDetailResponse.
+        r"""Gets the git_url of this ShowTaskDetailResponse.
 
         代码仓地址
 
@@ -317,7 +317,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @git_url.setter
     def git_url(self, git_url):
-        """Sets the git_url of this ShowTaskDetailResponse.
+        r"""Sets the git_url of this ShowTaskDetailResponse.
 
         代码仓地址
 
@@ -328,7 +328,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @property
     def git_branch(self):
-        """Gets the git_branch of this ShowTaskDetailResponse.
+        r"""Gets the git_branch of this ShowTaskDetailResponse.
 
         代码仓分支,如果是MR模式，为源分支
 
@@ -339,7 +339,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @git_branch.setter
     def git_branch(self, git_branch):
-        """Sets the git_branch of this ShowTaskDetailResponse.
+        r"""Sets the git_branch of this ShowTaskDetailResponse.
 
         代码仓分支,如果是MR模式，为源分支
 
@@ -350,7 +350,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @property
     def last_check_time(self):
-        """Gets the last_check_time of this ShowTaskDetailResponse.
+        r"""Gets the last_check_time of this ShowTaskDetailResponse.
 
         上一次检查时间
 
@@ -361,7 +361,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @last_check_time.setter
     def last_check_time(self, last_check_time):
-        """Sets the last_check_time of this ShowTaskDetailResponse.
+        r"""Sets the last_check_time of this ShowTaskDetailResponse.
 
         上一次检查时间
 
@@ -372,7 +372,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @property
     def code_line_total(self):
-        """Gets the code_line_total of this ShowTaskDetailResponse.
+        r"""Gets the code_line_total of this ShowTaskDetailResponse.
 
         代码总行数
 
@@ -383,7 +383,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @code_line_total.setter
     def code_line_total(self, code_line_total):
-        """Sets the code_line_total of this ShowTaskDetailResponse.
+        r"""Sets the code_line_total of this ShowTaskDetailResponse.
 
         代码总行数
 
@@ -394,7 +394,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @property
     def code_line(self):
-        """Gets the code_line of this ShowTaskDetailResponse.
+        r"""Gets the code_line of this ShowTaskDetailResponse.
 
         代码有效行数
 
@@ -405,7 +405,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @code_line.setter
     def code_line(self, code_line):
-        """Sets the code_line of this ShowTaskDetailResponse.
+        r"""Sets the code_line of this ShowTaskDetailResponse.
 
         代码有效行数
 
@@ -416,7 +416,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @property
     def code_quality(self):
-        """Gets the code_quality of this ShowTaskDetailResponse.
+        r"""Gets the code_quality of this ShowTaskDetailResponse.
 
         代码质量
 
@@ -427,7 +427,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @code_quality.setter
     def code_quality(self, code_quality):
-        """Sets the code_quality of this ShowTaskDetailResponse.
+        r"""Sets the code_quality of this ShowTaskDetailResponse.
 
         代码质量
 
@@ -438,7 +438,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @property
     def issue_count(self):
-        """Gets the issue_count of this ShowTaskDetailResponse.
+        r"""Gets the issue_count of this ShowTaskDetailResponse.
 
         问题数
 
@@ -449,7 +449,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @issue_count.setter
     def issue_count(self, issue_count):
-        """Sets the issue_count of this ShowTaskDetailResponse.
+        r"""Sets the issue_count of this ShowTaskDetailResponse.
 
         问题数
 
@@ -460,7 +460,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @property
     def risk_coefficient(self):
-        """Gets the risk_coefficient of this ShowTaskDetailResponse.
+        r"""Gets the risk_coefficient of this ShowTaskDetailResponse.
 
         危险系数
 
@@ -471,7 +471,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @risk_coefficient.setter
     def risk_coefficient(self, risk_coefficient):
-        """Sets the risk_coefficient of this ShowTaskDetailResponse.
+        r"""Sets the risk_coefficient of this ShowTaskDetailResponse.
 
         危险系数
 
@@ -482,7 +482,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @property
     def duplication_ratio(self):
-        """Gets the duplication_ratio of this ShowTaskDetailResponse.
+        r"""Gets the duplication_ratio of this ShowTaskDetailResponse.
 
         重复比例
 
@@ -493,7 +493,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @duplication_ratio.setter
     def duplication_ratio(self, duplication_ratio):
-        """Sets the duplication_ratio of this ShowTaskDetailResponse.
+        r"""Sets the duplication_ratio of this ShowTaskDetailResponse.
 
         重复比例
 
@@ -504,7 +504,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @property
     def complexity_count(self):
-        """Gets the complexity_count of this ShowTaskDetailResponse.
+        r"""Gets the complexity_count of this ShowTaskDetailResponse.
 
         复杂度
 
@@ -515,7 +515,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @complexity_count.setter
     def complexity_count(self, complexity_count):
-        """Sets the complexity_count of this ShowTaskDetailResponse.
+        r"""Sets the complexity_count of this ShowTaskDetailResponse.
 
         复杂度
 
@@ -526,7 +526,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @property
     def duplicated_lines(self):
-        """Gets the duplicated_lines of this ShowTaskDetailResponse.
+        r"""Gets the duplicated_lines of this ShowTaskDetailResponse.
 
         重复行数
 
@@ -537,7 +537,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @duplicated_lines.setter
     def duplicated_lines(self, duplicated_lines):
-        """Sets the duplicated_lines of this ShowTaskDetailResponse.
+        r"""Sets the duplicated_lines of this ShowTaskDetailResponse.
 
         重复行数
 
@@ -548,7 +548,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @property
     def comment_lines(self):
-        """Gets the comment_lines of this ShowTaskDetailResponse.
+        r"""Gets the comment_lines of this ShowTaskDetailResponse.
 
         注释行数
 
@@ -559,7 +559,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @comment_lines.setter
     def comment_lines(self, comment_lines):
-        """Sets the comment_lines of this ShowTaskDetailResponse.
+        r"""Sets the comment_lines of this ShowTaskDetailResponse.
 
         注释行数
 
@@ -570,7 +570,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @property
     def comment_ratio(self):
-        """Gets the comment_ratio of this ShowTaskDetailResponse.
+        r"""Gets the comment_ratio of this ShowTaskDetailResponse.
 
         注释比例
 
@@ -581,7 +581,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @comment_ratio.setter
     def comment_ratio(self, comment_ratio):
-        """Sets the comment_ratio of this ShowTaskDetailResponse.
+        r"""Sets the comment_ratio of this ShowTaskDetailResponse.
 
         注释比例
 
@@ -592,7 +592,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @property
     def duplicated_blocks(self):
-        """Gets the duplicated_blocks of this ShowTaskDetailResponse.
+        r"""Gets the duplicated_blocks of this ShowTaskDetailResponse.
 
         重复块
 
@@ -603,7 +603,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @duplicated_blocks.setter
     def duplicated_blocks(self, duplicated_blocks):
-        """Sets the duplicated_blocks of this ShowTaskDetailResponse.
+        r"""Sets the duplicated_blocks of this ShowTaskDetailResponse.
 
         重复块
 
@@ -614,7 +614,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @property
     def last_exec_time(self):
-        """Gets the last_exec_time of this ShowTaskDetailResponse.
+        r"""Gets the last_exec_time of this ShowTaskDetailResponse.
 
         上次执行时间
 
@@ -625,7 +625,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @last_exec_time.setter
     def last_exec_time(self, last_exec_time):
-        """Sets the last_exec_time of this ShowTaskDetailResponse.
+        r"""Sets the last_exec_time of this ShowTaskDetailResponse.
 
         上次执行时间
 
@@ -636,7 +636,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @property
     def check_type(self):
-        """Gets the check_type of this ShowTaskDetailResponse.
+        r"""Gets the check_type of this ShowTaskDetailResponse.
 
         检查类型
 
@@ -647,7 +647,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @check_type.setter
     def check_type(self, check_type):
-        """Sets the check_type of this ShowTaskDetailResponse.
+        r"""Sets the check_type of this ShowTaskDetailResponse.
 
         检查类型
 
@@ -658,7 +658,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this ShowTaskDetailResponse.
+        r"""Gets the created_at of this ShowTaskDetailResponse.
 
         创建时间
 
@@ -669,7 +669,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ShowTaskDetailResponse.
+        r"""Sets the created_at of this ShowTaskDetailResponse.
 
         创建时间
 
@@ -680,7 +680,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @property
     def cyclomatic_complexity_per_method(self):
-        """Gets the cyclomatic_complexity_per_method of this ShowTaskDetailResponse.
+        r"""Gets the cyclomatic_complexity_per_method of this ShowTaskDetailResponse.
 
         代码平均复杂度
 
@@ -691,7 +691,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @cyclomatic_complexity_per_method.setter
     def cyclomatic_complexity_per_method(self, cyclomatic_complexity_per_method):
-        """Sets the cyclomatic_complexity_per_method of this ShowTaskDetailResponse.
+        r"""Sets the cyclomatic_complexity_per_method of this ShowTaskDetailResponse.
 
         代码平均复杂度
 
@@ -702,7 +702,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @property
     def cyclomatic_complexity_per_file(self):
-        """Gets the cyclomatic_complexity_per_file of this ShowTaskDetailResponse.
+        r"""Gets the cyclomatic_complexity_per_file of this ShowTaskDetailResponse.
 
         代码平均复杂度(文件)
 
@@ -713,7 +713,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @cyclomatic_complexity_per_file.setter
     def cyclomatic_complexity_per_file(self, cyclomatic_complexity_per_file):
-        """Sets the cyclomatic_complexity_per_file of this ShowTaskDetailResponse.
+        r"""Sets the cyclomatic_complexity_per_file of this ShowTaskDetailResponse.
 
         代码平均复杂度(文件)
 
@@ -724,7 +724,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @property
     def critical_count(self):
-        """Gets the critical_count of this ShowTaskDetailResponse.
+        r"""Gets the critical_count of this ShowTaskDetailResponse.
 
         致命问题数
 
@@ -735,7 +735,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @critical_count.setter
     def critical_count(self, critical_count):
-        """Sets the critical_count of this ShowTaskDetailResponse.
+        r"""Sets the critical_count of this ShowTaskDetailResponse.
 
         致命问题数
 
@@ -746,7 +746,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @property
     def major_count(self):
-        """Gets the major_count of this ShowTaskDetailResponse.
+        r"""Gets the major_count of this ShowTaskDetailResponse.
 
         严重问题数
 
@@ -757,7 +757,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @major_count.setter
     def major_count(self, major_count):
-        """Sets the major_count of this ShowTaskDetailResponse.
+        r"""Sets the major_count of this ShowTaskDetailResponse.
 
         严重问题数
 
@@ -768,7 +768,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @property
     def minor_count(self):
-        """Gets the minor_count of this ShowTaskDetailResponse.
+        r"""Gets the minor_count of this ShowTaskDetailResponse.
 
         一般问题数
 
@@ -779,7 +779,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @minor_count.setter
     def minor_count(self, minor_count):
-        """Sets the minor_count of this ShowTaskDetailResponse.
+        r"""Sets the minor_count of this ShowTaskDetailResponse.
 
         一般问题数
 
@@ -790,7 +790,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @property
     def suggestion_count(self):
-        """Gets the suggestion_count of this ShowTaskDetailResponse.
+        r"""Gets the suggestion_count of this ShowTaskDetailResponse.
 
         提示问题数
 
@@ -801,7 +801,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @suggestion_count.setter
     def suggestion_count(self, suggestion_count):
-        """Sets the suggestion_count of this ShowTaskDetailResponse.
+        r"""Sets the suggestion_count of this ShowTaskDetailResponse.
 
         提示问题数
 
@@ -812,7 +812,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @property
     def is_access(self):
-        """Gets the is_access of this ShowTaskDetailResponse.
+        r"""Gets the is_access of this ShowTaskDetailResponse.
 
         门禁质量是否通过
 
@@ -823,7 +823,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @is_access.setter
     def is_access(self, is_access):
-        """Sets the is_access of this ShowTaskDetailResponse.
+        r"""Sets the is_access of this ShowTaskDetailResponse.
 
         门禁质量是否通过
 
@@ -834,7 +834,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @property
     def trigger_type(self):
-        """Gets the trigger_type of this ShowTaskDetailResponse.
+        r"""Gets the trigger_type of this ShowTaskDetailResponse.
 
         任务触发方式
 
@@ -845,7 +845,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @trigger_type.setter
     def trigger_type(self, trigger_type):
-        """Sets the trigger_type of this ShowTaskDetailResponse.
+        r"""Sets the trigger_type of this ShowTaskDetailResponse.
 
         任务触发方式
 
@@ -856,7 +856,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @property
     def file_duplication_ratio(self):
-        """Gets the file_duplication_ratio of this ShowTaskDetailResponse.
+        r"""Gets the file_duplication_ratio of this ShowTaskDetailResponse.
 
         文件重复率
 
@@ -867,7 +867,7 @@ class ShowTaskDetailResponse(SdkResponse):
 
     @file_duplication_ratio.setter
     def file_duplication_ratio(self, file_duplication_ratio):
-        """Sets the file_duplication_ratio of this ShowTaskDetailResponse.
+        r"""Sets the file_duplication_ratio of this ShowTaskDetailResponse.
 
         文件重复率
 

@@ -25,7 +25,7 @@ class UpdateServerAutoTerminateTimeRequestBody:
     }
 
     def __init__(self, auto_terminate_time=None):
-        """UpdateServerAutoTerminateTimeRequestBody
+        r"""UpdateServerAutoTerminateTimeRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateServerAutoTerminateTimeRequestBody:
 
     @property
     def auto_terminate_time(self):
-        """Gets the auto_terminate_time of this UpdateServerAutoTerminateTimeRequestBody.
+        r"""Gets the auto_terminate_time of this UpdateServerAutoTerminateTimeRequestBody.
 
         定时删除时间
 
@@ -53,7 +53,7 @@ class UpdateServerAutoTerminateTimeRequestBody:
 
     @auto_terminate_time.setter
     def auto_terminate_time(self, auto_terminate_time):
-        """Sets the auto_terminate_time of this UpdateServerAutoTerminateTimeRequestBody.
+        r"""Sets the auto_terminate_time of this UpdateServerAutoTerminateTimeRequestBody.
 
         定时删除时间
 

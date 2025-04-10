@@ -25,7 +25,7 @@ class AddApplication:
     }
 
     def __init__(self, app_name=None):
-        """AddApplication
+        r"""AddApplication
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AddApplication:
 
     @property
     def app_name(self):
-        """Gets the app_name of this AddApplication.
+        r"""Gets the app_name of this AddApplication.
 
         **参数说明**：资源空间名称。 **取值范围**：长度不超过64，允许中文、字母、数字、下划线（_）、连接符（-）等一些特殊字符的组合。
 
@@ -53,7 +53,7 @@ class AddApplication:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this AddApplication.
+        r"""Sets the app_name of this AddApplication.
 
         **参数说明**：资源空间名称。 **取值范围**：长度不超过64，允许中文、字母、数字、下划线（_）、连接符（-）等一些特殊字符的组合。
 

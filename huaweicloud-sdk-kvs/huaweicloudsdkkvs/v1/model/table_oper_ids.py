@@ -27,7 +27,7 @@ class TableOperIds:
     }
 
     def __init__(self, table_name=None, kv_oper_ids=None):
-        """TableOperIds
+        r"""TableOperIds
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class TableOperIds:
 
     @property
     def table_name(self):
-        """Gets the table_name of this TableOperIds.
+        r"""Gets the table_name of this TableOperIds.
 
         表名，仓内唯一。 - 长度：[3, 63] - 取值字符限制：[a-z0-9_-]+
 
@@ -59,7 +59,7 @@ class TableOperIds:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this TableOperIds.
+        r"""Sets the table_name of this TableOperIds.
 
         表名，仓内唯一。 - 长度：[3, 63] - 取值字符限制：[a-z0-9_-]+
 
@@ -70,7 +70,7 @@ class TableOperIds:
 
     @property
     def kv_oper_ids(self):
-        """Gets the kv_oper_ids of this TableOperIds.
+        r"""Gets the kv_oper_ids of this TableOperIds.
 
         :return: The kv_oper_ids of this TableOperIds.
         :rtype: :class:`huaweicloudsdkkvs.v1.KvOperIds`
@@ -79,7 +79,7 @@ class TableOperIds:
 
     @kv_oper_ids.setter
     def kv_oper_ids(self, kv_oper_ids):
-        """Sets the kv_oper_ids of this TableOperIds.
+        r"""Sets the kv_oper_ids of this TableOperIds.
 
         :param kv_oper_ids: The kv_oper_ids of this TableOperIds.
         :type kv_oper_ids: :class:`huaweicloudsdkkvs.v1.KvOperIds`

@@ -30,7 +30,7 @@ class ShowOptimizationTaskResultResponse(SdkResponse):
     }
 
     def __init__(self, status=None, task_data=None, result=None):
-        """ShowOptimizationTaskResultResponse
+        r"""ShowOptimizationTaskResultResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowOptimizationTaskResultResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowOptimizationTaskResultResponse.
+        r"""Gets the status of this ShowOptimizationTaskResultResponse.
 
         :return: The status of this ShowOptimizationTaskResultResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.AsyncTaskStatus`
@@ -67,7 +67,7 @@ class ShowOptimizationTaskResultResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowOptimizationTaskResultResponse.
+        r"""Sets the status of this ShowOptimizationTaskResultResponse.
 
         :param status: The status of this ShowOptimizationTaskResultResponse.
         :type status: :class:`huaweicloudsdkeihealth.v1.AsyncTaskStatus`
@@ -76,7 +76,7 @@ class ShowOptimizationTaskResultResponse(SdkResponse):
 
     @property
     def task_data(self):
-        """Gets the task_data of this ShowOptimizationTaskResultResponse.
+        r"""Gets the task_data of this ShowOptimizationTaskResultResponse.
 
         :return: The task_data of this ShowOptimizationTaskResultResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.OptimizationTaskData`
@@ -85,7 +85,7 @@ class ShowOptimizationTaskResultResponse(SdkResponse):
 
     @task_data.setter
     def task_data(self, task_data):
-        """Sets the task_data of this ShowOptimizationTaskResultResponse.
+        r"""Sets the task_data of this ShowOptimizationTaskResultResponse.
 
         :param task_data: The task_data of this ShowOptimizationTaskResultResponse.
         :type task_data: :class:`huaweicloudsdkeihealth.v1.OptimizationTaskData`
@@ -94,7 +94,7 @@ class ShowOptimizationTaskResultResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowOptimizationTaskResultResponse.
+        r"""Gets the result of this ShowOptimizationTaskResultResponse.
 
         :return: The result of this ShowOptimizationTaskResultResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.OptimizationResult`
@@ -103,7 +103,7 @@ class ShowOptimizationTaskResultResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowOptimizationTaskResultResponse.
+        r"""Sets the result of this ShowOptimizationTaskResultResponse.
 
         :param result: The result of this ShowOptimizationTaskResultResponse.
         :type result: :class:`huaweicloudsdkeihealth.v1.OptimizationResult`

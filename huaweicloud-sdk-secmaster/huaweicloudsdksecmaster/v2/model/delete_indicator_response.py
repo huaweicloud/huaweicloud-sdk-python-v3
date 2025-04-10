@@ -32,7 +32,7 @@ class DeleteIndicatorResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, data=None, x_request_id=None):
-        """DeleteIndicatorResponse
+        r"""DeleteIndicatorResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class DeleteIndicatorResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this DeleteIndicatorResponse.
+        r"""Gets the code of this DeleteIndicatorResponse.
 
         错误码
 
@@ -76,7 +76,7 @@ class DeleteIndicatorResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this DeleteIndicatorResponse.
+        r"""Sets the code of this DeleteIndicatorResponse.
 
         错误码
 
@@ -87,7 +87,7 @@ class DeleteIndicatorResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this DeleteIndicatorResponse.
+        r"""Gets the message of this DeleteIndicatorResponse.
 
         错误信息
 
@@ -98,7 +98,7 @@ class DeleteIndicatorResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this DeleteIndicatorResponse.
+        r"""Sets the message of this DeleteIndicatorResponse.
 
         错误信息
 
@@ -109,7 +109,7 @@ class DeleteIndicatorResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this DeleteIndicatorResponse.
+        r"""Gets the data of this DeleteIndicatorResponse.
 
         :return: The data of this DeleteIndicatorResponse.
         :rtype: :class:`huaweicloudsdksecmaster.v2.IndicatorBatchOperateResponse`
@@ -118,7 +118,7 @@ class DeleteIndicatorResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this DeleteIndicatorResponse.
+        r"""Sets the data of this DeleteIndicatorResponse.
 
         :param data: The data of this DeleteIndicatorResponse.
         :type data: :class:`huaweicloudsdksecmaster.v2.IndicatorBatchOperateResponse`
@@ -127,7 +127,7 @@ class DeleteIndicatorResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DeleteIndicatorResponse.
+        r"""Gets the x_request_id of this DeleteIndicatorResponse.
 
         :return: The x_request_id of this DeleteIndicatorResponse.
         :rtype: str
@@ -136,7 +136,7 @@ class DeleteIndicatorResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DeleteIndicatorResponse.
+        r"""Sets the x_request_id of this DeleteIndicatorResponse.
 
         :param x_request_id: The x_request_id of this DeleteIndicatorResponse.
         :type x_request_id: str

@@ -27,7 +27,7 @@ class GetHostListRequestBody:
     }
 
     def __init__(self, host_id_list=None, filter=None):
-        """GetHostListRequestBody
+        r"""GetHostListRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class GetHostListRequestBody:
 
     @property
     def host_id_list(self):
-        """Gets the host_id_list of this GetHostListRequestBody.
+        r"""Gets the host_id_list of this GetHostListRequestBody.
 
         主机ID列表。可以根据主机ID列表进行批量过滤
 
@@ -60,7 +60,7 @@ class GetHostListRequestBody:
 
     @host_id_list.setter
     def host_id_list(self, host_id_list):
-        """Sets the host_id_list of this GetHostListRequestBody.
+        r"""Sets the host_id_list of this GetHostListRequestBody.
 
         主机ID列表。可以根据主机ID列表进行批量过滤
 
@@ -71,7 +71,7 @@ class GetHostListRequestBody:
 
     @property
     def filter(self):
-        """Gets the filter of this GetHostListRequestBody.
+        r"""Gets the filter of this GetHostListRequestBody.
 
         :return: The filter of this GetHostListRequestBody.
         :rtype: :class:`huaweicloudsdklts.v2.GetHostListFilter`
@@ -80,7 +80,7 @@ class GetHostListRequestBody:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this GetHostListRequestBody.
+        r"""Sets the filter of this GetHostListRequestBody.
 
         :param filter: The filter of this GetHostListRequestBody.
         :type filter: :class:`huaweicloudsdklts.v2.GetHostListFilter`

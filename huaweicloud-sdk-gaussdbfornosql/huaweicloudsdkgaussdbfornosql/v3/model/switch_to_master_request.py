@@ -27,7 +27,7 @@ class SwitchToMasterRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """SwitchToMasterRequest
+        r"""SwitchToMasterRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class SwitchToMasterRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SwitchToMasterRequest.
+        r"""Gets the instance_id of this SwitchToMasterRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class SwitchToMasterRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SwitchToMasterRequest.
+        r"""Sets the instance_id of this SwitchToMasterRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class SwitchToMasterRequest:
 
     @property
     def body(self):
-        """Gets the body of this SwitchToMasterRequest.
+        r"""Gets the body of this SwitchToMasterRequest.
 
         :return: The body of this SwitchToMasterRequest.
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.SwitchToMasterDisasterRecoveryBody`
@@ -80,7 +80,7 @@ class SwitchToMasterRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SwitchToMasterRequest.
+        r"""Sets the body of this SwitchToMasterRequest.
 
         :param body: The body of this SwitchToMasterRequest.
         :type body: :class:`huaweicloudsdkgaussdbfornosql.v3.SwitchToMasterDisasterRecoveryBody`

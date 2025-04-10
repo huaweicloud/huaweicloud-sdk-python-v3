@@ -27,7 +27,7 @@ class ChardMode:
     }
 
     def __init__(self):
-        """ChardMode
+        r"""ChardMode
 
         The model defined in huaweicloud sdk
 

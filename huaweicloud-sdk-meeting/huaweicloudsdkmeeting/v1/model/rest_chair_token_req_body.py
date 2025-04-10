@@ -27,7 +27,7 @@ class RestChairTokenReqBody:
     }
 
     def __init__(self, apply_chair=None, chairman_pwd=None):
-        """RestChairTokenReqBody
+        r"""RestChairTokenReqBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RestChairTokenReqBody:
 
     @property
     def apply_chair(self):
-        """Gets the apply_chair of this RestChairTokenReqBody.
+        r"""Gets the apply_chair of this RestChairTokenReqBody.
 
         - 0: 释放主持人 - 1: 申请主持人
 
@@ -60,7 +60,7 @@ class RestChairTokenReqBody:
 
     @apply_chair.setter
     def apply_chair(self, apply_chair):
-        """Sets the apply_chair of this RestChairTokenReqBody.
+        r"""Sets the apply_chair of this RestChairTokenReqBody.
 
         - 0: 释放主持人 - 1: 申请主持人
 
@@ -71,7 +71,7 @@ class RestChairTokenReqBody:
 
     @property
     def chairman_pwd(self):
-        """Gets the chairman_pwd of this RestChairTokenReqBody.
+        r"""Gets the chairman_pwd of this RestChairTokenReqBody.
 
         当申请主持人时，携带主持人密码。
 
@@ -82,7 +82,7 @@ class RestChairTokenReqBody:
 
     @chairman_pwd.setter
     def chairman_pwd(self, chairman_pwd):
-        """Sets the chairman_pwd of this RestChairTokenReqBody.
+        r"""Sets the chairman_pwd of this RestChairTokenReqBody.
 
         当申请主持人时，携带主持人密码。
 

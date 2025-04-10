@@ -26,7 +26,7 @@ class StopSmartChatJobResponse(SdkResponse):
     }
 
     def __init__(self, x_request_id=None):
-        """StopSmartChatJobResponse
+        r"""StopSmartChatJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class StopSmartChatJobResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this StopSmartChatJobResponse.
+        r"""Gets the x_request_id of this StopSmartChatJobResponse.
 
         :return: The x_request_id of this StopSmartChatJobResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class StopSmartChatJobResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this StopSmartChatJobResponse.
+        r"""Sets the x_request_id of this StopSmartChatJobResponse.
 
         :param x_request_id: The x_request_id of this StopSmartChatJobResponse.
         :type x_request_id: str

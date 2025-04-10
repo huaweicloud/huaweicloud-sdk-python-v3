@@ -27,7 +27,7 @@ class AddDesktopsVolumesReq:
     }
 
     def __init__(self, desktop_type=None, desktop_volumes=None):
-        """AddDesktopsVolumesReq
+        r"""AddDesktopsVolumesReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AddDesktopsVolumesReq:
 
     @property
     def desktop_type(self):
-        """Gets the desktop_type of this AddDesktopsVolumesReq.
+        r"""Gets the desktop_type of this AddDesktopsVolumesReq.
 
         桌面类别  - DESKTOP：普通桌面。 - RENDER_DESKTOP：渲染桌面。
 
@@ -61,7 +61,7 @@ class AddDesktopsVolumesReq:
 
     @desktop_type.setter
     def desktop_type(self, desktop_type):
-        """Sets the desktop_type of this AddDesktopsVolumesReq.
+        r"""Sets the desktop_type of this AddDesktopsVolumesReq.
 
         桌面类别  - DESKTOP：普通桌面。 - RENDER_DESKTOP：渲染桌面。
 
@@ -72,7 +72,7 @@ class AddDesktopsVolumesReq:
 
     @property
     def desktop_volumes(self):
-        """Gets the desktop_volumes of this AddDesktopsVolumesReq.
+        r"""Gets the desktop_volumes of this AddDesktopsVolumesReq.
 
         新增磁盘参数。
 
@@ -83,7 +83,7 @@ class AddDesktopsVolumesReq:
 
     @desktop_volumes.setter
     def desktop_volumes(self, desktop_volumes):
-        """Sets the desktop_volumes of this AddDesktopsVolumesReq.
+        r"""Sets the desktop_volumes of this AddDesktopsVolumesReq.
 
         新增磁盘参数。
 

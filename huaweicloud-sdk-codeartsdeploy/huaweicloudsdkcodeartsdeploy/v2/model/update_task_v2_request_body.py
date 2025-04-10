@@ -31,7 +31,7 @@ class UpdateTaskV2RequestBody:
     }
 
     def __init__(self, id=None, deploy_system=None, template_id=None, operation_list=None):
-        """UpdateTaskV2RequestBody
+        r"""UpdateTaskV2RequestBody
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class UpdateTaskV2RequestBody:
 
     @property
     def id(self):
-        """Gets the id of this UpdateTaskV2RequestBody.
+        r"""Gets the id of this UpdateTaskV2RequestBody.
 
         部署任务id
 
@@ -75,7 +75,7 @@ class UpdateTaskV2RequestBody:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateTaskV2RequestBody.
+        r"""Sets the id of this UpdateTaskV2RequestBody.
 
         部署任务id
 
@@ -86,7 +86,7 @@ class UpdateTaskV2RequestBody:
 
     @property
     def deploy_system(self):
-        """Gets the deploy_system of this UpdateTaskV2RequestBody.
+        r"""Gets the deploy_system of this UpdateTaskV2RequestBody.
 
         部署系统，deployTemplate：部署模板
 
@@ -97,7 +97,7 @@ class UpdateTaskV2RequestBody:
 
     @deploy_system.setter
     def deploy_system(self, deploy_system):
-        """Sets the deploy_system of this UpdateTaskV2RequestBody.
+        r"""Sets the deploy_system of this UpdateTaskV2RequestBody.
 
         部署系统，deployTemplate：部署模板
 
@@ -108,7 +108,7 @@ class UpdateTaskV2RequestBody:
 
     @property
     def template_id(self):
-        """Gets the template_id of this UpdateTaskV2RequestBody.
+        r"""Gets the template_id of this UpdateTaskV2RequestBody.
 
         部署模板实例id
 
@@ -119,7 +119,7 @@ class UpdateTaskV2RequestBody:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this UpdateTaskV2RequestBody.
+        r"""Sets the template_id of this UpdateTaskV2RequestBody.
 
         部署模板实例id
 
@@ -130,7 +130,7 @@ class UpdateTaskV2RequestBody:
 
     @property
     def operation_list(self):
-        """Gets the operation_list of this UpdateTaskV2RequestBody.
+        r"""Gets the operation_list of this UpdateTaskV2RequestBody.
 
         部署编排列表信息
 
@@ -141,7 +141,7 @@ class UpdateTaskV2RequestBody:
 
     @operation_list.setter
     def operation_list(self, operation_list):
-        """Sets the operation_list of this UpdateTaskV2RequestBody.
+        r"""Sets the operation_list of this UpdateTaskV2RequestBody.
 
         部署编排列表信息
 

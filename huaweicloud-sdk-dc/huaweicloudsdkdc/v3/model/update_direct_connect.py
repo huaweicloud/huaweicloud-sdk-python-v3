@@ -35,7 +35,7 @@ class UpdateDirectConnect:
     }
 
     def __init__(self, name=None, description=None, bandwidth=None, peer_location=None, status=None, provider_status=None):
-        """UpdateDirectConnect
+        r"""UpdateDirectConnect
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class UpdateDirectConnect:
 
     @property
     def name(self):
-        """Gets the name of this UpdateDirectConnect.
+        r"""Gets the name of this UpdateDirectConnect.
 
         物理专线的名字
 
@@ -89,7 +89,7 @@ class UpdateDirectConnect:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateDirectConnect.
+        r"""Sets the name of this UpdateDirectConnect.
 
         物理专线的名字
 
@@ -100,7 +100,7 @@ class UpdateDirectConnect:
 
     @property
     def description(self):
-        """Gets the description of this UpdateDirectConnect.
+        r"""Gets the description of this UpdateDirectConnect.
 
         物理专线的描述信息
 
@@ -111,7 +111,7 @@ class UpdateDirectConnect:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateDirectConnect.
+        r"""Sets the description of this UpdateDirectConnect.
 
         物理专线的描述信息
 
@@ -122,7 +122,7 @@ class UpdateDirectConnect:
 
     @property
     def bandwidth(self):
-        """Gets the bandwidth of this UpdateDirectConnect.
+        r"""Gets the bandwidth of this UpdateDirectConnect.
 
         指定托管专线接入带宽,单位Mbps。[注：标准或运营专线的带宽不能降低！](tag:dt)
 
@@ -133,7 +133,7 @@ class UpdateDirectConnect:
 
     @bandwidth.setter
     def bandwidth(self, bandwidth):
-        """Sets the bandwidth of this UpdateDirectConnect.
+        r"""Sets the bandwidth of this UpdateDirectConnect.
 
         指定托管专线接入带宽,单位Mbps。[注：标准或运营专线的带宽不能降低！](tag:dt)
 
@@ -144,7 +144,7 @@ class UpdateDirectConnect:
 
     @property
     def peer_location(self):
-        """Gets the peer_location of this UpdateDirectConnect.
+        r"""Gets the peer_location of this UpdateDirectConnect.
 
         物理专线对端所在的物理位置，省/市/街道或IDC名字
 
@@ -155,7 +155,7 @@ class UpdateDirectConnect:
 
     @peer_location.setter
     def peer_location(self, peer_location):
-        """Sets the peer_location of this UpdateDirectConnect.
+        r"""Sets the peer_location of this UpdateDirectConnect.
 
         物理专线对端所在的物理位置，省/市/街道或IDC名字
 
@@ -166,7 +166,7 @@ class UpdateDirectConnect:
 
     @property
     def status(self):
-        """Gets the status of this UpdateDirectConnect.
+        r"""Gets the status of this UpdateDirectConnect.
 
         更新资源状态，合法值是：PENDING_PAY,APPLY
 
@@ -177,7 +177,7 @@ class UpdateDirectConnect:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateDirectConnect.
+        r"""Sets the status of this UpdateDirectConnect.
 
         更新资源状态，合法值是：PENDING_PAY,APPLY
 
@@ -188,7 +188,7 @@ class UpdateDirectConnect:
 
     @property
     def provider_status(self):
-        """Gets the provider_status of this UpdateDirectConnect.
+        r"""Gets the provider_status of this UpdateDirectConnect.
 
         更新运营商状态，合法值是：ACTIVE,DOWN
 
@@ -199,7 +199,7 @@ class UpdateDirectConnect:
 
     @provider_status.setter
     def provider_status(self, provider_status):
-        """Sets the provider_status of this UpdateDirectConnect.
+        r"""Sets the provider_status of this UpdateDirectConnect.
 
         更新运营商状态，合法值是：ACTIVE,DOWN
 

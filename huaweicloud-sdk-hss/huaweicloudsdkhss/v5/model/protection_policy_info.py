@@ -51,7 +51,7 @@ class ProtectionPolicyInfo:
     }
 
     def __init__(self, policy_id=None, policy_name=None, protection_mode=None, bait_protection_status=None, deploy_mode=None, protection_directory=None, protection_type=None, exclude_directory=None, runtime_detection_status=None, runtime_detection_directory=None, count_associated_server=None, operating_system=None, process_whitelist=None, default_policy=None):
-        """ProtectionPolicyInfo
+        r"""ProtectionPolicyInfo
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class ProtectionPolicyInfo:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this ProtectionPolicyInfo.
+        r"""Gets the policy_id of this ProtectionPolicyInfo.
 
         策略ID
 
@@ -145,7 +145,7 @@ class ProtectionPolicyInfo:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this ProtectionPolicyInfo.
+        r"""Sets the policy_id of this ProtectionPolicyInfo.
 
         策略ID
 
@@ -156,7 +156,7 @@ class ProtectionPolicyInfo:
 
     @property
     def policy_name(self):
-        """Gets the policy_name of this ProtectionPolicyInfo.
+        r"""Gets the policy_name of this ProtectionPolicyInfo.
 
         策略名称
 
@@ -167,7 +167,7 @@ class ProtectionPolicyInfo:
 
     @policy_name.setter
     def policy_name(self, policy_name):
-        """Sets the policy_name of this ProtectionPolicyInfo.
+        r"""Sets the policy_name of this ProtectionPolicyInfo.
 
         策略名称
 
@@ -178,7 +178,7 @@ class ProtectionPolicyInfo:
 
     @property
     def protection_mode(self):
-        """Gets the protection_mode of this ProtectionPolicyInfo.
+        r"""Gets the protection_mode of this ProtectionPolicyInfo.
 
         防护动作，包含如下2种。   - alarm_and_isolation ：告警并自动隔离。   - alarm_only ：仅告警。
 
@@ -189,7 +189,7 @@ class ProtectionPolicyInfo:
 
     @protection_mode.setter
     def protection_mode(self, protection_mode):
-        """Sets the protection_mode of this ProtectionPolicyInfo.
+        r"""Sets the protection_mode of this ProtectionPolicyInfo.
 
         防护动作，包含如下2种。   - alarm_and_isolation ：告警并自动隔离。   - alarm_only ：仅告警。
 
@@ -200,7 +200,7 @@ class ProtectionPolicyInfo:
 
     @property
     def bait_protection_status(self):
-        """Gets the bait_protection_status of this ProtectionPolicyInfo.
+        r"""Gets the bait_protection_status of this ProtectionPolicyInfo.
 
         是否开启诱饵防护，包含如下1种, 默认为开启防护诱饵防护。   - opened ：开启。   - closed ：关闭。
 
@@ -211,7 +211,7 @@ class ProtectionPolicyInfo:
 
     @bait_protection_status.setter
     def bait_protection_status(self, bait_protection_status):
-        """Sets the bait_protection_status of this ProtectionPolicyInfo.
+        r"""Sets the bait_protection_status of this ProtectionPolicyInfo.
 
         是否开启诱饵防护，包含如下1种, 默认为开启防护诱饵防护。   - opened ：开启。   - closed ：关闭。
 
@@ -222,7 +222,7 @@ class ProtectionPolicyInfo:
 
     @property
     def deploy_mode(self):
-        """Gets the deploy_mode of this ProtectionPolicyInfo.
+        r"""Gets the deploy_mode of this ProtectionPolicyInfo.
 
         是否开启动态诱饵防护，包含如下2种, 默认为关闭动态诱饵防护。   - opened ：开启。   - closed ：关闭。
 
@@ -233,7 +233,7 @@ class ProtectionPolicyInfo:
 
     @deploy_mode.setter
     def deploy_mode(self, deploy_mode):
-        """Sets the deploy_mode of this ProtectionPolicyInfo.
+        r"""Sets the deploy_mode of this ProtectionPolicyInfo.
 
         是否开启动态诱饵防护，包含如下2种, 默认为关闭动态诱饵防护。   - opened ：开启。   - closed ：关闭。
 
@@ -244,7 +244,7 @@ class ProtectionPolicyInfo:
 
     @property
     def protection_directory(self):
-        """Gets the protection_directory of this ProtectionPolicyInfo.
+        r"""Gets the protection_directory of this ProtectionPolicyInfo.
 
         防护目录
 
@@ -255,7 +255,7 @@ class ProtectionPolicyInfo:
 
     @protection_directory.setter
     def protection_directory(self, protection_directory):
-        """Sets the protection_directory of this ProtectionPolicyInfo.
+        r"""Sets the protection_directory of this ProtectionPolicyInfo.
 
         防护目录
 
@@ -266,7 +266,7 @@ class ProtectionPolicyInfo:
 
     @property
     def protection_type(self):
-        """Gets the protection_type of this ProtectionPolicyInfo.
+        r"""Gets the protection_type of this ProtectionPolicyInfo.
 
         防护文件类型，例如：docx，txt，avi
 
@@ -277,7 +277,7 @@ class ProtectionPolicyInfo:
 
     @protection_type.setter
     def protection_type(self, protection_type):
-        """Sets the protection_type of this ProtectionPolicyInfo.
+        r"""Sets the protection_type of this ProtectionPolicyInfo.
 
         防护文件类型，例如：docx，txt，avi
 
@@ -288,7 +288,7 @@ class ProtectionPolicyInfo:
 
     @property
     def exclude_directory(self):
-        """Gets the exclude_directory of this ProtectionPolicyInfo.
+        r"""Gets the exclude_directory of this ProtectionPolicyInfo.
 
         排除目录，选填
 
@@ -299,7 +299,7 @@ class ProtectionPolicyInfo:
 
     @exclude_directory.setter
     def exclude_directory(self, exclude_directory):
-        """Sets the exclude_directory of this ProtectionPolicyInfo.
+        r"""Sets the exclude_directory of this ProtectionPolicyInfo.
 
         排除目录，选填
 
@@ -310,7 +310,7 @@ class ProtectionPolicyInfo:
 
     @property
     def runtime_detection_status(self):
-        """Gets the runtime_detection_status of this ProtectionPolicyInfo.
+        r"""Gets the runtime_detection_status of this ProtectionPolicyInfo.
 
         是否运行时检测，包含如下2种，暂时只有关闭一种状态，为保留字段。   - opened ：开启。   - closed ：关闭。
 
@@ -321,7 +321,7 @@ class ProtectionPolicyInfo:
 
     @runtime_detection_status.setter
     def runtime_detection_status(self, runtime_detection_status):
-        """Sets the runtime_detection_status of this ProtectionPolicyInfo.
+        r"""Sets the runtime_detection_status of this ProtectionPolicyInfo.
 
         是否运行时检测，包含如下2种，暂时只有关闭一种状态，为保留字段。   - opened ：开启。   - closed ：关闭。
 
@@ -332,7 +332,7 @@ class ProtectionPolicyInfo:
 
     @property
     def runtime_detection_directory(self):
-        """Gets the runtime_detection_directory of this ProtectionPolicyInfo.
+        r"""Gets the runtime_detection_directory of this ProtectionPolicyInfo.
 
         运行时检测目录，现在为保留字段
 
@@ -343,7 +343,7 @@ class ProtectionPolicyInfo:
 
     @runtime_detection_directory.setter
     def runtime_detection_directory(self, runtime_detection_directory):
-        """Sets the runtime_detection_directory of this ProtectionPolicyInfo.
+        r"""Sets the runtime_detection_directory of this ProtectionPolicyInfo.
 
         运行时检测目录，现在为保留字段
 
@@ -354,7 +354,7 @@ class ProtectionPolicyInfo:
 
     @property
     def count_associated_server(self):
-        """Gets the count_associated_server of this ProtectionPolicyInfo.
+        r"""Gets the count_associated_server of this ProtectionPolicyInfo.
 
         关联server个数
 
@@ -365,7 +365,7 @@ class ProtectionPolicyInfo:
 
     @count_associated_server.setter
     def count_associated_server(self, count_associated_server):
-        """Sets the count_associated_server of this ProtectionPolicyInfo.
+        r"""Sets the count_associated_server of this ProtectionPolicyInfo.
 
         关联server个数
 
@@ -376,7 +376,7 @@ class ProtectionPolicyInfo:
 
     @property
     def operating_system(self):
-        """Gets the operating_system of this ProtectionPolicyInfo.
+        r"""Gets the operating_system of this ProtectionPolicyInfo.
 
         操作系统类型。 - Linux - Windows
 
@@ -387,7 +387,7 @@ class ProtectionPolicyInfo:
 
     @operating_system.setter
     def operating_system(self, operating_system):
-        """Sets the operating_system of this ProtectionPolicyInfo.
+        r"""Sets the operating_system of this ProtectionPolicyInfo.
 
         操作系统类型。 - Linux - Windows
 
@@ -398,7 +398,7 @@ class ProtectionPolicyInfo:
 
     @property
     def process_whitelist(self):
-        """Gets the process_whitelist of this ProtectionPolicyInfo.
+        r"""Gets the process_whitelist of this ProtectionPolicyInfo.
 
         进程白名单
 
@@ -409,7 +409,7 @@ class ProtectionPolicyInfo:
 
     @process_whitelist.setter
     def process_whitelist(self, process_whitelist):
-        """Sets the process_whitelist of this ProtectionPolicyInfo.
+        r"""Sets the process_whitelist of this ProtectionPolicyInfo.
 
         进程白名单
 
@@ -420,7 +420,7 @@ class ProtectionPolicyInfo:
 
     @property
     def default_policy(self):
-        """Gets the default_policy of this ProtectionPolicyInfo.
+        r"""Gets the default_policy of this ProtectionPolicyInfo.
 
         是否为默认策略，包含如下2种。   - 0 ：非默认策略。   - 1 ：默认策略
 
@@ -431,7 +431,7 @@ class ProtectionPolicyInfo:
 
     @default_policy.setter
     def default_policy(self, default_policy):
-        """Sets the default_policy of this ProtectionPolicyInfo.
+        r"""Sets the default_policy of this ProtectionPolicyInfo.
 
         是否为默认策略，包含如下2种。   - 0 ：非默认策略。   - 1 ：默认策略
 

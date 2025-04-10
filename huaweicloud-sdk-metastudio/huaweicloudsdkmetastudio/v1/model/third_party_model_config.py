@@ -39,7 +39,7 @@ class ThirdPartyModelConfig:
     }
 
     def __init__(self, app_id=None, app_key=None, llm_url=None, is_stream=None, chat_rounds=None, sis_region=None, sis_project_id=None, enable_hot_words=None):
-        """ThirdPartyModelConfig
+        r"""ThirdPartyModelConfig
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ThirdPartyModelConfig:
 
     @property
     def app_id(self):
-        """Gets the app_id of this ThirdPartyModelConfig.
+        r"""Gets the app_id of this ThirdPartyModelConfig.
 
         第三方语言模型应用ID。
 
@@ -103,7 +103,7 @@ class ThirdPartyModelConfig:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ThirdPartyModelConfig.
+        r"""Sets the app_id of this ThirdPartyModelConfig.
 
         第三方语言模型应用ID。
 
@@ -114,7 +114,7 @@ class ThirdPartyModelConfig:
 
     @property
     def app_key(self):
-        """Gets the app_key of this ThirdPartyModelConfig.
+        r"""Gets the app_key of this ThirdPartyModelConfig.
 
         第三方语言模型应用密钥。
 
@@ -125,7 +125,7 @@ class ThirdPartyModelConfig:
 
     @app_key.setter
     def app_key(self, app_key):
-        """Sets the app_key of this ThirdPartyModelConfig.
+        r"""Sets the app_key of this ThirdPartyModelConfig.
 
         第三方语言模型应用密钥。
 
@@ -136,7 +136,7 @@ class ThirdPartyModelConfig:
 
     @property
     def llm_url(self):
-        """Gets the llm_url of this ThirdPartyModelConfig.
+        r"""Gets the llm_url of this ThirdPartyModelConfig.
 
         第三方语言模型地址。
 
@@ -147,7 +147,7 @@ class ThirdPartyModelConfig:
 
     @llm_url.setter
     def llm_url(self, llm_url):
-        """Sets the llm_url of this ThirdPartyModelConfig.
+        r"""Sets the llm_url of this ThirdPartyModelConfig.
 
         第三方语言模型地址。
 
@@ -158,7 +158,7 @@ class ThirdPartyModelConfig:
 
     @property
     def is_stream(self):
-        """Gets the is_stream of this ThirdPartyModelConfig.
+        r"""Gets the is_stream of this ThirdPartyModelConfig.
 
         是否采用流式响应。
 
@@ -169,7 +169,7 @@ class ThirdPartyModelConfig:
 
     @is_stream.setter
     def is_stream(self, is_stream):
-        """Sets the is_stream of this ThirdPartyModelConfig.
+        r"""Sets the is_stream of this ThirdPartyModelConfig.
 
         是否采用流式响应。
 
@@ -180,7 +180,7 @@ class ThirdPartyModelConfig:
 
     @property
     def chat_rounds(self):
-        """Gets the chat_rounds of this ThirdPartyModelConfig.
+        r"""Gets the chat_rounds of this ThirdPartyModelConfig.
 
         支持的多轮对话数量，取值大于1时，请求第三方语言模型时将携带历史对话信息。
 
@@ -191,7 +191,7 @@ class ThirdPartyModelConfig:
 
     @chat_rounds.setter
     def chat_rounds(self, chat_rounds):
-        """Sets the chat_rounds of this ThirdPartyModelConfig.
+        r"""Sets the chat_rounds of this ThirdPartyModelConfig.
 
         支持的多轮对话数量，取值大于1时，请求第三方语言模型时将携带历史对话信息。
 
@@ -202,7 +202,7 @@ class ThirdPartyModelConfig:
 
     @property
     def sis_region(self):
-        """Gets the sis_region of this ThirdPartyModelConfig.
+        r"""Gets the sis_region of this ThirdPartyModelConfig.
 
         SIS所在区域
 
@@ -213,7 +213,7 @@ class ThirdPartyModelConfig:
 
     @sis_region.setter
     def sis_region(self, sis_region):
-        """Sets the sis_region of this ThirdPartyModelConfig.
+        r"""Sets the sis_region of this ThirdPartyModelConfig.
 
         SIS所在区域
 
@@ -224,7 +224,7 @@ class ThirdPartyModelConfig:
 
     @property
     def sis_project_id(self):
-        """Gets the sis_project_id of this ThirdPartyModelConfig.
+        r"""Gets the sis_project_id of this ThirdPartyModelConfig.
 
         SIS所在区域的projectId
 
@@ -235,7 +235,7 @@ class ThirdPartyModelConfig:
 
     @sis_project_id.setter
     def sis_project_id(self, sis_project_id):
-        """Sets the sis_project_id of this ThirdPartyModelConfig.
+        r"""Sets the sis_project_id of this ThirdPartyModelConfig.
 
         SIS所在区域的projectId
 
@@ -246,7 +246,7 @@ class ThirdPartyModelConfig:
 
     @property
     def enable_hot_words(self):
-        """Gets the enable_hot_words of this ThirdPartyModelConfig.
+        r"""Gets the enable_hot_words of this ThirdPartyModelConfig.
 
         是否开启热词
 
@@ -257,7 +257,7 @@ class ThirdPartyModelConfig:
 
     @enable_hot_words.setter
     def enable_hot_words(self, enable_hot_words):
-        """Sets the enable_hot_words of this ThirdPartyModelConfig.
+        r"""Sets the enable_hot_words of this ThirdPartyModelConfig.
 
         是否开启热词
 

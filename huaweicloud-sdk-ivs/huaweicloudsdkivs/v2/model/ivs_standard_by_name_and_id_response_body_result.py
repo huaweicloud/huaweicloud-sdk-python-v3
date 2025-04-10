@@ -29,7 +29,7 @@ class IvsStandardByNameAndIdResponseBodyResult:
     }
 
     def __init__(self, service_name=None, count=None, resp_data=None):
-        """IvsStandardByNameAndIdResponseBodyResult
+        r"""IvsStandardByNameAndIdResponseBodyResult
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class IvsStandardByNameAndIdResponseBodyResult:
 
     @property
     def service_name(self):
-        """Gets the service_name of this IvsStandardByNameAndIdResponseBodyResult.
+        r"""Gets the service_name of this IvsStandardByNameAndIdResponseBodyResult.
 
         子服务名称。
 
@@ -65,7 +65,7 @@ class IvsStandardByNameAndIdResponseBodyResult:
 
     @service_name.setter
     def service_name(self, service_name):
-        """Sets the service_name of this IvsStandardByNameAndIdResponseBodyResult.
+        r"""Sets the service_name of this IvsStandardByNameAndIdResponseBodyResult.
 
         子服务名称。
 
@@ -76,7 +76,7 @@ class IvsStandardByNameAndIdResponseBodyResult:
 
     @property
     def count(self):
-        """Gets the count of this IvsStandardByNameAndIdResponseBodyResult.
+        r"""Gets the count of this IvsStandardByNameAndIdResponseBodyResult.
 
         成功的结果数量，与resp_data字段对应。
 
@@ -87,7 +87,7 @@ class IvsStandardByNameAndIdResponseBodyResult:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this IvsStandardByNameAndIdResponseBodyResult.
+        r"""Sets the count of this IvsStandardByNameAndIdResponseBodyResult.
 
         成功的结果数量，与resp_data字段对应。
 
@@ -98,7 +98,7 @@ class IvsStandardByNameAndIdResponseBodyResult:
 
     @property
     def resp_data(self):
-        """Gets the resp_data of this IvsStandardByNameAndIdResponseBodyResult.
+        r"""Gets the resp_data of this IvsStandardByNameAndIdResponseBodyResult.
 
         请求列表，用于支持批量调用。目前暂时只支持单个数据查询。
 
@@ -109,7 +109,7 @@ class IvsStandardByNameAndIdResponseBodyResult:
 
     @resp_data.setter
     def resp_data(self, resp_data):
-        """Sets the resp_data of this IvsStandardByNameAndIdResponseBodyResult.
+        r"""Sets the resp_data of this IvsStandardByNameAndIdResponseBodyResult.
 
         请求列表，用于支持批量调用。目前暂时只支持单个数据查询。
 

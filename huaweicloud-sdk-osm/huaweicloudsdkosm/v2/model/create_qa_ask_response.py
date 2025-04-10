@@ -38,7 +38,7 @@ class CreateQaAskResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_msg=None, lang_result=None, reply_type=None, session_id=None, request_id=None, answers_detail=None):
-        """CreateQaAskResponse
+        r"""CreateQaAskResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class CreateQaAskResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this CreateQaAskResponse.
+        r"""Gets the error_code of this CreateQaAskResponse.
 
         错误码
 
@@ -97,7 +97,7 @@ class CreateQaAskResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this CreateQaAskResponse.
+        r"""Sets the error_code of this CreateQaAskResponse.
 
         错误码
 
@@ -108,7 +108,7 @@ class CreateQaAskResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this CreateQaAskResponse.
+        r"""Gets the error_msg of this CreateQaAskResponse.
 
         错误描述
 
@@ -119,7 +119,7 @@ class CreateQaAskResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this CreateQaAskResponse.
+        r"""Sets the error_msg of this CreateQaAskResponse.
 
         错误描述
 
@@ -130,7 +130,7 @@ class CreateQaAskResponse(SdkResponse):
 
     @property
     def lang_result(self):
-        """Gets the lang_result of this CreateQaAskResponse.
+        r"""Gets the lang_result of this CreateQaAskResponse.
 
         :return: The lang_result of this CreateQaAskResponse.
         :rtype: :class:`huaweicloudsdkosm.v2.LangResult`
@@ -139,7 +139,7 @@ class CreateQaAskResponse(SdkResponse):
 
     @lang_result.setter
     def lang_result(self, lang_result):
-        """Sets the lang_result of this CreateQaAskResponse.
+        r"""Sets the lang_result of this CreateQaAskResponse.
 
         :param lang_result: The lang_result of this CreateQaAskResponse.
         :type lang_result: :class:`huaweicloudsdkosm.v2.LangResult`
@@ -148,7 +148,7 @@ class CreateQaAskResponse(SdkResponse):
 
     @property
     def reply_type(self):
-        """Gets the reply_type of this CreateQaAskResponse.
+        r"""Gets the reply_type of this CreateQaAskResponse.
 
         - QA_BOT:  - TASK_BOT:  - CHAT_BOT:  - GRAPH_BOT:  - HW_CLOUD:  
 
@@ -159,7 +159,7 @@ class CreateQaAskResponse(SdkResponse):
 
     @reply_type.setter
     def reply_type(self, reply_type):
-        """Sets the reply_type of this CreateQaAskResponse.
+        r"""Sets the reply_type of this CreateQaAskResponse.
 
         - QA_BOT:  - TASK_BOT:  - CHAT_BOT:  - GRAPH_BOT:  - HW_CLOUD:  
 
@@ -170,7 +170,7 @@ class CreateQaAskResponse(SdkResponse):
 
     @property
     def session_id(self):
-        """Gets the session_id of this CreateQaAskResponse.
+        r"""Gets the session_id of this CreateQaAskResponse.
 
         会话ID
 
@@ -181,7 +181,7 @@ class CreateQaAskResponse(SdkResponse):
 
     @session_id.setter
     def session_id(self, session_id):
-        """Sets the session_id of this CreateQaAskResponse.
+        r"""Sets the session_id of this CreateQaAskResponse.
 
         会话ID
 
@@ -192,7 +192,7 @@ class CreateQaAskResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateQaAskResponse.
+        r"""Gets the request_id of this CreateQaAskResponse.
 
         请求ID
 
@@ -203,7 +203,7 @@ class CreateQaAskResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateQaAskResponse.
+        r"""Sets the request_id of this CreateQaAskResponse.
 
         请求ID
 
@@ -214,7 +214,7 @@ class CreateQaAskResponse(SdkResponse):
 
     @property
     def answers_detail(self):
-        """Gets the answers_detail of this CreateQaAskResponse.
+        r"""Gets the answers_detail of this CreateQaAskResponse.
 
         :return: The answers_detail of this CreateQaAskResponse.
         :rtype: :class:`huaweicloudsdkosm.v2.AnswerDetail`
@@ -223,7 +223,7 @@ class CreateQaAskResponse(SdkResponse):
 
     @answers_detail.setter
     def answers_detail(self, answers_detail):
-        """Sets the answers_detail of this CreateQaAskResponse.
+        r"""Sets the answers_detail of this CreateQaAskResponse.
 
         :param answers_detail: The answers_detail of this CreateQaAskResponse.
         :type answers_detail: :class:`huaweicloudsdkosm.v2.AnswerDetail`

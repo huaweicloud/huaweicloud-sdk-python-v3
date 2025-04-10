@@ -43,7 +43,7 @@ class ListJobsRespJobList:
     }
 
     def __init__(self, job_id=None, status=None, job_type=None, job_name=None, related_graph=None, begin_time=None, end_time=None, job_detail=None, fail_reason=None, job_progress=None):
-        """ListJobsRespJobList
+        r"""ListJobsRespJobList
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class ListJobsRespJobList:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ListJobsRespJobList.
+        r"""Gets the job_id of this ListJobsRespJobList.
 
         任务ID。
 
@@ -117,7 +117,7 @@ class ListJobsRespJobList:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ListJobsRespJobList.
+        r"""Sets the job_id of this ListJobsRespJobList.
 
         任务ID。
 
@@ -128,7 +128,7 @@ class ListJobsRespJobList:
 
     @property
     def status(self):
-        """Gets the status of this ListJobsRespJobList.
+        r"""Gets the status of this ListJobsRespJobList.
 
         任务状态。  - pending:等待中 - running:运行中 - success:成功 - failed:失败
 
@@ -139,7 +139,7 @@ class ListJobsRespJobList:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListJobsRespJobList.
+        r"""Sets the status of this ListJobsRespJobList.
 
         任务状态。  - pending:等待中 - running:运行中 - success:成功 - failed:失败
 
@@ -150,7 +150,7 @@ class ListJobsRespJobList:
 
     @property
     def job_type(self):
-        """Gets the job_type of this ListJobsRespJobList.
+        r"""Gets the job_type of this ListJobsRespJobList.
 
         任务类型。
 
@@ -161,7 +161,7 @@ class ListJobsRespJobList:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this ListJobsRespJobList.
+        r"""Sets the job_type of this ListJobsRespJobList.
 
         任务类型。
 
@@ -172,7 +172,7 @@ class ListJobsRespJobList:
 
     @property
     def job_name(self):
-        """Gets the job_name of this ListJobsRespJobList.
+        r"""Gets the job_name of this ListJobsRespJobList.
 
         任务名称。
 
@@ -183,7 +183,7 @@ class ListJobsRespJobList:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this ListJobsRespJobList.
+        r"""Sets the job_name of this ListJobsRespJobList.
 
         任务名称。
 
@@ -194,7 +194,7 @@ class ListJobsRespJobList:
 
     @property
     def related_graph(self):
-        """Gets the related_graph of this ListJobsRespJobList.
+        r"""Gets the related_graph of this ListJobsRespJobList.
 
         关联图名称。
 
@@ -205,7 +205,7 @@ class ListJobsRespJobList:
 
     @related_graph.setter
     def related_graph(self, related_graph):
-        """Sets the related_graph of this ListJobsRespJobList.
+        r"""Sets the related_graph of this ListJobsRespJobList.
 
         关联图名称。
 
@@ -216,7 +216,7 @@ class ListJobsRespJobList:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ListJobsRespJobList.
+        r"""Gets the begin_time of this ListJobsRespJobList.
 
         任务开始时间，格式为UTC,\"yyyy-MM-dd'T'HH:mm:ss\"。
 
@@ -227,7 +227,7 @@ class ListJobsRespJobList:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ListJobsRespJobList.
+        r"""Sets the begin_time of this ListJobsRespJobList.
 
         任务开始时间，格式为UTC,\"yyyy-MM-dd'T'HH:mm:ss\"。
 
@@ -238,7 +238,7 @@ class ListJobsRespJobList:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListJobsRespJobList.
+        r"""Gets the end_time of this ListJobsRespJobList.
 
         任务结束时间，格式为UTC,\"yyyy-MM-dd'T'HH:mm:ss\"。
 
@@ -249,7 +249,7 @@ class ListJobsRespJobList:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListJobsRespJobList.
+        r"""Sets the end_time of this ListJobsRespJobList.
 
         任务结束时间，格式为UTC,\"yyyy-MM-dd'T'HH:mm:ss\"。
 
@@ -260,7 +260,7 @@ class ListJobsRespJobList:
 
     @property
     def job_detail(self):
-        """Gets the job_detail of this ListJobsRespJobList.
+        r"""Gets the job_detail of this ListJobsRespJobList.
 
         :return: The job_detail of this ListJobsRespJobList.
         :rtype: :class:`huaweicloudsdkges.v2.ShowJobRespJobDetail`
@@ -269,7 +269,7 @@ class ListJobsRespJobList:
 
     @job_detail.setter
     def job_detail(self, job_detail):
-        """Sets the job_detail of this ListJobsRespJobList.
+        r"""Sets the job_detail of this ListJobsRespJobList.
 
         :param job_detail: The job_detail of this ListJobsRespJobList.
         :type job_detail: :class:`huaweicloudsdkges.v2.ShowJobRespJobDetail`
@@ -278,7 +278,7 @@ class ListJobsRespJobList:
 
     @property
     def fail_reason(self):
-        """Gets the fail_reason of this ListJobsRespJobList.
+        r"""Gets the fail_reason of this ListJobsRespJobList.
 
         任务失败原因。
 
@@ -289,7 +289,7 @@ class ListJobsRespJobList:
 
     @fail_reason.setter
     def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this ListJobsRespJobList.
+        r"""Sets the fail_reason of this ListJobsRespJobList.
 
         任务失败原因。
 
@@ -300,7 +300,7 @@ class ListJobsRespJobList:
 
     @property
     def job_progress(self):
-        """Gets the job_progress of this ListJobsRespJobList.
+        r"""Gets the job_progress of this ListJobsRespJobList.
 
         任务执行进度，预留字段，暂未使用。
 
@@ -311,7 +311,7 @@ class ListJobsRespJobList:
 
     @job_progress.setter
     def job_progress(self, job_progress):
-        """Sets the job_progress of this ListJobsRespJobList.
+        r"""Sets the job_progress of this ListJobsRespJobList.
 
         任务执行进度，预留字段，暂未使用。
 

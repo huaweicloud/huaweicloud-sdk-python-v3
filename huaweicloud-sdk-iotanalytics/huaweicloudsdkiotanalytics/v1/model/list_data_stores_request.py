@@ -33,7 +33,7 @@ class ListDataStoresRequest:
     }
 
     def __init__(self, group_id=None, data_store_id=None, name=None, offset=None, limit=None):
-        """ListDataStoresRequest
+        r"""ListDataStoresRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListDataStoresRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ListDataStoresRequest.
+        r"""Gets the group_id of this ListDataStoresRequest.
 
         存储组 ID
 
@@ -82,7 +82,7 @@ class ListDataStoresRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ListDataStoresRequest.
+        r"""Sets the group_id of this ListDataStoresRequest.
 
         存储组 ID
 
@@ -93,7 +93,7 @@ class ListDataStoresRequest:
 
     @property
     def data_store_id(self):
-        """Gets the data_store_id of this ListDataStoresRequest.
+        r"""Gets the data_store_id of this ListDataStoresRequest.
 
         存储 ID
 
@@ -104,7 +104,7 @@ class ListDataStoresRequest:
 
     @data_store_id.setter
     def data_store_id(self, data_store_id):
-        """Sets the data_store_id of this ListDataStoresRequest.
+        r"""Sets the data_store_id of this ListDataStoresRequest.
 
         存储 ID
 
@@ -115,7 +115,7 @@ class ListDataStoresRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListDataStoresRequest.
+        r"""Gets the name of this ListDataStoresRequest.
 
         存储名称
 
@@ -126,7 +126,7 @@ class ListDataStoresRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListDataStoresRequest.
+        r"""Sets the name of this ListDataStoresRequest.
 
         存储名称
 
@@ -137,7 +137,7 @@ class ListDataStoresRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDataStoresRequest.
+        r"""Gets the offset of this ListDataStoresRequest.
 
         页码
 
@@ -148,7 +148,7 @@ class ListDataStoresRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDataStoresRequest.
+        r"""Sets the offset of this ListDataStoresRequest.
 
         页码
 
@@ -159,7 +159,7 @@ class ListDataStoresRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDataStoresRequest.
+        r"""Gets the limit of this ListDataStoresRequest.
 
         返回条数限制
 
@@ -170,7 +170,7 @@ class ListDataStoresRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDataStoresRequest.
+        r"""Sets the limit of this ListDataStoresRequest.
 
         返回条数限制
 

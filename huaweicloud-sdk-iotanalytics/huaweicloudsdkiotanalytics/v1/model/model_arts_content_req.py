@@ -35,7 +35,7 @@ class ModelArtsContentReq:
     }
 
     def __init__(self, service_name=None, access_address=None, verify_body=None, ak=None, sk=None, project_id=None):
-        """ModelArtsContentReq
+        r"""ModelArtsContentReq
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ModelArtsContentReq:
 
     @property
     def service_name(self):
-        """Gets the service_name of this ModelArtsContentReq.
+        r"""Gets the service_name of this ModelArtsContentReq.
 
         服务名称
 
@@ -83,7 +83,7 @@ class ModelArtsContentReq:
 
     @service_name.setter
     def service_name(self, service_name):
-        """Sets the service_name of this ModelArtsContentReq.
+        r"""Sets the service_name of this ModelArtsContentReq.
 
         服务名称
 
@@ -94,7 +94,7 @@ class ModelArtsContentReq:
 
     @property
     def access_address(self):
-        """Gets the access_address of this ModelArtsContentReq.
+        r"""Gets the access_address of this ModelArtsContentReq.
 
         访问地址
 
@@ -105,7 +105,7 @@ class ModelArtsContentReq:
 
     @access_address.setter
     def access_address(self, access_address):
-        """Sets the access_address of this ModelArtsContentReq.
+        r"""Sets the access_address of this ModelArtsContentReq.
 
         访问地址
 
@@ -116,7 +116,7 @@ class ModelArtsContentReq:
 
     @property
     def verify_body(self):
-        """Gets the verify_body of this ModelArtsContentReq.
+        r"""Gets the verify_body of this ModelArtsContentReq.
 
         校验参数
 
@@ -127,7 +127,7 @@ class ModelArtsContentReq:
 
     @verify_body.setter
     def verify_body(self, verify_body):
-        """Sets the verify_body of this ModelArtsContentReq.
+        r"""Sets the verify_body of this ModelArtsContentReq.
 
         校验参数
 
@@ -138,7 +138,7 @@ class ModelArtsContentReq:
 
     @property
     def ak(self):
-        """Gets the ak of this ModelArtsContentReq.
+        r"""Gets the ak of this ModelArtsContentReq.
 
         租户的AK
 
@@ -149,7 +149,7 @@ class ModelArtsContentReq:
 
     @ak.setter
     def ak(self, ak):
-        """Sets the ak of this ModelArtsContentReq.
+        r"""Sets the ak of this ModelArtsContentReq.
 
         租户的AK
 
@@ -160,7 +160,7 @@ class ModelArtsContentReq:
 
     @property
     def sk(self):
-        """Gets the sk of this ModelArtsContentReq.
+        r"""Gets the sk of this ModelArtsContentReq.
 
         租户的SK
 
@@ -171,7 +171,7 @@ class ModelArtsContentReq:
 
     @sk.setter
     def sk(self, sk):
-        """Sets the sk of this ModelArtsContentReq.
+        r"""Sets the sk of this ModelArtsContentReq.
 
         租户的SK
 
@@ -182,7 +182,7 @@ class ModelArtsContentReq:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ModelArtsContentReq.
+        r"""Gets the project_id of this ModelArtsContentReq.
 
         项目id
 
@@ -193,7 +193,7 @@ class ModelArtsContentReq:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ModelArtsContentReq.
+        r"""Sets the project_id of this ModelArtsContentReq.
 
         项目id
 

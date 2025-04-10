@@ -29,7 +29,7 @@ class JobResourceInfo:
     }
 
     def __init__(self, name=None, type=None, replace=None):
-        """JobResourceInfo
+        r"""JobResourceInfo
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class JobResourceInfo:
 
     @property
     def name(self):
-        """Gets the name of this JobResourceInfo.
+        r"""Gets the name of this JobResourceInfo.
 
         资源名
 
@@ -66,7 +66,7 @@ class JobResourceInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this JobResourceInfo.
+        r"""Sets the name of this JobResourceInfo.
 
         资源名
 
@@ -77,7 +77,7 @@ class JobResourceInfo:
 
     @property
     def type(self):
-        """Gets the type of this JobResourceInfo.
+        r"""Gets the type of this JobResourceInfo.
 
         资源类型
 
@@ -88,7 +88,7 @@ class JobResourceInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this JobResourceInfo.
+        r"""Sets the type of this JobResourceInfo.
 
         资源类型
 
@@ -99,7 +99,7 @@ class JobResourceInfo:
 
     @property
     def replace(self):
-        """Gets the replace of this JobResourceInfo.
+        r"""Gets the replace of this JobResourceInfo.
 
         替换后的资源名
 
@@ -110,7 +110,7 @@ class JobResourceInfo:
 
     @replace.setter
     def replace(self, replace):
-        """Sets the replace of this JobResourceInfo.
+        r"""Sets the replace of this JobResourceInfo.
 
         替换后的资源名
 

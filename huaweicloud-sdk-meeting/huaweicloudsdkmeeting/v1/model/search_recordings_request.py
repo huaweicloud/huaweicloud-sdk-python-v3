@@ -43,7 +43,7 @@ class SearchRecordingsRequest:
     }
 
     def __init__(self, user_uuid=None, offset=None, limit=None, query_all=None, search_key=None, start_date=None, end_date=None, sort_type=None, x_authorization_type=None, x_site_id=None):
-        """SearchRecordingsRequest
+        r"""SearchRecordingsRequest
 
         The model defined in huaweicloud sdk
 
@@ -104,7 +104,7 @@ class SearchRecordingsRequest:
 
     @property
     def user_uuid(self):
-        """Gets the user_uuid of this SearchRecordingsRequest.
+        r"""Gets the user_uuid of this SearchRecordingsRequest.
 
         用户的UUID。 > 仅管理员有权限查询本企业其他用户的会议录制；普通帐号该字段无效，只能查询自己的。
 
@@ -115,7 +115,7 @@ class SearchRecordingsRequest:
 
     @user_uuid.setter
     def user_uuid(self, user_uuid):
-        """Sets the user_uuid of this SearchRecordingsRequest.
+        r"""Sets the user_uuid of this SearchRecordingsRequest.
 
         用户的UUID。 > 仅管理员有权限查询本企业其他用户的会议录制；普通帐号该字段无效，只能查询自己的。
 
@@ -126,7 +126,7 @@ class SearchRecordingsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this SearchRecordingsRequest.
+        r"""Gets the offset of this SearchRecordingsRequest.
 
         指定返回的页面索引。该值必须大于0。 default: 0
 
@@ -137,7 +137,7 @@ class SearchRecordingsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchRecordingsRequest.
+        r"""Sets the offset of this SearchRecordingsRequest.
 
         指定返回的页面索引。该值必须大于0。 default: 0
 
@@ -148,7 +148,7 @@ class SearchRecordingsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this SearchRecordingsRequest.
+        r"""Gets the limit of this SearchRecordingsRequest.
 
         查询数量。默认是20，最大500条。
 
@@ -159,7 +159,7 @@ class SearchRecordingsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchRecordingsRequest.
+        r"""Sets the limit of this SearchRecordingsRequest.
 
         查询数量。默认是20，最大500条。
 
@@ -170,7 +170,7 @@ class SearchRecordingsRequest:
 
     @property
     def query_all(self):
-        """Gets the query_all of this SearchRecordingsRequest.
+        r"""Gets the query_all of this SearchRecordingsRequest.
 
         是否查询企业下所有用户的历史会议。 * true：查询所有用户的会议录制 * false：仅查询管理员自己的会议录制 > 仅对企业管理员生效。
 
@@ -181,7 +181,7 @@ class SearchRecordingsRequest:
 
     @query_all.setter
     def query_all(self, query_all):
-        """Sets the query_all of this SearchRecordingsRequest.
+        r"""Sets the query_all of this SearchRecordingsRequest.
 
         是否查询企业下所有用户的历史会议。 * true：查询所有用户的会议录制 * false：仅查询管理员自己的会议录制 > 仅对企业管理员生效。
 
@@ -192,7 +192,7 @@ class SearchRecordingsRequest:
 
     @property
     def search_key(self):
-        """Gets the search_key of this SearchRecordingsRequest.
+        r"""Gets the search_key of this SearchRecordingsRequest.
 
         查询条件。会议主题、会议预约人和会议ID等可作为搜索内容。
 
@@ -203,7 +203,7 @@ class SearchRecordingsRequest:
 
     @search_key.setter
     def search_key(self, search_key):
-        """Sets the search_key of this SearchRecordingsRequest.
+        r"""Sets the search_key of this SearchRecordingsRequest.
 
         查询条件。会议主题、会议预约人和会议ID等可作为搜索内容。
 
@@ -214,7 +214,7 @@ class SearchRecordingsRequest:
 
     @property
     def start_date(self):
-        """Gets the start_date of this SearchRecordingsRequest.
+        r"""Gets the start_date of this SearchRecordingsRequest.
 
         查询的起始时间戳（单位毫秒）。
 
@@ -225,7 +225,7 @@ class SearchRecordingsRequest:
 
     @start_date.setter
     def start_date(self, start_date):
-        """Sets the start_date of this SearchRecordingsRequest.
+        r"""Sets the start_date of this SearchRecordingsRequest.
 
         查询的起始时间戳（单位毫秒）。
 
@@ -236,7 +236,7 @@ class SearchRecordingsRequest:
 
     @property
     def end_date(self):
-        """Gets the end_date of this SearchRecordingsRequest.
+        r"""Gets the end_date of this SearchRecordingsRequest.
 
         查询的截止时间戳（单位毫秒）。
 
@@ -247,7 +247,7 @@ class SearchRecordingsRequest:
 
     @end_date.setter
     def end_date(self, end_date):
-        """Sets the end_date of this SearchRecordingsRequest.
+        r"""Sets the end_date of this SearchRecordingsRequest.
 
         查询的截止时间戳（单位毫秒）。
 
@@ -258,7 +258,7 @@ class SearchRecordingsRequest:
 
     @property
     def sort_type(self):
-        """Gets the sort_type of this SearchRecordingsRequest.
+        r"""Gets the sort_type of this SearchRecordingsRequest.
 
         查询结果排序类型。 - ASC_StartTIME：按录制开始时间升序排序 - DSC_StartTIME：按录制开始时间降序排序
 
@@ -269,7 +269,7 @@ class SearchRecordingsRequest:
 
     @sort_type.setter
     def sort_type(self, sort_type):
-        """Sets the sort_type of this SearchRecordingsRequest.
+        r"""Sets the sort_type of this SearchRecordingsRequest.
 
         查询结果排序类型。 - ASC_StartTIME：按录制开始时间升序排序 - DSC_StartTIME：按录制开始时间降序排序
 
@@ -280,7 +280,7 @@ class SearchRecordingsRequest:
 
     @property
     def x_authorization_type(self):
-        """Gets the x_authorization_type of this SearchRecordingsRequest.
+        r"""Gets the x_authorization_type of this SearchRecordingsRequest.
 
         标识是否为第三方portal过来的请求。 > 该参数将废弃，请勿使用。 
 
@@ -291,7 +291,7 @@ class SearchRecordingsRequest:
 
     @x_authorization_type.setter
     def x_authorization_type(self, x_authorization_type):
-        """Sets the x_authorization_type of this SearchRecordingsRequest.
+        r"""Sets the x_authorization_type of this SearchRecordingsRequest.
 
         标识是否为第三方portal过来的请求。 > 该参数将废弃，请勿使用。 
 
@@ -302,7 +302,7 @@ class SearchRecordingsRequest:
 
     @property
     def x_site_id(self):
-        """Gets the x_site_id of this SearchRecordingsRequest.
+        r"""Gets the x_site_id of this SearchRecordingsRequest.
 
         用于区分到哪个HCSO站点鉴权。 > 该参数将废弃，请勿使用。 
 
@@ -313,7 +313,7 @@ class SearchRecordingsRequest:
 
     @x_site_id.setter
     def x_site_id(self, x_site_id):
-        """Sets the x_site_id of this SearchRecordingsRequest.
+        r"""Sets the x_site_id of this SearchRecordingsRequest.
 
         用于区分到哪个HCSO站点鉴权。 > 该参数将废弃，请勿使用。 
 

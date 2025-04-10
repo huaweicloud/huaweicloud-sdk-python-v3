@@ -38,7 +38,7 @@ class CaCertificate:
     }
 
     def __init__(self, id=None, serial_number=None, signature_algorithm=None, issuer=None, subject=None, expire_time=None, is_updatable=None):
-        """CaCertificate
+        r"""CaCertificate
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class CaCertificate:
 
     @property
     def id(self):
-        """Gets the id of this CaCertificate.
+        r"""Gets the id of this CaCertificate.
 
         证书ID
 
@@ -97,7 +97,7 @@ class CaCertificate:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CaCertificate.
+        r"""Sets the id of this CaCertificate.
 
         证书ID
 
@@ -108,7 +108,7 @@ class CaCertificate:
 
     @property
     def serial_number(self):
-        """Gets the serial_number of this CaCertificate.
+        r"""Gets the serial_number of this CaCertificate.
 
         证书序列号
 
@@ -119,7 +119,7 @@ class CaCertificate:
 
     @serial_number.setter
     def serial_number(self, serial_number):
-        """Sets the serial_number of this CaCertificate.
+        r"""Sets the serial_number of this CaCertificate.
 
         证书序列号
 
@@ -130,7 +130,7 @@ class CaCertificate:
 
     @property
     def signature_algorithm(self):
-        """Gets the signature_algorithm of this CaCertificate.
+        r"""Gets the signature_algorithm of this CaCertificate.
 
         签名算法
 
@@ -141,7 +141,7 @@ class CaCertificate:
 
     @signature_algorithm.setter
     def signature_algorithm(self, signature_algorithm):
-        """Sets the signature_algorithm of this CaCertificate.
+        r"""Sets the signature_algorithm of this CaCertificate.
 
         签名算法
 
@@ -152,7 +152,7 @@ class CaCertificate:
 
     @property
     def issuer(self):
-        """Gets the issuer of this CaCertificate.
+        r"""Gets the issuer of this CaCertificate.
 
         证书颁发者
 
@@ -163,7 +163,7 @@ class CaCertificate:
 
     @issuer.setter
     def issuer(self, issuer):
-        """Sets the issuer of this CaCertificate.
+        r"""Sets the issuer of this CaCertificate.
 
         证书颁发者
 
@@ -174,7 +174,7 @@ class CaCertificate:
 
     @property
     def subject(self):
-        """Gets the subject of this CaCertificate.
+        r"""Gets the subject of this CaCertificate.
 
         证书主题
 
@@ -185,7 +185,7 @@ class CaCertificate:
 
     @subject.setter
     def subject(self, subject):
-        """Sets the subject of this CaCertificate.
+        r"""Sets the subject of this CaCertificate.
 
         证书主题
 
@@ -196,7 +196,7 @@ class CaCertificate:
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this CaCertificate.
+        r"""Gets the expire_time of this CaCertificate.
 
         证书过期时间
 
@@ -207,7 +207,7 @@ class CaCertificate:
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this CaCertificate.
+        r"""Sets the expire_time of this CaCertificate.
 
         证书过期时间
 
@@ -218,7 +218,7 @@ class CaCertificate:
 
     @property
     def is_updatable(self):
-        """Gets the is_updatable of this CaCertificate.
+        r"""Gets the is_updatable of this CaCertificate.
 
         是否能更新内容
 
@@ -229,7 +229,7 @@ class CaCertificate:
 
     @is_updatable.setter
     def is_updatable(self, is_updatable):
-        """Sets the is_updatable of this CaCertificate.
+        r"""Sets the is_updatable of this CaCertificate.
 
         是否能更新内容
 

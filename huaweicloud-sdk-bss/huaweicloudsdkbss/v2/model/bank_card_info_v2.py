@@ -31,7 +31,7 @@ class BankCardInfoV2:
     }
 
     def __init__(self, bank_account=None, areacode=None, mobile=None, verification_code=None):
-        """BankCardInfoV2
+        r"""BankCardInfoV2
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class BankCardInfoV2:
 
     @property
     def bank_account(self):
-        """Gets the bank_account of this BankCardInfoV2.
+        r"""Gets the bank_account of this BankCardInfoV2.
 
         银行卡账号。 当identifyType为4时，不能为空。 银行账号输入规则：^[0-9a-zA-Z]，可以包含特殊横杠（-）字符。
 
@@ -71,7 +71,7 @@ class BankCardInfoV2:
 
     @bank_account.setter
     def bank_account(self, bank_account):
-        """Sets the bank_account of this BankCardInfoV2.
+        r"""Sets the bank_account of this BankCardInfoV2.
 
         银行卡账号。 当identifyType为4时，不能为空。 银行账号输入规则：^[0-9a-zA-Z]，可以包含特殊横杠（-）字符。
 
@@ -82,7 +82,7 @@ class BankCardInfoV2:
 
     @property
     def areacode(self):
-        """Gets the areacode of this BankCardInfoV2.
+        r"""Gets the areacode of this BankCardInfoV2.
 
         国家/区号码。 例如：0086：中国大陆区号码。
 
@@ -93,7 +93,7 @@ class BankCardInfoV2:
 
     @areacode.setter
     def areacode(self, areacode):
-        """Sets the areacode of this BankCardInfoV2.
+        r"""Sets the areacode of this BankCardInfoV2.
 
         国家/区号码。 例如：0086：中国大陆区号码。
 
@@ -104,7 +104,7 @@ class BankCardInfoV2:
 
     @property
     def mobile(self):
-        """Gets the mobile of this BankCardInfoV2.
+        r"""Gets the mobile of this BankCardInfoV2.
 
         手机号码。
 
@@ -115,7 +115,7 @@ class BankCardInfoV2:
 
     @mobile.setter
     def mobile(self, mobile):
-        """Sets the mobile of this BankCardInfoV2.
+        r"""Sets the mobile of this BankCardInfoV2.
 
         手机号码。
 
@@ -126,7 +126,7 @@ class BankCardInfoV2:
 
     @property
     def verification_code(self):
-        """Gets the verification_code of this BankCardInfoV2.
+        r"""Gets the verification_code of this BankCardInfoV2.
 
         验证码。 请调用“发送验证码”接口获取。
 
@@ -137,7 +137,7 @@ class BankCardInfoV2:
 
     @verification_code.setter
     def verification_code(self, verification_code):
-        """Sets the verification_code of this BankCardInfoV2.
+        r"""Sets the verification_code of this BankCardInfoV2.
 
         验证码。 请调用“发送验证码”接口获取。
 

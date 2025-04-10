@@ -30,7 +30,7 @@ class ListProductTwoTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """ListProductTwoTemplatesResponse
+        r"""ListProductTwoTemplatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListProductTwoTemplatesResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ListProductTwoTemplatesResponse.
+        r"""Gets the error of this ListProductTwoTemplatesResponse.
 
         :return: The error of this ListProductTwoTemplatesResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class ListProductTwoTemplatesResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ListProductTwoTemplatesResponse.
+        r"""Sets the error of this ListProductTwoTemplatesResponse.
 
         :param error: The error of this ListProductTwoTemplatesResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class ListProductTwoTemplatesResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListProductTwoTemplatesResponse.
+        r"""Gets the result of this ListProductTwoTemplatesResponse.
 
         :return: The result of this ListProductTwoTemplatesResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.TemplateListInfo`
@@ -85,7 +85,7 @@ class ListProductTwoTemplatesResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListProductTwoTemplatesResponse.
+        r"""Sets the result of this ListProductTwoTemplatesResponse.
 
         :param result: The result of this ListProductTwoTemplatesResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.TemplateListInfo`
@@ -94,7 +94,7 @@ class ListProductTwoTemplatesResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListProductTwoTemplatesResponse.
+        r"""Gets the status of this ListProductTwoTemplatesResponse.
 
         响应状态
 
@@ -105,7 +105,7 @@ class ListProductTwoTemplatesResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListProductTwoTemplatesResponse.
+        r"""Sets the status of this ListProductTwoTemplatesResponse.
 
         响应状态
 

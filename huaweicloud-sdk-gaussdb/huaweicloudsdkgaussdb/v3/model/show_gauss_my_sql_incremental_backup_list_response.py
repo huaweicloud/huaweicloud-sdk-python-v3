@@ -28,7 +28,7 @@ class ShowGaussMySqlIncrementalBackupListResponse(SdkResponse):
     }
 
     def __init__(self, backups=None, total_count=None):
-        """ShowGaussMySqlIncrementalBackupListResponse
+        r"""ShowGaussMySqlIncrementalBackupListResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowGaussMySqlIncrementalBackupListResponse(SdkResponse):
 
     @property
     def backups(self):
-        """Gets the backups of this ShowGaussMySqlIncrementalBackupListResponse.
+        r"""Gets the backups of this ShowGaussMySqlIncrementalBackupListResponse.
 
         备份信息。
 
@@ -62,7 +62,7 @@ class ShowGaussMySqlIncrementalBackupListResponse(SdkResponse):
 
     @backups.setter
     def backups(self, backups):
-        """Sets the backups of this ShowGaussMySqlIncrementalBackupListResponse.
+        r"""Sets the backups of this ShowGaussMySqlIncrementalBackupListResponse.
 
         备份信息。
 
@@ -73,7 +73,7 @@ class ShowGaussMySqlIncrementalBackupListResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ShowGaussMySqlIncrementalBackupListResponse.
+        r"""Gets the total_count of this ShowGaussMySqlIncrementalBackupListResponse.
 
         备份文件的总数。
 
@@ -84,7 +84,7 @@ class ShowGaussMySqlIncrementalBackupListResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ShowGaussMySqlIncrementalBackupListResponse.
+        r"""Sets the total_count of this ShowGaussMySqlIncrementalBackupListResponse.
 
         备份文件的总数。
 

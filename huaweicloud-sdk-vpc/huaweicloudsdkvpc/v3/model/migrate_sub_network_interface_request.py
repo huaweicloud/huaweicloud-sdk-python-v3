@@ -25,7 +25,7 @@ class MigrateSubNetworkInterfaceRequest:
     }
 
     def __init__(self, body=None):
-        """MigrateSubNetworkInterfaceRequest
+        r"""MigrateSubNetworkInterfaceRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class MigrateSubNetworkInterfaceRequest:
 
     @property
     def body(self):
-        """Gets the body of this MigrateSubNetworkInterfaceRequest.
+        r"""Gets the body of this MigrateSubNetworkInterfaceRequest.
 
         :return: The body of this MigrateSubNetworkInterfaceRequest.
         :rtype: :class:`huaweicloudsdkvpc.v3.MigrateSubNetworkInterfaceRequestBody`
@@ -52,7 +52,7 @@ class MigrateSubNetworkInterfaceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this MigrateSubNetworkInterfaceRequest.
+        r"""Sets the body of this MigrateSubNetworkInterfaceRequest.
 
         :param body: The body of this MigrateSubNetworkInterfaceRequest.
         :type body: :class:`huaweicloudsdkvpc.v3.MigrateSubNetworkInterfaceRequestBody`

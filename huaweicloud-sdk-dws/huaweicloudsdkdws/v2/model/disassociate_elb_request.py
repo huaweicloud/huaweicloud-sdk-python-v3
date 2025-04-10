@@ -27,7 +27,7 @@ class DisassociateElbRequest:
     }
 
     def __init__(self, cluster_id=None, elb_id=None):
-        """DisassociateElbRequest
+        r"""DisassociateElbRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DisassociateElbRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this DisassociateElbRequest.
+        r"""Gets the cluster_id of this DisassociateElbRequest.
 
         集群ID
 
@@ -59,7 +59,7 @@ class DisassociateElbRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this DisassociateElbRequest.
+        r"""Sets the cluster_id of this DisassociateElbRequest.
 
         集群ID
 
@@ -70,7 +70,7 @@ class DisassociateElbRequest:
 
     @property
     def elb_id(self):
-        """Gets the elb_id of this DisassociateElbRequest.
+        r"""Gets the elb_id of this DisassociateElbRequest.
 
         集群已绑定的弹性负载均衡ID
 
@@ -81,7 +81,7 @@ class DisassociateElbRequest:
 
     @elb_id.setter
     def elb_id(self, elb_id):
-        """Sets the elb_id of this DisassociateElbRequest.
+        r"""Sets the elb_id of this DisassociateElbRequest.
 
         集群已绑定的弹性负载均衡ID
 

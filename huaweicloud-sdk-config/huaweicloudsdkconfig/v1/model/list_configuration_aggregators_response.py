@@ -28,7 +28,7 @@ class ListConfigurationAggregatorsResponse(SdkResponse):
     }
 
     def __init__(self, configuration_aggregators=None, page_info=None):
-        """ListConfigurationAggregatorsResponse
+        r"""ListConfigurationAggregatorsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListConfigurationAggregatorsResponse(SdkResponse):
 
     @property
     def configuration_aggregators(self):
-        """Gets the configuration_aggregators of this ListConfigurationAggregatorsResponse.
+        r"""Gets the configuration_aggregators of this ListConfigurationAggregatorsResponse.
 
         资源聚合器列表。
 
@@ -62,7 +62,7 @@ class ListConfigurationAggregatorsResponse(SdkResponse):
 
     @configuration_aggregators.setter
     def configuration_aggregators(self, configuration_aggregators):
-        """Sets the configuration_aggregators of this ListConfigurationAggregatorsResponse.
+        r"""Sets the configuration_aggregators of this ListConfigurationAggregatorsResponse.
 
         资源聚合器列表。
 
@@ -73,7 +73,7 @@ class ListConfigurationAggregatorsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListConfigurationAggregatorsResponse.
+        r"""Gets the page_info of this ListConfigurationAggregatorsResponse.
 
         :return: The page_info of this ListConfigurationAggregatorsResponse.
         :rtype: :class:`huaweicloudsdkconfig.v1.PageInfo`
@@ -82,7 +82,7 @@ class ListConfigurationAggregatorsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListConfigurationAggregatorsResponse.
+        r"""Sets the page_info of this ListConfigurationAggregatorsResponse.
 
         :param page_info: The page_info of this ListConfigurationAggregatorsResponse.
         :type page_info: :class:`huaweicloudsdkconfig.v1.PageInfo`

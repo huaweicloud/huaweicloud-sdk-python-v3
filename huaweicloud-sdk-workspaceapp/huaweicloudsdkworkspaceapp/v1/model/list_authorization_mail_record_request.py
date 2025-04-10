@@ -35,7 +35,7 @@ class ListAuthorizationMailRecordRequest:
     }
 
     def __init__(self, limit=None, offset=None, app_group_id=None, account=None, mail_send_type=None, mail_send_result=None):
-        """ListAuthorizationMailRecordRequest
+        r"""ListAuthorizationMailRecordRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListAuthorizationMailRecordRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAuthorizationMailRecordRequest.
+        r"""Gets the limit of this ListAuthorizationMailRecordRequest.
 
         单次查询的大小[1-100]。
 
@@ -88,7 +88,7 @@ class ListAuthorizationMailRecordRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAuthorizationMailRecordRequest.
+        r"""Sets the limit of this ListAuthorizationMailRecordRequest.
 
         单次查询的大小[1-100]。
 
@@ -99,7 +99,7 @@ class ListAuthorizationMailRecordRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAuthorizationMailRecordRequest.
+        r"""Gets the offset of this ListAuthorizationMailRecordRequest.
 
         查询的偏移量。
 
@@ -110,7 +110,7 @@ class ListAuthorizationMailRecordRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAuthorizationMailRecordRequest.
+        r"""Sets the offset of this ListAuthorizationMailRecordRequest.
 
         查询的偏移量。
 
@@ -121,7 +121,7 @@ class ListAuthorizationMailRecordRequest:
 
     @property
     def app_group_id(self):
-        """Gets the app_group_id of this ListAuthorizationMailRecordRequest.
+        r"""Gets the app_group_id of this ListAuthorizationMailRecordRequest.
 
         应用组ID。
 
@@ -132,7 +132,7 @@ class ListAuthorizationMailRecordRequest:
 
     @app_group_id.setter
     def app_group_id(self, app_group_id):
-        """Sets the app_group_id of this ListAuthorizationMailRecordRequest.
+        r"""Sets the app_group_id of this ListAuthorizationMailRecordRequest.
 
         应用组ID。
 
@@ -143,7 +143,7 @@ class ListAuthorizationMailRecordRequest:
 
     @property
     def account(self):
-        """Gets the account of this ListAuthorizationMailRecordRequest.
+        r"""Gets the account of this ListAuthorizationMailRecordRequest.
 
         用户(组)名称。
 
@@ -154,7 +154,7 @@ class ListAuthorizationMailRecordRequest:
 
     @account.setter
     def account(self, account):
-        """Sets the account of this ListAuthorizationMailRecordRequest.
+        r"""Sets the account of this ListAuthorizationMailRecordRequest.
 
         用户(组)名称。
 
@@ -165,7 +165,7 @@ class ListAuthorizationMailRecordRequest:
 
     @property
     def mail_send_type(self):
-        """Gets the mail_send_type of this ListAuthorizationMailRecordRequest.
+        r"""Gets the mail_send_type of this ListAuthorizationMailRecordRequest.
 
         授权类型： - ADD_GROUP_AUTHORIZATION 添加组授权 - DEL_GROUP_AUTHORIZATION 删除组授权
 
@@ -176,7 +176,7 @@ class ListAuthorizationMailRecordRequest:
 
     @mail_send_type.setter
     def mail_send_type(self, mail_send_type):
-        """Sets the mail_send_type of this ListAuthorizationMailRecordRequest.
+        r"""Sets the mail_send_type of this ListAuthorizationMailRecordRequest.
 
         授权类型： - ADD_GROUP_AUTHORIZATION 添加组授权 - DEL_GROUP_AUTHORIZATION 删除组授权
 
@@ -187,7 +187,7 @@ class ListAuthorizationMailRecordRequest:
 
     @property
     def mail_send_result(self):
-        """Gets the mail_send_result of this ListAuthorizationMailRecordRequest.
+        r"""Gets the mail_send_result of this ListAuthorizationMailRecordRequest.
 
         邮件发送结果(SUCCESS|FAIL)。
 
@@ -198,7 +198,7 @@ class ListAuthorizationMailRecordRequest:
 
     @mail_send_result.setter
     def mail_send_result(self, mail_send_result):
-        """Sets the mail_send_result of this ListAuthorizationMailRecordRequest.
+        r"""Sets the mail_send_result of this ListAuthorizationMailRecordRequest.
 
         邮件发送结果(SUCCESS|FAIL)。
 

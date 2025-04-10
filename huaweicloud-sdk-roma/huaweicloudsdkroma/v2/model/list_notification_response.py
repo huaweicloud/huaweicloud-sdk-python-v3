@@ -30,7 +30,7 @@ class ListNotificationResponse(SdkResponse):
     }
 
     def __init__(self, total=None, size=None, items=None):
-        """ListNotificationResponse
+        r"""ListNotificationResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListNotificationResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListNotificationResponse.
+        r"""Gets the total of this ListNotificationResponse.
 
         总数
 
@@ -69,7 +69,7 @@ class ListNotificationResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListNotificationResponse.
+        r"""Sets the total of this ListNotificationResponse.
 
         总数
 
@@ -80,7 +80,7 @@ class ListNotificationResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListNotificationResponse.
+        r"""Gets the size of this ListNotificationResponse.
 
         本次返回数量
 
@@ -91,7 +91,7 @@ class ListNotificationResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListNotificationResponse.
+        r"""Sets the size of this ListNotificationResponse.
 
         本次返回数量
 
@@ -102,7 +102,7 @@ class ListNotificationResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListNotificationResponse.
+        r"""Gets the items of this ListNotificationResponse.
 
         订阅管理列表
 
@@ -113,7 +113,7 @@ class ListNotificationResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListNotificationResponse.
+        r"""Sets the items of this ListNotificationResponse.
 
         订阅管理列表
 

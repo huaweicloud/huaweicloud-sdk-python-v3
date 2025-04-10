@@ -28,7 +28,7 @@ class ShowPrivateDnatResponse(SdkResponse):
     }
 
     def __init__(self, dnat_rule=None, request_id=None):
-        """ShowPrivateDnatResponse
+        r"""ShowPrivateDnatResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowPrivateDnatResponse(SdkResponse):
 
     @property
     def dnat_rule(self):
-        """Gets the dnat_rule of this ShowPrivateDnatResponse.
+        r"""Gets the dnat_rule of this ShowPrivateDnatResponse.
 
         :return: The dnat_rule of this ShowPrivateDnatResponse.
         :rtype: :class:`huaweicloudsdknat.v2.PrivateDnat`
@@ -60,7 +60,7 @@ class ShowPrivateDnatResponse(SdkResponse):
 
     @dnat_rule.setter
     def dnat_rule(self, dnat_rule):
-        """Sets the dnat_rule of this ShowPrivateDnatResponse.
+        r"""Sets the dnat_rule of this ShowPrivateDnatResponse.
 
         :param dnat_rule: The dnat_rule of this ShowPrivateDnatResponse.
         :type dnat_rule: :class:`huaweicloudsdknat.v2.PrivateDnat`
@@ -69,7 +69,7 @@ class ShowPrivateDnatResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowPrivateDnatResponse.
+        r"""Gets the request_id of this ShowPrivateDnatResponse.
 
         请求ID。
 
@@ -80,7 +80,7 @@ class ShowPrivateDnatResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowPrivateDnatResponse.
+        r"""Sets the request_id of this ShowPrivateDnatResponse.
 
         请求ID。
 

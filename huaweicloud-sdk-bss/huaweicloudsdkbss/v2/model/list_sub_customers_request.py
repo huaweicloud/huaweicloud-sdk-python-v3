@@ -25,7 +25,7 @@ class ListSubCustomersRequest:
     }
 
     def __init__(self, body=None):
-        """ListSubCustomersRequest
+        r"""ListSubCustomersRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListSubCustomersRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListSubCustomersRequest.
+        r"""Gets the body of this ListSubCustomersRequest.
 
         :return: The body of this ListSubCustomersRequest.
         :rtype: :class:`huaweicloudsdkbss.v2.QuerySubCustomerListReq`
@@ -52,7 +52,7 @@ class ListSubCustomersRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListSubCustomersRequest.
+        r"""Sets the body of this ListSubCustomersRequest.
 
         :param body: The body of this ListSubCustomersRequest.
         :type body: :class:`huaweicloudsdkbss.v2.QuerySubCustomerListReq`

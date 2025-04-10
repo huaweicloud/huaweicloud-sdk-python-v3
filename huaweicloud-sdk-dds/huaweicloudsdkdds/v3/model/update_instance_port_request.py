@@ -27,7 +27,7 @@ class UpdateInstancePortRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """UpdateInstancePortRequest
+        r"""UpdateInstancePortRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateInstancePortRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateInstancePortRequest.
+        r"""Gets the instance_id of this UpdateInstancePortRequest.
 
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
@@ -60,7 +60,7 @@ class UpdateInstancePortRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateInstancePortRequest.
+        r"""Sets the instance_id of this UpdateInstancePortRequest.
 
         实例ID，可以调用“查询实例列表和详情”接口获取。如果未申请实例，可以调用“创建实例”接口创建。
 
@@ -71,7 +71,7 @@ class UpdateInstancePortRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateInstancePortRequest.
+        r"""Gets the body of this UpdateInstancePortRequest.
 
         :return: The body of this UpdateInstancePortRequest.
         :rtype: :class:`huaweicloudsdkdds.v3.UpdatePortRequestBody`
@@ -80,7 +80,7 @@ class UpdateInstancePortRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateInstancePortRequest.
+        r"""Sets the body of this UpdateInstancePortRequest.
 
         :param body: The body of this UpdateInstancePortRequest.
         :type body: :class:`huaweicloudsdkdds.v3.UpdatePortRequestBody`

@@ -27,7 +27,7 @@ class CreateListenerQuicConfigOption:
     }
 
     def __init__(self, quic_listener_id=None, enable_quic_upgrade=None):
-        """CreateListenerQuicConfigOption
+        r"""CreateListenerQuicConfigOption
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateListenerQuicConfigOption:
 
     @property
     def quic_listener_id(self):
-        """Gets the quic_listener_id of this CreateListenerQuicConfigOption.
+        r"""Gets the quic_listener_id of this CreateListenerQuicConfigOption.
 
         参数解释：监听器关联的QUIC监听器ID。  约束限制：指定的listener id必须已存在，且协议类型为QUIC，不能指定为null，否则与enable_quic_upgrade冲突。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt)
 
@@ -60,7 +60,7 @@ class CreateListenerQuicConfigOption:
 
     @quic_listener_id.setter
     def quic_listener_id(self, quic_listener_id):
-        """Sets the quic_listener_id of this CreateListenerQuicConfigOption.
+        r"""Sets the quic_listener_id of this CreateListenerQuicConfigOption.
 
         参数解释：监听器关联的QUIC监听器ID。  约束限制：指定的listener id必须已存在，且协议类型为QUIC，不能指定为null，否则与enable_quic_upgrade冲突。  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt)
 
@@ -71,7 +71,7 @@ class CreateListenerQuicConfigOption:
 
     @property
     def enable_quic_upgrade(self):
-        """Gets the enable_quic_upgrade of this CreateListenerQuicConfigOption.
+        r"""Gets the enable_quic_upgrade of this CreateListenerQuicConfigOption.
 
         参数解释：QUIC升级的开启状态。 开启HTTPS监听器升级QUIC监听器能力。  取值范围： - true:开启QUIC升级。 - false：关闭QUIC升级。  默认取值：false  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt)
 
@@ -82,7 +82,7 @@ class CreateListenerQuicConfigOption:
 
     @enable_quic_upgrade.setter
     def enable_quic_upgrade(self, enable_quic_upgrade):
-        """Sets the enable_quic_upgrade of this CreateListenerQuicConfigOption.
+        r"""Sets the enable_quic_upgrade of this CreateListenerQuicConfigOption.
 
         参数解释：QUIC升级的开启状态。 开启HTTPS监听器升级QUIC监听器能力。  取值范围： - true:开启QUIC升级。 - false：关闭QUIC升级。  默认取值：false  [不支持QUIC。](tag:tm,hws_eu,g42,hk_g42,hcso_dt,dt)
 

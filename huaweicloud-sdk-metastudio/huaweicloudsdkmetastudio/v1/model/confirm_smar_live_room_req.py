@@ -27,7 +27,7 @@ class ConfirmSmarLiveRoomReq:
     }
 
     def __init__(self, action=None, script_version=None):
-        """ConfirmSmarLiveRoomReq
+        r"""ConfirmSmarLiveRoomReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ConfirmSmarLiveRoomReq:
 
     @property
     def action(self):
-        """Gets the action of this ConfirmSmarLiveRoomReq.
+        r"""Gets the action of this ConfirmSmarLiveRoomReq.
 
         确认操作。 * confirm: 确认。 * reject: 拒绝。
 
@@ -61,7 +61,7 @@ class ConfirmSmarLiveRoomReq:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ConfirmSmarLiveRoomReq.
+        r"""Sets the action of this ConfirmSmarLiveRoomReq.
 
         确认操作。 * confirm: 确认。 * reject: 拒绝。
 
@@ -72,7 +72,7 @@ class ConfirmSmarLiveRoomReq:
 
     @property
     def script_version(self):
-        """Gets the script_version of this ConfirmSmarLiveRoomReq.
+        r"""Gets the script_version of this ConfirmSmarLiveRoomReq.
 
         剧本版本。从查询直播间详情接口中获取。
 
@@ -83,7 +83,7 @@ class ConfirmSmarLiveRoomReq:
 
     @script_version.setter
     def script_version(self, script_version):
-        """Sets the script_version of this ConfirmSmarLiveRoomReq.
+        r"""Sets the script_version of this ConfirmSmarLiveRoomReq.
 
         剧本版本。从查询直播间详情接口中获取。
 

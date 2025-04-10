@@ -26,7 +26,7 @@ class BatchEnableAlarmRulesResponse(SdkResponse):
     }
 
     def __init__(self, alarm_ids=None):
-        """BatchEnableAlarmRulesResponse
+        r"""BatchEnableAlarmRulesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchEnableAlarmRulesResponse(SdkResponse):
 
     @property
     def alarm_ids(self):
-        """Gets the alarm_ids of this BatchEnableAlarmRulesResponse.
+        r"""Gets the alarm_ids of this BatchEnableAlarmRulesResponse.
 
         成功启停的告警规则ID列表
 
@@ -55,7 +55,7 @@ class BatchEnableAlarmRulesResponse(SdkResponse):
 
     @alarm_ids.setter
     def alarm_ids(self, alarm_ids):
-        """Sets the alarm_ids of this BatchEnableAlarmRulesResponse.
+        r"""Sets the alarm_ids of this BatchEnableAlarmRulesResponse.
 
         成功启停的告警规则ID列表
 

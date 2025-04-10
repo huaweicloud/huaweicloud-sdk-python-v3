@@ -27,7 +27,7 @@ class BatchAddEndpointServicePermissionsRequest:
     }
 
     def __init__(self, vpc_endpoint_service_id=None, body=None):
-        """BatchAddEndpointServicePermissionsRequest
+        r"""BatchAddEndpointServicePermissionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchAddEndpointServicePermissionsRequest:
 
     @property
     def vpc_endpoint_service_id(self):
-        """Gets the vpc_endpoint_service_id of this BatchAddEndpointServicePermissionsRequest.
+        r"""Gets the vpc_endpoint_service_id of this BatchAddEndpointServicePermissionsRequest.
 
         终端节点服务的ID。
 
@@ -60,7 +60,7 @@ class BatchAddEndpointServicePermissionsRequest:
 
     @vpc_endpoint_service_id.setter
     def vpc_endpoint_service_id(self, vpc_endpoint_service_id):
-        """Sets the vpc_endpoint_service_id of this BatchAddEndpointServicePermissionsRequest.
+        r"""Sets the vpc_endpoint_service_id of this BatchAddEndpointServicePermissionsRequest.
 
         终端节点服务的ID。
 
@@ -71,7 +71,7 @@ class BatchAddEndpointServicePermissionsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchAddEndpointServicePermissionsRequest.
+        r"""Gets the body of this BatchAddEndpointServicePermissionsRequest.
 
         :return: The body of this BatchAddEndpointServicePermissionsRequest.
         :rtype: :class:`huaweicloudsdkvpcep.v1.BatchAddEndpointServicePermissionsRequestBody`
@@ -80,7 +80,7 @@ class BatchAddEndpointServicePermissionsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchAddEndpointServicePermissionsRequest.
+        r"""Sets the body of this BatchAddEndpointServicePermissionsRequest.
 
         :param body: The body of this BatchAddEndpointServicePermissionsRequest.
         :type body: :class:`huaweicloudsdkvpcep.v1.BatchAddEndpointServicePermissionsRequestBody`

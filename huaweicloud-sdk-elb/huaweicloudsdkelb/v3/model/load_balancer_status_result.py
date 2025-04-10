@@ -25,7 +25,7 @@ class LoadBalancerStatusResult:
     }
 
     def __init__(self, loadbalancer=None):
-        """LoadBalancerStatusResult
+        r"""LoadBalancerStatusResult
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class LoadBalancerStatusResult:
 
     @property
     def loadbalancer(self):
-        """Gets the loadbalancer of this LoadBalancerStatusResult.
+        r"""Gets the loadbalancer of this LoadBalancerStatusResult.
 
         :return: The loadbalancer of this LoadBalancerStatusResult.
         :rtype: :class:`huaweicloudsdkelb.v3.LoadBalancerStatus`
@@ -51,7 +51,7 @@ class LoadBalancerStatusResult:
 
     @loadbalancer.setter
     def loadbalancer(self, loadbalancer):
-        """Sets the loadbalancer of this LoadBalancerStatusResult.
+        r"""Sets the loadbalancer of this LoadBalancerStatusResult.
 
         :param loadbalancer: The loadbalancer of this LoadBalancerStatusResult.
         :type loadbalancer: :class:`huaweicloudsdkelb.v3.LoadBalancerStatus`

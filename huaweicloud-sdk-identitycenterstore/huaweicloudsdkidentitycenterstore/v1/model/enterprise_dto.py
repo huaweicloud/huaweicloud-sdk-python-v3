@@ -35,7 +35,7 @@ class EnterpriseDto:
     }
 
     def __init__(self, cost_center=None, department=None, division=None, employee_number=None, manager=None, organization=None):
-        """EnterpriseDto
+        r"""EnterpriseDto
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class EnterpriseDto:
 
     @property
     def cost_center(self):
-        """Gets the cost_center of this EnterpriseDto.
+        r"""Gets the cost_center of this EnterpriseDto.
 
         成本中心
 
@@ -89,7 +89,7 @@ class EnterpriseDto:
 
     @cost_center.setter
     def cost_center(self, cost_center):
-        """Sets the cost_center of this EnterpriseDto.
+        r"""Sets the cost_center of this EnterpriseDto.
 
         成本中心
 
@@ -100,7 +100,7 @@ class EnterpriseDto:
 
     @property
     def department(self):
-        """Gets the department of this EnterpriseDto.
+        r"""Gets the department of this EnterpriseDto.
 
         部门
 
@@ -111,7 +111,7 @@ class EnterpriseDto:
 
     @department.setter
     def department(self, department):
-        """Sets the department of this EnterpriseDto.
+        r"""Sets the department of this EnterpriseDto.
 
         部门
 
@@ -122,7 +122,7 @@ class EnterpriseDto:
 
     @property
     def division(self):
-        """Gets the division of this EnterpriseDto.
+        r"""Gets the division of this EnterpriseDto.
 
         分部
 
@@ -133,7 +133,7 @@ class EnterpriseDto:
 
     @division.setter
     def division(self, division):
-        """Sets the division of this EnterpriseDto.
+        r"""Sets the division of this EnterpriseDto.
 
         分部
 
@@ -144,7 +144,7 @@ class EnterpriseDto:
 
     @property
     def employee_number(self):
-        """Gets the employee_number of this EnterpriseDto.
+        r"""Gets the employee_number of this EnterpriseDto.
 
         员工编号
 
@@ -155,7 +155,7 @@ class EnterpriseDto:
 
     @employee_number.setter
     def employee_number(self, employee_number):
-        """Sets the employee_number of this EnterpriseDto.
+        r"""Sets the employee_number of this EnterpriseDto.
 
         员工编号
 
@@ -166,7 +166,7 @@ class EnterpriseDto:
 
     @property
     def manager(self):
-        """Gets the manager of this EnterpriseDto.
+        r"""Gets the manager of this EnterpriseDto.
 
         :return: The manager of this EnterpriseDto.
         :rtype: :class:`huaweicloudsdkidentitycenterstore.v1.ManagerDto`
@@ -175,7 +175,7 @@ class EnterpriseDto:
 
     @manager.setter
     def manager(self, manager):
-        """Sets the manager of this EnterpriseDto.
+        r"""Sets the manager of this EnterpriseDto.
 
         :param manager: The manager of this EnterpriseDto.
         :type manager: :class:`huaweicloudsdkidentitycenterstore.v1.ManagerDto`
@@ -184,7 +184,7 @@ class EnterpriseDto:
 
     @property
     def organization(self):
-        """Gets the organization of this EnterpriseDto.
+        r"""Gets the organization of this EnterpriseDto.
 
         组织
 
@@ -195,7 +195,7 @@ class EnterpriseDto:
 
     @organization.setter
     def organization(self, organization):
-        """Sets the organization of this EnterpriseDto.
+        r"""Sets the organization of this EnterpriseDto.
 
         组织
 

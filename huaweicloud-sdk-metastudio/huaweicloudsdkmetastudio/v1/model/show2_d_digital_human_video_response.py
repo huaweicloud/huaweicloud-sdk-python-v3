@@ -62,7 +62,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, state=None, job_type=None, start_time=None, end_time=None, duration=None, output_asset_config=None, error_info=None, create_time=None, lastupdate_time=None, script_id=None, video_making_type=None, human_image=None, model_asset_id=None, voice_config=None, video_config=None, shoot_scripts=None, background_music_config=None, x_request_id=None):
-        """Show2DDigitalHumanVideoResponse
+        r"""Show2DDigitalHumanVideoResponse
 
         The model defined in huaweicloud sdk
 
@@ -168,7 +168,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this Show2DDigitalHumanVideoResponse.
+        r"""Gets the job_id of this Show2DDigitalHumanVideoResponse.
 
         任务ID。
 
@@ -179,7 +179,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this Show2DDigitalHumanVideoResponse.
+        r"""Sets the job_id of this Show2DDigitalHumanVideoResponse.
 
         任务ID。
 
@@ -190,7 +190,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this Show2DDigitalHumanVideoResponse.
+        r"""Gets the state of this Show2DDigitalHumanVideoResponse.
 
         任务的状态。 * WAITING：等待 * PROCESSING：处理中 * SUCCEED：成功 * FAILED：失败 * CANCELED：取消 * BLOCK: 冻结
 
@@ -201,7 +201,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this Show2DDigitalHumanVideoResponse.
+        r"""Sets the state of this Show2DDigitalHumanVideoResponse.
 
         任务的状态。 * WAITING：等待 * PROCESSING：处理中 * SUCCEED：成功 * FAILED：失败 * CANCELED：取消 * BLOCK: 冻结
 
@@ -212,7 +212,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
 
     @property
     def job_type(self):
-        """Gets the job_type of this Show2DDigitalHumanVideoResponse.
+        r"""Gets the job_type of this Show2DDigitalHumanVideoResponse.
 
         任务类型。 * 2D_DIGITAL_HUMAN_VIDEO: 分身数字人视频制作任务 * DIGITAL_HUMAN_PHOTO_VIDEO: 照片数字人视频制作任务
 
@@ -223,7 +223,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this Show2DDigitalHumanVideoResponse.
+        r"""Sets the job_type of this Show2DDigitalHumanVideoResponse.
 
         任务类型。 * 2D_DIGITAL_HUMAN_VIDEO: 分身数字人视频制作任务 * DIGITAL_HUMAN_PHOTO_VIDEO: 照片数字人视频制作任务
 
@@ -234,7 +234,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this Show2DDigitalHumanVideoResponse.
+        r"""Gets the start_time of this Show2DDigitalHumanVideoResponse.
 
         数字人视频制作开始时间。
 
@@ -245,7 +245,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this Show2DDigitalHumanVideoResponse.
+        r"""Sets the start_time of this Show2DDigitalHumanVideoResponse.
 
         数字人视频制作开始时间。
 
@@ -256,7 +256,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this Show2DDigitalHumanVideoResponse.
+        r"""Gets the end_time of this Show2DDigitalHumanVideoResponse.
 
         数字人视频制作结束时间。
 
@@ -267,7 +267,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this Show2DDigitalHumanVideoResponse.
+        r"""Sets the end_time of this Show2DDigitalHumanVideoResponse.
 
         数字人视频制作结束时间。
 
@@ -278,7 +278,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
 
     @property
     def duration(self):
-        """Gets the duration of this Show2DDigitalHumanVideoResponse.
+        r"""Gets the duration of this Show2DDigitalHumanVideoResponse.
 
         **参数解释**： 数字人视频内容时长。
 
@@ -289,7 +289,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this Show2DDigitalHumanVideoResponse.
+        r"""Sets the duration of this Show2DDigitalHumanVideoResponse.
 
         **参数解释**： 数字人视频内容时长。
 
@@ -300,7 +300,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
 
     @property
     def output_asset_config(self):
-        """Gets the output_asset_config of this Show2DDigitalHumanVideoResponse.
+        r"""Gets the output_asset_config of this Show2DDigitalHumanVideoResponse.
 
         :return: The output_asset_config of this Show2DDigitalHumanVideoResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.OutputAssetInfo`
@@ -309,7 +309,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
 
     @output_asset_config.setter
     def output_asset_config(self, output_asset_config):
-        """Sets the output_asset_config of this Show2DDigitalHumanVideoResponse.
+        r"""Sets the output_asset_config of this Show2DDigitalHumanVideoResponse.
 
         :param output_asset_config: The output_asset_config of this Show2DDigitalHumanVideoResponse.
         :type output_asset_config: :class:`huaweicloudsdkmetastudio.v1.OutputAssetInfo`
@@ -318,7 +318,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
 
     @property
     def error_info(self):
-        """Gets the error_info of this Show2DDigitalHumanVideoResponse.
+        r"""Gets the error_info of this Show2DDigitalHumanVideoResponse.
 
         :return: The error_info of this Show2DDigitalHumanVideoResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
@@ -327,7 +327,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
 
     @error_info.setter
     def error_info(self, error_info):
-        """Sets the error_info of this Show2DDigitalHumanVideoResponse.
+        r"""Sets the error_info of this Show2DDigitalHumanVideoResponse.
 
         :param error_info: The error_info of this Show2DDigitalHumanVideoResponse.
         :type error_info: :class:`huaweicloudsdkmetastudio.v1.ErrorResponse`
@@ -336,7 +336,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this Show2DDigitalHumanVideoResponse.
+        r"""Gets the create_time of this Show2DDigitalHumanVideoResponse.
 
         任务创建时间。
 
@@ -347,7 +347,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Show2DDigitalHumanVideoResponse.
+        r"""Sets the create_time of this Show2DDigitalHumanVideoResponse.
 
         任务创建时间。
 
@@ -358,7 +358,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
 
     @property
     def lastupdate_time(self):
-        """Gets the lastupdate_time of this Show2DDigitalHumanVideoResponse.
+        r"""Gets the lastupdate_time of this Show2DDigitalHumanVideoResponse.
 
         任务更新时间。
 
@@ -369,7 +369,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
 
     @lastupdate_time.setter
     def lastupdate_time(self, lastupdate_time):
-        """Sets the lastupdate_time of this Show2DDigitalHumanVideoResponse.
+        r"""Sets the lastupdate_time of this Show2DDigitalHumanVideoResponse.
 
         任务更新时间。
 
@@ -380,7 +380,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
 
     @property
     def script_id(self):
-        """Gets the script_id of this Show2DDigitalHumanVideoResponse.
+        r"""Gets the script_id of this Show2DDigitalHumanVideoResponse.
 
         剧本ID。
 
@@ -391,7 +391,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
 
     @script_id.setter
     def script_id(self, script_id):
-        """Sets the script_id of this Show2DDigitalHumanVideoResponse.
+        r"""Sets the script_id of this Show2DDigitalHumanVideoResponse.
 
         剧本ID。
 
@@ -402,7 +402,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
 
     @property
     def video_making_type(self):
-        """Gets the video_making_type of this Show2DDigitalHumanVideoResponse.
+        r"""Gets the video_making_type of this Show2DDigitalHumanVideoResponse.
 
         视频生成类型。该参数取值是MODEL时，model_asset_id必填；取值是PICTURE时，human_image必填。 * MODEL：通过分身数字人模型生成视频 * PICTURE： 通过单张照片生成视频 > * 该参数已废弃，照片数字人视频制作使用“创建照片分身数字人视频制作任务”接口。
 
@@ -413,7 +413,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
 
     @video_making_type.setter
     def video_making_type(self, video_making_type):
-        """Sets the video_making_type of this Show2DDigitalHumanVideoResponse.
+        r"""Sets the video_making_type of this Show2DDigitalHumanVideoResponse.
 
         视频生成类型。该参数取值是MODEL时，model_asset_id必填；取值是PICTURE时，human_image必填。 * MODEL：通过分身数字人模型生成视频 * PICTURE： 通过单张照片生成视频 > * 该参数已废弃，照片数字人视频制作使用“创建照片分身数字人视频制作任务”接口。
 
@@ -424,7 +424,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
 
     @property
     def human_image(self):
-        """Gets the human_image of this Show2DDigitalHumanVideoResponse.
+        r"""Gets the human_image of this Show2DDigitalHumanVideoResponse.
 
         人物照片，需要Base64编码。 > * 该参数已废弃，照片数字人视频制作使用“创建照片分身数字人视频制作任务”接口。
 
@@ -435,7 +435,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
 
     @human_image.setter
     def human_image(self, human_image):
-        """Sets the human_image of this Show2DDigitalHumanVideoResponse.
+        r"""Sets the human_image of this Show2DDigitalHumanVideoResponse.
 
         人物照片，需要Base64编码。 > * 该参数已废弃，照片数字人视频制作使用“创建照片分身数字人视频制作任务”接口。
 
@@ -446,7 +446,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
 
     @property
     def model_asset_id(self):
-        """Gets the model_asset_id of this Show2DDigitalHumanVideoResponse.
+        r"""Gets the model_asset_id of this Show2DDigitalHumanVideoResponse.
 
         分身数字人模型资产ID，可以从资产库中查询。
 
@@ -457,7 +457,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
 
     @model_asset_id.setter
     def model_asset_id(self, model_asset_id):
-        """Sets the model_asset_id of this Show2DDigitalHumanVideoResponse.
+        r"""Sets the model_asset_id of this Show2DDigitalHumanVideoResponse.
 
         分身数字人模型资产ID，可以从资产库中查询。
 
@@ -468,7 +468,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
 
     @property
     def voice_config(self):
-        """Gets the voice_config of this Show2DDigitalHumanVideoResponse.
+        r"""Gets the voice_config of this Show2DDigitalHumanVideoResponse.
 
         :return: The voice_config of this Show2DDigitalHumanVideoResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.VoiceConfig`
@@ -477,7 +477,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
 
     @voice_config.setter
     def voice_config(self, voice_config):
-        """Sets the voice_config of this Show2DDigitalHumanVideoResponse.
+        r"""Sets the voice_config of this Show2DDigitalHumanVideoResponse.
 
         :param voice_config: The voice_config of this Show2DDigitalHumanVideoResponse.
         :type voice_config: :class:`huaweicloudsdkmetastudio.v1.VoiceConfig`
@@ -486,7 +486,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
 
     @property
     def video_config(self):
-        """Gets the video_config of this Show2DDigitalHumanVideoResponse.
+        r"""Gets the video_config of this Show2DDigitalHumanVideoResponse.
 
         :return: The video_config of this Show2DDigitalHumanVideoResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.VideoConfig`
@@ -495,7 +495,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
 
     @video_config.setter
     def video_config(self, video_config):
-        """Sets the video_config of this Show2DDigitalHumanVideoResponse.
+        r"""Sets the video_config of this Show2DDigitalHumanVideoResponse.
 
         :param video_config: The video_config of this Show2DDigitalHumanVideoResponse.
         :type video_config: :class:`huaweicloudsdkmetastudio.v1.VideoConfig`
@@ -504,7 +504,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
 
     @property
     def shoot_scripts(self):
-        """Gets the shoot_scripts of this Show2DDigitalHumanVideoResponse.
+        r"""Gets the shoot_scripts of this Show2DDigitalHumanVideoResponse.
 
         拍摄脚本列表。
 
@@ -515,7 +515,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
 
     @shoot_scripts.setter
     def shoot_scripts(self, shoot_scripts):
-        """Sets the shoot_scripts of this Show2DDigitalHumanVideoResponse.
+        r"""Sets the shoot_scripts of this Show2DDigitalHumanVideoResponse.
 
         拍摄脚本列表。
 
@@ -526,7 +526,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
 
     @property
     def background_music_config(self):
-        """Gets the background_music_config of this Show2DDigitalHumanVideoResponse.
+        r"""Gets the background_music_config of this Show2DDigitalHumanVideoResponse.
 
         :return: The background_music_config of this Show2DDigitalHumanVideoResponse.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.BackgroundMusicConfig`
@@ -535,7 +535,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
 
     @background_music_config.setter
     def background_music_config(self, background_music_config):
-        """Sets the background_music_config of this Show2DDigitalHumanVideoResponse.
+        r"""Sets the background_music_config of this Show2DDigitalHumanVideoResponse.
 
         :param background_music_config: The background_music_config of this Show2DDigitalHumanVideoResponse.
         :type background_music_config: :class:`huaweicloudsdkmetastudio.v1.BackgroundMusicConfig`
@@ -544,7 +544,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this Show2DDigitalHumanVideoResponse.
+        r"""Gets the x_request_id of this Show2DDigitalHumanVideoResponse.
 
         :return: The x_request_id of this Show2DDigitalHumanVideoResponse.
         :rtype: str
@@ -553,7 +553,7 @@ class Show2DDigitalHumanVideoResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this Show2DDigitalHumanVideoResponse.
+        r"""Sets the x_request_id of this Show2DDigitalHumanVideoResponse.
 
         :param x_request_id: The x_request_id of this Show2DDigitalHumanVideoResponse.
         :type x_request_id: str

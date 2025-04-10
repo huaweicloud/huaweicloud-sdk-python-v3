@@ -27,7 +27,7 @@ class AlertDetailDataclassRef:
     }
 
     def __init__(self, id=None, name=None):
-        """AlertDetailDataclassRef
+        r"""AlertDetailDataclassRef
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AlertDetailDataclassRef:
 
     @property
     def id(self):
-        """Gets the id of this AlertDetailDataclassRef.
+        r"""Gets the id of this AlertDetailDataclassRef.
 
         数据类唯一标识，UUID格式，最大36个字符
 
@@ -61,7 +61,7 @@ class AlertDetailDataclassRef:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AlertDetailDataclassRef.
+        r"""Sets the id of this AlertDetailDataclassRef.
 
         数据类唯一标识，UUID格式，最大36个字符
 
@@ -72,7 +72,7 @@ class AlertDetailDataclassRef:
 
     @property
     def name(self):
-        """Gets the name of this AlertDetailDataclassRef.
+        r"""Gets the name of this AlertDetailDataclassRef.
 
         数据类名称
 
@@ -83,7 +83,7 @@ class AlertDetailDataclassRef:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AlertDetailDataclassRef.
+        r"""Sets the name of this AlertDetailDataclassRef.
 
         数据类名称
 

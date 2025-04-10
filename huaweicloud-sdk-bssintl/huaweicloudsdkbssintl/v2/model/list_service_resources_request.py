@@ -31,7 +31,7 @@ class ListServiceResourcesRequest:
     }
 
     def __init__(self, x_language=None, service_type_code=None, offset=None, limit=None):
-        """ListServiceResourcesRequest
+        r"""ListServiceResourcesRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListServiceResourcesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListServiceResourcesRequest.
+        r"""Gets the x_language of this ListServiceResourcesRequest.
 
         语言。中文：zh_CN英文：en_US缺省为zh_CN。
 
@@ -74,7 +74,7 @@ class ListServiceResourcesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListServiceResourcesRequest.
+        r"""Sets the x_language of this ListServiceResourcesRequest.
 
         语言。中文：zh_CN英文：en_US缺省为zh_CN。
 
@@ -85,7 +85,7 @@ class ListServiceResourcesRequest:
 
     @property
     def service_type_code(self):
-        """Gets the service_type_code of this ListServiceResourcesRequest.
+        r"""Gets the service_type_code of this ListServiceResourcesRequest.
 
         云服务类型编码。例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
@@ -96,7 +96,7 @@ class ListServiceResourcesRequest:
 
     @service_type_code.setter
     def service_type_code(self, service_type_code):
-        """Sets the service_type_code of this ListServiceResourcesRequest.
+        r"""Sets the service_type_code of this ListServiceResourcesRequest.
 
         云服务类型编码。例如OBS的云服务类型编码为“hws.service.type.obs”。您可以调用查询云服务类型列表接口获取。
 
@@ -107,7 +107,7 @@ class ListServiceResourcesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListServiceResourcesRequest.
+        r"""Gets the offset of this ListServiceResourcesRequest.
 
         偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -118,7 +118,7 @@ class ListServiceResourcesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListServiceResourcesRequest.
+        r"""Sets the offset of this ListServiceResourcesRequest.
 
         偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -129,7 +129,7 @@ class ListServiceResourcesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListServiceResourcesRequest.
+        r"""Gets the limit of this ListServiceResourcesRequest.
 
         每次查询的数量，默认值为10。
 
@@ -140,7 +140,7 @@ class ListServiceResourcesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListServiceResourcesRequest.
+        r"""Sets the limit of this ListServiceResourcesRequest.
 
         每次查询的数量，默认值为10。
 

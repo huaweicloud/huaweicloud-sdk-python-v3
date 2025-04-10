@@ -39,7 +39,7 @@ class BackupInfo:
     }
 
     def __init__(self, id=None, instance_id=None, name=None, description=None, databases=None, begin_time=None, status=None, type=None):
-        """BackupInfo
+        r"""BackupInfo
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class BackupInfo:
 
     @property
     def id(self):
-        """Gets the id of this BackupInfo.
+        r"""Gets the id of this BackupInfo.
 
         备份ID。
 
@@ -97,7 +97,7 @@ class BackupInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BackupInfo.
+        r"""Sets the id of this BackupInfo.
 
         备份ID。
 
@@ -108,7 +108,7 @@ class BackupInfo:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this BackupInfo.
+        r"""Gets the instance_id of this BackupInfo.
 
         实例ID。
 
@@ -119,7 +119,7 @@ class BackupInfo:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this BackupInfo.
+        r"""Sets the instance_id of this BackupInfo.
 
         实例ID。
 
@@ -130,7 +130,7 @@ class BackupInfo:
 
     @property
     def name(self):
-        """Gets the name of this BackupInfo.
+        r"""Gets the name of this BackupInfo.
 
         备份名称。
 
@@ -141,7 +141,7 @@ class BackupInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BackupInfo.
+        r"""Sets the name of this BackupInfo.
 
         备份名称。
 
@@ -152,7 +152,7 @@ class BackupInfo:
 
     @property
     def description(self):
-        """Gets the description of this BackupInfo.
+        r"""Gets the description of this BackupInfo.
 
         备份描述。
 
@@ -163,7 +163,7 @@ class BackupInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this BackupInfo.
+        r"""Sets the description of this BackupInfo.
 
         备份描述。
 
@@ -174,7 +174,7 @@ class BackupInfo:
 
     @property
     def databases(self):
-        """Gets the databases of this BackupInfo.
+        r"""Gets the databases of this BackupInfo.
 
         只支持Microsoft SQL Server，局部备份的用户自建数据库名列表，当有此参数时以局部备份为准。
 
@@ -185,7 +185,7 @@ class BackupInfo:
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this BackupInfo.
+        r"""Sets the databases of this BackupInfo.
 
         只支持Microsoft SQL Server，局部备份的用户自建数据库名列表，当有此参数时以局部备份为准。
 
@@ -196,7 +196,7 @@ class BackupInfo:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this BackupInfo.
+        r"""Gets the begin_time of this BackupInfo.
 
         备份开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -207,7 +207,7 @@ class BackupInfo:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this BackupInfo.
+        r"""Sets the begin_time of this BackupInfo.
 
         备份开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -218,7 +218,7 @@ class BackupInfo:
 
     @property
     def status(self):
-        """Gets the status of this BackupInfo.
+        r"""Gets the status of this BackupInfo.
 
         备份状态，取值：  - BUILDING: 备份中。 - COMPLETED: 备份完成。 - FAILED：备份失败。 - DELETING：备份删除中。
 
@@ -229,7 +229,7 @@ class BackupInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this BackupInfo.
+        r"""Sets the status of this BackupInfo.
 
         备份状态，取值：  - BUILDING: 备份中。 - COMPLETED: 备份完成。 - FAILED：备份失败。 - DELETING：备份删除中。
 
@@ -240,7 +240,7 @@ class BackupInfo:
 
     @property
     def type(self):
-        """Gets the type of this BackupInfo.
+        r"""Gets the type of this BackupInfo.
 
         备份类型，取值：  - “auto”: 自动全量备份 - “manual”: 手动全量备份 - “fragment”: 差异全量备份 - “incremental”: 自动增量备份
 
@@ -251,7 +251,7 @@ class BackupInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this BackupInfo.
+        r"""Sets the type of this BackupInfo.
 
         备份类型，取值：  - “auto”: 自动全量备份 - “manual”: 手动全量备份 - “fragment”: 差异全量备份 - “incremental”: 自动增量备份
 

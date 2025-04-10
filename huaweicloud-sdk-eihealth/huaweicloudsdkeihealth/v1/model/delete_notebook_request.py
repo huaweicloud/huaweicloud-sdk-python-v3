@@ -27,7 +27,7 @@ class DeleteNotebookRequest:
     }
 
     def __init__(self, eihealth_project_id=None, notebook_id=None):
-        """DeleteNotebookRequest
+        r"""DeleteNotebookRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteNotebookRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this DeleteNotebookRequest.
+        r"""Gets the eihealth_project_id of this DeleteNotebookRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -59,7 +59,7 @@ class DeleteNotebookRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this DeleteNotebookRequest.
+        r"""Sets the eihealth_project_id of this DeleteNotebookRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -70,7 +70,7 @@ class DeleteNotebookRequest:
 
     @property
     def notebook_id(self):
-        """Gets the notebook_id of this DeleteNotebookRequest.
+        r"""Gets the notebook_id of this DeleteNotebookRequest.
 
         notebook id
 
@@ -81,7 +81,7 @@ class DeleteNotebookRequest:
 
     @notebook_id.setter
     def notebook_id(self, notebook_id):
-        """Sets the notebook_id of this DeleteNotebookRequest.
+        r"""Sets the notebook_id of this DeleteNotebookRequest.
 
         notebook id
 

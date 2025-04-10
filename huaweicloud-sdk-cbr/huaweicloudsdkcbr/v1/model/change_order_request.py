@@ -25,7 +25,7 @@ class ChangeOrderRequest:
     }
 
     def __init__(self, body=None):
-        """ChangeOrderRequest
+        r"""ChangeOrderRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ChangeOrderRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeOrderRequest.
+        r"""Gets the body of this ChangeOrderRequest.
 
         :return: The body of this ChangeOrderRequest.
         :rtype: :class:`huaweicloudsdkcbr.v1.CbcOrderChange`
@@ -52,7 +52,7 @@ class ChangeOrderRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeOrderRequest.
+        r"""Sets the body of this ChangeOrderRequest.
 
         :param body: The body of this ChangeOrderRequest.
         :type body: :class:`huaweicloudsdkcbr.v1.CbcOrderChange`

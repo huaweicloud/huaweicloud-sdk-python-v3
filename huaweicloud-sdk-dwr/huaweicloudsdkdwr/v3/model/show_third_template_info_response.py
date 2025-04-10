@@ -34,7 +34,7 @@ class ShowThirdTemplateInfoResponse(SdkResponse):
     }
 
     def __init__(self, provided_actions=None, x_request_id=None, connection=None, content_length=None, date=None):
-        """ShowThirdTemplateInfoResponse
+        r"""ShowThirdTemplateInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowThirdTemplateInfoResponse(SdkResponse):
 
     @property
     def provided_actions(self):
-        """Gets the provided_actions of this ShowThirdTemplateInfoResponse.
+        r"""Gets the provided_actions of this ShowThirdTemplateInfoResponse.
 
         :return: The provided_actions of this ShowThirdTemplateInfoResponse.
         :rtype: :class:`huaweicloudsdkdwr.v3.ProvidedAction`
@@ -81,7 +81,7 @@ class ShowThirdTemplateInfoResponse(SdkResponse):
 
     @provided_actions.setter
     def provided_actions(self, provided_actions):
-        """Sets the provided_actions of this ShowThirdTemplateInfoResponse.
+        r"""Sets the provided_actions of this ShowThirdTemplateInfoResponse.
 
         :param provided_actions: The provided_actions of this ShowThirdTemplateInfoResponse.
         :type provided_actions: :class:`huaweicloudsdkdwr.v3.ProvidedAction`
@@ -90,7 +90,7 @@ class ShowThirdTemplateInfoResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowThirdTemplateInfoResponse.
+        r"""Gets the x_request_id of this ShowThirdTemplateInfoResponse.
 
         :return: The x_request_id of this ShowThirdTemplateInfoResponse.
         :rtype: str
@@ -99,7 +99,7 @@ class ShowThirdTemplateInfoResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowThirdTemplateInfoResponse.
+        r"""Sets the x_request_id of this ShowThirdTemplateInfoResponse.
 
         :param x_request_id: The x_request_id of this ShowThirdTemplateInfoResponse.
         :type x_request_id: str
@@ -108,7 +108,7 @@ class ShowThirdTemplateInfoResponse(SdkResponse):
 
     @property
     def connection(self):
-        """Gets the connection of this ShowThirdTemplateInfoResponse.
+        r"""Gets the connection of this ShowThirdTemplateInfoResponse.
 
         :return: The connection of this ShowThirdTemplateInfoResponse.
         :rtype: str
@@ -117,7 +117,7 @@ class ShowThirdTemplateInfoResponse(SdkResponse):
 
     @connection.setter
     def connection(self, connection):
-        """Sets the connection of this ShowThirdTemplateInfoResponse.
+        r"""Sets the connection of this ShowThirdTemplateInfoResponse.
 
         :param connection: The connection of this ShowThirdTemplateInfoResponse.
         :type connection: str
@@ -126,7 +126,7 @@ class ShowThirdTemplateInfoResponse(SdkResponse):
 
     @property
     def content_length(self):
-        """Gets the content_length of this ShowThirdTemplateInfoResponse.
+        r"""Gets the content_length of this ShowThirdTemplateInfoResponse.
 
         :return: The content_length of this ShowThirdTemplateInfoResponse.
         :rtype: str
@@ -135,7 +135,7 @@ class ShowThirdTemplateInfoResponse(SdkResponse):
 
     @content_length.setter
     def content_length(self, content_length):
-        """Sets the content_length of this ShowThirdTemplateInfoResponse.
+        r"""Sets the content_length of this ShowThirdTemplateInfoResponse.
 
         :param content_length: The content_length of this ShowThirdTemplateInfoResponse.
         :type content_length: str
@@ -144,7 +144,7 @@ class ShowThirdTemplateInfoResponse(SdkResponse):
 
     @property
     def date(self):
-        """Gets the date of this ShowThirdTemplateInfoResponse.
+        r"""Gets the date of this ShowThirdTemplateInfoResponse.
 
         :return: The date of this ShowThirdTemplateInfoResponse.
         :rtype: str
@@ -153,7 +153,7 @@ class ShowThirdTemplateInfoResponse(SdkResponse):
 
     @date.setter
     def date(self, date):
-        """Sets the date of this ShowThirdTemplateInfoResponse.
+        r"""Sets the date of this ShowThirdTemplateInfoResponse.
 
         :param date: The date of this ShowThirdTemplateInfoResponse.
         :type date: str

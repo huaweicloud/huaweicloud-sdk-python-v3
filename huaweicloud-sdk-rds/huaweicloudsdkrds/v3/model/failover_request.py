@@ -25,7 +25,7 @@ class FailoverRequest:
     }
 
     def __init__(self, force=None):
-        """FailoverRequest
+        r"""FailoverRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class FailoverRequest:
 
     @property
     def force(self):
-        """Gets the force of this FailoverRequest.
+        r"""Gets the force of this FailoverRequest.
 
         是否强制倒换；true：强制倒换；false和默认null为不强制。
 
@@ -54,7 +54,7 @@ class FailoverRequest:
 
     @force.setter
     def force(self, force):
-        """Sets the force of this FailoverRequest.
+        r"""Sets the force of this FailoverRequest.
 
         是否强制倒换；true：强制倒换；false和默认null为不强制。
 

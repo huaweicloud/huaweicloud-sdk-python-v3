@@ -43,7 +43,7 @@ class NeutronCreateSecurityGroupRuleOption:
     }
 
     def __init__(self, description=None, direction=None, ethertype=None, port_range_max=None, port_range_min=None, protocol=None, remote_group_id=None, remote_ip_prefix=None, remote_address_group_id=None, security_group_id=None):
-        """NeutronCreateSecurityGroupRuleOption
+        r"""NeutronCreateSecurityGroupRuleOption
 
         The model defined in huaweicloud sdk
 
@@ -104,7 +104,7 @@ class NeutronCreateSecurityGroupRuleOption:
 
     @property
     def description(self):
-        """Gets the description of this NeutronCreateSecurityGroupRuleOption.
+        r"""Gets the description of this NeutronCreateSecurityGroupRuleOption.
 
         功能说明：安全组规则描述 取值范围：0-255个字符
 
@@ -115,7 +115,7 @@ class NeutronCreateSecurityGroupRuleOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this NeutronCreateSecurityGroupRuleOption.
+        r"""Sets the description of this NeutronCreateSecurityGroupRuleOption.
 
         功能说明：安全组规则描述 取值范围：0-255个字符
 
@@ -126,7 +126,7 @@ class NeutronCreateSecurityGroupRuleOption:
 
     @property
     def direction(self):
-        """Gets the direction of this NeutronCreateSecurityGroupRuleOption.
+        r"""Gets the direction of this NeutronCreateSecurityGroupRuleOption.
 
         功能说明：安全组规则方向 取值范围：ingress(入方向)或egress(出方向)
 
@@ -137,7 +137,7 @@ class NeutronCreateSecurityGroupRuleOption:
 
     @direction.setter
     def direction(self, direction):
-        """Sets the direction of this NeutronCreateSecurityGroupRuleOption.
+        r"""Sets the direction of this NeutronCreateSecurityGroupRuleOption.
 
         功能说明：安全组规则方向 取值范围：ingress(入方向)或egress(出方向)
 
@@ -148,7 +148,7 @@ class NeutronCreateSecurityGroupRuleOption:
 
     @property
     def ethertype(self):
-        """Gets the ethertype of this NeutronCreateSecurityGroupRuleOption.
+        r"""Gets the ethertype of this NeutronCreateSecurityGroupRuleOption.
 
         功能说明：安全组规则网络类型 取值范围：IPv4或IPv6
 
@@ -159,7 +159,7 @@ class NeutronCreateSecurityGroupRuleOption:
 
     @ethertype.setter
     def ethertype(self, ethertype):
-        """Sets the ethertype of this NeutronCreateSecurityGroupRuleOption.
+        r"""Sets the ethertype of this NeutronCreateSecurityGroupRuleOption.
 
         功能说明：安全组规则网络类型 取值范围：IPv4或IPv6
 
@@ -170,7 +170,7 @@ class NeutronCreateSecurityGroupRuleOption:
 
     @property
     def port_range_max(self):
-        """Gets the port_range_max of this NeutronCreateSecurityGroupRuleOption.
+        r"""Gets the port_range_max of this NeutronCreateSecurityGroupRuleOption.
 
         最大端口，当协议类型为ICMP时，该值表示ICMP的code
 
@@ -181,7 +181,7 @@ class NeutronCreateSecurityGroupRuleOption:
 
     @port_range_max.setter
     def port_range_max(self, port_range_max):
-        """Sets the port_range_max of this NeutronCreateSecurityGroupRuleOption.
+        r"""Sets the port_range_max of this NeutronCreateSecurityGroupRuleOption.
 
         最大端口，当协议类型为ICMP时，该值表示ICMP的code
 
@@ -192,7 +192,7 @@ class NeutronCreateSecurityGroupRuleOption:
 
     @property
     def port_range_min(self):
-        """Gets the port_range_min of this NeutronCreateSecurityGroupRuleOption.
+        r"""Gets the port_range_min of this NeutronCreateSecurityGroupRuleOption.
 
         功能说明：最小端口，当协议类型为ICMP时，该值表示ICMP的type 约束：protocol为tcp和udp时，port_range_max和port_range_min必须同时输入，且port_range_max应大于等于port_range_min。protocol为icmp时，指定ICMP code（port_range_max）时，必须同时指定ICMP type（port_range_min）。
 
@@ -203,7 +203,7 @@ class NeutronCreateSecurityGroupRuleOption:
 
     @port_range_min.setter
     def port_range_min(self, port_range_min):
-        """Sets the port_range_min of this NeutronCreateSecurityGroupRuleOption.
+        r"""Sets the port_range_min of this NeutronCreateSecurityGroupRuleOption.
 
         功能说明：最小端口，当协议类型为ICMP时，该值表示ICMP的type 约束：protocol为tcp和udp时，port_range_max和port_range_min必须同时输入，且port_range_max应大于等于port_range_min。protocol为icmp时，指定ICMP code（port_range_max）时，必须同时指定ICMP type（port_range_min）。
 
@@ -214,7 +214,7 @@ class NeutronCreateSecurityGroupRuleOption:
 
     @property
     def protocol(self):
-        """Gets the protocol of this NeutronCreateSecurityGroupRuleOption.
+        r"""Gets the protocol of this NeutronCreateSecurityGroupRuleOption.
 
         功能说明：tcp/udp/icmp/icmpv6或IP协议编号（0~255） 约束：协议为icmpv6时，网络类型应该为IPv6；协议为icmp时，网络类型应该为IPv4
 
@@ -225,7 +225,7 @@ class NeutronCreateSecurityGroupRuleOption:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this NeutronCreateSecurityGroupRuleOption.
+        r"""Sets the protocol of this NeutronCreateSecurityGroupRuleOption.
 
         功能说明：tcp/udp/icmp/icmpv6或IP协议编号（0~255） 约束：协议为icmpv6时，网络类型应该为IPv6；协议为icmp时，网络类型应该为IPv4
 
@@ -236,7 +236,7 @@ class NeutronCreateSecurityGroupRuleOption:
 
     @property
     def remote_group_id(self):
-        """Gets the remote_group_id of this NeutronCreateSecurityGroupRuleOption.
+        r"""Gets the remote_group_id of this NeutronCreateSecurityGroupRuleOption.
 
         功能说明：目的安全组的ID
 
@@ -247,7 +247,7 @@ class NeutronCreateSecurityGroupRuleOption:
 
     @remote_group_id.setter
     def remote_group_id(self, remote_group_id):
-        """Sets the remote_group_id of this NeutronCreateSecurityGroupRuleOption.
+        r"""Sets the remote_group_id of this NeutronCreateSecurityGroupRuleOption.
 
         功能说明：目的安全组的ID
 
@@ -258,7 +258,7 @@ class NeutronCreateSecurityGroupRuleOption:
 
     @property
     def remote_ip_prefix(self):
-        """Gets the remote_ip_prefix of this NeutronCreateSecurityGroupRuleOption.
+        r"""Gets the remote_ip_prefix of this NeutronCreateSecurityGroupRuleOption.
 
         功能说明：目的端ip网段 取值范围：cidr格式，如10.10.0.0/16
 
@@ -269,7 +269,7 @@ class NeutronCreateSecurityGroupRuleOption:
 
     @remote_ip_prefix.setter
     def remote_ip_prefix(self, remote_ip_prefix):
-        """Sets the remote_ip_prefix of this NeutronCreateSecurityGroupRuleOption.
+        r"""Sets the remote_ip_prefix of this NeutronCreateSecurityGroupRuleOption.
 
         功能说明：目的端ip网段 取值范围：cidr格式，如10.10.0.0/16
 
@@ -280,7 +280,7 @@ class NeutronCreateSecurityGroupRuleOption:
 
     @property
     def remote_address_group_id(self):
-        """Gets the remote_address_group_id of this NeutronCreateSecurityGroupRuleOption.
+        r"""Gets the remote_address_group_id of this NeutronCreateSecurityGroupRuleOption.
 
         功能说明：远端地址组的ID
 
@@ -291,7 +291,7 @@ class NeutronCreateSecurityGroupRuleOption:
 
     @remote_address_group_id.setter
     def remote_address_group_id(self, remote_address_group_id):
-        """Sets the remote_address_group_id of this NeutronCreateSecurityGroupRuleOption.
+        r"""Sets the remote_address_group_id of this NeutronCreateSecurityGroupRuleOption.
 
         功能说明：远端地址组的ID
 
@@ -302,7 +302,7 @@ class NeutronCreateSecurityGroupRuleOption:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this NeutronCreateSecurityGroupRuleOption.
+        r"""Gets the security_group_id of this NeutronCreateSecurityGroupRuleOption.
 
         所属安全组ID
 
@@ -313,7 +313,7 @@ class NeutronCreateSecurityGroupRuleOption:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this NeutronCreateSecurityGroupRuleOption.
+        r"""Sets the security_group_id of this NeutronCreateSecurityGroupRuleOption.
 
         所属安全组ID
 

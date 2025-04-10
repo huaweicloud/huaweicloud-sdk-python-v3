@@ -33,7 +33,7 @@ class ThrottleApiBinding:
     }
 
     def __init__(self, publish_id=None, scope=None, strategy_id=None, apply_time=None, id=None):
-        """ThrottleApiBinding
+        r"""ThrottleApiBinding
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ThrottleApiBinding:
 
     @property
     def publish_id(self):
-        """Gets the publish_id of this ThrottleApiBinding.
+        r"""Gets the publish_id of this ThrottleApiBinding.
 
         API的发布记录编号
 
@@ -82,7 +82,7 @@ class ThrottleApiBinding:
 
     @publish_id.setter
     def publish_id(self, publish_id):
-        """Sets the publish_id of this ThrottleApiBinding.
+        r"""Sets the publish_id of this ThrottleApiBinding.
 
         API的发布记录编号
 
@@ -93,7 +93,7 @@ class ThrottleApiBinding:
 
     @property
     def scope(self):
-        """Gets the scope of this ThrottleApiBinding.
+        r"""Gets the scope of this ThrottleApiBinding.
 
         策略作用域，取值如下： - 1：整个API - 2： 单个用户 - 3：单个APP  目前只支持1
 
@@ -104,7 +104,7 @@ class ThrottleApiBinding:
 
     @scope.setter
     def scope(self, scope):
-        """Sets the scope of this ThrottleApiBinding.
+        r"""Sets the scope of this ThrottleApiBinding.
 
         策略作用域，取值如下： - 1：整个API - 2： 单个用户 - 3：单个APP  目前只支持1
 
@@ -115,7 +115,7 @@ class ThrottleApiBinding:
 
     @property
     def strategy_id(self):
-        """Gets the strategy_id of this ThrottleApiBinding.
+        r"""Gets the strategy_id of this ThrottleApiBinding.
 
         流控策略的ID
 
@@ -126,7 +126,7 @@ class ThrottleApiBinding:
 
     @strategy_id.setter
     def strategy_id(self, strategy_id):
-        """Sets the strategy_id of this ThrottleApiBinding.
+        r"""Sets the strategy_id of this ThrottleApiBinding.
 
         流控策略的ID
 
@@ -137,7 +137,7 @@ class ThrottleApiBinding:
 
     @property
     def apply_time(self):
-        """Gets the apply_time of this ThrottleApiBinding.
+        r"""Gets the apply_time of this ThrottleApiBinding.
 
         绑定时间
 
@@ -148,7 +148,7 @@ class ThrottleApiBinding:
 
     @apply_time.setter
     def apply_time(self, apply_time):
-        """Sets the apply_time of this ThrottleApiBinding.
+        r"""Sets the apply_time of this ThrottleApiBinding.
 
         绑定时间
 
@@ -159,7 +159,7 @@ class ThrottleApiBinding:
 
     @property
     def id(self):
-        """Gets the id of this ThrottleApiBinding.
+        r"""Gets the id of this ThrottleApiBinding.
 
         绑定关系的ID
 
@@ -170,7 +170,7 @@ class ThrottleApiBinding:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ThrottleApiBinding.
+        r"""Sets the id of this ThrottleApiBinding.
 
         绑定关系的ID
 

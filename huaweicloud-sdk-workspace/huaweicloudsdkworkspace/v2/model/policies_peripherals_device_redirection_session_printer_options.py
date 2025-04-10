@@ -25,7 +25,7 @@ class PoliciesPeripheralsDeviceRedirectionSessionPrinterOptions:
     }
 
     def __init__(self, session_printer_customization_policy=None):
-        """PoliciesPeripheralsDeviceRedirectionSessionPrinterOptions
+        r"""PoliciesPeripheralsDeviceRedirectionSessionPrinterOptions
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PoliciesPeripheralsDeviceRedirectionSessionPrinterOptions:
 
     @property
     def session_printer_customization_policy(self):
-        """Gets the session_printer_customization_policy of this PoliciesPeripheralsDeviceRedirectionSessionPrinterOptions.
+        r"""Gets the session_printer_customization_policy of this PoliciesPeripheralsDeviceRedirectionSessionPrinterOptions.
 
         会话打印机自定义策略。
 
@@ -54,7 +54,7 @@ class PoliciesPeripheralsDeviceRedirectionSessionPrinterOptions:
 
     @session_printer_customization_policy.setter
     def session_printer_customization_policy(self, session_printer_customization_policy):
-        """Sets the session_printer_customization_policy of this PoliciesPeripheralsDeviceRedirectionSessionPrinterOptions.
+        r"""Sets the session_printer_customization_policy of this PoliciesPeripheralsDeviceRedirectionSessionPrinterOptions.
 
         会话打印机自定义策略。
 

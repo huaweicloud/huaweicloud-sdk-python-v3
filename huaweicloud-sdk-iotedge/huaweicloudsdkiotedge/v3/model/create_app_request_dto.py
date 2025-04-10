@@ -31,7 +31,7 @@ class CreateAppRequestDTO:
     }
 
     def __init__(self, app_id=None, app_name=None, description=None, app_type=None):
-        """CreateAppRequestDTO
+        r"""CreateAppRequestDTO
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class CreateAppRequestDTO:
 
     @property
     def app_id(self):
-        """Gets the app_id of this CreateAppRequestDTO.
+        r"""Gets the app_id of this CreateAppRequestDTO.
 
         应用ID
 
@@ -73,7 +73,7 @@ class CreateAppRequestDTO:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this CreateAppRequestDTO.
+        r"""Sets the app_id of this CreateAppRequestDTO.
 
         应用ID
 
@@ -84,7 +84,7 @@ class CreateAppRequestDTO:
 
     @property
     def app_name(self):
-        """Gets the app_name of this CreateAppRequestDTO.
+        r"""Gets the app_name of this CreateAppRequestDTO.
 
         应用名称
 
@@ -95,7 +95,7 @@ class CreateAppRequestDTO:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this CreateAppRequestDTO.
+        r"""Sets the app_name of this CreateAppRequestDTO.
 
         应用名称
 
@@ -106,7 +106,7 @@ class CreateAppRequestDTO:
 
     @property
     def description(self):
-        """Gets the description of this CreateAppRequestDTO.
+        r"""Gets the description of this CreateAppRequestDTO.
 
         应用描述
 
@@ -117,7 +117,7 @@ class CreateAppRequestDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateAppRequestDTO.
+        r"""Sets the description of this CreateAppRequestDTO.
 
         应用描述
 
@@ -128,7 +128,7 @@ class CreateAppRequestDTO:
 
     @property
     def app_type(self):
-        """Gets the app_type of this CreateAppRequestDTO.
+        r"""Gets the app_type of this CreateAppRequestDTO.
 
         应用类型
 
@@ -139,7 +139,7 @@ class CreateAppRequestDTO:
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this CreateAppRequestDTO.
+        r"""Sets the app_type of this CreateAppRequestDTO.
 
         应用类型
 

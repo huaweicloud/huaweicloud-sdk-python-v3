@@ -25,7 +25,7 @@ class UpdateL7policiesRequestBody:
     }
 
     def __init__(self, l7policy=None):
-        """UpdateL7policiesRequestBody
+        r"""UpdateL7policiesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateL7policiesRequestBody:
 
     @property
     def l7policy(self):
-        """Gets the l7policy of this UpdateL7policiesRequestBody.
+        r"""Gets the l7policy of this UpdateL7policiesRequestBody.
 
         :return: The l7policy of this UpdateL7policiesRequestBody.
         :rtype: :class:`huaweicloudsdkelb.v2.UpdateL7policyReq`
@@ -51,7 +51,7 @@ class UpdateL7policiesRequestBody:
 
     @l7policy.setter
     def l7policy(self, l7policy):
-        """Sets the l7policy of this UpdateL7policiesRequestBody.
+        r"""Sets the l7policy of this UpdateL7policiesRequestBody.
 
         :param l7policy: The l7policy of this UpdateL7policiesRequestBody.
         :type l7policy: :class:`huaweicloudsdkelb.v2.UpdateL7policyReq`

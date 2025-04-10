@@ -29,7 +29,7 @@ class CreateDatabaseResourceReq:
     }
 
     def __init__(self, spec_code=None, disk_space=None, disk_encrypt=None):
-        """CreateDatabaseResourceReq
+        r"""CreateDatabaseResourceReq
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateDatabaseResourceReq:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this CreateDatabaseResourceReq.
+        r"""Gets the spec_code of this CreateDatabaseResourceReq.
 
         规格编码
 
@@ -66,7 +66,7 @@ class CreateDatabaseResourceReq:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this CreateDatabaseResourceReq.
+        r"""Sets the spec_code of this CreateDatabaseResourceReq.
 
         规格编码
 
@@ -77,7 +77,7 @@ class CreateDatabaseResourceReq:
 
     @property
     def disk_space(self):
-        """Gets the disk_space of this CreateDatabaseResourceReq.
+        r"""Gets the disk_space of this CreateDatabaseResourceReq.
 
         磁盘存储空间，该字段暂不生效
 
@@ -88,7 +88,7 @@ class CreateDatabaseResourceReq:
 
     @disk_space.setter
     def disk_space(self, disk_space):
-        """Sets the disk_space of this CreateDatabaseResourceReq.
+        r"""Sets the disk_space of this CreateDatabaseResourceReq.
 
         磁盘存储空间，该字段暂不生效
 
@@ -99,7 +99,7 @@ class CreateDatabaseResourceReq:
 
     @property
     def disk_encrypt(self):
-        """Gets the disk_encrypt of this CreateDatabaseResourceReq.
+        r"""Gets the disk_encrypt of this CreateDatabaseResourceReq.
 
         磁盘是否加密
 
@@ -110,7 +110,7 @@ class CreateDatabaseResourceReq:
 
     @disk_encrypt.setter
     def disk_encrypt(self, disk_encrypt):
-        """Sets the disk_encrypt of this CreateDatabaseResourceReq.
+        r"""Sets the disk_encrypt of this CreateDatabaseResourceReq.
 
         磁盘是否加密
 

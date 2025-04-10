@@ -41,7 +41,7 @@ class UserVmrDTO:
     }
 
     def __init__(self, id=None, vmr_id=None, vmr_name=None, vmr_mode=None, vmr_pkg_id=None, vmr_pkg_name=None, vmr_pkg_parties=None, vmr_pkg_length=None, status=None):
-        """UserVmrDTO
+        r"""UserVmrDTO
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class UserVmrDTO:
 
     @property
     def id(self):
-        """Gets the id of this UserVmrDTO.
+        r"""Gets the id of this UserVmrDTO.
 
         云会议室的ID。 > 对应[[创建会议](https://support.huaweicloud.com/api-meeting/meeting_21_0014.html)](tag:hws)[[创建会议](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0014.html)](tag:hk)接口中的vmrID。 
 
@@ -110,7 +110,7 @@ class UserVmrDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UserVmrDTO.
+        r"""Sets the id of this UserVmrDTO.
 
         云会议室的ID。 > 对应[[创建会议](https://support.huaweicloud.com/api-meeting/meeting_21_0014.html)](tag:hws)[[创建会议](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0014.html)](tag:hk)接口中的vmrID。 
 
@@ -121,7 +121,7 @@ class UserVmrDTO:
 
     @property
     def vmr_id(self):
-        """Gets the vmr_id of this UserVmrDTO.
+        r"""Gets the vmr_id of this UserVmrDTO.
 
         云会议室的固定会议ID。 > 对应[[创建会议](https://support.huaweicloud.com/api-meeting/meeting_21_0014.html)](tag:hws)[[创建会议](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0014.html)](tag:hk)接口返回数据的vmrConferenceID。 
 
@@ -132,7 +132,7 @@ class UserVmrDTO:
 
     @vmr_id.setter
     def vmr_id(self, vmr_id):
-        """Sets the vmr_id of this UserVmrDTO.
+        r"""Sets the vmr_id of this UserVmrDTO.
 
         云会议室的固定会议ID。 > 对应[[创建会议](https://support.huaweicloud.com/api-meeting/meeting_21_0014.html)](tag:hws)[[创建会议](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0014.html)](tag:hk)接口返回数据的vmrConferenceID。 
 
@@ -143,7 +143,7 @@ class UserVmrDTO:
 
     @property
     def vmr_name(self):
-        """Gets the vmr_name of this UserVmrDTO.
+        r"""Gets the vmr_name of this UserVmrDTO.
 
         云会议室名称。
 
@@ -154,7 +154,7 @@ class UserVmrDTO:
 
     @vmr_name.setter
     def vmr_name(self, vmr_name):
-        """Sets the vmr_name of this UserVmrDTO.
+        r"""Sets the vmr_name of this UserVmrDTO.
 
         云会议室名称。
 
@@ -165,7 +165,7 @@ class UserVmrDTO:
 
     @property
     def vmr_mode(self):
-        """Gets the vmr_mode of this UserVmrDTO.
+        r"""Gets the vmr_mode of this UserVmrDTO.
 
         VMR模式。 - 0：个人会议ID - 1: 云会议室 - 2: 网络研讨会 
 
@@ -176,7 +176,7 @@ class UserVmrDTO:
 
     @vmr_mode.setter
     def vmr_mode(self, vmr_mode):
-        """Sets the vmr_mode of this UserVmrDTO.
+        r"""Sets the vmr_mode of this UserVmrDTO.
 
         VMR模式。 - 0：个人会议ID - 1: 云会议室 - 2: 网络研讨会 
 
@@ -187,7 +187,7 @@ class UserVmrDTO:
 
     @property
     def vmr_pkg_id(self):
-        """Gets the vmr_pkg_id of this UserVmrDTO.
+        r"""Gets the vmr_pkg_id of this UserVmrDTO.
 
         云会议室套餐包的id，仅云会议室返回。
 
@@ -198,7 +198,7 @@ class UserVmrDTO:
 
     @vmr_pkg_id.setter
     def vmr_pkg_id(self, vmr_pkg_id):
-        """Sets the vmr_pkg_id of this UserVmrDTO.
+        r"""Sets the vmr_pkg_id of this UserVmrDTO.
 
         云会议室套餐包的id，仅云会议室返回。
 
@@ -209,7 +209,7 @@ class UserVmrDTO:
 
     @property
     def vmr_pkg_name(self):
-        """Gets the vmr_pkg_name of this UserVmrDTO.
+        r"""Gets the vmr_pkg_name of this UserVmrDTO.
 
         云会议室套餐包的名称，仅云会议室返回。
 
@@ -220,7 +220,7 @@ class UserVmrDTO:
 
     @vmr_pkg_name.setter
     def vmr_pkg_name(self, vmr_pkg_name):
-        """Sets the vmr_pkg_name of this UserVmrDTO.
+        r"""Sets the vmr_pkg_name of this UserVmrDTO.
 
         云会议室套餐包的名称，仅云会议室返回。
 
@@ -231,7 +231,7 @@ class UserVmrDTO:
 
     @property
     def vmr_pkg_parties(self):
-        """Gets the vmr_pkg_parties of this UserVmrDTO.
+        r"""Gets the vmr_pkg_parties of this UserVmrDTO.
 
         云会议室套餐包的会议并发方数，仅云会议室返回。
 
@@ -242,7 +242,7 @@ class UserVmrDTO:
 
     @vmr_pkg_parties.setter
     def vmr_pkg_parties(self, vmr_pkg_parties):
-        """Sets the vmr_pkg_parties of this UserVmrDTO.
+        r"""Sets the vmr_pkg_parties of this UserVmrDTO.
 
         云会议室套餐包的会议并发方数，仅云会议室返回。
 
@@ -253,7 +253,7 @@ class UserVmrDTO:
 
     @property
     def vmr_pkg_length(self):
-        """Gets the vmr_pkg_length of this UserVmrDTO.
+        r"""Gets the vmr_pkg_length of this UserVmrDTO.
 
         云会议室套餐包的与会时间，若为0则代表无限时长，仅云会议室返回。
 
@@ -264,7 +264,7 @@ class UserVmrDTO:
 
     @vmr_pkg_length.setter
     def vmr_pkg_length(self, vmr_pkg_length):
-        """Sets the vmr_pkg_length of this UserVmrDTO.
+        r"""Sets the vmr_pkg_length of this UserVmrDTO.
 
         云会议室套餐包的与会时间，若为0则代表无限时长，仅云会议室返回。
 
@@ -275,7 +275,7 @@ class UserVmrDTO:
 
     @property
     def status(self):
-        """Gets the status of this UserVmrDTO.
+        r"""Gets the status of this UserVmrDTO.
 
         云会议室状态。 * 0：正常 * 1：停用 * 2：未分配 
 
@@ -286,7 +286,7 @@ class UserVmrDTO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UserVmrDTO.
+        r"""Sets the status of this UserVmrDTO.
 
         云会议室状态。 * 0：正常 * 1：停用 * 2：未分配 
 

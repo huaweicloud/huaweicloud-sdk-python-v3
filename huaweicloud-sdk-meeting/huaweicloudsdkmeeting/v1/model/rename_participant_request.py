@@ -29,7 +29,7 @@ class RenameParticipantRequest:
     }
 
     def __init__(self, conference_id=None, x_conference_authorization=None, body=None):
-        """RenameParticipantRequest
+        r"""RenameParticipantRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class RenameParticipantRequest:
 
     @property
     def conference_id(self):
-        """Gets the conference_id of this RenameParticipantRequest.
+        r"""Gets the conference_id of this RenameParticipantRequest.
 
         会议ID。
 
@@ -66,7 +66,7 @@ class RenameParticipantRequest:
 
     @conference_id.setter
     def conference_id(self, conference_id):
-        """Sets the conference_id of this RenameParticipantRequest.
+        r"""Sets the conference_id of this RenameParticipantRequest.
 
         会议ID。
 
@@ -77,7 +77,7 @@ class RenameParticipantRequest:
 
     @property
     def x_conference_authorization(self):
-        """Gets the x_conference_authorization of this RenameParticipantRequest.
+        r"""Gets the x_conference_authorization of this RenameParticipantRequest.
 
         会控Token，通过[[获取会控token](https://support.huaweicloud.com/api-meeting/meeting_21_0027.html)](tag:hws)[[获取会控token](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0027.html)](tag:hk)接口获得。
 
@@ -88,7 +88,7 @@ class RenameParticipantRequest:
 
     @x_conference_authorization.setter
     def x_conference_authorization(self, x_conference_authorization):
-        """Sets the x_conference_authorization of this RenameParticipantRequest.
+        r"""Sets the x_conference_authorization of this RenameParticipantRequest.
 
         会控Token，通过[[获取会控token](https://support.huaweicloud.com/api-meeting/meeting_21_0027.html)](tag:hws)[[获取会控token](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0027.html)](tag:hk)接口获得。
 
@@ -99,7 +99,7 @@ class RenameParticipantRequest:
 
     @property
     def body(self):
-        """Gets the body of this RenameParticipantRequest.
+        r"""Gets the body of this RenameParticipantRequest.
 
         :return: The body of this RenameParticipantRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.RestRenamePartReqBody`
@@ -108,7 +108,7 @@ class RenameParticipantRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RenameParticipantRequest.
+        r"""Sets the body of this RenameParticipantRequest.
 
         :param body: The body of this RenameParticipantRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.RestRenamePartReqBody`

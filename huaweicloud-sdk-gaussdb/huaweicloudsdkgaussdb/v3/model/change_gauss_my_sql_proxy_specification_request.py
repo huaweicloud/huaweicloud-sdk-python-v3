@@ -31,7 +31,7 @@ class ChangeGaussMySqlProxySpecificationRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, proxy_id=None, body=None):
-        """ChangeGaussMySqlProxySpecificationRequest
+        r"""ChangeGaussMySqlProxySpecificationRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ChangeGaussMySqlProxySpecificationRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ChangeGaussMySqlProxySpecificationRequest.
+        r"""Gets the x_language of this ChangeGaussMySqlProxySpecificationRequest.
 
         语言。
 
@@ -73,7 +73,7 @@ class ChangeGaussMySqlProxySpecificationRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ChangeGaussMySqlProxySpecificationRequest.
+        r"""Sets the x_language of this ChangeGaussMySqlProxySpecificationRequest.
 
         语言。
 
@@ -84,7 +84,7 @@ class ChangeGaussMySqlProxySpecificationRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ChangeGaussMySqlProxySpecificationRequest.
+        r"""Gets the instance_id of this ChangeGaussMySqlProxySpecificationRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -95,7 +95,7 @@ class ChangeGaussMySqlProxySpecificationRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ChangeGaussMySqlProxySpecificationRequest.
+        r"""Sets the instance_id of this ChangeGaussMySqlProxySpecificationRequest.
 
         实例ID，严格匹配UUID规则。
 
@@ -106,7 +106,7 @@ class ChangeGaussMySqlProxySpecificationRequest:
 
     @property
     def proxy_id(self):
-        """Gets the proxy_id of this ChangeGaussMySqlProxySpecificationRequest.
+        r"""Gets the proxy_id of this ChangeGaussMySqlProxySpecificationRequest.
 
         数据库代理ID，严格匹配UUID规则。
 
@@ -117,7 +117,7 @@ class ChangeGaussMySqlProxySpecificationRequest:
 
     @proxy_id.setter
     def proxy_id(self, proxy_id):
-        """Sets the proxy_id of this ChangeGaussMySqlProxySpecificationRequest.
+        r"""Sets the proxy_id of this ChangeGaussMySqlProxySpecificationRequest.
 
         数据库代理ID，严格匹配UUID规则。
 
@@ -128,7 +128,7 @@ class ChangeGaussMySqlProxySpecificationRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeGaussMySqlProxySpecificationRequest.
+        r"""Gets the body of this ChangeGaussMySqlProxySpecificationRequest.
 
         :return: The body of this ChangeGaussMySqlProxySpecificationRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.TaurusProxyScaleRequest`
@@ -137,7 +137,7 @@ class ChangeGaussMySqlProxySpecificationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeGaussMySqlProxySpecificationRequest.
+        r"""Sets the body of this ChangeGaussMySqlProxySpecificationRequest.
 
         :param body: The body of this ChangeGaussMySqlProxySpecificationRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.TaurusProxyScaleRequest`

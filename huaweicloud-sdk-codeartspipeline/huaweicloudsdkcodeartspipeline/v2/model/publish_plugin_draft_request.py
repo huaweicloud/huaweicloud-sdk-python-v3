@@ -27,7 +27,7 @@ class PublishPluginDraftRequest:
     }
 
     def __init__(self, domain_id=None, body=None):
-        """PublishPluginDraftRequest
+        r"""PublishPluginDraftRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class PublishPluginDraftRequest:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this PublishPluginDraftRequest.
+        r"""Gets the domain_id of this PublishPluginDraftRequest.
 
         租户ID
 
@@ -60,7 +60,7 @@ class PublishPluginDraftRequest:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this PublishPluginDraftRequest.
+        r"""Sets the domain_id of this PublishPluginDraftRequest.
 
         租户ID
 
@@ -71,7 +71,7 @@ class PublishPluginDraftRequest:
 
     @property
     def body(self):
-        """Gets the body of this PublishPluginDraftRequest.
+        r"""Gets the body of this PublishPluginDraftRequest.
 
         :return: The body of this PublishPluginDraftRequest.
         :rtype: :class:`huaweicloudsdkcodeartspipeline.v2.PluginPartQueryDTO`
@@ -80,7 +80,7 @@ class PublishPluginDraftRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this PublishPluginDraftRequest.
+        r"""Sets the body of this PublishPluginDraftRequest.
 
         :param body: The body of this PublishPluginDraftRequest.
         :type body: :class:`huaweicloudsdkcodeartspipeline.v2.PluginPartQueryDTO`

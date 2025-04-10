@@ -57,7 +57,7 @@ class EventUserResponseInfo:
     }
 
     def __init__(self, user_id=None, user_gid=None, user_name=None, user_group_name=None, user_home_dir=None, login_ip=None, service_type=None, service_port=None, login_mode=None, login_last_time=None, login_fail_count=None, pwd_hash=None, pwd_with_fuzzing=None, pwd_used_days=None, pwd_min_days=None, pwd_max_days=None, pwd_warn_left_days=None):
-        """EventUserResponseInfo
+        r"""EventUserResponseInfo
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class EventUserResponseInfo:
 
     @property
     def user_id(self):
-        """Gets the user_id of this EventUserResponseInfo.
+        r"""Gets the user_id of this EventUserResponseInfo.
 
         用户uid
 
@@ -166,7 +166,7 @@ class EventUserResponseInfo:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this EventUserResponseInfo.
+        r"""Sets the user_id of this EventUserResponseInfo.
 
         用户uid
 
@@ -177,7 +177,7 @@ class EventUserResponseInfo:
 
     @property
     def user_gid(self):
-        """Gets the user_gid of this EventUserResponseInfo.
+        r"""Gets the user_gid of this EventUserResponseInfo.
 
         用户gid
 
@@ -188,7 +188,7 @@ class EventUserResponseInfo:
 
     @user_gid.setter
     def user_gid(self, user_gid):
-        """Sets the user_gid of this EventUserResponseInfo.
+        r"""Sets the user_gid of this EventUserResponseInfo.
 
         用户gid
 
@@ -199,7 +199,7 @@ class EventUserResponseInfo:
 
     @property
     def user_name(self):
-        """Gets the user_name of this EventUserResponseInfo.
+        r"""Gets the user_name of this EventUserResponseInfo.
 
         用户名称
 
@@ -210,7 +210,7 @@ class EventUserResponseInfo:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this EventUserResponseInfo.
+        r"""Sets the user_name of this EventUserResponseInfo.
 
         用户名称
 
@@ -221,7 +221,7 @@ class EventUserResponseInfo:
 
     @property
     def user_group_name(self):
-        """Gets the user_group_name of this EventUserResponseInfo.
+        r"""Gets the user_group_name of this EventUserResponseInfo.
 
         用户组名称
 
@@ -232,7 +232,7 @@ class EventUserResponseInfo:
 
     @user_group_name.setter
     def user_group_name(self, user_group_name):
-        """Sets the user_group_name of this EventUserResponseInfo.
+        r"""Sets the user_group_name of this EventUserResponseInfo.
 
         用户组名称
 
@@ -243,7 +243,7 @@ class EventUserResponseInfo:
 
     @property
     def user_home_dir(self):
-        """Gets the user_home_dir of this EventUserResponseInfo.
+        r"""Gets the user_home_dir of this EventUserResponseInfo.
 
         用户home目录
 
@@ -254,7 +254,7 @@ class EventUserResponseInfo:
 
     @user_home_dir.setter
     def user_home_dir(self, user_home_dir):
-        """Sets the user_home_dir of this EventUserResponseInfo.
+        r"""Sets the user_home_dir of this EventUserResponseInfo.
 
         用户home目录
 
@@ -265,7 +265,7 @@ class EventUserResponseInfo:
 
     @property
     def login_ip(self):
-        """Gets the login_ip of this EventUserResponseInfo.
+        r"""Gets the login_ip of this EventUserResponseInfo.
 
         用户登录ip
 
@@ -276,7 +276,7 @@ class EventUserResponseInfo:
 
     @login_ip.setter
     def login_ip(self, login_ip):
-        """Sets the login_ip of this EventUserResponseInfo.
+        r"""Sets the login_ip of this EventUserResponseInfo.
 
         用户登录ip
 
@@ -287,7 +287,7 @@ class EventUserResponseInfo:
 
     @property
     def service_type(self):
-        """Gets the service_type of this EventUserResponseInfo.
+        r"""Gets the service_type of this EventUserResponseInfo.
 
         服务类型，包含如下:   - system   - mysql   - redis
 
@@ -298,7 +298,7 @@ class EventUserResponseInfo:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this EventUserResponseInfo.
+        r"""Sets the service_type of this EventUserResponseInfo.
 
         服务类型，包含如下:   - system   - mysql   - redis
 
@@ -309,7 +309,7 @@ class EventUserResponseInfo:
 
     @property
     def service_port(self):
-        """Gets the service_port of this EventUserResponseInfo.
+        r"""Gets the service_port of this EventUserResponseInfo.
 
         登录服务端口
 
@@ -320,7 +320,7 @@ class EventUserResponseInfo:
 
     @service_port.setter
     def service_port(self, service_port):
-        """Sets the service_port of this EventUserResponseInfo.
+        r"""Sets the service_port of this EventUserResponseInfo.
 
         登录服务端口
 
@@ -331,7 +331,7 @@ class EventUserResponseInfo:
 
     @property
     def login_mode(self):
-        """Gets the login_mode of this EventUserResponseInfo.
+        r"""Gets the login_mode of this EventUserResponseInfo.
 
         登录方式
 
@@ -342,7 +342,7 @@ class EventUserResponseInfo:
 
     @login_mode.setter
     def login_mode(self, login_mode):
-        """Sets the login_mode of this EventUserResponseInfo.
+        r"""Sets the login_mode of this EventUserResponseInfo.
 
         登录方式
 
@@ -353,7 +353,7 @@ class EventUserResponseInfo:
 
     @property
     def login_last_time(self):
-        """Gets the login_last_time of this EventUserResponseInfo.
+        r"""Gets the login_last_time of this EventUserResponseInfo.
 
         用户最后一次登录时间
 
@@ -364,7 +364,7 @@ class EventUserResponseInfo:
 
     @login_last_time.setter
     def login_last_time(self, login_last_time):
-        """Sets the login_last_time of this EventUserResponseInfo.
+        r"""Sets the login_last_time of this EventUserResponseInfo.
 
         用户最后一次登录时间
 
@@ -375,7 +375,7 @@ class EventUserResponseInfo:
 
     @property
     def login_fail_count(self):
-        """Gets the login_fail_count of this EventUserResponseInfo.
+        r"""Gets the login_fail_count of this EventUserResponseInfo.
 
         用户登录失败次数
 
@@ -386,7 +386,7 @@ class EventUserResponseInfo:
 
     @login_fail_count.setter
     def login_fail_count(self, login_fail_count):
-        """Sets the login_fail_count of this EventUserResponseInfo.
+        r"""Sets the login_fail_count of this EventUserResponseInfo.
 
         用户登录失败次数
 
@@ -397,7 +397,7 @@ class EventUserResponseInfo:
 
     @property
     def pwd_hash(self):
-        """Gets the pwd_hash of this EventUserResponseInfo.
+        r"""Gets the pwd_hash of this EventUserResponseInfo.
 
         口令hash
 
@@ -408,7 +408,7 @@ class EventUserResponseInfo:
 
     @pwd_hash.setter
     def pwd_hash(self, pwd_hash):
-        """Sets the pwd_hash of this EventUserResponseInfo.
+        r"""Sets the pwd_hash of this EventUserResponseInfo.
 
         口令hash
 
@@ -419,7 +419,7 @@ class EventUserResponseInfo:
 
     @property
     def pwd_with_fuzzing(self):
-        """Gets the pwd_with_fuzzing of this EventUserResponseInfo.
+        r"""Gets the pwd_with_fuzzing of this EventUserResponseInfo.
 
         匿名化处理后的口令
 
@@ -430,7 +430,7 @@ class EventUserResponseInfo:
 
     @pwd_with_fuzzing.setter
     def pwd_with_fuzzing(self, pwd_with_fuzzing):
-        """Sets the pwd_with_fuzzing of this EventUserResponseInfo.
+        r"""Sets the pwd_with_fuzzing of this EventUserResponseInfo.
 
         匿名化处理后的口令
 
@@ -441,7 +441,7 @@ class EventUserResponseInfo:
 
     @property
     def pwd_used_days(self):
-        """Gets the pwd_used_days of this EventUserResponseInfo.
+        r"""Gets the pwd_used_days of this EventUserResponseInfo.
 
         密码使用的天数
 
@@ -452,7 +452,7 @@ class EventUserResponseInfo:
 
     @pwd_used_days.setter
     def pwd_used_days(self, pwd_used_days):
-        """Sets the pwd_used_days of this EventUserResponseInfo.
+        r"""Sets the pwd_used_days of this EventUserResponseInfo.
 
         密码使用的天数
 
@@ -463,7 +463,7 @@ class EventUserResponseInfo:
 
     @property
     def pwd_min_days(self):
-        """Gets the pwd_min_days of this EventUserResponseInfo.
+        r"""Gets the pwd_min_days of this EventUserResponseInfo.
 
         口令的最短有效期限
 
@@ -474,7 +474,7 @@ class EventUserResponseInfo:
 
     @pwd_min_days.setter
     def pwd_min_days(self, pwd_min_days):
-        """Sets the pwd_min_days of this EventUserResponseInfo.
+        r"""Sets the pwd_min_days of this EventUserResponseInfo.
 
         口令的最短有效期限
 
@@ -485,7 +485,7 @@ class EventUserResponseInfo:
 
     @property
     def pwd_max_days(self):
-        """Gets the pwd_max_days of this EventUserResponseInfo.
+        r"""Gets the pwd_max_days of this EventUserResponseInfo.
 
         口令的最长有效期限
 
@@ -496,7 +496,7 @@ class EventUserResponseInfo:
 
     @pwd_max_days.setter
     def pwd_max_days(self, pwd_max_days):
-        """Sets the pwd_max_days of this EventUserResponseInfo.
+        r"""Sets the pwd_max_days of this EventUserResponseInfo.
 
         口令的最长有效期限
 
@@ -507,7 +507,7 @@ class EventUserResponseInfo:
 
     @property
     def pwd_warn_left_days(self):
-        """Gets the pwd_warn_left_days of this EventUserResponseInfo.
+        r"""Gets the pwd_warn_left_days of this EventUserResponseInfo.
 
         口令无效时提前告警天数
 
@@ -518,7 +518,7 @@ class EventUserResponseInfo:
 
     @pwd_warn_left_days.setter
     def pwd_warn_left_days(self, pwd_warn_left_days):
-        """Sets the pwd_warn_left_days of this EventUserResponseInfo.
+        r"""Sets the pwd_warn_left_days of this EventUserResponseInfo.
 
         口令无效时提前告警天数
 

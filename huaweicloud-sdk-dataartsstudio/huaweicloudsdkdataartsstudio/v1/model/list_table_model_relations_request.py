@@ -37,7 +37,7 @@ class ListTableModelRelationsRequest:
     }
 
     def __init__(self, workspace=None, x_project_id=None, model_id=None, table_ids=None, biz_type=None, limit=None, offset=None):
-        """ListTableModelRelationsRequest
+        r"""ListTableModelRelationsRequest
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class ListTableModelRelationsRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ListTableModelRelationsRequest.
+        r"""Gets the workspace of this ListTableModelRelationsRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -94,7 +94,7 @@ class ListTableModelRelationsRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ListTableModelRelationsRequest.
+        r"""Sets the workspace of this ListTableModelRelationsRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -105,7 +105,7 @@ class ListTableModelRelationsRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this ListTableModelRelationsRequest.
+        r"""Gets the x_project_id of this ListTableModelRelationsRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -116,7 +116,7 @@ class ListTableModelRelationsRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this ListTableModelRelationsRequest.
+        r"""Sets the x_project_id of this ListTableModelRelationsRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -127,7 +127,7 @@ class ListTableModelRelationsRequest:
 
     @property
     def model_id(self):
-        """Gets the model_id of this ListTableModelRelationsRequest.
+        r"""Gets the model_id of this ListTableModelRelationsRequest.
 
         所属关系建模的模型ID，ID字符串。
 
@@ -138,7 +138,7 @@ class ListTableModelRelationsRequest:
 
     @model_id.setter
     def model_id(self, model_id):
-        """Sets the model_id of this ListTableModelRelationsRequest.
+        r"""Sets the model_id of this ListTableModelRelationsRequest.
 
         所属关系建模的模型ID，ID字符串。
 
@@ -149,7 +149,7 @@ class ListTableModelRelationsRequest:
 
     @property
     def table_ids(self):
-        """Gets the table_ids of this ListTableModelRelationsRequest.
+        r"""Gets the table_ids of this ListTableModelRelationsRequest.
 
         表模型ids，ID字符串。
 
@@ -160,7 +160,7 @@ class ListTableModelRelationsRequest:
 
     @table_ids.setter
     def table_ids(self, table_ids):
-        """Sets the table_ids of this ListTableModelRelationsRequest.
+        r"""Sets the table_ids of this ListTableModelRelationsRequest.
 
         表模型ids，ID字符串。
 
@@ -171,7 +171,7 @@ class ListTableModelRelationsRequest:
 
     @property
     def biz_type(self):
-        """Gets the biz_type of this ListTableModelRelationsRequest.
+        r"""Gets the biz_type of this ListTableModelRelationsRequest.
 
         表类型。 枚举值：   - TABLE_MODEL: 关系建模：逻辑实体/物理表   - FACT_LOGIC_TABLE: 事实表 
 
@@ -182,7 +182,7 @@ class ListTableModelRelationsRequest:
 
     @biz_type.setter
     def biz_type(self, biz_type):
-        """Sets the biz_type of this ListTableModelRelationsRequest.
+        r"""Sets the biz_type of this ListTableModelRelationsRequest.
 
         表类型。 枚举值：   - TABLE_MODEL: 关系建模：逻辑实体/物理表   - FACT_LOGIC_TABLE: 事实表 
 
@@ -193,7 +193,7 @@ class ListTableModelRelationsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTableModelRelationsRequest.
+        r"""Gets the limit of this ListTableModelRelationsRequest.
 
         每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
@@ -204,7 +204,7 @@ class ListTableModelRelationsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTableModelRelationsRequest.
+        r"""Sets the limit of this ListTableModelRelationsRequest.
 
         每页查询条数，即查询Y条数据。默认值50，取值范围[1,100]。
 
@@ -215,7 +215,7 @@ class ListTableModelRelationsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTableModelRelationsRequest.
+        r"""Gets the offset of this ListTableModelRelationsRequest.
 
         查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
 
@@ -226,7 +226,7 @@ class ListTableModelRelationsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTableModelRelationsRequest.
+        r"""Sets the offset of this ListTableModelRelationsRequest.
 
         查询起始坐标，即跳过X条数据，仅支持0或limit的整数倍，不满足则向下取整，默认值0。
 

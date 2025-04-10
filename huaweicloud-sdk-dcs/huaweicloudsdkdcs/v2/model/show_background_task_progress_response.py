@@ -30,7 +30,7 @@ class ShowBackgroundTaskProgressResponse(SdkResponse):
     }
 
     def __init__(self, progress=None, remain_time=None, step_details=None):
-        """ShowBackgroundTaskProgressResponse
+        r"""ShowBackgroundTaskProgressResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowBackgroundTaskProgressResponse(SdkResponse):
 
     @property
     def progress(self):
-        """Gets the progress of this ShowBackgroundTaskProgressResponse.
+        r"""Gets the progress of this ShowBackgroundTaskProgressResponse.
 
         总体进度,百分比
 
@@ -69,7 +69,7 @@ class ShowBackgroundTaskProgressResponse(SdkResponse):
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this ShowBackgroundTaskProgressResponse.
+        r"""Sets the progress of this ShowBackgroundTaskProgressResponse.
 
         总体进度,百分比
 
@@ -80,7 +80,7 @@ class ShowBackgroundTaskProgressResponse(SdkResponse):
 
     @property
     def remain_time(self):
-        """Gets the remain_time of this ShowBackgroundTaskProgressResponse.
+        r"""Gets the remain_time of this ShowBackgroundTaskProgressResponse.
 
         剩余时间(单位秒)
 
@@ -91,7 +91,7 @@ class ShowBackgroundTaskProgressResponse(SdkResponse):
 
     @remain_time.setter
     def remain_time(self, remain_time):
-        """Sets the remain_time of this ShowBackgroundTaskProgressResponse.
+        r"""Sets the remain_time of this ShowBackgroundTaskProgressResponse.
 
         剩余时间(单位秒)
 
@@ -102,7 +102,7 @@ class ShowBackgroundTaskProgressResponse(SdkResponse):
 
     @property
     def step_details(self):
-        """Gets the step_details of this ShowBackgroundTaskProgressResponse.
+        r"""Gets the step_details of this ShowBackgroundTaskProgressResponse.
 
         任务详情列表
 
@@ -113,7 +113,7 @@ class ShowBackgroundTaskProgressResponse(SdkResponse):
 
     @step_details.setter
     def step_details(self, step_details):
-        """Sets the step_details of this ShowBackgroundTaskProgressResponse.
+        r"""Sets the step_details of this ShowBackgroundTaskProgressResponse.
 
         任务详情列表
 

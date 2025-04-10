@@ -24,7 +24,7 @@ class CancelAsyncInvocationResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CancelAsyncInvocationResponse
+        r"""CancelAsyncInvocationResponse
 
         The model defined in huaweicloud sdk
 

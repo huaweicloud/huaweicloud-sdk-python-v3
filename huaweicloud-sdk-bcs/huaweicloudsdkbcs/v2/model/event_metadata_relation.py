@@ -29,7 +29,7 @@ class EventMetadataRelation:
     }
 
     def __init__(self, key=None, value=None, relation=None):
-        """EventMetadataRelation
+        r"""EventMetadataRelation
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class EventMetadataRelation:
 
     @property
     def key(self):
-        """Gets the key of this EventMetadataRelation.
+        r"""Gets the key of this EventMetadataRelation.
 
         指定查询字段的key，对应metadata里面的key
 
@@ -68,7 +68,7 @@ class EventMetadataRelation:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this EventMetadataRelation.
+        r"""Sets the key of this EventMetadataRelation.
 
         指定查询字段的key，对应metadata里面的key
 
@@ -79,7 +79,7 @@ class EventMetadataRelation:
 
     @property
     def value(self):
-        """Gets the value of this EventMetadataRelation.
+        r"""Gets the value of this EventMetadataRelation.
 
         查询条件中指定key的值
 
@@ -90,7 +90,7 @@ class EventMetadataRelation:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this EventMetadataRelation.
+        r"""Sets the value of this EventMetadataRelation.
 
         查询条件中指定key的值
 
@@ -101,7 +101,7 @@ class EventMetadataRelation:
 
     @property
     def relation(self):
-        """Gets the relation of this EventMetadataRelation.
+        r"""Gets the relation of this EventMetadataRelation.
 
         该条件与其他条件的组合方式
 
@@ -112,7 +112,7 @@ class EventMetadataRelation:
 
     @relation.setter
     def relation(self, relation):
-        """Sets the relation of this EventMetadataRelation.
+        r"""Sets the relation of this EventMetadataRelation.
 
         该条件与其他条件的组合方式
 

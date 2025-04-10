@@ -27,7 +27,7 @@ class StartAutoJobRequest:
     }
 
     def __init__(self, eihealth_project_id=None, auto_job_id=None):
-        """StartAutoJobRequest
+        r"""StartAutoJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class StartAutoJobRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this StartAutoJobRequest.
+        r"""Gets the eihealth_project_id of this StartAutoJobRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -59,7 +59,7 @@ class StartAutoJobRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this StartAutoJobRequest.
+        r"""Sets the eihealth_project_id of this StartAutoJobRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -70,7 +70,7 @@ class StartAutoJobRequest:
 
     @property
     def auto_job_id(self):
-        """Gets the auto_job_id of this StartAutoJobRequest.
+        r"""Gets the auto_job_id of this StartAutoJobRequest.
 
         自动作业id
 
@@ -81,7 +81,7 @@ class StartAutoJobRequest:
 
     @auto_job_id.setter
     def auto_job_id(self, auto_job_id):
-        """Sets the auto_job_id of this StartAutoJobRequest.
+        r"""Sets the auto_job_id of this StartAutoJobRequest.
 
         自动作业id
 

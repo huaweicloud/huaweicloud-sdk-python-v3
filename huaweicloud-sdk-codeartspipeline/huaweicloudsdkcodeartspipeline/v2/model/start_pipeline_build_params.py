@@ -27,7 +27,7 @@ class StartPipelineBuildParams:
     }
 
     def __init__(self, name=None, value=None):
-        """StartPipelineBuildParams
+        r"""StartPipelineBuildParams
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class StartPipelineBuildParams:
 
     @property
     def name(self):
-        """Gets the name of this StartPipelineBuildParams.
+        r"""Gets the name of this StartPipelineBuildParams.
 
         构建参数名
 
@@ -59,7 +59,7 @@ class StartPipelineBuildParams:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this StartPipelineBuildParams.
+        r"""Sets the name of this StartPipelineBuildParams.
 
         构建参数名
 
@@ -70,7 +70,7 @@ class StartPipelineBuildParams:
 
     @property
     def value(self):
-        """Gets the value of this StartPipelineBuildParams.
+        r"""Gets the value of this StartPipelineBuildParams.
 
         构建参数值，最大长度为8192
 
@@ -81,7 +81,7 @@ class StartPipelineBuildParams:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this StartPipelineBuildParams.
+        r"""Sets the value of this StartPipelineBuildParams.
 
         构建参数值，最大长度为8192
 

@@ -27,7 +27,7 @@ class TagItem:
     }
 
     def __init__(self, key=None, value=None):
-        """TagItem
+        r"""TagItem
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class TagItem:
 
     @property
     def key(self):
-        """Gets the key of this TagItem.
+        r"""Gets the key of this TagItem.
 
         标签键。最大长度36个unicode字符，不能为null或者空字符串，不能为空格。  字符集：0-9，A-Z，a-z，“_”，“-”，中文。
 
@@ -60,7 +60,7 @@ class TagItem:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this TagItem.
+        r"""Sets the key of this TagItem.
 
         标签键。最大长度36个unicode字符，不能为null或者空字符串，不能为空格。  字符集：0-9，A-Z，a-z，“_”，“-”，中文。
 
@@ -71,7 +71,7 @@ class TagItem:
 
     @property
     def value(self):
-        """Gets the value of this TagItem.
+        r"""Gets the value of this TagItem.
 
         标签值。最大长度43个unicode字符，可以为空字符串，不能为空格。  字符集：0-9，A-Z，a-z，“_”，“.”，“-”，中文。 - “action”值为“create”时，该参数必选。 - “action”值为“delete”时，如果value有值，按照key-value删除，如果value没值，则按照key删除。
 
@@ -82,7 +82,7 @@ class TagItem:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this TagItem.
+        r"""Sets the value of this TagItem.
 
         标签值。最大长度43个unicode字符，可以为空字符串，不能为空格。  字符集：0-9，A-Z，a-z，“_”，“.”，“-”，中文。 - “action”值为“create”时，该参数必选。 - “action”值为“delete”时，如果value有值，按照key-value删除，如果value没值，则按照key删除。
 

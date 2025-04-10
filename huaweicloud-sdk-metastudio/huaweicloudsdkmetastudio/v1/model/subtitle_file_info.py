@@ -31,7 +31,7 @@ class SubtitleFileInfo:
     }
 
     def __init__(self, subtitle_file_download_url=None, subtitle_file_upload_url=None, subtitle_file_state=None, job_id=None):
-        """SubtitleFileInfo
+        r"""SubtitleFileInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class SubtitleFileInfo:
 
     @property
     def subtitle_file_download_url(self):
-        """Gets the subtitle_file_download_url of this SubtitleFileInfo.
+        r"""Gets the subtitle_file_download_url of this SubtitleFileInfo.
 
         字幕文件下载链接。
 
@@ -75,7 +75,7 @@ class SubtitleFileInfo:
 
     @subtitle_file_download_url.setter
     def subtitle_file_download_url(self, subtitle_file_download_url):
-        """Sets the subtitle_file_download_url of this SubtitleFileInfo.
+        r"""Sets the subtitle_file_download_url of this SubtitleFileInfo.
 
         字幕文件下载链接。
 
@@ -86,7 +86,7 @@ class SubtitleFileInfo:
 
     @property
     def subtitle_file_upload_url(self):
-        """Gets the subtitle_file_upload_url of this SubtitleFileInfo.
+        r"""Gets the subtitle_file_upload_url of this SubtitleFileInfo.
 
         字幕文件上传链接。
 
@@ -97,7 +97,7 @@ class SubtitleFileInfo:
 
     @subtitle_file_upload_url.setter
     def subtitle_file_upload_url(self, subtitle_file_upload_url):
-        """Sets the subtitle_file_upload_url of this SubtitleFileInfo.
+        r"""Sets the subtitle_file_upload_url of this SubtitleFileInfo.
 
         字幕文件上传链接。
 
@@ -108,7 +108,7 @@ class SubtitleFileInfo:
 
     @property
     def subtitle_file_state(self):
-        """Gets the subtitle_file_state of this SubtitleFileInfo.
+        r"""Gets the subtitle_file_state of this SubtitleFileInfo.
 
         字幕文件生成状态。 * GENERATING：字幕文件生成中。 * GENERATE_SUCCEED：字幕文件生成成功。 * GENERATE_FAILED：字幕文件生成失败。
 
@@ -119,7 +119,7 @@ class SubtitleFileInfo:
 
     @subtitle_file_state.setter
     def subtitle_file_state(self, subtitle_file_state):
-        """Sets the subtitle_file_state of this SubtitleFileInfo.
+        r"""Sets the subtitle_file_state of this SubtitleFileInfo.
 
         字幕文件生成状态。 * GENERATING：字幕文件生成中。 * GENERATE_SUCCEED：字幕文件生成成功。 * GENERATE_FAILED：字幕文件生成失败。
 
@@ -130,7 +130,7 @@ class SubtitleFileInfo:
 
     @property
     def job_id(self):
-        """Gets the job_id of this SubtitleFileInfo.
+        r"""Gets the job_id of this SubtitleFileInfo.
 
         字幕文件生成任务ID。
 
@@ -141,7 +141,7 @@ class SubtitleFileInfo:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this SubtitleFileInfo.
+        r"""Sets the job_id of this SubtitleFileInfo.
 
         字幕文件生成任务ID。
 

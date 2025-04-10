@@ -29,7 +29,7 @@ class CreateGaussMysqlDnsRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """CreateGaussMysqlDnsRequest
+        r"""CreateGaussMysqlDnsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreateGaussMysqlDnsRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CreateGaussMysqlDnsRequest.
+        r"""Gets the x_language of this CreateGaussMysqlDnsRequest.
 
         语言。
 
@@ -67,7 +67,7 @@ class CreateGaussMysqlDnsRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CreateGaussMysqlDnsRequest.
+        r"""Sets the x_language of this CreateGaussMysqlDnsRequest.
 
         语言。
 
@@ -78,7 +78,7 @@ class CreateGaussMysqlDnsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateGaussMysqlDnsRequest.
+        r"""Gets the instance_id of this CreateGaussMysqlDnsRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class CreateGaussMysqlDnsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateGaussMysqlDnsRequest.
+        r"""Sets the instance_id of this CreateGaussMysqlDnsRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class CreateGaussMysqlDnsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateGaussMysqlDnsRequest.
+        r"""Gets the body of this CreateGaussMysqlDnsRequest.
 
         :return: The body of this CreateGaussMysqlDnsRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateDnsNameReq`
@@ -109,7 +109,7 @@ class CreateGaussMysqlDnsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateGaussMysqlDnsRequest.
+        r"""Sets the body of this CreateGaussMysqlDnsRequest.
 
         :param body: The body of this CreateGaussMysqlDnsRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.CreateDnsNameReq`

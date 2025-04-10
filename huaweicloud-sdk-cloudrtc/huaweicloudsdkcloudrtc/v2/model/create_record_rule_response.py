@@ -42,7 +42,7 @@ class CreateRecordRuleResponse(SdkResponse):
     }
 
     def __init__(self, rule_id=None, app_id=None, obs_addr=None, record_formats=None, hls_config=None, mp4_config=None, create_time=None, update_time=None, x_request_id=None):
-        """CreateRecordRuleResponse
+        r"""CreateRecordRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class CreateRecordRuleResponse(SdkResponse):
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this CreateRecordRuleResponse.
+        r"""Gets the rule_id of this CreateRecordRuleResponse.
 
         规则id，由服务端返回。创建或修改规则的时候不携带
 
@@ -111,7 +111,7 @@ class CreateRecordRuleResponse(SdkResponse):
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this CreateRecordRuleResponse.
+        r"""Sets the rule_id of this CreateRecordRuleResponse.
 
         规则id，由服务端返回。创建或修改规则的时候不携带
 
@@ -122,7 +122,7 @@ class CreateRecordRuleResponse(SdkResponse):
 
     @property
     def app_id(self):
-        """Gets the app_id of this CreateRecordRuleResponse.
+        r"""Gets the app_id of this CreateRecordRuleResponse.
 
         应用id
 
@@ -133,7 +133,7 @@ class CreateRecordRuleResponse(SdkResponse):
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this CreateRecordRuleResponse.
+        r"""Sets the app_id of this CreateRecordRuleResponse.
 
         应用id
 
@@ -144,7 +144,7 @@ class CreateRecordRuleResponse(SdkResponse):
 
     @property
     def obs_addr(self):
-        """Gets the obs_addr of this CreateRecordRuleResponse.
+        r"""Gets the obs_addr of this CreateRecordRuleResponse.
 
         :return: The obs_addr of this CreateRecordRuleResponse.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.RecordObsFileAddr`
@@ -153,7 +153,7 @@ class CreateRecordRuleResponse(SdkResponse):
 
     @obs_addr.setter
     def obs_addr(self, obs_addr):
-        """Sets the obs_addr of this CreateRecordRuleResponse.
+        r"""Sets the obs_addr of this CreateRecordRuleResponse.
 
         :param obs_addr: The obs_addr of this CreateRecordRuleResponse.
         :type obs_addr: :class:`huaweicloudsdkcloudrtc.v2.RecordObsFileAddr`
@@ -162,7 +162,7 @@ class CreateRecordRuleResponse(SdkResponse):
 
     @property
     def record_formats(self):
-        """Gets the record_formats of this CreateRecordRuleResponse.
+        r"""Gets the record_formats of this CreateRecordRuleResponse.
 
         录制格式：HLS格式或者MP4格式
 
@@ -173,7 +173,7 @@ class CreateRecordRuleResponse(SdkResponse):
 
     @record_formats.setter
     def record_formats(self, record_formats):
-        """Sets the record_formats of this CreateRecordRuleResponse.
+        r"""Sets the record_formats of this CreateRecordRuleResponse.
 
         录制格式：HLS格式或者MP4格式
 
@@ -184,7 +184,7 @@ class CreateRecordRuleResponse(SdkResponse):
 
     @property
     def hls_config(self):
-        """Gets the hls_config of this CreateRecordRuleResponse.
+        r"""Gets the hls_config of this CreateRecordRuleResponse.
 
         :return: The hls_config of this CreateRecordRuleResponse.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.HLSRecordConfig`
@@ -193,7 +193,7 @@ class CreateRecordRuleResponse(SdkResponse):
 
     @hls_config.setter
     def hls_config(self, hls_config):
-        """Sets the hls_config of this CreateRecordRuleResponse.
+        r"""Sets the hls_config of this CreateRecordRuleResponse.
 
         :param hls_config: The hls_config of this CreateRecordRuleResponse.
         :type hls_config: :class:`huaweicloudsdkcloudrtc.v2.HLSRecordConfig`
@@ -202,7 +202,7 @@ class CreateRecordRuleResponse(SdkResponse):
 
     @property
     def mp4_config(self):
-        """Gets the mp4_config of this CreateRecordRuleResponse.
+        r"""Gets the mp4_config of this CreateRecordRuleResponse.
 
         :return: The mp4_config of this CreateRecordRuleResponse.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.MP4RecordConfig`
@@ -211,7 +211,7 @@ class CreateRecordRuleResponse(SdkResponse):
 
     @mp4_config.setter
     def mp4_config(self, mp4_config):
-        """Sets the mp4_config of this CreateRecordRuleResponse.
+        r"""Sets the mp4_config of this CreateRecordRuleResponse.
 
         :param mp4_config: The mp4_config of this CreateRecordRuleResponse.
         :type mp4_config: :class:`huaweicloudsdkcloudrtc.v2.MP4RecordConfig`
@@ -220,7 +220,7 @@ class CreateRecordRuleResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreateRecordRuleResponse.
+        r"""Gets the create_time of this CreateRecordRuleResponse.
 
         创建时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
@@ -231,7 +231,7 @@ class CreateRecordRuleResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreateRecordRuleResponse.
+        r"""Sets the create_time of this CreateRecordRuleResponse.
 
         创建时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
@@ -242,7 +242,7 @@ class CreateRecordRuleResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this CreateRecordRuleResponse.
+        r"""Gets the update_time of this CreateRecordRuleResponse.
 
         更新时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
@@ -253,7 +253,7 @@ class CreateRecordRuleResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this CreateRecordRuleResponse.
+        r"""Sets the update_time of this CreateRecordRuleResponse.
 
         更新时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
@@ -264,7 +264,7 @@ class CreateRecordRuleResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreateRecordRuleResponse.
+        r"""Gets the x_request_id of this CreateRecordRuleResponse.
 
         :return: The x_request_id of this CreateRecordRuleResponse.
         :rtype: str
@@ -273,7 +273,7 @@ class CreateRecordRuleResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreateRecordRuleResponse.
+        r"""Sets the x_request_id of this CreateRecordRuleResponse.
 
         :param x_request_id: The x_request_id of this CreateRecordRuleResponse.
         :type x_request_id: str

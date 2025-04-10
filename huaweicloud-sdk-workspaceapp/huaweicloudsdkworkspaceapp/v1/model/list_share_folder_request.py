@@ -33,7 +33,7 @@ class ListShareFolderRequest:
     }
 
     def __init__(self, offset=None, limit=None, storage_id=None, storage_claim_id=None, path=None):
-        """ListShareFolderRequest
+        r"""ListShareFolderRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListShareFolderRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListShareFolderRequest.
+        r"""Gets the offset of this ListShareFolderRequest.
 
         查询的偏移量。
 
@@ -81,7 +81,7 @@ class ListShareFolderRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListShareFolderRequest.
+        r"""Sets the offset of this ListShareFolderRequest.
 
         查询的偏移量。
 
@@ -92,7 +92,7 @@ class ListShareFolderRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListShareFolderRequest.
+        r"""Gets the limit of this ListShareFolderRequest.
 
         单次查询的大小[1-100]。
 
@@ -103,7 +103,7 @@ class ListShareFolderRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListShareFolderRequest.
+        r"""Sets the limit of this ListShareFolderRequest.
 
         单次查询的大小[1-100]。
 
@@ -114,7 +114,7 @@ class ListShareFolderRequest:
 
     @property
     def storage_id(self):
-        """Gets the storage_id of this ListShareFolderRequest.
+        r"""Gets the storage_id of this ListShareFolderRequest.
 
         WKS存储ID。
 
@@ -125,7 +125,7 @@ class ListShareFolderRequest:
 
     @storage_id.setter
     def storage_id(self, storage_id):
-        """Sets the storage_id of this ListShareFolderRequest.
+        r"""Sets the storage_id of this ListShareFolderRequest.
 
         WKS存储ID。
 
@@ -136,7 +136,7 @@ class ListShareFolderRequest:
 
     @property
     def storage_claim_id(self):
-        """Gets the storage_claim_id of this ListShareFolderRequest.
+        r"""Gets the storage_claim_id of this ListShareFolderRequest.
 
         WKS存储目录声明ID。
 
@@ -147,7 +147,7 @@ class ListShareFolderRequest:
 
     @storage_claim_id.setter
     def storage_claim_id(self, storage_claim_id):
-        """Sets the storage_claim_id of this ListShareFolderRequest.
+        r"""Sets the storage_claim_id of this ListShareFolderRequest.
 
         WKS存储目录声明ID。
 
@@ -158,7 +158,7 @@ class ListShareFolderRequest:
 
     @property
     def path(self):
-        """Gets the path of this ListShareFolderRequest.
+        r"""Gets the path of this ListShareFolderRequest.
 
         查询名称需满足如下规则: 1. 可见字符+空格。 2. 长度0~128个字符。
 
@@ -169,7 +169,7 @@ class ListShareFolderRequest:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ListShareFolderRequest.
+        r"""Sets the path of this ListShareFolderRequest.
 
         查询名称需满足如下规则: 1. 可见字符+空格。 2. 长度0~128个字符。
 

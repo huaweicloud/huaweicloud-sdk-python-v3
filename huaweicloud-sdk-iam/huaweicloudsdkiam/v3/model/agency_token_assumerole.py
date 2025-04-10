@@ -29,7 +29,7 @@ class AgencyTokenAssumerole:
     }
 
     def __init__(self, domain_id=None, domain_name=None, agency_name=None):
-        """AgencyTokenAssumerole
+        r"""AgencyTokenAssumerole
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class AgencyTokenAssumerole:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this AgencyTokenAssumerole.
+        r"""Gets the domain_id of this AgencyTokenAssumerole.
 
         委托方A的账号ID。“domain_id”与“domain_name”至少填写一个。
 
@@ -67,7 +67,7 @@ class AgencyTokenAssumerole:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this AgencyTokenAssumerole.
+        r"""Sets the domain_id of this AgencyTokenAssumerole.
 
         委托方A的账号ID。“domain_id”与“domain_name”至少填写一个。
 
@@ -78,7 +78,7 @@ class AgencyTokenAssumerole:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this AgencyTokenAssumerole.
+        r"""Gets the domain_name of this AgencyTokenAssumerole.
 
         委托方A的账号名称。“domain_id”与“domain_name”至少填写一个。
 
@@ -89,7 +89,7 @@ class AgencyTokenAssumerole:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this AgencyTokenAssumerole.
+        r"""Sets the domain_name of this AgencyTokenAssumerole.
 
         委托方A的账号名称。“domain_id”与“domain_name”至少填写一个。
 
@@ -100,7 +100,7 @@ class AgencyTokenAssumerole:
 
     @property
     def agency_name(self):
-        """Gets the agency_name of this AgencyTokenAssumerole.
+        r"""Gets the agency_name of this AgencyTokenAssumerole.
 
         委托方A创建的委托的名称。
 
@@ -111,7 +111,7 @@ class AgencyTokenAssumerole:
 
     @agency_name.setter
     def agency_name(self, agency_name):
-        """Sets the agency_name of this AgencyTokenAssumerole.
+        r"""Sets the agency_name of this AgencyTokenAssumerole.
 
         委托方A创建的委托的名称。
 

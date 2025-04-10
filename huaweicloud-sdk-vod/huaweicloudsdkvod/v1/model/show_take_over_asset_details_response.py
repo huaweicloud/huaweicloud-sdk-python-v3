@@ -34,7 +34,7 @@ class ShowTakeOverAssetDetailsResponse(SdkResponse):
     }
 
     def __init__(self, asset_id=None, asset_status=None, transcode_status=None, base_info=None, transcode_info=None):
-        """ShowTakeOverAssetDetailsResponse
+        r"""ShowTakeOverAssetDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowTakeOverAssetDetailsResponse(SdkResponse):
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this ShowTakeOverAssetDetailsResponse.
+        r"""Gets the asset_id of this ShowTakeOverAssetDetailsResponse.
 
         媒资ID。
 
@@ -83,7 +83,7 @@ class ShowTakeOverAssetDetailsResponse(SdkResponse):
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this ShowTakeOverAssetDetailsResponse.
+        r"""Sets the asset_id of this ShowTakeOverAssetDetailsResponse.
 
         媒资ID。
 
@@ -94,7 +94,7 @@ class ShowTakeOverAssetDetailsResponse(SdkResponse):
 
     @property
     def asset_status(self):
-        """Gets the asset_status of this ShowTakeOverAssetDetailsResponse.
+        r"""Gets the asset_status of this ShowTakeOverAssetDetailsResponse.
 
         媒资状态。 - \"CREATING\"：上传中 - \"FAILED\"：上传失败 - \"CREATED\"：上传成功 - \"PUBLISHED\"：已发布 - \"DELETED\"：已删除
 
@@ -105,7 +105,7 @@ class ShowTakeOverAssetDetailsResponse(SdkResponse):
 
     @asset_status.setter
     def asset_status(self, asset_status):
-        """Sets the asset_status of this ShowTakeOverAssetDetailsResponse.
+        r"""Sets the asset_status of this ShowTakeOverAssetDetailsResponse.
 
         媒资状态。 - \"CREATING\"：上传中 - \"FAILED\"：上传失败 - \"CREATED\"：上传成功 - \"PUBLISHED\"：已发布 - \"DELETED\"：已删除
 
@@ -116,7 +116,7 @@ class ShowTakeOverAssetDetailsResponse(SdkResponse):
 
     @property
     def transcode_status(self):
-        """Gets the transcode_status of this ShowTakeOverAssetDetailsResponse.
+        r"""Gets the transcode_status of this ShowTakeOverAssetDetailsResponse.
 
         转码状态。 - \"UN_TRANSCODE\"：未转码 - \"WAITING_TRANSCODE\"：等待转码，排队中 - \"TRANSCODING\"：转码中 - \"TRANSCODE_SUCCEED\"：转码成功 - \"TRANSCODE_FAILED\"：转码失败
 
@@ -127,7 +127,7 @@ class ShowTakeOverAssetDetailsResponse(SdkResponse):
 
     @transcode_status.setter
     def transcode_status(self, transcode_status):
-        """Sets the transcode_status of this ShowTakeOverAssetDetailsResponse.
+        r"""Sets the transcode_status of this ShowTakeOverAssetDetailsResponse.
 
         转码状态。 - \"UN_TRANSCODE\"：未转码 - \"WAITING_TRANSCODE\"：等待转码，排队中 - \"TRANSCODING\"：转码中 - \"TRANSCODE_SUCCEED\"：转码成功 - \"TRANSCODE_FAILED\"：转码失败
 
@@ -138,7 +138,7 @@ class ShowTakeOverAssetDetailsResponse(SdkResponse):
 
     @property
     def base_info(self):
-        """Gets the base_info of this ShowTakeOverAssetDetailsResponse.
+        r"""Gets the base_info of this ShowTakeOverAssetDetailsResponse.
 
         :return: The base_info of this ShowTakeOverAssetDetailsResponse.
         :rtype: :class:`huaweicloudsdkvod.v1.BaseInfo`
@@ -147,7 +147,7 @@ class ShowTakeOverAssetDetailsResponse(SdkResponse):
 
     @base_info.setter
     def base_info(self, base_info):
-        """Sets the base_info of this ShowTakeOverAssetDetailsResponse.
+        r"""Sets the base_info of this ShowTakeOverAssetDetailsResponse.
 
         :param base_info: The base_info of this ShowTakeOverAssetDetailsResponse.
         :type base_info: :class:`huaweicloudsdkvod.v1.BaseInfo`
@@ -156,7 +156,7 @@ class ShowTakeOverAssetDetailsResponse(SdkResponse):
 
     @property
     def transcode_info(self):
-        """Gets the transcode_info of this ShowTakeOverAssetDetailsResponse.
+        r"""Gets the transcode_info of this ShowTakeOverAssetDetailsResponse.
 
         :return: The transcode_info of this ShowTakeOverAssetDetailsResponse.
         :rtype: :class:`huaweicloudsdkvod.v1.TranscodeInfo`
@@ -165,7 +165,7 @@ class ShowTakeOverAssetDetailsResponse(SdkResponse):
 
     @transcode_info.setter
     def transcode_info(self, transcode_info):
-        """Sets the transcode_info of this ShowTakeOverAssetDetailsResponse.
+        r"""Sets the transcode_info of this ShowTakeOverAssetDetailsResponse.
 
         :param transcode_info: The transcode_info of this ShowTakeOverAssetDetailsResponse.
         :type transcode_info: :class:`huaweicloudsdkvod.v1.TranscodeInfo`

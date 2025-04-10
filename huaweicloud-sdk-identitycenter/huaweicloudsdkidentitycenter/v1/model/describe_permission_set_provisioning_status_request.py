@@ -30,7 +30,7 @@ class DescribePermissionSetProvisioningStatusRequest:
     }
 
     def __init__(self, x_security_token=None, instance_id=None, request_id=None):
-        """DescribePermissionSetProvisioningStatusRequest
+        r"""DescribePermissionSetProvisioningStatusRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DescribePermissionSetProvisioningStatusRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this DescribePermissionSetProvisioningStatusRequest.
+        r"""Gets the x_security_token of this DescribePermissionSetProvisioningStatusRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -67,7 +67,7 @@ class DescribePermissionSetProvisioningStatusRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this DescribePermissionSetProvisioningStatusRequest.
+        r"""Sets the x_security_token of this DescribePermissionSetProvisioningStatusRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -78,7 +78,7 @@ class DescribePermissionSetProvisioningStatusRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DescribePermissionSetProvisioningStatusRequest.
+        r"""Gets the instance_id of this DescribePermissionSetProvisioningStatusRequest.
 
         IAM身份中心实例的全局唯一标识符（ID）。
 
@@ -89,7 +89,7 @@ class DescribePermissionSetProvisioningStatusRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DescribePermissionSetProvisioningStatusRequest.
+        r"""Sets the instance_id of this DescribePermissionSetProvisioningStatusRequest.
 
         IAM身份中心实例的全局唯一标识符（ID）。
 
@@ -100,7 +100,7 @@ class DescribePermissionSetProvisioningStatusRequest:
 
     @property
     def request_id(self):
-        """Gets the request_id of this DescribePermissionSetProvisioningStatusRequest.
+        r"""Gets the request_id of this DescribePermissionSetProvisioningStatusRequest.
 
         请求的唯一标识
 
@@ -111,7 +111,7 @@ class DescribePermissionSetProvisioningStatusRequest:
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this DescribePermissionSetProvisioningStatusRequest.
+        r"""Sets the request_id of this DescribePermissionSetProvisioningStatusRequest.
 
         请求的唯一标识
 

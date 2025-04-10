@@ -33,7 +33,7 @@ class TaskSuccessRate:
     }
 
     def __init__(self, task_id=None, task_name=None, success_rate=None, record_count=None, success_record_count=None):
-        """TaskSuccessRate
+        r"""TaskSuccessRate
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class TaskSuccessRate:
 
     @property
     def task_id(self):
-        """Gets the task_id of this TaskSuccessRate.
+        r"""Gets the task_id of this TaskSuccessRate.
 
         任务id
 
@@ -82,7 +82,7 @@ class TaskSuccessRate:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this TaskSuccessRate.
+        r"""Sets the task_id of this TaskSuccessRate.
 
         任务id
 
@@ -93,7 +93,7 @@ class TaskSuccessRate:
 
     @property
     def task_name(self):
-        """Gets the task_name of this TaskSuccessRate.
+        r"""Gets the task_name of this TaskSuccessRate.
 
         应用名称
 
@@ -104,7 +104,7 @@ class TaskSuccessRate:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this TaskSuccessRate.
+        r"""Sets the task_name of this TaskSuccessRate.
 
         应用名称
 
@@ -115,7 +115,7 @@ class TaskSuccessRate:
 
     @property
     def success_rate(self):
-        """Gets the success_rate of this TaskSuccessRate.
+        r"""Gets the success_rate of this TaskSuccessRate.
 
         成功率
 
@@ -126,7 +126,7 @@ class TaskSuccessRate:
 
     @success_rate.setter
     def success_rate(self, success_rate):
-        """Sets the success_rate of this TaskSuccessRate.
+        r"""Sets the success_rate of this TaskSuccessRate.
 
         成功率
 
@@ -137,7 +137,7 @@ class TaskSuccessRate:
 
     @property
     def record_count(self):
-        """Gets the record_count of this TaskSuccessRate.
+        r"""Gets the record_count of this TaskSuccessRate.
 
         部署记录数
 
@@ -148,7 +148,7 @@ class TaskSuccessRate:
 
     @record_count.setter
     def record_count(self, record_count):
-        """Sets the record_count of this TaskSuccessRate.
+        r"""Sets the record_count of this TaskSuccessRate.
 
         部署记录数
 
@@ -159,7 +159,7 @@ class TaskSuccessRate:
 
     @property
     def success_record_count(self):
-        """Gets the success_record_count of this TaskSuccessRate.
+        r"""Gets the success_record_count of this TaskSuccessRate.
 
         成功的部署记录数
 
@@ -170,7 +170,7 @@ class TaskSuccessRate:
 
     @success_record_count.setter
     def success_record_count(self, success_record_count):
-        """Sets the success_record_count of this TaskSuccessRate.
+        r"""Sets the success_record_count of this TaskSuccessRate.
 
         成功的部署记录数
 

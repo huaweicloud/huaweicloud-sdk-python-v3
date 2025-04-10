@@ -30,7 +30,7 @@ class DisableAlertRuleResponse(SdkResponse):
     }
 
     def __init__(self, fail_list=None, success_list=None, x_request_id=None):
-        """DisableAlertRuleResponse
+        r"""DisableAlertRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class DisableAlertRuleResponse(SdkResponse):
 
     @property
     def fail_list(self):
-        """Gets the fail_list of this DisableAlertRuleResponse.
+        r"""Gets the fail_list of this DisableAlertRuleResponse.
 
         Alert rule ID.
 
@@ -69,7 +69,7 @@ class DisableAlertRuleResponse(SdkResponse):
 
     @fail_list.setter
     def fail_list(self, fail_list):
-        """Sets the fail_list of this DisableAlertRuleResponse.
+        r"""Sets the fail_list of this DisableAlertRuleResponse.
 
         Alert rule ID.
 
@@ -80,7 +80,7 @@ class DisableAlertRuleResponse(SdkResponse):
 
     @property
     def success_list(self):
-        """Gets the success_list of this DisableAlertRuleResponse.
+        r"""Gets the success_list of this DisableAlertRuleResponse.
 
         Alert rule ID.
 
@@ -91,7 +91,7 @@ class DisableAlertRuleResponse(SdkResponse):
 
     @success_list.setter
     def success_list(self, success_list):
-        """Sets the success_list of this DisableAlertRuleResponse.
+        r"""Sets the success_list of this DisableAlertRuleResponse.
 
         Alert rule ID.
 
@@ -102,7 +102,7 @@ class DisableAlertRuleResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DisableAlertRuleResponse.
+        r"""Gets the x_request_id of this DisableAlertRuleResponse.
 
         :return: The x_request_id of this DisableAlertRuleResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class DisableAlertRuleResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DisableAlertRuleResponse.
+        r"""Sets the x_request_id of this DisableAlertRuleResponse.
 
         :param x_request_id: The x_request_id of this DisableAlertRuleResponse.
         :type x_request_id: str

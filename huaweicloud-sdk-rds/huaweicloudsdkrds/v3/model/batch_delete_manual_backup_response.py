@@ -26,7 +26,7 @@ class BatchDeleteManualBackupResponse(SdkResponse):
     }
 
     def __init__(self, delete_results=None):
-        """BatchDeleteManualBackupResponse
+        r"""BatchDeleteManualBackupResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchDeleteManualBackupResponse(SdkResponse):
 
     @property
     def delete_results(self):
-        """Gets the delete_results of this BatchDeleteManualBackupResponse.
+        r"""Gets the delete_results of this BatchDeleteManualBackupResponse.
 
         备份删除结果
 
@@ -55,7 +55,7 @@ class BatchDeleteManualBackupResponse(SdkResponse):
 
     @delete_results.setter
     def delete_results(self, delete_results):
-        """Sets the delete_results of this BatchDeleteManualBackupResponse.
+        r"""Sets the delete_results of this BatchDeleteManualBackupResponse.
 
         备份删除结果
 

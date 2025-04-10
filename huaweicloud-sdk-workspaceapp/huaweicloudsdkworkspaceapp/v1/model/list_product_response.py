@@ -30,7 +30,7 @@ class ListProductResponse(SdkResponse):
     }
 
     def __init__(self, availability_zone=None, os_type=None, products=None):
-        """ListProductResponse
+        r"""ListProductResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListProductResponse(SdkResponse):
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this ListProductResponse.
+        r"""Gets the availability_zone of this ListProductResponse.
 
         可用分区。将服务创建到指定的可用分区。如果不指定则使用系统随机的可用分区。
 
@@ -69,7 +69,7 @@ class ListProductResponse(SdkResponse):
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this ListProductResponse.
+        r"""Sets the availability_zone of this ListProductResponse.
 
         可用分区。将服务创建到指定的可用分区。如果不指定则使用系统随机的可用分区。
 
@@ -80,7 +80,7 @@ class ListProductResponse(SdkResponse):
 
     @property
     def os_type(self):
-        """Gets the os_type of this ListProductResponse.
+        r"""Gets the os_type of this ListProductResponse.
 
         系统类型，当前仅支持Windows。 * `Linux` - * `Windows` - * `Other` -
 
@@ -91,7 +91,7 @@ class ListProductResponse(SdkResponse):
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this ListProductResponse.
+        r"""Sets the os_type of this ListProductResponse.
 
         系统类型，当前仅支持Windows。 * `Linux` - * `Windows` - * `Other` -
 
@@ -102,7 +102,7 @@ class ListProductResponse(SdkResponse):
 
     @property
     def products(self):
-        """Gets the products of this ListProductResponse.
+        r"""Gets the products of this ListProductResponse.
 
         产品列表。
 
@@ -113,7 +113,7 @@ class ListProductResponse(SdkResponse):
 
     @products.setter
     def products(self, products):
-        """Sets the products of this ListProductResponse.
+        r"""Sets the products of this ListProductResponse.
 
         产品列表。
 

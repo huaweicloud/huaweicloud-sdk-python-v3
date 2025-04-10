@@ -25,7 +25,7 @@ class CreateDesktopPoolChangeOrderRequest:
     }
 
     def __init__(self, body=None):
-        """CreateDesktopPoolChangeOrderRequest
+        r"""CreateDesktopPoolChangeOrderRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateDesktopPoolChangeOrderRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDesktopPoolChangeOrderRequest.
+        r"""Gets the body of this CreateDesktopPoolChangeOrderRequest.
 
         :return: The body of this CreateDesktopPoolChangeOrderRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.CreateBatchChangeOrderRequestBody`
@@ -52,7 +52,7 @@ class CreateDesktopPoolChangeOrderRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDesktopPoolChangeOrderRequest.
+        r"""Sets the body of this CreateDesktopPoolChangeOrderRequest.
 
         :param body: The body of this CreateDesktopPoolChangeOrderRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.CreateBatchChangeOrderRequestBody`

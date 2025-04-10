@@ -33,7 +33,7 @@ class EventCreateDetail:
     }
 
     def __init__(self, name=None, description=None, events=None, target=None, target_resource=None):
-        """EventCreateDetail
+        r"""EventCreateDetail
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class EventCreateDetail:
 
     @property
     def name(self):
-        """Gets the name of this EventCreateDetail.
+        r"""Gets the name of this EventCreateDetail.
 
         系统订阅名称。只允许小写英文字符、数字、下划线、中划线，最大长度64，同一个账号中创建的系统订阅和消息规则名唯一
 
@@ -82,7 +82,7 @@ class EventCreateDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EventCreateDetail.
+        r"""Sets the name of this EventCreateDetail.
 
         系统订阅名称。只允许小写英文字符、数字、下划线、中划线，最大长度64，同一个账号中创建的系统订阅和消息规则名唯一
 
@@ -93,7 +93,7 @@ class EventCreateDetail:
 
     @property
     def description(self):
-        """Gets the description of this EventCreateDetail.
+        r"""Gets the description of this EventCreateDetail.
 
         描述。最大长度255，不允许^~#$%&*<>()[]{}'\"\\
 
@@ -104,7 +104,7 @@ class EventCreateDetail:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EventCreateDetail.
+        r"""Sets the description of this EventCreateDetail.
 
         描述。最大长度255，不允许^~#$%&*<>()[]{}'\"\\
 
@@ -115,7 +115,7 @@ class EventCreateDetail:
 
     @property
     def events(self):
-        """Gets the events of this EventCreateDetail.
+        r"""Gets the events of this EventCreateDetail.
 
         系统订阅主题。每个主题由“{边缘资源}/{操作}”组成，多个主题使用逗号（,）进行分隔，支持如下主题： - edgeNode/offline：节点离线 - edgeNode/online：节点上线 - edgeNode/all：节点离线+节点上线 - deployment/created：容器应用创建 - deployment/updated：容器应用更新 - deployment/deleted：容器应用删除 - deployment/all：容器应用创建+更新+删除 - instance/created：应用实例创建 - instance/updated：应用实例更新 - instance/deleted：应用实例删除 - instance/all：应用实例创建+更新+删除
 
@@ -126,7 +126,7 @@ class EventCreateDetail:
 
     @events.setter
     def events(self, events):
-        """Sets the events of this EventCreateDetail.
+        r"""Sets the events of this EventCreateDetail.
 
         系统订阅主题。每个主题由“{边缘资源}/{操作}”组成，多个主题使用逗号（,）进行分隔，支持如下主题： - edgeNode/offline：节点离线 - edgeNode/online：节点上线 - edgeNode/all：节点离线+节点上线 - deployment/created：容器应用创建 - deployment/updated：容器应用更新 - deployment/deleted：容器应用删除 - deployment/all：容器应用创建+更新+删除 - instance/created：应用实例创建 - instance/updated：应用实例更新 - instance/deleted：应用实例删除 - instance/all：应用实例创建+更新+删除
 
@@ -137,7 +137,7 @@ class EventCreateDetail:
 
     @property
     def target(self):
-        """Gets the target of this EventCreateDetail.
+        r"""Gets the target of this EventCreateDetail.
 
         目的端点ID
 
@@ -148,7 +148,7 @@ class EventCreateDetail:
 
     @target.setter
     def target(self, target):
-        """Sets the target of this EventCreateDetail.
+        r"""Sets the target of this EventCreateDetail.
 
         目的端点ID
 
@@ -159,7 +159,7 @@ class EventCreateDetail:
 
     @property
     def target_resource(self):
-        """Gets the target_resource of this EventCreateDetail.
+        r"""Gets the target_resource of this EventCreateDetail.
 
         :return: The target_resource of this EventCreateDetail.
         :rtype: :class:`huaweicloudsdkief.v1.EndpointResource`
@@ -168,7 +168,7 @@ class EventCreateDetail:
 
     @target_resource.setter
     def target_resource(self, target_resource):
-        """Sets the target_resource of this EventCreateDetail.
+        r"""Sets the target_resource of this EventCreateDetail.
 
         :param target_resource: The target_resource of this EventCreateDetail.
         :type target_resource: :class:`huaweicloudsdkief.v1.EndpointResource`

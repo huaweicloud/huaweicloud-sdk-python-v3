@@ -29,7 +29,7 @@ class ChDatabaseConfigCheckResult:
     }
 
     def __init__(self, param_name=None, value=None, check_result=None):
-        """ChDatabaseConfigCheckResult
+        r"""ChDatabaseConfigCheckResult
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ChDatabaseConfigCheckResult:
 
     @property
     def param_name(self):
-        """Gets the param_name of this ChDatabaseConfigCheckResult.
+        r"""Gets the param_name of this ChDatabaseConfigCheckResult.
 
         库同步配置参数名。
 
@@ -65,7 +65,7 @@ class ChDatabaseConfigCheckResult:
 
     @param_name.setter
     def param_name(self, param_name):
-        """Sets the param_name of this ChDatabaseConfigCheckResult.
+        r"""Sets the param_name of this ChDatabaseConfigCheckResult.
 
         库同步配置参数名。
 
@@ -76,7 +76,7 @@ class ChDatabaseConfigCheckResult:
 
     @property
     def value(self):
-        """Gets the value of this ChDatabaseConfigCheckResult.
+        r"""Gets the value of this ChDatabaseConfigCheckResult.
 
         库同步配置参数值。
 
@@ -87,7 +87,7 @@ class ChDatabaseConfigCheckResult:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ChDatabaseConfigCheckResult.
+        r"""Sets the value of this ChDatabaseConfigCheckResult.
 
         库同步配置参数值。
 
@@ -98,7 +98,7 @@ class ChDatabaseConfigCheckResult:
 
     @property
     def check_result(self):
-        """Gets the check_result of this ChDatabaseConfigCheckResult.
+        r"""Gets the check_result of this ChDatabaseConfigCheckResult.
 
         校验结果。 取值范围： - success：成功 - fail：失败
 
@@ -109,7 +109,7 @@ class ChDatabaseConfigCheckResult:
 
     @check_result.setter
     def check_result(self, check_result):
-        """Sets the check_result of this ChDatabaseConfigCheckResult.
+        r"""Sets the check_result of this ChDatabaseConfigCheckResult.
 
         校验结果。 取值范围： - success：成功 - fail：失败
 

@@ -60,7 +60,7 @@ class ShowAppResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, version=None, summary=None, description=None, labels=None, image=None, commands=None, resources=None, inputs=None, outputs=None, create_time=None, update_time=None, user_name=None, source_project_name=None, source_resource_id=None, node_labels=None, icon=None):
-        """ShowAppResponse
+        r"""ShowAppResponse
 
         The model defined in huaweicloud sdk
 
@@ -163,7 +163,7 @@ class ShowAppResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowAppResponse.
+        r"""Gets the id of this ShowAppResponse.
 
         应用id
 
@@ -174,7 +174,7 @@ class ShowAppResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowAppResponse.
+        r"""Sets the id of this ShowAppResponse.
 
         应用id
 
@@ -185,7 +185,7 @@ class ShowAppResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowAppResponse.
+        r"""Gets the name of this ShowAppResponse.
 
         应用名称
 
@@ -196,7 +196,7 @@ class ShowAppResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowAppResponse.
+        r"""Sets the name of this ShowAppResponse.
 
         应用名称
 
@@ -207,7 +207,7 @@ class ShowAppResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this ShowAppResponse.
+        r"""Gets the version of this ShowAppResponse.
 
         应用版本
 
@@ -218,7 +218,7 @@ class ShowAppResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowAppResponse.
+        r"""Sets the version of this ShowAppResponse.
 
         应用版本
 
@@ -229,7 +229,7 @@ class ShowAppResponse(SdkResponse):
 
     @property
     def summary(self):
-        """Gets the summary of this ShowAppResponse.
+        r"""Gets the summary of this ShowAppResponse.
 
         应用短描述
 
@@ -240,7 +240,7 @@ class ShowAppResponse(SdkResponse):
 
     @summary.setter
     def summary(self, summary):
-        """Sets the summary of this ShowAppResponse.
+        r"""Sets the summary of this ShowAppResponse.
 
         应用短描述
 
@@ -251,7 +251,7 @@ class ShowAppResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowAppResponse.
+        r"""Gets the description of this ShowAppResponse.
 
         应用描述
 
@@ -262,7 +262,7 @@ class ShowAppResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowAppResponse.
+        r"""Sets the description of this ShowAppResponse.
 
         应用描述
 
@@ -273,7 +273,7 @@ class ShowAppResponse(SdkResponse):
 
     @property
     def labels(self):
-        """Gets the labels of this ShowAppResponse.
+        r"""Gets the labels of this ShowAppResponse.
 
         应用标签
 
@@ -284,7 +284,7 @@ class ShowAppResponse(SdkResponse):
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this ShowAppResponse.
+        r"""Sets the labels of this ShowAppResponse.
 
         应用标签
 
@@ -295,7 +295,7 @@ class ShowAppResponse(SdkResponse):
 
     @property
     def image(self):
-        """Gets the image of this ShowAppResponse.
+        r"""Gets the image of this ShowAppResponse.
 
         应用镜像
 
@@ -306,7 +306,7 @@ class ShowAppResponse(SdkResponse):
 
     @image.setter
     def image(self, image):
-        """Sets the image of this ShowAppResponse.
+        r"""Sets the image of this ShowAppResponse.
 
         应用镜像
 
@@ -317,7 +317,7 @@ class ShowAppResponse(SdkResponse):
 
     @property
     def commands(self):
-        """Gets the commands of this ShowAppResponse.
+        r"""Gets the commands of this ShowAppResponse.
 
         应用命令
 
@@ -328,7 +328,7 @@ class ShowAppResponse(SdkResponse):
 
     @commands.setter
     def commands(self, commands):
-        """Sets the commands of this ShowAppResponse.
+        r"""Sets the commands of this ShowAppResponse.
 
         应用命令
 
@@ -339,7 +339,7 @@ class ShowAppResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ShowAppResponse.
+        r"""Gets the resources of this ShowAppResponse.
 
         :return: The resources of this ShowAppResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ResourceDto`
@@ -348,7 +348,7 @@ class ShowAppResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ShowAppResponse.
+        r"""Sets the resources of this ShowAppResponse.
 
         :param resources: The resources of this ShowAppResponse.
         :type resources: :class:`huaweicloudsdkeihealth.v1.ResourceDto`
@@ -357,7 +357,7 @@ class ShowAppResponse(SdkResponse):
 
     @property
     def inputs(self):
-        """Gets the inputs of this ShowAppResponse.
+        r"""Gets the inputs of this ShowAppResponse.
 
         应用的输入参数信息
 
@@ -368,7 +368,7 @@ class ShowAppResponse(SdkResponse):
 
     @inputs.setter
     def inputs(self, inputs):
-        """Sets the inputs of this ShowAppResponse.
+        r"""Sets the inputs of this ShowAppResponse.
 
         应用的输入参数信息
 
@@ -379,7 +379,7 @@ class ShowAppResponse(SdkResponse):
 
     @property
     def outputs(self):
-        """Gets the outputs of this ShowAppResponse.
+        r"""Gets the outputs of this ShowAppResponse.
 
         应用的输出参数信息
 
@@ -390,7 +390,7 @@ class ShowAppResponse(SdkResponse):
 
     @outputs.setter
     def outputs(self, outputs):
-        """Sets the outputs of this ShowAppResponse.
+        r"""Sets the outputs of this ShowAppResponse.
 
         应用的输出参数信息
 
@@ -401,7 +401,7 @@ class ShowAppResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowAppResponse.
+        r"""Gets the create_time of this ShowAppResponse.
 
         创建应用时间
 
@@ -412,7 +412,7 @@ class ShowAppResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowAppResponse.
+        r"""Sets the create_time of this ShowAppResponse.
 
         创建应用时间
 
@@ -423,7 +423,7 @@ class ShowAppResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowAppResponse.
+        r"""Gets the update_time of this ShowAppResponse.
 
         更新应用时间
 
@@ -434,7 +434,7 @@ class ShowAppResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowAppResponse.
+        r"""Sets the update_time of this ShowAppResponse.
 
         更新应用时间
 
@@ -445,7 +445,7 @@ class ShowAppResponse(SdkResponse):
 
     @property
     def user_name(self):
-        """Gets the user_name of this ShowAppResponse.
+        r"""Gets the user_name of this ShowAppResponse.
 
         创建应用的用户名
 
@@ -456,7 +456,7 @@ class ShowAppResponse(SdkResponse):
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ShowAppResponse.
+        r"""Sets the user_name of this ShowAppResponse.
 
         创建应用的用户名
 
@@ -467,7 +467,7 @@ class ShowAppResponse(SdkResponse):
 
     @property
     def source_project_name(self):
-        """Gets the source_project_name of this ShowAppResponse.
+        r"""Gets the source_project_name of this ShowAppResponse.
 
         源项目名称
 
@@ -478,7 +478,7 @@ class ShowAppResponse(SdkResponse):
 
     @source_project_name.setter
     def source_project_name(self, source_project_name):
-        """Sets the source_project_name of this ShowAppResponse.
+        r"""Sets the source_project_name of this ShowAppResponse.
 
         源项目名称
 
@@ -489,7 +489,7 @@ class ShowAppResponse(SdkResponse):
 
     @property
     def source_resource_id(self):
-        """Gets the source_resource_id of this ShowAppResponse.
+        r"""Gets the source_resource_id of this ShowAppResponse.
 
         源资源id
 
@@ -500,7 +500,7 @@ class ShowAppResponse(SdkResponse):
 
     @source_resource_id.setter
     def source_resource_id(self, source_resource_id):
-        """Sets the source_resource_id of this ShowAppResponse.
+        r"""Sets the source_resource_id of this ShowAppResponse.
 
         源资源id
 
@@ -511,7 +511,7 @@ class ShowAppResponse(SdkResponse):
 
     @property
     def node_labels(self):
-        """Gets the node_labels of this ShowAppResponse.
+        r"""Gets the node_labels of this ShowAppResponse.
 
         节点标签
 
@@ -522,7 +522,7 @@ class ShowAppResponse(SdkResponse):
 
     @node_labels.setter
     def node_labels(self, node_labels):
-        """Sets the node_labels of this ShowAppResponse.
+        r"""Sets the node_labels of this ShowAppResponse.
 
         节点标签
 
@@ -533,7 +533,7 @@ class ShowAppResponse(SdkResponse):
 
     @property
     def icon(self):
-        """Gets the icon of this ShowAppResponse.
+        r"""Gets the icon of this ShowAppResponse.
 
         图标base64编码
 
@@ -544,7 +544,7 @@ class ShowAppResponse(SdkResponse):
 
     @icon.setter
     def icon(self, icon):
-        """Sets the icon of this ShowAppResponse.
+        r"""Sets the icon of this ShowAppResponse.
 
         图标base64编码
 

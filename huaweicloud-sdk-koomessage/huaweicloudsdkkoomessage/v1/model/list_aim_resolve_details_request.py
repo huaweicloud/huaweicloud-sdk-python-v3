@@ -47,7 +47,7 @@ class ListAimResolveDetailsRequest:
     }
 
     def __init__(self, task_id=None, task_name=None, tpl_id=None, tpl_name=None, cust_flag=None, sms_sign=None, aim_url=None, resolved_status=None, begin_time=None, end_time=None, offset=None, limit=None):
-        """ListAimResolveDetailsRequest
+        r"""ListAimResolveDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -118,7 +118,7 @@ class ListAimResolveDetailsRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ListAimResolveDetailsRequest.
+        r"""Gets the task_id of this ListAimResolveDetailsRequest.
 
         解析任务ID或者发送任务ID。
 
@@ -129,7 +129,7 @@ class ListAimResolveDetailsRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ListAimResolveDetailsRequest.
+        r"""Sets the task_id of this ListAimResolveDetailsRequest.
 
         解析任务ID或者发送任务ID。
 
@@ -140,7 +140,7 @@ class ListAimResolveDetailsRequest:
 
     @property
     def task_name(self):
-        """Gets the task_name of this ListAimResolveDetailsRequest.
+        r"""Gets the task_name of this ListAimResolveDetailsRequest.
 
         任务名称。
 
@@ -151,7 +151,7 @@ class ListAimResolveDetailsRequest:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this ListAimResolveDetailsRequest.
+        r"""Sets the task_name of this ListAimResolveDetailsRequest.
 
         任务名称。
 
@@ -162,7 +162,7 @@ class ListAimResolveDetailsRequest:
 
     @property
     def tpl_id(self):
-        """Gets the tpl_id of this ListAimResolveDetailsRequest.
+        r"""Gets the tpl_id of this ListAimResolveDetailsRequest.
 
         智能信息模板ID。
 
@@ -173,7 +173,7 @@ class ListAimResolveDetailsRequest:
 
     @tpl_id.setter
     def tpl_id(self, tpl_id):
-        """Sets the tpl_id of this ListAimResolveDetailsRequest.
+        r"""Sets the tpl_id of this ListAimResolveDetailsRequest.
 
         智能信息模板ID。
 
@@ -184,7 +184,7 @@ class ListAimResolveDetailsRequest:
 
     @property
     def tpl_name(self):
-        """Gets the tpl_name of this ListAimResolveDetailsRequest.
+        r"""Gets the tpl_name of this ListAimResolveDetailsRequest.
 
         智能信息模板名称。
 
@@ -195,7 +195,7 @@ class ListAimResolveDetailsRequest:
 
     @tpl_name.setter
     def tpl_name(self, tpl_name):
-        """Sets the tpl_name of this ListAimResolveDetailsRequest.
+        r"""Sets the tpl_name of this ListAimResolveDetailsRequest.
 
         智能信息模板名称。
 
@@ -206,7 +206,7 @@ class ListAimResolveDetailsRequest:
 
     @property
     def cust_flag(self):
-        """Gets the cust_flag of this ListAimResolveDetailsRequest.
+        r"""Gets the cust_flag of this ListAimResolveDetailsRequest.
 
         创建解析任务时填写用户唯一标识，手机号码或者任何的唯一标识，唯一标识不超过64个字符。发送智能信息时则必须填客户的手机号码。此处为手机号。样例为：130****0001。
 
@@ -217,7 +217,7 @@ class ListAimResolveDetailsRequest:
 
     @cust_flag.setter
     def cust_flag(self, cust_flag):
-        """Sets the cust_flag of this ListAimResolveDetailsRequest.
+        r"""Sets the cust_flag of this ListAimResolveDetailsRequest.
 
         创建解析任务时填写用户唯一标识，手机号码或者任何的唯一标识，唯一标识不超过64个字符。发送智能信息时则必须填客户的手机号码。此处为手机号。样例为：130****0001。
 
@@ -228,7 +228,7 @@ class ListAimResolveDetailsRequest:
 
     @property
     def sms_sign(self):
-        """Gets the sms_sign of this ListAimResolveDetailsRequest.
+        r"""Gets the sms_sign of this ListAimResolveDetailsRequest.
 
         签名。
 
@@ -239,7 +239,7 @@ class ListAimResolveDetailsRequest:
 
     @sms_sign.setter
     def sms_sign(self, sms_sign):
-        """Sets the sms_sign of this ListAimResolveDetailsRequest.
+        r"""Sets the sms_sign of this ListAimResolveDetailsRequest.
 
         签名。
 
@@ -250,7 +250,7 @@ class ListAimResolveDetailsRequest:
 
     @property
     def aim_url(self):
-        """Gets the aim_url of this ListAimResolveDetailsRequest.
+        r"""Gets the aim_url of this ListAimResolveDetailsRequest.
 
         智能信息短链，通过自己的短信渠道发送时，需要把该短链添加到短信模板中，并确保发送短信时的签名与创建短链时的签名保持一致。
 
@@ -261,7 +261,7 @@ class ListAimResolveDetailsRequest:
 
     @aim_url.setter
     def aim_url(self, aim_url):
-        """Sets the aim_url of this ListAimResolveDetailsRequest.
+        r"""Sets the aim_url of this ListAimResolveDetailsRequest.
 
         智能信息短链，通过自己的短信渠道发送时，需要把该短链添加到短信模板中，并确保发送短信时的签名与创建短链时的签名保持一致。
 
@@ -272,7 +272,7 @@ class ListAimResolveDetailsRequest:
 
     @property
     def resolved_status(self):
-        """Gets the resolved_status of this ListAimResolveDetailsRequest.
+        r"""Gets the resolved_status of this ListAimResolveDetailsRequest.
 
         解析状态。 - success：解析成功  - fail：解析失败  - unresolved：未解析
 
@@ -283,7 +283,7 @@ class ListAimResolveDetailsRequest:
 
     @resolved_status.setter
     def resolved_status(self, resolved_status):
-        """Sets the resolved_status of this ListAimResolveDetailsRequest.
+        r"""Sets the resolved_status of this ListAimResolveDetailsRequest.
 
         解析状态。 - success：解析成功  - fail：解析失败  - unresolved：未解析
 
@@ -294,7 +294,7 @@ class ListAimResolveDetailsRequest:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ListAimResolveDetailsRequest.
+        r"""Gets the begin_time of this ListAimResolveDetailsRequest.
 
         短链创建开始时间。格式为：2019-10-12T07:20:50Z。  > 需同时传入end_time才能生效，单独传begin_time不会作为过滤条件。缺省：查询最近二十四小时数据。 > > 仅支持查询最近1年内创建的短链。 
 
@@ -305,7 +305,7 @@ class ListAimResolveDetailsRequest:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ListAimResolveDetailsRequest.
+        r"""Sets the begin_time of this ListAimResolveDetailsRequest.
 
         短链创建开始时间。格式为：2019-10-12T07:20:50Z。  > 需同时传入end_time才能生效，单独传begin_time不会作为过滤条件。缺省：查询最近二十四小时数据。 > > 仅支持查询最近1年内创建的短链。 
 
@@ -316,7 +316,7 @@ class ListAimResolveDetailsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListAimResolveDetailsRequest.
+        r"""Gets the end_time of this ListAimResolveDetailsRequest.
 
         短链创建结束时间。格式为：2019-10-12T07:20:50Z。  > 需同时传入begin_time才能生效，单独传end_time不会作为过滤条件。缺省：查询最近二十四小时数据。 
 
@@ -327,7 +327,7 @@ class ListAimResolveDetailsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListAimResolveDetailsRequest.
+        r"""Sets the end_time of this ListAimResolveDetailsRequest.
 
         短链创建结束时间。格式为：2019-10-12T07:20:50Z。  > 需同时传入begin_time才能生效，单独传end_time不会作为过滤条件。缺省：查询最近二十四小时数据。 
 
@@ -338,7 +338,7 @@ class ListAimResolveDetailsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAimResolveDetailsRequest.
+        r"""Gets the offset of this ListAimResolveDetailsRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0。  >为提高查询效率，offset+limit须小于等于10000，超出范围查询为空。 
 
@@ -349,7 +349,7 @@ class ListAimResolveDetailsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAimResolveDetailsRequest.
+        r"""Sets the offset of this ListAimResolveDetailsRequest.
 
         偏移量，表示从此偏移量开始查询，offset大于等于0。  >为提高查询效率，offset+limit须小于等于10000，超出范围查询为空。 
 
@@ -360,7 +360,7 @@ class ListAimResolveDetailsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAimResolveDetailsRequest.
+        r"""Gets the limit of this ListAimResolveDetailsRequest.
 
         每页显示的条目数量。 
 
@@ -371,7 +371,7 @@ class ListAimResolveDetailsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAimResolveDetailsRequest.
+        r"""Sets the limit of this ListAimResolveDetailsRequest.
 
         每页显示的条目数量。 
 

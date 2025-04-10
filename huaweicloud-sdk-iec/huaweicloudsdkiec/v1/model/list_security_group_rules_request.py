@@ -29,7 +29,7 @@ class ListSecurityGroupRulesRequest:
     }
 
     def __init__(self, limit=None, offset=None, security_group_id=None):
-        """ListSecurityGroupRulesRequest
+        r"""ListSecurityGroupRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListSecurityGroupRulesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSecurityGroupRulesRequest.
+        r"""Gets the limit of this ListSecurityGroupRulesRequest.
 
         查询返回边缘安全组规则列表数量。取值范围：0~1000。
 
@@ -68,7 +68,7 @@ class ListSecurityGroupRulesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSecurityGroupRulesRequest.
+        r"""Sets the limit of this ListSecurityGroupRulesRequest.
 
         查询返回边缘安全组规则列表数量。取值范围：0~1000。
 
@@ -79,7 +79,7 @@ class ListSecurityGroupRulesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSecurityGroupRulesRequest.
+        r"""Gets the offset of this ListSecurityGroupRulesRequest.
 
         查询的偏移量。
 
@@ -90,7 +90,7 @@ class ListSecurityGroupRulesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSecurityGroupRulesRequest.
+        r"""Sets the offset of this ListSecurityGroupRulesRequest.
 
         查询的偏移量。
 
@@ -101,7 +101,7 @@ class ListSecurityGroupRulesRequest:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this ListSecurityGroupRulesRequest.
+        r"""Gets the security_group_id of this ListSecurityGroupRulesRequest.
 
         安全组ID。uuid
 
@@ -112,7 +112,7 @@ class ListSecurityGroupRulesRequest:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this ListSecurityGroupRulesRequest.
+        r"""Sets the security_group_id of this ListSecurityGroupRulesRequest.
 
         安全组ID。uuid
 

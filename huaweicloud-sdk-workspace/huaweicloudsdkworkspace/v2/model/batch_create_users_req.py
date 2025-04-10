@@ -25,7 +25,7 @@ class BatchCreateUsersReq:
     }
 
     def __init__(self, users=None):
-        """BatchCreateUsersReq
+        r"""BatchCreateUsersReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchCreateUsersReq:
 
     @property
     def users(self):
-        """Gets the users of this BatchCreateUsersReq.
+        r"""Gets the users of this BatchCreateUsersReq.
 
         创建单个用户请求。
 
@@ -53,7 +53,7 @@ class BatchCreateUsersReq:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this BatchCreateUsersReq.
+        r"""Sets the users of this BatchCreateUsersReq.
 
         创建单个用户请求。
 

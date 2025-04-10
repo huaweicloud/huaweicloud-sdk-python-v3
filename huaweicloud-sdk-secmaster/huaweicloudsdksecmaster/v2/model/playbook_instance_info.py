@@ -43,7 +43,7 @@ class PlaybookInstanceInfo:
     }
 
     def __init__(self, id=None, name=None, project_id=None, playbook=None, dataclass=None, dataobject=None, status=None, trigger_type=None, start_time=None, end_time=None):
-        """PlaybookInstanceInfo
+        r"""PlaybookInstanceInfo
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class PlaybookInstanceInfo:
 
     @property
     def id(self):
-        """Gets the id of this PlaybookInstanceInfo.
+        r"""Gets the id of this PlaybookInstanceInfo.
 
         剧本实例ID
 
@@ -117,7 +117,7 @@ class PlaybookInstanceInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PlaybookInstanceInfo.
+        r"""Sets the id of this PlaybookInstanceInfo.
 
         剧本实例ID
 
@@ -128,7 +128,7 @@ class PlaybookInstanceInfo:
 
     @property
     def name(self):
-        """Gets the name of this PlaybookInstanceInfo.
+        r"""Gets the name of this PlaybookInstanceInfo.
 
         剧本实例名称
 
@@ -139,7 +139,7 @@ class PlaybookInstanceInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PlaybookInstanceInfo.
+        r"""Sets the name of this PlaybookInstanceInfo.
 
         剧本实例名称
 
@@ -150,7 +150,7 @@ class PlaybookInstanceInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this PlaybookInstanceInfo.
+        r"""Gets the project_id of this PlaybookInstanceInfo.
 
         项目ID
 
@@ -161,7 +161,7 @@ class PlaybookInstanceInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this PlaybookInstanceInfo.
+        r"""Sets the project_id of this PlaybookInstanceInfo.
 
         项目ID
 
@@ -172,7 +172,7 @@ class PlaybookInstanceInfo:
 
     @property
     def playbook(self):
-        """Gets the playbook of this PlaybookInstanceInfo.
+        r"""Gets the playbook of this PlaybookInstanceInfo.
 
         :return: The playbook of this PlaybookInstanceInfo.
         :rtype: :class:`huaweicloudsdksecmaster.v2.PlaybookInfoRef`
@@ -181,7 +181,7 @@ class PlaybookInstanceInfo:
 
     @playbook.setter
     def playbook(self, playbook):
-        """Sets the playbook of this PlaybookInstanceInfo.
+        r"""Sets the playbook of this PlaybookInstanceInfo.
 
         :param playbook: The playbook of this PlaybookInstanceInfo.
         :type playbook: :class:`huaweicloudsdksecmaster.v2.PlaybookInfoRef`
@@ -190,7 +190,7 @@ class PlaybookInstanceInfo:
 
     @property
     def dataclass(self):
-        """Gets the dataclass of this PlaybookInstanceInfo.
+        r"""Gets the dataclass of this PlaybookInstanceInfo.
 
         :return: The dataclass of this PlaybookInstanceInfo.
         :rtype: :class:`huaweicloudsdksecmaster.v2.DataclassInfoRef`
@@ -199,7 +199,7 @@ class PlaybookInstanceInfo:
 
     @dataclass.setter
     def dataclass(self, dataclass):
-        """Sets the dataclass of this PlaybookInstanceInfo.
+        r"""Sets the dataclass of this PlaybookInstanceInfo.
 
         :param dataclass: The dataclass of this PlaybookInstanceInfo.
         :type dataclass: :class:`huaweicloudsdksecmaster.v2.DataclassInfoRef`
@@ -208,7 +208,7 @@ class PlaybookInstanceInfo:
 
     @property
     def dataobject(self):
-        """Gets the dataobject of this PlaybookInstanceInfo.
+        r"""Gets the dataobject of this PlaybookInstanceInfo.
 
         :return: The dataobject of this PlaybookInstanceInfo.
         :rtype: :class:`huaweicloudsdksecmaster.v2.DataobjectInfo`
@@ -217,7 +217,7 @@ class PlaybookInstanceInfo:
 
     @dataobject.setter
     def dataobject(self, dataobject):
-        """Sets the dataobject of this PlaybookInstanceInfo.
+        r"""Sets the dataobject of this PlaybookInstanceInfo.
 
         :param dataobject: The dataobject of this PlaybookInstanceInfo.
         :type dataobject: :class:`huaweicloudsdksecmaster.v2.DataobjectInfo`
@@ -226,7 +226,7 @@ class PlaybookInstanceInfo:
 
     @property
     def status(self):
-        """Gets the status of this PlaybookInstanceInfo.
+        r"""Gets the status of this PlaybookInstanceInfo.
 
         剧本实例状态. (RUNNING--运行中、FINISHED--成功、FAILED--失败、RETRYING--重试中、TERMINATING--终止中、TERMINATED--已终止)
 
@@ -237,7 +237,7 @@ class PlaybookInstanceInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this PlaybookInstanceInfo.
+        r"""Sets the status of this PlaybookInstanceInfo.
 
         剧本实例状态. (RUNNING--运行中、FINISHED--成功、FAILED--失败、RETRYING--重试中、TERMINATING--终止中、TERMINATED--已终止)
 
@@ -248,7 +248,7 @@ class PlaybookInstanceInfo:
 
     @property
     def trigger_type(self):
-        """Gets the trigger_type of this PlaybookInstanceInfo.
+        r"""Gets the trigger_type of this PlaybookInstanceInfo.
 
         触发类型. TIMER--定时触发, EVENT--事件触发
 
@@ -259,7 +259,7 @@ class PlaybookInstanceInfo:
 
     @trigger_type.setter
     def trigger_type(self, trigger_type):
-        """Sets the trigger_type of this PlaybookInstanceInfo.
+        r"""Sets the trigger_type of this PlaybookInstanceInfo.
 
         触发类型. TIMER--定时触发, EVENT--事件触发
 
@@ -270,7 +270,7 @@ class PlaybookInstanceInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this PlaybookInstanceInfo.
+        r"""Gets the start_time of this PlaybookInstanceInfo.
 
         创建时间
 
@@ -281,7 +281,7 @@ class PlaybookInstanceInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this PlaybookInstanceInfo.
+        r"""Sets the start_time of this PlaybookInstanceInfo.
 
         创建时间
 
@@ -292,7 +292,7 @@ class PlaybookInstanceInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this PlaybookInstanceInfo.
+        r"""Gets the end_time of this PlaybookInstanceInfo.
 
         更新时间
 
@@ -303,7 +303,7 @@ class PlaybookInstanceInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this PlaybookInstanceInfo.
+        r"""Sets the end_time of this PlaybookInstanceInfo.
 
         更新时间
 

@@ -25,7 +25,7 @@ class Mesher:
     }
 
     def __init__(self, port=None):
-        """Mesher
+        r"""Mesher
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class Mesher:
 
     @property
     def port(self):
-        """Gets the port of this Mesher.
+        r"""Gets the port of this Mesher.
 
         :return: The port of this Mesher.
         :rtype: int
@@ -51,7 +51,7 @@ class Mesher:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this Mesher.
+        r"""Sets the port of this Mesher.
 
         :param port: The port of this Mesher.
         :type port: int

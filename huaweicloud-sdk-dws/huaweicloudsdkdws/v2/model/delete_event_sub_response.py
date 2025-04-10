@@ -54,7 +54,7 @@ class DeleteEventSubResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, source_type=None, source_id=None, category=None, severity=None, tag=None, enable=None, project_id=None, name_space=None, notification_target=None, notification_target_name=None, notification_target_type=None, language=None, time_zone=None):
-        """DeleteEventSubResponse
+        r"""DeleteEventSubResponse
 
         The model defined in huaweicloud sdk
 
@@ -142,7 +142,7 @@ class DeleteEventSubResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this DeleteEventSubResponse.
+        r"""Gets the id of this DeleteEventSubResponse.
 
         订阅ID
 
@@ -153,7 +153,7 @@ class DeleteEventSubResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteEventSubResponse.
+        r"""Sets the id of this DeleteEventSubResponse.
 
         订阅ID
 
@@ -164,7 +164,7 @@ class DeleteEventSubResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this DeleteEventSubResponse.
+        r"""Gets the name of this DeleteEventSubResponse.
 
         订阅名称
 
@@ -175,7 +175,7 @@ class DeleteEventSubResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this DeleteEventSubResponse.
+        r"""Sets the name of this DeleteEventSubResponse.
 
         订阅名称
 
@@ -186,7 +186,7 @@ class DeleteEventSubResponse(SdkResponse):
 
     @property
     def source_type(self):
-        """Gets the source_type of this DeleteEventSubResponse.
+        r"""Gets the source_type of this DeleteEventSubResponse.
 
         事件源类型
 
@@ -197,7 +197,7 @@ class DeleteEventSubResponse(SdkResponse):
 
     @source_type.setter
     def source_type(self, source_type):
-        """Sets the source_type of this DeleteEventSubResponse.
+        r"""Sets the source_type of this DeleteEventSubResponse.
 
         事件源类型
 
@@ -208,7 +208,7 @@ class DeleteEventSubResponse(SdkResponse):
 
     @property
     def source_id(self):
-        """Gets the source_id of this DeleteEventSubResponse.
+        r"""Gets the source_id of this DeleteEventSubResponse.
 
         事件源ID
 
@@ -219,7 +219,7 @@ class DeleteEventSubResponse(SdkResponse):
 
     @source_id.setter
     def source_id(self, source_id):
-        """Sets the source_id of this DeleteEventSubResponse.
+        r"""Sets the source_id of this DeleteEventSubResponse.
 
         事件源ID
 
@@ -230,7 +230,7 @@ class DeleteEventSubResponse(SdkResponse):
 
     @property
     def category(self):
-        """Gets the category of this DeleteEventSubResponse.
+        r"""Gets the category of this DeleteEventSubResponse.
 
         事件类别
 
@@ -241,7 +241,7 @@ class DeleteEventSubResponse(SdkResponse):
 
     @category.setter
     def category(self, category):
-        """Sets the category of this DeleteEventSubResponse.
+        r"""Sets the category of this DeleteEventSubResponse.
 
         事件类别
 
@@ -252,7 +252,7 @@ class DeleteEventSubResponse(SdkResponse):
 
     @property
     def severity(self):
-        """Gets the severity of this DeleteEventSubResponse.
+        r"""Gets the severity of this DeleteEventSubResponse.
 
         事件级别
 
@@ -263,7 +263,7 @@ class DeleteEventSubResponse(SdkResponse):
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this DeleteEventSubResponse.
+        r"""Sets the severity of this DeleteEventSubResponse.
 
         事件级别
 
@@ -274,7 +274,7 @@ class DeleteEventSubResponse(SdkResponse):
 
     @property
     def tag(self):
-        """Gets the tag of this DeleteEventSubResponse.
+        r"""Gets the tag of this DeleteEventSubResponse.
 
         事件标签
 
@@ -285,7 +285,7 @@ class DeleteEventSubResponse(SdkResponse):
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this DeleteEventSubResponse.
+        r"""Sets the tag of this DeleteEventSubResponse.
 
         事件标签
 
@@ -296,7 +296,7 @@ class DeleteEventSubResponse(SdkResponse):
 
     @property
     def enable(self):
-        """Gets the enable of this DeleteEventSubResponse.
+        r"""Gets the enable of this DeleteEventSubResponse.
 
         是否开启订阅 1为开启，0为关闭
 
@@ -307,7 +307,7 @@ class DeleteEventSubResponse(SdkResponse):
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this DeleteEventSubResponse.
+        r"""Sets the enable of this DeleteEventSubResponse.
 
         是否开启订阅 1为开启，0为关闭
 
@@ -318,7 +318,7 @@ class DeleteEventSubResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this DeleteEventSubResponse.
+        r"""Gets the project_id of this DeleteEventSubResponse.
 
         租户凭证ID
 
@@ -329,7 +329,7 @@ class DeleteEventSubResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this DeleteEventSubResponse.
+        r"""Sets the project_id of this DeleteEventSubResponse.
 
         租户凭证ID
 
@@ -340,7 +340,7 @@ class DeleteEventSubResponse(SdkResponse):
 
     @property
     def name_space(self):
-        """Gets the name_space of this DeleteEventSubResponse.
+        r"""Gets the name_space of this DeleteEventSubResponse.
 
         所属服务
 
@@ -351,7 +351,7 @@ class DeleteEventSubResponse(SdkResponse):
 
     @name_space.setter
     def name_space(self, name_space):
-        """Sets the name_space of this DeleteEventSubResponse.
+        r"""Sets the name_space of this DeleteEventSubResponse.
 
         所属服务
 
@@ -362,7 +362,7 @@ class DeleteEventSubResponse(SdkResponse):
 
     @property
     def notification_target(self):
-        """Gets the notification_target of this DeleteEventSubResponse.
+        r"""Gets the notification_target of this DeleteEventSubResponse.
 
         消息通知主题地址
 
@@ -373,7 +373,7 @@ class DeleteEventSubResponse(SdkResponse):
 
     @notification_target.setter
     def notification_target(self, notification_target):
-        """Sets the notification_target of this DeleteEventSubResponse.
+        r"""Sets the notification_target of this DeleteEventSubResponse.
 
         消息通知主题地址
 
@@ -384,7 +384,7 @@ class DeleteEventSubResponse(SdkResponse):
 
     @property
     def notification_target_name(self):
-        """Gets the notification_target_name of this DeleteEventSubResponse.
+        r"""Gets the notification_target_name of this DeleteEventSubResponse.
 
         消息通知主题名称
 
@@ -395,7 +395,7 @@ class DeleteEventSubResponse(SdkResponse):
 
     @notification_target_name.setter
     def notification_target_name(self, notification_target_name):
-        """Sets the notification_target_name of this DeleteEventSubResponse.
+        r"""Sets the notification_target_name of this DeleteEventSubResponse.
 
         消息通知主题名称
 
@@ -406,7 +406,7 @@ class DeleteEventSubResponse(SdkResponse):
 
     @property
     def notification_target_type(self):
-        """Gets the notification_target_type of this DeleteEventSubResponse.
+        r"""Gets the notification_target_type of this DeleteEventSubResponse.
 
         消息通知类型
 
@@ -417,7 +417,7 @@ class DeleteEventSubResponse(SdkResponse):
 
     @notification_target_type.setter
     def notification_target_type(self, notification_target_type):
-        """Sets the notification_target_type of this DeleteEventSubResponse.
+        r"""Sets the notification_target_type of this DeleteEventSubResponse.
 
         消息通知类型
 
@@ -428,7 +428,7 @@ class DeleteEventSubResponse(SdkResponse):
 
     @property
     def language(self):
-        """Gets the language of this DeleteEventSubResponse.
+        r"""Gets the language of this DeleteEventSubResponse.
 
         语言
 
@@ -439,7 +439,7 @@ class DeleteEventSubResponse(SdkResponse):
 
     @language.setter
     def language(self, language):
-        """Sets the language of this DeleteEventSubResponse.
+        r"""Sets the language of this DeleteEventSubResponse.
 
         语言
 
@@ -450,7 +450,7 @@ class DeleteEventSubResponse(SdkResponse):
 
     @property
     def time_zone(self):
-        """Gets the time_zone of this DeleteEventSubResponse.
+        r"""Gets the time_zone of this DeleteEventSubResponse.
 
         时区
 
@@ -461,7 +461,7 @@ class DeleteEventSubResponse(SdkResponse):
 
     @time_zone.setter
     def time_zone(self, time_zone):
-        """Sets the time_zone of this DeleteEventSubResponse.
+        r"""Sets the time_zone of this DeleteEventSubResponse.
 
         时区
 

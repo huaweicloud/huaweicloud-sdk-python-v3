@@ -42,7 +42,7 @@ class ShowInstanceSnapshotResponse(SdkResponse):
     }
 
     def __init__(self, cluster_mode=None, instance_mode=None, data_volume_size=None, solution=None, node_num=None, coordinator_num=None, sharding_num=None, replica_num=None, engine_version=None):
-        """ShowInstanceSnapshotResponse
+        r"""ShowInstanceSnapshotResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class ShowInstanceSnapshotResponse(SdkResponse):
 
     @property
     def cluster_mode(self):
-        """Gets the cluster_mode of this ShowInstanceSnapshotResponse.
+        r"""Gets the cluster_mode of this ShowInstanceSnapshotResponse.
 
         实例部署形态。集中式Ha(主备)、分布式Independent(独立部署)。
 
@@ -111,7 +111,7 @@ class ShowInstanceSnapshotResponse(SdkResponse):
 
     @cluster_mode.setter
     def cluster_mode(self, cluster_mode):
-        """Sets the cluster_mode of this ShowInstanceSnapshotResponse.
+        r"""Sets the cluster_mode of this ShowInstanceSnapshotResponse.
 
         实例部署形态。集中式Ha(主备)、分布式Independent(独立部署)。
 
@@ -122,7 +122,7 @@ class ShowInstanceSnapshotResponse(SdkResponse):
 
     @property
     def instance_mode(self):
-        """Gets the instance_mode of this ShowInstanceSnapshotResponse.
+        r"""Gets the instance_mode of this ShowInstanceSnapshotResponse.
 
         实例模型，企业版enterprise，标准版standard，基础版basic。
 
@@ -133,7 +133,7 @@ class ShowInstanceSnapshotResponse(SdkResponse):
 
     @instance_mode.setter
     def instance_mode(self, instance_mode):
-        """Sets the instance_mode of this ShowInstanceSnapshotResponse.
+        r"""Sets the instance_mode of this ShowInstanceSnapshotResponse.
 
         实例模型，企业版enterprise，标准版standard，基础版basic。
 
@@ -144,7 +144,7 @@ class ShowInstanceSnapshotResponse(SdkResponse):
 
     @property
     def data_volume_size(self):
-        """Gets the data_volume_size of this ShowInstanceSnapshotResponse.
+        r"""Gets the data_volume_size of this ShowInstanceSnapshotResponse.
 
         磁盘大小，单位：GB。
 
@@ -155,7 +155,7 @@ class ShowInstanceSnapshotResponse(SdkResponse):
 
     @data_volume_size.setter
     def data_volume_size(self, data_volume_size):
-        """Sets the data_volume_size of this ShowInstanceSnapshotResponse.
+        r"""Sets the data_volume_size of this ShowInstanceSnapshotResponse.
 
         磁盘大小，单位：GB。
 
@@ -166,7 +166,7 @@ class ShowInstanceSnapshotResponse(SdkResponse):
 
     @property
     def solution(self):
-        """Gets the solution of this ShowInstanceSnapshotResponse.
+        r"""Gets the solution of this ShowInstanceSnapshotResponse.
 
         解决方案模板类型。集中式Ha一般用triset，分布式Independent一般为空或者默认hws。  描述如下：  triset：高可用(1主2备)  hws：默认。
 
@@ -177,7 +177,7 @@ class ShowInstanceSnapshotResponse(SdkResponse):
 
     @solution.setter
     def solution(self, solution):
-        """Sets the solution of this ShowInstanceSnapshotResponse.
+        r"""Sets the solution of this ShowInstanceSnapshotResponse.
 
         解决方案模板类型。集中式Ha一般用triset，分布式Independent一般为空或者默认hws。  描述如下：  triset：高可用(1主2备)  hws：默认。
 
@@ -188,7 +188,7 @@ class ShowInstanceSnapshotResponse(SdkResponse):
 
     @property
     def node_num(self):
-        """Gets the node_num of this ShowInstanceSnapshotResponse.
+        r"""Gets the node_num of this ShowInstanceSnapshotResponse.
 
         节点数量。
 
@@ -199,7 +199,7 @@ class ShowInstanceSnapshotResponse(SdkResponse):
 
     @node_num.setter
     def node_num(self, node_num):
-        """Sets the node_num of this ShowInstanceSnapshotResponse.
+        r"""Sets the node_num of this ShowInstanceSnapshotResponse.
 
         节点数量。
 
@@ -210,7 +210,7 @@ class ShowInstanceSnapshotResponse(SdkResponse):
 
     @property
     def coordinator_num(self):
-        """Gets the coordinator_num of this ShowInstanceSnapshotResponse.
+        r"""Gets the coordinator_num of this ShowInstanceSnapshotResponse.
 
         协调节点数量。
 
@@ -221,7 +221,7 @@ class ShowInstanceSnapshotResponse(SdkResponse):
 
     @coordinator_num.setter
     def coordinator_num(self, coordinator_num):
-        """Sets the coordinator_num of this ShowInstanceSnapshotResponse.
+        r"""Sets the coordinator_num of this ShowInstanceSnapshotResponse.
 
         协调节点数量。
 
@@ -232,7 +232,7 @@ class ShowInstanceSnapshotResponse(SdkResponse):
 
     @property
     def sharding_num(self):
-        """Gets the sharding_num of this ShowInstanceSnapshotResponse.
+        r"""Gets the sharding_num of this ShowInstanceSnapshotResponse.
 
         分片数量。
 
@@ -243,7 +243,7 @@ class ShowInstanceSnapshotResponse(SdkResponse):
 
     @sharding_num.setter
     def sharding_num(self, sharding_num):
-        """Sets the sharding_num of this ShowInstanceSnapshotResponse.
+        r"""Sets the sharding_num of this ShowInstanceSnapshotResponse.
 
         分片数量。
 
@@ -254,7 +254,7 @@ class ShowInstanceSnapshotResponse(SdkResponse):
 
     @property
     def replica_num(self):
-        """Gets the replica_num of this ShowInstanceSnapshotResponse.
+        r"""Gets the replica_num of this ShowInstanceSnapshotResponse.
 
         副本数量。
 
@@ -265,7 +265,7 @@ class ShowInstanceSnapshotResponse(SdkResponse):
 
     @replica_num.setter
     def replica_num(self, replica_num):
-        """Sets the replica_num of this ShowInstanceSnapshotResponse.
+        r"""Sets the replica_num of this ShowInstanceSnapshotResponse.
 
         副本数量。
 
@@ -276,7 +276,7 @@ class ShowInstanceSnapshotResponse(SdkResponse):
 
     @property
     def engine_version(self):
-        """Gets the engine_version of this ShowInstanceSnapshotResponse.
+        r"""Gets the engine_version of this ShowInstanceSnapshotResponse.
 
         引擎版本。
 
@@ -287,7 +287,7 @@ class ShowInstanceSnapshotResponse(SdkResponse):
 
     @engine_version.setter
     def engine_version(self, engine_version):
-        """Sets the engine_version of this ShowInstanceSnapshotResponse.
+        r"""Sets the engine_version of this ShowInstanceSnapshotResponse.
 
         引擎版本。
 

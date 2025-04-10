@@ -27,7 +27,7 @@ class ListMultiAccountTransferCouponsRequest:
     }
 
     def __init__(self, offset=None, limit=None):
-        """ListMultiAccountTransferCouponsRequest
+        r"""ListMultiAccountTransferCouponsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListMultiAccountTransferCouponsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListMultiAccountTransferCouponsRequest.
+        r"""Gets the offset of this ListMultiAccountTransferCouponsRequest.
 
         偏移量，默认值为0。此参数不携带或携带值为空或携带值为null时，取默认值0；不支持携带值为空串。
 
@@ -61,7 +61,7 @@ class ListMultiAccountTransferCouponsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListMultiAccountTransferCouponsRequest.
+        r"""Sets the offset of this ListMultiAccountTransferCouponsRequest.
 
         偏移量，默认值为0。此参数不携带或携带值为空或携带值为null时，取默认值0；不支持携带值为空串。
 
@@ -72,7 +72,7 @@ class ListMultiAccountTransferCouponsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListMultiAccountTransferCouponsRequest.
+        r"""Gets the limit of this ListMultiAccountTransferCouponsRequest.
 
         每次查询条数，默认值为10。此参数不携带或携带值为空或携带值为null时，取默认值0；不支持携带值为空串。
 
@@ -83,7 +83,7 @@ class ListMultiAccountTransferCouponsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListMultiAccountTransferCouponsRequest.
+        r"""Sets the limit of this ListMultiAccountTransferCouponsRequest.
 
         每次查询条数，默认值为10。此参数不携带或携带值为空或携带值为null时，取默认值0；不支持携带值为空串。
 

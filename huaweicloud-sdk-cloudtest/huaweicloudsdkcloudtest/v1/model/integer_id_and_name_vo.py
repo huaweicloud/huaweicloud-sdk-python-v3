@@ -27,7 +27,7 @@ class IntegerIdAndNameVo:
     }
 
     def __init__(self, id=None, name=None):
-        """IntegerIdAndNameVo
+        r"""IntegerIdAndNameVo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class IntegerIdAndNameVo:
 
     @property
     def id(self):
-        """Gets the id of this IntegerIdAndNameVo.
+        r"""Gets the id of this IntegerIdAndNameVo.
 
         数据库存储数字
 
@@ -61,7 +61,7 @@ class IntegerIdAndNameVo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this IntegerIdAndNameVo.
+        r"""Sets the id of this IntegerIdAndNameVo.
 
         数据库存储数字
 
@@ -72,7 +72,7 @@ class IntegerIdAndNameVo:
 
     @property
     def name(self):
-        """Gets the name of this IntegerIdAndNameVo.
+        r"""Gets the name of this IntegerIdAndNameVo.
 
         页面显示值
 
@@ -83,7 +83,7 @@ class IntegerIdAndNameVo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this IntegerIdAndNameVo.
+        r"""Sets the name of this IntegerIdAndNameVo.
 
         页面显示值
 

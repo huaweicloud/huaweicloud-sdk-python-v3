@@ -25,7 +25,7 @@ class DataConnectorReq:
     }
 
     def __init__(self, data_connector=None):
-        """DataConnectorReq
+        r"""DataConnectorReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DataConnectorReq:
 
     @property
     def data_connector(self):
-        """Gets the data_connector of this DataConnectorReq.
+        r"""Gets the data_connector of this DataConnectorReq.
 
         :return: The data_connector of this DataConnectorReq.
         :rtype: :class:`huaweicloudsdkmrs.v2.DataConnector`
@@ -51,7 +51,7 @@ class DataConnectorReq:
 
     @data_connector.setter
     def data_connector(self, data_connector):
-        """Sets the data_connector of this DataConnectorReq.
+        r"""Sets the data_connector of this DataConnectorReq.
 
         :param data_connector: The data_connector of this DataConnectorReq.
         :type data_connector: :class:`huaweicloudsdkmrs.v2.DataConnector`

@@ -27,7 +27,7 @@ class ShrinkInstanceNodesRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """ShrinkInstanceNodesRequest
+        r"""ShrinkInstanceNodesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShrinkInstanceNodesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShrinkInstanceNodesRequest.
+        r"""Gets the instance_id of this ShrinkInstanceNodesRequest.
 
         DDM实例ID
 
@@ -60,7 +60,7 @@ class ShrinkInstanceNodesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShrinkInstanceNodesRequest.
+        r"""Sets the instance_id of this ShrinkInstanceNodesRequest.
 
         DDM实例ID
 
@@ -71,7 +71,7 @@ class ShrinkInstanceNodesRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShrinkInstanceNodesRequest.
+        r"""Gets the body of this ShrinkInstanceNodesRequest.
 
         :return: The body of this ShrinkInstanceNodesRequest.
         :rtype: :class:`huaweicloudsdkddm.v1.ReduceRequest`
@@ -80,7 +80,7 @@ class ShrinkInstanceNodesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShrinkInstanceNodesRequest.
+        r"""Sets the body of this ShrinkInstanceNodesRequest.
 
         :param body: The body of this ShrinkInstanceNodesRequest.
         :type body: :class:`huaweicloudsdkddm.v1.ReduceRequest`

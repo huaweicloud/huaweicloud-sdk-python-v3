@@ -29,7 +29,7 @@ class ListRecordDataRequest:
     }
 
     def __init__(self, publish_domain=None, start_time=None, end_time=None):
-        """ListRecordDataRequest
+        r"""ListRecordDataRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListRecordDataRequest:
 
     @property
     def publish_domain(self):
-        """Gets the publish_domain of this ListRecordDataRequest.
+        r"""Gets the publish_domain of this ListRecordDataRequest.
 
         推流域名。 
 
@@ -68,7 +68,7 @@ class ListRecordDataRequest:
 
     @publish_domain.setter
     def publish_domain(self, publish_domain):
-        """Sets the publish_domain of this ListRecordDataRequest.
+        r"""Sets the publish_domain of this ListRecordDataRequest.
 
         推流域名。 
 
@@ -79,7 +79,7 @@ class ListRecordDataRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListRecordDataRequest.
+        r"""Gets the start_time of this ListRecordDataRequest.
 
         起始时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为：YYYY-MM-DDThh:mm:ssZ。  非整点时间按小时取整，若start_time为2020-08-18T07:20:40Z，则实际查询起始时间为2020-08-18T07:00:00Z。  若start_time为空，则默认查询最近24小时数据。 
 
@@ -90,7 +90,7 @@ class ListRecordDataRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListRecordDataRequest.
+        r"""Sets the start_time of this ListRecordDataRequest.
 
         起始时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为：YYYY-MM-DDThh:mm:ssZ。  非整点时间按小时取整，若start_time为2020-08-18T07:20:40Z，则实际查询起始时间为2020-08-18T07:00:00Z。  若start_time为空，则默认查询最近24小时数据。 
 
@@ -101,7 +101,7 @@ class ListRecordDataRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListRecordDataRequest.
+        r"""Gets the end_time of this ListRecordDataRequest.
 
         结束时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为：YYYY-MM-DDThh:mm:ssZ。  非整点时间按小时取整，若end_time为2020-08-18T08:20:40Z，则实际查询起始时间为2020-08-18T08:00:00Z。  若参数为空，默认为当前时间。结束时间需大于起始时间。 
 
@@ -112,7 +112,7 @@ class ListRecordDataRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListRecordDataRequest.
+        r"""Sets the end_time of this ListRecordDataRequest.
 
         结束时间。日期格式按照ISO8601表示法，并使用UTC时间。格式为：YYYY-MM-DDThh:mm:ssZ。  非整点时间按小时取整，若end_time为2020-08-18T08:20:40Z，则实际查询起始时间为2020-08-18T08:00:00Z。  若参数为空，默认为当前时间。结束时间需大于起始时间。 
 

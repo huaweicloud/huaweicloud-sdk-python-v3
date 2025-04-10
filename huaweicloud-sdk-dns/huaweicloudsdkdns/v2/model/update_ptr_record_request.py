@@ -29,7 +29,7 @@ class UpdatePtrRecordRequest:
     }
 
     def __init__(self, region=None, floatingip_id=None, body=None):
-        """UpdatePtrRecordRequest
+        r"""UpdatePtrRecordRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdatePtrRecordRequest:
 
     @property
     def region(self):
-        """Gets the region of this UpdatePtrRecordRequest.
+        r"""Gets the region of this UpdatePtrRecordRequest.
 
         域名所属的区域。
 
@@ -66,7 +66,7 @@ class UpdatePtrRecordRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this UpdatePtrRecordRequest.
+        r"""Sets the region of this UpdatePtrRecordRequest.
 
         域名所属的区域。
 
@@ -77,7 +77,7 @@ class UpdatePtrRecordRequest:
 
     @property
     def floatingip_id(self):
-        """Gets the floatingip_id of this UpdatePtrRecordRequest.
+        r"""Gets the floatingip_id of this UpdatePtrRecordRequest.
 
         弹性公网IP（EIP）的ID。
 
@@ -88,7 +88,7 @@ class UpdatePtrRecordRequest:
 
     @floatingip_id.setter
     def floatingip_id(self, floatingip_id):
-        """Sets the floatingip_id of this UpdatePtrRecordRequest.
+        r"""Sets the floatingip_id of this UpdatePtrRecordRequest.
 
         弹性公网IP（EIP）的ID。
 
@@ -99,7 +99,7 @@ class UpdatePtrRecordRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePtrRecordRequest.
+        r"""Gets the body of this UpdatePtrRecordRequest.
 
         :return: The body of this UpdatePtrRecordRequest.
         :rtype: :class:`huaweicloudsdkdns.v2.UpdatePtrReq`
@@ -108,7 +108,7 @@ class UpdatePtrRecordRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePtrRecordRequest.
+        r"""Sets the body of this UpdatePtrRecordRequest.
 
         :param body: The body of this UpdatePtrRecordRequest.
         :type body: :class:`huaweicloudsdkdns.v2.UpdatePtrReq`

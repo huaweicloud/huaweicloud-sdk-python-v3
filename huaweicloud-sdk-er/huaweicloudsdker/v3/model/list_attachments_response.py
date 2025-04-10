@@ -30,7 +30,7 @@ class ListAttachmentsResponse(SdkResponse):
     }
 
     def __init__(self, attachments=None, page_info=None, request_id=None):
-        """ListAttachmentsResponse
+        r"""ListAttachmentsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListAttachmentsResponse(SdkResponse):
 
     @property
     def attachments(self):
-        """Gets the attachments of this ListAttachmentsResponse.
+        r"""Gets the attachments of this ListAttachmentsResponse.
 
         连接列表
 
@@ -69,7 +69,7 @@ class ListAttachmentsResponse(SdkResponse):
 
     @attachments.setter
     def attachments(self, attachments):
-        """Sets the attachments of this ListAttachmentsResponse.
+        r"""Sets the attachments of this ListAttachmentsResponse.
 
         连接列表
 
@@ -80,7 +80,7 @@ class ListAttachmentsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListAttachmentsResponse.
+        r"""Gets the page_info of this ListAttachmentsResponse.
 
         :return: The page_info of this ListAttachmentsResponse.
         :rtype: :class:`huaweicloudsdker.v3.PageInfo`
@@ -89,7 +89,7 @@ class ListAttachmentsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListAttachmentsResponse.
+        r"""Sets the page_info of this ListAttachmentsResponse.
 
         :param page_info: The page_info of this ListAttachmentsResponse.
         :type page_info: :class:`huaweicloudsdker.v3.PageInfo`
@@ -98,7 +98,7 @@ class ListAttachmentsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListAttachmentsResponse.
+        r"""Gets the request_id of this ListAttachmentsResponse.
 
         请求ID
 
@@ -109,7 +109,7 @@ class ListAttachmentsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListAttachmentsResponse.
+        r"""Sets the request_id of this ListAttachmentsResponse.
 
         请求ID
 

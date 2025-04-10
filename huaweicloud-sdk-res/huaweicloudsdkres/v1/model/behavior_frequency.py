@@ -31,7 +31,7 @@ class BehaviorFrequency:
     }
 
     def __init__(self, behavior_type=None, lower_limit=None, upper_limit=None, time_interval=None):
-        """BehaviorFrequency
+        r"""BehaviorFrequency
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class BehaviorFrequency:
 
     @property
     def behavior_type(self):
-        """Gets the behavior_type of this BehaviorFrequency.
+        r"""Gets the behavior_type of this BehaviorFrequency.
 
         行为类型： - view，曝光 - click，点击 - collect，收藏 - uncollect，取消收藏 - search_click，搜索后点击 - comment，评论 - share，分享 - like，点赞 - dislike，点衰 - grade，评分 - consume，消费 - use，观看视频/听音乐/阅读 - download，下载 - tip，打赏 - subscribe，关注
 
@@ -73,7 +73,7 @@ class BehaviorFrequency:
 
     @behavior_type.setter
     def behavior_type(self, behavior_type):
-        """Sets the behavior_type of this BehaviorFrequency.
+        r"""Sets the behavior_type of this BehaviorFrequency.
 
         行为类型： - view，曝光 - click，点击 - collect，收藏 - uncollect，取消收藏 - search_click，搜索后点击 - comment，评论 - share，分享 - like，点赞 - dislike，点衰 - grade，评分 - consume，消费 - use，观看视频/听音乐/阅读 - download，下载 - tip，打赏 - subscribe，关注
 
@@ -84,7 +84,7 @@ class BehaviorFrequency:
 
     @property
     def lower_limit(self):
-        """Gets the lower_limit of this BehaviorFrequency.
+        r"""Gets the lower_limit of this BehaviorFrequency.
 
         最小次数。
 
@@ -95,7 +95,7 @@ class BehaviorFrequency:
 
     @lower_limit.setter
     def lower_limit(self, lower_limit):
-        """Sets the lower_limit of this BehaviorFrequency.
+        r"""Sets the lower_limit of this BehaviorFrequency.
 
         最小次数。
 
@@ -106,7 +106,7 @@ class BehaviorFrequency:
 
     @property
     def upper_limit(self):
-        """Gets the upper_limit of this BehaviorFrequency.
+        r"""Gets the upper_limit of this BehaviorFrequency.
 
         最大次数。
 
@@ -117,7 +117,7 @@ class BehaviorFrequency:
 
     @upper_limit.setter
     def upper_limit(self, upper_limit):
-        """Sets the upper_limit of this BehaviorFrequency.
+        r"""Sets the upper_limit of this BehaviorFrequency.
 
         最大次数。
 
@@ -128,7 +128,7 @@ class BehaviorFrequency:
 
     @property
     def time_interval(self):
-        """Gets the time_interval of this BehaviorFrequency.
+        r"""Gets the time_interval of this BehaviorFrequency.
 
         时间区间。
 
@@ -139,7 +139,7 @@ class BehaviorFrequency:
 
     @time_interval.setter
     def time_interval(self, time_interval):
-        """Sets the time_interval of this BehaviorFrequency.
+        r"""Sets the time_interval of this BehaviorFrequency.
 
         时间区间。
 

@@ -25,7 +25,7 @@ class ModifyInternalIpRequest:
     }
 
     def __init__(self, internal_ip=None):
-        """ModifyInternalIpRequest
+        r"""ModifyInternalIpRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ModifyInternalIpRequest:
 
     @property
     def internal_ip(self):
-        """Gets the internal_ip of this ModifyInternalIpRequest.
+        r"""Gets the internal_ip of this ModifyInternalIpRequest.
 
         内网IP。
 
@@ -53,7 +53,7 @@ class ModifyInternalIpRequest:
 
     @internal_ip.setter
     def internal_ip(self, internal_ip):
-        """Sets the internal_ip of this ModifyInternalIpRequest.
+        r"""Sets the internal_ip of this ModifyInternalIpRequest.
 
         内网IP。
 

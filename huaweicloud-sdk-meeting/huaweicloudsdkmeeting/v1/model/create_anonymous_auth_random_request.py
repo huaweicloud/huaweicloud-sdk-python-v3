@@ -28,7 +28,7 @@ class CreateAnonymousAuthRandomRequest:
     }
 
     def __init__(self, conference_id=None, x_password=None):
-        """CreateAnonymousAuthRandomRequest
+        r"""CreateAnonymousAuthRandomRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateAnonymousAuthRandomRequest:
 
     @property
     def conference_id(self):
-        """Gets the conference_id of this CreateAnonymousAuthRandomRequest.
+        r"""Gets the conference_id of this CreateAnonymousAuthRandomRequest.
 
         会议ID。
 
@@ -60,7 +60,7 @@ class CreateAnonymousAuthRandomRequest:
 
     @conference_id.setter
     def conference_id(self, conference_id):
-        """Sets the conference_id of this CreateAnonymousAuthRandomRequest.
+        r"""Sets the conference_id of this CreateAnonymousAuthRandomRequest.
 
         会议ID。
 
@@ -71,7 +71,7 @@ class CreateAnonymousAuthRandomRequest:
 
     @property
     def x_password(self):
-        """Gets the x_password of this CreateAnonymousAuthRandomRequest.
+        r"""Gets the x_password of this CreateAnonymousAuthRandomRequest.
 
         会议密码。
 
@@ -82,7 +82,7 @@ class CreateAnonymousAuthRandomRequest:
 
     @x_password.setter
     def x_password(self, x_password):
-        """Sets the x_password of this CreateAnonymousAuthRandomRequest.
+        r"""Sets the x_password of this CreateAnonymousAuthRandomRequest.
 
         会议密码。
 

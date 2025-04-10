@@ -27,7 +27,7 @@ class CreatePromInstanceRequest:
     }
 
     def __init__(self, region=None, body=None):
-        """CreatePromInstanceRequest
+        r"""CreatePromInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreatePromInstanceRequest:
 
     @property
     def region(self):
-        """Gets the region of this CreatePromInstanceRequest.
+        r"""Gets the region of this CreatePromInstanceRequest.
 
         Prometheus实例所属Region，一般为承载REST服务端点的服务器域名或IP，不同服务不同区域的名称不同。
 
@@ -60,7 +60,7 @@ class CreatePromInstanceRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this CreatePromInstanceRequest.
+        r"""Sets the region of this CreatePromInstanceRequest.
 
         Prometheus实例所属Region，一般为承载REST服务端点的服务器域名或IP，不同服务不同区域的名称不同。
 
@@ -71,7 +71,7 @@ class CreatePromInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreatePromInstanceRequest.
+        r"""Gets the body of this CreatePromInstanceRequest.
 
         :return: The body of this CreatePromInstanceRequest.
         :rtype: :class:`huaweicloudsdkaom.v2.PromInstanceRequestModel`
@@ -80,7 +80,7 @@ class CreatePromInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreatePromInstanceRequest.
+        r"""Sets the body of this CreatePromInstanceRequest.
 
         :param body: The body of this CreatePromInstanceRequest.
         :type body: :class:`huaweicloudsdkaom.v2.PromInstanceRequestModel`

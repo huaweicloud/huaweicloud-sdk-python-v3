@@ -29,7 +29,7 @@ class CdmQueryClusterDetailsRepsonseMaintainWindow:
     }
 
     def __init__(self, day=None, start_time=None, end_time=None):
-        """CdmQueryClusterDetailsRepsonseMaintainWindow
+        r"""CdmQueryClusterDetailsRepsonseMaintainWindow
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CdmQueryClusterDetailsRepsonseMaintainWindow:
 
     @property
     def day(self):
-        """Gets the day of this CdmQueryClusterDetailsRepsonseMaintainWindow.
+        r"""Gets the day of this CdmQueryClusterDetailsRepsonseMaintainWindow.
 
         周几
 
@@ -68,7 +68,7 @@ class CdmQueryClusterDetailsRepsonseMaintainWindow:
 
     @day.setter
     def day(self, day):
-        """Sets the day of this CdmQueryClusterDetailsRepsonseMaintainWindow.
+        r"""Sets the day of this CdmQueryClusterDetailsRepsonseMaintainWindow.
 
         周几
 
@@ -79,7 +79,7 @@ class CdmQueryClusterDetailsRepsonseMaintainWindow:
 
     @property
     def start_time(self):
-        """Gets the start_time of this CdmQueryClusterDetailsRepsonseMaintainWindow.
+        r"""Gets the start_time of this CdmQueryClusterDetailsRepsonseMaintainWindow.
 
         开始时间。
 
@@ -90,7 +90,7 @@ class CdmQueryClusterDetailsRepsonseMaintainWindow:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this CdmQueryClusterDetailsRepsonseMaintainWindow.
+        r"""Sets the start_time of this CdmQueryClusterDetailsRepsonseMaintainWindow.
 
         开始时间。
 
@@ -101,7 +101,7 @@ class CdmQueryClusterDetailsRepsonseMaintainWindow:
 
     @property
     def end_time(self):
-        """Gets the end_time of this CdmQueryClusterDetailsRepsonseMaintainWindow.
+        r"""Gets the end_time of this CdmQueryClusterDetailsRepsonseMaintainWindow.
 
         结束时间。
 
@@ -112,7 +112,7 @@ class CdmQueryClusterDetailsRepsonseMaintainWindow:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this CdmQueryClusterDetailsRepsonseMaintainWindow.
+        r"""Sets the end_time of this CdmQueryClusterDetailsRepsonseMaintainWindow.
 
         结束时间。
 

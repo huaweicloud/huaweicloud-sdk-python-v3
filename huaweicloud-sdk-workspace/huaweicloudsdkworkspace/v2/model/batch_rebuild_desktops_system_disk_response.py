@@ -40,7 +40,7 @@ class BatchRebuildDesktopsSystemDiskResponse(SdkResponse):
     }
 
     def __init__(self, error_code=None, error_msg=None, encoded_authorization_message=None, job_id=None, get_job_endpoint=None, max_provision_time=None, min_provision_time=None, periodic_query_time=None):
-        """BatchRebuildDesktopsSystemDiskResponse
+        r"""BatchRebuildDesktopsSystemDiskResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class BatchRebuildDesktopsSystemDiskResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this BatchRebuildDesktopsSystemDiskResponse.
+        r"""Gets the error_code of this BatchRebuildDesktopsSystemDiskResponse.
 
         错误码。
 
@@ -104,7 +104,7 @@ class BatchRebuildDesktopsSystemDiskResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this BatchRebuildDesktopsSystemDiskResponse.
+        r"""Sets the error_code of this BatchRebuildDesktopsSystemDiskResponse.
 
         错误码。
 
@@ -115,7 +115,7 @@ class BatchRebuildDesktopsSystemDiskResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this BatchRebuildDesktopsSystemDiskResponse.
+        r"""Gets the error_msg of this BatchRebuildDesktopsSystemDiskResponse.
 
         错误描述。
 
@@ -126,7 +126,7 @@ class BatchRebuildDesktopsSystemDiskResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this BatchRebuildDesktopsSystemDiskResponse.
+        r"""Sets the error_msg of this BatchRebuildDesktopsSystemDiskResponse.
 
         错误描述。
 
@@ -137,7 +137,7 @@ class BatchRebuildDesktopsSystemDiskResponse(SdkResponse):
 
     @property
     def encoded_authorization_message(self):
-        """Gets the encoded_authorization_message of this BatchRebuildDesktopsSystemDiskResponse.
+        r"""Gets the encoded_authorization_message of this BatchRebuildDesktopsSystemDiskResponse.
 
         加密后的详细拒绝原因，用户可以自行调用STS服务的decode-authorization-message接口进行解密。
 
@@ -148,7 +148,7 @@ class BatchRebuildDesktopsSystemDiskResponse(SdkResponse):
 
     @encoded_authorization_message.setter
     def encoded_authorization_message(self, encoded_authorization_message):
-        """Sets the encoded_authorization_message of this BatchRebuildDesktopsSystemDiskResponse.
+        r"""Sets the encoded_authorization_message of this BatchRebuildDesktopsSystemDiskResponse.
 
         加密后的详细拒绝原因，用户可以自行调用STS服务的decode-authorization-message接口进行解密。
 
@@ -159,7 +159,7 @@ class BatchRebuildDesktopsSystemDiskResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this BatchRebuildDesktopsSystemDiskResponse.
+        r"""Gets the job_id of this BatchRebuildDesktopsSystemDiskResponse.
 
         重建系统盘总任务id。
 
@@ -170,7 +170,7 @@ class BatchRebuildDesktopsSystemDiskResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this BatchRebuildDesktopsSystemDiskResponse.
+        r"""Sets the job_id of this BatchRebuildDesktopsSystemDiskResponse.
 
         重建系统盘总任务id。
 
@@ -181,7 +181,7 @@ class BatchRebuildDesktopsSystemDiskResponse(SdkResponse):
 
     @property
     def get_job_endpoint(self):
-        """Gets the get_job_endpoint of this BatchRebuildDesktopsSystemDiskResponse.
+        r"""Gets the get_job_endpoint of this BatchRebuildDesktopsSystemDiskResponse.
 
         云运营平台CBC获取到JobId后，会使用getJobEndpoint当做URL，调用云服务，查询获取Job结果。
 
@@ -192,7 +192,7 @@ class BatchRebuildDesktopsSystemDiskResponse(SdkResponse):
 
     @get_job_endpoint.setter
     def get_job_endpoint(self, get_job_endpoint):
-        """Sets the get_job_endpoint of this BatchRebuildDesktopsSystemDiskResponse.
+        r"""Sets the get_job_endpoint of this BatchRebuildDesktopsSystemDiskResponse.
 
         云运营平台CBC获取到JobId后，会使用getJobEndpoint当做URL，调用云服务，查询获取Job结果。
 
@@ -203,7 +203,7 @@ class BatchRebuildDesktopsSystemDiskResponse(SdkResponse):
 
     @property
     def max_provision_time(self):
-        """Gets the max_provision_time of this BatchRebuildDesktopsSystemDiskResponse.
+        r"""Gets the max_provision_time of this BatchRebuildDesktopsSystemDiskResponse.
 
         在线开通最大时间。
 
@@ -214,7 +214,7 @@ class BatchRebuildDesktopsSystemDiskResponse(SdkResponse):
 
     @max_provision_time.setter
     def max_provision_time(self, max_provision_time):
-        """Sets the max_provision_time of this BatchRebuildDesktopsSystemDiskResponse.
+        r"""Sets the max_provision_time of this BatchRebuildDesktopsSystemDiskResponse.
 
         在线开通最大时间。
 
@@ -225,7 +225,7 @@ class BatchRebuildDesktopsSystemDiskResponse(SdkResponse):
 
     @property
     def min_provision_time(self):
-        """Gets the min_provision_time of this BatchRebuildDesktopsSystemDiskResponse.
+        r"""Gets the min_provision_time of this BatchRebuildDesktopsSystemDiskResponse.
 
         开通最小时间（云服务最快开通时长，或一般开通时长）。
 
@@ -236,7 +236,7 @@ class BatchRebuildDesktopsSystemDiskResponse(SdkResponse):
 
     @min_provision_time.setter
     def min_provision_time(self, min_provision_time):
-        """Sets the min_provision_time of this BatchRebuildDesktopsSystemDiskResponse.
+        r"""Sets the min_provision_time of this BatchRebuildDesktopsSystemDiskResponse.
 
         开通最小时间（云服务最快开通时长，或一般开通时长）。
 
@@ -247,7 +247,7 @@ class BatchRebuildDesktopsSystemDiskResponse(SdkResponse):
 
     @property
     def periodic_query_time(self):
-        """Gets the periodic_query_time of this BatchRebuildDesktopsSystemDiskResponse.
+        r"""Gets the periodic_query_time of this BatchRebuildDesktopsSystemDiskResponse.
 
         Job周期性查询时间。
 
@@ -258,7 +258,7 @@ class BatchRebuildDesktopsSystemDiskResponse(SdkResponse):
 
     @periodic_query_time.setter
     def periodic_query_time(self, periodic_query_time):
-        """Sets the periodic_query_time of this BatchRebuildDesktopsSystemDiskResponse.
+        r"""Sets the periodic_query_time of this BatchRebuildDesktopsSystemDiskResponse.
 
         Job周期性查询时间。
 

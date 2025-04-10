@@ -27,7 +27,7 @@ class BatchDeleteMembersV4Request:
     }
 
     def __init__(self, project_id=None, body=None):
-        """BatchDeleteMembersV4Request
+        r"""BatchDeleteMembersV4Request
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeleteMembersV4Request:
 
     @property
     def project_id(self):
-        """Gets the project_id of this BatchDeleteMembersV4Request.
+        r"""Gets the project_id of this BatchDeleteMembersV4Request.
 
         devcloud项目的32位id
 
@@ -60,7 +60,7 @@ class BatchDeleteMembersV4Request:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this BatchDeleteMembersV4Request.
+        r"""Sets the project_id of this BatchDeleteMembersV4Request.
 
         devcloud项目的32位id
 
@@ -71,7 +71,7 @@ class BatchDeleteMembersV4Request:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteMembersV4Request.
+        r"""Gets the body of this BatchDeleteMembersV4Request.
 
         :return: The body of this BatchDeleteMembersV4Request.
         :rtype: :class:`huaweicloudsdkprojectman.v4.BatchDeleteMembersV4RequestBody`
@@ -80,7 +80,7 @@ class BatchDeleteMembersV4Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteMembersV4Request.
+        r"""Sets the body of this BatchDeleteMembersV4Request.
 
         :param body: The body of this BatchDeleteMembersV4Request.
         :type body: :class:`huaweicloudsdkprojectman.v4.BatchDeleteMembersV4RequestBody`

@@ -35,7 +35,7 @@ class ListApplicationsRequest:
     }
 
     def __init__(self, id_list=None, parent_id=None, name_like=None, code=None, marker=None, limit=None):
-        """ListApplicationsRequest
+        r"""ListApplicationsRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListApplicationsRequest:
 
     @property
     def id_list(self):
-        """Gets the id_list of this ListApplicationsRequest.
+        r"""Gets the id_list of this ListApplicationsRequest.
 
         id列表
 
@@ -88,7 +88,7 @@ class ListApplicationsRequest:
 
     @id_list.setter
     def id_list(self, id_list):
-        """Sets the id_list of this ListApplicationsRequest.
+        r"""Sets the id_list of this ListApplicationsRequest.
 
         id列表
 
@@ -99,7 +99,7 @@ class ListApplicationsRequest:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this ListApplicationsRequest.
+        r"""Gets the parent_id of this ListApplicationsRequest.
 
         parent id
 
@@ -110,7 +110,7 @@ class ListApplicationsRequest:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this ListApplicationsRequest.
+        r"""Sets the parent_id of this ListApplicationsRequest.
 
         parent id
 
@@ -121,7 +121,7 @@ class ListApplicationsRequest:
 
     @property
     def name_like(self):
-        """Gets the name_like of this ListApplicationsRequest.
+        r"""Gets the name_like of this ListApplicationsRequest.
 
         应用名称模糊匹配
 
@@ -132,7 +132,7 @@ class ListApplicationsRequest:
 
     @name_like.setter
     def name_like(self, name_like):
-        """Sets the name_like of this ListApplicationsRequest.
+        r"""Sets the name_like of this ListApplicationsRequest.
 
         应用名称模糊匹配
 
@@ -143,7 +143,7 @@ class ListApplicationsRequest:
 
     @property
     def code(self):
-        """Gets the code of this ListApplicationsRequest.
+        r"""Gets the code of this ListApplicationsRequest.
 
         应用code
 
@@ -154,7 +154,7 @@ class ListApplicationsRequest:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ListApplicationsRequest.
+        r"""Sets the code of this ListApplicationsRequest.
 
         应用code
 
@@ -165,7 +165,7 @@ class ListApplicationsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListApplicationsRequest.
+        r"""Gets the marker of this ListApplicationsRequest.
 
         分页参数，上一页请求最后一个id
 
@@ -176,7 +176,7 @@ class ListApplicationsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListApplicationsRequest.
+        r"""Sets the marker of this ListApplicationsRequest.
 
         分页参数，上一页请求最后一个id
 
@@ -187,7 +187,7 @@ class ListApplicationsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListApplicationsRequest.
+        r"""Gets the limit of this ListApplicationsRequest.
 
         最大的返回数量
 
@@ -198,7 +198,7 @@ class ListApplicationsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListApplicationsRequest.
+        r"""Sets the limit of this ListApplicationsRequest.
 
         最大的返回数量
 

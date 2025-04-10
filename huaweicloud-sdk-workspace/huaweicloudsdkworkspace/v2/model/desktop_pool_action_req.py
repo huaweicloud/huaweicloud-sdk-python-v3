@@ -27,7 +27,7 @@ class DesktopPoolActionReq:
     }
 
     def __init__(self, op_type=None, type=None):
-        """DesktopPoolActionReq
+        r"""DesktopPoolActionReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DesktopPoolActionReq:
 
     @property
     def op_type(self):
-        """Gets the op_type of this DesktopPoolActionReq.
+        r"""Gets the op_type of this DesktopPoolActionReq.
 
         操作类型。 -os-start 开机。 -os-stop 关机。 -reboot 重启。 -hibernate 休眠。
 
@@ -60,7 +60,7 @@ class DesktopPoolActionReq:
 
     @op_type.setter
     def op_type(self, op_type):
-        """Sets the op_type of this DesktopPoolActionReq.
+        r"""Sets the op_type of this DesktopPoolActionReq.
 
         操作类型。 -os-start 开机。 -os-stop 关机。 -reboot 重启。 -hibernate 休眠。
 
@@ -71,7 +71,7 @@ class DesktopPoolActionReq:
 
     @property
     def type(self):
-        """Gets the type of this DesktopPoolActionReq.
+        r"""Gets the type of this DesktopPoolActionReq.
 
         执行类型。例如type为HARD，op_type为os-stop代表强制关机。 - SOFT：普通操作。 - HARD：强制操作。
 
@@ -82,7 +82,7 @@ class DesktopPoolActionReq:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DesktopPoolActionReq.
+        r"""Sets the type of this DesktopPoolActionReq.
 
         执行类型。例如type为HARD，op_type为os-stop代表强制关机。 - SOFT：普通操作。 - HARD：强制操作。
 

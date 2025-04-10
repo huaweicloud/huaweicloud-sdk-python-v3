@@ -25,7 +25,7 @@ class ListOrganizationPolicyDetailRequest:
     }
 
     def __init__(self, organization_policy_id=None):
-        """ListOrganizationPolicyDetailRequest
+        r"""ListOrganizationPolicyDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListOrganizationPolicyDetailRequest:
 
     @property
     def organization_policy_id(self):
-        """Gets the organization_policy_id of this ListOrganizationPolicyDetailRequest.
+        r"""Gets the organization_policy_id of this ListOrganizationPolicyDetailRequest.
 
         组织策略ID
 
@@ -53,7 +53,7 @@ class ListOrganizationPolicyDetailRequest:
 
     @organization_policy_id.setter
     def organization_policy_id(self, organization_policy_id):
-        """Sets the organization_policy_id of this ListOrganizationPolicyDetailRequest.
+        r"""Sets the organization_policy_id of this ListOrganizationPolicyDetailRequest.
 
         组织策略ID
 

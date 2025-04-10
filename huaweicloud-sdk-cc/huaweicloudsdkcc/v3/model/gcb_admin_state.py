@@ -25,7 +25,7 @@ class GcbAdminState:
     }
 
     def __init__(self, admin_state=None):
-        """GcbAdminState
+        r"""GcbAdminState
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class GcbAdminState:
 
     @property
     def admin_state(self):
-        """Gets the admin_state of this GcbAdminState.
+        r"""Gets the admin_state of this GcbAdminState.
 
         功能说明: 全域互联带宽状态。 取值范围：     NORMAL-正常     FREEZED-冻结状态
 
@@ -54,7 +54,7 @@ class GcbAdminState:
 
     @admin_state.setter
     def admin_state(self, admin_state):
-        """Sets the admin_state of this GcbAdminState.
+        r"""Sets the admin_state of this GcbAdminState.
 
         功能说明: 全域互联带宽状态。 取值范围：     NORMAL-正常     FREEZED-冻结状态
 

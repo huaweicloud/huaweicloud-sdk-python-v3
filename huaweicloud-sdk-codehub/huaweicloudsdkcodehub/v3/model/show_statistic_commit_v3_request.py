@@ -31,7 +31,7 @@ class ShowStatisticCommitV3Request:
     }
 
     def __init__(self, repository_id=None, ref_name=None, begin_date=None, end_date=None):
-        """ShowStatisticCommitV3Request
+        r"""ShowStatisticCommitV3Request
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ShowStatisticCommitV3Request:
 
     @property
     def repository_id(self):
-        """Gets the repository_id of this ShowStatisticCommitV3Request.
+        r"""Gets the repository_id of this ShowStatisticCommitV3Request.
 
         仓库短id
 
@@ -71,7 +71,7 @@ class ShowStatisticCommitV3Request:
 
     @repository_id.setter
     def repository_id(self, repository_id):
-        """Sets the repository_id of this ShowStatisticCommitV3Request.
+        r"""Sets the repository_id of this ShowStatisticCommitV3Request.
 
         仓库短id
 
@@ -82,7 +82,7 @@ class ShowStatisticCommitV3Request:
 
     @property
     def ref_name(self):
-        """Gets the ref_name of this ShowStatisticCommitV3Request.
+        r"""Gets the ref_name of this ShowStatisticCommitV3Request.
 
         分支名称
 
@@ -93,7 +93,7 @@ class ShowStatisticCommitV3Request:
 
     @ref_name.setter
     def ref_name(self, ref_name):
-        """Sets the ref_name of this ShowStatisticCommitV3Request.
+        r"""Sets the ref_name of this ShowStatisticCommitV3Request.
 
         分支名称
 
@@ -104,7 +104,7 @@ class ShowStatisticCommitV3Request:
 
     @property
     def begin_date(self):
-        """Gets the begin_date of this ShowStatisticCommitV3Request.
+        r"""Gets the begin_date of this ShowStatisticCommitV3Request.
 
         起始提交日期,格式为yyyy-MM-dd
 
@@ -115,7 +115,7 @@ class ShowStatisticCommitV3Request:
 
     @begin_date.setter
     def begin_date(self, begin_date):
-        """Sets the begin_date of this ShowStatisticCommitV3Request.
+        r"""Sets the begin_date of this ShowStatisticCommitV3Request.
 
         起始提交日期,格式为yyyy-MM-dd
 
@@ -126,7 +126,7 @@ class ShowStatisticCommitV3Request:
 
     @property
     def end_date(self):
-        """Gets the end_date of this ShowStatisticCommitV3Request.
+        r"""Gets the end_date of this ShowStatisticCommitV3Request.
 
         终止提交日期,格式为yyyy-MM-dd（begin_date和end_date时间间隔不超过60天）
 
@@ -137,7 +137,7 @@ class ShowStatisticCommitV3Request:
 
     @end_date.setter
     def end_date(self, end_date):
-        """Sets the end_date of this ShowStatisticCommitV3Request.
+        r"""Sets the end_date of this ShowStatisticCommitV3Request.
 
         终止提交日期,格式为yyyy-MM-dd（begin_date和end_date时间间隔不超过60天）
 

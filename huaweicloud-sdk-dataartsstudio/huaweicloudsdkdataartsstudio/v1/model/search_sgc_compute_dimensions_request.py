@@ -41,7 +41,7 @@ class SearchSgcComputeDimensionsRequest:
     }
 
     def __init__(self, instance_id=None, workspace_id=None, offset=None, limit=None, name=None, node_creator_name=None, type=None, node_type=None, order_by=None):
-        """SearchSgcComputeDimensionsRequest
+        r"""SearchSgcComputeDimensionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -97,7 +97,7 @@ class SearchSgcComputeDimensionsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this SearchSgcComputeDimensionsRequest.
+        r"""Gets the instance_id of this SearchSgcComputeDimensionsRequest.
 
         DataArts Studio实例ID。
 
@@ -108,7 +108,7 @@ class SearchSgcComputeDimensionsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this SearchSgcComputeDimensionsRequest.
+        r"""Sets the instance_id of this SearchSgcComputeDimensionsRequest.
 
         DataArts Studio实例ID。
 
@@ -119,7 +119,7 @@ class SearchSgcComputeDimensionsRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this SearchSgcComputeDimensionsRequest.
+        r"""Gets the workspace_id of this SearchSgcComputeDimensionsRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -130,7 +130,7 @@ class SearchSgcComputeDimensionsRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this SearchSgcComputeDimensionsRequest.
+        r"""Sets the workspace_id of this SearchSgcComputeDimensionsRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -141,7 +141,7 @@ class SearchSgcComputeDimensionsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this SearchSgcComputeDimensionsRequest.
+        r"""Gets the offset of this SearchSgcComputeDimensionsRequest.
 
         偏移量
 
@@ -152,7 +152,7 @@ class SearchSgcComputeDimensionsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchSgcComputeDimensionsRequest.
+        r"""Sets the offset of this SearchSgcComputeDimensionsRequest.
 
         偏移量
 
@@ -163,7 +163,7 @@ class SearchSgcComputeDimensionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this SearchSgcComputeDimensionsRequest.
+        r"""Gets the limit of this SearchSgcComputeDimensionsRequest.
 
         返回数据条数，表示页大小
 
@@ -174,7 +174,7 @@ class SearchSgcComputeDimensionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchSgcComputeDimensionsRequest.
+        r"""Sets the limit of this SearchSgcComputeDimensionsRequest.
 
         返回数据条数，表示页大小
 
@@ -185,7 +185,7 @@ class SearchSgcComputeDimensionsRequest:
 
     @property
     def name(self):
-        """Gets the name of this SearchSgcComputeDimensionsRequest.
+        r"""Gets the name of this SearchSgcComputeDimensionsRequest.
 
         节点实例名称或脚本名称
 
@@ -196,7 +196,7 @@ class SearchSgcComputeDimensionsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SearchSgcComputeDimensionsRequest.
+        r"""Sets the name of this SearchSgcComputeDimensionsRequest.
 
         节点实例名称或脚本名称
 
@@ -207,7 +207,7 @@ class SearchSgcComputeDimensionsRequest:
 
     @property
     def node_creator_name(self):
-        """Gets the node_creator_name of this SearchSgcComputeDimensionsRequest.
+        r"""Gets the node_creator_name of this SearchSgcComputeDimensionsRequest.
 
         节点实例创建者name
 
@@ -218,7 +218,7 @@ class SearchSgcComputeDimensionsRequest:
 
     @node_creator_name.setter
     def node_creator_name(self, node_creator_name):
-        """Sets the node_creator_name of this SearchSgcComputeDimensionsRequest.
+        r"""Sets the node_creator_name of this SearchSgcComputeDimensionsRequest.
 
         节点实例创建者name
 
@@ -229,7 +229,7 @@ class SearchSgcComputeDimensionsRequest:
 
     @property
     def type(self):
-        """Gets the type of this SearchSgcComputeDimensionsRequest.
+        r"""Gets the type of this SearchSgcComputeDimensionsRequest.
 
         类型，0表示节点实例,1表示脚本,2表示节点的测试运行,成本管理页面对于0和2的情况均展示为节点实例
 
@@ -240,7 +240,7 @@ class SearchSgcComputeDimensionsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this SearchSgcComputeDimensionsRequest.
+        r"""Sets the type of this SearchSgcComputeDimensionsRequest.
 
         类型，0表示节点实例,1表示脚本,2表示节点的测试运行,成本管理页面对于0和2的情况均展示为节点实例
 
@@ -251,7 +251,7 @@ class SearchSgcComputeDimensionsRequest:
 
     @property
     def node_type(self):
-        """Gets the node_type of this SearchSgcComputeDimensionsRequest.
+        r"""Gets the node_type of this SearchSgcComputeDimensionsRequest.
 
         节点类型，HIVE SQL, SparkSQL, Spark, Flink SQL, MRS Flink Job, DWS SQL为支持的枚举节点类型
 
@@ -262,7 +262,7 @@ class SearchSgcComputeDimensionsRequest:
 
     @node_type.setter
     def node_type(self, node_type):
-        """Sets the node_type of this SearchSgcComputeDimensionsRequest.
+        r"""Sets the node_type of this SearchSgcComputeDimensionsRequest.
 
         节点类型，HIVE SQL, SparkSQL, Spark, Flink SQL, MRS Flink Job, DWS SQL为支持的枚举节点类型
 
@@ -273,7 +273,7 @@ class SearchSgcComputeDimensionsRequest:
 
     @property
     def order_by(self):
-        """Gets the order_by of this SearchSgcComputeDimensionsRequest.
+        r"""Gets the order_by of this SearchSgcComputeDimensionsRequest.
 
         排序规则，示例priority ASC表示按照优先级升序排序,priority DESC表示按照优先级降序排序
 
@@ -284,7 +284,7 @@ class SearchSgcComputeDimensionsRequest:
 
     @order_by.setter
     def order_by(self, order_by):
-        """Sets the order_by of this SearchSgcComputeDimensionsRequest.
+        r"""Sets the order_by of this SearchSgcComputeDimensionsRequest.
 
         排序规则，示例priority ASC表示按照优先级升序排序,priority DESC表示按照优先级降序排序
 

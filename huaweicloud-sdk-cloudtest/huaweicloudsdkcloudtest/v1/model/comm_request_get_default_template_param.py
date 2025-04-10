@@ -25,7 +25,7 @@ class CommRequestGetDefaultTemplateParam:
     }
 
     def __init__(self, params=None):
-        """CommRequestGetDefaultTemplateParam
+        r"""CommRequestGetDefaultTemplateParam
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CommRequestGetDefaultTemplateParam:
 
     @property
     def params(self):
-        """Gets the params of this CommRequestGetDefaultTemplateParam.
+        r"""Gets the params of this CommRequestGetDefaultTemplateParam.
 
         :return: The params of this CommRequestGetDefaultTemplateParam.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.GetDefaultTemplateParam`
@@ -52,7 +52,7 @@ class CommRequestGetDefaultTemplateParam:
 
     @params.setter
     def params(self, params):
-        """Sets the params of this CommRequestGetDefaultTemplateParam.
+        r"""Sets the params of this CommRequestGetDefaultTemplateParam.
 
         :param params: The params of this CommRequestGetDefaultTemplateParam.
         :type params: :class:`huaweicloudsdkcloudtest.v1.GetDefaultTemplateParam`

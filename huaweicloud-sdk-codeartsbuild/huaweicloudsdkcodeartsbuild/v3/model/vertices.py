@@ -37,7 +37,7 @@ class Vertices:
     }
 
     def __init__(self, id=None, status=None, display_name=None, build_duration=None, start_time=None, finish_time=None, build_no=None):
-        """Vertices
+        r"""Vertices
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class Vertices:
 
     @property
     def id(self):
-        """Gets the id of this Vertices.
+        r"""Gets the id of this Vertices.
 
         子任务构建记录ID
 
@@ -96,7 +96,7 @@ class Vertices:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Vertices.
+        r"""Sets the id of this Vertices.
 
         子任务构建记录ID
 
@@ -107,7 +107,7 @@ class Vertices:
 
     @property
     def status(self):
-        """Gets the status of this Vertices.
+        r"""Gets the status of this Vertices.
 
         子任务执行状态
 
@@ -118,7 +118,7 @@ class Vertices:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Vertices.
+        r"""Sets the status of this Vertices.
 
         子任务执行状态
 
@@ -129,7 +129,7 @@ class Vertices:
 
     @property
     def display_name(self):
-        """Gets the display_name of this Vertices.
+        r"""Gets the display_name of this Vertices.
 
         子任务名称
 
@@ -140,7 +140,7 @@ class Vertices:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this Vertices.
+        r"""Sets the display_name of this Vertices.
 
         子任务名称
 
@@ -151,7 +151,7 @@ class Vertices:
 
     @property
     def build_duration(self):
-        """Gets the build_duration of this Vertices.
+        r"""Gets the build_duration of this Vertices.
 
         子任务构建耗时
 
@@ -162,7 +162,7 @@ class Vertices:
 
     @build_duration.setter
     def build_duration(self, build_duration):
-        """Sets the build_duration of this Vertices.
+        r"""Sets the build_duration of this Vertices.
 
         子任务构建耗时
 
@@ -173,7 +173,7 @@ class Vertices:
 
     @property
     def start_time(self):
-        """Gets the start_time of this Vertices.
+        r"""Gets the start_time of this Vertices.
 
         子任务开始时间
 
@@ -184,7 +184,7 @@ class Vertices:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this Vertices.
+        r"""Sets the start_time of this Vertices.
 
         子任务开始时间
 
@@ -195,7 +195,7 @@ class Vertices:
 
     @property
     def finish_time(self):
-        """Gets the finish_time of this Vertices.
+        r"""Gets the finish_time of this Vertices.
 
         子任务结束时间
 
@@ -206,7 +206,7 @@ class Vertices:
 
     @finish_time.setter
     def finish_time(self, finish_time):
-        """Sets the finish_time of this Vertices.
+        r"""Sets the finish_time of this Vertices.
 
         子任务结束时间
 
@@ -217,7 +217,7 @@ class Vertices:
 
     @property
     def build_no(self):
-        """Gets the build_no of this Vertices.
+        r"""Gets the build_no of this Vertices.
 
         子任务构建编号
 
@@ -228,7 +228,7 @@ class Vertices:
 
     @build_no.setter
     def build_no(self, build_no):
-        """Sets the build_no of this Vertices.
+        r"""Sets the build_no of this Vertices.
 
         子任务构建编号
 

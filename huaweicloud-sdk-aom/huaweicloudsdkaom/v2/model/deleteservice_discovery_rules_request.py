@@ -25,7 +25,7 @@ class DeleteserviceDiscoveryRulesRequest:
     }
 
     def __init__(self, app_rules_ids=None):
-        """DeleteserviceDiscoveryRulesRequest
+        r"""DeleteserviceDiscoveryRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteserviceDiscoveryRulesRequest:
 
     @property
     def app_rules_ids(self):
-        """Gets the app_rules_ids of this DeleteserviceDiscoveryRulesRequest.
+        r"""Gets the app_rules_ids of this DeleteserviceDiscoveryRulesRequest.
 
         发现规则ID，传多个时以逗号分隔。不允许为空。
 
@@ -53,7 +53,7 @@ class DeleteserviceDiscoveryRulesRequest:
 
     @app_rules_ids.setter
     def app_rules_ids(self, app_rules_ids):
-        """Sets the app_rules_ids of this DeleteserviceDiscoveryRulesRequest.
+        r"""Sets the app_rules_ids of this DeleteserviceDiscoveryRulesRequest.
 
         发现规则ID，传多个时以逗号分隔。不允许为空。
 

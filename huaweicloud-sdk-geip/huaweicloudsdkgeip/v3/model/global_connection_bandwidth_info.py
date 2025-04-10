@@ -35,7 +35,7 @@ class GlobalConnectionBandwidthInfo:
     }
 
     def __init__(self, gcb_id=None, size=None, gcb_type=None, admin_state=None, sla_level=None, dscp=None):
-        """GlobalConnectionBandwidthInfo
+        r"""GlobalConnectionBandwidthInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class GlobalConnectionBandwidthInfo:
 
     @property
     def gcb_id(self):
-        """Gets the gcb_id of this GlobalConnectionBandwidthInfo.
+        r"""Gets the gcb_id of this GlobalConnectionBandwidthInfo.
 
         骨干带宽的ID
 
@@ -89,7 +89,7 @@ class GlobalConnectionBandwidthInfo:
 
     @gcb_id.setter
     def gcb_id(self, gcb_id):
-        """Sets the gcb_id of this GlobalConnectionBandwidthInfo.
+        r"""Sets the gcb_id of this GlobalConnectionBandwidthInfo.
 
         骨干带宽的ID
 
@@ -100,7 +100,7 @@ class GlobalConnectionBandwidthInfo:
 
     @property
     def size(self):
-        """Gets the size of this GlobalConnectionBandwidthInfo.
+        r"""Gets the size of this GlobalConnectionBandwidthInfo.
 
         骨干带宽的大小
 
@@ -111,7 +111,7 @@ class GlobalConnectionBandwidthInfo:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this GlobalConnectionBandwidthInfo.
+        r"""Sets the size of this GlobalConnectionBandwidthInfo.
 
         骨干带宽的大小
 
@@ -122,7 +122,7 @@ class GlobalConnectionBandwidthInfo:
 
     @property
     def gcb_type(self):
-        """Gets the gcb_type of this GlobalConnectionBandwidthInfo.
+        r"""Gets the gcb_type of this GlobalConnectionBandwidthInfo.
 
         骨干带宽类型（城域、区域和大区）
 
@@ -133,7 +133,7 @@ class GlobalConnectionBandwidthInfo:
 
     @gcb_type.setter
     def gcb_type(self, gcb_type):
-        """Sets the gcb_type of this GlobalConnectionBandwidthInfo.
+        r"""Sets the gcb_type of this GlobalConnectionBandwidthInfo.
 
         骨干带宽类型（城域、区域和大区）
 
@@ -144,7 +144,7 @@ class GlobalConnectionBandwidthInfo:
 
     @property
     def admin_state(self):
-        """Gets the admin_state of this GlobalConnectionBandwidthInfo.
+        r"""Gets the admin_state of this GlobalConnectionBandwidthInfo.
 
         - 功能说明：骨干带宽状态 - 取值范围：NORMAL 正常、FREEZED 冻结
 
@@ -155,7 +155,7 @@ class GlobalConnectionBandwidthInfo:
 
     @admin_state.setter
     def admin_state(self, admin_state):
-        """Sets the admin_state of this GlobalConnectionBandwidthInfo.
+        r"""Sets the admin_state of this GlobalConnectionBandwidthInfo.
 
         - 功能说明：骨干带宽状态 - 取值范围：NORMAL 正常、FREEZED 冻结
 
@@ -166,7 +166,7 @@ class GlobalConnectionBandwidthInfo:
 
     @property
     def sla_level(self):
-        """Gets the sla_level of this GlobalConnectionBandwidthInfo.
+        r"""Gets the sla_level of this GlobalConnectionBandwidthInfo.
 
         - 功能说明：网络服务等级 - 取值范围：Pt - 铂金，Au - 金牌，Ag - 银牌，Cu - 铜牌
 
@@ -177,7 +177,7 @@ class GlobalConnectionBandwidthInfo:
 
     @sla_level.setter
     def sla_level(self, sla_level):
-        """Sets the sla_level of this GlobalConnectionBandwidthInfo.
+        r"""Sets the sla_level of this GlobalConnectionBandwidthInfo.
 
         - 功能说明：网络服务等级 - 取值范围：Pt - 铂金，Au - 金牌，Ag - 银牌，Cu - 铜牌
 
@@ -188,7 +188,7 @@ class GlobalConnectionBandwidthInfo:
 
     @property
     def dscp(self):
-        """Gets the dscp of this GlobalConnectionBandwidthInfo.
+        r"""Gets the dscp of this GlobalConnectionBandwidthInfo.
 
         线路质量金银铜对应的DSCP值
 
@@ -199,7 +199,7 @@ class GlobalConnectionBandwidthInfo:
 
     @dscp.setter
     def dscp(self, dscp):
-        """Sets the dscp of this GlobalConnectionBandwidthInfo.
+        r"""Sets the dscp of this GlobalConnectionBandwidthInfo.
 
         线路质量金银铜对应的DSCP值
 

@@ -30,7 +30,7 @@ class ListProjectCofigsV2Response(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, configs=None):
-        """ListProjectCofigsV2Response
+        r"""ListProjectCofigsV2Response
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListProjectCofigsV2Response(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListProjectCofigsV2Response.
+        r"""Gets the size of this ListProjectCofigsV2Response.
 
         本次返回的列表长度
 
@@ -67,7 +67,7 @@ class ListProjectCofigsV2Response(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListProjectCofigsV2Response.
+        r"""Sets the size of this ListProjectCofigsV2Response.
 
         本次返回的列表长度
 
@@ -78,7 +78,7 @@ class ListProjectCofigsV2Response(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListProjectCofigsV2Response.
+        r"""Gets the total of this ListProjectCofigsV2Response.
 
         满足条件的记录数
 
@@ -89,7 +89,7 @@ class ListProjectCofigsV2Response(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListProjectCofigsV2Response.
+        r"""Sets the total of this ListProjectCofigsV2Response.
 
         满足条件的记录数
 
@@ -100,7 +100,7 @@ class ListProjectCofigsV2Response(SdkResponse):
 
     @property
     def configs(self):
-        """Gets the configs of this ListProjectCofigsV2Response.
+        r"""Gets the configs of this ListProjectCofigsV2Response.
 
         配额列表
 
@@ -111,7 +111,7 @@ class ListProjectCofigsV2Response(SdkResponse):
 
     @configs.setter
     def configs(self, configs):
-        """Sets the configs of this ListProjectCofigsV2Response.
+        r"""Sets the configs of this ListProjectCofigsV2Response.
 
         配额列表
 

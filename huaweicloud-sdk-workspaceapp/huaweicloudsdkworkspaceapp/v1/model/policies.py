@@ -43,7 +43,7 @@ class Policies:
     }
 
     def __init__(self, peripherals=None, audio=None, client=None, display=None, file_and_clipboard=None, session=None, virtual_channel=None, keyboard_mouse=None, bandwidth=None, custom=None):
-        """Policies
+        r"""Policies
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class Policies:
 
     @property
     def peripherals(self):
-        """Gets the peripherals of this Policies.
+        r"""Gets the peripherals of this Policies.
 
         :return: The peripherals of this Policies.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesPeripherals`
@@ -115,7 +115,7 @@ class Policies:
 
     @peripherals.setter
     def peripherals(self, peripherals):
-        """Sets the peripherals of this Policies.
+        r"""Sets the peripherals of this Policies.
 
         :param peripherals: The peripherals of this Policies.
         :type peripherals: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesPeripherals`
@@ -124,7 +124,7 @@ class Policies:
 
     @property
     def audio(self):
-        """Gets the audio of this Policies.
+        r"""Gets the audio of this Policies.
 
         :return: The audio of this Policies.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesAudio`
@@ -133,7 +133,7 @@ class Policies:
 
     @audio.setter
     def audio(self, audio):
-        """Sets the audio of this Policies.
+        r"""Sets the audio of this Policies.
 
         :param audio: The audio of this Policies.
         :type audio: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesAudio`
@@ -142,7 +142,7 @@ class Policies:
 
     @property
     def client(self):
-        """Gets the client of this Policies.
+        r"""Gets the client of this Policies.
 
         :return: The client of this Policies.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesClient`
@@ -151,7 +151,7 @@ class Policies:
 
     @client.setter
     def client(self, client):
-        """Sets the client of this Policies.
+        r"""Sets the client of this Policies.
 
         :param client: The client of this Policies.
         :type client: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesClient`
@@ -160,7 +160,7 @@ class Policies:
 
     @property
     def display(self):
-        """Gets the display of this Policies.
+        r"""Gets the display of this Policies.
 
         :return: The display of this Policies.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesDisplay`
@@ -169,7 +169,7 @@ class Policies:
 
     @display.setter
     def display(self, display):
-        """Sets the display of this Policies.
+        r"""Sets the display of this Policies.
 
         :param display: The display of this Policies.
         :type display: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesDisplay`
@@ -178,7 +178,7 @@ class Policies:
 
     @property
     def file_and_clipboard(self):
-        """Gets the file_and_clipboard of this Policies.
+        r"""Gets the file_and_clipboard of this Policies.
 
         :return: The file_and_clipboard of this Policies.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesFileAndClipboard`
@@ -187,7 +187,7 @@ class Policies:
 
     @file_and_clipboard.setter
     def file_and_clipboard(self, file_and_clipboard):
-        """Sets the file_and_clipboard of this Policies.
+        r"""Sets the file_and_clipboard of this Policies.
 
         :param file_and_clipboard: The file_and_clipboard of this Policies.
         :type file_and_clipboard: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesFileAndClipboard`
@@ -196,7 +196,7 @@ class Policies:
 
     @property
     def session(self):
-        """Gets the session of this Policies.
+        r"""Gets the session of this Policies.
 
         :return: The session of this Policies.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.Session`
@@ -205,7 +205,7 @@ class Policies:
 
     @session.setter
     def session(self, session):
-        """Sets the session of this Policies.
+        r"""Sets the session of this Policies.
 
         :param session: The session of this Policies.
         :type session: :class:`huaweicloudsdkworkspaceapp.v1.Session`
@@ -214,7 +214,7 @@ class Policies:
 
     @property
     def virtual_channel(self):
-        """Gets the virtual_channel of this Policies.
+        r"""Gets the virtual_channel of this Policies.
 
         :return: The virtual_channel of this Policies.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.VirtualChannel`
@@ -223,7 +223,7 @@ class Policies:
 
     @virtual_channel.setter
     def virtual_channel(self, virtual_channel):
-        """Sets the virtual_channel of this Policies.
+        r"""Sets the virtual_channel of this Policies.
 
         :param virtual_channel: The virtual_channel of this Policies.
         :type virtual_channel: :class:`huaweicloudsdkworkspaceapp.v1.VirtualChannel`
@@ -232,7 +232,7 @@ class Policies:
 
     @property
     def keyboard_mouse(self):
-        """Gets the keyboard_mouse of this Policies.
+        r"""Gets the keyboard_mouse of this Policies.
 
         :return: The keyboard_mouse of this Policies.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesKeyboardMouse`
@@ -241,7 +241,7 @@ class Policies:
 
     @keyboard_mouse.setter
     def keyboard_mouse(self, keyboard_mouse):
-        """Sets the keyboard_mouse of this Policies.
+        r"""Sets the keyboard_mouse of this Policies.
 
         :param keyboard_mouse: The keyboard_mouse of this Policies.
         :type keyboard_mouse: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesKeyboardMouse`
@@ -250,7 +250,7 @@ class Policies:
 
     @property
     def bandwidth(self):
-        """Gets the bandwidth of this Policies.
+        r"""Gets the bandwidth of this Policies.
 
         :return: The bandwidth of this Policies.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.Bandwidth`
@@ -259,7 +259,7 @@ class Policies:
 
     @bandwidth.setter
     def bandwidth(self, bandwidth):
-        """Sets the bandwidth of this Policies.
+        r"""Sets the bandwidth of this Policies.
 
         :param bandwidth: The bandwidth of this Policies.
         :type bandwidth: :class:`huaweicloudsdkworkspaceapp.v1.Bandwidth`
@@ -268,7 +268,7 @@ class Policies:
 
     @property
     def custom(self):
-        """Gets the custom of this Policies.
+        r"""Gets the custom of this Policies.
 
         :return: The custom of this Policies.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesCustom`
@@ -277,7 +277,7 @@ class Policies:
 
     @custom.setter
     def custom(self, custom):
-        """Sets the custom of this Policies.
+        r"""Sets the custom of this Policies.
 
         :param custom: The custom of this Policies.
         :type custom: :class:`huaweicloudsdkworkspaceapp.v1.PoliciesCustom`

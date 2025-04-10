@@ -39,7 +39,7 @@ class L1Statistic:
     }
 
     def __init__(self, subject_area_group_name=None, subject_area_group_name_en=None, subject_area_group_guid=None, ordinal=None, subject_area_count=None, business_object_count=None, logic_entity_count=None, subject_area_statistics=None):
-        """L1Statistic
+        r"""L1Statistic
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class L1Statistic:
 
     @property
     def subject_area_group_name(self):
-        """Gets the subject_area_group_name of this L1Statistic.
+        r"""Gets the subject_area_group_name of this L1Statistic.
 
         主题域分组名称
 
@@ -103,7 +103,7 @@ class L1Statistic:
 
     @subject_area_group_name.setter
     def subject_area_group_name(self, subject_area_group_name):
-        """Sets the subject_area_group_name of this L1Statistic.
+        r"""Sets the subject_area_group_name of this L1Statistic.
 
         主题域分组名称
 
@@ -114,7 +114,7 @@ class L1Statistic:
 
     @property
     def subject_area_group_name_en(self):
-        """Gets the subject_area_group_name_en of this L1Statistic.
+        r"""Gets the subject_area_group_name_en of this L1Statistic.
 
         主题域分组英文名称
 
@@ -125,7 +125,7 @@ class L1Statistic:
 
     @subject_area_group_name_en.setter
     def subject_area_group_name_en(self, subject_area_group_name_en):
-        """Sets the subject_area_group_name_en of this L1Statistic.
+        r"""Sets the subject_area_group_name_en of this L1Statistic.
 
         主题域分组英文名称
 
@@ -136,7 +136,7 @@ class L1Statistic:
 
     @property
     def subject_area_group_guid(self):
-        """Gets the subject_area_group_guid of this L1Statistic.
+        r"""Gets the subject_area_group_guid of this L1Statistic.
 
         主题域分组的guid
 
@@ -147,7 +147,7 @@ class L1Statistic:
 
     @subject_area_group_guid.setter
     def subject_area_group_guid(self, subject_area_group_guid):
-        """Sets the subject_area_group_guid of this L1Statistic.
+        r"""Sets the subject_area_group_guid of this L1Statistic.
 
         主题域分组的guid
 
@@ -158,7 +158,7 @@ class L1Statistic:
 
     @property
     def ordinal(self):
-        """Gets the ordinal of this L1Statistic.
+        r"""Gets the ordinal of this L1Statistic.
 
         主题域分组序号
 
@@ -169,7 +169,7 @@ class L1Statistic:
 
     @ordinal.setter
     def ordinal(self, ordinal):
-        """Sets the ordinal of this L1Statistic.
+        r"""Sets the ordinal of this L1Statistic.
 
         主题域分组序号
 
@@ -180,7 +180,7 @@ class L1Statistic:
 
     @property
     def subject_area_count(self):
-        """Gets the subject_area_count of this L1Statistic.
+        r"""Gets the subject_area_count of this L1Statistic.
 
         主题总数
 
@@ -191,7 +191,7 @@ class L1Statistic:
 
     @subject_area_count.setter
     def subject_area_count(self, subject_area_count):
-        """Sets the subject_area_count of this L1Statistic.
+        r"""Sets the subject_area_count of this L1Statistic.
 
         主题总数
 
@@ -202,7 +202,7 @@ class L1Statistic:
 
     @property
     def business_object_count(self):
-        """Gets the business_object_count of this L1Statistic.
+        r"""Gets the business_object_count of this L1Statistic.
 
         业务对象总数
 
@@ -213,7 +213,7 @@ class L1Statistic:
 
     @business_object_count.setter
     def business_object_count(self, business_object_count):
-        """Sets the business_object_count of this L1Statistic.
+        r"""Sets the business_object_count of this L1Statistic.
 
         业务对象总数
 
@@ -224,7 +224,7 @@ class L1Statistic:
 
     @property
     def logic_entity_count(self):
-        """Gets the logic_entity_count of this L1Statistic.
+        r"""Gets the logic_entity_count of this L1Statistic.
 
         逻辑实体总数
 
@@ -235,7 +235,7 @@ class L1Statistic:
 
     @logic_entity_count.setter
     def logic_entity_count(self, logic_entity_count):
-        """Sets the logic_entity_count of this L1Statistic.
+        r"""Sets the logic_entity_count of this L1Statistic.
 
         逻辑实体总数
 
@@ -246,7 +246,7 @@ class L1Statistic:
 
     @property
     def subject_area_statistics(self):
-        """Gets the subject_area_statistics of this L1Statistic.
+        r"""Gets the subject_area_statistics of this L1Statistic.
 
         主题统计信息
 
@@ -257,7 +257,7 @@ class L1Statistic:
 
     @subject_area_statistics.setter
     def subject_area_statistics(self, subject_area_statistics):
-        """Sets the subject_area_statistics of this L1Statistic.
+        r"""Sets the subject_area_statistics of this L1Statistic.
 
         主题统计信息
 

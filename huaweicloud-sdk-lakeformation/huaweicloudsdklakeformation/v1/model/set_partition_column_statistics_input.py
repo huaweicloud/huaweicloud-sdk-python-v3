@@ -27,7 +27,7 @@ class SetPartitionColumnStatisticsInput:
     }
 
     def __init__(self, need_merge=None, statistics=None):
-        """SetPartitionColumnStatisticsInput
+        r"""SetPartitionColumnStatisticsInput
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class SetPartitionColumnStatisticsInput:
 
     @property
     def need_merge(self):
-        """Gets the need_merge of this SetPartitionColumnStatisticsInput.
+        r"""Gets the need_merge of this SetPartitionColumnStatisticsInput.
 
         是否合入原有统计信息
 
@@ -59,7 +59,7 @@ class SetPartitionColumnStatisticsInput:
 
     @need_merge.setter
     def need_merge(self, need_merge):
-        """Sets the need_merge of this SetPartitionColumnStatisticsInput.
+        r"""Sets the need_merge of this SetPartitionColumnStatisticsInput.
 
         是否合入原有统计信息
 
@@ -70,7 +70,7 @@ class SetPartitionColumnStatisticsInput:
 
     @property
     def statistics(self):
-        """Gets the statistics of this SetPartitionColumnStatisticsInput.
+        r"""Gets the statistics of this SetPartitionColumnStatisticsInput.
 
         分区统计信息的统计列表
 
@@ -81,7 +81,7 @@ class SetPartitionColumnStatisticsInput:
 
     @statistics.setter
     def statistics(self, statistics):
-        """Sets the statistics of this SetPartitionColumnStatisticsInput.
+        r"""Sets the statistics of this SetPartitionColumnStatisticsInput.
 
         分区统计信息的统计列表
 

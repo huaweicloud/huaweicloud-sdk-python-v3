@@ -27,7 +27,7 @@ class ListGaussMySqlInstanceDetailInfoRequest:
     }
 
     def __init__(self, x_language=None, instance_ids=None):
-        """ListGaussMySqlInstanceDetailInfoRequest
+        r"""ListGaussMySqlInstanceDetailInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListGaussMySqlInstanceDetailInfoRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListGaussMySqlInstanceDetailInfoRequest.
+        r"""Gets the x_language of this ListGaussMySqlInstanceDetailInfoRequest.
 
         语言。默认英语。
 
@@ -60,7 +60,7 @@ class ListGaussMySqlInstanceDetailInfoRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListGaussMySqlInstanceDetailInfoRequest.
+        r"""Sets the x_language of this ListGaussMySqlInstanceDetailInfoRequest.
 
         语言。默认英语。
 
@@ -71,7 +71,7 @@ class ListGaussMySqlInstanceDetailInfoRequest:
 
     @property
     def instance_ids(self):
-        """Gets the instance_ids of this ListGaussMySqlInstanceDetailInfoRequest.
+        r"""Gets the instance_ids of this ListGaussMySqlInstanceDetailInfoRequest.
 
         实例ID。最多同时输入20个实例ID，用英文逗号分隔。
 
@@ -82,7 +82,7 @@ class ListGaussMySqlInstanceDetailInfoRequest:
 
     @instance_ids.setter
     def instance_ids(self, instance_ids):
-        """Sets the instance_ids of this ListGaussMySqlInstanceDetailInfoRequest.
+        r"""Sets the instance_ids of this ListGaussMySqlInstanceDetailInfoRequest.
 
         实例ID。最多同时输入20个实例ID，用英文逗号分隔。
 

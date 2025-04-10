@@ -25,7 +25,7 @@ class EstimateDesktopPoolAddVolumeRequest:
     }
 
     def __init__(self, body=None):
-        """EstimateDesktopPoolAddVolumeRequest
+        r"""EstimateDesktopPoolAddVolumeRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class EstimateDesktopPoolAddVolumeRequest:
 
     @property
     def body(self):
-        """Gets the body of this EstimateDesktopPoolAddVolumeRequest.
+        r"""Gets the body of this EstimateDesktopPoolAddVolumeRequest.
 
         :return: The body of this EstimateDesktopPoolAddVolumeRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.EstimateAddVolumeRequestBody`
@@ -52,7 +52,7 @@ class EstimateDesktopPoolAddVolumeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this EstimateDesktopPoolAddVolumeRequest.
+        r"""Sets the body of this EstimateDesktopPoolAddVolumeRequest.
 
         :param body: The body of this EstimateDesktopPoolAddVolumeRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.EstimateAddVolumeRequestBody`

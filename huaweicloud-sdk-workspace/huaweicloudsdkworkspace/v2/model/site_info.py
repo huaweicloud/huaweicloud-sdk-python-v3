@@ -37,7 +37,7 @@ class SiteInfo:
     }
 
     def __init__(self, site_id=None, site_name=None, site_type=None, project_id=None, status=None, create_time=None, agent_info=None):
-        """SiteInfo
+        r"""SiteInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class SiteInfo:
 
     @property
     def site_id(self):
-        """Gets the site_id of this SiteInfo.
+        r"""Gets the site_id of this SiteInfo.
 
         站点id
 
@@ -96,7 +96,7 @@ class SiteInfo:
 
     @site_id.setter
     def site_id(self, site_id):
-        """Sets the site_id of this SiteInfo.
+        r"""Sets the site_id of this SiteInfo.
 
         站点id
 
@@ -107,7 +107,7 @@ class SiteInfo:
 
     @property
     def site_name(self):
-        """Gets the site_name of this SiteInfo.
+        r"""Gets the site_name of this SiteInfo.
 
         站点名字
 
@@ -118,7 +118,7 @@ class SiteInfo:
 
     @site_name.setter
     def site_name(self, site_name):
-        """Sets the site_name of this SiteInfo.
+        r"""Sets the site_name of this SiteInfo.
 
         站点名字
 
@@ -129,7 +129,7 @@ class SiteInfo:
 
     @property
     def site_type(self):
-        """Gets the site_type of this SiteInfo.
+        r"""Gets the site_type of this SiteInfo.
 
         配置状态。 - CENTER： 中心初始化 - IES： 边缘初始化
 
@@ -140,7 +140,7 @@ class SiteInfo:
 
     @site_type.setter
     def site_type(self, site_type):
-        """Sets the site_type of this SiteInfo.
+        r"""Sets the site_type of this SiteInfo.
 
         配置状态。 - CENTER： 中心初始化 - IES： 边缘初始化
 
@@ -151,7 +151,7 @@ class SiteInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this SiteInfo.
+        r"""Gets the project_id of this SiteInfo.
 
         项目ID
 
@@ -162,7 +162,7 @@ class SiteInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this SiteInfo.
+        r"""Sets the project_id of this SiteInfo.
 
         项目ID
 
@@ -173,7 +173,7 @@ class SiteInfo:
 
     @property
     def status(self):
-        """Gets the status of this SiteInfo.
+        r"""Gets the status of this SiteInfo.
 
         站点状态
 
@@ -184,7 +184,7 @@ class SiteInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SiteInfo.
+        r"""Sets the status of this SiteInfo.
 
         站点状态
 
@@ -195,7 +195,7 @@ class SiteInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this SiteInfo.
+        r"""Gets the create_time of this SiteInfo.
 
         创建时间
 
@@ -206,7 +206,7 @@ class SiteInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this SiteInfo.
+        r"""Sets the create_time of this SiteInfo.
 
         创建时间
 
@@ -217,7 +217,7 @@ class SiteInfo:
 
     @property
     def agent_info(self):
-        """Gets the agent_info of this SiteInfo.
+        r"""Gets the agent_info of this SiteInfo.
 
         网关节点信息
 
@@ -228,7 +228,7 @@ class SiteInfo:
 
     @agent_info.setter
     def agent_info(self, agent_info):
-        """Sets the agent_info of this SiteInfo.
+        r"""Sets the agent_info of this SiteInfo.
 
         网关节点信息
 

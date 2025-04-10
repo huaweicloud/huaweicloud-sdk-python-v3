@@ -33,7 +33,7 @@ class ApkComponentInfo:
     }
 
     def __init__(self, permission=None, activity=None, service=None, provider=None, receive=None):
-        """ApkComponentInfo
+        r"""ApkComponentInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ApkComponentInfo:
 
     @property
     def permission(self):
-        """Gets the permission of this ApkComponentInfo.
+        r"""Gets the permission of this ApkComponentInfo.
 
         权限列表
 
@@ -82,7 +82,7 @@ class ApkComponentInfo:
 
     @permission.setter
     def permission(self, permission):
-        """Sets the permission of this ApkComponentInfo.
+        r"""Sets the permission of this ApkComponentInfo.
 
         权限列表
 
@@ -93,7 +93,7 @@ class ApkComponentInfo:
 
     @property
     def activity(self):
-        """Gets the activity of this ApkComponentInfo.
+        r"""Gets the activity of this ApkComponentInfo.
 
         安卓activity列表，仅安卓任务存在该组件
 
@@ -104,7 +104,7 @@ class ApkComponentInfo:
 
     @activity.setter
     def activity(self, activity):
-        """Sets the activity of this ApkComponentInfo.
+        r"""Sets the activity of this ApkComponentInfo.
 
         安卓activity列表，仅安卓任务存在该组件
 
@@ -115,7 +115,7 @@ class ApkComponentInfo:
 
     @property
     def service(self):
-        """Gets the service of this ApkComponentInfo.
+        r"""Gets the service of this ApkComponentInfo.
 
         安卓service列表，仅安卓任务存在该组件
 
@@ -126,7 +126,7 @@ class ApkComponentInfo:
 
     @service.setter
     def service(self, service):
-        """Sets the service of this ApkComponentInfo.
+        r"""Sets the service of this ApkComponentInfo.
 
         安卓service列表，仅安卓任务存在该组件
 
@@ -137,7 +137,7 @@ class ApkComponentInfo:
 
     @property
     def provider(self):
-        """Gets the provider of this ApkComponentInfo.
+        r"""Gets the provider of this ApkComponentInfo.
 
         安卓provider列表，仅安卓任务存在该组件
 
@@ -148,7 +148,7 @@ class ApkComponentInfo:
 
     @provider.setter
     def provider(self, provider):
-        """Sets the provider of this ApkComponentInfo.
+        r"""Sets the provider of this ApkComponentInfo.
 
         安卓provider列表，仅安卓任务存在该组件
 
@@ -159,7 +159,7 @@ class ApkComponentInfo:
 
     @property
     def receive(self):
-        """Gets the receive of this ApkComponentInfo.
+        r"""Gets the receive of this ApkComponentInfo.
 
         安卓receive列表，仅安卓任务存在该组件
 
@@ -170,7 +170,7 @@ class ApkComponentInfo:
 
     @receive.setter
     def receive(self, receive):
-        """Sets the receive of this ApkComponentInfo.
+        r"""Sets the receive of this ApkComponentInfo.
 
         安卓receive列表，仅安卓任务存在该组件
 

@@ -25,7 +25,7 @@ class ItemResult:
     }
 
     def __init__(self, alarm_rule_name=None):
-        """ItemResult
+        r"""ItemResult
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ItemResult:
 
     @property
     def alarm_rule_name(self):
-        """Gets the alarm_rule_name of this ItemResult.
+        r"""Gets the alarm_rule_name of this ItemResult.
 
         告警规则名称。
 
@@ -53,7 +53,7 @@ class ItemResult:
 
     @alarm_rule_name.setter
     def alarm_rule_name(self, alarm_rule_name):
-        """Sets the alarm_rule_name of this ItemResult.
+        r"""Sets the alarm_rule_name of this ItemResult.
 
         告警规则名称。
 

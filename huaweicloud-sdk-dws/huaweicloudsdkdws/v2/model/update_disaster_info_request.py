@@ -27,7 +27,7 @@ class UpdateDisasterInfoRequest:
     }
 
     def __init__(self, disaster_recovery_id=None, body=None):
-        """UpdateDisasterInfoRequest
+        r"""UpdateDisasterInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateDisasterInfoRequest:
 
     @property
     def disaster_recovery_id(self):
-        """Gets the disaster_recovery_id of this UpdateDisasterInfoRequest.
+        r"""Gets the disaster_recovery_id of this UpdateDisasterInfoRequest.
 
         容灾ID
 
@@ -60,7 +60,7 @@ class UpdateDisasterInfoRequest:
 
     @disaster_recovery_id.setter
     def disaster_recovery_id(self, disaster_recovery_id):
-        """Sets the disaster_recovery_id of this UpdateDisasterInfoRequest.
+        r"""Sets the disaster_recovery_id of this UpdateDisasterInfoRequest.
 
         容灾ID
 
@@ -71,7 +71,7 @@ class UpdateDisasterInfoRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDisasterInfoRequest.
+        r"""Gets the body of this UpdateDisasterInfoRequest.
 
         :return: The body of this UpdateDisasterInfoRequest.
         :rtype: :class:`huaweicloudsdkdws.v2.UpdateDisasterRecoveryRequest`
@@ -80,7 +80,7 @@ class UpdateDisasterInfoRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDisasterInfoRequest.
+        r"""Sets the body of this UpdateDisasterInfoRequest.
 
         :param body: The body of this UpdateDisasterInfoRequest.
         :type body: :class:`huaweicloudsdkdws.v2.UpdateDisasterRecoveryRequest`

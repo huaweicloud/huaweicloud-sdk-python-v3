@@ -25,7 +25,7 @@ class DeleteImageRequest:
     }
 
     def __init__(self, image_id=None):
-        """DeleteImageRequest
+        r"""DeleteImageRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteImageRequest:
 
     @property
     def image_id(self):
-        """Gets the image_id of this DeleteImageRequest.
+        r"""Gets the image_id of this DeleteImageRequest.
 
         镜像ID
 
@@ -53,7 +53,7 @@ class DeleteImageRequest:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this DeleteImageRequest.
+        r"""Sets the image_id of this DeleteImageRequest.
 
         镜像ID
 

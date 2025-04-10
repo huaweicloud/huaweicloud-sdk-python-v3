@@ -41,7 +41,7 @@ class UpdateHttpAccessControlRuleRequestBody:
     }
 
     def __init__(self, name=None, description=None, status=None, time=None, start=None, terminal=None, priority=None, conditions=None, action=None):
-        """UpdateHttpAccessControlRuleRequestBody
+        r"""UpdateHttpAccessControlRuleRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -94,7 +94,7 @@ class UpdateHttpAccessControlRuleRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this UpdateHttpAccessControlRuleRequestBody.
+        r"""Gets the name of this UpdateHttpAccessControlRuleRequestBody.
 
         规则名称
 
@@ -105,7 +105,7 @@ class UpdateHttpAccessControlRuleRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateHttpAccessControlRuleRequestBody.
+        r"""Sets the name of this UpdateHttpAccessControlRuleRequestBody.
 
         规则名称
 
@@ -116,7 +116,7 @@ class UpdateHttpAccessControlRuleRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this UpdateHttpAccessControlRuleRequestBody.
+        r"""Gets the description of this UpdateHttpAccessControlRuleRequestBody.
 
         规则描述，最长512字符
 
@@ -127,7 +127,7 @@ class UpdateHttpAccessControlRuleRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateHttpAccessControlRuleRequestBody.
+        r"""Sets the description of this UpdateHttpAccessControlRuleRequestBody.
 
         规则描述，最长512字符
 
@@ -138,7 +138,7 @@ class UpdateHttpAccessControlRuleRequestBody:
 
     @property
     def status(self):
-        """Gets the status of this UpdateHttpAccessControlRuleRequestBody.
+        r"""Gets the status of this UpdateHttpAccessControlRuleRequestBody.
 
         规则开关状态
 
@@ -149,7 +149,7 @@ class UpdateHttpAccessControlRuleRequestBody:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateHttpAccessControlRuleRequestBody.
+        r"""Sets the status of this UpdateHttpAccessControlRuleRequestBody.
 
         规则开关状态
 
@@ -160,7 +160,7 @@ class UpdateHttpAccessControlRuleRequestBody:
 
     @property
     def time(self):
-        """Gets the time of this UpdateHttpAccessControlRuleRequestBody.
+        r"""Gets the time of this UpdateHttpAccessControlRuleRequestBody.
 
         是否设定生效时间
 
@@ -171,7 +171,7 @@ class UpdateHttpAccessControlRuleRequestBody:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this UpdateHttpAccessControlRuleRequestBody.
+        r"""Sets the time of this UpdateHttpAccessControlRuleRequestBody.
 
         是否设定生效时间
 
@@ -182,7 +182,7 @@ class UpdateHttpAccessControlRuleRequestBody:
 
     @property
     def start(self):
-        """Gets the start of this UpdateHttpAccessControlRuleRequestBody.
+        r"""Gets the start of this UpdateHttpAccessControlRuleRequestBody.
 
         生效时间
 
@@ -193,7 +193,7 @@ class UpdateHttpAccessControlRuleRequestBody:
 
     @start.setter
     def start(self, start):
-        """Sets the start of this UpdateHttpAccessControlRuleRequestBody.
+        r"""Sets the start of this UpdateHttpAccessControlRuleRequestBody.
 
         生效时间
 
@@ -204,7 +204,7 @@ class UpdateHttpAccessControlRuleRequestBody:
 
     @property
     def terminal(self):
-        """Gets the terminal of this UpdateHttpAccessControlRuleRequestBody.
+        r"""Gets the terminal of this UpdateHttpAccessControlRuleRequestBody.
 
         失效时间
 
@@ -215,7 +215,7 @@ class UpdateHttpAccessControlRuleRequestBody:
 
     @terminal.setter
     def terminal(self, terminal):
-        """Sets the terminal of this UpdateHttpAccessControlRuleRequestBody.
+        r"""Sets the terminal of this UpdateHttpAccessControlRuleRequestBody.
 
         失效时间
 
@@ -226,7 +226,7 @@ class UpdateHttpAccessControlRuleRequestBody:
 
     @property
     def priority(self):
-        """Gets the priority of this UpdateHttpAccessControlRuleRequestBody.
+        r"""Gets the priority of this UpdateHttpAccessControlRuleRequestBody.
 
         优先级
 
@@ -237,7 +237,7 @@ class UpdateHttpAccessControlRuleRequestBody:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this UpdateHttpAccessControlRuleRequestBody.
+        r"""Sets the priority of this UpdateHttpAccessControlRuleRequestBody.
 
         优先级
 
@@ -248,7 +248,7 @@ class UpdateHttpAccessControlRuleRequestBody:
 
     @property
     def conditions(self):
-        """Gets the conditions of this UpdateHttpAccessControlRuleRequestBody.
+        r"""Gets the conditions of this UpdateHttpAccessControlRuleRequestBody.
 
         命中条件
 
@@ -259,7 +259,7 @@ class UpdateHttpAccessControlRuleRequestBody:
 
     @conditions.setter
     def conditions(self, conditions):
-        """Sets the conditions of this UpdateHttpAccessControlRuleRequestBody.
+        r"""Sets the conditions of this UpdateHttpAccessControlRuleRequestBody.
 
         命中条件
 
@@ -270,7 +270,7 @@ class UpdateHttpAccessControlRuleRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this UpdateHttpAccessControlRuleRequestBody.
+        r"""Gets the action of this UpdateHttpAccessControlRuleRequestBody.
 
         :return: The action of this UpdateHttpAccessControlRuleRequestBody.
         :rtype: :class:`huaweicloudsdkedgesec.v2.HttpRuleAction`
@@ -279,7 +279,7 @@ class UpdateHttpAccessControlRuleRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this UpdateHttpAccessControlRuleRequestBody.
+        r"""Sets the action of this UpdateHttpAccessControlRuleRequestBody.
 
         :param action: The action of this UpdateHttpAccessControlRuleRequestBody.
         :type action: :class:`huaweicloudsdkedgesec.v2.HttpRuleAction`

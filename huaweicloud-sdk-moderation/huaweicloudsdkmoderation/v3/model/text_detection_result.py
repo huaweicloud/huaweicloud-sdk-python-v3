@@ -29,7 +29,7 @@ class TextDetectionResult:
     }
 
     def __init__(self, suggestion=None, label=None, details=None):
-        """TextDetectionResult
+        r"""TextDetectionResult
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class TextDetectionResult:
 
     @property
     def suggestion(self):
-        """Gets the suggestion of this TextDetectionResult.
+        r"""Gets the suggestion of this TextDetectionResult.
 
         审核结果是否通过。  block：包含敏感信息，不通过  pass：不包含敏感信息，通过  review：需要人工复检
 
@@ -68,7 +68,7 @@ class TextDetectionResult:
 
     @suggestion.setter
     def suggestion(self, suggestion):
-        """Sets the suggestion of this TextDetectionResult.
+        r"""Sets the suggestion of this TextDetectionResult.
 
         审核结果是否通过。  block：包含敏感信息，不通过  pass：不包含敏感信息，通过  review：需要人工复检
 
@@ -79,7 +79,7 @@ class TextDetectionResult:
 
     @property
     def label(self):
-        """Gets the label of this TextDetectionResult.
+        r"""Gets the label of this TextDetectionResult.
 
         检测结果的标签。  支持label列表如下：  politics: 涉政  terrorism: 暴恐  porn: 色情  ban: 违禁  abuse: 辱骂  ad: 广告  ad_law: 广告法  meaningless: ⽆意义  customized：自定义（命中自定义词库中的关键词）
 
@@ -90,7 +90,7 @@ class TextDetectionResult:
 
     @label.setter
     def label(self, label):
-        """Sets the label of this TextDetectionResult.
+        r"""Sets the label of this TextDetectionResult.
 
         检测结果的标签。  支持label列表如下：  politics: 涉政  terrorism: 暴恐  porn: 色情  ban: 违禁  abuse: 辱骂  ad: 广告  ad_law: 广告法  meaningless: ⽆意义  customized：自定义（命中自定义词库中的关键词）
 
@@ -101,7 +101,7 @@ class TextDetectionResult:
 
     @property
     def details(self):
-        """Gets the details of this TextDetectionResult.
+        r"""Gets the details of this TextDetectionResult.
 
         检测详情
 
@@ -112,7 +112,7 @@ class TextDetectionResult:
 
     @details.setter
     def details(self, details):
-        """Sets the details of this TextDetectionResult.
+        r"""Sets the details of this TextDetectionResult.
 
         检测详情
 

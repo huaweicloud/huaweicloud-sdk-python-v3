@@ -34,7 +34,7 @@ class RunQueueActionResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, job_id=None, queue_name=None, result=None):
-        """RunQueueActionResponse
+        r"""RunQueueActionResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class RunQueueActionResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this RunQueueActionResponse.
+        r"""Gets the is_success of this RunQueueActionResponse.
 
         请求执行是否成功。“true”表示请求执行成功。
 
@@ -83,7 +83,7 @@ class RunQueueActionResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this RunQueueActionResponse.
+        r"""Sets the is_success of this RunQueueActionResponse.
 
         请求执行是否成功。“true”表示请求执行成功。
 
@@ -94,7 +94,7 @@ class RunQueueActionResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this RunQueueActionResponse.
+        r"""Gets the message of this RunQueueActionResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -105,7 +105,7 @@ class RunQueueActionResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this RunQueueActionResponse.
+        r"""Sets the message of this RunQueueActionResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -116,7 +116,7 @@ class RunQueueActionResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this RunQueueActionResponse.
+        r"""Gets the job_id of this RunQueueActionResponse.
 
         当force为true的时候返回的jobId，可以根据job_id的状态来看最终结果
 
@@ -127,7 +127,7 @@ class RunQueueActionResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this RunQueueActionResponse.
+        r"""Sets the job_id of this RunQueueActionResponse.
 
         当force为true的时候返回的jobId，可以根据job_id的状态来看最终结果
 
@@ -138,7 +138,7 @@ class RunQueueActionResponse(SdkResponse):
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this RunQueueActionResponse.
+        r"""Gets the queue_name of this RunQueueActionResponse.
 
         扩缩容的队列名称。
 
@@ -149,7 +149,7 @@ class RunQueueActionResponse(SdkResponse):
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this RunQueueActionResponse.
+        r"""Sets the queue_name of this RunQueueActionResponse.
 
         扩缩容的队列名称。
 
@@ -160,7 +160,7 @@ class RunQueueActionResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RunQueueActionResponse.
+        r"""Gets the result of this RunQueueActionResponse.
 
         扩缩容结果
 
@@ -171,7 +171,7 @@ class RunQueueActionResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RunQueueActionResponse.
+        r"""Sets the result of this RunQueueActionResponse.
 
         扩缩容结果
 

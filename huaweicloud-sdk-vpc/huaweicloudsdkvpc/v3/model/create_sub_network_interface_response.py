@@ -28,7 +28,7 @@ class CreateSubNetworkInterfaceResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, sub_network_interface=None):
-        """CreateSubNetworkInterfaceResponse
+        r"""CreateSubNetworkInterfaceResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateSubNetworkInterfaceResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateSubNetworkInterfaceResponse.
+        r"""Gets the request_id of this CreateSubNetworkInterfaceResponse.
 
         请求ID
 
@@ -62,7 +62,7 @@ class CreateSubNetworkInterfaceResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateSubNetworkInterfaceResponse.
+        r"""Sets the request_id of this CreateSubNetworkInterfaceResponse.
 
         请求ID
 
@@ -73,7 +73,7 @@ class CreateSubNetworkInterfaceResponse(SdkResponse):
 
     @property
     def sub_network_interface(self):
-        """Gets the sub_network_interface of this CreateSubNetworkInterfaceResponse.
+        r"""Gets the sub_network_interface of this CreateSubNetworkInterfaceResponse.
 
         :return: The sub_network_interface of this CreateSubNetworkInterfaceResponse.
         :rtype: :class:`huaweicloudsdkvpc.v3.SubNetworkInterface`
@@ -82,7 +82,7 @@ class CreateSubNetworkInterfaceResponse(SdkResponse):
 
     @sub_network_interface.setter
     def sub_network_interface(self, sub_network_interface):
-        """Sets the sub_network_interface of this CreateSubNetworkInterfaceResponse.
+        r"""Sets the sub_network_interface of this CreateSubNetworkInterfaceResponse.
 
         :param sub_network_interface: The sub_network_interface of this CreateSubNetworkInterfaceResponse.
         :type sub_network_interface: :class:`huaweicloudsdkvpc.v3.SubNetworkInterface`

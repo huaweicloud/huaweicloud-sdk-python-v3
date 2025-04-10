@@ -30,7 +30,7 @@ class ShowMonitorSystemResponse(SdkResponse):
     }
 
     def __init__(self, api_version=None, kind=None, spec=None):
-        """ShowMonitorSystemResponse
+        r"""ShowMonitorSystemResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowMonitorSystemResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this ShowMonitorSystemResponse.
+        r"""Gets the api_version of this ShowMonitorSystemResponse.
 
         :return: The api_version of this ShowMonitorSystemResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -67,7 +67,7 @@ class ShowMonitorSystemResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this ShowMonitorSystemResponse.
+        r"""Sets the api_version of this ShowMonitorSystemResponse.
 
         :param api_version: The api_version of this ShowMonitorSystemResponse.
         :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -76,7 +76,7 @@ class ShowMonitorSystemResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this ShowMonitorSystemResponse.
+        r"""Gets the kind of this ShowMonitorSystemResponse.
 
         :return: The kind of this ShowMonitorSystemResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.MonitorSystemKindObj`
@@ -85,7 +85,7 @@ class ShowMonitorSystemResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ShowMonitorSystemResponse.
+        r"""Sets the kind of this ShowMonitorSystemResponse.
 
         :param kind: The kind of this ShowMonitorSystemResponse.
         :type kind: :class:`huaweicloudsdkcae.v1.MonitorSystemKindObj`
@@ -94,7 +94,7 @@ class ShowMonitorSystemResponse(SdkResponse):
 
     @property
     def spec(self):
-        """Gets the spec of this ShowMonitorSystemResponse.
+        r"""Gets the spec of this ShowMonitorSystemResponse.
 
         :return: The spec of this ShowMonitorSystemResponse.
         :rtype: :class:`huaweicloudsdkcae.v1.ShowMonitorSystemResponseBodySpec`
@@ -103,7 +103,7 @@ class ShowMonitorSystemResponse(SdkResponse):
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this ShowMonitorSystemResponse.
+        r"""Sets the spec of this ShowMonitorSystemResponse.
 
         :param spec: The spec of this ShowMonitorSystemResponse.
         :type spec: :class:`huaweicloudsdkcae.v1.ShowMonitorSystemResponseBodySpec`

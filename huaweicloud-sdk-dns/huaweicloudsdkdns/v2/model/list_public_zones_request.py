@@ -47,7 +47,7 @@ class ListPublicZonesRequest:
     }
 
     def __init__(self, type=None, limit=None, marker=None, offset=None, tags=None, name=None, id=None, status=None, search_mode=None, sort_key=None, sort_dir=None, enterprise_project_id=None):
-        """ListPublicZonesRequest
+        r"""ListPublicZonesRequest
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ListPublicZonesRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListPublicZonesRequest.
+        r"""Gets the type of this ListPublicZonesRequest.
 
         待查询的zone的类型。  取值范围：public 默认值为空。
 
@@ -131,7 +131,7 @@ class ListPublicZonesRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListPublicZonesRequest.
+        r"""Sets the type of this ListPublicZonesRequest.
 
         待查询的zone的类型。  取值范围：public 默认值为空。
 
@@ -142,7 +142,7 @@ class ListPublicZonesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPublicZonesRequest.
+        r"""Gets the limit of this ListPublicZonesRequest.
 
         每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
 
@@ -153,7 +153,7 @@ class ListPublicZonesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPublicZonesRequest.
+        r"""Sets the limit of this ListPublicZonesRequest.
 
         每页返回的资源个数。  取值范围：0~500  取值一般为10，20，50。默认值为500。
 
@@ -164,7 +164,7 @@ class ListPublicZonesRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListPublicZonesRequest.
+        r"""Gets the marker of this ListPublicZonesRequest.
 
         分页查询起始的资源ID，为空时为查询第一页。  默认值为空。
 
@@ -175,7 +175,7 @@ class ListPublicZonesRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListPublicZonesRequest.
+        r"""Sets the marker of this ListPublicZonesRequest.
 
         分页查询起始的资源ID，为空时为查询第一页。  默认值为空。
 
@@ -186,7 +186,7 @@ class ListPublicZonesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPublicZonesRequest.
+        r"""Gets the offset of this ListPublicZonesRequest.
 
         分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
 
@@ -197,7 +197,7 @@ class ListPublicZonesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPublicZonesRequest.
+        r"""Sets the offset of this ListPublicZonesRequest.
 
         分页查询起始偏移量，表示从偏移量的下一个资源开始查询。  取值范围：0~2147483647  默认值为0。  当前设置marker不为空时，以marker为分页起始标识。
 
@@ -208,7 +208,7 @@ class ListPublicZonesRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this ListPublicZonesRequest.
+        r"""Gets the tags of this ListPublicZonesRequest.
 
         资源标签。  取值格式：key1,value1|key2,value2  多个标签之间用\"|\"分开，每个标签的键值用英文逗号\",\"相隔。  多个标签之间为“与”的关系。  关于资源标签，请参见添加资源标签。  搜索模式为精确搜索。如果资源标签值value是以&ast;开头时，则按照&ast;后面的值全模糊匹配。  默认值为空。
 
@@ -219,7 +219,7 @@ class ListPublicZonesRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListPublicZonesRequest.
+        r"""Sets the tags of this ListPublicZonesRequest.
 
         资源标签。  取值格式：key1,value1|key2,value2  多个标签之间用\"|\"分开，每个标签的键值用英文逗号\",\"相隔。  多个标签之间为“与”的关系。  关于资源标签，请参见添加资源标签。  搜索模式为精确搜索。如果资源标签值value是以&ast;开头时，则按照&ast;后面的值全模糊匹配。  默认值为空。
 
@@ -230,7 +230,7 @@ class ListPublicZonesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListPublicZonesRequest.
+        r"""Gets the name of this ListPublicZonesRequest.
 
         Zone名称。  搜索模式默认为模糊搜索。
 
@@ -241,7 +241,7 @@ class ListPublicZonesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListPublicZonesRequest.
+        r"""Sets the name of this ListPublicZonesRequest.
 
         Zone名称。  搜索模式默认为模糊搜索。
 
@@ -252,7 +252,7 @@ class ListPublicZonesRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListPublicZonesRequest.
+        r"""Gets the id of this ListPublicZonesRequest.
 
         Zone ID。
 
@@ -263,7 +263,7 @@ class ListPublicZonesRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListPublicZonesRequest.
+        r"""Sets the id of this ListPublicZonesRequest.
 
         Zone ID。
 
@@ -274,7 +274,7 @@ class ListPublicZonesRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListPublicZonesRequest.
+        r"""Gets the status of this ListPublicZonesRequest.
 
         资源状态。
 
@@ -285,7 +285,7 @@ class ListPublicZonesRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListPublicZonesRequest.
+        r"""Sets the status of this ListPublicZonesRequest.
 
         资源状态。
 
@@ -296,7 +296,7 @@ class ListPublicZonesRequest:
 
     @property
     def search_mode(self):
-        """Gets the search_mode of this ListPublicZonesRequest.
+        r"""Gets the search_mode of this ListPublicZonesRequest.
 
         查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索
 
@@ -307,7 +307,7 @@ class ListPublicZonesRequest:
 
     @search_mode.setter
     def search_mode(self, search_mode):
-        """Sets the search_mode of this ListPublicZonesRequest.
+        r"""Sets the search_mode of this ListPublicZonesRequest.
 
         查询条件搜索模式。  取值范围：  like：模糊搜索 equal：精确搜索
 
@@ -318,7 +318,7 @@ class ListPublicZonesRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListPublicZonesRequest.
+        r"""Gets the sort_key of this ListPublicZonesRequest.
 
         查询结果中zone列表的排序字段。  取值范围为：  name：域名 created_at：创建时间 updated_at：更新时间 默认值为空，表示不排序。
 
@@ -329,7 +329,7 @@ class ListPublicZonesRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListPublicZonesRequest.
+        r"""Sets the sort_key of this ListPublicZonesRequest.
 
         查询结果中zone列表的排序字段。  取值范围为：  name：域名 created_at：创建时间 updated_at：更新时间 默认值为空，表示不排序。
 
@@ -340,7 +340,7 @@ class ListPublicZonesRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListPublicZonesRequest.
+        r"""Gets the sort_dir of this ListPublicZonesRequest.
 
         查询结果中zone列表的排序方式。  取值范围：  desc：降序排序 asc：升序排序 默认值为空，表示不排序。
 
@@ -351,7 +351,7 @@ class ListPublicZonesRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListPublicZonesRequest.
+        r"""Sets the sort_dir of this ListPublicZonesRequest.
 
         查询结果中zone列表的排序方式。  取值范围：  desc：降序排序 asc：升序排序 默认值为空，表示不排序。
 
@@ -362,7 +362,7 @@ class ListPublicZonesRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListPublicZonesRequest.
+        r"""Gets the enterprise_project_id of this ListPublicZonesRequest.
 
         域名关联的企业项目ID，长度不超过36个字符。
 
@@ -373,7 +373,7 @@ class ListPublicZonesRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListPublicZonesRequest.
+        r"""Sets the enterprise_project_id of this ListPublicZonesRequest.
 
         域名关联的企业项目ID，长度不超过36个字符。
 

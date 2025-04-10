@@ -37,7 +37,7 @@ class ExtendParam:
     }
 
     def __init__(self, charging_mode=None, region_id=None, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None, enterprise_project_id=None):
-        """ExtendParam
+        r"""ExtendParam
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ExtendParam:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this ExtendParam.
+        r"""Gets the charging_mode of this ExtendParam.
 
         计费模式。取值范围：prePaid：预付费，即包年包月; postPaid-后付费，即按需付费。默认值是prePaid。
 
@@ -96,7 +96,7 @@ class ExtendParam:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this ExtendParam.
+        r"""Sets the charging_mode of this ExtendParam.
 
         计费模式。取值范围：prePaid：预付费，即包年包月; postPaid-后付费，即按需付费。默认值是prePaid。
 
@@ -107,7 +107,7 @@ class ExtendParam:
 
     @property
     def region_id(self):
-        """Gets the region_id of this ExtendParam.
+        r"""Gets the region_id of this ExtendParam.
 
         裸金属服务器所在区域ID。请参考地区和终端节点获取。
 
@@ -118,7 +118,7 @@ class ExtendParam:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this ExtendParam.
+        r"""Sets the region_id of this ExtendParam.
 
         裸金属服务器所在区域ID。请参考地区和终端节点获取。
 
@@ -129,7 +129,7 @@ class ExtendParam:
 
     @property
     def period_type(self):
-        """Gets the period_type of this ExtendParam.
+        r"""Gets the period_type of this ExtendParam.
 
         订购周期类型。取值范围：month：月year：年 说明：chargingMode为prePaid时生效，且为必选值。
 
@@ -140,7 +140,7 @@ class ExtendParam:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this ExtendParam.
+        r"""Sets the period_type of this ExtendParam.
 
         订购周期类型。取值范围：month：月year：年 说明：chargingMode为prePaid时生效，且为必选值。
 
@@ -151,7 +151,7 @@ class ExtendParam:
 
     @property
     def period_num(self):
-        """Gets the period_num of this ExtendParam.
+        r"""Gets the period_num of this ExtendParam.
 
         订购周期数。取值范围：periodType=month（周期类型为月）时，取值为[1-9]。periodType=year（周期类型为年）时，取值为1。 说明：chargingMode为prePaid时生效，且为必选值。
 
@@ -162,7 +162,7 @@ class ExtendParam:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this ExtendParam.
+        r"""Sets the period_num of this ExtendParam.
 
         订购周期数。取值范围：periodType=month（周期类型为月）时，取值为[1-9]。periodType=year（周期类型为年）时，取值为1。 说明：chargingMode为prePaid时生效，且为必选值。
 
@@ -173,7 +173,7 @@ class ExtendParam:
 
     @property
     def is_auto_renew(self):
-        """Gets the is_auto_renew of this ExtendParam.
+        r"""Gets the is_auto_renew of this ExtendParam.
 
         是否自动续订。true：自动续订false：不自动续订 说明：chargingMode为prePaid时生效，不指定该参数或者该参数值为空时默认为不自动续订。
 
@@ -184,7 +184,7 @@ class ExtendParam:
 
     @is_auto_renew.setter
     def is_auto_renew(self, is_auto_renew):
-        """Sets the is_auto_renew of this ExtendParam.
+        r"""Sets the is_auto_renew of this ExtendParam.
 
         是否自动续订。true：自动续订false：不自动续订 说明：chargingMode为prePaid时生效，不指定该参数或者该参数值为空时默认为不自动续订。
 
@@ -195,7 +195,7 @@ class ExtendParam:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this ExtendParam.
+        r"""Gets the is_auto_pay of this ExtendParam.
 
         下单订购后，是否自动从客户的帐户中支付，而不需要客户手动去支付。true：是（自动支付）false：否（需要客户手动支付） 说明：chargingMode为prePaid时生效，不指定该参数或者该参数值为空时默认为客户手动支付。
 
@@ -206,7 +206,7 @@ class ExtendParam:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this ExtendParam.
+        r"""Sets the is_auto_pay of this ExtendParam.
 
         下单订购后，是否自动从客户的帐户中支付，而不需要客户手动去支付。true：是（自动支付）false：否（需要客户手动支付） 说明：chargingMode为prePaid时生效，不指定该参数或者该参数值为空时默认为客户手动支付。
 
@@ -217,7 +217,7 @@ class ExtendParam:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ExtendParam.
+        r"""Gets the enterprise_project_id of this ExtendParam.
 
         企业项目ID。该字段不传（或传为字符串“0”），则将资源绑定给默认企业项目。 说明：关于企业项目ID的获取及企业项目特性的详细信息，请参见《企业管理API参考》。
 
@@ -228,7 +228,7 @@ class ExtendParam:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ExtendParam.
+        r"""Sets the enterprise_project_id of this ExtendParam.
 
         企业项目ID。该字段不传（或传为字符串“0”），则将资源绑定给默认企业项目。 说明：关于企业项目ID的获取及企业项目特性的详细信息，请参见《企业管理API参考》。
 

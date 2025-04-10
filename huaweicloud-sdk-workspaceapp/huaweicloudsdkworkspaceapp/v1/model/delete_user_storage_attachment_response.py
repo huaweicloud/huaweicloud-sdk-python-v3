@@ -24,7 +24,7 @@ class DeleteUserStorageAttachmentResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteUserStorageAttachmentResponse
+        r"""DeleteUserStorageAttachmentResponse
 
         The model defined in huaweicloud sdk
 

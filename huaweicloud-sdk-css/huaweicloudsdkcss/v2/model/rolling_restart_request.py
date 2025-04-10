@@ -27,7 +27,7 @@ class RollingRestartRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """RollingRestartRequest
+        r"""RollingRestartRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class RollingRestartRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this RollingRestartRequest.
+        r"""Gets the cluster_id of this RollingRestartRequest.
 
         指定重启集群ID。
 
@@ -60,7 +60,7 @@ class RollingRestartRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this RollingRestartRequest.
+        r"""Sets the cluster_id of this RollingRestartRequest.
 
         指定重启集群ID。
 
@@ -71,7 +71,7 @@ class RollingRestartRequest:
 
     @property
     def body(self):
-        """Gets the body of this RollingRestartRequest.
+        r"""Gets the body of this RollingRestartRequest.
 
         :return: The body of this RollingRestartRequest.
         :rtype: :class:`huaweicloudsdkcss.v2.RollingRestartReq`
@@ -80,7 +80,7 @@ class RollingRestartRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RollingRestartRequest.
+        r"""Sets the body of this RollingRestartRequest.
 
         :param body: The body of this RollingRestartRequest.
         :type body: :class:`huaweicloudsdkcss.v2.RollingRestartReq`

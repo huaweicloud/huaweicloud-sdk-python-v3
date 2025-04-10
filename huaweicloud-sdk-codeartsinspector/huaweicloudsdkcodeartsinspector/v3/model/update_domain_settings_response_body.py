@@ -39,7 +39,7 @@ class UpdateDomainSettingsResponseBody:
     }
 
     def __init__(self, domain_id=None, login_url=None, login_username=None, login_password=None, login_cookies=None, verify_url=None, http_headers=None, domain_name=None):
-        """UpdateDomainSettingsResponseBody
+        r"""UpdateDomainSettingsResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class UpdateDomainSettingsResponseBody:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this UpdateDomainSettingsResponseBody.
+        r"""Gets the domain_id of this UpdateDomainSettingsResponseBody.
 
         网站域名ID
 
@@ -103,7 +103,7 @@ class UpdateDomainSettingsResponseBody:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this UpdateDomainSettingsResponseBody.
+        r"""Sets the domain_id of this UpdateDomainSettingsResponseBody.
 
         网站域名ID
 
@@ -114,7 +114,7 @@ class UpdateDomainSettingsResponseBody:
 
     @property
     def login_url(self):
-        """Gets the login_url of this UpdateDomainSettingsResponseBody.
+        r"""Gets the login_url of this UpdateDomainSettingsResponseBody.
 
         网站需要登录时，设置登录页面
 
@@ -125,7 +125,7 @@ class UpdateDomainSettingsResponseBody:
 
     @login_url.setter
     def login_url(self, login_url):
-        """Sets the login_url of this UpdateDomainSettingsResponseBody.
+        r"""Sets the login_url of this UpdateDomainSettingsResponseBody.
 
         网站需要登录时，设置登录页面
 
@@ -136,7 +136,7 @@ class UpdateDomainSettingsResponseBody:
 
     @property
     def login_username(self):
-        """Gets the login_username of this UpdateDomainSettingsResponseBody.
+        r"""Gets the login_username of this UpdateDomainSettingsResponseBody.
 
         网站需要登录时，设置登录用户名
 
@@ -147,7 +147,7 @@ class UpdateDomainSettingsResponseBody:
 
     @login_username.setter
     def login_username(self, login_username):
-        """Sets the login_username of this UpdateDomainSettingsResponseBody.
+        r"""Sets the login_username of this UpdateDomainSettingsResponseBody.
 
         网站需要登录时，设置登录用户名
 
@@ -158,7 +158,7 @@ class UpdateDomainSettingsResponseBody:
 
     @property
     def login_password(self):
-        """Gets the login_password of this UpdateDomainSettingsResponseBody.
+        r"""Gets the login_password of this UpdateDomainSettingsResponseBody.
 
         网站需要登录时，设置登录密码
 
@@ -169,7 +169,7 @@ class UpdateDomainSettingsResponseBody:
 
     @login_password.setter
     def login_password(self, login_password):
-        """Sets the login_password of this UpdateDomainSettingsResponseBody.
+        r"""Sets the login_password of this UpdateDomainSettingsResponseBody.
 
         网站需要登录时，设置登录密码
 
@@ -180,7 +180,7 @@ class UpdateDomainSettingsResponseBody:
 
     @property
     def login_cookies(self):
-        """Gets the login_cookies of this UpdateDomainSettingsResponseBody.
+        r"""Gets the login_cookies of this UpdateDomainSettingsResponseBody.
 
         网站需要登录时，设置登录cookie
 
@@ -191,7 +191,7 @@ class UpdateDomainSettingsResponseBody:
 
     @login_cookies.setter
     def login_cookies(self, login_cookies):
-        """Sets the login_cookies of this UpdateDomainSettingsResponseBody.
+        r"""Sets the login_cookies of this UpdateDomainSettingsResponseBody.
 
         网站需要登录时，设置登录cookie
 
@@ -202,7 +202,7 @@ class UpdateDomainSettingsResponseBody:
 
     @property
     def verify_url(self):
-        """Gets the verify_url of this UpdateDomainSettingsResponseBody.
+        r"""Gets the verify_url of this UpdateDomainSettingsResponseBody.
 
         设置用于验证登录是否成功的网址
 
@@ -213,7 +213,7 @@ class UpdateDomainSettingsResponseBody:
 
     @verify_url.setter
     def verify_url(self, verify_url):
-        """Sets the verify_url of this UpdateDomainSettingsResponseBody.
+        r"""Sets the verify_url of this UpdateDomainSettingsResponseBody.
 
         设置用于验证登录是否成功的网址
 
@@ -224,7 +224,7 @@ class UpdateDomainSettingsResponseBody:
 
     @property
     def http_headers(self):
-        """Gets the http_headers of this UpdateDomainSettingsResponseBody.
+        r"""Gets the http_headers of this UpdateDomainSettingsResponseBody.
 
         设置自定义HTTP请求头
 
@@ -235,7 +235,7 @@ class UpdateDomainSettingsResponseBody:
 
     @http_headers.setter
     def http_headers(self, http_headers):
-        """Sets the http_headers of this UpdateDomainSettingsResponseBody.
+        r"""Sets the http_headers of this UpdateDomainSettingsResponseBody.
 
         设置自定义HTTP请求头
 
@@ -246,7 +246,7 @@ class UpdateDomainSettingsResponseBody:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this UpdateDomainSettingsResponseBody.
+        r"""Gets the domain_name of this UpdateDomainSettingsResponseBody.
 
         网站域名
 
@@ -257,7 +257,7 @@ class UpdateDomainSettingsResponseBody:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this UpdateDomainSettingsResponseBody.
+        r"""Sets the domain_name of this UpdateDomainSettingsResponseBody.
 
         网站域名
 

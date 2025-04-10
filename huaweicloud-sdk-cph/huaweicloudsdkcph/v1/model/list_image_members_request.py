@@ -25,7 +25,7 @@ class ListImageMembersRequest:
     }
 
     def __init__(self, image_id=None):
-        """ListImageMembersRequest
+        r"""ListImageMembersRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListImageMembersRequest:
 
     @property
     def image_id(self):
-        """Gets the image_id of this ListImageMembersRequest.
+        r"""Gets the image_id of this ListImageMembersRequest.
 
         镜像id。
 
@@ -53,7 +53,7 @@ class ListImageMembersRequest:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this ListImageMembersRequest.
+        r"""Sets the image_id of this ListImageMembersRequest.
 
         镜像id。
 

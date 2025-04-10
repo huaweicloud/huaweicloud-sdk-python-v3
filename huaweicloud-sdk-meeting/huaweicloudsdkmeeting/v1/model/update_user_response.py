@@ -78,7 +78,7 @@ class UpdateUserResponse(SdkResponse):
     }
 
     def __init__(self, id=None, user_account=None, name=None, english_name=None, phone=None, country=None, email=None, sip_num=None, vmr_list=None, dept_code=None, dept_name=None, dept_name_path=None, user_type=None, admin_type=None, signature=None, title=None, desc=None, corp=None, function=None, dev_type=None, status=None, sort_level=None, hide_phone=None, vision_account=None, third_account=None, license=None, active_time=None):
-        """UpdateUserResponse
+        r"""UpdateUserResponse
 
         The model defined in huaweicloud sdk
 
@@ -226,7 +226,7 @@ class UpdateUserResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateUserResponse.
+        r"""Gets the id of this UpdateUserResponse.
 
         用户UUID。
 
@@ -237,7 +237,7 @@ class UpdateUserResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateUserResponse.
+        r"""Sets the id of this UpdateUserResponse.
 
         用户UUID。
 
@@ -248,7 +248,7 @@ class UpdateUserResponse(SdkResponse):
 
     @property
     def user_account(self):
-        """Gets the user_account of this UpdateUserResponse.
+        r"""Gets the user_account of this UpdateUserResponse.
 
         华为云会议帐号。
 
@@ -259,7 +259,7 @@ class UpdateUserResponse(SdkResponse):
 
     @user_account.setter
     def user_account(self, user_account):
-        """Sets the user_account of this UpdateUserResponse.
+        r"""Sets the user_account of this UpdateUserResponse.
 
         华为云会议帐号。
 
@@ -270,7 +270,7 @@ class UpdateUserResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateUserResponse.
+        r"""Gets the name of this UpdateUserResponse.
 
         名称。
 
@@ -281,7 +281,7 @@ class UpdateUserResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateUserResponse.
+        r"""Sets the name of this UpdateUserResponse.
 
         名称。
 
@@ -292,7 +292,7 @@ class UpdateUserResponse(SdkResponse):
 
     @property
     def english_name(self):
-        """Gets the english_name of this UpdateUserResponse.
+        r"""Gets the english_name of this UpdateUserResponse.
 
         英文名称。
 
@@ -303,7 +303,7 @@ class UpdateUserResponse(SdkResponse):
 
     @english_name.setter
     def english_name(self, english_name):
-        """Sets the english_name of this UpdateUserResponse.
+        r"""Sets the english_name of this UpdateUserResponse.
 
         英文名称。
 
@@ -314,7 +314,7 @@ class UpdateUserResponse(SdkResponse):
 
     @property
     def phone(self):
-        """Gets the phone of this UpdateUserResponse.
+        r"""Gets the phone of this UpdateUserResponse.
 
         联系电话。
 
@@ -325,7 +325,7 @@ class UpdateUserResponse(SdkResponse):
 
     @phone.setter
     def phone(self, phone):
-        """Sets the phone of this UpdateUserResponse.
+        r"""Sets the phone of this UpdateUserResponse.
 
         联系电话。
 
@@ -336,7 +336,7 @@ class UpdateUserResponse(SdkResponse):
 
     @property
     def country(self):
-        """Gets the country of this UpdateUserResponse.
+        r"""Gets the country of this UpdateUserResponse.
 
         [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
@@ -347,7 +347,7 @@ class UpdateUserResponse(SdkResponse):
 
     @country.setter
     def country(self, country):
-        """Sets the country of this UpdateUserResponse.
+        r"""Sets the country of this UpdateUserResponse.
 
         [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
@@ -358,7 +358,7 @@ class UpdateUserResponse(SdkResponse):
 
     @property
     def email(self):
-        """Gets the email of this UpdateUserResponse.
+        r"""Gets the email of this UpdateUserResponse.
 
         邮箱地址。
 
@@ -369,7 +369,7 @@ class UpdateUserResponse(SdkResponse):
 
     @email.setter
     def email(self, email):
-        """Sets the email of this UpdateUserResponse.
+        r"""Sets the email of this UpdateUserResponse.
 
         邮箱地址。
 
@@ -380,7 +380,7 @@ class UpdateUserResponse(SdkResponse):
 
     @property
     def sip_num(self):
-        """Gets the sip_num of this UpdateUserResponse.
+        r"""Gets the sip_num of this UpdateUserResponse.
 
         SIP号码。
 
@@ -391,7 +391,7 @@ class UpdateUserResponse(SdkResponse):
 
     @sip_num.setter
     def sip_num(self, sip_num):
-        """Sets the sip_num of this UpdateUserResponse.
+        r"""Sets the sip_num of this UpdateUserResponse.
 
         SIP号码。
 
@@ -402,7 +402,7 @@ class UpdateUserResponse(SdkResponse):
 
     @property
     def vmr_list(self):
-        """Gets the vmr_list of this UpdateUserResponse.
+        r"""Gets the vmr_list of this UpdateUserResponse.
 
         云会议室列表。
 
@@ -413,7 +413,7 @@ class UpdateUserResponse(SdkResponse):
 
     @vmr_list.setter
     def vmr_list(self, vmr_list):
-        """Sets the vmr_list of this UpdateUserResponse.
+        r"""Sets the vmr_list of this UpdateUserResponse.
 
         云会议室列表。
 
@@ -424,7 +424,7 @@ class UpdateUserResponse(SdkResponse):
 
     @property
     def dept_code(self):
-        """Gets the dept_code of this UpdateUserResponse.
+        r"""Gets the dept_code of this UpdateUserResponse.
 
         部门编码。
 
@@ -435,7 +435,7 @@ class UpdateUserResponse(SdkResponse):
 
     @dept_code.setter
     def dept_code(self, dept_code):
-        """Sets the dept_code of this UpdateUserResponse.
+        r"""Sets the dept_code of this UpdateUserResponse.
 
         部门编码。
 
@@ -446,7 +446,7 @@ class UpdateUserResponse(SdkResponse):
 
     @property
     def dept_name(self):
-        """Gets the dept_name of this UpdateUserResponse.
+        r"""Gets the dept_name of this UpdateUserResponse.
 
         部门名称。
 
@@ -457,7 +457,7 @@ class UpdateUserResponse(SdkResponse):
 
     @dept_name.setter
     def dept_name(self, dept_name):
-        """Sets the dept_name of this UpdateUserResponse.
+        r"""Sets the dept_name of this UpdateUserResponse.
 
         部门名称。
 
@@ -468,7 +468,7 @@ class UpdateUserResponse(SdkResponse):
 
     @property
     def dept_name_path(self):
-        """Gets the dept_name_path of this UpdateUserResponse.
+        r"""Gets the dept_name_path of this UpdateUserResponse.
 
         部门完整名称。
 
@@ -479,7 +479,7 @@ class UpdateUserResponse(SdkResponse):
 
     @dept_name_path.setter
     def dept_name_path(self, dept_name_path):
-        """Sets the dept_name_path of this UpdateUserResponse.
+        r"""Sets the dept_name_path of this UpdateUserResponse.
 
         部门完整名称。
 
@@ -490,7 +490,7 @@ class UpdateUserResponse(SdkResponse):
 
     @property
     def user_type(self):
-        """Gets the user_type of this UpdateUserResponse.
+        r"""Gets the user_type of this UpdateUserResponse.
 
         用户类型。 - 2：企业成员账户
 
@@ -501,7 +501,7 @@ class UpdateUserResponse(SdkResponse):
 
     @user_type.setter
     def user_type(self, user_type):
-        """Sets the user_type of this UpdateUserResponse.
+        r"""Sets the user_type of this UpdateUserResponse.
 
         用户类型。 - 2：企业成员账户
 
@@ -512,7 +512,7 @@ class UpdateUserResponse(SdkResponse):
 
     @property
     def admin_type(self):
-        """Gets the admin_type of this UpdateUserResponse.
+        r"""Gets the admin_type of this UpdateUserResponse.
 
         管理员类型。 - 0：默认（超级）管理员 - 1：普通管理员 - 2：非管理员（即为普通企业成员，UserType是2时有效）
 
@@ -523,7 +523,7 @@ class UpdateUserResponse(SdkResponse):
 
     @admin_type.setter
     def admin_type(self, admin_type):
-        """Sets the admin_type of this UpdateUserResponse.
+        r"""Sets the admin_type of this UpdateUserResponse.
 
         管理员类型。 - 0：默认（超级）管理员 - 1：普通管理员 - 2：非管理员（即为普通企业成员，UserType是2时有效）
 
@@ -534,7 +534,7 @@ class UpdateUserResponse(SdkResponse):
 
     @property
     def signature(self):
-        """Gets the signature of this UpdateUserResponse.
+        r"""Gets the signature of this UpdateUserResponse.
 
         签名。
 
@@ -545,7 +545,7 @@ class UpdateUserResponse(SdkResponse):
 
     @signature.setter
     def signature(self, signature):
-        """Sets the signature of this UpdateUserResponse.
+        r"""Sets the signature of this UpdateUserResponse.
 
         签名。
 
@@ -556,7 +556,7 @@ class UpdateUserResponse(SdkResponse):
 
     @property
     def title(self):
-        """Gets the title of this UpdateUserResponse.
+        r"""Gets the title of this UpdateUserResponse.
 
         职位。
 
@@ -567,7 +567,7 @@ class UpdateUserResponse(SdkResponse):
 
     @title.setter
     def title(self, title):
-        """Sets the title of this UpdateUserResponse.
+        r"""Sets the title of this UpdateUserResponse.
 
         职位。
 
@@ -578,7 +578,7 @@ class UpdateUserResponse(SdkResponse):
 
     @property
     def desc(self):
-        """Gets the desc of this UpdateUserResponse.
+        r"""Gets the desc of this UpdateUserResponse.
 
         备注。
 
@@ -589,7 +589,7 @@ class UpdateUserResponse(SdkResponse):
 
     @desc.setter
     def desc(self, desc):
-        """Sets the desc of this UpdateUserResponse.
+        r"""Sets the desc of this UpdateUserResponse.
 
         备注。
 
@@ -600,7 +600,7 @@ class UpdateUserResponse(SdkResponse):
 
     @property
     def corp(self):
-        """Gets the corp of this UpdateUserResponse.
+        r"""Gets the corp of this UpdateUserResponse.
 
         :return: The corp of this UpdateUserResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.CorpBasicInfoDTO`
@@ -609,7 +609,7 @@ class UpdateUserResponse(SdkResponse):
 
     @corp.setter
     def corp(self, corp):
-        """Sets the corp of this UpdateUserResponse.
+        r"""Sets the corp of this UpdateUserResponse.
 
         :param corp: The corp of this UpdateUserResponse.
         :type corp: :class:`huaweicloudsdkmeeting.v1.CorpBasicInfoDTO`
@@ -618,7 +618,7 @@ class UpdateUserResponse(SdkResponse):
 
     @property
     def function(self):
-        """Gets the function of this UpdateUserResponse.
+        r"""Gets the function of this UpdateUserResponse.
 
         :return: The function of this UpdateUserResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.UserFunctionDTO`
@@ -627,7 +627,7 @@ class UpdateUserResponse(SdkResponse):
 
     @function.setter
     def function(self, function):
-        """Sets the function of this UpdateUserResponse.
+        r"""Sets the function of this UpdateUserResponse.
 
         :param function: The function of this UpdateUserResponse.
         :type function: :class:`huaweicloudsdkmeeting.v1.UserFunctionDTO`
@@ -636,7 +636,7 @@ class UpdateUserResponse(SdkResponse):
 
     @property
     def dev_type(self):
-        """Gets the dev_type of this UpdateUserResponse.
+        r"""Gets the dev_type of this UpdateUserResponse.
 
         :return: The dev_type of this UpdateUserResponse.
         :rtype: :class:`huaweicloudsdkmeeting.v1.QueryDeviceInfoResultDTO`
@@ -645,7 +645,7 @@ class UpdateUserResponse(SdkResponse):
 
     @dev_type.setter
     def dev_type(self, dev_type):
-        """Sets the dev_type of this UpdateUserResponse.
+        r"""Sets the dev_type of this UpdateUserResponse.
 
         :param dev_type: The dev_type of this UpdateUserResponse.
         :type dev_type: :class:`huaweicloudsdkmeeting.v1.QueryDeviceInfoResultDTO`
@@ -654,7 +654,7 @@ class UpdateUserResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateUserResponse.
+        r"""Gets the status of this UpdateUserResponse.
 
         用户状态。 * 0：正常 * 1：停用 
 
@@ -665,7 +665,7 @@ class UpdateUserResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateUserResponse.
+        r"""Sets the status of this UpdateUserResponse.
 
         用户状态。 * 0：正常 * 1：停用 
 
@@ -676,7 +676,7 @@ class UpdateUserResponse(SdkResponse):
 
     @property
     def sort_level(self):
-        """Gets the sort_level of this UpdateUserResponse.
+        r"""Gets the sort_level of this UpdateUserResponse.
 
         通讯录排序等级，序号越低优先级越高。
 
@@ -687,7 +687,7 @@ class UpdateUserResponse(SdkResponse):
 
     @sort_level.setter
     def sort_level(self, sort_level):
-        """Sets the sort_level of this UpdateUserResponse.
+        r"""Sets the sort_level of this UpdateUserResponse.
 
         通讯录排序等级，序号越低优先级越高。
 
@@ -698,7 +698,7 @@ class UpdateUserResponse(SdkResponse):
 
     @property
     def hide_phone(self):
-        """Gets the hide_phone of this UpdateUserResponse.
+        r"""Gets the hide_phone of this UpdateUserResponse.
 
         是否隐藏手机号码。
 
@@ -709,7 +709,7 @@ class UpdateUserResponse(SdkResponse):
 
     @hide_phone.setter
     def hide_phone(self, hide_phone):
-        """Sets the hide_phone of this UpdateUserResponse.
+        r"""Sets the hide_phone of this UpdateUserResponse.
 
         是否隐藏手机号码。
 
@@ -720,7 +720,7 @@ class UpdateUserResponse(SdkResponse):
 
     @property
     def vision_account(self):
-        """Gets the vision_account of this UpdateUserResponse.
+        r"""Gets the vision_account of this UpdateUserResponse.
 
         智慧屏唯一帐号。
 
@@ -731,7 +731,7 @@ class UpdateUserResponse(SdkResponse):
 
     @vision_account.setter
     def vision_account(self, vision_account):
-        """Sets the vision_account of this UpdateUserResponse.
+        r"""Sets the vision_account of this UpdateUserResponse.
 
         智慧屏唯一帐号。
 
@@ -742,7 +742,7 @@ class UpdateUserResponse(SdkResponse):
 
     @property
     def third_account(self):
-        """Gets the third_account of this UpdateUserResponse.
+        r"""Gets the third_account of this UpdateUserResponse.
 
         第三方User ID。
 
@@ -753,7 +753,7 @@ class UpdateUserResponse(SdkResponse):
 
     @third_account.setter
     def third_account(self, third_account):
-        """Sets the third_account of this UpdateUserResponse.
+        r"""Sets the third_account of this UpdateUserResponse.
 
         第三方User ID。
 
@@ -764,7 +764,7 @@ class UpdateUserResponse(SdkResponse):
 
     @property
     def license(self):
-        """Gets the license of this UpdateUserResponse.
+        r"""Gets the license of this UpdateUserResponse.
 
         许可证。 * 0：商用 * 1：免费试用 
 
@@ -775,7 +775,7 @@ class UpdateUserResponse(SdkResponse):
 
     @license.setter
     def license(self, license):
-        """Sets the license of this UpdateUserResponse.
+        r"""Sets the license of this UpdateUserResponse.
 
         许可证。 * 0：商用 * 1：免费试用 
 
@@ -786,7 +786,7 @@ class UpdateUserResponse(SdkResponse):
 
     @property
     def active_time(self):
-        """Gets the active_time of this UpdateUserResponse.
+        r"""Gets the active_time of this UpdateUserResponse.
 
         激活时间，utc时间戳。
 
@@ -797,7 +797,7 @@ class UpdateUserResponse(SdkResponse):
 
     @active_time.setter
     def active_time(self, active_time):
-        """Sets the active_time of this UpdateUserResponse.
+        r"""Sets the active_time of this UpdateUserResponse.
 
         激活时间，utc时间戳。
 

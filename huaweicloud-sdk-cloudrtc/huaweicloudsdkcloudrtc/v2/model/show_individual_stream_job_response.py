@@ -60,7 +60,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None, stream_name=None, app_id=None, room_id=None, user_id=None, is_record_audio=None, video_type=None, select_stream_type=None, max_idle_time=None, record_param=None, create_time=None, update_time=None, state=None, stop_reason=None, description=None, start_time=None, stop_time=None, x_request_id=None):
-        """ShowIndividualStreamJobResponse
+        r"""ShowIndividualStreamJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -163,7 +163,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowIndividualStreamJobResponse.
+        r"""Gets the job_id of this ShowIndividualStreamJobResponse.
 
         任务编号
 
@@ -174,7 +174,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowIndividualStreamJobResponse.
+        r"""Sets the job_id of this ShowIndividualStreamJobResponse.
 
         任务编号
 
@@ -185,7 +185,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
 
     @property
     def stream_name(self):
-        """Gets the stream_name of this ShowIndividualStreamJobResponse.
+        r"""Gets the stream_name of this ShowIndividualStreamJobResponse.
 
         流名
 
@@ -196,7 +196,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
 
     @stream_name.setter
     def stream_name(self, stream_name):
-        """Sets the stream_name of this ShowIndividualStreamJobResponse.
+        r"""Sets the stream_name of this ShowIndividualStreamJobResponse.
 
         流名
 
@@ -207,7 +207,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
 
     @property
     def app_id(self):
-        """Gets the app_id of this ShowIndividualStreamJobResponse.
+        r"""Gets the app_id of this ShowIndividualStreamJobResponse.
 
         应用id
 
@@ -218,7 +218,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ShowIndividualStreamJobResponse.
+        r"""Sets the app_id of this ShowIndividualStreamJobResponse.
 
         应用id
 
@@ -229,7 +229,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
 
     @property
     def room_id(self):
-        """Gets the room_id of this ShowIndividualStreamJobResponse.
+        r"""Gets the room_id of this ShowIndividualStreamJobResponse.
 
         房间id
 
@@ -240,7 +240,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
 
     @room_id.setter
     def room_id(self, room_id):
-        """Sets the room_id of this ShowIndividualStreamJobResponse.
+        r"""Sets the room_id of this ShowIndividualStreamJobResponse.
 
         房间id
 
@@ -251,7 +251,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
 
     @property
     def user_id(self):
-        """Gets the user_id of this ShowIndividualStreamJobResponse.
+        r"""Gets the user_id of this ShowIndividualStreamJobResponse.
 
         选看的用户id，单个录制任务内保证唯一
 
@@ -262,7 +262,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ShowIndividualStreamJobResponse.
+        r"""Sets the user_id of this ShowIndividualStreamJobResponse.
 
         选看的用户id，单个录制任务内保证唯一
 
@@ -273,7 +273,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
 
     @property
     def is_record_audio(self):
-        """Gets the is_record_audio of this ShowIndividualStreamJobResponse.
+        r"""Gets the is_record_audio of this ShowIndividualStreamJobResponse.
 
          是否录制音频。  - true：录制音频 - false：不录制音频  缺省为true。 
 
@@ -284,7 +284,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
 
     @is_record_audio.setter
     def is_record_audio(self, is_record_audio):
-        """Sets the is_record_audio of this ShowIndividualStreamJobResponse.
+        r"""Sets the is_record_audio of this ShowIndividualStreamJobResponse.
 
          是否录制音频。  - true：录制音频 - false：不录制音频  缺省为true。 
 
@@ -295,7 +295,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
 
     @property
     def video_type(self):
-        """Gets the video_type of this ShowIndividualStreamJobResponse.
+        r"""Gets the video_type of this ShowIndividualStreamJobResponse.
 
         标识视频流的类型，可选摄像头流或者屏幕分享流，未填写表示不录制视频。  - CAMERASTREAM：摄像头视频流 - SCREENSTREAM：屏幕分享视频流  默认为CAMERASTREAM。 
 
@@ -306,7 +306,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
 
     @video_type.setter
     def video_type(self, video_type):
-        """Sets the video_type of this ShowIndividualStreamJobResponse.
+        r"""Sets the video_type of this ShowIndividualStreamJobResponse.
 
         标识视频流的类型，可选摄像头流或者屏幕分享流，未填写表示不录制视频。  - CAMERASTREAM：摄像头视频流 - SCREENSTREAM：屏幕分享视频流  默认为CAMERASTREAM。 
 
@@ -317,7 +317,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
 
     @property
     def select_stream_type(self):
-        """Gets the select_stream_type of this ShowIndividualStreamJobResponse.
+        r"""Gets the select_stream_type of this ShowIndividualStreamJobResponse.
 
         指定窗口拉取的分辨率档位。  - LD - SD - HD - FHD  缺省为FHD。 
 
@@ -328,7 +328,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
 
     @select_stream_type.setter
     def select_stream_type(self, select_stream_type):
-        """Sets the select_stream_type of this ShowIndividualStreamJobResponse.
+        r"""Sets the select_stream_type of this ShowIndividualStreamJobResponse.
 
         指定窗口拉取的分辨率档位。  - LD - SD - HD - FHD  缺省为FHD。 
 
@@ -339,7 +339,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
 
     @property
     def max_idle_time(self):
-        """Gets the max_idle_time of this ShowIndividualStreamJobResponse.
+        r"""Gets the max_idle_time of this ShowIndividualStreamJobResponse.
 
         最长空闲频道时间。  取值范围：[5，43200]，默认值为30。  单位：秒。  如果频道内无连麦方的状态持续超过该时间，录制程序会自动退出。退出后，再次调用start请求，会产生新的录制任务。  连麦方指：joiner或者publisher的用户。 
 
@@ -350,7 +350,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
 
     @max_idle_time.setter
     def max_idle_time(self, max_idle_time):
-        """Sets the max_idle_time of this ShowIndividualStreamJobResponse.
+        r"""Sets the max_idle_time of this ShowIndividualStreamJobResponse.
 
         最长空闲频道时间。  取值范围：[5，43200]，默认值为30。  单位：秒。  如果频道内无连麦方的状态持续超过该时间，录制程序会自动退出。退出后，再次调用start请求，会产生新的录制任务。  连麦方指：joiner或者publisher的用户。 
 
@@ -361,7 +361,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
 
     @property
     def record_param(self):
-        """Gets the record_param of this ShowIndividualStreamJobResponse.
+        r"""Gets the record_param of this ShowIndividualStreamJobResponse.
 
         :return: The record_param of this ShowIndividualStreamJobResponse.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.RecordParam`
@@ -370,7 +370,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
 
     @record_param.setter
     def record_param(self, record_param):
-        """Sets the record_param of this ShowIndividualStreamJobResponse.
+        r"""Sets the record_param of this ShowIndividualStreamJobResponse.
 
         :param record_param: The record_param of this ShowIndividualStreamJobResponse.
         :type record_param: :class:`huaweicloudsdkcloudrtc.v2.RecordParam`
@@ -379,7 +379,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowIndividualStreamJobResponse.
+        r"""Gets the create_time of this ShowIndividualStreamJobResponse.
 
         创建时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
@@ -390,7 +390,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowIndividualStreamJobResponse.
+        r"""Sets the create_time of this ShowIndividualStreamJobResponse.
 
         创建时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
@@ -401,7 +401,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowIndividualStreamJobResponse.
+        r"""Gets the update_time of this ShowIndividualStreamJobResponse.
 
         更新时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
@@ -412,7 +412,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowIndividualStreamJobResponse.
+        r"""Sets the update_time of this ShowIndividualStreamJobResponse.
 
         更新时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
@@ -423,7 +423,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this ShowIndividualStreamJobResponse.
+        r"""Gets the state of this ShowIndividualStreamJobResponse.
 
         任务状态。  - INIT：任务正在初始化 - RUNNING：任务正在运行 - STOPPED：任务已停止 
 
@@ -434,7 +434,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ShowIndividualStreamJobResponse.
+        r"""Sets the state of this ShowIndividualStreamJobResponse.
 
         任务状态。  - INIT：任务正在初始化 - RUNNING：任务正在运行 - STOPPED：任务已停止 
 
@@ -445,7 +445,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
 
     @property
     def stop_reason(self):
-        """Gets the stop_reason of this ShowIndividualStreamJobResponse.
+        r"""Gets the stop_reason of this ShowIndividualStreamJobResponse.
 
         任务结束原因 - TENANT_STOP - EXCEED_MAX_IDLE_TIME - INTERNAL_ERROR
 
@@ -456,7 +456,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
 
     @stop_reason.setter
     def stop_reason(self, stop_reason):
-        """Sets the stop_reason of this ShowIndividualStreamJobResponse.
+        r"""Sets the stop_reason of this ShowIndividualStreamJobResponse.
 
         任务结束原因 - TENANT_STOP - EXCEED_MAX_IDLE_TIME - INTERNAL_ERROR
 
@@ -467,7 +467,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowIndividualStreamJobResponse.
+        r"""Gets the description of this ShowIndividualStreamJobResponse.
 
         针对任务状态的详细信息描述
 
@@ -478,7 +478,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowIndividualStreamJobResponse.
+        r"""Sets the description of this ShowIndividualStreamJobResponse.
 
         针对任务状态的详细信息描述
 
@@ -489,7 +489,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowIndividualStreamJobResponse.
+        r"""Gets the start_time of this ShowIndividualStreamJobResponse.
 
         任务开始时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
@@ -500,7 +500,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowIndividualStreamJobResponse.
+        r"""Sets the start_time of this ShowIndividualStreamJobResponse.
 
         任务开始时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
@@ -511,7 +511,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
 
     @property
     def stop_time(self):
-        """Gets the stop_time of this ShowIndividualStreamJobResponse.
+        r"""Gets the stop_time of this ShowIndividualStreamJobResponse.
 
         任务完成时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
@@ -522,7 +522,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
 
     @stop_time.setter
     def stop_time(self, stop_time):
-        """Sets the stop_time of this ShowIndividualStreamJobResponse.
+        r"""Sets the stop_time of this ShowIndividualStreamJobResponse.
 
         任务完成时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
@@ -533,7 +533,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowIndividualStreamJobResponse.
+        r"""Gets the x_request_id of this ShowIndividualStreamJobResponse.
 
         :return: The x_request_id of this ShowIndividualStreamJobResponse.
         :rtype: str
@@ -542,7 +542,7 @@ class ShowIndividualStreamJobResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowIndividualStreamJobResponse.
+        r"""Sets the x_request_id of this ShowIndividualStreamJobResponse.
 
         :param x_request_id: The x_request_id of this ShowIndividualStreamJobResponse.
         :type x_request_id: str

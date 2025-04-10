@@ -29,7 +29,7 @@ class ShowJobRequest:
     }
 
     def __init__(self, x_addition_info=None, eihealth_project_id=None, job_id=None):
-        """ShowJobRequest
+        r"""ShowJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowJobRequest:
 
     @property
     def x_addition_info(self):
-        """Gets the x_addition_info of this ShowJobRequest.
+        r"""Gets the x_addition_info of this ShowJobRequest.
 
         设置为LOG时，返回作业日志链接
 
@@ -66,7 +66,7 @@ class ShowJobRequest:
 
     @x_addition_info.setter
     def x_addition_info(self, x_addition_info):
-        """Sets the x_addition_info of this ShowJobRequest.
+        r"""Sets the x_addition_info of this ShowJobRequest.
 
         设置为LOG时，返回作业日志链接
 
@@ -77,7 +77,7 @@ class ShowJobRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this ShowJobRequest.
+        r"""Gets the eihealth_project_id of this ShowJobRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -88,7 +88,7 @@ class ShowJobRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this ShowJobRequest.
+        r"""Sets the eihealth_project_id of this ShowJobRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -99,7 +99,7 @@ class ShowJobRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowJobRequest.
+        r"""Gets the job_id of this ShowJobRequest.
 
         作业id
 
@@ -110,7 +110,7 @@ class ShowJobRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowJobRequest.
+        r"""Sets the job_id of this ShowJobRequest.
 
         作业id
 

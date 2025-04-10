@@ -29,7 +29,7 @@ class AddSubsetsToGatewayRequest:
     }
 
     def __init__(self, instance_id=None, device_id=None, body=None):
-        """AddSubsetsToGatewayRequest
+        r"""AddSubsetsToGatewayRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class AddSubsetsToGatewayRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this AddSubsetsToGatewayRequest.
+        r"""Gets the instance_id of this AddSubsetsToGatewayRequest.
 
         实例ID
 
@@ -66,7 +66,7 @@ class AddSubsetsToGatewayRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this AddSubsetsToGatewayRequest.
+        r"""Sets the instance_id of this AddSubsetsToGatewayRequest.
 
         实例ID
 
@@ -77,7 +77,7 @@ class AddSubsetsToGatewayRequest:
 
     @property
     def device_id(self):
-        """Gets the device_id of this AddSubsetsToGatewayRequest.
+        r"""Gets the device_id of this AddSubsetsToGatewayRequest.
 
         设备ID
 
@@ -88,7 +88,7 @@ class AddSubsetsToGatewayRequest:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this AddSubsetsToGatewayRequest.
+        r"""Sets the device_id of this AddSubsetsToGatewayRequest.
 
         设备ID
 
@@ -99,7 +99,7 @@ class AddSubsetsToGatewayRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddSubsetsToGatewayRequest.
+        r"""Gets the body of this AddSubsetsToGatewayRequest.
 
         :return: The body of this AddSubsetsToGatewayRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.AddSubsetsToGatewayRequestBody`
@@ -108,7 +108,7 @@ class AddSubsetsToGatewayRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddSubsetsToGatewayRequest.
+        r"""Sets the body of this AddSubsetsToGatewayRequest.
 
         :param body: The body of this AddSubsetsToGatewayRequest.
         :type body: :class:`huaweicloudsdkroma.v2.AddSubsetsToGatewayRequestBody`

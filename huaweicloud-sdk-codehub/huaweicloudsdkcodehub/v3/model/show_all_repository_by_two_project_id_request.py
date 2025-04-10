@@ -31,7 +31,7 @@ class ShowAllRepositoryByTwoProjectIdRequest:
     }
 
     def __init__(self, page_index=None, page_size=None, project_uuid=None, search=None):
-        """ShowAllRepositoryByTwoProjectIdRequest
+        r"""ShowAllRepositoryByTwoProjectIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ShowAllRepositoryByTwoProjectIdRequest:
 
     @property
     def page_index(self):
-        """Gets the page_index of this ShowAllRepositoryByTwoProjectIdRequest.
+        r"""Gets the page_index of this ShowAllRepositoryByTwoProjectIdRequest.
 
         分页索引，从1开始计数
 
@@ -74,7 +74,7 @@ class ShowAllRepositoryByTwoProjectIdRequest:
 
     @page_index.setter
     def page_index(self, page_index):
-        """Sets the page_index of this ShowAllRepositoryByTwoProjectIdRequest.
+        r"""Sets the page_index of this ShowAllRepositoryByTwoProjectIdRequest.
 
         分页索引，从1开始计数
 
@@ -85,7 +85,7 @@ class ShowAllRepositoryByTwoProjectIdRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ShowAllRepositoryByTwoProjectIdRequest.
+        r"""Gets the page_size of this ShowAllRepositoryByTwoProjectIdRequest.
 
         每页条目数
 
@@ -96,7 +96,7 @@ class ShowAllRepositoryByTwoProjectIdRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ShowAllRepositoryByTwoProjectIdRequest.
+        r"""Sets the page_size of this ShowAllRepositoryByTwoProjectIdRequest.
 
         每页条目数
 
@@ -107,7 +107,7 @@ class ShowAllRepositoryByTwoProjectIdRequest:
 
     @property
     def project_uuid(self):
-        """Gets the project_uuid of this ShowAllRepositoryByTwoProjectIdRequest.
+        r"""Gets the project_uuid of this ShowAllRepositoryByTwoProjectIdRequest.
 
         项目ID，获取方式请参见[获取项目ID](codehub_api_0014.xml)。
 
@@ -118,7 +118,7 @@ class ShowAllRepositoryByTwoProjectIdRequest:
 
     @project_uuid.setter
     def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this ShowAllRepositoryByTwoProjectIdRequest.
+        r"""Sets the project_uuid of this ShowAllRepositoryByTwoProjectIdRequest.
 
         项目ID，获取方式请参见[获取项目ID](codehub_api_0014.xml)。
 
@@ -129,7 +129,7 @@ class ShowAllRepositoryByTwoProjectIdRequest:
 
     @property
     def search(self):
-        """Gets the search of this ShowAllRepositoryByTwoProjectIdRequest.
+        r"""Gets the search of this ShowAllRepositoryByTwoProjectIdRequest.
 
         搜索关键字
 
@@ -140,7 +140,7 @@ class ShowAllRepositoryByTwoProjectIdRequest:
 
     @search.setter
     def search(self, search):
-        """Sets the search of this ShowAllRepositoryByTwoProjectIdRequest.
+        r"""Sets the search of this ShowAllRepositoryByTwoProjectIdRequest.
 
         搜索关键字
 

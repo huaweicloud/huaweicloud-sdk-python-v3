@@ -25,7 +25,7 @@ class RunSentenceEmbeddingRequest:
     }
 
     def __init__(self, body=None):
-        """RunSentenceEmbeddingRequest
+        r"""RunSentenceEmbeddingRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RunSentenceEmbeddingRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunSentenceEmbeddingRequest.
+        r"""Gets the body of this RunSentenceEmbeddingRequest.
 
         :return: The body of this RunSentenceEmbeddingRequest.
         :rtype: :class:`huaweicloudsdknlp.v2.PostSentenceEmbeddingReq`
@@ -52,7 +52,7 @@ class RunSentenceEmbeddingRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunSentenceEmbeddingRequest.
+        r"""Sets the body of this RunSentenceEmbeddingRequest.
 
         :param body: The body of this RunSentenceEmbeddingRequest.
         :type body: :class:`huaweicloudsdknlp.v2.PostSentenceEmbeddingReq`

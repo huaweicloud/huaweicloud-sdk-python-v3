@@ -33,7 +33,7 @@ class ListRestoreRecordsRequest:
     }
 
     def __init__(self, instance_id=None, begin_time=None, end_time=None, limit=None, offset=None):
-        """ListRestoreRecordsRequest
+        r"""ListRestoreRecordsRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListRestoreRecordsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListRestoreRecordsRequest.
+        r"""Gets the instance_id of this ListRestoreRecordsRequest.
 
         实例ID。
 
@@ -81,7 +81,7 @@ class ListRestoreRecordsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListRestoreRecordsRequest.
+        r"""Sets the instance_id of this ListRestoreRecordsRequest.
 
         实例ID。
 
@@ -92,7 +92,7 @@ class ListRestoreRecordsRequest:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ListRestoreRecordsRequest.
+        r"""Gets the begin_time of this ListRestoreRecordsRequest.
 
         查询开始时间。格式：yyyyMMddHHmmss，如：20170718235959。
 
@@ -103,7 +103,7 @@ class ListRestoreRecordsRequest:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ListRestoreRecordsRequest.
+        r"""Sets the begin_time of this ListRestoreRecordsRequest.
 
         查询开始时间。格式：yyyyMMddHHmmss，如：20170718235959。
 
@@ -114,7 +114,7 @@ class ListRestoreRecordsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListRestoreRecordsRequest.
+        r"""Gets the end_time of this ListRestoreRecordsRequest.
 
         查询结束时间。格式：yyyyMMddHHmmss，如：20170718235959。
 
@@ -125,7 +125,7 @@ class ListRestoreRecordsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListRestoreRecordsRequest.
+        r"""Sets the end_time of this ListRestoreRecordsRequest.
 
         查询结束时间。格式：yyyyMMddHHmmss，如：20170718235959。
 
@@ -136,7 +136,7 @@ class ListRestoreRecordsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRestoreRecordsRequest.
+        r"""Gets the limit of this ListRestoreRecordsRequest.
 
         每页显示的条目数量。
 
@@ -147,7 +147,7 @@ class ListRestoreRecordsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRestoreRecordsRequest.
+        r"""Sets the limit of this ListRestoreRecordsRequest.
 
         每页显示的条目数量。
 
@@ -158,7 +158,7 @@ class ListRestoreRecordsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListRestoreRecordsRequest.
+        r"""Gets the offset of this ListRestoreRecordsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0。
 
@@ -169,7 +169,7 @@ class ListRestoreRecordsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListRestoreRecordsRequest.
+        r"""Sets the offset of this ListRestoreRecordsRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0。
 

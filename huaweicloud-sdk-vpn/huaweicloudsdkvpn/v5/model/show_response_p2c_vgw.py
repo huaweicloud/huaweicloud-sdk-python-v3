@@ -59,7 +59,7 @@ class ShowResponseP2cVgw:
     }
 
     def __init__(self, id=None, name=None, status=None, vpc_id=None, connect_subnet=None, flavor=None, availability_zone_ids=None, eip=None, max_connection_number=None, current_connection_number=None, enterprise_project_id=None, tags=None, order_id=None, admin_state_up=None, frozen_effect=None, version=None, created_at=None, updated_at=None):
-        """ShowResponseP2cVgw
+        r"""ShowResponseP2cVgw
 
         The model defined in huaweicloud sdk
 
@@ -162,7 +162,7 @@ class ShowResponseP2cVgw:
 
     @property
     def id(self):
-        """Gets the id of this ShowResponseP2cVgw.
+        r"""Gets the id of this ShowResponseP2cVgw.
 
         P2C VPN网关ID
 
@@ -173,7 +173,7 @@ class ShowResponseP2cVgw:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowResponseP2cVgw.
+        r"""Sets the id of this ShowResponseP2cVgw.
 
         P2C VPN网关ID
 
@@ -184,7 +184,7 @@ class ShowResponseP2cVgw:
 
     @property
     def name(self):
-        """Gets the name of this ShowResponseP2cVgw.
+        r"""Gets the name of this ShowResponseP2cVgw.
 
         P2C VPN网关名称
 
@@ -195,7 +195,7 @@ class ShowResponseP2cVgw:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowResponseP2cVgw.
+        r"""Sets the name of this ShowResponseP2cVgw.
 
         P2C VPN网关名称
 
@@ -206,7 +206,7 @@ class ShowResponseP2cVgw:
 
     @property
     def status(self):
-        """Gets the status of this ShowResponseP2cVgw.
+        r"""Gets the status of this ShowResponseP2cVgw.
 
         P2C VPN网关状态
 
@@ -217,7 +217,7 @@ class ShowResponseP2cVgw:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowResponseP2cVgw.
+        r"""Sets the status of this ShowResponseP2cVgw.
 
         P2C VPN网关状态
 
@@ -228,7 +228,7 @@ class ShowResponseP2cVgw:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ShowResponseP2cVgw.
+        r"""Gets the vpc_id of this ShowResponseP2cVgw.
 
         P2C VPN网关所连接的VPC的ID
 
@@ -239,7 +239,7 @@ class ShowResponseP2cVgw:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ShowResponseP2cVgw.
+        r"""Sets the vpc_id of this ShowResponseP2cVgw.
 
         P2C VPN网关所连接的VPC的ID
 
@@ -250,7 +250,7 @@ class ShowResponseP2cVgw:
 
     @property
     def connect_subnet(self):
-        """Gets the connect_subnet of this ShowResponseP2cVgw.
+        r"""Gets the connect_subnet of this ShowResponseP2cVgw.
 
         P2C VPN网关所使用的VPC子网ID
 
@@ -261,7 +261,7 @@ class ShowResponseP2cVgw:
 
     @connect_subnet.setter
     def connect_subnet(self, connect_subnet):
-        """Sets the connect_subnet of this ShowResponseP2cVgw.
+        r"""Sets the connect_subnet of this ShowResponseP2cVgw.
 
         P2C VPN网关所使用的VPC子网ID
 
@@ -272,7 +272,7 @@ class ShowResponseP2cVgw:
 
     @property
     def flavor(self):
-        """Gets the flavor of this ShowResponseP2cVgw.
+        r"""Gets the flavor of this ShowResponseP2cVgw.
 
         P2C VPN网关的规格类型
 
@@ -283,7 +283,7 @@ class ShowResponseP2cVgw:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this ShowResponseP2cVgw.
+        r"""Sets the flavor of this ShowResponseP2cVgw.
 
         P2C VPN网关的规格类型
 
@@ -294,7 +294,7 @@ class ShowResponseP2cVgw:
 
     @property
     def availability_zone_ids(self):
-        """Gets the availability_zone_ids of this ShowResponseP2cVgw.
+        r"""Gets the availability_zone_ids of this ShowResponseP2cVgw.
 
         可用区列表
 
@@ -305,7 +305,7 @@ class ShowResponseP2cVgw:
 
     @availability_zone_ids.setter
     def availability_zone_ids(self, availability_zone_ids):
-        """Sets the availability_zone_ids of this ShowResponseP2cVgw.
+        r"""Sets the availability_zone_ids of this ShowResponseP2cVgw.
 
         可用区列表
 
@@ -316,7 +316,7 @@ class ShowResponseP2cVgw:
 
     @property
     def eip(self):
-        """Gets the eip of this ShowResponseP2cVgw.
+        r"""Gets the eip of this ShowResponseP2cVgw.
 
         :return: The eip of this ShowResponseP2cVgw.
         :rtype: :class:`huaweicloudsdkvpn.v5.ResponseEipInfo`
@@ -325,7 +325,7 @@ class ShowResponseP2cVgw:
 
     @eip.setter
     def eip(self, eip):
-        """Sets the eip of this ShowResponseP2cVgw.
+        r"""Sets the eip of this ShowResponseP2cVgw.
 
         :param eip: The eip of this ShowResponseP2cVgw.
         :type eip: :class:`huaweicloudsdkvpn.v5.ResponseEipInfo`
@@ -334,7 +334,7 @@ class ShowResponseP2cVgw:
 
     @property
     def max_connection_number(self):
-        """Gets the max_connection_number of this ShowResponseP2cVgw.
+        r"""Gets the max_connection_number of this ShowResponseP2cVgw.
 
         配置的最大并发客户端连接数
 
@@ -345,7 +345,7 @@ class ShowResponseP2cVgw:
 
     @max_connection_number.setter
     def max_connection_number(self, max_connection_number):
-        """Sets the max_connection_number of this ShowResponseP2cVgw.
+        r"""Sets the max_connection_number of this ShowResponseP2cVgw.
 
         配置的最大并发客户端连接数
 
@@ -356,7 +356,7 @@ class ShowResponseP2cVgw:
 
     @property
     def current_connection_number(self):
-        """Gets the current_connection_number of this ShowResponseP2cVgw.
+        r"""Gets the current_connection_number of this ShowResponseP2cVgw.
 
         当前建连的客户端连接数
 
@@ -367,7 +367,7 @@ class ShowResponseP2cVgw:
 
     @current_connection_number.setter
     def current_connection_number(self, current_connection_number):
-        """Sets the current_connection_number of this ShowResponseP2cVgw.
+        r"""Sets the current_connection_number of this ShowResponseP2cVgw.
 
         当前建连的客户端连接数
 
@@ -378,7 +378,7 @@ class ShowResponseP2cVgw:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowResponseP2cVgw.
+        r"""Gets the enterprise_project_id of this ShowResponseP2cVgw.
 
         企业项目ID
 
@@ -389,7 +389,7 @@ class ShowResponseP2cVgw:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowResponseP2cVgw.
+        r"""Sets the enterprise_project_id of this ShowResponseP2cVgw.
 
         企业项目ID
 
@@ -400,7 +400,7 @@ class ShowResponseP2cVgw:
 
     @property
     def tags(self):
-        """Gets the tags of this ShowResponseP2cVgw.
+        r"""Gets the tags of this ShowResponseP2cVgw.
 
         标签
 
@@ -411,7 +411,7 @@ class ShowResponseP2cVgw:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowResponseP2cVgw.
+        r"""Sets the tags of this ShowResponseP2cVgw.
 
         标签
 
@@ -422,7 +422,7 @@ class ShowResponseP2cVgw:
 
     @property
     def order_id(self):
-        """Gets the order_id of this ShowResponseP2cVgw.
+        r"""Gets the order_id of this ShowResponseP2cVgw.
 
         订单Id
 
@@ -433,7 +433,7 @@ class ShowResponseP2cVgw:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ShowResponseP2cVgw.
+        r"""Sets the order_id of this ShowResponseP2cVgw.
 
         订单Id
 
@@ -444,7 +444,7 @@ class ShowResponseP2cVgw:
 
     @property
     def admin_state_up(self):
-        """Gets the admin_state_up of this ShowResponseP2cVgw.
+        r"""Gets the admin_state_up of this ShowResponseP2cVgw.
 
         冻结状态
 
@@ -455,7 +455,7 @@ class ShowResponseP2cVgw:
 
     @admin_state_up.setter
     def admin_state_up(self, admin_state_up):
-        """Sets the admin_state_up of this ShowResponseP2cVgw.
+        r"""Sets the admin_state_up of this ShowResponseP2cVgw.
 
         冻结状态
 
@@ -466,7 +466,7 @@ class ShowResponseP2cVgw:
 
     @property
     def frozen_effect(self):
-        """Gets the frozen_effect of this ShowResponseP2cVgw.
+        r"""Gets the frozen_effect of this ShowResponseP2cVgw.
 
         冻结场景：0未冻结；1 冻结可删除；2冻结不可删除
 
@@ -477,7 +477,7 @@ class ShowResponseP2cVgw:
 
     @frozen_effect.setter
     def frozen_effect(self, frozen_effect):
-        """Sets the frozen_effect of this ShowResponseP2cVgw.
+        r"""Sets the frozen_effect of this ShowResponseP2cVgw.
 
         冻结场景：0未冻结；1 冻结可删除；2冻结不可删除
 
@@ -488,7 +488,7 @@ class ShowResponseP2cVgw:
 
     @property
     def version(self):
-        """Gets the version of this ShowResponseP2cVgw.
+        r"""Gets the version of this ShowResponseP2cVgw.
 
         网关版本
 
@@ -499,7 +499,7 @@ class ShowResponseP2cVgw:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowResponseP2cVgw.
+        r"""Sets the version of this ShowResponseP2cVgw.
 
         网关版本
 
@@ -510,7 +510,7 @@ class ShowResponseP2cVgw:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ShowResponseP2cVgw.
+        r"""Gets the created_at of this ShowResponseP2cVgw.
 
         创建时间
 
@@ -521,7 +521,7 @@ class ShowResponseP2cVgw:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ShowResponseP2cVgw.
+        r"""Sets the created_at of this ShowResponseP2cVgw.
 
         创建时间
 
@@ -532,7 +532,7 @@ class ShowResponseP2cVgw:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ShowResponseP2cVgw.
+        r"""Gets the updated_at of this ShowResponseP2cVgw.
 
         更新时间
 
@@ -543,7 +543,7 @@ class ShowResponseP2cVgw:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ShowResponseP2cVgw.
+        r"""Sets the updated_at of this ShowResponseP2cVgw.
 
         更新时间
 

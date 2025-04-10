@@ -28,7 +28,7 @@ class ListNextflowVersionResponse(SdkResponse):
     }
 
     def __init__(self, count=None, versions=None):
-        """ListNextflowVersionResponse
+        r"""ListNextflowVersionResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListNextflowVersionResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListNextflowVersionResponse.
+        r"""Gets the count of this ListNextflowVersionResponse.
 
         版本总数
 
@@ -62,7 +62,7 @@ class ListNextflowVersionResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListNextflowVersionResponse.
+        r"""Sets the count of this ListNextflowVersionResponse.
 
         版本总数
 
@@ -73,7 +73,7 @@ class ListNextflowVersionResponse(SdkResponse):
 
     @property
     def versions(self):
-        """Gets the versions of this ListNextflowVersionResponse.
+        r"""Gets the versions of this ListNextflowVersionResponse.
 
         版本列表
 
@@ -84,7 +84,7 @@ class ListNextflowVersionResponse(SdkResponse):
 
     @versions.setter
     def versions(self, versions):
-        """Sets the versions of this ListNextflowVersionResponse.
+        r"""Sets the versions of this ListNextflowVersionResponse.
 
         版本列表
 

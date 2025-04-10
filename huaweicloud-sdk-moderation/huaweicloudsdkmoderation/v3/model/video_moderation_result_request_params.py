@@ -33,7 +33,7 @@ class VideoModerationResultRequestParams:
     }
 
     def __init__(self, data=None, event_type=None, image_categories=None, audio_categories=None, param_callback=None):
-        """VideoModerationResultRequestParams
+        r"""VideoModerationResultRequestParams
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class VideoModerationResultRequestParams:
 
     @property
     def data(self):
-        """Gets the data of this VideoModerationResultRequestParams.
+        r"""Gets the data of this VideoModerationResultRequestParams.
 
         :return: The data of this VideoModerationResultRequestParams.
         :rtype: :class:`huaweicloudsdkmoderation.v3.VideoModerationResultRequestParamsData`
@@ -77,7 +77,7 @@ class VideoModerationResultRequestParams:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this VideoModerationResultRequestParams.
+        r"""Sets the data of this VideoModerationResultRequestParams.
 
         :param data: The data of this VideoModerationResultRequestParams.
         :type data: :class:`huaweicloudsdkmoderation.v3.VideoModerationResultRequestParamsData`
@@ -86,7 +86,7 @@ class VideoModerationResultRequestParams:
 
     @property
     def event_type(self):
-        """Gets the event_type of this VideoModerationResultRequestParams.
+        r"""Gets the event_type of this VideoModerationResultRequestParams.
 
         创建作业时传的event_type参数
 
@@ -97,7 +97,7 @@ class VideoModerationResultRequestParams:
 
     @event_type.setter
     def event_type(self, event_type):
-        """Sets the event_type of this VideoModerationResultRequestParams.
+        r"""Sets the event_type of this VideoModerationResultRequestParams.
 
         创建作业时传的event_type参数
 
@@ -108,7 +108,7 @@ class VideoModerationResultRequestParams:
 
     @property
     def image_categories(self):
-        """Gets the image_categories of this VideoModerationResultRequestParams.
+        r"""Gets the image_categories of this VideoModerationResultRequestParams.
 
         创建作业时传的image_categories参数
 
@@ -119,7 +119,7 @@ class VideoModerationResultRequestParams:
 
     @image_categories.setter
     def image_categories(self, image_categories):
-        """Sets the image_categories of this VideoModerationResultRequestParams.
+        r"""Sets the image_categories of this VideoModerationResultRequestParams.
 
         创建作业时传的image_categories参数
 
@@ -130,7 +130,7 @@ class VideoModerationResultRequestParams:
 
     @property
     def audio_categories(self):
-        """Gets the audio_categories of this VideoModerationResultRequestParams.
+        r"""Gets the audio_categories of this VideoModerationResultRequestParams.
 
         创建作业时传的audio_categories参数
 
@@ -141,7 +141,7 @@ class VideoModerationResultRequestParams:
 
     @audio_categories.setter
     def audio_categories(self, audio_categories):
-        """Sets the audio_categories of this VideoModerationResultRequestParams.
+        r"""Sets the audio_categories of this VideoModerationResultRequestParams.
 
         创建作业时传的audio_categories参数
 
@@ -152,7 +152,7 @@ class VideoModerationResultRequestParams:
 
     @property
     def param_callback(self):
-        """Gets the param_callback of this VideoModerationResultRequestParams.
+        r"""Gets the param_callback of this VideoModerationResultRequestParams.
 
         创建作业时传的callback参数
 
@@ -163,7 +163,7 @@ class VideoModerationResultRequestParams:
 
     @param_callback.setter
     def param_callback(self, param_callback):
-        """Sets the param_callback of this VideoModerationResultRequestParams.
+        r"""Sets the param_callback of this VideoModerationResultRequestParams.
 
         创建作业时传的callback参数
 

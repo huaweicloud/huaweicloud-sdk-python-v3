@@ -27,7 +27,7 @@ class Resources:
     }
 
     def __init__(self, limits=None, requests=None):
-        """Resources
+        r"""Resources
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Resources:
 
     @property
     def limits(self):
-        """Gets the limits of this Resources.
+        r"""Gets the limits of this Resources.
 
         :return: The limits of this Resources.
         :rtype: :class:`huaweicloudsdkief.v1.LimitsRequests`
@@ -59,7 +59,7 @@ class Resources:
 
     @limits.setter
     def limits(self, limits):
-        """Sets the limits of this Resources.
+        r"""Sets the limits of this Resources.
 
         :param limits: The limits of this Resources.
         :type limits: :class:`huaweicloudsdkief.v1.LimitsRequests`
@@ -68,7 +68,7 @@ class Resources:
 
     @property
     def requests(self):
-        """Gets the requests of this Resources.
+        r"""Gets the requests of this Resources.
 
         :return: The requests of this Resources.
         :rtype: :class:`huaweicloudsdkief.v1.LimitsRequests`
@@ -77,7 +77,7 @@ class Resources:
 
     @requests.setter
     def requests(self, requests):
-        """Sets the requests of this Resources.
+        r"""Sets the requests of this Resources.
 
         :param requests: The requests of this Resources.
         :type requests: :class:`huaweicloudsdkief.v1.LimitsRequests`

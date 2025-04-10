@@ -25,7 +25,7 @@ class GraphSizeTypeIndexReq:
     }
 
     def __init__(self, graph_size_type_index=None):
-        """GraphSizeTypeIndexReq
+        r"""GraphSizeTypeIndexReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class GraphSizeTypeIndexReq:
 
     @property
     def graph_size_type_index(self):
-        """Gets the graph_size_type_index of this GraphSizeTypeIndexReq.
+        r"""Gets the graph_size_type_index of this GraphSizeTypeIndexReq.
 
         图规格类型，当前支持取值为\"2\",\"3\",\"4\",\"5\"分别代表扩容成千万边、一亿边、十亿边、百亿边规格的图
 
@@ -53,7 +53,7 @@ class GraphSizeTypeIndexReq:
 
     @graph_size_type_index.setter
     def graph_size_type_index(self, graph_size_type_index):
-        """Sets the graph_size_type_index of this GraphSizeTypeIndexReq.
+        r"""Sets the graph_size_type_index of this GraphSizeTypeIndexReq.
 
         图规格类型，当前支持取值为\"2\",\"3\",\"4\",\"5\"分别代表扩容成千万边、一亿边、十亿边、百亿边规格的图
 

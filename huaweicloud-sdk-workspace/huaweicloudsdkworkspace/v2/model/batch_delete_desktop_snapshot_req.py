@@ -25,7 +25,7 @@ class BatchDeleteDesktopSnapshotReq:
     }
 
     def __init__(self, snapshot_ids=None):
-        """BatchDeleteDesktopSnapshotReq
+        r"""BatchDeleteDesktopSnapshotReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDeleteDesktopSnapshotReq:
 
     @property
     def snapshot_ids(self):
-        """Gets the snapshot_ids of this BatchDeleteDesktopSnapshotReq.
+        r"""Gets the snapshot_ids of this BatchDeleteDesktopSnapshotReq.
 
         快照id数组，最多支持100。
 
@@ -54,7 +54,7 @@ class BatchDeleteDesktopSnapshotReq:
 
     @snapshot_ids.setter
     def snapshot_ids(self, snapshot_ids):
-        """Sets the snapshot_ids of this BatchDeleteDesktopSnapshotReq.
+        r"""Sets the snapshot_ids of this BatchDeleteDesktopSnapshotReq.
 
         快照id数组，最多支持100。
 

@@ -33,7 +33,7 @@ class CreateComputingResourceReq:
     }
 
     def __init__(self, availability_zone_id=None, spec_code=None, count=None, data_disk_spec_code=None, data_disk_size=None):
-        """CreateComputingResourceReq
+        r"""CreateComputingResourceReq
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class CreateComputingResourceReq:
 
     @property
     def availability_zone_id(self):
-        """Gets the availability_zone_id of this CreateComputingResourceReq.
+        r"""Gets the availability_zone_id of this CreateComputingResourceReq.
 
         可用区
 
@@ -79,7 +79,7 @@ class CreateComputingResourceReq:
 
     @availability_zone_id.setter
     def availability_zone_id(self, availability_zone_id):
-        """Sets the availability_zone_id of this CreateComputingResourceReq.
+        r"""Sets the availability_zone_id of this CreateComputingResourceReq.
 
         可用区
 
@@ -90,7 +90,7 @@ class CreateComputingResourceReq:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this CreateComputingResourceReq.
+        r"""Gets the spec_code of this CreateComputingResourceReq.
 
         规格编码
 
@@ -101,7 +101,7 @@ class CreateComputingResourceReq:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this CreateComputingResourceReq.
+        r"""Sets the spec_code of this CreateComputingResourceReq.
 
         规格编码
 
@@ -112,7 +112,7 @@ class CreateComputingResourceReq:
 
     @property
     def count(self):
-        """Gets the count of this CreateComputingResourceReq.
+        r"""Gets the count of this CreateComputingResourceReq.
 
         购买数量
 
@@ -123,7 +123,7 @@ class CreateComputingResourceReq:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this CreateComputingResourceReq.
+        r"""Sets the count of this CreateComputingResourceReq.
 
         购买数量
 
@@ -134,7 +134,7 @@ class CreateComputingResourceReq:
 
     @property
     def data_disk_spec_code(self):
-        """Gets the data_disk_spec_code of this CreateComputingResourceReq.
+        r"""Gets the data_disk_spec_code of this CreateComputingResourceReq.
 
         额外数据盘规格编码
 
@@ -145,7 +145,7 @@ class CreateComputingResourceReq:
 
     @data_disk_spec_code.setter
     def data_disk_spec_code(self, data_disk_spec_code):
-        """Sets the data_disk_spec_code of this CreateComputingResourceReq.
+        r"""Sets the data_disk_spec_code of this CreateComputingResourceReq.
 
         额外数据盘规格编码
 
@@ -156,7 +156,7 @@ class CreateComputingResourceReq:
 
     @property
     def data_disk_size(self):
-        """Gets the data_disk_size of this CreateComputingResourceReq.
+        r"""Gets the data_disk_size of this CreateComputingResourceReq.
 
         额外数据盘大小
 
@@ -167,7 +167,7 @@ class CreateComputingResourceReq:
 
     @data_disk_size.setter
     def data_disk_size(self, data_disk_size):
-        """Sets the data_disk_size of this CreateComputingResourceReq.
+        r"""Sets the data_disk_size of this CreateComputingResourceReq.
 
         额外数据盘大小
 

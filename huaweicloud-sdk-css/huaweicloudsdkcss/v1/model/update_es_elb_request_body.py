@@ -29,7 +29,7 @@ class UpdateEsElbRequestBody:
     }
 
     def __init__(self, enable=None, agency=None, elb_id=None):
-        """UpdateEsElbRequestBody
+        r"""UpdateEsElbRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateEsElbRequestBody:
 
     @property
     def enable(self):
-        """Gets the enable of this UpdateEsElbRequestBody.
+        r"""Gets the enable of this UpdateEsElbRequestBody.
 
         打开或关闭es负载均衡器。 - true：开启。 - false：关闭。
 
@@ -67,7 +67,7 @@ class UpdateEsElbRequestBody:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this UpdateEsElbRequestBody.
+        r"""Sets the enable of this UpdateEsElbRequestBody.
 
         打开或关闭es负载均衡器。 - true：开启。 - false：关闭。
 
@@ -78,7 +78,7 @@ class UpdateEsElbRequestBody:
 
     @property
     def agency(self):
-        """Gets the agency of this UpdateEsElbRequestBody.
+        r"""Gets the agency of this UpdateEsElbRequestBody.
 
         委托名称。
 
@@ -89,7 +89,7 @@ class UpdateEsElbRequestBody:
 
     @agency.setter
     def agency(self, agency):
-        """Sets the agency of this UpdateEsElbRequestBody.
+        r"""Sets the agency of this UpdateEsElbRequestBody.
 
         委托名称。
 
@@ -100,7 +100,7 @@ class UpdateEsElbRequestBody:
 
     @property
     def elb_id(self):
-        """Gets the elb_id of this UpdateEsElbRequestBody.
+        r"""Gets the elb_id of this UpdateEsElbRequestBody.
 
         负载均衡器id。
 
@@ -111,7 +111,7 @@ class UpdateEsElbRequestBody:
 
     @elb_id.setter
     def elb_id(self, elb_id):
-        """Sets the elb_id of this UpdateEsElbRequestBody.
+        r"""Sets the elb_id of this UpdateEsElbRequestBody.
 
         负载均衡器id。
 

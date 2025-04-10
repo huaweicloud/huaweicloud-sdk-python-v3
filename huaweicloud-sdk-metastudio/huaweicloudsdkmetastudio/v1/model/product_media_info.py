@@ -29,7 +29,7 @@ class ProductMediaInfo:
     }
 
     def __init__(self, asset_id=None, asset_type=None, order=None):
-        """ProductMediaInfo
+        r"""ProductMediaInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ProductMediaInfo:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this ProductMediaInfo.
+        r"""Gets the asset_id of this ProductMediaInfo.
 
         资产ID
 
@@ -68,7 +68,7 @@ class ProductMediaInfo:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this ProductMediaInfo.
+        r"""Sets the asset_id of this ProductMediaInfo.
 
         资产ID
 
@@ -79,7 +79,7 @@ class ProductMediaInfo:
 
     @property
     def asset_type(self):
-        """Gets the asset_type of this ProductMediaInfo.
+        r"""Gets the asset_type of this ProductMediaInfo.
 
         资产类型 * IMAGE：图片 * VIDEO：视频 * AUDIO：音频
 
@@ -90,7 +90,7 @@ class ProductMediaInfo:
 
     @asset_type.setter
     def asset_type(self, asset_type):
-        """Sets the asset_type of this ProductMediaInfo.
+        r"""Sets the asset_type of this ProductMediaInfo.
 
         资产类型 * IMAGE：图片 * VIDEO：视频 * AUDIO：音频
 
@@ -101,7 +101,7 @@ class ProductMediaInfo:
 
     @property
     def order(self):
-        """Gets the order of this ProductMediaInfo.
+        r"""Gets the order of this ProductMediaInfo.
 
         **参数解释**： 资产次序。不设置或者0表示按照加入时间先后排序。业务上将次序最靠前的图片设置为商品封面。
 
@@ -112,7 +112,7 @@ class ProductMediaInfo:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this ProductMediaInfo.
+        r"""Sets the order of this ProductMediaInfo.
 
         **参数解释**： 资产次序。不设置或者0表示按照加入时间先后排序。业务上将次序最靠前的图片设置为商品封面。
 

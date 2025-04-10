@@ -29,7 +29,7 @@ class UpdateProductTemplateRequest:
     }
 
     def __init__(self, instance_id=None, product_template_id=None, body=None):
-        """UpdateProductTemplateRequest
+        r"""UpdateProductTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateProductTemplateRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateProductTemplateRequest.
+        r"""Gets the instance_id of this UpdateProductTemplateRequest.
 
         实例ID
 
@@ -66,7 +66,7 @@ class UpdateProductTemplateRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateProductTemplateRequest.
+        r"""Sets the instance_id of this UpdateProductTemplateRequest.
 
         实例ID
 
@@ -77,7 +77,7 @@ class UpdateProductTemplateRequest:
 
     @property
     def product_template_id(self):
-        """Gets the product_template_id of this UpdateProductTemplateRequest.
+        r"""Gets the product_template_id of this UpdateProductTemplateRequest.
 
         产品模板ID
 
@@ -88,7 +88,7 @@ class UpdateProductTemplateRequest:
 
     @product_template_id.setter
     def product_template_id(self, product_template_id):
-        """Sets the product_template_id of this UpdateProductTemplateRequest.
+        r"""Sets the product_template_id of this UpdateProductTemplateRequest.
 
         产品模板ID
 
@@ -99,7 +99,7 @@ class UpdateProductTemplateRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateProductTemplateRequest.
+        r"""Gets the body of this UpdateProductTemplateRequest.
 
         :return: The body of this UpdateProductTemplateRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateProductTemplateRequestBody`
@@ -108,7 +108,7 @@ class UpdateProductTemplateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateProductTemplateRequest.
+        r"""Sets the body of this UpdateProductTemplateRequest.
 
         :param body: The body of this UpdateProductTemplateRequest.
         :type body: :class:`huaweicloudsdkroma.v2.UpdateProductTemplateRequestBody`

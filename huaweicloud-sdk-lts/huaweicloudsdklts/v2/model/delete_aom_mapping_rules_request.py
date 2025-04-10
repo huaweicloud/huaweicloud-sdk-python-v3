@@ -25,7 +25,7 @@ class DeleteAomMappingRulesRequest:
     }
 
     def __init__(self, id=None):
-        """DeleteAomMappingRulesRequest
+        r"""DeleteAomMappingRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteAomMappingRulesRequest:
 
     @property
     def id(self):
-        """Gets the id of this DeleteAomMappingRulesRequest.
+        r"""Gets the id of this DeleteAomMappingRulesRequest.
 
         接入lts规则id
 
@@ -53,7 +53,7 @@ class DeleteAomMappingRulesRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteAomMappingRulesRequest.
+        r"""Sets the id of this DeleteAomMappingRulesRequest.
 
         接入lts规则id
 

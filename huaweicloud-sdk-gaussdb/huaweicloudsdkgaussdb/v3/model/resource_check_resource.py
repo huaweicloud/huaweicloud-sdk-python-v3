@@ -43,7 +43,7 @@ class ResourceCheckResource:
     }
 
     def __init__(self, enterprise_project_id=None, instance_num=None, mode=None, availability_zone_mode=None, fe_node_num=None, be_node_num=None, fe_flavor_ref=None, be_flavor_ref=None, availability_zone=None, subnet_id=None):
-        """ResourceCheckResource
+        r"""ResourceCheckResource
 
         The model defined in huaweicloud sdk
 
@@ -97,7 +97,7 @@ class ResourceCheckResource:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ResourceCheckResource.
+        r"""Gets the enterprise_project_id of this ResourceCheckResource.
 
         企业项目ID。
 
@@ -108,7 +108,7 @@ class ResourceCheckResource:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ResourceCheckResource.
+        r"""Sets the enterprise_project_id of this ResourceCheckResource.
 
         企业项目ID。
 
@@ -119,7 +119,7 @@ class ResourceCheckResource:
 
     @property
     def instance_num(self):
-        """Gets the instance_num of this ResourceCheckResource.
+        r"""Gets the instance_num of this ResourceCheckResource.
 
         实例数量。
 
@@ -130,7 +130,7 @@ class ResourceCheckResource:
 
     @instance_num.setter
     def instance_num(self, instance_num):
-        """Sets the instance_num of this ResourceCheckResource.
+        r"""Sets the instance_num of this ResourceCheckResource.
 
         实例数量。
 
@@ -141,7 +141,7 @@ class ResourceCheckResource:
 
     @property
     def mode(self):
-        """Gets the mode of this ResourceCheckResource.
+        r"""Gets the mode of this ResourceCheckResource.
 
         实例部署模式。
 
@@ -152,7 +152,7 @@ class ResourceCheckResource:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this ResourceCheckResource.
+        r"""Sets the mode of this ResourceCheckResource.
 
         实例部署模式。
 
@@ -163,7 +163,7 @@ class ResourceCheckResource:
 
     @property
     def availability_zone_mode(self):
-        """Gets the availability_zone_mode of this ResourceCheckResource.
+        r"""Gets the availability_zone_mode of this ResourceCheckResource.
 
         可用区类型，目前仅支持single。
 
@@ -174,7 +174,7 @@ class ResourceCheckResource:
 
     @availability_zone_mode.setter
     def availability_zone_mode(self, availability_zone_mode):
-        """Sets the availability_zone_mode of this ResourceCheckResource.
+        r"""Sets the availability_zone_mode of this ResourceCheckResource.
 
         可用区类型，目前仅支持single。
 
@@ -185,7 +185,7 @@ class ResourceCheckResource:
 
     @property
     def fe_node_num(self):
-        """Gets the fe_node_num of this ResourceCheckResource.
+        r"""Gets the fe_node_num of this ResourceCheckResource.
 
         FE节点数量。
 
@@ -196,7 +196,7 @@ class ResourceCheckResource:
 
     @fe_node_num.setter
     def fe_node_num(self, fe_node_num):
-        """Sets the fe_node_num of this ResourceCheckResource.
+        r"""Sets the fe_node_num of this ResourceCheckResource.
 
         FE节点数量。
 
@@ -207,7 +207,7 @@ class ResourceCheckResource:
 
     @property
     def be_node_num(self):
-        """Gets the be_node_num of this ResourceCheckResource.
+        r"""Gets the be_node_num of this ResourceCheckResource.
 
         BE节点数量。
 
@@ -218,7 +218,7 @@ class ResourceCheckResource:
 
     @be_node_num.setter
     def be_node_num(self, be_node_num):
-        """Sets the be_node_num of this ResourceCheckResource.
+        r"""Sets the be_node_num of this ResourceCheckResource.
 
         BE节点数量。
 
@@ -229,7 +229,7 @@ class ResourceCheckResource:
 
     @property
     def fe_flavor_ref(self):
-        """Gets the fe_flavor_ref of this ResourceCheckResource.
+        r"""Gets the fe_flavor_ref of this ResourceCheckResource.
 
         FE规格码。
 
@@ -240,7 +240,7 @@ class ResourceCheckResource:
 
     @fe_flavor_ref.setter
     def fe_flavor_ref(self, fe_flavor_ref):
-        """Sets the fe_flavor_ref of this ResourceCheckResource.
+        r"""Sets the fe_flavor_ref of this ResourceCheckResource.
 
         FE规格码。
 
@@ -251,7 +251,7 @@ class ResourceCheckResource:
 
     @property
     def be_flavor_ref(self):
-        """Gets the be_flavor_ref of this ResourceCheckResource.
+        r"""Gets the be_flavor_ref of this ResourceCheckResource.
 
         BE规格码。
 
@@ -262,7 +262,7 @@ class ResourceCheckResource:
 
     @be_flavor_ref.setter
     def be_flavor_ref(self, be_flavor_ref):
-        """Sets the be_flavor_ref of this ResourceCheckResource.
+        r"""Sets the be_flavor_ref of this ResourceCheckResource.
 
         BE规格码。
 
@@ -273,7 +273,7 @@ class ResourceCheckResource:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this ResourceCheckResource.
+        r"""Gets the availability_zone of this ResourceCheckResource.
 
         可用区码。选填，校验可用区码是否正确。
 
@@ -284,7 +284,7 @@ class ResourceCheckResource:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this ResourceCheckResource.
+        r"""Sets the availability_zone of this ResourceCheckResource.
 
         可用区码。选填，校验可用区码是否正确。
 
@@ -295,7 +295,7 @@ class ResourceCheckResource:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ResourceCheckResource.
+        r"""Gets the subnet_id of this ResourceCheckResource.
 
         HTAP实例子网即TaurusDB实例子网。 获取方法请参见[获取子网ID](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)。
 
@@ -306,7 +306,7 @@ class ResourceCheckResource:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ResourceCheckResource.
+        r"""Sets the subnet_id of this ResourceCheckResource.
 
         HTAP实例子网即TaurusDB实例子网。 获取方法请参见[获取子网ID](https://support.huaweicloud.com/api-vpc/vpc_subnet01_0003.html)。
 

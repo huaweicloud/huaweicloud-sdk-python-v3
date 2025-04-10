@@ -27,7 +27,7 @@ class CreateValueListRequest:
     }
 
     def __init__(self, enterprise_project_id=None, body=None):
-        """CreateValueListRequest
+        r"""CreateValueListRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateValueListRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateValueListRequest.
+        r"""Gets the enterprise_project_id of this CreateValueListRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -61,7 +61,7 @@ class CreateValueListRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateValueListRequest.
+        r"""Sets the enterprise_project_id of this CreateValueListRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -72,7 +72,7 @@ class CreateValueListRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateValueListRequest.
+        r"""Gets the body of this CreateValueListRequest.
 
         :return: The body of this CreateValueListRequest.
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateValueListRequestBody`
@@ -81,7 +81,7 @@ class CreateValueListRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateValueListRequest.
+        r"""Sets the body of this CreateValueListRequest.
 
         :param body: The body of this CreateValueListRequest.
         :type body: :class:`huaweicloudsdkwaf.v1.CreateValueListRequestBody`

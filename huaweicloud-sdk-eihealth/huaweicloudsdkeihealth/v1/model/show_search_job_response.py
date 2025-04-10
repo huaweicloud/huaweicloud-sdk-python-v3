@@ -42,7 +42,7 @@ class ShowSearchJobResponse(SdkResponse):
     }
 
     def __init__(self, basic_info=None, smiles=None, scaffold=None, top_n=None, databases=None, custom_databases=None, models=None, search_method=None, part_failed_reason=None):
-        """ShowSearchJobResponse
+        r"""ShowSearchJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class ShowSearchJobResponse(SdkResponse):
 
     @property
     def basic_info(self):
-        """Gets the basic_info of this ShowSearchJobResponse.
+        r"""Gets the basic_info of this ShowSearchJobResponse.
 
         :return: The basic_info of this ShowSearchJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DrugJobDto`
@@ -109,7 +109,7 @@ class ShowSearchJobResponse(SdkResponse):
 
     @basic_info.setter
     def basic_info(self, basic_info):
-        """Sets the basic_info of this ShowSearchJobResponse.
+        r"""Sets the basic_info of this ShowSearchJobResponse.
 
         :param basic_info: The basic_info of this ShowSearchJobResponse.
         :type basic_info: :class:`huaweicloudsdkeihealth.v1.DrugJobDto`
@@ -118,7 +118,7 @@ class ShowSearchJobResponse(SdkResponse):
 
     @property
     def smiles(self):
-        """Gets the smiles of this ShowSearchJobResponse.
+        r"""Gets the smiles of this ShowSearchJobResponse.
 
         分子SMILES表达式
 
@@ -129,7 +129,7 @@ class ShowSearchJobResponse(SdkResponse):
 
     @smiles.setter
     def smiles(self, smiles):
-        """Sets the smiles of this ShowSearchJobResponse.
+        r"""Sets the smiles of this ShowSearchJobResponse.
 
         分子SMILES表达式
 
@@ -140,7 +140,7 @@ class ShowSearchJobResponse(SdkResponse):
 
     @property
     def scaffold(self):
-        """Gets the scaffold of this ShowSearchJobResponse.
+        r"""Gets the scaffold of this ShowSearchJobResponse.
 
         分子骨架表达式
 
@@ -151,7 +151,7 @@ class ShowSearchJobResponse(SdkResponse):
 
     @scaffold.setter
     def scaffold(self, scaffold):
-        """Sets the scaffold of this ShowSearchJobResponse.
+        r"""Sets the scaffold of this ShowSearchJobResponse.
 
         分子骨架表达式
 
@@ -162,7 +162,7 @@ class ShowSearchJobResponse(SdkResponse):
 
     @property
     def top_n(self):
-        """Gets the top_n of this ShowSearchJobResponse.
+        r"""Gets the top_n of this ShowSearchJobResponse.
 
         生成分子数量
 
@@ -173,7 +173,7 @@ class ShowSearchJobResponse(SdkResponse):
 
     @top_n.setter
     def top_n(self, top_n):
-        """Sets the top_n of this ShowSearchJobResponse.
+        r"""Sets the top_n of this ShowSearchJobResponse.
 
         生成分子数量
 
@@ -184,7 +184,7 @@ class ShowSearchJobResponse(SdkResponse):
 
     @property
     def databases(self):
-        """Gets the databases of this ShowSearchJobResponse.
+        r"""Gets the databases of this ShowSearchJobResponse.
 
         可供搜索分子的公共数据库名称列表
 
@@ -195,7 +195,7 @@ class ShowSearchJobResponse(SdkResponse):
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this ShowSearchJobResponse.
+        r"""Sets the databases of this ShowSearchJobResponse.
 
         可供搜索分子的公共数据库名称列表
 
@@ -206,7 +206,7 @@ class ShowSearchJobResponse(SdkResponse):
 
     @property
     def custom_databases(self):
-        """Gets the custom_databases of this ShowSearchJobResponse.
+        r"""Gets the custom_databases of this ShowSearchJobResponse.
 
         可供搜索分子的自定义数据库名称列表
 
@@ -217,7 +217,7 @@ class ShowSearchJobResponse(SdkResponse):
 
     @custom_databases.setter
     def custom_databases(self, custom_databases):
-        """Sets the custom_databases of this ShowSearchJobResponse.
+        r"""Sets the custom_databases of this ShowSearchJobResponse.
 
         可供搜索分子的自定义数据库名称列表
 
@@ -228,7 +228,7 @@ class ShowSearchJobResponse(SdkResponse):
 
     @property
     def models(self):
-        """Gets the models of this ShowSearchJobResponse.
+        r"""Gets the models of this ShowSearchJobResponse.
 
         模型信息
 
@@ -239,7 +239,7 @@ class ShowSearchJobResponse(SdkResponse):
 
     @models.setter
     def models(self, models):
-        """Sets the models of this ShowSearchJobResponse.
+        r"""Sets the models of this ShowSearchJobResponse.
 
         模型信息
 
@@ -250,7 +250,7 @@ class ShowSearchJobResponse(SdkResponse):
 
     @property
     def search_method(self):
-        """Gets the search_method of this ShowSearchJobResponse.
+        r"""Gets the search_method of this ShowSearchJobResponse.
 
         :return: The search_method of this ShowSearchJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.SearchType`
@@ -259,7 +259,7 @@ class ShowSearchJobResponse(SdkResponse):
 
     @search_method.setter
     def search_method(self, search_method):
-        """Sets the search_method of this ShowSearchJobResponse.
+        r"""Sets the search_method of this ShowSearchJobResponse.
 
         :param search_method: The search_method of this ShowSearchJobResponse.
         :type search_method: :class:`huaweicloudsdkeihealth.v1.SearchType`
@@ -268,7 +268,7 @@ class ShowSearchJobResponse(SdkResponse):
 
     @property
     def part_failed_reason(self):
-        """Gets the part_failed_reason of this ShowSearchJobResponse.
+        r"""Gets the part_failed_reason of this ShowSearchJobResponse.
 
         部分失败原因和数量
 
@@ -279,7 +279,7 @@ class ShowSearchJobResponse(SdkResponse):
 
     @part_failed_reason.setter
     def part_failed_reason(self, part_failed_reason):
-        """Sets the part_failed_reason of this ShowSearchJobResponse.
+        r"""Sets the part_failed_reason of this ShowSearchJobResponse.
 
         部分失败原因和数量
 

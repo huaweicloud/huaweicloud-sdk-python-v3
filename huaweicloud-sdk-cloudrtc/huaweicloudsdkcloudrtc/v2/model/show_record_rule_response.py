@@ -42,7 +42,7 @@ class ShowRecordRuleResponse(SdkResponse):
     }
 
     def __init__(self, rule_id=None, app_id=None, obs_addr=None, record_formats=None, hls_config=None, mp4_config=None, create_time=None, update_time=None, x_request_id=None):
-        """ShowRecordRuleResponse
+        r"""ShowRecordRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class ShowRecordRuleResponse(SdkResponse):
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this ShowRecordRuleResponse.
+        r"""Gets the rule_id of this ShowRecordRuleResponse.
 
         规则id，由服务端返回。创建或修改规则的时候不携带
 
@@ -111,7 +111,7 @@ class ShowRecordRuleResponse(SdkResponse):
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this ShowRecordRuleResponse.
+        r"""Sets the rule_id of this ShowRecordRuleResponse.
 
         规则id，由服务端返回。创建或修改规则的时候不携带
 
@@ -122,7 +122,7 @@ class ShowRecordRuleResponse(SdkResponse):
 
     @property
     def app_id(self):
-        """Gets the app_id of this ShowRecordRuleResponse.
+        r"""Gets the app_id of this ShowRecordRuleResponse.
 
         应用id
 
@@ -133,7 +133,7 @@ class ShowRecordRuleResponse(SdkResponse):
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this ShowRecordRuleResponse.
+        r"""Sets the app_id of this ShowRecordRuleResponse.
 
         应用id
 
@@ -144,7 +144,7 @@ class ShowRecordRuleResponse(SdkResponse):
 
     @property
     def obs_addr(self):
-        """Gets the obs_addr of this ShowRecordRuleResponse.
+        r"""Gets the obs_addr of this ShowRecordRuleResponse.
 
         :return: The obs_addr of this ShowRecordRuleResponse.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.RecordObsFileAddr`
@@ -153,7 +153,7 @@ class ShowRecordRuleResponse(SdkResponse):
 
     @obs_addr.setter
     def obs_addr(self, obs_addr):
-        """Sets the obs_addr of this ShowRecordRuleResponse.
+        r"""Sets the obs_addr of this ShowRecordRuleResponse.
 
         :param obs_addr: The obs_addr of this ShowRecordRuleResponse.
         :type obs_addr: :class:`huaweicloudsdkcloudrtc.v2.RecordObsFileAddr`
@@ -162,7 +162,7 @@ class ShowRecordRuleResponse(SdkResponse):
 
     @property
     def record_formats(self):
-        """Gets the record_formats of this ShowRecordRuleResponse.
+        r"""Gets the record_formats of this ShowRecordRuleResponse.
 
         录制格式：HLS格式或者MP4格式
 
@@ -173,7 +173,7 @@ class ShowRecordRuleResponse(SdkResponse):
 
     @record_formats.setter
     def record_formats(self, record_formats):
-        """Sets the record_formats of this ShowRecordRuleResponse.
+        r"""Sets the record_formats of this ShowRecordRuleResponse.
 
         录制格式：HLS格式或者MP4格式
 
@@ -184,7 +184,7 @@ class ShowRecordRuleResponse(SdkResponse):
 
     @property
     def hls_config(self):
-        """Gets the hls_config of this ShowRecordRuleResponse.
+        r"""Gets the hls_config of this ShowRecordRuleResponse.
 
         :return: The hls_config of this ShowRecordRuleResponse.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.HLSRecordConfig`
@@ -193,7 +193,7 @@ class ShowRecordRuleResponse(SdkResponse):
 
     @hls_config.setter
     def hls_config(self, hls_config):
-        """Sets the hls_config of this ShowRecordRuleResponse.
+        r"""Sets the hls_config of this ShowRecordRuleResponse.
 
         :param hls_config: The hls_config of this ShowRecordRuleResponse.
         :type hls_config: :class:`huaweicloudsdkcloudrtc.v2.HLSRecordConfig`
@@ -202,7 +202,7 @@ class ShowRecordRuleResponse(SdkResponse):
 
     @property
     def mp4_config(self):
-        """Gets the mp4_config of this ShowRecordRuleResponse.
+        r"""Gets the mp4_config of this ShowRecordRuleResponse.
 
         :return: The mp4_config of this ShowRecordRuleResponse.
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.MP4RecordConfig`
@@ -211,7 +211,7 @@ class ShowRecordRuleResponse(SdkResponse):
 
     @mp4_config.setter
     def mp4_config(self, mp4_config):
-        """Sets the mp4_config of this ShowRecordRuleResponse.
+        r"""Sets the mp4_config of this ShowRecordRuleResponse.
 
         :param mp4_config: The mp4_config of this ShowRecordRuleResponse.
         :type mp4_config: :class:`huaweicloudsdkcloudrtc.v2.MP4RecordConfig`
@@ -220,7 +220,7 @@ class ShowRecordRuleResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowRecordRuleResponse.
+        r"""Gets the create_time of this ShowRecordRuleResponse.
 
         创建时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
@@ -231,7 +231,7 @@ class ShowRecordRuleResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowRecordRuleResponse.
+        r"""Sets the create_time of this ShowRecordRuleResponse.
 
         创建时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
@@ -242,7 +242,7 @@ class ShowRecordRuleResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowRecordRuleResponse.
+        r"""Gets the update_time of this ShowRecordRuleResponse.
 
         更新时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
@@ -253,7 +253,7 @@ class ShowRecordRuleResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowRecordRuleResponse.
+        r"""Sets the update_time of this ShowRecordRuleResponse.
 
         更新时间，形如“2006-01-02T15:04:05.075Z”，时区为：UTC
 
@@ -264,7 +264,7 @@ class ShowRecordRuleResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowRecordRuleResponse.
+        r"""Gets the x_request_id of this ShowRecordRuleResponse.
 
         :return: The x_request_id of this ShowRecordRuleResponse.
         :rtype: str
@@ -273,7 +273,7 @@ class ShowRecordRuleResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowRecordRuleResponse.
+        r"""Sets the x_request_id of this ShowRecordRuleResponse.
 
         :param x_request_id: The x_request_id of this ShowRecordRuleResponse.
         :type x_request_id: str

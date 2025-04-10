@@ -31,7 +31,7 @@ class CreateBussinessScene:
     }
 
     def __init__(self, name=None, status=None, selector=None, spec=None):
-        """CreateBussinessScene
+        r"""CreateBussinessScene
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class CreateBussinessScene:
 
     @property
     def name(self):
-        """Gets the name of this CreateBussinessScene.
+        r"""Gets the name of this CreateBussinessScene.
 
         流量名称
 
@@ -75,7 +75,7 @@ class CreateBussinessScene:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateBussinessScene.
+        r"""Sets the name of this CreateBussinessScene.
 
         流量名称
 
@@ -86,7 +86,7 @@ class CreateBussinessScene:
 
     @property
     def status(self):
-        """Gets the status of this CreateBussinessScene.
+        r"""Gets the status of this CreateBussinessScene.
 
         启用状态，支持enabled和disabled
 
@@ -97,7 +97,7 @@ class CreateBussinessScene:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateBussinessScene.
+        r"""Sets the status of this CreateBussinessScene.
 
         启用状态，支持enabled和disabled
 
@@ -108,7 +108,7 @@ class CreateBussinessScene:
 
     @property
     def selector(self):
-        """Gets the selector of this CreateBussinessScene.
+        r"""Gets the selector of this CreateBussinessScene.
 
         :return: The selector of this CreateBussinessScene.
         :rtype: :class:`huaweicloudsdkcse.v1.GovSelector`
@@ -117,7 +117,7 @@ class CreateBussinessScene:
 
     @selector.setter
     def selector(self, selector):
-        """Sets the selector of this CreateBussinessScene.
+        r"""Sets the selector of this CreateBussinessScene.
 
         :param selector: The selector of this CreateBussinessScene.
         :type selector: :class:`huaweicloudsdkcse.v1.GovSelector`
@@ -126,7 +126,7 @@ class CreateBussinessScene:
 
     @property
     def spec(self):
-        """Gets the spec of this CreateBussinessScene.
+        r"""Gets the spec of this CreateBussinessScene.
 
         :return: The spec of this CreateBussinessScene.
         :rtype: :class:`huaweicloudsdkcse.v1.CreateBussinessSceneSpec`
@@ -135,7 +135,7 @@ class CreateBussinessScene:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this CreateBussinessScene.
+        r"""Sets the spec of this CreateBussinessScene.
 
         :param spec: The spec of this CreateBussinessScene.
         :type spec: :class:`huaweicloudsdkcse.v1.CreateBussinessSceneSpec`

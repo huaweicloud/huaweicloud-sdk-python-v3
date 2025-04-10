@@ -27,7 +27,7 @@ class ObsBuckets:
     }
 
     def __init__(self, bucket_name=None, create_time=None):
-        """ObsBuckets
+        r"""ObsBuckets
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ObsBuckets:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this ObsBuckets.
+        r"""Gets the bucket_name of this ObsBuckets.
 
         桶名称。
 
@@ -59,7 +59,7 @@ class ObsBuckets:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this ObsBuckets.
+        r"""Sets the bucket_name of this ObsBuckets.
 
         桶名称。
 
@@ -70,7 +70,7 @@ class ObsBuckets:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ObsBuckets.
+        r"""Gets the create_time of this ObsBuckets.
 
         创建时间,格式为时间戳（毫秒级）。
 
@@ -81,7 +81,7 @@ class ObsBuckets:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ObsBuckets.
+        r"""Sets the create_time of this ObsBuckets.
 
         创建时间,格式为时间戳（毫秒级）。
 

@@ -73,7 +73,7 @@ class CreateJobReq:
     }
 
     def __init__(self, bind_eip=None, db_use_type=None, name=None, description=None, engine_type=None, is_target_readonly=None, job_direction=None, multi_write=None, net_type=None, node_num=None, node_type=None, source_endpoint=None, target_endpoint=None, tags=None, task_type=None, customize_sutnet_id=None, product_id=None, sys_tags=None, expired_days=None, master_az=None, slave_az=None, charging_mode=None, period_order=None, public_ip_list=None, is_open_fast_clean=None):
-        """CreateJobReq
+        r"""CreateJobReq
 
         The model defined in huaweicloud sdk
 
@@ -201,7 +201,7 @@ class CreateJobReq:
 
     @property
     def bind_eip(self):
-        """Gets the bind_eip of this CreateJobReq.
+        r"""Gets the bind_eip of this CreateJobReq.
 
         是否绑定eip，网络类型为eip时必填且为true
 
@@ -212,7 +212,7 @@ class CreateJobReq:
 
     @bind_eip.setter
     def bind_eip(self, bind_eip):
-        """Sets the bind_eip of this CreateJobReq.
+        r"""Sets the bind_eip of this CreateJobReq.
 
         是否绑定eip，网络类型为eip时必填且为true
 
@@ -223,7 +223,7 @@ class CreateJobReq:
 
     @property
     def db_use_type(self):
-        """Gets the db_use_type of this CreateJobReq.
+        r"""Gets the db_use_type of this CreateJobReq.
 
         迁移场景，migration-实时迁移,sync-实时同步,cloudDataGuard-实时灾备
 
@@ -234,7 +234,7 @@ class CreateJobReq:
 
     @db_use_type.setter
     def db_use_type(self, db_use_type):
-        """Sets the db_use_type of this CreateJobReq.
+        r"""Sets the db_use_type of this CreateJobReq.
 
         迁移场景，migration-实时迁移,sync-实时同步,cloudDataGuard-实时灾备
 
@@ -245,7 +245,7 @@ class CreateJobReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateJobReq.
+        r"""Gets the name of this CreateJobReq.
 
         任务名称，约束：任务名称在4位到50位之间，不区分大小写，可以包含字母、数字、中划线或下划线，不能包括其他特殊字符。
 
@@ -256,7 +256,7 @@ class CreateJobReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateJobReq.
+        r"""Sets the name of this CreateJobReq.
 
         任务名称，约束：任务名称在4位到50位之间，不区分大小写，可以包含字母、数字、中划线或下划线，不能包括其他特殊字符。
 
@@ -267,7 +267,7 @@ class CreateJobReq:
 
     @property
     def description(self):
-        """Gets the description of this CreateJobReq.
+        r"""Gets the description of this CreateJobReq.
 
         任务描述。  **约束**：任务描述不能超过256位，且不能包含!<>&'\"\\特殊字符。
 
@@ -278,7 +278,7 @@ class CreateJobReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateJobReq.
+        r"""Sets the description of this CreateJobReq.
 
         任务描述。  **约束**：任务描述不能超过256位，且不能包含!<>&'\"\\特殊字符。
 
@@ -289,7 +289,7 @@ class CreateJobReq:
 
     @property
     def engine_type(self):
-        """Gets the engine_type of this CreateJobReq.
+        r"""Gets the engine_type of this CreateJobReq.
 
         引擎类型 - mysql：MySQL到MySQL迁移，MySQL到MySQL同步 - mongodb：MongoDB到DDS迁移 - cloudDataGuard-mysql：MySQL到MySQL灾备 - gaussdbv5：GaussDB同步 - mysql-to-kafka：MySQL到Kafka同步 - taurus-to-kafka：GaussDB(for MySQL)到Kafka同步 - gaussdbv5ha-to-kafka：GaussDB主备版到Kafka同步 - postgresql：PostgreSQL到PostgreSQL同步
 
@@ -300,7 +300,7 @@ class CreateJobReq:
 
     @engine_type.setter
     def engine_type(self, engine_type):
-        """Sets the engine_type of this CreateJobReq.
+        r"""Sets the engine_type of this CreateJobReq.
 
         引擎类型 - mysql：MySQL到MySQL迁移，MySQL到MySQL同步 - mongodb：MongoDB到DDS迁移 - cloudDataGuard-mysql：MySQL到MySQL灾备 - gaussdbv5：GaussDB同步 - mysql-to-kafka：MySQL到Kafka同步 - taurus-to-kafka：GaussDB(for MySQL)到Kafka同步 - gaussdbv5ha-to-kafka：GaussDB主备版到Kafka同步 - postgresql：PostgreSQL到PostgreSQL同步
 
@@ -311,7 +311,7 @@ class CreateJobReq:
 
     @property
     def is_target_readonly(self):
-        """Gets the is_target_readonly of this CreateJobReq.
+        r"""Gets the is_target_readonly of this CreateJobReq.
 
         指定目标实例是否限制为只读，MySQL迁移和灾备，且job_direction为up时设置有效。（灾备场景下，单主灾备且本云为备为必填且为true，不填默认设置为true）。
 
@@ -322,7 +322,7 @@ class CreateJobReq:
 
     @is_target_readonly.setter
     def is_target_readonly(self, is_target_readonly):
-        """Sets the is_target_readonly of this CreateJobReq.
+        r"""Sets the is_target_readonly of this CreateJobReq.
 
         指定目标实例是否限制为只读，MySQL迁移和灾备，且job_direction为up时设置有效。（灾备场景下，单主灾备且本云为备为必填且为true，不填默认设置为true）。
 
@@ -333,7 +333,7 @@ class CreateJobReq:
 
     @property
     def job_direction(self):
-        """Gets the job_direction of this CreateJobReq.
+        r"""Gets the job_direction of this CreateJobReq.
 
         迁移方向，up ：入云 ，灾备场景时对应本云为备，down：出云，灾备场景时对应本云为主，non-dbs：自建
 
@@ -344,7 +344,7 @@ class CreateJobReq:
 
     @job_direction.setter
     def job_direction(self, job_direction):
-        """Sets the job_direction of this CreateJobReq.
+        r"""Sets the job_direction of this CreateJobReq.
 
         迁移方向，up ：入云 ，灾备场景时对应本云为备，down：出云，灾备场景时对应本云为主，non-dbs：自建
 
@@ -355,7 +355,7 @@ class CreateJobReq:
 
     @property
     def multi_write(self):
-        """Gets the multi_write of this CreateJobReq.
+        r"""Gets the multi_write of this CreateJobReq.
 
         - db_use_type 是cloudDataGuard时，必填，灾备类型是双主灾备时 muti_write取值true, 否则为false。 - db_use_type 是其他类型时，muti_write是非必选参数
 
@@ -366,7 +366,7 @@ class CreateJobReq:
 
     @multi_write.setter
     def multi_write(self, multi_write):
-        """Sets the multi_write of this CreateJobReq.
+        r"""Sets the multi_write of this CreateJobReq.
 
         - db_use_type 是cloudDataGuard时，必填，灾备类型是双主灾备时 muti_write取值true, 否则为false。 - db_use_type 是其他类型时，muti_write是非必选参数
 
@@ -377,7 +377,7 @@ class CreateJobReq:
 
     @property
     def net_type(self):
-        """Gets the net_type of this CreateJobReq.
+        r"""Gets the net_type of this CreateJobReq.
 
         网络类型
 
@@ -388,7 +388,7 @@ class CreateJobReq:
 
     @net_type.setter
     def net_type(self, net_type):
-        """Sets the net_type of this CreateJobReq.
+        r"""Sets the net_type of this CreateJobReq.
 
         网络类型
 
@@ -399,7 +399,7 @@ class CreateJobReq:
 
     @property
     def node_num(self):
-        """Gets the node_num of this CreateJobReq.
+        r"""Gets the node_num of this CreateJobReq.
 
         节点个数。MongoDB数据库时对应源端分片个数，源库为集群时必填，[1-32]，MySQL双主灾备时会默认设置为2。
 
@@ -410,7 +410,7 @@ class CreateJobReq:
 
     @node_num.setter
     def node_num(self, node_num):
-        """Sets the node_num of this CreateJobReq.
+        r"""Sets the node_num of this CreateJobReq.
 
         节点个数。MongoDB数据库时对应源端分片个数，源库为集群时必填，[1-32]，MySQL双主灾备时会默认设置为2。
 
@@ -421,7 +421,7 @@ class CreateJobReq:
 
     @property
     def node_type(self):
-        """Gets the node_type of this CreateJobReq.
+        r"""Gets the node_type of this CreateJobReq.
 
         规格类型。取值： - micro：极小规格。 - small：小规格。 - medium：中规格。 - high：大规格。 - xlarge：超大规格。 - 2xlarge：极大规格。 具体某种场景支持的取值可以通过[查询可用的Node规格接口](https://support.huaweicloud.com/api-drs/drs_03_0239.html)获取。
 
@@ -432,7 +432,7 @@ class CreateJobReq:
 
     @node_type.setter
     def node_type(self, node_type):
-        """Sets the node_type of this CreateJobReq.
+        r"""Sets the node_type of this CreateJobReq.
 
         规格类型。取值： - micro：极小规格。 - small：小规格。 - medium：中规格。 - high：大规格。 - xlarge：超大规格。 - 2xlarge：极大规格。 具体某种场景支持的取值可以通过[查询可用的Node规格接口](https://support.huaweicloud.com/api-drs/drs_03_0239.html)获取。
 
@@ -443,7 +443,7 @@ class CreateJobReq:
 
     @property
     def source_endpoint(self):
-        """Gets the source_endpoint of this CreateJobReq.
+        r"""Gets the source_endpoint of this CreateJobReq.
 
         :return: The source_endpoint of this CreateJobReq.
         :rtype: :class:`huaweicloudsdkdrs.v3.Endpoint`
@@ -452,7 +452,7 @@ class CreateJobReq:
 
     @source_endpoint.setter
     def source_endpoint(self, source_endpoint):
-        """Sets the source_endpoint of this CreateJobReq.
+        r"""Sets the source_endpoint of this CreateJobReq.
 
         :param source_endpoint: The source_endpoint of this CreateJobReq.
         :type source_endpoint: :class:`huaweicloudsdkdrs.v3.Endpoint`
@@ -461,7 +461,7 @@ class CreateJobReq:
 
     @property
     def target_endpoint(self):
-        """Gets the target_endpoint of this CreateJobReq.
+        r"""Gets the target_endpoint of this CreateJobReq.
 
         :return: The target_endpoint of this CreateJobReq.
         :rtype: :class:`huaweicloudsdkdrs.v3.Endpoint`
@@ -470,7 +470,7 @@ class CreateJobReq:
 
     @target_endpoint.setter
     def target_endpoint(self, target_endpoint):
-        """Sets the target_endpoint of this CreateJobReq.
+        r"""Sets the target_endpoint of this CreateJobReq.
 
         :param target_endpoint: The target_endpoint of this CreateJobReq.
         :type target_endpoint: :class:`huaweicloudsdkdrs.v3.Endpoint`
@@ -479,7 +479,7 @@ class CreateJobReq:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateJobReq.
+        r"""Gets the tags of this CreateJobReq.
 
         标签信息。
 
@@ -490,7 +490,7 @@ class CreateJobReq:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateJobReq.
+        r"""Sets the tags of this CreateJobReq.
 
         标签信息。
 
@@ -501,7 +501,7 @@ class CreateJobReq:
 
     @property
     def task_type(self):
-        """Gets the task_type of this CreateJobReq.
+        r"""Gets the task_type of this CreateJobReq.
 
         迁移模式，FULL_TRANS 全量,FULL_INCR_TRANS 全量+增量,INCR_TRANS 增量，灾备场景单主灾备仅支持全量加增量（FULL_INCR_TRANS）
 
@@ -512,7 +512,7 @@ class CreateJobReq:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this CreateJobReq.
+        r"""Sets the task_type of this CreateJobReq.
 
         迁移模式，FULL_TRANS 全量,FULL_INCR_TRANS 全量+增量,INCR_TRANS 增量，灾备场景单主灾备仅支持全量加增量（FULL_INCR_TRANS）
 
@@ -523,7 +523,7 @@ class CreateJobReq:
 
     @property
     def customize_sutnet_id(self):
-        """Gets the customize_sutnet_id of this CreateJobReq.
+        r"""Gets the customize_sutnet_id of this CreateJobReq.
 
         DRS实例所在子网ID，对应目标库相同VPC下已创建的子网（subnet）的网络ID，UUID格式。
 
@@ -534,7 +534,7 @@ class CreateJobReq:
 
     @customize_sutnet_id.setter
     def customize_sutnet_id(self, customize_sutnet_id):
-        """Sets the customize_sutnet_id of this CreateJobReq.
+        r"""Sets the customize_sutnet_id of this CreateJobReq.
 
         DRS实例所在子网ID，对应目标库相同VPC下已创建的子网（subnet）的网络ID，UUID格式。
 
@@ -545,7 +545,7 @@ class CreateJobReq:
 
     @property
     def product_id(self):
-        """Gets the product_id of this CreateJobReq.
+        r"""Gets the product_id of this CreateJobReq.
 
         产品id。
 
@@ -556,7 +556,7 @@ class CreateJobReq:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this CreateJobReq.
+        r"""Sets the product_id of this CreateJobReq.
 
         产品id。
 
@@ -567,7 +567,7 @@ class CreateJobReq:
 
     @property
     def sys_tags(self):
-        """Gets the sys_tags of this CreateJobReq.
+        r"""Gets the sys_tags of this CreateJobReq.
 
         企业项目，不填默认为default，key值必须为_sys_enterprise_project_id，value为企业项目ID，只能填一个企业项目。
 
@@ -578,7 +578,7 @@ class CreateJobReq:
 
     @sys_tags.setter
     def sys_tags(self, sys_tags):
-        """Sets the sys_tags of this CreateJobReq.
+        r"""Sets the sys_tags of this CreateJobReq.
 
         企业项目，不填默认为default，key值必须为_sys_enterprise_project_id，value为企业项目ID，只能填一个企业项目。
 
@@ -589,7 +589,7 @@ class CreateJobReq:
 
     @property
     def expired_days(self):
-        """Gets the expired_days of this CreateJobReq.
+        r"""Gets the expired_days of this CreateJobReq.
 
         任务处于异常状态一段时间后，将会自动结束，单位为天。(范围14-100)，不传默认为14天。
 
@@ -600,7 +600,7 @@ class CreateJobReq:
 
     @expired_days.setter
     def expired_days(self, expired_days):
-        """Sets the expired_days of this CreateJobReq.
+        r"""Sets the expired_days of this CreateJobReq.
 
         任务处于异常状态一段时间后，将会自动结束，单位为天。(范围14-100)，不传默认为14天。
 
@@ -611,7 +611,7 @@ class CreateJobReq:
 
     @property
     def master_az(self):
-        """Gets the master_az of this CreateJobReq.
+        r"""Gets the master_az of this CreateJobReq.
 
         主备任务主任务所在可用区code，可以通过查询规格未售罄的可用区接口获取 - master_az和slave_az同时填写时生效 - 目前支持mysql，gaussdbv5ha-to-kafka
 
@@ -622,7 +622,7 @@ class CreateJobReq:
 
     @master_az.setter
     def master_az(self, master_az):
-        """Sets the master_az of this CreateJobReq.
+        r"""Sets the master_az of this CreateJobReq.
 
         主备任务主任务所在可用区code，可以通过查询规格未售罄的可用区接口获取 - master_az和slave_az同时填写时生效 - 目前支持mysql，gaussdbv5ha-to-kafka
 
@@ -633,7 +633,7 @@ class CreateJobReq:
 
     @property
     def slave_az(self):
-        """Gets the slave_az of this CreateJobReq.
+        r"""Gets the slave_az of this CreateJobReq.
 
         主备任务备任务所在可用区code，可以通过查询规格未售罄的可用区接口获取 - master_az和slave_az同时填写时生效 - 目前支持mysql，gaussdbv5ha-to-kafka
 
@@ -644,7 +644,7 @@ class CreateJobReq:
 
     @slave_az.setter
     def slave_az(self, slave_az):
-        """Sets the slave_az of this CreateJobReq.
+        r"""Sets the slave_az of this CreateJobReq.
 
         主备任务备任务所在可用区code，可以通过查询规格未售罄的可用区接口获取 - master_az和slave_az同时填写时生效 - 目前支持mysql，gaussdbv5ha-to-kafka
 
@@ -655,7 +655,7 @@ class CreateJobReq:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this CreateJobReq.
+        r"""Gets the charging_mode of this CreateJobReq.
 
         计费模式，不填默认为按需计费。 取值范围： - period：包年包月。 - on_demand：按需计费。
 
@@ -666,7 +666,7 @@ class CreateJobReq:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this CreateJobReq.
+        r"""Sets the charging_mode of this CreateJobReq.
 
         计费模式，不填默认为按需计费。 取值范围： - period：包年包月。 - on_demand：按需计费。
 
@@ -677,7 +677,7 @@ class CreateJobReq:
 
     @property
     def period_order(self):
-        """Gets the period_order of this CreateJobReq.
+        r"""Gets the period_order of this CreateJobReq.
 
         :return: The period_order of this CreateJobReq.
         :rtype: :class:`huaweicloudsdkdrs.v3.PeriodOrderInfo`
@@ -686,7 +686,7 @@ class CreateJobReq:
 
     @period_order.setter
     def period_order(self, period_order):
-        """Sets the period_order of this CreateJobReq.
+        r"""Sets the period_order of this CreateJobReq.
 
         :param period_order: The period_order of this CreateJobReq.
         :type period_order: :class:`huaweicloudsdkdrs.v3.PeriodOrderInfo`
@@ -695,7 +695,7 @@ class CreateJobReq:
 
     @property
     def public_ip_list(self):
-        """Gets the public_ip_list of this CreateJobReq.
+        r"""Gets the public_ip_list of this CreateJobReq.
 
         指定公网IP的信息。
 
@@ -706,7 +706,7 @@ class CreateJobReq:
 
     @public_ip_list.setter
     def public_ip_list(self, public_ip_list):
-        """Sets the public_ip_list of this CreateJobReq.
+        r"""Sets the public_ip_list of this CreateJobReq.
 
         指定公网IP的信息。
 
@@ -717,7 +717,7 @@ class CreateJobReq:
 
     @property
     def is_open_fast_clean(self):
-        """Gets the is_open_fast_clean of this CreateJobReq.
+        r"""Gets the is_open_fast_clean of this CreateJobReq.
 
         是否开启云数据库RDS for MySQL/MariaDB的binlog快速清理。不传默认为false，不开启快速清理。
 
@@ -728,7 +728,7 @@ class CreateJobReq:
 
     @is_open_fast_clean.setter
     def is_open_fast_clean(self, is_open_fast_clean):
-        """Sets the is_open_fast_clean of this CreateJobReq.
+        r"""Sets the is_open_fast_clean of this CreateJobReq.
 
         是否开启云数据库RDS for MySQL/MariaDB的binlog快速清理。不传默认为false，不开启快速清理。
 

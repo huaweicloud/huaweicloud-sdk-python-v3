@@ -33,7 +33,7 @@ class AnimationAssetMeta:
     }
 
     def __init__(self, style_id=None, duration=None, auto_analysis=None, voice_delay=None, animation_insert_restriction=None):
-        """AnimationAssetMeta
+        r"""AnimationAssetMeta
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class AnimationAssetMeta:
 
     @property
     def style_id(self):
-        """Gets the style_id of this AnimationAssetMeta.
+        r"""Gets the style_id of this AnimationAssetMeta.
 
         数字人模型风格ID。
 
@@ -82,7 +82,7 @@ class AnimationAssetMeta:
 
     @style_id.setter
     def style_id(self, style_id):
-        """Sets the style_id of this AnimationAssetMeta.
+        r"""Sets the style_id of this AnimationAssetMeta.
 
         数字人模型风格ID。
 
@@ -93,7 +93,7 @@ class AnimationAssetMeta:
 
     @property
     def duration(self):
-        """Gets the duration of this AnimationAssetMeta.
+        r"""Gets the duration of this AnimationAssetMeta.
 
         动作动画时长。
 
@@ -104,7 +104,7 @@ class AnimationAssetMeta:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this AnimationAssetMeta.
+        r"""Sets the duration of this AnimationAssetMeta.
 
         动作动画时长。
 
@@ -115,7 +115,7 @@ class AnimationAssetMeta:
 
     @property
     def auto_analysis(self):
-        """Gets the auto_analysis of this AnimationAssetMeta.
+        r"""Gets the auto_analysis of this AnimationAssetMeta.
 
         动作是否需要自动解析。
 
@@ -126,7 +126,7 @@ class AnimationAssetMeta:
 
     @auto_analysis.setter
     def auto_analysis(self, auto_analysis):
-        """Sets the auto_analysis of this AnimationAssetMeta.
+        r"""Sets the auto_analysis of this AnimationAssetMeta.
 
         动作是否需要自动解析。
 
@@ -137,7 +137,7 @@ class AnimationAssetMeta:
 
     @property
     def voice_delay(self):
-        """Gets the voice_delay of this AnimationAssetMeta.
+        r"""Gets the voice_delay of this AnimationAssetMeta.
 
         语音延迟播放时长。  单位秒。  使用场景举例：入场动画3秒，voice_delay设置成4秒，则语音从入场动画开始后第4秒开始播放。
 
@@ -148,7 +148,7 @@ class AnimationAssetMeta:
 
     @voice_delay.setter
     def voice_delay(self, voice_delay):
-        """Sets the voice_delay of this AnimationAssetMeta.
+        r"""Sets the voice_delay of this AnimationAssetMeta.
 
         语音延迟播放时长。  单位秒。  使用场景举例：入场动画3秒，voice_delay设置成4秒，则语音从入场动画开始后第4秒开始播放。
 
@@ -159,7 +159,7 @@ class AnimationAssetMeta:
 
     @property
     def animation_insert_restriction(self):
-        """Gets the animation_insert_restriction of this AnimationAssetMeta.
+        r"""Gets the animation_insert_restriction of this AnimationAssetMeta.
 
         动画插入位置限制。 * ONLY_BEGINNING：视频制作时，动画只允许出现在起始位置。 * ONLY_END：视频制作时，动画只允许出现在结束位置。
 
@@ -170,7 +170,7 @@ class AnimationAssetMeta:
 
     @animation_insert_restriction.setter
     def animation_insert_restriction(self, animation_insert_restriction):
-        """Sets the animation_insert_restriction of this AnimationAssetMeta.
+        r"""Sets the animation_insert_restriction of this AnimationAssetMeta.
 
         动画插入位置限制。 * ONLY_BEGINNING：视频制作时，动画只允许出现在起始位置。 * ONLY_END：视频制作时，动画只允许出现在结束位置。
 

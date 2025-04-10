@@ -28,7 +28,7 @@ class ListExtractTaskResponse(SdkResponse):
     }
 
     def __init__(self, total=None, tasks=None):
-        """ListExtractTaskResponse
+        r"""ListExtractTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListExtractTaskResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListExtractTaskResponse.
+        r"""Gets the total of this ListExtractTaskResponse.
 
         任务总数
 
@@ -62,7 +62,7 @@ class ListExtractTaskResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListExtractTaskResponse.
+        r"""Sets the total of this ListExtractTaskResponse.
 
         任务总数
 
@@ -73,7 +73,7 @@ class ListExtractTaskResponse(SdkResponse):
 
     @property
     def tasks(self):
-        """Gets the tasks of this ListExtractTaskResponse.
+        r"""Gets the tasks of this ListExtractTaskResponse.
 
         任务列表
 
@@ -84,7 +84,7 @@ class ListExtractTaskResponse(SdkResponse):
 
     @tasks.setter
     def tasks(self, tasks):
-        """Sets the tasks of this ListExtractTaskResponse.
+        r"""Sets the tasks of this ListExtractTaskResponse.
 
         任务列表
 

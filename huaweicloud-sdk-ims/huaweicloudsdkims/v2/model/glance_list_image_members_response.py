@@ -28,7 +28,7 @@ class GlanceListImageMembersResponse(SdkResponse):
     }
 
     def __init__(self, members=None, schema=None):
-        """GlanceListImageMembersResponse
+        r"""GlanceListImageMembersResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class GlanceListImageMembersResponse(SdkResponse):
 
     @property
     def members(self):
-        """Gets the members of this GlanceListImageMembersResponse.
+        r"""Gets the members of this GlanceListImageMembersResponse.
 
         成员信息
 
@@ -62,7 +62,7 @@ class GlanceListImageMembersResponse(SdkResponse):
 
     @members.setter
     def members(self, members):
-        """Sets the members of this GlanceListImageMembersResponse.
+        r"""Sets the members of this GlanceListImageMembersResponse.
 
         成员信息
 
@@ -73,7 +73,7 @@ class GlanceListImageMembersResponse(SdkResponse):
 
     @property
     def schema(self):
-        """Gets the schema of this GlanceListImageMembersResponse.
+        r"""Gets the schema of this GlanceListImageMembersResponse.
 
         视图信息
 
@@ -84,7 +84,7 @@ class GlanceListImageMembersResponse(SdkResponse):
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this GlanceListImageMembersResponse.
+        r"""Sets the schema of this GlanceListImageMembersResponse.
 
         视图信息
 

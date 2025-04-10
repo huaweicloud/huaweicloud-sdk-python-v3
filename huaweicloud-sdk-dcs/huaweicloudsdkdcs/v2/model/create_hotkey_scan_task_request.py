@@ -25,7 +25,7 @@ class CreateHotkeyScanTaskRequest:
     }
 
     def __init__(self, instance_id=None):
-        """CreateHotkeyScanTaskRequest
+        r"""CreateHotkeyScanTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateHotkeyScanTaskRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateHotkeyScanTaskRequest.
+        r"""Gets the instance_id of this CreateHotkeyScanTaskRequest.
 
         实例ID。
 
@@ -53,7 +53,7 @@ class CreateHotkeyScanTaskRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateHotkeyScanTaskRequest.
+        r"""Sets the instance_id of this CreateHotkeyScanTaskRequest.
 
         实例ID。
 

@@ -55,7 +55,7 @@ class TransportationLicenseResult:
     }
 
     def __init__(self, owner_name=None, license_number=None, vehicle_number=None, vehicle_type=None, maximum_capacity=None, vehicle_size=None, issuing_authority=None, issue_date=None, owner_address=None, economic_type=None, business_certificate=None, business_scope=None, expiry_date=None, review_expiry_date=None, assessed_technical_level=None, confidence=None):
-        """TransportationLicenseResult
+        r"""TransportationLicenseResult
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class TransportationLicenseResult:
 
     @property
     def owner_name(self):
-        """Gets the owner_name of this TransportationLicenseResult.
+        r"""Gets the owner_name of this TransportationLicenseResult.
 
         业户名称。 
 
@@ -159,7 +159,7 @@ class TransportationLicenseResult:
 
     @owner_name.setter
     def owner_name(self, owner_name):
-        """Sets the owner_name of this TransportationLicenseResult.
+        r"""Sets the owner_name of this TransportationLicenseResult.
 
         业户名称。 
 
@@ -170,7 +170,7 @@ class TransportationLicenseResult:
 
     @property
     def license_number(self):
-        """Gets the license_number of this TransportationLicenseResult.
+        r"""Gets the license_number of this TransportationLicenseResult.
 
         道路运输证号。 
 
@@ -181,7 +181,7 @@ class TransportationLicenseResult:
 
     @license_number.setter
     def license_number(self, license_number):
-        """Sets the license_number of this TransportationLicenseResult.
+        r"""Sets the license_number of this TransportationLicenseResult.
 
         道路运输证号。 
 
@@ -192,7 +192,7 @@ class TransportationLicenseResult:
 
     @property
     def vehicle_number(self):
-        """Gets the vehicle_number of this TransportationLicenseResult.
+        r"""Gets the vehicle_number of this TransportationLicenseResult.
 
         车辆号牌。 
 
@@ -203,7 +203,7 @@ class TransportationLicenseResult:
 
     @vehicle_number.setter
     def vehicle_number(self, vehicle_number):
-        """Sets the vehicle_number of this TransportationLicenseResult.
+        r"""Sets the vehicle_number of this TransportationLicenseResult.
 
         车辆号牌。 
 
@@ -214,7 +214,7 @@ class TransportationLicenseResult:
 
     @property
     def vehicle_type(self):
-        """Gets the vehicle_type of this TransportationLicenseResult.
+        r"""Gets the vehicle_type of this TransportationLicenseResult.
 
         车辆类型。 
 
@@ -225,7 +225,7 @@ class TransportationLicenseResult:
 
     @vehicle_type.setter
     def vehicle_type(self, vehicle_type):
-        """Sets the vehicle_type of this TransportationLicenseResult.
+        r"""Sets the vehicle_type of this TransportationLicenseResult.
 
         车辆类型。 
 
@@ -236,7 +236,7 @@ class TransportationLicenseResult:
 
     @property
     def maximum_capacity(self):
-        """Gets the maximum_capacity of this TransportationLicenseResult.
+        r"""Gets the maximum_capacity of this TransportationLicenseResult.
 
         吨(座)位。 
 
@@ -247,7 +247,7 @@ class TransportationLicenseResult:
 
     @maximum_capacity.setter
     def maximum_capacity(self, maximum_capacity):
-        """Sets the maximum_capacity of this TransportationLicenseResult.
+        r"""Sets the maximum_capacity of this TransportationLicenseResult.
 
         吨(座)位。 
 
@@ -258,7 +258,7 @@ class TransportationLicenseResult:
 
     @property
     def vehicle_size(self):
-        """Gets the vehicle_size of this TransportationLicenseResult.
+        r"""Gets the vehicle_size of this TransportationLicenseResult.
 
         车辆尺寸。 
 
@@ -269,7 +269,7 @@ class TransportationLicenseResult:
 
     @vehicle_size.setter
     def vehicle_size(self, vehicle_size):
-        """Sets the vehicle_size of this TransportationLicenseResult.
+        r"""Sets the vehicle_size of this TransportationLicenseResult.
 
         车辆尺寸。 
 
@@ -280,7 +280,7 @@ class TransportationLicenseResult:
 
     @property
     def issuing_authority(self):
-        """Gets the issuing_authority of this TransportationLicenseResult.
+        r"""Gets the issuing_authority of this TransportationLicenseResult.
 
         核发机关。 
 
@@ -291,7 +291,7 @@ class TransportationLicenseResult:
 
     @issuing_authority.setter
     def issuing_authority(self, issuing_authority):
-        """Sets the issuing_authority of this TransportationLicenseResult.
+        r"""Sets the issuing_authority of this TransportationLicenseResult.
 
         核发机关。 
 
@@ -302,7 +302,7 @@ class TransportationLicenseResult:
 
     @property
     def issue_date(self):
-        """Gets the issue_date of this TransportationLicenseResult.
+        r"""Gets the issue_date of this TransportationLicenseResult.
 
         发证日期。 
 
@@ -313,7 +313,7 @@ class TransportationLicenseResult:
 
     @issue_date.setter
     def issue_date(self, issue_date):
-        """Sets the issue_date of this TransportationLicenseResult.
+        r"""Sets the issue_date of this TransportationLicenseResult.
 
         发证日期。 
 
@@ -324,7 +324,7 @@ class TransportationLicenseResult:
 
     @property
     def owner_address(self):
-        """Gets the owner_address of this TransportationLicenseResult.
+        r"""Gets the owner_address of this TransportationLicenseResult.
 
         业户地址。 
 
@@ -335,7 +335,7 @@ class TransportationLicenseResult:
 
     @owner_address.setter
     def owner_address(self, owner_address):
-        """Sets the owner_address of this TransportationLicenseResult.
+        r"""Sets the owner_address of this TransportationLicenseResult.
 
         业户地址。 
 
@@ -346,7 +346,7 @@ class TransportationLicenseResult:
 
     @property
     def economic_type(self):
-        """Gets the economic_type of this TransportationLicenseResult.
+        r"""Gets the economic_type of this TransportationLicenseResult.
 
         经济类型。 
 
@@ -357,7 +357,7 @@ class TransportationLicenseResult:
 
     @economic_type.setter
     def economic_type(self, economic_type):
-        """Sets the economic_type of this TransportationLicenseResult.
+        r"""Sets the economic_type of this TransportationLicenseResult.
 
         经济类型。 
 
@@ -368,7 +368,7 @@ class TransportationLicenseResult:
 
     @property
     def business_certificate(self):
-        """Gets the business_certificate of this TransportationLicenseResult.
+        r"""Gets the business_certificate of this TransportationLicenseResult.
 
         经营许可证号。 
 
@@ -379,7 +379,7 @@ class TransportationLicenseResult:
 
     @business_certificate.setter
     def business_certificate(self, business_certificate):
-        """Sets the business_certificate of this TransportationLicenseResult.
+        r"""Sets the business_certificate of this TransportationLicenseResult.
 
         经营许可证号。 
 
@@ -390,7 +390,7 @@ class TransportationLicenseResult:
 
     @property
     def business_scope(self):
-        """Gets the business_scope of this TransportationLicenseResult.
+        r"""Gets the business_scope of this TransportationLicenseResult.
 
         经营范围。 
 
@@ -401,7 +401,7 @@ class TransportationLicenseResult:
 
     @business_scope.setter
     def business_scope(self, business_scope):
-        """Sets the business_scope of this TransportationLicenseResult.
+        r"""Sets the business_scope of this TransportationLicenseResult.
 
         经营范围。 
 
@@ -412,7 +412,7 @@ class TransportationLicenseResult:
 
     @property
     def expiry_date(self):
-        """Gets the expiry_date of this TransportationLicenseResult.
+        r"""Gets the expiry_date of this TransportationLicenseResult.
 
         有效期。 
 
@@ -423,7 +423,7 @@ class TransportationLicenseResult:
 
     @expiry_date.setter
     def expiry_date(self, expiry_date):
-        """Sets the expiry_date of this TransportationLicenseResult.
+        r"""Sets the expiry_date of this TransportationLicenseResult.
 
         有效期。 
 
@@ -434,7 +434,7 @@ class TransportationLicenseResult:
 
     @property
     def review_expiry_date(self):
-        """Gets the review_expiry_date of this TransportationLicenseResult.
+        r"""Gets the review_expiry_date of this TransportationLicenseResult.
 
         审验有效期。 
 
@@ -445,7 +445,7 @@ class TransportationLicenseResult:
 
     @review_expiry_date.setter
     def review_expiry_date(self, review_expiry_date):
-        """Sets the review_expiry_date of this TransportationLicenseResult.
+        r"""Sets the review_expiry_date of this TransportationLicenseResult.
 
         审验有效期。 
 
@@ -456,7 +456,7 @@ class TransportationLicenseResult:
 
     @property
     def assessed_technical_level(self):
-        """Gets the assessed_technical_level of this TransportationLicenseResult.
+        r"""Gets the assessed_technical_level of this TransportationLicenseResult.
 
         技术等级评定。 
 
@@ -467,7 +467,7 @@ class TransportationLicenseResult:
 
     @assessed_technical_level.setter
     def assessed_technical_level(self, assessed_technical_level):
-        """Sets the assessed_technical_level of this TransportationLicenseResult.
+        r"""Sets the assessed_technical_level of this TransportationLicenseResult.
 
         技术等级评定。 
 
@@ -478,7 +478,7 @@ class TransportationLicenseResult:
 
     @property
     def confidence(self):
-        """Gets the confidence of this TransportationLicenseResult.
+        r"""Gets the confidence of this TransportationLicenseResult.
 
         相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。 
 
@@ -489,7 +489,7 @@ class TransportationLicenseResult:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this TransportationLicenseResult.
+        r"""Sets the confidence of this TransportationLicenseResult.
 
         相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。 
 

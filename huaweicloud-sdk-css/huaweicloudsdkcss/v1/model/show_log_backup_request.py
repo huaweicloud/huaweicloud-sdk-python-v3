@@ -27,7 +27,7 @@ class ShowLogBackupRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """ShowLogBackupRequest
+        r"""ShowLogBackupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowLogBackupRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowLogBackupRequest.
+        r"""Gets the cluster_id of this ShowLogBackupRequest.
 
         指定查询集群ID。
 
@@ -60,7 +60,7 @@ class ShowLogBackupRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowLogBackupRequest.
+        r"""Sets the cluster_id of this ShowLogBackupRequest.
 
         指定查询集群ID。
 
@@ -71,7 +71,7 @@ class ShowLogBackupRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowLogBackupRequest.
+        r"""Gets the body of this ShowLogBackupRequest.
 
         :return: The body of this ShowLogBackupRequest.
         :rtype: :class:`huaweicloudsdkcss.v1.GetLogBackupReq`
@@ -80,7 +80,7 @@ class ShowLogBackupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowLogBackupRequest.
+        r"""Sets the body of this ShowLogBackupRequest.
 
         :param body: The body of this ShowLogBackupRequest.
         :type body: :class:`huaweicloudsdkcss.v1.GetLogBackupReq`

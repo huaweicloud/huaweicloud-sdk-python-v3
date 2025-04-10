@@ -27,7 +27,7 @@ class ListKeypairsRequest:
     }
 
     def __init__(self, limit=None, marker=None):
-        """ListKeypairsRequest
+        r"""ListKeypairsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListKeypairsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListKeypairsRequest.
+        r"""Gets the limit of this ListKeypairsRequest.
 
         每页返回的个数。 默认值：50。 
 
@@ -61,7 +61,7 @@ class ListKeypairsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListKeypairsRequest.
+        r"""Sets the limit of this ListKeypairsRequest.
 
         每页返回的个数。 默认值：50。 
 
@@ -72,7 +72,7 @@ class ListKeypairsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListKeypairsRequest.
+        r"""Gets the marker of this ListKeypairsRequest.
 
         分页查询起始的资源id，为空时为查询第一页 
 
@@ -83,7 +83,7 @@ class ListKeypairsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListKeypairsRequest.
+        r"""Sets the marker of this ListKeypairsRequest.
 
         分页查询起始的资源id，为空时为查询第一页 
 

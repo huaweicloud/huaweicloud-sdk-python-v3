@@ -24,7 +24,7 @@ class EnableLtsLogsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """EnableLtsLogsResponse
+        r"""EnableLtsLogsResponse
 
         The model defined in huaweicloud sdk
 

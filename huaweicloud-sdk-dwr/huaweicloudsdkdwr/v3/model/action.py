@@ -47,7 +47,7 @@ class Action:
     }
 
     def __init__(self, action_name=None, action_agency=None, function=None, function_template=None, action_template_name=None, action_template_category=None, action_template_provider_name=None, invocation_mode=None, timeout=None, payload_filter=None, dynamic_source=None, results=None):
-        """Action
+        r"""Action
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class Action:
 
     @property
     def action_name(self):
-        """Gets the action_name of this Action.
+        r"""Gets the action_name of this Action.
 
         节点名称
 
@@ -124,7 +124,7 @@ class Action:
 
     @action_name.setter
     def action_name(self, action_name):
-        """Sets the action_name of this Action.
+        r"""Sets the action_name of this Action.
 
         节点名称
 
@@ -135,7 +135,7 @@ class Action:
 
     @property
     def action_agency(self):
-        """Gets the action_agency of this Action.
+        r"""Gets the action_agency of this Action.
 
         节点使用的委托
 
@@ -146,7 +146,7 @@ class Action:
 
     @action_agency.setter
     def action_agency(self, action_agency):
-        """Sets the action_agency of this Action.
+        r"""Sets the action_agency of this Action.
 
         节点使用的委托
 
@@ -157,7 +157,7 @@ class Action:
 
     @property
     def function(self):
-        """Gets the function of this Action.
+        r"""Gets the function of this Action.
 
         节点相关联的函数URN
 
@@ -168,7 +168,7 @@ class Action:
 
     @function.setter
     def function(self, function):
-        """Sets the function of this Action.
+        r"""Sets the function of this Action.
 
         节点相关联的函数URN
 
@@ -179,7 +179,7 @@ class Action:
 
     @property
     def function_template(self):
-        """Gets the function_template of this Action.
+        r"""Gets the function_template of this Action.
 
         算子模板使用的URM
 
@@ -190,7 +190,7 @@ class Action:
 
     @function_template.setter
     def function_template(self, function_template):
-        """Sets the function_template of this Action.
+        r"""Sets the function_template of this Action.
 
         算子模板使用的URM
 
@@ -201,7 +201,7 @@ class Action:
 
     @property
     def action_template_name(self):
-        """Gets the action_template_name of this Action.
+        r"""Gets the action_template_name of this Action.
 
         节点使用的算子名称
 
@@ -212,7 +212,7 @@ class Action:
 
     @action_template_name.setter
     def action_template_name(self, action_template_name):
-        """Sets the action_template_name of this Action.
+        r"""Sets the action_template_name of this Action.
 
         节点使用的算子名称
 
@@ -223,7 +223,7 @@ class Action:
 
     @property
     def action_template_category(self):
-        """Gets the action_template_category of this Action.
+        r"""Gets the action_template_category of this Action.
 
         节点使用的模板类别
 
@@ -234,7 +234,7 @@ class Action:
 
     @action_template_category.setter
     def action_template_category(self, action_template_category):
-        """Sets the action_template_category of this Action.
+        r"""Sets the action_template_category of this Action.
 
         节点使用的模板类别
 
@@ -245,7 +245,7 @@ class Action:
 
     @property
     def action_template_provider_name(self):
-        """Gets the action_template_provider_name of this Action.
+        r"""Gets the action_template_provider_name of this Action.
 
         节点使用的模板提供方
 
@@ -256,7 +256,7 @@ class Action:
 
     @action_template_provider_name.setter
     def action_template_provider_name(self, action_template_provider_name):
-        """Sets the action_template_provider_name of this Action.
+        r"""Sets the action_template_provider_name of this Action.
 
         节点使用的模板提供方
 
@@ -267,7 +267,7 @@ class Action:
 
     @property
     def invocation_mode(self):
-        """Gets the invocation_mode of this Action.
+        r"""Gets the invocation_mode of this Action.
 
         触发模式
 
@@ -278,7 +278,7 @@ class Action:
 
     @invocation_mode.setter
     def invocation_mode(self, invocation_mode):
-        """Sets the invocation_mode of this Action.
+        r"""Sets the invocation_mode of this Action.
 
         触发模式
 
@@ -289,7 +289,7 @@ class Action:
 
     @property
     def timeout(self):
-        """Gets the timeout of this Action.
+        r"""Gets the timeout of this Action.
 
         超时时间
 
@@ -300,7 +300,7 @@ class Action:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this Action.
+        r"""Sets the timeout of this Action.
 
         超时时间
 
@@ -311,7 +311,7 @@ class Action:
 
     @property
     def payload_filter(self):
-        """Gets the payload_filter of this Action.
+        r"""Gets the payload_filter of this Action.
 
         动态参数与inputs参数相关联使用的filter。默认为\"$\"
 
@@ -322,7 +322,7 @@ class Action:
 
     @payload_filter.setter
     def payload_filter(self, payload_filter):
-        """Sets the payload_filter of this Action.
+        r"""Sets the payload_filter of this Action.
 
         动态参数与inputs参数相关联使用的filter。默认为\"$\"
 
@@ -333,7 +333,7 @@ class Action:
 
     @property
     def dynamic_source(self):
-        """Gets the dynamic_source of this Action.
+        r"""Gets the dynamic_source of this Action.
 
         节点使用的动态参数
 
@@ -344,7 +344,7 @@ class Action:
 
     @dynamic_source.setter
     def dynamic_source(self, dynamic_source):
-        """Sets the dynamic_source of this Action.
+        r"""Sets the dynamic_source of this Action.
 
         节点使用的动态参数
 
@@ -355,7 +355,7 @@ class Action:
 
     @property
     def results(self):
-        """Gets the results of this Action.
+        r"""Gets the results of this Action.
 
         action错误处理
 
@@ -366,7 +366,7 @@ class Action:
 
     @results.setter
     def results(self, results):
-        """Sets the results of this Action.
+        r"""Sets the results of this Action.
 
         action错误处理
 

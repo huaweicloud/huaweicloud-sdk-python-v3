@@ -24,7 +24,7 @@ class HandResponse(SdkResponse):
     }
 
     def __init__(self):
-        """HandResponse
+        r"""HandResponse
 
         The model defined in huaweicloud sdk
 

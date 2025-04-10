@@ -25,7 +25,7 @@ class ShowUserAccessStagesRequest:
     }
 
     def __init__(self, transaction_id=None):
-        """ShowUserAccessStagesRequest
+        r"""ShowUserAccessStagesRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowUserAccessStagesRequest:
 
     @property
     def transaction_id(self):
-        """Gets the transaction_id of this ShowUserAccessStagesRequest.
+        r"""Gets the transaction_id of this ShowUserAccessStagesRequest.
 
         事务id
 
@@ -53,7 +53,7 @@ class ShowUserAccessStagesRequest:
 
     @transaction_id.setter
     def transaction_id(self, transaction_id):
-        """Sets the transaction_id of this ShowUserAccessStagesRequest.
+        r"""Sets the transaction_id of this ShowUserAccessStagesRequest.
 
         事务id
 

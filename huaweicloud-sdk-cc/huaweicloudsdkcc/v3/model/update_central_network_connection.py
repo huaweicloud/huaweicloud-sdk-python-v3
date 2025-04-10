@@ -29,7 +29,7 @@ class UpdateCentralNetworkConnection:
     }
 
     def __init__(self, bandwidth_type=None, global_connection_bandwidth_id=None, bandwidth_size=None):
-        """UpdateCentralNetworkConnection
+        r"""UpdateCentralNetworkConnection
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateCentralNetworkConnection:
 
     @property
     def bandwidth_type(self):
-        """Gets the bandwidth_type of this UpdateCentralNetworkConnection.
+        r"""Gets the bandwidth_type of this UpdateCentralNetworkConnection.
 
         :return: The bandwidth_type of this UpdateCentralNetworkConnection.
         :rtype: :class:`huaweicloudsdkcc.v3.BandwidthTypeEnum`
@@ -65,7 +65,7 @@ class UpdateCentralNetworkConnection:
 
     @bandwidth_type.setter
     def bandwidth_type(self, bandwidth_type):
-        """Sets the bandwidth_type of this UpdateCentralNetworkConnection.
+        r"""Sets the bandwidth_type of this UpdateCentralNetworkConnection.
 
         :param bandwidth_type: The bandwidth_type of this UpdateCentralNetworkConnection.
         :type bandwidth_type: :class:`huaweicloudsdkcc.v3.BandwidthTypeEnum`
@@ -74,7 +74,7 @@ class UpdateCentralNetworkConnection:
 
     @property
     def global_connection_bandwidth_id(self):
-        """Gets the global_connection_bandwidth_id of this UpdateCentralNetworkConnection.
+        r"""Gets the global_connection_bandwidth_id of this UpdateCentralNetworkConnection.
 
         全域互联带宽ID。
 
@@ -85,7 +85,7 @@ class UpdateCentralNetworkConnection:
 
     @global_connection_bandwidth_id.setter
     def global_connection_bandwidth_id(self, global_connection_bandwidth_id):
-        """Sets the global_connection_bandwidth_id of this UpdateCentralNetworkConnection.
+        r"""Sets the global_connection_bandwidth_id of this UpdateCentralNetworkConnection.
 
         全域互联带宽ID。
 
@@ -96,7 +96,7 @@ class UpdateCentralNetworkConnection:
 
     @property
     def bandwidth_size(self):
-        """Gets the bandwidth_size of this UpdateCentralNetworkConnection.
+        r"""Gets the bandwidth_size of this UpdateCentralNetworkConnection.
 
         带宽值，单位Mbps。
 
@@ -107,7 +107,7 @@ class UpdateCentralNetworkConnection:
 
     @bandwidth_size.setter
     def bandwidth_size(self, bandwidth_size):
-        """Sets the bandwidth_size of this UpdateCentralNetworkConnection.
+        r"""Sets the bandwidth_size of this UpdateCentralNetworkConnection.
 
         带宽值，单位Mbps。
 

@@ -41,7 +41,7 @@ class AlarmConfigResponse:
     }
 
     def __init__(self, id=None, alarm_id=None, alarm_name=None, name_space=None, alarm_level=None, is_user_visible=None, is_converge=None, converge_time=None, is_maintain_visible=None):
-        """AlarmConfigResponse
+        r"""AlarmConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class AlarmConfigResponse:
 
     @property
     def id(self):
-        """Gets the id of this AlarmConfigResponse.
+        r"""Gets the id of this AlarmConfigResponse.
 
         告警配置ID
 
@@ -110,7 +110,7 @@ class AlarmConfigResponse:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AlarmConfigResponse.
+        r"""Sets the id of this AlarmConfigResponse.
 
         告警配置ID
 
@@ -121,7 +121,7 @@ class AlarmConfigResponse:
 
     @property
     def alarm_id(self):
-        """Gets the alarm_id of this AlarmConfigResponse.
+        r"""Gets the alarm_id of this AlarmConfigResponse.
 
         告警ID
 
@@ -132,7 +132,7 @@ class AlarmConfigResponse:
 
     @alarm_id.setter
     def alarm_id(self, alarm_id):
-        """Sets the alarm_id of this AlarmConfigResponse.
+        r"""Sets the alarm_id of this AlarmConfigResponse.
 
         告警ID
 
@@ -143,7 +143,7 @@ class AlarmConfigResponse:
 
     @property
     def alarm_name(self):
-        """Gets the alarm_name of this AlarmConfigResponse.
+        r"""Gets the alarm_name of this AlarmConfigResponse.
 
         告警名称
 
@@ -154,7 +154,7 @@ class AlarmConfigResponse:
 
     @alarm_name.setter
     def alarm_name(self, alarm_name):
-        """Sets the alarm_name of this AlarmConfigResponse.
+        r"""Sets the alarm_name of this AlarmConfigResponse.
 
         告警名称
 
@@ -165,7 +165,7 @@ class AlarmConfigResponse:
 
     @property
     def name_space(self):
-        """Gets the name_space of this AlarmConfigResponse.
+        r"""Gets the name_space of this AlarmConfigResponse.
 
         所属服务，支持DWS,DLI,DGC,CloudTable,CDM,GES,CSS
 
@@ -176,7 +176,7 @@ class AlarmConfigResponse:
 
     @name_space.setter
     def name_space(self, name_space):
-        """Sets the name_space of this AlarmConfigResponse.
+        r"""Sets the name_space of this AlarmConfigResponse.
 
         所属服务，支持DWS,DLI,DGC,CloudTable,CDM,GES,CSS
 
@@ -187,7 +187,7 @@ class AlarmConfigResponse:
 
     @property
     def alarm_level(self):
-        """Gets the alarm_level of this AlarmConfigResponse.
+        r"""Gets the alarm_level of this AlarmConfigResponse.
 
         告警级别
 
@@ -198,7 +198,7 @@ class AlarmConfigResponse:
 
     @alarm_level.setter
     def alarm_level(self, alarm_level):
-        """Sets the alarm_level of this AlarmConfigResponse.
+        r"""Sets the alarm_level of this AlarmConfigResponse.
 
         告警级别
 
@@ -209,7 +209,7 @@ class AlarmConfigResponse:
 
     @property
     def is_user_visible(self):
-        """Gets the is_user_visible of this AlarmConfigResponse.
+        r"""Gets the is_user_visible of this AlarmConfigResponse.
 
         用户是否可见
 
@@ -220,7 +220,7 @@ class AlarmConfigResponse:
 
     @is_user_visible.setter
     def is_user_visible(self, is_user_visible):
-        """Sets the is_user_visible of this AlarmConfigResponse.
+        r"""Sets the is_user_visible of this AlarmConfigResponse.
 
         用户是否可见
 
@@ -231,7 +231,7 @@ class AlarmConfigResponse:
 
     @property
     def is_converge(self):
-        """Gets the is_converge of this AlarmConfigResponse.
+        r"""Gets the is_converge of this AlarmConfigResponse.
 
         是否覆盖
 
@@ -242,7 +242,7 @@ class AlarmConfigResponse:
 
     @is_converge.setter
     def is_converge(self, is_converge):
-        """Sets the is_converge of this AlarmConfigResponse.
+        r"""Sets the is_converge of this AlarmConfigResponse.
 
         是否覆盖
 
@@ -253,7 +253,7 @@ class AlarmConfigResponse:
 
     @property
     def converge_time(self):
-        """Gets the converge_time of this AlarmConfigResponse.
+        r"""Gets the converge_time of this AlarmConfigResponse.
 
         覆盖时间
 
@@ -264,7 +264,7 @@ class AlarmConfigResponse:
 
     @converge_time.setter
     def converge_time(self, converge_time):
-        """Sets the converge_time of this AlarmConfigResponse.
+        r"""Sets the converge_time of this AlarmConfigResponse.
 
         覆盖时间
 
@@ -275,7 +275,7 @@ class AlarmConfigResponse:
 
     @property
     def is_maintain_visible(self):
-        """Gets the is_maintain_visible of this AlarmConfigResponse.
+        r"""Gets the is_maintain_visible of this AlarmConfigResponse.
 
         运维是否可见
 
@@ -286,7 +286,7 @@ class AlarmConfigResponse:
 
     @is_maintain_visible.setter
     def is_maintain_visible(self, is_maintain_visible):
-        """Sets the is_maintain_visible of this AlarmConfigResponse.
+        r"""Sets the is_maintain_visible of this AlarmConfigResponse.
 
         运维是否可见
 

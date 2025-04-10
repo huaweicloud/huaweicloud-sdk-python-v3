@@ -41,7 +41,7 @@ class ListMessagesRequest:
     }
 
     def __init__(self, engine=None, instance_id=None, topic=None, limit=None, offset=None, key=None, start_time=None, end_time=None, msg_id=None):
-        """ListMessagesRequest
+        r"""ListMessagesRequest
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class ListMessagesRequest:
 
     @property
     def engine(self):
-        """Gets the engine of this ListMessagesRequest.
+        r"""Gets the engine of this ListMessagesRequest.
 
         消息引擎。
 
@@ -107,7 +107,7 @@ class ListMessagesRequest:
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this ListMessagesRequest.
+        r"""Sets the engine of this ListMessagesRequest.
 
         消息引擎。
 
@@ -118,7 +118,7 @@ class ListMessagesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListMessagesRequest.
+        r"""Gets the instance_id of this ListMessagesRequest.
 
         实例ID。
 
@@ -129,7 +129,7 @@ class ListMessagesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListMessagesRequest.
+        r"""Sets the instance_id of this ListMessagesRequest.
 
         实例ID。
 
@@ -140,7 +140,7 @@ class ListMessagesRequest:
 
     @property
     def topic(self):
-        """Gets the topic of this ListMessagesRequest.
+        r"""Gets the topic of this ListMessagesRequest.
 
         主题名称。
 
@@ -151,7 +151,7 @@ class ListMessagesRequest:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this ListMessagesRequest.
+        r"""Sets the topic of this ListMessagesRequest.
 
         主题名称。
 
@@ -162,7 +162,7 @@ class ListMessagesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListMessagesRequest.
+        r"""Gets the limit of this ListMessagesRequest.
 
         查询数量。
 
@@ -173,7 +173,7 @@ class ListMessagesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListMessagesRequest.
+        r"""Sets the limit of this ListMessagesRequest.
 
         查询数量。
 
@@ -184,7 +184,7 @@ class ListMessagesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListMessagesRequest.
+        r"""Gets the offset of this ListMessagesRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0。
 
@@ -195,7 +195,7 @@ class ListMessagesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListMessagesRequest.
+        r"""Sets the offset of this ListMessagesRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0。
 
@@ -206,7 +206,7 @@ class ListMessagesRequest:
 
     @property
     def key(self):
-        """Gets the key of this ListMessagesRequest.
+        r"""Gets the key of this ListMessagesRequest.
 
         消息的key。
 
@@ -217,7 +217,7 @@ class ListMessagesRequest:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this ListMessagesRequest.
+        r"""Sets the key of this ListMessagesRequest.
 
         消息的key。
 
@@ -228,7 +228,7 @@ class ListMessagesRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListMessagesRequest.
+        r"""Gets the start_time of this ListMessagesRequest.
 
         开始时间（不通过msg_id精确查询消息时，此参数必填）。
 
@@ -239,7 +239,7 @@ class ListMessagesRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListMessagesRequest.
+        r"""Sets the start_time of this ListMessagesRequest.
 
         开始时间（不通过msg_id精确查询消息时，此参数必填）。
 
@@ -250,7 +250,7 @@ class ListMessagesRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListMessagesRequest.
+        r"""Gets the end_time of this ListMessagesRequest.
 
         结束时间（不通过msg_id精确查询消息时，此参数必填）。
 
@@ -261,7 +261,7 @@ class ListMessagesRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListMessagesRequest.
+        r"""Sets the end_time of this ListMessagesRequest.
 
         结束时间（不通过msg_id精确查询消息时，此参数必填）。
 
@@ -272,7 +272,7 @@ class ListMessagesRequest:
 
     @property
     def msg_id(self):
-        """Gets the msg_id of this ListMessagesRequest.
+        r"""Gets the msg_id of this ListMessagesRequest.
 
         消息ID。
 
@@ -283,7 +283,7 @@ class ListMessagesRequest:
 
     @msg_id.setter
     def msg_id(self, msg_id):
-        """Sets the msg_id of this ListMessagesRequest.
+        r"""Sets the msg_id of this ListMessagesRequest.
 
         消息ID。
 

@@ -43,7 +43,7 @@ class CouponRecordV2:
     }
 
     def __init__(self, id=None, operation_type=None, quota_id=None, quota_type=None, coupon_id=None, customer_id=None, operation_amount=None, operation_time=None, result=None, remark=None):
-        """CouponRecordV2
+        r"""CouponRecordV2
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class CouponRecordV2:
 
     @property
     def id(self):
-        """Gets the id of this CouponRecordV2.
+        r"""Gets the id of this CouponRecordV2.
 
         该记录的ID。
 
@@ -117,7 +117,7 @@ class CouponRecordV2:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CouponRecordV2.
+        r"""Sets the id of this CouponRecordV2.
 
         该记录的ID。
 
@@ -128,7 +128,7 @@ class CouponRecordV2:
 
     @property
     def operation_type(self):
-        """Gets the operation_type of this CouponRecordV2.
+        r"""Gets the operation_type of this CouponRecordV2.
 
         操作类型。 1：发放2：手动回收3：解绑自动回收4：过期回收5：退订回收6：退款充值撤销7：建立关联回收
 
@@ -139,7 +139,7 @@ class CouponRecordV2:
 
     @operation_type.setter
     def operation_type(self, operation_type):
-        """Sets the operation_type of this CouponRecordV2.
+        r"""Sets the operation_type of this CouponRecordV2.
 
         操作类型。 1：发放2：手动回收3：解绑自动回收4：过期回收5：退订回收6：退款充值撤销7：建立关联回收
 
@@ -150,7 +150,7 @@ class CouponRecordV2:
 
     @property
     def quota_id(self):
-        """Gets the quota_id of this CouponRecordV2.
+        r"""Gets the quota_id of this CouponRecordV2.
 
         额度ID。
 
@@ -161,7 +161,7 @@ class CouponRecordV2:
 
     @quota_id.setter
     def quota_id(self, quota_id):
-        """Sets the quota_id of this CouponRecordV2.
+        r"""Sets the quota_id of this CouponRecordV2.
 
         额度ID。
 
@@ -172,7 +172,7 @@ class CouponRecordV2:
 
     @property
     def quota_type(self):
-        """Gets the quota_type of this CouponRecordV2.
+        r"""Gets the quota_type of this CouponRecordV2.
 
         额度类型。 0：代金券额度1：现金券额度
 
@@ -183,7 +183,7 @@ class CouponRecordV2:
 
     @quota_type.setter
     def quota_type(self, quota_type):
-        """Sets the quota_type of this CouponRecordV2.
+        r"""Sets the quota_type of this CouponRecordV2.
 
         额度类型。 0：代金券额度1：现金券额度
 
@@ -194,7 +194,7 @@ class CouponRecordV2:
 
     @property
     def coupon_id(self):
-        """Gets the coupon_id of this CouponRecordV2.
+        r"""Gets the coupon_id of this CouponRecordV2.
 
         代金券ID。
 
@@ -205,7 +205,7 @@ class CouponRecordV2:
 
     @coupon_id.setter
     def coupon_id(self, coupon_id):
-        """Sets the coupon_id of this CouponRecordV2.
+        r"""Sets the coupon_id of this CouponRecordV2.
 
         代金券ID。
 
@@ -216,7 +216,7 @@ class CouponRecordV2:
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this CouponRecordV2.
+        r"""Gets the customer_id of this CouponRecordV2.
 
         客户账号ID。
 
@@ -227,7 +227,7 @@ class CouponRecordV2:
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this CouponRecordV2.
+        r"""Sets the customer_id of this CouponRecordV2.
 
         客户账号ID。
 
@@ -238,7 +238,7 @@ class CouponRecordV2:
 
     @property
     def operation_amount(self):
-        """Gets the operation_amount of this CouponRecordV2.
+        r"""Gets the operation_amount of this CouponRecordV2.
 
         操作的面额值。单位：元。 发放时，等于面额值；回收时，指每次回收的具体值。
 
@@ -249,7 +249,7 @@ class CouponRecordV2:
 
     @operation_amount.setter
     def operation_amount(self, operation_amount):
-        """Sets the operation_amount of this CouponRecordV2.
+        r"""Sets the operation_amount of this CouponRecordV2.
 
         操作的面额值。单位：元。 发放时，等于面额值；回收时，指每次回收的具体值。
 
@@ -260,7 +260,7 @@ class CouponRecordV2:
 
     @property
     def operation_time(self):
-        """Gets the operation_time of this CouponRecordV2.
+        r"""Gets the operation_time of this CouponRecordV2.
 
         操作时间。
 
@@ -271,7 +271,7 @@ class CouponRecordV2:
 
     @operation_time.setter
     def operation_time(self, operation_time):
-        """Sets the operation_time of this CouponRecordV2.
+        r"""Sets the operation_time of this CouponRecordV2.
 
         操作时间。
 
@@ -282,7 +282,7 @@ class CouponRecordV2:
 
     @property
     def result(self):
-        """Gets the result of this CouponRecordV2.
+        r"""Gets the result of this CouponRecordV2.
 
         操作结果。 0：成功-1：失败
 
@@ -293,7 +293,7 @@ class CouponRecordV2:
 
     @result.setter
     def result(self, result):
-        """Sets the result of this CouponRecordV2.
+        r"""Sets the result of this CouponRecordV2.
 
         操作结果。 0：成功-1：失败
 
@@ -304,7 +304,7 @@ class CouponRecordV2:
 
     @property
     def remark(self):
-        """Gets the remark of this CouponRecordV2.
+        r"""Gets the remark of this CouponRecordV2.
 
         操作记录中的备注。
 
@@ -315,7 +315,7 @@ class CouponRecordV2:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this CouponRecordV2.
+        r"""Sets the remark of this CouponRecordV2.
 
         操作记录中的备注。
 

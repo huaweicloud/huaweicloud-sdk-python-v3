@@ -27,7 +27,7 @@ class KeyStoreStateInfo:
     }
 
     def __init__(self, keystore_id=None, keystore_state=None):
-        """KeyStoreStateInfo
+        r"""KeyStoreStateInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class KeyStoreStateInfo:
 
     @property
     def keystore_id(self):
-        """Gets the keystore_id of this KeyStoreStateInfo.
+        r"""Gets the keystore_id of this KeyStoreStateInfo.
 
         密钥库ID
 
@@ -61,7 +61,7 @@ class KeyStoreStateInfo:
 
     @keystore_id.setter
     def keystore_id(self, keystore_id):
-        """Sets the keystore_id of this KeyStoreStateInfo.
+        r"""Sets the keystore_id of this KeyStoreStateInfo.
 
         密钥库ID
 
@@ -72,7 +72,7 @@ class KeyStoreStateInfo:
 
     @property
     def keystore_state(self):
-        """Gets the keystore_state of this KeyStoreStateInfo.
+        r"""Gets the keystore_state of this KeyStoreStateInfo.
 
         密钥库状态
 
@@ -83,7 +83,7 @@ class KeyStoreStateInfo:
 
     @keystore_state.setter
     def keystore_state(self, keystore_state):
-        """Sets the keystore_state of this KeyStoreStateInfo.
+        r"""Sets the keystore_state of this KeyStoreStateInfo.
 
         密钥库状态
 

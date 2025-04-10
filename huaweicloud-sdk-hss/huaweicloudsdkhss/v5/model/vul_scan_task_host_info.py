@@ -23,7 +23,8 @@ class VulScanTaskHostInfo:
         'private_ip': 'str',
         'asset_value': 'str',
         'scan_status': 'str',
-        'failed_reasons': 'list[VulScanTaskHostInfoFailedReasons]'
+        'failed_reasons': 'list[VulScanTaskHostInfoFailedReasons]',
+        'vul_scan_details': 'list[VulScanTaskHostInfoVulScanDetails]'
     }
 
     attribute_map = {
@@ -33,11 +34,12 @@ class VulScanTaskHostInfo:
         'private_ip': 'private_ip',
         'asset_value': 'asset_value',
         'scan_status': 'scan_status',
-        'failed_reasons': 'failed_reasons'
+        'failed_reasons': 'failed_reasons',
+        'vul_scan_details': 'vul_scan_details'
     }
 
-    def __init__(self, host_id=None, host_name=None, public_ip=None, private_ip=None, asset_value=None, scan_status=None, failed_reasons=None):
-        """VulScanTaskHostInfo
+    def __init__(self, host_id=None, host_name=None, public_ip=None, private_ip=None, asset_value=None, scan_status=None, failed_reasons=None, vul_scan_details=None):
+        r"""VulScanTaskHostInfo
 
         The model defined in huaweicloud sdk
 
@@ -55,6 +57,8 @@ class VulScanTaskHostInfo:
         :type scan_status: str
         :param failed_reasons: 扫描失败的原因列表
         :type failed_reasons: list[:class:`huaweicloudsdkhss.v5.VulScanTaskHostInfoFailedReasons`]
+        :param vul_scan_details: 该主机的扫描详情信息
+        :type vul_scan_details: list[:class:`huaweicloudsdkhss.v5.VulScanTaskHostInfoVulScanDetails`]
         """
         
         
@@ -66,6 +70,7 @@ class VulScanTaskHostInfo:
         self._asset_value = None
         self._scan_status = None
         self._failed_reasons = None
+        self._vul_scan_details = None
         self.discriminator = None
 
         if host_id is not None:
@@ -82,10 +87,12 @@ class VulScanTaskHostInfo:
             self.scan_status = scan_status
         if failed_reasons is not None:
             self.failed_reasons = failed_reasons
+        if vul_scan_details is not None:
+            self.vul_scan_details = vul_scan_details
 
     @property
     def host_id(self):
-        """Gets the host_id of this VulScanTaskHostInfo.
+        r"""Gets the host_id of this VulScanTaskHostInfo.
 
         主机ID
 
@@ -96,7 +103,7 @@ class VulScanTaskHostInfo:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this VulScanTaskHostInfo.
+        r"""Sets the host_id of this VulScanTaskHostInfo.
 
         主机ID
 
@@ -107,7 +114,7 @@ class VulScanTaskHostInfo:
 
     @property
     def host_name(self):
-        """Gets the host_name of this VulScanTaskHostInfo.
+        r"""Gets the host_name of this VulScanTaskHostInfo.
 
         主机名称
 
@@ -118,7 +125,7 @@ class VulScanTaskHostInfo:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this VulScanTaskHostInfo.
+        r"""Sets the host_name of this VulScanTaskHostInfo.
 
         主机名称
 
@@ -129,7 +136,7 @@ class VulScanTaskHostInfo:
 
     @property
     def public_ip(self):
-        """Gets the public_ip of this VulScanTaskHostInfo.
+        r"""Gets the public_ip of this VulScanTaskHostInfo.
 
         弹性公网IP地址
 
@@ -140,7 +147,7 @@ class VulScanTaskHostInfo:
 
     @public_ip.setter
     def public_ip(self, public_ip):
-        """Sets the public_ip of this VulScanTaskHostInfo.
+        r"""Sets the public_ip of this VulScanTaskHostInfo.
 
         弹性公网IP地址
 
@@ -151,7 +158,7 @@ class VulScanTaskHostInfo:
 
     @property
     def private_ip(self):
-        """Gets the private_ip of this VulScanTaskHostInfo.
+        r"""Gets the private_ip of this VulScanTaskHostInfo.
 
         私有IP地址
 
@@ -162,7 +169,7 @@ class VulScanTaskHostInfo:
 
     @private_ip.setter
     def private_ip(self, private_ip):
-        """Sets the private_ip of this VulScanTaskHostInfo.
+        r"""Sets the private_ip of this VulScanTaskHostInfo.
 
         私有IP地址
 
@@ -173,7 +180,7 @@ class VulScanTaskHostInfo:
 
     @property
     def asset_value(self):
-        """Gets the asset_value of this VulScanTaskHostInfo.
+        r"""Gets the asset_value of this VulScanTaskHostInfo.
 
         资产重要性，包含如下:   - important ：重要资产   - common ：一般资产   - test ：测试资产
 
@@ -184,7 +191,7 @@ class VulScanTaskHostInfo:
 
     @asset_value.setter
     def asset_value(self, asset_value):
-        """Sets the asset_value of this VulScanTaskHostInfo.
+        r"""Sets the asset_value of this VulScanTaskHostInfo.
 
         资产重要性，包含如下:   - important ：重要资产   - common ：一般资产   - test ：测试资产
 
@@ -195,7 +202,7 @@ class VulScanTaskHostInfo:
 
     @property
     def scan_status(self):
-        """Gets the scan_status of this VulScanTaskHostInfo.
+        r"""Gets the scan_status of this VulScanTaskHostInfo.
 
         主机的扫描状态，包含如下：   -scanning : 扫描中   -success : 扫描成功   -failed : 扫描失败
 
@@ -206,7 +213,7 @@ class VulScanTaskHostInfo:
 
     @scan_status.setter
     def scan_status(self, scan_status):
-        """Sets the scan_status of this VulScanTaskHostInfo.
+        r"""Sets the scan_status of this VulScanTaskHostInfo.
 
         主机的扫描状态，包含如下：   -scanning : 扫描中   -success : 扫描成功   -failed : 扫描失败
 
@@ -217,7 +224,7 @@ class VulScanTaskHostInfo:
 
     @property
     def failed_reasons(self):
-        """Gets the failed_reasons of this VulScanTaskHostInfo.
+        r"""Gets the failed_reasons of this VulScanTaskHostInfo.
 
         扫描失败的原因列表
 
@@ -228,7 +235,7 @@ class VulScanTaskHostInfo:
 
     @failed_reasons.setter
     def failed_reasons(self, failed_reasons):
-        """Sets the failed_reasons of this VulScanTaskHostInfo.
+        r"""Sets the failed_reasons of this VulScanTaskHostInfo.
 
         扫描失败的原因列表
 
@@ -236,6 +243,28 @@ class VulScanTaskHostInfo:
         :type failed_reasons: list[:class:`huaweicloudsdkhss.v5.VulScanTaskHostInfoFailedReasons`]
         """
         self._failed_reasons = failed_reasons
+
+    @property
+    def vul_scan_details(self):
+        r"""Gets the vul_scan_details of this VulScanTaskHostInfo.
+
+        该主机的扫描详情信息
+
+        :return: The vul_scan_details of this VulScanTaskHostInfo.
+        :rtype: list[:class:`huaweicloudsdkhss.v5.VulScanTaskHostInfoVulScanDetails`]
+        """
+        return self._vul_scan_details
+
+    @vul_scan_details.setter
+    def vul_scan_details(self, vul_scan_details):
+        r"""Sets the vul_scan_details of this VulScanTaskHostInfo.
+
+        该主机的扫描详情信息
+
+        :param vul_scan_details: The vul_scan_details of this VulScanTaskHostInfo.
+        :type vul_scan_details: list[:class:`huaweicloudsdkhss.v5.VulScanTaskHostInfoVulScanDetails`]
+        """
+        self._vul_scan_details = vul_scan_details
 
     def to_dict(self):
         """Returns the model properties as a dict"""

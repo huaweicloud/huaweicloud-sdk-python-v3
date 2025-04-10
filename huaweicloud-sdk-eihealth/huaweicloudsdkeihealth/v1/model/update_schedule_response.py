@@ -24,7 +24,7 @@ class UpdateScheduleResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateScheduleResponse
+        r"""UpdateScheduleResponse
 
         The model defined in huaweicloud sdk
 

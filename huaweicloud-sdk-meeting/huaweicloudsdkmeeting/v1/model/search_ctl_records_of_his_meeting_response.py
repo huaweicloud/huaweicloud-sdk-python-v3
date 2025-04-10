@@ -32,7 +32,7 @@ class SearchCtlRecordsOfHisMeetingResponse(SdkResponse):
     }
 
     def __init__(self, offset=None, limit=None, count=None, data=None):
-        """SearchCtlRecordsOfHisMeetingResponse
+        r"""SearchCtlRecordsOfHisMeetingResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class SearchCtlRecordsOfHisMeetingResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this SearchCtlRecordsOfHisMeetingResponse.
+        r"""Gets the offset of this SearchCtlRecordsOfHisMeetingResponse.
 
         查询偏移量。
 
@@ -76,7 +76,7 @@ class SearchCtlRecordsOfHisMeetingResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this SearchCtlRecordsOfHisMeetingResponse.
+        r"""Sets the offset of this SearchCtlRecordsOfHisMeetingResponse.
 
         查询偏移量。
 
@@ -87,7 +87,7 @@ class SearchCtlRecordsOfHisMeetingResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this SearchCtlRecordsOfHisMeetingResponse.
+        r"""Gets the limit of this SearchCtlRecordsOfHisMeetingResponse.
 
         每页的记录数。
 
@@ -98,7 +98,7 @@ class SearchCtlRecordsOfHisMeetingResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this SearchCtlRecordsOfHisMeetingResponse.
+        r"""Sets the limit of this SearchCtlRecordsOfHisMeetingResponse.
 
         每页的记录数。
 
@@ -109,7 +109,7 @@ class SearchCtlRecordsOfHisMeetingResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this SearchCtlRecordsOfHisMeetingResponse.
+        r"""Gets the count of this SearchCtlRecordsOfHisMeetingResponse.
 
         总记录数。
 
@@ -120,7 +120,7 @@ class SearchCtlRecordsOfHisMeetingResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this SearchCtlRecordsOfHisMeetingResponse.
+        r"""Sets the count of this SearchCtlRecordsOfHisMeetingResponse.
 
         总记录数。
 
@@ -131,7 +131,7 @@ class SearchCtlRecordsOfHisMeetingResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this SearchCtlRecordsOfHisMeetingResponse.
+        r"""Gets the data of this SearchCtlRecordsOfHisMeetingResponse.
 
         会控操作列表。
 
@@ -142,7 +142,7 @@ class SearchCtlRecordsOfHisMeetingResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this SearchCtlRecordsOfHisMeetingResponse.
+        r"""Sets the data of this SearchCtlRecordsOfHisMeetingResponse.
 
         会控操作列表。
 

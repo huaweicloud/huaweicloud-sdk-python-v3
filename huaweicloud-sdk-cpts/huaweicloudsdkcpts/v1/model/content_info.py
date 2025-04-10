@@ -65,7 +65,7 @@ class ContentInfo:
     }
 
     def __init__(self, body_type=None, bodys=None, check_end_length=None, check_end_str=None, check_end_type=None, connect_timeout=None, connect_type=None, headers=None, http_version=None, method=None, name=None, protocol_type=None, return_timeout=None, return_timeout_param=None, url=None, rtmp_url=None, flv_url=None, bitrate_type=None, duration=None, retry_delay=None, retry_time=None):
-        """ContentInfo
+        r"""ContentInfo
 
         The model defined in huaweicloud sdk
 
@@ -183,7 +183,7 @@ class ContentInfo:
 
     @property
     def body_type(self):
-        """Gets the body_type of this ContentInfo.
+        r"""Gets the body_type of this ContentInfo.
 
         body类型（0：字符串；1：form-data格式；3：x-www-form-urlencoded格式）
 
@@ -194,7 +194,7 @@ class ContentInfo:
 
     @body_type.setter
     def body_type(self, body_type):
-        """Sets the body_type of this ContentInfo.
+        r"""Sets the body_type of this ContentInfo.
 
         body类型（0：字符串；1：form-data格式；3：x-www-form-urlencoded格式）
 
@@ -205,7 +205,7 @@ class ContentInfo:
 
     @property
     def bodys(self):
-        """Gets the bodys of this ContentInfo.
+        r"""Gets the bodys of this ContentInfo.
 
         bodys
 
@@ -216,7 +216,7 @@ class ContentInfo:
 
     @bodys.setter
     def bodys(self, bodys):
-        """Sets the bodys of this ContentInfo.
+        r"""Sets the bodys of this ContentInfo.
 
         bodys
 
@@ -227,7 +227,7 @@ class ContentInfo:
 
     @property
     def check_end_length(self):
-        """Gets the check_end_length of this ContentInfo.
+        r"""Gets the check_end_length of this ContentInfo.
 
         TCP/UDP协议返回数据长度
 
@@ -238,7 +238,7 @@ class ContentInfo:
 
     @check_end_length.setter
     def check_end_length(self, check_end_length):
-        """Sets the check_end_length of this ContentInfo.
+        r"""Sets the check_end_length of this ContentInfo.
 
         TCP/UDP协议返回数据长度
 
@@ -249,7 +249,7 @@ class ContentInfo:
 
     @property
     def check_end_str(self):
-        """Gets the check_end_str of this ContentInfo.
+        r"""Gets the check_end_str of this ContentInfo.
 
         TCP/UDP协议返回结束符
 
@@ -260,7 +260,7 @@ class ContentInfo:
 
     @check_end_str.setter
     def check_end_str(self, check_end_str):
-        """Sets the check_end_str of this ContentInfo.
+        r"""Sets the check_end_str of this ContentInfo.
 
         TCP/UDP协议返回结束符
 
@@ -271,7 +271,7 @@ class ContentInfo:
 
     @property
     def check_end_type(self):
-        """Gets the check_end_type of this ContentInfo.
+        r"""Gets the check_end_type of this ContentInfo.
 
         TCP/UDP协议返回结束类型，1：返回数据长度；2：结束符
 
@@ -282,7 +282,7 @@ class ContentInfo:
 
     @check_end_type.setter
     def check_end_type(self, check_end_type):
-        """Sets the check_end_type of this ContentInfo.
+        r"""Sets the check_end_type of this ContentInfo.
 
         TCP/UDP协议返回结束类型，1：返回数据长度；2：结束符
 
@@ -293,7 +293,7 @@ class ContentInfo:
 
     @property
     def connect_timeout(self):
-        """Gets the connect_timeout of this ContentInfo.
+        r"""Gets the connect_timeout of this ContentInfo.
 
         超时时间
 
@@ -304,7 +304,7 @@ class ContentInfo:
 
     @connect_timeout.setter
     def connect_timeout(self, connect_timeout):
-        """Sets the connect_timeout of this ContentInfo.
+        r"""Sets the connect_timeout of this ContentInfo.
 
         超时时间
 
@@ -315,7 +315,7 @@ class ContentInfo:
 
     @property
     def connect_type(self):
-        """Gets the connect_type of this ContentInfo.
+        r"""Gets the connect_type of this ContentInfo.
 
         连接设置，当前版本已未使用
 
@@ -326,7 +326,7 @@ class ContentInfo:
 
     @connect_type.setter
     def connect_type(self, connect_type):
-        """Sets the connect_type of this ContentInfo.
+        r"""Sets the connect_type of this ContentInfo.
 
         连接设置，当前版本已未使用
 
@@ -337,7 +337,7 @@ class ContentInfo:
 
     @property
     def headers(self):
-        """Gets the headers of this ContentInfo.
+        r"""Gets the headers of this ContentInfo.
 
         请求头
 
@@ -348,7 +348,7 @@ class ContentInfo:
 
     @headers.setter
     def headers(self, headers):
-        """Sets the headers of this ContentInfo.
+        r"""Sets the headers of this ContentInfo.
 
         请求头
 
@@ -359,7 +359,7 @@ class ContentInfo:
 
     @property
     def http_version(self):
-        """Gets the http_version of this ContentInfo.
+        r"""Gets the http_version of this ContentInfo.
 
         HTTP版本
 
@@ -370,7 +370,7 @@ class ContentInfo:
 
     @http_version.setter
     def http_version(self, http_version):
-        """Sets the http_version of this ContentInfo.
+        r"""Sets the http_version of this ContentInfo.
 
         HTTP版本
 
@@ -381,7 +381,7 @@ class ContentInfo:
 
     @property
     def method(self):
-        """Gets the method of this ContentInfo.
+        r"""Gets the method of this ContentInfo.
 
         HTTP方法
 
@@ -392,7 +392,7 @@ class ContentInfo:
 
     @method.setter
     def method(self, method):
-        """Sets the method of this ContentInfo.
+        r"""Sets the method of this ContentInfo.
 
         HTTP方法
 
@@ -403,7 +403,7 @@ class ContentInfo:
 
     @property
     def name(self):
-        """Gets the name of this ContentInfo.
+        r"""Gets the name of this ContentInfo.
 
         用例名称
 
@@ -414,7 +414,7 @@ class ContentInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ContentInfo.
+        r"""Sets the name of this ContentInfo.
 
         用例名称
 
@@ -425,7 +425,7 @@ class ContentInfo:
 
     @property
     def protocol_type(self):
-        """Gets the protocol_type of this ContentInfo.
+        r"""Gets the protocol_type of this ContentInfo.
 
         协议类型（1：HTTP；2：HTTPS；3：TCP；4：UDP；7：HLS/RTMP；9：WebSocket；10：HTTP-FLV）
 
@@ -436,7 +436,7 @@ class ContentInfo:
 
     @protocol_type.setter
     def protocol_type(self, protocol_type):
-        """Sets the protocol_type of this ContentInfo.
+        r"""Sets the protocol_type of this ContentInfo.
 
         协议类型（1：HTTP；2：HTTPS；3：TCP；4：UDP；7：HLS/RTMP；9：WebSocket；10：HTTP-FLV）
 
@@ -447,7 +447,7 @@ class ContentInfo:
 
     @property
     def return_timeout(self):
-        """Gets the return_timeout of this ContentInfo.
+        r"""Gets the return_timeout of this ContentInfo.
 
         响应超时
 
@@ -458,7 +458,7 @@ class ContentInfo:
 
     @return_timeout.setter
     def return_timeout(self, return_timeout):
-        """Sets the return_timeout of this ContentInfo.
+        r"""Sets the return_timeout of this ContentInfo.
 
         响应超时
 
@@ -469,7 +469,7 @@ class ContentInfo:
 
     @property
     def return_timeout_param(self):
-        """Gets the return_timeout_param of this ContentInfo.
+        r"""Gets the return_timeout_param of this ContentInfo.
 
         响应超时参数
 
@@ -480,7 +480,7 @@ class ContentInfo:
 
     @return_timeout_param.setter
     def return_timeout_param(self, return_timeout_param):
-        """Sets the return_timeout_param of this ContentInfo.
+        r"""Sets the return_timeout_param of this ContentInfo.
 
         响应超时参数
 
@@ -491,7 +491,7 @@ class ContentInfo:
 
     @property
     def url(self):
-        """Gets the url of this ContentInfo.
+        r"""Gets the url of this ContentInfo.
 
         请求地址
 
@@ -502,7 +502,7 @@ class ContentInfo:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ContentInfo.
+        r"""Sets the url of this ContentInfo.
 
         请求地址
 
@@ -513,7 +513,7 @@ class ContentInfo:
 
     @property
     def rtmp_url(self):
-        """Gets the rtmp_url of this ContentInfo.
+        r"""Gets the rtmp_url of this ContentInfo.
 
         rtmp地址
 
@@ -524,7 +524,7 @@ class ContentInfo:
 
     @rtmp_url.setter
     def rtmp_url(self, rtmp_url):
-        """Sets the rtmp_url of this ContentInfo.
+        r"""Sets the rtmp_url of this ContentInfo.
 
         rtmp地址
 
@@ -535,7 +535,7 @@ class ContentInfo:
 
     @property
     def flv_url(self):
-        """Gets the flv_url of this ContentInfo.
+        r"""Gets the flv_url of this ContentInfo.
 
         flv地址
 
@@ -546,7 +546,7 @@ class ContentInfo:
 
     @flv_url.setter
     def flv_url(self, flv_url):
-        """Sets the flv_url of this ContentInfo.
+        r"""Sets the flv_url of this ContentInfo.
 
         flv地址
 
@@ -557,7 +557,7 @@ class ContentInfo:
 
     @property
     def bitrate_type(self):
-        """Gets the bitrate_type of this ContentInfo.
+        r"""Gets the bitrate_type of this ContentInfo.
 
         分辨率策略
 
@@ -568,7 +568,7 @@ class ContentInfo:
 
     @bitrate_type.setter
     def bitrate_type(self, bitrate_type):
-        """Sets the bitrate_type of this ContentInfo.
+        r"""Sets the bitrate_type of this ContentInfo.
 
         分辨率策略
 
@@ -579,7 +579,7 @@ class ContentInfo:
 
     @property
     def duration(self):
-        """Gets the duration of this ContentInfo.
+        r"""Gets the duration of this ContentInfo.
 
         持续时间
 
@@ -590,7 +590,7 @@ class ContentInfo:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this ContentInfo.
+        r"""Sets the duration of this ContentInfo.
 
         持续时间
 
@@ -601,7 +601,7 @@ class ContentInfo:
 
     @property
     def retry_delay(self):
-        """Gets the retry_delay of this ContentInfo.
+        r"""Gets the retry_delay of this ContentInfo.
 
         HLS重试延迟时间
 
@@ -612,7 +612,7 @@ class ContentInfo:
 
     @retry_delay.setter
     def retry_delay(self, retry_delay):
-        """Sets the retry_delay of this ContentInfo.
+        r"""Sets the retry_delay of this ContentInfo.
 
         HLS重试延迟时间
 
@@ -623,7 +623,7 @@ class ContentInfo:
 
     @property
     def retry_time(self):
-        """Gets the retry_time of this ContentInfo.
+        r"""Gets the retry_time of this ContentInfo.
 
         HLS重试次数
 
@@ -634,7 +634,7 @@ class ContentInfo:
 
     @retry_time.setter
     def retry_time(self, retry_time):
-        """Sets the retry_time of this ContentInfo.
+        r"""Sets the retry_time of this ContentInfo.
 
         HLS重试次数
 

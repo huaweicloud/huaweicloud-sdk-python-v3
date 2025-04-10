@@ -29,7 +29,7 @@ class ResizeDesktopPoolRequest:
     }
 
     def __init__(self, service_transaction_id=None, pool_id=None, body=None):
-        """ResizeDesktopPoolRequest
+        r"""ResizeDesktopPoolRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ResizeDesktopPoolRequest:
 
     @property
     def service_transaction_id(self):
-        """Gets the service_transaction_id of this ResizeDesktopPoolRequest.
+        r"""Gets the service_transaction_id of this ResizeDesktopPoolRequest.
 
         CBC接口回调时，请求头里带上的业务ID
 
@@ -67,7 +67,7 @@ class ResizeDesktopPoolRequest:
 
     @service_transaction_id.setter
     def service_transaction_id(self, service_transaction_id):
-        """Sets the service_transaction_id of this ResizeDesktopPoolRequest.
+        r"""Sets the service_transaction_id of this ResizeDesktopPoolRequest.
 
         CBC接口回调时，请求头里带上的业务ID
 
@@ -78,7 +78,7 @@ class ResizeDesktopPoolRequest:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this ResizeDesktopPoolRequest.
+        r"""Gets the pool_id of this ResizeDesktopPoolRequest.
 
         桌面池ID。
 
@@ -89,7 +89,7 @@ class ResizeDesktopPoolRequest:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this ResizeDesktopPoolRequest.
+        r"""Sets the pool_id of this ResizeDesktopPoolRequest.
 
         桌面池ID。
 
@@ -100,7 +100,7 @@ class ResizeDesktopPoolRequest:
 
     @property
     def body(self):
-        """Gets the body of this ResizeDesktopPoolRequest.
+        r"""Gets the body of this ResizeDesktopPoolRequest.
 
         :return: The body of this ResizeDesktopPoolRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ResizeDesktopPoolReq`
@@ -109,7 +109,7 @@ class ResizeDesktopPoolRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ResizeDesktopPoolRequest.
+        r"""Sets the body of this ResizeDesktopPoolRequest.
 
         :param body: The body of this ResizeDesktopPoolRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.ResizeDesktopPoolReq`

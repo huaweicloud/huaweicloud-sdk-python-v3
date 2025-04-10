@@ -24,7 +24,7 @@ class ChangeHostsGroupResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ChangeHostsGroupResponse
+        r"""ChangeHostsGroupResponse
 
         The model defined in huaweicloud sdk
 

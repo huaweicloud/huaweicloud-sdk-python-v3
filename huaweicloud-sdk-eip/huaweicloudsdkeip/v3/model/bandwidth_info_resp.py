@@ -31,7 +31,7 @@ class BandwidthInfoResp:
     }
 
     def __init__(self, bandwidth_name=None, bandwidth_number=None, bandwidth_type=None, bandwidth_id=None):
-        """BandwidthInfoResp
+        r"""BandwidthInfoResp
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class BandwidthInfoResp:
 
     @property
     def bandwidth_name(self):
-        """Gets the bandwidth_name of this BandwidthInfoResp.
+        r"""Gets the bandwidth_name of this BandwidthInfoResp.
 
         - 功能说明：带宽名称
 
@@ -75,7 +75,7 @@ class BandwidthInfoResp:
 
     @bandwidth_name.setter
     def bandwidth_name(self, bandwidth_name):
-        """Sets the bandwidth_name of this BandwidthInfoResp.
+        r"""Sets the bandwidth_name of this BandwidthInfoResp.
 
         - 功能说明：带宽名称
 
@@ -86,7 +86,7 @@ class BandwidthInfoResp:
 
     @property
     def bandwidth_number(self):
-        """Gets the bandwidth_number of this BandwidthInfoResp.
+        r"""Gets the bandwidth_number of this BandwidthInfoResp.
 
         - 功能说明：带宽大小
 
@@ -97,7 +97,7 @@ class BandwidthInfoResp:
 
     @bandwidth_number.setter
     def bandwidth_number(self, bandwidth_number):
-        """Sets the bandwidth_number of this BandwidthInfoResp.
+        r"""Sets the bandwidth_number of this BandwidthInfoResp.
 
         - 功能说明：带宽大小
 
@@ -108,7 +108,7 @@ class BandwidthInfoResp:
 
     @property
     def bandwidth_type(self):
-        """Gets the bandwidth_type of this BandwidthInfoResp.
+        r"""Gets the bandwidth_type of this BandwidthInfoResp.
 
         - 功能说明：带宽类型
 
@@ -119,7 +119,7 @@ class BandwidthInfoResp:
 
     @bandwidth_type.setter
     def bandwidth_type(self, bandwidth_type):
-        """Sets the bandwidth_type of this BandwidthInfoResp.
+        r"""Sets the bandwidth_type of this BandwidthInfoResp.
 
         - 功能说明：带宽类型
 
@@ -130,7 +130,7 @@ class BandwidthInfoResp:
 
     @property
     def bandwidth_id(self):
-        """Gets the bandwidth_id of this BandwidthInfoResp.
+        r"""Gets the bandwidth_id of this BandwidthInfoResp.
 
         - 功能说明：带宽id
 
@@ -141,7 +141,7 @@ class BandwidthInfoResp:
 
     @bandwidth_id.setter
     def bandwidth_id(self, bandwidth_id):
-        """Sets the bandwidth_id of this BandwidthInfoResp.
+        r"""Sets the bandwidth_id of this BandwidthInfoResp.
 
         - 功能说明：带宽id
 

@@ -25,7 +25,7 @@ class SwitchFailoverDisasterRequest:
     }
 
     def __init__(self, disaster_recovery_id=None):
-        """SwitchFailoverDisasterRequest
+        r"""SwitchFailoverDisasterRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class SwitchFailoverDisasterRequest:
 
     @property
     def disaster_recovery_id(self):
-        """Gets the disaster_recovery_id of this SwitchFailoverDisasterRequest.
+        r"""Gets the disaster_recovery_id of this SwitchFailoverDisasterRequest.
 
         容灾ID
 
@@ -53,7 +53,7 @@ class SwitchFailoverDisasterRequest:
 
     @disaster_recovery_id.setter
     def disaster_recovery_id(self, disaster_recovery_id):
-        """Sets the disaster_recovery_id of this SwitchFailoverDisasterRequest.
+        r"""Sets the disaster_recovery_id of this SwitchFailoverDisasterRequest.
 
         容灾ID
 

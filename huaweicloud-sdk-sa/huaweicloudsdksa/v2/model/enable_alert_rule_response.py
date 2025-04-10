@@ -30,7 +30,7 @@ class EnableAlertRuleResponse(SdkResponse):
     }
 
     def __init__(self, rule_id=None, status=None, x_request_id=None):
-        """EnableAlertRuleResponse
+        r"""EnableAlertRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class EnableAlertRuleResponse(SdkResponse):
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this EnableAlertRuleResponse.
+        r"""Gets the rule_id of this EnableAlertRuleResponse.
 
         rule_id
 
@@ -69,7 +69,7 @@ class EnableAlertRuleResponse(SdkResponse):
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this EnableAlertRuleResponse.
+        r"""Sets the rule_id of this EnableAlertRuleResponse.
 
         rule_id
 
@@ -80,7 +80,7 @@ class EnableAlertRuleResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this EnableAlertRuleResponse.
+        r"""Gets the status of this EnableAlertRuleResponse.
 
         status. ENABLED, DISABLED
 
@@ -91,7 +91,7 @@ class EnableAlertRuleResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this EnableAlertRuleResponse.
+        r"""Sets the status of this EnableAlertRuleResponse.
 
         status. ENABLED, DISABLED
 
@@ -102,7 +102,7 @@ class EnableAlertRuleResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this EnableAlertRuleResponse.
+        r"""Gets the x_request_id of this EnableAlertRuleResponse.
 
         :return: The x_request_id of this EnableAlertRuleResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class EnableAlertRuleResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this EnableAlertRuleResponse.
+        r"""Sets the x_request_id of this EnableAlertRuleResponse.
 
         :param x_request_id: The x_request_id of this EnableAlertRuleResponse.
         :type x_request_id: str

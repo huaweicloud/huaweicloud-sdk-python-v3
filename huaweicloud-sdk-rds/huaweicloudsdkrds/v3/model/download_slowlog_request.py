@@ -29,7 +29,7 @@ class DownloadSlowlogRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """DownloadSlowlogRequest
+        r"""DownloadSlowlogRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DownloadSlowlogRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this DownloadSlowlogRequest.
+        r"""Gets the x_language of this DownloadSlowlogRequest.
 
         语言
 
@@ -67,7 +67,7 @@ class DownloadSlowlogRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this DownloadSlowlogRequest.
+        r"""Sets the x_language of this DownloadSlowlogRequest.
 
         语言
 
@@ -78,7 +78,7 @@ class DownloadSlowlogRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DownloadSlowlogRequest.
+        r"""Gets the instance_id of this DownloadSlowlogRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class DownloadSlowlogRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DownloadSlowlogRequest.
+        r"""Sets the instance_id of this DownloadSlowlogRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class DownloadSlowlogRequest:
 
     @property
     def body(self):
-        """Gets the body of this DownloadSlowlogRequest.
+        r"""Gets the body of this DownloadSlowlogRequest.
 
         :return: The body of this DownloadSlowlogRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.SlowlogDownloadRequest`
@@ -109,7 +109,7 @@ class DownloadSlowlogRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DownloadSlowlogRequest.
+        r"""Sets the body of this DownloadSlowlogRequest.
 
         :param body: The body of this DownloadSlowlogRequest.
         :type body: :class:`huaweicloudsdkrds.v3.SlowlogDownloadRequest`

@@ -39,7 +39,7 @@ class ListDesktopsEipsRequest:
     }
 
     def __init__(self, enterprise_project_id=None, desktop_id=None, desktop_name=None, user_name=None, address=None, offset=None, limit=None, state=None):
-        """ListDesktopsEipsRequest
+        r"""ListDesktopsEipsRequest
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ListDesktopsEipsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListDesktopsEipsRequest.
+        r"""Gets the enterprise_project_id of this ListDesktopsEipsRequest.
 
         企业项目ID。
 
@@ -103,7 +103,7 @@ class ListDesktopsEipsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListDesktopsEipsRequest.
+        r"""Sets the enterprise_project_id of this ListDesktopsEipsRequest.
 
         企业项目ID。
 
@@ -114,7 +114,7 @@ class ListDesktopsEipsRequest:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this ListDesktopsEipsRequest.
+        r"""Gets the desktop_id of this ListDesktopsEipsRequest.
 
         桌面ID。
 
@@ -125,7 +125,7 @@ class ListDesktopsEipsRequest:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this ListDesktopsEipsRequest.
+        r"""Sets the desktop_id of this ListDesktopsEipsRequest.
 
         桌面ID。
 
@@ -136,7 +136,7 @@ class ListDesktopsEipsRequest:
 
     @property
     def desktop_name(self):
-        """Gets the desktop_name of this ListDesktopsEipsRequest.
+        r"""Gets the desktop_name of this ListDesktopsEipsRequest.
 
         桌面名称。
 
@@ -147,7 +147,7 @@ class ListDesktopsEipsRequest:
 
     @desktop_name.setter
     def desktop_name(self, desktop_name):
-        """Sets the desktop_name of this ListDesktopsEipsRequest.
+        r"""Sets the desktop_name of this ListDesktopsEipsRequest.
 
         桌面名称。
 
@@ -158,7 +158,7 @@ class ListDesktopsEipsRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ListDesktopsEipsRequest.
+        r"""Gets the user_name of this ListDesktopsEipsRequest.
 
         桌面所属用户。
 
@@ -169,7 +169,7 @@ class ListDesktopsEipsRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ListDesktopsEipsRequest.
+        r"""Sets the user_name of this ListDesktopsEipsRequest.
 
         桌面所属用户。
 
@@ -180,7 +180,7 @@ class ListDesktopsEipsRequest:
 
     @property
     def address(self):
-        """Gets the address of this ListDesktopsEipsRequest.
+        r"""Gets the address of this ListDesktopsEipsRequest.
 
         EIP地址。
 
@@ -191,7 +191,7 @@ class ListDesktopsEipsRequest:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this ListDesktopsEipsRequest.
+        r"""Sets the address of this ListDesktopsEipsRequest.
 
         EIP地址。
 
@@ -202,7 +202,7 @@ class ListDesktopsEipsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDesktopsEipsRequest.
+        r"""Gets the offset of this ListDesktopsEipsRequest.
 
         用于分页查询，查询的起始记录序号，从0开始。
 
@@ -213,7 +213,7 @@ class ListDesktopsEipsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDesktopsEipsRequest.
+        r"""Sets the offset of this ListDesktopsEipsRequest.
 
         用于分页查询，查询的起始记录序号，从0开始。
 
@@ -224,7 +224,7 @@ class ListDesktopsEipsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDesktopsEipsRequest.
+        r"""Gets the limit of this ListDesktopsEipsRequest.
 
         用于分页查询，返回桌面数量限制。如果不指定，则返回所有符合条件的记录。
 
@@ -235,7 +235,7 @@ class ListDesktopsEipsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDesktopsEipsRequest.
+        r"""Sets the limit of this ListDesktopsEipsRequest.
 
         用于分页查询，返回桌面数量限制。如果不指定，则返回所有符合条件的记录。
 
@@ -246,7 +246,7 @@ class ListDesktopsEipsRequest:
 
     @property
     def state(self):
-        """Gets the state of this ListDesktopsEipsRequest.
+        r"""Gets the state of this ListDesktopsEipsRequest.
 
         EIP绑定状态。 - bind：表示已绑定的EIP。 - unbind：表示未绑定的EIP。
 
@@ -257,7 +257,7 @@ class ListDesktopsEipsRequest:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this ListDesktopsEipsRequest.
+        r"""Sets the state of this ListDesktopsEipsRequest.
 
         EIP绑定状态。 - bind：表示已绑定的EIP。 - unbind：表示未绑定的EIP。
 

@@ -32,7 +32,7 @@ class CreatePlaybookResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, data=None, x_request_id=None):
-        """CreatePlaybookResponse
+        r"""CreatePlaybookResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class CreatePlaybookResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this CreatePlaybookResponse.
+        r"""Gets the code of this CreatePlaybookResponse.
 
         Error code
 
@@ -76,7 +76,7 @@ class CreatePlaybookResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this CreatePlaybookResponse.
+        r"""Sets the code of this CreatePlaybookResponse.
 
         Error code
 
@@ -87,7 +87,7 @@ class CreatePlaybookResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this CreatePlaybookResponse.
+        r"""Gets the message of this CreatePlaybookResponse.
 
         Error message
 
@@ -98,7 +98,7 @@ class CreatePlaybookResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CreatePlaybookResponse.
+        r"""Sets the message of this CreatePlaybookResponse.
 
         Error message
 
@@ -109,7 +109,7 @@ class CreatePlaybookResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this CreatePlaybookResponse.
+        r"""Gets the data of this CreatePlaybookResponse.
 
         :return: The data of this CreatePlaybookResponse.
         :rtype: :class:`huaweicloudsdksa.v2.PlaybookInfo`
@@ -118,7 +118,7 @@ class CreatePlaybookResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this CreatePlaybookResponse.
+        r"""Sets the data of this CreatePlaybookResponse.
 
         :param data: The data of this CreatePlaybookResponse.
         :type data: :class:`huaweicloudsdksa.v2.PlaybookInfo`
@@ -127,7 +127,7 @@ class CreatePlaybookResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreatePlaybookResponse.
+        r"""Gets the x_request_id of this CreatePlaybookResponse.
 
         :return: The x_request_id of this CreatePlaybookResponse.
         :rtype: str
@@ -136,7 +136,7 @@ class CreatePlaybookResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreatePlaybookResponse.
+        r"""Sets the x_request_id of this CreatePlaybookResponse.
 
         :param x_request_id: The x_request_id of this CreatePlaybookResponse.
         :type x_request_id: str

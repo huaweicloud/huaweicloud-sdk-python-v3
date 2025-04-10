@@ -29,7 +29,7 @@ class SupportAzsInfo:
     }
 
     def __init__(self, code=None, name=None, favored=None):
-        """SupportAzsInfo
+        r"""SupportAzsInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class SupportAzsInfo:
 
     @property
     def code(self):
-        """Gets the code of this SupportAzsInfo.
+        r"""Gets the code of this SupportAzsInfo.
 
         可用区编码。
 
@@ -68,7 +68,7 @@ class SupportAzsInfo:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this SupportAzsInfo.
+        r"""Sets the code of this SupportAzsInfo.
 
         可用区编码。
 
@@ -79,7 +79,7 @@ class SupportAzsInfo:
 
     @property
     def name(self):
-        """Gets the name of this SupportAzsInfo.
+        r"""Gets the name of this SupportAzsInfo.
 
         可用区名称。
 
@@ -90,7 +90,7 @@ class SupportAzsInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SupportAzsInfo.
+        r"""Sets the name of this SupportAzsInfo.
 
         可用区名称。
 
@@ -101,7 +101,7 @@ class SupportAzsInfo:
 
     @property
     def favored(self):
-        """Gets the favored of this SupportAzsInfo.
+        r"""Gets the favored of this SupportAzsInfo.
 
         是否支持。
 
@@ -112,7 +112,7 @@ class SupportAzsInfo:
 
     @favored.setter
     def favored(self, favored):
-        """Sets the favored of this SupportAzsInfo.
+        r"""Sets the favored of this SupportAzsInfo.
 
         是否支持。
 

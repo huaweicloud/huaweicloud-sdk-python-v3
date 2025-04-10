@@ -26,7 +26,7 @@ class ListAreaCodesResponse(SdkResponse):
     }
 
     def __init__(self, area_code_list=None):
-        """ListAreaCodesResponse
+        r"""ListAreaCodesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListAreaCodesResponse(SdkResponse):
 
     @property
     def area_code_list(self):
-        """Gets the area_code_list of this ListAreaCodesResponse.
+        r"""Gets the area_code_list of this ListAreaCodesResponse.
 
         国家码列表
 
@@ -55,7 +55,7 @@ class ListAreaCodesResponse(SdkResponse):
 
     @area_code_list.setter
     def area_code_list(self, area_code_list):
-        """Sets the area_code_list of this ListAreaCodesResponse.
+        r"""Sets the area_code_list of this ListAreaCodesResponse.
 
         国家码列表
 

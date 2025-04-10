@@ -26,7 +26,7 @@ class DeleteAuditLogResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """DeleteAuditLogResponse
+        r"""DeleteAuditLogResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteAuditLogResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this DeleteAuditLogResponse.
+        r"""Gets the job_id of this DeleteAuditLogResponse.
 
         任务ID
 
@@ -55,7 +55,7 @@ class DeleteAuditLogResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this DeleteAuditLogResponse.
+        r"""Sets the job_id of this DeleteAuditLogResponse.
 
         任务ID
 

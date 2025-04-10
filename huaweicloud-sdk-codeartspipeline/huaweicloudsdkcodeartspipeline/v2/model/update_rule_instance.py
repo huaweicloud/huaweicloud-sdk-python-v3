@@ -27,7 +27,7 @@ class UpdateRuleInstance:
     }
 
     def __init__(self, id=None, is_valid=None):
-        """UpdateRuleInstance
+        r"""UpdateRuleInstance
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateRuleInstance:
 
     @property
     def id(self):
-        """Gets the id of this UpdateRuleInstance.
+        r"""Gets the id of this UpdateRuleInstance.
 
         规则实例ID
 
@@ -61,7 +61,7 @@ class UpdateRuleInstance:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateRuleInstance.
+        r"""Sets the id of this UpdateRuleInstance.
 
         规则实例ID
 
@@ -72,7 +72,7 @@ class UpdateRuleInstance:
 
     @property
     def is_valid(self):
-        """Gets the is_valid of this UpdateRuleInstance.
+        r"""Gets the is_valid of this UpdateRuleInstance.
 
         规则实例状态
 
@@ -83,7 +83,7 @@ class UpdateRuleInstance:
 
     @is_valid.setter
     def is_valid(self, is_valid):
-        """Sets the is_valid of this UpdateRuleInstance.
+        r"""Sets the is_valid of this UpdateRuleInstance.
 
         规则实例状态
 

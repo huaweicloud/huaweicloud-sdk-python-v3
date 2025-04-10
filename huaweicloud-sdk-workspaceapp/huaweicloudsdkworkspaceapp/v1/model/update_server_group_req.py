@@ -47,7 +47,7 @@ class UpdateServerGroupReq:
     }
 
     def __init__(self, name=None, description=None, route_policy=None, storage_mount_policy=None, image_id=None, image_product_id=None, image_type=None, system_disk_type=None, system_disk_size=None, ou_name=None, app_type=None, server_group_status=None):
-        """UpdateServerGroupReq
+        r"""UpdateServerGroupReq
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class UpdateServerGroupReq:
 
     @property
     def name(self):
-        """Gets the name of this UpdateServerGroupReq.
+        r"""Gets the name of this UpdateServerGroupReq.
 
         服务器组名称，名称需满足如下规则: 1. 由中文，英文大小写，数字，_-组成，不能有空格。 2. 长度范围1~64个字符。
 
@@ -131,7 +131,7 @@ class UpdateServerGroupReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateServerGroupReq.
+        r"""Sets the name of this UpdateServerGroupReq.
 
         服务器组名称，名称需满足如下规则: 1. 由中文，英文大小写，数字，_-组成，不能有空格。 2. 长度范围1~64个字符。
 
@@ -142,7 +142,7 @@ class UpdateServerGroupReq:
 
     @property
     def description(self):
-        """Gets the description of this UpdateServerGroupReq.
+        r"""Gets the description of this UpdateServerGroupReq.
 
         服务器组描述。
 
@@ -153,7 +153,7 @@ class UpdateServerGroupReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateServerGroupReq.
+        r"""Sets the description of this UpdateServerGroupReq.
 
         服务器组描述。
 
@@ -164,7 +164,7 @@ class UpdateServerGroupReq:
 
     @property
     def route_policy(self):
-        """Gets the route_policy of this UpdateServerGroupReq.
+        r"""Gets the route_policy of this UpdateServerGroupReq.
 
         :return: The route_policy of this UpdateServerGroupReq.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.RoutePolicy`
@@ -173,7 +173,7 @@ class UpdateServerGroupReq:
 
     @route_policy.setter
     def route_policy(self, route_policy):
-        """Sets the route_policy of this UpdateServerGroupReq.
+        r"""Sets the route_policy of this UpdateServerGroupReq.
 
         :param route_policy: The route_policy of this UpdateServerGroupReq.
         :type route_policy: :class:`huaweicloudsdkworkspaceapp.v1.RoutePolicy`
@@ -182,7 +182,7 @@ class UpdateServerGroupReq:
 
     @property
     def storage_mount_policy(self):
-        """Gets the storage_mount_policy of this UpdateServerGroupReq.
+        r"""Gets the storage_mount_policy of this UpdateServerGroupReq.
 
         :return: The storage_mount_policy of this UpdateServerGroupReq.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.StorageFolderMountType`
@@ -191,7 +191,7 @@ class UpdateServerGroupReq:
 
     @storage_mount_policy.setter
     def storage_mount_policy(self, storage_mount_policy):
-        """Sets the storage_mount_policy of this UpdateServerGroupReq.
+        r"""Sets the storage_mount_policy of this UpdateServerGroupReq.
 
         :param storage_mount_policy: The storage_mount_policy of this UpdateServerGroupReq.
         :type storage_mount_policy: :class:`huaweicloudsdkworkspaceapp.v1.StorageFolderMountType`
@@ -200,7 +200,7 @@ class UpdateServerGroupReq:
 
     @property
     def image_id(self):
-        """Gets the image_id of this UpdateServerGroupReq.
+        r"""Gets the image_id of this UpdateServerGroupReq.
 
         服务器组关联的镜像ID，更新镜像ID只对组下新创建的云服务器生效。
 
@@ -211,7 +211,7 @@ class UpdateServerGroupReq:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this UpdateServerGroupReq.
+        r"""Sets the image_id of this UpdateServerGroupReq.
 
         服务器组关联的镜像ID，更新镜像ID只对组下新创建的云服务器生效。
 
@@ -222,7 +222,7 @@ class UpdateServerGroupReq:
 
     @property
     def image_product_id(self):
-        """Gets the image_product_id of this UpdateServerGroupReq.
+        r"""Gets the image_product_id of this UpdateServerGroupReq.
 
         服务器组的镜像的productId。
 
@@ -233,7 +233,7 @@ class UpdateServerGroupReq:
 
     @image_product_id.setter
     def image_product_id(self, image_product_id):
-        """Sets the image_product_id of this UpdateServerGroupReq.
+        r"""Sets the image_product_id of this UpdateServerGroupReq.
 
         服务器组的镜像的productId。
 
@@ -244,7 +244,7 @@ class UpdateServerGroupReq:
 
     @property
     def image_type(self):
-        """Gets the image_type of this UpdateServerGroupReq.
+        r"""Gets the image_type of this UpdateServerGroupReq.
 
         :return: The image_type of this UpdateServerGroupReq.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ImageTypeEnum`
@@ -253,7 +253,7 @@ class UpdateServerGroupReq:
 
     @image_type.setter
     def image_type(self, image_type):
-        """Sets the image_type of this UpdateServerGroupReq.
+        r"""Sets the image_type of this UpdateServerGroupReq.
 
         :param image_type: The image_type of this UpdateServerGroupReq.
         :type image_type: :class:`huaweicloudsdkworkspaceapp.v1.ImageTypeEnum`
@@ -262,7 +262,7 @@ class UpdateServerGroupReq:
 
     @property
     def system_disk_type(self):
-        """Gets the system_disk_type of this UpdateServerGroupReq.
+        r"""Gets the system_disk_type of this UpdateServerGroupReq.
 
         :return: The system_disk_type of this UpdateServerGroupReq.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.VolumeType`
@@ -271,7 +271,7 @@ class UpdateServerGroupReq:
 
     @system_disk_type.setter
     def system_disk_type(self, system_disk_type):
-        """Sets the system_disk_type of this UpdateServerGroupReq.
+        r"""Sets the system_disk_type of this UpdateServerGroupReq.
 
         :param system_disk_type: The system_disk_type of this UpdateServerGroupReq.
         :type system_disk_type: :class:`huaweicloudsdkworkspaceapp.v1.VolumeType`
@@ -280,7 +280,7 @@ class UpdateServerGroupReq:
 
     @property
     def system_disk_size(self):
-        """Gets the system_disk_size of this UpdateServerGroupReq.
+        r"""Gets the system_disk_size of this UpdateServerGroupReq.
 
         磁盘容量，单位GB。
 
@@ -291,7 +291,7 @@ class UpdateServerGroupReq:
 
     @system_disk_size.setter
     def system_disk_size(self, system_disk_size):
-        """Sets the system_disk_size of this UpdateServerGroupReq.
+        r"""Sets the system_disk_size of this UpdateServerGroupReq.
 
         磁盘容量，单位GB。
 
@@ -302,7 +302,7 @@ class UpdateServerGroupReq:
 
     @property
     def ou_name(self):
-        """Gets the ou_name of this UpdateServerGroupReq.
+        r"""Gets the ou_name of this UpdateServerGroupReq.
 
         默认组织名称。
 
@@ -313,7 +313,7 @@ class UpdateServerGroupReq:
 
     @ou_name.setter
     def ou_name(self, ou_name):
-        """Sets the ou_name of this UpdateServerGroupReq.
+        r"""Sets the ou_name of this UpdateServerGroupReq.
 
         默认组织名称。
 
@@ -324,7 +324,7 @@ class UpdateServerGroupReq:
 
     @property
     def app_type(self):
-        """Gets the app_type of this UpdateServerGroupReq.
+        r"""Gets the app_type of this UpdateServerGroupReq.
 
         :return: The app_type of this UpdateServerGroupReq.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
@@ -333,7 +333,7 @@ class UpdateServerGroupReq:
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this UpdateServerGroupReq.
+        r"""Sets the app_type of this UpdateServerGroupReq.
 
         :param app_type: The app_type of this UpdateServerGroupReq.
         :type app_type: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
@@ -342,7 +342,7 @@ class UpdateServerGroupReq:
 
     @property
     def server_group_status(self):
-        """Gets the server_group_status of this UpdateServerGroupReq.
+        r"""Gets the server_group_status of this UpdateServerGroupReq.
 
         服务器是否处于禁用状态： * `true` - 启用状态 * `false` - 禁用状态
 
@@ -353,7 +353,7 @@ class UpdateServerGroupReq:
 
     @server_group_status.setter
     def server_group_status(self, server_group_status):
-        """Sets the server_group_status of this UpdateServerGroupReq.
+        r"""Sets the server_group_status of this UpdateServerGroupReq.
 
         服务器是否处于禁用状态： * `true` - 启用状态 * `false` - 禁用状态
 

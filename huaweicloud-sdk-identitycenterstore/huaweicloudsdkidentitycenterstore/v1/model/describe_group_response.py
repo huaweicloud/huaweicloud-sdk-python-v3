@@ -44,7 +44,7 @@ class DescribeGroupResponse(SdkResponse):
     }
 
     def __init__(self, description=None, display_name=None, external_id=None, external_ids=None, group_id=None, identity_store_id=None, created_at=None, created_by=None, updated_at=None, updated_by=None):
-        """DescribeGroupResponse
+        r"""DescribeGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class DescribeGroupResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this DescribeGroupResponse.
+        r"""Gets the description of this DescribeGroupResponse.
 
         包含组描述的字符串
 
@@ -118,7 +118,7 @@ class DescribeGroupResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DescribeGroupResponse.
+        r"""Sets the description of this DescribeGroupResponse.
 
         包含组描述的字符串
 
@@ -129,7 +129,7 @@ class DescribeGroupResponse(SdkResponse):
 
     @property
     def display_name(self):
-        """Gets the display_name of this DescribeGroupResponse.
+        r"""Gets the display_name of this DescribeGroupResponse.
 
         包含组显示名称的字符串
 
@@ -140,7 +140,7 @@ class DescribeGroupResponse(SdkResponse):
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this DescribeGroupResponse.
+        r"""Sets the display_name of this DescribeGroupResponse.
 
         包含组显示名称的字符串
 
@@ -151,7 +151,7 @@ class DescribeGroupResponse(SdkResponse):
 
     @property
     def external_id(self):
-        """Gets the external_id of this DescribeGroupResponse.
+        r"""Gets the external_id of this DescribeGroupResponse.
 
         外部身份源分配给此资源的标识符
 
@@ -162,7 +162,7 @@ class DescribeGroupResponse(SdkResponse):
 
     @external_id.setter
     def external_id(self, external_id):
-        """Sets the external_id of this DescribeGroupResponse.
+        r"""Sets the external_id of this DescribeGroupResponse.
 
         外部身份源分配给此资源的标识符
 
@@ -173,7 +173,7 @@ class DescribeGroupResponse(SdkResponse):
 
     @property
     def external_ids(self):
-        """Gets the external_ids of this DescribeGroupResponse.
+        r"""Gets the external_ids of this DescribeGroupResponse.
 
         包含外部身份提供商颁发给此资源的标识符的对象列表
 
@@ -184,7 +184,7 @@ class DescribeGroupResponse(SdkResponse):
 
     @external_ids.setter
     def external_ids(self, external_ids):
-        """Sets the external_ids of this DescribeGroupResponse.
+        r"""Sets the external_ids of this DescribeGroupResponse.
 
         包含外部身份提供商颁发给此资源的标识符的对象列表
 
@@ -195,7 +195,7 @@ class DescribeGroupResponse(SdkResponse):
 
     @property
     def group_id(self):
-        """Gets the group_id of this DescribeGroupResponse.
+        r"""Gets the group_id of this DescribeGroupResponse.
 
         身份源中IAM身份中心用户组的全局唯一标识符（ID）
 
@@ -206,7 +206,7 @@ class DescribeGroupResponse(SdkResponse):
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this DescribeGroupResponse.
+        r"""Sets the group_id of this DescribeGroupResponse.
 
         身份源中IAM身份中心用户组的全局唯一标识符（ID）
 
@@ -217,7 +217,7 @@ class DescribeGroupResponse(SdkResponse):
 
     @property
     def identity_store_id(self):
-        """Gets the identity_store_id of this DescribeGroupResponse.
+        r"""Gets the identity_store_id of this DescribeGroupResponse.
 
         身份源的全局唯一标识符（ID）
 
@@ -228,7 +228,7 @@ class DescribeGroupResponse(SdkResponse):
 
     @identity_store_id.setter
     def identity_store_id(self, identity_store_id):
-        """Sets the identity_store_id of this DescribeGroupResponse.
+        r"""Sets the identity_store_id of this DescribeGroupResponse.
 
         身份源的全局唯一标识符（ID）
 
@@ -239,7 +239,7 @@ class DescribeGroupResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this DescribeGroupResponse.
+        r"""Gets the created_at of this DescribeGroupResponse.
 
         创建时的时间戳
 
@@ -250,7 +250,7 @@ class DescribeGroupResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this DescribeGroupResponse.
+        r"""Sets the created_at of this DescribeGroupResponse.
 
         创建时的时间戳
 
@@ -261,7 +261,7 @@ class DescribeGroupResponse(SdkResponse):
 
     @property
     def created_by(self):
-        """Gets the created_by of this DescribeGroupResponse.
+        r"""Gets the created_by of this DescribeGroupResponse.
 
         创建者
 
@@ -272,7 +272,7 @@ class DescribeGroupResponse(SdkResponse):
 
     @created_by.setter
     def created_by(self, created_by):
-        """Sets the created_by of this DescribeGroupResponse.
+        r"""Sets the created_by of this DescribeGroupResponse.
 
         创建者
 
@@ -283,7 +283,7 @@ class DescribeGroupResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this DescribeGroupResponse.
+        r"""Gets the updated_at of this DescribeGroupResponse.
 
         更新时的时间戳
 
@@ -294,7 +294,7 @@ class DescribeGroupResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this DescribeGroupResponse.
+        r"""Sets the updated_at of this DescribeGroupResponse.
 
         更新时的时间戳
 
@@ -305,7 +305,7 @@ class DescribeGroupResponse(SdkResponse):
 
     @property
     def updated_by(self):
-        """Gets the updated_by of this DescribeGroupResponse.
+        r"""Gets the updated_by of this DescribeGroupResponse.
 
         更新者
 
@@ -316,7 +316,7 @@ class DescribeGroupResponse(SdkResponse):
 
     @updated_by.setter
     def updated_by(self, updated_by):
-        """Sets the updated_by of this DescribeGroupResponse.
+        r"""Sets the updated_by of this DescribeGroupResponse.
 
         更新者
 

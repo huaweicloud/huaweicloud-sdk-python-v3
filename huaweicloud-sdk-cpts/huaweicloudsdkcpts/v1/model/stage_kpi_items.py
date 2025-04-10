@@ -27,7 +27,7 @@ class StageKpiItems:
     }
 
     def __init__(self, average_response_time=None, success_rate=None):
-        """StageKpiItems
+        r"""StageKpiItems
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class StageKpiItems:
 
     @property
     def average_response_time(self):
-        """Gets the average_response_time of this StageKpiItems.
+        r"""Gets the average_response_time of this StageKpiItems.
 
         :return: The average_response_time of this StageKpiItems.
         :rtype: :class:`huaweicloudsdkcpts.v1.StageKpiItem`
@@ -59,7 +59,7 @@ class StageKpiItems:
 
     @average_response_time.setter
     def average_response_time(self, average_response_time):
-        """Sets the average_response_time of this StageKpiItems.
+        r"""Sets the average_response_time of this StageKpiItems.
 
         :param average_response_time: The average_response_time of this StageKpiItems.
         :type average_response_time: :class:`huaweicloudsdkcpts.v1.StageKpiItem`
@@ -68,7 +68,7 @@ class StageKpiItems:
 
     @property
     def success_rate(self):
-        """Gets the success_rate of this StageKpiItems.
+        r"""Gets the success_rate of this StageKpiItems.
 
         :return: The success_rate of this StageKpiItems.
         :rtype: :class:`huaweicloudsdkcpts.v1.StageKpiItem`
@@ -77,7 +77,7 @@ class StageKpiItems:
 
     @success_rate.setter
     def success_rate(self, success_rate):
-        """Sets the success_rate of this StageKpiItems.
+        r"""Sets the success_rate of this StageKpiItems.
 
         :param success_rate: The success_rate of this StageKpiItems.
         :type success_rate: :class:`huaweicloudsdkcpts.v1.StageKpiItem`

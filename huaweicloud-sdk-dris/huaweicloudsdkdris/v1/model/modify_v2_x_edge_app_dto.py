@@ -25,7 +25,7 @@ class ModifyV2XEdgeAppDTO:
     }
 
     def __init__(self, app_version=None):
-        """ModifyV2XEdgeAppDTO
+        r"""ModifyV2XEdgeAppDTO
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ModifyV2XEdgeAppDTO:
 
     @property
     def app_version(self):
-        """Gets the app_version of this ModifyV2XEdgeAppDTO.
+        r"""Gets the app_version of this ModifyV2XEdgeAppDTO.
 
         **参数说明**：应用版本，比如1.0.0，升级边缘应用版本时应确保应用版本状态为发布（PUBLISHED），查询应用版本状态方法参见：[查询应用版本详情](https://support.huaweicloud.com/api-v2x/v2x_04_0104.html)，更新应用版本状态方法参见：[更新应用版本状态](https://support.huaweicloud.com/api-v2x/v2x_04_0105.html)。  **取值范围**：只允许小写字母、数字、连接符（-）、点（.）的组合且要以小写字母或数字开头和结尾。
 
@@ -53,7 +53,7 @@ class ModifyV2XEdgeAppDTO:
 
     @app_version.setter
     def app_version(self, app_version):
-        """Sets the app_version of this ModifyV2XEdgeAppDTO.
+        r"""Sets the app_version of this ModifyV2XEdgeAppDTO.
 
         **参数说明**：应用版本，比如1.0.0，升级边缘应用版本时应确保应用版本状态为发布（PUBLISHED），查询应用版本状态方法参见：[查询应用版本详情](https://support.huaweicloud.com/api-v2x/v2x_04_0104.html)，更新应用版本状态方法参见：[更新应用版本状态](https://support.huaweicloud.com/api-v2x/v2x_04_0105.html)。  **取值范围**：只允许小写字母、数字、连接符（-）、点（.）的组合且要以小写字母或数字开头和结尾。
 

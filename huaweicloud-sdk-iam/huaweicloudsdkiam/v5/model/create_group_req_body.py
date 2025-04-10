@@ -27,7 +27,7 @@ class CreateGroupReqBody:
     }
 
     def __init__(self, group_name=None, description=None):
-        """CreateGroupReqBody
+        r"""CreateGroupReqBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateGroupReqBody:
 
     @property
     def group_name(self):
-        """Gets the group_name of this CreateGroupReqBody.
+        r"""Gets the group_name of this CreateGroupReqBody.
 
         用户组名，可包含中文、英文、数字、空格、\"_\"、\"-\"、\"{\"和\"}\"的字符串。
 
@@ -60,7 +60,7 @@ class CreateGroupReqBody:
 
     @group_name.setter
     def group_name(self, group_name):
-        """Sets the group_name of this CreateGroupReqBody.
+        r"""Sets the group_name of this CreateGroupReqBody.
 
         用户组名，可包含中文、英文、数字、空格、\"_\"、\"-\"、\"{\"和\"}\"的字符串。
 
@@ -71,7 +71,7 @@ class CreateGroupReqBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateGroupReqBody.
+        r"""Gets the description of this CreateGroupReqBody.
 
         用户组描述信息，不能包含特定字符\"@\"、\"#\"、\"%\"、\"&\"、\"<\"、\">\"、\"\\\\\"、\"$\"、\"^\"和\"*\"的字符串。
 
@@ -82,7 +82,7 @@ class CreateGroupReqBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateGroupReqBody.
+        r"""Sets the description of this CreateGroupReqBody.
 
         用户组描述信息，不能包含特定字符\"@\"、\"#\"、\"%\"、\"&\"、\"<\"、\">\"、\"\\\\\"、\"$\"、\"^\"和\"*\"的字符串。
 

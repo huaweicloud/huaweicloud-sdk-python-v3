@@ -33,7 +33,7 @@ class PeriodReq:
     }
 
     def __init__(self, period_type=None, period_num=None, is_auto_renew=None, is_auto_pay=None, console_url=None):
-        """PeriodReq
+        r"""PeriodReq
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class PeriodReq:
 
     @property
     def period_type(self):
-        """Gets the period_type of this PeriodReq.
+        r"""Gets the period_type of this PeriodReq.
 
         订购周期类型。 - 2: 包月。 - 3: 包年。
 
@@ -80,7 +80,7 @@ class PeriodReq:
 
     @period_type.setter
     def period_type(self, period_type):
-        """Sets the period_type of this PeriodReq.
+        r"""Sets the period_type of this PeriodReq.
 
         订购周期类型。 - 2: 包月。 - 3: 包年。
 
@@ -91,7 +91,7 @@ class PeriodReq:
 
     @property
     def period_num(self):
-        """Gets the period_num of this PeriodReq.
+        r"""Gets the period_num of this PeriodReq.
 
         订购周期数。 - 若选择包月（参数范围：1-9）。 - 若选择包年（参数范围：1-3）。
 
@@ -102,7 +102,7 @@ class PeriodReq:
 
     @period_num.setter
     def period_num(self, period_num):
-        """Sets the period_num of this PeriodReq.
+        r"""Sets the period_num of this PeriodReq.
 
         订购周期数。 - 若选择包月（参数范围：1-9）。 - 若选择包年（参数范围：1-3）。
 
@@ -113,7 +113,7 @@ class PeriodReq:
 
     @property
     def is_auto_renew(self):
-        """Gets the is_auto_renew of this PeriodReq.
+        r"""Gets the is_auto_renew of this PeriodReq.
 
         是否自动续订，为空时表示不自动续订 - 1: 自动续订。 - 0: 不自动续订（默认）。
 
@@ -124,7 +124,7 @@ class PeriodReq:
 
     @is_auto_renew.setter
     def is_auto_renew(self, is_auto_renew):
-        """Sets the is_auto_renew of this PeriodReq.
+        r"""Sets the is_auto_renew of this PeriodReq.
 
         是否自动续订，为空时表示不自动续订 - 1: 自动续订。 - 0: 不自动续订（默认）。
 
@@ -135,7 +135,7 @@ class PeriodReq:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this PeriodReq.
+        r"""Gets the is_auto_pay of this PeriodReq.
 
         是否自动支付。下单订购后，是否自动从客户的华为云账户中支付，而不需要客户手动去进行支付。该参数适用于包周期集群。  - 1: 是（会自动选择折扣和优惠券进行优惠，然后自动从客户华为云账户中支付），自动支付失败后会生成订单成功(该订单应付金额是优惠后金额)、但订单状态为“待支付”，等待客户手动支付(手动支付时，客户还可以修改系统自动选择的折扣和优惠券)。  - 0: 否（需要客户手动去支付，客户可以选择折扣和优惠券）。默认值为“0”。
 
@@ -146,7 +146,7 @@ class PeriodReq:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this PeriodReq.
+        r"""Sets the is_auto_pay of this PeriodReq.
 
         是否自动支付。下单订购后，是否自动从客户的华为云账户中支付，而不需要客户手动去进行支付。该参数适用于包周期集群。  - 1: 是（会自动选择折扣和优惠券进行优惠，然后自动从客户华为云账户中支付），自动支付失败后会生成订单成功(该订单应付金额是优惠后金额)、但订单状态为“待支付”，等待客户手动支付(手动支付时，客户还可以修改系统自动选择的折扣和优惠券)。  - 0: 否（需要客户手动去支付，客户可以选择折扣和优惠券）。默认值为“0”。
 
@@ -157,7 +157,7 @@ class PeriodReq:
 
     @property
     def console_url(self):
-        """Gets the console_url of this PeriodReq.
+        r"""Gets the console_url of this PeriodReq.
 
         云服务ConsoleURL。 订购订单支付完成后，客户可以通过此URL跳转到云服务Console页面查看信息。（仅手动支付时涉及）。
 
@@ -168,7 +168,7 @@ class PeriodReq:
 
     @console_url.setter
     def console_url(self, console_url):
-        """Sets the console_url of this PeriodReq.
+        r"""Sets the console_url of this PeriodReq.
 
         云服务ConsoleURL。 订购订单支付完成后，客户可以通过此URL跳转到云服务Console页面查看信息。（仅手动支付时涉及）。
 

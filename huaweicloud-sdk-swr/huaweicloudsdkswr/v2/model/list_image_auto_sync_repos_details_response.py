@@ -26,7 +26,7 @@ class ListImageAutoSyncReposDetailsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListImageAutoSyncReposDetailsResponse
+        r"""ListImageAutoSyncReposDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListImageAutoSyncReposDetailsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListImageAutoSyncReposDetailsResponse.
+        r"""Gets the body of this ListImageAutoSyncReposDetailsResponse.
 
         镜像自动同步规则
 
@@ -55,7 +55,7 @@ class ListImageAutoSyncReposDetailsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListImageAutoSyncReposDetailsResponse.
+        r"""Sets the body of this ListImageAutoSyncReposDetailsResponse.
 
         镜像自动同步规则
 

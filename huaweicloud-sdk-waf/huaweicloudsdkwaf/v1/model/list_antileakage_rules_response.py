@@ -28,7 +28,7 @@ class ListAntileakageRulesResponse(SdkResponse):
     }
 
     def __init__(self, total=None, items=None):
-        """ListAntileakageRulesResponse
+        r"""ListAntileakageRulesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAntileakageRulesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListAntileakageRulesResponse.
+        r"""Gets the total of this ListAntileakageRulesResponse.
 
         防泄漏规则数量
 
@@ -62,7 +62,7 @@ class ListAntileakageRulesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListAntileakageRulesResponse.
+        r"""Sets the total of this ListAntileakageRulesResponse.
 
         防泄漏规则数量
 
@@ -73,7 +73,7 @@ class ListAntileakageRulesResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListAntileakageRulesResponse.
+        r"""Gets the items of this ListAntileakageRulesResponse.
 
         防泄漏规则列表
 
@@ -84,7 +84,7 @@ class ListAntileakageRulesResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListAntileakageRulesResponse.
+        r"""Sets the items of this ListAntileakageRulesResponse.
 
         防泄漏规则列表
 

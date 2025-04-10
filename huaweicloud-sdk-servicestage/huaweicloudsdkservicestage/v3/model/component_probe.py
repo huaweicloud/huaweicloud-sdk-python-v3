@@ -39,7 +39,7 @@ class ComponentProbe:
     }
 
     def __init__(self, type=None, delay=None, timeout=None, scheme=None, host=None, port=None, path=None, command=None):
-        """ComponentProbe
+        r"""ComponentProbe
 
         The model defined in huaweicloud sdk
 
@@ -89,7 +89,7 @@ class ComponentProbe:
 
     @property
     def type(self):
-        """Gets the type of this ComponentProbe.
+        r"""Gets the type of this ComponentProbe.
 
         :return: The type of this ComponentProbe.
         :rtype: str
@@ -98,7 +98,7 @@ class ComponentProbe:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ComponentProbe.
+        r"""Sets the type of this ComponentProbe.
 
         :param type: The type of this ComponentProbe.
         :type type: str
@@ -107,7 +107,7 @@ class ComponentProbe:
 
     @property
     def delay(self):
-        """Gets the delay of this ComponentProbe.
+        r"""Gets the delay of this ComponentProbe.
 
         表示启动后多久开始探测
 
@@ -118,7 +118,7 @@ class ComponentProbe:
 
     @delay.setter
     def delay(self, delay):
-        """Sets the delay of this ComponentProbe.
+        r"""Sets the delay of this ComponentProbe.
 
         表示启动后多久开始探测
 
@@ -129,7 +129,7 @@ class ComponentProbe:
 
     @property
     def timeout(self):
-        """Gets the timeout of this ComponentProbe.
+        r"""Gets the timeout of this ComponentProbe.
 
         表示探测超时时间
 
@@ -140,7 +140,7 @@ class ComponentProbe:
 
     @timeout.setter
     def timeout(self, timeout):
-        """Sets the timeout of this ComponentProbe.
+        r"""Sets the timeout of this ComponentProbe.
 
         表示探测超时时间
 
@@ -151,7 +151,7 @@ class ComponentProbe:
 
     @property
     def scheme(self):
-        """Gets the scheme of this ComponentProbe.
+        r"""Gets the scheme of this ComponentProbe.
 
         type为http类型时生效
 
@@ -162,7 +162,7 @@ class ComponentProbe:
 
     @scheme.setter
     def scheme(self, scheme):
-        """Sets the scheme of this ComponentProbe.
+        r"""Sets the scheme of this ComponentProbe.
 
         type为http类型时生效
 
@@ -173,7 +173,7 @@ class ComponentProbe:
 
     @property
     def host(self):
-        """Gets the host of this ComponentProbe.
+        r"""Gets the host of this ComponentProbe.
 
         type为http类型时生效。默认为POD的IP, 可以指定自定义的IP
 
@@ -184,7 +184,7 @@ class ComponentProbe:
 
     @host.setter
     def host(self, host):
-        """Sets the host of this ComponentProbe.
+        r"""Sets the host of this ComponentProbe.
 
         type为http类型时生效。默认为POD的IP, 可以指定自定义的IP
 
@@ -195,7 +195,7 @@ class ComponentProbe:
 
     @property
     def port(self):
-        """Gets the port of this ComponentProbe.
+        r"""Gets the port of this ComponentProbe.
 
         type为http和tcp类型时生效。
 
@@ -206,7 +206,7 @@ class ComponentProbe:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this ComponentProbe.
+        r"""Sets the port of this ComponentProbe.
 
         type为http和tcp类型时生效。
 
@@ -217,7 +217,7 @@ class ComponentProbe:
 
     @property
     def path(self):
-        """Gets the path of this ComponentProbe.
+        r"""Gets the path of this ComponentProbe.
 
         type为http类型时生效。请求路径。
 
@@ -228,7 +228,7 @@ class ComponentProbe:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ComponentProbe.
+        r"""Sets the path of this ComponentProbe.
 
         type为http类型时生效。请求路径。
 
@@ -239,7 +239,7 @@ class ComponentProbe:
 
     @property
     def command(self):
-        """Gets the command of this ComponentProbe.
+        r"""Gets the command of this ComponentProbe.
 
         type为command类型时生效。命令列表
 
@@ -250,7 +250,7 @@ class ComponentProbe:
 
     @command.setter
     def command(self, command):
-        """Sets the command of this ComponentProbe.
+        r"""Sets the command of this ComponentProbe.
 
         type为command类型时生效。命令列表
 

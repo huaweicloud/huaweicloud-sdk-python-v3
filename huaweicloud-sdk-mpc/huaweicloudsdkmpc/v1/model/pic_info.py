@@ -25,7 +25,7 @@ class PicInfo:
     }
 
     def __init__(self, pic_name=None):
-        """PicInfo
+        r"""PicInfo
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class PicInfo:
 
     @property
     def pic_name(self):
-        """Gets the pic_name of this PicInfo.
+        r"""Gets the pic_name of this PicInfo.
 
         截图文件名。 
 
@@ -54,7 +54,7 @@ class PicInfo:
 
     @pic_name.setter
     def pic_name(self, pic_name):
-        """Sets the pic_name of this PicInfo.
+        r"""Sets the pic_name of this PicInfo.
 
         截图文件名。 
 

@@ -33,7 +33,7 @@ class ListRelatedCommitsRequest:
     }
 
     def __init__(self, repository_uuid=None, type=None, search=None, page=None, per_page=None):
-        """ListRelatedCommitsRequest
+        r"""ListRelatedCommitsRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListRelatedCommitsRequest:
 
     @property
     def repository_uuid(self):
-        """Gets the repository_uuid of this ListRelatedCommitsRequest.
+        r"""Gets the repository_uuid of this ListRelatedCommitsRequest.
 
         仓库长id
 
@@ -81,7 +81,7 @@ class ListRelatedCommitsRequest:
 
     @repository_uuid.setter
     def repository_uuid(self, repository_uuid):
-        """Sets the repository_uuid of this ListRelatedCommitsRequest.
+        r"""Sets the repository_uuid of this ListRelatedCommitsRequest.
 
         仓库长id
 
@@ -92,7 +92,7 @@ class ListRelatedCommitsRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListRelatedCommitsRequest.
+        r"""Gets the type of this ListRelatedCommitsRequest.
 
         关联工作项类型
 
@@ -103,7 +103,7 @@ class ListRelatedCommitsRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListRelatedCommitsRequest.
+        r"""Sets the type of this ListRelatedCommitsRequest.
 
         关联工作项类型
 
@@ -114,7 +114,7 @@ class ListRelatedCommitsRequest:
 
     @property
     def search(self):
-        """Gets the search of this ListRelatedCommitsRequest.
+        r"""Gets the search of this ListRelatedCommitsRequest.
 
         查询关键字
 
@@ -125,7 +125,7 @@ class ListRelatedCommitsRequest:
 
     @search.setter
     def search(self, search):
-        """Sets the search of this ListRelatedCommitsRequest.
+        r"""Sets the search of this ListRelatedCommitsRequest.
 
         查询关键字
 
@@ -136,7 +136,7 @@ class ListRelatedCommitsRequest:
 
     @property
     def page(self):
-        """Gets the page of this ListRelatedCommitsRequest.
+        r"""Gets the page of this ListRelatedCommitsRequest.
 
         页码
 
@@ -147,7 +147,7 @@ class ListRelatedCommitsRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListRelatedCommitsRequest.
+        r"""Sets the page of this ListRelatedCommitsRequest.
 
         页码
 
@@ -158,7 +158,7 @@ class ListRelatedCommitsRequest:
 
     @property
     def per_page(self):
-        """Gets the per_page of this ListRelatedCommitsRequest.
+        r"""Gets the per_page of this ListRelatedCommitsRequest.
 
         每页数量
 
@@ -169,7 +169,7 @@ class ListRelatedCommitsRequest:
 
     @per_page.setter
     def per_page(self, per_page):
-        """Sets the per_page of this ListRelatedCommitsRequest.
+        r"""Sets the per_page of this ListRelatedCommitsRequest.
 
         每页数量
 

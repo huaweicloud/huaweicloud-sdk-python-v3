@@ -28,7 +28,7 @@ class UpdateAppInfoResponse(SdkResponse):
     }
 
     def __init__(self, status=None, result=None):
-        """UpdateAppInfoResponse
+        r"""UpdateAppInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateAppInfoResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateAppInfoResponse.
+        r"""Gets the status of this UpdateAppInfoResponse.
 
         请求成功失败状态
 
@@ -62,7 +62,7 @@ class UpdateAppInfoResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateAppInfoResponse.
+        r"""Sets the status of this UpdateAppInfoResponse.
 
         请求成功失败状态
 
@@ -73,7 +73,7 @@ class UpdateAppInfoResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this UpdateAppInfoResponse.
+        r"""Gets the result of this UpdateAppInfoResponse.
 
         :return: The result of this UpdateAppInfoResponse.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.AppBaseResponse`
@@ -82,7 +82,7 @@ class UpdateAppInfoResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this UpdateAppInfoResponse.
+        r"""Sets the result of this UpdateAppInfoResponse.
 
         :param result: The result of this UpdateAppInfoResponse.
         :type result: :class:`huaweicloudsdkcodeartsdeploy.v2.AppBaseResponse`

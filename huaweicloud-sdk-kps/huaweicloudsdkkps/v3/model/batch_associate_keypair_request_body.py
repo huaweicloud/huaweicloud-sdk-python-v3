@@ -25,7 +25,7 @@ class BatchAssociateKeypairRequestBody:
     }
 
     def __init__(self, batch_keypairs=None):
-        """BatchAssociateKeypairRequestBody
+        r"""BatchAssociateKeypairRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchAssociateKeypairRequestBody:
 
     @property
     def batch_keypairs(self):
-        """Gets the batch_keypairs of this BatchAssociateKeypairRequestBody.
+        r"""Gets the batch_keypairs of this BatchAssociateKeypairRequestBody.
 
         最多可同时选择10个弹性云服务器绑定密钥对。  约束：只支持选择相同的密钥对，弹性云服务器处于“运行中”状态，并未绑定密钥对。
 
@@ -53,7 +53,7 @@ class BatchAssociateKeypairRequestBody:
 
     @batch_keypairs.setter
     def batch_keypairs(self, batch_keypairs):
-        """Sets the batch_keypairs of this BatchAssociateKeypairRequestBody.
+        r"""Sets the batch_keypairs of this BatchAssociateKeypairRequestBody.
 
         最多可同时选择10个弹性云服务器绑定密钥对。  约束：只支持选择相同的密钥对，弹性云服务器处于“运行中”状态，并未绑定密钥对。
 

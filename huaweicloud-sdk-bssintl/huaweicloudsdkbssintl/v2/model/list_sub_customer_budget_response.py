@@ -30,7 +30,7 @@ class ListSubCustomerBudgetResponse(SdkResponse):
     }
 
     def __init__(self, measure_id=None, currency=None, budget_infos=None):
-        """ListSubCustomerBudgetResponse
+        r"""ListSubCustomerBudgetResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListSubCustomerBudgetResponse(SdkResponse):
 
     @property
     def measure_id(self):
-        """Gets the measure_id of this ListSubCustomerBudgetResponse.
+        r"""Gets the measure_id of this ListSubCustomerBudgetResponse.
 
         |参数名称：金额单位。||参数的约束及描述：非必填参数|
 
@@ -69,7 +69,7 @@ class ListSubCustomerBudgetResponse(SdkResponse):
 
     @measure_id.setter
     def measure_id(self, measure_id):
-        """Sets the measure_id of this ListSubCustomerBudgetResponse.
+        r"""Sets the measure_id of this ListSubCustomerBudgetResponse.
 
         |参数名称：金额单位。||参数的约束及描述：非必填参数|
 
@@ -80,7 +80,7 @@ class ListSubCustomerBudgetResponse(SdkResponse):
 
     @property
     def currency(self):
-        """Gets the currency of this ListSubCustomerBudgetResponse.
+        r"""Gets the currency of this ListSubCustomerBudgetResponse.
 
         |参数名称：货币，CNY：人民币，USD：美元||参数的约束及描述：非必填参数|
 
@@ -91,7 +91,7 @@ class ListSubCustomerBudgetResponse(SdkResponse):
 
     @currency.setter
     def currency(self, currency):
-        """Sets the currency of this ListSubCustomerBudgetResponse.
+        r"""Sets the currency of this ListSubCustomerBudgetResponse.
 
         |参数名称：货币，CNY：人民币，USD：美元||参数的约束及描述：非必填参数|
 
@@ -102,7 +102,7 @@ class ListSubCustomerBudgetResponse(SdkResponse):
 
     @property
     def budget_infos(self):
-        """Gets the budget_infos of this ListSubCustomerBudgetResponse.
+        r"""Gets the budget_infos of this ListSubCustomerBudgetResponse.
 
         |参数名称：客户预算信息||参数的约束及描述：必填参数|
 
@@ -113,7 +113,7 @@ class ListSubCustomerBudgetResponse(SdkResponse):
 
     @budget_infos.setter
     def budget_infos(self, budget_infos):
-        """Sets the budget_infos of this ListSubCustomerBudgetResponse.
+        r"""Sets the budget_infos of this ListSubCustomerBudgetResponse.
 
         |参数名称：客户预算信息||参数的约束及描述：必填参数|
 

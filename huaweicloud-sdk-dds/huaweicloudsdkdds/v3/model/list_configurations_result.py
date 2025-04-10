@@ -41,7 +41,7 @@ class ListConfigurationsResult:
     }
 
     def __init__(self, id=None, name=None, description=None, datastore_version=None, datastore_name=None, node_type=None, created=None, updated=None, user_defined=None):
-        """ListConfigurationsResult
+        r"""ListConfigurationsResult
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class ListConfigurationsResult:
 
     @property
     def id(self):
-        """Gets the id of this ListConfigurationsResult.
+        r"""Gets the id of this ListConfigurationsResult.
 
         参数模板ID。
 
@@ -101,7 +101,7 @@ class ListConfigurationsResult:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListConfigurationsResult.
+        r"""Sets the id of this ListConfigurationsResult.
 
         参数模板ID。
 
@@ -112,7 +112,7 @@ class ListConfigurationsResult:
 
     @property
     def name(self):
-        """Gets the name of this ListConfigurationsResult.
+        r"""Gets the name of this ListConfigurationsResult.
 
         参数模板名称。
 
@@ -123,7 +123,7 @@ class ListConfigurationsResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListConfigurationsResult.
+        r"""Sets the name of this ListConfigurationsResult.
 
         参数模板名称。
 
@@ -134,7 +134,7 @@ class ListConfigurationsResult:
 
     @property
     def description(self):
-        """Gets the description of this ListConfigurationsResult.
+        r"""Gets the description of this ListConfigurationsResult.
 
         参数模板描述。
 
@@ -145,7 +145,7 @@ class ListConfigurationsResult:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ListConfigurationsResult.
+        r"""Sets the description of this ListConfigurationsResult.
 
         参数模板描述。
 
@@ -156,7 +156,7 @@ class ListConfigurationsResult:
 
     @property
     def datastore_version(self):
-        """Gets the datastore_version of this ListConfigurationsResult.
+        r"""Gets the datastore_version of this ListConfigurationsResult.
 
         数据库版本。
 
@@ -167,7 +167,7 @@ class ListConfigurationsResult:
 
     @datastore_version.setter
     def datastore_version(self, datastore_version):
-        """Sets the datastore_version of this ListConfigurationsResult.
+        r"""Sets the datastore_version of this ListConfigurationsResult.
 
         数据库版本。
 
@@ -178,7 +178,7 @@ class ListConfigurationsResult:
 
     @property
     def datastore_name(self):
-        """Gets the datastore_name of this ListConfigurationsResult.
+        r"""Gets the datastore_name of this ListConfigurationsResult.
 
         数据库类型。
 
@@ -189,7 +189,7 @@ class ListConfigurationsResult:
 
     @datastore_name.setter
     def datastore_name(self, datastore_name):
-        """Sets the datastore_name of this ListConfigurationsResult.
+        r"""Sets the datastore_name of this ListConfigurationsResult.
 
         数据库类型。
 
@@ -200,7 +200,7 @@ class ListConfigurationsResult:
 
     @property
     def node_type(self):
-        """Gets the node_type of this ListConfigurationsResult.
+        r"""Gets the node_type of this ListConfigurationsResult.
 
         参数模板节点类型。 - mongos，表示集群mongos节点类型。 - shard，表示集群shard节点类型。 - config，表示集群config节点类型。 - replica，表示副本集类型。 - single，表示单节点类型。
 
@@ -211,7 +211,7 @@ class ListConfigurationsResult:
 
     @node_type.setter
     def node_type(self, node_type):
-        """Sets the node_type of this ListConfigurationsResult.
+        r"""Sets the node_type of this ListConfigurationsResult.
 
         参数模板节点类型。 - mongos，表示集群mongos节点类型。 - shard，表示集群shard节点类型。 - config，表示集群config节点类型。 - replica，表示副本集类型。 - single，表示单节点类型。
 
@@ -222,7 +222,7 @@ class ListConfigurationsResult:
 
     @property
     def created(self):
-        """Gets the created of this ListConfigurationsResult.
+        r"""Gets the created of this ListConfigurationsResult.
 
         创建时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -233,7 +233,7 @@ class ListConfigurationsResult:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this ListConfigurationsResult.
+        r"""Sets the created of this ListConfigurationsResult.
 
         创建时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -244,7 +244,7 @@ class ListConfigurationsResult:
 
     @property
     def updated(self):
-        """Gets the updated of this ListConfigurationsResult.
+        r"""Gets the updated of this ListConfigurationsResult.
 
         更新时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -255,7 +255,7 @@ class ListConfigurationsResult:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ListConfigurationsResult.
+        r"""Sets the updated of this ListConfigurationsResult.
 
         更新时间，格式为\"yyyy-MM-ddTHH:mm:ssZ\"。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -266,7 +266,7 @@ class ListConfigurationsResult:
 
     @property
     def user_defined(self):
-        """Gets the user_defined of this ListConfigurationsResult.
+        r"""Gets the user_defined of this ListConfigurationsResult.
 
         是否是用户自定义参数模板。 - false表示为默认参数模板。 - true表示为用户自定义参数模板。
 
@@ -277,7 +277,7 @@ class ListConfigurationsResult:
 
     @user_defined.setter
     def user_defined(self, user_defined):
-        """Sets the user_defined of this ListConfigurationsResult.
+        r"""Sets the user_defined of this ListConfigurationsResult.
 
         是否是用户自定义参数模板。 - false表示为默认参数模板。 - true表示为用户自定义参数模板。
 

@@ -41,7 +41,7 @@ class ListDataclassFieldsRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, offset=None, limit=None, name=None, is_built_in=None, dataclass_id=None, field_category=None, mapping=None):
-        """ListDataclassFieldsRequest
+        r"""ListDataclassFieldsRequest
 
         The model defined in huaweicloud sdk
 
@@ -96,7 +96,7 @@ class ListDataclassFieldsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListDataclassFieldsRequest.
+        r"""Gets the project_id of this ListDataclassFieldsRequest.
 
         项目id
 
@@ -107,7 +107,7 @@ class ListDataclassFieldsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListDataclassFieldsRequest.
+        r"""Sets the project_id of this ListDataclassFieldsRequest.
 
         项目id
 
@@ -118,7 +118,7 @@ class ListDataclassFieldsRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ListDataclassFieldsRequest.
+        r"""Gets the workspace_id of this ListDataclassFieldsRequest.
 
         工作空间id
 
@@ -129,7 +129,7 @@ class ListDataclassFieldsRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ListDataclassFieldsRequest.
+        r"""Sets the workspace_id of this ListDataclassFieldsRequest.
 
         工作空间id
 
@@ -140,7 +140,7 @@ class ListDataclassFieldsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDataclassFieldsRequest.
+        r"""Gets the offset of this ListDataclassFieldsRequest.
 
         偏移量
 
@@ -151,7 +151,7 @@ class ListDataclassFieldsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDataclassFieldsRequest.
+        r"""Sets the offset of this ListDataclassFieldsRequest.
 
         偏移量
 
@@ -162,7 +162,7 @@ class ListDataclassFieldsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDataclassFieldsRequest.
+        r"""Gets the limit of this ListDataclassFieldsRequest.
 
         数据量
 
@@ -173,7 +173,7 @@ class ListDataclassFieldsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDataclassFieldsRequest.
+        r"""Sets the limit of this ListDataclassFieldsRequest.
 
         数据量
 
@@ -184,7 +184,7 @@ class ListDataclassFieldsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListDataclassFieldsRequest.
+        r"""Gets the name of this ListDataclassFieldsRequest.
 
         名称查询
 
@@ -195,7 +195,7 @@ class ListDataclassFieldsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListDataclassFieldsRequest.
+        r"""Sets the name of this ListDataclassFieldsRequest.
 
         名称查询
 
@@ -206,7 +206,7 @@ class ListDataclassFieldsRequest:
 
     @property
     def is_built_in(self):
-        """Gets the is_built_in of this ListDataclassFieldsRequest.
+        r"""Gets the is_built_in of this ListDataclassFieldsRequest.
 
         是否内置
 
@@ -217,7 +217,7 @@ class ListDataclassFieldsRequest:
 
     @is_built_in.setter
     def is_built_in(self, is_built_in):
-        """Sets the is_built_in of this ListDataclassFieldsRequest.
+        r"""Sets the is_built_in of this ListDataclassFieldsRequest.
 
         是否内置
 
@@ -228,7 +228,7 @@ class ListDataclassFieldsRequest:
 
     @property
     def dataclass_id(self):
-        """Gets the dataclass_id of this ListDataclassFieldsRequest.
+        r"""Gets the dataclass_id of this ListDataclassFieldsRequest.
 
         数据类id
 
@@ -239,7 +239,7 @@ class ListDataclassFieldsRequest:
 
     @dataclass_id.setter
     def dataclass_id(self, dataclass_id):
-        """Sets the dataclass_id of this ListDataclassFieldsRequest.
+        r"""Sets the dataclass_id of this ListDataclassFieldsRequest.
 
         数据类id
 
@@ -250,7 +250,7 @@ class ListDataclassFieldsRequest:
 
     @property
     def field_category(self):
-        """Gets the field_category of this ListDataclassFieldsRequest.
+        r"""Gets the field_category of this ListDataclassFieldsRequest.
 
         字段分类
 
@@ -261,7 +261,7 @@ class ListDataclassFieldsRequest:
 
     @field_category.setter
     def field_category(self, field_category):
-        """Sets the field_category of this ListDataclassFieldsRequest.
+        r"""Sets the field_category of this ListDataclassFieldsRequest.
 
         字段分类
 
@@ -272,7 +272,7 @@ class ListDataclassFieldsRequest:
 
     @property
     def mapping(self):
-        """Gets the mapping of this ListDataclassFieldsRequest.
+        r"""Gets the mapping of this ListDataclassFieldsRequest.
 
         是否展示在分类映射外的其他地方
 
@@ -283,7 +283,7 @@ class ListDataclassFieldsRequest:
 
     @mapping.setter
     def mapping(self, mapping):
-        """Sets the mapping of this ListDataclassFieldsRequest.
+        r"""Sets the mapping of this ListDataclassFieldsRequest.
 
         是否展示在分类映射外的其他地方
 

@@ -35,7 +35,7 @@ class InstanceLogFile:
     }
 
     def __init__(self, status=None, file_name=None, start_time=None, end_time=None, file_size=None, file_link=None):
-        """InstanceLogFile
+        r"""InstanceLogFile
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class InstanceLogFile:
 
     @property
     def status(self):
-        """Gets the status of this InstanceLogFile.
+        r"""Gets the status of this InstanceLogFile.
 
         日志采集状态。
 
@@ -89,7 +89,7 @@ class InstanceLogFile:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this InstanceLogFile.
+        r"""Sets the status of this InstanceLogFile.
 
         日志采集状态。
 
@@ -100,7 +100,7 @@ class InstanceLogFile:
 
     @property
     def file_name(self):
-        """Gets the file_name of this InstanceLogFile.
+        r"""Gets the file_name of this InstanceLogFile.
 
         日志文件名称。
 
@@ -111,7 +111,7 @@ class InstanceLogFile:
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this InstanceLogFile.
+        r"""Sets the file_name of this InstanceLogFile.
 
         日志文件名称。
 
@@ -122,7 +122,7 @@ class InstanceLogFile:
 
     @property
     def start_time(self):
-        """Gets the start_time of this InstanceLogFile.
+        r"""Gets the start_time of this InstanceLogFile.
 
         日志开始时间。
 
@@ -133,7 +133,7 @@ class InstanceLogFile:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this InstanceLogFile.
+        r"""Sets the start_time of this InstanceLogFile.
 
         日志开始时间。
 
@@ -144,7 +144,7 @@ class InstanceLogFile:
 
     @property
     def end_time(self):
-        """Gets the end_time of this InstanceLogFile.
+        r"""Gets the end_time of this InstanceLogFile.
 
         日志结束时间。
 
@@ -155,7 +155,7 @@ class InstanceLogFile:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this InstanceLogFile.
+        r"""Sets the end_time of this InstanceLogFile.
 
         日志结束时间。
 
@@ -166,7 +166,7 @@ class InstanceLogFile:
 
     @property
     def file_size(self):
-        """Gets the file_size of this InstanceLogFile.
+        r"""Gets the file_size of this InstanceLogFile.
 
         日志文件大小，单位kb。
 
@@ -177,7 +177,7 @@ class InstanceLogFile:
 
     @file_size.setter
     def file_size(self, file_size):
-        """Sets the file_size of this InstanceLogFile.
+        r"""Sets the file_size of this InstanceLogFile.
 
         日志文件大小，单位kb。
 
@@ -188,7 +188,7 @@ class InstanceLogFile:
 
     @property
     def file_link(self):
-        """Gets the file_link of this InstanceLogFile.
+        r"""Gets the file_link of this InstanceLogFile.
 
         日志文件下载链接。
 
@@ -199,7 +199,7 @@ class InstanceLogFile:
 
     @file_link.setter
     def file_link(self, file_link):
-        """Sets the file_link of this InstanceLogFile.
+        r"""Sets the file_link of this InstanceLogFile.
 
         日志文件下载链接。
 

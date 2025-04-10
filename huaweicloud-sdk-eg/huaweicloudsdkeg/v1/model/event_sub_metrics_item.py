@@ -41,7 +41,7 @@ class EventSubMetricsItem:
     }
 
     def __init__(self, fail_num=None, retry_success_num=None, retry_fail_num=None, retry_times=None, timestamp=None, num=None, success_num=None, process_time=None, invoke_time=None):
-        """EventSubMetricsItem
+        r"""EventSubMetricsItem
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class EventSubMetricsItem:
 
     @property
     def fail_num(self):
-        """Gets the fail_num of this EventSubMetricsItem.
+        r"""Gets the fail_num of this EventSubMetricsItem.
 
         失败数
 
@@ -110,7 +110,7 @@ class EventSubMetricsItem:
 
     @fail_num.setter
     def fail_num(self, fail_num):
-        """Sets the fail_num of this EventSubMetricsItem.
+        r"""Sets the fail_num of this EventSubMetricsItem.
 
         失败数
 
@@ -121,7 +121,7 @@ class EventSubMetricsItem:
 
     @property
     def retry_success_num(self):
-        """Gets the retry_success_num of this EventSubMetricsItem.
+        r"""Gets the retry_success_num of this EventSubMetricsItem.
 
         重试成功数
 
@@ -132,7 +132,7 @@ class EventSubMetricsItem:
 
     @retry_success_num.setter
     def retry_success_num(self, retry_success_num):
-        """Sets the retry_success_num of this EventSubMetricsItem.
+        r"""Sets the retry_success_num of this EventSubMetricsItem.
 
         重试成功数
 
@@ -143,7 +143,7 @@ class EventSubMetricsItem:
 
     @property
     def retry_fail_num(self):
-        """Gets the retry_fail_num of this EventSubMetricsItem.
+        r"""Gets the retry_fail_num of this EventSubMetricsItem.
 
         重试失败数
 
@@ -154,7 +154,7 @@ class EventSubMetricsItem:
 
     @retry_fail_num.setter
     def retry_fail_num(self, retry_fail_num):
-        """Sets the retry_fail_num of this EventSubMetricsItem.
+        r"""Sets the retry_fail_num of this EventSubMetricsItem.
 
         重试失败数
 
@@ -165,7 +165,7 @@ class EventSubMetricsItem:
 
     @property
     def retry_times(self):
-        """Gets the retry_times of this EventSubMetricsItem.
+        r"""Gets the retry_times of this EventSubMetricsItem.
 
         重试数
 
@@ -176,7 +176,7 @@ class EventSubMetricsItem:
 
     @retry_times.setter
     def retry_times(self, retry_times):
-        """Sets the retry_times of this EventSubMetricsItem.
+        r"""Sets the retry_times of this EventSubMetricsItem.
 
         重试数
 
@@ -187,7 +187,7 @@ class EventSubMetricsItem:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this EventSubMetricsItem.
+        r"""Gets the timestamp of this EventSubMetricsItem.
 
         时间戳
 
@@ -198,7 +198,7 @@ class EventSubMetricsItem:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this EventSubMetricsItem.
+        r"""Sets the timestamp of this EventSubMetricsItem.
 
         时间戳
 
@@ -209,7 +209,7 @@ class EventSubMetricsItem:
 
     @property
     def num(self):
-        """Gets the num of this EventSubMetricsItem.
+        r"""Gets the num of this EventSubMetricsItem.
 
         调用数
 
@@ -220,7 +220,7 @@ class EventSubMetricsItem:
 
     @num.setter
     def num(self, num):
-        """Sets the num of this EventSubMetricsItem.
+        r"""Sets the num of this EventSubMetricsItem.
 
         调用数
 
@@ -231,7 +231,7 @@ class EventSubMetricsItem:
 
     @property
     def success_num(self):
-        """Gets the success_num of this EventSubMetricsItem.
+        r"""Gets the success_num of this EventSubMetricsItem.
 
         调用成功数
 
@@ -242,7 +242,7 @@ class EventSubMetricsItem:
 
     @success_num.setter
     def success_num(self, success_num):
-        """Sets the success_num of this EventSubMetricsItem.
+        r"""Sets the success_num of this EventSubMetricsItem.
 
         调用成功数
 
@@ -253,7 +253,7 @@ class EventSubMetricsItem:
 
     @property
     def process_time(self):
-        """Gets the process_time of this EventSubMetricsItem.
+        r"""Gets the process_time of this EventSubMetricsItem.
 
         处理时间
 
@@ -264,7 +264,7 @@ class EventSubMetricsItem:
 
     @process_time.setter
     def process_time(self, process_time):
-        """Sets the process_time of this EventSubMetricsItem.
+        r"""Sets the process_time of this EventSubMetricsItem.
 
         处理时间
 
@@ -275,7 +275,7 @@ class EventSubMetricsItem:
 
     @property
     def invoke_time(self):
-        """Gets the invoke_time of this EventSubMetricsItem.
+        r"""Gets the invoke_time of this EventSubMetricsItem.
 
         调用时间
 
@@ -286,7 +286,7 @@ class EventSubMetricsItem:
 
     @invoke_time.setter
     def invoke_time(self, invoke_time):
-        """Sets the invoke_time of this EventSubMetricsItem.
+        r"""Sets the invoke_time of this EventSubMetricsItem.
 
         调用时间
 

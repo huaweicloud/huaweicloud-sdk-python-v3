@@ -27,7 +27,7 @@ class AttachBaremetalServerVolumeRequest:
     }
 
     def __init__(self, server_id=None, body=None):
-        """AttachBaremetalServerVolumeRequest
+        r"""AttachBaremetalServerVolumeRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AttachBaremetalServerVolumeRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this AttachBaremetalServerVolumeRequest.
+        r"""Gets the server_id of this AttachBaremetalServerVolumeRequest.
 
         裸金属服务器ID
 
@@ -60,7 +60,7 @@ class AttachBaremetalServerVolumeRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this AttachBaremetalServerVolumeRequest.
+        r"""Sets the server_id of this AttachBaremetalServerVolumeRequest.
 
         裸金属服务器ID
 
@@ -71,7 +71,7 @@ class AttachBaremetalServerVolumeRequest:
 
     @property
     def body(self):
-        """Gets the body of this AttachBaremetalServerVolumeRequest.
+        r"""Gets the body of this AttachBaremetalServerVolumeRequest.
 
         :return: The body of this AttachBaremetalServerVolumeRequest.
         :rtype: :class:`huaweicloudsdkbms.v1.AttachVolumeBody`
@@ -80,7 +80,7 @@ class AttachBaremetalServerVolumeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AttachBaremetalServerVolumeRequest.
+        r"""Sets the body of this AttachBaremetalServerVolumeRequest.
 
         :param body: The body of this AttachBaremetalServerVolumeRequest.
         :type body: :class:`huaweicloudsdkbms.v1.AttachVolumeBody`

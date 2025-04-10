@@ -33,7 +33,7 @@ class ListAccessPolicyRespPolicies:
     }
 
     def __init__(self, access_key=None, secret_key=None, white_remote_address=None, admin=None, perm=None):
-        """ListAccessPolicyRespPolicies
+        r"""ListAccessPolicyRespPolicies
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ListAccessPolicyRespPolicies:
 
     @property
     def access_key(self):
-        """Gets the access_key of this ListAccessPolicyRespPolicies.
+        r"""Gets the access_key of this ListAccessPolicyRespPolicies.
 
         用户名。
 
@@ -82,7 +82,7 @@ class ListAccessPolicyRespPolicies:
 
     @access_key.setter
     def access_key(self, access_key):
-        """Sets the access_key of this ListAccessPolicyRespPolicies.
+        r"""Sets the access_key of this ListAccessPolicyRespPolicies.
 
         用户名。
 
@@ -93,7 +93,7 @@ class ListAccessPolicyRespPolicies:
 
     @property
     def secret_key(self):
-        """Gets the secret_key of this ListAccessPolicyRespPolicies.
+        r"""Gets the secret_key of this ListAccessPolicyRespPolicies.
 
         密钥。
 
@@ -104,7 +104,7 @@ class ListAccessPolicyRespPolicies:
 
     @secret_key.setter
     def secret_key(self, secret_key):
-        """Sets the secret_key of this ListAccessPolicyRespPolicies.
+        r"""Sets the secret_key of this ListAccessPolicyRespPolicies.
 
         密钥。
 
@@ -115,7 +115,7 @@ class ListAccessPolicyRespPolicies:
 
     @property
     def white_remote_address(self):
-        """Gets the white_remote_address of this ListAccessPolicyRespPolicies.
+        r"""Gets the white_remote_address of this ListAccessPolicyRespPolicies.
 
         IP白名单。
 
@@ -126,7 +126,7 @@ class ListAccessPolicyRespPolicies:
 
     @white_remote_address.setter
     def white_remote_address(self, white_remote_address):
-        """Sets the white_remote_address of this ListAccessPolicyRespPolicies.
+        r"""Sets the white_remote_address of this ListAccessPolicyRespPolicies.
 
         IP白名单。
 
@@ -137,7 +137,7 @@ class ListAccessPolicyRespPolicies:
 
     @property
     def admin(self):
-        """Gets the admin of this ListAccessPolicyRespPolicies.
+        r"""Gets the admin of this ListAccessPolicyRespPolicies.
 
         是否为管理员。
 
@@ -148,7 +148,7 @@ class ListAccessPolicyRespPolicies:
 
     @admin.setter
     def admin(self, admin):
-        """Sets the admin of this ListAccessPolicyRespPolicies.
+        r"""Sets the admin of this ListAccessPolicyRespPolicies.
 
         是否为管理员。
 
@@ -159,7 +159,7 @@ class ListAccessPolicyRespPolicies:
 
     @property
     def perm(self):
-        """Gets the perm of this ListAccessPolicyRespPolicies.
+        r"""Gets the perm of this ListAccessPolicyRespPolicies.
 
         权限。
 
@@ -170,7 +170,7 @@ class ListAccessPolicyRespPolicies:
 
     @perm.setter
     def perm(self, perm):
-        """Sets the perm of this ListAccessPolicyRespPolicies.
+        r"""Sets the perm of this ListAccessPolicyRespPolicies.
 
         权限。
 

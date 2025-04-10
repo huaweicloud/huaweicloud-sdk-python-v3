@@ -28,7 +28,7 @@ class ListServerHdaUpgradeRecordsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, items=None):
-        """ListServerHdaUpgradeRecordsResponse
+        r"""ListServerHdaUpgradeRecordsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListServerHdaUpgradeRecordsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListServerHdaUpgradeRecordsResponse.
+        r"""Gets the count of this ListServerHdaUpgradeRecordsResponse.
 
         总数。
 
@@ -62,7 +62,7 @@ class ListServerHdaUpgradeRecordsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListServerHdaUpgradeRecordsResponse.
+        r"""Sets the count of this ListServerHdaUpgradeRecordsResponse.
 
         总数。
 
@@ -73,7 +73,7 @@ class ListServerHdaUpgradeRecordsResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListServerHdaUpgradeRecordsResponse.
+        r"""Gets the items of this ListServerHdaUpgradeRecordsResponse.
 
         返回列表条目数量上限为分页的最大上限值。
 
@@ -84,7 +84,7 @@ class ListServerHdaUpgradeRecordsResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListServerHdaUpgradeRecordsResponse.
+        r"""Sets the items of this ListServerHdaUpgradeRecordsResponse.
 
         返回列表条目数量上限为分页的最大上限值。
 

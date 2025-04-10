@@ -47,7 +47,7 @@ class CreateUserOption:
     }
 
     def __init__(self, access_mode=None, name=None, domain_id=None, password=None, email=None, areacode=None, phone=None, enabled=None, pwd_status=None, xuser_type=None, xuser_id=None, description=None):
-        """CreateUserOption
+        r"""CreateUserOption
 
         The model defined in huaweicloud sdk
 
@@ -118,7 +118,7 @@ class CreateUserOption:
 
     @property
     def access_mode(self):
-        """Gets the access_mode of this CreateUserOption.
+        r"""Gets the access_mode of this CreateUserOption.
 
         IAM用户访问方式。 - default：默认访问模式，编程访问和管理控制台访问。 - programmatic：编程访问。 - console：管理控制台访问。
 
@@ -129,7 +129,7 @@ class CreateUserOption:
 
     @access_mode.setter
     def access_mode(self, access_mode):
-        """Sets the access_mode of this CreateUserOption.
+        r"""Sets the access_mode of this CreateUserOption.
 
         IAM用户访问方式。 - default：默认访问模式，编程访问和管理控制台访问。 - programmatic：编程访问。 - console：管理控制台访问。
 
@@ -140,7 +140,7 @@ class CreateUserOption:
 
     @property
     def name(self):
-        """Gets the name of this CreateUserOption.
+        r"""Gets the name of this CreateUserOption.
 
         IAM用户名，长度1~64之间，只能包含如下字符：大小写字母、空格、数字或特殊字符（-_.）且不能以数字开头。
 
@@ -151,7 +151,7 @@ class CreateUserOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateUserOption.
+        r"""Sets the name of this CreateUserOption.
 
         IAM用户名，长度1~64之间，只能包含如下字符：大小写字母、空格、数字或特殊字符（-_.）且不能以数字开头。
 
@@ -162,7 +162,7 @@ class CreateUserOption:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this CreateUserOption.
+        r"""Gets the domain_id of this CreateUserOption.
 
         IAM用户所属的账号ID，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -173,7 +173,7 @@ class CreateUserOption:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this CreateUserOption.
+        r"""Sets the domain_id of this CreateUserOption.
 
         IAM用户所属的账号ID，获取方式请参见：[获取账号、IAM用户、项目、用户组、委托的名称和ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -184,7 +184,7 @@ class CreateUserOption:
 
     @property
     def password(self):
-        """Gets the password of this CreateUserOption.
+        r"""Gets the password of this CreateUserOption.
 
         IAM用户密码。 - 系统默认密码最小长度为6字符，在6-32字符之间支持用户自定义密码长度。 - 至少包含以下四种字符中的两种： 大写字母、小写字母、数字和特殊字符。 - 不能包含手机号和邮箱。 - 必须满足账户设置中密码策略的要求。
 
@@ -195,7 +195,7 @@ class CreateUserOption:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this CreateUserOption.
+        r"""Sets the password of this CreateUserOption.
 
         IAM用户密码。 - 系统默认密码最小长度为6字符，在6-32字符之间支持用户自定义密码长度。 - 至少包含以下四种字符中的两种： 大写字母、小写字母、数字和特殊字符。 - 不能包含手机号和邮箱。 - 必须满足账户设置中密码策略的要求。
 
@@ -206,7 +206,7 @@ class CreateUserOption:
 
     @property
     def email(self):
-        """Gets the email of this CreateUserOption.
+        r"""Gets the email of this CreateUserOption.
 
         IAM用户邮箱，需符合邮箱格式，长度小于等于255字符。
 
@@ -217,7 +217,7 @@ class CreateUserOption:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this CreateUserOption.
+        r"""Sets the email of this CreateUserOption.
 
         IAM用户邮箱，需符合邮箱格式，长度小于等于255字符。
 
@@ -228,7 +228,7 @@ class CreateUserOption:
 
     @property
     def areacode(self):
-        """Gets the areacode of this CreateUserOption.
+        r"""Gets the areacode of this CreateUserOption.
 
         国家码。必须与手机号同时存在。中国大陆为“0086”。
 
@@ -239,7 +239,7 @@ class CreateUserOption:
 
     @areacode.setter
     def areacode(self, areacode):
-        """Sets the areacode of this CreateUserOption.
+        r"""Sets the areacode of this CreateUserOption.
 
         国家码。必须与手机号同时存在。中国大陆为“0086”。
 
@@ -250,7 +250,7 @@ class CreateUserOption:
 
     @property
     def phone(self):
-        """Gets the phone of this CreateUserOption.
+        r"""Gets the phone of this CreateUserOption.
 
         IAM用户手机号，纯数字，长度小于等于32字符。必须与国家码同时存在。
 
@@ -261,7 +261,7 @@ class CreateUserOption:
 
     @phone.setter
     def phone(self, phone):
-        """Sets the phone of this CreateUserOption.
+        r"""Sets the phone of this CreateUserOption.
 
         IAM用户手机号，纯数字，长度小于等于32字符。必须与国家码同时存在。
 
@@ -272,7 +272,7 @@ class CreateUserOption:
 
     @property
     def enabled(self):
-        """Gets the enabled of this CreateUserOption.
+        r"""Gets the enabled of this CreateUserOption.
 
         是否启用IAM用户。true为启用，false为停用，默认为true。
 
@@ -283,7 +283,7 @@ class CreateUserOption:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this CreateUserOption.
+        r"""Sets the enabled of this CreateUserOption.
 
         是否启用IAM用户。true为启用，false为停用，默认为true。
 
@@ -294,7 +294,7 @@ class CreateUserOption:
 
     @property
     def pwd_status(self):
-        """Gets the pwd_status of this CreateUserOption.
+        r"""Gets the pwd_status of this CreateUserOption.
 
         IAM用户首次登录是否重置密码，默认需要重置。
 
@@ -305,7 +305,7 @@ class CreateUserOption:
 
     @pwd_status.setter
     def pwd_status(self, pwd_status):
-        """Sets the pwd_status of this CreateUserOption.
+        r"""Sets the pwd_status of this CreateUserOption.
 
         IAM用户首次登录是否重置密码，默认需要重置。
 
@@ -316,7 +316,7 @@ class CreateUserOption:
 
     @property
     def xuser_type(self):
-        """Gets the xuser_type of this CreateUserOption.
+        r"""Gets the xuser_type of this CreateUserOption.
 
         IAM用户在外部系统中的类型。长度小于等于64字符。xuser_type如果存在且不等于TenantIdp时，则需要与同一租户中的xaccount_type、xdomain_type校验，须与xuser_id同时存在。 >外部系统指与华为云对接的外部企业管理系统，xaccount_type、xaccount_id、xdomain_type、xdomain_id、xuser_type、xuser_id等参数值，无法在华为云获取，请咨询企业管理员。 
 
@@ -327,7 +327,7 @@ class CreateUserOption:
 
     @xuser_type.setter
     def xuser_type(self, xuser_type):
-        """Sets the xuser_type of this CreateUserOption.
+        r"""Sets the xuser_type of this CreateUserOption.
 
         IAM用户在外部系统中的类型。长度小于等于64字符。xuser_type如果存在且不等于TenantIdp时，则需要与同一租户中的xaccount_type、xdomain_type校验，须与xuser_id同时存在。 >外部系统指与华为云对接的外部企业管理系统，xaccount_type、xaccount_id、xdomain_type、xdomain_id、xuser_type、xuser_id等参数值，无法在华为云获取，请咨询企业管理员。 
 
@@ -338,7 +338,7 @@ class CreateUserOption:
 
     @property
     def xuser_id(self):
-        """Gets the xuser_id of this CreateUserOption.
+        r"""Gets the xuser_id of this CreateUserOption.
 
         IAM用户在外部系统中的ID。长度小于等于128字符，须与xuser_type同时存在。 >外部系统指与华为云对接的外部企业管理系统，xaccount_type、xaccount_id、xdomain_type、xdomain_id、xuser_type、xuser_id等参数值，无法在华为云获取，请咨询企业管理员。
 
@@ -349,7 +349,7 @@ class CreateUserOption:
 
     @xuser_id.setter
     def xuser_id(self, xuser_id):
-        """Sets the xuser_id of this CreateUserOption.
+        r"""Sets the xuser_id of this CreateUserOption.
 
         IAM用户在外部系统中的ID。长度小于等于128字符，须与xuser_type同时存在。 >外部系统指与华为云对接的外部企业管理系统，xaccount_type、xaccount_id、xdomain_type、xdomain_id、xuser_type、xuser_id等参数值，无法在华为云获取，请咨询企业管理员。
 
@@ -360,7 +360,7 @@ class CreateUserOption:
 
     @property
     def description(self):
-        """Gets the description of this CreateUserOption.
+        r"""Gets the description of this CreateUserOption.
 
         IAM用户描述信息。
 
@@ -371,7 +371,7 @@ class CreateUserOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateUserOption.
+        r"""Sets the description of this CreateUserOption.
 
         IAM用户描述信息。
 

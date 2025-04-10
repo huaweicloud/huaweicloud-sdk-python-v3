@@ -28,7 +28,7 @@ class CheckMaliciousExtensionEvaluationResponse(SdkResponse):
     }
 
     def __init__(self, result=None, status=None):
-        """CheckMaliciousExtensionEvaluationResponse
+        r"""CheckMaliciousExtensionEvaluationResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CheckMaliciousExtensionEvaluationResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this CheckMaliciousExtensionEvaluationResponse.
+        r"""Gets the result of this CheckMaliciousExtensionEvaluationResponse.
 
         返回值
 
@@ -62,7 +62,7 @@ class CheckMaliciousExtensionEvaluationResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this CheckMaliciousExtensionEvaluationResponse.
+        r"""Sets the result of this CheckMaliciousExtensionEvaluationResponse.
 
         返回值
 
@@ -73,7 +73,7 @@ class CheckMaliciousExtensionEvaluationResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CheckMaliciousExtensionEvaluationResponse.
+        r"""Gets the status of this CheckMaliciousExtensionEvaluationResponse.
 
         状态
 
@@ -84,7 +84,7 @@ class CheckMaliciousExtensionEvaluationResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CheckMaliciousExtensionEvaluationResponse.
+        r"""Sets the status of this CheckMaliciousExtensionEvaluationResponse.
 
         状态
 

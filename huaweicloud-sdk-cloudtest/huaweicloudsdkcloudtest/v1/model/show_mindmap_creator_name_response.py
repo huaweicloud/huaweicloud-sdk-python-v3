@@ -30,7 +30,7 @@ class ShowMindmapCreatorNameResponse(SdkResponse):
     }
 
     def __init__(self, code=None, data=None, message=None):
-        """ShowMindmapCreatorNameResponse
+        r"""ShowMindmapCreatorNameResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowMindmapCreatorNameResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ShowMindmapCreatorNameResponse.
+        r"""Gets the code of this ShowMindmapCreatorNameResponse.
 
         接口调用错误码
 
@@ -69,7 +69,7 @@ class ShowMindmapCreatorNameResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ShowMindmapCreatorNameResponse.
+        r"""Sets the code of this ShowMindmapCreatorNameResponse.
 
         接口调用错误码
 
@@ -80,7 +80,7 @@ class ShowMindmapCreatorNameResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowMindmapCreatorNameResponse.
+        r"""Gets the data of this ShowMindmapCreatorNameResponse.
 
         接口调用返回体
 
@@ -91,7 +91,7 @@ class ShowMindmapCreatorNameResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowMindmapCreatorNameResponse.
+        r"""Sets the data of this ShowMindmapCreatorNameResponse.
 
         接口调用返回体
 
@@ -102,7 +102,7 @@ class ShowMindmapCreatorNameResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowMindmapCreatorNameResponse.
+        r"""Gets the message of this ShowMindmapCreatorNameResponse.
 
         接口调用错误信息
 
@@ -113,7 +113,7 @@ class ShowMindmapCreatorNameResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowMindmapCreatorNameResponse.
+        r"""Sets the message of this ShowMindmapCreatorNameResponse.
 
         接口调用错误信息
 

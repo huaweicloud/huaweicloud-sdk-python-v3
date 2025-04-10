@@ -53,7 +53,7 @@ class Billing:
     }
 
     def __init__(self, allocated=None, charging_mode=None, cloud_type=None, consistent_level=None, object_type=None, order_id=None, product_id=None, protect_type=None, size=None, spec_code=None, status=None, storage_unit=None, used=None, frozen_scene=None, is_multi_az=None):
-        """Billing
+        r"""Billing
 
         The model defined in huaweicloud sdk
 
@@ -133,7 +133,7 @@ class Billing:
 
     @property
     def allocated(self):
-        """Gets the allocated of this Billing.
+        r"""Gets the allocated of this Billing.
 
         已分配容量，单位GB
 
@@ -144,7 +144,7 @@ class Billing:
 
     @allocated.setter
     def allocated(self, allocated):
-        """Sets the allocated of this Billing.
+        r"""Sets the allocated of this Billing.
 
         已分配容量，单位GB
 
@@ -155,7 +155,7 @@ class Billing:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this Billing.
+        r"""Gets the charging_mode of this Billing.
 
         创建模式
 
@@ -166,7 +166,7 @@ class Billing:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this Billing.
+        r"""Sets the charging_mode of this Billing.
 
         创建模式
 
@@ -177,7 +177,7 @@ class Billing:
 
     @property
     def cloud_type(self):
-        """Gets the cloud_type of this Billing.
+        r"""Gets the cloud_type of this Billing.
 
         云平台
 
@@ -188,7 +188,7 @@ class Billing:
 
     @cloud_type.setter
     def cloud_type(self, cloud_type):
-        """Sets the cloud_type of this Billing.
+        r"""Sets the cloud_type of this Billing.
 
         云平台
 
@@ -199,7 +199,7 @@ class Billing:
 
     @property
     def consistent_level(self):
-        """Gets the consistent_level of this Billing.
+        r"""Gets the consistent_level of this Billing.
 
         崩溃一致性（crash_consistent）或应用一致性（app_consistent）
 
@@ -210,7 +210,7 @@ class Billing:
 
     @consistent_level.setter
     def consistent_level(self, consistent_level):
-        """Sets the consistent_level of this Billing.
+        r"""Sets the consistent_level of this Billing.
 
         崩溃一致性（crash_consistent）或应用一致性（app_consistent）
 
@@ -221,7 +221,7 @@ class Billing:
 
     @property
     def object_type(self):
-        """Gets the object_type of this Billing.
+        r"""Gets the object_type of this Billing.
 
         对象类型：云服务器（server），云硬盘（disk），文件系统（turbo），云桌面（workspace），VMware（vmware），关系型数据库（rds），文件（file）。
 
@@ -232,7 +232,7 @@ class Billing:
 
     @object_type.setter
     def object_type(self, object_type):
-        """Sets the object_type of this Billing.
+        r"""Sets the object_type of this Billing.
 
         对象类型：云服务器（server），云硬盘（disk），文件系统（turbo），云桌面（workspace），VMware（vmware），关系型数据库（rds），文件（file）。
 
@@ -243,7 +243,7 @@ class Billing:
 
     @property
     def order_id(self):
-        """Gets the order_id of this Billing.
+        r"""Gets the order_id of this Billing.
 
         订单ID
 
@@ -254,7 +254,7 @@ class Billing:
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this Billing.
+        r"""Sets the order_id of this Billing.
 
         订单ID
 
@@ -265,7 +265,7 @@ class Billing:
 
     @property
     def product_id(self):
-        """Gets the product_id of this Billing.
+        r"""Gets the product_id of this Billing.
 
         产品ID
 
@@ -276,7 +276,7 @@ class Billing:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this Billing.
+        r"""Sets the product_id of this Billing.
 
         产品ID
 
@@ -287,7 +287,7 @@ class Billing:
 
     @property
     def protect_type(self):
-        """Gets the protect_type of this Billing.
+        r"""Gets the protect_type of this Billing.
 
         保护类型
 
@@ -298,7 +298,7 @@ class Billing:
 
     @protect_type.setter
     def protect_type(self, protect_type):
-        """Sets the protect_type of this Billing.
+        r"""Sets the protect_type of this Billing.
 
         保护类型
 
@@ -309,7 +309,7 @@ class Billing:
 
     @property
     def size(self):
-        """Gets the size of this Billing.
+        r"""Gets the size of this Billing.
 
         容量，单位GB
 
@@ -320,7 +320,7 @@ class Billing:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this Billing.
+        r"""Sets the size of this Billing.
 
         容量，单位GB
 
@@ -331,7 +331,7 @@ class Billing:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this Billing.
+        r"""Gets the spec_code of this Billing.
 
         规格编码: 云服务备份存储库:vault.backup.server.normal;云硬盘备份存储库:vault.backup.volume.normal;文件备份存储库:vault.backup.turbo.normal;数据库备份存储库:vault.backup.database.normal;混合云备份存储库:vault.hybrid.server.normal;复制备份存储库:vault.replication.server.normal
 
@@ -342,7 +342,7 @@ class Billing:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this Billing.
+        r"""Sets the spec_code of this Billing.
 
         规格编码: 云服务备份存储库:vault.backup.server.normal;云硬盘备份存储库:vault.backup.volume.normal;文件备份存储库:vault.backup.turbo.normal;数据库备份存储库:vault.backup.database.normal;混合云备份存储库:vault.hybrid.server.normal;复制备份存储库:vault.replication.server.normal
 
@@ -353,7 +353,7 @@ class Billing:
 
     @property
     def status(self):
-        """Gets the status of this Billing.
+        r"""Gets the status of this Billing.
 
         存储库状态
 
@@ -364,7 +364,7 @@ class Billing:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Billing.
+        r"""Sets the status of this Billing.
 
         存储库状态
 
@@ -375,7 +375,7 @@ class Billing:
 
     @property
     def storage_unit(self):
-        """Gets the storage_unit of this Billing.
+        r"""Gets the storage_unit of this Billing.
 
         存储库桶名
 
@@ -386,7 +386,7 @@ class Billing:
 
     @storage_unit.setter
     def storage_unit(self, storage_unit):
-        """Sets the storage_unit of this Billing.
+        r"""Sets the storage_unit of this Billing.
 
         存储库桶名
 
@@ -397,7 +397,7 @@ class Billing:
 
     @property
     def used(self):
-        """Gets the used of this Billing.
+        r"""Gets the used of this Billing.
 
         已使用容量，单位MB
 
@@ -408,7 +408,7 @@ class Billing:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this Billing.
+        r"""Sets the used of this Billing.
 
         已使用容量，单位MB
 
@@ -419,7 +419,7 @@ class Billing:
 
     @property
     def frozen_scene(self):
-        """Gets the frozen_scene of this Billing.
+        r"""Gets the frozen_scene of this Billing.
 
         冻结场景
 
@@ -430,7 +430,7 @@ class Billing:
 
     @frozen_scene.setter
     def frozen_scene(self, frozen_scene):
-        """Sets the frozen_scene of this Billing.
+        r"""Sets the frozen_scene of this Billing.
 
         冻结场景
 
@@ -441,7 +441,7 @@ class Billing:
 
     @property
     def is_multi_az(self):
-        """Gets the is_multi_az of this Billing.
+        r"""Gets the is_multi_az of this Billing.
 
         存储库多az属性
 
@@ -452,7 +452,7 @@ class Billing:
 
     @is_multi_az.setter
     def is_multi_az(self, is_multi_az):
-        """Sets the is_multi_az of this Billing.
+        r"""Sets the is_multi_az of this Billing.
 
         存储库多az属性
 

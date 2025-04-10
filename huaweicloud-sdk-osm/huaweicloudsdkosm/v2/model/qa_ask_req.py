@@ -41,7 +41,7 @@ class QaAskReq:
     }
 
     def __init__(self, question=None, top=None, themes=None, source=None, session_id=None, source_qa_pair_id=None, alternative_answer_enable=None, product_type_id=None, specify_node_id=None):
-        """QaAskReq
+        r"""QaAskReq
 
         The model defined in huaweicloud sdk
 
@@ -98,7 +98,7 @@ class QaAskReq:
 
     @property
     def question(self):
-        """Gets the question of this QaAskReq.
+        r"""Gets the question of this QaAskReq.
 
         用户输入问题
 
@@ -109,7 +109,7 @@ class QaAskReq:
 
     @question.setter
     def question(self, question):
-        """Sets the question of this QaAskReq.
+        r"""Sets the question of this QaAskReq.
 
         用户输入问题
 
@@ -120,7 +120,7 @@ class QaAskReq:
 
     @property
     def top(self):
-        """Gets the top of this QaAskReq.
+        r"""Gets the top of this QaAskReq.
 
         最大返回数据条数
 
@@ -131,7 +131,7 @@ class QaAskReq:
 
     @top.setter
     def top(self, top):
-        """Sets the top of this QaAskReq.
+        r"""Sets the top of this QaAskReq.
 
         最大返回数据条数
 
@@ -142,7 +142,7 @@ class QaAskReq:
 
     @property
     def themes(self):
-        """Gets the themes of this QaAskReq.
+        r"""Gets the themes of this QaAskReq.
 
         主题列表
 
@@ -153,7 +153,7 @@ class QaAskReq:
 
     @themes.setter
     def themes(self, themes):
-        """Sets the themes of this QaAskReq.
+        r"""Sets the themes of this QaAskReq.
 
         主题列表
 
@@ -164,7 +164,7 @@ class QaAskReq:
 
     @property
     def source(self):
-        """Gets the source of this QaAskReq.
+        r"""Gets the source of this QaAskReq.
 
         - PORTAL:  - INCIDENT:  
 
@@ -175,7 +175,7 @@ class QaAskReq:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this QaAskReq.
+        r"""Sets the source of this QaAskReq.
 
         - PORTAL:  - INCIDENT:  
 
@@ -186,7 +186,7 @@ class QaAskReq:
 
     @property
     def session_id(self):
-        """Gets the session_id of this QaAskReq.
+        r"""Gets the session_id of this QaAskReq.
 
         会话ID
 
@@ -197,7 +197,7 @@ class QaAskReq:
 
     @session_id.setter
     def session_id(self, session_id):
-        """Sets the session_id of this QaAskReq.
+        r"""Sets the session_id of this QaAskReq.
 
         会话ID
 
@@ -208,7 +208,7 @@ class QaAskReq:
 
     @property
     def source_qa_pair_id(self):
-        """Gets the source_qa_pair_id of this QaAskReq.
+        r"""Gets the source_qa_pair_id of this QaAskReq.
 
         语料ID
 
@@ -219,7 +219,7 @@ class QaAskReq:
 
     @source_qa_pair_id.setter
     def source_qa_pair_id(self, source_qa_pair_id):
-        """Sets the source_qa_pair_id of this QaAskReq.
+        r"""Sets the source_qa_pair_id of this QaAskReq.
 
         语料ID
 
@@ -230,7 +230,7 @@ class QaAskReq:
 
     @property
     def alternative_answer_enable(self):
-        """Gets the alternative_answer_enable of this QaAskReq.
+        r"""Gets the alternative_answer_enable of this QaAskReq.
 
         是否需要备选答案
 
@@ -241,7 +241,7 @@ class QaAskReq:
 
     @alternative_answer_enable.setter
     def alternative_answer_enable(self, alternative_answer_enable):
-        """Sets the alternative_answer_enable of this QaAskReq.
+        r"""Sets the alternative_answer_enable of this QaAskReq.
 
         是否需要备选答案
 
@@ -252,7 +252,7 @@ class QaAskReq:
 
     @property
     def product_type_id(self):
-        """Gets the product_type_id of this QaAskReq.
+        r"""Gets the product_type_id of this QaAskReq.
 
         产品类型Id
 
@@ -263,7 +263,7 @@ class QaAskReq:
 
     @product_type_id.setter
     def product_type_id(self, product_type_id):
-        """Sets the product_type_id of this QaAskReq.
+        r"""Sets the product_type_id of this QaAskReq.
 
         产品类型Id
 
@@ -274,7 +274,7 @@ class QaAskReq:
 
     @property
     def specify_node_id(self):
-        """Gets the specify_node_id of this QaAskReq.
+        r"""Gets the specify_node_id of this QaAskReq.
 
         指定的节点ID
 
@@ -285,7 +285,7 @@ class QaAskReq:
 
     @specify_node_id.setter
     def specify_node_id(self, specify_node_id):
-        """Sets the specify_node_id of this QaAskReq.
+        r"""Sets the specify_node_id of this QaAskReq.
 
         指定的节点ID
 

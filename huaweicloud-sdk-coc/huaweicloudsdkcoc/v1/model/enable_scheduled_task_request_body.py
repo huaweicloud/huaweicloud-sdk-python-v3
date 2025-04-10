@@ -25,7 +25,7 @@ class EnableScheduledTaskRequestBody:
     }
 
     def __init__(self, ticket_infos=None):
-        """EnableScheduledTaskRequestBody
+        r"""EnableScheduledTaskRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class EnableScheduledTaskRequestBody:
 
     @property
     def ticket_infos(self):
-        """Gets the ticket_infos of this EnableScheduledTaskRequestBody.
+        r"""Gets the ticket_infos of this EnableScheduledTaskRequestBody.
 
         选择的四号提权单信息
 
@@ -54,7 +54,7 @@ class EnableScheduledTaskRequestBody:
 
     @ticket_infos.setter
     def ticket_infos(self, ticket_infos):
-        """Sets the ticket_infos of this EnableScheduledTaskRequestBody.
+        r"""Sets the ticket_infos of this EnableScheduledTaskRequestBody.
 
         选择的四号提权单信息
 

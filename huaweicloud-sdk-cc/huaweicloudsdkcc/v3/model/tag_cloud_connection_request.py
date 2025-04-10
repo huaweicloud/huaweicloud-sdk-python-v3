@@ -27,7 +27,7 @@ class TagCloudConnectionRequest:
     }
 
     def __init__(self, id=None, body=None):
-        """TagCloudConnectionRequest
+        r"""TagCloudConnectionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class TagCloudConnectionRequest:
 
     @property
     def id(self):
-        """Gets the id of this TagCloudConnectionRequest.
+        r"""Gets the id of this TagCloudConnectionRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class TagCloudConnectionRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TagCloudConnectionRequest.
+        r"""Sets the id of this TagCloudConnectionRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class TagCloudConnectionRequest:
 
     @property
     def body(self):
-        """Gets the body of this TagCloudConnectionRequest.
+        r"""Gets the body of this TagCloudConnectionRequest.
 
         :return: The body of this TagCloudConnectionRequest.
         :rtype: :class:`huaweicloudsdkcc.v3.TagCloudConnectionRequestBody`
@@ -80,7 +80,7 @@ class TagCloudConnectionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this TagCloudConnectionRequest.
+        r"""Sets the body of this TagCloudConnectionRequest.
 
         :param body: The body of this TagCloudConnectionRequest.
         :type body: :class:`huaweicloudsdkcc.v3.TagCloudConnectionRequestBody`

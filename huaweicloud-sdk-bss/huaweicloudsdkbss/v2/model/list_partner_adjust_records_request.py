@@ -39,7 +39,7 @@ class ListPartnerAdjustRecordsRequest:
     }
 
     def __init__(self, customer_id=None, operation_type=None, operation_time_begin=None, operation_time_end=None, trans_id=None, offset=None, limit=None, indirect_partner_id=None):
-        """ListPartnerAdjustRecordsRequest
+        r"""ListPartnerAdjustRecordsRequest
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class ListPartnerAdjustRecordsRequest:
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this ListPartnerAdjustRecordsRequest.
+        r"""Gets the customer_id of this ListPartnerAdjustRecordsRequest.
 
         客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/api-bpconsole/mc_00021.html)获取customer_id。为空表示查询所有的调账记录。不为空表示仅查询与该客户相关的调账记录。此参数不携带或携带值为空时，默认查询所有客户的调账记录。 说明： 此处的客户包含伙伴的子客户，以及华为云总经销商关联的云经销商（二级经销商）。
 
@@ -103,7 +103,7 @@ class ListPartnerAdjustRecordsRequest:
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this ListPartnerAdjustRecordsRequest.
+        r"""Sets the customer_id of this ListPartnerAdjustRecordsRequest.
 
         客户账号ID。您可以调用[查询客户列表](https://support.huaweicloud.com/api-bpconsole/mc_00021.html)获取customer_id。为空表示查询所有的调账记录。不为空表示仅查询与该客户相关的调账记录。此参数不携带或携带值为空时，默认查询所有客户的调账记录。 说明： 此处的客户包含伙伴的子客户，以及华为云总经销商关联的云经销商（二级经销商）。
 
@@ -114,7 +114,7 @@ class ListPartnerAdjustRecordsRequest:
 
     @property
     def operation_type(self):
-        """Gets the operation_type of this ListPartnerAdjustRecordsRequest.
+        r"""Gets the operation_type of this ListPartnerAdjustRecordsRequest.
 
         操作类型。SOURCE_OPERATION_BEADJUST：拨款,SOURCE_OPERATION_BERETRIEVE：回收,SOURCE_OPERATION_BEUNBIND：解绑回收,此参数不携带或携带值为空时，默认查询所有类型。
 
@@ -125,7 +125,7 @@ class ListPartnerAdjustRecordsRequest:
 
     @operation_type.setter
     def operation_type(self, operation_type):
-        """Sets the operation_type of this ListPartnerAdjustRecordsRequest.
+        r"""Sets the operation_type of this ListPartnerAdjustRecordsRequest.
 
         操作类型。SOURCE_OPERATION_BEADJUST：拨款,SOURCE_OPERATION_BERETRIEVE：回收,SOURCE_OPERATION_BEUNBIND：解绑回收,此参数不携带或携带值为空时，默认查询所有类型。
 
@@ -136,7 +136,7 @@ class ListPartnerAdjustRecordsRequest:
 
     @property
     def operation_time_begin(self):
-        """Gets the operation_time_begin of this ListPartnerAdjustRecordsRequest.
+        r"""Gets the operation_time_begin of this ListPartnerAdjustRecordsRequest.
 
         调账起始时间。UTC时间，格式为：2016-03-28T14:45:38Z。此参数不携带或携带值为空时，不作为筛选条件。
 
@@ -147,7 +147,7 @@ class ListPartnerAdjustRecordsRequest:
 
     @operation_time_begin.setter
     def operation_time_begin(self, operation_time_begin):
-        """Sets the operation_time_begin of this ListPartnerAdjustRecordsRequest.
+        r"""Sets the operation_time_begin of this ListPartnerAdjustRecordsRequest.
 
         调账起始时间。UTC时间，格式为：2016-03-28T14:45:38Z。此参数不携带或携带值为空时，不作为筛选条件。
 
@@ -158,7 +158,7 @@ class ListPartnerAdjustRecordsRequest:
 
     @property
     def operation_time_end(self):
-        """Gets the operation_time_end of this ListPartnerAdjustRecordsRequest.
+        r"""Gets the operation_time_end of this ListPartnerAdjustRecordsRequest.
 
         调账截止时间。UTC时间，格式为：2016-03-28T14:45:38Z。此参数不携带或携带值为空时，不作为筛选条件。
 
@@ -169,7 +169,7 @@ class ListPartnerAdjustRecordsRequest:
 
     @operation_time_end.setter
     def operation_time_end(self, operation_time_end):
-        """Sets the operation_time_end of this ListPartnerAdjustRecordsRequest.
+        r"""Sets the operation_time_end of this ListPartnerAdjustRecordsRequest.
 
         调账截止时间。UTC时间，格式为：2016-03-28T14:45:38Z。此参数不携带或携带值为空时，不作为筛选条件。
 
@@ -180,7 +180,7 @@ class ListPartnerAdjustRecordsRequest:
 
     @property
     def trans_id(self):
-        """Gets the trans_id of this ListPartnerAdjustRecordsRequest.
+        r"""Gets the trans_id of this ListPartnerAdjustRecordsRequest.
 
         事务ID。此参数不携带或携带值为空时，不作为筛选条件。
 
@@ -191,7 +191,7 @@ class ListPartnerAdjustRecordsRequest:
 
     @trans_id.setter
     def trans_id(self, trans_id):
-        """Sets the trans_id of this ListPartnerAdjustRecordsRequest.
+        r"""Sets the trans_id of this ListPartnerAdjustRecordsRequest.
 
         事务ID。此参数不携带或携带值为空时，不作为筛选条件。
 
@@ -202,7 +202,7 @@ class ListPartnerAdjustRecordsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPartnerAdjustRecordsRequest.
+        r"""Gets the offset of this ListPartnerAdjustRecordsRequest.
 
         偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -213,7 +213,7 @@ class ListPartnerAdjustRecordsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPartnerAdjustRecordsRequest.
+        r"""Sets the offset of this ListPartnerAdjustRecordsRequest.
 
         偏移量，从0开始。默认值为0。 说明： offset用于分页处理，如不涉及分页，请使用默认值0。offset表示相对于满足条件的第一个数据的偏移量。如offset = 1，则返回满足条件的第二个数据至最后一个数据。例如，满足查询条件的结果共10条数据，limit取值为10，offset取值为1，则返回的数据为2~10，第一条数据不返回。
 
@@ -224,7 +224,7 @@ class ListPartnerAdjustRecordsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPartnerAdjustRecordsRequest.
+        r"""Gets the limit of this ListPartnerAdjustRecordsRequest.
 
         每页的显示条数。默认值为10。
 
@@ -235,7 +235,7 @@ class ListPartnerAdjustRecordsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPartnerAdjustRecordsRequest.
+        r"""Sets the limit of this ListPartnerAdjustRecordsRequest.
 
         每页的显示条数。默认值为10。
 
@@ -246,7 +246,7 @@ class ListPartnerAdjustRecordsRequest:
 
     @property
     def indirect_partner_id(self):
-        """Gets the indirect_partner_id of this ListPartnerAdjustRecordsRequest.
+        r"""Gets the indirect_partner_id of this ListPartnerAdjustRecordsRequest.
 
         云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。华为云总经销商（一级经销商）查询云经销商（二级经销商）的子客户调账记录时，需携带此参数；除此之外，此参数不做处理。否则只能查询自己的子客户调账记录。
 
@@ -257,7 +257,7 @@ class ListPartnerAdjustRecordsRequest:
 
     @indirect_partner_id.setter
     def indirect_partner_id(self, indirect_partner_id):
-        """Sets the indirect_partner_id of this ListPartnerAdjustRecordsRequest.
+        r"""Sets the indirect_partner_id of this ListPartnerAdjustRecordsRequest.
 
         云经销商ID。获取方法请参见[查询云经销商列表](https://support.huaweicloud.com/api-bpconsole/espp_00003.html)。华为云总经销商（一级经销商）查询云经销商（二级经销商）的子客户调账记录时，需携带此参数；除此之外，此参数不做处理。否则只能查询自己的子客户调账记录。
 

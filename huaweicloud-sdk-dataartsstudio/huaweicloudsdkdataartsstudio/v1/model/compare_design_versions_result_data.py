@@ -25,7 +25,7 @@ class CompareDesignVersionsResultData:
     }
 
     def __init__(self, value=None):
-        """CompareDesignVersionsResultData
+        r"""CompareDesignVersionsResultData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CompareDesignVersionsResultData:
 
     @property
     def value(self):
-        """Gets the value of this CompareDesignVersionsResultData.
+        r"""Gets the value of this CompareDesignVersionsResultData.
 
         :return: The value of this CompareDesignVersionsResultData.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.PublishVersionVO`
@@ -52,7 +52,7 @@ class CompareDesignVersionsResultData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this CompareDesignVersionsResultData.
+        r"""Sets the value of this CompareDesignVersionsResultData.
 
         :param value: The value of this CompareDesignVersionsResultData.
         :type value: :class:`huaweicloudsdkdataartsstudio.v1.PublishVersionVO`

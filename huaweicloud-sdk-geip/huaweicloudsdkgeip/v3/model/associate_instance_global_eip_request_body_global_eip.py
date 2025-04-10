@@ -27,7 +27,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEip:
     }
 
     def __init__(self, associate_instance_info=None, gc_bandwidth_info=None):
-        """AssociateInstanceGlobalEipRequestBodyGlobalEip
+        r"""AssociateInstanceGlobalEipRequestBodyGlobalEip
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEip:
 
     @property
     def associate_instance_info(self):
-        """Gets the associate_instance_info of this AssociateInstanceGlobalEipRequestBodyGlobalEip.
+        r"""Gets the associate_instance_info of this AssociateInstanceGlobalEipRequestBodyGlobalEip.
 
         :return: The associate_instance_info of this AssociateInstanceGlobalEipRequestBodyGlobalEip.
         :rtype: :class:`huaweicloudsdkgeip.v3.AssociateInstanceGlobalEipRequestBodyGlobalEipAssociateInstanceInfo`
@@ -59,7 +59,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEip:
 
     @associate_instance_info.setter
     def associate_instance_info(self, associate_instance_info):
-        """Sets the associate_instance_info of this AssociateInstanceGlobalEipRequestBodyGlobalEip.
+        r"""Sets the associate_instance_info of this AssociateInstanceGlobalEipRequestBodyGlobalEip.
 
         :param associate_instance_info: The associate_instance_info of this AssociateInstanceGlobalEipRequestBodyGlobalEip.
         :type associate_instance_info: :class:`huaweicloudsdkgeip.v3.AssociateInstanceGlobalEipRequestBodyGlobalEipAssociateInstanceInfo`
@@ -68,7 +68,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEip:
 
     @property
     def gc_bandwidth_info(self):
-        """Gets the gc_bandwidth_info of this AssociateInstanceGlobalEipRequestBodyGlobalEip.
+        r"""Gets the gc_bandwidth_info of this AssociateInstanceGlobalEipRequestBodyGlobalEip.
 
         :return: The gc_bandwidth_info of this AssociateInstanceGlobalEipRequestBodyGlobalEip.
         :rtype: :class:`huaweicloudsdkgeip.v3.AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo`
@@ -77,7 +77,7 @@ class AssociateInstanceGlobalEipRequestBodyGlobalEip:
 
     @gc_bandwidth_info.setter
     def gc_bandwidth_info(self, gc_bandwidth_info):
-        """Sets the gc_bandwidth_info of this AssociateInstanceGlobalEipRequestBodyGlobalEip.
+        r"""Sets the gc_bandwidth_info of this AssociateInstanceGlobalEipRequestBodyGlobalEip.
 
         :param gc_bandwidth_info: The gc_bandwidth_info of this AssociateInstanceGlobalEipRequestBodyGlobalEip.
         :type gc_bandwidth_info: :class:`huaweicloudsdkgeip.v3.AssociateInstanceGlobalEipRequestBodyGlobalEipGcBandwidthInfo`

@@ -24,7 +24,7 @@ class BatchDeleteAppGroupAuthorizationResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchDeleteAppGroupAuthorizationResponse
+        r"""BatchDeleteAppGroupAuthorizationResponse
 
         The model defined in huaweicloud sdk
 

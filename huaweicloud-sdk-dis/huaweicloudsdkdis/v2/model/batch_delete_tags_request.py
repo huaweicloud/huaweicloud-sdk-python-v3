@@ -27,7 +27,7 @@ class BatchDeleteTagsRequest:
     }
 
     def __init__(self, stream_id=None, body=None):
-        """BatchDeleteTagsRequest
+        r"""BatchDeleteTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeleteTagsRequest:
 
     @property
     def stream_id(self):
-        """Gets the stream_id of this BatchDeleteTagsRequest.
+        r"""Gets the stream_id of this BatchDeleteTagsRequest.
 
         通道ID。
 
@@ -60,7 +60,7 @@ class BatchDeleteTagsRequest:
 
     @stream_id.setter
     def stream_id(self, stream_id):
-        """Sets the stream_id of this BatchDeleteTagsRequest.
+        r"""Sets the stream_id of this BatchDeleteTagsRequest.
 
         通道ID。
 
@@ -71,7 +71,7 @@ class BatchDeleteTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteTagsRequest.
+        r"""Gets the body of this BatchDeleteTagsRequest.
 
         :return: The body of this BatchDeleteTagsRequest.
         :rtype: :class:`huaweicloudsdkdis.v2.BatchDeleteTagsReq`
@@ -80,7 +80,7 @@ class BatchDeleteTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteTagsRequest.
+        r"""Sets the body of this BatchDeleteTagsRequest.
 
         :param body: The body of this BatchDeleteTagsRequest.
         :type body: :class:`huaweicloudsdkdis.v2.BatchDeleteTagsReq`

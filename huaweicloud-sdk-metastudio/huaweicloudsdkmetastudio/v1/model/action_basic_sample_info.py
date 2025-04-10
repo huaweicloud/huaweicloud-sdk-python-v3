@@ -35,7 +35,7 @@ class ActionBasicSampleInfo:
     }
 
     def __init__(self, action_name_zh=None, action_name_en=None, action_tag=None, catalog=None, recommended_value=None, is_selected=None):
-        """ActionBasicSampleInfo
+        r"""ActionBasicSampleInfo
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ActionBasicSampleInfo:
 
     @property
     def action_name_zh(self):
-        """Gets the action_name_zh of this ActionBasicSampleInfo.
+        r"""Gets the action_name_zh of this ActionBasicSampleInfo.
 
         原子动作中文名称。
 
@@ -88,7 +88,7 @@ class ActionBasicSampleInfo:
 
     @action_name_zh.setter
     def action_name_zh(self, action_name_zh):
-        """Sets the action_name_zh of this ActionBasicSampleInfo.
+        r"""Sets the action_name_zh of this ActionBasicSampleInfo.
 
         原子动作中文名称。
 
@@ -99,7 +99,7 @@ class ActionBasicSampleInfo:
 
     @property
     def action_name_en(self):
-        """Gets the action_name_en of this ActionBasicSampleInfo.
+        r"""Gets the action_name_en of this ActionBasicSampleInfo.
 
         原子动作英文名称。
 
@@ -110,7 +110,7 @@ class ActionBasicSampleInfo:
 
     @action_name_en.setter
     def action_name_en(self, action_name_en):
-        """Sets the action_name_en of this ActionBasicSampleInfo.
+        r"""Sets the action_name_en of this ActionBasicSampleInfo.
 
         原子动作英文名称。
 
@@ -121,7 +121,7 @@ class ActionBasicSampleInfo:
 
     @property
     def action_tag(self):
-        """Gets the action_tag of this ActionBasicSampleInfo.
+        r"""Gets the action_tag of this ActionBasicSampleInfo.
 
         原子动作标签。
 
@@ -132,7 +132,7 @@ class ActionBasicSampleInfo:
 
     @action_tag.setter
     def action_tag(self, action_tag):
-        """Sets the action_tag of this ActionBasicSampleInfo.
+        r"""Sets the action_tag of this ActionBasicSampleInfo.
 
         原子动作标签。
 
@@ -143,7 +143,7 @@ class ActionBasicSampleInfo:
 
     @property
     def catalog(self):
-        """Gets the catalog of this ActionBasicSampleInfo.
+        r"""Gets the catalog of this ActionBasicSampleInfo.
 
         原子动作标签。
 
@@ -154,7 +154,7 @@ class ActionBasicSampleInfo:
 
     @catalog.setter
     def catalog(self, catalog):
-        """Sets the catalog of this ActionBasicSampleInfo.
+        r"""Sets the catalog of this ActionBasicSampleInfo.
 
         原子动作标签。
 
@@ -165,7 +165,7 @@ class ActionBasicSampleInfo:
 
     @property
     def recommended_value(self):
-        """Gets the recommended_value of this ActionBasicSampleInfo.
+        r"""Gets the recommended_value of this ActionBasicSampleInfo.
 
         推荐等级。
 
@@ -176,7 +176,7 @@ class ActionBasicSampleInfo:
 
     @recommended_value.setter
     def recommended_value(self, recommended_value):
-        """Sets the recommended_value of this ActionBasicSampleInfo.
+        r"""Sets the recommended_value of this ActionBasicSampleInfo.
 
         推荐等级。
 
@@ -187,7 +187,7 @@ class ActionBasicSampleInfo:
 
     @property
     def is_selected(self):
-        """Gets the is_selected of this ActionBasicSampleInfo.
+        r"""Gets the is_selected of this ActionBasicSampleInfo.
 
         是否选择此动作。
 
@@ -198,7 +198,7 @@ class ActionBasicSampleInfo:
 
     @is_selected.setter
     def is_selected(self, is_selected):
-        """Sets the is_selected of this ActionBasicSampleInfo.
+        r"""Sets the is_selected of this ActionBasicSampleInfo.
 
         是否选择此动作。
 

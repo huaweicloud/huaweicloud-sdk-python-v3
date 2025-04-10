@@ -27,7 +27,7 @@ class FollowerMigrateRequest:
     }
 
     def __init__(self, node_id=None, az_code=None):
-        """FollowerMigrateRequest
+        r"""FollowerMigrateRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class FollowerMigrateRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this FollowerMigrateRequest.
+        r"""Gets the node_id of this FollowerMigrateRequest.
 
         备机节点Id
 
@@ -59,7 +59,7 @@ class FollowerMigrateRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this FollowerMigrateRequest.
+        r"""Sets the node_id of this FollowerMigrateRequest.
 
         备机节点Id
 
@@ -70,7 +70,7 @@ class FollowerMigrateRequest:
 
     @property
     def az_code(self):
-        """Gets the az_code of this FollowerMigrateRequest.
+        r"""Gets the az_code of this FollowerMigrateRequest.
 
         要迁入的可用区code
 
@@ -81,7 +81,7 @@ class FollowerMigrateRequest:
 
     @az_code.setter
     def az_code(self, az_code):
-        """Sets the az_code of this FollowerMigrateRequest.
+        r"""Sets the az_code of this FollowerMigrateRequest.
 
         要迁入的可用区code
 

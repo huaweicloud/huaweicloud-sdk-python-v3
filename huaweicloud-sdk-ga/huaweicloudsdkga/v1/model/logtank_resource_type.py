@@ -26,7 +26,7 @@ class LogtankResourceType:
     }
 
     def __init__(self):
-        """LogtankResourceType
+        r"""LogtankResourceType
 
         The model defined in huaweicloud sdk
 

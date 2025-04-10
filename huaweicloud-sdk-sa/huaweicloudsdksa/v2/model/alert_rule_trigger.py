@@ -33,7 +33,7 @@ class AlertRuleTrigger:
     }
 
     def __init__(self, mode=None, operator=None, expression=None, severity=None, accumulated_times=None):
-        """AlertRuleTrigger
+        r"""AlertRuleTrigger
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class AlertRuleTrigger:
 
     @property
     def mode(self):
-        """Gets the mode of this AlertRuleTrigger.
+        r"""Gets the mode of this AlertRuleTrigger.
 
         mode. COUNT.
 
@@ -81,7 +81,7 @@ class AlertRuleTrigger:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this AlertRuleTrigger.
+        r"""Sets the mode of this AlertRuleTrigger.
 
         mode. COUNT.
 
@@ -92,7 +92,7 @@ class AlertRuleTrigger:
 
     @property
     def operator(self):
-        """Gets the operator of this AlertRuleTrigger.
+        r"""Gets the operator of this AlertRuleTrigger.
 
         operator. EQ equal, NE not equal, GT greater than, LT less than.
 
@@ -103,7 +103,7 @@ class AlertRuleTrigger:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this AlertRuleTrigger.
+        r"""Sets the operator of this AlertRuleTrigger.
 
         operator. EQ equal, NE not equal, GT greater than, LT less than.
 
@@ -114,7 +114,7 @@ class AlertRuleTrigger:
 
     @property
     def expression(self):
-        """Gets the expression of this AlertRuleTrigger.
+        r"""Gets the expression of this AlertRuleTrigger.
 
         expression
 
@@ -125,7 +125,7 @@ class AlertRuleTrigger:
 
     @expression.setter
     def expression(self, expression):
-        """Sets the expression of this AlertRuleTrigger.
+        r"""Sets the expression of this AlertRuleTrigger.
 
         expression
 
@@ -136,7 +136,7 @@ class AlertRuleTrigger:
 
     @property
     def severity(self):
-        """Gets the severity of this AlertRuleTrigger.
+        r"""Gets the severity of this AlertRuleTrigger.
 
         severity. TIPS, LOW, MEDIUM, HIGH, FATAL
 
@@ -147,7 +147,7 @@ class AlertRuleTrigger:
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this AlertRuleTrigger.
+        r"""Sets the severity of this AlertRuleTrigger.
 
         severity. TIPS, LOW, MEDIUM, HIGH, FATAL
 
@@ -158,7 +158,7 @@ class AlertRuleTrigger:
 
     @property
     def accumulated_times(self):
-        """Gets the accumulated_times of this AlertRuleTrigger.
+        r"""Gets the accumulated_times of this AlertRuleTrigger.
 
         accumulated_times
 
@@ -169,7 +169,7 @@ class AlertRuleTrigger:
 
     @accumulated_times.setter
     def accumulated_times(self, accumulated_times):
-        """Sets the accumulated_times of this AlertRuleTrigger.
+        r"""Sets the accumulated_times of this AlertRuleTrigger.
 
         accumulated_times
 

@@ -34,7 +34,7 @@ class ResetAclAccountPassWordResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, lock_time=None, lock_time_left=None, retry_times_left=None):
-        """ResetAclAccountPassWordResponse
+        r"""ResetAclAccountPassWordResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ResetAclAccountPassWordResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ResetAclAccountPassWordResponse.
+        r"""Gets the code of this ResetAclAccountPassWordResponse.
 
         任务执行成功代码。
 
@@ -83,7 +83,7 @@ class ResetAclAccountPassWordResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ResetAclAccountPassWordResponse.
+        r"""Sets the code of this ResetAclAccountPassWordResponse.
 
         任务执行成功代码。
 
@@ -94,7 +94,7 @@ class ResetAclAccountPassWordResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ResetAclAccountPassWordResponse.
+        r"""Gets the message of this ResetAclAccountPassWordResponse.
 
         重置结果说明信息。
 
@@ -105,7 +105,7 @@ class ResetAclAccountPassWordResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ResetAclAccountPassWordResponse.
+        r"""Sets the message of this ResetAclAccountPassWordResponse.
 
         重置结果说明信息。
 
@@ -116,7 +116,7 @@ class ResetAclAccountPassWordResponse(SdkResponse):
 
     @property
     def lock_time(self):
-        """Gets the lock_time of this ResetAclAccountPassWordResponse.
+        r"""Gets the lock_time of this ResetAclAccountPassWordResponse.
 
         锁定时间。验证失败时和锁定时该参数返回不为null
 
@@ -127,7 +127,7 @@ class ResetAclAccountPassWordResponse(SdkResponse):
 
     @lock_time.setter
     def lock_time(self, lock_time):
-        """Sets the lock_time of this ResetAclAccountPassWordResponse.
+        r"""Sets the lock_time of this ResetAclAccountPassWordResponse.
 
         锁定时间。验证失败时和锁定时该参数返回不为null
 
@@ -138,7 +138,7 @@ class ResetAclAccountPassWordResponse(SdkResponse):
 
     @property
     def lock_time_left(self):
-        """Gets the lock_time_left of this ResetAclAccountPassWordResponse.
+        r"""Gets the lock_time_left of this ResetAclAccountPassWordResponse.
 
         锁定剩余时间。锁定时该参数返回不为null
 
@@ -149,7 +149,7 @@ class ResetAclAccountPassWordResponse(SdkResponse):
 
     @lock_time_left.setter
     def lock_time_left(self, lock_time_left):
-        """Sets the lock_time_left of this ResetAclAccountPassWordResponse.
+        r"""Sets the lock_time_left of this ResetAclAccountPassWordResponse.
 
         锁定剩余时间。锁定时该参数返回不为null
 
@@ -160,7 +160,7 @@ class ResetAclAccountPassWordResponse(SdkResponse):
 
     @property
     def retry_times_left(self):
-        """Gets the retry_times_left of this ResetAclAccountPassWordResponse.
+        r"""Gets the retry_times_left of this ResetAclAccountPassWordResponse.
 
         密码验证剩余次数。验证失败时该参数返回不为null
 
@@ -171,7 +171,7 @@ class ResetAclAccountPassWordResponse(SdkResponse):
 
     @retry_times_left.setter
     def retry_times_left(self, retry_times_left):
-        """Sets the retry_times_left of this ResetAclAccountPassWordResponse.
+        r"""Sets the retry_times_left of this ResetAclAccountPassWordResponse.
 
         密码验证剩余次数。验证失败时该参数返回不为null
 

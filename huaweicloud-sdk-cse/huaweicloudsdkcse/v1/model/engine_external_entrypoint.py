@@ -31,7 +31,7 @@ class EngineExternalEntrypoint:
     }
 
     def __init__(self, external_address=None, public_address=None, service_endpoint=None, public_service_endpoint=None):
-        """EngineExternalEntrypoint
+        r"""EngineExternalEntrypoint
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class EngineExternalEntrypoint:
 
     @property
     def external_address(self):
-        """Gets the external_address of this EngineExternalEntrypoint.
+        r"""Gets the external_address of this EngineExternalEntrypoint.
 
         微服务引擎暴露的IP地址。
 
@@ -75,7 +75,7 @@ class EngineExternalEntrypoint:
 
     @external_address.setter
     def external_address(self, external_address):
-        """Sets the external_address of this EngineExternalEntrypoint.
+        r"""Sets the external_address of this EngineExternalEntrypoint.
 
         微服务引擎暴露的IP地址。
 
@@ -86,7 +86,7 @@ class EngineExternalEntrypoint:
 
     @property
     def public_address(self):
-        """Gets the public_address of this EngineExternalEntrypoint.
+        r"""Gets the public_address of this EngineExternalEntrypoint.
 
         微服务引擎的公网地址。
 
@@ -97,7 +97,7 @@ class EngineExternalEntrypoint:
 
     @public_address.setter
     def public_address(self, public_address):
-        """Sets the public_address of this EngineExternalEntrypoint.
+        r"""Sets the public_address of this EngineExternalEntrypoint.
 
         微服务引擎的公网地址。
 
@@ -108,7 +108,7 @@ class EngineExternalEntrypoint:
 
     @property
     def service_endpoint(self):
-        """Gets the service_endpoint of this EngineExternalEntrypoint.
+        r"""Gets the service_endpoint of this EngineExternalEntrypoint.
 
         微服务引擎组件的访问地址。
 
@@ -119,7 +119,7 @@ class EngineExternalEntrypoint:
 
     @service_endpoint.setter
     def service_endpoint(self, service_endpoint):
-        """Sets the service_endpoint of this EngineExternalEntrypoint.
+        r"""Sets the service_endpoint of this EngineExternalEntrypoint.
 
         微服务引擎组件的访问地址。
 
@@ -130,7 +130,7 @@ class EngineExternalEntrypoint:
 
     @property
     def public_service_endpoint(self):
-        """Gets the public_service_endpoint of this EngineExternalEntrypoint.
+        r"""Gets the public_service_endpoint of this EngineExternalEntrypoint.
 
         微服务引擎组件的公网地址。
 
@@ -141,7 +141,7 @@ class EngineExternalEntrypoint:
 
     @public_service_endpoint.setter
     def public_service_endpoint(self, public_service_endpoint):
-        """Sets the public_service_endpoint of this EngineExternalEntrypoint.
+        r"""Sets the public_service_endpoint of this EngineExternalEntrypoint.
 
         微服务引擎组件的公网地址。
 

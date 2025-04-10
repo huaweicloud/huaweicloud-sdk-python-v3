@@ -34,7 +34,7 @@ class EcsClient(Client):
         return client_builder
 
     def add_server_group_member(self, request):
-        """添加云服务器组成员
+        r"""添加云服务器组成员
 
         将云服务器加入云服务器组。添加成功后，如果该云服务器组是反亲和性策略的，则该云服务器与云服务器组中的其他成员尽量分散地创建在不同主机上。如果该云服务器时故障域类型的，则该云服务器会拥有故障域属性。
         
@@ -101,7 +101,7 @@ class EcsClient(Client):
         return http_info
 
     def associate_server_virtual_ip(self, request):
-        """云服务器网卡配置虚拟IP地址
+        r"""云服务器网卡配置虚拟IP地址
 
         虚拟IP地址用于为网卡提供第二个IP地址，同时支持与多个弹性云服务器的网卡绑定，从而实现多个弹性云服务器之间的高可用性。
         
@@ -174,7 +174,7 @@ class EcsClient(Client):
         return http_info
 
     def attach_server_volume(self, request):
-        """弹性云服务器挂载磁盘
+        r"""弹性云服务器挂载磁盘
 
         把磁盘挂载到弹性云服务器上。
         
@@ -241,7 +241,7 @@ class EcsClient(Client):
         return http_info
 
     def batch_add_server_nics(self, request):
-        """批量添加云服务器网卡
+        r"""批量添加云服务器网卡
 
         给云服务器添加一张或多张网卡。
         
@@ -308,7 +308,7 @@ class EcsClient(Client):
         return http_info
 
     def batch_attach_sharable_volumes(self, request):
-        """批量挂载指定共享盘
+        r"""批量挂载指定共享盘
 
         将指定的共享磁盘一次性挂载到多个弹性云服务器，实现批量挂载。
         
@@ -375,7 +375,7 @@ class EcsClient(Client):
         return http_info
 
     def batch_create_server_tags(self, request):
-        """批量添加云服务器标签
+        r"""批量添加云服务器标签
 
         - 为指定云服务器批量添加标签。
         
@@ -444,7 +444,7 @@ class EcsClient(Client):
         return http_info
 
     def batch_delete_server_nics(self, request):
-        """批量删除云服务器网卡
+        r"""批量删除云服务器网卡
 
         卸载并删除云服务器中的一张或多张网卡。
         
@@ -511,7 +511,7 @@ class EcsClient(Client):
         return http_info
 
     def batch_delete_server_tags(self, request):
-        """批量删除云服务器标签
+        r"""批量删除云服务器标签
 
         - 为指定云服务器批量删除标签。
         
@@ -580,7 +580,7 @@ class EcsClient(Client):
         return http_info
 
     def batch_reboot_servers(self, request):
-        """批量重启云服务器
+        r"""批量重启云服务器
 
         根据给定的云服务器ID列表，批量重启云服务器，一次最多可以重启1000台。
         
@@ -645,7 +645,7 @@ class EcsClient(Client):
         return http_info
 
     def batch_reset_servers_password(self, request):
-        """批量重置弹性云服务器密码
+        r"""批量重置弹性云服务器密码
 
         批量重置弹性云服务器管理帐号（root用户或Administrator用户）的密码。
         
@@ -710,7 +710,7 @@ class EcsClient(Client):
         return http_info
 
     def batch_start_servers(self, request):
-        """批量启动云服务器
+        r"""批量启动云服务器
 
         根据给定的云服务器ID列表，批量启动云服务器，一次最多可以启动1000台。
         
@@ -775,7 +775,7 @@ class EcsClient(Client):
         return http_info
 
     def batch_stop_servers(self, request):
-        """批量关闭云服务器
+        r"""批量关闭云服务器
 
         根据给定的云服务器ID列表，批量关闭云服务器，一次最多可以关闭1000台。
         
@@ -840,7 +840,7 @@ class EcsClient(Client):
         return http_info
 
     def batch_update_servers_name(self, request):
-        """批量修改弹性云服务器
+        r"""批量修改弹性云服务器
 
         批量修改弹性云服务器信息。
         当前仅支持批量修改云服务器名称，一次最多可以修改1000台。
@@ -906,7 +906,7 @@ class EcsClient(Client):
         return http_info
 
     def change_server_charge_mode(self, request):
-        """更换云服务器计费模式
+        r"""更换云服务器计费模式
 
         更换云服务器的计费模式
         
@@ -971,7 +971,7 @@ class EcsClient(Client):
         return http_info
 
     def change_server_network_interface(self, request):
-        """更新云服务器指定网卡属性
+        r"""更新云服务器指定网卡属性
 
         更新云服务器指定网卡属性，当前仅支持更新网卡IP。
         
@@ -1040,7 +1040,7 @@ class EcsClient(Client):
         return http_info
 
     def change_server_os_with_cloud_init(self, request):
-        """切换弹性云服务器操作系统(安装Cloud init)
+        r"""切换弹性云服务器操作系统(安装Cloud init)
 
         切换弹性云服务器操作系统。支持弹性云服务器数据盘不变的情况下，使用新镜像重装系统盘。
         
@@ -1109,7 +1109,7 @@ class EcsClient(Client):
         return http_info
 
     def change_server_os_without_cloud_init(self, request):
-        """切换弹性云服务器操作系统(未安装Cloud init)
+        r"""切换弹性云服务器操作系统(未安装Cloud init)
 
         切换弹性云服务器操作系统。
         
@@ -1178,7 +1178,7 @@ class EcsClient(Client):
         return http_info
 
     def change_vpc(self, request):
-        """云服务器切换虚拟私有云
+        r"""云服务器切换虚拟私有云
 
         云服务器切换虚拟私有云。
         
@@ -1245,7 +1245,7 @@ class EcsClient(Client):
         return http_info
 
     def create_post_paid_servers(self, request):
-        """创建云服务器(按需)
+        r"""创建云服务器(按需)
 
         创建一台或多台[按需付费](https://support.huaweicloud.com/productdesc-ecs/ecs_01_0065.html)方式的云服务器。
         
@@ -1325,7 +1325,7 @@ class EcsClient(Client):
         return http_info
 
     def create_server_group(self, request):
-        """创建云服务器组
+        r"""创建云服务器组
 
         创建弹性云服务器组。
         
@@ -1392,7 +1392,7 @@ class EcsClient(Client):
         return http_info
 
     def create_servers(self, request):
-        """创建云服务器
+        r"""创建云服务器
 
         创建一台或多台云服务器。
         
@@ -1481,7 +1481,7 @@ class EcsClient(Client):
         return http_info
 
     def delete_server_group(self, request):
-        """删除云服务器组
+        r"""删除云服务器组
 
         删除云服务器组。
         
@@ -1548,7 +1548,7 @@ class EcsClient(Client):
         return http_info
 
     def delete_server_group_member(self, request):
-        """删除云服务器组成员
+        r"""删除云服务器组成员
 
         将弹性云服务器移出云服务器组。移出后，该云服务器与云服务器组中的成员不再遵从反亲和策略。
         
@@ -1615,7 +1615,7 @@ class EcsClient(Client):
         return http_info
 
     def delete_server_metadata(self, request):
-        """删除云服务器指定元数据
+        r"""删除云服务器指定元数据
 
         删除云服务器指定元数据。
         
@@ -1682,7 +1682,7 @@ class EcsClient(Client):
         return http_info
 
     def delete_server_password(self, request):
-        """云服务器清除密码(企业项目)
+        r"""云服务器清除密码(企业项目)
 
         清除Windows云服务器初始安装时系统生成的密码记录。清除密码后，不影响云服务器密码登录功能，但不能再使用获取密码功能来查询该云服务器密码。
         
@@ -1747,7 +1747,7 @@ class EcsClient(Client):
         return http_info
 
     def delete_servers(self, request):
-        """删除云服务器
+        r"""删除云服务器
 
         根据指定的云服务器ID列表，删除云服务器。
         
@@ -1814,7 +1814,7 @@ class EcsClient(Client):
         return http_info
 
     def detach_server_volume(self, request):
-        """弹性云服务器卸载磁盘
+        r"""弹性云服务器卸载磁盘
 
         从弹性云服务器中卸载磁盘。
         
@@ -1883,7 +1883,7 @@ class EcsClient(Client):
         return http_info
 
     def disassociate_server_virtual_ip(self, request):
-        """云服务器网卡解绑虚拟IP地址
+        r"""云服务器网卡解绑虚拟IP地址
 
         虚拟IP地址用于为网卡提供第二个IP地址，同时支持与多个弹性云服务器的网卡绑定，从而实现多个弹性云服务器之间的高可用性。
         
@@ -1952,7 +1952,7 @@ class EcsClient(Client):
         return http_info
 
     def list_cloud_servers(self, request):
-        """查询云服务器列表接口
+        r"""查询云服务器列表接口
 
         查询云服务器列表接口。
         
@@ -2056,7 +2056,7 @@ class EcsClient(Client):
         return http_info
 
     def list_flavor_sell_policies(self, request):
-        """查询规格销售策略
+        r"""查询规格销售策略
 
         查询规格销售策略。
         
@@ -2141,7 +2141,7 @@ class EcsClient(Client):
         return http_info
 
     def list_flavors(self, request):
-        """查询规格详情和规格扩展信息列表
+        r"""查询规格详情和规格扩展信息列表
 
         查询云服务器规格详情信息和规格扩展信息列表。
         
@@ -2206,7 +2206,7 @@ class EcsClient(Client):
         return http_info
 
     def list_resize_flavors(self, request):
-        """查询云服务器规格变更支持列表
+        r"""查询云服务器规格变更支持列表
 
         变更规格时，部分规格的云服务器之间不能互相变更。您可以通过本接口，通过指定弹性云服务器规格，查询该规格可以变更的规格列表。
         
@@ -2283,7 +2283,7 @@ class EcsClient(Client):
         return http_info
 
     def list_scheduled_events(self, request):
-        """查询计划事件列表
+        r"""查询计划事件列表
 
         查询计划事件列表
         支持查看过去7天内计划事件
@@ -2366,7 +2366,7 @@ class EcsClient(Client):
         return http_info
 
     def list_server_az_info(self, request):
-        """查询可用区列表
+        r"""查询可用区列表
 
         查询可用区列表
         
@@ -2429,7 +2429,7 @@ class EcsClient(Client):
         return http_info
 
     def list_server_block_devices(self, request):
-        """查询弹性云服务器挂载磁盘列表详情信息
+        r"""查询弹性云服务器挂载磁盘列表详情信息
 
         查询弹性云服务器挂载的磁盘信息。
         
@@ -2494,7 +2494,7 @@ class EcsClient(Client):
         return http_info
 
     def list_server_groups(self, request):
-        """查询云服务器组列表
+        r"""查询云服务器组列表
 
         查询弹性云服务器组。
         
@@ -2563,7 +2563,7 @@ class EcsClient(Client):
         return http_info
 
     def list_server_interfaces(self, request):
-        """查询云服务器网卡信息
+        r"""查询云服务器网卡信息
 
         查询云服务器网卡信息。
         
@@ -2628,7 +2628,7 @@ class EcsClient(Client):
         return http_info
 
     def list_server_tags(self, request):
-        """查询项目标签
+        r"""查询项目标签
 
         项目（Project）用于将OpenStack的资源（计算资源、存储资源和网络资源）进行分组和隔离。项目可以是一个部门或者一个项目组。一个帐户中可以创建多个项目。
         
@@ -2693,7 +2693,7 @@ class EcsClient(Client):
         return http_info
 
     def list_server_volume_attachments(self, request):
-        """查询弹性云服务器挂载磁盘列表信息
+        r"""查询弹性云服务器挂载磁盘列表信息
 
         查询弹性云服务器挂载的磁盘信息。
         
@@ -2758,7 +2758,7 @@ class EcsClient(Client):
         return http_info
 
     def list_servers_by_tag(self, request):
-        """按标签查询云服务器列表
+        r"""按标签查询云服务器列表
 
         使用标签过滤弹性云服务器，并返回云服务器使用的所有标签和资源列表。
         
@@ -2825,7 +2825,7 @@ class EcsClient(Client):
         return http_info
 
     def list_servers_details(self, request):
-        """查询云服务器详情列表
+        r"""查询云服务器详情列表
 
         根据用户请求条件从数据库筛选、查询所有的弹性云服务器，并关联相关表获取到弹性云服务器的详细信息。
         
@@ -2916,7 +2916,7 @@ class EcsClient(Client):
         return http_info
 
     def migrate_server(self, request):
-        """冷迁移云服务器
+        r"""冷迁移云服务器
 
         - 将部署在专属主机上的弹性云服务器迁移至其他专属主机。
         - 将部署在专属主机上的弹性云服务器迁移至公共资源池，即不再部署在专属主机上。
@@ -2985,7 +2985,7 @@ class EcsClient(Client):
         return http_info
 
     def nova_associate_security_group(self, request):
-        """添加安全组
+        r"""添加安全组
 
         为弹性云服务器添加一个安全组。
         
@@ -3054,7 +3054,7 @@ class EcsClient(Client):
         return http_info
 
     def nova_attach_interface(self, request):
-        """添加云服务器网卡
+        r"""添加云服务器网卡
 
         给云服务器添加一张网卡。
         
@@ -3121,7 +3121,7 @@ class EcsClient(Client):
         return http_info
 
     def nova_create_keypair(self, request):
-        """创建和导入SSH密钥
+        r"""创建和导入SSH密钥
 
         创建SSH密钥，或把公钥导入系统，生成密钥对。
         
@@ -3190,7 +3190,7 @@ class EcsClient(Client):
         return http_info
 
     def nova_create_servers(self, request):
-        """创建云服务器
+        r"""创建云服务器
 
         创建一台弹性云服务器。
         
@@ -3261,7 +3261,7 @@ class EcsClient(Client):
         return http_info
 
     def nova_delete_keypair(self, request):
-        """删除SSH密钥
+        r"""删除SSH密钥
 
         根据SSH密钥的名称，删除指定SSH密钥。
         
@@ -3326,7 +3326,7 @@ class EcsClient(Client):
         return http_info
 
     def nova_delete_server(self, request):
-        """删除云服务器
+        r"""删除云服务器
 
         删除一台云服务器。
         
@@ -3391,7 +3391,7 @@ class EcsClient(Client):
         return http_info
 
     def nova_disassociate_security_group(self, request):
-        """移除安全组
+        r"""移除安全组
 
         移除弹性云服务器中的安全组。
         
@@ -3458,7 +3458,7 @@ class EcsClient(Client):
         return http_info
 
     def nova_list_availability_zones(self, request):
-        """查询可用区列表
+        r"""查询可用区列表
 
         查询可用域列表。
         
@@ -3523,7 +3523,7 @@ class EcsClient(Client):
         return http_info
 
     def nova_list_keypairs(self, request):
-        """查询SSH密钥列表
+        r"""查询SSH密钥列表
 
         查询SSH密钥信息列表。
         
@@ -3592,7 +3592,7 @@ class EcsClient(Client):
         return http_info
 
     def nova_list_server_security_groups(self, request):
-        """查询指定云服务器安全组列表
+        r"""查询指定云服务器安全组列表
 
         查询指定弹性云服务器的安全组。
         
@@ -3657,7 +3657,7 @@ class EcsClient(Client):
         return http_info
 
     def nova_list_servers_details(self, request):
-        """查询云服务器详情列表
+        r"""查询云服务器详情列表
 
         查询云服务器详情信息列表。
         
@@ -3746,7 +3746,7 @@ class EcsClient(Client):
         return http_info
 
     def nova_show_flavor_extra_specs(self, request):
-        """查询云服务器规格extra_specs的详情
+        r"""查询云服务器规格extra_specs的详情
 
         查询指定的规格的详细信息。
         
@@ -3811,7 +3811,7 @@ class EcsClient(Client):
         return http_info
 
     def nova_show_keypair(self, request):
-        """查询SSH密钥详情
+        r"""查询SSH密钥详情
 
         根据SSH密钥名称查询指定SSH密钥。
         
@@ -3878,7 +3878,7 @@ class EcsClient(Client):
         return http_info
 
     def nova_show_server(self, request):
-        """查询云服务器详情
+        r"""查询云服务器详情
 
         根据云服务器ID，查询云服务器的详细信息。
         
@@ -3945,7 +3945,7 @@ class EcsClient(Client):
         return http_info
 
     def nova_show_server_interface(self, request):
-        """查询指定云服务器网卡信息
+        r"""查询指定云服务器网卡信息
 
         根据网卡ID，查询云服务器网卡信息。
         
@@ -4012,7 +4012,7 @@ class EcsClient(Client):
         return http_info
 
     def register_server_monitor(self, request):
-        """注册云服务器监控
+        r"""注册云服务器监控
 
         将云服务器添加到监控表中。
         
@@ -4081,7 +4081,7 @@ class EcsClient(Client):
         return http_info
 
     def reinstall_server_with_cloud_init(self, request):
-        """重装弹性云服务器操作系统(安装Cloud-init)
+        r"""重装弹性云服务器操作系统(安装Cloud-init)
 
         重装弹性云服务器的操作系统。支持弹性云服务器数据盘不变的情况下，使用原镜像重装系统盘。
         
@@ -4150,7 +4150,7 @@ class EcsClient(Client):
         return http_info
 
     def reinstall_server_without_cloud_init(self, request):
-        """重装弹性云服务器操作系统(未安装Cloud init)
+        r"""重装弹性云服务器操作系统(未安装Cloud init)
 
         重装弹性云服务器的操作系统。
         
@@ -4219,7 +4219,7 @@ class EcsClient(Client):
         return http_info
 
     def reset_server_password(self, request):
-        """一键重置弹性云服务器密码(企业项目)
+        r"""一键重置弹性云服务器密码(企业项目)
 
         重置弹性云服务器管理帐号（root用户或Administrator用户）的密码。
         
@@ -4286,7 +4286,7 @@ class EcsClient(Client):
         return http_info
 
     def resize_post_paid_server(self, request):
-        """变更云服务器规格(按需)
+        r"""变更云服务器规格(按需)
 
         当您创建的弹性云服务器规格无法满足业务需要时，可以变更云服务器规格，升级vCPU、内存。具体接口的使用，请参见本节内容。
         
@@ -4357,7 +4357,7 @@ class EcsClient(Client):
         return http_info
 
     def resize_server(self, request):
-        """变更云服务器规格
+        r"""变更云服务器规格
 
         变更云服务器规格。
         
@@ -4432,7 +4432,7 @@ class EcsClient(Client):
         return http_info
 
     def show_reset_password_flag(self, request):
-        """查询是否支持一键重置密码
+        r"""查询是否支持一键重置密码
 
         查询弹性云服务器是否支持一键重置密码。
         
@@ -4497,7 +4497,7 @@ class EcsClient(Client):
         return http_info
 
     def show_server(self, request):
-        """查询云服务器详情
+        r"""查询云服务器详情
 
         查询弹性云服务器的详细信息。
         
@@ -4564,7 +4564,7 @@ class EcsClient(Client):
         return http_info
 
     def show_server_block_device(self, request):
-        """查询弹性云服务器单个磁盘信息
+        r"""查询弹性云服务器单个磁盘信息
 
         查询弹性云服务器挂载的单个磁盘信息。
         
@@ -4631,7 +4631,7 @@ class EcsClient(Client):
         return http_info
 
     def show_server_group(self, request):
-        """查询云服务器组详情
+        r"""查询云服务器组详情
 
         查询弹性云服务器组详情。
         
@@ -4698,7 +4698,7 @@ class EcsClient(Client):
         return http_info
 
     def show_server_limits(self, request):
-        """查询租户配额
+        r"""查询租户配额
 
         查询租户配额信息。
         
@@ -4761,7 +4761,7 @@ class EcsClient(Client):
         return http_info
 
     def show_server_password(self, request):
-        """云服务器获取密码(企业项目)
+        r"""云服务器获取密码(企业项目)
 
         当通过支持Cloudbase-init功能的镜像创建Windows云服务器时，获取云服务器初始安装时系统生成的管理员帐户（Administrator帐户或Cloudbase-init设置的帐户）随机密码。
         
@@ -4826,7 +4826,7 @@ class EcsClient(Client):
         return http_info
 
     def show_server_remote_console(self, request):
-        """获取VNC远程登录地址
+        r"""获取VNC远程登录地址
 
         获取弹性云服务器VNC远程登录地址。
         
@@ -4893,7 +4893,7 @@ class EcsClient(Client):
         return http_info
 
     def show_server_tags(self, request):
-        """查询云服务器标签
+        r"""查询云服务器标签
 
         - 查询指定云服务器的标签信息。
         
@@ -4960,7 +4960,7 @@ class EcsClient(Client):
         return http_info
 
     def update_server(self, request):
-        """修改云服务器
+        r"""修改云服务器
 
         修改云服务器信息，目前支持修改云服务器名称及描述和hostname。
         
@@ -5027,7 +5027,7 @@ class EcsClient(Client):
         return http_info
 
     def update_server_auto_terminate_time(self, request):
-        """修改云服务器定时删除时间
+        r"""修改云服务器定时删除时间
 
         修改按需服务器，设置定时删除时间。如果设置的定时删除时间为空字符串，表示取消定时删除。
         
@@ -5096,7 +5096,7 @@ class EcsClient(Client):
         return http_info
 
     def update_server_block_device(self, request):
-        """修改云服务器挂载的单个磁盘信息
+        r"""修改云服务器挂载的单个磁盘信息
 
         修改云服务器云主机挂载的单个磁盘信息。&#39;当前仅支持修改delete_on_termination字段。
         
@@ -5165,7 +5165,7 @@ class EcsClient(Client):
         return http_info
 
     def update_server_interface(self, request):
-        """更新云服务器网卡挂载信息
+        r"""更新云服务器网卡挂载信息
 
         更新云服务器网卡挂载信息。
         
@@ -5234,7 +5234,7 @@ class EcsClient(Client):
         return http_info
 
     def update_server_metadata(self, request):
-        """更新云服务器元数据
+        r"""更新云服务器元数据
 
         更新云服务器元数据。
         
@@ -5307,7 +5307,7 @@ class EcsClient(Client):
         return http_info
 
     def nova_list_versions(self, request):
-        """查询API版本信息列表
+        r"""查询API版本信息列表
 
         返回Nova当前所有可用的版本。
         
@@ -5375,7 +5375,7 @@ class EcsClient(Client):
         return http_info
 
     def nova_show_version(self, request):
-        """查询指定API版本信息
+        r"""查询指定API版本信息
 
         返回指定版本的信息。
         为了支持功能不断扩展，Nova API支持版本号区分。Nova中有两种形式的版本号：
@@ -5444,7 +5444,7 @@ class EcsClient(Client):
         return http_info
 
     def show_job(self, request):
-        """查询任务的执行状态
+        r"""查询任务的执行状态
 
         查询Job的执行状态。
         

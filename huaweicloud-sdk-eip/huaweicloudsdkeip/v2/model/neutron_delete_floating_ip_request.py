@@ -25,7 +25,7 @@ class NeutronDeleteFloatingIpRequest:
     }
 
     def __init__(self, floatingip_id=None):
-        """NeutronDeleteFloatingIpRequest
+        r"""NeutronDeleteFloatingIpRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class NeutronDeleteFloatingIpRequest:
 
     @property
     def floatingip_id(self):
-        """Gets the floatingip_id of this NeutronDeleteFloatingIpRequest.
+        r"""Gets the floatingip_id of this NeutronDeleteFloatingIpRequest.
 
         floatingip的ID
 
@@ -53,7 +53,7 @@ class NeutronDeleteFloatingIpRequest:
 
     @floatingip_id.setter
     def floatingip_id(self, floatingip_id):
-        """Sets the floatingip_id of this NeutronDeleteFloatingIpRequest.
+        r"""Sets the floatingip_id of this NeutronDeleteFloatingIpRequest.
 
         floatingip的ID
 

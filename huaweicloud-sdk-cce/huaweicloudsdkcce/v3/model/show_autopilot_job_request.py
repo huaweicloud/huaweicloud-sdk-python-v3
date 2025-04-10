@@ -25,7 +25,7 @@ class ShowAutopilotJobRequest:
     }
 
     def __init__(self, job_id=None):
-        """ShowAutopilotJobRequest
+        r"""ShowAutopilotJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowAutopilotJobRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowAutopilotJobRequest.
+        r"""Gets the job_id of this ShowAutopilotJobRequest.
 
         任务ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -53,7 +53,7 @@ class ShowAutopilotJobRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowAutopilotJobRequest.
+        r"""Sets the job_id of this ShowAutopilotJobRequest.
 
         任务ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 

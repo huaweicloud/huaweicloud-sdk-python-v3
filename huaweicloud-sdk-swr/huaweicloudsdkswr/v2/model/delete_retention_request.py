@@ -29,7 +29,7 @@ class DeleteRetentionRequest:
     }
 
     def __init__(self, namespace=None, repository=None, retention_id=None):
-        """DeleteRetentionRequest
+        r"""DeleteRetentionRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DeleteRetentionRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this DeleteRetentionRequest.
+        r"""Gets the namespace of this DeleteRetentionRequest.
 
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
@@ -65,7 +65,7 @@ class DeleteRetentionRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this DeleteRetentionRequest.
+        r"""Sets the namespace of this DeleteRetentionRequest.
 
         组织名称。小写字母开头，后面跟小写字母、数字、小数点、下划线或中划线（其中下划线最多允许连续两个，小数点、下划线、中划线不能直接相连），小写字母或数字结尾，1-64个字符。
 
@@ -76,7 +76,7 @@ class DeleteRetentionRequest:
 
     @property
     def repository(self):
-        """Gets the repository of this DeleteRetentionRequest.
+        r"""Gets the repository of this DeleteRetentionRequest.
 
         镜像仓库名称
 
@@ -87,7 +87,7 @@ class DeleteRetentionRequest:
 
     @repository.setter
     def repository(self, repository):
-        """Sets the repository of this DeleteRetentionRequest.
+        r"""Sets the repository of this DeleteRetentionRequest.
 
         镜像仓库名称
 
@@ -98,7 +98,7 @@ class DeleteRetentionRequest:
 
     @property
     def retention_id(self):
-        """Gets the retention_id of this DeleteRetentionRequest.
+        r"""Gets the retention_id of this DeleteRetentionRequest.
 
         镜像老化规则id
 
@@ -109,7 +109,7 @@ class DeleteRetentionRequest:
 
     @retention_id.setter
     def retention_id(self, retention_id):
-        """Sets the retention_id of this DeleteRetentionRequest.
+        r"""Sets the retention_id of this DeleteRetentionRequest.
 
         镜像老化规则id
 

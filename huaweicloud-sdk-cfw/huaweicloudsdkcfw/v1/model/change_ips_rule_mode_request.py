@@ -27,7 +27,7 @@ class ChangeIpsRuleModeRequest:
     }
 
     def __init__(self, enterprise_project_id=None, body=None):
-        """ChangeIpsRuleModeRequest
+        r"""ChangeIpsRuleModeRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ChangeIpsRuleModeRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ChangeIpsRuleModeRequest.
+        r"""Gets the enterprise_project_id of this ChangeIpsRuleModeRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -61,7 +61,7 @@ class ChangeIpsRuleModeRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ChangeIpsRuleModeRequest.
+        r"""Sets the enterprise_project_id of this ChangeIpsRuleModeRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -72,7 +72,7 @@ class ChangeIpsRuleModeRequest:
 
     @property
     def body(self):
-        """Gets the body of this ChangeIpsRuleModeRequest.
+        r"""Gets the body of this ChangeIpsRuleModeRequest.
 
         :return: The body of this ChangeIpsRuleModeRequest.
         :rtype: :class:`huaweicloudsdkcfw.v1.IpsRuleChangeDto`
@@ -81,7 +81,7 @@ class ChangeIpsRuleModeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ChangeIpsRuleModeRequest.
+        r"""Sets the body of this ChangeIpsRuleModeRequest.
 
         :param body: The body of this ChangeIpsRuleModeRequest.
         :type body: :class:`huaweicloudsdkcfw.v1.IpsRuleChangeDto`

@@ -28,7 +28,7 @@ class SupportedServiceEnum:
     }
 
     def __init__(self):
-        """SupportedServiceEnum
+        r"""SupportedServiceEnum
 
         The model defined in huaweicloud sdk
 

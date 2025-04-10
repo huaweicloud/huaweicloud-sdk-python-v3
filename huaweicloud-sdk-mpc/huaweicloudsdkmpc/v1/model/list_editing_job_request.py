@@ -37,7 +37,7 @@ class ListEditingJobRequest:
     }
 
     def __init__(self, x_language=None, job_id=None, status=None, start_time=None, end_time=None, page=None, size=None):
-        """ListEditingJobRequest
+        r"""ListEditingJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ListEditingJobRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListEditingJobRequest.
+        r"""Gets the x_language of this ListEditingJobRequest.
 
         客户端语言
 
@@ -96,7 +96,7 @@ class ListEditingJobRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListEditingJobRequest.
+        r"""Sets the x_language of this ListEditingJobRequest.
 
         客户端语言
 
@@ -107,7 +107,7 @@ class ListEditingJobRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ListEditingJobRequest.
+        r"""Gets the job_id of this ListEditingJobRequest.
 
         任务ID。一次最多10个
 
@@ -118,7 +118,7 @@ class ListEditingJobRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ListEditingJobRequest.
+        r"""Sets the job_id of this ListEditingJobRequest.
 
         任务ID。一次最多10个
 
@@ -129,7 +129,7 @@ class ListEditingJobRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListEditingJobRequest.
+        r"""Gets the status of this ListEditingJobRequest.
 
         任务执行状态。  取值如下： - INIT：初始状态 - WAITING：待启动 - PREPROCESSING：处理中 - SUCCEED：处理成功 - FAILED：处理失败 - CANCELED：已取消
 
@@ -140,7 +140,7 @@ class ListEditingJobRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListEditingJobRequest.
+        r"""Sets the status of this ListEditingJobRequest.
 
         任务执行状态。  取值如下： - INIT：初始状态 - WAITING：待启动 - PREPROCESSING：处理中 - SUCCEED：处理成功 - FAILED：处理失败 - CANCELED：已取消
 
@@ -151,7 +151,7 @@ class ListEditingJobRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListEditingJobRequest.
+        r"""Gets the start_time of this ListEditingJobRequest.
 
         起始时间。格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效。
 
@@ -162,7 +162,7 @@ class ListEditingJobRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListEditingJobRequest.
+        r"""Sets the start_time of this ListEditingJobRequest.
 
         起始时间。格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效。
 
@@ -173,7 +173,7 @@ class ListEditingJobRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListEditingJobRequest.
+        r"""Gets the end_time of this ListEditingJobRequest.
 
         结束时间。格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效。
 
@@ -184,7 +184,7 @@ class ListEditingJobRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListEditingJobRequest.
+        r"""Sets the end_time of this ListEditingJobRequest.
 
         结束时间。格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效。
 
@@ -195,7 +195,7 @@ class ListEditingJobRequest:
 
     @property
     def page(self):
-        """Gets the page of this ListEditingJobRequest.
+        r"""Gets the page of this ListEditingJobRequest.
 
         分页编号。查询指定“task_id”时，该参数无效。  默认值：0。
 
@@ -206,7 +206,7 @@ class ListEditingJobRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListEditingJobRequest.
+        r"""Sets the page of this ListEditingJobRequest.
 
         分页编号。查询指定“task_id”时，该参数无效。  默认值：0。
 
@@ -217,7 +217,7 @@ class ListEditingJobRequest:
 
     @property
     def size(self):
-        """Gets the size of this ListEditingJobRequest.
+        r"""Gets the size of this ListEditingJobRequest.
 
         每页记录数。查询指定“task_id”时，该参数无效。  取值范围：[1,100]。  默认值：10。
 
@@ -228,7 +228,7 @@ class ListEditingJobRequest:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListEditingJobRequest.
+        r"""Sets the size of this ListEditingJobRequest.
 
         每页记录数。查询指定“task_id”时，该参数无效。  取值范围：[1,100]。  默认值：10。
 

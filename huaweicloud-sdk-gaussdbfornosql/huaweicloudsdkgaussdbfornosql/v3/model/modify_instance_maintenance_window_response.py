@@ -24,7 +24,7 @@ class ModifyInstanceMaintenanceWindowResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ModifyInstanceMaintenanceWindowResponse
+        r"""ModifyInstanceMaintenanceWindowResponse
 
         The model defined in huaweicloud sdk
 

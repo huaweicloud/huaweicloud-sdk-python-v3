@@ -30,7 +30,7 @@ class CreateDatasourceConnectionResponse(SdkResponse):
     }
 
     def __init__(self, is_success=None, message=None, connection_id=None):
-        """CreateDatasourceConnectionResponse
+        r"""CreateDatasourceConnectionResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateDatasourceConnectionResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this CreateDatasourceConnectionResponse.
+        r"""Gets the is_success of this CreateDatasourceConnectionResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -69,7 +69,7 @@ class CreateDatasourceConnectionResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this CreateDatasourceConnectionResponse.
+        r"""Sets the is_success of this CreateDatasourceConnectionResponse.
 
         执行请求是否成功。“true”表示请求执行成功。
 
@@ -80,7 +80,7 @@ class CreateDatasourceConnectionResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this CreateDatasourceConnectionResponse.
+        r"""Gets the message of this CreateDatasourceConnectionResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -91,7 +91,7 @@ class CreateDatasourceConnectionResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CreateDatasourceConnectionResponse.
+        r"""Sets the message of this CreateDatasourceConnectionResponse.
 
         系统提示信息，执行成功时，信息可能为空。
 
@@ -102,7 +102,7 @@ class CreateDatasourceConnectionResponse(SdkResponse):
 
     @property
     def connection_id(self):
-        """Gets the connection_id of this CreateDatasourceConnectionResponse.
+        r"""Gets the connection_id of this CreateDatasourceConnectionResponse.
 
         连接ID，用于标识跨源连接的UUID。
 
@@ -113,7 +113,7 @@ class CreateDatasourceConnectionResponse(SdkResponse):
 
     @connection_id.setter
     def connection_id(self, connection_id):
-        """Sets the connection_id of this CreateDatasourceConnectionResponse.
+        r"""Sets the connection_id of this CreateDatasourceConnectionResponse.
 
         连接ID，用于标识跨源连接的UUID。
 

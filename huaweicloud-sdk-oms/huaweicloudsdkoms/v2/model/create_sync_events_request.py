@@ -27,7 +27,7 @@ class CreateSyncEventsRequest:
     }
 
     def __init__(self, sync_task_id=None, body=None):
-        """CreateSyncEventsRequest
+        r"""CreateSyncEventsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateSyncEventsRequest:
 
     @property
     def sync_task_id(self):
-        """Gets the sync_task_id of this CreateSyncEventsRequest.
+        r"""Gets the sync_task_id of this CreateSyncEventsRequest.
 
         同步任务ID
 
@@ -60,7 +60,7 @@ class CreateSyncEventsRequest:
 
     @sync_task_id.setter
     def sync_task_id(self, sync_task_id):
-        """Sets the sync_task_id of this CreateSyncEventsRequest.
+        r"""Sets the sync_task_id of this CreateSyncEventsRequest.
 
         同步任务ID
 
@@ -71,7 +71,7 @@ class CreateSyncEventsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSyncEventsRequest.
+        r"""Gets the body of this CreateSyncEventsRequest.
 
         :return: The body of this CreateSyncEventsRequest.
         :rtype: :class:`huaweicloudsdkoms.v2.SyncObjectReq`
@@ -80,7 +80,7 @@ class CreateSyncEventsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSyncEventsRequest.
+        r"""Sets the body of this CreateSyncEventsRequest.
 
         :param body: The body of this CreateSyncEventsRequest.
         :type body: :class:`huaweicloudsdkoms.v2.SyncObjectReq`

@@ -27,7 +27,7 @@ class PutOfficialEventsRequest:
     }
 
     def __init__(self, source_name=None, body=None):
-        """PutOfficialEventsRequest
+        r"""PutOfficialEventsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class PutOfficialEventsRequest:
 
     @property
     def source_name(self):
-        """Gets the source_name of this PutOfficialEventsRequest.
+        r"""Gets the source_name of this PutOfficialEventsRequest.
 
         事件源名称
 
@@ -60,7 +60,7 @@ class PutOfficialEventsRequest:
 
     @source_name.setter
     def source_name(self, source_name):
-        """Sets the source_name of this PutOfficialEventsRequest.
+        r"""Sets the source_name of this PutOfficialEventsRequest.
 
         事件源名称
 
@@ -71,7 +71,7 @@ class PutOfficialEventsRequest:
 
     @property
     def body(self):
-        """Gets the body of this PutOfficialEventsRequest.
+        r"""Gets the body of this PutOfficialEventsRequest.
 
         :return: The body of this PutOfficialEventsRequest.
         :rtype: :class:`huaweicloudsdkeg.v1.PutEventsReq`
@@ -80,7 +80,7 @@ class PutOfficialEventsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this PutOfficialEventsRequest.
+        r"""Sets the body of this PutOfficialEventsRequest.
 
         :param body: The body of this PutOfficialEventsRequest.
         :type body: :class:`huaweicloudsdkeg.v1.PutEventsReq`

@@ -30,7 +30,7 @@ class RunSemanticParserResponse(SdkResponse):
     }
 
     def __init__(self, result=None, error_code=None, error_msg=None):
-        """RunSemanticParserResponse
+        r"""RunSemanticParserResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class RunSemanticParserResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RunSemanticParserResponse.
+        r"""Gets the result of this RunSemanticParserResponse.
 
         :return: The result of this RunSemanticParserResponse.
         :rtype: :class:`huaweicloudsdknlp.v2.IntentResult`
@@ -67,7 +67,7 @@ class RunSemanticParserResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RunSemanticParserResponse.
+        r"""Sets the result of this RunSemanticParserResponse.
 
         :param result: The result of this RunSemanticParserResponse.
         :type result: :class:`huaweicloudsdknlp.v2.IntentResult`
@@ -76,7 +76,7 @@ class RunSemanticParserResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this RunSemanticParserResponse.
+        r"""Gets the error_code of this RunSemanticParserResponse.
 
         调用失败时的错误码。调用成功时无此字段。
 
@@ -87,7 +87,7 @@ class RunSemanticParserResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this RunSemanticParserResponse.
+        r"""Sets the error_code of this RunSemanticParserResponse.
 
         调用失败时的错误码。调用成功时无此字段。
 
@@ -98,7 +98,7 @@ class RunSemanticParserResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this RunSemanticParserResponse.
+        r"""Gets the error_msg of this RunSemanticParserResponse.
 
         调用失败时的错误信息。调用成功时无此字段。
 
@@ -109,7 +109,7 @@ class RunSemanticParserResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this RunSemanticParserResponse.
+        r"""Sets the error_msg of this RunSemanticParserResponse.
 
         调用失败时的错误信息。调用成功时无此字段。
 

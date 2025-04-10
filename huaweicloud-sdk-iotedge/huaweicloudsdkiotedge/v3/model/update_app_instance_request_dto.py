@@ -33,7 +33,7 @@ class UpdateAppInstanceRequestDTO:
     }
 
     def __init__(self, action=None, namespace=None, app_version=None, values=None, rollback_version=None):
-        """UpdateAppInstanceRequestDTO
+        r"""UpdateAppInstanceRequestDTO
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class UpdateAppInstanceRequestDTO:
 
     @property
     def action(self):
-        """Gets the action of this UpdateAppInstanceRequestDTO.
+        r"""Gets the action of this UpdateAppInstanceRequestDTO.
 
         动作类型
 
@@ -81,7 +81,7 @@ class UpdateAppInstanceRequestDTO:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this UpdateAppInstanceRequestDTO.
+        r"""Sets the action of this UpdateAppInstanceRequestDTO.
 
         动作类型
 
@@ -92,7 +92,7 @@ class UpdateAppInstanceRequestDTO:
 
     @property
     def namespace(self):
-        """Gets the namespace of this UpdateAppInstanceRequestDTO.
+        r"""Gets the namespace of this UpdateAppInstanceRequestDTO.
 
         命名空间，应用实例部署于非默认命名空间(default)时必填
 
@@ -103,7 +103,7 @@ class UpdateAppInstanceRequestDTO:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this UpdateAppInstanceRequestDTO.
+        r"""Sets the namespace of this UpdateAppInstanceRequestDTO.
 
         命名空间，应用实例部署于非默认命名空间(default)时必填
 
@@ -114,7 +114,7 @@ class UpdateAppInstanceRequestDTO:
 
     @property
     def app_version(self):
-        """Gets the app_version of this UpdateAppInstanceRequestDTO.
+        r"""Gets the app_version of this UpdateAppInstanceRequestDTO.
 
         升级的目标版本号，动作类型为upgrade时必填
 
@@ -125,7 +125,7 @@ class UpdateAppInstanceRequestDTO:
 
     @app_version.setter
     def app_version(self, app_version):
-        """Sets the app_version of this UpdateAppInstanceRequestDTO.
+        r"""Sets the app_version of this UpdateAppInstanceRequestDTO.
 
         升级的目标版本号，动作类型为upgrade时必填
 
@@ -136,7 +136,7 @@ class UpdateAppInstanceRequestDTO:
 
     @property
     def values(self):
-        """Gets the values of this UpdateAppInstanceRequestDTO.
+        r"""Gets the values of this UpdateAppInstanceRequestDTO.
 
         应用实例chart配置，动作类型为upgrade时必填
 
@@ -147,7 +147,7 @@ class UpdateAppInstanceRequestDTO:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this UpdateAppInstanceRequestDTO.
+        r"""Sets the values of this UpdateAppInstanceRequestDTO.
 
         应用实例chart配置，动作类型为upgrade时必填
 
@@ -158,7 +158,7 @@ class UpdateAppInstanceRequestDTO:
 
     @property
     def rollback_version(self):
-        """Gets the rollback_version of this UpdateAppInstanceRequestDTO.
+        r"""Gets the rollback_version of this UpdateAppInstanceRequestDTO.
 
         回退的目标版本号，动作类型为rollback时必填
 
@@ -169,7 +169,7 @@ class UpdateAppInstanceRequestDTO:
 
     @rollback_version.setter
     def rollback_version(self, rollback_version):
-        """Sets the rollback_version of this UpdateAppInstanceRequestDTO.
+        r"""Sets the rollback_version of this UpdateAppInstanceRequestDTO.
 
         回退的目标版本号，动作类型为rollback时必填
 

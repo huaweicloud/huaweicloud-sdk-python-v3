@@ -27,7 +27,7 @@ class UninstallRequest:
     }
 
     def __init__(self, env_id=None, app_id=None):
-        """UninstallRequest
+        r"""UninstallRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UninstallRequest:
 
     @property
     def env_id(self):
-        """Gets the env_id of this UninstallRequest.
+        r"""Gets the env_id of this UninstallRequest.
 
         运行服务的ID。
 
@@ -59,7 +59,7 @@ class UninstallRequest:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this UninstallRequest.
+        r"""Sets the env_id of this UninstallRequest.
 
         运行服务的ID。
 
@@ -70,7 +70,7 @@ class UninstallRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this UninstallRequest.
+        r"""Gets the app_id of this UninstallRequest.
 
         待卸载的应用ID。
 
@@ -81,7 +81,7 @@ class UninstallRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this UninstallRequest.
+        r"""Sets the app_id of this UninstallRequest.
 
         待卸载的应用ID。
 

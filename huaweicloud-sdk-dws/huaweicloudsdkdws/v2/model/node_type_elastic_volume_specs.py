@@ -31,7 +31,7 @@ class NodeTypeElasticVolumeSpecs:
     }
 
     def __init__(self, type=None, step=None, min_size=None, max_size=None):
-        """NodeTypeElasticVolumeSpecs
+        r"""NodeTypeElasticVolumeSpecs
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class NodeTypeElasticVolumeSpecs:
 
     @property
     def type(self):
-        """Gets the type of this NodeTypeElasticVolumeSpecs.
+        r"""Gets the type of this NodeTypeElasticVolumeSpecs.
 
         云盘存储类型。
 
@@ -71,7 +71,7 @@ class NodeTypeElasticVolumeSpecs:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this NodeTypeElasticVolumeSpecs.
+        r"""Sets the type of this NodeTypeElasticVolumeSpecs.
 
         云盘存储类型。
 
@@ -82,7 +82,7 @@ class NodeTypeElasticVolumeSpecs:
 
     @property
     def step(self):
-        """Gets the step of this NodeTypeElasticVolumeSpecs.
+        r"""Gets the step of this NodeTypeElasticVolumeSpecs.
 
         云盘容量调整步长。
 
@@ -93,7 +93,7 @@ class NodeTypeElasticVolumeSpecs:
 
     @step.setter
     def step(self, step):
-        """Sets the step of this NodeTypeElasticVolumeSpecs.
+        r"""Sets the step of this NodeTypeElasticVolumeSpecs.
 
         云盘容量调整步长。
 
@@ -104,7 +104,7 @@ class NodeTypeElasticVolumeSpecs:
 
     @property
     def min_size(self):
-        """Gets the min_size of this NodeTypeElasticVolumeSpecs.
+        r"""Gets the min_size of this NodeTypeElasticVolumeSpecs.
 
         云盘支持的最小容量。
 
@@ -115,7 +115,7 @@ class NodeTypeElasticVolumeSpecs:
 
     @min_size.setter
     def min_size(self, min_size):
-        """Sets the min_size of this NodeTypeElasticVolumeSpecs.
+        r"""Sets the min_size of this NodeTypeElasticVolumeSpecs.
 
         云盘支持的最小容量。
 
@@ -126,7 +126,7 @@ class NodeTypeElasticVolumeSpecs:
 
     @property
     def max_size(self):
-        """Gets the max_size of this NodeTypeElasticVolumeSpecs.
+        r"""Gets the max_size of this NodeTypeElasticVolumeSpecs.
 
         云盘支持的最大容量。
 
@@ -137,7 +137,7 @@ class NodeTypeElasticVolumeSpecs:
 
     @max_size.setter
     def max_size(self, max_size):
-        """Sets the max_size of this NodeTypeElasticVolumeSpecs.
+        r"""Sets the max_size of this NodeTypeElasticVolumeSpecs.
 
         云盘支持的最大容量。
 

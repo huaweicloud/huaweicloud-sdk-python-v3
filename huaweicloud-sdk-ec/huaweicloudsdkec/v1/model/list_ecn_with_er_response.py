@@ -26,7 +26,7 @@ class ListEcnWithErResponse(SdkResponse):
     }
 
     def __init__(self, ecn_er_relationships=None):
-        """ListEcnWithErResponse
+        r"""ListEcnWithErResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListEcnWithErResponse(SdkResponse):
 
     @property
     def ecn_er_relationships(self):
-        """Gets the ecn_er_relationships of this ListEcnWithErResponse.
+        r"""Gets the ecn_er_relationships of this ListEcnWithErResponse.
 
         企业连接网络与企业路由器的绑定关系列表
 
@@ -55,7 +55,7 @@ class ListEcnWithErResponse(SdkResponse):
 
     @ecn_er_relationships.setter
     def ecn_er_relationships(self, ecn_er_relationships):
-        """Sets the ecn_er_relationships of this ListEcnWithErResponse.
+        r"""Sets the ecn_er_relationships of this ListEcnWithErResponse.
 
         企业连接网络与企业路由器的绑定关系列表
 

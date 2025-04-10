@@ -27,7 +27,7 @@ class I18nLanguage:
     }
 
     def __init__(self, language=None, value=None):
-        """I18nLanguage
+        r"""I18nLanguage
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class I18nLanguage:
 
     @property
     def language(self):
-        """Gets the language of this I18nLanguage.
+        r"""Gets the language of this I18nLanguage.
 
         语言
 
@@ -61,7 +61,7 @@ class I18nLanguage:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this I18nLanguage.
+        r"""Sets the language of this I18nLanguage.
 
         语言
 
@@ -72,7 +72,7 @@ class I18nLanguage:
 
     @property
     def value(self):
-        """Gets the value of this I18nLanguage.
+        r"""Gets the value of this I18nLanguage.
 
         值
 
@@ -83,7 +83,7 @@ class I18nLanguage:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this I18nLanguage.
+        r"""Sets the value of this I18nLanguage.
 
         值
 

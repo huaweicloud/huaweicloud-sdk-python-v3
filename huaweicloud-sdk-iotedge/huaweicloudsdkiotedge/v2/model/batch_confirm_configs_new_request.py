@@ -29,7 +29,7 @@ class BatchConfirmConfigsNewRequest:
     }
 
     def __init__(self, node_id=None, ia_id=None, body=None):
-        """BatchConfirmConfigsNewRequest
+        r"""BatchConfirmConfigsNewRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class BatchConfirmConfigsNewRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this BatchConfirmConfigsNewRequest.
+        r"""Gets the node_id of this BatchConfirmConfigsNewRequest.
 
         边缘节点ID
 
@@ -66,7 +66,7 @@ class BatchConfirmConfigsNewRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this BatchConfirmConfigsNewRequest.
+        r"""Sets the node_id of this BatchConfirmConfigsNewRequest.
 
         边缘节点ID
 
@@ -77,7 +77,7 @@ class BatchConfirmConfigsNewRequest:
 
     @property
     def ia_id(self):
-        """Gets the ia_id of this BatchConfirmConfigsNewRequest.
+        r"""Gets the ia_id of this BatchConfirmConfigsNewRequest.
 
         边侧第三方应用的模块ID
 
@@ -88,7 +88,7 @@ class BatchConfirmConfigsNewRequest:
 
     @ia_id.setter
     def ia_id(self, ia_id):
-        """Sets the ia_id of this BatchConfirmConfigsNewRequest.
+        r"""Sets the ia_id of this BatchConfirmConfigsNewRequest.
 
         边侧第三方应用的模块ID
 
@@ -99,7 +99,7 @@ class BatchConfirmConfigsNewRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchConfirmConfigsNewRequest.
+        r"""Gets the body of this BatchConfirmConfigsNewRequest.
 
         :return: The body of this BatchConfirmConfigsNewRequest.
         :rtype: :class:`huaweicloudsdkiotedge.v2.ConfirmIaConfigsRequestBody`
@@ -108,7 +108,7 @@ class BatchConfirmConfigsNewRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchConfirmConfigsNewRequest.
+        r"""Sets the body of this BatchConfirmConfigsNewRequest.
 
         :param body: The body of this BatchConfirmConfigsNewRequest.
         :type body: :class:`huaweicloudsdkiotedge.v2.ConfirmIaConfigsRequestBody`

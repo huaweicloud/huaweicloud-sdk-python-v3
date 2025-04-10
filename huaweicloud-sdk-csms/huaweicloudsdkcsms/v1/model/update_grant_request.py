@@ -27,7 +27,7 @@ class UpdateGrantRequest:
     }
 
     def __init__(self, resource_id=None, body=None):
-        """UpdateGrantRequest
+        r"""UpdateGrantRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateGrantRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this UpdateGrantRequest.
+        r"""Gets the resource_id of this UpdateGrantRequest.
 
         资源ID
 
@@ -60,7 +60,7 @@ class UpdateGrantRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this UpdateGrantRequest.
+        r"""Sets the resource_id of this UpdateGrantRequest.
 
         资源ID
 
@@ -71,7 +71,7 @@ class UpdateGrantRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateGrantRequest.
+        r"""Gets the body of this UpdateGrantRequest.
 
         :return: The body of this UpdateGrantRequest.
         :rtype: :class:`huaweicloudsdkcsms.v1.GrantSecretReqBody`
@@ -80,7 +80,7 @@ class UpdateGrantRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateGrantRequest.
+        r"""Sets the body of this UpdateGrantRequest.
 
         :param body: The body of this UpdateGrantRequest.
         :type body: :class:`huaweicloudsdkcsms.v1.GrantSecretReqBody`

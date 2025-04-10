@@ -28,7 +28,7 @@ class ListMetricsResponse(SdkResponse):
     }
 
     def __init__(self, metrics=None, meta_data=None):
-        """ListMetricsResponse
+        r"""ListMetricsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListMetricsResponse(SdkResponse):
 
     @property
     def metrics(self):
-        """Gets the metrics of this ListMetricsResponse.
+        r"""Gets the metrics of this ListMetricsResponse.
 
         指标信息列表
 
@@ -62,7 +62,7 @@ class ListMetricsResponse(SdkResponse):
 
     @metrics.setter
     def metrics(self, metrics):
-        """Sets the metrics of this ListMetricsResponse.
+        r"""Sets the metrics of this ListMetricsResponse.
 
         指标信息列表
 
@@ -73,7 +73,7 @@ class ListMetricsResponse(SdkResponse):
 
     @property
     def meta_data(self):
-        """Gets the meta_data of this ListMetricsResponse.
+        r"""Gets the meta_data of this ListMetricsResponse.
 
         :return: The meta_data of this ListMetricsResponse.
         :rtype: :class:`huaweicloudsdkces.v1.MetaData`
@@ -82,7 +82,7 @@ class ListMetricsResponse(SdkResponse):
 
     @meta_data.setter
     def meta_data(self, meta_data):
-        """Sets the meta_data of this ListMetricsResponse.
+        r"""Sets the meta_data of this ListMetricsResponse.
 
         :param meta_data: The meta_data of this ListMetricsResponse.
         :type meta_data: :class:`huaweicloudsdkces.v1.MetaData`

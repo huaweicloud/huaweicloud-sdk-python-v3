@@ -25,7 +25,7 @@ class CreateComputingResourceRequest:
     }
 
     def __init__(self, body=None):
-        """CreateComputingResourceRequest
+        r"""CreateComputingResourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateComputingResourceRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateComputingResourceRequest.
+        r"""Gets the body of this CreateComputingResourceRequest.
 
         :return: The body of this CreateComputingResourceRequest.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.CreateComputingResourceRequestBody`
@@ -52,7 +52,7 @@ class CreateComputingResourceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateComputingResourceRequest.
+        r"""Sets the body of this CreateComputingResourceRequest.
 
         :param body: The body of this CreateComputingResourceRequest.
         :type body: :class:`huaweicloudsdkiotanalytics.v1.CreateComputingResourceRequestBody`

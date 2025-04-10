@@ -29,7 +29,7 @@ class StarRocksInstanceInfoDatastore:
     }
 
     def __init__(self, id=None, type=None, version=None):
-        """StarRocksInstanceInfoDatastore
+        r"""StarRocksInstanceInfoDatastore
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class StarRocksInstanceInfoDatastore:
 
     @property
     def id(self):
-        """Gets the id of this StarRocksInstanceInfoDatastore.
+        r"""Gets the id of this StarRocksInstanceInfoDatastore.
 
         数据库ID。
 
@@ -68,7 +68,7 @@ class StarRocksInstanceInfoDatastore:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this StarRocksInstanceInfoDatastore.
+        r"""Sets the id of this StarRocksInstanceInfoDatastore.
 
         数据库ID。
 
@@ -79,7 +79,7 @@ class StarRocksInstanceInfoDatastore:
 
     @property
     def type(self):
-        """Gets the type of this StarRocksInstanceInfoDatastore.
+        r"""Gets the type of this StarRocksInstanceInfoDatastore.
 
         数据库类型。
 
@@ -90,7 +90,7 @@ class StarRocksInstanceInfoDatastore:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this StarRocksInstanceInfoDatastore.
+        r"""Sets the type of this StarRocksInstanceInfoDatastore.
 
         数据库类型。
 
@@ -101,7 +101,7 @@ class StarRocksInstanceInfoDatastore:
 
     @property
     def version(self):
-        """Gets the version of this StarRocksInstanceInfoDatastore.
+        r"""Gets the version of this StarRocksInstanceInfoDatastore.
 
         数据库版本。
 
@@ -112,7 +112,7 @@ class StarRocksInstanceInfoDatastore:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this StarRocksInstanceInfoDatastore.
+        r"""Sets the version of this StarRocksInstanceInfoDatastore.
 
         数据库版本。
 

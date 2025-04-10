@@ -25,7 +25,7 @@ class DeleteTerminalsBindingDesktopsRequestBody:
     }
 
     def __init__(self, id_list=None):
-        """DeleteTerminalsBindingDesktopsRequestBody
+        r"""DeleteTerminalsBindingDesktopsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteTerminalsBindingDesktopsRequestBody:
 
     @property
     def id_list(self):
-        """Gets the id_list of this DeleteTerminalsBindingDesktopsRequestBody.
+        r"""Gets the id_list of this DeleteTerminalsBindingDesktopsRequestBody.
 
         绑定策略ID列表
 
@@ -54,7 +54,7 @@ class DeleteTerminalsBindingDesktopsRequestBody:
 
     @id_list.setter
     def id_list(self, id_list):
-        """Sets the id_list of this DeleteTerminalsBindingDesktopsRequestBody.
+        r"""Sets the id_list of this DeleteTerminalsBindingDesktopsRequestBody.
 
         绑定策略ID列表
 

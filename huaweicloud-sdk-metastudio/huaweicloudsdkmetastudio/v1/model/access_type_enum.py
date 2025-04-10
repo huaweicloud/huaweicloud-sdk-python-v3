@@ -27,7 +27,7 @@ class AccessTypeEnum:
     }
 
     def __init__(self):
-        """AccessTypeEnum
+        r"""AccessTypeEnum
 
         The model defined in huaweicloud sdk
 

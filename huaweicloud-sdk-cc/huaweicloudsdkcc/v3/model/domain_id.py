@@ -25,7 +25,7 @@ class DomainId:
     }
 
     def __init__(self, domain_id=None):
-        """DomainId
+        r"""DomainId
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DomainId:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this DomainId.
+        r"""Gets the domain_id of this DomainId.
 
         实例所属账号ID。
 
@@ -53,7 +53,7 @@ class DomainId:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this DomainId.
+        r"""Sets the domain_id of this DomainId.
 
         实例所属账号ID。
 

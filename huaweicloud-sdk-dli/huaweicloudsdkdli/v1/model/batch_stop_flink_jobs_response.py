@@ -26,7 +26,7 @@ class BatchStopFlinkJobsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """BatchStopFlinkJobsResponse
+        r"""BatchStopFlinkJobsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchStopFlinkJobsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this BatchStopFlinkJobsResponse.
+        r"""Gets the body of this BatchStopFlinkJobsResponse.
 
         :return: The body of this BatchStopFlinkJobsResponse.
         :rtype: list[:class:`huaweicloudsdkdli.v1.FlinkSuccessResponse`]
@@ -53,7 +53,7 @@ class BatchStopFlinkJobsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchStopFlinkJobsResponse.
+        r"""Sets the body of this BatchStopFlinkJobsResponse.
 
         :param body: The body of this BatchStopFlinkJobsResponse.
         :type body: list[:class:`huaweicloudsdkdli.v1.FlinkSuccessResponse`]

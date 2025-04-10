@@ -27,7 +27,7 @@ class DeleteDeviceRequest:
     }
 
     def __init__(self, ief_instance_id=None, device_id=None):
-        """DeleteDeviceRequest
+        r"""DeleteDeviceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteDeviceRequest:
 
     @property
     def ief_instance_id(self):
-        """Gets the ief_instance_id of this DeleteDeviceRequest.
+        r"""Gets the ief_instance_id of this DeleteDeviceRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -60,7 +60,7 @@ class DeleteDeviceRequest:
 
     @ief_instance_id.setter
     def ief_instance_id(self, ief_instance_id):
-        """Sets the ief_instance_id of this DeleteDeviceRequest.
+        r"""Sets the ief_instance_id of this DeleteDeviceRequest.
 
         铂金版实例ID，专业版实例为空值
 
@@ -71,7 +71,7 @@ class DeleteDeviceRequest:
 
     @property
     def device_id(self):
-        """Gets the device_id of this DeleteDeviceRequest.
+        r"""Gets the device_id of this DeleteDeviceRequest.
 
         终端设备ID
 
@@ -82,7 +82,7 @@ class DeleteDeviceRequest:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this DeleteDeviceRequest.
+        r"""Sets the device_id of this DeleteDeviceRequest.
 
         终端设备ID
 

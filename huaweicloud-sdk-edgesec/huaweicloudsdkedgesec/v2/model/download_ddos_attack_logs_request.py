@@ -33,7 +33,7 @@ class DownloadDdosAttackLogsRequest:
     }
 
     def __init__(self, enterprise_project_id=None, start_time=None, end_time=None, offset=None, limit=None):
-        """DownloadDdosAttackLogsRequest
+        r"""DownloadDdosAttackLogsRequest
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class DownloadDdosAttackLogsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this DownloadDdosAttackLogsRequest.
+        r"""Gets the enterprise_project_id of this DownloadDdosAttackLogsRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id，默认为0
 
@@ -80,7 +80,7 @@ class DownloadDdosAttackLogsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this DownloadDdosAttackLogsRequest.
+        r"""Sets the enterprise_project_id of this DownloadDdosAttackLogsRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id，默认为0
 
@@ -91,7 +91,7 @@ class DownloadDdosAttackLogsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this DownloadDdosAttackLogsRequest.
+        r"""Gets the start_time of this DownloadDdosAttackLogsRequest.
 
         起始时间(13位时间戳)
 
@@ -102,7 +102,7 @@ class DownloadDdosAttackLogsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this DownloadDdosAttackLogsRequest.
+        r"""Sets the start_time of this DownloadDdosAttackLogsRequest.
 
         起始时间(13位时间戳)
 
@@ -113,7 +113,7 @@ class DownloadDdosAttackLogsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this DownloadDdosAttackLogsRequest.
+        r"""Gets the end_time of this DownloadDdosAttackLogsRequest.
 
         结束时间(13位时间戳)
 
@@ -124,7 +124,7 @@ class DownloadDdosAttackLogsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this DownloadDdosAttackLogsRequest.
+        r"""Sets the end_time of this DownloadDdosAttackLogsRequest.
 
         结束时间(13位时间戳)
 
@@ -135,7 +135,7 @@ class DownloadDdosAttackLogsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this DownloadDdosAttackLogsRequest.
+        r"""Gets the offset of this DownloadDdosAttackLogsRequest.
 
         查询列表的偏移量
 
@@ -146,7 +146,7 @@ class DownloadDdosAttackLogsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this DownloadDdosAttackLogsRequest.
+        r"""Sets the offset of this DownloadDdosAttackLogsRequest.
 
         查询列表的偏移量
 
@@ -157,7 +157,7 @@ class DownloadDdosAttackLogsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this DownloadDdosAttackLogsRequest.
+        r"""Gets the limit of this DownloadDdosAttackLogsRequest.
 
         查询列表每一页的条数
 
@@ -168,7 +168,7 @@ class DownloadDdosAttackLogsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this DownloadDdosAttackLogsRequest.
+        r"""Sets the limit of this DownloadDdosAttackLogsRequest.
 
         查询列表每一页的条数
 

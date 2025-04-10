@@ -25,7 +25,7 @@ class BatchUpdateServersNameRequest:
     }
 
     def __init__(self, body=None):
-        """BatchUpdateServersNameRequest
+        r"""BatchUpdateServersNameRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchUpdateServersNameRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchUpdateServersNameRequest.
+        r"""Gets the body of this BatchUpdateServersNameRequest.
 
         :return: The body of this BatchUpdateServersNameRequest.
         :rtype: :class:`huaweicloudsdkecs.v2.BatchUpdateServersNameRequestBody`
@@ -52,7 +52,7 @@ class BatchUpdateServersNameRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchUpdateServersNameRequest.
+        r"""Sets the body of this BatchUpdateServersNameRequest.
 
         :param body: The body of this BatchUpdateServersNameRequest.
         :type body: :class:`huaweicloudsdkecs.v2.BatchUpdateServersNameRequestBody`

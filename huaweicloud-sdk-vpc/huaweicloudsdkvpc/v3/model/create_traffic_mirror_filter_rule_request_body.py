@@ -25,7 +25,7 @@ class CreateTrafficMirrorFilterRuleRequestBody:
     }
 
     def __init__(self, traffic_mirror_filter_rule=None):
-        """CreateTrafficMirrorFilterRuleRequestBody
+        r"""CreateTrafficMirrorFilterRuleRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateTrafficMirrorFilterRuleRequestBody:
 
     @property
     def traffic_mirror_filter_rule(self):
-        """Gets the traffic_mirror_filter_rule of this CreateTrafficMirrorFilterRuleRequestBody.
+        r"""Gets the traffic_mirror_filter_rule of this CreateTrafficMirrorFilterRuleRequestBody.
 
         :return: The traffic_mirror_filter_rule of this CreateTrafficMirrorFilterRuleRequestBody.
         :rtype: :class:`huaweicloudsdkvpc.v3.CreateTrafficMirrorFilterRuleOption`
@@ -51,7 +51,7 @@ class CreateTrafficMirrorFilterRuleRequestBody:
 
     @traffic_mirror_filter_rule.setter
     def traffic_mirror_filter_rule(self, traffic_mirror_filter_rule):
-        """Sets the traffic_mirror_filter_rule of this CreateTrafficMirrorFilterRuleRequestBody.
+        r"""Sets the traffic_mirror_filter_rule of this CreateTrafficMirrorFilterRuleRequestBody.
 
         :param traffic_mirror_filter_rule: The traffic_mirror_filter_rule of this CreateTrafficMirrorFilterRuleRequestBody.
         :type traffic_mirror_filter_rule: :class:`huaweicloudsdkvpc.v3.CreateTrafficMirrorFilterRuleOption`

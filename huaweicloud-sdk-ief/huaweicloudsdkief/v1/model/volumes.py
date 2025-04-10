@@ -35,7 +35,7 @@ class Volumes:
     }
 
     def __init__(self, name=None, type=None, source=None, destination=None, read_only=None, default_mode=None):
-        """Volumes
+        r"""Volumes
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class Volumes:
 
     @property
     def name(self):
-        """Gets the name of this Volumes.
+        r"""Gets the name of this Volumes.
 
         卷名称，小写字母或数字，最长63个字符
 
@@ -85,7 +85,7 @@ class Volumes:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Volumes.
+        r"""Sets the name of this Volumes.
 
         卷名称，小写字母或数字，最长63个字符
 
@@ -96,7 +96,7 @@ class Volumes:
 
     @property
     def type(self):
-        """Gets the type of this Volumes.
+        r"""Gets the type of this Volumes.
 
         卷的类型，支持configMap,secret,emptyDir,hostPath
 
@@ -107,7 +107,7 @@ class Volumes:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Volumes.
+        r"""Sets the type of this Volumes.
 
         卷的类型，支持configMap,secret,emptyDir,hostPath
 
@@ -118,7 +118,7 @@ class Volumes:
 
     @property
     def source(self):
-        """Gets the source of this Volumes.
+        r"""Gets the source of this Volumes.
 
         卷来源，type为hostPath时输入路径，要求以/开头，后面可包含中划线，反斜杠，下划线，点号，字母，数字； secret时输入secret名称，configMap时输入configMap名称，emptyDir时输入disk或memory
 
@@ -129,7 +129,7 @@ class Volumes:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this Volumes.
+        r"""Sets the source of this Volumes.
 
         卷来源，type为hostPath时输入路径，要求以/开头，后面可包含中划线，反斜杠，下划线，点号，字母，数字； secret时输入secret名称，configMap时输入configMap名称，emptyDir时输入disk或memory
 
@@ -140,7 +140,7 @@ class Volumes:
 
     @property
     def destination(self):
-        """Gets the destination of this Volumes.
+        r"""Gets the destination of this Volumes.
 
         卷挂载路径，必须是合法的路径
 
@@ -151,7 +151,7 @@ class Volumes:
 
     @destination.setter
     def destination(self, destination):
-        """Sets the destination of this Volumes.
+        r"""Sets the destination of this Volumes.
 
         卷挂载路径，必须是合法的路径
 
@@ -162,7 +162,7 @@ class Volumes:
 
     @property
     def read_only(self):
-        """Gets the read_only of this Volumes.
+        r"""Gets the read_only of this Volumes.
 
         读写权限，configMap和secret类型只支持读权限
 
@@ -173,7 +173,7 @@ class Volumes:
 
     @read_only.setter
     def read_only(self, read_only):
-        """Sets the read_only of this Volumes.
+        r"""Sets the read_only of this Volumes.
 
         读写权限，configMap和secret类型只支持读权限
 
@@ -184,7 +184,7 @@ class Volumes:
 
     @property
     def default_mode(self):
-        """Gets the default_mode of this Volumes.
+        r"""Gets the default_mode of this Volumes.
 
         挂载的文件权限，仅configMap和secret类型生效，填写值为十进制表示的linux文件权限，默认为420（对应权限644）
 
@@ -195,7 +195,7 @@ class Volumes:
 
     @default_mode.setter
     def default_mode(self, default_mode):
-        """Sets the default_mode of this Volumes.
+        r"""Sets the default_mode of this Volumes.
 
         挂载的文件权限，仅configMap和secret类型生效，填写值为十进制表示的linux文件权限，默认为420（对应权限644）
 

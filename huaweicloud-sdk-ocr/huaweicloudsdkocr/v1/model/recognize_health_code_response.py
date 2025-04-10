@@ -28,7 +28,7 @@ class RecognizeHealthCodeResponse(SdkResponse):
     }
 
     def __init__(self, result=None, x_request_id=None):
-        """RecognizeHealthCodeResponse
+        r"""RecognizeHealthCodeResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class RecognizeHealthCodeResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this RecognizeHealthCodeResponse.
+        r"""Gets the result of this RecognizeHealthCodeResponse.
 
         :return: The result of this RecognizeHealthCodeResponse.
         :rtype: :class:`huaweicloudsdkocr.v1.HealthCodeResult`
@@ -60,7 +60,7 @@ class RecognizeHealthCodeResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this RecognizeHealthCodeResponse.
+        r"""Sets the result of this RecognizeHealthCodeResponse.
 
         :param result: The result of this RecognizeHealthCodeResponse.
         :type result: :class:`huaweicloudsdkocr.v1.HealthCodeResult`
@@ -69,7 +69,7 @@ class RecognizeHealthCodeResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this RecognizeHealthCodeResponse.
+        r"""Gets the x_request_id of this RecognizeHealthCodeResponse.
 
         :return: The x_request_id of this RecognizeHealthCodeResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class RecognizeHealthCodeResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this RecognizeHealthCodeResponse.
+        r"""Sets the x_request_id of this RecognizeHealthCodeResponse.
 
         :param x_request_id: The x_request_id of this RecognizeHealthCodeResponse.
         :type x_request_id: str

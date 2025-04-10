@@ -26,7 +26,7 @@ class ListAuditInstanceJobsResponse(SdkResponse):
     }
 
     def __init__(self, jobs=None):
-        """ListAuditInstanceJobsResponse
+        r"""ListAuditInstanceJobsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListAuditInstanceJobsResponse(SdkResponse):
 
     @property
     def jobs(self):
-        """Gets the jobs of this ListAuditInstanceJobsResponse.
+        r"""Gets the jobs of this ListAuditInstanceJobsResponse.
 
         实例创建任务列表
 
@@ -55,7 +55,7 @@ class ListAuditInstanceJobsResponse(SdkResponse):
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this ListAuditInstanceJobsResponse.
+        r"""Sets the jobs of this ListAuditInstanceJobsResponse.
 
         实例创建任务列表
 

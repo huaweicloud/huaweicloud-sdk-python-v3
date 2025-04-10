@@ -27,7 +27,7 @@ class ListCustomerOnDemandResourcesRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """ListCustomerOnDemandResourcesRequest
+        r"""ListCustomerOnDemandResourcesRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListCustomerOnDemandResourcesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListCustomerOnDemandResourcesRequest.
+        r"""Gets the x_language of this ListCustomerOnDemandResourcesRequest.
 
         语言。中文：zh_CN英文：en_US缺省为zh_CN。
 
@@ -61,7 +61,7 @@ class ListCustomerOnDemandResourcesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListCustomerOnDemandResourcesRequest.
+        r"""Sets the x_language of this ListCustomerOnDemandResourcesRequest.
 
         语言。中文：zh_CN英文：en_US缺省为zh_CN。
 
@@ -72,7 +72,7 @@ class ListCustomerOnDemandResourcesRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListCustomerOnDemandResourcesRequest.
+        r"""Gets the body of this ListCustomerOnDemandResourcesRequest.
 
         :return: The body of this ListCustomerOnDemandResourcesRequest.
         :rtype: :class:`huaweicloudsdkbss.v2.QueryCustomerOnDemandResourcesReq`
@@ -81,7 +81,7 @@ class ListCustomerOnDemandResourcesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListCustomerOnDemandResourcesRequest.
+        r"""Sets the body of this ListCustomerOnDemandResourcesRequest.
 
         :param body: The body of this ListCustomerOnDemandResourcesRequest.
         :type body: :class:`huaweicloudsdkbss.v2.QueryCustomerOnDemandResourcesReq`

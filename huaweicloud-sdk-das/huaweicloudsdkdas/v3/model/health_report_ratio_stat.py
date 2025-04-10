@@ -33,7 +33,7 @@ class HealthReportRatioStat:
     }
 
     def __init__(self, metric=None, max_value=None, critical_ratio=None, medium_ratio=None, light_ratio=None):
-        """HealthReportRatioStat
+        r"""HealthReportRatioStat
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class HealthReportRatioStat:
 
     @property
     def metric(self):
-        """Gets the metric of this HealthReportRatioStat.
+        r"""Gets the metric of this HealthReportRatioStat.
 
         指标名。
 
@@ -77,7 +77,7 @@ class HealthReportRatioStat:
 
     @metric.setter
     def metric(self, metric):
-        """Sets the metric of this HealthReportRatioStat.
+        r"""Sets the metric of this HealthReportRatioStat.
 
         指标名。
 
@@ -88,7 +88,7 @@ class HealthReportRatioStat:
 
     @property
     def max_value(self):
-        """Gets the max_value of this HealthReportRatioStat.
+        r"""Gets the max_value of this HealthReportRatioStat.
 
         最大值。
 
@@ -99,7 +99,7 @@ class HealthReportRatioStat:
 
     @max_value.setter
     def max_value(self, max_value):
-        """Sets the max_value of this HealthReportRatioStat.
+        r"""Sets the max_value of this HealthReportRatioStat.
 
         最大值。
 
@@ -110,7 +110,7 @@ class HealthReportRatioStat:
 
     @property
     def critical_ratio(self):
-        """Gets the critical_ratio of this HealthReportRatioStat.
+        r"""Gets the critical_ratio of this HealthReportRatioStat.
 
         高水位占比。
 
@@ -121,7 +121,7 @@ class HealthReportRatioStat:
 
     @critical_ratio.setter
     def critical_ratio(self, critical_ratio):
-        """Sets the critical_ratio of this HealthReportRatioStat.
+        r"""Sets the critical_ratio of this HealthReportRatioStat.
 
         高水位占比。
 
@@ -132,7 +132,7 @@ class HealthReportRatioStat:
 
     @property
     def medium_ratio(self):
-        """Gets the medium_ratio of this HealthReportRatioStat.
+        r"""Gets the medium_ratio of this HealthReportRatioStat.
 
         中水位占比。
 
@@ -143,7 +143,7 @@ class HealthReportRatioStat:
 
     @medium_ratio.setter
     def medium_ratio(self, medium_ratio):
-        """Sets the medium_ratio of this HealthReportRatioStat.
+        r"""Sets the medium_ratio of this HealthReportRatioStat.
 
         中水位占比。
 
@@ -154,7 +154,7 @@ class HealthReportRatioStat:
 
     @property
     def light_ratio(self):
-        """Gets the light_ratio of this HealthReportRatioStat.
+        r"""Gets the light_ratio of this HealthReportRatioStat.
 
         低水位占比。
 
@@ -165,7 +165,7 @@ class HealthReportRatioStat:
 
     @light_ratio.setter
     def light_ratio(self, light_ratio):
-        """Sets the light_ratio of this HealthReportRatioStat.
+        r"""Sets the light_ratio of this HealthReportRatioStat.
 
         低水位占比。
 

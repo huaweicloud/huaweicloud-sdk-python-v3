@@ -35,7 +35,7 @@ class NovaVersion:
     }
 
     def __init__(self, id=None, links=None, min_version=None, status=None, version=None, updated=None):
-        """NovaVersion
+        r"""NovaVersion
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class NovaVersion:
 
     @property
     def id(self):
-        """Gets the id of this NovaVersion.
+        r"""Gets the id of this NovaVersion.
 
         所讨论的版本的通用名称。仅仅是信息性的，它没有真正的语义。
 
@@ -83,7 +83,7 @@ class NovaVersion:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this NovaVersion.
+        r"""Sets the id of this NovaVersion.
 
         所讨论的版本的通用名称。仅仅是信息性的，它没有真正的语义。
 
@@ -94,7 +94,7 @@ class NovaVersion:
 
     @property
     def links(self):
-        """Gets the links of this NovaVersion.
+        r"""Gets the links of this NovaVersion.
 
         版本相关标记快捷链接信息。
 
@@ -105,7 +105,7 @@ class NovaVersion:
 
     @links.setter
     def links(self, links):
-        """Sets the links of this NovaVersion.
+        r"""Sets the links of this NovaVersion.
 
         版本相关标记快捷链接信息。
 
@@ -116,7 +116,7 @@ class NovaVersion:
 
     @property
     def min_version(self):
-        """Gets the min_version of this NovaVersion.
+        r"""Gets the min_version of this NovaVersion.
 
         如果API的这个版本支持微版本，则支持最小的微版本。如果不支持微版本，这将是空字符串。
 
@@ -127,7 +127,7 @@ class NovaVersion:
 
     @min_version.setter
     def min_version(self, min_version):
-        """Sets the min_version of this NovaVersion.
+        r"""Sets the min_version of this NovaVersion.
 
         如果API的这个版本支持微版本，则支持最小的微版本。如果不支持微版本，这将是空字符串。
 
@@ -138,7 +138,7 @@ class NovaVersion:
 
     @property
     def status(self):
-        """Gets the status of this NovaVersion.
+        r"""Gets the status of this NovaVersion.
 
         这个是API版本的状态。可以是：  - CURRENT，这是使用的API的首选版本 - SUPPORTED，这是一个较老的，但仍然支持的API版本 - DEPRECATED，一个被废弃的API版本，该版本将被删除
 
@@ -149,7 +149,7 @@ class NovaVersion:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this NovaVersion.
+        r"""Sets the status of this NovaVersion.
 
         这个是API版本的状态。可以是：  - CURRENT，这是使用的API的首选版本 - SUPPORTED，这是一个较老的，但仍然支持的API版本 - DEPRECATED，一个被废弃的API版本，该版本将被删除
 
@@ -160,7 +160,7 @@ class NovaVersion:
 
     @property
     def version(self):
-        """Gets the version of this NovaVersion.
+        r"""Gets the version of this NovaVersion.
 
         如果API的这个版本支持微版本，则支持最大的微版本。如果不支持微版本，这将是空字符串。
 
@@ -171,7 +171,7 @@ class NovaVersion:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this NovaVersion.
+        r"""Sets the version of this NovaVersion.
 
         如果API的这个版本支持微版本，则支持最大的微版本。如果不支持微版本，这将是空字符串。
 
@@ -182,7 +182,7 @@ class NovaVersion:
 
     @property
     def updated(self):
-        """Gets the updated of this NovaVersion.
+        r"""Gets the updated of this NovaVersion.
 
         一个有特定值的字符串。API版本为2.0时，值为'2011-01-21T11:33:21Z'，API版本是2.1时，值为' 2013-07-23T11:33:21Z'。
 
@@ -193,7 +193,7 @@ class NovaVersion:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this NovaVersion.
+        r"""Sets the updated of this NovaVersion.
 
         一个有特定值的字符串。API版本为2.0时，值为'2011-01-21T11:33:21Z'，API版本是2.1时，值为' 2013-07-23T11:33:21Z'。
 

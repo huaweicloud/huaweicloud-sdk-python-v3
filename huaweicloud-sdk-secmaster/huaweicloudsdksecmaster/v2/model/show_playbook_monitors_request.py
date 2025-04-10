@@ -35,7 +35,7 @@ class ShowPlaybookMonitorsRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, playbook_id=None, start_time=None, version_query_type=None, end_time=None):
-        """ShowPlaybookMonitorsRequest
+        r"""ShowPlaybookMonitorsRequest
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowPlaybookMonitorsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowPlaybookMonitorsRequest.
+        r"""Gets the project_id of this ShowPlaybookMonitorsRequest.
 
         项目ID
 
@@ -83,7 +83,7 @@ class ShowPlaybookMonitorsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowPlaybookMonitorsRequest.
+        r"""Sets the project_id of this ShowPlaybookMonitorsRequest.
 
         项目ID
 
@@ -94,7 +94,7 @@ class ShowPlaybookMonitorsRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ShowPlaybookMonitorsRequest.
+        r"""Gets the workspace_id of this ShowPlaybookMonitorsRequest.
 
         工作空间ID
 
@@ -105,7 +105,7 @@ class ShowPlaybookMonitorsRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ShowPlaybookMonitorsRequest.
+        r"""Sets the workspace_id of this ShowPlaybookMonitorsRequest.
 
         工作空间ID
 
@@ -116,7 +116,7 @@ class ShowPlaybookMonitorsRequest:
 
     @property
     def playbook_id(self):
-        """Gets the playbook_id of this ShowPlaybookMonitorsRequest.
+        r"""Gets the playbook_id of this ShowPlaybookMonitorsRequest.
 
         剧本ID
 
@@ -127,7 +127,7 @@ class ShowPlaybookMonitorsRequest:
 
     @playbook_id.setter
     def playbook_id(self, playbook_id):
-        """Sets the playbook_id of this ShowPlaybookMonitorsRequest.
+        r"""Sets the playbook_id of this ShowPlaybookMonitorsRequest.
 
         剧本ID
 
@@ -138,7 +138,7 @@ class ShowPlaybookMonitorsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowPlaybookMonitorsRequest.
+        r"""Gets the start_time of this ShowPlaybookMonitorsRequest.
 
         开始时间。格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。例如：2021-01-30T23:00:00Z+0800。时区信息为剧本实例产生的时区，无法解析时区的时间，默认时区填东八区。
 
@@ -149,7 +149,7 @@ class ShowPlaybookMonitorsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowPlaybookMonitorsRequest.
+        r"""Sets the start_time of this ShowPlaybookMonitorsRequest.
 
         开始时间。格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。例如：2021-01-30T23:00:00Z+0800。时区信息为剧本实例产生的时区，无法解析时区的时间，默认时区填东八区。
 
@@ -160,7 +160,7 @@ class ShowPlaybookMonitorsRequest:
 
     @property
     def version_query_type(self):
-        """Gets the version_query_type of this ShowPlaybookMonitorsRequest.
+        r"""Gets the version_query_type of this ShowPlaybookMonitorsRequest.
 
         统计剧本版本类型（ALL:全部，VALID:有效的，DELETED:已删除）
 
@@ -171,7 +171,7 @@ class ShowPlaybookMonitorsRequest:
 
     @version_query_type.setter
     def version_query_type(self, version_query_type):
-        """Sets the version_query_type of this ShowPlaybookMonitorsRequest.
+        r"""Sets the version_query_type of this ShowPlaybookMonitorsRequest.
 
         统计剧本版本类型（ALL:全部，VALID:有效的，DELETED:已删除）
 
@@ -182,7 +182,7 @@ class ShowPlaybookMonitorsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowPlaybookMonitorsRequest.
+        r"""Gets the end_time of this ShowPlaybookMonitorsRequest.
 
         结束时间。格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。例如：2021-01-30T23:00:00Z+0800。时区信息为剧本实例产生的时区，无法解析时区的时间，默认时区填东八区。
 
@@ -193,7 +193,7 @@ class ShowPlaybookMonitorsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowPlaybookMonitorsRequest.
+        r"""Sets the end_time of this ShowPlaybookMonitorsRequest.
 
         结束时间。格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。例如：2021-01-30T23:00:00Z+0800。时区信息为剧本实例产生的时区，无法解析时区的时间，默认时区填东八区。
 

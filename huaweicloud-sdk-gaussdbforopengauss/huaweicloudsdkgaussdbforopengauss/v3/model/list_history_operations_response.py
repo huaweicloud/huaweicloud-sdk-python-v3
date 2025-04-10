@@ -28,7 +28,7 @@ class ListHistoryOperationsResponse(SdkResponse):
     }
 
     def __init__(self, histories=None, total_count=None):
-        """ListHistoryOperationsResponse
+        r"""ListHistoryOperationsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListHistoryOperationsResponse(SdkResponse):
 
     @property
     def histories(self):
-        """Gets the histories of this ListHistoryOperationsResponse.
+        r"""Gets the histories of this ListHistoryOperationsResponse.
 
         参数修改历史的列表记录。
 
@@ -62,7 +62,7 @@ class ListHistoryOperationsResponse(SdkResponse):
 
     @histories.setter
     def histories(self, histories):
-        """Sets the histories of this ListHistoryOperationsResponse.
+        r"""Sets the histories of this ListHistoryOperationsResponse.
 
         参数修改历史的列表记录。
 
@@ -73,7 +73,7 @@ class ListHistoryOperationsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListHistoryOperationsResponse.
+        r"""Gets the total_count of this ListHistoryOperationsResponse.
 
         总记录数。
 
@@ -84,7 +84,7 @@ class ListHistoryOperationsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListHistoryOperationsResponse.
+        r"""Sets the total_count of this ListHistoryOperationsResponse.
 
         总记录数。
 

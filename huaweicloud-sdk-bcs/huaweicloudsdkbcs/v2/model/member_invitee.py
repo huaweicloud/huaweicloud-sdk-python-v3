@@ -29,7 +29,7 @@ class MemberInvitee:
     }
 
     def __init__(self, invitee_bcs_id=None, invitee_user_id=None, invitee_username=None):
-        """MemberInvitee
+        r"""MemberInvitee
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class MemberInvitee:
 
     @property
     def invitee_bcs_id(self):
-        """Gets the invitee_bcs_id of this MemberInvitee.
+        r"""Gets the invitee_bcs_id of this MemberInvitee.
 
         被邀请方BCS服务实例ID
 
@@ -68,7 +68,7 @@ class MemberInvitee:
 
     @invitee_bcs_id.setter
     def invitee_bcs_id(self, invitee_bcs_id):
-        """Sets the invitee_bcs_id of this MemberInvitee.
+        r"""Sets the invitee_bcs_id of this MemberInvitee.
 
         被邀请方BCS服务实例ID
 
@@ -79,7 +79,7 @@ class MemberInvitee:
 
     @property
     def invitee_user_id(self):
-        """Gets the invitee_user_id of this MemberInvitee.
+        r"""Gets the invitee_user_id of this MemberInvitee.
 
         被邀请方租户id
 
@@ -90,7 +90,7 @@ class MemberInvitee:
 
     @invitee_user_id.setter
     def invitee_user_id(self, invitee_user_id):
-        """Sets the invitee_user_id of this MemberInvitee.
+        r"""Sets the invitee_user_id of this MemberInvitee.
 
         被邀请方租户id
 
@@ -101,7 +101,7 @@ class MemberInvitee:
 
     @property
     def invitee_username(self):
-        """Gets the invitee_username of this MemberInvitee.
+        r"""Gets the invitee_username of this MemberInvitee.
 
         被邀请方租户名
 
@@ -112,7 +112,7 @@ class MemberInvitee:
 
     @invitee_username.setter
     def invitee_username(self, invitee_username):
-        """Sets the invitee_username of this MemberInvitee.
+        r"""Sets the invitee_username of this MemberInvitee.
 
         被邀请方租户名
 

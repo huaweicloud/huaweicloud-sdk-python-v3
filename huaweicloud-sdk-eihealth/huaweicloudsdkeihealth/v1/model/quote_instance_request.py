@@ -27,7 +27,7 @@ class QuoteInstanceRequest:
     }
 
     def __init__(self, eihealth_project_id=None, body=None):
-        """QuoteInstanceRequest
+        r"""QuoteInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class QuoteInstanceRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this QuoteInstanceRequest.
+        r"""Gets the eihealth_project_id of this QuoteInstanceRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -60,7 +60,7 @@ class QuoteInstanceRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this QuoteInstanceRequest.
+        r"""Sets the eihealth_project_id of this QuoteInstanceRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -71,7 +71,7 @@ class QuoteInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this QuoteInstanceRequest.
+        r"""Gets the body of this QuoteInstanceRequest.
 
         :return: The body of this QuoteInstanceRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.QuoteDatabaseReq`
@@ -80,7 +80,7 @@ class QuoteInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this QuoteInstanceRequest.
+        r"""Sets the body of this QuoteInstanceRequest.
 
         :param body: The body of this QuoteInstanceRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.QuoteDatabaseReq`

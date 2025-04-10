@@ -27,7 +27,7 @@ class UpgradeMinorVersionRequestBody:
     }
 
     def __init__(self, proxy_minor_version=None, engine_minor_version=None):
-        """UpgradeMinorVersionRequestBody
+        r"""UpgradeMinorVersionRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpgradeMinorVersionRequestBody:
 
     @property
     def proxy_minor_version(self):
-        """Gets the proxy_minor_version of this UpgradeMinorVersionRequestBody.
+        r"""Gets the proxy_minor_version of this UpgradeMinorVersionRequestBody.
 
         Proxy代理节点目标版本号，设置为latest时，即升级到最新版本。
 
@@ -61,7 +61,7 @@ class UpgradeMinorVersionRequestBody:
 
     @proxy_minor_version.setter
     def proxy_minor_version(self, proxy_minor_version):
-        """Sets the proxy_minor_version of this UpgradeMinorVersionRequestBody.
+        r"""Sets the proxy_minor_version of this UpgradeMinorVersionRequestBody.
 
         Proxy代理节点目标版本号，设置为latest时，即升级到最新版本。
 
@@ -72,7 +72,7 @@ class UpgradeMinorVersionRequestBody:
 
     @property
     def engine_minor_version(self):
-        """Gets the engine_minor_version of this UpgradeMinorVersionRequestBody.
+        r"""Gets the engine_minor_version of this UpgradeMinorVersionRequestBody.
 
         引擎目标小版本号，设置为latest时，即升级到最新版本。
 
@@ -83,7 +83,7 @@ class UpgradeMinorVersionRequestBody:
 
     @engine_minor_version.setter
     def engine_minor_version(self, engine_minor_version):
-        """Sets the engine_minor_version of this UpgradeMinorVersionRequestBody.
+        r"""Sets the engine_minor_version of this UpgradeMinorVersionRequestBody.
 
         引擎目标小版本号，设置为latest时，即升级到最新版本。
 

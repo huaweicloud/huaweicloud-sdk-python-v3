@@ -26,7 +26,7 @@ class ShowGaussMySqlInstanceInfoResponse(SdkResponse):
     }
 
     def __init__(self, instance=None):
-        """ShowGaussMySqlInstanceInfoResponse
+        r"""ShowGaussMySqlInstanceInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowGaussMySqlInstanceInfoResponse(SdkResponse):
 
     @property
     def instance(self):
-        """Gets the instance of this ShowGaussMySqlInstanceInfoResponse.
+        r"""Gets the instance of this ShowGaussMySqlInstanceInfoResponse.
 
         :return: The instance of this ShowGaussMySqlInstanceInfoResponse.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.MysqlInstanceInfoDetail`
@@ -53,7 +53,7 @@ class ShowGaussMySqlInstanceInfoResponse(SdkResponse):
 
     @instance.setter
     def instance(self, instance):
-        """Sets the instance of this ShowGaussMySqlInstanceInfoResponse.
+        r"""Sets the instance of this ShowGaussMySqlInstanceInfoResponse.
 
         :param instance: The instance of this ShowGaussMySqlInstanceInfoResponse.
         :type instance: :class:`huaweicloudsdkgaussdb.v3.MysqlInstanceInfoDetail`

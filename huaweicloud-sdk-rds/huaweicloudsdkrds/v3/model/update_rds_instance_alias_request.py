@@ -25,7 +25,7 @@ class UpdateRdsInstanceAliasRequest:
     }
 
     def __init__(self, alias=None):
-        """UpdateRdsInstanceAliasRequest
+        r"""UpdateRdsInstanceAliasRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateRdsInstanceAliasRequest:
 
     @property
     def alias(self):
-        """Gets the alias of this UpdateRdsInstanceAliasRequest.
+        r"""Gets the alias of this UpdateRdsInstanceAliasRequest.
 
         长度可在0~64个字符之间，由字母、数字、汉字、英文句号、下划线、中划线组成。此参数为空时可以清空原有备注。
 
@@ -54,7 +54,7 @@ class UpdateRdsInstanceAliasRequest:
 
     @alias.setter
     def alias(self, alias):
-        """Sets the alias of this UpdateRdsInstanceAliasRequest.
+        r"""Sets the alias of this UpdateRdsInstanceAliasRequest.
 
         长度可在0~64个字符之间，由字母、数字、汉字、英文句号、下划线、中划线组成。此参数为空时可以清空原有备注。
 

@@ -37,7 +37,7 @@ class FlavorInfo:
     }
 
     def __init__(self, engine_name=None, type=None, vcpus=None, ram=None, spec_code=None, az_status=None, engine_versions=None):
-        """FlavorInfo
+        r"""FlavorInfo
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class FlavorInfo:
 
     @property
     def engine_name(self):
-        """Gets the engine_name of this FlavorInfo.
+        r"""Gets the engine_name of this FlavorInfo.
 
         引擎名称。
 
@@ -89,7 +89,7 @@ class FlavorInfo:
 
     @engine_name.setter
     def engine_name(self, engine_name):
-        """Sets the engine_name of this FlavorInfo.
+        r"""Sets the engine_name of this FlavorInfo.
 
         引擎名称。
 
@@ -100,7 +100,7 @@ class FlavorInfo:
 
     @property
     def type(self):
-        """Gets the type of this FlavorInfo.
+        r"""Gets the type of this FlavorInfo.
 
         节点类型。文档数据库包含以下几种节点类型： - mongos - shard - config - replica - single - readonly
 
@@ -111,7 +111,7 @@ class FlavorInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this FlavorInfo.
+        r"""Sets the type of this FlavorInfo.
 
         节点类型。文档数据库包含以下几种节点类型： - mongos - shard - config - replica - single - readonly
 
@@ -122,7 +122,7 @@ class FlavorInfo:
 
     @property
     def vcpus(self):
-        """Gets the vcpus of this FlavorInfo.
+        r"""Gets the vcpus of this FlavorInfo.
 
         CPU核数。
 
@@ -133,7 +133,7 @@ class FlavorInfo:
 
     @vcpus.setter
     def vcpus(self, vcpus):
-        """Sets the vcpus of this FlavorInfo.
+        r"""Sets the vcpus of this FlavorInfo.
 
         CPU核数。
 
@@ -144,7 +144,7 @@ class FlavorInfo:
 
     @property
     def ram(self):
-        """Gets the ram of this FlavorInfo.
+        r"""Gets the ram of this FlavorInfo.
 
         内存大小，单位为兆字节。
 
@@ -155,7 +155,7 @@ class FlavorInfo:
 
     @ram.setter
     def ram(self, ram):
-        """Sets the ram of this FlavorInfo.
+        r"""Sets the ram of this FlavorInfo.
 
         内存大小，单位为兆字节。
 
@@ -166,7 +166,7 @@ class FlavorInfo:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this FlavorInfo.
+        r"""Gets the spec_code of this FlavorInfo.
 
         资源规格编码。例如：dds.mongodb.c6.xlarge.2.shard。  - “dds”表示文档数据库服务产品。 - “c6.xlarge.2”表示节点性能规格，为高内存类型。 - “shard”表示节点类型。
 
@@ -177,7 +177,7 @@ class FlavorInfo:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this FlavorInfo.
+        r"""Sets the spec_code of this FlavorInfo.
 
         资源规格编码。例如：dds.mongodb.c6.xlarge.2.shard。  - “dds”表示文档数据库服务产品。 - “c6.xlarge.2”表示节点性能规格，为高内存类型。 - “shard”表示节点类型。
 
@@ -188,7 +188,7 @@ class FlavorInfo:
 
     @property
     def az_status(self):
-        """Gets the az_status of this FlavorInfo.
+        r"""Gets the az_status of this FlavorInfo.
 
         '支持该规格的可用区ID。' 示例：[\"cn-east-2a\",\"cn-east-2b\",\"cn-east-2c\"]。
 
@@ -199,7 +199,7 @@ class FlavorInfo:
 
     @az_status.setter
     def az_status(self, az_status):
-        """Sets the az_status of this FlavorInfo.
+        r"""Sets the az_status of this FlavorInfo.
 
         '支持该规格的可用区ID。' 示例：[\"cn-east-2a\",\"cn-east-2b\",\"cn-east-2c\"]。
 
@@ -210,7 +210,7 @@ class FlavorInfo:
 
     @property
     def engine_versions(self):
-        """Gets the engine_versions of this FlavorInfo.
+        r"""Gets the engine_versions of this FlavorInfo.
 
         数据库版本号列表。针对DDS引擎的mongos节点，例如：{\"3.4\", \"4.0\"}
 
@@ -221,7 +221,7 @@ class FlavorInfo:
 
     @engine_versions.setter
     def engine_versions(self, engine_versions):
-        """Sets the engine_versions of this FlavorInfo.
+        r"""Sets the engine_versions of this FlavorInfo.
 
         数据库版本号列表。针对DDS引擎的mongos节点，例如：{\"3.4\", \"4.0\"}
 

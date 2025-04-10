@@ -26,7 +26,7 @@ class BatchImportConfigsResponse(SdkResponse):
     }
 
     def __init__(self, ids=None):
-        """BatchImportConfigsResponse
+        r"""BatchImportConfigsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchImportConfigsResponse(SdkResponse):
 
     @property
     def ids(self):
-        """Gets the ids of this BatchImportConfigsResponse.
+        r"""Gets the ids of this BatchImportConfigsResponse.
 
         已成功导入的配置项id
 
@@ -55,7 +55,7 @@ class BatchImportConfigsResponse(SdkResponse):
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this BatchImportConfigsResponse.
+        r"""Sets the ids of this BatchImportConfigsResponse.
 
         已成功导入的配置项id
 

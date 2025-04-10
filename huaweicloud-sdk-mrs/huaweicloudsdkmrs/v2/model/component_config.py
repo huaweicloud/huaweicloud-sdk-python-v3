@@ -27,7 +27,7 @@ class ComponentConfig:
     }
 
     def __init__(self, component_name=None, configs=None):
-        """ComponentConfig
+        r"""ComponentConfig
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ComponentConfig:
 
     @property
     def component_name(self):
-        """Gets the component_name of this ComponentConfig.
+        r"""Gets the component_name of this ComponentConfig.
 
         组件名称
 
@@ -60,7 +60,7 @@ class ComponentConfig:
 
     @component_name.setter
     def component_name(self, component_name):
-        """Sets the component_name of this ComponentConfig.
+        r"""Sets the component_name of this ComponentConfig.
 
         组件名称
 
@@ -71,7 +71,7 @@ class ComponentConfig:
 
     @property
     def configs(self):
-        """Gets the configs of this ComponentConfig.
+        r"""Gets the configs of this ComponentConfig.
 
         组件配置项列表
 
@@ -82,7 +82,7 @@ class ComponentConfig:
 
     @configs.setter
     def configs(self, configs):
-        """Sets the configs of this ComponentConfig.
+        r"""Sets the configs of this ComponentConfig.
 
         组件配置项列表
 

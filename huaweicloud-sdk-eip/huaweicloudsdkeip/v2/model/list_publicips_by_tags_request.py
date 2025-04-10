@@ -25,7 +25,7 @@ class ListPublicipsByTagsRequest:
     }
 
     def __init__(self, body=None):
-        """ListPublicipsByTagsRequest
+        r"""ListPublicipsByTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListPublicipsByTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListPublicipsByTagsRequest.
+        r"""Gets the body of this ListPublicipsByTagsRequest.
 
         :return: The body of this ListPublicipsByTagsRequest.
         :rtype: :class:`huaweicloudsdkeip.v2.ListPublicipsByTagsRequestBody`
@@ -52,7 +52,7 @@ class ListPublicipsByTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListPublicipsByTagsRequest.
+        r"""Sets the body of this ListPublicipsByTagsRequest.
 
         :param body: The body of this ListPublicipsByTagsRequest.
         :type body: :class:`huaweicloudsdkeip.v2.ListPublicipsByTagsRequestBody`

@@ -27,7 +27,7 @@ class FailedReasonRecord:
     }
 
     def __init__(self, reason=None, count=None):
-        """FailedReasonRecord
+        r"""FailedReasonRecord
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class FailedReasonRecord:
 
     @property
     def reason(self):
-        """Gets the reason of this FailedReasonRecord.
+        r"""Gets the reason of this FailedReasonRecord.
 
         失败原因
 
@@ -61,7 +61,7 @@ class FailedReasonRecord:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this FailedReasonRecord.
+        r"""Sets the reason of this FailedReasonRecord.
 
         失败原因
 
@@ -72,7 +72,7 @@ class FailedReasonRecord:
 
     @property
     def count(self):
-        """Gets the count of this FailedReasonRecord.
+        r"""Gets the count of this FailedReasonRecord.
 
         失败数量
 
@@ -83,7 +83,7 @@ class FailedReasonRecord:
 
     @count.setter
     def count(self, count):
-        """Sets the count of this FailedReasonRecord.
+        r"""Sets the count of this FailedReasonRecord.
 
         失败数量
 

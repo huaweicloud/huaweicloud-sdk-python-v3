@@ -33,7 +33,7 @@ class ShowScanJobsRequest:
     }
 
     def __init__(self, offset=None, limit=None, content=None, start_time=None, end_time=None):
-        """ShowScanJobsRequest
+        r"""ShowScanJobsRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ShowScanJobsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowScanJobsRequest.
+        r"""Gets the offset of this ShowScanJobsRequest.
 
         页码
 
@@ -82,7 +82,7 @@ class ShowScanJobsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowScanJobsRequest.
+        r"""Sets the offset of this ShowScanJobsRequest.
 
         页码
 
@@ -93,7 +93,7 @@ class ShowScanJobsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowScanJobsRequest.
+        r"""Gets the limit of this ShowScanJobsRequest.
 
         分页大小
 
@@ -104,7 +104,7 @@ class ShowScanJobsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowScanJobsRequest.
+        r"""Sets the limit of this ShowScanJobsRequest.
 
         分页大小
 
@@ -115,7 +115,7 @@ class ShowScanJobsRequest:
 
     @property
     def content(self):
-        """Gets the content of this ShowScanJobsRequest.
+        r"""Gets the content of this ShowScanJobsRequest.
 
         内容
 
@@ -126,7 +126,7 @@ class ShowScanJobsRequest:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this ShowScanJobsRequest.
+        r"""Sets the content of this ShowScanJobsRequest.
 
         内容
 
@@ -137,7 +137,7 @@ class ShowScanJobsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowScanJobsRequest.
+        r"""Gets the start_time of this ShowScanJobsRequest.
 
         预留，待启用
 
@@ -148,7 +148,7 @@ class ShowScanJobsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowScanJobsRequest.
+        r"""Sets the start_time of this ShowScanJobsRequest.
 
         预留，待启用
 
@@ -159,7 +159,7 @@ class ShowScanJobsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowScanJobsRequest.
+        r"""Gets the end_time of this ShowScanJobsRequest.
 
         预留，待启用
 
@@ -170,7 +170,7 @@ class ShowScanJobsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowScanJobsRequest.
+        r"""Sets the end_time of this ShowScanJobsRequest.
 
         预留，待启用
 

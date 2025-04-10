@@ -25,7 +25,7 @@ class BatchDeleteBody:
     }
 
     def __init__(self, instances=None):
-        """BatchDeleteBody
+        r"""BatchDeleteBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchDeleteBody:
 
     @property
     def instances(self):
-        """Gets the instances of this BatchDeleteBody.
+        r"""Gets the instances of this BatchDeleteBody.
 
         实例的ID列表。  仅当URI中参数all_failure值为“false”或者其他值时，才需要配置该参数。 
 
@@ -54,7 +54,7 @@ class BatchDeleteBody:
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this BatchDeleteBody.
+        r"""Sets the instances of this BatchDeleteBody.
 
         实例的ID列表。  仅当URI中参数all_failure值为“false”或者其他值时，才需要配置该参数。 
 

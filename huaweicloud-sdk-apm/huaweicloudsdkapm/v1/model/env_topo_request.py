@@ -33,7 +33,7 @@ class EnvTopoRequest:
     }
 
     def __init__(self, target_env_id=None, direction=None, end_time=None, start_time=None, filter_user=None):
-        """EnvTopoRequest
+        r"""EnvTopoRequest
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class EnvTopoRequest:
 
     @property
     def target_env_id(self):
-        """Gets the target_env_id of this EnvTopoRequest.
+        r"""Gets the target_env_id of this EnvTopoRequest.
 
         环境id。
 
@@ -79,7 +79,7 @@ class EnvTopoRequest:
 
     @target_env_id.setter
     def target_env_id(self, target_env_id):
-        """Sets the target_env_id of this EnvTopoRequest.
+        r"""Sets the target_env_id of this EnvTopoRequest.
 
         环境id。
 
@@ -90,7 +90,7 @@ class EnvTopoRequest:
 
     @property
     def direction(self):
-        """Gets the direction of this EnvTopoRequest.
+        r"""Gets the direction of this EnvTopoRequest.
 
         方向，可为空。
 
@@ -101,7 +101,7 @@ class EnvTopoRequest:
 
     @direction.setter
     def direction(self, direction):
-        """Sets the direction of this EnvTopoRequest.
+        r"""Sets the direction of this EnvTopoRequest.
 
         方向，可为空。
 
@@ -112,7 +112,7 @@ class EnvTopoRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this EnvTopoRequest.
+        r"""Gets the end_time of this EnvTopoRequest.
 
         结束时间。
 
@@ -123,7 +123,7 @@ class EnvTopoRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this EnvTopoRequest.
+        r"""Sets the end_time of this EnvTopoRequest.
 
         结束时间。
 
@@ -134,7 +134,7 @@ class EnvTopoRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this EnvTopoRequest.
+        r"""Gets the start_time of this EnvTopoRequest.
 
         开始时间。
 
@@ -145,7 +145,7 @@ class EnvTopoRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this EnvTopoRequest.
+        r"""Sets the start_time of this EnvTopoRequest.
 
         开始时间。
 
@@ -156,7 +156,7 @@ class EnvTopoRequest:
 
     @property
     def filter_user(self):
-        """Gets the filter_user of this EnvTopoRequest.
+        r"""Gets the filter_user of this EnvTopoRequest.
 
         过滤。
 
@@ -167,7 +167,7 @@ class EnvTopoRequest:
 
     @filter_user.setter
     def filter_user(self, filter_user):
-        """Sets the filter_user of this EnvTopoRequest.
+        r"""Sets the filter_user of this EnvTopoRequest.
 
         过滤。
 

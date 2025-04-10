@@ -27,7 +27,7 @@ class WorkloadResource:
     }
 
     def __init__(self, resource_name=None, resource_value=None):
-        """WorkloadResource
+        r"""WorkloadResource
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class WorkloadResource:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this WorkloadResource.
+        r"""Gets the resource_name of this WorkloadResource.
 
         资源名称。
 
@@ -59,7 +59,7 @@ class WorkloadResource:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this WorkloadResource.
+        r"""Sets the resource_name of this WorkloadResource.
 
         资源名称。
 
@@ -70,7 +70,7 @@ class WorkloadResource:
 
     @property
     def resource_value(self):
-        """Gets the resource_value of this WorkloadResource.
+        r"""Gets the resource_value of this WorkloadResource.
 
         资源属性值。
 
@@ -81,7 +81,7 @@ class WorkloadResource:
 
     @resource_value.setter
     def resource_value(self, resource_value):
-        """Sets the resource_value of this WorkloadResource.
+        r"""Sets the resource_value of this WorkloadResource.
 
         资源属性值。
 

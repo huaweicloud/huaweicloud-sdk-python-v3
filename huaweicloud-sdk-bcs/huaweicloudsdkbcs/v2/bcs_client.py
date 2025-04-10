@@ -34,7 +34,7 @@ class BcsClient(Client):
         return client_builder
 
     def batch_add_peers_to_channel(self, request):
-        """peer节点加入通道
+        r"""peer节点加入通道
 
         peer节点加入通道,目前仅支持往一个通道中加入peer
         
@@ -101,7 +101,7 @@ class BcsClient(Client):
         return http_info
 
     def batch_create_channels(self, request):
-        """创建通道
+        r"""创建通道
 
         创建通道
         
@@ -168,7 +168,7 @@ class BcsClient(Client):
         return http_info
 
     def batch_invite_members_to_channel(self, request):
-        """邀请联盟成员
+        r"""邀请联盟成员
 
         批量邀请联盟成员加入通道，此操作会向被邀请方发出邀请通知
         
@@ -233,7 +233,7 @@ class BcsClient(Client):
         return http_info
 
     def batch_remove_orgs_from_channel(self, request):
-        """BCS组织退出某通道
+        r"""BCS组织退出某通道
 
         该接口用于BCS组织退出某通道。
         
@@ -302,7 +302,7 @@ class BcsClient(Client):
         return http_info
 
     def batch_remove_peers_from_channel(self, request):
-        """BCS某个组织中的节点退出某通道
+        r"""BCS某个组织中的节点退出某通道
 
         该接口用于BCS某个组织中的节点退出某通道。当节点为通道中最后一个节点时，需要使用组织退通道的接口来将通道中的最后一个节点退出。
         
@@ -371,7 +371,7 @@ class BcsClient(Client):
         return http_info
 
     def create_blockchain_cert_by_user_name(self, request):
-        """生成用户证书
+        r"""生成用户证书
 
         通过用户名生成指定服务实例组织用户证书
         
@@ -442,7 +442,7 @@ class BcsClient(Client):
         return http_info
 
     def create_new_blockchain(self, request):
-        """创建服务实例
+        r"""创建服务实例
 
         创建BCS服务实例,只支持按需创建
         
@@ -507,7 +507,7 @@ class BcsClient(Client):
         return http_info
 
     def delete_blockchain(self, request):
-        """删除服务实例
+        r"""删除服务实例
 
         删除bcs实例。包周期实例不支持
         
@@ -584,7 +584,7 @@ class BcsClient(Client):
         return http_info
 
     def delete_channel(self, request):
-        """BCS删除某个通道
+        r"""BCS删除某个通道
 
         该接口用于BCS删除某个通道。仅支持删除空通道
         
@@ -651,7 +651,7 @@ class BcsClient(Client):
         return http_info
 
     def delete_member_invite(self, request):
-        """删除邀请成员信息
+        r"""删除邀请成员信息
 
         可通过此接口批量取消邀请或删除对已退出或拒绝加入或解散的成员邀请信息
         
@@ -716,7 +716,7 @@ class BcsClient(Client):
         return http_info
 
     def download_blockchain_cert(self, request):
-        """下载证书
+        r"""下载证书
 
         下载指定服务实例相关证书
         
@@ -785,7 +785,7 @@ class BcsClient(Client):
         return http_info
 
     def download_blockchain_sdk_config(self, request):
-        """下载SDK配置
+        r"""下载SDK配置
 
         下载指定服务实例SDK配置文件
         
@@ -852,7 +852,7 @@ class BcsClient(Client):
         return http_info
 
     def freeze_cert(self, request):
-        """冻结用户证书
+        r"""冻结用户证书
 
         冻结指定服务实例组织用户证书，冻结后需等待半分钟到一分钟左右生效
         
@@ -925,7 +925,7 @@ class BcsClient(Client):
         return http_info
 
     def handle_notification(self, request):
-        """处理联盟邀请
+        r"""处理联盟邀请
 
         处理联盟邀请
         
@@ -990,7 +990,7 @@ class BcsClient(Client):
         return http_info
 
     def handle_union_member_quit_list(self, request):
-        """被邀请方退出指定联盟
+        r"""被邀请方退出指定联盟
 
         被邀请方退出联盟
         
@@ -1055,7 +1055,7 @@ class BcsClient(Client):
         return http_info
 
     def list_bcs_events(self, request):
-        """查询服务实例告警信息
+        r"""查询服务实例告警信息
 
         该接口用于查询BCS服务的事件、告警数据，可以指定查询时的过滤条件。
         
@@ -1124,7 +1124,7 @@ class BcsClient(Client):
         return http_info
 
     def list_bcs_events_statistic(self, request):
-        """查询服务实例告警统计接口
+        r"""查询服务实例告警统计接口
 
         该接口用于查询BCS服务的分段事件、告警统计数据，可以指定查询时的过滤条件。
         
@@ -1193,7 +1193,7 @@ class BcsClient(Client):
         return http_info
 
     def list_bcs_metric(self, request):
-        """查询服务实例监控数据
+        r"""查询服务实例监控数据
 
         该接口用于查询BCS服务的监控数据，可以指定相应的指标名称。
         
@@ -1260,7 +1260,7 @@ class BcsClient(Client):
         return http_info
 
     def list_blockchain_channels(self, request):
-        """查询通道信息
+        r"""查询通道信息
 
         查询指定服务实例通道信息
         
@@ -1325,7 +1325,7 @@ class BcsClient(Client):
         return http_info
 
     def list_blockchains(self, request):
-        """查询服务实例列表
+        r"""查询服务实例列表
 
         查询当前项目下所有服务实例的简要信息
         
@@ -1388,7 +1388,7 @@ class BcsClient(Client):
         return http_info
 
     def list_entity_metric(self, request):
-        """查询BCS组织监控数据列表
+        r"""查询BCS组织监控数据列表
 
         该接口用于查询BCS组织的监控数据列表。
         
@@ -1455,7 +1455,7 @@ class BcsClient(Client):
         return http_info
 
     def list_instance_metric(self, request):
-        """查询BCS组织实例监控数据详情
+        r"""查询BCS组织实例监控数据详情
 
         该接口用于BCS组织实例监控数据详情。
         
@@ -1522,7 +1522,7 @@ class BcsClient(Client):
         return http_info
 
     def list_members(self, request):
-        """获取联盟成员列表
+        r"""获取联盟成员列表
 
         获取联盟成员列表
         
@@ -1585,7 +1585,7 @@ class BcsClient(Client):
         return http_info
 
     def list_notifications(self, request):
-        """获取全部通知
+        r"""获取全部通知
 
         获取全部通知
         
@@ -1648,7 +1648,7 @@ class BcsClient(Client):
         return http_info
 
     def list_op_record(self, request):
-        """查询异步操作结果
+        r"""查询异步操作结果
 
         查询异步操作结果
         
@@ -1721,7 +1721,7 @@ class BcsClient(Client):
         return http_info
 
     def list_quotas(self, request):
-        """查询配额
+        r"""查询配额
 
         查询当前项目下BCS服务所有资源的配额信息
         
@@ -1784,7 +1784,7 @@ class BcsClient(Client):
         return http_info
 
     def show_blockchain_detail(self, request):
-        """查询实例信息
+        r"""查询实例信息
 
         查询指定服务实例详细信息
         
@@ -1849,7 +1849,7 @@ class BcsClient(Client):
         return http_info
 
     def show_blockchain_flavors(self, request):
-        """查询规格
+        r"""查询规格
 
         查询服务联盟链规格信息
         
@@ -1916,7 +1916,7 @@ class BcsClient(Client):
         return http_info
 
     def show_blockchain_nodes(self, request):
-        """查询节点信息
+        r"""查询节点信息
 
         查询指定服务实例节点信息
         
@@ -1981,7 +1981,7 @@ class BcsClient(Client):
         return http_info
 
     def show_blockchain_status(self, request):
-        """查询创建状态
+        r"""查询创建状态
 
         查询指定服务实例创建状态
         
@@ -2046,7 +2046,7 @@ class BcsClient(Client):
         return http_info
 
     def unfreeze_cert(self, request):
-        """解冻用户证书
+        r"""解冻用户证书
 
         解冻指定服务实例组织用户证书，解冻后需等待半分钟到一分钟左右生效
         
@@ -2119,7 +2119,7 @@ class BcsClient(Client):
         return http_info
 
     def update_instance(self, request):
-        """修改服务实例
+        r"""修改服务实例
 
         修改实例的节点、组织，目前仅支持添加、删除节点（IEF模式不支持添加、删除节点），添加、删除组织，共4种类型，每次操作只可以操作一种类型。此接口不支持包周期模式; 注意注册IEF节点时，IEF节点名称长度应该为4-24位的字符
         

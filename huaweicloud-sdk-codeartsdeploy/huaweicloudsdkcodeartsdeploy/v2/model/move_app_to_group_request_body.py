@@ -27,7 +27,7 @@ class MoveAppToGroupRequestBody:
     }
 
     def __init__(self, group_id=None, application_ids=None):
-        """MoveAppToGroupRequestBody
+        r"""MoveAppToGroupRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class MoveAppToGroupRequestBody:
 
     @property
     def group_id(self):
-        """Gets the group_id of this MoveAppToGroupRequestBody.
+        r"""Gets the group_id of this MoveAppToGroupRequestBody.
 
         分组id
 
@@ -59,7 +59,7 @@ class MoveAppToGroupRequestBody:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this MoveAppToGroupRequestBody.
+        r"""Sets the group_id of this MoveAppToGroupRequestBody.
 
         分组id
 
@@ -70,7 +70,7 @@ class MoveAppToGroupRequestBody:
 
     @property
     def application_ids(self):
-        """Gets the application_ids of this MoveAppToGroupRequestBody.
+        r"""Gets the application_ids of this MoveAppToGroupRequestBody.
 
         应用id列表
 
@@ -81,7 +81,7 @@ class MoveAppToGroupRequestBody:
 
     @application_ids.setter
     def application_ids(self, application_ids):
-        """Sets the application_ids of this MoveAppToGroupRequestBody.
+        r"""Sets the application_ids of this MoveAppToGroupRequestBody.
 
         应用id列表
 

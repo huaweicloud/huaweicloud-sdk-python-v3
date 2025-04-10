@@ -29,7 +29,7 @@ class IdentityproviderOption:
     }
 
     def __init__(self, sso_type=None, description=None, enabled=None):
-        """IdentityproviderOption
+        r"""IdentityproviderOption
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class IdentityproviderOption:
 
     @property
     def sso_type(self):
-        """Gets the sso_type of this IdentityproviderOption.
+        r"""Gets the sso_type of this IdentityproviderOption.
 
         身份提供商类型。当前支持virtual_user_sso和iam_user_sso两种，缺省配置默认为virtual_user_sso类型。
 
@@ -68,7 +68,7 @@ class IdentityproviderOption:
 
     @sso_type.setter
     def sso_type(self, sso_type):
-        """Sets the sso_type of this IdentityproviderOption.
+        r"""Sets the sso_type of this IdentityproviderOption.
 
         身份提供商类型。当前支持virtual_user_sso和iam_user_sso两种，缺省配置默认为virtual_user_sso类型。
 
@@ -79,7 +79,7 @@ class IdentityproviderOption:
 
     @property
     def description(self):
-        """Gets the description of this IdentityproviderOption.
+        r"""Gets the description of this IdentityproviderOption.
 
         身份提供商描述信息。
 
@@ -90,7 +90,7 @@ class IdentityproviderOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this IdentityproviderOption.
+        r"""Sets the description of this IdentityproviderOption.
 
         身份提供商描述信息。
 
@@ -101,7 +101,7 @@ class IdentityproviderOption:
 
     @property
     def enabled(self):
-        """Gets the enabled of this IdentityproviderOption.
+        r"""Gets the enabled of this IdentityproviderOption.
 
         身份提供商是否启用，true为启用，false为停用，默认为false。
 
@@ -112,7 +112,7 @@ class IdentityproviderOption:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this IdentityproviderOption.
+        r"""Sets the enabled of this IdentityproviderOption.
 
         身份提供商是否启用，true为启用，false为停用，默认为false。
 

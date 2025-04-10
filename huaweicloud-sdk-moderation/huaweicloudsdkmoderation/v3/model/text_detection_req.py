@@ -35,7 +35,7 @@ class TextDetectionReq:
     }
 
     def __init__(self, event_type=None, categories=None, glossary_names=None, data=None, white_glossary_names=None, biz_type=None):
-        """TextDetectionReq
+        r"""TextDetectionReq
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class TextDetectionReq:
 
     @property
     def event_type(self):
-        """Gets the event_type of this TextDetectionReq.
+        r"""Gets the event_type of this TextDetectionReq.
 
         事件类型。  可选值如下：  nickname: 昵称  title: 标题  article: 帖⼦  comment: 评论  barrage: 弹幕  search: 搜索栏  profile: 个⼈简介
 
@@ -88,7 +88,7 @@ class TextDetectionReq:
 
     @event_type.setter
     def event_type(self, event_type):
-        """Sets the event_type of this TextDetectionReq.
+        r"""Sets the event_type of this TextDetectionReq.
 
         事件类型。  可选值如下：  nickname: 昵称  title: 标题  article: 帖⼦  comment: 评论  barrage: 弹幕  search: 搜索栏  profile: 个⼈简介
 
@@ -99,7 +99,7 @@ class TextDetectionReq:
 
     @property
     def categories(self):
-        """Gets the categories of this TextDetectionReq.
+        r"""Gets the categories of this TextDetectionReq.
 
         文本审核场景，可选值如下： terrorism: 暴恐 porn: 色情 ban: 违禁 abuse: 辱骂 ad: 广告 当categories缺省或为空时，默认审核terrorism、porn、ban、abuse、ad。
 
@@ -110,7 +110,7 @@ class TextDetectionReq:
 
     @categories.setter
     def categories(self, categories):
-        """Sets the categories of this TextDetectionReq.
+        r"""Sets the categories of this TextDetectionReq.
 
         文本审核场景，可选值如下： terrorism: 暴恐 porn: 色情 ban: 违禁 abuse: 辱骂 ad: 广告 当categories缺省或为空时，默认审核terrorism、porn、ban、abuse、ad。
 
@@ -121,7 +121,7 @@ class TextDetectionReq:
 
     @property
     def glossary_names(self):
-        """Gets the glossary_names of this TextDetectionReq.
+        r"""Gets the glossary_names of this TextDetectionReq.
 
         检测时使用的自定义黑名单词库列表。自定义黑词库的创建和使用请参见[配置定义黑名单词库](https://support.huaweicloud.com/api-moderation/moderation_03_0027.html#moderation_03_0027__section12400140132318)。
 
@@ -132,7 +132,7 @@ class TextDetectionReq:
 
     @glossary_names.setter
     def glossary_names(self, glossary_names):
-        """Sets the glossary_names of this TextDetectionReq.
+        r"""Sets the glossary_names of this TextDetectionReq.
 
         检测时使用的自定义黑名单词库列表。自定义黑词库的创建和使用请参见[配置定义黑名单词库](https://support.huaweicloud.com/api-moderation/moderation_03_0027.html#moderation_03_0027__section12400140132318)。
 
@@ -143,7 +143,7 @@ class TextDetectionReq:
 
     @property
     def data(self):
-        """Gets the data of this TextDetectionReq.
+        r"""Gets the data of this TextDetectionReq.
 
         :return: The data of this TextDetectionReq.
         :rtype: :class:`huaweicloudsdkmoderation.v3.TextDetectionDataReq`
@@ -152,7 +152,7 @@ class TextDetectionReq:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this TextDetectionReq.
+        r"""Sets the data of this TextDetectionReq.
 
         :param data: The data of this TextDetectionReq.
         :type data: :class:`huaweicloudsdkmoderation.v3.TextDetectionDataReq`
@@ -161,7 +161,7 @@ class TextDetectionReq:
 
     @property
     def white_glossary_names(self):
-        """Gets the white_glossary_names of this TextDetectionReq.
+        r"""Gets the white_glossary_names of this TextDetectionReq.
 
         检测时使用的自定义白名单词库列表。自定义白词库的创建和使用请参见[配置定义白名单词库](https://support.huaweicloud.com/api-moderation/moderation_03_0027.html#moderation_03_0027__section178844141394)。
 
@@ -172,7 +172,7 @@ class TextDetectionReq:
 
     @white_glossary_names.setter
     def white_glossary_names(self, white_glossary_names):
-        """Sets the white_glossary_names of this TextDetectionReq.
+        r"""Sets the white_glossary_names of this TextDetectionReq.
 
         检测时使用的自定义白名单词库列表。自定义白词库的创建和使用请参见[配置定义白名单词库](https://support.huaweicloud.com/api-moderation/moderation_03_0027.html#moderation_03_0027__section178844141394)。
 
@@ -183,7 +183,7 @@ class TextDetectionReq:
 
     @property
     def biz_type(self):
-        """Gets the biz_type of this TextDetectionReq.
+        r"""Gets the biz_type of this TextDetectionReq.
 
         自定义审核策略名称，可在控制台配置;如果请求参数中传了biz_type则优先使用biz_type,如果用户没传biz_type则event_type必须传。
 
@@ -194,7 +194,7 @@ class TextDetectionReq:
 
     @biz_type.setter
     def biz_type(self, biz_type):
-        """Sets the biz_type of this TextDetectionReq.
+        r"""Sets the biz_type of this TextDetectionReq.
 
         自定义审核策略名称，可在控制台配置;如果请求参数中传了biz_type则优先使用biz_type,如果用户没传biz_type则event_type必须传。
 

@@ -29,7 +29,7 @@ class ConfigBody:
     }
 
     def __init__(self, config_key=None, config_value=None, config_status=None):
-        """ConfigBody
+        r"""ConfigBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ConfigBody:
 
     @property
     def config_key(self):
-        """Gets the config_key of this ConfigBody.
+        r"""Gets the config_key of this ConfigBody.
 
         配置类型，分为：”EXCLUDE_MIGRATE_PATH\"，\"SYNC_EXCLUDE_PATH\"，\"ONLY_SYNC_PATH\"等
 
@@ -66,7 +66,7 @@ class ConfigBody:
 
     @config_key.setter
     def config_key(self, config_key):
-        """Sets the config_key of this ConfigBody.
+        r"""Sets the config_key of this ConfigBody.
 
         配置类型，分为：”EXCLUDE_MIGRATE_PATH\"，\"SYNC_EXCLUDE_PATH\"，\"ONLY_SYNC_PATH\"等
 
@@ -77,7 +77,7 @@ class ConfigBody:
 
     @property
     def config_value(self):
-        """Gets the config_value of this ConfigBody.
+        r"""Gets the config_value of this ConfigBody.
 
         具体配置参数字段，保存于数据库，最终在agent端进行解析
 
@@ -88,7 +88,7 @@ class ConfigBody:
 
     @config_value.setter
     def config_value(self, config_value):
-        """Sets the config_value of this ConfigBody.
+        r"""Sets the config_value of this ConfigBody.
 
         具体配置参数字段，保存于数据库，最终在agent端进行解析
 
@@ -99,7 +99,7 @@ class ConfigBody:
 
     @property
     def config_status(self):
-        """Gets the config_status of this ConfigBody.
+        r"""Gets the config_status of this ConfigBody.
 
         描述配置状态的保留字段
 
@@ -110,7 +110,7 @@ class ConfigBody:
 
     @config_status.setter
     def config_status(self, config_status):
-        """Sets the config_status of this ConfigBody.
+        r"""Sets the config_status of this ConfigBody.
 
         描述配置状态的保留字段
 

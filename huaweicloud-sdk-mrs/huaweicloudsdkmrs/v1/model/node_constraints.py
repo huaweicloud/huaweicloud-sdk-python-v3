@@ -41,7 +41,7 @@ class NodeConstraints:
     }
 
     def __init__(self, other=None, master=None, core=None, task=None, core_separate=None, core_combine=None, task_separate=None, task_combine=None, node_group_task=None):
-        """NodeConstraints
+        r"""NodeConstraints
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class NodeConstraints:
 
     @property
     def other(self):
-        """Gets the other of this NodeConstraints.
+        r"""Gets the other of this NodeConstraints.
 
         其他节点限制
 
@@ -110,7 +110,7 @@ class NodeConstraints:
 
     @other.setter
     def other(self, other):
-        """Sets the other of this NodeConstraints.
+        r"""Sets the other of this NodeConstraints.
 
         其他节点限制
 
@@ -121,7 +121,7 @@ class NodeConstraints:
 
     @property
     def master(self):
-        """Gets the master of this NodeConstraints.
+        r"""Gets the master of this NodeConstraints.
 
         :return: The master of this NodeConstraints.
         :rtype: :class:`huaweicloudsdkmrs.v1.NodeConstraint`
@@ -130,7 +130,7 @@ class NodeConstraints:
 
     @master.setter
     def master(self, master):
-        """Sets the master of this NodeConstraints.
+        r"""Sets the master of this NodeConstraints.
 
         :param master: The master of this NodeConstraints.
         :type master: :class:`huaweicloudsdkmrs.v1.NodeConstraint`
@@ -139,7 +139,7 @@ class NodeConstraints:
 
     @property
     def core(self):
-        """Gets the core of this NodeConstraints.
+        r"""Gets the core of this NodeConstraints.
 
         :return: The core of this NodeConstraints.
         :rtype: :class:`huaweicloudsdkmrs.v1.NodeConstraint`
@@ -148,7 +148,7 @@ class NodeConstraints:
 
     @core.setter
     def core(self, core):
-        """Sets the core of this NodeConstraints.
+        r"""Sets the core of this NodeConstraints.
 
         :param core: The core of this NodeConstraints.
         :type core: :class:`huaweicloudsdkmrs.v1.NodeConstraint`
@@ -157,7 +157,7 @@ class NodeConstraints:
 
     @property
     def task(self):
-        """Gets the task of this NodeConstraints.
+        r"""Gets the task of this NodeConstraints.
 
         :return: The task of this NodeConstraints.
         :rtype: :class:`huaweicloudsdkmrs.v1.NodeConstraint`
@@ -166,7 +166,7 @@ class NodeConstraints:
 
     @task.setter
     def task(self, task):
-        """Sets the task of this NodeConstraints.
+        r"""Sets the task of this NodeConstraints.
 
         :param task: The task of this NodeConstraints.
         :type task: :class:`huaweicloudsdkmrs.v1.NodeConstraint`
@@ -175,7 +175,7 @@ class NodeConstraints:
 
     @property
     def core_separate(self):
-        """Gets the core_separate of this NodeConstraints.
+        r"""Gets the core_separate of this NodeConstraints.
 
         :return: The core_separate of this NodeConstraints.
         :rtype: :class:`huaweicloudsdkmrs.v1.NodeConstraint`
@@ -184,7 +184,7 @@ class NodeConstraints:
 
     @core_separate.setter
     def core_separate(self, core_separate):
-        """Sets the core_separate of this NodeConstraints.
+        r"""Sets the core_separate of this NodeConstraints.
 
         :param core_separate: The core_separate of this NodeConstraints.
         :type core_separate: :class:`huaweicloudsdkmrs.v1.NodeConstraint`
@@ -193,7 +193,7 @@ class NodeConstraints:
 
     @property
     def core_combine(self):
-        """Gets the core_combine of this NodeConstraints.
+        r"""Gets the core_combine of this NodeConstraints.
 
         :return: The core_combine of this NodeConstraints.
         :rtype: :class:`huaweicloudsdkmrs.v1.NodeConstraint`
@@ -202,7 +202,7 @@ class NodeConstraints:
 
     @core_combine.setter
     def core_combine(self, core_combine):
-        """Sets the core_combine of this NodeConstraints.
+        r"""Sets the core_combine of this NodeConstraints.
 
         :param core_combine: The core_combine of this NodeConstraints.
         :type core_combine: :class:`huaweicloudsdkmrs.v1.NodeConstraint`
@@ -211,7 +211,7 @@ class NodeConstraints:
 
     @property
     def task_separate(self):
-        """Gets the task_separate of this NodeConstraints.
+        r"""Gets the task_separate of this NodeConstraints.
 
         :return: The task_separate of this NodeConstraints.
         :rtype: :class:`huaweicloudsdkmrs.v1.NodeConstraint`
@@ -220,7 +220,7 @@ class NodeConstraints:
 
     @task_separate.setter
     def task_separate(self, task_separate):
-        """Sets the task_separate of this NodeConstraints.
+        r"""Sets the task_separate of this NodeConstraints.
 
         :param task_separate: The task_separate of this NodeConstraints.
         :type task_separate: :class:`huaweicloudsdkmrs.v1.NodeConstraint`
@@ -229,7 +229,7 @@ class NodeConstraints:
 
     @property
     def task_combine(self):
-        """Gets the task_combine of this NodeConstraints.
+        r"""Gets the task_combine of this NodeConstraints.
 
         :return: The task_combine of this NodeConstraints.
         :rtype: :class:`huaweicloudsdkmrs.v1.NodeConstraint`
@@ -238,7 +238,7 @@ class NodeConstraints:
 
     @task_combine.setter
     def task_combine(self, task_combine):
-        """Sets the task_combine of this NodeConstraints.
+        r"""Sets the task_combine of this NodeConstraints.
 
         :param task_combine: The task_combine of this NodeConstraints.
         :type task_combine: :class:`huaweicloudsdkmrs.v1.NodeConstraint`
@@ -247,7 +247,7 @@ class NodeConstraints:
 
     @property
     def node_group_task(self):
-        """Gets the node_group_task of this NodeConstraints.
+        r"""Gets the node_group_task of this NodeConstraints.
 
         :return: The node_group_task of this NodeConstraints.
         :rtype: :class:`huaweicloudsdkmrs.v1.NodeConstraint`
@@ -256,7 +256,7 @@ class NodeConstraints:
 
     @node_group_task.setter
     def node_group_task(self, node_group_task):
-        """Sets the node_group_task of this NodeConstraints.
+        r"""Sets the node_group_task of this NodeConstraints.
 
         :param node_group_task: The node_group_task of this NodeConstraints.
         :type node_group_task: :class:`huaweicloudsdkmrs.v1.NodeConstraint`

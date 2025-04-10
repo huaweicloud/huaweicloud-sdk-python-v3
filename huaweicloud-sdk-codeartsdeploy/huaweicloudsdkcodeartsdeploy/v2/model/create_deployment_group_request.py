@@ -25,7 +25,7 @@ class CreateDeploymentGroupRequest:
     }
 
     def __init__(self, body=None):
-        """CreateDeploymentGroupRequest
+        r"""CreateDeploymentGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateDeploymentGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDeploymentGroupRequest.
+        r"""Gets the body of this CreateDeploymentGroupRequest.
 
         :return: The body of this CreateDeploymentGroupRequest.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.DeploymentGroup`
@@ -52,7 +52,7 @@ class CreateDeploymentGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDeploymentGroupRequest.
+        r"""Sets the body of this CreateDeploymentGroupRequest.
 
         :param body: The body of this CreateDeploymentGroupRequest.
         :type body: :class:`huaweicloudsdkcodeartsdeploy.v2.DeploymentGroup`

@@ -27,7 +27,7 @@ class AudioOutput:
     }
 
     def __init__(self, obs=None, hosting=None):
-        """AudioOutput
+        r"""AudioOutput
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AudioOutput:
 
     @property
     def obs(self):
-        """Gets the obs of this AudioOutput.
+        r"""Gets the obs of this AudioOutput.
 
         :return: The obs of this AudioOutput.
         :rtype: :class:`huaweicloudsdkvcm.v2.AudioOutputObs`
@@ -59,7 +59,7 @@ class AudioOutput:
 
     @obs.setter
     def obs(self, obs):
-        """Sets the obs of this AudioOutput.
+        r"""Sets the obs of this AudioOutput.
 
         :param obs: The obs of this AudioOutput.
         :type obs: :class:`huaweicloudsdkvcm.v2.AudioOutputObs`
@@ -68,7 +68,7 @@ class AudioOutput:
 
     @property
     def hosting(self):
-        """Gets the hosting of this AudioOutput.
+        r"""Gets the hosting of this AudioOutput.
 
         :return: The hosting of this AudioOutput.
         :rtype: :class:`huaweicloudsdkvcm.v2.AudioOutputHosting`
@@ -77,7 +77,7 @@ class AudioOutput:
 
     @hosting.setter
     def hosting(self, hosting):
-        """Sets the hosting of this AudioOutput.
+        r"""Sets the hosting of this AudioOutput.
 
         :param hosting: The hosting of this AudioOutput.
         :type hosting: :class:`huaweicloudsdkvcm.v2.AudioOutputHosting`

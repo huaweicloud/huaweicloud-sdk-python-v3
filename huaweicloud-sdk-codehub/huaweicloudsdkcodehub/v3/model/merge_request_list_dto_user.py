@@ -25,7 +25,7 @@ class MergeRequestListDtoUser:
     }
 
     def __init__(self, can_merge=None):
-        """MergeRequestListDtoUser
+        r"""MergeRequestListDtoUser
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class MergeRequestListDtoUser:
 
     @property
     def can_merge(self):
-        """Gets the can_merge of this MergeRequestListDtoUser.
+        r"""Gets the can_merge of this MergeRequestListDtoUser.
 
         当前用户是否可合入
 
@@ -54,7 +54,7 @@ class MergeRequestListDtoUser:
 
     @can_merge.setter
     def can_merge(self, can_merge):
-        """Sets the can_merge of this MergeRequestListDtoUser.
+        r"""Sets the can_merge of this MergeRequestListDtoUser.
 
         当前用户是否可合入
 

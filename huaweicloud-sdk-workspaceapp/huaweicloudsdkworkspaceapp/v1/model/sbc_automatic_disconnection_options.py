@@ -29,7 +29,7 @@ class SbcAutomaticDisconnectionOptions:
     }
 
     def __init__(self, disconnection_waiting_time=None, sbc_auto_logout=None, auto_logout_options=None):
-        """SbcAutomaticDisconnectionOptions
+        r"""SbcAutomaticDisconnectionOptions
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class SbcAutomaticDisconnectionOptions:
 
     @property
     def disconnection_waiting_time(self):
-        """Gets the disconnection_waiting_time of this SbcAutomaticDisconnectionOptions.
+        r"""Gets the disconnection_waiting_time of this SbcAutomaticDisconnectionOptions.
 
         等待时间（分钟）。
 
@@ -68,7 +68,7 @@ class SbcAutomaticDisconnectionOptions:
 
     @disconnection_waiting_time.setter
     def disconnection_waiting_time(self, disconnection_waiting_time):
-        """Sets the disconnection_waiting_time of this SbcAutomaticDisconnectionOptions.
+        r"""Sets the disconnection_waiting_time of this SbcAutomaticDisconnectionOptions.
 
         等待时间（分钟）。
 
@@ -79,7 +79,7 @@ class SbcAutomaticDisconnectionOptions:
 
     @property
     def sbc_auto_logout(self):
-        """Gets the sbc_auto_logout of this SbcAutomaticDisconnectionOptions.
+        r"""Gets the sbc_auto_logout of this SbcAutomaticDisconnectionOptions.
 
         是否自动注销。取值为：false：表示是。true：表示否。
 
@@ -90,7 +90,7 @@ class SbcAutomaticDisconnectionOptions:
 
     @sbc_auto_logout.setter
     def sbc_auto_logout(self, sbc_auto_logout):
-        """Sets the sbc_auto_logout of this SbcAutomaticDisconnectionOptions.
+        r"""Sets the sbc_auto_logout of this SbcAutomaticDisconnectionOptions.
 
         是否自动注销。取值为：false：表示是。true：表示否。
 
@@ -101,7 +101,7 @@ class SbcAutomaticDisconnectionOptions:
 
     @property
     def auto_logout_options(self):
-        """Gets the auto_logout_options of this SbcAutomaticDisconnectionOptions.
+        r"""Gets the auto_logout_options of this SbcAutomaticDisconnectionOptions.
 
         :return: The auto_logout_options of this SbcAutomaticDisconnectionOptions.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AutoLogoutOptions`
@@ -110,7 +110,7 @@ class SbcAutomaticDisconnectionOptions:
 
     @auto_logout_options.setter
     def auto_logout_options(self, auto_logout_options):
-        """Sets the auto_logout_options of this SbcAutomaticDisconnectionOptions.
+        r"""Sets the auto_logout_options of this SbcAutomaticDisconnectionOptions.
 
         :param auto_logout_options: The auto_logout_options of this SbcAutomaticDisconnectionOptions.
         :type auto_logout_options: :class:`huaweicloudsdkworkspaceapp.v1.AutoLogoutOptions`

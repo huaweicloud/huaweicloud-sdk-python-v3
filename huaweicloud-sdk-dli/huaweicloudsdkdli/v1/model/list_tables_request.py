@@ -37,7 +37,7 @@ class ListTablesRequest:
     }
 
     def __init__(self, database_name=None, current_page=None, keyword=None, page_size=None, table_type=None, with_detail=None, with_priv=None):
-        """ListTablesRequest
+        r"""ListTablesRequest
 
         The model defined in huaweicloud sdk
 
@@ -84,7 +84,7 @@ class ListTablesRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this ListTablesRequest.
+        r"""Gets the database_name of this ListTablesRequest.
 
         查看表所在的数据库名称。
 
@@ -95,7 +95,7 @@ class ListTablesRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this ListTablesRequest.
+        r"""Sets the database_name of this ListTablesRequest.
 
         查看表所在的数据库名称。
 
@@ -106,7 +106,7 @@ class ListTablesRequest:
 
     @property
     def current_page(self):
-        """Gets the current_page of this ListTablesRequest.
+        r"""Gets the current_page of this ListTablesRequest.
 
         :return: The current_page of this ListTablesRequest.
         :rtype: int
@@ -115,7 +115,7 @@ class ListTablesRequest:
 
     @current_page.setter
     def current_page(self, current_page):
-        """Sets the current_page of this ListTablesRequest.
+        r"""Sets the current_page of this ListTablesRequest.
 
         :param current_page: The current_page of this ListTablesRequest.
         :type current_page: int
@@ -124,7 +124,7 @@ class ListTablesRequest:
 
     @property
     def keyword(self):
-        """Gets the keyword of this ListTablesRequest.
+        r"""Gets the keyword of this ListTablesRequest.
 
         过滤表名称的关键词。
 
@@ -135,7 +135,7 @@ class ListTablesRequest:
 
     @keyword.setter
     def keyword(self, keyword):
-        """Sets the keyword of this ListTablesRequest.
+        r"""Sets the keyword of this ListTablesRequest.
 
         过滤表名称的关键词。
 
@@ -146,7 +146,7 @@ class ListTablesRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ListTablesRequest.
+        r"""Gets the page_size of this ListTablesRequest.
 
         :return: The page_size of this ListTablesRequest.
         :rtype: int
@@ -155,7 +155,7 @@ class ListTablesRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ListTablesRequest.
+        r"""Sets the page_size of this ListTablesRequest.
 
         :param page_size: The page_size of this ListTablesRequest.
         :type page_size: int
@@ -164,7 +164,7 @@ class ListTablesRequest:
 
     @property
     def table_type(self):
-        """Gets the table_type of this ListTablesRequest.
+        r"""Gets the table_type of this ListTablesRequest.
 
         :return: The table_type of this ListTablesRequest.
         :rtype: str
@@ -173,7 +173,7 @@ class ListTablesRequest:
 
     @table_type.setter
     def table_type(self, table_type):
-        """Sets the table_type of this ListTablesRequest.
+        r"""Sets the table_type of this ListTablesRequest.
 
         :param table_type: The table_type of this ListTablesRequest.
         :type table_type: str
@@ -182,7 +182,7 @@ class ListTablesRequest:
 
     @property
     def with_detail(self):
-        """Gets the with_detail of this ListTablesRequest.
+        r"""Gets the with_detail of this ListTablesRequest.
 
         是否获取表的详细信息（所有者，size等）。
 
@@ -193,7 +193,7 @@ class ListTablesRequest:
 
     @with_detail.setter
     def with_detail(self, with_detail):
-        """Sets the with_detail of this ListTablesRequest.
+        r"""Sets the with_detail of this ListTablesRequest.
 
         是否获取表的详细信息（所有者，size等）。
 
@@ -204,7 +204,7 @@ class ListTablesRequest:
 
     @property
     def with_priv(self):
-        """Gets the with_priv of this ListTablesRequest.
+        r"""Gets the with_priv of this ListTablesRequest.
 
         :return: The with_priv of this ListTablesRequest.
         :rtype: bool
@@ -213,7 +213,7 @@ class ListTablesRequest:
 
     @with_priv.setter
     def with_priv(self, with_priv):
-        """Sets the with_priv of this ListTablesRequest.
+        r"""Sets the with_priv of this ListTablesRequest.
 
         :param with_priv: The with_priv of this ListTablesRequest.
         :type with_priv: bool

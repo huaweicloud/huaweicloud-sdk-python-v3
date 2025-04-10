@@ -31,7 +31,7 @@ class UpdateScoreRequestModel:
     }
 
     def __init__(self, works_id=None, score=None, status=None, message=None):
-        """UpdateScoreRequestModel
+        r"""UpdateScoreRequestModel
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class UpdateScoreRequestModel:
 
     @property
     def works_id(self):
-        """Gets the works_id of this UpdateScoreRequestModel.
+        r"""Gets the works_id of this UpdateScoreRequestModel.
 
         作品ID，大赛平台提供，可以通过接口[ListCompetitionWorks](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=CodeCraft&api=ListCompetitionWorks)查询作品ID
 
@@ -72,7 +72,7 @@ class UpdateScoreRequestModel:
 
     @works_id.setter
     def works_id(self, works_id):
-        """Sets the works_id of this UpdateScoreRequestModel.
+        r"""Sets the works_id of this UpdateScoreRequestModel.
 
         作品ID，大赛平台提供，可以通过接口[ListCompetitionWorks](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=CodeCraft&api=ListCompetitionWorks)查询作品ID
 
@@ -83,7 +83,7 @@ class UpdateScoreRequestModel:
 
     @property
     def score(self):
-        """Gets the score of this UpdateScoreRequestModel.
+        r"""Gets the score of this UpdateScoreRequestModel.
 
         作品分数，作品状态为failed时传-1，计算长度时包括小数点，小数点后面最多保留四位
 
@@ -94,7 +94,7 @@ class UpdateScoreRequestModel:
 
     @score.setter
     def score(self, score):
-        """Sets the score of this UpdateScoreRequestModel.
+        r"""Sets the score of this UpdateScoreRequestModel.
 
         作品分数，作品状态为failed时传-1，计算长度时包括小数点，小数点后面最多保留四位
 
@@ -105,7 +105,7 @@ class UpdateScoreRequestModel:
 
     @property
     def status(self):
-        """Gets the status of this UpdateScoreRequestModel.
+        r"""Gets the status of this UpdateScoreRequestModel.
 
         作品状态success|failed。判题时，需要对上传作品进行检查，当作品不符合要求时，应该返回failed，并将提示信息通过 message显示出来
 
@@ -116,7 +116,7 @@ class UpdateScoreRequestModel:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateScoreRequestModel.
+        r"""Sets the status of this UpdateScoreRequestModel.
 
         作品状态success|failed。判题时，需要对上传作品进行检查，当作品不符合要求时，应该返回failed，并将提示信息通过 message显示出来
 
@@ -127,7 +127,7 @@ class UpdateScoreRequestModel:
 
     @property
     def message(self):
-        """Gets the message of this UpdateScoreRequestModel.
+        r"""Gets the message of this UpdateScoreRequestModel.
 
         作品描述信息
 
@@ -138,7 +138,7 @@ class UpdateScoreRequestModel:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this UpdateScoreRequestModel.
+        r"""Sets the message of this UpdateScoreRequestModel.
 
         作品描述信息
 

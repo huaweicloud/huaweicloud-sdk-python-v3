@@ -85,7 +85,7 @@ class ListInstanceResponse:
     }
 
     def __init__(self, id=None, name=None, status=None, private_ips=None, public_ips=None, port=None, type=None, ha=None, replica_num=None, region=None, datastore=None, created=None, updated=None, db_user_name=None, vpc_id=None, subnet_id=None, security_group_id=None, flavor_ref=None, flavor_info=None, volume=None, switch_strategy=None, backup_strategy=None, maintenance_window=None, nodes=None, enterprise_project_id=None, instance_mode=None, disk_encryption_id=None, charge_info=None, time_zone=None, tags=None, backup_used_space=None):
-        """ListInstanceResponse
+        r"""ListInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -224,7 +224,7 @@ class ListInstanceResponse:
 
     @property
     def id(self):
-        """Gets the id of this ListInstanceResponse.
+        r"""Gets the id of this ListInstanceResponse.
 
         实例ID。
 
@@ -235,7 +235,7 @@ class ListInstanceResponse:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListInstanceResponse.
+        r"""Sets the id of this ListInstanceResponse.
 
         实例ID。
 
@@ -246,7 +246,7 @@ class ListInstanceResponse:
 
     @property
     def name(self):
-        """Gets the name of this ListInstanceResponse.
+        r"""Gets the name of this ListInstanceResponse.
 
         创建的实例名称。
 
@@ -257,7 +257,7 @@ class ListInstanceResponse:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListInstanceResponse.
+        r"""Sets the name of this ListInstanceResponse.
 
         创建的实例名称。
 
@@ -268,7 +268,7 @@ class ListInstanceResponse:
 
     @property
     def status(self):
-        """Gets the status of this ListInstanceResponse.
+        r"""Gets the status of this ListInstanceResponse.
 
         实例状态。  取值：  值为“BUILD”，表示实例正在创建。  值为“ACTIVE”，表示实例正常。  值为“FAILED”，表示实例异常。  值为“FROZEN”，表示实例冻结。  值为“EXPANDING”，表示实例正在扩容CN或DN。  值为“REBOOTING”，表示实例正在重启。  值为“UPGRADING”，表示实例正在升级。  值为“RESTORING”，表示实例正在恢复。  值为“BACKING UP”，表示实例正在进行备份。  值为“REDUCING REPLICATION”，表示实例正在降副本。  值为“STORAGE FULL”，表示实例磁盘空间满。
 
@@ -279,7 +279,7 @@ class ListInstanceResponse:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListInstanceResponse.
+        r"""Sets the status of this ListInstanceResponse.
 
         实例状态。  取值：  值为“BUILD”，表示实例正在创建。  值为“ACTIVE”，表示实例正常。  值为“FAILED”，表示实例异常。  值为“FROZEN”，表示实例冻结。  值为“EXPANDING”，表示实例正在扩容CN或DN。  值为“REBOOTING”，表示实例正在重启。  值为“UPGRADING”，表示实例正在升级。  值为“RESTORING”，表示实例正在恢复。  值为“BACKING UP”，表示实例正在进行备份。  值为“REDUCING REPLICATION”，表示实例正在降副本。  值为“STORAGE FULL”，表示实例磁盘空间满。
 
@@ -290,7 +290,7 @@ class ListInstanceResponse:
 
     @property
     def private_ips(self):
-        """Gets the private_ips of this ListInstanceResponse.
+        r"""Gets the private_ips of this ListInstanceResponse.
 
         实例内网IP地址列表。分布式CN所在的弹性云服务器创建成功后该值存在，主备版DN所在的弹性云服务器创建成功后该值存在，其他情况下为空字符串。
 
@@ -301,7 +301,7 @@ class ListInstanceResponse:
 
     @private_ips.setter
     def private_ips(self, private_ips):
-        """Sets the private_ips of this ListInstanceResponse.
+        r"""Sets the private_ips of this ListInstanceResponse.
 
         实例内网IP地址列表。分布式CN所在的弹性云服务器创建成功后该值存在，主备版DN所在的弹性云服务器创建成功后该值存在，其他情况下为空字符串。
 
@@ -312,7 +312,7 @@ class ListInstanceResponse:
 
     @property
     def public_ips(self):
-        """Gets the public_ips of this ListInstanceResponse.
+        r"""Gets the public_ips of this ListInstanceResponse.
 
         实例外网IP地址列表。绑定弹性公网IP后，该值不为空。
 
@@ -323,7 +323,7 @@ class ListInstanceResponse:
 
     @public_ips.setter
     def public_ips(self, public_ips):
-        """Sets the public_ips of this ListInstanceResponse.
+        r"""Sets the public_ips of this ListInstanceResponse.
 
         实例外网IP地址列表。绑定弹性公网IP后，该值不为空。
 
@@ -334,7 +334,7 @@ class ListInstanceResponse:
 
     @property
     def port(self):
-        """Gets the port of this ListInstanceResponse.
+        r"""Gets the port of this ListInstanceResponse.
 
         数据库端口号。GaussDB 数据库端口设置范围为1024~39998（其中2378,2379,2380,4999,5000,5999,6000,6001,8097,8098,20049,20050,21731,21732被系统占用不可设置）。  当不传该参数时，默认端口如下：8000。
 
@@ -345,7 +345,7 @@ class ListInstanceResponse:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this ListInstanceResponse.
+        r"""Sets the port of this ListInstanceResponse.
 
         数据库端口号。GaussDB 数据库端口设置范围为1024~39998（其中2378,2379,2380,4999,5000,5999,6000,6001,8097,8098,20049,20050,21731,21732被系统占用不可设置）。  当不传该参数时，默认端口如下：8000。
 
@@ -356,7 +356,7 @@ class ListInstanceResponse:
 
     @property
     def type(self):
-        """Gets the type of this ListInstanceResponse.
+        r"""Gets the type of this ListInstanceResponse.
 
         实例类型，取值为 \"enterprise\"，对应于分布式实例（企业版）。取值为\"Ha\"，对应于主备版实例。
 
@@ -367,7 +367,7 @@ class ListInstanceResponse:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListInstanceResponse.
+        r"""Sets the type of this ListInstanceResponse.
 
         实例类型，取值为 \"enterprise\"，对应于分布式实例（企业版）。取值为\"Ha\"，对应于主备版实例。
 
@@ -378,7 +378,7 @@ class ListInstanceResponse:
 
     @property
     def ha(self):
-        """Gets the ha of this ListInstanceResponse.
+        r"""Gets the ha of this ListInstanceResponse.
 
         :return: The ha of this ListInstanceResponse.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListHa`
@@ -387,7 +387,7 @@ class ListInstanceResponse:
 
     @ha.setter
     def ha(self, ha):
-        """Sets the ha of this ListInstanceResponse.
+        r"""Sets the ha of this ListInstanceResponse.
 
         :param ha: The ha of this ListInstanceResponse.
         :type ha: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListHa`
@@ -396,7 +396,7 @@ class ListInstanceResponse:
 
     @property
     def replica_num(self):
-        """Gets the replica_num of this ListInstanceResponse.
+        r"""Gets the replica_num of this ListInstanceResponse.
 
         实例副本数。
 
@@ -407,7 +407,7 @@ class ListInstanceResponse:
 
     @replica_num.setter
     def replica_num(self, replica_num):
-        """Sets the replica_num of this ListInstanceResponse.
+        r"""Sets the replica_num of this ListInstanceResponse.
 
         实例副本数。
 
@@ -418,7 +418,7 @@ class ListInstanceResponse:
 
     @property
     def region(self):
-        """Gets the region of this ListInstanceResponse.
+        r"""Gets the region of this ListInstanceResponse.
 
         实例所在区域。
 
@@ -429,7 +429,7 @@ class ListInstanceResponse:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ListInstanceResponse.
+        r"""Sets the region of this ListInstanceResponse.
 
         实例所在区域。
 
@@ -440,7 +440,7 @@ class ListInstanceResponse:
 
     @property
     def datastore(self):
-        """Gets the datastore of this ListInstanceResponse.
+        r"""Gets the datastore of this ListInstanceResponse.
 
         :return: The datastore of this ListInstanceResponse.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListDatastore`
@@ -449,7 +449,7 @@ class ListInstanceResponse:
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this ListInstanceResponse.
+        r"""Sets the datastore of this ListInstanceResponse.
 
         :param datastore: The datastore of this ListInstanceResponse.
         :type datastore: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListDatastore`
@@ -458,7 +458,7 @@ class ListInstanceResponse:
 
     @property
     def created(self):
-        """Gets the created of this ListInstanceResponse.
+        r"""Gets the created of this ListInstanceResponse.
 
         创建时间，格式为“yyyy-mm-dd hh:mm:ss timezone”。  其中timezone是指时区。  说明：创建时该值为实例下发创建的时间，创建完成后，该值为创建完成时间。
 
@@ -469,7 +469,7 @@ class ListInstanceResponse:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this ListInstanceResponse.
+        r"""Sets the created of this ListInstanceResponse.
 
         创建时间，格式为“yyyy-mm-dd hh:mm:ss timezone”。  其中timezone是指时区。  说明：创建时该值为实例下发创建的时间，创建完成后，该值为创建完成时间。
 
@@ -480,7 +480,7 @@ class ListInstanceResponse:
 
     @property
     def updated(self):
-        """Gets the updated of this ListInstanceResponse.
+        r"""Gets the updated of this ListInstanceResponse.
 
         更新时间，格式与“created”字段对应格式完全相同。  说明：创建时返回值为空，数据库实例创建成功后该值不为空。
 
@@ -491,7 +491,7 @@ class ListInstanceResponse:
 
     @updated.setter
     def updated(self, updated):
-        """Sets the updated of this ListInstanceResponse.
+        r"""Sets the updated of this ListInstanceResponse.
 
         更新时间，格式与“created”字段对应格式完全相同。  说明：创建时返回值为空，数据库实例创建成功后该值不为空。
 
@@ -502,7 +502,7 @@ class ListInstanceResponse:
 
     @property
     def db_user_name(self):
-        """Gets the db_user_name of this ListInstanceResponse.
+        r"""Gets the db_user_name of this ListInstanceResponse.
 
         默认用户名。
 
@@ -513,7 +513,7 @@ class ListInstanceResponse:
 
     @db_user_name.setter
     def db_user_name(self, db_user_name):
-        """Sets the db_user_name of this ListInstanceResponse.
+        r"""Sets the db_user_name of this ListInstanceResponse.
 
         默认用户名。
 
@@ -524,7 +524,7 @@ class ListInstanceResponse:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this ListInstanceResponse.
+        r"""Gets the vpc_id of this ListInstanceResponse.
 
         虚拟私有云ID。
 
@@ -535,7 +535,7 @@ class ListInstanceResponse:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this ListInstanceResponse.
+        r"""Sets the vpc_id of this ListInstanceResponse.
 
         虚拟私有云ID。
 
@@ -546,7 +546,7 @@ class ListInstanceResponse:
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ListInstanceResponse.
+        r"""Gets the subnet_id of this ListInstanceResponse.
 
         子网的网络ID信息。
 
@@ -557,7 +557,7 @@ class ListInstanceResponse:
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ListInstanceResponse.
+        r"""Sets the subnet_id of this ListInstanceResponse.
 
         子网的网络ID信息。
 
@@ -568,7 +568,7 @@ class ListInstanceResponse:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this ListInstanceResponse.
+        r"""Gets the security_group_id of this ListInstanceResponse.
 
         安全组ID。
 
@@ -579,7 +579,7 @@ class ListInstanceResponse:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this ListInstanceResponse.
+        r"""Sets the security_group_id of this ListInstanceResponse.
 
         安全组ID。
 
@@ -590,7 +590,7 @@ class ListInstanceResponse:
 
     @property
     def flavor_ref(self):
-        """Gets the flavor_ref of this ListInstanceResponse.
+        r"""Gets the flavor_ref of this ListInstanceResponse.
 
         规格码。参考[表1](https://support.huaweicloud.com/api-opengauss/opengauss_api_0037.html#opengauss_api_0037__ted9b9d433c8a4c52884e199e17f94479)中GaussDB 的“规格编码”列内容获取。
 
@@ -601,7 +601,7 @@ class ListInstanceResponse:
 
     @flavor_ref.setter
     def flavor_ref(self, flavor_ref):
-        """Sets the flavor_ref of this ListInstanceResponse.
+        r"""Sets the flavor_ref of this ListInstanceResponse.
 
         规格码。参考[表1](https://support.huaweicloud.com/api-opengauss/opengauss_api_0037.html#opengauss_api_0037__ted9b9d433c8a4c52884e199e17f94479)中GaussDB 的“规格编码”列内容获取。
 
@@ -612,7 +612,7 @@ class ListInstanceResponse:
 
     @property
     def flavor_info(self):
-        """Gets the flavor_info of this ListInstanceResponse.
+        r"""Gets the flavor_info of this ListInstanceResponse.
 
         :return: The flavor_info of this ListInstanceResponse.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListFlavorInfo`
@@ -621,7 +621,7 @@ class ListInstanceResponse:
 
     @flavor_info.setter
     def flavor_info(self, flavor_info):
-        """Sets the flavor_info of this ListInstanceResponse.
+        r"""Sets the flavor_info of this ListInstanceResponse.
 
         :param flavor_info: The flavor_info of this ListInstanceResponse.
         :type flavor_info: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListFlavorInfo`
@@ -630,7 +630,7 @@ class ListInstanceResponse:
 
     @property
     def volume(self):
-        """Gets the volume of this ListInstanceResponse.
+        r"""Gets the volume of this ListInstanceResponse.
 
         :return: The volume of this ListInstanceResponse.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListVolume`
@@ -639,7 +639,7 @@ class ListInstanceResponse:
 
     @volume.setter
     def volume(self, volume):
-        """Sets the volume of this ListInstanceResponse.
+        r"""Sets the volume of this ListInstanceResponse.
 
         :param volume: The volume of this ListInstanceResponse.
         :type volume: :class:`huaweicloudsdkgaussdbforopengauss.v3.ListVolume`
@@ -648,7 +648,7 @@ class ListInstanceResponse:
 
     @property
     def switch_strategy(self):
-        """Gets the switch_strategy of this ListInstanceResponse.
+        r"""Gets the switch_strategy of this ListInstanceResponse.
 
         数据库切换策略。取值为“reliability”或“availability”，分别对应于可靠性优先和可用性优先。 若创建时没有选择切换策略，则不予显示。
 
@@ -659,7 +659,7 @@ class ListInstanceResponse:
 
     @switch_strategy.setter
     def switch_strategy(self, switch_strategy):
-        """Sets the switch_strategy of this ListInstanceResponse.
+        r"""Sets the switch_strategy of this ListInstanceResponse.
 
         数据库切换策略。取值为“reliability”或“availability”，分别对应于可靠性优先和可用性优先。 若创建时没有选择切换策略，则不予显示。
 
@@ -670,7 +670,7 @@ class ListInstanceResponse:
 
     @property
     def backup_strategy(self):
-        """Gets the backup_strategy of this ListInstanceResponse.
+        r"""Gets the backup_strategy of this ListInstanceResponse.
 
         :return: The backup_strategy of this ListInstanceResponse.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussBackupStrategyForListResponse`
@@ -679,7 +679,7 @@ class ListInstanceResponse:
 
     @backup_strategy.setter
     def backup_strategy(self, backup_strategy):
-        """Sets the backup_strategy of this ListInstanceResponse.
+        r"""Sets the backup_strategy of this ListInstanceResponse.
 
         :param backup_strategy: The backup_strategy of this ListInstanceResponse.
         :type backup_strategy: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussBackupStrategyForListResponse`
@@ -688,7 +688,7 @@ class ListInstanceResponse:
 
     @property
     def maintenance_window(self):
-        """Gets the maintenance_window of this ListInstanceResponse.
+        r"""Gets the maintenance_window of this ListInstanceResponse.
 
         可维护时间窗，为UTC时间。
 
@@ -699,7 +699,7 @@ class ListInstanceResponse:
 
     @maintenance_window.setter
     def maintenance_window(self, maintenance_window):
-        """Sets the maintenance_window of this ListInstanceResponse.
+        r"""Sets the maintenance_window of this ListInstanceResponse.
 
         可维护时间窗，为UTC时间。
 
@@ -710,7 +710,7 @@ class ListInstanceResponse:
 
     @property
     def nodes(self):
-        """Gets the nodes of this ListInstanceResponse.
+        r"""Gets the nodes of this ListInstanceResponse.
 
         实例节点信息。
 
@@ -721,7 +721,7 @@ class ListInstanceResponse:
 
     @nodes.setter
     def nodes(self, nodes):
-        """Sets the nodes of this ListInstanceResponse.
+        r"""Sets the nodes of this ListInstanceResponse.
 
         实例节点信息。
 
@@ -732,7 +732,7 @@ class ListInstanceResponse:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListInstanceResponse.
+        r"""Gets the enterprise_project_id of this ListInstanceResponse.
 
         企业项目标签ID。非企业项目账号的实例，企业项目默认0。
 
@@ -743,7 +743,7 @@ class ListInstanceResponse:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListInstanceResponse.
+        r"""Sets the enterprise_project_id of this ListInstanceResponse.
 
         企业项目标签ID。非企业项目账号的实例，企业项目默认0。
 
@@ -754,7 +754,7 @@ class ListInstanceResponse:
 
     @property
     def instance_mode(self):
-        """Gets the instance_mode of this ListInstanceResponse.
+        r"""Gets the instance_mode of this ListInstanceResponse.
 
         basic为基础版 ，enterprise为企业版。
 
@@ -765,7 +765,7 @@ class ListInstanceResponse:
 
     @instance_mode.setter
     def instance_mode(self, instance_mode):
-        """Sets the instance_mode of this ListInstanceResponse.
+        r"""Sets the instance_mode of this ListInstanceResponse.
 
         basic为基础版 ，enterprise为企业版。
 
@@ -776,7 +776,7 @@ class ListInstanceResponse:
 
     @property
     def disk_encryption_id(self):
-        """Gets the disk_encryption_id of this ListInstanceResponse.
+        r"""Gets the disk_encryption_id of this ListInstanceResponse.
 
         磁盘加密密钥ID。只有创建磁盘加密实例才会显示该参数。
 
@@ -787,7 +787,7 @@ class ListInstanceResponse:
 
     @disk_encryption_id.setter
     def disk_encryption_id(self, disk_encryption_id):
-        """Sets the disk_encryption_id of this ListInstanceResponse.
+        r"""Sets the disk_encryption_id of this ListInstanceResponse.
 
         磁盘加密密钥ID。只有创建磁盘加密实例才会显示该参数。
 
@@ -798,7 +798,7 @@ class ListInstanceResponse:
 
     @property
     def charge_info(self):
-        """Gets the charge_info of this ListInstanceResponse.
+        r"""Gets the charge_info of this ListInstanceResponse.
 
         :return: The charge_info of this ListInstanceResponse.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussChargeInfoListResponse`
@@ -807,7 +807,7 @@ class ListInstanceResponse:
 
     @charge_info.setter
     def charge_info(self, charge_info):
-        """Sets the charge_info of this ListInstanceResponse.
+        r"""Sets the charge_info of this ListInstanceResponse.
 
         :param charge_info: The charge_info of this ListInstanceResponse.
         :type charge_info: :class:`huaweicloudsdkgaussdbforopengauss.v3.OpenGaussChargeInfoListResponse`
@@ -816,7 +816,7 @@ class ListInstanceResponse:
 
     @property
     def time_zone(self):
-        """Gets the time_zone of this ListInstanceResponse.
+        r"""Gets the time_zone of this ListInstanceResponse.
 
         时区。
 
@@ -827,7 +827,7 @@ class ListInstanceResponse:
 
     @time_zone.setter
     def time_zone(self, time_zone):
-        """Sets the time_zone of this ListInstanceResponse.
+        r"""Sets the time_zone of this ListInstanceResponse.
 
         时区。
 
@@ -838,7 +838,7 @@ class ListInstanceResponse:
 
     @property
     def tags(self):
-        """Gets the tags of this ListInstanceResponse.
+        r"""Gets the tags of this ListInstanceResponse.
 
         标签列表，没有标签不返回该参数。
 
@@ -849,7 +849,7 @@ class ListInstanceResponse:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListInstanceResponse.
+        r"""Sets the tags of this ListInstanceResponse.
 
         标签列表，没有标签不返回该参数。
 
@@ -860,7 +860,7 @@ class ListInstanceResponse:
 
     @property
     def backup_used_space(self):
-        """Gets the backup_used_space of this ListInstanceResponse.
+        r"""Gets the backup_used_space of this ListInstanceResponse.
 
         备份空间使用量，单位KB。
 
@@ -871,7 +871,7 @@ class ListInstanceResponse:
 
     @backup_used_space.setter
     def backup_used_space(self, backup_used_space):
-        """Sets the backup_used_space of this ListInstanceResponse.
+        r"""Sets the backup_used_space of this ListInstanceResponse.
 
         备份空间使用量，单位KB。
 

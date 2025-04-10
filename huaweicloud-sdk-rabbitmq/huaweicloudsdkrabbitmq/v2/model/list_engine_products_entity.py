@@ -41,7 +41,7 @@ class ListEngineProductsEntity:
     }
 
     def __init__(self, type=None, product_id=None, ecs_flavor_id=None, billing_code=None, arch_types=None, charging_mode=None, ios=None, support_features=None, properties=None):
-        """ListEngineProductsEntity
+        r"""ListEngineProductsEntity
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class ListEngineProductsEntity:
 
     @property
     def type(self):
-        """Gets the type of this ListEngineProductsEntity.
+        r"""Gets the type of this ListEngineProductsEntity.
 
         产品类型。当前产品类型有单机和集群。
 
@@ -110,7 +110,7 @@ class ListEngineProductsEntity:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListEngineProductsEntity.
+        r"""Sets the type of this ListEngineProductsEntity.
 
         产品类型。当前产品类型有单机和集群。
 
@@ -121,7 +121,7 @@ class ListEngineProductsEntity:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ListEngineProductsEntity.
+        r"""Gets the product_id of this ListEngineProductsEntity.
 
         产品ID。
 
@@ -132,7 +132,7 @@ class ListEngineProductsEntity:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ListEngineProductsEntity.
+        r"""Sets the product_id of this ListEngineProductsEntity.
 
         产品ID。
 
@@ -143,7 +143,7 @@ class ListEngineProductsEntity:
 
     @property
     def ecs_flavor_id(self):
-        """Gets the ecs_flavor_id of this ListEngineProductsEntity.
+        r"""Gets the ecs_flavor_id of this ListEngineProductsEntity.
 
         底层资源类型。
 
@@ -154,7 +154,7 @@ class ListEngineProductsEntity:
 
     @ecs_flavor_id.setter
     def ecs_flavor_id(self, ecs_flavor_id):
-        """Sets the ecs_flavor_id of this ListEngineProductsEntity.
+        r"""Sets the ecs_flavor_id of this ListEngineProductsEntity.
 
         底层资源类型。
 
@@ -165,7 +165,7 @@ class ListEngineProductsEntity:
 
     @property
     def billing_code(self):
-        """Gets the billing_code of this ListEngineProductsEntity.
+        r"""Gets the billing_code of this ListEngineProductsEntity.
 
         账单计费类型。
 
@@ -176,7 +176,7 @@ class ListEngineProductsEntity:
 
     @billing_code.setter
     def billing_code(self, billing_code):
-        """Sets the billing_code of this ListEngineProductsEntity.
+        r"""Sets the billing_code of this ListEngineProductsEntity.
 
         账单计费类型。
 
@@ -187,7 +187,7 @@ class ListEngineProductsEntity:
 
     @property
     def arch_types(self):
-        """Gets the arch_types of this ListEngineProductsEntity.
+        r"""Gets the arch_types of this ListEngineProductsEntity.
 
         CPU架构。
 
@@ -198,7 +198,7 @@ class ListEngineProductsEntity:
 
     @arch_types.setter
     def arch_types(self, arch_types):
-        """Sets the arch_types of this ListEngineProductsEntity.
+        r"""Sets the arch_types of this ListEngineProductsEntity.
 
         CPU架构。
 
@@ -209,7 +209,7 @@ class ListEngineProductsEntity:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this ListEngineProductsEntity.
+        r"""Gets the charging_mode of this ListEngineProductsEntity.
 
         计费模式。   - monthly：包年/包月类型。   - hourly：按需类型。
 
@@ -220,7 +220,7 @@ class ListEngineProductsEntity:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this ListEngineProductsEntity.
+        r"""Sets the charging_mode of this ListEngineProductsEntity.
 
         计费模式。   - monthly：包年/包月类型。   - hourly：按需类型。
 
@@ -231,7 +231,7 @@ class ListEngineProductsEntity:
 
     @property
     def ios(self):
-        """Gets the ios of this ListEngineProductsEntity.
+        r"""Gets the ios of this ListEngineProductsEntity.
 
         支持的磁盘IO类型列表。
 
@@ -242,7 +242,7 @@ class ListEngineProductsEntity:
 
     @ios.setter
     def ios(self, ios):
-        """Sets the ios of this ListEngineProductsEntity.
+        r"""Sets the ios of this ListEngineProductsEntity.
 
         支持的磁盘IO类型列表。
 
@@ -253,7 +253,7 @@ class ListEngineProductsEntity:
 
     @property
     def support_features(self):
-        """Gets the support_features of this ListEngineProductsEntity.
+        r"""Gets the support_features of this ListEngineProductsEntity.
 
         当前规格实例支持的功能特性列表。
 
@@ -264,7 +264,7 @@ class ListEngineProductsEntity:
 
     @support_features.setter
     def support_features(self, support_features):
-        """Sets the support_features of this ListEngineProductsEntity.
+        r"""Sets the support_features of this ListEngineProductsEntity.
 
         当前规格实例支持的功能特性列表。
 
@@ -275,7 +275,7 @@ class ListEngineProductsEntity:
 
     @property
     def properties(self):
-        """Gets the properties of this ListEngineProductsEntity.
+        r"""Gets the properties of this ListEngineProductsEntity.
 
         :return: The properties of this ListEngineProductsEntity.
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ListEnginePropertiesEntity`
@@ -284,7 +284,7 @@ class ListEngineProductsEntity:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this ListEngineProductsEntity.
+        r"""Sets the properties of this ListEngineProductsEntity.
 
         :param properties: The properties of this ListEngineProductsEntity.
         :type properties: :class:`huaweicloudsdkrabbitmq.v2.ListEnginePropertiesEntity`

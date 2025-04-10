@@ -26,7 +26,7 @@ class ShowDbUserResponse(SdkResponse):
     }
 
     def __init__(self, db_user=None):
-        """ShowDbUserResponse
+        r"""ShowDbUserResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowDbUserResponse(SdkResponse):
 
     @property
     def db_user(self):
-        """Gets the db_user of this ShowDbUserResponse.
+        r"""Gets the db_user of this ShowDbUserResponse.
 
         :return: The db_user of this ShowDbUserResponse.
         :rtype: :class:`huaweicloudsdkdas.v3.DbUser`
@@ -53,7 +53,7 @@ class ShowDbUserResponse(SdkResponse):
 
     @db_user.setter
     def db_user(self, db_user):
-        """Sets the db_user of this ShowDbUserResponse.
+        r"""Sets the db_user of this ShowDbUserResponse.
 
         :param db_user: The db_user of this ShowDbUserResponse.
         :type db_user: :class:`huaweicloudsdkdas.v3.DbUser`

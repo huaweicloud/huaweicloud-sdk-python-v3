@@ -33,7 +33,7 @@ class HotKeysInfoResponseBody:
     }
 
     def __init__(self, name=None, type=None, command=None, qps=None, db_id=None):
-        """HotKeysInfoResponseBody
+        r"""HotKeysInfoResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class HotKeysInfoResponseBody:
 
     @property
     def name(self):
-        """Gets the name of this HotKeysInfoResponseBody.
+        r"""Gets the name of this HotKeysInfoResponseBody.
 
         热Key名。
 
@@ -82,7 +82,7 @@ class HotKeysInfoResponseBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this HotKeysInfoResponseBody.
+        r"""Sets the name of this HotKeysInfoResponseBody.
 
         热Key名。
 
@@ -93,7 +93,7 @@ class HotKeysInfoResponseBody:
 
     @property
     def type(self):
-        """Gets the type of this HotKeysInfoResponseBody.
+        r"""Gets the type of this HotKeysInfoResponseBody.
 
         热Key类型。
 
@@ -104,7 +104,7 @@ class HotKeysInfoResponseBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this HotKeysInfoResponseBody.
+        r"""Sets the type of this HotKeysInfoResponseBody.
 
         热Key类型。
 
@@ -115,7 +115,7 @@ class HotKeysInfoResponseBody:
 
     @property
     def command(self):
-        """Gets the command of this HotKeysInfoResponseBody.
+        r"""Gets the command of this HotKeysInfoResponseBody.
 
         热Key命令。
 
@@ -126,7 +126,7 @@ class HotKeysInfoResponseBody:
 
     @command.setter
     def command(self, command):
-        """Sets the command of this HotKeysInfoResponseBody.
+        r"""Sets the command of this HotKeysInfoResponseBody.
 
         热Key命令。
 
@@ -137,7 +137,7 @@ class HotKeysInfoResponseBody:
 
     @property
     def qps(self):
-        """Gets the qps of this HotKeysInfoResponseBody.
+        r"""Gets the qps of this HotKeysInfoResponseBody.
 
         热Key QPS。
 
@@ -148,7 +148,7 @@ class HotKeysInfoResponseBody:
 
     @qps.setter
     def qps(self, qps):
-        """Sets the qps of this HotKeysInfoResponseBody.
+        r"""Sets the qps of this HotKeysInfoResponseBody.
 
         热Key QPS。
 
@@ -159,7 +159,7 @@ class HotKeysInfoResponseBody:
 
     @property
     def db_id(self):
-        """Gets the db_id of this HotKeysInfoResponseBody.
+        r"""Gets the db_id of this HotKeysInfoResponseBody.
 
         热key所在的DB。
 
@@ -170,7 +170,7 @@ class HotKeysInfoResponseBody:
 
     @db_id.setter
     def db_id(self, db_id):
-        """Sets the db_id of this HotKeysInfoResponseBody.
+        r"""Sets the db_id of this HotKeysInfoResponseBody.
 
         热key所在的DB。
 

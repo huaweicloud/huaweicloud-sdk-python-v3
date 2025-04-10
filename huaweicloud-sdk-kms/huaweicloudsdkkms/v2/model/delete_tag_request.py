@@ -27,7 +27,7 @@ class DeleteTagRequest:
     }
 
     def __init__(self, key_id=None, key=None):
-        """DeleteTagRequest
+        r"""DeleteTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteTagRequest:
 
     @property
     def key_id(self):
-        """Gets the key_id of this DeleteTagRequest.
+        r"""Gets the key_id of this DeleteTagRequest.
 
         密钥ID
 
@@ -59,7 +59,7 @@ class DeleteTagRequest:
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this DeleteTagRequest.
+        r"""Sets the key_id of this DeleteTagRequest.
 
         密钥ID
 
@@ -70,7 +70,7 @@ class DeleteTagRequest:
 
     @property
     def key(self):
-        """Gets the key of this DeleteTagRequest.
+        r"""Gets the key of this DeleteTagRequest.
 
         标签键的值
 
@@ -81,7 +81,7 @@ class DeleteTagRequest:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this DeleteTagRequest.
+        r"""Sets the key of this DeleteTagRequest.
 
         标签键的值
 

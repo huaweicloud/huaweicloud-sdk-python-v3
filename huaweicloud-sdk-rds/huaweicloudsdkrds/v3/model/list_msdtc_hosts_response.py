@@ -28,7 +28,7 @@ class ListMsdtcHostsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, hosts=None):
-        """ListMsdtcHostsResponse
+        r"""ListMsdtcHostsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListMsdtcHostsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListMsdtcHostsResponse.
+        r"""Gets the total_count of this ListMsdtcHostsResponse.
 
         host总数
 
@@ -62,7 +62,7 @@ class ListMsdtcHostsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListMsdtcHostsResponse.
+        r"""Sets the total_count of this ListMsdtcHostsResponse.
 
         host总数
 
@@ -73,7 +73,7 @@ class ListMsdtcHostsResponse(SdkResponse):
 
     @property
     def hosts(self):
-        """Gets the hosts of this ListMsdtcHostsResponse.
+        r"""Gets the hosts of this ListMsdtcHostsResponse.
 
         host列表
 
@@ -84,7 +84,7 @@ class ListMsdtcHostsResponse(SdkResponse):
 
     @hosts.setter
     def hosts(self, hosts):
-        """Sets the hosts of this ListMsdtcHostsResponse.
+        r"""Sets the hosts of this ListMsdtcHostsResponse.
 
         host列表
 

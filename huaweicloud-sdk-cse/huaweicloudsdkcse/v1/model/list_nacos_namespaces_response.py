@@ -26,7 +26,7 @@ class ListNacosNamespacesResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListNacosNamespacesResponse
+        r"""ListNacosNamespacesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListNacosNamespacesResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListNacosNamespacesResponse.
+        r"""Gets the body of this ListNacosNamespacesResponse.
 
         :return: The body of this ListNacosNamespacesResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class ListNacosNamespacesResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListNacosNamespacesResponse.
+        r"""Sets the body of this ListNacosNamespacesResponse.
 
         :param body: The body of this ListNacosNamespacesResponse.
         :type body: str

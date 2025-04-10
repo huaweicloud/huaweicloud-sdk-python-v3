@@ -41,7 +41,7 @@ class OfflineTaskInfo:
     }
 
     def __init__(self, id=None, name=None, status=None, engine_type=None, error_log=None, description=None, create_time=None, finish_time=None, enterprise_project_id=None):
-        """OfflineTaskInfo
+        r"""OfflineTaskInfo
 
         The model defined in huaweicloud sdk
 
@@ -94,7 +94,7 @@ class OfflineTaskInfo:
 
     @property
     def id(self):
-        """Gets the id of this OfflineTaskInfo.
+        r"""Gets the id of this OfflineTaskInfo.
 
         任务ID。
 
@@ -105,7 +105,7 @@ class OfflineTaskInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this OfflineTaskInfo.
+        r"""Sets the id of this OfflineTaskInfo.
 
         任务ID。
 
@@ -116,7 +116,7 @@ class OfflineTaskInfo:
 
     @property
     def name(self):
-        """Gets the name of this OfflineTaskInfo.
+        r"""Gets the name of this OfflineTaskInfo.
 
         任务名称。
 
@@ -127,7 +127,7 @@ class OfflineTaskInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this OfflineTaskInfo.
+        r"""Sets the name of this OfflineTaskInfo.
 
         任务名称。
 
@@ -138,7 +138,7 @@ class OfflineTaskInfo:
 
     @property
     def status(self):
-        """Gets the status of this OfflineTaskInfo.
+        r"""Gets the status of this OfflineTaskInfo.
 
         任务状态。 - TRANSFERRING：恢复中 - SUCCESS：成功 - FAILED：失败 - PRECHECK FAILED：预检查失败
 
@@ -149,7 +149,7 @@ class OfflineTaskInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this OfflineTaskInfo.
+        r"""Sets the status of this OfflineTaskInfo.
 
         任务状态。 - TRANSFERRING：恢复中 - SUCCESS：成功 - FAILED：失败 - PRECHECK FAILED：预检查失败
 
@@ -160,7 +160,7 @@ class OfflineTaskInfo:
 
     @property
     def engine_type(self):
-        """Gets the engine_type of this OfflineTaskInfo.
+        r"""Gets the engine_type of this OfflineTaskInfo.
 
         数据库引擎。 - sqlserver：RDS for SQL Server引擎
 
@@ -171,7 +171,7 @@ class OfflineTaskInfo:
 
     @engine_type.setter
     def engine_type(self, engine_type):
-        """Sets the engine_type of this OfflineTaskInfo.
+        r"""Sets the engine_type of this OfflineTaskInfo.
 
         数据库引擎。 - sqlserver：RDS for SQL Server引擎
 
@@ -182,7 +182,7 @@ class OfflineTaskInfo:
 
     @property
     def error_log(self):
-        """Gets the error_log of this OfflineTaskInfo.
+        r"""Gets the error_log of this OfflineTaskInfo.
 
         错误日志。
 
@@ -193,7 +193,7 @@ class OfflineTaskInfo:
 
     @error_log.setter
     def error_log(self, error_log):
-        """Sets the error_log of this OfflineTaskInfo.
+        r"""Sets the error_log of this OfflineTaskInfo.
 
         错误日志。
 
@@ -204,7 +204,7 @@ class OfflineTaskInfo:
 
     @property
     def description(self):
-        """Gets the description of this OfflineTaskInfo.
+        r"""Gets the description of this OfflineTaskInfo.
 
         描述。
 
@@ -215,7 +215,7 @@ class OfflineTaskInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this OfflineTaskInfo.
+        r"""Sets the description of this OfflineTaskInfo.
 
         描述。
 
@@ -226,7 +226,7 @@ class OfflineTaskInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this OfflineTaskInfo.
+        r"""Gets the create_time of this OfflineTaskInfo.
 
         任务创建时间。
 
@@ -237,7 +237,7 @@ class OfflineTaskInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this OfflineTaskInfo.
+        r"""Sets the create_time of this OfflineTaskInfo.
 
         任务创建时间。
 
@@ -248,7 +248,7 @@ class OfflineTaskInfo:
 
     @property
     def finish_time(self):
-        """Gets the finish_time of this OfflineTaskInfo.
+        r"""Gets the finish_time of this OfflineTaskInfo.
 
         任务完成时间。
 
@@ -259,7 +259,7 @@ class OfflineTaskInfo:
 
     @finish_time.setter
     def finish_time(self, finish_time):
-        """Sets the finish_time of this OfflineTaskInfo.
+        r"""Sets the finish_time of this OfflineTaskInfo.
 
         任务完成时间。
 
@@ -270,7 +270,7 @@ class OfflineTaskInfo:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this OfflineTaskInfo.
+        r"""Gets the enterprise_project_id of this OfflineTaskInfo.
 
         企业项目。
 
@@ -281,7 +281,7 @@ class OfflineTaskInfo:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this OfflineTaskInfo.
+        r"""Sets the enterprise_project_id of this OfflineTaskInfo.
 
         企业项目。
 

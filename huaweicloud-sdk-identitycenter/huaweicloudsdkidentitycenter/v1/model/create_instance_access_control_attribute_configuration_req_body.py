@@ -25,7 +25,7 @@ class CreateInstanceAccessControlAttributeConfigurationReqBody:
     }
 
     def __init__(self, instance_access_control_attribute_configuration=None):
-        """CreateInstanceAccessControlAttributeConfigurationReqBody
+        r"""CreateInstanceAccessControlAttributeConfigurationReqBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateInstanceAccessControlAttributeConfigurationReqBody:
 
     @property
     def instance_access_control_attribute_configuration(self):
-        """Gets the instance_access_control_attribute_configuration of this CreateInstanceAccessControlAttributeConfigurationReqBody.
+        r"""Gets the instance_access_control_attribute_configuration of this CreateInstanceAccessControlAttributeConfigurationReqBody.
 
         :return: The instance_access_control_attribute_configuration of this CreateInstanceAccessControlAttributeConfigurationReqBody.
         :rtype: :class:`huaweicloudsdkidentitycenter.v1.InstanceAccessControlAttributeConfigurationDto`
@@ -51,7 +51,7 @@ class CreateInstanceAccessControlAttributeConfigurationReqBody:
 
     @instance_access_control_attribute_configuration.setter
     def instance_access_control_attribute_configuration(self, instance_access_control_attribute_configuration):
-        """Sets the instance_access_control_attribute_configuration of this CreateInstanceAccessControlAttributeConfigurationReqBody.
+        r"""Sets the instance_access_control_attribute_configuration of this CreateInstanceAccessControlAttributeConfigurationReqBody.
 
         :param instance_access_control_attribute_configuration: The instance_access_control_attribute_configuration of this CreateInstanceAccessControlAttributeConfigurationReqBody.
         :type instance_access_control_attribute_configuration: :class:`huaweicloudsdkidentitycenter.v1.InstanceAccessControlAttributeConfigurationDto`

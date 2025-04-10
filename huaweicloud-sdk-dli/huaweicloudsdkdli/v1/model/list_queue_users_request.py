@@ -25,7 +25,7 @@ class ListQueueUsersRequest:
     }
 
     def __init__(self, queue_name=None):
-        """ListQueueUsersRequest
+        r"""ListQueueUsersRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListQueueUsersRequest:
 
     @property
     def queue_name(self):
-        """Gets the queue_name of this ListQueueUsersRequest.
+        r"""Gets the queue_name of this ListQueueUsersRequest.
 
         队列名称。
 
@@ -53,7 +53,7 @@ class ListQueueUsersRequest:
 
     @queue_name.setter
     def queue_name(self, queue_name):
-        """Sets the queue_name of this ListQueueUsersRequest.
+        r"""Sets the queue_name of this ListQueueUsersRequest.
 
         队列名称。
 

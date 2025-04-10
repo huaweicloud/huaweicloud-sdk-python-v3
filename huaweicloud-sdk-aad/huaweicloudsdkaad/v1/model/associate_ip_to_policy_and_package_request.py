@@ -27,7 +27,7 @@ class AssociateIpToPolicyAndPackageRequest:
     }
 
     def __init__(self, policy_id=None, body=None):
-        """AssociateIpToPolicyAndPackageRequest
+        r"""AssociateIpToPolicyAndPackageRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AssociateIpToPolicyAndPackageRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this AssociateIpToPolicyAndPackageRequest.
+        r"""Gets the policy_id of this AssociateIpToPolicyAndPackageRequest.
 
         策略id
 
@@ -60,7 +60,7 @@ class AssociateIpToPolicyAndPackageRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this AssociateIpToPolicyAndPackageRequest.
+        r"""Sets the policy_id of this AssociateIpToPolicyAndPackageRequest.
 
         策略id
 
@@ -71,7 +71,7 @@ class AssociateIpToPolicyAndPackageRequest:
 
     @property
     def body(self):
-        """Gets the body of this AssociateIpToPolicyAndPackageRequest.
+        r"""Gets the body of this AssociateIpToPolicyAndPackageRequest.
 
         :return: The body of this AssociateIpToPolicyAndPackageRequest.
         :rtype: :class:`huaweicloudsdkaad.v1.IpBindingV3Body`
@@ -80,7 +80,7 @@ class AssociateIpToPolicyAndPackageRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AssociateIpToPolicyAndPackageRequest.
+        r"""Sets the body of this AssociateIpToPolicyAndPackageRequest.
 
         :param body: The body of this AssociateIpToPolicyAndPackageRequest.
         :type body: :class:`huaweicloudsdkaad.v1.IpBindingV3Body`

@@ -40,7 +40,7 @@ class CreateDeploymentJobsResponse(SdkResponse):
     }
 
     def __init__(self, id=None, job_id=None, status=None, address=None, deploy_parameters=None, time=None, creator_name=None, created_time=None):
-        """CreateDeploymentJobsResponse
+        r"""CreateDeploymentJobsResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class CreateDeploymentJobsResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateDeploymentJobsResponse.
+        r"""Gets the id of this CreateDeploymentJobsResponse.
 
         部署任务编号
 
@@ -104,7 +104,7 @@ class CreateDeploymentJobsResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateDeploymentJobsResponse.
+        r"""Sets the id of this CreateDeploymentJobsResponse.
 
         部署任务编号
 
@@ -115,7 +115,7 @@ class CreateDeploymentJobsResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this CreateDeploymentJobsResponse.
+        r"""Gets the job_id of this CreateDeploymentJobsResponse.
 
         任务ID
 
@@ -126,7 +126,7 @@ class CreateDeploymentJobsResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this CreateDeploymentJobsResponse.
+        r"""Sets the job_id of this CreateDeploymentJobsResponse.
 
         任务ID
 
@@ -137,7 +137,7 @@ class CreateDeploymentJobsResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateDeploymentJobsResponse.
+        r"""Gets the status of this CreateDeploymentJobsResponse.
 
         部署状态,-2：环境准备未就绪 -1 资源准备就绪 0 部署中 1：成功 2：失败
 
@@ -148,7 +148,7 @@ class CreateDeploymentJobsResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateDeploymentJobsResponse.
+        r"""Sets the status of this CreateDeploymentJobsResponse.
 
         部署状态,-2：环境准备未就绪 -1 资源准备就绪 0 部署中 1：成功 2：失败
 
@@ -159,7 +159,7 @@ class CreateDeploymentJobsResponse(SdkResponse):
 
     @property
     def address(self):
-        """Gets the address of this CreateDeploymentJobsResponse.
+        r"""Gets the address of this CreateDeploymentJobsResponse.
 
         访问地址
 
@@ -170,7 +170,7 @@ class CreateDeploymentJobsResponse(SdkResponse):
 
     @address.setter
     def address(self, address):
-        """Sets the address of this CreateDeploymentJobsResponse.
+        r"""Sets the address of this CreateDeploymentJobsResponse.
 
         访问地址
 
@@ -181,7 +181,7 @@ class CreateDeploymentJobsResponse(SdkResponse):
 
     @property
     def deploy_parameters(self):
-        """Gets the deploy_parameters of this CreateDeploymentJobsResponse.
+        r"""Gets the deploy_parameters of this CreateDeploymentJobsResponse.
 
         部署参数
 
@@ -192,7 +192,7 @@ class CreateDeploymentJobsResponse(SdkResponse):
 
     @deploy_parameters.setter
     def deploy_parameters(self, deploy_parameters):
-        """Sets the deploy_parameters of this CreateDeploymentJobsResponse.
+        r"""Sets the deploy_parameters of this CreateDeploymentJobsResponse.
 
         部署参数
 
@@ -203,7 +203,7 @@ class CreateDeploymentJobsResponse(SdkResponse):
 
     @property
     def time(self):
-        """Gets the time of this CreateDeploymentJobsResponse.
+        r"""Gets the time of this CreateDeploymentJobsResponse.
 
         部署耗时
 
@@ -214,7 +214,7 @@ class CreateDeploymentJobsResponse(SdkResponse):
 
     @time.setter
     def time(self, time):
-        """Sets the time of this CreateDeploymentJobsResponse.
+        r"""Sets the time of this CreateDeploymentJobsResponse.
 
         部署耗时
 
@@ -225,7 +225,7 @@ class CreateDeploymentJobsResponse(SdkResponse):
 
     @property
     def creator_name(self):
-        """Gets the creator_name of this CreateDeploymentJobsResponse.
+        r"""Gets the creator_name of this CreateDeploymentJobsResponse.
 
         创建人
 
@@ -236,7 +236,7 @@ class CreateDeploymentJobsResponse(SdkResponse):
 
     @creator_name.setter
     def creator_name(self, creator_name):
-        """Sets the creator_name of this CreateDeploymentJobsResponse.
+        r"""Sets the creator_name of this CreateDeploymentJobsResponse.
 
         创建人
 
@@ -247,7 +247,7 @@ class CreateDeploymentJobsResponse(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this CreateDeploymentJobsResponse.
+        r"""Gets the created_time of this CreateDeploymentJobsResponse.
 
         创建时间
 
@@ -258,7 +258,7 @@ class CreateDeploymentJobsResponse(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this CreateDeploymentJobsResponse.
+        r"""Sets the created_time of this CreateDeploymentJobsResponse.
 
         创建时间
 

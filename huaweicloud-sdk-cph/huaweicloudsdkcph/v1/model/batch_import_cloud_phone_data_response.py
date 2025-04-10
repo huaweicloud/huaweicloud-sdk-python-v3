@@ -28,7 +28,7 @@ class BatchImportCloudPhoneDataResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, jobs=None):
-        """BatchImportCloudPhoneDataResponse
+        r"""BatchImportCloudPhoneDataResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchImportCloudPhoneDataResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this BatchImportCloudPhoneDataResponse.
+        r"""Gets the request_id of this BatchImportCloudPhoneDataResponse.
 
         请求的唯一标识ID。
 
@@ -62,7 +62,7 @@ class BatchImportCloudPhoneDataResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this BatchImportCloudPhoneDataResponse.
+        r"""Sets the request_id of this BatchImportCloudPhoneDataResponse.
 
         请求的唯一标识ID。
 
@@ -73,7 +73,7 @@ class BatchImportCloudPhoneDataResponse(SdkResponse):
 
     @property
     def jobs(self):
-        """Gets the jobs of this BatchImportCloudPhoneDataResponse.
+        r"""Gets the jobs of this BatchImportCloudPhoneDataResponse.
 
         任务信息。
 
@@ -84,7 +84,7 @@ class BatchImportCloudPhoneDataResponse(SdkResponse):
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this BatchImportCloudPhoneDataResponse.
+        r"""Sets the jobs of this BatchImportCloudPhoneDataResponse.
 
         任务信息。
 

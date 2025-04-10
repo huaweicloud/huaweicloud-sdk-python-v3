@@ -34,7 +34,7 @@ class ListAccountsRequest:
     }
 
     def __init__(self, x_security_token=None, parent_id=None, with_register_contact_info=None, limit=None, marker=None):
-        """ListAccountsRequest
+        r"""ListAccountsRequest
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListAccountsRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this ListAccountsRequest.
+        r"""Gets the x_security_token of this ListAccountsRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -83,7 +83,7 @@ class ListAccountsRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this ListAccountsRequest.
+        r"""Sets the x_security_token of this ListAccountsRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -94,7 +94,7 @@ class ListAccountsRequest:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this ListAccountsRequest.
+        r"""Gets the parent_id of this ListAccountsRequest.
 
         父节点（根或组织单元）的唯一标识符（ID）。
 
@@ -105,7 +105,7 @@ class ListAccountsRequest:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this ListAccountsRequest.
+        r"""Sets the parent_id of this ListAccountsRequest.
 
         父节点（根或组织单元）的唯一标识符（ID）。
 
@@ -116,7 +116,7 @@ class ListAccountsRequest:
 
     @property
     def with_register_contact_info(self):
-        """Gets the with_register_contact_info of this ListAccountsRequest.
+        r"""Gets the with_register_contact_info of this ListAccountsRequest.
 
         是否返回账号邮箱、手机号信息。若此参数为True，Limit最多200。
 
@@ -127,7 +127,7 @@ class ListAccountsRequest:
 
     @with_register_contact_info.setter
     def with_register_contact_info(self, with_register_contact_info):
-        """Sets the with_register_contact_info of this ListAccountsRequest.
+        r"""Sets the with_register_contact_info of this ListAccountsRequest.
 
         是否返回账号邮箱、手机号信息。若此参数为True，Limit最多200。
 
@@ -138,7 +138,7 @@ class ListAccountsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAccountsRequest.
+        r"""Gets the limit of this ListAccountsRequest.
 
         页面中最大结果数量。
 
@@ -149,7 +149,7 @@ class ListAccountsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAccountsRequest.
+        r"""Sets the limit of this ListAccountsRequest.
 
         页面中最大结果数量。
 
@@ -160,7 +160,7 @@ class ListAccountsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListAccountsRequest.
+        r"""Gets the marker of this ListAccountsRequest.
 
         分页标记。
 
@@ -171,7 +171,7 @@ class ListAccountsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListAccountsRequest.
+        r"""Sets the marker of this ListAccountsRequest.
 
         分页标记。
 

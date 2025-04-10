@@ -26,7 +26,7 @@ class DisassociateResourceShareResponse(SdkResponse):
     }
 
     def __init__(self, resource_share_associations=None):
-        """DisassociateResourceShareResponse
+        r"""DisassociateResourceShareResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DisassociateResourceShareResponse(SdkResponse):
 
     @property
     def resource_share_associations(self):
-        """Gets the resource_share_associations of this DisassociateResourceShareResponse.
+        r"""Gets the resource_share_associations of this DisassociateResourceShareResponse.
 
         :return: The resource_share_associations of this DisassociateResourceShareResponse.
         :rtype: list[:class:`huaweicloudsdkram.v1.ResourceShareAssociation`]
@@ -53,7 +53,7 @@ class DisassociateResourceShareResponse(SdkResponse):
 
     @resource_share_associations.setter
     def resource_share_associations(self, resource_share_associations):
-        """Sets the resource_share_associations of this DisassociateResourceShareResponse.
+        r"""Sets the resource_share_associations of this DisassociateResourceShareResponse.
 
         :param resource_share_associations: The resource_share_associations of this DisassociateResourceShareResponse.
         :type resource_share_associations: list[:class:`huaweicloudsdkram.v1.ResourceShareAssociation`]

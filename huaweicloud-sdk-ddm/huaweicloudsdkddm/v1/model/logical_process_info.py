@@ -39,7 +39,7 @@ class LogicalProcessInfo:
     }
 
     def __init__(self, id=None, user=None, host=None, db=None, command=None, time=None, state=None, info=None):
-        """LogicalProcessInfo
+        r"""LogicalProcessInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class LogicalProcessInfo:
 
     @property
     def id(self):
-        """Gets the id of this LogicalProcessInfo.
+        r"""Gets the id of this LogicalProcessInfo.
 
         会话id
 
@@ -103,7 +103,7 @@ class LogicalProcessInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this LogicalProcessInfo.
+        r"""Sets the id of this LogicalProcessInfo.
 
         会话id
 
@@ -114,7 +114,7 @@ class LogicalProcessInfo:
 
     @property
     def user(self):
-        """Gets the user of this LogicalProcessInfo.
+        r"""Gets the user of this LogicalProcessInfo.
 
         当前连接用户
 
@@ -125,7 +125,7 @@ class LogicalProcessInfo:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this LogicalProcessInfo.
+        r"""Sets the user of this LogicalProcessInfo.
 
         当前连接用户
 
@@ -136,7 +136,7 @@ class LogicalProcessInfo:
 
     @property
     def host(self):
-        """Gets the host of this LogicalProcessInfo.
+        r"""Gets the host of this LogicalProcessInfo.
 
         所属的 IP 和端口
 
@@ -147,7 +147,7 @@ class LogicalProcessInfo:
 
     @host.setter
     def host(self, host):
-        """Sets the host of this LogicalProcessInfo.
+        r"""Sets the host of this LogicalProcessInfo.
 
         所属的 IP 和端口
 
@@ -158,7 +158,7 @@ class LogicalProcessInfo:
 
     @property
     def db(self):
-        """Gets the db of this LogicalProcessInfo.
+        r"""Gets the db of this LogicalProcessInfo.
 
         数据库名
 
@@ -169,7 +169,7 @@ class LogicalProcessInfo:
 
     @db.setter
     def db(self, db):
-        """Sets the db of this LogicalProcessInfo.
+        r"""Sets the db of this LogicalProcessInfo.
 
         数据库名
 
@@ -180,7 +180,7 @@ class LogicalProcessInfo:
 
     @property
     def command(self):
-        """Gets the command of this LogicalProcessInfo.
+        r"""Gets the command of this LogicalProcessInfo.
 
         连接状态，一般是休眠（sleep），查询（query），连接（connect）
 
@@ -191,7 +191,7 @@ class LogicalProcessInfo:
 
     @command.setter
     def command(self, command):
-        """Sets the command of this LogicalProcessInfo.
+        r"""Sets the command of this LogicalProcessInfo.
 
         连接状态，一般是休眠（sleep），查询（query），连接（connect）
 
@@ -202,7 +202,7 @@ class LogicalProcessInfo:
 
     @property
     def time(self):
-        """Gets the time of this LogicalProcessInfo.
+        r"""Gets the time of this LogicalProcessInfo.
 
         连接状态持续的时间，单位是秒（s）
 
@@ -213,7 +213,7 @@ class LogicalProcessInfo:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this LogicalProcessInfo.
+        r"""Sets the time of this LogicalProcessInfo.
 
         连接状态持续的时间，单位是秒（s）
 
@@ -224,7 +224,7 @@ class LogicalProcessInfo:
 
     @property
     def state(self):
-        """Gets the state of this LogicalProcessInfo.
+        r"""Gets the state of this LogicalProcessInfo.
 
         当前 SQL 语句的状态
 
@@ -235,7 +235,7 @@ class LogicalProcessInfo:
 
     @state.setter
     def state(self, state):
-        """Sets the state of this LogicalProcessInfo.
+        r"""Sets the state of this LogicalProcessInfo.
 
         当前 SQL 语句的状态
 
@@ -246,7 +246,7 @@ class LogicalProcessInfo:
 
     @property
     def info(self):
-        """Gets the info of this LogicalProcessInfo.
+        r"""Gets the info of this LogicalProcessInfo.
 
         当前所执行的 SQL 语句
 
@@ -257,7 +257,7 @@ class LogicalProcessInfo:
 
     @info.setter
     def info(self, info):
-        """Sets the info of this LogicalProcessInfo.
+        r"""Sets the info of this LogicalProcessInfo.
 
         当前所执行的 SQL 语句
 

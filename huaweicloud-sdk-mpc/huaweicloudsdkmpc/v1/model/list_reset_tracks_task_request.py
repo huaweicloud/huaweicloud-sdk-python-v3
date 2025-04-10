@@ -35,7 +35,7 @@ class ListResetTracksTaskRequest:
     }
 
     def __init__(self, task_id=None, status=None, start_time=None, end_time=None, page=None, size=None):
-        """ListResetTracksTaskRequest
+        r"""ListResetTracksTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListResetTracksTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ListResetTracksTaskRequest.
+        r"""Gets the task_id of this ListResetTracksTaskRequest.
 
         任务ID。一次最多10个 
 
@@ -89,7 +89,7 @@ class ListResetTracksTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ListResetTracksTaskRequest.
+        r"""Sets the task_id of this ListResetTracksTaskRequest.
 
         任务ID。一次最多10个 
 
@@ -100,7 +100,7 @@ class ListResetTracksTaskRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListResetTracksTaskRequest.
+        r"""Gets the status of this ListResetTracksTaskRequest.
 
         任务执行状态 
 
@@ -111,7 +111,7 @@ class ListResetTracksTaskRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListResetTracksTaskRequest.
+        r"""Sets the status of this ListResetTracksTaskRequest.
 
         任务执行状态 
 
@@ -122,7 +122,7 @@ class ListResetTracksTaskRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListResetTracksTaskRequest.
+        r"""Gets the start_time of this ListResetTracksTaskRequest.
 
         起始时间。格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效 
 
@@ -133,7 +133,7 @@ class ListResetTracksTaskRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListResetTracksTaskRequest.
+        r"""Sets the start_time of this ListResetTracksTaskRequest.
 
         起始时间。格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效 
 
@@ -144,7 +144,7 @@ class ListResetTracksTaskRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListResetTracksTaskRequest.
+        r"""Gets the end_time of this ListResetTracksTaskRequest.
 
         结束时间。格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效 
 
@@ -155,7 +155,7 @@ class ListResetTracksTaskRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListResetTracksTaskRequest.
+        r"""Sets the end_time of this ListResetTracksTaskRequest.
 
         结束时间。格式为yyyymmddhhmmss。必须是与时区无关的UTC时间，指定task_id时该参数无效 
 
@@ -166,7 +166,7 @@ class ListResetTracksTaskRequest:
 
     @property
     def page(self):
-        """Gets the page of this ListResetTracksTaskRequest.
+        r"""Gets the page of this ListResetTracksTaskRequest.
 
         分页编号。查询指定“task_id”时，该参数无效。  默认值：0。 
 
@@ -177,7 +177,7 @@ class ListResetTracksTaskRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListResetTracksTaskRequest.
+        r"""Sets the page of this ListResetTracksTaskRequest.
 
         分页编号。查询指定“task_id”时，该参数无效。  默认值：0。 
 
@@ -188,7 +188,7 @@ class ListResetTracksTaskRequest:
 
     @property
     def size(self):
-        """Gets the size of this ListResetTracksTaskRequest.
+        r"""Gets the size of this ListResetTracksTaskRequest.
 
         每页记录数。查询指定“task_id”时，该参数无效。  取值范围：[1,100]。  默认值：10。 
 
@@ -199,7 +199,7 @@ class ListResetTracksTaskRequest:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListResetTracksTaskRequest.
+        r"""Sets the size of this ListResetTracksTaskRequest.
 
         每页记录数。查询指定“task_id”时，该参数无效。  取值范围：[1,100]。  默认值：10。 
 

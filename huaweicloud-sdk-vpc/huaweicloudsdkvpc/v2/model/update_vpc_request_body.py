@@ -25,7 +25,7 @@ class UpdateVpcRequestBody:
     }
 
     def __init__(self, vpc=None):
-        """UpdateVpcRequestBody
+        r"""UpdateVpcRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateVpcRequestBody:
 
     @property
     def vpc(self):
-        """Gets the vpc of this UpdateVpcRequestBody.
+        r"""Gets the vpc of this UpdateVpcRequestBody.
 
         :return: The vpc of this UpdateVpcRequestBody.
         :rtype: :class:`huaweicloudsdkvpc.v2.UpdateVpcOption`
@@ -51,7 +51,7 @@ class UpdateVpcRequestBody:
 
     @vpc.setter
     def vpc(self, vpc):
-        """Sets the vpc of this UpdateVpcRequestBody.
+        r"""Sets the vpc of this UpdateVpcRequestBody.
 
         :param vpc: The vpc of this UpdateVpcRequestBody.
         :type vpc: :class:`huaweicloudsdkvpc.v2.UpdateVpcOption`

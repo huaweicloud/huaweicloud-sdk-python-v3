@@ -25,7 +25,7 @@ class CreateHostedDirectConnectRequest:
     }
 
     def __init__(self, body=None):
-        """CreateHostedDirectConnectRequest
+        r"""CreateHostedDirectConnectRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateHostedDirectConnectRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateHostedDirectConnectRequest.
+        r"""Gets the body of this CreateHostedDirectConnectRequest.
 
         :return: The body of this CreateHostedDirectConnectRequest.
         :rtype: :class:`huaweicloudsdkdc.v3.CreateHostedDirectConnectRequestBody`
@@ -52,7 +52,7 @@ class CreateHostedDirectConnectRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateHostedDirectConnectRequest.
+        r"""Sets the body of this CreateHostedDirectConnectRequest.
 
         :param body: The body of this CreateHostedDirectConnectRequest.
         :type body: :class:`huaweicloudsdkdc.v3.CreateHostedDirectConnectRequestBody`

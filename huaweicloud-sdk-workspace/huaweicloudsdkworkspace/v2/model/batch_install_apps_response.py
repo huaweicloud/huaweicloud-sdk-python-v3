@@ -24,7 +24,7 @@ class BatchInstallAppsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """BatchInstallAppsResponse
+        r"""BatchInstallAppsResponse
 
         The model defined in huaweicloud sdk
 

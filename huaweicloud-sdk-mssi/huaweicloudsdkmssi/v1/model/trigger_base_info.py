@@ -55,7 +55,7 @@ class TriggerBaseInfo:
     }
 
     def __init__(self, category=None, connector_action_html=None, connector_created_type=None, connector_id=None, connector_version=None, created_time=None, definition=None, description=None, id=None, name=None, operation_id=None, swagger=None, test_result=None, trigger_type=None, type=None, updated_time=None):
-        """TriggerBaseInfo
+        r"""TriggerBaseInfo
 
         The model defined in huaweicloud sdk
 
@@ -148,7 +148,7 @@ class TriggerBaseInfo:
 
     @property
     def category(self):
-        """Gets the category of this TriggerBaseInfo.
+        r"""Gets the category of this TriggerBaseInfo.
 
         分类
 
@@ -159,7 +159,7 @@ class TriggerBaseInfo:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this TriggerBaseInfo.
+        r"""Sets the category of this TriggerBaseInfo.
 
         分类
 
@@ -170,7 +170,7 @@ class TriggerBaseInfo:
 
     @property
     def connector_action_html(self):
-        """Gets the connector_action_html of this TriggerBaseInfo.
+        r"""Gets the connector_action_html of this TriggerBaseInfo.
 
         :return: The connector_action_html of this TriggerBaseInfo.
         :rtype: str
@@ -179,7 +179,7 @@ class TriggerBaseInfo:
 
     @connector_action_html.setter
     def connector_action_html(self, connector_action_html):
-        """Sets the connector_action_html of this TriggerBaseInfo.
+        r"""Sets the connector_action_html of this TriggerBaseInfo.
 
         :param connector_action_html: The connector_action_html of this TriggerBaseInfo.
         :type connector_action_html: str
@@ -188,7 +188,7 @@ class TriggerBaseInfo:
 
     @property
     def connector_created_type(self):
-        """Gets the connector_created_type of this TriggerBaseInfo.
+        r"""Gets the connector_created_type of this TriggerBaseInfo.
 
         :return: The connector_created_type of this TriggerBaseInfo.
         :rtype: str
@@ -197,7 +197,7 @@ class TriggerBaseInfo:
 
     @connector_created_type.setter
     def connector_created_type(self, connector_created_type):
-        """Sets the connector_created_type of this TriggerBaseInfo.
+        r"""Sets the connector_created_type of this TriggerBaseInfo.
 
         :param connector_created_type: The connector_created_type of this TriggerBaseInfo.
         :type connector_created_type: str
@@ -206,7 +206,7 @@ class TriggerBaseInfo:
 
     @property
     def connector_id(self):
-        """Gets the connector_id of this TriggerBaseInfo.
+        r"""Gets the connector_id of this TriggerBaseInfo.
 
         自定义连接器ID
 
@@ -217,7 +217,7 @@ class TriggerBaseInfo:
 
     @connector_id.setter
     def connector_id(self, connector_id):
-        """Sets the connector_id of this TriggerBaseInfo.
+        r"""Sets the connector_id of this TriggerBaseInfo.
 
         自定义连接器ID
 
@@ -228,7 +228,7 @@ class TriggerBaseInfo:
 
     @property
     def connector_version(self):
-        """Gets the connector_version of this TriggerBaseInfo.
+        r"""Gets the connector_version of this TriggerBaseInfo.
 
         连接器版本
 
@@ -239,7 +239,7 @@ class TriggerBaseInfo:
 
     @connector_version.setter
     def connector_version(self, connector_version):
-        """Sets the connector_version of this TriggerBaseInfo.
+        r"""Sets the connector_version of this TriggerBaseInfo.
 
         连接器版本
 
@@ -250,7 +250,7 @@ class TriggerBaseInfo:
 
     @property
     def created_time(self):
-        """Gets the created_time of this TriggerBaseInfo.
+        r"""Gets the created_time of this TriggerBaseInfo.
 
         创建时间
 
@@ -261,7 +261,7 @@ class TriggerBaseInfo:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this TriggerBaseInfo.
+        r"""Sets the created_time of this TriggerBaseInfo.
 
         创建时间
 
@@ -272,7 +272,7 @@ class TriggerBaseInfo:
 
     @property
     def definition(self):
-        """Gets the definition of this TriggerBaseInfo.
+        r"""Gets the definition of this TriggerBaseInfo.
 
         操作or触发器的详细定义
 
@@ -283,7 +283,7 @@ class TriggerBaseInfo:
 
     @definition.setter
     def definition(self, definition):
-        """Sets the definition of this TriggerBaseInfo.
+        r"""Sets the definition of this TriggerBaseInfo.
 
         操作or触发器的详细定义
 
@@ -294,7 +294,7 @@ class TriggerBaseInfo:
 
     @property
     def description(self):
-        """Gets the description of this TriggerBaseInfo.
+        r"""Gets the description of this TriggerBaseInfo.
 
         描述
 
@@ -305,7 +305,7 @@ class TriggerBaseInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TriggerBaseInfo.
+        r"""Sets the description of this TriggerBaseInfo.
 
         描述
 
@@ -316,7 +316,7 @@ class TriggerBaseInfo:
 
     @property
     def id(self):
-        """Gets the id of this TriggerBaseInfo.
+        r"""Gets the id of this TriggerBaseInfo.
 
         触发事件ID
 
@@ -327,7 +327,7 @@ class TriggerBaseInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TriggerBaseInfo.
+        r"""Sets the id of this TriggerBaseInfo.
 
         触发事件ID
 
@@ -338,7 +338,7 @@ class TriggerBaseInfo:
 
     @property
     def name(self):
-        """Gets the name of this TriggerBaseInfo.
+        r"""Gets the name of this TriggerBaseInfo.
 
         执行动作名称
 
@@ -349,7 +349,7 @@ class TriggerBaseInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TriggerBaseInfo.
+        r"""Sets the name of this TriggerBaseInfo.
 
         执行动作名称
 
@@ -360,7 +360,7 @@ class TriggerBaseInfo:
 
     @property
     def operation_id(self):
-        """Gets the operation_id of this TriggerBaseInfo.
+        r"""Gets the operation_id of this TriggerBaseInfo.
 
         执行动作ID
 
@@ -371,7 +371,7 @@ class TriggerBaseInfo:
 
     @operation_id.setter
     def operation_id(self, operation_id):
-        """Sets the operation_id of this TriggerBaseInfo.
+        r"""Sets the operation_id of this TriggerBaseInfo.
 
         执行动作ID
 
@@ -382,7 +382,7 @@ class TriggerBaseInfo:
 
     @property
     def swagger(self):
-        """Gets the swagger of this TriggerBaseInfo.
+        r"""Gets the swagger of this TriggerBaseInfo.
 
         swagger文档
 
@@ -393,7 +393,7 @@ class TriggerBaseInfo:
 
     @swagger.setter
     def swagger(self, swagger):
-        """Sets the swagger of this TriggerBaseInfo.
+        r"""Sets the swagger of this TriggerBaseInfo.
 
         swagger文档
 
@@ -404,7 +404,7 @@ class TriggerBaseInfo:
 
     @property
     def test_result(self):
-        """Gets the test_result of this TriggerBaseInfo.
+        r"""Gets the test_result of this TriggerBaseInfo.
 
         最近一次测试结果
 
@@ -415,7 +415,7 @@ class TriggerBaseInfo:
 
     @test_result.setter
     def test_result(self, test_result):
-        """Sets the test_result of this TriggerBaseInfo.
+        r"""Sets the test_result of this TriggerBaseInfo.
 
         最近一次测试结果
 
@@ -426,7 +426,7 @@ class TriggerBaseInfo:
 
     @property
     def trigger_type(self):
-        """Gets the trigger_type of this TriggerBaseInfo.
+        r"""Gets the trigger_type of this TriggerBaseInfo.
 
         触发事件的类型
 
@@ -437,7 +437,7 @@ class TriggerBaseInfo:
 
     @trigger_type.setter
     def trigger_type(self, trigger_type):
-        """Sets the trigger_type of this TriggerBaseInfo.
+        r"""Sets the trigger_type of this TriggerBaseInfo.
 
         触发事件的类型
 
@@ -448,7 +448,7 @@ class TriggerBaseInfo:
 
     @property
     def type(self):
-        """Gets the type of this TriggerBaseInfo.
+        r"""Gets the type of this TriggerBaseInfo.
 
         类型
 
@@ -459,7 +459,7 @@ class TriggerBaseInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this TriggerBaseInfo.
+        r"""Sets the type of this TriggerBaseInfo.
 
         类型
 
@@ -470,7 +470,7 @@ class TriggerBaseInfo:
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this TriggerBaseInfo.
+        r"""Gets the updated_time of this TriggerBaseInfo.
 
         修改时间
 
@@ -481,7 +481,7 @@ class TriggerBaseInfo:
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this TriggerBaseInfo.
+        r"""Sets the updated_time of this TriggerBaseInfo.
 
         修改时间
 

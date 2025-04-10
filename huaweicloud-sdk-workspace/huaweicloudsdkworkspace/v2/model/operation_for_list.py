@@ -45,7 +45,7 @@ class OperationForList:
     }
 
     def __init__(self, id=None, project_id=None, desktop_id=None, screen_record_id=None, username=None, event_type=None, event_level=None, event_id=None, event_data=None, operation_time=None, relative_start_time=None):
-        """OperationForList
+        r"""OperationForList
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class OperationForList:
 
     @property
     def id(self):
-        """Gets the id of this OperationForList.
+        r"""Gets the id of this OperationForList.
 
         主键UUID。
 
@@ -124,7 +124,7 @@ class OperationForList:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this OperationForList.
+        r"""Sets the id of this OperationForList.
 
         主键UUID。
 
@@ -135,7 +135,7 @@ class OperationForList:
 
     @property
     def project_id(self):
-        """Gets the project_id of this OperationForList.
+        r"""Gets the project_id of this OperationForList.
 
         项目ID。
 
@@ -146,7 +146,7 @@ class OperationForList:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this OperationForList.
+        r"""Sets the project_id of this OperationForList.
 
         项目ID。
 
@@ -157,7 +157,7 @@ class OperationForList:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this OperationForList.
+        r"""Gets the desktop_id of this OperationForList.
 
         桌面ID。
 
@@ -168,7 +168,7 @@ class OperationForList:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this OperationForList.
+        r"""Sets the desktop_id of this OperationForList.
 
         桌面ID。
 
@@ -179,7 +179,7 @@ class OperationForList:
 
     @property
     def screen_record_id(self):
-        """Gets the screen_record_id of this OperationForList.
+        r"""Gets the screen_record_id of this OperationForList.
 
         录屏记录ID。
 
@@ -190,7 +190,7 @@ class OperationForList:
 
     @screen_record_id.setter
     def screen_record_id(self, screen_record_id):
-        """Sets the screen_record_id of this OperationForList.
+        r"""Sets the screen_record_id of this OperationForList.
 
         录屏记录ID。
 
@@ -201,7 +201,7 @@ class OperationForList:
 
     @property
     def username(self):
-        """Gets the username of this OperationForList.
+        r"""Gets the username of this OperationForList.
 
         用户名。
 
@@ -212,7 +212,7 @@ class OperationForList:
 
     @username.setter
     def username(self, username):
-        """Sets the username of this OperationForList.
+        r"""Sets the username of this OperationForList.
 
         用户名。
 
@@ -223,7 +223,7 @@ class OperationForList:
 
     @property
     def event_type(self):
-        """Gets the event_type of this OperationForList.
+        r"""Gets the event_type of this OperationForList.
 
         事件类型。 - APP：应用监控。 - FILE：文件监控。 - REG：注册表监控。 - HDP：协议行为监控。
 
@@ -234,7 +234,7 @@ class OperationForList:
 
     @event_type.setter
     def event_type(self, event_type):
-        """Sets the event_type of this OperationForList.
+        r"""Sets the event_type of this OperationForList.
 
         事件类型。 - APP：应用监控。 - FILE：文件监控。 - REG：注册表监控。 - HDP：协议行为监控。
 
@@ -245,7 +245,7 @@ class OperationForList:
 
     @property
     def event_level(self):
-        """Gets the event_level of this OperationForList.
+        r"""Gets the event_level of this OperationForList.
 
         事件级别。 - INFO：提示。 - ALARM：告警。 - ERROR：异常。
 
@@ -256,7 +256,7 @@ class OperationForList:
 
     @event_level.setter
     def event_level(self, event_level):
-        """Sets the event_level of this OperationForList.
+        r"""Sets the event_level of this OperationForList.
 
         事件级别。 - INFO：提示。 - ALARM：告警。 - ERROR：异常。
 
@@ -267,7 +267,7 @@ class OperationForList:
 
     @property
     def event_id(self):
-        """Gets the event_id of this OperationForList.
+        r"""Gets the event_id of this OperationForList.
 
         事件ID。 - APP_START：应用程序启动 - APP_STOP：应用程序结束 - APP_CRASH：应用程序异常退出 - APP_HANG：应用程序无响应 - APP_INSTALL：应用安装 - APP_UNINSTALL：应用卸裁 - FILE_CREATE：文件创建 - FILE_DELETE：文件删除 - FILE_RENAME：文件改名 - REG_CREATE：注册表创建 - REG_CHANGE：注册表修改 - REG_DELETE：注册表删除 - REG_RENAME：注册表改名 - REG_SETVALUE：注册表设置值 - HDP_USB：USB重定向事件 - HDP_CLIPBOARD：剪切板操作 - HDP_INPUTIDLE：空闲无操作 - HDP_PRINT：文件打印
 
@@ -278,7 +278,7 @@ class OperationForList:
 
     @event_id.setter
     def event_id(self, event_id):
-        """Sets the event_id of this OperationForList.
+        r"""Sets the event_id of this OperationForList.
 
         事件ID。 - APP_START：应用程序启动 - APP_STOP：应用程序结束 - APP_CRASH：应用程序异常退出 - APP_HANG：应用程序无响应 - APP_INSTALL：应用安装 - APP_UNINSTALL：应用卸裁 - FILE_CREATE：文件创建 - FILE_DELETE：文件删除 - FILE_RENAME：文件改名 - REG_CREATE：注册表创建 - REG_CHANGE：注册表修改 - REG_DELETE：注册表删除 - REG_RENAME：注册表改名 - REG_SETVALUE：注册表设置值 - HDP_USB：USB重定向事件 - HDP_CLIPBOARD：剪切板操作 - HDP_INPUTIDLE：空闲无操作 - HDP_PRINT：文件打印
 
@@ -289,7 +289,7 @@ class OperationForList:
 
     @property
     def event_data(self):
-        """Gets the event_data of this OperationForList.
+        r"""Gets the event_data of this OperationForList.
 
         事件内容。
 
@@ -300,7 +300,7 @@ class OperationForList:
 
     @event_data.setter
     def event_data(self, event_data):
-        """Sets the event_data of this OperationForList.
+        r"""Sets the event_data of this OperationForList.
 
         事件内容。
 
@@ -311,7 +311,7 @@ class OperationForList:
 
     @property
     def operation_time(self):
-        """Gets the operation_time of this OperationForList.
+        r"""Gets the operation_time of this OperationForList.
 
         操作时间（2024-10-15T11:04:41.263Z）。
 
@@ -322,7 +322,7 @@ class OperationForList:
 
     @operation_time.setter
     def operation_time(self, operation_time):
-        """Sets the operation_time of this OperationForList.
+        r"""Sets the operation_time of this OperationForList.
 
         操作时间（2024-10-15T11:04:41.263Z）。
 
@@ -333,7 +333,7 @@ class OperationForList:
 
     @property
     def relative_start_time(self):
-        """Gets the relative_start_time of this OperationForList.
+        r"""Gets the relative_start_time of this OperationForList.
 
         相对于视频开始的时间（秒）。
 
@@ -344,7 +344,7 @@ class OperationForList:
 
     @relative_start_time.setter
     def relative_start_time(self, relative_start_time):
-        """Sets the relative_start_time of this OperationForList.
+        r"""Sets the relative_start_time of this OperationForList.
 
         相对于视频开始的时间（秒）。
 

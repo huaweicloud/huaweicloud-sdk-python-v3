@@ -27,7 +27,7 @@ class ShowDataourceDetailRequest:
     }
 
     def __init__(self, instance_id=None, datasource_id=None):
-        """ShowDataourceDetailRequest
+        r"""ShowDataourceDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowDataourceDetailRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowDataourceDetailRequest.
+        r"""Gets the instance_id of this ShowDataourceDetailRequest.
 
         实例ID
 
@@ -59,7 +59,7 @@ class ShowDataourceDetailRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowDataourceDetailRequest.
+        r"""Sets the instance_id of this ShowDataourceDetailRequest.
 
         实例ID
 
@@ -70,7 +70,7 @@ class ShowDataourceDetailRequest:
 
     @property
     def datasource_id(self):
-        """Gets the datasource_id of this ShowDataourceDetailRequest.
+        r"""Gets the datasource_id of this ShowDataourceDetailRequest.
 
         数据源ID
 
@@ -81,7 +81,7 @@ class ShowDataourceDetailRequest:
 
     @datasource_id.setter
     def datasource_id(self, datasource_id):
-        """Sets the datasource_id of this ShowDataourceDetailRequest.
+        r"""Sets the datasource_id of this ShowDataourceDetailRequest.
 
         数据源ID
 

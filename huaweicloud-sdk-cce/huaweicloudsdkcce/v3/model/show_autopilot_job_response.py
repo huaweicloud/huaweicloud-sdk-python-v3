@@ -34,7 +34,7 @@ class ShowAutopilotJobResponse(SdkResponse):
     }
 
     def __init__(self, kind=None, api_version=None, metadata=None, spec=None, status=None):
-        """ShowAutopilotJobResponse
+        r"""ShowAutopilotJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowAutopilotJobResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this ShowAutopilotJobResponse.
+        r"""Gets the kind of this ShowAutopilotJobResponse.
 
         API类型，固定值“Job”，该值不可修改。
 
@@ -83,7 +83,7 @@ class ShowAutopilotJobResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ShowAutopilotJobResponse.
+        r"""Sets the kind of this ShowAutopilotJobResponse.
 
         API类型，固定值“Job”，该值不可修改。
 
@@ -94,7 +94,7 @@ class ShowAutopilotJobResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this ShowAutopilotJobResponse.
+        r"""Gets the api_version of this ShowAutopilotJobResponse.
 
         API版本，固定值“v3”，该值不可修改。
 
@@ -105,7 +105,7 @@ class ShowAutopilotJobResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this ShowAutopilotJobResponse.
+        r"""Sets the api_version of this ShowAutopilotJobResponse.
 
         API版本，固定值“v3”，该值不可修改。
 
@@ -116,7 +116,7 @@ class ShowAutopilotJobResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this ShowAutopilotJobResponse.
+        r"""Gets the metadata of this ShowAutopilotJobResponse.
 
         :return: The metadata of this ShowAutopilotJobResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.JobMetadata`
@@ -125,7 +125,7 @@ class ShowAutopilotJobResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ShowAutopilotJobResponse.
+        r"""Sets the metadata of this ShowAutopilotJobResponse.
 
         :param metadata: The metadata of this ShowAutopilotJobResponse.
         :type metadata: :class:`huaweicloudsdkcce.v3.JobMetadata`
@@ -134,7 +134,7 @@ class ShowAutopilotJobResponse(SdkResponse):
 
     @property
     def spec(self):
-        """Gets the spec of this ShowAutopilotJobResponse.
+        r"""Gets the spec of this ShowAutopilotJobResponse.
 
         :return: The spec of this ShowAutopilotJobResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.JobSpec`
@@ -143,7 +143,7 @@ class ShowAutopilotJobResponse(SdkResponse):
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this ShowAutopilotJobResponse.
+        r"""Sets the spec of this ShowAutopilotJobResponse.
 
         :param spec: The spec of this ShowAutopilotJobResponse.
         :type spec: :class:`huaweicloudsdkcce.v3.JobSpec`
@@ -152,7 +152,7 @@ class ShowAutopilotJobResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowAutopilotJobResponse.
+        r"""Gets the status of this ShowAutopilotJobResponse.
 
         :return: The status of this ShowAutopilotJobResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.JobStatus`
@@ -161,7 +161,7 @@ class ShowAutopilotJobResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowAutopilotJobResponse.
+        r"""Sets the status of this ShowAutopilotJobResponse.
 
         :param status: The status of this ShowAutopilotJobResponse.
         :type status: :class:`huaweicloudsdkcce.v3.JobStatus`

@@ -29,7 +29,7 @@ class UpdateAuditLogRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """UpdateAuditLogRequest
+        r"""UpdateAuditLogRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdateAuditLogRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this UpdateAuditLogRequest.
+        r"""Gets the x_language of this UpdateAuditLogRequest.
 
         语言。
 
@@ -67,7 +67,7 @@ class UpdateAuditLogRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this UpdateAuditLogRequest.
+        r"""Sets the x_language of this UpdateAuditLogRequest.
 
         语言。
 
@@ -78,7 +78,7 @@ class UpdateAuditLogRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateAuditLogRequest.
+        r"""Gets the instance_id of this UpdateAuditLogRequest.
 
         实例ID。
 
@@ -89,7 +89,7 @@ class UpdateAuditLogRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateAuditLogRequest.
+        r"""Sets the instance_id of this UpdateAuditLogRequest.
 
         实例ID。
 
@@ -100,7 +100,7 @@ class UpdateAuditLogRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAuditLogRequest.
+        r"""Gets the body of this UpdateAuditLogRequest.
 
         :return: The body of this UpdateAuditLogRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.OperateAuditLogRequestV3Body`
@@ -109,7 +109,7 @@ class UpdateAuditLogRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAuditLogRequest.
+        r"""Sets the body of this UpdateAuditLogRequest.
 
         :param body: The body of this UpdateAuditLogRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.OperateAuditLogRequestV3Body`

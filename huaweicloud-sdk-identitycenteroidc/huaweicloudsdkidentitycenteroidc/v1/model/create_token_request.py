@@ -25,7 +25,7 @@ class CreateTokenRequest:
     }
 
     def __init__(self, body=None):
-        """CreateTokenRequest
+        r"""CreateTokenRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateTokenRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateTokenRequest.
+        r"""Gets the body of this CreateTokenRequest.
 
         :return: The body of this CreateTokenRequest.
         :rtype: :class:`huaweicloudsdkidentitycenteroidc.v1.CreateTokenReqBody`
@@ -52,7 +52,7 @@ class CreateTokenRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTokenRequest.
+        r"""Sets the body of this CreateTokenRequest.
 
         :param body: The body of this CreateTokenRequest.
         :type body: :class:`huaweicloudsdkidentitycenteroidc.v1.CreateTokenReqBody`

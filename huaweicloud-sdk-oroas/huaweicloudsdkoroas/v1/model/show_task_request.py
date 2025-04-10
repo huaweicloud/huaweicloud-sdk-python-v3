@@ -33,7 +33,7 @@ class ShowTaskRequest:
     }
 
     def __init__(self, x_apig_app_code=None, service_group=None, service_type=None, task_id=None, input_enable=None):
-        """ShowTaskRequest
+        r"""ShowTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class ShowTaskRequest:
 
     @property
     def x_apig_app_code(self):
-        """Gets the x_apig_app_code of this ShowTaskRequest.
+        r"""Gets the x_apig_app_code of this ShowTaskRequest.
 
         用户凭证
 
@@ -78,7 +78,7 @@ class ShowTaskRequest:
 
     @x_apig_app_code.setter
     def x_apig_app_code(self, x_apig_app_code):
-        """Sets the x_apig_app_code of this ShowTaskRequest.
+        r"""Sets the x_apig_app_code of this ShowTaskRequest.
 
         用户凭证
 
@@ -89,7 +89,7 @@ class ShowTaskRequest:
 
     @property
     def service_group(self):
-        """Gets the service_group of this ShowTaskRequest.
+        r"""Gets the service_group of this ShowTaskRequest.
 
         服务类别，针对不同服务类场景，为用户提前填充对应值，用户侧不需单独赋值；当前仅支持 二维切割 2dcut ，便于后续扩展
 
@@ -100,7 +100,7 @@ class ShowTaskRequest:
 
     @service_group.setter
     def service_group(self, service_group):
-        """Sets the service_group of this ShowTaskRequest.
+        r"""Sets the service_group of this ShowTaskRequest.
 
         服务类别，针对不同服务类场景，为用户提前填充对应值，用户侧不需单独赋值；当前仅支持 二维切割 2dcut ，便于后续扩展
 
@@ -111,7 +111,7 @@ class ShowTaskRequest:
 
     @property
     def service_type(self):
-        """Gets the service_type of this ShowTaskRequest.
+        r"""Gets the service_type of this ShowTaskRequest.
 
         子服务类型，针对不同服务，为用户提前填充对应值，用户侧不需单独赋值；服装切割固定为 irregular-textile，雕刻机切割固定为 engraving-machine-cutting， 板材切割固定为 regular-plate
 
@@ -122,7 +122,7 @@ class ShowTaskRequest:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this ShowTaskRequest.
+        r"""Sets the service_type of this ShowTaskRequest.
 
         子服务类型，针对不同服务，为用户提前填充对应值，用户侧不需单独赋值；服装切割固定为 irregular-textile，雕刻机切割固定为 engraving-machine-cutting， 板材切割固定为 regular-plate
 
@@ -133,7 +133,7 @@ class ShowTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowTaskRequest.
+        r"""Gets the task_id of this ShowTaskRequest.
 
         任务id
 
@@ -144,7 +144,7 @@ class ShowTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowTaskRequest.
+        r"""Sets the task_id of this ShowTaskRequest.
 
         任务id
 
@@ -155,7 +155,7 @@ class ShowTaskRequest:
 
     @property
     def input_enable(self):
-        """Gets the input_enable of this ShowTaskRequest.
+        r"""Gets the input_enable of this ShowTaskRequest.
 
         是否返回输入信息，默认为false； 当前暂不支持该功能，后续扩展
 
@@ -166,7 +166,7 @@ class ShowTaskRequest:
 
     @input_enable.setter
     def input_enable(self, input_enable):
-        """Sets the input_enable of this ShowTaskRequest.
+        r"""Sets the input_enable of this ShowTaskRequest.
 
         是否返回输入信息，默认为false； 当前暂不支持该功能，后续扩展
 

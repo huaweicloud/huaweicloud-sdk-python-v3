@@ -27,7 +27,7 @@ class AccessPolicyTopicEntity:
     }
 
     def __init__(self, name=None, policies=None):
-        """AccessPolicyTopicEntity
+        r"""AccessPolicyTopicEntity
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AccessPolicyTopicEntity:
 
     @property
     def name(self):
-        """Gets the name of this AccessPolicyTopicEntity.
+        r"""Gets the name of this AccessPolicyTopicEntity.
 
         topic名称。
 
@@ -59,7 +59,7 @@ class AccessPolicyTopicEntity:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AccessPolicyTopicEntity.
+        r"""Sets the name of this AccessPolicyTopicEntity.
 
         topic名称。
 
@@ -70,7 +70,7 @@ class AccessPolicyTopicEntity:
 
     @property
     def policies(self):
-        """Gets the policies of this AccessPolicyTopicEntity.
+        r"""Gets the policies of this AccessPolicyTopicEntity.
 
         权限列表。
 
@@ -81,7 +81,7 @@ class AccessPolicyTopicEntity:
 
     @policies.setter
     def policies(self, policies):
-        """Sets the policies of this AccessPolicyTopicEntity.
+        r"""Sets the policies of this AccessPolicyTopicEntity.
 
         权限列表。
 

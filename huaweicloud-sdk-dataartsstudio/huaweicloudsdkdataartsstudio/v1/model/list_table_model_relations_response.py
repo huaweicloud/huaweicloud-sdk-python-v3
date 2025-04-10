@@ -26,7 +26,7 @@ class ListTableModelRelationsResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ListTableModelRelationsResponse
+        r"""ListTableModelRelationsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListTableModelRelationsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListTableModelRelationsResponse.
+        r"""Gets the data of this ListTableModelRelationsResponse.
 
         :return: The data of this ListTableModelRelationsResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListTableModelRelationsResultData`
@@ -53,7 +53,7 @@ class ListTableModelRelationsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListTableModelRelationsResponse.
+        r"""Sets the data of this ListTableModelRelationsResponse.
 
         :param data: The data of this ListTableModelRelationsResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.ListTableModelRelationsResultData`

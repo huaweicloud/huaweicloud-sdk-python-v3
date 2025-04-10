@@ -24,7 +24,7 @@ class UpdatePredefineTagsResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdatePredefineTagsResponse
+        r"""UpdatePredefineTagsResponse
 
         The model defined in huaweicloud sdk
 

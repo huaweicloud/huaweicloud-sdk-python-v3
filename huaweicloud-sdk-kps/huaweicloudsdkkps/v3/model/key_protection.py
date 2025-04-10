@@ -27,7 +27,7 @@ class KeyProtection:
     }
 
     def __init__(self, private_key=None, encryption=None):
-        """KeyProtection
+        r"""KeyProtection
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class KeyProtection:
 
     @property
     def private_key(self):
-        """Gets the private_key of this KeyProtection.
+        r"""Gets the private_key of this KeyProtection.
 
         导入SSH密钥对的私钥。
 
@@ -60,7 +60,7 @@ class KeyProtection:
 
     @private_key.setter
     def private_key(self, private_key):
-        """Sets the private_key of this KeyProtection.
+        r"""Sets the private_key of this KeyProtection.
 
         导入SSH密钥对的私钥。
 
@@ -71,7 +71,7 @@ class KeyProtection:
 
     @property
     def encryption(self):
-        """Gets the encryption of this KeyProtection.
+        r"""Gets the encryption of this KeyProtection.
 
         :return: The encryption of this KeyProtection.
         :rtype: :class:`huaweicloudsdkkps.v3.Encryption`
@@ -80,7 +80,7 @@ class KeyProtection:
 
     @encryption.setter
     def encryption(self, encryption):
-        """Sets the encryption of this KeyProtection.
+        r"""Sets the encryption of this KeyProtection.
 
         :param encryption: The encryption of this KeyProtection.
         :type encryption: :class:`huaweicloudsdkkps.v3.Encryption`

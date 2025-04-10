@@ -24,7 +24,7 @@ class DeleteHttpPunishmentRuleResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteHttpPunishmentRuleResponse
+        r"""DeleteHttpPunishmentRuleResponse
 
         The model defined in huaweicloud sdk
 

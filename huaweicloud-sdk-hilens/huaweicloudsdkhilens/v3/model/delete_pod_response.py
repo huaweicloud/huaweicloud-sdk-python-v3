@@ -26,7 +26,7 @@ class DeletePodResponse(SdkResponse):
     }
 
     def __init__(self, pod_id=None):
-        """DeletePodResponse
+        r"""DeletePodResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeletePodResponse(SdkResponse):
 
     @property
     def pod_id(self):
-        """Gets the pod_id of this DeletePodResponse.
+        r"""Gets the pod_id of this DeletePodResponse.
 
         pod的ID
 
@@ -55,7 +55,7 @@ class DeletePodResponse(SdkResponse):
 
     @pod_id.setter
     def pod_id(self, pod_id):
-        """Sets the pod_id of this DeletePodResponse.
+        r"""Sets the pod_id of this DeletePodResponse.
 
         pod的ID
 

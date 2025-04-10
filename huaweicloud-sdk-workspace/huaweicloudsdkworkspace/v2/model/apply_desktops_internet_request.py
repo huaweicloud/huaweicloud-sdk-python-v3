@@ -27,7 +27,7 @@ class ApplyDesktopsInternetRequest:
     }
 
     def __init__(self, service_transaction_id=None, body=None):
-        """ApplyDesktopsInternetRequest
+        r"""ApplyDesktopsInternetRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ApplyDesktopsInternetRequest:
 
     @property
     def service_transaction_id(self):
-        """Gets the service_transaction_id of this ApplyDesktopsInternetRequest.
+        r"""Gets the service_transaction_id of this ApplyDesktopsInternetRequest.
 
         CBC接口回调时，请求头里带上的业务ID
 
@@ -61,7 +61,7 @@ class ApplyDesktopsInternetRequest:
 
     @service_transaction_id.setter
     def service_transaction_id(self, service_transaction_id):
-        """Sets the service_transaction_id of this ApplyDesktopsInternetRequest.
+        r"""Sets the service_transaction_id of this ApplyDesktopsInternetRequest.
 
         CBC接口回调时，请求头里带上的业务ID
 
@@ -72,7 +72,7 @@ class ApplyDesktopsInternetRequest:
 
     @property
     def body(self):
-        """Gets the body of this ApplyDesktopsInternetRequest.
+        r"""Gets the body of this ApplyDesktopsInternetRequest.
 
         :return: The body of this ApplyDesktopsInternetRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ApplyDesktopsInternetReq`
@@ -81,7 +81,7 @@ class ApplyDesktopsInternetRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ApplyDesktopsInternetRequest.
+        r"""Sets the body of this ApplyDesktopsInternetRequest.
 
         :param body: The body of this ApplyDesktopsInternetRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.ApplyDesktopsInternetReq`

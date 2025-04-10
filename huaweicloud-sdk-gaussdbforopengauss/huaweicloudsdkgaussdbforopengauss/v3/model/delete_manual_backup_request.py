@@ -27,7 +27,7 @@ class DeleteManualBackupRequest:
     }
 
     def __init__(self, x_language=None, backup_id=None):
-        """DeleteManualBackupRequest
+        r"""DeleteManualBackupRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteManualBackupRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this DeleteManualBackupRequest.
+        r"""Gets the x_language of this DeleteManualBackupRequest.
 
         语言
 
@@ -60,7 +60,7 @@ class DeleteManualBackupRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this DeleteManualBackupRequest.
+        r"""Sets the x_language of this DeleteManualBackupRequest.
 
         语言
 
@@ -71,7 +71,7 @@ class DeleteManualBackupRequest:
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this DeleteManualBackupRequest.
+        r"""Gets the backup_id of this DeleteManualBackupRequest.
 
         手动备份ID。
 
@@ -82,7 +82,7 @@ class DeleteManualBackupRequest:
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this DeleteManualBackupRequest.
+        r"""Sets the backup_id of this DeleteManualBackupRequest.
 
         手动备份ID。
 

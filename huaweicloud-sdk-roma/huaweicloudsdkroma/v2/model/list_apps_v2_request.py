@@ -39,7 +39,7 @@ class ListAppsV2Request:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, id=None, name=None, status=None, app_key=None, precise_search=None):
-        """ListAppsV2Request
+        r"""ListAppsV2Request
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class ListAppsV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListAppsV2Request.
+        r"""Gets the instance_id of this ListAppsV2Request.
 
         实例ID
 
@@ -102,7 +102,7 @@ class ListAppsV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListAppsV2Request.
+        r"""Sets the instance_id of this ListAppsV2Request.
 
         实例ID
 
@@ -113,7 +113,7 @@ class ListAppsV2Request:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAppsV2Request.
+        r"""Gets the offset of this ListAppsV2Request.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -124,7 +124,7 @@ class ListAppsV2Request:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAppsV2Request.
+        r"""Sets the offset of this ListAppsV2Request.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -135,7 +135,7 @@ class ListAppsV2Request:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAppsV2Request.
+        r"""Gets the limit of this ListAppsV2Request.
 
         每页显示的条目数量
 
@@ -146,7 +146,7 @@ class ListAppsV2Request:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAppsV2Request.
+        r"""Sets the limit of this ListAppsV2Request.
 
         每页显示的条目数量
 
@@ -157,7 +157,7 @@ class ListAppsV2Request:
 
     @property
     def id(self):
-        """Gets the id of this ListAppsV2Request.
+        r"""Gets the id of this ListAppsV2Request.
 
         APP编号
 
@@ -168,7 +168,7 @@ class ListAppsV2Request:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListAppsV2Request.
+        r"""Sets the id of this ListAppsV2Request.
 
         APP编号
 
@@ -179,7 +179,7 @@ class ListAppsV2Request:
 
     @property
     def name(self):
-        """Gets the name of this ListAppsV2Request.
+        r"""Gets the name of this ListAppsV2Request.
 
         APP名称
 
@@ -190,7 +190,7 @@ class ListAppsV2Request:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListAppsV2Request.
+        r"""Sets the name of this ListAppsV2Request.
 
         APP名称
 
@@ -201,7 +201,7 @@ class ListAppsV2Request:
 
     @property
     def status(self):
-        """Gets the status of this ListAppsV2Request.
+        r"""Gets the status of this ListAppsV2Request.
 
         APP状态
 
@@ -212,7 +212,7 @@ class ListAppsV2Request:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListAppsV2Request.
+        r"""Sets the status of this ListAppsV2Request.
 
         APP状态
 
@@ -223,7 +223,7 @@ class ListAppsV2Request:
 
     @property
     def app_key(self):
-        """Gets the app_key of this ListAppsV2Request.
+        r"""Gets the app_key of this ListAppsV2Request.
 
         APP的KEY
 
@@ -234,7 +234,7 @@ class ListAppsV2Request:
 
     @app_key.setter
     def app_key(self, app_key):
-        """Sets the app_key of this ListAppsV2Request.
+        r"""Sets the app_key of this ListAppsV2Request.
 
         APP的KEY
 
@@ -245,7 +245,7 @@ class ListAppsV2Request:
 
     @property
     def precise_search(self):
-        """Gets the precise_search of this ListAppsV2Request.
+        r"""Gets the precise_search of this ListAppsV2Request.
 
         指定需要精确匹配查找的参数名称，多个参数需要支持精确匹配时参数之间使用“,”隔开。  目前仅支持name。
 
@@ -256,7 +256,7 @@ class ListAppsV2Request:
 
     @precise_search.setter
     def precise_search(self, precise_search):
-        """Sets the precise_search of this ListAppsV2Request.
+        r"""Sets the precise_search of this ListAppsV2Request.
 
         指定需要精确匹配查找的参数名称，多个参数需要支持精确匹配时参数之间使用“,”隔开。  目前仅支持name。
 

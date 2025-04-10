@@ -34,7 +34,7 @@ class ListDatabaseAvailableVersionsResponse(SdkResponse):
     }
 
     def __init__(self, versions=None, current_version=None, latest_version=None, current_favored_version=None, previous_version=None):
-        """ListDatabaseAvailableVersionsResponse
+        r"""ListDatabaseAvailableVersionsResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListDatabaseAvailableVersionsResponse(SdkResponse):
 
     @property
     def versions(self):
-        """Gets the versions of this ListDatabaseAvailableVersionsResponse.
+        r"""Gets the versions of this ListDatabaseAvailableVersionsResponse.
 
         可变更版本
 
@@ -83,7 +83,7 @@ class ListDatabaseAvailableVersionsResponse(SdkResponse):
 
     @versions.setter
     def versions(self, versions):
-        """Sets the versions of this ListDatabaseAvailableVersionsResponse.
+        r"""Sets the versions of this ListDatabaseAvailableVersionsResponse.
 
         可变更版本
 
@@ -94,7 +94,7 @@ class ListDatabaseAvailableVersionsResponse(SdkResponse):
 
     @property
     def current_version(self):
-        """Gets the current_version of this ListDatabaseAvailableVersionsResponse.
+        r"""Gets the current_version of this ListDatabaseAvailableVersionsResponse.
 
         当前版本
 
@@ -105,7 +105,7 @@ class ListDatabaseAvailableVersionsResponse(SdkResponse):
 
     @current_version.setter
     def current_version(self, current_version):
-        """Sets the current_version of this ListDatabaseAvailableVersionsResponse.
+        r"""Sets the current_version of this ListDatabaseAvailableVersionsResponse.
 
         当前版本
 
@@ -116,7 +116,7 @@ class ListDatabaseAvailableVersionsResponse(SdkResponse):
 
     @property
     def latest_version(self):
-        """Gets the latest_version of this ListDatabaseAvailableVersionsResponse.
+        r"""Gets the latest_version of this ListDatabaseAvailableVersionsResponse.
 
         最新优选版本
 
@@ -127,7 +127,7 @@ class ListDatabaseAvailableVersionsResponse(SdkResponse):
 
     @latest_version.setter
     def latest_version(self, latest_version):
-        """Sets the latest_version of this ListDatabaseAvailableVersionsResponse.
+        r"""Sets the latest_version of this ListDatabaseAvailableVersionsResponse.
 
         最新优选版本
 
@@ -138,7 +138,7 @@ class ListDatabaseAvailableVersionsResponse(SdkResponse):
 
     @property
     def current_favored_version(self):
-        """Gets the current_favored_version of this ListDatabaseAvailableVersionsResponse.
+        r"""Gets the current_favored_version of this ListDatabaseAvailableVersionsResponse.
 
         本系列优选版本，如3.0.8系列优选版本为3.0.8.5
 
@@ -149,7 +149,7 @@ class ListDatabaseAvailableVersionsResponse(SdkResponse):
 
     @current_favored_version.setter
     def current_favored_version(self, current_favored_version):
-        """Sets the current_favored_version of this ListDatabaseAvailableVersionsResponse.
+        r"""Sets the current_favored_version of this ListDatabaseAvailableVersionsResponse.
 
         本系列优选版本，如3.0.8系列优选版本为3.0.8.5
 
@@ -160,7 +160,7 @@ class ListDatabaseAvailableVersionsResponse(SdkResponse):
 
     @property
     def previous_version(self):
-        """Gets the previous_version of this ListDatabaseAvailableVersionsResponse.
+        r"""Gets the previous_version of this ListDatabaseAvailableVersionsResponse.
 
         当前实例上一个版本
 
@@ -171,7 +171,7 @@ class ListDatabaseAvailableVersionsResponse(SdkResponse):
 
     @previous_version.setter
     def previous_version(self, previous_version):
-        """Sets the previous_version of this ListDatabaseAvailableVersionsResponse.
+        r"""Sets the previous_version of this ListDatabaseAvailableVersionsResponse.
 
         当前实例上一个版本
 

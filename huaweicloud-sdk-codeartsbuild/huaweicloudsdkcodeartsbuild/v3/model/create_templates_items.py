@@ -61,7 +61,7 @@ class CreateTemplatesItems:
     }
 
     def __init__(self, favourite=None, id=None, uuid=None, template=None, type=None, public=None, name=None, create_time=None, domain_id=None, weight=None, user_id=None, user_name=None, domain_name=None, scope=None, description=None, tool_type=None, intl_description=None, parameters=None, i18n=None):
-        """CreateTemplatesItems
+        r"""CreateTemplatesItems
 
         The model defined in huaweicloud sdk
 
@@ -169,7 +169,7 @@ class CreateTemplatesItems:
 
     @property
     def favourite(self):
-        """Gets the favourite of this CreateTemplatesItems.
+        r"""Gets the favourite of this CreateTemplatesItems.
 
         是否收藏模板
 
@@ -180,7 +180,7 @@ class CreateTemplatesItems:
 
     @favourite.setter
     def favourite(self, favourite):
-        """Sets the favourite of this CreateTemplatesItems.
+        r"""Sets the favourite of this CreateTemplatesItems.
 
         是否收藏模板
 
@@ -191,7 +191,7 @@ class CreateTemplatesItems:
 
     @property
     def id(self):
-        """Gets the id of this CreateTemplatesItems.
+        r"""Gets the id of this CreateTemplatesItems.
 
         数据库中id
 
@@ -202,7 +202,7 @@ class CreateTemplatesItems:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateTemplatesItems.
+        r"""Sets the id of this CreateTemplatesItems.
 
         数据库中id
 
@@ -213,7 +213,7 @@ class CreateTemplatesItems:
 
     @property
     def uuid(self):
-        """Gets the uuid of this CreateTemplatesItems.
+        r"""Gets the uuid of this CreateTemplatesItems.
 
         uuid
 
@@ -224,7 +224,7 @@ class CreateTemplatesItems:
 
     @uuid.setter
     def uuid(self, uuid):
-        """Sets the uuid of this CreateTemplatesItems.
+        r"""Sets the uuid of this CreateTemplatesItems.
 
         uuid
 
@@ -235,7 +235,7 @@ class CreateTemplatesItems:
 
     @property
     def template(self):
-        """Gets the template of this CreateTemplatesItems.
+        r"""Gets the template of this CreateTemplatesItems.
 
         :return: The template of this CreateTemplatesItems.
         :rtype: :class:`huaweicloudsdkcodeartsbuild.v3.QueryTemplate`
@@ -244,7 +244,7 @@ class CreateTemplatesItems:
 
     @template.setter
     def template(self, template):
-        """Sets the template of this CreateTemplatesItems.
+        r"""Sets the template of this CreateTemplatesItems.
 
         :param template: The template of this CreateTemplatesItems.
         :type template: :class:`huaweicloudsdkcodeartsbuild.v3.QueryTemplate`
@@ -253,7 +253,7 @@ class CreateTemplatesItems:
 
     @property
     def type(self):
-        """Gets the type of this CreateTemplatesItems.
+        r"""Gets the type of this CreateTemplatesItems.
 
         模板类别
 
@@ -264,7 +264,7 @@ class CreateTemplatesItems:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateTemplatesItems.
+        r"""Sets the type of this CreateTemplatesItems.
 
         模板类别
 
@@ -275,7 +275,7 @@ class CreateTemplatesItems:
 
     @property
     def public(self):
-        """Gets the public of this CreateTemplatesItems.
+        r"""Gets the public of this CreateTemplatesItems.
 
         模板是否公开
 
@@ -286,7 +286,7 @@ class CreateTemplatesItems:
 
     @public.setter
     def public(self, public):
-        """Sets the public of this CreateTemplatesItems.
+        r"""Sets the public of this CreateTemplatesItems.
 
         模板是否公开
 
@@ -297,7 +297,7 @@ class CreateTemplatesItems:
 
     @property
     def name(self):
-        """Gets the name of this CreateTemplatesItems.
+        r"""Gets the name of this CreateTemplatesItems.
 
         模板命名
 
@@ -308,7 +308,7 @@ class CreateTemplatesItems:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateTemplatesItems.
+        r"""Sets the name of this CreateTemplatesItems.
 
         模板命名
 
@@ -319,7 +319,7 @@ class CreateTemplatesItems:
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreateTemplatesItems.
+        r"""Gets the create_time of this CreateTemplatesItems.
 
         创建时间
 
@@ -330,7 +330,7 @@ class CreateTemplatesItems:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreateTemplatesItems.
+        r"""Sets the create_time of this CreateTemplatesItems.
 
         创建时间
 
@@ -341,7 +341,7 @@ class CreateTemplatesItems:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this CreateTemplatesItems.
+        r"""Gets the domain_id of this CreateTemplatesItems.
 
         domainId
 
@@ -352,7 +352,7 @@ class CreateTemplatesItems:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this CreateTemplatesItems.
+        r"""Sets the domain_id of this CreateTemplatesItems.
 
         domainId
 
@@ -363,7 +363,7 @@ class CreateTemplatesItems:
 
     @property
     def weight(self):
-        """Gets the weight of this CreateTemplatesItems.
+        r"""Gets the weight of this CreateTemplatesItems.
 
         权重
 
@@ -374,7 +374,7 @@ class CreateTemplatesItems:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this CreateTemplatesItems.
+        r"""Sets the weight of this CreateTemplatesItems.
 
         权重
 
@@ -385,7 +385,7 @@ class CreateTemplatesItems:
 
     @property
     def user_id(self):
-        """Gets the user_id of this CreateTemplatesItems.
+        r"""Gets the user_id of this CreateTemplatesItems.
 
         用户id
 
@@ -396,7 +396,7 @@ class CreateTemplatesItems:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this CreateTemplatesItems.
+        r"""Sets the user_id of this CreateTemplatesItems.
 
         用户id
 
@@ -407,7 +407,7 @@ class CreateTemplatesItems:
 
     @property
     def user_name(self):
-        """Gets the user_name of this CreateTemplatesItems.
+        r"""Gets the user_name of this CreateTemplatesItems.
 
         用户名
 
@@ -418,7 +418,7 @@ class CreateTemplatesItems:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this CreateTemplatesItems.
+        r"""Sets the user_name of this CreateTemplatesItems.
 
         用户名
 
@@ -429,7 +429,7 @@ class CreateTemplatesItems:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this CreateTemplatesItems.
+        r"""Gets the domain_name of this CreateTemplatesItems.
 
         domain名字
 
@@ -440,7 +440,7 @@ class CreateTemplatesItems:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this CreateTemplatesItems.
+        r"""Sets the domain_name of this CreateTemplatesItems.
 
         domain名字
 
@@ -451,7 +451,7 @@ class CreateTemplatesItems:
 
     @property
     def scope(self):
-        """Gets the scope of this CreateTemplatesItems.
+        r"""Gets the scope of this CreateTemplatesItems.
 
         模板范围，自定义模板默认为custom
 
@@ -462,7 +462,7 @@ class CreateTemplatesItems:
 
     @scope.setter
     def scope(self, scope):
-        """Sets the scope of this CreateTemplatesItems.
+        r"""Sets the scope of this CreateTemplatesItems.
 
         模板范围，自定义模板默认为custom
 
@@ -473,7 +473,7 @@ class CreateTemplatesItems:
 
     @property
     def description(self):
-        """Gets the description of this CreateTemplatesItems.
+        r"""Gets the description of this CreateTemplatesItems.
 
         模板说明
 
@@ -484,7 +484,7 @@ class CreateTemplatesItems:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateTemplatesItems.
+        r"""Sets the description of this CreateTemplatesItems.
 
         模板说明
 
@@ -495,7 +495,7 @@ class CreateTemplatesItems:
 
     @property
     def tool_type(self):
-        """Gets the tool_type of this CreateTemplatesItems.
+        r"""Gets the tool_type of this CreateTemplatesItems.
 
         构建工具类型，yaml构建还是action构建
 
@@ -506,7 +506,7 @@ class CreateTemplatesItems:
 
     @tool_type.setter
     def tool_type(self, tool_type):
-        """Sets the tool_type of this CreateTemplatesItems.
+        r"""Sets the tool_type of this CreateTemplatesItems.
 
         构建工具类型，yaml构建还是action构建
 
@@ -517,7 +517,7 @@ class CreateTemplatesItems:
 
     @property
     def intl_description(self):
-        """Gets the intl_description of this CreateTemplatesItems.
+        r"""Gets the intl_description of this CreateTemplatesItems.
 
         intl说明
 
@@ -528,7 +528,7 @@ class CreateTemplatesItems:
 
     @intl_description.setter
     def intl_description(self, intl_description):
-        """Sets the intl_description of this CreateTemplatesItems.
+        r"""Sets the intl_description of this CreateTemplatesItems.
 
         intl说明
 
@@ -539,7 +539,7 @@ class CreateTemplatesItems:
 
     @property
     def parameters(self):
-        """Gets the parameters of this CreateTemplatesItems.
+        r"""Gets the parameters of this CreateTemplatesItems.
 
         构建执行参数列表
 
@@ -550,7 +550,7 @@ class CreateTemplatesItems:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this CreateTemplatesItems.
+        r"""Sets the parameters of this CreateTemplatesItems.
 
         构建执行参数列表
 
@@ -561,7 +561,7 @@ class CreateTemplatesItems:
 
     @property
     def i18n(self):
-        """Gets the i18n of this CreateTemplatesItems.
+        r"""Gets the i18n of this CreateTemplatesItems.
 
         i18n
 
@@ -572,7 +572,7 @@ class CreateTemplatesItems:
 
     @i18n.setter
     def i18n(self, i18n):
-        """Sets the i18n of this CreateTemplatesItems.
+        r"""Sets the i18n of this CreateTemplatesItems.
 
         i18n
 

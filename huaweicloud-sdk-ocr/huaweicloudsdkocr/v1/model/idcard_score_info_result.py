@@ -39,7 +39,7 @@ class IdcardScoreInfoResult:
     }
 
     def __init__(self, tampering_score=None, interim_score=None, reproduce_score=None, copy_score=None, border_integrity_score=None, blur_score=None, glare_score=None, blocking_within_border_score=None):
-        """IdcardScoreInfoResult
+        r"""IdcardScoreInfoResult
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class IdcardScoreInfoResult:
 
     @property
     def tampering_score(self):
-        """Gets the tampering_score of this IdcardScoreInfoResult.
+        r"""Gets the tampering_score of this IdcardScoreInfoResult.
 
         身份证PS告警分数，分数越高，PS的可能性越高。 仅在传入参数detect_tampering为true时，返回该字段。 
 
@@ -103,7 +103,7 @@ class IdcardScoreInfoResult:
 
     @tampering_score.setter
     def tampering_score(self, tampering_score):
-        """Sets the tampering_score of this IdcardScoreInfoResult.
+        r"""Sets the tampering_score of this IdcardScoreInfoResult.
 
         身份证PS告警分数，分数越高，PS的可能性越高。 仅在传入参数detect_tampering为true时，返回该字段。 
 
@@ -114,7 +114,7 @@ class IdcardScoreInfoResult:
 
     @property
     def interim_score(self):
-        """Gets the interim_score of this IdcardScoreInfoResult.
+        r"""Gets the interim_score of this IdcardScoreInfoResult.
 
         临时身份证告警分数，分数越高，临时身份证的可能性越高。 仅在传入参数detect_interim为true时，返回该字段。 
 
@@ -125,7 +125,7 @@ class IdcardScoreInfoResult:
 
     @interim_score.setter
     def interim_score(self, interim_score):
-        """Sets the interim_score of this IdcardScoreInfoResult.
+        r"""Sets the interim_score of this IdcardScoreInfoResult.
 
         临时身份证告警分数，分数越高，临时身份证的可能性越高。 仅在传入参数detect_interim为true时，返回该字段。 
 
@@ -136,7 +136,7 @@ class IdcardScoreInfoResult:
 
     @property
     def reproduce_score(self):
-        """Gets the reproduce_score of this IdcardScoreInfoResult.
+        r"""Gets the reproduce_score of this IdcardScoreInfoResult.
 
         身份证翻拍告警分数，分数越高，身份证图像经过翻拍的可能性越高。 仅在传入参数detect_reproduce为true时，返回该字段。 
 
@@ -147,7 +147,7 @@ class IdcardScoreInfoResult:
 
     @reproduce_score.setter
     def reproduce_score(self, reproduce_score):
-        """Sets the reproduce_score of this IdcardScoreInfoResult.
+        r"""Sets the reproduce_score of this IdcardScoreInfoResult.
 
         身份证翻拍告警分数，分数越高，身份证图像经过翻拍的可能性越高。 仅在传入参数detect_reproduce为true时，返回该字段。 
 
@@ -158,7 +158,7 @@ class IdcardScoreInfoResult:
 
     @property
     def copy_score(self):
-        """Gets the copy_score of this IdcardScoreInfoResult.
+        r"""Gets the copy_score of this IdcardScoreInfoResult.
 
         身份证复印告警分数, 分数越高，身份证图像是复印件的可能性越高。 仅在传入参数detect_copy为true时，返回该字段。 
 
@@ -169,7 +169,7 @@ class IdcardScoreInfoResult:
 
     @copy_score.setter
     def copy_score(self, copy_score):
-        """Sets the copy_score of this IdcardScoreInfoResult.
+        r"""Sets the copy_score of this IdcardScoreInfoResult.
 
         身份证复印告警分数, 分数越高，身份证图像是复印件的可能性越高。 仅在传入参数detect_copy为true时，返回该字段。 
 
@@ -180,7 +180,7 @@ class IdcardScoreInfoResult:
 
     @property
     def border_integrity_score(self):
-        """Gets the border_integrity_score of this IdcardScoreInfoResult.
+        r"""Gets the border_integrity_score of this IdcardScoreInfoResult.
 
         身份证边缘完整性告警的分数，分数越高，身份证图像边缘不完整的可能性越高。 仅在传入参数detect_border_integrity为true时，返回该字段。 
 
@@ -191,7 +191,7 @@ class IdcardScoreInfoResult:
 
     @border_integrity_score.setter
     def border_integrity_score(self, border_integrity_score):
-        """Sets the border_integrity_score of this IdcardScoreInfoResult.
+        r"""Sets the border_integrity_score of this IdcardScoreInfoResult.
 
         身份证边缘完整性告警的分数，分数越高，身份证图像边缘不完整的可能性越高。 仅在传入参数detect_border_integrity为true时，返回该字段。 
 
@@ -202,7 +202,7 @@ class IdcardScoreInfoResult:
 
     @property
     def blur_score(self):
-        """Gets the blur_score of this IdcardScoreInfoResult.
+        r"""Gets the blur_score of this IdcardScoreInfoResult.
 
         身份证模糊告警分数，分数越高，身份证图像模糊的可能性越高。 仅在传入参数detect_blur为true时，返回该字段。 
 
@@ -213,7 +213,7 @@ class IdcardScoreInfoResult:
 
     @blur_score.setter
     def blur_score(self, blur_score):
-        """Sets the blur_score of this IdcardScoreInfoResult.
+        r"""Sets the blur_score of this IdcardScoreInfoResult.
 
         身份证模糊告警分数，分数越高，身份证图像模糊的可能性越高。 仅在传入参数detect_blur为true时，返回该字段。 
 
@@ -224,7 +224,7 @@ class IdcardScoreInfoResult:
 
     @property
     def glare_score(self):
-        """Gets the glare_score of this IdcardScoreInfoResult.
+        r"""Gets the glare_score of this IdcardScoreInfoResult.
 
         身份证反光告警分数，分数越高，身份证图像存在反光的可能性越高。 仅在传入参数detect_glare为true时，返回该字段。 
 
@@ -235,7 +235,7 @@ class IdcardScoreInfoResult:
 
     @glare_score.setter
     def glare_score(self, glare_score):
-        """Sets the glare_score of this IdcardScoreInfoResult.
+        r"""Sets the glare_score of this IdcardScoreInfoResult.
 
         身份证反光告警分数，分数越高，身份证图像存在反光的可能性越高。 仅在传入参数detect_glare为true时，返回该字段。 
 
@@ -246,7 +246,7 @@ class IdcardScoreInfoResult:
 
     @property
     def blocking_within_border_score(self):
-        """Gets the blocking_within_border_score of this IdcardScoreInfoResult.
+        r"""Gets the blocking_within_border_score of this IdcardScoreInfoResult.
 
         身份证图像框内是否有遮挡的告警分数，分数越高，身份证图像框内存在异物遮挡的可能性越高。 仅在传入参数detect_blocking_within_border为true时，返回该字段。 
 
@@ -257,7 +257,7 @@ class IdcardScoreInfoResult:
 
     @blocking_within_border_score.setter
     def blocking_within_border_score(self, blocking_within_border_score):
-        """Sets the blocking_within_border_score of this IdcardScoreInfoResult.
+        r"""Sets the blocking_within_border_score of this IdcardScoreInfoResult.
 
         身份证图像框内是否有遮挡的告警分数，分数越高，身份证图像框内存在异物遮挡的可能性越高。 仅在传入参数detect_blocking_within_border为true时，返回该字段。 
 

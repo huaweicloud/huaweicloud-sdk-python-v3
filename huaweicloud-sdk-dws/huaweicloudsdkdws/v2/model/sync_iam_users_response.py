@@ -26,7 +26,7 @@ class SyncIamUsersResponse(SdkResponse):
     }
 
     def __init__(self, sync_user=None):
-        """SyncIamUsersResponse
+        r"""SyncIamUsersResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SyncIamUsersResponse(SdkResponse):
 
     @property
     def sync_user(self):
-        """Gets the sync_user of this SyncIamUsersResponse.
+        r"""Gets the sync_user of this SyncIamUsersResponse.
 
         创建成功用户列表
 
@@ -55,7 +55,7 @@ class SyncIamUsersResponse(SdkResponse):
 
     @sync_user.setter
     def sync_user(self, sync_user):
-        """Sets the sync_user of this SyncIamUsersResponse.
+        r"""Sets the sync_user of this SyncIamUsersResponse.
 
         创建成功用户列表
 

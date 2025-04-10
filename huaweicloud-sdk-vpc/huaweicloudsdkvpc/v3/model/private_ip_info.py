@@ -27,7 +27,7 @@ class PrivateIpInfo:
     }
 
     def __init__(self, subnet_cidr_id=None, ip_address=None):
-        """PrivateIpInfo
+        r"""PrivateIpInfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class PrivateIpInfo:
 
     @property
     def subnet_cidr_id(self):
-        """Gets the subnet_cidr_id of this PrivateIpInfo.
+        r"""Gets the subnet_cidr_id of this PrivateIpInfo.
 
         端口所属子网ID
 
@@ -59,7 +59,7 @@ class PrivateIpInfo:
 
     @subnet_cidr_id.setter
     def subnet_cidr_id(self, subnet_cidr_id):
-        """Sets the subnet_cidr_id of this PrivateIpInfo.
+        r"""Sets the subnet_cidr_id of this PrivateIpInfo.
 
         端口所属子网ID
 
@@ -70,7 +70,7 @@ class PrivateIpInfo:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this PrivateIpInfo.
+        r"""Gets the ip_address of this PrivateIpInfo.
 
         端口私有IP地址
 
@@ -81,7 +81,7 @@ class PrivateIpInfo:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this PrivateIpInfo.
+        r"""Sets the ip_address of this PrivateIpInfo.
 
         端口私有IP地址
 

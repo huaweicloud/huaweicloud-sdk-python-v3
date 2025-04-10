@@ -29,7 +29,7 @@ class GlobalEipInfo:
     }
 
     def __init__(self, global_eip_id=None, global_eip_address=None, ip_version=None):
-        """GlobalEipInfo
+        r"""GlobalEipInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class GlobalEipInfo:
 
     @property
     def global_eip_id(self):
-        """Gets the global_eip_id of this GlobalEipInfo.
+        r"""Gets the global_eip_id of this GlobalEipInfo.
 
         参数解释：global eip的id
 
@@ -68,7 +68,7 @@ class GlobalEipInfo:
 
     @global_eip_id.setter
     def global_eip_id(self, global_eip_id):
-        """Sets the global_eip_id of this GlobalEipInfo.
+        r"""Sets the global_eip_id of this GlobalEipInfo.
 
         参数解释：global eip的id
 
@@ -79,7 +79,7 @@ class GlobalEipInfo:
 
     @property
     def global_eip_address(self):
-        """Gets the global_eip_address of this GlobalEipInfo.
+        r"""Gets the global_eip_address of this GlobalEipInfo.
 
         参数解释：global eip的ip地址
 
@@ -90,7 +90,7 @@ class GlobalEipInfo:
 
     @global_eip_address.setter
     def global_eip_address(self, global_eip_address):
-        """Sets the global_eip_address of this GlobalEipInfo.
+        r"""Sets the global_eip_address of this GlobalEipInfo.
 
         参数解释：global eip的ip地址
 
@@ -101,7 +101,7 @@ class GlobalEipInfo:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this GlobalEipInfo.
+        r"""Gets the ip_version of this GlobalEipInfo.
 
         参数解释：IP版本信息。   取值范围： - 4，表示IPv4 - 6，表示IPv6   [不支持IPv6，请勿设置为6。](tag:dt)
 
@@ -112,7 +112,7 @@ class GlobalEipInfo:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this GlobalEipInfo.
+        r"""Sets the ip_version of this GlobalEipInfo.
 
         参数解释：IP版本信息。   取值范围： - 4，表示IPv4 - 6，表示IPv6   [不支持IPv6，请勿设置为6。](tag:dt)
 

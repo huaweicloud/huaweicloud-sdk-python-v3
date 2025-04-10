@@ -27,7 +27,7 @@ class ListVgwsRequest:
     }
 
     def __init__(self, vgw_id=None, enterprise_project_id=None):
-        """ListVgwsRequest
+        r"""ListVgwsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListVgwsRequest:
 
     @property
     def vgw_id(self):
-        """Gets the vgw_id of this ListVgwsRequest.
+        r"""Gets the vgw_id of this ListVgwsRequest.
 
         vgw ID
 
@@ -61,7 +61,7 @@ class ListVgwsRequest:
 
     @vgw_id.setter
     def vgw_id(self, vgw_id):
-        """Sets the vgw_id of this ListVgwsRequest.
+        r"""Sets the vgw_id of this ListVgwsRequest.
 
         vgw ID
 
@@ -72,7 +72,7 @@ class ListVgwsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListVgwsRequest.
+        r"""Gets the enterprise_project_id of this ListVgwsRequest.
 
         企业项目id
 
@@ -83,7 +83,7 @@ class ListVgwsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListVgwsRequest.
+        r"""Sets the enterprise_project_id of this ListVgwsRequest.
 
         企业项目id
 

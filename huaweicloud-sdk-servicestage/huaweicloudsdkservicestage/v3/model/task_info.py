@@ -37,7 +37,7 @@ class TaskInfo:
     }
 
     def __init__(self, created_at=None, update_at=None, messages=None, task_id=None, task_name=None, task_status=None, task_type=None):
-        """TaskInfo
+        r"""TaskInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class TaskInfo:
 
     @property
     def created_at(self):
-        """Gets the created_at of this TaskInfo.
+        r"""Gets the created_at of this TaskInfo.
 
         :return: The created_at of this TaskInfo.
         :rtype: str
@@ -94,7 +94,7 @@ class TaskInfo:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this TaskInfo.
+        r"""Sets the created_at of this TaskInfo.
 
         :param created_at: The created_at of this TaskInfo.
         :type created_at: str
@@ -103,7 +103,7 @@ class TaskInfo:
 
     @property
     def update_at(self):
-        """Gets the update_at of this TaskInfo.
+        r"""Gets the update_at of this TaskInfo.
 
         :return: The update_at of this TaskInfo.
         :rtype: str
@@ -112,7 +112,7 @@ class TaskInfo:
 
     @update_at.setter
     def update_at(self, update_at):
-        """Sets the update_at of this TaskInfo.
+        r"""Sets the update_at of this TaskInfo.
 
         :param update_at: The update_at of this TaskInfo.
         :type update_at: str
@@ -121,7 +121,7 @@ class TaskInfo:
 
     @property
     def messages(self):
-        """Gets the messages of this TaskInfo.
+        r"""Gets the messages of this TaskInfo.
 
         :return: The messages of this TaskInfo.
         :rtype: str
@@ -130,7 +130,7 @@ class TaskInfo:
 
     @messages.setter
     def messages(self, messages):
-        """Sets the messages of this TaskInfo.
+        r"""Sets the messages of this TaskInfo.
 
         :param messages: The messages of this TaskInfo.
         :type messages: str
@@ -139,7 +139,7 @@ class TaskInfo:
 
     @property
     def task_id(self):
-        """Gets the task_id of this TaskInfo.
+        r"""Gets the task_id of this TaskInfo.
 
         :return: The task_id of this TaskInfo.
         :rtype: str
@@ -148,7 +148,7 @@ class TaskInfo:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this TaskInfo.
+        r"""Sets the task_id of this TaskInfo.
 
         :param task_id: The task_id of this TaskInfo.
         :type task_id: str
@@ -157,7 +157,7 @@ class TaskInfo:
 
     @property
     def task_name(self):
-        """Gets the task_name of this TaskInfo.
+        r"""Gets the task_name of this TaskInfo.
 
         :return: The task_name of this TaskInfo.
         :rtype: str
@@ -166,7 +166,7 @@ class TaskInfo:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this TaskInfo.
+        r"""Sets the task_name of this TaskInfo.
 
         :param task_name: The task_name of this TaskInfo.
         :type task_name: str
@@ -175,7 +175,7 @@ class TaskInfo:
 
     @property
     def task_status(self):
-        """Gets the task_status of this TaskInfo.
+        r"""Gets the task_status of this TaskInfo.
 
         :return: The task_status of this TaskInfo.
         :rtype: str
@@ -184,7 +184,7 @@ class TaskInfo:
 
     @task_status.setter
     def task_status(self, task_status):
-        """Sets the task_status of this TaskInfo.
+        r"""Sets the task_status of this TaskInfo.
 
         :param task_status: The task_status of this TaskInfo.
         :type task_status: str
@@ -193,7 +193,7 @@ class TaskInfo:
 
     @property
     def task_type(self):
-        """Gets the task_type of this TaskInfo.
+        r"""Gets the task_type of this TaskInfo.
 
         :return: The task_type of this TaskInfo.
         :rtype: str
@@ -202,7 +202,7 @@ class TaskInfo:
 
     @task_type.setter
     def task_type(self, task_type):
-        """Sets the task_type of this TaskInfo.
+        r"""Sets the task_type of this TaskInfo.
 
         :param task_type: The task_type of this TaskInfo.
         :type task_type: str

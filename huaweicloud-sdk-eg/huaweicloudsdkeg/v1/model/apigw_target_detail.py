@@ -27,7 +27,7 @@ class ApigwTargetDetail:
     }
 
     def __init__(self, url=None, invocation_http_parameters=None):
-        """ApigwTargetDetail
+        r"""ApigwTargetDetail
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ApigwTargetDetail:
 
     @property
     def url(self):
-        """Gets the url of this ApigwTargetDetail.
+        r"""Gets the url of this ApigwTargetDetail.
 
         目标url
 
@@ -60,7 +60,7 @@ class ApigwTargetDetail:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ApigwTargetDetail.
+        r"""Sets the url of this ApigwTargetDetail.
 
         目标url
 
@@ -71,7 +71,7 @@ class ApigwTargetDetail:
 
     @property
     def invocation_http_parameters(self):
-        """Gets the invocation_http_parameters of this ApigwTargetDetail.
+        r"""Gets the invocation_http_parameters of this ApigwTargetDetail.
 
         :return: The invocation_http_parameters of this ApigwTargetDetail.
         :rtype: :class:`huaweicloudsdkeg.v1.InvocationHttpParameters`
@@ -80,7 +80,7 @@ class ApigwTargetDetail:
 
     @invocation_http_parameters.setter
     def invocation_http_parameters(self, invocation_http_parameters):
-        """Sets the invocation_http_parameters of this ApigwTargetDetail.
+        r"""Sets the invocation_http_parameters of this ApigwTargetDetail.
 
         :param invocation_http_parameters: The invocation_http_parameters of this ApigwTargetDetail.
         :type invocation_http_parameters: :class:`huaweicloudsdkeg.v1.InvocationHttpParameters`

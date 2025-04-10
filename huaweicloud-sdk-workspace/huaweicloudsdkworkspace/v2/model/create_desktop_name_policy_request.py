@@ -25,7 +25,7 @@ class CreateDesktopNamePolicyRequest:
     }
 
     def __init__(self, body=None):
-        """CreateDesktopNamePolicyRequest
+        r"""CreateDesktopNamePolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateDesktopNamePolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDesktopNamePolicyRequest.
+        r"""Gets the body of this CreateDesktopNamePolicyRequest.
 
         :return: The body of this CreateDesktopNamePolicyRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.CreateDesktopNamePolicyReq`
@@ -52,7 +52,7 @@ class CreateDesktopNamePolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDesktopNamePolicyRequest.
+        r"""Sets the body of this CreateDesktopNamePolicyRequest.
 
         :param body: The body of this CreateDesktopNamePolicyRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.CreateDesktopNamePolicyReq`

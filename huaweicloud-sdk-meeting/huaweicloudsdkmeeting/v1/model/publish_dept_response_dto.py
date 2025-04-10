@@ -27,7 +27,7 @@ class PublishDeptResponseDTO:
     }
 
     def __init__(self, dept_code=None, dept_name=None):
-        """PublishDeptResponseDTO
+        r"""PublishDeptResponseDTO
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class PublishDeptResponseDTO:
 
     @property
     def dept_code(self):
-        """Gets the dept_code of this PublishDeptResponseDTO.
+        r"""Gets the dept_code of this PublishDeptResponseDTO.
 
         部门编码。
 
@@ -61,7 +61,7 @@ class PublishDeptResponseDTO:
 
     @dept_code.setter
     def dept_code(self, dept_code):
-        """Sets the dept_code of this PublishDeptResponseDTO.
+        r"""Sets the dept_code of this PublishDeptResponseDTO.
 
         部门编码。
 
@@ -72,7 +72,7 @@ class PublishDeptResponseDTO:
 
     @property
     def dept_name(self):
-        """Gets the dept_name of this PublishDeptResponseDTO.
+        r"""Gets the dept_name of this PublishDeptResponseDTO.
 
         部门名称。
 
@@ -83,7 +83,7 @@ class PublishDeptResponseDTO:
 
     @dept_name.setter
     def dept_name(self, dept_name):
-        """Sets the dept_name of this PublishDeptResponseDTO.
+        r"""Sets the dept_name of this PublishDeptResponseDTO.
 
         部门名称。
 

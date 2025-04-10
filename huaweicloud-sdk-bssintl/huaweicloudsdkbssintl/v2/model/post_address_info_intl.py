@@ -31,7 +31,7 @@ class PostAddressInfoIntl:
     }
 
     def __init__(self, address=None, recipients=None, zip_code=None, mobile_phone=None):
-        """PostAddressInfoIntl
+        r"""PostAddressInfoIntl
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class PostAddressInfoIntl:
 
     @property
     def address(self):
-        """Gets the address of this PostAddressInfoIntl.
+        r"""Gets the address of this PostAddressInfoIntl.
 
         收件人地址。
 
@@ -75,7 +75,7 @@ class PostAddressInfoIntl:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this PostAddressInfoIntl.
+        r"""Sets the address of this PostAddressInfoIntl.
 
         收件人地址。
 
@@ -86,7 +86,7 @@ class PostAddressInfoIntl:
 
     @property
     def recipients(self):
-        """Gets the recipients of this PostAddressInfoIntl.
+        r"""Gets the recipients of this PostAddressInfoIntl.
 
         收件人。
 
@@ -97,7 +97,7 @@ class PostAddressInfoIntl:
 
     @recipients.setter
     def recipients(self, recipients):
-        """Sets the recipients of this PostAddressInfoIntl.
+        r"""Sets the recipients of this PostAddressInfoIntl.
 
         收件人。
 
@@ -108,7 +108,7 @@ class PostAddressInfoIntl:
 
     @property
     def zip_code(self):
-        """Gets the zip_code of this PostAddressInfoIntl.
+        r"""Gets the zip_code of this PostAddressInfoIntl.
 
         收件所在地邮政编码。
 
@@ -119,7 +119,7 @@ class PostAddressInfoIntl:
 
     @zip_code.setter
     def zip_code(self, zip_code):
-        """Sets the zip_code of this PostAddressInfoIntl.
+        r"""Sets the zip_code of this PostAddressInfoIntl.
 
         收件所在地邮政编码。
 
@@ -130,7 +130,7 @@ class PostAddressInfoIntl:
 
     @property
     def mobile_phone(self):
-        """Gets the mobile_phone of this PostAddressInfoIntl.
+        r"""Gets the mobile_phone of this PostAddressInfoIntl.
 
         收件人手机号码。
 
@@ -141,7 +141,7 @@ class PostAddressInfoIntl:
 
     @mobile_phone.setter
     def mobile_phone(self, mobile_phone):
-        """Sets the mobile_phone of this PostAddressInfoIntl.
+        r"""Sets the mobile_phone of this PostAddressInfoIntl.
 
         收件人手机号码。
 

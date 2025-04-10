@@ -47,7 +47,7 @@ class InsurancePolicyResult:
     }
 
     def __init__(self, bank_name=None, bill_number=None, company=None, effective_date=None, applicant_name=None, applicant_sex=None, applicant_birthday=None, applicant_id_type=None, applicant_id_number=None, insurant_list=None, beneficiary_list=None, insurance_list=None):
-        """InsurancePolicyResult
+        r"""InsurancePolicyResult
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class InsurancePolicyResult:
 
     @property
     def bank_name(self):
-        """Gets the bank_name of this InsurancePolicyResult.
+        r"""Gets the bank_name of this InsurancePolicyResult.
 
         发卡行。 
 
@@ -131,7 +131,7 @@ class InsurancePolicyResult:
 
     @bank_name.setter
     def bank_name(self, bank_name):
-        """Sets the bank_name of this InsurancePolicyResult.
+        r"""Sets the bank_name of this InsurancePolicyResult.
 
         发卡行。 
 
@@ -142,7 +142,7 @@ class InsurancePolicyResult:
 
     @property
     def bill_number(self):
-        """Gets the bill_number of this InsurancePolicyResult.
+        r"""Gets the bill_number of this InsurancePolicyResult.
 
         :return: The bill_number of this InsurancePolicyResult.
         :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
@@ -151,7 +151,7 @@ class InsurancePolicyResult:
 
     @bill_number.setter
     def bill_number(self, bill_number):
-        """Sets the bill_number of this InsurancePolicyResult.
+        r"""Sets the bill_number of this InsurancePolicyResult.
 
         :param bill_number: The bill_number of this InsurancePolicyResult.
         :type bill_number: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
@@ -160,7 +160,7 @@ class InsurancePolicyResult:
 
     @property
     def company(self):
-        """Gets the company of this InsurancePolicyResult.
+        r"""Gets the company of this InsurancePolicyResult.
 
         :return: The company of this InsurancePolicyResult.
         :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
@@ -169,7 +169,7 @@ class InsurancePolicyResult:
 
     @company.setter
     def company(self, company):
-        """Sets the company of this InsurancePolicyResult.
+        r"""Sets the company of this InsurancePolicyResult.
 
         :param company: The company of this InsurancePolicyResult.
         :type company: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
@@ -178,7 +178,7 @@ class InsurancePolicyResult:
 
     @property
     def effective_date(self):
-        """Gets the effective_date of this InsurancePolicyResult.
+        r"""Gets the effective_date of this InsurancePolicyResult.
 
         :return: The effective_date of this InsurancePolicyResult.
         :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
@@ -187,7 +187,7 @@ class InsurancePolicyResult:
 
     @effective_date.setter
     def effective_date(self, effective_date):
-        """Sets the effective_date of this InsurancePolicyResult.
+        r"""Sets the effective_date of this InsurancePolicyResult.
 
         :param effective_date: The effective_date of this InsurancePolicyResult.
         :type effective_date: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
@@ -196,7 +196,7 @@ class InsurancePolicyResult:
 
     @property
     def applicant_name(self):
-        """Gets the applicant_name of this InsurancePolicyResult.
+        r"""Gets the applicant_name of this InsurancePolicyResult.
 
         :return: The applicant_name of this InsurancePolicyResult.
         :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
@@ -205,7 +205,7 @@ class InsurancePolicyResult:
 
     @applicant_name.setter
     def applicant_name(self, applicant_name):
-        """Sets the applicant_name of this InsurancePolicyResult.
+        r"""Sets the applicant_name of this InsurancePolicyResult.
 
         :param applicant_name: The applicant_name of this InsurancePolicyResult.
         :type applicant_name: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
@@ -214,7 +214,7 @@ class InsurancePolicyResult:
 
     @property
     def applicant_sex(self):
-        """Gets the applicant_sex of this InsurancePolicyResult.
+        r"""Gets the applicant_sex of this InsurancePolicyResult.
 
         :return: The applicant_sex of this InsurancePolicyResult.
         :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
@@ -223,7 +223,7 @@ class InsurancePolicyResult:
 
     @applicant_sex.setter
     def applicant_sex(self, applicant_sex):
-        """Sets the applicant_sex of this InsurancePolicyResult.
+        r"""Sets the applicant_sex of this InsurancePolicyResult.
 
         :param applicant_sex: The applicant_sex of this InsurancePolicyResult.
         :type applicant_sex: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
@@ -232,7 +232,7 @@ class InsurancePolicyResult:
 
     @property
     def applicant_birthday(self):
-        """Gets the applicant_birthday of this InsurancePolicyResult.
+        r"""Gets the applicant_birthday of this InsurancePolicyResult.
 
         :return: The applicant_birthday of this InsurancePolicyResult.
         :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
@@ -241,7 +241,7 @@ class InsurancePolicyResult:
 
     @applicant_birthday.setter
     def applicant_birthday(self, applicant_birthday):
-        """Sets the applicant_birthday of this InsurancePolicyResult.
+        r"""Sets the applicant_birthday of this InsurancePolicyResult.
 
         :param applicant_birthday: The applicant_birthday of this InsurancePolicyResult.
         :type applicant_birthday: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
@@ -250,7 +250,7 @@ class InsurancePolicyResult:
 
     @property
     def applicant_id_type(self):
-        """Gets the applicant_id_type of this InsurancePolicyResult.
+        r"""Gets the applicant_id_type of this InsurancePolicyResult.
 
         :return: The applicant_id_type of this InsurancePolicyResult.
         :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
@@ -259,7 +259,7 @@ class InsurancePolicyResult:
 
     @applicant_id_type.setter
     def applicant_id_type(self, applicant_id_type):
-        """Sets the applicant_id_type of this InsurancePolicyResult.
+        r"""Sets the applicant_id_type of this InsurancePolicyResult.
 
         :param applicant_id_type: The applicant_id_type of this InsurancePolicyResult.
         :type applicant_id_type: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
@@ -268,7 +268,7 @@ class InsurancePolicyResult:
 
     @property
     def applicant_id_number(self):
-        """Gets the applicant_id_number of this InsurancePolicyResult.
+        r"""Gets the applicant_id_number of this InsurancePolicyResult.
 
         :return: The applicant_id_number of this InsurancePolicyResult.
         :rtype: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
@@ -277,7 +277,7 @@ class InsurancePolicyResult:
 
     @applicant_id_number.setter
     def applicant_id_number(self, applicant_id_number):
-        """Sets the applicant_id_number of this InsurancePolicyResult.
+        r"""Sets the applicant_id_number of this InsurancePolicyResult.
 
         :param applicant_id_number: The applicant_id_number of this InsurancePolicyResult.
         :type applicant_id_number: :class:`huaweicloudsdkocr.v1.InsurancePolicyDetail`
@@ -286,7 +286,7 @@ class InsurancePolicyResult:
 
     @property
     def insurant_list(self):
-        """Gets the insurant_list of this InsurancePolicyResult.
+        r"""Gets the insurant_list of this InsurancePolicyResult.
 
         被保人列表（第一个默认为主被保人）。 
 
@@ -297,7 +297,7 @@ class InsurancePolicyResult:
 
     @insurant_list.setter
     def insurant_list(self, insurant_list):
-        """Sets the insurant_list of this InsurancePolicyResult.
+        r"""Sets the insurant_list of this InsurancePolicyResult.
 
         被保人列表（第一个默认为主被保人）。 
 
@@ -308,7 +308,7 @@ class InsurancePolicyResult:
 
     @property
     def beneficiary_list(self):
-        """Gets the beneficiary_list of this InsurancePolicyResult.
+        r"""Gets the beneficiary_list of this InsurancePolicyResult.
 
         受益人列表。 
 
@@ -319,7 +319,7 @@ class InsurancePolicyResult:
 
     @beneficiary_list.setter
     def beneficiary_list(self, beneficiary_list):
-        """Sets the beneficiary_list of this InsurancePolicyResult.
+        r"""Sets the beneficiary_list of this InsurancePolicyResult.
 
         受益人列表。 
 
@@ -330,7 +330,7 @@ class InsurancePolicyResult:
 
     @property
     def insurance_list(self):
-        """Gets the insurance_list of this InsurancePolicyResult.
+        r"""Gets the insurance_list of this InsurancePolicyResult.
 
         保险项目信息列表。 
 
@@ -341,7 +341,7 @@ class InsurancePolicyResult:
 
     @insurance_list.setter
     def insurance_list(self, insurance_list):
-        """Sets the insurance_list of this InsurancePolicyResult.
+        r"""Sets the insurance_list of this InsurancePolicyResult.
 
         保险项目信息列表。 
 

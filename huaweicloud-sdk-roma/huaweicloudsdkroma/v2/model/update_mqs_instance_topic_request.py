@@ -27,7 +27,7 @@ class UpdateMqsInstanceTopicRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """UpdateMqsInstanceTopicRequest
+        r"""UpdateMqsInstanceTopicRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateMqsInstanceTopicRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateMqsInstanceTopicRequest.
+        r"""Gets the instance_id of this UpdateMqsInstanceTopicRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class UpdateMqsInstanceTopicRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateMqsInstanceTopicRequest.
+        r"""Sets the instance_id of this UpdateMqsInstanceTopicRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class UpdateMqsInstanceTopicRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateMqsInstanceTopicRequest.
+        r"""Gets the body of this UpdateMqsInstanceTopicRequest.
 
         :return: The body of this UpdateMqsInstanceTopicRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateMqsInstanceTopicReq`
@@ -80,7 +80,7 @@ class UpdateMqsInstanceTopicRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateMqsInstanceTopicRequest.
+        r"""Sets the body of this UpdateMqsInstanceTopicRequest.
 
         :param body: The body of this UpdateMqsInstanceTopicRequest.
         :type body: :class:`huaweicloudsdkroma.v2.UpdateMqsInstanceTopicReq`

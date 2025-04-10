@@ -29,7 +29,7 @@ class ListTaskParameterRequest:
     }
 
     def __init__(self, project_id=None, task_id=None, body=None):
-        """ListTaskParameterRequest
+        r"""ListTaskParameterRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ListTaskParameterRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListTaskParameterRequest.
+        r"""Gets the project_id of this ListTaskParameterRequest.
 
         项目ID
 
@@ -66,7 +66,7 @@ class ListTaskParameterRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListTaskParameterRequest.
+        r"""Sets the project_id of this ListTaskParameterRequest.
 
         项目ID
 
@@ -77,7 +77,7 @@ class ListTaskParameterRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ListTaskParameterRequest.
+        r"""Gets the task_id of this ListTaskParameterRequest.
 
         任务ID
 
@@ -88,7 +88,7 @@ class ListTaskParameterRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ListTaskParameterRequest.
+        r"""Sets the task_id of this ListTaskParameterRequest.
 
         任务ID
 
@@ -99,7 +99,7 @@ class ListTaskParameterRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListTaskParameterRequest.
+        r"""Gets the body of this ListTaskParameterRequest.
 
         :return: The body of this ListTaskParameterRequest.
         :rtype: :class:`huaweicloudsdkcodeartscheck.v2.ConfigTaskParameterBody`
@@ -108,7 +108,7 @@ class ListTaskParameterRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListTaskParameterRequest.
+        r"""Sets the body of this ListTaskParameterRequest.
 
         :param body: The body of this ListTaskParameterRequest.
         :type body: :class:`huaweicloudsdkcodeartscheck.v2.ConfigTaskParameterBody`

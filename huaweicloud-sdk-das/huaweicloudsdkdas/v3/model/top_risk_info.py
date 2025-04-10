@@ -33,7 +33,7 @@ class TopRiskInfo:
     }
 
     def __init__(self, instance_id=None, instance_name=None, node_id=None, metric_names=None, metric_values=None):
-        """TopRiskInfo
+        r"""TopRiskInfo
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class TopRiskInfo:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this TopRiskInfo.
+        r"""Gets the instance_id of this TopRiskInfo.
 
         实例id。
 
@@ -77,7 +77,7 @@ class TopRiskInfo:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this TopRiskInfo.
+        r"""Sets the instance_id of this TopRiskInfo.
 
         实例id。
 
@@ -88,7 +88,7 @@ class TopRiskInfo:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this TopRiskInfo.
+        r"""Gets the instance_name of this TopRiskInfo.
 
         实例名称。
 
@@ -99,7 +99,7 @@ class TopRiskInfo:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this TopRiskInfo.
+        r"""Sets the instance_name of this TopRiskInfo.
 
         实例名称。
 
@@ -110,7 +110,7 @@ class TopRiskInfo:
 
     @property
     def node_id(self):
-        """Gets the node_id of this TopRiskInfo.
+        r"""Gets the node_id of this TopRiskInfo.
 
         节点ID。
 
@@ -121,7 +121,7 @@ class TopRiskInfo:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this TopRiskInfo.
+        r"""Sets the node_id of this TopRiskInfo.
 
         节点ID。
 
@@ -132,7 +132,7 @@ class TopRiskInfo:
 
     @property
     def metric_names(self):
-        """Gets the metric_names of this TopRiskInfo.
+        r"""Gets the metric_names of this TopRiskInfo.
 
         指标名称。
 
@@ -143,7 +143,7 @@ class TopRiskInfo:
 
     @metric_names.setter
     def metric_names(self, metric_names):
-        """Sets the metric_names of this TopRiskInfo.
+        r"""Sets the metric_names of this TopRiskInfo.
 
         指标名称。
 
@@ -154,7 +154,7 @@ class TopRiskInfo:
 
     @property
     def metric_values(self):
-        """Gets the metric_values of this TopRiskInfo.
+        r"""Gets the metric_values of this TopRiskInfo.
 
         指标值,单位%。
 
@@ -165,7 +165,7 @@ class TopRiskInfo:
 
     @metric_values.setter
     def metric_values(self, metric_values):
-        """Sets the metric_values of this TopRiskInfo.
+        r"""Sets the metric_values of this TopRiskInfo.
 
         指标值,单位%。
 

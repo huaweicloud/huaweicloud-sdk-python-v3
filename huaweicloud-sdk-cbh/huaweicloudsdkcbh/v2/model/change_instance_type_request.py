@@ -29,7 +29,7 @@ class ChangeInstanceTypeRequest:
     }
 
     def __init__(self, server_id=None, availability_zone=None, is_auto_pay=None):
-        """ChangeInstanceTypeRequest
+        r"""ChangeInstanceTypeRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ChangeInstanceTypeRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ChangeInstanceTypeRequest.
+        r"""Gets the server_id of this ChangeInstanceTypeRequest.
 
         实例id
 
@@ -67,7 +67,7 @@ class ChangeInstanceTypeRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ChangeInstanceTypeRequest.
+        r"""Sets the server_id of this ChangeInstanceTypeRequest.
 
         实例id
 
@@ -78,7 +78,7 @@ class ChangeInstanceTypeRequest:
 
     @property
     def availability_zone(self):
-        """Gets the availability_zone of this ChangeInstanceTypeRequest.
+        r"""Gets the availability_zone of this ChangeInstanceTypeRequest.
 
         可用分区名称。  可参考接口\"获取服务可用区\"获取
 
@@ -89,7 +89,7 @@ class ChangeInstanceTypeRequest:
 
     @availability_zone.setter
     def availability_zone(self, availability_zone):
-        """Sets the availability_zone of this ChangeInstanceTypeRequest.
+        r"""Sets the availability_zone of this ChangeInstanceTypeRequest.
 
         可用分区名称。  可参考接口\"获取服务可用区\"获取
 
@@ -100,7 +100,7 @@ class ChangeInstanceTypeRequest:
 
     @property
     def is_auto_pay(self):
-        """Gets the is_auto_pay of this ChangeInstanceTypeRequest.
+        r"""Gets the is_auto_pay of this ChangeInstanceTypeRequest.
 
         是否自动支付，下单订购后，是否自动从客户的华为云账户中支付，而不需要客户手动去进行支付。 - 1：是（会自动选择折扣和优惠券进行优惠，然后自动从客户华为云账户中支付），自动支付失败后会生成订单成功(该订单应付金额是优惠后金额)、但订单状态为“待支付”，等待客户手动支付(手动支付时，客户还可以修改系统自动选择的折扣和优惠券) - 0：否（需要客户手动去支付，客户可以选择折扣和优惠券。）  默认值为“0”
 
@@ -111,7 +111,7 @@ class ChangeInstanceTypeRequest:
 
     @is_auto_pay.setter
     def is_auto_pay(self, is_auto_pay):
-        """Sets the is_auto_pay of this ChangeInstanceTypeRequest.
+        r"""Sets the is_auto_pay of this ChangeInstanceTypeRequest.
 
         是否自动支付，下单订购后，是否自动从客户的华为云账户中支付，而不需要客户手动去进行支付。 - 1：是（会自动选择折扣和优惠券进行优惠，然后自动从客户华为云账户中支付），自动支付失败后会生成订单成功(该订单应付金额是优惠后金额)、但订单状态为“待支付”，等待客户手动支付(手动支付时，客户还可以修改系统自动选择的折扣和优惠券) - 0：否（需要客户手动去支付，客户可以选择折扣和优惠券。）  默认值为“0”
 

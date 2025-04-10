@@ -29,7 +29,7 @@ class OpenTSDBTags:
     }
 
     def __init__(self, name=None, type=None, value=None):
-        """OpenTSDBTags
+        r"""OpenTSDBTags
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class OpenTSDBTags:
 
     @property
     def name(self):
-        """Gets the name of this OpenTSDBTags.
+        r"""Gets the name of this OpenTSDBTags.
 
         存储该通道数据的OpenTSDB数据的tag名称。  取值范围：1～32，只能包含英文字母、数字和下划线。
 
@@ -65,7 +65,7 @@ class OpenTSDBTags:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this OpenTSDBTags.
+        r"""Sets the name of this OpenTSDBTags.
 
         存储该通道数据的OpenTSDB数据的tag名称。  取值范围：1～32，只能包含英文字母、数字和下划线。
 
@@ -76,7 +76,7 @@ class OpenTSDBTags:
 
     @property
     def type(self):
-        """Gets the type of this OpenTSDBTags.
+        r"""Gets the type of this OpenTSDBTags.
 
         通道内用户JSON数据对应JSON属性的类型名称。  取值范围：  - Bigint - Double - Boolean - Timestamp - String - Decimal
 
@@ -87,7 +87,7 @@ class OpenTSDBTags:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this OpenTSDBTags.
+        r"""Sets the type of this OpenTSDBTags.
 
         通道内用户JSON数据对应JSON属性的类型名称。  取值范围：  - Bigint - Double - Boolean - Timestamp - String - Decimal
 
@@ -98,7 +98,7 @@ class OpenTSDBTags:
 
     @property
     def value(self):
-        """Gets the value of this OpenTSDBTags.
+        r"""Gets the value of this OpenTSDBTags.
 
         常量或通道内用户数据的JSON属性名称。  取值范围：1～32，只能包含英文字母、数字和下划线。
 
@@ -109,7 +109,7 @@ class OpenTSDBTags:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this OpenTSDBTags.
+        r"""Sets the value of this OpenTSDBTags.
 
         常量或通道内用户数据的JSON属性名称。  取值范围：1～32，只能包含英文字母、数字和下划线。
 

@@ -30,7 +30,7 @@ class ShowConfigSettingResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None, migrate_type=None, configurations=None):
-        """ShowConfigSettingResponse
+        r"""ShowConfigSettingResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowConfigSettingResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowConfigSettingResponse.
+        r"""Gets the task_id of this ShowConfigSettingResponse.
 
         任务ID
 
@@ -69,7 +69,7 @@ class ShowConfigSettingResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowConfigSettingResponse.
+        r"""Sets the task_id of this ShowConfigSettingResponse.
 
         任务ID
 
@@ -80,7 +80,7 @@ class ShowConfigSettingResponse(SdkResponse):
 
     @property
     def migrate_type(self):
-        """Gets the migrate_type of this ShowConfigSettingResponse.
+        r"""Gets the migrate_type of this ShowConfigSettingResponse.
 
         迁移类型
 
@@ -91,7 +91,7 @@ class ShowConfigSettingResponse(SdkResponse):
 
     @migrate_type.setter
     def migrate_type(self, migrate_type):
-        """Sets the migrate_type of this ShowConfigSettingResponse.
+        r"""Sets the migrate_type of this ShowConfigSettingResponse.
 
         迁移类型
 
@@ -102,7 +102,7 @@ class ShowConfigSettingResponse(SdkResponse):
 
     @property
     def configurations(self):
-        """Gets the configurations of this ShowConfigSettingResponse.
+        r"""Gets the configurations of this ShowConfigSettingResponse.
 
         配置项的具体配置信息
 
@@ -113,7 +113,7 @@ class ShowConfigSettingResponse(SdkResponse):
 
     @configurations.setter
     def configurations(self, configurations):
-        """Sets the configurations of this ShowConfigSettingResponse.
+        r"""Sets the configurations of this ShowConfigSettingResponse.
 
         配置项的具体配置信息
 

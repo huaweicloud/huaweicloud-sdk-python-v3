@@ -33,7 +33,7 @@ class DeviceControlSetReqDTO:
     }
 
     def __init__(self, control_id=None, service_id=None, priority=None, end_time=None, properties=None):
-        """DeviceControlSetReqDTO
+        r"""DeviceControlSetReqDTO
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class DeviceControlSetReqDTO:
 
     @property
     def control_id(self):
-        """Gets the control_id of this DeviceControlSetReqDTO.
+        r"""Gets the control_id of this DeviceControlSetReqDTO.
 
         控制id
 
@@ -79,7 +79,7 @@ class DeviceControlSetReqDTO:
 
     @control_id.setter
     def control_id(self, control_id):
-        """Sets the control_id of this DeviceControlSetReqDTO.
+        r"""Sets the control_id of this DeviceControlSetReqDTO.
 
         控制id
 
@@ -90,7 +90,7 @@ class DeviceControlSetReqDTO:
 
     @property
     def service_id(self):
-        """Gets the service_id of this DeviceControlSetReqDTO.
+        r"""Gets the service_id of this DeviceControlSetReqDTO.
 
         服务id，可选
 
@@ -101,7 +101,7 @@ class DeviceControlSetReqDTO:
 
     @service_id.setter
     def service_id(self, service_id):
-        """Sets the service_id of this DeviceControlSetReqDTO.
+        r"""Sets the service_id of this DeviceControlSetReqDTO.
 
         服务id，可选
 
@@ -112,7 +112,7 @@ class DeviceControlSetReqDTO:
 
     @property
     def priority(self):
-        """Gets the priority of this DeviceControlSetReqDTO.
+        r"""Gets the priority of this DeviceControlSetReqDTO.
 
         调度计划优先级。
 
@@ -123,7 +123,7 @@ class DeviceControlSetReqDTO:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this DeviceControlSetReqDTO.
+        r"""Sets the priority of this DeviceControlSetReqDTO.
 
         调度计划优先级。
 
@@ -134,7 +134,7 @@ class DeviceControlSetReqDTO:
 
     @property
     def end_time(self):
-        """Gets the end_time of this DeviceControlSetReqDTO.
+        r"""Gets the end_time of this DeviceControlSetReqDTO.
 
         控制结束时间，毫秒级时间戳
 
@@ -145,7 +145,7 @@ class DeviceControlSetReqDTO:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this DeviceControlSetReqDTO.
+        r"""Sets the end_time of this DeviceControlSetReqDTO.
 
         控制结束时间，毫秒级时间戳
 
@@ -156,7 +156,7 @@ class DeviceControlSetReqDTO:
 
     @property
     def properties(self):
-        """Gets the properties of this DeviceControlSetReqDTO.
+        r"""Gets the properties of this DeviceControlSetReqDTO.
 
         属性key和value的map，用于设置属性的值
 
@@ -167,7 +167,7 @@ class DeviceControlSetReqDTO:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this DeviceControlSetReqDTO.
+        r"""Sets the properties of this DeviceControlSetReqDTO.
 
         属性key和value的map，用于设置属性的值
 

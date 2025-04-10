@@ -31,7 +31,7 @@ class RespAddr:
     }
 
     def __init__(self, addr=None, version=None, os_ext_ip_stype=None, os_ext_ips_ma_cmac_addr=None):
-        """RespAddr
+        r"""RespAddr
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class RespAddr:
 
     @property
     def addr(self):
-        """Gets the addr of this RespAddr.
+        r"""Gets the addr of this RespAddr.
 
         云服务器的vpc ip。
 
@@ -73,7 +73,7 @@ class RespAddr:
 
     @addr.setter
     def addr(self, addr):
-        """Sets the addr of this RespAddr.
+        r"""Sets the addr of this RespAddr.
 
         云服务器的vpc ip。
 
@@ -84,7 +84,7 @@ class RespAddr:
 
     @property
     def version(self):
-        """Gets the version of this RespAddr.
+        r"""Gets the version of this RespAddr.
 
         云服务器的vpc版本。
 
@@ -95,7 +95,7 @@ class RespAddr:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this RespAddr.
+        r"""Sets the version of this RespAddr.
 
         云服务器的vpc版本。
 
@@ -106,7 +106,7 @@ class RespAddr:
 
     @property
     def os_ext_ip_stype(self):
-        """Gets the os_ext_ip_stype of this RespAddr.
+        r"""Gets the os_ext_ip_stype of this RespAddr.
 
         扩展属性，分配IP地址方式。
 
@@ -117,7 +117,7 @@ class RespAddr:
 
     @os_ext_ip_stype.setter
     def os_ext_ip_stype(self, os_ext_ip_stype):
-        """Sets the os_ext_ip_stype of this RespAddr.
+        r"""Sets the os_ext_ip_stype of this RespAddr.
 
         扩展属性，分配IP地址方式。
 
@@ -128,7 +128,7 @@ class RespAddr:
 
     @property
     def os_ext_ips_ma_cmac_addr(self):
-        """Gets the os_ext_ips_ma_cmac_addr of this RespAddr.
+        r"""Gets the os_ext_ips_ma_cmac_addr of this RespAddr.
 
         扩展属性，MAC地址。
 
@@ -139,7 +139,7 @@ class RespAddr:
 
     @os_ext_ips_ma_cmac_addr.setter
     def os_ext_ips_ma_cmac_addr(self, os_ext_ips_ma_cmac_addr):
-        """Sets the os_ext_ips_ma_cmac_addr of this RespAddr.
+        r"""Sets the os_ext_ips_ma_cmac_addr of this RespAddr.
 
         扩展属性，MAC地址。
 

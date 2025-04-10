@@ -31,7 +31,7 @@ class ColumnDetails:
     }
 
     def __init__(self, database=None, schema=None, table=None, column=None):
-        """ColumnDetails
+        r"""ColumnDetails
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ColumnDetails:
 
     @property
     def database(self):
-        """Gets the database of this ColumnDetails.
+        r"""Gets the database of this ColumnDetails.
 
         数据库名称
 
@@ -75,7 +75,7 @@ class ColumnDetails:
 
     @database.setter
     def database(self, database):
-        """Sets the database of this ColumnDetails.
+        r"""Sets the database of this ColumnDetails.
 
         数据库名称
 
@@ -86,7 +86,7 @@ class ColumnDetails:
 
     @property
     def schema(self):
-        """Gets the schema of this ColumnDetails.
+        r"""Gets the schema of this ColumnDetails.
 
         逻辑库名称
 
@@ -97,7 +97,7 @@ class ColumnDetails:
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this ColumnDetails.
+        r"""Sets the schema of this ColumnDetails.
 
         逻辑库名称
 
@@ -108,7 +108,7 @@ class ColumnDetails:
 
     @property
     def table(self):
-        """Gets the table of this ColumnDetails.
+        r"""Gets the table of this ColumnDetails.
 
         表名称
 
@@ -119,7 +119,7 @@ class ColumnDetails:
 
     @table.setter
     def table(self, table):
-        """Sets the table of this ColumnDetails.
+        r"""Sets the table of this ColumnDetails.
 
         表名称
 
@@ -130,7 +130,7 @@ class ColumnDetails:
 
     @property
     def column(self):
-        """Gets the column of this ColumnDetails.
+        r"""Gets the column of this ColumnDetails.
 
         字段名称
 
@@ -141,7 +141,7 @@ class ColumnDetails:
 
     @column.setter
     def column(self, column):
-        """Sets the column of this ColumnDetails.
+        r"""Sets the column of this ColumnDetails.
 
         字段名称
 

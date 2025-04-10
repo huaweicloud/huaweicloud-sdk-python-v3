@@ -35,7 +35,7 @@ class ProxyNode:
     }
 
     def __init__(self, id=None, name=None, role=None, az_code=None, status=None, frozen_flag=None):
-        """ProxyNode
+        r"""ProxyNode
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ProxyNode:
 
     @property
     def id(self):
-        """Gets the id of this ProxyNode.
+        r"""Gets the id of this ProxyNode.
 
         Proxy节点ID。
 
@@ -83,7 +83,7 @@ class ProxyNode:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ProxyNode.
+        r"""Sets the id of this ProxyNode.
 
         Proxy节点ID。
 
@@ -94,7 +94,7 @@ class ProxyNode:
 
     @property
     def name(self):
-        """Gets the name of this ProxyNode.
+        r"""Gets the name of this ProxyNode.
 
         Proxy节点名称。
 
@@ -105,7 +105,7 @@ class ProxyNode:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ProxyNode.
+        r"""Sets the name of this ProxyNode.
 
         Proxy节点名称。
 
@@ -116,7 +116,7 @@ class ProxyNode:
 
     @property
     def role(self):
-        """Gets the role of this ProxyNode.
+        r"""Gets the role of this ProxyNode.
 
         Proxy节点角色。 - master：主节点。 - slave：备节点。
 
@@ -127,7 +127,7 @@ class ProxyNode:
 
     @role.setter
     def role(self, role):
-        """Sets the role of this ProxyNode.
+        r"""Sets the role of this ProxyNode.
 
         Proxy节点角色。 - master：主节点。 - slave：备节点。
 
@@ -138,7 +138,7 @@ class ProxyNode:
 
     @property
     def az_code(self):
-        """Gets the az_code of this ProxyNode.
+        r"""Gets the az_code of this ProxyNode.
 
         可用区。
 
@@ -149,7 +149,7 @@ class ProxyNode:
 
     @az_code.setter
     def az_code(self, az_code):
-        """Sets the az_code of this ProxyNode.
+        r"""Sets the az_code of this ProxyNode.
 
         可用区。
 
@@ -160,7 +160,7 @@ class ProxyNode:
 
     @property
     def status(self):
-        """Gets the status of this ProxyNode.
+        r"""Gets the status of this ProxyNode.
 
         Proxy节点状态。 - normal：正常。 - abnormal：异常。 - creating：创建中。 - deleted：已删除。
 
@@ -171,7 +171,7 @@ class ProxyNode:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ProxyNode.
+        r"""Sets the status of this ProxyNode.
 
         Proxy节点状态。 - normal：正常。 - abnormal：异常。 - creating：创建中。 - deleted：已删除。
 
@@ -182,7 +182,7 @@ class ProxyNode:
 
     @property
     def frozen_flag(self):
-        """Gets the frozen_flag of this ProxyNode.
+        r"""Gets the frozen_flag of this ProxyNode.
 
         Proxy节点是否被冻结。 - 0：未冻结。 - 1：冻结。 - 2：冻结删除。
 
@@ -193,7 +193,7 @@ class ProxyNode:
 
     @frozen_flag.setter
     def frozen_flag(self, frozen_flag):
-        """Sets the frozen_flag of this ProxyNode.
+        r"""Sets the frozen_flag of this ProxyNode.
 
         Proxy节点是否被冻结。 - 0：未冻结。 - 1：冻结。 - 2：冻结删除。
 

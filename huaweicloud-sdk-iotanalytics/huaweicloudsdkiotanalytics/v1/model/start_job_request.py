@@ -31,7 +31,7 @@ class StartJobRequest:
     }
 
     def __init__(self, job_id=None, parallel=None, rtu=None, resume_savepoint=None):
-        """StartJobRequest
+        r"""StartJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class StartJobRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this StartJobRequest.
+        r"""Gets the job_id of this StartJobRequest.
 
         作业ID
 
@@ -74,7 +74,7 @@ class StartJobRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this StartJobRequest.
+        r"""Sets the job_id of this StartJobRequest.
 
         作业ID
 
@@ -85,7 +85,7 @@ class StartJobRequest:
 
     @property
     def parallel(self):
-        """Gets the parallel of this StartJobRequest.
+        r"""Gets the parallel of this StartJobRequest.
 
         运行作业的并发度
 
@@ -96,7 +96,7 @@ class StartJobRequest:
 
     @parallel.setter
     def parallel(self, parallel):
-        """Sets the parallel of this StartJobRequest.
+        r"""Sets the parallel of this StartJobRequest.
 
         运行作业的并发度
 
@@ -107,7 +107,7 @@ class StartJobRequest:
 
     @property
     def rtu(self):
-        """Gets the rtu of this StartJobRequest.
+        r"""Gets the rtu of this StartJobRequest.
 
         运行作业的RTU个数
 
@@ -118,7 +118,7 @@ class StartJobRequest:
 
     @rtu.setter
     def rtu(self, rtu):
-        """Sets the rtu of this StartJobRequest.
+        r"""Sets the rtu of this StartJobRequest.
 
         运行作业的RTU个数
 
@@ -129,7 +129,7 @@ class StartJobRequest:
 
     @property
     def resume_savepoint(self):
-        """Gets the resume_savepoint of this StartJobRequest.
+        r"""Gets the resume_savepoint of this StartJobRequest.
 
         运行作业使用历史缓存数据
 
@@ -140,7 +140,7 @@ class StartJobRequest:
 
     @resume_savepoint.setter
     def resume_savepoint(self, resume_savepoint):
-        """Sets the resume_savepoint of this StartJobRequest.
+        r"""Sets the resume_savepoint of this StartJobRequest.
 
         运行作业使用历史缓存数据
 

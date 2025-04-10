@@ -25,7 +25,7 @@ class ListAgencyRequest:
     }
 
     def __init__(self, policy_type=None):
-        """ListAgencyRequest
+        r"""ListAgencyRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListAgencyRequest:
 
     @property
     def policy_type(self):
-        """Gets the policy_type of this ListAgencyRequest.
+        r"""Gets the policy_type of this ListAgencyRequest.
 
         策略类型。支持模糊匹配
 
@@ -54,7 +54,7 @@ class ListAgencyRequest:
 
     @policy_type.setter
     def policy_type(self, policy_type):
-        """Sets the policy_type of this ListAgencyRequest.
+        r"""Sets the policy_type of this ListAgencyRequest.
 
         策略类型。支持模糊匹配
 

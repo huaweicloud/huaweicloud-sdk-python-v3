@@ -49,7 +49,7 @@ class Jobs:
     }
 
     def __init__(self, category=None, config_info=None, description=None, job_id=None, job_name=None, job_type=None, next_schedule_time=None, platform=None, resource_id=None, schedule=None, status=None, workspace_id=None, job_config=None):
-        """Jobs
+        r"""Jobs
 
         The model defined in huaweicloud sdk
 
@@ -126,7 +126,7 @@ class Jobs:
 
     @property
     def category(self):
-        """Gets the category of this Jobs.
+        r"""Gets the category of this Jobs.
 
         类别。
 
@@ -137,7 +137,7 @@ class Jobs:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this Jobs.
+        r"""Sets the category of this Jobs.
 
         类别。
 
@@ -148,7 +148,7 @@ class Jobs:
 
     @property
     def config_info(self):
-        """Gets the config_info of this Jobs.
+        r"""Gets the config_info of this Jobs.
 
         配置信息。
 
@@ -159,7 +159,7 @@ class Jobs:
 
     @config_info.setter
     def config_info(self, config_info):
-        """Sets the config_info of this Jobs.
+        r"""Sets the config_info of this Jobs.
 
         配置信息。
 
@@ -170,7 +170,7 @@ class Jobs:
 
     @property
     def description(self):
-        """Gets the description of this Jobs.
+        r"""Gets the description of this Jobs.
 
         描述。
 
@@ -181,7 +181,7 @@ class Jobs:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Jobs.
+        r"""Sets the description of this Jobs.
 
         描述。
 
@@ -192,7 +192,7 @@ class Jobs:
 
     @property
     def job_id(self):
-        """Gets the job_id of this Jobs.
+        r"""Gets the job_id of this Jobs.
 
         作业id。
 
@@ -203,7 +203,7 @@ class Jobs:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this Jobs.
+        r"""Sets the job_id of this Jobs.
 
         作业id。
 
@@ -214,7 +214,7 @@ class Jobs:
 
     @property
     def job_name(self):
-        """Gets the job_name of this Jobs.
+        r"""Gets the job_name of this Jobs.
 
         作业名称。
 
@@ -225,7 +225,7 @@ class Jobs:
 
     @job_name.setter
     def job_name(self, job_name):
-        """Sets the job_name of this Jobs.
+        r"""Sets the job_name of this Jobs.
 
         作业名称。
 
@@ -236,7 +236,7 @@ class Jobs:
 
     @property
     def job_type(self):
-        """Gets the job_type of this Jobs.
+        r"""Gets the job_type of this Jobs.
 
         作业类型。
 
@@ -247,7 +247,7 @@ class Jobs:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this Jobs.
+        r"""Sets the job_type of this Jobs.
 
         作业类型。
 
@@ -258,7 +258,7 @@ class Jobs:
 
     @property
     def next_schedule_time(self):
-        """Gets the next_schedule_time of this Jobs.
+        r"""Gets the next_schedule_time of this Jobs.
 
         下次调度时间。
 
@@ -269,7 +269,7 @@ class Jobs:
 
     @next_schedule_time.setter
     def next_schedule_time(self, next_schedule_time):
-        """Sets the next_schedule_time of this Jobs.
+        r"""Sets the next_schedule_time of this Jobs.
 
         下次调度时间。
 
@@ -280,7 +280,7 @@ class Jobs:
 
     @property
     def platform(self):
-        """Gets the platform of this Jobs.
+        r"""Gets the platform of this Jobs.
 
         平台。
 
@@ -291,7 +291,7 @@ class Jobs:
 
     @platform.setter
     def platform(self, platform):
-        """Sets the platform of this Jobs.
+        r"""Sets the platform of this Jobs.
 
         平台。
 
@@ -302,7 +302,7 @@ class Jobs:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this Jobs.
+        r"""Gets the resource_id of this Jobs.
 
         资源id。
 
@@ -313,7 +313,7 @@ class Jobs:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this Jobs.
+        r"""Sets the resource_id of this Jobs.
 
         资源id。
 
@@ -324,7 +324,7 @@ class Jobs:
 
     @property
     def schedule(self):
-        """Gets the schedule of this Jobs.
+        r"""Gets the schedule of this Jobs.
 
         调度参数。
 
@@ -335,7 +335,7 @@ class Jobs:
 
     @schedule.setter
     def schedule(self, schedule):
-        """Sets the schedule of this Jobs.
+        r"""Sets the schedule of this Jobs.
 
         调度参数。
 
@@ -346,7 +346,7 @@ class Jobs:
 
     @property
     def status(self):
-        """Gets the status of this Jobs.
+        r"""Gets the status of this Jobs.
 
         状态。
 
@@ -357,7 +357,7 @@ class Jobs:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Jobs.
+        r"""Sets the status of this Jobs.
 
         状态。
 
@@ -368,7 +368,7 @@ class Jobs:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this Jobs.
+        r"""Gets the workspace_id of this Jobs.
 
         工作空间id。
 
@@ -379,7 +379,7 @@ class Jobs:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this Jobs.
+        r"""Sets the workspace_id of this Jobs.
 
         工作空间id。
 
@@ -390,7 +390,7 @@ class Jobs:
 
     @property
     def job_config(self):
-        """Gets the job_config of this Jobs.
+        r"""Gets the job_config of this Jobs.
 
         :return: The job_config of this Jobs.
         :rtype: :class:`huaweicloudsdkres.v1.JobConfig`
@@ -399,7 +399,7 @@ class Jobs:
 
     @job_config.setter
     def job_config(self, job_config):
-        """Sets the job_config of this Jobs.
+        r"""Sets the job_config of this Jobs.
 
         :param job_config: The job_config of this Jobs.
         :type job_config: :class:`huaweicloudsdkres.v1.JobConfig`

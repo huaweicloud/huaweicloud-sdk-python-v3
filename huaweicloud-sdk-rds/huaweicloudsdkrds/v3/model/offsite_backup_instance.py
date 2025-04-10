@@ -39,7 +39,7 @@ class OffsiteBackupInstance:
     }
 
     def __init__(self, id=None, name=None, source_region=None, source_project_id=None, datastore=None, destination_region=None, destination_project_id=None, keep_days=None):
-        """OffsiteBackupInstance
+        r"""OffsiteBackupInstance
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class OffsiteBackupInstance:
 
     @property
     def id(self):
-        """Gets the id of this OffsiteBackupInstance.
+        r"""Gets the id of this OffsiteBackupInstance.
 
         实例ID。
 
@@ -102,7 +102,7 @@ class OffsiteBackupInstance:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this OffsiteBackupInstance.
+        r"""Sets the id of this OffsiteBackupInstance.
 
         实例ID。
 
@@ -113,7 +113,7 @@ class OffsiteBackupInstance:
 
     @property
     def name(self):
-        """Gets the name of this OffsiteBackupInstance.
+        r"""Gets the name of this OffsiteBackupInstance.
 
         创建的实例名称。
 
@@ -124,7 +124,7 @@ class OffsiteBackupInstance:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this OffsiteBackupInstance.
+        r"""Sets the name of this OffsiteBackupInstance.
 
         创建的实例名称。
 
@@ -135,7 +135,7 @@ class OffsiteBackupInstance:
 
     @property
     def source_region(self):
-        """Gets the source_region of this OffsiteBackupInstance.
+        r"""Gets the source_region of this OffsiteBackupInstance.
 
         源区域。
 
@@ -146,7 +146,7 @@ class OffsiteBackupInstance:
 
     @source_region.setter
     def source_region(self, source_region):
-        """Sets the source_region of this OffsiteBackupInstance.
+        r"""Sets the source_region of this OffsiteBackupInstance.
 
         源区域。
 
@@ -157,7 +157,7 @@ class OffsiteBackupInstance:
 
     @property
     def source_project_id(self):
-        """Gets the source_project_id of this OffsiteBackupInstance.
+        r"""Gets the source_project_id of this OffsiteBackupInstance.
 
         租户在源区域下的project ID。
 
@@ -168,7 +168,7 @@ class OffsiteBackupInstance:
 
     @source_project_id.setter
     def source_project_id(self, source_project_id):
-        """Sets the source_project_id of this OffsiteBackupInstance.
+        r"""Sets the source_project_id of this OffsiteBackupInstance.
 
         租户在源区域下的project ID。
 
@@ -179,7 +179,7 @@ class OffsiteBackupInstance:
 
     @property
     def datastore(self):
-        """Gets the datastore of this OffsiteBackupInstance.
+        r"""Gets the datastore of this OffsiteBackupInstance.
 
         :return: The datastore of this OffsiteBackupInstance.
         :rtype: :class:`huaweicloudsdkrds.v3.ParaGroupDatastore`
@@ -188,7 +188,7 @@ class OffsiteBackupInstance:
 
     @datastore.setter
     def datastore(self, datastore):
-        """Sets the datastore of this OffsiteBackupInstance.
+        r"""Sets the datastore of this OffsiteBackupInstance.
 
         :param datastore: The datastore of this OffsiteBackupInstance.
         :type datastore: :class:`huaweicloudsdkrds.v3.ParaGroupDatastore`
@@ -197,7 +197,7 @@ class OffsiteBackupInstance:
 
     @property
     def destination_region(self):
-        """Gets the destination_region of this OffsiteBackupInstance.
+        r"""Gets the destination_region of this OffsiteBackupInstance.
 
         跨区域备份所在区域。
 
@@ -208,7 +208,7 @@ class OffsiteBackupInstance:
 
     @destination_region.setter
     def destination_region(self, destination_region):
-        """Sets the destination_region of this OffsiteBackupInstance.
+        r"""Sets the destination_region of this OffsiteBackupInstance.
 
         跨区域备份所在区域。
 
@@ -219,7 +219,7 @@ class OffsiteBackupInstance:
 
     @property
     def destination_project_id(self):
-        """Gets the destination_project_id of this OffsiteBackupInstance.
+        r"""Gets the destination_project_id of this OffsiteBackupInstance.
 
         租户在目标区域下的project ID。
 
@@ -230,7 +230,7 @@ class OffsiteBackupInstance:
 
     @destination_project_id.setter
     def destination_project_id(self, destination_project_id):
-        """Sets the destination_project_id of this OffsiteBackupInstance.
+        r"""Sets the destination_project_id of this OffsiteBackupInstance.
 
         租户在目标区域下的project ID。
 
@@ -241,7 +241,7 @@ class OffsiteBackupInstance:
 
     @property
     def keep_days(self):
-        """Gets the keep_days of this OffsiteBackupInstance.
+        r"""Gets the keep_days of this OffsiteBackupInstance.
 
         跨区域备份保留天数。
 
@@ -252,7 +252,7 @@ class OffsiteBackupInstance:
 
     @keep_days.setter
     def keep_days(self, keep_days):
-        """Sets the keep_days of this OffsiteBackupInstance.
+        r"""Sets the keep_days of this OffsiteBackupInstance.
 
         跨区域备份保留天数。
 

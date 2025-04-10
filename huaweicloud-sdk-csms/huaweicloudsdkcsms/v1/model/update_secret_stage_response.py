@@ -26,7 +26,7 @@ class UpdateSecretStageResponse(SdkResponse):
     }
 
     def __init__(self, stage=None):
-        """UpdateSecretStageResponse
+        r"""UpdateSecretStageResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateSecretStageResponse(SdkResponse):
 
     @property
     def stage(self):
-        """Gets the stage of this UpdateSecretStageResponse.
+        r"""Gets the stage of this UpdateSecretStageResponse.
 
         :return: The stage of this UpdateSecretStageResponse.
         :rtype: :class:`huaweicloudsdkcsms.v1.Stage`
@@ -53,7 +53,7 @@ class UpdateSecretStageResponse(SdkResponse):
 
     @stage.setter
     def stage(self, stage):
-        """Sets the stage of this UpdateSecretStageResponse.
+        r"""Sets the stage of this UpdateSecretStageResponse.
 
         :param stage: The stage of this UpdateSecretStageResponse.
         :type stage: :class:`huaweicloudsdkcsms.v1.Stage`

@@ -28,7 +28,7 @@ class ListProjectIterationsV4Response(SdkResponse):
     }
 
     def __init__(self, total=None, iterations=None):
-        """ListProjectIterationsV4Response
+        r"""ListProjectIterationsV4Response
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListProjectIterationsV4Response(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListProjectIterationsV4Response.
+        r"""Gets the total of this ListProjectIterationsV4Response.
 
         迭代总数
 
@@ -62,7 +62,7 @@ class ListProjectIterationsV4Response(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListProjectIterationsV4Response.
+        r"""Sets the total of this ListProjectIterationsV4Response.
 
         迭代总数
 
@@ -73,7 +73,7 @@ class ListProjectIterationsV4Response(SdkResponse):
 
     @property
     def iterations(self):
-        """Gets the iterations of this ListProjectIterationsV4Response.
+        r"""Gets the iterations of this ListProjectIterationsV4Response.
 
         迭代信息
 
@@ -84,7 +84,7 @@ class ListProjectIterationsV4Response(SdkResponse):
 
     @iterations.setter
     def iterations(self, iterations):
-        """Sets the iterations of this ListProjectIterationsV4Response.
+        r"""Sets the iterations of this ListProjectIterationsV4Response.
 
         迭代信息
 

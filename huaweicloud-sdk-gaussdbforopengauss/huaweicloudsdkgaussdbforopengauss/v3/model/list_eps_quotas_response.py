@@ -28,7 +28,7 @@ class ListEpsQuotasResponse(SdkResponse):
     }
 
     def __init__(self, eps_quotas=None, total_count=None):
-        """ListEpsQuotasResponse
+        r"""ListEpsQuotasResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListEpsQuotasResponse(SdkResponse):
 
     @property
     def eps_quotas(self):
-        """Gets the eps_quotas of this ListEpsQuotasResponse.
+        r"""Gets the eps_quotas of this ListEpsQuotasResponse.
 
         企业配额列表。
 
@@ -62,7 +62,7 @@ class ListEpsQuotasResponse(SdkResponse):
 
     @eps_quotas.setter
     def eps_quotas(self, eps_quotas):
-        """Sets the eps_quotas of this ListEpsQuotasResponse.
+        r"""Sets the eps_quotas of this ListEpsQuotasResponse.
 
         企业配额列表。
 
@@ -73,7 +73,7 @@ class ListEpsQuotasResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListEpsQuotasResponse.
+        r"""Gets the total_count of this ListEpsQuotasResponse.
 
         配额组数量。
 
@@ -84,7 +84,7 @@ class ListEpsQuotasResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListEpsQuotasResponse.
+        r"""Sets the total_count of this ListEpsQuotasResponse.
 
         配额组数量。
 

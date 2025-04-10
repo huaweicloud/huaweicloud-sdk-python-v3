@@ -27,7 +27,7 @@ class ListInstantQueryAomPromGetRequest:
     }
 
     def __init__(self, query=None, time=None):
-        """ListInstantQueryAomPromGetRequest
+        r"""ListInstantQueryAomPromGetRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListInstantQueryAomPromGetRequest:
 
     @property
     def query(self):
-        """Gets the query of this ListInstantQueryAomPromGetRequest.
+        r"""Gets the query of this ListInstantQueryAomPromGetRequest.
 
         PromQL表达式(参考https://prometheus.io/docs/prometheus/latest/querying/basics/)。
 
@@ -60,7 +60,7 @@ class ListInstantQueryAomPromGetRequest:
 
     @query.setter
     def query(self, query):
-        """Sets the query of this ListInstantQueryAomPromGetRequest.
+        r"""Sets the query of this ListInstantQueryAomPromGetRequest.
 
         PromQL表达式(参考https://prometheus.io/docs/prometheus/latest/querying/basics/)。
 
@@ -71,7 +71,7 @@ class ListInstantQueryAomPromGetRequest:
 
     @property
     def time(self):
-        """Gets the time of this ListInstantQueryAomPromGetRequest.
+        r"""Gets the time of this ListInstantQueryAomPromGetRequest.
 
         指定用于计算 PromQL 的时间戳，(Unix时间戳格式，单位：秒）。
 
@@ -82,7 +82,7 @@ class ListInstantQueryAomPromGetRequest:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this ListInstantQueryAomPromGetRequest.
+        r"""Sets the time of this ListInstantQueryAomPromGetRequest.
 
         指定用于计算 PromQL 的时间戳，(Unix时间戳格式，单位：秒）。
 

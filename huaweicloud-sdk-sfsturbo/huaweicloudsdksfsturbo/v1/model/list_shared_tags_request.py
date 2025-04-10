@@ -27,7 +27,7 @@ class ListSharedTagsRequest:
     }
 
     def __init__(self, limit=None, offset=None):
-        """ListSharedTagsRequest
+        r"""ListSharedTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListSharedTagsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListSharedTagsRequest.
+        r"""Gets the limit of this ListSharedTagsRequest.
 
         返回的标签个数
 
@@ -61,7 +61,7 @@ class ListSharedTagsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSharedTagsRequest.
+        r"""Sets the limit of this ListSharedTagsRequest.
 
         返回的标签个数
 
@@ -72,7 +72,7 @@ class ListSharedTagsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListSharedTagsRequest.
+        r"""Gets the offset of this ListSharedTagsRequest.
 
         标签查询个数的偏移量
 
@@ -83,7 +83,7 @@ class ListSharedTagsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSharedTagsRequest.
+        r"""Sets the offset of this ListSharedTagsRequest.
 
         标签查询个数的偏移量
 

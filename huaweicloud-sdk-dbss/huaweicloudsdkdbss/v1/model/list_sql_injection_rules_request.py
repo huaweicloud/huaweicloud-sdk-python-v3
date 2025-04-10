@@ -27,7 +27,7 @@ class ListSqlInjectionRulesRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """ListSqlInjectionRulesRequest
+        r"""ListSqlInjectionRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListSqlInjectionRulesRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListSqlInjectionRulesRequest.
+        r"""Gets the instance_id of this ListSqlInjectionRulesRequest.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 
@@ -60,7 +60,7 @@ class ListSqlInjectionRulesRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListSqlInjectionRulesRequest.
+        r"""Sets the instance_id of this ListSqlInjectionRulesRequest.
 
         实例ID。可在查询实例列表接口的ID字段获取。
 
@@ -71,7 +71,7 @@ class ListSqlInjectionRulesRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListSqlInjectionRulesRequest.
+        r"""Gets the body of this ListSqlInjectionRulesRequest.
 
         :return: The body of this ListSqlInjectionRulesRequest.
         :rtype: :class:`huaweicloudsdkdbss.v1.SqlRuleRequest`
@@ -80,7 +80,7 @@ class ListSqlInjectionRulesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListSqlInjectionRulesRequest.
+        r"""Sets the body of this ListSqlInjectionRulesRequest.
 
         :param body: The body of this ListSqlInjectionRulesRequest.
         :type body: :class:`huaweicloudsdkdbss.v1.SqlRuleRequest`

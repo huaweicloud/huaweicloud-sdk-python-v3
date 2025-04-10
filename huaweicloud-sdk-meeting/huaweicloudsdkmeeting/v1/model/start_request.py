@@ -27,7 +27,7 @@ class StartRequest:
     }
 
     def __init__(self, conference_id=None, password=None):
-        """StartRequest
+        r"""StartRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class StartRequest:
 
     @property
     def conference_id(self):
-        """Gets the conference_id of this StartRequest.
+        r"""Gets the conference_id of this StartRequest.
 
         会议ID。
 
@@ -59,7 +59,7 @@ class StartRequest:
 
     @conference_id.setter
     def conference_id(self, conference_id):
-        """Sets the conference_id of this StartRequest.
+        r"""Sets the conference_id of this StartRequest.
 
         会议ID。
 
@@ -70,7 +70,7 @@ class StartRequest:
 
     @property
     def password(self):
-        """Gets the password of this StartRequest.
+        r"""Gets the password of this StartRequest.
 
         会议密码。
 
@@ -81,7 +81,7 @@ class StartRequest:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this StartRequest.
+        r"""Sets the password of this StartRequest.
 
         会议密码。
 

@@ -27,7 +27,7 @@ class DeleteConnectorTaskRequest:
     }
 
     def __init__(self, instance_id=None, task_id=None):
-        """DeleteConnectorTaskRequest
+        r"""DeleteConnectorTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteConnectorTaskRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteConnectorTaskRequest.
+        r"""Gets the instance_id of this DeleteConnectorTaskRequest.
 
         实例ID。
 
@@ -59,7 +59,7 @@ class DeleteConnectorTaskRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteConnectorTaskRequest.
+        r"""Sets the instance_id of this DeleteConnectorTaskRequest.
 
         实例ID。
 
@@ -70,7 +70,7 @@ class DeleteConnectorTaskRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this DeleteConnectorTaskRequest.
+        r"""Gets the task_id of this DeleteConnectorTaskRequest.
 
         Smart Connector任务ID。
 
@@ -81,7 +81,7 @@ class DeleteConnectorTaskRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this DeleteConnectorTaskRequest.
+        r"""Sets the task_id of this DeleteConnectorTaskRequest.
 
         Smart Connector任务ID。
 

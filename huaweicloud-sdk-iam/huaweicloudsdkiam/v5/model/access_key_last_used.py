@@ -25,7 +25,7 @@ class AccessKeyLastUsed:
     }
 
     def __init__(self, last_used_at=None):
-        """AccessKeyLastUsed
+        r"""AccessKeyLastUsed
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AccessKeyLastUsed:
 
     @property
     def last_used_at(self):
-        """Gets the last_used_at of this AccessKeyLastUsed.
+        r"""Gets the last_used_at of this AccessKeyLastUsed.
 
         访问密钥的最后使用时间。若不存在则表示从未使用过。
 
@@ -54,7 +54,7 @@ class AccessKeyLastUsed:
 
     @last_used_at.setter
     def last_used_at(self, last_used_at):
-        """Sets the last_used_at of this AccessKeyLastUsed.
+        r"""Sets the last_used_at of this AccessKeyLastUsed.
 
         访问密钥的最后使用时间。若不存在则表示从未使用过。
 

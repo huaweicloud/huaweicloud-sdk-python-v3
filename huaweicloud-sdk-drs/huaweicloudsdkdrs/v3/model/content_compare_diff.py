@@ -31,7 +31,7 @@ class ContentCompareDiff:
     }
 
     def __init__(self, target_select_sql=None, source_select_sql=None, source_key_value=None, target_key_value=None):
-        """ContentCompareDiff
+        r"""ContentCompareDiff
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ContentCompareDiff:
 
     @property
     def target_select_sql(self):
-        """Gets the target_select_sql of this ContentCompareDiff.
+        r"""Gets the target_select_sql of this ContentCompareDiff.
 
         查询目标库的SQL。
 
@@ -73,7 +73,7 @@ class ContentCompareDiff:
 
     @target_select_sql.setter
     def target_select_sql(self, target_select_sql):
-        """Sets the target_select_sql of this ContentCompareDiff.
+        r"""Sets the target_select_sql of this ContentCompareDiff.
 
         查询目标库的SQL。
 
@@ -84,7 +84,7 @@ class ContentCompareDiff:
 
     @property
     def source_select_sql(self):
-        """Gets the source_select_sql of this ContentCompareDiff.
+        r"""Gets the source_select_sql of this ContentCompareDiff.
 
         查询源库的SQL。
 
@@ -95,7 +95,7 @@ class ContentCompareDiff:
 
     @source_select_sql.setter
     def source_select_sql(self, source_select_sql):
-        """Sets the source_select_sql of this ContentCompareDiff.
+        r"""Sets the source_select_sql of this ContentCompareDiff.
 
         查询源库的SQL。
 
@@ -106,7 +106,7 @@ class ContentCompareDiff:
 
     @property
     def source_key_value(self):
-        """Gets the source_key_value of this ContentCompareDiff.
+        r"""Gets the source_key_value of this ContentCompareDiff.
 
         源库KEY值列表。
 
@@ -117,7 +117,7 @@ class ContentCompareDiff:
 
     @source_key_value.setter
     def source_key_value(self, source_key_value):
-        """Sets the source_key_value of this ContentCompareDiff.
+        r"""Sets the source_key_value of this ContentCompareDiff.
 
         源库KEY值列表。
 
@@ -128,7 +128,7 @@ class ContentCompareDiff:
 
     @property
     def target_key_value(self):
-        """Gets the target_key_value of this ContentCompareDiff.
+        r"""Gets the target_key_value of this ContentCompareDiff.
 
         目标库KEY值列表。
 
@@ -139,7 +139,7 @@ class ContentCompareDiff:
 
     @target_key_value.setter
     def target_key_value(self, target_key_value):
-        """Sets the target_key_value of this ContentCompareDiff.
+        r"""Sets the target_key_value of this ContentCompareDiff.
 
         目标库KEY值列表。
 

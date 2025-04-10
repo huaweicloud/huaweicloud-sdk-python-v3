@@ -30,7 +30,7 @@ class DetectLiveFaceByUrlResponse(SdkResponse):
     }
 
     def __init__(self, result=None, warning_list=None, x_request_id=None):
-        """DetectLiveFaceByUrlResponse
+        r"""DetectLiveFaceByUrlResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class DetectLiveFaceByUrlResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this DetectLiveFaceByUrlResponse.
+        r"""Gets the result of this DetectLiveFaceByUrlResponse.
 
         :return: The result of this DetectLiveFaceByUrlResponse.
         :rtype: :class:`huaweicloudsdkfrs.v2.LiveDetectFaceRespResult`
@@ -67,7 +67,7 @@ class DetectLiveFaceByUrlResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this DetectLiveFaceByUrlResponse.
+        r"""Sets the result of this DetectLiveFaceByUrlResponse.
 
         :param result: The result of this DetectLiveFaceByUrlResponse.
         :type result: :class:`huaweicloudsdkfrs.v2.LiveDetectFaceRespResult`
@@ -76,7 +76,7 @@ class DetectLiveFaceByUrlResponse(SdkResponse):
 
     @property
     def warning_list(self):
-        """Gets the warning_list of this DetectLiveFaceByUrlResponse.
+        r"""Gets the warning_list of this DetectLiveFaceByUrlResponse.
 
         警告信息列表。 调用失败时无此字段。
 
@@ -87,7 +87,7 @@ class DetectLiveFaceByUrlResponse(SdkResponse):
 
     @warning_list.setter
     def warning_list(self, warning_list):
-        """Sets the warning_list of this DetectLiveFaceByUrlResponse.
+        r"""Sets the warning_list of this DetectLiveFaceByUrlResponse.
 
         警告信息列表。 调用失败时无此字段。
 
@@ -98,7 +98,7 @@ class DetectLiveFaceByUrlResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DetectLiveFaceByUrlResponse.
+        r"""Gets the x_request_id of this DetectLiveFaceByUrlResponse.
 
         :return: The x_request_id of this DetectLiveFaceByUrlResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class DetectLiveFaceByUrlResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DetectLiveFaceByUrlResponse.
+        r"""Sets the x_request_id of this DetectLiveFaceByUrlResponse.
 
         :param x_request_id: The x_request_id of this DetectLiveFaceByUrlResponse.
         :type x_request_id: str

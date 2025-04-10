@@ -63,7 +63,7 @@ class SubJob:
     }
 
     def __init__(self, id=None, name=None, description=None, submission_time=None, completion_time=None, stage_ids=None, job_group=None, status=None, num_tasks=None, num_active_tasks=None, num_completed_tasks=None, num_skipped_tasks=None, num_failed_tasks=None, num_killed_tasks=None, num_completed_indices=None, num_active_stages=None, num_completed_stages=None, num_skipped_stages=None, num_failed_stages=None, killed_tasks_summary=None):
-        """SubJob
+        r"""SubJob
 
         The model defined in huaweicloud sdk
 
@@ -176,7 +176,7 @@ class SubJob:
 
     @property
     def id(self):
-        """Gets the id of this SubJob.
+        r"""Gets the id of this SubJob.
 
         子作业ID，对应开源spark JobData的jobId。
 
@@ -187,7 +187,7 @@ class SubJob:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SubJob.
+        r"""Sets the id of this SubJob.
 
         子作业ID，对应开源spark JobData的jobId。
 
@@ -198,7 +198,7 @@ class SubJob:
 
     @property
     def name(self):
-        """Gets the name of this SubJob.
+        r"""Gets the name of this SubJob.
 
         子作业name，对应开源spark JobData的name。
 
@@ -209,7 +209,7 @@ class SubJob:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SubJob.
+        r"""Sets the name of this SubJob.
 
         子作业name，对应开源spark JobData的name。
 
@@ -220,7 +220,7 @@ class SubJob:
 
     @property
     def description(self):
-        """Gets the description of this SubJob.
+        r"""Gets the description of this SubJob.
 
         子作业description，对应开源spark JobData的description。
 
@@ -231,7 +231,7 @@ class SubJob:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this SubJob.
+        r"""Sets the description of this SubJob.
 
         子作业description，对应开源spark JobData的description。
 
@@ -242,7 +242,7 @@ class SubJob:
 
     @property
     def submission_time(self):
-        """Gets the submission_time of this SubJob.
+        r"""Gets the submission_time of this SubJob.
 
         子作业submission_time，对应开源spark JobData的submissionTime。
 
@@ -253,7 +253,7 @@ class SubJob:
 
     @submission_time.setter
     def submission_time(self, submission_time):
-        """Sets the submission_time of this SubJob.
+        r"""Sets the submission_time of this SubJob.
 
         子作业submission_time，对应开源spark JobData的submissionTime。
 
@@ -264,7 +264,7 @@ class SubJob:
 
     @property
     def completion_time(self):
-        """Gets the completion_time of this SubJob.
+        r"""Gets the completion_time of this SubJob.
 
         子作业completion_time，对应开源spark JobData的completionTime。
 
@@ -275,7 +275,7 @@ class SubJob:
 
     @completion_time.setter
     def completion_time(self, completion_time):
-        """Sets the completion_time of this SubJob.
+        r"""Sets the completion_time of this SubJob.
 
         子作业completion_time，对应开源spark JobData的completionTime。
 
@@ -286,7 +286,7 @@ class SubJob:
 
     @property
     def stage_ids(self):
-        """Gets the stage_ids of this SubJob.
+        r"""Gets the stage_ids of this SubJob.
 
         子作业stage_ids，对应开源spark JobData的stageIds。
 
@@ -297,7 +297,7 @@ class SubJob:
 
     @stage_ids.setter
     def stage_ids(self, stage_ids):
-        """Sets the stage_ids of this SubJob.
+        r"""Sets the stage_ids of this SubJob.
 
         子作业stage_ids，对应开源spark JobData的stageIds。
 
@@ -308,7 +308,7 @@ class SubJob:
 
     @property
     def job_group(self):
-        """Gets the job_group of this SubJob.
+        r"""Gets the job_group of this SubJob.
 
         对应DLI的作业ID，对应开源spark JobData的jobGroup。
 
@@ -319,7 +319,7 @@ class SubJob:
 
     @job_group.setter
     def job_group(self, job_group):
-        """Sets the job_group of this SubJob.
+        r"""Sets the job_group of this SubJob.
 
         对应DLI的作业ID，对应开源spark JobData的jobGroup。
 
@@ -330,7 +330,7 @@ class SubJob:
 
     @property
     def status(self):
-        """Gets the status of this SubJob.
+        r"""Gets the status of this SubJob.
 
         子作业状态，对应开源spark JobData的status。
 
@@ -341,7 +341,7 @@ class SubJob:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this SubJob.
+        r"""Sets the status of this SubJob.
 
         子作业状态，对应开源spark JobData的status。
 
@@ -352,7 +352,7 @@ class SubJob:
 
     @property
     def num_tasks(self):
-        """Gets the num_tasks of this SubJob.
+        r"""Gets the num_tasks of this SubJob.
 
         子作业task的个数，对应开源spark JobData的numTasks。
 
@@ -363,7 +363,7 @@ class SubJob:
 
     @num_tasks.setter
     def num_tasks(self, num_tasks):
-        """Sets the num_tasks of this SubJob.
+        r"""Sets the num_tasks of this SubJob.
 
         子作业task的个数，对应开源spark JobData的numTasks。
 
@@ -374,7 +374,7 @@ class SubJob:
 
     @property
     def num_active_tasks(self):
-        """Gets the num_active_tasks of this SubJob.
+        r"""Gets the num_active_tasks of this SubJob.
 
         子作业正在运行的task个数，对应开源spark JobData的numActiveTasks。
 
@@ -385,7 +385,7 @@ class SubJob:
 
     @num_active_tasks.setter
     def num_active_tasks(self, num_active_tasks):
-        """Sets the num_active_tasks of this SubJob.
+        r"""Sets the num_active_tasks of this SubJob.
 
         子作业正在运行的task个数，对应开源spark JobData的numActiveTasks。
 
@@ -396,7 +396,7 @@ class SubJob:
 
     @property
     def num_completed_tasks(self):
-        """Gets the num_completed_tasks of this SubJob.
+        r"""Gets the num_completed_tasks of this SubJob.
 
         子作业已经完成的task个数，对应开源spark JobData的numCompletedTasks。
 
@@ -407,7 +407,7 @@ class SubJob:
 
     @num_completed_tasks.setter
     def num_completed_tasks(self, num_completed_tasks):
-        """Sets the num_completed_tasks of this SubJob.
+        r"""Sets the num_completed_tasks of this SubJob.
 
         子作业已经完成的task个数，对应开源spark JobData的numCompletedTasks。
 
@@ -418,7 +418,7 @@ class SubJob:
 
     @property
     def num_skipped_tasks(self):
-        """Gets the num_skipped_tasks of this SubJob.
+        r"""Gets the num_skipped_tasks of this SubJob.
 
         子作业跳过的task个数，对应开源spark JobData的numSkippedTasks。
 
@@ -429,7 +429,7 @@ class SubJob:
 
     @num_skipped_tasks.setter
     def num_skipped_tasks(self, num_skipped_tasks):
-        """Sets the num_skipped_tasks of this SubJob.
+        r"""Sets the num_skipped_tasks of this SubJob.
 
         子作业跳过的task个数，对应开源spark JobData的numSkippedTasks。
 
@@ -440,7 +440,7 @@ class SubJob:
 
     @property
     def num_failed_tasks(self):
-        """Gets the num_failed_tasks of this SubJob.
+        r"""Gets the num_failed_tasks of this SubJob.
 
         子作业跳失败的task个数，对应开源spark JobData的numFailedTasks。
 
@@ -451,7 +451,7 @@ class SubJob:
 
     @num_failed_tasks.setter
     def num_failed_tasks(self, num_failed_tasks):
-        """Sets the num_failed_tasks of this SubJob.
+        r"""Sets the num_failed_tasks of this SubJob.
 
         子作业跳失败的task个数，对应开源spark JobData的numFailedTasks。
 
@@ -462,7 +462,7 @@ class SubJob:
 
     @property
     def num_killed_tasks(self):
-        """Gets the num_killed_tasks of this SubJob.
+        r"""Gets the num_killed_tasks of this SubJob.
 
         子作业kill掉的task个数，对应开源spark JobData的numKilledTasks。
 
@@ -473,7 +473,7 @@ class SubJob:
 
     @num_killed_tasks.setter
     def num_killed_tasks(self, num_killed_tasks):
-        """Sets the num_killed_tasks of this SubJob.
+        r"""Sets the num_killed_tasks of this SubJob.
 
         子作业kill掉的task个数，对应开源spark JobData的numKilledTasks。
 
@@ -484,7 +484,7 @@ class SubJob:
 
     @property
     def num_completed_indices(self):
-        """Gets the num_completed_indices of this SubJob.
+        r"""Gets the num_completed_indices of this SubJob.
 
         子作业完成指数，对应开源spark JobData的numCompletedIndices。
 
@@ -495,7 +495,7 @@ class SubJob:
 
     @num_completed_indices.setter
     def num_completed_indices(self, num_completed_indices):
-        """Sets the num_completed_indices of this SubJob.
+        r"""Sets the num_completed_indices of this SubJob.
 
         子作业完成指数，对应开源spark JobData的numCompletedIndices。
 
@@ -506,7 +506,7 @@ class SubJob:
 
     @property
     def num_active_stages(self):
-        """Gets the num_active_stages of this SubJob.
+        r"""Gets the num_active_stages of this SubJob.
 
         子作业正在运行的stage个数，对应开源spark JobData的numActiveStages。
 
@@ -517,7 +517,7 @@ class SubJob:
 
     @num_active_stages.setter
     def num_active_stages(self, num_active_stages):
-        """Sets the num_active_stages of this SubJob.
+        r"""Sets the num_active_stages of this SubJob.
 
         子作业正在运行的stage个数，对应开源spark JobData的numActiveStages。
 
@@ -528,7 +528,7 @@ class SubJob:
 
     @property
     def num_completed_stages(self):
-        """Gets the num_completed_stages of this SubJob.
+        r"""Gets the num_completed_stages of this SubJob.
 
         子作业已经完成的stage个数，对应开源spark JobData的numCompletedStages。
 
@@ -539,7 +539,7 @@ class SubJob:
 
     @num_completed_stages.setter
     def num_completed_stages(self, num_completed_stages):
-        """Sets the num_completed_stages of this SubJob.
+        r"""Sets the num_completed_stages of this SubJob.
 
         子作业已经完成的stage个数，对应开源spark JobData的numCompletedStages。
 
@@ -550,7 +550,7 @@ class SubJob:
 
     @property
     def num_skipped_stages(self):
-        """Gets the num_skipped_stages of this SubJob.
+        r"""Gets the num_skipped_stages of this SubJob.
 
         子作业跳过的stage个数，对应开源spark JobData的numSkippedStages。
 
@@ -561,7 +561,7 @@ class SubJob:
 
     @num_skipped_stages.setter
     def num_skipped_stages(self, num_skipped_stages):
-        """Sets the num_skipped_stages of this SubJob.
+        r"""Sets the num_skipped_stages of this SubJob.
 
         子作业跳过的stage个数，对应开源spark JobData的numSkippedStages。
 
@@ -572,7 +572,7 @@ class SubJob:
 
     @property
     def num_failed_stages(self):
-        """Gets the num_failed_stages of this SubJob.
+        r"""Gets the num_failed_stages of this SubJob.
 
         子作业失败的stage个数，对应开源spark JobData的numFailedStages。
 
@@ -583,7 +583,7 @@ class SubJob:
 
     @num_failed_stages.setter
     def num_failed_stages(self, num_failed_stages):
-        """Sets the num_failed_stages of this SubJob.
+        r"""Sets the num_failed_stages of this SubJob.
 
         子作业失败的stage个数，对应开源spark JobData的numFailedStages。
 
@@ -594,7 +594,7 @@ class SubJob:
 
     @property
     def killed_tasks_summary(self):
-        """Gets the killed_tasks_summary of this SubJob.
+        r"""Gets the killed_tasks_summary of this SubJob.
 
         子作业killed_tasks_summary，对应开源spark JobData的killedTasksSummary。
 
@@ -605,7 +605,7 @@ class SubJob:
 
     @killed_tasks_summary.setter
     def killed_tasks_summary(self, killed_tasks_summary):
-        """Sets the killed_tasks_summary of this SubJob.
+        r"""Sets the killed_tasks_summary of this SubJob.
 
         子作业killed_tasks_summary，对应开源spark JobData的killedTasksSummary。
 

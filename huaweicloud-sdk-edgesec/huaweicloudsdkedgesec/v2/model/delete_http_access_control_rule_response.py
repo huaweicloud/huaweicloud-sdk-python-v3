@@ -24,7 +24,7 @@ class DeleteHttpAccessControlRuleResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteHttpAccessControlRuleResponse
+        r"""DeleteHttpAccessControlRuleResponse
 
         The model defined in huaweicloud sdk
 

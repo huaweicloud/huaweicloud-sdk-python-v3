@@ -33,7 +33,7 @@ class ShowMavenInfoRequest:
     }
 
     def __init__(self, project_id=None, policy=None, access=None, default=None, ids=None):
-        """ShowMavenInfoRequest
+        r"""ShowMavenInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ShowMavenInfoRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowMavenInfoRequest.
+        r"""Gets the project_id of this ShowMavenInfoRequest.
 
         项目id
 
@@ -82,7 +82,7 @@ class ShowMavenInfoRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowMavenInfoRequest.
+        r"""Sets the project_id of this ShowMavenInfoRequest.
 
         项目id
 
@@ -93,7 +93,7 @@ class ShowMavenInfoRequest:
 
     @property
     def policy(self):
-        """Gets the policy of this ShowMavenInfoRequest.
+        r"""Gets the policy of this ShowMavenInfoRequest.
 
         snapshot or releases
 
@@ -104,7 +104,7 @@ class ShowMavenInfoRequest:
 
     @policy.setter
     def policy(self, policy):
-        """Sets the policy of this ShowMavenInfoRequest.
+        r"""Sets the policy of this ShowMavenInfoRequest.
 
         snapshot or releases
 
@@ -115,7 +115,7 @@ class ShowMavenInfoRequest:
 
     @property
     def access(self):
-        """Gets the access of this ShowMavenInfoRequest.
+        r"""Gets the access of this ShowMavenInfoRequest.
 
         r or rw
 
@@ -126,7 +126,7 @@ class ShowMavenInfoRequest:
 
     @access.setter
     def access(self, access):
-        """Sets the access of this ShowMavenInfoRequest.
+        r"""Sets the access of this ShowMavenInfoRequest.
 
         r or rw
 
@@ -137,7 +137,7 @@ class ShowMavenInfoRequest:
 
     @property
     def default(self):
-        """Gets the default of this ShowMavenInfoRequest.
+        r"""Gets the default of this ShowMavenInfoRequest.
 
         是否返回默认仓库 true or false
 
@@ -148,7 +148,7 @@ class ShowMavenInfoRequest:
 
     @default.setter
     def default(self, default):
-        """Sets the default of this ShowMavenInfoRequest.
+        r"""Sets the default of this ShowMavenInfoRequest.
 
         是否返回默认仓库 true or false
 
@@ -159,7 +159,7 @@ class ShowMavenInfoRequest:
 
     @property
     def ids(self):
-        """Gets the ids of this ShowMavenInfoRequest.
+        r"""Gets the ids of this ShowMavenInfoRequest.
 
         仓库id 多个仓库id用英文逗号间隔
 
@@ -170,7 +170,7 @@ class ShowMavenInfoRequest:
 
     @ids.setter
     def ids(self, ids):
-        """Sets the ids of this ShowMavenInfoRequest.
+        r"""Sets the ids of this ShowMavenInfoRequest.
 
         仓库id 多个仓库id用英文逗号间隔
 

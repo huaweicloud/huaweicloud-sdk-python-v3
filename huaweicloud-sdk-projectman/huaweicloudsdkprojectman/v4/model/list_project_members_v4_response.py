@@ -28,7 +28,7 @@ class ListProjectMembersV4Response(SdkResponse):
     }
 
     def __init__(self, members=None, total=None):
-        """ListProjectMembersV4Response
+        r"""ListProjectMembersV4Response
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListProjectMembersV4Response(SdkResponse):
 
     @property
     def members(self):
-        """Gets the members of this ListProjectMembersV4Response.
+        r"""Gets the members of this ListProjectMembersV4Response.
 
         项目成员列表
 
@@ -62,7 +62,7 @@ class ListProjectMembersV4Response(SdkResponse):
 
     @members.setter
     def members(self, members):
-        """Sets the members of this ListProjectMembersV4Response.
+        r"""Sets the members of this ListProjectMembersV4Response.
 
         项目成员列表
 
@@ -73,7 +73,7 @@ class ListProjectMembersV4Response(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListProjectMembersV4Response.
+        r"""Gets the total of this ListProjectMembersV4Response.
 
         总数
 
@@ -84,7 +84,7 @@ class ListProjectMembersV4Response(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListProjectMembersV4Response.
+        r"""Sets the total of this ListProjectMembersV4Response.
 
         总数
 

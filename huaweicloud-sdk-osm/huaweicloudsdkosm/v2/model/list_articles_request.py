@@ -33,7 +33,7 @@ class ListArticlesRequest:
     }
 
     def __init__(self, x_service_key=None, x_site=None, x_language=None, search_type=None, body=None):
-        """ListArticlesRequest
+        r"""ListArticlesRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ListArticlesRequest:
 
     @property
     def x_service_key(self):
-        """Gets the x_service_key of this ListArticlesRequest.
+        r"""Gets the x_service_key of this ListArticlesRequest.
 
         调用智能客服服务标志。
 
@@ -81,7 +81,7 @@ class ListArticlesRequest:
 
     @x_service_key.setter
     def x_service_key(self, x_service_key):
-        """Sets the x_service_key of this ListArticlesRequest.
+        r"""Sets the x_service_key of this ListArticlesRequest.
 
         调用智能客服服务标志。
 
@@ -92,7 +92,7 @@ class ListArticlesRequest:
 
     @property
     def x_site(self):
-        """Gets the x_site of this ListArticlesRequest.
+        r"""Gets the x_site of this ListArticlesRequest.
 
         站点标记，0-中国站  1-国际站
 
@@ -103,7 +103,7 @@ class ListArticlesRequest:
 
     @x_site.setter
     def x_site(self, x_site):
-        """Sets the x_site of this ListArticlesRequest.
+        r"""Sets the x_site of this ListArticlesRequest.
 
         站点标记，0-中国站  1-国际站
 
@@ -114,7 +114,7 @@ class ListArticlesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListArticlesRequest.
+        r"""Gets the x_language of this ListArticlesRequest.
 
         区域语言简写，en-us  zh-cn
 
@@ -125,7 +125,7 @@ class ListArticlesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListArticlesRequest.
+        r"""Sets the x_language of this ListArticlesRequest.
 
         区域语言简写，en-us  zh-cn
 
@@ -136,7 +136,7 @@ class ListArticlesRequest:
 
     @property
     def search_type(self):
-        """Gets the search_type of this ListArticlesRequest.
+        r"""Gets the search_type of this ListArticlesRequest.
 
         搜索类型：HOT-热点案例,RECOMMEND-推荐案例
 
@@ -147,7 +147,7 @@ class ListArticlesRequest:
 
     @search_type.setter
     def search_type(self, search_type):
-        """Sets the search_type of this ListArticlesRequest.
+        r"""Sets the search_type of this ListArticlesRequest.
 
         搜索类型：HOT-热点案例,RECOMMEND-推荐案例
 
@@ -158,7 +158,7 @@ class ListArticlesRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListArticlesRequest.
+        r"""Gets the body of this ListArticlesRequest.
 
         :return: The body of this ListArticlesRequest.
         :rtype: :class:`huaweicloudsdkosm.v2.SearchArticlesReq`
@@ -167,7 +167,7 @@ class ListArticlesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListArticlesRequest.
+        r"""Sets the body of this ListArticlesRequest.
 
         :param body: The body of this ListArticlesRequest.
         :type body: :class:`huaweicloudsdkosm.v2.SearchArticlesReq`

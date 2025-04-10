@@ -35,7 +35,7 @@ class PersistentStorage:
     }
 
     def __init__(self, id=None, name=None, storage_metadata=None, create_time=None, user_claim_count=None, share_claim_count=None):
-        """PersistentStorage
+        r"""PersistentStorage
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class PersistentStorage:
 
     @property
     def id(self):
-        """Gets the id of this PersistentStorage.
+        r"""Gets the id of this PersistentStorage.
 
         WKS存储ID。
 
@@ -89,7 +89,7 @@ class PersistentStorage:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PersistentStorage.
+        r"""Sets the id of this PersistentStorage.
 
         WKS存储ID。
 
@@ -100,7 +100,7 @@ class PersistentStorage:
 
     @property
     def name(self):
-        """Gets the name of this PersistentStorage.
+        r"""Gets the name of this PersistentStorage.
 
         名称。
 
@@ -111,7 +111,7 @@ class PersistentStorage:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PersistentStorage.
+        r"""Sets the name of this PersistentStorage.
 
         名称。
 
@@ -122,7 +122,7 @@ class PersistentStorage:
 
     @property
     def storage_metadata(self):
-        """Gets the storage_metadata of this PersistentStorage.
+        r"""Gets the storage_metadata of this PersistentStorage.
 
         :return: The storage_metadata of this PersistentStorage.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.StorageMetadata`
@@ -131,7 +131,7 @@ class PersistentStorage:
 
     @storage_metadata.setter
     def storage_metadata(self, storage_metadata):
-        """Sets the storage_metadata of this PersistentStorage.
+        r"""Sets the storage_metadata of this PersistentStorage.
 
         :param storage_metadata: The storage_metadata of this PersistentStorage.
         :type storage_metadata: :class:`huaweicloudsdkworkspaceapp.v1.StorageMetadata`
@@ -140,7 +140,7 @@ class PersistentStorage:
 
     @property
     def create_time(self):
-        """Gets the create_time of this PersistentStorage.
+        r"""Gets the create_time of this PersistentStorage.
 
         创建时间。
 
@@ -151,7 +151,7 @@ class PersistentStorage:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this PersistentStorage.
+        r"""Sets the create_time of this PersistentStorage.
 
         创建时间。
 
@@ -162,7 +162,7 @@ class PersistentStorage:
 
     @property
     def user_claim_count(self):
-        """Gets the user_claim_count of this PersistentStorage.
+        r"""Gets the user_claim_count of this PersistentStorage.
 
         个人目录声明数量。
 
@@ -173,7 +173,7 @@ class PersistentStorage:
 
     @user_claim_count.setter
     def user_claim_count(self, user_claim_count):
-        """Sets the user_claim_count of this PersistentStorage.
+        r"""Sets the user_claim_count of this PersistentStorage.
 
         个人目录声明数量。
 
@@ -184,7 +184,7 @@ class PersistentStorage:
 
     @property
     def share_claim_count(self):
-        """Gets the share_claim_count of this PersistentStorage.
+        r"""Gets the share_claim_count of this PersistentStorage.
 
         共享目录声明数量。
 
@@ -195,7 +195,7 @@ class PersistentStorage:
 
     @share_claim_count.setter
     def share_claim_count(self, share_claim_count):
-        """Sets the share_claim_count of this PersistentStorage.
+        r"""Sets the share_claim_count of this PersistentStorage.
 
         共享目录声明数量。
 

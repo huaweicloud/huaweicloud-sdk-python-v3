@@ -47,7 +47,7 @@ class AttachedPluginInfo:
     }
 
     def __init__(self, plugin_attach_id=None, plugin_id=None, plugin_name=None, plugin_type=None, plugin_scope=None, env_id=None, env_name=None, attached_time=None, plugin_content=None, remark=None, create_time=None, update_time=None):
-        """AttachedPluginInfo
+        r"""AttachedPluginInfo
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class AttachedPluginInfo:
 
     @property
     def plugin_attach_id(self):
-        """Gets the plugin_attach_id of this AttachedPluginInfo.
+        r"""Gets the plugin_attach_id of this AttachedPluginInfo.
 
         插件绑定编码。
 
@@ -131,7 +131,7 @@ class AttachedPluginInfo:
 
     @plugin_attach_id.setter
     def plugin_attach_id(self, plugin_attach_id):
-        """Sets the plugin_attach_id of this AttachedPluginInfo.
+        r"""Sets the plugin_attach_id of this AttachedPluginInfo.
 
         插件绑定编码。
 
@@ -142,7 +142,7 @@ class AttachedPluginInfo:
 
     @property
     def plugin_id(self):
-        """Gets the plugin_id of this AttachedPluginInfo.
+        r"""Gets the plugin_id of this AttachedPluginInfo.
 
         插件编码。
 
@@ -153,7 +153,7 @@ class AttachedPluginInfo:
 
     @plugin_id.setter
     def plugin_id(self, plugin_id):
-        """Sets the plugin_id of this AttachedPluginInfo.
+        r"""Sets the plugin_id of this AttachedPluginInfo.
 
         插件编码。
 
@@ -164,7 +164,7 @@ class AttachedPluginInfo:
 
     @property
     def plugin_name(self):
-        """Gets the plugin_name of this AttachedPluginInfo.
+        r"""Gets the plugin_name of this AttachedPluginInfo.
 
         插件名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头，3-255字符 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -175,7 +175,7 @@ class AttachedPluginInfo:
 
     @plugin_name.setter
     def plugin_name(self, plugin_name):
-        """Sets the plugin_name of this AttachedPluginInfo.
+        r"""Sets the plugin_name of this AttachedPluginInfo.
 
         插件名称。支持汉字，英文，数字，下划线，且只能以英文和汉字开头，3-255字符 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -186,7 +186,7 @@ class AttachedPluginInfo:
 
     @property
     def plugin_type(self):
-        """Gets the plugin_type of this AttachedPluginInfo.
+        r"""Gets the plugin_type of this AttachedPluginInfo.
 
         插件类型 - cors：跨域资源共享 - set_resp_headers：HTTP响应头管理 - kafka_log：Kafka日志推送 - breaker：断路器 - rate_limit: 流量控制 - third_auth: 第三方认证
 
@@ -197,7 +197,7 @@ class AttachedPluginInfo:
 
     @plugin_type.setter
     def plugin_type(self, plugin_type):
-        """Sets the plugin_type of this AttachedPluginInfo.
+        r"""Sets the plugin_type of this AttachedPluginInfo.
 
         插件类型 - cors：跨域资源共享 - set_resp_headers：HTTP响应头管理 - kafka_log：Kafka日志推送 - breaker：断路器 - rate_limit: 流量控制 - third_auth: 第三方认证
 
@@ -208,7 +208,7 @@ class AttachedPluginInfo:
 
     @property
     def plugin_scope(self):
-        """Gets the plugin_scope of this AttachedPluginInfo.
+        r"""Gets the plugin_scope of this AttachedPluginInfo.
 
         插件可见范围 - global：全局可见 - app：集成应用可见
 
@@ -219,7 +219,7 @@ class AttachedPluginInfo:
 
     @plugin_scope.setter
     def plugin_scope(self, plugin_scope):
-        """Sets the plugin_scope of this AttachedPluginInfo.
+        r"""Sets the plugin_scope of this AttachedPluginInfo.
 
         插件可见范围 - global：全局可见 - app：集成应用可见
 
@@ -230,7 +230,7 @@ class AttachedPluginInfo:
 
     @property
     def env_id(self):
-        """Gets the env_id of this AttachedPluginInfo.
+        r"""Gets the env_id of this AttachedPluginInfo.
 
         绑定API的环境编码。
 
@@ -241,7 +241,7 @@ class AttachedPluginInfo:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this AttachedPluginInfo.
+        r"""Sets the env_id of this AttachedPluginInfo.
 
         绑定API的环境编码。
 
@@ -252,7 +252,7 @@ class AttachedPluginInfo:
 
     @property
     def env_name(self):
-        """Gets the env_name of this AttachedPluginInfo.
+        r"""Gets the env_name of this AttachedPluginInfo.
 
         api授权绑定的环境名称
 
@@ -263,7 +263,7 @@ class AttachedPluginInfo:
 
     @env_name.setter
     def env_name(self, env_name):
-        """Sets the env_name of this AttachedPluginInfo.
+        r"""Sets the env_name of this AttachedPluginInfo.
 
         api授权绑定的环境名称
 
@@ -274,7 +274,7 @@ class AttachedPluginInfo:
 
     @property
     def attached_time(self):
-        """Gets the attached_time of this AttachedPluginInfo.
+        r"""Gets the attached_time of this AttachedPluginInfo.
 
         绑定时间。
 
@@ -285,7 +285,7 @@ class AttachedPluginInfo:
 
     @attached_time.setter
     def attached_time(self, attached_time):
-        """Sets the attached_time of this AttachedPluginInfo.
+        r"""Sets the attached_time of this AttachedPluginInfo.
 
         绑定时间。
 
@@ -296,7 +296,7 @@ class AttachedPluginInfo:
 
     @property
     def plugin_content(self):
-        """Gets the plugin_content of this AttachedPluginInfo.
+        r"""Gets the plugin_content of this AttachedPluginInfo.
 
         插件定义内容，支持json。
 
@@ -307,7 +307,7 @@ class AttachedPluginInfo:
 
     @plugin_content.setter
     def plugin_content(self, plugin_content):
-        """Sets the plugin_content of this AttachedPluginInfo.
+        r"""Sets the plugin_content of this AttachedPluginInfo.
 
         插件定义内容，支持json。
 
@@ -318,7 +318,7 @@ class AttachedPluginInfo:
 
     @property
     def remark(self):
-        """Gets the remark of this AttachedPluginInfo.
+        r"""Gets the remark of this AttachedPluginInfo.
 
         插件描述，255字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -329,7 +329,7 @@ class AttachedPluginInfo:
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this AttachedPluginInfo.
+        r"""Sets the remark of this AttachedPluginInfo.
 
         插件描述，255字符。 > 中文字符必须为UTF-8或者unicode编码。
 
@@ -340,7 +340,7 @@ class AttachedPluginInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this AttachedPluginInfo.
+        r"""Gets the create_time of this AttachedPluginInfo.
 
         创建时间。
 
@@ -351,7 +351,7 @@ class AttachedPluginInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AttachedPluginInfo.
+        r"""Sets the create_time of this AttachedPluginInfo.
 
         创建时间。
 
@@ -362,7 +362,7 @@ class AttachedPluginInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this AttachedPluginInfo.
+        r"""Gets the update_time of this AttachedPluginInfo.
 
         更新时间。
 
@@ -373,7 +373,7 @@ class AttachedPluginInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this AttachedPluginInfo.
+        r"""Sets the update_time of this AttachedPluginInfo.
 
         更新时间。
 

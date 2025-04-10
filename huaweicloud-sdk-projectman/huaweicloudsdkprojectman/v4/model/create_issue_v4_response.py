@@ -66,7 +66,7 @@ class CreateIssueV4Response(SdkResponse):
     }
 
     def __init__(self, actual_work_hours=None, assigned_cc_user=None, assigned_user=None, begin_time=None, creator=None, custom_fields=None, new_custom_fields=None, developer=None, domain=None, done_ratio=None, end_time=None, expected_work_hours=None, id=None, project=None, iteration=None, module=None, parent_issue=None, priority=None, severity=None, status=None, tracker=None):
-        """CreateIssueV4Response
+        r"""CreateIssueV4Response
 
         The model defined in huaweicloud sdk
 
@@ -184,7 +184,7 @@ class CreateIssueV4Response(SdkResponse):
 
     @property
     def actual_work_hours(self):
-        """Gets the actual_work_hours of this CreateIssueV4Response.
+        r"""Gets the actual_work_hours of this CreateIssueV4Response.
 
         实际工时
 
@@ -195,7 +195,7 @@ class CreateIssueV4Response(SdkResponse):
 
     @actual_work_hours.setter
     def actual_work_hours(self, actual_work_hours):
-        """Sets the actual_work_hours of this CreateIssueV4Response.
+        r"""Sets the actual_work_hours of this CreateIssueV4Response.
 
         实际工时
 
@@ -206,7 +206,7 @@ class CreateIssueV4Response(SdkResponse):
 
     @property
     def assigned_cc_user(self):
-        """Gets the assigned_cc_user of this CreateIssueV4Response.
+        r"""Gets the assigned_cc_user of this CreateIssueV4Response.
 
         抄送人
 
@@ -217,7 +217,7 @@ class CreateIssueV4Response(SdkResponse):
 
     @assigned_cc_user.setter
     def assigned_cc_user(self, assigned_cc_user):
-        """Sets the assigned_cc_user of this CreateIssueV4Response.
+        r"""Sets the assigned_cc_user of this CreateIssueV4Response.
 
         抄送人
 
@@ -228,7 +228,7 @@ class CreateIssueV4Response(SdkResponse):
 
     @property
     def assigned_user(self):
-        """Gets the assigned_user of this CreateIssueV4Response.
+        r"""Gets the assigned_user of this CreateIssueV4Response.
 
         :return: The assigned_user of this CreateIssueV4Response.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueUser`
@@ -237,7 +237,7 @@ class CreateIssueV4Response(SdkResponse):
 
     @assigned_user.setter
     def assigned_user(self, assigned_user):
-        """Sets the assigned_user of this CreateIssueV4Response.
+        r"""Sets the assigned_user of this CreateIssueV4Response.
 
         :param assigned_user: The assigned_user of this CreateIssueV4Response.
         :type assigned_user: :class:`huaweicloudsdkprojectman.v4.IssueUser`
@@ -246,7 +246,7 @@ class CreateIssueV4Response(SdkResponse):
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this CreateIssueV4Response.
+        r"""Gets the begin_time of this CreateIssueV4Response.
 
         开始时间，年-月-日
 
@@ -257,7 +257,7 @@ class CreateIssueV4Response(SdkResponse):
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this CreateIssueV4Response.
+        r"""Sets the begin_time of this CreateIssueV4Response.
 
         开始时间，年-月-日
 
@@ -268,7 +268,7 @@ class CreateIssueV4Response(SdkResponse):
 
     @property
     def creator(self):
-        """Gets the creator of this CreateIssueV4Response.
+        r"""Gets the creator of this CreateIssueV4Response.
 
         :return: The creator of this CreateIssueV4Response.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueUser`
@@ -277,7 +277,7 @@ class CreateIssueV4Response(SdkResponse):
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this CreateIssueV4Response.
+        r"""Sets the creator of this CreateIssueV4Response.
 
         :param creator: The creator of this CreateIssueV4Response.
         :type creator: :class:`huaweicloudsdkprojectman.v4.IssueUser`
@@ -286,7 +286,7 @@ class CreateIssueV4Response(SdkResponse):
 
     @property
     def custom_fields(self):
-        """Gets the custom_fields of this CreateIssueV4Response.
+        r"""Gets the custom_fields of this CreateIssueV4Response.
 
         自定义属性值,不建议使用，建议参考new_custom_fields字段
 
@@ -297,7 +297,7 @@ class CreateIssueV4Response(SdkResponse):
 
     @custom_fields.setter
     def custom_fields(self, custom_fields):
-        """Sets the custom_fields of this CreateIssueV4Response.
+        r"""Sets the custom_fields of this CreateIssueV4Response.
 
         自定义属性值,不建议使用，建议参考new_custom_fields字段
 
@@ -308,7 +308,7 @@ class CreateIssueV4Response(SdkResponse):
 
     @property
     def new_custom_fields(self):
-        """Gets the new_custom_fields of this CreateIssueV4Response.
+        r"""Gets the new_custom_fields of this CreateIssueV4Response.
 
         自定义属性值
 
@@ -319,7 +319,7 @@ class CreateIssueV4Response(SdkResponse):
 
     @new_custom_fields.setter
     def new_custom_fields(self, new_custom_fields):
-        """Sets the new_custom_fields of this CreateIssueV4Response.
+        r"""Sets the new_custom_fields of this CreateIssueV4Response.
 
         自定义属性值
 
@@ -330,7 +330,7 @@ class CreateIssueV4Response(SdkResponse):
 
     @property
     def developer(self):
-        """Gets the developer of this CreateIssueV4Response.
+        r"""Gets the developer of this CreateIssueV4Response.
 
         :return: The developer of this CreateIssueV4Response.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueUser`
@@ -339,7 +339,7 @@ class CreateIssueV4Response(SdkResponse):
 
     @developer.setter
     def developer(self, developer):
-        """Sets the developer of this CreateIssueV4Response.
+        r"""Sets the developer of this CreateIssueV4Response.
 
         :param developer: The developer of this CreateIssueV4Response.
         :type developer: :class:`huaweicloudsdkprojectman.v4.IssueUser`
@@ -348,7 +348,7 @@ class CreateIssueV4Response(SdkResponse):
 
     @property
     def domain(self):
-        """Gets the domain of this CreateIssueV4Response.
+        r"""Gets the domain of this CreateIssueV4Response.
 
         :return: The domain of this CreateIssueV4Response.
         :rtype: :class:`huaweicloudsdkprojectman.v4.CreateIssueResponseV4Domain`
@@ -357,7 +357,7 @@ class CreateIssueV4Response(SdkResponse):
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this CreateIssueV4Response.
+        r"""Sets the domain of this CreateIssueV4Response.
 
         :param domain: The domain of this CreateIssueV4Response.
         :type domain: :class:`huaweicloudsdkprojectman.v4.CreateIssueResponseV4Domain`
@@ -366,7 +366,7 @@ class CreateIssueV4Response(SdkResponse):
 
     @property
     def done_ratio(self):
-        """Gets the done_ratio of this CreateIssueV4Response.
+        r"""Gets the done_ratio of this CreateIssueV4Response.
 
         工作项进度值
 
@@ -377,7 +377,7 @@ class CreateIssueV4Response(SdkResponse):
 
     @done_ratio.setter
     def done_ratio(self, done_ratio):
-        """Sets the done_ratio of this CreateIssueV4Response.
+        r"""Sets the done_ratio of this CreateIssueV4Response.
 
         工作项进度值
 
@@ -388,7 +388,7 @@ class CreateIssueV4Response(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this CreateIssueV4Response.
+        r"""Gets the end_time of this CreateIssueV4Response.
 
         结束时间，年-月-日
 
@@ -399,7 +399,7 @@ class CreateIssueV4Response(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this CreateIssueV4Response.
+        r"""Sets the end_time of this CreateIssueV4Response.
 
         结束时间，年-月-日
 
@@ -410,7 +410,7 @@ class CreateIssueV4Response(SdkResponse):
 
     @property
     def expected_work_hours(self):
-        """Gets the expected_work_hours of this CreateIssueV4Response.
+        r"""Gets the expected_work_hours of this CreateIssueV4Response.
 
         预计工时
 
@@ -421,7 +421,7 @@ class CreateIssueV4Response(SdkResponse):
 
     @expected_work_hours.setter
     def expected_work_hours(self, expected_work_hours):
-        """Sets the expected_work_hours of this CreateIssueV4Response.
+        r"""Sets the expected_work_hours of this CreateIssueV4Response.
 
         预计工时
 
@@ -432,7 +432,7 @@ class CreateIssueV4Response(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateIssueV4Response.
+        r"""Gets the id of this CreateIssueV4Response.
 
         工作项项id
 
@@ -443,7 +443,7 @@ class CreateIssueV4Response(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateIssueV4Response.
+        r"""Sets the id of this CreateIssueV4Response.
 
         工作项项id
 
@@ -454,7 +454,7 @@ class CreateIssueV4Response(SdkResponse):
 
     @property
     def project(self):
-        """Gets the project of this CreateIssueV4Response.
+        r"""Gets the project of this CreateIssueV4Response.
 
         :return: The project of this CreateIssueV4Response.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueProjectResponseV4`
@@ -463,7 +463,7 @@ class CreateIssueV4Response(SdkResponse):
 
     @project.setter
     def project(self, project):
-        """Sets the project of this CreateIssueV4Response.
+        r"""Sets the project of this CreateIssueV4Response.
 
         :param project: The project of this CreateIssueV4Response.
         :type project: :class:`huaweicloudsdkprojectman.v4.IssueProjectResponseV4`
@@ -472,7 +472,7 @@ class CreateIssueV4Response(SdkResponse):
 
     @property
     def iteration(self):
-        """Gets the iteration of this CreateIssueV4Response.
+        r"""Gets the iteration of this CreateIssueV4Response.
 
         :return: The iteration of this CreateIssueV4Response.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Iteration`
@@ -481,7 +481,7 @@ class CreateIssueV4Response(SdkResponse):
 
     @iteration.setter
     def iteration(self, iteration):
-        """Sets the iteration of this CreateIssueV4Response.
+        r"""Sets the iteration of this CreateIssueV4Response.
 
         :param iteration: The iteration of this CreateIssueV4Response.
         :type iteration: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Iteration`
@@ -490,7 +490,7 @@ class CreateIssueV4Response(SdkResponse):
 
     @property
     def module(self):
-        """Gets the module of this CreateIssueV4Response.
+        r"""Gets the module of this CreateIssueV4Response.
 
         :return: The module of this CreateIssueV4Response.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Module`
@@ -499,7 +499,7 @@ class CreateIssueV4Response(SdkResponse):
 
     @module.setter
     def module(self, module):
-        """Sets the module of this CreateIssueV4Response.
+        r"""Sets the module of this CreateIssueV4Response.
 
         :param module: The module of this CreateIssueV4Response.
         :type module: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Module`
@@ -508,7 +508,7 @@ class CreateIssueV4Response(SdkResponse):
 
     @property
     def parent_issue(self):
-        """Gets the parent_issue of this CreateIssueV4Response.
+        r"""Gets the parent_issue of this CreateIssueV4Response.
 
         :return: The parent_issue of this CreateIssueV4Response.
         :rtype: :class:`huaweicloudsdkprojectman.v4.CreateIssueResponseV4ParentIssue`
@@ -517,7 +517,7 @@ class CreateIssueV4Response(SdkResponse):
 
     @parent_issue.setter
     def parent_issue(self, parent_issue):
-        """Sets the parent_issue of this CreateIssueV4Response.
+        r"""Sets the parent_issue of this CreateIssueV4Response.
 
         :param parent_issue: The parent_issue of this CreateIssueV4Response.
         :type parent_issue: :class:`huaweicloudsdkprojectman.v4.CreateIssueResponseV4ParentIssue`
@@ -526,7 +526,7 @@ class CreateIssueV4Response(SdkResponse):
 
     @property
     def priority(self):
-        """Gets the priority of this CreateIssueV4Response.
+        r"""Gets the priority of this CreateIssueV4Response.
 
         :return: The priority of this CreateIssueV4Response.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Priority`
@@ -535,7 +535,7 @@ class CreateIssueV4Response(SdkResponse):
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this CreateIssueV4Response.
+        r"""Sets the priority of this CreateIssueV4Response.
 
         :param priority: The priority of this CreateIssueV4Response.
         :type priority: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Priority`
@@ -544,7 +544,7 @@ class CreateIssueV4Response(SdkResponse):
 
     @property
     def severity(self):
-        """Gets the severity of this CreateIssueV4Response.
+        r"""Gets the severity of this CreateIssueV4Response.
 
         :return: The severity of this CreateIssueV4Response.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Severity`
@@ -553,7 +553,7 @@ class CreateIssueV4Response(SdkResponse):
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this CreateIssueV4Response.
+        r"""Sets the severity of this CreateIssueV4Response.
 
         :param severity: The severity of this CreateIssueV4Response.
         :type severity: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Severity`
@@ -562,7 +562,7 @@ class CreateIssueV4Response(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateIssueV4Response.
+        r"""Gets the status of this CreateIssueV4Response.
 
         :return: The status of this CreateIssueV4Response.
         :rtype: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Status`
@@ -571,7 +571,7 @@ class CreateIssueV4Response(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateIssueV4Response.
+        r"""Sets the status of this CreateIssueV4Response.
 
         :param status: The status of this CreateIssueV4Response.
         :type status: :class:`huaweicloudsdkprojectman.v4.IssueItemSfV4Status`
@@ -580,7 +580,7 @@ class CreateIssueV4Response(SdkResponse):
 
     @property
     def tracker(self):
-        """Gets the tracker of this CreateIssueV4Response.
+        r"""Gets the tracker of this CreateIssueV4Response.
 
         :return: The tracker of this CreateIssueV4Response.
         :rtype: :class:`huaweicloudsdkprojectman.v4.CreateIssueResponseV4Tracker`
@@ -589,7 +589,7 @@ class CreateIssueV4Response(SdkResponse):
 
     @tracker.setter
     def tracker(self, tracker):
-        """Sets the tracker of this CreateIssueV4Response.
+        r"""Sets the tracker of this CreateIssueV4Response.
 
         :param tracker: The tracker of this CreateIssueV4Response.
         :type tracker: :class:`huaweicloudsdkprojectman.v4.CreateIssueResponseV4Tracker`

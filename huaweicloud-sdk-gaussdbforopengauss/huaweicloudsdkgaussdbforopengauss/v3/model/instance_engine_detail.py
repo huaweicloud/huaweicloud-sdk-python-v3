@@ -27,7 +27,7 @@ class InstanceEngineDetail:
     }
 
     def __init__(self, engine_version=None, instances=None):
-        """InstanceEngineDetail
+        r"""InstanceEngineDetail
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class InstanceEngineDetail:
 
     @property
     def engine_version(self):
-        """Gets the engine_version of this InstanceEngineDetail.
+        r"""Gets the engine_version of this InstanceEngineDetail.
 
         引擎版本号。
 
@@ -61,7 +61,7 @@ class InstanceEngineDetail:
 
     @engine_version.setter
     def engine_version(self, engine_version):
-        """Sets the engine_version of this InstanceEngineDetail.
+        r"""Sets the engine_version of this InstanceEngineDetail.
 
         引擎版本号。
 
@@ -72,7 +72,7 @@ class InstanceEngineDetail:
 
     @property
     def instances(self):
-        """Gets the instances of this InstanceEngineDetail.
+        r"""Gets the instances of this InstanceEngineDetail.
 
         实例详情。
 
@@ -83,7 +83,7 @@ class InstanceEngineDetail:
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this InstanceEngineDetail.
+        r"""Sets the instances of this InstanceEngineDetail.
 
         实例详情。
 

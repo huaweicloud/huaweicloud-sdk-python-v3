@@ -27,7 +27,7 @@ class UpdateInstanceRequest:
     }
 
     def __init__(self, cluster_id=None, instance_id=None):
-        """UpdateInstanceRequest
+        r"""UpdateInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class UpdateInstanceRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this UpdateInstanceRequest.
+        r"""Gets the cluster_id of this UpdateInstanceRequest.
 
         指定替换集群ID。
 
@@ -59,7 +59,7 @@ class UpdateInstanceRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this UpdateInstanceRequest.
+        r"""Sets the cluster_id of this UpdateInstanceRequest.
 
         指定替换集群ID。
 
@@ -70,7 +70,7 @@ class UpdateInstanceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateInstanceRequest.
+        r"""Gets the instance_id of this UpdateInstanceRequest.
 
         指定替换节点ID。
 
@@ -81,7 +81,7 @@ class UpdateInstanceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateInstanceRequest.
+        r"""Sets the instance_id of this UpdateInstanceRequest.
 
         指定替换节点ID。
 

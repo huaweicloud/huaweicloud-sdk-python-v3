@@ -25,7 +25,7 @@ class ApplyPolicyId:
     }
 
     def __init__(self, apply_policy_id=None):
-        """ApplyPolicyId
+        r"""ApplyPolicyId
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ApplyPolicyId:
 
     @property
     def apply_policy_id(self):
-        """Gets the apply_policy_id of this ApplyPolicyId.
+        r"""Gets the apply_policy_id of this ApplyPolicyId.
 
         实例ID。
 
@@ -53,7 +53,7 @@ class ApplyPolicyId:
 
     @apply_policy_id.setter
     def apply_policy_id(self, apply_policy_id):
-        """Sets the apply_policy_id of this ApplyPolicyId.
+        r"""Sets the apply_policy_id of this ApplyPolicyId.
 
         实例ID。
 

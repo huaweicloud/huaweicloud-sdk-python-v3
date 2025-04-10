@@ -25,7 +25,7 @@ class ListRoutesRequest:
     }
 
     def __init__(self, routetable_id=None):
-        """ListRoutesRequest
+        r"""ListRoutesRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListRoutesRequest:
 
     @property
     def routetable_id(self):
-        """Gets the routetable_id of this ListRoutesRequest.
+        r"""Gets the routetable_id of this ListRoutesRequest.
 
         路由表ID
 
@@ -53,7 +53,7 @@ class ListRoutesRequest:
 
     @routetable_id.setter
     def routetable_id(self, routetable_id):
-        """Sets the routetable_id of this ListRoutesRequest.
+        r"""Sets the routetable_id of this ListRoutesRequest.
 
         路由表ID
 

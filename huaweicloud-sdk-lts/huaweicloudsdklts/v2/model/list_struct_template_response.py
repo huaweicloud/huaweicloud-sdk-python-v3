@@ -26,7 +26,7 @@ class ListStructTemplateResponse(SdkResponse):
     }
 
     def __init__(self, results=None):
-        """ListStructTemplateResponse
+        r"""ListStructTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListStructTemplateResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this ListStructTemplateResponse.
+        r"""Gets the results of this ListStructTemplateResponse.
 
         查询的自定义结构化模板数组
 
@@ -55,7 +55,7 @@ class ListStructTemplateResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this ListStructTemplateResponse.
+        r"""Sets the results of this ListStructTemplateResponse.
 
         查询的自定义结构化模板数组
 

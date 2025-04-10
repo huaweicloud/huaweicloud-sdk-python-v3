@@ -27,7 +27,7 @@ class ApiActionDTO:
     }
 
     def __init__(self, time=None, action=None):
-        """ApiActionDTO
+        r"""ApiActionDTO
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ApiActionDTO:
 
     @property
     def time(self):
-        """Gets the time of this ApiActionDTO.
+        r"""Gets the time of this ApiActionDTO.
 
         截止时间
 
@@ -61,7 +61,7 @@ class ApiActionDTO:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this ApiActionDTO.
+        r"""Sets the time of this ApiActionDTO.
 
         截止时间
 
@@ -72,7 +72,7 @@ class ApiActionDTO:
 
     @property
     def action(self):
-        """Gets the action of this ApiActionDTO.
+        r"""Gets the action of this ApiActionDTO.
 
         操作类型
 
@@ -83,7 +83,7 @@ class ApiActionDTO:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ApiActionDTO.
+        r"""Sets the action of this ApiActionDTO.
 
         操作类型
 

@@ -27,7 +27,7 @@ class ValidateHttpsInfoRequest:
     }
 
     def __init__(self, iam_user_uuid=None, body=None):
-        """ValidateHttpsInfoRequest
+        r"""ValidateHttpsInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ValidateHttpsInfoRequest:
 
     @property
     def iam_user_uuid(self):
-        """Gets the iam_user_uuid of this ValidateHttpsInfoRequest.
+        r"""Gets the iam_user_uuid of this ValidateHttpsInfoRequest.
 
         用户iam_user_uuid
 
@@ -60,7 +60,7 @@ class ValidateHttpsInfoRequest:
 
     @iam_user_uuid.setter
     def iam_user_uuid(self, iam_user_uuid):
-        """Sets the iam_user_uuid of this ValidateHttpsInfoRequest.
+        r"""Sets the iam_user_uuid of this ValidateHttpsInfoRequest.
 
         用户iam_user_uuid
 
@@ -71,7 +71,7 @@ class ValidateHttpsInfoRequest:
 
     @property
     def body(self):
-        """Gets the body of this ValidateHttpsInfoRequest.
+        r"""Gets the body of this ValidateHttpsInfoRequest.
 
         :return: The body of this ValidateHttpsInfoRequest.
         :rtype: :class:`huaweicloudsdkcodehub.v3.PasswordRequest`
@@ -80,7 +80,7 @@ class ValidateHttpsInfoRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ValidateHttpsInfoRequest.
+        r"""Sets the body of this ValidateHttpsInfoRequest.
 
         :param body: The body of this ValidateHttpsInfoRequest.
         :type body: :class:`huaweicloudsdkcodehub.v3.PasswordRequest`

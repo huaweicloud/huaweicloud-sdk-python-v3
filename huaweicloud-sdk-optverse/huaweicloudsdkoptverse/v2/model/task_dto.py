@@ -25,7 +25,7 @@ class TaskDto:
     }
 
     def __init__(self, input_json=None):
-        """TaskDto
+        r"""TaskDto
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class TaskDto:
 
     @property
     def input_json(self):
-        """Gets the input_json of this TaskDto.
+        r"""Gets the input_json of this TaskDto.
 
         任务输入信息，json格式；每个子服务该对象结构不同，框架层不解析具体key，运行态直接透传给子服务REST API处理（参数合法性校验 只能子服务镜像内进行；当前算法镜像提供单独校验接口和处理接口，后续待统一交互机制）
 
@@ -53,7 +53,7 @@ class TaskDto:
 
     @input_json.setter
     def input_json(self, input_json):
-        """Sets the input_json of this TaskDto.
+        r"""Sets the input_json of this TaskDto.
 
         任务输入信息，json格式；每个子服务该对象结构不同，框架层不解析具体key，运行态直接透传给子服务REST API处理（参数合法性校验 只能子服务镜像内进行；当前算法镜像提供单独校验接口和处理接口，后续待统一交互机制）
 

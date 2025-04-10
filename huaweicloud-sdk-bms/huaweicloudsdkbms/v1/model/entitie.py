@@ -27,7 +27,7 @@ class Entitie:
     }
 
     def __init__(self, server_id=None, nic_id=None):
-        """Entitie
+        r"""Entitie
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Entitie:
 
     @property
     def server_id(self):
-        """Gets the server_id of this Entitie.
+        r"""Gets the server_id of this Entitie.
 
         裸金属服务器相关操作显示server_id
 
@@ -61,7 +61,7 @@ class Entitie:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this Entitie.
+        r"""Sets the server_id of this Entitie.
 
         裸金属服务器相关操作显示server_id
 
@@ -72,7 +72,7 @@ class Entitie:
 
     @property
     def nic_id(self):
-        """Gets the nic_id of this Entitie.
+        r"""Gets the nic_id of this Entitie.
 
         网卡相关操作显示nic_id
 
@@ -83,7 +83,7 @@ class Entitie:
 
     @nic_id.setter
     def nic_id(self, nic_id):
-        """Sets the nic_id of this Entitie.
+        r"""Sets the nic_id of this Entitie.
 
         网卡相关操作显示nic_id
 

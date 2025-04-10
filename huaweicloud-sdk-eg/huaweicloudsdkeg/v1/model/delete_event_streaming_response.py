@@ -24,7 +24,7 @@ class DeleteEventStreamingResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteEventStreamingResponse
+        r"""DeleteEventStreamingResponse
 
         The model defined in huaweicloud sdk
 

@@ -38,7 +38,7 @@ class ShowJobDetailResponse(SdkResponse):
     }
 
     def __init__(self, accept_job_num=None, end_time=None, is_answer_visibility=None, is_score_visibility=None, average_score=None, score_job_num=None, submit_job_num=None):
-        """ShowJobDetailResponse
+        r"""ShowJobDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ShowJobDetailResponse(SdkResponse):
 
     @property
     def accept_job_num(self):
-        """Gets the accept_job_num of this ShowJobDetailResponse.
+        r"""Gets the accept_job_num of this ShowJobDetailResponse.
 
         作业下发人数
 
@@ -97,7 +97,7 @@ class ShowJobDetailResponse(SdkResponse):
 
     @accept_job_num.setter
     def accept_job_num(self, accept_job_num):
-        """Sets the accept_job_num of this ShowJobDetailResponse.
+        r"""Sets the accept_job_num of this ShowJobDetailResponse.
 
         作业下发人数
 
@@ -108,7 +108,7 @@ class ShowJobDetailResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowJobDetailResponse.
+        r"""Gets the end_time of this ShowJobDetailResponse.
 
         作业截止时间, 日期格式：yyyy-MM-dd HH:mm:ss
 
@@ -119,7 +119,7 @@ class ShowJobDetailResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowJobDetailResponse.
+        r"""Sets the end_time of this ShowJobDetailResponse.
 
         作业截止时间, 日期格式：yyyy-MM-dd HH:mm:ss
 
@@ -130,7 +130,7 @@ class ShowJobDetailResponse(SdkResponse):
 
     @property
     def is_answer_visibility(self):
-        """Gets the is_answer_visibility of this ShowJobDetailResponse.
+        r"""Gets the is_answer_visibility of this ShowJobDetailResponse.
 
         作业答案是否公布(unpublish:表示未公布答案, publish:表示已公布答案)
 
@@ -141,7 +141,7 @@ class ShowJobDetailResponse(SdkResponse):
 
     @is_answer_visibility.setter
     def is_answer_visibility(self, is_answer_visibility):
-        """Sets the is_answer_visibility of this ShowJobDetailResponse.
+        r"""Sets the is_answer_visibility of this ShowJobDetailResponse.
 
         作业答案是否公布(unpublish:表示未公布答案, publish:表示已公布答案)
 
@@ -152,7 +152,7 @@ class ShowJobDetailResponse(SdkResponse):
 
     @property
     def is_score_visibility(self):
-        """Gets the is_score_visibility of this ShowJobDetailResponse.
+        r"""Gets the is_score_visibility of this ShowJobDetailResponse.
 
         作业成绩是否公布(unpublish:表示未公布成绩, publish:表示已公布成绩)
 
@@ -163,7 +163,7 @@ class ShowJobDetailResponse(SdkResponse):
 
     @is_score_visibility.setter
     def is_score_visibility(self, is_score_visibility):
-        """Sets the is_score_visibility of this ShowJobDetailResponse.
+        r"""Sets the is_score_visibility of this ShowJobDetailResponse.
 
         作业成绩是否公布(unpublish:表示未公布成绩, publish:表示已公布成绩)
 
@@ -174,7 +174,7 @@ class ShowJobDetailResponse(SdkResponse):
 
     @property
     def average_score(self):
-        """Gets the average_score of this ShowJobDetailResponse.
+        r"""Gets the average_score of this ShowJobDetailResponse.
 
         作业均分
 
@@ -185,7 +185,7 @@ class ShowJobDetailResponse(SdkResponse):
 
     @average_score.setter
     def average_score(self, average_score):
-        """Sets the average_score of this ShowJobDetailResponse.
+        r"""Sets the average_score of this ShowJobDetailResponse.
 
         作业均分
 
@@ -196,7 +196,7 @@ class ShowJobDetailResponse(SdkResponse):
 
     @property
     def score_job_num(self):
-        """Gets the score_job_num of this ShowJobDetailResponse.
+        r"""Gets the score_job_num of this ShowJobDetailResponse.
 
         老师手动评分人数
 
@@ -207,7 +207,7 @@ class ShowJobDetailResponse(SdkResponse):
 
     @score_job_num.setter
     def score_job_num(self, score_job_num):
-        """Sets the score_job_num of this ShowJobDetailResponse.
+        r"""Sets the score_job_num of this ShowJobDetailResponse.
 
         老师手动评分人数
 
@@ -218,7 +218,7 @@ class ShowJobDetailResponse(SdkResponse):
 
     @property
     def submit_job_num(self):
-        """Gets the submit_job_num of this ShowJobDetailResponse.
+        r"""Gets the submit_job_num of this ShowJobDetailResponse.
 
         作业提交人数
 
@@ -229,7 +229,7 @@ class ShowJobDetailResponse(SdkResponse):
 
     @submit_job_num.setter
     def submit_job_num(self, submit_job_num):
-        """Sets the submit_job_num of this ShowJobDetailResponse.
+        r"""Sets the submit_job_num of this ShowJobDetailResponse.
 
         作业提交人数
 

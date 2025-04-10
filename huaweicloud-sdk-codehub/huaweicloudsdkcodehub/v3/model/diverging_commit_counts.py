@@ -27,7 +27,7 @@ class DivergingCommitCounts:
     }
 
     def __init__(self, ahead=None, behind=None):
-        """DivergingCommitCounts
+        r"""DivergingCommitCounts
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DivergingCommitCounts:
 
     @property
     def ahead(self):
-        """Gets the ahead of this DivergingCommitCounts.
+        r"""Gets the ahead of this DivergingCommitCounts.
 
         领先提交数
 
@@ -61,7 +61,7 @@ class DivergingCommitCounts:
 
     @ahead.setter
     def ahead(self, ahead):
-        """Sets the ahead of this DivergingCommitCounts.
+        r"""Sets the ahead of this DivergingCommitCounts.
 
         领先提交数
 
@@ -72,7 +72,7 @@ class DivergingCommitCounts:
 
     @property
     def behind(self):
-        """Gets the behind of this DivergingCommitCounts.
+        r"""Gets the behind of this DivergingCommitCounts.
 
         滞后提交数
 
@@ -83,7 +83,7 @@ class DivergingCommitCounts:
 
     @behind.setter
     def behind(self, behind):
-        """Sets the behind of this DivergingCommitCounts.
+        r"""Sets the behind of this DivergingCommitCounts.
 
         滞后提交数
 

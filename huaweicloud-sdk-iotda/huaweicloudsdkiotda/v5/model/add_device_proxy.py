@@ -31,7 +31,7 @@ class AddDeviceProxy:
     }
 
     def __init__(self, proxy_name=None, proxy_devices=None, effective_time_range=None, app_id=None):
-        """AddDeviceProxy
+        r"""AddDeviceProxy
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class AddDeviceProxy:
 
     @property
     def proxy_name(self):
-        """Gets the proxy_name of this AddDeviceProxy.
+        r"""Gets the proxy_name of this AddDeviceProxy.
 
         **参数说明**：设备代理名称
 
@@ -71,7 +71,7 @@ class AddDeviceProxy:
 
     @proxy_name.setter
     def proxy_name(self, proxy_name):
-        """Sets the proxy_name of this AddDeviceProxy.
+        r"""Sets the proxy_name of this AddDeviceProxy.
 
         **参数说明**：设备代理名称
 
@@ -82,7 +82,7 @@ class AddDeviceProxy:
 
     @property
     def proxy_devices(self):
-        """Gets the proxy_devices of this AddDeviceProxy.
+        r"""Gets the proxy_devices of this AddDeviceProxy.
 
         **参数说明**：代理设备列表，列表内所有设备共享网关权限，即列表内任意一个网关下的子设备可以通过组里任意一个网关上线然后进行数据上报。 **取值范围**：列表内填写设备id，列表内最少有2个设备id，最多有10个设备id，设备id取值范围：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合，建议不少于4个字符。
 
@@ -93,7 +93,7 @@ class AddDeviceProxy:
 
     @proxy_devices.setter
     def proxy_devices(self, proxy_devices):
-        """Sets the proxy_devices of this AddDeviceProxy.
+        r"""Sets the proxy_devices of this AddDeviceProxy.
 
         **参数说明**：代理设备列表，列表内所有设备共享网关权限，即列表内任意一个网关下的子设备可以通过组里任意一个网关上线然后进行数据上报。 **取值范围**：列表内填写设备id，列表内最少有2个设备id，最多有10个设备id，设备id取值范围：长度不超过128，只允许字母、数字、下划线（_）、连接符（-）的组合，建议不少于4个字符。
 
@@ -104,7 +104,7 @@ class AddDeviceProxy:
 
     @property
     def effective_time_range(self):
-        """Gets the effective_time_range of this AddDeviceProxy.
+        r"""Gets the effective_time_range of this AddDeviceProxy.
 
         :return: The effective_time_range of this AddDeviceProxy.
         :rtype: :class:`huaweicloudsdkiotda.v5.EffectiveTimeRange`
@@ -113,7 +113,7 @@ class AddDeviceProxy:
 
     @effective_time_range.setter
     def effective_time_range(self, effective_time_range):
-        """Sets the effective_time_range of this AddDeviceProxy.
+        r"""Sets the effective_time_range of this AddDeviceProxy.
 
         :param effective_time_range: The effective_time_range of this AddDeviceProxy.
         :type effective_time_range: :class:`huaweicloudsdkiotda.v5.EffectiveTimeRange`
@@ -122,7 +122,7 @@ class AddDeviceProxy:
 
     @property
     def app_id(self):
-        """Gets the app_id of this AddDeviceProxy.
+        r"""Gets the app_id of this AddDeviceProxy.
 
         **参数说明**：资源空间ID。携带该参数指定创建的设备归属到哪个资源空间下。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -133,7 +133,7 @@ class AddDeviceProxy:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this AddDeviceProxy.
+        r"""Sets the app_id of this AddDeviceProxy.
 
         **参数说明**：资源空间ID。携带该参数指定创建的设备归属到哪个资源空间下。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 

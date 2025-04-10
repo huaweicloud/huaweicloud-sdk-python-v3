@@ -32,7 +32,7 @@ class ShowPlaybookStatisticsResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, data=None, x_request_id=None):
-        """ShowPlaybookStatisticsResponse
+        r"""ShowPlaybookStatisticsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowPlaybookStatisticsResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ShowPlaybookStatisticsResponse.
+        r"""Gets the code of this ShowPlaybookStatisticsResponse.
 
         错误码
 
@@ -76,7 +76,7 @@ class ShowPlaybookStatisticsResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ShowPlaybookStatisticsResponse.
+        r"""Sets the code of this ShowPlaybookStatisticsResponse.
 
         错误码
 
@@ -87,7 +87,7 @@ class ShowPlaybookStatisticsResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowPlaybookStatisticsResponse.
+        r"""Gets the message of this ShowPlaybookStatisticsResponse.
 
         错误信息
 
@@ -98,7 +98,7 @@ class ShowPlaybookStatisticsResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowPlaybookStatisticsResponse.
+        r"""Sets the message of this ShowPlaybookStatisticsResponse.
 
         错误信息
 
@@ -109,7 +109,7 @@ class ShowPlaybookStatisticsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowPlaybookStatisticsResponse.
+        r"""Gets the data of this ShowPlaybookStatisticsResponse.
 
         :return: The data of this ShowPlaybookStatisticsResponse.
         :rtype: :class:`huaweicloudsdksecmaster.v2.PlaybookStatisticDetail`
@@ -118,7 +118,7 @@ class ShowPlaybookStatisticsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowPlaybookStatisticsResponse.
+        r"""Sets the data of this ShowPlaybookStatisticsResponse.
 
         :param data: The data of this ShowPlaybookStatisticsResponse.
         :type data: :class:`huaweicloudsdksecmaster.v2.PlaybookStatisticDetail`
@@ -127,7 +127,7 @@ class ShowPlaybookStatisticsResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowPlaybookStatisticsResponse.
+        r"""Gets the x_request_id of this ShowPlaybookStatisticsResponse.
 
         :return: The x_request_id of this ShowPlaybookStatisticsResponse.
         :rtype: str
@@ -136,7 +136,7 @@ class ShowPlaybookStatisticsResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowPlaybookStatisticsResponse.
+        r"""Sets the x_request_id of this ShowPlaybookStatisticsResponse.
 
         :param x_request_id: The x_request_id of this ShowPlaybookStatisticsResponse.
         :type x_request_id: str

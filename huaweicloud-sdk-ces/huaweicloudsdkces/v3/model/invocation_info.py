@@ -49,7 +49,7 @@ class InvocationInfo:
     }
 
     def __init__(self, invocation_id=None, instance_id=None, instance_name=None, instance_type=None, intranet_ips=None, elastic_ips=None, invocation_type=None, invocation_status=None, invocation_target=None, create_time=None, update_time=None, current_version=None, target_version=None):
-        """InvocationInfo
+        r"""InvocationInfo
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class InvocationInfo:
 
     @property
     def invocation_id(self):
-        """Gets the invocation_id of this InvocationInfo.
+        r"""Gets the invocation_id of this InvocationInfo.
 
         任务id
 
@@ -138,7 +138,7 @@ class InvocationInfo:
 
     @invocation_id.setter
     def invocation_id(self, invocation_id):
-        """Sets the invocation_id of this InvocationInfo.
+        r"""Sets the invocation_id of this InvocationInfo.
 
         任务id
 
@@ -149,7 +149,7 @@ class InvocationInfo:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this InvocationInfo.
+        r"""Gets the instance_id of this InvocationInfo.
 
         主机id
 
@@ -160,7 +160,7 @@ class InvocationInfo:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this InvocationInfo.
+        r"""Sets the instance_id of this InvocationInfo.
 
         主机id
 
@@ -171,7 +171,7 @@ class InvocationInfo:
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this InvocationInfo.
+        r"""Gets the instance_name of this InvocationInfo.
 
         主机名称
 
@@ -182,7 +182,7 @@ class InvocationInfo:
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this InvocationInfo.
+        r"""Sets the instance_name of this InvocationInfo.
 
         主机名称
 
@@ -193,7 +193,7 @@ class InvocationInfo:
 
     @property
     def instance_type(self):
-        """Gets the instance_type of this InvocationInfo.
+        r"""Gets the instance_type of this InvocationInfo.
 
         主机类型，ECS弹性云服务器，BMS裸金属服务器
 
@@ -204,7 +204,7 @@ class InvocationInfo:
 
     @instance_type.setter
     def instance_type(self, instance_type):
-        """Sets the instance_type of this InvocationInfo.
+        r"""Sets the instance_type of this InvocationInfo.
 
         主机类型，ECS弹性云服务器，BMS裸金属服务器
 
@@ -215,7 +215,7 @@ class InvocationInfo:
 
     @property
     def intranet_ips(self):
-        """Gets the intranet_ips of this InvocationInfo.
+        r"""Gets the intranet_ips of this InvocationInfo.
 
         内网ip列表
 
@@ -226,7 +226,7 @@ class InvocationInfo:
 
     @intranet_ips.setter
     def intranet_ips(self, intranet_ips):
-        """Sets the intranet_ips of this InvocationInfo.
+        r"""Sets the intranet_ips of this InvocationInfo.
 
         内网ip列表
 
@@ -237,7 +237,7 @@ class InvocationInfo:
 
     @property
     def elastic_ips(self):
-        """Gets the elastic_ips of this InvocationInfo.
+        r"""Gets the elastic_ips of this InvocationInfo.
 
         弹性公网ip列表
 
@@ -248,7 +248,7 @@ class InvocationInfo:
 
     @elastic_ips.setter
     def elastic_ips(self, elastic_ips):
-        """Sets the elastic_ips of this InvocationInfo.
+        r"""Sets the elastic_ips of this InvocationInfo.
 
         弹性公网ip列表
 
@@ -259,7 +259,7 @@ class InvocationInfo:
 
     @property
     def invocation_type(self):
-        """Gets the invocation_type of this InvocationInfo.
+        r"""Gets the invocation_type of this InvocationInfo.
 
         任务类型(INSTALL 安装，UPDATE 升级，ROLLBACK 回滚，RETRY 重试)
 
@@ -270,7 +270,7 @@ class InvocationInfo:
 
     @invocation_type.setter
     def invocation_type(self, invocation_type):
-        """Sets the invocation_type of this InvocationInfo.
+        r"""Sets the invocation_type of this InvocationInfo.
 
         任务类型(INSTALL 安装，UPDATE 升级，ROLLBACK 回滚，RETRY 重试)
 
@@ -281,7 +281,7 @@ class InvocationInfo:
 
     @property
     def invocation_status(self):
-        """Gets the invocation_status of this InvocationInfo.
+        r"""Gets the invocation_status of this InvocationInfo.
 
         任务状态，PENDING 待执行，RUNNING 运行中，TIMEOUT 超时，FAILED 失败，SUCCEEDED 成功，CANCELED 取消，ROLLBACKED已回退
 
@@ -292,7 +292,7 @@ class InvocationInfo:
 
     @invocation_status.setter
     def invocation_status(self, invocation_status):
-        """Sets the invocation_status of this InvocationInfo.
+        r"""Sets the invocation_status of this InvocationInfo.
 
         任务状态，PENDING 待执行，RUNNING 运行中，TIMEOUT 超时，FAILED 失败，SUCCEEDED 成功，CANCELED 取消，ROLLBACKED已回退
 
@@ -303,7 +303,7 @@ class InvocationInfo:
 
     @property
     def invocation_target(self):
-        """Gets the invocation_target of this InvocationInfo.
+        r"""Gets the invocation_target of this InvocationInfo.
 
         任务对象，目前仅支持telescope
 
@@ -314,7 +314,7 @@ class InvocationInfo:
 
     @invocation_target.setter
     def invocation_target(self, invocation_target):
-        """Sets the invocation_target of this InvocationInfo.
+        r"""Sets the invocation_target of this InvocationInfo.
 
         任务对象，目前仅支持telescope
 
@@ -325,7 +325,7 @@ class InvocationInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this InvocationInfo.
+        r"""Gets the create_time of this InvocationInfo.
 
         任务创建时间
 
@@ -336,7 +336,7 @@ class InvocationInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this InvocationInfo.
+        r"""Sets the create_time of this InvocationInfo.
 
         任务创建时间
 
@@ -347,7 +347,7 @@ class InvocationInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this InvocationInfo.
+        r"""Gets the update_time of this InvocationInfo.
 
         任务更新时间
 
@@ -358,7 +358,7 @@ class InvocationInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this InvocationInfo.
+        r"""Sets the update_time of this InvocationInfo.
 
         任务更新时间
 
@@ -369,7 +369,7 @@ class InvocationInfo:
 
     @property
     def current_version(self):
-        """Gets the current_version of this InvocationInfo.
+        r"""Gets the current_version of this InvocationInfo.
 
         当前版本
 
@@ -380,7 +380,7 @@ class InvocationInfo:
 
     @current_version.setter
     def current_version(self, current_version):
-        """Sets the current_version of this InvocationInfo.
+        r"""Sets the current_version of this InvocationInfo.
 
         当前版本
 
@@ -391,7 +391,7 @@ class InvocationInfo:
 
     @property
     def target_version(self):
-        """Gets the target_version of this InvocationInfo.
+        r"""Gets the target_version of this InvocationInfo.
 
         目标版本
 
@@ -402,7 +402,7 @@ class InvocationInfo:
 
     @target_version.setter
     def target_version(self, target_version):
-        """Sets the target_version of this InvocationInfo.
+        r"""Sets the target_version of this InvocationInfo.
 
         目标版本
 

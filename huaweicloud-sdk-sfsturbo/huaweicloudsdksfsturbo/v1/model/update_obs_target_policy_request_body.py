@@ -25,7 +25,7 @@ class UpdateObsTargetPolicyRequestBody:
     }
 
     def __init__(self, policy=None):
-        """UpdateObsTargetPolicyRequestBody
+        r"""UpdateObsTargetPolicyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateObsTargetPolicyRequestBody:
 
     @property
     def policy(self):
-        """Gets the policy of this UpdateObsTargetPolicyRequestBody.
+        r"""Gets the policy of this UpdateObsTargetPolicyRequestBody.
 
         :return: The policy of this UpdateObsTargetPolicyRequestBody.
         :rtype: :class:`huaweicloudsdksfsturbo.v1.ObsDataRepositoryPolicy`
@@ -51,7 +51,7 @@ class UpdateObsTargetPolicyRequestBody:
 
     @policy.setter
     def policy(self, policy):
-        """Sets the policy of this UpdateObsTargetPolicyRequestBody.
+        r"""Sets the policy of this UpdateObsTargetPolicyRequestBody.
 
         :param policy: The policy of this UpdateObsTargetPolicyRequestBody.
         :type policy: :class:`huaweicloudsdksfsturbo.v1.ObsDataRepositoryPolicy`

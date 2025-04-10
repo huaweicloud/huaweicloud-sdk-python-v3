@@ -31,7 +31,7 @@ class HealthReportPerformanceStat:
     }
 
     def __init__(self, peak_stats=None, ratio_stats=None, analyze_success=None, error_message=None):
-        """HealthReportPerformanceStat
+        r"""HealthReportPerformanceStat
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class HealthReportPerformanceStat:
 
     @property
     def peak_stats(self):
-        """Gets the peak_stats of this HealthReportPerformanceStat.
+        r"""Gets the peak_stats of this HealthReportPerformanceStat.
 
         峰值统计信息列表。
 
@@ -71,7 +71,7 @@ class HealthReportPerformanceStat:
 
     @peak_stats.setter
     def peak_stats(self, peak_stats):
-        """Sets the peak_stats of this HealthReportPerformanceStat.
+        r"""Sets the peak_stats of this HealthReportPerformanceStat.
 
         峰值统计信息列表。
 
@@ -82,7 +82,7 @@ class HealthReportPerformanceStat:
 
     @property
     def ratio_stats(self):
-        """Gets the ratio_stats of this HealthReportPerformanceStat.
+        r"""Gets the ratio_stats of this HealthReportPerformanceStat.
 
         比率值数据列表。
 
@@ -93,7 +93,7 @@ class HealthReportPerformanceStat:
 
     @ratio_stats.setter
     def ratio_stats(self, ratio_stats):
-        """Sets the ratio_stats of this HealthReportPerformanceStat.
+        r"""Sets the ratio_stats of this HealthReportPerformanceStat.
 
         比率值数据列表。
 
@@ -104,7 +104,7 @@ class HealthReportPerformanceStat:
 
     @property
     def analyze_success(self):
-        """Gets the analyze_success of this HealthReportPerformanceStat.
+        r"""Gets the analyze_success of this HealthReportPerformanceStat.
 
         统计分析是否成功。
 
@@ -115,7 +115,7 @@ class HealthReportPerformanceStat:
 
     @analyze_success.setter
     def analyze_success(self, analyze_success):
-        """Sets the analyze_success of this HealthReportPerformanceStat.
+        r"""Sets the analyze_success of this HealthReportPerformanceStat.
 
         统计分析是否成功。
 
@@ -126,7 +126,7 @@ class HealthReportPerformanceStat:
 
     @property
     def error_message(self):
-        """Gets the error_message of this HealthReportPerformanceStat.
+        r"""Gets the error_message of this HealthReportPerformanceStat.
 
         错误信息。
 
@@ -137,7 +137,7 @@ class HealthReportPerformanceStat:
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this HealthReportPerformanceStat.
+        r"""Sets the error_message of this HealthReportPerformanceStat.
 
         错误信息。
 

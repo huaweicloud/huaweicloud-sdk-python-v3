@@ -37,7 +37,7 @@ class ConfigurationAggregatorResp:
     }
 
     def __init__(self, aggregator_name=None, aggregator_id=None, aggregator_urn=None, aggregator_type=None, account_aggregation_sources=None, updated_at=None, created_at=None):
-        """ConfigurationAggregatorResp
+        r"""ConfigurationAggregatorResp
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ConfigurationAggregatorResp:
 
     @property
     def aggregator_name(self):
-        """Gets the aggregator_name of this ConfigurationAggregatorResp.
+        r"""Gets the aggregator_name of this ConfigurationAggregatorResp.
 
         资源聚合器名称。
 
@@ -96,7 +96,7 @@ class ConfigurationAggregatorResp:
 
     @aggregator_name.setter
     def aggregator_name(self, aggregator_name):
-        """Sets the aggregator_name of this ConfigurationAggregatorResp.
+        r"""Sets the aggregator_name of this ConfigurationAggregatorResp.
 
         资源聚合器名称。
 
@@ -107,7 +107,7 @@ class ConfigurationAggregatorResp:
 
     @property
     def aggregator_id(self):
-        """Gets the aggregator_id of this ConfigurationAggregatorResp.
+        r"""Gets the aggregator_id of this ConfigurationAggregatorResp.
 
         资源聚合器ID。
 
@@ -118,7 +118,7 @@ class ConfigurationAggregatorResp:
 
     @aggregator_id.setter
     def aggregator_id(self, aggregator_id):
-        """Sets the aggregator_id of this ConfigurationAggregatorResp.
+        r"""Sets the aggregator_id of this ConfigurationAggregatorResp.
 
         资源聚合器ID。
 
@@ -129,7 +129,7 @@ class ConfigurationAggregatorResp:
 
     @property
     def aggregator_urn(self):
-        """Gets the aggregator_urn of this ConfigurationAggregatorResp.
+        r"""Gets the aggregator_urn of this ConfigurationAggregatorResp.
 
         资源聚合器标识符。
 
@@ -140,7 +140,7 @@ class ConfigurationAggregatorResp:
 
     @aggregator_urn.setter
     def aggregator_urn(self, aggregator_urn):
-        """Sets the aggregator_urn of this ConfigurationAggregatorResp.
+        r"""Sets the aggregator_urn of this ConfigurationAggregatorResp.
 
         资源聚合器标识符。
 
@@ -151,7 +151,7 @@ class ConfigurationAggregatorResp:
 
     @property
     def aggregator_type(self):
-        """Gets the aggregator_type of this ConfigurationAggregatorResp.
+        r"""Gets the aggregator_type of this ConfigurationAggregatorResp.
 
         聚合器类型。
 
@@ -162,7 +162,7 @@ class ConfigurationAggregatorResp:
 
     @aggregator_type.setter
     def aggregator_type(self, aggregator_type):
-        """Sets the aggregator_type of this ConfigurationAggregatorResp.
+        r"""Sets the aggregator_type of this ConfigurationAggregatorResp.
 
         聚合器类型。
 
@@ -173,7 +173,7 @@ class ConfigurationAggregatorResp:
 
     @property
     def account_aggregation_sources(self):
-        """Gets the account_aggregation_sources of this ConfigurationAggregatorResp.
+        r"""Gets the account_aggregation_sources of this ConfigurationAggregatorResp.
 
         :return: The account_aggregation_sources of this ConfigurationAggregatorResp.
         :rtype: :class:`huaweicloudsdkrms.v1.AccountAggregationSource`
@@ -182,7 +182,7 @@ class ConfigurationAggregatorResp:
 
     @account_aggregation_sources.setter
     def account_aggregation_sources(self, account_aggregation_sources):
-        """Sets the account_aggregation_sources of this ConfigurationAggregatorResp.
+        r"""Sets the account_aggregation_sources of this ConfigurationAggregatorResp.
 
         :param account_aggregation_sources: The account_aggregation_sources of this ConfigurationAggregatorResp.
         :type account_aggregation_sources: :class:`huaweicloudsdkrms.v1.AccountAggregationSource`
@@ -191,7 +191,7 @@ class ConfigurationAggregatorResp:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ConfigurationAggregatorResp.
+        r"""Gets the updated_at of this ConfigurationAggregatorResp.
 
         资源聚合器更新时间。
 
@@ -202,7 +202,7 @@ class ConfigurationAggregatorResp:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ConfigurationAggregatorResp.
+        r"""Sets the updated_at of this ConfigurationAggregatorResp.
 
         资源聚合器更新时间。
 
@@ -213,7 +213,7 @@ class ConfigurationAggregatorResp:
 
     @property
     def created_at(self):
-        """Gets the created_at of this ConfigurationAggregatorResp.
+        r"""Gets the created_at of this ConfigurationAggregatorResp.
 
         资源聚合器创建时间。
 
@@ -224,7 +224,7 @@ class ConfigurationAggregatorResp:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ConfigurationAggregatorResp.
+        r"""Sets the created_at of this ConfigurationAggregatorResp.
 
         资源聚合器创建时间。
 

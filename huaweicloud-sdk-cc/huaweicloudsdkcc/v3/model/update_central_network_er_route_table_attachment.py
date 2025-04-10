@@ -27,7 +27,7 @@ class UpdateCentralNetworkErRouteTableAttachment:
     }
 
     def __init__(self, name=None, description=None):
-        """UpdateCentralNetworkErRouteTableAttachment
+        r"""UpdateCentralNetworkErRouteTableAttachment
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateCentralNetworkErRouteTableAttachment:
 
     @property
     def name(self):
-        """Gets the name of this UpdateCentralNetworkErRouteTableAttachment.
+        r"""Gets the name of this UpdateCentralNetworkErRouteTableAttachment.
 
         实例名字。
 
@@ -61,7 +61,7 @@ class UpdateCentralNetworkErRouteTableAttachment:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateCentralNetworkErRouteTableAttachment.
+        r"""Sets the name of this UpdateCentralNetworkErRouteTableAttachment.
 
         实例名字。
 
@@ -72,7 +72,7 @@ class UpdateCentralNetworkErRouteTableAttachment:
 
     @property
     def description(self):
-        """Gets the description of this UpdateCentralNetworkErRouteTableAttachment.
+        r"""Gets the description of this UpdateCentralNetworkErRouteTableAttachment.
 
         实例描述。不支持 <>。
 
@@ -83,7 +83,7 @@ class UpdateCentralNetworkErRouteTableAttachment:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateCentralNetworkErRouteTableAttachment.
+        r"""Sets the description of this UpdateCentralNetworkErRouteTableAttachment.
 
         实例描述。不支持 <>。
 

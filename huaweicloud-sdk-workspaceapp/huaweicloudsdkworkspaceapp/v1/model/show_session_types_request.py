@@ -25,7 +25,7 @@ class ShowSessionTypesRequest:
     }
 
     def __init__(self, body=None):
-        """ShowSessionTypesRequest
+        r"""ShowSessionTypesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ShowSessionTypesRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowSessionTypesRequest.
+        r"""Gets the body of this ShowSessionTypesRequest.
 
         :return: The body of this ShowSessionTypesRequest.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.QuerySessionTypesReq`
@@ -52,7 +52,7 @@ class ShowSessionTypesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowSessionTypesRequest.
+        r"""Sets the body of this ShowSessionTypesRequest.
 
         :param body: The body of this ShowSessionTypesRequest.
         :type body: :class:`huaweicloudsdkworkspaceapp.v1.QuerySessionTypesReq`

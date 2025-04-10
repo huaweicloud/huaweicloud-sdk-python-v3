@@ -25,7 +25,7 @@ class CreateAgencyRequestBody:
     }
 
     def __init__(self, secret_type=None):
-        """CreateAgencyRequestBody
+        r"""CreateAgencyRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateAgencyRequestBody:
 
     @property
     def secret_type(self):
-        """Gets the secret_type of this CreateAgencyRequestBody.
+        r"""Gets the secret_type of this CreateAgencyRequestBody.
 
         凭据类型。
 
@@ -53,7 +53,7 @@ class CreateAgencyRequestBody:
 
     @secret_type.setter
     def secret_type(self, secret_type):
-        """Sets the secret_type of this CreateAgencyRequestBody.
+        r"""Sets the secret_type of this CreateAgencyRequestBody.
 
         凭据类型。
 

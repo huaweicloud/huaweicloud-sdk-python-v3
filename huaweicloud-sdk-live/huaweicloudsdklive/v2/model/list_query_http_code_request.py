@@ -35,7 +35,7 @@ class ListQueryHttpCodeRequest:
     }
 
     def __init__(self, play_domains=None, code=None, region=None, isp=None, start_time=None, end_time=None):
-        """ListQueryHttpCodeRequest
+        r"""ListQueryHttpCodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListQueryHttpCodeRequest:
 
     @property
     def play_domains(self):
-        """Gets the play_domains of this ListQueryHttpCodeRequest.
+        r"""Gets the play_domains of this ListQueryHttpCodeRequest.
 
         播放域名列表，最多支持查询100个域名，多个域名以逗号分隔。 
 
@@ -88,7 +88,7 @@ class ListQueryHttpCodeRequest:
 
     @play_domains.setter
     def play_domains(self, play_domains):
-        """Sets the play_domains of this ListQueryHttpCodeRequest.
+        r"""Sets the play_domains of this ListQueryHttpCodeRequest.
 
         播放域名列表，最多支持查询100个域名，多个域名以逗号分隔。 
 
@@ -99,7 +99,7 @@ class ListQueryHttpCodeRequest:
 
     @property
     def code(self):
-        """Gets the code of this ListQueryHttpCodeRequest.
+        r"""Gets the code of this ListQueryHttpCodeRequest.
 
         状态码。 
 
@@ -110,7 +110,7 @@ class ListQueryHttpCodeRequest:
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ListQueryHttpCodeRequest.
+        r"""Sets the code of this ListQueryHttpCodeRequest.
 
         状态码。 
 
@@ -121,7 +121,7 @@ class ListQueryHttpCodeRequest:
 
     @property
     def region(self):
-        """Gets the region of this ListQueryHttpCodeRequest.
+        r"""Gets the region of this ListQueryHttpCodeRequest.
 
         区域列表。具体取值请参考[省份名称缩写](https://support.huaweicloud.com/api-live/live_03_0043.html)，不填写查询所有区域。 
 
@@ -132,7 +132,7 @@ class ListQueryHttpCodeRequest:
 
     @region.setter
     def region(self, region):
-        """Sets the region of this ListQueryHttpCodeRequest.
+        r"""Sets the region of this ListQueryHttpCodeRequest.
 
         区域列表。具体取值请参考[省份名称缩写](https://support.huaweicloud.com/api-live/live_03_0043.html)，不填写查询所有区域。 
 
@@ -143,7 +143,7 @@ class ListQueryHttpCodeRequest:
 
     @property
     def isp(self):
-        """Gets the isp of this ListQueryHttpCodeRequest.
+        r"""Gets the isp of this ListQueryHttpCodeRequest.
 
         运营商列表，取值如下： - CMCC ：移动 - CTCC ： 电信 - CUCC ：联通 - OTHER ：其他  不填写查询所有运营商。 
 
@@ -154,7 +154,7 @@ class ListQueryHttpCodeRequest:
 
     @isp.setter
     def isp(self, isp):
-        """Sets the isp of this ListQueryHttpCodeRequest.
+        r"""Sets the isp of this ListQueryHttpCodeRequest.
 
         运营商列表，取值如下： - CMCC ：移动 - CTCC ： 电信 - CUCC ：联通 - OTHER ：其他  不填写查询所有运营商。 
 
@@ -165,7 +165,7 @@ class ListQueryHttpCodeRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListQueryHttpCodeRequest.
+        r"""Gets the start_time of this ListQueryHttpCodeRequest.
 
         起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。若参数为空，默认查询最近1小时数据。  最大查询跨度1天，最大查询周期7天。 
 
@@ -176,7 +176,7 @@ class ListQueryHttpCodeRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListQueryHttpCodeRequest.
+        r"""Sets the start_time of this ListQueryHttpCodeRequest.
 
         起始时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。若参数为空，默认查询最近1小时数据。  最大查询跨度1天，最大查询周期7天。 
 
@@ -187,7 +187,7 @@ class ListQueryHttpCodeRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListQueryHttpCodeRequest.
+        r"""Gets the end_time of this ListQueryHttpCodeRequest.
 
         结束时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间。结束时间需大于起始时间。  最大查询跨度1天，最大查询周期7天。 
 
@@ -198,7 +198,7 @@ class ListQueryHttpCodeRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListQueryHttpCodeRequest.
+        r"""Sets the end_time of this ListQueryHttpCodeRequest.
 
         结束时间。日期格式按照ISO8601表示法，并使用UTC时间。  格式为：YYYY-MM-DDThh:mm:ssZ。  若参数为空，默认为当前时间。结束时间需大于起始时间。  最大查询跨度1天，最大查询周期7天。 
 

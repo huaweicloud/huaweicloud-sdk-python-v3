@@ -27,7 +27,7 @@ class DeleteSnapshotRequest:
     }
 
     def __init__(self, cluster_id=None, snapshot_id=None):
-        """DeleteSnapshotRequest
+        r"""DeleteSnapshotRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteSnapshotRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this DeleteSnapshotRequest.
+        r"""Gets the cluster_id of this DeleteSnapshotRequest.
 
         删除快照所属的集群的ID。
 
@@ -59,7 +59,7 @@ class DeleteSnapshotRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this DeleteSnapshotRequest.
+        r"""Sets the cluster_id of this DeleteSnapshotRequest.
 
         删除快照所属的集群的ID。
 
@@ -70,7 +70,7 @@ class DeleteSnapshotRequest:
 
     @property
     def snapshot_id(self):
-        """Gets the snapshot_id of this DeleteSnapshotRequest.
+        r"""Gets the snapshot_id of this DeleteSnapshotRequest.
 
         要删除快照的ID。
 
@@ -81,7 +81,7 @@ class DeleteSnapshotRequest:
 
     @snapshot_id.setter
     def snapshot_id(self, snapshot_id):
-        """Sets the snapshot_id of this DeleteSnapshotRequest.
+        r"""Sets the snapshot_id of this DeleteSnapshotRequest.
 
         要删除快照的ID。
 

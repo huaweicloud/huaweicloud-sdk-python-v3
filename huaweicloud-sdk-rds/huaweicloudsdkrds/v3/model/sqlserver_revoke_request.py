@@ -27,7 +27,7 @@ class SqlserverRevokeRequest:
     }
 
     def __init__(self, db_name=None, users=None):
-        """SqlserverRevokeRequest
+        r"""SqlserverRevokeRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class SqlserverRevokeRequest:
 
     @property
     def db_name(self):
-        """Gets the db_name of this SqlserverRevokeRequest.
+        r"""Gets the db_name of this SqlserverRevokeRequest.
 
         数据库名称。
 
@@ -59,7 +59,7 @@ class SqlserverRevokeRequest:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this SqlserverRevokeRequest.
+        r"""Sets the db_name of this SqlserverRevokeRequest.
 
         数据库名称。
 
@@ -70,7 +70,7 @@ class SqlserverRevokeRequest:
 
     @property
     def users(self):
-        """Gets the users of this SqlserverRevokeRequest.
+        r"""Gets the users of this SqlserverRevokeRequest.
 
         每个元素都是与数据库相关联的帐号。单次请求最多支持50个元素。
 
@@ -81,7 +81,7 @@ class SqlserverRevokeRequest:
 
     @users.setter
     def users(self, users):
-        """Sets the users of this SqlserverRevokeRequest.
+        r"""Sets the users of this SqlserverRevokeRequest.
 
         每个元素都是与数据库相关联的帐号。单次请求最多支持50个元素。
 

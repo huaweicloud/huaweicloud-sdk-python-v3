@@ -39,7 +39,7 @@ class ListTablesStatisticRequest:
     }
 
     def __init__(self, cluster_id=None, rate_type=None, offset=None, limit=None, order_by=None, sort_by=None, filter=None, value=None):
-        """ListTablesStatisticRequest
+        r"""ListTablesStatisticRequest
 
         The model defined in huaweicloud sdk
 
@@ -88,7 +88,7 @@ class ListTablesStatisticRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ListTablesStatisticRequest.
+        r"""Gets the cluster_id of this ListTablesStatisticRequest.
 
         集群ID。
 
@@ -99,7 +99,7 @@ class ListTablesStatisticRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ListTablesStatisticRequest.
+        r"""Sets the cluster_id of this ListTablesStatisticRequest.
 
         集群ID。
 
@@ -110,7 +110,7 @@ class ListTablesStatisticRequest:
 
     @property
     def rate_type(self):
-        """Gets the rate_type of this ListTablesStatisticRequest.
+        r"""Gets the rate_type of this ListTablesStatisticRequest.
 
         查询类型。固定取值。 skew：表倾斜率。 dirtyPage：表脏页率。
 
@@ -121,7 +121,7 @@ class ListTablesStatisticRequest:
 
     @rate_type.setter
     def rate_type(self, rate_type):
-        """Sets the rate_type of this ListTablesStatisticRequest.
+        r"""Sets the rate_type of this ListTablesStatisticRequest.
 
         查询类型。固定取值。 skew：表倾斜率。 dirtyPage：表脏页率。
 
@@ -132,7 +132,7 @@ class ListTablesStatisticRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTablesStatisticRequest.
+        r"""Gets the offset of this ListTablesStatisticRequest.
 
         偏移量，表示从此偏移量开始查询，offset>=0。
 
@@ -143,7 +143,7 @@ class ListTablesStatisticRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTablesStatisticRequest.
+        r"""Sets the offset of this ListTablesStatisticRequest.
 
         偏移量，表示从此偏移量开始查询，offset>=0。
 
@@ -154,7 +154,7 @@ class ListTablesStatisticRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTablesStatisticRequest.
+        r"""Gets the limit of this ListTablesStatisticRequest.
 
         每页显示的条目数量。
 
@@ -165,7 +165,7 @@ class ListTablesStatisticRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTablesStatisticRequest.
+        r"""Sets the limit of this ListTablesStatisticRequest.
 
         每页显示的条目数量。
 
@@ -176,7 +176,7 @@ class ListTablesStatisticRequest:
 
     @property
     def order_by(self):
-        """Gets the order_by of this ListTablesStatisticRequest.
+        r"""Gets the order_by of this ListTablesStatisticRequest.
 
         排序字段。固定取值。 table_size：表大小。rate：表倾斜率或脏页率。
 
@@ -187,7 +187,7 @@ class ListTablesStatisticRequest:
 
     @order_by.setter
     def order_by(self, order_by):
-        """Sets the order_by of this ListTablesStatisticRequest.
+        r"""Sets the order_by of this ListTablesStatisticRequest.
 
         排序字段。固定取值。 table_size：表大小。rate：表倾斜率或脏页率。
 
@@ -198,7 +198,7 @@ class ListTablesStatisticRequest:
 
     @property
     def sort_by(self):
-        """Gets the sort_by of this ListTablesStatisticRequest.
+        r"""Gets the sort_by of this ListTablesStatisticRequest.
 
         正序还是倒叙。固定取值。 ASC：正序。DESC：倒序
 
@@ -209,7 +209,7 @@ class ListTablesStatisticRequest:
 
     @sort_by.setter
     def sort_by(self, sort_by):
-        """Sets the sort_by of this ListTablesStatisticRequest.
+        r"""Sets the sort_by of this ListTablesStatisticRequest.
 
         正序还是倒叙。固定取值。 ASC：正序。DESC：倒序
 
@@ -220,7 +220,7 @@ class ListTablesStatisticRequest:
 
     @property
     def filter(self):
-        """Gets the filter of this ListTablesStatisticRequest.
+        r"""Gets the filter of this ListTablesStatisticRequest.
 
         查询条件。固定取值。 db_name：数据库名称。 schema_name：schema名称。 table_name：表名。 table_owner：所属用户。
 
@@ -231,7 +231,7 @@ class ListTablesStatisticRequest:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this ListTablesStatisticRequest.
+        r"""Sets the filter of this ListTablesStatisticRequest.
 
         查询条件。固定取值。 db_name：数据库名称。 schema_name：schema名称。 table_name：表名。 table_owner：所属用户。
 
@@ -242,7 +242,7 @@ class ListTablesStatisticRequest:
 
     @property
     def value(self):
-        """Gets the value of this ListTablesStatisticRequest.
+        r"""Gets the value of this ListTablesStatisticRequest.
 
         查询条件的取值。
 
@@ -253,7 +253,7 @@ class ListTablesStatisticRequest:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ListTablesStatisticRequest.
+        r"""Sets the value of this ListTablesStatisticRequest.
 
         查询条件的取值。
 

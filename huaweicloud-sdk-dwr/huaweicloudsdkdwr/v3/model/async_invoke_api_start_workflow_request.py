@@ -27,7 +27,7 @@ class AsyncInvokeApiStartWorkflowRequest:
     }
 
     def __init__(self, graph_name=None, body=None):
-        """AsyncInvokeApiStartWorkflowRequest
+        r"""AsyncInvokeApiStartWorkflowRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AsyncInvokeApiStartWorkflowRequest:
 
     @property
     def graph_name(self):
-        """Gets the graph_name of this AsyncInvokeApiStartWorkflowRequest.
+        r"""Gets the graph_name of this AsyncInvokeApiStartWorkflowRequest.
 
         工作流名称。
 
@@ -60,7 +60,7 @@ class AsyncInvokeApiStartWorkflowRequest:
 
     @graph_name.setter
     def graph_name(self, graph_name):
-        """Sets the graph_name of this AsyncInvokeApiStartWorkflowRequest.
+        r"""Sets the graph_name of this AsyncInvokeApiStartWorkflowRequest.
 
         工作流名称。
 
@@ -71,7 +71,7 @@ class AsyncInvokeApiStartWorkflowRequest:
 
     @property
     def body(self):
-        """Gets the body of this AsyncInvokeApiStartWorkflowRequest.
+        r"""Gets the body of this AsyncInvokeApiStartWorkflowRequest.
 
         :return: The body of this AsyncInvokeApiStartWorkflowRequest.
         :rtype: :class:`huaweicloudsdkdwr.v3.ExecuteWorkflowBody`
@@ -80,7 +80,7 @@ class AsyncInvokeApiStartWorkflowRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AsyncInvokeApiStartWorkflowRequest.
+        r"""Sets the body of this AsyncInvokeApiStartWorkflowRequest.
 
         :param body: The body of this AsyncInvokeApiStartWorkflowRequest.
         :type body: :class:`huaweicloudsdkdwr.v3.ExecuteWorkflowBody`

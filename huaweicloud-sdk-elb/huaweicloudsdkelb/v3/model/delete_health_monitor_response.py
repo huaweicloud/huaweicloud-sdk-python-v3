@@ -24,7 +24,7 @@ class DeleteHealthMonitorResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteHealthMonitorResponse
+        r"""DeleteHealthMonitorResponse
 
         The model defined in huaweicloud sdk
 

@@ -31,7 +31,7 @@ class SqlConvertReq:
     }
 
     def __init__(self, source_db_type=None, target_db_type=None, target_db_version=None, sql_statement=None):
-        """SqlConvertReq
+        r"""SqlConvertReq
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class SqlConvertReq:
 
     @property
     def source_db_type(self):
-        """Gets the source_db_type of this SqlConvertReq.
+        r"""Gets the source_db_type of this SqlConvertReq.
 
         源数据库类型。
 
@@ -71,7 +71,7 @@ class SqlConvertReq:
 
     @source_db_type.setter
     def source_db_type(self, source_db_type):
-        """Sets the source_db_type of this SqlConvertReq.
+        r"""Sets the source_db_type of this SqlConvertReq.
 
         源数据库类型。
 
@@ -82,7 +82,7 @@ class SqlConvertReq:
 
     @property
     def target_db_type(self):
-        """Gets the target_db_type of this SqlConvertReq.
+        r"""Gets the target_db_type of this SqlConvertReq.
 
         目标数据库类型。其中GaussDB Centralized已弃用。
 
@@ -93,7 +93,7 @@ class SqlConvertReq:
 
     @target_db_type.setter
     def target_db_type(self, target_db_type):
-        """Sets the target_db_type of this SqlConvertReq.
+        r"""Sets the target_db_type of this SqlConvertReq.
 
         目标数据库类型。其中GaussDB Centralized已弃用。
 
@@ -104,7 +104,7 @@ class SqlConvertReq:
 
     @property
     def target_db_version(self):
-        """Gets the target_db_version of this SqlConvertReq.
+        r"""Gets the target_db_version of this SqlConvertReq.
 
         目标数据库版本。 （注意：该字段需要与 target_db_type 字段组合成有效的目标数据库类型与版本，当前支持以下组合： GaussDB Centralized-2.0（已弃用）； GaussDB Primary/Standby-2.0； RDS for PostgreSQL-11； RDS for PostgreSQL-Enhanced Edition； RDS for MySQL-5.7; GaussDB(for MySQL) 8.0。)
 
@@ -115,7 +115,7 @@ class SqlConvertReq:
 
     @target_db_version.setter
     def target_db_version(self, target_db_version):
-        """Sets the target_db_version of this SqlConvertReq.
+        r"""Sets the target_db_version of this SqlConvertReq.
 
         目标数据库版本。 （注意：该字段需要与 target_db_type 字段组合成有效的目标数据库类型与版本，当前支持以下组合： GaussDB Centralized-2.0（已弃用）； GaussDB Primary/Standby-2.0； RDS for PostgreSQL-11； RDS for PostgreSQL-Enhanced Edition； RDS for MySQL-5.7; GaussDB(for MySQL) 8.0。)
 
@@ -126,7 +126,7 @@ class SqlConvertReq:
 
     @property
     def sql_statement(self):
-        """Gets the sql_statement of this SqlConvertReq.
+        r"""Gets the sql_statement of this SqlConvertReq.
 
         需要转换的SQL语句。
 
@@ -137,7 +137,7 @@ class SqlConvertReq:
 
     @sql_statement.setter
     def sql_statement(self, sql_statement):
-        """Sets the sql_statement of this SqlConvertReq.
+        r"""Sets the sql_statement of this SqlConvertReq.
 
         需要转换的SQL语句。
 

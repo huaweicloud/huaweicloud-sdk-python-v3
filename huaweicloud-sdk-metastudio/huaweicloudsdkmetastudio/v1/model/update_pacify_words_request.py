@@ -29,7 +29,7 @@ class UpdatePacifyWordsRequest:
     }
 
     def __init__(self, x_app_user_id=None, pacify_words_id=None, body=None):
-        """UpdatePacifyWordsRequest
+        r"""UpdatePacifyWordsRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class UpdatePacifyWordsRequest:
 
     @property
     def x_app_user_id(self):
-        """Gets the x_app_user_id of this UpdatePacifyWordsRequest.
+        r"""Gets the x_app_user_id of this UpdatePacifyWordsRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -67,7 +67,7 @@ class UpdatePacifyWordsRequest:
 
     @x_app_user_id.setter
     def x_app_user_id(self, x_app_user_id):
-        """Sets the x_app_user_id of this UpdatePacifyWordsRequest.
+        r"""Sets the x_app_user_id of this UpdatePacifyWordsRequest.
 
         第三方用户ID。不允许输入中文。
 
@@ -78,7 +78,7 @@ class UpdatePacifyWordsRequest:
 
     @property
     def pacify_words_id(self):
-        """Gets the pacify_words_id of this UpdatePacifyWordsRequest.
+        r"""Gets the pacify_words_id of this UpdatePacifyWordsRequest.
 
         安抚话术ID。
 
@@ -89,7 +89,7 @@ class UpdatePacifyWordsRequest:
 
     @pacify_words_id.setter
     def pacify_words_id(self, pacify_words_id):
-        """Sets the pacify_words_id of this UpdatePacifyWordsRequest.
+        r"""Sets the pacify_words_id of this UpdatePacifyWordsRequest.
 
         安抚话术ID。
 
@@ -100,7 +100,7 @@ class UpdatePacifyWordsRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePacifyWordsRequest.
+        r"""Gets the body of this UpdatePacifyWordsRequest.
 
         :return: The body of this UpdatePacifyWordsRequest.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdatePacifyWordsReq`
@@ -109,7 +109,7 @@ class UpdatePacifyWordsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePacifyWordsRequest.
+        r"""Sets the body of this UpdatePacifyWordsRequest.
 
         :param body: The body of this UpdatePacifyWordsRequest.
         :type body: :class:`huaweicloudsdkmetastudio.v1.UpdatePacifyWordsReq`

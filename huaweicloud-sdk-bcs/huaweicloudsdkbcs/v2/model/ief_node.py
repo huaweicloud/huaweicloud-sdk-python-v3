@@ -29,7 +29,7 @@ class IEFNode:
     }
 
     def __init__(self, id=None, status=None, public_ip_address=None):
-        """IEFNode
+        r"""IEFNode
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class IEFNode:
 
     @property
     def id(self):
-        """Gets the id of this IEFNode.
+        r"""Gets the id of this IEFNode.
 
         节点ID（注意：应填写IEF节点的ID信息）
 
@@ -65,7 +65,7 @@ class IEFNode:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this IEFNode.
+        r"""Sets the id of this IEFNode.
 
         节点ID（注意：应填写IEF节点的ID信息）
 
@@ -76,7 +76,7 @@ class IEFNode:
 
     @property
     def status(self):
-        """Gets the status of this IEFNode.
+        r"""Gets the status of this IEFNode.
 
         节点状态:\"ACTIVE\"
 
@@ -87,7 +87,7 @@ class IEFNode:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this IEFNode.
+        r"""Sets the status of this IEFNode.
 
         节点状态:\"ACTIVE\"
 
@@ -98,7 +98,7 @@ class IEFNode:
 
     @property
     def public_ip_address(self):
-        """Gets the public_ip_address of this IEFNode.
+        r"""Gets the public_ip_address of this IEFNode.
 
         节点公有IP（弹性IP）
 
@@ -109,7 +109,7 @@ class IEFNode:
 
     @public_ip_address.setter
     def public_ip_address(self, public_ip_address):
-        """Sets the public_ip_address of this IEFNode.
+        r"""Sets the public_ip_address of this IEFNode.
 
         节点公有IP（弹性IP）
 

@@ -26,7 +26,7 @@ class DeleteUserJdbcDriverResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DeleteUserJdbcDriverResponse
+        r"""DeleteUserJdbcDriverResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteUserJdbcDriverResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this DeleteUserJdbcDriverResponse.
+        r"""Gets the body of this DeleteUserJdbcDriverResponse.
 
         空响应体。
 
@@ -55,7 +55,7 @@ class DeleteUserJdbcDriverResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteUserJdbcDriverResponse.
+        r"""Sets the body of this DeleteUserJdbcDriverResponse.
 
         空响应体。
 

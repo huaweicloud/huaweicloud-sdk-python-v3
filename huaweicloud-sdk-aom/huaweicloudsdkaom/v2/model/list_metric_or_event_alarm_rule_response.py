@@ -30,7 +30,7 @@ class ListMetricOrEventAlarmRuleResponse(SdkResponse):
     }
 
     def __init__(self, alarm_rules=None, metadata=None, count=None):
-        """ListMetricOrEventAlarmRuleResponse
+        r"""ListMetricOrEventAlarmRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListMetricOrEventAlarmRuleResponse(SdkResponse):
 
     @property
     def alarm_rules(self):
-        """Gets the alarm_rules of this ListMetricOrEventAlarmRuleResponse.
+        r"""Gets the alarm_rules of this ListMetricOrEventAlarmRuleResponse.
 
         告警规则列表。
 
@@ -69,7 +69,7 @@ class ListMetricOrEventAlarmRuleResponse(SdkResponse):
 
     @alarm_rules.setter
     def alarm_rules(self, alarm_rules):
-        """Sets the alarm_rules of this ListMetricOrEventAlarmRuleResponse.
+        r"""Sets the alarm_rules of this ListMetricOrEventAlarmRuleResponse.
 
         告警规则列表。
 
@@ -80,7 +80,7 @@ class ListMetricOrEventAlarmRuleResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this ListMetricOrEventAlarmRuleResponse.
+        r"""Gets the metadata of this ListMetricOrEventAlarmRuleResponse.
 
         元数据信息。
 
@@ -91,7 +91,7 @@ class ListMetricOrEventAlarmRuleResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ListMetricOrEventAlarmRuleResponse.
+        r"""Sets the metadata of this ListMetricOrEventAlarmRuleResponse.
 
         元数据信息。
 
@@ -102,7 +102,7 @@ class ListMetricOrEventAlarmRuleResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListMetricOrEventAlarmRuleResponse.
+        r"""Gets the count of this ListMetricOrEventAlarmRuleResponse.
 
         告警规则数量。
 
@@ -113,7 +113,7 @@ class ListMetricOrEventAlarmRuleResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListMetricOrEventAlarmRuleResponse.
+        r"""Sets the count of this ListMetricOrEventAlarmRuleResponse.
 
         告警规则数量。
 

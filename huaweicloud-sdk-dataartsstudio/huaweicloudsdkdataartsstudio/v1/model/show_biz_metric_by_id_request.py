@@ -31,7 +31,7 @@ class ShowBizMetricByIdRequest:
     }
 
     def __init__(self, workspace=None, x_project_id=None, id=None, latest=None):
-        """ShowBizMetricByIdRequest
+        r"""ShowBizMetricByIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ShowBizMetricByIdRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowBizMetricByIdRequest.
+        r"""Gets the workspace of this ShowBizMetricByIdRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -73,7 +73,7 @@ class ShowBizMetricByIdRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowBizMetricByIdRequest.
+        r"""Sets the workspace of this ShowBizMetricByIdRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -84,7 +84,7 @@ class ShowBizMetricByIdRequest:
 
     @property
     def x_project_id(self):
-        """Gets the x_project_id of this ShowBizMetricByIdRequest.
+        r"""Gets the x_project_id of this ShowBizMetricByIdRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -95,7 +95,7 @@ class ShowBizMetricByIdRequest:
 
     @x_project_id.setter
     def x_project_id(self, x_project_id):
-        """Sets the x_project_id of this ShowBizMetricByIdRequest.
+        r"""Sets the x_project_id of this ShowBizMetricByIdRequest.
 
         项目ID，获取方法请参见[项目ID和账号ID](projectid_accountid.xml)。  多project场景采用AK/SK认证的接口请求，则该字段必选。
 
@@ -106,7 +106,7 @@ class ShowBizMetricByIdRequest:
 
     @property
     def id(self):
-        """Gets the id of this ShowBizMetricByIdRequest.
+        r"""Gets the id of this ShowBizMetricByIdRequest.
 
         实体ID，ID字符串。
 
@@ -117,7 +117,7 @@ class ShowBizMetricByIdRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowBizMetricByIdRequest.
+        r"""Sets the id of this ShowBizMetricByIdRequest.
 
         实体ID，ID字符串。
 
@@ -128,7 +128,7 @@ class ShowBizMetricByIdRequest:
 
     @property
     def latest(self):
-        """Gets the latest of this ShowBizMetricByIdRequest.
+        r"""Gets the latest of this ShowBizMetricByIdRequest.
 
         是否查询最新的。
 
@@ -139,7 +139,7 @@ class ShowBizMetricByIdRequest:
 
     @latest.setter
     def latest(self, latest):
-        """Sets the latest of this ShowBizMetricByIdRequest.
+        r"""Sets the latest of this ShowBizMetricByIdRequest.
 
         是否查询最新的。
 

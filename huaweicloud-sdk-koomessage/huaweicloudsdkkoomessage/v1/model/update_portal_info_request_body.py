@@ -35,7 +35,7 @@ class UpdatePortalInfoRequestBody:
     }
 
     def __init__(self, change_reason=None, background_img=None, summary=None, tels=None, fastapps=None, hw_pubs=None):
-        """UpdatePortalInfoRequestBody
+        r"""UpdatePortalInfoRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class UpdatePortalInfoRequestBody:
 
     @property
     def change_reason(self):
-        """Gets the change_reason of this UpdatePortalInfoRequestBody.
+        r"""Gets the change_reason of this UpdatePortalInfoRequestBody.
 
         修改原因。
 
@@ -86,7 +86,7 @@ class UpdatePortalInfoRequestBody:
 
     @change_reason.setter
     def change_reason(self, change_reason):
-        """Sets the change_reason of this UpdatePortalInfoRequestBody.
+        r"""Sets the change_reason of this UpdatePortalInfoRequestBody.
 
         修改原因。
 
@@ -97,7 +97,7 @@ class UpdatePortalInfoRequestBody:
 
     @property
     def background_img(self):
-        """Gets the background_img of this UpdatePortalInfoRequestBody.
+        r"""Gets the background_img of this UpdatePortalInfoRequestBody.
 
         主页背景图片资源ID。 > 分辨率大于等于1440*810，支持jpg、jpeg、bmp、png。参数值为上传智能信息服务号图片资源API返回的resource_id。 
 
@@ -108,7 +108,7 @@ class UpdatePortalInfoRequestBody:
 
     @background_img.setter
     def background_img(self, background_img):
-        """Sets the background_img of this UpdatePortalInfoRequestBody.
+        r"""Sets the background_img of this UpdatePortalInfoRequestBody.
 
         主页背景图片资源ID。 > 分辨率大于等于1440*810，支持jpg、jpeg、bmp、png。参数值为上传智能信息服务号图片资源API返回的resource_id。 
 
@@ -119,7 +119,7 @@ class UpdatePortalInfoRequestBody:
 
     @property
     def summary(self):
-        """Gets the summary of this UpdatePortalInfoRequestBody.
+        r"""Gets the summary of this UpdatePortalInfoRequestBody.
 
         简介。
 
@@ -130,7 +130,7 @@ class UpdatePortalInfoRequestBody:
 
     @summary.setter
     def summary(self, summary):
-        """Sets the summary of this UpdatePortalInfoRequestBody.
+        r"""Sets the summary of this UpdatePortalInfoRequestBody.
 
         简介。
 
@@ -141,7 +141,7 @@ class UpdatePortalInfoRequestBody:
 
     @property
     def tels(self):
-        """Gets the tels of this UpdatePortalInfoRequestBody.
+        r"""Gets the tels of this UpdatePortalInfoRequestBody.
 
         热线号列表。
 
@@ -152,7 +152,7 @@ class UpdatePortalInfoRequestBody:
 
     @tels.setter
     def tels(self, tels):
-        """Sets the tels of this UpdatePortalInfoRequestBody.
+        r"""Sets the tels of this UpdatePortalInfoRequestBody.
 
         热线号列表。
 
@@ -163,7 +163,7 @@ class UpdatePortalInfoRequestBody:
 
     @property
     def fastapps(self):
-        """Gets the fastapps of this UpdatePortalInfoRequestBody.
+        r"""Gets the fastapps of this UpdatePortalInfoRequestBody.
 
         快应用列表。
 
@@ -174,7 +174,7 @@ class UpdatePortalInfoRequestBody:
 
     @fastapps.setter
     def fastapps(self, fastapps):
-        """Sets the fastapps of this UpdatePortalInfoRequestBody.
+        r"""Sets the fastapps of this UpdatePortalInfoRequestBody.
 
         快应用列表。
 
@@ -185,7 +185,7 @@ class UpdatePortalInfoRequestBody:
 
     @property
     def hw_pubs(self):
-        """Gets the hw_pubs of this UpdatePortalInfoRequestBody.
+        r"""Gets the hw_pubs of this UpdatePortalInfoRequestBody.
 
         华为服务号列表。  > 预留，暂未使用。 
 
@@ -196,7 +196,7 @@ class UpdatePortalInfoRequestBody:
 
     @hw_pubs.setter
     def hw_pubs(self, hw_pubs):
-        """Sets the hw_pubs of this UpdatePortalInfoRequestBody.
+        r"""Sets the hw_pubs of this UpdatePortalInfoRequestBody.
 
         华为服务号列表。  > 预留，暂未使用。 
 

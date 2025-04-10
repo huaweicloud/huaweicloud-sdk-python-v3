@@ -37,7 +37,7 @@ class NPUDetailsDTO:
     }
 
     def __init__(self, device_id=None, npu_type=None, product_name=None, ai_core=None, health=None, error_msg=None, used_info=None):
-        """NPUDetailsDTO
+        r"""NPUDetailsDTO
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class NPUDetailsDTO:
 
     @property
     def device_id(self):
-        """Gets the device_id of this NPUDetailsDTO.
+        r"""Gets the device_id of this NPUDetailsDTO.
 
         昇腾设备ID
 
@@ -96,7 +96,7 @@ class NPUDetailsDTO:
 
     @device_id.setter
     def device_id(self, device_id):
-        """Sets the device_id of this NPUDetailsDTO.
+        r"""Sets the device_id of this NPUDetailsDTO.
 
         昇腾设备ID
 
@@ -107,7 +107,7 @@ class NPUDetailsDTO:
 
     @property
     def npu_type(self):
-        """Gets the npu_type of this NPUDetailsDTO.
+        r"""Gets the npu_type of this NPUDetailsDTO.
 
         华为AI加速卡型号，如D310推理卡、D310P推理卡、D910训练卡。
 
@@ -118,7 +118,7 @@ class NPUDetailsDTO:
 
     @npu_type.setter
     def npu_type(self, npu_type):
-        """Sets the npu_type of this NPUDetailsDTO.
+        r"""Sets the npu_type of this NPUDetailsDTO.
 
         华为AI加速卡型号，如D310推理卡、D310P推理卡、D910训练卡。
 
@@ -129,7 +129,7 @@ class NPUDetailsDTO:
 
     @property
     def product_name(self):
-        """Gets the product_name of this NPUDetailsDTO.
+        r"""Gets the product_name of this NPUDetailsDTO.
 
         昇腾设备产品类型
 
@@ -140,7 +140,7 @@ class NPUDetailsDTO:
 
     @product_name.setter
     def product_name(self, product_name):
-        """Sets the product_name of this NPUDetailsDTO.
+        r"""Sets the product_name of this NPUDetailsDTO.
 
         昇腾设备产品类型
 
@@ -151,7 +151,7 @@ class NPUDetailsDTO:
 
     @property
     def ai_core(self):
-        """Gets the ai_core of this NPUDetailsDTO.
+        r"""Gets the ai_core of this NPUDetailsDTO.
 
         AI加速卡包含ai核个数
 
@@ -162,7 +162,7 @@ class NPUDetailsDTO:
 
     @ai_core.setter
     def ai_core(self, ai_core):
-        """Sets the ai_core of this NPUDetailsDTO.
+        r"""Sets the ai_core of this NPUDetailsDTO.
 
         AI加速卡包含ai核个数
 
@@ -173,7 +173,7 @@ class NPUDetailsDTO:
 
     @property
     def health(self):
-        """Gets the health of this NPUDetailsDTO.
+        r"""Gets the health of this NPUDetailsDTO.
 
         昇腾设备健康状态
 
@@ -184,7 +184,7 @@ class NPUDetailsDTO:
 
     @health.setter
     def health(self, health):
-        """Sets the health of this NPUDetailsDTO.
+        r"""Sets the health of this NPUDetailsDTO.
 
         昇腾设备健康状态
 
@@ -195,7 +195,7 @@ class NPUDetailsDTO:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this NPUDetailsDTO.
+        r"""Gets the error_msg of this NPUDetailsDTO.
 
         昇腾设备故障信息
 
@@ -206,7 +206,7 @@ class NPUDetailsDTO:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this NPUDetailsDTO.
+        r"""Sets the error_msg of this NPUDetailsDTO.
 
         昇腾设备故障信息
 
@@ -217,7 +217,7 @@ class NPUDetailsDTO:
 
     @property
     def used_info(self):
-        """Gets the used_info of this NPUDetailsDTO.
+        r"""Gets the used_info of this NPUDetailsDTO.
 
         NPU使用信息
 
@@ -228,7 +228,7 @@ class NPUDetailsDTO:
 
     @used_info.setter
     def used_info(self, used_info):
-        """Sets the used_info of this NPUDetailsDTO.
+        r"""Sets the used_info of this NPUDetailsDTO.
 
         NPU使用信息
 

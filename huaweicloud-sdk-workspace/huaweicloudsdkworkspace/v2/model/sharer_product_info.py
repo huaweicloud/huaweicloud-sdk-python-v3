@@ -41,7 +41,7 @@ class SharerProductInfo:
     }
 
     def __init__(self, product_id=None, is_gpu=None, descriptions=None, charge_mode=None, resource_type=None, cloud_service_type=None, package_type=None, name=None, share_space_size=None):
-        """SharerProductInfo
+        r"""SharerProductInfo
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class SharerProductInfo:
 
     @property
     def product_id(self):
-        """Gets the product_id of this SharerProductInfo.
+        r"""Gets the product_id of this SharerProductInfo.
 
         产品ID。
 
@@ -110,7 +110,7 @@ class SharerProductInfo:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this SharerProductInfo.
+        r"""Sets the product_id of this SharerProductInfo.
 
         产品ID。
 
@@ -121,7 +121,7 @@ class SharerProductInfo:
 
     @property
     def is_gpu(self):
-        """Gets the is_gpu of this SharerProductInfo.
+        r"""Gets the is_gpu of this SharerProductInfo.
 
         是否是GPU类型的规格。
 
@@ -132,7 +132,7 @@ class SharerProductInfo:
 
     @is_gpu.setter
     def is_gpu(self, is_gpu):
-        """Sets the is_gpu of this SharerProductInfo.
+        r"""Sets the is_gpu of this SharerProductInfo.
 
         是否是GPU类型的规格。
 
@@ -143,7 +143,7 @@ class SharerProductInfo:
 
     @property
     def descriptions(self):
-        """Gets the descriptions of this SharerProductInfo.
+        r"""Gets the descriptions of this SharerProductInfo.
 
         产品描述。
 
@@ -154,7 +154,7 @@ class SharerProductInfo:
 
     @descriptions.setter
     def descriptions(self, descriptions):
-        """Sets the descriptions of this SharerProductInfo.
+        r"""Sets the descriptions of this SharerProductInfo.
 
         产品描述。
 
@@ -165,7 +165,7 @@ class SharerProductInfo:
 
     @property
     def charge_mode(self):
-        """Gets the charge_mode of this SharerProductInfo.
+        r"""Gets the charge_mode of this SharerProductInfo.
 
         周期套餐标识。0表示包周期，1表示按需, 6表示一次性计费。
 
@@ -176,7 +176,7 @@ class SharerProductInfo:
 
     @charge_mode.setter
     def charge_mode(self, charge_mode):
-        """Sets the charge_mode of this SharerProductInfo.
+        r"""Sets the charge_mode of this SharerProductInfo.
 
         周期套餐标识。0表示包周期，1表示按需, 6表示一次性计费。
 
@@ -187,7 +187,7 @@ class SharerProductInfo:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this SharerProductInfo.
+        r"""Gets the resource_type of this SharerProductInfo.
 
         资源规格。
 
@@ -198,7 +198,7 @@ class SharerProductInfo:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this SharerProductInfo.
+        r"""Sets the resource_type of this SharerProductInfo.
 
         资源规格。
 
@@ -209,7 +209,7 @@ class SharerProductInfo:
 
     @property
     def cloud_service_type(self):
-        """Gets the cloud_service_type of this SharerProductInfo.
+        r"""Gets the cloud_service_type of this SharerProductInfo.
 
         云服务编码。
 
@@ -220,7 +220,7 @@ class SharerProductInfo:
 
     @cloud_service_type.setter
     def cloud_service_type(self, cloud_service_type):
-        """Sets the cloud_service_type of this SharerProductInfo.
+        r"""Sets the cloud_service_type of this SharerProductInfo.
 
         云服务编码。
 
@@ -231,7 +231,7 @@ class SharerProductInfo:
 
     @property
     def package_type(self):
-        """Gets the package_type of this SharerProductInfo.
+        r"""Gets the package_type of this SharerProductInfo.
 
         套餐类型。 - user_sharer：用户协同套餐 - desktop_sharer: 桌面协同套餐
 
@@ -242,7 +242,7 @@ class SharerProductInfo:
 
     @package_type.setter
     def package_type(self, package_type):
-        """Sets the package_type of this SharerProductInfo.
+        r"""Sets the package_type of this SharerProductInfo.
 
         套餐类型。 - user_sharer：用户协同套餐 - desktop_sharer: 桌面协同套餐
 
@@ -253,7 +253,7 @@ class SharerProductInfo:
 
     @property
     def name(self):
-        """Gets the name of this SharerProductInfo.
+        r"""Gets the name of this SharerProductInfo.
 
         产品名称<语言，各语言对应的产品名>。
 
@@ -264,7 +264,7 @@ class SharerProductInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SharerProductInfo.
+        r"""Sets the name of this SharerProductInfo.
 
         产品名称<语言，各语言对应的产品名>。
 
@@ -275,7 +275,7 @@ class SharerProductInfo:
 
     @property
     def share_space_size(self):
-        """Gets the share_space_size of this SharerProductInfo.
+        r"""Gets the share_space_size of this SharerProductInfo.
 
         协同方数。该套餐支持的最大协同人数。
 
@@ -286,7 +286,7 @@ class SharerProductInfo:
 
     @share_space_size.setter
     def share_space_size(self, share_space_size):
-        """Sets the share_space_size of this SharerProductInfo.
+        r"""Sets the share_space_size of this SharerProductInfo.
 
         协同方数。该套餐支持的最大协同人数。
 

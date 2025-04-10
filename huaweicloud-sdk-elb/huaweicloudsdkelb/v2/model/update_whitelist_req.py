@@ -27,7 +27,7 @@ class UpdateWhitelistReq:
     }
 
     def __init__(self, enable_whitelist=None, whitelist=None):
-        """UpdateWhitelistReq
+        r"""UpdateWhitelistReq
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateWhitelistReq:
 
     @property
     def enable_whitelist(self):
-        """Gets the enable_whitelist of this UpdateWhitelistReq.
+        r"""Gets the enable_whitelist of this UpdateWhitelistReq.
 
         是否开启白名单访问控制开关。true：开启；false：关闭
 
@@ -61,7 +61,7 @@ class UpdateWhitelistReq:
 
     @enable_whitelist.setter
     def enable_whitelist(self, enable_whitelist):
-        """Sets the enable_whitelist of this UpdateWhitelistReq.
+        r"""Sets the enable_whitelist of this UpdateWhitelistReq.
 
         是否开启白名单访问控制开关。true：开启；false：关闭
 
@@ -72,7 +72,7 @@ class UpdateWhitelistReq:
 
     @property
     def whitelist(self):
-        """Gets the whitelist of this UpdateWhitelistReq.
+        r"""Gets the whitelist of this UpdateWhitelistReq.
 
         白名单IP列表。可以是ip，例如192.168.10.123；也可以是一个网段，例如192.168.10.1/24；不同的值之间用逗号分隔
 
@@ -83,7 +83,7 @@ class UpdateWhitelistReq:
 
     @whitelist.setter
     def whitelist(self, whitelist):
-        """Sets the whitelist of this UpdateWhitelistReq.
+        r"""Sets the whitelist of this UpdateWhitelistReq.
 
         白名单IP列表。可以是ip，例如192.168.10.123；也可以是一个网段，例如192.168.10.1/24；不同的值之间用逗号分隔
 

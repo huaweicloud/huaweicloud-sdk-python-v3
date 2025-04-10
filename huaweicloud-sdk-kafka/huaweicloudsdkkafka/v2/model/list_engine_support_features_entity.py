@@ -27,7 +27,7 @@ class ListEngineSupportFeaturesEntity:
     }
 
     def __init__(self, name=None, properties=None):
-        """ListEngineSupportFeaturesEntity
+        r"""ListEngineSupportFeaturesEntity
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListEngineSupportFeaturesEntity:
 
     @property
     def name(self):
-        """Gets the name of this ListEngineSupportFeaturesEntity.
+        r"""Gets the name of this ListEngineSupportFeaturesEntity.
 
         功能名称。
 
@@ -61,7 +61,7 @@ class ListEngineSupportFeaturesEntity:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListEngineSupportFeaturesEntity.
+        r"""Sets the name of this ListEngineSupportFeaturesEntity.
 
         功能名称。
 
@@ -72,7 +72,7 @@ class ListEngineSupportFeaturesEntity:
 
     @property
     def properties(self):
-        """Gets the properties of this ListEngineSupportFeaturesEntity.
+        r"""Gets the properties of this ListEngineSupportFeaturesEntity.
 
         :return: The properties of this ListEngineSupportFeaturesEntity.
         :rtype: :class:`huaweicloudsdkkafka.v2.ListEngineSupportFeaturesPropertiesEntity`
@@ -81,7 +81,7 @@ class ListEngineSupportFeaturesEntity:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this ListEngineSupportFeaturesEntity.
+        r"""Sets the properties of this ListEngineSupportFeaturesEntity.
 
         :param properties: The properties of this ListEngineSupportFeaturesEntity.
         :type properties: :class:`huaweicloudsdkkafka.v2.ListEngineSupportFeaturesPropertiesEntity`

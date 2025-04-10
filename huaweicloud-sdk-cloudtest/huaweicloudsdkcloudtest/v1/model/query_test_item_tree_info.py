@@ -45,7 +45,7 @@ class QueryTestItemTreeInfo:
     }
 
     def __init__(self, owner=None, stage=None, activity=None, version_uri=None, task_uri=None, service_type=None, contain_total=None, project_uuid=None, sort_type=None, page_number=None, page_size=None):
-        """QueryTestItemTreeInfo
+        r"""QueryTestItemTreeInfo
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class QueryTestItemTreeInfo:
 
     @property
     def owner(self):
-        """Gets the owner of this QueryTestItemTreeInfo.
+        r"""Gets the owner of this QueryTestItemTreeInfo.
 
         责任人
 
@@ -124,7 +124,7 @@ class QueryTestItemTreeInfo:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this QueryTestItemTreeInfo.
+        r"""Sets the owner of this QueryTestItemTreeInfo.
 
         责任人
 
@@ -135,7 +135,7 @@ class QueryTestItemTreeInfo:
 
     @property
     def stage(self):
-        """Gets the stage of this QueryTestItemTreeInfo.
+        r"""Gets the stage of this QueryTestItemTreeInfo.
 
         阶段
 
@@ -146,7 +146,7 @@ class QueryTestItemTreeInfo:
 
     @stage.setter
     def stage(self, stage):
-        """Sets the stage of this QueryTestItemTreeInfo.
+        r"""Sets the stage of this QueryTestItemTreeInfo.
 
         阶段
 
@@ -157,7 +157,7 @@ class QueryTestItemTreeInfo:
 
     @property
     def activity(self):
-        """Gets the activity of this QueryTestItemTreeInfo.
+        r"""Gets the activity of this QueryTestItemTreeInfo.
 
         活动
 
@@ -168,7 +168,7 @@ class QueryTestItemTreeInfo:
 
     @activity.setter
     def activity(self, activity):
-        """Sets the activity of this QueryTestItemTreeInfo.
+        r"""Sets the activity of this QueryTestItemTreeInfo.
 
         活动
 
@@ -179,7 +179,7 @@ class QueryTestItemTreeInfo:
 
     @property
     def version_uri(self):
-        """Gets the version_uri of this QueryTestItemTreeInfo.
+        r"""Gets the version_uri of this QueryTestItemTreeInfo.
 
         版本URI
 
@@ -190,7 +190,7 @@ class QueryTestItemTreeInfo:
 
     @version_uri.setter
     def version_uri(self, version_uri):
-        """Sets the version_uri of this QueryTestItemTreeInfo.
+        r"""Sets the version_uri of this QueryTestItemTreeInfo.
 
         版本URI
 
@@ -201,7 +201,7 @@ class QueryTestItemTreeInfo:
 
     @property
     def task_uri(self):
-        """Gets the task_uri of this QueryTestItemTreeInfo.
+        r"""Gets the task_uri of this QueryTestItemTreeInfo.
 
         任务uri
 
@@ -212,7 +212,7 @@ class QueryTestItemTreeInfo:
 
     @task_uri.setter
     def task_uri(self, task_uri):
-        """Sets the task_uri of this QueryTestItemTreeInfo.
+        r"""Sets the task_uri of this QueryTestItemTreeInfo.
 
         任务uri
 
@@ -223,7 +223,7 @@ class QueryTestItemTreeInfo:
 
     @property
     def service_type(self):
-        """Gets the service_type of this QueryTestItemTreeInfo.
+        r"""Gets the service_type of this QueryTestItemTreeInfo.
 
         用例服务类型
 
@@ -234,7 +234,7 @@ class QueryTestItemTreeInfo:
 
     @service_type.setter
     def service_type(self, service_type):
-        """Sets the service_type of this QueryTestItemTreeInfo.
+        r"""Sets the service_type of this QueryTestItemTreeInfo.
 
         用例服务类型
 
@@ -245,7 +245,7 @@ class QueryTestItemTreeInfo:
 
     @property
     def contain_total(self):
-        """Gets the contain_total of this QueryTestItemTreeInfo.
+        r"""Gets the contain_total of this QueryTestItemTreeInfo.
 
         是否包含用例数
 
@@ -256,7 +256,7 @@ class QueryTestItemTreeInfo:
 
     @contain_total.setter
     def contain_total(self, contain_total):
-        """Sets the contain_total of this QueryTestItemTreeInfo.
+        r"""Sets the contain_total of this QueryTestItemTreeInfo.
 
         是否包含用例数
 
@@ -267,7 +267,7 @@ class QueryTestItemTreeInfo:
 
     @property
     def project_uuid(self):
-        """Gets the project_uuid of this QueryTestItemTreeInfo.
+        r"""Gets the project_uuid of this QueryTestItemTreeInfo.
 
         项目id
 
@@ -278,7 +278,7 @@ class QueryTestItemTreeInfo:
 
     @project_uuid.setter
     def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this QueryTestItemTreeInfo.
+        r"""Sets the project_uuid of this QueryTestItemTreeInfo.
 
         项目id
 
@@ -289,7 +289,7 @@ class QueryTestItemTreeInfo:
 
     @property
     def sort_type(self):
-        """Gets the sort_type of this QueryTestItemTreeInfo.
+        r"""Gets the sort_type of this QueryTestItemTreeInfo.
 
         排序类型
 
@@ -300,7 +300,7 @@ class QueryTestItemTreeInfo:
 
     @sort_type.setter
     def sort_type(self, sort_type):
-        """Sets the sort_type of this QueryTestItemTreeInfo.
+        r"""Sets the sort_type of this QueryTestItemTreeInfo.
 
         排序类型
 
@@ -311,7 +311,7 @@ class QueryTestItemTreeInfo:
 
     @property
     def page_number(self):
-        """Gets the page_number of this QueryTestItemTreeInfo.
+        r"""Gets the page_number of this QueryTestItemTreeInfo.
 
         页码
 
@@ -322,7 +322,7 @@ class QueryTestItemTreeInfo:
 
     @page_number.setter
     def page_number(self, page_number):
-        """Sets the page_number of this QueryTestItemTreeInfo.
+        r"""Sets the page_number of this QueryTestItemTreeInfo.
 
         页码
 
@@ -333,7 +333,7 @@ class QueryTestItemTreeInfo:
 
     @property
     def page_size(self):
-        """Gets the page_size of this QueryTestItemTreeInfo.
+        r"""Gets the page_size of this QueryTestItemTreeInfo.
 
         每页数量
 
@@ -344,7 +344,7 @@ class QueryTestItemTreeInfo:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this QueryTestItemTreeInfo.
+        r"""Sets the page_size of this QueryTestItemTreeInfo.
 
         每页数量
 

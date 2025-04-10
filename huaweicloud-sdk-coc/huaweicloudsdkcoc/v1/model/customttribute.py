@@ -27,7 +27,7 @@ class Customttribute:
     }
 
     def __init__(self, key=None, value=None):
-        """Customttribute
+        r"""Customttribute
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class Customttribute:
 
     @property
     def key(self):
-        """Gets the key of this Customttribute.
+        r"""Gets the key of this Customttribute.
 
         自定义属性key
 
@@ -59,7 +59,7 @@ class Customttribute:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this Customttribute.
+        r"""Sets the key of this Customttribute.
 
         自定义属性key
 
@@ -70,7 +70,7 @@ class Customttribute:
 
     @property
     def value(self):
-        """Gets the value of this Customttribute.
+        r"""Gets the value of this Customttribute.
 
         自定义属性的value
 
@@ -81,7 +81,7 @@ class Customttribute:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this Customttribute.
+        r"""Sets the value of this Customttribute.
 
         自定义属性的value
 

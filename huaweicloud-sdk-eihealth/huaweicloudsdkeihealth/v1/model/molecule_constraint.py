@@ -35,7 +35,7 @@ class MoleculeConstraint:
     }
 
     def __init__(self, name=None, type=None, bool=None, range=None, struct=None, quantiles=None):
-        """MoleculeConstraint
+        r"""MoleculeConstraint
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class MoleculeConstraint:
 
     @property
     def name(self):
-        """Gets the name of this MoleculeConstraint.
+        r"""Gets the name of this MoleculeConstraint.
 
         属性名称
 
@@ -88,7 +88,7 @@ class MoleculeConstraint:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this MoleculeConstraint.
+        r"""Sets the name of this MoleculeConstraint.
 
         属性名称
 
@@ -99,7 +99,7 @@ class MoleculeConstraint:
 
     @property
     def type(self):
-        """Gets the type of this MoleculeConstraint.
+        r"""Gets the type of this MoleculeConstraint.
 
         属性约束类型
 
@@ -110,7 +110,7 @@ class MoleculeConstraint:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this MoleculeConstraint.
+        r"""Sets the type of this MoleculeConstraint.
 
         属性约束类型
 
@@ -121,7 +121,7 @@ class MoleculeConstraint:
 
     @property
     def bool(self):
-        """Gets the bool of this MoleculeConstraint.
+        r"""Gets the bool of this MoleculeConstraint.
 
         属性约束类型bool的参数
 
@@ -132,7 +132,7 @@ class MoleculeConstraint:
 
     @bool.setter
     def bool(self, bool):
-        """Sets the bool of this MoleculeConstraint.
+        r"""Sets the bool of this MoleculeConstraint.
 
         属性约束类型bool的参数
 
@@ -143,7 +143,7 @@ class MoleculeConstraint:
 
     @property
     def range(self):
-        """Gets the range of this MoleculeConstraint.
+        r"""Gets the range of this MoleculeConstraint.
 
         属性约束类型range的参数
 
@@ -154,7 +154,7 @@ class MoleculeConstraint:
 
     @range.setter
     def range(self, range):
-        """Sets the range of this MoleculeConstraint.
+        r"""Sets the range of this MoleculeConstraint.
 
         属性约束类型range的参数
 
@@ -165,7 +165,7 @@ class MoleculeConstraint:
 
     @property
     def struct(self):
-        """Gets the struct of this MoleculeConstraint.
+        r"""Gets the struct of this MoleculeConstraint.
 
         :return: The struct of this MoleculeConstraint.
         :rtype: :class:`huaweicloudsdkeihealth.v1.StructureConstraintParams`
@@ -174,7 +174,7 @@ class MoleculeConstraint:
 
     @struct.setter
     def struct(self, struct):
-        """Sets the struct of this MoleculeConstraint.
+        r"""Sets the struct of this MoleculeConstraint.
 
         :param struct: The struct of this MoleculeConstraint.
         :type struct: :class:`huaweicloudsdkeihealth.v1.StructureConstraintParams`
@@ -183,7 +183,7 @@ class MoleculeConstraint:
 
     @property
     def quantiles(self):
-        """Gets the quantiles of this MoleculeConstraint.
+        r"""Gets the quantiles of this MoleculeConstraint.
 
         属性约束类型minimize和maximize的参数
 
@@ -194,7 +194,7 @@ class MoleculeConstraint:
 
     @quantiles.setter
     def quantiles(self, quantiles):
-        """Sets the quantiles of this MoleculeConstraint.
+        r"""Sets the quantiles of this MoleculeConstraint.
 
         属性约束类型minimize和maximize的参数
 

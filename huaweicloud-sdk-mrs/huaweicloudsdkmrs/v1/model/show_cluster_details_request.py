@@ -25,7 +25,7 @@ class ShowClusterDetailsRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """ShowClusterDetailsRequest
+        r"""ShowClusterDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowClusterDetailsRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this ShowClusterDetailsRequest.
+        r"""Gets the cluster_id of this ShowClusterDetailsRequest.
 
         集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
 
@@ -53,7 +53,7 @@ class ShowClusterDetailsRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this ShowClusterDetailsRequest.
+        r"""Sets the cluster_id of this ShowClusterDetailsRequest.
 
         集群ID。获取方法，请参见[获取集群ID](https://support.huaweicloud.com/api-mrs/mrs_02_9001.html)。
 

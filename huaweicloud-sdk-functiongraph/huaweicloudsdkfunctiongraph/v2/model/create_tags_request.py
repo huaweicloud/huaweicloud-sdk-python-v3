@@ -29,7 +29,7 @@ class CreateTagsRequest:
     }
 
     def __init__(self, resource_type=None, resource_id=None, body=None):
-        """CreateTagsRequest
+        r"""CreateTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateTagsRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this CreateTagsRequest.
+        r"""Gets the resource_type of this CreateTagsRequest.
 
         资源类型，此处请填写functions
 
@@ -66,7 +66,7 @@ class CreateTagsRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this CreateTagsRequest.
+        r"""Sets the resource_type of this CreateTagsRequest.
 
         资源类型，此处请填写functions
 
@@ -77,7 +77,7 @@ class CreateTagsRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this CreateTagsRequest.
+        r"""Gets the resource_id of this CreateTagsRequest.
 
         资源ID
 
@@ -88,7 +88,7 @@ class CreateTagsRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this CreateTagsRequest.
+        r"""Sets the resource_id of this CreateTagsRequest.
 
         资源ID
 
@@ -99,7 +99,7 @@ class CreateTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateTagsRequest.
+        r"""Gets the body of this CreateTagsRequest.
 
         :return: The body of this CreateTagsRequest.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionTagsRequestBody`
@@ -108,7 +108,7 @@ class CreateTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTagsRequest.
+        r"""Sets the body of this CreateTagsRequest.
 
         :param body: The body of this CreateTagsRequest.
         :type body: :class:`huaweicloudsdkfunctiongraph.v2.UpdateFunctionTagsRequestBody`

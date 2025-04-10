@@ -37,7 +37,7 @@ class RepositoryStatisticsVO:
     }
 
     def __init__(self, repo_name=None, commit_count=None, repo_size=None, last_commit_time=None, code_lines=None, branch_count=None, archive_url=None):
-        """RepositoryStatisticsVO
+        r"""RepositoryStatisticsVO
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class RepositoryStatisticsVO:
 
     @property
     def repo_name(self):
-        """Gets the repo_name of this RepositoryStatisticsVO.
+        r"""Gets the repo_name of this RepositoryStatisticsVO.
 
         仓库名称
 
@@ -96,7 +96,7 @@ class RepositoryStatisticsVO:
 
     @repo_name.setter
     def repo_name(self, repo_name):
-        """Sets the repo_name of this RepositoryStatisticsVO.
+        r"""Sets the repo_name of this RepositoryStatisticsVO.
 
         仓库名称
 
@@ -107,7 +107,7 @@ class RepositoryStatisticsVO:
 
     @property
     def commit_count(self):
-        """Gets the commit_count of this RepositoryStatisticsVO.
+        r"""Gets the commit_count of this RepositoryStatisticsVO.
 
         提交次数
 
@@ -118,7 +118,7 @@ class RepositoryStatisticsVO:
 
     @commit_count.setter
     def commit_count(self, commit_count):
-        """Sets the commit_count of this RepositoryStatisticsVO.
+        r"""Sets the commit_count of this RepositoryStatisticsVO.
 
         提交次数
 
@@ -129,7 +129,7 @@ class RepositoryStatisticsVO:
 
     @property
     def repo_size(self):
-        """Gets the repo_size of this RepositoryStatisticsVO.
+        r"""Gets the repo_size of this RepositoryStatisticsVO.
 
         仓库容量
 
@@ -140,7 +140,7 @@ class RepositoryStatisticsVO:
 
     @repo_size.setter
     def repo_size(self, repo_size):
-        """Sets the repo_size of this RepositoryStatisticsVO.
+        r"""Sets the repo_size of this RepositoryStatisticsVO.
 
         仓库容量
 
@@ -151,7 +151,7 @@ class RepositoryStatisticsVO:
 
     @property
     def last_commit_time(self):
-        """Gets the last_commit_time of this RepositoryStatisticsVO.
+        r"""Gets the last_commit_time of this RepositoryStatisticsVO.
 
         最近一次提交时间
 
@@ -162,7 +162,7 @@ class RepositoryStatisticsVO:
 
     @last_commit_time.setter
     def last_commit_time(self, last_commit_time):
-        """Sets the last_commit_time of this RepositoryStatisticsVO.
+        r"""Sets the last_commit_time of this RepositoryStatisticsVO.
 
         最近一次提交时间
 
@@ -173,7 +173,7 @@ class RepositoryStatisticsVO:
 
     @property
     def code_lines(self):
-        """Gets the code_lines of this RepositoryStatisticsVO.
+        r"""Gets the code_lines of this RepositoryStatisticsVO.
 
         代码行数
 
@@ -184,7 +184,7 @@ class RepositoryStatisticsVO:
 
     @code_lines.setter
     def code_lines(self, code_lines):
-        """Sets the code_lines of this RepositoryStatisticsVO.
+        r"""Sets the code_lines of this RepositoryStatisticsVO.
 
         代码行数
 
@@ -195,7 +195,7 @@ class RepositoryStatisticsVO:
 
     @property
     def branch_count(self):
-        """Gets the branch_count of this RepositoryStatisticsVO.
+        r"""Gets the branch_count of this RepositoryStatisticsVO.
 
         分支数量
 
@@ -206,7 +206,7 @@ class RepositoryStatisticsVO:
 
     @branch_count.setter
     def branch_count(self, branch_count):
-        """Sets the branch_count of this RepositoryStatisticsVO.
+        r"""Sets the branch_count of this RepositoryStatisticsVO.
 
         分支数量
 
@@ -217,7 +217,7 @@ class RepositoryStatisticsVO:
 
     @property
     def archive_url(self):
-        """Gets the archive_url of this RepositoryStatisticsVO.
+        r"""Gets the archive_url of this RepositoryStatisticsVO.
 
         代码仓下载地址
 
@@ -228,7 +228,7 @@ class RepositoryStatisticsVO:
 
     @archive_url.setter
     def archive_url(self, archive_url):
-        """Sets the archive_url of this RepositoryStatisticsVO.
+        r"""Sets the archive_url of this RepositoryStatisticsVO.
 
         代码仓下载地址
 

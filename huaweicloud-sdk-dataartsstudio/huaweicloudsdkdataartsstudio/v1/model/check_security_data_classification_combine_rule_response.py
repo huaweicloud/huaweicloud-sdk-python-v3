@@ -24,7 +24,7 @@ class CheckSecurityDataClassificationCombineRuleResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CheckSecurityDataClassificationCombineRuleResponse
+        r"""CheckSecurityDataClassificationCombineRuleResponse
 
         The model defined in huaweicloud sdk
 

@@ -23,7 +23,7 @@ class ListRuntimesRequest:
     }
 
     def __init__(self):
-        """ListRuntimesRequest
+        r"""ListRuntimesRequest
 
         The model defined in huaweicloud sdk
 

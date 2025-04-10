@@ -27,7 +27,7 @@ class BwChangeToPeriodReq:
     }
 
     def __init__(self, bandwidth_ids=None, extend_param=None):
-        """BwChangeToPeriodReq
+        r"""BwChangeToPeriodReq
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BwChangeToPeriodReq:
 
     @property
     def bandwidth_ids(self):
-        """Gets the bandwidth_ids of this BwChangeToPeriodReq.
+        r"""Gets the bandwidth_ids of this BwChangeToPeriodReq.
 
         待按需转包带宽列表 
 
@@ -59,7 +59,7 @@ class BwChangeToPeriodReq:
 
     @bandwidth_ids.setter
     def bandwidth_ids(self, bandwidth_ids):
-        """Sets the bandwidth_ids of this BwChangeToPeriodReq.
+        r"""Sets the bandwidth_ids of this BwChangeToPeriodReq.
 
         待按需转包带宽列表 
 
@@ -70,7 +70,7 @@ class BwChangeToPeriodReq:
 
     @property
     def extend_param(self):
-        """Gets the extend_param of this BwChangeToPeriodReq.
+        r"""Gets the extend_param of this BwChangeToPeriodReq.
 
         :return: The extend_param of this BwChangeToPeriodReq.
         :rtype: :class:`huaweicloudsdkeip.v2.CreatePrePaidPublicipExtendParamOption`
@@ -79,7 +79,7 @@ class BwChangeToPeriodReq:
 
     @extend_param.setter
     def extend_param(self, extend_param):
-        """Sets the extend_param of this BwChangeToPeriodReq.
+        r"""Sets the extend_param of this BwChangeToPeriodReq.
 
         :param extend_param: The extend_param of this BwChangeToPeriodReq.
         :type extend_param: :class:`huaweicloudsdkeip.v2.CreatePrePaidPublicipExtendParamOption`

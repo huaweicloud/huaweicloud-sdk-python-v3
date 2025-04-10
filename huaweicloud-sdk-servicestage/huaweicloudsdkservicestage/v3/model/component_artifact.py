@@ -27,7 +27,7 @@ class ComponentArtifact:
     }
 
     def __init__(self, type=None, url=None):
-        """ComponentArtifact
+        r"""ComponentArtifact
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ComponentArtifact:
 
     @property
     def type(self):
-        """Gets the type of this ComponentArtifact.
+        r"""Gets the type of this ComponentArtifact.
 
         虚机类型的均为package，其他一律为iamge
 
@@ -61,7 +61,7 @@ class ComponentArtifact:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ComponentArtifact.
+        r"""Sets the type of this ComponentArtifact.
 
         虚机类型的均为package，其他一律为iamge
 
@@ -72,7 +72,7 @@ class ComponentArtifact:
 
     @property
     def url(self):
-        """Gets the url of this ComponentArtifact.
+        r"""Gets the url of this ComponentArtifact.
 
         软件包/镜像地址。
 
@@ -83,7 +83,7 @@ class ComponentArtifact:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ComponentArtifact.
+        r"""Sets the url of this ComponentArtifact.
 
         软件包/镜像地址。
 

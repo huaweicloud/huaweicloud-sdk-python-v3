@@ -65,7 +65,7 @@ class ClientInfo:
     }
 
     def __init__(self, id=None, addr=None, fd=None, name=None, cmd=None, age=None, idle=None, db=None, flags=None, sub=None, psub=None, multi=None, qbuf=None, qbuf_free=None, obl=None, oll=None, omem=None, events=None, network=None, peer=None, user=None):
-        """ClientInfo
+        r"""ClientInfo
 
         The model defined in huaweicloud sdk
 
@@ -183,7 +183,7 @@ class ClientInfo:
 
     @property
     def id(self):
-        """Gets the id of this ClientInfo.
+        r"""Gets the id of this ClientInfo.
 
         客户端ID
 
@@ -194,7 +194,7 @@ class ClientInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ClientInfo.
+        r"""Sets the id of this ClientInfo.
 
         客户端ID
 
@@ -205,7 +205,7 @@ class ClientInfo:
 
     @property
     def addr(self):
-        """Gets the addr of this ClientInfo.
+        r"""Gets the addr of this ClientInfo.
 
         客户端的地址和端口
 
@@ -216,7 +216,7 @@ class ClientInfo:
 
     @addr.setter
     def addr(self, addr):
-        """Sets the addr of this ClientInfo.
+        r"""Sets the addr of this ClientInfo.
 
         客户端的地址和端口
 
@@ -227,7 +227,7 @@ class ClientInfo:
 
     @property
     def fd(self):
-        """Gets the fd of this ClientInfo.
+        r"""Gets the fd of this ClientInfo.
 
         套接字所使用的文件描述符。
 
@@ -238,7 +238,7 @@ class ClientInfo:
 
     @fd.setter
     def fd(self, fd):
-        """Sets the fd of this ClientInfo.
+        r"""Sets the fd of this ClientInfo.
 
         套接字所使用的文件描述符。
 
@@ -249,7 +249,7 @@ class ClientInfo:
 
     @property
     def name(self):
-        """Gets the name of this ClientInfo.
+        r"""Gets the name of this ClientInfo.
 
         客户端的名称
 
@@ -260,7 +260,7 @@ class ClientInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ClientInfo.
+        r"""Sets the name of this ClientInfo.
 
         客户端的名称
 
@@ -271,7 +271,7 @@ class ClientInfo:
 
     @property
     def cmd(self):
-        """Gets the cmd of this ClientInfo.
+        r"""Gets the cmd of this ClientInfo.
 
         最近一次执行的命令
 
@@ -282,7 +282,7 @@ class ClientInfo:
 
     @cmd.setter
     def cmd(self, cmd):
-        """Sets the cmd of this ClientInfo.
+        r"""Sets the cmd of this ClientInfo.
 
         最近一次执行的命令
 
@@ -293,7 +293,7 @@ class ClientInfo:
 
     @property
     def age(self):
-        """Gets the age of this ClientInfo.
+        r"""Gets the age of this ClientInfo.
 
         已连接时长（单位：秒）
 
@@ -304,7 +304,7 @@ class ClientInfo:
 
     @age.setter
     def age(self, age):
-        """Sets the age of this ClientInfo.
+        r"""Sets the age of this ClientInfo.
 
         已连接时长（单位：秒）
 
@@ -315,7 +315,7 @@ class ClientInfo:
 
     @property
     def idle(self):
-        """Gets the idle of this ClientInfo.
+        r"""Gets the idle of this ClientInfo.
 
         空闲时长（单位：秒）
 
@@ -326,7 +326,7 @@ class ClientInfo:
 
     @idle.setter
     def idle(self, idle):
-        """Sets the idle of this ClientInfo.
+        r"""Sets the idle of this ClientInfo.
 
         空闲时长（单位：秒）
 
@@ -337,7 +337,7 @@ class ClientInfo:
 
     @property
     def db(self):
-        """Gets the db of this ClientInfo.
+        r"""Gets the db of this ClientInfo.
 
         该客户端正在使用的数据库 ID
 
@@ -348,7 +348,7 @@ class ClientInfo:
 
     @db.setter
     def db(self, db):
-        """Sets the db of this ClientInfo.
+        r"""Sets the db of this ClientInfo.
 
         该客户端正在使用的数据库 ID
 
@@ -359,7 +359,7 @@ class ClientInfo:
 
     @property
     def flags(self):
-        """Gets the flags of this ClientInfo.
+        r"""Gets the flags of this ClientInfo.
 
         客户端标志
 
@@ -370,7 +370,7 @@ class ClientInfo:
 
     @flags.setter
     def flags(self, flags):
-        """Sets the flags of this ClientInfo.
+        r"""Sets the flags of this ClientInfo.
 
         客户端标志
 
@@ -381,7 +381,7 @@ class ClientInfo:
 
     @property
     def sub(self):
-        """Gets the sub of this ClientInfo.
+        r"""Gets the sub of this ClientInfo.
 
         已订阅频道的数量
 
@@ -392,7 +392,7 @@ class ClientInfo:
 
     @sub.setter
     def sub(self, sub):
-        """Sets the sub of this ClientInfo.
+        r"""Sets the sub of this ClientInfo.
 
         已订阅频道的数量
 
@@ -403,7 +403,7 @@ class ClientInfo:
 
     @property
     def psub(self):
-        """Gets the psub of this ClientInfo.
+        r"""Gets the psub of this ClientInfo.
 
         已订阅模式的数量
 
@@ -414,7 +414,7 @@ class ClientInfo:
 
     @psub.setter
     def psub(self, psub):
-        """Sets the psub of this ClientInfo.
+        r"""Sets the psub of this ClientInfo.
 
         已订阅模式的数量
 
@@ -425,7 +425,7 @@ class ClientInfo:
 
     @property
     def multi(self):
-        """Gets the multi of this ClientInfo.
+        r"""Gets the multi of this ClientInfo.
 
         在事务中被执行的命令数量
 
@@ -436,7 +436,7 @@ class ClientInfo:
 
     @multi.setter
     def multi(self, multi):
-        """Sets the multi of this ClientInfo.
+        r"""Sets the multi of this ClientInfo.
 
         在事务中被执行的命令数量
 
@@ -447,7 +447,7 @@ class ClientInfo:
 
     @property
     def qbuf(self):
-        """Gets the qbuf of this ClientInfo.
+        r"""Gets the qbuf of this ClientInfo.
 
         查询缓冲区的长度（单位为字节， 0 表示没有分配查询缓冲区）
 
@@ -458,7 +458,7 @@ class ClientInfo:
 
     @qbuf.setter
     def qbuf(self, qbuf):
-        """Sets the qbuf of this ClientInfo.
+        r"""Sets the qbuf of this ClientInfo.
 
         查询缓冲区的长度（单位为字节， 0 表示没有分配查询缓冲区）
 
@@ -469,7 +469,7 @@ class ClientInfo:
 
     @property
     def qbuf_free(self):
-        """Gets the qbuf_free of this ClientInfo.
+        r"""Gets the qbuf_free of this ClientInfo.
 
         查询缓冲区剩余空间的长度（单位为字节， 0 表示没有剩余空间）
 
@@ -480,7 +480,7 @@ class ClientInfo:
 
     @qbuf_free.setter
     def qbuf_free(self, qbuf_free):
-        """Sets the qbuf_free of this ClientInfo.
+        r"""Sets the qbuf_free of this ClientInfo.
 
         查询缓冲区剩余空间的长度（单位为字节， 0 表示没有剩余空间）
 
@@ -491,7 +491,7 @@ class ClientInfo:
 
     @property
     def obl(self):
-        """Gets the obl of this ClientInfo.
+        r"""Gets the obl of this ClientInfo.
 
         输出缓冲区的长度（单位为字节， 0 表示没有分配输出缓冲区）
 
@@ -502,7 +502,7 @@ class ClientInfo:
 
     @obl.setter
     def obl(self, obl):
-        """Sets the obl of this ClientInfo.
+        r"""Sets the obl of this ClientInfo.
 
         输出缓冲区的长度（单位为字节， 0 表示没有分配输出缓冲区）
 
@@ -513,7 +513,7 @@ class ClientInfo:
 
     @property
     def oll(self):
-        """Gets the oll of this ClientInfo.
+        r"""Gets the oll of this ClientInfo.
 
         输出列表包含的对象数量（当输出缓冲区没有剩余空间时，命令回复会以字符串对象的形式被入队到这个队列里）
 
@@ -524,7 +524,7 @@ class ClientInfo:
 
     @oll.setter
     def oll(self, oll):
-        """Sets the oll of this ClientInfo.
+        r"""Sets the oll of this ClientInfo.
 
         输出列表包含的对象数量（当输出缓冲区没有剩余空间时，命令回复会以字符串对象的形式被入队到这个队列里）
 
@@ -535,7 +535,7 @@ class ClientInfo:
 
     @property
     def omem(self):
-        """Gets the omem of this ClientInfo.
+        r"""Gets the omem of this ClientInfo.
 
         输出缓冲区和输出列表占用的内存总量
 
@@ -546,7 +546,7 @@ class ClientInfo:
 
     @omem.setter
     def omem(self, omem):
-        """Sets the omem of this ClientInfo.
+        r"""Sets the omem of this ClientInfo.
 
         输出缓冲区和输出列表占用的内存总量
 
@@ -557,7 +557,7 @@ class ClientInfo:
 
     @property
     def events(self):
-        """Gets the events of this ClientInfo.
+        r"""Gets the events of this ClientInfo.
 
         文件描述符事件
 
@@ -568,7 +568,7 @@ class ClientInfo:
 
     @events.setter
     def events(self, events):
-        """Sets the events of this ClientInfo.
+        r"""Sets the events of this ClientInfo.
 
         文件描述符事件
 
@@ -579,7 +579,7 @@ class ClientInfo:
 
     @property
     def network(self):
-        """Gets the network of this ClientInfo.
+        r"""Gets the network of this ClientInfo.
 
         客户端所使用的网络类型。
 
@@ -590,7 +590,7 @@ class ClientInfo:
 
     @network.setter
     def network(self, network):
-        """Sets the network of this ClientInfo.
+        r"""Sets the network of this ClientInfo.
 
         客户端所使用的网络类型。
 
@@ -601,7 +601,7 @@ class ClientInfo:
 
     @property
     def peer(self):
-        """Gets the peer of this ClientInfo.
+        r"""Gets the peer of this ClientInfo.
 
         单机，主备和cluster实例地址和端口。
 
@@ -612,7 +612,7 @@ class ClientInfo:
 
     @peer.setter
     def peer(self, peer):
-        """Sets the peer of this ClientInfo.
+        r"""Sets the peer of this ClientInfo.
 
         单机，主备和cluster实例地址和端口。
 
@@ -623,7 +623,7 @@ class ClientInfo:
 
     @property
     def user(self):
-        """Gets the user of this ClientInfo.
+        r"""Gets the user of this ClientInfo.
 
         客户端用户。
 
@@ -634,7 +634,7 @@ class ClientInfo:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this ClientInfo.
+        r"""Sets the user of this ClientInfo.
 
         客户端用户。
 

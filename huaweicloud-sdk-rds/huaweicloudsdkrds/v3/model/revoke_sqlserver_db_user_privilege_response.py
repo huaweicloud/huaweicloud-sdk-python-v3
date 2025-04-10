@@ -26,7 +26,7 @@ class RevokeSqlserverDbUserPrivilegeResponse(SdkResponse):
     }
 
     def __init__(self, resp=None):
-        """RevokeSqlserverDbUserPrivilegeResponse
+        r"""RevokeSqlserverDbUserPrivilegeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RevokeSqlserverDbUserPrivilegeResponse(SdkResponse):
 
     @property
     def resp(self):
-        """Gets the resp of this RevokeSqlserverDbUserPrivilegeResponse.
+        r"""Gets the resp of this RevokeSqlserverDbUserPrivilegeResponse.
 
         操作结果。
 
@@ -55,7 +55,7 @@ class RevokeSqlserverDbUserPrivilegeResponse(SdkResponse):
 
     @resp.setter
     def resp(self, resp):
-        """Sets the resp of this RevokeSqlserverDbUserPrivilegeResponse.
+        r"""Sets the resp of this RevokeSqlserverDbUserPrivilegeResponse.
 
         操作结果。
 

@@ -44,7 +44,7 @@ class ShowJobInfosResponse(SdkResponse):
     }
 
     def __init__(self, status=None, entities=None, job_id=None, job_type=None, begin_time=None, end_time=None, error_code=None, fail_reason=None, message=None, code=None):
-        """ShowJobInfosResponse
+        r"""ShowJobInfosResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class ShowJobInfosResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowJobInfosResponse.
+        r"""Gets the status of this ShowJobInfosResponse.
 
         Job的状态。SUCCESS：成功RUNNING：运行中FAIL：失败INIT：正在初始化
 
@@ -118,7 +118,7 @@ class ShowJobInfosResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowJobInfosResponse.
+        r"""Sets the status of this ShowJobInfosResponse.
 
         Job的状态。SUCCESS：成功RUNNING：运行中FAIL：失败INIT：正在初始化
 
@@ -129,7 +129,7 @@ class ShowJobInfosResponse(SdkResponse):
 
     @property
     def entities(self):
-        """Gets the entities of this ShowJobInfosResponse.
+        r"""Gets the entities of this ShowJobInfosResponse.
 
         :return: The entities of this ShowJobInfosResponse.
         :rtype: :class:`huaweicloudsdkbms.v1.Entities`
@@ -138,7 +138,7 @@ class ShowJobInfosResponse(SdkResponse):
 
     @entities.setter
     def entities(self, entities):
-        """Sets the entities of this ShowJobInfosResponse.
+        r"""Sets the entities of this ShowJobInfosResponse.
 
         :param entities: The entities of this ShowJobInfosResponse.
         :type entities: :class:`huaweicloudsdkbms.v1.Entities`
@@ -147,7 +147,7 @@ class ShowJobInfosResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowJobInfosResponse.
+        r"""Gets the job_id of this ShowJobInfosResponse.
 
         Job ID
 
@@ -158,7 +158,7 @@ class ShowJobInfosResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowJobInfosResponse.
+        r"""Sets the job_id of this ShowJobInfosResponse.
 
         Job ID
 
@@ -169,7 +169,7 @@ class ShowJobInfosResponse(SdkResponse):
 
     @property
     def job_type(self):
-        """Gets the job_type of this ShowJobInfosResponse.
+        r"""Gets the job_type of this ShowJobInfosResponse.
 
         Job的类型，包含以下类型：baremetalBatchCreate：批量创建裸金属服务器baremetalBatchOperate：批量修改裸金属服务器电源状态baremetalBatchCreate：批量创建裸金属服务器baremetalChangeOsVolumeBoot：切换快速发放裸金属服务器操作系统baremetalChangeOsLocalDisk：切换本地盘裸金属服务器操作系统baremetalVolumeBootReinstallOs：重装快速发放裸金属服务器操作系统baremetalReinstallOs：重装本地盘裸金属服务器操作系统baremetalAttachVolume：挂载单个磁盘baremetalDetachVolume：卸载单个磁盘baremetalBatchAttachVolume：裸金属服务器批量挂载共享磁盘
 
@@ -180,7 +180,7 @@ class ShowJobInfosResponse(SdkResponse):
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this ShowJobInfosResponse.
+        r"""Sets the job_type of this ShowJobInfosResponse.
 
         Job的类型，包含以下类型：baremetalBatchCreate：批量创建裸金属服务器baremetalBatchOperate：批量修改裸金属服务器电源状态baremetalBatchCreate：批量创建裸金属服务器baremetalChangeOsVolumeBoot：切换快速发放裸金属服务器操作系统baremetalChangeOsLocalDisk：切换本地盘裸金属服务器操作系统baremetalVolumeBootReinstallOs：重装快速发放裸金属服务器操作系统baremetalReinstallOs：重装本地盘裸金属服务器操作系统baremetalAttachVolume：挂载单个磁盘baremetalDetachVolume：卸载单个磁盘baremetalBatchAttachVolume：裸金属服务器批量挂载共享磁盘
 
@@ -191,7 +191,7 @@ class ShowJobInfosResponse(SdkResponse):
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this ShowJobInfosResponse.
+        r"""Gets the begin_time of this ShowJobInfosResponse.
 
         开始时间。时间戳格式为ISO 8601，例如：2019-04-25T20:04:47.591Z
 
@@ -202,7 +202,7 @@ class ShowJobInfosResponse(SdkResponse):
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this ShowJobInfosResponse.
+        r"""Sets the begin_time of this ShowJobInfosResponse.
 
         开始时间。时间戳格式为ISO 8601，例如：2019-04-25T20:04:47.591Z
 
@@ -213,7 +213,7 @@ class ShowJobInfosResponse(SdkResponse):
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowJobInfosResponse.
+        r"""Gets the end_time of this ShowJobInfosResponse.
 
         结束时间。时间戳格式为ISO 8601，例如：2019-04-26T20:04:47.591Z
 
@@ -224,7 +224,7 @@ class ShowJobInfosResponse(SdkResponse):
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowJobInfosResponse.
+        r"""Sets the end_time of this ShowJobInfosResponse.
 
         结束时间。时间戳格式为ISO 8601，例如：2019-04-26T20:04:47.591Z
 
@@ -235,7 +235,7 @@ class ShowJobInfosResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ShowJobInfosResponse.
+        r"""Gets the error_code of this ShowJobInfosResponse.
 
         Job执行失败时的错误码
 
@@ -246,7 +246,7 @@ class ShowJobInfosResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ShowJobInfosResponse.
+        r"""Sets the error_code of this ShowJobInfosResponse.
 
         Job执行失败时的错误码
 
@@ -257,7 +257,7 @@ class ShowJobInfosResponse(SdkResponse):
 
     @property
     def fail_reason(self):
-        """Gets the fail_reason of this ShowJobInfosResponse.
+        r"""Gets the fail_reason of this ShowJobInfosResponse.
 
         Job执行失败时的错误原因
 
@@ -268,7 +268,7 @@ class ShowJobInfosResponse(SdkResponse):
 
     @fail_reason.setter
     def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this ShowJobInfosResponse.
+        r"""Sets the fail_reason of this ShowJobInfosResponse.
 
         Job执行失败时的错误原因
 
@@ -279,7 +279,7 @@ class ShowJobInfosResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowJobInfosResponse.
+        r"""Gets the message of this ShowJobInfosResponse.
 
         出现错误时，返回的错误消息
 
@@ -290,7 +290,7 @@ class ShowJobInfosResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowJobInfosResponse.
+        r"""Sets the message of this ShowJobInfosResponse.
 
         出现错误时，返回的错误消息
 
@@ -301,7 +301,7 @@ class ShowJobInfosResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ShowJobInfosResponse.
+        r"""Gets the code of this ShowJobInfosResponse.
 
         出现错误时，返回的错误码。错误码和其对应的含义请参考8.1-状态码。
 
@@ -312,7 +312,7 @@ class ShowJobInfosResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ShowJobInfosResponse.
+        r"""Sets the code of this ShowJobInfosResponse.
 
         出现错误时，返回的错误码。错误码和其对应的含义请参考8.1-状态码。
 

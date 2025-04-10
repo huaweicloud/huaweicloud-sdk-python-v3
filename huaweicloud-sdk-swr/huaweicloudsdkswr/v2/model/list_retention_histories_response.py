@@ -30,7 +30,7 @@ class ListRetentionHistoriesResponse(SdkResponse):
     }
 
     def __init__(self, retention_log=None, total=None, content_range=None):
-        """ListRetentionHistoriesResponse
+        r"""ListRetentionHistoriesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListRetentionHistoriesResponse(SdkResponse):
 
     @property
     def retention_log(self):
-        """Gets the retention_log of this ListRetentionHistoriesResponse.
+        r"""Gets the retention_log of this ListRetentionHistoriesResponse.
 
         镜像老化日志
 
@@ -69,7 +69,7 @@ class ListRetentionHistoriesResponse(SdkResponse):
 
     @retention_log.setter
     def retention_log(self, retention_log):
-        """Sets the retention_log of this ListRetentionHistoriesResponse.
+        r"""Sets the retention_log of this ListRetentionHistoriesResponse.
 
         镜像老化日志
 
@@ -80,7 +80,7 @@ class ListRetentionHistoriesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListRetentionHistoriesResponse.
+        r"""Gets the total of this ListRetentionHistoriesResponse.
 
         总个数
 
@@ -91,7 +91,7 @@ class ListRetentionHistoriesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListRetentionHistoriesResponse.
+        r"""Sets the total of this ListRetentionHistoriesResponse.
 
         总个数
 
@@ -102,7 +102,7 @@ class ListRetentionHistoriesResponse(SdkResponse):
 
     @property
     def content_range(self):
-        """Gets the content_range of this ListRetentionHistoriesResponse.
+        r"""Gets the content_range of this ListRetentionHistoriesResponse.
 
         :return: The content_range of this ListRetentionHistoriesResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListRetentionHistoriesResponse(SdkResponse):
 
     @content_range.setter
     def content_range(self, content_range):
-        """Sets the content_range of this ListRetentionHistoriesResponse.
+        r"""Sets the content_range of this ListRetentionHistoriesResponse.
 
         :param content_range: The content_range of this ListRetentionHistoriesResponse.
         :type content_range: str

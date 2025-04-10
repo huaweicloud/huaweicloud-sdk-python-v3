@@ -27,7 +27,7 @@ class LoginWebCliRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """LoginWebCliRequest
+        r"""LoginWebCliRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class LoginWebCliRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this LoginWebCliRequest.
+        r"""Gets the instance_id of this LoginWebCliRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class LoginWebCliRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this LoginWebCliRequest.
+        r"""Sets the instance_id of this LoginWebCliRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class LoginWebCliRequest:
 
     @property
     def body(self):
-        """Gets the body of this LoginWebCliRequest.
+        r"""Gets the body of this LoginWebCliRequest.
 
         :return: The body of this LoginWebCliRequest.
         :rtype: :class:`huaweicloudsdkdcs.v2.LoginWebCliBody`
@@ -80,7 +80,7 @@ class LoginWebCliRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this LoginWebCliRequest.
+        r"""Sets the body of this LoginWebCliRequest.
 
         :param body: The body of this LoginWebCliRequest.
         :type body: :class:`huaweicloudsdkdcs.v2.LoginWebCliBody`

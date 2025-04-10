@@ -29,7 +29,7 @@ class AppConfigModifyRequestV2:
     }
 
     def __init__(self, config_type=None, config_value=None, description=None):
-        """AppConfigModifyRequestV2
+        r"""AppConfigModifyRequestV2
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class AppConfigModifyRequestV2:
 
     @property
     def config_type(self):
-        """Gets the config_type of this AppConfigModifyRequestV2.
+        r"""Gets the config_type of this AppConfigModifyRequestV2.
 
         应用配置类型： - variable：模板变量 - password：密码 - certificate：证书
 
@@ -67,7 +67,7 @@ class AppConfigModifyRequestV2:
 
     @config_type.setter
     def config_type(self, config_type):
-        """Sets the config_type of this AppConfigModifyRequestV2.
+        r"""Sets the config_type of this AppConfigModifyRequestV2.
 
         应用配置类型： - variable：模板变量 - password：密码 - certificate：证书
 
@@ -78,7 +78,7 @@ class AppConfigModifyRequestV2:
 
     @property
     def config_value(self):
-        """Gets the config_value of this AppConfigModifyRequestV2.
+        r"""Gets the config_value of this AppConfigModifyRequestV2.
 
         应用配置值： - config_type = variable：config_value为模板变量的值 - config_type = password：config_value为密码值 - config_type = certificate：config_value需要包含证书public_key（必填），私钥private_key（必填）和密码passphrase（非必填），格式如：\"{\\\\\"public_key\\\\\": \\\"\\,\\\\\"private_key\\\\\":\\\\\"\\\\\",\\\\\"passphrase\\\\\":\\\\\"\\\\\"}\"
 
@@ -89,7 +89,7 @@ class AppConfigModifyRequestV2:
 
     @config_value.setter
     def config_value(self, config_value):
-        """Sets the config_value of this AppConfigModifyRequestV2.
+        r"""Sets the config_value of this AppConfigModifyRequestV2.
 
         应用配置值： - config_type = variable：config_value为模板变量的值 - config_type = password：config_value为密码值 - config_type = certificate：config_value需要包含证书public_key（必填），私钥private_key（必填）和密码passphrase（非必填），格式如：\"{\\\\\"public_key\\\\\": \\\"\\,\\\\\"private_key\\\\\":\\\\\"\\\\\",\\\\\"passphrase\\\\\":\\\\\"\\\\\"}\"
 
@@ -100,7 +100,7 @@ class AppConfigModifyRequestV2:
 
     @property
     def description(self):
-        """Gets the description of this AppConfigModifyRequestV2.
+        r"""Gets the description of this AppConfigModifyRequestV2.
 
         应用配置描述
 
@@ -111,7 +111,7 @@ class AppConfigModifyRequestV2:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AppConfigModifyRequestV2.
+        r"""Sets the description of this AppConfigModifyRequestV2.
 
         应用配置描述
 

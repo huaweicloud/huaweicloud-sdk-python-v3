@@ -25,7 +25,7 @@ class AdminResetPwdReqDTO:
     }
 
     def __init__(self, account=None):
-        """AdminResetPwdReqDTO
+        r"""AdminResetPwdReqDTO
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AdminResetPwdReqDTO:
 
     @property
     def account(self):
-        """Gets the account of this AdminResetPwdReqDTO.
+        r"""Gets the account of this AdminResetPwdReqDTO.
 
         被修改密码的用户帐号。 
 
@@ -53,7 +53,7 @@ class AdminResetPwdReqDTO:
 
     @account.setter
     def account(self, account):
-        """Sets the account of this AdminResetPwdReqDTO.
+        r"""Sets the account of this AdminResetPwdReqDTO.
 
         被修改密码的用户帐号。 
 

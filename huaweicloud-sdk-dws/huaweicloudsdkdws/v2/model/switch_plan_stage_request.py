@@ -29,7 +29,7 @@ class SwitchPlanStageRequest:
     }
 
     def __init__(self, cluster_id=None, plan_id=None, body=None):
-        """SwitchPlanStageRequest
+        r"""SwitchPlanStageRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class SwitchPlanStageRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this SwitchPlanStageRequest.
+        r"""Gets the cluster_id of this SwitchPlanStageRequest.
 
         集群ID
 
@@ -66,7 +66,7 @@ class SwitchPlanStageRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this SwitchPlanStageRequest.
+        r"""Sets the cluster_id of this SwitchPlanStageRequest.
 
         集群ID
 
@@ -77,7 +77,7 @@ class SwitchPlanStageRequest:
 
     @property
     def plan_id(self):
-        """Gets the plan_id of this SwitchPlanStageRequest.
+        r"""Gets the plan_id of this SwitchPlanStageRequest.
 
         计划ID
 
@@ -88,7 +88,7 @@ class SwitchPlanStageRequest:
 
     @plan_id.setter
     def plan_id(self, plan_id):
-        """Sets the plan_id of this SwitchPlanStageRequest.
+        r"""Sets the plan_id of this SwitchPlanStageRequest.
 
         计划ID
 
@@ -99,7 +99,7 @@ class SwitchPlanStageRequest:
 
     @property
     def body(self):
-        """Gets the body of this SwitchPlanStageRequest.
+        r"""Gets the body of this SwitchPlanStageRequest.
 
         :return: The body of this SwitchPlanStageRequest.
         :rtype: :class:`huaweicloudsdkdws.v2.WorkloadPlanStageIdReq`
@@ -108,7 +108,7 @@ class SwitchPlanStageRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SwitchPlanStageRequest.
+        r"""Sets the body of this SwitchPlanStageRequest.
 
         :param body: The body of this SwitchPlanStageRequest.
         :type body: :class:`huaweicloudsdkdws.v2.WorkloadPlanStageIdReq`

@@ -25,7 +25,7 @@ class CatalogAttributeVOParent:
     }
 
     def __init__(self, id=None):
-        """CatalogAttributeVOParent
+        r"""CatalogAttributeVOParent
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CatalogAttributeVOParent:
 
     @property
     def id(self):
-        """Gets the id of this CatalogAttributeVOParent.
+        r"""Gets the id of this CatalogAttributeVOParent.
 
         父节点ID。
 
@@ -54,7 +54,7 @@ class CatalogAttributeVOParent:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CatalogAttributeVOParent.
+        r"""Sets the id of this CatalogAttributeVOParent.
 
         父节点ID。
 

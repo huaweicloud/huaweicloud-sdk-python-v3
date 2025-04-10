@@ -27,7 +27,7 @@ class BatchListProgressesRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """BatchListProgressesRequest
+        r"""BatchListProgressesRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchListProgressesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this BatchListProgressesRequest.
+        r"""Gets the x_language of this BatchListProgressesRequest.
 
         请求语言类型
 
@@ -61,7 +61,7 @@ class BatchListProgressesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this BatchListProgressesRequest.
+        r"""Sets the x_language of this BatchListProgressesRequest.
 
         请求语言类型
 
@@ -72,7 +72,7 @@ class BatchListProgressesRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchListProgressesRequest.
+        r"""Gets the body of this BatchListProgressesRequest.
 
         :return: The body of this BatchListProgressesRequest.
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchQueryProgressReq`
@@ -81,7 +81,7 @@ class BatchListProgressesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchListProgressesRequest.
+        r"""Sets the body of this BatchListProgressesRequest.
 
         :param body: The body of this BatchListProgressesRequest.
         :type body: :class:`huaweicloudsdkdrs.v3.BatchQueryProgressReq`

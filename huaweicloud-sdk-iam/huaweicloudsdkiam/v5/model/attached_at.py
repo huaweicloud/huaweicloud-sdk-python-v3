@@ -23,7 +23,7 @@ class AttachedAt:
     }
 
     def __init__(self):
-        """AttachedAt
+        r"""AttachedAt
 
         The model defined in huaweicloud sdk
 

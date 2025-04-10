@@ -34,7 +34,7 @@ class ListProjectFieldConfigsResponse(SdkResponse):
     }
 
     def __init__(self, status=None, result=None, error=None, request_id=None, server_address=None):
-        """ListProjectFieldConfigsResponse
+        r"""ListProjectFieldConfigsResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListProjectFieldConfigsResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListProjectFieldConfigsResponse.
+        r"""Gets the status of this ListProjectFieldConfigsResponse.
 
         对外时：success|error; 对内时：ok|failed
 
@@ -83,7 +83,7 @@ class ListProjectFieldConfigsResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListProjectFieldConfigsResponse.
+        r"""Sets the status of this ListProjectFieldConfigsResponse.
 
         对外时：success|error; 对内时：ok|failed
 
@@ -94,7 +94,7 @@ class ListProjectFieldConfigsResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListProjectFieldConfigsResponse.
+        r"""Gets the result of this ListProjectFieldConfigsResponse.
 
         :return: The result of this ListProjectFieldConfigsResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ResultValueListProjectFieldConfigVo`
@@ -103,7 +103,7 @@ class ListProjectFieldConfigsResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListProjectFieldConfigsResponse.
+        r"""Sets the result of this ListProjectFieldConfigsResponse.
 
         :param result: The result of this ListProjectFieldConfigsResponse.
         :type result: :class:`huaweicloudsdkcloudtest.v1.ResultValueListProjectFieldConfigVo`
@@ -112,7 +112,7 @@ class ListProjectFieldConfigsResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ListProjectFieldConfigsResponse.
+        r"""Gets the error of this ListProjectFieldConfigsResponse.
 
         :return: The error of this ListProjectFieldConfigsResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ApiError`
@@ -121,7 +121,7 @@ class ListProjectFieldConfigsResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ListProjectFieldConfigsResponse.
+        r"""Sets the error of this ListProjectFieldConfigsResponse.
 
         :param error: The error of this ListProjectFieldConfigsResponse.
         :type error: :class:`huaweicloudsdkcloudtest.v1.ApiError`
@@ -130,7 +130,7 @@ class ListProjectFieldConfigsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListProjectFieldConfigsResponse.
+        r"""Gets the request_id of this ListProjectFieldConfigsResponse.
 
         由接口调用方传入，建议使用UUID保证请求的唯一性。
 
@@ -141,7 +141,7 @@ class ListProjectFieldConfigsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListProjectFieldConfigsResponse.
+        r"""Sets the request_id of this ListProjectFieldConfigsResponse.
 
         由接口调用方传入，建议使用UUID保证请求的唯一性。
 
@@ -152,7 +152,7 @@ class ListProjectFieldConfigsResponse(SdkResponse):
 
     @property
     def server_address(self):
-        """Gets the server_address of this ListProjectFieldConfigsResponse.
+        r"""Gets the server_address of this ListProjectFieldConfigsResponse.
 
         对内接口才有此属性
 
@@ -163,7 +163,7 @@ class ListProjectFieldConfigsResponse(SdkResponse):
 
     @server_address.setter
     def server_address(self, server_address):
-        """Sets the server_address of this ListProjectFieldConfigsResponse.
+        r"""Sets the server_address of this ListProjectFieldConfigsResponse.
 
         对内接口才有此属性
 

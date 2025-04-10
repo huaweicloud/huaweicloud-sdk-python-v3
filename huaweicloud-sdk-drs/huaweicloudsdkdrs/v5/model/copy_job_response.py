@@ -34,7 +34,7 @@ class CopyJobResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, status=None, create_time=None, is_clone_job=None):
-        """CopyJobResponse
+        r"""CopyJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class CopyJobResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CopyJobResponse.
+        r"""Gets the id of this CopyJobResponse.
 
         任务ID。
 
@@ -83,7 +83,7 @@ class CopyJobResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CopyJobResponse.
+        r"""Sets the id of this CopyJobResponse.
 
         任务ID。
 
@@ -94,7 +94,7 @@ class CopyJobResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CopyJobResponse.
+        r"""Gets the name of this CopyJobResponse.
 
         任务名称。
 
@@ -105,7 +105,7 @@ class CopyJobResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CopyJobResponse.
+        r"""Sets the name of this CopyJobResponse.
 
         任务名称。
 
@@ -116,7 +116,7 @@ class CopyJobResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CopyJobResponse.
+        r"""Gets the status of this CopyJobResponse.
 
         任务状态。
 
@@ -127,7 +127,7 @@ class CopyJobResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CopyJobResponse.
+        r"""Sets the status of this CopyJobResponse.
 
         任务状态。
 
@@ -138,7 +138,7 @@ class CopyJobResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this CopyJobResponse.
+        r"""Gets the create_time of this CopyJobResponse.
 
         任务创建时间。
 
@@ -149,7 +149,7 @@ class CopyJobResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CopyJobResponse.
+        r"""Sets the create_time of this CopyJobResponse.
 
         任务创建时间。
 
@@ -160,7 +160,7 @@ class CopyJobResponse(SdkResponse):
 
     @property
     def is_clone_job(self):
-        """Gets the is_clone_job of this CopyJobResponse.
+        r"""Gets the is_clone_job of this CopyJobResponse.
 
         是否为克隆任务。
 
@@ -171,7 +171,7 @@ class CopyJobResponse(SdkResponse):
 
     @is_clone_job.setter
     def is_clone_job(self, is_clone_job):
-        """Sets the is_clone_job of this CopyJobResponse.
+        r"""Sets the is_clone_job of this CopyJobResponse.
 
         是否为克隆任务。
 

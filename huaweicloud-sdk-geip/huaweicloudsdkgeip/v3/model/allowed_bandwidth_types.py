@@ -29,7 +29,7 @@ class AllowedBandwidthTypes:
     }
 
     def __init__(self, type=None, cn_name=None, en_name=None):
-        """AllowedBandwidthTypes
+        r"""AllowedBandwidthTypes
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AllowedBandwidthTypes:
 
     @property
     def type(self):
-        """Gets the type of this AllowedBandwidthTypes.
+        r"""Gets the type of this AllowedBandwidthTypes.
 
         全域公网带宽类型名称
 
@@ -68,7 +68,7 @@ class AllowedBandwidthTypes:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AllowedBandwidthTypes.
+        r"""Sets the type of this AllowedBandwidthTypes.
 
         全域公网带宽类型名称
 
@@ -79,7 +79,7 @@ class AllowedBandwidthTypes:
 
     @property
     def cn_name(self):
-        """Gets the cn_name of this AllowedBandwidthTypes.
+        r"""Gets the cn_name of this AllowedBandwidthTypes.
 
         中文名称
 
@@ -90,7 +90,7 @@ class AllowedBandwidthTypes:
 
     @cn_name.setter
     def cn_name(self, cn_name):
-        """Sets the cn_name of this AllowedBandwidthTypes.
+        r"""Sets the cn_name of this AllowedBandwidthTypes.
 
         中文名称
 
@@ -101,7 +101,7 @@ class AllowedBandwidthTypes:
 
     @property
     def en_name(self):
-        """Gets the en_name of this AllowedBandwidthTypes.
+        r"""Gets the en_name of this AllowedBandwidthTypes.
 
         英文名称
 
@@ -112,7 +112,7 @@ class AllowedBandwidthTypes:
 
     @en_name.setter
     def en_name(self, en_name):
-        """Sets the en_name of this AllowedBandwidthTypes.
+        r"""Sets the en_name of this AllowedBandwidthTypes.
 
         英文名称
 

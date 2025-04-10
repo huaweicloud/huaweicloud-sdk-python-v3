@@ -33,7 +33,7 @@ class MergeResult:
     }
 
     def __init__(self, closed=None, merge_requests=None, merged=None, opened=None, total=None):
-        """MergeResult
+        r"""MergeResult
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class MergeResult:
 
     @property
     def closed(self):
-        """Gets the closed of this MergeResult.
+        r"""Gets the closed of this MergeResult.
 
         已关闭合并请求数
 
@@ -82,7 +82,7 @@ class MergeResult:
 
     @closed.setter
     def closed(self, closed):
-        """Sets the closed of this MergeResult.
+        r"""Sets the closed of this MergeResult.
 
         已关闭合并请求数
 
@@ -93,7 +93,7 @@ class MergeResult:
 
     @property
     def merge_requests(self):
-        """Gets the merge_requests of this MergeResult.
+        r"""Gets the merge_requests of this MergeResult.
 
         合并请求详情
 
@@ -104,7 +104,7 @@ class MergeResult:
 
     @merge_requests.setter
     def merge_requests(self, merge_requests):
-        """Sets the merge_requests of this MergeResult.
+        r"""Sets the merge_requests of this MergeResult.
 
         合并请求详情
 
@@ -115,7 +115,7 @@ class MergeResult:
 
     @property
     def merged(self):
-        """Gets the merged of this MergeResult.
+        r"""Gets the merged of this MergeResult.
 
         已合并合并请求数数
 
@@ -126,7 +126,7 @@ class MergeResult:
 
     @merged.setter
     def merged(self, merged):
-        """Sets the merged of this MergeResult.
+        r"""Sets the merged of this MergeResult.
 
         已合并合并请求数数
 
@@ -137,7 +137,7 @@ class MergeResult:
 
     @property
     def opened(self):
-        """Gets the opened of this MergeResult.
+        r"""Gets the opened of this MergeResult.
 
         开启中合并请求数
 
@@ -148,7 +148,7 @@ class MergeResult:
 
     @opened.setter
     def opened(self, opened):
-        """Sets the opened of this MergeResult.
+        r"""Sets the opened of this MergeResult.
 
         开启中合并请求数
 
@@ -159,7 +159,7 @@ class MergeResult:
 
     @property
     def total(self):
-        """Gets the total of this MergeResult.
+        r"""Gets the total of this MergeResult.
 
         合并请求总数
 
@@ -170,7 +170,7 @@ class MergeResult:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this MergeResult.
+        r"""Sets the total of this MergeResult.
 
         合并请求总数
 

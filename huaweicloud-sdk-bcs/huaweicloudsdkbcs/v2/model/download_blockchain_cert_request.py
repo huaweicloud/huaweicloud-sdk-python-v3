@@ -29,7 +29,7 @@ class DownloadBlockchainCertRequest:
     }
 
     def __init__(self, blockchain_id=None, org_name=None, cert_type=None):
-        """DownloadBlockchainCertRequest
+        r"""DownloadBlockchainCertRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DownloadBlockchainCertRequest:
 
     @property
     def blockchain_id(self):
-        """Gets the blockchain_id of this DownloadBlockchainCertRequest.
+        r"""Gets the blockchain_id of this DownloadBlockchainCertRequest.
 
         blockchainID
 
@@ -65,7 +65,7 @@ class DownloadBlockchainCertRequest:
 
     @blockchain_id.setter
     def blockchain_id(self, blockchain_id):
-        """Sets the blockchain_id of this DownloadBlockchainCertRequest.
+        r"""Sets the blockchain_id of this DownloadBlockchainCertRequest.
 
         blockchainID
 
@@ -76,7 +76,7 @@ class DownloadBlockchainCertRequest:
 
     @property
     def org_name(self):
-        """Gets the org_name of this DownloadBlockchainCertRequest.
+        r"""Gets the org_name of this DownloadBlockchainCertRequest.
 
         order或者peer组织名称
 
@@ -87,7 +87,7 @@ class DownloadBlockchainCertRequest:
 
     @org_name.setter
     def org_name(self, org_name):
-        """Sets the org_name of this DownloadBlockchainCertRequest.
+        r"""Sets the org_name of this DownloadBlockchainCertRequest.
 
         order或者peer组织名称
 
@@ -98,7 +98,7 @@ class DownloadBlockchainCertRequest:
 
     @property
     def cert_type(self):
-        """Gets the cert_type of this DownloadBlockchainCertRequest.
+        r"""Gets the cert_type of this DownloadBlockchainCertRequest.
 
         下载证书类别
 
@@ -109,7 +109,7 @@ class DownloadBlockchainCertRequest:
 
     @cert_type.setter
     def cert_type(self, cert_type):
-        """Sets the cert_type of this DownloadBlockchainCertRequest.
+        r"""Sets the cert_type of this DownloadBlockchainCertRequest.
 
         下载证书类别
 

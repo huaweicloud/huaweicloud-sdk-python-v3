@@ -32,7 +32,7 @@ class ShowPlaybookRuleResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, data=None, x_request_id=None):
-        """ShowPlaybookRuleResponse
+        r"""ShowPlaybookRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowPlaybookRuleResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ShowPlaybookRuleResponse.
+        r"""Gets the code of this ShowPlaybookRuleResponse.
 
         Error code
 
@@ -76,7 +76,7 @@ class ShowPlaybookRuleResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ShowPlaybookRuleResponse.
+        r"""Sets the code of this ShowPlaybookRuleResponse.
 
         Error code
 
@@ -87,7 +87,7 @@ class ShowPlaybookRuleResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowPlaybookRuleResponse.
+        r"""Gets the message of this ShowPlaybookRuleResponse.
 
         Error message
 
@@ -98,7 +98,7 @@ class ShowPlaybookRuleResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowPlaybookRuleResponse.
+        r"""Sets the message of this ShowPlaybookRuleResponse.
 
         Error message
 
@@ -109,7 +109,7 @@ class ShowPlaybookRuleResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowPlaybookRuleResponse.
+        r"""Gets the data of this ShowPlaybookRuleResponse.
 
         :return: The data of this ShowPlaybookRuleResponse.
         :rtype: :class:`huaweicloudsdksa.v2.RuleInfo`
@@ -118,7 +118,7 @@ class ShowPlaybookRuleResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowPlaybookRuleResponse.
+        r"""Sets the data of this ShowPlaybookRuleResponse.
 
         :param data: The data of this ShowPlaybookRuleResponse.
         :type data: :class:`huaweicloudsdksa.v2.RuleInfo`
@@ -127,7 +127,7 @@ class ShowPlaybookRuleResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ShowPlaybookRuleResponse.
+        r"""Gets the x_request_id of this ShowPlaybookRuleResponse.
 
         :return: The x_request_id of this ShowPlaybookRuleResponse.
         :rtype: str
@@ -136,7 +136,7 @@ class ShowPlaybookRuleResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ShowPlaybookRuleResponse.
+        r"""Sets the x_request_id of this ShowPlaybookRuleResponse.
 
         :param x_request_id: The x_request_id of this ShowPlaybookRuleResponse.
         :type x_request_id: str

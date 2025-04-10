@@ -24,7 +24,7 @@ class UpdateScaleOutPolicyResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateScaleOutPolicyResponse
+        r"""UpdateScaleOutPolicyResponse
 
         The model defined in huaweicloud sdk
 

@@ -30,7 +30,7 @@ class ListNodesResponse(SdkResponse):
     }
 
     def __init__(self, kind=None, api_version=None, items=None):
-        """ListNodesResponse
+        r"""ListNodesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListNodesResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this ListNodesResponse.
+        r"""Gets the kind of this ListNodesResponse.
 
         API类型，固定值“List”
 
@@ -69,7 +69,7 @@ class ListNodesResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ListNodesResponse.
+        r"""Sets the kind of this ListNodesResponse.
 
         API类型，固定值“List”
 
@@ -80,7 +80,7 @@ class ListNodesResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this ListNodesResponse.
+        r"""Gets the api_version of this ListNodesResponse.
 
         API版本，固定值“v3”
 
@@ -91,7 +91,7 @@ class ListNodesResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this ListNodesResponse.
+        r"""Sets the api_version of this ListNodesResponse.
 
         API版本，固定值“v3”
 
@@ -102,7 +102,7 @@ class ListNodesResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListNodesResponse.
+        r"""Gets the items of this ListNodesResponse.
 
         节点对象列表，包含了当前集群下所有节点的详细信息。可通过items.metadata.name下的值来找到对应的节点。
 
@@ -113,7 +113,7 @@ class ListNodesResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListNodesResponse.
+        r"""Sets the items of this ListNodesResponse.
 
         节点对象列表，包含了当前集群下所有节点的详细信息。可通过items.metadata.name下的值来找到对应的节点。
 

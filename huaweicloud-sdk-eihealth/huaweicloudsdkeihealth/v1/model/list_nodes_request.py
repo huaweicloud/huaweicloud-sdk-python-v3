@@ -25,7 +25,7 @@ class ListNodesRequest:
     }
 
     def __init__(self, id=None):
-        """ListNodesRequest
+        r"""ListNodesRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListNodesRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListNodesRequest.
+        r"""Gets the id of this ListNodesRequest.
 
         策略id
 
@@ -53,7 +53,7 @@ class ListNodesRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListNodesRequest.
+        r"""Sets the id of this ListNodesRequest.
 
         策略id
 

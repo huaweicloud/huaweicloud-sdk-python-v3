@@ -29,7 +29,7 @@ class FileUpdate:
     }
 
     def __init__(self, message=None, content=None, sha=None):
-        """FileUpdate
+        r"""FileUpdate
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class FileUpdate:
 
     @property
     def message(self):
-        """Gets the message of this FileUpdate.
+        r"""Gets the message of this FileUpdate.
 
         提交描述。
 
@@ -65,7 +65,7 @@ class FileUpdate:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this FileUpdate.
+        r"""Sets the message of this FileUpdate.
 
         提交描述。
 
@@ -76,7 +76,7 @@ class FileUpdate:
 
     @property
     def content(self):
-        """Gets the content of this FileUpdate.
+        r"""Gets the content of this FileUpdate.
 
         经base64编码的文件内容。
 
@@ -87,7 +87,7 @@ class FileUpdate:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this FileUpdate.
+        r"""Sets the content of this FileUpdate.
 
         经base64编码的文件内容。
 
@@ -98,7 +98,7 @@ class FileUpdate:
 
     @property
     def sha(self):
-        """Gets the sha of this FileUpdate.
+        r"""Gets the sha of this FileUpdate.
 
         文件的sha值。
 
@@ -109,7 +109,7 @@ class FileUpdate:
 
     @sha.setter
     def sha(self, sha):
-        """Sets the sha of this FileUpdate.
+        r"""Sets the sha of this FileUpdate.
 
         文件的sha值。
 

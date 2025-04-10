@@ -28,7 +28,7 @@ class CreateAnonymousAuthRandomResponse(SdkResponse):
     }
 
     def __init__(self, site_url=None, random=None):
-        """CreateAnonymousAuthRandomResponse
+        r"""CreateAnonymousAuthRandomResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateAnonymousAuthRandomResponse(SdkResponse):
 
     @property
     def site_url(self):
-        """Gets the site_url of this CreateAnonymousAuthRandomResponse.
+        r"""Gets the site_url of this CreateAnonymousAuthRandomResponse.
 
         下一跳URL。
 
@@ -62,7 +62,7 @@ class CreateAnonymousAuthRandomResponse(SdkResponse):
 
     @site_url.setter
     def site_url(self, site_url):
-        """Sets the site_url of this CreateAnonymousAuthRandomResponse.
+        r"""Sets the site_url of this CreateAnonymousAuthRandomResponse.
 
         下一跳URL。
 
@@ -73,7 +73,7 @@ class CreateAnonymousAuthRandomResponse(SdkResponse):
 
     @property
     def random(self):
-        """Gets the random of this CreateAnonymousAuthRandomResponse.
+        r"""Gets the random of this CreateAnonymousAuthRandomResponse.
 
         鉴权随机数。
 
@@ -84,7 +84,7 @@ class CreateAnonymousAuthRandomResponse(SdkResponse):
 
     @random.setter
     def random(self, random):
-        """Sets the random of this CreateAnonymousAuthRandomResponse.
+        r"""Sets the random of this CreateAnonymousAuthRandomResponse.
 
         鉴权随机数。
 

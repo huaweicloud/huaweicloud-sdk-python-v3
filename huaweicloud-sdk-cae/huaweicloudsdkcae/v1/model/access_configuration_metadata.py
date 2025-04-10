@@ -25,7 +25,7 @@ class AccessConfigurationMetadata:
     }
 
     def __init__(self, annotations=None):
-        """AccessConfigurationMetadata
+        r"""AccessConfigurationMetadata
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AccessConfigurationMetadata:
 
     @property
     def annotations(self):
-        """Gets the annotations of this AccessConfigurationMetadata.
+        r"""Gets the annotations of this AccessConfigurationMetadata.
 
         附加参数。  举例：负载均衡分配策略使用加权轮询算法，不启用健康检查。配置如下： - \"kubernetes.io/elb.health-check-flag\": \"off\" - \"kubernetes.io/elb.lb-algorithm\": \"ROUND_ROBIN\" 
 
@@ -54,7 +54,7 @@ class AccessConfigurationMetadata:
 
     @annotations.setter
     def annotations(self, annotations):
-        """Sets the annotations of this AccessConfigurationMetadata.
+        r"""Sets the annotations of this AccessConfigurationMetadata.
 
         附加参数。  举例：负载均衡分配策略使用加权轮询算法，不启用健康检查。配置如下： - \"kubernetes.io/elb.health-check-flag\": \"off\" - \"kubernetes.io/elb.lb-algorithm\": \"ROUND_ROBIN\" 
 

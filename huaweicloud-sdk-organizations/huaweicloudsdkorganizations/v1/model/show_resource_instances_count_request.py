@@ -30,7 +30,7 @@ class ShowResourceInstancesCountRequest:
     }
 
     def __init__(self, x_security_token=None, resource_type=None, body=None):
-        """ShowResourceInstancesCountRequest
+        r"""ShowResourceInstancesCountRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ShowResourceInstancesCountRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this ShowResourceInstancesCountRequest.
+        r"""Gets the x_security_token of this ShowResourceInstancesCountRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -68,7 +68,7 @@ class ShowResourceInstancesCountRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this ShowResourceInstancesCountRequest.
+        r"""Sets the x_security_token of this ShowResourceInstancesCountRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -79,7 +79,7 @@ class ShowResourceInstancesCountRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ShowResourceInstancesCountRequest.
+        r"""Gets the resource_type of this ShowResourceInstancesCountRequest.
 
         资源类型。枚举值：organizations:policies（服务策略）、organizations:ous（组织OU）、organizations:accounts（账号信息） 、organizations:roots：（根）。
 
@@ -90,7 +90,7 @@ class ShowResourceInstancesCountRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ShowResourceInstancesCountRequest.
+        r"""Sets the resource_type of this ShowResourceInstancesCountRequest.
 
         资源类型。枚举值：organizations:policies（服务策略）、organizations:ous（组织OU）、organizations:accounts（账号信息） 、organizations:roots：（根）。
 
@@ -101,7 +101,7 @@ class ShowResourceInstancesCountRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowResourceInstancesCountRequest.
+        r"""Gets the body of this ShowResourceInstancesCountRequest.
 
         :return: The body of this ShowResourceInstancesCountRequest.
         :rtype: :class:`huaweicloudsdkorganizations.v1.ResourceInstanceReqBody`
@@ -110,7 +110,7 @@ class ShowResourceInstancesCountRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowResourceInstancesCountRequest.
+        r"""Sets the body of this ShowResourceInstancesCountRequest.
 
         :param body: The body of this ShowResourceInstancesCountRequest.
         :type body: :class:`huaweicloudsdkorganizations.v1.ResourceInstanceReqBody`

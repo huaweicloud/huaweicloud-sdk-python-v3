@@ -29,7 +29,7 @@ class PushShareFilesRequestBody:
     }
 
     def __init__(self, bucket_name=None, object_path=None, server_ids=None):
-        """PushShareFilesRequestBody
+        r"""PushShareFilesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class PushShareFilesRequestBody:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this PushShareFilesRequestBody.
+        r"""Gets the bucket_name of this PushShareFilesRequestBody.
 
         合法的OBS桶名，3-63个字符，只能由小写字母、数字、中划线（-）和小数点组成。仅推送共享存储接口使用。
 
@@ -65,7 +65,7 @@ class PushShareFilesRequestBody:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this PushShareFilesRequestBody.
+        r"""Sets the bucket_name of this PushShareFilesRequestBody.
 
         合法的OBS桶名，3-63个字符，只能由小写字母、数字、中划线（-）和小数点组成。仅推送共享存储接口使用。
 
@@ -76,7 +76,7 @@ class PushShareFilesRequestBody:
 
     @property
     def object_path(self):
-        """Gets the object_path of this PushShareFilesRequestBody.
+        r"""Gets the object_path of this PushShareFilesRequestBody.
 
         合法的OBS对象路径，最大长度1024字符。仅支持大小写字母、数字、小数点（.）、斜线（/）、中划线（-）、下划线（_）、加号（+）、井号（#）、等号等这些字符。 推送的文件只支持tar文件类型。推送时，按tar文件解压后的文件目录结构推送到手机。当前只支持/data和/cache目录推送。仅推送共享存储接口使用。
 
@@ -87,7 +87,7 @@ class PushShareFilesRequestBody:
 
     @object_path.setter
     def object_path(self, object_path):
-        """Sets the object_path of this PushShareFilesRequestBody.
+        r"""Sets the object_path of this PushShareFilesRequestBody.
 
         合法的OBS对象路径，最大长度1024字符。仅支持大小写字母、数字、小数点（.）、斜线（/）、中划线（-）、下划线（_）、加号（+）、井号（#）、等号等这些字符。 推送的文件只支持tar文件类型。推送时，按tar文件解压后的文件目录结构推送到手机。当前只支持/data和/cache目录推送。仅推送共享存储接口使用。
 
@@ -98,7 +98,7 @@ class PushShareFilesRequestBody:
 
     @property
     def server_ids(self):
-        """Gets the server_ids of this PushShareFilesRequestBody.
+        r"""Gets the server_ids of this PushShareFilesRequestBody.
 
         云手机服务器ID列表。
 
@@ -109,7 +109,7 @@ class PushShareFilesRequestBody:
 
     @server_ids.setter
     def server_ids(self, server_ids):
-        """Sets the server_ids of this PushShareFilesRequestBody.
+        r"""Sets the server_ids of this PushShareFilesRequestBody.
 
         云手机服务器ID列表。
 

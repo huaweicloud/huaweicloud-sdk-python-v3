@@ -26,7 +26,7 @@ class SwitchLogReplayResponse(SdkResponse):
     }
 
     def __init__(self, message=None):
-        """SwitchLogReplayResponse
+        r"""SwitchLogReplayResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SwitchLogReplayResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this SwitchLogReplayResponse.
+        r"""Gets the message of this SwitchLogReplayResponse.
 
         提示信息
 
@@ -55,7 +55,7 @@ class SwitchLogReplayResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this SwitchLogReplayResponse.
+        r"""Sets the message of this SwitchLogReplayResponse.
 
         提示信息
 

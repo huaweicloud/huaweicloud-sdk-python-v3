@@ -28,7 +28,7 @@ class DetectFaceByBase64IntlResponse(SdkResponse):
     }
 
     def __init__(self, faces=None, x_request_id=None):
-        """DetectFaceByBase64IntlResponse
+        r"""DetectFaceByBase64IntlResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class DetectFaceByBase64IntlResponse(SdkResponse):
 
     @property
     def faces(self):
-        """Gets the faces of this DetectFaceByBase64IntlResponse.
+        r"""Gets the faces of this DetectFaceByBase64IntlResponse.
 
         检测到的人脸。 调用失败时无此字段。
 
@@ -62,7 +62,7 @@ class DetectFaceByBase64IntlResponse(SdkResponse):
 
     @faces.setter
     def faces(self, faces):
-        """Sets the faces of this DetectFaceByBase64IntlResponse.
+        r"""Sets the faces of this DetectFaceByBase64IntlResponse.
 
         检测到的人脸。 调用失败时无此字段。
 
@@ -73,7 +73,7 @@ class DetectFaceByBase64IntlResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DetectFaceByBase64IntlResponse.
+        r"""Gets the x_request_id of this DetectFaceByBase64IntlResponse.
 
         :return: The x_request_id of this DetectFaceByBase64IntlResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class DetectFaceByBase64IntlResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DetectFaceByBase64IntlResponse.
+        r"""Sets the x_request_id of this DetectFaceByBase64IntlResponse.
 
         :param x_request_id: The x_request_id of this DetectFaceByBase64IntlResponse.
         :type x_request_id: str

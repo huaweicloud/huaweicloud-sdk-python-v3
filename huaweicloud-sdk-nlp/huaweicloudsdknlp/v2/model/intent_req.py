@@ -27,7 +27,7 @@ class IntentReq:
     }
 
     def __init__(self, lang=None, text=None):
-        """IntentReq
+        r"""IntentReq
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class IntentReq:
 
     @property
     def lang(self):
-        """Gets the lang of this IntentReq.
+        r"""Gets the lang of this IntentReq.
 
         支持的文本语言类型，目前只支持中文，默认为zh。
 
@@ -60,7 +60,7 @@ class IntentReq:
 
     @lang.setter
     def lang(self, lang):
-        """Sets the lang of this IntentReq.
+        r"""Sets the lang of this IntentReq.
 
         支持的文本语言类型，目前只支持中文，默认为zh。
 
@@ -71,7 +71,7 @@ class IntentReq:
 
     @property
     def text(self):
-        """Gets the text of this IntentReq.
+        r"""Gets the text of this IntentReq.
 
         待分析文本列表，UTF-8编码，限定32个字符以内，文本长度超过32个字符时，只检测前32个字符。
 
@@ -82,7 +82,7 @@ class IntentReq:
 
     @text.setter
     def text(self, text):
-        """Sets the text of this IntentReq.
+        r"""Sets the text of this IntentReq.
 
         待分析文本列表，UTF-8编码，限定32个字符以内，文本长度超过32个字符时，只检测前32个字符。
 

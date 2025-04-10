@@ -27,7 +27,7 @@ class KeyAliasInfo:
     }
 
     def __init__(self, key_id=None, key_alias=None):
-        """KeyAliasInfo
+        r"""KeyAliasInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class KeyAliasInfo:
 
     @property
     def key_id(self):
-        """Gets the key_id of this KeyAliasInfo.
+        r"""Gets the key_id of this KeyAliasInfo.
 
         密钥ID。
 
@@ -61,7 +61,7 @@ class KeyAliasInfo:
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this KeyAliasInfo.
+        r"""Sets the key_id of this KeyAliasInfo.
 
         密钥ID。
 
@@ -72,7 +72,7 @@ class KeyAliasInfo:
 
     @property
     def key_alias(self):
-        """Gets the key_alias of this KeyAliasInfo.
+        r"""Gets the key_alias of this KeyAliasInfo.
 
         密钥别名。
 
@@ -83,7 +83,7 @@ class KeyAliasInfo:
 
     @key_alias.setter
     def key_alias(self, key_alias):
-        """Sets the key_alias of this KeyAliasInfo.
+        r"""Sets the key_alias of this KeyAliasInfo.
 
         密钥别名。
 

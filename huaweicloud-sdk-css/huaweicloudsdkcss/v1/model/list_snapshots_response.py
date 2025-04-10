@@ -26,7 +26,7 @@ class ListSnapshotsResponse(SdkResponse):
     }
 
     def __init__(self, backups=None):
-        """ListSnapshotsResponse
+        r"""ListSnapshotsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListSnapshotsResponse(SdkResponse):
 
     @property
     def backups(self):
-        """Gets the backups of this ListSnapshotsResponse.
+        r"""Gets the backups of this ListSnapshotsResponse.
 
         快照列表。
 
@@ -55,7 +55,7 @@ class ListSnapshotsResponse(SdkResponse):
 
     @backups.setter
     def backups(self, backups):
-        """Sets the backups of this ListSnapshotsResponse.
+        r"""Sets the backups of this ListSnapshotsResponse.
 
         快照列表。
 

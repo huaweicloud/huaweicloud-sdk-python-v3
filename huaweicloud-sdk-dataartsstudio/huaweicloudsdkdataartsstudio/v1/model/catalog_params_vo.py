@@ -25,7 +25,7 @@ class CatalogParamsVO:
     }
 
     def __init__(self, entity=None):
-        """CatalogParamsVO
+        r"""CatalogParamsVO
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CatalogParamsVO:
 
     @property
     def entity(self):
-        """Gets the entity of this CatalogParamsVO.
+        r"""Gets the entity of this CatalogParamsVO.
 
         :return: The entity of this CatalogParamsVO.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CatalogEntityVO`
@@ -51,7 +51,7 @@ class CatalogParamsVO:
 
     @entity.setter
     def entity(self, entity):
-        """Sets the entity of this CatalogParamsVO.
+        r"""Sets the entity of this CatalogParamsVO.
 
         :param entity: The entity of this CatalogParamsVO.
         :type entity: :class:`huaweicloudsdkdataartsstudio.v1.CatalogEntityVO`

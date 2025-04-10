@@ -54,7 +54,7 @@ class ShowEdgeGroupCertDetailResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, created_at=None, updated_at=None, group_id=None, is_deleted=None, project_id=None, type=None, serial_num=None, ca=None, certificate=None, private_key=None, package=None, cert_remaining_valid_time=None):
-        """ShowEdgeGroupCertDetailResponse
+        r"""ShowEdgeGroupCertDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -142,7 +142,7 @@ class ShowEdgeGroupCertDetailResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowEdgeGroupCertDetailResponse.
+        r"""Gets the id of this ShowEdgeGroupCertDetailResponse.
 
         证书ID
 
@@ -153,7 +153,7 @@ class ShowEdgeGroupCertDetailResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowEdgeGroupCertDetailResponse.
+        r"""Sets the id of this ShowEdgeGroupCertDetailResponse.
 
         证书ID
 
@@ -164,7 +164,7 @@ class ShowEdgeGroupCertDetailResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowEdgeGroupCertDetailResponse.
+        r"""Gets the name of this ShowEdgeGroupCertDetailResponse.
 
         证书名称
 
@@ -175,7 +175,7 @@ class ShowEdgeGroupCertDetailResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowEdgeGroupCertDetailResponse.
+        r"""Sets the name of this ShowEdgeGroupCertDetailResponse.
 
         证书名称
 
@@ -186,7 +186,7 @@ class ShowEdgeGroupCertDetailResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowEdgeGroupCertDetailResponse.
+        r"""Gets the description of this ShowEdgeGroupCertDetailResponse.
 
         证书描述
 
@@ -197,7 +197,7 @@ class ShowEdgeGroupCertDetailResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowEdgeGroupCertDetailResponse.
+        r"""Sets the description of this ShowEdgeGroupCertDetailResponse.
 
         证书描述
 
@@ -208,7 +208,7 @@ class ShowEdgeGroupCertDetailResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this ShowEdgeGroupCertDetailResponse.
+        r"""Gets the created_at of this ShowEdgeGroupCertDetailResponse.
 
         创建时间
 
@@ -219,7 +219,7 @@ class ShowEdgeGroupCertDetailResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this ShowEdgeGroupCertDetailResponse.
+        r"""Sets the created_at of this ShowEdgeGroupCertDetailResponse.
 
         创建时间
 
@@ -230,7 +230,7 @@ class ShowEdgeGroupCertDetailResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this ShowEdgeGroupCertDetailResponse.
+        r"""Gets the updated_at of this ShowEdgeGroupCertDetailResponse.
 
         更新时间
 
@@ -241,7 +241,7 @@ class ShowEdgeGroupCertDetailResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this ShowEdgeGroupCertDetailResponse.
+        r"""Sets the updated_at of this ShowEdgeGroupCertDetailResponse.
 
         更新时间
 
@@ -252,7 +252,7 @@ class ShowEdgeGroupCertDetailResponse(SdkResponse):
 
     @property
     def group_id(self):
-        """Gets the group_id of this ShowEdgeGroupCertDetailResponse.
+        r"""Gets the group_id of this ShowEdgeGroupCertDetailResponse.
 
         证书绑定的边缘节点组ID
 
@@ -263,7 +263,7 @@ class ShowEdgeGroupCertDetailResponse(SdkResponse):
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ShowEdgeGroupCertDetailResponse.
+        r"""Sets the group_id of this ShowEdgeGroupCertDetailResponse.
 
         证书绑定的边缘节点组ID
 
@@ -274,7 +274,7 @@ class ShowEdgeGroupCertDetailResponse(SdkResponse):
 
     @property
     def is_deleted(self):
-        """Gets the is_deleted of this ShowEdgeGroupCertDetailResponse.
+        r"""Gets the is_deleted of this ShowEdgeGroupCertDetailResponse.
 
         证书是否处于删除中
 
@@ -285,7 +285,7 @@ class ShowEdgeGroupCertDetailResponse(SdkResponse):
 
     @is_deleted.setter
     def is_deleted(self, is_deleted):
-        """Sets the is_deleted of this ShowEdgeGroupCertDetailResponse.
+        r"""Sets the is_deleted of this ShowEdgeGroupCertDetailResponse.
 
         证书是否处于删除中
 
@@ -296,7 +296,7 @@ class ShowEdgeGroupCertDetailResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowEdgeGroupCertDetailResponse.
+        r"""Gets the project_id of this ShowEdgeGroupCertDetailResponse.
 
         证书所属账号的项目ID
 
@@ -307,7 +307,7 @@ class ShowEdgeGroupCertDetailResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowEdgeGroupCertDetailResponse.
+        r"""Sets the project_id of this ShowEdgeGroupCertDetailResponse.
 
         证书所属账号的项目ID
 
@@ -318,7 +318,7 @@ class ShowEdgeGroupCertDetailResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ShowEdgeGroupCertDetailResponse.
+        r"""Gets the type of this ShowEdgeGroupCertDetailResponse.
 
         证书类型，包含： - system：创建节点时会默认创建一套系统证书 - application：应用证书 - device：设备证书
 
@@ -329,7 +329,7 @@ class ShowEdgeGroupCertDetailResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowEdgeGroupCertDetailResponse.
+        r"""Sets the type of this ShowEdgeGroupCertDetailResponse.
 
         证书类型，包含： - system：创建节点时会默认创建一套系统证书 - application：应用证书 - device：设备证书
 
@@ -340,7 +340,7 @@ class ShowEdgeGroupCertDetailResponse(SdkResponse):
 
     @property
     def serial_num(self):
-        """Gets the serial_num of this ShowEdgeGroupCertDetailResponse.
+        r"""Gets the serial_num of this ShowEdgeGroupCertDetailResponse.
 
         证书序列号
 
@@ -351,7 +351,7 @@ class ShowEdgeGroupCertDetailResponse(SdkResponse):
 
     @serial_num.setter
     def serial_num(self, serial_num):
-        """Sets the serial_num of this ShowEdgeGroupCertDetailResponse.
+        r"""Sets the serial_num of this ShowEdgeGroupCertDetailResponse.
 
         证书序列号
 
@@ -362,7 +362,7 @@ class ShowEdgeGroupCertDetailResponse(SdkResponse):
 
     @property
     def ca(self):
-        """Gets the ca of this ShowEdgeGroupCertDetailResponse.
+        r"""Gets the ca of this ShowEdgeGroupCertDetailResponse.
 
         根证书
 
@@ -373,7 +373,7 @@ class ShowEdgeGroupCertDetailResponse(SdkResponse):
 
     @ca.setter
     def ca(self, ca):
-        """Sets the ca of this ShowEdgeGroupCertDetailResponse.
+        r"""Sets the ca of this ShowEdgeGroupCertDetailResponse.
 
         根证书
 
@@ -384,7 +384,7 @@ class ShowEdgeGroupCertDetailResponse(SdkResponse):
 
     @property
     def certificate(self):
-        """Gets the certificate of this ShowEdgeGroupCertDetailResponse.
+        r"""Gets the certificate of this ShowEdgeGroupCertDetailResponse.
 
         证书
 
@@ -395,7 +395,7 @@ class ShowEdgeGroupCertDetailResponse(SdkResponse):
 
     @certificate.setter
     def certificate(self, certificate):
-        """Sets the certificate of this ShowEdgeGroupCertDetailResponse.
+        r"""Sets the certificate of this ShowEdgeGroupCertDetailResponse.
 
         证书
 
@@ -406,7 +406,7 @@ class ShowEdgeGroupCertDetailResponse(SdkResponse):
 
     @property
     def private_key(self):
-        """Gets the private_key of this ShowEdgeGroupCertDetailResponse.
+        r"""Gets the private_key of this ShowEdgeGroupCertDetailResponse.
 
         私钥
 
@@ -417,7 +417,7 @@ class ShowEdgeGroupCertDetailResponse(SdkResponse):
 
     @private_key.setter
     def private_key(self, private_key):
-        """Sets the private_key of this ShowEdgeGroupCertDetailResponse.
+        r"""Sets the private_key of this ShowEdgeGroupCertDetailResponse.
 
         私钥
 
@@ -428,7 +428,7 @@ class ShowEdgeGroupCertDetailResponse(SdkResponse):
 
     @property
     def package(self):
-        """Gets the package of this ShowEdgeGroupCertDetailResponse.
+        r"""Gets the package of this ShowEdgeGroupCertDetailResponse.
 
         将证书文件certificate/ca/private_key打成.tar.gz包后用base64编码的字符串。 使用时请使用base64解码成.tar.gz包。
 
@@ -439,7 +439,7 @@ class ShowEdgeGroupCertDetailResponse(SdkResponse):
 
     @package.setter
     def package(self, package):
-        """Sets the package of this ShowEdgeGroupCertDetailResponse.
+        r"""Sets the package of this ShowEdgeGroupCertDetailResponse.
 
         将证书文件certificate/ca/private_key打成.tar.gz包后用base64编码的字符串。 使用时请使用base64解码成.tar.gz包。
 
@@ -450,7 +450,7 @@ class ShowEdgeGroupCertDetailResponse(SdkResponse):
 
     @property
     def cert_remaining_valid_time(self):
-        """Gets the cert_remaining_valid_time of this ShowEdgeGroupCertDetailResponse.
+        r"""Gets the cert_remaining_valid_time of this ShowEdgeGroupCertDetailResponse.
 
         证书有效期持续时间
 
@@ -461,7 +461,7 @@ class ShowEdgeGroupCertDetailResponse(SdkResponse):
 
     @cert_remaining_valid_time.setter
     def cert_remaining_valid_time(self, cert_remaining_valid_time):
-        """Sets the cert_remaining_valid_time of this ShowEdgeGroupCertDetailResponse.
+        r"""Sets the cert_remaining_valid_time of this ShowEdgeGroupCertDetailResponse.
 
         证书有效期持续时间
 

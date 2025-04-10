@@ -30,7 +30,7 @@ class AssociateRouteTableResponse(SdkResponse):
     }
 
     def __init__(self, association=None, request_id=None, x_client_token=None):
-        """AssociateRouteTableResponse
+        r"""AssociateRouteTableResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class AssociateRouteTableResponse(SdkResponse):
 
     @property
     def association(self):
-        """Gets the association of this AssociateRouteTableResponse.
+        r"""Gets the association of this AssociateRouteTableResponse.
 
         :return: The association of this AssociateRouteTableResponse.
         :rtype: :class:`huaweicloudsdker.v3.Association`
@@ -67,7 +67,7 @@ class AssociateRouteTableResponse(SdkResponse):
 
     @association.setter
     def association(self, association):
-        """Sets the association of this AssociateRouteTableResponse.
+        r"""Sets the association of this AssociateRouteTableResponse.
 
         :param association: The association of this AssociateRouteTableResponse.
         :type association: :class:`huaweicloudsdker.v3.Association`
@@ -76,7 +76,7 @@ class AssociateRouteTableResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this AssociateRouteTableResponse.
+        r"""Gets the request_id of this AssociateRouteTableResponse.
 
         请求ID
 
@@ -87,7 +87,7 @@ class AssociateRouteTableResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this AssociateRouteTableResponse.
+        r"""Sets the request_id of this AssociateRouteTableResponse.
 
         请求ID
 
@@ -98,7 +98,7 @@ class AssociateRouteTableResponse(SdkResponse):
 
     @property
     def x_client_token(self):
-        """Gets the x_client_token of this AssociateRouteTableResponse.
+        r"""Gets the x_client_token of this AssociateRouteTableResponse.
 
         :return: The x_client_token of this AssociateRouteTableResponse.
         :rtype: str
@@ -107,7 +107,7 @@ class AssociateRouteTableResponse(SdkResponse):
 
     @x_client_token.setter
     def x_client_token(self, x_client_token):
-        """Sets the x_client_token of this AssociateRouteTableResponse.
+        r"""Sets the x_client_token of this AssociateRouteTableResponse.
 
         :param x_client_token: The x_client_token of this AssociateRouteTableResponse.
         :type x_client_token: str

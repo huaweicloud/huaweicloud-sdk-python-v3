@@ -29,7 +29,7 @@ class CheckTableConfigRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, body=None):
-        """CheckTableConfigRequest
+        r"""CheckTableConfigRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CheckTableConfigRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this CheckTableConfigRequest.
+        r"""Gets the x_language of this CheckTableConfigRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -66,7 +66,7 @@ class CheckTableConfigRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this CheckTableConfigRequest.
+        r"""Sets the x_language of this CheckTableConfigRequest.
 
         请求语言类型。默认en-us。 取值范围： - en-us - zh-cn
 
@@ -77,7 +77,7 @@ class CheckTableConfigRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CheckTableConfigRequest.
+        r"""Gets the instance_id of this CheckTableConfigRequest.
 
         StarRocks实例ID，严格匹配UUID规则。
 
@@ -88,7 +88,7 @@ class CheckTableConfigRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CheckTableConfigRequest.
+        r"""Sets the instance_id of this CheckTableConfigRequest.
 
         StarRocks实例ID，严格匹配UUID规则。
 
@@ -99,7 +99,7 @@ class CheckTableConfigRequest:
 
     @property
     def body(self):
-        """Gets the body of this CheckTableConfigRequest.
+        r"""Gets the body of this CheckTableConfigRequest.
 
         :return: The body of this CheckTableConfigRequest.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.TableConfigCheckRequestV3`
@@ -108,7 +108,7 @@ class CheckTableConfigRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CheckTableConfigRequest.
+        r"""Sets the body of this CheckTableConfigRequest.
 
         :param body: The body of this CheckTableConfigRequest.
         :type body: :class:`huaweicloudsdkgaussdb.v3.TableConfigCheckRequestV3`

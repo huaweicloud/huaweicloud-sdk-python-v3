@@ -31,7 +31,7 @@ class ProductInfos:
     }
 
     def __init__(self, product_id=None, cloud_service_type=None, resource_type=None, resource_spec_code=None):
-        """ProductInfos
+        r"""ProductInfos
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ProductInfos:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ProductInfos.
+        r"""Gets the product_id of this ProductInfos.
 
         产品标识，通过订购询价接口获得。
 
@@ -71,7 +71,7 @@ class ProductInfos:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ProductInfos.
+        r"""Sets the product_id of this ProductInfos.
 
         产品标识，通过订购询价接口获得。
 
@@ -82,7 +82,7 @@ class ProductInfos:
 
     @property
     def cloud_service_type(self):
-        """Gets the cloud_service_type of this ProductInfos.
+        r"""Gets the cloud_service_type of this ProductInfos.
 
         云服务类型，填写“hws.service.type.cbh”。
 
@@ -93,7 +93,7 @@ class ProductInfos:
 
     @cloud_service_type.setter
     def cloud_service_type(self, cloud_service_type):
-        """Sets the cloud_service_type of this ProductInfos.
+        r"""Sets the cloud_service_type of this ProductInfos.
 
         云服务类型，填写“hws.service.type.cbh”。
 
@@ -104,7 +104,7 @@ class ProductInfos:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ProductInfos.
+        r"""Gets the resource_type of this ProductInfos.
 
         云堡垒机资源类型，填写“hws.resource.type.cbh.ins”。
 
@@ -115,7 +115,7 @@ class ProductInfos:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ProductInfos.
+        r"""Sets the resource_type of this ProductInfos.
 
         云堡垒机资源类型，填写“hws.resource.type.cbh.ins”。
 
@@ -126,7 +126,7 @@ class ProductInfos:
 
     @property
     def resource_spec_code(self):
-        """Gets the resource_spec_code of this ProductInfos.
+        r"""Gets the resource_spec_code of this ProductInfos.
 
         待创建云堡垒机规格ID，例如： - cbh.basic.50 - cbh.enhance.50 已上线的规格请参见《云堡垒机产品介绍》的[服务版本差异](https://support.huaweicloud.com/productdesc-cbh/cbh_01_0010.html)章节。
 
@@ -137,7 +137,7 @@ class ProductInfos:
 
     @resource_spec_code.setter
     def resource_spec_code(self, resource_spec_code):
-        """Sets the resource_spec_code of this ProductInfos.
+        r"""Sets the resource_spec_code of this ProductInfos.
 
         待创建云堡垒机规格ID，例如： - cbh.basic.50 - cbh.enhance.50 已上线的规格请参见《云堡垒机产品介绍》的[服务版本差异](https://support.huaweicloud.com/productdesc-cbh/cbh_01_0010.html)章节。
 

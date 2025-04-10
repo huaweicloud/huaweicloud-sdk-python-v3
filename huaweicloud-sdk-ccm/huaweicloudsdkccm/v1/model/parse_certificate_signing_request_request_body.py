@@ -25,7 +25,7 @@ class ParseCertificateSigningRequestRequestBody:
     }
 
     def __init__(self, csr=None):
-        """ParseCertificateSigningRequestRequestBody
+        r"""ParseCertificateSigningRequestRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ParseCertificateSigningRequestRequestBody:
 
     @property
     def csr(self):
-        """Gets the csr of this ParseCertificateSigningRequestRequestBody.
+        r"""Gets the csr of this ParseCertificateSigningRequestRequestBody.
 
         证书签名请求。请使用“\\r\\n”或“\\n”替代证书签名请求中的换行符，若通过console端请求此接口，则无需做符号转换。
 
@@ -53,7 +53,7 @@ class ParseCertificateSigningRequestRequestBody:
 
     @csr.setter
     def csr(self, csr):
-        """Sets the csr of this ParseCertificateSigningRequestRequestBody.
+        r"""Sets the csr of this ParseCertificateSigningRequestRequestBody.
 
         证书签名请求。请使用“\\r\\n”或“\\n”替代证书签名请求中的换行符，若通过console端请求此接口，则无需做符号转换。
 

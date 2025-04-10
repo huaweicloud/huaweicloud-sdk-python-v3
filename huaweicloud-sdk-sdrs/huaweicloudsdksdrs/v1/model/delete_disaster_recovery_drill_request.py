@@ -25,7 +25,7 @@ class DeleteDisasterRecoveryDrillRequest:
     }
 
     def __init__(self, disaster_recovery_drill_id=None):
-        """DeleteDisasterRecoveryDrillRequest
+        r"""DeleteDisasterRecoveryDrillRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteDisasterRecoveryDrillRequest:
 
     @property
     def disaster_recovery_drill_id(self):
-        """Gets the disaster_recovery_drill_id of this DeleteDisasterRecoveryDrillRequest.
+        r"""Gets the disaster_recovery_drill_id of this DeleteDisasterRecoveryDrillRequest.
 
         容灾演练的ID。
 
@@ -53,7 +53,7 @@ class DeleteDisasterRecoveryDrillRequest:
 
     @disaster_recovery_drill_id.setter
     def disaster_recovery_drill_id(self, disaster_recovery_drill_id):
-        """Sets the disaster_recovery_drill_id of this DeleteDisasterRecoveryDrillRequest.
+        r"""Sets the disaster_recovery_drill_id of this DeleteDisasterRecoveryDrillRequest.
 
         容灾演练的ID。
 

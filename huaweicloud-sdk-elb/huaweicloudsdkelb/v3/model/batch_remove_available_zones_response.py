@@ -28,7 +28,7 @@ class BatchRemoveAvailableZonesResponse(SdkResponse):
     }
 
     def __init__(self, loadbalancer=None, request_id=None):
-        """BatchRemoveAvailableZonesResponse
+        r"""BatchRemoveAvailableZonesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchRemoveAvailableZonesResponse(SdkResponse):
 
     @property
     def loadbalancer(self):
-        """Gets the loadbalancer of this BatchRemoveAvailableZonesResponse.
+        r"""Gets the loadbalancer of this BatchRemoveAvailableZonesResponse.
 
         :return: The loadbalancer of this BatchRemoveAvailableZonesResponse.
         :rtype: :class:`huaweicloudsdkelb.v3.LoadBalancer`
@@ -60,7 +60,7 @@ class BatchRemoveAvailableZonesResponse(SdkResponse):
 
     @loadbalancer.setter
     def loadbalancer(self, loadbalancer):
-        """Sets the loadbalancer of this BatchRemoveAvailableZonesResponse.
+        r"""Sets the loadbalancer of this BatchRemoveAvailableZonesResponse.
 
         :param loadbalancer: The loadbalancer of this BatchRemoveAvailableZonesResponse.
         :type loadbalancer: :class:`huaweicloudsdkelb.v3.LoadBalancer`
@@ -69,7 +69,7 @@ class BatchRemoveAvailableZonesResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this BatchRemoveAvailableZonesResponse.
+        r"""Gets the request_id of this BatchRemoveAvailableZonesResponse.
 
         请求ID。  注：自动生成 。
 
@@ -80,7 +80,7 @@ class BatchRemoveAvailableZonesResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this BatchRemoveAvailableZonesResponse.
+        r"""Sets the request_id of this BatchRemoveAvailableZonesResponse.
 
         请求ID。  注：自动生成 。
 

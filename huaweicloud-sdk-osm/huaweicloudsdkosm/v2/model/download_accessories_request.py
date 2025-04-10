@@ -33,7 +33,7 @@ class DownloadAccessoriesRequest:
     }
 
     def __init__(self, accessory_id=None, group_id=None, x_site=None, x_language=None, x_time_zone=None):
-        """DownloadAccessoriesRequest
+        r"""DownloadAccessoriesRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class DownloadAccessoriesRequest:
 
     @property
     def accessory_id(self):
-        """Gets the accessory_id of this DownloadAccessoriesRequest.
+        r"""Gets the accessory_id of this DownloadAccessoriesRequest.
 
         附件id列表，下载支持多个，逗号隔开
 
@@ -81,7 +81,7 @@ class DownloadAccessoriesRequest:
 
     @accessory_id.setter
     def accessory_id(self, accessory_id):
-        """Sets the accessory_id of this DownloadAccessoriesRequest.
+        r"""Sets the accessory_id of this DownloadAccessoriesRequest.
 
         附件id列表，下载支持多个，逗号隔开
 
@@ -92,7 +92,7 @@ class DownloadAccessoriesRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this DownloadAccessoriesRequest.
+        r"""Gets the group_id of this DownloadAccessoriesRequest.
 
         华为云IAM组id，同组其他工单时，该id必传
 
@@ -103,7 +103,7 @@ class DownloadAccessoriesRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this DownloadAccessoriesRequest.
+        r"""Sets the group_id of this DownloadAccessoriesRequest.
 
         华为云IAM组id，同组其他工单时，该id必传
 
@@ -114,7 +114,7 @@ class DownloadAccessoriesRequest:
 
     @property
     def x_site(self):
-        """Gets the x_site of this DownloadAccessoriesRequest.
+        r"""Gets the x_site of this DownloadAccessoriesRequest.
 
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
@@ -125,7 +125,7 @@ class DownloadAccessoriesRequest:
 
     @x_site.setter
     def x_site(self, x_site):
-        """Sets the x_site of this DownloadAccessoriesRequest.
+        r"""Sets the x_site of this DownloadAccessoriesRequest.
 
         对接站点信息。  0（中国站） 1（国际站），不填的话默认为0。
 
@@ -136,7 +136,7 @@ class DownloadAccessoriesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this DownloadAccessoriesRequest.
+        r"""Gets the x_language of this DownloadAccessoriesRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -147,7 +147,7 @@ class DownloadAccessoriesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this DownloadAccessoriesRequest.
+        r"""Sets the x_language of this DownloadAccessoriesRequest.
 
         语言环境，值为通用的语言描述字符串，比如zh-cn等，默认为zh-cn。  会根据语言环境对应展示一些国际化的信息，比如工单类型名称等。
 
@@ -158,7 +158,7 @@ class DownloadAccessoriesRequest:
 
     @property
     def x_time_zone(self):
-        """Gets the x_time_zone of this DownloadAccessoriesRequest.
+        r"""Gets the x_time_zone of this DownloadAccessoriesRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 
@@ -169,7 +169,7 @@ class DownloadAccessoriesRequest:
 
     @x_time_zone.setter
     def x_time_zone(self, x_time_zone):
-        """Sets the x_time_zone of this DownloadAccessoriesRequest.
+        r"""Sets the x_time_zone of this DownloadAccessoriesRequest.
 
         环境时区，值为通用的时区描述字符串，比如GMT+8等，默认为GMT+8。  涉及时间的数据会根据环境时区处理。
 

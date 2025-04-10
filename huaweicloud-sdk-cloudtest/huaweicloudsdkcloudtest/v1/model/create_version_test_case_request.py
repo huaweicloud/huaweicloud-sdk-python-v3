@@ -27,7 +27,7 @@ class CreateVersionTestCaseRequest:
     }
 
     def __init__(self, version_id=None, body=None):
-        """CreateVersionTestCaseRequest
+        r"""CreateVersionTestCaseRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateVersionTestCaseRequest:
 
     @property
     def version_id(self):
-        """Gets the version_id of this CreateVersionTestCaseRequest.
+        r"""Gets the version_id of this CreateVersionTestCaseRequest.
 
         分支或者迭代uri
 
@@ -60,7 +60,7 @@ class CreateVersionTestCaseRequest:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this CreateVersionTestCaseRequest.
+        r"""Sets the version_id of this CreateVersionTestCaseRequest.
 
         分支或者迭代uri
 
@@ -71,7 +71,7 @@ class CreateVersionTestCaseRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateVersionTestCaseRequest.
+        r"""Gets the body of this CreateVersionTestCaseRequest.
 
         :return: The body of this CreateVersionTestCaseRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.TestCaseInfo`
@@ -80,7 +80,7 @@ class CreateVersionTestCaseRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateVersionTestCaseRequest.
+        r"""Sets the body of this CreateVersionTestCaseRequest.
 
         :param body: The body of this CreateVersionTestCaseRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.TestCaseInfo`

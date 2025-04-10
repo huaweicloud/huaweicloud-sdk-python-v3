@@ -27,7 +27,7 @@ class ShowConfigTemplateRequest:
     }
 
     def __init__(self, template_id=None, type=None):
-        """ShowConfigTemplateRequest
+        r"""ShowConfigTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowConfigTemplateRequest:
 
     @property
     def template_id(self):
-        """Gets the template_id of this ShowConfigTemplateRequest.
+        r"""Gets the template_id of this ShowConfigTemplateRequest.
 
         模板ID
 
@@ -59,7 +59,7 @@ class ShowConfigTemplateRequest:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this ShowConfigTemplateRequest.
+        r"""Sets the template_id of this ShowConfigTemplateRequest.
 
         模板ID
 
@@ -70,7 +70,7 @@ class ShowConfigTemplateRequest:
 
     @property
     def type(self):
-        """Gets the type of this ShowConfigTemplateRequest.
+        r"""Gets the type of this ShowConfigTemplateRequest.
 
         模板类型
 
@@ -81,7 +81,7 @@ class ShowConfigTemplateRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowConfigTemplateRequest.
+        r"""Sets the type of this ShowConfigTemplateRequest.
 
         模板类型
 

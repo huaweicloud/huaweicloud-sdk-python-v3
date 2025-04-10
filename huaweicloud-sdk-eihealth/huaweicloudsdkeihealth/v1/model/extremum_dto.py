@@ -31,7 +31,7 @@ class ExtremumDto:
     }
 
     def __init__(self, value=None, row_number=None, column_name=None, row_name=None):
-        """ExtremumDto
+        r"""ExtremumDto
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ExtremumDto:
 
     @property
     def value(self):
-        """Gets the value of this ExtremumDto.
+        r"""Gets the value of this ExtremumDto.
 
         最值
 
@@ -75,7 +75,7 @@ class ExtremumDto:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ExtremumDto.
+        r"""Sets the value of this ExtremumDto.
 
         最值
 
@@ -86,7 +86,7 @@ class ExtremumDto:
 
     @property
     def row_number(self):
-        """Gets the row_number of this ExtremumDto.
+        r"""Gets the row_number of this ExtremumDto.
 
         最值所在的行数
 
@@ -97,7 +97,7 @@ class ExtremumDto:
 
     @row_number.setter
     def row_number(self, row_number):
-        """Sets the row_number of this ExtremumDto.
+        r"""Sets the row_number of this ExtremumDto.
 
         最值所在的行数
 
@@ -108,7 +108,7 @@ class ExtremumDto:
 
     @property
     def column_name(self):
-        """Gets the column_name of this ExtremumDto.
+        r"""Gets the column_name of this ExtremumDto.
 
         最值所在的列名
 
@@ -119,7 +119,7 @@ class ExtremumDto:
 
     @column_name.setter
     def column_name(self, column_name):
-        """Sets the column_name of this ExtremumDto.
+        r"""Sets the column_name of this ExtremumDto.
 
         最值所在的列名
 
@@ -130,7 +130,7 @@ class ExtremumDto:
 
     @property
     def row_name(self):
-        """Gets the row_name of this ExtremumDto.
+        r"""Gets the row_name of this ExtremumDto.
 
         最值所在的行名
 
@@ -141,7 +141,7 @@ class ExtremumDto:
 
     @row_name.setter
     def row_name(self, row_name):
-        """Sets the row_name of this ExtremumDto.
+        r"""Sets the row_name of this ExtremumDto.
 
         最值所在的行名
 

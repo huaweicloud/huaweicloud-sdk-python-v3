@@ -42,7 +42,7 @@ class ShowAssetVersionResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, title=None, category=None, labels=None, vendor_id=None, version=None, create_time=None, update_time=None):
-        """ShowAssetVersionResponse
+        r"""ShowAssetVersionResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class ShowAssetVersionResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowAssetVersionResponse.
+        r"""Gets the id of this ShowAssetVersionResponse.
 
         资产id
 
@@ -111,7 +111,7 @@ class ShowAssetVersionResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowAssetVersionResponse.
+        r"""Sets the id of this ShowAssetVersionResponse.
 
         资产id
 
@@ -122,7 +122,7 @@ class ShowAssetVersionResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowAssetVersionResponse.
+        r"""Gets the name of this ShowAssetVersionResponse.
 
         资产名
 
@@ -133,7 +133,7 @@ class ShowAssetVersionResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowAssetVersionResponse.
+        r"""Sets the name of this ShowAssetVersionResponse.
 
         资产名
 
@@ -144,7 +144,7 @@ class ShowAssetVersionResponse(SdkResponse):
 
     @property
     def title(self):
-        """Gets the title of this ShowAssetVersionResponse.
+        r"""Gets the title of this ShowAssetVersionResponse.
 
         资产展示名
 
@@ -155,7 +155,7 @@ class ShowAssetVersionResponse(SdkResponse):
 
     @title.setter
     def title(self, title):
-        """Sets the title of this ShowAssetVersionResponse.
+        r"""Sets the title of this ShowAssetVersionResponse.
 
         资产展示名
 
@@ -166,7 +166,7 @@ class ShowAssetVersionResponse(SdkResponse):
 
     @property
     def category(self):
-        """Gets the category of this ShowAssetVersionResponse.
+        r"""Gets the category of this ShowAssetVersionResponse.
 
         类别
 
@@ -177,7 +177,7 @@ class ShowAssetVersionResponse(SdkResponse):
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ShowAssetVersionResponse.
+        r"""Sets the category of this ShowAssetVersionResponse.
 
         类别
 
@@ -188,7 +188,7 @@ class ShowAssetVersionResponse(SdkResponse):
 
     @property
     def labels(self):
-        """Gets the labels of this ShowAssetVersionResponse.
+        r"""Gets the labels of this ShowAssetVersionResponse.
 
         资产标签列表
 
@@ -199,7 +199,7 @@ class ShowAssetVersionResponse(SdkResponse):
 
     @labels.setter
     def labels(self, labels):
-        """Sets the labels of this ShowAssetVersionResponse.
+        r"""Sets the labels of this ShowAssetVersionResponse.
 
         资产标签列表
 
@@ -210,7 +210,7 @@ class ShowAssetVersionResponse(SdkResponse):
 
     @property
     def vendor_id(self):
-        """Gets the vendor_id of this ShowAssetVersionResponse.
+        r"""Gets the vendor_id of this ShowAssetVersionResponse.
 
         供应商id
 
@@ -221,7 +221,7 @@ class ShowAssetVersionResponse(SdkResponse):
 
     @vendor_id.setter
     def vendor_id(self, vendor_id):
-        """Sets the vendor_id of this ShowAssetVersionResponse.
+        r"""Sets the vendor_id of this ShowAssetVersionResponse.
 
         供应商id
 
@@ -232,7 +232,7 @@ class ShowAssetVersionResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this ShowAssetVersionResponse.
+        r"""Gets the version of this ShowAssetVersionResponse.
 
         :return: The version of this ShowAssetVersionResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.VersionRsp`
@@ -241,7 +241,7 @@ class ShowAssetVersionResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowAssetVersionResponse.
+        r"""Sets the version of this ShowAssetVersionResponse.
 
         :param version: The version of this ShowAssetVersionResponse.
         :type version: :class:`huaweicloudsdkeihealth.v1.VersionRsp`
@@ -250,7 +250,7 @@ class ShowAssetVersionResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowAssetVersionResponse.
+        r"""Gets the create_time of this ShowAssetVersionResponse.
 
         创建时间
 
@@ -261,7 +261,7 @@ class ShowAssetVersionResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowAssetVersionResponse.
+        r"""Sets the create_time of this ShowAssetVersionResponse.
 
         创建时间
 
@@ -272,7 +272,7 @@ class ShowAssetVersionResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowAssetVersionResponse.
+        r"""Gets the update_time of this ShowAssetVersionResponse.
 
         更新时间
 
@@ -283,7 +283,7 @@ class ShowAssetVersionResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowAssetVersionResponse.
+        r"""Sets the update_time of this ShowAssetVersionResponse.
 
         更新时间
 

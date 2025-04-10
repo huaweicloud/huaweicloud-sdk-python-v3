@@ -37,7 +37,7 @@ class Routetable:
     }
 
     def __init__(self, id=None, name=None, subnets=None, vpc_id=None, domain_id=None, description=None, default=None):
-        """Routetable
+        r"""Routetable
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class Routetable:
 
     @property
     def id(self):
-        """Gets the id of this Routetable.
+        r"""Gets the id of this Routetable.
 
         路由表ID  取值范围：标准UUID
 
@@ -96,7 +96,7 @@ class Routetable:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Routetable.
+        r"""Sets the id of this Routetable.
 
         路由表ID  取值范围：标准UUID
 
@@ -107,7 +107,7 @@ class Routetable:
 
     @property
     def name(self):
-        """Gets the name of this Routetable.
+        r"""Gets the name of this Routetable.
 
         路由表名称  取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -118,7 +118,7 @@ class Routetable:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Routetable.
+        r"""Sets the name of this Routetable.
 
         路由表名称  取值范围：1-64个字符，支持数字、字母、中文、_(下划线)、-（中划线）、.（点）
 
@@ -129,7 +129,7 @@ class Routetable:
 
     @property
     def subnets(self):
-        """Gets the subnets of this Routetable.
+        r"""Gets the subnets of this Routetable.
 
         路由表所关联的子网  约束：只能关联路由表所属VPC下的子网
 
@@ -140,7 +140,7 @@ class Routetable:
 
     @subnets.setter
     def subnets(self, subnets):
-        """Sets the subnets of this Routetable.
+        r"""Sets the subnets of this Routetable.
 
         路由表所关联的子网  约束：只能关联路由表所属VPC下的子网
 
@@ -151,7 +151,7 @@ class Routetable:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this Routetable.
+        r"""Gets the vpc_id of this Routetable.
 
         路由表所在的虚拟私有云ID
 
@@ -162,7 +162,7 @@ class Routetable:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this Routetable.
+        r"""Sets the vpc_id of this Routetable.
 
         路由表所在的虚拟私有云ID
 
@@ -173,7 +173,7 @@ class Routetable:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this Routetable.
+        r"""Gets the domain_id of this Routetable.
 
         帐号ID
 
@@ -184,7 +184,7 @@ class Routetable:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this Routetable.
+        r"""Sets the domain_id of this Routetable.
 
         帐号ID
 
@@ -195,7 +195,7 @@ class Routetable:
 
     @property
     def description(self):
-        """Gets the description of this Routetable.
+        r"""Gets the description of this Routetable.
 
         路由表描述信息  取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -206,7 +206,7 @@ class Routetable:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Routetable.
+        r"""Sets the description of this Routetable.
 
         路由表描述信息  取值范围：0-255个字符，不能包含“<”和“>”
 
@@ -217,7 +217,7 @@ class Routetable:
 
     @property
     def default(self):
-        """Gets the default of this Routetable.
+        r"""Gets the default of this Routetable.
 
         是否为默认路由表  取值范围：true表示默认路由表；false表示自定义路由表
 
@@ -228,7 +228,7 @@ class Routetable:
 
     @default.setter
     def default(self, default):
-        """Sets the default of this Routetable.
+        r"""Sets the default of this Routetable.
 
         是否为默认路由表  取值范围：true表示默认路由表；false表示自定义路由表
 

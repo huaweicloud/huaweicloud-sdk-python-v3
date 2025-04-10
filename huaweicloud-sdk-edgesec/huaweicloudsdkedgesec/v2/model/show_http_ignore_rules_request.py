@@ -33,7 +33,7 @@ class ShowHttpIgnoreRulesRequest:
     }
 
     def __init__(self, policy_id=None, status=None, page=None, pagesize=None, rule=None):
-        """ShowHttpIgnoreRulesRequest
+        r"""ShowHttpIgnoreRulesRequest
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class ShowHttpIgnoreRulesRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this ShowHttpIgnoreRulesRequest.
+        r"""Gets the policy_id of this ShowHttpIgnoreRulesRequest.
 
         策略id
 
@@ -81,7 +81,7 @@ class ShowHttpIgnoreRulesRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this ShowHttpIgnoreRulesRequest.
+        r"""Sets the policy_id of this ShowHttpIgnoreRulesRequest.
 
         策略id
 
@@ -92,7 +92,7 @@ class ShowHttpIgnoreRulesRequest:
 
     @property
     def status(self):
-        """Gets the status of this ShowHttpIgnoreRulesRequest.
+        r"""Gets the status of this ShowHttpIgnoreRulesRequest.
 
         规则开关状态
 
@@ -103,7 +103,7 @@ class ShowHttpIgnoreRulesRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowHttpIgnoreRulesRequest.
+        r"""Sets the status of this ShowHttpIgnoreRulesRequest.
 
         规则开关状态
 
@@ -114,7 +114,7 @@ class ShowHttpIgnoreRulesRequest:
 
     @property
     def page(self):
-        """Gets the page of this ShowHttpIgnoreRulesRequest.
+        r"""Gets the page of this ShowHttpIgnoreRulesRequest.
 
         分页查询参数，第page页
 
@@ -125,7 +125,7 @@ class ShowHttpIgnoreRulesRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ShowHttpIgnoreRulesRequest.
+        r"""Sets the page of this ShowHttpIgnoreRulesRequest.
 
         分页查询参数，第page页
 
@@ -136,7 +136,7 @@ class ShowHttpIgnoreRulesRequest:
 
     @property
     def pagesize(self):
-        """Gets the pagesize of this ShowHttpIgnoreRulesRequest.
+        r"""Gets the pagesize of this ShowHttpIgnoreRulesRequest.
 
         分页查询参数，每页显示pagesize条记录
 
@@ -147,7 +147,7 @@ class ShowHttpIgnoreRulesRequest:
 
     @pagesize.setter
     def pagesize(self, pagesize):
-        """Sets the pagesize of this ShowHttpIgnoreRulesRequest.
+        r"""Sets the pagesize of this ShowHttpIgnoreRulesRequest.
 
         分页查询参数，每页显示pagesize条记录
 
@@ -158,7 +158,7 @@ class ShowHttpIgnoreRulesRequest:
 
     @property
     def rule(self):
-        """Gets the rule of this ShowHttpIgnoreRulesRequest.
+        r"""Gets the rule of this ShowHttpIgnoreRulesRequest.
 
         不检测模块类型
 
@@ -169,7 +169,7 @@ class ShowHttpIgnoreRulesRequest:
 
     @rule.setter
     def rule(self, rule):
-        """Sets the rule of this ShowHttpIgnoreRulesRequest.
+        r"""Sets the rule of this ShowHttpIgnoreRulesRequest.
 
         不检测模块类型
 

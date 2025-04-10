@@ -25,7 +25,7 @@ class AddComponentsReq:
     }
 
     def __init__(self, components_install_mode=None):
-        """AddComponentsReq
+        r"""AddComponentsReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AddComponentsReq:
 
     @property
     def components_install_mode(self):
-        """Gets the components_install_mode of this AddComponentsReq.
+        r"""Gets the components_install_mode of this AddComponentsReq.
 
         组件模型详情
 
@@ -53,7 +53,7 @@ class AddComponentsReq:
 
     @components_install_mode.setter
     def components_install_mode(self, components_install_mode):
-        """Sets the components_install_mode of this AddComponentsReq.
+        r"""Sets the components_install_mode of this AddComponentsReq.
 
         组件模型详情
 

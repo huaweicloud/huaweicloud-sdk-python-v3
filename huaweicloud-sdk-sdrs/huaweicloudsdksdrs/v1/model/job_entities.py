@@ -37,7 +37,7 @@ class JobEntities:
     }
 
     def __init__(self, replication_pair_id=None, volume_ids=None, server_group_id=None, protected_instance_id=None, native_server_id=None, nic_id=None, sub_jobs=None):
-        """JobEntities
+        r"""JobEntities
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class JobEntities:
 
     @property
     def replication_pair_id(self):
-        """Gets the replication_pair_id of this JobEntities.
+        r"""Gets the replication_pair_id of this JobEntities.
 
         复制对ID
 
@@ -96,7 +96,7 @@ class JobEntities:
 
     @replication_pair_id.setter
     def replication_pair_id(self, replication_pair_id):
-        """Sets the replication_pair_id of this JobEntities.
+        r"""Sets the replication_pair_id of this JobEntities.
 
         复制对ID
 
@@ -107,7 +107,7 @@ class JobEntities:
 
     @property
     def volume_ids(self):
-        """Gets the volume_ids of this JobEntities.
+        r"""Gets the volume_ids of this JobEntities.
 
         组成复制对的云硬盘ID
 
@@ -118,7 +118,7 @@ class JobEntities:
 
     @volume_ids.setter
     def volume_ids(self, volume_ids):
-        """Sets the volume_ids of this JobEntities.
+        r"""Sets the volume_ids of this JobEntities.
 
         组成复制对的云硬盘ID
 
@@ -129,7 +129,7 @@ class JobEntities:
 
     @property
     def server_group_id(self):
-        """Gets the server_group_id of this JobEntities.
+        r"""Gets the server_group_id of this JobEntities.
 
         保护组ID
 
@@ -140,7 +140,7 @@ class JobEntities:
 
     @server_group_id.setter
     def server_group_id(self, server_group_id):
-        """Sets the server_group_id of this JobEntities.
+        r"""Sets the server_group_id of this JobEntities.
 
         保护组ID
 
@@ -151,7 +151,7 @@ class JobEntities:
 
     @property
     def protected_instance_id(self):
-        """Gets the protected_instance_id of this JobEntities.
+        r"""Gets the protected_instance_id of this JobEntities.
 
         保护实例ID
 
@@ -162,7 +162,7 @@ class JobEntities:
 
     @protected_instance_id.setter
     def protected_instance_id(self, protected_instance_id):
-        """Sets the protected_instance_id of this JobEntities.
+        r"""Sets the protected_instance_id of this JobEntities.
 
         保护实例ID
 
@@ -173,7 +173,7 @@ class JobEntities:
 
     @property
     def native_server_id(self):
-        """Gets the native_server_id of this JobEntities.
+        r"""Gets the native_server_id of this JobEntities.
 
         容灾站点服务器ID
 
@@ -184,7 +184,7 @@ class JobEntities:
 
     @native_server_id.setter
     def native_server_id(self, native_server_id):
-        """Sets the native_server_id of this JobEntities.
+        r"""Sets the native_server_id of this JobEntities.
 
         容灾站点服务器ID
 
@@ -195,7 +195,7 @@ class JobEntities:
 
     @property
     def nic_id(self):
-        """Gets the nic_id of this JobEntities.
+        r"""Gets the nic_id of this JobEntities.
 
         网卡ID
 
@@ -206,7 +206,7 @@ class JobEntities:
 
     @nic_id.setter
     def nic_id(self, nic_id):
-        """Sets the nic_id of this JobEntities.
+        r"""Sets the nic_id of this JobEntities.
 
         网卡ID
 
@@ -217,7 +217,7 @@ class JobEntities:
 
     @property
     def sub_jobs(self):
-        """Gets the sub_jobs of this JobEntities.
+        r"""Gets the sub_jobs of this JobEntities.
 
         子Job信息
 
@@ -228,7 +228,7 @@ class JobEntities:
 
     @sub_jobs.setter
     def sub_jobs(self, sub_jobs):
-        """Sets the sub_jobs of this JobEntities.
+        r"""Sets the sub_jobs of this JobEntities.
 
         子Job信息
 

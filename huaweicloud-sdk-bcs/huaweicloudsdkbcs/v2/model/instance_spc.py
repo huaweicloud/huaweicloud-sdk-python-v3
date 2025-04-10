@@ -29,7 +29,7 @@ class InstanceSpc:
     }
 
     def __init__(self, org_peer_max_num=None, orderer_max_num=None, member_max_num=None):
-        """InstanceSpc
+        r"""InstanceSpc
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class InstanceSpc:
 
     @property
     def org_peer_max_num(self):
-        """Gets the org_peer_max_num of this InstanceSpc.
+        r"""Gets the org_peer_max_num of this InstanceSpc.
 
         单个组织支持的最大peer节点数量
 
@@ -68,7 +68,7 @@ class InstanceSpc:
 
     @org_peer_max_num.setter
     def org_peer_max_num(self, org_peer_max_num):
-        """Sets the org_peer_max_num of this InstanceSpc.
+        r"""Sets the org_peer_max_num of this InstanceSpc.
 
         单个组织支持的最大peer节点数量
 
@@ -79,7 +79,7 @@ class InstanceSpc:
 
     @property
     def orderer_max_num(self):
-        """Gets the orderer_max_num of this InstanceSpc.
+        r"""Gets the orderer_max_num of this InstanceSpc.
 
         单个联盟链支持的最大order节点数量
 
@@ -90,7 +90,7 @@ class InstanceSpc:
 
     @orderer_max_num.setter
     def orderer_max_num(self, orderer_max_num):
-        """Sets the orderer_max_num of this InstanceSpc.
+        r"""Sets the orderer_max_num of this InstanceSpc.
 
         单个联盟链支持的最大order节点数量
 
@@ -101,7 +101,7 @@ class InstanceSpc:
 
     @property
     def member_max_num(self):
-        """Gets the member_max_num of this InstanceSpc.
+        r"""Gets the member_max_num of this InstanceSpc.
 
         单个联盟链支持的最大租户数量
 
@@ -112,7 +112,7 @@ class InstanceSpc:
 
     @member_max_num.setter
     def member_max_num(self, member_max_num):
-        """Sets the member_max_num of this InstanceSpc.
+        r"""Sets the member_max_num of this InstanceSpc.
 
         单个联盟链支持的最大租户数量
 

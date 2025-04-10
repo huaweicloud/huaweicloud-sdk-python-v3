@@ -37,7 +37,7 @@ class ActionSmnForwarding:
     }
 
     def __init__(self, region_name=None, project_id=None, theme_name=None, topic_urn=None, message_content=None, message_template_name=None, message_title=None):
-        """ActionSmnForwarding
+        r"""ActionSmnForwarding
 
         The model defined in huaweicloud sdk
 
@@ -80,7 +80,7 @@ class ActionSmnForwarding:
 
     @property
     def region_name(self):
-        """Gets the region_name of this ActionSmnForwarding.
+        r"""Gets the region_name of this ActionSmnForwarding.
 
         **参数说明**：SMN服务对应的region区域。
 
@@ -91,7 +91,7 @@ class ActionSmnForwarding:
 
     @region_name.setter
     def region_name(self, region_name):
-        """Sets the region_name of this ActionSmnForwarding.
+        r"""Sets the region_name of this ActionSmnForwarding.
 
         **参数说明**：SMN服务对应的region区域。
 
@@ -102,7 +102,7 @@ class ActionSmnForwarding:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ActionSmnForwarding.
+        r"""Gets the project_id of this ActionSmnForwarding.
 
         **参数说明**：SMN服务对应的projectId信息。
 
@@ -113,7 +113,7 @@ class ActionSmnForwarding:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ActionSmnForwarding.
+        r"""Sets the project_id of this ActionSmnForwarding.
 
         **参数说明**：SMN服务对应的projectId信息。
 
@@ -124,7 +124,7 @@ class ActionSmnForwarding:
 
     @property
     def theme_name(self):
-        """Gets the theme_name of this ActionSmnForwarding.
+        r"""Gets the theme_name of this ActionSmnForwarding.
 
         **参数说明**：SMN服务对应的主题名称。
 
@@ -135,7 +135,7 @@ class ActionSmnForwarding:
 
     @theme_name.setter
     def theme_name(self, theme_name):
-        """Sets the theme_name of this ActionSmnForwarding.
+        r"""Sets the theme_name of this ActionSmnForwarding.
 
         **参数说明**：SMN服务对应的主题名称。
 
@@ -146,7 +146,7 @@ class ActionSmnForwarding:
 
     @property
     def topic_urn(self):
-        """Gets the topic_urn of this ActionSmnForwarding.
+        r"""Gets the topic_urn of this ActionSmnForwarding.
 
         **参数说明**：SMN服务对应的topic的主题URN。
 
@@ -157,7 +157,7 @@ class ActionSmnForwarding:
 
     @topic_urn.setter
     def topic_urn(self, topic_urn):
-        """Sets the topic_urn of this ActionSmnForwarding.
+        r"""Sets the topic_urn of this ActionSmnForwarding.
 
         **参数说明**：SMN服务对应的topic的主题URN。
 
@@ -168,7 +168,7 @@ class ActionSmnForwarding:
 
     @property
     def message_content(self):
-        """Gets the message_content of this ActionSmnForwarding.
+        r"""Gets the message_content of this ActionSmnForwarding.
 
         **参数说明**：短信或邮件的内容。
 
@@ -179,7 +179,7 @@ class ActionSmnForwarding:
 
     @message_content.setter
     def message_content(self, message_content):
-        """Sets the message_content of this ActionSmnForwarding.
+        r"""Sets the message_content of this ActionSmnForwarding.
 
         **参数说明**：短信或邮件的内容。
 
@@ -190,7 +190,7 @@ class ActionSmnForwarding:
 
     @property
     def message_template_name(self):
-        """Gets the message_template_name of this ActionSmnForwarding.
+        r"""Gets the message_template_name of this ActionSmnForwarding.
 
         **参数说明**：SMN服务对应的模板名称。
 
@@ -201,7 +201,7 @@ class ActionSmnForwarding:
 
     @message_template_name.setter
     def message_template_name(self, message_template_name):
-        """Sets the message_template_name of this ActionSmnForwarding.
+        r"""Sets the message_template_name of this ActionSmnForwarding.
 
         **参数说明**：SMN服务对应的模板名称。
 
@@ -212,7 +212,7 @@ class ActionSmnForwarding:
 
     @property
     def message_title(self):
-        """Gets the message_title of this ActionSmnForwarding.
+        r"""Gets the message_title of this ActionSmnForwarding.
 
         **参数说明**：短信或邮件的主题。最大长度支持UTF-8编码后的521个字节。
 
@@ -223,7 +223,7 @@ class ActionSmnForwarding:
 
     @message_title.setter
     def message_title(self, message_title):
-        """Sets the message_title of this ActionSmnForwarding.
+        r"""Sets the message_title of this ActionSmnForwarding.
 
         **参数说明**：短信或邮件的主题。最大长度支持UTF-8编码后的521个字节。
 

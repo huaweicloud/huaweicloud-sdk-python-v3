@@ -30,7 +30,7 @@ class ListAutopilotAddonTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, kind=None, api_version=None, items=None):
-        """ListAutopilotAddonTemplatesResponse
+        r"""ListAutopilotAddonTemplatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListAutopilotAddonTemplatesResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this ListAutopilotAddonTemplatesResponse.
+        r"""Gets the kind of this ListAutopilotAddonTemplatesResponse.
 
         API类型，固定值“Addon”，该值不可修改。
 
@@ -69,7 +69,7 @@ class ListAutopilotAddonTemplatesResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ListAutopilotAddonTemplatesResponse.
+        r"""Sets the kind of this ListAutopilotAddonTemplatesResponse.
 
         API类型，固定值“Addon”，该值不可修改。
 
@@ -80,7 +80,7 @@ class ListAutopilotAddonTemplatesResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this ListAutopilotAddonTemplatesResponse.
+        r"""Gets the api_version of this ListAutopilotAddonTemplatesResponse.
 
         API版本，固定值“v3”，该值不可修改。
 
@@ -91,7 +91,7 @@ class ListAutopilotAddonTemplatesResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this ListAutopilotAddonTemplatesResponse.
+        r"""Sets the api_version of this ListAutopilotAddonTemplatesResponse.
 
         API版本，固定值“v3”，该值不可修改。
 
@@ -102,7 +102,7 @@ class ListAutopilotAddonTemplatesResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListAutopilotAddonTemplatesResponse.
+        r"""Gets the items of this ListAutopilotAddonTemplatesResponse.
 
         插件模板列表
 
@@ -113,7 +113,7 @@ class ListAutopilotAddonTemplatesResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListAutopilotAddonTemplatesResponse.
+        r"""Sets the items of this ListAutopilotAddonTemplatesResponse.
 
         插件模板列表
 

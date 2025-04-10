@@ -33,7 +33,7 @@ class ShowContentRequest:
     }
 
     def __init__(self, x_repo_auth=None, namespace=None, project=None, path=None, ref=None):
-        """ShowContentRequest
+        r"""ShowContentRequest
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class ShowContentRequest:
 
     @property
     def x_repo_auth(self):
-        """Gets the x_repo_auth of this ShowContentRequest.
+        r"""Gets the x_repo_auth of this ShowContentRequest.
 
         授权名称。
 
@@ -77,7 +77,7 @@ class ShowContentRequest:
 
     @x_repo_auth.setter
     def x_repo_auth(self, x_repo_auth):
-        """Sets the x_repo_auth of this ShowContentRequest.
+        r"""Sets the x_repo_auth of this ShowContentRequest.
 
         授权名称。
 
@@ -88,7 +88,7 @@ class ShowContentRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this ShowContentRequest.
+        r"""Gets the namespace of this ShowContentRequest.
 
         命名空间ID或者URL编码名称。
 
@@ -99,7 +99,7 @@ class ShowContentRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this ShowContentRequest.
+        r"""Sets the namespace of this ShowContentRequest.
 
         命名空间ID或者URL编码名称。
 
@@ -110,7 +110,7 @@ class ShowContentRequest:
 
     @property
     def project(self):
-        """Gets the project of this ShowContentRequest.
+        r"""Gets the project of this ShowContentRequest.
 
         仓库项目ID，如果含有“/”，需要将“/”替换为“:”。
 
@@ -121,7 +121,7 @@ class ShowContentRequest:
 
     @project.setter
     def project(self, project):
-        """Sets the project of this ShowContentRequest.
+        r"""Sets the project of this ShowContentRequest.
 
         仓库项目ID，如果含有“/”，需要将“/”替换为“:”。
 
@@ -132,7 +132,7 @@ class ShowContentRequest:
 
     @property
     def path(self):
-        """Gets the path of this ShowContentRequest.
+        r"""Gets the path of this ShowContentRequest.
 
         文件路径，需要将“/”替换为“:”。
 
@@ -143,7 +143,7 @@ class ShowContentRequest:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this ShowContentRequest.
+        r"""Sets the path of this ShowContentRequest.
 
         文件路径，需要将“/”替换为“:”。
 
@@ -154,7 +154,7 @@ class ShowContentRequest:
 
     @property
     def ref(self):
-        """Gets the ref of this ShowContentRequest.
+        r"""Gets the ref of this ShowContentRequest.
 
         分支名称或者tag标签名称或者commit sha。
 
@@ -165,7 +165,7 @@ class ShowContentRequest:
 
     @ref.setter
     def ref(self, ref):
-        """Sets the ref of this ShowContentRequest.
+        r"""Sets the ref of this ShowContentRequest.
 
         分支名称或者tag标签名称或者commit sha。
 

@@ -26,7 +26,7 @@ class ListConfigurationsDiffResponse(SdkResponse):
     }
 
     def __init__(self, differences=None):
-        """ListConfigurationsDiffResponse
+        r"""ListConfigurationsDiffResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListConfigurationsDiffResponse(SdkResponse):
 
     @property
     def differences(self):
-        """Gets the differences of this ListConfigurationsDiffResponse.
+        r"""Gets the differences of this ListConfigurationsDiffResponse.
 
         参数组之间的差异集合。
 
@@ -55,7 +55,7 @@ class ListConfigurationsDiffResponse(SdkResponse):
 
     @differences.setter
     def differences(self, differences):
-        """Sets the differences of this ListConfigurationsDiffResponse.
+        r"""Sets the differences of this ListConfigurationsDiffResponse.
 
         参数组之间的差异集合。
 

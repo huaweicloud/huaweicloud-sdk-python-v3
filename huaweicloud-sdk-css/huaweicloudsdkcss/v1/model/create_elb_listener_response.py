@@ -26,7 +26,7 @@ class CreateElbListenerResponse(SdkResponse):
     }
 
     def __init__(self, elb_id=None):
-        """CreateElbListenerResponse
+        r"""CreateElbListenerResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateElbListenerResponse(SdkResponse):
 
     @property
     def elb_id(self):
-        """Gets the elb_id of this CreateElbListenerResponse.
+        r"""Gets the elb_id of this CreateElbListenerResponse.
 
         负载均衡器id。
 
@@ -55,7 +55,7 @@ class CreateElbListenerResponse(SdkResponse):
 
     @elb_id.setter
     def elb_id(self, elb_id):
-        """Sets the elb_id of this CreateElbListenerResponse.
+        r"""Sets the elb_id of this CreateElbListenerResponse.
 
         负载均衡器id。
 

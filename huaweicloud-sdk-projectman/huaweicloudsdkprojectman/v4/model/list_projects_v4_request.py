@@ -37,7 +37,7 @@ class ListProjectsV4Request:
     }
 
     def __init__(self, offset=None, limit=None, search=None, project_type=None, sort=None, archive=None, query_type=None):
-        """ListProjectsV4Request
+        r"""ListProjectsV4Request
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class ListProjectsV4Request:
 
     @property
     def offset(self):
-        """Gets the offset of this ListProjectsV4Request.
+        r"""Gets the offset of this ListProjectsV4Request.
 
         偏移量 从0开始
 
@@ -94,7 +94,7 @@ class ListProjectsV4Request:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListProjectsV4Request.
+        r"""Sets the offset of this ListProjectsV4Request.
 
         偏移量 从0开始
 
@@ -105,7 +105,7 @@ class ListProjectsV4Request:
 
     @property
     def limit(self):
-        """Gets the limit of this ListProjectsV4Request.
+        r"""Gets the limit of this ListProjectsV4Request.
 
         条数 最小1条,最大1000
 
@@ -116,7 +116,7 @@ class ListProjectsV4Request:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListProjectsV4Request.
+        r"""Sets the limit of this ListProjectsV4Request.
 
         条数 最小1条,最大1000
 
@@ -127,7 +127,7 @@ class ListProjectsV4Request:
 
     @property
     def search(self):
-        """Gets the search of this ListProjectsV4Request.
+        r"""Gets the search of this ListProjectsV4Request.
 
         模糊查询项目名称或描述,不支持通配符等高级查询
 
@@ -138,7 +138,7 @@ class ListProjectsV4Request:
 
     @search.setter
     def search(self, search):
-        """Sets the search of this ListProjectsV4Request.
+        r"""Sets the search of this ListProjectsV4Request.
 
         模糊查询项目名称或描述,不支持通配符等高级查询
 
@@ -149,7 +149,7 @@ class ListProjectsV4Request:
 
     @property
     def project_type(self):
-        """Gets the project_type of this ListProjectsV4Request.
+        r"""Gets the project_type of this ListProjectsV4Request.
 
         项目类型 scrum|xboard
 
@@ -160,7 +160,7 @@ class ListProjectsV4Request:
 
     @project_type.setter
     def project_type(self, project_type):
-        """Sets the project_type of this ListProjectsV4Request.
+        r"""Sets the project_type of this ListProjectsV4Request.
 
         项目类型 scrum|xboard
 
@@ -171,7 +171,7 @@ class ListProjectsV4Request:
 
     @property
     def sort(self):
-        """Gets the sort of this ListProjectsV4Request.
+        r"""Gets the sort of this ListProjectsV4Request.
 
         排序条件 默认创建时间降序(name|created_on)(asc|desc)
 
@@ -182,7 +182,7 @@ class ListProjectsV4Request:
 
     @sort.setter
     def sort(self, sort):
-        """Sets the sort of this ListProjectsV4Request.
+        r"""Sets the sort of this ListProjectsV4Request.
 
         排序条件 默认创建时间降序(name|created_on)(asc|desc)
 
@@ -193,7 +193,7 @@ class ListProjectsV4Request:
 
     @property
     def archive(self):
-        """Gets the archive of this ListProjectsV4Request.
+        r"""Gets the archive of this ListProjectsV4Request.
 
         是否归档 true已归档|false未归档
 
@@ -204,7 +204,7 @@ class ListProjectsV4Request:
 
     @archive.setter
     def archive(self, archive):
-        """Sets the archive of this ListProjectsV4Request.
+        r"""Sets the archive of this ListProjectsV4Request.
 
         是否归档 true已归档|false未归档
 
@@ -215,7 +215,7 @@ class ListProjectsV4Request:
 
     @property
     def query_type(self):
-        """Gets the query_type of this ListProjectsV4Request.
+        r"""Gets the query_type of this ListProjectsV4Request.
 
         默认返回当前用户参与的项目列表,domain_projects租户下的所有项目列表,absent返回当前用户未参与的租户项目列表
 
@@ -226,7 +226,7 @@ class ListProjectsV4Request:
 
     @query_type.setter
     def query_type(self, query_type):
-        """Sets the query_type of this ListProjectsV4Request.
+        r"""Sets the query_type of this ListProjectsV4Request.
 
         默认返回当前用户参与的项目列表,domain_projects租户下的所有项目列表,absent返回当前用户未参与的租户项目列表
 

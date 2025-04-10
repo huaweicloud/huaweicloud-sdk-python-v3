@@ -27,7 +27,7 @@ class ChangeCloudPhoneServerRequestBodyServerShareDataVolume:
     }
 
     def __init__(self, volume_type=None, size=None):
-        """ChangeCloudPhoneServerRequestBodyServerShareDataVolume
+        r"""ChangeCloudPhoneServerRequestBodyServerShareDataVolume
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ChangeCloudPhoneServerRequestBodyServerShareDataVolume:
 
     @property
     def volume_type(self):
-        """Gets the volume_type of this ChangeCloudPhoneServerRequestBodyServerShareDataVolume.
+        r"""Gets the volume_type of this ChangeCloudPhoneServerRequestBodyServerShareDataVolume.
 
         磁盘类型，只支持如下类型：   - SSD   - GPSSD
 
@@ -59,7 +59,7 @@ class ChangeCloudPhoneServerRequestBodyServerShareDataVolume:
 
     @volume_type.setter
     def volume_type(self, volume_type):
-        """Sets the volume_type of this ChangeCloudPhoneServerRequestBodyServerShareDataVolume.
+        r"""Sets the volume_type of this ChangeCloudPhoneServerRequestBodyServerShareDataVolume.
 
         磁盘类型，只支持如下类型：   - SSD   - GPSSD
 
@@ -70,7 +70,7 @@ class ChangeCloudPhoneServerRequestBodyServerShareDataVolume:
 
     @property
     def size(self):
-        """Gets the size of this ChangeCloudPhoneServerRequestBodyServerShareDataVolume.
+        r"""Gets the size of this ChangeCloudPhoneServerRequestBodyServerShareDataVolume.
 
         共享磁盘大小，单位GiB，取值范围[10，32768]。
 
@@ -81,7 +81,7 @@ class ChangeCloudPhoneServerRequestBodyServerShareDataVolume:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ChangeCloudPhoneServerRequestBodyServerShareDataVolume.
+        r"""Sets the size of this ChangeCloudPhoneServerRequestBodyServerShareDataVolume.
 
         共享磁盘大小，单位GiB，取值范围[10，32768]。
 

@@ -33,7 +33,7 @@ class CreateReplicationRequestParams:
     }
 
     def __init__(self, server_group_id=None, volume_id=None, name=None, description=None, cluster_id=None):
-        """CreateReplicationRequestParams
+        r"""CreateReplicationRequestParams
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class CreateReplicationRequestParams:
 
     @property
     def server_group_id(self):
-        """Gets the server_group_id of this CreateReplicationRequestParams.
+        r"""Gets the server_group_id of this CreateReplicationRequestParams.
 
         保护组的ID。
 
@@ -79,7 +79,7 @@ class CreateReplicationRequestParams:
 
     @server_group_id.setter
     def server_group_id(self, server_group_id):
-        """Sets the server_group_id of this CreateReplicationRequestParams.
+        r"""Sets the server_group_id of this CreateReplicationRequestParams.
 
         保护组的ID。
 
@@ -90,7 +90,7 @@ class CreateReplicationRequestParams:
 
     @property
     def volume_id(self):
-        """Gets the volume_id of this CreateReplicationRequestParams.
+        r"""Gets the volume_id of this CreateReplicationRequestParams.
 
         生产站点卷的ID。
 
@@ -101,7 +101,7 @@ class CreateReplicationRequestParams:
 
     @volume_id.setter
     def volume_id(self, volume_id):
-        """Sets the volume_id of this CreateReplicationRequestParams.
+        r"""Sets the volume_id of this CreateReplicationRequestParams.
 
         生产站点卷的ID。
 
@@ -112,7 +112,7 @@ class CreateReplicationRequestParams:
 
     @property
     def name(self):
-        """Gets the name of this CreateReplicationRequestParams.
+        r"""Gets the name of this CreateReplicationRequestParams.
 
         指定复制对的名称，最大支持长度为64个字节。只包含中文字符、英文字母（a～ｚ、Ａ～Ｚ）、数字（０~９）、小数点（．）、下划线（_）、中划线（-）。
 
@@ -123,7 +123,7 @@ class CreateReplicationRequestParams:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateReplicationRequestParams.
+        r"""Sets the name of this CreateReplicationRequestParams.
 
         指定复制对的名称，最大支持长度为64个字节。只包含中文字符、英文字母（a～ｚ、Ａ～Ｚ）、数字（０~９）、小数点（．）、下划线（_）、中划线（-）。
 
@@ -134,7 +134,7 @@ class CreateReplicationRequestParams:
 
     @property
     def description(self):
-        """Gets the description of this CreateReplicationRequestParams.
+        r"""Gets the description of this CreateReplicationRequestParams.
 
         指定复制对的描述，最大支持长度为64个字节，不能包含左尖括号（<）或右尖括号（>）。
 
@@ -145,7 +145,7 @@ class CreateReplicationRequestParams:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateReplicationRequestParams.
+        r"""Sets the description of this CreateReplicationRequestParams.
 
         指定复制对的描述，最大支持长度为64个字节，不能包含左尖括号（<）或右尖括号（>）。
 
@@ -156,7 +156,7 @@ class CreateReplicationRequestParams:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CreateReplicationRequestParams.
+        r"""Gets the cluster_id of this CreateReplicationRequestParams.
 
         专属分布式存储池ID。
 
@@ -167,7 +167,7 @@ class CreateReplicationRequestParams:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CreateReplicationRequestParams.
+        r"""Sets the cluster_id of this CreateReplicationRequestParams.
 
         专属分布式存储池ID。
 

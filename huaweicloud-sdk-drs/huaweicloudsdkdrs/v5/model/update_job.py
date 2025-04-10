@@ -49,7 +49,7 @@ class UpdateJob:
     }
 
     def __init__(self, job_id=None, base_info=None, source_endpoint=None, target_endpoint=None, alarm_notify=None, speed_limit=None, user_migration=None, policy_config=None, db_object=None, db_param=None, tuning_params=None, period_order=None, node_info=None):
-        """UpdateJob
+        r"""UpdateJob
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class UpdateJob:
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateJob.
+        r"""Gets the job_id of this UpdateJob.
 
         待更新的任务ID。
 
@@ -138,7 +138,7 @@ class UpdateJob:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateJob.
+        r"""Sets the job_id of this UpdateJob.
 
         待更新的任务ID。
 
@@ -149,7 +149,7 @@ class UpdateJob:
 
     @property
     def base_info(self):
-        """Gets the base_info of this UpdateJob.
+        r"""Gets the base_info of this UpdateJob.
 
         :return: The base_info of this UpdateJob.
         :rtype: :class:`huaweicloudsdkdrs.v5.JobBaseInfo`
@@ -158,7 +158,7 @@ class UpdateJob:
 
     @base_info.setter
     def base_info(self, base_info):
-        """Sets the base_info of this UpdateJob.
+        r"""Sets the base_info of this UpdateJob.
 
         :param base_info: The base_info of this UpdateJob.
         :type base_info: :class:`huaweicloudsdkdrs.v5.JobBaseInfo`
@@ -167,7 +167,7 @@ class UpdateJob:
 
     @property
     def source_endpoint(self):
-        """Gets the source_endpoint of this UpdateJob.
+        r"""Gets the source_endpoint of this UpdateJob.
 
         任务源数据库信息体。
 
@@ -178,7 +178,7 @@ class UpdateJob:
 
     @source_endpoint.setter
     def source_endpoint(self, source_endpoint):
-        """Sets the source_endpoint of this UpdateJob.
+        r"""Sets the source_endpoint of this UpdateJob.
 
         任务源数据库信息体。
 
@@ -189,7 +189,7 @@ class UpdateJob:
 
     @property
     def target_endpoint(self):
-        """Gets the target_endpoint of this UpdateJob.
+        r"""Gets the target_endpoint of this UpdateJob.
 
         任务目标数据库信息体。
 
@@ -200,7 +200,7 @@ class UpdateJob:
 
     @target_endpoint.setter
     def target_endpoint(self, target_endpoint):
-        """Sets the target_endpoint of this UpdateJob.
+        r"""Sets the target_endpoint of this UpdateJob.
 
         任务目标数据库信息体。
 
@@ -211,7 +211,7 @@ class UpdateJob:
 
     @property
     def alarm_notify(self):
-        """Gets the alarm_notify of this UpdateJob.
+        r"""Gets the alarm_notify of this UpdateJob.
 
         :return: The alarm_notify of this UpdateJob.
         :rtype: :class:`huaweicloudsdkdrs.v5.AlarmNotifyConfig`
@@ -220,7 +220,7 @@ class UpdateJob:
 
     @alarm_notify.setter
     def alarm_notify(self, alarm_notify):
-        """Sets the alarm_notify of this UpdateJob.
+        r"""Sets the alarm_notify of this UpdateJob.
 
         :param alarm_notify: The alarm_notify of this UpdateJob.
         :type alarm_notify: :class:`huaweicloudsdkdrs.v5.AlarmNotifyConfig`
@@ -229,7 +229,7 @@ class UpdateJob:
 
     @property
     def speed_limit(self):
-        """Gets the speed_limit of this UpdateJob.
+        r"""Gets the speed_limit of this UpdateJob.
 
         限速信息体。 - 限速：自定义的最大迁移速度，迁移过程中的迁移速度将不会超过该速度。 - 不限速：对迁移速度不进行限制，通常会最大化使用源数据库的出口带宽。该流速模式同时会对源数据库造成读消耗，消耗取决于源数据库的出口带宽。比如：源数据库的出口带宽为100MB/s，假设高速模式使用了80%带宽，则迁移对源数据库将造成80MB/s的读操作IO消耗。
 
@@ -240,7 +240,7 @@ class UpdateJob:
 
     @speed_limit.setter
     def speed_limit(self, speed_limit):
-        """Sets the speed_limit of this UpdateJob.
+        r"""Sets the speed_limit of this UpdateJob.
 
         限速信息体。 - 限速：自定义的最大迁移速度，迁移过程中的迁移速度将不会超过该速度。 - 不限速：对迁移速度不进行限制，通常会最大化使用源数据库的出口带宽。该流速模式同时会对源数据库造成读消耗，消耗取决于源数据库的出口带宽。比如：源数据库的出口带宽为100MB/s，假设高速模式使用了80%带宽，则迁移对源数据库将造成80MB/s的读操作IO消耗。
 
@@ -251,7 +251,7 @@ class UpdateJob:
 
     @property
     def user_migration(self):
-        """Gets the user_migration of this UpdateJob.
+        r"""Gets the user_migration of this UpdateJob.
 
         :return: The user_migration of this UpdateJob.
         :rtype: :class:`huaweicloudsdkdrs.v5.UserMigrationInfo`
@@ -260,7 +260,7 @@ class UpdateJob:
 
     @user_migration.setter
     def user_migration(self, user_migration):
-        """Sets the user_migration of this UpdateJob.
+        r"""Sets the user_migration of this UpdateJob.
 
         :param user_migration: The user_migration of this UpdateJob.
         :type user_migration: :class:`huaweicloudsdkdrs.v5.UserMigrationInfo`
@@ -269,7 +269,7 @@ class UpdateJob:
 
     @property
     def policy_config(self):
-        """Gets the policy_config of this UpdateJob.
+        r"""Gets the policy_config of this UpdateJob.
 
         :return: The policy_config of this UpdateJob.
         :rtype: :class:`huaweicloudsdkdrs.v5.PolicyConfig`
@@ -278,7 +278,7 @@ class UpdateJob:
 
     @policy_config.setter
     def policy_config(self, policy_config):
-        """Sets the policy_config of this UpdateJob.
+        r"""Sets the policy_config of this UpdateJob.
 
         :param policy_config: The policy_config of this UpdateJob.
         :type policy_config: :class:`huaweicloudsdkdrs.v5.PolicyConfig`
@@ -287,7 +287,7 @@ class UpdateJob:
 
     @property
     def db_object(self):
-        """Gets the db_object of this UpdateJob.
+        r"""Gets the db_object of this UpdateJob.
 
         :return: The db_object of this UpdateJob.
         :rtype: :class:`huaweicloudsdkdrs.v5.DbObject`
@@ -296,7 +296,7 @@ class UpdateJob:
 
     @db_object.setter
     def db_object(self, db_object):
-        """Sets the db_object of this UpdateJob.
+        r"""Sets the db_object of this UpdateJob.
 
         :param db_object: The db_object of this UpdateJob.
         :type db_object: :class:`huaweicloudsdkdrs.v5.DbObject`
@@ -305,7 +305,7 @@ class UpdateJob:
 
     @property
     def db_param(self):
-        """Gets the db_param of this UpdateJob.
+        r"""Gets the db_param of this UpdateJob.
 
         :return: The db_param of this UpdateJob.
         :rtype: :class:`huaweicloudsdkdrs.v5.DbParamInfo`
@@ -314,7 +314,7 @@ class UpdateJob:
 
     @db_param.setter
     def db_param(self, db_param):
-        """Sets the db_param of this UpdateJob.
+        r"""Sets the db_param of this UpdateJob.
 
         :param db_param: The db_param of this UpdateJob.
         :type db_param: :class:`huaweicloudsdkdrs.v5.DbParamInfo`
@@ -323,7 +323,7 @@ class UpdateJob:
 
     @property
     def tuning_params(self):
-        """Gets the tuning_params of this UpdateJob.
+        r"""Gets the tuning_params of this UpdateJob.
 
         :return: The tuning_params of this UpdateJob.
         :rtype: :class:`huaweicloudsdkdrs.v5.ModifyTuningParams`
@@ -332,7 +332,7 @@ class UpdateJob:
 
     @tuning_params.setter
     def tuning_params(self, tuning_params):
-        """Sets the tuning_params of this UpdateJob.
+        r"""Sets the tuning_params of this UpdateJob.
 
         :param tuning_params: The tuning_params of this UpdateJob.
         :type tuning_params: :class:`huaweicloudsdkdrs.v5.ModifyTuningParams`
@@ -341,7 +341,7 @@ class UpdateJob:
 
     @property
     def period_order(self):
-        """Gets the period_order of this UpdateJob.
+        r"""Gets the period_order of this UpdateJob.
 
         :return: The period_order of this UpdateJob.
         :rtype: :class:`huaweicloudsdkdrs.v5.PeriodOrderInfo`
@@ -350,7 +350,7 @@ class UpdateJob:
 
     @period_order.setter
     def period_order(self, period_order):
-        """Sets the period_order of this UpdateJob.
+        r"""Sets the period_order of this UpdateJob.
 
         :param period_order: The period_order of this UpdateJob.
         :type period_order: :class:`huaweicloudsdkdrs.v5.PeriodOrderInfo`
@@ -359,7 +359,7 @@ class UpdateJob:
 
     @property
     def node_info(self):
-        """Gets the node_info of this UpdateJob.
+        r"""Gets the node_info of this UpdateJob.
 
         :return: The node_info of this UpdateJob.
         :rtype: :class:`huaweicloudsdkdrs.v5.JobNodeInfo`
@@ -368,7 +368,7 @@ class UpdateJob:
 
     @node_info.setter
     def node_info(self, node_info):
-        """Sets the node_info of this UpdateJob.
+        r"""Sets the node_info of this UpdateJob.
 
         :param node_info: The node_info of this UpdateJob.
         :type node_info: :class:`huaweicloudsdkdrs.v5.JobNodeInfo`

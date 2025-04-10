@@ -41,7 +41,7 @@ class LoginToken:
     }
 
     def __init__(self, domain_id=None, expires_at=None, method=None, user_id=None, user_name=None, session_id=None, session_user_id=None, session_name=None, assumed_by=None):
-        """LoginToken
+        r"""LoginToken
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class LoginToken:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this LoginToken.
+        r"""Gets the domain_id of this LoginToken.
 
         账号ID。
 
@@ -104,7 +104,7 @@ class LoginToken:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this LoginToken.
+        r"""Sets the domain_id of this LoginToken.
 
         账号ID。
 
@@ -115,7 +115,7 @@ class LoginToken:
 
     @property
     def expires_at(self):
-        """Gets the expires_at of this LoginToken.
+        r"""Gets the expires_at of this LoginToken.
 
         logintoken的过期时间，默认10min。
 
@@ -126,7 +126,7 @@ class LoginToken:
 
     @expires_at.setter
     def expires_at(self, expires_at):
-        """Sets the expires_at of this LoginToken.
+        r"""Sets the expires_at of this LoginToken.
 
         logintoken的过期时间，默认10min。
 
@@ -137,7 +137,7 @@ class LoginToken:
 
     @property
     def method(self):
-        """Gets the method of this LoginToken.
+        r"""Gets the method of this LoginToken.
 
         认证方法。当认证用户为华为云用户时，该字段内容为“token”，当认证用户为自定义代理用户时，该字段内容为“federation_proxy”。
 
@@ -148,7 +148,7 @@ class LoginToken:
 
     @method.setter
     def method(self, method):
-        """Sets the method of this LoginToken.
+        r"""Sets the method of this LoginToken.
 
         认证方法。当认证用户为华为云用户时，该字段内容为“token”，当认证用户为自定义代理用户时，该字段内容为“federation_proxy”。
 
@@ -159,7 +159,7 @@ class LoginToken:
 
     @property
     def user_id(self):
-        """Gets the user_id of this LoginToken.
+        r"""Gets the user_id of this LoginToken.
 
         用户ID。
 
@@ -170,7 +170,7 @@ class LoginToken:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this LoginToken.
+        r"""Sets the user_id of this LoginToken.
 
         用户ID。
 
@@ -181,7 +181,7 @@ class LoginToken:
 
     @property
     def user_name(self):
-        """Gets the user_name of this LoginToken.
+        r"""Gets the user_name of this LoginToken.
 
         用户名。
 
@@ -192,7 +192,7 @@ class LoginToken:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this LoginToken.
+        r"""Sets the user_name of this LoginToken.
 
         用户名。
 
@@ -203,7 +203,7 @@ class LoginToken:
 
     @property
     def session_id(self):
-        """Gets the session_id of this LoginToken.
+        r"""Gets the session_id of this LoginToken.
 
         会话ID。
 
@@ -214,7 +214,7 @@ class LoginToken:
 
     @session_id.setter
     def session_id(self, session_id):
-        """Sets the session_id of this LoginToken.
+        r"""Sets the session_id of this LoginToken.
 
         会话ID。
 
@@ -225,7 +225,7 @@ class LoginToken:
 
     @property
     def session_user_id(self):
-        """Gets the session_user_id of this LoginToken.
+        r"""Gets the session_user_id of this LoginToken.
 
         自定义代理用户ID。
 
@@ -236,7 +236,7 @@ class LoginToken:
 
     @session_user_id.setter
     def session_user_id(self, session_user_id):
-        """Sets the session_user_id of this LoginToken.
+        r"""Sets the session_user_id of this LoginToken.
 
         自定义代理用户ID。
 
@@ -247,7 +247,7 @@ class LoginToken:
 
     @property
     def session_name(self):
-        """Gets the session_name of this LoginToken.
+        r"""Gets the session_name of this LoginToken.
 
         自定义代理用户名。 > - [通过委托获取临时访问密钥和securitytoken](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=IAM&api=CreateTemporaryAccessKeyByAgency)且请求体中填写session_user.name参数时，会返回该字段。该字段的值即为session_user.name所填写的值。
 
@@ -258,7 +258,7 @@ class LoginToken:
 
     @session_name.setter
     def session_name(self, session_name):
-        """Sets the session_name of this LoginToken.
+        r"""Sets the session_name of this LoginToken.
 
         自定义代理用户名。 > - [通过委托获取临时访问密钥和securitytoken](https://apiexplorer.developer.huaweicloud.com/apiexplorer/doc?product=IAM&api=CreateTemporaryAccessKeyByAgency)且请求体中填写session_user.name参数时，会返回该字段。该字段的值即为session_user.name所填写的值。
 
@@ -269,7 +269,7 @@ class LoginToken:
 
     @property
     def assumed_by(self):
-        """Gets the assumed_by of this LoginToken.
+        r"""Gets the assumed_by of this LoginToken.
 
         :return: The assumed_by of this LoginToken.
         :rtype: :class:`huaweicloudsdkiam.v3.LoginTokenAssumedBy`
@@ -278,7 +278,7 @@ class LoginToken:
 
     @assumed_by.setter
     def assumed_by(self, assumed_by):
-        """Sets the assumed_by of this LoginToken.
+        r"""Sets the assumed_by of this LoginToken.
 
         :param assumed_by: The assumed_by of this LoginToken.
         :type assumed_by: :class:`huaweicloudsdkiam.v3.LoginTokenAssumedBy`

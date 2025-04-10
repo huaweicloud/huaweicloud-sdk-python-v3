@@ -29,7 +29,7 @@ class ResetVpnUserPasswordRequest:
     }
 
     def __init__(self, vpn_server_id=None, user_id=None, body=None):
-        """ResetVpnUserPasswordRequest
+        r"""ResetVpnUserPasswordRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ResetVpnUserPasswordRequest:
 
     @property
     def vpn_server_id(self):
-        """Gets the vpn_server_id of this ResetVpnUserPasswordRequest.
+        r"""Gets the vpn_server_id of this ResetVpnUserPasswordRequest.
 
         VPN服务端 ID
 
@@ -66,7 +66,7 @@ class ResetVpnUserPasswordRequest:
 
     @vpn_server_id.setter
     def vpn_server_id(self, vpn_server_id):
-        """Sets the vpn_server_id of this ResetVpnUserPasswordRequest.
+        r"""Sets the vpn_server_id of this ResetVpnUserPasswordRequest.
 
         VPN服务端 ID
 
@@ -77,7 +77,7 @@ class ResetVpnUserPasswordRequest:
 
     @property
     def user_id(self):
-        """Gets the user_id of this ResetVpnUserPasswordRequest.
+        r"""Gets the user_id of this ResetVpnUserPasswordRequest.
 
         用户ID
 
@@ -88,7 +88,7 @@ class ResetVpnUserPasswordRequest:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ResetVpnUserPasswordRequest.
+        r"""Sets the user_id of this ResetVpnUserPasswordRequest.
 
         用户ID
 
@@ -99,7 +99,7 @@ class ResetVpnUserPasswordRequest:
 
     @property
     def body(self):
-        """Gets the body of this ResetVpnUserPasswordRequest.
+        r"""Gets the body of this ResetVpnUserPasswordRequest.
 
         :return: The body of this ResetVpnUserPasswordRequest.
         :rtype: :class:`huaweicloudsdkvpn.v5.ResetVpnUserPasswordRequestBody`
@@ -108,7 +108,7 @@ class ResetVpnUserPasswordRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ResetVpnUserPasswordRequest.
+        r"""Sets the body of this ResetVpnUserPasswordRequest.
 
         :param body: The body of this ResetVpnUserPasswordRequest.
         :type body: :class:`huaweicloudsdkvpn.v5.ResetVpnUserPasswordRequestBody`

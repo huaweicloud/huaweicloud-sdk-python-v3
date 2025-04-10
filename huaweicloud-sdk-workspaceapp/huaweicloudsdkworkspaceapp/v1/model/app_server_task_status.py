@@ -61,7 +61,7 @@ class AppServerTaskStatus:
     }
 
     def __init__(self):
-        """AppServerTaskStatus
+        r"""AppServerTaskStatus
 
         The model defined in huaweicloud sdk
 

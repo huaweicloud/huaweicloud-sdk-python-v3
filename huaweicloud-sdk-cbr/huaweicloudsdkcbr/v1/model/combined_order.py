@@ -29,7 +29,7 @@ class CombinedOrder:
     }
 
     def __init__(self, combined_order_id=None, combined_order_ecs_num=None, combined_order_num=None):
-        """CombinedOrder
+        r"""CombinedOrder
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CombinedOrder:
 
     @property
     def combined_order_id(self):
-        """Gets the combined_order_id of this CombinedOrder.
+        r"""Gets the combined_order_id of this CombinedOrder.
 
         组合订单 ID
 
@@ -68,7 +68,7 @@ class CombinedOrder:
 
     @combined_order_id.setter
     def combined_order_id(self, combined_order_id):
-        """Sets the combined_order_id of this CombinedOrder.
+        r"""Sets the combined_order_id of this CombinedOrder.
 
         组合订单 ID
 
@@ -79,7 +79,7 @@ class CombinedOrder:
 
     @property
     def combined_order_ecs_num(self):
-        """Gets the combined_order_ecs_num of this CombinedOrder.
+        r"""Gets the combined_order_ecs_num of this CombinedOrder.
 
         组合订单中 ECS 服务器数量，当前批量最大为 500。  最小值：1  最大值：1000
 
@@ -90,7 +90,7 @@ class CombinedOrder:
 
     @combined_order_ecs_num.setter
     def combined_order_ecs_num(self, combined_order_ecs_num):
-        """Sets the combined_order_ecs_num of this CombinedOrder.
+        r"""Sets the combined_order_ecs_num of this CombinedOrder.
 
         组合订单中 ECS 服务器数量，当前批量最大为 500。  最小值：1  最大值：1000
 
@@ -101,7 +101,7 @@ class CombinedOrder:
 
     @property
     def combined_order_num(self):
-        """Gets the combined_order_num of this CombinedOrder.
+        r"""Gets the combined_order_num of this CombinedOrder.
 
         组合订单数量。  最小值：1  最大值：1000
 
@@ -112,7 +112,7 @@ class CombinedOrder:
 
     @combined_order_num.setter
     def combined_order_num(self, combined_order_num):
-        """Sets the combined_order_num of this CombinedOrder.
+        r"""Sets the combined_order_num of this CombinedOrder.
 
         组合订单数量。  最小值：1  最大值：1000
 

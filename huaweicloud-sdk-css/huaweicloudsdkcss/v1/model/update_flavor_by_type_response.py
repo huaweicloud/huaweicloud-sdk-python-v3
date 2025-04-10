@@ -24,7 +24,7 @@ class UpdateFlavorByTypeResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateFlavorByTypeResponse
+        r"""UpdateFlavorByTypeResponse
 
         The model defined in huaweicloud sdk
 

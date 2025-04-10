@@ -48,7 +48,7 @@ class UpdateNotificationResponse(SdkResponse):
     }
 
     def __init__(self, notification_name=None, operation_type=None, agency_name=None, operations=None, notify_user_list=None, status=None, topic_id=None, notification_id=None, notification_type=None, project_id=None, create_time=None, filter=None):
-        """UpdateNotificationResponse
+        r"""UpdateNotificationResponse
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class UpdateNotificationResponse(SdkResponse):
 
     @property
     def notification_name(self):
-        """Gets the notification_name of this UpdateNotificationResponse.
+        r"""Gets the notification_name of this UpdateNotificationResponse.
 
         标识关键操作名称。
 
@@ -132,7 +132,7 @@ class UpdateNotificationResponse(SdkResponse):
 
     @notification_name.setter
     def notification_name(self, notification_name):
-        """Sets the notification_name of this UpdateNotificationResponse.
+        r"""Sets the notification_name of this UpdateNotificationResponse.
 
         标识关键操作名称。
 
@@ -143,7 +143,7 @@ class UpdateNotificationResponse(SdkResponse):
 
     @property
     def operation_type(self):
-        """Gets the operation_type of this UpdateNotificationResponse.
+        r"""Gets the operation_type of this UpdateNotificationResponse.
 
         标识操作类型。 目前支持的操作类型有完整类型(complete)和自定义类型(customized)。 完整类型下，CTS发送通知的对象为已对接服务的所有事件。 自定义类型下，CTS发送通知的对象是在operations列表中指定的事件。
 
@@ -154,7 +154,7 @@ class UpdateNotificationResponse(SdkResponse):
 
     @operation_type.setter
     def operation_type(self, operation_type):
-        """Sets the operation_type of this UpdateNotificationResponse.
+        r"""Sets the operation_type of this UpdateNotificationResponse.
 
         标识操作类型。 目前支持的操作类型有完整类型(complete)和自定义类型(customized)。 完整类型下，CTS发送通知的对象为已对接服务的所有事件。 自定义类型下，CTS发送通知的对象是在operations列表中指定的事件。
 
@@ -165,7 +165,7 @@ class UpdateNotificationResponse(SdkResponse):
 
     @property
     def agency_name(self):
-        """Gets the agency_name of this UpdateNotificationResponse.
+        r"""Gets the agency_name of this UpdateNotificationResponse.
 
         云服务委托名称。
 
@@ -176,7 +176,7 @@ class UpdateNotificationResponse(SdkResponse):
 
     @agency_name.setter
     def agency_name(self, agency_name):
-        """Sets the agency_name of this UpdateNotificationResponse.
+        r"""Sets the agency_name of this UpdateNotificationResponse.
 
         云服务委托名称。
 
@@ -187,7 +187,7 @@ class UpdateNotificationResponse(SdkResponse):
 
     @property
     def operations(self):
-        """Gets the operations of this UpdateNotificationResponse.
+        r"""Gets the operations of this UpdateNotificationResponse.
 
         操作事件列表。
 
@@ -198,7 +198,7 @@ class UpdateNotificationResponse(SdkResponse):
 
     @operations.setter
     def operations(self, operations):
-        """Sets the operations of this UpdateNotificationResponse.
+        r"""Sets the operations of this UpdateNotificationResponse.
 
         操作事件列表。
 
@@ -209,7 +209,7 @@ class UpdateNotificationResponse(SdkResponse):
 
     @property
     def notify_user_list(self):
-        """Gets the notify_user_list of this UpdateNotificationResponse.
+        r"""Gets the notify_user_list of this UpdateNotificationResponse.
 
         通知用户列表，目前最多支持对10个用户组和50个用户发起的操作进行配置。
 
@@ -220,7 +220,7 @@ class UpdateNotificationResponse(SdkResponse):
 
     @notify_user_list.setter
     def notify_user_list(self, notify_user_list):
-        """Sets the notify_user_list of this UpdateNotificationResponse.
+        r"""Sets the notify_user_list of this UpdateNotificationResponse.
 
         通知用户列表，目前最多支持对10个用户组和50个用户发起的操作进行配置。
 
@@ -231,7 +231,7 @@ class UpdateNotificationResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateNotificationResponse.
+        r"""Gets the status of this UpdateNotificationResponse.
 
         标识关键操作通知状态，包括正常(enabled)，停止(disabled)两种状态。
 
@@ -242,7 +242,7 @@ class UpdateNotificationResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateNotificationResponse.
+        r"""Sets the status of this UpdateNotificationResponse.
 
         标识关键操作通知状态，包括正常(enabled)，停止(disabled)两种状态。
 
@@ -253,7 +253,7 @@ class UpdateNotificationResponse(SdkResponse):
 
     @property
     def topic_id(self):
-        """Gets the topic_id of this UpdateNotificationResponse.
+        r"""Gets the topic_id of this UpdateNotificationResponse.
 
         消息通知服务的topic_urn或者函数工作流的func_urn。 - 消息通知服务的topic_urn可以通过消息通知服务的查询主题列表API获取，示例：urn:smn:regionId:f96188c7ccaf4ffba0c9aa149ab2bd57:test_topic_v2。 - 函数工作流的func_urn可以通过函数工作流的获取函数列表API获取，示例：urn:fss:xxxxxxxxx:7aad83af3e8d42e99ac194e8419e2c9b:function:default:test。
 
@@ -264,7 +264,7 @@ class UpdateNotificationResponse(SdkResponse):
 
     @topic_id.setter
     def topic_id(self, topic_id):
-        """Sets the topic_id of this UpdateNotificationResponse.
+        r"""Sets the topic_id of this UpdateNotificationResponse.
 
         消息通知服务的topic_urn或者函数工作流的func_urn。 - 消息通知服务的topic_urn可以通过消息通知服务的查询主题列表API获取，示例：urn:smn:regionId:f96188c7ccaf4ffba0c9aa149ab2bd57:test_topic_v2。 - 函数工作流的func_urn可以通过函数工作流的获取函数列表API获取，示例：urn:fss:xxxxxxxxx:7aad83af3e8d42e99ac194e8419e2c9b:function:default:test。
 
@@ -275,7 +275,7 @@ class UpdateNotificationResponse(SdkResponse):
 
     @property
     def notification_id(self):
-        """Gets the notification_id of this UpdateNotificationResponse.
+        r"""Gets the notification_id of this UpdateNotificationResponse.
 
         关键操作通知的唯一标识。
 
@@ -286,7 +286,7 @@ class UpdateNotificationResponse(SdkResponse):
 
     @notification_id.setter
     def notification_id(self, notification_id):
-        """Sets the notification_id of this UpdateNotificationResponse.
+        r"""Sets the notification_id of this UpdateNotificationResponse.
 
         关键操作通知的唯一标识。
 
@@ -297,7 +297,7 @@ class UpdateNotificationResponse(SdkResponse):
 
     @property
     def notification_type(self):
-        """Gets the notification_type of this UpdateNotificationResponse.
+        r"""Gets the notification_type of this UpdateNotificationResponse.
 
         关键操作通知类型，根据topic_id区分为消息通知服务(smn)和函数工作流(fun)。
 
@@ -308,7 +308,7 @@ class UpdateNotificationResponse(SdkResponse):
 
     @notification_type.setter
     def notification_type(self, notification_type):
-        """Sets the notification_type of this UpdateNotificationResponse.
+        r"""Sets the notification_type of this UpdateNotificationResponse.
 
         关键操作通知类型，根据topic_id区分为消息通知服务(smn)和函数工作流(fun)。
 
@@ -319,7 +319,7 @@ class UpdateNotificationResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this UpdateNotificationResponse.
+        r"""Gets the project_id of this UpdateNotificationResponse.
 
         项目ID。
 
@@ -330,7 +330,7 @@ class UpdateNotificationResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UpdateNotificationResponse.
+        r"""Sets the project_id of this UpdateNotificationResponse.
 
         项目ID。
 
@@ -341,7 +341,7 @@ class UpdateNotificationResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this UpdateNotificationResponse.
+        r"""Gets the create_time of this UpdateNotificationResponse.
 
         关键操作通知创建时间戳。
 
@@ -352,7 +352,7 @@ class UpdateNotificationResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this UpdateNotificationResponse.
+        r"""Sets the create_time of this UpdateNotificationResponse.
 
         关键操作通知创建时间戳。
 
@@ -363,7 +363,7 @@ class UpdateNotificationResponse(SdkResponse):
 
     @property
     def filter(self):
-        """Gets the filter of this UpdateNotificationResponse.
+        r"""Gets the filter of this UpdateNotificationResponse.
 
         :return: The filter of this UpdateNotificationResponse.
         :rtype: :class:`huaweicloudsdkcts.v3.Filter`
@@ -372,7 +372,7 @@ class UpdateNotificationResponse(SdkResponse):
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this UpdateNotificationResponse.
+        r"""Sets the filter of this UpdateNotificationResponse.
 
         :param filter: The filter of this UpdateNotificationResponse.
         :type filter: :class:`huaweicloudsdkcts.v3.Filter`

@@ -25,7 +25,7 @@ class UpdateModuleShadowsRequestBody:
     }
 
     def __init__(self, properties=None):
-        """UpdateModuleShadowsRequestBody
+        r"""UpdateModuleShadowsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateModuleShadowsRequestBody:
 
     @property
     def properties(self):
-        """Gets the properties of this UpdateModuleShadowsRequestBody.
+        r"""Gets the properties of this UpdateModuleShadowsRequestBody.
 
         应用配置内容
 
@@ -54,7 +54,7 @@ class UpdateModuleShadowsRequestBody:
 
     @properties.setter
     def properties(self, properties):
-        """Sets the properties of this UpdateModuleShadowsRequestBody.
+        r"""Sets the properties of this UpdateModuleShadowsRequestBody.
 
         应用配置内容
 

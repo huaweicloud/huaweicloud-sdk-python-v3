@@ -33,7 +33,7 @@ class ClusterConfiguration:
     }
 
     def __init__(self, id=None, name=None, type=None, status=None, fail_reason=None):
-        """ClusterConfiguration
+        r"""ClusterConfiguration
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class ClusterConfiguration:
 
     @property
     def id(self):
-        """Gets the id of this ClusterConfiguration.
+        r"""Gets the id of this ClusterConfiguration.
 
         参数组ID。
 
@@ -77,7 +77,7 @@ class ClusterConfiguration:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ClusterConfiguration.
+        r"""Sets the id of this ClusterConfiguration.
 
         参数组ID。
 
@@ -88,7 +88,7 @@ class ClusterConfiguration:
 
     @property
     def name(self):
-        """Gets the name of this ClusterConfiguration.
+        r"""Gets the name of this ClusterConfiguration.
 
         参数组名称。
 
@@ -99,7 +99,7 @@ class ClusterConfiguration:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ClusterConfiguration.
+        r"""Sets the name of this ClusterConfiguration.
 
         参数组名称。
 
@@ -110,7 +110,7 @@ class ClusterConfiguration:
 
     @property
     def type(self):
-        """Gets the type of this ClusterConfiguration.
+        r"""Gets the type of this ClusterConfiguration.
 
         参数组类型。
 
@@ -121,7 +121,7 @@ class ClusterConfiguration:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ClusterConfiguration.
+        r"""Sets the type of this ClusterConfiguration.
 
         参数组类型。
 
@@ -132,7 +132,7 @@ class ClusterConfiguration:
 
     @property
     def status(self):
-        """Gets the status of this ClusterConfiguration.
+        r"""Gets the status of this ClusterConfiguration.
 
         集群参数状态。 - In-Sync：已同步。 - Applying：应用中。 - Pending-Reboot：需重启生效。 - Sync-Failure：应用失败。
 
@@ -143,7 +143,7 @@ class ClusterConfiguration:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ClusterConfiguration.
+        r"""Sets the status of this ClusterConfiguration.
 
         集群参数状态。 - In-Sync：已同步。 - Applying：应用中。 - Pending-Reboot：需重启生效。 - Sync-Failure：应用失败。
 
@@ -154,7 +154,7 @@ class ClusterConfiguration:
 
     @property
     def fail_reason(self):
-        """Gets the fail_reason of this ClusterConfiguration.
+        r"""Gets the fail_reason of this ClusterConfiguration.
 
         参数应用失败原因。
 
@@ -165,7 +165,7 @@ class ClusterConfiguration:
 
     @fail_reason.setter
     def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this ClusterConfiguration.
+        r"""Sets the fail_reason of this ClusterConfiguration.
 
         参数应用失败原因。
 

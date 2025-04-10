@@ -45,7 +45,7 @@ class LdDatasourceInfo:
     }
 
     def __init__(self, name=None, type=None, description=None, url=None, user=None, password=None, remotepath=None, id=None, status=None, created_time=None, modified_time=None):
-        """LdDatasourceInfo
+        r"""LdDatasourceInfo
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class LdDatasourceInfo:
 
     @property
     def name(self):
-        """Gets the name of this LdDatasourceInfo.
+        r"""Gets the name of this LdDatasourceInfo.
 
         数据源名称
 
@@ -124,7 +124,7 @@ class LdDatasourceInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this LdDatasourceInfo.
+        r"""Sets the name of this LdDatasourceInfo.
 
         数据源名称
 
@@ -135,7 +135,7 @@ class LdDatasourceInfo:
 
     @property
     def type(self):
-        """Gets the type of this LdDatasourceInfo.
+        r"""Gets the type of this LdDatasourceInfo.
 
         数据源类型：  - oracle：oracle数据源类型  - mysql：mysql数据源类型  - mongodb：mongodb数据源类型  - redis：redis数据源类型  - postgresql：postgresql/opengauss数据源类型  - hive：hive数据源类型  - mssql：sqlserver数据源类型  - sqlserver：sqlserver数据源类型  - dws：dws数据源类型  - gauss100：gauss100数据源类型  - zenith：zenith数据源类型
 
@@ -146,7 +146,7 @@ class LdDatasourceInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this LdDatasourceInfo.
+        r"""Sets the type of this LdDatasourceInfo.
 
         数据源类型：  - oracle：oracle数据源类型  - mysql：mysql数据源类型  - mongodb：mongodb数据源类型  - redis：redis数据源类型  - postgresql：postgresql/opengauss数据源类型  - hive：hive数据源类型  - mssql：sqlserver数据源类型  - sqlserver：sqlserver数据源类型  - dws：dws数据源类型  - gauss100：gauss100数据源类型  - zenith：zenith数据源类型
 
@@ -157,7 +157,7 @@ class LdDatasourceInfo:
 
     @property
     def description(self):
-        """Gets the description of this LdDatasourceInfo.
+        r"""Gets the description of this LdDatasourceInfo.
 
         数据源描述
 
@@ -168,7 +168,7 @@ class LdDatasourceInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this LdDatasourceInfo.
+        r"""Sets the description of this LdDatasourceInfo.
 
         数据源描述
 
@@ -179,7 +179,7 @@ class LdDatasourceInfo:
 
     @property
     def url(self):
-        """Gets the url of this LdDatasourceInfo.
+        r"""Gets the url of this LdDatasourceInfo.
 
         数据源连接字符串
 
@@ -190,7 +190,7 @@ class LdDatasourceInfo:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this LdDatasourceInfo.
+        r"""Sets the url of this LdDatasourceInfo.
 
         数据源连接字符串
 
@@ -201,7 +201,7 @@ class LdDatasourceInfo:
 
     @property
     def user(self):
-        """Gets the user of this LdDatasourceInfo.
+        r"""Gets the user of this LdDatasourceInfo.
 
         用户名
 
@@ -212,7 +212,7 @@ class LdDatasourceInfo:
 
     @user.setter
     def user(self, user):
-        """Sets the user of this LdDatasourceInfo.
+        r"""Sets the user of this LdDatasourceInfo.
 
         用户名
 
@@ -223,7 +223,7 @@ class LdDatasourceInfo:
 
     @property
     def password(self):
-        """Gets the password of this LdDatasourceInfo.
+        r"""Gets the password of this LdDatasourceInfo.
 
         密码。  敏感信息不作为响应返回
 
@@ -234,7 +234,7 @@ class LdDatasourceInfo:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this LdDatasourceInfo.
+        r"""Sets the password of this LdDatasourceInfo.
 
         密码。  敏感信息不作为响应返回
 
@@ -245,7 +245,7 @@ class LdDatasourceInfo:
 
     @property
     def remotepath(self):
-        """Gets the remotepath of this LdDatasourceInfo.
+        r"""Gets the remotepath of this LdDatasourceInfo.
 
         ftp上传路径  预留字段，暂不支持。
 
@@ -256,7 +256,7 @@ class LdDatasourceInfo:
 
     @remotepath.setter
     def remotepath(self, remotepath):
-        """Sets the remotepath of this LdDatasourceInfo.
+        r"""Sets the remotepath of this LdDatasourceInfo.
 
         ftp上传路径  预留字段，暂不支持。
 
@@ -267,7 +267,7 @@ class LdDatasourceInfo:
 
     @property
     def id(self):
-        """Gets the id of this LdDatasourceInfo.
+        r"""Gets the id of this LdDatasourceInfo.
 
         数据源ID
 
@@ -278,7 +278,7 @@ class LdDatasourceInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this LdDatasourceInfo.
+        r"""Sets the id of this LdDatasourceInfo.
 
         数据源ID
 
@@ -289,7 +289,7 @@ class LdDatasourceInfo:
 
     @property
     def status(self):
-        """Gets the status of this LdDatasourceInfo.
+        r"""Gets the status of this LdDatasourceInfo.
 
         数据源状态： - old：存量数据源 - new：roma数据源
 
@@ -300,7 +300,7 @@ class LdDatasourceInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this LdDatasourceInfo.
+        r"""Sets the status of this LdDatasourceInfo.
 
         数据源状态： - old：存量数据源 - new：roma数据源
 
@@ -311,7 +311,7 @@ class LdDatasourceInfo:
 
     @property
     def created_time(self):
-        """Gets the created_time of this LdDatasourceInfo.
+        r"""Gets the created_time of this LdDatasourceInfo.
 
         数据源创建时间
 
@@ -322,7 +322,7 @@ class LdDatasourceInfo:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this LdDatasourceInfo.
+        r"""Sets the created_time of this LdDatasourceInfo.
 
         数据源创建时间
 
@@ -333,7 +333,7 @@ class LdDatasourceInfo:
 
     @property
     def modified_time(self):
-        """Gets the modified_time of this LdDatasourceInfo.
+        r"""Gets the modified_time of this LdDatasourceInfo.
 
         数据源更新时间
 
@@ -344,7 +344,7 @@ class LdDatasourceInfo:
 
     @modified_time.setter
     def modified_time(self, modified_time):
-        """Sets the modified_time of this LdDatasourceInfo.
+        r"""Sets the modified_time of this LdDatasourceInfo.
 
         数据源更新时间
 

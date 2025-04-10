@@ -25,7 +25,7 @@ class ListAlarmStatisticRequest:
     }
 
     def __init__(self, time_zone=None):
-        """ListAlarmStatisticRequest
+        r"""ListAlarmStatisticRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListAlarmStatisticRequest:
 
     @property
     def time_zone(self):
-        """Gets the time_zone of this ListAlarmStatisticRequest.
+        r"""Gets the time_zone of this ListAlarmStatisticRequest.
 
         时区
 
@@ -53,7 +53,7 @@ class ListAlarmStatisticRequest:
 
     @time_zone.setter
     def time_zone(self, time_zone):
-        """Sets the time_zone of this ListAlarmStatisticRequest.
+        r"""Sets the time_zone of this ListAlarmStatisticRequest.
 
         时区
 

@@ -25,7 +25,7 @@ class WorkloadQueueUserReqUserList:
     }
 
     def __init__(self, user_name=None):
-        """WorkloadQueueUserReqUserList
+        r"""WorkloadQueueUserReqUserList
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class WorkloadQueueUserReqUserList:
 
     @property
     def user_name(self):
-        """Gets the user_name of this WorkloadQueueUserReqUserList.
+        r"""Gets the user_name of this WorkloadQueueUserReqUserList.
 
         用户名
 
@@ -54,7 +54,7 @@ class WorkloadQueueUserReqUserList:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this WorkloadQueueUserReqUserList.
+        r"""Sets the user_name of this WorkloadQueueUserReqUserList.
 
         用户名
 

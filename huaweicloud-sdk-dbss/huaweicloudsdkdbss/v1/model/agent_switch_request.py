@@ -27,7 +27,7 @@ class AgentSwitchRequest:
     }
 
     def __init__(self, agent_id=None, status=None):
-        """AgentSwitchRequest
+        r"""AgentSwitchRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AgentSwitchRequest:
 
     @property
     def agent_id(self):
-        """Gets the agent_id of this AgentSwitchRequest.
+        r"""Gets the agent_id of this AgentSwitchRequest.
 
         审计agent的ID。可在查询数据库agent列表接口ID字段获取。
 
@@ -59,7 +59,7 @@ class AgentSwitchRequest:
 
     @agent_id.setter
     def agent_id(self, agent_id):
-        """Sets the agent_id of this AgentSwitchRequest.
+        r"""Sets the agent_id of this AgentSwitchRequest.
 
         审计agent的ID。可在查询数据库agent列表接口ID字段获取。
 
@@ -70,7 +70,7 @@ class AgentSwitchRequest:
 
     @property
     def status(self):
-        """Gets the status of this AgentSwitchRequest.
+        r"""Gets the status of this AgentSwitchRequest.
 
         Agent开关状态 - 1：开启 - 0：关闭
 
@@ -81,7 +81,7 @@ class AgentSwitchRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AgentSwitchRequest.
+        r"""Sets the status of this AgentSwitchRequest.
 
         Agent开关状态 - 1：开启 - 0：关闭
 

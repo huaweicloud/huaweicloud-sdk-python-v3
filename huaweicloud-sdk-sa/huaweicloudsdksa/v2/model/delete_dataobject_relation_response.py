@@ -42,7 +42,7 @@ class DeleteDataobjectRelationResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, request_id=None, success=None, total=None, limit=None, offset=None, data=None, x_request_id=None):
-        """DeleteDataobjectRelationResponse
+        r"""DeleteDataobjectRelationResponse
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class DeleteDataobjectRelationResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this DeleteDataobjectRelationResponse.
+        r"""Gets the code of this DeleteDataobjectRelationResponse.
 
         Id value
 
@@ -111,7 +111,7 @@ class DeleteDataobjectRelationResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this DeleteDataobjectRelationResponse.
+        r"""Sets the code of this DeleteDataobjectRelationResponse.
 
         Id value
 
@@ -122,7 +122,7 @@ class DeleteDataobjectRelationResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this DeleteDataobjectRelationResponse.
+        r"""Gets the message of this DeleteDataobjectRelationResponse.
 
         Error message
 
@@ -133,7 +133,7 @@ class DeleteDataobjectRelationResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this DeleteDataobjectRelationResponse.
+        r"""Sets the message of this DeleteDataobjectRelationResponse.
 
         Error message
 
@@ -144,7 +144,7 @@ class DeleteDataobjectRelationResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this DeleteDataobjectRelationResponse.
+        r"""Gets the request_id of this DeleteDataobjectRelationResponse.
 
         Error message
 
@@ -155,7 +155,7 @@ class DeleteDataobjectRelationResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this DeleteDataobjectRelationResponse.
+        r"""Sets the request_id of this DeleteDataobjectRelationResponse.
 
         Error message
 
@@ -166,7 +166,7 @@ class DeleteDataobjectRelationResponse(SdkResponse):
 
     @property
     def success(self):
-        """Gets the success of this DeleteDataobjectRelationResponse.
+        r"""Gets the success of this DeleteDataobjectRelationResponse.
 
         Error message
 
@@ -177,7 +177,7 @@ class DeleteDataobjectRelationResponse(SdkResponse):
 
     @success.setter
     def success(self, success):
-        """Sets the success of this DeleteDataobjectRelationResponse.
+        r"""Sets the success of this DeleteDataobjectRelationResponse.
 
         Error message
 
@@ -188,7 +188,7 @@ class DeleteDataobjectRelationResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this DeleteDataobjectRelationResponse.
+        r"""Gets the total of this DeleteDataobjectRelationResponse.
 
         tatal count
 
@@ -199,7 +199,7 @@ class DeleteDataobjectRelationResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this DeleteDataobjectRelationResponse.
+        r"""Sets the total of this DeleteDataobjectRelationResponse.
 
         tatal count
 
@@ -210,7 +210,7 @@ class DeleteDataobjectRelationResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this DeleteDataobjectRelationResponse.
+        r"""Gets the limit of this DeleteDataobjectRelationResponse.
 
         current page count
 
@@ -221,7 +221,7 @@ class DeleteDataobjectRelationResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this DeleteDataobjectRelationResponse.
+        r"""Sets the limit of this DeleteDataobjectRelationResponse.
 
         current page count
 
@@ -232,7 +232,7 @@ class DeleteDataobjectRelationResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this DeleteDataobjectRelationResponse.
+        r"""Gets the offset of this DeleteDataobjectRelationResponse.
 
         current page size
 
@@ -243,7 +243,7 @@ class DeleteDataobjectRelationResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this DeleteDataobjectRelationResponse.
+        r"""Sets the offset of this DeleteDataobjectRelationResponse.
 
         current page size
 
@@ -254,7 +254,7 @@ class DeleteDataobjectRelationResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this DeleteDataobjectRelationResponse.
+        r"""Gets the data of this DeleteDataobjectRelationResponse.
 
         :return: The data of this DeleteDataobjectRelationResponse.
         :rtype: :class:`huaweicloudsdksa.v2.DataResponse`
@@ -263,7 +263,7 @@ class DeleteDataobjectRelationResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this DeleteDataobjectRelationResponse.
+        r"""Sets the data of this DeleteDataobjectRelationResponse.
 
         :param data: The data of this DeleteDataobjectRelationResponse.
         :type data: :class:`huaweicloudsdksa.v2.DataResponse`
@@ -272,7 +272,7 @@ class DeleteDataobjectRelationResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DeleteDataobjectRelationResponse.
+        r"""Gets the x_request_id of this DeleteDataobjectRelationResponse.
 
         :return: The x_request_id of this DeleteDataobjectRelationResponse.
         :rtype: str
@@ -281,7 +281,7 @@ class DeleteDataobjectRelationResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DeleteDataobjectRelationResponse.
+        r"""Sets the x_request_id of this DeleteDataobjectRelationResponse.
 
         :param x_request_id: The x_request_id of this DeleteDataobjectRelationResponse.
         :type x_request_id: str

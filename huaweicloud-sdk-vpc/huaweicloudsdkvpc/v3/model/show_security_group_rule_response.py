@@ -28,7 +28,7 @@ class ShowSecurityGroupRuleResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, security_group_rule=None):
-        """ShowSecurityGroupRuleResponse
+        r"""ShowSecurityGroupRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowSecurityGroupRuleResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowSecurityGroupRuleResponse.
+        r"""Gets the request_id of this ShowSecurityGroupRuleResponse.
 
         请求ID
 
@@ -62,7 +62,7 @@ class ShowSecurityGroupRuleResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowSecurityGroupRuleResponse.
+        r"""Sets the request_id of this ShowSecurityGroupRuleResponse.
 
         请求ID
 
@@ -73,7 +73,7 @@ class ShowSecurityGroupRuleResponse(SdkResponse):
 
     @property
     def security_group_rule(self):
-        """Gets the security_group_rule of this ShowSecurityGroupRuleResponse.
+        r"""Gets the security_group_rule of this ShowSecurityGroupRuleResponse.
 
         :return: The security_group_rule of this ShowSecurityGroupRuleResponse.
         :rtype: :class:`huaweicloudsdkvpc.v3.SecurityGroupRule`
@@ -82,7 +82,7 @@ class ShowSecurityGroupRuleResponse(SdkResponse):
 
     @security_group_rule.setter
     def security_group_rule(self, security_group_rule):
-        """Sets the security_group_rule of this ShowSecurityGroupRuleResponse.
+        r"""Sets the security_group_rule of this ShowSecurityGroupRuleResponse.
 
         :param security_group_rule: The security_group_rule of this ShowSecurityGroupRuleResponse.
         :type security_group_rule: :class:`huaweicloudsdkvpc.v3.SecurityGroupRule`

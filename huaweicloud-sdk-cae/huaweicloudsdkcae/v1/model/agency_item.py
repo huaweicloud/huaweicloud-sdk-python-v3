@@ -25,7 +25,7 @@ class AgencyItem:
     }
 
     def __init__(self, name=None):
-        """AgencyItem
+        r"""AgencyItem
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AgencyItem:
 
     @property
     def name(self):
-        """Gets the name of this AgencyItem.
+        r"""Gets the name of this AgencyItem.
 
         委托名称，固定值“cae_trust”，该值不可修改。
 
@@ -54,7 +54,7 @@ class AgencyItem:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AgencyItem.
+        r"""Sets the name of this AgencyItem.
 
         委托名称，固定值“cae_trust”，该值不可修改。
 

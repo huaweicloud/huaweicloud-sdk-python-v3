@@ -27,7 +27,7 @@ class ClickHouseDatabaseUserPWinfo:
     }
 
     def __init__(self, user_name=None, password=None):
-        """ClickHouseDatabaseUserPWinfo
+        r"""ClickHouseDatabaseUserPWinfo
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ClickHouseDatabaseUserPWinfo:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ClickHouseDatabaseUserPWinfo.
+        r"""Gets the user_name of this ClickHouseDatabaseUserPWinfo.
 
         数据库账号名。
 
@@ -59,7 +59,7 @@ class ClickHouseDatabaseUserPWinfo:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ClickHouseDatabaseUserPWinfo.
+        r"""Sets the user_name of this ClickHouseDatabaseUserPWinfo.
 
         数据库账号名。
 
@@ -70,7 +70,7 @@ class ClickHouseDatabaseUserPWinfo:
 
     @property
     def password(self):
-        """Gets the password of this ClickHouseDatabaseUserPWinfo.
+        r"""Gets the password of this ClickHouseDatabaseUserPWinfo.
 
         数据库账号密码。 - 8-32个字符 - 至少包含以下字符中的三种：大写字母、小写字母、数字和特殊字符~！@#%^*-_=+?, - 不能与用户名或倒序的用户名相同
 
@@ -81,7 +81,7 @@ class ClickHouseDatabaseUserPWinfo:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this ClickHouseDatabaseUserPWinfo.
+        r"""Sets the password of this ClickHouseDatabaseUserPWinfo.
 
         数据库账号密码。 - 8-32个字符 - 至少包含以下字符中的三种：大写字母、小写字母、数字和特殊字符~！@#%^*-_=+?, - 不能与用户名或倒序的用户名相同
 

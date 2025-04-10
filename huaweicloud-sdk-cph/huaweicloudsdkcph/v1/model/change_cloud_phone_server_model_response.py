@@ -34,7 +34,7 @@ class ChangeCloudPhoneServerModelResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, order_id=None, product_id=None, error_msg=None, error_code=None):
-        """ChangeCloudPhoneServerModelResponse
+        r"""ChangeCloudPhoneServerModelResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ChangeCloudPhoneServerModelResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ChangeCloudPhoneServerModelResponse.
+        r"""Gets the request_id of this ChangeCloudPhoneServerModelResponse.
 
         请求的唯一标识ID。
 
@@ -83,7 +83,7 @@ class ChangeCloudPhoneServerModelResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ChangeCloudPhoneServerModelResponse.
+        r"""Sets the request_id of this ChangeCloudPhoneServerModelResponse.
 
         请求的唯一标识ID。
 
@@ -94,7 +94,7 @@ class ChangeCloudPhoneServerModelResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this ChangeCloudPhoneServerModelResponse.
+        r"""Gets the order_id of this ChangeCloudPhoneServerModelResponse.
 
         订单ID，不超过64个字节。
 
@@ -105,7 +105,7 @@ class ChangeCloudPhoneServerModelResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this ChangeCloudPhoneServerModelResponse.
+        r"""Sets the order_id of this ChangeCloudPhoneServerModelResponse.
 
         订单ID，不超过64个字节。
 
@@ -116,7 +116,7 @@ class ChangeCloudPhoneServerModelResponse(SdkResponse):
 
     @property
     def product_id(self):
-        """Gets the product_id of this ChangeCloudPhoneServerModelResponse.
+        r"""Gets the product_id of this ChangeCloudPhoneServerModelResponse.
 
         产品ID，不超过64个字节。
 
@@ -127,7 +127,7 @@ class ChangeCloudPhoneServerModelResponse(SdkResponse):
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ChangeCloudPhoneServerModelResponse.
+        r"""Sets the product_id of this ChangeCloudPhoneServerModelResponse.
 
         产品ID，不超过64个字节。
 
@@ -138,7 +138,7 @@ class ChangeCloudPhoneServerModelResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ChangeCloudPhoneServerModelResponse.
+        r"""Gets the error_msg of this ChangeCloudPhoneServerModelResponse.
 
         任务错误码说明。
 
@@ -149,7 +149,7 @@ class ChangeCloudPhoneServerModelResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ChangeCloudPhoneServerModelResponse.
+        r"""Sets the error_msg of this ChangeCloudPhoneServerModelResponse.
 
         任务错误码说明。
 
@@ -160,7 +160,7 @@ class ChangeCloudPhoneServerModelResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ChangeCloudPhoneServerModelResponse.
+        r"""Gets the error_code of this ChangeCloudPhoneServerModelResponse.
 
         任务错误码。
 
@@ -171,7 +171,7 @@ class ChangeCloudPhoneServerModelResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ChangeCloudPhoneServerModelResponse.
+        r"""Sets the error_code of this ChangeCloudPhoneServerModelResponse.
 
         任务错误码。
 

@@ -25,7 +25,7 @@ class SetConsistencyResultRequestBody:
     }
 
     def __init__(self, consistency_result=None):
-        """SetConsistencyResultRequestBody
+        r"""SetConsistencyResultRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SetConsistencyResultRequestBody:
 
     @property
     def consistency_result(self):
-        """Gets the consistency_result of this SetConsistencyResultRequestBody.
+        r"""Gets the consistency_result of this SetConsistencyResultRequestBody.
 
         一致性校验结果
 
@@ -54,7 +54,7 @@ class SetConsistencyResultRequestBody:
 
     @consistency_result.setter
     def consistency_result(self, consistency_result):
-        """Sets the consistency_result of this SetConsistencyResultRequestBody.
+        r"""Sets the consistency_result of this SetConsistencyResultRequestBody.
 
         一致性校验结果
 

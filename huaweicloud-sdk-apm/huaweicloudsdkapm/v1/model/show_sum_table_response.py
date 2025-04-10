@@ -40,7 +40,7 @@ class ShowSumTableResponse(SdkResponse):
     }
 
     def __init__(self, result_id=None, row_list=None, latest_data_time=None, table_direction=None, real_start_time=None, real_end_time=None, notice_msg=None, total_count=None):
-        """ShowSumTableResponse
+        r"""ShowSumTableResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ShowSumTableResponse(SdkResponse):
 
     @property
     def result_id(self):
-        """Gets the result_id of this ShowSumTableResponse.
+        r"""Gets the result_id of this ShowSumTableResponse.
 
         结果的ID信息，分页查询的时候带过来。
 
@@ -104,7 +104,7 @@ class ShowSumTableResponse(SdkResponse):
 
     @result_id.setter
     def result_id(self, result_id):
-        """Sets the result_id of this ShowSumTableResponse.
+        r"""Sets the result_id of this ShowSumTableResponse.
 
         结果的ID信息，分页查询的时候带过来。
 
@@ -115,7 +115,7 @@ class ShowSumTableResponse(SdkResponse):
 
     @property
     def row_list(self):
-        """Gets the row_list of this ShowSumTableResponse.
+        r"""Gets the row_list of this ShowSumTableResponse.
 
         数据行列表。
 
@@ -126,7 +126,7 @@ class ShowSumTableResponse(SdkResponse):
 
     @row_list.setter
     def row_list(self, row_list):
-        """Sets the row_list of this ShowSumTableResponse.
+        r"""Sets the row_list of this ShowSumTableResponse.
 
         数据行列表。
 
@@ -137,7 +137,7 @@ class ShowSumTableResponse(SdkResponse):
 
     @property
     def latest_data_time(self):
-        """Gets the latest_data_time of this ShowSumTableResponse.
+        r"""Gets the latest_data_time of this ShowSumTableResponse.
 
         最近一笔数据的时间。
 
@@ -148,7 +148,7 @@ class ShowSumTableResponse(SdkResponse):
 
     @latest_data_time.setter
     def latest_data_time(self, latest_data_time):
-        """Sets the latest_data_time of this ShowSumTableResponse.
+        r"""Sets the latest_data_time of this ShowSumTableResponse.
 
         最近一笔数据的时间。
 
@@ -159,7 +159,7 @@ class ShowSumTableResponse(SdkResponse):
 
     @property
     def table_direction(self):
-        """Gets the table_direction of this ShowSumTableResponse.
+        r"""Gets the table_direction of this ShowSumTableResponse.
 
         表格的方向，H：默认，表头横向，V：表头纵向。
 
@@ -170,7 +170,7 @@ class ShowSumTableResponse(SdkResponse):
 
     @table_direction.setter
     def table_direction(self, table_direction):
-        """Sets the table_direction of this ShowSumTableResponse.
+        r"""Sets the table_direction of this ShowSumTableResponse.
 
         表格的方向，H：默认，表头横向，V：表头纵向。
 
@@ -181,7 +181,7 @@ class ShowSumTableResponse(SdkResponse):
 
     @property
     def real_start_time(self):
-        """Gets the real_start_time of this ShowSumTableResponse.
+        r"""Gets the real_start_time of this ShowSumTableResponse.
 
         实际开始的时间。
 
@@ -192,7 +192,7 @@ class ShowSumTableResponse(SdkResponse):
 
     @real_start_time.setter
     def real_start_time(self, real_start_time):
-        """Sets the real_start_time of this ShowSumTableResponse.
+        r"""Sets the real_start_time of this ShowSumTableResponse.
 
         实际开始的时间。
 
@@ -203,7 +203,7 @@ class ShowSumTableResponse(SdkResponse):
 
     @property
     def real_end_time(self):
-        """Gets the real_end_time of this ShowSumTableResponse.
+        r"""Gets the real_end_time of this ShowSumTableResponse.
 
         实际结束的时间。
 
@@ -214,7 +214,7 @@ class ShowSumTableResponse(SdkResponse):
 
     @real_end_time.setter
     def real_end_time(self, real_end_time):
-        """Sets the real_end_time of this ShowSumTableResponse.
+        r"""Sets the real_end_time of this ShowSumTableResponse.
 
         实际结束的时间。
 
@@ -225,7 +225,7 @@ class ShowSumTableResponse(SdkResponse):
 
     @property
     def notice_msg(self):
-        """Gets the notice_msg of this ShowSumTableResponse.
+        r"""Gets the notice_msg of this ShowSumTableResponse.
 
         提示信息。
 
@@ -236,7 +236,7 @@ class ShowSumTableResponse(SdkResponse):
 
     @notice_msg.setter
     def notice_msg(self, notice_msg):
-        """Sets the notice_msg of this ShowSumTableResponse.
+        r"""Sets the notice_msg of this ShowSumTableResponse.
 
         提示信息。
 
@@ -247,7 +247,7 @@ class ShowSumTableResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ShowSumTableResponse.
+        r"""Gets the total_count of this ShowSumTableResponse.
 
         总数。
 
@@ -258,7 +258,7 @@ class ShowSumTableResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ShowSumTableResponse.
+        r"""Sets the total_count of this ShowSumTableResponse.
 
         总数。
 

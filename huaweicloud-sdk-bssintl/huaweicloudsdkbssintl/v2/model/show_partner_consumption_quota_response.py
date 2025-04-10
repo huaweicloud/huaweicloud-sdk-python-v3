@@ -40,7 +40,7 @@ class ShowPartnerConsumptionQuotaResponse(SdkResponse):
     }
 
     def __init__(self, consumption_quota=None, amount=None, coupon_amount=None, due_amount=None, unbilled_amount=None, used_consumption_quota=None, measure_id=None, currency=None):
-        """ShowPartnerConsumptionQuotaResponse
+        r"""ShowPartnerConsumptionQuotaResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ShowPartnerConsumptionQuotaResponse(SdkResponse):
 
     @property
     def consumption_quota(self):
-        """Gets the consumption_quota of this ShowPartnerConsumptionQuotaResponse.
+        r"""Gets the consumption_quota of this ShowPartnerConsumptionQuotaResponse.
 
         |参数名称：总消费配额| |参数约束及描述：非必填|
 
@@ -104,7 +104,7 @@ class ShowPartnerConsumptionQuotaResponse(SdkResponse):
 
     @consumption_quota.setter
     def consumption_quota(self, consumption_quota):
-        """Sets the consumption_quota of this ShowPartnerConsumptionQuotaResponse.
+        r"""Sets the consumption_quota of this ShowPartnerConsumptionQuotaResponse.
 
         |参数名称：总消费配额| |参数约束及描述：非必填|
 
@@ -115,7 +115,7 @@ class ShowPartnerConsumptionQuotaResponse(SdkResponse):
 
     @property
     def amount(self):
-        """Gets the amount of this ShowPartnerConsumptionQuotaResponse.
+        r"""Gets the amount of this ShowPartnerConsumptionQuotaResponse.
 
         |参数名称：账户余额| |参数约束及描述：非必填|
 
@@ -126,7 +126,7 @@ class ShowPartnerConsumptionQuotaResponse(SdkResponse):
 
     @amount.setter
     def amount(self, amount):
-        """Sets the amount of this ShowPartnerConsumptionQuotaResponse.
+        r"""Sets the amount of this ShowPartnerConsumptionQuotaResponse.
 
         |参数名称：账户余额| |参数约束及描述：非必填|
 
@@ -137,7 +137,7 @@ class ShowPartnerConsumptionQuotaResponse(SdkResponse):
 
     @property
     def coupon_amount(self):
-        """Gets the coupon_amount of this ShowPartnerConsumptionQuotaResponse.
+        r"""Gets the coupon_amount of this ShowPartnerConsumptionQuotaResponse.
 
         |参数名称：代金券余额| |参数约束及描述：非必填|
 
@@ -148,7 +148,7 @@ class ShowPartnerConsumptionQuotaResponse(SdkResponse):
 
     @coupon_amount.setter
     def coupon_amount(self, coupon_amount):
-        """Sets the coupon_amount of this ShowPartnerConsumptionQuotaResponse.
+        r"""Sets the coupon_amount of this ShowPartnerConsumptionQuotaResponse.
 
         |参数名称：代金券余额| |参数约束及描述：非必填|
 
@@ -159,7 +159,7 @@ class ShowPartnerConsumptionQuotaResponse(SdkResponse):
 
     @property
     def due_amount(self):
-        """Gets the due_amount of this ShowPartnerConsumptionQuotaResponse.
+        r"""Gets the due_amount of this ShowPartnerConsumptionQuotaResponse.
 
         |参数名称：应还金额| |参数约束及描述：非必填|
 
@@ -170,7 +170,7 @@ class ShowPartnerConsumptionQuotaResponse(SdkResponse):
 
     @due_amount.setter
     def due_amount(self, due_amount):
-        """Sets the due_amount of this ShowPartnerConsumptionQuotaResponse.
+        r"""Sets the due_amount of this ShowPartnerConsumptionQuotaResponse.
 
         |参数名称：应还金额| |参数约束及描述：非必填|
 
@@ -181,7 +181,7 @@ class ShowPartnerConsumptionQuotaResponse(SdkResponse):
 
     @property
     def unbilled_amount(self):
-        """Gets the unbilled_amount of this ShowPartnerConsumptionQuotaResponse.
+        r"""Gets the unbilled_amount of this ShowPartnerConsumptionQuotaResponse.
 
         |参数名称：未出账预估金额| |参数约束及描述：非必填|
 
@@ -192,7 +192,7 @@ class ShowPartnerConsumptionQuotaResponse(SdkResponse):
 
     @unbilled_amount.setter
     def unbilled_amount(self, unbilled_amount):
-        """Sets the unbilled_amount of this ShowPartnerConsumptionQuotaResponse.
+        r"""Sets the unbilled_amount of this ShowPartnerConsumptionQuotaResponse.
 
         |参数名称：未出账预估金额| |参数约束及描述：非必填|
 
@@ -203,7 +203,7 @@ class ShowPartnerConsumptionQuotaResponse(SdkResponse):
 
     @property
     def used_consumption_quota(self):
-        """Gets the used_consumption_quota of this ShowPartnerConsumptionQuotaResponse.
+        r"""Gets the used_consumption_quota of this ShowPartnerConsumptionQuotaResponse.
 
         |参数名称：已使用消费配额| |参数约束及描述：非必填，used_consumption_quota = due_amount + unbilled_amount - amount - coupon_amount|
 
@@ -214,7 +214,7 @@ class ShowPartnerConsumptionQuotaResponse(SdkResponse):
 
     @used_consumption_quota.setter
     def used_consumption_quota(self, used_consumption_quota):
-        """Sets the used_consumption_quota of this ShowPartnerConsumptionQuotaResponse.
+        r"""Sets the used_consumption_quota of this ShowPartnerConsumptionQuotaResponse.
 
         |参数名称：已使用消费配额| |参数约束及描述：非必填，used_consumption_quota = due_amount + unbilled_amount - amount - coupon_amount|
 
@@ -225,7 +225,7 @@ class ShowPartnerConsumptionQuotaResponse(SdkResponse):
 
     @property
     def measure_id(self):
-        """Gets the measure_id of this ShowPartnerConsumptionQuotaResponse.
+        r"""Gets the measure_id of this ShowPartnerConsumptionQuotaResponse.
 
         |参数名称：金额单位| |参数约束及描述：金额单位，1：元|
 
@@ -236,7 +236,7 @@ class ShowPartnerConsumptionQuotaResponse(SdkResponse):
 
     @measure_id.setter
     def measure_id(self, measure_id):
-        """Sets the measure_id of this ShowPartnerConsumptionQuotaResponse.
+        r"""Sets the measure_id of this ShowPartnerConsumptionQuotaResponse.
 
         |参数名称：金额单位| |参数约束及描述：金额单位，1：元|
 
@@ -247,7 +247,7 @@ class ShowPartnerConsumptionQuotaResponse(SdkResponse):
 
     @property
     def currency(self):
-        """Gets the currency of this ShowPartnerConsumptionQuotaResponse.
+        r"""Gets the currency of this ShowPartnerConsumptionQuotaResponse.
 
         |参数名称：货币单位| |参数约束及描述：货币单位 |
 
@@ -258,7 +258,7 @@ class ShowPartnerConsumptionQuotaResponse(SdkResponse):
 
     @currency.setter
     def currency(self, currency):
-        """Sets the currency of this ShowPartnerConsumptionQuotaResponse.
+        r"""Sets the currency of this ShowPartnerConsumptionQuotaResponse.
 
         |参数名称：货币单位| |参数约束及描述：货币单位 |
 

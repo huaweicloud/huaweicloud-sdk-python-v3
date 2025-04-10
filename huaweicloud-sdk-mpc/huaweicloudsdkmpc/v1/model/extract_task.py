@@ -45,7 +45,7 @@ class ExtractTask:
     }
 
     def __init__(self, task_id=None, status=None, create_time=None, start_time=None, end_time=None, error_code=None, description=None, user_data=None, input=None, output=None, metadata=None):
-        """ExtractTask
+        r"""ExtractTask
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ExtractTask:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ExtractTask.
+        r"""Gets the task_id of this ExtractTask.
 
         任务ID 
 
@@ -124,7 +124,7 @@ class ExtractTask:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ExtractTask.
+        r"""Sets the task_id of this ExtractTask.
 
         任务ID 
 
@@ -135,7 +135,7 @@ class ExtractTask:
 
     @property
     def status(self):
-        """Gets the status of this ExtractTask.
+        r"""Gets the status of this ExtractTask.
 
         任务状态。  取值如下： - INIT：初始状态。 - WAITING：等待启动。 - PROCESSING：处理中。 - SUCCEED：处理成功。 - FAILED：处理失败。 - CANCELED：已取消。 
 
@@ -146,7 +146,7 @@ class ExtractTask:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ExtractTask.
+        r"""Sets the status of this ExtractTask.
 
         任务状态。  取值如下： - INIT：初始状态。 - WAITING：等待启动。 - PROCESSING：处理中。 - SUCCEED：处理成功。 - FAILED：处理失败。 - CANCELED：已取消。 
 
@@ -157,7 +157,7 @@ class ExtractTask:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ExtractTask.
+        r"""Gets the create_time of this ExtractTask.
 
         任务创建时间 
 
@@ -168,7 +168,7 @@ class ExtractTask:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ExtractTask.
+        r"""Sets the create_time of this ExtractTask.
 
         任务创建时间 
 
@@ -179,7 +179,7 @@ class ExtractTask:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ExtractTask.
+        r"""Gets the start_time of this ExtractTask.
 
         任务启动时间 
 
@@ -190,7 +190,7 @@ class ExtractTask:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ExtractTask.
+        r"""Sets the start_time of this ExtractTask.
 
         任务启动时间 
 
@@ -201,7 +201,7 @@ class ExtractTask:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ExtractTask.
+        r"""Gets the end_time of this ExtractTask.
 
         任务结束时间 
 
@@ -212,7 +212,7 @@ class ExtractTask:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ExtractTask.
+        r"""Sets the end_time of this ExtractTask.
 
         任务结束时间 
 
@@ -223,7 +223,7 @@ class ExtractTask:
 
     @property
     def error_code(self):
-        """Gets the error_code of this ExtractTask.
+        r"""Gets the error_code of this ExtractTask.
 
         任务的返回码。 
 
@@ -234,7 +234,7 @@ class ExtractTask:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ExtractTask.
+        r"""Sets the error_code of this ExtractTask.
 
         任务的返回码。 
 
@@ -245,7 +245,7 @@ class ExtractTask:
 
     @property
     def description(self):
-        """Gets the description of this ExtractTask.
+        r"""Gets the description of this ExtractTask.
 
         错误描述 
 
@@ -256,7 +256,7 @@ class ExtractTask:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ExtractTask.
+        r"""Sets the description of this ExtractTask.
 
         错误描述 
 
@@ -267,7 +267,7 @@ class ExtractTask:
 
     @property
     def user_data(self):
-        """Gets the user_data of this ExtractTask.
+        r"""Gets the user_data of this ExtractTask.
 
         用户数据。 
 
@@ -278,7 +278,7 @@ class ExtractTask:
 
     @user_data.setter
     def user_data(self, user_data):
-        """Sets the user_data of this ExtractTask.
+        r"""Sets the user_data of this ExtractTask.
 
         用户数据。 
 
@@ -289,7 +289,7 @@ class ExtractTask:
 
     @property
     def input(self):
-        """Gets the input of this ExtractTask.
+        r"""Gets the input of this ExtractTask.
 
         :return: The input of this ExtractTask.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -298,7 +298,7 @@ class ExtractTask:
 
     @input.setter
     def input(self, input):
-        """Sets the input of this ExtractTask.
+        r"""Sets the input of this ExtractTask.
 
         :param input: The input of this ExtractTask.
         :type input: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -307,7 +307,7 @@ class ExtractTask:
 
     @property
     def output(self):
-        """Gets the output of this ExtractTask.
+        r"""Gets the output of this ExtractTask.
 
         :return: The output of this ExtractTask.
         :rtype: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -316,7 +316,7 @@ class ExtractTask:
 
     @output.setter
     def output(self, output):
-        """Sets the output of this ExtractTask.
+        r"""Sets the output of this ExtractTask.
 
         :param output: The output of this ExtractTask.
         :type output: :class:`huaweicloudsdkmpc.v1.ObsObjInfo`
@@ -325,7 +325,7 @@ class ExtractTask:
 
     @property
     def metadata(self):
-        """Gets the metadata of this ExtractTask.
+        r"""Gets the metadata of this ExtractTask.
 
         :return: The metadata of this ExtractTask.
         :rtype: :class:`huaweicloudsdkmpc.v1.MetaData`
@@ -334,7 +334,7 @@ class ExtractTask:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ExtractTask.
+        r"""Sets the metadata of this ExtractTask.
 
         :param metadata: The metadata of this ExtractTask.
         :type metadata: :class:`huaweicloudsdkmpc.v1.MetaData`

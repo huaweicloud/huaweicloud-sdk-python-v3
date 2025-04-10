@@ -28,7 +28,7 @@ class UpdateDomainMultiCertificatesResponse(SdkResponse):
     }
 
     def __init__(self, https=None, x_request_id=None):
-        """UpdateDomainMultiCertificatesResponse
+        r"""UpdateDomainMultiCertificatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class UpdateDomainMultiCertificatesResponse(SdkResponse):
 
     @property
     def https(self):
-        """Gets the https of this UpdateDomainMultiCertificatesResponse.
+        r"""Gets the https of this UpdateDomainMultiCertificatesResponse.
 
         :return: The https of this UpdateDomainMultiCertificatesResponse.
         :rtype: :class:`huaweicloudsdkcdn.v1.UpdateDomainMultiCertificatesResponseBodyContent`
@@ -60,7 +60,7 @@ class UpdateDomainMultiCertificatesResponse(SdkResponse):
 
     @https.setter
     def https(self, https):
-        """Sets the https of this UpdateDomainMultiCertificatesResponse.
+        r"""Sets the https of this UpdateDomainMultiCertificatesResponse.
 
         :param https: The https of this UpdateDomainMultiCertificatesResponse.
         :type https: :class:`huaweicloudsdkcdn.v1.UpdateDomainMultiCertificatesResponseBodyContent`
@@ -69,7 +69,7 @@ class UpdateDomainMultiCertificatesResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this UpdateDomainMultiCertificatesResponse.
+        r"""Gets the x_request_id of this UpdateDomainMultiCertificatesResponse.
 
         :return: The x_request_id of this UpdateDomainMultiCertificatesResponse.
         :rtype: str
@@ -78,7 +78,7 @@ class UpdateDomainMultiCertificatesResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this UpdateDomainMultiCertificatesResponse.
+        r"""Sets the x_request_id of this UpdateDomainMultiCertificatesResponse.
 
         :param x_request_id: The x_request_id of this UpdateDomainMultiCertificatesResponse.
         :type x_request_id: str

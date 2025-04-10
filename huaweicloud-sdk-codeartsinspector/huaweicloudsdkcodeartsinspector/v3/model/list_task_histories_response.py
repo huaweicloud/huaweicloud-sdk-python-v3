@@ -28,7 +28,7 @@ class ListTaskHistoriesResponse(SdkResponse):
     }
 
     def __init__(self, total=None, data=None):
-        """ListTaskHistoriesResponse
+        r"""ListTaskHistoriesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListTaskHistoriesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListTaskHistoriesResponse.
+        r"""Gets the total of this ListTaskHistoriesResponse.
 
         网站历史扫描任务总数
 
@@ -62,7 +62,7 @@ class ListTaskHistoriesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListTaskHistoriesResponse.
+        r"""Sets the total of this ListTaskHistoriesResponse.
 
         网站历史扫描任务总数
 
@@ -73,7 +73,7 @@ class ListTaskHistoriesResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListTaskHistoriesResponse.
+        r"""Gets the data of this ListTaskHistoriesResponse.
 
         网站历史扫描任务列表
 
@@ -84,7 +84,7 @@ class ListTaskHistoriesResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListTaskHistoriesResponse.
+        r"""Sets the data of this ListTaskHistoriesResponse.
 
         网站历史扫描任务列表
 

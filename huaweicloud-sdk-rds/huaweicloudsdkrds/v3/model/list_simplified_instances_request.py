@@ -27,7 +27,7 @@ class ListSimplifiedInstancesRequest:
     }
 
     def __init__(self, x_language=None, body=None):
-        """ListSimplifiedInstancesRequest
+        r"""ListSimplifiedInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListSimplifiedInstancesRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListSimplifiedInstancesRequest.
+        r"""Gets the x_language of this ListSimplifiedInstancesRequest.
 
         语言
 
@@ -61,7 +61,7 @@ class ListSimplifiedInstancesRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListSimplifiedInstancesRequest.
+        r"""Sets the x_language of this ListSimplifiedInstancesRequest.
 
         语言
 
@@ -72,7 +72,7 @@ class ListSimplifiedInstancesRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListSimplifiedInstancesRequest.
+        r"""Gets the body of this ListSimplifiedInstancesRequest.
 
         :return: The body of this ListSimplifiedInstancesRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.SimplifiedInstancesRequest`
@@ -81,7 +81,7 @@ class ListSimplifiedInstancesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListSimplifiedInstancesRequest.
+        r"""Sets the body of this ListSimplifiedInstancesRequest.
 
         :param body: The body of this ListSimplifiedInstancesRequest.
         :type body: :class:`huaweicloudsdkrds.v3.SimplifiedInstancesRequest`

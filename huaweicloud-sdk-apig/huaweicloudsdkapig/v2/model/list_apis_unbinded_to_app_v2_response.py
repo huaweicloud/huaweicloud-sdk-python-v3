@@ -30,7 +30,7 @@ class ListApisUnbindedToAppV2Response(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, apis=None):
-        """ListApisUnbindedToAppV2Response
+        r"""ListApisUnbindedToAppV2Response
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListApisUnbindedToAppV2Response(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListApisUnbindedToAppV2Response.
+        r"""Gets the size of this ListApisUnbindedToAppV2Response.
 
         本次返回的列表长度
 
@@ -67,7 +67,7 @@ class ListApisUnbindedToAppV2Response(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListApisUnbindedToAppV2Response.
+        r"""Sets the size of this ListApisUnbindedToAppV2Response.
 
         本次返回的列表长度
 
@@ -78,7 +78,7 @@ class ListApisUnbindedToAppV2Response(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListApisUnbindedToAppV2Response.
+        r"""Gets the total of this ListApisUnbindedToAppV2Response.
 
         满足条件的记录数
 
@@ -89,7 +89,7 @@ class ListApisUnbindedToAppV2Response(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListApisUnbindedToAppV2Response.
+        r"""Sets the total of this ListApisUnbindedToAppV2Response.
 
         满足条件的记录数
 
@@ -100,7 +100,7 @@ class ListApisUnbindedToAppV2Response(SdkResponse):
 
     @property
     def apis(self):
-        """Gets the apis of this ListApisUnbindedToAppV2Response.
+        r"""Gets the apis of this ListApisUnbindedToAppV2Response.
 
         本次返回的API列表
 
@@ -111,7 +111,7 @@ class ListApisUnbindedToAppV2Response(SdkResponse):
 
     @apis.setter
     def apis(self, apis):
-        """Sets the apis of this ListApisUnbindedToAppV2Response.
+        r"""Sets the apis of this ListApisUnbindedToAppV2Response.
 
         本次返回的API列表
 

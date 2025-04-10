@@ -26,7 +26,7 @@ class ListAgentStatusResponse(SdkResponse):
     }
 
     def __init__(self, agent_status=None):
-        """ListAgentStatusResponse
+        r"""ListAgentStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListAgentStatusResponse(SdkResponse):
 
     @property
     def agent_status(self):
-        """Gets the agent_status of this ListAgentStatusResponse.
+        r"""Gets the agent_status of this ListAgentStatusResponse.
 
         agent插件状态列表
 
@@ -55,7 +55,7 @@ class ListAgentStatusResponse(SdkResponse):
 
     @agent_status.setter
     def agent_status(self, agent_status):
-        """Sets the agent_status of this ListAgentStatusResponse.
+        r"""Sets the agent_status of this ListAgentStatusResponse.
 
         agent插件状态列表
 

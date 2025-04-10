@@ -48,7 +48,7 @@ class ShowOptmJobResponse(SdkResponse):
     }
 
     def __init__(self, basic_info=None, smiles=None, molecule_file=None, num_trials=None, binding_site=None, binding_sites=None, weak_constraints=None, strong_constraints=None, sampler_mixin_weight=None, base_model=None, models=None, cluster_result=None):
-        """ShowOptmJobResponse
+        r"""ShowOptmJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -121,7 +121,7 @@ class ShowOptmJobResponse(SdkResponse):
 
     @property
     def basic_info(self):
-        """Gets the basic_info of this ShowOptmJobResponse.
+        r"""Gets the basic_info of this ShowOptmJobResponse.
 
         :return: The basic_info of this ShowOptmJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DrugJobDto`
@@ -130,7 +130,7 @@ class ShowOptmJobResponse(SdkResponse):
 
     @basic_info.setter
     def basic_info(self, basic_info):
-        """Sets the basic_info of this ShowOptmJobResponse.
+        r"""Sets the basic_info of this ShowOptmJobResponse.
 
         :param basic_info: The basic_info of this ShowOptmJobResponse.
         :type basic_info: :class:`huaweicloudsdkeihealth.v1.DrugJobDto`
@@ -139,7 +139,7 @@ class ShowOptmJobResponse(SdkResponse):
 
     @property
     def smiles(self):
-        """Gets the smiles of this ShowOptmJobResponse.
+        r"""Gets the smiles of this ShowOptmJobResponse.
 
         分子SMILES表达式
 
@@ -150,7 +150,7 @@ class ShowOptmJobResponse(SdkResponse):
 
     @smiles.setter
     def smiles(self, smiles):
-        """Sets the smiles of this ShowOptmJobResponse.
+        r"""Sets the smiles of this ShowOptmJobResponse.
 
         分子SMILES表达式
 
@@ -161,7 +161,7 @@ class ShowOptmJobResponse(SdkResponse):
 
     @property
     def molecule_file(self):
-        """Gets the molecule_file of this ShowOptmJobResponse.
+        r"""Gets the molecule_file of this ShowOptmJobResponse.
 
         :return: The molecule_file of this ShowOptmJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.DrugFile`
@@ -170,7 +170,7 @@ class ShowOptmJobResponse(SdkResponse):
 
     @molecule_file.setter
     def molecule_file(self, molecule_file):
-        """Sets the molecule_file of this ShowOptmJobResponse.
+        r"""Sets the molecule_file of this ShowOptmJobResponse.
 
         :param molecule_file: The molecule_file of this ShowOptmJobResponse.
         :type molecule_file: :class:`huaweicloudsdkeihealth.v1.DrugFile`
@@ -179,7 +179,7 @@ class ShowOptmJobResponse(SdkResponse):
 
     @property
     def num_trials(self):
-        """Gets the num_trials of this ShowOptmJobResponse.
+        r"""Gets the num_trials of this ShowOptmJobResponse.
 
         生成分子数量
 
@@ -190,7 +190,7 @@ class ShowOptmJobResponse(SdkResponse):
 
     @num_trials.setter
     def num_trials(self, num_trials):
-        """Sets the num_trials of this ShowOptmJobResponse.
+        r"""Sets the num_trials of this ShowOptmJobResponse.
 
         生成分子数量
 
@@ -201,7 +201,7 @@ class ShowOptmJobResponse(SdkResponse):
 
     @property
     def binding_site(self):
-        """Gets the binding_site of this ShowOptmJobResponse.
+        r"""Gets the binding_site of this ShowOptmJobResponse.
 
         :return: The binding_site of this ShowOptmJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.BindSiteDto`
@@ -210,7 +210,7 @@ class ShowOptmJobResponse(SdkResponse):
 
     @binding_site.setter
     def binding_site(self, binding_site):
-        """Sets the binding_site of this ShowOptmJobResponse.
+        r"""Sets the binding_site of this ShowOptmJobResponse.
 
         :param binding_site: The binding_site of this ShowOptmJobResponse.
         :type binding_site: :class:`huaweicloudsdkeihealth.v1.BindSiteDto`
@@ -219,7 +219,7 @@ class ShowOptmJobResponse(SdkResponse):
 
     @property
     def binding_sites(self):
-        """Gets the binding_sites of this ShowOptmJobResponse.
+        r"""Gets the binding_sites of this ShowOptmJobResponse.
 
         受体列表和受体是二选一的关系，受体列表优先级最高
 
@@ -230,7 +230,7 @@ class ShowOptmJobResponse(SdkResponse):
 
     @binding_sites.setter
     def binding_sites(self, binding_sites):
-        """Sets the binding_sites of this ShowOptmJobResponse.
+        r"""Sets the binding_sites of this ShowOptmJobResponse.
 
         受体列表和受体是二选一的关系，受体列表优先级最高
 
@@ -241,7 +241,7 @@ class ShowOptmJobResponse(SdkResponse):
 
     @property
     def weak_constraints(self):
-        """Gets the weak_constraints of this ShowOptmJobResponse.
+        r"""Gets the weak_constraints of this ShowOptmJobResponse.
 
         弱约束集合
 
@@ -252,7 +252,7 @@ class ShowOptmJobResponse(SdkResponse):
 
     @weak_constraints.setter
     def weak_constraints(self, weak_constraints):
-        """Sets the weak_constraints of this ShowOptmJobResponse.
+        r"""Sets the weak_constraints of this ShowOptmJobResponse.
 
         弱约束集合
 
@@ -263,7 +263,7 @@ class ShowOptmJobResponse(SdkResponse):
 
     @property
     def strong_constraints(self):
-        """Gets the strong_constraints of this ShowOptmJobResponse.
+        r"""Gets the strong_constraints of this ShowOptmJobResponse.
 
         强约束集合
 
@@ -274,7 +274,7 @@ class ShowOptmJobResponse(SdkResponse):
 
     @strong_constraints.setter
     def strong_constraints(self, strong_constraints):
-        """Sets the strong_constraints of this ShowOptmJobResponse.
+        r"""Sets the strong_constraints of this ShowOptmJobResponse.
 
         强约束集合
 
@@ -285,7 +285,7 @@ class ShowOptmJobResponse(SdkResponse):
 
     @property
     def sampler_mixin_weight(self):
-        """Gets the sampler_mixin_weight of this ShowOptmJobResponse.
+        r"""Gets the sampler_mixin_weight of this ShowOptmJobResponse.
 
         初始化采样权重
 
@@ -296,7 +296,7 @@ class ShowOptmJobResponse(SdkResponse):
 
     @sampler_mixin_weight.setter
     def sampler_mixin_weight(self, sampler_mixin_weight):
-        """Sets the sampler_mixin_weight of this ShowOptmJobResponse.
+        r"""Sets the sampler_mixin_weight of this ShowOptmJobResponse.
 
         初始化采样权重
 
@@ -307,7 +307,7 @@ class ShowOptmJobResponse(SdkResponse):
 
     @property
     def base_model(self):
-        """Gets the base_model of this ShowOptmJobResponse.
+        r"""Gets the base_model of this ShowOptmJobResponse.
 
         :return: The base_model of this ShowOptmJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.BaseModel`
@@ -316,7 +316,7 @@ class ShowOptmJobResponse(SdkResponse):
 
     @base_model.setter
     def base_model(self, base_model):
-        """Sets the base_model of this ShowOptmJobResponse.
+        r"""Sets the base_model of this ShowOptmJobResponse.
 
         :param base_model: The base_model of this ShowOptmJobResponse.
         :type base_model: :class:`huaweicloudsdkeihealth.v1.BaseModel`
@@ -325,7 +325,7 @@ class ShowOptmJobResponse(SdkResponse):
 
     @property
     def models(self):
-        """Gets the models of this ShowOptmJobResponse.
+        r"""Gets the models of this ShowOptmJobResponse.
 
         模型列表
 
@@ -336,7 +336,7 @@ class ShowOptmJobResponse(SdkResponse):
 
     @models.setter
     def models(self, models):
-        """Sets the models of this ShowOptmJobResponse.
+        r"""Sets the models of this ShowOptmJobResponse.
 
         模型列表
 
@@ -347,7 +347,7 @@ class ShowOptmJobResponse(SdkResponse):
 
     @property
     def cluster_result(self):
-        """Gets the cluster_result of this ShowOptmJobResponse.
+        r"""Gets the cluster_result of this ShowOptmJobResponse.
 
         :return: The cluster_result of this ShowOptmJobResponse.
         :rtype: :class:`huaweicloudsdkeihealth.v1.ClusterJobRsp`
@@ -356,7 +356,7 @@ class ShowOptmJobResponse(SdkResponse):
 
     @cluster_result.setter
     def cluster_result(self, cluster_result):
-        """Sets the cluster_result of this ShowOptmJobResponse.
+        r"""Sets the cluster_result of this ShowOptmJobResponse.
 
         :param cluster_result: The cluster_result of this ShowOptmJobResponse.
         :type cluster_result: :class:`huaweicloudsdkeihealth.v1.ClusterJobRsp`

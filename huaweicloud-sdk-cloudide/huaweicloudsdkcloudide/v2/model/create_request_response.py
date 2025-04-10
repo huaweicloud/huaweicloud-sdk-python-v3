@@ -30,7 +30,7 @@ class CreateRequestResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, status=None, dispatched_task_number=None):
-        """CreateRequestResponse
+        r"""CreateRequestResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateRequestResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this CreateRequestResponse.
+        r"""Gets the request_id of this CreateRequestResponse.
 
         the unique id of the request
 
@@ -69,7 +69,7 @@ class CreateRequestResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this CreateRequestResponse.
+        r"""Sets the request_id of this CreateRequestResponse.
 
         the unique id of the request
 
@@ -80,7 +80,7 @@ class CreateRequestResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateRequestResponse.
+        r"""Gets the status of this CreateRequestResponse.
 
         :return: The status of this CreateRequestResponse.
         :rtype: :class:`huaweicloudsdkcloudide.v2.RequestStatus`
@@ -89,7 +89,7 @@ class CreateRequestResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateRequestResponse.
+        r"""Sets the status of this CreateRequestResponse.
 
         :param status: The status of this CreateRequestResponse.
         :type status: :class:`huaweicloudsdkcloudide.v2.RequestStatus`
@@ -98,7 +98,7 @@ class CreateRequestResponse(SdkResponse):
 
     @property
     def dispatched_task_number(self):
-        """Gets the dispatched_task_number of this CreateRequestResponse.
+        r"""Gets the dispatched_task_number of this CreateRequestResponse.
 
         the number of tasks dispatched successfully
 
@@ -109,7 +109,7 @@ class CreateRequestResponse(SdkResponse):
 
     @dispatched_task_number.setter
     def dispatched_task_number(self, dispatched_task_number):
-        """Sets the dispatched_task_number of this CreateRequestResponse.
+        r"""Sets the dispatched_task_number of this CreateRequestResponse.
 
         the number of tasks dispatched successfully
 

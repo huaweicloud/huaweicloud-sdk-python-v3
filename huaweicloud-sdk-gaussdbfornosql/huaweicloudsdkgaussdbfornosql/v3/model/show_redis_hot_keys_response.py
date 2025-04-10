@@ -28,7 +28,7 @@ class ShowRedisHotKeysResponse(SdkResponse):
     }
 
     def __init__(self, keys=None, count=None):
-        """ShowRedisHotKeysResponse
+        r"""ShowRedisHotKeysResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowRedisHotKeysResponse(SdkResponse):
 
     @property
     def keys(self):
-        """Gets the keys of this ShowRedisHotKeysResponse.
+        r"""Gets the keys of this ShowRedisHotKeysResponse.
 
         查询到的热Key列表。
 
@@ -62,7 +62,7 @@ class ShowRedisHotKeysResponse(SdkResponse):
 
     @keys.setter
     def keys(self, keys):
-        """Sets the keys of this ShowRedisHotKeysResponse.
+        r"""Sets the keys of this ShowRedisHotKeysResponse.
 
         查询到的热Key列表。
 
@@ -73,7 +73,7 @@ class ShowRedisHotKeysResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowRedisHotKeysResponse.
+        r"""Gets the count of this ShowRedisHotKeysResponse.
 
         总数。
 
@@ -84,7 +84,7 @@ class ShowRedisHotKeysResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowRedisHotKeysResponse.
+        r"""Sets the count of this ShowRedisHotKeysResponse.
 
         总数。
 

@@ -25,7 +25,7 @@ class RestartManagerRequest:
     }
 
     def __init__(self, instance_id=None):
-        """RestartManagerRequest
+        r"""RestartManagerRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RestartManagerRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this RestartManagerRequest.
+        r"""Gets the instance_id of this RestartManagerRequest.
 
         实例ID。
 
@@ -53,7 +53,7 @@ class RestartManagerRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this RestartManagerRequest.
+        r"""Sets the instance_id of this RestartManagerRequest.
 
         实例ID。
 

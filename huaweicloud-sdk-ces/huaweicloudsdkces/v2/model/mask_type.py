@@ -28,7 +28,7 @@ class MaskType:
     }
 
     def __init__(self):
-        """MaskType
+        r"""MaskType
 
         The model defined in huaweicloud sdk
 

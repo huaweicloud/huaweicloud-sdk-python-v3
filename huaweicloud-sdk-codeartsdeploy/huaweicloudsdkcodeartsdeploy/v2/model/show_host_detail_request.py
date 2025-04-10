@@ -27,7 +27,7 @@ class ShowHostDetailRequest:
     }
 
     def __init__(self, group_id=None, host_id=None):
-        """ShowHostDetailRequest
+        r"""ShowHostDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowHostDetailRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ShowHostDetailRequest.
+        r"""Gets the group_id of this ShowHostDetailRequest.
 
         主机集群id
 
@@ -59,7 +59,7 @@ class ShowHostDetailRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ShowHostDetailRequest.
+        r"""Sets the group_id of this ShowHostDetailRequest.
 
         主机集群id
 
@@ -70,7 +70,7 @@ class ShowHostDetailRequest:
 
     @property
     def host_id(self):
-        """Gets the host_id of this ShowHostDetailRequest.
+        r"""Gets the host_id of this ShowHostDetailRequest.
 
         主机id
 
@@ -81,7 +81,7 @@ class ShowHostDetailRequest:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this ShowHostDetailRequest.
+        r"""Sets the host_id of this ShowHostDetailRequest.
 
         主机id
 

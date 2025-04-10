@@ -29,7 +29,7 @@ class ShowVodRetrievalRequest:
     }
 
     def __init__(self, start_time=None, end_time=None, interval=None):
-        """ShowVodRetrievalRequest
+        r"""ShowVodRetrievalRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ShowVodRetrievalRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowVodRetrievalRequest.
+        r"""Gets the start_time of this ShowVodRetrievalRequest.
 
         开始时间 
 
@@ -68,7 +68,7 @@ class ShowVodRetrievalRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowVodRetrievalRequest.
+        r"""Sets the start_time of this ShowVodRetrievalRequest.
 
         开始时间 
 
@@ -79,7 +79,7 @@ class ShowVodRetrievalRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowVodRetrievalRequest.
+        r"""Gets the end_time of this ShowVodRetrievalRequest.
 
         结束时间 
 
@@ -90,7 +90,7 @@ class ShowVodRetrievalRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowVodRetrievalRequest.
+        r"""Sets the end_time of this ShowVodRetrievalRequest.
 
         结束时间 
 
@@ -101,7 +101,7 @@ class ShowVodRetrievalRequest:
 
     @property
     def interval(self):
-        """Gets the interval of this ShowVodRetrievalRequest.
+        r"""Gets the interval of this ShowVodRetrievalRequest.
 
         采样间隔，单位：秒，取值说明： 时间跨度1天：1小时、4小时、8小时，分别对应3600秒、14400秒和28800秒。 时间跨度2~7天：1小时、4小时、8小时、1天，分别对应3600秒、14400秒、28800秒和86400秒。 时间跨度8~31天：4小时、8小时、1天，分别对应14400秒、28800秒和86400秒。 如果不传，默认取对应时间跨度的最小间隔。 
 
@@ -112,7 +112,7 @@ class ShowVodRetrievalRequest:
 
     @interval.setter
     def interval(self, interval):
-        """Sets the interval of this ShowVodRetrievalRequest.
+        r"""Sets the interval of this ShowVodRetrievalRequest.
 
         采样间隔，单位：秒，取值说明： 时间跨度1天：1小时、4小时、8小时，分别对应3600秒、14400秒和28800秒。 时间跨度2~7天：1小时、4小时、8小时、1天，分别对应3600秒、14400秒、28800秒和86400秒。 时间跨度8~31天：4小时、8小时、1天，分别对应14400秒、28800秒和86400秒。 如果不传，默认取对应时间跨度的最小间隔。 
 

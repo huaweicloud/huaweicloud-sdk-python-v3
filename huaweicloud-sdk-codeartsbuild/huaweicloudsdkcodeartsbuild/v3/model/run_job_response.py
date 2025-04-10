@@ -30,7 +30,7 @@ class RunJobResponse(SdkResponse):
     }
 
     def __init__(self, octopus_job_name=None, actual_build_number=None, daily_build_number=None):
-        """RunJobResponse
+        r"""RunJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class RunJobResponse(SdkResponse):
 
     @property
     def octopus_job_name(self):
-        """Gets the octopus_job_name of this RunJobResponse.
+        r"""Gets the octopus_job_name of this RunJobResponse.
 
         临时任务名称
 
@@ -69,7 +69,7 @@ class RunJobResponse(SdkResponse):
 
     @octopus_job_name.setter
     def octopus_job_name(self, octopus_job_name):
-        """Sets the octopus_job_name of this RunJobResponse.
+        r"""Sets the octopus_job_name of this RunJobResponse.
 
         临时任务名称
 
@@ -80,7 +80,7 @@ class RunJobResponse(SdkResponse):
 
     @property
     def actual_build_number(self):
-        """Gets the actual_build_number of this RunJobResponse.
+        r"""Gets the actual_build_number of this RunJobResponse.
 
         实际构建次数
 
@@ -91,7 +91,7 @@ class RunJobResponse(SdkResponse):
 
     @actual_build_number.setter
     def actual_build_number(self, actual_build_number):
-        """Sets the actual_build_number of this RunJobResponse.
+        r"""Sets the actual_build_number of this RunJobResponse.
 
         实际构建次数
 
@@ -102,7 +102,7 @@ class RunJobResponse(SdkResponse):
 
     @property
     def daily_build_number(self):
-        """Gets the daily_build_number of this RunJobResponse.
+        r"""Gets the daily_build_number of this RunJobResponse.
 
         构建每日编号
 
@@ -113,7 +113,7 @@ class RunJobResponse(SdkResponse):
 
     @daily_build_number.setter
     def daily_build_number(self, daily_build_number):
-        """Sets the daily_build_number of this RunJobResponse.
+        r"""Sets the daily_build_number of this RunJobResponse.
 
         构建每日编号
 

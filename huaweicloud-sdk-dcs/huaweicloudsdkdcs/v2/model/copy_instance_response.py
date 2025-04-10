@@ -26,7 +26,7 @@ class CopyInstanceResponse(SdkResponse):
     }
 
     def __init__(self, backup_id=None):
-        """CopyInstanceResponse
+        r"""CopyInstanceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CopyInstanceResponse(SdkResponse):
 
     @property
     def backup_id(self):
-        """Gets the backup_id of this CopyInstanceResponse.
+        r"""Gets the backup_id of this CopyInstanceResponse.
 
         备份记录ID。
 
@@ -55,7 +55,7 @@ class CopyInstanceResponse(SdkResponse):
 
     @backup_id.setter
     def backup_id(self, backup_id):
-        """Sets the backup_id of this CopyInstanceResponse.
+        r"""Sets the backup_id of this CopyInstanceResponse.
 
         备份记录ID。
 

@@ -28,7 +28,7 @@ class ListDataServiceInstanceAccesslogsResponse(SdkResponse):
     }
 
     def __init__(self, number=None, records=None):
-        """ListDataServiceInstanceAccesslogsResponse
+        r"""ListDataServiceInstanceAccesslogsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDataServiceInstanceAccesslogsResponse(SdkResponse):
 
     @property
     def number(self):
-        """Gets the number of this ListDataServiceInstanceAccesslogsResponse.
+        r"""Gets the number of this ListDataServiceInstanceAccesslogsResponse.
 
         访问日志数量。
 
@@ -62,7 +62,7 @@ class ListDataServiceInstanceAccesslogsResponse(SdkResponse):
 
     @number.setter
     def number(self, number):
-        """Sets the number of this ListDataServiceInstanceAccesslogsResponse.
+        r"""Sets the number of this ListDataServiceInstanceAccesslogsResponse.
 
         访问日志数量。
 
@@ -73,7 +73,7 @@ class ListDataServiceInstanceAccesslogsResponse(SdkResponse):
 
     @property
     def records(self):
-        """Gets the records of this ListDataServiceInstanceAccesslogsResponse.
+        r"""Gets the records of this ListDataServiceInstanceAccesslogsResponse.
 
         访问日志列表。
 
@@ -84,7 +84,7 @@ class ListDataServiceInstanceAccesslogsResponse(SdkResponse):
 
     @records.setter
     def records(self, records):
-        """Sets the records of this ListDataServiceInstanceAccesslogsResponse.
+        r"""Sets the records of this ListDataServiceInstanceAccesslogsResponse.
 
         访问日志列表。
 

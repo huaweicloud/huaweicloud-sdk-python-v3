@@ -35,7 +35,7 @@ class Http2Rpc:
     }
 
     def __init__(self, gateway_id=None, plugin_config=None, name=None, route_name=None, route_destination_name=None, dubbo=None):
-        """Http2Rpc
+        r"""Http2Rpc
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class Http2Rpc:
 
     @property
     def gateway_id(self):
-        """Gets the gateway_id of this Http2Rpc.
+        r"""Gets the gateway_id of this Http2Rpc.
 
         网关的ID。
 
@@ -89,7 +89,7 @@ class Http2Rpc:
 
     @gateway_id.setter
     def gateway_id(self, gateway_id):
-        """Sets the gateway_id of this Http2Rpc.
+        r"""Sets the gateway_id of this Http2Rpc.
 
         网关的ID。
 
@@ -100,7 +100,7 @@ class Http2Rpc:
 
     @property
     def plugin_config(self):
-        """Gets the plugin_config of this Http2Rpc.
+        r"""Gets the plugin_config of this Http2Rpc.
 
         传递给插件的配置。
 
@@ -111,7 +111,7 @@ class Http2Rpc:
 
     @plugin_config.setter
     def plugin_config(self, plugin_config):
-        """Sets the plugin_config of this Http2Rpc.
+        r"""Sets the plugin_config of this Http2Rpc.
 
         传递给插件的配置。
 
@@ -122,7 +122,7 @@ class Http2Rpc:
 
     @property
     def name(self):
-        """Gets the name of this Http2Rpc.
+        r"""Gets the name of this Http2Rpc.
 
         :return: The name of this Http2Rpc.
         :rtype: str
@@ -131,7 +131,7 @@ class Http2Rpc:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Http2Rpc.
+        r"""Sets the name of this Http2Rpc.
 
         :param name: The name of this Http2Rpc.
         :type name: str
@@ -140,7 +140,7 @@ class Http2Rpc:
 
     @property
     def route_name(self):
-        """Gets the route_name of this Http2Rpc.
+        r"""Gets the route_name of this Http2Rpc.
 
         路由的名称。
 
@@ -151,7 +151,7 @@ class Http2Rpc:
 
     @route_name.setter
     def route_name(self, route_name):
-        """Sets the route_name of this Http2Rpc.
+        r"""Sets the route_name of this Http2Rpc.
 
         路由的名称。
 
@@ -162,7 +162,7 @@ class Http2Rpc:
 
     @property
     def route_destination_name(self):
-        """Gets the route_destination_name of this Http2Rpc.
+        r"""Gets the route_destination_name of this Http2Rpc.
 
         目标路由的名称。
 
@@ -173,7 +173,7 @@ class Http2Rpc:
 
     @route_destination_name.setter
     def route_destination_name(self, route_destination_name):
-        """Sets the route_destination_name of this Http2Rpc.
+        r"""Sets the route_destination_name of this Http2Rpc.
 
         目标路由的名称。
 
@@ -184,7 +184,7 @@ class Http2Rpc:
 
     @property
     def dubbo(self):
-        """Gets the dubbo of this Http2Rpc.
+        r"""Gets the dubbo of this Http2Rpc.
 
         :return: The dubbo of this Http2Rpc.
         :rtype: :class:`huaweicloudsdkcse.v1.Dubbo`
@@ -193,7 +193,7 @@ class Http2Rpc:
 
     @dubbo.setter
     def dubbo(self, dubbo):
-        """Sets the dubbo of this Http2Rpc.
+        r"""Sets the dubbo of this Http2Rpc.
 
         :param dubbo: The dubbo of this Http2Rpc.
         :type dubbo: :class:`huaweicloudsdkcse.v1.Dubbo`

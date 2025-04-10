@@ -27,7 +27,7 @@ class ListTableRequestBody:
     }
 
     def __init__(self, cursor_name=None, limit=None):
-        """ListTableRequestBody
+        r"""ListTableRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListTableRequestBody:
 
     @property
     def cursor_name(self):
-        """Gets the cursor_name of this ListTableRequestBody.
+        r"""Gets the cursor_name of this ListTableRequestBody.
 
         上次返回游标位置，本次响应包含该table，空表示遍历完。 - 长度：[3, 63] - 取值字符限制：[a-z0-9_-]+ > 如果为空，表示后面无更多。
 
@@ -61,7 +61,7 @@ class ListTableRequestBody:
 
     @cursor_name.setter
     def cursor_name(self, cursor_name):
-        """Sets the cursor_name of this ListTableRequestBody.
+        r"""Sets the cursor_name of this ListTableRequestBody.
 
         上次返回游标位置，本次响应包含该table，空表示遍历完。 - 长度：[3, 63] - 取值字符限制：[a-z0-9_-]+ > 如果为空，表示后面无更多。
 
@@ -72,7 +72,7 @@ class ListTableRequestBody:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTableRequestBody.
+        r"""Gets the limit of this ListTableRequestBody.
 
         响应返回的表个数。 - 长度：最大100
 
@@ -83,7 +83,7 @@ class ListTableRequestBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTableRequestBody.
+        r"""Sets the limit of this ListTableRequestBody.
 
         响应返回的表个数。 - 长度：最大100
 

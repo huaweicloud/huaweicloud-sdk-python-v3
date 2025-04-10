@@ -25,7 +25,7 @@ class CreateVifPeerRequestBody:
     }
 
     def __init__(self, vif_peer=None):
-        """CreateVifPeerRequestBody
+        r"""CreateVifPeerRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateVifPeerRequestBody:
 
     @property
     def vif_peer(self):
-        """Gets the vif_peer of this CreateVifPeerRequestBody.
+        r"""Gets the vif_peer of this CreateVifPeerRequestBody.
 
         :return: The vif_peer of this CreateVifPeerRequestBody.
         :rtype: :class:`huaweicloudsdkdc.v3.CreateVifPeer`
@@ -52,7 +52,7 @@ class CreateVifPeerRequestBody:
 
     @vif_peer.setter
     def vif_peer(self, vif_peer):
-        """Sets the vif_peer of this CreateVifPeerRequestBody.
+        r"""Sets the vif_peer of this CreateVifPeerRequestBody.
 
         :param vif_peer: The vif_peer of this CreateVifPeerRequestBody.
         :type vif_peer: :class:`huaweicloudsdkdc.v3.CreateVifPeer`

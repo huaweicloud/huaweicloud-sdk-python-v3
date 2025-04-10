@@ -27,7 +27,7 @@ class BatchCreateApplicationViewRequestBodySyncRules:
     }
 
     def __init__(self, ep_id=None, rule_tags=None):
-        """BatchCreateApplicationViewRequestBodySyncRules
+        r"""BatchCreateApplicationViewRequestBodySyncRules
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class BatchCreateApplicationViewRequestBodySyncRules:
 
     @property
     def ep_id(self):
-        """Gets the ep_id of this BatchCreateApplicationViewRequestBodySyncRules.
+        r"""Gets the ep_id of this BatchCreateApplicationViewRequestBodySyncRules.
 
         企业项目id
 
@@ -61,7 +61,7 @@ class BatchCreateApplicationViewRequestBodySyncRules:
 
     @ep_id.setter
     def ep_id(self, ep_id):
-        """Sets the ep_id of this BatchCreateApplicationViewRequestBodySyncRules.
+        r"""Sets the ep_id of this BatchCreateApplicationViewRequestBodySyncRules.
 
         企业项目id
 
@@ -72,7 +72,7 @@ class BatchCreateApplicationViewRequestBodySyncRules:
 
     @property
     def rule_tags(self):
-        """Gets the rule_tags of this BatchCreateApplicationViewRequestBodySyncRules.
+        r"""Gets the rule_tags of this BatchCreateApplicationViewRequestBodySyncRules.
 
         关联标签
 
@@ -83,7 +83,7 @@ class BatchCreateApplicationViewRequestBodySyncRules:
 
     @rule_tags.setter
     def rule_tags(self, rule_tags):
-        """Sets the rule_tags of this BatchCreateApplicationViewRequestBodySyncRules.
+        r"""Sets the rule_tags of this BatchCreateApplicationViewRequestBodySyncRules.
 
         关联标签
 

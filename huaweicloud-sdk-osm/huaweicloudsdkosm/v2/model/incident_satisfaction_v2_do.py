@@ -37,7 +37,7 @@ class IncidentSatisfactionV2Do:
     }
 
     def __init__(self, value=None, satisfaction_id=None, satisfaction_value=None, satisfaction_name=None, per_value=None, sat_category_id=None, sat_category_name=None):
-        """IncidentSatisfactionV2Do
+        r"""IncidentSatisfactionV2Do
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class IncidentSatisfactionV2Do:
 
     @property
     def value(self):
-        """Gets the value of this IncidentSatisfactionV2Do.
+        r"""Gets the value of this IncidentSatisfactionV2Do.
 
         满意度总分数
 
@@ -94,7 +94,7 @@ class IncidentSatisfactionV2Do:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this IncidentSatisfactionV2Do.
+        r"""Sets the value of this IncidentSatisfactionV2Do.
 
         满意度总分数
 
@@ -105,7 +105,7 @@ class IncidentSatisfactionV2Do:
 
     @property
     def satisfaction_id(self):
-        """Gets the satisfaction_id of this IncidentSatisfactionV2Do.
+        r"""Gets the satisfaction_id of this IncidentSatisfactionV2Do.
 
         满意度分类id
 
@@ -116,7 +116,7 @@ class IncidentSatisfactionV2Do:
 
     @satisfaction_id.setter
     def satisfaction_id(self, satisfaction_id):
-        """Sets the satisfaction_id of this IncidentSatisfactionV2Do.
+        r"""Sets the satisfaction_id of this IncidentSatisfactionV2Do.
 
         满意度分类id
 
@@ -127,7 +127,7 @@ class IncidentSatisfactionV2Do:
 
     @property
     def satisfaction_value(self):
-        """Gets the satisfaction_value of this IncidentSatisfactionV2Do.
+        r"""Gets the satisfaction_value of this IncidentSatisfactionV2Do.
 
         满意度的值
 
@@ -138,7 +138,7 @@ class IncidentSatisfactionV2Do:
 
     @satisfaction_value.setter
     def satisfaction_value(self, satisfaction_value):
-        """Sets the satisfaction_value of this IncidentSatisfactionV2Do.
+        r"""Sets the satisfaction_value of this IncidentSatisfactionV2Do.
 
         满意度的值
 
@@ -149,7 +149,7 @@ class IncidentSatisfactionV2Do:
 
     @property
     def satisfaction_name(self):
-        """Gets the satisfaction_name of this IncidentSatisfactionV2Do.
+        r"""Gets the satisfaction_name of this IncidentSatisfactionV2Do.
 
         满意度分类名称
 
@@ -160,7 +160,7 @@ class IncidentSatisfactionV2Do:
 
     @satisfaction_name.setter
     def satisfaction_name(self, satisfaction_name):
-        """Sets the satisfaction_name of this IncidentSatisfactionV2Do.
+        r"""Sets the satisfaction_name of this IncidentSatisfactionV2Do.
 
         满意度分类名称
 
@@ -171,7 +171,7 @@ class IncidentSatisfactionV2Do:
 
     @property
     def per_value(self):
-        """Gets the per_value of this IncidentSatisfactionV2Do.
+        r"""Gets the per_value of this IncidentSatisfactionV2Do.
 
         每格的分数
 
@@ -182,7 +182,7 @@ class IncidentSatisfactionV2Do:
 
     @per_value.setter
     def per_value(self, per_value):
-        """Sets the per_value of this IncidentSatisfactionV2Do.
+        r"""Sets the per_value of this IncidentSatisfactionV2Do.
 
         每格的分数
 
@@ -193,7 +193,7 @@ class IncidentSatisfactionV2Do:
 
     @property
     def sat_category_id(self):
-        """Gets the sat_category_id of this IncidentSatisfactionV2Do.
+        r"""Gets the sat_category_id of this IncidentSatisfactionV2Do.
 
         满意度维度id
 
@@ -204,7 +204,7 @@ class IncidentSatisfactionV2Do:
 
     @sat_category_id.setter
     def sat_category_id(self, sat_category_id):
-        """Sets the sat_category_id of this IncidentSatisfactionV2Do.
+        r"""Sets the sat_category_id of this IncidentSatisfactionV2Do.
 
         满意度维度id
 
@@ -215,7 +215,7 @@ class IncidentSatisfactionV2Do:
 
     @property
     def sat_category_name(self):
-        """Gets the sat_category_name of this IncidentSatisfactionV2Do.
+        r"""Gets the sat_category_name of this IncidentSatisfactionV2Do.
 
         满意度维度名称
 
@@ -226,7 +226,7 @@ class IncidentSatisfactionV2Do:
 
     @sat_category_name.setter
     def sat_category_name(self, sat_category_name):
-        """Sets the sat_category_name of this IncidentSatisfactionV2Do.
+        r"""Sets the sat_category_name of this IncidentSatisfactionV2Do.
 
         满意度维度名称
 

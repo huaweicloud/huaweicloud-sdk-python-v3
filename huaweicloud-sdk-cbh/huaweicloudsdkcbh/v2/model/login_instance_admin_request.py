@@ -25,7 +25,7 @@ class LoginInstanceAdminRequest:
     }
 
     def __init__(self, server_id=None):
-        """LoginInstanceAdminRequest
+        r"""LoginInstanceAdminRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class LoginInstanceAdminRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this LoginInstanceAdminRequest.
+        r"""Gets the server_id of this LoginInstanceAdminRequest.
 
         云堡垒机实例ID，使用UUID格式表示。  获取方法详见用户指南里面的实例\"查看实例详情\"
 
@@ -53,7 +53,7 @@ class LoginInstanceAdminRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this LoginInstanceAdminRequest.
+        r"""Sets the server_id of this LoginInstanceAdminRequest.
 
         云堡垒机实例ID，使用UUID格式表示。  获取方法详见用户指南里面的实例\"查看实例详情\"
 

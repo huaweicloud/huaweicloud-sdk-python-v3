@@ -26,7 +26,7 @@ class BatchSyncNodesResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """BatchSyncNodesResponse
+        r"""BatchSyncNodesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchSyncNodesResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this BatchSyncNodesResponse.
+        r"""Gets the body of this BatchSyncNodesResponse.
 
         :return: The body of this BatchSyncNodesResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class BatchSyncNodesResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchSyncNodesResponse.
+        r"""Sets the body of this BatchSyncNodesResponse.
 
         :param body: The body of this BatchSyncNodesResponse.
         :type body: str

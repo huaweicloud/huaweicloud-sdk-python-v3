@@ -54,7 +54,7 @@ class DeleteHostResponse(SdkResponse):
     }
 
     def __init__(self, id=None, hostid=None, description=None, type=None, proxy=None, flag=None, hostname=None, access_code=None, policyid=None, timestamp=None, protect_status=None, access_status=None, exclusive_ip=None, paid_type=None, web_tag=None):
-        """DeleteHostResponse
+        r"""DeleteHostResponse
 
         The model defined in huaweicloud sdk
 
@@ -142,7 +142,7 @@ class DeleteHostResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this DeleteHostResponse.
+        r"""Gets the id of this DeleteHostResponse.
 
         域名id
 
@@ -153,7 +153,7 @@ class DeleteHostResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteHostResponse.
+        r"""Sets the id of this DeleteHostResponse.
 
         域名id
 
@@ -164,7 +164,7 @@ class DeleteHostResponse(SdkResponse):
 
     @property
     def hostid(self):
-        """Gets the hostid of this DeleteHostResponse.
+        r"""Gets the hostid of this DeleteHostResponse.
 
         域名id
 
@@ -175,7 +175,7 @@ class DeleteHostResponse(SdkResponse):
 
     @hostid.setter
     def hostid(self, hostid):
-        """Sets the hostid of this DeleteHostResponse.
+        r"""Sets the hostid of this DeleteHostResponse.
 
         域名id
 
@@ -186,7 +186,7 @@ class DeleteHostResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this DeleteHostResponse.
+        r"""Gets the description of this DeleteHostResponse.
 
         描述信息
 
@@ -197,7 +197,7 @@ class DeleteHostResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this DeleteHostResponse.
+        r"""Sets the description of this DeleteHostResponse.
 
         描述信息
 
@@ -208,7 +208,7 @@ class DeleteHostResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this DeleteHostResponse.
+        r"""Gets the type of this DeleteHostResponse.
 
         WAF部署模式，默认是1，目前仅支持反代模式
 
@@ -219,7 +219,7 @@ class DeleteHostResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DeleteHostResponse.
+        r"""Sets the type of this DeleteHostResponse.
 
         WAF部署模式，默认是1，目前仅支持反代模式
 
@@ -230,7 +230,7 @@ class DeleteHostResponse(SdkResponse):
 
     @property
     def proxy(self):
-        """Gets the proxy of this DeleteHostResponse.
+        r"""Gets the proxy of this DeleteHostResponse.
 
         防护域名是否使用代理    - false：不使用代理   - true：使用代理
 
@@ -241,7 +241,7 @@ class DeleteHostResponse(SdkResponse):
 
     @proxy.setter
     def proxy(self, proxy):
-        """Sets the proxy of this DeleteHostResponse.
+        r"""Sets the proxy of this DeleteHostResponse.
 
         防护域名是否使用代理    - false：不使用代理   - true：使用代理
 
@@ -252,7 +252,7 @@ class DeleteHostResponse(SdkResponse):
 
     @property
     def flag(self):
-        """Gets the flag of this DeleteHostResponse.
+        r"""Gets the flag of this DeleteHostResponse.
 
         :return: The flag of this DeleteHostResponse.
         :rtype: :class:`huaweicloudsdkwaf.v1.Flag`
@@ -261,7 +261,7 @@ class DeleteHostResponse(SdkResponse):
 
     @flag.setter
     def flag(self, flag):
-        """Sets the flag of this DeleteHostResponse.
+        r"""Sets the flag of this DeleteHostResponse.
 
         :param flag: The flag of this DeleteHostResponse.
         :type flag: :class:`huaweicloudsdkwaf.v1.Flag`
@@ -270,7 +270,7 @@ class DeleteHostResponse(SdkResponse):
 
     @property
     def hostname(self):
-        """Gets the hostname of this DeleteHostResponse.
+        r"""Gets the hostname of this DeleteHostResponse.
 
         创建的云模式防护域名
 
@@ -281,7 +281,7 @@ class DeleteHostResponse(SdkResponse):
 
     @hostname.setter
     def hostname(self, hostname):
-        """Sets the hostname of this DeleteHostResponse.
+        r"""Sets the hostname of this DeleteHostResponse.
 
         创建的云模式防护域名
 
@@ -292,7 +292,7 @@ class DeleteHostResponse(SdkResponse):
 
     @property
     def access_code(self):
-        """Gets the access_code of this DeleteHostResponse.
+        r"""Gets the access_code of this DeleteHostResponse.
 
         cname后缀
 
@@ -303,7 +303,7 @@ class DeleteHostResponse(SdkResponse):
 
     @access_code.setter
     def access_code(self, access_code):
-        """Sets the access_code of this DeleteHostResponse.
+        r"""Sets the access_code of this DeleteHostResponse.
 
         cname后缀
 
@@ -314,7 +314,7 @@ class DeleteHostResponse(SdkResponse):
 
     @property
     def policyid(self):
-        """Gets the policyid of this DeleteHostResponse.
+        r"""Gets the policyid of this DeleteHostResponse.
 
         策略id
 
@@ -325,7 +325,7 @@ class DeleteHostResponse(SdkResponse):
 
     @policyid.setter
     def policyid(self, policyid):
-        """Sets the policyid of this DeleteHostResponse.
+        r"""Sets the policyid of this DeleteHostResponse.
 
         策略id
 
@@ -336,7 +336,7 @@ class DeleteHostResponse(SdkResponse):
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this DeleteHostResponse.
+        r"""Gets the timestamp of this DeleteHostResponse.
 
         创建防护域名的时间
 
@@ -347,7 +347,7 @@ class DeleteHostResponse(SdkResponse):
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this DeleteHostResponse.
+        r"""Sets the timestamp of this DeleteHostResponse.
 
         创建防护域名的时间
 
@@ -358,7 +358,7 @@ class DeleteHostResponse(SdkResponse):
 
     @property
     def protect_status(self):
-        """Gets the protect_status of this DeleteHostResponse.
+        r"""Gets the protect_status of this DeleteHostResponse.
 
         域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
 
@@ -369,7 +369,7 @@ class DeleteHostResponse(SdkResponse):
 
     @protect_status.setter
     def protect_status(self, protect_status):
-        """Sets the protect_status of this DeleteHostResponse.
+        r"""Sets the protect_status of this DeleteHostResponse.
 
         域名防护状态：  - -1：bypass，该域名的请求直接到达其后端服务器，不再经过WAF  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
 
@@ -380,7 +380,7 @@ class DeleteHostResponse(SdkResponse):
 
     @property
     def access_status(self):
-        """Gets the access_status of this DeleteHostResponse.
+        r"""Gets the access_status of this DeleteHostResponse.
 
         接入状态，0： 未接入，1：已接入
 
@@ -391,7 +391,7 @@ class DeleteHostResponse(SdkResponse):
 
     @access_status.setter
     def access_status(self, access_status):
-        """Sets the access_status of this DeleteHostResponse.
+        r"""Sets the access_status of this DeleteHostResponse.
 
         接入状态，0： 未接入，1：已接入
 
@@ -402,7 +402,7 @@ class DeleteHostResponse(SdkResponse):
 
     @property
     def exclusive_ip(self):
-        """Gets the exclusive_ip of this DeleteHostResponse.
+        r"""Gets the exclusive_ip of this DeleteHostResponse.
 
         是否使用独享ip   - true：使用独享ip   - false：不实用独享ip
 
@@ -413,7 +413,7 @@ class DeleteHostResponse(SdkResponse):
 
     @exclusive_ip.setter
     def exclusive_ip(self, exclusive_ip):
-        """Sets the exclusive_ip of this DeleteHostResponse.
+        r"""Sets the exclusive_ip of this DeleteHostResponse.
 
         是否使用独享ip   - true：使用独享ip   - false：不实用独享ip
 
@@ -424,7 +424,7 @@ class DeleteHostResponse(SdkResponse):
 
     @property
     def paid_type(self):
-        """Gets the paid_type of this DeleteHostResponse.
+        r"""Gets the paid_type of this DeleteHostResponse.
 
         套餐付费模式，默认值为prePaid。prePaid：包周期款模式；postPaid：按需模式。
 
@@ -435,7 +435,7 @@ class DeleteHostResponse(SdkResponse):
 
     @paid_type.setter
     def paid_type(self, paid_type):
-        """Sets the paid_type of this DeleteHostResponse.
+        r"""Sets the paid_type of this DeleteHostResponse.
 
         套餐付费模式，默认值为prePaid。prePaid：包周期款模式；postPaid：按需模式。
 
@@ -446,7 +446,7 @@ class DeleteHostResponse(SdkResponse):
 
     @property
     def web_tag(self):
-        """Gets the web_tag of this DeleteHostResponse.
+        r"""Gets the web_tag of this DeleteHostResponse.
 
         网站名称，对应WAF控制台域名详情中的网站名称
 
@@ -457,7 +457,7 @@ class DeleteHostResponse(SdkResponse):
 
     @web_tag.setter
     def web_tag(self, web_tag):
-        """Sets the web_tag of this DeleteHostResponse.
+        r"""Sets the web_tag of this DeleteHostResponse.
 
         网站名称，对应WAF控制台域名详情中的网站名称
 

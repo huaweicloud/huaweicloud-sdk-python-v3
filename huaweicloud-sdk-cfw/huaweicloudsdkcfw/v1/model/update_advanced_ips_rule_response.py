@@ -26,7 +26,7 @@ class UpdateAdvancedIpsRuleResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """UpdateAdvancedIpsRuleResponse
+        r"""UpdateAdvancedIpsRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateAdvancedIpsRuleResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this UpdateAdvancedIpsRuleResponse.
+        r"""Gets the data of this UpdateAdvancedIpsRuleResponse.
 
         :return: The data of this UpdateAdvancedIpsRuleResponse.
         :rtype: :class:`huaweicloudsdkcfw.v1.ResponseData`
@@ -53,7 +53,7 @@ class UpdateAdvancedIpsRuleResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this UpdateAdvancedIpsRuleResponse.
+        r"""Sets the data of this UpdateAdvancedIpsRuleResponse.
 
         :param data: The data of this UpdateAdvancedIpsRuleResponse.
         :type data: :class:`huaweicloudsdkcfw.v1.ResponseData`

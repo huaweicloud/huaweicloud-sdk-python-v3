@@ -28,7 +28,7 @@ class ListGlobalConnectionBandwidthConfigsResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, configs=None):
-        """ListGlobalConnectionBandwidthConfigsResponse
+        r"""ListGlobalConnectionBandwidthConfigsResponse
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListGlobalConnectionBandwidthConfigsResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListGlobalConnectionBandwidthConfigsResponse.
+        r"""Gets the request_id of this ListGlobalConnectionBandwidthConfigsResponse.
 
         请求ID。
 
@@ -61,7 +61,7 @@ class ListGlobalConnectionBandwidthConfigsResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListGlobalConnectionBandwidthConfigsResponse.
+        r"""Sets the request_id of this ListGlobalConnectionBandwidthConfigsResponse.
 
         请求ID。
 
@@ -72,7 +72,7 @@ class ListGlobalConnectionBandwidthConfigsResponse(SdkResponse):
 
     @property
     def configs(self):
-        """Gets the configs of this ListGlobalConnectionBandwidthConfigsResponse.
+        r"""Gets the configs of this ListGlobalConnectionBandwidthConfigsResponse.
 
         :return: The configs of this ListGlobalConnectionBandwidthConfigsResponse.
         :rtype: :class:`huaweicloudsdkcc.v3.ListGlobalConnectionBandwidthConfigs`
@@ -81,7 +81,7 @@ class ListGlobalConnectionBandwidthConfigsResponse(SdkResponse):
 
     @configs.setter
     def configs(self, configs):
-        """Sets the configs of this ListGlobalConnectionBandwidthConfigsResponse.
+        r"""Sets the configs of this ListGlobalConnectionBandwidthConfigsResponse.
 
         :param configs: The configs of this ListGlobalConnectionBandwidthConfigsResponse.
         :type configs: :class:`huaweicloudsdkcc.v3.ListGlobalConnectionBandwidthConfigs`

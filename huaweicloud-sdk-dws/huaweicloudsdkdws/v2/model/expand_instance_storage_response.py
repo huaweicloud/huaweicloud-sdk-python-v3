@@ -24,7 +24,7 @@ class ExpandInstanceStorageResponse(SdkResponse):
     }
 
     def __init__(self):
-        """ExpandInstanceStorageResponse
+        r"""ExpandInstanceStorageResponse
 
         The model defined in huaweicloud sdk
 

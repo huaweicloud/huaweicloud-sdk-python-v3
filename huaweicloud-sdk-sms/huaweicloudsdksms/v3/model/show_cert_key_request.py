@@ -27,7 +27,7 @@ class ShowCertKeyRequest:
     }
 
     def __init__(self, task_id=None, enable_ca_cert=None):
-        """ShowCertKeyRequest
+        r"""ShowCertKeyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowCertKeyRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowCertKeyRequest.
+        r"""Gets the task_id of this ShowCertKeyRequest.
 
         迁移任务ID
 
@@ -60,7 +60,7 @@ class ShowCertKeyRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowCertKeyRequest.
+        r"""Sets the task_id of this ShowCertKeyRequest.
 
         迁移任务ID
 
@@ -71,7 +71,7 @@ class ShowCertKeyRequest:
 
     @property
     def enable_ca_cert(self):
-        """Gets the enable_ca_cert of this ShowCertKeyRequest.
+        r"""Gets the enable_ca_cert of this ShowCertKeyRequest.
 
         是否生成ca证书
 
@@ -82,7 +82,7 @@ class ShowCertKeyRequest:
 
     @enable_ca_cert.setter
     def enable_ca_cert(self, enable_ca_cert):
-        """Sets the enable_ca_cert of this ShowCertKeyRequest.
+        r"""Sets the enable_ca_cert of this ShowCertKeyRequest.
 
         是否生成ca证书
 

@@ -29,7 +29,7 @@ class ListTablePrivilegesRequest:
     }
 
     def __init__(self, database_name=None, table_name=None, user_name=None):
-        """ListTablePrivilegesRequest
+        r"""ListTablePrivilegesRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ListTablePrivilegesRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this ListTablePrivilegesRequest.
+        r"""Gets the database_name of this ListTablePrivilegesRequest.
 
         被查询的数据库名称。
 
@@ -65,7 +65,7 @@ class ListTablePrivilegesRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this ListTablePrivilegesRequest.
+        r"""Sets the database_name of this ListTablePrivilegesRequest.
 
         被查询的数据库名称。
 
@@ -76,7 +76,7 @@ class ListTablePrivilegesRequest:
 
     @property
     def table_name(self):
-        """Gets the table_name of this ListTablePrivilegesRequest.
+        r"""Gets the table_name of this ListTablePrivilegesRequest.
 
         被查询的表名称。
 
@@ -87,7 +87,7 @@ class ListTablePrivilegesRequest:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this ListTablePrivilegesRequest.
+        r"""Sets the table_name of this ListTablePrivilegesRequest.
 
         被查询的表名称。
 
@@ -98,7 +98,7 @@ class ListTablePrivilegesRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ListTablePrivilegesRequest.
+        r"""Gets the user_name of this ListTablePrivilegesRequest.
 
         被查询的用户名称。
 
@@ -109,7 +109,7 @@ class ListTablePrivilegesRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ListTablePrivilegesRequest.
+        r"""Sets the user_name of this ListTablePrivilegesRequest.
 
         被查询的用户名称。
 

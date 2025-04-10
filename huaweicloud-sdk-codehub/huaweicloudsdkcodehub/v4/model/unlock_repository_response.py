@@ -26,7 +26,7 @@ class UnlockRepositoryResponse(SdkResponse):
     }
 
     def __init__(self, locked=None):
-        """UnlockRepositoryResponse
+        r"""UnlockRepositoryResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UnlockRepositoryResponse(SdkResponse):
 
     @property
     def locked(self):
-        """Gets the locked of this UnlockRepositoryResponse.
+        r"""Gets the locked of this UnlockRepositoryResponse.
 
         锁定状态
 
@@ -55,7 +55,7 @@ class UnlockRepositoryResponse(SdkResponse):
 
     @locked.setter
     def locked(self, locked):
-        """Sets the locked of this UnlockRepositoryResponse.
+        r"""Sets the locked of this UnlockRepositoryResponse.
 
         锁定状态
 

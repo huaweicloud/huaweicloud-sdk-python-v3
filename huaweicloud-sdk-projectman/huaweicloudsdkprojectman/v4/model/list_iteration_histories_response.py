@@ -28,7 +28,7 @@ class ListIterationHistoriesResponse(SdkResponse):
     }
 
     def __init__(self, total=None, histories=None):
-        """ListIterationHistoriesResponse
+        r"""ListIterationHistoriesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListIterationHistoriesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListIterationHistoriesResponse.
+        r"""Gets the total of this ListIterationHistoriesResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class ListIterationHistoriesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListIterationHistoriesResponse.
+        r"""Sets the total of this ListIterationHistoriesResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class ListIterationHistoriesResponse(SdkResponse):
 
     @property
     def histories(self):
-        """Gets the histories of this ListIterationHistoriesResponse.
+        r"""Gets the histories of this ListIterationHistoriesResponse.
 
         历史记录
 
@@ -84,7 +84,7 @@ class ListIterationHistoriesResponse(SdkResponse):
 
     @histories.setter
     def histories(self, histories):
-        """Sets the histories of this ListIterationHistoriesResponse.
+        r"""Sets the histories of this ListIterationHistoriesResponse.
 
         历史记录
 

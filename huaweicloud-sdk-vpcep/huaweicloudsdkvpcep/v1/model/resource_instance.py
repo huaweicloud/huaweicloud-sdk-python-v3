@@ -29,7 +29,7 @@ class ResourceInstance:
     }
 
     def __init__(self, resource_id=None, tags=None, resource_name=None):
-        """ResourceInstance
+        r"""ResourceInstance
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ResourceInstance:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ResourceInstance.
+        r"""Gets the resource_id of this ResourceInstance.
 
         资源ID，Endpoint Service ID或Endpoint ID。
 
@@ -68,7 +68,7 @@ class ResourceInstance:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ResourceInstance.
+        r"""Sets the resource_id of this ResourceInstance.
 
         资源ID，Endpoint Service ID或Endpoint ID。
 
@@ -79,7 +79,7 @@ class ResourceInstance:
 
     @property
     def tags(self):
-        """Gets the tags of this ResourceInstance.
+        r"""Gets the tags of this ResourceInstance.
 
         标签列表。
 
@@ -90,7 +90,7 @@ class ResourceInstance:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ResourceInstance.
+        r"""Sets the tags of this ResourceInstance.
 
         标签列表。
 
@@ -101,7 +101,7 @@ class ResourceInstance:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this ResourceInstance.
+        r"""Gets the resource_name of this ResourceInstance.
 
         资源名称，资源没有名称时，返回ID。
 
@@ -112,7 +112,7 @@ class ResourceInstance:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this ResourceInstance.
+        r"""Sets the resource_name of this ResourceInstance.
 
         资源名称，资源没有名称时，返回ID。
 

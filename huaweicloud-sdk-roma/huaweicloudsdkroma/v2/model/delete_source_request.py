@@ -29,7 +29,7 @@ class DeleteSourceRequest:
     }
 
     def __init__(self, instance_id=None, rule_id=None, source_id=None):
-        """DeleteSourceRequest
+        r"""DeleteSourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DeleteSourceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteSourceRequest.
+        r"""Gets the instance_id of this DeleteSourceRequest.
 
         实例ID
 
@@ -65,7 +65,7 @@ class DeleteSourceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteSourceRequest.
+        r"""Sets the instance_id of this DeleteSourceRequest.
 
         实例ID
 
@@ -76,7 +76,7 @@ class DeleteSourceRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this DeleteSourceRequest.
+        r"""Gets the rule_id of this DeleteSourceRequest.
 
         规则ID
 
@@ -87,7 +87,7 @@ class DeleteSourceRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this DeleteSourceRequest.
+        r"""Sets the rule_id of this DeleteSourceRequest.
 
         规则ID
 
@@ -98,7 +98,7 @@ class DeleteSourceRequest:
 
     @property
     def source_id(self):
-        """Gets the source_id of this DeleteSourceRequest.
+        r"""Gets the source_id of this DeleteSourceRequest.
 
         源数据源ID
 
@@ -109,7 +109,7 @@ class DeleteSourceRequest:
 
     @source_id.setter
     def source_id(self, source_id):
-        """Sets the source_id of this DeleteSourceRequest.
+        r"""Sets the source_id of this DeleteSourceRequest.
 
         源数据源ID
 

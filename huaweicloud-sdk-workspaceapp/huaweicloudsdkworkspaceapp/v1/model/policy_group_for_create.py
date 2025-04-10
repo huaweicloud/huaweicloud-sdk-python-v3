@@ -33,7 +33,7 @@ class PolicyGroupForCreate:
     }
 
     def __init__(self, policy_group_name=None, priority=None, description=None, targets=None, policies=None):
-        """PolicyGroupForCreate
+        r"""PolicyGroupForCreate
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class PolicyGroupForCreate:
 
     @property
     def policy_group_name(self):
-        """Gets the policy_group_name of this PolicyGroupForCreate.
+        r"""Gets the policy_group_name of this PolicyGroupForCreate.
 
         策略组名称，名称需要满足如下规则： 1. 由英文、数字或者下划线组成，不能有空格。 2. 字符长度范围1-55。
 
@@ -81,7 +81,7 @@ class PolicyGroupForCreate:
 
     @policy_group_name.setter
     def policy_group_name(self, policy_group_name):
-        """Sets the policy_group_name of this PolicyGroupForCreate.
+        r"""Sets the policy_group_name of this PolicyGroupForCreate.
 
         策略组名称，名称需要满足如下规则： 1. 由英文、数字或者下划线组成，不能有空格。 2. 字符长度范围1-55。
 
@@ -92,7 +92,7 @@ class PolicyGroupForCreate:
 
     @property
     def priority(self):
-        """Gets the priority of this PolicyGroupForCreate.
+        r"""Gets the priority of this PolicyGroupForCreate.
 
         优先级。
 
@@ -103,7 +103,7 @@ class PolicyGroupForCreate:
 
     @priority.setter
     def priority(self, priority):
-        """Sets the priority of this PolicyGroupForCreate.
+        r"""Sets the priority of this PolicyGroupForCreate.
 
         优先级。
 
@@ -114,7 +114,7 @@ class PolicyGroupForCreate:
 
     @property
     def description(self):
-        """Gets the description of this PolicyGroupForCreate.
+        r"""Gets the description of this PolicyGroupForCreate.
 
         策略组描述。
 
@@ -125,7 +125,7 @@ class PolicyGroupForCreate:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PolicyGroupForCreate.
+        r"""Sets the description of this PolicyGroupForCreate.
 
         策略组描述。
 
@@ -136,7 +136,7 @@ class PolicyGroupForCreate:
 
     @property
     def targets(self):
-        """Gets the targets of this PolicyGroupForCreate.
+        r"""Gets the targets of this PolicyGroupForCreate.
 
         应用对象列表。
 
@@ -147,7 +147,7 @@ class PolicyGroupForCreate:
 
     @targets.setter
     def targets(self, targets):
-        """Sets the targets of this PolicyGroupForCreate.
+        r"""Sets the targets of this PolicyGroupForCreate.
 
         应用对象列表。
 
@@ -158,7 +158,7 @@ class PolicyGroupForCreate:
 
     @property
     def policies(self):
-        """Gets the policies of this PolicyGroupForCreate.
+        r"""Gets the policies of this PolicyGroupForCreate.
 
         :return: The policies of this PolicyGroupForCreate.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.Policies`
@@ -167,7 +167,7 @@ class PolicyGroupForCreate:
 
     @policies.setter
     def policies(self, policies):
-        """Sets the policies of this PolicyGroupForCreate.
+        r"""Sets the policies of this PolicyGroupForCreate.
 
         :param policies: The policies of this PolicyGroupForCreate.
         :type policies: :class:`huaweicloudsdkworkspaceapp.v1.Policies`

@@ -41,7 +41,7 @@ class LiveVideoScriptInfo:
     }
 
     def __init__(self, script_id=None, script_name=None, script_description=None, dh_id=None, model_asset_id=None, voice_config=None, background_config=None, layer_config=None, shoot_scripts=None):
-        """LiveVideoScriptInfo
+        r"""LiveVideoScriptInfo
 
         The model defined in huaweicloud sdk
 
@@ -97,7 +97,7 @@ class LiveVideoScriptInfo:
 
     @property
     def script_id(self):
-        """Gets the script_id of this LiveVideoScriptInfo.
+        r"""Gets the script_id of this LiveVideoScriptInfo.
 
         **参数解释**： 剧本ID。 **约束限制**： 该字段无需填写。 **取值范围**： 字符长度1-64位。 **默认取值**： 不涉及。
 
@@ -108,7 +108,7 @@ class LiveVideoScriptInfo:
 
     @script_id.setter
     def script_id(self, script_id):
-        """Sets the script_id of this LiveVideoScriptInfo.
+        r"""Sets the script_id of this LiveVideoScriptInfo.
 
         **参数解释**： 剧本ID。 **约束限制**： 该字段无需填写。 **取值范围**： 字符长度1-64位。 **默认取值**： 不涉及。
 
@@ -119,7 +119,7 @@ class LiveVideoScriptInfo:
 
     @property
     def script_name(self):
-        """Gets the script_name of this LiveVideoScriptInfo.
+        r"""Gets the script_name of this LiveVideoScriptInfo.
 
         **参数解释**： 剧本名称。 **约束限制**： 该字段必须填写。 **取值范围**： 字符长度1-256位。 **默认取值**： 不涉及。
 
@@ -130,7 +130,7 @@ class LiveVideoScriptInfo:
 
     @script_name.setter
     def script_name(self, script_name):
-        """Sets the script_name of this LiveVideoScriptInfo.
+        r"""Sets the script_name of this LiveVideoScriptInfo.
 
         **参数解释**： 剧本名称。 **约束限制**： 该字段必须填写。 **取值范围**： 字符长度1-256位。 **默认取值**： 不涉及。
 
@@ -141,7 +141,7 @@ class LiveVideoScriptInfo:
 
     @property
     def script_description(self):
-        """Gets the script_description of this LiveVideoScriptInfo.
+        r"""Gets the script_description of this LiveVideoScriptInfo.
 
         **参数解释**： 剧本描述。 **约束限制**： 该字段无需填写。 **取值范围**： 字符长度0-1024位。 **默认取值**： 不涉及。
 
@@ -152,7 +152,7 @@ class LiveVideoScriptInfo:
 
     @script_description.setter
     def script_description(self, script_description):
-        """Sets the script_description of this LiveVideoScriptInfo.
+        r"""Sets the script_description of this LiveVideoScriptInfo.
 
         **参数解释**： 剧本描述。 **约束限制**： 该字段无需填写。 **取值范围**： 字符长度0-1024位。 **默认取值**： 不涉及。
 
@@ -163,7 +163,7 @@ class LiveVideoScriptInfo:
 
     @property
     def dh_id(self):
-        """Gets the dh_id of this LiveVideoScriptInfo.
+        r"""Gets the dh_id of this LiveVideoScriptInfo.
 
         **参数解释**： 数字人ID。对应形象和音色组合。 **约束限制**： 该字段暂未启用，无需填写。 **取值范围**： 字符长度0-64位。 **默认取值**： 不涉及。
 
@@ -174,7 +174,7 @@ class LiveVideoScriptInfo:
 
     @dh_id.setter
     def dh_id(self, dh_id):
-        """Sets the dh_id of this LiveVideoScriptInfo.
+        r"""Sets the dh_id of this LiveVideoScriptInfo.
 
         **参数解释**： 数字人ID。对应形象和音色组合。 **约束限制**： 该字段暂未启用，无需填写。 **取值范围**： 字符长度0-64位。 **默认取值**： 不涉及。
 
@@ -185,7 +185,7 @@ class LiveVideoScriptInfo:
 
     @property
     def model_asset_id(self):
-        """Gets the model_asset_id of this LiveVideoScriptInfo.
+        r"""Gets the model_asset_id of this LiveVideoScriptInfo.
 
         **参数解释**： 数字人模型资产ID，可以从资产库中查询。 **约束限制**： 不涉及 **取值范围**： 字符长度0-64位。 **默认取值**： 不涉及
 
@@ -196,7 +196,7 @@ class LiveVideoScriptInfo:
 
     @model_asset_id.setter
     def model_asset_id(self, model_asset_id):
-        """Sets the model_asset_id of this LiveVideoScriptInfo.
+        r"""Sets the model_asset_id of this LiveVideoScriptInfo.
 
         **参数解释**： 数字人模型资产ID，可以从资产库中查询。 **约束限制**： 不涉及 **取值范围**： 字符长度0-64位。 **默认取值**： 不涉及
 
@@ -207,7 +207,7 @@ class LiveVideoScriptInfo:
 
     @property
     def voice_config(self):
-        """Gets the voice_config of this LiveVideoScriptInfo.
+        r"""Gets the voice_config of this LiveVideoScriptInfo.
 
         :return: The voice_config of this LiveVideoScriptInfo.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.VoiceConfig`
@@ -216,7 +216,7 @@ class LiveVideoScriptInfo:
 
     @voice_config.setter
     def voice_config(self, voice_config):
-        """Sets the voice_config of this LiveVideoScriptInfo.
+        r"""Sets the voice_config of this LiveVideoScriptInfo.
 
         :param voice_config: The voice_config of this LiveVideoScriptInfo.
         :type voice_config: :class:`huaweicloudsdkmetastudio.v1.VoiceConfig`
@@ -225,7 +225,7 @@ class LiveVideoScriptInfo:
 
     @property
     def background_config(self):
-        """Gets the background_config of this LiveVideoScriptInfo.
+        r"""Gets the background_config of this LiveVideoScriptInfo.
 
         背景配置。
 
@@ -236,7 +236,7 @@ class LiveVideoScriptInfo:
 
     @background_config.setter
     def background_config(self, background_config):
-        """Sets the background_config of this LiveVideoScriptInfo.
+        r"""Sets the background_config of this LiveVideoScriptInfo.
 
         背景配置。
 
@@ -247,7 +247,7 @@ class LiveVideoScriptInfo:
 
     @property
     def layer_config(self):
-        """Gets the layer_config of this LiveVideoScriptInfo.
+        r"""Gets the layer_config of this LiveVideoScriptInfo.
 
         图层配置。
 
@@ -258,7 +258,7 @@ class LiveVideoScriptInfo:
 
     @layer_config.setter
     def layer_config(self, layer_config):
-        """Sets the layer_config of this LiveVideoScriptInfo.
+        r"""Sets the layer_config of this LiveVideoScriptInfo.
 
         图层配置。
 
@@ -269,7 +269,7 @@ class LiveVideoScriptInfo:
 
     @property
     def shoot_scripts(self):
-        """Gets the shoot_scripts of this LiveVideoScriptInfo.
+        r"""Gets the shoot_scripts of this LiveVideoScriptInfo.
 
         拍摄脚本列表。
 
@@ -280,7 +280,7 @@ class LiveVideoScriptInfo:
 
     @shoot_scripts.setter
     def shoot_scripts(self, shoot_scripts):
-        """Sets the shoot_scripts of this LiveVideoScriptInfo.
+        r"""Sets the shoot_scripts of this LiveVideoScriptInfo.
 
         拍摄脚本列表。
 

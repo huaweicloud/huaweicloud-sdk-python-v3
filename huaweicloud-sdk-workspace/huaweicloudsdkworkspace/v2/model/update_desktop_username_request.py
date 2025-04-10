@@ -25,7 +25,7 @@ class UpdateDesktopUsernameRequest:
     }
 
     def __init__(self, body=None):
-        """UpdateDesktopUsernameRequest
+        r"""UpdateDesktopUsernameRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateDesktopUsernameRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateDesktopUsernameRequest.
+        r"""Gets the body of this UpdateDesktopUsernameRequest.
 
         :return: The body of this UpdateDesktopUsernameRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.UpdateDesktopUsernameReq`
@@ -52,7 +52,7 @@ class UpdateDesktopUsernameRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateDesktopUsernameRequest.
+        r"""Sets the body of this UpdateDesktopUsernameRequest.
 
         :param body: The body of this UpdateDesktopUsernameRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.UpdateDesktopUsernameReq`

@@ -33,7 +33,7 @@ class ListGovernancePolicysRequest:
     }
 
     def __init__(self, content_type=None, x_engine_id=None, x_enterprise_project_id=None, environment=None, app=None):
-        """ListGovernancePolicysRequest
+        r"""ListGovernancePolicysRequest
 
         The model defined in huaweicloud sdk
 
@@ -67,7 +67,7 @@ class ListGovernancePolicysRequest:
 
     @property
     def content_type(self):
-        """Gets the content_type of this ListGovernancePolicysRequest.
+        r"""Gets the content_type of this ListGovernancePolicysRequest.
 
         该字段内容填为 \"application/json;charset=UTF-8\"。
 
@@ -78,7 +78,7 @@ class ListGovernancePolicysRequest:
 
     @content_type.setter
     def content_type(self, content_type):
-        """Sets the content_type of this ListGovernancePolicysRequest.
+        r"""Sets the content_type of this ListGovernancePolicysRequest.
 
         该字段内容填为 \"application/json;charset=UTF-8\"。
 
@@ -89,7 +89,7 @@ class ListGovernancePolicysRequest:
 
     @property
     def x_engine_id(self):
-        """Gets the x_engine_id of this ListGovernancePolicysRequest.
+        r"""Gets the x_engine_id of this ListGovernancePolicysRequest.
 
         微服务引擎的实例ID
 
@@ -100,7 +100,7 @@ class ListGovernancePolicysRequest:
 
     @x_engine_id.setter
     def x_engine_id(self, x_engine_id):
-        """Sets the x_engine_id of this ListGovernancePolicysRequest.
+        r"""Sets the x_engine_id of this ListGovernancePolicysRequest.
 
         微服务引擎的实例ID
 
@@ -111,7 +111,7 @@ class ListGovernancePolicysRequest:
 
     @property
     def x_enterprise_project_id(self):
-        """Gets the x_enterprise_project_id of this ListGovernancePolicysRequest.
+        r"""Gets the x_enterprise_project_id of this ListGovernancePolicysRequest.
 
         企业项目ID
 
@@ -122,7 +122,7 @@ class ListGovernancePolicysRequest:
 
     @x_enterprise_project_id.setter
     def x_enterprise_project_id(self, x_enterprise_project_id):
-        """Sets the x_enterprise_project_id of this ListGovernancePolicysRequest.
+        r"""Sets the x_enterprise_project_id of this ListGovernancePolicysRequest.
 
         企业项目ID
 
@@ -133,7 +133,7 @@ class ListGovernancePolicysRequest:
 
     @property
     def environment(self):
-        """Gets the environment of this ListGovernancePolicysRequest.
+        r"""Gets the environment of this ListGovernancePolicysRequest.
 
         所属环境，填写all时表示查询所有环境。
 
@@ -144,7 +144,7 @@ class ListGovernancePolicysRequest:
 
     @environment.setter
     def environment(self, environment):
-        """Sets the environment of this ListGovernancePolicysRequest.
+        r"""Sets the environment of this ListGovernancePolicysRequest.
 
         所属环境，填写all时表示查询所有环境。
 
@@ -155,7 +155,7 @@ class ListGovernancePolicysRequest:
 
     @property
     def app(self):
-        """Gets the app of this ListGovernancePolicysRequest.
+        r"""Gets the app of this ListGovernancePolicysRequest.
 
         所属应用
 
@@ -166,7 +166,7 @@ class ListGovernancePolicysRequest:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this ListGovernancePolicysRequest.
+        r"""Sets the app of this ListGovernancePolicysRequest.
 
         所属应用
 

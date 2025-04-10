@@ -27,7 +27,7 @@ class HangUpKillAllClientsRequestBody:
     }
 
     def __init__(self, node_id=None, kill_all_nodes=None):
-        """HangUpKillAllClientsRequestBody
+        r"""HangUpKillAllClientsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class HangUpKillAllClientsRequestBody:
 
     @property
     def node_id(self):
-        """Gets the node_id of this HangUpKillAllClientsRequestBody.
+        r"""Gets the node_id of this HangUpKillAllClientsRequestBody.
 
         指定要kill全部会话的节点ID，kill_all_nodes为false时必填
 
@@ -61,7 +61,7 @@ class HangUpKillAllClientsRequestBody:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this HangUpKillAllClientsRequestBody.
+        r"""Sets the node_id of this HangUpKillAllClientsRequestBody.
 
         指定要kill全部会话的节点ID，kill_all_nodes为false时必填
 
@@ -72,7 +72,7 @@ class HangUpKillAllClientsRequestBody:
 
     @property
     def kill_all_nodes(self):
-        """Gets the kill_all_nodes of this HangUpKillAllClientsRequestBody.
+        r"""Gets the kill_all_nodes of this HangUpKillAllClientsRequestBody.
 
         true：Kill实例全部节点的会话 false: kill指定节点的全部会话
 
@@ -83,7 +83,7 @@ class HangUpKillAllClientsRequestBody:
 
     @kill_all_nodes.setter
     def kill_all_nodes(self, kill_all_nodes):
-        """Sets the kill_all_nodes of this HangUpKillAllClientsRequestBody.
+        r"""Sets the kill_all_nodes of this HangUpKillAllClientsRequestBody.
 
         true：Kill实例全部节点的会话 false: kill指定节点的全部会话
 

@@ -25,7 +25,7 @@ class ContainerConfigsReqDTO:
     }
 
     def __init__(self, container_port_list=None):
-        """ContainerConfigsReqDTO
+        r"""ContainerConfigsReqDTO
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ContainerConfigsReqDTO:
 
     @property
     def container_port_list(self):
-        """Gets the container_port_list of this ContainerConfigsReqDTO.
+        r"""Gets the container_port_list of this ContainerConfigsReqDTO.
 
         容器端口映射值
 
@@ -54,7 +54,7 @@ class ContainerConfigsReqDTO:
 
     @container_port_list.setter
     def container_port_list(self, container_port_list):
-        """Sets the container_port_list of this ContainerConfigsReqDTO.
+        r"""Sets the container_port_list of this ContainerConfigsReqDTO.
 
         容器端口映射值
 

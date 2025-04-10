@@ -26,7 +26,7 @@ class ListRuleAclTagsResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ListRuleAclTagsResponse
+        r"""ListRuleAclTagsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListRuleAclTagsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListRuleAclTagsResponse.
+        r"""Gets the data of this ListRuleAclTagsResponse.
 
         :return: The data of this ListRuleAclTagsResponse.
         :rtype: :class:`huaweicloudsdkcfw.v1.HttpGetAclTagResponseData`
@@ -53,7 +53,7 @@ class ListRuleAclTagsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListRuleAclTagsResponse.
+        r"""Sets the data of this ListRuleAclTagsResponse.
 
         :param data: The data of this ListRuleAclTagsResponse.
         :type data: :class:`huaweicloudsdkcfw.v1.HttpGetAclTagResponseData`

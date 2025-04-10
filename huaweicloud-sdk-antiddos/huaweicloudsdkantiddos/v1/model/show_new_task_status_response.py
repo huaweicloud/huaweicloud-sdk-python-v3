@@ -28,7 +28,7 @@ class ShowNewTaskStatusResponse(SdkResponse):
     }
 
     def __init__(self, task_status=None, task_msg=None):
-        """ShowNewTaskStatusResponse
+        r"""ShowNewTaskStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowNewTaskStatusResponse(SdkResponse):
 
     @property
     def task_status(self):
-        """Gets the task_status of this ShowNewTaskStatusResponse.
+        r"""Gets the task_status of this ShowNewTaskStatusResponse.
 
         任务状态，有以下几种： - success - failed - waiting - running - preprocess - ready
 
@@ -62,7 +62,7 @@ class ShowNewTaskStatusResponse(SdkResponse):
 
     @task_status.setter
     def task_status(self, task_status):
-        """Sets the task_status of this ShowNewTaskStatusResponse.
+        r"""Sets the task_status of this ShowNewTaskStatusResponse.
 
         任务状态，有以下几种： - success - failed - waiting - running - preprocess - ready
 
@@ -73,7 +73,7 @@ class ShowNewTaskStatusResponse(SdkResponse):
 
     @property
     def task_msg(self):
-        """Gets the task_msg of this ShowNewTaskStatusResponse.
+        r"""Gets the task_msg of this ShowNewTaskStatusResponse.
 
         任务的附加信息
 
@@ -84,7 +84,7 @@ class ShowNewTaskStatusResponse(SdkResponse):
 
     @task_msg.setter
     def task_msg(self, task_msg):
-        """Sets the task_msg of this ShowNewTaskStatusResponse.
+        r"""Sets the task_msg of this ShowNewTaskStatusResponse.
 
         任务的附加信息
 

@@ -26,7 +26,7 @@ class ShowPluginInputsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ShowPluginInputsResponse
+        r"""ShowPluginInputsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowPluginInputsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ShowPluginInputsResponse.
+        r"""Gets the body of this ShowPluginInputsResponse.
 
         :return: The body of this ShowPluginInputsResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.PluginPartQueryVOListAgentPluginInputVO`]
@@ -53,7 +53,7 @@ class ShowPluginInputsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowPluginInputsResponse.
+        r"""Sets the body of this ShowPluginInputsResponse.
 
         :param body: The body of this ShowPluginInputsResponse.
         :type body: list[:class:`huaweicloudsdkcodeartspipeline.v2.PluginPartQueryVOListAgentPluginInputVO`]

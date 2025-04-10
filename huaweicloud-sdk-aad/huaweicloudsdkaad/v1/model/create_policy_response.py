@@ -34,7 +34,7 @@ class CreatePolicyResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, package_id=None, description=None, clean_threshold=None):
-        """CreatePolicyResponse
+        r"""CreatePolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class CreatePolicyResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreatePolicyResponse.
+        r"""Gets the id of this CreatePolicyResponse.
 
         策略id
 
@@ -83,7 +83,7 @@ class CreatePolicyResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreatePolicyResponse.
+        r"""Sets the id of this CreatePolicyResponse.
 
         策略id
 
@@ -94,7 +94,7 @@ class CreatePolicyResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreatePolicyResponse.
+        r"""Gets the name of this CreatePolicyResponse.
 
         策略名
 
@@ -105,7 +105,7 @@ class CreatePolicyResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreatePolicyResponse.
+        r"""Sets the name of this CreatePolicyResponse.
 
         策略名
 
@@ -116,7 +116,7 @@ class CreatePolicyResponse(SdkResponse):
 
     @property
     def package_id(self):
-        """Gets the package_id of this CreatePolicyResponse.
+        r"""Gets the package_id of this CreatePolicyResponse.
 
         防护包id
 
@@ -127,7 +127,7 @@ class CreatePolicyResponse(SdkResponse):
 
     @package_id.setter
     def package_id(self, package_id):
-        """Sets the package_id of this CreatePolicyResponse.
+        r"""Sets the package_id of this CreatePolicyResponse.
 
         防护包id
 
@@ -138,7 +138,7 @@ class CreatePolicyResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this CreatePolicyResponse.
+        r"""Gets the description of this CreatePolicyResponse.
 
         描述
 
@@ -149,7 +149,7 @@ class CreatePolicyResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreatePolicyResponse.
+        r"""Sets the description of this CreatePolicyResponse.
 
         描述
 
@@ -160,7 +160,7 @@ class CreatePolicyResponse(SdkResponse):
 
     @property
     def clean_threshold(self):
-        """Gets the clean_threshold of this CreatePolicyResponse.
+        r"""Gets the clean_threshold of this CreatePolicyResponse.
 
         清洗阈值
 
@@ -171,7 +171,7 @@ class CreatePolicyResponse(SdkResponse):
 
     @clean_threshold.setter
     def clean_threshold(self, clean_threshold):
-        """Sets the clean_threshold of this CreatePolicyResponse.
+        r"""Sets the clean_threshold of this CreatePolicyResponse.
 
         清洗阈值
 

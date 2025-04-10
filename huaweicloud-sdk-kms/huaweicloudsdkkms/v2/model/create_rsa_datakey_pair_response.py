@@ -38,7 +38,7 @@ class CreateRsaDatakeyPairResponse(SdkResponse):
     }
 
     def __init__(self, key_id=None, key_spec=None, public_key=None, private_key_cipher_text=None, private_key_plain_text=None, wrapped_private_key=None, ciphertext_recipient=None):
-        """CreateRsaDatakeyPairResponse
+        r"""CreateRsaDatakeyPairResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class CreateRsaDatakeyPairResponse(SdkResponse):
 
     @property
     def key_id(self):
-        """Gets the key_id of this CreateRsaDatakeyPairResponse.
+        r"""Gets the key_id of this CreateRsaDatakeyPairResponse.
 
         密钥ID。
 
@@ -97,7 +97,7 @@ class CreateRsaDatakeyPairResponse(SdkResponse):
 
     @key_id.setter
     def key_id(self, key_id):
-        """Sets the key_id of this CreateRsaDatakeyPairResponse.
+        r"""Sets the key_id of this CreateRsaDatakeyPairResponse.
 
         密钥ID。
 
@@ -108,7 +108,7 @@ class CreateRsaDatakeyPairResponse(SdkResponse):
 
     @property
     def key_spec(self):
-        """Gets the key_spec of this CreateRsaDatakeyPairResponse.
+        r"""Gets the key_spec of this CreateRsaDatakeyPairResponse.
 
         需要包含算法、长度、曲线信息。可选值有RSA_2048 | RSA_3072 | RSA_4096 | ECC_NIST_P256 | ECC_NIST_P384 | ECC_NIST_P521 | ECC_SECG_P256K1 | SM2
 
@@ -119,7 +119,7 @@ class CreateRsaDatakeyPairResponse(SdkResponse):
 
     @key_spec.setter
     def key_spec(self, key_spec):
-        """Sets the key_spec of this CreateRsaDatakeyPairResponse.
+        r"""Sets the key_spec of this CreateRsaDatakeyPairResponse.
 
         需要包含算法、长度、曲线信息。可选值有RSA_2048 | RSA_3072 | RSA_4096 | ECC_NIST_P256 | ECC_NIST_P384 | ECC_NIST_P521 | ECC_SECG_P256K1 | SM2
 
@@ -130,7 +130,7 @@ class CreateRsaDatakeyPairResponse(SdkResponse):
 
     @property
     def public_key(self):
-        """Gets the public_key of this CreateRsaDatakeyPairResponse.
+        r"""Gets the public_key of this CreateRsaDatakeyPairResponse.
 
         明文公钥信息
 
@@ -141,7 +141,7 @@ class CreateRsaDatakeyPairResponse(SdkResponse):
 
     @public_key.setter
     def public_key(self, public_key):
-        """Sets the public_key of this CreateRsaDatakeyPairResponse.
+        r"""Sets the public_key of this CreateRsaDatakeyPairResponse.
 
         明文公钥信息
 
@@ -152,7 +152,7 @@ class CreateRsaDatakeyPairResponse(SdkResponse):
 
     @property
     def private_key_cipher_text(self):
-        """Gets the private_key_cipher_text of this CreateRsaDatakeyPairResponse.
+        r"""Gets the private_key_cipher_text of this CreateRsaDatakeyPairResponse.
 
         密文私钥
 
@@ -163,7 +163,7 @@ class CreateRsaDatakeyPairResponse(SdkResponse):
 
     @private_key_cipher_text.setter
     def private_key_cipher_text(self, private_key_cipher_text):
-        """Sets the private_key_cipher_text of this CreateRsaDatakeyPairResponse.
+        r"""Sets the private_key_cipher_text of this CreateRsaDatakeyPairResponse.
 
         密文私钥
 
@@ -174,7 +174,7 @@ class CreateRsaDatakeyPairResponse(SdkResponse):
 
     @property
     def private_key_plain_text(self):
-        """Gets the private_key_plain_text of this CreateRsaDatakeyPairResponse.
+        r"""Gets the private_key_plain_text of this CreateRsaDatakeyPairResponse.
 
         明文私钥。private_key_plain_text、wrapped_private_key和ciphertext_recipient只能有一个有值
 
@@ -185,7 +185,7 @@ class CreateRsaDatakeyPairResponse(SdkResponse):
 
     @private_key_plain_text.setter
     def private_key_plain_text(self, private_key_plain_text):
-        """Sets the private_key_plain_text of this CreateRsaDatakeyPairResponse.
+        r"""Sets the private_key_plain_text of this CreateRsaDatakeyPairResponse.
 
         明文私钥。private_key_plain_text、wrapped_private_key和ciphertext_recipient只能有一个有值
 
@@ -196,7 +196,7 @@ class CreateRsaDatakeyPairResponse(SdkResponse):
 
     @property
     def wrapped_private_key(self):
-        """Gets the wrapped_private_key of this CreateRsaDatakeyPairResponse.
+        r"""Gets the wrapped_private_key of this CreateRsaDatakeyPairResponse.
 
         由自定义私钥加密的密文私钥。private_key_plain_text、wrapped_private_key和ciphertext_recipient只能有一个有值
 
@@ -207,7 +207,7 @@ class CreateRsaDatakeyPairResponse(SdkResponse):
 
     @wrapped_private_key.setter
     def wrapped_private_key(self, wrapped_private_key):
-        """Sets the wrapped_private_key of this CreateRsaDatakeyPairResponse.
+        r"""Sets the wrapped_private_key of this CreateRsaDatakeyPairResponse.
 
         由自定义私钥加密的密文私钥。private_key_plain_text、wrapped_private_key和ciphertext_recipient只能有一个有值
 
@@ -218,7 +218,7 @@ class CreateRsaDatakeyPairResponse(SdkResponse):
 
     @property
     def ciphertext_recipient(self):
-        """Gets the ciphertext_recipient of this CreateRsaDatakeyPairResponse.
+        r"""Gets the ciphertext_recipient of this CreateRsaDatakeyPairResponse.
 
         由擎天公钥信息加密的密文私钥。private_key_plain_text、wrapped_private_key和ciphertext_recipient只能有一个有值
 
@@ -229,7 +229,7 @@ class CreateRsaDatakeyPairResponse(SdkResponse):
 
     @ciphertext_recipient.setter
     def ciphertext_recipient(self, ciphertext_recipient):
-        """Sets the ciphertext_recipient of this CreateRsaDatakeyPairResponse.
+        r"""Sets the ciphertext_recipient of this CreateRsaDatakeyPairResponse.
 
         由擎天公钥信息加密的密文私钥。private_key_plain_text、wrapped_private_key和ciphertext_recipient只能有一个有值
 

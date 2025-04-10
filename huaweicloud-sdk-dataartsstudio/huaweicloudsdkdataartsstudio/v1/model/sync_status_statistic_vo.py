@@ -31,7 +31,7 @@ class SyncStatusStatisticVO:
     }
 
     def __init__(self, success=None, failed=None, running=None, other=None):
-        """SyncStatusStatisticVO
+        r"""SyncStatusStatisticVO
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class SyncStatusStatisticVO:
 
     @property
     def success(self):
-        """Gets the success of this SyncStatusStatisticVO.
+        r"""Gets the success of this SyncStatusStatisticVO.
 
         成功数，ID字符串。
 
@@ -75,7 +75,7 @@ class SyncStatusStatisticVO:
 
     @success.setter
     def success(self, success):
-        """Sets the success of this SyncStatusStatisticVO.
+        r"""Sets the success of this SyncStatusStatisticVO.
 
         成功数，ID字符串。
 
@@ -86,7 +86,7 @@ class SyncStatusStatisticVO:
 
     @property
     def failed(self):
-        """Gets the failed of this SyncStatusStatisticVO.
+        r"""Gets the failed of this SyncStatusStatisticVO.
 
         失败数，ID字符串。
 
@@ -97,7 +97,7 @@ class SyncStatusStatisticVO:
 
     @failed.setter
     def failed(self, failed):
-        """Sets the failed of this SyncStatusStatisticVO.
+        r"""Sets the failed of this SyncStatusStatisticVO.
 
         失败数，ID字符串。
 
@@ -108,7 +108,7 @@ class SyncStatusStatisticVO:
 
     @property
     def running(self):
-        """Gets the running of this SyncStatusStatisticVO.
+        r"""Gets the running of this SyncStatusStatisticVO.
 
         同步中，ID字符串。
 
@@ -119,7 +119,7 @@ class SyncStatusStatisticVO:
 
     @running.setter
     def running(self, running):
-        """Sets the running of this SyncStatusStatisticVO.
+        r"""Sets the running of this SyncStatusStatisticVO.
 
         同步中，ID字符串。
 
@@ -130,7 +130,7 @@ class SyncStatusStatisticVO:
 
     @property
     def other(self):
-        """Gets the other of this SyncStatusStatisticVO.
+        r"""Gets the other of this SyncStatusStatisticVO.
 
         未同步数，ID字符串。
 
@@ -141,7 +141,7 @@ class SyncStatusStatisticVO:
 
     @other.setter
     def other(self, other):
-        """Sets the other of this SyncStatusStatisticVO.
+        r"""Sets the other of this SyncStatusStatisticVO.
 
         未同步数，ID字符串。
 

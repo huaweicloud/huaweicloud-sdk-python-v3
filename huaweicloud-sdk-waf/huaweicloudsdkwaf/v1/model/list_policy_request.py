@@ -31,7 +31,7 @@ class ListPolicyRequest:
     }
 
     def __init__(self, enterprise_project_id=None, page=None, pagesize=None, name=None):
-        """ListPolicyRequest
+        r"""ListPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListPolicyRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListPolicyRequest.
+        r"""Gets the enterprise_project_id of this ListPolicyRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
@@ -75,7 +75,7 @@ class ListPolicyRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListPolicyRequest.
+        r"""Sets the enterprise_project_id of this ListPolicyRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id。若需要查询当前用户所有企业项目绑定的资源信息，请传参all_granted_eps。
 
@@ -86,7 +86,7 @@ class ListPolicyRequest:
 
     @property
     def page(self):
-        """Gets the page of this ListPolicyRequest.
+        r"""Gets the page of this ListPolicyRequest.
 
         分页查询时，返回第几页数据。默认值为1，表示返回第1页数据。
 
@@ -97,7 +97,7 @@ class ListPolicyRequest:
 
     @page.setter
     def page(self, page):
-        """Sets the page of this ListPolicyRequest.
+        r"""Sets the page of this ListPolicyRequest.
 
         分页查询时，返回第几页数据。默认值为1，表示返回第1页数据。
 
@@ -108,7 +108,7 @@ class ListPolicyRequest:
 
     @property
     def pagesize(self):
-        """Gets the pagesize of this ListPolicyRequest.
+        r"""Gets the pagesize of this ListPolicyRequest.
 
         分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。
 
@@ -119,7 +119,7 @@ class ListPolicyRequest:
 
     @pagesize.setter
     def pagesize(self, pagesize):
-        """Sets the pagesize of this ListPolicyRequest.
+        r"""Sets the pagesize of this ListPolicyRequest.
 
         分页查询时，每页包含多少条结果。范围1-100，默认值为10，表示每页包含10条结果。
 
@@ -130,7 +130,7 @@ class ListPolicyRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListPolicyRequest.
+        r"""Gets the name of this ListPolicyRequest.
 
         策略名称
 
@@ -141,7 +141,7 @@ class ListPolicyRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListPolicyRequest.
+        r"""Sets the name of this ListPolicyRequest.
 
         策略名称
 

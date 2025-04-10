@@ -26,7 +26,7 @@ class ShowConfOrgResponse(SdkResponse):
     }
 
     def __init__(self, org_id=None):
-        """ShowConfOrgResponse
+        r"""ShowConfOrgResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowConfOrgResponse(SdkResponse):
 
     @property
     def org_id(self):
-        """Gets the org_id of this ShowConfOrgResponse.
+        r"""Gets the org_id of this ShowConfOrgResponse.
 
         SP管理员根据会议ID查询该会议归属的企业ID。
 
@@ -55,7 +55,7 @@ class ShowConfOrgResponse(SdkResponse):
 
     @org_id.setter
     def org_id(self, org_id):
-        """Sets the org_id of this ShowConfOrgResponse.
+        r"""Sets the org_id of this ShowConfOrgResponse.
 
         SP管理员根据会议ID查询该会议归属的企业ID。
 

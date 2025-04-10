@@ -32,7 +32,7 @@ class CreatePlaybookVersionResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, data=None, x_request_id=None):
-        """CreatePlaybookVersionResponse
+        r"""CreatePlaybookVersionResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class CreatePlaybookVersionResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this CreatePlaybookVersionResponse.
+        r"""Gets the code of this CreatePlaybookVersionResponse.
 
         错误码
 
@@ -76,7 +76,7 @@ class CreatePlaybookVersionResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this CreatePlaybookVersionResponse.
+        r"""Sets the code of this CreatePlaybookVersionResponse.
 
         错误码
 
@@ -87,7 +87,7 @@ class CreatePlaybookVersionResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this CreatePlaybookVersionResponse.
+        r"""Gets the message of this CreatePlaybookVersionResponse.
 
         Error message
 
@@ -98,7 +98,7 @@ class CreatePlaybookVersionResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this CreatePlaybookVersionResponse.
+        r"""Sets the message of this CreatePlaybookVersionResponse.
 
         Error message
 
@@ -109,7 +109,7 @@ class CreatePlaybookVersionResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this CreatePlaybookVersionResponse.
+        r"""Gets the data of this CreatePlaybookVersionResponse.
 
         :return: The data of this CreatePlaybookVersionResponse.
         :rtype: :class:`huaweicloudsdksecmaster.v2.PlaybookVersionInfo`
@@ -118,7 +118,7 @@ class CreatePlaybookVersionResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this CreatePlaybookVersionResponse.
+        r"""Sets the data of this CreatePlaybookVersionResponse.
 
         :param data: The data of this CreatePlaybookVersionResponse.
         :type data: :class:`huaweicloudsdksecmaster.v2.PlaybookVersionInfo`
@@ -127,7 +127,7 @@ class CreatePlaybookVersionResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreatePlaybookVersionResponse.
+        r"""Gets the x_request_id of this CreatePlaybookVersionResponse.
 
         :return: The x_request_id of this CreatePlaybookVersionResponse.
         :rtype: str
@@ -136,7 +136,7 @@ class CreatePlaybookVersionResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreatePlaybookVersionResponse.
+        r"""Sets the x_request_id of this CreatePlaybookVersionResponse.
 
         :param x_request_id: The x_request_id of this CreatePlaybookVersionResponse.
         :type x_request_id: str

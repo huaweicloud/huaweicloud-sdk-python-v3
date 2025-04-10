@@ -35,7 +35,7 @@ class SiteInformation:
     }
 
     def __init__(self, region_id=None, project_id=None, gateway_type=None, gateway_id=None, site_code=None, asn=None):
-        """SiteInformation
+        r"""SiteInformation
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class SiteInformation:
 
     @property
     def region_id(self):
-        """Gets the region_id of this SiteInformation.
+        r"""Gets the region_id of this SiteInformation.
 
         RegionID。
 
@@ -83,7 +83,7 @@ class SiteInformation:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this SiteInformation.
+        r"""Sets the region_id of this SiteInformation.
 
         RegionID。
 
@@ -94,7 +94,7 @@ class SiteInformation:
 
     @property
     def project_id(self):
-        """Gets the project_id of this SiteInformation.
+        r"""Gets the project_id of this SiteInformation.
 
         实例所属项目ID。
 
@@ -105,7 +105,7 @@ class SiteInformation:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this SiteInformation.
+        r"""Sets the project_id of this SiteInformation.
 
         实例所属项目ID。
 
@@ -116,7 +116,7 @@ class SiteInformation:
 
     @property
     def gateway_type(self):
-        """Gets the gateway_type of this SiteInformation.
+        r"""Gets the gateway_type of this SiteInformation.
 
         :return: The gateway_type of this SiteInformation.
         :rtype: :class:`huaweicloudsdkcc.v3.GatewayTypeEnum`
@@ -125,7 +125,7 @@ class SiteInformation:
 
     @gateway_type.setter
     def gateway_type(self, gateway_type):
-        """Sets the gateway_type of this SiteInformation.
+        r"""Sets the gateway_type of this SiteInformation.
 
         :param gateway_type: The gateway_type of this SiteInformation.
         :type gateway_type: :class:`huaweicloudsdkcc.v3.GatewayTypeEnum`
@@ -134,7 +134,7 @@ class SiteInformation:
 
     @property
     def gateway_id(self):
-        """Gets the gateway_id of this SiteInformation.
+        r"""Gets the gateway_id of this SiteInformation.
 
         实例ID。
 
@@ -145,7 +145,7 @@ class SiteInformation:
 
     @gateway_id.setter
     def gateway_id(self, gateway_id):
-        """Sets the gateway_id of this SiteInformation.
+        r"""Sets the gateway_id of this SiteInformation.
 
         实例ID。
 
@@ -156,7 +156,7 @@ class SiteInformation:
 
     @property
     def site_code(self):
-        """Gets the site_code of this SiteInformation.
+        r"""Gets the site_code of this SiteInformation.
 
         站点编码定义
 
@@ -167,7 +167,7 @@ class SiteInformation:
 
     @site_code.setter
     def site_code(self, site_code):
-        """Sets the site_code of this SiteInformation.
+        r"""Sets the site_code of this SiteInformation.
 
         站点编码定义
 
@@ -178,7 +178,7 @@ class SiteInformation:
 
     @property
     def asn(self):
-        """Gets the asn of this SiteInformation.
+        r"""Gets the asn of this SiteInformation.
 
         网络实例BGP协议的AS号。
 
@@ -189,7 +189,7 @@ class SiteInformation:
 
     @asn.setter
     def asn(self, asn):
-        """Sets the asn of this SiteInformation.
+        r"""Sets the asn of this SiteInformation.
 
         网络实例BGP协议的AS号。
 

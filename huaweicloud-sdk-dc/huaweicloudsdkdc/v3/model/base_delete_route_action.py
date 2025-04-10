@@ -27,7 +27,7 @@ class BaseDeleteRouteAction:
     }
 
     def __init__(self, destination=None, nexthop=None):
-        """BaseDeleteRouteAction
+        r"""BaseDeleteRouteAction
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BaseDeleteRouteAction:
 
     @property
     def destination(self):
-        """Gets the destination of this BaseDeleteRouteAction.
+        r"""Gets the destination of this BaseDeleteRouteAction.
 
         路由子网
 
@@ -59,7 +59,7 @@ class BaseDeleteRouteAction:
 
     @destination.setter
     def destination(self, destination):
-        """Sets the destination of this BaseDeleteRouteAction.
+        r"""Sets the destination of this BaseDeleteRouteAction.
 
         路由子网
 
@@ -70,7 +70,7 @@ class BaseDeleteRouteAction:
 
     @property
     def nexthop(self):
-        """Gets the nexthop of this BaseDeleteRouteAction.
+        r"""Gets the nexthop of this BaseDeleteRouteAction.
 
         下一跳id
 
@@ -81,7 +81,7 @@ class BaseDeleteRouteAction:
 
     @nexthop.setter
     def nexthop(self, nexthop):
-        """Sets the nexthop of this BaseDeleteRouteAction.
+        r"""Sets the nexthop of this BaseDeleteRouteAction.
 
         下一跳id
 

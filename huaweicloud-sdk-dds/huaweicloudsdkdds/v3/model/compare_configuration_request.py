@@ -25,7 +25,7 @@ class CompareConfigurationRequest:
     }
 
     def __init__(self, body=None):
-        """CompareConfigurationRequest
+        r"""CompareConfigurationRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CompareConfigurationRequest:
 
     @property
     def body(self):
-        """Gets the body of this CompareConfigurationRequest.
+        r"""Gets the body of this CompareConfigurationRequest.
 
         :return: The body of this CompareConfigurationRequest.
         :rtype: :class:`huaweicloudsdkdds.v3.DiffConfigurationRequest`
@@ -52,7 +52,7 @@ class CompareConfigurationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CompareConfigurationRequest.
+        r"""Sets the body of this CompareConfigurationRequest.
 
         :param body: The body of this CompareConfigurationRequest.
         :type body: :class:`huaweicloudsdkdds.v3.DiffConfigurationRequest`

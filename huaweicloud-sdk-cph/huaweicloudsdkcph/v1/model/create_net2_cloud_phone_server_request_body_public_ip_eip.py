@@ -25,7 +25,7 @@ class CreateNet2CloudPhoneServerRequestBodyPublicIpEip:
     }
 
     def __init__(self, type=None):
-        """CreateNet2CloudPhoneServerRequestBodyPublicIpEip
+        r"""CreateNet2CloudPhoneServerRequestBodyPublicIpEip
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateNet2CloudPhoneServerRequestBodyPublicIpEip:
 
     @property
     def type(self):
-        """Gets the type of this CreateNet2CloudPhoneServerRequestBodyPublicIpEip.
+        r"""Gets the type of this CreateNet2CloudPhoneServerRequestBodyPublicIpEip.
 
         弹性公网IP的类型。 - 5_telcom：电信 - 5_union：联通 - 5_bgp：全动态BGP - 5_sbgp：静态BGP
 
@@ -53,7 +53,7 @@ class CreateNet2CloudPhoneServerRequestBodyPublicIpEip:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateNet2CloudPhoneServerRequestBodyPublicIpEip.
+        r"""Sets the type of this CreateNet2CloudPhoneServerRequestBodyPublicIpEip.
 
         弹性公网IP的类型。 - 5_telcom：电信 - 5_union：联通 - 5_bgp：全动态BGP - 5_sbgp：静态BGP
 

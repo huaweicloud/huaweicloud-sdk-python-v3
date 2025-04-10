@@ -32,7 +32,7 @@ class ListNetworkSwitchPoliciesResponse(SdkResponse):
     }
 
     def __init__(self, limit=None, offset=None, count=None, network_switch_policy_list=None):
-        """ListNetworkSwitchPoliciesResponse
+        r"""ListNetworkSwitchPoliciesResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListNetworkSwitchPoliciesResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListNetworkSwitchPoliciesResponse.
+        r"""Gets the limit of this ListNetworkSwitchPoliciesResponse.
 
         每页的记录数
 
@@ -76,7 +76,7 @@ class ListNetworkSwitchPoliciesResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListNetworkSwitchPoliciesResponse.
+        r"""Sets the limit of this ListNetworkSwitchPoliciesResponse.
 
         每页的记录数
 
@@ -87,7 +87,7 @@ class ListNetworkSwitchPoliciesResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListNetworkSwitchPoliciesResponse.
+        r"""Gets the offset of this ListNetworkSwitchPoliciesResponse.
 
         页码，最小值是1，最大值为1000000。默认值是1.
 
@@ -98,7 +98,7 @@ class ListNetworkSwitchPoliciesResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListNetworkSwitchPoliciesResponse.
+        r"""Sets the offset of this ListNetworkSwitchPoliciesResponse.
 
         页码，最小值是1，最大值为1000000。默认值是1.
 
@@ -109,7 +109,7 @@ class ListNetworkSwitchPoliciesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListNetworkSwitchPoliciesResponse.
+        r"""Gets the count of this ListNetworkSwitchPoliciesResponse.
 
         记录总数
 
@@ -120,7 +120,7 @@ class ListNetworkSwitchPoliciesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListNetworkSwitchPoliciesResponse.
+        r"""Sets the count of this ListNetworkSwitchPoliciesResponse.
 
         记录总数
 
@@ -131,7 +131,7 @@ class ListNetworkSwitchPoliciesResponse(SdkResponse):
 
     @property
     def network_switch_policy_list(self):
-        """Gets the network_switch_policy_list of this ListNetworkSwitchPoliciesResponse.
+        r"""Gets the network_switch_policy_list of this ListNetworkSwitchPoliciesResponse.
 
         网络切换策略实例列表
 
@@ -142,7 +142,7 @@ class ListNetworkSwitchPoliciesResponse(SdkResponse):
 
     @network_switch_policy_list.setter
     def network_switch_policy_list(self, network_switch_policy_list):
-        """Sets the network_switch_policy_list of this ListNetworkSwitchPoliciesResponse.
+        r"""Sets the network_switch_policy_list of this ListNetworkSwitchPoliciesResponse.
 
         网络切换策略实例列表
 

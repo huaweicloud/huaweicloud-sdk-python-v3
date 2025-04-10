@@ -24,7 +24,7 @@ class StopPublicWhitelistResponse(SdkResponse):
     }
 
     def __init__(self):
-        """StopPublicWhitelistResponse
+        r"""StopPublicWhitelistResponse
 
         The model defined in huaweicloud sdk
 

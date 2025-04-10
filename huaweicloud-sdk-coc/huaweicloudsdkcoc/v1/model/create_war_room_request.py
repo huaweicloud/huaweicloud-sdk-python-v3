@@ -25,7 +25,7 @@ class CreateWarRoomRequest:
     }
 
     def __init__(self, body=None):
-        """CreateWarRoomRequest
+        r"""CreateWarRoomRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateWarRoomRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateWarRoomRequest.
+        r"""Gets the body of this CreateWarRoomRequest.
 
         :return: The body of this CreateWarRoomRequest.
         :rtype: :class:`huaweicloudsdkcoc.v1.CreateWarRoomRequestBody`
@@ -52,7 +52,7 @@ class CreateWarRoomRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateWarRoomRequest.
+        r"""Sets the body of this CreateWarRoomRequest.
 
         :param body: The body of this CreateWarRoomRequest.
         :type body: :class:`huaweicloudsdkcoc.v1.CreateWarRoomRequestBody`

@@ -26,7 +26,7 @@ class ShowImageWatermarkByAddressResponse(SdkResponse):
     }
 
     def __init__(self, watermark=None):
-        """ShowImageWatermarkByAddressResponse
+        r"""ShowImageWatermarkByAddressResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowImageWatermarkByAddressResponse(SdkResponse):
 
     @property
     def watermark(self):
-        """Gets the watermark of this ShowImageWatermarkByAddressResponse.
+        r"""Gets the watermark of this ShowImageWatermarkByAddressResponse.
 
         暗水印内容，长度不超过32个字节
 
@@ -55,7 +55,7 @@ class ShowImageWatermarkByAddressResponse(SdkResponse):
 
     @watermark.setter
     def watermark(self, watermark):
-        """Sets the watermark of this ShowImageWatermarkByAddressResponse.
+        r"""Sets the watermark of this ShowImageWatermarkByAddressResponse.
 
         暗水印内容，长度不超过32个字节
 

@@ -26,7 +26,7 @@ class RemoveVaultResourceResponse(SdkResponse):
     }
 
     def __init__(self, remove_resource_ids=None):
-        """RemoveVaultResourceResponse
+        r"""RemoveVaultResourceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RemoveVaultResourceResponse(SdkResponse):
 
     @property
     def remove_resource_ids(self):
-        """Gets the remove_resource_ids of this RemoveVaultResourceResponse.
+        r"""Gets the remove_resource_ids of this RemoveVaultResourceResponse.
 
         移除的资源ID
 
@@ -55,7 +55,7 @@ class RemoveVaultResourceResponse(SdkResponse):
 
     @remove_resource_ids.setter
     def remove_resource_ids(self, remove_resource_ids):
-        """Sets the remove_resource_ids of this RemoveVaultResourceResponse.
+        r"""Sets the remove_resource_ids of this RemoveVaultResourceResponse.
 
         移除的资源ID
 

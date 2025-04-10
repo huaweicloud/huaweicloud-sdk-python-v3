@@ -37,7 +37,7 @@ class FeedbackInfo:
     }
 
     def __init__(self, id=None, project_id=None, message_id=None, feedback_grade=None, feedback_content=None, gmt_created=None, gmt_modified=None):
-        """FeedbackInfo
+        r"""FeedbackInfo
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class FeedbackInfo:
 
     @property
     def id(self):
-        """Gets the id of this FeedbackInfo.
+        r"""Gets the id of this FeedbackInfo.
 
         编号
 
@@ -96,7 +96,7 @@ class FeedbackInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this FeedbackInfo.
+        r"""Sets the id of this FeedbackInfo.
 
         编号
 
@@ -107,7 +107,7 @@ class FeedbackInfo:
 
     @property
     def project_id(self):
-        """Gets the project_id of this FeedbackInfo.
+        r"""Gets the project_id of this FeedbackInfo.
 
         项目Id
 
@@ -118,7 +118,7 @@ class FeedbackInfo:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this FeedbackInfo.
+        r"""Sets the project_id of this FeedbackInfo.
 
         项目Id
 
@@ -129,7 +129,7 @@ class FeedbackInfo:
 
     @property
     def message_id(self):
-        """Gets the message_id of this FeedbackInfo.
+        r"""Gets the message_id of this FeedbackInfo.
 
         任务消息唯一Id
 
@@ -140,7 +140,7 @@ class FeedbackInfo:
 
     @message_id.setter
     def message_id(self, message_id):
-        """Sets the message_id of this FeedbackInfo.
+        r"""Sets the message_id of this FeedbackInfo.
 
         任务消息唯一Id
 
@@ -151,7 +151,7 @@ class FeedbackInfo:
 
     @property
     def feedback_grade(self):
-        """Gets the feedback_grade of this FeedbackInfo.
+        r"""Gets the feedback_grade of this FeedbackInfo.
 
         反馈等级
 
@@ -162,7 +162,7 @@ class FeedbackInfo:
 
     @feedback_grade.setter
     def feedback_grade(self, feedback_grade):
-        """Sets the feedback_grade of this FeedbackInfo.
+        r"""Sets the feedback_grade of this FeedbackInfo.
 
         反馈等级
 
@@ -173,7 +173,7 @@ class FeedbackInfo:
 
     @property
     def feedback_content(self):
-        """Gets the feedback_content of this FeedbackInfo.
+        r"""Gets the feedback_content of this FeedbackInfo.
 
         反馈内容
 
@@ -184,7 +184,7 @@ class FeedbackInfo:
 
     @feedback_content.setter
     def feedback_content(self, feedback_content):
-        """Sets the feedback_content of this FeedbackInfo.
+        r"""Sets the feedback_content of this FeedbackInfo.
 
         反馈内容
 
@@ -195,7 +195,7 @@ class FeedbackInfo:
 
     @property
     def gmt_created(self):
-        """Gets the gmt_created of this FeedbackInfo.
+        r"""Gets the gmt_created of this FeedbackInfo.
 
         创建时间
 
@@ -206,7 +206,7 @@ class FeedbackInfo:
 
     @gmt_created.setter
     def gmt_created(self, gmt_created):
-        """Sets the gmt_created of this FeedbackInfo.
+        r"""Sets the gmt_created of this FeedbackInfo.
 
         创建时间
 
@@ -217,7 +217,7 @@ class FeedbackInfo:
 
     @property
     def gmt_modified(self):
-        """Gets the gmt_modified of this FeedbackInfo.
+        r"""Gets the gmt_modified of this FeedbackInfo.
 
         修改时间
 
@@ -228,7 +228,7 @@ class FeedbackInfo:
 
     @gmt_modified.setter
     def gmt_modified(self, gmt_modified):
-        """Sets the gmt_modified of this FeedbackInfo.
+        r"""Sets the gmt_modified of this FeedbackInfo.
 
         修改时间
 

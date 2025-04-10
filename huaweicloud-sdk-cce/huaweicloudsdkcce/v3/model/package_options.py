@@ -35,7 +35,7 @@ class PackageOptions:
     }
 
     def __init__(self, name=None, default=None, valid_at=None, empty=None, schema=None, type=None):
-        """PackageOptions
+        r"""PackageOptions
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class PackageOptions:
 
     @property
     def name(self):
-        """Gets the name of this PackageOptions.
+        r"""Gets the name of this PackageOptions.
 
         参数名称
 
@@ -83,7 +83,7 @@ class PackageOptions:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PackageOptions.
+        r"""Sets the name of this PackageOptions.
 
         参数名称
 
@@ -94,7 +94,7 @@ class PackageOptions:
 
     @property
     def default(self):
-        """Gets the default of this PackageOptions.
+        r"""Gets the default of this PackageOptions.
 
         参数默认值，不指定时按默认值生效, 参数类型以实际返回为准，可能为integer,string或者boolean
 
@@ -105,7 +105,7 @@ class PackageOptions:
 
     @default.setter
     def default(self, default):
-        """Sets the default of this PackageOptions.
+        r"""Sets the default of this PackageOptions.
 
         参数默认值，不指定时按默认值生效, 参数类型以实际返回为准，可能为integer,string或者boolean
 
@@ -116,7 +116,7 @@ class PackageOptions:
 
     @property
     def valid_at(self):
-        """Gets the valid_at of this PackageOptions.
+        r"""Gets the valid_at of this PackageOptions.
 
         参数生效方式  - static：节点创建时生效，后续不可修改 - immediately：节点运行中时可以修改，修改后生效 
 
@@ -127,7 +127,7 @@ class PackageOptions:
 
     @valid_at.setter
     def valid_at(self, valid_at):
-        """Sets the valid_at of this PackageOptions.
+        r"""Sets the valid_at of this PackageOptions.
 
         参数生效方式  - static：节点创建时生效，后续不可修改 - immediately：节点运行中时可以修改，修改后生效 
 
@@ -138,7 +138,7 @@ class PackageOptions:
 
     @property
     def empty(self):
-        """Gets the empty of this PackageOptions.
+        r"""Gets the empty of this PackageOptions.
 
         配置项是否可以为空  - true：配置项为空时，不使用默认值，为空值 - false：配置项为空时，使用默认值 
 
@@ -149,7 +149,7 @@ class PackageOptions:
 
     @empty.setter
     def empty(self, empty):
-        """Sets the empty of this PackageOptions.
+        r"""Sets the empty of this PackageOptions.
 
         配置项是否可以为空  - true：配置项为空时，不使用默认值，为空值 - false：配置项为空时，使用默认值 
 
@@ -160,7 +160,7 @@ class PackageOptions:
 
     @property
     def schema(self):
-        """Gets the schema of this PackageOptions.
+        r"""Gets the schema of this PackageOptions.
 
         参数分类
 
@@ -171,7 +171,7 @@ class PackageOptions:
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this PackageOptions.
+        r"""Sets the schema of this PackageOptions.
 
         参数分类
 
@@ -182,7 +182,7 @@ class PackageOptions:
 
     @property
     def type(self):
-        """Gets the type of this PackageOptions.
+        r"""Gets the type of this PackageOptions.
 
         参数类型
 
@@ -193,7 +193,7 @@ class PackageOptions:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this PackageOptions.
+        r"""Sets the type of this PackageOptions.
 
         参数类型
 

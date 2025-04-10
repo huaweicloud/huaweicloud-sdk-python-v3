@@ -27,7 +27,7 @@ class ProductDelFailInfo:
     }
 
     def __init__(self, url=None, fail_reason=None):
-        """ProductDelFailInfo
+        r"""ProductDelFailInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ProductDelFailInfo:
 
     @property
     def url(self):
-        """Gets the url of this ProductDelFailInfo.
+        r"""Gets the url of this ProductDelFailInfo.
 
         删除产物的URL
 
@@ -61,7 +61,7 @@ class ProductDelFailInfo:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this ProductDelFailInfo.
+        r"""Sets the url of this ProductDelFailInfo.
 
         删除产物的URL
 
@@ -72,7 +72,7 @@ class ProductDelFailInfo:
 
     @property
     def fail_reason(self):
-        """Gets the fail_reason of this ProductDelFailInfo.
+        r"""Gets the fail_reason of this ProductDelFailInfo.
 
         删除产物失败的原因
 
@@ -83,7 +83,7 @@ class ProductDelFailInfo:
 
     @fail_reason.setter
     def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this ProductDelFailInfo.
+        r"""Sets the fail_reason of this ProductDelFailInfo.
 
         删除产物失败的原因
 

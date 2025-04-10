@@ -29,7 +29,7 @@ class CtsQuota:
     }
 
     def __init__(self, type=None, used=None, quota=None):
-        """CtsQuota
+        r"""CtsQuota
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CtsQuota:
 
     @property
     def type(self):
-        """Gets the type of this CtsQuota.
+        r"""Gets the type of this CtsQuota.
 
         quota资源类型。
 
@@ -68,7 +68,7 @@ class CtsQuota:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CtsQuota.
+        r"""Sets the type of this CtsQuota.
 
         quota资源类型。
 
@@ -79,7 +79,7 @@ class CtsQuota:
 
     @property
     def used(self):
-        """Gets the used of this CtsQuota.
+        r"""Gets the used of this CtsQuota.
 
         已使用的资源个数。
 
@@ -90,7 +90,7 @@ class CtsQuota:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this CtsQuota.
+        r"""Sets the used of this CtsQuota.
 
         已使用的资源个数。
 
@@ -101,7 +101,7 @@ class CtsQuota:
 
     @property
     def quota(self):
-        """Gets the quota of this CtsQuota.
+        r"""Gets the quota of this CtsQuota.
 
         总资源个数。
 
@@ -112,7 +112,7 @@ class CtsQuota:
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this CtsQuota.
+        r"""Sets the quota of this CtsQuota.
 
         总资源个数。
 

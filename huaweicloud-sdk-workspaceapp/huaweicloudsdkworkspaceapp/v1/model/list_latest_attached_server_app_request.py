@@ -25,7 +25,7 @@ class ListLatestAttachedServerAppRequest:
     }
 
     def __init__(self, server_id=None):
-        """ListLatestAttachedServerAppRequest
+        r"""ListLatestAttachedServerAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListLatestAttachedServerAppRequest:
 
     @property
     def server_id(self):
-        """Gets the server_id of this ListLatestAttachedServerAppRequest.
+        r"""Gets the server_id of this ListLatestAttachedServerAppRequest.
 
         镜像实例唯一标识。
 
@@ -53,7 +53,7 @@ class ListLatestAttachedServerAppRequest:
 
     @server_id.setter
     def server_id(self, server_id):
-        """Sets the server_id of this ListLatestAttachedServerAppRequest.
+        r"""Sets the server_id of this ListLatestAttachedServerAppRequest.
 
         镜像实例唯一标识。
 

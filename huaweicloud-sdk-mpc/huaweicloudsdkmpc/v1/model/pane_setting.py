@@ -33,7 +33,7 @@ class PaneSetting:
     }
 
     def __init__(self, pane_id=None, x=None, y=None, width=None, height=None):
-        """PaneSetting
+        r"""PaneSetting
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class PaneSetting:
 
     @property
     def pane_id(self):
-        """Gets the pane_id of this PaneSetting.
+        r"""Gets the pane_id of this PaneSetting.
 
         原视频的id。
 
@@ -77,7 +77,7 @@ class PaneSetting:
 
     @pane_id.setter
     def pane_id(self, pane_id):
-        """Sets the pane_id of this PaneSetting.
+        r"""Sets the pane_id of this PaneSetting.
 
         原视频的id。
 
@@ -88,7 +88,7 @@ class PaneSetting:
 
     @property
     def x(self):
-        """Gets the x of this PaneSetting.
+        r"""Gets the x of this PaneSetting.
 
         pane_id标记的原视频起点，在合成视频中相对于左下角的水平偏移量。 目前只支持小数类型，表示相对于输出视频宽的水平偏移比率。取值范围(0,1)。
 
@@ -99,7 +99,7 @@ class PaneSetting:
 
     @x.setter
     def x(self, x):
-        """Sets the x of this PaneSetting.
+        r"""Sets the x of this PaneSetting.
 
         pane_id标记的原视频起点，在合成视频中相对于左下角的水平偏移量。 目前只支持小数类型，表示相对于输出视频宽的水平偏移比率。取值范围(0,1)。
 
@@ -110,7 +110,7 @@ class PaneSetting:
 
     @property
     def y(self):
-        """Gets the y of this PaneSetting.
+        r"""Gets the y of this PaneSetting.
 
         pane_id标记的原视频，在合成视频中相对于左下角的垂直偏移量。 目前只支持小数型，表示相对于输出视频高的垂直偏移比率。取值范围:(0,1)。
 
@@ -121,7 +121,7 @@ class PaneSetting:
 
     @y.setter
     def y(self, y):
-        """Sets the y of this PaneSetting.
+        r"""Sets the y of this PaneSetting.
 
         pane_id标记的原视频，在合成视频中相对于左下角的垂直偏移量。 目前只支持小数型，表示相对于输出视频高的垂直偏移比率。取值范围:(0,1)。
 
@@ -132,7 +132,7 @@ class PaneSetting:
 
     @property
     def width(self):
-        """Gets the width of this PaneSetting.
+        r"""Gets the width of this PaneSetting.
 
         pane_id标记的原视频，在合成视频中占的宽。目前只支持小数型，范围(0,1)，表示占据合成视频宽的比率。 
 
@@ -143,7 +143,7 @@ class PaneSetting:
 
     @width.setter
     def width(self, width):
-        """Sets the width of this PaneSetting.
+        r"""Sets the width of this PaneSetting.
 
         pane_id标记的原视频，在合成视频中占的宽。目前只支持小数型，范围(0,1)，表示占据合成视频宽的比率。 
 
@@ -154,7 +154,7 @@ class PaneSetting:
 
     @property
     def height(self):
-        """Gets the height of this PaneSetting.
+        r"""Gets the height of this PaneSetting.
 
         pane_id标记的原视频，在合成视频中占的高。目前只支持小数型，范围(0,1)，表示占据合成视频高的比率。 
 
@@ -165,7 +165,7 @@ class PaneSetting:
 
     @height.setter
     def height(self, height):
-        """Sets the height of this PaneSetting.
+        r"""Sets the height of this PaneSetting.
 
         pane_id标记的原视频，在合成视频中占的高。目前只支持小数型，范围(0,1)，表示占据合成视频高的比率。 
 

@@ -47,7 +47,7 @@ class ExternalCreatePeerLink:
     }
 
     def __init__(self, id=None, instance_id=None, tenant_id=None, name=None, description=None, global_dc_gateway_id=None, bandwidth_info=None, peer_site=None, status=None, reason=None, created_time=None, updated_time=None):
-        """ExternalCreatePeerLink
+        r"""ExternalCreatePeerLink
 
         The model defined in huaweicloud sdk
 
@@ -118,7 +118,7 @@ class ExternalCreatePeerLink:
 
     @property
     def id(self):
-        """Gets the id of this ExternalCreatePeerLink.
+        r"""Gets the id of this ExternalCreatePeerLink.
 
         专线对等连接
 
@@ -129,7 +129,7 @@ class ExternalCreatePeerLink:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ExternalCreatePeerLink.
+        r"""Sets the id of this ExternalCreatePeerLink.
 
         专线对等连接
 
@@ -140,7 +140,7 @@ class ExternalCreatePeerLink:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ExternalCreatePeerLink.
+        r"""Gets the instance_id of this ExternalCreatePeerLink.
 
         专线对等连接实例ID
 
@@ -151,7 +151,7 @@ class ExternalCreatePeerLink:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ExternalCreatePeerLink.
+        r"""Sets the instance_id of this ExternalCreatePeerLink.
 
         专线对等连接实例ID
 
@@ -162,7 +162,7 @@ class ExternalCreatePeerLink:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this ExternalCreatePeerLink.
+        r"""Gets the tenant_id of this ExternalCreatePeerLink.
 
         租户ID
 
@@ -173,7 +173,7 @@ class ExternalCreatePeerLink:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this ExternalCreatePeerLink.
+        r"""Sets the tenant_id of this ExternalCreatePeerLink.
 
         租户ID
 
@@ -184,7 +184,7 @@ class ExternalCreatePeerLink:
 
     @property
     def name(self):
-        """Gets the name of this ExternalCreatePeerLink.
+        r"""Gets the name of this ExternalCreatePeerLink.
 
         名称
 
@@ -195,7 +195,7 @@ class ExternalCreatePeerLink:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ExternalCreatePeerLink.
+        r"""Sets the name of this ExternalCreatePeerLink.
 
         名称
 
@@ -206,7 +206,7 @@ class ExternalCreatePeerLink:
 
     @property
     def description(self):
-        """Gets the description of this ExternalCreatePeerLink.
+        r"""Gets the description of this ExternalCreatePeerLink.
 
         描述信息
 
@@ -217,7 +217,7 @@ class ExternalCreatePeerLink:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ExternalCreatePeerLink.
+        r"""Sets the description of this ExternalCreatePeerLink.
 
         描述信息
 
@@ -228,7 +228,7 @@ class ExternalCreatePeerLink:
 
     @property
     def global_dc_gateway_id(self):
-        """Gets the global_dc_gateway_id of this ExternalCreatePeerLink.
+        r"""Gets the global_dc_gateway_id of this ExternalCreatePeerLink.
 
         全域接入网关ID
 
@@ -239,7 +239,7 @@ class ExternalCreatePeerLink:
 
     @global_dc_gateway_id.setter
     def global_dc_gateway_id(self, global_dc_gateway_id):
-        """Sets the global_dc_gateway_id of this ExternalCreatePeerLink.
+        r"""Sets the global_dc_gateway_id of this ExternalCreatePeerLink.
 
         全域接入网关ID
 
@@ -250,7 +250,7 @@ class ExternalCreatePeerLink:
 
     @property
     def bandwidth_info(self):
-        """Gets the bandwidth_info of this ExternalCreatePeerLink.
+        r"""Gets the bandwidth_info of this ExternalCreatePeerLink.
 
         :return: The bandwidth_info of this ExternalCreatePeerLink.
         :rtype: :class:`huaweicloudsdkdc.v3.BandwidthInfoExternal`
@@ -259,7 +259,7 @@ class ExternalCreatePeerLink:
 
     @bandwidth_info.setter
     def bandwidth_info(self, bandwidth_info):
-        """Sets the bandwidth_info of this ExternalCreatePeerLink.
+        r"""Sets the bandwidth_info of this ExternalCreatePeerLink.
 
         :param bandwidth_info: The bandwidth_info of this ExternalCreatePeerLink.
         :type bandwidth_info: :class:`huaweicloudsdkdc.v3.BandwidthInfoExternal`
@@ -268,7 +268,7 @@ class ExternalCreatePeerLink:
 
     @property
     def peer_site(self):
-        """Gets the peer_site of this ExternalCreatePeerLink.
+        r"""Gets the peer_site of this ExternalCreatePeerLink.
 
         :return: The peer_site of this ExternalCreatePeerLink.
         :rtype: :class:`huaweicloudsdkdc.v3.PeerSiteExternal`
@@ -277,7 +277,7 @@ class ExternalCreatePeerLink:
 
     @peer_site.setter
     def peer_site(self, peer_site):
-        """Sets the peer_site of this ExternalCreatePeerLink.
+        r"""Sets the peer_site of this ExternalCreatePeerLink.
 
         :param peer_site: The peer_site of this ExternalCreatePeerLink.
         :type peer_site: :class:`huaweicloudsdkdc.v3.PeerSiteExternal`
@@ -286,7 +286,7 @@ class ExternalCreatePeerLink:
 
     @property
     def status(self):
-        """Gets the status of this ExternalCreatePeerLink.
+        r"""Gets the status of this ExternalCreatePeerLink.
 
         '状态信息' - ACTIVE 正常 - ERROR 异常
 
@@ -297,7 +297,7 @@ class ExternalCreatePeerLink:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ExternalCreatePeerLink.
+        r"""Sets the status of this ExternalCreatePeerLink.
 
         '状态信息' - ACTIVE 正常 - ERROR 异常
 
@@ -308,7 +308,7 @@ class ExternalCreatePeerLink:
 
     @property
     def reason(self):
-        """Gets the reason of this ExternalCreatePeerLink.
+        r"""Gets the reason of this ExternalCreatePeerLink.
 
         失败原因
 
@@ -319,7 +319,7 @@ class ExternalCreatePeerLink:
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this ExternalCreatePeerLink.
+        r"""Sets the reason of this ExternalCreatePeerLink.
 
         失败原因
 
@@ -330,7 +330,7 @@ class ExternalCreatePeerLink:
 
     @property
     def created_time(self):
-        """Gets the created_time of this ExternalCreatePeerLink.
+        r"""Gets the created_time of this ExternalCreatePeerLink.
 
         创建时间
 
@@ -341,7 +341,7 @@ class ExternalCreatePeerLink:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this ExternalCreatePeerLink.
+        r"""Sets the created_time of this ExternalCreatePeerLink.
 
         创建时间
 
@@ -352,7 +352,7 @@ class ExternalCreatePeerLink:
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this ExternalCreatePeerLink.
+        r"""Gets the updated_time of this ExternalCreatePeerLink.
 
         更新时间
 
@@ -363,7 +363,7 @@ class ExternalCreatePeerLink:
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this ExternalCreatePeerLink.
+        r"""Sets the updated_time of this ExternalCreatePeerLink.
 
         更新时间
 

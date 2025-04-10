@@ -28,7 +28,7 @@ class ListManagedPoliciesInPermissionSetResponse(SdkResponse):
     }
 
     def __init__(self, attached_managed_policies=None, page_info=None):
-        """ListManagedPoliciesInPermissionSetResponse
+        r"""ListManagedPoliciesInPermissionSetResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListManagedPoliciesInPermissionSetResponse(SdkResponse):
 
     @property
     def attached_managed_policies(self):
-        """Gets the attached_managed_policies of this ListManagedPoliciesInPermissionSetResponse.
+        r"""Gets the attached_managed_policies of this ListManagedPoliciesInPermissionSetResponse.
 
         IAM系统身份策略列表
 
@@ -62,7 +62,7 @@ class ListManagedPoliciesInPermissionSetResponse(SdkResponse):
 
     @attached_managed_policies.setter
     def attached_managed_policies(self, attached_managed_policies):
-        """Sets the attached_managed_policies of this ListManagedPoliciesInPermissionSetResponse.
+        r"""Sets the attached_managed_policies of this ListManagedPoliciesInPermissionSetResponse.
 
         IAM系统身份策略列表
 
@@ -73,7 +73,7 @@ class ListManagedPoliciesInPermissionSetResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListManagedPoliciesInPermissionSetResponse.
+        r"""Gets the page_info of this ListManagedPoliciesInPermissionSetResponse.
 
         :return: The page_info of this ListManagedPoliciesInPermissionSetResponse.
         :rtype: :class:`huaweicloudsdkidentitycenter.v1.PageInfoDto`
@@ -82,7 +82,7 @@ class ListManagedPoliciesInPermissionSetResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListManagedPoliciesInPermissionSetResponse.
+        r"""Sets the page_info of this ListManagedPoliciesInPermissionSetResponse.
 
         :param page_info: The page_info of this ListManagedPoliciesInPermissionSetResponse.
         :type page_info: :class:`huaweicloudsdkidentitycenter.v1.PageInfoDto`

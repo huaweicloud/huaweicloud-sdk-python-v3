@@ -25,7 +25,7 @@ class DeletePrivateNatRequest:
     }
 
     def __init__(self, gateway_id=None):
-        """DeletePrivateNatRequest
+        r"""DeletePrivateNatRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeletePrivateNatRequest:
 
     @property
     def gateway_id(self):
-        """Gets the gateway_id of this DeletePrivateNatRequest.
+        r"""Gets the gateway_id of this DeletePrivateNatRequest.
 
         私网NAT网关实例的ID。
 
@@ -53,7 +53,7 @@ class DeletePrivateNatRequest:
 
     @gateway_id.setter
     def gateway_id(self, gateway_id):
-        """Sets the gateway_id of this DeletePrivateNatRequest.
+        r"""Sets the gateway_id of this DeletePrivateNatRequest.
 
         私网NAT网关实例的ID。
 

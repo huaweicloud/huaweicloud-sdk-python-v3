@@ -30,7 +30,7 @@ class ListSpecialThrottlingConfigurationsV2Response(SdkResponse):
     }
 
     def __init__(self, size=None, total=None, throttle_specials=None):
-        """ListSpecialThrottlingConfigurationsV2Response
+        r"""ListSpecialThrottlingConfigurationsV2Response
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListSpecialThrottlingConfigurationsV2Response(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListSpecialThrottlingConfigurationsV2Response.
+        r"""Gets the size of this ListSpecialThrottlingConfigurationsV2Response.
 
         本次返回的列表长度
 
@@ -67,7 +67,7 @@ class ListSpecialThrottlingConfigurationsV2Response(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListSpecialThrottlingConfigurationsV2Response.
+        r"""Sets the size of this ListSpecialThrottlingConfigurationsV2Response.
 
         本次返回的列表长度
 
@@ -78,7 +78,7 @@ class ListSpecialThrottlingConfigurationsV2Response(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListSpecialThrottlingConfigurationsV2Response.
+        r"""Gets the total of this ListSpecialThrottlingConfigurationsV2Response.
 
         满足条件的记录数
 
@@ -89,7 +89,7 @@ class ListSpecialThrottlingConfigurationsV2Response(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListSpecialThrottlingConfigurationsV2Response.
+        r"""Sets the total of this ListSpecialThrottlingConfigurationsV2Response.
 
         满足条件的记录数
 
@@ -100,7 +100,7 @@ class ListSpecialThrottlingConfigurationsV2Response(SdkResponse):
 
     @property
     def throttle_specials(self):
-        """Gets the throttle_specials of this ListSpecialThrottlingConfigurationsV2Response.
+        r"""Gets the throttle_specials of this ListSpecialThrottlingConfigurationsV2Response.
 
         本次查询返回的特殊配置列表
 
@@ -111,7 +111,7 @@ class ListSpecialThrottlingConfigurationsV2Response(SdkResponse):
 
     @throttle_specials.setter
     def throttle_specials(self, throttle_specials):
-        """Sets the throttle_specials of this ListSpecialThrottlingConfigurationsV2Response.
+        r"""Sets the throttle_specials of this ListSpecialThrottlingConfigurationsV2Response.
 
         本次查询返回的特殊配置列表
 

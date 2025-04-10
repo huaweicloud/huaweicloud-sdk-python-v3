@@ -33,7 +33,7 @@ class Connection:
     }
 
     def __init__(self, guid=None, display_text=None, type_name=None, connection_type=None, qualified_name=None):
-        """Connection
+        r"""Connection
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class Connection:
 
     @property
     def guid(self):
-        """Gets the guid of this Connection.
+        r"""Gets the guid of this Connection.
 
         关联guid
 
@@ -82,7 +82,7 @@ class Connection:
 
     @guid.setter
     def guid(self, guid):
-        """Sets the guid of this Connection.
+        r"""Sets the guid of this Connection.
 
         关联guid
 
@@ -93,7 +93,7 @@ class Connection:
 
     @property
     def display_text(self):
-        """Gets the display_text of this Connection.
+        r"""Gets the display_text of this Connection.
 
         显示内容
 
@@ -104,7 +104,7 @@ class Connection:
 
     @display_text.setter
     def display_text(self, display_text):
-        """Sets the display_text of this Connection.
+        r"""Sets the display_text of this Connection.
 
         显示内容
 
@@ -115,7 +115,7 @@ class Connection:
 
     @property
     def type_name(self):
-        """Gets the type_name of this Connection.
+        r"""Gets the type_name of this Connection.
 
         类型名称
 
@@ -126,7 +126,7 @@ class Connection:
 
     @type_name.setter
     def type_name(self, type_name):
-        """Sets the type_name of this Connection.
+        r"""Sets the type_name of this Connection.
 
         类型名称
 
@@ -137,7 +137,7 @@ class Connection:
 
     @property
     def connection_type(self):
-        """Gets the connection_type of this Connection.
+        r"""Gets the connection_type of this Connection.
 
         连接类型
 
@@ -148,7 +148,7 @@ class Connection:
 
     @connection_type.setter
     def connection_type(self, connection_type):
-        """Sets the connection_type of this Connection.
+        r"""Sets the connection_type of this Connection.
 
         连接类型
 
@@ -159,7 +159,7 @@ class Connection:
 
     @property
     def qualified_name(self):
-        """Gets the qualified_name of this Connection.
+        r"""Gets the qualified_name of this Connection.
 
         限定名称
 
@@ -170,7 +170,7 @@ class Connection:
 
     @qualified_name.setter
     def qualified_name(self, qualified_name):
-        """Sets the qualified_name of this Connection.
+        r"""Sets the qualified_name of this Connection.
 
         限定名称
 

@@ -45,7 +45,7 @@ class AddDeviceDTO:
     }
 
     def __init__(self, name=None, model=None, sn=None, prj_code_mode=None, dept_code=None, phone=None, country=None, email=None, description=None, status=None, send_notify=None):
-        """AddDeviceDTO
+        r"""AddDeviceDTO
 
         The model defined in huaweicloud sdk
 
@@ -111,7 +111,7 @@ class AddDeviceDTO:
 
     @property
     def name(self):
-        """Gets the name of this AddDeviceDTO.
+        r"""Gets the name of this AddDeviceDTO.
 
         终端名称，可以自定义，建议为具体位置，方便识别。
 
@@ -122,7 +122,7 @@ class AddDeviceDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AddDeviceDTO.
+        r"""Sets the name of this AddDeviceDTO.
 
         终端名称，可以自定义，建议为具体位置，方便识别。
 
@@ -133,7 +133,7 @@ class AddDeviceDTO:
 
     @property
     def model(self):
-        """Gets the model of this AddDeviceDTO.
+        r"""Gets the model of this AddDeviceDTO.
 
         终端型号，枚举类型。当前支持TE系列和部分第三方硬件终端，具体的终端类型可以通过[[获取所有终端类型](https://support.huaweicloud.com/api-meeting/meeting_21_0092.html)](tag:hws)[[获取所有终端类型](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0092.html)](tag:hk)接口查询。
 
@@ -144,7 +144,7 @@ class AddDeviceDTO:
 
     @model.setter
     def model(self, model):
-        """Sets the model of this AddDeviceDTO.
+        r"""Sets the model of this AddDeviceDTO.
 
         终端型号，枚举类型。当前支持TE系列和部分第三方硬件终端，具体的终端类型可以通过[[获取所有终端类型](https://support.huaweicloud.com/api-meeting/meeting_21_0092.html)](tag:hws)[[获取所有终端类型](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0092.html)](tag:hk)接口查询。
 
@@ -155,7 +155,7 @@ class AddDeviceDTO:
 
     @property
     def sn(self):
-        """Gets the sn of this AddDeviceDTO.
+        r"""Gets the sn of this AddDeviceDTO.
 
         终端SN码，仅可包含数字、字母和下划线。
 
@@ -166,7 +166,7 @@ class AddDeviceDTO:
 
     @sn.setter
     def sn(self, sn):
-        """Sets the sn of this AddDeviceDTO.
+        r"""Sets the sn of this AddDeviceDTO.
 
         终端SN码，仅可包含数字、字母和下划线。
 
@@ -177,7 +177,7 @@ class AddDeviceDTO:
 
     @property
     def prj_code_mode(self):
-        """Gets the prj_code_mode of this AddDeviceDTO.
+        r"""Gets the prj_code_mode of this AddDeviceDTO.
 
         投影码生成模式，默认为自动。 - 0：自动(该模式下根据消息上报的IP地址内部控制复杂度。   私网地址配置成简单模式，公网地址配置成复杂模式) - 1：简单 - 2：复杂
 
@@ -188,7 +188,7 @@ class AddDeviceDTO:
 
     @prj_code_mode.setter
     def prj_code_mode(self, prj_code_mode):
-        """Sets the prj_code_mode of this AddDeviceDTO.
+        r"""Sets the prj_code_mode of this AddDeviceDTO.
 
         投影码生成模式，默认为自动。 - 0：自动(该模式下根据消息上报的IP地址内部控制复杂度。   私网地址配置成简单模式，公网地址配置成复杂模式) - 1：简单 - 2：复杂
 
@@ -199,7 +199,7 @@ class AddDeviceDTO:
 
     @property
     def dept_code(self):
-        """Gets the dept_code of this AddDeviceDTO.
+        r"""Gets the dept_code of this AddDeviceDTO.
 
         部门编码，默认为根部门。 默认值：1。
 
@@ -210,7 +210,7 @@ class AddDeviceDTO:
 
     @dept_code.setter
     def dept_code(self, dept_code):
-        """Sets the dept_code of this AddDeviceDTO.
+        r"""Sets the dept_code of this AddDeviceDTO.
 
         部门编码，默认为根部门。 默认值：1。
 
@@ -221,7 +221,7 @@ class AddDeviceDTO:
 
     @property
     def phone(self):
-        """Gets the phone of this AddDeviceDTO.
+        r"""Gets the phone of this AddDeviceDTO.
 
         手机号，必须加上国家码，例如中国大陆手机为“+86xxxxxxxxxxx”。当填写手机号时 “country”参数必填。 手机号只允许输入纯数字。 > 手机号或者邮箱至少填写一个。
 
@@ -232,7 +232,7 @@ class AddDeviceDTO:
 
     @phone.setter
     def phone(self, phone):
-        """Sets the phone of this AddDeviceDTO.
+        r"""Sets the phone of this AddDeviceDTO.
 
         手机号，必须加上国家码，例如中国大陆手机为“+86xxxxxxxxxxx”。当填写手机号时 “country”参数必填。 手机号只允许输入纯数字。 > 手机号或者邮箱至少填写一个。
 
@@ -243,7 +243,7 @@ class AddDeviceDTO:
 
     @property
     def country(self):
-        """Gets the country of this AddDeviceDTO.
+        r"""Gets the country of this AddDeviceDTO.
 
         [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
@@ -254,7 +254,7 @@ class AddDeviceDTO:
 
     @country.setter
     def country(self, country):
-        """Sets the country of this AddDeviceDTO.
+        r"""Sets the country of this AddDeviceDTO.
 
         [[手机号所属的国家](https://support.huaweicloud.com/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hws)[[手机号所属的国家](https://support.huaweicloud.com/intl/zh-cn/api-meeting/meeting_21_0109.html#ZH-CN_TOPIC_0212714591__table19371178135314)](tag:hk) 。 
 
@@ -265,7 +265,7 @@ class AddDeviceDTO:
 
     @property
     def email(self):
-        """Gets the email of this AddDeviceDTO.
+        r"""Gets the email of this AddDeviceDTO.
 
         邮箱地址。
 
@@ -276,7 +276,7 @@ class AddDeviceDTO:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this AddDeviceDTO.
+        r"""Sets the email of this AddDeviceDTO.
 
         邮箱地址。
 
@@ -287,7 +287,7 @@ class AddDeviceDTO:
 
     @property
     def description(self):
-        """Gets the description of this AddDeviceDTO.
+        r"""Gets the description of this AddDeviceDTO.
 
         终端描述。
 
@@ -298,7 +298,7 @@ class AddDeviceDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AddDeviceDTO.
+        r"""Sets the description of this AddDeviceDTO.
 
         终端描述。
 
@@ -309,7 +309,7 @@ class AddDeviceDTO:
 
     @property
     def status(self):
-        """Gets the status of this AddDeviceDTO.
+        r"""Gets the status of this AddDeviceDTO.
 
         终端状态。默认值：0。 * 0：正常 * 1：冻结 
 
@@ -320,7 +320,7 @@ class AddDeviceDTO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this AddDeviceDTO.
+        r"""Sets the status of this AddDeviceDTO.
 
         终端状态。默认值：0。 * 0：正常 * 1：冻结 
 
@@ -331,7 +331,7 @@ class AddDeviceDTO:
 
     @property
     def send_notify(self):
-        """Gets the send_notify of this AddDeviceDTO.
+        r"""Gets the send_notify of this AddDeviceDTO.
 
         是否发送邮件和短信通知。 * 0：不发送 * 不填或者其他值就发送
 
@@ -342,7 +342,7 @@ class AddDeviceDTO:
 
     @send_notify.setter
     def send_notify(self, send_notify):
-        """Sets the send_notify of this AddDeviceDTO.
+        r"""Sets the send_notify of this AddDeviceDTO.
 
         是否发送邮件和短信通知。 * 0：不发送 * 不填或者其他值就发送
 

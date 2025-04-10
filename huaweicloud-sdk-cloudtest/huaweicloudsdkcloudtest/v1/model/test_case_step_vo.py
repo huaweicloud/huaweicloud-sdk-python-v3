@@ -27,7 +27,7 @@ class TestCaseStepVo:
     }
 
     def __init__(self, test_step=None, expect_result=None):
-        """TestCaseStepVo
+        r"""TestCaseStepVo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class TestCaseStepVo:
 
     @property
     def test_step(self):
-        """Gets the test_step of this TestCaseStepVo.
+        r"""Gets the test_step of this TestCaseStepVo.
 
         测试步骤
 
@@ -61,7 +61,7 @@ class TestCaseStepVo:
 
     @test_step.setter
     def test_step(self, test_step):
-        """Sets the test_step of this TestCaseStepVo.
+        r"""Sets the test_step of this TestCaseStepVo.
 
         测试步骤
 
@@ -72,7 +72,7 @@ class TestCaseStepVo:
 
     @property
     def expect_result(self):
-        """Gets the expect_result of this TestCaseStepVo.
+        r"""Gets the expect_result of this TestCaseStepVo.
 
         预期结果
 
@@ -83,7 +83,7 @@ class TestCaseStepVo:
 
     @expect_result.setter
     def expect_result(self, expect_result):
-        """Sets the expect_result of this TestCaseStepVo.
+        r"""Sets the expect_result of this TestCaseStepVo.
 
         预期结果
 

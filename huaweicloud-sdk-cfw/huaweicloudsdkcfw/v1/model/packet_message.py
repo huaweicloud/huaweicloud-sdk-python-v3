@@ -29,7 +29,7 @@ class PacketMessage:
     }
 
     def __init__(self, hex_index=None, hexs=None, utf8_string=None):
-        """PacketMessage
+        r"""PacketMessage
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PacketMessage:
 
     @property
     def hex_index(self):
-        """Gets the hex_index of this PacketMessage.
+        r"""Gets the hex_index of this PacketMessage.
 
         16进制index
 
@@ -68,7 +68,7 @@ class PacketMessage:
 
     @hex_index.setter
     def hex_index(self, hex_index):
-        """Sets the hex_index of this PacketMessage.
+        r"""Sets the hex_index of this PacketMessage.
 
         16进制index
 
@@ -79,7 +79,7 @@ class PacketMessage:
 
     @property
     def hexs(self):
-        """Gets the hexs of this PacketMessage.
+        r"""Gets the hexs of this PacketMessage.
 
         16进制数列
 
@@ -90,7 +90,7 @@ class PacketMessage:
 
     @hexs.setter
     def hexs(self, hexs):
-        """Sets the hexs of this PacketMessage.
+        r"""Sets the hexs of this PacketMessage.
 
         16进制数列
 
@@ -101,7 +101,7 @@ class PacketMessage:
 
     @property
     def utf8_string(self):
-        """Gets the utf8_string of this PacketMessage.
+        r"""Gets the utf8_string of this PacketMessage.
 
         utf_8字符串
 
@@ -112,7 +112,7 @@ class PacketMessage:
 
     @utf8_string.setter
     def utf8_string(self, utf8_string):
-        """Sets the utf8_string of this PacketMessage.
+        r"""Sets the utf8_string of this PacketMessage.
 
         utf_8字符串
 

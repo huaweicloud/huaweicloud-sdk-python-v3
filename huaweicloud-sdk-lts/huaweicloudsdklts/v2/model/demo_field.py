@@ -37,7 +37,7 @@ class DemoField:
     }
 
     def __init__(self, field_name=None, content=None, type=None, is_analysis=None, index=None, relation=None, user_defined_name=None):
-        """DemoField
+        r"""DemoField
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class DemoField:
 
     @property
     def field_name(self):
-        """Gets the field_name of this DemoField.
+        r"""Gets the field_name of this DemoField.
 
         字段名称
 
@@ -94,7 +94,7 @@ class DemoField:
 
     @field_name.setter
     def field_name(self, field_name):
-        """Sets the field_name of this DemoField.
+        r"""Sets the field_name of this DemoField.
 
         字段名称
 
@@ -105,7 +105,7 @@ class DemoField:
 
     @property
     def content(self):
-        """Gets the content of this DemoField.
+        r"""Gets the content of this DemoField.
 
         字段示例内容
 
@@ -116,7 +116,7 @@ class DemoField:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this DemoField.
+        r"""Sets the content of this DemoField.
 
         字段示例内容
 
@@ -127,7 +127,7 @@ class DemoField:
 
     @property
     def type(self):
-        """Gets the type of this DemoField.
+        r"""Gets the type of this DemoField.
 
         字段数据类型。 可选范围：string、long、float
 
@@ -138,7 +138,7 @@ class DemoField:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this DemoField.
+        r"""Sets the type of this DemoField.
 
         字段数据类型。 可选范围：string、long、float
 
@@ -149,7 +149,7 @@ class DemoField:
 
     @property
     def is_analysis(self):
-        """Gets the is_analysis of this DemoField.
+        r"""Gets the is_analysis of this DemoField.
 
         是否开启快速分析
 
@@ -160,7 +160,7 @@ class DemoField:
 
     @is_analysis.setter
     def is_analysis(self, is_analysis):
-        """Sets the is_analysis of this DemoField.
+        r"""Sets the is_analysis of this DemoField.
 
         是否开启快速分析
 
@@ -171,7 +171,7 @@ class DemoField:
 
     @property
     def index(self):
-        """Gets the index of this DemoField.
+        r"""Gets the index of this DemoField.
 
         手动正则及分隔符方式中字段序号
 
@@ -182,7 +182,7 @@ class DemoField:
 
     @index.setter
     def index(self, index):
-        """Sets the index of this DemoField.
+        r"""Sets the index of this DemoField.
 
         手动正则及分隔符方式中字段序号
 
@@ -193,7 +193,7 @@ class DemoField:
 
     @property
     def relation(self):
-        """Gets the relation of this DemoField.
+        r"""Gets the relation of this DemoField.
 
         描叙多层级json中字段间的层级关系
 
@@ -204,7 +204,7 @@ class DemoField:
 
     @relation.setter
     def relation(self, relation):
-        """Sets the relation of this DemoField.
+        r"""Sets the relation of this DemoField.
 
         描叙多层级json中字段间的层级关系
 
@@ -215,7 +215,7 @@ class DemoField:
 
     @property
     def user_defined_name(self):
-        """Gets the user_defined_name of this DemoField.
+        r"""Gets the user_defined_name of this DemoField.
 
         json及nginx方式中字段自定义别名
 
@@ -226,7 +226,7 @@ class DemoField:
 
     @user_defined_name.setter
     def user_defined_name(self, user_defined_name):
-        """Sets the user_defined_name of this DemoField.
+        r"""Sets the user_defined_name of this DemoField.
 
         json及nginx方式中字段自定义别名
 

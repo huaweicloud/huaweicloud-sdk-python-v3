@@ -43,7 +43,7 @@ class OperationState:
     }
 
     def __init__(self, action_mode=None, actions=None, on_errors=None, id=None, name=None, type=None, end=None, transition=None, state_data_filter=None, duration=None):
-        """OperationState
+        r"""OperationState
 
         The model defined in huaweicloud sdk
 
@@ -100,7 +100,7 @@ class OperationState:
 
     @property
     def action_mode(self):
-        """Gets the action_mode of this OperationState.
+        r"""Gets the action_mode of this OperationState.
 
         Action执行模式，支持串行，并行两种模式，默认串行
 
@@ -111,7 +111,7 @@ class OperationState:
 
     @action_mode.setter
     def action_mode(self, action_mode):
-        """Sets the action_mode of this OperationState.
+        r"""Sets the action_mode of this OperationState.
 
         Action执行模式，支持串行，并行两种模式，默认串行
 
@@ -122,7 +122,7 @@ class OperationState:
 
     @property
     def actions(self):
-        """Gets the actions of this OperationState.
+        r"""Gets the actions of this OperationState.
 
         节点中要执行的操作列表
 
@@ -133,7 +133,7 @@ class OperationState:
 
     @actions.setter
     def actions(self, actions):
-        """Sets the actions of this OperationState.
+        r"""Sets the actions of this OperationState.
 
         节点中要执行的操作列表
 
@@ -144,7 +144,7 @@ class OperationState:
 
     @property
     def on_errors(self):
-        """Gets the on_errors of this OperationState.
+        r"""Gets the on_errors of this OperationState.
 
         错误处理策略
 
@@ -155,7 +155,7 @@ class OperationState:
 
     @on_errors.setter
     def on_errors(self, on_errors):
-        """Sets the on_errors of this OperationState.
+        r"""Sets the on_errors of this OperationState.
 
         错误处理策略
 
@@ -166,7 +166,7 @@ class OperationState:
 
     @property
     def id(self):
-        """Gets the id of this OperationState.
+        r"""Gets the id of this OperationState.
 
         节点ID，需要在当前函数流中唯一
 
@@ -177,7 +177,7 @@ class OperationState:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this OperationState.
+        r"""Sets the id of this OperationState.
 
         节点ID，需要在当前函数流中唯一
 
@@ -188,7 +188,7 @@ class OperationState:
 
     @property
     def name(self):
-        """Gets the name of this OperationState.
+        r"""Gets the name of this OperationState.
 
         节点名称
 
@@ -199,7 +199,7 @@ class OperationState:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this OperationState.
+        r"""Sets the name of this OperationState.
 
         节点名称
 
@@ -210,7 +210,7 @@ class OperationState:
 
     @property
     def type(self):
-        """Gets the type of this OperationState.
+        r"""Gets the type of this OperationState.
 
         节点类型
 
@@ -221,7 +221,7 @@ class OperationState:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this OperationState.
+        r"""Sets the type of this OperationState.
 
         节点类型
 
@@ -232,7 +232,7 @@ class OperationState:
 
     @property
     def end(self):
-        """Gets the end of this OperationState.
+        r"""Gets the end of this OperationState.
 
         是否是结束节点
 
@@ -243,7 +243,7 @@ class OperationState:
 
     @end.setter
     def end(self, end):
-        """Sets the end of this OperationState.
+        r"""Sets the end of this OperationState.
 
         是否是结束节点
 
@@ -254,7 +254,7 @@ class OperationState:
 
     @property
     def transition(self):
-        """Gets the transition of this OperationState.
+        r"""Gets the transition of this OperationState.
 
         下一步骤节点ID
 
@@ -265,7 +265,7 @@ class OperationState:
 
     @transition.setter
     def transition(self, transition):
-        """Sets the transition of this OperationState.
+        r"""Sets the transition of this OperationState.
 
         下一步骤节点ID
 
@@ -276,7 +276,7 @@ class OperationState:
 
     @property
     def state_data_filter(self):
-        """Gets the state_data_filter of this OperationState.
+        r"""Gets the state_data_filter of this OperationState.
 
         :return: The state_data_filter of this OperationState.
         :rtype: :class:`huaweicloudsdkfunctiongraph.v2.StateDataFilter`
@@ -285,7 +285,7 @@ class OperationState:
 
     @state_data_filter.setter
     def state_data_filter(self, state_data_filter):
-        """Sets the state_data_filter of this OperationState.
+        r"""Sets the state_data_filter of this OperationState.
 
         :param state_data_filter: The state_data_filter of this OperationState.
         :type state_data_filter: :class:`huaweicloudsdkfunctiongraph.v2.StateDataFilter`
@@ -294,7 +294,7 @@ class OperationState:
 
     @property
     def duration(self):
-        """Gets the duration of this OperationState.
+        r"""Gets the duration of this OperationState.
 
         时间等待节点等待时间（秒）,节点类型为Sleep时为必填，节点类型不为Sleep时无效
 
@@ -305,7 +305,7 @@ class OperationState:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this OperationState.
+        r"""Sets the duration of this OperationState.
 
         时间等待节点等待时间（秒）,节点类型为Sleep时为必填，节点类型不为Sleep时无效
 

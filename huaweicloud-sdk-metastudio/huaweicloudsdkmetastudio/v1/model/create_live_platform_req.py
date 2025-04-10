@@ -29,7 +29,7 @@ class CreateLivePlatformReq:
     }
 
     def __init__(self, name=None, auth_config=None, callback_config=None):
-        """CreateLivePlatformReq
+        r"""CreateLivePlatformReq
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CreateLivePlatformReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateLivePlatformReq.
+        r"""Gets the name of this CreateLivePlatformReq.
 
         直播平台名称
 
@@ -65,7 +65,7 @@ class CreateLivePlatformReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateLivePlatformReq.
+        r"""Sets the name of this CreateLivePlatformReq.
 
         直播平台名称
 
@@ -76,7 +76,7 @@ class CreateLivePlatformReq:
 
     @property
     def auth_config(self):
-        """Gets the auth_config of this CreateLivePlatformReq.
+        r"""Gets the auth_config of this CreateLivePlatformReq.
 
         :return: The auth_config of this CreateLivePlatformReq.
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CustomPlatformAuthConfig`
@@ -85,7 +85,7 @@ class CreateLivePlatformReq:
 
     @auth_config.setter
     def auth_config(self, auth_config):
-        """Sets the auth_config of this CreateLivePlatformReq.
+        r"""Sets the auth_config of this CreateLivePlatformReq.
 
         :param auth_config: The auth_config of this CreateLivePlatformReq.
         :type auth_config: :class:`huaweicloudsdkmetastudio.v1.CustomPlatformAuthConfig`
@@ -94,7 +94,7 @@ class CreateLivePlatformReq:
 
     @property
     def callback_config(self):
-        """Gets the callback_config of this CreateLivePlatformReq.
+        r"""Gets the callback_config of this CreateLivePlatformReq.
 
         自定义直播平台回调配置。同一种类型仅保留一个配置，如果配置多个会随机保存一个。
 
@@ -105,7 +105,7 @@ class CreateLivePlatformReq:
 
     @callback_config.setter
     def callback_config(self, callback_config):
-        """Sets the callback_config of this CreateLivePlatformReq.
+        r"""Sets the callback_config of this CreateLivePlatformReq.
 
         自定义直播平台回调配置。同一种类型仅保留一个配置，如果配置多个会随机保存一个。
 

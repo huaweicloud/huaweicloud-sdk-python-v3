@@ -27,7 +27,7 @@ class CreateAppInstanceRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """CreateAppInstanceRequest
+        r"""CreateAppInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateAppInstanceRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this CreateAppInstanceRequest.
+        r"""Gets the cluster_id of this CreateAppInstanceRequest.
 
         边缘集群ID
 
@@ -60,7 +60,7 @@ class CreateAppInstanceRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this CreateAppInstanceRequest.
+        r"""Sets the cluster_id of this CreateAppInstanceRequest.
 
         边缘集群ID
 
@@ -71,7 +71,7 @@ class CreateAppInstanceRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAppInstanceRequest.
+        r"""Gets the body of this CreateAppInstanceRequest.
 
         :return: The body of this CreateAppInstanceRequest.
         :rtype: :class:`huaweicloudsdkiotedge.v3.CreateAppInstanceRequestDTO`
@@ -80,7 +80,7 @@ class CreateAppInstanceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAppInstanceRequest.
+        r"""Sets the body of this CreateAppInstanceRequest.
 
         :param body: The body of this CreateAppInstanceRequest.
         :type body: :class:`huaweicloudsdkiotedge.v3.CreateAppInstanceRequestDTO`

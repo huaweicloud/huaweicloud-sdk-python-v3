@@ -31,7 +31,7 @@ class FileTranslationReq:
     }
 
     def __init__(self, url=None, _from=None, to=None, type=None):
-        """FileTranslationReq
+        r"""FileTranslationReq
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class FileTranslationReq:
 
     @property
     def url(self):
-        """Gets the url of this FileTranslationReq.
+        r"""Gets the url of this FileTranslationReq.
 
         存放在OBS的文档文件路径，私密文件推荐使用临时授权URL调用服务，如何获取OBS文件URL和临时授权URL请参见配置OBS访问权限（https://support.huaweicloud.com/api-nlp/nlp_03_0080.html）。OBS的region要和请求服务的region保持一致，region不一致则OBS不可用，即使obs是公开访问权限。
 
@@ -71,7 +71,7 @@ class FileTranslationReq:
 
     @url.setter
     def url(self, url):
-        """Sets the url of this FileTranslationReq.
+        r"""Sets the url of this FileTranslationReq.
 
         存放在OBS的文档文件路径，私密文件推荐使用临时授权URL调用服务，如何获取OBS文件URL和临时授权URL请参见配置OBS访问权限（https://support.huaweicloud.com/api-nlp/nlp_03_0080.html）。OBS的region要和请求服务的region保持一致，region不一致则OBS不可用，即使obs是公开访问权限。
 
@@ -82,7 +82,7 @@ class FileTranslationReq:
 
     @property
     def _from(self):
-        """Gets the _from of this FileTranslationReq.
+        r"""Gets the _from of this FileTranslationReq.
 
         翻译原语言，文档翻译服务当前仅支持中英互译。
 
@@ -93,7 +93,7 @@ class FileTranslationReq:
 
     @_from.setter
     def _from(self, _from):
-        """Sets the _from of this FileTranslationReq.
+        r"""Sets the _from of this FileTranslationReq.
 
         翻译原语言，文档翻译服务当前仅支持中英互译。
 
@@ -104,7 +104,7 @@ class FileTranslationReq:
 
     @property
     def to(self):
-        """Gets the to of this FileTranslationReq.
+        r"""Gets the to of this FileTranslationReq.
 
         翻译目标语言，文档翻译服务当前仅支持中英互译。
 
@@ -115,7 +115,7 @@ class FileTranslationReq:
 
     @to.setter
     def to(self, to):
-        """Sets the to of this FileTranslationReq.
+        r"""Sets the to of this FileTranslationReq.
 
         翻译目标语言，文档翻译服务当前仅支持中英互译。
 
@@ -126,7 +126,7 @@ class FileTranslationReq:
 
     @property
     def type(self):
-        """Gets the type of this FileTranslationReq.
+        r"""Gets the type of this FileTranslationReq.
 
         文档格式，当前仅支持翻译“docx”、“pptx”和“txt”格式的文档。
 
@@ -137,7 +137,7 @@ class FileTranslationReq:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this FileTranslationReq.
+        r"""Sets the type of this FileTranslationReq.
 
         文档格式，当前仅支持翻译“docx”、“pptx”和“txt”格式的文档。
 

@@ -27,7 +27,7 @@ class UpdateCsrRequest:
     }
 
     def __init__(self, id=None, body=None):
-        """UpdateCsrRequest
+        r"""UpdateCsrRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateCsrRequest:
 
     @property
     def id(self):
-        """Gets the id of this UpdateCsrRequest.
+        r"""Gets the id of this UpdateCsrRequest.
 
         CSR的ID。
 
@@ -60,7 +60,7 @@ class UpdateCsrRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateCsrRequest.
+        r"""Sets the id of this UpdateCsrRequest.
 
         CSR的ID。
 
@@ -71,7 +71,7 @@ class UpdateCsrRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateCsrRequest.
+        r"""Gets the body of this UpdateCsrRequest.
 
         :return: The body of this UpdateCsrRequest.
         :rtype: :class:`huaweicloudsdkscm.v3.UpdateCSRRequestBody`
@@ -80,7 +80,7 @@ class UpdateCsrRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateCsrRequest.
+        r"""Sets the body of this UpdateCsrRequest.
 
         :param body: The body of this UpdateCsrRequest.
         :type body: :class:`huaweicloudsdkscm.v3.UpdateCSRRequestBody`

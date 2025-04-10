@@ -27,7 +27,7 @@ class UpdatePluginsRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """UpdatePluginsRequest
+        r"""UpdatePluginsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdatePluginsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdatePluginsRequest.
+        r"""Gets the instance_id of this UpdatePluginsRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class UpdatePluginsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdatePluginsRequest.
+        r"""Sets the instance_id of this UpdatePluginsRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class UpdatePluginsRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdatePluginsRequest.
+        r"""Gets the body of this UpdatePluginsRequest.
 
         :return: The body of this UpdatePluginsRequest.
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.UpdatePluginsReq`
@@ -80,7 +80,7 @@ class UpdatePluginsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdatePluginsRequest.
+        r"""Sets the body of this UpdatePluginsRequest.
 
         :param body: The body of this UpdatePluginsRequest.
         :type body: :class:`huaweicloudsdkrabbitmq.v2.UpdatePluginsReq`

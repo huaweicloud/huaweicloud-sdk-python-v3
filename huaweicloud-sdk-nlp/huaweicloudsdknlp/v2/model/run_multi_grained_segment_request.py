@@ -25,7 +25,7 @@ class RunMultiGrainedSegmentRequest:
     }
 
     def __init__(self, body=None):
-        """RunMultiGrainedSegmentRequest
+        r"""RunMultiGrainedSegmentRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class RunMultiGrainedSegmentRequest:
 
     @property
     def body(self):
-        """Gets the body of this RunMultiGrainedSegmentRequest.
+        r"""Gets the body of this RunMultiGrainedSegmentRequest.
 
         :return: The body of this RunMultiGrainedSegmentRequest.
         :rtype: :class:`huaweicloudsdknlp.v2.PostMultiGrainedSegmentReq`
@@ -52,7 +52,7 @@ class RunMultiGrainedSegmentRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RunMultiGrainedSegmentRequest.
+        r"""Sets the body of this RunMultiGrainedSegmentRequest.
 
         :param body: The body of this RunMultiGrainedSegmentRequest.
         :type body: :class:`huaweicloudsdknlp.v2.PostMultiGrainedSegmentReq`

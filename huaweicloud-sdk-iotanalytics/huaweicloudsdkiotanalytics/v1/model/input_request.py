@@ -27,7 +27,7 @@ class InputRequest:
     }
 
     def __init__(self, name=None, property_reference=None):
-        """InputRequest
+        r"""InputRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class InputRequest:
 
     @property
     def name(self):
-        """Gets the name of this InputRequest.
+        r"""Gets the name of this InputRequest.
 
         参数名，正则： \"^[A-Za-z][A-Za-z_]{0,31}$\"
 
@@ -59,7 +59,7 @@ class InputRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this InputRequest.
+        r"""Sets the name of this InputRequest.
 
         参数名，正则： \"^[A-Za-z][A-Za-z_]{0,31}$\"
 
@@ -70,7 +70,7 @@ class InputRequest:
 
     @property
     def property_reference(self):
-        """Gets the property_reference of this InputRequest.
+        r"""Gets the property_reference of this InputRequest.
 
         :return: The property_reference of this InputRequest.
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.PropertyReferenceReq`
@@ -79,7 +79,7 @@ class InputRequest:
 
     @property_reference.setter
     def property_reference(self, property_reference):
-        """Sets the property_reference of this InputRequest.
+        r"""Sets the property_reference of this InputRequest.
 
         :param property_reference: The property_reference of this InputRequest.
         :type property_reference: :class:`huaweicloudsdkiotanalytics.v1.PropertyReferenceReq`

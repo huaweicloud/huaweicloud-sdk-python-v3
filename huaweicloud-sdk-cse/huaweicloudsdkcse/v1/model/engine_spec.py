@@ -29,7 +29,7 @@ class EngineSpec:
     }
 
     def __init__(self, available_cpu_memory=None, linear=None, available_prefix=None):
-        """EngineSpec
+        r"""EngineSpec
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class EngineSpec:
 
     @property
     def available_cpu_memory(self):
-        """Gets the available_cpu_memory of this EngineSpec.
+        r"""Gets the available_cpu_memory of this EngineSpec.
 
         CPU及内存规格。
 
@@ -68,7 +68,7 @@ class EngineSpec:
 
     @available_cpu_memory.setter
     def available_cpu_memory(self, available_cpu_memory):
-        """Sets the available_cpu_memory of this EngineSpec.
+        r"""Sets the available_cpu_memory of this EngineSpec.
 
         CPU及内存规格。
 
@@ -79,7 +79,7 @@ class EngineSpec:
 
     @property
     def linear(self):
-        """Gets the linear of this EngineSpec.
+        r"""Gets the linear of this EngineSpec.
 
         是否为线性规格。
 
@@ -90,7 +90,7 @@ class EngineSpec:
 
     @linear.setter
     def linear(self, linear):
-        """Sets the linear of this EngineSpec.
+        r"""Sets the linear of this EngineSpec.
 
         是否为线性规格。
 
@@ -101,7 +101,7 @@ class EngineSpec:
 
     @property
     def available_prefix(self):
-        """Gets the available_prefix of this EngineSpec.
+        r"""Gets the available_prefix of this EngineSpec.
 
         可用节点规格类型前缀。
 
@@ -112,7 +112,7 @@ class EngineSpec:
 
     @available_prefix.setter
     def available_prefix(self, available_prefix):
-        """Sets the available_prefix of this EngineSpec.
+        r"""Sets the available_prefix of this EngineSpec.
 
         可用节点规格类型前缀。
 

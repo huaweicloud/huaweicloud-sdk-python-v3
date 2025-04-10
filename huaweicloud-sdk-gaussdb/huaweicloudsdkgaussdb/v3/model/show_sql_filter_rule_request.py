@@ -31,7 +31,7 @@ class ShowSqlFilterRuleRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, node_id=None, sql_type=None):
-        """ShowSqlFilterRuleRequest
+        r"""ShowSqlFilterRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ShowSqlFilterRuleRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ShowSqlFilterRuleRequest.
+        r"""Gets the x_language of this ShowSqlFilterRuleRequest.
 
         语言。
 
@@ -73,7 +73,7 @@ class ShowSqlFilterRuleRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ShowSqlFilterRuleRequest.
+        r"""Sets the x_language of this ShowSqlFilterRuleRequest.
 
         语言。
 
@@ -84,7 +84,7 @@ class ShowSqlFilterRuleRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowSqlFilterRuleRequest.
+        r"""Gets the instance_id of this ShowSqlFilterRuleRequest.
 
         实例ID。
 
@@ -95,7 +95,7 @@ class ShowSqlFilterRuleRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowSqlFilterRuleRequest.
+        r"""Sets the instance_id of this ShowSqlFilterRuleRequest.
 
         实例ID。
 
@@ -106,7 +106,7 @@ class ShowSqlFilterRuleRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ShowSqlFilterRuleRequest.
+        r"""Gets the node_id of this ShowSqlFilterRuleRequest.
 
         节点ID。
 
@@ -117,7 +117,7 @@ class ShowSqlFilterRuleRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ShowSqlFilterRuleRequest.
+        r"""Sets the node_id of this ShowSqlFilterRuleRequest.
 
         节点ID。
 
@@ -128,7 +128,7 @@ class ShowSqlFilterRuleRequest:
 
     @property
     def sql_type(self):
-        """Gets the sql_type of this ShowSqlFilterRuleRequest.
+        r"""Gets the sql_type of this ShowSqlFilterRuleRequest.
 
         SQL限流类型，取值为SELECT、UPDATE、DELETE，不区分大小写；若不传则默认查询所有类型的限流规则。
 
@@ -139,7 +139,7 @@ class ShowSqlFilterRuleRequest:
 
     @sql_type.setter
     def sql_type(self, sql_type):
-        """Sets the sql_type of this ShowSqlFilterRuleRequest.
+        r"""Sets the sql_type of this ShowSqlFilterRuleRequest.
 
         SQL限流类型，取值为SELECT、UPDATE、DELETE，不区分大小写；若不传则默认查询所有类型的限流规则。
 

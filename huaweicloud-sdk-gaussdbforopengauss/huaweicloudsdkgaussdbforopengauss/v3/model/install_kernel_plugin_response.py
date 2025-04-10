@@ -26,7 +26,7 @@ class InstallKernelPluginResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """InstallKernelPluginResponse
+        r"""InstallKernelPluginResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class InstallKernelPluginResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this InstallKernelPluginResponse.
+        r"""Gets the job_id of this InstallKernelPluginResponse.
 
         插件安装工作流id
 
@@ -55,7 +55,7 @@ class InstallKernelPluginResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this InstallKernelPluginResponse.
+        r"""Sets the job_id of this InstallKernelPluginResponse.
 
         插件安装工作流id
 

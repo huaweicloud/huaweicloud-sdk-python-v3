@@ -37,7 +37,7 @@ class RecommendWord:
     }
 
     def __init__(self, recommend_word_id=None, recommend_word_name=None, level_value=None, sort_value=None, theme_id=None, theme_name=None, answer_info=None):
-        """RecommendWord
+        r"""RecommendWord
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class RecommendWord:
 
     @property
     def recommend_word_id(self):
-        """Gets the recommend_word_id of this RecommendWord.
+        r"""Gets the recommend_word_id of this RecommendWord.
 
         推荐词Id
 
@@ -96,7 +96,7 @@ class RecommendWord:
 
     @recommend_word_id.setter
     def recommend_word_id(self, recommend_word_id):
-        """Sets the recommend_word_id of this RecommendWord.
+        r"""Sets the recommend_word_id of this RecommendWord.
 
         推荐词Id
 
@@ -107,7 +107,7 @@ class RecommendWord:
 
     @property
     def recommend_word_name(self):
-        """Gets the recommend_word_name of this RecommendWord.
+        r"""Gets the recommend_word_name of this RecommendWord.
 
         推荐词
 
@@ -118,7 +118,7 @@ class RecommendWord:
 
     @recommend_word_name.setter
     def recommend_word_name(self, recommend_word_name):
-        """Sets the recommend_word_name of this RecommendWord.
+        r"""Sets the recommend_word_name of this RecommendWord.
 
         推荐词
 
@@ -129,7 +129,7 @@ class RecommendWord:
 
     @property
     def level_value(self):
-        """Gets the level_value of this RecommendWord.
+        r"""Gets the level_value of this RecommendWord.
 
         推荐词层级
 
@@ -140,7 +140,7 @@ class RecommendWord:
 
     @level_value.setter
     def level_value(self, level_value):
-        """Sets the level_value of this RecommendWord.
+        r"""Sets the level_value of this RecommendWord.
 
         推荐词层级
 
@@ -151,7 +151,7 @@ class RecommendWord:
 
     @property
     def sort_value(self):
-        """Gets the sort_value of this RecommendWord.
+        r"""Gets the sort_value of this RecommendWord.
 
         推荐词排序，序号越小越靠前
 
@@ -162,7 +162,7 @@ class RecommendWord:
 
     @sort_value.setter
     def sort_value(self, sort_value):
-        """Sets the sort_value of this RecommendWord.
+        r"""Sets the sort_value of this RecommendWord.
 
         推荐词排序，序号越小越靠前
 
@@ -173,7 +173,7 @@ class RecommendWord:
 
     @property
     def theme_id(self):
-        """Gets the theme_id of this RecommendWord.
+        r"""Gets the theme_id of this RecommendWord.
 
         主题Id
 
@@ -184,7 +184,7 @@ class RecommendWord:
 
     @theme_id.setter
     def theme_id(self, theme_id):
-        """Sets the theme_id of this RecommendWord.
+        r"""Sets the theme_id of this RecommendWord.
 
         主题Id
 
@@ -195,7 +195,7 @@ class RecommendWord:
 
     @property
     def theme_name(self):
-        """Gets the theme_name of this RecommendWord.
+        r"""Gets the theme_name of this RecommendWord.
 
         主题名称
 
@@ -206,7 +206,7 @@ class RecommendWord:
 
     @theme_name.setter
     def theme_name(self, theme_name):
-        """Sets the theme_name of this RecommendWord.
+        r"""Sets the theme_name of this RecommendWord.
 
         主题名称
 
@@ -217,7 +217,7 @@ class RecommendWord:
 
     @property
     def answer_info(self):
-        """Gets the answer_info of this RecommendWord.
+        r"""Gets the answer_info of this RecommendWord.
 
         :return: The answer_info of this RecommendWord.
         :rtype: :class:`huaweicloudsdkosm.v2.AnswerInfo`
@@ -226,7 +226,7 @@ class RecommendWord:
 
     @answer_info.setter
     def answer_info(self, answer_info):
-        """Sets the answer_info of this RecommendWord.
+        r"""Sets the answer_info of this RecommendWord.
 
         :param answer_info: The answer_info of this RecommendWord.
         :type answer_info: :class:`huaweicloudsdkosm.v2.AnswerInfo`

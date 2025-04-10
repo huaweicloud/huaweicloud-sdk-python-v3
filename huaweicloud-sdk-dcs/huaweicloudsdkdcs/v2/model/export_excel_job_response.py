@@ -34,7 +34,7 @@ class ExportExcelJobResponse(SdkResponse):
     }
 
     def __init__(self, status=None, file_name=None, link=None, err_code=None, err_msg=None):
-        """ExportExcelJobResponse
+        r"""ExportExcelJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ExportExcelJobResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ExportExcelJobResponse.
+        r"""Gets the status of this ExportExcelJobResponse.
 
         状态
 
@@ -83,7 +83,7 @@ class ExportExcelJobResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ExportExcelJobResponse.
+        r"""Sets the status of this ExportExcelJobResponse.
 
         状态
 
@@ -94,7 +94,7 @@ class ExportExcelJobResponse(SdkResponse):
 
     @property
     def file_name(self):
-        """Gets the file_name of this ExportExcelJobResponse.
+        r"""Gets the file_name of this ExportExcelJobResponse.
 
         文件名
 
@@ -105,7 +105,7 @@ class ExportExcelJobResponse(SdkResponse):
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this ExportExcelJobResponse.
+        r"""Sets the file_name of this ExportExcelJobResponse.
 
         文件名
 
@@ -116,7 +116,7 @@ class ExportExcelJobResponse(SdkResponse):
 
     @property
     def link(self):
-        """Gets the link of this ExportExcelJobResponse.
+        r"""Gets the link of this ExportExcelJobResponse.
 
         链接
 
@@ -127,7 +127,7 @@ class ExportExcelJobResponse(SdkResponse):
 
     @link.setter
     def link(self, link):
-        """Sets the link of this ExportExcelJobResponse.
+        r"""Sets the link of this ExportExcelJobResponse.
 
         链接
 
@@ -138,7 +138,7 @@ class ExportExcelJobResponse(SdkResponse):
 
     @property
     def err_code(self):
-        """Gets the err_code of this ExportExcelJobResponse.
+        r"""Gets the err_code of this ExportExcelJobResponse.
 
         错误码
 
@@ -149,7 +149,7 @@ class ExportExcelJobResponse(SdkResponse):
 
     @err_code.setter
     def err_code(self, err_code):
-        """Sets the err_code of this ExportExcelJobResponse.
+        r"""Sets the err_code of this ExportExcelJobResponse.
 
         错误码
 
@@ -160,7 +160,7 @@ class ExportExcelJobResponse(SdkResponse):
 
     @property
     def err_msg(self):
-        """Gets the err_msg of this ExportExcelJobResponse.
+        r"""Gets the err_msg of this ExportExcelJobResponse.
 
         错误信息
 
@@ -171,7 +171,7 @@ class ExportExcelJobResponse(SdkResponse):
 
     @err_msg.setter
     def err_msg(self, err_msg):
-        """Sets the err_msg of this ExportExcelJobResponse.
+        r"""Sets the err_msg of this ExportExcelJobResponse.
 
         错误信息
 

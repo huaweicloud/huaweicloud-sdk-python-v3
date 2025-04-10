@@ -29,7 +29,7 @@ class RecognizeReceptorPocketMode:
     }
 
     def __init__(self):
-        """RecognizeReceptorPocketMode
+        r"""RecognizeReceptorPocketMode
 
         The model defined in huaweicloud sdk
 

@@ -32,7 +32,7 @@ class ShowOverviewResponse(SdkResponse):
     }
 
     def __init__(self, agent_cnt=None, instance_cnt=None, league_cnt=None, notice_to_handle_cnt=None):
-        """ShowOverviewResponse
+        r"""ShowOverviewResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @property
     def agent_cnt(self):
-        """Gets the agent_cnt of this ShowOverviewResponse.
+        r"""Gets the agent_cnt of this ShowOverviewResponse.
 
         可信节点数
 
@@ -76,7 +76,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @agent_cnt.setter
     def agent_cnt(self, agent_cnt):
-        """Sets the agent_cnt of this ShowOverviewResponse.
+        r"""Sets the agent_cnt of this ShowOverviewResponse.
 
         可信节点数
 
@@ -87,7 +87,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @property
     def instance_cnt(self):
-        """Gets the instance_cnt of this ShowOverviewResponse.
+        r"""Gets the instance_cnt of this ShowOverviewResponse.
 
         作业执行历史数
 
@@ -98,7 +98,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @instance_cnt.setter
     def instance_cnt(self, instance_cnt):
-        """Sets the instance_cnt of this ShowOverviewResponse.
+        r"""Sets the instance_cnt of this ShowOverviewResponse.
 
         作业执行历史数
 
@@ -109,7 +109,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @property
     def league_cnt(self):
-        """Gets the league_cnt of this ShowOverviewResponse.
+        r"""Gets the league_cnt of this ShowOverviewResponse.
 
         有效联盟数
 
@@ -120,7 +120,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @league_cnt.setter
     def league_cnt(self, league_cnt):
-        """Sets the league_cnt of this ShowOverviewResponse.
+        r"""Sets the league_cnt of this ShowOverviewResponse.
 
         有效联盟数
 
@@ -131,7 +131,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @property
     def notice_to_handle_cnt(self):
-        """Gets the notice_to_handle_cnt of this ShowOverviewResponse.
+        r"""Gets the notice_to_handle_cnt of this ShowOverviewResponse.
 
         待处理消息通知数
 
@@ -142,7 +142,7 @@ class ShowOverviewResponse(SdkResponse):
 
     @notice_to_handle_cnt.setter
     def notice_to_handle_cnt(self, notice_to_handle_cnt):
-        """Sets the notice_to_handle_cnt of this ShowOverviewResponse.
+        r"""Sets the notice_to_handle_cnt of this ShowOverviewResponse.
 
         待处理消息通知数
 

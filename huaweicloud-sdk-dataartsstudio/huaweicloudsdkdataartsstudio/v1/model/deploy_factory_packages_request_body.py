@@ -27,7 +27,7 @@ class DeployFactoryPackagesRequestBody:
     }
 
     def __init__(self, package_ids=None, startup_mode=None):
-        """DeployFactoryPackagesRequestBody
+        r"""DeployFactoryPackagesRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeployFactoryPackagesRequestBody:
 
     @property
     def package_ids(self):
-        """Gets the package_ids of this DeployFactoryPackagesRequestBody.
+        r"""Gets the package_ids of this DeployFactoryPackagesRequestBody.
 
         发布包ID
 
@@ -60,7 +60,7 @@ class DeployFactoryPackagesRequestBody:
 
     @package_ids.setter
     def package_ids(self, package_ids):
-        """Sets the package_ids of this DeployFactoryPackagesRequestBody.
+        r"""Sets the package_ids of this DeployFactoryPackagesRequestBody.
 
         发布包ID
 
@@ -71,7 +71,7 @@ class DeployFactoryPackagesRequestBody:
 
     @property
     def startup_mode(self):
-        """Gets the startup_mode of this DeployFactoryPackagesRequestBody.
+        r"""Gets the startup_mode of this DeployFactoryPackagesRequestBody.
 
         发布后是否立即启动作业。取值范围为0和1，默认为1, 1：发布成功后立即启动作业 0：不立即启动
 
@@ -82,7 +82,7 @@ class DeployFactoryPackagesRequestBody:
 
     @startup_mode.setter
     def startup_mode(self, startup_mode):
-        """Sets the startup_mode of this DeployFactoryPackagesRequestBody.
+        r"""Sets the startup_mode of this DeployFactoryPackagesRequestBody.
 
         发布后是否立即启动作业。取值范围为0和1，默认为1, 1：发布成功后立即启动作业 0：不立即启动
 

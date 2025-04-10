@@ -31,7 +31,7 @@ class CreateHostGroupRequestBody:
     }
 
     def __init__(self, host_group_name=None, host_group_type=None, host_id_list=None, host_group_tag=None):
-        """CreateHostGroupRequestBody
+        r"""CreateHostGroupRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class CreateHostGroupRequestBody:
 
     @property
     def host_group_name(self):
-        """Gets the host_group_name of this CreateHostGroupRequestBody.
+        r"""Gets the host_group_name of this CreateHostGroupRequestBody.
 
         主机组名称
 
@@ -73,7 +73,7 @@ class CreateHostGroupRequestBody:
 
     @host_group_name.setter
     def host_group_name(self, host_group_name):
-        """Sets the host_group_name of this CreateHostGroupRequestBody.
+        r"""Sets the host_group_name of this CreateHostGroupRequestBody.
 
         主机组名称
 
@@ -84,7 +84,7 @@ class CreateHostGroupRequestBody:
 
     @property
     def host_group_type(self):
-        """Gets the host_group_type of this CreateHostGroupRequestBody.
+        r"""Gets the host_group_type of this CreateHostGroupRequestBody.
 
         主机组类型。windows：windows类型，linux：linux类型
 
@@ -95,7 +95,7 @@ class CreateHostGroupRequestBody:
 
     @host_group_type.setter
     def host_group_type(self, host_group_type):
-        """Sets the host_group_type of this CreateHostGroupRequestBody.
+        r"""Sets the host_group_type of this CreateHostGroupRequestBody.
 
         主机组类型。windows：windows类型，linux：linux类型
 
@@ -106,7 +106,7 @@ class CreateHostGroupRequestBody:
 
     @property
     def host_id_list(self):
-        """Gets the host_id_list of this CreateHostGroupRequestBody.
+        r"""Gets the host_id_list of this CreateHostGroupRequestBody.
 
         主机组ID列表。主机类型必须与主机组类型一致
 
@@ -117,7 +117,7 @@ class CreateHostGroupRequestBody:
 
     @host_id_list.setter
     def host_id_list(self, host_id_list):
-        """Sets the host_id_list of this CreateHostGroupRequestBody.
+        r"""Sets the host_id_list of this CreateHostGroupRequestBody.
 
         主机组ID列表。主机类型必须与主机组类型一致
 
@@ -128,7 +128,7 @@ class CreateHostGroupRequestBody:
 
     @property
     def host_group_tag(self):
-        """Gets the host_group_tag of this CreateHostGroupRequestBody.
+        r"""Gets the host_group_tag of this CreateHostGroupRequestBody.
 
         标签信息。KEY不能重复
 
@@ -139,7 +139,7 @@ class CreateHostGroupRequestBody:
 
     @host_group_tag.setter
     def host_group_tag(self, host_group_tag):
-        """Sets the host_group_tag of this CreateHostGroupRequestBody.
+        r"""Sets the host_group_tag of this CreateHostGroupRequestBody.
 
         标签信息。KEY不能重复
 

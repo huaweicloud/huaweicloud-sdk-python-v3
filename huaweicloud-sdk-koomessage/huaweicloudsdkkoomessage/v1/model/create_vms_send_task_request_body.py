@@ -37,7 +37,7 @@ class CreateVmsSendTaskRequestBody:
     }
 
     def __init__(self, task_name=None, tpl_id=None, expiration_time=None, mobiles=None, dync_params=None, individual_params=None, exdata=None):
-        """CreateVmsSendTaskRequestBody
+        r"""CreateVmsSendTaskRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class CreateVmsSendTaskRequestBody:
 
     @property
     def task_name(self):
-        """Gets the task_name of this CreateVmsSendTaskRequestBody.
+        r"""Gets the task_name of this CreateVmsSendTaskRequestBody.
 
         任务名称。
 
@@ -94,7 +94,7 @@ class CreateVmsSendTaskRequestBody:
 
     @task_name.setter
     def task_name(self, task_name):
-        """Sets the task_name of this CreateVmsSendTaskRequestBody.
+        r"""Sets the task_name of this CreateVmsSendTaskRequestBody.
 
         任务名称。
 
@@ -105,7 +105,7 @@ class CreateVmsSendTaskRequestBody:
 
     @property
     def tpl_id(self):
-        """Gets the tpl_id of this CreateVmsSendTaskRequestBody.
+        r"""Gets the tpl_id of this CreateVmsSendTaskRequestBody.
 
         智能信息基础版模板ID。
 
@@ -116,7 +116,7 @@ class CreateVmsSendTaskRequestBody:
 
     @tpl_id.setter
     def tpl_id(self, tpl_id):
-        """Sets the tpl_id of this CreateVmsSendTaskRequestBody.
+        r"""Sets the tpl_id of this CreateVmsSendTaskRequestBody.
 
         智能信息基础版模板ID。
 
@@ -127,7 +127,7 @@ class CreateVmsSendTaskRequestBody:
 
     @property
     def expiration_time(self):
-        """Gets the expiration_time of this CreateVmsSendTaskRequestBody.
+        r"""Gets the expiration_time of this CreateVmsSendTaskRequestBody.
 
         失效时间（小时，范围是1~72小时）。
 
@@ -138,7 +138,7 @@ class CreateVmsSendTaskRequestBody:
 
     @expiration_time.setter
     def expiration_time(self, expiration_time):
-        """Sets the expiration_time of this CreateVmsSendTaskRequestBody.
+        r"""Sets the expiration_time of this CreateVmsSendTaskRequestBody.
 
         失效时间（小时，范围是1~72小时）。
 
@@ -149,7 +149,7 @@ class CreateVmsSendTaskRequestBody:
 
     @property
     def mobiles(self):
-        """Gets the mobiles of this CreateVmsSendTaskRequestBody.
+        r"""Gets the mobiles of this CreateVmsSendTaskRequestBody.
 
         群发手机号码列表，最多支持5000个号码。  > 长度指的是单个号码的长度。 > mobiles和individual_params字段只能二选一。 
 
@@ -160,7 +160,7 @@ class CreateVmsSendTaskRequestBody:
 
     @mobiles.setter
     def mobiles(self, mobiles):
-        """Sets the mobiles of this CreateVmsSendTaskRequestBody.
+        r"""Sets the mobiles of this CreateVmsSendTaskRequestBody.
 
         群发手机号码列表，最多支持5000个号码。  > 长度指的是单个号码的长度。 > mobiles和individual_params字段只能二选一。 
 
@@ -171,7 +171,7 @@ class CreateVmsSendTaskRequestBody:
 
     @property
     def dync_params(self):
-        """Gets the dync_params of this CreateVmsSendTaskRequestBody.
+        r"""Gets the dync_params of this CreateVmsSendTaskRequestBody.
 
         群发动态参数数组。 - 参数顺序按照模板创建时参数占位符的顺序传入，例如创建模板时设置动参有#p_1#、#p_2#、#p_3#，则传入的参数数组顺序第一个元素为#p_1#，第二个元素是#p_2#，第三个元素为#p_3#。 - mobiles不填时，此字段被忽略。 
 
@@ -182,7 +182,7 @@ class CreateVmsSendTaskRequestBody:
 
     @dync_params.setter
     def dync_params(self, dync_params):
-        """Sets the dync_params of this CreateVmsSendTaskRequestBody.
+        r"""Sets the dync_params of this CreateVmsSendTaskRequestBody.
 
         群发动态参数数组。 - 参数顺序按照模板创建时参数占位符的顺序传入，例如创建模板时设置动参有#p_1#、#p_2#、#p_3#，则传入的参数数组顺序第一个元素为#p_1#，第二个元素是#p_2#，第三个元素为#p_3#。 - mobiles不填时，此字段被忽略。 
 
@@ -193,7 +193,7 @@ class CreateVmsSendTaskRequestBody:
 
     @property
     def individual_params(self):
-        """Gets the individual_params of this CreateVmsSendTaskRequestBody.
+        r"""Gets the individual_params of this CreateVmsSendTaskRequestBody.
 
         个性化手机号码及动态参数数组。  mobiles和individual_params字段只能二选一。 
 
@@ -204,7 +204,7 @@ class CreateVmsSendTaskRequestBody:
 
     @individual_params.setter
     def individual_params(self, individual_params):
-        """Sets the individual_params of this CreateVmsSendTaskRequestBody.
+        r"""Sets the individual_params of this CreateVmsSendTaskRequestBody.
 
         个性化手机号码及动态参数数组。  mobiles和individual_params字段只能二选一。 
 
@@ -215,7 +215,7 @@ class CreateVmsSendTaskRequestBody:
 
     @property
     def exdata(self):
-        """Gets the exdata of this CreateVmsSendTaskRequestBody.
+        r"""Gets the exdata of this CreateVmsSendTaskRequestBody.
 
         智能信息基础版扩展字段。
 
@@ -226,7 +226,7 @@ class CreateVmsSendTaskRequestBody:
 
     @exdata.setter
     def exdata(self, exdata):
-        """Sets the exdata of this CreateVmsSendTaskRequestBody.
+        r"""Sets the exdata of this CreateVmsSendTaskRequestBody.
 
         智能信息基础版扩展字段。
 

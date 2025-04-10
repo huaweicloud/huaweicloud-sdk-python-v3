@@ -25,7 +25,7 @@ class BatchCreateGlobalEipRequest:
     }
 
     def __init__(self, body=None):
-        """BatchCreateGlobalEipRequest
+        r"""BatchCreateGlobalEipRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchCreateGlobalEipRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchCreateGlobalEipRequest.
+        r"""Gets the body of this BatchCreateGlobalEipRequest.
 
         :return: The body of this BatchCreateGlobalEipRequest.
         :rtype: :class:`huaweicloudsdkgeip.v3.BatchCreateGlobalEipRequestBody`
@@ -52,7 +52,7 @@ class BatchCreateGlobalEipRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchCreateGlobalEipRequest.
+        r"""Sets the body of this BatchCreateGlobalEipRequest.
 
         :param body: The body of this BatchCreateGlobalEipRequest.
         :type body: :class:`huaweicloudsdkgeip.v3.BatchCreateGlobalEipRequestBody`

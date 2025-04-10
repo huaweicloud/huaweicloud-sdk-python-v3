@@ -27,7 +27,7 @@ class CreateDictionaryRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """CreateDictionaryRequest
+        r"""CreateDictionaryRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateDictionaryRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateDictionaryRequest.
+        r"""Gets the instance_id of this CreateDictionaryRequest.
 
         实例ID
 
@@ -60,7 +60,7 @@ class CreateDictionaryRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateDictionaryRequest.
+        r"""Sets the instance_id of this CreateDictionaryRequest.
 
         实例ID
 
@@ -71,7 +71,7 @@ class CreateDictionaryRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateDictionaryRequest.
+        r"""Gets the body of this CreateDictionaryRequest.
 
         :return: The body of this CreateDictionaryRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.CreateDictionary`
@@ -80,7 +80,7 @@ class CreateDictionaryRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateDictionaryRequest.
+        r"""Sets the body of this CreateDictionaryRequest.
 
         :param body: The body of this CreateDictionaryRequest.
         :type body: :class:`huaweicloudsdkroma.v2.CreateDictionary`

@@ -33,7 +33,7 @@ class CreatePtrReq:
     }
 
     def __init__(self, ptrdname=None, description=None, ttl=None, enterprise_project_id=None, tags=None):
-        """CreatePtrReq
+        r"""CreatePtrReq
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class CreatePtrReq:
 
     @property
     def ptrdname(self):
-        """Gets the ptrdname of this CreatePtrReq.
+        r"""Gets the ptrdname of this CreatePtrReq.
 
         PTR记录对应的域名。
 
@@ -81,7 +81,7 @@ class CreatePtrReq:
 
     @ptrdname.setter
     def ptrdname(self, ptrdname):
-        """Sets the ptrdname of this CreatePtrReq.
+        r"""Sets the ptrdname of this CreatePtrReq.
 
         PTR记录对应的域名。
 
@@ -92,7 +92,7 @@ class CreatePtrReq:
 
     @property
     def description(self):
-        """Gets the description of this CreatePtrReq.
+        r"""Gets the description of this CreatePtrReq.
 
         对PTR记录的描述。
 
@@ -103,7 +103,7 @@ class CreatePtrReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreatePtrReq.
+        r"""Sets the description of this CreatePtrReq.
 
         对PTR记录的描述。
 
@@ -114,7 +114,7 @@ class CreatePtrReq:
 
     @property
     def ttl(self):
-        """Gets the ttl of this CreatePtrReq.
+        r"""Gets the ttl of this CreatePtrReq.
 
         PTR记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。取值范围：1～2147483647
 
@@ -125,7 +125,7 @@ class CreatePtrReq:
 
     @ttl.setter
     def ttl(self, ttl):
-        """Sets the ttl of this CreatePtrReq.
+        r"""Sets the ttl of this CreatePtrReq.
 
         PTR记录在本地DNS服务器的缓存时间，缓存时间越长更新生效越慢，以秒为单位。取值范围：1～2147483647
 
@@ -136,7 +136,7 @@ class CreatePtrReq:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreatePtrReq.
+        r"""Gets the enterprise_project_id of this CreatePtrReq.
 
         反向解析关联的企业项目ID，长度不超过36个字符。
 
@@ -147,7 +147,7 @@ class CreatePtrReq:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreatePtrReq.
+        r"""Sets the enterprise_project_id of this CreatePtrReq.
 
         反向解析关联的企业项目ID，长度不超过36个字符。
 
@@ -158,7 +158,7 @@ class CreatePtrReq:
 
     @property
     def tags(self):
-        """Gets the tags of this CreatePtrReq.
+        r"""Gets the tags of this CreatePtrReq.
 
         资源标签。
 
@@ -169,7 +169,7 @@ class CreatePtrReq:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreatePtrReq.
+        r"""Sets the tags of this CreatePtrReq.
 
         资源标签。
 

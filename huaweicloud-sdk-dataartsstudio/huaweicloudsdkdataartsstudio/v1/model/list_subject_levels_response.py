@@ -26,7 +26,7 @@ class ListSubjectLevelsResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ListSubjectLevelsResponse
+        r"""ListSubjectLevelsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListSubjectLevelsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListSubjectLevelsResponse.
+        r"""Gets the data of this ListSubjectLevelsResponse.
 
         :return: The data of this ListSubjectLevelsResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListSubjectLevelsResultData`
@@ -53,7 +53,7 @@ class ListSubjectLevelsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListSubjectLevelsResponse.
+        r"""Sets the data of this ListSubjectLevelsResponse.
 
         :param data: The data of this ListSubjectLevelsResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.ListSubjectLevelsResultData`

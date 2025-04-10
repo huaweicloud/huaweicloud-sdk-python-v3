@@ -85,7 +85,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
     }
 
     def __init__(self, direction=None, action=None, event_time=None, attack_type=None, attack_rule=None, level=None, source=None, packet_length=None, attack_rule_id=None, hit_time=None, log_id=None, src_ip=None, src_port=None, dst_ip=None, dst_port=None, protocol=None, packet=None, app=None, packet_messages=None, src_region_id=None, src_region_name=None, dst_region_id=None, dst_region_name=None, src_province_id=None, src_province_name=None, src_city_id=None, src_city_name=None, dst_province_id=None, dst_province_name=None, dst_city_id=None, dst_city_name=None):
-        """HttpQueryCfwAttackLogsResponseDTODataRecords
+        r"""HttpQueryCfwAttackLogsResponseDTODataRecords
 
         The model defined in huaweicloud sdk
 
@@ -253,7 +253,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @property
     def direction(self):
-        """Gets the direction of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Gets the direction of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         方向，包含in2out，out2in
 
@@ -264,7 +264,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @direction.setter
     def direction(self, direction):
-        """Sets the direction of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Sets the direction of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         方向，包含in2out，out2in
 
@@ -275,7 +275,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @property
     def action(self):
-        """Gets the action of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Gets the action of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         动作包含permit，deny
 
@@ -286,7 +286,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Sets the action of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         动作包含permit，deny
 
@@ -297,7 +297,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @property
     def event_time(self):
-        """Gets the event_time of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Gets the event_time of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         事件时间，以毫秒为单位的时间戳，如1718936272648
 
@@ -308,7 +308,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @event_time.setter
     def event_time(self, event_time):
-        """Sets the event_time of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Sets the event_time of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         事件时间，以毫秒为单位的时间戳，如1718936272648
 
@@ -319,7 +319,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @property
     def attack_type(self):
-        """Gets the attack_type of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Gets the attack_type of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         攻击类型
 
@@ -330,7 +330,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @attack_type.setter
     def attack_type(self, attack_type):
-        """Sets the attack_type of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Sets the attack_type of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         攻击类型
 
@@ -341,7 +341,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @property
     def attack_rule(self):
-        """Gets the attack_rule of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Gets the attack_rule of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         攻击规则
 
@@ -352,7 +352,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @attack_rule.setter
     def attack_rule(self, attack_rule):
-        """Sets the attack_rule of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Sets the attack_rule of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         攻击规则
 
@@ -363,7 +363,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @property
     def level(self):
-        """Gets the level of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Gets the level of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         威胁等级，包括CRITICAL、HIGH、MEDIUM、LOW
 
@@ -374,7 +374,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Sets the level of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         威胁等级，包括CRITICAL、HIGH、MEDIUM、LOW
 
@@ -385,7 +385,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @property
     def source(self):
-        """Gets the source of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Gets the source of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         来源
 
@@ -396,7 +396,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Sets the source of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         来源
 
@@ -407,7 +407,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @property
     def packet_length(self):
-        """Gets the packet_length of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Gets the packet_length of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         报文长度
 
@@ -418,7 +418,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @packet_length.setter
     def packet_length(self, packet_length):
-        """Sets the packet_length of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Sets the packet_length of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         报文长度
 
@@ -429,7 +429,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @property
     def attack_rule_id(self):
-        """Gets the attack_rule_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Gets the attack_rule_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         攻击规则id
 
@@ -440,7 +440,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @attack_rule_id.setter
     def attack_rule_id(self, attack_rule_id):
-        """Sets the attack_rule_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Sets the attack_rule_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         攻击规则id
 
@@ -451,7 +451,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @property
     def hit_time(self):
-        """Gets the hit_time of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Gets the hit_time of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         命中时间，以毫秒为单位的时间戳，如1718936272648
 
@@ -462,7 +462,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @hit_time.setter
     def hit_time(self, hit_time):
-        """Sets the hit_time of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Sets the hit_time of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         命中时间，以毫秒为单位的时间戳，如1718936272648
 
@@ -473,7 +473,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @property
     def log_id(self):
-        """Gets the log_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Gets the log_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         日志ID
 
@@ -484,7 +484,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @log_id.setter
     def log_id(self, log_id):
-        """Sets the log_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Sets the log_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         日志ID
 
@@ -495,7 +495,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @property
     def src_ip(self):
-        """Gets the src_ip of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Gets the src_ip of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         源IP
 
@@ -506,7 +506,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @src_ip.setter
     def src_ip(self, src_ip):
-        """Sets the src_ip of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Sets the src_ip of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         源IP
 
@@ -517,7 +517,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @property
     def src_port(self):
-        """Gets the src_port of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Gets the src_port of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         源端口
 
@@ -528,7 +528,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @src_port.setter
     def src_port(self, src_port):
-        """Sets the src_port of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Sets the src_port of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         源端口
 
@@ -539,7 +539,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @property
     def dst_ip(self):
-        """Gets the dst_ip of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Gets the dst_ip of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         目的IP
 
@@ -550,7 +550,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @dst_ip.setter
     def dst_ip(self, dst_ip):
-        """Sets the dst_ip of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Sets the dst_ip of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         目的IP
 
@@ -561,7 +561,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @property
     def dst_port(self):
-        """Gets the dst_port of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Gets the dst_port of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         目的端口
 
@@ -572,7 +572,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @dst_port.setter
     def dst_port(self, dst_port):
-        """Sets the dst_port of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Sets the dst_port of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         目的端口
 
@@ -583,7 +583,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @property
     def protocol(self):
-        """Gets the protocol of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Gets the protocol of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         协议类型，包含TCP, UDP,ICMP,ICMPV6等。
 
@@ -594,7 +594,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Sets the protocol of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         协议类型，包含TCP, UDP,ICMP,ICMPV6等。
 
@@ -605,7 +605,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @property
     def packet(self):
-        """Gets the packet of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Gets the packet of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         攻击日志报文
 
@@ -616,7 +616,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @packet.setter
     def packet(self, packet):
-        """Sets the packet of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Sets the packet of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         攻击日志报文
 
@@ -627,7 +627,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @property
     def app(self):
-        """Gets the app of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Gets the app of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         规则应用类型包括：“HTTP”，\"HTTPS\"，\"TLS1\"，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
 
@@ -638,7 +638,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Sets the app of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         规则应用类型包括：“HTTP”，\"HTTPS\"，\"TLS1\"，“DNS”，“SSH”，“MYSQL”，“SMTP”，“RDP”，“RDPS”，“VNC”，“POP3”，“IMAP4”，“SMTPS”，“POP3S”，“FTPS”，“ANY”,“BGP”等。
 
@@ -649,7 +649,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @property
     def packet_messages(self):
-        """Gets the packet_messages of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Gets the packet_messages of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         攻击报文信息
 
@@ -660,7 +660,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @packet_messages.setter
     def packet_messages(self, packet_messages):
-        """Sets the packet_messages of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Sets the packet_messages of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         攻击报文信息
 
@@ -671,7 +671,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @property
     def src_region_id(self):
-        """Gets the src_region_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Gets the src_region_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         源区域id
 
@@ -682,7 +682,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @src_region_id.setter
     def src_region_id(self, src_region_id):
-        """Sets the src_region_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Sets the src_region_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         源区域id
 
@@ -693,7 +693,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @property
     def src_region_name(self):
-        """Gets the src_region_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Gets the src_region_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         源区域名称
 
@@ -704,7 +704,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @src_region_name.setter
     def src_region_name(self, src_region_name):
-        """Sets the src_region_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Sets the src_region_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         源区域名称
 
@@ -715,7 +715,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @property
     def dst_region_id(self):
-        """Gets the dst_region_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Gets the dst_region_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         目的区域id
 
@@ -726,7 +726,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @dst_region_id.setter
     def dst_region_id(self, dst_region_id):
-        """Sets the dst_region_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Sets the dst_region_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         目的区域id
 
@@ -737,7 +737,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @property
     def dst_region_name(self):
-        """Gets the dst_region_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Gets the dst_region_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         目的区域名称
 
@@ -748,7 +748,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @dst_region_name.setter
     def dst_region_name(self, dst_region_name):
-        """Sets the dst_region_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Sets the dst_region_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         目的区域名称
 
@@ -759,7 +759,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @property
     def src_province_id(self):
-        """Gets the src_province_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Gets the src_province_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         源省份id
 
@@ -770,7 +770,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @src_province_id.setter
     def src_province_id(self, src_province_id):
-        """Sets the src_province_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Sets the src_province_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         源省份id
 
@@ -781,7 +781,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @property
     def src_province_name(self):
-        """Gets the src_province_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Gets the src_province_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         源省份名称
 
@@ -792,7 +792,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @src_province_name.setter
     def src_province_name(self, src_province_name):
-        """Sets the src_province_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Sets the src_province_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         源省份名称
 
@@ -803,7 +803,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @property
     def src_city_id(self):
-        """Gets the src_city_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Gets the src_city_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         源城市id
 
@@ -814,7 +814,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @src_city_id.setter
     def src_city_id(self, src_city_id):
-        """Sets the src_city_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Sets the src_city_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         源城市id
 
@@ -825,7 +825,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @property
     def src_city_name(self):
-        """Gets the src_city_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Gets the src_city_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         源城市名称
 
@@ -836,7 +836,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @src_city_name.setter
     def src_city_name(self, src_city_name):
-        """Sets the src_city_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Sets the src_city_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         源城市名称
 
@@ -847,7 +847,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @property
     def dst_province_id(self):
-        """Gets the dst_province_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Gets the dst_province_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         目的省份id
 
@@ -858,7 +858,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @dst_province_id.setter
     def dst_province_id(self, dst_province_id):
-        """Sets the dst_province_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Sets the dst_province_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         目的省份id
 
@@ -869,7 +869,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @property
     def dst_province_name(self):
-        """Gets the dst_province_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Gets the dst_province_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         目的省份名称
 
@@ -880,7 +880,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @dst_province_name.setter
     def dst_province_name(self, dst_province_name):
-        """Sets the dst_province_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Sets the dst_province_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         目的省份名称
 
@@ -891,7 +891,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @property
     def dst_city_id(self):
-        """Gets the dst_city_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Gets the dst_city_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         目的城市id
 
@@ -902,7 +902,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @dst_city_id.setter
     def dst_city_id(self, dst_city_id):
-        """Sets the dst_city_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Sets the dst_city_id of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         目的城市id
 
@@ -913,7 +913,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @property
     def dst_city_name(self):
-        """Gets the dst_city_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Gets the dst_city_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         目的城市名称
 
@@ -924,7 +924,7 @@ class HttpQueryCfwAttackLogsResponseDTODataRecords:
 
     @dst_city_name.setter
     def dst_city_name(self, dst_city_name):
-        """Sets the dst_city_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
+        r"""Sets the dst_city_name of this HttpQueryCfwAttackLogsResponseDTODataRecords.
 
         目的城市名称
 

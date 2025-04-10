@@ -27,7 +27,7 @@ class ComposedExpression:
     }
 
     def __init__(self, logic=None, expressions=None):
-        """ComposedExpression
+        r"""ComposedExpression
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ComposedExpression:
 
     @property
     def logic(self):
-        """Gets the logic of this ComposedExpression.
+        r"""Gets the logic of this ComposedExpression.
 
         逻辑关系，取值如\"$and\", \"$or\", \"$nor\"。
 
@@ -60,7 +60,7 @@ class ComposedExpression:
 
     @logic.setter
     def logic(self, logic):
-        """Sets the logic of this ComposedExpression.
+        r"""Sets the logic of this ComposedExpression.
 
         逻辑关系，取值如\"$and\", \"$or\", \"$nor\"。
 
@@ -71,7 +71,7 @@ class ComposedExpression:
 
     @property
     def expressions(self):
-        """Gets the expressions of this ComposedExpression.
+        r"""Gets the expressions of this ComposedExpression.
 
         多个相同优先级且相同逻辑的单字段或多字段条件。
 
@@ -82,7 +82,7 @@ class ComposedExpression:
 
     @expressions.setter
     def expressions(self, expressions):
-        """Sets the expressions of this ComposedExpression.
+        r"""Sets the expressions of this ComposedExpression.
 
         多个相同优先级且相同逻辑的单字段或多字段条件。
 

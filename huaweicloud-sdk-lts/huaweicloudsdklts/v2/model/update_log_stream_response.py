@@ -32,7 +32,7 @@ class UpdateLogStreamResponse(SdkResponse):
     }
 
     def __init__(self, creation_time=None, log_topic_name=None, log_topic_id=None, ttl_in_days=None):
-        """UpdateLogStreamResponse
+        r"""UpdateLogStreamResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class UpdateLogStreamResponse(SdkResponse):
 
     @property
     def creation_time(self):
-        """Gets the creation_time of this UpdateLogStreamResponse.
+        r"""Gets the creation_time of this UpdateLogStreamResponse.
 
         创建该日志流的时间
 
@@ -76,7 +76,7 @@ class UpdateLogStreamResponse(SdkResponse):
 
     @creation_time.setter
     def creation_time(self, creation_time):
-        """Sets the creation_time of this UpdateLogStreamResponse.
+        r"""Sets the creation_time of this UpdateLogStreamResponse.
 
         创建该日志流的时间
 
@@ -87,7 +87,7 @@ class UpdateLogStreamResponse(SdkResponse):
 
     @property
     def log_topic_name(self):
-        """Gets the log_topic_name of this UpdateLogStreamResponse.
+        r"""Gets the log_topic_name of this UpdateLogStreamResponse.
 
         日志流的名称。
 
@@ -98,7 +98,7 @@ class UpdateLogStreamResponse(SdkResponse):
 
     @log_topic_name.setter
     def log_topic_name(self, log_topic_name):
-        """Sets the log_topic_name of this UpdateLogStreamResponse.
+        r"""Sets the log_topic_name of this UpdateLogStreamResponse.
 
         日志流的名称。
 
@@ -109,7 +109,7 @@ class UpdateLogStreamResponse(SdkResponse):
 
     @property
     def log_topic_id(self):
-        """Gets the log_topic_id of this UpdateLogStreamResponse.
+        r"""Gets the log_topic_id of this UpdateLogStreamResponse.
 
         日志流ID。
 
@@ -120,7 +120,7 @@ class UpdateLogStreamResponse(SdkResponse):
 
     @log_topic_id.setter
     def log_topic_id(self, log_topic_id):
-        """Sets the log_topic_id of this UpdateLogStreamResponse.
+        r"""Sets the log_topic_id of this UpdateLogStreamResponse.
 
         日志流ID。
 
@@ -131,7 +131,7 @@ class UpdateLogStreamResponse(SdkResponse):
 
     @property
     def ttl_in_days(self):
-        """Gets the ttl_in_days of this UpdateLogStreamResponse.
+        r"""Gets the ttl_in_days of this UpdateLogStreamResponse.
 
         日志存储时间（天）。
 
@@ -142,7 +142,7 @@ class UpdateLogStreamResponse(SdkResponse):
 
     @ttl_in_days.setter
     def ttl_in_days(self, ttl_in_days):
-        """Sets the ttl_in_days of this UpdateLogStreamResponse.
+        r"""Sets the ttl_in_days of this UpdateLogStreamResponse.
 
         日志存储时间（天）。
 

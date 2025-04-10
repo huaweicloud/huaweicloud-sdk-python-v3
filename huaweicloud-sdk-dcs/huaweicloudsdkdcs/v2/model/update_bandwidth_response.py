@@ -26,7 +26,7 @@ class UpdateBandwidthResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """UpdateBandwidthResponse
+        r"""UpdateBandwidthResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateBandwidthResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this UpdateBandwidthResponse.
+        r"""Gets the body of this UpdateBandwidthResponse.
 
         :return: The body of this UpdateBandwidthResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class UpdateBandwidthResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateBandwidthResponse.
+        r"""Sets the body of this UpdateBandwidthResponse.
 
         :param body: The body of this UpdateBandwidthResponse.
         :type body: str

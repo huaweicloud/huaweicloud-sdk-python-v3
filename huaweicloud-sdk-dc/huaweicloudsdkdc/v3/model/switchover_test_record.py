@@ -39,7 +39,7 @@ class SwitchoverTestRecord:
     }
 
     def __init__(self, id=None, tenant_id=None, resource_id=None, resource_type=None, operation=None, start_time=None, end_time=None, operate_status=None):
-        """SwitchoverTestRecord
+        r"""SwitchoverTestRecord
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class SwitchoverTestRecord:
 
     @property
     def id(self):
-        """Gets the id of this SwitchoverTestRecord.
+        r"""Gets the id of this SwitchoverTestRecord.
 
         倒换测试记录的唯一标识
 
@@ -103,7 +103,7 @@ class SwitchoverTestRecord:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this SwitchoverTestRecord.
+        r"""Sets the id of this SwitchoverTestRecord.
 
         倒换测试记录的唯一标识
 
@@ -114,7 +114,7 @@ class SwitchoverTestRecord:
 
     @property
     def tenant_id(self):
-        """Gets the tenant_id of this SwitchoverTestRecord.
+        r"""Gets the tenant_id of this SwitchoverTestRecord.
 
         租户ID
 
@@ -125,7 +125,7 @@ class SwitchoverTestRecord:
 
     @tenant_id.setter
     def tenant_id(self, tenant_id):
-        """Sets the tenant_id of this SwitchoverTestRecord.
+        r"""Sets the tenant_id of this SwitchoverTestRecord.
 
         租户ID
 
@@ -136,7 +136,7 @@ class SwitchoverTestRecord:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this SwitchoverTestRecord.
+        r"""Gets the resource_id of this SwitchoverTestRecord.
 
         倒换测试的资源对象ID
 
@@ -147,7 +147,7 @@ class SwitchoverTestRecord:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this SwitchoverTestRecord.
+        r"""Sets the resource_id of this SwitchoverTestRecord.
 
         倒换测试的资源对象ID
 
@@ -158,7 +158,7 @@ class SwitchoverTestRecord:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this SwitchoverTestRecord.
+        r"""Gets the resource_type of this SwitchoverTestRecord.
 
         倒换测试的资源对象类型
 
@@ -169,7 +169,7 @@ class SwitchoverTestRecord:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this SwitchoverTestRecord.
+        r"""Sets the resource_type of this SwitchoverTestRecord.
 
         倒换测试的资源对象类型
 
@@ -180,7 +180,7 @@ class SwitchoverTestRecord:
 
     @property
     def operation(self):
-        """Gets the operation of this SwitchoverTestRecord.
+        r"""Gets the operation of this SwitchoverTestRecord.
 
         shutdown, undo_shutdown表示倒换测试操作类型
 
@@ -191,7 +191,7 @@ class SwitchoverTestRecord:
 
     @operation.setter
     def operation(self, operation):
-        """Sets the operation of this SwitchoverTestRecord.
+        r"""Sets the operation of this SwitchoverTestRecord.
 
         shutdown, undo_shutdown表示倒换测试操作类型
 
@@ -202,7 +202,7 @@ class SwitchoverTestRecord:
 
     @property
     def start_time(self):
-        """Gets the start_time of this SwitchoverTestRecord.
+        r"""Gets the start_time of this SwitchoverTestRecord.
 
         倒换测试操作的开始时间。采用UTC时间格式，格式为：yyyy-MM-ddTHH:mm:ss.SSSZ
 
@@ -213,7 +213,7 @@ class SwitchoverTestRecord:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this SwitchoverTestRecord.
+        r"""Sets the start_time of this SwitchoverTestRecord.
 
         倒换测试操作的开始时间。采用UTC时间格式，格式为：yyyy-MM-ddTHH:mm:ss.SSSZ
 
@@ -224,7 +224,7 @@ class SwitchoverTestRecord:
 
     @property
     def end_time(self):
-        """Gets the end_time of this SwitchoverTestRecord.
+        r"""Gets the end_time of this SwitchoverTestRecord.
 
         倒换测试操作的结束时间。采用UTC时间格式，格式为：yyyy-MM-ddTHH:mm:ss.SSSZ
 
@@ -235,7 +235,7 @@ class SwitchoverTestRecord:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this SwitchoverTestRecord.
+        r"""Sets the end_time of this SwitchoverTestRecord.
 
         倒换测试操作的结束时间。采用UTC时间格式，格式为：yyyy-MM-ddTHH:mm:ss.SSSZ
 
@@ -246,7 +246,7 @@ class SwitchoverTestRecord:
 
     @property
     def operate_status(self):
-        """Gets the operate_status of this SwitchoverTestRecord.
+        r"""Gets the operate_status of this SwitchoverTestRecord.
 
         倒换测试状态记录 STARTING: 初始状态 INPROGRESS: 配置下发中 COMPLETE: 配置下发完成 ERROR: 配置下发失败
 
@@ -257,7 +257,7 @@ class SwitchoverTestRecord:
 
     @operate_status.setter
     def operate_status(self, operate_status):
-        """Sets the operate_status of this SwitchoverTestRecord.
+        r"""Sets the operate_status of this SwitchoverTestRecord.
 
         倒换测试状态记录 STARTING: 初始状态 INPROGRESS: 配置下发中 COMPLETE: 配置下发完成 ERROR: 配置下发失败
 

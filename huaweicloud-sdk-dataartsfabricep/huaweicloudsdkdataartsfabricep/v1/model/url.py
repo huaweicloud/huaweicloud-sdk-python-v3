@@ -29,7 +29,7 @@ class Url:
     }
 
     def __init__(self, name=None, address=None, type=None):
-        """Url
+        r"""Url
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class Url:
 
     @property
     def name(self):
-        """Gets the name of this Url.
+        r"""Gets the name of this Url.
 
         Url名称
 
@@ -68,7 +68,7 @@ class Url:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Url.
+        r"""Sets the name of this Url.
 
         Url名称
 
@@ -79,7 +79,7 @@ class Url:
 
     @property
     def address(self):
-        """Gets the address of this Url.
+        r"""Gets the address of this Url.
 
         Url地址
 
@@ -90,7 +90,7 @@ class Url:
 
     @address.setter
     def address(self, address):
-        """Sets the address of this Url.
+        r"""Sets the address of this Url.
 
         Url地址
 
@@ -101,7 +101,7 @@ class Url:
 
     @property
     def type(self):
-        """Gets the type of this Url.
+        r"""Gets the type of this Url.
 
         类型，PUBLIC为公网地址，PRIVATE为内网地址
 
@@ -112,7 +112,7 @@ class Url:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Url.
+        r"""Sets the type of this Url.
 
         类型，PUBLIC为公网地址，PRIVATE为内网地址
 

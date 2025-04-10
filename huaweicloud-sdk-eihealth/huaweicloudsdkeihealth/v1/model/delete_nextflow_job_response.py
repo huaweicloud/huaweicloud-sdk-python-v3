@@ -24,7 +24,7 @@ class DeleteNextflowJobResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteNextflowJobResponse
+        r"""DeleteNextflowJobResponse
 
         The model defined in huaweicloud sdk
 

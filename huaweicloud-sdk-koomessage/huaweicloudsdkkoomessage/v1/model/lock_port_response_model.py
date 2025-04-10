@@ -25,7 +25,7 @@ class LockPortResponseModel:
     }
 
     def __init__(self, message=None):
-        """LockPortResponseModel
+        r"""LockPortResponseModel
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class LockPortResponseModel:
 
     @property
     def message(self):
-        """Gets the message of this LockPortResponseModel.
+        r"""Gets the message of this LockPortResponseModel.
 
         信息。
 
@@ -54,7 +54,7 @@ class LockPortResponseModel:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this LockPortResponseModel.
+        r"""Sets the message of this LockPortResponseModel.
 
         信息。
 

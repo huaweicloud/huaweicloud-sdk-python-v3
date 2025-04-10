@@ -53,7 +53,7 @@ class ComponentOverview:
     }
 
     def __init__(self, id=None, application_id=None, name=None, project_id=None, runtime=None, category=None, sub_category=None, description=None, status=None, source=None, build=None, creator=None, create_time=None, update_time=None, instances=None):
-        """ComponentOverview
+        r"""ComponentOverview
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class ComponentOverview:
 
     @property
     def id(self):
-        """Gets the id of this ComponentOverview.
+        r"""Gets the id of this ComponentOverview.
 
         组件ID。
 
@@ -152,7 +152,7 @@ class ComponentOverview:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ComponentOverview.
+        r"""Sets the id of this ComponentOverview.
 
         组件ID。
 
@@ -163,7 +163,7 @@ class ComponentOverview:
 
     @property
     def application_id(self):
-        """Gets the application_id of this ComponentOverview.
+        r"""Gets the application_id of this ComponentOverview.
 
         应用ID。
 
@@ -174,7 +174,7 @@ class ComponentOverview:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this ComponentOverview.
+        r"""Sets the application_id of this ComponentOverview.
 
         应用ID。
 
@@ -185,7 +185,7 @@ class ComponentOverview:
 
     @property
     def name(self):
-        """Gets the name of this ComponentOverview.
+        r"""Gets the name of this ComponentOverview.
 
         应用组件名称。
 
@@ -196,7 +196,7 @@ class ComponentOverview:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ComponentOverview.
+        r"""Sets the name of this ComponentOverview.
 
         应用组件名称。
 
@@ -207,7 +207,7 @@ class ComponentOverview:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ComponentOverview.
+        r"""Gets the project_id of this ComponentOverview.
 
         项目ID。
 
@@ -218,7 +218,7 @@ class ComponentOverview:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ComponentOverview.
+        r"""Sets the project_id of this ComponentOverview.
 
         项目ID。
 
@@ -229,7 +229,7 @@ class ComponentOverview:
 
     @property
     def runtime(self):
-        """Gets the runtime of this ComponentOverview.
+        r"""Gets the runtime of this ComponentOverview.
 
         :return: The runtime of this ComponentOverview.
         :rtype: :class:`huaweicloudsdkservicestage.v2.RuntimeType`
@@ -238,7 +238,7 @@ class ComponentOverview:
 
     @runtime.setter
     def runtime(self, runtime):
-        """Sets the runtime of this ComponentOverview.
+        r"""Sets the runtime of this ComponentOverview.
 
         :param runtime: The runtime of this ComponentOverview.
         :type runtime: :class:`huaweicloudsdkservicestage.v2.RuntimeType`
@@ -247,7 +247,7 @@ class ComponentOverview:
 
     @property
     def category(self):
-        """Gets the category of this ComponentOverview.
+        r"""Gets the category of this ComponentOverview.
 
         :return: The category of this ComponentOverview.
         :rtype: :class:`huaweicloudsdkservicestage.v2.ComponentCategory`
@@ -256,7 +256,7 @@ class ComponentOverview:
 
     @category.setter
     def category(self, category):
-        """Sets the category of this ComponentOverview.
+        r"""Sets the category of this ComponentOverview.
 
         :param category: The category of this ComponentOverview.
         :type category: :class:`huaweicloudsdkservicestage.v2.ComponentCategory`
@@ -265,7 +265,7 @@ class ComponentOverview:
 
     @property
     def sub_category(self):
-        """Gets the sub_category of this ComponentOverview.
+        r"""Gets the sub_category of this ComponentOverview.
 
         :return: The sub_category of this ComponentOverview.
         :rtype: :class:`huaweicloudsdkservicestage.v2.ComponentSubCategory`
@@ -274,7 +274,7 @@ class ComponentOverview:
 
     @sub_category.setter
     def sub_category(self, sub_category):
-        """Sets the sub_category of this ComponentOverview.
+        r"""Sets the sub_category of this ComponentOverview.
 
         :param sub_category: The sub_category of this ComponentOverview.
         :type sub_category: :class:`huaweicloudsdkservicestage.v2.ComponentSubCategory`
@@ -283,7 +283,7 @@ class ComponentOverview:
 
     @property
     def description(self):
-        """Gets the description of this ComponentOverview.
+        r"""Gets the description of this ComponentOverview.
 
         组件描述。
 
@@ -294,7 +294,7 @@ class ComponentOverview:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ComponentOverview.
+        r"""Sets the description of this ComponentOverview.
 
         组件描述。
 
@@ -305,7 +305,7 @@ class ComponentOverview:
 
     @property
     def status(self):
-        """Gets the status of this ComponentOverview.
+        r"""Gets the status of this ComponentOverview.
 
         取值0或1。  0：表示正常状态。  1：表示正在删除。 
 
@@ -316,7 +316,7 @@ class ComponentOverview:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ComponentOverview.
+        r"""Sets the status of this ComponentOverview.
 
         取值0或1。  0：表示正常状态。  1：表示正在删除。 
 
@@ -327,7 +327,7 @@ class ComponentOverview:
 
     @property
     def source(self):
-        """Gets the source of this ComponentOverview.
+        r"""Gets the source of this ComponentOverview.
 
         :return: The source of this ComponentOverview.
         :rtype: :class:`huaweicloudsdkservicestage.v2.SourceObject`
@@ -336,7 +336,7 @@ class ComponentOverview:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this ComponentOverview.
+        r"""Sets the source of this ComponentOverview.
 
         :param source: The source of this ComponentOverview.
         :type source: :class:`huaweicloudsdkservicestage.v2.SourceObject`
@@ -345,7 +345,7 @@ class ComponentOverview:
 
     @property
     def build(self):
-        """Gets the build of this ComponentOverview.
+        r"""Gets the build of this ComponentOverview.
 
         :return: The build of this ComponentOverview.
         :rtype: :class:`huaweicloudsdkservicestage.v2.BuildInfo`
@@ -354,7 +354,7 @@ class ComponentOverview:
 
     @build.setter
     def build(self, build):
-        """Sets the build of this ComponentOverview.
+        r"""Sets the build of this ComponentOverview.
 
         :param build: The build of this ComponentOverview.
         :type build: :class:`huaweicloudsdkservicestage.v2.BuildInfo`
@@ -363,7 +363,7 @@ class ComponentOverview:
 
     @property
     def creator(self):
-        """Gets the creator of this ComponentOverview.
+        r"""Gets the creator of this ComponentOverview.
 
         创建人。
 
@@ -374,7 +374,7 @@ class ComponentOverview:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this ComponentOverview.
+        r"""Sets the creator of this ComponentOverview.
 
         创建人。
 
@@ -385,7 +385,7 @@ class ComponentOverview:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ComponentOverview.
+        r"""Gets the create_time of this ComponentOverview.
 
         创建时间。
 
@@ -396,7 +396,7 @@ class ComponentOverview:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ComponentOverview.
+        r"""Sets the create_time of this ComponentOverview.
 
         创建时间。
 
@@ -407,7 +407,7 @@ class ComponentOverview:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ComponentOverview.
+        r"""Gets the update_time of this ComponentOverview.
 
         修改时间。
 
@@ -418,7 +418,7 @@ class ComponentOverview:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ComponentOverview.
+        r"""Sets the update_time of this ComponentOverview.
 
         修改时间。
 
@@ -429,7 +429,7 @@ class ComponentOverview:
 
     @property
     def instances(self):
-        """Gets the instances of this ComponentOverview.
+        r"""Gets the instances of this ComponentOverview.
 
         组件部署信息列表。
 
@@ -440,7 +440,7 @@ class ComponentOverview:
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this ComponentOverview.
+        r"""Sets the instances of this ComponentOverview.
 
         组件部署信息列表。
 

@@ -26,7 +26,7 @@ class BatchDeleteProtectedInstancesResponse(SdkResponse):
     }
 
     def __init__(self, job_id=None):
-        """BatchDeleteProtectedInstancesResponse
+        r"""BatchDeleteProtectedInstancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchDeleteProtectedInstancesResponse(SdkResponse):
 
     @property
     def job_id(self):
-        """Gets the job_id of this BatchDeleteProtectedInstancesResponse.
+        r"""Gets the job_id of this BatchDeleteProtectedInstancesResponse.
 
         成功返回jobId信息
 
@@ -55,7 +55,7 @@ class BatchDeleteProtectedInstancesResponse(SdkResponse):
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this BatchDeleteProtectedInstancesResponse.
+        r"""Sets the job_id of this BatchDeleteProtectedInstancesResponse.
 
         成功返回jobId信息
 

@@ -27,7 +27,7 @@ class FileNestedCreateReqSrlz:
     }
 
     def __init__(self, sha256=None, filename=None):
-        """FileNestedCreateReqSrlz
+        r"""FileNestedCreateReqSrlz
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class FileNestedCreateReqSrlz:
 
     @property
     def sha256(self):
-        """Gets the sha256 of this FileNestedCreateReqSrlz.
+        r"""Gets the sha256 of this FileNestedCreateReqSrlz.
 
         文件sha256值
 
@@ -59,7 +59,7 @@ class FileNestedCreateReqSrlz:
 
     @sha256.setter
     def sha256(self, sha256):
-        """Sets the sha256 of this FileNestedCreateReqSrlz.
+        r"""Sets the sha256 of this FileNestedCreateReqSrlz.
 
         文件sha256值
 
@@ -70,7 +70,7 @@ class FileNestedCreateReqSrlz:
 
     @property
     def filename(self):
-        """Gets the filename of this FileNestedCreateReqSrlz.
+        r"""Gets the filename of this FileNestedCreateReqSrlz.
 
         文件名
 
@@ -81,7 +81,7 @@ class FileNestedCreateReqSrlz:
 
     @filename.setter
     def filename(self, filename):
-        """Sets the filename of this FileNestedCreateReqSrlz.
+        r"""Sets the filename of this FileNestedCreateReqSrlz.
 
         文件名
 

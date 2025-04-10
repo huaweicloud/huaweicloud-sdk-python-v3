@@ -28,7 +28,7 @@ class ListDelegatedServicesResponse(SdkResponse):
     }
 
     def __init__(self, delegated_services=None, page_info=None):
-        """ListDelegatedServicesResponse
+        r"""ListDelegatedServicesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListDelegatedServicesResponse(SdkResponse):
 
     @property
     def delegated_services(self):
-        """Gets the delegated_services of this ListDelegatedServicesResponse.
+        r"""Gets the delegated_services of this ListDelegatedServicesResponse.
 
         账号是其委托管理员的服务。
 
@@ -62,7 +62,7 @@ class ListDelegatedServicesResponse(SdkResponse):
 
     @delegated_services.setter
     def delegated_services(self, delegated_services):
-        """Sets the delegated_services of this ListDelegatedServicesResponse.
+        r"""Sets the delegated_services of this ListDelegatedServicesResponse.
 
         账号是其委托管理员的服务。
 
@@ -73,7 +73,7 @@ class ListDelegatedServicesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListDelegatedServicesResponse.
+        r"""Gets the page_info of this ListDelegatedServicesResponse.
 
         :return: The page_info of this ListDelegatedServicesResponse.
         :rtype: :class:`huaweicloudsdkorganizations.v1.PageInfoDto`
@@ -82,7 +82,7 @@ class ListDelegatedServicesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListDelegatedServicesResponse.
+        r"""Sets the page_info of this ListDelegatedServicesResponse.
 
         :param page_info: The page_info of this ListDelegatedServicesResponse.
         :type page_info: :class:`huaweicloudsdkorganizations.v1.PageInfoDto`

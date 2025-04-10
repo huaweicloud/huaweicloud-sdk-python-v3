@@ -35,7 +35,7 @@ class Rule:
     }
 
     def __init__(self, name=None, description=None, adjustment_type=None, cool_down_minutes=None, scaling_adjustment=None, trigger=None):
-        """Rule
+        r"""Rule
 
         The model defined in huaweicloud sdk
 
@@ -73,7 +73,7 @@ class Rule:
 
     @property
     def name(self):
-        """Gets the name of this Rule.
+        r"""Gets the name of this Rule.
 
         弹性伸缩规则的名称。 只能由字母、数字、中划线和下划线组成，并且长度为1～64个字符。 在一个节点组范围内，不允许重名。
 
@@ -84,7 +84,7 @@ class Rule:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Rule.
+        r"""Sets the name of this Rule.
 
         弹性伸缩规则的名称。 只能由字母、数字、中划线和下划线组成，并且长度为1～64个字符。 在一个节点组范围内，不允许重名。
 
@@ -95,7 +95,7 @@ class Rule:
 
     @property
     def description(self):
-        """Gets the description of this Rule.
+        r"""Gets the description of this Rule.
 
         弹性伸缩规则的说明。 最大长度为1024字符。
 
@@ -106,7 +106,7 @@ class Rule:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Rule.
+        r"""Sets the description of this Rule.
 
         弹性伸缩规则的说明。 最大长度为1024字符。
 
@@ -117,7 +117,7 @@ class Rule:
 
     @property
     def adjustment_type(self):
-        """Gets the adjustment_type of this Rule.
+        r"""Gets the adjustment_type of this Rule.
 
         弹性伸缩规则的调整类型，只允许以下类型： 枚举值： - scale_out：扩容 - scale_in：缩容
 
@@ -128,7 +128,7 @@ class Rule:
 
     @adjustment_type.setter
     def adjustment_type(self, adjustment_type):
-        """Sets the adjustment_type of this Rule.
+        r"""Sets the adjustment_type of this Rule.
 
         弹性伸缩规则的调整类型，只允许以下类型： 枚举值： - scale_out：扩容 - scale_in：缩容
 
@@ -139,7 +139,7 @@ class Rule:
 
     @property
     def cool_down_minutes(self):
-        """Gets the cool_down_minutes of this Rule.
+        r"""Gets the cool_down_minutes of this Rule.
 
         触发弹性伸缩规则后，该集群处于冷却状态（不再执行弹性伸缩操作）的时长，单位为分钟。 取值范围[0～10080]，10080为一周的分钟数。
 
@@ -150,7 +150,7 @@ class Rule:
 
     @cool_down_minutes.setter
     def cool_down_minutes(self, cool_down_minutes):
-        """Sets the cool_down_minutes of this Rule.
+        r"""Sets the cool_down_minutes of this Rule.
 
         触发弹性伸缩规则后，该集群处于冷却状态（不再执行弹性伸缩操作）的时长，单位为分钟。 取值范围[0～10080]，10080为一周的分钟数。
 
@@ -161,7 +161,7 @@ class Rule:
 
     @property
     def scaling_adjustment(self):
-        """Gets the scaling_adjustment of this Rule.
+        r"""Gets the scaling_adjustment of this Rule.
 
         单次调整集群节点的个数。 取值范围[1～100]
 
@@ -172,7 +172,7 @@ class Rule:
 
     @scaling_adjustment.setter
     def scaling_adjustment(self, scaling_adjustment):
-        """Sets the scaling_adjustment of this Rule.
+        r"""Sets the scaling_adjustment of this Rule.
 
         单次调整集群节点的个数。 取值范围[1～100]
 
@@ -183,7 +183,7 @@ class Rule:
 
     @property
     def trigger(self):
-        """Gets the trigger of this Rule.
+        r"""Gets the trigger of this Rule.
 
         :return: The trigger of this Rule.
         :rtype: :class:`huaweicloudsdkmrs.v2.Trigger`
@@ -192,7 +192,7 @@ class Rule:
 
     @trigger.setter
     def trigger(self, trigger):
-        """Sets the trigger of this Rule.
+        r"""Sets the trigger of this Rule.
 
         :param trigger: The trigger of this Rule.
         :type trigger: :class:`huaweicloudsdkmrs.v2.Trigger`

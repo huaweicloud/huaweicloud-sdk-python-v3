@@ -30,7 +30,7 @@ class CheckAppV2Response(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, remark=None):
-        """CheckAppV2Response
+        r"""CheckAppV2Response
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CheckAppV2Response(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CheckAppV2Response.
+        r"""Gets the id of this CheckAppV2Response.
 
         编号
 
@@ -69,7 +69,7 @@ class CheckAppV2Response(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CheckAppV2Response.
+        r"""Sets the id of this CheckAppV2Response.
 
         编号
 
@@ -80,7 +80,7 @@ class CheckAppV2Response(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CheckAppV2Response.
+        r"""Gets the name of this CheckAppV2Response.
 
         名称
 
@@ -91,7 +91,7 @@ class CheckAppV2Response(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CheckAppV2Response.
+        r"""Sets the name of this CheckAppV2Response.
 
         名称
 
@@ -102,7 +102,7 @@ class CheckAppV2Response(SdkResponse):
 
     @property
     def remark(self):
-        """Gets the remark of this CheckAppV2Response.
+        r"""Gets the remark of this CheckAppV2Response.
 
         描述
 
@@ -113,7 +113,7 @@ class CheckAppV2Response(SdkResponse):
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this CheckAppV2Response.
+        r"""Sets the remark of this CheckAppV2Response.
 
         描述
 

@@ -37,7 +37,7 @@ class EpDetail:
     }
 
     def __init__(self, id=None, name=None, description=None, status=None, created_at=None, updated_at=None, type=None):
-        """EpDetail
+        r"""EpDetail
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class EpDetail:
 
     @property
     def id(self):
-        """Gets the id of this EpDetail.
+        r"""Gets the id of this EpDetail.
 
         企业项目ID
 
@@ -89,7 +89,7 @@ class EpDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EpDetail.
+        r"""Sets the id of this EpDetail.
 
         企业项目ID
 
@@ -100,7 +100,7 @@ class EpDetail:
 
     @property
     def name(self):
-        """Gets the name of this EpDetail.
+        r"""Gets the name of this EpDetail.
 
         企业项目名称
 
@@ -111,7 +111,7 @@ class EpDetail:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this EpDetail.
+        r"""Sets the name of this EpDetail.
 
         企业项目名称
 
@@ -122,7 +122,7 @@ class EpDetail:
 
     @property
     def description(self):
-        """Gets the description of this EpDetail.
+        r"""Gets the description of this EpDetail.
 
         企业项目描述
 
@@ -133,7 +133,7 @@ class EpDetail:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this EpDetail.
+        r"""Sets the description of this EpDetail.
 
         企业项目描述
 
@@ -144,7 +144,7 @@ class EpDetail:
 
     @property
     def status(self):
-        """Gets the status of this EpDetail.
+        r"""Gets the status of this EpDetail.
 
         企业项目状态。1启用，2停用
 
@@ -155,7 +155,7 @@ class EpDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this EpDetail.
+        r"""Sets the status of this EpDetail.
 
         企业项目状态。1启用，2停用
 
@@ -166,7 +166,7 @@ class EpDetail:
 
     @property
     def created_at(self):
-        """Gets the created_at of this EpDetail.
+        r"""Gets the created_at of this EpDetail.
 
         创建时间，格式为UTC格式。如：2018-05-18T06:49:06Z。
 
@@ -177,7 +177,7 @@ class EpDetail:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this EpDetail.
+        r"""Sets the created_at of this EpDetail.
 
         创建时间，格式为UTC格式。如：2018-05-18T06:49:06Z。
 
@@ -188,7 +188,7 @@ class EpDetail:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this EpDetail.
+        r"""Gets the updated_at of this EpDetail.
 
         修改时间，格式为UTC格式。如：2018-05-28T02:21:36Z。
 
@@ -199,7 +199,7 @@ class EpDetail:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this EpDetail.
+        r"""Sets the updated_at of this EpDetail.
 
         修改时间，格式为UTC格式。如：2018-05-28T02:21:36Z。
 
@@ -210,7 +210,7 @@ class EpDetail:
 
     @property
     def type(self):
-        """Gets the type of this EpDetail.
+        r"""Gets the type of this EpDetail.
 
         项目类型： - prod：商用项目 - poc：测试项目
 
@@ -221,7 +221,7 @@ class EpDetail:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this EpDetail.
+        r"""Sets the type of this EpDetail.
 
         项目类型： - prod：商用项目 - poc：测试项目
 

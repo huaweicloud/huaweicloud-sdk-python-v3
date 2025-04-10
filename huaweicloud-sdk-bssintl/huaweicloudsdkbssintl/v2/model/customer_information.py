@@ -55,7 +55,7 @@ class CustomerInformation:
     }
 
     def __init__(self, customer=None, account_name=None, customer_id=None, associated_on=None, association_type=None, label=None, telephone=None, verified_status=None, country_code=None, customer_type=None, is_frozen=None, account_managers=None, xaccount_id=None, xaccount_type=None, customer_level=None, email=None):
-        """CustomerInformation
+        r"""CustomerInformation
 
         The model defined in huaweicloud sdk
 
@@ -146,7 +146,7 @@ class CustomerInformation:
 
     @property
     def customer(self):
-        """Gets the customer of this CustomerInformation.
+        r"""Gets the customer of this CustomerInformation.
 
         实名认证名称。
 
@@ -157,7 +157,7 @@ class CustomerInformation:
 
     @customer.setter
     def customer(self, customer):
-        """Sets the customer of this CustomerInformation.
+        r"""Sets the customer of this CustomerInformation.
 
         实名认证名称。
 
@@ -168,7 +168,7 @@ class CustomerInformation:
 
     @property
     def account_name(self):
-        """Gets the account_name of this CustomerInformation.
+        r"""Gets the account_name of this CustomerInformation.
 
         客户登录名称（如果客户创建了子用户，此处返回主账号登录名称）。
 
@@ -179,7 +179,7 @@ class CustomerInformation:
 
     @account_name.setter
     def account_name(self, account_name):
-        """Sets the account_name of this CustomerInformation.
+        r"""Sets the account_name of this CustomerInformation.
 
         客户登录名称（如果客户创建了子用户，此处返回主账号登录名称）。
 
@@ -190,7 +190,7 @@ class CustomerInformation:
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this CustomerInformation.
+        r"""Gets the customer_id of this CustomerInformation.
 
         客户账号ID。
 
@@ -201,7 +201,7 @@ class CustomerInformation:
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this CustomerInformation.
+        r"""Sets the customer_id of this CustomerInformation.
 
         客户账号ID。
 
@@ -212,7 +212,7 @@ class CustomerInformation:
 
     @property
     def associated_on(self):
-        """Gets the associated_on of this CustomerInformation.
+        r"""Gets the associated_on of this CustomerInformation.
 
         客户和伙伴关联时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”，其中，HH范围是0～23，mm和ss范围是0～59。
 
@@ -223,7 +223,7 @@ class CustomerInformation:
 
     @associated_on.setter
     def associated_on(self, associated_on):
-        """Sets the associated_on of this CustomerInformation.
+        r"""Sets the associated_on of this CustomerInformation.
 
         客户和伙伴关联时间。 UTC时间，格式：yyyy-MM-dd'T'HH:mm:ss'Z'，如“2019-05-06T08:05:01Z”，其中，HH范围是0～23，mm和ss范围是0～59。
 
@@ -234,7 +234,7 @@ class CustomerInformation:
 
     @property
     def association_type(self):
-        """Gets the association_type of this CustomerInformation.
+        r"""Gets the association_type of this CustomerInformation.
 
         关联类型： 1：顾问销售3：转售
 
@@ -245,7 +245,7 @@ class CustomerInformation:
 
     @association_type.setter
     def association_type(self, association_type):
-        """Sets the association_type of this CustomerInformation.
+        r"""Sets the association_type of this CustomerInformation.
 
         关联类型： 1：顾问销售3：转售
 
@@ -256,7 +256,7 @@ class CustomerInformation:
 
     @property
     def label(self):
-        """Gets the label of this CustomerInformation.
+        r"""Gets the label of this CustomerInformation.
 
         标签。
 
@@ -267,7 +267,7 @@ class CustomerInformation:
 
     @label.setter
     def label(self, label):
-        """Sets the label of this CustomerInformation.
+        r"""Sets the label of this CustomerInformation.
 
         标签。
 
@@ -278,7 +278,7 @@ class CustomerInformation:
 
     @property
     def telephone(self):
-        """Gets the telephone of this CustomerInformation.
+        r"""Gets the telephone of this CustomerInformation.
 
         客户电话号码。
 
@@ -289,7 +289,7 @@ class CustomerInformation:
 
     @telephone.setter
     def telephone(self, telephone):
-        """Sets the telephone of this CustomerInformation.
+        r"""Sets the telephone of this CustomerInformation.
 
         客户电话号码。
 
@@ -300,7 +300,7 @@ class CustomerInformation:
 
     @property
     def verified_status(self):
-        """Gets the verified_status of this CustomerInformation.
+        r"""Gets the verified_status of this CustomerInformation.
 
         实名认证状态： -1：未实名认证0：实名认证审核中1：实名认证不通过2：已实名认证3：实名认证失败
 
@@ -311,7 +311,7 @@ class CustomerInformation:
 
     @verified_status.setter
     def verified_status(self, verified_status):
-        """Sets the verified_status of this CustomerInformation.
+        r"""Sets the verified_status of this CustomerInformation.
 
         实名认证状态： -1：未实名认证0：实名认证审核中1：实名认证不通过2：已实名认证3：实名认证失败
 
@@ -322,7 +322,7 @@ class CustomerInformation:
 
     @property
     def country_code(self):
-        """Gets the country_code of this CustomerInformation.
+        r"""Gets the country_code of this CustomerInformation.
 
         国家码，电话号码的国家码前缀。 例如：中国 0086。
 
@@ -333,7 +333,7 @@ class CustomerInformation:
 
     @country_code.setter
     def country_code(self, country_code):
-        """Sets the country_code of this CustomerInformation.
+        r"""Sets the country_code of this CustomerInformation.
 
         国家码，电话号码的国家码前缀。 例如：中国 0086。
 
@@ -344,7 +344,7 @@ class CustomerInformation:
 
     @property
     def customer_type(self):
-        """Gets the customer_type of this CustomerInformation.
+        r"""Gets the customer_type of this CustomerInformation.
 
         客户类型： -1：无类型0：个人1：企业 客户刚注册的时候，没有具体的客户类型，为“-1：无类型”，客户可以在账号中心通过设置客户类型或者在实名认证的时候，选择对应的企业/个人实名认证来决定自己的类型。
 
@@ -355,7 +355,7 @@ class CustomerInformation:
 
     @customer_type.setter
     def customer_type(self, customer_type):
-        """Sets the customer_type of this CustomerInformation.
+        r"""Sets the customer_type of this CustomerInformation.
 
         客户类型： -1：无类型0：个人1：企业 客户刚注册的时候，没有具体的客户类型，为“-1：无类型”，客户可以在账号中心通过设置客户类型或者在实名认证的时候，选择对应的企业/个人实名认证来决定自己的类型。
 
@@ -366,7 +366,7 @@ class CustomerInformation:
 
     @property
     def is_frozen(self):
-        """Gets the is_frozen of this CustomerInformation.
+        r"""Gets the is_frozen of this CustomerInformation.
 
         是否冻结： 0：否1：是
 
@@ -377,7 +377,7 @@ class CustomerInformation:
 
     @is_frozen.setter
     def is_frozen(self, is_frozen):
-        """Sets the is_frozen of this CustomerInformation.
+        r"""Sets the is_frozen of this CustomerInformation.
 
         是否冻结： 0：否1：是
 
@@ -388,7 +388,7 @@ class CustomerInformation:
 
     @property
     def account_managers(self):
-        """Gets the account_managers of this CustomerInformation.
+        r"""Gets the account_managers of this CustomerInformation.
 
         该客户对应的客户经理信息，目前只支持1个，具体参见表2。
 
@@ -399,7 +399,7 @@ class CustomerInformation:
 
     @account_managers.setter
     def account_managers(self, account_managers):
-        """Sets the account_managers of this CustomerInformation.
+        r"""Sets the account_managers of this CustomerInformation.
 
         该客户对应的客户经理信息，目前只支持1个，具体参见表2。
 
@@ -410,7 +410,7 @@ class CustomerInformation:
 
     @property
     def xaccount_id(self):
-        """Gets the xaccount_id of this CustomerInformation.
+        r"""Gets the xaccount_id of this CustomerInformation.
 
         伙伴销售平台的用户唯一标识，该标识的具体值由伙伴分配。
 
@@ -421,7 +421,7 @@ class CustomerInformation:
 
     @xaccount_id.setter
     def xaccount_id(self, xaccount_id):
-        """Sets the xaccount_id of this CustomerInformation.
+        r"""Sets the xaccount_id of this CustomerInformation.
 
         伙伴销售平台的用户唯一标识，该标识的具体值由伙伴分配。
 
@@ -432,7 +432,7 @@ class CustomerInformation:
 
     @property
     def xaccount_type(self):
-        """Gets the xaccount_type of this CustomerInformation.
+        r"""Gets the xaccount_type of this CustomerInformation.
 
         华为分配给合作伙伴的平台标识。 该标识的具体值由华为分配。获取方法请参见如何获取xaccountType的取值。
 
@@ -443,7 +443,7 @@ class CustomerInformation:
 
     @xaccount_type.setter
     def xaccount_type(self, xaccount_type):
-        """Sets the xaccount_type of this CustomerInformation.
+        r"""Sets the xaccount_type of this CustomerInformation.
 
         华为分配给合作伙伴的平台标识。 该标识的具体值由华为分配。获取方法请参见如何获取xaccountType的取值。
 
@@ -454,7 +454,7 @@ class CustomerInformation:
 
     @property
     def customer_level(self):
-        """Gets the customer_level of this CustomerInformation.
+        r"""Gets the customer_level of this CustomerInformation.
 
         客户等级。 V0 V1 V2 V3 V4 V5
 
@@ -465,7 +465,7 @@ class CustomerInformation:
 
     @customer_level.setter
     def customer_level(self, customer_level):
-        """Sets the customer_level of this CustomerInformation.
+        r"""Sets the customer_level of this CustomerInformation.
 
         客户等级。 V0 V1 V2 V3 V4 V5
 
@@ -476,7 +476,7 @@ class CustomerInformation:
 
     @property
     def email(self):
-        """Gets the email of this CustomerInformation.
+        r"""Gets the email of this CustomerInformation.
 
         |参数名称：客户邮箱| |参数的约束及描述：该参数为字符串 范围限制:0-256。|
 
@@ -487,7 +487,7 @@ class CustomerInformation:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this CustomerInformation.
+        r"""Sets the email of this CustomerInformation.
 
         |参数名称：客户邮箱| |参数的约束及描述：该参数为字符串 范围限制:0-256。|
 

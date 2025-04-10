@@ -25,7 +25,7 @@ class CancelCustomerOrderRequest:
     }
 
     def __init__(self, body=None):
-        """CancelCustomerOrderRequest
+        r"""CancelCustomerOrderRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CancelCustomerOrderRequest:
 
     @property
     def body(self):
-        """Gets the body of this CancelCustomerOrderRequest.
+        r"""Gets the body of this CancelCustomerOrderRequest.
 
         :return: The body of this CancelCustomerOrderRequest.
         :rtype: :class:`huaweicloudsdkbssintl.v2.CancelCustomerOrderReq`
@@ -52,7 +52,7 @@ class CancelCustomerOrderRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CancelCustomerOrderRequest.
+        r"""Sets the body of this CancelCustomerOrderRequest.
 
         :param body: The body of this CancelCustomerOrderRequest.
         :type body: :class:`huaweicloudsdkbssintl.v2.CancelCustomerOrderReq`

@@ -24,7 +24,7 @@ class SetDatabaseUserPrivilegeResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SetDatabaseUserPrivilegeResponse
+        r"""SetDatabaseUserPrivilegeResponse
 
         The model defined in huaweicloud sdk
 

@@ -25,7 +25,7 @@ class ModifyDesktopAttributesReq:
     }
 
     def __init__(self, desktop=None):
-        """ModifyDesktopAttributesReq
+        r"""ModifyDesktopAttributesReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ModifyDesktopAttributesReq:
 
     @property
     def desktop(self):
-        """Gets the desktop of this ModifyDesktopAttributesReq.
+        r"""Gets the desktop of this ModifyDesktopAttributesReq.
 
         :return: The desktop of this ModifyDesktopAttributesReq.
         :rtype: :class:`huaweicloudsdkworkspace.v2.ModifyDesktopAttributesReqDesktop`
@@ -52,7 +52,7 @@ class ModifyDesktopAttributesReq:
 
     @desktop.setter
     def desktop(self, desktop):
-        """Sets the desktop of this ModifyDesktopAttributesReq.
+        r"""Sets the desktop of this ModifyDesktopAttributesReq.
 
         :param desktop: The desktop of this ModifyDesktopAttributesReq.
         :type desktop: :class:`huaweicloudsdkworkspace.v2.ModifyDesktopAttributesReqDesktop`

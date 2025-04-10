@@ -27,7 +27,7 @@ class BatchAddEndpointServicePermissionsRequestBody:
     }
 
     def __init__(self, permissions=None, permission_type=None):
-        """BatchAddEndpointServicePermissionsRequestBody
+        r"""BatchAddEndpointServicePermissionsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchAddEndpointServicePermissionsRequestBody:
 
     @property
     def permissions(self):
-        """Gets the permissions of this BatchAddEndpointServicePermissionsRequestBody.
+        r"""Gets the permissions of this BatchAddEndpointServicePermissionsRequestBody.
 
         终端节点服务白名单列表
 
@@ -60,7 +60,7 @@ class BatchAddEndpointServicePermissionsRequestBody:
 
     @permissions.setter
     def permissions(self, permissions):
-        """Sets the permissions of this BatchAddEndpointServicePermissionsRequestBody.
+        r"""Sets the permissions of this BatchAddEndpointServicePermissionsRequestBody.
 
         终端节点服务白名单列表
 
@@ -71,7 +71,7 @@ class BatchAddEndpointServicePermissionsRequestBody:
 
     @property
     def permission_type(self):
-        """Gets the permission_type of this BatchAddEndpointServicePermissionsRequestBody.
+        r"""Gets the permission_type of this BatchAddEndpointServicePermissionsRequestBody.
 
         终端节点服务白名单类型。  - domainId：基于账户ID配置终端节点服务白名单。  - orgPath：基于账户所在组织路径配置终端节点服务白名单。
 
@@ -82,7 +82,7 @@ class BatchAddEndpointServicePermissionsRequestBody:
 
     @permission_type.setter
     def permission_type(self, permission_type):
-        """Sets the permission_type of this BatchAddEndpointServicePermissionsRequestBody.
+        r"""Sets the permission_type of this BatchAddEndpointServicePermissionsRequestBody.
 
         终端节点服务白名单类型。  - domainId：基于账户ID配置终端节点服务白名单。  - orgPath：基于账户所在组织路径配置终端节点服务白名单。
 

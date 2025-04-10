@@ -33,7 +33,7 @@ class ChannelCreateReqPolicy:
     }
 
     def __init__(self, sid=None, effect=None, principal=None, action=None, resource=None):
-        """ChannelCreateReqPolicy
+        r"""ChannelCreateReqPolicy
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ChannelCreateReqPolicy:
 
     @property
     def sid(self):
-        """Gets the sid of this ChannelCreateReqPolicy.
+        r"""Gets the sid of this ChannelCreateReqPolicy.
 
         固定值：allow_account_to_put_events
 
@@ -82,7 +82,7 @@ class ChannelCreateReqPolicy:
 
     @sid.setter
     def sid(self, sid):
-        """Sets the sid of this ChannelCreateReqPolicy.
+        r"""Sets the sid of this ChannelCreateReqPolicy.
 
         固定值：allow_account_to_put_events
 
@@ -93,7 +93,7 @@ class ChannelCreateReqPolicy:
 
     @property
     def effect(self):
-        """Gets the effect of this ChannelCreateReqPolicy.
+        r"""Gets the effect of this ChannelCreateReqPolicy.
 
         固定值：Allow
 
@@ -104,7 +104,7 @@ class ChannelCreateReqPolicy:
 
     @effect.setter
     def effect(self, effect):
-        """Sets the effect of this ChannelCreateReqPolicy.
+        r"""Sets the effect of this ChannelCreateReqPolicy.
 
         固定值：Allow
 
@@ -115,7 +115,7 @@ class ChannelCreateReqPolicy:
 
     @property
     def principal(self):
-        """Gets the principal of this ChannelCreateReqPolicy.
+        r"""Gets the principal of this ChannelCreateReqPolicy.
 
         domain白名单
 
@@ -126,7 +126,7 @@ class ChannelCreateReqPolicy:
 
     @principal.setter
     def principal(self, principal):
-        """Sets the principal of this ChannelCreateReqPolicy.
+        r"""Sets the principal of this ChannelCreateReqPolicy.
 
         domain白名单
 
@@ -137,7 +137,7 @@ class ChannelCreateReqPolicy:
 
     @property
     def action(self):
-        """Gets the action of this ChannelCreateReqPolicy.
+        r"""Gets the action of this ChannelCreateReqPolicy.
 
         固定值：eg:channels:putEvents
 
@@ -148,7 +148,7 @@ class ChannelCreateReqPolicy:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ChannelCreateReqPolicy.
+        r"""Sets the action of this ChannelCreateReqPolicy.
 
         固定值：eg:channels:putEvents
 
@@ -159,7 +159,7 @@ class ChannelCreateReqPolicy:
 
     @property
     def resource(self):
-        """Gets the resource of this ChannelCreateReqPolicy.
+        r"""Gets the resource of this ChannelCreateReqPolicy.
 
         固定格式：urn:eg:cn-east-2:{project_id}:channel:{channel_name}
 
@@ -170,7 +170,7 @@ class ChannelCreateReqPolicy:
 
     @resource.setter
     def resource(self, resource):
-        """Sets the resource of this ChannelCreateReqPolicy.
+        r"""Sets the resource of this ChannelCreateReqPolicy.
 
         固定格式：urn:eg:cn-east-2:{project_id}:channel:{channel_name}
 

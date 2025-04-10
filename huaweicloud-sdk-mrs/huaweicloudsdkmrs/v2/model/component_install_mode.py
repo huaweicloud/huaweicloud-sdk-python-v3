@@ -31,7 +31,7 @@ class ComponentInstallMode:
     }
 
     def __init__(self, component=None, node_groups=None, component_user_password=None, component_default_password=None):
-        """ComponentInstallMode
+        r"""ComponentInstallMode
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ComponentInstallMode:
 
     @property
     def component(self):
-        """Gets the component of this ComponentInstallMode.
+        r"""Gets the component of this ComponentInstallMode.
 
         组件名称
 
@@ -73,7 +73,7 @@ class ComponentInstallMode:
 
     @component.setter
     def component(self, component):
-        """Sets the component of this ComponentInstallMode.
+        r"""Sets the component of this ComponentInstallMode.
 
         组件名称
 
@@ -84,7 +84,7 @@ class ComponentInstallMode:
 
     @property
     def node_groups(self):
-        """Gets the node_groups of this ComponentInstallMode.
+        r"""Gets the node_groups of this ComponentInstallMode.
 
         该组件的角色部署信息
 
@@ -95,7 +95,7 @@ class ComponentInstallMode:
 
     @node_groups.setter
     def node_groups(self, node_groups):
-        """Sets the node_groups of this ComponentInstallMode.
+        r"""Sets the node_groups of this ComponentInstallMode.
 
         该组件的角色部署信息
 
@@ -106,7 +106,7 @@ class ComponentInstallMode:
 
     @property
     def component_user_password(self):
-        """Gets the component_user_password of this ComponentInstallMode.
+        r"""Gets the component_user_password of this ComponentInstallMode.
 
         配置组件用户密码，该密码用于ClickHouse组件机机用户连接使用。 - 密码长度应在8～26个字符之间 - 不能与用户名或者倒序用户名相同 - 必须包含如下4种字符的组合 - 至少一个小写字母 - 至少一个大写字母 - 至少一个数字 - 至少一个特殊字符：!@$%^-_=+[{}]:,./?
 
@@ -117,7 +117,7 @@ class ComponentInstallMode:
 
     @component_user_password.setter
     def component_user_password(self, component_user_password):
-        """Sets the component_user_password of this ComponentInstallMode.
+        r"""Sets the component_user_password of this ComponentInstallMode.
 
         配置组件用户密码，该密码用于ClickHouse组件机机用户连接使用。 - 密码长度应在8～26个字符之间 - 不能与用户名或者倒序用户名相同 - 必须包含如下4种字符的组合 - 至少一个小写字母 - 至少一个大写字母 - 至少一个数字 - 至少一个特殊字符：!@$%^-_=+[{}]:,./?
 
@@ -128,7 +128,7 @@ class ComponentInstallMode:
 
     @property
     def component_default_password(self):
-        """Gets the component_default_password of this ComponentInstallMode.
+        r"""Gets the component_default_password of this ComponentInstallMode.
 
         配置组件default用户密码，该密码用于ClickHouse组件人机用户连接使用。 - 密码长度应在8～26个字符之间 - 不能与用户名或者倒序用户名相同 - 必须包含如下4种字符的组合 - 至少一个小写字母 - 至少一个大写字母 - 至少一个数字 - 至少一个特殊字符：!@$%^-_=+[{}]:,./?
 
@@ -139,7 +139,7 @@ class ComponentInstallMode:
 
     @component_default_password.setter
     def component_default_password(self, component_default_password):
-        """Sets the component_default_password of this ComponentInstallMode.
+        r"""Sets the component_default_password of this ComponentInstallMode.
 
         配置组件default用户密码，该密码用于ClickHouse组件人机用户连接使用。 - 密码长度应在8～26个字符之间 - 不能与用户名或者倒序用户名相同 - 必须包含如下4种字符的组合 - 至少一个小写字母 - 至少一个大写字母 - 至少一个数字 - 至少一个特殊字符：!@$%^-_=+[{}]:,./?
 

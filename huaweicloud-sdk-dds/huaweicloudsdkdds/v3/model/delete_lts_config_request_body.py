@@ -25,7 +25,7 @@ class DeleteLtsConfigRequestBody:
     }
 
     def __init__(self, lts_configs=None):
-        """DeleteLtsConfigRequestBody
+        r"""DeleteLtsConfigRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteLtsConfigRequestBody:
 
     @property
     def lts_configs(self):
-        """Gets the lts_configs of this DeleteLtsConfigRequestBody.
+        r"""Gets the lts_configs of this DeleteLtsConfigRequestBody.
 
         需要解除的LTS配置列表，一个实例解除多种日志配置需要填写多个item。
 
@@ -53,7 +53,7 @@ class DeleteLtsConfigRequestBody:
 
     @lts_configs.setter
     def lts_configs(self, lts_configs):
-        """Sets the lts_configs of this DeleteLtsConfigRequestBody.
+        r"""Sets the lts_configs of this DeleteLtsConfigRequestBody.
 
         需要解除的LTS配置列表，一个实例解除多种日志配置需要填写多个item。
 

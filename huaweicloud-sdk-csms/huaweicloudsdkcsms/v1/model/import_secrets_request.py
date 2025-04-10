@@ -25,7 +25,7 @@ class ImportSecretsRequest:
     }
 
     def __init__(self, secrets=None):
-        """ImportSecretsRequest
+        r"""ImportSecretsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ImportSecretsRequest:
 
     @property
     def secrets(self):
-        """Gets the secrets of this ImportSecretsRequest.
+        r"""Gets the secrets of this ImportSecretsRequest.
 
         批量创建凭据参数
 
@@ -53,7 +53,7 @@ class ImportSecretsRequest:
 
     @secrets.setter
     def secrets(self, secrets):
-        """Sets the secrets of this ImportSecretsRequest.
+        r"""Sets the secrets of this ImportSecretsRequest.
 
         批量创建凭据参数
 

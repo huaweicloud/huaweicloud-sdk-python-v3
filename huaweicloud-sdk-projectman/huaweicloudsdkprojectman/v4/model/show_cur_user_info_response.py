@@ -44,7 +44,7 @@ class ShowCurUserInfoResponse(SdkResponse):
     }
 
     def __init__(self, domain_id=None, domain_name=None, user_num_id=None, user_id=None, user_name=None, nick_name=None, created_time=None, updated_time=None, gender=None, user_type=None):
-        """ShowCurUserInfoResponse
+        r"""ShowCurUserInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class ShowCurUserInfoResponse(SdkResponse):
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this ShowCurUserInfoResponse.
+        r"""Gets the domain_id of this ShowCurUserInfoResponse.
 
         租户id
 
@@ -118,7 +118,7 @@ class ShowCurUserInfoResponse(SdkResponse):
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this ShowCurUserInfoResponse.
+        r"""Sets the domain_id of this ShowCurUserInfoResponse.
 
         租户id
 
@@ -129,7 +129,7 @@ class ShowCurUserInfoResponse(SdkResponse):
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ShowCurUserInfoResponse.
+        r"""Gets the domain_name of this ShowCurUserInfoResponse.
 
         租户名
 
@@ -140,7 +140,7 @@ class ShowCurUserInfoResponse(SdkResponse):
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ShowCurUserInfoResponse.
+        r"""Sets the domain_name of this ShowCurUserInfoResponse.
 
         租户名
 
@@ -151,7 +151,7 @@ class ShowCurUserInfoResponse(SdkResponse):
 
     @property
     def user_num_id(self):
-        """Gets the user_num_id of this ShowCurUserInfoResponse.
+        r"""Gets the user_num_id of this ShowCurUserInfoResponse.
 
         用户数字id
 
@@ -162,7 +162,7 @@ class ShowCurUserInfoResponse(SdkResponse):
 
     @user_num_id.setter
     def user_num_id(self, user_num_id):
-        """Sets the user_num_id of this ShowCurUserInfoResponse.
+        r"""Sets the user_num_id of this ShowCurUserInfoResponse.
 
         用户数字id
 
@@ -173,7 +173,7 @@ class ShowCurUserInfoResponse(SdkResponse):
 
     @property
     def user_id(self):
-        """Gets the user_id of this ShowCurUserInfoResponse.
+        r"""Gets the user_id of this ShowCurUserInfoResponse.
 
         用户id
 
@@ -184,7 +184,7 @@ class ShowCurUserInfoResponse(SdkResponse):
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ShowCurUserInfoResponse.
+        r"""Sets the user_id of this ShowCurUserInfoResponse.
 
         用户id
 
@@ -195,7 +195,7 @@ class ShowCurUserInfoResponse(SdkResponse):
 
     @property
     def user_name(self):
-        """Gets the user_name of this ShowCurUserInfoResponse.
+        r"""Gets the user_name of this ShowCurUserInfoResponse.
 
         用户名
 
@@ -206,7 +206,7 @@ class ShowCurUserInfoResponse(SdkResponse):
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ShowCurUserInfoResponse.
+        r"""Sets the user_name of this ShowCurUserInfoResponse.
 
         用户名
 
@@ -217,7 +217,7 @@ class ShowCurUserInfoResponse(SdkResponse):
 
     @property
     def nick_name(self):
-        """Gets the nick_name of this ShowCurUserInfoResponse.
+        r"""Gets the nick_name of this ShowCurUserInfoResponse.
 
         用户昵称
 
@@ -228,7 +228,7 @@ class ShowCurUserInfoResponse(SdkResponse):
 
     @nick_name.setter
     def nick_name(self, nick_name):
-        """Sets the nick_name of this ShowCurUserInfoResponse.
+        r"""Sets the nick_name of this ShowCurUserInfoResponse.
 
         用户昵称
 
@@ -239,7 +239,7 @@ class ShowCurUserInfoResponse(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this ShowCurUserInfoResponse.
+        r"""Gets the created_time of this ShowCurUserInfoResponse.
 
         创建时间
 
@@ -250,7 +250,7 @@ class ShowCurUserInfoResponse(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this ShowCurUserInfoResponse.
+        r"""Sets the created_time of this ShowCurUserInfoResponse.
 
         创建时间
 
@@ -261,7 +261,7 @@ class ShowCurUserInfoResponse(SdkResponse):
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this ShowCurUserInfoResponse.
+        r"""Gets the updated_time of this ShowCurUserInfoResponse.
 
         更新时间
 
@@ -272,7 +272,7 @@ class ShowCurUserInfoResponse(SdkResponse):
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this ShowCurUserInfoResponse.
+        r"""Sets the updated_time of this ShowCurUserInfoResponse.
 
         更新时间
 
@@ -283,7 +283,7 @@ class ShowCurUserInfoResponse(SdkResponse):
 
     @property
     def gender(self):
-        """Gets the gender of this ShowCurUserInfoResponse.
+        r"""Gets the gender of this ShowCurUserInfoResponse.
 
         性别
 
@@ -294,7 +294,7 @@ class ShowCurUserInfoResponse(SdkResponse):
 
     @gender.setter
     def gender(self, gender):
-        """Sets the gender of this ShowCurUserInfoResponse.
+        r"""Sets the gender of this ShowCurUserInfoResponse.
 
         性别
 
@@ -305,7 +305,7 @@ class ShowCurUserInfoResponse(SdkResponse):
 
     @property
     def user_type(self):
-        """Gets the user_type of this ShowCurUserInfoResponse.
+        r"""Gets the user_type of this ShowCurUserInfoResponse.
 
         用户类型, User 云用户, Federation 联邦账号,
 
@@ -316,7 +316,7 @@ class ShowCurUserInfoResponse(SdkResponse):
 
     @user_type.setter
     def user_type(self, user_type):
-        """Sets the user_type of this ShowCurUserInfoResponse.
+        r"""Sets the user_type of this ShowCurUserInfoResponse.
 
         用户类型, User 云用户, Federation 联邦账号,
 

@@ -59,7 +59,7 @@ class SyncPolicyReq:
     }
 
     def __init__(self, job_id=None, conflict_policy=None, filter_ddl_policy=None, ddl_trans=None, index_trans=None, topic_policy=None, topic=None, partition_policy=None, kafka_data_format=None, topic_name_format=None, partitions_num=None, replication_factor=None, is_fill_materialized_view=None, export_snapshot=None, slot_name=None, file_and_position=None, gtid_set=None, ddl_topic=None):
-        """SyncPolicyReq
+        r"""SyncPolicyReq
 
         The model defined in huaweicloud sdk
 
@@ -161,7 +161,7 @@ class SyncPolicyReq:
 
     @property
     def job_id(self):
-        """Gets the job_id of this SyncPolicyReq.
+        r"""Gets the job_id of this SyncPolicyReq.
 
         任务ID。
 
@@ -172,7 +172,7 @@ class SyncPolicyReq:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this SyncPolicyReq.
+        r"""Sets the job_id of this SyncPolicyReq.
 
         任务ID。
 
@@ -183,7 +183,7 @@ class SyncPolicyReq:
 
     @property
     def conflict_policy(self):
-        """Gets the conflict_policy of this SyncPolicyReq.
+        r"""Gets the conflict_policy of this SyncPolicyReq.
 
         冲突策略。 - ignore：忽略 - overwrite：覆盖 - stop：报错
 
@@ -194,7 +194,7 @@ class SyncPolicyReq:
 
     @conflict_policy.setter
     def conflict_policy(self, conflict_policy):
-        """Sets the conflict_policy of this SyncPolicyReq.
+        r"""Sets the conflict_policy of this SyncPolicyReq.
 
         冲突策略。 - ignore：忽略 - overwrite：覆盖 - stop：报错
 
@@ -205,7 +205,7 @@ class SyncPolicyReq:
 
     @property
     def filter_ddl_policy(self):
-        """Gets the filter_ddl_policy of this SyncPolicyReq.
+        r"""Gets the filter_ddl_policy of this SyncPolicyReq.
 
         过滤DDL策略。
 
@@ -216,7 +216,7 @@ class SyncPolicyReq:
 
     @filter_ddl_policy.setter
     def filter_ddl_policy(self, filter_ddl_policy):
-        """Sets the filter_ddl_policy of this SyncPolicyReq.
+        r"""Sets the filter_ddl_policy of this SyncPolicyReq.
 
         过滤DDL策略。
 
@@ -227,7 +227,7 @@ class SyncPolicyReq:
 
     @property
     def ddl_trans(self):
-        """Gets the ddl_trans of this SyncPolicyReq.
+        r"""Gets the ddl_trans of this SyncPolicyReq.
 
         同步增量是否同步DDL。
 
@@ -238,7 +238,7 @@ class SyncPolicyReq:
 
     @ddl_trans.setter
     def ddl_trans(self, ddl_trans):
-        """Sets the ddl_trans of this SyncPolicyReq.
+        r"""Sets the ddl_trans of this SyncPolicyReq.
 
         同步增量是否同步DDL。
 
@@ -249,7 +249,7 @@ class SyncPolicyReq:
 
     @property
     def index_trans(self):
-        """Gets the index_trans of this SyncPolicyReq.
+        r"""Gets the index_trans of this SyncPolicyReq.
 
         同步增量是否同步索引。
 
@@ -260,7 +260,7 @@ class SyncPolicyReq:
 
     @index_trans.setter
     def index_trans(self, index_trans):
-        """Sets the index_trans of this SyncPolicyReq.
+        r"""Sets the index_trans of this SyncPolicyReq.
 
         同步增量是否同步索引。
 
@@ -271,7 +271,7 @@ class SyncPolicyReq:
 
     @property
     def topic_policy(self):
-        """Gets the topic_policy of this SyncPolicyReq.
+        r"""Gets the topic_policy of this SyncPolicyReq.
 
         同步Topic策略，目标库为kafka时必填，取值： - 0：集中投递到一个Topic - 1：按库名-schema-表名自动生成Topic名字 - 2：按库名自动生成Topic名字 - 3：按库名-schema自动生成Topic名字
 
@@ -282,7 +282,7 @@ class SyncPolicyReq:
 
     @topic_policy.setter
     def topic_policy(self, topic_policy):
-        """Sets the topic_policy of this SyncPolicyReq.
+        r"""Sets the topic_policy of this SyncPolicyReq.
 
         同步Topic策略，目标库为kafka时必填，取值： - 0：集中投递到一个Topic - 1：按库名-schema-表名自动生成Topic名字 - 2：按库名自动生成Topic名字 - 3：按库名-schema自动生成Topic名字
 
@@ -293,7 +293,7 @@ class SyncPolicyReq:
 
     @property
     def topic(self):
-        """Gets the topic of this SyncPolicyReq.
+        r"""Gets the topic of this SyncPolicyReq.
 
         Topic名称，topic_policy为0时必填，确保topic已存在。
 
@@ -304,7 +304,7 @@ class SyncPolicyReq:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this SyncPolicyReq.
+        r"""Sets the topic of this SyncPolicyReq.
 
         Topic名称，topic_policy为0时必填，确保topic已存在。
 
@@ -315,7 +315,7 @@ class SyncPolicyReq:
 
     @property
     def partition_policy(self):
-        """Gets the partition_policy of this SyncPolicyReq.
+        r"""Gets the partition_policy of this SyncPolicyReq.
 
         同步到kafka partition策略，取值： - 0：按库名.schema.表名的hash值投递到不同Partition - 1：全部投递到Partition 0 - 2：按主键的hash值投递到不同Partition - 3：按库名.schema的hash值投递到不同Partition **当topic_policy取0时，可以取0,1,2,3；当topic_policy取1时，可以取1,2；当topic_policy取2时，可以取0,1,3；当topic_policy取3时，可以取0,1；**
 
@@ -326,7 +326,7 @@ class SyncPolicyReq:
 
     @partition_policy.setter
     def partition_policy(self, partition_policy):
-        """Sets the partition_policy of this SyncPolicyReq.
+        r"""Sets the partition_policy of this SyncPolicyReq.
 
         同步到kafka partition策略，取值： - 0：按库名.schema.表名的hash值投递到不同Partition - 1：全部投递到Partition 0 - 2：按主键的hash值投递到不同Partition - 3：按库名.schema的hash值投递到不同Partition **当topic_policy取0时，可以取0,1,2,3；当topic_policy取1时，可以取1,2；当topic_policy取2时，可以取0,1,3；当topic_policy取3时，可以取0,1；**
 
@@ -337,7 +337,7 @@ class SyncPolicyReq:
 
     @property
     def kafka_data_format(self):
-        """Gets the kafka_data_format of this SyncPolicyReq.
+        r"""Gets the kafka_data_format of this SyncPolicyReq.
 
         投送到kafka的数据格式，不填默认为json：
 
@@ -348,7 +348,7 @@ class SyncPolicyReq:
 
     @kafka_data_format.setter
     def kafka_data_format(self, kafka_data_format):
-        """Sets the kafka_data_format of this SyncPolicyReq.
+        r"""Sets the kafka_data_format of this SyncPolicyReq.
 
         投送到kafka的数据格式，不填默认为json：
 
@@ -359,7 +359,7 @@ class SyncPolicyReq:
 
     @property
     def topic_name_format(self):
-        """Gets the topic_name_format of this SyncPolicyReq.
+        r"""Gets the topic_name_format of this SyncPolicyReq.
 
         Topic名字格式，topic_policy为1,2,3,时需要 - 当topic_policy取1时，Topic名字格式支持database、schema两个变量，其他字符当做常量。分别用$database$代替数据库名，$schema$代替模式名，不填默认为$database$-$schema$ - 当topic_policy取2时，Topic名字格式支持database一个变量，其他字符都当做常量，不填默认为$database$ - 当topic_policy取3时，Topic名字格式支持database、schema和tablename三个变量，其他字符当做常量。分别用$database$代替数据库名，$schema$代替模式名，$tablename$代替表名，不填默认为$database$-$schema$-$tablename$
 
@@ -370,7 +370,7 @@ class SyncPolicyReq:
 
     @topic_name_format.setter
     def topic_name_format(self, topic_name_format):
-        """Sets the topic_name_format of this SyncPolicyReq.
+        r"""Sets the topic_name_format of this SyncPolicyReq.
 
         Topic名字格式，topic_policy为1,2,3,时需要 - 当topic_policy取1时，Topic名字格式支持database、schema两个变量，其他字符当做常量。分别用$database$代替数据库名，$schema$代替模式名，不填默认为$database$-$schema$ - 当topic_policy取2时，Topic名字格式支持database一个变量，其他字符都当做常量，不填默认为$database$ - 当topic_policy取3时，Topic名字格式支持database、schema和tablename三个变量，其他字符当做常量。分别用$database$代替数据库名，$schema$代替模式名，$tablename$代替表名，不填默认为$database$-$schema$-$tablename$
 
@@ -381,7 +381,7 @@ class SyncPolicyReq:
 
     @property
     def partitions_num(self):
-        """Gets the partitions_num of this SyncPolicyReq.
+        r"""Gets the partitions_num of this SyncPolicyReq.
 
         Partition个数，取值1-2147483647之间，topic_policy为1,2,3,时需要，不填默认为1
 
@@ -392,7 +392,7 @@ class SyncPolicyReq:
 
     @partitions_num.setter
     def partitions_num(self, partitions_num):
-        """Sets the partitions_num of this SyncPolicyReq.
+        r"""Sets the partitions_num of this SyncPolicyReq.
 
         Partition个数，取值1-2147483647之间，topic_policy为1,2,3,时需要，不填默认为1
 
@@ -403,7 +403,7 @@ class SyncPolicyReq:
 
     @property
     def replication_factor(self):
-        """Gets the replication_factor of this SyncPolicyReq.
+        r"""Gets the replication_factor of this SyncPolicyReq.
 
         副本个数，取值1-32767之间，topic_policy为1,2,3,时需要，不填默认为1
 
@@ -414,7 +414,7 @@ class SyncPolicyReq:
 
     @replication_factor.setter
     def replication_factor(self, replication_factor):
-        """Sets the replication_factor of this SyncPolicyReq.
+        r"""Sets the replication_factor of this SyncPolicyReq.
 
         副本个数，取值1-32767之间，topic_policy为1,2,3,时需要，不填默认为1
 
@@ -425,7 +425,7 @@ class SyncPolicyReq:
 
     @property
     def is_fill_materialized_view(self):
-        """Gets the is_fill_materialized_view of this SyncPolicyReq.
+        r"""Gets the is_fill_materialized_view of this SyncPolicyReq.
 
         PostgreSQL同步全量阶段是否填充物化视图，不填默认为false
 
@@ -436,7 +436,7 @@ class SyncPolicyReq:
 
     @is_fill_materialized_view.setter
     def is_fill_materialized_view(self, is_fill_materialized_view):
-        """Sets the is_fill_materialized_view of this SyncPolicyReq.
+        r"""Sets the is_fill_materialized_view of this SyncPolicyReq.
 
         PostgreSQL同步全量阶段是否填充物化视图，不填默认为false
 
@@ -447,7 +447,7 @@ class SyncPolicyReq:
 
     @property
     def export_snapshot(self):
-        """Gets the export_snapshot of this SyncPolicyReq.
+        r"""Gets the export_snapshot of this SyncPolicyReq.
 
         PostgreSQL同步全量阶段是否使用快照模式导出，不填默认为false
 
@@ -458,7 +458,7 @@ class SyncPolicyReq:
 
     @export_snapshot.setter
     def export_snapshot(self, export_snapshot):
-        """Sets the export_snapshot of this SyncPolicyReq.
+        r"""Sets the export_snapshot of this SyncPolicyReq.
 
         PostgreSQL同步全量阶段是否使用快照模式导出，不填默认为false
 
@@ -469,7 +469,7 @@ class SyncPolicyReq:
 
     @property
     def slot_name(self):
-        """Gets the slot_name of this SyncPolicyReq.
+        r"""Gets the slot_name of this SyncPolicyReq.
 
         复制槽名称，gaussdbv5ha-to-kafka主备任务必填
 
@@ -480,7 +480,7 @@ class SyncPolicyReq:
 
     @slot_name.setter
     def slot_name(self, slot_name):
-        """Sets the slot_name of this SyncPolicyReq.
+        r"""Sets the slot_name of this SyncPolicyReq.
 
         复制槽名称，gaussdbv5ha-to-kafka主备任务必填
 
@@ -491,7 +491,7 @@ class SyncPolicyReq:
 
     @property
     def file_and_position(self):
-        """Gets the file_and_position of this SyncPolicyReq.
+        r"""Gets the file_and_position of this SyncPolicyReq.
 
         - MySQL为源通过show master status命令获取源库位点，根据提示分别填写File:Position。例如：mysql-bin.000277:805 文件名只能为1-60个字符且不能包含< > & : \" \\' / \\\\\\\\ 特殊字符，文件编号只能为3-20个数字，binlog事件位置只能为1-20个数字，且总长度不能超过100个字符。格式为：文件名.文件编号:事件位点 - MongoDB为源的任务，任务的源库日志从位点开始获取（含当前启动位点），位点需设置在oplog范围以内。非集群通过db.getReplicationInfo()直接获得oplog范围，集群通过db.watch([], {startAtOperationTime: Timestamp(xx, xx)})命令，将启动位点填在xx处，校验位点是否在oplog范围以内。格式为：timestamp:incre。timestamp和incre均为范围在1~2,147,483,647之间的整数。
 
@@ -502,7 +502,7 @@ class SyncPolicyReq:
 
     @file_and_position.setter
     def file_and_position(self, file_and_position):
-        """Sets the file_and_position of this SyncPolicyReq.
+        r"""Sets the file_and_position of this SyncPolicyReq.
 
         - MySQL为源通过show master status命令获取源库位点，根据提示分别填写File:Position。例如：mysql-bin.000277:805 文件名只能为1-60个字符且不能包含< > & : \" \\' / \\\\\\\\ 特殊字符，文件编号只能为3-20个数字，binlog事件位置只能为1-20个数字，且总长度不能超过100个字符。格式为：文件名.文件编号:事件位点 - MongoDB为源的任务，任务的源库日志从位点开始获取（含当前启动位点），位点需设置在oplog范围以内。非集群通过db.getReplicationInfo()直接获得oplog范围，集群通过db.watch([], {startAtOperationTime: Timestamp(xx, xx)})命令，将启动位点填在xx处，校验位点是否在oplog范围以内。格式为：timestamp:incre。timestamp和incre均为范围在1~2,147,483,647之间的整数。
 
@@ -513,7 +513,7 @@ class SyncPolicyReq:
 
     @property
     def gtid_set(self):
-        """Gets the gtid_set of this SyncPolicyReq.
+        r"""Gets the gtid_set of this SyncPolicyReq.
 
         - MySQL为源的任务需要，通过show master status命令获取源库位点，根据提示填写Executed_Gtid_Set（如果源库为MySQL 5.5版本，则不支持使用同步任务）。  - 不能包含< > & \" \\' / \\\\\\\\ 特殊字符和中文。且不能超过2048个字符
 
@@ -524,7 +524,7 @@ class SyncPolicyReq:
 
     @gtid_set.setter
     def gtid_set(self, gtid_set):
-        """Sets the gtid_set of this SyncPolicyReq.
+        r"""Sets the gtid_set of this SyncPolicyReq.
 
         - MySQL为源的任务需要，通过show master status命令获取源库位点，根据提示填写Executed_Gtid_Set（如果源库为MySQL 5.5版本，则不支持使用同步任务）。  - 不能包含< > & \" \\' / \\\\\\\\ 特殊字符和中文。且不能超过2048个字符
 
@@ -535,7 +535,7 @@ class SyncPolicyReq:
 
     @property
     def ddl_topic(self):
-        """Gets the ddl_topic of this SyncPolicyReq.
+        r"""Gets the ddl_topic of this SyncPolicyReq.
 
         存储DDL的topic。Kafka为目标且ddl_trans为true时必填，取值：目标库已存在的topic名称，确保topic已存在。
 
@@ -546,7 +546,7 @@ class SyncPolicyReq:
 
     @ddl_topic.setter
     def ddl_topic(self, ddl_topic):
-        """Sets the ddl_topic of this SyncPolicyReq.
+        r"""Sets the ddl_topic of this SyncPolicyReq.
 
         存储DDL的topic。Kafka为目标且ddl_trans为true时必填，取值：目标库已存在的topic名称，确保topic已存在。
 

@@ -45,7 +45,7 @@ class ImageDetailRsp:
     }
 
     def __init__(self, name=None, id=None, type=None, chip_type=None, description=None, tags=None, create_time=None, update_time=None, source_project_name=None, source_project_id=None, source_resource_id=None):
-        """ImageDetailRsp
+        r"""ImageDetailRsp
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class ImageDetailRsp:
 
     @property
     def name(self):
-        """Gets the name of this ImageDetailRsp.
+        r"""Gets the name of this ImageDetailRsp.
 
         镜像名称
 
@@ -124,7 +124,7 @@ class ImageDetailRsp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ImageDetailRsp.
+        r"""Sets the name of this ImageDetailRsp.
 
         镜像名称
 
@@ -135,7 +135,7 @@ class ImageDetailRsp:
 
     @property
     def id(self):
-        """Gets the id of this ImageDetailRsp.
+        r"""Gets the id of this ImageDetailRsp.
 
         镜像ID
 
@@ -146,7 +146,7 @@ class ImageDetailRsp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ImageDetailRsp.
+        r"""Sets the id of this ImageDetailRsp.
 
         镜像ID
 
@@ -157,7 +157,7 @@ class ImageDetailRsp:
 
     @property
     def type(self):
-        """Gets the type of this ImageDetailRsp.
+        r"""Gets the type of this ImageDetailRsp.
 
         镜像类型
 
@@ -168,7 +168,7 @@ class ImageDetailRsp:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ImageDetailRsp.
+        r"""Sets the type of this ImageDetailRsp.
 
         镜像类型
 
@@ -179,7 +179,7 @@ class ImageDetailRsp:
 
     @property
     def chip_type(self):
-        """Gets the chip_type of this ImageDetailRsp.
+        r"""Gets the chip_type of this ImageDetailRsp.
 
         镜像芯片类型
 
@@ -190,7 +190,7 @@ class ImageDetailRsp:
 
     @chip_type.setter
     def chip_type(self, chip_type):
-        """Sets the chip_type of this ImageDetailRsp.
+        r"""Sets the chip_type of this ImageDetailRsp.
 
         镜像芯片类型
 
@@ -201,7 +201,7 @@ class ImageDetailRsp:
 
     @property
     def description(self):
-        """Gets the description of this ImageDetailRsp.
+        r"""Gets the description of this ImageDetailRsp.
 
         镜像描述
 
@@ -212,7 +212,7 @@ class ImageDetailRsp:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ImageDetailRsp.
+        r"""Sets the description of this ImageDetailRsp.
 
         镜像描述
 
@@ -223,7 +223,7 @@ class ImageDetailRsp:
 
     @property
     def tags(self):
-        """Gets the tags of this ImageDetailRsp.
+        r"""Gets the tags of this ImageDetailRsp.
 
         镜像版本列表
 
@@ -234,7 +234,7 @@ class ImageDetailRsp:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ImageDetailRsp.
+        r"""Sets the tags of this ImageDetailRsp.
 
         镜像版本列表
 
@@ -245,7 +245,7 @@ class ImageDetailRsp:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ImageDetailRsp.
+        r"""Gets the create_time of this ImageDetailRsp.
 
         镜像创建时间
 
@@ -256,7 +256,7 @@ class ImageDetailRsp:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ImageDetailRsp.
+        r"""Sets the create_time of this ImageDetailRsp.
 
         镜像创建时间
 
@@ -267,7 +267,7 @@ class ImageDetailRsp:
 
     @property
     def update_time(self):
-        """Gets the update_time of this ImageDetailRsp.
+        r"""Gets the update_time of this ImageDetailRsp.
 
         镜像更新时间
 
@@ -278,7 +278,7 @@ class ImageDetailRsp:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ImageDetailRsp.
+        r"""Sets the update_time of this ImageDetailRsp.
 
         镜像更新时间
 
@@ -289,7 +289,7 @@ class ImageDetailRsp:
 
     @property
     def source_project_name(self):
-        """Gets the source_project_name of this ImageDetailRsp.
+        r"""Gets the source_project_name of this ImageDetailRsp.
 
         源项目名称
 
@@ -300,7 +300,7 @@ class ImageDetailRsp:
 
     @source_project_name.setter
     def source_project_name(self, source_project_name):
-        """Sets the source_project_name of this ImageDetailRsp.
+        r"""Sets the source_project_name of this ImageDetailRsp.
 
         源项目名称
 
@@ -311,7 +311,7 @@ class ImageDetailRsp:
 
     @property
     def source_project_id(self):
-        """Gets the source_project_id of this ImageDetailRsp.
+        r"""Gets the source_project_id of this ImageDetailRsp.
 
         源项目id
 
@@ -322,7 +322,7 @@ class ImageDetailRsp:
 
     @source_project_id.setter
     def source_project_id(self, source_project_id):
-        """Sets the source_project_id of this ImageDetailRsp.
+        r"""Sets the source_project_id of this ImageDetailRsp.
 
         源项目id
 
@@ -333,7 +333,7 @@ class ImageDetailRsp:
 
     @property
     def source_resource_id(self):
-        """Gets the source_resource_id of this ImageDetailRsp.
+        r"""Gets the source_resource_id of this ImageDetailRsp.
 
         源资源id
 
@@ -344,7 +344,7 @@ class ImageDetailRsp:
 
     @source_resource_id.setter
     def source_resource_id(self, source_resource_id):
-        """Sets the source_resource_id of this ImageDetailRsp.
+        r"""Sets the source_resource_id of this ImageDetailRsp.
 
         源资源id
 

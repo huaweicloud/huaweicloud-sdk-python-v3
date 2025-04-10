@@ -27,7 +27,7 @@ class ShowHistoryDetailsRequest:
     }
 
     def __init__(self, job_id=None, build_number=None):
-        """ShowHistoryDetailsRequest
+        r"""ShowHistoryDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowHistoryDetailsRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ShowHistoryDetailsRequest.
+        r"""Gets the job_id of this ShowHistoryDetailsRequest.
 
         构建的任务ID； 编辑构建任务时，浏览器URL末尾的32位数字、字母组合的字符串。
 
@@ -59,7 +59,7 @@ class ShowHistoryDetailsRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ShowHistoryDetailsRequest.
+        r"""Sets the job_id of this ShowHistoryDetailsRequest.
 
         构建的任务ID； 编辑构建任务时，浏览器URL末尾的32位数字、字母组合的字符串。
 
@@ -70,7 +70,7 @@ class ShowHistoryDetailsRequest:
 
     @property
     def build_number(self):
-        """Gets the build_number of this ShowHistoryDetailsRequest.
+        r"""Gets the build_number of this ShowHistoryDetailsRequest.
 
         构建任务的构建编号，从1开始，每次构建递增1
 
@@ -81,7 +81,7 @@ class ShowHistoryDetailsRequest:
 
     @build_number.setter
     def build_number(self, build_number):
-        """Sets the build_number of this ShowHistoryDetailsRequest.
+        r"""Sets the build_number of this ShowHistoryDetailsRequest.
 
         构建任务的构建编号，从1开始，每次构建递增1
 

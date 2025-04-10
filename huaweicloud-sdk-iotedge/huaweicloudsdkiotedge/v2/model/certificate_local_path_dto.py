@@ -27,7 +27,7 @@ class CertificateLocalPathDTO:
     }
 
     def __init__(self, cert_path=None, key_path=None):
-        """CertificateLocalPathDTO
+        r"""CertificateLocalPathDTO
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CertificateLocalPathDTO:
 
     @property
     def cert_path(self):
-        """Gets the cert_path of this CertificateLocalPathDTO.
+        r"""Gets the cert_path of this CertificateLocalPathDTO.
 
         节点数字证书的本地存储路径。
 
@@ -59,7 +59,7 @@ class CertificateLocalPathDTO:
 
     @cert_path.setter
     def cert_path(self, cert_path):
-        """Sets the cert_path of this CertificateLocalPathDTO.
+        r"""Sets the cert_path of this CertificateLocalPathDTO.
 
         节点数字证书的本地存储路径。
 
@@ -70,7 +70,7 @@ class CertificateLocalPathDTO:
 
     @property
     def key_path(self):
-        """Gets the key_path of this CertificateLocalPathDTO.
+        r"""Gets the key_path of this CertificateLocalPathDTO.
 
         证书私钥的本地存储路径。
 
@@ -81,7 +81,7 @@ class CertificateLocalPathDTO:
 
     @key_path.setter
     def key_path(self, key_path):
-        """Sets the key_path of this CertificateLocalPathDTO.
+        r"""Sets the key_path of this CertificateLocalPathDTO.
 
         证书私钥的本地存储路径。
 

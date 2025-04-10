@@ -29,7 +29,7 @@ class RackInfo:
     }
 
     def __init__(self, power=None, size=None, has_lock=None):
-        """RackInfo
+        r"""RackInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class RackInfo:
 
     @property
     def power(self):
-        """Gets the power of this RackInfo.
+        r"""Gets the power of this RackInfo.
 
         机柜功率，单位：w
 
@@ -68,7 +68,7 @@ class RackInfo:
 
     @power.setter
     def power(self, power):
-        """Sets the power of this RackInfo.
+        r"""Sets the power of this RackInfo.
 
         机柜功率，单位：w
 
@@ -79,7 +79,7 @@ class RackInfo:
 
     @property
     def size(self):
-        """Gets the size of this RackInfo.
+        r"""Gets the size of this RackInfo.
 
         机柜尺寸，如100\\*200\\*200，单位：cm
 
@@ -90,7 +90,7 @@ class RackInfo:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this RackInfo.
+        r"""Sets the size of this RackInfo.
 
         机柜尺寸，如100\\*200\\*200，单位：cm
 
@@ -101,7 +101,7 @@ class RackInfo:
 
     @property
     def has_lock(self):
-        """Gets the has_lock of this RackInfo.
+        r"""Gets the has_lock of this RackInfo.
 
         是否有机柜锁。
 
@@ -112,7 +112,7 @@ class RackInfo:
 
     @has_lock.setter
     def has_lock(self, has_lock):
-        """Sets the has_lock of this RackInfo.
+        r"""Sets the has_lock of this RackInfo.
 
         是否有机柜锁。
 

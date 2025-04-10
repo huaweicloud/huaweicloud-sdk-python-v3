@@ -24,7 +24,7 @@ class CancelBroadcastResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CancelBroadcastResponse
+        r"""CancelBroadcastResponse
 
         The model defined in huaweicloud sdk
 

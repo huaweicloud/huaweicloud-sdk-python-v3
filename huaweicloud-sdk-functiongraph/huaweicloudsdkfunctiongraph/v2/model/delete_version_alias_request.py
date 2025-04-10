@@ -27,7 +27,7 @@ class DeleteVersionAliasRequest:
     }
 
     def __init__(self, function_urn=None, alias_name=None):
-        """DeleteVersionAliasRequest
+        r"""DeleteVersionAliasRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteVersionAliasRequest:
 
     @property
     def function_urn(self):
-        """Gets the function_urn of this DeleteVersionAliasRequest.
+        r"""Gets the function_urn of this DeleteVersionAliasRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -59,7 +59,7 @@ class DeleteVersionAliasRequest:
 
     @function_urn.setter
     def function_urn(self, function_urn):
-        """Sets the function_urn of this DeleteVersionAliasRequest.
+        r"""Sets the function_urn of this DeleteVersionAliasRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -70,7 +70,7 @@ class DeleteVersionAliasRequest:
 
     @property
     def alias_name(self):
-        """Gets the alias_name of this DeleteVersionAliasRequest.
+        r"""Gets the alias_name of this DeleteVersionAliasRequest.
 
         要删除的别名名称。
 
@@ -81,7 +81,7 @@ class DeleteVersionAliasRequest:
 
     @alias_name.setter
     def alias_name(self, alias_name):
-        """Sets the alias_name of this DeleteVersionAliasRequest.
+        r"""Sets the alias_name of this DeleteVersionAliasRequest.
 
         要删除的别名名称。
 

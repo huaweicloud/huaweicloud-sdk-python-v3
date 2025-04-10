@@ -51,7 +51,7 @@ class IpcResponseDTO:
     }
 
     def __init__(self, camera_id=None, v2x_edge_id=None, name=None, cross_id=None, focal_type=None, parent_connect_code=None, connect_code=None, description=None, esn=None, ip=None, status=None, created_time=None, last_modified_time=None, last_online_time=None):
-        """IpcResponseDTO
+        r"""IpcResponseDTO
 
         The model defined in huaweicloud sdk
 
@@ -134,7 +134,7 @@ class IpcResponseDTO:
 
     @property
     def camera_id(self):
-        """Gets the camera_id of this IpcResponseDTO.
+        r"""Gets the camera_id of this IpcResponseDTO.
 
         **参数说明**：摄像头ID，console界面查询摄像头IPC列表中的设备Id。
 
@@ -145,7 +145,7 @@ class IpcResponseDTO:
 
     @camera_id.setter
     def camera_id(self, camera_id):
-        """Sets the camera_id of this IpcResponseDTO.
+        r"""Sets the camera_id of this IpcResponseDTO.
 
         **参数说明**：摄像头ID，console界面查询摄像头IPC列表中的设备Id。
 
@@ -156,7 +156,7 @@ class IpcResponseDTO:
 
     @property
     def v2x_edge_id(self):
-        """Gets the v2x_edge_id of this IpcResponseDTO.
+        r"""Gets the v2x_edge_id of this IpcResponseDTO.
 
         **参数说明**：Edge ID，用于唯一标识一个Edge，创建Edge后获得。方法参见 [创建Edge](https://support.huaweicloud.com/api-v2x/v2x_04_0078.html)。
 
@@ -167,7 +167,7 @@ class IpcResponseDTO:
 
     @v2x_edge_id.setter
     def v2x_edge_id(self, v2x_edge_id):
-        """Sets the v2x_edge_id of this IpcResponseDTO.
+        r"""Sets the v2x_edge_id of this IpcResponseDTO.
 
         **参数说明**：Edge ID，用于唯一标识一个Edge，创建Edge后获得。方法参见 [创建Edge](https://support.huaweicloud.com/api-v2x/v2x_04_0078.html)。
 
@@ -178,7 +178,7 @@ class IpcResponseDTO:
 
     @property
     def name(self):
-        """Gets the name of this IpcResponseDTO.
+        r"""Gets the name of this IpcResponseDTO.
 
         **参数说明**：摄像头名称。
 
@@ -189,7 +189,7 @@ class IpcResponseDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this IpcResponseDTO.
+        r"""Sets the name of this IpcResponseDTO.
 
         **参数说明**：摄像头名称。
 
@@ -200,7 +200,7 @@ class IpcResponseDTO:
 
     @property
     def cross_id(self):
-        """Gets the cross_id of this IpcResponseDTO.
+        r"""Gets the cross_id of this IpcResponseDTO.
 
         **参数说明**：摄像头所感知的路口或者路段的Id。
 
@@ -211,7 +211,7 @@ class IpcResponseDTO:
 
     @cross_id.setter
     def cross_id(self, cross_id):
-        """Sets the cross_id of this IpcResponseDTO.
+        r"""Sets the cross_id of this IpcResponseDTO.
 
         **参数说明**：摄像头所感知的路口或者路段的Id。
 
@@ -222,7 +222,7 @@ class IpcResponseDTO:
 
     @property
     def focal_type(self):
-        """Gets the focal_type of this IpcResponseDTO.
+        r"""Gets the focal_type of this IpcResponseDTO.
 
         **参数说明**：摄像头聚焦类型。  - long：长焦  - short：短焦
 
@@ -233,7 +233,7 @@ class IpcResponseDTO:
 
     @focal_type.setter
     def focal_type(self, focal_type):
-        """Sets the focal_type of this IpcResponseDTO.
+        r"""Sets the focal_type of this IpcResponseDTO.
 
         **参数说明**：摄像头聚焦类型。  - long：长焦  - short：短焦
 
@@ -244,7 +244,7 @@ class IpcResponseDTO:
 
     @property
     def parent_connect_code(self):
-        """Gets the parent_connect_code of this IpcResponseDTO.
+        r"""Gets the parent_connect_code of this IpcResponseDTO.
 
         **参数说明**：摄像头连接的ITS800的互联编码。
 
@@ -255,7 +255,7 @@ class IpcResponseDTO:
 
     @parent_connect_code.setter
     def parent_connect_code(self, parent_connect_code):
-        """Sets the parent_connect_code of this IpcResponseDTO.
+        r"""Sets the parent_connect_code of this IpcResponseDTO.
 
         **参数说明**：摄像头连接的ITS800的互联编码。
 
@@ -266,7 +266,7 @@ class IpcResponseDTO:
 
     @property
     def connect_code(self):
-        """Gets the connect_code of this IpcResponseDTO.
+        r"""Gets the connect_code of this IpcResponseDTO.
 
         **参数说明**：摄像头的互联编码。
 
@@ -277,7 +277,7 @@ class IpcResponseDTO:
 
     @connect_code.setter
     def connect_code(self, connect_code):
-        """Sets the connect_code of this IpcResponseDTO.
+        r"""Sets the connect_code of this IpcResponseDTO.
 
         **参数说明**：摄像头的互联编码。
 
@@ -288,7 +288,7 @@ class IpcResponseDTO:
 
     @property
     def description(self):
-        """Gets the description of this IpcResponseDTO.
+        r"""Gets the description of this IpcResponseDTO.
 
         **参数说明**：描述。
 
@@ -299,7 +299,7 @@ class IpcResponseDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this IpcResponseDTO.
+        r"""Sets the description of this IpcResponseDTO.
 
         **参数说明**：描述。
 
@@ -310,7 +310,7 @@ class IpcResponseDTO:
 
     @property
     def esn(self):
-        """Gets the esn of this IpcResponseDTO.
+        r"""Gets the esn of this IpcResponseDTO.
 
         **参数说明**：IPC的设备编码。
 
@@ -321,7 +321,7 @@ class IpcResponseDTO:
 
     @esn.setter
     def esn(self, esn):
-        """Sets the esn of this IpcResponseDTO.
+        r"""Sets the esn of this IpcResponseDTO.
 
         **参数说明**：IPC的设备编码。
 
@@ -332,7 +332,7 @@ class IpcResponseDTO:
 
     @property
     def ip(self):
-        """Gets the ip of this IpcResponseDTO.
+        r"""Gets the ip of this IpcResponseDTO.
 
         **参数说明**：该摄像头的ip地址。
 
@@ -343,7 +343,7 @@ class IpcResponseDTO:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this IpcResponseDTO.
+        r"""Sets the ip of this IpcResponseDTO.
 
         **参数说明**：该摄像头的ip地址。
 
@@ -354,7 +354,7 @@ class IpcResponseDTO:
 
     @property
     def status(self):
-        """Gets the status of this IpcResponseDTO.
+        r"""Gets the status of this IpcResponseDTO.
 
         **参数说明**：摄像机的状态。  **取值范围**：  - ONLINE：在线   - OFFLINE：离线  - INITIAL：初始化  - UNKNOWN：未知   - SLEEP：休眠
 
@@ -365,7 +365,7 @@ class IpcResponseDTO:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this IpcResponseDTO.
+        r"""Sets the status of this IpcResponseDTO.
 
         **参数说明**：摄像机的状态。  **取值范围**：  - ONLINE：在线   - OFFLINE：离线  - INITIAL：初始化  - UNKNOWN：未知   - SLEEP：休眠
 
@@ -376,7 +376,7 @@ class IpcResponseDTO:
 
     @property
     def created_time(self):
-        """Gets the created_time of this IpcResponseDTO.
+        r"""Gets the created_time of this IpcResponseDTO.
 
         **参数说明**：创建时间。            格式：yyyy-MM-dd''T''HH:mm:ss''Z''。  例如 2020-09-01T01:37:01Z。
 
@@ -387,7 +387,7 @@ class IpcResponseDTO:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this IpcResponseDTO.
+        r"""Sets the created_time of this IpcResponseDTO.
 
         **参数说明**：创建时间。            格式：yyyy-MM-dd''T''HH:mm:ss''Z''。  例如 2020-09-01T01:37:01Z。
 
@@ -398,7 +398,7 @@ class IpcResponseDTO:
 
     @property
     def last_modified_time(self):
-        """Gets the last_modified_time of this IpcResponseDTO.
+        r"""Gets the last_modified_time of this IpcResponseDTO.
 
         **参数说明**：最后修改时间。            格式：yyyy-MM-dd''T''HH:mm:ss''Z''。  例如 2020-09-01T01:37:01Z。
 
@@ -409,7 +409,7 @@ class IpcResponseDTO:
 
     @last_modified_time.setter
     def last_modified_time(self, last_modified_time):
-        """Sets the last_modified_time of this IpcResponseDTO.
+        r"""Sets the last_modified_time of this IpcResponseDTO.
 
         **参数说明**：最后修改时间。            格式：yyyy-MM-dd''T''HH:mm:ss''Z''。  例如 2020-09-01T01:37:01Z。
 
@@ -420,7 +420,7 @@ class IpcResponseDTO:
 
     @property
     def last_online_time(self):
-        """Gets the last_online_time of this IpcResponseDTO.
+        r"""Gets the last_online_time of this IpcResponseDTO.
 
         **参数说明**：最后在线时间。          格式：yyyy-MM-dd''T''HH:mm:ss''Z''。  例如 2020-09-01T01:37:01Z。
 
@@ -431,7 +431,7 @@ class IpcResponseDTO:
 
     @last_online_time.setter
     def last_online_time(self, last_online_time):
-        """Sets the last_online_time of this IpcResponseDTO.
+        r"""Sets the last_online_time of this IpcResponseDTO.
 
         **参数说明**：最后在线时间。          格式：yyyy-MM-dd''T''HH:mm:ss''Z''。  例如 2020-09-01T01:37:01Z。
 

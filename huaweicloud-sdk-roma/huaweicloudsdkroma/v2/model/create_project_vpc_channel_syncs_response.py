@@ -26,7 +26,7 @@ class CreateProjectVpcChannelSyncsResponse(SdkResponse):
     }
 
     def __init__(self, project_vpc_channels=None):
-        """CreateProjectVpcChannelSyncsResponse
+        r"""CreateProjectVpcChannelSyncsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class CreateProjectVpcChannelSyncsResponse(SdkResponse):
 
     @property
     def project_vpc_channels(self):
-        """Gets the project_vpc_channels of this CreateProjectVpcChannelSyncsResponse.
+        r"""Gets the project_vpc_channels of this CreateProjectVpcChannelSyncsResponse.
 
         项目VPC通道列表
 
@@ -55,7 +55,7 @@ class CreateProjectVpcChannelSyncsResponse(SdkResponse):
 
     @project_vpc_channels.setter
     def project_vpc_channels(self, project_vpc_channels):
-        """Sets the project_vpc_channels of this CreateProjectVpcChannelSyncsResponse.
+        r"""Sets the project_vpc_channels of this CreateProjectVpcChannelSyncsResponse.
 
         项目VPC通道列表
 

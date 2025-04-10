@@ -26,7 +26,7 @@ class ShowRegisterServiceResponse(SdkResponse):
     }
 
     def __init__(self, services=None):
-        """ShowRegisterServiceResponse
+        r"""ShowRegisterServiceResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowRegisterServiceResponse(SdkResponse):
 
     @property
     def services(self):
-        """Gets the services of this ShowRegisterServiceResponse.
+        r"""Gets the services of this ShowRegisterServiceResponse.
 
         注册服务信息
 
@@ -55,7 +55,7 @@ class ShowRegisterServiceResponse(SdkResponse):
 
     @services.setter
     def services(self, services):
-        """Sets the services of this ShowRegisterServiceResponse.
+        r"""Sets the services of this ShowRegisterServiceResponse.
 
         注册服务信息
 

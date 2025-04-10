@@ -25,7 +25,7 @@ class ClearPrivateKeyRequest:
     }
 
     def __init__(self, keypair_name=None):
-        """ClearPrivateKeyRequest
+        r"""ClearPrivateKeyRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ClearPrivateKeyRequest:
 
     @property
     def keypair_name(self):
-        """Gets the keypair_name of this ClearPrivateKeyRequest.
+        r"""Gets the keypair_name of this ClearPrivateKeyRequest.
 
         密钥对名称。
 
@@ -53,7 +53,7 @@ class ClearPrivateKeyRequest:
 
     @keypair_name.setter
     def keypair_name(self, keypair_name):
-        """Sets the keypair_name of this ClearPrivateKeyRequest.
+        r"""Sets the keypair_name of this ClearPrivateKeyRequest.
 
         密钥对名称。
 

@@ -27,7 +27,7 @@ class CreateVolumeTransferOption:
     }
 
     def __init__(self, name=None, volume_id=None):
-        """CreateVolumeTransferOption
+        r"""CreateVolumeTransferOption
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateVolumeTransferOption:
 
     @property
     def name(self):
-        """Gets the name of this CreateVolumeTransferOption.
+        r"""Gets the name of this CreateVolumeTransferOption.
 
         云硬盘过户记录的名称。最大支持255个字节。
 
@@ -59,7 +59,7 @@ class CreateVolumeTransferOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateVolumeTransferOption.
+        r"""Sets the name of this CreateVolumeTransferOption.
 
         云硬盘过户记录的名称。最大支持255个字节。
 
@@ -70,7 +70,7 @@ class CreateVolumeTransferOption:
 
     @property
     def volume_id(self):
-        """Gets the volume_id of this CreateVolumeTransferOption.
+        r"""Gets the volume_id of this CreateVolumeTransferOption.
 
         云硬盘ID。  通过[查询所有云硬盘详情](https://support.huaweicloud.com/api-evs/evs_04_3033.html)获取。
 
@@ -81,7 +81,7 @@ class CreateVolumeTransferOption:
 
     @volume_id.setter
     def volume_id(self, volume_id):
-        """Sets the volume_id of this CreateVolumeTransferOption.
+        r"""Sets the volume_id of this CreateVolumeTransferOption.
 
         云硬盘ID。  通过[查询所有云硬盘详情](https://support.huaweicloud.com/api-evs/evs_04_3033.html)获取。
 

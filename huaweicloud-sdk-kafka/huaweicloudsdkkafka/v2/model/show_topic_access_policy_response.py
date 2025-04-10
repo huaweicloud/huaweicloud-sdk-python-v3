@@ -30,7 +30,7 @@ class ShowTopicAccessPolicyResponse(SdkResponse):
     }
 
     def __init__(self, name=None, topic_type=None, policies=None):
-        """ShowTopicAccessPolicyResponse
+        r"""ShowTopicAccessPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowTopicAccessPolicyResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowTopicAccessPolicyResponse.
+        r"""Gets the name of this ShowTopicAccessPolicyResponse.
 
         topic名称。
 
@@ -69,7 +69,7 @@ class ShowTopicAccessPolicyResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowTopicAccessPolicyResponse.
+        r"""Sets the name of this ShowTopicAccessPolicyResponse.
 
         topic名称。
 
@@ -80,7 +80,7 @@ class ShowTopicAccessPolicyResponse(SdkResponse):
 
     @property
     def topic_type(self):
-        """Gets the topic_type of this ShowTopicAccessPolicyResponse.
+        r"""Gets the topic_type of this ShowTopicAccessPolicyResponse.
 
         topic类型。
 
@@ -91,7 +91,7 @@ class ShowTopicAccessPolicyResponse(SdkResponse):
 
     @topic_type.setter
     def topic_type(self, topic_type):
-        """Sets the topic_type of this ShowTopicAccessPolicyResponse.
+        r"""Sets the topic_type of this ShowTopicAccessPolicyResponse.
 
         topic类型。
 
@@ -102,7 +102,7 @@ class ShowTopicAccessPolicyResponse(SdkResponse):
 
     @property
     def policies(self):
-        """Gets the policies of this ShowTopicAccessPolicyResponse.
+        r"""Gets the policies of this ShowTopicAccessPolicyResponse.
 
         权限列表。
 
@@ -113,7 +113,7 @@ class ShowTopicAccessPolicyResponse(SdkResponse):
 
     @policies.setter
     def policies(self, policies):
-        """Sets the policies of this ShowTopicAccessPolicyResponse.
+        r"""Sets the policies of this ShowTopicAccessPolicyResponse.
 
         权限列表。
 

@@ -26,7 +26,7 @@ class BatchMovePipelineToGroupResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """BatchMovePipelineToGroupResponse
+        r"""BatchMovePipelineToGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchMovePipelineToGroupResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this BatchMovePipelineToGroupResponse.
+        r"""Gets the body of this BatchMovePipelineToGroupResponse.
 
         :return: The body of this BatchMovePipelineToGroupResponse.
         :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineMoveToGroupResponseVo`]
@@ -53,7 +53,7 @@ class BatchMovePipelineToGroupResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchMovePipelineToGroupResponse.
+        r"""Sets the body of this BatchMovePipelineToGroupResponse.
 
         :param body: The body of this BatchMovePipelineToGroupResponse.
         :type body: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineMoveToGroupResponseVo`]

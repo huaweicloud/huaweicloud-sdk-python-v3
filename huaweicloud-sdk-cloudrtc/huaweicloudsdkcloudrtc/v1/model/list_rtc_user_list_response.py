@@ -34,7 +34,7 @@ class ListRtcUserListResponse(SdkResponse):
     }
 
     def __init__(self, total=None, limit=None, offset=None, users=None, x_request_id=None):
-        """ListRtcUserListResponse
+        r"""ListRtcUserListResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListRtcUserListResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListRtcUserListResponse.
+        r"""Gets the total of this ListRtcUserListResponse.
 
         总数
 
@@ -83,7 +83,7 @@ class ListRtcUserListResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListRtcUserListResponse.
+        r"""Sets the total of this ListRtcUserListResponse.
 
         总数
 
@@ -94,7 +94,7 @@ class ListRtcUserListResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListRtcUserListResponse.
+        r"""Gets the limit of this ListRtcUserListResponse.
 
         查询结果限制
 
@@ -105,7 +105,7 @@ class ListRtcUserListResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRtcUserListResponse.
+        r"""Sets the limit of this ListRtcUserListResponse.
 
         查询结果限制
 
@@ -116,7 +116,7 @@ class ListRtcUserListResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListRtcUserListResponse.
+        r"""Gets the offset of this ListRtcUserListResponse.
 
         查询偏移量
 
@@ -127,7 +127,7 @@ class ListRtcUserListResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListRtcUserListResponse.
+        r"""Sets the offset of this ListRtcUserListResponse.
 
         查询偏移量
 
@@ -138,7 +138,7 @@ class ListRtcUserListResponse(SdkResponse):
 
     @property
     def users(self):
-        """Gets the users of this ListRtcUserListResponse.
+        r"""Gets the users of this ListRtcUserListResponse.
 
         用户列表
 
@@ -149,7 +149,7 @@ class ListRtcUserListResponse(SdkResponse):
 
     @users.setter
     def users(self, users):
-        """Sets the users of this ListRtcUserListResponse.
+        r"""Sets the users of this ListRtcUserListResponse.
 
         用户列表
 
@@ -160,7 +160,7 @@ class ListRtcUserListResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListRtcUserListResponse.
+        r"""Gets the x_request_id of this ListRtcUserListResponse.
 
         :return: The x_request_id of this ListRtcUserListResponse.
         :rtype: str
@@ -169,7 +169,7 @@ class ListRtcUserListResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListRtcUserListResponse.
+        r"""Sets the x_request_id of this ListRtcUserListResponse.
 
         :param x_request_id: The x_request_id of this ListRtcUserListResponse.
         :type x_request_id: str

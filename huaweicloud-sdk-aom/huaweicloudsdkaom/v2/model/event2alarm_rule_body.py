@@ -55,7 +55,7 @@ class Event2alarmRuleBody:
     }
 
     def __init__(self, user_id=None, name=None, description=None, create_time=None, update_time=None, resource_provider=None, metadata=None, enable=None, trigger_policies=None, alarm_type=None, action_rule=None, inhibit_rule=None, route_group_rule=None, event_names=None, migrated=None, topics=None):
-        """Event2alarmRuleBody
+        r"""Event2alarmRuleBody
 
         The model defined in huaweicloud sdk
 
@@ -140,7 +140,7 @@ class Event2alarmRuleBody:
 
     @property
     def user_id(self):
-        """Gets the user_id of this Event2alarmRuleBody.
+        r"""Gets the user_id of this Event2alarmRuleBody.
 
         用户项目id
 
@@ -151,7 +151,7 @@ class Event2alarmRuleBody:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this Event2alarmRuleBody.
+        r"""Sets the user_id of this Event2alarmRuleBody.
 
         用户项目id
 
@@ -162,7 +162,7 @@ class Event2alarmRuleBody:
 
     @property
     def name(self):
-        """Gets the name of this Event2alarmRuleBody.
+        r"""Gets the name of this Event2alarmRuleBody.
 
         规则名称。规则名称包含大小写字母，数字，特殊字符（_-）和汉字组成，不能以特殊字符开头或结尾，最大长度为100。
 
@@ -173,7 +173,7 @@ class Event2alarmRuleBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Event2alarmRuleBody.
+        r"""Sets the name of this Event2alarmRuleBody.
 
         规则名称。规则名称包含大小写字母，数字，特殊字符（_-）和汉字组成，不能以特殊字符开头或结尾，最大长度为100。
 
@@ -184,7 +184,7 @@ class Event2alarmRuleBody:
 
     @property
     def description(self):
-        """Gets the description of this Event2alarmRuleBody.
+        r"""Gets the description of this Event2alarmRuleBody.
 
         规则描述。描述包含大小写字母，数字，特殊字符（_-<>=,.）和汉字组成，不能以下划线、中划线开头结尾，最大长度为1024。
 
@@ -195,7 +195,7 @@ class Event2alarmRuleBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this Event2alarmRuleBody.
+        r"""Sets the description of this Event2alarmRuleBody.
 
         规则描述。描述包含大小写字母，数字，特殊字符（_-<>=,.）和汉字组成，不能以下划线、中划线开头结尾，最大长度为1024。
 
@@ -206,7 +206,7 @@ class Event2alarmRuleBody:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Event2alarmRuleBody.
+        r"""Gets the create_time of this Event2alarmRuleBody.
 
         创建时间
 
@@ -217,7 +217,7 @@ class Event2alarmRuleBody:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Event2alarmRuleBody.
+        r"""Sets the create_time of this Event2alarmRuleBody.
 
         创建时间
 
@@ -228,7 +228,7 @@ class Event2alarmRuleBody:
 
     @property
     def update_time(self):
-        """Gets the update_time of this Event2alarmRuleBody.
+        r"""Gets the update_time of this Event2alarmRuleBody.
 
         更新时间
 
@@ -239,7 +239,7 @@ class Event2alarmRuleBody:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this Event2alarmRuleBody.
+        r"""Sets the update_time of this Event2alarmRuleBody.
 
         更新时间
 
@@ -250,7 +250,7 @@ class Event2alarmRuleBody:
 
     @property
     def resource_provider(self):
-        """Gets the resource_provider of this Event2alarmRuleBody.
+        r"""Gets the resource_provider of this Event2alarmRuleBody.
 
         事件源
 
@@ -261,7 +261,7 @@ class Event2alarmRuleBody:
 
     @resource_provider.setter
     def resource_provider(self, resource_provider):
-        """Sets the resource_provider of this Event2alarmRuleBody.
+        r"""Sets the resource_provider of this Event2alarmRuleBody.
 
         事件源
 
@@ -272,7 +272,7 @@ class Event2alarmRuleBody:
 
     @property
     def metadata(self):
-        """Gets the metadata of this Event2alarmRuleBody.
+        r"""Gets the metadata of this Event2alarmRuleBody.
 
         :return: The metadata of this Event2alarmRuleBody.
         :rtype: :class:`huaweicloudsdkaom.v2.Event2alarmRuleBodyMetadata`
@@ -281,7 +281,7 @@ class Event2alarmRuleBody:
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this Event2alarmRuleBody.
+        r"""Sets the metadata of this Event2alarmRuleBody.
 
         :param metadata: The metadata of this Event2alarmRuleBody.
         :type metadata: :class:`huaweicloudsdkaom.v2.Event2alarmRuleBodyMetadata`
@@ -290,7 +290,7 @@ class Event2alarmRuleBody:
 
     @property
     def enable(self):
-        """Gets the enable of this Event2alarmRuleBody.
+        r"""Gets the enable of this Event2alarmRuleBody.
 
         规则是否启用
 
@@ -301,7 +301,7 @@ class Event2alarmRuleBody:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this Event2alarmRuleBody.
+        r"""Sets the enable of this Event2alarmRuleBody.
 
         规则是否启用
 
@@ -312,7 +312,7 @@ class Event2alarmRuleBody:
 
     @property
     def trigger_policies(self):
-        """Gets the trigger_policies of this Event2alarmRuleBody.
+        r"""Gets the trigger_policies of this Event2alarmRuleBody.
 
         触发策略
 
@@ -323,7 +323,7 @@ class Event2alarmRuleBody:
 
     @trigger_policies.setter
     def trigger_policies(self, trigger_policies):
-        """Sets the trigger_policies of this Event2alarmRuleBody.
+        r"""Sets the trigger_policies of this Event2alarmRuleBody.
 
         触发策略
 
@@ -334,7 +334,7 @@ class Event2alarmRuleBody:
 
     @property
     def alarm_type(self):
-        """Gets the alarm_type of this Event2alarmRuleBody.
+        r"""Gets the alarm_type of this Event2alarmRuleBody.
 
         告警类型。notification：直接告警。denoising：告警降噪。
 
@@ -345,7 +345,7 @@ class Event2alarmRuleBody:
 
     @alarm_type.setter
     def alarm_type(self, alarm_type):
-        """Sets the alarm_type of this Event2alarmRuleBody.
+        r"""Sets the alarm_type of this Event2alarmRuleBody.
 
         告警类型。notification：直接告警。denoising：告警降噪。
 
@@ -356,7 +356,7 @@ class Event2alarmRuleBody:
 
     @property
     def action_rule(self):
-        """Gets the action_rule of this Event2alarmRuleBody.
+        r"""Gets the action_rule of this Event2alarmRuleBody.
 
         告警行动规则
 
@@ -367,7 +367,7 @@ class Event2alarmRuleBody:
 
     @action_rule.setter
     def action_rule(self, action_rule):
-        """Sets the action_rule of this Event2alarmRuleBody.
+        r"""Sets the action_rule of this Event2alarmRuleBody.
 
         告警行动规则
 
@@ -378,7 +378,7 @@ class Event2alarmRuleBody:
 
     @property
     def inhibit_rule(self):
-        """Gets the inhibit_rule of this Event2alarmRuleBody.
+        r"""Gets the inhibit_rule of this Event2alarmRuleBody.
 
         告警抑制规则
 
@@ -389,7 +389,7 @@ class Event2alarmRuleBody:
 
     @inhibit_rule.setter
     def inhibit_rule(self, inhibit_rule):
-        """Sets the inhibit_rule of this Event2alarmRuleBody.
+        r"""Sets the inhibit_rule of this Event2alarmRuleBody.
 
         告警抑制规则
 
@@ -400,7 +400,7 @@ class Event2alarmRuleBody:
 
     @property
     def route_group_rule(self):
-        """Gets the route_group_rule of this Event2alarmRuleBody.
+        r"""Gets the route_group_rule of this Event2alarmRuleBody.
 
         告警分组规则
 
@@ -411,7 +411,7 @@ class Event2alarmRuleBody:
 
     @route_group_rule.setter
     def route_group_rule(self, route_group_rule):
-        """Sets the route_group_rule of this Event2alarmRuleBody.
+        r"""Sets the route_group_rule of this Event2alarmRuleBody.
 
         告警分组规则
 
@@ -422,7 +422,7 @@ class Event2alarmRuleBody:
 
     @property
     def event_names(self):
-        """Gets the event_names of this Event2alarmRuleBody.
+        r"""Gets the event_names of this Event2alarmRuleBody.
 
         事件名称
 
@@ -433,7 +433,7 @@ class Event2alarmRuleBody:
 
     @event_names.setter
     def event_names(self, event_names):
-        """Sets the event_names of this Event2alarmRuleBody.
+        r"""Sets the event_names of this Event2alarmRuleBody.
 
         事件名称
 
@@ -444,7 +444,7 @@ class Event2alarmRuleBody:
 
     @property
     def migrated(self):
-        """Gets the migrated of this Event2alarmRuleBody.
+        r"""Gets the migrated of this Event2alarmRuleBody.
 
         是否迁移到2.0
 
@@ -455,7 +455,7 @@ class Event2alarmRuleBody:
 
     @migrated.setter
     def migrated(self, migrated):
-        """Sets the migrated of this Event2alarmRuleBody.
+        r"""Sets the migrated of this Event2alarmRuleBody.
 
         是否迁移到2.0
 
@@ -466,7 +466,7 @@ class Event2alarmRuleBody:
 
     @property
     def topics(self):
-        """Gets the topics of this Event2alarmRuleBody.
+        r"""Gets the topics of this Event2alarmRuleBody.
 
         smn信息
 
@@ -477,7 +477,7 @@ class Event2alarmRuleBody:
 
     @topics.setter
     def topics(self, topics):
-        """Sets the topics of this Event2alarmRuleBody.
+        r"""Sets the topics of this Event2alarmRuleBody.
 
         smn信息
 

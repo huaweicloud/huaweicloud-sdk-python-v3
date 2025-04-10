@@ -36,7 +36,7 @@ class ListResResourceSpecResponse(SdkResponse):
     }
 
     def __init__(self, offline_spec=None, nearline_spec=None, deep_learning_spec=None, is_success=None, message=None, error_code=None):
-        """ListResResourceSpecResponse
+        r"""ListResResourceSpecResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ListResResourceSpecResponse(SdkResponse):
 
     @property
     def offline_spec(self):
-        """Gets the offline_spec of this ListResResourceSpecResponse.
+        r"""Gets the offline_spec of this ListResResourceSpecResponse.
 
         离线计算规格。
 
@@ -90,7 +90,7 @@ class ListResResourceSpecResponse(SdkResponse):
 
     @offline_spec.setter
     def offline_spec(self, offline_spec):
-        """Sets the offline_spec of this ListResResourceSpecResponse.
+        r"""Sets the offline_spec of this ListResResourceSpecResponse.
 
         离线计算规格。
 
@@ -101,7 +101,7 @@ class ListResResourceSpecResponse(SdkResponse):
 
     @property
     def nearline_spec(self):
-        """Gets the nearline_spec of this ListResResourceSpecResponse.
+        r"""Gets the nearline_spec of this ListResResourceSpecResponse.
 
         实时计算规格。
 
@@ -112,7 +112,7 @@ class ListResResourceSpecResponse(SdkResponse):
 
     @nearline_spec.setter
     def nearline_spec(self, nearline_spec):
-        """Sets the nearline_spec of this ListResResourceSpecResponse.
+        r"""Sets the nearline_spec of this ListResResourceSpecResponse.
 
         实时计算规格。
 
@@ -123,7 +123,7 @@ class ListResResourceSpecResponse(SdkResponse):
 
     @property
     def deep_learning_spec(self):
-        """Gets the deep_learning_spec of this ListResResourceSpecResponse.
+        r"""Gets the deep_learning_spec of this ListResResourceSpecResponse.
 
         排序模型计算规格。
 
@@ -134,7 +134,7 @@ class ListResResourceSpecResponse(SdkResponse):
 
     @deep_learning_spec.setter
     def deep_learning_spec(self, deep_learning_spec):
-        """Sets the deep_learning_spec of this ListResResourceSpecResponse.
+        r"""Sets the deep_learning_spec of this ListResResourceSpecResponse.
 
         排序模型计算规格。
 
@@ -145,7 +145,7 @@ class ListResResourceSpecResponse(SdkResponse):
 
     @property
     def is_success(self):
-        """Gets the is_success of this ListResResourceSpecResponse.
+        r"""Gets the is_success of this ListResResourceSpecResponse.
 
         请求是否成功。
 
@@ -156,7 +156,7 @@ class ListResResourceSpecResponse(SdkResponse):
 
     @is_success.setter
     def is_success(self, is_success):
-        """Sets the is_success of this ListResResourceSpecResponse.
+        r"""Sets the is_success of this ListResResourceSpecResponse.
 
         请求是否成功。
 
@@ -167,7 +167,7 @@ class ListResResourceSpecResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ListResResourceSpecResponse.
+        r"""Gets the message of this ListResResourceSpecResponse.
 
         返回消息（请求成功时，不返回此字段）。
 
@@ -178,7 +178,7 @@ class ListResResourceSpecResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ListResResourceSpecResponse.
+        r"""Sets the message of this ListResResourceSpecResponse.
 
         返回消息（请求成功时，不返回此字段）。
 
@@ -189,7 +189,7 @@ class ListResResourceSpecResponse(SdkResponse):
 
     @property
     def error_code(self):
-        """Gets the error_code of this ListResResourceSpecResponse.
+        r"""Gets the error_code of this ListResResourceSpecResponse.
 
         错误码（请求成功时，不返回此字段）。
 
@@ -200,7 +200,7 @@ class ListResResourceSpecResponse(SdkResponse):
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this ListResResourceSpecResponse.
+        r"""Sets the error_code of this ListResResourceSpecResponse.
 
         错误码（请求成功时，不返回此字段）。
 

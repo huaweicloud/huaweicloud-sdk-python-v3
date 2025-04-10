@@ -34,7 +34,7 @@ class AomClient(Client):
         return client_builder
 
     def add_action_rule(self, request):
-        """新增告警行动规则
+        r"""新增告警行动规则
 
         新增告警行动规则。
         
@@ -99,7 +99,7 @@ class AomClient(Client):
         return http_info
 
     def add_alarm_rule(self, request):
-        """添加阈值规则
+        r"""添加阈值规则
 
         该接口用于添加一条阈值规则。
         
@@ -164,7 +164,7 @@ class AomClient(Client):
         return http_info
 
     def add_event2alarm_rule(self, request):
-        """新增一条事件类告警规则
+        r"""新增一条事件类告警规则
 
         新增一条事件类告警规则。
         
@@ -229,7 +229,7 @@ class AomClient(Client):
         return http_info
 
     def add_metric_data(self, request):
-        """添加监控数据
+        r"""添加监控数据
 
         该接口用于向服务端添加一条或多条监控数据。
         
@@ -294,7 +294,7 @@ class AomClient(Client):
         return http_info
 
     def add_mute_rules(self, request):
-        """新增静默规则
+        r"""新增静默规则
 
         新增静默规则。
         
@@ -359,7 +359,7 @@ class AomClient(Client):
         return http_info
 
     def add_or_update_metric_or_event_alarm_rule(self, request):
-        """添加或修改指标类或事件类告警规则
+        r"""添加或修改指标类或事件类告警规则
 
         添加或修改AOM2.0指标类或事件类告警规则。(注：接口目前开放的region为：华东-上海一)
         
@@ -428,7 +428,7 @@ class AomClient(Client):
         return http_info
 
     def add_or_update_service_discovery_rules(self, request):
-        """添加或修改服务发现规则
+        r"""添加或修改服务发现规则
 
         该接口用于添加或修改一条或多条服务发现规则。同一projectid下可添加的规则上限为100条。
         
@@ -493,7 +493,7 @@ class AomClient(Client):
         return http_info
 
     def count_events(self, request):
-        """统计事件告警信息
+        r"""统计事件告警信息
 
         该接口用于分段统计指定条件下的事件、告警。
         
@@ -560,7 +560,7 @@ class AomClient(Client):
         return http_info
 
     def delete_action_rule(self, request):
-        """删除告警行动规则
+        r"""删除告警行动规则
 
         删除告警行动规则。
         
@@ -625,7 +625,7 @@ class AomClient(Client):
         return http_info
 
     def delete_alarm_rule(self, request):
-        """删除阈值规则
+        r"""删除阈值规则
 
         该接口用于删除阈值规则。
         
@@ -690,7 +690,7 @@ class AomClient(Client):
         return http_info
 
     def delete_alarm_rules(self, request):
-        """批量删除阈值规则
+        r"""批量删除阈值规则
 
         该接口用于批量删除阈值规则
         
@@ -755,7 +755,7 @@ class AomClient(Client):
         return http_info
 
     def delete_event2alarm_rule(self, request):
-        """删除事件类告警规则
+        r"""删除事件类告警规则
 
         删除一条事件类告警规则。
         
@@ -820,7 +820,7 @@ class AomClient(Client):
         return http_info
 
     def delete_metric_or_event_alarm_rule(self, request):
-        """删除指标类或事件类告警规则
+        r"""删除指标类或事件类告警规则
 
         删除AOM2.0指标类或事件类告警规则。(注：接口目前开放的region为：华东-上海一)
         
@@ -885,7 +885,7 @@ class AomClient(Client):
         return http_info
 
     def delete_mute_rules(self, request):
-        """删除静默规则
+        r"""删除静默规则
 
         删除静默规则。
         
@@ -950,7 +950,7 @@ class AomClient(Client):
         return http_info
 
     def deleteservice_discovery_rules(self, request):
-        """删除服务发现规则
+        r"""删除服务发现规则
 
         该接口用于删除服务发现规则。
         
@@ -1016,7 +1016,7 @@ class AomClient(Client):
         return http_info
 
     def list_action_rule(self, request):
-        """获取告警行动规则列表
+        r"""获取告警行动规则列表
 
         获取告警行动规则列表。
         
@@ -1079,7 +1079,7 @@ class AomClient(Client):
         return http_info
 
     def list_agents(self, request):
-        """查询主机安装的ICAgent信息
+        r"""查询主机安装的ICAgent信息
 
         该接口用于查询集群主机或用户自定义主机安装的ICAgent信息。
         
@@ -1146,7 +1146,7 @@ class AomClient(Client):
         return http_info
 
     def list_alarm_rule(self, request):
-        """查询阈值规则列表
+        r"""查询阈值规则列表
 
         该接口用于查询阈值规则列表。
         
@@ -1213,7 +1213,7 @@ class AomClient(Client):
         return http_info
 
     def list_event2alarm_rule(self, request):
-        """查询事件类告警规则列表
+        r"""查询事件类告警规则列表
 
         查询事件类告警规则列表。
         
@@ -1276,7 +1276,7 @@ class AomClient(Client):
         return http_info
 
     def list_events(self, request):
-        """查询事件告警信息
+        r"""查询事件告警信息
 
         该接口用于查询对应用户的事件、告警。
         
@@ -1349,7 +1349,7 @@ class AomClient(Client):
         return http_info
 
     def list_log_items(self, request):
-        """查询日志
+        r"""查询日志
 
         该接口用于查询不同维度(例如集群、IP、应用等)下的日志内容，支持分页查询。
         
@@ -1416,7 +1416,7 @@ class AomClient(Client):
         return http_info
 
     def list_metric_items(self, request):
-        """查询指标
+        r"""查询指标
 
         该接口用于查询系统当前可监控的指标列表，可以指定指标命名空间、指标名称、维度、所属资源的编号（格式为：resType_resId），分页查询的起始位置和返回的最大记录条数。
         
@@ -1487,7 +1487,7 @@ class AomClient(Client):
         return http_info
 
     def list_metric_or_event_alarm_rule(self, request):
-        """查询指标类或者事件类告警规则列表
+        r"""查询指标类或者事件类告警规则列表
 
         查询AOM2.0指标类或者事件类告警规则列表。(注：接口目前开放的region为：华东-上海一)
         
@@ -1574,7 +1574,7 @@ class AomClient(Client):
         return http_info
 
     def list_mute_rule(self, request):
-        """获取静默规则列表
+        r"""获取静默规则列表
 
         获取静默规则列表。
         
@@ -1637,7 +1637,7 @@ class AomClient(Client):
         return http_info
 
     def list_notified_histories(self, request):
-        """获取告警发送结果
+        r"""获取告警发送结果
 
         获取告警发送结果。
         
@@ -1702,7 +1702,7 @@ class AomClient(Client):
         return http_info
 
     def list_permissions(self, request):
-        """查询aom2.0相关云服务授权信息
+        r"""查询aom2.0相关云服务授权信息
 
         该接口用于查询aom2.0相关云服务授权信息。
         
@@ -1765,7 +1765,7 @@ class AomClient(Client):
         return http_info
 
     def list_sample(self, request):
-        """查询时序数据
+        r"""查询时序数据
 
         该接口用于查询指定时间范围内的监控时序数据，可以通过参数指定需要查询的数据维度，数据周期等。
         
@@ -1832,7 +1832,7 @@ class AomClient(Client):
         return http_info
 
     def list_series(self, request):
-        """查询时间序列
+        r"""查询时间序列
 
         该接口用于查询系统当前可监控的时间序列列表，可以指定时间序列命名空间、名称、维度、所属资源的编号（格式为：resType_resId），分页查询的起始位置和返回的最大记录条数。
         
@@ -1901,7 +1901,7 @@ class AomClient(Client):
         return http_info
 
     def list_service_discovery_rules(self, request):
-        """查询系统中已有服务发现规则
+        r"""查询系统中已有服务发现规则
 
         该接口用于查询系统当前已存在的服务发现规则。
         
@@ -1966,7 +1966,7 @@ class AomClient(Client):
         return http_info
 
     def push_events(self, request):
-        """上报事件告警信息
+        r"""上报事件告警信息
 
         该接口用于上报对应用户的事件、告警。
         
@@ -2035,7 +2035,7 @@ class AomClient(Client):
         return http_info
 
     def show_action_rule(self, request):
-        """通过规则名称获取告警行动规则
+        r"""通过规则名称获取告警行动规则
 
         通过规则名称获取告警行动规则。
         
@@ -2100,7 +2100,7 @@ class AomClient(Client):
         return http_info
 
     def show_alarm_rule(self, request):
-        """查询单条阈值规则
+        r"""查询单条阈值规则
 
         该接口用于查询单条阈值规则。
         
@@ -2165,7 +2165,7 @@ class AomClient(Client):
         return http_info
 
     def show_metrics_data(self, request):
-        """查询监控数据
+        r"""查询监控数据
 
         该接口用于查询指定时间范围内指标的监控数据，可以通过参数指定需要查询的数据维度，数据周期等。
         
@@ -2232,7 +2232,7 @@ class AomClient(Client):
         return http_info
 
     def update_action_rule(self, request):
-        """修改告警行动规则
+        r"""修改告警行动规则
 
         修改告警行动规则。
         
@@ -2297,7 +2297,7 @@ class AomClient(Client):
         return http_info
 
     def update_alarm_rule(self, request):
-        """修改阈值规则
+        r"""修改阈值规则
 
         该接口用于修改一条阈值规则。
         
@@ -2362,7 +2362,7 @@ class AomClient(Client):
         return http_info
 
     def update_event_rule(self, request):
-        """更新事件类告警规则
+        r"""更新事件类告警规则
 
         更新事件类告警规则。
         
@@ -2427,7 +2427,7 @@ class AomClient(Client):
         return http_info
 
     def update_mute_rule(self, request):
-        """修改静默规则
+        r"""修改静默规则
 
         修改静默规则。
         
@@ -2492,7 +2492,7 @@ class AomClient(Client):
         return http_info
 
     def create_prom_instance(self, request):
-        """新增Prometheus实例
+        r"""新增Prometheus实例
 
         该接口用于新增Prometheus实例。
         
@@ -2559,7 +2559,7 @@ class AomClient(Client):
         return http_info
 
     def create_recording_rule(self, request):
-        """创建Prometheus实例的预聚合规则
+        r"""创建Prometheus实例的预聚合规则
 
         该接口用于给Prometheus实例创建预聚合规则。
         
@@ -2626,7 +2626,7 @@ class AomClient(Client):
         return http_info
 
     def delete_prom_instance(self, request):
-        """卸载托管Prometheus实例
+        r"""卸载托管Prometheus实例
 
         该接口用于卸载托管Prometheus实例。
         
@@ -2693,7 +2693,7 @@ class AomClient(Client):
         return http_info
 
     def list_access_code(self, request):
-        """获取Prometheus实例调用凭证
+        r"""获取Prometheus实例调用凭证
 
         该接口用于获取Prometheus实例调用凭证。
         
@@ -2756,7 +2756,7 @@ class AomClient(Client):
         return http_info
 
     def list_prom_instance(self, request):
-        """查询Prometheus实例
+        r"""查询Prometheus实例
 
         该接口用于查询Prometheus实例。
         
@@ -2829,7 +2829,7 @@ class AomClient(Client):
         return http_info
 
     def list_instant_query_aom_prom_get(self, request):
-        """GET方法查询瞬时数据
+        r"""GET方法查询瞬时数据
 
         该接口使用GET方法查询PromQL(Prometheus Query Language)在特定时间点下的计算结果。
         
@@ -2896,7 +2896,7 @@ class AomClient(Client):
         return http_info
 
     def list_instant_query_aom_prom_post(self, request):
-        """（推荐）POST方法查询瞬时数据
+        r"""（推荐）POST方法查询瞬时数据
 
         该接口使用POST方法查询PromQL(Prometheus Query Language) 在特定时间点下的计算结果。
         
@@ -2963,7 +2963,7 @@ class AomClient(Client):
         return http_info
 
     def list_label_values_aom_prom_get(self, request):
-        """查询标签值
+        r"""查询标签值
 
         该接口用于查询带有指定标签的时间序列列表。
         
@@ -3028,7 +3028,7 @@ class AomClient(Client):
         return http_info
 
     def list_labels_aom_prom_get(self, request):
-        """GET方法获取标签名列表
+        r"""GET方法获取标签名列表
 
         该接口使用GET方法获取标签名列表。
         
@@ -3091,7 +3091,7 @@ class AomClient(Client):
         return http_info
 
     def list_labels_aom_prom_post(self, request):
-        """（推荐）POST方法获取标签名列表
+        r"""（推荐）POST方法获取标签名列表
 
         该接口使用POST方法获取标签名列表。
         
@@ -3154,7 +3154,7 @@ class AomClient(Client):
         return http_info
 
     def list_metadata_aom_prom_get(self, request):
-        """元数据查询
+        r"""元数据查询
 
         该接口用于查询序列及序列标签的元数据。
         
@@ -3217,7 +3217,7 @@ class AomClient(Client):
         return http_info
 
     def list_range_query_aom_prom_get(self, request):
-        """GET方法查询区间数据
+        r"""GET方法查询区间数据
 
         该接口使用GET方法查询PromQL(Prometheus Query Language)在一段时间返回内的计算结果。
         
@@ -3288,7 +3288,7 @@ class AomClient(Client):
         return http_info
 
     def list_range_query_aom_prom_post(self, request):
-        """（推荐）POST方法查询区间数据
+        r"""（推荐）POST方法查询区间数据
 
         该接口使用POST方法查询PromQL(Prometheus Query Language)在一段时间返回内的计算结果。
         

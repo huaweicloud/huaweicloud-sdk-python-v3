@@ -31,7 +31,7 @@ class ShowGroupsRespGroupMembers:
     }
 
     def __init__(self, host=None, assignment=None, member_id=None, client_id=None):
-        """ShowGroupsRespGroupMembers
+        r"""ShowGroupsRespGroupMembers
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ShowGroupsRespGroupMembers:
 
     @property
     def host(self):
-        """Gets the host of this ShowGroupsRespGroupMembers.
+        r"""Gets the host of this ShowGroupsRespGroupMembers.
 
         消费组consumer地址。
 
@@ -75,7 +75,7 @@ class ShowGroupsRespGroupMembers:
 
     @host.setter
     def host(self, host):
-        """Sets the host of this ShowGroupsRespGroupMembers.
+        r"""Sets the host of this ShowGroupsRespGroupMembers.
 
         消费组consumer地址。
 
@@ -86,7 +86,7 @@ class ShowGroupsRespGroupMembers:
 
     @property
     def assignment(self):
-        """Gets the assignment of this ShowGroupsRespGroupMembers.
+        r"""Gets the assignment of this ShowGroupsRespGroupMembers.
 
         consumer分配到的分区信息。
 
@@ -97,7 +97,7 @@ class ShowGroupsRespGroupMembers:
 
     @assignment.setter
     def assignment(self, assignment):
-        """Sets the assignment of this ShowGroupsRespGroupMembers.
+        r"""Sets the assignment of this ShowGroupsRespGroupMembers.
 
         consumer分配到的分区信息。
 
@@ -108,7 +108,7 @@ class ShowGroupsRespGroupMembers:
 
     @property
     def member_id(self):
-        """Gets the member_id of this ShowGroupsRespGroupMembers.
+        r"""Gets the member_id of this ShowGroupsRespGroupMembers.
 
         消费组consumer的ID。
 
@@ -119,7 +119,7 @@ class ShowGroupsRespGroupMembers:
 
     @member_id.setter
     def member_id(self, member_id):
-        """Sets the member_id of this ShowGroupsRespGroupMembers.
+        r"""Sets the member_id of this ShowGroupsRespGroupMembers.
 
         消费组consumer的ID。
 
@@ -130,7 +130,7 @@ class ShowGroupsRespGroupMembers:
 
     @property
     def client_id(self):
-        """Gets the client_id of this ShowGroupsRespGroupMembers.
+        r"""Gets the client_id of this ShowGroupsRespGroupMembers.
 
         客户端ID。
 
@@ -141,7 +141,7 @@ class ShowGroupsRespGroupMembers:
 
     @client_id.setter
     def client_id(self, client_id):
-        """Sets the client_id of this ShowGroupsRespGroupMembers.
+        r"""Sets the client_id of this ShowGroupsRespGroupMembers.
 
         客户端ID。
 

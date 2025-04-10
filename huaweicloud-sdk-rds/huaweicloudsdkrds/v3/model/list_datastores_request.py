@@ -27,7 +27,7 @@ class ListDatastoresRequest:
     }
 
     def __init__(self, x_language=None, database_name=None):
-        """ListDatastoresRequest
+        r"""ListDatastoresRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListDatastoresRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ListDatastoresRequest.
+        r"""Gets the x_language of this ListDatastoresRequest.
 
         语言
 
@@ -60,7 +60,7 @@ class ListDatastoresRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ListDatastoresRequest.
+        r"""Sets the x_language of this ListDatastoresRequest.
 
         语言
 
@@ -71,7 +71,7 @@ class ListDatastoresRequest:
 
     @property
     def database_name(self):
-        """Gets the database_name of this ListDatastoresRequest.
+        r"""Gets the database_name of this ListDatastoresRequest.
 
         数据库引擎。支持的引擎如下，不区分大小写： MySQL PostgreSQL SQLServer
 
@@ -82,7 +82,7 @@ class ListDatastoresRequest:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this ListDatastoresRequest.
+        r"""Sets the database_name of this ListDatastoresRequest.
 
         数据库引擎。支持的引擎如下，不区分大小写： MySQL PostgreSQL SQLServer
 

@@ -76,7 +76,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
     }
 
     def __init__(self, create_time=None, update_time=None, character_name=None, gender=None, id=None, name=None, photo_url=None, posture=None, train_finish_time_estimate=None, train_start_time=None, train_status=None, type=None, center_photo_url=None, error_msg=None, left_photo_url=None, preview_video_url=None, right_photo_url=None, best_img_quality_preview_url=None, best_lip_sync_preview_url=None, best_mouth_rec_preview_url=None, have_segment_data=None, initial_video_url=None, background_url=None, model=None, charater_position=None, charater_dimension=None):
-        """ExecuteGetCharacterInfoByIdResponse
+        r"""ExecuteGetCharacterInfoByIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -214,7 +214,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Gets the create_time of this ExecuteGetCharacterInfoByIdResponse.
 
         创建时间
 
@@ -225,7 +225,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Sets the create_time of this ExecuteGetCharacterInfoByIdResponse.
 
         创建时间
 
@@ -236,7 +236,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Gets the update_time of this ExecuteGetCharacterInfoByIdResponse.
 
         更新时间
 
@@ -247,7 +247,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Sets the update_time of this ExecuteGetCharacterInfoByIdResponse.
 
         更新时间
 
@@ -258,7 +258,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @property
     def character_name(self):
-        """Gets the character_name of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Gets the character_name of this ExecuteGetCharacterInfoByIdResponse.
 
         形象的个人姓名
 
@@ -269,7 +269,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @character_name.setter
     def character_name(self, character_name):
-        """Sets the character_name of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Sets the character_name of this ExecuteGetCharacterInfoByIdResponse.
 
         形象的个人姓名
 
@@ -280,7 +280,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @property
     def gender(self):
-        """Gets the gender of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Gets the gender of this ExecuteGetCharacterInfoByIdResponse.
 
         :return: The gender of this ExecuteGetCharacterInfoByIdResponse.
         :rtype: int
@@ -289,7 +289,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @gender.setter
     def gender(self, gender):
-        """Sets the gender of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Sets the gender of this ExecuteGetCharacterInfoByIdResponse.
 
         :param gender: The gender of this ExecuteGetCharacterInfoByIdResponse.
         :type gender: int
@@ -298,7 +298,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Gets the id of this ExecuteGetCharacterInfoByIdResponse.
 
         形象id
 
@@ -309,7 +309,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Sets the id of this ExecuteGetCharacterInfoByIdResponse.
 
         形象id
 
@@ -320,7 +320,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Gets the name of this ExecuteGetCharacterInfoByIdResponse.
 
         形象名
 
@@ -331,7 +331,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Sets the name of this ExecuteGetCharacterInfoByIdResponse.
 
         形象名
 
@@ -342,7 +342,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @property
     def photo_url(self):
-        """Gets the photo_url of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Gets the photo_url of this ExecuteGetCharacterInfoByIdResponse.
 
         形象obs地址
 
@@ -353,7 +353,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @photo_url.setter
     def photo_url(self, photo_url):
-        """Sets the photo_url of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Sets the photo_url of this ExecuteGetCharacterInfoByIdResponse.
 
         形象obs地址
 
@@ -364,7 +364,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @property
     def posture(self):
-        """Gets the posture of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Gets the posture of this ExecuteGetCharacterInfoByIdResponse.
 
         姿态： 0：站姿全身 1：站姿半身 2：坐姿全身 3：坐姿半身
 
@@ -375,7 +375,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @posture.setter
     def posture(self, posture):
-        """Sets the posture of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Sets the posture of this ExecuteGetCharacterInfoByIdResponse.
 
         姿态： 0：站姿全身 1：站姿半身 2：坐姿全身 3：坐姿半身
 
@@ -386,7 +386,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @property
     def train_finish_time_estimate(self):
-        """Gets the train_finish_time_estimate of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Gets the train_finish_time_estimate of this ExecuteGetCharacterInfoByIdResponse.
 
         估算的训练结束时间
 
@@ -397,7 +397,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @train_finish_time_estimate.setter
     def train_finish_time_estimate(self, train_finish_time_estimate):
-        """Sets the train_finish_time_estimate of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Sets the train_finish_time_estimate of this ExecuteGetCharacterInfoByIdResponse.
 
         估算的训练结束时间
 
@@ -408,7 +408,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @property
     def train_start_time(self):
-        """Gets the train_start_time of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Gets the train_start_time of this ExecuteGetCharacterInfoByIdResponse.
 
         训练开始时间
 
@@ -419,7 +419,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @train_start_time.setter
     def train_start_time(self, train_start_time):
-        """Sets the train_start_time of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Sets the train_start_time of this ExecuteGetCharacterInfoByIdResponse.
 
         训练开始时间
 
@@ -430,7 +430,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @property
     def train_status(self):
-        """Gets the train_status of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Gets the train_status of this ExecuteGetCharacterInfoByIdResponse.
 
         训练状态： 0：预处理 1：训练中 2：训练成功 3：训练失败 4：预览视频生成中
 
@@ -441,7 +441,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @train_status.setter
     def train_status(self, train_status):
-        """Sets the train_status of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Sets the train_status of this ExecuteGetCharacterInfoByIdResponse.
 
         训练状态： 0：预处理 1：训练中 2：训练成功 3：训练失败 4：预览视频生成中
 
@@ -452,7 +452,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Gets the type of this ExecuteGetCharacterInfoByIdResponse.
 
         形象类型： 0：预制形象 1：用户自定义形象
 
@@ -463,7 +463,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Sets the type of this ExecuteGetCharacterInfoByIdResponse.
 
         形象类型： 0：预制形象 1：用户自定义形象
 
@@ -474,7 +474,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @property
     def center_photo_url(self):
-        """Gets the center_photo_url of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Gets the center_photo_url of this ExecuteGetCharacterInfoByIdResponse.
 
         形象在中心时的图片obs 地址
 
@@ -485,7 +485,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @center_photo_url.setter
     def center_photo_url(self, center_photo_url):
-        """Sets the center_photo_url of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Sets the center_photo_url of this ExecuteGetCharacterInfoByIdResponse.
 
         形象在中心时的图片obs 地址
 
@@ -496,7 +496,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Gets the error_msg of this ExecuteGetCharacterInfoByIdResponse.
 
         合成错误信息
 
@@ -507,7 +507,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Sets the error_msg of this ExecuteGetCharacterInfoByIdResponse.
 
         合成错误信息
 
@@ -518,7 +518,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @property
     def left_photo_url(self):
-        """Gets the left_photo_url of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Gets the left_photo_url of this ExecuteGetCharacterInfoByIdResponse.
 
         形象在左时的图片obs 地址 考虑兼容性：如果为null，形象无法使用左右配置
 
@@ -529,7 +529,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @left_photo_url.setter
     def left_photo_url(self, left_photo_url):
-        """Sets the left_photo_url of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Sets the left_photo_url of this ExecuteGetCharacterInfoByIdResponse.
 
         形象在左时的图片obs 地址 考虑兼容性：如果为null，形象无法使用左右配置
 
@@ -540,7 +540,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @property
     def preview_video_url(self):
-        """Gets the preview_video_url of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Gets the preview_video_url of this ExecuteGetCharacterInfoByIdResponse.
 
         预览视频
 
@@ -551,7 +551,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @preview_video_url.setter
     def preview_video_url(self, preview_video_url):
-        """Sets the preview_video_url of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Sets the preview_video_url of this ExecuteGetCharacterInfoByIdResponse.
 
         预览视频
 
@@ -562,7 +562,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @property
     def right_photo_url(self):
-        """Gets the right_photo_url of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Gets the right_photo_url of this ExecuteGetCharacterInfoByIdResponse.
 
         形象在右时的图片obs 地址 考虑兼容性：如果为null，形象无法使用左右配置
 
@@ -573,7 +573,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @right_photo_url.setter
     def right_photo_url(self, right_photo_url):
-        """Sets the right_photo_url of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Sets the right_photo_url of this ExecuteGetCharacterInfoByIdResponse.
 
         形象在右时的图片obs 地址 考虑兼容性：如果为null，形象无法使用左右配置
 
@@ -584,7 +584,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @property
     def best_img_quality_preview_url(self):
-        """Gets the best_img_quality_preview_url of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Gets the best_img_quality_preview_url of this ExecuteGetCharacterInfoByIdResponse.
 
         显示效果最佳预览
 
@@ -595,7 +595,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @best_img_quality_preview_url.setter
     def best_img_quality_preview_url(self, best_img_quality_preview_url):
-        """Sets the best_img_quality_preview_url of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Sets the best_img_quality_preview_url of this ExecuteGetCharacterInfoByIdResponse.
 
         显示效果最佳预览
 
@@ -606,7 +606,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @property
     def best_lip_sync_preview_url(self):
-        """Gets the best_lip_sync_preview_url of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Gets the best_lip_sync_preview_url of this ExecuteGetCharacterInfoByIdResponse.
 
         音唇同步最佳预览
 
@@ -617,7 +617,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @best_lip_sync_preview_url.setter
     def best_lip_sync_preview_url(self, best_lip_sync_preview_url):
-        """Sets the best_lip_sync_preview_url of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Sets the best_lip_sync_preview_url of this ExecuteGetCharacterInfoByIdResponse.
 
         音唇同步最佳预览
 
@@ -628,7 +628,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @property
     def best_mouth_rec_preview_url(self):
-        """Gets the best_mouth_rec_preview_url of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Gets the best_mouth_rec_preview_url of this ExecuteGetCharacterInfoByIdResponse.
 
         嘴巴部分效果最佳
 
@@ -639,7 +639,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @best_mouth_rec_preview_url.setter
     def best_mouth_rec_preview_url(self, best_mouth_rec_preview_url):
-        """Sets the best_mouth_rec_preview_url of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Sets the best_mouth_rec_preview_url of this ExecuteGetCharacterInfoByIdResponse.
 
         嘴巴部分效果最佳
 
@@ -650,7 +650,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @property
     def have_segment_data(self):
-        """Gets the have_segment_data of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Gets the have_segment_data of this ExecuteGetCharacterInfoByIdResponse.
 
         是否有人像分割数据
 
@@ -661,7 +661,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @have_segment_data.setter
     def have_segment_data(self, have_segment_data):
-        """Sets the have_segment_data of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Sets the have_segment_data of this ExecuteGetCharacterInfoByIdResponse.
 
         是否有人像分割数据
 
@@ -672,7 +672,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @property
     def initial_video_url(self):
-        """Gets the initial_video_url of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Gets the initial_video_url of this ExecuteGetCharacterInfoByIdResponse.
 
         合成原始视频地址
 
@@ -683,7 +683,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @initial_video_url.setter
     def initial_video_url(self, initial_video_url):
-        """Sets the initial_video_url of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Sets the initial_video_url of this ExecuteGetCharacterInfoByIdResponse.
 
         合成原始视频地址
 
@@ -694,7 +694,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @property
     def background_url(self):
-        """Gets the background_url of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Gets the background_url of this ExecuteGetCharacterInfoByIdResponse.
 
         抠图背景地址
 
@@ -705,7 +705,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @background_url.setter
     def background_url(self, background_url):
-        """Sets the background_url of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Sets the background_url of this ExecuteGetCharacterInfoByIdResponse.
 
         抠图背景地址
 
@@ -716,7 +716,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @property
     def model(self):
-        """Gets the model of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Gets the model of this ExecuteGetCharacterInfoByIdResponse.
 
         0: best img quality 1: best lip sync 2: best mouth rec
 
@@ -727,7 +727,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @model.setter
     def model(self, model):
-        """Sets the model of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Sets the model of this ExecuteGetCharacterInfoByIdResponse.
 
         0: best img quality 1: best lip sync 2: best mouth rec
 
@@ -738,7 +738,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @property
     def charater_position(self):
-        """Gets the charater_position of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Gets the charater_position of this ExecuteGetCharacterInfoByIdResponse.
 
         :return: The charater_position of this ExecuteGetCharacterInfoByIdResponse.
         :rtype: :class:`huaweicloudsdkcbs.v1.CharacterPosition`
@@ -747,7 +747,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @charater_position.setter
     def charater_position(self, charater_position):
-        """Sets the charater_position of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Sets the charater_position of this ExecuteGetCharacterInfoByIdResponse.
 
         :param charater_position: The charater_position of this ExecuteGetCharacterInfoByIdResponse.
         :type charater_position: :class:`huaweicloudsdkcbs.v1.CharacterPosition`
@@ -756,7 +756,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @property
     def charater_dimension(self):
-        """Gets the charater_dimension of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Gets the charater_dimension of this ExecuteGetCharacterInfoByIdResponse.
 
         :return: The charater_dimension of this ExecuteGetCharacterInfoByIdResponse.
         :rtype: :class:`huaweicloudsdkcbs.v1.CharacterDimension`
@@ -765,7 +765,7 @@ class ExecuteGetCharacterInfoByIdResponse(SdkResponse):
 
     @charater_dimension.setter
     def charater_dimension(self, charater_dimension):
-        """Sets the charater_dimension of this ExecuteGetCharacterInfoByIdResponse.
+        r"""Sets the charater_dimension of this ExecuteGetCharacterInfoByIdResponse.
 
         :param charater_dimension: The charater_dimension of this ExecuteGetCharacterInfoByIdResponse.
         :type charater_dimension: :class:`huaweicloudsdkcbs.v1.CharacterDimension`

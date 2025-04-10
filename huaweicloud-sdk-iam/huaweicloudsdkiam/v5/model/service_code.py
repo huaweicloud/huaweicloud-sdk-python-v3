@@ -23,7 +23,7 @@ class ServiceCode:
     }
 
     def __init__(self):
-        """ServiceCode
+        r"""ServiceCode
 
         The model defined in huaweicloud sdk
 

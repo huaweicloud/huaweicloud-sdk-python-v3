@@ -27,7 +27,7 @@ class ShowFuncSnapshotStateRequest:
     }
 
     def __init__(self, function_urn=None, action=None):
-        """ShowFuncSnapshotStateRequest
+        r"""ShowFuncSnapshotStateRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowFuncSnapshotStateRequest:
 
     @property
     def function_urn(self):
-        """Gets the function_urn of this ShowFuncSnapshotStateRequest.
+        r"""Gets the function_urn of this ShowFuncSnapshotStateRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -59,7 +59,7 @@ class ShowFuncSnapshotStateRequest:
 
     @function_urn.setter
     def function_urn(self, function_urn):
-        """Sets the function_urn of this ShowFuncSnapshotStateRequest.
+        r"""Sets the function_urn of this ShowFuncSnapshotStateRequest.
 
         函数的URN，详细解释见FunctionGraph函数模型的描述。
 
@@ -70,7 +70,7 @@ class ShowFuncSnapshotStateRequest:
 
     @property
     def action(self):
-        """Gets the action of this ShowFuncSnapshotStateRequest.
+        r"""Gets the action of this ShowFuncSnapshotStateRequest.
 
         查询快照制作开关状态
 
@@ -81,7 +81,7 @@ class ShowFuncSnapshotStateRequest:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ShowFuncSnapshotStateRequest.
+        r"""Sets the action of this ShowFuncSnapshotStateRequest.
 
         查询快照制作开关状态
 

@@ -24,7 +24,7 @@ class UpdateDelayConfigResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateDelayConfigResponse
+        r"""UpdateDelayConfigResponse
 
         The model defined in huaweicloud sdk
 

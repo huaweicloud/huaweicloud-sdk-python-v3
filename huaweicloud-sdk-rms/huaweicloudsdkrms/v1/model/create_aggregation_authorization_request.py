@@ -25,7 +25,7 @@ class CreateAggregationAuthorizationRequest:
     }
 
     def __init__(self, body=None):
-        """CreateAggregationAuthorizationRequest
+        r"""CreateAggregationAuthorizationRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateAggregationAuthorizationRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAggregationAuthorizationRequest.
+        r"""Gets the body of this CreateAggregationAuthorizationRequest.
 
         :return: The body of this CreateAggregationAuthorizationRequest.
         :rtype: :class:`huaweicloudsdkrms.v1.AggregationAuthorizationRequest`
@@ -52,7 +52,7 @@ class CreateAggregationAuthorizationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAggregationAuthorizationRequest.
+        r"""Sets the body of this CreateAggregationAuthorizationRequest.
 
         :param body: The body of this CreateAggregationAuthorizationRequest.
         :type body: :class:`huaweicloudsdkrms.v1.AggregationAuthorizationRequest`

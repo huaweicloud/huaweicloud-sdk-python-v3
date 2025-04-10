@@ -27,7 +27,7 @@ class ConfigurationItem:
     }
 
     def __init__(self, type=None, data=None):
-        """ConfigurationItem
+        r"""ConfigurationItem
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ConfigurationItem:
 
     @property
     def type(self):
-        """Gets the type of this ConfigurationItem.
+        r"""Gets the type of this ConfigurationItem.
 
         组件配置类型。
 
@@ -59,7 +59,7 @@ class ConfigurationItem:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ConfigurationItem.
+        r"""Sets the type of this ConfigurationItem.
 
         组件配置类型。
 
@@ -70,7 +70,7 @@ class ConfigurationItem:
 
     @property
     def data(self):
-        """Gets the data of this ConfigurationItem.
+        r"""Gets the data of this ConfigurationItem.
 
         :return: The data of this ConfigurationItem.
         :rtype: :class:`huaweicloudsdkcae.v1.ConfigurationData`
@@ -79,7 +79,7 @@ class ConfigurationItem:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ConfigurationItem.
+        r"""Sets the data of this ConfigurationItem.
 
         :param data: The data of this ConfigurationItem.
         :type data: :class:`huaweicloudsdkcae.v1.ConfigurationData`

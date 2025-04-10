@@ -31,7 +31,7 @@ class ChangeEventRequestInfo:
     }
 
     def __init__(self, operate_type=None, handler=None, operate_event_list=None, event_white_rule_list=None):
-        """ChangeEventRequestInfo
+        r"""ChangeEventRequestInfo
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ChangeEventRequestInfo:
 
     @property
     def operate_type(self):
-        """Gets the operate_type of this ChangeEventRequestInfo.
+        r"""Gets the operate_type of this ChangeEventRequestInfo.
 
         处理方式，包含如下:   - mark_as_handled : 手动处理   - ignore : 忽略   - add_to_alarm_whitelist : 加入告警白名单   - add_to_login_whitelist : 加入登录白名单   - isolate_and_kill : 隔离查杀   - unhandle : 取消手动处理   - do_not_ignore : 取消忽略   - remove_from_alarm_whitelist : 删除告警白名单   - remove_from_login_whitelist : 删除登录白名单   - do_not_isolate_or_kill : 取消隔离查杀
 
@@ -73,7 +73,7 @@ class ChangeEventRequestInfo:
 
     @operate_type.setter
     def operate_type(self, operate_type):
-        """Sets the operate_type of this ChangeEventRequestInfo.
+        r"""Sets the operate_type of this ChangeEventRequestInfo.
 
         处理方式，包含如下:   - mark_as_handled : 手动处理   - ignore : 忽略   - add_to_alarm_whitelist : 加入告警白名单   - add_to_login_whitelist : 加入登录白名单   - isolate_and_kill : 隔离查杀   - unhandle : 取消手动处理   - do_not_ignore : 取消忽略   - remove_from_alarm_whitelist : 删除告警白名单   - remove_from_login_whitelist : 删除登录白名单   - do_not_isolate_or_kill : 取消隔离查杀
 
@@ -84,7 +84,7 @@ class ChangeEventRequestInfo:
 
     @property
     def handler(self):
-        """Gets the handler of this ChangeEventRequestInfo.
+        r"""Gets the handler of this ChangeEventRequestInfo.
 
         备注信息，已处理的告警才有
 
@@ -95,7 +95,7 @@ class ChangeEventRequestInfo:
 
     @handler.setter
     def handler(self, handler):
-        """Sets the handler of this ChangeEventRequestInfo.
+        r"""Sets the handler of this ChangeEventRequestInfo.
 
         备注信息，已处理的告警才有
 
@@ -106,7 +106,7 @@ class ChangeEventRequestInfo:
 
     @property
     def operate_event_list(self):
-        """Gets the operate_event_list of this ChangeEventRequestInfo.
+        r"""Gets the operate_event_list of this ChangeEventRequestInfo.
 
         操作的事件列表
 
@@ -117,7 +117,7 @@ class ChangeEventRequestInfo:
 
     @operate_event_list.setter
     def operate_event_list(self, operate_event_list):
-        """Sets the operate_event_list of this ChangeEventRequestInfo.
+        r"""Sets the operate_event_list of this ChangeEventRequestInfo.
 
         操作的事件列表
 
@@ -128,7 +128,7 @@ class ChangeEventRequestInfo:
 
     @property
     def event_white_rule_list(self):
-        """Gets the event_white_rule_list of this ChangeEventRequestInfo.
+        r"""Gets the event_white_rule_list of this ChangeEventRequestInfo.
 
         用户自定义告警白名单规则列表
 
@@ -139,7 +139,7 @@ class ChangeEventRequestInfo:
 
     @event_white_rule_list.setter
     def event_white_rule_list(self, event_white_rule_list):
-        """Sets the event_white_rule_list of this ChangeEventRequestInfo.
+        r"""Sets the event_white_rule_list of this ChangeEventRequestInfo.
 
         用户自定义告警白名单规则列表
 

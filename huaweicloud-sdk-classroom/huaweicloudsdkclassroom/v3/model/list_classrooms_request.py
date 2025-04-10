@@ -29,7 +29,7 @@ class ListClassroomsRequest:
     }
 
     def __init__(self, offset=None, limit=None, query_type=None):
-        """ListClassroomsRequest
+        r"""ListClassroomsRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListClassroomsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListClassroomsRequest.
+        r"""Gets the offset of this ListClassroomsRequest.
 
         信息记录的起始编号
 
@@ -68,7 +68,7 @@ class ListClassroomsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListClassroomsRequest.
+        r"""Sets the offset of this ListClassroomsRequest.
 
         信息记录的起始编号
 
@@ -79,7 +79,7 @@ class ListClassroomsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListClassroomsRequest.
+        r"""Gets the limit of this ListClassroomsRequest.
 
         每页包含的信息记录数
 
@@ -90,7 +90,7 @@ class ListClassroomsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListClassroomsRequest.
+        r"""Sets the limit of this ListClassroomsRequest.
 
         每页包含的信息记录数
 
@@ -101,7 +101,7 @@ class ListClassroomsRequest:
 
     @property
     def query_type(self):
-        """Gets the query_type of this ListClassroomsRequest.
+        r"""Gets the query_type of this ListClassroomsRequest.
 
         查询的课堂类别，默认查询所有的课堂。 取值范围： create：只查询当前用户创建的课堂。 attend：只查询当前用户加入的课堂。 all：查询当前用户所有的课堂。
 
@@ -112,7 +112,7 @@ class ListClassroomsRequest:
 
     @query_type.setter
     def query_type(self, query_type):
-        """Sets the query_type of this ListClassroomsRequest.
+        r"""Sets the query_type of this ListClassroomsRequest.
 
         查询的课堂类别，默认查询所有的课堂。 取值范围： create：只查询当前用户创建的课堂。 attend：只查询当前用户加入的课堂。 all：查询当前用户所有的课堂。
 

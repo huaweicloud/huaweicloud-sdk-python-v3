@@ -29,7 +29,7 @@ class NacosServerConfig:
     }
 
     def __init__(self, ip_address=None, port=None, grpc_port=None):
-        """NacosServerConfig
+        r"""NacosServerConfig
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class NacosServerConfig:
 
     @property
     def ip_address(self):
-        """Gets the ip_address of this NacosServerConfig.
+        r"""Gets the ip_address of this NacosServerConfig.
 
         nacos服务端IP地址。不包含中文字符。
 
@@ -66,7 +66,7 @@ class NacosServerConfig:
 
     @ip_address.setter
     def ip_address(self, ip_address):
-        """Sets the ip_address of this NacosServerConfig.
+        r"""Sets the ip_address of this NacosServerConfig.
 
         nacos服务端IP地址。不包含中文字符。
 
@@ -77,7 +77,7 @@ class NacosServerConfig:
 
     @property
     def port(self):
-        """Gets the port of this NacosServerConfig.
+        r"""Gets the port of this NacosServerConfig.
 
         nacos服务端端口号。取值范围1 ~ 65535。
 
@@ -88,7 +88,7 @@ class NacosServerConfig:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this NacosServerConfig.
+        r"""Sets the port of this NacosServerConfig.
 
         nacos服务端端口号。取值范围1 ~ 65535。
 
@@ -99,7 +99,7 @@ class NacosServerConfig:
 
     @property
     def grpc_port(self):
-        """Gets the grpc_port of this NacosServerConfig.
+        r"""Gets the grpc_port of this NacosServerConfig.
 
         nacos服务端gRPC端口号，默认为port+1000。取值范围1 ~ 65535。
 
@@ -110,7 +110,7 @@ class NacosServerConfig:
 
     @grpc_port.setter
     def grpc_port(self, grpc_port):
-        """Sets the grpc_port of this NacosServerConfig.
+        r"""Sets the grpc_port of this NacosServerConfig.
 
         nacos服务端gRPC端口号，默认为port+1000。取值范围1 ~ 65535。
 

@@ -27,7 +27,7 @@ class GlanceDeleteImageRequest:
     }
 
     def __init__(self, image_id=None, body=None):
-        """GlanceDeleteImageRequest
+        r"""GlanceDeleteImageRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class GlanceDeleteImageRequest:
 
     @property
     def image_id(self):
-        """Gets the image_id of this GlanceDeleteImageRequest.
+        r"""Gets the image_id of this GlanceDeleteImageRequest.
 
         镜像ID
 
@@ -60,7 +60,7 @@ class GlanceDeleteImageRequest:
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this GlanceDeleteImageRequest.
+        r"""Sets the image_id of this GlanceDeleteImageRequest.
 
         镜像ID
 
@@ -71,7 +71,7 @@ class GlanceDeleteImageRequest:
 
     @property
     def body(self):
-        """Gets the body of this GlanceDeleteImageRequest.
+        r"""Gets the body of this GlanceDeleteImageRequest.
 
         :return: The body of this GlanceDeleteImageRequest.
         :rtype: :class:`huaweicloudsdkims.v2.GlanceDeleteImageRequestBody`
@@ -80,7 +80,7 @@ class GlanceDeleteImageRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this GlanceDeleteImageRequest.
+        r"""Sets the body of this GlanceDeleteImageRequest.
 
         :param body: The body of this GlanceDeleteImageRequest.
         :type body: :class:`huaweicloudsdkims.v2.GlanceDeleteImageRequestBody`

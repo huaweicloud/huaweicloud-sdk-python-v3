@@ -29,7 +29,7 @@ class QuotaRespQuotasResources:
     }
 
     def __init__(self, type=None, quota=None, used=None):
-        """QuotaRespQuotasResources
+        r"""QuotaRespQuotasResources
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class QuotaRespQuotasResources:
 
     @property
     def type(self):
-        """Gets the type of this QuotaRespQuotasResources.
+        r"""Gets the type of this QuotaRespQuotasResources.
 
         类型
 
@@ -68,7 +68,7 @@ class QuotaRespQuotasResources:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this QuotaRespQuotasResources.
+        r"""Sets the type of this QuotaRespQuotasResources.
 
         类型
 
@@ -79,7 +79,7 @@ class QuotaRespQuotasResources:
 
     @property
     def quota(self):
-        """Gets the quota of this QuotaRespQuotasResources.
+        r"""Gets the quota of this QuotaRespQuotasResources.
 
         配额
 
@@ -90,7 +90,7 @@ class QuotaRespQuotasResources:
 
     @quota.setter
     def quota(self, quota):
-        """Sets the quota of this QuotaRespQuotasResources.
+        r"""Sets the quota of this QuotaRespQuotasResources.
 
         配额
 
@@ -101,7 +101,7 @@ class QuotaRespQuotasResources:
 
     @property
     def used(self):
-        """Gets the used of this QuotaRespQuotasResources.
+        r"""Gets the used of this QuotaRespQuotasResources.
 
         已使用量
 
@@ -112,7 +112,7 @@ class QuotaRespQuotasResources:
 
     @used.setter
     def used(self, used):
-        """Sets the used of this QuotaRespQuotasResources.
+        r"""Sets the used of this QuotaRespQuotasResources.
 
         已使用量
 

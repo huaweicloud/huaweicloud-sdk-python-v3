@@ -37,7 +37,7 @@ class ConfigurationRisks:
     }
 
     def __init__(self, package=None, source_file=None, node_msg=None, field=None, operation=None, original_value=None, value=None):
-        """ConfigurationRisks
+        r"""ConfigurationRisks
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class ConfigurationRisks:
 
     @property
     def package(self):
-        """Gets the package of this ConfigurationRisks.
+        r"""Gets the package of this ConfigurationRisks.
 
         组件名称
 
@@ -96,7 +96,7 @@ class ConfigurationRisks:
 
     @package.setter
     def package(self, package):
-        """Sets the package of this ConfigurationRisks.
+        r"""Sets the package of this ConfigurationRisks.
 
         组件名称
 
@@ -107,7 +107,7 @@ class ConfigurationRisks:
 
     @property
     def source_file(self):
-        """Gets the source_file of this ConfigurationRisks.
+        r"""Gets the source_file of this ConfigurationRisks.
 
         涉及文件路径
 
@@ -118,7 +118,7 @@ class ConfigurationRisks:
 
     @source_file.setter
     def source_file(self, source_file):
-        """Sets the source_file of this ConfigurationRisks.
+        r"""Sets the source_file of this ConfigurationRisks.
 
         涉及文件路径
 
@@ -129,7 +129,7 @@ class ConfigurationRisks:
 
     @property
     def node_msg(self):
-        """Gets the node_msg of this ConfigurationRisks.
+        r"""Gets the node_msg of this ConfigurationRisks.
 
         节点信息
 
@@ -140,7 +140,7 @@ class ConfigurationRisks:
 
     @node_msg.setter
     def node_msg(self, node_msg):
-        """Sets the node_msg of this ConfigurationRisks.
+        r"""Sets the node_msg of this ConfigurationRisks.
 
         节点信息
 
@@ -151,7 +151,7 @@ class ConfigurationRisks:
 
     @property
     def field(self):
-        """Gets the field of this ConfigurationRisks.
+        r"""Gets the field of this ConfigurationRisks.
 
         参数值
 
@@ -162,7 +162,7 @@ class ConfigurationRisks:
 
     @field.setter
     def field(self, field):
-        """Sets the field of this ConfigurationRisks.
+        r"""Sets the field of this ConfigurationRisks.
 
         参数值
 
@@ -173,7 +173,7 @@ class ConfigurationRisks:
 
     @property
     def operation(self):
-        """Gets the operation of this ConfigurationRisks.
+        r"""Gets the operation of this ConfigurationRisks.
 
         修改操作类型
 
@@ -184,7 +184,7 @@ class ConfigurationRisks:
 
     @operation.setter
     def operation(self, operation):
-        """Sets the operation of this ConfigurationRisks.
+        r"""Sets the operation of this ConfigurationRisks.
 
         修改操作类型
 
@@ -195,7 +195,7 @@ class ConfigurationRisks:
 
     @property
     def original_value(self):
-        """Gets the original_value of this ConfigurationRisks.
+        r"""Gets the original_value of this ConfigurationRisks.
 
         原始值
 
@@ -206,7 +206,7 @@ class ConfigurationRisks:
 
     @original_value.setter
     def original_value(self, original_value):
-        """Sets the original_value of this ConfigurationRisks.
+        r"""Sets the original_value of this ConfigurationRisks.
 
         原始值
 
@@ -217,7 +217,7 @@ class ConfigurationRisks:
 
     @property
     def value(self):
-        """Gets the value of this ConfigurationRisks.
+        r"""Gets the value of this ConfigurationRisks.
 
         当前值
 
@@ -228,7 +228,7 @@ class ConfigurationRisks:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ConfigurationRisks.
+        r"""Sets the value of this ConfigurationRisks.
 
         当前值
 

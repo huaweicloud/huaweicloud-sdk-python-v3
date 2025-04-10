@@ -25,7 +25,7 @@ class DocumentTemplateVersion:
     }
 
     def __init__(self, document_template_version=None):
-        """DocumentTemplateVersion
+        r"""DocumentTemplateVersion
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DocumentTemplateVersion:
 
     @property
     def document_template_version(self):
-        """Gets the document_template_version of this DocumentTemplateVersion.
+        r"""Gets the document_template_version of this DocumentTemplateVersion.
 
         :return: The document_template_version of this DocumentTemplateVersion.
         :rtype: :class:`huaweicloudsdkcc.v3.DocumentTemplateVersionEnum`
@@ -51,7 +51,7 @@ class DocumentTemplateVersion:
 
     @document_template_version.setter
     def document_template_version(self, document_template_version):
-        """Sets the document_template_version of this DocumentTemplateVersion.
+        r"""Sets the document_template_version of this DocumentTemplateVersion.
 
         :param document_template_version: The document_template_version of this DocumentTemplateVersion.
         :type document_template_version: :class:`huaweicloudsdkcc.v3.DocumentTemplateVersionEnum`

@@ -28,7 +28,7 @@ class ListCaseTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, incident_template_list=None):
-        """ListCaseTemplatesResponse
+        r"""ListCaseTemplatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListCaseTemplatesResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListCaseTemplatesResponse.
+        r"""Gets the total_count of this ListCaseTemplatesResponse.
 
         总数
 
@@ -62,7 +62,7 @@ class ListCaseTemplatesResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListCaseTemplatesResponse.
+        r"""Sets the total_count of this ListCaseTemplatesResponse.
 
         总数
 
@@ -73,7 +73,7 @@ class ListCaseTemplatesResponse(SdkResponse):
 
     @property
     def incident_template_list(self):
-        """Gets the incident_template_list of this ListCaseTemplatesResponse.
+        r"""Gets the incident_template_list of this ListCaseTemplatesResponse.
 
         模板列表
 
@@ -84,7 +84,7 @@ class ListCaseTemplatesResponse(SdkResponse):
 
     @incident_template_list.setter
     def incident_template_list(self, incident_template_list):
-        """Sets the incident_template_list of this ListCaseTemplatesResponse.
+        r"""Sets the incident_template_list of this ListCaseTemplatesResponse.
 
         模板列表
 

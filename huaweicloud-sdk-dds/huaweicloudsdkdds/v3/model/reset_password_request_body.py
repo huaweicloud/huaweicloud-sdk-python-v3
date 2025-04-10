@@ -29,7 +29,7 @@ class ResetPasswordRequestBody:
     }
 
     def __init__(self, user_pwd=None, user_name=None, db_name=None):
-        """ResetPasswordRequestBody
+        r"""ResetPasswordRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ResetPasswordRequestBody:
 
     @property
     def user_pwd(self):
-        """Gets the user_pwd of this ResetPasswordRequestBody.
+        r"""Gets the user_pwd of this ResetPasswordRequestBody.
 
         数据库密码。取值范围：长度为8~32位，必须是大写字母（A~Z）、小写字母（a~z）、数字（0~9）、特殊字符~!@#%^*-_=+?的组合。建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
 
@@ -67,7 +67,7 @@ class ResetPasswordRequestBody:
 
     @user_pwd.setter
     def user_pwd(self, user_pwd):
-        """Sets the user_pwd of this ResetPasswordRequestBody.
+        r"""Sets the user_pwd of this ResetPasswordRequestBody.
 
         数据库密码。取值范围：长度为8~32位，必须是大写字母（A~Z）、小写字母（a~z）、数字（0~9）、特殊字符~!@#%^*-_=+?的组合。建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
 
@@ -78,7 +78,7 @@ class ResetPasswordRequestBody:
 
     @property
     def user_name(self):
-        """Gets the user_name of this ResetPasswordRequestBody.
+        r"""Gets the user_name of this ResetPasswordRequestBody.
 
         数据库用户名称，默认为“rwuser”。取值范围：长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、中划线、下划线和点。
 
@@ -89,7 +89,7 @@ class ResetPasswordRequestBody:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this ResetPasswordRequestBody.
+        r"""Sets the user_name of this ResetPasswordRequestBody.
 
         数据库用户名称，默认为“rwuser”。取值范围：长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、中划线、下划线和点。
 
@@ -100,7 +100,7 @@ class ResetPasswordRequestBody:
 
     @property
     def db_name(self):
-        """Gets the db_name of this ResetPasswordRequestBody.
+        r"""Gets the db_name of this ResetPasswordRequestBody.
 
         用户所在的数据库，默认为“admin”。取值范围：长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、下划线。
 
@@ -111,7 +111,7 @@ class ResetPasswordRequestBody:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this ResetPasswordRequestBody.
+        r"""Sets the db_name of this ResetPasswordRequestBody.
 
         用户所在的数据库，默认为“admin”。取值范围：长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、下划线。
 

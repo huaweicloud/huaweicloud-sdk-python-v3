@@ -29,7 +29,7 @@ class PostPaidServerSchedulerHints:
     }
 
     def __init__(self, group=None, dedicated_host_id=None, tenancy=None):
-        """PostPaidServerSchedulerHints
+        r"""PostPaidServerSchedulerHints
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class PostPaidServerSchedulerHints:
 
     @property
     def group(self):
-        """Gets the group of this PostPaidServerSchedulerHints.
+        r"""Gets the group of this PostPaidServerSchedulerHints.
 
         云服务器组ID，UUID格式。  云服务器组的ID可以从控制台或者参考[查询云服务器组列表](https://support.huaweicloud.com/api-ecs/ecs_03_1402.html)获取。
 
@@ -68,7 +68,7 @@ class PostPaidServerSchedulerHints:
 
     @group.setter
     def group(self, group):
-        """Sets the group of this PostPaidServerSchedulerHints.
+        r"""Sets the group of this PostPaidServerSchedulerHints.
 
         云服务器组ID，UUID格式。  云服务器组的ID可以从控制台或者参考[查询云服务器组列表](https://support.huaweicloud.com/api-ecs/ecs_03_1402.html)获取。
 
@@ -79,7 +79,7 @@ class PostPaidServerSchedulerHints:
 
     @property
     def dedicated_host_id(self):
-        """Gets the dedicated_host_id of this PostPaidServerSchedulerHints.
+        r"""Gets the dedicated_host_id of this PostPaidServerSchedulerHints.
 
         专属主机的ID。专属主机的ID仅在tenancy为dedicated时生效。
 
@@ -90,7 +90,7 @@ class PostPaidServerSchedulerHints:
 
     @dedicated_host_id.setter
     def dedicated_host_id(self, dedicated_host_id):
-        """Sets the dedicated_host_id of this PostPaidServerSchedulerHints.
+        r"""Sets the dedicated_host_id of this PostPaidServerSchedulerHints.
 
         专属主机的ID。专属主机的ID仅在tenancy为dedicated时生效。
 
@@ -101,7 +101,7 @@ class PostPaidServerSchedulerHints:
 
     @property
     def tenancy(self):
-        """Gets the tenancy of this PostPaidServerSchedulerHints.
+        r"""Gets the tenancy of this PostPaidServerSchedulerHints.
 
         在指定的专属主机或者共享主机上创建弹性云服务器云主机。参数值为shared或者dedicated。
 
@@ -112,7 +112,7 @@ class PostPaidServerSchedulerHints:
 
     @tenancy.setter
     def tenancy(self, tenancy):
-        """Sets the tenancy of this PostPaidServerSchedulerHints.
+        r"""Sets the tenancy of this PostPaidServerSchedulerHints.
 
         在指定的专属主机或者共享主机上创建弹性云服务器云主机。参数值为shared或者dedicated。
 

@@ -35,7 +35,7 @@ class SubCutomerInfoV2:
     }
 
     def __init__(self, mobile=None, email=None, customer_id=None, domain_id=None, customer_name=None, area_code=None):
-        """SubCutomerInfoV2
+        r"""SubCutomerInfoV2
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class SubCutomerInfoV2:
 
     @property
     def mobile(self):
-        """Gets the mobile of this SubCutomerInfoV2.
+        r"""Gets the mobile of this SubCutomerInfoV2.
 
         手机号（匿名化）
 
@@ -89,7 +89,7 @@ class SubCutomerInfoV2:
 
     @mobile.setter
     def mobile(self, mobile):
-        """Sets the mobile of this SubCutomerInfoV2.
+        r"""Sets the mobile of this SubCutomerInfoV2.
 
         手机号（匿名化）
 
@@ -100,7 +100,7 @@ class SubCutomerInfoV2:
 
     @property
     def email(self):
-        """Gets the email of this SubCutomerInfoV2.
+        r"""Gets the email of this SubCutomerInfoV2.
 
         邮箱（匿名化）
 
@@ -111,7 +111,7 @@ class SubCutomerInfoV2:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this SubCutomerInfoV2.
+        r"""Sets the email of this SubCutomerInfoV2.
 
         邮箱（匿名化）
 
@@ -122,7 +122,7 @@ class SubCutomerInfoV2:
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this SubCutomerInfoV2.
+        r"""Gets the customer_id of this SubCutomerInfoV2.
 
         客户id
 
@@ -133,7 +133,7 @@ class SubCutomerInfoV2:
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this SubCutomerInfoV2.
+        r"""Sets the customer_id of this SubCutomerInfoV2.
 
         客户id
 
@@ -144,7 +144,7 @@ class SubCutomerInfoV2:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this SubCutomerInfoV2.
+        r"""Gets the domain_id of this SubCutomerInfoV2.
 
         主账号id
 
@@ -155,7 +155,7 @@ class SubCutomerInfoV2:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this SubCutomerInfoV2.
+        r"""Sets the domain_id of this SubCutomerInfoV2.
 
         主账号id
 
@@ -166,7 +166,7 @@ class SubCutomerInfoV2:
 
     @property
     def customer_name(self):
-        """Gets the customer_name of this SubCutomerInfoV2.
+        r"""Gets the customer_name of this SubCutomerInfoV2.
 
         客户名称（匿名化）
 
@@ -177,7 +177,7 @@ class SubCutomerInfoV2:
 
     @customer_name.setter
     def customer_name(self, customer_name):
-        """Sets the customer_name of this SubCutomerInfoV2.
+        r"""Sets the customer_name of this SubCutomerInfoV2.
 
         客户名称（匿名化）
 
@@ -188,7 +188,7 @@ class SubCutomerInfoV2:
 
     @property
     def area_code(self):
-        """Gets the area_code of this SubCutomerInfoV2.
+        r"""Gets the area_code of this SubCutomerInfoV2.
 
         国家码
 
@@ -199,7 +199,7 @@ class SubCutomerInfoV2:
 
     @area_code.setter
     def area_code(self, area_code):
-        """Sets the area_code of this SubCutomerInfoV2.
+        r"""Sets the area_code of this SubCutomerInfoV2.
 
         国家码
 

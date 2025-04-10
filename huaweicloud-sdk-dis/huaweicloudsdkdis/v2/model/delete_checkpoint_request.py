@@ -31,7 +31,7 @@ class DeleteCheckpointRequest:
     }
 
     def __init__(self, stream_name=None, app_name=None, checkpoint_type=None, partition_id=None):
-        """DeleteCheckpointRequest
+        r"""DeleteCheckpointRequest
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class DeleteCheckpointRequest:
 
     @property
     def stream_name(self):
-        """Gets the stream_name of this DeleteCheckpointRequest.
+        r"""Gets the stream_name of this DeleteCheckpointRequest.
 
         该Checkpoint所属的通道名称。
 
@@ -72,7 +72,7 @@ class DeleteCheckpointRequest:
 
     @stream_name.setter
     def stream_name(self, stream_name):
-        """Sets the stream_name of this DeleteCheckpointRequest.
+        r"""Sets the stream_name of this DeleteCheckpointRequest.
 
         该Checkpoint所属的通道名称。
 
@@ -83,7 +83,7 @@ class DeleteCheckpointRequest:
 
     @property
     def app_name(self):
-        """Gets the app_name of this DeleteCheckpointRequest.
+        r"""Gets the app_name of this DeleteCheckpointRequest.
 
         该Checkpoint关联App名称。
 
@@ -94,7 +94,7 @@ class DeleteCheckpointRequest:
 
     @app_name.setter
     def app_name(self, app_name):
-        """Sets the app_name of this DeleteCheckpointRequest.
+        r"""Sets the app_name of this DeleteCheckpointRequest.
 
         该Checkpoint关联App名称。
 
@@ -105,7 +105,7 @@ class DeleteCheckpointRequest:
 
     @property
     def checkpoint_type(self):
-        """Gets the checkpoint_type of this DeleteCheckpointRequest.
+        r"""Gets the checkpoint_type of this DeleteCheckpointRequest.
 
         Checkpoint类型。  LAST_READ：在数据库中只记录序列号。
 
@@ -116,7 +116,7 @@ class DeleteCheckpointRequest:
 
     @checkpoint_type.setter
     def checkpoint_type(self, checkpoint_type):
-        """Sets the checkpoint_type of this DeleteCheckpointRequest.
+        r"""Sets the checkpoint_type of this DeleteCheckpointRequest.
 
         Checkpoint类型。  LAST_READ：在数据库中只记录序列号。
 
@@ -127,7 +127,7 @@ class DeleteCheckpointRequest:
 
     @property
     def partition_id(self):
-        """Gets the partition_id of this DeleteCheckpointRequest.
+        r"""Gets the partition_id of this DeleteCheckpointRequest.
 
         该Checkpoint所属的通道分区标识符。  可定义为如下两种样式：  - shardId-0000000000 - 0  比如一个通道有三个分区，那么分区标识符分别为0, 1, 2，或者shardId-0000000000, shardId-0000000001, shardId-0000000002
 
@@ -138,7 +138,7 @@ class DeleteCheckpointRequest:
 
     @partition_id.setter
     def partition_id(self, partition_id):
-        """Sets the partition_id of this DeleteCheckpointRequest.
+        r"""Sets the partition_id of this DeleteCheckpointRequest.
 
         该Checkpoint所属的通道分区标识符。  可定义为如下两种样式：  - shardId-0000000000 - 0  比如一个通道有三个分区，那么分区标识符分别为0, 1, 2，或者shardId-0000000000, shardId-0000000001, shardId-0000000002
 

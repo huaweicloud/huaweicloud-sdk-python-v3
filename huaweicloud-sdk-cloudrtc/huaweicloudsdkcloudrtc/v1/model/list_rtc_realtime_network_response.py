@@ -28,7 +28,7 @@ class ListRtcRealtimeNetworkResponse(SdkResponse):
     }
 
     def __init__(self, network=None, x_request_id=None):
-        """ListRtcRealtimeNetworkResponse
+        r"""ListRtcRealtimeNetworkResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListRtcRealtimeNetworkResponse(SdkResponse):
 
     @property
     def network(self):
-        """Gets the network of this ListRtcRealtimeNetworkResponse.
+        r"""Gets the network of this ListRtcRealtimeNetworkResponse.
 
         时间戳及相应时间的指标数值列表
 
@@ -62,7 +62,7 @@ class ListRtcRealtimeNetworkResponse(SdkResponse):
 
     @network.setter
     def network(self, network):
-        """Sets the network of this ListRtcRealtimeNetworkResponse.
+        r"""Sets the network of this ListRtcRealtimeNetworkResponse.
 
         时间戳及相应时间的指标数值列表
 
@@ -73,7 +73,7 @@ class ListRtcRealtimeNetworkResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListRtcRealtimeNetworkResponse.
+        r"""Gets the x_request_id of this ListRtcRealtimeNetworkResponse.
 
         :return: The x_request_id of this ListRtcRealtimeNetworkResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class ListRtcRealtimeNetworkResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListRtcRealtimeNetworkResponse.
+        r"""Sets the x_request_id of this ListRtcRealtimeNetworkResponse.
 
         :param x_request_id: The x_request_id of this ListRtcRealtimeNetworkResponse.
         :type x_request_id: str

@@ -27,7 +27,7 @@ class RedisResetDbUserPasswordRequestBody:
     }
 
     def __init__(self, name=None, password=None):
-        """RedisResetDbUserPasswordRequestBody
+        r"""RedisResetDbUserPasswordRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class RedisResetDbUserPasswordRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this RedisResetDbUserPasswordRequestBody.
+        r"""Gets the name of this RedisResetDbUserPasswordRequestBody.
 
         账号名称。  小于36个字符，以字母开头，仅包含数字、字母、中划线、下划线。
 
@@ -59,7 +59,7 @@ class RedisResetDbUserPasswordRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this RedisResetDbUserPasswordRequestBody.
+        r"""Sets the name of this RedisResetDbUserPasswordRequestBody.
 
         账号名称。  小于36个字符，以字母开头，仅包含数字、字母、中划线、下划线。
 
@@ -70,7 +70,7 @@ class RedisResetDbUserPasswordRequestBody:
 
     @property
     def password(self):
-        """Gets the password of this RedisResetDbUserPasswordRequestBody.
+        r"""Gets the password of this RedisResetDbUserPasswordRequestBody.
 
         需重置的密码。  - 密码长度为8~32位。  - 密码需包含大写字母、小写字母、数字和特殊字符中的至少三种，支持的特殊字符为!@#$%^&*()_+-= 。
 
@@ -81,7 +81,7 @@ class RedisResetDbUserPasswordRequestBody:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this RedisResetDbUserPasswordRequestBody.
+        r"""Sets the password of this RedisResetDbUserPasswordRequestBody.
 
         需重置的密码。  - 密码长度为8~32位。  - 密码需包含大写字母、小写字母、数字和特殊字符中的至少三种，支持的特殊字符为!@#$%^&*()_+-= 。
 

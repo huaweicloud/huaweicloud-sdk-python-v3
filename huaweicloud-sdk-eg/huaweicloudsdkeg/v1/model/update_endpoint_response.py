@@ -50,7 +50,7 @@ class UpdateEndpointResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, vpc_id=None, subnet_id=None, domain=None, description=None, status=None, error_info=None, type=None, scalable=None, created_time=None, updated_time=None, endpoints=None):
-        """UpdateEndpointResponse
+        r"""UpdateEndpointResponse
 
         The model defined in huaweicloud sdk
 
@@ -128,7 +128,7 @@ class UpdateEndpointResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this UpdateEndpointResponse.
+        r"""Gets the id of this UpdateEndpointResponse.
 
         访问端点ID
 
@@ -139,7 +139,7 @@ class UpdateEndpointResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateEndpointResponse.
+        r"""Sets the id of this UpdateEndpointResponse.
 
         访问端点ID
 
@@ -150,7 +150,7 @@ class UpdateEndpointResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this UpdateEndpointResponse.
+        r"""Gets the name of this UpdateEndpointResponse.
 
         用户指定的访问端点名称
 
@@ -161,7 +161,7 @@ class UpdateEndpointResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateEndpointResponse.
+        r"""Sets the name of this UpdateEndpointResponse.
 
         用户指定的访问端点名称
 
@@ -172,7 +172,7 @@ class UpdateEndpointResponse(SdkResponse):
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this UpdateEndpointResponse.
+        r"""Gets the vpc_id of this UpdateEndpointResponse.
 
         访问端点所在的VPC的ID
 
@@ -183,7 +183,7 @@ class UpdateEndpointResponse(SdkResponse):
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this UpdateEndpointResponse.
+        r"""Sets the vpc_id of this UpdateEndpointResponse.
 
         访问端点所在的VPC的ID
 
@@ -194,7 +194,7 @@ class UpdateEndpointResponse(SdkResponse):
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this UpdateEndpointResponse.
+        r"""Gets the subnet_id of this UpdateEndpointResponse.
 
         访问端点所在的子网的ID
 
@@ -205,7 +205,7 @@ class UpdateEndpointResponse(SdkResponse):
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this UpdateEndpointResponse.
+        r"""Sets the subnet_id of this UpdateEndpointResponse.
 
         访问端点所在的子网的ID
 
@@ -216,7 +216,7 @@ class UpdateEndpointResponse(SdkResponse):
 
     @property
     def domain(self):
-        """Gets the domain of this UpdateEndpointResponse.
+        r"""Gets the domain of this UpdateEndpointResponse.
 
         访问域名
 
@@ -227,7 +227,7 @@ class UpdateEndpointResponse(SdkResponse):
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this UpdateEndpointResponse.
+        r"""Sets the domain of this UpdateEndpointResponse.
 
         访问域名
 
@@ -238,7 +238,7 @@ class UpdateEndpointResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this UpdateEndpointResponse.
+        r"""Gets the description of this UpdateEndpointResponse.
 
         描述
 
@@ -249,7 +249,7 @@ class UpdateEndpointResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateEndpointResponse.
+        r"""Sets the description of this UpdateEndpointResponse.
 
         描述
 
@@ -260,7 +260,7 @@ class UpdateEndpointResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this UpdateEndpointResponse.
+        r"""Gets the status of this UpdateEndpointResponse.
 
         访问端点状态
 
@@ -271,7 +271,7 @@ class UpdateEndpointResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateEndpointResponse.
+        r"""Sets the status of this UpdateEndpointResponse.
 
         访问端点状态
 
@@ -282,7 +282,7 @@ class UpdateEndpointResponse(SdkResponse):
 
     @property
     def error_info(self):
-        """Gets the error_info of this UpdateEndpointResponse.
+        r"""Gets the error_info of this UpdateEndpointResponse.
 
         :return: The error_info of this UpdateEndpointResponse.
         :rtype: :class:`huaweicloudsdkeg.v1.ErrorInfo`
@@ -291,7 +291,7 @@ class UpdateEndpointResponse(SdkResponse):
 
     @error_info.setter
     def error_info(self, error_info):
-        """Sets the error_info of this UpdateEndpointResponse.
+        r"""Sets the error_info of this UpdateEndpointResponse.
 
         :param error_info: The error_info of this UpdateEndpointResponse.
         :type error_info: :class:`huaweicloudsdkeg.v1.ErrorInfo`
@@ -300,7 +300,7 @@ class UpdateEndpointResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this UpdateEndpointResponse.
+        r"""Gets the type of this UpdateEndpointResponse.
 
         访问端点类型
 
@@ -311,7 +311,7 @@ class UpdateEndpointResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this UpdateEndpointResponse.
+        r"""Sets the type of this UpdateEndpointResponse.
 
         访问端点类型
 
@@ -322,7 +322,7 @@ class UpdateEndpointResponse(SdkResponse):
 
     @property
     def scalable(self):
-        """Gets the scalable of this UpdateEndpointResponse.
+        r"""Gets the scalable of this UpdateEndpointResponse.
 
         是否可更新
 
@@ -333,7 +333,7 @@ class UpdateEndpointResponse(SdkResponse):
 
     @scalable.setter
     def scalable(self, scalable):
-        """Sets the scalable of this UpdateEndpointResponse.
+        r"""Sets the scalable of this UpdateEndpointResponse.
 
         是否可更新
 
@@ -344,7 +344,7 @@ class UpdateEndpointResponse(SdkResponse):
 
     @property
     def created_time(self):
-        """Gets the created_time of this UpdateEndpointResponse.
+        r"""Gets the created_time of this UpdateEndpointResponse.
 
         创建UTC时间
 
@@ -355,7 +355,7 @@ class UpdateEndpointResponse(SdkResponse):
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this UpdateEndpointResponse.
+        r"""Sets the created_time of this UpdateEndpointResponse.
 
         创建UTC时间
 
@@ -366,7 +366,7 @@ class UpdateEndpointResponse(SdkResponse):
 
     @property
     def updated_time(self):
-        """Gets the updated_time of this UpdateEndpointResponse.
+        r"""Gets the updated_time of this UpdateEndpointResponse.
 
         更新UTC时间
 
@@ -377,7 +377,7 @@ class UpdateEndpointResponse(SdkResponse):
 
     @updated_time.setter
     def updated_time(self, updated_time):
-        """Sets the updated_time of this UpdateEndpointResponse.
+        r"""Sets the updated_time of this UpdateEndpointResponse.
 
         更新UTC时间
 
@@ -388,7 +388,7 @@ class UpdateEndpointResponse(SdkResponse):
 
     @property
     def endpoints(self):
-        """Gets the endpoints of this UpdateEndpointResponse.
+        r"""Gets the endpoints of this UpdateEndpointResponse.
 
         访问端点终端节点列表
 
@@ -399,7 +399,7 @@ class UpdateEndpointResponse(SdkResponse):
 
     @endpoints.setter
     def endpoints(self, endpoints):
-        """Sets the endpoints of this UpdateEndpointResponse.
+        r"""Sets the endpoints of this UpdateEndpointResponse.
 
         访问端点终端节点列表
 

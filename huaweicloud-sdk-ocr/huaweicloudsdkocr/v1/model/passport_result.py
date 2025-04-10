@@ -53,7 +53,7 @@ class PassportResult:
     }
 
     def __init__(self, passport_type=None, country_code=None, passport_number=None, nationality=None, surname=None, given_name=None, sex=None, date_of_birth=None, date_of_expiry=None, date_of_issue=None, place_of_birth=None, place_of_issue=None, issuing_authority=None, confidence=None, extra_info=None):
-        """PassportResult
+        r"""PassportResult
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class PassportResult:
 
     @property
     def passport_type(self):
-        """Gets the passport_type of this PassportResult.
+        r"""Gets the passport_type of this PassportResult.
 
         护照类型（P:普通因私护照、W:外交护照、G:公务护照）（英文）。 
 
@@ -152,7 +152,7 @@ class PassportResult:
 
     @passport_type.setter
     def passport_type(self, passport_type):
-        """Sets the passport_type of this PassportResult.
+        r"""Sets the passport_type of this PassportResult.
 
         护照类型（P:普通因私护照、W:外交护照、G:公务护照）（英文）。 
 
@@ -163,7 +163,7 @@ class PassportResult:
 
     @property
     def country_code(self):
-        """Gets the country_code of this PassportResult.
+        r"""Gets the country_code of this PassportResult.
 
         护照签发国的国家码（英文）。 
 
@@ -174,7 +174,7 @@ class PassportResult:
 
     @country_code.setter
     def country_code(self, country_code):
-        """Sets the country_code of this PassportResult.
+        r"""Sets the country_code of this PassportResult.
 
         护照签发国的国家码（英文）。 
 
@@ -185,7 +185,7 @@ class PassportResult:
 
     @property
     def passport_number(self):
-        """Gets the passport_number of this PassportResult.
+        r"""Gets the passport_number of this PassportResult.
 
         护照号码（英文）。 
 
@@ -196,7 +196,7 @@ class PassportResult:
 
     @passport_number.setter
     def passport_number(self, passport_number):
-        """Sets the passport_number of this PassportResult.
+        r"""Sets the passport_number of this PassportResult.
 
         护照号码（英文）。 
 
@@ -207,7 +207,7 @@ class PassportResult:
 
     @property
     def nationality(self):
-        """Gets the nationality of this PassportResult.
+        r"""Gets the nationality of this PassportResult.
 
         护照持有人国籍（英文）。 
 
@@ -218,7 +218,7 @@ class PassportResult:
 
     @nationality.setter
     def nationality(self, nationality):
-        """Sets the nationality of this PassportResult.
+        r"""Sets the nationality of this PassportResult.
 
         护照持有人国籍（英文）。 
 
@@ -229,7 +229,7 @@ class PassportResult:
 
     @property
     def surname(self):
-        """Gets the surname of this PassportResult.
+        r"""Gets the surname of this PassportResult.
 
         姓（英文）。 
 
@@ -240,7 +240,7 @@ class PassportResult:
 
     @surname.setter
     def surname(self, surname):
-        """Sets the surname of this PassportResult.
+        r"""Sets the surname of this PassportResult.
 
         姓（英文）。 
 
@@ -251,7 +251,7 @@ class PassportResult:
 
     @property
     def given_name(self):
-        """Gets the given_name of this PassportResult.
+        r"""Gets the given_name of this PassportResult.
 
         名字（英文）。 
 
@@ -262,7 +262,7 @@ class PassportResult:
 
     @given_name.setter
     def given_name(self, given_name):
-        """Sets the given_name of this PassportResult.
+        r"""Sets the given_name of this PassportResult.
 
         名字（英文）。 
 
@@ -273,7 +273,7 @@ class PassportResult:
 
     @property
     def sex(self):
-        """Gets the sex of this PassportResult.
+        r"""Gets the sex of this PassportResult.
 
         性别（英文）。 
 
@@ -284,7 +284,7 @@ class PassportResult:
 
     @sex.setter
     def sex(self, sex):
-        """Sets the sex of this PassportResult.
+        r"""Sets the sex of this PassportResult.
 
         性别（英文）。 
 
@@ -295,7 +295,7 @@ class PassportResult:
 
     @property
     def date_of_birth(self):
-        """Gets the date_of_birth of this PassportResult.
+        r"""Gets the date_of_birth of this PassportResult.
 
         出生日期（英文）。 
 
@@ -306,7 +306,7 @@ class PassportResult:
 
     @date_of_birth.setter
     def date_of_birth(self, date_of_birth):
-        """Sets the date_of_birth of this PassportResult.
+        r"""Sets the date_of_birth of this PassportResult.
 
         出生日期（英文）。 
 
@@ -317,7 +317,7 @@ class PassportResult:
 
     @property
     def date_of_expiry(self):
-        """Gets the date_of_expiry of this PassportResult.
+        r"""Gets the date_of_expiry of this PassportResult.
 
         护照有效期（英文）。 
 
@@ -328,7 +328,7 @@ class PassportResult:
 
     @date_of_expiry.setter
     def date_of_expiry(self, date_of_expiry):
-        """Sets the date_of_expiry of this PassportResult.
+        r"""Sets the date_of_expiry of this PassportResult.
 
         护照有效期（英文）。 
 
@@ -339,7 +339,7 @@ class PassportResult:
 
     @property
     def date_of_issue(self):
-        """Gets the date_of_issue of this PassportResult.
+        r"""Gets the date_of_issue of this PassportResult.
 
         护照签发日期（英文）。只有中国护照才返回此字段。 
 
@@ -350,7 +350,7 @@ class PassportResult:
 
     @date_of_issue.setter
     def date_of_issue(self, date_of_issue):
-        """Sets the date_of_issue of this PassportResult.
+        r"""Sets the date_of_issue of this PassportResult.
 
         护照签发日期（英文）。只有中国护照才返回此字段。 
 
@@ -361,7 +361,7 @@ class PassportResult:
 
     @property
     def place_of_birth(self):
-        """Gets the place_of_birth of this PassportResult.
+        r"""Gets the place_of_birth of this PassportResult.
 
         出生地（英文）。 
 
@@ -372,7 +372,7 @@ class PassportResult:
 
     @place_of_birth.setter
     def place_of_birth(self, place_of_birth):
-        """Sets the place_of_birth of this PassportResult.
+        r"""Sets the place_of_birth of this PassportResult.
 
         出生地（英文）。 
 
@@ -383,7 +383,7 @@ class PassportResult:
 
     @property
     def place_of_issue(self):
-        """Gets the place_of_issue of this PassportResult.
+        r"""Gets the place_of_issue of this PassportResult.
 
         签发地（英文）。 
 
@@ -394,7 +394,7 @@ class PassportResult:
 
     @place_of_issue.setter
     def place_of_issue(self, place_of_issue):
-        """Sets the place_of_issue of this PassportResult.
+        r"""Sets the place_of_issue of this PassportResult.
 
         签发地（英文）。 
 
@@ -405,7 +405,7 @@ class PassportResult:
 
     @property
     def issuing_authority(self):
-        """Gets the issuing_authority of this PassportResult.
+        r"""Gets the issuing_authority of this PassportResult.
 
         签发机构（英文），其中对中国的英文简写统一输出为P.R.China。 
 
@@ -416,7 +416,7 @@ class PassportResult:
 
     @issuing_authority.setter
     def issuing_authority(self, issuing_authority):
-        """Sets the issuing_authority of this PassportResult.
+        r"""Sets the issuing_authority of this PassportResult.
 
         签发机构（英文），其中对中国的英文简写统一输出为P.R.China。 
 
@@ -427,7 +427,7 @@ class PassportResult:
 
     @property
     def confidence(self):
-        """Gets the confidence of this PassportResult.
+        r"""Gets the confidence of this PassportResult.
 
         相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。 
 
@@ -438,7 +438,7 @@ class PassportResult:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this PassportResult.
+        r"""Sets the confidence of this PassportResult.
 
         相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。 
 
@@ -449,7 +449,7 @@ class PassportResult:
 
     @property
     def extra_info(self):
-        """Gets the extra_info of this PassportResult.
+        r"""Gets the extra_info of this PassportResult.
 
         默认为空。对于部分常见国家的护照OCR服务，extra_info内会包含护照上由本地官方语言描述的字段信息及其他信息。 如中国护照，里面会包含汉字表达的姓名、出生地等信息。 
 
@@ -460,7 +460,7 @@ class PassportResult:
 
     @extra_info.setter
     def extra_info(self, extra_info):
-        """Sets the extra_info of this PassportResult.
+        r"""Sets the extra_info of this PassportResult.
 
         默认为空。对于部分常见国家的护照OCR服务，extra_info内会包含护照上由本地官方语言描述的字段信息及其他信息。 如中国护照，里面会包含汉字表达的姓名、出生地等信息。 
 

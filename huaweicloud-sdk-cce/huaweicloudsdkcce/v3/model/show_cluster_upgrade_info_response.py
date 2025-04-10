@@ -34,7 +34,7 @@ class ShowClusterUpgradeInfoResponse(SdkResponse):
     }
 
     def __init__(self, kind=None, api_version=None, metadata=None, spec=None, status=None):
-        """ShowClusterUpgradeInfoResponse
+        r"""ShowClusterUpgradeInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowClusterUpgradeInfoResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this ShowClusterUpgradeInfoResponse.
+        r"""Gets the kind of this ShowClusterUpgradeInfoResponse.
 
         类型
 
@@ -83,7 +83,7 @@ class ShowClusterUpgradeInfoResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ShowClusterUpgradeInfoResponse.
+        r"""Sets the kind of this ShowClusterUpgradeInfoResponse.
 
         类型
 
@@ -94,7 +94,7 @@ class ShowClusterUpgradeInfoResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this ShowClusterUpgradeInfoResponse.
+        r"""Gets the api_version of this ShowClusterUpgradeInfoResponse.
 
         API版本
 
@@ -105,7 +105,7 @@ class ShowClusterUpgradeInfoResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this ShowClusterUpgradeInfoResponse.
+        r"""Sets the api_version of this ShowClusterUpgradeInfoResponse.
 
         API版本
 
@@ -116,7 +116,7 @@ class ShowClusterUpgradeInfoResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this ShowClusterUpgradeInfoResponse.
+        r"""Gets the metadata of this ShowClusterUpgradeInfoResponse.
 
         :return: The metadata of this ShowClusterUpgradeInfoResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.Metadata`
@@ -125,7 +125,7 @@ class ShowClusterUpgradeInfoResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this ShowClusterUpgradeInfoResponse.
+        r"""Sets the metadata of this ShowClusterUpgradeInfoResponse.
 
         :param metadata: The metadata of this ShowClusterUpgradeInfoResponse.
         :type metadata: :class:`huaweicloudsdkcce.v3.Metadata`
@@ -134,7 +134,7 @@ class ShowClusterUpgradeInfoResponse(SdkResponse):
 
     @property
     def spec(self):
-        """Gets the spec of this ShowClusterUpgradeInfoResponse.
+        r"""Gets the spec of this ShowClusterUpgradeInfoResponse.
 
         :return: The spec of this ShowClusterUpgradeInfoResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.UpgradeInfoSpec`
@@ -143,7 +143,7 @@ class ShowClusterUpgradeInfoResponse(SdkResponse):
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this ShowClusterUpgradeInfoResponse.
+        r"""Sets the spec of this ShowClusterUpgradeInfoResponse.
 
         :param spec: The spec of this ShowClusterUpgradeInfoResponse.
         :type spec: :class:`huaweicloudsdkcce.v3.UpgradeInfoSpec`
@@ -152,7 +152,7 @@ class ShowClusterUpgradeInfoResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowClusterUpgradeInfoResponse.
+        r"""Gets the status of this ShowClusterUpgradeInfoResponse.
 
         :return: The status of this ShowClusterUpgradeInfoResponse.
         :rtype: :class:`huaweicloudsdkcce.v3.UpgradeInfoStatus`
@@ -161,7 +161,7 @@ class ShowClusterUpgradeInfoResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowClusterUpgradeInfoResponse.
+        r"""Sets the status of this ShowClusterUpgradeInfoResponse.
 
         :param status: The status of this ShowClusterUpgradeInfoResponse.
         :type status: :class:`huaweicloudsdkcce.v3.UpgradeInfoStatus`

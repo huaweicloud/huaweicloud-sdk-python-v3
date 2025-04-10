@@ -23,7 +23,7 @@ class TrustPolicyDocument:
     }
 
     def __init__(self):
-        """TrustPolicyDocument
+        r"""TrustPolicyDocument
 
         The model defined in huaweicloud sdk
 

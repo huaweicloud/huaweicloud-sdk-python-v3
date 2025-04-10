@@ -29,7 +29,7 @@ class BaseResponse:
     }
 
     def __init__(self, error_code=None, error_msg=None, encoded_authorization_message=None):
-        """BaseResponse
+        r"""BaseResponse
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class BaseResponse:
 
     @property
     def error_code(self):
-        """Gets the error_code of this BaseResponse.
+        r"""Gets the error_code of this BaseResponse.
 
         错误码。
 
@@ -68,7 +68,7 @@ class BaseResponse:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this BaseResponse.
+        r"""Sets the error_code of this BaseResponse.
 
         错误码。
 
@@ -79,7 +79,7 @@ class BaseResponse:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this BaseResponse.
+        r"""Gets the error_msg of this BaseResponse.
 
         错误描述。
 
@@ -90,7 +90,7 @@ class BaseResponse:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this BaseResponse.
+        r"""Sets the error_msg of this BaseResponse.
 
         错误描述。
 
@@ -101,7 +101,7 @@ class BaseResponse:
 
     @property
     def encoded_authorization_message(self):
-        """Gets the encoded_authorization_message of this BaseResponse.
+        r"""Gets the encoded_authorization_message of this BaseResponse.
 
         加密后的详细拒绝原因，用户可以自行调用STS服务的decode-authorization-message接口进行解密。
 
@@ -112,7 +112,7 @@ class BaseResponse:
 
     @encoded_authorization_message.setter
     def encoded_authorization_message(self, encoded_authorization_message):
-        """Sets the encoded_authorization_message of this BaseResponse.
+        r"""Sets the encoded_authorization_message of this BaseResponse.
 
         加密后的详细拒绝原因，用户可以自行调用STS服务的decode-authorization-message接口进行解密。
 

@@ -27,7 +27,7 @@ class BatchCreateListenerTagsRequestBody:
     }
 
     def __init__(self, action=None, tags=None):
-        """BatchCreateListenerTagsRequestBody
+        r"""BatchCreateListenerTagsRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchCreateListenerTagsRequestBody:
 
     @property
     def action(self):
-        """Gets the action of this BatchCreateListenerTagsRequestBody.
+        r"""Gets the action of this BatchCreateListenerTagsRequestBody.
 
         操作类型。 取值范围：create - 创建标签。
 
@@ -59,7 +59,7 @@ class BatchCreateListenerTagsRequestBody:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this BatchCreateListenerTagsRequestBody.
+        r"""Sets the action of this BatchCreateListenerTagsRequestBody.
 
         操作类型。 取值范围：create - 创建标签。
 
@@ -70,7 +70,7 @@ class BatchCreateListenerTagsRequestBody:
 
     @property
     def tags(self):
-        """Gets the tags of this BatchCreateListenerTagsRequestBody.
+        r"""Gets the tags of this BatchCreateListenerTagsRequestBody.
 
         标签对象列表。
 
@@ -81,7 +81,7 @@ class BatchCreateListenerTagsRequestBody:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this BatchCreateListenerTagsRequestBody.
+        r"""Sets the tags of this BatchCreateListenerTagsRequestBody.
 
         标签对象列表。
 

@@ -24,7 +24,7 @@ class LogoffWebCliResponse(SdkResponse):
     }
 
     def __init__(self):
-        """LogoffWebCliResponse
+        r"""LogoffWebCliResponse
 
         The model defined in huaweicloud sdk
 

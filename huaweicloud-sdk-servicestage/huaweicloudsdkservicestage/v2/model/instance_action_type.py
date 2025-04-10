@@ -30,7 +30,7 @@ class InstanceActionType:
     }
 
     def __init__(self):
-        """InstanceActionType
+        r"""InstanceActionType
 
         The model defined in huaweicloud sdk
 

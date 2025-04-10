@@ -25,7 +25,7 @@ class KeystoneDeleteIdentityProviderRequest:
     }
 
     def __init__(self, id=None):
-        """KeystoneDeleteIdentityProviderRequest
+        r"""KeystoneDeleteIdentityProviderRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class KeystoneDeleteIdentityProviderRequest:
 
     @property
     def id(self):
-        """Gets the id of this KeystoneDeleteIdentityProviderRequest.
+        r"""Gets the id of this KeystoneDeleteIdentityProviderRequest.
 
         待删除的身份提供商ID。
 
@@ -53,7 +53,7 @@ class KeystoneDeleteIdentityProviderRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this KeystoneDeleteIdentityProviderRequest.
+        r"""Sets the id of this KeystoneDeleteIdentityProviderRequest.
 
         待删除的身份提供商ID。
 

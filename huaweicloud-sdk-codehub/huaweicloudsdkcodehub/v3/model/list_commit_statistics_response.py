@@ -30,7 +30,7 @@ class ListCommitStatisticsResponse(SdkResponse):
     }
 
     def __init__(self, error=None, result=None, status=None):
-        """ListCommitStatisticsResponse
+        r"""ListCommitStatisticsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListCommitStatisticsResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ListCommitStatisticsResponse.
+        r"""Gets the error of this ListCommitStatisticsResponse.
 
         :return: The error of this ListCommitStatisticsResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -67,7 +67,7 @@ class ListCommitStatisticsResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ListCommitStatisticsResponse.
+        r"""Sets the error of this ListCommitStatisticsResponse.
 
         :param error: The error of this ListCommitStatisticsResponse.
         :type error: :class:`huaweicloudsdkcodehub.v3.Error`
@@ -76,7 +76,7 @@ class ListCommitStatisticsResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ListCommitStatisticsResponse.
+        r"""Gets the result of this ListCommitStatisticsResponse.
 
         :return: The result of this ListCommitStatisticsResponse.
         :rtype: :class:`huaweicloudsdkcodehub.v3.RepoCommitStatistics`
@@ -85,7 +85,7 @@ class ListCommitStatisticsResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ListCommitStatisticsResponse.
+        r"""Sets the result of this ListCommitStatisticsResponse.
 
         :param result: The result of this ListCommitStatisticsResponse.
         :type result: :class:`huaweicloudsdkcodehub.v3.RepoCommitStatistics`
@@ -94,7 +94,7 @@ class ListCommitStatisticsResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ListCommitStatisticsResponse.
+        r"""Gets the status of this ListCommitStatisticsResponse.
 
         响应状态
 
@@ -105,7 +105,7 @@ class ListCommitStatisticsResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListCommitStatisticsResponse.
+        r"""Sets the status of this ListCommitStatisticsResponse.
 
         响应状态
 

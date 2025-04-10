@@ -27,7 +27,7 @@ class KeystoneUpdateUserPasswordRequest:
     }
 
     def __init__(self, user_id=None, body=None):
-        """KeystoneUpdateUserPasswordRequest
+        r"""KeystoneUpdateUserPasswordRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class KeystoneUpdateUserPasswordRequest:
 
     @property
     def user_id(self):
-        """Gets the user_id of this KeystoneUpdateUserPasswordRequest.
+        r"""Gets the user_id of this KeystoneUpdateUserPasswordRequest.
 
         待修改密码的IAM用户ID，获取方式请参见：[获取用户ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -60,7 +60,7 @@ class KeystoneUpdateUserPasswordRequest:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this KeystoneUpdateUserPasswordRequest.
+        r"""Sets the user_id of this KeystoneUpdateUserPasswordRequest.
 
         待修改密码的IAM用户ID，获取方式请参见：[获取用户ID](https://support.huaweicloud.com/api-iam/iam_17_0002.html)。
 
@@ -71,7 +71,7 @@ class KeystoneUpdateUserPasswordRequest:
 
     @property
     def body(self):
-        """Gets the body of this KeystoneUpdateUserPasswordRequest.
+        r"""Gets the body of this KeystoneUpdateUserPasswordRequest.
 
         :return: The body of this KeystoneUpdateUserPasswordRequest.
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneUpdateUserPasswordRequestBody`
@@ -80,7 +80,7 @@ class KeystoneUpdateUserPasswordRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this KeystoneUpdateUserPasswordRequest.
+        r"""Sets the body of this KeystoneUpdateUserPasswordRequest.
 
         :param body: The body of this KeystoneUpdateUserPasswordRequest.
         :type body: :class:`huaweicloudsdkiam.v3.KeystoneUpdateUserPasswordRequestBody`

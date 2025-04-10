@@ -31,7 +31,7 @@ class UpdateSubscriptionSourceRequest:
     }
 
     def __init__(self, subscription_id=None, source_id=None, enterprise_project_id=None, body=None):
-        """UpdateSubscriptionSourceRequest
+        r"""UpdateSubscriptionSourceRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class UpdateSubscriptionSourceRequest:
 
     @property
     def subscription_id(self):
-        """Gets the subscription_id of this UpdateSubscriptionSourceRequest.
+        r"""Gets the subscription_id of this UpdateSubscriptionSourceRequest.
 
         事件订阅ID
 
@@ -73,7 +73,7 @@ class UpdateSubscriptionSourceRequest:
 
     @subscription_id.setter
     def subscription_id(self, subscription_id):
-        """Sets the subscription_id of this UpdateSubscriptionSourceRequest.
+        r"""Sets the subscription_id of this UpdateSubscriptionSourceRequest.
 
         事件订阅ID
 
@@ -84,7 +84,7 @@ class UpdateSubscriptionSourceRequest:
 
     @property
     def source_id(self):
-        """Gets the source_id of this UpdateSubscriptionSourceRequest.
+        r"""Gets the source_id of this UpdateSubscriptionSourceRequest.
 
         事件订阅源ID
 
@@ -95,7 +95,7 @@ class UpdateSubscriptionSourceRequest:
 
     @source_id.setter
     def source_id(self, source_id):
-        """Sets the source_id of this UpdateSubscriptionSourceRequest.
+        r"""Sets the source_id of this UpdateSubscriptionSourceRequest.
 
         事件订阅源ID
 
@@ -106,7 +106,7 @@ class UpdateSubscriptionSourceRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this UpdateSubscriptionSourceRequest.
+        r"""Gets the enterprise_project_id of this UpdateSubscriptionSourceRequest.
 
         创建订阅时所使用的企业项目id
 
@@ -117,7 +117,7 @@ class UpdateSubscriptionSourceRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this UpdateSubscriptionSourceRequest.
+        r"""Sets the enterprise_project_id of this UpdateSubscriptionSourceRequest.
 
         创建订阅时所使用的企业项目id
 
@@ -128,7 +128,7 @@ class UpdateSubscriptionSourceRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSubscriptionSourceRequest.
+        r"""Gets the body of this UpdateSubscriptionSourceRequest.
 
         :return: The body of this UpdateSubscriptionSourceRequest.
         :rtype: :class:`huaweicloudsdkeg.v1.SubscriptionSource`
@@ -137,7 +137,7 @@ class UpdateSubscriptionSourceRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSubscriptionSourceRequest.
+        r"""Sets the body of this UpdateSubscriptionSourceRequest.
 
         :param body: The body of this UpdateSubscriptionSourceRequest.
         :type body: :class:`huaweicloudsdkeg.v1.SubscriptionSource`

@@ -49,7 +49,7 @@ class LakeFormationPolicy:
     }
 
     def __init__(self, project_id=None, instance_id=None, principal_type=None, principal_source=None, principal_name=None, resource=None, resource_name=None, permissions=None, grant_able_permissions=None, created_time=None, condition=None, obligation=None, authorization_paths=None):
-        """LakeFormationPolicy
+        r"""LakeFormationPolicy
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class LakeFormationPolicy:
 
     @property
     def project_id(self):
-        """Gets the project_id of this LakeFormationPolicy.
+        r"""Gets the project_id of this LakeFormationPolicy.
 
         项目id
 
@@ -131,7 +131,7 @@ class LakeFormationPolicy:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this LakeFormationPolicy.
+        r"""Sets the project_id of this LakeFormationPolicy.
 
         项目id
 
@@ -142,7 +142,7 @@ class LakeFormationPolicy:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this LakeFormationPolicy.
+        r"""Gets the instance_id of this LakeFormationPolicy.
 
         实例id
 
@@ -153,7 +153,7 @@ class LakeFormationPolicy:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this LakeFormationPolicy.
+        r"""Sets the instance_id of this LakeFormationPolicy.
 
         实例id
 
@@ -164,7 +164,7 @@ class LakeFormationPolicy:
 
     @property
     def principal_type(self):
-        """Gets the principal_type of this LakeFormationPolicy.
+        r"""Gets the principal_type of this LakeFormationPolicy.
 
         主体类型，USER-用户,GROUP-组,ROLE-角色,SHARE-共享,OTHER-其它
 
@@ -175,7 +175,7 @@ class LakeFormationPolicy:
 
     @principal_type.setter
     def principal_type(self, principal_type):
-        """Sets the principal_type of this LakeFormationPolicy.
+        r"""Sets the principal_type of this LakeFormationPolicy.
 
         主体类型，USER-用户,GROUP-组,ROLE-角色,SHARE-共享,OTHER-其它
 
@@ -186,7 +186,7 @@ class LakeFormationPolicy:
 
     @property
     def principal_source(self):
-        """Gets the principal_source of this LakeFormationPolicy.
+        r"""Gets the principal_source of this LakeFormationPolicy.
 
         主体来源，IAM-云,SAML-联邦,LDAP-权限策略,LOCAL-本地,OTHER-其它
 
@@ -197,7 +197,7 @@ class LakeFormationPolicy:
 
     @principal_source.setter
     def principal_source(self, principal_source):
-        """Sets the principal_source of this LakeFormationPolicy.
+        r"""Sets the principal_source of this LakeFormationPolicy.
 
         主体来源，IAM-云,SAML-联邦,LDAP-权限策略,LOCAL-本地,OTHER-其它
 
@@ -208,7 +208,7 @@ class LakeFormationPolicy:
 
     @property
     def principal_name(self):
-        """Gets the principal_name of this LakeFormationPolicy.
+        r"""Gets the principal_name of this LakeFormationPolicy.
 
         主体名
 
@@ -219,7 +219,7 @@ class LakeFormationPolicy:
 
     @principal_name.setter
     def principal_name(self, principal_name):
-        """Sets the principal_name of this LakeFormationPolicy.
+        r"""Sets the principal_name of this LakeFormationPolicy.
 
         主体名
 
@@ -230,7 +230,7 @@ class LakeFormationPolicy:
 
     @property
     def resource(self):
-        """Gets the resource of this LakeFormationPolicy.
+        r"""Gets the resource of this LakeFormationPolicy.
 
         :return: The resource of this LakeFormationPolicy.
         :rtype: :class:`huaweicloudsdklakeformation.v1.ResourceInfo`
@@ -239,7 +239,7 @@ class LakeFormationPolicy:
 
     @resource.setter
     def resource(self, resource):
-        """Sets the resource of this LakeFormationPolicy.
+        r"""Sets the resource of this LakeFormationPolicy.
 
         :param resource: The resource of this LakeFormationPolicy.
         :type resource: :class:`huaweicloudsdklakeformation.v1.ResourceInfo`
@@ -248,7 +248,7 @@ class LakeFormationPolicy:
 
     @property
     def resource_name(self):
-        """Gets the resource_name of this LakeFormationPolicy.
+        r"""Gets the resource_name of this LakeFormationPolicy.
 
         要求用点分格式进行分割
 
@@ -259,7 +259,7 @@ class LakeFormationPolicy:
 
     @resource_name.setter
     def resource_name(self, resource_name):
-        """Sets the resource_name of this LakeFormationPolicy.
+        r"""Sets the resource_name of this LakeFormationPolicy.
 
         要求用点分格式进行分割
 
@@ -270,7 +270,7 @@ class LakeFormationPolicy:
 
     @property
     def permissions(self):
-        """Gets the permissions of this LakeFormationPolicy.
+        r"""Gets the permissions of this LakeFormationPolicy.
 
         权限列表
 
@@ -281,7 +281,7 @@ class LakeFormationPolicy:
 
     @permissions.setter
     def permissions(self, permissions):
-        """Sets the permissions of this LakeFormationPolicy.
+        r"""Sets the permissions of this LakeFormationPolicy.
 
         权限列表
 
@@ -292,7 +292,7 @@ class LakeFormationPolicy:
 
     @property
     def grant_able_permissions(self):
-        """Gets the grant_able_permissions of this LakeFormationPolicy.
+        r"""Gets the grant_able_permissions of this LakeFormationPolicy.
 
         可以传递的权限列表
 
@@ -303,7 +303,7 @@ class LakeFormationPolicy:
 
     @grant_able_permissions.setter
     def grant_able_permissions(self, grant_able_permissions):
-        """Sets the grant_able_permissions of this LakeFormationPolicy.
+        r"""Sets the grant_able_permissions of this LakeFormationPolicy.
 
         可以传递的权限列表
 
@@ -314,7 +314,7 @@ class LakeFormationPolicy:
 
     @property
     def created_time(self):
-        """Gets the created_time of this LakeFormationPolicy.
+        r"""Gets the created_time of this LakeFormationPolicy.
 
         创建时间
 
@@ -325,7 +325,7 @@ class LakeFormationPolicy:
 
     @created_time.setter
     def created_time(self, created_time):
-        """Sets the created_time of this LakeFormationPolicy.
+        r"""Sets the created_time of this LakeFormationPolicy.
 
         创建时间
 
@@ -336,7 +336,7 @@ class LakeFormationPolicy:
 
     @property
     def condition(self):
-        """Gets the condition of this LakeFormationPolicy.
+        r"""Gets the condition of this LakeFormationPolicy.
 
         条件信息
 
@@ -347,7 +347,7 @@ class LakeFormationPolicy:
 
     @condition.setter
     def condition(self, condition):
-        """Sets the condition of this LakeFormationPolicy.
+        r"""Sets the condition of this LakeFormationPolicy.
 
         条件信息
 
@@ -358,7 +358,7 @@ class LakeFormationPolicy:
 
     @property
     def obligation(self):
-        """Gets the obligation of this LakeFormationPolicy.
+        r"""Gets the obligation of this LakeFormationPolicy.
 
         obligation，义务，当前包含data filter和data mask
 
@@ -369,7 +369,7 @@ class LakeFormationPolicy:
 
     @obligation.setter
     def obligation(self, obligation):
-        """Sets the obligation of this LakeFormationPolicy.
+        r"""Sets the obligation of this LakeFormationPolicy.
 
         obligation，义务，当前包含data filter和data mask
 
@@ -380,7 +380,7 @@ class LakeFormationPolicy:
 
     @property
     def authorization_paths(self):
-        """Gets the authorization_paths of this LakeFormationPolicy.
+        r"""Gets the authorization_paths of this LakeFormationPolicy.
 
         授权路径列表
 
@@ -391,7 +391,7 @@ class LakeFormationPolicy:
 
     @authorization_paths.setter
     def authorization_paths(self, authorization_paths):
-        """Sets the authorization_paths of this LakeFormationPolicy.
+        r"""Sets the authorization_paths of this LakeFormationPolicy.
 
         授权路径列表
 

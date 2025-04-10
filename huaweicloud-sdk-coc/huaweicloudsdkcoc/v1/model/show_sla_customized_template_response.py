@@ -50,7 +50,7 @@ class ShowSlaCustomizedTemplateResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, trigger_type=None, trigger_level=None, application=None, default_template=None, enabled=None, sla_rules=None, effective_type=None, effective_period=None, effective_start_time=None, effective_end_time=None):
-        """ShowSlaCustomizedTemplateResponse
+        r"""ShowSlaCustomizedTemplateResponse
 
         The model defined in huaweicloud sdk
 
@@ -128,7 +128,7 @@ class ShowSlaCustomizedTemplateResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowSlaCustomizedTemplateResponse.
+        r"""Gets the id of this ShowSlaCustomizedTemplateResponse.
 
         Id
 
@@ -139,7 +139,7 @@ class ShowSlaCustomizedTemplateResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowSlaCustomizedTemplateResponse.
+        r"""Sets the id of this ShowSlaCustomizedTemplateResponse.
 
         Id
 
@@ -150,7 +150,7 @@ class ShowSlaCustomizedTemplateResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowSlaCustomizedTemplateResponse.
+        r"""Gets the name of this ShowSlaCustomizedTemplateResponse.
 
         名称
 
@@ -161,7 +161,7 @@ class ShowSlaCustomizedTemplateResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowSlaCustomizedTemplateResponse.
+        r"""Sets the name of this ShowSlaCustomizedTemplateResponse.
 
         名称
 
@@ -172,7 +172,7 @@ class ShowSlaCustomizedTemplateResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowSlaCustomizedTemplateResponse.
+        r"""Gets the description of this ShowSlaCustomizedTemplateResponse.
 
         描述
 
@@ -183,7 +183,7 @@ class ShowSlaCustomizedTemplateResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowSlaCustomizedTemplateResponse.
+        r"""Sets the description of this ShowSlaCustomizedTemplateResponse.
 
         描述
 
@@ -194,7 +194,7 @@ class ShowSlaCustomizedTemplateResponse(SdkResponse):
 
     @property
     def trigger_type(self):
-        """Gets the trigger_type of this ShowSlaCustomizedTemplateResponse.
+        r"""Gets the trigger_type of this ShowSlaCustomizedTemplateResponse.
 
         触发类型(EVENT_TICKET,ALARM_TICKET,CHANGE_NOTE,TO_DO_TASKS,ISSUE_TICKET)
 
@@ -205,7 +205,7 @@ class ShowSlaCustomizedTemplateResponse(SdkResponse):
 
     @trigger_type.setter
     def trigger_type(self, trigger_type):
-        """Sets the trigger_type of this ShowSlaCustomizedTemplateResponse.
+        r"""Sets the trigger_type of this ShowSlaCustomizedTemplateResponse.
 
         触发类型(EVENT_TICKET,ALARM_TICKET,CHANGE_NOTE,TO_DO_TASKS,ISSUE_TICKET)
 
@@ -216,7 +216,7 @@ class ShowSlaCustomizedTemplateResponse(SdkResponse):
 
     @property
     def trigger_level(self):
-        """Gets the trigger_level of this ShowSlaCustomizedTemplateResponse.
+        r"""Gets the trigger_level of this ShowSlaCustomizedTemplateResponse.
 
         触发等级
 
@@ -227,7 +227,7 @@ class ShowSlaCustomizedTemplateResponse(SdkResponse):
 
     @trigger_level.setter
     def trigger_level(self, trigger_level):
-        """Sets the trigger_level of this ShowSlaCustomizedTemplateResponse.
+        r"""Sets the trigger_level of this ShowSlaCustomizedTemplateResponse.
 
         触发等级
 
@@ -238,7 +238,7 @@ class ShowSlaCustomizedTemplateResponse(SdkResponse):
 
     @property
     def application(self):
-        """Gets the application of this ShowSlaCustomizedTemplateResponse.
+        r"""Gets the application of this ShowSlaCustomizedTemplateResponse.
 
         应用
 
@@ -249,7 +249,7 @@ class ShowSlaCustomizedTemplateResponse(SdkResponse):
 
     @application.setter
     def application(self, application):
-        """Sets the application of this ShowSlaCustomizedTemplateResponse.
+        r"""Sets the application of this ShowSlaCustomizedTemplateResponse.
 
         应用
 
@@ -260,7 +260,7 @@ class ShowSlaCustomizedTemplateResponse(SdkResponse):
 
     @property
     def default_template(self):
-        """Gets the default_template of this ShowSlaCustomizedTemplateResponse.
+        r"""Gets the default_template of this ShowSlaCustomizedTemplateResponse.
 
         默认模板
 
@@ -271,7 +271,7 @@ class ShowSlaCustomizedTemplateResponse(SdkResponse):
 
     @default_template.setter
     def default_template(self, default_template):
-        """Sets the default_template of this ShowSlaCustomizedTemplateResponse.
+        r"""Sets the default_template of this ShowSlaCustomizedTemplateResponse.
 
         默认模板
 
@@ -282,7 +282,7 @@ class ShowSlaCustomizedTemplateResponse(SdkResponse):
 
     @property
     def enabled(self):
-        """Gets the enabled of this ShowSlaCustomizedTemplateResponse.
+        r"""Gets the enabled of this ShowSlaCustomizedTemplateResponse.
 
         启用状态
 
@@ -293,7 +293,7 @@ class ShowSlaCustomizedTemplateResponse(SdkResponse):
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this ShowSlaCustomizedTemplateResponse.
+        r"""Sets the enabled of this ShowSlaCustomizedTemplateResponse.
 
         启用状态
 
@@ -304,7 +304,7 @@ class ShowSlaCustomizedTemplateResponse(SdkResponse):
 
     @property
     def sla_rules(self):
-        """Gets the sla_rules of this ShowSlaCustomizedTemplateResponse.
+        r"""Gets the sla_rules of this ShowSlaCustomizedTemplateResponse.
 
         规则信息
 
@@ -315,7 +315,7 @@ class ShowSlaCustomizedTemplateResponse(SdkResponse):
 
     @sla_rules.setter
     def sla_rules(self, sla_rules):
-        """Sets the sla_rules of this ShowSlaCustomizedTemplateResponse.
+        r"""Sets the sla_rules of this ShowSlaCustomizedTemplateResponse.
 
         规则信息
 
@@ -326,7 +326,7 @@ class ShowSlaCustomizedTemplateResponse(SdkResponse):
 
     @property
     def effective_type(self):
-        """Gets the effective_type of this ShowSlaCustomizedTemplateResponse.
+        r"""Gets the effective_type of this ShowSlaCustomizedTemplateResponse.
 
         生效类型（MON_SUN_24_HOURS一直生效、SPECIFIC_TIME阶段性生效）
 
@@ -337,7 +337,7 @@ class ShowSlaCustomizedTemplateResponse(SdkResponse):
 
     @effective_type.setter
     def effective_type(self, effective_type):
-        """Sets the effective_type of this ShowSlaCustomizedTemplateResponse.
+        r"""Sets the effective_type of this ShowSlaCustomizedTemplateResponse.
 
         生效类型（MON_SUN_24_HOURS一直生效、SPECIFIC_TIME阶段性生效）
 
@@ -348,7 +348,7 @@ class ShowSlaCustomizedTemplateResponse(SdkResponse):
 
     @property
     def effective_period(self):
-        """Gets the effective_period of this ShowSlaCustomizedTemplateResponse.
+        r"""Gets the effective_period of this ShowSlaCustomizedTemplateResponse.
 
         生效周期（每天、周一、周二、周三、周四、周五、周六、周日）
 
@@ -359,7 +359,7 @@ class ShowSlaCustomizedTemplateResponse(SdkResponse):
 
     @effective_period.setter
     def effective_period(self, effective_period):
-        """Sets the effective_period of this ShowSlaCustomizedTemplateResponse.
+        r"""Sets the effective_period of this ShowSlaCustomizedTemplateResponse.
 
         生效周期（每天、周一、周二、周三、周四、周五、周六、周日）
 
@@ -370,7 +370,7 @@ class ShowSlaCustomizedTemplateResponse(SdkResponse):
 
     @property
     def effective_start_time(self):
-        """Gets the effective_start_time of this ShowSlaCustomizedTemplateResponse.
+        r"""Gets the effective_start_time of this ShowSlaCustomizedTemplateResponse.
 
         生效开始时间
 
@@ -381,7 +381,7 @@ class ShowSlaCustomizedTemplateResponse(SdkResponse):
 
     @effective_start_time.setter
     def effective_start_time(self, effective_start_time):
-        """Sets the effective_start_time of this ShowSlaCustomizedTemplateResponse.
+        r"""Sets the effective_start_time of this ShowSlaCustomizedTemplateResponse.
 
         生效开始时间
 
@@ -392,7 +392,7 @@ class ShowSlaCustomizedTemplateResponse(SdkResponse):
 
     @property
     def effective_end_time(self):
-        """Gets the effective_end_time of this ShowSlaCustomizedTemplateResponse.
+        r"""Gets the effective_end_time of this ShowSlaCustomizedTemplateResponse.
 
         生效结束时间
 
@@ -403,7 +403,7 @@ class ShowSlaCustomizedTemplateResponse(SdkResponse):
 
     @effective_end_time.setter
     def effective_end_time(self, effective_end_time):
-        """Sets the effective_end_time of this ShowSlaCustomizedTemplateResponse.
+        r"""Sets the effective_end_time of this ShowSlaCustomizedTemplateResponse.
 
         生效结束时间
 

@@ -29,7 +29,7 @@ class CreateVolumeReq:
     }
 
     def __init__(self, api_version=None, kind=None, spec=None):
-        """CreateVolumeReq
+        r"""CreateVolumeReq
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CreateVolumeReq:
 
     @property
     def api_version(self):
-        """Gets the api_version of this CreateVolumeReq.
+        r"""Gets the api_version of this CreateVolumeReq.
 
         :return: The api_version of this CreateVolumeReq.
         :rtype: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -63,7 +63,7 @@ class CreateVolumeReq:
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this CreateVolumeReq.
+        r"""Sets the api_version of this CreateVolumeReq.
 
         :param api_version: The api_version of this CreateVolumeReq.
         :type api_version: :class:`huaweicloudsdkcae.v1.ApiVersionObj`
@@ -72,7 +72,7 @@ class CreateVolumeReq:
 
     @property
     def kind(self):
-        """Gets the kind of this CreateVolumeReq.
+        r"""Gets the kind of this CreateVolumeReq.
 
         :return: The kind of this CreateVolumeReq.
         :rtype: :class:`huaweicloudsdkcae.v1.VolumeKindObj`
@@ -81,7 +81,7 @@ class CreateVolumeReq:
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this CreateVolumeReq.
+        r"""Sets the kind of this CreateVolumeReq.
 
         :param kind: The kind of this CreateVolumeReq.
         :type kind: :class:`huaweicloudsdkcae.v1.VolumeKindObj`
@@ -90,7 +90,7 @@ class CreateVolumeReq:
 
     @property
     def spec(self):
-        """Gets the spec of this CreateVolumeReq.
+        r"""Gets the spec of this CreateVolumeReq.
 
         :return: The spec of this CreateVolumeReq.
         :rtype: :class:`huaweicloudsdkcae.v1.VolumeSpec`
@@ -99,7 +99,7 @@ class CreateVolumeReq:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this CreateVolumeReq.
+        r"""Sets the spec of this CreateVolumeReq.
 
         :param spec: The spec of this CreateVolumeReq.
         :type spec: :class:`huaweicloudsdkcae.v1.VolumeSpec`

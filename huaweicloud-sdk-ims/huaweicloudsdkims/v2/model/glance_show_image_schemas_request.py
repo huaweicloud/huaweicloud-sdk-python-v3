@@ -23,7 +23,7 @@ class GlanceShowImageSchemasRequest:
     }
 
     def __init__(self):
-        """GlanceShowImageSchemasRequest
+        r"""GlanceShowImageSchemasRequest
 
         The model defined in huaweicloud sdk
 

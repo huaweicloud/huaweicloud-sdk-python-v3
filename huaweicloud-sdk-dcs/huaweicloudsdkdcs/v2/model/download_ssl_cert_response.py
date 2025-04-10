@@ -30,7 +30,7 @@ class DownloadSslCertResponse(SdkResponse):
     }
 
     def __init__(self, file_name=None, link=None, bucket_name=None):
-        """DownloadSslCertResponse
+        r"""DownloadSslCertResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class DownloadSslCertResponse(SdkResponse):
 
     @property
     def file_name(self):
-        """Gets the file_name of this DownloadSslCertResponse.
+        r"""Gets the file_name of this DownloadSslCertResponse.
 
         SSL证书文件名。
 
@@ -69,7 +69,7 @@ class DownloadSslCertResponse(SdkResponse):
 
     @file_name.setter
     def file_name(self, file_name):
-        """Sets the file_name of this DownloadSslCertResponse.
+        r"""Sets the file_name of this DownloadSslCertResponse.
 
         SSL证书文件名。
 
@@ -80,7 +80,7 @@ class DownloadSslCertResponse(SdkResponse):
 
     @property
     def link(self):
-        """Gets the link of this DownloadSslCertResponse.
+        r"""Gets the link of this DownloadSslCertResponse.
 
         SSL证书下载链接。
 
@@ -91,7 +91,7 @@ class DownloadSslCertResponse(SdkResponse):
 
     @link.setter
     def link(self, link):
-        """Sets the link of this DownloadSslCertResponse.
+        r"""Sets the link of this DownloadSslCertResponse.
 
         SSL证书下载链接。
 
@@ -102,7 +102,7 @@ class DownloadSslCertResponse(SdkResponse):
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this DownloadSslCertResponse.
+        r"""Gets the bucket_name of this DownloadSslCertResponse.
 
         保存SSL证书的obs桶名。
 
@@ -113,7 +113,7 @@ class DownloadSslCertResponse(SdkResponse):
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this DownloadSslCertResponse.
+        r"""Sets the bucket_name of this DownloadSslCertResponse.
 
         保存SSL证书的obs桶名。
 

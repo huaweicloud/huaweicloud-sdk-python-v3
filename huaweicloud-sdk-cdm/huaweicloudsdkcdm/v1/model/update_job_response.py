@@ -26,7 +26,7 @@ class UpdateJobResponse(SdkResponse):
     }
 
     def __init__(self, validation_result=None):
-        """UpdateJobResponse
+        r"""UpdateJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateJobResponse(SdkResponse):
 
     @property
     def validation_result(self):
-        """Gets the validation_result of this UpdateJobResponse.
+        r"""Gets the validation_result of this UpdateJobResponse.
 
         校验结果：如果修改失败，返回失败原因。如果修改成功，返回空列表
 
@@ -55,7 +55,7 @@ class UpdateJobResponse(SdkResponse):
 
     @validation_result.setter
     def validation_result(self, validation_result):
-        """Sets the validation_result of this UpdateJobResponse.
+        r"""Sets the validation_result of this UpdateJobResponse.
 
         校验结果：如果修改失败，返回失败原因。如果修改成功，返回空列表
 

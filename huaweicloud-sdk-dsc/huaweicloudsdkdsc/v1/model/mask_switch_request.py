@@ -25,7 +25,7 @@ class MaskSwitchRequest:
     }
 
     def __init__(self, status=None):
-        """MaskSwitchRequest
+        r"""MaskSwitchRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class MaskSwitchRequest:
 
     @property
     def status(self):
-        """Gets the status of this MaskSwitchRequest.
+        r"""Gets the status of this MaskSwitchRequest.
 
         脱敏任务状态
 
@@ -53,7 +53,7 @@ class MaskSwitchRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this MaskSwitchRequest.
+        r"""Sets the status of this MaskSwitchRequest.
 
         脱敏任务状态
 

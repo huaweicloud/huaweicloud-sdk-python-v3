@@ -26,7 +26,7 @@ class ShowDeviceStatusResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ShowDeviceStatusResponse
+        r"""ShowDeviceStatusResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowDeviceStatusResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ShowDeviceStatusResponse.
+        r"""Gets the body of this ShowDeviceStatusResponse.
 
         :return: The body of this ShowDeviceStatusResponse.
         :rtype: list[:class:`huaweicloudsdkmeeting.v1.UserStatusDTO`]
@@ -53,7 +53,7 @@ class ShowDeviceStatusResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowDeviceStatusResponse.
+        r"""Sets the body of this ShowDeviceStatusResponse.
 
         :param body: The body of this ShowDeviceStatusResponse.
         :type body: list[:class:`huaweicloudsdkmeeting.v1.UserStatusDTO`]

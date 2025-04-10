@@ -27,7 +27,7 @@ class AddOrRemoveServicePermissionsRequest:
     }
 
     def __init__(self, vpc_endpoint_service_id=None, body=None):
-        """AddOrRemoveServicePermissionsRequest
+        r"""AddOrRemoveServicePermissionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AddOrRemoveServicePermissionsRequest:
 
     @property
     def vpc_endpoint_service_id(self):
-        """Gets the vpc_endpoint_service_id of this AddOrRemoveServicePermissionsRequest.
+        r"""Gets the vpc_endpoint_service_id of this AddOrRemoveServicePermissionsRequest.
 
         终端节点服务的ID。
 
@@ -60,7 +60,7 @@ class AddOrRemoveServicePermissionsRequest:
 
     @vpc_endpoint_service_id.setter
     def vpc_endpoint_service_id(self, vpc_endpoint_service_id):
-        """Sets the vpc_endpoint_service_id of this AddOrRemoveServicePermissionsRequest.
+        r"""Sets the vpc_endpoint_service_id of this AddOrRemoveServicePermissionsRequest.
 
         终端节点服务的ID。
 
@@ -71,7 +71,7 @@ class AddOrRemoveServicePermissionsRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddOrRemoveServicePermissionsRequest.
+        r"""Gets the body of this AddOrRemoveServicePermissionsRequest.
 
         :return: The body of this AddOrRemoveServicePermissionsRequest.
         :rtype: :class:`huaweicloudsdkvpcep.v1.AddOrRemoveServicePermissionsRequestBody`
@@ -80,7 +80,7 @@ class AddOrRemoveServicePermissionsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddOrRemoveServicePermissionsRequest.
+        r"""Sets the body of this AddOrRemoveServicePermissionsRequest.
 
         :param body: The body of this AddOrRemoveServicePermissionsRequest.
         :type body: :class:`huaweicloudsdkvpcep.v1.AddOrRemoveServicePermissionsRequestBody`

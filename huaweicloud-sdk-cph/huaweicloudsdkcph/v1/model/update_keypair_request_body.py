@@ -25,7 +25,7 @@ class UpdateKeypairRequestBody:
     }
 
     def __init__(self, servers=None):
-        """UpdateKeypairRequestBody
+        r"""UpdateKeypairRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateKeypairRequestBody:
 
     @property
     def servers(self):
-        """Gets the servers of this UpdateKeypairRequestBody.
+        r"""Gets the servers of this UpdateKeypairRequestBody.
 
         待更改密钥对的云手机服务器信息。
 
@@ -53,7 +53,7 @@ class UpdateKeypairRequestBody:
 
     @servers.setter
     def servers(self, servers):
-        """Sets the servers of this UpdateKeypairRequestBody.
+        r"""Sets the servers of this UpdateKeypairRequestBody.
 
         待更改密钥对的云手机服务器信息。
 

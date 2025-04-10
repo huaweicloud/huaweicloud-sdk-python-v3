@@ -57,7 +57,7 @@ class AlertProcess:
     }
 
     def __init__(self, process_name=None, process_path=None, process_pid=None, process_uid=None, process_cmdline=None, process_parent_name=None, process_parent_path=None, process_parent_pid=None, process_parent_uid=None, process_parent_cmdline=None, process_child_name=None, process_child_path=None, process_child_pid=None, process_child_uid=None, process_child_cmdline=None, process_launche_time=None, process_terminate_time=None):
-        """AlertProcess
+        r"""AlertProcess
 
         The model defined in huaweicloud sdk
 
@@ -155,7 +155,7 @@ class AlertProcess:
 
     @property
     def process_name(self):
-        """Gets the process_name of this AlertProcess.
+        r"""Gets the process_name of this AlertProcess.
 
         进程名
 
@@ -166,7 +166,7 @@ class AlertProcess:
 
     @process_name.setter
     def process_name(self, process_name):
-        """Sets the process_name of this AlertProcess.
+        r"""Sets the process_name of this AlertProcess.
 
         进程名
 
@@ -177,7 +177,7 @@ class AlertProcess:
 
     @property
     def process_path(self):
-        """Gets the process_path of this AlertProcess.
+        r"""Gets the process_path of this AlertProcess.
 
         进程执行文件路径
 
@@ -188,7 +188,7 @@ class AlertProcess:
 
     @process_path.setter
     def process_path(self, process_path):
-        """Sets the process_path of this AlertProcess.
+        r"""Sets the process_path of this AlertProcess.
 
         进程执行文件路径
 
@@ -199,7 +199,7 @@ class AlertProcess:
 
     @property
     def process_pid(self):
-        """Gets the process_pid of this AlertProcess.
+        r"""Gets the process_pid of this AlertProcess.
 
         进程id
 
@@ -210,7 +210,7 @@ class AlertProcess:
 
     @process_pid.setter
     def process_pid(self, process_pid):
-        """Sets the process_pid of this AlertProcess.
+        r"""Sets the process_pid of this AlertProcess.
 
         进程id
 
@@ -221,7 +221,7 @@ class AlertProcess:
 
     @property
     def process_uid(self):
-        """Gets the process_uid of this AlertProcess.
+        r"""Gets the process_uid of this AlertProcess.
 
         进程用户id
 
@@ -232,7 +232,7 @@ class AlertProcess:
 
     @process_uid.setter
     def process_uid(self, process_uid):
-        """Sets the process_uid of this AlertProcess.
+        r"""Sets the process_uid of this AlertProcess.
 
         进程用户id
 
@@ -243,7 +243,7 @@ class AlertProcess:
 
     @property
     def process_cmdline(self):
-        """Gets the process_cmdline of this AlertProcess.
+        r"""Gets the process_cmdline of this AlertProcess.
 
         进程命令行
 
@@ -254,7 +254,7 @@ class AlertProcess:
 
     @process_cmdline.setter
     def process_cmdline(self, process_cmdline):
-        """Sets the process_cmdline of this AlertProcess.
+        r"""Sets the process_cmdline of this AlertProcess.
 
         进程命令行
 
@@ -265,7 +265,7 @@ class AlertProcess:
 
     @property
     def process_parent_name(self):
-        """Gets the process_parent_name of this AlertProcess.
+        r"""Gets the process_parent_name of this AlertProcess.
 
         父进程名称
 
@@ -276,7 +276,7 @@ class AlertProcess:
 
     @process_parent_name.setter
     def process_parent_name(self, process_parent_name):
-        """Sets the process_parent_name of this AlertProcess.
+        r"""Sets the process_parent_name of this AlertProcess.
 
         父进程名称
 
@@ -287,7 +287,7 @@ class AlertProcess:
 
     @property
     def process_parent_path(self):
-        """Gets the process_parent_path of this AlertProcess.
+        r"""Gets the process_parent_path of this AlertProcess.
 
         父进程执行文件路径
 
@@ -298,7 +298,7 @@ class AlertProcess:
 
     @process_parent_path.setter
     def process_parent_path(self, process_parent_path):
-        """Sets the process_parent_path of this AlertProcess.
+        r"""Sets the process_parent_path of this AlertProcess.
 
         父进程执行文件路径
 
@@ -309,7 +309,7 @@ class AlertProcess:
 
     @property
     def process_parent_pid(self):
-        """Gets the process_parent_pid of this AlertProcess.
+        r"""Gets the process_parent_pid of this AlertProcess.
 
         父进程id
 
@@ -320,7 +320,7 @@ class AlertProcess:
 
     @process_parent_pid.setter
     def process_parent_pid(self, process_parent_pid):
-        """Sets the process_parent_pid of this AlertProcess.
+        r"""Sets the process_parent_pid of this AlertProcess.
 
         父进程id
 
@@ -331,7 +331,7 @@ class AlertProcess:
 
     @property
     def process_parent_uid(self):
-        """Gets the process_parent_uid of this AlertProcess.
+        r"""Gets the process_parent_uid of this AlertProcess.
 
         父进程用户id
 
@@ -342,7 +342,7 @@ class AlertProcess:
 
     @process_parent_uid.setter
     def process_parent_uid(self, process_parent_uid):
-        """Sets the process_parent_uid of this AlertProcess.
+        r"""Sets the process_parent_uid of this AlertProcess.
 
         父进程用户id
 
@@ -353,7 +353,7 @@ class AlertProcess:
 
     @property
     def process_parent_cmdline(self):
-        """Gets the process_parent_cmdline of this AlertProcess.
+        r"""Gets the process_parent_cmdline of this AlertProcess.
 
         父进程命令行
 
@@ -364,7 +364,7 @@ class AlertProcess:
 
     @process_parent_cmdline.setter
     def process_parent_cmdline(self, process_parent_cmdline):
-        """Sets the process_parent_cmdline of this AlertProcess.
+        r"""Sets the process_parent_cmdline of this AlertProcess.
 
         父进程命令行
 
@@ -375,7 +375,7 @@ class AlertProcess:
 
     @property
     def process_child_name(self):
-        """Gets the process_child_name of this AlertProcess.
+        r"""Gets the process_child_name of this AlertProcess.
 
         子进程名称
 
@@ -386,7 +386,7 @@ class AlertProcess:
 
     @process_child_name.setter
     def process_child_name(self, process_child_name):
-        """Sets the process_child_name of this AlertProcess.
+        r"""Sets the process_child_name of this AlertProcess.
 
         子进程名称
 
@@ -397,7 +397,7 @@ class AlertProcess:
 
     @property
     def process_child_path(self):
-        """Gets the process_child_path of this AlertProcess.
+        r"""Gets the process_child_path of this AlertProcess.
 
         子进程执行文件路径
 
@@ -408,7 +408,7 @@ class AlertProcess:
 
     @process_child_path.setter
     def process_child_path(self, process_child_path):
-        """Sets the process_child_path of this AlertProcess.
+        r"""Sets the process_child_path of this AlertProcess.
 
         子进程执行文件路径
 
@@ -419,7 +419,7 @@ class AlertProcess:
 
     @property
     def process_child_pid(self):
-        """Gets the process_child_pid of this AlertProcess.
+        r"""Gets the process_child_pid of this AlertProcess.
 
         子进程id
 
@@ -430,7 +430,7 @@ class AlertProcess:
 
     @process_child_pid.setter
     def process_child_pid(self, process_child_pid):
-        """Sets the process_child_pid of this AlertProcess.
+        r"""Sets the process_child_pid of this AlertProcess.
 
         子进程id
 
@@ -441,7 +441,7 @@ class AlertProcess:
 
     @property
     def process_child_uid(self):
-        """Gets the process_child_uid of this AlertProcess.
+        r"""Gets the process_child_uid of this AlertProcess.
 
         子进程用户id
 
@@ -452,7 +452,7 @@ class AlertProcess:
 
     @process_child_uid.setter
     def process_child_uid(self, process_child_uid):
-        """Sets the process_child_uid of this AlertProcess.
+        r"""Sets the process_child_uid of this AlertProcess.
 
         子进程用户id
 
@@ -463,7 +463,7 @@ class AlertProcess:
 
     @property
     def process_child_cmdline(self):
-        """Gets the process_child_cmdline of this AlertProcess.
+        r"""Gets the process_child_cmdline of this AlertProcess.
 
         子进程命令行
 
@@ -474,7 +474,7 @@ class AlertProcess:
 
     @process_child_cmdline.setter
     def process_child_cmdline(self, process_child_cmdline):
-        """Sets the process_child_cmdline of this AlertProcess.
+        r"""Sets the process_child_cmdline of this AlertProcess.
 
         子进程命令行
 
@@ -485,7 +485,7 @@ class AlertProcess:
 
     @property
     def process_launche_time(self):
-        """Gets the process_launche_time of this AlertProcess.
+        r"""Gets the process_launche_time of this AlertProcess.
 
         进程启动时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区
 
@@ -496,7 +496,7 @@ class AlertProcess:
 
     @process_launche_time.setter
     def process_launche_time(self, process_launche_time):
-        """Sets the process_launche_time of this AlertProcess.
+        r"""Sets the process_launche_time of this AlertProcess.
 
         进程启动时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区
 
@@ -507,7 +507,7 @@ class AlertProcess:
 
     @property
     def process_terminate_time(self):
-        """Gets the process_terminate_time of this AlertProcess.
+        r"""Gets the process_terminate_time of this AlertProcess.
 
         进程结束时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区
 
@@ -518,7 +518,7 @@ class AlertProcess:
 
     @process_terminate_time.setter
     def process_terminate_time(self, process_terminate_time):
-        """Sets the process_terminate_time of this AlertProcess.
+        r"""Sets the process_terminate_time of this AlertProcess.
 
         进程结束时间，格式ISO8601：YYYY-MM-DDTHH:mm:ss.ms+timezone。时区信息为事件发生时区，无法解析时区的时间，默认时区填东八区
 

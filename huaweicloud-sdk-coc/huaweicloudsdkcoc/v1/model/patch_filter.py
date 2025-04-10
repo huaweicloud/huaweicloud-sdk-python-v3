@@ -27,7 +27,7 @@ class PatchFilter:
     }
 
     def __init__(self, key=None, values=None):
-        """PatchFilter
+        r"""PatchFilter
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class PatchFilter:
 
     @property
     def key(self):
-        """Gets the key of this PatchFilter.
+        r"""Gets the key of this PatchFilter.
 
         key
 
@@ -59,7 +59,7 @@ class PatchFilter:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this PatchFilter.
+        r"""Sets the key of this PatchFilter.
 
         key
 
@@ -70,7 +70,7 @@ class PatchFilter:
 
     @property
     def values(self):
-        """Gets the values of this PatchFilter.
+        r"""Gets the values of this PatchFilter.
 
         值
 
@@ -81,7 +81,7 @@ class PatchFilter:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this PatchFilter.
+        r"""Sets the values of this PatchFilter.
 
         值
 

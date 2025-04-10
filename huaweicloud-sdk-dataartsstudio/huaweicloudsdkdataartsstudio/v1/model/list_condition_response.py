@@ -26,7 +26,7 @@ class ListConditionResponse(SdkResponse):
     }
 
     def __init__(self, data=None):
-        """ListConditionResponse
+        r"""ListConditionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListConditionResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ListConditionResponse.
+        r"""Gets the data of this ListConditionResponse.
 
         :return: The data of this ListConditionResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListConditionResultData`
@@ -53,7 +53,7 @@ class ListConditionResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ListConditionResponse.
+        r"""Sets the data of this ListConditionResponse.
 
         :param data: The data of this ListConditionResponse.
         :type data: :class:`huaweicloudsdkdataartsstudio.v1.ListConditionResultData`

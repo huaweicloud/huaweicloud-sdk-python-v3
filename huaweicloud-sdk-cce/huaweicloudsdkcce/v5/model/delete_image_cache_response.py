@@ -26,7 +26,7 @@ class DeleteImageCacheResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """DeleteImageCacheResponse
+        r"""DeleteImageCacheResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class DeleteImageCacheResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this DeleteImageCacheResponse.
+        r"""Gets the body of this DeleteImageCacheResponse.
 
         :return: The body of this DeleteImageCacheResponse.
         :rtype: object
@@ -53,7 +53,7 @@ class DeleteImageCacheResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteImageCacheResponse.
+        r"""Sets the body of this DeleteImageCacheResponse.
 
         :param body: The body of this DeleteImageCacheResponse.
         :type body: object

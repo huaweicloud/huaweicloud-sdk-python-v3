@@ -29,7 +29,7 @@ class CreateProductTopicRequest:
     }
 
     def __init__(self, instance_id=None, product_id=None, body=None):
-        """CreateProductTopicRequest
+        r"""CreateProductTopicRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateProductTopicRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this CreateProductTopicRequest.
+        r"""Gets the instance_id of this CreateProductTopicRequest.
 
         实例ID
 
@@ -66,7 +66,7 @@ class CreateProductTopicRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this CreateProductTopicRequest.
+        r"""Sets the instance_id of this CreateProductTopicRequest.
 
         实例ID
 
@@ -77,7 +77,7 @@ class CreateProductTopicRequest:
 
     @property
     def product_id(self):
-        """Gets the product_id of this CreateProductTopicRequest.
+        r"""Gets the product_id of this CreateProductTopicRequest.
 
         产品ID
 
@@ -88,7 +88,7 @@ class CreateProductTopicRequest:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this CreateProductTopicRequest.
+        r"""Sets the product_id of this CreateProductTopicRequest.
 
         产品ID
 
@@ -99,7 +99,7 @@ class CreateProductTopicRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateProductTopicRequest.
+        r"""Gets the body of this CreateProductTopicRequest.
 
         :return: The body of this CreateProductTopicRequest.
         :rtype: :class:`huaweicloudsdkroma.v2.CreateProductTopicRequestBody`
@@ -108,7 +108,7 @@ class CreateProductTopicRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateProductTopicRequest.
+        r"""Sets the body of this CreateProductTopicRequest.
 
         :param body: The body of this CreateProductTopicRequest.
         :type body: :class:`huaweicloudsdkroma.v2.CreateProductTopicRequestBody`

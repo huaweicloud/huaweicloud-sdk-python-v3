@@ -27,7 +27,7 @@ class BatchDeleteClusterCnRequest:
     }
 
     def __init__(self, cluster_id=None, body=None):
-        """BatchDeleteClusterCnRequest
+        r"""BatchDeleteClusterCnRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BatchDeleteClusterCnRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this BatchDeleteClusterCnRequest.
+        r"""Gets the cluster_id of this BatchDeleteClusterCnRequest.
 
         集群的ID。
 
@@ -60,7 +60,7 @@ class BatchDeleteClusterCnRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this BatchDeleteClusterCnRequest.
+        r"""Sets the cluster_id of this BatchDeleteClusterCnRequest.
 
         集群的ID。
 
@@ -71,7 +71,7 @@ class BatchDeleteClusterCnRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchDeleteClusterCnRequest.
+        r"""Gets the body of this BatchDeleteClusterCnRequest.
 
         :return: The body of this BatchDeleteClusterCnRequest.
         :rtype: :class:`huaweicloudsdkdws.v2.BatchDeleteCn`
@@ -80,7 +80,7 @@ class BatchDeleteClusterCnRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchDeleteClusterCnRequest.
+        r"""Sets the body of this BatchDeleteClusterCnRequest.
 
         :param body: The body of this BatchDeleteClusterCnRequest.
         :type body: :class:`huaweicloudsdkdws.v2.BatchDeleteCn`

@@ -31,7 +31,7 @@ class OpenGaussHaOption:
     }
 
     def __init__(self, mode=None, consistency=None, replication_mode=None, instance_mode=None):
-        """OpenGaussHaOption
+        r"""OpenGaussHaOption
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class OpenGaussHaOption:
 
     @property
     def mode(self):
-        """Gets the mode of this OpenGaussHaOption.
+        r"""Gets the mode of this OpenGaussHaOption.
 
         GaussDB为分布式时，取值：enterprise；为集中式时，取值：centralization_standard。不区分大小写。
 
@@ -72,7 +72,7 @@ class OpenGaussHaOption:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this OpenGaussHaOption.
+        r"""Sets the mode of this OpenGaussHaOption.
 
         GaussDB为分布式时，取值：enterprise；为集中式时，取值：centralization_standard。不区分大小写。
 
@@ -83,7 +83,7 @@ class OpenGaussHaOption:
 
     @property
     def consistency(self):
-        """Gets the consistency of this OpenGaussHaOption.
+        r"""Gets the consistency of this OpenGaussHaOption.
 
         指定实例一致性类型，当创建分布式模式实例时，该字段值必传，当创建主备模式实例时，该字段值不传。取值范围：strong（强一致性） | eventual(最终一致性)，不分区大小写。
 
@@ -94,7 +94,7 @@ class OpenGaussHaOption:
 
     @consistency.setter
     def consistency(self, consistency):
-        """Sets the consistency of this OpenGaussHaOption.
+        r"""Sets the consistency of this OpenGaussHaOption.
 
         指定实例一致性类型，当创建分布式模式实例时，该字段值必传，当创建主备模式实例时，该字段值不传。取值范围：strong（强一致性） | eventual(最终一致性)，不分区大小写。
 
@@ -105,7 +105,7 @@ class OpenGaussHaOption:
 
     @property
     def replication_mode(self):
-        """Gets the replication_mode of this OpenGaussHaOption.
+        r"""Gets the replication_mode of this OpenGaussHaOption.
 
         备机同步参数。  取值：  GaussDB为“sync\"  说明： - “sync”为同步模式。
 
@@ -116,7 +116,7 @@ class OpenGaussHaOption:
 
     @replication_mode.setter
     def replication_mode(self, replication_mode):
-        """Sets the replication_mode of this OpenGaussHaOption.
+        r"""Sets the replication_mode of this OpenGaussHaOption.
 
         备机同步参数。  取值：  GaussDB为“sync\"  说明： - “sync”为同步模式。
 
@@ -127,7 +127,7 @@ class OpenGaussHaOption:
 
     @property
     def instance_mode(self):
-        """Gets the instance_mode of this OpenGaussHaOption.
+        r"""Gets the instance_mode of this OpenGaussHaOption.
 
         指定创建实例的产品类型，创建企业版实例时传空值或者enterprise，创建基础版实例时需要指定instance_mode的值为basic，创建生态版实例时需要指定instance_mode的值为ecology。
 
@@ -138,7 +138,7 @@ class OpenGaussHaOption:
 
     @instance_mode.setter
     def instance_mode(self, instance_mode):
-        """Sets the instance_mode of this OpenGaussHaOption.
+        r"""Sets the instance_mode of this OpenGaussHaOption.
 
         指定创建实例的产品类型，创建企业版实例时传空值或者enterprise，创建基础版实例时需要指定instance_mode的值为basic，创建生态版实例时需要指定instance_mode的值为ecology。
 

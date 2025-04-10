@@ -27,7 +27,7 @@ class VaultBackup:
     }
 
     def __init__(self, parameters=None, vault_id=None):
-        """VaultBackup
+        r"""VaultBackup
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class VaultBackup:
 
     @property
     def parameters(self):
-        """Gets the parameters of this VaultBackup.
+        r"""Gets the parameters of this VaultBackup.
 
         :return: The parameters of this VaultBackup.
         :rtype: :class:`huaweicloudsdkcbr.v1.CheckpointParam`
@@ -58,7 +58,7 @@ class VaultBackup:
 
     @parameters.setter
     def parameters(self, parameters):
-        """Sets the parameters of this VaultBackup.
+        r"""Sets the parameters of this VaultBackup.
 
         :param parameters: The parameters of this VaultBackup.
         :type parameters: :class:`huaweicloudsdkcbr.v1.CheckpointParam`
@@ -67,7 +67,7 @@ class VaultBackup:
 
     @property
     def vault_id(self):
-        """Gets the vault_id of this VaultBackup.
+        r"""Gets the vault_id of this VaultBackup.
 
         存储库ID
 
@@ -78,7 +78,7 @@ class VaultBackup:
 
     @vault_id.setter
     def vault_id(self, vault_id):
-        """Sets the vault_id of this VaultBackup.
+        r"""Sets the vault_id of this VaultBackup.
 
         存储库ID
 

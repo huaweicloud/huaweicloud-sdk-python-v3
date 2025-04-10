@@ -58,7 +58,7 @@ class AddDeploymentNodesResponse(SdkResponse):
     }
 
     def __init__(self, template=None, reason=None, ready_replicas=None, replicas=None, description=None, created_at=None, source=None, api_version=None, node_ids=None, cluster_id=None, updated_at=None, project_id=None, name=None, id=None, state=None, node_num=None, result=None):
-        """AddDeploymentNodesResponse
+        r"""AddDeploymentNodesResponse
 
         The model defined in huaweicloud sdk
 
@@ -156,7 +156,7 @@ class AddDeploymentNodesResponse(SdkResponse):
 
     @property
     def template(self):
-        """Gets the template of this AddDeploymentNodesResponse.
+        r"""Gets the template of this AddDeploymentNodesResponse.
 
         :return: The template of this AddDeploymentNodesResponse.
         :rtype: :class:`huaweicloudsdkhilens.v3.DeploymentTemplate`
@@ -165,7 +165,7 @@ class AddDeploymentNodesResponse(SdkResponse):
 
     @template.setter
     def template(self, template):
-        """Sets the template of this AddDeploymentNodesResponse.
+        r"""Sets the template of this AddDeploymentNodesResponse.
 
         :param template: The template of this AddDeploymentNodesResponse.
         :type template: :class:`huaweicloudsdkhilens.v3.DeploymentTemplate`
@@ -174,7 +174,7 @@ class AddDeploymentNodesResponse(SdkResponse):
 
     @property
     def reason(self):
-        """Gets the reason of this AddDeploymentNodesResponse.
+        r"""Gets the reason of this AddDeploymentNodesResponse.
 
         部署成功失败的理由
 
@@ -185,7 +185,7 @@ class AddDeploymentNodesResponse(SdkResponse):
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this AddDeploymentNodesResponse.
+        r"""Sets the reason of this AddDeploymentNodesResponse.
 
         部署成功失败的理由
 
@@ -196,7 +196,7 @@ class AddDeploymentNodesResponse(SdkResponse):
 
     @property
     def ready_replicas(self):
-        """Gets the ready_replicas of this AddDeploymentNodesResponse.
+        r"""Gets the ready_replicas of this AddDeploymentNodesResponse.
 
         已经就绪的实例节点数
 
@@ -207,7 +207,7 @@ class AddDeploymentNodesResponse(SdkResponse):
 
     @ready_replicas.setter
     def ready_replicas(self, ready_replicas):
-        """Sets the ready_replicas of this AddDeploymentNodesResponse.
+        r"""Sets the ready_replicas of this AddDeploymentNodesResponse.
 
         已经就绪的实例节点数
 
@@ -218,7 +218,7 @@ class AddDeploymentNodesResponse(SdkResponse):
 
     @property
     def replicas(self):
-        """Gets the replicas of this AddDeploymentNodesResponse.
+        r"""Gets the replicas of this AddDeploymentNodesResponse.
 
         实例节点节点数
 
@@ -229,7 +229,7 @@ class AddDeploymentNodesResponse(SdkResponse):
 
     @replicas.setter
     def replicas(self, replicas):
-        """Sets the replicas of this AddDeploymentNodesResponse.
+        r"""Sets the replicas of this AddDeploymentNodesResponse.
 
         实例节点节点数
 
@@ -240,7 +240,7 @@ class AddDeploymentNodesResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this AddDeploymentNodesResponse.
+        r"""Gets the description of this AddDeploymentNodesResponse.
 
         应用部署描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -251,7 +251,7 @@ class AddDeploymentNodesResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AddDeploymentNodesResponse.
+        r"""Sets the description of this AddDeploymentNodesResponse.
 
         应用部署描述，最大长度255，不允许^ ~ # $ % & * < > ( ) [ ] { } ' \" \\
 
@@ -262,7 +262,7 @@ class AddDeploymentNodesResponse(SdkResponse):
 
     @property
     def created_at(self):
-        """Gets the created_at of this AddDeploymentNodesResponse.
+        r"""Gets the created_at of this AddDeploymentNodesResponse.
 
         创建时间
 
@@ -273,7 +273,7 @@ class AddDeploymentNodesResponse(SdkResponse):
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this AddDeploymentNodesResponse.
+        r"""Sets the created_at of this AddDeploymentNodesResponse.
 
         创建时间
 
@@ -284,7 +284,7 @@ class AddDeploymentNodesResponse(SdkResponse):
 
     @property
     def source(self):
-        """Gets the source of this AddDeploymentNodesResponse.
+        r"""Gets the source of this AddDeploymentNodesResponse.
 
         应用部署来源: HiLens市场(hlm) or aigallery(aig) or 自定义(userdefined)
 
@@ -295,7 +295,7 @@ class AddDeploymentNodesResponse(SdkResponse):
 
     @source.setter
     def source(self, source):
-        """Sets the source of this AddDeploymentNodesResponse.
+        r"""Sets the source of this AddDeploymentNodesResponse.
 
         应用部署来源: HiLens市场(hlm) or aigallery(aig) or 自定义(userdefined)
 
@@ -306,7 +306,7 @@ class AddDeploymentNodesResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this AddDeploymentNodesResponse.
+        r"""Gets the api_version of this AddDeploymentNodesResponse.
 
         应用部署版本
 
@@ -317,7 +317,7 @@ class AddDeploymentNodesResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this AddDeploymentNodesResponse.
+        r"""Sets the api_version of this AddDeploymentNodesResponse.
 
         应用部署版本
 
@@ -328,7 +328,7 @@ class AddDeploymentNodesResponse(SdkResponse):
 
     @property
     def node_ids(self):
-        """Gets the node_ids of this AddDeploymentNodesResponse.
+        r"""Gets the node_ids of this AddDeploymentNodesResponse.
 
         应用部署的指定节点，与clouster_id二选一
 
@@ -339,7 +339,7 @@ class AddDeploymentNodesResponse(SdkResponse):
 
     @node_ids.setter
     def node_ids(self, node_ids):
-        """Sets the node_ids of this AddDeploymentNodesResponse.
+        r"""Sets the node_ids of this AddDeploymentNodesResponse.
 
         应用部署的指定节点，与clouster_id二选一
 
@@ -350,7 +350,7 @@ class AddDeploymentNodesResponse(SdkResponse):
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this AddDeploymentNodesResponse.
+        r"""Gets the cluster_id of this AddDeploymentNodesResponse.
 
         应用部署的集群ID，与node_id二选一
 
@@ -361,7 +361,7 @@ class AddDeploymentNodesResponse(SdkResponse):
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this AddDeploymentNodesResponse.
+        r"""Sets the cluster_id of this AddDeploymentNodesResponse.
 
         应用部署的集群ID，与node_id二选一
 
@@ -372,7 +372,7 @@ class AddDeploymentNodesResponse(SdkResponse):
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this AddDeploymentNodesResponse.
+        r"""Gets the updated_at of this AddDeploymentNodesResponse.
 
         更新时间
 
@@ -383,7 +383,7 @@ class AddDeploymentNodesResponse(SdkResponse):
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this AddDeploymentNodesResponse.
+        r"""Sets the updated_at of this AddDeploymentNodesResponse.
 
         更新时间
 
@@ -394,7 +394,7 @@ class AddDeploymentNodesResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this AddDeploymentNodesResponse.
+        r"""Gets the project_id of this AddDeploymentNodesResponse.
 
         项目ID
 
@@ -405,7 +405,7 @@ class AddDeploymentNodesResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this AddDeploymentNodesResponse.
+        r"""Sets the project_id of this AddDeploymentNodesResponse.
 
         项目ID
 
@@ -416,7 +416,7 @@ class AddDeploymentNodesResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this AddDeploymentNodesResponse.
+        r"""Gets the name of this AddDeploymentNodesResponse.
 
         部署名称
 
@@ -427,7 +427,7 @@ class AddDeploymentNodesResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AddDeploymentNodesResponse.
+        r"""Sets the name of this AddDeploymentNodesResponse.
 
         部署名称
 
@@ -438,7 +438,7 @@ class AddDeploymentNodesResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this AddDeploymentNodesResponse.
+        r"""Gets the id of this AddDeploymentNodesResponse.
 
         部署ID
 
@@ -449,7 +449,7 @@ class AddDeploymentNodesResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AddDeploymentNodesResponse.
+        r"""Sets the id of this AddDeploymentNodesResponse.
 
         部署ID
 
@@ -460,7 +460,7 @@ class AddDeploymentNodesResponse(SdkResponse):
 
     @property
     def state(self):
-        """Gets the state of this AddDeploymentNodesResponse.
+        r"""Gets the state of this AddDeploymentNodesResponse.
 
         RUNNING：运行， FREEZE：冻结， UNFREEZE: 解冻， CREATING：创建中， CREATE_FAILED：创建失败， STARTING：启动中， START_FAILED：启动失败， STOPPING：停止中 STOP_FAILED：停止失败 DELETING：删除中 DELETE_FIALED：删除失败 HIBERNATED：休眠
 
@@ -471,7 +471,7 @@ class AddDeploymentNodesResponse(SdkResponse):
 
     @state.setter
     def state(self, state):
-        """Sets the state of this AddDeploymentNodesResponse.
+        r"""Sets the state of this AddDeploymentNodesResponse.
 
         RUNNING：运行， FREEZE：冻结， UNFREEZE: 解冻， CREATING：创建中， CREATE_FAILED：创建失败， STARTING：启动中， START_FAILED：启动失败， STOPPING：停止中 STOP_FAILED：停止失败 DELETING：删除中 DELETE_FIALED：删除失败 HIBERNATED：休眠
 
@@ -482,7 +482,7 @@ class AddDeploymentNodesResponse(SdkResponse):
 
     @property
     def node_num(self):
-        """Gets the node_num of this AddDeploymentNodesResponse.
+        r"""Gets the node_num of this AddDeploymentNodesResponse.
 
         部署的节点数，最小为1，集群部署也为1
 
@@ -493,7 +493,7 @@ class AddDeploymentNodesResponse(SdkResponse):
 
     @node_num.setter
     def node_num(self, node_num):
-        """Sets the node_num of this AddDeploymentNodesResponse.
+        r"""Sets the node_num of this AddDeploymentNodesResponse.
 
         部署的节点数，最小为1，集群部署也为1
 
@@ -504,7 +504,7 @@ class AddDeploymentNodesResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this AddDeploymentNodesResponse.
+        r"""Gets the result of this AddDeploymentNodesResponse.
 
         每个节点的部署结果
 
@@ -515,7 +515,7 @@ class AddDeploymentNodesResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this AddDeploymentNodesResponse.
+        r"""Sets the result of this AddDeploymentNodesResponse.
 
         每个节点的部署结果
 

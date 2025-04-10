@@ -47,7 +47,7 @@ class ListServicesInstancesRequest:
     }
 
     def __init__(self, workspace_id=None, id=None, name=None, limit=None, offset=None, endpoint_id=None, source_id=None, version_id=None, type=None, visibility=None, sort_by=None, order_by=None):
-        """ListServicesInstancesRequest
+        r"""ListServicesInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -119,7 +119,7 @@ class ListServicesInstancesRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ListServicesInstancesRequest.
+        r"""Gets the workspace_id of this ListServicesInstancesRequest.
 
         Workspace的ID
 
@@ -130,7 +130,7 @@ class ListServicesInstancesRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ListServicesInstancesRequest.
+        r"""Sets the workspace_id of this ListServicesInstancesRequest.
 
         Workspace的ID
 
@@ -141,7 +141,7 @@ class ListServicesInstancesRequest:
 
     @property
     def id(self):
-        """Gets the id of this ListServicesInstancesRequest.
+        r"""Gets the id of this ListServicesInstancesRequest.
 
         通过service Instance id检索，32~36位的英文、数字、短横组合
 
@@ -152,7 +152,7 @@ class ListServicesInstancesRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListServicesInstancesRequest.
+        r"""Sets the id of this ListServicesInstancesRequest.
 
         通过service Instance id检索，32~36位的英文、数字、短横组合
 
@@ -163,7 +163,7 @@ class ListServicesInstancesRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListServicesInstancesRequest.
+        r"""Gets the name of this ListServicesInstancesRequest.
 
         通过名字搜索Service Instance，支持模糊查询
 
@@ -174,7 +174,7 @@ class ListServicesInstancesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListServicesInstancesRequest.
+        r"""Sets the name of this ListServicesInstancesRequest.
 
         通过名字搜索Service Instance，支持模糊查询
 
@@ -185,7 +185,7 @@ class ListServicesInstancesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListServicesInstancesRequest.
+        r"""Gets the limit of this ListServicesInstancesRequest.
 
         指定每一页返回的最大条目数，取值范围[1,100]，默认为10。
 
@@ -196,7 +196,7 @@ class ListServicesInstancesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListServicesInstancesRequest.
+        r"""Sets the limit of this ListServicesInstancesRequest.
 
         指定每一页返回的最大条目数，取值范围[1,100]，默认为10。
 
@@ -207,7 +207,7 @@ class ListServicesInstancesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListServicesInstancesRequest.
+        r"""Gets the offset of this ListServicesInstancesRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0，默认为0。
 
@@ -218,7 +218,7 @@ class ListServicesInstancesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListServicesInstancesRequest.
+        r"""Sets the offset of this ListServicesInstancesRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0，默认为0。
 
@@ -229,7 +229,7 @@ class ListServicesInstancesRequest:
 
     @property
     def endpoint_id(self):
-        """Gets the endpoint_id of this ListServicesInstancesRequest.
+        r"""Gets the endpoint_id of this ListServicesInstancesRequest.
 
         通过id检索Endpoint的参数
 
@@ -240,7 +240,7 @@ class ListServicesInstancesRequest:
 
     @endpoint_id.setter
     def endpoint_id(self, endpoint_id):
-        """Sets the endpoint_id of this ListServicesInstancesRequest.
+        r"""Sets the endpoint_id of this ListServicesInstancesRequest.
 
         通过id检索Endpoint的参数
 
@@ -251,7 +251,7 @@ class ListServicesInstancesRequest:
 
     @property
     def source_id(self):
-        """Gets the source_id of this ListServicesInstancesRequest.
+        r"""Gets the source_id of this ListServicesInstancesRequest.
 
         Service ID或者Model ID
 
@@ -262,7 +262,7 @@ class ListServicesInstancesRequest:
 
     @source_id.setter
     def source_id(self, source_id):
-        """Sets the source_id of this ListServicesInstancesRequest.
+        r"""Sets the source_id of this ListServicesInstancesRequest.
 
         Service ID或者Model ID
 
@@ -273,7 +273,7 @@ class ListServicesInstancesRequest:
 
     @property
     def version_id(self):
-        """Gets the version_id of this ListServicesInstancesRequest.
+        r"""Gets the version_id of this ListServicesInstancesRequest.
 
         Service version ID或者Model version ID
 
@@ -284,7 +284,7 @@ class ListServicesInstancesRequest:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this ListServicesInstancesRequest.
+        r"""Sets the version_id of this ListServicesInstancesRequest.
 
         Service version ID或者Model version ID
 
@@ -295,7 +295,7 @@ class ListServicesInstancesRequest:
 
     @property
     def type(self):
-        """Gets the type of this ListServicesInstancesRequest.
+        r"""Gets the type of this ListServicesInstancesRequest.
 
         Service的类型，可选值： - PGSQL_SERVICE：DWS Pay-By-Query - LLM_MODEL：大语言模型
 
@@ -306,7 +306,7 @@ class ListServicesInstancesRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ListServicesInstancesRequest.
+        r"""Sets the type of this ListServicesInstancesRequest.
 
         Service的类型，可选值： - PGSQL_SERVICE：DWS Pay-By-Query - LLM_MODEL：大语言模型
 
@@ -317,7 +317,7 @@ class ListServicesInstancesRequest:
 
     @property
     def visibility(self):
-        """Gets the visibility of this ListServicesInstancesRequest.
+        r"""Gets the visibility of this ListServicesInstancesRequest.
 
         可见性检索的参数，可选值为： - PRIVATE: 私有，用户自己创建的； - PUBLIC:公共，查询所有公共的，包括其他用户创建的； - 默认为空，不填表示不限制，则查出当前用户下的，包括PRIVATE和PUBLIC，不包括其他用户创建的。
 
@@ -328,7 +328,7 @@ class ListServicesInstancesRequest:
 
     @visibility.setter
     def visibility(self, visibility):
-        """Sets the visibility of this ListServicesInstancesRequest.
+        r"""Sets the visibility of this ListServicesInstancesRequest.
 
         可见性检索的参数，可选值为： - PRIVATE: 私有，用户自己创建的； - PUBLIC:公共，查询所有公共的，包括其他用户创建的； - 默认为空，不填表示不限制，则查出当前用户下的，包括PRIVATE和PUBLIC，不包括其他用户创建的。
 
@@ -339,7 +339,7 @@ class ListServicesInstancesRequest:
 
     @property
     def sort_by(self):
-        """Gets the sort_by of this ListServicesInstancesRequest.
+        r"""Gets the sort_by of this ListServicesInstancesRequest.
 
         根据字段排序，可选值： - CREATE_TIME：创建时间 - DURATION: 运行时间
 
@@ -350,7 +350,7 @@ class ListServicesInstancesRequest:
 
     @sort_by.setter
     def sort_by(self, sort_by):
-        """Sets the sort_by of this ListServicesInstancesRequest.
+        r"""Sets the sort_by of this ListServicesInstancesRequest.
 
         根据字段排序，可选值： - CREATE_TIME：创建时间 - DURATION: 运行时间
 
@@ -361,7 +361,7 @@ class ListServicesInstancesRequest:
 
     @property
     def order_by(self):
-        """Gets the order_by of this ListServicesInstancesRequest.
+        r"""Gets the order_by of this ListServicesInstancesRequest.
 
         排序方式，可选值： - ASC：正序排序 - DESC: 倒序排序
 
@@ -372,7 +372,7 @@ class ListServicesInstancesRequest:
 
     @order_by.setter
     def order_by(self, order_by):
-        """Sets the order_by of this ListServicesInstancesRequest.
+        r"""Sets the order_by of this ListServicesInstancesRequest.
 
         排序方式，可选值： - ASC：正序排序 - DESC: 倒序排序
 

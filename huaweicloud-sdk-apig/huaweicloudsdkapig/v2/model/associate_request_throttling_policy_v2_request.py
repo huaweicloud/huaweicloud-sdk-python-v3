@@ -27,7 +27,7 @@ class AssociateRequestThrottlingPolicyV2Request:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """AssociateRequestThrottlingPolicyV2Request
+        r"""AssociateRequestThrottlingPolicyV2Request
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AssociateRequestThrottlingPolicyV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this AssociateRequestThrottlingPolicyV2Request.
+        r"""Gets the instance_id of this AssociateRequestThrottlingPolicyV2Request.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -60,7 +60,7 @@ class AssociateRequestThrottlingPolicyV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this AssociateRequestThrottlingPolicyV2Request.
+        r"""Sets the instance_id of this AssociateRequestThrottlingPolicyV2Request.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -71,7 +71,7 @@ class AssociateRequestThrottlingPolicyV2Request:
 
     @property
     def body(self):
-        """Gets the body of this AssociateRequestThrottlingPolicyV2Request.
+        r"""Gets the body of this AssociateRequestThrottlingPolicyV2Request.
 
         :return: The body of this AssociateRequestThrottlingPolicyV2Request.
         :rtype: :class:`huaweicloudsdkapig.v2.ThrottleApiBindingCreate`
@@ -80,7 +80,7 @@ class AssociateRequestThrottlingPolicyV2Request:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AssociateRequestThrottlingPolicyV2Request.
+        r"""Sets the body of this AssociateRequestThrottlingPolicyV2Request.
 
         :param body: The body of this AssociateRequestThrottlingPolicyV2Request.
         :type body: :class:`huaweicloudsdkapig.v2.ThrottleApiBindingCreate`

@@ -32,7 +32,7 @@ class ShowMetadata2Response(SdkResponse):
     }
 
     def __init__(self, encrypted=None, master_key_name=None, master_key_id=None, ges_metadata=None):
-        """ShowMetadata2Response
+        r"""ShowMetadata2Response
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ShowMetadata2Response(SdkResponse):
 
     @property
     def encrypted(self):
-        """Gets the encrypted of this ShowMetadata2Response.
+        r"""Gets the encrypted of this ShowMetadata2Response.
 
         元数据是否加密
 
@@ -76,7 +76,7 @@ class ShowMetadata2Response(SdkResponse):
 
     @encrypted.setter
     def encrypted(self, encrypted):
-        """Sets the encrypted of this ShowMetadata2Response.
+        r"""Sets the encrypted of this ShowMetadata2Response.
 
         元数据是否加密
 
@@ -87,7 +87,7 @@ class ShowMetadata2Response(SdkResponse):
 
     @property
     def master_key_name(self):
-        """Gets the master_key_name of this ShowMetadata2Response.
+        r"""Gets the master_key_name of this ShowMetadata2Response.
 
         秘钥名称
 
@@ -98,7 +98,7 @@ class ShowMetadata2Response(SdkResponse):
 
     @master_key_name.setter
     def master_key_name(self, master_key_name):
-        """Sets the master_key_name of this ShowMetadata2Response.
+        r"""Sets the master_key_name of this ShowMetadata2Response.
 
         秘钥名称
 
@@ -109,7 +109,7 @@ class ShowMetadata2Response(SdkResponse):
 
     @property
     def master_key_id(self):
-        """Gets the master_key_id of this ShowMetadata2Response.
+        r"""Gets the master_key_id of this ShowMetadata2Response.
 
         秘钥id
 
@@ -120,7 +120,7 @@ class ShowMetadata2Response(SdkResponse):
 
     @master_key_id.setter
     def master_key_id(self, master_key_id):
-        """Sets the master_key_id of this ShowMetadata2Response.
+        r"""Sets the master_key_id of this ShowMetadata2Response.
 
         秘钥id
 
@@ -131,7 +131,7 @@ class ShowMetadata2Response(SdkResponse):
 
     @property
     def ges_metadata(self):
-        """Gets the ges_metadata of this ShowMetadata2Response.
+        r"""Gets the ges_metadata of this ShowMetadata2Response.
 
         :return: The ges_metadata of this ShowMetadata2Response.
         :rtype: :class:`huaweicloudsdkges.v2.ShowMetadataRespGesMetadata`
@@ -140,7 +140,7 @@ class ShowMetadata2Response(SdkResponse):
 
     @ges_metadata.setter
     def ges_metadata(self, ges_metadata):
-        """Sets the ges_metadata of this ShowMetadata2Response.
+        r"""Sets the ges_metadata of this ShowMetadata2Response.
 
         :param ges_metadata: The ges_metadata of this ShowMetadata2Response.
         :type ges_metadata: :class:`huaweicloudsdkges.v2.ShowMetadataRespGesMetadata`

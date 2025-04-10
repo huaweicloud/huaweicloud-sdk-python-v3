@@ -31,7 +31,7 @@ class SyncExecutionNodeErrorDetail:
     }
 
     def __init__(self, node_id=None, error_message=None, begin_time=None, end_time=None):
-        """SyncExecutionNodeErrorDetail
+        r"""SyncExecutionNodeErrorDetail
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class SyncExecutionNodeErrorDetail:
 
     @property
     def node_id(self):
-        """Gets the node_id of this SyncExecutionNodeErrorDetail.
+        r"""Gets the node_id of this SyncExecutionNodeErrorDetail.
 
         流程节点ID
 
@@ -75,7 +75,7 @@ class SyncExecutionNodeErrorDetail:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this SyncExecutionNodeErrorDetail.
+        r"""Sets the node_id of this SyncExecutionNodeErrorDetail.
 
         流程节点ID
 
@@ -86,7 +86,7 @@ class SyncExecutionNodeErrorDetail:
 
     @property
     def error_message(self):
-        """Gets the error_message of this SyncExecutionNodeErrorDetail.
+        r"""Gets the error_message of this SyncExecutionNodeErrorDetail.
 
         错误详细信息
 
@@ -97,7 +97,7 @@ class SyncExecutionNodeErrorDetail:
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this SyncExecutionNodeErrorDetail.
+        r"""Sets the error_message of this SyncExecutionNodeErrorDetail.
 
         错误详细信息
 
@@ -108,7 +108,7 @@ class SyncExecutionNodeErrorDetail:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this SyncExecutionNodeErrorDetail.
+        r"""Gets the begin_time of this SyncExecutionNodeErrorDetail.
 
         流程实例创建时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
 
@@ -119,7 +119,7 @@ class SyncExecutionNodeErrorDetail:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this SyncExecutionNodeErrorDetail.
+        r"""Sets the begin_time of this SyncExecutionNodeErrorDetail.
 
         流程实例创建时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
 
@@ -130,7 +130,7 @@ class SyncExecutionNodeErrorDetail:
 
     @property
     def end_time(self):
-        """Gets the end_time of this SyncExecutionNodeErrorDetail.
+        r"""Gets the end_time of this SyncExecutionNodeErrorDetail.
 
         流程实例结束时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
 
@@ -141,7 +141,7 @@ class SyncExecutionNodeErrorDetail:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this SyncExecutionNodeErrorDetail.
+        r"""Sets the end_time of this SyncExecutionNodeErrorDetail.
 
         流程实例结束时间，格式：yyyy-MM-ddTHH:mm:ssZ，UTC时间
 

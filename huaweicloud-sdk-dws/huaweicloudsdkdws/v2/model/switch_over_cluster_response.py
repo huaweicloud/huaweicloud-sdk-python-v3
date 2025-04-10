@@ -24,7 +24,7 @@ class SwitchOverClusterResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SwitchOverClusterResponse
+        r"""SwitchOverClusterResponse
 
         The model defined in huaweicloud sdk
 

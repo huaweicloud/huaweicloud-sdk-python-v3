@@ -43,7 +43,7 @@ class CreateSecurityGroupRuleOption:
     }
 
     def __init__(self, security_group_id=None, description=None, direction=None, ethertype=None, protocol=None, port_range_min=None, port_range_max=None, remote_ip_prefix=None, remote_group_id=None, remote_address_group_id=None):
-        """CreateSecurityGroupRuleOption
+        r"""CreateSecurityGroupRuleOption
 
         The model defined in huaweicloud sdk
 
@@ -104,7 +104,7 @@ class CreateSecurityGroupRuleOption:
 
     @property
     def security_group_id(self):
-        """Gets the security_group_id of this CreateSecurityGroupRuleOption.
+        r"""Gets the security_group_id of this CreateSecurityGroupRuleOption.
 
         安全组ID
 
@@ -115,7 +115,7 @@ class CreateSecurityGroupRuleOption:
 
     @security_group_id.setter
     def security_group_id(self, security_group_id):
-        """Sets the security_group_id of this CreateSecurityGroupRuleOption.
+        r"""Sets the security_group_id of this CreateSecurityGroupRuleOption.
 
         安全组ID
 
@@ -126,7 +126,7 @@ class CreateSecurityGroupRuleOption:
 
     @property
     def description(self):
-        """Gets the description of this CreateSecurityGroupRuleOption.
+        r"""Gets the description of this CreateSecurityGroupRuleOption.
 
         功能说明：安全组规则描述 取值范围：0-255个字符，支持数字、字母、中文字符
 
@@ -137,7 +137,7 @@ class CreateSecurityGroupRuleOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateSecurityGroupRuleOption.
+        r"""Sets the description of this CreateSecurityGroupRuleOption.
 
         功能说明：安全组规则描述 取值范围：0-255个字符，支持数字、字母、中文字符
 
@@ -148,7 +148,7 @@ class CreateSecurityGroupRuleOption:
 
     @property
     def direction(self):
-        """Gets the direction of this CreateSecurityGroupRuleOption.
+        r"""Gets the direction of this CreateSecurityGroupRuleOption.
 
         功能说明：出入控制方向 取值范围： - egress：出方向 - ingress：入方向
 
@@ -159,7 +159,7 @@ class CreateSecurityGroupRuleOption:
 
     @direction.setter
     def direction(self, direction):
-        """Sets the direction of this CreateSecurityGroupRuleOption.
+        r"""Sets the direction of this CreateSecurityGroupRuleOption.
 
         功能说明：出入控制方向 取值范围： - egress：出方向 - ingress：入方向
 
@@ -170,7 +170,7 @@ class CreateSecurityGroupRuleOption:
 
     @property
     def ethertype(self):
-        """Gets the ethertype of this CreateSecurityGroupRuleOption.
+        r"""Gets the ethertype of this CreateSecurityGroupRuleOption.
 
         功能说明：IP地址协议类型 取值范围：IPv4,IPv6 约束：默认值为IPv4
 
@@ -181,7 +181,7 @@ class CreateSecurityGroupRuleOption:
 
     @ethertype.setter
     def ethertype(self, ethertype):
-        """Sets the ethertype of this CreateSecurityGroupRuleOption.
+        r"""Sets the ethertype of this CreateSecurityGroupRuleOption.
 
         功能说明：IP地址协议类型 取值范围：IPv4,IPv6 约束：默认值为IPv4
 
@@ -192,7 +192,7 @@ class CreateSecurityGroupRuleOption:
 
     @property
     def protocol(self):
-        """Gets the protocol of this CreateSecurityGroupRuleOption.
+        r"""Gets the protocol of this CreateSecurityGroupRuleOption.
 
         功能说明：协议类型 取值范围：tcp、udp、icmp或IP协议编号（0~255） 约束：为空表示支持所有协议
 
@@ -203,7 +203,7 @@ class CreateSecurityGroupRuleOption:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this CreateSecurityGroupRuleOption.
+        r"""Sets the protocol of this CreateSecurityGroupRuleOption.
 
         功能说明：协议类型 取值范围：tcp、udp、icmp或IP协议编号（0~255） 约束：为空表示支持所有协议
 
@@ -214,7 +214,7 @@ class CreateSecurityGroupRuleOption:
 
     @property
     def port_range_min(self):
-        """Gets the port_range_min of this CreateSecurityGroupRuleOption.
+        r"""Gets the port_range_min of this CreateSecurityGroupRuleOption.
 
         功能说明：起始端口值 取值范围：1~65535 约束：不能大于port_range_max的值，为空表示所有端口，如果协议是icmp类型，取值范围请参见 [安全组规则icmp协议名称对应关系表](https://support.huaweicloud.com/api-vpc/vpc_api_0009.html)
 
@@ -225,7 +225,7 @@ class CreateSecurityGroupRuleOption:
 
     @port_range_min.setter
     def port_range_min(self, port_range_min):
-        """Sets the port_range_min of this CreateSecurityGroupRuleOption.
+        r"""Sets the port_range_min of this CreateSecurityGroupRuleOption.
 
         功能说明：起始端口值 取值范围：1~65535 约束：不能大于port_range_max的值，为空表示所有端口，如果协议是icmp类型，取值范围请参见 [安全组规则icmp协议名称对应关系表](https://support.huaweicloud.com/api-vpc/vpc_api_0009.html)
 
@@ -236,7 +236,7 @@ class CreateSecurityGroupRuleOption:
 
     @property
     def port_range_max(self):
-        """Gets the port_range_max of this CreateSecurityGroupRuleOption.
+        r"""Gets the port_range_max of this CreateSecurityGroupRuleOption.
 
         功能说明：结束端口值 取值范围：1~65535 约束：协议不为icmp时，取值不能小于port_range_min的值，为空表示所有端口，如果协议是icmp类型，取值范围请参见 [安全组规则icmp协议名称对应关系表](https://support.huaweicloud.com/api-vpc/vpc_api_0009.html)
 
@@ -247,7 +247,7 @@ class CreateSecurityGroupRuleOption:
 
     @port_range_max.setter
     def port_range_max(self, port_range_max):
-        """Sets the port_range_max of this CreateSecurityGroupRuleOption.
+        r"""Sets the port_range_max of this CreateSecurityGroupRuleOption.
 
         功能说明：结束端口值 取值范围：1~65535 约束：协议不为icmp时，取值不能小于port_range_min的值，为空表示所有端口，如果协议是icmp类型，取值范围请参见 [安全组规则icmp协议名称对应关系表](https://support.huaweicloud.com/api-vpc/vpc_api_0009.html)
 
@@ -258,7 +258,7 @@ class CreateSecurityGroupRuleOption:
 
     @property
     def remote_ip_prefix(self):
-        """Gets the remote_ip_prefix of this CreateSecurityGroupRuleOption.
+        r"""Gets the remote_ip_prefix of this CreateSecurityGroupRuleOption.
 
         功能说明：远端IP地址，当direction是egress时为虚拟机访问端的地址，当direction是ingress时为访问虚拟机的地址 取值范围：IP地址，或者cidr格式 约束：和remote_group_id，remote_address_group_id互斥
 
@@ -269,7 +269,7 @@ class CreateSecurityGroupRuleOption:
 
     @remote_ip_prefix.setter
     def remote_ip_prefix(self, remote_ip_prefix):
-        """Sets the remote_ip_prefix of this CreateSecurityGroupRuleOption.
+        r"""Sets the remote_ip_prefix of this CreateSecurityGroupRuleOption.
 
         功能说明：远端IP地址，当direction是egress时为虚拟机访问端的地址，当direction是ingress时为访问虚拟机的地址 取值范围：IP地址，或者cidr格式 约束：和remote_group_id，remote_address_group_id互斥
 
@@ -280,7 +280,7 @@ class CreateSecurityGroupRuleOption:
 
     @property
     def remote_group_id(self):
-        """Gets the remote_group_id of this CreateSecurityGroupRuleOption.
+        r"""Gets the remote_group_id of this CreateSecurityGroupRuleOption.
 
         功能说明：对端安全组ID 约束：和remote_ip_prefix，remote_address_group_id互斥
 
@@ -291,7 +291,7 @@ class CreateSecurityGroupRuleOption:
 
     @remote_group_id.setter
     def remote_group_id(self, remote_group_id):
-        """Sets the remote_group_id of this CreateSecurityGroupRuleOption.
+        r"""Sets the remote_group_id of this CreateSecurityGroupRuleOption.
 
         功能说明：对端安全组ID 约束：和remote_ip_prefix，remote_address_group_id互斥
 
@@ -302,7 +302,7 @@ class CreateSecurityGroupRuleOption:
 
     @property
     def remote_address_group_id(self):
-        """Gets the remote_address_group_id of this CreateSecurityGroupRuleOption.
+        r"""Gets the remote_address_group_id of this CreateSecurityGroupRuleOption.
 
         功能说明：远端IP地址组ID 约束：和remote_ip_prefix，remote_group_id互斥
 
@@ -313,7 +313,7 @@ class CreateSecurityGroupRuleOption:
 
     @remote_address_group_id.setter
     def remote_address_group_id(self, remote_address_group_id):
-        """Sets the remote_address_group_id of this CreateSecurityGroupRuleOption.
+        r"""Sets the remote_address_group_id of this CreateSecurityGroupRuleOption.
 
         功能说明：远端IP地址组ID 约束：和remote_ip_prefix，remote_group_id互斥
 

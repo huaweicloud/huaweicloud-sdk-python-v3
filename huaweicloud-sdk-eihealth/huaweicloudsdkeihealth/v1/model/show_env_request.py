@@ -23,7 +23,7 @@ class ShowEnvRequest:
     }
 
     def __init__(self):
-        """ShowEnvRequest
+        r"""ShowEnvRequest
 
         The model defined in huaweicloud sdk
 

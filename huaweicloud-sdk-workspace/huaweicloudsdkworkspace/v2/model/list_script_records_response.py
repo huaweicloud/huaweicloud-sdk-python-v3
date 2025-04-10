@@ -28,7 +28,7 @@ class ListScriptRecordsResponse(SdkResponse):
     }
 
     def __init__(self, count=None, script_records=None):
-        """ListScriptRecordsResponse
+        r"""ListScriptRecordsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListScriptRecordsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListScriptRecordsResponse.
+        r"""Gets the count of this ListScriptRecordsResponse.
 
         总数。
 
@@ -62,7 +62,7 @@ class ListScriptRecordsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListScriptRecordsResponse.
+        r"""Sets the count of this ListScriptRecordsResponse.
 
         总数。
 
@@ -73,7 +73,7 @@ class ListScriptRecordsResponse(SdkResponse):
 
     @property
     def script_records(self):
-        """Gets the script_records of this ListScriptRecordsResponse.
+        r"""Gets the script_records of this ListScriptRecordsResponse.
 
         脚本执行记录列表。
 
@@ -84,7 +84,7 @@ class ListScriptRecordsResponse(SdkResponse):
 
     @script_records.setter
     def script_records(self, script_records):
-        """Sets the script_records of this ListScriptRecordsResponse.
+        r"""Sets the script_records of this ListScriptRecordsResponse.
 
         脚本执行记录列表。
 

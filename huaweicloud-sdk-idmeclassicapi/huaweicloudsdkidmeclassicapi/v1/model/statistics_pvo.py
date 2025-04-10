@@ -27,7 +27,7 @@ class StatisticsPVO:
     }
 
     def __init__(self, end_time=None, start_time=None):
-        """StatisticsPVO
+        r"""StatisticsPVO
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class StatisticsPVO:
 
     @property
     def end_time(self):
-        """Gets the end_time of this StatisticsPVO.
+        r"""Gets the end_time of this StatisticsPVO.
 
         **参数解释：**  结束时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -59,7 +59,7 @@ class StatisticsPVO:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this StatisticsPVO.
+        r"""Sets the end_time of this StatisticsPVO.
 
         **参数解释：**  结束时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -70,7 +70,7 @@ class StatisticsPVO:
 
     @property
     def start_time(self):
-        """Gets the start_time of this StatisticsPVO.
+        r"""Gets the start_time of this StatisticsPVO.
 
         **参数解释：**  开始时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -81,7 +81,7 @@ class StatisticsPVO:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this StatisticsPVO.
+        r"""Sets the start_time of this StatisticsPVO.
 
         **参数解释：**  开始时间。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 

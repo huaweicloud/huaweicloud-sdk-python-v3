@@ -28,7 +28,7 @@ class ListServicesResponse(SdkResponse):
     }
 
     def __init__(self, count=None, services=None):
-        """ListServicesResponse
+        r"""ListServicesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListServicesResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListServicesResponse.
+        r"""Gets the count of this ListServicesResponse.
 
         满足条件的端点个数
 
@@ -62,7 +62,7 @@ class ListServicesResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListServicesResponse.
+        r"""Sets the count of this ListServicesResponse.
 
         满足条件的端点个数
 
@@ -73,7 +73,7 @@ class ListServicesResponse(SdkResponse):
 
     @property
     def services(self):
-        """Gets the services of this ListServicesResponse.
+        r"""Gets the services of this ListServicesResponse.
 
         服务列表
 
@@ -84,7 +84,7 @@ class ListServicesResponse(SdkResponse):
 
     @services.setter
     def services(self, services):
-        """Sets the services of this ListServicesResponse.
+        r"""Sets the services of this ListServicesResponse.
 
         服务列表
 

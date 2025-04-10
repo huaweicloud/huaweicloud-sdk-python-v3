@@ -26,7 +26,7 @@ class ExecuteDesktopPoolScriptResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None):
-        """ExecuteDesktopPoolScriptResponse
+        r"""ExecuteDesktopPoolScriptResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ExecuteDesktopPoolScriptResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this ExecuteDesktopPoolScriptResponse.
+        r"""Gets the task_id of this ExecuteDesktopPoolScriptResponse.
 
         任务id。
 
@@ -55,7 +55,7 @@ class ExecuteDesktopPoolScriptResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ExecuteDesktopPoolScriptResponse.
+        r"""Sets the task_id of this ExecuteDesktopPoolScriptResponse.
 
         任务id。
 

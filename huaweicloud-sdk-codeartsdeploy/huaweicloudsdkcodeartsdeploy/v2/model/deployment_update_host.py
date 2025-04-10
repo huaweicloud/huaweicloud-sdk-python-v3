@@ -37,7 +37,7 @@ class DeploymentUpdateHost:
     }
 
     def __init__(self, host_name=None, ip=None, port=None, as_proxy=None, proxy_host_id=None, authorization=None, install_icagent=None):
-        """DeploymentUpdateHost
+        r"""DeploymentUpdateHost
 
         The model defined in huaweicloud sdk
 
@@ -80,7 +80,7 @@ class DeploymentUpdateHost:
 
     @property
     def host_name(self):
-        """Gets the host_name of this DeploymentUpdateHost.
+        r"""Gets the host_name of this DeploymentUpdateHost.
 
         主机名称
 
@@ -91,7 +91,7 @@ class DeploymentUpdateHost:
 
     @host_name.setter
     def host_name(self, host_name):
-        """Sets the host_name of this DeploymentUpdateHost.
+        r"""Sets the host_name of this DeploymentUpdateHost.
 
         主机名称
 
@@ -102,7 +102,7 @@ class DeploymentUpdateHost:
 
     @property
     def ip(self):
-        """Gets the ip of this DeploymentUpdateHost.
+        r"""Gets the ip of this DeploymentUpdateHost.
 
         IP，请输入弹性ip格式：161.17.101.12
 
@@ -113,7 +113,7 @@ class DeploymentUpdateHost:
 
     @ip.setter
     def ip(self, ip):
-        """Sets the ip of this DeploymentUpdateHost.
+        r"""Sets the ip of this DeploymentUpdateHost.
 
         IP，请输入弹性ip格式：161.17.101.12
 
@@ -124,7 +124,7 @@ class DeploymentUpdateHost:
 
     @property
     def port(self):
-        """Gets the port of this DeploymentUpdateHost.
+        r"""Gets the port of this DeploymentUpdateHost.
 
         ssh端口，如：22
 
@@ -135,7 +135,7 @@ class DeploymentUpdateHost:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this DeploymentUpdateHost.
+        r"""Sets the port of this DeploymentUpdateHost.
 
         ssh端口，如：22
 
@@ -146,7 +146,7 @@ class DeploymentUpdateHost:
 
     @property
     def as_proxy(self):
-        """Gets the as_proxy of this DeploymentUpdateHost.
+        r"""Gets the as_proxy of this DeploymentUpdateHost.
 
         是否为代理机
 
@@ -157,7 +157,7 @@ class DeploymentUpdateHost:
 
     @as_proxy.setter
     def as_proxy(self, as_proxy):
-        """Sets the as_proxy of this DeploymentUpdateHost.
+        r"""Sets the as_proxy of this DeploymentUpdateHost.
 
         是否为代理机
 
@@ -168,7 +168,7 @@ class DeploymentUpdateHost:
 
     @property
     def proxy_host_id(self):
-        """Gets the proxy_host_id of this DeploymentUpdateHost.
+        r"""Gets the proxy_host_id of this DeploymentUpdateHost.
 
         代理机id
 
@@ -179,7 +179,7 @@ class DeploymentUpdateHost:
 
     @proxy_host_id.setter
     def proxy_host_id(self, proxy_host_id):
-        """Sets the proxy_host_id of this DeploymentUpdateHost.
+        r"""Sets the proxy_host_id of this DeploymentUpdateHost.
 
         代理机id
 
@@ -190,7 +190,7 @@ class DeploymentUpdateHost:
 
     @property
     def authorization(self):
-        """Gets the authorization of this DeploymentUpdateHost.
+        r"""Gets the authorization of this DeploymentUpdateHost.
 
         :return: The authorization of this DeploymentUpdateHost.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.DeploymentHostAuthorizationBody`
@@ -199,7 +199,7 @@ class DeploymentUpdateHost:
 
     @authorization.setter
     def authorization(self, authorization):
-        """Sets the authorization of this DeploymentUpdateHost.
+        r"""Sets the authorization of this DeploymentUpdateHost.
 
         :param authorization: The authorization of this DeploymentUpdateHost.
         :type authorization: :class:`huaweicloudsdkcodeartsdeploy.v2.DeploymentHostAuthorizationBody`
@@ -208,7 +208,7 @@ class DeploymentUpdateHost:
 
     @property
     def install_icagent(self):
-        """Gets the install_icagent of this DeploymentUpdateHost.
+        r"""Gets the install_icagent of this DeploymentUpdateHost.
 
         免费启用应用运维服务（AOM），提供指标监控、日志查询、告警功能（自动安装数据采集器 ICAgent，仅支持华为云linux主机）
 
@@ -219,7 +219,7 @@ class DeploymentUpdateHost:
 
     @install_icagent.setter
     def install_icagent(self, install_icagent):
-        """Sets the install_icagent of this DeploymentUpdateHost.
+        r"""Sets the install_icagent of this DeploymentUpdateHost.
 
         免费启用应用运维服务（AOM），提供指标监控、日志查询、告警功能（自动安装数据采集器 ICAgent，仅支持华为云linux主机）
 

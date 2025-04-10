@@ -31,7 +31,7 @@ class ListBigkeyScanTasksRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, status=None):
-        """ListBigkeyScanTasksRequest
+        r"""ListBigkeyScanTasksRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListBigkeyScanTasksRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListBigkeyScanTasksRequest.
+        r"""Gets the instance_id of this ListBigkeyScanTasksRequest.
 
         实例ID。
 
@@ -74,7 +74,7 @@ class ListBigkeyScanTasksRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListBigkeyScanTasksRequest.
+        r"""Sets the instance_id of this ListBigkeyScanTasksRequest.
 
         实例ID。
 
@@ -85,7 +85,7 @@ class ListBigkeyScanTasksRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListBigkeyScanTasksRequest.
+        r"""Gets the offset of this ListBigkeyScanTasksRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -96,7 +96,7 @@ class ListBigkeyScanTasksRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListBigkeyScanTasksRequest.
+        r"""Sets the offset of this ListBigkeyScanTasksRequest.
 
         偏移量，表示从此偏移量开始查询， offset大于等于0
 
@@ -107,7 +107,7 @@ class ListBigkeyScanTasksRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListBigkeyScanTasksRequest.
+        r"""Gets the limit of this ListBigkeyScanTasksRequest.
 
         每页显示的条目数量。
 
@@ -118,7 +118,7 @@ class ListBigkeyScanTasksRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListBigkeyScanTasksRequest.
+        r"""Sets the limit of this ListBigkeyScanTasksRequest.
 
         每页显示的条目数量。
 
@@ -129,7 +129,7 @@ class ListBigkeyScanTasksRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListBigkeyScanTasksRequest.
+        r"""Gets the status of this ListBigkeyScanTasksRequest.
 
         分析任务状态
 
@@ -140,7 +140,7 @@ class ListBigkeyScanTasksRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListBigkeyScanTasksRequest.
+        r"""Sets the status of this ListBigkeyScanTasksRequest.
 
         分析任务状态
 

@@ -32,7 +32,7 @@ class ListOrganizationalUnitsRequest:
     }
 
     def __init__(self, x_security_token=None, parent_id=None, limit=None, marker=None):
-        """ListOrganizationalUnitsRequest
+        r"""ListOrganizationalUnitsRequest
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListOrganizationalUnitsRequest:
 
     @property
     def x_security_token(self):
-        """Gets the x_security_token of this ListOrganizationalUnitsRequest.
+        r"""Gets the x_security_token of this ListOrganizationalUnitsRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -76,7 +76,7 @@ class ListOrganizationalUnitsRequest:
 
     @x_security_token.setter
     def x_security_token(self, x_security_token):
-        """Sets the x_security_token of this ListOrganizationalUnitsRequest.
+        r"""Sets the x_security_token of this ListOrganizationalUnitsRequest.
 
         如果正在使用临时安全凭据，则此header是必需的，该值是临时安全凭据的安全令牌（会话令牌）。
 
@@ -87,7 +87,7 @@ class ListOrganizationalUnitsRequest:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this ListOrganizationalUnitsRequest.
+        r"""Gets the parent_id of this ListOrganizationalUnitsRequest.
 
         父节点（根或组织单元）的唯一标识符（ID）。
 
@@ -98,7 +98,7 @@ class ListOrganizationalUnitsRequest:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this ListOrganizationalUnitsRequest.
+        r"""Sets the parent_id of this ListOrganizationalUnitsRequest.
 
         父节点（根或组织单元）的唯一标识符（ID）。
 
@@ -109,7 +109,7 @@ class ListOrganizationalUnitsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListOrganizationalUnitsRequest.
+        r"""Gets the limit of this ListOrganizationalUnitsRequest.
 
         页面中最大结果数量。
 
@@ -120,7 +120,7 @@ class ListOrganizationalUnitsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListOrganizationalUnitsRequest.
+        r"""Sets the limit of this ListOrganizationalUnitsRequest.
 
         页面中最大结果数量。
 
@@ -131,7 +131,7 @@ class ListOrganizationalUnitsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListOrganizationalUnitsRequest.
+        r"""Gets the marker of this ListOrganizationalUnitsRequest.
 
         分页标记。
 
@@ -142,7 +142,7 @@ class ListOrganizationalUnitsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListOrganizationalUnitsRequest.
+        r"""Sets the marker of this ListOrganizationalUnitsRequest.
 
         分页标记。
 

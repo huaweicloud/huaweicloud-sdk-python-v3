@@ -45,7 +45,7 @@ class MessagesEntity:
     }
 
     def __init__(self, topic=None, partition=None, key=None, value=None, size=None, timestamp=None, huge_message=None, message_offset=None, message_id=None, app_id=None, tag=None):
-        """MessagesEntity
+        r"""MessagesEntity
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class MessagesEntity:
 
     @property
     def topic(self):
-        """Gets the topic of this MessagesEntity.
+        r"""Gets the topic of this MessagesEntity.
 
         topic名称。
 
@@ -124,7 +124,7 @@ class MessagesEntity:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this MessagesEntity.
+        r"""Sets the topic of this MessagesEntity.
 
         topic名称。
 
@@ -135,7 +135,7 @@ class MessagesEntity:
 
     @property
     def partition(self):
-        """Gets the partition of this MessagesEntity.
+        r"""Gets the partition of this MessagesEntity.
 
         消息所在的分区。
 
@@ -146,7 +146,7 @@ class MessagesEntity:
 
     @partition.setter
     def partition(self, partition):
-        """Sets the partition of this MessagesEntity.
+        r"""Sets the partition of this MessagesEntity.
 
         消息所在的分区。
 
@@ -157,7 +157,7 @@ class MessagesEntity:
 
     @property
     def key(self):
-        """Gets the key of this MessagesEntity.
+        r"""Gets the key of this MessagesEntity.
 
         消息key。
 
@@ -168,7 +168,7 @@ class MessagesEntity:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this MessagesEntity.
+        r"""Sets the key of this MessagesEntity.
 
         消息key。
 
@@ -179,7 +179,7 @@ class MessagesEntity:
 
     @property
     def value(self):
-        """Gets the value of this MessagesEntity.
+        r"""Gets the value of this MessagesEntity.
 
         消息内容。
 
@@ -190,7 +190,7 @@ class MessagesEntity:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this MessagesEntity.
+        r"""Sets the value of this MessagesEntity.
 
         消息内容。
 
@@ -201,7 +201,7 @@ class MessagesEntity:
 
     @property
     def size(self):
-        """Gets the size of this MessagesEntity.
+        r"""Gets the size of this MessagesEntity.
 
         消息大小。
 
@@ -212,7 +212,7 @@ class MessagesEntity:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this MessagesEntity.
+        r"""Sets the size of this MessagesEntity.
 
         消息大小。
 
@@ -223,7 +223,7 @@ class MessagesEntity:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this MessagesEntity.
+        r"""Gets the timestamp of this MessagesEntity.
 
         生产消息的时间。 格式为Unix时间戳。单位为毫秒。
 
@@ -234,7 +234,7 @@ class MessagesEntity:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this MessagesEntity.
+        r"""Sets the timestamp of this MessagesEntity.
 
         生产消息的时间。 格式为Unix时间戳。单位为毫秒。
 
@@ -245,7 +245,7 @@ class MessagesEntity:
 
     @property
     def huge_message(self):
-        """Gets the huge_message of this MessagesEntity.
+        r"""Gets the huge_message of this MessagesEntity.
 
         大数据标识。
 
@@ -256,7 +256,7 @@ class MessagesEntity:
 
     @huge_message.setter
     def huge_message(self, huge_message):
-        """Sets the huge_message of this MessagesEntity.
+        r"""Sets the huge_message of this MessagesEntity.
 
         大数据标识。
 
@@ -267,7 +267,7 @@ class MessagesEntity:
 
     @property
     def message_offset(self):
-        """Gets the message_offset of this MessagesEntity.
+        r"""Gets the message_offset of this MessagesEntity.
 
         消息偏移量。
 
@@ -278,7 +278,7 @@ class MessagesEntity:
 
     @message_offset.setter
     def message_offset(self, message_offset):
-        """Sets the message_offset of this MessagesEntity.
+        r"""Sets the message_offset of this MessagesEntity.
 
         消息偏移量。
 
@@ -289,7 +289,7 @@ class MessagesEntity:
 
     @property
     def message_id(self):
-        """Gets the message_id of this MessagesEntity.
+        r"""Gets the message_id of this MessagesEntity.
 
         消息ID。
 
@@ -300,7 +300,7 @@ class MessagesEntity:
 
     @message_id.setter
     def message_id(self, message_id):
-        """Sets the message_id of this MessagesEntity.
+        r"""Sets the message_id of this MessagesEntity.
 
         消息ID。
 
@@ -311,7 +311,7 @@ class MessagesEntity:
 
     @property
     def app_id(self):
-        """Gets the app_id of this MessagesEntity.
+        r"""Gets the app_id of this MessagesEntity.
 
         应用ID。
 
@@ -322,7 +322,7 @@ class MessagesEntity:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this MessagesEntity.
+        r"""Sets the app_id of this MessagesEntity.
 
         应用ID。
 
@@ -333,7 +333,7 @@ class MessagesEntity:
 
     @property
     def tag(self):
-        """Gets the tag of this MessagesEntity.
+        r"""Gets the tag of this MessagesEntity.
 
         消息标签。
 
@@ -344,7 +344,7 @@ class MessagesEntity:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this MessagesEntity.
+        r"""Sets the tag of this MessagesEntity.
 
         消息标签。
 

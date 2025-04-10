@@ -25,7 +25,7 @@ class ShowOptimizationTaskResultRequest:
     }
 
     def __init__(self, task_id=None):
-        """ShowOptimizationTaskResultRequest
+        r"""ShowOptimizationTaskResultRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowOptimizationTaskResultRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowOptimizationTaskResultRequest.
+        r"""Gets the task_id of this ShowOptimizationTaskResultRequest.
 
         分子优化任务ID
 
@@ -53,7 +53,7 @@ class ShowOptimizationTaskResultRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowOptimizationTaskResultRequest.
+        r"""Sets the task_id of this ShowOptimizationTaskResultRequest.
 
         分子优化任务ID
 

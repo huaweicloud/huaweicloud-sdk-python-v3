@@ -30,7 +30,7 @@ class ShowDeviceTwinResponse(SdkResponse):
     }
 
     def __init__(self, property_visitors=None, twin=None, access_protocol=None):
-        """ShowDeviceTwinResponse
+        r"""ShowDeviceTwinResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowDeviceTwinResponse(SdkResponse):
 
     @property
     def property_visitors(self):
-        """Gets the property_visitors of this ShowDeviceTwinResponse.
+        r"""Gets the property_visitors of this ShowDeviceTwinResponse.
 
         :return: The property_visitors of this ShowDeviceTwinResponse.
         :rtype: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitors`
@@ -67,7 +67,7 @@ class ShowDeviceTwinResponse(SdkResponse):
 
     @property_visitors.setter
     def property_visitors(self, property_visitors):
-        """Sets the property_visitors of this ShowDeviceTwinResponse.
+        r"""Sets the property_visitors of this ShowDeviceTwinResponse.
 
         :param property_visitors: The property_visitors of this ShowDeviceTwinResponse.
         :type property_visitors: :class:`huaweicloudsdkief.v1.ValueInPropertyVisitors`
@@ -76,7 +76,7 @@ class ShowDeviceTwinResponse(SdkResponse):
 
     @property
     def twin(self):
-        """Gets the twin of this ShowDeviceTwinResponse.
+        r"""Gets the twin of this ShowDeviceTwinResponse.
 
         :return: The twin of this ShowDeviceTwinResponse.
         :rtype: :class:`huaweicloudsdkief.v1.ValueInTwinResponse`
@@ -85,7 +85,7 @@ class ShowDeviceTwinResponse(SdkResponse):
 
     @twin.setter
     def twin(self, twin):
-        """Sets the twin of this ShowDeviceTwinResponse.
+        r"""Sets the twin of this ShowDeviceTwinResponse.
 
         :param twin: The twin of this ShowDeviceTwinResponse.
         :type twin: :class:`huaweicloudsdkief.v1.ValueInTwinResponse`
@@ -94,7 +94,7 @@ class ShowDeviceTwinResponse(SdkResponse):
 
     @property
     def access_protocol(self):
-        """Gets the access_protocol of this ShowDeviceTwinResponse.
+        r"""Gets the access_protocol of this ShowDeviceTwinResponse.
 
         访问协议，有如下选项： - userdefine：自定义协议 - modbus：modbus协议 - opc-ua：opc-ua协议
 
@@ -105,7 +105,7 @@ class ShowDeviceTwinResponse(SdkResponse):
 
     @access_protocol.setter
     def access_protocol(self, access_protocol):
-        """Sets the access_protocol of this ShowDeviceTwinResponse.
+        r"""Sets the access_protocol of this ShowDeviceTwinResponse.
 
         访问协议，有如下选项： - userdefine：自定义协议 - modbus：modbus协议 - opc-ua：opc-ua协议
 

@@ -49,7 +49,7 @@ class FinalReport:
     }
 
     def __init__(self, generated_time=None, wide_table_num=None, user_complete_degree=None, item_complete_degree=None, bhv_count=None, user_long_feature_report=None, user_float_feature_report=None, user_str_feature_report=None, user_str_array_feature_report=None, item_long_feature_report=None, item_float_feature_report=None, item_str_feature_report=None, item_str_array_feature_report=None):
-        """FinalReport
+        r"""FinalReport
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class FinalReport:
 
     @property
     def generated_time(self):
-        """Gets the generated_time of this FinalReport.
+        r"""Gets the generated_time of this FinalReport.
 
         报告生成时间。
 
@@ -138,7 +138,7 @@ class FinalReport:
 
     @generated_time.setter
     def generated_time(self, generated_time):
-        """Sets the generated_time of this FinalReport.
+        r"""Sets the generated_time of this FinalReport.
 
         报告生成时间。
 
@@ -149,7 +149,7 @@ class FinalReport:
 
     @property
     def wide_table_num(self):
-        """Gets the wide_table_num of this FinalReport.
+        r"""Gets the wide_table_num of this FinalReport.
 
         宽表条目数，行为数据去重以后的数目。
 
@@ -160,7 +160,7 @@ class FinalReport:
 
     @wide_table_num.setter
     def wide_table_num(self, wide_table_num):
-        """Sets the wide_table_num of this FinalReport.
+        r"""Sets the wide_table_num of this FinalReport.
 
         宽表条目数，行为数据去重以后的数目。
 
@@ -171,7 +171,7 @@ class FinalReport:
 
     @property
     def user_complete_degree(self):
-        """Gets the user_complete_degree of this FinalReport.
+        r"""Gets the user_complete_degree of this FinalReport.
 
         用户齐全度，一条行为中的用户是否在产生这条行为的时候拥有画像。
 
@@ -182,7 +182,7 @@ class FinalReport:
 
     @user_complete_degree.setter
     def user_complete_degree(self, user_complete_degree):
-        """Sets the user_complete_degree of this FinalReport.
+        r"""Sets the user_complete_degree of this FinalReport.
 
         用户齐全度，一条行为中的用户是否在产生这条行为的时候拥有画像。
 
@@ -193,7 +193,7 @@ class FinalReport:
 
     @property
     def item_complete_degree(self):
-        """Gets the item_complete_degree of this FinalReport.
+        r"""Gets the item_complete_degree of this FinalReport.
 
         物品齐全度，一条行为中的物品是否在这条行为产生的时候拥有画像。
 
@@ -204,7 +204,7 @@ class FinalReport:
 
     @item_complete_degree.setter
     def item_complete_degree(self, item_complete_degree):
-        """Sets the item_complete_degree of this FinalReport.
+        r"""Sets the item_complete_degree of this FinalReport.
 
         物品齐全度，一条行为中的物品是否在这条行为产生的时候拥有画像。
 
@@ -215,7 +215,7 @@ class FinalReport:
 
     @property
     def bhv_count(self):
-        """Gets the bhv_count of this FinalReport.
+        r"""Gets the bhv_count of this FinalReport.
 
         行为次数统计。
 
@@ -226,7 +226,7 @@ class FinalReport:
 
     @bhv_count.setter
     def bhv_count(self, bhv_count):
-        """Sets the bhv_count of this FinalReport.
+        r"""Sets the bhv_count of this FinalReport.
 
         行为次数统计。
 
@@ -237,7 +237,7 @@ class FinalReport:
 
     @property
     def user_long_feature_report(self):
-        """Gets the user_long_feature_report of this FinalReport.
+        r"""Gets the user_long_feature_report of this FinalReport.
 
         用户数字类型特征统计。
 
@@ -248,7 +248,7 @@ class FinalReport:
 
     @user_long_feature_report.setter
     def user_long_feature_report(self, user_long_feature_report):
-        """Sets the user_long_feature_report of this FinalReport.
+        r"""Sets the user_long_feature_report of this FinalReport.
 
         用户数字类型特征统计。
 
@@ -259,7 +259,7 @@ class FinalReport:
 
     @property
     def user_float_feature_report(self):
-        """Gets the user_float_feature_report of this FinalReport.
+        r"""Gets the user_float_feature_report of this FinalReport.
 
         用户连续类型特征统计。
 
@@ -270,7 +270,7 @@ class FinalReport:
 
     @user_float_feature_report.setter
     def user_float_feature_report(self, user_float_feature_report):
-        """Sets the user_float_feature_report of this FinalReport.
+        r"""Sets the user_float_feature_report of this FinalReport.
 
         用户连续类型特征统计。
 
@@ -281,7 +281,7 @@ class FinalReport:
 
     @property
     def user_str_feature_report(self):
-        """Gets the user_str_feature_report of this FinalReport.
+        r"""Gets the user_str_feature_report of this FinalReport.
 
         用户单值离散值类型特征统计。
 
@@ -292,7 +292,7 @@ class FinalReport:
 
     @user_str_feature_report.setter
     def user_str_feature_report(self, user_str_feature_report):
-        """Sets the user_str_feature_report of this FinalReport.
+        r"""Sets the user_str_feature_report of this FinalReport.
 
         用户单值离散值类型特征统计。
 
@@ -303,7 +303,7 @@ class FinalReport:
 
     @property
     def user_str_array_feature_report(self):
-        """Gets the user_str_array_feature_report of this FinalReport.
+        r"""Gets the user_str_array_feature_report of this FinalReport.
 
         用户多值离散值类型特征统计。
 
@@ -314,7 +314,7 @@ class FinalReport:
 
     @user_str_array_feature_report.setter
     def user_str_array_feature_report(self, user_str_array_feature_report):
-        """Sets the user_str_array_feature_report of this FinalReport.
+        r"""Sets the user_str_array_feature_report of this FinalReport.
 
         用户多值离散值类型特征统计。
 
@@ -325,7 +325,7 @@ class FinalReport:
 
     @property
     def item_long_feature_report(self):
-        """Gets the item_long_feature_report of this FinalReport.
+        r"""Gets the item_long_feature_report of this FinalReport.
 
         物品数字类型特征统计。
 
@@ -336,7 +336,7 @@ class FinalReport:
 
     @item_long_feature_report.setter
     def item_long_feature_report(self, item_long_feature_report):
-        """Sets the item_long_feature_report of this FinalReport.
+        r"""Sets the item_long_feature_report of this FinalReport.
 
         物品数字类型特征统计。
 
@@ -347,7 +347,7 @@ class FinalReport:
 
     @property
     def item_float_feature_report(self):
-        """Gets the item_float_feature_report of this FinalReport.
+        r"""Gets the item_float_feature_report of this FinalReport.
 
         物品连续类型特征统计。
 
@@ -358,7 +358,7 @@ class FinalReport:
 
     @item_float_feature_report.setter
     def item_float_feature_report(self, item_float_feature_report):
-        """Sets the item_float_feature_report of this FinalReport.
+        r"""Sets the item_float_feature_report of this FinalReport.
 
         物品连续类型特征统计。
 
@@ -369,7 +369,7 @@ class FinalReport:
 
     @property
     def item_str_feature_report(self):
-        """Gets the item_str_feature_report of this FinalReport.
+        r"""Gets the item_str_feature_report of this FinalReport.
 
         物品单值离散值类型特征统计。
 
@@ -380,7 +380,7 @@ class FinalReport:
 
     @item_str_feature_report.setter
     def item_str_feature_report(self, item_str_feature_report):
-        """Sets the item_str_feature_report of this FinalReport.
+        r"""Sets the item_str_feature_report of this FinalReport.
 
         物品单值离散值类型特征统计。
 
@@ -391,7 +391,7 @@ class FinalReport:
 
     @property
     def item_str_array_feature_report(self):
-        """Gets the item_str_array_feature_report of this FinalReport.
+        r"""Gets the item_str_array_feature_report of this FinalReport.
 
         物品多值离散值类型特征统计。
 
@@ -402,7 +402,7 @@ class FinalReport:
 
     @item_str_array_feature_report.setter
     def item_str_array_feature_report(self, item_str_array_feature_report):
-        """Sets the item_str_array_feature_report of this FinalReport.
+        r"""Sets the item_str_array_feature_report of this FinalReport.
 
         物品多值离散值类型特征统计。
 

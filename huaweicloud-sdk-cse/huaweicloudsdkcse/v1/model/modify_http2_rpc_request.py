@@ -31,7 +31,7 @@ class ModifyHttp2RpcRequest:
     }
 
     def __init__(self, gateway_id=None, http2_rpc_id=None, accept=None, body=None):
-        """ModifyHttp2RpcRequest
+        r"""ModifyHttp2RpcRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ModifyHttp2RpcRequest:
 
     @property
     def gateway_id(self):
-        """Gets the gateway_id of this ModifyHttp2RpcRequest.
+        r"""Gets the gateway_id of this ModifyHttp2RpcRequest.
 
         网关实例id
 
@@ -73,7 +73,7 @@ class ModifyHttp2RpcRequest:
 
     @gateway_id.setter
     def gateway_id(self, gateway_id):
-        """Sets the gateway_id of this ModifyHttp2RpcRequest.
+        r"""Sets the gateway_id of this ModifyHttp2RpcRequest.
 
         网关实例id
 
@@ -84,7 +84,7 @@ class ModifyHttp2RpcRequest:
 
     @property
     def http2_rpc_id(self):
-        """Gets the http2_rpc_id of this ModifyHttp2RpcRequest.
+        r"""Gets the http2_rpc_id of this ModifyHttp2RpcRequest.
 
         http2Rpc id
 
@@ -95,7 +95,7 @@ class ModifyHttp2RpcRequest:
 
     @http2_rpc_id.setter
     def http2_rpc_id(self, http2_rpc_id):
-        """Sets the http2_rpc_id of this ModifyHttp2RpcRequest.
+        r"""Sets the http2_rpc_id of this ModifyHttp2RpcRequest.
 
         http2Rpc id
 
@@ -106,7 +106,7 @@ class ModifyHttp2RpcRequest:
 
     @property
     def accept(self):
-        """Gets the accept of this ModifyHttp2RpcRequest.
+        r"""Gets the accept of this ModifyHttp2RpcRequest.
 
         该字段内容填为 \"application/json\"
 
@@ -117,7 +117,7 @@ class ModifyHttp2RpcRequest:
 
     @accept.setter
     def accept(self, accept):
-        """Sets the accept of this ModifyHttp2RpcRequest.
+        r"""Sets the accept of this ModifyHttp2RpcRequest.
 
         该字段内容填为 \"application/json\"
 
@@ -128,7 +128,7 @@ class ModifyHttp2RpcRequest:
 
     @property
     def body(self):
-        """Gets the body of this ModifyHttp2RpcRequest.
+        r"""Gets the body of this ModifyHttp2RpcRequest.
 
         :return: The body of this ModifyHttp2RpcRequest.
         :rtype: :class:`huaweicloudsdkcse.v1.Http2Rpc`
@@ -137,7 +137,7 @@ class ModifyHttp2RpcRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ModifyHttp2RpcRequest.
+        r"""Sets the body of this ModifyHttp2RpcRequest.
 
         :param body: The body of this ModifyHttp2RpcRequest.
         :type body: :class:`huaweicloudsdkcse.v1.Http2Rpc`

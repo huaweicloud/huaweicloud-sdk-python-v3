@@ -34,7 +34,7 @@ class ShowPrivateModuleMetadataResponse(SdkResponse):
     }
 
     def __init__(self, module_name=None, module_id=None, module_description=None, create_time=None, update_time=None):
-        """ShowPrivateModuleMetadataResponse
+        r"""ShowPrivateModuleMetadataResponse
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ShowPrivateModuleMetadataResponse(SdkResponse):
 
     @property
     def module_name(self):
-        """Gets the module_name of this ShowPrivateModuleMetadataResponse.
+        r"""Gets the module_name of this ShowPrivateModuleMetadataResponse.
 
         私有模块（private-module）的名字。此名字在domain_id+region下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
@@ -82,7 +82,7 @@ class ShowPrivateModuleMetadataResponse(SdkResponse):
 
     @module_name.setter
     def module_name(self, module_name):
-        """Sets the module_name of this ShowPrivateModuleMetadataResponse.
+        r"""Sets the module_name of this ShowPrivateModuleMetadataResponse.
 
         私有模块（private-module）的名字。此名字在domain_id+region下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
@@ -93,7 +93,7 @@ class ShowPrivateModuleMetadataResponse(SdkResponse):
 
     @property
     def module_id(self):
-        """Gets the module_id of this ShowPrivateModuleMetadataResponse.
+        r"""Gets the module_id of this ShowPrivateModuleMetadataResponse.
 
         私有模块（private-module）的唯一Id。  此Id由资源编排服务在生成模块的时候生成，为UUID。  由于私有模块名仅在同一时间下唯一，即允许用户先生成一个叫HelloWorld的私有模块，删除，再重新创建一个同名私有模块。  对于团队并行开发，用户可能希望确保，当前我操作的私有模块就是我以为的那个，而不是其他队友删除后创建的同名私有模块。因此，使用Id就可以做到强匹配。  资源编排服务保证每次创建的私有模块所对应的Id都不相同，更新不会影响Id。如果给予的module_id和当前模块的Id不一致，则返回400
 
@@ -104,7 +104,7 @@ class ShowPrivateModuleMetadataResponse(SdkResponse):
 
     @module_id.setter
     def module_id(self, module_id):
-        """Sets the module_id of this ShowPrivateModuleMetadataResponse.
+        r"""Sets the module_id of this ShowPrivateModuleMetadataResponse.
 
         私有模块（private-module）的唯一Id。  此Id由资源编排服务在生成模块的时候生成，为UUID。  由于私有模块名仅在同一时间下唯一，即允许用户先生成一个叫HelloWorld的私有模块，删除，再重新创建一个同名私有模块。  对于团队并行开发，用户可能希望确保，当前我操作的私有模块就是我以为的那个，而不是其他队友删除后创建的同名私有模块。因此，使用Id就可以做到强匹配。  资源编排服务保证每次创建的私有模块所对应的Id都不相同，更新不会影响Id。如果给予的module_id和当前模块的Id不一致，则返回400
 
@@ -115,7 +115,7 @@ class ShowPrivateModuleMetadataResponse(SdkResponse):
 
     @property
     def module_description(self):
-        """Gets the module_description of this ShowPrivateModuleMetadataResponse.
+        r"""Gets the module_description of this ShowPrivateModuleMetadataResponse.
 
         私有模块（private-module）的描述。可用于客户识别被管理的私有模块。如果想要更新私有模块的描述，可以通过UpdatePrivateModuleMetadata API。
 
@@ -126,7 +126,7 @@ class ShowPrivateModuleMetadataResponse(SdkResponse):
 
     @module_description.setter
     def module_description(self, module_description):
-        """Sets the module_description of this ShowPrivateModuleMetadataResponse.
+        r"""Sets the module_description of this ShowPrivateModuleMetadataResponse.
 
         私有模块（private-module）的描述。可用于客户识别被管理的私有模块。如果想要更新私有模块的描述，可以通过UpdatePrivateModuleMetadata API。
 
@@ -137,7 +137,7 @@ class ShowPrivateModuleMetadataResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowPrivateModuleMetadataResponse.
+        r"""Gets the create_time of this ShowPrivateModuleMetadataResponse.
 
         私有模块（private-module）的生成时间，格式为YYYY-MM-DDTHH:mm:ss.SSSZ，精确到毫秒，UTC时区，即，如1970-01-01T00:00:00.000Z。
 
@@ -148,7 +148,7 @@ class ShowPrivateModuleMetadataResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowPrivateModuleMetadataResponse.
+        r"""Sets the create_time of this ShowPrivateModuleMetadataResponse.
 
         私有模块（private-module）的生成时间，格式为YYYY-MM-DDTHH:mm:ss.SSSZ，精确到毫秒，UTC时区，即，如1970-01-01T00:00:00.000Z。
 
@@ -159,7 +159,7 @@ class ShowPrivateModuleMetadataResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowPrivateModuleMetadataResponse.
+        r"""Gets the update_time of this ShowPrivateModuleMetadataResponse.
 
         私有模块（private-module）的更新时间，格式为YYYY-MM-DDTHH:mm:ss.SSSZ，精确到毫秒，UTC时区，即，如1970-01-01T00:00:00.000Z。
 
@@ -170,7 +170,7 @@ class ShowPrivateModuleMetadataResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowPrivateModuleMetadataResponse.
+        r"""Sets the update_time of this ShowPrivateModuleMetadataResponse.
 
         私有模块（private-module）的更新时间，格式为YYYY-MM-DDTHH:mm:ss.SSSZ，精确到毫秒，UTC时区，即，如1970-01-01T00:00:00.000Z。
 

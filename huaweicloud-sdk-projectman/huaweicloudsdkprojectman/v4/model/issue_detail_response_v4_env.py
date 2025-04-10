@@ -27,7 +27,7 @@ class IssueDetailResponseV4Env:
     }
 
     def __init__(self, id=None, name=None):
-        """IssueDetailResponseV4Env
+        r"""IssueDetailResponseV4Env
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class IssueDetailResponseV4Env:
 
     @property
     def id(self):
-        """Gets the id of this IssueDetailResponseV4Env.
+        r"""Gets the id of this IssueDetailResponseV4Env.
 
         缺陷发现环境id
 
@@ -61,7 +61,7 @@ class IssueDetailResponseV4Env:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this IssueDetailResponseV4Env.
+        r"""Sets the id of this IssueDetailResponseV4Env.
 
         缺陷发现环境id
 
@@ -72,7 +72,7 @@ class IssueDetailResponseV4Env:
 
     @property
     def name(self):
-        """Gets the name of this IssueDetailResponseV4Env.
+        r"""Gets the name of this IssueDetailResponseV4Env.
 
         缺陷发现环境名称
 
@@ -83,7 +83,7 @@ class IssueDetailResponseV4Env:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this IssueDetailResponseV4Env.
+        r"""Sets the name of this IssueDetailResponseV4Env.
 
         缺陷发现环境名称
 

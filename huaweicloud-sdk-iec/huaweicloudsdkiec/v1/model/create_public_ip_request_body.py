@@ -27,7 +27,7 @@ class CreatePublicIpRequestBody:
     }
 
     def __init__(self, publicip=None, bandwidth=None):
-        """CreatePublicIpRequestBody
+        r"""CreatePublicIpRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreatePublicIpRequestBody:
 
     @property
     def publicip(self):
-        """Gets the publicip of this CreatePublicIpRequestBody.
+        r"""Gets the publicip of this CreatePublicIpRequestBody.
 
         :return: The publicip of this CreatePublicIpRequestBody.
         :rtype: :class:`huaweicloudsdkiec.v1.CreatePublicIpOption`
@@ -58,7 +58,7 @@ class CreatePublicIpRequestBody:
 
     @publicip.setter
     def publicip(self, publicip):
-        """Sets the publicip of this CreatePublicIpRequestBody.
+        r"""Sets the publicip of this CreatePublicIpRequestBody.
 
         :param publicip: The publicip of this CreatePublicIpRequestBody.
         :type publicip: :class:`huaweicloudsdkiec.v1.CreatePublicIpOption`
@@ -67,7 +67,7 @@ class CreatePublicIpRequestBody:
 
     @property
     def bandwidth(self):
-        """Gets the bandwidth of this CreatePublicIpRequestBody.
+        r"""Gets the bandwidth of this CreatePublicIpRequestBody.
 
         :return: The bandwidth of this CreatePublicIpRequestBody.
         :rtype: :class:`huaweicloudsdkiec.v1.CreatePublicIpBandwidthOption`
@@ -76,7 +76,7 @@ class CreatePublicIpRequestBody:
 
     @bandwidth.setter
     def bandwidth(self, bandwidth):
-        """Sets the bandwidth of this CreatePublicIpRequestBody.
+        r"""Sets the bandwidth of this CreatePublicIpRequestBody.
 
         :param bandwidth: The bandwidth of this CreatePublicIpRequestBody.
         :type bandwidth: :class:`huaweicloudsdkiec.v1.CreatePublicIpBandwidthOption`

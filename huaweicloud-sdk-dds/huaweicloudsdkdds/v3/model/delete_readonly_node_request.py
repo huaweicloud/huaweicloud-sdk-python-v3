@@ -27,7 +27,7 @@ class DeleteReadonlyNodeRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """DeleteReadonlyNodeRequest
+        r"""DeleteReadonlyNodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteReadonlyNodeRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteReadonlyNodeRequest.
+        r"""Gets the instance_id of this DeleteReadonlyNodeRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class DeleteReadonlyNodeRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteReadonlyNodeRequest.
+        r"""Sets the instance_id of this DeleteReadonlyNodeRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class DeleteReadonlyNodeRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteReadonlyNodeRequest.
+        r"""Gets the body of this DeleteReadonlyNodeRequest.
 
         :return: The body of this DeleteReadonlyNodeRequest.
         :rtype: :class:`huaweicloudsdkdds.v3.DeleteReadonlyNodeRequestBody`
@@ -80,7 +80,7 @@ class DeleteReadonlyNodeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteReadonlyNodeRequest.
+        r"""Sets the body of this DeleteReadonlyNodeRequest.
 
         :param body: The body of this DeleteReadonlyNodeRequest.
         :type body: :class:`huaweicloudsdkdds.v3.DeleteReadonlyNodeRequestBody`

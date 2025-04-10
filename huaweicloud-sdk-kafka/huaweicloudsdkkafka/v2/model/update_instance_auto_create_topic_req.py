@@ -25,7 +25,7 @@ class UpdateInstanceAutoCreateTopicReq:
     }
 
     def __init__(self, enable_auto_topic=None):
-        """UpdateInstanceAutoCreateTopicReq
+        r"""UpdateInstanceAutoCreateTopicReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateInstanceAutoCreateTopicReq:
 
     @property
     def enable_auto_topic(self):
-        """Gets the enable_auto_topic of this UpdateInstanceAutoCreateTopicReq.
+        r"""Gets the enable_auto_topic of this UpdateInstanceAutoCreateTopicReq.
 
         是否开启自动创建topic功能。
 
@@ -53,7 +53,7 @@ class UpdateInstanceAutoCreateTopicReq:
 
     @enable_auto_topic.setter
     def enable_auto_topic(self, enable_auto_topic):
-        """Sets the enable_auto_topic of this UpdateInstanceAutoCreateTopicReq.
+        r"""Sets the enable_auto_topic of this UpdateInstanceAutoCreateTopicReq.
 
         是否开启自动创建topic功能。
 

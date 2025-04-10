@@ -27,7 +27,7 @@ class UpdateTempRequest:
     }
 
     def __init__(self, template_id=None, body=None):
-        """UpdateTempRequest
+        r"""UpdateTempRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateTempRequest:
 
     @property
     def template_id(self):
-        """Gets the template_id of this UpdateTempRequest.
+        r"""Gets the template_id of this UpdateTempRequest.
 
         事务id
 
@@ -60,7 +60,7 @@ class UpdateTempRequest:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this UpdateTempRequest.
+        r"""Sets the template_id of this UpdateTempRequest.
 
         事务id
 
@@ -71,7 +71,7 @@ class UpdateTempRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateTempRequest.
+        r"""Gets the body of this UpdateTempRequest.
 
         :return: The body of this UpdateTempRequest.
         :rtype: :class:`huaweicloudsdkcpts.v1.UpdateTempRequestBody`
@@ -80,7 +80,7 @@ class UpdateTempRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateTempRequest.
+        r"""Sets the body of this UpdateTempRequest.
 
         :param body: The body of this UpdateTempRequest.
         :type body: :class:`huaweicloudsdkcpts.v1.UpdateTempRequestBody`

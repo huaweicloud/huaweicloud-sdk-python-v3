@@ -38,7 +38,7 @@ class ShowDetailOfEventTraceResponse(SdkResponse):
     }
 
     def __init__(self, event_id=None, event_source=None, event_type=None, receive_time=None, channel_id=None, channel_name=None, deliver_list=None):
-        """ShowDetailOfEventTraceResponse
+        r"""ShowDetailOfEventTraceResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ShowDetailOfEventTraceResponse(SdkResponse):
 
     @property
     def event_id(self):
-        """Gets the event_id of this ShowDetailOfEventTraceResponse.
+        r"""Gets the event_id of this ShowDetailOfEventTraceResponse.
 
         事件ID
 
@@ -97,7 +97,7 @@ class ShowDetailOfEventTraceResponse(SdkResponse):
 
     @event_id.setter
     def event_id(self, event_id):
-        """Sets the event_id of this ShowDetailOfEventTraceResponse.
+        r"""Sets the event_id of this ShowDetailOfEventTraceResponse.
 
         事件ID
 
@@ -108,7 +108,7 @@ class ShowDetailOfEventTraceResponse(SdkResponse):
 
     @property
     def event_source(self):
-        """Gets the event_source of this ShowDetailOfEventTraceResponse.
+        r"""Gets the event_source of this ShowDetailOfEventTraceResponse.
 
         事件源
 
@@ -119,7 +119,7 @@ class ShowDetailOfEventTraceResponse(SdkResponse):
 
     @event_source.setter
     def event_source(self, event_source):
-        """Sets the event_source of this ShowDetailOfEventTraceResponse.
+        r"""Sets the event_source of this ShowDetailOfEventTraceResponse.
 
         事件源
 
@@ -130,7 +130,7 @@ class ShowDetailOfEventTraceResponse(SdkResponse):
 
     @property
     def event_type(self):
-        """Gets the event_type of this ShowDetailOfEventTraceResponse.
+        r"""Gets the event_type of this ShowDetailOfEventTraceResponse.
 
         事件类型
 
@@ -141,7 +141,7 @@ class ShowDetailOfEventTraceResponse(SdkResponse):
 
     @event_type.setter
     def event_type(self, event_type):
-        """Sets the event_type of this ShowDetailOfEventTraceResponse.
+        r"""Sets the event_type of this ShowDetailOfEventTraceResponse.
 
         事件类型
 
@@ -152,7 +152,7 @@ class ShowDetailOfEventTraceResponse(SdkResponse):
 
     @property
     def receive_time(self):
-        """Gets the receive_time of this ShowDetailOfEventTraceResponse.
+        r"""Gets the receive_time of this ShowDetailOfEventTraceResponse.
 
         接收时间
 
@@ -163,7 +163,7 @@ class ShowDetailOfEventTraceResponse(SdkResponse):
 
     @receive_time.setter
     def receive_time(self, receive_time):
-        """Sets the receive_time of this ShowDetailOfEventTraceResponse.
+        r"""Sets the receive_time of this ShowDetailOfEventTraceResponse.
 
         接收时间
 
@@ -174,7 +174,7 @@ class ShowDetailOfEventTraceResponse(SdkResponse):
 
     @property
     def channel_id(self):
-        """Gets the channel_id of this ShowDetailOfEventTraceResponse.
+        r"""Gets the channel_id of this ShowDetailOfEventTraceResponse.
 
         通道ID
 
@@ -185,7 +185,7 @@ class ShowDetailOfEventTraceResponse(SdkResponse):
 
     @channel_id.setter
     def channel_id(self, channel_id):
-        """Sets the channel_id of this ShowDetailOfEventTraceResponse.
+        r"""Sets the channel_id of this ShowDetailOfEventTraceResponse.
 
         通道ID
 
@@ -196,7 +196,7 @@ class ShowDetailOfEventTraceResponse(SdkResponse):
 
     @property
     def channel_name(self):
-        """Gets the channel_name of this ShowDetailOfEventTraceResponse.
+        r"""Gets the channel_name of this ShowDetailOfEventTraceResponse.
 
         通道名称
 
@@ -207,7 +207,7 @@ class ShowDetailOfEventTraceResponse(SdkResponse):
 
     @channel_name.setter
     def channel_name(self, channel_name):
-        """Sets the channel_name of this ShowDetailOfEventTraceResponse.
+        r"""Sets the channel_name of this ShowDetailOfEventTraceResponse.
 
         通道名称
 
@@ -218,7 +218,7 @@ class ShowDetailOfEventTraceResponse(SdkResponse):
 
     @property
     def deliver_list(self):
-        """Gets the deliver_list of this ShowDetailOfEventTraceResponse.
+        r"""Gets the deliver_list of this ShowDetailOfEventTraceResponse.
 
         事件投递列表
 
@@ -229,7 +229,7 @@ class ShowDetailOfEventTraceResponse(SdkResponse):
 
     @deliver_list.setter
     def deliver_list(self, deliver_list):
-        """Sets the deliver_list of this ShowDetailOfEventTraceResponse.
+        r"""Sets the deliver_list of this ShowDetailOfEventTraceResponse.
 
         事件投递列表
 

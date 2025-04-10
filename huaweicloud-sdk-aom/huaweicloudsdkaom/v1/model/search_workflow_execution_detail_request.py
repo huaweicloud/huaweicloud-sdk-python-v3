@@ -27,7 +27,7 @@ class SearchWorkflowExecutionDetailRequest:
     }
 
     def __init__(self, workflow_id=None, execution_id=None):
-        """SearchWorkflowExecutionDetailRequest
+        r"""SearchWorkflowExecutionDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class SearchWorkflowExecutionDetailRequest:
 
     @property
     def workflow_id(self):
-        """Gets the workflow_id of this SearchWorkflowExecutionDetailRequest.
+        r"""Gets the workflow_id of this SearchWorkflowExecutionDetailRequest.
 
         工作流ID，唯一标识，根据project_id和workflow_name生成。
 
@@ -59,7 +59,7 @@ class SearchWorkflowExecutionDetailRequest:
 
     @workflow_id.setter
     def workflow_id(self, workflow_id):
-        """Sets the workflow_id of this SearchWorkflowExecutionDetailRequest.
+        r"""Sets the workflow_id of this SearchWorkflowExecutionDetailRequest.
 
         工作流ID，唯一标识，根据project_id和workflow_name生成。
 
@@ -70,7 +70,7 @@ class SearchWorkflowExecutionDetailRequest:
 
     @property
     def execution_id(self):
-        """Gets the execution_id of this SearchWorkflowExecutionDetailRequest.
+        r"""Gets the execution_id of this SearchWorkflowExecutionDetailRequest.
 
         工作流执行ID。
 
@@ -81,7 +81,7 @@ class SearchWorkflowExecutionDetailRequest:
 
     @execution_id.setter
     def execution_id(self, execution_id):
-        """Sets the execution_id of this SearchWorkflowExecutionDetailRequest.
+        r"""Sets the execution_id of this SearchWorkflowExecutionDetailRequest.
 
         工作流执行ID。
 

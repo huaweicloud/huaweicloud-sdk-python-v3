@@ -59,7 +59,7 @@ class PersonnelResponse:
     }
 
     def __init__(self, is_root_user=None, dingtalk_webhook=None, email=None, id=None, mobile=None, name=None, wecom_webhook=None, description=None, dingtalk_private_key=None, msg_subscription_status=None, weichat_subscription_status=None, ding_talk_subscription_status=None, email_subscription_status=None, call_notify_subscription_status=None, source_type=None, source_status=None, lark_webhook=None, lark_subscription_status=None):
-        """PersonnelResponse
+        r"""PersonnelResponse
 
         The model defined in huaweicloud sdk
 
@@ -162,7 +162,7 @@ class PersonnelResponse:
 
     @property
     def is_root_user(self):
-        """Gets the is_root_user of this PersonnelResponse.
+        r"""Gets the is_root_user of this PersonnelResponse.
 
         该用户是否是根用户
 
@@ -173,7 +173,7 @@ class PersonnelResponse:
 
     @is_root_user.setter
     def is_root_user(self, is_root_user):
-        """Sets the is_root_user of this PersonnelResponse.
+        r"""Sets the is_root_user of this PersonnelResponse.
 
         该用户是否是根用户
 
@@ -184,7 +184,7 @@ class PersonnelResponse:
 
     @property
     def dingtalk_webhook(self):
-        """Gets the dingtalk_webhook of this PersonnelResponse.
+        r"""Gets the dingtalk_webhook of this PersonnelResponse.
 
         钉钉回调
 
@@ -195,7 +195,7 @@ class PersonnelResponse:
 
     @dingtalk_webhook.setter
     def dingtalk_webhook(self, dingtalk_webhook):
-        """Sets the dingtalk_webhook of this PersonnelResponse.
+        r"""Sets the dingtalk_webhook of this PersonnelResponse.
 
         钉钉回调
 
@@ -206,7 +206,7 @@ class PersonnelResponse:
 
     @property
     def email(self):
-        """Gets the email of this PersonnelResponse.
+        r"""Gets the email of this PersonnelResponse.
 
         邮箱
 
@@ -217,7 +217,7 @@ class PersonnelResponse:
 
     @email.setter
     def email(self, email):
-        """Sets the email of this PersonnelResponse.
+        r"""Sets the email of this PersonnelResponse.
 
         邮箱
 
@@ -228,7 +228,7 @@ class PersonnelResponse:
 
     @property
     def id(self):
-        """Gets the id of this PersonnelResponse.
+        r"""Gets the id of this PersonnelResponse.
 
         用户id
 
@@ -239,7 +239,7 @@ class PersonnelResponse:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this PersonnelResponse.
+        r"""Sets the id of this PersonnelResponse.
 
         用户id
 
@@ -250,7 +250,7 @@ class PersonnelResponse:
 
     @property
     def mobile(self):
-        """Gets the mobile of this PersonnelResponse.
+        r"""Gets the mobile of this PersonnelResponse.
 
         手机
 
@@ -261,7 +261,7 @@ class PersonnelResponse:
 
     @mobile.setter
     def mobile(self, mobile):
-        """Sets the mobile of this PersonnelResponse.
+        r"""Sets the mobile of this PersonnelResponse.
 
         手机
 
@@ -272,7 +272,7 @@ class PersonnelResponse:
 
     @property
     def name(self):
-        """Gets the name of this PersonnelResponse.
+        r"""Gets the name of this PersonnelResponse.
 
         用户名
 
@@ -283,7 +283,7 @@ class PersonnelResponse:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PersonnelResponse.
+        r"""Sets the name of this PersonnelResponse.
 
         用户名
 
@@ -294,7 +294,7 @@ class PersonnelResponse:
 
     @property
     def wecom_webhook(self):
-        """Gets the wecom_webhook of this PersonnelResponse.
+        r"""Gets the wecom_webhook of this PersonnelResponse.
 
         企业微信回调
 
@@ -305,7 +305,7 @@ class PersonnelResponse:
 
     @wecom_webhook.setter
     def wecom_webhook(self, wecom_webhook):
-        """Sets the wecom_webhook of this PersonnelResponse.
+        r"""Sets the wecom_webhook of this PersonnelResponse.
 
         企业微信回调
 
@@ -316,7 +316,7 @@ class PersonnelResponse:
 
     @property
     def description(self):
-        """Gets the description of this PersonnelResponse.
+        r"""Gets the description of this PersonnelResponse.
 
         描述
 
@@ -327,7 +327,7 @@ class PersonnelResponse:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this PersonnelResponse.
+        r"""Sets the description of this PersonnelResponse.
 
         描述
 
@@ -338,7 +338,7 @@ class PersonnelResponse:
 
     @property
     def dingtalk_private_key(self):
-        """Gets the dingtalk_private_key of this PersonnelResponse.
+        r"""Gets the dingtalk_private_key of this PersonnelResponse.
 
         钉钉秘钥
 
@@ -349,7 +349,7 @@ class PersonnelResponse:
 
     @dingtalk_private_key.setter
     def dingtalk_private_key(self, dingtalk_private_key):
-        """Sets the dingtalk_private_key of this PersonnelResponse.
+        r"""Sets the dingtalk_private_key of this PersonnelResponse.
 
         钉钉秘钥
 
@@ -360,7 +360,7 @@ class PersonnelResponse:
 
     @property
     def msg_subscription_status(self):
-        """Gets the msg_subscription_status of this PersonnelResponse.
+        r"""Gets the msg_subscription_status of this PersonnelResponse.
 
         短信订阅状态
 
@@ -371,7 +371,7 @@ class PersonnelResponse:
 
     @msg_subscription_status.setter
     def msg_subscription_status(self, msg_subscription_status):
-        """Sets the msg_subscription_status of this PersonnelResponse.
+        r"""Sets the msg_subscription_status of this PersonnelResponse.
 
         短信订阅状态
 
@@ -382,7 +382,7 @@ class PersonnelResponse:
 
     @property
     def weichat_subscription_status(self):
-        """Gets the weichat_subscription_status of this PersonnelResponse.
+        r"""Gets the weichat_subscription_status of this PersonnelResponse.
 
         企业微信订阅状态
 
@@ -393,7 +393,7 @@ class PersonnelResponse:
 
     @weichat_subscription_status.setter
     def weichat_subscription_status(self, weichat_subscription_status):
-        """Sets the weichat_subscription_status of this PersonnelResponse.
+        r"""Sets the weichat_subscription_status of this PersonnelResponse.
 
         企业微信订阅状态
 
@@ -404,7 +404,7 @@ class PersonnelResponse:
 
     @property
     def ding_talk_subscription_status(self):
-        """Gets the ding_talk_subscription_status of this PersonnelResponse.
+        r"""Gets the ding_talk_subscription_status of this PersonnelResponse.
 
         钉钉订阅状态
 
@@ -415,7 +415,7 @@ class PersonnelResponse:
 
     @ding_talk_subscription_status.setter
     def ding_talk_subscription_status(self, ding_talk_subscription_status):
-        """Sets the ding_talk_subscription_status of this PersonnelResponse.
+        r"""Sets the ding_talk_subscription_status of this PersonnelResponse.
 
         钉钉订阅状态
 
@@ -426,7 +426,7 @@ class PersonnelResponse:
 
     @property
     def email_subscription_status(self):
-        """Gets the email_subscription_status of this PersonnelResponse.
+        r"""Gets the email_subscription_status of this PersonnelResponse.
 
         邮箱订阅
 
@@ -437,7 +437,7 @@ class PersonnelResponse:
 
     @email_subscription_status.setter
     def email_subscription_status(self, email_subscription_status):
-        """Sets the email_subscription_status of this PersonnelResponse.
+        r"""Sets the email_subscription_status of this PersonnelResponse.
 
         邮箱订阅
 
@@ -448,7 +448,7 @@ class PersonnelResponse:
 
     @property
     def call_notify_subscription_status(self):
-        """Gets the call_notify_subscription_status of this PersonnelResponse.
+        r"""Gets the call_notify_subscription_status of this PersonnelResponse.
 
         语音订阅状态
 
@@ -459,7 +459,7 @@ class PersonnelResponse:
 
     @call_notify_subscription_status.setter
     def call_notify_subscription_status(self, call_notify_subscription_status):
-        """Sets the call_notify_subscription_status of this PersonnelResponse.
+        r"""Sets the call_notify_subscription_status of this PersonnelResponse.
 
         语音订阅状态
 
@@ -470,7 +470,7 @@ class PersonnelResponse:
 
     @property
     def source_type(self):
-        """Gets the source_type of this PersonnelResponse.
+        r"""Gets the source_type of this PersonnelResponse.
 
         账号来源类型
 
@@ -481,7 +481,7 @@ class PersonnelResponse:
 
     @source_type.setter
     def source_type(self, source_type):
-        """Sets the source_type of this PersonnelResponse.
+        r"""Sets the source_type of this PersonnelResponse.
 
         账号来源类型
 
@@ -492,7 +492,7 @@ class PersonnelResponse:
 
     @property
     def source_status(self):
-        """Gets the source_status of this PersonnelResponse.
+        r"""Gets the source_status of this PersonnelResponse.
 
         账号状态
 
@@ -503,7 +503,7 @@ class PersonnelResponse:
 
     @source_status.setter
     def source_status(self, source_status):
-        """Sets the source_status of this PersonnelResponse.
+        r"""Sets the source_status of this PersonnelResponse.
 
         账号状态
 
@@ -514,7 +514,7 @@ class PersonnelResponse:
 
     @property
     def lark_webhook(self):
-        """Gets the lark_webhook of this PersonnelResponse.
+        r"""Gets the lark_webhook of this PersonnelResponse.
 
         飞书回调
 
@@ -525,7 +525,7 @@ class PersonnelResponse:
 
     @lark_webhook.setter
     def lark_webhook(self, lark_webhook):
-        """Sets the lark_webhook of this PersonnelResponse.
+        r"""Sets the lark_webhook of this PersonnelResponse.
 
         飞书回调
 
@@ -536,7 +536,7 @@ class PersonnelResponse:
 
     @property
     def lark_subscription_status(self):
-        """Gets the lark_subscription_status of this PersonnelResponse.
+        r"""Gets the lark_subscription_status of this PersonnelResponse.
 
         飞书订阅状态
 
@@ -547,7 +547,7 @@ class PersonnelResponse:
 
     @lark_subscription_status.setter
     def lark_subscription_status(self, lark_subscription_status):
-        """Sets the lark_subscription_status of this PersonnelResponse.
+        r"""Sets the lark_subscription_status of this PersonnelResponse.
 
         飞书订阅状态
 

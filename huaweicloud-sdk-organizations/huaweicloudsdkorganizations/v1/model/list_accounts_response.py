@@ -28,7 +28,7 @@ class ListAccountsResponse(SdkResponse):
     }
 
     def __init__(self, accounts=None, page_info=None):
-        """ListAccountsResponse
+        r"""ListAccountsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAccountsResponse(SdkResponse):
 
     @property
     def accounts(self):
-        """Gets the accounts of this ListAccountsResponse.
+        r"""Gets the accounts of this ListAccountsResponse.
 
         组织中的账号列表。
 
@@ -62,7 +62,7 @@ class ListAccountsResponse(SdkResponse):
 
     @accounts.setter
     def accounts(self, accounts):
-        """Sets the accounts of this ListAccountsResponse.
+        r"""Sets the accounts of this ListAccountsResponse.
 
         组织中的账号列表。
 
@@ -73,7 +73,7 @@ class ListAccountsResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListAccountsResponse.
+        r"""Gets the page_info of this ListAccountsResponse.
 
         :return: The page_info of this ListAccountsResponse.
         :rtype: :class:`huaweicloudsdkorganizations.v1.PageInfoDto`
@@ -82,7 +82,7 @@ class ListAccountsResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListAccountsResponse.
+        r"""Sets the page_info of this ListAccountsResponse.
 
         :param page_info: The page_info of this ListAccountsResponse.
         :type page_info: :class:`huaweicloudsdkorganizations.v1.PageInfoDto`

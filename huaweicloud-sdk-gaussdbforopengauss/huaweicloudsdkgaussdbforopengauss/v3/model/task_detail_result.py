@@ -39,7 +39,7 @@ class TaskDetailResult:
     }
 
     def __init__(self, instance_info=None, job_id=None, name=None, status=None, process=None, created_at=None, ended_at=None, fail_reason=None):
-        """TaskDetailResult
+        r"""TaskDetailResult
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class TaskDetailResult:
 
     @property
     def instance_info(self):
-        """Gets the instance_info of this TaskDetailResult.
+        r"""Gets the instance_info of this TaskDetailResult.
 
         :return: The instance_info of this TaskDetailResult.
         :rtype: :class:`huaweicloudsdkgaussdbforopengauss.v3.InstanceInfoResult`
@@ -101,7 +101,7 @@ class TaskDetailResult:
 
     @instance_info.setter
     def instance_info(self, instance_info):
-        """Sets the instance_info of this TaskDetailResult.
+        r"""Sets the instance_info of this TaskDetailResult.
 
         :param instance_info: The instance_info of this TaskDetailResult.
         :type instance_info: :class:`huaweicloudsdkgaussdbforopengauss.v3.InstanceInfoResult`
@@ -110,7 +110,7 @@ class TaskDetailResult:
 
     @property
     def job_id(self):
-        """Gets the job_id of this TaskDetailResult.
+        r"""Gets the job_id of this TaskDetailResult.
 
         任务ID。
 
@@ -121,7 +121,7 @@ class TaskDetailResult:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this TaskDetailResult.
+        r"""Sets the job_id of this TaskDetailResult.
 
         任务ID。
 
@@ -132,7 +132,7 @@ class TaskDetailResult:
 
     @property
     def name(self):
-        """Gets the name of this TaskDetailResult.
+        r"""Gets the name of this TaskDetailResult.
 
         任务名称。
 
@@ -143,7 +143,7 @@ class TaskDetailResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this TaskDetailResult.
+        r"""Sets the name of this TaskDetailResult.
 
         任务名称。
 
@@ -154,7 +154,7 @@ class TaskDetailResult:
 
     @property
     def status(self):
-        """Gets the status of this TaskDetailResult.
+        r"""Gets the status of this TaskDetailResult.
 
         任务状态。
 
@@ -165,7 +165,7 @@ class TaskDetailResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this TaskDetailResult.
+        r"""Sets the status of this TaskDetailResult.
 
         任务状态。
 
@@ -176,7 +176,7 @@ class TaskDetailResult:
 
     @property
     def process(self):
-        """Gets the process of this TaskDetailResult.
+        r"""Gets the process of this TaskDetailResult.
 
         任务进度，单位：%。
 
@@ -187,7 +187,7 @@ class TaskDetailResult:
 
     @process.setter
     def process(self, process):
-        """Sets the process of this TaskDetailResult.
+        r"""Sets the process of this TaskDetailResult.
 
         任务进度，单位：%。
 
@@ -198,7 +198,7 @@ class TaskDetailResult:
 
     @property
     def created_at(self):
-        """Gets the created_at of this TaskDetailResult.
+        r"""Gets the created_at of this TaskDetailResult.
 
         创建时间，格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -209,7 +209,7 @@ class TaskDetailResult:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this TaskDetailResult.
+        r"""Sets the created_at of this TaskDetailResult.
 
         创建时间，格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -220,7 +220,7 @@ class TaskDetailResult:
 
     @property
     def ended_at(self):
-        """Gets the ended_at of this TaskDetailResult.
+        r"""Gets the ended_at of this TaskDetailResult.
 
         结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -231,7 +231,7 @@ class TaskDetailResult:
 
     @ended_at.setter
     def ended_at(self, ended_at):
-        """Sets the ended_at of this TaskDetailResult.
+        r"""Sets the ended_at of this TaskDetailResult.
 
         结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -242,7 +242,7 @@ class TaskDetailResult:
 
     @property
     def fail_reason(self):
-        """Gets the fail_reason of this TaskDetailResult.
+        r"""Gets the fail_reason of this TaskDetailResult.
 
         失败原因。
 
@@ -253,7 +253,7 @@ class TaskDetailResult:
 
     @fail_reason.setter
     def fail_reason(self, fail_reason):
-        """Sets the fail_reason of this TaskDetailResult.
+        r"""Sets the fail_reason of this TaskDetailResult.
 
         失败原因。
 

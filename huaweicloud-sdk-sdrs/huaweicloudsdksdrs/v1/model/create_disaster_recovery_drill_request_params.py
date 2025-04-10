@@ -29,7 +29,7 @@ class CreateDisasterRecoveryDrillRequestParams:
     }
 
     def __init__(self, server_group_id=None, drill_vpc_id=None, name=None):
-        """CreateDisasterRecoveryDrillRequestParams
+        r"""CreateDisasterRecoveryDrillRequestParams
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateDisasterRecoveryDrillRequestParams:
 
     @property
     def server_group_id(self):
-        """Gets the server_group_id of this CreateDisasterRecoveryDrillRequestParams.
+        r"""Gets the server_group_id of this CreateDisasterRecoveryDrillRequestParams.
 
         保护组的ID。
 
@@ -66,7 +66,7 @@ class CreateDisasterRecoveryDrillRequestParams:
 
     @server_group_id.setter
     def server_group_id(self, server_group_id):
-        """Sets the server_group_id of this CreateDisasterRecoveryDrillRequestParams.
+        r"""Sets the server_group_id of this CreateDisasterRecoveryDrillRequestParams.
 
         保护组的ID。
 
@@ -77,7 +77,7 @@ class CreateDisasterRecoveryDrillRequestParams:
 
     @property
     def drill_vpc_id(self):
-        """Gets the drill_vpc_id of this CreateDisasterRecoveryDrillRequestParams.
+        r"""Gets the drill_vpc_id of this CreateDisasterRecoveryDrillRequestParams.
 
         演练虚拟私有云ID，不指定时系统会自动创建演练VPC。
 
@@ -88,7 +88,7 @@ class CreateDisasterRecoveryDrillRequestParams:
 
     @drill_vpc_id.setter
     def drill_vpc_id(self, drill_vpc_id):
-        """Sets the drill_vpc_id of this CreateDisasterRecoveryDrillRequestParams.
+        r"""Sets the drill_vpc_id of this CreateDisasterRecoveryDrillRequestParams.
 
         演练虚拟私有云ID，不指定时系统会自动创建演练VPC。
 
@@ -99,7 +99,7 @@ class CreateDisasterRecoveryDrillRequestParams:
 
     @property
     def name(self):
-        """Gets the name of this CreateDisasterRecoveryDrillRequestParams.
+        r"""Gets the name of this CreateDisasterRecoveryDrillRequestParams.
 
         指定容灾演练的名称，最大支持长度为64个字节。只包含中文字符、英文字母（a～ｚ、Ａ～Ｚ）、数字（０~９）、小数点（．）、下划线（_）、中划线（-）。
 
@@ -110,7 +110,7 @@ class CreateDisasterRecoveryDrillRequestParams:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateDisasterRecoveryDrillRequestParams.
+        r"""Sets the name of this CreateDisasterRecoveryDrillRequestParams.
 
         指定容灾演练的名称，最大支持长度为64个字节。只包含中文字符、英文字母（a～ｚ、Ａ～Ｚ）、数字（０~９）、小数点（．）、下划线（_）、中划线（-）。
 

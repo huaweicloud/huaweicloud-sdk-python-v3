@@ -29,7 +29,7 @@ class CreateTemplateReq:
     }
 
     def __init__(self, name=None, description=None, columns=None):
-        """CreateTemplateReq
+        r"""CreateTemplateReq
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateTemplateReq:
 
     @property
     def name(self):
-        """Gets the name of this CreateTemplateReq.
+        r"""Gets the name of this CreateTemplateReq.
 
         模板名称
 
@@ -66,7 +66,7 @@ class CreateTemplateReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateTemplateReq.
+        r"""Sets the name of this CreateTemplateReq.
 
         模板名称
 
@@ -77,7 +77,7 @@ class CreateTemplateReq:
 
     @property
     def description(self):
-        """Gets the description of this CreateTemplateReq.
+        r"""Gets the description of this CreateTemplateReq.
 
         模板描述
 
@@ -88,7 +88,7 @@ class CreateTemplateReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateTemplateReq.
+        r"""Sets the description of this CreateTemplateReq.
 
         模板描述
 
@@ -99,7 +99,7 @@ class CreateTemplateReq:
 
     @property
     def columns(self):
-        """Gets the columns of this CreateTemplateReq.
+        r"""Gets the columns of this CreateTemplateReq.
 
         数据库列信息
 
@@ -110,7 +110,7 @@ class CreateTemplateReq:
 
     @columns.setter
     def columns(self, columns):
-        """Sets the columns of this CreateTemplateReq.
+        r"""Sets the columns of this CreateTemplateReq.
 
         数据库列信息
 

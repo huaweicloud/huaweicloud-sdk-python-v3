@@ -29,7 +29,7 @@ class ConfigItem:
     }
 
     def __init__(self, config_name=None, config_value=None, should_override=None):
-        """ConfigItem
+        r"""ConfigItem
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ConfigItem:
 
     @property
     def config_name(self):
-        """Gets the config_name of this ConfigItem.
+        r"""Gets the config_name of this ConfigItem.
 
         配置项名称。
 
@@ -68,7 +68,7 @@ class ConfigItem:
 
     @config_name.setter
     def config_name(self, config_name):
-        """Sets the config_name of this ConfigItem.
+        r"""Sets the config_name of this ConfigItem.
 
         配置项名称。
 
@@ -79,7 +79,7 @@ class ConfigItem:
 
     @property
     def config_value(self):
-        """Gets the config_value of this ConfigItem.
+        r"""Gets the config_value of this ConfigItem.
 
         配置项值。
 
@@ -90,7 +90,7 @@ class ConfigItem:
 
     @config_value.setter
     def config_value(self, config_value):
-        """Sets the config_value of this ConfigItem.
+        r"""Sets the config_value of this ConfigItem.
 
         配置项值。
 
@@ -101,7 +101,7 @@ class ConfigItem:
 
     @property
     def should_override(self):
-        """Gets the should_override of this ConfigItem.
+        r"""Gets the should_override of this ConfigItem.
 
         是否重写。
 
@@ -112,7 +112,7 @@ class ConfigItem:
 
     @should_override.setter
     def should_override(self, should_override):
-        """Sets the should_override of this ConfigItem.
+        r"""Sets the should_override of this ConfigItem.
 
         是否重写。
 

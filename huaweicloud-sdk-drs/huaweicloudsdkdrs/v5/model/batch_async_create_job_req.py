@@ -25,7 +25,7 @@ class BatchAsyncCreateJobReq:
     }
 
     def __init__(self, jobs=None):
-        """BatchAsyncCreateJobReq
+        r"""BatchAsyncCreateJobReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BatchAsyncCreateJobReq:
 
     @property
     def jobs(self):
-        """Gets the jobs of this BatchAsyncCreateJobReq.
+        r"""Gets the jobs of this BatchAsyncCreateJobReq.
 
         异步创建任务请求体。
 
@@ -53,7 +53,7 @@ class BatchAsyncCreateJobReq:
 
     @jobs.setter
     def jobs(self, jobs):
-        """Sets the jobs of this BatchAsyncCreateJobReq.
+        r"""Sets the jobs of this BatchAsyncCreateJobReq.
 
         异步创建任务请求体。
 

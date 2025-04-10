@@ -31,7 +31,7 @@ class CreateIterationRequestV4:
     }
 
     def __init__(self, begin_time=None, description=None, end_time=None, name=None):
-        """CreateIterationRequestV4
+        r"""CreateIterationRequestV4
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class CreateIterationRequestV4:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this CreateIterationRequestV4.
+        r"""Gets the begin_time of this CreateIterationRequestV4.
 
         开始时间，年-月-日
 
@@ -72,7 +72,7 @@ class CreateIterationRequestV4:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this CreateIterationRequestV4.
+        r"""Sets the begin_time of this CreateIterationRequestV4.
 
         开始时间，年-月-日
 
@@ -83,7 +83,7 @@ class CreateIterationRequestV4:
 
     @property
     def description(self):
-        """Gets the description of this CreateIterationRequestV4.
+        r"""Gets the description of this CreateIterationRequestV4.
 
         描述
 
@@ -94,7 +94,7 @@ class CreateIterationRequestV4:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateIterationRequestV4.
+        r"""Sets the description of this CreateIterationRequestV4.
 
         描述
 
@@ -105,7 +105,7 @@ class CreateIterationRequestV4:
 
     @property
     def end_time(self):
-        """Gets the end_time of this CreateIterationRequestV4.
+        r"""Gets the end_time of this CreateIterationRequestV4.
 
         结束时间，年-月-日
 
@@ -116,7 +116,7 @@ class CreateIterationRequestV4:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this CreateIterationRequestV4.
+        r"""Sets the end_time of this CreateIterationRequestV4.
 
         结束时间，年-月-日
 
@@ -127,7 +127,7 @@ class CreateIterationRequestV4:
 
     @property
     def name(self):
-        """Gets the name of this CreateIterationRequestV4.
+        r"""Gets the name of this CreateIterationRequestV4.
 
         标题
 
@@ -138,7 +138,7 @@ class CreateIterationRequestV4:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateIterationRequestV4.
+        r"""Sets the name of this CreateIterationRequestV4.
 
         标题
 

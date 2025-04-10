@@ -28,7 +28,7 @@ class ListQualityTaskResponse(SdkResponse):
     }
 
     def __init__(self, count=None, resources=None):
-        """ListQualityTaskResponse
+        r"""ListQualityTaskResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListQualityTaskResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListQualityTaskResponse.
+        r"""Gets the count of this ListQualityTaskResponse.
 
         总条数
 
@@ -62,7 +62,7 @@ class ListQualityTaskResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListQualityTaskResponse.
+        r"""Sets the count of this ListQualityTaskResponse.
 
         总条数
 
@@ -73,7 +73,7 @@ class ListQualityTaskResponse(SdkResponse):
 
     @property
     def resources(self):
-        """Gets the resources of this ListQualityTaskResponse.
+        r"""Gets the resources of this ListQualityTaskResponse.
 
         分页数据
 
@@ -84,7 +84,7 @@ class ListQualityTaskResponse(SdkResponse):
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this ListQualityTaskResponse.
+        r"""Sets the resources of this ListQualityTaskResponse.
 
         分页数据
 

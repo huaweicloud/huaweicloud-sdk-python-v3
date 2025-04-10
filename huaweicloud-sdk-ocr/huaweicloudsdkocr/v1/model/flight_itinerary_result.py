@@ -77,7 +77,7 @@ class FlightItineraryResult:
     }
 
     def __init__(self, serial_number=None, passenger_name=None, id_number=None, endorsements_restrictions=None, order_number=None, fare=None, caac_development_fund=None, fuel_surcharge=None, other_taxes=None, total=None, e_ticket_number=None, check_code=None, reference_information=None, insurance=None, agent_code=None, issue_organization=None, issue_date=None, tax=None, tax_rate=None, buyer_name=None, buyer_id=None, number=None, international_flag=None, issue_status=None, gp_number=None, itinerary_list=None, confidence=None):
-        """FlightItineraryResult
+        r"""FlightItineraryResult
 
         The model defined in huaweicloud sdk
 
@@ -225,7 +225,7 @@ class FlightItineraryResult:
 
     @property
     def serial_number(self):
-        """Gets the serial_number of this FlightItineraryResult.
+        r"""Gets the serial_number of this FlightItineraryResult.
 
         印刷序号。 
 
@@ -236,7 +236,7 @@ class FlightItineraryResult:
 
     @serial_number.setter
     def serial_number(self, serial_number):
-        """Sets the serial_number of this FlightItineraryResult.
+        r"""Sets the serial_number of this FlightItineraryResult.
 
         印刷序号。 
 
@@ -247,7 +247,7 @@ class FlightItineraryResult:
 
     @property
     def passenger_name(self):
-        """Gets the passenger_name of this FlightItineraryResult.
+        r"""Gets the passenger_name of this FlightItineraryResult.
 
         旅客姓名。 
 
@@ -258,7 +258,7 @@ class FlightItineraryResult:
 
     @passenger_name.setter
     def passenger_name(self, passenger_name):
-        """Sets the passenger_name of this FlightItineraryResult.
+        r"""Sets the passenger_name of this FlightItineraryResult.
 
         旅客姓名。 
 
@@ -269,7 +269,7 @@ class FlightItineraryResult:
 
     @property
     def id_number(self):
-        """Gets the id_number of this FlightItineraryResult.
+        r"""Gets the id_number of this FlightItineraryResult.
 
         有效身份证件号码。 
 
@@ -280,7 +280,7 @@ class FlightItineraryResult:
 
     @id_number.setter
     def id_number(self, id_number):
-        """Sets the id_number of this FlightItineraryResult.
+        r"""Sets the id_number of this FlightItineraryResult.
 
         有效身份证件号码。 
 
@@ -291,7 +291,7 @@ class FlightItineraryResult:
 
     @property
     def endorsements_restrictions(self):
-        """Gets the endorsements_restrictions of this FlightItineraryResult.
+        r"""Gets the endorsements_restrictions of this FlightItineraryResult.
 
         备注。 
 
@@ -302,7 +302,7 @@ class FlightItineraryResult:
 
     @endorsements_restrictions.setter
     def endorsements_restrictions(self, endorsements_restrictions):
-        """Sets the endorsements_restrictions of this FlightItineraryResult.
+        r"""Sets the endorsements_restrictions of this FlightItineraryResult.
 
         备注。 
 
@@ -313,7 +313,7 @@ class FlightItineraryResult:
 
     @property
     def order_number(self):
-        """Gets the order_number of this FlightItineraryResult.
+        r"""Gets the order_number of this FlightItineraryResult.
 
         订单号。 
 
@@ -324,7 +324,7 @@ class FlightItineraryResult:
 
     @order_number.setter
     def order_number(self, order_number):
-        """Sets the order_number of this FlightItineraryResult.
+        r"""Sets the order_number of this FlightItineraryResult.
 
         订单号。 
 
@@ -335,7 +335,7 @@ class FlightItineraryResult:
 
     @property
     def fare(self):
-        """Gets the fare of this FlightItineraryResult.
+        r"""Gets the fare of this FlightItineraryResult.
 
         票价。 
 
@@ -346,7 +346,7 @@ class FlightItineraryResult:
 
     @fare.setter
     def fare(self, fare):
-        """Sets the fare of this FlightItineraryResult.
+        r"""Sets the fare of this FlightItineraryResult.
 
         票价。 
 
@@ -357,7 +357,7 @@ class FlightItineraryResult:
 
     @property
     def caac_development_fund(self):
-        """Gets the caac_development_fund of this FlightItineraryResult.
+        r"""Gets the caac_development_fund of this FlightItineraryResult.
 
         民航（CAAC)发展基金。 
 
@@ -368,7 +368,7 @@ class FlightItineraryResult:
 
     @caac_development_fund.setter
     def caac_development_fund(self, caac_development_fund):
-        """Sets the caac_development_fund of this FlightItineraryResult.
+        r"""Sets the caac_development_fund of this FlightItineraryResult.
 
         民航（CAAC)发展基金。 
 
@@ -379,7 +379,7 @@ class FlightItineraryResult:
 
     @property
     def fuel_surcharge(self):
-        """Gets the fuel_surcharge of this FlightItineraryResult.
+        r"""Gets the fuel_surcharge of this FlightItineraryResult.
 
         燃油附加费。 
 
@@ -390,7 +390,7 @@ class FlightItineraryResult:
 
     @fuel_surcharge.setter
     def fuel_surcharge(self, fuel_surcharge):
-        """Sets the fuel_surcharge of this FlightItineraryResult.
+        r"""Sets the fuel_surcharge of this FlightItineraryResult.
 
         燃油附加费。 
 
@@ -401,7 +401,7 @@ class FlightItineraryResult:
 
     @property
     def other_taxes(self):
-        """Gets the other_taxes of this FlightItineraryResult.
+        r"""Gets the other_taxes of this FlightItineraryResult.
 
         其他税费。 
 
@@ -412,7 +412,7 @@ class FlightItineraryResult:
 
     @other_taxes.setter
     def other_taxes(self, other_taxes):
-        """Sets the other_taxes of this FlightItineraryResult.
+        r"""Sets the other_taxes of this FlightItineraryResult.
 
         其他税费。 
 
@@ -423,7 +423,7 @@ class FlightItineraryResult:
 
     @property
     def total(self):
-        """Gets the total of this FlightItineraryResult.
+        r"""Gets the total of this FlightItineraryResult.
 
         合计。 
 
@@ -434,7 +434,7 @@ class FlightItineraryResult:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this FlightItineraryResult.
+        r"""Sets the total of this FlightItineraryResult.
 
         合计。 
 
@@ -445,7 +445,7 @@ class FlightItineraryResult:
 
     @property
     def e_ticket_number(self):
-        """Gets the e_ticket_number of this FlightItineraryResult.
+        r"""Gets the e_ticket_number of this FlightItineraryResult.
 
         电子客票号码。 
 
@@ -456,7 +456,7 @@ class FlightItineraryResult:
 
     @e_ticket_number.setter
     def e_ticket_number(self, e_ticket_number):
-        """Sets the e_ticket_number of this FlightItineraryResult.
+        r"""Sets the e_ticket_number of this FlightItineraryResult.
 
         电子客票号码。 
 
@@ -467,7 +467,7 @@ class FlightItineraryResult:
 
     @property
     def check_code(self):
-        """Gets the check_code of this FlightItineraryResult.
+        r"""Gets the check_code of this FlightItineraryResult.
 
         验证码。 
 
@@ -478,7 +478,7 @@ class FlightItineraryResult:
 
     @check_code.setter
     def check_code(self, check_code):
-        """Sets the check_code of this FlightItineraryResult.
+        r"""Sets the check_code of this FlightItineraryResult.
 
         验证码。 
 
@@ -489,7 +489,7 @@ class FlightItineraryResult:
 
     @property
     def reference_information(self):
-        """Gets the reference_information of this FlightItineraryResult.
+        r"""Gets the reference_information of this FlightItineraryResult.
 
         提示信息。 
 
@@ -500,7 +500,7 @@ class FlightItineraryResult:
 
     @reference_information.setter
     def reference_information(self, reference_information):
-        """Sets the reference_information of this FlightItineraryResult.
+        r"""Sets the reference_information of this FlightItineraryResult.
 
         提示信息。 
 
@@ -511,7 +511,7 @@ class FlightItineraryResult:
 
     @property
     def insurance(self):
-        """Gets the insurance of this FlightItineraryResult.
+        r"""Gets the insurance of this FlightItineraryResult.
 
         保险费。 
 
@@ -522,7 +522,7 @@ class FlightItineraryResult:
 
     @insurance.setter
     def insurance(self, insurance):
-        """Sets the insurance of this FlightItineraryResult.
+        r"""Sets the insurance of this FlightItineraryResult.
 
         保险费。 
 
@@ -533,7 +533,7 @@ class FlightItineraryResult:
 
     @property
     def agent_code(self):
-        """Gets the agent_code of this FlightItineraryResult.
+        r"""Gets the agent_code of this FlightItineraryResult.
 
         销售单位代号。 
 
@@ -544,7 +544,7 @@ class FlightItineraryResult:
 
     @agent_code.setter
     def agent_code(self, agent_code):
-        """Sets the agent_code of this FlightItineraryResult.
+        r"""Sets the agent_code of this FlightItineraryResult.
 
         销售单位代号。 
 
@@ -555,7 +555,7 @@ class FlightItineraryResult:
 
     @property
     def issue_organization(self):
-        """Gets the issue_organization of this FlightItineraryResult.
+        r"""Gets the issue_organization of this FlightItineraryResult.
 
         填开单位。 
 
@@ -566,7 +566,7 @@ class FlightItineraryResult:
 
     @issue_organization.setter
     def issue_organization(self, issue_organization):
-        """Sets the issue_organization of this FlightItineraryResult.
+        r"""Sets the issue_organization of this FlightItineraryResult.
 
         填开单位。 
 
@@ -577,7 +577,7 @@ class FlightItineraryResult:
 
     @property
     def issue_date(self):
-        """Gets the issue_date of this FlightItineraryResult.
+        r"""Gets the issue_date of this FlightItineraryResult.
 
         填开日期。 
 
@@ -588,7 +588,7 @@ class FlightItineraryResult:
 
     @issue_date.setter
     def issue_date(self, issue_date):
-        """Sets the issue_date of this FlightItineraryResult.
+        r"""Sets the issue_date of this FlightItineraryResult.
 
         填开日期。 
 
@@ -599,7 +599,7 @@ class FlightItineraryResult:
 
     @property
     def tax(self):
-        """Gets the tax of this FlightItineraryResult.
+        r"""Gets the tax of this FlightItineraryResult.
 
         增值税税额 
 
@@ -610,7 +610,7 @@ class FlightItineraryResult:
 
     @tax.setter
     def tax(self, tax):
-        """Sets the tax of this FlightItineraryResult.
+        r"""Sets the tax of this FlightItineraryResult.
 
         增值税税额 
 
@@ -621,7 +621,7 @@ class FlightItineraryResult:
 
     @property
     def tax_rate(self):
-        """Gets the tax_rate of this FlightItineraryResult.
+        r"""Gets the tax_rate of this FlightItineraryResult.
 
         增值税税率 
 
@@ -632,7 +632,7 @@ class FlightItineraryResult:
 
     @tax_rate.setter
     def tax_rate(self, tax_rate):
-        """Sets the tax_rate of this FlightItineraryResult.
+        r"""Sets the tax_rate of this FlightItineraryResult.
 
         增值税税率 
 
@@ -643,7 +643,7 @@ class FlightItineraryResult:
 
     @property
     def buyer_name(self):
-        """Gets the buyer_name of this FlightItineraryResult.
+        r"""Gets the buyer_name of this FlightItineraryResult.
 
         购买方名称 
 
@@ -654,7 +654,7 @@ class FlightItineraryResult:
 
     @buyer_name.setter
     def buyer_name(self, buyer_name):
-        """Sets the buyer_name of this FlightItineraryResult.
+        r"""Sets the buyer_name of this FlightItineraryResult.
 
         购买方名称 
 
@@ -665,7 +665,7 @@ class FlightItineraryResult:
 
     @property
     def buyer_id(self):
-        """Gets the buyer_id of this FlightItineraryResult.
+        r"""Gets the buyer_id of this FlightItineraryResult.
 
         购买方纳税人识别号 
 
@@ -676,7 +676,7 @@ class FlightItineraryResult:
 
     @buyer_id.setter
     def buyer_id(self, buyer_id):
-        """Sets the buyer_id of this FlightItineraryResult.
+        r"""Sets the buyer_id of this FlightItineraryResult.
 
         购买方纳税人识别号 
 
@@ -687,7 +687,7 @@ class FlightItineraryResult:
 
     @property
     def number(self):
-        """Gets the number of this FlightItineraryResult.
+        r"""Gets the number of this FlightItineraryResult.
 
         发票号码 
 
@@ -698,7 +698,7 @@ class FlightItineraryResult:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this FlightItineraryResult.
+        r"""Sets the number of this FlightItineraryResult.
 
         发票号码 
 
@@ -709,7 +709,7 @@ class FlightItineraryResult:
 
     @property
     def international_flag(self):
-        """Gets the international_flag of this FlightItineraryResult.
+        r"""Gets the international_flag of this FlightItineraryResult.
 
         国内国际标签 
 
@@ -720,7 +720,7 @@ class FlightItineraryResult:
 
     @international_flag.setter
     def international_flag(self, international_flag):
-        """Sets the international_flag of this FlightItineraryResult.
+        r"""Sets the international_flag of this FlightItineraryResult.
 
         国内国际标签 
 
@@ -731,7 +731,7 @@ class FlightItineraryResult:
 
     @property
     def issue_status(self):
-        """Gets the issue_status of this FlightItineraryResult.
+        r"""Gets the issue_status of this FlightItineraryResult.
 
         开具状态 
 
@@ -742,7 +742,7 @@ class FlightItineraryResult:
 
     @issue_status.setter
     def issue_status(self, issue_status):
-        """Sets the issue_status of this FlightItineraryResult.
+        r"""Sets the issue_status of this FlightItineraryResult.
 
         开具状态 
 
@@ -753,7 +753,7 @@ class FlightItineraryResult:
 
     @property
     def gp_number(self):
-        """Gets the gp_number of this FlightItineraryResult.
+        r"""Gets the gp_number of this FlightItineraryResult.
 
         gp单号。 
 
@@ -764,7 +764,7 @@ class FlightItineraryResult:
 
     @gp_number.setter
     def gp_number(self, gp_number):
-        """Sets the gp_number of this FlightItineraryResult.
+        r"""Sets the gp_number of this FlightItineraryResult.
 
         gp单号。 
 
@@ -775,7 +775,7 @@ class FlightItineraryResult:
 
     @property
     def itinerary_list(self):
-        """Gets the itinerary_list of this FlightItineraryResult.
+        r"""Gets the itinerary_list of this FlightItineraryResult.
 
         机票行程列表。 
 
@@ -786,7 +786,7 @@ class FlightItineraryResult:
 
     @itinerary_list.setter
     def itinerary_list(self, itinerary_list):
-        """Sets the itinerary_list of this FlightItineraryResult.
+        r"""Sets the itinerary_list of this FlightItineraryResult.
 
         机票行程列表。 
 
@@ -797,7 +797,7 @@ class FlightItineraryResult:
 
     @property
     def confidence(self):
-        """Gets the confidence of this FlightItineraryResult.
+        r"""Gets the confidence of this FlightItineraryResult.
 
         相关字段的置信度信息，取值范围0~1。  置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。  > 说明：  - （1）置信度中的相关字段均与返回值中的相关字段一一对应；  - （2）置信度中的itinerary_list的顺序与返回值中的itinerary_list的顺序是一致的。 
 
@@ -808,7 +808,7 @@ class FlightItineraryResult:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this FlightItineraryResult.
+        r"""Sets the confidence of this FlightItineraryResult.
 
         相关字段的置信度信息，取值范围0~1。  置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。  > 说明：  - （1）置信度中的相关字段均与返回值中的相关字段一一对应；  - （2）置信度中的itinerary_list的顺序与返回值中的itinerary_list的顺序是一致的。 
 

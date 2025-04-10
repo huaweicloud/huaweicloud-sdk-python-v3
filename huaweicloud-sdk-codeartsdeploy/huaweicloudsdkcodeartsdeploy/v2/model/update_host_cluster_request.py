@@ -27,7 +27,7 @@ class UpdateHostClusterRequest:
     }
 
     def __init__(self, group_id=None, body=None):
-        """UpdateHostClusterRequest
+        r"""UpdateHostClusterRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateHostClusterRequest:
 
     @property
     def group_id(self):
-        """Gets the group_id of this UpdateHostClusterRequest.
+        r"""Gets the group_id of this UpdateHostClusterRequest.
 
         主机集群id
 
@@ -60,7 +60,7 @@ class UpdateHostClusterRequest:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this UpdateHostClusterRequest.
+        r"""Sets the group_id of this UpdateHostClusterRequest.
 
         主机集群id
 
@@ -71,7 +71,7 @@ class UpdateHostClusterRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateHostClusterRequest.
+        r"""Gets the body of this UpdateHostClusterRequest.
 
         :return: The body of this UpdateHostClusterRequest.
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.HostClusterRequest`
@@ -80,7 +80,7 @@ class UpdateHostClusterRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateHostClusterRequest.
+        r"""Sets the body of this UpdateHostClusterRequest.
 
         :param body: The body of this UpdateHostClusterRequest.
         :type body: :class:`huaweicloudsdkcodeartsdeploy.v2.HostClusterRequest`

@@ -27,7 +27,7 @@ class BatchAddMembersRequestBody:
     }
 
     def __init__(self, images=None, projects=None):
-        """BatchAddMembersRequestBody
+        r"""BatchAddMembersRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BatchAddMembersRequestBody:
 
     @property
     def images(self):
-        """Gets the images of this BatchAddMembersRequestBody.
+        r"""Gets the images of this BatchAddMembersRequestBody.
 
         镜像ID列表
 
@@ -59,7 +59,7 @@ class BatchAddMembersRequestBody:
 
     @images.setter
     def images(self, images):
-        """Sets the images of this BatchAddMembersRequestBody.
+        r"""Sets the images of this BatchAddMembersRequestBody.
 
         镜像ID列表
 
@@ -70,7 +70,7 @@ class BatchAddMembersRequestBody:
 
     @property
     def projects(self):
-        """Gets the projects of this BatchAddMembersRequestBody.
+        r"""Gets the projects of this BatchAddMembersRequestBody.
 
         项目ID列表
 
@@ -81,7 +81,7 @@ class BatchAddMembersRequestBody:
 
     @projects.setter
     def projects(self, projects):
-        """Sets the projects of this BatchAddMembersRequestBody.
+        r"""Sets the projects of this BatchAddMembersRequestBody.
 
         项目ID列表
 

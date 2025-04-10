@@ -31,7 +31,7 @@ class DeleteRelationsByOneCaseInfo:
     }
 
     def __init__(self, work_item_ids=None, project_uuid=None, version_uri=None, relate_type=None):
-        """DeleteRelationsByOneCaseInfo
+        r"""DeleteRelationsByOneCaseInfo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class DeleteRelationsByOneCaseInfo:
 
     @property
     def work_item_ids(self):
-        """Gets the work_item_ids of this DeleteRelationsByOneCaseInfo.
+        r"""Gets the work_item_ids of this DeleteRelationsByOneCaseInfo.
 
         :return: The work_item_ids of this DeleteRelationsByOneCaseInfo.
         :rtype: list[str]
@@ -73,7 +73,7 @@ class DeleteRelationsByOneCaseInfo:
 
     @work_item_ids.setter
     def work_item_ids(self, work_item_ids):
-        """Sets the work_item_ids of this DeleteRelationsByOneCaseInfo.
+        r"""Sets the work_item_ids of this DeleteRelationsByOneCaseInfo.
 
         :param work_item_ids: The work_item_ids of this DeleteRelationsByOneCaseInfo.
         :type work_item_ids: list[str]
@@ -82,7 +82,7 @@ class DeleteRelationsByOneCaseInfo:
 
     @property
     def project_uuid(self):
-        """Gets the project_uuid of this DeleteRelationsByOneCaseInfo.
+        r"""Gets the project_uuid of this DeleteRelationsByOneCaseInfo.
 
         项目id
 
@@ -93,7 +93,7 @@ class DeleteRelationsByOneCaseInfo:
 
     @project_uuid.setter
     def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this DeleteRelationsByOneCaseInfo.
+        r"""Sets the project_uuid of this DeleteRelationsByOneCaseInfo.
 
         项目id
 
@@ -104,7 +104,7 @@ class DeleteRelationsByOneCaseInfo:
 
     @property
     def version_uri(self):
-        """Gets the version_uri of this DeleteRelationsByOneCaseInfo.
+        r"""Gets the version_uri of this DeleteRelationsByOneCaseInfo.
 
         版本uri
 
@@ -115,7 +115,7 @@ class DeleteRelationsByOneCaseInfo:
 
     @version_uri.setter
     def version_uri(self, version_uri):
-        """Sets the version_uri of this DeleteRelationsByOneCaseInfo.
+        r"""Sets the version_uri of this DeleteRelationsByOneCaseInfo.
 
         版本uri
 
@@ -126,7 +126,7 @@ class DeleteRelationsByOneCaseInfo:
 
     @property
     def relate_type(self):
-        """Gets the relate_type of this DeleteRelationsByOneCaseInfo.
+        r"""Gets the relate_type of this DeleteRelationsByOneCaseInfo.
 
         关联关系类型
 
@@ -137,7 +137,7 @@ class DeleteRelationsByOneCaseInfo:
 
     @relate_type.setter
     def relate_type(self, relate_type):
-        """Sets the relate_type of this DeleteRelationsByOneCaseInfo.
+        r"""Sets the relate_type of this DeleteRelationsByOneCaseInfo.
 
         关联关系类型
 

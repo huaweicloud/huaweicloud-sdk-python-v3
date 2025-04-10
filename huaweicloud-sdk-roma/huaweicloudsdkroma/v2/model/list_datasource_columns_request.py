@@ -33,7 +33,7 @@ class ListDatasourceColumnsRequest:
     }
 
     def __init__(self, instance_id=None, datasource_id=None, position=None, db_name=None, table_name=None):
-        """ListDatasourceColumnsRequest
+        r"""ListDatasourceColumnsRequest
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class ListDatasourceColumnsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListDatasourceColumnsRequest.
+        r"""Gets the instance_id of this ListDatasourceColumnsRequest.
 
         实例ID
 
@@ -79,7 +79,7 @@ class ListDatasourceColumnsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListDatasourceColumnsRequest.
+        r"""Sets the instance_id of this ListDatasourceColumnsRequest.
 
         实例ID
 
@@ -90,7 +90,7 @@ class ListDatasourceColumnsRequest:
 
     @property
     def datasource_id(self):
-        """Gets the datasource_id of this ListDatasourceColumnsRequest.
+        r"""Gets the datasource_id of this ListDatasourceColumnsRequest.
 
         数据源ID
 
@@ -101,7 +101,7 @@ class ListDatasourceColumnsRequest:
 
     @datasource_id.setter
     def datasource_id(self, datasource_id):
-        """Sets the datasource_id of this ListDatasourceColumnsRequest.
+        r"""Sets the datasource_id of this ListDatasourceColumnsRequest.
 
         数据源ID
 
@@ -112,7 +112,7 @@ class ListDatasourceColumnsRequest:
 
     @property
     def position(self):
-        """Gets the position of this ListDatasourceColumnsRequest.
+        r"""Gets the position of this ListDatasourceColumnsRequest.
 
         数据源所在任务位置 - SOURCE 数据源处于任务源端 - TARGET 数据源处于任务目标端
 
@@ -123,7 +123,7 @@ class ListDatasourceColumnsRequest:
 
     @position.setter
     def position(self, position):
-        """Sets the position of this ListDatasourceColumnsRequest.
+        r"""Sets the position of this ListDatasourceColumnsRequest.
 
         数据源所在任务位置 - SOURCE 数据源处于任务源端 - TARGET 数据源处于任务目标端
 
@@ -134,7 +134,7 @@ class ListDatasourceColumnsRequest:
 
     @property
     def db_name(self):
-        """Gets the db_name of this ListDatasourceColumnsRequest.
+        r"""Gets the db_name of this ListDatasourceColumnsRequest.
 
         数据库名称，只支持MRSHIVE，FIHIVE类型的数据源
 
@@ -145,7 +145,7 @@ class ListDatasourceColumnsRequest:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this ListDatasourceColumnsRequest.
+        r"""Sets the db_name of this ListDatasourceColumnsRequest.
 
         数据库名称，只支持MRSHIVE，FIHIVE类型的数据源
 
@@ -156,7 +156,7 @@ class ListDatasourceColumnsRequest:
 
     @property
     def table_name(self):
-        """Gets the table_name of this ListDatasourceColumnsRequest.
+        r"""Gets the table_name of this ListDatasourceColumnsRequest.
 
         字段所在的表名
 
@@ -167,7 +167,7 @@ class ListDatasourceColumnsRequest:
 
     @table_name.setter
     def table_name(self, table_name):
-        """Sets the table_name of this ListDatasourceColumnsRequest.
+        r"""Sets the table_name of this ListDatasourceColumnsRequest.
 
         字段所在的表名
 

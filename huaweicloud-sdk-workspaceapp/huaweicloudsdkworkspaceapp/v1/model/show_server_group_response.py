@@ -100,7 +100,7 @@ class ShowServerGroupResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, description=None, image_id=None, os_type=None, product_id=None, subnet_id=None, system_disk_type=None, system_disk_size=None, is_vdi=None, extra_session_type=None, extra_session_size=None, app_type=None, create_time=None, update_time=None, storage_mount_policy=None, enterprise_project_id=None, primary_server_group_ids=None, secondary_server_group_ids=None, server_group_status=None, site_type=None, site_id=None, app_server_flavor_count=None, app_server_count=None, app_group_count=None, image_name=None, product_info=None, subnet_name=None, scaling_policy=None, tags=None, ou_name=None, flavors=None, project_name=None, image_min_disk=None, route_policy=None, image_product_id=None, image_type=None, ip_virtual=None):
-        """ShowServerGroupResponse
+        r"""ShowServerGroupResponse
 
         The model defined in huaweicloud sdk
 
@@ -303,7 +303,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowServerGroupResponse.
+        r"""Gets the id of this ShowServerGroupResponse.
 
         服务器组的唯一标识。
 
@@ -314,7 +314,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowServerGroupResponse.
+        r"""Sets the id of this ShowServerGroupResponse.
 
         服务器组的唯一标识。
 
@@ -325,7 +325,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowServerGroupResponse.
+        r"""Gets the name of this ShowServerGroupResponse.
 
         服务器组名称。
 
@@ -336,7 +336,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowServerGroupResponse.
+        r"""Sets the name of this ShowServerGroupResponse.
 
         服务器组名称。
 
@@ -347,7 +347,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowServerGroupResponse.
+        r"""Gets the description of this ShowServerGroupResponse.
 
         服务器组描述。
 
@@ -358,7 +358,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowServerGroupResponse.
+        r"""Sets the description of this ShowServerGroupResponse.
 
         服务器组描述。
 
@@ -369,7 +369,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @property
     def image_id(self):
-        """Gets the image_id of this ShowServerGroupResponse.
+        r"""Gets the image_id of this ShowServerGroupResponse.
 
         服务器组关联的镜像ID，用于创建对应组下的云服务器。
 
@@ -380,7 +380,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @image_id.setter
     def image_id(self, image_id):
-        """Sets the image_id of this ShowServerGroupResponse.
+        r"""Sets the image_id of this ShowServerGroupResponse.
 
         服务器组关联的镜像ID，用于创建对应组下的云服务器。
 
@@ -391,7 +391,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @property
     def os_type(self):
-        """Gets the os_type of this ShowServerGroupResponse.
+        r"""Gets the os_type of this ShowServerGroupResponse.
 
         :return: The os_type of this ShowServerGroupResponse.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.OsTypeEnum`
@@ -400,7 +400,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @os_type.setter
     def os_type(self, os_type):
-        """Sets the os_type of this ShowServerGroupResponse.
+        r"""Sets the os_type of this ShowServerGroupResponse.
 
         :param os_type: The os_type of this ShowServerGroupResponse.
         :type os_type: :class:`huaweicloudsdkworkspaceapp.v1.OsTypeEnum`
@@ -409,7 +409,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @property
     def product_id(self):
-        """Gets the product_id of this ShowServerGroupResponse.
+        r"""Gets the product_id of this ShowServerGroupResponse.
 
         产品id。
 
@@ -420,7 +420,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ShowServerGroupResponse.
+        r"""Sets the product_id of this ShowServerGroupResponse.
 
         产品id。
 
@@ -431,7 +431,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @property
     def subnet_id(self):
-        """Gets the subnet_id of this ShowServerGroupResponse.
+        r"""Gets the subnet_id of this ShowServerGroupResponse.
 
         网卡对应的子网ID。
 
@@ -442,7 +442,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @subnet_id.setter
     def subnet_id(self, subnet_id):
-        """Sets the subnet_id of this ShowServerGroupResponse.
+        r"""Sets the subnet_id of this ShowServerGroupResponse.
 
         网卡对应的子网ID。
 
@@ -453,7 +453,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @property
     def system_disk_type(self):
-        """Gets the system_disk_type of this ShowServerGroupResponse.
+        r"""Gets the system_disk_type of this ShowServerGroupResponse.
 
         :return: The system_disk_type of this ShowServerGroupResponse.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.VolumeType`
@@ -462,7 +462,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @system_disk_type.setter
     def system_disk_type(self, system_disk_type):
-        """Sets the system_disk_type of this ShowServerGroupResponse.
+        r"""Sets the system_disk_type of this ShowServerGroupResponse.
 
         :param system_disk_type: The system_disk_type of this ShowServerGroupResponse.
         :type system_disk_type: :class:`huaweicloudsdkworkspaceapp.v1.VolumeType`
@@ -471,7 +471,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @property
     def system_disk_size(self):
-        """Gets the system_disk_size of this ShowServerGroupResponse.
+        r"""Gets the system_disk_size of this ShowServerGroupResponse.
 
         磁盘容量，单位GB。
 
@@ -482,7 +482,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @system_disk_size.setter
     def system_disk_size(self, system_disk_size):
-        """Sets the system_disk_size of this ShowServerGroupResponse.
+        r"""Sets the system_disk_size of this ShowServerGroupResponse.
 
         磁盘容量，单位GB。
 
@@ -493,7 +493,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @property
     def is_vdi(self):
-        """Gets the is_vdi of this ShowServerGroupResponse.
+        r"""Gets the is_vdi of this ShowServerGroupResponse.
 
         是否为vdi单会话模式。
 
@@ -504,7 +504,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @is_vdi.setter
     def is_vdi(self, is_vdi):
-        """Sets the is_vdi of this ShowServerGroupResponse.
+        r"""Sets the is_vdi of this ShowServerGroupResponse.
 
         是否为vdi单会话模式。
 
@@ -515,7 +515,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @property
     def extra_session_type(self):
-        """Gets the extra_session_type of this ShowServerGroupResponse.
+        r"""Gets the extra_session_type of this ShowServerGroupResponse.
 
         :return: The extra_session_type of this ShowServerGroupResponse.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ExtraSessionTypeEnum`
@@ -524,7 +524,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @extra_session_type.setter
     def extra_session_type(self, extra_session_type):
-        """Sets the extra_session_type of this ShowServerGroupResponse.
+        r"""Sets the extra_session_type of this ShowServerGroupResponse.
 
         :param extra_session_type: The extra_session_type of this ShowServerGroupResponse.
         :type extra_session_type: :class:`huaweicloudsdkworkspaceapp.v1.ExtraSessionTypeEnum`
@@ -533,7 +533,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @property
     def extra_session_size(self):
-        """Gets the extra_session_size of this ShowServerGroupResponse.
+        r"""Gets the extra_session_size of this ShowServerGroupResponse.
 
         付费会话个数。
 
@@ -544,7 +544,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @extra_session_size.setter
     def extra_session_size(self, extra_session_size):
-        """Sets the extra_session_size of this ShowServerGroupResponse.
+        r"""Sets the extra_session_size of this ShowServerGroupResponse.
 
         付费会话个数。
 
@@ -555,7 +555,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @property
     def app_type(self):
-        """Gets the app_type of this ShowServerGroupResponse.
+        r"""Gets the app_type of this ShowServerGroupResponse.
 
         :return: The app_type of this ShowServerGroupResponse.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
@@ -564,7 +564,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this ShowServerGroupResponse.
+        r"""Sets the app_type of this ShowServerGroupResponse.
 
         :param app_type: The app_type of this ShowServerGroupResponse.
         :type app_type: :class:`huaweicloudsdkworkspaceapp.v1.AppTypeEnum`
@@ -573,7 +573,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowServerGroupResponse.
+        r"""Gets the create_time of this ShowServerGroupResponse.
 
         服务器组创建时间
 
@@ -584,7 +584,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowServerGroupResponse.
+        r"""Sets the create_time of this ShowServerGroupResponse.
 
         服务器组创建时间
 
@@ -595,7 +595,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this ShowServerGroupResponse.
+        r"""Gets the update_time of this ShowServerGroupResponse.
 
         服务器组更新时间
 
@@ -606,7 +606,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this ShowServerGroupResponse.
+        r"""Sets the update_time of this ShowServerGroupResponse.
 
         服务器组更新时间
 
@@ -617,7 +617,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @property
     def storage_mount_policy(self):
-        """Gets the storage_mount_policy of this ShowServerGroupResponse.
+        r"""Gets the storage_mount_policy of this ShowServerGroupResponse.
 
         :return: The storage_mount_policy of this ShowServerGroupResponse.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.StorageFolderMountType`
@@ -626,7 +626,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @storage_mount_policy.setter
     def storage_mount_policy(self, storage_mount_policy):
-        """Sets the storage_mount_policy of this ShowServerGroupResponse.
+        r"""Sets the storage_mount_policy of this ShowServerGroupResponse.
 
         :param storage_mount_policy: The storage_mount_policy of this ShowServerGroupResponse.
         :type storage_mount_policy: :class:`huaweicloudsdkworkspaceapp.v1.StorageFolderMountType`
@@ -635,7 +635,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowServerGroupResponse.
+        r"""Gets the enterprise_project_id of this ShowServerGroupResponse.
 
         企业项目ID(0表示默认企业项目Id)
 
@@ -646,7 +646,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowServerGroupResponse.
+        r"""Sets the enterprise_project_id of this ShowServerGroupResponse.
 
         企业项目ID(0表示默认企业项目Id)
 
@@ -657,7 +657,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @property
     def primary_server_group_ids(self):
-        """Gets the primary_server_group_ids of this ShowServerGroupResponse.
+        r"""Gets the primary_server_group_ids of this ShowServerGroupResponse.
 
         主服务器组id列表。
 
@@ -668,7 +668,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @primary_server_group_ids.setter
     def primary_server_group_ids(self, primary_server_group_ids):
-        """Sets the primary_server_group_ids of this ShowServerGroupResponse.
+        r"""Sets the primary_server_group_ids of this ShowServerGroupResponse.
 
         主服务器组id列表。
 
@@ -679,7 +679,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @property
     def secondary_server_group_ids(self):
-        """Gets the secondary_server_group_ids of this ShowServerGroupResponse.
+        r"""Gets the secondary_server_group_ids of this ShowServerGroupResponse.
 
         备服务器组id列表。
 
@@ -690,7 +690,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @secondary_server_group_ids.setter
     def secondary_server_group_ids(self, secondary_server_group_ids):
-        """Sets the secondary_server_group_ids of this ShowServerGroupResponse.
+        r"""Sets the secondary_server_group_ids of this ShowServerGroupResponse.
 
         备服务器组id列表。
 
@@ -701,7 +701,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @property
     def server_group_status(self):
-        """Gets the server_group_status of this ShowServerGroupResponse.
+        r"""Gets the server_group_status of this ShowServerGroupResponse.
 
         服务器是否处于启用状态，true表示处于启用状态 false表示处于禁用状态。
 
@@ -712,7 +712,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @server_group_status.setter
     def server_group_status(self, server_group_status):
-        """Sets the server_group_status of this ShowServerGroupResponse.
+        r"""Sets the server_group_status of this ShowServerGroupResponse.
 
         服务器是否处于启用状态，true表示处于启用状态 false表示处于禁用状态。
 
@@ -723,7 +723,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @property
     def site_type(self):
-        """Gets the site_type of this ShowServerGroupResponse.
+        r"""Gets the site_type of this ShowServerGroupResponse.
 
         站点类型 - CENTER/IES
 
@@ -734,7 +734,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @site_type.setter
     def site_type(self, site_type):
-        """Sets the site_type of this ShowServerGroupResponse.
+        r"""Sets the site_type of this ShowServerGroupResponse.
 
         站点类型 - CENTER/IES
 
@@ -745,7 +745,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @property
     def site_id(self):
-        """Gets the site_id of this ShowServerGroupResponse.
+        r"""Gets the site_id of this ShowServerGroupResponse.
 
         站点id
 
@@ -756,7 +756,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @site_id.setter
     def site_id(self, site_id):
-        """Sets the site_id of this ShowServerGroupResponse.
+        r"""Sets the site_id of this ShowServerGroupResponse.
 
         站点id
 
@@ -767,7 +767,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @property
     def app_server_flavor_count(self):
-        """Gets the app_server_flavor_count of this ShowServerGroupResponse.
+        r"""Gets the app_server_flavor_count of this ShowServerGroupResponse.
 
         服务器配置总数量。
 
@@ -778,7 +778,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @app_server_flavor_count.setter
     def app_server_flavor_count(self, app_server_flavor_count):
-        """Sets the app_server_flavor_count of this ShowServerGroupResponse.
+        r"""Sets the app_server_flavor_count of this ShowServerGroupResponse.
 
         服务器配置总数量。
 
@@ -789,7 +789,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @property
     def app_server_count(self):
-        """Gets the app_server_count of this ShowServerGroupResponse.
+        r"""Gets the app_server_count of this ShowServerGroupResponse.
 
         服务器总数量。
 
@@ -800,7 +800,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @app_server_count.setter
     def app_server_count(self, app_server_count):
-        """Sets the app_server_count of this ShowServerGroupResponse.
+        r"""Sets the app_server_count of this ShowServerGroupResponse.
 
         服务器总数量。
 
@@ -811,7 +811,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @property
     def app_group_count(self):
-        """Gets the app_group_count of this ShowServerGroupResponse.
+        r"""Gets the app_group_count of this ShowServerGroupResponse.
 
         关联应用组的总数量。
 
@@ -822,7 +822,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @app_group_count.setter
     def app_group_count(self, app_group_count):
-        """Sets the app_group_count of this ShowServerGroupResponse.
+        r"""Sets the app_group_count of this ShowServerGroupResponse.
 
         关联应用组的总数量。
 
@@ -833,7 +833,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @property
     def image_name(self):
-        """Gets the image_name of this ShowServerGroupResponse.
+        r"""Gets the image_name of this ShowServerGroupResponse.
 
         镜像名称。
 
@@ -844,7 +844,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @image_name.setter
     def image_name(self, image_name):
-        """Sets the image_name of this ShowServerGroupResponse.
+        r"""Sets the image_name of this ShowServerGroupResponse.
 
         镜像名称。
 
@@ -855,7 +855,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @property
     def product_info(self):
-        """Gets the product_info of this ShowServerGroupResponse.
+        r"""Gets the product_info of this ShowServerGroupResponse.
 
         :return: The product_info of this ShowServerGroupResponse.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ProductInfo`
@@ -864,7 +864,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @product_info.setter
     def product_info(self, product_info):
-        """Sets the product_info of this ShowServerGroupResponse.
+        r"""Sets the product_info of this ShowServerGroupResponse.
 
         :param product_info: The product_info of this ShowServerGroupResponse.
         :type product_info: :class:`huaweicloudsdkworkspaceapp.v1.ProductInfo`
@@ -873,7 +873,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @property
     def subnet_name(self):
-        """Gets the subnet_name of this ShowServerGroupResponse.
+        r"""Gets the subnet_name of this ShowServerGroupResponse.
 
         子网名称。
 
@@ -884,7 +884,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @subnet_name.setter
     def subnet_name(self, subnet_name):
-        """Sets the subnet_name of this ShowServerGroupResponse.
+        r"""Sets the subnet_name of this ShowServerGroupResponse.
 
         子网名称。
 
@@ -895,7 +895,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @property
     def scaling_policy(self):
-        """Gets the scaling_policy of this ShowServerGroupResponse.
+        r"""Gets the scaling_policy of this ShowServerGroupResponse.
 
         :return: The scaling_policy of this ShowServerGroupResponse.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ScalingPolicy`
@@ -904,7 +904,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @scaling_policy.setter
     def scaling_policy(self, scaling_policy):
-        """Sets the scaling_policy of this ShowServerGroupResponse.
+        r"""Sets the scaling_policy of this ShowServerGroupResponse.
 
         :param scaling_policy: The scaling_policy of this ShowServerGroupResponse.
         :type scaling_policy: :class:`huaweicloudsdkworkspaceapp.v1.ScalingPolicy`
@@ -913,7 +913,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @property
     def tags(self):
-        """Gets the tags of this ShowServerGroupResponse.
+        r"""Gets the tags of this ShowServerGroupResponse.
 
         标签信息
 
@@ -924,7 +924,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ShowServerGroupResponse.
+        r"""Sets the tags of this ShowServerGroupResponse.
 
         标签信息
 
@@ -935,7 +935,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @property
     def ou_name(self):
-        """Gets the ou_name of this ShowServerGroupResponse.
+        r"""Gets the ou_name of this ShowServerGroupResponse.
 
         默认组织名称。
 
@@ -946,7 +946,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @ou_name.setter
     def ou_name(self, ou_name):
-        """Sets the ou_name of this ShowServerGroupResponse.
+        r"""Sets the ou_name of this ShowServerGroupResponse.
 
         默认组织名称。
 
@@ -957,7 +957,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @property
     def flavors(self):
-        """Gets the flavors of this ShowServerGroupResponse.
+        r"""Gets the flavors of this ShowServerGroupResponse.
 
         服务器规格列表。
 
@@ -968,7 +968,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @flavors.setter
     def flavors(self, flavors):
-        """Sets the flavors of this ShowServerGroupResponse.
+        r"""Sets the flavors of this ShowServerGroupResponse.
 
         服务器规格列表。
 
@@ -979,7 +979,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @property
     def project_name(self):
-        """Gets the project_name of this ShowServerGroupResponse.
+        r"""Gets the project_name of this ShowServerGroupResponse.
 
         项目名称。
 
@@ -990,7 +990,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @project_name.setter
     def project_name(self, project_name):
-        """Sets the project_name of this ShowServerGroupResponse.
+        r"""Sets the project_name of this ShowServerGroupResponse.
 
         项目名称。
 
@@ -1001,7 +1001,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @property
     def image_min_disk(self):
-        """Gets the image_min_disk of this ShowServerGroupResponse.
+        r"""Gets the image_min_disk of this ShowServerGroupResponse.
 
         镜像运行的最小内存，单位为MB，默认设置为0。
 
@@ -1012,7 +1012,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @image_min_disk.setter
     def image_min_disk(self, image_min_disk):
-        """Sets the image_min_disk of this ShowServerGroupResponse.
+        r"""Sets the image_min_disk of this ShowServerGroupResponse.
 
         镜像运行的最小内存，单位为MB，默认设置为0。
 
@@ -1023,7 +1023,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @property
     def route_policy(self):
-        """Gets the route_policy of this ShowServerGroupResponse.
+        r"""Gets the route_policy of this ShowServerGroupResponse.
 
         :return: The route_policy of this ShowServerGroupResponse.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.RoutePolicy`
@@ -1032,7 +1032,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @route_policy.setter
     def route_policy(self, route_policy):
-        """Sets the route_policy of this ShowServerGroupResponse.
+        r"""Sets the route_policy of this ShowServerGroupResponse.
 
         :param route_policy: The route_policy of this ShowServerGroupResponse.
         :type route_policy: :class:`huaweicloudsdkworkspaceapp.v1.RoutePolicy`
@@ -1041,7 +1041,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @property
     def image_product_id(self):
-        """Gets the image_product_id of this ShowServerGroupResponse.
+        r"""Gets the image_product_id of this ShowServerGroupResponse.
 
         镜像的产品id。
 
@@ -1052,7 +1052,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @image_product_id.setter
     def image_product_id(self, image_product_id):
-        """Sets the image_product_id of this ShowServerGroupResponse.
+        r"""Sets the image_product_id of this ShowServerGroupResponse.
 
         镜像的产品id。
 
@@ -1063,7 +1063,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @property
     def image_type(self):
-        """Gets the image_type of this ShowServerGroupResponse.
+        r"""Gets the image_type of this ShowServerGroupResponse.
 
         镜像类型。
 
@@ -1074,7 +1074,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @image_type.setter
     def image_type(self, image_type):
-        """Sets the image_type of this ShowServerGroupResponse.
+        r"""Sets the image_type of this ShowServerGroupResponse.
 
         镜像类型。
 
@@ -1085,7 +1085,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @property
     def ip_virtual(self):
-        """Gets the ip_virtual of this ShowServerGroupResponse.
+        r"""Gets the ip_virtual of this ShowServerGroupResponse.
 
         :return: The ip_virtual of this ShowServerGroupResponse.
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.IpVirtual`
@@ -1094,7 +1094,7 @@ class ShowServerGroupResponse(SdkResponse):
 
     @ip_virtual.setter
     def ip_virtual(self, ip_virtual):
-        """Sets the ip_virtual of this ShowServerGroupResponse.
+        r"""Sets the ip_virtual of this ShowServerGroupResponse.
 
         :param ip_virtual: The ip_virtual of this ShowServerGroupResponse.
         :type ip_virtual: :class:`huaweicloudsdkworkspaceapp.v1.IpVirtual`

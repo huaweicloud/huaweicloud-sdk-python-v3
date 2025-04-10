@@ -25,7 +25,7 @@ class NovaCreateKeypairRequestBody:
     }
 
     def __init__(self, keypair=None):
-        """NovaCreateKeypairRequestBody
+        r"""NovaCreateKeypairRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class NovaCreateKeypairRequestBody:
 
     @property
     def keypair(self):
-        """Gets the keypair of this NovaCreateKeypairRequestBody.
+        r"""Gets the keypair of this NovaCreateKeypairRequestBody.
 
         :return: The keypair of this NovaCreateKeypairRequestBody.
         :rtype: :class:`huaweicloudsdkecs.v2.NovaCreateKeypairOption`
@@ -51,7 +51,7 @@ class NovaCreateKeypairRequestBody:
 
     @keypair.setter
     def keypair(self, keypair):
-        """Sets the keypair of this NovaCreateKeypairRequestBody.
+        r"""Sets the keypair of this NovaCreateKeypairRequestBody.
 
         :param keypair: The keypair of this NovaCreateKeypairRequestBody.
         :type keypair: :class:`huaweicloudsdkecs.v2.NovaCreateKeypairOption`

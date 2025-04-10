@@ -25,7 +25,7 @@ class RegisterImageRequestBody:
     }
 
     def __init__(self, image_url=None):
-        """RegisterImageRequestBody
+        r"""RegisterImageRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RegisterImageRequestBody:
 
     @property
     def image_url(self):
-        """Gets the image_url of this RegisterImageRequestBody.
+        r"""Gets the image_url of this RegisterImageRequestBody.
 
         源镜像的URL，格式：<bucket>:<file> image_url对应的镜像桶中的文件，镜像文件格式的取值范围为：ZVHD、QCOW2、VHD、RAW、VHDX、QED、VDI、QCOW、ZVHD2、VMDK。
 
@@ -53,7 +53,7 @@ class RegisterImageRequestBody:
 
     @image_url.setter
     def image_url(self, image_url):
-        """Sets the image_url of this RegisterImageRequestBody.
+        r"""Sets the image_url of this RegisterImageRequestBody.
 
         源镜像的URL，格式：<bucket>:<file> image_url对应的镜像桶中的文件，镜像文件格式的取值范围为：ZVHD、QCOW2、VHD、RAW、VHDX、QED、VDI、QCOW、ZVHD2、VMDK。
 

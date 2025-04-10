@@ -60,7 +60,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
     }
 
     def __init__(self, keywords_alarm_rule_id=None, keywords_alarm_rule_name=None, alarm_rule_alias=None, keywords_alarm_rule_description=None, keywords_requests=None, frequency=None, keywords_alarm_level=None, keywords_alarm_send=None, domain_id=None, create_time=None, update_time=None, language=None, project_id=None, topics=None, condition_expression=None, index_id=None, notification_frequency=None, alarm_action_rule_name=None):
-        """UpdateKeywordsAlarmRuleResponse
+        r"""UpdateKeywordsAlarmRuleResponse
 
         The model defined in huaweicloud sdk
 
@@ -163,7 +163,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
 
     @property
     def keywords_alarm_rule_id(self):
-        """Gets the keywords_alarm_rule_id of this UpdateKeywordsAlarmRuleResponse.
+        r"""Gets the keywords_alarm_rule_id of this UpdateKeywordsAlarmRuleResponse.
 
         关键词告警id
 
@@ -174,7 +174,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
 
     @keywords_alarm_rule_id.setter
     def keywords_alarm_rule_id(self, keywords_alarm_rule_id):
-        """Sets the keywords_alarm_rule_id of this UpdateKeywordsAlarmRuleResponse.
+        r"""Sets the keywords_alarm_rule_id of this UpdateKeywordsAlarmRuleResponse.
 
         关键词告警id
 
@@ -185,7 +185,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
 
     @property
     def keywords_alarm_rule_name(self):
-        """Gets the keywords_alarm_rule_name of this UpdateKeywordsAlarmRuleResponse.
+        r"""Gets the keywords_alarm_rule_name of this UpdateKeywordsAlarmRuleResponse.
 
         关键词告警名称
 
@@ -196,7 +196,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
 
     @keywords_alarm_rule_name.setter
     def keywords_alarm_rule_name(self, keywords_alarm_rule_name):
-        """Sets the keywords_alarm_rule_name of this UpdateKeywordsAlarmRuleResponse.
+        r"""Sets the keywords_alarm_rule_name of this UpdateKeywordsAlarmRuleResponse.
 
         关键词告警名称
 
@@ -207,7 +207,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
 
     @property
     def alarm_rule_alias(self):
-        """Gets the alarm_rule_alias of this UpdateKeywordsAlarmRuleResponse.
+        r"""Gets the alarm_rule_alias of this UpdateKeywordsAlarmRuleResponse.
 
         规则名称
 
@@ -218,7 +218,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
 
     @alarm_rule_alias.setter
     def alarm_rule_alias(self, alarm_rule_alias):
-        """Sets the alarm_rule_alias of this UpdateKeywordsAlarmRuleResponse.
+        r"""Sets the alarm_rule_alias of this UpdateKeywordsAlarmRuleResponse.
 
         规则名称
 
@@ -229,7 +229,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
 
     @property
     def keywords_alarm_rule_description(self):
-        """Gets the keywords_alarm_rule_description of this UpdateKeywordsAlarmRuleResponse.
+        r"""Gets the keywords_alarm_rule_description of this UpdateKeywordsAlarmRuleResponse.
 
         关键词告警信息描述
 
@@ -240,7 +240,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
 
     @keywords_alarm_rule_description.setter
     def keywords_alarm_rule_description(self, keywords_alarm_rule_description):
-        """Sets the keywords_alarm_rule_description of this UpdateKeywordsAlarmRuleResponse.
+        r"""Sets the keywords_alarm_rule_description of this UpdateKeywordsAlarmRuleResponse.
 
         关键词告警信息描述
 
@@ -251,7 +251,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
 
     @property
     def keywords_requests(self):
-        """Gets the keywords_requests of this UpdateKeywordsAlarmRuleResponse.
+        r"""Gets the keywords_requests of this UpdateKeywordsAlarmRuleResponse.
 
         关键词详细信息
 
@@ -262,7 +262,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
 
     @keywords_requests.setter
     def keywords_requests(self, keywords_requests):
-        """Sets the keywords_requests of this UpdateKeywordsAlarmRuleResponse.
+        r"""Sets the keywords_requests of this UpdateKeywordsAlarmRuleResponse.
 
         关键词详细信息
 
@@ -273,7 +273,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
 
     @property
     def frequency(self):
-        """Gets the frequency of this UpdateKeywordsAlarmRuleResponse.
+        r"""Gets the frequency of this UpdateKeywordsAlarmRuleResponse.
 
         :return: The frequency of this UpdateKeywordsAlarmRuleResponse.
         :rtype: :class:`huaweicloudsdklts.v2.FrequencyRespBody`
@@ -282,7 +282,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
 
     @frequency.setter
     def frequency(self, frequency):
-        """Sets the frequency of this UpdateKeywordsAlarmRuleResponse.
+        r"""Sets the frequency of this UpdateKeywordsAlarmRuleResponse.
 
         :param frequency: The frequency of this UpdateKeywordsAlarmRuleResponse.
         :type frequency: :class:`huaweicloudsdklts.v2.FrequencyRespBody`
@@ -291,7 +291,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
 
     @property
     def keywords_alarm_level(self):
-        """Gets the keywords_alarm_level of this UpdateKeywordsAlarmRuleResponse.
+        r"""Gets the keywords_alarm_level of this UpdateKeywordsAlarmRuleResponse.
 
         告警级别
 
@@ -302,7 +302,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
 
     @keywords_alarm_level.setter
     def keywords_alarm_level(self, keywords_alarm_level):
-        """Sets the keywords_alarm_level of this UpdateKeywordsAlarmRuleResponse.
+        r"""Sets the keywords_alarm_level of this UpdateKeywordsAlarmRuleResponse.
 
         告警级别
 
@@ -313,7 +313,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
 
     @property
     def keywords_alarm_send(self):
-        """Gets the keywords_alarm_send of this UpdateKeywordsAlarmRuleResponse.
+        r"""Gets the keywords_alarm_send of this UpdateKeywordsAlarmRuleResponse.
 
         是否发送
 
@@ -324,7 +324,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
 
     @keywords_alarm_send.setter
     def keywords_alarm_send(self, keywords_alarm_send):
-        """Sets the keywords_alarm_send of this UpdateKeywordsAlarmRuleResponse.
+        r"""Sets the keywords_alarm_send of this UpdateKeywordsAlarmRuleResponse.
 
         是否发送
 
@@ -335,7 +335,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this UpdateKeywordsAlarmRuleResponse.
+        r"""Gets the domain_id of this UpdateKeywordsAlarmRuleResponse.
 
         domainId
 
@@ -346,7 +346,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this UpdateKeywordsAlarmRuleResponse.
+        r"""Sets the domain_id of this UpdateKeywordsAlarmRuleResponse.
 
         domainId
 
@@ -357,7 +357,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this UpdateKeywordsAlarmRuleResponse.
+        r"""Gets the create_time of this UpdateKeywordsAlarmRuleResponse.
 
         创建时间(毫秒时间戳)
 
@@ -368,7 +368,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this UpdateKeywordsAlarmRuleResponse.
+        r"""Sets the create_time of this UpdateKeywordsAlarmRuleResponse.
 
         创建时间(毫秒时间戳)
 
@@ -379,7 +379,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this UpdateKeywordsAlarmRuleResponse.
+        r"""Gets the update_time of this UpdateKeywordsAlarmRuleResponse.
 
         更新时间(毫秒时间戳)
 
@@ -390,7 +390,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this UpdateKeywordsAlarmRuleResponse.
+        r"""Sets the update_time of this UpdateKeywordsAlarmRuleResponse.
 
         更新时间(毫秒时间戳)
 
@@ -401,7 +401,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
 
     @property
     def language(self):
-        """Gets the language of this UpdateKeywordsAlarmRuleResponse.
+        r"""Gets the language of this UpdateKeywordsAlarmRuleResponse.
 
         邮件附加信息语言
 
@@ -412,7 +412,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
 
     @language.setter
     def language(self, language):
-        """Sets the language of this UpdateKeywordsAlarmRuleResponse.
+        r"""Sets the language of this UpdateKeywordsAlarmRuleResponse.
 
         邮件附加信息语言
 
@@ -423,7 +423,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
 
     @property
     def project_id(self):
-        """Gets the project_id of this UpdateKeywordsAlarmRuleResponse.
+        r"""Gets the project_id of this UpdateKeywordsAlarmRuleResponse.
 
         项目id
 
@@ -434,7 +434,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this UpdateKeywordsAlarmRuleResponse.
+        r"""Sets the project_id of this UpdateKeywordsAlarmRuleResponse.
 
         项目id
 
@@ -445,7 +445,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
 
     @property
     def topics(self):
-        """Gets the topics of this UpdateKeywordsAlarmRuleResponse.
+        r"""Gets the topics of this UpdateKeywordsAlarmRuleResponse.
 
         通知主题
 
@@ -456,7 +456,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
 
     @topics.setter
     def topics(self, topics):
-        """Sets the topics of this UpdateKeywordsAlarmRuleResponse.
+        r"""Sets the topics of this UpdateKeywordsAlarmRuleResponse.
 
         通知主题
 
@@ -467,7 +467,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
 
     @property
     def condition_expression(self):
-        """Gets the condition_expression of this UpdateKeywordsAlarmRuleResponse.
+        r"""Gets the condition_expression of this UpdateKeywordsAlarmRuleResponse.
 
         情况表述
 
@@ -478,7 +478,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
 
     @condition_expression.setter
     def condition_expression(self, condition_expression):
-        """Sets the condition_expression of this UpdateKeywordsAlarmRuleResponse.
+        r"""Sets the condition_expression of this UpdateKeywordsAlarmRuleResponse.
 
         情况表述
 
@@ -489,7 +489,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
 
     @property
     def index_id(self):
-        """Gets the index_id of this UpdateKeywordsAlarmRuleResponse.
+        r"""Gets the index_id of this UpdateKeywordsAlarmRuleResponse.
 
         索引id
 
@@ -500,7 +500,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
 
     @index_id.setter
     def index_id(self, index_id):
-        """Sets the index_id of this UpdateKeywordsAlarmRuleResponse.
+        r"""Sets the index_id of this UpdateKeywordsAlarmRuleResponse.
 
         索引id
 
@@ -511,7 +511,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
 
     @property
     def notification_frequency(self):
-        """Gets the notification_frequency of this UpdateKeywordsAlarmRuleResponse.
+        r"""Gets the notification_frequency of this UpdateKeywordsAlarmRuleResponse.
 
         通知频率,单位(分钟)
 
@@ -522,7 +522,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
 
     @notification_frequency.setter
     def notification_frequency(self, notification_frequency):
-        """Sets the notification_frequency of this UpdateKeywordsAlarmRuleResponse.
+        r"""Sets the notification_frequency of this UpdateKeywordsAlarmRuleResponse.
 
         通知频率,单位(分钟)
 
@@ -533,7 +533,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
 
     @property
     def alarm_action_rule_name(self):
-        """Gets the alarm_action_rule_name of this UpdateKeywordsAlarmRuleResponse.
+        r"""Gets the alarm_action_rule_name of this UpdateKeywordsAlarmRuleResponse.
 
         告警行动规则名称 >alarm_action_rule_name和notification_save_rule可以选填一个，如果都填，优先选择alarm_action_rule_name
 
@@ -544,7 +544,7 @@ class UpdateKeywordsAlarmRuleResponse(SdkResponse):
 
     @alarm_action_rule_name.setter
     def alarm_action_rule_name(self, alarm_action_rule_name):
-        """Sets the alarm_action_rule_name of this UpdateKeywordsAlarmRuleResponse.
+        r"""Sets the alarm_action_rule_name of this UpdateKeywordsAlarmRuleResponse.
 
         告警行动规则名称 >alarm_action_rule_name和notification_save_rule可以选填一个，如果都填，优先选择alarm_action_rule_name
 

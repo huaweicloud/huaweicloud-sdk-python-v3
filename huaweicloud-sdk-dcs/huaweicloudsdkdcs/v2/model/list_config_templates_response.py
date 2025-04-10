@@ -28,7 +28,7 @@ class ListConfigTemplatesResponse(SdkResponse):
     }
 
     def __init__(self, template_num=None, templates=None):
-        """ListConfigTemplatesResponse
+        r"""ListConfigTemplatesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListConfigTemplatesResponse(SdkResponse):
 
     @property
     def template_num(self):
-        """Gets the template_num of this ListConfigTemplatesResponse.
+        r"""Gets the template_num of this ListConfigTemplatesResponse.
 
         模板个数。
 
@@ -62,7 +62,7 @@ class ListConfigTemplatesResponse(SdkResponse):
 
     @template_num.setter
     def template_num(self, template_num):
-        """Sets the template_num of this ListConfigTemplatesResponse.
+        r"""Sets the template_num of this ListConfigTemplatesResponse.
 
         模板个数。
 
@@ -73,7 +73,7 @@ class ListConfigTemplatesResponse(SdkResponse):
 
     @property
     def templates(self):
-        """Gets the templates of this ListConfigTemplatesResponse.
+        r"""Gets the templates of this ListConfigTemplatesResponse.
 
         模板的详情数组。
 
@@ -84,7 +84,7 @@ class ListConfigTemplatesResponse(SdkResponse):
 
     @templates.setter
     def templates(self, templates):
-        """Sets the templates of this ListConfigTemplatesResponse.
+        r"""Sets the templates of this ListConfigTemplatesResponse.
 
         模板的详情数组。
 

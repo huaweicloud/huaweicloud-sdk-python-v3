@@ -24,7 +24,7 @@ class CleanNextflowCacheResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CleanNextflowCacheResponse
+        r"""CleanNextflowCacheResponse
 
         The model defined in huaweicloud sdk
 

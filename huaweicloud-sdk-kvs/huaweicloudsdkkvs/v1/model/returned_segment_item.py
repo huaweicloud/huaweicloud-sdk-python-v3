@@ -27,7 +27,7 @@ class ReturnedSegmentItem:
     }
 
     def __init__(self, segment_min_key=None, segment_max_key=None):
-        """ReturnedSegmentItem
+        r"""ReturnedSegmentItem
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ReturnedSegmentItem:
 
     @property
     def segment_min_key(self):
-        """Gets the segment_min_key of this ReturnedSegmentItem.
+        r"""Gets the segment_min_key of this ReturnedSegmentItem.
 
         采样段区间起始值。
 
@@ -61,7 +61,7 @@ class ReturnedSegmentItem:
 
     @segment_min_key.setter
     def segment_min_key(self, segment_min_key):
-        """Sets the segment_min_key of this ReturnedSegmentItem.
+        r"""Sets the segment_min_key of this ReturnedSegmentItem.
 
         采样段区间起始值。
 
@@ -72,7 +72,7 @@ class ReturnedSegmentItem:
 
     @property
     def segment_max_key(self):
-        """Gets the segment_max_key of this ReturnedSegmentItem.
+        r"""Gets the segment_max_key of this ReturnedSegmentItem.
 
         采样段区间终止值。
 
@@ -83,7 +83,7 @@ class ReturnedSegmentItem:
 
     @segment_max_key.setter
     def segment_max_key(self, segment_max_key):
-        """Sets the segment_max_key of this ReturnedSegmentItem.
+        r"""Sets the segment_max_key of this ReturnedSegmentItem.
 
         采样段区间终止值。
 

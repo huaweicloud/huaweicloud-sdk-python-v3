@@ -27,7 +27,7 @@ class DeleteEdgeApplicationVersionRequest:
     }
 
     def __init__(self, edge_app_id=None, version=None):
-        """DeleteEdgeApplicationVersionRequest
+        r"""DeleteEdgeApplicationVersionRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteEdgeApplicationVersionRequest:
 
     @property
     def edge_app_id(self):
-        """Gets the edge_app_id of this DeleteEdgeApplicationVersionRequest.
+        r"""Gets the edge_app_id of this DeleteEdgeApplicationVersionRequest.
 
         应用版本,应用内版本唯一。
 
@@ -59,7 +59,7 @@ class DeleteEdgeApplicationVersionRequest:
 
     @edge_app_id.setter
     def edge_app_id(self, edge_app_id):
-        """Sets the edge_app_id of this DeleteEdgeApplicationVersionRequest.
+        r"""Sets the edge_app_id of this DeleteEdgeApplicationVersionRequest.
 
         应用版本,应用内版本唯一。
 
@@ -70,7 +70,7 @@ class DeleteEdgeApplicationVersionRequest:
 
     @property
     def version(self):
-        """Gets the version of this DeleteEdgeApplicationVersionRequest.
+        r"""Gets the version of this DeleteEdgeApplicationVersionRequest.
 
         应用版本ID，应用版本唯一。
 
@@ -81,7 +81,7 @@ class DeleteEdgeApplicationVersionRequest:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this DeleteEdgeApplicationVersionRequest.
+        r"""Sets the version of this DeleteEdgeApplicationVersionRequest.
 
         应用版本ID，应用版本唯一。
 

@@ -31,7 +31,7 @@ class QueryDeviceProxySimplify:
     }
 
     def __init__(self, proxy_id=None, proxy_name=None, effective_time_range=None, app_id=None):
-        """QueryDeviceProxySimplify
+        r"""QueryDeviceProxySimplify
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class QueryDeviceProxySimplify:
 
     @property
     def proxy_id(self):
-        """Gets the proxy_id of this QueryDeviceProxySimplify.
+        r"""Gets the proxy_id of this QueryDeviceProxySimplify.
 
         **参数说明**：代理ID。用来唯一标识一个代理规则
 
@@ -75,7 +75,7 @@ class QueryDeviceProxySimplify:
 
     @proxy_id.setter
     def proxy_id(self, proxy_id):
-        """Sets the proxy_id of this QueryDeviceProxySimplify.
+        r"""Sets the proxy_id of this QueryDeviceProxySimplify.
 
         **参数说明**：代理ID。用来唯一标识一个代理规则
 
@@ -86,7 +86,7 @@ class QueryDeviceProxySimplify:
 
     @property
     def proxy_name(self):
-        """Gets the proxy_name of this QueryDeviceProxySimplify.
+        r"""Gets the proxy_name of this QueryDeviceProxySimplify.
 
         **参数说明**：设备代理名称
 
@@ -97,7 +97,7 @@ class QueryDeviceProxySimplify:
 
     @proxy_name.setter
     def proxy_name(self, proxy_name):
-        """Sets the proxy_name of this QueryDeviceProxySimplify.
+        r"""Sets the proxy_name of this QueryDeviceProxySimplify.
 
         **参数说明**：设备代理名称
 
@@ -108,7 +108,7 @@ class QueryDeviceProxySimplify:
 
     @property
     def effective_time_range(self):
-        """Gets the effective_time_range of this QueryDeviceProxySimplify.
+        r"""Gets the effective_time_range of this QueryDeviceProxySimplify.
 
         :return: The effective_time_range of this QueryDeviceProxySimplify.
         :rtype: :class:`huaweicloudsdkiotda.v5.EffectiveTimeRangeResponseDTO`
@@ -117,7 +117,7 @@ class QueryDeviceProxySimplify:
 
     @effective_time_range.setter
     def effective_time_range(self, effective_time_range):
-        """Sets the effective_time_range of this QueryDeviceProxySimplify.
+        r"""Sets the effective_time_range of this QueryDeviceProxySimplify.
 
         :param effective_time_range: The effective_time_range of this QueryDeviceProxySimplify.
         :type effective_time_range: :class:`huaweicloudsdkiotda.v5.EffectiveTimeRangeResponseDTO`
@@ -126,7 +126,7 @@ class QueryDeviceProxySimplify:
 
     @property
     def app_id(self):
-        """Gets the app_id of this QueryDeviceProxySimplify.
+        r"""Gets the app_id of this QueryDeviceProxySimplify.
 
         **参数说明**：资源空间ID。
 
@@ -137,7 +137,7 @@ class QueryDeviceProxySimplify:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this QueryDeviceProxySimplify.
+        r"""Sets the app_id of this QueryDeviceProxySimplify.
 
         **参数说明**：资源空间ID。
 

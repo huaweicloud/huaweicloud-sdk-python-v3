@@ -31,7 +31,7 @@ class ListAgentRequest:
     }
 
     def __init__(self, limit=None, offset=None, status=None, agent_id=None):
-        """ListAgentRequest
+        r"""ListAgentRequest
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class ListAgentRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListAgentRequest.
+        r"""Gets the limit of this ListAgentRequest.
 
         每页显示条目数，正整数
 
@@ -75,7 +75,7 @@ class ListAgentRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListAgentRequest.
+        r"""Sets the limit of this ListAgentRequest.
 
         每页显示条目数，正整数
 
@@ -86,7 +86,7 @@ class ListAgentRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListAgentRequest.
+        r"""Gets the offset of this ListAgentRequest.
 
         偏移值,正整数
 
@@ -97,7 +97,7 @@ class ListAgentRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListAgentRequest.
+        r"""Sets the offset of this ListAgentRequest.
 
         偏移值,正整数
 
@@ -108,7 +108,7 @@ class ListAgentRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListAgentRequest.
+        r"""Gets the status of this ListAgentRequest.
 
         状态
 
@@ -119,7 +119,7 @@ class ListAgentRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListAgentRequest.
+        r"""Sets the status of this ListAgentRequest.
 
         状态
 
@@ -130,7 +130,7 @@ class ListAgentRequest:
 
     @property
     def agent_id(self):
-        """Gets the agent_id of this ListAgentRequest.
+        r"""Gets the agent_id of this ListAgentRequest.
 
         客户端ID
 
@@ -141,7 +141,7 @@ class ListAgentRequest:
 
     @agent_id.setter
     def agent_id(self, agent_id):
-        """Sets the agent_id of this ListAgentRequest.
+        r"""Sets the agent_id of this ListAgentRequest.
 
         客户端ID
 

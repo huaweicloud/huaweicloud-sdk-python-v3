@@ -27,7 +27,7 @@ class RedirectPoolsConfig:
     }
 
     def __init__(self, pool_id=None, weight=None):
-        """RedirectPoolsConfig
+        r"""RedirectPoolsConfig
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class RedirectPoolsConfig:
 
     @property
     def pool_id(self):
-        """Gets the pool_id of this RedirectPoolsConfig.
+        r"""Gets the pool_id of this RedirectPoolsConfig.
 
         参数解释：所在后端服务器组ID。
 
@@ -61,7 +61,7 @@ class RedirectPoolsConfig:
 
     @pool_id.setter
     def pool_id(self, pool_id):
-        """Sets the pool_id of this RedirectPoolsConfig.
+        r"""Sets the pool_id of this RedirectPoolsConfig.
 
         参数解释：所在后端服务器组ID。
 
@@ -72,7 +72,7 @@ class RedirectPoolsConfig:
 
     @property
     def weight(self):
-        """Gets the weight of this RedirectPoolsConfig.
+        r"""Gets the weight of this RedirectPoolsConfig.
 
         参数解释：转发策略主机组的权重。请求将根据该权重进行负载分发到不同的主机组。权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。  取值范围：0-100
 
@@ -83,7 +83,7 @@ class RedirectPoolsConfig:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this RedirectPoolsConfig.
+        r"""Sets the weight of this RedirectPoolsConfig.
 
         参数解释：转发策略主机组的权重。请求将根据该权重进行负载分发到不同的主机组。权重值越大，分发的请求越多。权重为0的后端不再接受新的请求。  取值范围：0-100
 

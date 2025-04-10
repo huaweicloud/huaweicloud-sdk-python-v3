@@ -25,7 +25,7 @@ class NeutronShowFirewallGroupRequest:
     }
 
     def __init__(self, firewall_group_id=None):
-        """NeutronShowFirewallGroupRequest
+        r"""NeutronShowFirewallGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class NeutronShowFirewallGroupRequest:
 
     @property
     def firewall_group_id(self):
-        """Gets the firewall_group_id of this NeutronShowFirewallGroupRequest.
+        r"""Gets the firewall_group_id of this NeutronShowFirewallGroupRequest.
 
         网络ACL防火墙组ID
 
@@ -53,7 +53,7 @@ class NeutronShowFirewallGroupRequest:
 
     @firewall_group_id.setter
     def firewall_group_id(self, firewall_group_id):
-        """Sets the firewall_group_id of this NeutronShowFirewallGroupRequest.
+        r"""Sets the firewall_group_id of this NeutronShowFirewallGroupRequest.
 
         网络ACL防火墙组ID
 

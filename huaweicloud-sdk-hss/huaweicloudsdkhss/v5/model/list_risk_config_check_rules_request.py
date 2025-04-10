@@ -41,11 +41,11 @@ class ListRiskConfigCheckRulesRequest:
     }
 
     def __init__(self, enterprise_project_id=None, check_name=None, standard=None, result_type=None, check_rule_name=None, severity=None, host_id=None, limit=None, offset=None):
-        """ListRiskConfigCheckRulesRequest
+        r"""ListRiskConfigCheckRulesRequest
 
         The model defined in huaweicloud sdk
 
-        :param enterprise_project_id: 企业项目ID，查询所有企业项目时填写：all_granted_eps
+        :param enterprise_project_id: 主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
         :type enterprise_project_id: str
         :param check_name: 配置检查（基线）的名称，例如SSH、CentOS 7、Windows
         :type check_name: str
@@ -97,9 +97,9 @@ class ListRiskConfigCheckRulesRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListRiskConfigCheckRulesRequest.
+        r"""Gets the enterprise_project_id of this ListRiskConfigCheckRulesRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :return: The enterprise_project_id of this ListRiskConfigCheckRulesRequest.
         :rtype: str
@@ -108,9 +108,9 @@ class ListRiskConfigCheckRulesRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListRiskConfigCheckRulesRequest.
+        r"""Sets the enterprise_project_id of this ListRiskConfigCheckRulesRequest.
 
-        企业项目ID，查询所有企业项目时填写：all_granted_eps
+        主机所属的企业项目ID。 开通企业项目功能后才需要配置企业项目。 企业项目ID默认取值为“0”，表示默认企业项目。如果需要查询所有企业项目下的主机，请传参“all_granted_eps”。如果您只有某个企业项目的权限，则需要传递该企业项目ID，查询该企业项目下的主机，否则会因权限不足而报错。
 
         :param enterprise_project_id: The enterprise_project_id of this ListRiskConfigCheckRulesRequest.
         :type enterprise_project_id: str
@@ -119,7 +119,7 @@ class ListRiskConfigCheckRulesRequest:
 
     @property
     def check_name(self):
-        """Gets the check_name of this ListRiskConfigCheckRulesRequest.
+        r"""Gets the check_name of this ListRiskConfigCheckRulesRequest.
 
         配置检查（基线）的名称，例如SSH、CentOS 7、Windows
 
@@ -130,7 +130,7 @@ class ListRiskConfigCheckRulesRequest:
 
     @check_name.setter
     def check_name(self, check_name):
-        """Sets the check_name of this ListRiskConfigCheckRulesRequest.
+        r"""Sets the check_name of this ListRiskConfigCheckRulesRequest.
 
         配置检查（基线）的名称，例如SSH、CentOS 7、Windows
 
@@ -141,7 +141,7 @@ class ListRiskConfigCheckRulesRequest:
 
     @property
     def standard(self):
-        """Gets the standard of this ListRiskConfigCheckRulesRequest.
+        r"""Gets the standard of this ListRiskConfigCheckRulesRequest.
 
         标准类型，包含如下: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准
 
@@ -152,7 +152,7 @@ class ListRiskConfigCheckRulesRequest:
 
     @standard.setter
     def standard(self, standard):
-        """Sets the standard of this ListRiskConfigCheckRulesRequest.
+        r"""Sets the standard of this ListRiskConfigCheckRulesRequest.
 
         标准类型，包含如下: - cn_standard : 等保合规标准 - hw_standard : 云安全实践标准
 
@@ -163,7 +163,7 @@ class ListRiskConfigCheckRulesRequest:
 
     @property
     def result_type(self):
-        """Gets the result_type of this ListRiskConfigCheckRulesRequest.
+        r"""Gets the result_type of this ListRiskConfigCheckRulesRequest.
 
         结果类型，包含如下： - safe ： 已通过 - unhandled : 未通过，且未忽略的 - ignored : 未通过，且已忽略的
 
@@ -174,7 +174,7 @@ class ListRiskConfigCheckRulesRequest:
 
     @result_type.setter
     def result_type(self, result_type):
-        """Sets the result_type of this ListRiskConfigCheckRulesRequest.
+        r"""Sets the result_type of this ListRiskConfigCheckRulesRequest.
 
         结果类型，包含如下： - safe ： 已通过 - unhandled : 未通过，且未忽略的 - ignored : 未通过，且已忽略的
 
@@ -185,7 +185,7 @@ class ListRiskConfigCheckRulesRequest:
 
     @property
     def check_rule_name(self):
-        """Gets the check_rule_name of this ListRiskConfigCheckRulesRequest.
+        r"""Gets the check_rule_name of this ListRiskConfigCheckRulesRequest.
 
         检查项（检查规则）名称，支持模糊匹配
 
@@ -196,7 +196,7 @@ class ListRiskConfigCheckRulesRequest:
 
     @check_rule_name.setter
     def check_rule_name(self, check_rule_name):
-        """Sets the check_rule_name of this ListRiskConfigCheckRulesRequest.
+        r"""Sets the check_rule_name of this ListRiskConfigCheckRulesRequest.
 
         检查项（检查规则）名称，支持模糊匹配
 
@@ -207,7 +207,7 @@ class ListRiskConfigCheckRulesRequest:
 
     @property
     def severity(self):
-        """Gets the severity of this ListRiskConfigCheckRulesRequest.
+        r"""Gets the severity of this ListRiskConfigCheckRulesRequest.
 
         风险等级，包含如下:   - Security : 安全   - Low : 低危   - Medium : 中危   - High : 高危   - Critical : 危急
 
@@ -218,7 +218,7 @@ class ListRiskConfigCheckRulesRequest:
 
     @severity.setter
     def severity(self, severity):
-        """Sets the severity of this ListRiskConfigCheckRulesRequest.
+        r"""Sets the severity of this ListRiskConfigCheckRulesRequest.
 
         风险等级，包含如下:   - Security : 安全   - Low : 低危   - Medium : 中危   - High : 高危   - Critical : 危急
 
@@ -229,7 +229,7 @@ class ListRiskConfigCheckRulesRequest:
 
     @property
     def host_id(self):
-        """Gets the host_id of this ListRiskConfigCheckRulesRequest.
+        r"""Gets the host_id of this ListRiskConfigCheckRulesRequest.
 
         主机ID，不赋值时，查租户所有主机
 
@@ -240,7 +240,7 @@ class ListRiskConfigCheckRulesRequest:
 
     @host_id.setter
     def host_id(self, host_id):
-        """Sets the host_id of this ListRiskConfigCheckRulesRequest.
+        r"""Sets the host_id of this ListRiskConfigCheckRulesRequest.
 
         主机ID，不赋值时，查租户所有主机
 
@@ -251,7 +251,7 @@ class ListRiskConfigCheckRulesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListRiskConfigCheckRulesRequest.
+        r"""Gets the limit of this ListRiskConfigCheckRulesRequest.
 
         每页数量
 
@@ -262,7 +262,7 @@ class ListRiskConfigCheckRulesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListRiskConfigCheckRulesRequest.
+        r"""Sets the limit of this ListRiskConfigCheckRulesRequest.
 
         每页数量
 
@@ -273,7 +273,7 @@ class ListRiskConfigCheckRulesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListRiskConfigCheckRulesRequest.
+        r"""Gets the offset of this ListRiskConfigCheckRulesRequest.
 
         偏移量：指定返回记录的开始位置
 
@@ -284,7 +284,7 @@ class ListRiskConfigCheckRulesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListRiskConfigCheckRulesRequest.
+        r"""Sets the offset of this ListRiskConfigCheckRulesRequest.
 
         偏移量：指定返回记录的开始位置
 

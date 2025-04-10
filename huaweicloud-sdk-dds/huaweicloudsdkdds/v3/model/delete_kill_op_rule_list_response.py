@@ -24,7 +24,7 @@ class DeleteKillOpRuleListResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteKillOpRuleListResponse
+        r"""DeleteKillOpRuleListResponse
 
         The model defined in huaweicloud sdk
 

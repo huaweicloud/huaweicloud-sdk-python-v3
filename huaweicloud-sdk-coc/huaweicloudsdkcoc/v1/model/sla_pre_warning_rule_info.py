@@ -33,7 +33,7 @@ class SlaPreWarningRuleInfo:
     }
 
     def __init__(self, day=None, hour=None, minute=None, protocol=None, notification_obj_configuration=None):
-        """SlaPreWarningRuleInfo
+        r"""SlaPreWarningRuleInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class SlaPreWarningRuleInfo:
 
     @property
     def day(self):
-        """Gets the day of this SlaPreWarningRuleInfo.
+        r"""Gets the day of this SlaPreWarningRuleInfo.
 
         天
 
@@ -82,7 +82,7 @@ class SlaPreWarningRuleInfo:
 
     @day.setter
     def day(self, day):
-        """Sets the day of this SlaPreWarningRuleInfo.
+        r"""Sets the day of this SlaPreWarningRuleInfo.
 
         天
 
@@ -93,7 +93,7 @@ class SlaPreWarningRuleInfo:
 
     @property
     def hour(self):
-        """Gets the hour of this SlaPreWarningRuleInfo.
+        r"""Gets the hour of this SlaPreWarningRuleInfo.
 
         小时
 
@@ -104,7 +104,7 @@ class SlaPreWarningRuleInfo:
 
     @hour.setter
     def hour(self, hour):
-        """Sets the hour of this SlaPreWarningRuleInfo.
+        r"""Sets the hour of this SlaPreWarningRuleInfo.
 
         小时
 
@@ -115,7 +115,7 @@ class SlaPreWarningRuleInfo:
 
     @property
     def minute(self):
-        """Gets the minute of this SlaPreWarningRuleInfo.
+        r"""Gets the minute of this SlaPreWarningRuleInfo.
 
         分钟
 
@@ -126,7 +126,7 @@ class SlaPreWarningRuleInfo:
 
     @minute.setter
     def minute(self, minute):
-        """Sets the minute of this SlaPreWarningRuleInfo.
+        r"""Sets the minute of this SlaPreWarningRuleInfo.
 
         分钟
 
@@ -137,7 +137,7 @@ class SlaPreWarningRuleInfo:
 
     @property
     def protocol(self):
-        """Gets the protocol of this SlaPreWarningRuleInfo.
+        r"""Gets the protocol of this SlaPreWarningRuleInfo.
 
         通知类型
 
@@ -148,7 +148,7 @@ class SlaPreWarningRuleInfo:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this SlaPreWarningRuleInfo.
+        r"""Sets the protocol of this SlaPreWarningRuleInfo.
 
         通知类型
 
@@ -159,7 +159,7 @@ class SlaPreWarningRuleInfo:
 
     @property
     def notification_obj_configuration(self):
-        """Gets the notification_obj_configuration of this SlaPreWarningRuleInfo.
+        r"""Gets the notification_obj_configuration of this SlaPreWarningRuleInfo.
 
         通知对象配置
 
@@ -170,7 +170,7 @@ class SlaPreWarningRuleInfo:
 
     @notification_obj_configuration.setter
     def notification_obj_configuration(self, notification_obj_configuration):
-        """Sets the notification_obj_configuration of this SlaPreWarningRuleInfo.
+        r"""Sets the notification_obj_configuration of this SlaPreWarningRuleInfo.
 
         通知对象配置
 

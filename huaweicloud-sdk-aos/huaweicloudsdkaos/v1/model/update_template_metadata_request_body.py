@@ -27,7 +27,7 @@ class UpdateTemplateMetadataRequestBody:
     }
 
     def __init__(self, template_id=None, template_description=None):
-        """UpdateTemplateMetadataRequestBody
+        r"""UpdateTemplateMetadataRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateTemplateMetadataRequestBody:
 
     @property
     def template_id(self):
-        """Gets the template_id of this UpdateTemplateMetadataRequestBody.
+        r"""Gets the template_id of this UpdateTemplateMetadataRequestBody.
 
         模板的唯一ID，由模板服务随机生成
 
@@ -61,7 +61,7 @@ class UpdateTemplateMetadataRequestBody:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this UpdateTemplateMetadataRequestBody.
+        r"""Sets the template_id of this UpdateTemplateMetadataRequestBody.
 
         模板的唯一ID，由模板服务随机生成
 
@@ -72,7 +72,7 @@ class UpdateTemplateMetadataRequestBody:
 
     @property
     def template_description(self):
-        """Gets the template_description of this UpdateTemplateMetadataRequestBody.
+        r"""Gets the template_description of this UpdateTemplateMetadataRequestBody.
 
         模板的描述。可用于客户识别自己的模板
 
@@ -83,7 +83,7 @@ class UpdateTemplateMetadataRequestBody:
 
     @template_description.setter
     def template_description(self, template_description):
-        """Sets the template_description of this UpdateTemplateMetadataRequestBody.
+        r"""Sets the template_description of this UpdateTemplateMetadataRequestBody.
 
         模板的描述。可用于客户识别自己的模板
 

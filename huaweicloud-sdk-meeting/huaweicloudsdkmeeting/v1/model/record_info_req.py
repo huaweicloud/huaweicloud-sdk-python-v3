@@ -29,7 +29,7 @@ class RecordInfoReq:
     }
 
     def __init__(self, conf_uuid=None, segment_offset=None, segment_limit=None):
-        """RecordInfoReq
+        r"""RecordInfoReq
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class RecordInfoReq:
 
     @property
     def conf_uuid(self):
-        """Gets the conf_uuid of this RecordInfoReq.
+        r"""Gets the conf_uuid of this RecordInfoReq.
 
         会议uuid
 
@@ -67,7 +67,7 @@ class RecordInfoReq:
 
     @conf_uuid.setter
     def conf_uuid(self, conf_uuid):
-        """Sets the conf_uuid of this RecordInfoReq.
+        r"""Sets the conf_uuid of this RecordInfoReq.
 
         会议uuid
 
@@ -78,7 +78,7 @@ class RecordInfoReq:
 
     @property
     def segment_offset(self):
-        """Gets the segment_offset of this RecordInfoReq.
+        r"""Gets the segment_offset of this RecordInfoReq.
 
         录制段落查询偏移量
 
@@ -89,7 +89,7 @@ class RecordInfoReq:
 
     @segment_offset.setter
     def segment_offset(self, segment_offset):
-        """Sets the segment_offset of this RecordInfoReq.
+        r"""Sets the segment_offset of this RecordInfoReq.
 
         录制段落查询偏移量
 
@@ -100,7 +100,7 @@ class RecordInfoReq:
 
     @property
     def segment_limit(self):
-        """Gets the segment_limit of this RecordInfoReq.
+        r"""Gets the segment_limit of this RecordInfoReq.
 
         录制段落查询数量
 
@@ -111,7 +111,7 @@ class RecordInfoReq:
 
     @segment_limit.setter
     def segment_limit(self, segment_limit):
-        """Sets the segment_limit of this RecordInfoReq.
+        r"""Sets the segment_limit of this RecordInfoReq.
 
         录制段落查询数量
 

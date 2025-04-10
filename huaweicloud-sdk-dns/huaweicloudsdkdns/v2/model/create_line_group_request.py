@@ -25,7 +25,7 @@ class CreateLineGroupRequest:
     }
 
     def __init__(self, body=None):
-        """CreateLineGroupRequest
+        r"""CreateLineGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateLineGroupRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateLineGroupRequest.
+        r"""Gets the body of this CreateLineGroupRequest.
 
         :return: The body of this CreateLineGroupRequest.
         :rtype: :class:`huaweicloudsdkdns.v2.CreateLineGroupsReq`
@@ -52,7 +52,7 @@ class CreateLineGroupRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateLineGroupRequest.
+        r"""Sets the body of this CreateLineGroupRequest.
 
         :param body: The body of this CreateLineGroupRequest.
         :type body: :class:`huaweicloudsdkdns.v2.CreateLineGroupsReq`

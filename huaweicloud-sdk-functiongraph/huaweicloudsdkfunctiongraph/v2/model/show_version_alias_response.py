@@ -38,7 +38,7 @@ class ShowVersionAliasResponse(SdkResponse):
     }
 
     def __init__(self, name=None, version=None, description=None, last_modified=None, alias_urn=None, additional_version_weights=None, additional_version_strategy=None):
-        """ShowVersionAliasResponse
+        r"""ShowVersionAliasResponse
 
         The model defined in huaweicloud sdk
 
@@ -86,7 +86,7 @@ class ShowVersionAliasResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowVersionAliasResponse.
+        r"""Gets the name of this ShowVersionAliasResponse.
 
         要获取的别名名称。
 
@@ -97,7 +97,7 @@ class ShowVersionAliasResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowVersionAliasResponse.
+        r"""Sets the name of this ShowVersionAliasResponse.
 
         要获取的别名名称。
 
@@ -108,7 +108,7 @@ class ShowVersionAliasResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this ShowVersionAliasResponse.
+        r"""Gets the version of this ShowVersionAliasResponse.
 
         别名对应的版本名称。
 
@@ -119,7 +119,7 @@ class ShowVersionAliasResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowVersionAliasResponse.
+        r"""Sets the version of this ShowVersionAliasResponse.
 
         别名对应的版本名称。
 
@@ -130,7 +130,7 @@ class ShowVersionAliasResponse(SdkResponse):
 
     @property
     def description(self):
-        """Gets the description of this ShowVersionAliasResponse.
+        r"""Gets the description of this ShowVersionAliasResponse.
 
         别名描述信息。
 
@@ -141,7 +141,7 @@ class ShowVersionAliasResponse(SdkResponse):
 
     @description.setter
     def description(self, description):
-        """Sets the description of this ShowVersionAliasResponse.
+        r"""Sets the description of this ShowVersionAliasResponse.
 
         别名描述信息。
 
@@ -152,7 +152,7 @@ class ShowVersionAliasResponse(SdkResponse):
 
     @property
     def last_modified(self):
-        """Gets the last_modified of this ShowVersionAliasResponse.
+        r"""Gets the last_modified of this ShowVersionAliasResponse.
 
         别名最后修改时间。
 
@@ -163,7 +163,7 @@ class ShowVersionAliasResponse(SdkResponse):
 
     @last_modified.setter
     def last_modified(self, last_modified):
-        """Sets the last_modified of this ShowVersionAliasResponse.
+        r"""Sets the last_modified of this ShowVersionAliasResponse.
 
         别名最后修改时间。
 
@@ -174,7 +174,7 @@ class ShowVersionAliasResponse(SdkResponse):
 
     @property
     def alias_urn(self):
-        """Gets the alias_urn of this ShowVersionAliasResponse.
+        r"""Gets the alias_urn of this ShowVersionAliasResponse.
 
         版本别名唯一标识。
 
@@ -185,7 +185,7 @@ class ShowVersionAliasResponse(SdkResponse):
 
     @alias_urn.setter
     def alias_urn(self, alias_urn):
-        """Sets the alias_urn of this ShowVersionAliasResponse.
+        r"""Sets the alias_urn of this ShowVersionAliasResponse.
 
         版本别名唯一标识。
 
@@ -196,7 +196,7 @@ class ShowVersionAliasResponse(SdkResponse):
 
     @property
     def additional_version_weights(self):
-        """Gets the additional_version_weights of this ShowVersionAliasResponse.
+        r"""Gets the additional_version_weights of this ShowVersionAliasResponse.
 
         百分比灰度配置信息
 
@@ -207,7 +207,7 @@ class ShowVersionAliasResponse(SdkResponse):
 
     @additional_version_weights.setter
     def additional_version_weights(self, additional_version_weights):
-        """Sets the additional_version_weights of this ShowVersionAliasResponse.
+        r"""Sets the additional_version_weights of this ShowVersionAliasResponse.
 
         百分比灰度配置信息
 
@@ -218,7 +218,7 @@ class ShowVersionAliasResponse(SdkResponse):
 
     @property
     def additional_version_strategy(self):
-        """Gets the additional_version_strategy of this ShowVersionAliasResponse.
+        r"""Gets the additional_version_strategy of this ShowVersionAliasResponse.
 
         指定规则灰度策略信息
 
@@ -229,7 +229,7 @@ class ShowVersionAliasResponse(SdkResponse):
 
     @additional_version_strategy.setter
     def additional_version_strategy(self, additional_version_strategy):
-        """Sets the additional_version_strategy of this ShowVersionAliasResponse.
+        r"""Sets the additional_version_strategy of this ShowVersionAliasResponse.
 
         指定规则灰度策略信息
 

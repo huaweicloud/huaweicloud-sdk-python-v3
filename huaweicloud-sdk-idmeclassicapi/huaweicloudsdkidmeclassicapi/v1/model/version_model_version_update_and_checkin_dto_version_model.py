@@ -29,7 +29,7 @@ class VersionModelVersionUpdateAndCheckinDTOVersionModel:
     }
 
     def __init__(self, data=None, master_id=None, modifier=None):
-        """VersionModelVersionUpdateAndCheckinDTOVersionModel
+        r"""VersionModelVersionUpdateAndCheckinDTOVersionModel
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class VersionModelVersionUpdateAndCheckinDTOVersionModel:
 
     @property
     def data(self):
-        """Gets the data of this VersionModelVersionUpdateAndCheckinDTOVersionModel.
+        r"""Gets the data of this VersionModelVersionUpdateAndCheckinDTOVersionModel.
 
         :return: The data of this VersionModelVersionUpdateAndCheckinDTOVersionModel.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.VersionModel`
@@ -64,7 +64,7 @@ class VersionModelVersionUpdateAndCheckinDTOVersionModel:
 
     @data.setter
     def data(self, data):
-        """Sets the data of this VersionModelVersionUpdateAndCheckinDTOVersionModel.
+        r"""Sets the data of this VersionModelVersionUpdateAndCheckinDTOVersionModel.
 
         :param data: The data of this VersionModelVersionUpdateAndCheckinDTOVersionModel.
         :type data: :class:`huaweicloudsdkidmeclassicapi.v1.VersionModel`
@@ -73,7 +73,7 @@ class VersionModelVersionUpdateAndCheckinDTOVersionModel:
 
     @property
     def master_id(self):
-        """Gets the master_id of this VersionModelVersionUpdateAndCheckinDTOVersionModel.
+        r"""Gets the master_id of this VersionModelVersionUpdateAndCheckinDTOVersionModel.
 
         **参数解释：**  主对象ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -84,7 +84,7 @@ class VersionModelVersionUpdateAndCheckinDTOVersionModel:
 
     @master_id.setter
     def master_id(self, master_id):
-        """Sets the master_id of this VersionModelVersionUpdateAndCheckinDTOVersionModel.
+        r"""Sets the master_id of this VersionModelVersionUpdateAndCheckinDTOVersionModel.
 
         **参数解释：**  主对象ID。  **约束限制：**  不涉及。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -95,7 +95,7 @@ class VersionModelVersionUpdateAndCheckinDTOVersionModel:
 
     @property
     def modifier(self):
-        """Gets the modifier of this VersionModelVersionUpdateAndCheckinDTOVersionModel.
+        r"""Gets the modifier of this VersionModelVersionUpdateAndCheckinDTOVersionModel.
 
         **参数解释：**  更新者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -106,7 +106,7 @@ class VersionModelVersionUpdateAndCheckinDTOVersionModel:
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this VersionModelVersionUpdateAndCheckinDTOVersionModel.
+        r"""Sets the modifier of this VersionModelVersionUpdateAndCheckinDTOVersionModel.
 
         **参数解释：**  更新者。  **约束限制：**  不涉及。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 

@@ -25,7 +25,7 @@ class ResultValueBoolean:
     }
 
     def __init__(self, value=None):
-        """ResultValueBoolean
+        r"""ResultValueBoolean
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ResultValueBoolean:
 
     @property
     def value(self):
-        """Gets the value of this ResultValueBoolean.
+        r"""Gets the value of this ResultValueBoolean.
 
         实际的数据类型：单个对象，集合 或 NULL
 
@@ -54,7 +54,7 @@ class ResultValueBoolean:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ResultValueBoolean.
+        r"""Sets the value of this ResultValueBoolean.
 
         实际的数据类型：单个对象，集合 或 NULL
 

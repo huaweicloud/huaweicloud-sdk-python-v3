@@ -25,7 +25,7 @@ class CreateInstancePeriodRequestSecurityGroups:
     }
 
     def __init__(self, id=None):
-        """CreateInstancePeriodRequestSecurityGroups
+        r"""CreateInstancePeriodRequestSecurityGroups
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateInstancePeriodRequestSecurityGroups:
 
     @property
     def id(self):
-        """Gets the id of this CreateInstancePeriodRequestSecurityGroups.
+        r"""Gets the id of this CreateInstancePeriodRequestSecurityGroups.
 
         云服务器对应的安全组ID，会对创建云服务器中配置的网卡生效
 
@@ -53,7 +53,7 @@ class CreateInstancePeriodRequestSecurityGroups:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateInstancePeriodRequestSecurityGroups.
+        r"""Sets the id of this CreateInstancePeriodRequestSecurityGroups.
 
         云服务器对应的安全组ID，会对创建云服务器中配置的网卡生效
 

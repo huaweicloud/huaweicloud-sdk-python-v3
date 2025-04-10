@@ -28,7 +28,7 @@ class ListEvaluationProjectsResponse(SdkResponse):
     }
 
     def __init__(self, total_count=None, evaluation_projects=None):
-        """ListEvaluationProjectsResponse
+        r"""ListEvaluationProjectsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListEvaluationProjectsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListEvaluationProjectsResponse.
+        r"""Gets the total_count of this ListEvaluationProjectsResponse.
 
         评估项目总数。
 
@@ -62,7 +62,7 @@ class ListEvaluationProjectsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListEvaluationProjectsResponse.
+        r"""Sets the total_count of this ListEvaluationProjectsResponse.
 
         评估项目总数。
 
@@ -73,7 +73,7 @@ class ListEvaluationProjectsResponse(SdkResponse):
 
     @property
     def evaluation_projects(self):
-        """Gets the evaluation_projects of this ListEvaluationProjectsResponse.
+        r"""Gets the evaluation_projects of this ListEvaluationProjectsResponse.
 
         当前页的评估项目列表。
 
@@ -84,7 +84,7 @@ class ListEvaluationProjectsResponse(SdkResponse):
 
     @evaluation_projects.setter
     def evaluation_projects(self, evaluation_projects):
-        """Sets the evaluation_projects of this ListEvaluationProjectsResponse.
+        r"""Sets the evaluation_projects of this ListEvaluationProjectsResponse.
 
         当前页的评估项目列表。
 

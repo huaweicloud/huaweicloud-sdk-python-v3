@@ -29,7 +29,7 @@ class CreateActiveCodeReq:
     }
 
     def __init__(self, robot_id=None, room_id=None, valid_period=None):
-        """CreateActiveCodeReq
+        r"""CreateActiveCodeReq
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class CreateActiveCodeReq:
 
     @property
     def robot_id(self):
-        """Gets the robot_id of this CreateActiveCodeReq.
+        r"""Gets the robot_id of this CreateActiveCodeReq.
 
         应用ID。
 
@@ -65,7 +65,7 @@ class CreateActiveCodeReq:
 
     @robot_id.setter
     def robot_id(self, robot_id):
-        """Sets the robot_id of this CreateActiveCodeReq.
+        r"""Sets the robot_id of this CreateActiveCodeReq.
 
         应用ID。
 
@@ -76,7 +76,7 @@ class CreateActiveCodeReq:
 
     @property
     def room_id(self):
-        """Gets the room_id of this CreateActiveCodeReq.
+        r"""Gets the room_id of this CreateActiveCodeReq.
 
         智能交互对话ID。
 
@@ -87,7 +87,7 @@ class CreateActiveCodeReq:
 
     @room_id.setter
     def room_id(self, room_id):
-        """Sets the room_id of this CreateActiveCodeReq.
+        r"""Sets the room_id of this CreateActiveCodeReq.
 
         智能交互对话ID。
 
@@ -98,7 +98,7 @@ class CreateActiveCodeReq:
 
     @property
     def valid_period(self):
-        """Gets the valid_period of this CreateActiveCodeReq.
+        r"""Gets the valid_period of this CreateActiveCodeReq.
 
         有效天数（0表示长期有效）。
 
@@ -109,7 +109,7 @@ class CreateActiveCodeReq:
 
     @valid_period.setter
     def valid_period(self, valid_period):
-        """Sets the valid_period of this CreateActiveCodeReq.
+        r"""Sets the valid_period of this CreateActiveCodeReq.
 
         有效天数（0表示长期有效）。
 

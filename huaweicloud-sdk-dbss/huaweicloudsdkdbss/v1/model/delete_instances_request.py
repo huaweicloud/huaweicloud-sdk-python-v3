@@ -25,7 +25,7 @@ class DeleteInstancesRequest:
     }
 
     def __init__(self, body=None):
-        """DeleteInstancesRequest
+        r"""DeleteInstancesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DeleteInstancesRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteInstancesRequest.
+        r"""Gets the body of this DeleteInstancesRequest.
 
         :return: The body of this DeleteInstancesRequest.
         :rtype: :class:`huaweicloudsdkdbss.v1.DeleteInstanceDemandRequest`
@@ -52,7 +52,7 @@ class DeleteInstancesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteInstancesRequest.
+        r"""Sets the body of this DeleteInstancesRequest.
 
         :param body: The body of this DeleteInstancesRequest.
         :type body: :class:`huaweicloudsdkdbss.v1.DeleteInstanceDemandRequest`

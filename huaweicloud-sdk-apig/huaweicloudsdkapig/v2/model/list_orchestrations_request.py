@@ -35,7 +35,7 @@ class ListOrchestrationsRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, orchestration_name=None, precise_search=None, orchestration_id=None):
-        """ListOrchestrationsRequest
+        r"""ListOrchestrationsRequest
 
         The model defined in huaweicloud sdk
 
@@ -77,7 +77,7 @@ class ListOrchestrationsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListOrchestrationsRequest.
+        r"""Gets the instance_id of this ListOrchestrationsRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -88,7 +88,7 @@ class ListOrchestrationsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListOrchestrationsRequest.
+        r"""Sets the instance_id of this ListOrchestrationsRequest.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -99,7 +99,7 @@ class ListOrchestrationsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListOrchestrationsRequest.
+        r"""Gets the offset of this ListOrchestrationsRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -110,7 +110,7 @@ class ListOrchestrationsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListOrchestrationsRequest.
+        r"""Sets the offset of this ListOrchestrationsRequest.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -121,7 +121,7 @@ class ListOrchestrationsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListOrchestrationsRequest.
+        r"""Gets the limit of this ListOrchestrationsRequest.
 
         每页显示的条目数量，条目数量小于等于0时，自动转换为20，条目数量大于500时，自动转换为500
 
@@ -132,7 +132,7 @@ class ListOrchestrationsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListOrchestrationsRequest.
+        r"""Sets the limit of this ListOrchestrationsRequest.
 
         每页显示的条目数量，条目数量小于等于0时，自动转换为20，条目数量大于500时，自动转换为500
 
@@ -143,7 +143,7 @@ class ListOrchestrationsRequest:
 
     @property
     def orchestration_name(self):
-        """Gets the orchestration_name of this ListOrchestrationsRequest.
+        r"""Gets the orchestration_name of this ListOrchestrationsRequest.
 
         编排规则名称。
 
@@ -154,7 +154,7 @@ class ListOrchestrationsRequest:
 
     @orchestration_name.setter
     def orchestration_name(self, orchestration_name):
-        """Sets the orchestration_name of this ListOrchestrationsRequest.
+        r"""Sets the orchestration_name of this ListOrchestrationsRequest.
 
         编排规则名称。
 
@@ -165,7 +165,7 @@ class ListOrchestrationsRequest:
 
     @property
     def precise_search(self):
-        """Gets the precise_search of this ListOrchestrationsRequest.
+        r"""Gets the precise_search of this ListOrchestrationsRequest.
 
         指定需要精确匹配查找的参数名称，多个参数需要支持精确匹配时参数之间使用“,”隔开。当前仅支持orchestration_name。
 
@@ -176,7 +176,7 @@ class ListOrchestrationsRequest:
 
     @precise_search.setter
     def precise_search(self, precise_search):
-        """Sets the precise_search of this ListOrchestrationsRequest.
+        r"""Sets the precise_search of this ListOrchestrationsRequest.
 
         指定需要精确匹配查找的参数名称，多个参数需要支持精确匹配时参数之间使用“,”隔开。当前仅支持orchestration_name。
 
@@ -187,7 +187,7 @@ class ListOrchestrationsRequest:
 
     @property
     def orchestration_id(self):
-        """Gets the orchestration_id of this ListOrchestrationsRequest.
+        r"""Gets the orchestration_id of this ListOrchestrationsRequest.
 
         编排规则编号。  支持指定多个编号作为查询条件，多个参数之间使用“,”隔开，支持的查询参数个数与api允许绑定的参数规则上限保持一致，具体请参考产品介绍的“配额说明”章节。
 
@@ -198,7 +198,7 @@ class ListOrchestrationsRequest:
 
     @orchestration_id.setter
     def orchestration_id(self, orchestration_id):
-        """Sets the orchestration_id of this ListOrchestrationsRequest.
+        r"""Sets the orchestration_id of this ListOrchestrationsRequest.
 
         编排规则编号。  支持指定多个编号作为查询条件，多个参数之间使用“,”隔开，支持的查询参数个数与api允许绑定的参数规则上限保持一致，具体请参考产品介绍的“配额说明”章节。
 

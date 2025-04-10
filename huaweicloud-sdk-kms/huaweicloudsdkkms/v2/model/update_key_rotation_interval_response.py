@@ -24,7 +24,7 @@ class UpdateKeyRotationIntervalResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UpdateKeyRotationIntervalResponse
+        r"""UpdateKeyRotationIntervalResponse
 
         The model defined in huaweicloud sdk
 

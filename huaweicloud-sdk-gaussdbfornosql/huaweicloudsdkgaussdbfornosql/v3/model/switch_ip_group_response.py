@@ -24,7 +24,7 @@ class SwitchIpGroupResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SwitchIpGroupResponse
+        r"""SwitchIpGroupResponse
 
         The model defined in huaweicloud sdk
 

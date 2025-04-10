@@ -34,7 +34,7 @@ class ShowIteratorDetailResponse(SdkResponse):
     }
 
     def __init__(self, status=None, result=None, error=None, request_id=None, server_address=None):
-        """ShowIteratorDetailResponse
+        r"""ShowIteratorDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowIteratorDetailResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowIteratorDetailResponse.
+        r"""Gets the status of this ShowIteratorDetailResponse.
 
         对外时：success|error; 对内时：ok|failed
 
@@ -83,7 +83,7 @@ class ShowIteratorDetailResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowIteratorDetailResponse.
+        r"""Sets the status of this ShowIteratorDetailResponse.
 
         对外时：success|error; 对内时：ok|failed
 
@@ -94,7 +94,7 @@ class ShowIteratorDetailResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this ShowIteratorDetailResponse.
+        r"""Gets the result of this ShowIteratorDetailResponse.
 
         :return: The result of this ShowIteratorDetailResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ResultValueIteratorVersionSummaryVo`
@@ -103,7 +103,7 @@ class ShowIteratorDetailResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this ShowIteratorDetailResponse.
+        r"""Sets the result of this ShowIteratorDetailResponse.
 
         :param result: The result of this ShowIteratorDetailResponse.
         :type result: :class:`huaweicloudsdkcloudtest.v1.ResultValueIteratorVersionSummaryVo`
@@ -112,7 +112,7 @@ class ShowIteratorDetailResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this ShowIteratorDetailResponse.
+        r"""Gets the error of this ShowIteratorDetailResponse.
 
         :return: The error of this ShowIteratorDetailResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.ApiError`
@@ -121,7 +121,7 @@ class ShowIteratorDetailResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this ShowIteratorDetailResponse.
+        r"""Sets the error of this ShowIteratorDetailResponse.
 
         :param error: The error of this ShowIteratorDetailResponse.
         :type error: :class:`huaweicloudsdkcloudtest.v1.ApiError`
@@ -130,7 +130,7 @@ class ShowIteratorDetailResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowIteratorDetailResponse.
+        r"""Gets the request_id of this ShowIteratorDetailResponse.
 
         由接口调用方传入，建议使用UUID保证请求的唯一性。
 
@@ -141,7 +141,7 @@ class ShowIteratorDetailResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowIteratorDetailResponse.
+        r"""Sets the request_id of this ShowIteratorDetailResponse.
 
         由接口调用方传入，建议使用UUID保证请求的唯一性。
 
@@ -152,7 +152,7 @@ class ShowIteratorDetailResponse(SdkResponse):
 
     @property
     def server_address(self):
-        """Gets the server_address of this ShowIteratorDetailResponse.
+        r"""Gets the server_address of this ShowIteratorDetailResponse.
 
         对内接口才有此属性
 
@@ -163,7 +163,7 @@ class ShowIteratorDetailResponse(SdkResponse):
 
     @server_address.setter
     def server_address(self, server_address):
-        """Sets the server_address of this ShowIteratorDetailResponse.
+        r"""Sets the server_address of this ShowIteratorDetailResponse.
 
         对内接口才有此属性
 

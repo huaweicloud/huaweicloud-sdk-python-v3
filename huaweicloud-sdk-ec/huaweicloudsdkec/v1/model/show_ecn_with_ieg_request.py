@@ -27,7 +27,7 @@ class ShowEcnWithIegRequest:
     }
 
     def __init__(self, ecn_id=None, relation_id=None):
-        """ShowEcnWithIegRequest
+        r"""ShowEcnWithIegRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowEcnWithIegRequest:
 
     @property
     def ecn_id(self):
-        """Gets the ecn_id of this ShowEcnWithIegRequest.
+        r"""Gets the ecn_id of this ShowEcnWithIegRequest.
 
         企业连接网络ID
 
@@ -59,7 +59,7 @@ class ShowEcnWithIegRequest:
 
     @ecn_id.setter
     def ecn_id(self, ecn_id):
-        """Sets the ecn_id of this ShowEcnWithIegRequest.
+        r"""Sets the ecn_id of this ShowEcnWithIegRequest.
 
         企业连接网络ID
 
@@ -70,7 +70,7 @@ class ShowEcnWithIegRequest:
 
     @property
     def relation_id(self):
-        """Gets the relation_id of this ShowEcnWithIegRequest.
+        r"""Gets the relation_id of this ShowEcnWithIegRequest.
 
         企业连接网络绑定关系ID
 
@@ -81,7 +81,7 @@ class ShowEcnWithIegRequest:
 
     @relation_id.setter
     def relation_id(self, relation_id):
-        """Sets the relation_id of this ShowEcnWithIegRequest.
+        r"""Sets the relation_id of this ShowEcnWithIegRequest.
 
         企业连接网络绑定关系ID
 

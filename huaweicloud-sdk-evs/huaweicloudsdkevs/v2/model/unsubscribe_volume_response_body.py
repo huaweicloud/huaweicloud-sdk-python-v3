@@ -25,7 +25,7 @@ class UnsubscribeVolumeResponseBody:
     }
 
     def __init__(self, results=None):
-        """UnsubscribeVolumeResponseBody
+        r"""UnsubscribeVolumeResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UnsubscribeVolumeResponseBody:
 
     @property
     def results(self):
-        """Gets the results of this UnsubscribeVolumeResponseBody.
+        r"""Gets the results of this UnsubscribeVolumeResponseBody.
 
         退订包周期云硬盘的结果。
 
@@ -53,7 +53,7 @@ class UnsubscribeVolumeResponseBody:
 
     @results.setter
     def results(self, results):
-        """Sets the results of this UnsubscribeVolumeResponseBody.
+        r"""Sets the results of this UnsubscribeVolumeResponseBody.
 
         退订包周期云硬盘的结果。
 

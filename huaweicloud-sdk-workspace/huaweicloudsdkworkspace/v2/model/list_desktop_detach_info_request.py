@@ -25,7 +25,7 @@ class ListDesktopDetachInfoRequest:
     }
 
     def __init__(self, desktop_id=None):
-        """ListDesktopDetachInfoRequest
+        r"""ListDesktopDetachInfoRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListDesktopDetachInfoRequest:
 
     @property
     def desktop_id(self):
-        """Gets the desktop_id of this ListDesktopDetachInfoRequest.
+        r"""Gets the desktop_id of this ListDesktopDetachInfoRequest.
 
         桌面ID。
 
@@ -53,7 +53,7 @@ class ListDesktopDetachInfoRequest:
 
     @desktop_id.setter
     def desktop_id(self, desktop_id):
-        """Sets the desktop_id of this ListDesktopDetachInfoRequest.
+        r"""Sets the desktop_id of this ListDesktopDetachInfoRequest.
 
         桌面ID。
 

@@ -31,7 +31,7 @@ class EcsServerInfo:
     }
 
     def __init__(self, id=None, auth=None, disable_password=None, port=None):
-        """EcsServerInfo
+        r"""EcsServerInfo
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class EcsServerInfo:
 
     @property
     def id(self):
-        """Gets the id of this EcsServerInfo.
+        r"""Gets the id of this EcsServerInfo.
 
         需要绑定(替换或重置)SSH密钥对的虚拟机id
 
@@ -74,7 +74,7 @@ class EcsServerInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this EcsServerInfo.
+        r"""Sets the id of this EcsServerInfo.
 
         需要绑定(替换或重置)SSH密钥对的虚拟机id
 
@@ -85,7 +85,7 @@ class EcsServerInfo:
 
     @property
     def auth(self):
-        """Gets the auth of this EcsServerInfo.
+        r"""Gets the auth of this EcsServerInfo.
 
         :return: The auth of this EcsServerInfo.
         :rtype: :class:`huaweicloudsdkkps.v3.Auth`
@@ -94,7 +94,7 @@ class EcsServerInfo:
 
     @auth.setter
     def auth(self, auth):
-        """Sets the auth of this EcsServerInfo.
+        r"""Sets the auth of this EcsServerInfo.
 
         :param auth: The auth of this EcsServerInfo.
         :type auth: :class:`huaweicloudsdkkps.v3.Auth`
@@ -103,7 +103,7 @@ class EcsServerInfo:
 
     @property
     def disable_password(self):
-        """Gets the disable_password of this EcsServerInfo.
+        r"""Gets the disable_password of this EcsServerInfo.
 
         - true：禁用虚拟机的ssh登录。 - false：不禁用虚拟机的ssh登录。
 
@@ -114,7 +114,7 @@ class EcsServerInfo:
 
     @disable_password.setter
     def disable_password(self, disable_password):
-        """Sets the disable_password of this EcsServerInfo.
+        r"""Sets the disable_password of this EcsServerInfo.
 
         - true：禁用虚拟机的ssh登录。 - false：不禁用虚拟机的ssh登录。
 
@@ -125,7 +125,7 @@ class EcsServerInfo:
 
     @property
     def port(self):
-        """Gets the port of this EcsServerInfo.
+        r"""Gets the port of this EcsServerInfo.
 
         SSH监听端口。
 
@@ -136,7 +136,7 @@ class EcsServerInfo:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this EcsServerInfo.
+        r"""Sets the port of this EcsServerInfo.
 
         SSH监听端口。
 

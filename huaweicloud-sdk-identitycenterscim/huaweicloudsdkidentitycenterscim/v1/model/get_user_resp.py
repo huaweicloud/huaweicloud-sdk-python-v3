@@ -64,7 +64,7 @@ class GetUserResp:
     }
 
     def __init__(self, id=None, external_id=None, meta=None, schemas=None, user_name=None, name=None, display_name=None, active=None, emails=None, user_type=None, nick_name=None, title=None, preferred_language=None, locale=None, timezone=None, addresses=None, phone_numbers=None, urnietfparamsscimschemasextensionenterprise2_0_user=None):
-        """GetUserResp
+        r"""GetUserResp
 
         The model defined in huaweicloud sdk
 
@@ -167,7 +167,7 @@ class GetUserResp:
 
     @property
     def id(self):
-        """Gets the id of this GetUserResp.
+        r"""Gets the id of this GetUserResp.
 
         用户的全局唯一标识符（ID）
 
@@ -178,7 +178,7 @@ class GetUserResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this GetUserResp.
+        r"""Sets the id of this GetUserResp.
 
         用户的全局唯一标识符（ID）
 
@@ -189,7 +189,7 @@ class GetUserResp:
 
     @property
     def external_id(self):
-        """Gets the external_id of this GetUserResp.
+        r"""Gets the external_id of this GetUserResp.
 
         外部标识符
 
@@ -200,7 +200,7 @@ class GetUserResp:
 
     @external_id.setter
     def external_id(self, external_id):
-        """Sets the external_id of this GetUserResp.
+        r"""Sets the external_id of this GetUserResp.
 
         外部标识符
 
@@ -211,7 +211,7 @@ class GetUserResp:
 
     @property
     def meta(self):
-        """Gets the meta of this GetUserResp.
+        r"""Gets the meta of this GetUserResp.
 
         :return: The meta of this GetUserResp.
         :rtype: :class:`huaweicloudsdkidentitycenterscim.v1.MetaDto`
@@ -220,7 +220,7 @@ class GetUserResp:
 
     @meta.setter
     def meta(self, meta):
-        """Sets the meta of this GetUserResp.
+        r"""Sets the meta of this GetUserResp.
 
         :param meta: The meta of this GetUserResp.
         :type meta: :class:`huaweicloudsdkidentitycenterscim.v1.MetaDto`
@@ -229,7 +229,7 @@ class GetUserResp:
 
     @property
     def schemas(self):
-        """Gets the schemas of this GetUserResp.
+        r"""Gets the schemas of this GetUserResp.
 
         概要
 
@@ -240,7 +240,7 @@ class GetUserResp:
 
     @schemas.setter
     def schemas(self, schemas):
-        """Sets the schemas of this GetUserResp.
+        r"""Sets the schemas of this GetUserResp.
 
         概要
 
@@ -251,7 +251,7 @@ class GetUserResp:
 
     @property
     def user_name(self):
-        """Gets the user_name of this GetUserResp.
+        r"""Gets the user_name of this GetUserResp.
 
         用户名，用于标识用户的唯一字符串
 
@@ -262,7 +262,7 @@ class GetUserResp:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this GetUserResp.
+        r"""Sets the user_name of this GetUserResp.
 
         用户名，用于标识用户的唯一字符串
 
@@ -273,7 +273,7 @@ class GetUserResp:
 
     @property
     def name(self):
-        """Gets the name of this GetUserResp.
+        r"""Gets the name of this GetUserResp.
 
         :return: The name of this GetUserResp.
         :rtype: :class:`huaweicloudsdkidentitycenterscim.v1.NameDto`
@@ -282,7 +282,7 @@ class GetUserResp:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this GetUserResp.
+        r"""Sets the name of this GetUserResp.
 
         :param name: The name of this GetUserResp.
         :type name: :class:`huaweicloudsdkidentitycenterscim.v1.NameDto`
@@ -291,7 +291,7 @@ class GetUserResp:
 
     @property
     def display_name(self):
-        """Gets the display_name of this GetUserResp.
+        r"""Gets the display_name of this GetUserResp.
 
         包含用户显示名称的字符串
 
@@ -302,7 +302,7 @@ class GetUserResp:
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this GetUserResp.
+        r"""Sets the display_name of this GetUserResp.
 
         包含用户显示名称的字符串
 
@@ -313,7 +313,7 @@ class GetUserResp:
 
     @property
     def active(self):
-        """Gets the active of this GetUserResp.
+        r"""Gets the active of this GetUserResp.
 
         表示用户是否启用
 
@@ -324,7 +324,7 @@ class GetUserResp:
 
     @active.setter
     def active(self, active):
-        """Sets the active of this GetUserResp.
+        r"""Sets the active of this GetUserResp.
 
         表示用户是否启用
 
@@ -335,7 +335,7 @@ class GetUserResp:
 
     @property
     def emails(self):
-        """Gets the emails of this GetUserResp.
+        r"""Gets the emails of this GetUserResp.
 
         包含用户的电子邮箱信息的对象列表
 
@@ -346,7 +346,7 @@ class GetUserResp:
 
     @emails.setter
     def emails(self, emails):
-        """Sets the emails of this GetUserResp.
+        r"""Sets the emails of this GetUserResp.
 
         包含用户的电子邮箱信息的对象列表
 
@@ -357,7 +357,7 @@ class GetUserResp:
 
     @property
     def user_type(self):
-        """Gets the user_type of this GetUserResp.
+        r"""Gets the user_type of this GetUserResp.
 
         指示用户类型的字符串
 
@@ -368,7 +368,7 @@ class GetUserResp:
 
     @user_type.setter
     def user_type(self, user_type):
-        """Sets the user_type of this GetUserResp.
+        r"""Sets the user_type of this GetUserResp.
 
         指示用户类型的字符串
 
@@ -379,7 +379,7 @@ class GetUserResp:
 
     @property
     def nick_name(self):
-        """Gets the nick_name of this GetUserResp.
+        r"""Gets the nick_name of this GetUserResp.
 
         用户昵称
 
@@ -390,7 +390,7 @@ class GetUserResp:
 
     @nick_name.setter
     def nick_name(self, nick_name):
-        """Sets the nick_name of this GetUserResp.
+        r"""Sets the nick_name of this GetUserResp.
 
         用户昵称
 
@@ -401,7 +401,7 @@ class GetUserResp:
 
     @property
     def title(self):
-        """Gets the title of this GetUserResp.
+        r"""Gets the title of this GetUserResp.
 
         用户头衔
 
@@ -412,7 +412,7 @@ class GetUserResp:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this GetUserResp.
+        r"""Sets the title of this GetUserResp.
 
         用户头衔
 
@@ -423,7 +423,7 @@ class GetUserResp:
 
     @property
     def preferred_language(self):
-        """Gets the preferred_language of this GetUserResp.
+        r"""Gets the preferred_language of this GetUserResp.
 
         用户语言首选项
 
@@ -434,7 +434,7 @@ class GetUserResp:
 
     @preferred_language.setter
     def preferred_language(self, preferred_language):
-        """Sets the preferred_language of this GetUserResp.
+        r"""Sets the preferred_language of this GetUserResp.
 
         用户语言首选项
 
@@ -445,7 +445,7 @@ class GetUserResp:
 
     @property
     def locale(self):
-        """Gets the locale of this GetUserResp.
+        r"""Gets the locale of this GetUserResp.
 
         用户的地理区域或位置信息
 
@@ -456,7 +456,7 @@ class GetUserResp:
 
     @locale.setter
     def locale(self, locale):
-        """Sets the locale of this GetUserResp.
+        r"""Sets the locale of this GetUserResp.
 
         用户的地理区域或位置信息
 
@@ -467,7 +467,7 @@ class GetUserResp:
 
     @property
     def timezone(self):
-        """Gets the timezone of this GetUserResp.
+        r"""Gets the timezone of this GetUserResp.
 
         用户时区
 
@@ -478,7 +478,7 @@ class GetUserResp:
 
     @timezone.setter
     def timezone(self, timezone):
-        """Sets the timezone of this GetUserResp.
+        r"""Sets the timezone of this GetUserResp.
 
         用户时区
 
@@ -489,7 +489,7 @@ class GetUserResp:
 
     @property
     def addresses(self):
-        """Gets the addresses of this GetUserResp.
+        r"""Gets the addresses of this GetUserResp.
 
         用户的地址信息列表
 
@@ -500,7 +500,7 @@ class GetUserResp:
 
     @addresses.setter
     def addresses(self, addresses):
-        """Sets the addresses of this GetUserResp.
+        r"""Sets the addresses of this GetUserResp.
 
         用户的地址信息列表
 
@@ -511,7 +511,7 @@ class GetUserResp:
 
     @property
     def phone_numbers(self):
-        """Gets the phone_numbers of this GetUserResp.
+        r"""Gets the phone_numbers of this GetUserResp.
 
         用户的电话号码信息列表
 
@@ -522,7 +522,7 @@ class GetUserResp:
 
     @phone_numbers.setter
     def phone_numbers(self, phone_numbers):
-        """Sets the phone_numbers of this GetUserResp.
+        r"""Sets the phone_numbers of this GetUserResp.
 
         用户的电话号码信息列表
 
@@ -533,7 +533,7 @@ class GetUserResp:
 
     @property
     def urnietfparamsscimschemasextensionenterprise2_0_user(self):
-        """Gets the urnietfparamsscimschemasextensionenterprise2_0_user of this GetUserResp.
+        r"""Gets the urnietfparamsscimschemasextensionenterprise2_0_user of this GetUserResp.
 
         :return: The urnietfparamsscimschemasextensionenterprise2_0_user of this GetUserResp.
         :rtype: :class:`huaweicloudsdkidentitycenterscim.v1.EnterpriseDto`
@@ -542,7 +542,7 @@ class GetUserResp:
 
     @urnietfparamsscimschemasextensionenterprise2_0_user.setter
     def urnietfparamsscimschemasextensionenterprise2_0_user(self, urnietfparamsscimschemasextensionenterprise2_0_user):
-        """Sets the urnietfparamsscimschemasextensionenterprise2_0_user of this GetUserResp.
+        r"""Sets the urnietfparamsscimschemasextensionenterprise2_0_user of this GetUserResp.
 
         :param urnietfparamsscimschemasextensionenterprise2_0_user: The urnietfparamsscimschemasextensionenterprise2_0_user of this GetUserResp.
         :type urnietfparamsscimschemasextensionenterprise2_0_user: :class:`huaweicloudsdkidentitycenterscim.v1.EnterpriseDto`

@@ -31,7 +31,7 @@ class SimCardFlowPerDayReq:
     }
 
     def __init__(self, sim_card_ids=None, iccids=None, month=None, date=None):
-        """SimCardFlowPerDayReq
+        r"""SimCardFlowPerDayReq
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class SimCardFlowPerDayReq:
 
     @property
     def sim_card_ids(self):
-        """Gets the sim_card_ids of this SimCardFlowPerDayReq.
+        r"""Gets the sim_card_ids of this SimCardFlowPerDayReq.
 
         :return: The sim_card_ids of this SimCardFlowPerDayReq.
         :rtype: list[int]
@@ -73,7 +73,7 @@ class SimCardFlowPerDayReq:
 
     @sim_card_ids.setter
     def sim_card_ids(self, sim_card_ids):
-        """Sets the sim_card_ids of this SimCardFlowPerDayReq.
+        r"""Sets the sim_card_ids of this SimCardFlowPerDayReq.
 
         :param sim_card_ids: The sim_card_ids of this SimCardFlowPerDayReq.
         :type sim_card_ids: list[int]
@@ -82,7 +82,7 @@ class SimCardFlowPerDayReq:
 
     @property
     def iccids(self):
-        """Gets the iccids of this SimCardFlowPerDayReq.
+        r"""Gets the iccids of this SimCardFlowPerDayReq.
 
         :return: The iccids of this SimCardFlowPerDayReq.
         :rtype: list[str]
@@ -91,7 +91,7 @@ class SimCardFlowPerDayReq:
 
     @iccids.setter
     def iccids(self, iccids):
-        """Sets the iccids of this SimCardFlowPerDayReq.
+        r"""Sets the iccids of this SimCardFlowPerDayReq.
 
         :param iccids: The iccids of this SimCardFlowPerDayReq.
         :type iccids: list[str]
@@ -100,7 +100,7 @@ class SimCardFlowPerDayReq:
 
     @property
     def month(self):
-        """Gets the month of this SimCardFlowPerDayReq.
+        r"""Gets the month of this SimCardFlowPerDayReq.
 
         月份
 
@@ -111,7 +111,7 @@ class SimCardFlowPerDayReq:
 
     @month.setter
     def month(self, month):
-        """Sets the month of this SimCardFlowPerDayReq.
+        r"""Sets the month of this SimCardFlowPerDayReq.
 
         月份
 
@@ -122,7 +122,7 @@ class SimCardFlowPerDayReq:
 
     @property
     def date(self):
-        """Gets the date of this SimCardFlowPerDayReq.
+        r"""Gets the date of this SimCardFlowPerDayReq.
 
         日期
 
@@ -133,7 +133,7 @@ class SimCardFlowPerDayReq:
 
     @date.setter
     def date(self, date):
-        """Sets the date of this SimCardFlowPerDayReq.
+        r"""Sets the date of this SimCardFlowPerDayReq.
 
         日期
 

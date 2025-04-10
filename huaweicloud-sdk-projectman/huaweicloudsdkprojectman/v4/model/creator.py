@@ -25,7 +25,7 @@ class Creator:
     }
 
     def __init__(self, user_id=None):
-        """Creator
+        r"""Creator
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class Creator:
 
     @property
     def user_id(self):
-        """Gets the user_id of this Creator.
+        r"""Gets the user_id of this Creator.
 
         指定工作项的创建者用户id
 
@@ -53,7 +53,7 @@ class Creator:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this Creator.
+        r"""Sets the user_id of this Creator.
 
         指定工作项的创建者用户id
 

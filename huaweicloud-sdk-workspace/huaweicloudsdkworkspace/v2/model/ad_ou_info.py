@@ -27,7 +27,7 @@ class AdOuInfo:
     }
 
     def __init__(self, ou_name=None, ou_dn=None):
-        """AdOuInfo
+        r"""AdOuInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class AdOuInfo:
 
     @property
     def ou_name(self):
-        """Gets the ou_name of this AdOuInfo.
+        r"""Gets the ou_name of this AdOuInfo.
 
         名称
 
@@ -61,7 +61,7 @@ class AdOuInfo:
 
     @ou_name.setter
     def ou_name(self, ou_name):
-        """Sets the ou_name of this AdOuInfo.
+        r"""Sets the ou_name of this AdOuInfo.
 
         名称
 
@@ -72,7 +72,7 @@ class AdOuInfo:
 
     @property
     def ou_dn(self):
-        """Gets the ou_dn of this AdOuInfo.
+        r"""Gets the ou_dn of this AdOuInfo.
 
         域名地址
 
@@ -83,7 +83,7 @@ class AdOuInfo:
 
     @ou_dn.setter
     def ou_dn(self, ou_dn):
-        """Sets the ou_dn of this AdOuInfo.
+        r"""Sets the ou_dn of this AdOuInfo.
 
         域名地址
 

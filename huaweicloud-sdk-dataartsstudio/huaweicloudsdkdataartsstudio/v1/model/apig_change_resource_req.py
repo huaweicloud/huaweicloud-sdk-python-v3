@@ -33,7 +33,7 @@ class ApigChangeResourceReq:
     }
 
     def __init__(self, change_mode=None, resource_id=None, resource_spec_code=None, product_id=None, promotion_info=None):
-        """ApigChangeResourceReq
+        r"""ApigChangeResourceReq
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class ApigChangeResourceReq:
 
     @property
     def change_mode(self):
-        """Gets the change_mode of this ApigChangeResourceReq.
+        r"""Gets the change_mode of this ApigChangeResourceReq.
 
         规格变更类型：10：升配；30：降配；40：续费；60：扩容；70：切换操作系统
 
@@ -79,7 +79,7 @@ class ApigChangeResourceReq:
 
     @change_mode.setter
     def change_mode(self, change_mode):
-        """Sets the change_mode of this ApigChangeResourceReq.
+        r"""Sets the change_mode of this ApigChangeResourceReq.
 
         规格变更类型：10：升配；30：降配；40：续费；60：扩容；70：切换操作系统
 
@@ -90,7 +90,7 @@ class ApigChangeResourceReq:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ApigChangeResourceReq.
+        r"""Gets the resource_id of this ApigChangeResourceReq.
 
         资源id
 
@@ -101,7 +101,7 @@ class ApigChangeResourceReq:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ApigChangeResourceReq.
+        r"""Sets the resource_id of this ApigChangeResourceReq.
 
         资源id
 
@@ -112,7 +112,7 @@ class ApigChangeResourceReq:
 
     @property
     def resource_spec_code(self):
-        """Gets the resource_spec_code of this ApigChangeResourceReq.
+        r"""Gets the resource_spec_code of this ApigChangeResourceReq.
 
         资源规格编码
 
@@ -123,7 +123,7 @@ class ApigChangeResourceReq:
 
     @resource_spec_code.setter
     def resource_spec_code(self, resource_spec_code):
-        """Sets the resource_spec_code of this ApigChangeResourceReq.
+        r"""Sets the resource_spec_code of this ApigChangeResourceReq.
 
         资源规格编码
 
@@ -134,7 +134,7 @@ class ApigChangeResourceReq:
 
     @property
     def product_id(self):
-        """Gets the product_id of this ApigChangeResourceReq.
+        r"""Gets the product_id of this ApigChangeResourceReq.
 
         产品id
 
@@ -145,7 +145,7 @@ class ApigChangeResourceReq:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this ApigChangeResourceReq.
+        r"""Sets the product_id of this ApigChangeResourceReq.
 
         产品id
 
@@ -156,7 +156,7 @@ class ApigChangeResourceReq:
 
     @property
     def promotion_info(self):
-        """Gets the promotion_info of this ApigChangeResourceReq.
+        r"""Gets the promotion_info of this ApigChangeResourceReq.
 
         促销信息
 
@@ -167,7 +167,7 @@ class ApigChangeResourceReq:
 
     @promotion_info.setter
     def promotion_info(self, promotion_info):
-        """Sets the promotion_info of this ApigChangeResourceReq.
+        r"""Sets the promotion_info of this ApigChangeResourceReq.
 
         促销信息
 

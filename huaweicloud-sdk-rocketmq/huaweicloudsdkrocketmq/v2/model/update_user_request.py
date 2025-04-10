@@ -29,7 +29,7 @@ class UpdateUserRequest:
     }
 
     def __init__(self, instance_id=None, user_name=None, body=None):
-        """UpdateUserRequest
+        r"""UpdateUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateUserRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpdateUserRequest.
+        r"""Gets the instance_id of this UpdateUserRequest.
 
         实例ID。
 
@@ -66,7 +66,7 @@ class UpdateUserRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpdateUserRequest.
+        r"""Sets the instance_id of this UpdateUserRequest.
 
         实例ID。
 
@@ -77,7 +77,7 @@ class UpdateUserRequest:
 
     @property
     def user_name(self):
-        """Gets the user_name of this UpdateUserRequest.
+        r"""Gets the user_name of this UpdateUserRequest.
 
         用户名。
 
@@ -88,7 +88,7 @@ class UpdateUserRequest:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this UpdateUserRequest.
+        r"""Sets the user_name of this UpdateUserRequest.
 
         用户名。
 
@@ -99,7 +99,7 @@ class UpdateUserRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateUserRequest.
+        r"""Gets the body of this UpdateUserRequest.
 
         :return: The body of this UpdateUserRequest.
         :rtype: :class:`huaweicloudsdkrocketmq.v2.User`
@@ -108,7 +108,7 @@ class UpdateUserRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateUserRequest.
+        r"""Sets the body of this UpdateUserRequest.
 
         :param body: The body of this UpdateUserRequest.
         :type body: :class:`huaweicloudsdkrocketmq.v2.User`

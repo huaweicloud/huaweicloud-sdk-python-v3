@@ -25,7 +25,7 @@ class UpdateSiteConnectionBandwidthSize:
     }
 
     def __init__(self, bandwidth_size=None):
-        """UpdateSiteConnectionBandwidthSize
+        r"""UpdateSiteConnectionBandwidthSize
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class UpdateSiteConnectionBandwidthSize:
 
     @property
     def bandwidth_size(self):
-        """Gets the bandwidth_size of this UpdateSiteConnectionBandwidthSize.
+        r"""Gets the bandwidth_size of this UpdateSiteConnectionBandwidthSize.
 
         带宽值，单位Mbps。
 
@@ -54,7 +54,7 @@ class UpdateSiteConnectionBandwidthSize:
 
     @bandwidth_size.setter
     def bandwidth_size(self, bandwidth_size):
-        """Sets the bandwidth_size of this UpdateSiteConnectionBandwidthSize.
+        r"""Sets the bandwidth_size of this UpdateSiteConnectionBandwidthSize.
 
         带宽值，单位Mbps。
 

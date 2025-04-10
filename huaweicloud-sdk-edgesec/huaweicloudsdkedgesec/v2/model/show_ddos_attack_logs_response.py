@@ -28,7 +28,7 @@ class ShowDdosAttackLogsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, items=None):
-        """ShowDdosAttackLogsResponse
+        r"""ShowDdosAttackLogsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowDdosAttackLogsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowDdosAttackLogsResponse.
+        r"""Gets the total of this ShowDdosAttackLogsResponse.
 
         攻击日志数量
 
@@ -62,7 +62,7 @@ class ShowDdosAttackLogsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowDdosAttackLogsResponse.
+        r"""Sets the total of this ShowDdosAttackLogsResponse.
 
         攻击日志数量
 
@@ -73,7 +73,7 @@ class ShowDdosAttackLogsResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ShowDdosAttackLogsResponse.
+        r"""Gets the items of this ShowDdosAttackLogsResponse.
 
         攻击日志详情
 
@@ -84,7 +84,7 @@ class ShowDdosAttackLogsResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ShowDdosAttackLogsResponse.
+        r"""Sets the items of this ShowDdosAttackLogsResponse.
 
         攻击日志详情
 

@@ -29,7 +29,7 @@ class DeleteAddressSetRequest:
     }
 
     def __init__(self, set_id=None, enterprise_project_id=None, fw_instance_id=None):
-        """DeleteAddressSetRequest
+        r"""DeleteAddressSetRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class DeleteAddressSetRequest:
 
     @property
     def set_id(self):
-        """Gets the set_id of this DeleteAddressSetRequest.
+        r"""Gets the set_id of this DeleteAddressSetRequest.
 
         地址组id，可通过[查询地址组列表接口](ListAddressSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 
@@ -67,7 +67,7 @@ class DeleteAddressSetRequest:
 
     @set_id.setter
     def set_id(self, set_id):
-        """Sets the set_id of this DeleteAddressSetRequest.
+        r"""Sets the set_id of this DeleteAddressSetRequest.
 
         地址组id，可通过[查询地址组列表接口](ListAddressSets.xml)查询获得，通过返回值中的data.records.set_id（.表示各对象之间层级的区分）获得。
 
@@ -78,7 +78,7 @@ class DeleteAddressSetRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this DeleteAddressSetRequest.
+        r"""Gets the enterprise_project_id of this DeleteAddressSetRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -89,7 +89,7 @@ class DeleteAddressSetRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this DeleteAddressSetRequest.
+        r"""Sets the enterprise_project_id of this DeleteAddressSetRequest.
 
         企业项目ID，用户根据组织规划企业项目，对应的ID为企业项目ID，可通过[如何获取企业项目ID](cfw_02_0027.xml)获取，用户未开启企业项目时为0
 
@@ -100,7 +100,7 @@ class DeleteAddressSetRequest:
 
     @property
     def fw_instance_id(self):
-        """Gets the fw_instance_id of this DeleteAddressSetRequest.
+        r"""Gets the fw_instance_id of this DeleteAddressSetRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 
@@ -111,7 +111,7 @@ class DeleteAddressSetRequest:
 
     @fw_instance_id.setter
     def fw_instance_id(self, fw_instance_id):
-        """Sets the fw_instance_id of this DeleteAddressSetRequest.
+        r"""Sets the fw_instance_id of this DeleteAddressSetRequest.
 
         防火墙id，可通过[防火墙ID获取方式](cfw_02_0028.xml)获取
 

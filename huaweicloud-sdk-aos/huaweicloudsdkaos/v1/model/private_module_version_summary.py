@@ -33,7 +33,7 @@ class PrivateModuleVersionSummary:
     }
 
     def __init__(self, module_name=None, module_id=None, module_version=None, version_description=None, create_time=None):
-        """PrivateModuleVersionSummary
+        r"""PrivateModuleVersionSummary
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class PrivateModuleVersionSummary:
 
     @property
     def module_name(self):
-        """Gets the module_name of this PrivateModuleVersionSummary.
+        r"""Gets the module_name of this PrivateModuleVersionSummary.
 
         私有模块（private-module）的名字。此名字在domain_id+region下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
@@ -81,7 +81,7 @@ class PrivateModuleVersionSummary:
 
     @module_name.setter
     def module_name(self, module_name):
-        """Sets the module_name of this PrivateModuleVersionSummary.
+        r"""Sets the module_name of this PrivateModuleVersionSummary.
 
         私有模块（private-module）的名字。此名字在domain_id+region下应唯一，可以使用中文、大小写英文、数字、下划线、中划线。首字符需为中文或者英文，区分大小写。
 
@@ -92,7 +92,7 @@ class PrivateModuleVersionSummary:
 
     @property
     def module_id(self):
-        """Gets the module_id of this PrivateModuleVersionSummary.
+        r"""Gets the module_id of this PrivateModuleVersionSummary.
 
         私有模块（private-module）的唯一Id。  此Id由资源编排服务在生成模块的时候生成，为UUID。  由于私有模块名仅在同一时间下唯一，即允许用户先生成一个叫HelloWorld的私有模块，删除，再重新创建一个同名私有模块。  对于团队并行开发，用户可能希望确保，当前我操作的私有模块就是我以为的那个，而不是其他队友删除后创建的同名私有模块。因此，使用Id就可以做到强匹配。  资源编排服务保证每次创建的私有模块所对应的Id都不相同，更新不会影响Id。如果给予的module_id和当前模块的Id不一致，则返回400
 
@@ -103,7 +103,7 @@ class PrivateModuleVersionSummary:
 
     @module_id.setter
     def module_id(self, module_id):
-        """Sets the module_id of this PrivateModuleVersionSummary.
+        r"""Sets the module_id of this PrivateModuleVersionSummary.
 
         私有模块（private-module）的唯一Id。  此Id由资源编排服务在生成模块的时候生成，为UUID。  由于私有模块名仅在同一时间下唯一，即允许用户先生成一个叫HelloWorld的私有模块，删除，再重新创建一个同名私有模块。  对于团队并行开发，用户可能希望确保，当前我操作的私有模块就是我以为的那个，而不是其他队友删除后创建的同名私有模块。因此，使用Id就可以做到强匹配。  资源编排服务保证每次创建的私有模块所对应的Id都不相同，更新不会影响Id。如果给予的module_id和当前模块的Id不一致，则返回400
 
@@ -114,7 +114,7 @@ class PrivateModuleVersionSummary:
 
     @property
     def module_version(self):
-        """Gets the module_version of this PrivateModuleVersionSummary.
+        r"""Gets the module_version of this PrivateModuleVersionSummary.
 
         模块的版本号。版本号必须遵循语义化版本号（Semantic Version），为用户自定义
 
@@ -125,7 +125,7 @@ class PrivateModuleVersionSummary:
 
     @module_version.setter
     def module_version(self, module_version):
-        """Sets the module_version of this PrivateModuleVersionSummary.
+        r"""Sets the module_version of this PrivateModuleVersionSummary.
 
         模块的版本号。版本号必须遵循语义化版本号（Semantic Version），为用户自定义
 
@@ -136,7 +136,7 @@ class PrivateModuleVersionSummary:
 
     @property
     def version_description(self):
-        """Gets the version_description of this PrivateModuleVersionSummary.
+        r"""Gets the version_description of this PrivateModuleVersionSummary.
 
         模块版本（module version）的描述。可用于客户识别并管理模块的版本。注意：模块版本为不可更新（immutable），即描述不可更新，如果需要更新，请删除后重建
 
@@ -147,7 +147,7 @@ class PrivateModuleVersionSummary:
 
     @version_description.setter
     def version_description(self, version_description):
-        """Sets the version_description of this PrivateModuleVersionSummary.
+        r"""Sets the version_description of this PrivateModuleVersionSummary.
 
         模块版本（module version）的描述。可用于客户识别并管理模块的版本。注意：模块版本为不可更新（immutable），即描述不可更新，如果需要更新，请删除后重建
 
@@ -158,7 +158,7 @@ class PrivateModuleVersionSummary:
 
     @property
     def create_time(self):
-        """Gets the create_time of this PrivateModuleVersionSummary.
+        r"""Gets the create_time of this PrivateModuleVersionSummary.
 
         私有模块（private-module）版本的生成时间，格式为YYYY-MM-DDTHH:mm:ss.SSSZ，精确到毫秒，UTC时区，即，如1970-01-01T00:00:00.000Z。
 
@@ -169,7 +169,7 @@ class PrivateModuleVersionSummary:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this PrivateModuleVersionSummary.
+        r"""Sets the create_time of this PrivateModuleVersionSummary.
 
         私有模块（private-module）版本的生成时间，格式为YYYY-MM-DDTHH:mm:ss.SSSZ，精确到毫秒，UTC时区，即，如1970-01-01T00:00:00.000Z。
 

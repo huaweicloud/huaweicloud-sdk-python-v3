@@ -25,7 +25,7 @@ class QueryDiagnosisResultSuggestionList:
     }
 
     def __init__(self, content=None):
-        """QueryDiagnosisResultSuggestionList
+        r"""QueryDiagnosisResultSuggestionList
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class QueryDiagnosisResultSuggestionList:
 
     @property
     def content(self):
-        """Gets the content of this QueryDiagnosisResultSuggestionList.
+        r"""Gets the content of this QueryDiagnosisResultSuggestionList.
 
         诊断建议内容。
 
@@ -54,7 +54,7 @@ class QueryDiagnosisResultSuggestionList:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this QueryDiagnosisResultSuggestionList.
+        r"""Sets the content of this QueryDiagnosisResultSuggestionList.
 
         诊断建议内容。
 

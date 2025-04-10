@@ -27,7 +27,7 @@ class BusinessCardImageConfig:
     }
 
     def __init__(self, human_image=None, logo_image=None):
-        """BusinessCardImageConfig
+        r"""BusinessCardImageConfig
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class BusinessCardImageConfig:
 
     @property
     def human_image(self):
-        """Gets the human_image of this BusinessCardImageConfig.
+        r"""Gets the human_image of this BusinessCardImageConfig.
 
         人物照片，需要Base64编码。
 
@@ -60,7 +60,7 @@ class BusinessCardImageConfig:
 
     @human_image.setter
     def human_image(self, human_image):
-        """Sets the human_image of this BusinessCardImageConfig.
+        r"""Sets the human_image of this BusinessCardImageConfig.
 
         人物照片，需要Base64编码。
 
@@ -71,7 +71,7 @@ class BusinessCardImageConfig:
 
     @property
     def logo_image(self):
-        """Gets the logo_image of this BusinessCardImageConfig.
+        r"""Gets the logo_image of this BusinessCardImageConfig.
 
         Logo图片，需要Base64编码。
 
@@ -82,7 +82,7 @@ class BusinessCardImageConfig:
 
     @logo_image.setter
     def logo_image(self, logo_image):
-        """Sets the logo_image of this BusinessCardImageConfig.
+        r"""Sets the logo_image of this BusinessCardImageConfig.
 
         Logo图片，需要Base64编码。
 

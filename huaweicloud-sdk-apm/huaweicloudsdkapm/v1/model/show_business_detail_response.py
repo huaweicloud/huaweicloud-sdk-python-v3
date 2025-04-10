@@ -52,7 +52,7 @@ class ShowBusinessDetailResponse(SdkResponse):
     }
 
     def __init__(self, id=None, gmt_create=None, gmt_modify=None, default=None, display_name=None, name=None, is_default=None, inner_domain_id=None, eps_id=None, creator_id=None, descp=None, create_time=None, modify_time=None, creator_name=None):
-        """ShowBusinessDetailResponse
+        r"""ShowBusinessDetailResponse
 
         The model defined in huaweicloud sdk
 
@@ -135,7 +135,7 @@ class ShowBusinessDetailResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowBusinessDetailResponse.
+        r"""Gets the id of this ShowBusinessDetailResponse.
 
         应用id。
 
@@ -146,7 +146,7 @@ class ShowBusinessDetailResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowBusinessDetailResponse.
+        r"""Sets the id of this ShowBusinessDetailResponse.
 
         应用id。
 
@@ -157,7 +157,7 @@ class ShowBusinessDetailResponse(SdkResponse):
 
     @property
     def gmt_create(self):
-        """Gets the gmt_create of this ShowBusinessDetailResponse.
+        r"""Gets the gmt_create of this ShowBusinessDetailResponse.
 
         创建时间。
 
@@ -168,7 +168,7 @@ class ShowBusinessDetailResponse(SdkResponse):
 
     @gmt_create.setter
     def gmt_create(self, gmt_create):
-        """Sets the gmt_create of this ShowBusinessDetailResponse.
+        r"""Sets the gmt_create of this ShowBusinessDetailResponse.
 
         创建时间。
 
@@ -179,7 +179,7 @@ class ShowBusinessDetailResponse(SdkResponse):
 
     @property
     def gmt_modify(self):
-        """Gets the gmt_modify of this ShowBusinessDetailResponse.
+        r"""Gets the gmt_modify of this ShowBusinessDetailResponse.
 
         修改时间。
 
@@ -190,7 +190,7 @@ class ShowBusinessDetailResponse(SdkResponse):
 
     @gmt_modify.setter
     def gmt_modify(self, gmt_modify):
-        """Sets the gmt_modify of this ShowBusinessDetailResponse.
+        r"""Sets the gmt_modify of this ShowBusinessDetailResponse.
 
         修改时间。
 
@@ -201,7 +201,7 @@ class ShowBusinessDetailResponse(SdkResponse):
 
     @property
     def default(self):
-        """Gets the default of this ShowBusinessDetailResponse.
+        r"""Gets the default of this ShowBusinessDetailResponse.
 
         是否是默认的应用。
 
@@ -212,7 +212,7 @@ class ShowBusinessDetailResponse(SdkResponse):
 
     @default.setter
     def default(self, default):
-        """Sets the default of this ShowBusinessDetailResponse.
+        r"""Sets the default of this ShowBusinessDetailResponse.
 
         是否是默认的应用。
 
@@ -223,7 +223,7 @@ class ShowBusinessDetailResponse(SdkResponse):
 
     @property
     def display_name(self):
-        """Gets the display_name of this ShowBusinessDetailResponse.
+        r"""Gets the display_name of this ShowBusinessDetailResponse.
 
         应用的英文名称。
 
@@ -234,7 +234,7 @@ class ShowBusinessDetailResponse(SdkResponse):
 
     @display_name.setter
     def display_name(self, display_name):
-        """Sets the display_name of this ShowBusinessDetailResponse.
+        r"""Sets the display_name of this ShowBusinessDetailResponse.
 
         应用的英文名称。
 
@@ -245,7 +245,7 @@ class ShowBusinessDetailResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowBusinessDetailResponse.
+        r"""Gets the name of this ShowBusinessDetailResponse.
 
         应用的展示名称。
 
@@ -256,7 +256,7 @@ class ShowBusinessDetailResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowBusinessDetailResponse.
+        r"""Sets the name of this ShowBusinessDetailResponse.
 
         应用的展示名称。
 
@@ -267,7 +267,7 @@ class ShowBusinessDetailResponse(SdkResponse):
 
     @property
     def is_default(self):
-        """Gets the is_default of this ShowBusinessDetailResponse.
+        r"""Gets the is_default of this ShowBusinessDetailResponse.
 
         是否是默认的应用。
 
@@ -278,7 +278,7 @@ class ShowBusinessDetailResponse(SdkResponse):
 
     @is_default.setter
     def is_default(self, is_default):
-        """Sets the is_default of this ShowBusinessDetailResponse.
+        r"""Sets the is_default of this ShowBusinessDetailResponse.
 
         是否是默认的应用。
 
@@ -289,7 +289,7 @@ class ShowBusinessDetailResponse(SdkResponse):
 
     @property
     def inner_domain_id(self):
-        """Gets the inner_domain_id of this ShowBusinessDetailResponse.
+        r"""Gets the inner_domain_id of this ShowBusinessDetailResponse.
 
         内部租户id。
 
@@ -300,7 +300,7 @@ class ShowBusinessDetailResponse(SdkResponse):
 
     @inner_domain_id.setter
     def inner_domain_id(self, inner_domain_id):
-        """Sets the inner_domain_id of this ShowBusinessDetailResponse.
+        r"""Sets the inner_domain_id of this ShowBusinessDetailResponse.
 
         内部租户id。
 
@@ -311,7 +311,7 @@ class ShowBusinessDetailResponse(SdkResponse):
 
     @property
     def eps_id(self):
-        """Gets the eps_id of this ShowBusinessDetailResponse.
+        r"""Gets the eps_id of this ShowBusinessDetailResponse.
 
         企业项目的id。
 
@@ -322,7 +322,7 @@ class ShowBusinessDetailResponse(SdkResponse):
 
     @eps_id.setter
     def eps_id(self, eps_id):
-        """Sets the eps_id of this ShowBusinessDetailResponse.
+        r"""Sets the eps_id of this ShowBusinessDetailResponse.
 
         企业项目的id。
 
@@ -333,7 +333,7 @@ class ShowBusinessDetailResponse(SdkResponse):
 
     @property
     def creator_id(self):
-        """Gets the creator_id of this ShowBusinessDetailResponse.
+        r"""Gets the creator_id of this ShowBusinessDetailResponse.
 
         创建者的userId。
 
@@ -344,7 +344,7 @@ class ShowBusinessDetailResponse(SdkResponse):
 
     @creator_id.setter
     def creator_id(self, creator_id):
-        """Sets the creator_id of this ShowBusinessDetailResponse.
+        r"""Sets the creator_id of this ShowBusinessDetailResponse.
 
         创建者的userId。
 
@@ -355,7 +355,7 @@ class ShowBusinessDetailResponse(SdkResponse):
 
     @property
     def descp(self):
-        """Gets the descp of this ShowBusinessDetailResponse.
+        r"""Gets the descp of this ShowBusinessDetailResponse.
 
         应用描述说明。
 
@@ -366,7 +366,7 @@ class ShowBusinessDetailResponse(SdkResponse):
 
     @descp.setter
     def descp(self, descp):
-        """Sets the descp of this ShowBusinessDetailResponse.
+        r"""Sets the descp of this ShowBusinessDetailResponse.
 
         应用描述说明。
 
@@ -377,7 +377,7 @@ class ShowBusinessDetailResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowBusinessDetailResponse.
+        r"""Gets the create_time of this ShowBusinessDetailResponse.
 
         创建时间。
 
@@ -388,7 +388,7 @@ class ShowBusinessDetailResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowBusinessDetailResponse.
+        r"""Sets the create_time of this ShowBusinessDetailResponse.
 
         创建时间。
 
@@ -399,7 +399,7 @@ class ShowBusinessDetailResponse(SdkResponse):
 
     @property
     def modify_time(self):
-        """Gets the modify_time of this ShowBusinessDetailResponse.
+        r"""Gets the modify_time of this ShowBusinessDetailResponse.
 
         修改时间。
 
@@ -410,7 +410,7 @@ class ShowBusinessDetailResponse(SdkResponse):
 
     @modify_time.setter
     def modify_time(self, modify_time):
-        """Sets the modify_time of this ShowBusinessDetailResponse.
+        r"""Sets the modify_time of this ShowBusinessDetailResponse.
 
         修改时间。
 
@@ -421,7 +421,7 @@ class ShowBusinessDetailResponse(SdkResponse):
 
     @property
     def creator_name(self):
-        """Gets the creator_name of this ShowBusinessDetailResponse.
+        r"""Gets the creator_name of this ShowBusinessDetailResponse.
 
         创建者的用户名。
 
@@ -432,7 +432,7 @@ class ShowBusinessDetailResponse(SdkResponse):
 
     @creator_name.setter
     def creator_name(self, creator_name):
-        """Sets the creator_name of this ShowBusinessDetailResponse.
+        r"""Sets the creator_name of this ShowBusinessDetailResponse.
 
         创建者的用户名。
 

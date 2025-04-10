@@ -103,7 +103,7 @@ class FlavorExtraSpec:
     }
 
     def __init__(self, ecsperformancetype=None, hwnuma_nodes=None, resource_type=None, hpet_support=None, instance_vnictype=None, instance_vnicinstance_bandwidth=None, instance_vnicmax_count=None, quotalocal_disk=None, quotanvme_ssd=None, extra_speciopersistent_grant=None, ecsgeneration=None, ecsvirtualization_env_types=None, pci_passthroughenable_gpu=None, pci_passthroughgpu_specs=None, pci_passthroughalias=None, condoperationstatus=None, condoperationaz=None, quotamax_rate=None, quotamin_rate=None, quotamax_pps=None, condoperationcharge=None, condoperationchargestop=None, condspotoperationaz=None, condoperationroles=None, condspotoperationstatus=None, condnetwork=None, condstorage=None, condstoragetype=None, condcomputelive_resizable=None, condcompute=None, infogpuname=None, infocpuname=None, quotagpu=None, quotavif_max_num=None, quotasub_network_interface_max_num=None, ecsinstance_architecture=None, network_interfacetraffic_mirroring_supported=None, securityenclave_supported=None, infogpus=None, infoasic_accelerators=None):
-        """FlavorExtraSpec
+        r"""FlavorExtraSpec
 
         The model defined in huaweicloud sdk
 
@@ -316,7 +316,7 @@ class FlavorExtraSpec:
 
     @property
     def ecsperformancetype(self):
-        """Gets the ecsperformancetype of this FlavorExtraSpec.
+        r"""Gets the ecsperformancetype of this FlavorExtraSpec.
 
         云服务器规格的分类：  - normal：通用型 - entry：通用入门型 - cpuv1：计算I型 - cpuv2：计算II型 - computingv3：通用计算增强型 - kunpeng_computing：鲲鹏通用计算增强型 - kunpeng_highmem：鲲鹏内存优化型 - highmem：内存优化型 - saphana：大内存型 - diskintensive：磁盘增强型 - highio：超高I/O型 - ultracpu：超高性能计算型 - gpu：GPU加速型 - fpga：FPGA加速型 - ascend：AI加速型  > 说明：  - 早期注册的规格该字段为hws:performancetype。
 
@@ -327,7 +327,7 @@ class FlavorExtraSpec:
 
     @ecsperformancetype.setter
     def ecsperformancetype(self, ecsperformancetype):
-        """Sets the ecsperformancetype of this FlavorExtraSpec.
+        r"""Sets the ecsperformancetype of this FlavorExtraSpec.
 
         云服务器规格的分类：  - normal：通用型 - entry：通用入门型 - cpuv1：计算I型 - cpuv2：计算II型 - computingv3：通用计算增强型 - kunpeng_computing：鲲鹏通用计算增强型 - kunpeng_highmem：鲲鹏内存优化型 - highmem：内存优化型 - saphana：大内存型 - diskintensive：磁盘增强型 - highio：超高I/O型 - ultracpu：超高性能计算型 - gpu：GPU加速型 - fpga：FPGA加速型 - ascend：AI加速型  > 说明：  - 早期注册的规格该字段为hws:performancetype。
 
@@ -338,7 +338,7 @@ class FlavorExtraSpec:
 
     @property
     def hwnuma_nodes(self):
-        """Gets the hwnuma_nodes of this FlavorExtraSpec.
+        r"""Gets the hwnuma_nodes of this FlavorExtraSpec.
 
         主机的物理cpu数量。
 
@@ -349,7 +349,7 @@ class FlavorExtraSpec:
 
     @hwnuma_nodes.setter
     def hwnuma_nodes(self, hwnuma_nodes):
-        """Sets the hwnuma_nodes of this FlavorExtraSpec.
+        r"""Sets the hwnuma_nodes of this FlavorExtraSpec.
 
         主机的物理cpu数量。
 
@@ -360,7 +360,7 @@ class FlavorExtraSpec:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this FlavorExtraSpec.
+        r"""Gets the resource_type of this FlavorExtraSpec.
 
         资源类型。resource_type是为了区分云服务器的物理主机类型。
 
@@ -371,7 +371,7 @@ class FlavorExtraSpec:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this FlavorExtraSpec.
+        r"""Sets the resource_type of this FlavorExtraSpec.
 
         资源类型。resource_type是为了区分云服务器的物理主机类型。
 
@@ -382,7 +382,7 @@ class FlavorExtraSpec:
 
     @property
     def hpet_support(self):
-        """Gets the hpet_support of this FlavorExtraSpec.
+        r"""Gets the hpet_support of this FlavorExtraSpec.
 
         弹性运服务器高精度时钟是否开启，开启为true，否则为false。（该字段是否返回根据云服务器规格而定）
 
@@ -393,7 +393,7 @@ class FlavorExtraSpec:
 
     @hpet_support.setter
     def hpet_support(self, hpet_support):
-        """Sets the hpet_support of this FlavorExtraSpec.
+        r"""Sets the hpet_support of this FlavorExtraSpec.
 
         弹性运服务器高精度时钟是否开启，开启为true，否则为false。（该字段是否返回根据云服务器规格而定）
 
@@ -404,7 +404,7 @@ class FlavorExtraSpec:
 
     @property
     def instance_vnictype(self):
-        """Gets the instance_vnictype of this FlavorExtraSpec.
+        r"""Gets the instance_vnictype of this FlavorExtraSpec.
 
         网卡类型，值固定为“enhanced”，表示使用增强型网络的资源创建云服务器。
 
@@ -415,7 +415,7 @@ class FlavorExtraSpec:
 
     @instance_vnictype.setter
     def instance_vnictype(self, instance_vnictype):
-        """Sets the instance_vnictype of this FlavorExtraSpec.
+        r"""Sets the instance_vnictype of this FlavorExtraSpec.
 
         网卡类型，值固定为“enhanced”，表示使用增强型网络的资源创建云服务器。
 
@@ -426,7 +426,7 @@ class FlavorExtraSpec:
 
     @property
     def instance_vnicinstance_bandwidth(self):
-        """Gets the instance_vnicinstance_bandwidth of this FlavorExtraSpec.
+        r"""Gets the instance_vnicinstance_bandwidth of this FlavorExtraSpec.
 
         最大带宽，单位Mbps，最大值为10000。
 
@@ -437,7 +437,7 @@ class FlavorExtraSpec:
 
     @instance_vnicinstance_bandwidth.setter
     def instance_vnicinstance_bandwidth(self, instance_vnicinstance_bandwidth):
-        """Sets the instance_vnicinstance_bandwidth of this FlavorExtraSpec.
+        r"""Sets the instance_vnicinstance_bandwidth of this FlavorExtraSpec.
 
         最大带宽，单位Mbps，最大值为10000。
 
@@ -448,7 +448,7 @@ class FlavorExtraSpec:
 
     @property
     def instance_vnicmax_count(self):
-        """Gets the instance_vnicmax_count of this FlavorExtraSpec.
+        r"""Gets the instance_vnicmax_count of this FlavorExtraSpec.
 
         最大网卡个数，最大为4。
 
@@ -459,7 +459,7 @@ class FlavorExtraSpec:
 
     @instance_vnicmax_count.setter
     def instance_vnicmax_count(self, instance_vnicmax_count):
-        """Sets the instance_vnicmax_count of this FlavorExtraSpec.
+        r"""Sets the instance_vnicmax_count of this FlavorExtraSpec.
 
         最大网卡个数，最大为4。
 
@@ -470,7 +470,7 @@ class FlavorExtraSpec:
 
     @property
     def quotalocal_disk(self):
-        """Gets the quotalocal_disk of this FlavorExtraSpec.
+        r"""Gets the quotalocal_disk of this FlavorExtraSpec.
 
         值格式为{type}:{count}:{size}:{safeFormat}，其中：  - type指磁盘类型，当前只支持hdd。 - count指本地磁盘数量，目前支持d1类型：3/6/12/24，d2类型：2/4/8/12/16/24，d3类型：2/4/8/12/16/24/28。 - size指单个磁盘容量，单位GB，目前只支持1675（实际磁盘大小为1800，格式化后可用大小为1675）。 - safeFormat指云服务器本地磁盘是否安全格式化，目前仅支持d1类型：FALSE，d2/d3类型：True。  > 说明：  - 磁盘增强型特有字段。
 
@@ -481,7 +481,7 @@ class FlavorExtraSpec:
 
     @quotalocal_disk.setter
     def quotalocal_disk(self, quotalocal_disk):
-        """Sets the quotalocal_disk of this FlavorExtraSpec.
+        r"""Sets the quotalocal_disk of this FlavorExtraSpec.
 
         值格式为{type}:{count}:{size}:{safeFormat}，其中：  - type指磁盘类型，当前只支持hdd。 - count指本地磁盘数量，目前支持d1类型：3/6/12/24，d2类型：2/4/8/12/16/24，d3类型：2/4/8/12/16/24/28。 - size指单个磁盘容量，单位GB，目前只支持1675（实际磁盘大小为1800，格式化后可用大小为1675）。 - safeFormat指云服务器本地磁盘是否安全格式化，目前仅支持d1类型：FALSE，d2/d3类型：True。  > 说明：  - 磁盘增强型特有字段。
 
@@ -492,7 +492,7 @@ class FlavorExtraSpec:
 
     @property
     def quotanvme_ssd(self):
-        """Gets the quotanvme_ssd of this FlavorExtraSpec.
+        r"""Gets the quotanvme_ssd of this FlavorExtraSpec.
 
         值格式为{type}:{spec}:{size}:{safeFormat}，其中：  - type指主机上配备的nvme ssd的单卡容量大小，当前只支持1.6T/3.2T。 - spec指nvme ssd的规格，包括large/small。large表示大规格，small表示小规格。目前仅支持i3类型：large。 - size指guest使用的盘的容量大小，单位为GB。在spec值为large的情况下，此项即为host单卡大小。在spec值为small的情况下，此为1/4规格或者1/2规格。 - safeFormat指云服务器本地磁盘是否安全格式化，目前仅支持i3类型：True。  > 说明：  - 超高I/O型特有字段。
 
@@ -503,7 +503,7 @@ class FlavorExtraSpec:
 
     @quotanvme_ssd.setter
     def quotanvme_ssd(self, quotanvme_ssd):
-        """Sets the quotanvme_ssd of this FlavorExtraSpec.
+        r"""Sets the quotanvme_ssd of this FlavorExtraSpec.
 
         值格式为{type}:{spec}:{size}:{safeFormat}，其中：  - type指主机上配备的nvme ssd的单卡容量大小，当前只支持1.6T/3.2T。 - spec指nvme ssd的规格，包括large/small。large表示大规格，small表示小规格。目前仅支持i3类型：large。 - size指guest使用的盘的容量大小，单位为GB。在spec值为large的情况下，此项即为host单卡大小。在spec值为small的情况下，此为1/4规格或者1/2规格。 - safeFormat指云服务器本地磁盘是否安全格式化，目前仅支持i3类型：True。  > 说明：  - 超高I/O型特有字段。
 
@@ -514,7 +514,7 @@ class FlavorExtraSpec:
 
     @property
     def extra_speciopersistent_grant(self):
-        """Gets the extra_speciopersistent_grant of this FlavorExtraSpec.
+        r"""Gets the extra_speciopersistent_grant of this FlavorExtraSpec.
 
         是否支持持久化，值为true。  代表云服务器访问存储的方式为持久化授权。   > 说明：  - 密集存储D1型特有字段。
 
@@ -525,7 +525,7 @@ class FlavorExtraSpec:
 
     @extra_speciopersistent_grant.setter
     def extra_speciopersistent_grant(self, extra_speciopersistent_grant):
-        """Sets the extra_speciopersistent_grant of this FlavorExtraSpec.
+        r"""Sets the extra_speciopersistent_grant of this FlavorExtraSpec.
 
         是否支持持久化，值为true。  代表云服务器访问存储的方式为持久化授权。   > 说明：  - 密集存储D1型特有字段。
 
@@ -536,7 +536,7 @@ class FlavorExtraSpec:
 
     @property
     def ecsgeneration(self):
-        """Gets the ecsgeneration of this FlavorExtraSpec.
+        r"""Gets the ecsgeneration of this FlavorExtraSpec.
 
         弹性云服务器类型的代数。  - s1：通用型I代 - s2：通用型II代 - s3：通用型 - m1：内存优化型I代 - m2：内存优化型II代 - m3：内存优化型 - h1：高性能计算型I代 - h2：高性能计算型II代 - h3：高性能计算型 - hi3：超高性能计算型 - d1：密集存储型I代 - d2：密集存储型II代 - d3：磁盘增强型 - g1：GPU加速型I代 - g2：GPU加速型II代 - f1：FPGA高性能型 - f2：FPGA通用型 - c3：通用计算增强型 - e3：大内存型 - i3：超高I/O型
 
@@ -547,7 +547,7 @@ class FlavorExtraSpec:
 
     @ecsgeneration.setter
     def ecsgeneration(self, ecsgeneration):
-        """Sets the ecsgeneration of this FlavorExtraSpec.
+        r"""Sets the ecsgeneration of this FlavorExtraSpec.
 
         弹性云服务器类型的代数。  - s1：通用型I代 - s2：通用型II代 - s3：通用型 - m1：内存优化型I代 - m2：内存优化型II代 - m3：内存优化型 - h1：高性能计算型I代 - h2：高性能计算型II代 - h3：高性能计算型 - hi3：超高性能计算型 - d1：密集存储型I代 - d2：密集存储型II代 - d3：磁盘增强型 - g1：GPU加速型I代 - g2：GPU加速型II代 - f1：FPGA高性能型 - f2：FPGA通用型 - c3：通用计算增强型 - e3：大内存型 - i3：超高I/O型
 
@@ -558,7 +558,7 @@ class FlavorExtraSpec:
 
     @property
     def ecsvirtualization_env_types(self):
-        """Gets the ecsvirtualization_env_types of this FlavorExtraSpec.
+        r"""Gets the ecsvirtualization_env_types of this FlavorExtraSpec.
 
         虚拟化类型。  - 如果值为“FusionCompute”，表示弹性云服务器使用基于XEN的虚拟化技术。 - 如果值为“CloudCompute”，表示弹性云服务器使用基于KVM的虚拟化技术。
 
@@ -569,7 +569,7 @@ class FlavorExtraSpec:
 
     @ecsvirtualization_env_types.setter
     def ecsvirtualization_env_types(self, ecsvirtualization_env_types):
-        """Sets the ecsvirtualization_env_types of this FlavorExtraSpec.
+        r"""Sets the ecsvirtualization_env_types of this FlavorExtraSpec.
 
         虚拟化类型。  - 如果值为“FusionCompute”，表示弹性云服务器使用基于XEN的虚拟化技术。 - 如果值为“CloudCompute”，表示弹性云服务器使用基于KVM的虚拟化技术。
 
@@ -580,7 +580,7 @@ class FlavorExtraSpec:
 
     @property
     def pci_passthroughenable_gpu(self):
-        """Gets the pci_passthroughenable_gpu of this FlavorExtraSpec.
+        r"""Gets the pci_passthroughenable_gpu of this FlavorExtraSpec.
 
         显卡是否直通。  值为“true”，表示GPU直通。
 
@@ -591,7 +591,7 @@ class FlavorExtraSpec:
 
     @pci_passthroughenable_gpu.setter
     def pci_passthroughenable_gpu(self, pci_passthroughenable_gpu):
-        """Sets the pci_passthroughenable_gpu of this FlavorExtraSpec.
+        r"""Sets the pci_passthroughenable_gpu of this FlavorExtraSpec.
 
         显卡是否直通。  值为“true”，表示GPU直通。
 
@@ -602,7 +602,7 @@ class FlavorExtraSpec:
 
     @property
     def pci_passthroughgpu_specs(self):
-        """Gets the pci_passthroughgpu_specs of this FlavorExtraSpec.
+        r"""Gets the pci_passthroughgpu_specs of this FlavorExtraSpec.
 
         G1型和G2型云服务器应用的技术，包括GPU虚拟化和GPU直通。  - 如果该规格的云服务器使用GPU虚拟化技术，且GPU卡的型号为M60-1Q，参数值可设置为“m60_1q:virt:1”。 - 如果该规格的云服务器使用GPU直通技术，且GPU卡的型号为M60，参数值可设置为“m60:direct_graphics:1”。
 
@@ -613,7 +613,7 @@ class FlavorExtraSpec:
 
     @pci_passthroughgpu_specs.setter
     def pci_passthroughgpu_specs(self, pci_passthroughgpu_specs):
-        """Sets the pci_passthroughgpu_specs of this FlavorExtraSpec.
+        r"""Sets the pci_passthroughgpu_specs of this FlavorExtraSpec.
 
         G1型和G2型云服务器应用的技术，包括GPU虚拟化和GPU直通。  - 如果该规格的云服务器使用GPU虚拟化技术，且GPU卡的型号为M60-1Q，参数值可设置为“m60_1q:virt:1”。 - 如果该规格的云服务器使用GPU直通技术，且GPU卡的型号为M60，参数值可设置为“m60:direct_graphics:1”。
 
@@ -624,7 +624,7 @@ class FlavorExtraSpec:
 
     @property
     def pci_passthroughalias(self):
-        """Gets the pci_passthroughalias of this FlavorExtraSpec.
+        r"""Gets the pci_passthroughalias of this FlavorExtraSpec.
 
         P1型v本地直通GPU的型号和数量，参数值可设置为“nvidia-p100:1”，表示使用该规格创建的弹性云服务器将占用1张NVIDIA P100显卡。
 
@@ -635,7 +635,7 @@ class FlavorExtraSpec:
 
     @pci_passthroughalias.setter
     def pci_passthroughalias(self, pci_passthroughalias):
-        """Sets the pci_passthroughalias of this FlavorExtraSpec.
+        r"""Sets the pci_passthroughalias of this FlavorExtraSpec.
 
         P1型v本地直通GPU的型号和数量，参数值可设置为“nvidia-p100:1”，表示使用该规格创建的弹性云服务器将占用1张NVIDIA P100显卡。
 
@@ -646,7 +646,7 @@ class FlavorExtraSpec:
 
     @property
     def condoperationstatus(self):
-        """Gets the condoperationstatus of this FlavorExtraSpec.
+        r"""Gets the condoperationstatus of this FlavorExtraSpec.
 
         此参数是Region级配置，某个AZ没有在cond:operation:az参数中配置时默认使用此参数的取值。不配置或无此参数时等同于“normal”。取值范围：  - normal：正常商用 - abandon：下线（即不显示） - sellout：售罄 - obt：公测 - promotion：推荐(等同normal，也是商用)
 
@@ -657,7 +657,7 @@ class FlavorExtraSpec:
 
     @condoperationstatus.setter
     def condoperationstatus(self, condoperationstatus):
-        """Sets the condoperationstatus of this FlavorExtraSpec.
+        r"""Sets the condoperationstatus of this FlavorExtraSpec.
 
         此参数是Region级配置，某个AZ没有在cond:operation:az参数中配置时默认使用此参数的取值。不配置或无此参数时等同于“normal”。取值范围：  - normal：正常商用 - abandon：下线（即不显示） - sellout：售罄 - obt：公测 - promotion：推荐(等同normal，也是商用)
 
@@ -668,7 +668,7 @@ class FlavorExtraSpec:
 
     @property
     def condoperationaz(self):
-        """Gets the condoperationaz of this FlavorExtraSpec.
+        r"""Gets the condoperationaz of this FlavorExtraSpec.
 
         此参数是AZ级配置，某个AZ没有在此参数中配置时默认使用cond:operation:status参数的取值。此参数的配置格式“az(xx)”。()内为某个AZ的flavor状态，()内必须要填有状态，不填为无效配置。状态的取值范围与cond:operation:status参数相同。  例如：flavor在某个region的az0正常商用，az1售罄，az2公测，az3正常商用，其他az显示下线，可配置为：  - “cond:operation:status”设置为“abandon” - “cond:operation:az”设置为“az0(normal), az1(sellout), az2(obt), az3(normal)”  > 说明：  - 如果flavor在某个AZ下的状态与cond:operation:status配置状态不同，必须配置该参数。
 
@@ -679,7 +679,7 @@ class FlavorExtraSpec:
 
     @condoperationaz.setter
     def condoperationaz(self, condoperationaz):
-        """Sets the condoperationaz of this FlavorExtraSpec.
+        r"""Sets the condoperationaz of this FlavorExtraSpec.
 
         此参数是AZ级配置，某个AZ没有在此参数中配置时默认使用cond:operation:status参数的取值。此参数的配置格式“az(xx)”。()内为某个AZ的flavor状态，()内必须要填有状态，不填为无效配置。状态的取值范围与cond:operation:status参数相同。  例如：flavor在某个region的az0正常商用，az1售罄，az2公测，az3正常商用，其他az显示下线，可配置为：  - “cond:operation:status”设置为“abandon” - “cond:operation:az”设置为“az0(normal), az1(sellout), az2(obt), az3(normal)”  > 说明：  - 如果flavor在某个AZ下的状态与cond:operation:status配置状态不同，必须配置该参数。
 
@@ -690,7 +690,7 @@ class FlavorExtraSpec:
 
     @property
     def quotamax_rate(self):
-        """Gets the quotamax_rate of this FlavorExtraSpec.
+        r"""Gets the quotamax_rate of this FlavorExtraSpec.
 
         最大带宽  - 单位Mbps，显示为Gbps时除以1000
 
@@ -701,7 +701,7 @@ class FlavorExtraSpec:
 
     @quotamax_rate.setter
     def quotamax_rate(self, quotamax_rate):
-        """Sets the quotamax_rate of this FlavorExtraSpec.
+        r"""Sets the quotamax_rate of this FlavorExtraSpec.
 
         最大带宽  - 单位Mbps，显示为Gbps时除以1000
 
@@ -712,7 +712,7 @@ class FlavorExtraSpec:
 
     @property
     def quotamin_rate(self):
-        """Gets the quotamin_rate of this FlavorExtraSpec.
+        r"""Gets the quotamin_rate of this FlavorExtraSpec.
 
         基准带宽  - 单位Mbps，显示为Gbps时除以1000
 
@@ -723,7 +723,7 @@ class FlavorExtraSpec:
 
     @quotamin_rate.setter
     def quotamin_rate(self, quotamin_rate):
-        """Sets the quotamin_rate of this FlavorExtraSpec.
+        r"""Sets the quotamin_rate of this FlavorExtraSpec.
 
         基准带宽  - 单位Mbps，显示为Gbps时除以1000
 
@@ -734,7 +734,7 @@ class FlavorExtraSpec:
 
     @property
     def quotamax_pps(self):
-        """Gets the quotamax_pps of this FlavorExtraSpec.
+        r"""Gets the quotamax_pps of this FlavorExtraSpec.
 
         内网最大收发包能力  - 单位个，显示为xx万时除以10000
 
@@ -745,7 +745,7 @@ class FlavorExtraSpec:
 
     @quotamax_pps.setter
     def quotamax_pps(self, quotamax_pps):
-        """Sets the quotamax_pps of this FlavorExtraSpec.
+        r"""Sets the quotamax_pps of this FlavorExtraSpec.
 
         内网最大收发包能力  - 单位个，显示为xx万时除以10000
 
@@ -756,7 +756,7 @@ class FlavorExtraSpec:
 
     @property
     def condoperationcharge(self):
-        """Gets the condoperationcharge of this FlavorExtraSpec.
+        r"""Gets the condoperationcharge of this FlavorExtraSpec.
 
         计费类型  - 计费场景，不配置时都支持 - period，包周期 - demand，按需
 
@@ -767,7 +767,7 @@ class FlavorExtraSpec:
 
     @condoperationcharge.setter
     def condoperationcharge(self, condoperationcharge):
-        """Sets the condoperationcharge of this FlavorExtraSpec.
+        r"""Sets the condoperationcharge of this FlavorExtraSpec.
 
         计费类型  - 计费场景，不配置时都支持 - period，包周期 - demand，按需
 
@@ -778,7 +778,7 @@ class FlavorExtraSpec:
 
     @property
     def condoperationchargestop(self):
-        """Gets the condoperationchargestop of this FlavorExtraSpec.
+        r"""Gets the condoperationchargestop of this FlavorExtraSpec.
 
         关机是否收费  - 关机是否计费，默认免费： - charge - free
 
@@ -789,7 +789,7 @@ class FlavorExtraSpec:
 
     @condoperationchargestop.setter
     def condoperationchargestop(self, condoperationchargestop):
-        """Sets the condoperationchargestop of this FlavorExtraSpec.
+        r"""Sets the condoperationchargestop of this FlavorExtraSpec.
 
         关机是否收费  - 关机是否计费，默认免费： - charge - free
 
@@ -800,7 +800,7 @@ class FlavorExtraSpec:
 
     @property
     def condspotoperationaz(self):
-        """Gets the condspotoperationaz of this FlavorExtraSpec.
+        r"""Gets the condspotoperationaz of this FlavorExtraSpec.
 
         计费类型  - 计费场景，不配置时都支持 - period，包周期 - demand，按需
 
@@ -811,7 +811,7 @@ class FlavorExtraSpec:
 
     @condspotoperationaz.setter
     def condspotoperationaz(self, condspotoperationaz):
-        """Sets the condspotoperationaz of this FlavorExtraSpec.
+        r"""Sets the condspotoperationaz of this FlavorExtraSpec.
 
         计费类型  - 计费场景，不配置时都支持 - period，包周期 - demand，按需
 
@@ -822,7 +822,7 @@ class FlavorExtraSpec:
 
     @property
     def condoperationroles(self):
-        """Gets the condoperationroles of this FlavorExtraSpec.
+        r"""Gets the condoperationroles of this FlavorExtraSpec.
 
         允许的角色 匹配的用户标签（roles的op_gatexxx标签）。不设置时所有用户可见
 
@@ -833,7 +833,7 @@ class FlavorExtraSpec:
 
     @condoperationroles.setter
     def condoperationroles(self, condoperationroles):
-        """Sets the condoperationroles of this FlavorExtraSpec.
+        r"""Sets the condoperationroles of this FlavorExtraSpec.
 
         允许的角色 匹配的用户标签（roles的op_gatexxx标签）。不设置时所有用户可见
 
@@ -844,7 +844,7 @@ class FlavorExtraSpec:
 
     @property
     def condspotoperationstatus(self):
-        """Gets the condspotoperationstatus of this FlavorExtraSpec.
+        r"""Gets the condspotoperationstatus of this FlavorExtraSpec.
 
         Flavor在竞价销售模式下的状态  - 不配置时等同abandon - normal，正常商用 - abandon，下线 - sellout，售罄 - obt，公测，未申请时提示申请（暂不支持） - private，私有，只给特定用户显示（暂不支持） - test，试用/免费（暂不支持） - promotion，推荐
 
@@ -855,7 +855,7 @@ class FlavorExtraSpec:
 
     @condspotoperationstatus.setter
     def condspotoperationstatus(self, condspotoperationstatus):
-        """Sets the condspotoperationstatus of this FlavorExtraSpec.
+        r"""Sets the condspotoperationstatus of this FlavorExtraSpec.
 
         Flavor在竞价销售模式下的状态  - 不配置时等同abandon - normal，正常商用 - abandon，下线 - sellout，售罄 - obt，公测，未申请时提示申请（暂不支持） - private，私有，只给特定用户显示（暂不支持） - test，试用/免费（暂不支持） - promotion，推荐
 
@@ -866,7 +866,7 @@ class FlavorExtraSpec:
 
     @property
     def condnetwork(self):
-        """Gets the condnetwork of this FlavorExtraSpec.
+        r"""Gets the condnetwork of this FlavorExtraSpec.
 
         网络约束 支持网络特性，不配置时以UI配置为准。
 
@@ -877,7 +877,7 @@ class FlavorExtraSpec:
 
     @condnetwork.setter
     def condnetwork(self, condnetwork):
-        """Sets the condnetwork of this FlavorExtraSpec.
+        r"""Sets the condnetwork of this FlavorExtraSpec.
 
         网络约束 支持网络特性，不配置时以UI配置为准。
 
@@ -888,7 +888,7 @@ class FlavorExtraSpec:
 
     @property
     def condstorage(self):
-        """Gets the condstorage of this FlavorExtraSpec.
+        r"""Gets the condstorage of this FlavorExtraSpec.
 
         存储约束  - 支持磁盘特性，不配置时以UI配置为准。 - scsi，支持scsi - localdisk，支持本地盘 - ib，支持ib
 
@@ -899,7 +899,7 @@ class FlavorExtraSpec:
 
     @condstorage.setter
     def condstorage(self, condstorage):
-        """Sets the condstorage of this FlavorExtraSpec.
+        r"""Sets the condstorage of this FlavorExtraSpec.
 
         存储约束  - 支持磁盘特性，不配置时以UI配置为准。 - scsi，支持scsi - localdisk，支持本地盘 - ib，支持ib
 
@@ -910,7 +910,7 @@ class FlavorExtraSpec:
 
     @property
     def condstoragetype(self):
-        """Gets the condstoragetype of this FlavorExtraSpec.
+        r"""Gets the condstoragetype of this FlavorExtraSpec.
 
         存储约束  - 支持磁盘特性，不配置时以UI配置为准。
 
@@ -921,7 +921,7 @@ class FlavorExtraSpec:
 
     @condstoragetype.setter
     def condstoragetype(self, condstoragetype):
-        """Sets the condstoragetype of this FlavorExtraSpec.
+        r"""Sets the condstoragetype of this FlavorExtraSpec.
 
         存储约束  - 支持磁盘特性，不配置时以UI配置为准。
 
@@ -932,7 +932,7 @@ class FlavorExtraSpec:
 
     @property
     def condcomputelive_resizable(self):
-        """Gets the condcomputelive_resizable of this FlavorExtraSpec.
+        r"""Gets the condcomputelive_resizable of this FlavorExtraSpec.
 
         计算约束  - true，支持在线扩容。 - false或不存在该字段，不支持在线扩容。
 
@@ -943,7 +943,7 @@ class FlavorExtraSpec:
 
     @condcomputelive_resizable.setter
     def condcomputelive_resizable(self, condcomputelive_resizable):
-        """Sets the condcomputelive_resizable of this FlavorExtraSpec.
+        r"""Sets the condcomputelive_resizable of this FlavorExtraSpec.
 
         计算约束  - true，支持在线扩容。 - false或不存在该字段，不支持在线扩容。
 
@@ -954,7 +954,7 @@ class FlavorExtraSpec:
 
     @property
     def condcompute(self):
-        """Gets the condcompute of this FlavorExtraSpec.
+        r"""Gets the condcompute of this FlavorExtraSpec.
 
         计算约束  - autorecovery，自动恢复特性。 - 不存在该字段，不支持自动恢复。
 
@@ -965,7 +965,7 @@ class FlavorExtraSpec:
 
     @condcompute.setter
     def condcompute(self, condcompute):
-        """Sets the condcompute of this FlavorExtraSpec.
+        r"""Sets the condcompute of this FlavorExtraSpec.
 
         计算约束  - autorecovery，自动恢复特性。 - 不存在该字段，不支持自动恢复。
 
@@ -976,7 +976,7 @@ class FlavorExtraSpec:
 
     @property
     def infogpuname(self):
-        """Gets the infogpuname of this FlavorExtraSpec.
+        r"""Gets the infogpuname of this FlavorExtraSpec.
 
         
 
@@ -987,7 +987,7 @@ class FlavorExtraSpec:
 
     @infogpuname.setter
     def infogpuname(self, infogpuname):
-        """Sets the infogpuname of this FlavorExtraSpec.
+        r"""Sets the infogpuname of this FlavorExtraSpec.
 
         
 
@@ -998,7 +998,7 @@ class FlavorExtraSpec:
 
     @property
     def infocpuname(self):
-        """Gets the infocpuname of this FlavorExtraSpec.
+        r"""Gets the infocpuname of this FlavorExtraSpec.
 
         
 
@@ -1009,7 +1009,7 @@ class FlavorExtraSpec:
 
     @infocpuname.setter
     def infocpuname(self, infocpuname):
-        """Sets the infocpuname of this FlavorExtraSpec.
+        r"""Sets the infocpuname of this FlavorExtraSpec.
 
         
 
@@ -1020,7 +1020,7 @@ class FlavorExtraSpec:
 
     @property
     def quotagpu(self):
-        """Gets the quotagpu of this FlavorExtraSpec.
+        r"""Gets the quotagpu of this FlavorExtraSpec.
 
         
 
@@ -1031,7 +1031,7 @@ class FlavorExtraSpec:
 
     @quotagpu.setter
     def quotagpu(self, quotagpu):
-        """Sets the quotagpu of this FlavorExtraSpec.
+        r"""Sets the quotagpu of this FlavorExtraSpec.
 
         
 
@@ -1042,7 +1042,7 @@ class FlavorExtraSpec:
 
     @property
     def quotavif_max_num(self):
-        """Gets the quotavif_max_num of this FlavorExtraSpec.
+        r"""Gets the quotavif_max_num of this FlavorExtraSpec.
 
         最多支持的弹性网卡个数
 
@@ -1053,7 +1053,7 @@ class FlavorExtraSpec:
 
     @quotavif_max_num.setter
     def quotavif_max_num(self, quotavif_max_num):
-        """Sets the quotavif_max_num of this FlavorExtraSpec.
+        r"""Sets the quotavif_max_num of this FlavorExtraSpec.
 
         最多支持的弹性网卡个数
 
@@ -1064,7 +1064,7 @@ class FlavorExtraSpec:
 
     @property
     def quotasub_network_interface_max_num(self):
-        """Gets the quotasub_network_interface_max_num of this FlavorExtraSpec.
+        r"""Gets the quotasub_network_interface_max_num of this FlavorExtraSpec.
 
         最多支持的辅助弹性网卡个数
 
@@ -1075,7 +1075,7 @@ class FlavorExtraSpec:
 
     @quotasub_network_interface_max_num.setter
     def quotasub_network_interface_max_num(self, quotasub_network_interface_max_num):
-        """Sets the quotasub_network_interface_max_num of this FlavorExtraSpec.
+        r"""Sets the quotasub_network_interface_max_num of this FlavorExtraSpec.
 
         最多支持的辅助弹性网卡个数
 
@@ -1086,7 +1086,7 @@ class FlavorExtraSpec:
 
     @property
     def ecsinstance_architecture(self):
-        """Gets the ecsinstance_architecture of this FlavorExtraSpec.
+        r"""Gets the ecsinstance_architecture of this FlavorExtraSpec.
 
         该规格对应的CPU架构，且仅鲲鹏实例架构规格返回该字段  - 取值为arm64表示CPU架构为鲲鹏计算。
 
@@ -1097,7 +1097,7 @@ class FlavorExtraSpec:
 
     @ecsinstance_architecture.setter
     def ecsinstance_architecture(self, ecsinstance_architecture):
-        """Sets the ecsinstance_architecture of this FlavorExtraSpec.
+        r"""Sets the ecsinstance_architecture of this FlavorExtraSpec.
 
         该规格对应的CPU架构，且仅鲲鹏实例架构规格返回该字段  - 取值为arm64表示CPU架构为鲲鹏计算。
 
@@ -1108,7 +1108,7 @@ class FlavorExtraSpec:
 
     @property
     def network_interfacetraffic_mirroring_supported(self):
-        """Gets the network_interfacetraffic_mirroring_supported of this FlavorExtraSpec.
+        r"""Gets the network_interfacetraffic_mirroring_supported of this FlavorExtraSpec.
 
         该规格是否支持流量镜像。
 
@@ -1119,7 +1119,7 @@ class FlavorExtraSpec:
 
     @network_interfacetraffic_mirroring_supported.setter
     def network_interfacetraffic_mirroring_supported(self, network_interfacetraffic_mirroring_supported):
-        """Sets the network_interfacetraffic_mirroring_supported of this FlavorExtraSpec.
+        r"""Sets the network_interfacetraffic_mirroring_supported of this FlavorExtraSpec.
 
         该规格是否支持流量镜像。
 
@@ -1130,7 +1130,7 @@ class FlavorExtraSpec:
 
     @property
     def securityenclave_supported(self):
-        """Gets the securityenclave_supported of this FlavorExtraSpec.
+        r"""Gets the securityenclave_supported of this FlavorExtraSpec.
 
         该规格是否支持QingTian Enclave。
 
@@ -1141,7 +1141,7 @@ class FlavorExtraSpec:
 
     @securityenclave_supported.setter
     def securityenclave_supported(self, securityenclave_supported):
-        """Sets the securityenclave_supported of this FlavorExtraSpec.
+        r"""Sets the securityenclave_supported of this FlavorExtraSpec.
 
         该规格是否支持QingTian Enclave。
 
@@ -1152,7 +1152,7 @@ class FlavorExtraSpec:
 
     @property
     def infogpus(self):
-        """Gets the infogpus of this FlavorExtraSpec.
+        r"""Gets the infogpus of this FlavorExtraSpec.
 
         该规格的GPU卡信息。  name：GPU名称 memory_mb：GPU显存大小 count：GPU显卡数量 alias_prefix：GPU显卡内部别名
 
@@ -1163,7 +1163,7 @@ class FlavorExtraSpec:
 
     @infogpus.setter
     def infogpus(self, infogpus):
-        """Sets the infogpus of this FlavorExtraSpec.
+        r"""Sets the infogpus of this FlavorExtraSpec.
 
         该规格的GPU卡信息。  name：GPU名称 memory_mb：GPU显存大小 count：GPU显卡数量 alias_prefix：GPU显卡内部别名
 
@@ -1174,7 +1174,7 @@ class FlavorExtraSpec:
 
     @property
     def infoasic_accelerators(self):
-        """Gets the infoasic_accelerators of this FlavorExtraSpec.
+        r"""Gets the infoasic_accelerators of this FlavorExtraSpec.
 
         该规格的加速器信息。  name：加速器名称 memory_mb：加速器显存大小 count：加速器显卡数量 alias_prefix：加速器显卡内部别名
 
@@ -1185,7 +1185,7 @@ class FlavorExtraSpec:
 
     @infoasic_accelerators.setter
     def infoasic_accelerators(self, infoasic_accelerators):
-        """Sets the infoasic_accelerators of this FlavorExtraSpec.
+        r"""Sets the infoasic_accelerators of this FlavorExtraSpec.
 
         该规格的加速器信息。  name：加速器名称 memory_mb：加速器显存大小 count：加速器显卡数量 alias_prefix：加速器显卡内部别名
 

@@ -29,7 +29,7 @@ class DeleteObject:
     }
 
     def __init__(self, key=None, version_id=None):
-        """DeleteObject
+        r"""DeleteObject
 
         The model defined in huaweicloud sdk
 
@@ -52,7 +52,7 @@ class DeleteObject:
 
     @property
     def key(self):
-        """Gets the key of this DeleteObject.
+        r"""Gets the key of this DeleteObject.
 
         Key of the object to be deleted. If **EncodingType** is specified, the object key must be encoded as configured.
 
@@ -63,7 +63,7 @@ class DeleteObject:
 
     @key.setter
     def key(self, key):
-        """Sets the key of this DeleteObject.
+        r"""Sets the key of this DeleteObject.
 
         Key of the object to be deleted. If **EncodingType** is specified, the object key must be encoded as configured.
 
@@ -74,7 +74,7 @@ class DeleteObject:
 
     @property
     def version_id(self):
-        """Gets the version_id of this DeleteObject.
+        r"""Gets the version_id of this DeleteObject.
 
         Version ID of the object to be deleted
 
@@ -85,7 +85,7 @@ class DeleteObject:
 
     @version_id.setter
     def version_id(self, version_id):
-        """Sets the version_id of this DeleteObject.
+        r"""Sets the version_id of this DeleteObject.
 
         Version ID of the object to be deleted
 

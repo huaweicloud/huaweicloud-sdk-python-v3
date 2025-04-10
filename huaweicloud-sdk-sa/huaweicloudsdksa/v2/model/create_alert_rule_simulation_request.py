@@ -29,7 +29,7 @@ class CreateAlertRuleSimulationRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, body=None):
-        """CreateAlertRuleSimulationRequest
+        r"""CreateAlertRuleSimulationRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateAlertRuleSimulationRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CreateAlertRuleSimulationRequest.
+        r"""Gets the project_id of this CreateAlertRuleSimulationRequest.
 
         project_id
 
@@ -66,7 +66,7 @@ class CreateAlertRuleSimulationRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CreateAlertRuleSimulationRequest.
+        r"""Sets the project_id of this CreateAlertRuleSimulationRequest.
 
         project_id
 
@@ -77,7 +77,7 @@ class CreateAlertRuleSimulationRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this CreateAlertRuleSimulationRequest.
+        r"""Gets the workspace_id of this CreateAlertRuleSimulationRequest.
 
         workspace_id
 
@@ -88,7 +88,7 @@ class CreateAlertRuleSimulationRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this CreateAlertRuleSimulationRequest.
+        r"""Sets the workspace_id of this CreateAlertRuleSimulationRequest.
 
         workspace_id
 
@@ -99,7 +99,7 @@ class CreateAlertRuleSimulationRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAlertRuleSimulationRequest.
+        r"""Gets the body of this CreateAlertRuleSimulationRequest.
 
         :return: The body of this CreateAlertRuleSimulationRequest.
         :rtype: :class:`huaweicloudsdksa.v2.CreateAlertRuleSimulationRequestBody`
@@ -108,7 +108,7 @@ class CreateAlertRuleSimulationRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAlertRuleSimulationRequest.
+        r"""Sets the body of this CreateAlertRuleSimulationRequest.
 
         :param body: The body of this CreateAlertRuleSimulationRequest.
         :type body: :class:`huaweicloudsdksa.v2.CreateAlertRuleSimulationRequestBody`

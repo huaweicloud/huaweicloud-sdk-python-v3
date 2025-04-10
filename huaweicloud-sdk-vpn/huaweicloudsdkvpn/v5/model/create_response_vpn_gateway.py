@@ -67,7 +67,7 @@ class CreateResponseVpnGateway:
     }
 
     def __init__(self, id=None, name=None, attachment_type=None, ip_version=None, certificate_id=None, er_id=None, vpc_id=None, local_subnets=None, local_subnets_v6=None, connect_subnet=None, network_type=None, access_vpc_id=None, access_subnet_id=None, bgp_asn=None, flavor=None, connection_number=None, used_connection_number=None, used_connection_group=None, enterprise_project_id=None, ha_mode=None, policy_template=None, tags=None):
-        """CreateResponseVpnGateway
+        r"""CreateResponseVpnGateway
 
         The model defined in huaweicloud sdk
 
@@ -190,7 +190,7 @@ class CreateResponseVpnGateway:
 
     @property
     def id(self):
-        """Gets the id of this CreateResponseVpnGateway.
+        r"""Gets the id of this CreateResponseVpnGateway.
 
         VPN网关ID
 
@@ -201,7 +201,7 @@ class CreateResponseVpnGateway:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateResponseVpnGateway.
+        r"""Sets the id of this CreateResponseVpnGateway.
 
         VPN网关ID
 
@@ -212,7 +212,7 @@ class CreateResponseVpnGateway:
 
     @property
     def name(self):
-        """Gets the name of this CreateResponseVpnGateway.
+        r"""Gets the name of this CreateResponseVpnGateway.
 
         VPN网关名称
 
@@ -223,7 +223,7 @@ class CreateResponseVpnGateway:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateResponseVpnGateway.
+        r"""Sets the name of this CreateResponseVpnGateway.
 
         VPN网关名称
 
@@ -234,7 +234,7 @@ class CreateResponseVpnGateway:
 
     @property
     def attachment_type(self):
-        """Gets the attachment_type of this CreateResponseVpnGateway.
+        r"""Gets the attachment_type of this CreateResponseVpnGateway.
 
         关联模式
 
@@ -245,7 +245,7 @@ class CreateResponseVpnGateway:
 
     @attachment_type.setter
     def attachment_type(self, attachment_type):
-        """Sets the attachment_type of this CreateResponseVpnGateway.
+        r"""Sets the attachment_type of this CreateResponseVpnGateway.
 
         关联模式
 
@@ -256,7 +256,7 @@ class CreateResponseVpnGateway:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this CreateResponseVpnGateway.
+        r"""Gets the ip_version of this CreateResponseVpnGateway.
 
         网关的IP协议版本
 
@@ -267,7 +267,7 @@ class CreateResponseVpnGateway:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this CreateResponseVpnGateway.
+        r"""Sets the ip_version of this CreateResponseVpnGateway.
 
         网关的IP协议版本
 
@@ -278,7 +278,7 @@ class CreateResponseVpnGateway:
 
     @property
     def certificate_id(self):
-        """Gets the certificate_id of this CreateResponseVpnGateway.
+        r"""Gets the certificate_id of this CreateResponseVpnGateway.
 
         :return: The certificate_id of this CreateResponseVpnGateway.
         :rtype: str
@@ -287,7 +287,7 @@ class CreateResponseVpnGateway:
 
     @certificate_id.setter
     def certificate_id(self, certificate_id):
-        """Sets the certificate_id of this CreateResponseVpnGateway.
+        r"""Sets the certificate_id of this CreateResponseVpnGateway.
 
         :param certificate_id: The certificate_id of this CreateResponseVpnGateway.
         :type certificate_id: str
@@ -296,7 +296,7 @@ class CreateResponseVpnGateway:
 
     @property
     def er_id(self):
-        """Gets the er_id of this CreateResponseVpnGateway.
+        r"""Gets the er_id of this CreateResponseVpnGateway.
 
         VPN网关所连接的ER实例的ID
 
@@ -307,7 +307,7 @@ class CreateResponseVpnGateway:
 
     @er_id.setter
     def er_id(self, er_id):
-        """Sets the er_id of this CreateResponseVpnGateway.
+        r"""Sets the er_id of this CreateResponseVpnGateway.
 
         VPN网关所连接的ER实例的ID
 
@@ -318,7 +318,7 @@ class CreateResponseVpnGateway:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this CreateResponseVpnGateway.
+        r"""Gets the vpc_id of this CreateResponseVpnGateway.
 
         VPN网关所连接的VPC的ID
 
@@ -329,7 +329,7 @@ class CreateResponseVpnGateway:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this CreateResponseVpnGateway.
+        r"""Sets the vpc_id of this CreateResponseVpnGateway.
 
         VPN网关所连接的VPC的ID
 
@@ -340,7 +340,7 @@ class CreateResponseVpnGateway:
 
     @property
     def local_subnets(self):
-        """Gets the local_subnets of this CreateResponseVpnGateway.
+        r"""Gets the local_subnets of this CreateResponseVpnGateway.
 
         本端子网
 
@@ -351,7 +351,7 @@ class CreateResponseVpnGateway:
 
     @local_subnets.setter
     def local_subnets(self, local_subnets):
-        """Sets the local_subnets of this CreateResponseVpnGateway.
+        r"""Sets the local_subnets of this CreateResponseVpnGateway.
 
         本端子网
 
@@ -362,7 +362,7 @@ class CreateResponseVpnGateway:
 
     @property
     def local_subnets_v6(self):
-        """Gets the local_subnets_v6 of this CreateResponseVpnGateway.
+        r"""Gets the local_subnets_v6 of this CreateResponseVpnGateway.
 
         使能ipv6的本端子网
 
@@ -373,7 +373,7 @@ class CreateResponseVpnGateway:
 
     @local_subnets_v6.setter
     def local_subnets_v6(self, local_subnets_v6):
-        """Sets the local_subnets_v6 of this CreateResponseVpnGateway.
+        r"""Sets the local_subnets_v6 of this CreateResponseVpnGateway.
 
         使能ipv6的本端子网
 
@@ -384,7 +384,7 @@ class CreateResponseVpnGateway:
 
     @property
     def connect_subnet(self):
-        """Gets the connect_subnet of this CreateResponseVpnGateway.
+        r"""Gets the connect_subnet of this CreateResponseVpnGateway.
 
         VPN网关所使用的VPC子网ID
 
@@ -395,7 +395,7 @@ class CreateResponseVpnGateway:
 
     @connect_subnet.setter
     def connect_subnet(self, connect_subnet):
-        """Sets the connect_subnet of this CreateResponseVpnGateway.
+        r"""Sets the connect_subnet of this CreateResponseVpnGateway.
 
         VPN网关所使用的VPC子网ID
 
@@ -406,7 +406,7 @@ class CreateResponseVpnGateway:
 
     @property
     def network_type(self):
-        """Gets the network_type of this CreateResponseVpnGateway.
+        r"""Gets the network_type of this CreateResponseVpnGateway.
 
         VPN网关的网络类型，默认为公网(public)
 
@@ -417,7 +417,7 @@ class CreateResponseVpnGateway:
 
     @network_type.setter
     def network_type(self, network_type):
-        """Sets the network_type of this CreateResponseVpnGateway.
+        r"""Sets the network_type of this CreateResponseVpnGateway.
 
         VPN网关的网络类型，默认为公网(public)
 
@@ -428,7 +428,7 @@ class CreateResponseVpnGateway:
 
     @property
     def access_vpc_id(self):
-        """Gets the access_vpc_id of this CreateResponseVpnGateway.
+        r"""Gets the access_vpc_id of this CreateResponseVpnGateway.
 
         VPN网关北向接入VPC ID，不填时默认使用vpc_id字段的值
 
@@ -439,7 +439,7 @@ class CreateResponseVpnGateway:
 
     @access_vpc_id.setter
     def access_vpc_id(self, access_vpc_id):
-        """Sets the access_vpc_id of this CreateResponseVpnGateway.
+        r"""Sets the access_vpc_id of this CreateResponseVpnGateway.
 
         VPN网关北向接入VPC ID，不填时默认使用vpc_id字段的值
 
@@ -450,7 +450,7 @@ class CreateResponseVpnGateway:
 
     @property
     def access_subnet_id(self):
-        """Gets the access_subnet_id of this CreateResponseVpnGateway.
+        r"""Gets the access_subnet_id of this CreateResponseVpnGateway.
 
         VPN网关北向接入VPC中的接入子网ID
 
@@ -461,7 +461,7 @@ class CreateResponseVpnGateway:
 
     @access_subnet_id.setter
     def access_subnet_id(self, access_subnet_id):
-        """Sets the access_subnet_id of this CreateResponseVpnGateway.
+        r"""Sets the access_subnet_id of this CreateResponseVpnGateway.
 
         VPN网关北向接入VPC中的接入子网ID
 
@@ -472,7 +472,7 @@ class CreateResponseVpnGateway:
 
     @property
     def bgp_asn(self):
-        """Gets the bgp_asn of this CreateResponseVpnGateway.
+        r"""Gets the bgp_asn of this CreateResponseVpnGateway.
 
         bgp所使用的asn号
 
@@ -483,7 +483,7 @@ class CreateResponseVpnGateway:
 
     @bgp_asn.setter
     def bgp_asn(self, bgp_asn):
-        """Sets the bgp_asn of this CreateResponseVpnGateway.
+        r"""Sets the bgp_asn of this CreateResponseVpnGateway.
 
         bgp所使用的asn号
 
@@ -494,7 +494,7 @@ class CreateResponseVpnGateway:
 
     @property
     def flavor(self):
-        """Gets the flavor of this CreateResponseVpnGateway.
+        r"""Gets the flavor of this CreateResponseVpnGateway.
 
         VPN网关的规格类型
 
@@ -505,7 +505,7 @@ class CreateResponseVpnGateway:
 
     @flavor.setter
     def flavor(self, flavor):
-        """Sets the flavor of this CreateResponseVpnGateway.
+        r"""Sets the flavor of this CreateResponseVpnGateway.
 
         VPN网关的规格类型
 
@@ -516,7 +516,7 @@ class CreateResponseVpnGateway:
 
     @property
     def connection_number(self):
-        """Gets the connection_number of this CreateResponseVpnGateway.
+        r"""Gets the connection_number of this CreateResponseVpnGateway.
 
         最大可创建的VPN连接数
 
@@ -527,7 +527,7 @@ class CreateResponseVpnGateway:
 
     @connection_number.setter
     def connection_number(self, connection_number):
-        """Sets the connection_number of this CreateResponseVpnGateway.
+        r"""Sets the connection_number of this CreateResponseVpnGateway.
 
         最大可创建的VPN连接数
 
@@ -538,7 +538,7 @@ class CreateResponseVpnGateway:
 
     @property
     def used_connection_number(self):
-        """Gets the used_connection_number of this CreateResponseVpnGateway.
+        r"""Gets the used_connection_number of this CreateResponseVpnGateway.
 
         当前已经使用的VPN连接数
 
@@ -549,7 +549,7 @@ class CreateResponseVpnGateway:
 
     @used_connection_number.setter
     def used_connection_number(self, used_connection_number):
-        """Sets the used_connection_number of this CreateResponseVpnGateway.
+        r"""Sets the used_connection_number of this CreateResponseVpnGateway.
 
         当前已经使用的VPN连接数
 
@@ -560,7 +560,7 @@ class CreateResponseVpnGateway:
 
     @property
     def used_connection_group(self):
-        """Gets the used_connection_group of this CreateResponseVpnGateway.
+        r"""Gets the used_connection_group of this CreateResponseVpnGateway.
 
         当前已经使用的VPN连接组个数
 
@@ -571,7 +571,7 @@ class CreateResponseVpnGateway:
 
     @used_connection_group.setter
     def used_connection_group(self, used_connection_group):
-        """Sets the used_connection_group of this CreateResponseVpnGateway.
+        r"""Sets the used_connection_group of this CreateResponseVpnGateway.
 
         当前已经使用的VPN连接组个数
 
@@ -582,7 +582,7 @@ class CreateResponseVpnGateway:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateResponseVpnGateway.
+        r"""Gets the enterprise_project_id of this CreateResponseVpnGateway.
 
         企业项目ID
 
@@ -593,7 +593,7 @@ class CreateResponseVpnGateway:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateResponseVpnGateway.
+        r"""Sets the enterprise_project_id of this CreateResponseVpnGateway.
 
         企业项目ID
 
@@ -604,7 +604,7 @@ class CreateResponseVpnGateway:
 
     @property
     def ha_mode(self):
-        """Gets the ha_mode of this CreateResponseVpnGateway.
+        r"""Gets the ha_mode of this CreateResponseVpnGateway.
 
         ha模式
 
@@ -615,7 +615,7 @@ class CreateResponseVpnGateway:
 
     @ha_mode.setter
     def ha_mode(self, ha_mode):
-        """Sets the ha_mode of this CreateResponseVpnGateway.
+        r"""Sets the ha_mode of this CreateResponseVpnGateway.
 
         ha模式
 
@@ -626,7 +626,7 @@ class CreateResponseVpnGateway:
 
     @property
     def policy_template(self):
-        """Gets the policy_template of this CreateResponseVpnGateway.
+        r"""Gets the policy_template of this CreateResponseVpnGateway.
 
         :return: The policy_template of this CreateResponseVpnGateway.
         :rtype: :class:`huaweicloudsdkvpn.v5.PolicyTemplate`
@@ -635,7 +635,7 @@ class CreateResponseVpnGateway:
 
     @policy_template.setter
     def policy_template(self, policy_template):
-        """Sets the policy_template of this CreateResponseVpnGateway.
+        r"""Sets the policy_template of this CreateResponseVpnGateway.
 
         :param policy_template: The policy_template of this CreateResponseVpnGateway.
         :type policy_template: :class:`huaweicloudsdkvpn.v5.PolicyTemplate`
@@ -644,7 +644,7 @@ class CreateResponseVpnGateway:
 
     @property
     def tags(self):
-        """Gets the tags of this CreateResponseVpnGateway.
+        r"""Gets the tags of this CreateResponseVpnGateway.
 
         标签
 
@@ -655,7 +655,7 @@ class CreateResponseVpnGateway:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CreateResponseVpnGateway.
+        r"""Sets the tags of this CreateResponseVpnGateway.
 
         标签
 

@@ -33,7 +33,7 @@ class Auditlog:
     }
 
     def __init__(self, id=None, name=None, size=None, begin_time=None, end_time=None):
-        """Auditlog
+        r"""Auditlog
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class Auditlog:
 
     @property
     def id(self):
-        """Gets the id of this Auditlog.
+        r"""Gets the id of this Auditlog.
 
         审计日志ID。
 
@@ -82,7 +82,7 @@ class Auditlog:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Auditlog.
+        r"""Sets the id of this Auditlog.
 
         审计日志ID。
 
@@ -93,7 +93,7 @@ class Auditlog:
 
     @property
     def name(self):
-        """Gets the name of this Auditlog.
+        r"""Gets the name of this Auditlog.
 
         审计日志文件名。
 
@@ -104,7 +104,7 @@ class Auditlog:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Auditlog.
+        r"""Sets the name of this Auditlog.
 
         审计日志文件名。
 
@@ -115,7 +115,7 @@ class Auditlog:
 
     @property
     def size(self):
-        """Gets the size of this Auditlog.
+        r"""Gets the size of this Auditlog.
 
         审计日志大小，单位：KB。
 
@@ -126,7 +126,7 @@ class Auditlog:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this Auditlog.
+        r"""Sets the size of this Auditlog.
 
         审计日志大小，单位：KB。
 
@@ -137,7 +137,7 @@ class Auditlog:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this Auditlog.
+        r"""Gets the begin_time of this Auditlog.
 
         审计日志开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始，Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -148,7 +148,7 @@ class Auditlog:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this Auditlog.
+        r"""Sets the begin_time of this Auditlog.
 
         审计日志开始时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始，Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -159,7 +159,7 @@ class Auditlog:
 
     @property
     def end_time(self):
-        """Gets the end_time of this Auditlog.
+        r"""Gets the end_time of this Auditlog.
 
         审计日志结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始，Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -170,7 +170,7 @@ class Auditlog:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this Auditlog.
+        r"""Sets the end_time of this Auditlog.
 
         审计日志结束时间，格式为“yyyy-mm-ddThh:mm:ssZ”。  其中，T指某个时间的开始，Z指时区偏移量，例如北京时间偏移显示为+0800。
 

@@ -31,7 +31,7 @@ class SqlJobRunResponseBody:
     }
 
     def __init__(self, sql_type=None, schema=None, rows=None, job_mode=None):
-        """SqlJobRunResponseBody
+        r"""SqlJobRunResponseBody
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class SqlJobRunResponseBody:
 
     @property
     def sql_type(self):
-        """Gets the sql_type of this SqlJobRunResponseBody.
+        r"""Gets the sql_type of this SqlJobRunResponseBody.
 
         作业类型。DDL, DCL, IMPORT, EXPORT, QUERY, INSERT.
 
@@ -74,7 +74,7 @@ class SqlJobRunResponseBody:
 
     @sql_type.setter
     def sql_type(self, sql_type):
-        """Sets the sql_type of this SqlJobRunResponseBody.
+        r"""Sets the sql_type of this SqlJobRunResponseBody.
 
         作业类型。DDL, DCL, IMPORT, EXPORT, QUERY, INSERT.
 
@@ -85,7 +85,7 @@ class SqlJobRunResponseBody:
 
     @property
     def schema(self):
-        """Gets the schema of this SqlJobRunResponseBody.
+        r"""Gets the schema of this SqlJobRunResponseBody.
 
         当语句类型为DDL时，返回其结果的列名称及类型。
 
@@ -96,7 +96,7 @@ class SqlJobRunResponseBody:
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this SqlJobRunResponseBody.
+        r"""Sets the schema of this SqlJobRunResponseBody.
 
         当语句类型为DDL时，返回其结果的列名称及类型。
 
@@ -107,7 +107,7 @@ class SqlJobRunResponseBody:
 
     @property
     def rows(self):
-        """Gets the rows of this SqlJobRunResponseBody.
+        r"""Gets the rows of this SqlJobRunResponseBody.
 
         当语句类型为DDL时，直接返回其执行结果。
 
@@ -118,7 +118,7 @@ class SqlJobRunResponseBody:
 
     @rows.setter
     def rows(self, rows):
-        """Sets the rows of this SqlJobRunResponseBody.
+        r"""Sets the rows of this SqlJobRunResponseBody.
 
         当语句类型为DDL时，直接返回其执行结果。
 
@@ -129,7 +129,7 @@ class SqlJobRunResponseBody:
 
     @property
     def job_mode(self):
-        """Gets the job_mode of this SqlJobRunResponseBody.
+        r"""Gets the job_mode of this SqlJobRunResponseBody.
 
         作业执行模式：async: 异步; sync: 同步。
 
@@ -140,7 +140,7 @@ class SqlJobRunResponseBody:
 
     @job_mode.setter
     def job_mode(self, job_mode):
-        """Sets the job_mode of this SqlJobRunResponseBody.
+        r"""Sets the job_mode of this SqlJobRunResponseBody.
 
         作业执行模式：async: 异步; sync: 同步。
 

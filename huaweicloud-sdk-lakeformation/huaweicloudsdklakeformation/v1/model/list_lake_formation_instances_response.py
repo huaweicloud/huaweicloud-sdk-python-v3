@@ -30,7 +30,7 @@ class ListLakeFormationInstancesResponse(SdkResponse):
     }
 
     def __init__(self, instances=None, total=None, x_request_id=None):
-        """ListLakeFormationInstancesResponse
+        r"""ListLakeFormationInstancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListLakeFormationInstancesResponse(SdkResponse):
 
     @property
     def instances(self):
-        """Gets the instances of this ListLakeFormationInstancesResponse.
+        r"""Gets the instances of this ListLakeFormationInstancesResponse.
 
         LakeFormation实例列表
 
@@ -69,7 +69,7 @@ class ListLakeFormationInstancesResponse(SdkResponse):
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this ListLakeFormationInstancesResponse.
+        r"""Sets the instances of this ListLakeFormationInstancesResponse.
 
         LakeFormation实例列表
 
@@ -80,7 +80,7 @@ class ListLakeFormationInstancesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListLakeFormationInstancesResponse.
+        r"""Gets the total of this ListLakeFormationInstancesResponse.
 
         LakeFormation实例总数
 
@@ -91,7 +91,7 @@ class ListLakeFormationInstancesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListLakeFormationInstancesResponse.
+        r"""Sets the total of this ListLakeFormationInstancesResponse.
 
         LakeFormation实例总数
 
@@ -102,7 +102,7 @@ class ListLakeFormationInstancesResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ListLakeFormationInstancesResponse.
+        r"""Gets the x_request_id of this ListLakeFormationInstancesResponse.
 
         :return: The x_request_id of this ListLakeFormationInstancesResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class ListLakeFormationInstancesResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ListLakeFormationInstancesResponse.
+        r"""Sets the x_request_id of this ListLakeFormationInstancesResponse.
 
         :param x_request_id: The x_request_id of this ListLakeFormationInstancesResponse.
         :type x_request_id: str

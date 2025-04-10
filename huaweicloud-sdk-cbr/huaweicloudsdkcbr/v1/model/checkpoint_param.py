@@ -37,7 +37,7 @@ class CheckpointParam:
     }
 
     def __init__(self, auto_trigger=None, description=None, incremental=None, name=None, resources=None, resource_details=None, policy_id=None):
-        """CheckpointParam
+        r"""CheckpointParam
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class CheckpointParam:
 
     @property
     def auto_trigger(self):
-        """Gets the auto_trigger of this CheckpointParam.
+        r"""Gets the auto_trigger of this CheckpointParam.
 
         是否自动触发,true:自动触发，false：非自动触发。
 
@@ -96,7 +96,7 @@ class CheckpointParam:
 
     @auto_trigger.setter
     def auto_trigger(self, auto_trigger):
-        """Sets the auto_trigger of this CheckpointParam.
+        r"""Sets the auto_trigger of this CheckpointParam.
 
         是否自动触发,true:自动触发，false：非自动触发。
 
@@ -107,7 +107,7 @@ class CheckpointParam:
 
     @property
     def description(self):
-        """Gets the description of this CheckpointParam.
+        r"""Gets the description of this CheckpointParam.
 
         备份描述
 
@@ -118,7 +118,7 @@ class CheckpointParam:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CheckpointParam.
+        r"""Sets the description of this CheckpointParam.
 
         备份描述
 
@@ -129,7 +129,7 @@ class CheckpointParam:
 
     @property
     def incremental(self):
-        """Gets the incremental of this CheckpointParam.
+        r"""Gets the incremental of this CheckpointParam.
 
         是否增量备份，true:增量备份，false：非增量备份。
 
@@ -140,7 +140,7 @@ class CheckpointParam:
 
     @incremental.setter
     def incremental(self, incremental):
-        """Sets the incremental of this CheckpointParam.
+        r"""Sets the incremental of this CheckpointParam.
 
         是否增量备份，true:增量备份，false：非增量备份。
 
@@ -151,7 +151,7 @@ class CheckpointParam:
 
     @property
     def name(self):
-        """Gets the name of this CheckpointParam.
+        r"""Gets the name of this CheckpointParam.
 
         备份名称
 
@@ -162,7 +162,7 @@ class CheckpointParam:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CheckpointParam.
+        r"""Sets the name of this CheckpointParam.
 
         备份名称
 
@@ -173,7 +173,7 @@ class CheckpointParam:
 
     @property
     def resources(self):
-        """Gets the resources of this CheckpointParam.
+        r"""Gets the resources of this CheckpointParam.
 
         待备份的资源id列表:uuid
 
@@ -184,7 +184,7 @@ class CheckpointParam:
 
     @resources.setter
     def resources(self, resources):
-        """Sets the resources of this CheckpointParam.
+        r"""Sets the resources of this CheckpointParam.
 
         待备份的资源id列表:uuid
 
@@ -195,7 +195,7 @@ class CheckpointParam:
 
     @property
     def resource_details(self):
-        """Gets the resource_details of this CheckpointParam.
+        r"""Gets the resource_details of this CheckpointParam.
 
         资源详情
 
@@ -206,7 +206,7 @@ class CheckpointParam:
 
     @resource_details.setter
     def resource_details(self, resource_details):
-        """Sets the resource_details of this CheckpointParam.
+        r"""Sets the resource_details of this CheckpointParam.
 
         资源详情
 
@@ -217,7 +217,7 @@ class CheckpointParam:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this CheckpointParam.
+        r"""Gets the policy_id of this CheckpointParam.
 
         自动备份时的策略id
 
@@ -228,7 +228,7 @@ class CheckpointParam:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this CheckpointParam.
+        r"""Sets the policy_id of this CheckpointParam.
 
         自动备份时的策略id
 

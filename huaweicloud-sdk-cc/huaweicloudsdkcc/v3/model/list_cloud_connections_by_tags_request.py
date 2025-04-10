@@ -25,7 +25,7 @@ class ListCloudConnectionsByTagsRequest:
     }
 
     def __init__(self, body=None):
-        """ListCloudConnectionsByTagsRequest
+        r"""ListCloudConnectionsByTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListCloudConnectionsByTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListCloudConnectionsByTagsRequest.
+        r"""Gets the body of this ListCloudConnectionsByTagsRequest.
 
         :return: The body of this ListCloudConnectionsByTagsRequest.
         :rtype: :class:`huaweicloudsdkcc.v3.ListCloudConnectionsByTagsRequestBody`
@@ -52,7 +52,7 @@ class ListCloudConnectionsByTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListCloudConnectionsByTagsRequest.
+        r"""Sets the body of this ListCloudConnectionsByTagsRequest.
 
         :param body: The body of this ListCloudConnectionsByTagsRequest.
         :type body: :class:`huaweicloudsdkcc.v3.ListCloudConnectionsByTagsRequestBody`

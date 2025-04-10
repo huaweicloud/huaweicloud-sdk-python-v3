@@ -28,7 +28,7 @@ class CreateMetaStudioOrdersResponse(SdkResponse):
     }
 
     def __init__(self, order_id=None, x_request_id=None):
-        """CreateMetaStudioOrdersResponse
+        r"""CreateMetaStudioOrdersResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class CreateMetaStudioOrdersResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this CreateMetaStudioOrdersResponse.
+        r"""Gets the order_id of this CreateMetaStudioOrdersResponse.
 
         订购的订单结果信息列表；
 
@@ -62,7 +62,7 @@ class CreateMetaStudioOrdersResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this CreateMetaStudioOrdersResponse.
+        r"""Sets the order_id of this CreateMetaStudioOrdersResponse.
 
         订购的订单结果信息列表；
 
@@ -73,7 +73,7 @@ class CreateMetaStudioOrdersResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this CreateMetaStudioOrdersResponse.
+        r"""Gets the x_request_id of this CreateMetaStudioOrdersResponse.
 
         :return: The x_request_id of this CreateMetaStudioOrdersResponse.
         :rtype: str
@@ -82,7 +82,7 @@ class CreateMetaStudioOrdersResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this CreateMetaStudioOrdersResponse.
+        r"""Sets the x_request_id of this CreateMetaStudioOrdersResponse.
 
         :param x_request_id: The x_request_id of this CreateMetaStudioOrdersResponse.
         :type x_request_id: str

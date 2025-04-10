@@ -25,7 +25,7 @@ class CreateAimSendTaskRequest:
     }
 
     def __init__(self, body=None):
-        """CreateAimSendTaskRequest
+        r"""CreateAimSendTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateAimSendTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAimSendTaskRequest.
+        r"""Gets the body of this CreateAimSendTaskRequest.
 
         :return: The body of this CreateAimSendTaskRequest.
         :rtype: :class:`huaweicloudsdkkoomessage.v1.CreateAimSendTaskRequestBody`
@@ -52,7 +52,7 @@ class CreateAimSendTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAimSendTaskRequest.
+        r"""Sets the body of this CreateAimSendTaskRequest.
 
         :param body: The body of this CreateAimSendTaskRequest.
         :type body: :class:`huaweicloudsdkkoomessage.v1.CreateAimSendTaskRequestBody`

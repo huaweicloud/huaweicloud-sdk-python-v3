@@ -25,7 +25,7 @@ class SendSmsRequest:
     }
 
     def __init__(self, body=None):
-        """SendSmsRequest
+        r"""SendSmsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class SendSmsRequest:
 
     @property
     def body(self):
-        """Gets the body of this SendSmsRequest.
+        r"""Gets the body of this SendSmsRequest.
 
         :return: The body of this SendSmsRequest.
         :rtype: :class:`huaweicloudsdkgsl.v3.CreateSendSmsReq`
@@ -52,7 +52,7 @@ class SendSmsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this SendSmsRequest.
+        r"""Sets the body of this SendSmsRequest.
 
         :param body: The body of this SendSmsRequest.
         :type body: :class:`huaweicloudsdkgsl.v3.CreateSendSmsReq`

@@ -25,7 +25,7 @@ class StartJobReq:
     }
 
     def __init__(self, job_params=None):
-        """StartJobReq
+        r"""StartJobReq
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class StartJobReq:
 
     @property
     def job_params(self):
-        """Gets the job_params of this StartJobReq.
+        r"""Gets the job_params of this StartJobReq.
 
         :return: The job_params of this StartJobReq.
         :rtype: list[:class:`huaweicloudsdkdlf.v1.JobParam`]
@@ -52,7 +52,7 @@ class StartJobReq:
 
     @job_params.setter
     def job_params(self, job_params):
-        """Sets the job_params of this StartJobReq.
+        r"""Sets the job_params of this StartJobReq.
 
         :param job_params: The job_params of this StartJobReq.
         :type job_params: list[:class:`huaweicloudsdkdlf.v1.JobParam`]

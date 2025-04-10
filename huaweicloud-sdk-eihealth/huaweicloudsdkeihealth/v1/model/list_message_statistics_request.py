@@ -23,7 +23,7 @@ class ListMessageStatisticsRequest:
     }
 
     def __init__(self):
-        """ListMessageStatisticsRequest
+        r"""ListMessageStatisticsRequest
 
         The model defined in huaweicloud sdk
 

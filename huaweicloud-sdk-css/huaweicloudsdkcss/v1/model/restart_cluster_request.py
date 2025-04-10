@@ -25,7 +25,7 @@ class RestartClusterRequest:
     }
 
     def __init__(self, cluster_id=None):
-        """RestartClusterRequest
+        r"""RestartClusterRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class RestartClusterRequest:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this RestartClusterRequest.
+        r"""Gets the cluster_id of this RestartClusterRequest.
 
         指定重启集群ID。
 
@@ -53,7 +53,7 @@ class RestartClusterRequest:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this RestartClusterRequest.
+        r"""Sets the cluster_id of this RestartClusterRequest.
 
         指定重启集群ID。
 

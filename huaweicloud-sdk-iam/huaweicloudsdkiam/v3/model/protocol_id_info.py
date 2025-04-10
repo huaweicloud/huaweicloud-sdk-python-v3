@@ -25,7 +25,7 @@ class ProtocolIdInfo:
     }
 
     def __init__(self, id=None):
-        """ProtocolIdInfo
+        r"""ProtocolIdInfo
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ProtocolIdInfo:
 
     @property
     def id(self):
-        """Gets the id of this ProtocolIdInfo.
+        r"""Gets the id of this ProtocolIdInfo.
 
         协议id。
 
@@ -53,7 +53,7 @@ class ProtocolIdInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ProtocolIdInfo.
+        r"""Sets the id of this ProtocolIdInfo.
 
         协议id。
 

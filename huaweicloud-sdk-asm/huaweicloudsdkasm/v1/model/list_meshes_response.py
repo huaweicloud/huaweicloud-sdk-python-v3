@@ -30,7 +30,7 @@ class ListMeshesResponse(SdkResponse):
     }
 
     def __init__(self, api_version=None, kind=None, items=None):
-        """ListMeshesResponse
+        r"""ListMeshesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListMeshesResponse(SdkResponse):
 
     @property
     def api_version(self):
-        """Gets the api_version of this ListMeshesResponse.
+        r"""Gets the api_version of this ListMeshesResponse.
 
         API版本，固定值“v1”，该值不可修改
 
@@ -69,7 +69,7 @@ class ListMeshesResponse(SdkResponse):
 
     @api_version.setter
     def api_version(self, api_version):
-        """Sets the api_version of this ListMeshesResponse.
+        r"""Sets the api_version of this ListMeshesResponse.
 
         API版本，固定值“v1”，该值不可修改
 
@@ -80,7 +80,7 @@ class ListMeshesResponse(SdkResponse):
 
     @property
     def kind(self):
-        """Gets the kind of this ListMeshesResponse.
+        r"""Gets the kind of this ListMeshesResponse.
 
         API类型，固定值“MeshList”，该值不可修改
 
@@ -91,7 +91,7 @@ class ListMeshesResponse(SdkResponse):
 
     @kind.setter
     def kind(self, kind):
-        """Sets the kind of this ListMeshesResponse.
+        r"""Sets the kind of this ListMeshesResponse.
 
         API类型，固定值“MeshList”，该值不可修改
 
@@ -102,7 +102,7 @@ class ListMeshesResponse(SdkResponse):
 
     @property
     def items(self):
-        """Gets the items of this ListMeshesResponse.
+        r"""Gets the items of this ListMeshesResponse.
 
         网格列表
 
@@ -113,7 +113,7 @@ class ListMeshesResponse(SdkResponse):
 
     @items.setter
     def items(self, items):
-        """Sets the items of this ListMeshesResponse.
+        r"""Sets the items of this ListMeshesResponse.
 
         网格列表
 

@@ -31,7 +31,7 @@ class ListTopicPartitionsRequest:
     }
 
     def __init__(self, instance_id=None, topic=None, offset=None, limit=None):
-        """ListTopicPartitionsRequest
+        r"""ListTopicPartitionsRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ListTopicPartitionsRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListTopicPartitionsRequest.
+        r"""Gets the instance_id of this ListTopicPartitionsRequest.
 
         实例id
 
@@ -73,7 +73,7 @@ class ListTopicPartitionsRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListTopicPartitionsRequest.
+        r"""Sets the instance_id of this ListTopicPartitionsRequest.
 
         实例id
 
@@ -84,7 +84,7 @@ class ListTopicPartitionsRequest:
 
     @property
     def topic(self):
-        """Gets the topic of this ListTopicPartitionsRequest.
+        r"""Gets the topic of this ListTopicPartitionsRequest.
 
         主题
 
@@ -95,7 +95,7 @@ class ListTopicPartitionsRequest:
 
     @topic.setter
     def topic(self, topic):
-        """Sets the topic of this ListTopicPartitionsRequest.
+        r"""Sets the topic of this ListTopicPartitionsRequest.
 
         主题
 
@@ -106,7 +106,7 @@ class ListTopicPartitionsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTopicPartitionsRequest.
+        r"""Gets the offset of this ListTopicPartitionsRequest.
 
         偏移量，表示查询该偏移量后面的记录
 
@@ -117,7 +117,7 @@ class ListTopicPartitionsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTopicPartitionsRequest.
+        r"""Sets the offset of this ListTopicPartitionsRequest.
 
         偏移量，表示查询该偏移量后面的记录
 
@@ -128,7 +128,7 @@ class ListTopicPartitionsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTopicPartitionsRequest.
+        r"""Gets the limit of this ListTopicPartitionsRequest.
 
         查询返回记录的数量限制
 
@@ -139,7 +139,7 @@ class ListTopicPartitionsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTopicPartitionsRequest.
+        r"""Sets the limit of this ListTopicPartitionsRequest.
 
         查询返回记录的数量限制
 

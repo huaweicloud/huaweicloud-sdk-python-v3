@@ -25,7 +25,7 @@ class ListServiceDetailsRequest:
     }
 
     def __init__(self, vpc_endpoint_service_id=None):
-        """ListServiceDetailsRequest
+        r"""ListServiceDetailsRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListServiceDetailsRequest:
 
     @property
     def vpc_endpoint_service_id(self):
-        """Gets the vpc_endpoint_service_id of this ListServiceDetailsRequest.
+        r"""Gets the vpc_endpoint_service_id of this ListServiceDetailsRequest.
 
         终端节点服务的ID。
 
@@ -53,7 +53,7 @@ class ListServiceDetailsRequest:
 
     @vpc_endpoint_service_id.setter
     def vpc_endpoint_service_id(self, vpc_endpoint_service_id):
-        """Sets the vpc_endpoint_service_id of this ListServiceDetailsRequest.
+        r"""Sets the vpc_endpoint_service_id of this ListServiceDetailsRequest.
 
         终端节点服务的ID。
 

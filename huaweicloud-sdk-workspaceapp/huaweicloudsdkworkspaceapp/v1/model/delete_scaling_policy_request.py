@@ -25,7 +25,7 @@ class DeleteScalingPolicyRequest:
     }
 
     def __init__(self, server_group_id=None):
-        """DeleteScalingPolicyRequest
+        r"""DeleteScalingPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteScalingPolicyRequest:
 
     @property
     def server_group_id(self):
-        """Gets the server_group_id of this DeleteScalingPolicyRequest.
+        r"""Gets the server_group_id of this DeleteScalingPolicyRequest.
 
         服务器组唯一标识。
 
@@ -53,7 +53,7 @@ class DeleteScalingPolicyRequest:
 
     @server_group_id.setter
     def server_group_id(self, server_group_id):
-        """Sets the server_group_id of this DeleteScalingPolicyRequest.
+        r"""Sets the server_group_id of this DeleteScalingPolicyRequest.
 
         服务器组唯一标识。
 

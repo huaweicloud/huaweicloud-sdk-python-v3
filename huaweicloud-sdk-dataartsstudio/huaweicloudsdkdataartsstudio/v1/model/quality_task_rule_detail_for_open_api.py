@@ -95,7 +95,7 @@ class QualityTaskRuleDetailForOpenApi:
     }
 
     def __init__(self, id=None, sub_rule_name=None, type=None, template_id=None, connection=None, connection_type=None, databases=None, sql=None, tables=None, reference_tables=None, columns=None, reference_columns=None, ignore_error=None, dimension=None, queue=None, regular_expression=None, template_arguments=None, weight=None, calculation_range=None, calculation_range_sql=None, alarm_condition=None, export_abnormal_table=None, abnormal_table_database=None, abnormal_table_schema=None, abnormal_table=None, abnormal_table_prefix=None, abnormal_table_suffix=None, abnormal_table_columns=None, abnormal_table_sql=None, abnormal_table_out_config=None, abnormal_table_include_null_value=None, abnormal_table_out_data_number=None, score_switch=None, score_schema=None, score_table=None, score_expression=None):
-        """QualityTaskRuleDetailForOpenApi
+        r"""QualityTaskRuleDetailForOpenApi
 
         The model defined in huaweicloud sdk
 
@@ -288,7 +288,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @property
     def id(self):
-        """Gets the id of this QualityTaskRuleDetailForOpenApi.
+        r"""Gets the id of this QualityTaskRuleDetailForOpenApi.
 
         子规则ID
 
@@ -299,7 +299,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this QualityTaskRuleDetailForOpenApi.
+        r"""Sets the id of this QualityTaskRuleDetailForOpenApi.
 
         子规则ID
 
@@ -310,7 +310,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @property
     def sub_rule_name(self):
-        """Gets the sub_rule_name of this QualityTaskRuleDetailForOpenApi.
+        r"""Gets the sub_rule_name of this QualityTaskRuleDetailForOpenApi.
 
         子规则名称
 
@@ -321,7 +321,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @sub_rule_name.setter
     def sub_rule_name(self, sub_rule_name):
-        """Sets the sub_rule_name of this QualityTaskRuleDetailForOpenApi.
+        r"""Sets the sub_rule_name of this QualityTaskRuleDetailForOpenApi.
 
         子规则名称
 
@@ -332,7 +332,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @property
     def type(self):
-        """Gets the type of this QualityTaskRuleDetailForOpenApi.
+        r"""Gets the type of this QualityTaskRuleDetailForOpenApi.
 
         SingleDatabase:库级规则，SingleTable:表级规则,SingleColumn:字段级规则,CrossColumn:跨字段规则,Customize:自定义规则
 
@@ -343,7 +343,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this QualityTaskRuleDetailForOpenApi.
+        r"""Sets the type of this QualityTaskRuleDetailForOpenApi.
 
         SingleDatabase:库级规则，SingleTable:表级规则,SingleColumn:字段级规则,CrossColumn:跨字段规则,Customize:自定义规则
 
@@ -354,7 +354,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @property
     def template_id(self):
-        """Gets the template_id of this QualityTaskRuleDetailForOpenApi.
+        r"""Gets the template_id of this QualityTaskRuleDetailForOpenApi.
 
         规则模板ID
 
@@ -365,7 +365,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this QualityTaskRuleDetailForOpenApi.
+        r"""Sets the template_id of this QualityTaskRuleDetailForOpenApi.
 
         规则模板ID
 
@@ -376,7 +376,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @property
     def connection(self):
-        """Gets the connection of this QualityTaskRuleDetailForOpenApi.
+        r"""Gets the connection of this QualityTaskRuleDetailForOpenApi.
 
         数据连接ID
 
@@ -387,7 +387,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @connection.setter
     def connection(self, connection):
-        """Sets the connection of this QualityTaskRuleDetailForOpenApi.
+        r"""Sets the connection of this QualityTaskRuleDetailForOpenApi.
 
         数据连接ID
 
@@ -398,7 +398,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @property
     def connection_type(self):
-        """Gets the connection_type of this QualityTaskRuleDetailForOpenApi.
+        r"""Gets the connection_type of this QualityTaskRuleDetailForOpenApi.
 
         数据连接类型
 
@@ -409,7 +409,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @connection_type.setter
     def connection_type(self, connection_type):
-        """Sets the connection_type of this QualityTaskRuleDetailForOpenApi.
+        r"""Sets the connection_type of this QualityTaskRuleDetailForOpenApi.
 
         数据连接类型
 
@@ -420,7 +420,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @property
     def databases(self):
-        """Gets the databases of this QualityTaskRuleDetailForOpenApi.
+        r"""Gets the databases of this QualityTaskRuleDetailForOpenApi.
 
         数据库名，当存在多个值时以逗号分隔
 
@@ -431,7 +431,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this QualityTaskRuleDetailForOpenApi.
+        r"""Sets the databases of this QualityTaskRuleDetailForOpenApi.
 
         数据库名，当存在多个值时以逗号分隔
 
@@ -442,7 +442,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @property
     def sql(self):
-        """Gets the sql of this QualityTaskRuleDetailForOpenApi.
+        r"""Gets the sql of this QualityTaskRuleDetailForOpenApi.
 
         自定义规则中的SQL脚本，系统内置规则时返回
 
@@ -453,7 +453,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @sql.setter
     def sql(self, sql):
-        """Sets the sql of this QualityTaskRuleDetailForOpenApi.
+        r"""Sets the sql of this QualityTaskRuleDetailForOpenApi.
 
         自定义规则中的SQL脚本，系统内置规则时返回
 
@@ -464,7 +464,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @property
     def tables(self):
-        """Gets the tables of this QualityTaskRuleDetailForOpenApi.
+        r"""Gets the tables of this QualityTaskRuleDetailForOpenApi.
 
         表名，当存在多个值时以逗号分隔
 
@@ -475,7 +475,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @tables.setter
     def tables(self, tables):
-        """Sets the tables of this QualityTaskRuleDetailForOpenApi.
+        r"""Sets the tables of this QualityTaskRuleDetailForOpenApi.
 
         表名，当存在多个值时以逗号分隔
 
@@ -486,7 +486,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @property
     def reference_tables(self):
-        """Gets the reference_tables of this QualityTaskRuleDetailForOpenApi.
+        r"""Gets the reference_tables of this QualityTaskRuleDetailForOpenApi.
 
         跨字段规则中的参考表名，当存在多个值时以逗号分隔
 
@@ -497,7 +497,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @reference_tables.setter
     def reference_tables(self, reference_tables):
-        """Sets the reference_tables of this QualityTaskRuleDetailForOpenApi.
+        r"""Sets the reference_tables of this QualityTaskRuleDetailForOpenApi.
 
         跨字段规则中的参考表名，当存在多个值时以逗号分隔
 
@@ -508,7 +508,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @property
     def columns(self):
-        """Gets the columns of this QualityTaskRuleDetailForOpenApi.
+        r"""Gets the columns of this QualityTaskRuleDetailForOpenApi.
 
         字段名，当存在多个值时以逗号分隔
 
@@ -519,7 +519,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @columns.setter
     def columns(self, columns):
-        """Sets the columns of this QualityTaskRuleDetailForOpenApi.
+        r"""Sets the columns of this QualityTaskRuleDetailForOpenApi.
 
         字段名，当存在多个值时以逗号分隔
 
@@ -530,7 +530,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @property
     def reference_columns(self):
-        """Gets the reference_columns of this QualityTaskRuleDetailForOpenApi.
+        r"""Gets the reference_columns of this QualityTaskRuleDetailForOpenApi.
 
         跨字段规则中的参考字段名，当存在多个值时以逗号分隔
 
@@ -541,7 +541,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @reference_columns.setter
     def reference_columns(self, reference_columns):
-        """Sets the reference_columns of this QualityTaskRuleDetailForOpenApi.
+        r"""Sets the reference_columns of this QualityTaskRuleDetailForOpenApi.
 
         跨字段规则中的参考字段名，当存在多个值时以逗号分隔
 
@@ -552,7 +552,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @property
     def ignore_error(self):
-        """Gets the ignore_error of this QualityTaskRuleDetailForOpenApi.
+        r"""Gets the ignore_error of this QualityTaskRuleDetailForOpenApi.
 
         是否忽视规则错误
 
@@ -563,7 +563,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @ignore_error.setter
     def ignore_error(self, ignore_error):
-        """Sets the ignore_error of this QualityTaskRuleDetailForOpenApi.
+        r"""Sets the ignore_error of this QualityTaskRuleDetailForOpenApi.
 
         是否忽视规则错误
 
@@ -574,7 +574,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @property
     def dimension(self):
-        """Gets the dimension of this QualityTaskRuleDetailForOpenApi.
+        r"""Gets the dimension of this QualityTaskRuleDetailForOpenApi.
 
         维度
 
@@ -585,7 +585,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @dimension.setter
     def dimension(self, dimension):
-        """Sets the dimension of this QualityTaskRuleDetailForOpenApi.
+        r"""Sets the dimension of this QualityTaskRuleDetailForOpenApi.
 
         维度
 
@@ -596,7 +596,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @property
     def queue(self):
-        """Gets the queue of this QualityTaskRuleDetailForOpenApi.
+        r"""Gets the queue of this QualityTaskRuleDetailForOpenApi.
 
         DLI队列
 
@@ -607,7 +607,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @queue.setter
     def queue(self, queue):
-        """Sets the queue of this QualityTaskRuleDetailForOpenApi.
+        r"""Sets the queue of this QualityTaskRuleDetailForOpenApi.
 
         DLI队列
 
@@ -618,7 +618,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @property
     def regular_expression(self):
-        """Gets the regular_expression of this QualityTaskRuleDetailForOpenApi.
+        r"""Gets the regular_expression of this QualityTaskRuleDetailForOpenApi.
 
         当规则模板为正则表达式校验时的正则表达式
 
@@ -629,7 +629,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @regular_expression.setter
     def regular_expression(self, regular_expression):
-        """Sets the regular_expression of this QualityTaskRuleDetailForOpenApi.
+        r"""Sets the regular_expression of this QualityTaskRuleDetailForOpenApi.
 
         当规则模板为正则表达式校验时的正则表达式
 
@@ -640,7 +640,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @property
     def template_arguments(self):
-        """Gets the template_arguments of this QualityTaskRuleDetailForOpenApi.
+        r"""Gets the template_arguments of this QualityTaskRuleDetailForOpenApi.
 
         模板参数
 
@@ -651,7 +651,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @template_arguments.setter
     def template_arguments(self, template_arguments):
-        """Sets the template_arguments of this QualityTaskRuleDetailForOpenApi.
+        r"""Sets the template_arguments of this QualityTaskRuleDetailForOpenApi.
 
         模板参数
 
@@ -662,7 +662,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @property
     def weight(self):
-        """Gets the weight of this QualityTaskRuleDetailForOpenApi.
+        r"""Gets the weight of this QualityTaskRuleDetailForOpenApi.
 
         规则权重
 
@@ -673,7 +673,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @weight.setter
     def weight(self, weight):
-        """Sets the weight of this QualityTaskRuleDetailForOpenApi.
+        r"""Sets the weight of this QualityTaskRuleDetailForOpenApi.
 
         规则权重
 
@@ -684,7 +684,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @property
     def calculation_range(self):
-        """Gets the calculation_range of this QualityTaskRuleDetailForOpenApi.
+        r"""Gets the calculation_range of this QualityTaskRuleDetailForOpenApi.
 
         计算范围
 
@@ -695,7 +695,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @calculation_range.setter
     def calculation_range(self, calculation_range):
-        """Sets the calculation_range of this QualityTaskRuleDetailForOpenApi.
+        r"""Sets the calculation_range of this QualityTaskRuleDetailForOpenApi.
 
         计算范围
 
@@ -706,7 +706,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @property
     def calculation_range_sql(self):
-        """Gets the calculation_range_sql of this QualityTaskRuleDetailForOpenApi.
+        r"""Gets the calculation_range_sql of this QualityTaskRuleDetailForOpenApi.
 
         计算范围SQL
 
@@ -717,7 +717,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @calculation_range_sql.setter
     def calculation_range_sql(self, calculation_range_sql):
-        """Sets the calculation_range_sql of this QualityTaskRuleDetailForOpenApi.
+        r"""Sets the calculation_range_sql of this QualityTaskRuleDetailForOpenApi.
 
         计算范围SQL
 
@@ -728,7 +728,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @property
     def alarm_condition(self):
-        """Gets the alarm_condition of this QualityTaskRuleDetailForOpenApi.
+        r"""Gets the alarm_condition of this QualityTaskRuleDetailForOpenApi.
 
         告警表达式
 
@@ -739,7 +739,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @alarm_condition.setter
     def alarm_condition(self, alarm_condition):
-        """Sets the alarm_condition of this QualityTaskRuleDetailForOpenApi.
+        r"""Sets the alarm_condition of this QualityTaskRuleDetailForOpenApi.
 
         告警表达式
 
@@ -750,7 +750,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @property
     def export_abnormal_table(self):
-        """Gets the export_abnormal_table of this QualityTaskRuleDetailForOpenApi.
+        r"""Gets the export_abnormal_table of this QualityTaskRuleDetailForOpenApi.
 
         是否导出异常数据
 
@@ -761,7 +761,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @export_abnormal_table.setter
     def export_abnormal_table(self, export_abnormal_table):
-        """Sets the export_abnormal_table of this QualityTaskRuleDetailForOpenApi.
+        r"""Sets the export_abnormal_table of this QualityTaskRuleDetailForOpenApi.
 
         是否导出异常数据
 
@@ -772,7 +772,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @property
     def abnormal_table_database(self):
-        """Gets the abnormal_table_database of this QualityTaskRuleDetailForOpenApi.
+        r"""Gets the abnormal_table_database of this QualityTaskRuleDetailForOpenApi.
 
         异常表数据库
 
@@ -783,7 +783,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @abnormal_table_database.setter
     def abnormal_table_database(self, abnormal_table_database):
-        """Sets the abnormal_table_database of this QualityTaskRuleDetailForOpenApi.
+        r"""Sets the abnormal_table_database of this QualityTaskRuleDetailForOpenApi.
 
         异常表数据库
 
@@ -794,7 +794,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @property
     def abnormal_table_schema(self):
-        """Gets the abnormal_table_schema of this QualityTaskRuleDetailForOpenApi.
+        r"""Gets the abnormal_table_schema of this QualityTaskRuleDetailForOpenApi.
 
         异常表Schema
 
@@ -805,7 +805,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @abnormal_table_schema.setter
     def abnormal_table_schema(self, abnormal_table_schema):
-        """Sets the abnormal_table_schema of this QualityTaskRuleDetailForOpenApi.
+        r"""Sets the abnormal_table_schema of this QualityTaskRuleDetailForOpenApi.
 
         异常表Schema
 
@@ -816,7 +816,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @property
     def abnormal_table(self):
-        """Gets the abnormal_table of this QualityTaskRuleDetailForOpenApi.
+        r"""Gets the abnormal_table of this QualityTaskRuleDetailForOpenApi.
 
         异常字段所在的表
 
@@ -827,7 +827,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @abnormal_table.setter
     def abnormal_table(self, abnormal_table):
-        """Sets the abnormal_table of this QualityTaskRuleDetailForOpenApi.
+        r"""Sets the abnormal_table of this QualityTaskRuleDetailForOpenApi.
 
         异常字段所在的表
 
@@ -838,7 +838,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @property
     def abnormal_table_prefix(self):
-        """Gets the abnormal_table_prefix of this QualityTaskRuleDetailForOpenApi.
+        r"""Gets the abnormal_table_prefix of this QualityTaskRuleDetailForOpenApi.
 
         异常表前缀
 
@@ -849,7 +849,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @abnormal_table_prefix.setter
     def abnormal_table_prefix(self, abnormal_table_prefix):
-        """Sets the abnormal_table_prefix of this QualityTaskRuleDetailForOpenApi.
+        r"""Sets the abnormal_table_prefix of this QualityTaskRuleDetailForOpenApi.
 
         异常表前缀
 
@@ -860,7 +860,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @property
     def abnormal_table_suffix(self):
-        """Gets the abnormal_table_suffix of this QualityTaskRuleDetailForOpenApi.
+        r"""Gets the abnormal_table_suffix of this QualityTaskRuleDetailForOpenApi.
 
         异常表后缀
 
@@ -871,7 +871,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @abnormal_table_suffix.setter
     def abnormal_table_suffix(self, abnormal_table_suffix):
-        """Sets the abnormal_table_suffix of this QualityTaskRuleDetailForOpenApi.
+        r"""Sets the abnormal_table_suffix of this QualityTaskRuleDetailForOpenApi.
 
         异常表后缀
 
@@ -882,7 +882,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @property
     def abnormal_table_columns(self):
-        """Gets the abnormal_table_columns of this QualityTaskRuleDetailForOpenApi.
+        r"""Gets the abnormal_table_columns of this QualityTaskRuleDetailForOpenApi.
 
         异常字段名，当存在多个值时以逗号分隔
 
@@ -893,7 +893,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @abnormal_table_columns.setter
     def abnormal_table_columns(self, abnormal_table_columns):
-        """Sets the abnormal_table_columns of this QualityTaskRuleDetailForOpenApi.
+        r"""Sets the abnormal_table_columns of this QualityTaskRuleDetailForOpenApi.
 
         异常字段名，当存在多个值时以逗号分隔
 
@@ -904,7 +904,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @property
     def abnormal_table_sql(self):
-        """Gets the abnormal_table_sql of this QualityTaskRuleDetailForOpenApi.
+        r"""Gets the abnormal_table_sql of this QualityTaskRuleDetailForOpenApi.
 
         异常表SQL
 
@@ -915,7 +915,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @abnormal_table_sql.setter
     def abnormal_table_sql(self, abnormal_table_sql):
-        """Sets the abnormal_table_sql of this QualityTaskRuleDetailForOpenApi.
+        r"""Sets the abnormal_table_sql of this QualityTaskRuleDetailForOpenApi.
 
         异常表SQL
 
@@ -926,7 +926,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @property
     def abnormal_table_out_config(self):
-        """Gets the abnormal_table_out_config of this QualityTaskRuleDetailForOpenApi.
+        r"""Gets the abnormal_table_out_config of this QualityTaskRuleDetailForOpenApi.
 
         异常表是否输出规则配置
 
@@ -937,7 +937,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @abnormal_table_out_config.setter
     def abnormal_table_out_config(self, abnormal_table_out_config):
-        """Sets the abnormal_table_out_config of this QualityTaskRuleDetailForOpenApi.
+        r"""Sets the abnormal_table_out_config of this QualityTaskRuleDetailForOpenApi.
 
         异常表是否输出规则配置
 
@@ -948,7 +948,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @property
     def abnormal_table_include_null_value(self):
-        """Gets the abnormal_table_include_null_value of this QualityTaskRuleDetailForOpenApi.
+        r"""Gets the abnormal_table_include_null_value of this QualityTaskRuleDetailForOpenApi.
 
         异常表是否包含空值
 
@@ -959,7 +959,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @abnormal_table_include_null_value.setter
     def abnormal_table_include_null_value(self, abnormal_table_include_null_value):
-        """Sets the abnormal_table_include_null_value of this QualityTaskRuleDetailForOpenApi.
+        r"""Sets the abnormal_table_include_null_value of this QualityTaskRuleDetailForOpenApi.
 
         异常表是否包含空值
 
@@ -970,7 +970,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @property
     def abnormal_table_out_data_number(self):
-        """Gets the abnormal_table_out_data_number of this QualityTaskRuleDetailForOpenApi.
+        r"""Gets the abnormal_table_out_data_number of this QualityTaskRuleDetailForOpenApi.
 
         异常表输出行数, 0代表全量输出
 
@@ -981,7 +981,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @abnormal_table_out_data_number.setter
     def abnormal_table_out_data_number(self, abnormal_table_out_data_number):
-        """Sets the abnormal_table_out_data_number of this QualityTaskRuleDetailForOpenApi.
+        r"""Sets the abnormal_table_out_data_number of this QualityTaskRuleDetailForOpenApi.
 
         异常表输出行数, 0代表全量输出
 
@@ -992,7 +992,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @property
     def score_switch(self):
-        """Gets the score_switch of this QualityTaskRuleDetailForOpenApi.
+        r"""Gets the score_switch of this QualityTaskRuleDetailForOpenApi.
 
         是否开启质量评分
 
@@ -1003,7 +1003,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @score_switch.setter
     def score_switch(self, score_switch):
-        """Sets the score_switch of this QualityTaskRuleDetailForOpenApi.
+        r"""Sets the score_switch of this QualityTaskRuleDetailForOpenApi.
 
         是否开启质量评分
 
@@ -1014,7 +1014,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @property
     def score_schema(self):
-        """Gets the score_schema of this QualityTaskRuleDetailForOpenApi.
+        r"""Gets the score_schema of this QualityTaskRuleDetailForOpenApi.
 
         质量评分表所在schema
 
@@ -1025,7 +1025,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @score_schema.setter
     def score_schema(self, score_schema):
-        """Sets the score_schema of this QualityTaskRuleDetailForOpenApi.
+        r"""Sets the score_schema of this QualityTaskRuleDetailForOpenApi.
 
         质量评分表所在schema
 
@@ -1036,7 +1036,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @property
     def score_table(self):
-        """Gets the score_table of this QualityTaskRuleDetailForOpenApi.
+        r"""Gets the score_table of this QualityTaskRuleDetailForOpenApi.
 
         质量评分表名
 
@@ -1047,7 +1047,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @score_table.setter
     def score_table(self, score_table):
-        """Sets the score_table of this QualityTaskRuleDetailForOpenApi.
+        r"""Sets the score_table of this QualityTaskRuleDetailForOpenApi.
 
         质量评分表名
 
@@ -1058,7 +1058,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @property
     def score_expression(self):
-        """Gets the score_expression of this QualityTaskRuleDetailForOpenApi.
+        r"""Gets the score_expression of this QualityTaskRuleDetailForOpenApi.
 
         质量评分表达式
 
@@ -1069,7 +1069,7 @@ class QualityTaskRuleDetailForOpenApi:
 
     @score_expression.setter
     def score_expression(self, score_expression):
-        """Sets the score_expression of this QualityTaskRuleDetailForOpenApi.
+        r"""Sets the score_expression of this QualityTaskRuleDetailForOpenApi.
 
         质量评分表达式
 

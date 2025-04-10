@@ -26,7 +26,7 @@ class UpdateOndemandClusterToPeriodResponse(SdkResponse):
     }
 
     def __init__(self, order_id=None):
-        """UpdateOndemandClusterToPeriodResponse
+        r"""UpdateOndemandClusterToPeriodResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateOndemandClusterToPeriodResponse(SdkResponse):
 
     @property
     def order_id(self):
-        """Gets the order_id of this UpdateOndemandClusterToPeriodResponse.
+        r"""Gets the order_id of this UpdateOndemandClusterToPeriodResponse.
 
         订单ID（此订单类型为“新购”）。
 
@@ -55,7 +55,7 @@ class UpdateOndemandClusterToPeriodResponse(SdkResponse):
 
     @order_id.setter
     def order_id(self, order_id):
-        """Sets the order_id of this UpdateOndemandClusterToPeriodResponse.
+        r"""Sets the order_id of this UpdateOndemandClusterToPeriodResponse.
 
         订单ID（此订单类型为“新购”）。
 

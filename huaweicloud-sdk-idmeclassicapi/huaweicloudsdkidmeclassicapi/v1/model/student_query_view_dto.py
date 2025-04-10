@@ -45,7 +45,7 @@ class StudentQueryViewDTO:
     }
 
     def __init__(self, id=None, creator=None, create_time=None, modifier=None, last_update_time=None, rdm_extension_type=None, tenant=None, class_name=None, name=None, description=None, grade=None):
-        """StudentQueryViewDTO
+        r"""StudentQueryViewDTO
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class StudentQueryViewDTO:
 
     @property
     def id(self):
-        """Gets the id of this StudentQueryViewDTO.
+        r"""Gets the id of this StudentQueryViewDTO.
 
         **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -124,7 +124,7 @@ class StudentQueryViewDTO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this StudentQueryViewDTO.
+        r"""Sets the id of this StudentQueryViewDTO.
 
         **参数解释：**  唯一标识。  **取值范围：**  -9223372036854775808到9223372036854775807的整数。  **默认取值：**  不涉及。 
 
@@ -135,7 +135,7 @@ class StudentQueryViewDTO:
 
     @property
     def creator(self):
-        """Gets the creator of this StudentQueryViewDTO.
+        r"""Gets the creator of this StudentQueryViewDTO.
 
         **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -146,7 +146,7 @@ class StudentQueryViewDTO:
 
     @creator.setter
     def creator(self, creator):
-        """Sets the creator of this StudentQueryViewDTO.
+        r"""Sets the creator of this StudentQueryViewDTO.
 
         **参数解释：**  创建者。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -157,7 +157,7 @@ class StudentQueryViewDTO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this StudentQueryViewDTO.
+        r"""Gets the create_time of this StudentQueryViewDTO.
 
         **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -168,7 +168,7 @@ class StudentQueryViewDTO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this StudentQueryViewDTO.
+        r"""Sets the create_time of this StudentQueryViewDTO.
 
         **参数解释：**  创建时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -179,7 +179,7 @@ class StudentQueryViewDTO:
 
     @property
     def modifier(self):
-        """Gets the modifier of this StudentQueryViewDTO.
+        r"""Gets the modifier of this StudentQueryViewDTO.
 
         **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -190,7 +190,7 @@ class StudentQueryViewDTO:
 
     @modifier.setter
     def modifier(self, modifier):
-        """Sets the modifier of this StudentQueryViewDTO.
+        r"""Sets the modifier of this StudentQueryViewDTO.
 
         **参数解释：**  修改人。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -201,7 +201,7 @@ class StudentQueryViewDTO:
 
     @property
     def last_update_time(self):
-        """Gets the last_update_time of this StudentQueryViewDTO.
+        r"""Gets the last_update_time of this StudentQueryViewDTO.
 
         **参数解释：**  最后的修改时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -212,7 +212,7 @@ class StudentQueryViewDTO:
 
     @last_update_time.setter
     def last_update_time(self, last_update_time):
-        """Sets the last_update_time of this StudentQueryViewDTO.
+        r"""Sets the last_update_time of this StudentQueryViewDTO.
 
         **参数解释：**  最后的修改时间。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -223,7 +223,7 @@ class StudentQueryViewDTO:
 
     @property
     def rdm_extension_type(self):
-        """Gets the rdm_extension_type of this StudentQueryViewDTO.
+        r"""Gets the rdm_extension_type of this StudentQueryViewDTO.
 
         **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -234,7 +234,7 @@ class StudentQueryViewDTO:
 
     @rdm_extension_type.setter
     def rdm_extension_type(self, rdm_extension_type):
-        """Sets the rdm_extension_type of this StudentQueryViewDTO.
+        r"""Sets the rdm_extension_type of this StudentQueryViewDTO.
 
         **参数解释：**  扩展类型。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -245,7 +245,7 @@ class StudentQueryViewDTO:
 
     @property
     def tenant(self):
-        """Gets the tenant of this StudentQueryViewDTO.
+        r"""Gets the tenant of this StudentQueryViewDTO.
 
         :return: The tenant of this StudentQueryViewDTO.
         :rtype: :class:`huaweicloudsdkidmeclassicapi.v1.TenantViewDTO`
@@ -254,7 +254,7 @@ class StudentQueryViewDTO:
 
     @tenant.setter
     def tenant(self, tenant):
-        """Sets the tenant of this StudentQueryViewDTO.
+        r"""Sets the tenant of this StudentQueryViewDTO.
 
         :param tenant: The tenant of this StudentQueryViewDTO.
         :type tenant: :class:`huaweicloudsdkidmeclassicapi.v1.TenantViewDTO`
@@ -263,7 +263,7 @@ class StudentQueryViewDTO:
 
     @property
     def class_name(self):
-        """Gets the class_name of this StudentQueryViewDTO.
+        r"""Gets the class_name of this StudentQueryViewDTO.
 
         **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -274,7 +274,7 @@ class StudentQueryViewDTO:
 
     @class_name.setter
     def class_name(self, class_name):
-        """Sets the class_name of this StudentQueryViewDTO.
+        r"""Sets the class_name of this StudentQueryViewDTO.
 
         **参数解释：**  类名。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -285,7 +285,7 @@ class StudentQueryViewDTO:
 
     @property
     def name(self):
-        """Gets the name of this StudentQueryViewDTO.
+        r"""Gets the name of this StudentQueryViewDTO.
 
         **参数解释：**  名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -296,7 +296,7 @@ class StudentQueryViewDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this StudentQueryViewDTO.
+        r"""Sets the name of this StudentQueryViewDTO.
 
         **参数解释：**  名称。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -307,7 +307,7 @@ class StudentQueryViewDTO:
 
     @property
     def description(self):
-        """Gets the description of this StudentQueryViewDTO.
+        r"""Gets the description of this StudentQueryViewDTO.
 
         **参数解释：**  描述。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -318,7 +318,7 @@ class StudentQueryViewDTO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this StudentQueryViewDTO.
+        r"""Sets the description of this StudentQueryViewDTO.
 
         **参数解释：**  描述。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -329,7 +329,7 @@ class StudentQueryViewDTO:
 
     @property
     def grade(self):
-        """Gets the grade of this StudentQueryViewDTO.
+        r"""Gets the grade of this StudentQueryViewDTO.
 
         **参数解释：**  成绩。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 
@@ -340,7 +340,7 @@ class StudentQueryViewDTO:
 
     @grade.setter
     def grade(self, grade):
-        """Sets the grade of this StudentQueryViewDTO.
+        r"""Sets the grade of this StudentQueryViewDTO.
 
         **参数解释：**  成绩。  **取值范围：**  不涉及。  **默认取值：**  不涉及。 
 

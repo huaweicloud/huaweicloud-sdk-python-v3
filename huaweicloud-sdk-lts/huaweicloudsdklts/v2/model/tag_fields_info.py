@@ -33,7 +33,7 @@ class TagFieldsInfo:
     }
 
     def __init__(self, field_name=None, type=None, content=None, is_analysis=None, index=None):
-        """TagFieldsInfo
+        r"""TagFieldsInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class TagFieldsInfo:
 
     @property
     def field_name(self):
-        """Gets the field_name of this TagFieldsInfo.
+        r"""Gets the field_name of this TagFieldsInfo.
 
         字段名称
 
@@ -82,7 +82,7 @@ class TagFieldsInfo:
 
     @field_name.setter
     def field_name(self, field_name):
-        """Sets the field_name of this TagFieldsInfo.
+        r"""Sets the field_name of this TagFieldsInfo.
 
         字段名称
 
@@ -93,7 +93,7 @@ class TagFieldsInfo:
 
     @property
     def type(self):
-        """Gets the type of this TagFieldsInfo.
+        r"""Gets the type of this TagFieldsInfo.
 
         字段类型
 
@@ -104,7 +104,7 @@ class TagFieldsInfo:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this TagFieldsInfo.
+        r"""Sets the type of this TagFieldsInfo.
 
         字段类型
 
@@ -115,7 +115,7 @@ class TagFieldsInfo:
 
     @property
     def content(self):
-        """Gets the content of this TagFieldsInfo.
+        r"""Gets the content of this TagFieldsInfo.
 
         内容
 
@@ -126,7 +126,7 @@ class TagFieldsInfo:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this TagFieldsInfo.
+        r"""Sets the content of this TagFieldsInfo.
 
         内容
 
@@ -137,7 +137,7 @@ class TagFieldsInfo:
 
     @property
     def is_analysis(self):
-        """Gets the is_analysis of this TagFieldsInfo.
+        r"""Gets the is_analysis of this TagFieldsInfo.
 
         是否解析
 
@@ -148,7 +148,7 @@ class TagFieldsInfo:
 
     @is_analysis.setter
     def is_analysis(self, is_analysis):
-        """Sets the is_analysis of this TagFieldsInfo.
+        r"""Sets the is_analysis of this TagFieldsInfo.
 
         是否解析
 
@@ -159,7 +159,7 @@ class TagFieldsInfo:
 
     @property
     def index(self):
-        """Gets the index of this TagFieldsInfo.
+        r"""Gets the index of this TagFieldsInfo.
 
         字段名称
 
@@ -170,7 +170,7 @@ class TagFieldsInfo:
 
     @index.setter
     def index(self, index):
-        """Sets the index of this TagFieldsInfo.
+        r"""Sets the index of this TagFieldsInfo.
 
         字段名称
 

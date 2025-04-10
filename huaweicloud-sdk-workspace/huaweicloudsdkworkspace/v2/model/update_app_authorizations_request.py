@@ -27,7 +27,7 @@ class UpdateAppAuthorizationsRequest:
     }
 
     def __init__(self, app_id=None, body=None):
-        """UpdateAppAuthorizationsRequest
+        r"""UpdateAppAuthorizationsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateAppAuthorizationsRequest:
 
     @property
     def app_id(self):
-        """Gets the app_id of this UpdateAppAuthorizationsRequest.
+        r"""Gets the app_id of this UpdateAppAuthorizationsRequest.
 
         应用ID。
 
@@ -60,7 +60,7 @@ class UpdateAppAuthorizationsRequest:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this UpdateAppAuthorizationsRequest.
+        r"""Sets the app_id of this UpdateAppAuthorizationsRequest.
 
         应用ID。
 
@@ -71,7 +71,7 @@ class UpdateAppAuthorizationsRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAppAuthorizationsRequest.
+        r"""Gets the body of this UpdateAppAuthorizationsRequest.
 
         :return: The body of this UpdateAppAuthorizationsRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.AssignAppAuthorizationsReq`
@@ -80,7 +80,7 @@ class UpdateAppAuthorizationsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAppAuthorizationsRequest.
+        r"""Sets the body of this UpdateAppAuthorizationsRequest.
 
         :param body: The body of this UpdateAppAuthorizationsRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.AssignAppAuthorizationsReq`

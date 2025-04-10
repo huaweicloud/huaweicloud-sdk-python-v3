@@ -23,7 +23,7 @@ class ProcessPid:
     }
 
     def __init__(self):
-        """ProcessPid
+        r"""ProcessPid
 
         The model defined in huaweicloud sdk
 

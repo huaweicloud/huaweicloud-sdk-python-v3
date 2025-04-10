@@ -30,7 +30,7 @@ class ListActiveAsyncInvocationsResponse(SdkResponse):
     }
 
     def __init__(self, invocations=None, count=None, next_marker=None):
-        """ListActiveAsyncInvocationsResponse
+        r"""ListActiveAsyncInvocationsResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListActiveAsyncInvocationsResponse(SdkResponse):
 
     @property
     def invocations(self):
-        """Gets the invocations of this ListActiveAsyncInvocationsResponse.
+        r"""Gets the invocations of this ListActiveAsyncInvocationsResponse.
 
         异步调用记录列表。
 
@@ -69,7 +69,7 @@ class ListActiveAsyncInvocationsResponse(SdkResponse):
 
     @invocations.setter
     def invocations(self, invocations):
-        """Sets the invocations of this ListActiveAsyncInvocationsResponse.
+        r"""Sets the invocations of this ListActiveAsyncInvocationsResponse.
 
         异步调用记录列表。
 
@@ -80,7 +80,7 @@ class ListActiveAsyncInvocationsResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListActiveAsyncInvocationsResponse.
+        r"""Gets the count of this ListActiveAsyncInvocationsResponse.
 
         查询数据总条数
 
@@ -91,7 +91,7 @@ class ListActiveAsyncInvocationsResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListActiveAsyncInvocationsResponse.
+        r"""Sets the count of this ListActiveAsyncInvocationsResponse.
 
         查询数据总条数
 
@@ -102,7 +102,7 @@ class ListActiveAsyncInvocationsResponse(SdkResponse):
 
     @property
     def next_marker(self):
-        """Gets the next_marker of this ListActiveAsyncInvocationsResponse.
+        r"""Gets the next_marker of this ListActiveAsyncInvocationsResponse.
 
         查询下一页的起始位置
 
@@ -113,7 +113,7 @@ class ListActiveAsyncInvocationsResponse(SdkResponse):
 
     @next_marker.setter
     def next_marker(self, next_marker):
-        """Sets the next_marker of this ListActiveAsyncInvocationsResponse.
+        r"""Sets the next_marker of this ListActiveAsyncInvocationsResponse.
 
         查询下一页的起始位置
 

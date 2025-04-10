@@ -25,7 +25,7 @@ class ListBizMetricDimensionsResultData:
     }
 
     def __init__(self, value=None):
-        """ListBizMetricDimensionsResultData
+        r"""ListBizMetricDimensionsResultData
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListBizMetricDimensionsResultData:
 
     @property
     def value(self):
-        """Gets the value of this ListBizMetricDimensionsResultData.
+        r"""Gets the value of this ListBizMetricDimensionsResultData.
 
         value，统一的返回结果的外层数据结构。
 
@@ -54,7 +54,7 @@ class ListBizMetricDimensionsResultData:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this ListBizMetricDimensionsResultData.
+        r"""Sets the value of this ListBizMetricDimensionsResultData.
 
         value，统一的返回结果的外层数据结构。
 

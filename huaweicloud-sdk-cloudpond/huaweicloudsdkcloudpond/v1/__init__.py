@@ -16,6 +16,7 @@ from huaweicloudsdkcloudpond.v1.model.create_location import CreateLocation
 from huaweicloudsdkcloudpond.v1.model.delete_edge_site_request import DeleteEdgeSiteRequest
 from huaweicloudsdkcloudpond.v1.model.delete_edge_site_response import DeleteEdgeSiteResponse
 from huaweicloudsdkcloudpond.v1.model.edge_site_detail import EdgeSiteDetail
+from huaweicloudsdkcloudpond.v1.model.effect import Effect
 from huaweicloudsdkcloudpond.v1.model.list_edge_site_metrics_request import ListEdgeSiteMetricsRequest
 from huaweicloudsdkcloudpond.v1.model.list_edge_site_metrics_response import ListEdgeSiteMetricsResponse
 from huaweicloudsdkcloudpond.v1.model.list_edge_sites_request import ListEdgeSitesRequest
@@ -34,6 +35,7 @@ from huaweicloudsdkcloudpond.v1.model.location_detail import LocationDetail
 from huaweicloudsdkcloudpond.v1.model.market_options import MarketOptions
 from huaweicloudsdkcloudpond.v1.model.metric_data_detail import MetricDataDetail
 from huaweicloudsdkcloudpond.v1.model.metric_data_detail_dimension import MetricDataDetailDimension
+from huaweicloudsdkcloudpond.v1.model.operation_status import OperationStatus
 from huaweicloudsdkcloudpond.v1.model.page_info import PageInfo
 from huaweicloudsdkcloudpond.v1.model.pay_mode import PayMode
 from huaweicloudsdkcloudpond.v1.model.prepaid_options import PrepaidOptions
@@ -44,6 +46,7 @@ from huaweicloudsdkcloudpond.v1.model.rack import Rack
 from huaweicloudsdkcloudpond.v1.model.rack_info import RackInfo
 from huaweicloudsdkcloudpond.v1.model.rack_status import RackStatus
 from huaweicloudsdkcloudpond.v1.model.region_detail import RegionDetail
+from huaweicloudsdkcloudpond.v1.model.scene import Scene
 from huaweicloudsdkcloudpond.v1.model.show_edge_site_request import ShowEdgeSiteRequest
 from huaweicloudsdkcloudpond.v1.model.show_edge_site_response import ShowEdgeSiteResponse
 from huaweicloudsdkcloudpond.v1.model.show_rack_request import ShowRackRequest
@@ -55,6 +58,7 @@ from huaweicloudsdkcloudpond.v1.model.storage_pool import StoragePool
 from huaweicloudsdkcloudpond.v1.model.storage_pool_status import StoragePoolStatus
 from huaweicloudsdkcloudpond.v1.model.storage_type import StorageType
 from huaweicloudsdkcloudpond.v1.model.storage_unit import StorageUnit
+from huaweicloudsdkcloudpond.v1.model.strategy import Strategy
 from huaweicloudsdkcloudpond.v1.model.update_condition import UpdateCondition
 from huaweicloudsdkcloudpond.v1.model.update_edge_site import UpdateEdgeSite
 from huaweicloudsdkcloudpond.v1.model.update_edge_site_request import UpdateEdgeSiteRequest

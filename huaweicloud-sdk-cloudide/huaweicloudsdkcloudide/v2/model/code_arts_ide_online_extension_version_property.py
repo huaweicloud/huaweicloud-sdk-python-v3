@@ -35,7 +35,7 @@ class CodeArtsIDEOnlineExtensionVersionProperty:
     }
 
     def __init__(self, id=None, property_name=None, property_value=None, extension_version_id=None, created_at=None, updated_at=None):
-        """CodeArtsIDEOnlineExtensionVersionProperty
+        r"""CodeArtsIDEOnlineExtensionVersionProperty
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class CodeArtsIDEOnlineExtensionVersionProperty:
 
     @property
     def id(self):
-        """Gets the id of this CodeArtsIDEOnlineExtensionVersionProperty.
+        r"""Gets the id of this CodeArtsIDEOnlineExtensionVersionProperty.
 
         id
 
@@ -89,7 +89,7 @@ class CodeArtsIDEOnlineExtensionVersionProperty:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CodeArtsIDEOnlineExtensionVersionProperty.
+        r"""Sets the id of this CodeArtsIDEOnlineExtensionVersionProperty.
 
         id
 
@@ -100,7 +100,7 @@ class CodeArtsIDEOnlineExtensionVersionProperty:
 
     @property
     def property_name(self):
-        """Gets the property_name of this CodeArtsIDEOnlineExtensionVersionProperty.
+        r"""Gets the property_name of this CodeArtsIDEOnlineExtensionVersionProperty.
 
         参数名
 
@@ -111,7 +111,7 @@ class CodeArtsIDEOnlineExtensionVersionProperty:
 
     @property_name.setter
     def property_name(self, property_name):
-        """Sets the property_name of this CodeArtsIDEOnlineExtensionVersionProperty.
+        r"""Sets the property_name of this CodeArtsIDEOnlineExtensionVersionProperty.
 
         参数名
 
@@ -122,7 +122,7 @@ class CodeArtsIDEOnlineExtensionVersionProperty:
 
     @property
     def property_value(self):
-        """Gets the property_value of this CodeArtsIDEOnlineExtensionVersionProperty.
+        r"""Gets the property_value of this CodeArtsIDEOnlineExtensionVersionProperty.
 
         参数值
 
@@ -133,7 +133,7 @@ class CodeArtsIDEOnlineExtensionVersionProperty:
 
     @property_value.setter
     def property_value(self, property_value):
-        """Sets the property_value of this CodeArtsIDEOnlineExtensionVersionProperty.
+        r"""Sets the property_value of this CodeArtsIDEOnlineExtensionVersionProperty.
 
         参数值
 
@@ -144,7 +144,7 @@ class CodeArtsIDEOnlineExtensionVersionProperty:
 
     @property
     def extension_version_id(self):
-        """Gets the extension_version_id of this CodeArtsIDEOnlineExtensionVersionProperty.
+        r"""Gets the extension_version_id of this CodeArtsIDEOnlineExtensionVersionProperty.
 
         插件版本id
 
@@ -155,7 +155,7 @@ class CodeArtsIDEOnlineExtensionVersionProperty:
 
     @extension_version_id.setter
     def extension_version_id(self, extension_version_id):
-        """Sets the extension_version_id of this CodeArtsIDEOnlineExtensionVersionProperty.
+        r"""Sets the extension_version_id of this CodeArtsIDEOnlineExtensionVersionProperty.
 
         插件版本id
 
@@ -166,7 +166,7 @@ class CodeArtsIDEOnlineExtensionVersionProperty:
 
     @property
     def created_at(self):
-        """Gets the created_at of this CodeArtsIDEOnlineExtensionVersionProperty.
+        r"""Gets the created_at of this CodeArtsIDEOnlineExtensionVersionProperty.
 
         创建时间
 
@@ -177,7 +177,7 @@ class CodeArtsIDEOnlineExtensionVersionProperty:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this CodeArtsIDEOnlineExtensionVersionProperty.
+        r"""Sets the created_at of this CodeArtsIDEOnlineExtensionVersionProperty.
 
         创建时间
 
@@ -188,7 +188,7 @@ class CodeArtsIDEOnlineExtensionVersionProperty:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this CodeArtsIDEOnlineExtensionVersionProperty.
+        r"""Gets the updated_at of this CodeArtsIDEOnlineExtensionVersionProperty.
 
         更新时间
 
@@ -199,7 +199,7 @@ class CodeArtsIDEOnlineExtensionVersionProperty:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this CodeArtsIDEOnlineExtensionVersionProperty.
+        r"""Sets the updated_at of this CodeArtsIDEOnlineExtensionVersionProperty.
 
         更新时间
 

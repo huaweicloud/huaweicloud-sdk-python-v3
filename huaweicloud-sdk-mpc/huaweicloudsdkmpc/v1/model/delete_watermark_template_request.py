@@ -25,7 +25,7 @@ class DeleteWatermarkTemplateRequest:
     }
 
     def __init__(self, template_id=None):
-        """DeleteWatermarkTemplateRequest
+        r"""DeleteWatermarkTemplateRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteWatermarkTemplateRequest:
 
     @property
     def template_id(self):
-        """Gets the template_id of this DeleteWatermarkTemplateRequest.
+        r"""Gets the template_id of this DeleteWatermarkTemplateRequest.
 
         水印模板ID 
 
@@ -53,7 +53,7 @@ class DeleteWatermarkTemplateRequest:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this DeleteWatermarkTemplateRequest.
+        r"""Sets the template_id of this DeleteWatermarkTemplateRequest.
 
         水印模板ID 
 

@@ -27,7 +27,7 @@ class ShowQualityTaskDetailRequest:
     }
 
     def __init__(self, id=None, workspace=None):
-        """ShowQualityTaskDetailRequest
+        r"""ShowQualityTaskDetailRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowQualityTaskDetailRequest:
 
     @property
     def id(self):
-        """Gets the id of this ShowQualityTaskDetailRequest.
+        r"""Gets the id of this ShowQualityTaskDetailRequest.
 
         质量作业ID
 
@@ -59,7 +59,7 @@ class ShowQualityTaskDetailRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowQualityTaskDetailRequest.
+        r"""Sets the id of this ShowQualityTaskDetailRequest.
 
         质量作业ID
 
@@ -70,7 +70,7 @@ class ShowQualityTaskDetailRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowQualityTaskDetailRequest.
+        r"""Gets the workspace of this ShowQualityTaskDetailRequest.
 
         DataArts Studio工作空间ID
 
@@ -81,7 +81,7 @@ class ShowQualityTaskDetailRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowQualityTaskDetailRequest.
+        r"""Sets the workspace of this ShowQualityTaskDetailRequest.
 
         DataArts Studio工作空间ID
 

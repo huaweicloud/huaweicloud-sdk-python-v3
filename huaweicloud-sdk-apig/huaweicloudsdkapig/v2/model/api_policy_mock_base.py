@@ -25,7 +25,7 @@ class ApiPolicyMockBase:
     }
 
     def __init__(self, result_content=None):
-        """ApiPolicyMockBase
+        r"""ApiPolicyMockBase
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ApiPolicyMockBase:
 
     @property
     def result_content(self):
-        """Gets the result_content of this ApiPolicyMockBase.
+        r"""Gets the result_content of this ApiPolicyMockBase.
 
         返回结果
 
@@ -54,7 +54,7 @@ class ApiPolicyMockBase:
 
     @result_content.setter
     def result_content(self, result_content):
-        """Sets the result_content of this ApiPolicyMockBase.
+        r"""Sets the result_content of this ApiPolicyMockBase.
 
         返回结果
 

@@ -27,7 +27,7 @@ class SecurityCompliance:
     }
 
     def __init__(self, password_regex=None, password_regex_description=None):
-        """SecurityCompliance
+        r"""SecurityCompliance
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class SecurityCompliance:
 
     @property
     def password_regex(self):
-        """Gets the password_regex of this SecurityCompliance.
+        r"""Gets the password_regex of this SecurityCompliance.
 
         密码强度策略的正则表达式。
 
@@ -59,7 +59,7 @@ class SecurityCompliance:
 
     @password_regex.setter
     def password_regex(self, password_regex):
-        """Sets the password_regex of this SecurityCompliance.
+        r"""Sets the password_regex of this SecurityCompliance.
 
         密码强度策略的正则表达式。
 
@@ -70,7 +70,7 @@ class SecurityCompliance:
 
     @property
     def password_regex_description(self):
-        """Gets the password_regex_description of this SecurityCompliance.
+        r"""Gets the password_regex_description of this SecurityCompliance.
 
         密码强度策略的描述。
 
@@ -81,7 +81,7 @@ class SecurityCompliance:
 
     @password_regex_description.setter
     def password_regex_description(self, password_regex_description):
-        """Sets the password_regex_description of this SecurityCompliance.
+        r"""Sets the password_regex_description of this SecurityCompliance.
 
         密码强度策略的描述。
 

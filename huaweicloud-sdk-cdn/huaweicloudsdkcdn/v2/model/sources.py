@@ -35,7 +35,7 @@ class Sources:
     }
 
     def __init__(self, domain_id=None, ip_or_domain=None, origin_type=None, obs_bucket_type=None, active_standby=None, enable_obs_web_hosting=None):
-        """Sources
+        r"""Sources
 
         The model defined in huaweicloud sdk
 
@@ -75,7 +75,7 @@ class Sources:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this Sources.
+        r"""Gets the domain_id of this Sources.
 
         加速域名id。
 
@@ -86,7 +86,7 @@ class Sources:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this Sources.
+        r"""Sets the domain_id of this Sources.
 
         加速域名id。
 
@@ -97,7 +97,7 @@ class Sources:
 
     @property
     def ip_or_domain(self):
-        """Gets the ip_or_domain of this Sources.
+        r"""Gets the ip_or_domain of this Sources.
 
         源站IP（非内网IP）或者域名。
 
@@ -108,7 +108,7 @@ class Sources:
 
     @ip_or_domain.setter
     def ip_or_domain(self, ip_or_domain):
-        """Sets the ip_or_domain of this Sources.
+        r"""Sets the ip_or_domain of this Sources.
 
         源站IP（非内网IP）或者域名。
 
@@ -119,7 +119,7 @@ class Sources:
 
     @property
     def origin_type(self):
-        """Gets the origin_type of this Sources.
+        r"""Gets the origin_type of this Sources.
 
         源站类型取值：ipaddr：源站IP、 domain：源站域名、obs_bucket：OBS桶域名。
 
@@ -130,7 +130,7 @@ class Sources:
 
     @origin_type.setter
     def origin_type(self, origin_type):
-        """Sets the origin_type of this Sources.
+        r"""Sets the origin_type of this Sources.
 
         源站类型取值：ipaddr：源站IP、 domain：源站域名、obs_bucket：OBS桶域名。
 
@@ -141,7 +141,7 @@ class Sources:
 
     @property
     def obs_bucket_type(self):
-        """Gets the obs_bucket_type of this Sources.
+        r"""Gets the obs_bucket_type of this Sources.
 
         OBS桶类型。   - private: 私有桶（除桶ACL授权外的其他用户无桶的访问权限）。   - public: 公有桶（任何用户都可以对桶内对象进行读操作）。
 
@@ -152,7 +152,7 @@ class Sources:
 
     @obs_bucket_type.setter
     def obs_bucket_type(self, obs_bucket_type):
-        """Sets the obs_bucket_type of this Sources.
+        r"""Sets the obs_bucket_type of this Sources.
 
         OBS桶类型。   - private: 私有桶（除桶ACL授权外的其他用户无桶的访问权限）。   - public: 公有桶（任何用户都可以对桶内对象进行读操作）。
 
@@ -163,7 +163,7 @@ class Sources:
 
     @property
     def active_standby(self):
-        """Gets the active_standby of this Sources.
+        r"""Gets the active_standby of this Sources.
 
         主备状态，1代表主源站，0代表备源站。
 
@@ -174,7 +174,7 @@ class Sources:
 
     @active_standby.setter
     def active_standby(self, active_standby):
-        """Sets the active_standby of this Sources.
+        r"""Sets the active_standby of this Sources.
 
         主备状态，1代表主源站，0代表备源站。
 
@@ -185,7 +185,7 @@ class Sources:
 
     @property
     def enable_obs_web_hosting(self):
-        """Gets the enable_obs_web_hosting of this Sources.
+        r"""Gets the enable_obs_web_hosting of this Sources.
 
         是否开启OBS静态网站托管(0表示关闭,1表示则为开启)，源站类型为obs_bucket时传递。
 
@@ -196,7 +196,7 @@ class Sources:
 
     @enable_obs_web_hosting.setter
     def enable_obs_web_hosting(self, enable_obs_web_hosting):
-        """Sets the enable_obs_web_hosting of this Sources.
+        r"""Sets the enable_obs_web_hosting of this Sources.
 
         是否开启OBS静态网站托管(0表示关闭,1表示则为开启)，源站类型为obs_bucket时传递。
 

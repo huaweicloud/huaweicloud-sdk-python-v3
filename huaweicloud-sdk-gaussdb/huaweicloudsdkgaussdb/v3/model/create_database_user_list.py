@@ -33,7 +33,7 @@ class CreateDatabaseUserList:
     }
 
     def __init__(self, name=None, comment=None, password=None, hosts=None, databases=None):
-        """CreateDatabaseUserList
+        r"""CreateDatabaseUserList
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class CreateDatabaseUserList:
 
     @property
     def name(self):
-        """Gets the name of this CreateDatabaseUserList.
+        r"""Gets the name of this CreateDatabaseUserList.
 
         数据库用户名称，数据库用户名称在1到32个字符之间，由字母、数字、下划线组成，不能包含其他特殊字符。
 
@@ -80,7 +80,7 @@ class CreateDatabaseUserList:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateDatabaseUserList.
+        r"""Sets the name of this CreateDatabaseUserList.
 
         数据库用户名称，数据库用户名称在1到32个字符之间，由字母、数字、下划线组成，不能包含其他特殊字符。
 
@@ -91,7 +91,7 @@ class CreateDatabaseUserList:
 
     @property
     def comment(self):
-        """Gets the comment of this CreateDatabaseUserList.
+        r"""Gets the comment of this CreateDatabaseUserList.
 
         数据库备注,长度不能超过512个字符，不能包含回车和特殊字符!<\"='>&。  该字段只针对新版本的实例生效，必须大于等于指定的内核版本-2.0.13.0，如果不符合内核版本要求，参考升级内核版本升级至最新。
 
@@ -102,7 +102,7 @@ class CreateDatabaseUserList:
 
     @comment.setter
     def comment(self, comment):
-        """Sets the comment of this CreateDatabaseUserList.
+        r"""Sets the comment of this CreateDatabaseUserList.
 
         数据库备注,长度不能超过512个字符，不能包含回车和特殊字符!<\"='>&。  该字段只针对新版本的实例生效，必须大于等于指定的内核版本-2.0.13.0，如果不符合内核版本要求，参考升级内核版本升级至最新。
 
@@ -113,7 +113,7 @@ class CreateDatabaseUserList:
 
     @property
     def password(self):
-        """Gets the password of this CreateDatabaseUserList.
+        r"""Gets the password of this CreateDatabaseUserList.
 
         数据库用户密码，不能同用户名称相同，非空，至少包含以下字符中的三种：大写字母、小写字母、数字和特殊符号~!@#$%^*-_=+?,()&组成，长度8~32个字符。  建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
 
@@ -124,7 +124,7 @@ class CreateDatabaseUserList:
 
     @password.setter
     def password(self, password):
-        """Sets the password of this CreateDatabaseUserList.
+        r"""Sets the password of this CreateDatabaseUserList.
 
         数据库用户密码，不能同用户名称相同，非空，至少包含以下字符中的三种：大写字母、小写字母、数字和特殊符号~!@#$%^*-_=+?,()&组成，长度8~32个字符。  建议您输入高强度密码，以提高安全性，防止出现密码被暴力破解等安全风险。
 
@@ -135,7 +135,7 @@ class CreateDatabaseUserList:
 
     @property
     def hosts(self):
-        """Gets the hosts of this CreateDatabaseUserList.
+        r"""Gets the hosts of this CreateDatabaseUserList.
 
         主机IP地址，即允许数据库用户在当前主机连接数据库，默认IP地址为%，表示允许所有地址访问TaurusDB实例。若IP地址为“10.10.10.%”，则表示10.10.10.X的IP地址都可以访问该TaurusDB实例。若您需要添加多个IP地址，请用英文逗号隔开（逗号前后都不能加空格），例如192.168.0.1,172.16.213.9，一次最多创建50个。
 
@@ -146,7 +146,7 @@ class CreateDatabaseUserList:
 
     @hosts.setter
     def hosts(self, hosts):
-        """Sets the hosts of this CreateDatabaseUserList.
+        r"""Sets the hosts of this CreateDatabaseUserList.
 
         主机IP地址，即允许数据库用户在当前主机连接数据库，默认IP地址为%，表示允许所有地址访问TaurusDB实例。若IP地址为“10.10.10.%”，则表示10.10.10.X的IP地址都可以访问该TaurusDB实例。若您需要添加多个IP地址，请用英文逗号隔开（逗号前后都不能加空格），例如192.168.0.1,172.16.213.9，一次最多创建50个。
 
@@ -157,7 +157,7 @@ class CreateDatabaseUserList:
 
     @property
     def databases(self):
-        """Gets the databases of this CreateDatabaseUserList.
+        r"""Gets the databases of this CreateDatabaseUserList.
 
         :return: The databases of this CreateDatabaseUserList.
         :rtype: list[:class:`huaweicloudsdkgaussdb.v3.CreateDatabaseList`]
@@ -166,7 +166,7 @@ class CreateDatabaseUserList:
 
     @databases.setter
     def databases(self, databases):
-        """Sets the databases of this CreateDatabaseUserList.
+        r"""Sets the databases of this CreateDatabaseUserList.
 
         :param databases: The databases of this CreateDatabaseUserList.
         :type databases: list[:class:`huaweicloudsdkgaussdb.v3.CreateDatabaseList`]

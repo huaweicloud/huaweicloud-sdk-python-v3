@@ -27,7 +27,7 @@ class CreateCertificateRequest:
     }
 
     def __init__(self, enterprise_project_id=None, body=None):
-        """CreateCertificateRequest
+        r"""CreateCertificateRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateCertificateRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateCertificateRequest.
+        r"""Gets the enterprise_project_id of this CreateCertificateRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -61,7 +61,7 @@ class CreateCertificateRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateCertificateRequest.
+        r"""Sets the enterprise_project_id of this CreateCertificateRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -72,7 +72,7 @@ class CreateCertificateRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateCertificateRequest.
+        r"""Gets the body of this CreateCertificateRequest.
 
         :return: The body of this CreateCertificateRequest.
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateCertificateRequestBody`
@@ -81,7 +81,7 @@ class CreateCertificateRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateCertificateRequest.
+        r"""Sets the body of this CreateCertificateRequest.
 
         :param body: The body of this CreateCertificateRequest.
         :type body: :class:`huaweicloudsdkwaf.v1.CreateCertificateRequestBody`

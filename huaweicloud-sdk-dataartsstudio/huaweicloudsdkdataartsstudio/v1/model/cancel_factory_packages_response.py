@@ -24,7 +24,7 @@ class CancelFactoryPackagesResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CancelFactoryPackagesResponse
+        r"""CancelFactoryPackagesResponse
 
         The model defined in huaweicloud sdk
 

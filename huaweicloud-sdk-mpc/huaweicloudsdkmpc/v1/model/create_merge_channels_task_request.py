@@ -25,7 +25,7 @@ class CreateMergeChannelsTaskRequest:
     }
 
     def __init__(self, body=None):
-        """CreateMergeChannelsTaskRequest
+        r"""CreateMergeChannelsTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateMergeChannelsTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateMergeChannelsTaskRequest.
+        r"""Gets the body of this CreateMergeChannelsTaskRequest.
 
         :return: The body of this CreateMergeChannelsTaskRequest.
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateMergeChannelsReq`
@@ -52,7 +52,7 @@ class CreateMergeChannelsTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateMergeChannelsTaskRequest.
+        r"""Sets the body of this CreateMergeChannelsTaskRequest.
 
         :param body: The body of this CreateMergeChannelsTaskRequest.
         :type body: :class:`huaweicloudsdkmpc.v1.CreateMergeChannelsReq`

@@ -29,7 +29,7 @@ class ShowAlertRuleRequest:
     }
 
     def __init__(self, project_id=None, workspace_id=None, rule_id=None):
-        """ShowAlertRuleRequest
+        r"""ShowAlertRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ShowAlertRuleRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowAlertRuleRequest.
+        r"""Gets the project_id of this ShowAlertRuleRequest.
 
         项目 ID。Project ID.
 
@@ -65,7 +65,7 @@ class ShowAlertRuleRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowAlertRuleRequest.
+        r"""Sets the project_id of this ShowAlertRuleRequest.
 
         项目 ID。Project ID.
 
@@ -76,7 +76,7 @@ class ShowAlertRuleRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ShowAlertRuleRequest.
+        r"""Gets the workspace_id of this ShowAlertRuleRequest.
 
         工作空间 ID。Workspace ID.
 
@@ -87,7 +87,7 @@ class ShowAlertRuleRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ShowAlertRuleRequest.
+        r"""Sets the workspace_id of this ShowAlertRuleRequest.
 
         工作空间 ID。Workspace ID.
 
@@ -98,7 +98,7 @@ class ShowAlertRuleRequest:
 
     @property
     def rule_id(self):
-        """Gets the rule_id of this ShowAlertRuleRequest.
+        r"""Gets the rule_id of this ShowAlertRuleRequest.
 
         告警规则 ID。Alert rule ID.
 
@@ -109,7 +109,7 @@ class ShowAlertRuleRequest:
 
     @rule_id.setter
     def rule_id(self, rule_id):
-        """Sets the rule_id of this ShowAlertRuleRequest.
+        r"""Sets the rule_id of this ShowAlertRuleRequest.
 
         告警规则 ID。Alert rule ID.
 

@@ -53,7 +53,7 @@ class Trigger:
     }
 
     def __init__(self, action=None, app_type=None, application=None, cluster_id=None, cluster_name=None, cluster_ns=None, condition=None, container=None, created_at=None, creator_name=None, enable=None, name=None, trigger_history=None, trigger_mode=None, trigger_type=None):
-        """Trigger
+        r"""Trigger
 
         The model defined in huaweicloud sdk
 
@@ -126,7 +126,7 @@ class Trigger:
 
     @property
     def action(self):
-        """Gets the action of this Trigger.
+        r"""Gets the action of this Trigger.
 
         触发动作，update
 
@@ -137,7 +137,7 @@ class Trigger:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this Trigger.
+        r"""Sets the action of this Trigger.
 
         触发动作，update
 
@@ -148,7 +148,7 @@ class Trigger:
 
     @property
     def app_type(self):
-        """Gets the app_type of this Trigger.
+        r"""Gets the app_type of this Trigger.
 
         应用类型，deployments、statefulsets
 
@@ -159,7 +159,7 @@ class Trigger:
 
     @app_type.setter
     def app_type(self, app_type):
-        """Sets the app_type of this Trigger.
+        r"""Sets the app_type of this Trigger.
 
         应用类型，deployments、statefulsets
 
@@ -170,7 +170,7 @@ class Trigger:
 
     @property
     def application(self):
-        """Gets the application of this Trigger.
+        r"""Gets the application of this Trigger.
 
         应用名
 
@@ -181,7 +181,7 @@ class Trigger:
 
     @application.setter
     def application(self, application):
-        """Sets the application of this Trigger.
+        r"""Sets the application of this Trigger.
 
         应用名
 
@@ -192,7 +192,7 @@ class Trigger:
 
     @property
     def cluster_id(self):
-        """Gets the cluster_id of this Trigger.
+        r"""Gets the cluster_id of this Trigger.
 
         集群ID（cci时为空）
 
@@ -203,7 +203,7 @@ class Trigger:
 
     @cluster_id.setter
     def cluster_id(self, cluster_id):
-        """Sets the cluster_id of this Trigger.
+        r"""Sets the cluster_id of this Trigger.
 
         集群ID（cci时为空）
 
@@ -214,7 +214,7 @@ class Trigger:
 
     @property
     def cluster_name(self):
-        """Gets the cluster_name of this Trigger.
+        r"""Gets the cluster_name of this Trigger.
 
         集群名（cci时为空）
 
@@ -225,7 +225,7 @@ class Trigger:
 
     @cluster_name.setter
     def cluster_name(self, cluster_name):
-        """Sets the cluster_name of this Trigger.
+        r"""Sets the cluster_name of this Trigger.
 
         集群名（cci时为空）
 
@@ -236,7 +236,7 @@ class Trigger:
 
     @property
     def cluster_ns(self):
-        """Gets the cluster_ns of this Trigger.
+        r"""Gets the cluster_ns of this Trigger.
 
         应用名所在的namespace
 
@@ -247,7 +247,7 @@ class Trigger:
 
     @cluster_ns.setter
     def cluster_ns(self, cluster_ns):
-        """Sets the cluster_ns of this Trigger.
+        r"""Sets the cluster_ns of this Trigger.
 
         应用名所在的namespace
 
@@ -258,7 +258,7 @@ class Trigger:
 
     @property
     def condition(self):
-        """Gets the condition of this Trigger.
+        r"""Gets the condition of this Trigger.
 
         触发条件，type为all时为.*,type为tag时为tag名,type为regular时为正则表达式
 
@@ -269,7 +269,7 @@ class Trigger:
 
     @condition.setter
     def condition(self, condition):
-        """Sets the condition of this Trigger.
+        r"""Sets the condition of this Trigger.
 
         触发条件，type为all时为.*,type为tag时为tag名,type为regular时为正则表达式
 
@@ -280,7 +280,7 @@ class Trigger:
 
     @property
     def container(self):
-        """Gets the container of this Trigger.
+        r"""Gets the container of this Trigger.
 
         需更新的container名，默认为所有container
 
@@ -291,7 +291,7 @@ class Trigger:
 
     @container.setter
     def container(self, container):
-        """Sets the container of this Trigger.
+        r"""Sets the container of this Trigger.
 
         需更新的container名，默认为所有container
 
@@ -302,7 +302,7 @@ class Trigger:
 
     @property
     def created_at(self):
-        """Gets the created_at of this Trigger.
+        r"""Gets the created_at of this Trigger.
 
         创建时间
 
@@ -313,7 +313,7 @@ class Trigger:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this Trigger.
+        r"""Sets the created_at of this Trigger.
 
         创建时间
 
@@ -324,7 +324,7 @@ class Trigger:
 
     @property
     def creator_name(self):
-        """Gets the creator_name of this Trigger.
+        r"""Gets the creator_name of this Trigger.
 
         创建人
 
@@ -335,7 +335,7 @@ class Trigger:
 
     @creator_name.setter
     def creator_name(self, creator_name):
-        """Sets the creator_name of this Trigger.
+        r"""Sets the creator_name of this Trigger.
 
         创建人
 
@@ -346,7 +346,7 @@ class Trigger:
 
     @property
     def enable(self):
-        """Gets the enable of this Trigger.
+        r"""Gets the enable of this Trigger.
 
         是否生效
 
@@ -357,7 +357,7 @@ class Trigger:
 
     @enable.setter
     def enable(self, enable):
-        """Sets the enable of this Trigger.
+        r"""Sets the enable of this Trigger.
 
         是否生效
 
@@ -368,7 +368,7 @@ class Trigger:
 
     @property
     def name(self):
-        """Gets the name of this Trigger.
+        r"""Gets the name of this Trigger.
 
         触发器名
 
@@ -379,7 +379,7 @@ class Trigger:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Trigger.
+        r"""Sets the name of this Trigger.
 
         触发器名
 
@@ -390,7 +390,7 @@ class Trigger:
 
     @property
     def trigger_history(self):
-        """Gets the trigger_history of this Trigger.
+        r"""Gets the trigger_history of this Trigger.
 
         触发器历史
 
@@ -401,7 +401,7 @@ class Trigger:
 
     @trigger_history.setter
     def trigger_history(self, trigger_history):
-        """Sets the trigger_history of this Trigger.
+        r"""Sets the trigger_history of this Trigger.
 
         触发器历史
 
@@ -412,7 +412,7 @@ class Trigger:
 
     @property
     def trigger_mode(self):
-        """Gets the trigger_mode of this Trigger.
+        r"""Gets the trigger_mode of this Trigger.
 
         触发器类型，cce、cci
 
@@ -423,7 +423,7 @@ class Trigger:
 
     @trigger_mode.setter
     def trigger_mode(self, trigger_mode):
-        """Sets the trigger_mode of this Trigger.
+        r"""Sets the trigger_mode of this Trigger.
 
         触发器类型，cce、cci
 
@@ -434,7 +434,7 @@ class Trigger:
 
     @property
     def trigger_type(self):
-        """Gets the trigger_type of this Trigger.
+        r"""Gets the trigger_type of this Trigger.
 
         触发条件，all、tag、regular
 
@@ -445,7 +445,7 @@ class Trigger:
 
     @trigger_type.setter
     def trigger_type(self, trigger_type):
-        """Sets the trigger_type of this Trigger.
+        r"""Sets the trigger_type of this Trigger.
 
         触发条件，all、tag、regular
 

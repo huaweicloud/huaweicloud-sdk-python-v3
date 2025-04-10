@@ -29,7 +29,7 @@ class KafkaTargetDetailKeyTransform:
     }
 
     def __init__(self, type=None, value=None, template=None):
-        """KafkaTargetDetailKeyTransform
+        r"""KafkaTargetDetailKeyTransform
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class KafkaTargetDetailKeyTransform:
 
     @property
     def type(self):
-        """Gets the type of this KafkaTargetDetailKeyTransform.
+        r"""Gets the type of this KafkaTargetDetailKeyTransform.
 
         键值规则类型
 
@@ -68,7 +68,7 @@ class KafkaTargetDetailKeyTransform:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this KafkaTargetDetailKeyTransform.
+        r"""Sets the type of this KafkaTargetDetailKeyTransform.
 
         键值规则类型
 
@@ -79,7 +79,7 @@ class KafkaTargetDetailKeyTransform:
 
     @property
     def value(self):
-        """Gets the value of this KafkaTargetDetailKeyTransform.
+        r"""Gets the value of this KafkaTargetDetailKeyTransform.
 
         键值规则，键值规则为VARIABLE，CONSTANT时必填
 
@@ -90,7 +90,7 @@ class KafkaTargetDetailKeyTransform:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this KafkaTargetDetailKeyTransform.
+        r"""Sets the value of this KafkaTargetDetailKeyTransform.
 
         键值规则，键值规则为VARIABLE，CONSTANT时必填
 
@@ -101,7 +101,7 @@ class KafkaTargetDetailKeyTransform:
 
     @property
     def template(self):
-        """Gets the template of this KafkaTargetDetailKeyTransform.
+        r"""Gets the template of this KafkaTargetDetailKeyTransform.
 
         键值规则模板，键值规则为VARIABLE时必填
 
@@ -112,7 +112,7 @@ class KafkaTargetDetailKeyTransform:
 
     @template.setter
     def template(self, template):
-        """Sets the template of this KafkaTargetDetailKeyTransform.
+        r"""Sets the template of this KafkaTargetDetailKeyTransform.
 
         键值规则模板，键值规则为VARIABLE时必填
 

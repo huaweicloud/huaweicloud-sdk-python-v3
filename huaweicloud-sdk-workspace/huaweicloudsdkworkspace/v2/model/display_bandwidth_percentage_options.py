@@ -25,7 +25,7 @@ class DisplayBandwidthPercentageOptions:
     }
 
     def __init__(self, display_bandwidth_percentage_value=None):
-        """DisplayBandwidthPercentageOptions
+        r"""DisplayBandwidthPercentageOptions
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class DisplayBandwidthPercentageOptions:
 
     @property
     def display_bandwidth_percentage_value(self):
-        """Gets the display_bandwidth_percentage_value of this DisplayBandwidthPercentageOptions.
+        r"""Gets the display_bandwidth_percentage_value of this DisplayBandwidthPercentageOptions.
 
         显示带宽百分比控制量（%）。取值范围为[0-100]。默认：65。
 
@@ -54,7 +54,7 @@ class DisplayBandwidthPercentageOptions:
 
     @display_bandwidth_percentage_value.setter
     def display_bandwidth_percentage_value(self, display_bandwidth_percentage_value):
-        """Sets the display_bandwidth_percentage_value of this DisplayBandwidthPercentageOptions.
+        r"""Sets the display_bandwidth_percentage_value of this DisplayBandwidthPercentageOptions.
 
         显示带宽百分比控制量（%）。取值范围为[0-100]。默认：65。
 

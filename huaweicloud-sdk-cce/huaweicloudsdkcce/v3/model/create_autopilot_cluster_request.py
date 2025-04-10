@@ -25,7 +25,7 @@ class CreateAutopilotClusterRequest:
     }
 
     def __init__(self, body=None):
-        """CreateAutopilotClusterRequest
+        r"""CreateAutopilotClusterRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateAutopilotClusterRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAutopilotClusterRequest.
+        r"""Gets the body of this CreateAutopilotClusterRequest.
 
         :return: The body of this CreateAutopilotClusterRequest.
         :rtype: :class:`huaweicloudsdkcce.v3.AutopilotCluster`
@@ -52,7 +52,7 @@ class CreateAutopilotClusterRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAutopilotClusterRequest.
+        r"""Sets the body of this CreateAutopilotClusterRequest.
 
         :param body: The body of this CreateAutopilotClusterRequest.
         :type body: :class:`huaweicloudsdkcce.v3.AutopilotCluster`

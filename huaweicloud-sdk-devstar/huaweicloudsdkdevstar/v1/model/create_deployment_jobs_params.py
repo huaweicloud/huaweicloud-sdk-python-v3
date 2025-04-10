@@ -27,7 +27,7 @@ class CreateDeploymentJobsParams:
     }
 
     def __init__(self, function=None, cci=None):
-        """CreateDeploymentJobsParams
+        r"""CreateDeploymentJobsParams
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class CreateDeploymentJobsParams:
 
     @property
     def function(self):
-        """Gets the function of this CreateDeploymentJobsParams.
+        r"""Gets the function of this CreateDeploymentJobsParams.
 
         :return: The function of this CreateDeploymentJobsParams.
         :rtype: :class:`huaweicloudsdkdevstar.v1.FGSDeploymentJobsParam`
@@ -59,7 +59,7 @@ class CreateDeploymentJobsParams:
 
     @function.setter
     def function(self, function):
-        """Sets the function of this CreateDeploymentJobsParams.
+        r"""Sets the function of this CreateDeploymentJobsParams.
 
         :param function: The function of this CreateDeploymentJobsParams.
         :type function: :class:`huaweicloudsdkdevstar.v1.FGSDeploymentJobsParam`
@@ -68,7 +68,7 @@ class CreateDeploymentJobsParams:
 
     @property
     def cci(self):
-        """Gets the cci of this CreateDeploymentJobsParams.
+        r"""Gets the cci of this CreateDeploymentJobsParams.
 
         :return: The cci of this CreateDeploymentJobsParams.
         :rtype: :class:`huaweicloudsdkdevstar.v1.CciDeploymentJobsParam`
@@ -77,7 +77,7 @@ class CreateDeploymentJobsParams:
 
     @cci.setter
     def cci(self, cci):
-        """Sets the cci of this CreateDeploymentJobsParams.
+        r"""Sets the cci of this CreateDeploymentJobsParams.
 
         :param cci: The cci of this CreateDeploymentJobsParams.
         :type cci: :class:`huaweicloudsdkdevstar.v1.CciDeploymentJobsParam`

@@ -34,7 +34,7 @@ class ListContentCompareDifferenceResponse(SdkResponse):
     }
 
     def __init__(self, count=None, target_meta_is_null=None, source_meta_is_null=None, source_target_meta_not_null=None, contents_infos=None):
-        """ListContentCompareDifferenceResponse
+        r"""ListContentCompareDifferenceResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ListContentCompareDifferenceResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListContentCompareDifferenceResponse.
+        r"""Gets the count of this ListContentCompareDifferenceResponse.
 
         总数量。
 
@@ -83,7 +83,7 @@ class ListContentCompareDifferenceResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListContentCompareDifferenceResponse.
+        r"""Sets the count of this ListContentCompareDifferenceResponse.
 
         总数量。
 
@@ -94,7 +94,7 @@ class ListContentCompareDifferenceResponse(SdkResponse):
 
     @property
     def target_meta_is_null(self):
-        """Gets the target_meta_is_null of this ListContentCompareDifferenceResponse.
+        r"""Gets the target_meta_is_null of this ListContentCompareDifferenceResponse.
 
         对比不一致详情数量：只有源库存在。
 
@@ -105,7 +105,7 @@ class ListContentCompareDifferenceResponse(SdkResponse):
 
     @target_meta_is_null.setter
     def target_meta_is_null(self, target_meta_is_null):
-        """Sets the target_meta_is_null of this ListContentCompareDifferenceResponse.
+        r"""Sets the target_meta_is_null of this ListContentCompareDifferenceResponse.
 
         对比不一致详情数量：只有源库存在。
 
@@ -116,7 +116,7 @@ class ListContentCompareDifferenceResponse(SdkResponse):
 
     @property
     def source_meta_is_null(self):
-        """Gets the source_meta_is_null of this ListContentCompareDifferenceResponse.
+        r"""Gets the source_meta_is_null of this ListContentCompareDifferenceResponse.
 
         对比不一致详情数量：只有目标库存在。
 
@@ -127,7 +127,7 @@ class ListContentCompareDifferenceResponse(SdkResponse):
 
     @source_meta_is_null.setter
     def source_meta_is_null(self, source_meta_is_null):
-        """Sets the source_meta_is_null of this ListContentCompareDifferenceResponse.
+        r"""Sets the source_meta_is_null of this ListContentCompareDifferenceResponse.
 
         对比不一致详情数量：只有目标库存在。
 
@@ -138,7 +138,7 @@ class ListContentCompareDifferenceResponse(SdkResponse):
 
     @property
     def source_target_meta_not_null(self):
-        """Gets the source_target_meta_not_null of this ListContentCompareDifferenceResponse.
+        r"""Gets the source_target_meta_not_null of this ListContentCompareDifferenceResponse.
 
         对比不一致详情数量：源和目标端均存在。
 
@@ -149,7 +149,7 @@ class ListContentCompareDifferenceResponse(SdkResponse):
 
     @source_target_meta_not_null.setter
     def source_target_meta_not_null(self, source_target_meta_not_null):
-        """Sets the source_target_meta_not_null of this ListContentCompareDifferenceResponse.
+        r"""Sets the source_target_meta_not_null of this ListContentCompareDifferenceResponse.
 
         对比不一致详情数量：源和目标端均存在。
 
@@ -160,7 +160,7 @@ class ListContentCompareDifferenceResponse(SdkResponse):
 
     @property
     def contents_infos(self):
-        """Gets the contents_infos of this ListContentCompareDifferenceResponse.
+        r"""Gets the contents_infos of this ListContentCompareDifferenceResponse.
 
         详细内容信息列表。
 
@@ -171,7 +171,7 @@ class ListContentCompareDifferenceResponse(SdkResponse):
 
     @contents_infos.setter
     def contents_infos(self, contents_infos):
-        """Sets the contents_infos of this ListContentCompareDifferenceResponse.
+        r"""Sets the contents_infos of this ListContentCompareDifferenceResponse.
 
         详细内容信息列表。
 

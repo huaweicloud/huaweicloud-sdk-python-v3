@@ -37,7 +37,7 @@ class AppOutputParameterDto:
     }
 
     def __init__(self, name=None, description=None, required=None, type=None, pattern=None, values=None, enum=None):
-        """AppOutputParameterDto
+        r"""AppOutputParameterDto
 
         The model defined in huaweicloud sdk
 
@@ -82,7 +82,7 @@ class AppOutputParameterDto:
 
     @property
     def name(self):
-        """Gets the name of this AppOutputParameterDto.
+        r"""Gets the name of this AppOutputParameterDto.
 
         参数名称，单个应用内唯一。取值范围：长度为[1,32]，以小写字母开头，允许出现中划线(-)、小写字母和数字，且必须以小写字母或数字结尾。
 
@@ -93,7 +93,7 @@ class AppOutputParameterDto:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AppOutputParameterDto.
+        r"""Sets the name of this AppOutputParameterDto.
 
         参数名称，单个应用内唯一。取值范围：长度为[1,32]，以小写字母开头，允许出现中划线(-)、小写字母和数字，且必须以小写字母或数字结尾。
 
@@ -104,7 +104,7 @@ class AppOutputParameterDto:
 
     @property
     def description(self):
-        """Gets the description of this AppOutputParameterDto.
+        r"""Gets the description of this AppOutputParameterDto.
 
         参数描述。取值范围：[0-255]
 
@@ -115,7 +115,7 @@ class AppOutputParameterDto:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AppOutputParameterDto.
+        r"""Sets the description of this AppOutputParameterDto.
 
         参数描述。取值范围：[0-255]
 
@@ -126,7 +126,7 @@ class AppOutputParameterDto:
 
     @property
     def required(self):
-        """Gets the required of this AppOutputParameterDto.
+        r"""Gets the required of this AppOutputParameterDto.
 
         参数是否必须
 
@@ -137,7 +137,7 @@ class AppOutputParameterDto:
 
     @required.setter
     def required(self, required):
-        """Sets the required of this AppOutputParameterDto.
+        r"""Sets the required of this AppOutputParameterDto.
 
         参数是否必须
 
@@ -148,7 +148,7 @@ class AppOutputParameterDto:
 
     @property
     def type(self):
-        """Gets the type of this AppOutputParameterDto.
+        r"""Gets the type of this AppOutputParameterDto.
 
         参数类型。取值：[STRING，FILE，DIRECTORY，ENUM]
 
@@ -159,7 +159,7 @@ class AppOutputParameterDto:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AppOutputParameterDto.
+        r"""Sets the type of this AppOutputParameterDto.
 
         参数类型。取值：[STRING，FILE，DIRECTORY，ENUM]
 
@@ -170,7 +170,7 @@ class AppOutputParameterDto:
 
     @property
     def pattern(self):
-        """Gets the pattern of this AppOutputParameterDto.
+        r"""Gets the pattern of this AppOutputParameterDto.
 
         提示用户参数填写的格式，取值范围：[0-64]。对于STRING类型，匹配字符串内容，比如后缀约束.fastq；对于ENUM类型，可以提示一定要在param_enum列表范围内取值；对于FILE类型，约束文件后缀类型；对于DIRECTORY类型，提示目录下需要包含哪些文件；
 
@@ -181,7 +181,7 @@ class AppOutputParameterDto:
 
     @pattern.setter
     def pattern(self, pattern):
-        """Sets the pattern of this AppOutputParameterDto.
+        r"""Sets the pattern of this AppOutputParameterDto.
 
         提示用户参数填写的格式，取值范围：[0-64]。对于STRING类型，匹配字符串内容，比如后缀约束.fastq；对于ENUM类型，可以提示一定要在param_enum列表范围内取值；对于FILE类型，约束文件后缀类型；对于DIRECTORY类型，提示目录下需要包含哪些文件；
 
@@ -192,7 +192,7 @@ class AppOutputParameterDto:
 
     @property
     def values(self):
-        """Gets the values of this AppOutputParameterDto.
+        r"""Gets the values of this AppOutputParameterDto.
 
         参数取值 如填写，只支持填一项，根据参数类型进行不同的校验
 
@@ -203,7 +203,7 @@ class AppOutputParameterDto:
 
     @values.setter
     def values(self, values):
-        """Sets the values of this AppOutputParameterDto.
+        r"""Sets the values of this AppOutputParameterDto.
 
         参数取值 如填写，只支持填一项，根据参数类型进行不同的校验
 
@@ -214,7 +214,7 @@ class AppOutputParameterDto:
 
     @property
     def enum(self):
-        """Gets the enum of this AppOutputParameterDto.
+        r"""Gets the enum of this AppOutputParameterDto.
 
         枚举参数的取值列表，列表最大长度20，每一项字符串最长128。参数类型为ENUM时需要填此字段
 
@@ -225,7 +225,7 @@ class AppOutputParameterDto:
 
     @enum.setter
     def enum(self, enum):
-        """Sets the enum of this AppOutputParameterDto.
+        r"""Sets the enum of this AppOutputParameterDto.
 
         枚举参数的取值列表，列表最大长度20，每一项字符串最长128。参数类型为ENUM时需要填此字段
 

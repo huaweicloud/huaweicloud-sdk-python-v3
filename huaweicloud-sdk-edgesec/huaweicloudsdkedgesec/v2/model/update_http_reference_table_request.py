@@ -27,7 +27,7 @@ class UpdateHttpReferenceTableRequest:
     }
 
     def __init__(self, table_id=None, body=None):
-        """UpdateHttpReferenceTableRequest
+        r"""UpdateHttpReferenceTableRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateHttpReferenceTableRequest:
 
     @property
     def table_id(self):
-        """Gets the table_id of this UpdateHttpReferenceTableRequest.
+        r"""Gets the table_id of this UpdateHttpReferenceTableRequest.
 
         引用表id
 
@@ -60,7 +60,7 @@ class UpdateHttpReferenceTableRequest:
 
     @table_id.setter
     def table_id(self, table_id):
-        """Sets the table_id of this UpdateHttpReferenceTableRequest.
+        r"""Sets the table_id of this UpdateHttpReferenceTableRequest.
 
         引用表id
 
@@ -71,7 +71,7 @@ class UpdateHttpReferenceTableRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateHttpReferenceTableRequest.
+        r"""Gets the body of this UpdateHttpReferenceTableRequest.
 
         :return: The body of this UpdateHttpReferenceTableRequest.
         :rtype: :class:`huaweicloudsdkedgesec.v2.UpdateHttpReferenceTableRequestBody`
@@ -80,7 +80,7 @@ class UpdateHttpReferenceTableRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateHttpReferenceTableRequest.
+        r"""Sets the body of this UpdateHttpReferenceTableRequest.
 
         :param body: The body of this UpdateHttpReferenceTableRequest.
         :type body: :class:`huaweicloudsdkedgesec.v2.UpdateHttpReferenceTableRequestBody`

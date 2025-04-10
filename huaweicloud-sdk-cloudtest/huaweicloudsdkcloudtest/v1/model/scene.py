@@ -53,7 +53,7 @@ class Scene:
     }
 
     def __init__(self, app=None, create_time=None, creator_name=None, creator_num=None, delete_time=None, deleted=None, id=None, mindmap_id=None, name=None, node_id=None, status=None, status_type=None, tc_counts=None, test_cases=None, update_time=None):
-        """Scene
+        r"""Scene
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class Scene:
 
     @property
     def app(self):
-        """Gets the app of this Scene.
+        r"""Gets the app of this Scene.
 
         app
 
@@ -152,7 +152,7 @@ class Scene:
 
     @app.setter
     def app(self, app):
-        """Sets the app of this Scene.
+        r"""Sets the app of this Scene.
 
         app
 
@@ -163,7 +163,7 @@ class Scene:
 
     @property
     def create_time(self):
-        """Gets the create_time of this Scene.
+        r"""Gets the create_time of this Scene.
 
         创建时间
 
@@ -174,7 +174,7 @@ class Scene:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this Scene.
+        r"""Sets the create_time of this Scene.
 
         创建时间
 
@@ -185,7 +185,7 @@ class Scene:
 
     @property
     def creator_name(self):
-        """Gets the creator_name of this Scene.
+        r"""Gets the creator_name of this Scene.
 
         创建人名称
 
@@ -196,7 +196,7 @@ class Scene:
 
     @creator_name.setter
     def creator_name(self, creator_name):
-        """Sets the creator_name of this Scene.
+        r"""Sets the creator_name of this Scene.
 
         创建人名称
 
@@ -207,7 +207,7 @@ class Scene:
 
     @property
     def creator_num(self):
-        """Gets the creator_num of this Scene.
+        r"""Gets the creator_num of this Scene.
 
         创建人工号
 
@@ -218,7 +218,7 @@ class Scene:
 
     @creator_num.setter
     def creator_num(self, creator_num):
-        """Sets the creator_num of this Scene.
+        r"""Sets the creator_num of this Scene.
 
         创建人工号
 
@@ -229,7 +229,7 @@ class Scene:
 
     @property
     def delete_time(self):
-        """Gets the delete_time of this Scene.
+        r"""Gets the delete_time of this Scene.
 
         删除时间
 
@@ -240,7 +240,7 @@ class Scene:
 
     @delete_time.setter
     def delete_time(self, delete_time):
-        """Sets the delete_time of this Scene.
+        r"""Sets the delete_time of this Scene.
 
         删除时间
 
@@ -251,7 +251,7 @@ class Scene:
 
     @property
     def deleted(self):
-        """Gets the deleted of this Scene.
+        r"""Gets the deleted of this Scene.
 
         是否删除
 
@@ -262,7 +262,7 @@ class Scene:
 
     @deleted.setter
     def deleted(self, deleted):
-        """Sets the deleted of this Scene.
+        r"""Sets the deleted of this Scene.
 
         是否删除
 
@@ -273,7 +273,7 @@ class Scene:
 
     @property
     def id(self):
-        """Gets the id of this Scene.
+        r"""Gets the id of this Scene.
 
         id 主键
 
@@ -284,7 +284,7 @@ class Scene:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Scene.
+        r"""Sets the id of this Scene.
 
         id 主键
 
@@ -295,7 +295,7 @@ class Scene:
 
     @property
     def mindmap_id(self):
-        """Gets the mindmap_id of this Scene.
+        r"""Gets the mindmap_id of this Scene.
 
         脑图id
 
@@ -306,7 +306,7 @@ class Scene:
 
     @mindmap_id.setter
     def mindmap_id(self, mindmap_id):
-        """Sets the mindmap_id of this Scene.
+        r"""Sets the mindmap_id of this Scene.
 
         脑图id
 
@@ -317,7 +317,7 @@ class Scene:
 
     @property
     def name(self):
-        """Gets the name of this Scene.
+        r"""Gets the name of this Scene.
 
         名称
 
@@ -328,7 +328,7 @@ class Scene:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this Scene.
+        r"""Sets the name of this Scene.
 
         名称
 
@@ -339,7 +339,7 @@ class Scene:
 
     @property
     def node_id(self):
-        """Gets the node_id of this Scene.
+        r"""Gets the node_id of this Scene.
 
         节点id
 
@@ -350,7 +350,7 @@ class Scene:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this Scene.
+        r"""Sets the node_id of this Scene.
 
         节点id
 
@@ -361,7 +361,7 @@ class Scene:
 
     @property
     def status(self):
-        """Gets the status of this Scene.
+        r"""Gets the status of this Scene.
 
         状态
 
@@ -372,7 +372,7 @@ class Scene:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this Scene.
+        r"""Sets the status of this Scene.
 
         状态
 
@@ -383,7 +383,7 @@ class Scene:
 
     @property
     def status_type(self):
-        """Gets the status_type of this Scene.
+        r"""Gets the status_type of this Scene.
 
         状态类型
 
@@ -394,7 +394,7 @@ class Scene:
 
     @status_type.setter
     def status_type(self, status_type):
-        """Sets the status_type of this Scene.
+        r"""Sets the status_type of this Scene.
 
         状态类型
 
@@ -405,7 +405,7 @@ class Scene:
 
     @property
     def tc_counts(self):
-        """Gets the tc_counts of this Scene.
+        r"""Gets the tc_counts of this Scene.
 
         tc数量
 
@@ -416,7 +416,7 @@ class Scene:
 
     @tc_counts.setter
     def tc_counts(self, tc_counts):
-        """Sets the tc_counts of this Scene.
+        r"""Sets the tc_counts of this Scene.
 
         tc数量
 
@@ -427,7 +427,7 @@ class Scene:
 
     @property
     def test_cases(self):
-        """Gets the test_cases of this Scene.
+        r"""Gets the test_cases of this Scene.
 
         测试用例
 
@@ -438,7 +438,7 @@ class Scene:
 
     @test_cases.setter
     def test_cases(self, test_cases):
-        """Sets the test_cases of this Scene.
+        r"""Sets the test_cases of this Scene.
 
         测试用例
 
@@ -449,7 +449,7 @@ class Scene:
 
     @property
     def update_time(self):
-        """Gets the update_time of this Scene.
+        r"""Gets the update_time of this Scene.
 
         更新时间
 
@@ -460,7 +460,7 @@ class Scene:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this Scene.
+        r"""Sets the update_time of this Scene.
 
         更新时间
 

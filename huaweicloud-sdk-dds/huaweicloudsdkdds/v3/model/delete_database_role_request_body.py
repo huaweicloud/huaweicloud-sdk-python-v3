@@ -27,7 +27,7 @@ class DeleteDatabaseRoleRequestBody:
     }
 
     def __init__(self, role_name=None, db_name=None):
-        """DeleteDatabaseRoleRequestBody
+        r"""DeleteDatabaseRoleRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteDatabaseRoleRequestBody:
 
     @property
     def role_name(self):
-        """Gets the role_name of this DeleteDatabaseRoleRequestBody.
+        r"""Gets the role_name of this DeleteDatabaseRoleRequestBody.
 
         角色名称。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、中划线、下划线和点。
 
@@ -59,7 +59,7 @@ class DeleteDatabaseRoleRequestBody:
 
     @role_name.setter
     def role_name(self, role_name):
-        """Sets the role_name of this DeleteDatabaseRoleRequestBody.
+        r"""Sets the role_name of this DeleteDatabaseRoleRequestBody.
 
         角色名称。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、中划线、下划线和点。
 
@@ -70,7 +70,7 @@ class DeleteDatabaseRoleRequestBody:
 
     @property
     def db_name(self):
-        """Gets the db_name of this DeleteDatabaseRoleRequestBody.
+        r"""Gets the db_name of this DeleteDatabaseRoleRequestBody.
 
         角色所在的数据库名称。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、下划线。
 
@@ -81,7 +81,7 @@ class DeleteDatabaseRoleRequestBody:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this DeleteDatabaseRoleRequestBody.
+        r"""Sets the db_name of this DeleteDatabaseRoleRequestBody.
 
         角色所在的数据库名称。 - 长度为1~64位，可以包含大写字母（A~Z）、小写字母（a~z）、数字（0~9）、下划线。
 

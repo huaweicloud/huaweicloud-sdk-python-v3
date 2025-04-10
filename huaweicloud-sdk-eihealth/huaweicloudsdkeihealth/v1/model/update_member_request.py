@@ -29,7 +29,7 @@ class UpdateMemberRequest:
     }
 
     def __init__(self, eihealth_project_id=None, user_id=None, body=None):
-        """UpdateMemberRequest
+        r"""UpdateMemberRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateMemberRequest:
 
     @property
     def eihealth_project_id(self):
-        """Gets the eihealth_project_id of this UpdateMemberRequest.
+        r"""Gets the eihealth_project_id of this UpdateMemberRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -66,7 +66,7 @@ class UpdateMemberRequest:
 
     @eihealth_project_id.setter
     def eihealth_project_id(self, eihealth_project_id):
-        """Sets the eihealth_project_id of this UpdateMemberRequest.
+        r"""Sets the eihealth_project_id of this UpdateMemberRequest.
 
         平台项目ID，您可以在平台单击所需的项目名称，进入项目设置页面查看。
 
@@ -77,7 +77,7 @@ class UpdateMemberRequest:
 
     @property
     def user_id(self):
-        """Gets the user_id of this UpdateMemberRequest.
+        r"""Gets the user_id of this UpdateMemberRequest.
 
         更新或者添加项目成员角色的用户id
 
@@ -88,7 +88,7 @@ class UpdateMemberRequest:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this UpdateMemberRequest.
+        r"""Sets the user_id of this UpdateMemberRequest.
 
         更新或者添加项目成员角色的用户id
 
@@ -99,7 +99,7 @@ class UpdateMemberRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateMemberRequest.
+        r"""Gets the body of this UpdateMemberRequest.
 
         :return: The body of this UpdateMemberRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateMemberReq`
@@ -108,7 +108,7 @@ class UpdateMemberRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateMemberRequest.
+        r"""Sets the body of this UpdateMemberRequest.
 
         :param body: The body of this UpdateMemberRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.UpdateMemberReq`

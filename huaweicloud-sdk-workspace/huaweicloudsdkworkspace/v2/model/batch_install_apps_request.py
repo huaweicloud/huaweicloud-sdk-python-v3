@@ -25,7 +25,7 @@ class BatchInstallAppsRequest:
     }
 
     def __init__(self, body=None):
-        """BatchInstallAppsRequest
+        r"""BatchInstallAppsRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchInstallAppsRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchInstallAppsRequest.
+        r"""Gets the body of this BatchInstallAppsRequest.
 
         :return: The body of this BatchInstallAppsRequest.
         :rtype: :class:`huaweicloudsdkworkspace.v2.BatchAutoInstallAppsReq`
@@ -52,7 +52,7 @@ class BatchInstallAppsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchInstallAppsRequest.
+        r"""Sets the body of this BatchInstallAppsRequest.
 
         :param body: The body of this BatchInstallAppsRequest.
         :type body: :class:`huaweicloudsdkworkspace.v2.BatchAutoInstallAppsReq`

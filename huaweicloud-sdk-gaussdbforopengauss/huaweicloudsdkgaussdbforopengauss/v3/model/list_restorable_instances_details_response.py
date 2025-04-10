@@ -28,7 +28,7 @@ class ListRestorableInstancesDetailsResponse(SdkResponse):
     }
 
     def __init__(self, instances=None, total_count=None):
-        """ListRestorableInstancesDetailsResponse
+        r"""ListRestorableInstancesDetailsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListRestorableInstancesDetailsResponse(SdkResponse):
 
     @property
     def instances(self):
-        """Gets the instances of this ListRestorableInstancesDetailsResponse.
+        r"""Gets the instances of this ListRestorableInstancesDetailsResponse.
 
         返回可用于备份恢复的实例列表。
 
@@ -62,7 +62,7 @@ class ListRestorableInstancesDetailsResponse(SdkResponse):
 
     @instances.setter
     def instances(self, instances):
-        """Sets the instances of this ListRestorableInstancesDetailsResponse.
+        r"""Sets the instances of this ListRestorableInstancesDetailsResponse.
 
         返回可用于备份恢复的实例列表。
 
@@ -73,7 +73,7 @@ class ListRestorableInstancesDetailsResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListRestorableInstancesDetailsResponse.
+        r"""Gets the total_count of this ListRestorableInstancesDetailsResponse.
 
         查询出来的实例总数。
 
@@ -84,7 +84,7 @@ class ListRestorableInstancesDetailsResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListRestorableInstancesDetailsResponse.
+        r"""Sets the total_count of this ListRestorableInstancesDetailsResponse.
 
         查询出来的实例总数。
 

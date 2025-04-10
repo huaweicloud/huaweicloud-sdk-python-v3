@@ -27,7 +27,7 @@ class DataBaseInfo:
     }
 
     def __init__(self, database_name=None, db_config_check_results=None):
-        """DataBaseInfo
+        r"""DataBaseInfo
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class DataBaseInfo:
 
     @property
     def database_name(self):
-        """Gets the database_name of this DataBaseInfo.
+        r"""Gets the database_name of this DataBaseInfo.
 
         数据库名称。
 
@@ -61,7 +61,7 @@ class DataBaseInfo:
 
     @database_name.setter
     def database_name(self, database_name):
-        """Sets the database_name of this DataBaseInfo.
+        r"""Sets the database_name of this DataBaseInfo.
 
         数据库名称。
 
@@ -72,7 +72,7 @@ class DataBaseInfo:
 
     @property
     def db_config_check_results(self):
-        """Gets the db_config_check_results of this DataBaseInfo.
+        r"""Gets the db_config_check_results of this DataBaseInfo.
 
         数据库配置检查结果。
 
@@ -83,7 +83,7 @@ class DataBaseInfo:
 
     @db_config_check_results.setter
     def db_config_check_results(self, db_config_check_results):
-        """Sets the db_config_check_results of this DataBaseInfo.
+        r"""Sets the db_config_check_results of this DataBaseInfo.
 
         数据库配置检查结果。
 

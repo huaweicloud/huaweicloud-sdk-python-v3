@@ -30,7 +30,7 @@ class CreateHookResponse(SdkResponse):
     }
 
     def __init__(self, id=None, type=None, callback_url=None):
-        """CreateHookResponse
+        r"""CreateHookResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class CreateHookResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateHookResponse.
+        r"""Gets the id of this CreateHookResponse.
 
         hook ID。
 
@@ -69,7 +69,7 @@ class CreateHookResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateHookResponse.
+        r"""Sets the id of this CreateHookResponse.
 
         hook ID。
 
@@ -80,7 +80,7 @@ class CreateHookResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this CreateHookResponse.
+        r"""Gets the type of this CreateHookResponse.
 
         hook类型。
 
@@ -91,7 +91,7 @@ class CreateHookResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateHookResponse.
+        r"""Sets the type of this CreateHookResponse.
 
         hook类型。
 
@@ -102,7 +102,7 @@ class CreateHookResponse(SdkResponse):
 
     @property
     def callback_url(self):
-        """Gets the callback_url of this CreateHookResponse.
+        r"""Gets the callback_url of this CreateHookResponse.
 
         回滚URL。
 
@@ -113,7 +113,7 @@ class CreateHookResponse(SdkResponse):
 
     @callback_url.setter
     def callback_url(self, callback_url):
-        """Sets the callback_url of this CreateHookResponse.
+        r"""Sets the callback_url of this CreateHookResponse.
 
         回滚URL。
 

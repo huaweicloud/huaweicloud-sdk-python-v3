@@ -27,7 +27,7 @@ class BaseModel:
     }
 
     def __init__(self, id=None, name=None):
-        """BaseModel
+        r"""BaseModel
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class BaseModel:
 
     @property
     def id(self):
-        """Gets the id of this BaseModel.
+        r"""Gets the id of this BaseModel.
 
         基模型id
 
@@ -59,7 +59,7 @@ class BaseModel:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BaseModel.
+        r"""Sets the id of this BaseModel.
 
         基模型id
 
@@ -70,7 +70,7 @@ class BaseModel:
 
     @property
     def name(self):
-        """Gets the name of this BaseModel.
+        r"""Gets the name of this BaseModel.
 
         基模型名称
 
@@ -81,7 +81,7 @@ class BaseModel:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BaseModel.
+        r"""Sets the name of this BaseModel.
 
         基模型名称
 

@@ -26,7 +26,7 @@ class NovaShowFlavorExtraSpecsResponse(SdkResponse):
     }
 
     def __init__(self, extra_specs=None):
-        """NovaShowFlavorExtraSpecsResponse
+        r"""NovaShowFlavorExtraSpecsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class NovaShowFlavorExtraSpecsResponse(SdkResponse):
 
     @property
     def extra_specs(self):
-        """Gets the extra_specs of this NovaShowFlavorExtraSpecsResponse.
+        r"""Gets the extra_specs of this NovaShowFlavorExtraSpecsResponse.
 
         描述弹性云服务器规格的键值对。
 
@@ -55,7 +55,7 @@ class NovaShowFlavorExtraSpecsResponse(SdkResponse):
 
     @extra_specs.setter
     def extra_specs(self, extra_specs):
-        """Sets the extra_specs of this NovaShowFlavorExtraSpecsResponse.
+        r"""Sets the extra_specs of this NovaShowFlavorExtraSpecsResponse.
 
         描述弹性云服务器规格的键值对。
 

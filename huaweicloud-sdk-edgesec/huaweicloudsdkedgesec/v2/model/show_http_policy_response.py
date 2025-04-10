@@ -46,7 +46,7 @@ class ShowHttpPolicyResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, level=None, full_detection=None, action=None, robot_action=None, options=None, bind_host=None, extend=None, third_bot_options=None, wap_managed_ruleset_id=None):
-        """ShowHttpPolicyResponse
+        r"""ShowHttpPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -114,7 +114,7 @@ class ShowHttpPolicyResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowHttpPolicyResponse.
+        r"""Gets the id of this ShowHttpPolicyResponse.
 
         防护策略id
 
@@ -125,7 +125,7 @@ class ShowHttpPolicyResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowHttpPolicyResponse.
+        r"""Sets the id of this ShowHttpPolicyResponse.
 
         防护策略id
 
@@ -136,7 +136,7 @@ class ShowHttpPolicyResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this ShowHttpPolicyResponse.
+        r"""Gets the name of this ShowHttpPolicyResponse.
 
         防护策略名
 
@@ -147,7 +147,7 @@ class ShowHttpPolicyResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ShowHttpPolicyResponse.
+        r"""Sets the name of this ShowHttpPolicyResponse.
 
         防护策略名
 
@@ -158,7 +158,7 @@ class ShowHttpPolicyResponse(SdkResponse):
 
     @property
     def level(self):
-        """Gets the level of this ShowHttpPolicyResponse.
+        r"""Gets the level of this ShowHttpPolicyResponse.
 
         防护等级
 
@@ -169,7 +169,7 @@ class ShowHttpPolicyResponse(SdkResponse):
 
     @level.setter
     def level(self, level):
-        """Sets the level of this ShowHttpPolicyResponse.
+        r"""Sets the level of this ShowHttpPolicyResponse.
 
         防护等级
 
@@ -180,7 +180,7 @@ class ShowHttpPolicyResponse(SdkResponse):
 
     @property
     def full_detection(self):
-        """Gets the full_detection of this ShowHttpPolicyResponse.
+        r"""Gets the full_detection of this ShowHttpPolicyResponse.
 
         精准防护中的检测模式
 
@@ -191,7 +191,7 @@ class ShowHttpPolicyResponse(SdkResponse):
 
     @full_detection.setter
     def full_detection(self, full_detection):
-        """Sets the full_detection of this ShowHttpPolicyResponse.
+        r"""Sets the full_detection of this ShowHttpPolicyResponse.
 
         精准防护中的检测模式
 
@@ -202,7 +202,7 @@ class ShowHttpPolicyResponse(SdkResponse):
 
     @property
     def action(self):
-        """Gets the action of this ShowHttpPolicyResponse.
+        r"""Gets the action of this ShowHttpPolicyResponse.
 
         :return: The action of this ShowHttpPolicyResponse.
         :rtype: :class:`huaweicloudsdkedgesec.v2.HttpPolicyAction`
@@ -211,7 +211,7 @@ class ShowHttpPolicyResponse(SdkResponse):
 
     @action.setter
     def action(self, action):
-        """Sets the action of this ShowHttpPolicyResponse.
+        r"""Sets the action of this ShowHttpPolicyResponse.
 
         :param action: The action of this ShowHttpPolicyResponse.
         :type action: :class:`huaweicloudsdkedgesec.v2.HttpPolicyAction`
@@ -220,7 +220,7 @@ class ShowHttpPolicyResponse(SdkResponse):
 
     @property
     def robot_action(self):
-        """Gets the robot_action of this ShowHttpPolicyResponse.
+        r"""Gets the robot_action of this ShowHttpPolicyResponse.
 
         :return: The robot_action of this ShowHttpPolicyResponse.
         :rtype: :class:`huaweicloudsdkedgesec.v2.HttpPolicyAction`
@@ -229,7 +229,7 @@ class ShowHttpPolicyResponse(SdkResponse):
 
     @robot_action.setter
     def robot_action(self, robot_action):
-        """Sets the robot_action of this ShowHttpPolicyResponse.
+        r"""Sets the robot_action of this ShowHttpPolicyResponse.
 
         :param robot_action: The robot_action of this ShowHttpPolicyResponse.
         :type robot_action: :class:`huaweicloudsdkedgesec.v2.HttpPolicyAction`
@@ -238,7 +238,7 @@ class ShowHttpPolicyResponse(SdkResponse):
 
     @property
     def options(self):
-        """Gets the options of this ShowHttpPolicyResponse.
+        r"""Gets the options of this ShowHttpPolicyResponse.
 
         :return: The options of this ShowHttpPolicyResponse.
         :rtype: :class:`huaweicloudsdkedgesec.v2.HttpPolicyOption`
@@ -247,7 +247,7 @@ class ShowHttpPolicyResponse(SdkResponse):
 
     @options.setter
     def options(self, options):
-        """Sets the options of this ShowHttpPolicyResponse.
+        r"""Sets the options of this ShowHttpPolicyResponse.
 
         :param options: The options of this ShowHttpPolicyResponse.
         :type options: :class:`huaweicloudsdkedgesec.v2.HttpPolicyOption`
@@ -256,7 +256,7 @@ class ShowHttpPolicyResponse(SdkResponse):
 
     @property
     def bind_host(self):
-        """Gets the bind_host of this ShowHttpPolicyResponse.
+        r"""Gets the bind_host of this ShowHttpPolicyResponse.
 
         防护域名的信息
 
@@ -267,7 +267,7 @@ class ShowHttpPolicyResponse(SdkResponse):
 
     @bind_host.setter
     def bind_host(self, bind_host):
-        """Sets the bind_host of this ShowHttpPolicyResponse.
+        r"""Sets the bind_host of this ShowHttpPolicyResponse.
 
         防护域名的信息
 
@@ -278,7 +278,7 @@ class ShowHttpPolicyResponse(SdkResponse):
 
     @property
     def extend(self):
-        """Gets the extend of this ShowHttpPolicyResponse.
+        r"""Gets the extend of this ShowHttpPolicyResponse.
 
         扩展字段
 
@@ -289,7 +289,7 @@ class ShowHttpPolicyResponse(SdkResponse):
 
     @extend.setter
     def extend(self, extend):
-        """Sets the extend of this ShowHttpPolicyResponse.
+        r"""Sets the extend of this ShowHttpPolicyResponse.
 
         扩展字段
 
@@ -300,7 +300,7 @@ class ShowHttpPolicyResponse(SdkResponse):
 
     @property
     def third_bot_options(self):
-        """Gets the third_bot_options of this ShowHttpPolicyResponse.
+        r"""Gets the third_bot_options of this ShowHttpPolicyResponse.
 
         三方BOT操作
 
@@ -311,7 +311,7 @@ class ShowHttpPolicyResponse(SdkResponse):
 
     @third_bot_options.setter
     def third_bot_options(self, third_bot_options):
-        """Sets the third_bot_options of this ShowHttpPolicyResponse.
+        r"""Sets the third_bot_options of this ShowHttpPolicyResponse.
 
         三方BOT操作
 
@@ -322,7 +322,7 @@ class ShowHttpPolicyResponse(SdkResponse):
 
     @property
     def wap_managed_ruleset_id(self):
-        """Gets the wap_managed_ruleset_id of this ShowHttpPolicyResponse.
+        r"""Gets the wap_managed_ruleset_id of this ShowHttpPolicyResponse.
 
         web基础防护托管规则集id
 
@@ -333,7 +333,7 @@ class ShowHttpPolicyResponse(SdkResponse):
 
     @wap_managed_ruleset_id.setter
     def wap_managed_ruleset_id(self, wap_managed_ruleset_id):
-        """Sets the wap_managed_ruleset_id of this ShowHttpPolicyResponse.
+        r"""Sets the wap_managed_ruleset_id of this ShowHttpPolicyResponse.
 
         web基础防护托管规则集id
 

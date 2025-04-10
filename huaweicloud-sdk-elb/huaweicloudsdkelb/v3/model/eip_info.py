@@ -29,7 +29,7 @@ class EipInfo:
     }
 
     def __init__(self, eip_id=None, eip_address=None, ip_version=None):
-        """EipInfo
+        r"""EipInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class EipInfo:
 
     @property
     def eip_id(self):
-        """Gets the eip_id of this EipInfo.
+        r"""Gets the eip_id of this EipInfo.
 
         参数解释：弹性IP的ID。
 
@@ -68,7 +68,7 @@ class EipInfo:
 
     @eip_id.setter
     def eip_id(self, eip_id):
-        """Sets the eip_id of this EipInfo.
+        r"""Sets the eip_id of this EipInfo.
 
         参数解释：弹性IP的ID。
 
@@ -79,7 +79,7 @@ class EipInfo:
 
     @property
     def eip_address(self):
-        """Gets the eip_address of this EipInfo.
+        r"""Gets the eip_address of this EipInfo.
 
         参数解释：弹性IP的IP地址。
 
@@ -90,7 +90,7 @@ class EipInfo:
 
     @eip_address.setter
     def eip_address(self, eip_address):
-        """Sets the eip_address of this EipInfo.
+        r"""Sets the eip_address of this EipInfo.
 
         参数解释：弹性IP的IP地址。
 
@@ -101,7 +101,7 @@ class EipInfo:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this EipInfo.
+        r"""Gets the ip_version of this EipInfo.
 
         参数解释：IP版本号。  取值范围： - 4表示IPv4。 - 6表示IPv6。  [不支持IPv6，请勿设置为6。](tag:dt)
 
@@ -112,7 +112,7 @@ class EipInfo:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this EipInfo.
+        r"""Sets the ip_version of this EipInfo.
 
         参数解释：IP版本号。  取值范围： - 4表示IPv4。 - 6表示IPv6。  [不支持IPv6，请勿设置为6。](tag:dt)
 

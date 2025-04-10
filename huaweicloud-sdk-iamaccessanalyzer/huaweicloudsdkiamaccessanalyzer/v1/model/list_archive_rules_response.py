@@ -28,7 +28,7 @@ class ListArchiveRulesResponse(SdkResponse):
     }
 
     def __init__(self, archive_rules=None, page_info=None):
-        """ListArchiveRulesResponse
+        r"""ListArchiveRulesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListArchiveRulesResponse(SdkResponse):
 
     @property
     def archive_rules(self):
-        """Gets the archive_rules of this ListArchiveRulesResponse.
+        r"""Gets the archive_rules of this ListArchiveRulesResponse.
 
         为指定分析器创建的存档规则的列表。
 
@@ -62,7 +62,7 @@ class ListArchiveRulesResponse(SdkResponse):
 
     @archive_rules.setter
     def archive_rules(self, archive_rules):
-        """Sets the archive_rules of this ListArchiveRulesResponse.
+        r"""Sets the archive_rules of this ListArchiveRulesResponse.
 
         为指定分析器创建的存档规则的列表。
 
@@ -73,7 +73,7 @@ class ListArchiveRulesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListArchiveRulesResponse.
+        r"""Gets the page_info of this ListArchiveRulesResponse.
 
         :return: The page_info of this ListArchiveRulesResponse.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.PageInfo`
@@ -82,7 +82,7 @@ class ListArchiveRulesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListArchiveRulesResponse.
+        r"""Sets the page_info of this ListArchiveRulesResponse.
 
         :param page_info: The page_info of this ListArchiveRulesResponse.
         :type page_info: :class:`huaweicloudsdkiamaccessanalyzer.v1.PageInfo`

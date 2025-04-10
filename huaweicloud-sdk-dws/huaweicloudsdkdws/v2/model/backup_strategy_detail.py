@@ -37,7 +37,7 @@ class BackupStrategyDetail:
     }
 
     def __init__(self, policy_id=None, policy_name=None, backup_strategy=None, backup_type=None, backup_level=None, next_fire_time=None, update_time=None):
-        """BackupStrategyDetail
+        r"""BackupStrategyDetail
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class BackupStrategyDetail:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this BackupStrategyDetail.
+        r"""Gets the policy_id of this BackupStrategyDetail.
 
         策略ID。
 
@@ -96,7 +96,7 @@ class BackupStrategyDetail:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this BackupStrategyDetail.
+        r"""Sets the policy_id of this BackupStrategyDetail.
 
         策略ID。
 
@@ -107,7 +107,7 @@ class BackupStrategyDetail:
 
     @property
     def policy_name(self):
-        """Gets the policy_name of this BackupStrategyDetail.
+        r"""Gets the policy_name of this BackupStrategyDetail.
 
         策略名称。
 
@@ -118,7 +118,7 @@ class BackupStrategyDetail:
 
     @policy_name.setter
     def policy_name(self, policy_name):
-        """Sets the policy_name of this BackupStrategyDetail.
+        r"""Sets the policy_name of this BackupStrategyDetail.
 
         策略名称。
 
@@ -129,7 +129,7 @@ class BackupStrategyDetail:
 
     @property
     def backup_strategy(self):
-        """Gets the backup_strategy of this BackupStrategyDetail.
+        r"""Gets the backup_strategy of this BackupStrategyDetail.
 
         执行策略。
 
@@ -140,7 +140,7 @@ class BackupStrategyDetail:
 
     @backup_strategy.setter
     def backup_strategy(self, backup_strategy):
-        """Sets the backup_strategy of this BackupStrategyDetail.
+        r"""Sets the backup_strategy of this BackupStrategyDetail.
 
         执行策略。
 
@@ -151,7 +151,7 @@ class BackupStrategyDetail:
 
     @property
     def backup_type(self):
-        """Gets the backup_type of this BackupStrategyDetail.
+        r"""Gets the backup_type of this BackupStrategyDetail.
 
         备份类型。
 
@@ -162,7 +162,7 @@ class BackupStrategyDetail:
 
     @backup_type.setter
     def backup_type(self, backup_type):
-        """Sets the backup_type of this BackupStrategyDetail.
+        r"""Sets the backup_type of this BackupStrategyDetail.
 
         备份类型。
 
@@ -173,7 +173,7 @@ class BackupStrategyDetail:
 
     @property
     def backup_level(self):
-        """Gets the backup_level of this BackupStrategyDetail.
+        r"""Gets the backup_level of this BackupStrategyDetail.
 
         备份级别。
 
@@ -184,7 +184,7 @@ class BackupStrategyDetail:
 
     @backup_level.setter
     def backup_level(self, backup_level):
-        """Sets the backup_level of this BackupStrategyDetail.
+        r"""Sets the backup_level of this BackupStrategyDetail.
 
         备份级别。
 
@@ -195,7 +195,7 @@ class BackupStrategyDetail:
 
     @property
     def next_fire_time(self):
-        """Gets the next_fire_time of this BackupStrategyDetail.
+        r"""Gets the next_fire_time of this BackupStrategyDetail.
 
         下次触发时间。
 
@@ -206,7 +206,7 @@ class BackupStrategyDetail:
 
     @next_fire_time.setter
     def next_fire_time(self, next_fire_time):
-        """Sets the next_fire_time of this BackupStrategyDetail.
+        r"""Sets the next_fire_time of this BackupStrategyDetail.
 
         下次触发时间。
 
@@ -217,7 +217,7 @@ class BackupStrategyDetail:
 
     @property
     def update_time(self):
-        """Gets the update_time of this BackupStrategyDetail.
+        r"""Gets the update_time of this BackupStrategyDetail.
 
         更新时间。
 
@@ -228,7 +228,7 @@ class BackupStrategyDetail:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this BackupStrategyDetail.
+        r"""Sets the update_time of this BackupStrategyDetail.
 
         更新时间。
 

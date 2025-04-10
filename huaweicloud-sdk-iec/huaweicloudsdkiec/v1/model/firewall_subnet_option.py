@@ -27,7 +27,7 @@ class FirewallSubnetOption:
     }
 
     def __init__(self, id=None, vpc_id=None):
-        """FirewallSubnetOption
+        r"""FirewallSubnetOption
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class FirewallSubnetOption:
 
     @property
     def id(self):
-        """Gets the id of this FirewallSubnetOption.
+        r"""Gets the id of this FirewallSubnetOption.
 
         子网ID。
 
@@ -60,7 +60,7 @@ class FirewallSubnetOption:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this FirewallSubnetOption.
+        r"""Sets the id of this FirewallSubnetOption.
 
         子网ID。
 
@@ -71,7 +71,7 @@ class FirewallSubnetOption:
 
     @property
     def vpc_id(self):
-        """Gets the vpc_id of this FirewallSubnetOption.
+        r"""Gets the vpc_id of this FirewallSubnetOption.
 
         虚拟私有云ID。
 
@@ -82,7 +82,7 @@ class FirewallSubnetOption:
 
     @vpc_id.setter
     def vpc_id(self, vpc_id):
-        """Sets the vpc_id of this FirewallSubnetOption.
+        r"""Sets the vpc_id of this FirewallSubnetOption.
 
         虚拟私有云ID。
 

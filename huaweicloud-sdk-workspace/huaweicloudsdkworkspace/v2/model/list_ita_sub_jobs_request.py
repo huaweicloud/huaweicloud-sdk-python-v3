@@ -35,7 +35,7 @@ class ListItaSubJobsRequest:
     }
 
     def __init__(self, status=None, job_id=None, job_type=None, desktop_pool_id=None, limit=None, offset=None):
-        """ListItaSubJobsRequest
+        r"""ListItaSubJobsRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListItaSubJobsRequest:
 
     @property
     def status(self):
-        """Gets the status of this ListItaSubJobsRequest.
+        r"""Gets the status of this ListItaSubJobsRequest.
 
         任务状态 - SUCCESS：成功。 - RUNNING：运行中。 - FAILED：失败。 - WAITING：等待。
 
@@ -89,7 +89,7 @@ class ListItaSubJobsRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ListItaSubJobsRequest.
+        r"""Sets the status of this ListItaSubJobsRequest.
 
         任务状态 - SUCCESS：成功。 - RUNNING：运行中。 - FAILED：失败。 - WAITING：等待。
 
@@ -100,7 +100,7 @@ class ListItaSubJobsRequest:
 
     @property
     def job_id(self):
-        """Gets the job_id of this ListItaSubJobsRequest.
+        r"""Gets the job_id of this ListItaSubJobsRequest.
 
         任务ID。
 
@@ -111,7 +111,7 @@ class ListItaSubJobsRequest:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this ListItaSubJobsRequest.
+        r"""Sets the job_id of this ListItaSubJobsRequest.
 
         任务ID。
 
@@ -122,7 +122,7 @@ class ListItaSubJobsRequest:
 
     @property
     def job_type(self):
-        """Gets the job_type of this ListItaSubJobsRequest.
+        r"""Gets the job_type of this ListItaSubJobsRequest.
 
         任务类型  - createDesktops：创建桌面任务。  - applyWorkspace：开通云桌面服务。  - cancelWorkspace：注销云桌面服务。  - expandVolumes:  扩容磁盘。  - addVolumes: 添加磁盘。
 
@@ -133,7 +133,7 @@ class ListItaSubJobsRequest:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this ListItaSubJobsRequest.
+        r"""Sets the job_type of this ListItaSubJobsRequest.
 
         任务类型  - createDesktops：创建桌面任务。  - applyWorkspace：开通云桌面服务。  - cancelWorkspace：注销云桌面服务。  - expandVolumes:  扩容磁盘。  - addVolumes: 添加磁盘。
 
@@ -144,7 +144,7 @@ class ListItaSubJobsRequest:
 
     @property
     def desktop_pool_id(self):
-        """Gets the desktop_pool_id of this ListItaSubJobsRequest.
+        r"""Gets the desktop_pool_id of this ListItaSubJobsRequest.
 
         桌面池ID。
 
@@ -155,7 +155,7 @@ class ListItaSubJobsRequest:
 
     @desktop_pool_id.setter
     def desktop_pool_id(self, desktop_pool_id):
-        """Sets the desktop_pool_id of this ListItaSubJobsRequest.
+        r"""Sets the desktop_pool_id of this ListItaSubJobsRequest.
 
         桌面池ID。
 
@@ -166,7 +166,7 @@ class ListItaSubJobsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListItaSubJobsRequest.
+        r"""Gets the limit of this ListItaSubJobsRequest.
 
         用于分页查询，取值范围0~1000，默认1000。
 
@@ -177,7 +177,7 @@ class ListItaSubJobsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListItaSubJobsRequest.
+        r"""Sets the limit of this ListItaSubJobsRequest.
 
         用于分页查询，取值范围0~1000，默认1000。
 
@@ -188,7 +188,7 @@ class ListItaSubJobsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListItaSubJobsRequest.
+        r"""Gets the offset of this ListItaSubJobsRequest.
 
         用于分页查询，查询的起始记录序号，从0开始。
 
@@ -199,7 +199,7 @@ class ListItaSubJobsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListItaSubJobsRequest.
+        r"""Sets the offset of this ListItaSubJobsRequest.
 
         用于分页查询，查询的起始记录序号，从0开始。
 

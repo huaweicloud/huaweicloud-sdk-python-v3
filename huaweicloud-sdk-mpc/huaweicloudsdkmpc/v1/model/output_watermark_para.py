@@ -25,7 +25,7 @@ class OutputWatermarkPara:
     }
 
     def __init__(self, time_duration=None):
-        """OutputWatermarkPara
+        r"""OutputWatermarkPara
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class OutputWatermarkPara:
 
     @property
     def time_duration(self):
-        """Gets the time_duration of this OutputWatermarkPara.
+        r"""Gets the time_duration of this OutputWatermarkPara.
 
         水印时长 
 
@@ -54,7 +54,7 @@ class OutputWatermarkPara:
 
     @time_duration.setter
     def time_duration(self, time_duration):
-        """Sets the time_duration of this OutputWatermarkPara.
+        r"""Sets the time_duration of this OutputWatermarkPara.
 
         水印时长 
 

@@ -31,7 +31,7 @@ class UpdateApiRequest:
     }
 
     def __init__(self, workspace=None, dlm_type=None, api_id=None, body=None):
-        """UpdateApiRequest
+        r"""UpdateApiRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class UpdateApiRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this UpdateApiRequest.
+        r"""Gets the workspace of this UpdateApiRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -73,7 +73,7 @@ class UpdateApiRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this UpdateApiRequest.
+        r"""Sets the workspace of this UpdateApiRequest.
 
         工作空间ID，获取方法请参见[实例ID和工作空间ID](dataartsstudio_02_0350.xml)。
 
@@ -84,7 +84,7 @@ class UpdateApiRequest:
 
     @property
     def dlm_type(self):
-        """Gets the dlm_type of this UpdateApiRequest.
+        r"""Gets the dlm_type of this UpdateApiRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -95,7 +95,7 @@ class UpdateApiRequest:
 
     @dlm_type.setter
     def dlm_type(self, dlm_type):
-        """Sets the dlm_type of this UpdateApiRequest.
+        r"""Sets the dlm_type of this UpdateApiRequest.
 
         数据服务的版本类型，指定SHARED共享版或EXCLUSIVE专享版。
 
@@ -106,7 +106,7 @@ class UpdateApiRequest:
 
     @property
     def api_id(self):
-        """Gets the api_id of this UpdateApiRequest.
+        r"""Gets the api_id of this UpdateApiRequest.
 
         API ID。
 
@@ -117,7 +117,7 @@ class UpdateApiRequest:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this UpdateApiRequest.
+        r"""Sets the api_id of this UpdateApiRequest.
 
         API ID。
 
@@ -128,7 +128,7 @@ class UpdateApiRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateApiRequest.
+        r"""Gets the body of this UpdateApiRequest.
 
         :return: The body of this UpdateApiRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.Api`
@@ -137,7 +137,7 @@ class UpdateApiRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateApiRequest.
+        r"""Sets the body of this UpdateApiRequest.
 
         :param body: The body of this UpdateApiRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.Api`

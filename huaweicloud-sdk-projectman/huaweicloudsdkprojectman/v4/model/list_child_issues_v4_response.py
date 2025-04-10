@@ -28,7 +28,7 @@ class ListChildIssuesV4Response(SdkResponse):
     }
 
     def __init__(self, issues=None, total=None):
-        """ListChildIssuesV4Response
+        r"""ListChildIssuesV4Response
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListChildIssuesV4Response(SdkResponse):
 
     @property
     def issues(self):
-        """Gets the issues of this ListChildIssuesV4Response.
+        r"""Gets the issues of this ListChildIssuesV4Response.
 
         工作项列表
 
@@ -62,7 +62,7 @@ class ListChildIssuesV4Response(SdkResponse):
 
     @issues.setter
     def issues(self, issues):
-        """Sets the issues of this ListChildIssuesV4Response.
+        r"""Sets the issues of this ListChildIssuesV4Response.
 
         工作项列表
 
@@ -73,7 +73,7 @@ class ListChildIssuesV4Response(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListChildIssuesV4Response.
+        r"""Gets the total of this ListChildIssuesV4Response.
 
         总数
 
@@ -84,7 +84,7 @@ class ListChildIssuesV4Response(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListChildIssuesV4Response.
+        r"""Sets the total of this ListChildIssuesV4Response.
 
         总数
 

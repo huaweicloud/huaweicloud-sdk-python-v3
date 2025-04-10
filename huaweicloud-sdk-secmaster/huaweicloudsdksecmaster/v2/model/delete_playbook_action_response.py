@@ -30,7 +30,7 @@ class DeletePlaybookActionResponse(SdkResponse):
     }
 
     def __init__(self, code=None, message=None, x_request_id=None):
-        """DeletePlaybookActionResponse
+        r"""DeletePlaybookActionResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class DeletePlaybookActionResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this DeletePlaybookActionResponse.
+        r"""Gets the code of this DeletePlaybookActionResponse.
 
         错误码
 
@@ -69,7 +69,7 @@ class DeletePlaybookActionResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this DeletePlaybookActionResponse.
+        r"""Sets the code of this DeletePlaybookActionResponse.
 
         错误码
 
@@ -80,7 +80,7 @@ class DeletePlaybookActionResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this DeletePlaybookActionResponse.
+        r"""Gets the message of this DeletePlaybookActionResponse.
 
         响应消息
 
@@ -91,7 +91,7 @@ class DeletePlaybookActionResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this DeletePlaybookActionResponse.
+        r"""Sets the message of this DeletePlaybookActionResponse.
 
         响应消息
 
@@ -102,7 +102,7 @@ class DeletePlaybookActionResponse(SdkResponse):
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this DeletePlaybookActionResponse.
+        r"""Gets the x_request_id of this DeletePlaybookActionResponse.
 
         :return: The x_request_id of this DeletePlaybookActionResponse.
         :rtype: str
@@ -111,7 +111,7 @@ class DeletePlaybookActionResponse(SdkResponse):
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this DeletePlaybookActionResponse.
+        r"""Sets the x_request_id of this DeletePlaybookActionResponse.
 
         :param x_request_id: The x_request_id of this DeletePlaybookActionResponse.
         :type x_request_id: str

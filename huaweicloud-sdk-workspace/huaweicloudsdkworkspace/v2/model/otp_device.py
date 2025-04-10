@@ -33,7 +33,7 @@ class OtpDevice:
     }
 
     def __init__(self, id=None, user_id=None, user_name=None, status=None, create_time=None):
-        """OtpDevice
+        r"""OtpDevice
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class OtpDevice:
 
     @property
     def id(self):
-        """Gets the id of this OtpDevice.
+        r"""Gets the id of this OtpDevice.
 
         用户otp 信息id。
 
@@ -82,7 +82,7 @@ class OtpDevice:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this OtpDevice.
+        r"""Sets the id of this OtpDevice.
 
         用户otp 信息id。
 
@@ -93,7 +93,7 @@ class OtpDevice:
 
     @property
     def user_id(self):
-        """Gets the user_id of this OtpDevice.
+        r"""Gets the user_id of this OtpDevice.
 
         用户id。
 
@@ -104,7 +104,7 @@ class OtpDevice:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this OtpDevice.
+        r"""Sets the user_id of this OtpDevice.
 
         用户id。
 
@@ -115,7 +115,7 @@ class OtpDevice:
 
     @property
     def user_name(self):
-        """Gets the user_name of this OtpDevice.
+        r"""Gets the user_name of this OtpDevice.
 
         用户名。
 
@@ -126,7 +126,7 @@ class OtpDevice:
 
     @user_name.setter
     def user_name(self, user_name):
-        """Sets the user_name of this OtpDevice.
+        r"""Sets the user_name of this OtpDevice.
 
         用户名。
 
@@ -137,7 +137,7 @@ class OtpDevice:
 
     @property
     def status(self):
-        """Gets the status of this OtpDevice.
+        r"""Gets the status of this OtpDevice.
 
         用户otp设备状态 UNREGISTER: 未绑定 REGISTERED：已绑定
 
@@ -148,7 +148,7 @@ class OtpDevice:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this OtpDevice.
+        r"""Sets the status of this OtpDevice.
 
         用户otp设备状态 UNREGISTER: 未绑定 REGISTERED：已绑定
 
@@ -159,7 +159,7 @@ class OtpDevice:
 
     @property
     def create_time(self):
-        """Gets the create_time of this OtpDevice.
+        r"""Gets the create_time of this OtpDevice.
 
         用户otp设备绑定时间。
 
@@ -170,7 +170,7 @@ class OtpDevice:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this OtpDevice.
+        r"""Sets the create_time of this OtpDevice.
 
         用户otp设备绑定时间。
 

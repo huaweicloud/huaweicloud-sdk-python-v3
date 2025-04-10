@@ -59,7 +59,7 @@ class UpdatePremiumHostRequestBody:
     }
 
     def __init__(self, proxy=None, certificateid=None, certificatename=None, server=None, tls=None, cipher=None, mode=None, locked=None, protect_status=None, access_status=None, timestamp=None, pool_ids=None, block_page=None, traffic_mark=None, circuit_breaker=None, timeout_config=None, flag=None, forward_header_map=None):
-        """UpdatePremiumHostRequestBody
+        r"""UpdatePremiumHostRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -162,7 +162,7 @@ class UpdatePremiumHostRequestBody:
 
     @property
     def proxy(self):
-        """Gets the proxy of this UpdatePremiumHostRequestBody.
+        r"""Gets the proxy of this UpdatePremiumHostRequestBody.
 
         防护域名是否使用代理   - false：不使用代理   - true：使用代理
 
@@ -173,7 +173,7 @@ class UpdatePremiumHostRequestBody:
 
     @proxy.setter
     def proxy(self, proxy):
-        """Sets the proxy of this UpdatePremiumHostRequestBody.
+        r"""Sets the proxy of this UpdatePremiumHostRequestBody.
 
         防护域名是否使用代理   - false：不使用代理   - true：使用代理
 
@@ -184,7 +184,7 @@ class UpdatePremiumHostRequestBody:
 
     @property
     def certificateid(self):
-        """Gets the certificateid of this UpdatePremiumHostRequestBody.
+        r"""Gets the certificateid of this UpdatePremiumHostRequestBody.
 
         证书id，通过查询证书列表接口（ListCertificates）接口获取证书id   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
 
@@ -195,7 +195,7 @@ class UpdatePremiumHostRequestBody:
 
     @certificateid.setter
     def certificateid(self, certificateid):
-        """Sets the certificateid of this UpdatePremiumHostRequestBody.
+        r"""Sets the certificateid of this UpdatePremiumHostRequestBody.
 
         证书id，通过查询证书列表接口（ListCertificates）接口获取证书id   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
 
@@ -206,7 +206,7 @@ class UpdatePremiumHostRequestBody:
 
     @property
     def certificatename(self):
-        """Gets the certificatename of this UpdatePremiumHostRequestBody.
+        r"""Gets the certificatename of this UpdatePremiumHostRequestBody.
 
         证书名   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
 
@@ -217,7 +217,7 @@ class UpdatePremiumHostRequestBody:
 
     @certificatename.setter
     def certificatename(self, certificatename):
-        """Sets the certificatename of this UpdatePremiumHostRequestBody.
+        r"""Sets the certificatename of this UpdatePremiumHostRequestBody.
 
         证书名   - 对外协议为HTTP时不需要填写   - 对外协议HTTPS时为必填参数
 
@@ -228,7 +228,7 @@ class UpdatePremiumHostRequestBody:
 
     @property
     def server(self):
-        """Gets the server of this UpdatePremiumHostRequestBody.
+        r"""Gets the server of this UpdatePremiumHostRequestBody.
 
         防护域名的源站服务器配置信息
 
@@ -239,7 +239,7 @@ class UpdatePremiumHostRequestBody:
 
     @server.setter
     def server(self, server):
-        """Sets the server of this UpdatePremiumHostRequestBody.
+        r"""Sets the server of this UpdatePremiumHostRequestBody.
 
         防护域名的源站服务器配置信息
 
@@ -250,7 +250,7 @@ class UpdatePremiumHostRequestBody:
 
     @property
     def tls(self):
-        """Gets the tls of this UpdatePremiumHostRequestBody.
+        r"""Gets the tls of this UpdatePremiumHostRequestBody.
 
         配置的最低TLS版本（TLS v1.0/TLS v1.1/TLS v1.2）,默认为TLS v1.0版本，对于低于最低TLS版本的请求，将无法正常访问网站
 
@@ -261,7 +261,7 @@ class UpdatePremiumHostRequestBody:
 
     @tls.setter
     def tls(self, tls):
-        """Sets the tls of this UpdatePremiumHostRequestBody.
+        r"""Sets the tls of this UpdatePremiumHostRequestBody.
 
         配置的最低TLS版本（TLS v1.0/TLS v1.1/TLS v1.2）,默认为TLS v1.0版本，对于低于最低TLS版本的请求，将无法正常访问网站
 
@@ -272,7 +272,7 @@ class UpdatePremiumHostRequestBody:
 
     @property
     def cipher(self):
-        """Gets the cipher of this UpdatePremiumHostRequestBody.
+        r"""Gets the cipher of this UpdatePremiumHostRequestBody.
 
         加密套件（cipher_1，cipher_2，cipher_3，cipher_4，cipher_default）：  - cipher_1： 加密算法为ECDHE-ECDSA-AES256-GCM-SHA384:HIGH:!MEDIUM:!LOW:!aNULL:!eNULL:!DES:!MD5:!PSK:!RC4:!kRSA:!SRP:!3DES:!DSS:!EXP:!CAMELLIA:@STRENGTH   - cipher_2：加密算法为EECDH+AESGCM:EDH+AESGCM   - cipher_3：加密算法为ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH   - cipher_4：加密算法为ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!EDH    cipher_5：加密算法为AES128-SHA:AES256-SHA:AES128-SHA256:AES256-SHA256:HIGH:!MEDIUM:!LOW:!aNULL:!eNULL:!EXPORT:!DES:!MD5:!PSK:!RC4:!DHE:@STRENGTH    cipher_6：加密算法为ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256   - cipher_default： 加密算法为ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH:!AESGCM
 
@@ -283,7 +283,7 @@ class UpdatePremiumHostRequestBody:
 
     @cipher.setter
     def cipher(self, cipher):
-        """Sets the cipher of this UpdatePremiumHostRequestBody.
+        r"""Sets the cipher of this UpdatePremiumHostRequestBody.
 
         加密套件（cipher_1，cipher_2，cipher_3，cipher_4，cipher_default）：  - cipher_1： 加密算法为ECDHE-ECDSA-AES256-GCM-SHA384:HIGH:!MEDIUM:!LOW:!aNULL:!eNULL:!DES:!MD5:!PSK:!RC4:!kRSA:!SRP:!3DES:!DSS:!EXP:!CAMELLIA:@STRENGTH   - cipher_2：加密算法为EECDH+AESGCM:EDH+AESGCM   - cipher_3：加密算法为ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-SHA384:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH   - cipher_4：加密算法为ECDHE-RSA-AES256-GCM-SHA384:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!EDH    cipher_5：加密算法为AES128-SHA:AES256-SHA:AES128-SHA256:AES256-SHA256:HIGH:!MEDIUM:!LOW:!aNULL:!eNULL:!EXPORT:!DES:!MD5:!PSK:!RC4:!DHE:@STRENGTH    cipher_6：加密算法为ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256   - cipher_default： 加密算法为ECDHE-RSA-AES256-SHA384:AES256-SHA256:RC4:HIGH:!MD5:!aNULL:!eNULL:!NULL:!DH:!EDH:!AESGCM
 
@@ -294,7 +294,7 @@ class UpdatePremiumHostRequestBody:
 
     @property
     def mode(self):
-        """Gets the mode of this UpdatePremiumHostRequestBody.
+        r"""Gets the mode of this UpdatePremiumHostRequestBody.
 
         独享模式特殊域名模式（仅特殊模式需要，如elb）
 
@@ -305,7 +305,7 @@ class UpdatePremiumHostRequestBody:
 
     @mode.setter
     def mode(self, mode):
-        """Sets the mode of this UpdatePremiumHostRequestBody.
+        r"""Sets the mode of this UpdatePremiumHostRequestBody.
 
         独享模式特殊域名模式（仅特殊模式需要，如elb）
 
@@ -316,7 +316,7 @@ class UpdatePremiumHostRequestBody:
 
     @property
     def locked(self):
-        """Gets the locked of this UpdatePremiumHostRequestBody.
+        r"""Gets the locked of this UpdatePremiumHostRequestBody.
 
         预留参数，用于后期设计冻结域名，解锁域名功能，目前暂不支持
 
@@ -327,7 +327,7 @@ class UpdatePremiumHostRequestBody:
 
     @locked.setter
     def locked(self, locked):
-        """Sets the locked of this UpdatePremiumHostRequestBody.
+        r"""Sets the locked of this UpdatePremiumHostRequestBody.
 
         预留参数，用于后期设计冻结域名，解锁域名功能，目前暂不支持
 
@@ -338,7 +338,7 @@ class UpdatePremiumHostRequestBody:
 
     @property
     def protect_status(self):
-        """Gets the protect_status of this UpdatePremiumHostRequestBody.
+        r"""Gets the protect_status of this UpdatePremiumHostRequestBody.
 
         域名防护状态：  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
 
@@ -349,7 +349,7 @@ class UpdatePremiumHostRequestBody:
 
     @protect_status.setter
     def protect_status(self, protect_status):
-        """Sets the protect_status of this UpdatePremiumHostRequestBody.
+        r"""Sets the protect_status of this UpdatePremiumHostRequestBody.
 
         域名防护状态：  - 0：暂停防护，WAF只转发该域名的请求，不做攻击检测  - 1：开启防护，WAF根据您配置的策略进行攻击检测
 
@@ -360,7 +360,7 @@ class UpdatePremiumHostRequestBody:
 
     @property
     def access_status(self):
-        """Gets the access_status of this UpdatePremiumHostRequestBody.
+        r"""Gets the access_status of this UpdatePremiumHostRequestBody.
 
         域名接入状态，0表示未接入，1表示已接入
 
@@ -371,7 +371,7 @@ class UpdatePremiumHostRequestBody:
 
     @access_status.setter
     def access_status(self, access_status):
-        """Sets the access_status of this UpdatePremiumHostRequestBody.
+        r"""Sets the access_status of this UpdatePremiumHostRequestBody.
 
         域名接入状态，0表示未接入，1表示已接入
 
@@ -382,7 +382,7 @@ class UpdatePremiumHostRequestBody:
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this UpdatePremiumHostRequestBody.
+        r"""Gets the timestamp of this UpdatePremiumHostRequestBody.
 
         时间戳
 
@@ -393,7 +393,7 @@ class UpdatePremiumHostRequestBody:
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this UpdatePremiumHostRequestBody.
+        r"""Sets the timestamp of this UpdatePremiumHostRequestBody.
 
         时间戳
 
@@ -404,7 +404,7 @@ class UpdatePremiumHostRequestBody:
 
     @property
     def pool_ids(self):
-        """Gets the pool_ids of this UpdatePremiumHostRequestBody.
+        r"""Gets the pool_ids of this UpdatePremiumHostRequestBody.
 
         特殊模式域名所属独享引擎组（仅特殊模式需要，如elb）
 
@@ -415,7 +415,7 @@ class UpdatePremiumHostRequestBody:
 
     @pool_ids.setter
     def pool_ids(self, pool_ids):
-        """Sets the pool_ids of this UpdatePremiumHostRequestBody.
+        r"""Sets the pool_ids of this UpdatePremiumHostRequestBody.
 
         特殊模式域名所属独享引擎组（仅特殊模式需要，如elb）
 
@@ -426,7 +426,7 @@ class UpdatePremiumHostRequestBody:
 
     @property
     def block_page(self):
-        """Gets the block_page of this UpdatePremiumHostRequestBody.
+        r"""Gets the block_page of this UpdatePremiumHostRequestBody.
 
         :return: The block_page of this UpdatePremiumHostRequestBody.
         :rtype: :class:`huaweicloudsdkwaf.v1.BlockPage`
@@ -435,7 +435,7 @@ class UpdatePremiumHostRequestBody:
 
     @block_page.setter
     def block_page(self, block_page):
-        """Sets the block_page of this UpdatePremiumHostRequestBody.
+        r"""Sets the block_page of this UpdatePremiumHostRequestBody.
 
         :param block_page: The block_page of this UpdatePremiumHostRequestBody.
         :type block_page: :class:`huaweicloudsdkwaf.v1.BlockPage`
@@ -444,7 +444,7 @@ class UpdatePremiumHostRequestBody:
 
     @property
     def traffic_mark(self):
-        """Gets the traffic_mark of this UpdatePremiumHostRequestBody.
+        r"""Gets the traffic_mark of this UpdatePremiumHostRequestBody.
 
         :return: The traffic_mark of this UpdatePremiumHostRequestBody.
         :rtype: :class:`huaweicloudsdkwaf.v1.TrafficMark`
@@ -453,7 +453,7 @@ class UpdatePremiumHostRequestBody:
 
     @traffic_mark.setter
     def traffic_mark(self, traffic_mark):
-        """Sets the traffic_mark of this UpdatePremiumHostRequestBody.
+        r"""Sets the traffic_mark of this UpdatePremiumHostRequestBody.
 
         :param traffic_mark: The traffic_mark of this UpdatePremiumHostRequestBody.
         :type traffic_mark: :class:`huaweicloudsdkwaf.v1.TrafficMark`
@@ -462,7 +462,7 @@ class UpdatePremiumHostRequestBody:
 
     @property
     def circuit_breaker(self):
-        """Gets the circuit_breaker of this UpdatePremiumHostRequestBody.
+        r"""Gets the circuit_breaker of this UpdatePremiumHostRequestBody.
 
         :return: The circuit_breaker of this UpdatePremiumHostRequestBody.
         :rtype: :class:`huaweicloudsdkwaf.v1.CircuitBreaker`
@@ -471,7 +471,7 @@ class UpdatePremiumHostRequestBody:
 
     @circuit_breaker.setter
     def circuit_breaker(self, circuit_breaker):
-        """Sets the circuit_breaker of this UpdatePremiumHostRequestBody.
+        r"""Sets the circuit_breaker of this UpdatePremiumHostRequestBody.
 
         :param circuit_breaker: The circuit_breaker of this UpdatePremiumHostRequestBody.
         :type circuit_breaker: :class:`huaweicloudsdkwaf.v1.CircuitBreaker`
@@ -480,7 +480,7 @@ class UpdatePremiumHostRequestBody:
 
     @property
     def timeout_config(self):
-        """Gets the timeout_config of this UpdatePremiumHostRequestBody.
+        r"""Gets the timeout_config of this UpdatePremiumHostRequestBody.
 
         :return: The timeout_config of this UpdatePremiumHostRequestBody.
         :rtype: :class:`huaweicloudsdkwaf.v1.TimeoutConfig`
@@ -489,7 +489,7 @@ class UpdatePremiumHostRequestBody:
 
     @timeout_config.setter
     def timeout_config(self, timeout_config):
-        """Sets the timeout_config of this UpdatePremiumHostRequestBody.
+        r"""Sets the timeout_config of this UpdatePremiumHostRequestBody.
 
         :param timeout_config: The timeout_config of this UpdatePremiumHostRequestBody.
         :type timeout_config: :class:`huaweicloudsdkwaf.v1.TimeoutConfig`
@@ -498,7 +498,7 @@ class UpdatePremiumHostRequestBody:
 
     @property
     def flag(self):
-        """Gets the flag of this UpdatePremiumHostRequestBody.
+        r"""Gets the flag of this UpdatePremiumHostRequestBody.
 
         :return: The flag of this UpdatePremiumHostRequestBody.
         :rtype: :class:`huaweicloudsdkwaf.v1.HostFlag`
@@ -507,7 +507,7 @@ class UpdatePremiumHostRequestBody:
 
     @flag.setter
     def flag(self, flag):
-        """Sets the flag of this UpdatePremiumHostRequestBody.
+        r"""Sets the flag of this UpdatePremiumHostRequestBody.
 
         :param flag: The flag of this UpdatePremiumHostRequestBody.
         :type flag: :class:`huaweicloudsdkwaf.v1.HostFlag`
@@ -516,7 +516,7 @@ class UpdatePremiumHostRequestBody:
 
     @property
     def forward_header_map(self):
-        """Gets the forward_header_map of this UpdatePremiumHostRequestBody.
+        r"""Gets the forward_header_map of this UpdatePremiumHostRequestBody.
 
         字段转发配置，WAF会将添加的字段插到header中，转给源站；Key不能跟nginx原生字段重复。Value支持的值包括:   - $time_local   - $request_id   - $connection_requests   - $tenant_id   - $project_id   - $remote_addr   - $remote_port   - $scheme   - $request_method   - $http_host   -$origin_uri   - $request_length   - $ssl_server_name   - $ssl_protocol   - $ssl_curves   - $ssl_session_reused
 
@@ -527,7 +527,7 @@ class UpdatePremiumHostRequestBody:
 
     @forward_header_map.setter
     def forward_header_map(self, forward_header_map):
-        """Sets the forward_header_map of this UpdatePremiumHostRequestBody.
+        r"""Sets the forward_header_map of this UpdatePremiumHostRequestBody.
 
         字段转发配置，WAF会将添加的字段插到header中，转给源站；Key不能跟nginx原生字段重复。Value支持的值包括:   - $time_local   - $request_id   - $connection_requests   - $tenant_id   - $project_id   - $remote_addr   - $remote_port   - $scheme   - $request_method   - $http_host   -$origin_uri   - $request_length   - $ssl_server_name   - $ssl_protocol   - $ssl_curves   - $ssl_session_reused
 

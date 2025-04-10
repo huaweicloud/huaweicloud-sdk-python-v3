@@ -55,7 +55,7 @@ class BizCatalogVO:
     }
 
     def __init__(self, name=None, description=None, guid=None, owner=None, parent_id=None, prev_id=None, next_id=None, id=None, qualified_id=None, create_by=None, update_by=None, create_time=None, update_time=None, bizmetric_num=None, children_num=None, children=None):
-        """BizCatalogVO
+        r"""BizCatalogVO
 
         The model defined in huaweicloud sdk
 
@@ -145,7 +145,7 @@ class BizCatalogVO:
 
     @property
     def name(self):
-        """Gets the name of this BizCatalogVO.
+        r"""Gets the name of this BizCatalogVO.
 
         流程名称。
 
@@ -156,7 +156,7 @@ class BizCatalogVO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this BizCatalogVO.
+        r"""Sets the name of this BizCatalogVO.
 
         流程名称。
 
@@ -167,7 +167,7 @@ class BizCatalogVO:
 
     @property
     def description(self):
-        """Gets the description of this BizCatalogVO.
+        r"""Gets the description of this BizCatalogVO.
 
         描述。
 
@@ -178,7 +178,7 @@ class BizCatalogVO:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this BizCatalogVO.
+        r"""Sets the description of this BizCatalogVO.
 
         描述。
 
@@ -189,7 +189,7 @@ class BizCatalogVO:
 
     @property
     def guid(self):
-        """Gets the guid of this BizCatalogVO.
+        r"""Gets the guid of this BizCatalogVO.
 
         对应资产中ID。
 
@@ -200,7 +200,7 @@ class BizCatalogVO:
 
     @guid.setter
     def guid(self, guid):
-        """Sets the guid of this BizCatalogVO.
+        r"""Sets the guid of this BizCatalogVO.
 
         对应资产中ID。
 
@@ -211,7 +211,7 @@ class BizCatalogVO:
 
     @property
     def owner(self):
-        """Gets the owner of this BizCatalogVO.
+        r"""Gets the owner of this BizCatalogVO.
 
         责任人。
 
@@ -222,7 +222,7 @@ class BizCatalogVO:
 
     @owner.setter
     def owner(self, owner):
-        """Sets the owner of this BizCatalogVO.
+        r"""Sets the owner of this BizCatalogVO.
 
         责任人。
 
@@ -233,7 +233,7 @@ class BizCatalogVO:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this BizCatalogVO.
+        r"""Gets the parent_id of this BizCatalogVO.
 
         父目录ID，没有则为根目录。填写String类型替代Long类型。
 
@@ -244,7 +244,7 @@ class BizCatalogVO:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this BizCatalogVO.
+        r"""Sets the parent_id of this BizCatalogVO.
 
         父目录ID，没有则为根目录。填写String类型替代Long类型。
 
@@ -255,7 +255,7 @@ class BizCatalogVO:
 
     @property
     def prev_id(self):
-        """Gets the prev_id of this BizCatalogVO.
+        r"""Gets the prev_id of this BizCatalogVO.
 
         上个节点ID，没有则为首节点。填写String类型替代Long类型。
 
@@ -266,7 +266,7 @@ class BizCatalogVO:
 
     @prev_id.setter
     def prev_id(self, prev_id):
-        """Sets the prev_id of this BizCatalogVO.
+        r"""Sets the prev_id of this BizCatalogVO.
 
         上个节点ID，没有则为首节点。填写String类型替代Long类型。
 
@@ -277,7 +277,7 @@ class BizCatalogVO:
 
     @property
     def next_id(self):
-        """Gets the next_id of this BizCatalogVO.
+        r"""Gets the next_id of this BizCatalogVO.
 
         下个节点ID，没有则为尾节点。填写String类型替代Long类型。
 
@@ -288,7 +288,7 @@ class BizCatalogVO:
 
     @next_id.setter
     def next_id(self, next_id):
-        """Sets the next_id of this BizCatalogVO.
+        r"""Sets the next_id of this BizCatalogVO.
 
         下个节点ID，没有则为尾节点。填写String类型替代Long类型。
 
@@ -299,7 +299,7 @@ class BizCatalogVO:
 
     @property
     def id(self):
-        """Gets the id of this BizCatalogVO.
+        r"""Gets the id of this BizCatalogVO.
 
         创建时传空，更新时必填。填写String类型替代Long类型。
 
@@ -310,7 +310,7 @@ class BizCatalogVO:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this BizCatalogVO.
+        r"""Sets the id of this BizCatalogVO.
 
         创建时传空，更新时必填。填写String类型替代Long类型。
 
@@ -321,7 +321,7 @@ class BizCatalogVO:
 
     @property
     def qualified_id(self):
-        """Gets the qualified_id of this BizCatalogVO.
+        r"""Gets the qualified_id of this BizCatalogVO.
 
         认证ID，自动生成。
 
@@ -332,7 +332,7 @@ class BizCatalogVO:
 
     @qualified_id.setter
     def qualified_id(self, qualified_id):
-        """Sets the qualified_id of this BizCatalogVO.
+        r"""Sets the qualified_id of this BizCatalogVO.
 
         认证ID，自动生成。
 
@@ -343,7 +343,7 @@ class BizCatalogVO:
 
     @property
     def create_by(self):
-        """Gets the create_by of this BizCatalogVO.
+        r"""Gets the create_by of this BizCatalogVO.
 
         创建人。
 
@@ -354,7 +354,7 @@ class BizCatalogVO:
 
     @create_by.setter
     def create_by(self, create_by):
-        """Sets the create_by of this BizCatalogVO.
+        r"""Sets the create_by of this BizCatalogVO.
 
         创建人。
 
@@ -365,7 +365,7 @@ class BizCatalogVO:
 
     @property
     def update_by(self):
-        """Gets the update_by of this BizCatalogVO.
+        r"""Gets the update_by of this BizCatalogVO.
 
         更新人。
 
@@ -376,7 +376,7 @@ class BizCatalogVO:
 
     @update_by.setter
     def update_by(self, update_by):
-        """Sets the update_by of this BizCatalogVO.
+        r"""Sets the update_by of this BizCatalogVO.
 
         更新人。
 
@@ -387,7 +387,7 @@ class BizCatalogVO:
 
     @property
     def create_time(self):
-        """Gets the create_time of this BizCatalogVO.
+        r"""Gets the create_time of this BizCatalogVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -398,7 +398,7 @@ class BizCatalogVO:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this BizCatalogVO.
+        r"""Sets the create_time of this BizCatalogVO.
 
         创建时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -409,7 +409,7 @@ class BizCatalogVO:
 
     @property
     def update_time(self):
-        """Gets the update_time of this BizCatalogVO.
+        r"""Gets the update_time of this BizCatalogVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -420,7 +420,7 @@ class BizCatalogVO:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this BizCatalogVO.
+        r"""Sets the update_time of this BizCatalogVO.
 
         更新时间，只读，格式遵循RFC3339，精确到秒，UTC时区，即yyyy-mm-ddTHH:MM:SSZ，如1970-01-01T00:00:00Z。
 
@@ -431,7 +431,7 @@ class BizCatalogVO:
 
     @property
     def bizmetric_num(self):
-        """Gets the bizmetric_num of this BizCatalogVO.
+        r"""Gets the bizmetric_num of this BizCatalogVO.
 
         拥有业务指标数量，前端不传。
 
@@ -442,7 +442,7 @@ class BizCatalogVO:
 
     @bizmetric_num.setter
     def bizmetric_num(self, bizmetric_num):
-        """Sets the bizmetric_num of this BizCatalogVO.
+        r"""Sets the bizmetric_num of this BizCatalogVO.
 
         拥有业务指标数量，前端不传。
 
@@ -453,7 +453,7 @@ class BizCatalogVO:
 
     @property
     def children_num(self):
-        """Gets the children_num of this BizCatalogVO.
+        r"""Gets the children_num of this BizCatalogVO.
 
         拥有子流程的数量，不包括子流程的子流程。
 
@@ -464,7 +464,7 @@ class BizCatalogVO:
 
     @children_num.setter
     def children_num(self, children_num):
-        """Sets the children_num of this BizCatalogVO.
+        r"""Sets the children_num of this BizCatalogVO.
 
         拥有子流程的数量，不包括子流程的子流程。
 
@@ -475,7 +475,7 @@ class BizCatalogVO:
 
     @property
     def children(self):
-        """Gets the children of this BizCatalogVO.
+        r"""Gets the children of this BizCatalogVO.
 
         下层子目录，只读。
 
@@ -486,7 +486,7 @@ class BizCatalogVO:
 
     @children.setter
     def children(self, children):
-        """Sets the children of this BizCatalogVO.
+        r"""Sets the children of this BizCatalogVO.
 
         下层子目录，只读。
 

@@ -25,7 +25,7 @@ class UpdateAgentHealthStatusRequestBody:
     }
 
     def __init__(self, update_time=None):
-        """UpdateAgentHealthStatusRequestBody
+        r"""UpdateAgentHealthStatusRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateAgentHealthStatusRequestBody:
 
     @property
     def update_time(self):
-        """Gets the update_time of this UpdateAgentHealthStatusRequestBody.
+        r"""Gets the update_time of this UpdateAgentHealthStatusRequestBody.
 
         探针上次获取全链路应用的更新时间戳（单位：毫秒）
 
@@ -53,7 +53,7 @@ class UpdateAgentHealthStatusRequestBody:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this UpdateAgentHealthStatusRequestBody.
+        r"""Sets the update_time of this UpdateAgentHealthStatusRequestBody.
 
         探针上次获取全链路应用的更新时间戳（单位：毫秒）
 

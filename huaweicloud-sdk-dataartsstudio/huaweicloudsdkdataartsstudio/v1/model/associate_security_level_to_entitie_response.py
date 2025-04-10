@@ -24,7 +24,7 @@ class AssociateSecurityLevelToEntitieResponse(SdkResponse):
     }
 
     def __init__(self):
-        """AssociateSecurityLevelToEntitieResponse
+        r"""AssociateSecurityLevelToEntitieResponse
 
         The model defined in huaweicloud sdk
 

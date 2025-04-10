@@ -28,7 +28,7 @@ class ShowClustersResponse(SdkResponse):
     }
 
     def __init__(self, clusters=None, count=None):
-        """ShowClustersResponse
+        r"""ShowClustersResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowClustersResponse(SdkResponse):
 
     @property
     def clusters(self):
-        """Gets the clusters of this ShowClustersResponse.
+        r"""Gets the clusters of this ShowClustersResponse.
 
         集群对象列表。
 
@@ -62,7 +62,7 @@ class ShowClustersResponse(SdkResponse):
 
     @clusters.setter
     def clusters(self, clusters):
-        """Sets the clusters of this ShowClustersResponse.
+        r"""Sets the clusters of this ShowClustersResponse.
 
         集群对象列表。
 
@@ -73,7 +73,7 @@ class ShowClustersResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ShowClustersResponse.
+        r"""Gets the count of this ShowClustersResponse.
 
         集群对象列表总数。
 
@@ -84,7 +84,7 @@ class ShowClustersResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ShowClustersResponse.
+        r"""Sets the count of this ShowClustersResponse.
 
         集群对象列表总数。
 

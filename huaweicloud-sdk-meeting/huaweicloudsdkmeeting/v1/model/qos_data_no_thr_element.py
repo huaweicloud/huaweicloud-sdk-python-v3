@@ -27,7 +27,7 @@ class QosDataNoThrElement:
     }
 
     def __init__(self, time=None, value=None):
-        """QosDataNoThrElement
+        r"""QosDataNoThrElement
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class QosDataNoThrElement:
 
     @property
     def time(self):
-        """Gets the time of this QosDataNoThrElement.
+        r"""Gets the time of this QosDataNoThrElement.
 
         Qos时间点, UTC时间，格式：yyyy-MM-ddTHH:mm:ss.SSSZ。
 
@@ -61,7 +61,7 @@ class QosDataNoThrElement:
 
     @time.setter
     def time(self, time):
-        """Sets the time of this QosDataNoThrElement.
+        r"""Sets the time of this QosDataNoThrElement.
 
         Qos时间点, UTC时间，格式：yyyy-MM-ddTHH:mm:ss.SSSZ。
 
@@ -72,7 +72,7 @@ class QosDataNoThrElement:
 
     @property
     def value(self):
-        """Gets the value of this QosDataNoThrElement.
+        r"""Gets the value of this QosDataNoThrElement.
 
         QoS值。
 
@@ -83,7 +83,7 @@ class QosDataNoThrElement:
 
     @value.setter
     def value(self, value):
-        """Sets the value of this QosDataNoThrElement.
+        r"""Sets the value of this QosDataNoThrElement.
 
         QoS值。
 

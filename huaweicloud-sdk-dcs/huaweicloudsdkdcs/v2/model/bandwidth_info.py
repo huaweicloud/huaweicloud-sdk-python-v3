@@ -47,7 +47,7 @@ class BandwidthInfo:
     }
 
     def __init__(self, begin_time=None, end_time=None, current_time=None, bandwidth=None, next_expand_time=None, expand_count=None, expand_effect_time=None, expand_interval_time=None, max_expand_count=None, task_running=None, assured_bandwidth=None, max_bandwidth_for_node=None):
-        """BandwidthInfo
+        r"""BandwidthInfo
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class BandwidthInfo:
 
     @property
     def begin_time(self):
-        """Gets the begin_time of this BandwidthInfo.
+        r"""Gets the begin_time of this BandwidthInfo.
 
         临时扩容开始时间
 
@@ -131,7 +131,7 @@ class BandwidthInfo:
 
     @begin_time.setter
     def begin_time(self, begin_time):
-        """Sets the begin_time of this BandwidthInfo.
+        r"""Sets the begin_time of this BandwidthInfo.
 
         临时扩容开始时间
 
@@ -142,7 +142,7 @@ class BandwidthInfo:
 
     @property
     def end_time(self):
-        """Gets the end_time of this BandwidthInfo.
+        r"""Gets the end_time of this BandwidthInfo.
 
         临时扩容结束时间
 
@@ -153,7 +153,7 @@ class BandwidthInfo:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this BandwidthInfo.
+        r"""Sets the end_time of this BandwidthInfo.
 
         临时扩容结束时间
 
@@ -164,7 +164,7 @@ class BandwidthInfo:
 
     @property
     def current_time(self):
-        """Gets the current_time of this BandwidthInfo.
+        r"""Gets the current_time of this BandwidthInfo.
 
         当前时间
 
@@ -175,7 +175,7 @@ class BandwidthInfo:
 
     @current_time.setter
     def current_time(self, current_time):
-        """Sets the current_time of this BandwidthInfo.
+        r"""Sets the current_time of this BandwidthInfo.
 
         当前时间
 
@@ -186,7 +186,7 @@ class BandwidthInfo:
 
     @property
     def bandwidth(self):
-        """Gets the bandwidth of this BandwidthInfo.
+        r"""Gets the bandwidth of this BandwidthInfo.
 
         当前带宽，单位为GB
 
@@ -197,7 +197,7 @@ class BandwidthInfo:
 
     @bandwidth.setter
     def bandwidth(self, bandwidth):
-        """Sets the bandwidth of this BandwidthInfo.
+        r"""Sets the bandwidth of this BandwidthInfo.
 
         当前带宽，单位为GB
 
@@ -208,7 +208,7 @@ class BandwidthInfo:
 
     @property
     def next_expand_time(self):
-        """Gets the next_expand_time of this BandwidthInfo.
+        r"""Gets the next_expand_time of this BandwidthInfo.
 
         下一个扩容时间
 
@@ -219,7 +219,7 @@ class BandwidthInfo:
 
     @next_expand_time.setter
     def next_expand_time(self, next_expand_time):
-        """Sets the next_expand_time of this BandwidthInfo.
+        r"""Sets the next_expand_time of this BandwidthInfo.
 
         下一个扩容时间
 
@@ -230,7 +230,7 @@ class BandwidthInfo:
 
     @property
     def expand_count(self):
-        """Gets the expand_count of this BandwidthInfo.
+        r"""Gets the expand_count of this BandwidthInfo.
 
         扩容数量
 
@@ -241,7 +241,7 @@ class BandwidthInfo:
 
     @expand_count.setter
     def expand_count(self, expand_count):
-        """Sets the expand_count of this BandwidthInfo.
+        r"""Sets the expand_count of this BandwidthInfo.
 
         扩容数量
 
@@ -252,7 +252,7 @@ class BandwidthInfo:
 
     @property
     def expand_effect_time(self):
-        """Gets the expand_effect_time of this BandwidthInfo.
+        r"""Gets the expand_effect_time of this BandwidthInfo.
 
         临时扩容时间间隔
 
@@ -263,7 +263,7 @@ class BandwidthInfo:
 
     @expand_effect_time.setter
     def expand_effect_time(self, expand_effect_time):
-        """Sets the expand_effect_time of this BandwidthInfo.
+        r"""Sets the expand_effect_time of this BandwidthInfo.
 
         临时扩容时间间隔
 
@@ -274,7 +274,7 @@ class BandwidthInfo:
 
     @property
     def expand_interval_time(self):
-        """Gets the expand_interval_time of this BandwidthInfo.
+        r"""Gets the expand_interval_time of this BandwidthInfo.
 
         下一次可以扩容间隔时间
 
@@ -285,7 +285,7 @@ class BandwidthInfo:
 
     @expand_interval_time.setter
     def expand_interval_time(self, expand_interval_time):
-        """Sets the expand_interval_time of this BandwidthInfo.
+        r"""Sets the expand_interval_time of this BandwidthInfo.
 
         下一次可以扩容间隔时间
 
@@ -296,7 +296,7 @@ class BandwidthInfo:
 
     @property
     def max_expand_count(self):
-        """Gets the max_expand_count of this BandwidthInfo.
+        r"""Gets the max_expand_count of this BandwidthInfo.
 
         最大扩容数量
 
@@ -307,7 +307,7 @@ class BandwidthInfo:
 
     @max_expand_count.setter
     def max_expand_count(self, max_expand_count):
-        """Sets the max_expand_count of this BandwidthInfo.
+        r"""Sets the max_expand_count of this BandwidthInfo.
 
         最大扩容数量
 
@@ -318,7 +318,7 @@ class BandwidthInfo:
 
     @property
     def task_running(self):
-        """Gets the task_running of this BandwidthInfo.
+        r"""Gets the task_running of this BandwidthInfo.
 
         任务是否运行
 
@@ -329,7 +329,7 @@ class BandwidthInfo:
 
     @task_running.setter
     def task_running(self, task_running):
-        """Sets the task_running of this BandwidthInfo.
+        r"""Sets the task_running of this BandwidthInfo.
 
         任务是否运行
 
@@ -340,7 +340,7 @@ class BandwidthInfo:
 
     @property
     def assured_bandwidth(self):
-        """Gets the assured_bandwidth of this BandwidthInfo.
+        r"""Gets the assured_bandwidth of this BandwidthInfo.
 
         **参数解释**： 实例基准带宽。 **取值范围**： 不涉及。 
 
@@ -351,7 +351,7 @@ class BandwidthInfo:
 
     @assured_bandwidth.setter
     def assured_bandwidth(self, assured_bandwidth):
-        """Sets the assured_bandwidth of this BandwidthInfo.
+        r"""Sets the assured_bandwidth of this BandwidthInfo.
 
         **参数解释**： 实例基准带宽。 **取值范围**： 不涉及。 
 
@@ -362,7 +362,7 @@ class BandwidthInfo:
 
     @property
     def max_bandwidth_for_node(self):
-        """Gets the max_bandwidth_for_node of this BandwidthInfo.
+        r"""Gets the max_bandwidth_for_node of this BandwidthInfo.
 
         **参数解释**： 节点最大带宽。 **取值范围**： 不涉及。 
 
@@ -373,7 +373,7 @@ class BandwidthInfo:
 
     @max_bandwidth_for_node.setter
     def max_bandwidth_for_node(self, max_bandwidth_for_node):
-        """Sets the max_bandwidth_for_node of this BandwidthInfo.
+        r"""Sets the max_bandwidth_for_node of this BandwidthInfo.
 
         **参数解释**： 节点最大带宽。 **取值范围**： 不涉及。 
 

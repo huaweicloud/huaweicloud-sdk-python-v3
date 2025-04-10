@@ -27,7 +27,7 @@ class ListWorkspacesForUserRequest:
     }
 
     def __init__(self, instance_id=None, user_id=None):
-        """ListWorkspacesForUserRequest
+        r"""ListWorkspacesForUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListWorkspacesForUserRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListWorkspacesForUserRequest.
+        r"""Gets the instance_id of this ListWorkspacesForUserRequest.
 
         DataArtsStudio实例id
 
@@ -59,7 +59,7 @@ class ListWorkspacesForUserRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListWorkspacesForUserRequest.
+        r"""Sets the instance_id of this ListWorkspacesForUserRequest.
 
         DataArtsStudio实例id
 
@@ -70,7 +70,7 @@ class ListWorkspacesForUserRequest:
 
     @property
     def user_id(self):
-        """Gets the user_id of this ListWorkspacesForUserRequest.
+        r"""Gets the user_id of this ListWorkspacesForUserRequest.
 
         用户id
 
@@ -81,7 +81,7 @@ class ListWorkspacesForUserRequest:
 
     @user_id.setter
     def user_id(self, user_id):
-        """Sets the user_id of this ListWorkspacesForUserRequest.
+        r"""Sets the user_id of this ListWorkspacesForUserRequest.
 
         用户id
 

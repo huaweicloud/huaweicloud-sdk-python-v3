@@ -26,7 +26,7 @@ class ShowLatestPublishedAgreementResponse(SdkResponse):
     }
 
     def __init__(self, case_agreement=None):
-        """ShowLatestPublishedAgreementResponse
+        r"""ShowLatestPublishedAgreementResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowLatestPublishedAgreementResponse(SdkResponse):
 
     @property
     def case_agreement(self):
-        """Gets the case_agreement of this ShowLatestPublishedAgreementResponse.
+        r"""Gets the case_agreement of this ShowLatestPublishedAgreementResponse.
 
         :return: The case_agreement of this ShowLatestPublishedAgreementResponse.
         :rtype: :class:`huaweicloudsdkosm.v2.AgreementVO`
@@ -53,7 +53,7 @@ class ShowLatestPublishedAgreementResponse(SdkResponse):
 
     @case_agreement.setter
     def case_agreement(self, case_agreement):
-        """Sets the case_agreement of this ShowLatestPublishedAgreementResponse.
+        r"""Sets the case_agreement of this ShowLatestPublishedAgreementResponse.
 
         :param case_agreement: The case_agreement of this ShowLatestPublishedAgreementResponse.
         :type case_agreement: :class:`huaweicloudsdkosm.v2.AgreementVO`

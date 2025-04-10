@@ -33,7 +33,7 @@ class RestoreSnapshotReq:
     }
 
     def __init__(self, target_cluster=None, indices=None, rename_pattern=None, rename_replacement=None, replace_exist_indices=None):
-        """RestoreSnapshotReq
+        r"""RestoreSnapshotReq
 
         The model defined in huaweicloud sdk
 
@@ -70,7 +70,7 @@ class RestoreSnapshotReq:
 
     @property
     def target_cluster(self):
-        """Gets the target_cluster of this RestoreSnapshotReq.
+        r"""Gets the target_cluster of this RestoreSnapshotReq.
 
         快照要恢复到的集群的ID。
 
@@ -81,7 +81,7 @@ class RestoreSnapshotReq:
 
     @target_cluster.setter
     def target_cluster(self, target_cluster):
-        """Sets the target_cluster of this RestoreSnapshotReq.
+        r"""Sets the target_cluster of this RestoreSnapshotReq.
 
         快照要恢复到的集群的ID。
 
@@ -92,7 +92,7 @@ class RestoreSnapshotReq:
 
     @property
     def indices(self):
-        """Gets the indices of this RestoreSnapshotReq.
+        r"""Gets the indices of this RestoreSnapshotReq.
 
         指定要恢复的索引名称，多个索引用逗号隔开，默认恢复所有索引。支持使用“\\*”匹配多个索引，例如：2018-06\\*，表示恢复名称前缀是2018-06的所有索引的数据。  0～1024个字符，不能包含空格和大写字母，且不能包含\\\"\\\\<|>/?特殊字符。
 
@@ -103,7 +103,7 @@ class RestoreSnapshotReq:
 
     @indices.setter
     def indices(self, indices):
-        """Sets the indices of this RestoreSnapshotReq.
+        r"""Sets the indices of this RestoreSnapshotReq.
 
         指定要恢复的索引名称，多个索引用逗号隔开，默认恢复所有索引。支持使用“\\*”匹配多个索引，例如：2018-06\\*，表示恢复名称前缀是2018-06的所有索引的数据。  0～1024个字符，不能包含空格和大写字母，且不能包含\\\"\\\\<|>/?特殊字符。
 
@@ -114,7 +114,7 @@ class RestoreSnapshotReq:
 
     @property
     def rename_pattern(self):
-        """Gets the rename_pattern of this RestoreSnapshotReq.
+        r"""Gets the rename_pattern of this RestoreSnapshotReq.
 
         匹配要恢复的索引规则，最大支持1024个字符。根据此处定义的过滤条件去恢复符合条件的索引，过滤条件请使用正则表达式。  0～1024个字符，不能包含空格和大写字母，且不能包含\\\"\\\\<|>/?,特殊字符。   renamePattern参数与renameReplacement参数必须同时设置才能生效。
 
@@ -125,7 +125,7 @@ class RestoreSnapshotReq:
 
     @rename_pattern.setter
     def rename_pattern(self, rename_pattern):
-        """Sets the rename_pattern of this RestoreSnapshotReq.
+        r"""Sets the rename_pattern of this RestoreSnapshotReq.
 
         匹配要恢复的索引规则，最大支持1024个字符。根据此处定义的过滤条件去恢复符合条件的索引，过滤条件请使用正则表达式。  0～1024个字符，不能包含空格和大写字母，且不能包含\\\"\\\\<|>/?,特殊字符。   renamePattern参数与renameReplacement参数必须同时设置才能生效。
 
@@ -136,7 +136,7 @@ class RestoreSnapshotReq:
 
     @property
     def rename_replacement(self):
-        """Gets the rename_replacement of this RestoreSnapshotReq.
+        r"""Gets the rename_replacement of this RestoreSnapshotReq.
 
         索引重命名的规则。0～1024个字符，不能包含空格和大写字母，且不能包含\\\"\\\\<|>/?,特殊字符。例如，“restored_index_$1”表示在所有恢复的索引名称前面加上“restored_”。    renamePattern参数与renameReplacement参数必须同时设置才能生效。
 
@@ -147,7 +147,7 @@ class RestoreSnapshotReq:
 
     @rename_replacement.setter
     def rename_replacement(self, rename_replacement):
-        """Sets the rename_replacement of this RestoreSnapshotReq.
+        r"""Sets the rename_replacement of this RestoreSnapshotReq.
 
         索引重命名的规则。0～1024个字符，不能包含空格和大写字母，且不能包含\\\"\\\\<|>/?,特殊字符。例如，“restored_index_$1”表示在所有恢复的索引名称前面加上“restored_”。    renamePattern参数与renameReplacement参数必须同时设置才能生效。
 
@@ -158,7 +158,7 @@ class RestoreSnapshotReq:
 
     @property
     def replace_exist_indices(self):
-        """Gets the replace_exist_indices of this RestoreSnapshotReq.
+        r"""Gets the replace_exist_indices of this RestoreSnapshotReq.
 
         替换已存在的索引。    
 
@@ -169,7 +169,7 @@ class RestoreSnapshotReq:
 
     @replace_exist_indices.setter
     def replace_exist_indices(self, replace_exist_indices):
-        """Sets the replace_exist_indices of this RestoreSnapshotReq.
+        r"""Sets the replace_exist_indices of this RestoreSnapshotReq.
 
         替换已存在的索引。    
 

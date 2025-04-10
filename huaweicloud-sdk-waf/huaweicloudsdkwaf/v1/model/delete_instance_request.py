@@ -27,7 +27,7 @@ class DeleteInstanceRequest:
     }
 
     def __init__(self, enterprise_project_id=None, instance_id=None):
-        """DeleteInstanceRequest
+        r"""DeleteInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class DeleteInstanceRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this DeleteInstanceRequest.
+        r"""Gets the enterprise_project_id of this DeleteInstanceRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -60,7 +60,7 @@ class DeleteInstanceRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this DeleteInstanceRequest.
+        r"""Sets the enterprise_project_id of this DeleteInstanceRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id
 
@@ -71,7 +71,7 @@ class DeleteInstanceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteInstanceRequest.
+        r"""Gets the instance_id of this DeleteInstanceRequest.
 
         独享引擎ID（通过调用WAF的ListInstance接口获取所有独享引擎信息查询独享引擎ID）
 
@@ -82,7 +82,7 @@ class DeleteInstanceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteInstanceRequest.
+        r"""Sets the instance_id of this DeleteInstanceRequest.
 
         独享引擎ID（通过调用WAF的ListInstance接口获取所有独享引擎信息查询独享引擎ID）
 

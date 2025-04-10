@@ -31,7 +31,7 @@ class ResetActivecodeRequest:
     }
 
     def __init__(self, x_request_id=None, accept_language=None, sn=None, body=None):
-        """ResetActivecodeRequest
+        r"""ResetActivecodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ResetActivecodeRequest:
 
     @property
     def x_request_id(self):
-        """Gets the x_request_id of this ResetActivecodeRequest.
+        r"""Gets the x_request_id of this ResetActivecodeRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -74,7 +74,7 @@ class ResetActivecodeRequest:
 
     @x_request_id.setter
     def x_request_id(self, x_request_id):
-        """Sets the x_request_id of this ResetActivecodeRequest.
+        r"""Sets the x_request_id of this ResetActivecodeRequest.
 
         请求requestId，用来标识一路请求，用于问题跟踪定位，建议使用UUID，若不携带，则后台自动生成。
 
@@ -85,7 +85,7 @@ class ResetActivecodeRequest:
 
     @property
     def accept_language(self):
-        """Gets the accept_language of this ResetActivecodeRequest.
+        r"""Gets the accept_language of this ResetActivecodeRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -96,7 +96,7 @@ class ResetActivecodeRequest:
 
     @accept_language.setter
     def accept_language(self, accept_language):
-        """Sets the accept_language of this ResetActivecodeRequest.
+        r"""Sets the accept_language of this ResetActivecodeRequest.
 
         语言参数，默认为中文zh-CN，英文为en-US。
 
@@ -107,7 +107,7 @@ class ResetActivecodeRequest:
 
     @property
     def sn(self):
-        """Gets the sn of this ResetActivecodeRequest.
+        r"""Gets the sn of this ResetActivecodeRequest.
 
         终端序列号，仅可包含数字、字母和下划线。
 
@@ -118,7 +118,7 @@ class ResetActivecodeRequest:
 
     @sn.setter
     def sn(self, sn):
-        """Sets the sn of this ResetActivecodeRequest.
+        r"""Sets the sn of this ResetActivecodeRequest.
 
         终端序列号，仅可包含数字、字母和下划线。
 
@@ -129,7 +129,7 @@ class ResetActivecodeRequest:
 
     @property
     def body(self):
-        """Gets the body of this ResetActivecodeRequest.
+        r"""Gets the body of this ResetActivecodeRequest.
 
         :return: The body of this ResetActivecodeRequest.
         :rtype: :class:`huaweicloudsdkmeeting.v1.ActiveDTO`
@@ -138,7 +138,7 @@ class ResetActivecodeRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ResetActivecodeRequest.
+        r"""Sets the body of this ResetActivecodeRequest.
 
         :param body: The body of this ResetActivecodeRequest.
         :type body: :class:`huaweicloudsdkmeeting.v1.ActiveDTO`

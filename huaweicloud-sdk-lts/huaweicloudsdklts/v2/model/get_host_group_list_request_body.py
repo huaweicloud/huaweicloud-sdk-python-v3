@@ -27,7 +27,7 @@ class GetHostGroupListRequestBody:
     }
 
     def __init__(self, host_group_id_list=None, filter=None):
-        """GetHostGroupListRequestBody
+        r"""GetHostGroupListRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class GetHostGroupListRequestBody:
 
     @property
     def host_group_id_list(self):
-        """Gets the host_group_id_list of this GetHostGroupListRequestBody.
+        r"""Gets the host_group_id_list of this GetHostGroupListRequestBody.
 
         主机组ID
 
@@ -60,7 +60,7 @@ class GetHostGroupListRequestBody:
 
     @host_group_id_list.setter
     def host_group_id_list(self, host_group_id_list):
-        """Sets the host_group_id_list of this GetHostGroupListRequestBody.
+        r"""Sets the host_group_id_list of this GetHostGroupListRequestBody.
 
         主机组ID
 
@@ -71,7 +71,7 @@ class GetHostGroupListRequestBody:
 
     @property
     def filter(self):
-        """Gets the filter of this GetHostGroupListRequestBody.
+        r"""Gets the filter of this GetHostGroupListRequestBody.
 
         :return: The filter of this GetHostGroupListRequestBody.
         :rtype: :class:`huaweicloudsdklts.v2.GetHostGroupListFilter`
@@ -80,7 +80,7 @@ class GetHostGroupListRequestBody:
 
     @filter.setter
     def filter(self, filter):
-        """Sets the filter of this GetHostGroupListRequestBody.
+        r"""Sets the filter of this GetHostGroupListRequestBody.
 
         :param filter: The filter of this GetHostGroupListRequestBody.
         :type filter: :class:`huaweicloudsdklts.v2.GetHostGroupListFilter`

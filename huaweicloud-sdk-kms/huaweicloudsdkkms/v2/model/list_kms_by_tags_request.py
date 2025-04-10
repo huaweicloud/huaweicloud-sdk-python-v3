@@ -27,7 +27,7 @@ class ListKmsByTagsRequest:
     }
 
     def __init__(self, resource_instances=None, body=None):
-        """ListKmsByTagsRequest
+        r"""ListKmsByTagsRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ListKmsByTagsRequest:
 
     @property
     def resource_instances(self):
-        """Gets the resource_instances of this ListKmsByTagsRequest.
+        r"""Gets the resource_instances of this ListKmsByTagsRequest.
 
         资源实例，固定值为resource_instances
 
@@ -60,7 +60,7 @@ class ListKmsByTagsRequest:
 
     @resource_instances.setter
     def resource_instances(self, resource_instances):
-        """Sets the resource_instances of this ListKmsByTagsRequest.
+        r"""Sets the resource_instances of this ListKmsByTagsRequest.
 
         资源实例，固定值为resource_instances
 
@@ -71,7 +71,7 @@ class ListKmsByTagsRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListKmsByTagsRequest.
+        r"""Gets the body of this ListKmsByTagsRequest.
 
         :return: The body of this ListKmsByTagsRequest.
         :rtype: :class:`huaweicloudsdkkms.v2.ListKmsByTagsRequestBody`
@@ -80,7 +80,7 @@ class ListKmsByTagsRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListKmsByTagsRequest.
+        r"""Sets the body of this ListKmsByTagsRequest.
 
         :param body: The body of this ListKmsByTagsRequest.
         :type body: :class:`huaweicloudsdkkms.v2.ListKmsByTagsRequestBody`

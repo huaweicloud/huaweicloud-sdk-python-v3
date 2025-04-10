@@ -54,7 +54,7 @@ class ShowAutoScalingPolicyResponse(SdkResponse):
     }
 
     def __init__(self, id=None, instance_id=None, instance_name=None, status=None, monitor_cycle=None, silence_cycle=None, enlarge_threshold=None, max_flavor=None, reduce_enabled=None, min_flavor=None, silence_start_at=None, scaling_strategy=None, max_read_only_count=None, min_read_only_count=None, read_only_weight=None):
-        """ShowAutoScalingPolicyResponse
+        r"""ShowAutoScalingPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -142,7 +142,7 @@ class ShowAutoScalingPolicyResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this ShowAutoScalingPolicyResponse.
+        r"""Gets the id of this ShowAutoScalingPolicyResponse.
 
         自动变配策略ID。
 
@@ -153,7 +153,7 @@ class ShowAutoScalingPolicyResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ShowAutoScalingPolicyResponse.
+        r"""Sets the id of this ShowAutoScalingPolicyResponse.
 
         自动变配策略ID。
 
@@ -164,7 +164,7 @@ class ShowAutoScalingPolicyResponse(SdkResponse):
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowAutoScalingPolicyResponse.
+        r"""Gets the instance_id of this ShowAutoScalingPolicyResponse.
 
         实例ID。
 
@@ -175,7 +175,7 @@ class ShowAutoScalingPolicyResponse(SdkResponse):
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowAutoScalingPolicyResponse.
+        r"""Sets the instance_id of this ShowAutoScalingPolicyResponse.
 
         实例ID。
 
@@ -186,7 +186,7 @@ class ShowAutoScalingPolicyResponse(SdkResponse):
 
     @property
     def instance_name(self):
-        """Gets the instance_name of this ShowAutoScalingPolicyResponse.
+        r"""Gets the instance_name of this ShowAutoScalingPolicyResponse.
 
         实例名称。
 
@@ -197,7 +197,7 @@ class ShowAutoScalingPolicyResponse(SdkResponse):
 
     @instance_name.setter
     def instance_name(self, instance_name):
-        """Sets the instance_name of this ShowAutoScalingPolicyResponse.
+        r"""Sets the instance_name of this ShowAutoScalingPolicyResponse.
 
         实例名称。
 
@@ -208,7 +208,7 @@ class ShowAutoScalingPolicyResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this ShowAutoScalingPolicyResponse.
+        r"""Gets the status of this ShowAutoScalingPolicyResponse.
 
         自动变配开关状态。  取值：  - ON：已开启 - OFF：已关闭
 
@@ -219,7 +219,7 @@ class ShowAutoScalingPolicyResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this ShowAutoScalingPolicyResponse.
+        r"""Sets the status of this ShowAutoScalingPolicyResponse.
 
         自动变配开关状态。  取值：  - ON：已开启 - OFF：已关闭
 
@@ -230,7 +230,7 @@ class ShowAutoScalingPolicyResponse(SdkResponse):
 
     @property
     def monitor_cycle(self):
-        """Gets the monitor_cycle of this ShowAutoScalingPolicyResponse.
+        r"""Gets the monitor_cycle of this ShowAutoScalingPolicyResponse.
 
         监测周期（单位：秒）。 在整个观测窗口期内，若CPU平均使用率大于等于设定值，则在观测窗口结束后，进行扩容。
 
@@ -241,7 +241,7 @@ class ShowAutoScalingPolicyResponse(SdkResponse):
 
     @monitor_cycle.setter
     def monitor_cycle(self, monitor_cycle):
-        """Sets the monitor_cycle of this ShowAutoScalingPolicyResponse.
+        r"""Sets the monitor_cycle of this ShowAutoScalingPolicyResponse.
 
         监测周期（单位：秒）。 在整个观测窗口期内，若CPU平均使用率大于等于设定值，则在观测窗口结束后，进行扩容。
 
@@ -252,7 +252,7 @@ class ShowAutoScalingPolicyResponse(SdkResponse):
 
     @property
     def silence_cycle(self):
-        """Gets the silence_cycle of this ShowAutoScalingPolicyResponse.
+        r"""Gets the silence_cycle of this ShowAutoScalingPolicyResponse.
 
         静默周期（单位：秒）。 两次自动扩容或自动回缩的最小间隔时间。
 
@@ -263,7 +263,7 @@ class ShowAutoScalingPolicyResponse(SdkResponse):
 
     @silence_cycle.setter
     def silence_cycle(self, silence_cycle):
-        """Sets the silence_cycle of this ShowAutoScalingPolicyResponse.
+        r"""Sets the silence_cycle of this ShowAutoScalingPolicyResponse.
 
         静默周期（单位：秒）。 两次自动扩容或自动回缩的最小间隔时间。
 
@@ -274,7 +274,7 @@ class ShowAutoScalingPolicyResponse(SdkResponse):
 
     @property
     def enlarge_threshold(self):
-        """Gets the enlarge_threshold of this ShowAutoScalingPolicyResponse.
+        r"""Gets the enlarge_threshold of this ShowAutoScalingPolicyResponse.
 
         扩容阈值（百分比数值），指CPU平均使用率。
 
@@ -285,7 +285,7 @@ class ShowAutoScalingPolicyResponse(SdkResponse):
 
     @enlarge_threshold.setter
     def enlarge_threshold(self, enlarge_threshold):
-        """Sets the enlarge_threshold of this ShowAutoScalingPolicyResponse.
+        r"""Sets the enlarge_threshold of this ShowAutoScalingPolicyResponse.
 
         扩容阈值（百分比数值），指CPU平均使用率。
 
@@ -296,7 +296,7 @@ class ShowAutoScalingPolicyResponse(SdkResponse):
 
     @property
     def max_flavor(self):
-        """Gets the max_flavor of this ShowAutoScalingPolicyResponse.
+        r"""Gets the max_flavor of this ShowAutoScalingPolicyResponse.
 
         扩容规格上限。
 
@@ -307,7 +307,7 @@ class ShowAutoScalingPolicyResponse(SdkResponse):
 
     @max_flavor.setter
     def max_flavor(self, max_flavor):
-        """Sets the max_flavor of this ShowAutoScalingPolicyResponse.
+        r"""Sets the max_flavor of this ShowAutoScalingPolicyResponse.
 
         扩容规格上限。
 
@@ -318,7 +318,7 @@ class ShowAutoScalingPolicyResponse(SdkResponse):
 
     @property
     def reduce_enabled(self):
-        """Gets the reduce_enabled of this ShowAutoScalingPolicyResponse.
+        r"""Gets the reduce_enabled of this ShowAutoScalingPolicyResponse.
 
         自动回缩开关状态。  取值：  - true：已开启 - false：已关闭
 
@@ -329,7 +329,7 @@ class ShowAutoScalingPolicyResponse(SdkResponse):
 
     @reduce_enabled.setter
     def reduce_enabled(self, reduce_enabled):
-        """Sets the reduce_enabled of this ShowAutoScalingPolicyResponse.
+        r"""Sets the reduce_enabled of this ShowAutoScalingPolicyResponse.
 
         自动回缩开关状态。  取值：  - true：已开启 - false：已关闭
 
@@ -340,7 +340,7 @@ class ShowAutoScalingPolicyResponse(SdkResponse):
 
     @property
     def min_flavor(self):
-        """Gets the min_flavor of this ShowAutoScalingPolicyResponse.
+        r"""Gets the min_flavor of this ShowAutoScalingPolicyResponse.
 
         缩容规格下限。
 
@@ -351,7 +351,7 @@ class ShowAutoScalingPolicyResponse(SdkResponse):
 
     @min_flavor.setter
     def min_flavor(self, min_flavor):
-        """Sets the min_flavor of this ShowAutoScalingPolicyResponse.
+        r"""Sets the min_flavor of this ShowAutoScalingPolicyResponse.
 
         缩容规格下限。
 
@@ -362,7 +362,7 @@ class ShowAutoScalingPolicyResponse(SdkResponse):
 
     @property
     def silence_start_at(self):
-        """Gets the silence_start_at of this ShowAutoScalingPolicyResponse.
+        r"""Gets the silence_start_at of this ShowAutoScalingPolicyResponse.
 
         静默期开始时间（上一次变更结束时间）。  格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -373,7 +373,7 @@ class ShowAutoScalingPolicyResponse(SdkResponse):
 
     @silence_start_at.setter
     def silence_start_at(self, silence_start_at):
-        """Sets the silence_start_at of this ShowAutoScalingPolicyResponse.
+        r"""Sets the silence_start_at of this ShowAutoScalingPolicyResponse.
 
         静默期开始时间（上一次变更结束时间）。  格式为\"yyyy-mm-ddThh:mm:ssZ\"。 其中，T指某个时间的开始；Z指时区偏移量，例如北京时间偏移显示为+0800。
 
@@ -384,7 +384,7 @@ class ShowAutoScalingPolicyResponse(SdkResponse):
 
     @property
     def scaling_strategy(self):
-        """Gets the scaling_strategy of this ShowAutoScalingPolicyResponse.
+        r"""Gets the scaling_strategy of this ShowAutoScalingPolicyResponse.
 
         :return: The scaling_strategy of this ShowAutoScalingPolicyResponse.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ScalingStrategyInfo`
@@ -393,7 +393,7 @@ class ShowAutoScalingPolicyResponse(SdkResponse):
 
     @scaling_strategy.setter
     def scaling_strategy(self, scaling_strategy):
-        """Sets the scaling_strategy of this ShowAutoScalingPolicyResponse.
+        r"""Sets the scaling_strategy of this ShowAutoScalingPolicyResponse.
 
         :param scaling_strategy: The scaling_strategy of this ShowAutoScalingPolicyResponse.
         :type scaling_strategy: :class:`huaweicloudsdkgaussdb.v3.ScalingStrategyInfo`
@@ -402,7 +402,7 @@ class ShowAutoScalingPolicyResponse(SdkResponse):
 
     @property
     def max_read_only_count(self):
-        """Gets the max_read_only_count of this ShowAutoScalingPolicyResponse.
+        r"""Gets the max_read_only_count of this ShowAutoScalingPolicyResponse.
 
         只读节点数量上限。
 
@@ -413,7 +413,7 @@ class ShowAutoScalingPolicyResponse(SdkResponse):
 
     @max_read_only_count.setter
     def max_read_only_count(self, max_read_only_count):
-        """Sets the max_read_only_count of this ShowAutoScalingPolicyResponse.
+        r"""Sets the max_read_only_count of this ShowAutoScalingPolicyResponse.
 
         只读节点数量上限。
 
@@ -424,7 +424,7 @@ class ShowAutoScalingPolicyResponse(SdkResponse):
 
     @property
     def min_read_only_count(self):
-        """Gets the min_read_only_count of this ShowAutoScalingPolicyResponse.
+        r"""Gets the min_read_only_count of this ShowAutoScalingPolicyResponse.
 
         只读节点数量下限。
 
@@ -435,7 +435,7 @@ class ShowAutoScalingPolicyResponse(SdkResponse):
 
     @min_read_only_count.setter
     def min_read_only_count(self, min_read_only_count):
-        """Sets the min_read_only_count of this ShowAutoScalingPolicyResponse.
+        r"""Sets the min_read_only_count of this ShowAutoScalingPolicyResponse.
 
         只读节点数量下限。
 
@@ -446,7 +446,7 @@ class ShowAutoScalingPolicyResponse(SdkResponse):
 
     @property
     def read_only_weight(self):
-        """Gets the read_only_weight of this ShowAutoScalingPolicyResponse.
+        r"""Gets the read_only_weight of this ShowAutoScalingPolicyResponse.
 
         只读节点读写分离权重。
 
@@ -457,7 +457,7 @@ class ShowAutoScalingPolicyResponse(SdkResponse):
 
     @read_only_weight.setter
     def read_only_weight(self, read_only_weight):
-        """Sets the read_only_weight of this ShowAutoScalingPolicyResponse.
+        r"""Sets the read_only_weight of this ShowAutoScalingPolicyResponse.
 
         只读节点读写分离权重。
 

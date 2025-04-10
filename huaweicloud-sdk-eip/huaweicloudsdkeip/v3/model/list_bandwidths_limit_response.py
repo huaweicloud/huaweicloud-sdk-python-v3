@@ -30,7 +30,7 @@ class ListBandwidthsLimitResponse(SdkResponse):
     }
 
     def __init__(self, eip_bandwidth_limits=None, page_info=None, request_id=None):
-        """ListBandwidthsLimitResponse
+        r"""ListBandwidthsLimitResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListBandwidthsLimitResponse(SdkResponse):
 
     @property
     def eip_bandwidth_limits(self):
-        """Gets the eip_bandwidth_limits of this ListBandwidthsLimitResponse.
+        r"""Gets the eip_bandwidth_limits of this ListBandwidthsLimitResponse.
 
         带宽限制列表
 
@@ -69,7 +69,7 @@ class ListBandwidthsLimitResponse(SdkResponse):
 
     @eip_bandwidth_limits.setter
     def eip_bandwidth_limits(self, eip_bandwidth_limits):
-        """Sets the eip_bandwidth_limits of this ListBandwidthsLimitResponse.
+        r"""Sets the eip_bandwidth_limits of this ListBandwidthsLimitResponse.
 
         带宽限制列表
 
@@ -80,7 +80,7 @@ class ListBandwidthsLimitResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListBandwidthsLimitResponse.
+        r"""Gets the page_info of this ListBandwidthsLimitResponse.
 
         :return: The page_info of this ListBandwidthsLimitResponse.
         :rtype: :class:`huaweicloudsdkeip.v3.PageInfoDict`
@@ -89,7 +89,7 @@ class ListBandwidthsLimitResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListBandwidthsLimitResponse.
+        r"""Sets the page_info of this ListBandwidthsLimitResponse.
 
         :param page_info: The page_info of this ListBandwidthsLimitResponse.
         :type page_info: :class:`huaweicloudsdkeip.v3.PageInfoDict`
@@ -98,7 +98,7 @@ class ListBandwidthsLimitResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListBandwidthsLimitResponse.
+        r"""Gets the request_id of this ListBandwidthsLimitResponse.
 
         本次请求编号
 
@@ -109,7 +109,7 @@ class ListBandwidthsLimitResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListBandwidthsLimitResponse.
+        r"""Sets the request_id of this ListBandwidthsLimitResponse.
 
         本次请求编号
 

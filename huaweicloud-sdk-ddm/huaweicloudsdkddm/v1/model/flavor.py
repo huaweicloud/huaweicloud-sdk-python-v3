@@ -33,7 +33,7 @@ class Flavor:
     }
 
     def __init__(self, id=None, spec_code=None, vcpus=None, ram=None, az_infos=None):
-        """Flavor
+        r"""Flavor
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class Flavor:
 
     @property
     def id(self):
-        """Gets the id of this Flavor.
+        r"""Gets the id of this Flavor.
 
         规格id。
 
@@ -77,7 +77,7 @@ class Flavor:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this Flavor.
+        r"""Sets the id of this Flavor.
 
         规格id。
 
@@ -88,7 +88,7 @@ class Flavor:
 
     @property
     def spec_code(self):
-        """Gets the spec_code of this Flavor.
+        r"""Gets the spec_code of this Flavor.
 
         资源规格编码。
 
@@ -99,7 +99,7 @@ class Flavor:
 
     @spec_code.setter
     def spec_code(self, spec_code):
-        """Sets the spec_code of this Flavor.
+        r"""Sets the spec_code of this Flavor.
 
         资源规格编码。
 
@@ -110,7 +110,7 @@ class Flavor:
 
     @property
     def vcpus(self):
-        """Gets the vcpus of this Flavor.
+        r"""Gets the vcpus of this Flavor.
 
         CPU大小。例如：1表示1U。
 
@@ -121,7 +121,7 @@ class Flavor:
 
     @vcpus.setter
     def vcpus(self, vcpus):
-        """Sets the vcpus of this Flavor.
+        r"""Sets the vcpus of this Flavor.
 
         CPU大小。例如：1表示1U。
 
@@ -132,7 +132,7 @@ class Flavor:
 
     @property
     def ram(self):
-        """Gets the ram of this Flavor.
+        r"""Gets the ram of this Flavor.
 
         内存大小，单位:GB。
 
@@ -143,7 +143,7 @@ class Flavor:
 
     @ram.setter
     def ram(self, ram):
-        """Sets the ram of this Flavor.
+        r"""Sets the ram of this Flavor.
 
         内存大小，单位:GB。
 
@@ -154,7 +154,7 @@ class Flavor:
 
     @property
     def az_infos(self):
-        """Gets the az_infos of this Flavor.
+        r"""Gets the az_infos of this Flavor.
 
         可用区信息  normal：在售。 unsupported：暂不支持该规格。 sellout：售罄。
 
@@ -165,7 +165,7 @@ class Flavor:
 
     @az_infos.setter
     def az_infos(self, az_infos):
-        """Sets the az_infos of this Flavor.
+        r"""Sets the az_infos of this Flavor.
 
         可用区信息  normal：在售。 unsupported：暂不支持该规格。 sellout：售罄。
 

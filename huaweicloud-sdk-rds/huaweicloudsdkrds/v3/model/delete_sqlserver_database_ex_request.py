@@ -31,7 +31,7 @@ class DeleteSqlserverDatabaseExRequest:
     }
 
     def __init__(self, x_language=None, instance_id=None, db_name=None, body=None):
-        """DeleteSqlserverDatabaseExRequest
+        r"""DeleteSqlserverDatabaseExRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class DeleteSqlserverDatabaseExRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this DeleteSqlserverDatabaseExRequest.
+        r"""Gets the x_language of this DeleteSqlserverDatabaseExRequest.
 
         语言
 
@@ -73,7 +73,7 @@ class DeleteSqlserverDatabaseExRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this DeleteSqlserverDatabaseExRequest.
+        r"""Sets the x_language of this DeleteSqlserverDatabaseExRequest.
 
         语言
 
@@ -84,7 +84,7 @@ class DeleteSqlserverDatabaseExRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteSqlserverDatabaseExRequest.
+        r"""Gets the instance_id of this DeleteSqlserverDatabaseExRequest.
 
         实例ID。
 
@@ -95,7 +95,7 @@ class DeleteSqlserverDatabaseExRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteSqlserverDatabaseExRequest.
+        r"""Sets the instance_id of this DeleteSqlserverDatabaseExRequest.
 
         实例ID。
 
@@ -106,7 +106,7 @@ class DeleteSqlserverDatabaseExRequest:
 
     @property
     def db_name(self):
-        """Gets the db_name of this DeleteSqlserverDatabaseExRequest.
+        r"""Gets the db_name of this DeleteSqlserverDatabaseExRequest.
 
         需要删除的数据库名。
 
@@ -117,7 +117,7 @@ class DeleteSqlserverDatabaseExRequest:
 
     @db_name.setter
     def db_name(self, db_name):
-        """Sets the db_name of this DeleteSqlserverDatabaseExRequest.
+        r"""Sets the db_name of this DeleteSqlserverDatabaseExRequest.
 
         需要删除的数据库名。
 
@@ -128,7 +128,7 @@ class DeleteSqlserverDatabaseExRequest:
 
     @property
     def body(self):
-        """Gets the body of this DeleteSqlserverDatabaseExRequest.
+        r"""Gets the body of this DeleteSqlserverDatabaseExRequest.
 
         :return: The body of this DeleteSqlserverDatabaseExRequest.
         :rtype: :class:`huaweicloudsdkrds.v3.DropDatabaseV3Req`
@@ -137,7 +137,7 @@ class DeleteSqlserverDatabaseExRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this DeleteSqlserverDatabaseExRequest.
+        r"""Sets the body of this DeleteSqlserverDatabaseExRequest.
 
         :param body: The body of this DeleteSqlserverDatabaseExRequest.
         :type body: :class:`huaweicloudsdkrds.v3.DropDatabaseV3Req`

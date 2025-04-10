@@ -25,7 +25,7 @@ class BatchStopMigrationTasksRequest:
     }
 
     def __init__(self, body=None):
-        """BatchStopMigrationTasksRequest
+        r"""BatchStopMigrationTasksRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class BatchStopMigrationTasksRequest:
 
     @property
     def body(self):
-        """Gets the body of this BatchStopMigrationTasksRequest.
+        r"""Gets the body of this BatchStopMigrationTasksRequest.
 
         :return: The body of this BatchStopMigrationTasksRequest.
         :rtype: :class:`huaweicloudsdkdcs.v2.BatchStopMigrationTasksBody`
@@ -52,7 +52,7 @@ class BatchStopMigrationTasksRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this BatchStopMigrationTasksRequest.
+        r"""Sets the body of this BatchStopMigrationTasksRequest.
 
         :param body: The body of this BatchStopMigrationTasksRequest.
         :type body: :class:`huaweicloudsdkdcs.v2.BatchStopMigrationTasksBody`

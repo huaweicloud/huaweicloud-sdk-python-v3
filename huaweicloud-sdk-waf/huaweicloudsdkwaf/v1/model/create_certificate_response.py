@@ -40,7 +40,7 @@ class CreateCertificateResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, content=None, key=None, expire_time=None, exp_status=None, timestamp=None, bind_host=None):
-        """CreateCertificateResponse
+        r"""CreateCertificateResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class CreateCertificateResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateCertificateResponse.
+        r"""Gets the id of this CreateCertificateResponse.
 
         证书ID
 
@@ -104,7 +104,7 @@ class CreateCertificateResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateCertificateResponse.
+        r"""Sets the id of this CreateCertificateResponse.
 
         证书ID
 
@@ -115,7 +115,7 @@ class CreateCertificateResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateCertificateResponse.
+        r"""Gets the name of this CreateCertificateResponse.
 
         证书名
 
@@ -126,7 +126,7 @@ class CreateCertificateResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateCertificateResponse.
+        r"""Sets the name of this CreateCertificateResponse.
 
         证书名
 
@@ -137,7 +137,7 @@ class CreateCertificateResponse(SdkResponse):
 
     @property
     def content(self):
-        """Gets the content of this CreateCertificateResponse.
+        r"""Gets the content of this CreateCertificateResponse.
 
         证书文件，PEM编码
 
@@ -148,7 +148,7 @@ class CreateCertificateResponse(SdkResponse):
 
     @content.setter
     def content(self, content):
-        """Sets the content of this CreateCertificateResponse.
+        r"""Sets the content of this CreateCertificateResponse.
 
         证书文件，PEM编码
 
@@ -159,7 +159,7 @@ class CreateCertificateResponse(SdkResponse):
 
     @property
     def key(self):
-        """Gets the key of this CreateCertificateResponse.
+        r"""Gets the key of this CreateCertificateResponse.
 
         证书私钥，PEM编码
 
@@ -170,7 +170,7 @@ class CreateCertificateResponse(SdkResponse):
 
     @key.setter
     def key(self, key):
-        """Sets the key of this CreateCertificateResponse.
+        r"""Sets the key of this CreateCertificateResponse.
 
         证书私钥，PEM编码
 
@@ -181,7 +181,7 @@ class CreateCertificateResponse(SdkResponse):
 
     @property
     def expire_time(self):
-        """Gets the expire_time of this CreateCertificateResponse.
+        r"""Gets the expire_time of this CreateCertificateResponse.
 
         证书过期时间戳
 
@@ -192,7 +192,7 @@ class CreateCertificateResponse(SdkResponse):
 
     @expire_time.setter
     def expire_time(self, expire_time):
-        """Sets the expire_time of this CreateCertificateResponse.
+        r"""Sets the expire_time of this CreateCertificateResponse.
 
         证书过期时间戳
 
@@ -203,7 +203,7 @@ class CreateCertificateResponse(SdkResponse):
 
     @property
     def exp_status(self):
-        """Gets the exp_status of this CreateCertificateResponse.
+        r"""Gets the exp_status of this CreateCertificateResponse.
 
         证书过期状态，0-未过期，1-已过期，2-即将过期
 
@@ -214,7 +214,7 @@ class CreateCertificateResponse(SdkResponse):
 
     @exp_status.setter
     def exp_status(self, exp_status):
-        """Sets the exp_status of this CreateCertificateResponse.
+        r"""Sets the exp_status of this CreateCertificateResponse.
 
         证书过期状态，0-未过期，1-已过期，2-即将过期
 
@@ -225,7 +225,7 @@ class CreateCertificateResponse(SdkResponse):
 
     @property
     def timestamp(self):
-        """Gets the timestamp of this CreateCertificateResponse.
+        r"""Gets the timestamp of this CreateCertificateResponse.
 
         证书上传时间戳
 
@@ -236,7 +236,7 @@ class CreateCertificateResponse(SdkResponse):
 
     @timestamp.setter
     def timestamp(self, timestamp):
-        """Sets the timestamp of this CreateCertificateResponse.
+        r"""Sets the timestamp of this CreateCertificateResponse.
 
         证书上传时间戳
 
@@ -247,7 +247,7 @@ class CreateCertificateResponse(SdkResponse):
 
     @property
     def bind_host(self):
-        """Gets the bind_host of this CreateCertificateResponse.
+        r"""Gets the bind_host of this CreateCertificateResponse.
 
         证书关联的域名信息
 
@@ -258,7 +258,7 @@ class CreateCertificateResponse(SdkResponse):
 
     @bind_host.setter
     def bind_host(self, bind_host):
-        """Sets the bind_host of this CreateCertificateResponse.
+        r"""Sets the bind_host of this CreateCertificateResponse.
 
         证书关联的域名信息
 

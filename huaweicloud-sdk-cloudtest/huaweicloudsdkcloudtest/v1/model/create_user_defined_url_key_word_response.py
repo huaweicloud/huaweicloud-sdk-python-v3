@@ -34,7 +34,7 @@ class CreateUserDefinedUrlKeyWordResponse(SdkResponse):
     }
 
     def __init__(self, code=None, error=None, reason=None, result=None, status=None):
-        """CreateUserDefinedUrlKeyWordResponse
+        r"""CreateUserDefinedUrlKeyWordResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class CreateUserDefinedUrlKeyWordResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this CreateUserDefinedUrlKeyWordResponse.
+        r"""Gets the code of this CreateUserDefinedUrlKeyWordResponse.
 
         错误码
 
@@ -83,7 +83,7 @@ class CreateUserDefinedUrlKeyWordResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this CreateUserDefinedUrlKeyWordResponse.
+        r"""Sets the code of this CreateUserDefinedUrlKeyWordResponse.
 
         错误码
 
@@ -94,7 +94,7 @@ class CreateUserDefinedUrlKeyWordResponse(SdkResponse):
 
     @property
     def error(self):
-        """Gets the error of this CreateUserDefinedUrlKeyWordResponse.
+        r"""Gets the error of this CreateUserDefinedUrlKeyWordResponse.
 
         :return: The error of this CreateUserDefinedUrlKeyWordResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.CommonResponseErrorObject`
@@ -103,7 +103,7 @@ class CreateUserDefinedUrlKeyWordResponse(SdkResponse):
 
     @error.setter
     def error(self, error):
-        """Sets the error of this CreateUserDefinedUrlKeyWordResponse.
+        r"""Sets the error of this CreateUserDefinedUrlKeyWordResponse.
 
         :param error: The error of this CreateUserDefinedUrlKeyWordResponse.
         :type error: :class:`huaweicloudsdkcloudtest.v1.CommonResponseErrorObject`
@@ -112,7 +112,7 @@ class CreateUserDefinedUrlKeyWordResponse(SdkResponse):
 
     @property
     def reason(self):
-        """Gets the reason of this CreateUserDefinedUrlKeyWordResponse.
+        r"""Gets the reason of this CreateUserDefinedUrlKeyWordResponse.
 
         失败原因
 
@@ -123,7 +123,7 @@ class CreateUserDefinedUrlKeyWordResponse(SdkResponse):
 
     @reason.setter
     def reason(self, reason):
-        """Sets the reason of this CreateUserDefinedUrlKeyWordResponse.
+        r"""Sets the reason of this CreateUserDefinedUrlKeyWordResponse.
 
         失败原因
 
@@ -134,7 +134,7 @@ class CreateUserDefinedUrlKeyWordResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this CreateUserDefinedUrlKeyWordResponse.
+        r"""Gets the result of this CreateUserDefinedUrlKeyWordResponse.
 
         结果
 
@@ -145,7 +145,7 @@ class CreateUserDefinedUrlKeyWordResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this CreateUserDefinedUrlKeyWordResponse.
+        r"""Sets the result of this CreateUserDefinedUrlKeyWordResponse.
 
         结果
 
@@ -156,7 +156,7 @@ class CreateUserDefinedUrlKeyWordResponse(SdkResponse):
 
     @property
     def status(self):
-        """Gets the status of this CreateUserDefinedUrlKeyWordResponse.
+        r"""Gets the status of this CreateUserDefinedUrlKeyWordResponse.
 
         状态
 
@@ -167,7 +167,7 @@ class CreateUserDefinedUrlKeyWordResponse(SdkResponse):
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CreateUserDefinedUrlKeyWordResponse.
+        r"""Sets the status of this CreateUserDefinedUrlKeyWordResponse.
 
         状态
 

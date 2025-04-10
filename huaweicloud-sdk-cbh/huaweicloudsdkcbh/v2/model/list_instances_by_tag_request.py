@@ -29,7 +29,7 @@ class ListInstancesByTagRequest:
     }
 
     def __init__(self, limit=None, offset=None, body=None):
-        """ListInstancesByTagRequest
+        r"""ListInstancesByTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class ListInstancesByTagRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListInstancesByTagRequest.
+        r"""Gets the limit of this ListInstancesByTagRequest.
 
         查询记录数（action为count时无此参数）如果action为filter默认为1000，limit最多为1000,不能为负数，最小值为1。
 
@@ -68,7 +68,7 @@ class ListInstancesByTagRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListInstancesByTagRequest.
+        r"""Sets the limit of this ListInstancesByTagRequest.
 
         查询记录数（action为count时无此参数）如果action为filter默认为1000，limit最多为1000,不能为负数，最小值为1。
 
@@ -79,7 +79,7 @@ class ListInstancesByTagRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListInstancesByTagRequest.
+        r"""Gets the offset of this ListInstancesByTagRequest.
 
         索引位置，偏移量（action为count时无此参数）从第一条数据偏移offset条数据后开始查询，如果action为filter默认为0（偏移0条数据，表示从第一条数据开始查询）,必须为数字，不能为负数。
 
@@ -90,7 +90,7 @@ class ListInstancesByTagRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListInstancesByTagRequest.
+        r"""Sets the offset of this ListInstancesByTagRequest.
 
         索引位置，偏移量（action为count时无此参数）从第一条数据偏移offset条数据后开始查询，如果action为filter默认为0（偏移0条数据，表示从第一条数据开始查询）,必须为数字，不能为负数。
 
@@ -101,7 +101,7 @@ class ListInstancesByTagRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListInstancesByTagRequest.
+        r"""Gets the body of this ListInstancesByTagRequest.
 
         :return: The body of this ListInstancesByTagRequest.
         :rtype: :class:`huaweicloudsdkcbh.v2.ListCBHByTagsRequestBody`
@@ -110,7 +110,7 @@ class ListInstancesByTagRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListInstancesByTagRequest.
+        r"""Sets the body of this ListInstancesByTagRequest.
 
         :param body: The body of this ListInstancesByTagRequest.
         :type body: :class:`huaweicloudsdkcbh.v2.ListCBHByTagsRequestBody`

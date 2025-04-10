@@ -29,7 +29,7 @@ class AccessConfigInfo:
     }
 
     def __init__(self, site_id=None, backup_mode=None, backup_info=None):
-        """AccessConfigInfo
+        r"""AccessConfigInfo
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class AccessConfigInfo:
 
     @property
     def site_id(self):
-        """Gets the site_id of this AccessConfigInfo.
+        r"""Gets the site_id of this AccessConfigInfo.
 
         站点Id。
 
@@ -66,7 +66,7 @@ class AccessConfigInfo:
 
     @site_id.setter
     def site_id(self, site_id):
-        """Sets the site_id of this AccessConfigInfo.
+        r"""Sets the site_id of this AccessConfigInfo.
 
         站点Id。
 
@@ -77,7 +77,7 @@ class AccessConfigInfo:
 
     @property
     def backup_mode(self):
-        """Gets the backup_mode of this AccessConfigInfo.
+        r"""Gets the backup_mode of this AccessConfigInfo.
 
         备份模式是否开启。 - ON:开启。 - OFF:关闭。
 
@@ -88,7 +88,7 @@ class AccessConfigInfo:
 
     @backup_mode.setter
     def backup_mode(self, backup_mode):
-        """Sets the backup_mode of this AccessConfigInfo.
+        r"""Sets the backup_mode of this AccessConfigInfo.
 
         备份模式是否开启。 - ON:开启。 - OFF:关闭。
 
@@ -99,7 +99,7 @@ class AccessConfigInfo:
 
     @property
     def backup_info(self):
-        """Gets the backup_info of this AccessConfigInfo.
+        r"""Gets the backup_info of this AccessConfigInfo.
 
         备份信息。
 
@@ -110,7 +110,7 @@ class AccessConfigInfo:
 
     @backup_info.setter
     def backup_info(self, backup_info):
-        """Sets the backup_info of this AccessConfigInfo.
+        r"""Sets the backup_info of this AccessConfigInfo.
 
         备份信息。
 

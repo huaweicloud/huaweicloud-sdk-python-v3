@@ -49,7 +49,7 @@ class QueryDiagnosisResult:
     }
 
     def __init__(self, score=None, status=None, progress=None, error_msg=None, start_time=None, end_time=None, total=None, normal_count=None, abnormal_count=None, alarm_count=None, failure_count=None, timeout_count=None, diagnosis_results=None):
-        """QueryDiagnosisResult
+        r"""QueryDiagnosisResult
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class QueryDiagnosisResult:
 
     @property
     def score(self):
-        """Gets the score of this QueryDiagnosisResult.
+        r"""Gets the score of this QueryDiagnosisResult.
 
         得分。
 
@@ -138,7 +138,7 @@ class QueryDiagnosisResult:
 
     @score.setter
     def score(self, score):
-        """Sets the score of this QueryDiagnosisResult.
+        r"""Sets the score of this QueryDiagnosisResult.
 
         得分。
 
@@ -149,7 +149,7 @@ class QueryDiagnosisResult:
 
     @property
     def status(self):
-        """Gets the status of this QueryDiagnosisResult.
+        r"""Gets the status of this QueryDiagnosisResult.
 
         状态。
 
@@ -160,7 +160,7 @@ class QueryDiagnosisResult:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this QueryDiagnosisResult.
+        r"""Sets the status of this QueryDiagnosisResult.
 
         状态。
 
@@ -171,7 +171,7 @@ class QueryDiagnosisResult:
 
     @property
     def progress(self):
-        """Gets the progress of this QueryDiagnosisResult.
+        r"""Gets the progress of this QueryDiagnosisResult.
 
         进度。
 
@@ -182,7 +182,7 @@ class QueryDiagnosisResult:
 
     @progress.setter
     def progress(self, progress):
-        """Sets the progress of this QueryDiagnosisResult.
+        r"""Sets the progress of this QueryDiagnosisResult.
 
         进度。
 
@@ -193,7 +193,7 @@ class QueryDiagnosisResult:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this QueryDiagnosisResult.
+        r"""Gets the error_msg of this QueryDiagnosisResult.
 
         失败原因。
 
@@ -204,7 +204,7 @@ class QueryDiagnosisResult:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this QueryDiagnosisResult.
+        r"""Sets the error_msg of this QueryDiagnosisResult.
 
         失败原因。
 
@@ -215,7 +215,7 @@ class QueryDiagnosisResult:
 
     @property
     def start_time(self):
-        """Gets the start_time of this QueryDiagnosisResult.
+        r"""Gets the start_time of this QueryDiagnosisResult.
 
         开始时间。
 
@@ -226,7 +226,7 @@ class QueryDiagnosisResult:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this QueryDiagnosisResult.
+        r"""Sets the start_time of this QueryDiagnosisResult.
 
         开始时间。
 
@@ -237,7 +237,7 @@ class QueryDiagnosisResult:
 
     @property
     def end_time(self):
-        """Gets the end_time of this QueryDiagnosisResult.
+        r"""Gets the end_time of this QueryDiagnosisResult.
 
         结束时间。
 
@@ -248,7 +248,7 @@ class QueryDiagnosisResult:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this QueryDiagnosisResult.
+        r"""Sets the end_time of this QueryDiagnosisResult.
 
         结束时间。
 
@@ -259,7 +259,7 @@ class QueryDiagnosisResult:
 
     @property
     def total(self):
-        """Gets the total of this QueryDiagnosisResult.
+        r"""Gets the total of this QueryDiagnosisResult.
 
         诊断项总数。
 
@@ -270,7 +270,7 @@ class QueryDiagnosisResult:
 
     @total.setter
     def total(self, total):
-        """Sets the total of this QueryDiagnosisResult.
+        r"""Sets the total of this QueryDiagnosisResult.
 
         诊断项总数。
 
@@ -281,7 +281,7 @@ class QueryDiagnosisResult:
 
     @property
     def normal_count(self):
-        """Gets the normal_count of this QueryDiagnosisResult.
+        r"""Gets the normal_count of this QueryDiagnosisResult.
 
         正常数量。
 
@@ -292,7 +292,7 @@ class QueryDiagnosisResult:
 
     @normal_count.setter
     def normal_count(self, normal_count):
-        """Sets the normal_count of this QueryDiagnosisResult.
+        r"""Sets the normal_count of this QueryDiagnosisResult.
 
         正常数量。
 
@@ -303,7 +303,7 @@ class QueryDiagnosisResult:
 
     @property
     def abnormal_count(self):
-        """Gets the abnormal_count of this QueryDiagnosisResult.
+        r"""Gets the abnormal_count of this QueryDiagnosisResult.
 
         异常数量。
 
@@ -314,7 +314,7 @@ class QueryDiagnosisResult:
 
     @abnormal_count.setter
     def abnormal_count(self, abnormal_count):
-        """Sets the abnormal_count of this QueryDiagnosisResult.
+        r"""Sets the abnormal_count of this QueryDiagnosisResult.
 
         异常数量。
 
@@ -325,7 +325,7 @@ class QueryDiagnosisResult:
 
     @property
     def alarm_count(self):
-        """Gets the alarm_count of this QueryDiagnosisResult.
+        r"""Gets the alarm_count of this QueryDiagnosisResult.
 
         告警数量。
 
@@ -336,7 +336,7 @@ class QueryDiagnosisResult:
 
     @alarm_count.setter
     def alarm_count(self, alarm_count):
-        """Sets the alarm_count of this QueryDiagnosisResult.
+        r"""Sets the alarm_count of this QueryDiagnosisResult.
 
         告警数量。
 
@@ -347,7 +347,7 @@ class QueryDiagnosisResult:
 
     @property
     def failure_count(self):
-        """Gets the failure_count of this QueryDiagnosisResult.
+        r"""Gets the failure_count of this QueryDiagnosisResult.
 
         失败数量。
 
@@ -358,7 +358,7 @@ class QueryDiagnosisResult:
 
     @failure_count.setter
     def failure_count(self, failure_count):
-        """Sets the failure_count of this QueryDiagnosisResult.
+        r"""Sets the failure_count of this QueryDiagnosisResult.
 
         失败数量。
 
@@ -369,7 +369,7 @@ class QueryDiagnosisResult:
 
     @property
     def timeout_count(self):
-        """Gets the timeout_count of this QueryDiagnosisResult.
+        r"""Gets the timeout_count of this QueryDiagnosisResult.
 
         超时数量。
 
@@ -380,7 +380,7 @@ class QueryDiagnosisResult:
 
     @timeout_count.setter
     def timeout_count(self, timeout_count):
-        """Sets the timeout_count of this QueryDiagnosisResult.
+        r"""Sets the timeout_count of this QueryDiagnosisResult.
 
         超时数量。
 
@@ -391,7 +391,7 @@ class QueryDiagnosisResult:
 
     @property
     def diagnosis_results(self):
-        """Gets the diagnosis_results of this QueryDiagnosisResult.
+        r"""Gets the diagnosis_results of this QueryDiagnosisResult.
 
         诊断结果。
 
@@ -402,7 +402,7 @@ class QueryDiagnosisResult:
 
     @diagnosis_results.setter
     def diagnosis_results(self, diagnosis_results):
-        """Sets the diagnosis_results of this QueryDiagnosisResult.
+        r"""Sets the diagnosis_results of this QueryDiagnosisResult.
 
         诊断结果。
 

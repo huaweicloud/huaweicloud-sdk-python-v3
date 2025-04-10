@@ -29,7 +29,7 @@ class CheckRecordDataInfo:
     }
 
     def __init__(self, check_time=None, check_end_time=None, issue_counts=None):
-        """CheckRecordDataInfo
+        r"""CheckRecordDataInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class CheckRecordDataInfo:
 
     @property
     def check_time(self):
-        """Gets the check_time of this CheckRecordDataInfo.
+        r"""Gets the check_time of this CheckRecordDataInfo.
 
         检查任务执行开始时间
 
@@ -68,7 +68,7 @@ class CheckRecordDataInfo:
 
     @check_time.setter
     def check_time(self, check_time):
-        """Sets the check_time of this CheckRecordDataInfo.
+        r"""Sets the check_time of this CheckRecordDataInfo.
 
         检查任务执行开始时间
 
@@ -79,7 +79,7 @@ class CheckRecordDataInfo:
 
     @property
     def check_end_time(self):
-        """Gets the check_end_time of this CheckRecordDataInfo.
+        r"""Gets the check_end_time of this CheckRecordDataInfo.
 
         检查任务执行结束时间
 
@@ -90,7 +90,7 @@ class CheckRecordDataInfo:
 
     @check_end_time.setter
     def check_end_time(self, check_end_time):
-        """Sets the check_end_time of this CheckRecordDataInfo.
+        r"""Sets the check_end_time of this CheckRecordDataInfo.
 
         检查任务执行结束时间
 
@@ -101,7 +101,7 @@ class CheckRecordDataInfo:
 
     @property
     def issue_counts(self):
-        """Gets the issue_counts of this CheckRecordDataInfo.
+        r"""Gets the issue_counts of this CheckRecordDataInfo.
 
         :return: The issue_counts of this CheckRecordDataInfo.
         :rtype: :class:`huaweicloudsdkcodeartscheck.v2.CheckRecordIssueCountsInfo`
@@ -110,7 +110,7 @@ class CheckRecordDataInfo:
 
     @issue_counts.setter
     def issue_counts(self, issue_counts):
-        """Sets the issue_counts of this CheckRecordDataInfo.
+        r"""Sets the issue_counts of this CheckRecordDataInfo.
 
         :param issue_counts: The issue_counts of this CheckRecordDataInfo.
         :type issue_counts: :class:`huaweicloudsdkcodeartscheck.v2.CheckRecordIssueCountsInfo`

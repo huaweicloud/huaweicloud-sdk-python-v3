@@ -25,7 +25,7 @@ class AddServerNicsReq:
     }
 
     def __init__(self, nics=None):
-        """AddServerNicsReq
+        r"""AddServerNicsReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class AddServerNicsReq:
 
     @property
     def nics(self):
-        """Gets the nics of this AddServerNicsReq.
+        r"""Gets the nics of this AddServerNicsReq.
 
         
 
@@ -53,7 +53,7 @@ class AddServerNicsReq:
 
     @nics.setter
     def nics(self, nics):
-        """Sets the nics of this AddServerNicsReq.
+        r"""Sets the nics of this AddServerNicsReq.
 
         
 

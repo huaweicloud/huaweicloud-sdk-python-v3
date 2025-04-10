@@ -29,7 +29,7 @@ class CreatePublicIpOption:
     }
 
     def __init__(self, site_id=None, ip_version=None, type=None):
-        """CreatePublicIpOption
+        r"""CreatePublicIpOption
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class CreatePublicIpOption:
 
     @property
     def site_id(self):
-        """Gets the site_id of this CreatePublicIpOption.
+        r"""Gets the site_id of this CreatePublicIpOption.
 
         边缘站点的ID。
 
@@ -67,7 +67,7 @@ class CreatePublicIpOption:
 
     @site_id.setter
     def site_id(self, site_id):
-        """Sets the site_id of this CreatePublicIpOption.
+        r"""Sets the site_id of this CreatePublicIpOption.
 
         边缘站点的ID。
 
@@ -78,7 +78,7 @@ class CreatePublicIpOption:
 
     @property
     def ip_version(self):
-        """Gets the ip_version of this CreatePublicIpOption.
+        r"""Gets the ip_version of this CreatePublicIpOption.
 
         弹性公网IP的版本。目前IEC服务只支持4，即ipv4。
 
@@ -89,7 +89,7 @@ class CreatePublicIpOption:
 
     @ip_version.setter
     def ip_version(self, ip_version):
-        """Sets the ip_version of this CreatePublicIpOption.
+        r"""Sets the ip_version of this CreatePublicIpOption.
 
         弹性公网IP的版本。目前IEC服务只支持4，即ipv4。
 
@@ -100,7 +100,7 @@ class CreatePublicIpOption:
 
     @property
     def type(self):
-        """Gets the type of this CreatePublicIpOption.
+        r"""Gets the type of this CreatePublicIpOption.
 
         线路ID。 不传时默认取当前站点第一条线路
 
@@ -111,7 +111,7 @@ class CreatePublicIpOption:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreatePublicIpOption.
+        r"""Sets the type of this CreatePublicIpOption.
 
         线路ID。 不传时默认取当前站点第一条线路
 

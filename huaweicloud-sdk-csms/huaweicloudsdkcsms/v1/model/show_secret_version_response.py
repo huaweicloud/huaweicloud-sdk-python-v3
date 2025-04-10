@@ -26,7 +26,7 @@ class ShowSecretVersionResponse(SdkResponse):
     }
 
     def __init__(self, version=None):
-        """ShowSecretVersionResponse
+        r"""ShowSecretVersionResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowSecretVersionResponse(SdkResponse):
 
     @property
     def version(self):
-        """Gets the version of this ShowSecretVersionResponse.
+        r"""Gets the version of this ShowSecretVersionResponse.
 
         :return: The version of this ShowSecretVersionResponse.
         :rtype: :class:`huaweicloudsdkcsms.v1.Version`
@@ -53,7 +53,7 @@ class ShowSecretVersionResponse(SdkResponse):
 
     @version.setter
     def version(self, version):
-        """Sets the version of this ShowSecretVersionResponse.
+        r"""Sets the version of this ShowSecretVersionResponse.
 
         :param version: The version of this ShowSecretVersionResponse.
         :type version: :class:`huaweicloudsdkcsms.v1.Version`

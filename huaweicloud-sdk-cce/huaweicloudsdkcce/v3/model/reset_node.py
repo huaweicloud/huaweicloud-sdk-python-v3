@@ -27,7 +27,7 @@ class ResetNode:
     }
 
     def __init__(self, node_id=None, spec=None):
-        """ResetNode
+        r"""ResetNode
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ResetNode:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ResetNode.
+        r"""Gets the node_id of this ResetNode.
 
         节点ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -59,7 +59,7 @@ class ResetNode:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ResetNode.
+        r"""Sets the node_id of this ResetNode.
 
         节点ID，获取方式请参见[如何获取接口URI中参数](cce_02_0271.xml)。
 
@@ -70,7 +70,7 @@ class ResetNode:
 
     @property
     def spec(self):
-        """Gets the spec of this ResetNode.
+        r"""Gets the spec of this ResetNode.
 
         :return: The spec of this ResetNode.
         :rtype: :class:`huaweicloudsdkcce.v3.ReinstallNodeSpec`
@@ -79,7 +79,7 @@ class ResetNode:
 
     @spec.setter
     def spec(self, spec):
-        """Sets the spec of this ResetNode.
+        r"""Sets the spec of this ResetNode.
 
         :param spec: The spec of this ResetNode.
         :type spec: :class:`huaweicloudsdkcce.v3.ReinstallNodeSpec`

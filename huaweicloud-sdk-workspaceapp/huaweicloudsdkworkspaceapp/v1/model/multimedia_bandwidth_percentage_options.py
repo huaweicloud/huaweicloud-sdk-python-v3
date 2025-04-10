@@ -25,7 +25,7 @@ class MultimediaBandwidthPercentageOptions:
     }
 
     def __init__(self, multimedia_bandwidth_percentage_value=None):
-        """MultimediaBandwidthPercentageOptions
+        r"""MultimediaBandwidthPercentageOptions
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class MultimediaBandwidthPercentageOptions:
 
     @property
     def multimedia_bandwidth_percentage_value(self):
-        """Gets the multimedia_bandwidth_percentage_value of this MultimediaBandwidthPercentageOptions.
+        r"""Gets the multimedia_bandwidth_percentage_value of this MultimediaBandwidthPercentageOptions.
 
         多媒体带宽百分比控制量（%）。取值范围为[0-100]。默认：50。
 
@@ -54,7 +54,7 @@ class MultimediaBandwidthPercentageOptions:
 
     @multimedia_bandwidth_percentage_value.setter
     def multimedia_bandwidth_percentage_value(self, multimedia_bandwidth_percentage_value):
-        """Sets the multimedia_bandwidth_percentage_value of this MultimediaBandwidthPercentageOptions.
+        r"""Sets the multimedia_bandwidth_percentage_value of this MultimediaBandwidthPercentageOptions.
 
         多媒体带宽百分比控制量（%）。取值范围为[0-100]。默认：50。
 

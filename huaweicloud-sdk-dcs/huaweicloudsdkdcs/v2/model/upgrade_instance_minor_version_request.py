@@ -27,7 +27,7 @@ class UpgradeInstanceMinorVersionRequest:
     }
 
     def __init__(self, instance_id=None, body=None):
-        """UpgradeInstanceMinorVersionRequest
+        r"""UpgradeInstanceMinorVersionRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpgradeInstanceMinorVersionRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this UpgradeInstanceMinorVersionRequest.
+        r"""Gets the instance_id of this UpgradeInstanceMinorVersionRequest.
 
         实例ID。
 
@@ -60,7 +60,7 @@ class UpgradeInstanceMinorVersionRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this UpgradeInstanceMinorVersionRequest.
+        r"""Sets the instance_id of this UpgradeInstanceMinorVersionRequest.
 
         实例ID。
 
@@ -71,7 +71,7 @@ class UpgradeInstanceMinorVersionRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpgradeInstanceMinorVersionRequest.
+        r"""Gets the body of this UpgradeInstanceMinorVersionRequest.
 
         :return: The body of this UpgradeInstanceMinorVersionRequest.
         :rtype: :class:`huaweicloudsdkdcs.v2.UpgradeMinorVersionRequestBody`
@@ -80,7 +80,7 @@ class UpgradeInstanceMinorVersionRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpgradeInstanceMinorVersionRequest.
+        r"""Sets the body of this UpgradeInstanceMinorVersionRequest.
 
         :param body: The body of this UpgradeInstanceMinorVersionRequest.
         :type body: :class:`huaweicloudsdkdcs.v2.UpgradeMinorVersionRequestBody`

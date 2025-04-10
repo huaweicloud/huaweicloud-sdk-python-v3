@@ -35,7 +35,7 @@ class Answers:
     }
 
     def __init__(self, qa_pair_id=None, st_question=None, score=None, domain=None, answer=None, ex_questions=None):
-        """Answers
+        r"""Answers
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class Answers:
 
     @property
     def qa_pair_id(self):
-        """Gets the qa_pair_id of this Answers.
+        r"""Gets the qa_pair_id of this Answers.
 
         Answers.
 
@@ -89,7 +89,7 @@ class Answers:
 
     @qa_pair_id.setter
     def qa_pair_id(self, qa_pair_id):
-        """Sets the qa_pair_id of this Answers.
+        r"""Sets the qa_pair_id of this Answers.
 
         Answers.
 
@@ -100,7 +100,7 @@ class Answers:
 
     @property
     def st_question(self):
-        """Gets the st_question of this Answers.
+        r"""Gets the st_question of this Answers.
 
         标准问题。
 
@@ -111,7 +111,7 @@ class Answers:
 
     @st_question.setter
     def st_question(self, st_question):
-        """Sets the st_question of this Answers.
+        r"""Sets the st_question of this Answers.
 
         标准问题。
 
@@ -122,7 +122,7 @@ class Answers:
 
     @property
     def score(self):
-        """Gets the score of this Answers.
+        r"""Gets the score of this Answers.
 
         相似度得分，精确到小数点后3位。
 
@@ -133,7 +133,7 @@ class Answers:
 
     @score.setter
     def score(self, score):
-        """Sets the score of this Answers.
+        r"""Sets the score of this Answers.
 
         相似度得分，精确到小数点后3位。
 
@@ -144,7 +144,7 @@ class Answers:
 
     @property
     def domain(self):
-        """Gets the domain of this Answers.
+        r"""Gets the domain of this Answers.
 
         Domain.
 
@@ -155,7 +155,7 @@ class Answers:
 
     @domain.setter
     def domain(self, domain):
-        """Sets the domain of this Answers.
+        r"""Sets the domain of this Answers.
 
         Domain.
 
@@ -166,7 +166,7 @@ class Answers:
 
     @property
     def answer(self):
-        """Gets the answer of this Answers.
+        r"""Gets the answer of this Answers.
 
         答案。
 
@@ -177,7 +177,7 @@ class Answers:
 
     @answer.setter
     def answer(self, answer):
-        """Sets the answer of this Answers.
+        r"""Sets the answer of this Answers.
 
         答案。
 
@@ -188,7 +188,7 @@ class Answers:
 
     @property
     def ex_questions(self):
-        """Gets the ex_questions of this Answers.
+        r"""Gets the ex_questions of this Answers.
 
         扩展问。
 
@@ -199,7 +199,7 @@ class Answers:
 
     @ex_questions.setter
     def ex_questions(self, ex_questions):
-        """Sets the ex_questions of this Answers.
+        r"""Sets the ex_questions of this Answers.
 
         扩展问。
 

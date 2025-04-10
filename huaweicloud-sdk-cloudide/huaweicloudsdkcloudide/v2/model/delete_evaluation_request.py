@@ -25,7 +25,7 @@ class DeleteEvaluationRequest:
     }
 
     def __init__(self, evaluation_id=None):
-        """DeleteEvaluationRequest
+        r"""DeleteEvaluationRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteEvaluationRequest:
 
     @property
     def evaluation_id(self):
-        """Gets the evaluation_id of this DeleteEvaluationRequest.
+        r"""Gets the evaluation_id of this DeleteEvaluationRequest.
 
         评论id
 
@@ -53,7 +53,7 @@ class DeleteEvaluationRequest:
 
     @evaluation_id.setter
     def evaluation_id(self, evaluation_id):
-        """Sets the evaluation_id of this DeleteEvaluationRequest.
+        r"""Sets the evaluation_id of this DeleteEvaluationRequest.
 
         评论id
 

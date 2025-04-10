@@ -25,7 +25,7 @@ class BandwidthPackageId:
     }
 
     def __init__(self, bandwidth_package_id=None):
-        """BandwidthPackageId
+        r"""BandwidthPackageId
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class BandwidthPackageId:
 
     @property
     def bandwidth_package_id(self):
-        """Gets the bandwidth_package_id of this BandwidthPackageId.
+        r"""Gets the bandwidth_package_id of this BandwidthPackageId.
 
         带宽包实例ID。
 
@@ -53,7 +53,7 @@ class BandwidthPackageId:
 
     @bandwidth_package_id.setter
     def bandwidth_package_id(self, bandwidth_package_id):
-        """Sets the bandwidth_package_id of this BandwidthPackageId.
+        r"""Sets the bandwidth_package_id of this BandwidthPackageId.
 
         带宽包实例ID。
 

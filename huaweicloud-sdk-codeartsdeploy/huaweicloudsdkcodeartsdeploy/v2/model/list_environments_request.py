@@ -37,7 +37,7 @@ class ListEnvironmentsRequest:
     }
 
     def __init__(self, application_id=None, project_id=None, page_index=None, page_size=None, name=None, sort_key=None, sort_dir=None):
-        """ListEnvironmentsRequest
+        r"""ListEnvironmentsRequest
 
         The model defined in huaweicloud sdk
 
@@ -83,7 +83,7 @@ class ListEnvironmentsRequest:
 
     @property
     def application_id(self):
-        """Gets the application_id of this ListEnvironmentsRequest.
+        r"""Gets the application_id of this ListEnvironmentsRequest.
 
         应用id
 
@@ -94,7 +94,7 @@ class ListEnvironmentsRequest:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this ListEnvironmentsRequest.
+        r"""Sets the application_id of this ListEnvironmentsRequest.
 
         应用id
 
@@ -105,7 +105,7 @@ class ListEnvironmentsRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ListEnvironmentsRequest.
+        r"""Gets the project_id of this ListEnvironmentsRequest.
 
         项目id
 
@@ -116,7 +116,7 @@ class ListEnvironmentsRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ListEnvironmentsRequest.
+        r"""Sets the project_id of this ListEnvironmentsRequest.
 
         项目id
 
@@ -127,7 +127,7 @@ class ListEnvironmentsRequest:
 
     @property
     def page_index(self):
-        """Gets the page_index of this ListEnvironmentsRequest.
+        r"""Gets the page_index of this ListEnvironmentsRequest.
 
         分页页码， 表示从此页开始查询， page大于等于1
 
@@ -138,7 +138,7 @@ class ListEnvironmentsRequest:
 
     @page_index.setter
     def page_index(self, page_index):
-        """Sets the page_index of this ListEnvironmentsRequest.
+        r"""Sets the page_index of this ListEnvironmentsRequest.
 
         分页页码， 表示从此页开始查询， page大于等于1
 
@@ -149,7 +149,7 @@ class ListEnvironmentsRequest:
 
     @property
     def page_size(self):
-        """Gets the page_size of this ListEnvironmentsRequest.
+        r"""Gets the page_size of this ListEnvironmentsRequest.
 
         每页显示的条目数量，size小于等于100
 
@@ -160,7 +160,7 @@ class ListEnvironmentsRequest:
 
     @page_size.setter
     def page_size(self, page_size):
-        """Sets the page_size of this ListEnvironmentsRequest.
+        r"""Sets the page_size of this ListEnvironmentsRequest.
 
         每页显示的条目数量，size小于等于100
 
@@ -171,7 +171,7 @@ class ListEnvironmentsRequest:
 
     @property
     def name(self):
-        """Gets the name of this ListEnvironmentsRequest.
+        r"""Gets the name of this ListEnvironmentsRequest.
 
         要查询的环境名称
 
@@ -182,7 +182,7 @@ class ListEnvironmentsRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ListEnvironmentsRequest.
+        r"""Sets the name of this ListEnvironmentsRequest.
 
         要查询的环境名称
 
@@ -193,7 +193,7 @@ class ListEnvironmentsRequest:
 
     @property
     def sort_key(self):
-        """Gets the sort_key of this ListEnvironmentsRequest.
+        r"""Gets the sort_key of this ListEnvironmentsRequest.
 
         排序字段，支持按照环境名称|用户名称|创建时间|用户昵称排序
 
@@ -204,7 +204,7 @@ class ListEnvironmentsRequest:
 
     @sort_key.setter
     def sort_key(self, sort_key):
-        """Sets the sort_key of this ListEnvironmentsRequest.
+        r"""Sets the sort_key of this ListEnvironmentsRequest.
 
         排序字段，支持按照环境名称|用户名称|创建时间|用户昵称排序
 
@@ -215,7 +215,7 @@ class ListEnvironmentsRequest:
 
     @property
     def sort_dir(self):
-        """Gets the sort_dir of this ListEnvironmentsRequest.
+        r"""Gets the sort_dir of this ListEnvironmentsRequest.
 
         排序顺序，DESC降序，ASC升序
 
@@ -226,7 +226,7 @@ class ListEnvironmentsRequest:
 
     @sort_dir.setter
     def sort_dir(self, sort_dir):
-        """Sets the sort_dir of this ListEnvironmentsRequest.
+        r"""Sets the sort_dir of this ListEnvironmentsRequest.
 
         排序顺序，DESC降序，ASC升序
 

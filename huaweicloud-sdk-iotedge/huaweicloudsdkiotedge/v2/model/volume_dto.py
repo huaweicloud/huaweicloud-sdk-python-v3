@@ -33,7 +33,7 @@ class VolumeDTO:
     }
 
     def __init__(self, name=None, type=None, source=None, destination=None, read_only=None):
-        """VolumeDTO
+        r"""VolumeDTO
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class VolumeDTO:
 
     @property
     def name(self):
-        """Gets the name of this VolumeDTO.
+        r"""Gets the name of this VolumeDTO.
 
         卷名称
 
@@ -79,7 +79,7 @@ class VolumeDTO:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this VolumeDTO.
+        r"""Sets the name of this VolumeDTO.
 
         卷名称
 
@@ -90,7 +90,7 @@ class VolumeDTO:
 
     @property
     def type(self):
-        """Gets the type of this VolumeDTO.
+        r"""Gets the type of this VolumeDTO.
 
         挂载类型
 
@@ -101,7 +101,7 @@ class VolumeDTO:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this VolumeDTO.
+        r"""Sets the type of this VolumeDTO.
 
         挂载类型
 
@@ -112,7 +112,7 @@ class VolumeDTO:
 
     @property
     def source(self):
-        """Gets the source of this VolumeDTO.
+        r"""Gets the source of this VolumeDTO.
 
         源路径
 
@@ -123,7 +123,7 @@ class VolumeDTO:
 
     @source.setter
     def source(self, source):
-        """Sets the source of this VolumeDTO.
+        r"""Sets the source of this VolumeDTO.
 
         源路径
 
@@ -134,7 +134,7 @@ class VolumeDTO:
 
     @property
     def destination(self):
-        """Gets the destination of this VolumeDTO.
+        r"""Gets the destination of this VolumeDTO.
 
         卷挂载路径
 
@@ -145,7 +145,7 @@ class VolumeDTO:
 
     @destination.setter
     def destination(self, destination):
-        """Sets the destination of this VolumeDTO.
+        r"""Sets the destination of this VolumeDTO.
 
         卷挂载路径
 
@@ -156,7 +156,7 @@ class VolumeDTO:
 
     @property
     def read_only(self):
-        """Gets the read_only of this VolumeDTO.
+        r"""Gets the read_only of this VolumeDTO.
 
         只读，默认只读
 
@@ -167,7 +167,7 @@ class VolumeDTO:
 
     @read_only.setter
     def read_only(self, read_only):
-        """Sets the read_only of this VolumeDTO.
+        r"""Sets the read_only of this VolumeDTO.
 
         只读，默认只读
 

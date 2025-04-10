@@ -27,7 +27,7 @@ class DeleteUserRequest:
     }
 
     def __init__(self, instance_id=None, username=None):
-        """DeleteUserRequest
+        r"""DeleteUserRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteUserRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteUserRequest.
+        r"""Gets the instance_id of this DeleteUserRequest.
 
         DDM实例ID。
 
@@ -59,7 +59,7 @@ class DeleteUserRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteUserRequest.
+        r"""Sets the instance_id of this DeleteUserRequest.
 
         DDM实例ID。
 
@@ -70,7 +70,7 @@ class DeleteUserRequest:
 
     @property
     def username(self):
-        """Gets the username of this DeleteUserRequest.
+        r"""Gets the username of this DeleteUserRequest.
 
         要删除的DDM帐号名称。
 
@@ -81,7 +81,7 @@ class DeleteUserRequest:
 
     @username.setter
     def username(self, username):
-        """Sets the username of this DeleteUserRequest.
+        r"""Sets the username of this DeleteUserRequest.
 
         要删除的DDM帐号名称。
 

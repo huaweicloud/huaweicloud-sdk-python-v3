@@ -39,7 +39,7 @@ class VolumeProductInfo:
     }
 
     def __init__(self, resource_spec_code=None, volume_type=None, volume_product_type=None, resource_type=None, cloud_service_type=None, domain_ids=None, name=None, status=None):
-        """VolumeProductInfo
+        r"""VolumeProductInfo
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class VolumeProductInfo:
 
     @property
     def resource_spec_code(self):
-        """Gets the resource_spec_code of this VolumeProductInfo.
+        r"""Gets the resource_spec_code of this VolumeProductInfo.
 
         产品ID
 
@@ -103,7 +103,7 @@ class VolumeProductInfo:
 
     @resource_spec_code.setter
     def resource_spec_code(self, resource_spec_code):
-        """Sets the resource_spec_code of this VolumeProductInfo.
+        r"""Sets the resource_spec_code of this VolumeProductInfo.
 
         产品ID
 
@@ -114,7 +114,7 @@ class VolumeProductInfo:
 
     @property
     def volume_type(self):
-        """Gets the volume_type of this VolumeProductInfo.
+        r"""Gets the volume_type of this VolumeProductInfo.
 
         磁盘类型： - SATA: 普通IO磁盘 - SAS：高IO磁盘 - SSD：超高IO磁盘
 
@@ -125,7 +125,7 @@ class VolumeProductInfo:
 
     @volume_type.setter
     def volume_type(self, volume_type):
-        """Sets the volume_type of this VolumeProductInfo.
+        r"""Sets the volume_type of this VolumeProductInfo.
 
         磁盘类型： - SATA: 普通IO磁盘 - SAS：高IO磁盘 - SSD：超高IO磁盘
 
@@ -136,7 +136,7 @@ class VolumeProductInfo:
 
     @property
     def volume_product_type(self):
-        """Gets the volume_product_type of this VolumeProductInfo.
+        r"""Gets the volume_product_type of this VolumeProductInfo.
 
         产品类型：workspace
 
@@ -147,7 +147,7 @@ class VolumeProductInfo:
 
     @volume_product_type.setter
     def volume_product_type(self, volume_product_type):
-        """Sets the volume_product_type of this VolumeProductInfo.
+        r"""Sets the volume_product_type of this VolumeProductInfo.
 
         产品类型：workspace
 
@@ -158,7 +158,7 @@ class VolumeProductInfo:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this VolumeProductInfo.
+        r"""Gets the resource_type of this VolumeProductInfo.
 
         资源类型
 
@@ -169,7 +169,7 @@ class VolumeProductInfo:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this VolumeProductInfo.
+        r"""Sets the resource_type of this VolumeProductInfo.
 
         资源类型
 
@@ -180,7 +180,7 @@ class VolumeProductInfo:
 
     @property
     def cloud_service_type(self):
-        """Gets the cloud_service_type of this VolumeProductInfo.
+        r"""Gets the cloud_service_type of this VolumeProductInfo.
 
         云服务类型
 
@@ -191,7 +191,7 @@ class VolumeProductInfo:
 
     @cloud_service_type.setter
     def cloud_service_type(self, cloud_service_type):
-        """Sets the cloud_service_type of this VolumeProductInfo.
+        r"""Sets the cloud_service_type of this VolumeProductInfo.
 
         云服务类型
 
@@ -202,7 +202,7 @@ class VolumeProductInfo:
 
     @property
     def domain_ids(self):
-        """Gets the domain_ids of this VolumeProductInfo.
+        r"""Gets the domain_ids of this VolumeProductInfo.
 
         该磁盘支持的专有域id（domainId）。
 
@@ -213,7 +213,7 @@ class VolumeProductInfo:
 
     @domain_ids.setter
     def domain_ids(self, domain_ids):
-        """Sets the domain_ids of this VolumeProductInfo.
+        r"""Sets the domain_ids of this VolumeProductInfo.
 
         该磁盘支持的专有域id（domainId）。
 
@@ -224,7 +224,7 @@ class VolumeProductInfo:
 
     @property
     def name(self):
-        """Gets the name of this VolumeProductInfo.
+        r"""Gets the name of this VolumeProductInfo.
 
         磁盘名称
 
@@ -235,7 +235,7 @@ class VolumeProductInfo:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this VolumeProductInfo.
+        r"""Sets the name of this VolumeProductInfo.
 
         磁盘名称
 
@@ -246,7 +246,7 @@ class VolumeProductInfo:
 
     @property
     def status(self):
-        """Gets the status of this VolumeProductInfo.
+        r"""Gets the status of this VolumeProductInfo.
 
         产品状态，normal：正常、sellout：售空。
 
@@ -257,7 +257,7 @@ class VolumeProductInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this VolumeProductInfo.
+        r"""Sets the status of this VolumeProductInfo.
 
         产品状态，normal：正常、sellout：售空。
 

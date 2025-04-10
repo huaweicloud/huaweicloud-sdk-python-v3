@@ -29,7 +29,7 @@ class UpdateNoticeRequestBody:
     }
 
     def __init__(self, notice_type=None, enabled_event_type_names=None, param_config=None):
-        """UpdateNoticeRequestBody
+        r"""UpdateNoticeRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class UpdateNoticeRequestBody:
 
     @property
     def notice_type(self):
-        """Gets the notice_type of this UpdateNoticeRequestBody.
+        r"""Gets the notice_type of this UpdateNoticeRequestBody.
 
         通知类型
 
@@ -66,7 +66,7 @@ class UpdateNoticeRequestBody:
 
     @notice_type.setter
     def notice_type(self, notice_type):
-        """Sets the notice_type of this UpdateNoticeRequestBody.
+        r"""Sets the notice_type of this UpdateNoticeRequestBody.
 
         通知类型
 
@@ -77,7 +77,7 @@ class UpdateNoticeRequestBody:
 
     @property
     def enabled_event_type_names(self):
-        """Gets the enabled_event_type_names of this UpdateNoticeRequestBody.
+        r"""Gets the enabled_event_type_names of this UpdateNoticeRequestBody.
 
         开启的通知的种类
 
@@ -88,7 +88,7 @@ class UpdateNoticeRequestBody:
 
     @enabled_event_type_names.setter
     def enabled_event_type_names(self, enabled_event_type_names):
-        """Sets the enabled_event_type_names of this UpdateNoticeRequestBody.
+        r"""Sets the enabled_event_type_names of this UpdateNoticeRequestBody.
 
         开启的通知的种类
 
@@ -99,7 +99,7 @@ class UpdateNoticeRequestBody:
 
     @property
     def param_config(self):
-        """Gets the param_config of this UpdateNoticeRequestBody.
+        r"""Gets the param_config of this UpdateNoticeRequestBody.
 
         通知参数配置
 
@@ -110,7 +110,7 @@ class UpdateNoticeRequestBody:
 
     @param_config.setter
     def param_config(self, param_config):
-        """Sets the param_config of this UpdateNoticeRequestBody.
+        r"""Sets the param_config of this UpdateNoticeRequestBody.
 
         通知参数配置
 

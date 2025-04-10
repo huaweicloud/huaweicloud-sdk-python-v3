@@ -31,7 +31,7 @@ class ListSyncTaskStatisticRequest:
     }
 
     def __init__(self, sync_task_id=None, data_type=None, start_time=None, end_time=None):
-        """ListSyncTaskStatisticRequest
+        r"""ListSyncTaskStatisticRequest
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ListSyncTaskStatisticRequest:
 
     @property
     def sync_task_id(self):
-        """Gets the sync_task_id of this ListSyncTaskStatisticRequest.
+        r"""Gets the sync_task_id of this ListSyncTaskStatisticRequest.
 
         同步任务ID。
 
@@ -71,7 +71,7 @@ class ListSyncTaskStatisticRequest:
 
     @sync_task_id.setter
     def sync_task_id(self, sync_task_id):
-        """Sets the sync_task_id of this ListSyncTaskStatisticRequest.
+        r"""Sets the sync_task_id of this ListSyncTaskStatisticRequest.
 
         同步任务ID。
 
@@ -82,7 +82,7 @@ class ListSyncTaskStatisticRequest:
 
     @property
     def data_type(self):
-        """Gets the data_type of this ListSyncTaskStatisticRequest.
+        r"""Gets the data_type of this ListSyncTaskStatisticRequest.
 
         统计数据类型： 多类型查询用‘,’分割； REQUEST：接收同步请求对象数 SUCCESS：同步成功对象数 FAILURE：同步失败对象数 SKIP：同步跳过对象数 SIZE：同步成功对象容量(Byte)
 
@@ -93,7 +93,7 @@ class ListSyncTaskStatisticRequest:
 
     @data_type.setter
     def data_type(self, data_type):
-        """Sets the data_type of this ListSyncTaskStatisticRequest.
+        r"""Sets the data_type of this ListSyncTaskStatisticRequest.
 
         统计数据类型： 多类型查询用‘,’分割； REQUEST：接收同步请求对象数 SUCCESS：同步成功对象数 FAILURE：同步失败对象数 SKIP：同步跳过对象数 SIZE：同步成功对象容量(Byte)
 
@@ -104,7 +104,7 @@ class ListSyncTaskStatisticRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ListSyncTaskStatisticRequest.
+        r"""Gets the start_time of this ListSyncTaskStatisticRequest.
 
         查询开始时间
 
@@ -115,7 +115,7 @@ class ListSyncTaskStatisticRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ListSyncTaskStatisticRequest.
+        r"""Sets the start_time of this ListSyncTaskStatisticRequest.
 
         查询开始时间
 
@@ -126,7 +126,7 @@ class ListSyncTaskStatisticRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ListSyncTaskStatisticRequest.
+        r"""Gets the end_time of this ListSyncTaskStatisticRequest.
 
         查询开始时间
 
@@ -137,7 +137,7 @@ class ListSyncTaskStatisticRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ListSyncTaskStatisticRequest.
+        r"""Sets the end_time of this ListSyncTaskStatisticRequest.
 
         查询开始时间
 

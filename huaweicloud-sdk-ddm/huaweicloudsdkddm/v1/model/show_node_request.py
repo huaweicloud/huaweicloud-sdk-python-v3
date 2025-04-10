@@ -27,7 +27,7 @@ class ShowNodeRequest:
     }
 
     def __init__(self, instance_id=None, node_id=None):
-        """ShowNodeRequest
+        r"""ShowNodeRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ShowNodeRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowNodeRequest.
+        r"""Gets the instance_id of this ShowNodeRequest.
 
         DDM实例ID
 
@@ -59,7 +59,7 @@ class ShowNodeRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowNodeRequest.
+        r"""Sets the instance_id of this ShowNodeRequest.
 
         DDM实例ID
 
@@ -70,7 +70,7 @@ class ShowNodeRequest:
 
     @property
     def node_id(self):
-        """Gets the node_id of this ShowNodeRequest.
+        r"""Gets the node_id of this ShowNodeRequest.
 
         DDM节点ID
 
@@ -81,7 +81,7 @@ class ShowNodeRequest:
 
     @node_id.setter
     def node_id(self, node_id):
-        """Sets the node_id of this ShowNodeRequest.
+        r"""Sets the node_id of this ShowNodeRequest.
 
         DDM节点ID
 

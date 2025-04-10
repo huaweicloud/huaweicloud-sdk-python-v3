@@ -26,7 +26,7 @@ class SyncStarRocksUsersResponse(SdkResponse):
     }
 
     def __init__(self, success=None):
-        """SyncStarRocksUsersResponse
+        r"""SyncStarRocksUsersResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class SyncStarRocksUsersResponse(SdkResponse):
 
     @property
     def success(self):
-        """Gets the success of this SyncStarRocksUsersResponse.
+        r"""Gets the success of this SyncStarRocksUsersResponse.
 
         开启行列分流是否成功。
 
@@ -55,7 +55,7 @@ class SyncStarRocksUsersResponse(SdkResponse):
 
     @success.setter
     def success(self, success):
-        """Sets the success of this SyncStarRocksUsersResponse.
+        r"""Sets the success of this SyncStarRocksUsersResponse.
 
         开启行列分流是否成功。
 

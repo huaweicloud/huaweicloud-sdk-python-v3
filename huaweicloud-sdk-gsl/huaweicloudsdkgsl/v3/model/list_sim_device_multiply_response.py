@@ -32,7 +32,7 @@ class ListSimDeviceMultiplyResponse(SdkResponse):
     }
 
     def __init__(self, limit=None, offset=None, count=None, sim_cards=None):
-        """ListSimDeviceMultiplyResponse
+        r"""ListSimDeviceMultiplyResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListSimDeviceMultiplyResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListSimDeviceMultiplyResponse.
+        r"""Gets the limit of this ListSimDeviceMultiplyResponse.
 
         每页记录数
 
@@ -76,7 +76,7 @@ class ListSimDeviceMultiplyResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListSimDeviceMultiplyResponse.
+        r"""Sets the limit of this ListSimDeviceMultiplyResponse.
 
         每页记录数
 
@@ -87,7 +87,7 @@ class ListSimDeviceMultiplyResponse(SdkResponse):
 
     @property
     def offset(self):
-        """Gets the offset of this ListSimDeviceMultiplyResponse.
+        r"""Gets the offset of this ListSimDeviceMultiplyResponse.
 
         页码
 
@@ -98,7 +98,7 @@ class ListSimDeviceMultiplyResponse(SdkResponse):
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListSimDeviceMultiplyResponse.
+        r"""Sets the offset of this ListSimDeviceMultiplyResponse.
 
         页码
 
@@ -109,7 +109,7 @@ class ListSimDeviceMultiplyResponse(SdkResponse):
 
     @property
     def count(self):
-        """Gets the count of this ListSimDeviceMultiplyResponse.
+        r"""Gets the count of this ListSimDeviceMultiplyResponse.
 
         总数
 
@@ -120,7 +120,7 @@ class ListSimDeviceMultiplyResponse(SdkResponse):
 
     @count.setter
     def count(self, count):
-        """Sets the count of this ListSimDeviceMultiplyResponse.
+        r"""Sets the count of this ListSimDeviceMultiplyResponse.
 
         总数
 
@@ -131,7 +131,7 @@ class ListSimDeviceMultiplyResponse(SdkResponse):
 
     @property
     def sim_cards(self):
-        """Gets the sim_cards of this ListSimDeviceMultiplyResponse.
+        r"""Gets the sim_cards of this ListSimDeviceMultiplyResponse.
 
         三网卡数据集合
 
@@ -142,7 +142,7 @@ class ListSimDeviceMultiplyResponse(SdkResponse):
 
     @sim_cards.setter
     def sim_cards(self, sim_cards):
-        """Sets the sim_cards of this ListSimDeviceMultiplyResponse.
+        r"""Sets the sim_cards of this ListSimDeviceMultiplyResponse.
 
         三网卡数据集合
 

@@ -30,7 +30,7 @@ class ShowMindmapRecycleByPageResponse(SdkResponse):
     }
 
     def __init__(self, code=None, data=None, message=None):
-        """ShowMindmapRecycleByPageResponse
+        r"""ShowMindmapRecycleByPageResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ShowMindmapRecycleByPageResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this ShowMindmapRecycleByPageResponse.
+        r"""Gets the code of this ShowMindmapRecycleByPageResponse.
 
         错误码
 
@@ -69,7 +69,7 @@ class ShowMindmapRecycleByPageResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this ShowMindmapRecycleByPageResponse.
+        r"""Sets the code of this ShowMindmapRecycleByPageResponse.
 
         错误码
 
@@ -80,7 +80,7 @@ class ShowMindmapRecycleByPageResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowMindmapRecycleByPageResponse.
+        r"""Gets the data of this ShowMindmapRecycleByPageResponse.
 
         :return: The data of this ShowMindmapRecycleByPageResponse.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.BasePageInfoMindmapRecycle`
@@ -89,7 +89,7 @@ class ShowMindmapRecycleByPageResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowMindmapRecycleByPageResponse.
+        r"""Sets the data of this ShowMindmapRecycleByPageResponse.
 
         :param data: The data of this ShowMindmapRecycleByPageResponse.
         :type data: :class:`huaweicloudsdkcloudtest.v1.BasePageInfoMindmapRecycle`
@@ -98,7 +98,7 @@ class ShowMindmapRecycleByPageResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this ShowMindmapRecycleByPageResponse.
+        r"""Gets the message of this ShowMindmapRecycleByPageResponse.
 
         错误信息
 
@@ -109,7 +109,7 @@ class ShowMindmapRecycleByPageResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this ShowMindmapRecycleByPageResponse.
+        r"""Sets the message of this ShowMindmapRecycleByPageResponse.
 
         错误信息
 

@@ -27,7 +27,7 @@ class ShowTaskListRequest:
     }
 
     def __init__(self, workspace=None, body=None):
-        """ShowTaskListRequest
+        r"""ShowTaskListRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class ShowTaskListRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this ShowTaskListRequest.
+        r"""Gets the workspace of this ShowTaskListRequest.
 
         DataArts Studio工作空间ID
 
@@ -60,7 +60,7 @@ class ShowTaskListRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this ShowTaskListRequest.
+        r"""Sets the workspace of this ShowTaskListRequest.
 
         DataArts Studio工作空间ID
 
@@ -71,7 +71,7 @@ class ShowTaskListRequest:
 
     @property
     def body(self):
-        """Gets the body of this ShowTaskListRequest.
+        r"""Gets the body of this ShowTaskListRequest.
 
         :return: The body of this ShowTaskListRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.QueryTaskRequest`
@@ -80,7 +80,7 @@ class ShowTaskListRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowTaskListRequest.
+        r"""Sets the body of this ShowTaskListRequest.
 
         :param body: The body of this ShowTaskListRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.QueryTaskRequest`

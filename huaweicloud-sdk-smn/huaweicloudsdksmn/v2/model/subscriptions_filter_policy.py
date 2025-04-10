@@ -27,7 +27,7 @@ class SubscriptionsFilterPolicy:
     }
 
     def __init__(self, name=None, string_equals=None):
-        """SubscriptionsFilterPolicy
+        r"""SubscriptionsFilterPolicy
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class SubscriptionsFilterPolicy:
 
     @property
     def name(self):
-        """Gets the name of this SubscriptionsFilterPolicy.
+        r"""Gets the name of this SubscriptionsFilterPolicy.
 
         过滤策略名称。 包含小写英文字母([a-z])、数字([0-9])、下划线(_)，下划线不得开始、结尾或连续出现），长度限制{1,32}，不能是smn_开头。
 
@@ -59,7 +59,7 @@ class SubscriptionsFilterPolicy:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this SubscriptionsFilterPolicy.
+        r"""Sets the name of this SubscriptionsFilterPolicy.
 
         过滤策略名称。 包含小写英文字母([a-z])、数字([0-9])、下划线(_)，下划线不得开始、结尾或连续出现），长度限制{1,32}，不能是smn_开头。
 
@@ -70,7 +70,7 @@ class SubscriptionsFilterPolicy:
 
     @property
     def string_equals(self):
-        """Gets the string_equals of this SubscriptionsFilterPolicy.
+        r"""Gets the string_equals of this SubscriptionsFilterPolicy.
 
         字符串精确匹配数组。数组长度[1, 10]，数组内容不能重复，值不能为null或者空字符串“ ”，长度限制[1,32]，中英文、数字、下划线
 
@@ -81,7 +81,7 @@ class SubscriptionsFilterPolicy:
 
     @string_equals.setter
     def string_equals(self, string_equals):
-        """Sets the string_equals of this SubscriptionsFilterPolicy.
+        r"""Sets the string_equals of this SubscriptionsFilterPolicy.
 
         字符串精确匹配数组。数组长度[1, 10]，数组内容不能重复，值不能为null或者空字符串“ ”，长度限制[1,32]，中英文、数字、下划线
 

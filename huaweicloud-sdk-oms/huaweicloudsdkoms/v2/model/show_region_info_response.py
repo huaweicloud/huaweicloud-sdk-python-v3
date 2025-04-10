@@ -26,7 +26,7 @@ class ShowRegionInfoResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ShowRegionInfoResponse
+        r"""ShowRegionInfoResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowRegionInfoResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ShowRegionInfoResponse.
+        r"""Gets the body of this ShowRegionInfoResponse.
 
         :return: The body of this ShowRegionInfoResponse.
         :rtype: list[:class:`huaweicloudsdkoms.v2.ShowRegionInfoResp`]
@@ -53,7 +53,7 @@ class ShowRegionInfoResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ShowRegionInfoResponse.
+        r"""Sets the body of this ShowRegionInfoResponse.
 
         :param body: The body of this ShowRegionInfoResponse.
         :type body: list[:class:`huaweicloudsdkoms.v2.ShowRegionInfoResp`]

@@ -27,7 +27,7 @@ class EnvEntry:
     }
 
     def __init__(self, env_id=None, env_name=None):
-        """EnvEntry
+        r"""EnvEntry
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class EnvEntry:
 
     @property
     def env_id(self):
-        """Gets the env_id of this EnvEntry.
+        r"""Gets the env_id of this EnvEntry.
 
         环境id。
 
@@ -61,7 +61,7 @@ class EnvEntry:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this EnvEntry.
+        r"""Sets the env_id of this EnvEntry.
 
         环境id。
 
@@ -72,7 +72,7 @@ class EnvEntry:
 
     @property
     def env_name(self):
-        """Gets the env_name of this EnvEntry.
+        r"""Gets the env_name of this EnvEntry.
 
         环境名称。
 
@@ -83,7 +83,7 @@ class EnvEntry:
 
     @env_name.setter
     def env_name(self, env_name):
-        """Sets the env_name of this EnvEntry.
+        r"""Sets the env_name of this EnvEntry.
 
         环境名称。
 

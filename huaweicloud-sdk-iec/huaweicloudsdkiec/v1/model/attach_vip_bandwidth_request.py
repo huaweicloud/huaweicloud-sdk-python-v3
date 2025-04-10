@@ -27,7 +27,7 @@ class AttachVipBandwidthRequest:
     }
 
     def __init__(self, vport_id=None, body=None):
-        """AttachVipBandwidthRequest
+        r"""AttachVipBandwidthRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AttachVipBandwidthRequest:
 
     @property
     def vport_id(self):
-        """Gets the vport_id of this AttachVipBandwidthRequest.
+        r"""Gets the vport_id of this AttachVipBandwidthRequest.
 
         IPv6虚拟IP或者IPv6私网IP ID。
 
@@ -60,7 +60,7 @@ class AttachVipBandwidthRequest:
 
     @vport_id.setter
     def vport_id(self, vport_id):
-        """Sets the vport_id of this AttachVipBandwidthRequest.
+        r"""Sets the vport_id of this AttachVipBandwidthRequest.
 
         IPv6虚拟IP或者IPv6私网IP ID。
 
@@ -71,7 +71,7 @@ class AttachVipBandwidthRequest:
 
     @property
     def body(self):
-        """Gets the body of this AttachVipBandwidthRequest.
+        r"""Gets the body of this AttachVipBandwidthRequest.
 
         :return: The body of this AttachVipBandwidthRequest.
         :rtype: :class:`huaweicloudsdkiec.v1.AttachVipBandwidthRequestBody`
@@ -80,7 +80,7 @@ class AttachVipBandwidthRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AttachVipBandwidthRequest.
+        r"""Sets the body of this AttachVipBandwidthRequest.
 
         :param body: The body of this AttachVipBandwidthRequest.
         :type body: :class:`huaweicloudsdkiec.v1.AttachVipBandwidthRequestBody`

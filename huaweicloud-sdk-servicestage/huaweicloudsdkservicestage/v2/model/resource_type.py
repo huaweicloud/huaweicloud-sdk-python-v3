@@ -37,7 +37,7 @@ class ResourceType:
     }
 
     def __init__(self):
-        """ResourceType
+        r"""ResourceType
 
         The model defined in huaweicloud sdk
 

@@ -26,7 +26,7 @@ class StopBatchJobResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """StopBatchJobResponse
+        r"""StopBatchJobResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class StopBatchJobResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this StopBatchJobResponse.
+        r"""Gets the body of this StopBatchJobResponse.
 
         :return: The body of this StopBatchJobResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class StopBatchJobResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StopBatchJobResponse.
+        r"""Sets the body of this StopBatchJobResponse.
 
         :param body: The body of this StopBatchJobResponse.
         :type body: str

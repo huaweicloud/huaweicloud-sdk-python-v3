@@ -27,7 +27,7 @@ class CreateRouterReqDTO:
     }
 
     def __init__(self, route_id=None, sql=None):
-        """CreateRouterReqDTO
+        r"""CreateRouterReqDTO
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class CreateRouterReqDTO:
 
     @property
     def route_id(self):
-        """Gets the route_id of this CreateRouterReqDTO.
+        r"""Gets the route_id of this CreateRouterReqDTO.
 
         路由ID，节点下唯一
 
@@ -59,7 +59,7 @@ class CreateRouterReqDTO:
 
     @route_id.setter
     def route_id(self, route_id):
-        """Sets the route_id of this CreateRouterReqDTO.
+        r"""Sets the route_id of this CreateRouterReqDTO.
 
         路由ID，节点下唯一
 
@@ -70,7 +70,7 @@ class CreateRouterReqDTO:
 
     @property
     def sql(self):
-        """Gets the sql of this CreateRouterReqDTO.
+        r"""Gets the sql of this CreateRouterReqDTO.
 
         sql參數
 
@@ -81,7 +81,7 @@ class CreateRouterReqDTO:
 
     @sql.setter
     def sql(self, sql):
-        """Sets the sql of this CreateRouterReqDTO.
+        r"""Sets the sql of this CreateRouterReqDTO.
 
         sql參數
 

@@ -25,7 +25,7 @@ class CreateCpiTaskRequest:
     }
 
     def __init__(self, body=None):
-        """CreateCpiTaskRequest
+        r"""CreateCpiTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateCpiTaskRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateCpiTaskRequest.
+        r"""Gets the body of this CreateCpiTaskRequest.
 
         :return: The body of this CreateCpiTaskRequest.
         :rtype: :class:`huaweicloudsdkeihealth.v1.CpiTaskData`
@@ -52,7 +52,7 @@ class CreateCpiTaskRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateCpiTaskRequest.
+        r"""Sets the body of this CreateCpiTaskRequest.
 
         :param body: The body of this CreateCpiTaskRequest.
         :type body: :class:`huaweicloudsdkeihealth.v1.CpiTaskData`

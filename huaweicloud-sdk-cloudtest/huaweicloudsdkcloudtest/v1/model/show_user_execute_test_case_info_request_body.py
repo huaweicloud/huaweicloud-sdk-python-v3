@@ -31,7 +31,7 @@ class ShowUserExecuteTestCaseInfoRequestBody:
     }
 
     def __init__(self, offset=None, limit=None, execute_start_time=None, execute_end_time=None):
-        """ShowUserExecuteTestCaseInfoRequestBody
+        r"""ShowUserExecuteTestCaseInfoRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class ShowUserExecuteTestCaseInfoRequestBody:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowUserExecuteTestCaseInfoRequestBody.
+        r"""Gets the offset of this ShowUserExecuteTestCaseInfoRequestBody.
 
         起始偏移量，表示从此偏移量开始查询，offset大于等于0，小于等于20000
 
@@ -71,7 +71,7 @@ class ShowUserExecuteTestCaseInfoRequestBody:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowUserExecuteTestCaseInfoRequestBody.
+        r"""Sets the offset of this ShowUserExecuteTestCaseInfoRequestBody.
 
         起始偏移量，表示从此偏移量开始查询，offset大于等于0，小于等于20000
 
@@ -82,7 +82,7 @@ class ShowUserExecuteTestCaseInfoRequestBody:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowUserExecuteTestCaseInfoRequestBody.
+        r"""Gets the limit of this ShowUserExecuteTestCaseInfoRequestBody.
 
         每页显示的条目数量,最大支持100条
 
@@ -93,7 +93,7 @@ class ShowUserExecuteTestCaseInfoRequestBody:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowUserExecuteTestCaseInfoRequestBody.
+        r"""Sets the limit of this ShowUserExecuteTestCaseInfoRequestBody.
 
         每页显示的条目数量,最大支持100条
 
@@ -104,7 +104,7 @@ class ShowUserExecuteTestCaseInfoRequestBody:
 
     @property
     def execute_start_time(self):
-        """Gets the execute_start_time of this ShowUserExecuteTestCaseInfoRequestBody.
+        r"""Gets the execute_start_time of this ShowUserExecuteTestCaseInfoRequestBody.
 
         用例执行时间段开始
 
@@ -115,7 +115,7 @@ class ShowUserExecuteTestCaseInfoRequestBody:
 
     @execute_start_time.setter
     def execute_start_time(self, execute_start_time):
-        """Sets the execute_start_time of this ShowUserExecuteTestCaseInfoRequestBody.
+        r"""Sets the execute_start_time of this ShowUserExecuteTestCaseInfoRequestBody.
 
         用例执行时间段开始
 
@@ -126,7 +126,7 @@ class ShowUserExecuteTestCaseInfoRequestBody:
 
     @property
     def execute_end_time(self):
-        """Gets the execute_end_time of this ShowUserExecuteTestCaseInfoRequestBody.
+        r"""Gets the execute_end_time of this ShowUserExecuteTestCaseInfoRequestBody.
 
         用例执行时间段截止
 
@@ -137,7 +137,7 @@ class ShowUserExecuteTestCaseInfoRequestBody:
 
     @execute_end_time.setter
     def execute_end_time(self, execute_end_time):
-        """Sets the execute_end_time of this ShowUserExecuteTestCaseInfoRequestBody.
+        r"""Sets the execute_end_time of this ShowUserExecuteTestCaseInfoRequestBody.
 
         用例执行时间段截止
 

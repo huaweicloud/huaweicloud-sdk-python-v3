@@ -30,7 +30,7 @@ class ListRomaAppResponse(SdkResponse):
     }
 
     def __init__(self, total=None, size=None, apps=None):
-        """ListRomaAppResponse
+        r"""ListRomaAppResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListRomaAppResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListRomaAppResponse.
+        r"""Gets the total of this ListRomaAppResponse.
 
         总的数量
 
@@ -69,7 +69,7 @@ class ListRomaAppResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListRomaAppResponse.
+        r"""Sets the total of this ListRomaAppResponse.
 
         总的数量
 
@@ -80,7 +80,7 @@ class ListRomaAppResponse(SdkResponse):
 
     @property
     def size(self):
-        """Gets the size of this ListRomaAppResponse.
+        r"""Gets the size of this ListRomaAppResponse.
 
         当前页数量
 
@@ -91,7 +91,7 @@ class ListRomaAppResponse(SdkResponse):
 
     @size.setter
     def size(self, size):
-        """Sets the size of this ListRomaAppResponse.
+        r"""Sets the size of this ListRomaAppResponse.
 
         当前页数量
 
@@ -102,7 +102,7 @@ class ListRomaAppResponse(SdkResponse):
 
     @property
     def apps(self):
-        """Gets the apps of this ListRomaAppResponse.
+        r"""Gets the apps of this ListRomaAppResponse.
 
         创建用户信息
 
@@ -113,7 +113,7 @@ class ListRomaAppResponse(SdkResponse):
 
     @apps.setter
     def apps(self, apps):
-        """Sets the apps of this ListRomaAppResponse.
+        r"""Sets the apps of this ListRomaAppResponse.
 
         创建用户信息
 

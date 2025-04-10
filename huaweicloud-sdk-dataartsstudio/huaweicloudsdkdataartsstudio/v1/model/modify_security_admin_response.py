@@ -30,7 +30,7 @@ class ModifySecurityAdminResponse(SdkResponse):
     }
 
     def __init__(self, manager_type=None, manager_id=None, manager_name=None):
-        """ModifySecurityAdminResponse
+        r"""ModifySecurityAdminResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ModifySecurityAdminResponse(SdkResponse):
 
     @property
     def manager_type(self):
-        """Gets the manager_type of this ModifySecurityAdminResponse.
+        r"""Gets the manager_type of this ModifySecurityAdminResponse.
 
         管理员类型, USER:用户, USER_GROUP:用户组
 
@@ -69,7 +69,7 @@ class ModifySecurityAdminResponse(SdkResponse):
 
     @manager_type.setter
     def manager_type(self, manager_type):
-        """Sets the manager_type of this ModifySecurityAdminResponse.
+        r"""Sets the manager_type of this ModifySecurityAdminResponse.
 
         管理员类型, USER:用户, USER_GROUP:用户组
 
@@ -80,7 +80,7 @@ class ModifySecurityAdminResponse(SdkResponse):
 
     @property
     def manager_id(self):
-        """Gets the manager_id of this ModifySecurityAdminResponse.
+        r"""Gets the manager_id of this ModifySecurityAdminResponse.
 
         管理员id, 管理员类型为用户时, 请传入iam用户id; 管理员类型为用户组时, 请传入iam用户组id
 
@@ -91,7 +91,7 @@ class ModifySecurityAdminResponse(SdkResponse):
 
     @manager_id.setter
     def manager_id(self, manager_id):
-        """Sets the manager_id of this ModifySecurityAdminResponse.
+        r"""Sets the manager_id of this ModifySecurityAdminResponse.
 
         管理员id, 管理员类型为用户时, 请传入iam用户id; 管理员类型为用户组时, 请传入iam用户组id
 
@@ -102,7 +102,7 @@ class ModifySecurityAdminResponse(SdkResponse):
 
     @property
     def manager_name(self):
-        """Gets the manager_name of this ModifySecurityAdminResponse.
+        r"""Gets the manager_name of this ModifySecurityAdminResponse.
 
         管理员名称, 管理员类型为用户时, 请传入iam用户名称; 管理员类型为用户组时, 请传入iam用户组名称
 
@@ -113,7 +113,7 @@ class ModifySecurityAdminResponse(SdkResponse):
 
     @manager_name.setter
     def manager_name(self, manager_name):
-        """Sets the manager_name of this ModifySecurityAdminResponse.
+        r"""Sets the manager_name of this ModifySecurityAdminResponse.
 
         管理员名称, 管理员类型为用户时, 请传入iam用户名称; 管理员类型为用户组时, 请传入iam用户组名称
 

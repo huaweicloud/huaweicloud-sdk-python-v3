@@ -28,7 +28,7 @@ class ListTopicProducersResponse(SdkResponse):
     }
 
     def __init__(self, total=None, producers=None):
-        """ListTopicProducersResponse
+        r"""ListTopicProducersResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListTopicProducersResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListTopicProducersResponse.
+        r"""Gets the total of this ListTopicProducersResponse.
 
         总条数
 
@@ -62,7 +62,7 @@ class ListTopicProducersResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListTopicProducersResponse.
+        r"""Sets the total of this ListTopicProducersResponse.
 
         总条数
 
@@ -73,7 +73,7 @@ class ListTopicProducersResponse(SdkResponse):
 
     @property
     def producers(self):
-        """Gets the producers of this ListTopicProducersResponse.
+        r"""Gets the producers of this ListTopicProducersResponse.
 
         生产者列表
 
@@ -84,7 +84,7 @@ class ListTopicProducersResponse(SdkResponse):
 
     @producers.setter
     def producers(self, producers):
-        """Sets the producers of this ListTopicProducersResponse.
+        r"""Sets the producers of this ListTopicProducersResponse.
 
         生产者列表
 

@@ -27,7 +27,7 @@ class CheckPermissionResult:
     }
 
     def __init__(self, check_result=None, error_message=None):
-        """CheckPermissionResult
+        r"""CheckPermissionResult
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CheckPermissionResult:
 
     @property
     def check_result(self):
-        """Gets the check_result of this CheckPermissionResult.
+        r"""Gets the check_result of this CheckPermissionResult.
 
         对应输入策略的检查结果
 
@@ -60,7 +60,7 @@ class CheckPermissionResult:
 
     @check_result.setter
     def check_result(self, check_result):
-        """Sets the check_result of this CheckPermissionResult.
+        r"""Sets the check_result of this CheckPermissionResult.
 
         对应输入策略的检查结果
 
@@ -71,7 +71,7 @@ class CheckPermissionResult:
 
     @property
     def error_message(self):
-        """Gets the error_message of this CheckPermissionResult.
+        r"""Gets the error_message of this CheckPermissionResult.
 
         错误信息
 
@@ -82,7 +82,7 @@ class CheckPermissionResult:
 
     @error_message.setter
     def error_message(self, error_message):
-        """Sets the error_message of this CheckPermissionResult.
+        r"""Sets the error_message of this CheckPermissionResult.
 
         错误信息
 

@@ -27,7 +27,7 @@ class ApplicationConfigModify:
     }
 
     def __init__(self, environment_id=None, configuration=None):
-        """ApplicationConfigModify
+        r"""ApplicationConfigModify
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ApplicationConfigModify:
 
     @property
     def environment_id(self):
-        """Gets the environment_id of this ApplicationConfigModify.
+        r"""Gets the environment_id of this ApplicationConfigModify.
 
         :return: The environment_id of this ApplicationConfigModify.
         :rtype: str
@@ -57,7 +57,7 @@ class ApplicationConfigModify:
 
     @environment_id.setter
     def environment_id(self, environment_id):
-        """Sets the environment_id of this ApplicationConfigModify.
+        r"""Sets the environment_id of this ApplicationConfigModify.
 
         :param environment_id: The environment_id of this ApplicationConfigModify.
         :type environment_id: str
@@ -66,7 +66,7 @@ class ApplicationConfigModify:
 
     @property
     def configuration(self):
-        """Gets the configuration of this ApplicationConfigModify.
+        r"""Gets the configuration of this ApplicationConfigModify.
 
         :return: The configuration of this ApplicationConfigModify.
         :rtype: :class:`huaweicloudsdkservicestage.v3.ApplicationConfigModifyConfiguration`
@@ -75,7 +75,7 @@ class ApplicationConfigModify:
 
     @configuration.setter
     def configuration(self, configuration):
-        """Sets the configuration of this ApplicationConfigModify.
+        r"""Sets the configuration of this ApplicationConfigModify.
 
         :param configuration: The configuration of this ApplicationConfigModify.
         :type configuration: :class:`huaweicloudsdkservicestage.v3.ApplicationConfigModifyConfiguration`

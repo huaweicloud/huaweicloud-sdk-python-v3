@@ -28,7 +28,7 @@ class ShowMemberResponse(SdkResponse):
     }
 
     def __init__(self, request_id=None, member=None):
-        """ShowMemberResponse
+        r"""ShowMemberResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowMemberResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ShowMemberResponse.
+        r"""Gets the request_id of this ShowMemberResponse.
 
         请求ID。  注：自动生成 。
 
@@ -62,7 +62,7 @@ class ShowMemberResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ShowMemberResponse.
+        r"""Sets the request_id of this ShowMemberResponse.
 
         请求ID。  注：自动生成 。
 
@@ -73,7 +73,7 @@ class ShowMemberResponse(SdkResponse):
 
     @property
     def member(self):
-        """Gets the member of this ShowMemberResponse.
+        r"""Gets the member of this ShowMemberResponse.
 
         :return: The member of this ShowMemberResponse.
         :rtype: :class:`huaweicloudsdkelb.v3.Member`
@@ -82,7 +82,7 @@ class ShowMemberResponse(SdkResponse):
 
     @member.setter
     def member(self, member):
-        """Sets the member of this ShowMemberResponse.
+        r"""Sets the member of this ShowMemberResponse.
 
         :param member: The member of this ShowMemberResponse.
         :type member: :class:`huaweicloudsdkelb.v3.Member`

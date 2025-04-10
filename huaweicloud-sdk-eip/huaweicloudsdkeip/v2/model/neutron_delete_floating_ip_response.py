@@ -24,7 +24,7 @@ class NeutronDeleteFloatingIpResponse(SdkResponse):
     }
 
     def __init__(self):
-        """NeutronDeleteFloatingIpResponse
+        r"""NeutronDeleteFloatingIpResponse
 
         The model defined in huaweicloud sdk
 

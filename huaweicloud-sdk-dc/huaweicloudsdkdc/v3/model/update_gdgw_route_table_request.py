@@ -27,7 +27,7 @@ class UpdateGdgwRouteTableRequest:
     }
 
     def __init__(self, gdgw_id=None, body=None):
-        """UpdateGdgwRouteTableRequest
+        r"""UpdateGdgwRouteTableRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateGdgwRouteTableRequest:
 
     @property
     def gdgw_id(self):
-        """Gets the gdgw_id of this UpdateGdgwRouteTableRequest.
+        r"""Gets the gdgw_id of this UpdateGdgwRouteTableRequest.
 
         全域接入网关ID
 
@@ -60,7 +60,7 @@ class UpdateGdgwRouteTableRequest:
 
     @gdgw_id.setter
     def gdgw_id(self, gdgw_id):
-        """Sets the gdgw_id of this UpdateGdgwRouteTableRequest.
+        r"""Sets the gdgw_id of this UpdateGdgwRouteTableRequest.
 
         全域接入网关ID
 
@@ -71,7 +71,7 @@ class UpdateGdgwRouteTableRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateGdgwRouteTableRequest.
+        r"""Gets the body of this UpdateGdgwRouteTableRequest.
 
         :return: The body of this UpdateGdgwRouteTableRequest.
         :rtype: :class:`huaweicloudsdkdc.v3.UpdateGdgwRoutetableRequestBody`
@@ -80,7 +80,7 @@ class UpdateGdgwRouteTableRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateGdgwRouteTableRequest.
+        r"""Sets the body of this UpdateGdgwRouteTableRequest.
 
         :param body: The body of this UpdateGdgwRouteTableRequest.
         :type body: :class:`huaweicloudsdkdc.v3.UpdateGdgwRoutetableRequestBody`

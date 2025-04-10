@@ -33,7 +33,7 @@ class ShowDomainsRequest:
     }
 
     def __init__(self, offset=None, limit=None, domain_name=None, policy_name=None, enterprise_project_id=None):
-        """ShowDomainsRequest
+        r"""ShowDomainsRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ShowDomainsRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowDomainsRequest.
+        r"""Gets the offset of this ShowDomainsRequest.
 
         查询列表的偏移量
 
@@ -82,7 +82,7 @@ class ShowDomainsRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowDomainsRequest.
+        r"""Sets the offset of this ShowDomainsRequest.
 
         查询列表的偏移量
 
@@ -93,7 +93,7 @@ class ShowDomainsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowDomainsRequest.
+        r"""Gets the limit of this ShowDomainsRequest.
 
         查询列表每一页的条数
 
@@ -104,7 +104,7 @@ class ShowDomainsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowDomainsRequest.
+        r"""Sets the limit of this ShowDomainsRequest.
 
         查询列表每一页的条数
 
@@ -115,7 +115,7 @@ class ShowDomainsRequest:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this ShowDomainsRequest.
+        r"""Gets the domain_name of this ShowDomainsRequest.
 
         域名
 
@@ -126,7 +126,7 @@ class ShowDomainsRequest:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this ShowDomainsRequest.
+        r"""Sets the domain_name of this ShowDomainsRequest.
 
         域名
 
@@ -137,7 +137,7 @@ class ShowDomainsRequest:
 
     @property
     def policy_name(self):
-        """Gets the policy_name of this ShowDomainsRequest.
+        r"""Gets the policy_name of this ShowDomainsRequest.
 
         策略名称
 
@@ -148,7 +148,7 @@ class ShowDomainsRequest:
 
     @policy_name.setter
     def policy_name(self, policy_name):
-        """Sets the policy_name of this ShowDomainsRequest.
+        r"""Sets the policy_name of this ShowDomainsRequest.
 
         策略名称
 
@@ -159,7 +159,7 @@ class ShowDomainsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ShowDomainsRequest.
+        r"""Gets the enterprise_project_id of this ShowDomainsRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id，默认为0
 
@@ -170,7 +170,7 @@ class ShowDomainsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ShowDomainsRequest.
+        r"""Sets the enterprise_project_id of this ShowDomainsRequest.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id，默认为0
 

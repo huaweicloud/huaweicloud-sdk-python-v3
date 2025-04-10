@@ -39,7 +39,7 @@ class CreatefavoriteReqbody:
     }
 
     def __init__(self, eps_id=None, favorite_resource_id=None, favorite_resource_type=None, log_group_id=None, log_group_name=None, log_stream_id=None, log_stream_name=None, is_global=None):
-        """CreatefavoriteReqbody
+        r"""CreatefavoriteReqbody
 
         The model defined in huaweicloud sdk
 
@@ -87,7 +87,7 @@ class CreatefavoriteReqbody:
 
     @property
     def eps_id(self):
-        """Gets the eps_id of this CreatefavoriteReqbody.
+        r"""Gets the eps_id of this CreatefavoriteReqbody.
 
         企业项目id
 
@@ -98,7 +98,7 @@ class CreatefavoriteReqbody:
 
     @eps_id.setter
     def eps_id(self, eps_id):
-        """Sets the eps_id of this CreatefavoriteReqbody.
+        r"""Sets the eps_id of this CreatefavoriteReqbody.
 
         企业项目id
 
@@ -109,7 +109,7 @@ class CreatefavoriteReqbody:
 
     @property
     def favorite_resource_id(self):
-        """Gets the favorite_resource_id of this CreatefavoriteReqbody.
+        r"""Gets the favorite_resource_id of this CreatefavoriteReqbody.
 
         收藏资源id
 
@@ -120,7 +120,7 @@ class CreatefavoriteReqbody:
 
     @favorite_resource_id.setter
     def favorite_resource_id(self, favorite_resource_id):
-        """Sets the favorite_resource_id of this CreatefavoriteReqbody.
+        r"""Sets the favorite_resource_id of this CreatefavoriteReqbody.
 
         收藏资源id
 
@@ -131,7 +131,7 @@ class CreatefavoriteReqbody:
 
     @property
     def favorite_resource_type(self):
-        """Gets the favorite_resource_type of this CreatefavoriteReqbody.
+        r"""Gets the favorite_resource_type of this CreatefavoriteReqbody.
 
         收藏资源类型
 
@@ -142,7 +142,7 @@ class CreatefavoriteReqbody:
 
     @favorite_resource_type.setter
     def favorite_resource_type(self, favorite_resource_type):
-        """Sets the favorite_resource_type of this CreatefavoriteReqbody.
+        r"""Sets the favorite_resource_type of this CreatefavoriteReqbody.
 
         收藏资源类型
 
@@ -153,7 +153,7 @@ class CreatefavoriteReqbody:
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this CreatefavoriteReqbody.
+        r"""Gets the log_group_id of this CreatefavoriteReqbody.
 
         日志组id
 
@@ -164,7 +164,7 @@ class CreatefavoriteReqbody:
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this CreatefavoriteReqbody.
+        r"""Sets the log_group_id of this CreatefavoriteReqbody.
 
         日志组id
 
@@ -175,7 +175,7 @@ class CreatefavoriteReqbody:
 
     @property
     def log_group_name(self):
-        """Gets the log_group_name of this CreatefavoriteReqbody.
+        r"""Gets the log_group_name of this CreatefavoriteReqbody.
 
         日志组名称
 
@@ -186,7 +186,7 @@ class CreatefavoriteReqbody:
 
     @log_group_name.setter
     def log_group_name(self, log_group_name):
-        """Sets the log_group_name of this CreatefavoriteReqbody.
+        r"""Sets the log_group_name of this CreatefavoriteReqbody.
 
         日志组名称
 
@@ -197,7 +197,7 @@ class CreatefavoriteReqbody:
 
     @property
     def log_stream_id(self):
-        """Gets the log_stream_id of this CreatefavoriteReqbody.
+        r"""Gets the log_stream_id of this CreatefavoriteReqbody.
 
         日志流id
 
@@ -208,7 +208,7 @@ class CreatefavoriteReqbody:
 
     @log_stream_id.setter
     def log_stream_id(self, log_stream_id):
-        """Sets the log_stream_id of this CreatefavoriteReqbody.
+        r"""Sets the log_stream_id of this CreatefavoriteReqbody.
 
         日志流id
 
@@ -219,7 +219,7 @@ class CreatefavoriteReqbody:
 
     @property
     def log_stream_name(self):
-        """Gets the log_stream_name of this CreatefavoriteReqbody.
+        r"""Gets the log_stream_name of this CreatefavoriteReqbody.
 
         日志流名称
 
@@ -230,7 +230,7 @@ class CreatefavoriteReqbody:
 
     @log_stream_name.setter
     def log_stream_name(self, log_stream_name):
-        """Sets the log_stream_name of this CreatefavoriteReqbody.
+        r"""Sets the log_stream_name of this CreatefavoriteReqbody.
 
         日志流名称
 
@@ -241,7 +241,7 @@ class CreatefavoriteReqbody:
 
     @property
     def is_global(self):
-        """Gets the is_global of this CreatefavoriteReqbody.
+        r"""Gets the is_global of this CreatefavoriteReqbody.
 
         是否支持全局化，必填true，否则创建不了收藏
 
@@ -252,7 +252,7 @@ class CreatefavoriteReqbody:
 
     @is_global.setter
     def is_global(self, is_global):
-        """Sets the is_global of this CreatefavoriteReqbody.
+        r"""Sets the is_global of this CreatefavoriteReqbody.
 
         是否支持全局化，必填true，否则创建不了收藏
 

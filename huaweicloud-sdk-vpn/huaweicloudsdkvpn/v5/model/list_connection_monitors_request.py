@@ -27,7 +27,7 @@ class ListConnectionMonitorsRequest:
     }
 
     def __init__(self, vpn_connection_id=None, enterprise_project_id=None):
-        """ListConnectionMonitorsRequest
+        r"""ListConnectionMonitorsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListConnectionMonitorsRequest:
 
     @property
     def vpn_connection_id(self):
-        """Gets the vpn_connection_id of this ListConnectionMonitorsRequest.
+        r"""Gets the vpn_connection_id of this ListConnectionMonitorsRequest.
 
         VPN连接Id
 
@@ -61,7 +61,7 @@ class ListConnectionMonitorsRequest:
 
     @vpn_connection_id.setter
     def vpn_connection_id(self, vpn_connection_id):
-        """Sets the vpn_connection_id of this ListConnectionMonitorsRequest.
+        r"""Sets the vpn_connection_id of this ListConnectionMonitorsRequest.
 
         VPN连接Id
 
@@ -72,7 +72,7 @@ class ListConnectionMonitorsRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this ListConnectionMonitorsRequest.
+        r"""Gets the enterprise_project_id of this ListConnectionMonitorsRequest.
 
         企业项目id
 
@@ -83,7 +83,7 @@ class ListConnectionMonitorsRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this ListConnectionMonitorsRequest.
+        r"""Sets the enterprise_project_id of this ListConnectionMonitorsRequest.
 
         企业项目id
 

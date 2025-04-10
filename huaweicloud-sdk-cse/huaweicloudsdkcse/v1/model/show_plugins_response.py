@@ -28,7 +28,7 @@ class ShowPluginsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, data=None):
-        """ShowPluginsResponse
+        r"""ShowPluginsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowPluginsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowPluginsResponse.
+        r"""Gets the total of this ShowPluginsResponse.
 
         插件总数。
 
@@ -62,7 +62,7 @@ class ShowPluginsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowPluginsResponse.
+        r"""Sets the total of this ShowPluginsResponse.
 
         插件总数。
 
@@ -73,7 +73,7 @@ class ShowPluginsResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this ShowPluginsResponse.
+        r"""Gets the data of this ShowPluginsResponse.
 
         插件列表。
 
@@ -84,7 +84,7 @@ class ShowPluginsResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this ShowPluginsResponse.
+        r"""Sets the data of this ShowPluginsResponse.
 
         插件列表。
 

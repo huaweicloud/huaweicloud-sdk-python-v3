@@ -34,7 +34,7 @@ class UpdateAclAccountPassWordResponse(SdkResponse):
     }
 
     def __init__(self, lock_time=None, result=None, lock_time_left=None, retry_times_left=None, message=None):
-        """UpdateAclAccountPassWordResponse
+        r"""UpdateAclAccountPassWordResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class UpdateAclAccountPassWordResponse(SdkResponse):
 
     @property
     def lock_time(self):
-        """Gets the lock_time of this UpdateAclAccountPassWordResponse.
+        r"""Gets the lock_time of this UpdateAclAccountPassWordResponse.
 
         锁定时间。验证失败时和锁定时该参数返回不为null
 
@@ -83,7 +83,7 @@ class UpdateAclAccountPassWordResponse(SdkResponse):
 
     @lock_time.setter
     def lock_time(self, lock_time):
-        """Sets the lock_time of this UpdateAclAccountPassWordResponse.
+        r"""Sets the lock_time of this UpdateAclAccountPassWordResponse.
 
         锁定时间。验证失败时和锁定时该参数返回不为null
 
@@ -94,7 +94,7 @@ class UpdateAclAccountPassWordResponse(SdkResponse):
 
     @property
     def result(self):
-        """Gets the result of this UpdateAclAccountPassWordResponse.
+        r"""Gets the result of this UpdateAclAccountPassWordResponse.
 
         密码修改结果： - 成功：success； - 密码验证失败：passwordFailed； - 已锁定：locked； - 失败：failed。 
 
@@ -105,7 +105,7 @@ class UpdateAclAccountPassWordResponse(SdkResponse):
 
     @result.setter
     def result(self, result):
-        """Sets the result of this UpdateAclAccountPassWordResponse.
+        r"""Sets the result of this UpdateAclAccountPassWordResponse.
 
         密码修改结果： - 成功：success； - 密码验证失败：passwordFailed； - 已锁定：locked； - 失败：failed。 
 
@@ -116,7 +116,7 @@ class UpdateAclAccountPassWordResponse(SdkResponse):
 
     @property
     def lock_time_left(self):
-        """Gets the lock_time_left of this UpdateAclAccountPassWordResponse.
+        r"""Gets the lock_time_left of this UpdateAclAccountPassWordResponse.
 
         锁定剩余时间。锁定时该参数返回不为null
 
@@ -127,7 +127,7 @@ class UpdateAclAccountPassWordResponse(SdkResponse):
 
     @lock_time_left.setter
     def lock_time_left(self, lock_time_left):
-        """Sets the lock_time_left of this UpdateAclAccountPassWordResponse.
+        r"""Sets the lock_time_left of this UpdateAclAccountPassWordResponse.
 
         锁定剩余时间。锁定时该参数返回不为null
 
@@ -138,7 +138,7 @@ class UpdateAclAccountPassWordResponse(SdkResponse):
 
     @property
     def retry_times_left(self):
-        """Gets the retry_times_left of this UpdateAclAccountPassWordResponse.
+        r"""Gets the retry_times_left of this UpdateAclAccountPassWordResponse.
 
         密码验证剩余次数。验证失败时该参数返回不为null
 
@@ -149,7 +149,7 @@ class UpdateAclAccountPassWordResponse(SdkResponse):
 
     @retry_times_left.setter
     def retry_times_left(self, retry_times_left):
-        """Sets the retry_times_left of this UpdateAclAccountPassWordResponse.
+        r"""Sets the retry_times_left of this UpdateAclAccountPassWordResponse.
 
         密码验证剩余次数。验证失败时该参数返回不为null
 
@@ -160,7 +160,7 @@ class UpdateAclAccountPassWordResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this UpdateAclAccountPassWordResponse.
+        r"""Gets the message of this UpdateAclAccountPassWordResponse.
 
         修改结果。
 
@@ -171,7 +171,7 @@ class UpdateAclAccountPassWordResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this UpdateAclAccountPassWordResponse.
+        r"""Sets the message of this UpdateAclAccountPassWordResponse.
 
         修改结果。
 

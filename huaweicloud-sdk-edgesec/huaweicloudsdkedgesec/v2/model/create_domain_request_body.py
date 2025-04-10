@@ -31,7 +31,7 @@ class CreateDomainRequestBody:
     }
 
     def __init__(self, domain_name=None, enterprise_project_id=None, policy_id=None, description=None):
-        """CreateDomainRequestBody
+        r"""CreateDomainRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class CreateDomainRequestBody:
 
     @property
     def domain_name(self):
-        """Gets the domain_name of this CreateDomainRequestBody.
+        r"""Gets the domain_name of this CreateDomainRequestBody.
 
         防护域名（可带端口）
 
@@ -73,7 +73,7 @@ class CreateDomainRequestBody:
 
     @domain_name.setter
     def domain_name(self, domain_name):
-        """Sets the domain_name of this CreateDomainRequestBody.
+        r"""Sets the domain_name of this CreateDomainRequestBody.
 
         防护域名（可带端口）
 
@@ -84,7 +84,7 @@ class CreateDomainRequestBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CreateDomainRequestBody.
+        r"""Gets the enterprise_project_id of this CreateDomainRequestBody.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id，默认为0
 
@@ -95,7 +95,7 @@ class CreateDomainRequestBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CreateDomainRequestBody.
+        r"""Sets the enterprise_project_id of this CreateDomainRequestBody.
 
         您可以通过调用企业项目管理服务（EPS）的查询企业项目列表接口（ListEnterpriseProject）查询企业项目id，默认为0
 
@@ -106,7 +106,7 @@ class CreateDomainRequestBody:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this CreateDomainRequestBody.
+        r"""Gets the policy_id of this CreateDomainRequestBody.
 
         防护域名关联的策略id
 
@@ -117,7 +117,7 @@ class CreateDomainRequestBody:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this CreateDomainRequestBody.
+        r"""Sets the policy_id of this CreateDomainRequestBody.
 
         防护域名关联的策略id
 
@@ -128,7 +128,7 @@ class CreateDomainRequestBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateDomainRequestBody.
+        r"""Gets the description of this CreateDomainRequestBody.
 
         域名描述
 
@@ -139,7 +139,7 @@ class CreateDomainRequestBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateDomainRequestBody.
+        r"""Sets the description of this CreateDomainRequestBody.
 
         域名描述
 

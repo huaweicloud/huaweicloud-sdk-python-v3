@@ -33,7 +33,7 @@ class ShowWafQpsRequest:
     }
 
     def __init__(self, recent=None, domains=None, start_time=None, end_time=None, overseas_type=None):
-        """ShowWafQpsRequest
+        r"""ShowWafQpsRequest
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ShowWafQpsRequest:
 
     @property
     def recent(self):
-        """Gets the recent of this ShowWafQpsRequest.
+        r"""Gets the recent of this ShowWafQpsRequest.
 
         枚举值：yesterday,today,3days,1week,1month 与开始结束时间不同时为空
 
@@ -82,7 +82,7 @@ class ShowWafQpsRequest:
 
     @recent.setter
     def recent(self, recent):
-        """Sets the recent of this ShowWafQpsRequest.
+        r"""Sets the recent of this ShowWafQpsRequest.
 
         枚举值：yesterday,today,3days,1week,1month 与开始结束时间不同时为空
 
@@ -93,7 +93,7 @@ class ShowWafQpsRequest:
 
     @property
     def domains(self):
-        """Gets the domains of this ShowWafQpsRequest.
+        r"""Gets the domains of this ShowWafQpsRequest.
 
         查询域名
 
@@ -104,7 +104,7 @@ class ShowWafQpsRequest:
 
     @domains.setter
     def domains(self, domains):
-        """Sets the domains of this ShowWafQpsRequest.
+        r"""Sets the domains of this ShowWafQpsRequest.
 
         查询域名
 
@@ -115,7 +115,7 @@ class ShowWafQpsRequest:
 
     @property
     def start_time(self):
-        """Gets the start_time of this ShowWafQpsRequest.
+        r"""Gets the start_time of this ShowWafQpsRequest.
 
         开始时间（毫秒时间戳）
 
@@ -126,7 +126,7 @@ class ShowWafQpsRequest:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this ShowWafQpsRequest.
+        r"""Sets the start_time of this ShowWafQpsRequest.
 
         开始时间（毫秒时间戳）
 
@@ -137,7 +137,7 @@ class ShowWafQpsRequest:
 
     @property
     def end_time(self):
-        """Gets the end_time of this ShowWafQpsRequest.
+        r"""Gets the end_time of this ShowWafQpsRequest.
 
         结束时间（毫秒时间戳）
 
@@ -148,7 +148,7 @@ class ShowWafQpsRequest:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this ShowWafQpsRequest.
+        r"""Sets the end_time of this ShowWafQpsRequest.
 
         结束时间（毫秒时间戳）
 
@@ -159,7 +159,7 @@ class ShowWafQpsRequest:
 
     @property
     def overseas_type(self):
-        """Gets the overseas_type of this ShowWafQpsRequest.
+        r"""Gets the overseas_type of this ShowWafQpsRequest.
 
         防护区域，0-大陆，1-海外
 
@@ -170,7 +170,7 @@ class ShowWafQpsRequest:
 
     @overseas_type.setter
     def overseas_type(self, overseas_type):
-        """Sets the overseas_type of this ShowWafQpsRequest.
+        r"""Sets the overseas_type of this ShowWafQpsRequest.
 
         防护区域，0-大陆，1-海外
 

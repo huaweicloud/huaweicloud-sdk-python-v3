@@ -28,7 +28,7 @@ class ListMessagesResponse(SdkResponse):
     }
 
     def __init__(self, messages=None, total=None):
-        """ListMessagesResponse
+        r"""ListMessagesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListMessagesResponse(SdkResponse):
 
     @property
     def messages(self):
-        """Gets the messages of this ListMessagesResponse.
+        r"""Gets the messages of this ListMessagesResponse.
 
         消息列表。
 
@@ -62,7 +62,7 @@ class ListMessagesResponse(SdkResponse):
 
     @messages.setter
     def messages(self, messages):
-        """Sets the messages of this ListMessagesResponse.
+        r"""Sets the messages of this ListMessagesResponse.
 
         消息列表。
 
@@ -73,7 +73,7 @@ class ListMessagesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListMessagesResponse.
+        r"""Gets the total of this ListMessagesResponse.
 
         消息总数。
 
@@ -84,7 +84,7 @@ class ListMessagesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListMessagesResponse.
+        r"""Sets the total of this ListMessagesResponse.
 
         消息总数。
 

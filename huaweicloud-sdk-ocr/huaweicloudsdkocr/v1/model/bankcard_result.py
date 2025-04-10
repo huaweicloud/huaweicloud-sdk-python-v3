@@ -37,7 +37,7 @@ class BankcardResult:
     }
 
     def __init__(self, bank_name=None, card_number=None, issue_date=None, expiry_date=None, type=None, confidence=None, text_location=None):
-        """BankcardResult
+        r"""BankcardResult
 
         The model defined in huaweicloud sdk
 
@@ -85,7 +85,7 @@ class BankcardResult:
 
     @property
     def bank_name(self):
-        """Gets the bank_name of this BankcardResult.
+        r"""Gets the bank_name of this BankcardResult.
 
         发卡行。 
 
@@ -96,7 +96,7 @@ class BankcardResult:
 
     @bank_name.setter
     def bank_name(self, bank_name):
-        """Sets the bank_name of this BankcardResult.
+        r"""Sets the bank_name of this BankcardResult.
 
         发卡行。 
 
@@ -107,7 +107,7 @@ class BankcardResult:
 
     @property
     def card_number(self):
-        """Gets the card_number of this BankcardResult.
+        r"""Gets the card_number of this BankcardResult.
 
         银行卡号。 
 
@@ -118,7 +118,7 @@ class BankcardResult:
 
     @card_number.setter
     def card_number(self, card_number):
-        """Sets the card_number of this BankcardResult.
+        r"""Sets the card_number of this BankcardResult.
 
         银行卡号。 
 
@@ -129,7 +129,7 @@ class BankcardResult:
 
     @property
     def issue_date(self):
-        """Gets the issue_date of this BankcardResult.
+        r"""Gets the issue_date of this BankcardResult.
 
         有效期开始日期。 
 
@@ -140,7 +140,7 @@ class BankcardResult:
 
     @issue_date.setter
     def issue_date(self, issue_date):
-        """Sets the issue_date of this BankcardResult.
+        r"""Sets the issue_date of this BankcardResult.
 
         有效期开始日期。 
 
@@ -151,7 +151,7 @@ class BankcardResult:
 
     @property
     def expiry_date(self):
-        """Gets the expiry_date of this BankcardResult.
+        r"""Gets the expiry_date of this BankcardResult.
 
         有效期截止日期。 
 
@@ -162,7 +162,7 @@ class BankcardResult:
 
     @expiry_date.setter
     def expiry_date(self, expiry_date):
-        """Sets the expiry_date of this BankcardResult.
+        r"""Sets the expiry_date of this BankcardResult.
 
         有效期截止日期。 
 
@@ -173,7 +173,7 @@ class BankcardResult:
 
     @property
     def type(self):
-        """Gets the type of this BankcardResult.
+        r"""Gets the type of this BankcardResult.
 
         银行卡类别，如：储蓄卡，信用卡。 
 
@@ -184,7 +184,7 @@ class BankcardResult:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this BankcardResult.
+        r"""Sets the type of this BankcardResult.
 
         银行卡类别，如：储蓄卡，信用卡。 
 
@@ -195,7 +195,7 @@ class BankcardResult:
 
     @property
     def confidence(self):
-        """Gets the confidence of this BankcardResult.
+        r"""Gets the confidence of this BankcardResult.
 
         相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。 
 
@@ -206,7 +206,7 @@ class BankcardResult:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this BankcardResult.
+        r"""Sets the confidence of this BankcardResult.
 
         相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。 置信度由算法给出，不直接等价于对应字段的准确率。 
 
@@ -217,7 +217,7 @@ class BankcardResult:
 
     @property
     def text_location(self):
-        """Gets the text_location of this BankcardResult.
+        r"""Gets the text_location of this BankcardResult.
 
         对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 
@@ -228,7 +228,7 @@ class BankcardResult:
 
     @text_location.setter
     def text_location(self, text_location):
-        """Sets the text_location of this BankcardResult.
+        r"""Sets the text_location of this BankcardResult.
 
         对应所有在原图上识别到的字段位置信息，包含所有文字区域四个顶点的二维坐标（x,y）。采用图像坐标系，坐标原点为图片左上角，x轴沿水平方向，y轴沿竖直方向。 
 

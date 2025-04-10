@@ -33,7 +33,7 @@ class ExceptionResponseSum:
     }
 
     def __init__(self, failed_assert=None, failed_others=None, failed_parsed=None, failed_refused=None, failed_timeout=None):
-        """ExceptionResponseSum
+        r"""ExceptionResponseSum
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ExceptionResponseSum:
 
     @property
     def failed_assert(self):
-        """Gets the failed_assert of this ExceptionResponseSum.
+        r"""Gets the failed_assert of this ExceptionResponseSum.
 
         断言失败数
 
@@ -82,7 +82,7 @@ class ExceptionResponseSum:
 
     @failed_assert.setter
     def failed_assert(self, failed_assert):
-        """Sets the failed_assert of this ExceptionResponseSum.
+        r"""Sets the failed_assert of this ExceptionResponseSum.
 
         断言失败数
 
@@ -93,7 +93,7 @@ class ExceptionResponseSum:
 
     @property
     def failed_others(self):
-        """Gets the failed_others of this ExceptionResponseSum.
+        r"""Gets the failed_others of this ExceptionResponseSum.
 
         其他错误失败数
 
@@ -104,7 +104,7 @@ class ExceptionResponseSum:
 
     @failed_others.setter
     def failed_others(self, failed_others):
-        """Sets the failed_others of this ExceptionResponseSum.
+        r"""Sets the failed_others of this ExceptionResponseSum.
 
         其他错误失败数
 
@@ -115,7 +115,7 @@ class ExceptionResponseSum:
 
     @property
     def failed_parsed(self):
-        """Gets the failed_parsed of this ExceptionResponseSum.
+        r"""Gets the failed_parsed of this ExceptionResponseSum.
 
         解析失败数
 
@@ -126,7 +126,7 @@ class ExceptionResponseSum:
 
     @failed_parsed.setter
     def failed_parsed(self, failed_parsed):
-        """Sets the failed_parsed of this ExceptionResponseSum.
+        r"""Sets the failed_parsed of this ExceptionResponseSum.
 
         解析失败数
 
@@ -137,7 +137,7 @@ class ExceptionResponseSum:
 
     @property
     def failed_refused(self):
-        """Gets the failed_refused of this ExceptionResponseSum.
+        r"""Gets the failed_refused of this ExceptionResponseSum.
 
         连接被拒绝失败数
 
@@ -148,7 +148,7 @@ class ExceptionResponseSum:
 
     @failed_refused.setter
     def failed_refused(self, failed_refused):
-        """Sets the failed_refused of this ExceptionResponseSum.
+        r"""Sets the failed_refused of this ExceptionResponseSum.
 
         连接被拒绝失败数
 
@@ -159,7 +159,7 @@ class ExceptionResponseSum:
 
     @property
     def failed_timeout(self):
-        """Gets the failed_timeout of this ExceptionResponseSum.
+        r"""Gets the failed_timeout of this ExceptionResponseSum.
 
         响应超时失败数
 
@@ -170,7 +170,7 @@ class ExceptionResponseSum:
 
     @failed_timeout.setter
     def failed_timeout(self, failed_timeout):
-        """Sets the failed_timeout of this ExceptionResponseSum.
+        r"""Sets the failed_timeout of this ExceptionResponseSum.
 
         响应超时失败数
 

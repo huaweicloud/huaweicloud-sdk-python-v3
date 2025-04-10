@@ -27,7 +27,7 @@ class UpdateAppRequest:
     }
 
     def __init__(self, id=None, body=None):
-        """UpdateAppRequest
+        r"""UpdateAppRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateAppRequest:
 
     @property
     def id(self):
-        """Gets the id of this UpdateAppRequest.
+        r"""Gets the id of this UpdateAppRequest.
 
         应用主键ID
 
@@ -60,7 +60,7 @@ class UpdateAppRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateAppRequest.
+        r"""Sets the id of this UpdateAppRequest.
 
         应用主键ID
 
@@ -71,7 +71,7 @@ class UpdateAppRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateAppRequest.
+        r"""Gets the body of this UpdateAppRequest.
 
         :return: The body of this UpdateAppRequest.
         :rtype: :class:`huaweicloudsdkmsgsms.v2.SmsAppUpdateReq`
@@ -80,7 +80,7 @@ class UpdateAppRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateAppRequest.
+        r"""Sets the body of this UpdateAppRequest.
 
         :param body: The body of this UpdateAppRequest.
         :type body: :class:`huaweicloudsdkmsgsms.v2.SmsAppUpdateReq`

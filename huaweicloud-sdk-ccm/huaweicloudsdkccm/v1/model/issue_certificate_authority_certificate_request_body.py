@@ -43,7 +43,7 @@ class IssueCertificateAuthorityCertificateRequestBody:
     }
 
     def __init__(self, issuer_id=None, path_length=None, signature_algorithm=None, validity=None, type=None, distinguished_name=None, key_algorithm=None, key_usages=None, crl_configuration=None, enterprise_project_id=None):
-        """IssueCertificateAuthorityCertificateRequestBody
+        r"""IssueCertificateAuthorityCertificateRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -102,7 +102,7 @@ class IssueCertificateAuthorityCertificateRequestBody:
 
     @property
     def issuer_id(self):
-        """Gets the issuer_id of this IssueCertificateAuthorityCertificateRequestBody.
+        r"""Gets the issuer_id of this IssueCertificateAuthorityCertificateRequestBody.
 
         父CA证书ID。
 
@@ -113,7 +113,7 @@ class IssueCertificateAuthorityCertificateRequestBody:
 
     @issuer_id.setter
     def issuer_id(self, issuer_id):
-        """Sets the issuer_id of this IssueCertificateAuthorityCertificateRequestBody.
+        r"""Sets the issuer_id of this IssueCertificateAuthorityCertificateRequestBody.
 
         父CA证书ID。
 
@@ -124,7 +124,7 @@ class IssueCertificateAuthorityCertificateRequestBody:
 
     @property
     def path_length(self):
-        """Gets the path_length of this IssueCertificateAuthorityCertificateRequestBody.
+        r"""Gets the path_length of this IssueCertificateAuthorityCertificateRequestBody.
 
         路径长度。
 
@@ -135,7 +135,7 @@ class IssueCertificateAuthorityCertificateRequestBody:
 
     @path_length.setter
     def path_length(self, path_length):
-        """Sets the path_length of this IssueCertificateAuthorityCertificateRequestBody.
+        r"""Sets the path_length of this IssueCertificateAuthorityCertificateRequestBody.
 
         路径长度。
 
@@ -146,7 +146,7 @@ class IssueCertificateAuthorityCertificateRequestBody:
 
     @property
     def signature_algorithm(self):
-        """Gets the signature_algorithm of this IssueCertificateAuthorityCertificateRequestBody.
+        r"""Gets the signature_algorithm of this IssueCertificateAuthorityCertificateRequestBody.
 
         签名哈希算法，可选值如下：   - **SHA256**   - **SHA384**   - **SHA512**   - **SM3**（中国站）
 
@@ -157,7 +157,7 @@ class IssueCertificateAuthorityCertificateRequestBody:
 
     @signature_algorithm.setter
     def signature_algorithm(self, signature_algorithm):
-        """Sets the signature_algorithm of this IssueCertificateAuthorityCertificateRequestBody.
+        r"""Sets the signature_algorithm of this IssueCertificateAuthorityCertificateRequestBody.
 
         签名哈希算法，可选值如下：   - **SHA256**   - **SHA384**   - **SHA512**   - **SM3**（中国站）
 
@@ -168,7 +168,7 @@ class IssueCertificateAuthorityCertificateRequestBody:
 
     @property
     def validity(self):
-        """Gets the validity of this IssueCertificateAuthorityCertificateRequestBody.
+        r"""Gets the validity of this IssueCertificateAuthorityCertificateRequestBody.
 
         :return: The validity of this IssueCertificateAuthorityCertificateRequestBody.
         :rtype: :class:`huaweicloudsdkccm.v1.Validity`
@@ -177,7 +177,7 @@ class IssueCertificateAuthorityCertificateRequestBody:
 
     @validity.setter
     def validity(self, validity):
-        """Sets the validity of this IssueCertificateAuthorityCertificateRequestBody.
+        r"""Sets the validity of this IssueCertificateAuthorityCertificateRequestBody.
 
         :param validity: The validity of this IssueCertificateAuthorityCertificateRequestBody.
         :type validity: :class:`huaweicloudsdkccm.v1.Validity`
@@ -186,7 +186,7 @@ class IssueCertificateAuthorityCertificateRequestBody:
 
     @property
     def type(self):
-        """Gets the type of this IssueCertificateAuthorityCertificateRequestBody.
+        r"""Gets the type of this IssueCertificateAuthorityCertificateRequestBody.
 
         创建的CA类型。（如果激活包周期CA，为必填值） - **ROOT** : 根CA - **SUBORDINATE** : 从属CA
 
@@ -197,7 +197,7 @@ class IssueCertificateAuthorityCertificateRequestBody:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this IssueCertificateAuthorityCertificateRequestBody.
+        r"""Sets the type of this IssueCertificateAuthorityCertificateRequestBody.
 
         创建的CA类型。（如果激活包周期CA，为必填值） - **ROOT** : 根CA - **SUBORDINATE** : 从属CA
 
@@ -208,7 +208,7 @@ class IssueCertificateAuthorityCertificateRequestBody:
 
     @property
     def distinguished_name(self):
-        """Gets the distinguished_name of this IssueCertificateAuthorityCertificateRequestBody.
+        r"""Gets the distinguished_name of this IssueCertificateAuthorityCertificateRequestBody.
 
         :return: The distinguished_name of this IssueCertificateAuthorityCertificateRequestBody.
         :rtype: :class:`huaweicloudsdkccm.v1.DistinguishedName`
@@ -217,7 +217,7 @@ class IssueCertificateAuthorityCertificateRequestBody:
 
     @distinguished_name.setter
     def distinguished_name(self, distinguished_name):
-        """Sets the distinguished_name of this IssueCertificateAuthorityCertificateRequestBody.
+        r"""Sets the distinguished_name of this IssueCertificateAuthorityCertificateRequestBody.
 
         :param distinguished_name: The distinguished_name of this IssueCertificateAuthorityCertificateRequestBody.
         :type distinguished_name: :class:`huaweicloudsdkccm.v1.DistinguishedName`
@@ -226,7 +226,7 @@ class IssueCertificateAuthorityCertificateRequestBody:
 
     @property
     def key_algorithm(self):
-        """Gets the key_algorithm of this IssueCertificateAuthorityCertificateRequestBody.
+        r"""Gets the key_algorithm of this IssueCertificateAuthorityCertificateRequestBody.
 
         密钥算法（如果激活包周期CA，为必填值），可选值如下：   - **RSA2048** : RSA算法，密钥长度2048位；   - **RSA4096** : RSA算法，密钥长度4096位；   - **EC256** : 椭圆曲线算法（Elliptic Curve Digital Signature Algorithm (ECDSA)），密钥长度256位；   - **EC384** : 椭圆曲线算法（Elliptic Curve Digital Signature Algorithm (ECDSA)），密钥长度384位；   - **SM2** : 国家密码管理局颁发的椭圆曲线算法（签名哈希算法SM3），密钥长度256位。（中国站）
 
@@ -237,7 +237,7 @@ class IssueCertificateAuthorityCertificateRequestBody:
 
     @key_algorithm.setter
     def key_algorithm(self, key_algorithm):
-        """Sets the key_algorithm of this IssueCertificateAuthorityCertificateRequestBody.
+        r"""Sets the key_algorithm of this IssueCertificateAuthorityCertificateRequestBody.
 
         密钥算法（如果激活包周期CA，为必填值），可选值如下：   - **RSA2048** : RSA算法，密钥长度2048位；   - **RSA4096** : RSA算法，密钥长度4096位；   - **EC256** : 椭圆曲线算法（Elliptic Curve Digital Signature Algorithm (ECDSA)），密钥长度256位；   - **EC384** : 椭圆曲线算法（Elliptic Curve Digital Signature Algorithm (ECDSA)），密钥长度384位；   - **SM2** : 国家密码管理局颁发的椭圆曲线算法（签名哈希算法SM3），密钥长度256位。（中国站）
 
@@ -248,7 +248,7 @@ class IssueCertificateAuthorityCertificateRequestBody:
 
     @property
     def key_usages(self):
-        """Gets the key_usages of this IssueCertificateAuthorityCertificateRequestBody.
+        r"""Gets the key_usages of this IssueCertificateAuthorityCertificateRequestBody.
 
         密钥用法，具体标准参见RFC 5280中:[4.2.1.3节](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.3)。   - **digitalSignature** : 数字签名；   - **nonRepudiation** : 不可抵赖；   - **keyEncipherment** : 密钥用于加密密钥数据；   - **dataEncipherment** : 用于加密数据；   - **keyAgreement** : 密钥协商；   - **keyCertSign** : 签发证书；   - **cRLSign** : 签发吊销列表；   - **encipherOnly** : 仅用于加密；   - **decipherOnly** : 仅用于解密。 > 缺省值如下： > - 根CA证书：默认为**[digitalSignature,keyCertSign,cRLSign]**，忽略用户传入值； > - 从属CA证书：默认为**[digitalSignature,keyCertSign,cRLSign]**，支持用户自定义。
 
@@ -259,7 +259,7 @@ class IssueCertificateAuthorityCertificateRequestBody:
 
     @key_usages.setter
     def key_usages(self, key_usages):
-        """Sets the key_usages of this IssueCertificateAuthorityCertificateRequestBody.
+        r"""Sets the key_usages of this IssueCertificateAuthorityCertificateRequestBody.
 
         密钥用法，具体标准参见RFC 5280中:[4.2.1.3节](https://datatracker.ietf.org/doc/html/rfc5280#section-4.2.1.3)。   - **digitalSignature** : 数字签名；   - **nonRepudiation** : 不可抵赖；   - **keyEncipherment** : 密钥用于加密密钥数据；   - **dataEncipherment** : 用于加密数据；   - **keyAgreement** : 密钥协商；   - **keyCertSign** : 签发证书；   - **cRLSign** : 签发吊销列表；   - **encipherOnly** : 仅用于加密；   - **decipherOnly** : 仅用于解密。 > 缺省值如下： > - 根CA证书：默认为**[digitalSignature,keyCertSign,cRLSign]**，忽略用户传入值； > - 从属CA证书：默认为**[digitalSignature,keyCertSign,cRLSign]**，支持用户自定义。
 
@@ -270,7 +270,7 @@ class IssueCertificateAuthorityCertificateRequestBody:
 
     @property
     def crl_configuration(self):
-        """Gets the crl_configuration of this IssueCertificateAuthorityCertificateRequestBody.
+        r"""Gets the crl_configuration of this IssueCertificateAuthorityCertificateRequestBody.
 
         :return: The crl_configuration of this IssueCertificateAuthorityCertificateRequestBody.
         :rtype: :class:`huaweicloudsdkccm.v1.CrlConfiguration`
@@ -279,7 +279,7 @@ class IssueCertificateAuthorityCertificateRequestBody:
 
     @crl_configuration.setter
     def crl_configuration(self, crl_configuration):
-        """Sets the crl_configuration of this IssueCertificateAuthorityCertificateRequestBody.
+        r"""Sets the crl_configuration of this IssueCertificateAuthorityCertificateRequestBody.
 
         :param crl_configuration: The crl_configuration of this IssueCertificateAuthorityCertificateRequestBody.
         :type crl_configuration: :class:`huaweicloudsdkccm.v1.CrlConfiguration`
@@ -288,7 +288,7 @@ class IssueCertificateAuthorityCertificateRequestBody:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this IssueCertificateAuthorityCertificateRequestBody.
+        r"""Gets the enterprise_project_id of this IssueCertificateAuthorityCertificateRequestBody.
 
         企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件.   取值为“all”   取值为“0”   满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
 
@@ -299,7 +299,7 @@ class IssueCertificateAuthorityCertificateRequestBody:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this IssueCertificateAuthorityCertificateRequestBody.
+        r"""Sets the enterprise_project_id of this IssueCertificateAuthorityCertificateRequestBody.
 
         企业多项目ID。用户未开通企业多项目时，不需要输入该字段。 用户开通企业多项目时，查询资源可以输入该字段。 若用户不输入该字段，默认查询租户所有有权限的企业多项目下的资源。 此时“enterprise_project_id”取值为“all”。 若用户输入该字段，取值满足以下任一条件.   取值为“all”   取值为“0”   满足正则匹配：“^[0-9a-z]{8}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{4}-[0-9a-z]{12}$”
 

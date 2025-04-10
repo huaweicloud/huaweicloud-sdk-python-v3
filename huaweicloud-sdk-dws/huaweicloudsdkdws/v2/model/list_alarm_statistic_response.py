@@ -26,7 +26,7 @@ class ListAlarmStatisticResponse(SdkResponse):
     }
 
     def __init__(self, alarm_statistics=None):
-        """ListAlarmStatisticResponse
+        r"""ListAlarmStatisticResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListAlarmStatisticResponse(SdkResponse):
 
     @property
     def alarm_statistics(self):
-        """Gets the alarm_statistics of this ListAlarmStatisticResponse.
+        r"""Gets the alarm_statistics of this ListAlarmStatisticResponse.
 
         告警统计列表
 
@@ -55,7 +55,7 @@ class ListAlarmStatisticResponse(SdkResponse):
 
     @alarm_statistics.setter
     def alarm_statistics(self, alarm_statistics):
-        """Sets the alarm_statistics of this ListAlarmStatisticResponse.
+        r"""Sets the alarm_statistics of this ListAlarmStatisticResponse.
 
         告警统计列表
 

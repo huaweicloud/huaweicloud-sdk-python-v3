@@ -23,7 +23,7 @@ class ListConfigurationDatastoresRequest:
     }
 
     def __init__(self):
-        """ListConfigurationDatastoresRequest
+        r"""ListConfigurationDatastoresRequest
 
         The model defined in huaweicloud sdk
 

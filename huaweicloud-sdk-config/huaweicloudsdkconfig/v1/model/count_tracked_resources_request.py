@@ -39,7 +39,7 @@ class CountTrackedResourcesRequest:
     }
 
     def __init__(self, id=None, name=None, type=None, region_id=None, ep_id=None, project_id=None, tags=None, resource_deleted=None):
-        """CountTrackedResourcesRequest
+        r"""CountTrackedResourcesRequest
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class CountTrackedResourcesRequest:
 
     @property
     def id(self):
-        """Gets the id of this CountTrackedResourcesRequest.
+        r"""Gets the id of this CountTrackedResourcesRequest.
 
         资源ID
 
@@ -103,7 +103,7 @@ class CountTrackedResourcesRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CountTrackedResourcesRequest.
+        r"""Sets the id of this CountTrackedResourcesRequest.
 
         资源ID
 
@@ -114,7 +114,7 @@ class CountTrackedResourcesRequest:
 
     @property
     def name(self):
-        """Gets the name of this CountTrackedResourcesRequest.
+        r"""Gets the name of this CountTrackedResourcesRequest.
 
         资源名称
 
@@ -125,7 +125,7 @@ class CountTrackedResourcesRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CountTrackedResourcesRequest.
+        r"""Sets the name of this CountTrackedResourcesRequest.
 
         资源名称
 
@@ -136,7 +136,7 @@ class CountTrackedResourcesRequest:
 
     @property
     def type(self):
-        """Gets the type of this CountTrackedResourcesRequest.
+        r"""Gets the type of this CountTrackedResourcesRequest.
 
         资源类型（provider.type）
 
@@ -147,7 +147,7 @@ class CountTrackedResourcesRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CountTrackedResourcesRequest.
+        r"""Sets the type of this CountTrackedResourcesRequest.
 
         资源类型（provider.type）
 
@@ -158,7 +158,7 @@ class CountTrackedResourcesRequest:
 
     @property
     def region_id(self):
-        """Gets the region_id of this CountTrackedResourcesRequest.
+        r"""Gets the region_id of this CountTrackedResourcesRequest.
 
         区域ID列表
 
@@ -169,7 +169,7 @@ class CountTrackedResourcesRequest:
 
     @region_id.setter
     def region_id(self, region_id):
-        """Sets the region_id of this CountTrackedResourcesRequest.
+        r"""Sets the region_id of this CountTrackedResourcesRequest.
 
         区域ID列表
 
@@ -180,7 +180,7 @@ class CountTrackedResourcesRequest:
 
     @property
     def ep_id(self):
-        """Gets the ep_id of this CountTrackedResourcesRequest.
+        r"""Gets the ep_id of this CountTrackedResourcesRequest.
 
         企业项目ID列表
 
@@ -191,7 +191,7 @@ class CountTrackedResourcesRequest:
 
     @ep_id.setter
     def ep_id(self, ep_id):
-        """Sets the ep_id of this CountTrackedResourcesRequest.
+        r"""Sets the ep_id of this CountTrackedResourcesRequest.
 
         企业项目ID列表
 
@@ -202,7 +202,7 @@ class CountTrackedResourcesRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this CountTrackedResourcesRequest.
+        r"""Gets the project_id of this CountTrackedResourcesRequest.
 
         项目ID
 
@@ -213,7 +213,7 @@ class CountTrackedResourcesRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this CountTrackedResourcesRequest.
+        r"""Sets the project_id of this CountTrackedResourcesRequest.
 
         项目ID
 
@@ -224,7 +224,7 @@ class CountTrackedResourcesRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this CountTrackedResourcesRequest.
+        r"""Gets the tags of this CountTrackedResourcesRequest.
 
         标签列表
 
@@ -235,7 +235,7 @@ class CountTrackedResourcesRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CountTrackedResourcesRequest.
+        r"""Sets the tags of this CountTrackedResourcesRequest.
 
         标签列表
 
@@ -246,7 +246,7 @@ class CountTrackedResourcesRequest:
 
     @property
     def resource_deleted(self):
-        """Gets the resource_deleted of this CountTrackedResourcesRequest.
+        r"""Gets the resource_deleted of this CountTrackedResourcesRequest.
 
         是否查询已删除的资源。默认为false，不查询已删除的资源
 
@@ -257,7 +257,7 @@ class CountTrackedResourcesRequest:
 
     @resource_deleted.setter
     def resource_deleted(self, resource_deleted):
-        """Sets the resource_deleted of this CountTrackedResourcesRequest.
+        r"""Sets the resource_deleted of this CountTrackedResourcesRequest.
 
         是否查询已删除的资源。默认为false，不查询已删除的资源
 

@@ -47,7 +47,7 @@ class AssetTree:
     }
 
     def __init__(self, id=None, name=None, project_id=None, create_time=None, creator_name=None, creator_num=None, update_name=None, update_num=None, update_time=None, asset_id=None, parent_id=None, factor_cnt=None):
-        """AssetTree
+        r"""AssetTree
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class AssetTree:
 
     @property
     def id(self):
-        """Gets the id of this AssetTree.
+        r"""Gets the id of this AssetTree.
 
         :return: The id of this AssetTree.
         :rtype: str
@@ -129,7 +129,7 @@ class AssetTree:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this AssetTree.
+        r"""Sets the id of this AssetTree.
 
         :param id: The id of this AssetTree.
         :type id: str
@@ -138,7 +138,7 @@ class AssetTree:
 
     @property
     def name(self):
-        """Gets the name of this AssetTree.
+        r"""Gets the name of this AssetTree.
 
         :return: The name of this AssetTree.
         :rtype: str
@@ -147,7 +147,7 @@ class AssetTree:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this AssetTree.
+        r"""Sets the name of this AssetTree.
 
         :param name: The name of this AssetTree.
         :type name: str
@@ -156,7 +156,7 @@ class AssetTree:
 
     @property
     def project_id(self):
-        """Gets the project_id of this AssetTree.
+        r"""Gets the project_id of this AssetTree.
 
         :return: The project_id of this AssetTree.
         :rtype: str
@@ -165,7 +165,7 @@ class AssetTree:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this AssetTree.
+        r"""Sets the project_id of this AssetTree.
 
         :param project_id: The project_id of this AssetTree.
         :type project_id: str
@@ -174,7 +174,7 @@ class AssetTree:
 
     @property
     def create_time(self):
-        """Gets the create_time of this AssetTree.
+        r"""Gets the create_time of this AssetTree.
 
         :return: The create_time of this AssetTree.
         :rtype: datetime
@@ -183,7 +183,7 @@ class AssetTree:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this AssetTree.
+        r"""Sets the create_time of this AssetTree.
 
         :param create_time: The create_time of this AssetTree.
         :type create_time: datetime
@@ -192,7 +192,7 @@ class AssetTree:
 
     @property
     def creator_name(self):
-        """Gets the creator_name of this AssetTree.
+        r"""Gets the creator_name of this AssetTree.
 
         :return: The creator_name of this AssetTree.
         :rtype: str
@@ -201,7 +201,7 @@ class AssetTree:
 
     @creator_name.setter
     def creator_name(self, creator_name):
-        """Sets the creator_name of this AssetTree.
+        r"""Sets the creator_name of this AssetTree.
 
         :param creator_name: The creator_name of this AssetTree.
         :type creator_name: str
@@ -210,7 +210,7 @@ class AssetTree:
 
     @property
     def creator_num(self):
-        """Gets the creator_num of this AssetTree.
+        r"""Gets the creator_num of this AssetTree.
 
         :return: The creator_num of this AssetTree.
         :rtype: str
@@ -219,7 +219,7 @@ class AssetTree:
 
     @creator_num.setter
     def creator_num(self, creator_num):
-        """Sets the creator_num of this AssetTree.
+        r"""Sets the creator_num of this AssetTree.
 
         :param creator_num: The creator_num of this AssetTree.
         :type creator_num: str
@@ -228,7 +228,7 @@ class AssetTree:
 
     @property
     def update_name(self):
-        """Gets the update_name of this AssetTree.
+        r"""Gets the update_name of this AssetTree.
 
         :return: The update_name of this AssetTree.
         :rtype: str
@@ -237,7 +237,7 @@ class AssetTree:
 
     @update_name.setter
     def update_name(self, update_name):
-        """Sets the update_name of this AssetTree.
+        r"""Sets the update_name of this AssetTree.
 
         :param update_name: The update_name of this AssetTree.
         :type update_name: str
@@ -246,7 +246,7 @@ class AssetTree:
 
     @property
     def update_num(self):
-        """Gets the update_num of this AssetTree.
+        r"""Gets the update_num of this AssetTree.
 
         :return: The update_num of this AssetTree.
         :rtype: str
@@ -255,7 +255,7 @@ class AssetTree:
 
     @update_num.setter
     def update_num(self, update_num):
-        """Sets the update_num of this AssetTree.
+        r"""Sets the update_num of this AssetTree.
 
         :param update_num: The update_num of this AssetTree.
         :type update_num: str
@@ -264,7 +264,7 @@ class AssetTree:
 
     @property
     def update_time(self):
-        """Gets the update_time of this AssetTree.
+        r"""Gets the update_time of this AssetTree.
 
         :return: The update_time of this AssetTree.
         :rtype: datetime
@@ -273,7 +273,7 @@ class AssetTree:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this AssetTree.
+        r"""Sets the update_time of this AssetTree.
 
         :param update_time: The update_time of this AssetTree.
         :type update_time: datetime
@@ -282,7 +282,7 @@ class AssetTree:
 
     @property
     def asset_id(self):
-        """Gets the asset_id of this AssetTree.
+        r"""Gets the asset_id of this AssetTree.
 
         :return: The asset_id of this AssetTree.
         :rtype: str
@@ -291,7 +291,7 @@ class AssetTree:
 
     @asset_id.setter
     def asset_id(self, asset_id):
-        """Sets the asset_id of this AssetTree.
+        r"""Sets the asset_id of this AssetTree.
 
         :param asset_id: The asset_id of this AssetTree.
         :type asset_id: str
@@ -300,7 +300,7 @@ class AssetTree:
 
     @property
     def parent_id(self):
-        """Gets the parent_id of this AssetTree.
+        r"""Gets the parent_id of this AssetTree.
 
         :return: The parent_id of this AssetTree.
         :rtype: str
@@ -309,7 +309,7 @@ class AssetTree:
 
     @parent_id.setter
     def parent_id(self, parent_id):
-        """Sets the parent_id of this AssetTree.
+        r"""Sets the parent_id of this AssetTree.
 
         :param parent_id: The parent_id of this AssetTree.
         :type parent_id: str
@@ -318,7 +318,7 @@ class AssetTree:
 
     @property
     def factor_cnt(self):
-        """Gets the factor_cnt of this AssetTree.
+        r"""Gets the factor_cnt of this AssetTree.
 
         :return: The factor_cnt of this AssetTree.
         :rtype: int
@@ -327,7 +327,7 @@ class AssetTree:
 
     @factor_cnt.setter
     def factor_cnt(self, factor_cnt):
-        """Sets the factor_cnt of this AssetTree.
+        r"""Sets the factor_cnt of this AssetTree.
 
         :param factor_cnt: The factor_cnt of this AssetTree.
         :type factor_cnt: int

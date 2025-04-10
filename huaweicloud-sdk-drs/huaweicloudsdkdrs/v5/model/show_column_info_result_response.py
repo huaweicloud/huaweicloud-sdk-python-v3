@@ -28,7 +28,7 @@ class ShowColumnInfoResultResponse(SdkResponse):
     }
 
     def __init__(self, results=None, total_count=None):
-        """ShowColumnInfoResultResponse
+        r"""ShowColumnInfoResultResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ShowColumnInfoResultResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this ShowColumnInfoResultResponse.
+        r"""Gets the results of this ShowColumnInfoResultResponse.
 
         指定数据库表列信息
 
@@ -62,7 +62,7 @@ class ShowColumnInfoResultResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this ShowColumnInfoResultResponse.
+        r"""Sets the results of this ShowColumnInfoResultResponse.
 
         指定数据库表列信息
 
@@ -73,7 +73,7 @@ class ShowColumnInfoResultResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ShowColumnInfoResultResponse.
+        r"""Gets the total_count of this ShowColumnInfoResultResponse.
 
         列表中的项目总数，与分页无关
 
@@ -84,7 +84,7 @@ class ShowColumnInfoResultResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ShowColumnInfoResultResponse.
+        r"""Sets the total_count of this ShowColumnInfoResultResponse.
 
         列表中的项目总数，与分页无关
 

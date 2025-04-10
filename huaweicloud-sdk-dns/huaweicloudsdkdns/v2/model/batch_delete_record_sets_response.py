@@ -28,7 +28,7 @@ class BatchDeleteRecordSetsResponse(SdkResponse):
     }
 
     def __init__(self, recordsets=None, metadata=None):
-        """BatchDeleteRecordSetsResponse
+        r"""BatchDeleteRecordSetsResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class BatchDeleteRecordSetsResponse(SdkResponse):
 
     @property
     def recordsets(self):
-        """Gets the recordsets of this BatchDeleteRecordSetsResponse.
+        r"""Gets the recordsets of this BatchDeleteRecordSetsResponse.
 
         删除record set的列表响应。
 
@@ -62,7 +62,7 @@ class BatchDeleteRecordSetsResponse(SdkResponse):
 
     @recordsets.setter
     def recordsets(self, recordsets):
-        """Sets the recordsets of this BatchDeleteRecordSetsResponse.
+        r"""Sets the recordsets of this BatchDeleteRecordSetsResponse.
 
         删除record set的列表响应。
 
@@ -73,7 +73,7 @@ class BatchDeleteRecordSetsResponse(SdkResponse):
 
     @property
     def metadata(self):
-        """Gets the metadata of this BatchDeleteRecordSetsResponse.
+        r"""Gets the metadata of this BatchDeleteRecordSetsResponse.
 
         :return: The metadata of this BatchDeleteRecordSetsResponse.
         :rtype: :class:`huaweicloudsdkdns.v2.Metadata`
@@ -82,7 +82,7 @@ class BatchDeleteRecordSetsResponse(SdkResponse):
 
     @metadata.setter
     def metadata(self, metadata):
-        """Sets the metadata of this BatchDeleteRecordSetsResponse.
+        r"""Sets the metadata of this BatchDeleteRecordSetsResponse.
 
         :param metadata: The metadata of this BatchDeleteRecordSetsResponse.
         :type metadata: :class:`huaweicloudsdkdns.v2.Metadata`

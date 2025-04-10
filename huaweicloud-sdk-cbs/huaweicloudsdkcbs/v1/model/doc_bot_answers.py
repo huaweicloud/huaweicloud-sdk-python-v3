@@ -33,7 +33,7 @@ class DocBotAnswers:
     }
 
     def __init__(self, answer=None, score=None, question=None, answer_detail=None, details=None):
-        """DocBotAnswers
+        r"""DocBotAnswers
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class DocBotAnswers:
 
     @property
     def answer(self):
-        """Gets the answer of this DocBotAnswers.
+        r"""Gets the answer of this DocBotAnswers.
 
         答案。
 
@@ -79,7 +79,7 @@ class DocBotAnswers:
 
     @answer.setter
     def answer(self, answer):
-        """Sets the answer of this DocBotAnswers.
+        r"""Sets the answer of this DocBotAnswers.
 
         答案。
 
@@ -90,7 +90,7 @@ class DocBotAnswers:
 
     @property
     def score(self):
-        """Gets the score of this DocBotAnswers.
+        r"""Gets the score of this DocBotAnswers.
 
         置信度。
 
@@ -101,7 +101,7 @@ class DocBotAnswers:
 
     @score.setter
     def score(self, score):
-        """Sets the score of this DocBotAnswers.
+        r"""Sets the score of this DocBotAnswers.
 
         置信度。
 
@@ -112,7 +112,7 @@ class DocBotAnswers:
 
     @property
     def question(self):
-        """Gets the question of this DocBotAnswers.
+        r"""Gets the question of this DocBotAnswers.
 
         问题。
 
@@ -123,7 +123,7 @@ class DocBotAnswers:
 
     @question.setter
     def question(self, question):
-        """Sets the question of this DocBotAnswers.
+        r"""Sets the question of this DocBotAnswers.
 
         问题。
 
@@ -134,7 +134,7 @@ class DocBotAnswers:
 
     @property
     def answer_detail(self):
-        """Gets the answer_detail of this DocBotAnswers.
+        r"""Gets the answer_detail of this DocBotAnswers.
 
         :return: The answer_detail of this DocBotAnswers.
         :rtype: :class:`huaweicloudsdkcbs.v1.DocQueryAnswerDetail`
@@ -143,7 +143,7 @@ class DocBotAnswers:
 
     @answer_detail.setter
     def answer_detail(self, answer_detail):
-        """Sets the answer_detail of this DocBotAnswers.
+        r"""Sets the answer_detail of this DocBotAnswers.
 
         :param answer_detail: The answer_detail of this DocBotAnswers.
         :type answer_detail: :class:`huaweicloudsdkcbs.v1.DocQueryAnswerDetail`
@@ -152,7 +152,7 @@ class DocBotAnswers:
 
     @property
     def details(self):
-        """Gets the details of this DocBotAnswers.
+        r"""Gets the details of this DocBotAnswers.
 
         候选答案列表
 
@@ -163,7 +163,7 @@ class DocBotAnswers:
 
     @details.setter
     def details(self, details):
-        """Sets the details of this DocBotAnswers.
+        r"""Sets the details of this DocBotAnswers.
 
         候选答案列表
 

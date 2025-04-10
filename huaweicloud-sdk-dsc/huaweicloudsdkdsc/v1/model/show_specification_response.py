@@ -26,7 +26,7 @@ class ShowSpecificationResponse(SdkResponse):
     }
 
     def __init__(self, order_infos=None):
-        """ShowSpecificationResponse
+        r"""ShowSpecificationResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowSpecificationResponse(SdkResponse):
 
     @property
     def order_infos(self):
-        """Gets the order_infos of this ShowSpecificationResponse.
+        r"""Gets the order_infos of this ShowSpecificationResponse.
 
         订单列表
 
@@ -55,7 +55,7 @@ class ShowSpecificationResponse(SdkResponse):
 
     @order_infos.setter
     def order_infos(self, order_infos):
-        """Sets the order_infos of this ShowSpecificationResponse.
+        r"""Sets the order_infos of this ShowSpecificationResponse.
 
         订单列表
 

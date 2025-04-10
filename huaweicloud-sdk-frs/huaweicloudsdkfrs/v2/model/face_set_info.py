@@ -35,7 +35,7 @@ class FaceSetInfo:
     }
 
     def __init__(self, face_number=None, external_fields=None, face_set_id=None, face_set_name=None, create_date=None, face_set_capacity=None):
-        """FaceSetInfo
+        r"""FaceSetInfo
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class FaceSetInfo:
 
     @property
     def face_number(self):
-        """Gets the face_number of this FaceSetInfo.
+        r"""Gets the face_number of this FaceSetInfo.
 
         人脸库当中的人脸数量。
 
@@ -83,7 +83,7 @@ class FaceSetInfo:
 
     @face_number.setter
     def face_number(self, face_number):
-        """Sets the face_number of this FaceSetInfo.
+        r"""Sets the face_number of this FaceSetInfo.
 
         人脸库当中的人脸数量。
 
@@ -94,7 +94,7 @@ class FaceSetInfo:
 
     @property
     def external_fields(self):
-        """Gets the external_fields of this FaceSetInfo.
+        r"""Gets the external_fields of this FaceSetInfo.
 
         用户的自定义字段。
 
@@ -105,7 +105,7 @@ class FaceSetInfo:
 
     @external_fields.setter
     def external_fields(self, external_fields):
-        """Sets the external_fields of this FaceSetInfo.
+        r"""Sets the external_fields of this FaceSetInfo.
 
         用户的自定义字段。
 
@@ -116,7 +116,7 @@ class FaceSetInfo:
 
     @property
     def face_set_id(self):
-        """Gets the face_set_id of this FaceSetInfo.
+        r"""Gets the face_set_id of this FaceSetInfo.
 
         人脸库ID，随机生成的包含八个字符的字符串。
 
@@ -127,7 +127,7 @@ class FaceSetInfo:
 
     @face_set_id.setter
     def face_set_id(self, face_set_id):
-        """Sets the face_set_id of this FaceSetInfo.
+        r"""Sets the face_set_id of this FaceSetInfo.
 
         人脸库ID，随机生成的包含八个字符的字符串。
 
@@ -138,7 +138,7 @@ class FaceSetInfo:
 
     @property
     def face_set_name(self):
-        """Gets the face_set_name of this FaceSetInfo.
+        r"""Gets the face_set_name of this FaceSetInfo.
 
         人脸库名称。
 
@@ -149,7 +149,7 @@ class FaceSetInfo:
 
     @face_set_name.setter
     def face_set_name(self, face_set_name):
-        """Sets the face_set_name of this FaceSetInfo.
+        r"""Sets the face_set_name of this FaceSetInfo.
 
         人脸库名称。
 
@@ -160,7 +160,7 @@ class FaceSetInfo:
 
     @property
     def create_date(self):
-        """Gets the create_date of this FaceSetInfo.
+        r"""Gets the create_date of this FaceSetInfo.
 
         创建时间。
 
@@ -171,7 +171,7 @@ class FaceSetInfo:
 
     @create_date.setter
     def create_date(self, create_date):
-        """Sets the create_date of this FaceSetInfo.
+        r"""Sets the create_date of this FaceSetInfo.
 
         创建时间。
 
@@ -182,7 +182,7 @@ class FaceSetInfo:
 
     @property
     def face_set_capacity(self):
-        """Gets the face_set_capacity of this FaceSetInfo.
+        r"""Gets the face_set_capacity of this FaceSetInfo.
 
         人脸库最大的容量。
 
@@ -193,7 +193,7 @@ class FaceSetInfo:
 
     @face_set_capacity.setter
     def face_set_capacity(self, face_set_capacity):
-        """Sets the face_set_capacity of this FaceSetInfo.
+        r"""Sets the face_set_capacity of this FaceSetInfo.
 
         人脸库最大的容量。
 

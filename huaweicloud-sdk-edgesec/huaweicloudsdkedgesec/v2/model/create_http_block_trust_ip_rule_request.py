@@ -27,7 +27,7 @@ class CreateHttpBlockTrustIpRuleRequest:
     }
 
     def __init__(self, policy_id=None, body=None):
-        """CreateHttpBlockTrustIpRuleRequest
+        r"""CreateHttpBlockTrustIpRuleRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateHttpBlockTrustIpRuleRequest:
 
     @property
     def policy_id(self):
-        """Gets the policy_id of this CreateHttpBlockTrustIpRuleRequest.
+        r"""Gets the policy_id of this CreateHttpBlockTrustIpRuleRequest.
 
         策略id
 
@@ -60,7 +60,7 @@ class CreateHttpBlockTrustIpRuleRequest:
 
     @policy_id.setter
     def policy_id(self, policy_id):
-        """Sets the policy_id of this CreateHttpBlockTrustIpRuleRequest.
+        r"""Sets the policy_id of this CreateHttpBlockTrustIpRuleRequest.
 
         策略id
 
@@ -71,7 +71,7 @@ class CreateHttpBlockTrustIpRuleRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateHttpBlockTrustIpRuleRequest.
+        r"""Gets the body of this CreateHttpBlockTrustIpRuleRequest.
 
         :return: The body of this CreateHttpBlockTrustIpRuleRequest.
         :rtype: :class:`huaweicloudsdkedgesec.v2.CreateHttpBlockTrustIpRuleRequestBody`
@@ -80,7 +80,7 @@ class CreateHttpBlockTrustIpRuleRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateHttpBlockTrustIpRuleRequest.
+        r"""Sets the body of this CreateHttpBlockTrustIpRuleRequest.
 
         :param body: The body of this CreateHttpBlockTrustIpRuleRequest.
         :type body: :class:`huaweicloudsdkedgesec.v2.CreateHttpBlockTrustIpRuleRequestBody`

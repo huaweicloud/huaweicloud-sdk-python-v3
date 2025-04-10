@@ -33,7 +33,7 @@ class SwitchHostsProtectStatusRequestInfo:
     }
 
     def __init__(self, version=None, charging_mode=None, resource_id=None, host_id_list=None, tags=None):
-        """SwitchHostsProtectStatusRequestInfo
+        r"""SwitchHostsProtectStatusRequestInfo
 
         The model defined in huaweicloud sdk
 
@@ -69,7 +69,7 @@ class SwitchHostsProtectStatusRequestInfo:
 
     @property
     def version(self):
-        """Gets the version of this SwitchHostsProtectStatusRequestInfo.
+        r"""Gets the version of this SwitchHostsProtectStatusRequestInfo.
 
         主机开通的版本，包含如下:   - hss.version.null ：无，代表关闭防护。   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。
 
@@ -80,7 +80,7 @@ class SwitchHostsProtectStatusRequestInfo:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this SwitchHostsProtectStatusRequestInfo.
+        r"""Sets the version of this SwitchHostsProtectStatusRequestInfo.
 
         主机开通的版本，包含如下:   - hss.version.null ：无，代表关闭防护。   - hss.version.basic ：基础版。   - hss.version.advanced ：专业版。   - hss.version.enterprise ：企业版。   - hss.version.premium ：旗舰版。   - hss.version.wtp ：网页防篡改版。
 
@@ -91,7 +91,7 @@ class SwitchHostsProtectStatusRequestInfo:
 
     @property
     def charging_mode(self):
-        """Gets the charging_mode of this SwitchHostsProtectStatusRequestInfo.
+        r"""Gets the charging_mode of this SwitchHostsProtectStatusRequestInfo.
 
         付费模式，当version不为“hss.version.null”时，则需必填该参数   - packet_cycle : 包周期   - on_demand : 按需
 
@@ -102,7 +102,7 @@ class SwitchHostsProtectStatusRequestInfo:
 
     @charging_mode.setter
     def charging_mode(self, charging_mode):
-        """Sets the charging_mode of this SwitchHostsProtectStatusRequestInfo.
+        r"""Sets the charging_mode of this SwitchHostsProtectStatusRequestInfo.
 
         付费模式，当version不为“hss.version.null”时，则需必填该参数   - packet_cycle : 包周期   - on_demand : 按需
 
@@ -113,7 +113,7 @@ class SwitchHostsProtectStatusRequestInfo:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this SwitchHostsProtectStatusRequestInfo.
+        r"""Gets the resource_id of this SwitchHostsProtectStatusRequestInfo.
 
         HSS配额ID，不填该参数时，则随机选择对应版本配额
 
@@ -124,7 +124,7 @@ class SwitchHostsProtectStatusRequestInfo:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this SwitchHostsProtectStatusRequestInfo.
+        r"""Sets the resource_id of this SwitchHostsProtectStatusRequestInfo.
 
         HSS配额ID，不填该参数时，则随机选择对应版本配额
 
@@ -135,7 +135,7 @@ class SwitchHostsProtectStatusRequestInfo:
 
     @property
     def host_id_list(self):
-        """Gets the host_id_list of this SwitchHostsProtectStatusRequestInfo.
+        r"""Gets the host_id_list of this SwitchHostsProtectStatusRequestInfo.
 
         服务器列表
 
@@ -146,7 +146,7 @@ class SwitchHostsProtectStatusRequestInfo:
 
     @host_id_list.setter
     def host_id_list(self, host_id_list):
-        """Sets the host_id_list of this SwitchHostsProtectStatusRequestInfo.
+        r"""Sets the host_id_list of this SwitchHostsProtectStatusRequestInfo.
 
         服务器列表
 
@@ -157,7 +157,7 @@ class SwitchHostsProtectStatusRequestInfo:
 
     @property
     def tags(self):
-        """Gets the tags of this SwitchHostsProtectStatusRequestInfo.
+        r"""Gets the tags of this SwitchHostsProtectStatusRequestInfo.
 
         资源标签列表
 
@@ -168,7 +168,7 @@ class SwitchHostsProtectStatusRequestInfo:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this SwitchHostsProtectStatusRequestInfo.
+        r"""Sets the tags of this SwitchHostsProtectStatusRequestInfo.
 
         资源标签列表
 

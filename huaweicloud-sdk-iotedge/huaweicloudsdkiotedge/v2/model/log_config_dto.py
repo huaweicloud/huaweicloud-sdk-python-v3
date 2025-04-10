@@ -35,7 +35,7 @@ class LogConfigDTO:
     }
 
     def __init__(self, size=None, level=None, rotate_num=None, rotate_period=None, type=None, component=None):
-        """LogConfigDTO
+        r"""LogConfigDTO
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class LogConfigDTO:
 
     @property
     def size(self):
-        """Gets the size of this LogConfigDTO.
+        r"""Gets the size of this LogConfigDTO.
 
         应用日志文件大小限制，单位MB，默认50，取值范围10-1000
 
@@ -89,7 +89,7 @@ class LogConfigDTO:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this LogConfigDTO.
+        r"""Sets the size of this LogConfigDTO.
 
         应用日志文件大小限制，单位MB，默认50，取值范围10-1000
 
@@ -100,7 +100,7 @@ class LogConfigDTO:
 
     @property
     def level(self):
-        """Gets the level of this LogConfigDTO.
+        r"""Gets the level of this LogConfigDTO.
 
         应用日志级别，可选项：on/off/trace/debug/info/warn/error/fatal，当type为LTS时有效。当选择非on/off的选项时，将只采集大于等于指定级别的日志。
 
@@ -111,7 +111,7 @@ class LogConfigDTO:
 
     @level.setter
     def level(self, level):
-        """Sets the level of this LogConfigDTO.
+        r"""Sets the level of this LogConfigDTO.
 
         应用日志级别，可选项：on/off/trace/debug/info/warn/error/fatal，当type为LTS时有效。当选择非on/off的选项时，将只采集大于等于指定级别的日志。
 
@@ -122,7 +122,7 @@ class LogConfigDTO:
 
     @property
     def rotate_num(self):
-        """Gets the rotate_num of this LogConfigDTO.
+        r"""Gets the rotate_num of this LogConfigDTO.
 
         应用日志rotate个数，默认5，取值范围1-10
 
@@ -133,7 +133,7 @@ class LogConfigDTO:
 
     @rotate_num.setter
     def rotate_num(self, rotate_num):
-        """Sets the rotate_num of this LogConfigDTO.
+        r"""Sets the rotate_num of this LogConfigDTO.
 
         应用日志rotate个数，默认5，取值范围1-10
 
@@ -144,7 +144,7 @@ class LogConfigDTO:
 
     @property
     def rotate_period(self):
-        """Gets the rotate_period of this LogConfigDTO.
+        r"""Gets the rotate_period of this LogConfigDTO.
 
         应用日志rotate周期，可选项： daily/monthly/weekly/yearly
 
@@ -155,7 +155,7 @@ class LogConfigDTO:
 
     @rotate_period.setter
     def rotate_period(self, rotate_period):
-        """Sets the rotate_period of this LogConfigDTO.
+        r"""Sets the rotate_period of this LogConfigDTO.
 
         应用日志rotate周期，可选项： daily/monthly/weekly/yearly
 
@@ -166,7 +166,7 @@ class LogConfigDTO:
 
     @property
     def type(self):
-        """Gets the type of this LogConfigDTO.
+        r"""Gets the type of this LogConfigDTO.
 
         LTS:将日志发送到LTS, local 本地日志
 
@@ -177,7 +177,7 @@ class LogConfigDTO:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this LogConfigDTO.
+        r"""Sets the type of this LogConfigDTO.
 
         LTS:将日志发送到LTS, local 本地日志
 
@@ -188,7 +188,7 @@ class LogConfigDTO:
 
     @property
     def component(self):
-        """Gets the component of this LogConfigDTO.
+        r"""Gets the component of this LogConfigDTO.
 
         app:部署到边缘设备上的应用的日志, system 边缘设备上系统的日志
 
@@ -199,7 +199,7 @@ class LogConfigDTO:
 
     @component.setter
     def component(self, component):
-        """Sets the component of this LogConfigDTO.
+        r"""Sets the component of this LogConfigDTO.
 
         app:部署到边缘设备上的应用的日志, system 边缘设备上系统的日志
 

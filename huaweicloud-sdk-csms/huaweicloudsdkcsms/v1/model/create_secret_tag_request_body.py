@@ -25,7 +25,7 @@ class CreateSecretTagRequestBody:
     }
 
     def __init__(self, tag=None):
-        """CreateSecretTagRequestBody
+        r"""CreateSecretTagRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateSecretTagRequestBody:
 
     @property
     def tag(self):
-        """Gets the tag of this CreateSecretTagRequestBody.
+        r"""Gets the tag of this CreateSecretTagRequestBody.
 
         :return: The tag of this CreateSecretTagRequestBody.
         :rtype: :class:`huaweicloudsdkcsms.v1.TagItem`
@@ -51,7 +51,7 @@ class CreateSecretTagRequestBody:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this CreateSecretTagRequestBody.
+        r"""Sets the tag of this CreateSecretTagRequestBody.
 
         :param tag: The tag of this CreateSecretTagRequestBody.
         :type tag: :class:`huaweicloudsdkcsms.v1.TagItem`

@@ -44,7 +44,7 @@ class CreateDictionaryResponse(SdkResponse):
     }
 
     def __init__(self, id=None, name=None, remark=None, code=None, extend_one=None, extend_two=None, parent_code=None, type=None, create_time=None, update_time=None):
-        """CreateDictionaryResponse
+        r"""CreateDictionaryResponse
 
         The model defined in huaweicloud sdk
 
@@ -107,7 +107,7 @@ class CreateDictionaryResponse(SdkResponse):
 
     @property
     def id(self):
-        """Gets the id of this CreateDictionaryResponse.
+        r"""Gets the id of this CreateDictionaryResponse.
 
         字典ID
 
@@ -118,7 +118,7 @@ class CreateDictionaryResponse(SdkResponse):
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CreateDictionaryResponse.
+        r"""Sets the id of this CreateDictionaryResponse.
 
         字典ID
 
@@ -129,7 +129,7 @@ class CreateDictionaryResponse(SdkResponse):
 
     @property
     def name(self):
-        """Gets the name of this CreateDictionaryResponse.
+        r"""Gets the name of this CreateDictionaryResponse.
 
         字典名称 - 字符集：中文、英文字母、数字、下划线和空格 - 约束：实例下唯一
 
@@ -140,7 +140,7 @@ class CreateDictionaryResponse(SdkResponse):
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateDictionaryResponse.
+        r"""Sets the name of this CreateDictionaryResponse.
 
         字典名称 - 字符集：中文、英文字母、数字、下划线和空格 - 约束：实例下唯一
 
@@ -151,7 +151,7 @@ class CreateDictionaryResponse(SdkResponse):
 
     @property
     def remark(self):
-        """Gets the remark of this CreateDictionaryResponse.
+        r"""Gets the remark of this CreateDictionaryResponse.
 
         字典描述
 
@@ -162,7 +162,7 @@ class CreateDictionaryResponse(SdkResponse):
 
     @remark.setter
     def remark(self, remark):
-        """Sets the remark of this CreateDictionaryResponse.
+        r"""Sets the remark of this CreateDictionaryResponse.
 
         字典描述
 
@@ -173,7 +173,7 @@ class CreateDictionaryResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this CreateDictionaryResponse.
+        r"""Gets the code of this CreateDictionaryResponse.
 
         字典编码 - 字符集：英文字母、数字、下划线和空格 - 约束：实例下唯一
 
@@ -184,7 +184,7 @@ class CreateDictionaryResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this CreateDictionaryResponse.
+        r"""Sets the code of this CreateDictionaryResponse.
 
         字典编码 - 字符集：英文字母、数字、下划线和空格 - 约束：实例下唯一
 
@@ -195,7 +195,7 @@ class CreateDictionaryResponse(SdkResponse):
 
     @property
     def extend_one(self):
-        """Gets the extend_one of this CreateDictionaryResponse.
+        r"""Gets the extend_one of this CreateDictionaryResponse.
 
         字典扩展字段1 - 字符集：中文、英文字母、数字、下划线和空格
 
@@ -206,7 +206,7 @@ class CreateDictionaryResponse(SdkResponse):
 
     @extend_one.setter
     def extend_one(self, extend_one):
-        """Sets the extend_one of this CreateDictionaryResponse.
+        r"""Sets the extend_one of this CreateDictionaryResponse.
 
         字典扩展字段1 - 字符集：中文、英文字母、数字、下划线和空格
 
@@ -217,7 +217,7 @@ class CreateDictionaryResponse(SdkResponse):
 
     @property
     def extend_two(self):
-        """Gets the extend_two of this CreateDictionaryResponse.
+        r"""Gets the extend_two of this CreateDictionaryResponse.
 
         字典扩展字段2 - 字符集：中文、英文字母、数字、下划线和空格
 
@@ -228,7 +228,7 @@ class CreateDictionaryResponse(SdkResponse):
 
     @extend_two.setter
     def extend_two(self, extend_two):
-        """Sets the extend_two of this CreateDictionaryResponse.
+        r"""Sets the extend_two of this CreateDictionaryResponse.
 
         字典扩展字段2 - 字符集：中文、英文字母、数字、下划线和空格
 
@@ -239,7 +239,7 @@ class CreateDictionaryResponse(SdkResponse):
 
     @property
     def parent_code(self):
-        """Gets the parent_code of this CreateDictionaryResponse.
+        r"""Gets the parent_code of this CreateDictionaryResponse.
 
         父字典编码,为空时代表自身就是最顶级字典
 
@@ -250,7 +250,7 @@ class CreateDictionaryResponse(SdkResponse):
 
     @parent_code.setter
     def parent_code(self, parent_code):
-        """Sets the parent_code of this CreateDictionaryResponse.
+        r"""Sets the parent_code of this CreateDictionaryResponse.
 
         父字典编码,为空时代表自身就是最顶级字典
 
@@ -261,7 +261,7 @@ class CreateDictionaryResponse(SdkResponse):
 
     @property
     def type(self):
-        """Gets the type of this CreateDictionaryResponse.
+        r"""Gets the type of this CreateDictionaryResponse.
 
         :return: The type of this CreateDictionaryResponse.
         :rtype: :class:`huaweicloudsdkroma.v2.DictionaryType`
@@ -270,7 +270,7 @@ class CreateDictionaryResponse(SdkResponse):
 
     @type.setter
     def type(self, type):
-        """Sets the type of this CreateDictionaryResponse.
+        r"""Sets the type of this CreateDictionaryResponse.
 
         :param type: The type of this CreateDictionaryResponse.
         :type type: :class:`huaweicloudsdkroma.v2.DictionaryType`
@@ -279,7 +279,7 @@ class CreateDictionaryResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this CreateDictionaryResponse.
+        r"""Gets the create_time of this CreateDictionaryResponse.
 
         创建时间
 
@@ -290,7 +290,7 @@ class CreateDictionaryResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this CreateDictionaryResponse.
+        r"""Sets the create_time of this CreateDictionaryResponse.
 
         创建时间
 
@@ -301,7 +301,7 @@ class CreateDictionaryResponse(SdkResponse):
 
     @property
     def update_time(self):
-        """Gets the update_time of this CreateDictionaryResponse.
+        r"""Gets the update_time of this CreateDictionaryResponse.
 
         更新时间
 
@@ -312,7 +312,7 @@ class CreateDictionaryResponse(SdkResponse):
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this CreateDictionaryResponse.
+        r"""Sets the update_time of this CreateDictionaryResponse.
 
         更新时间
 

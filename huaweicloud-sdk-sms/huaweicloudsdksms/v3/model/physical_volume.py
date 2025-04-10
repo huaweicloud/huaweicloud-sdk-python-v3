@@ -45,7 +45,7 @@ class PhysicalVolume:
     }
 
     def __init__(self, device_use=None, file_system=None, index=None, mount_point=None, name=None, size=None, used_size=None, inode_size=None, inode_nums=None, uuid=None, size_per_cluster=None):
-        """PhysicalVolume
+        r"""PhysicalVolume
 
         The model defined in huaweicloud sdk
 
@@ -113,7 +113,7 @@ class PhysicalVolume:
 
     @property
     def device_use(self):
-        """Gets the device_use of this PhysicalVolume.
+        r"""Gets the device_use of this PhysicalVolume.
 
         分区类型，普通分区，启动分区，系统分区
 
@@ -124,7 +124,7 @@ class PhysicalVolume:
 
     @device_use.setter
     def device_use(self, device_use):
-        """Sets the device_use of this PhysicalVolume.
+        r"""Sets the device_use of this PhysicalVolume.
 
         分区类型，普通分区，启动分区，系统分区
 
@@ -135,7 +135,7 @@ class PhysicalVolume:
 
     @property
     def file_system(self):
-        """Gets the file_system of this PhysicalVolume.
+        r"""Gets the file_system of this PhysicalVolume.
 
         文件系统类型
 
@@ -146,7 +146,7 @@ class PhysicalVolume:
 
     @file_system.setter
     def file_system(self, file_system):
-        """Sets the file_system of this PhysicalVolume.
+        r"""Sets the file_system of this PhysicalVolume.
 
         文件系统类型
 
@@ -157,7 +157,7 @@ class PhysicalVolume:
 
     @property
     def index(self):
-        """Gets the index of this PhysicalVolume.
+        r"""Gets the index of this PhysicalVolume.
 
         顺序
 
@@ -168,7 +168,7 @@ class PhysicalVolume:
 
     @index.setter
     def index(self, index):
-        """Sets the index of this PhysicalVolume.
+        r"""Sets the index of this PhysicalVolume.
 
         顺序
 
@@ -179,7 +179,7 @@ class PhysicalVolume:
 
     @property
     def mount_point(self):
-        """Gets the mount_point of this PhysicalVolume.
+        r"""Gets the mount_point of this PhysicalVolume.
 
         挂载点
 
@@ -190,7 +190,7 @@ class PhysicalVolume:
 
     @mount_point.setter
     def mount_point(self, mount_point):
-        """Sets the mount_point of this PhysicalVolume.
+        r"""Sets the mount_point of this PhysicalVolume.
 
         挂载点
 
@@ -201,7 +201,7 @@ class PhysicalVolume:
 
     @property
     def name(self):
-        """Gets the name of this PhysicalVolume.
+        r"""Gets the name of this PhysicalVolume.
 
         名称，windows表示盘符，Linux表示设备号
 
@@ -212,7 +212,7 @@ class PhysicalVolume:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PhysicalVolume.
+        r"""Sets the name of this PhysicalVolume.
 
         名称，windows表示盘符，Linux表示设备号
 
@@ -223,7 +223,7 @@ class PhysicalVolume:
 
     @property
     def size(self):
-        """Gets the size of this PhysicalVolume.
+        r"""Gets the size of this PhysicalVolume.
 
         大小
 
@@ -234,7 +234,7 @@ class PhysicalVolume:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this PhysicalVolume.
+        r"""Sets the size of this PhysicalVolume.
 
         大小
 
@@ -245,7 +245,7 @@ class PhysicalVolume:
 
     @property
     def used_size(self):
-        """Gets the used_size of this PhysicalVolume.
+        r"""Gets the used_size of this PhysicalVolume.
 
         使用大小
 
@@ -256,7 +256,7 @@ class PhysicalVolume:
 
     @used_size.setter
     def used_size(self, used_size):
-        """Sets the used_size of this PhysicalVolume.
+        r"""Sets the used_size of this PhysicalVolume.
 
         使用大小
 
@@ -267,7 +267,7 @@ class PhysicalVolume:
 
     @property
     def inode_size(self):
-        """Gets the inode_size of this PhysicalVolume.
+        r"""Gets the inode_size of this PhysicalVolume.
 
         inode数量
 
@@ -278,7 +278,7 @@ class PhysicalVolume:
 
     @inode_size.setter
     def inode_size(self, inode_size):
-        """Sets the inode_size of this PhysicalVolume.
+        r"""Sets the inode_size of this PhysicalVolume.
 
         inode数量
 
@@ -289,7 +289,7 @@ class PhysicalVolume:
 
     @property
     def inode_nums(self):
-        """Gets the inode_nums of this PhysicalVolume.
+        r"""Gets the inode_nums of this PhysicalVolume.
 
         inode节点数量
 
@@ -300,7 +300,7 @@ class PhysicalVolume:
 
     @inode_nums.setter
     def inode_nums(self, inode_nums):
-        """Sets the inode_nums of this PhysicalVolume.
+        r"""Sets the inode_nums of this PhysicalVolume.
 
         inode节点数量
 
@@ -311,7 +311,7 @@ class PhysicalVolume:
 
     @property
     def uuid(self):
-        """Gets the uuid of this PhysicalVolume.
+        r"""Gets the uuid of this PhysicalVolume.
 
         GUID，可从源端查询
 
@@ -322,7 +322,7 @@ class PhysicalVolume:
 
     @uuid.setter
     def uuid(self, uuid):
-        """Sets the uuid of this PhysicalVolume.
+        r"""Sets the uuid of this PhysicalVolume.
 
         GUID，可从源端查询
 
@@ -333,7 +333,7 @@ class PhysicalVolume:
 
     @property
     def size_per_cluster(self):
-        """Gets the size_per_cluster of this PhysicalVolume.
+        r"""Gets the size_per_cluster of this PhysicalVolume.
 
         每个cluster大小
 
@@ -344,7 +344,7 @@ class PhysicalVolume:
 
     @size_per_cluster.setter
     def size_per_cluster(self, size_per_cluster):
-        """Sets the size_per_cluster of this PhysicalVolume.
+        r"""Sets the size_per_cluster of this PhysicalVolume.
 
         每个cluster大小
 

@@ -27,7 +27,7 @@ class UpdateSnapshotOption:
     }
 
     def __init__(self, description=None, name=None):
-        """UpdateSnapshotOption
+        r"""UpdateSnapshotOption
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class UpdateSnapshotOption:
 
     @property
     def description(self):
-        """Gets the description of this UpdateSnapshotOption.
+        r"""Gets the description of this UpdateSnapshotOption.
 
         云硬盘快照描述。最大支持255个字节。
 
@@ -61,7 +61,7 @@ class UpdateSnapshotOption:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateSnapshotOption.
+        r"""Sets the description of this UpdateSnapshotOption.
 
         云硬盘快照描述。最大支持255个字节。
 
@@ -72,7 +72,7 @@ class UpdateSnapshotOption:
 
     @property
     def name(self):
-        """Gets the name of this UpdateSnapshotOption.
+        r"""Gets the name of this UpdateSnapshotOption.
 
         云硬盘快照名称。最大支持255个字节。
 
@@ -83,7 +83,7 @@ class UpdateSnapshotOption:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateSnapshotOption.
+        r"""Sets the name of this UpdateSnapshotOption.
 
         云硬盘快照名称。最大支持255个字节。
 

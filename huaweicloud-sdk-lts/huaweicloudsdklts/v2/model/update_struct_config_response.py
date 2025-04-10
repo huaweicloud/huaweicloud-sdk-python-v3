@@ -26,7 +26,7 @@ class UpdateStructConfigResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """UpdateStructConfigResponse
+        r"""UpdateStructConfigResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class UpdateStructConfigResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this UpdateStructConfigResponse.
+        r"""Gets the body of this UpdateStructConfigResponse.
 
         :return: The body of this UpdateStructConfigResponse.
         :rtype: str
@@ -53,7 +53,7 @@ class UpdateStructConfigResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateStructConfigResponse.
+        r"""Sets the body of this UpdateStructConfigResponse.
 
         :param body: The body of this UpdateStructConfigResponse.
         :type body: str

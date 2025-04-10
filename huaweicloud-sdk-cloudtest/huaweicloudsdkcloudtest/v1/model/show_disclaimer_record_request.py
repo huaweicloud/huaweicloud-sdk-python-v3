@@ -25,7 +25,7 @@ class ShowDisclaimerRecordRequest:
     }
 
     def __init__(self, type=None):
-        """ShowDisclaimerRecordRequest
+        r"""ShowDisclaimerRecordRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowDisclaimerRecordRequest:
 
     @property
     def type(self):
-        """Gets the type of this ShowDisclaimerRecordRequest.
+        r"""Gets the type of this ShowDisclaimerRecordRequest.
 
         类型
 
@@ -53,7 +53,7 @@ class ShowDisclaimerRecordRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ShowDisclaimerRecordRequest.
+        r"""Sets the type of this ShowDisclaimerRecordRequest.
 
         类型
 

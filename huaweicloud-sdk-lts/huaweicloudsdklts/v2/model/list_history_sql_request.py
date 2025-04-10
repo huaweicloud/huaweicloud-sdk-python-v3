@@ -27,7 +27,7 @@ class ListHistorySqlRequest:
     }
 
     def __init__(self, log_group_id=None, log_stream_id=None):
-        """ListHistorySqlRequest
+        r"""ListHistorySqlRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ListHistorySqlRequest:
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this ListHistorySqlRequest.
+        r"""Gets the log_group_id of this ListHistorySqlRequest.
 
         日志组id
 
@@ -59,7 +59,7 @@ class ListHistorySqlRequest:
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this ListHistorySqlRequest.
+        r"""Sets the log_group_id of this ListHistorySqlRequest.
 
         日志组id
 
@@ -70,7 +70,7 @@ class ListHistorySqlRequest:
 
     @property
     def log_stream_id(self):
-        """Gets the log_stream_id of this ListHistorySqlRequest.
+        r"""Gets the log_stream_id of this ListHistorySqlRequest.
 
         日志流id
 
@@ -81,7 +81,7 @@ class ListHistorySqlRequest:
 
     @log_stream_id.setter
     def log_stream_id(self, log_stream_id):
-        """Sets the log_stream_id of this ListHistorySqlRequest.
+        r"""Sets the log_stream_id of this ListHistorySqlRequest.
 
         日志流id
 

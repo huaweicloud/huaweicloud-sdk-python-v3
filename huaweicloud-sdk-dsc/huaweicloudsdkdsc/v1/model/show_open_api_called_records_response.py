@@ -34,7 +34,7 @@ class ShowOpenApiCalledRecordsResponse(SdkResponse):
     }
 
     def __init__(self, total=None, succeed=None, failed=None, openapi_called_records=None, next_marker=None):
-        """ShowOpenApiCalledRecordsResponse
+        r"""ShowOpenApiCalledRecordsResponse
 
         The model defined in huaweicloud sdk
 
@@ -72,7 +72,7 @@ class ShowOpenApiCalledRecordsResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ShowOpenApiCalledRecordsResponse.
+        r"""Gets the total of this ShowOpenApiCalledRecordsResponse.
 
         调用API总次数
 
@@ -83,7 +83,7 @@ class ShowOpenApiCalledRecordsResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ShowOpenApiCalledRecordsResponse.
+        r"""Sets the total of this ShowOpenApiCalledRecordsResponse.
 
         调用API总次数
 
@@ -94,7 +94,7 @@ class ShowOpenApiCalledRecordsResponse(SdkResponse):
 
     @property
     def succeed(self):
-        """Gets the succeed of this ShowOpenApiCalledRecordsResponse.
+        r"""Gets the succeed of this ShowOpenApiCalledRecordsResponse.
 
         调用API成功次数
 
@@ -105,7 +105,7 @@ class ShowOpenApiCalledRecordsResponse(SdkResponse):
 
     @succeed.setter
     def succeed(self, succeed):
-        """Sets the succeed of this ShowOpenApiCalledRecordsResponse.
+        r"""Sets the succeed of this ShowOpenApiCalledRecordsResponse.
 
         调用API成功次数
 
@@ -116,7 +116,7 @@ class ShowOpenApiCalledRecordsResponse(SdkResponse):
 
     @property
     def failed(self):
-        """Gets the failed of this ShowOpenApiCalledRecordsResponse.
+        r"""Gets the failed of this ShowOpenApiCalledRecordsResponse.
 
         调用API失败次数
 
@@ -127,7 +127,7 @@ class ShowOpenApiCalledRecordsResponse(SdkResponse):
 
     @failed.setter
     def failed(self, failed):
-        """Sets the failed of this ShowOpenApiCalledRecordsResponse.
+        r"""Sets the failed of this ShowOpenApiCalledRecordsResponse.
 
         调用API失败次数
 
@@ -138,7 +138,7 @@ class ShowOpenApiCalledRecordsResponse(SdkResponse):
 
     @property
     def openapi_called_records(self):
-        """Gets the openapi_called_records of this ShowOpenApiCalledRecordsResponse.
+        r"""Gets the openapi_called_records of this ShowOpenApiCalledRecordsResponse.
 
         API调用记录列表
 
@@ -149,7 +149,7 @@ class ShowOpenApiCalledRecordsResponse(SdkResponse):
 
     @openapi_called_records.setter
     def openapi_called_records(self, openapi_called_records):
-        """Sets the openapi_called_records of this ShowOpenApiCalledRecordsResponse.
+        r"""Sets the openapi_called_records of this ShowOpenApiCalledRecordsResponse.
 
         API调用记录列表
 
@@ -160,7 +160,7 @@ class ShowOpenApiCalledRecordsResponse(SdkResponse):
 
     @property
     def next_marker(self):
-        """Gets the next_marker of this ShowOpenApiCalledRecordsResponse.
+        r"""Gets the next_marker of this ShowOpenApiCalledRecordsResponse.
 
         获取下一页所需的标识符。
 
@@ -171,7 +171,7 @@ class ShowOpenApiCalledRecordsResponse(SdkResponse):
 
     @next_marker.setter
     def next_marker(self, next_marker):
-        """Sets the next_marker of this ShowOpenApiCalledRecordsResponse.
+        r"""Sets the next_marker of this ShowOpenApiCalledRecordsResponse.
 
         获取下一页所需的标识符。
 

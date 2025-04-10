@@ -27,7 +27,7 @@ class ProtectableReplicationCapabilitiesRespRegion:
     }
 
     def __init__(self, name=None, replication_destinations=None):
-        """ProtectableReplicationCapabilitiesRespRegion
+        r"""ProtectableReplicationCapabilitiesRespRegion
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class ProtectableReplicationCapabilitiesRespRegion:
 
     @property
     def name(self):
-        """Gets the name of this ProtectableReplicationCapabilitiesRespRegion.
+        r"""Gets the name of this ProtectableReplicationCapabilitiesRespRegion.
 
         云服务所在的区域
 
@@ -59,7 +59,7 @@ class ProtectableReplicationCapabilitiesRespRegion:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ProtectableReplicationCapabilitiesRespRegion.
+        r"""Sets the name of this ProtectableReplicationCapabilitiesRespRegion.
 
         云服务所在的区域
 
@@ -70,7 +70,7 @@ class ProtectableReplicationCapabilitiesRespRegion:
 
     @property
     def replication_destinations(self):
-        """Gets the replication_destinations of this ProtectableReplicationCapabilitiesRespRegion.
+        r"""Gets the replication_destinations of this ProtectableReplicationCapabilitiesRespRegion.
 
         支持复制的目标区域列表
 
@@ -81,7 +81,7 @@ class ProtectableReplicationCapabilitiesRespRegion:
 
     @replication_destinations.setter
     def replication_destinations(self, replication_destinations):
-        """Sets the replication_destinations of this ProtectableReplicationCapabilitiesRespRegion.
+        r"""Sets the replication_destinations of this ProtectableReplicationCapabilitiesRespRegion.
 
         支持复制的目标区域列表
 

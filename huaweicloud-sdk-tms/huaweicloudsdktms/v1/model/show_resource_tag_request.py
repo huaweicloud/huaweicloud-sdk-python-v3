@@ -29,7 +29,7 @@ class ShowResourceTagRequest:
     }
 
     def __init__(self, resource_id=None, project_id=None, resource_type=None):
-        """ShowResourceTagRequest
+        r"""ShowResourceTagRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class ShowResourceTagRequest:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this ShowResourceTagRequest.
+        r"""Gets the resource_id of this ShowResourceTagRequest.
 
         资源ID
 
@@ -66,7 +66,7 @@ class ShowResourceTagRequest:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this ShowResourceTagRequest.
+        r"""Sets the resource_id of this ShowResourceTagRequest.
 
         资源ID
 
@@ -77,7 +77,7 @@ class ShowResourceTagRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this ShowResourceTagRequest.
+        r"""Gets the project_id of this ShowResourceTagRequest.
 
         项目ID，region级资源必选。
 
@@ -88,7 +88,7 @@ class ShowResourceTagRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this ShowResourceTagRequest.
+        r"""Sets the project_id of this ShowResourceTagRequest.
 
         项目ID，region级资源必选。
 
@@ -99,7 +99,7 @@ class ShowResourceTagRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ShowResourceTagRequest.
+        r"""Gets the resource_type of this ShowResourceTagRequest.
 
         资源类型
 
@@ -110,7 +110,7 @@ class ShowResourceTagRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ShowResourceTagRequest.
+        r"""Sets the resource_type of this ShowResourceTagRequest.
 
         资源类型
 

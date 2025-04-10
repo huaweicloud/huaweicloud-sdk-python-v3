@@ -24,7 +24,7 @@ class CreateEvaluationProjectResponse(SdkResponse):
     }
 
     def __init__(self):
-        """CreateEvaluationProjectResponse
+        r"""CreateEvaluationProjectResponse
 
         The model defined in huaweicloud sdk
 

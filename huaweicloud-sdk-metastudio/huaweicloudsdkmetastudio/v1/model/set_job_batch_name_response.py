@@ -24,7 +24,7 @@ class SetJobBatchNameResponse(SdkResponse):
     }
 
     def __init__(self):
-        """SetJobBatchNameResponse
+        r"""SetJobBatchNameResponse
 
         The model defined in huaweicloud sdk
 

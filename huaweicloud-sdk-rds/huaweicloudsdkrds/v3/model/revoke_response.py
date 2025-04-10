@@ -26,7 +26,7 @@ class RevokeResponse(SdkResponse):
     }
 
     def __init__(self, resp=None):
-        """RevokeResponse
+        r"""RevokeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class RevokeResponse(SdkResponse):
 
     @property
     def resp(self):
-        """Gets the resp of this RevokeResponse.
+        r"""Gets the resp of this RevokeResponse.
 
         操作结果。
 
@@ -55,7 +55,7 @@ class RevokeResponse(SdkResponse):
 
     @resp.setter
     def resp(self, resp):
-        """Sets the resp of this RevokeResponse.
+        r"""Sets the resp of this RevokeResponse.
 
         操作结果。
 

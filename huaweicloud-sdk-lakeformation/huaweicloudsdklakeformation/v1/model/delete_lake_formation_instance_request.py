@@ -27,7 +27,7 @@ class DeleteLakeFormationInstanceRequest:
     }
 
     def __init__(self, to_recycle_bin=None, instance_id=None):
-        """DeleteLakeFormationInstanceRequest
+        r"""DeleteLakeFormationInstanceRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class DeleteLakeFormationInstanceRequest:
 
     @property
     def to_recycle_bin(self):
-        """Gets the to_recycle_bin of this DeleteLakeFormationInstanceRequest.
+        r"""Gets the to_recycle_bin of this DeleteLakeFormationInstanceRequest.
 
         是否放入回收站
 
@@ -59,7 +59,7 @@ class DeleteLakeFormationInstanceRequest:
 
     @to_recycle_bin.setter
     def to_recycle_bin(self, to_recycle_bin):
-        """Sets the to_recycle_bin of this DeleteLakeFormationInstanceRequest.
+        r"""Sets the to_recycle_bin of this DeleteLakeFormationInstanceRequest.
 
         是否放入回收站
 
@@ -70,7 +70,7 @@ class DeleteLakeFormationInstanceRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this DeleteLakeFormationInstanceRequest.
+        r"""Gets the instance_id of this DeleteLakeFormationInstanceRequest.
 
         LakeFormation实例ID
 
@@ -81,7 +81,7 @@ class DeleteLakeFormationInstanceRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this DeleteLakeFormationInstanceRequest.
+        r"""Sets the instance_id of this DeleteLakeFormationInstanceRequest.
 
         LakeFormation实例ID
 

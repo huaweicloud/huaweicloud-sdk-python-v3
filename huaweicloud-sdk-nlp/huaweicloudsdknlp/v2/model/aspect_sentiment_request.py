@@ -27,7 +27,7 @@ class AspectSentimentRequest:
     }
 
     def __init__(self, content=None, type=None):
-        """AspectSentimentRequest
+        r"""AspectSentimentRequest
 
         The model defined in huaweicloud sdk
 
@@ -48,7 +48,7 @@ class AspectSentimentRequest:
 
     @property
     def content(self):
-        """Gets the content of this AspectSentimentRequest.
+        r"""Gets the content of this AspectSentimentRequest.
 
         待分析文本。仅支持中文，文本编码要求为utf-8。 建议文本长度1000个字符以内。
 
@@ -59,7 +59,7 @@ class AspectSentimentRequest:
 
     @content.setter
     def content(self, content):
-        """Sets the content of this AspectSentimentRequest.
+        r"""Sets the content of this AspectSentimentRequest.
 
         待分析文本。仅支持中文，文本编码要求为utf-8。 建议文本长度1000个字符以内。
 
@@ -70,7 +70,7 @@ class AspectSentimentRequest:
 
     @property
     def type(self):
-        """Gets the type of this AspectSentimentRequest.
+        r"""Gets the type of this AspectSentimentRequest.
 
         取值如下： 1 手机领域
 
@@ -81,7 +81,7 @@ class AspectSentimentRequest:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this AspectSentimentRequest.
+        r"""Sets the type of this AspectSentimentRequest.
 
         取值如下： 1 手机领域
 

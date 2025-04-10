@@ -33,7 +33,7 @@ class FaceQuality:
     }
 
     def __init__(self, total_score=None, blur=None, pose=None, occlusion=None, illumination=None):
-        """FaceQuality
+        r"""FaceQuality
 
         The model defined in huaweicloud sdk
 
@@ -66,7 +66,7 @@ class FaceQuality:
 
     @property
     def total_score(self):
-        """Gets the total_score of this FaceQuality.
+        r"""Gets the total_score of this FaceQuality.
 
         人脸质量总分，取值范围[0-1]，分值越大质量越高。
 
@@ -77,7 +77,7 @@ class FaceQuality:
 
     @total_score.setter
     def total_score(self, total_score):
-        """Sets the total_score of this FaceQuality.
+        r"""Sets the total_score of this FaceQuality.
 
         人脸质量总分，取值范围[0-1]，分值越大质量越高。
 
@@ -88,7 +88,7 @@ class FaceQuality:
 
     @property
     def blur(self):
-        """Gets the blur of this FaceQuality.
+        r"""Gets the blur of this FaceQuality.
 
         模糊度，取值范围[0-1]，分值越大模糊问题越严重。
 
@@ -99,7 +99,7 @@ class FaceQuality:
 
     @blur.setter
     def blur(self, blur):
-        """Sets the blur of this FaceQuality.
+        r"""Sets the blur of this FaceQuality.
 
         模糊度，取值范围[0-1]，分值越大模糊问题越严重。
 
@@ -110,7 +110,7 @@ class FaceQuality:
 
     @property
     def pose(self):
-        """Gets the pose of this FaceQuality.
+        r"""Gets the pose of this FaceQuality.
 
         姿态，取值范围[0-1]，分值越大姿态问题越严重。
 
@@ -121,7 +121,7 @@ class FaceQuality:
 
     @pose.setter
     def pose(self, pose):
-        """Sets the pose of this FaceQuality.
+        r"""Sets the pose of this FaceQuality.
 
         姿态，取值范围[0-1]，分值越大姿态问题越严重。
 
@@ -132,7 +132,7 @@ class FaceQuality:
 
     @property
     def occlusion(self):
-        """Gets the occlusion of this FaceQuality.
+        r"""Gets the occlusion of this FaceQuality.
 
         遮挡，取值范围[0-1]，分值越大遮挡问题越严重。
 
@@ -143,7 +143,7 @@ class FaceQuality:
 
     @occlusion.setter
     def occlusion(self, occlusion):
-        """Sets the occlusion of this FaceQuality.
+        r"""Sets the occlusion of this FaceQuality.
 
         遮挡，取值范围[0-1]，分值越大遮挡问题越严重。
 
@@ -154,7 +154,7 @@ class FaceQuality:
 
     @property
     def illumination(self):
-        """Gets the illumination of this FaceQuality.
+        r"""Gets the illumination of this FaceQuality.
 
         光照，取值范围[0-1]，分值越大光照问题越严重。
 
@@ -165,7 +165,7 @@ class FaceQuality:
 
     @illumination.setter
     def illumination(self, illumination):
-        """Sets the illumination of this FaceQuality.
+        r"""Sets the illumination of this FaceQuality.
 
         光照，取值范围[0-1]，分值越大光照问题越严重。
 

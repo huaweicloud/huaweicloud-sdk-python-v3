@@ -45,7 +45,7 @@ class CreateChInstanceRequestBody:
     }
 
     def __init__(self, name=None, engine=None, ha=None, flavor_id=None, db_root_pwd=None, az_mode=None, volume=None, az_code=None, time_zone=None, tags_info=None, pay_info=None):
-        """CreateChInstanceRequestBody
+        r"""CreateChInstanceRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -104,7 +104,7 @@ class CreateChInstanceRequestBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateChInstanceRequestBody.
+        r"""Gets the name of this CreateChInstanceRequestBody.
 
         ClickHouse实例名称。 - 4位到64位之间 - 必须以字母开头，可以包含字母、数字、中划线或下划线 - 不能包含其他特殊字符
 
@@ -115,7 +115,7 @@ class CreateChInstanceRequestBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateChInstanceRequestBody.
+        r"""Sets the name of this CreateChInstanceRequestBody.
 
         ClickHouse实例名称。 - 4位到64位之间 - 必须以字母开头，可以包含字母、数字、中划线或下划线 - 不能包含其他特殊字符
 
@@ -126,7 +126,7 @@ class CreateChInstanceRequestBody:
 
     @property
     def engine(self):
-        """Gets the engine of this CreateChInstanceRequestBody.
+        r"""Gets the engine of this CreateChInstanceRequestBody.
 
         :return: The engine of this CreateChInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ClickHouseEngineInfo`
@@ -135,7 +135,7 @@ class CreateChInstanceRequestBody:
 
     @engine.setter
     def engine(self, engine):
-        """Sets the engine of this CreateChInstanceRequestBody.
+        r"""Sets the engine of this CreateChInstanceRequestBody.
 
         :param engine: The engine of this CreateChInstanceRequestBody.
         :type engine: :class:`huaweicloudsdkgaussdb.v3.ClickHouseEngineInfo`
@@ -144,7 +144,7 @@ class CreateChInstanceRequestBody:
 
     @property
     def ha(self):
-        """Gets the ha of this CreateChInstanceRequestBody.
+        r"""Gets the ha of this CreateChInstanceRequestBody.
 
         :return: The ha of this CreateChInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateChInstanceRequestBodyHa`
@@ -153,7 +153,7 @@ class CreateChInstanceRequestBody:
 
     @ha.setter
     def ha(self, ha):
-        """Sets the ha of this CreateChInstanceRequestBody.
+        r"""Sets the ha of this CreateChInstanceRequestBody.
 
         :param ha: The ha of this CreateChInstanceRequestBody.
         :type ha: :class:`huaweicloudsdkgaussdb.v3.CreateChInstanceRequestBodyHa`
@@ -162,7 +162,7 @@ class CreateChInstanceRequestBody:
 
     @property
     def flavor_id(self):
-        """Gets the flavor_id of this CreateChInstanceRequestBody.
+        r"""Gets the flavor_id of this CreateChInstanceRequestBody.
 
         节点规格ID，可通过“HTAP查询规格信息”获取。
 
@@ -173,7 +173,7 @@ class CreateChInstanceRequestBody:
 
     @flavor_id.setter
     def flavor_id(self, flavor_id):
-        """Sets the flavor_id of this CreateChInstanceRequestBody.
+        r"""Sets the flavor_id of this CreateChInstanceRequestBody.
 
         节点规格ID，可通过“HTAP查询规格信息”获取。
 
@@ -184,7 +184,7 @@ class CreateChInstanceRequestBody:
 
     @property
     def db_root_pwd(self):
-        """Gets the db_root_pwd of this CreateChInstanceRequestBody.
+        r"""Gets the db_root_pwd of this CreateChInstanceRequestBody.
 
         root账户密码。 - 8~32个字符 - 包含大写字母、小写字母、数字或特殊字符(~ ! @ # % ^ * - _ = + ? ,)中的三种
 
@@ -195,7 +195,7 @@ class CreateChInstanceRequestBody:
 
     @db_root_pwd.setter
     def db_root_pwd(self, db_root_pwd):
-        """Sets the db_root_pwd of this CreateChInstanceRequestBody.
+        r"""Sets the db_root_pwd of this CreateChInstanceRequestBody.
 
         root账户密码。 - 8~32个字符 - 包含大写字母、小写字母、数字或特殊字符(~ ! @ # % ^ * - _ = + ? ,)中的三种
 
@@ -206,7 +206,7 @@ class CreateChInstanceRequestBody:
 
     @property
     def az_mode(self):
-        """Gets the az_mode of this CreateChInstanceRequestBody.
+        r"""Gets the az_mode of this CreateChInstanceRequestBody.
 
         可用区类型。 取值范围： - single：单可用区 - double：多可用区
 
@@ -217,7 +217,7 @@ class CreateChInstanceRequestBody:
 
     @az_mode.setter
     def az_mode(self, az_mode):
-        """Sets the az_mode of this CreateChInstanceRequestBody.
+        r"""Sets the az_mode of this CreateChInstanceRequestBody.
 
         可用区类型。 取值范围： - single：单可用区 - double：多可用区
 
@@ -228,7 +228,7 @@ class CreateChInstanceRequestBody:
 
     @property
     def volume(self):
-        """Gets the volume of this CreateChInstanceRequestBody.
+        r"""Gets the volume of this CreateChInstanceRequestBody.
 
         :return: The volume of this CreateChInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateChInstanceRequestBodyVolume`
@@ -237,7 +237,7 @@ class CreateChInstanceRequestBody:
 
     @volume.setter
     def volume(self, volume):
-        """Sets the volume of this CreateChInstanceRequestBody.
+        r"""Sets the volume of this CreateChInstanceRequestBody.
 
         :param volume: The volume of this CreateChInstanceRequestBody.
         :type volume: :class:`huaweicloudsdkgaussdb.v3.CreateChInstanceRequestBodyVolume`
@@ -246,7 +246,7 @@ class CreateChInstanceRequestBody:
 
     @property
     def az_code(self):
-        """Gets the az_code of this CreateChInstanceRequestBody.
+        r"""Gets the az_code of this CreateChInstanceRequestBody.
 
         可用区码。  当ha中mode为Ha时，需要填写多个可用区，用\",\" 分隔。例如：cn-southwest-244b,cn-southwest-244a
 
@@ -257,7 +257,7 @@ class CreateChInstanceRequestBody:
 
     @az_code.setter
     def az_code(self, az_code):
-        """Sets the az_code of this CreateChInstanceRequestBody.
+        r"""Sets the az_code of this CreateChInstanceRequestBody.
 
         可用区码。  当ha中mode为Ha时，需要填写多个可用区，用\",\" 分隔。例如：cn-southwest-244b,cn-southwest-244a
 
@@ -268,7 +268,7 @@ class CreateChInstanceRequestBody:
 
     @property
     def time_zone(self):
-        """Gets the time_zone of this CreateChInstanceRequestBody.
+        r"""Gets the time_zone of this CreateChInstanceRequestBody.
 
         时区。默认为所属TaurusDB实例时区。
 
@@ -279,7 +279,7 @@ class CreateChInstanceRequestBody:
 
     @time_zone.setter
     def time_zone(self, time_zone):
-        """Sets the time_zone of this CreateChInstanceRequestBody.
+        r"""Sets the time_zone of this CreateChInstanceRequestBody.
 
         时区。默认为所属TaurusDB实例时区。
 
@@ -290,7 +290,7 @@ class CreateChInstanceRequestBody:
 
     @property
     def tags_info(self):
-        """Gets the tags_info of this CreateChInstanceRequestBody.
+        r"""Gets the tags_info of this CreateChInstanceRequestBody.
 
         :return: The tags_info of this CreateChInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateChInstanceRequestBodyTagsInfo`
@@ -299,7 +299,7 @@ class CreateChInstanceRequestBody:
 
     @tags_info.setter
     def tags_info(self, tags_info):
-        """Sets the tags_info of this CreateChInstanceRequestBody.
+        r"""Sets the tags_info of this CreateChInstanceRequestBody.
 
         :param tags_info: The tags_info of this CreateChInstanceRequestBody.
         :type tags_info: :class:`huaweicloudsdkgaussdb.v3.CreateChInstanceRequestBodyTagsInfo`
@@ -308,7 +308,7 @@ class CreateChInstanceRequestBody:
 
     @property
     def pay_info(self):
-        """Gets the pay_info of this CreateChInstanceRequestBody.
+        r"""Gets the pay_info of this CreateChInstanceRequestBody.
 
         :return: The pay_info of this CreateChInstanceRequestBody.
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateChInstanceRequestBodyPayInfo`
@@ -317,7 +317,7 @@ class CreateChInstanceRequestBody:
 
     @pay_info.setter
     def pay_info(self, pay_info):
-        """Sets the pay_info of this CreateChInstanceRequestBody.
+        r"""Sets the pay_info of this CreateChInstanceRequestBody.
 
         :param pay_info: The pay_info of this CreateChInstanceRequestBody.
         :type pay_info: :class:`huaweicloudsdkgaussdb.v3.CreateChInstanceRequestBodyPayInfo`

@@ -26,7 +26,7 @@ class ListAppsTopResponse(SdkResponse):
     }
 
     def __init__(self, statistics=None):
-        """ListAppsTopResponse
+        r"""ListAppsTopResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListAppsTopResponse(SdkResponse):
 
     @property
     def statistics(self):
-        """Gets the statistics of this ListAppsTopResponse.
+        r"""Gets the statistics of this ListAppsTopResponse.
 
         统计信息详情列表
 
@@ -55,7 +55,7 @@ class ListAppsTopResponse(SdkResponse):
 
     @statistics.setter
     def statistics(self, statistics):
-        """Sets the statistics of this ListAppsTopResponse.
+        r"""Sets the statistics of this ListAppsTopResponse.
 
         统计信息详情列表
 

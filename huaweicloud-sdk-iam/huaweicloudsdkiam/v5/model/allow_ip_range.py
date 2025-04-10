@@ -27,7 +27,7 @@ class AllowIpRange:
     }
 
     def __init__(self, ip_range=None, description=None):
-        """AllowIpRange
+        r"""AllowIpRange
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AllowIpRange:
 
     @property
     def ip_range(self):
-        """Gets the ip_range of this AllowIpRange.
+        r"""Gets the ip_range of this AllowIpRange.
 
         IP地址区间，例如\"0.0.0.0-255.255.255.255\"。
 
@@ -60,7 +60,7 @@ class AllowIpRange:
 
     @ip_range.setter
     def ip_range(self, ip_range):
-        """Sets the ip_range of this AllowIpRange.
+        r"""Sets the ip_range of this AllowIpRange.
 
         IP地址区间，例如\"0.0.0.0-255.255.255.255\"。
 
@@ -71,7 +71,7 @@ class AllowIpRange:
 
     @property
     def description(self):
-        """Gets the description of this AllowIpRange.
+        r"""Gets the description of this AllowIpRange.
 
         描述信息，不能包含特定字符\"@\"、\"#\"、\"%\"、\"&\"、\"<\"、\">\"、\"\\\\\"、\"$\"、\"^\"和\"*\"的字符串。
 
@@ -82,7 +82,7 @@ class AllowIpRange:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this AllowIpRange.
+        r"""Sets the description of this AllowIpRange.
 
         描述信息，不能包含特定字符\"@\"、\"#\"、\"%\"、\"&\"、\"<\"、\">\"、\"\\\\\"、\"$\"、\"^\"和\"*\"的字符串。
 

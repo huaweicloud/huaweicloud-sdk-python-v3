@@ -25,7 +25,7 @@ class CreateGraphReq:
     }
 
     def __init__(self, graph=None):
-        """CreateGraphReq
+        r"""CreateGraphReq
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class CreateGraphReq:
 
     @property
     def graph(self):
-        """Gets the graph of this CreateGraphReq.
+        r"""Gets the graph of this CreateGraphReq.
 
         :return: The graph of this CreateGraphReq.
         :rtype: :class:`huaweicloudsdkges.v1.Graph`
@@ -51,7 +51,7 @@ class CreateGraphReq:
 
     @graph.setter
     def graph(self, graph):
-        """Sets the graph of this CreateGraphReq.
+        r"""Sets the graph of this CreateGraphReq.
 
         :param graph: The graph of this CreateGraphReq.
         :type graph: :class:`huaweicloudsdkges.v1.Graph`

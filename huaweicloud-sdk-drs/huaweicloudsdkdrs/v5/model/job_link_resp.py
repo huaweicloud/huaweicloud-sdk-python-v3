@@ -41,7 +41,7 @@ class JobLinkResp:
     }
 
     def __init__(self, job_type=None, engine_type=None, source_endpoint_type=None, target_endpoint_type=None, job_direction=None, net_type=None, task_types=None, cluster_modes=None, description=None):
-        """JobLinkResp
+        r"""JobLinkResp
 
         The model defined in huaweicloud sdk
 
@@ -90,7 +90,7 @@ class JobLinkResp:
 
     @property
     def job_type(self):
-        """Gets the job_type of this JobLinkResp.
+        r"""Gets the job_type of this JobLinkResp.
 
         任务场景。取值： - migration：实时迁移。 - sync：实时同步。 - cloudDataGuard：实时灾备。
 
@@ -101,7 +101,7 @@ class JobLinkResp:
 
     @job_type.setter
     def job_type(self, job_type):
-        """Sets the job_type of this JobLinkResp.
+        r"""Sets the job_type of this JobLinkResp.
 
         任务场景。取值： - migration：实时迁移。 - sync：实时同步。 - cloudDataGuard：实时灾备。
 
@@ -112,7 +112,7 @@ class JobLinkResp:
 
     @property
     def engine_type(self):
-        """Gets the engine_type of this JobLinkResp.
+        r"""Gets the engine_type of this JobLinkResp.
 
         引擎类型。取值： - oracle-to-gaussdbv5：Oracle同步到GaussDB分布式版，实时同步场景使用。 - redis-to-gaussredis：Redis同步到GeminiDB Redis，实时迁移场景使用。 - rediscluster-to-gaussredis：Redis集群同步到GeminiDB Redis，实时迁移场景使用。
 
@@ -123,7 +123,7 @@ class JobLinkResp:
 
     @engine_type.setter
     def engine_type(self, engine_type):
-        """Sets the engine_type of this JobLinkResp.
+        r"""Sets the engine_type of this JobLinkResp.
 
         引擎类型。取值： - oracle-to-gaussdbv5：Oracle同步到GaussDB分布式版，实时同步场景使用。 - redis-to-gaussredis：Redis同步到GeminiDB Redis，实时迁移场景使用。 - rediscluster-to-gaussredis：Redis集群同步到GeminiDB Redis，实时迁移场景使用。
 
@@ -134,7 +134,7 @@ class JobLinkResp:
 
     @property
     def source_endpoint_type(self):
-        """Gets the source_endpoint_type of this JobLinkResp.
+        r"""Gets the source_endpoint_type of this JobLinkResp.
 
         源数据库实例类型。取值： - offline：自建数据库。 - ecs：华为云ECS自建数据库。 - cloud：华为云数据库。
 
@@ -145,7 +145,7 @@ class JobLinkResp:
 
     @source_endpoint_type.setter
     def source_endpoint_type(self, source_endpoint_type):
-        """Sets the source_endpoint_type of this JobLinkResp.
+        r"""Sets the source_endpoint_type of this JobLinkResp.
 
         源数据库实例类型。取值： - offline：自建数据库。 - ecs：华为云ECS自建数据库。 - cloud：华为云数据库。
 
@@ -156,7 +156,7 @@ class JobLinkResp:
 
     @property
     def target_endpoint_type(self):
-        """Gets the target_endpoint_type of this JobLinkResp.
+        r"""Gets the target_endpoint_type of this JobLinkResp.
 
         目标数据库实例类型。取值： - offline：自建数据库。 - ecs：华为云ECS自建数据库。 - cloud：华为云数据库。
 
@@ -167,7 +167,7 @@ class JobLinkResp:
 
     @target_endpoint_type.setter
     def target_endpoint_type(self, target_endpoint_type):
-        """Sets the target_endpoint_type of this JobLinkResp.
+        r"""Sets the target_endpoint_type of this JobLinkResp.
 
         目标数据库实例类型。取值： - offline：自建数据库。 - ecs：华为云ECS自建数据库。 - cloud：华为云数据库。
 
@@ -178,7 +178,7 @@ class JobLinkResp:
 
     @property
     def job_direction(self):
-        """Gets the job_direction of this JobLinkResp.
+        r"""Gets the job_direction of this JobLinkResp.
 
         迁移方向。取值： - up：入云 ，灾备场景时对应本云为备。 - down：出云，灾备场景时对应本云为主。 - non-dbs：自建。
 
@@ -189,7 +189,7 @@ class JobLinkResp:
 
     @job_direction.setter
     def job_direction(self, job_direction):
-        """Sets the job_direction of this JobLinkResp.
+        r"""Sets the job_direction of this JobLinkResp.
 
         迁移方向。取值： - up：入云 ，灾备场景时对应本云为备。 - down：出云，灾备场景时对应本云为主。 - non-dbs：自建。
 
@@ -200,7 +200,7 @@ class JobLinkResp:
 
     @property
     def net_type(self):
-        """Gets the net_type of this JobLinkResp.
+        r"""Gets the net_type of this JobLinkResp.
 
         网络类型。取值： - eip：公网网络。 - vpc：VPC网络，灾备场景不支持选择VPC网络。 - vpn：VPN、专线网络。
 
@@ -211,7 +211,7 @@ class JobLinkResp:
 
     @net_type.setter
     def net_type(self, net_type):
-        """Sets the net_type of this JobLinkResp.
+        r"""Sets the net_type of this JobLinkResp.
 
         网络类型。取值： - eip：公网网络。 - vpc：VPC网络，灾备场景不支持选择VPC网络。 - vpn：VPN、专线网络。
 
@@ -222,7 +222,7 @@ class JobLinkResp:
 
     @property
     def task_types(self):
-        """Gets the task_types of this JobLinkResp.
+        r"""Gets the task_types of this JobLinkResp.
 
         迁移模式。取值： - FULL_TRANS ：全量。 - FULL_INCR_TRANS：全量+增量。 - INCR_TRANS：增量。
 
@@ -233,7 +233,7 @@ class JobLinkResp:
 
     @task_types.setter
     def task_types(self, task_types):
-        """Sets the task_types of this JobLinkResp.
+        r"""Sets the task_types of this JobLinkResp.
 
         迁移模式。取值： - FULL_TRANS ：全量。 - FULL_INCR_TRANS：全量+增量。 - INCR_TRANS：增量。
 
@@ -244,7 +244,7 @@ class JobLinkResp:
 
     @property
     def cluster_modes(self):
-        """Gets the cluster_modes of this JobLinkResp.
+        r"""Gets the cluster_modes of this JobLinkResp.
 
         引擎实例模式。取值： - Single：单机模式。 - Ha：主备模式。 - Cluster：集群模式。 - Sharding：分片模式。 - Independent：GaussDB独立部署模式。
 
@@ -255,7 +255,7 @@ class JobLinkResp:
 
     @cluster_modes.setter
     def cluster_modes(self, cluster_modes):
-        """Sets the cluster_modes of this JobLinkResp.
+        r"""Sets the cluster_modes of this JobLinkResp.
 
         引擎实例模式。取值： - Single：单机模式。 - Ha：主备模式。 - Cluster：集群模式。 - Sharding：分片模式。 - Independent：GaussDB独立部署模式。
 
@@ -266,7 +266,7 @@ class JobLinkResp:
 
     @property
     def description(self):
-        """Gets the description of this JobLinkResp.
+        r"""Gets the description of this JobLinkResp.
 
         链路描述。
 
@@ -277,7 +277,7 @@ class JobLinkResp:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this JobLinkResp.
+        r"""Sets the description of this JobLinkResp.
 
         链路描述。
 

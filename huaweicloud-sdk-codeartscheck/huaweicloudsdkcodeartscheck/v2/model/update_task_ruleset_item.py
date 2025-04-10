@@ -31,7 +31,7 @@ class UpdateTaskRulesetItem:
     }
 
     def __init__(self, language=None, rule_set_id=None, if_use=None, status=None):
-        """UpdateTaskRulesetItem
+        r"""UpdateTaskRulesetItem
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class UpdateTaskRulesetItem:
 
     @property
     def language(self):
-        """Gets the language of this UpdateTaskRulesetItem.
+        r"""Gets the language of this UpdateTaskRulesetItem.
 
         规则集语言
 
@@ -71,7 +71,7 @@ class UpdateTaskRulesetItem:
 
     @language.setter
     def language(self, language):
-        """Sets the language of this UpdateTaskRulesetItem.
+        r"""Sets the language of this UpdateTaskRulesetItem.
 
         规则集语言
 
@@ -82,7 +82,7 @@ class UpdateTaskRulesetItem:
 
     @property
     def rule_set_id(self):
-        """Gets the rule_set_id of this UpdateTaskRulesetItem.
+        r"""Gets the rule_set_id of this UpdateTaskRulesetItem.
 
         规则集ID,通过调用ListTaskRuleset接口，根据响应参数中的template_id获得
 
@@ -93,7 +93,7 @@ class UpdateTaskRulesetItem:
 
     @rule_set_id.setter
     def rule_set_id(self, rule_set_id):
-        """Sets the rule_set_id of this UpdateTaskRulesetItem.
+        r"""Sets the rule_set_id of this UpdateTaskRulesetItem.
 
         规则集ID,通过调用ListTaskRuleset接口，根据响应参数中的template_id获得
 
@@ -104,7 +104,7 @@ class UpdateTaskRulesetItem:
 
     @property
     def if_use(self):
-        """Gets the if_use of this UpdateTaskRulesetItem.
+        r"""Gets the if_use of this UpdateTaskRulesetItem.
 
         任务语言和规则集的关系是否启用，1是启用，0是未启用
 
@@ -115,7 +115,7 @@ class UpdateTaskRulesetItem:
 
     @if_use.setter
     def if_use(self, if_use):
-        """Sets the if_use of this UpdateTaskRulesetItem.
+        r"""Sets the if_use of this UpdateTaskRulesetItem.
 
         任务语言和规则集的关系是否启用，1是启用，0是未启用
 
@@ -126,7 +126,7 @@ class UpdateTaskRulesetItem:
 
     @property
     def status(self):
-        """Gets the status of this UpdateTaskRulesetItem.
+        r"""Gets the status of this UpdateTaskRulesetItem.
 
         新/老数据表示，默认1
 
@@ -137,7 +137,7 @@ class UpdateTaskRulesetItem:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateTaskRulesetItem.
+        r"""Sets the status of this UpdateTaskRulesetItem.
 
         新/老数据表示，默认1
 

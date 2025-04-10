@@ -35,7 +35,7 @@ class AudioModerationResultDetail:
     }
 
     def __init__(self, start_time=None, suggestion=None, end_time=None, label=None, audio_text=None, segments=None):
-        """AudioModerationResultDetail
+        r"""AudioModerationResultDetail
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class AudioModerationResultDetail:
 
     @property
     def start_time(self):
-        """Gets the start_time of this AudioModerationResultDetail.
+        r"""Gets the start_time of this AudioModerationResultDetail.
 
         音频片段开始时间
 
@@ -89,7 +89,7 @@ class AudioModerationResultDetail:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this AudioModerationResultDetail.
+        r"""Sets the start_time of this AudioModerationResultDetail.
 
         音频片段开始时间
 
@@ -100,7 +100,7 @@ class AudioModerationResultDetail:
 
     @property
     def suggestion(self):
-        """Gets the suggestion of this AudioModerationResultDetail.
+        r"""Gets the suggestion of this AudioModerationResultDetail.
 
         音频片段审核处理建议： block：包含敏感信息，不通过 review：需要人工复检
 
@@ -111,7 +111,7 @@ class AudioModerationResultDetail:
 
     @suggestion.setter
     def suggestion(self, suggestion):
-        """Sets the suggestion of this AudioModerationResultDetail.
+        r"""Sets the suggestion of this AudioModerationResultDetail.
 
         音频片段审核处理建议： block：包含敏感信息，不通过 review：需要人工复检
 
@@ -122,7 +122,7 @@ class AudioModerationResultDetail:
 
     @property
     def end_time(self):
-        """Gets the end_time of this AudioModerationResultDetail.
+        r"""Gets the end_time of this AudioModerationResultDetail.
 
         音频片段结束时间
 
@@ -133,7 +133,7 @@ class AudioModerationResultDetail:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this AudioModerationResultDetail.
+        r"""Sets the end_time of this AudioModerationResultDetail.
 
         音频片段结束时间
 
@@ -144,7 +144,7 @@ class AudioModerationResultDetail:
 
     @property
     def label(self):
-        """Gets the label of this AudioModerationResultDetail.
+        r"""Gets the label of this AudioModerationResultDetail.
 
         音频片段标签
 
@@ -155,7 +155,7 @@ class AudioModerationResultDetail:
 
     @label.setter
     def label(self, label):
-        """Sets the label of this AudioModerationResultDetail.
+        r"""Sets the label of this AudioModerationResultDetail.
 
         音频片段标签
 
@@ -166,7 +166,7 @@ class AudioModerationResultDetail:
 
     @property
     def audio_text(self):
-        """Gets the audio_text of this AudioModerationResultDetail.
+        r"""Gets the audio_text of this AudioModerationResultDetail.
 
         音频片段文本内容
 
@@ -177,7 +177,7 @@ class AudioModerationResultDetail:
 
     @audio_text.setter
     def audio_text(self, audio_text):
-        """Sets the audio_text of this AudioModerationResultDetail.
+        r"""Sets the audio_text of this AudioModerationResultDetail.
 
         音频片段文本内容
 
@@ -188,7 +188,7 @@ class AudioModerationResultDetail:
 
     @property
     def segments(self):
-        """Gets the segments of this AudioModerationResultDetail.
+        r"""Gets the segments of this AudioModerationResultDetail.
 
         命中的风险片段信息列表，如果命中语义算法模型，则该字段不会存在
 
@@ -199,7 +199,7 @@ class AudioModerationResultDetail:
 
     @segments.setter
     def segments(self, segments):
-        """Sets the segments of this AudioModerationResultDetail.
+        r"""Sets the segments of this AudioModerationResultDetail.
 
         命中的风险片段信息列表，如果命中语义算法模型，则该字段不会存在
 

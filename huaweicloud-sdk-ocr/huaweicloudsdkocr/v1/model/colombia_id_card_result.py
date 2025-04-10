@@ -53,7 +53,7 @@ class ColombiaIdCardResult:
     }
 
     def __init__(self, side=None, number=None, name=None, last_name=None, birth_date=None, birth_place=None, gender=None, blood_type=None, issue_date=None, issue_authority=None, height=None, citizen_code1=None, citizen_code2=None, citizen_code3=None, confidence=None):
-        """ColombiaIdCardResult
+        r"""ColombiaIdCardResult
 
         The model defined in huaweicloud sdk
 
@@ -141,7 +141,7 @@ class ColombiaIdCardResult:
 
     @property
     def side(self):
-        """Gets the side of this ColombiaIdCardResult.
+        r"""Gets the side of this ColombiaIdCardResult.
 
         证件图片正反面信息。可选值包括： - front: 证件图片正面 - back:  证件图片反面
 
@@ -152,7 +152,7 @@ class ColombiaIdCardResult:
 
     @side.setter
     def side(self, side):
-        """Sets the side of this ColombiaIdCardResult.
+        r"""Sets the side of this ColombiaIdCardResult.
 
         证件图片正反面信息。可选值包括： - front: 证件图片正面 - back:  证件图片反面
 
@@ -163,7 +163,7 @@ class ColombiaIdCardResult:
 
     @property
     def number(self):
-        """Gets the number of this ColombiaIdCardResult.
+        r"""Gets the number of this ColombiaIdCardResult.
 
         卡证编号。当响应字段\"side\"为front时，返回此字段。
 
@@ -174,7 +174,7 @@ class ColombiaIdCardResult:
 
     @number.setter
     def number(self, number):
-        """Sets the number of this ColombiaIdCardResult.
+        r"""Sets the number of this ColombiaIdCardResult.
 
         卡证编号。当响应字段\"side\"为front时，返回此字段。
 
@@ -185,7 +185,7 @@ class ColombiaIdCardResult:
 
     @property
     def name(self):
-        """Gets the name of this ColombiaIdCardResult.
+        r"""Gets the name of this ColombiaIdCardResult.
 
         名。当响应字段\"side\"为front时，返回此字段。
 
@@ -196,7 +196,7 @@ class ColombiaIdCardResult:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this ColombiaIdCardResult.
+        r"""Sets the name of this ColombiaIdCardResult.
 
         名。当响应字段\"side\"为front时，返回此字段。
 
@@ -207,7 +207,7 @@ class ColombiaIdCardResult:
 
     @property
     def last_name(self):
-        """Gets the last_name of this ColombiaIdCardResult.
+        r"""Gets the last_name of this ColombiaIdCardResult.
 
         姓。当响应字段\"side\"为front时，返回此字段。
 
@@ -218,7 +218,7 @@ class ColombiaIdCardResult:
 
     @last_name.setter
     def last_name(self, last_name):
-        """Sets the last_name of this ColombiaIdCardResult.
+        r"""Sets the last_name of this ColombiaIdCardResult.
 
         姓。当响应字段\"side\"为front时，返回此字段。
 
@@ -229,7 +229,7 @@ class ColombiaIdCardResult:
 
     @property
     def birth_date(self):
-        """Gets the birth_date of this ColombiaIdCardResult.
+        r"""Gets the birth_date of this ColombiaIdCardResult.
 
         出生日期。
 
@@ -240,7 +240,7 @@ class ColombiaIdCardResult:
 
     @birth_date.setter
     def birth_date(self, birth_date):
-        """Sets the birth_date of this ColombiaIdCardResult.
+        r"""Sets the birth_date of this ColombiaIdCardResult.
 
         出生日期。
 
@@ -251,7 +251,7 @@ class ColombiaIdCardResult:
 
     @property
     def birth_place(self):
-        """Gets the birth_place of this ColombiaIdCardResult.
+        r"""Gets the birth_place of this ColombiaIdCardResult.
 
         出生地。
 
@@ -262,7 +262,7 @@ class ColombiaIdCardResult:
 
     @birth_place.setter
     def birth_place(self, birth_place):
-        """Sets the birth_place of this ColombiaIdCardResult.
+        r"""Sets the birth_place of this ColombiaIdCardResult.
 
         出生地。
 
@@ -273,7 +273,7 @@ class ColombiaIdCardResult:
 
     @property
     def gender(self):
-        """Gets the gender of this ColombiaIdCardResult.
+        r"""Gets the gender of this ColombiaIdCardResult.
 
         性别。
 
@@ -284,7 +284,7 @@ class ColombiaIdCardResult:
 
     @gender.setter
     def gender(self, gender):
-        """Sets the gender of this ColombiaIdCardResult.
+        r"""Sets the gender of this ColombiaIdCardResult.
 
         性别。
 
@@ -295,7 +295,7 @@ class ColombiaIdCardResult:
 
     @property
     def blood_type(self):
-        """Gets the blood_type of this ColombiaIdCardResult.
+        r"""Gets the blood_type of this ColombiaIdCardResult.
 
         血型。
 
@@ -306,7 +306,7 @@ class ColombiaIdCardResult:
 
     @blood_type.setter
     def blood_type(self, blood_type):
-        """Sets the blood_type of this ColombiaIdCardResult.
+        r"""Sets the blood_type of this ColombiaIdCardResult.
 
         血型。
 
@@ -317,7 +317,7 @@ class ColombiaIdCardResult:
 
     @property
     def issue_date(self):
-        """Gets the issue_date of this ColombiaIdCardResult.
+        r"""Gets the issue_date of this ColombiaIdCardResult.
 
         签发日期。
 
@@ -328,7 +328,7 @@ class ColombiaIdCardResult:
 
     @issue_date.setter
     def issue_date(self, issue_date):
-        """Sets the issue_date of this ColombiaIdCardResult.
+        r"""Sets the issue_date of this ColombiaIdCardResult.
 
         签发日期。
 
@@ -339,7 +339,7 @@ class ColombiaIdCardResult:
 
     @property
     def issue_authority(self):
-        """Gets the issue_authority of this ColombiaIdCardResult.
+        r"""Gets the issue_authority of this ColombiaIdCardResult.
 
         签发地区。
 
@@ -350,7 +350,7 @@ class ColombiaIdCardResult:
 
     @issue_authority.setter
     def issue_authority(self, issue_authority):
-        """Sets the issue_authority of this ColombiaIdCardResult.
+        r"""Sets the issue_authority of this ColombiaIdCardResult.
 
         签发地区。
 
@@ -361,7 +361,7 @@ class ColombiaIdCardResult:
 
     @property
     def height(self):
-        """Gets the height of this ColombiaIdCardResult.
+        r"""Gets the height of this ColombiaIdCardResult.
 
         身高。
 
@@ -372,7 +372,7 @@ class ColombiaIdCardResult:
 
     @height.setter
     def height(self, height):
-        """Sets the height of this ColombiaIdCardResult.
+        r"""Sets the height of this ColombiaIdCardResult.
 
         身高。
 
@@ -383,7 +383,7 @@ class ColombiaIdCardResult:
 
     @property
     def citizen_code1(self):
-        """Gets the citizen_code1 of this ColombiaIdCardResult.
+        r"""Gets the citizen_code1 of this ColombiaIdCardResult.
 
         公民编码一。
 
@@ -394,7 +394,7 @@ class ColombiaIdCardResult:
 
     @citizen_code1.setter
     def citizen_code1(self, citizen_code1):
-        """Sets the citizen_code1 of this ColombiaIdCardResult.
+        r"""Sets the citizen_code1 of this ColombiaIdCardResult.
 
         公民编码一。
 
@@ -405,7 +405,7 @@ class ColombiaIdCardResult:
 
     @property
     def citizen_code2(self):
-        """Gets the citizen_code2 of this ColombiaIdCardResult.
+        r"""Gets the citizen_code2 of this ColombiaIdCardResult.
 
         公民编码二。
 
@@ -416,7 +416,7 @@ class ColombiaIdCardResult:
 
     @citizen_code2.setter
     def citizen_code2(self, citizen_code2):
-        """Sets the citizen_code2 of this ColombiaIdCardResult.
+        r"""Sets the citizen_code2 of this ColombiaIdCardResult.
 
         公民编码二。
 
@@ -427,7 +427,7 @@ class ColombiaIdCardResult:
 
     @property
     def citizen_code3(self):
-        """Gets the citizen_code3 of this ColombiaIdCardResult.
+        r"""Gets the citizen_code3 of this ColombiaIdCardResult.
 
         公民编码三。
 
@@ -438,7 +438,7 @@ class ColombiaIdCardResult:
 
     @citizen_code3.setter
     def citizen_code3(self, citizen_code3):
-        """Sets the citizen_code3 of this ColombiaIdCardResult.
+        r"""Sets the citizen_code3 of this ColombiaIdCardResult.
 
         公民编码三。
 
@@ -449,7 +449,7 @@ class ColombiaIdCardResult:
 
     @property
     def confidence(self):
-        """Gets the confidence of this ColombiaIdCardResult.
+        r"""Gets the confidence of this ColombiaIdCardResult.
 
         相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。注：置信度由算法给出，不直接等价于对应字段的准确率。
 
@@ -460,7 +460,7 @@ class ColombiaIdCardResult:
 
     @confidence.setter
     def confidence(self, confidence):
-        """Sets the confidence of this ColombiaIdCardResult.
+        r"""Sets the confidence of this ColombiaIdCardResult.
 
         相关字段的置信度信息，置信度越大，表示本次识别的对应字段的可靠性越高，在统计意义上，置信度越大，准确率越高。注：置信度由算法给出，不直接等价于对应字段的准确率。
 

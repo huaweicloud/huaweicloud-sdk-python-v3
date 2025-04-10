@@ -25,7 +25,7 @@ class ShowPolicyGroupRequest:
     }
 
     def __init__(self, policy_group_id=None):
-        """ShowPolicyGroupRequest
+        r"""ShowPolicyGroupRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ShowPolicyGroupRequest:
 
     @property
     def policy_group_id(self):
-        """Gets the policy_group_id of this ShowPolicyGroupRequest.
+        r"""Gets the policy_group_id of this ShowPolicyGroupRequest.
 
         策略组id。
 
@@ -53,7 +53,7 @@ class ShowPolicyGroupRequest:
 
     @policy_group_id.setter
     def policy_group_id(self, policy_group_id):
-        """Sets the policy_group_id of this ShowPolicyGroupRequest.
+        r"""Sets the policy_group_id of this ShowPolicyGroupRequest.
 
         策略组id。
 

@@ -29,7 +29,7 @@ class ListTaskExecuteHistoryRequest:
     }
 
     def __init__(self, task_id=None, offset=None, limit=None):
-        """ListTaskExecuteHistoryRequest
+        r"""ListTaskExecuteHistoryRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ListTaskExecuteHistoryRequest:
 
     @property
     def task_id(self):
-        """Gets the task_id of this ListTaskExecuteHistoryRequest.
+        r"""Gets the task_id of this ListTaskExecuteHistoryRequest.
 
         定时任务唯一标识。
 
@@ -67,7 +67,7 @@ class ListTaskExecuteHistoryRequest:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ListTaskExecuteHistoryRequest.
+        r"""Sets the task_id of this ListTaskExecuteHistoryRequest.
 
         定时任务唯一标识。
 
@@ -78,7 +78,7 @@ class ListTaskExecuteHistoryRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTaskExecuteHistoryRequest.
+        r"""Gets the offset of this ListTaskExecuteHistoryRequest.
 
         查询的偏移量。
 
@@ -89,7 +89,7 @@ class ListTaskExecuteHistoryRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTaskExecuteHistoryRequest.
+        r"""Sets the offset of this ListTaskExecuteHistoryRequest.
 
         查询的偏移量。
 
@@ -100,7 +100,7 @@ class ListTaskExecuteHistoryRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTaskExecuteHistoryRequest.
+        r"""Gets the limit of this ListTaskExecuteHistoryRequest.
 
         查询的数量，值区间[1-100]。
 
@@ -111,7 +111,7 @@ class ListTaskExecuteHistoryRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTaskExecuteHistoryRequest.
+        r"""Sets the limit of this ListTaskExecuteHistoryRequest.
 
         查询的数量，值区间[1-100]。
 

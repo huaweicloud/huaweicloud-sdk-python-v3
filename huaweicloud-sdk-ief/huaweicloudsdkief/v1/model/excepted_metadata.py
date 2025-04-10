@@ -25,7 +25,7 @@ class ExceptedMetadata:
     }
 
     def __init__(self, type=None):
-        """ExceptedMetadata
+        r"""ExceptedMetadata
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ExceptedMetadata:
 
     @property
     def type(self):
-        """Gets the type of this ExceptedMetadata.
+        r"""Gets the type of this ExceptedMetadata.
 
         属性类型标识，string|int|float|boolean（boolean类型为true或false），默认为string
 
@@ -54,7 +54,7 @@ class ExceptedMetadata:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ExceptedMetadata.
+        r"""Sets the type of this ExceptedMetadata.
 
         属性类型标识，string|int|float|boolean（boolean类型为true或false），默认为string
 

@@ -32,7 +32,7 @@ class ListScalingConfigsResponse(SdkResponse):
     }
 
     def __init__(self, total_number=None, start_number=None, limit=None, scaling_configurations=None):
-        """ListScalingConfigsResponse
+        r"""ListScalingConfigsResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListScalingConfigsResponse(SdkResponse):
 
     @property
     def total_number(self):
-        """Gets the total_number of this ListScalingConfigsResponse.
+        r"""Gets the total_number of this ListScalingConfigsResponse.
 
         总记录数。
 
@@ -76,7 +76,7 @@ class ListScalingConfigsResponse(SdkResponse):
 
     @total_number.setter
     def total_number(self, total_number):
-        """Sets the total_number of this ListScalingConfigsResponse.
+        r"""Sets the total_number of this ListScalingConfigsResponse.
 
         总记录数。
 
@@ -87,7 +87,7 @@ class ListScalingConfigsResponse(SdkResponse):
 
     @property
     def start_number(self):
-        """Gets the start_number of this ListScalingConfigsResponse.
+        r"""Gets the start_number of this ListScalingConfigsResponse.
 
         查询的起始行号。
 
@@ -98,7 +98,7 @@ class ListScalingConfigsResponse(SdkResponse):
 
     @start_number.setter
     def start_number(self, start_number):
-        """Sets the start_number of this ListScalingConfigsResponse.
+        r"""Sets the start_number of this ListScalingConfigsResponse.
 
         查询的起始行号。
 
@@ -109,7 +109,7 @@ class ListScalingConfigsResponse(SdkResponse):
 
     @property
     def limit(self):
-        """Gets the limit of this ListScalingConfigsResponse.
+        r"""Gets the limit of this ListScalingConfigsResponse.
 
         查询记录数。
 
@@ -120,7 +120,7 @@ class ListScalingConfigsResponse(SdkResponse):
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListScalingConfigsResponse.
+        r"""Sets the limit of this ListScalingConfigsResponse.
 
         查询记录数。
 
@@ -131,7 +131,7 @@ class ListScalingConfigsResponse(SdkResponse):
 
     @property
     def scaling_configurations(self):
-        """Gets the scaling_configurations of this ListScalingConfigsResponse.
+        r"""Gets the scaling_configurations of this ListScalingConfigsResponse.
 
         伸缩配置列表
 
@@ -142,7 +142,7 @@ class ListScalingConfigsResponse(SdkResponse):
 
     @scaling_configurations.setter
     def scaling_configurations(self, scaling_configurations):
-        """Sets the scaling_configurations of this ListScalingConfigsResponse.
+        r"""Sets the scaling_configurations of this ListScalingConfigsResponse.
 
         伸缩配置列表
 

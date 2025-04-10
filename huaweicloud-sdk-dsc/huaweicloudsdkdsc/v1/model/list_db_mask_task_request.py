@@ -31,7 +31,7 @@ class ListDbMaskTaskRequest:
     }
 
     def __init__(self, template_id=None, workspace_id=None, offset=None, limit=None):
-        """ListDbMaskTaskRequest
+        r"""ListDbMaskTaskRequest
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class ListDbMaskTaskRequest:
 
     @property
     def template_id(self):
-        """Gets the template_id of this ListDbMaskTaskRequest.
+        r"""Gets the template_id of this ListDbMaskTaskRequest.
 
         模板ID
 
@@ -74,7 +74,7 @@ class ListDbMaskTaskRequest:
 
     @template_id.setter
     def template_id(self, template_id):
-        """Sets the template_id of this ListDbMaskTaskRequest.
+        r"""Sets the template_id of this ListDbMaskTaskRequest.
 
         模板ID
 
@@ -85,7 +85,7 @@ class ListDbMaskTaskRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this ListDbMaskTaskRequest.
+        r"""Gets the workspace_id of this ListDbMaskTaskRequest.
 
         工作区ID
 
@@ -96,7 +96,7 @@ class ListDbMaskTaskRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this ListDbMaskTaskRequest.
+        r"""Sets the workspace_id of this ListDbMaskTaskRequest.
 
         工作区ID
 
@@ -107,7 +107,7 @@ class ListDbMaskTaskRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListDbMaskTaskRequest.
+        r"""Gets the offset of this ListDbMaskTaskRequest.
 
         页码
 
@@ -118,7 +118,7 @@ class ListDbMaskTaskRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListDbMaskTaskRequest.
+        r"""Sets the offset of this ListDbMaskTaskRequest.
 
         页码
 
@@ -129,7 +129,7 @@ class ListDbMaskTaskRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListDbMaskTaskRequest.
+        r"""Gets the limit of this ListDbMaskTaskRequest.
 
         分页大小
 
@@ -140,7 +140,7 @@ class ListDbMaskTaskRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListDbMaskTaskRequest.
+        r"""Sets the limit of this ListDbMaskTaskRequest.
 
         分页大小
 

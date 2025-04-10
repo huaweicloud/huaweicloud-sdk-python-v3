@@ -35,7 +35,7 @@ class ListTablesRequest:
     }
 
     def __init__(self, keyword=None, tag=None, offset=None, limit=None, order_by=None, order=None):
-        """ListTablesRequest
+        r"""ListTablesRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class ListTablesRequest:
 
     @property
     def keyword(self):
-        """Gets the keyword of this ListTablesRequest.
+        r"""Gets the keyword of this ListTablesRequest.
 
         过滤表名称的关键词。
 
@@ -89,7 +89,7 @@ class ListTablesRequest:
 
     @keyword.setter
     def keyword(self, keyword):
-        """Sets the keyword of this ListTablesRequest.
+        r"""Sets the keyword of this ListTablesRequest.
 
         过滤表名称的关键词。
 
@@ -100,7 +100,7 @@ class ListTablesRequest:
 
     @property
     def tag(self):
-        """Gets the tag of this ListTablesRequest.
+        r"""Gets the tag of this ListTablesRequest.
 
         过滤标签的关键字
 
@@ -111,7 +111,7 @@ class ListTablesRequest:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this ListTablesRequest.
+        r"""Sets the tag of this ListTablesRequest.
 
         过滤标签的关键字
 
@@ -122,7 +122,7 @@ class ListTablesRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListTablesRequest.
+        r"""Gets the offset of this ListTablesRequest.
 
         当前偏移量，默认为0。
 
@@ -133,7 +133,7 @@ class ListTablesRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListTablesRequest.
+        r"""Sets the offset of this ListTablesRequest.
 
         当前偏移量，默认为0。
 
@@ -144,7 +144,7 @@ class ListTablesRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListTablesRequest.
+        r"""Gets the limit of this ListTablesRequest.
 
         每页显示的最大作业个数，范围: [1, 100]。默认值：10。
 
@@ -155,7 +155,7 @@ class ListTablesRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListTablesRequest.
+        r"""Sets the limit of this ListTablesRequest.
 
         每页显示的最大作业个数，范围: [1, 100]。默认值：10。
 
@@ -166,7 +166,7 @@ class ListTablesRequest:
 
     @property
     def order_by(self):
-        """Gets the order_by of this ListTablesRequest.
+        r"""Gets the order_by of this ListTablesRequest.
 
         指定作业排序字段，默认为created_time（作业创建时间），支持created_time(作业创建时间)、modified_time（作业更新时间） 、job_name（作业名称）三种排序字段。
 
@@ -177,7 +177,7 @@ class ListTablesRequest:
 
     @order_by.setter
     def order_by(self, order_by):
-        """Sets the order_by of this ListTablesRequest.
+        r"""Sets the order_by of this ListTablesRequest.
 
         指定作业排序字段，默认为created_time（作业创建时间），支持created_time(作业创建时间)、modified_time（作业更新时间） 、job_name（作业名称）三种排序字段。
 
@@ -188,7 +188,7 @@ class ListTablesRequest:
 
     @property
     def order(self):
-        """Gets the order of this ListTablesRequest.
+        r"""Gets the order of this ListTablesRequest.
 
         指定作业排序的升降序，默认为desc（降序），支持asc（升序）、desc（降序）两种排序方式。
 
@@ -199,7 +199,7 @@ class ListTablesRequest:
 
     @order.setter
     def order(self, order):
-        """Sets the order of this ListTablesRequest.
+        r"""Sets the order of this ListTablesRequest.
 
         指定作业排序的升降序，默认为desc（降序），支持asc（升序）、desc（降序）两种排序方式。
 

@@ -27,7 +27,7 @@ class ListClustersRequest:
     }
 
     def __init__(self, offset=None, limit=None):
-        """ListClustersRequest
+        r"""ListClustersRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListClustersRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListClustersRequest.
+        r"""Gets the offset of this ListClustersRequest.
 
         分页参数，列表的偏移量，默认值为0
 
@@ -61,7 +61,7 @@ class ListClustersRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListClustersRequest.
+        r"""Sets the offset of this ListClustersRequest.
 
         分页参数，列表的偏移量，默认值为0
 
@@ -72,7 +72,7 @@ class ListClustersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListClustersRequest.
+        r"""Gets the limit of this ListClustersRequest.
 
         分页参数，列表当前分页的数量限制，默认为10。
 
@@ -83,7 +83,7 @@ class ListClustersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListClustersRequest.
+        r"""Sets the limit of this ListClustersRequest.
 
         分页参数，列表当前分页的数量限制，默认为10。
 

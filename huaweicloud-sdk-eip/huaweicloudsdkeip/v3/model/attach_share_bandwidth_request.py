@@ -27,7 +27,7 @@ class AttachShareBandwidthRequest:
     }
 
     def __init__(self, publicip_id=None, body=None):
-        """AttachShareBandwidthRequest
+        r"""AttachShareBandwidthRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class AttachShareBandwidthRequest:
 
     @property
     def publicip_id(self):
-        """Gets the publicip_id of this AttachShareBandwidthRequest.
+        r"""Gets the publicip_id of this AttachShareBandwidthRequest.
 
         弹性公网ID
 
@@ -60,7 +60,7 @@ class AttachShareBandwidthRequest:
 
     @publicip_id.setter
     def publicip_id(self, publicip_id):
-        """Sets the publicip_id of this AttachShareBandwidthRequest.
+        r"""Sets the publicip_id of this AttachShareBandwidthRequest.
 
         弹性公网ID
 
@@ -71,7 +71,7 @@ class AttachShareBandwidthRequest:
 
     @property
     def body(self):
-        """Gets the body of this AttachShareBandwidthRequest.
+        r"""Gets the body of this AttachShareBandwidthRequest.
 
         :return: The body of this AttachShareBandwidthRequest.
         :rtype: :class:`huaweicloudsdkeip.v3.AttachSharebwReq`
@@ -80,7 +80,7 @@ class AttachShareBandwidthRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AttachShareBandwidthRequest.
+        r"""Sets the body of this AttachShareBandwidthRequest.
 
         :param body: The body of this AttachShareBandwidthRequest.
         :type body: :class:`huaweicloudsdkeip.v3.AttachSharebwReq`

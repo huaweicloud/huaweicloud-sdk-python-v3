@@ -24,7 +24,7 @@ class MuteMeetingResponse(SdkResponse):
     }
 
     def __init__(self):
-        """MuteMeetingResponse
+        r"""MuteMeetingResponse
 
         The model defined in huaweicloud sdk
 

@@ -31,7 +31,7 @@ class CustomerModifyAutoEnlargePolicyReq:
     }
 
     def __init__(self, switch_option=None, limit_size=None, trigger_threshold=None, step_percent=None):
-        """CustomerModifyAutoEnlargePolicyReq
+        r"""CustomerModifyAutoEnlargePolicyReq
 
         The model defined in huaweicloud sdk
 
@@ -63,7 +63,7 @@ class CustomerModifyAutoEnlargePolicyReq:
 
     @property
     def switch_option(self):
-        """Gets the switch_option of this CustomerModifyAutoEnlargePolicyReq.
+        r"""Gets the switch_option of this CustomerModifyAutoEnlargePolicyReq.
 
         是否开启自动扩容,true为开启,false为关闭
 
@@ -74,7 +74,7 @@ class CustomerModifyAutoEnlargePolicyReq:
 
     @switch_option.setter
     def switch_option(self, switch_option):
-        """Sets the switch_option of this CustomerModifyAutoEnlargePolicyReq.
+        r"""Sets the switch_option of this CustomerModifyAutoEnlargePolicyReq.
 
         是否开启自动扩容,true为开启,false为关闭
 
@@ -85,7 +85,7 @@ class CustomerModifyAutoEnlargePolicyReq:
 
     @property
     def limit_size(self):
-        """Gets the limit_size of this CustomerModifyAutoEnlargePolicyReq.
+        r"""Gets the limit_size of this CustomerModifyAutoEnlargePolicyReq.
 
         扩容上限，单位GB, 取值范围40~4000，需要大于等于实例当前存储空间总大小，switch_option为true必填
 
@@ -96,7 +96,7 @@ class CustomerModifyAutoEnlargePolicyReq:
 
     @limit_size.setter
     def limit_size(self, limit_size):
-        """Sets the limit_size of this CustomerModifyAutoEnlargePolicyReq.
+        r"""Sets the limit_size of this CustomerModifyAutoEnlargePolicyReq.
 
         扩容上限，单位GB, 取值范围40~4000，需要大于等于实例当前存储空间总大小，switch_option为true必填
 
@@ -107,7 +107,7 @@ class CustomerModifyAutoEnlargePolicyReq:
 
     @property
     def trigger_threshold(self):
-        """Gets the trigger_threshold of this CustomerModifyAutoEnlargePolicyReq.
+        r"""Gets the trigger_threshold of this CustomerModifyAutoEnlargePolicyReq.
 
         可用存储空间百分比，小于等于此值或者10GB时触发扩容，switch_option为true时必填
 
@@ -118,7 +118,7 @@ class CustomerModifyAutoEnlargePolicyReq:
 
     @trigger_threshold.setter
     def trigger_threshold(self, trigger_threshold):
-        """Sets the trigger_threshold of this CustomerModifyAutoEnlargePolicyReq.
+        r"""Sets the trigger_threshold of this CustomerModifyAutoEnlargePolicyReq.
 
         可用存储空间百分比，小于等于此值或者10GB时触发扩容，switch_option为true时必填
 
@@ -129,7 +129,7 @@ class CustomerModifyAutoEnlargePolicyReq:
 
     @property
     def step_percent(self):
-        """Gets the step_percent of this CustomerModifyAutoEnlargePolicyReq.
+        r"""Gets the step_percent of this CustomerModifyAutoEnlargePolicyReq.
 
         每次自动扩容的百分比步长，取值范围5~50，开启自定义步长功能时必填
 
@@ -140,7 +140,7 @@ class CustomerModifyAutoEnlargePolicyReq:
 
     @step_percent.setter
     def step_percent(self, step_percent):
-        """Sets the step_percent of this CustomerModifyAutoEnlargePolicyReq.
+        r"""Sets the step_percent of this CustomerModifyAutoEnlargePolicyReq.
 
         每次自动扩容的百分比步长，取值范围5~50，开启自定义步长功能时必填
 

@@ -27,7 +27,7 @@ class UpdateSecretRequest:
     }
 
     def __init__(self, secret_name=None, body=None):
-        """UpdateSecretRequest
+        r"""UpdateSecretRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class UpdateSecretRequest:
 
     @property
     def secret_name(self):
-        """Gets the secret_name of this UpdateSecretRequest.
+        r"""Gets the secret_name of this UpdateSecretRequest.
 
         凭据名称。
 
@@ -60,7 +60,7 @@ class UpdateSecretRequest:
 
     @secret_name.setter
     def secret_name(self, secret_name):
-        """Sets the secret_name of this UpdateSecretRequest.
+        r"""Sets the secret_name of this UpdateSecretRequest.
 
         凭据名称。
 
@@ -71,7 +71,7 @@ class UpdateSecretRequest:
 
     @property
     def body(self):
-        """Gets the body of this UpdateSecretRequest.
+        r"""Gets the body of this UpdateSecretRequest.
 
         :return: The body of this UpdateSecretRequest.
         :rtype: :class:`huaweicloudsdkcsms.v1.UpdateSecretRequestBody`
@@ -80,7 +80,7 @@ class UpdateSecretRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this UpdateSecretRequest.
+        r"""Sets the body of this UpdateSecretRequest.
 
         :param body: The body of this UpdateSecretRequest.
         :type body: :class:`huaweicloudsdkcsms.v1.UpdateSecretRequestBody`

@@ -24,7 +24,7 @@ class DeleteMfaDeviceResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteMfaDeviceResponse
+        r"""DeleteMfaDeviceResponse
 
         The model defined in huaweicloud sdk
 

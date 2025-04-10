@@ -40,7 +40,7 @@ class ShowLifeCycleHookResponse(SdkResponse):
     }
 
     def __init__(self, lifecycle_hook_name=None, lifecycle_hook_type=None, default_result=None, default_timeout=None, notification_topic_urn=None, notification_topic_name=None, notification_metadata=None, create_time=None):
-        """ShowLifeCycleHookResponse
+        r"""ShowLifeCycleHookResponse
 
         The model defined in huaweicloud sdk
 
@@ -93,7 +93,7 @@ class ShowLifeCycleHookResponse(SdkResponse):
 
     @property
     def lifecycle_hook_name(self):
-        """Gets the lifecycle_hook_name of this ShowLifeCycleHookResponse.
+        r"""Gets the lifecycle_hook_name of this ShowLifeCycleHookResponse.
 
         生命周期挂钩名称。
 
@@ -104,7 +104,7 @@ class ShowLifeCycleHookResponse(SdkResponse):
 
     @lifecycle_hook_name.setter
     def lifecycle_hook_name(self, lifecycle_hook_name):
-        """Sets the lifecycle_hook_name of this ShowLifeCycleHookResponse.
+        r"""Sets the lifecycle_hook_name of this ShowLifeCycleHookResponse.
 
         生命周期挂钩名称。
 
@@ -115,7 +115,7 @@ class ShowLifeCycleHookResponse(SdkResponse):
 
     @property
     def lifecycle_hook_type(self):
-        """Gets the lifecycle_hook_type of this ShowLifeCycleHookResponse.
+        r"""Gets the lifecycle_hook_type of this ShowLifeCycleHookResponse.
 
         生命周期挂钩类型。INSTANCE_TERMINATING;INSTANCE_LAUNCHING
 
@@ -126,7 +126,7 @@ class ShowLifeCycleHookResponse(SdkResponse):
 
     @lifecycle_hook_type.setter
     def lifecycle_hook_type(self, lifecycle_hook_type):
-        """Sets the lifecycle_hook_type of this ShowLifeCycleHookResponse.
+        r"""Sets the lifecycle_hook_type of this ShowLifeCycleHookResponse.
 
         生命周期挂钩类型。INSTANCE_TERMINATING;INSTANCE_LAUNCHING
 
@@ -137,7 +137,7 @@ class ShowLifeCycleHookResponse(SdkResponse):
 
     @property
     def default_result(self):
-        """Gets the default_result of this ShowLifeCycleHookResponse.
+        r"""Gets the default_result of this ShowLifeCycleHookResponse.
 
         生命周期挂钩默认回调操作。ABANDON;CONTINUE
 
@@ -148,7 +148,7 @@ class ShowLifeCycleHookResponse(SdkResponse):
 
     @default_result.setter
     def default_result(self, default_result):
-        """Sets the default_result of this ShowLifeCycleHookResponse.
+        r"""Sets the default_result of this ShowLifeCycleHookResponse.
 
         生命周期挂钩默认回调操作。ABANDON;CONTINUE
 
@@ -159,7 +159,7 @@ class ShowLifeCycleHookResponse(SdkResponse):
 
     @property
     def default_timeout(self):
-        """Gets the default_timeout of this ShowLifeCycleHookResponse.
+        r"""Gets the default_timeout of this ShowLifeCycleHookResponse.
 
         生命周期挂钩超时时间，单位秒。
 
@@ -170,7 +170,7 @@ class ShowLifeCycleHookResponse(SdkResponse):
 
     @default_timeout.setter
     def default_timeout(self, default_timeout):
-        """Sets the default_timeout of this ShowLifeCycleHookResponse.
+        r"""Sets the default_timeout of this ShowLifeCycleHookResponse.
 
         生命周期挂钩超时时间，单位秒。
 
@@ -181,7 +181,7 @@ class ShowLifeCycleHookResponse(SdkResponse):
 
     @property
     def notification_topic_urn(self):
-        """Gets the notification_topic_urn of this ShowLifeCycleHookResponse.
+        r"""Gets the notification_topic_urn of this ShowLifeCycleHookResponse.
 
         SMN服务中Topic的唯一的资源标识。
 
@@ -192,7 +192,7 @@ class ShowLifeCycleHookResponse(SdkResponse):
 
     @notification_topic_urn.setter
     def notification_topic_urn(self, notification_topic_urn):
-        """Sets the notification_topic_urn of this ShowLifeCycleHookResponse.
+        r"""Sets the notification_topic_urn of this ShowLifeCycleHookResponse.
 
         SMN服务中Topic的唯一的资源标识。
 
@@ -203,7 +203,7 @@ class ShowLifeCycleHookResponse(SdkResponse):
 
     @property
     def notification_topic_name(self):
-        """Gets the notification_topic_name of this ShowLifeCycleHookResponse.
+        r"""Gets the notification_topic_name of this ShowLifeCycleHookResponse.
 
         SMN服务中Topic的资源名称。
 
@@ -214,7 +214,7 @@ class ShowLifeCycleHookResponse(SdkResponse):
 
     @notification_topic_name.setter
     def notification_topic_name(self, notification_topic_name):
-        """Sets the notification_topic_name of this ShowLifeCycleHookResponse.
+        r"""Sets the notification_topic_name of this ShowLifeCycleHookResponse.
 
         SMN服务中Topic的资源名称。
 
@@ -225,7 +225,7 @@ class ShowLifeCycleHookResponse(SdkResponse):
 
     @property
     def notification_metadata(self):
-        """Gets the notification_metadata of this ShowLifeCycleHookResponse.
+        r"""Gets the notification_metadata of this ShowLifeCycleHookResponse.
 
         自定义通知消息。
 
@@ -236,7 +236,7 @@ class ShowLifeCycleHookResponse(SdkResponse):
 
     @notification_metadata.setter
     def notification_metadata(self, notification_metadata):
-        """Sets the notification_metadata of this ShowLifeCycleHookResponse.
+        r"""Sets the notification_metadata of this ShowLifeCycleHookResponse.
 
         自定义通知消息。
 
@@ -247,7 +247,7 @@ class ShowLifeCycleHookResponse(SdkResponse):
 
     @property
     def create_time(self):
-        """Gets the create_time of this ShowLifeCycleHookResponse.
+        r"""Gets the create_time of this ShowLifeCycleHookResponse.
 
         生命周期挂钩创建时间，遵循UTC时间。
 
@@ -258,7 +258,7 @@ class ShowLifeCycleHookResponse(SdkResponse):
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ShowLifeCycleHookResponse.
+        r"""Sets the create_time of this ShowLifeCycleHookResponse.
 
         生命周期挂钩创建时间，遵循UTC时间。
 

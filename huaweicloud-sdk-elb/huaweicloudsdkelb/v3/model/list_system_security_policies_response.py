@@ -28,7 +28,7 @@ class ListSystemSecurityPoliciesResponse(SdkResponse):
     }
 
     def __init__(self, system_security_policies=None, request_id=None):
-        """ListSystemSecurityPoliciesResponse
+        r"""ListSystemSecurityPoliciesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListSystemSecurityPoliciesResponse(SdkResponse):
 
     @property
     def system_security_policies(self):
-        """Gets the system_security_policies of this ListSystemSecurityPoliciesResponse.
+        r"""Gets the system_security_policies of this ListSystemSecurityPoliciesResponse.
 
         系统安全策略列表。
 
@@ -62,7 +62,7 @@ class ListSystemSecurityPoliciesResponse(SdkResponse):
 
     @system_security_policies.setter
     def system_security_policies(self, system_security_policies):
-        """Sets the system_security_policies of this ListSystemSecurityPoliciesResponse.
+        r"""Sets the system_security_policies of this ListSystemSecurityPoliciesResponse.
 
         系统安全策略列表。
 
@@ -73,7 +73,7 @@ class ListSystemSecurityPoliciesResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListSystemSecurityPoliciesResponse.
+        r"""Gets the request_id of this ListSystemSecurityPoliciesResponse.
 
         请求ID。  注：自动生成 。
 
@@ -84,7 +84,7 @@ class ListSystemSecurityPoliciesResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListSystemSecurityPoliciesResponse.
+        r"""Sets the request_id of this ListSystemSecurityPoliciesResponse.
 
         请求ID。  注：自动生成 。
 

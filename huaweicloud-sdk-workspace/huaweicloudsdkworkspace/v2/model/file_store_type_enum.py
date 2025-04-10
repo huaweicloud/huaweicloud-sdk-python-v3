@@ -27,7 +27,7 @@ class FileStoreTypeEnum:
     }
 
     def __init__(self):
-        """FileStoreTypeEnum
+        r"""FileStoreTypeEnum
 
         The model defined in huaweicloud sdk
 

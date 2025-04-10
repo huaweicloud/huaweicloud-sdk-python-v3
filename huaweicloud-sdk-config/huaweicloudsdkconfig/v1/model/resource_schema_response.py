@@ -27,7 +27,7 @@ class ResourceSchemaResponse:
     }
 
     def __init__(self, type=None, schema=None):
-        """ResourceSchemaResponse
+        r"""ResourceSchemaResponse
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ResourceSchemaResponse:
 
     @property
     def type(self):
-        """Gets the type of this ResourceSchemaResponse.
+        r"""Gets the type of this ResourceSchemaResponse.
 
         资源类型.
 
@@ -61,7 +61,7 @@ class ResourceSchemaResponse:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this ResourceSchemaResponse.
+        r"""Sets the type of this ResourceSchemaResponse.
 
         资源类型.
 
@@ -72,7 +72,7 @@ class ResourceSchemaResponse:
 
     @property
     def schema(self):
-        """Gets the schema of this ResourceSchemaResponse.
+        r"""Gets the schema of this ResourceSchemaResponse.
 
         schema 内容.
 
@@ -83,7 +83,7 @@ class ResourceSchemaResponse:
 
     @schema.setter
     def schema(self, schema):
-        """Sets the schema of this ResourceSchemaResponse.
+        r"""Sets the schema of this ResourceSchemaResponse.
 
         schema 内容.
 

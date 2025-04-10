@@ -26,7 +26,7 @@ class ListFlowLogsResponse(SdkResponse):
     }
 
     def __init__(self, flow_logs=None):
-        """ListFlowLogsResponse
+        r"""ListFlowLogsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListFlowLogsResponse(SdkResponse):
 
     @property
     def flow_logs(self):
-        """Gets the flow_logs of this ListFlowLogsResponse.
+        r"""Gets the flow_logs of this ListFlowLogsResponse.
 
         flow_log对象列表
 
@@ -55,7 +55,7 @@ class ListFlowLogsResponse(SdkResponse):
 
     @flow_logs.setter
     def flow_logs(self, flow_logs):
-        """Sets the flow_logs of this ListFlowLogsResponse.
+        r"""Sets the flow_logs of this ListFlowLogsResponse.
 
         flow_log对象列表
 

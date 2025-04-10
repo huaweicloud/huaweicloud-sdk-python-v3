@@ -25,7 +25,7 @@ class ListPayPerUseCustomerResourcesRequest:
     }
 
     def __init__(self, body=None):
-        """ListPayPerUseCustomerResourcesRequest
+        r"""ListPayPerUseCustomerResourcesRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ListPayPerUseCustomerResourcesRequest:
 
     @property
     def body(self):
-        """Gets the body of this ListPayPerUseCustomerResourcesRequest.
+        r"""Gets the body of this ListPayPerUseCustomerResourcesRequest.
 
         :return: The body of this ListPayPerUseCustomerResourcesRequest.
         :rtype: :class:`huaweicloudsdkbssintl.v2.QueryResourcesReq`
@@ -52,7 +52,7 @@ class ListPayPerUseCustomerResourcesRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListPayPerUseCustomerResourcesRequest.
+        r"""Sets the body of this ListPayPerUseCustomerResourcesRequest.
 
         :param body: The body of this ListPayPerUseCustomerResourcesRequest.
         :type body: :class:`huaweicloudsdkbssintl.v2.QueryResourcesReq`

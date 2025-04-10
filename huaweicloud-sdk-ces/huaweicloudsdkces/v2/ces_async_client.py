@@ -34,7 +34,7 @@ class CesAsyncClient(Client):
         return client_builder
 
     def add_alarm_rule_resources_async(self, request):
-        """批量增加告警规则资源
+        r"""批量增加告警规则资源
 
         批量增加告警规则资源(资源分组类型的告警规则不支持)，资源分组类型的修改请使用资源分组管理相关接口
         
@@ -101,7 +101,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def batch_create_resources_async(self, request):
-        """自定义资源分组批量增加关联资源
+        r"""自定义资源分组批量增加关联资源
 
         给自定义资源分组,即类型为手动添加的资源分组,批量增加关联资源
         
@@ -168,7 +168,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def batch_delete_alarm_rules_async(self, request):
-        """批量删除告警规则
+        r"""批量删除告警规则
 
         批量删除告警规则V2接口
         
@@ -233,7 +233,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def batch_delete_alarm_templates_async(self, request):
-        """批量删除自定义告警模板
+        r"""批量删除自定义告警模板
 
         批量删除自定义告警模板
         
@@ -298,7 +298,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def batch_delete_notification_masks_async(self, request):
-        """批量删除告警通知屏蔽规则
+        r"""批量删除告警通知屏蔽规则
 
         批量删除告警通知屏蔽规则
         
@@ -363,7 +363,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def batch_delete_one_click_alarms_async(self, request):
-        """批量删除一键告警
+        r"""批量删除一键告警
 
         批量删除一键告警
         
@@ -428,7 +428,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def batch_delete_resource_groups_async(self, request):
-        """批量删除资源分组
+        r"""批量删除资源分组
 
         批量删除资源分组
         
@@ -493,7 +493,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def batch_delete_resources_async(self, request):
-        """自定义资源分组批量删除关联资源
+        r"""自定义资源分组批量删除关联资源
 
         给自定义资源分组,即类型为手动添加的资源分组,批量删除关联资源
         
@@ -560,7 +560,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def batch_enable_alarm_rules_async(self, request):
-        """批量启停告警规则
+        r"""批量启停告警规则
 
         批量启停告警规则
         
@@ -625,7 +625,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def batch_update_notification_mask_time_async(self, request):
-        """批量修改告警通知屏蔽规则的屏蔽时间
+        r"""批量修改告警通知屏蔽规则的屏蔽时间
 
         批量修改告警通知屏蔽规则的屏蔽时间
         
@@ -690,7 +690,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def batch_update_notification_masks_async(self, request):
-        """批量设置告警通知屏蔽规则
+        r"""批量设置告警通知屏蔽规则
 
         批量设置告警通知屏蔽规则
         
@@ -755,7 +755,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def batch_update_one_click_alarm_policies_enabled_state_async(self, request):
-        """批量修改一键告警关联告警规则策略的启用状态
+        r"""批量修改一键告警关联告警规则策略的启用状态
 
         批量修改一键告警关联告警规则策略的启用状态
         
@@ -824,7 +824,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def batch_update_one_click_alarms_enabled_state_async(self, request):
-        """批量修改一键告警关联告警规则的启用状态
+        r"""批量修改一键告警关联告警规则的启用状态
 
         批量修改一键告警关联告警规则的启用状态
         
@@ -891,7 +891,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def batch_update_widgets_async(self, request):
-        """批量更新监控视图
+        r"""批量更新监控视图
 
         批量更新监控视图
         
@@ -956,7 +956,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def create_alarm_rules_async(self, request):
-        """创建告警规则
+        r"""创建告警规则
 
         创建告警规则
         
@@ -1021,7 +1021,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def create_alarm_template_async(self, request):
-        """创建自定义告警模板
+        r"""创建自定义告警模板
 
         创建自定义告警模板
         
@@ -1086,7 +1086,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def create_dashboard_widgets_async(self, request):
-        """创建/复制/批量创建监控视图到指定的监控看板
+        r"""创建/复制/批量创建监控视图到指定的监控看板
 
         创建/复制/批量创建监控视图到指定的监控看板
         
@@ -1153,7 +1153,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def create_one_click_alarm_async(self, request):
-        """创建一键告警
+        r"""创建一键告警
 
         创建一键告警
         
@@ -1218,7 +1218,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def create_one_dashboard_async(self, request):
-        """创建/复制监控看板
+        r"""创建/复制监控看板
 
         创建/复制监控看板
         
@@ -1283,7 +1283,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def create_resource_group_async(self, request):
-        """创建资源分组
+        r"""创建资源分组
 
         创建资源分组
         
@@ -1348,7 +1348,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def delete_alarm_rule_resources_async(self, request):
-        """批量删除告警规则资源
+        r"""批量删除告警规则资源
 
         批量删除告警规则资源（资源分组类型的告警规则不支持），资源分组类型的修改请使用资源分组管理相关接口
         
@@ -1415,7 +1415,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def delete_dashboards_async(self, request):
-        """批量删除监控看板
+        r"""批量删除监控看板
 
         批量删除监控看板
         
@@ -1480,7 +1480,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def delete_one_widget_async(self, request):
-        """删除指定监控视图
+        r"""删除指定监控视图
 
         删除指定监控视图
         
@@ -1545,7 +1545,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def list_agent_dimension_info_async(self, request):
-        """查询主机监控维度指标信息
+        r"""查询主机监控维度指标信息
 
         根据ECS/BMS资源ID查询磁盘、挂载点、进程、显卡、RAID控制器维度指标信息。
         
@@ -1618,7 +1618,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def list_alarm_histories_async(self, request):
-        """查询告警记录列表
+        r"""查询告警记录列表
 
         查询告警记录列表
         
@@ -1707,7 +1707,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def list_alarm_rule_policies_async(self, request):
-        """查询告警规则策略列表
+        r"""查询告警规则策略列表
 
         根据告警规则ID查询策略列表
         
@@ -1776,7 +1776,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def list_alarm_rule_resources_async(self, request):
-        """查询告警规则资源列表
+        r"""查询告警规则资源列表
 
         根据告警规则ID查询告警规则资源列表
         
@@ -1845,7 +1845,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def list_alarm_rules_async(self, request):
-        """查询告警规则列表
+        r"""查询告警规则列表
 
         查询告警规则列表
         
@@ -1922,7 +1922,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def list_alarm_template_association_alarms_async(self, request):
-        """查询告警模板关联的告警规则列表
+        r"""查询告警模板关联的告警规则列表
 
         查询告警模板关联的告警规则列表
         
@@ -1991,7 +1991,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def list_alarm_templates_async(self, request):
-        """查询告警模板列表
+        r"""查询告警模板列表
 
         查询告警模板列表
         
@@ -2066,7 +2066,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def list_ces_target_project_tags_async(self, request):
-        """查询CES指定项目指定资源类型标签列表
+        r"""查询CES指定项目指定资源类型标签列表
 
         查询CES指定项目指定资源类型标签列表。
         
@@ -2131,7 +2131,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def list_dashboard_infos_async(self, request):
-        """查询监控看板列表
+        r"""查询监控看板列表
 
         查询监控看板列表
         
@@ -2202,7 +2202,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def list_dashboard_widgets_async(self, request):
-        """查询指定监控看板下的监控视图列表
+        r"""查询指定监控看板下的监控视图列表
 
         查询指定监控看板下的监控视图列表
         
@@ -2267,7 +2267,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def list_notification_mask_resources_async(self, request):
-        """查询告警通知屏蔽资源列表
+        r"""查询告警通知屏蔽资源列表
 
         查询告警通知屏蔽资源列表
         
@@ -2336,7 +2336,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def list_notification_masks_async(self, request):
-        """查询告警通知屏蔽列表
+        r"""查询告警通知屏蔽列表
 
         批量查询指定类型的通知屏蔽规则，目前最多支持100个通知屏蔽规则的批量查询。
         
@@ -2405,7 +2405,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def list_one_click_alarm_rules_async(self, request):
-        """查询一键告警关联告警规则列表
+        r"""查询一键告警关联告警规则列表
 
         查询一键告警关联告警规则列表
         
@@ -2470,7 +2470,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def list_one_click_alarms_async(self, request):
-        """查询一键告警列表
+        r"""查询一键告警列表
 
         查询一键告警列表
         
@@ -2533,7 +2533,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def list_resource_groups_async(self, request):
-        """查询资源分组列表
+        r"""查询资源分组列表
 
         查询资源分组列表
         
@@ -2608,7 +2608,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def list_resource_groups_services_resources_async(self, request):
-        """查询资源分组下指定服务类别特定维度的资源列表
+        r"""查询资源分组下指定服务类别特定维度的资源列表
 
         查询资源分组下指定服务类别特定维度的资源列表
         
@@ -2685,7 +2685,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def show_alarm_template_async(self, request):
-        """查询告警模板详情
+        r"""查询告警模板详情
 
         查询告警模板详情
         
@@ -2750,7 +2750,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def show_resource_group_async(self, request):
-        """查询指定资源分组详情
+        r"""查询指定资源分组详情
 
         查询指定资源分组详情
         
@@ -2815,7 +2815,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def show_widget_async(self, request):
-        """查询指定监控视图信息
+        r"""查询指定监控视图信息
 
         查询指定监控视图信息
         
@@ -2880,7 +2880,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def update_alarm_notifications_async(self, request):
-        """修改告警规则告警通知信息
+        r"""修改告警规则告警通知信息
 
         修改告警规则告警通知信息，告警策略&amp;资源请使用对应接口
         
@@ -2947,7 +2947,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def update_alarm_rule_policies_async(self, request):
-        """修改告警规则策略(全量修改)
+        r"""修改告警规则策略(全量修改)
 
         修改告警规则策略(全量修改)
         
@@ -3014,7 +3014,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def update_alarm_template_async(self, request):
-        """修改自定义告警模板
+        r"""修改自定义告警模板
 
         修改自定义告警模板
         
@@ -3081,7 +3081,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def update_dashboard_async(self, request):
-        """修改监控看板
+        r"""修改监控看板
 
         修改监控看板
         
@@ -3148,7 +3148,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def update_notification_mask_async(self, request):
-        """修改告警通知屏蔽规则
+        r"""修改告警通知屏蔽规则
 
         修改告警通知屏蔽规则
         
@@ -3215,7 +3215,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def update_one_click_alarm_notifications_async(self, request):
-        """批量修改开启状态的一键告警关联告警规则的告警通知
+        r"""批量修改开启状态的一键告警关联告警规则的告警通知
 
         批量修改开启状态的一键告警关联告警规则的告警通知
         
@@ -3282,7 +3282,7 @@ class CesAsyncClient(Client):
         return http_info
 
     def update_resource_group_async(self, request):
-        """修改资源分组
+        r"""修改资源分组
 
         修改资源分组
         

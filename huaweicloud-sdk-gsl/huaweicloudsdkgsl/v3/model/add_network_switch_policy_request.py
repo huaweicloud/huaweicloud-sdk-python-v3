@@ -25,7 +25,7 @@ class AddNetworkSwitchPolicyRequest:
     }
 
     def __init__(self, body=None):
-        """AddNetworkSwitchPolicyRequest
+        r"""AddNetworkSwitchPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class AddNetworkSwitchPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this AddNetworkSwitchPolicyRequest.
+        r"""Gets the body of this AddNetworkSwitchPolicyRequest.
 
         :return: The body of this AddNetworkSwitchPolicyRequest.
         :rtype: :class:`huaweicloudsdkgsl.v3.NetworkSwitchPolicyDTO`
@@ -52,7 +52,7 @@ class AddNetworkSwitchPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this AddNetworkSwitchPolicyRequest.
+        r"""Sets the body of this AddNetworkSwitchPolicyRequest.
 
         :param body: The body of this AddNetworkSwitchPolicyRequest.
         :type body: :class:`huaweicloudsdkgsl.v3.NetworkSwitchPolicyDTO`

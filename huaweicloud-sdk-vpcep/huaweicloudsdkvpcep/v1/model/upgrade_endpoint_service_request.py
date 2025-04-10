@@ -25,7 +25,7 @@ class UpgradeEndpointServiceRequest:
     }
 
     def __init__(self, vpc_endpoint_service_id=None):
-        """UpgradeEndpointServiceRequest
+        r"""UpgradeEndpointServiceRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpgradeEndpointServiceRequest:
 
     @property
     def vpc_endpoint_service_id(self):
-        """Gets the vpc_endpoint_service_id of this UpgradeEndpointServiceRequest.
+        r"""Gets the vpc_endpoint_service_id of this UpgradeEndpointServiceRequest.
 
         终端节点服务的ID。
 
@@ -53,7 +53,7 @@ class UpgradeEndpointServiceRequest:
 
     @vpc_endpoint_service_id.setter
     def vpc_endpoint_service_id(self, vpc_endpoint_service_id):
-        """Sets the vpc_endpoint_service_id of this UpgradeEndpointServiceRequest.
+        r"""Sets the vpc_endpoint_service_id of this UpgradeEndpointServiceRequest.
 
         终端节点服务的ID。
 

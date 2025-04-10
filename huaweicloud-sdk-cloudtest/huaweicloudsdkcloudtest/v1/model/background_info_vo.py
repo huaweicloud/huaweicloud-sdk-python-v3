@@ -31,7 +31,7 @@ class BackgroundInfoVo:
     }
 
     def __init__(self, project_uuid=None, cover_file_name=None, background_file_name=None, logo_file_name=None):
-        """BackgroundInfoVo
+        r"""BackgroundInfoVo
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class BackgroundInfoVo:
 
     @property
     def project_uuid(self):
-        """Gets the project_uuid of this BackgroundInfoVo.
+        r"""Gets the project_uuid of this BackgroundInfoVo.
 
         项目id
 
@@ -75,7 +75,7 @@ class BackgroundInfoVo:
 
     @project_uuid.setter
     def project_uuid(self, project_uuid):
-        """Sets the project_uuid of this BackgroundInfoVo.
+        r"""Sets the project_uuid of this BackgroundInfoVo.
 
         项目id
 
@@ -86,7 +86,7 @@ class BackgroundInfoVo:
 
     @property
     def cover_file_name(self):
-        """Gets the cover_file_name of this BackgroundInfoVo.
+        r"""Gets the cover_file_name of this BackgroundInfoVo.
 
         cover文件名称
 
@@ -97,7 +97,7 @@ class BackgroundInfoVo:
 
     @cover_file_name.setter
     def cover_file_name(self, cover_file_name):
-        """Sets the cover_file_name of this BackgroundInfoVo.
+        r"""Sets the cover_file_name of this BackgroundInfoVo.
 
         cover文件名称
 
@@ -108,7 +108,7 @@ class BackgroundInfoVo:
 
     @property
     def background_file_name(self):
-        """Gets the background_file_name of this BackgroundInfoVo.
+        r"""Gets the background_file_name of this BackgroundInfoVo.
 
         背景文件名称
 
@@ -119,7 +119,7 @@ class BackgroundInfoVo:
 
     @background_file_name.setter
     def background_file_name(self, background_file_name):
-        """Sets the background_file_name of this BackgroundInfoVo.
+        r"""Sets the background_file_name of this BackgroundInfoVo.
 
         背景文件名称
 
@@ -130,7 +130,7 @@ class BackgroundInfoVo:
 
     @property
     def logo_file_name(self):
-        """Gets the logo_file_name of this BackgroundInfoVo.
+        r"""Gets the logo_file_name of this BackgroundInfoVo.
 
         logo文件名称
 
@@ -141,7 +141,7 @@ class BackgroundInfoVo:
 
     @logo_file_name.setter
     def logo_file_name(self, logo_file_name):
-        """Sets the logo_file_name of this BackgroundInfoVo.
+        r"""Sets the logo_file_name of this BackgroundInfoVo.
 
         logo文件名称
 

@@ -30,7 +30,7 @@ class DeleteFacotrByIdResponse(SdkResponse):
     }
 
     def __init__(self, code=None, data=None, message=None):
-        """DeleteFacotrByIdResponse
+        r"""DeleteFacotrByIdResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class DeleteFacotrByIdResponse(SdkResponse):
 
     @property
     def code(self):
-        """Gets the code of this DeleteFacotrByIdResponse.
+        r"""Gets the code of this DeleteFacotrByIdResponse.
 
         :return: The code of this DeleteFacotrByIdResponse.
         :rtype: str
@@ -67,7 +67,7 @@ class DeleteFacotrByIdResponse(SdkResponse):
 
     @code.setter
     def code(self, code):
-        """Sets the code of this DeleteFacotrByIdResponse.
+        r"""Sets the code of this DeleteFacotrByIdResponse.
 
         :param code: The code of this DeleteFacotrByIdResponse.
         :type code: str
@@ -76,7 +76,7 @@ class DeleteFacotrByIdResponse(SdkResponse):
 
     @property
     def data(self):
-        """Gets the data of this DeleteFacotrByIdResponse.
+        r"""Gets the data of this DeleteFacotrByIdResponse.
 
         :return: The data of this DeleteFacotrByIdResponse.
         :rtype: object
@@ -85,7 +85,7 @@ class DeleteFacotrByIdResponse(SdkResponse):
 
     @data.setter
     def data(self, data):
-        """Sets the data of this DeleteFacotrByIdResponse.
+        r"""Sets the data of this DeleteFacotrByIdResponse.
 
         :param data: The data of this DeleteFacotrByIdResponse.
         :type data: object
@@ -94,7 +94,7 @@ class DeleteFacotrByIdResponse(SdkResponse):
 
     @property
     def message(self):
-        """Gets the message of this DeleteFacotrByIdResponse.
+        r"""Gets the message of this DeleteFacotrByIdResponse.
 
         :return: The message of this DeleteFacotrByIdResponse.
         :rtype: str
@@ -103,7 +103,7 @@ class DeleteFacotrByIdResponse(SdkResponse):
 
     @message.setter
     def message(self, message):
-        """Sets the message of this DeleteFacotrByIdResponse.
+        r"""Sets the message of this DeleteFacotrByIdResponse.
 
         :param message: The message of this DeleteFacotrByIdResponse.
         :type message: str

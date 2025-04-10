@@ -29,7 +29,7 @@ class CreateUserReqBody:
     }
 
     def __init__(self, name=None, description=None, enabled=None):
-        """CreateUserReqBody
+        r"""CreateUserReqBody
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class CreateUserReqBody:
 
     @property
     def name(self):
-        """Gets the name of this CreateUserReqBody.
+        r"""Gets the name of this CreateUserReqBody.
 
         IAM用户名，长度为1到64个字符，只包含字母、数字、\"_\"、\"-\"、\".\"和空格的字符串，且首位不能为数字。
 
@@ -66,7 +66,7 @@ class CreateUserReqBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CreateUserReqBody.
+        r"""Sets the name of this CreateUserReqBody.
 
         IAM用户名，长度为1到64个字符，只包含字母、数字、\"_\"、\"-\"、\".\"和空格的字符串，且首位不能为数字。
 
@@ -77,7 +77,7 @@ class CreateUserReqBody:
 
     @property
     def description(self):
-        """Gets the description of this CreateUserReqBody.
+        r"""Gets the description of this CreateUserReqBody.
 
         IAM用户描述信息，不能包含特定字符\"@\"、\"#\"、\"%\"、\"&\"、\"<\"、\">\"、\"\\\\\"、\"$\"、\"^\"和\"*\"的字符串。
 
@@ -88,7 +88,7 @@ class CreateUserReqBody:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this CreateUserReqBody.
+        r"""Sets the description of this CreateUserReqBody.
 
         IAM用户描述信息，不能包含特定字符\"@\"、\"#\"、\"%\"、\"&\"、\"<\"、\">\"、\"\\\\\"、\"$\"、\"^\"和\"*\"的字符串。
 
@@ -99,7 +99,7 @@ class CreateUserReqBody:
 
     @property
     def enabled(self):
-        """Gets the enabled of this CreateUserReqBody.
+        r"""Gets the enabled of this CreateUserReqBody.
 
         IAM用户是否启用。
 
@@ -110,7 +110,7 @@ class CreateUserReqBody:
 
     @enabled.setter
     def enabled(self, enabled):
-        """Sets the enabled of this CreateUserReqBody.
+        r"""Sets the enabled of this CreateUserReqBody.
 
         IAM用户是否启用。
 

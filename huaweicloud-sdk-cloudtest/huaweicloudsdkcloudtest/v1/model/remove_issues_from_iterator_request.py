@@ -29,7 +29,7 @@ class RemoveIssuesFromIteratorRequest:
     }
 
     def __init__(self, project_id=None, iterator_id=None, body=None):
-        """RemoveIssuesFromIteratorRequest
+        r"""RemoveIssuesFromIteratorRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class RemoveIssuesFromIteratorRequest:
 
     @property
     def project_id(self):
-        """Gets the project_id of this RemoveIssuesFromIteratorRequest.
+        r"""Gets the project_id of this RemoveIssuesFromIteratorRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -66,7 +66,7 @@ class RemoveIssuesFromIteratorRequest:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this RemoveIssuesFromIteratorRequest.
+        r"""Sets the project_id of this RemoveIssuesFromIteratorRequest.
 
         项目ID，固定长度32位字符（字母和数字）。
 
@@ -77,7 +77,7 @@ class RemoveIssuesFromIteratorRequest:
 
     @property
     def iterator_id(self):
-        """Gets the iterator_id of this RemoveIssuesFromIteratorRequest.
+        r"""Gets the iterator_id of this RemoveIssuesFromIteratorRequest.
 
         迭代uri
 
@@ -88,7 +88,7 @@ class RemoveIssuesFromIteratorRequest:
 
     @iterator_id.setter
     def iterator_id(self, iterator_id):
-        """Sets the iterator_id of this RemoveIssuesFromIteratorRequest.
+        r"""Sets the iterator_id of this RemoveIssuesFromIteratorRequest.
 
         迭代uri
 
@@ -99,7 +99,7 @@ class RemoveIssuesFromIteratorRequest:
 
     @property
     def body(self):
-        """Gets the body of this RemoveIssuesFromIteratorRequest.
+        r"""Gets the body of this RemoveIssuesFromIteratorRequest.
 
         :return: The body of this RemoveIssuesFromIteratorRequest.
         :rtype: :class:`huaweicloudsdkcloudtest.v1.RemoveIssuesInfo`
@@ -108,7 +108,7 @@ class RemoveIssuesFromIteratorRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this RemoveIssuesFromIteratorRequest.
+        r"""Sets the body of this RemoveIssuesFromIteratorRequest.
 
         :param body: The body of this RemoveIssuesFromIteratorRequest.
         :type body: :class:`huaweicloudsdkcloudtest.v1.RemoveIssuesInfo`

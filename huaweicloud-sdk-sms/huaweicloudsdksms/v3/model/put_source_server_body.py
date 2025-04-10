@@ -31,7 +31,7 @@ class PutSourceServerBody:
     }
 
     def __init__(self, name=None, migprojectid=None, disks=None, volume_groups=None):
-        """PutSourceServerBody
+        r"""PutSourceServerBody
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class PutSourceServerBody:
 
     @property
     def name(self):
-        """Gets the name of this PutSourceServerBody.
+        r"""Gets the name of this PutSourceServerBody.
 
         源端服务器修改后的名字
 
@@ -75,7 +75,7 @@ class PutSourceServerBody:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this PutSourceServerBody.
+        r"""Sets the name of this PutSourceServerBody.
 
         源端服务器修改后的名字
 
@@ -86,7 +86,7 @@ class PutSourceServerBody:
 
     @property
     def migprojectid(self):
-        """Gets the migprojectid of this PutSourceServerBody.
+        r"""Gets the migprojectid of this PutSourceServerBody.
 
         源端服务器修改后所属的迁移项目ID
 
@@ -97,7 +97,7 @@ class PutSourceServerBody:
 
     @migprojectid.setter
     def migprojectid(self, migprojectid):
-        """Sets the migprojectid of this PutSourceServerBody.
+        r"""Sets the migprojectid of this PutSourceServerBody.
 
         源端服务器修改后所属的迁移项目ID
 
@@ -108,7 +108,7 @@ class PutSourceServerBody:
 
     @property
     def disks(self):
-        """Gets the disks of this PutSourceServerBody.
+        r"""Gets the disks of this PutSourceServerBody.
 
         磁盘
 
@@ -119,7 +119,7 @@ class PutSourceServerBody:
 
     @disks.setter
     def disks(self, disks):
-        """Sets the disks of this PutSourceServerBody.
+        r"""Sets the disks of this PutSourceServerBody.
 
         磁盘
 
@@ -130,7 +130,7 @@ class PutSourceServerBody:
 
     @property
     def volume_groups(self):
-        """Gets the volume_groups of this PutSourceServerBody.
+        r"""Gets the volume_groups of this PutSourceServerBody.
 
         卷组
 
@@ -141,7 +141,7 @@ class PutSourceServerBody:
 
     @volume_groups.setter
     def volume_groups(self, volume_groups):
-        """Sets the volume_groups of this PutSourceServerBody.
+        r"""Sets the volume_groups of this PutSourceServerBody.
 
         卷组
 

@@ -26,7 +26,7 @@ class ListInfluxdbSlowLogsResponse(SdkResponse):
     }
 
     def __init__(self, slow_logs=None):
-        """ListInfluxdbSlowLogsResponse
+        r"""ListInfluxdbSlowLogsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListInfluxdbSlowLogsResponse(SdkResponse):
 
     @property
     def slow_logs(self):
-        """Gets the slow_logs of this ListInfluxdbSlowLogsResponse.
+        r"""Gets the slow_logs of this ListInfluxdbSlowLogsResponse.
 
         Influxdb慢日志列表
 
@@ -55,7 +55,7 @@ class ListInfluxdbSlowLogsResponse(SdkResponse):
 
     @slow_logs.setter
     def slow_logs(self, slow_logs):
-        """Sets the slow_logs of this ListInfluxdbSlowLogsResponse.
+        r"""Sets the slow_logs of this ListInfluxdbSlowLogsResponse.
 
         Influxdb慢日志列表
 

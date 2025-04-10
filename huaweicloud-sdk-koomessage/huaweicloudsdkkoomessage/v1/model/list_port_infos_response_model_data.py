@@ -47,7 +47,7 @@ class ListPortInfosResponseModelData:
     }
 
     def __init__(self, id=None, create_time=None, pub_id=None, port=None, sign=None, authorization_files=None, pub_name=None, port_type=None, sign_check=None, province=None, is_bind=None, pub_list=None):
-        """ListPortInfosResponseModelData
+        r"""ListPortInfosResponseModelData
 
         The model defined in huaweicloud sdk
 
@@ -120,7 +120,7 @@ class ListPortInfosResponseModelData:
 
     @property
     def id(self):
-        """Gets the id of this ListPortInfosResponseModelData.
+        r"""Gets the id of this ListPortInfosResponseModelData.
 
         主键ID。
 
@@ -131,7 +131,7 @@ class ListPortInfosResponseModelData:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this ListPortInfosResponseModelData.
+        r"""Sets the id of this ListPortInfosResponseModelData.
 
         主键ID。
 
@@ -142,7 +142,7 @@ class ListPortInfosResponseModelData:
 
     @property
     def create_time(self):
-        """Gets the create_time of this ListPortInfosResponseModelData.
+        r"""Gets the create_time of this ListPortInfosResponseModelData.
 
         创建时间，格式：yyyy-MM-ddTHH:mm:ssZ。
 
@@ -153,7 +153,7 @@ class ListPortInfosResponseModelData:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this ListPortInfosResponseModelData.
+        r"""Sets the create_time of this ListPortInfosResponseModelData.
 
         创建时间，格式：yyyy-MM-ddTHH:mm:ssZ。
 
@@ -164,7 +164,7 @@ class ListPortInfosResponseModelData:
 
     @property
     def pub_id(self):
-        """Gets the pub_id of this ListPortInfosResponseModelData.
+        r"""Gets the pub_id of this ListPortInfosResponseModelData.
 
         服务号ID，在通道号列表显示为null。
 
@@ -175,7 +175,7 @@ class ListPortInfosResponseModelData:
 
     @pub_id.setter
     def pub_id(self, pub_id):
-        """Sets the pub_id of this ListPortInfosResponseModelData.
+        r"""Sets the pub_id of this ListPortInfosResponseModelData.
 
         服务号ID，在通道号列表显示为null。
 
@@ -186,7 +186,7 @@ class ListPortInfosResponseModelData:
 
     @property
     def port(self):
-        """Gets the port of this ListPortInfosResponseModelData.
+        r"""Gets the port of this ListPortInfosResponseModelData.
 
         通道号。 
 
@@ -197,7 +197,7 @@ class ListPortInfosResponseModelData:
 
     @port.setter
     def port(self, port):
-        """Sets the port of this ListPortInfosResponseModelData.
+        r"""Sets the port of this ListPortInfosResponseModelData.
 
         通道号。 
 
@@ -208,7 +208,7 @@ class ListPortInfosResponseModelData:
 
     @property
     def sign(self):
-        """Gets the sign of this ListPortInfosResponseModelData.
+        r"""Gets the sign of this ListPortInfosResponseModelData.
 
         签名数组。  - 查询通道号列表时，该项为通道号签名列表  - 查询绑定关系时，该项为通道号绑定签名列表 
 
@@ -219,7 +219,7 @@ class ListPortInfosResponseModelData:
 
     @sign.setter
     def sign(self, sign):
-        """Sets the sign of this ListPortInfosResponseModelData.
+        r"""Sets the sign of this ListPortInfosResponseModelData.
 
         签名数组。  - 查询通道号列表时，该项为通道号签名列表  - 查询绑定关系时，该项为通道号绑定签名列表 
 
@@ -230,7 +230,7 @@ class ListPortInfosResponseModelData:
 
     @property
     def authorization_files(self):
-        """Gets the authorization_files of this ListPortInfosResponseModelData.
+        r"""Gets the authorization_files of this ListPortInfosResponseModelData.
 
         授权证明图片，key是上传的图片ID，value是图片对应的URL。
 
@@ -241,7 +241,7 @@ class ListPortInfosResponseModelData:
 
     @authorization_files.setter
     def authorization_files(self, authorization_files):
-        """Sets the authorization_files of this ListPortInfosResponseModelData.
+        r"""Sets the authorization_files of this ListPortInfosResponseModelData.
 
         授权证明图片，key是上传的图片ID，value是图片对应的URL。
 
@@ -252,7 +252,7 @@ class ListPortInfosResponseModelData:
 
     @property
     def pub_name(self):
-        """Gets the pub_name of this ListPortInfosResponseModelData.
+        r"""Gets the pub_name of this ListPortInfosResponseModelData.
 
         服务号名称，查询通道号列表时该项为null。
 
@@ -263,7 +263,7 @@ class ListPortInfosResponseModelData:
 
     @pub_name.setter
     def pub_name(self, pub_name):
-        """Sets the pub_name of this ListPortInfosResponseModelData.
+        r"""Sets the pub_name of this ListPortInfosResponseModelData.
 
         服务号名称，查询通道号列表时该项为null。
 
@@ -274,7 +274,7 @@ class ListPortInfosResponseModelData:
 
     @property
     def port_type(self):
-        """Gets the port_type of this ListPortInfosResponseModelData.
+        r"""Gets the port_type of this ListPortInfosResponseModelData.
 
         通道号类型。 - 1：普通 - 3：前缀号段 - 5：后缀号段  
 
@@ -285,7 +285,7 @@ class ListPortInfosResponseModelData:
 
     @port_type.setter
     def port_type(self, port_type):
-        """Sets the port_type of this ListPortInfosResponseModelData.
+        r"""Sets the port_type of this ListPortInfosResponseModelData.
 
         通道号类型。 - 1：普通 - 3：前缀号段 - 5：后缀号段  
 
@@ -296,7 +296,7 @@ class ListPortInfosResponseModelData:
 
     @property
     def sign_check(self):
-        """Gets the sign_check of this ListPortInfosResponseModelData.
+        r"""Gets the sign_check of this ListPortInfosResponseModelData.
 
         是否需要校验。  - 0：不校验 - 1：校验签名 
 
@@ -307,7 +307,7 @@ class ListPortInfosResponseModelData:
 
     @sign_check.setter
     def sign_check(self, sign_check):
-        """Sets the sign_check of this ListPortInfosResponseModelData.
+        r"""Sets the sign_check of this ListPortInfosResponseModelData.
 
         是否需要校验。  - 0：不校验 - 1：校验签名 
 
@@ -318,7 +318,7 @@ class ListPortInfosResponseModelData:
 
     @property
     def province(self):
-        """Gets the province of this ListPortInfosResponseModelData.
+        r"""Gets the province of this ListPortInfosResponseModelData.
 
         未绑定服务号时该项为null。
 
@@ -329,7 +329,7 @@ class ListPortInfosResponseModelData:
 
     @province.setter
     def province(self, province):
-        """Sets the province of this ListPortInfosResponseModelData.
+        r"""Sets the province of this ListPortInfosResponseModelData.
 
         未绑定服务号时该项为null。
 
@@ -340,7 +340,7 @@ class ListPortInfosResponseModelData:
 
     @property
     def is_bind(self):
-        """Gets the is_bind of this ListPortInfosResponseModelData.
+        r"""Gets the is_bind of this ListPortInfosResponseModelData.
 
         是否绑定。  - 0: 未绑定 - 1: 绑定 
 
@@ -351,7 +351,7 @@ class ListPortInfosResponseModelData:
 
     @is_bind.setter
     def is_bind(self, is_bind):
-        """Sets the is_bind of this ListPortInfosResponseModelData.
+        r"""Sets the is_bind of this ListPortInfosResponseModelData.
 
         是否绑定。  - 0: 未绑定 - 1: 绑定 
 
@@ -362,7 +362,7 @@ class ListPortInfosResponseModelData:
 
     @property
     def pub_list(self):
-        """Gets the pub_list of this ListPortInfosResponseModelData.
+        r"""Gets the pub_list of this ListPortInfosResponseModelData.
 
         绑定的服务号列表。  > 以JSON列表返回，格式： > [{\"pub_name\":\"服务号名称\",\"pub_reference\":\"服务号备注\"}]。 
 
@@ -373,7 +373,7 @@ class ListPortInfosResponseModelData:
 
     @pub_list.setter
     def pub_list(self, pub_list):
-        """Sets the pub_list of this ListPortInfosResponseModelData.
+        r"""Sets the pub_list of this ListPortInfosResponseModelData.
 
         绑定的服务号列表。  > 以JSON列表返回，格式： > [{\"pub_name\":\"服务号名称\",\"pub_reference\":\"服务号备注\"}]。 
 

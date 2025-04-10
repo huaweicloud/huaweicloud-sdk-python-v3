@@ -25,7 +25,7 @@ class PutCustomPolicyToPermissionSetReqBody:
     }
 
     def __init__(self, custom_policy=None):
-        """PutCustomPolicyToPermissionSetReqBody
+        r"""PutCustomPolicyToPermissionSetReqBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class PutCustomPolicyToPermissionSetReqBody:
 
     @property
     def custom_policy(self):
-        """Gets the custom_policy of this PutCustomPolicyToPermissionSetReqBody.
+        r"""Gets the custom_policy of this PutCustomPolicyToPermissionSetReqBody.
 
         要附加到权限集的自定义身份策略
 
@@ -53,7 +53,7 @@ class PutCustomPolicyToPermissionSetReqBody:
 
     @custom_policy.setter
     def custom_policy(self, custom_policy):
-        """Sets the custom_policy of this PutCustomPolicyToPermissionSetReqBody.
+        r"""Sets the custom_policy of this PutCustomPolicyToPermissionSetReqBody.
 
         要附加到权限集的自定义身份策略
 

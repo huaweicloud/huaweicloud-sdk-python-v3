@@ -27,7 +27,7 @@ class ListEnabledControlsRequest:
     }
 
     def __init__(self, limit=None, marker=None):
-        """ListEnabledControlsRequest
+        r"""ListEnabledControlsRequest
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ListEnabledControlsRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListEnabledControlsRequest.
+        r"""Gets the limit of this ListEnabledControlsRequest.
 
         分页页面的最大值。
 
@@ -61,7 +61,7 @@ class ListEnabledControlsRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListEnabledControlsRequest.
+        r"""Sets the limit of this ListEnabledControlsRequest.
 
         分页页面的最大值。
 
@@ -72,7 +72,7 @@ class ListEnabledControlsRequest:
 
     @property
     def marker(self):
-        """Gets the marker of this ListEnabledControlsRequest.
+        r"""Gets the marker of this ListEnabledControlsRequest.
 
         页面标记。
 
@@ -83,7 +83,7 @@ class ListEnabledControlsRequest:
 
     @marker.setter
     def marker(self, marker):
-        """Sets the marker of this ListEnabledControlsRequest.
+        r"""Sets the marker of this ListEnabledControlsRequest.
 
         页面标记。
 

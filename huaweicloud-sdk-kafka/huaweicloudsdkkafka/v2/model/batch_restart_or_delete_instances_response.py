@@ -26,7 +26,7 @@ class BatchRestartOrDeleteInstancesResponse(SdkResponse):
     }
 
     def __init__(self, results=None):
-        """BatchRestartOrDeleteInstancesResponse
+        r"""BatchRestartOrDeleteInstancesResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class BatchRestartOrDeleteInstancesResponse(SdkResponse):
 
     @property
     def results(self):
-        """Gets the results of this BatchRestartOrDeleteInstancesResponse.
+        r"""Gets the results of this BatchRestartOrDeleteInstancesResponse.
 
         修改实例的结果。
 
@@ -55,7 +55,7 @@ class BatchRestartOrDeleteInstancesResponse(SdkResponse):
 
     @results.setter
     def results(self, results):
-        """Sets the results of this BatchRestartOrDeleteInstancesResponse.
+        r"""Sets the results of this BatchRestartOrDeleteInstancesResponse.
 
         修改实例的结果。
 

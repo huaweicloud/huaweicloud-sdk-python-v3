@@ -26,7 +26,7 @@ class ListHostOverviewResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListHostOverviewResponse
+        r"""ListHostOverviewResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListHostOverviewResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListHostOverviewResponse.
+        r"""Gets the body of this ListHostOverviewResponse.
 
         openApi查询主机概览
 
@@ -55,7 +55,7 @@ class ListHostOverviewResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListHostOverviewResponse.
+        r"""Sets the body of this ListHostOverviewResponse.
 
         openApi查询主机概览
 

@@ -25,7 +25,7 @@ class ListScalingTagInfosByTenantIdRequest:
     }
 
     def __init__(self, resource_type=None):
-        """ListScalingTagInfosByTenantIdRequest
+        r"""ListScalingTagInfosByTenantIdRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class ListScalingTagInfosByTenantIdRequest:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this ListScalingTagInfosByTenantIdRequest.
+        r"""Gets the resource_type of this ListScalingTagInfosByTenantIdRequest.
 
         资源类型，枚举类：scaling_group_tag。scaling_group_tag表示资源类型为伸缩组。
 
@@ -53,7 +53,7 @@ class ListScalingTagInfosByTenantIdRequest:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this ListScalingTagInfosByTenantIdRequest.
+        r"""Sets the resource_type of this ListScalingTagInfosByTenantIdRequest.
 
         资源类型，枚举类：scaling_group_tag。scaling_group_tag表示资源类型为伸缩组。
 

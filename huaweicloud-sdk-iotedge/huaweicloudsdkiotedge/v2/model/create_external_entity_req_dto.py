@@ -33,7 +33,7 @@ class CreateExternalEntityReqDTO:
     }
 
     def __init__(self, external_id=None, protocol=None, connection_type=None, mqtt_connection_info=None, space_id=None):
-        """CreateExternalEntityReqDTO
+        r"""CreateExternalEntityReqDTO
 
         The model defined in huaweicloud sdk
 
@@ -68,7 +68,7 @@ class CreateExternalEntityReqDTO:
 
     @property
     def external_id(self):
-        """Gets the external_id of this CreateExternalEntityReqDTO.
+        r"""Gets the external_id of this CreateExternalEntityReqDTO.
 
         外部实体Id，节点下唯一
 
@@ -79,7 +79,7 @@ class CreateExternalEntityReqDTO:
 
     @external_id.setter
     def external_id(self, external_id):
-        """Sets the external_id of this CreateExternalEntityReqDTO.
+        r"""Sets the external_id of this CreateExternalEntityReqDTO.
 
         外部实体Id，节点下唯一
 
@@ -90,7 +90,7 @@ class CreateExternalEntityReqDTO:
 
     @property
     def protocol(self):
-        """Gets the protocol of this CreateExternalEntityReqDTO.
+        r"""Gets the protocol of this CreateExternalEntityReqDTO.
 
         连接外部实体的协议类型
 
@@ -101,7 +101,7 @@ class CreateExternalEntityReqDTO:
 
     @protocol.setter
     def protocol(self, protocol):
-        """Sets the protocol of this CreateExternalEntityReqDTO.
+        r"""Sets the protocol of this CreateExternalEntityReqDTO.
 
         连接外部实体的协议类型
 
@@ -112,7 +112,7 @@ class CreateExternalEntityReqDTO:
 
     @property
     def connection_type(self):
-        """Gets the connection_type of this CreateExternalEntityReqDTO.
+        r"""Gets the connection_type of this CreateExternalEntityReqDTO.
 
         连接类型
 
@@ -123,7 +123,7 @@ class CreateExternalEntityReqDTO:
 
     @connection_type.setter
     def connection_type(self, connection_type):
-        """Sets the connection_type of this CreateExternalEntityReqDTO.
+        r"""Sets the connection_type of this CreateExternalEntityReqDTO.
 
         连接类型
 
@@ -134,7 +134,7 @@ class CreateExternalEntityReqDTO:
 
     @property
     def mqtt_connection_info(self):
-        """Gets the mqtt_connection_info of this CreateExternalEntityReqDTO.
+        r"""Gets the mqtt_connection_info of this CreateExternalEntityReqDTO.
 
         :return: The mqtt_connection_info of this CreateExternalEntityReqDTO.
         :rtype: :class:`huaweicloudsdkiotedge.v2.MqttConnectionInfo`
@@ -143,7 +143,7 @@ class CreateExternalEntityReqDTO:
 
     @mqtt_connection_info.setter
     def mqtt_connection_info(self, mqtt_connection_info):
-        """Sets the mqtt_connection_info of this CreateExternalEntityReqDTO.
+        r"""Sets the mqtt_connection_info of this CreateExternalEntityReqDTO.
 
         :param mqtt_connection_info: The mqtt_connection_info of this CreateExternalEntityReqDTO.
         :type mqtt_connection_info: :class:`huaweicloudsdkiotedge.v2.MqttConnectionInfo`
@@ -152,7 +152,7 @@ class CreateExternalEntityReqDTO:
 
     @property
     def space_id(self):
-        """Gets the space_id of this CreateExternalEntityReqDTO.
+        r"""Gets the space_id of this CreateExternalEntityReqDTO.
 
         资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数指定创建的外部实体归属到IoDA哪个资源空间下的边缘节点设备下，否则创建的外部实体将会归属到默认资源空间下对应的边缘节点下,对应于IoDA的app_id.
 
@@ -163,7 +163,7 @@ class CreateExternalEntityReqDTO:
 
     @space_id.setter
     def space_id(self, space_id):
-        """Sets the space_id of this CreateExternalEntityReqDTO.
+        r"""Sets the space_id of this CreateExternalEntityReqDTO.
 
         资源空间ID。此参数为非必选参数，存在多资源空间的用户需要使用该接口时，建议携带该参数指定创建的外部实体归属到IoDA哪个资源空间下的边缘节点设备下，否则创建的外部实体将会归属到默认资源空间下对应的边缘节点下,对应于IoDA的app_id.
 

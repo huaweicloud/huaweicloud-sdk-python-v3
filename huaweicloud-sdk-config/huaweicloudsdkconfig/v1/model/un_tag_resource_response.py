@@ -24,7 +24,7 @@ class UnTagResourceResponse(SdkResponse):
     }
 
     def __init__(self):
-        """UnTagResourceResponse
+        r"""UnTagResourceResponse
 
         The model defined in huaweicloud sdk
 

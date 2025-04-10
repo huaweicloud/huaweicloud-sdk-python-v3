@@ -29,7 +29,7 @@ class DeleteMemberInviteRequestBody:
     }
 
     def __init__(self, bcs_id=None, channel_name=None, invited_userinfo=None):
-        """DeleteMemberInviteRequestBody
+        r"""DeleteMemberInviteRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class DeleteMemberInviteRequestBody:
 
     @property
     def bcs_id(self):
-        """Gets the bcs_id of this DeleteMemberInviteRequestBody.
+        r"""Gets the bcs_id of this DeleteMemberInviteRequestBody.
 
         邀请实例id
 
@@ -65,7 +65,7 @@ class DeleteMemberInviteRequestBody:
 
     @bcs_id.setter
     def bcs_id(self, bcs_id):
-        """Sets the bcs_id of this DeleteMemberInviteRequestBody.
+        r"""Sets the bcs_id of this DeleteMemberInviteRequestBody.
 
         邀请实例id
 
@@ -76,7 +76,7 @@ class DeleteMemberInviteRequestBody:
 
     @property
     def channel_name(self):
-        """Gets the channel_name of this DeleteMemberInviteRequestBody.
+        r"""Gets the channel_name of this DeleteMemberInviteRequestBody.
 
         邀请加入的通道名
 
@@ -87,7 +87,7 @@ class DeleteMemberInviteRequestBody:
 
     @channel_name.setter
     def channel_name(self, channel_name):
-        """Sets the channel_name of this DeleteMemberInviteRequestBody.
+        r"""Sets the channel_name of this DeleteMemberInviteRequestBody.
 
         邀请加入的通道名
 
@@ -98,7 +98,7 @@ class DeleteMemberInviteRequestBody:
 
     @property
     def invited_userinfo(self):
-        """Gets the invited_userinfo of this DeleteMemberInviteRequestBody.
+        r"""Gets the invited_userinfo of this DeleteMemberInviteRequestBody.
 
         被邀请的用户列表，对应信息可通过获取联盟成员列表（ListMembers）接口查询，或被邀请方已加入联盟，或邀请状态为released时，需填写准确的被邀请方bcs实例id和邀请状态
 
@@ -109,7 +109,7 @@ class DeleteMemberInviteRequestBody:
 
     @invited_userinfo.setter
     def invited_userinfo(self, invited_userinfo):
-        """Sets the invited_userinfo of this DeleteMemberInviteRequestBody.
+        r"""Sets the invited_userinfo of this DeleteMemberInviteRequestBody.
 
         被邀请的用户列表，对应信息可通过获取联盟成员列表（ListMembers）接口查询，或被邀请方已加入联盟，或邀请状态为released时，需填写准确的被邀请方bcs实例id和邀请状态
 

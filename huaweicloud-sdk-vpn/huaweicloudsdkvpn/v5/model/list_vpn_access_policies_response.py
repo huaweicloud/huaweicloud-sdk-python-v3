@@ -32,7 +32,7 @@ class ListVpnAccessPoliciesResponse(SdkResponse):
     }
 
     def __init__(self, access_policies=None, total_count=None, page_info=None, request_id=None):
-        """ListVpnAccessPoliciesResponse
+        r"""ListVpnAccessPoliciesResponse
 
         The model defined in huaweicloud sdk
 
@@ -65,7 +65,7 @@ class ListVpnAccessPoliciesResponse(SdkResponse):
 
     @property
     def access_policies(self):
-        """Gets the access_policies of this ListVpnAccessPoliciesResponse.
+        r"""Gets the access_policies of this ListVpnAccessPoliciesResponse.
 
         访问资源策略信息
 
@@ -76,7 +76,7 @@ class ListVpnAccessPoliciesResponse(SdkResponse):
 
     @access_policies.setter
     def access_policies(self, access_policies):
-        """Sets the access_policies of this ListVpnAccessPoliciesResponse.
+        r"""Sets the access_policies of this ListVpnAccessPoliciesResponse.
 
         访问资源策略信息
 
@@ -87,7 +87,7 @@ class ListVpnAccessPoliciesResponse(SdkResponse):
 
     @property
     def total_count(self):
-        """Gets the total_count of this ListVpnAccessPoliciesResponse.
+        r"""Gets the total_count of this ListVpnAccessPoliciesResponse.
 
         总数
 
@@ -98,7 +98,7 @@ class ListVpnAccessPoliciesResponse(SdkResponse):
 
     @total_count.setter
     def total_count(self, total_count):
-        """Sets the total_count of this ListVpnAccessPoliciesResponse.
+        r"""Sets the total_count of this ListVpnAccessPoliciesResponse.
 
         总数
 
@@ -109,7 +109,7 @@ class ListVpnAccessPoliciesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListVpnAccessPoliciesResponse.
+        r"""Gets the page_info of this ListVpnAccessPoliciesResponse.
 
         :return: The page_info of this ListVpnAccessPoliciesResponse.
         :rtype: :class:`huaweicloudsdkvpn.v5.PageInfo`
@@ -118,7 +118,7 @@ class ListVpnAccessPoliciesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListVpnAccessPoliciesResponse.
+        r"""Sets the page_info of this ListVpnAccessPoliciesResponse.
 
         :param page_info: The page_info of this ListVpnAccessPoliciesResponse.
         :type page_info: :class:`huaweicloudsdkvpn.v5.PageInfo`
@@ -127,7 +127,7 @@ class ListVpnAccessPoliciesResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListVpnAccessPoliciesResponse.
+        r"""Gets the request_id of this ListVpnAccessPoliciesResponse.
 
         请求ID
 
@@ -138,7 +138,7 @@ class ListVpnAccessPoliciesResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListVpnAccessPoliciesResponse.
+        r"""Sets the request_id of this ListVpnAccessPoliciesResponse.
 
         请求ID
 

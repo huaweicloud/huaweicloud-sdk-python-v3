@@ -37,7 +37,7 @@ class DeleteFileRequest:
     }
 
     def __init__(self, x_repo_auth=None, namespace=None, project=None, path=None, ref=None, message=None, sha=None):
-        """DeleteFileRequest
+        r"""DeleteFileRequest
 
         The model defined in huaweicloud sdk
 
@@ -78,7 +78,7 @@ class DeleteFileRequest:
 
     @property
     def x_repo_auth(self):
-        """Gets the x_repo_auth of this DeleteFileRequest.
+        r"""Gets the x_repo_auth of this DeleteFileRequest.
 
         授权名称。
 
@@ -89,7 +89,7 @@ class DeleteFileRequest:
 
     @x_repo_auth.setter
     def x_repo_auth(self, x_repo_auth):
-        """Sets the x_repo_auth of this DeleteFileRequest.
+        r"""Sets the x_repo_auth of this DeleteFileRequest.
 
         授权名称。
 
@@ -100,7 +100,7 @@ class DeleteFileRequest:
 
     @property
     def namespace(self):
-        """Gets the namespace of this DeleteFileRequest.
+        r"""Gets the namespace of this DeleteFileRequest.
 
         命名空间ID或者URL编码名称。
 
@@ -111,7 +111,7 @@ class DeleteFileRequest:
 
     @namespace.setter
     def namespace(self, namespace):
-        """Sets the namespace of this DeleteFileRequest.
+        r"""Sets the namespace of this DeleteFileRequest.
 
         命名空间ID或者URL编码名称。
 
@@ -122,7 +122,7 @@ class DeleteFileRequest:
 
     @property
     def project(self):
-        """Gets the project of this DeleteFileRequest.
+        r"""Gets the project of this DeleteFileRequest.
 
         仓库项目ID，如果含有“/”，需要将“/”替换为“:”。
 
@@ -133,7 +133,7 @@ class DeleteFileRequest:
 
     @project.setter
     def project(self, project):
-        """Sets the project of this DeleteFileRequest.
+        r"""Sets the project of this DeleteFileRequest.
 
         仓库项目ID，如果含有“/”，需要将“/”替换为“:”。
 
@@ -144,7 +144,7 @@ class DeleteFileRequest:
 
     @property
     def path(self):
-        """Gets the path of this DeleteFileRequest.
+        r"""Gets the path of this DeleteFileRequest.
 
         文件路径，需要将“/”替换为“:”。
 
@@ -155,7 +155,7 @@ class DeleteFileRequest:
 
     @path.setter
     def path(self, path):
-        """Sets the path of this DeleteFileRequest.
+        r"""Sets the path of this DeleteFileRequest.
 
         文件路径，需要将“/”替换为“:”。
 
@@ -166,7 +166,7 @@ class DeleteFileRequest:
 
     @property
     def ref(self):
-        """Gets the ref of this DeleteFileRequest.
+        r"""Gets the ref of this DeleteFileRequest.
 
         分支名称或者tag标签名称或者commit sha。
 
@@ -177,7 +177,7 @@ class DeleteFileRequest:
 
     @ref.setter
     def ref(self, ref):
-        """Sets the ref of this DeleteFileRequest.
+        r"""Sets the ref of this DeleteFileRequest.
 
         分支名称或者tag标签名称或者commit sha。
 
@@ -188,7 +188,7 @@ class DeleteFileRequest:
 
     @property
     def message(self):
-        """Gets the message of this DeleteFileRequest.
+        r"""Gets the message of this DeleteFileRequest.
 
         提交描述。
 
@@ -199,7 +199,7 @@ class DeleteFileRequest:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this DeleteFileRequest.
+        r"""Sets the message of this DeleteFileRequest.
 
         提交描述。
 
@@ -210,7 +210,7 @@ class DeleteFileRequest:
 
     @property
     def sha(self):
-        """Gets the sha of this DeleteFileRequest.
+        r"""Gets the sha of this DeleteFileRequest.
 
         最后一次提交的commit sha值。
 
@@ -221,7 +221,7 @@ class DeleteFileRequest:
 
     @sha.setter
     def sha(self, sha):
-        """Sets the sha of this DeleteFileRequest.
+        r"""Sets the sha of this DeleteFileRequest.
 
         最后一次提交的commit sha值。
 

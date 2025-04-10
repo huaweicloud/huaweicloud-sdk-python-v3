@@ -31,7 +31,7 @@ class ConfirmDeploymentJobRequest:
     }
 
     def __init__(self, x_language=None, application_id=None, environment_tag=None, body=None):
-        """ConfirmDeploymentJobRequest
+        r"""ConfirmDeploymentJobRequest
 
         The model defined in huaweicloud sdk
 
@@ -62,7 +62,7 @@ class ConfirmDeploymentJobRequest:
 
     @property
     def x_language(self):
-        """Gets the x_language of this ConfirmDeploymentJobRequest.
+        r"""Gets the x_language of this ConfirmDeploymentJobRequest.
 
         语言类型 中文:zh-cn 英文:en-us
 
@@ -73,7 +73,7 @@ class ConfirmDeploymentJobRequest:
 
     @x_language.setter
     def x_language(self, x_language):
-        """Sets the x_language of this ConfirmDeploymentJobRequest.
+        r"""Sets the x_language of this ConfirmDeploymentJobRequest.
 
         语言类型 中文:zh-cn 英文:en-us
 
@@ -84,7 +84,7 @@ class ConfirmDeploymentJobRequest:
 
     @property
     def application_id(self):
-        """Gets the application_id of this ConfirmDeploymentJobRequest.
+        r"""Gets the application_id of this ConfirmDeploymentJobRequest.
 
         应用id
 
@@ -95,7 +95,7 @@ class ConfirmDeploymentJobRequest:
 
     @application_id.setter
     def application_id(self, application_id):
-        """Sets the application_id of this ConfirmDeploymentJobRequest.
+        r"""Sets the application_id of this ConfirmDeploymentJobRequest.
 
         应用id
 
@@ -106,7 +106,7 @@ class ConfirmDeploymentJobRequest:
 
     @property
     def environment_tag(self):
-        """Gets the environment_tag of this ConfirmDeploymentJobRequest.
+        r"""Gets the environment_tag of this ConfirmDeploymentJobRequest.
 
         环境标识
 
@@ -117,7 +117,7 @@ class ConfirmDeploymentJobRequest:
 
     @environment_tag.setter
     def environment_tag(self, environment_tag):
-        """Sets the environment_tag of this ConfirmDeploymentJobRequest.
+        r"""Sets the environment_tag of this ConfirmDeploymentJobRequest.
 
         环境标识
 
@@ -128,7 +128,7 @@ class ConfirmDeploymentJobRequest:
 
     @property
     def body(self):
-        """Gets the body of this ConfirmDeploymentJobRequest.
+        r"""Gets the body of this ConfirmDeploymentJobRequest.
 
         :return: The body of this ConfirmDeploymentJobRequest.
         :rtype: :class:`huaweicloudsdkdevstar.v1.DeploymentJobConfirmType`
@@ -137,7 +137,7 @@ class ConfirmDeploymentJobRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ConfirmDeploymentJobRequest.
+        r"""Sets the body of this ConfirmDeploymentJobRequest.
 
         :param body: The body of this ConfirmDeploymentJobRequest.
         :type body: :class:`huaweicloudsdkdevstar.v1.DeploymentJobConfirmType`

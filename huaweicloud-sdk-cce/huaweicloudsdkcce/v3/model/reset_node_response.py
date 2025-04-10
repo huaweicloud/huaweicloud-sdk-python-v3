@@ -26,7 +26,7 @@ class ResetNodeResponse(SdkResponse):
     }
 
     def __init__(self, jobid=None):
-        """ResetNodeResponse
+        r"""ResetNodeResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ResetNodeResponse(SdkResponse):
 
     @property
     def jobid(self):
-        """Gets the jobid of this ResetNodeResponse.
+        r"""Gets the jobid of this ResetNodeResponse.
 
         提交任务成功后返回的任务ID，用户可以使用该ID对任务执行情况进行查询。
 
@@ -55,7 +55,7 @@ class ResetNodeResponse(SdkResponse):
 
     @jobid.setter
     def jobid(self, jobid):
-        """Sets the jobid of this ResetNodeResponse.
+        r"""Sets the jobid of this ResetNodeResponse.
 
         提交任务成功后返回的任务ID，用户可以使用该ID对任务执行情况进行查询。
 

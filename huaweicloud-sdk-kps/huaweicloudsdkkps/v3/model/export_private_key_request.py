@@ -25,7 +25,7 @@ class ExportPrivateKeyRequest:
     }
 
     def __init__(self, body=None):
-        """ExportPrivateKeyRequest
+        r"""ExportPrivateKeyRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class ExportPrivateKeyRequest:
 
     @property
     def body(self):
-        """Gets the body of this ExportPrivateKeyRequest.
+        r"""Gets the body of this ExportPrivateKeyRequest.
 
         :return: The body of this ExportPrivateKeyRequest.
         :rtype: :class:`huaweicloudsdkkps.v3.ExportPrivateKeyRequestBody`
@@ -52,7 +52,7 @@ class ExportPrivateKeyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ExportPrivateKeyRequest.
+        r"""Sets the body of this ExportPrivateKeyRequest.
 
         :param body: The body of this ExportPrivateKeyRequest.
         :type body: :class:`huaweicloudsdkkps.v3.ExportPrivateKeyRequestBody`

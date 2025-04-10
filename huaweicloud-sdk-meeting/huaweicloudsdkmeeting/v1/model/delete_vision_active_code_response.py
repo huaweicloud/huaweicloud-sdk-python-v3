@@ -24,7 +24,7 @@ class DeleteVisionActiveCodeResponse(SdkResponse):
     }
 
     def __init__(self):
-        """DeleteVisionActiveCodeResponse
+        r"""DeleteVisionActiveCodeResponse
 
         The model defined in huaweicloud sdk
 

@@ -27,7 +27,7 @@ class ElbWhiteListResp:
     }
 
     def __init__(self, enable_white_list=None, white_list=None):
-        """ElbWhiteListResp
+        r"""ElbWhiteListResp
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class ElbWhiteListResp:
 
     @property
     def enable_white_list(self):
-        """Gets the enable_white_list of this ElbWhiteListResp.
+        r"""Gets the enable_white_list of this ElbWhiteListResp.
 
         是否开启公网访问控制。 - true: 开启公网访问控制。 - false: 关闭公网访问控制。
 
@@ -61,7 +61,7 @@ class ElbWhiteListResp:
 
     @enable_white_list.setter
     def enable_white_list(self, enable_white_list):
-        """Sets the enable_white_list of this ElbWhiteListResp.
+        r"""Sets the enable_white_list of this ElbWhiteListResp.
 
         是否开启公网访问控制。 - true: 开启公网访问控制。 - false: 关闭公网访问控制。
 
@@ -72,7 +72,7 @@ class ElbWhiteListResp:
 
     @property
     def white_list(self):
-        """Gets the white_list of this ElbWhiteListResp.
+        r"""Gets the white_list of this ElbWhiteListResp.
 
         公网访问白名单。
 
@@ -83,7 +83,7 @@ class ElbWhiteListResp:
 
     @white_list.setter
     def white_list(self, white_list):
-        """Sets the white_list of this ElbWhiteListResp.
+        r"""Sets the white_list of this ElbWhiteListResp.
 
         公网访问白名单。
 

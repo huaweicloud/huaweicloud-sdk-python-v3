@@ -27,7 +27,7 @@ class CreateSecurityResourcePermissionPolicyRequest:
     }
 
     def __init__(self, workspace=None, body=None):
-        """CreateSecurityResourcePermissionPolicyRequest
+        r"""CreateSecurityResourcePermissionPolicyRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateSecurityResourcePermissionPolicyRequest:
 
     @property
     def workspace(self):
-        """Gets the workspace of this CreateSecurityResourcePermissionPolicyRequest.
+        r"""Gets the workspace of this CreateSecurityResourcePermissionPolicyRequest.
 
         DataArts Studio工作空间ID
 
@@ -60,7 +60,7 @@ class CreateSecurityResourcePermissionPolicyRequest:
 
     @workspace.setter
     def workspace(self, workspace):
-        """Sets the workspace of this CreateSecurityResourcePermissionPolicyRequest.
+        r"""Sets the workspace of this CreateSecurityResourcePermissionPolicyRequest.
 
         DataArts Studio工作空间ID
 
@@ -71,7 +71,7 @@ class CreateSecurityResourcePermissionPolicyRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateSecurityResourcePermissionPolicyRequest.
+        r"""Gets the body of this CreateSecurityResourcePermissionPolicyRequest.
 
         :return: The body of this CreateSecurityResourcePermissionPolicyRequest.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.PermissionResourcePolicyCreateDTO`
@@ -80,7 +80,7 @@ class CreateSecurityResourcePermissionPolicyRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateSecurityResourcePermissionPolicyRequest.
+        r"""Sets the body of this CreateSecurityResourcePermissionPolicyRequest.
 
         :param body: The body of this CreateSecurityResourcePermissionPolicyRequest.
         :type body: :class:`huaweicloudsdkdataartsstudio.v1.PermissionResourcePolicyCreateDTO`

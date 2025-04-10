@@ -36,7 +36,7 @@ class ShowSecuritySensitiveDataDiagnoseResultResponse(SdkResponse):
     }
 
     def __init__(self, task_id=None, scanning=None, check_time=None, classification=None, rule=None, masking=None):
-        """ShowSecuritySensitiveDataDiagnoseResultResponse
+        r"""ShowSecuritySensitiveDataDiagnoseResultResponse
 
         The model defined in huaweicloud sdk
 
@@ -79,7 +79,7 @@ class ShowSecuritySensitiveDataDiagnoseResultResponse(SdkResponse):
 
     @property
     def task_id(self):
-        """Gets the task_id of this ShowSecuritySensitiveDataDiagnoseResultResponse.
+        r"""Gets the task_id of this ShowSecuritySensitiveDataDiagnoseResultResponse.
 
         诊断任务id
 
@@ -90,7 +90,7 @@ class ShowSecuritySensitiveDataDiagnoseResultResponse(SdkResponse):
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this ShowSecuritySensitiveDataDiagnoseResultResponse.
+        r"""Sets the task_id of this ShowSecuritySensitiveDataDiagnoseResultResponse.
 
         诊断任务id
 
@@ -101,7 +101,7 @@ class ShowSecuritySensitiveDataDiagnoseResultResponse(SdkResponse):
 
     @property
     def scanning(self):
-        """Gets the scanning of this ShowSecuritySensitiveDataDiagnoseResultResponse.
+        r"""Gets the scanning of this ShowSecuritySensitiveDataDiagnoseResultResponse.
 
         是否正在扫描
 
@@ -112,7 +112,7 @@ class ShowSecuritySensitiveDataDiagnoseResultResponse(SdkResponse):
 
     @scanning.setter
     def scanning(self, scanning):
-        """Sets the scanning of this ShowSecuritySensitiveDataDiagnoseResultResponse.
+        r"""Sets the scanning of this ShowSecuritySensitiveDataDiagnoseResultResponse.
 
         是否正在扫描
 
@@ -123,7 +123,7 @@ class ShowSecuritySensitiveDataDiagnoseResultResponse(SdkResponse):
 
     @property
     def check_time(self):
-        """Gets the check_time of this ShowSecuritySensitiveDataDiagnoseResultResponse.
+        r"""Gets the check_time of this ShowSecuritySensitiveDataDiagnoseResultResponse.
 
         最新检测时间。
 
@@ -134,7 +134,7 @@ class ShowSecuritySensitiveDataDiagnoseResultResponse(SdkResponse):
 
     @check_time.setter
     def check_time(self, check_time):
-        """Sets the check_time of this ShowSecuritySensitiveDataDiagnoseResultResponse.
+        r"""Sets the check_time of this ShowSecuritySensitiveDataDiagnoseResultResponse.
 
         最新检测时间。
 
@@ -145,7 +145,7 @@ class ShowSecuritySensitiveDataDiagnoseResultResponse(SdkResponse):
 
     @property
     def classification(self):
-        """Gets the classification of this ShowSecuritySensitiveDataDiagnoseResultResponse.
+        r"""Gets the classification of this ShowSecuritySensitiveDataDiagnoseResultResponse.
 
         :return: The classification of this ShowSecuritySensitiveDataDiagnoseResultResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ClassificationResult`
@@ -154,7 +154,7 @@ class ShowSecuritySensitiveDataDiagnoseResultResponse(SdkResponse):
 
     @classification.setter
     def classification(self, classification):
-        """Sets the classification of this ShowSecuritySensitiveDataDiagnoseResultResponse.
+        r"""Sets the classification of this ShowSecuritySensitiveDataDiagnoseResultResponse.
 
         :param classification: The classification of this ShowSecuritySensitiveDataDiagnoseResultResponse.
         :type classification: :class:`huaweicloudsdkdataartsstudio.v1.ClassificationResult`
@@ -163,7 +163,7 @@ class ShowSecuritySensitiveDataDiagnoseResultResponse(SdkResponse):
 
     @property
     def rule(self):
-        """Gets the rule of this ShowSecuritySensitiveDataDiagnoseResultResponse.
+        r"""Gets the rule of this ShowSecuritySensitiveDataDiagnoseResultResponse.
 
         :return: The rule of this ShowSecuritySensitiveDataDiagnoseResultResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.IdentificationRuleResult`
@@ -172,7 +172,7 @@ class ShowSecuritySensitiveDataDiagnoseResultResponse(SdkResponse):
 
     @rule.setter
     def rule(self, rule):
-        """Sets the rule of this ShowSecuritySensitiveDataDiagnoseResultResponse.
+        r"""Sets the rule of this ShowSecuritySensitiveDataDiagnoseResultResponse.
 
         :param rule: The rule of this ShowSecuritySensitiveDataDiagnoseResultResponse.
         :type rule: :class:`huaweicloudsdkdataartsstudio.v1.IdentificationRuleResult`
@@ -181,7 +181,7 @@ class ShowSecuritySensitiveDataDiagnoseResultResponse(SdkResponse):
 
     @property
     def masking(self):
-        """Gets the masking of this ShowSecuritySensitiveDataDiagnoseResultResponse.
+        r"""Gets the masking of this ShowSecuritySensitiveDataDiagnoseResultResponse.
 
         :return: The masking of this ShowSecuritySensitiveDataDiagnoseResultResponse.
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DataMaskingResult`
@@ -190,7 +190,7 @@ class ShowSecuritySensitiveDataDiagnoseResultResponse(SdkResponse):
 
     @masking.setter
     def masking(self, masking):
-        """Sets the masking of this ShowSecuritySensitiveDataDiagnoseResultResponse.
+        r"""Sets the masking of this ShowSecuritySensitiveDataDiagnoseResultResponse.
 
         :param masking: The masking of this ShowSecuritySensitiveDataDiagnoseResultResponse.
         :type masking: :class:`huaweicloudsdkdataartsstudio.v1.DataMaskingResult`

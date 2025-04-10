@@ -29,7 +29,7 @@ class RestoreInstanceFromCollectionRequestBodyCollections:
     }
 
     def __init__(self, old_name=None, new_name=None, restore_collection_time=None):
-        """RestoreInstanceFromCollectionRequestBodyCollections
+        r"""RestoreInstanceFromCollectionRequestBodyCollections
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class RestoreInstanceFromCollectionRequestBodyCollections:
 
     @property
     def old_name(self):
-        """Gets the old_name of this RestoreInstanceFromCollectionRequestBodyCollections.
+        r"""Gets the old_name of this RestoreInstanceFromCollectionRequestBodyCollections.
 
         恢复前表名。
 
@@ -66,7 +66,7 @@ class RestoreInstanceFromCollectionRequestBodyCollections:
 
     @old_name.setter
     def old_name(self, old_name):
-        """Sets the old_name of this RestoreInstanceFromCollectionRequestBodyCollections.
+        r"""Sets the old_name of this RestoreInstanceFromCollectionRequestBodyCollections.
 
         恢复前表名。
 
@@ -77,7 +77,7 @@ class RestoreInstanceFromCollectionRequestBodyCollections:
 
     @property
     def new_name(self):
-        """Gets the new_name of this RestoreInstanceFromCollectionRequestBodyCollections.
+        r"""Gets the new_name of this RestoreInstanceFromCollectionRequestBodyCollections.
 
         恢复后表名。
 
@@ -88,7 +88,7 @@ class RestoreInstanceFromCollectionRequestBodyCollections:
 
     @new_name.setter
     def new_name(self, new_name):
-        """Sets the new_name of this RestoreInstanceFromCollectionRequestBodyCollections.
+        r"""Sets the new_name of this RestoreInstanceFromCollectionRequestBodyCollections.
 
         恢复后表名。
 
@@ -99,7 +99,7 @@ class RestoreInstanceFromCollectionRequestBodyCollections:
 
     @property
     def restore_collection_time(self):
-        """Gets the restore_collection_time of this RestoreInstanceFromCollectionRequestBodyCollections.
+        r"""Gets the restore_collection_time of this RestoreInstanceFromCollectionRequestBodyCollections.
 
         数据库集合恢复时间点。UNIX时间戳格式，单位是毫秒，时区是UTC。
 
@@ -110,7 +110,7 @@ class RestoreInstanceFromCollectionRequestBodyCollections:
 
     @restore_collection_time.setter
     def restore_collection_time(self, restore_collection_time):
-        """Sets the restore_collection_time of this RestoreInstanceFromCollectionRequestBodyCollections.
+        r"""Sets the restore_collection_time of this RestoreInstanceFromCollectionRequestBodyCollections.
 
         数据库集合恢复时间点。UNIX时间戳格式，单位是毫秒，时区是UTC。
 

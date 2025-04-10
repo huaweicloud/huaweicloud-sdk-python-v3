@@ -25,7 +25,7 @@ class UUID64Identifier:
     }
 
     def __init__(self, id=None):
-        """UUID64Identifier
+        r"""UUID64Identifier
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UUID64Identifier:
 
     @property
     def id(self):
-        """Gets the id of this UUID64Identifier.
+        r"""Gets the id of this UUID64Identifier.
 
         实例ID。
 
@@ -53,7 +53,7 @@ class UUID64Identifier:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UUID64Identifier.
+        r"""Sets the id of this UUID64Identifier.
 
         实例ID。
 

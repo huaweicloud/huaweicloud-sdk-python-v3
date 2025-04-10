@@ -26,7 +26,7 @@ class ShowDomainApiAclPolicyResponse(SdkResponse):
     }
 
     def __init__(self, api_acl_policy=None):
-        """ShowDomainApiAclPolicyResponse
+        r"""ShowDomainApiAclPolicyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ShowDomainApiAclPolicyResponse(SdkResponse):
 
     @property
     def api_acl_policy(self):
-        """Gets the api_acl_policy of this ShowDomainApiAclPolicyResponse.
+        r"""Gets the api_acl_policy of this ShowDomainApiAclPolicyResponse.
 
         :return: The api_acl_policy of this ShowDomainApiAclPolicyResponse.
         :rtype: :class:`huaweicloudsdkiam.v3.AclPolicyResult`
@@ -53,7 +53,7 @@ class ShowDomainApiAclPolicyResponse(SdkResponse):
 
     @api_acl_policy.setter
     def api_acl_policy(self, api_acl_policy):
-        """Sets the api_acl_policy of this ShowDomainApiAclPolicyResponse.
+        r"""Sets the api_acl_policy of this ShowDomainApiAclPolicyResponse.
 
         :param api_acl_policy: The api_acl_policy of this ShowDomainApiAclPolicyResponse.
         :type api_acl_policy: :class:`huaweicloudsdkiam.v3.AclPolicyResult`

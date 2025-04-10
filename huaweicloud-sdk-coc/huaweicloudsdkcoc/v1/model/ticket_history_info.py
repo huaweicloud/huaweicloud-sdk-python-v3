@@ -81,7 +81,7 @@ class TicketHistoryInfo:
     }
 
     def __init__(self, current_cloud_service_id=None, description=None, level_id=None, mtm_region=None, mtm_type=None, source_id=None, title=None, is_change_event=None, is_service_interrupt=None, action_id=None, action=None, sub_action=None, operator=None, comment=None, id=None, ticket_id=None, start_time=None, stop_time=None, target_type=None, target_value=None, is_deteted=None, update_time=None, action_name_zh=None, action_name_en=None, action_template_zh=None, action_template_en=None, status=None, final_sub_action=None, enum_data_list=None):
-        """TicketHistoryInfo
+        r"""TicketHistoryInfo
 
         The model defined in huaweicloud sdk
 
@@ -239,7 +239,7 @@ class TicketHistoryInfo:
 
     @property
     def current_cloud_service_id(self):
-        """Gets the current_cloud_service_id of this TicketHistoryInfo.
+        r"""Gets the current_cloud_service_id of this TicketHistoryInfo.
 
         扩展字段
 
@@ -250,7 +250,7 @@ class TicketHistoryInfo:
 
     @current_cloud_service_id.setter
     def current_cloud_service_id(self, current_cloud_service_id):
-        """Sets the current_cloud_service_id of this TicketHistoryInfo.
+        r"""Sets the current_cloud_service_id of this TicketHistoryInfo.
 
         扩展字段
 
@@ -261,7 +261,7 @@ class TicketHistoryInfo:
 
     @property
     def description(self):
-        """Gets the description of this TicketHistoryInfo.
+        r"""Gets the description of this TicketHistoryInfo.
 
         扩展字段
 
@@ -272,7 +272,7 @@ class TicketHistoryInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this TicketHistoryInfo.
+        r"""Sets the description of this TicketHistoryInfo.
 
         扩展字段
 
@@ -283,7 +283,7 @@ class TicketHistoryInfo:
 
     @property
     def level_id(self):
-        """Gets the level_id of this TicketHistoryInfo.
+        r"""Gets the level_id of this TicketHistoryInfo.
 
         扩展字段
 
@@ -294,7 +294,7 @@ class TicketHistoryInfo:
 
     @level_id.setter
     def level_id(self, level_id):
-        """Sets the level_id of this TicketHistoryInfo.
+        r"""Sets the level_id of this TicketHistoryInfo.
 
         扩展字段
 
@@ -305,7 +305,7 @@ class TicketHistoryInfo:
 
     @property
     def mtm_region(self):
-        """Gets the mtm_region of this TicketHistoryInfo.
+        r"""Gets the mtm_region of this TicketHistoryInfo.
 
         扩展字段
 
@@ -316,7 +316,7 @@ class TicketHistoryInfo:
 
     @mtm_region.setter
     def mtm_region(self, mtm_region):
-        """Sets the mtm_region of this TicketHistoryInfo.
+        r"""Sets the mtm_region of this TicketHistoryInfo.
 
         扩展字段
 
@@ -327,7 +327,7 @@ class TicketHistoryInfo:
 
     @property
     def mtm_type(self):
-        """Gets the mtm_type of this TicketHistoryInfo.
+        r"""Gets the mtm_type of this TicketHistoryInfo.
 
         扩展字段
 
@@ -338,7 +338,7 @@ class TicketHistoryInfo:
 
     @mtm_type.setter
     def mtm_type(self, mtm_type):
-        """Sets the mtm_type of this TicketHistoryInfo.
+        r"""Sets the mtm_type of this TicketHistoryInfo.
 
         扩展字段
 
@@ -349,7 +349,7 @@ class TicketHistoryInfo:
 
     @property
     def source_id(self):
-        """Gets the source_id of this TicketHistoryInfo.
+        r"""Gets the source_id of this TicketHistoryInfo.
 
         扩展字段
 
@@ -360,7 +360,7 @@ class TicketHistoryInfo:
 
     @source_id.setter
     def source_id(self, source_id):
-        """Sets the source_id of this TicketHistoryInfo.
+        r"""Sets the source_id of this TicketHistoryInfo.
 
         扩展字段
 
@@ -371,7 +371,7 @@ class TicketHistoryInfo:
 
     @property
     def title(self):
-        """Gets the title of this TicketHistoryInfo.
+        r"""Gets the title of this TicketHistoryInfo.
 
         扩展字段
 
@@ -382,7 +382,7 @@ class TicketHistoryInfo:
 
     @title.setter
     def title(self, title):
-        """Sets the title of this TicketHistoryInfo.
+        r"""Sets the title of this TicketHistoryInfo.
 
         扩展字段
 
@@ -393,7 +393,7 @@ class TicketHistoryInfo:
 
     @property
     def is_change_event(self):
-        """Gets the is_change_event of this TicketHistoryInfo.
+        r"""Gets the is_change_event of this TicketHistoryInfo.
 
         是否变更事件
 
@@ -404,7 +404,7 @@ class TicketHistoryInfo:
 
     @is_change_event.setter
     def is_change_event(self, is_change_event):
-        """Sets the is_change_event of this TicketHistoryInfo.
+        r"""Sets the is_change_event of this TicketHistoryInfo.
 
         是否变更事件
 
@@ -415,7 +415,7 @@ class TicketHistoryInfo:
 
     @property
     def is_service_interrupt(self):
-        """Gets the is_service_interrupt of this TicketHistoryInfo.
+        r"""Gets the is_service_interrupt of this TicketHistoryInfo.
 
         是否变更事件
 
@@ -426,7 +426,7 @@ class TicketHistoryInfo:
 
     @is_service_interrupt.setter
     def is_service_interrupt(self, is_service_interrupt):
-        """Sets the is_service_interrupt of this TicketHistoryInfo.
+        r"""Sets the is_service_interrupt of this TicketHistoryInfo.
 
         是否变更事件
 
@@ -437,7 +437,7 @@ class TicketHistoryInfo:
 
     @property
     def action_id(self):
-        """Gets the action_id of this TicketHistoryInfo.
+        r"""Gets the action_id of this TicketHistoryInfo.
 
         操作标识
 
@@ -448,7 +448,7 @@ class TicketHistoryInfo:
 
     @action_id.setter
     def action_id(self, action_id):
-        """Sets the action_id of this TicketHistoryInfo.
+        r"""Sets the action_id of this TicketHistoryInfo.
 
         操作标识
 
@@ -459,7 +459,7 @@ class TicketHistoryInfo:
 
     @property
     def action(self):
-        """Gets the action of this TicketHistoryInfo.
+        r"""Gets the action of this TicketHistoryInfo.
 
         动作
 
@@ -470,7 +470,7 @@ class TicketHistoryInfo:
 
     @action.setter
     def action(self, action):
-        """Sets the action of this TicketHistoryInfo.
+        r"""Sets the action of this TicketHistoryInfo.
 
         动作
 
@@ -481,7 +481,7 @@ class TicketHistoryInfo:
 
     @property
     def sub_action(self):
-        """Gets the sub_action of this TicketHistoryInfo.
+        r"""Gets the sub_action of this TicketHistoryInfo.
 
         子动作
 
@@ -492,7 +492,7 @@ class TicketHistoryInfo:
 
     @sub_action.setter
     def sub_action(self, sub_action):
-        """Sets the sub_action of this TicketHistoryInfo.
+        r"""Sets the sub_action of this TicketHistoryInfo.
 
         子动作
 
@@ -503,7 +503,7 @@ class TicketHistoryInfo:
 
     @property
     def operator(self):
-        """Gets the operator of this TicketHistoryInfo.
+        r"""Gets the operator of this TicketHistoryInfo.
 
         操作人
 
@@ -514,7 +514,7 @@ class TicketHistoryInfo:
 
     @operator.setter
     def operator(self, operator):
-        """Sets the operator of this TicketHistoryInfo.
+        r"""Sets the operator of this TicketHistoryInfo.
 
         操作人
 
@@ -525,7 +525,7 @@ class TicketHistoryInfo:
 
     @property
     def comment(self):
-        """Gets the comment of this TicketHistoryInfo.
+        r"""Gets the comment of this TicketHistoryInfo.
 
         评论
 
@@ -536,7 +536,7 @@ class TicketHistoryInfo:
 
     @comment.setter
     def comment(self, comment):
-        """Sets the comment of this TicketHistoryInfo.
+        r"""Sets the comment of this TicketHistoryInfo.
 
         评论
 
@@ -547,7 +547,7 @@ class TicketHistoryInfo:
 
     @property
     def id(self):
-        """Gets the id of this TicketHistoryInfo.
+        r"""Gets the id of this TicketHistoryInfo.
 
         主键
 
@@ -558,7 +558,7 @@ class TicketHistoryInfo:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this TicketHistoryInfo.
+        r"""Sets the id of this TicketHistoryInfo.
 
         主键
 
@@ -569,7 +569,7 @@ class TicketHistoryInfo:
 
     @property
     def ticket_id(self):
-        """Gets the ticket_id of this TicketHistoryInfo.
+        r"""Gets the ticket_id of this TicketHistoryInfo.
 
         单号
 
@@ -580,7 +580,7 @@ class TicketHistoryInfo:
 
     @ticket_id.setter
     def ticket_id(self, ticket_id):
-        """Sets the ticket_id of this TicketHistoryInfo.
+        r"""Sets the ticket_id of this TicketHistoryInfo.
 
         单号
 
@@ -591,7 +591,7 @@ class TicketHistoryInfo:
 
     @property
     def start_time(self):
-        """Gets the start_time of this TicketHistoryInfo.
+        r"""Gets the start_time of this TicketHistoryInfo.
 
         起始时间
 
@@ -602,7 +602,7 @@ class TicketHistoryInfo:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this TicketHistoryInfo.
+        r"""Sets the start_time of this TicketHistoryInfo.
 
         起始时间
 
@@ -613,7 +613,7 @@ class TicketHistoryInfo:
 
     @property
     def stop_time(self):
-        """Gets the stop_time of this TicketHistoryInfo.
+        r"""Gets the stop_time of this TicketHistoryInfo.
 
         结束时间
 
@@ -624,7 +624,7 @@ class TicketHistoryInfo:
 
     @stop_time.setter
     def stop_time(self, stop_time):
-        """Sets the stop_time of this TicketHistoryInfo.
+        r"""Sets the stop_time of this TicketHistoryInfo.
 
         结束时间
 
@@ -635,7 +635,7 @@ class TicketHistoryInfo:
 
     @property
     def target_type(self):
-        """Gets the target_type of this TicketHistoryInfo.
+        r"""Gets the target_type of this TicketHistoryInfo.
 
         对象类型
 
@@ -646,7 +646,7 @@ class TicketHistoryInfo:
 
     @target_type.setter
     def target_type(self, target_type):
-        """Sets the target_type of this TicketHistoryInfo.
+        r"""Sets the target_type of this TicketHistoryInfo.
 
         对象类型
 
@@ -657,7 +657,7 @@ class TicketHistoryInfo:
 
     @property
     def target_value(self):
-        """Gets the target_value of this TicketHistoryInfo.
+        r"""Gets the target_value of this TicketHistoryInfo.
 
         对象值
 
@@ -668,7 +668,7 @@ class TicketHistoryInfo:
 
     @target_value.setter
     def target_value(self, target_value):
-        """Sets the target_value of this TicketHistoryInfo.
+        r"""Sets the target_value of this TicketHistoryInfo.
 
         对象值
 
@@ -679,7 +679,7 @@ class TicketHistoryInfo:
 
     @property
     def is_deteted(self):
-        """Gets the is_deteted of this TicketHistoryInfo.
+        r"""Gets the is_deteted of this TicketHistoryInfo.
 
         待修改
 
@@ -690,7 +690,7 @@ class TicketHistoryInfo:
 
     @is_deteted.setter
     def is_deteted(self, is_deteted):
-        """Sets the is_deteted of this TicketHistoryInfo.
+        r"""Sets the is_deteted of this TicketHistoryInfo.
 
         待修改
 
@@ -701,7 +701,7 @@ class TicketHistoryInfo:
 
     @property
     def update_time(self):
-        """Gets the update_time of this TicketHistoryInfo.
+        r"""Gets the update_time of this TicketHistoryInfo.
 
         更新时间
 
@@ -712,7 +712,7 @@ class TicketHistoryInfo:
 
     @update_time.setter
     def update_time(self, update_time):
-        """Sets the update_time of this TicketHistoryInfo.
+        r"""Sets the update_time of this TicketHistoryInfo.
 
         更新时间
 
@@ -723,7 +723,7 @@ class TicketHistoryInfo:
 
     @property
     def action_name_zh(self):
-        """Gets the action_name_zh of this TicketHistoryInfo.
+        r"""Gets the action_name_zh of this TicketHistoryInfo.
 
         action中文名
 
@@ -734,7 +734,7 @@ class TicketHistoryInfo:
 
     @action_name_zh.setter
     def action_name_zh(self, action_name_zh):
-        """Sets the action_name_zh of this TicketHistoryInfo.
+        r"""Sets the action_name_zh of this TicketHistoryInfo.
 
         action中文名
 
@@ -745,7 +745,7 @@ class TicketHistoryInfo:
 
     @property
     def action_name_en(self):
-        """Gets the action_name_en of this TicketHistoryInfo.
+        r"""Gets the action_name_en of this TicketHistoryInfo.
 
         action英文名
 
@@ -756,7 +756,7 @@ class TicketHistoryInfo:
 
     @action_name_en.setter
     def action_name_en(self, action_name_en):
-        """Sets the action_name_en of this TicketHistoryInfo.
+        r"""Sets the action_name_en of this TicketHistoryInfo.
 
         action英文名
 
@@ -767,7 +767,7 @@ class TicketHistoryInfo:
 
     @property
     def action_template_zh(self):
-        """Gets the action_template_zh of this TicketHistoryInfo.
+        r"""Gets the action_template_zh of this TicketHistoryInfo.
 
         action中文模板
 
@@ -778,7 +778,7 @@ class TicketHistoryInfo:
 
     @action_template_zh.setter
     def action_template_zh(self, action_template_zh):
-        """Sets the action_template_zh of this TicketHistoryInfo.
+        r"""Sets the action_template_zh of this TicketHistoryInfo.
 
         action中文模板
 
@@ -789,7 +789,7 @@ class TicketHistoryInfo:
 
     @property
     def action_template_en(self):
-        """Gets the action_template_en of this TicketHistoryInfo.
+        r"""Gets the action_template_en of this TicketHistoryInfo.
 
         action中文模板
 
@@ -800,7 +800,7 @@ class TicketHistoryInfo:
 
     @action_template_en.setter
     def action_template_en(self, action_template_en):
-        """Sets the action_template_en of this TicketHistoryInfo.
+        r"""Sets the action_template_en of this TicketHistoryInfo.
 
         action中文模板
 
@@ -811,7 +811,7 @@ class TicketHistoryInfo:
 
     @property
     def status(self):
-        """Gets the status of this TicketHistoryInfo.
+        r"""Gets the status of this TicketHistoryInfo.
 
         工单状态
 
@@ -822,7 +822,7 @@ class TicketHistoryInfo:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this TicketHistoryInfo.
+        r"""Sets the status of this TicketHistoryInfo.
 
         工单状态
 
@@ -833,7 +833,7 @@ class TicketHistoryInfo:
 
     @property
     def final_sub_action(self):
-        """Gets the final_sub_action of this TicketHistoryInfo.
+        r"""Gets the final_sub_action of this TicketHistoryInfo.
 
         最终子动作
 
@@ -844,7 +844,7 @@ class TicketHistoryInfo:
 
     @final_sub_action.setter
     def final_sub_action(self, final_sub_action):
-        """Sets the final_sub_action of this TicketHistoryInfo.
+        r"""Sets the final_sub_action of this TicketHistoryInfo.
 
         最终子动作
 
@@ -855,7 +855,7 @@ class TicketHistoryInfo:
 
     @property
     def enum_data_list(self):
-        """Gets the enum_data_list of this TicketHistoryInfo.
+        r"""Gets the enum_data_list of this TicketHistoryInfo.
 
         枚举数据
 
@@ -866,7 +866,7 @@ class TicketHistoryInfo:
 
     @enum_data_list.setter
     def enum_data_list(self, enum_data_list):
-        """Sets the enum_data_list of this TicketHistoryInfo.
+        r"""Sets the enum_data_list of this TicketHistoryInfo.
 
         枚举数据
 

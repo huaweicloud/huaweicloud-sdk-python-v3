@@ -29,7 +29,7 @@ class MetaDto:
     }
 
     def __init__(self, resource_type=None, created=None, last_modified=None):
-        """MetaDto
+        r"""MetaDto
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class MetaDto:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this MetaDto.
+        r"""Gets the resource_type of this MetaDto.
 
         资源类型
 
@@ -68,7 +68,7 @@ class MetaDto:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this MetaDto.
+        r"""Sets the resource_type of this MetaDto.
 
         资源类型
 
@@ -79,7 +79,7 @@ class MetaDto:
 
     @property
     def created(self):
-        """Gets the created of this MetaDto.
+        r"""Gets the created of this MetaDto.
 
         资源创建时间
 
@@ -90,7 +90,7 @@ class MetaDto:
 
     @created.setter
     def created(self, created):
-        """Sets the created of this MetaDto.
+        r"""Sets the created of this MetaDto.
 
         资源创建时间
 
@@ -101,7 +101,7 @@ class MetaDto:
 
     @property
     def last_modified(self):
-        """Gets the last_modified of this MetaDto.
+        r"""Gets the last_modified of this MetaDto.
 
         资源最后更新时间
 
@@ -112,7 +112,7 @@ class MetaDto:
 
     @last_modified.setter
     def last_modified(self, last_modified):
-        """Sets the last_modified of this MetaDto.
+        r"""Sets the last_modified of this MetaDto.
 
         资源最后更新时间
 

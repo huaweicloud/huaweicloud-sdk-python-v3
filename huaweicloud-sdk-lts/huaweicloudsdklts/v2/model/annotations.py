@@ -31,7 +31,7 @@ class Annotations:
     }
 
     def __init__(self, message=None, log_info=None, current_value=None, old_annotations=None):
-        """Annotations
+        r"""Annotations
 
         The model defined in huaweicloud sdk
 
@@ -60,7 +60,7 @@ class Annotations:
 
     @property
     def message(self):
-        """Gets the message of this Annotations.
+        r"""Gets the message of this Annotations.
 
         告警列表详情
 
@@ -71,7 +71,7 @@ class Annotations:
 
     @message.setter
     def message(self, message):
-        """Sets the message of this Annotations.
+        r"""Sets the message of this Annotations.
 
         告警列表详情
 
@@ -82,7 +82,7 @@ class Annotations:
 
     @property
     def log_info(self):
-        """Gets the log_info of this Annotations.
+        r"""Gets the log_info of this Annotations.
 
         日志组/流id,名称
 
@@ -93,7 +93,7 @@ class Annotations:
 
     @log_info.setter
     def log_info(self, log_info):
-        """Sets the log_info of this Annotations.
+        r"""Sets the log_info of this Annotations.
 
         日志组/流id,名称
 
@@ -104,7 +104,7 @@ class Annotations:
 
     @property
     def current_value(self):
-        """Gets the current_value of this Annotations.
+        r"""Gets the current_value of this Annotations.
 
         当前值
 
@@ -115,7 +115,7 @@ class Annotations:
 
     @current_value.setter
     def current_value(self, current_value):
-        """Sets the current_value of this Annotations.
+        r"""Sets the current_value of this Annotations.
 
         当前值
 
@@ -126,7 +126,7 @@ class Annotations:
 
     @property
     def old_annotations(self):
-        """Gets the old_annotations of this Annotations.
+        r"""Gets the old_annotations of this Annotations.
 
         (sql/关键词)告警详情原始数据
 
@@ -137,7 +137,7 @@ class Annotations:
 
     @old_annotations.setter
     def old_annotations(self, old_annotations):
-        """Sets the old_annotations of this Annotations.
+        r"""Sets the old_annotations of this Annotations.
 
         (sql/关键词)告警详情原始数据
 

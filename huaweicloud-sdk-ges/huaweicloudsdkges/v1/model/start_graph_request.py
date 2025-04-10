@@ -29,7 +29,7 @@ class StartGraphRequest:
     }
 
     def __init__(self, graph_id=None, action_id=None, body=None):
-        """StartGraphRequest
+        r"""StartGraphRequest
 
         The model defined in huaweicloud sdk
 
@@ -55,7 +55,7 @@ class StartGraphRequest:
 
     @property
     def graph_id(self):
-        """Gets the graph_id of this StartGraphRequest.
+        r"""Gets the graph_id of this StartGraphRequest.
 
         图ID。
 
@@ -66,7 +66,7 @@ class StartGraphRequest:
 
     @graph_id.setter
     def graph_id(self, graph_id):
-        """Sets the graph_id of this StartGraphRequest.
+        r"""Sets the graph_id of this StartGraphRequest.
 
         图ID。
 
@@ -77,7 +77,7 @@ class StartGraphRequest:
 
     @property
     def action_id(self):
-        """Gets the action_id of this StartGraphRequest.
+        r"""Gets the action_id of this StartGraphRequest.
 
         图actionId
 
@@ -88,7 +88,7 @@ class StartGraphRequest:
 
     @action_id.setter
     def action_id(self, action_id):
-        """Sets the action_id of this StartGraphRequest.
+        r"""Sets the action_id of this StartGraphRequest.
 
         图actionId
 
@@ -99,7 +99,7 @@ class StartGraphRequest:
 
     @property
     def body(self):
-        """Gets the body of this StartGraphRequest.
+        r"""Gets the body of this StartGraphRequest.
 
         :return: The body of this StartGraphRequest.
         :rtype: :class:`huaweicloudsdkges.v1.StartGraphReq`
@@ -108,7 +108,7 @@ class StartGraphRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this StartGraphRequest.
+        r"""Sets the body of this StartGraphRequest.
 
         :param body: The body of this StartGraphRequest.
         :type body: :class:`huaweicloudsdkges.v1.StartGraphReq`

@@ -28,7 +28,7 @@ class ListAuditRuleScopesResponse(SdkResponse):
     }
 
     def __init__(self, scopes=None, total=None):
-        """ListAuditRuleScopesResponse
+        r"""ListAuditRuleScopesResponse
 
         The model defined in huaweicloud sdk
 
@@ -51,7 +51,7 @@ class ListAuditRuleScopesResponse(SdkResponse):
 
     @property
     def scopes(self):
-        """Gets the scopes of this ListAuditRuleScopesResponse.
+        r"""Gets the scopes of this ListAuditRuleScopesResponse.
 
         审计范围规则列表
 
@@ -62,7 +62,7 @@ class ListAuditRuleScopesResponse(SdkResponse):
 
     @scopes.setter
     def scopes(self, scopes):
-        """Sets the scopes of this ListAuditRuleScopesResponse.
+        r"""Sets the scopes of this ListAuditRuleScopesResponse.
 
         审计范围规则列表
 
@@ -73,7 +73,7 @@ class ListAuditRuleScopesResponse(SdkResponse):
 
     @property
     def total(self):
-        """Gets the total of this ListAuditRuleScopesResponse.
+        r"""Gets the total of this ListAuditRuleScopesResponse.
 
         总数
 
@@ -84,7 +84,7 @@ class ListAuditRuleScopesResponse(SdkResponse):
 
     @total.setter
     def total(self, total):
-        """Sets the total of this ListAuditRuleScopesResponse.
+        r"""Sets the total of this ListAuditRuleScopesResponse.
 
         总数
 

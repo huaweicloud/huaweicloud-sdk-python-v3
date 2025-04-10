@@ -30,7 +30,7 @@ class ListBandwidthPackageSitesResponse(SdkResponse):
     }
 
     def __init__(self, bandwidth_package_sites=None, request_id=None, page_info=None):
-        """ListBandwidthPackageSitesResponse
+        r"""ListBandwidthPackageSitesResponse
 
         The model defined in huaweicloud sdk
 
@@ -58,7 +58,7 @@ class ListBandwidthPackageSitesResponse(SdkResponse):
 
     @property
     def bandwidth_package_sites(self):
-        """Gets the bandwidth_package_sites of this ListBandwidthPackageSitesResponse.
+        r"""Gets the bandwidth_package_sites of this ListBandwidthPackageSitesResponse.
 
         站点列表表。
 
@@ -69,7 +69,7 @@ class ListBandwidthPackageSitesResponse(SdkResponse):
 
     @bandwidth_package_sites.setter
     def bandwidth_package_sites(self, bandwidth_package_sites):
-        """Sets the bandwidth_package_sites of this ListBandwidthPackageSitesResponse.
+        r"""Sets the bandwidth_package_sites of this ListBandwidthPackageSitesResponse.
 
         站点列表表。
 
@@ -80,7 +80,7 @@ class ListBandwidthPackageSitesResponse(SdkResponse):
 
     @property
     def request_id(self):
-        """Gets the request_id of this ListBandwidthPackageSitesResponse.
+        r"""Gets the request_id of this ListBandwidthPackageSitesResponse.
 
         请求ID。
 
@@ -91,7 +91,7 @@ class ListBandwidthPackageSitesResponse(SdkResponse):
 
     @request_id.setter
     def request_id(self, request_id):
-        """Sets the request_id of this ListBandwidthPackageSitesResponse.
+        r"""Sets the request_id of this ListBandwidthPackageSitesResponse.
 
         请求ID。
 
@@ -102,7 +102,7 @@ class ListBandwidthPackageSitesResponse(SdkResponse):
 
     @property
     def page_info(self):
-        """Gets the page_info of this ListBandwidthPackageSitesResponse.
+        r"""Gets the page_info of this ListBandwidthPackageSitesResponse.
 
         :return: The page_info of this ListBandwidthPackageSitesResponse.
         :rtype: :class:`huaweicloudsdkcc.v3.PageInfo`
@@ -111,7 +111,7 @@ class ListBandwidthPackageSitesResponse(SdkResponse):
 
     @page_info.setter
     def page_info(self, page_info):
-        """Sets the page_info of this ListBandwidthPackageSitesResponse.
+        r"""Sets the page_info of this ListBandwidthPackageSitesResponse.
 
         :param page_info: The page_info of this ListBandwidthPackageSitesResponse.
         :type page_info: :class:`huaweicloudsdkcc.v3.PageInfo`

@@ -29,7 +29,7 @@ class UpdateServerReq:
     }
 
     def __init__(self, name=None, description=None, maintain_status=None):
-        """UpdateServerReq
+        r"""UpdateServerReq
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class UpdateServerReq:
 
     @property
     def name(self):
-        """Gets the name of this UpdateServerReq.
+        r"""Gets the name of this UpdateServerReq.
 
         服务器名称，名称需满足如下规则: 1. 由中文，英文大小写，数字，_-组成。 2. 长度范围1~64个字符。
 
@@ -68,7 +68,7 @@ class UpdateServerReq:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this UpdateServerReq.
+        r"""Sets the name of this UpdateServerReq.
 
         服务器名称，名称需满足如下规则: 1. 由中文，英文大小写，数字，_-组成。 2. 长度范围1~64个字符。
 
@@ -79,7 +79,7 @@ class UpdateServerReq:
 
     @property
     def description(self):
-        """Gets the description of this UpdateServerReq.
+        r"""Gets the description of this UpdateServerReq.
 
         服务器描述。
 
@@ -90,7 +90,7 @@ class UpdateServerReq:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this UpdateServerReq.
+        r"""Sets the description of this UpdateServerReq.
 
         服务器描述。
 
@@ -101,7 +101,7 @@ class UpdateServerReq:
 
     @property
     def maintain_status(self):
-        """Gets the maintain_status of this UpdateServerReq.
+        r"""Gets the maintain_status of this UpdateServerReq.
 
         服务器维护状态标识： * `true` - 添加标记 * `false` - 移除标记
 
@@ -112,7 +112,7 @@ class UpdateServerReq:
 
     @maintain_status.setter
     def maintain_status(self, maintain_status):
-        """Sets the maintain_status of this UpdateServerReq.
+        r"""Sets the maintain_status of this UpdateServerReq.
 
         服务器维护状态标识： * `true` - 添加标记 * `false` - 移除标记
 

@@ -26,7 +26,7 @@ class ListAlarmStatisticsUsingResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListAlarmStatisticsUsingResponse
+        r"""ListAlarmStatisticsUsingResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListAlarmStatisticsUsingResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListAlarmStatisticsUsingResponse.
+        r"""Gets the body of this ListAlarmStatisticsUsingResponse.
 
         :return: The body of this ListAlarmStatisticsUsingResponse.
         :rtype: list[:class:`huaweicloudsdkcloudtest.v1.AlertStatisticsDto`]
@@ -53,7 +53,7 @@ class ListAlarmStatisticsUsingResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListAlarmStatisticsUsingResponse.
+        r"""Sets the body of this ListAlarmStatisticsUsingResponse.
 
         :param body: The body of this ListAlarmStatisticsUsingResponse.
         :type body: list[:class:`huaweicloudsdkcloudtest.v1.AlertStatisticsDto`]

@@ -35,7 +35,7 @@ class EgTargetDetail:
     }
 
     def __init__(self, target_project_id=None, target_channel_id=None, target_region=None, cross_region=None, cross_account=None, agency_name=None):
-        """EgTargetDetail
+        r"""EgTargetDetail
 
         The model defined in huaweicloud sdk
 
@@ -74,7 +74,7 @@ class EgTargetDetail:
 
     @property
     def target_project_id(self):
-        """Gets the target_project_id of this EgTargetDetail.
+        r"""Gets the target_project_id of this EgTargetDetail.
 
         目标项目id
 
@@ -85,7 +85,7 @@ class EgTargetDetail:
 
     @target_project_id.setter
     def target_project_id(self, target_project_id):
-        """Sets the target_project_id of this EgTargetDetail.
+        r"""Sets the target_project_id of this EgTargetDetail.
 
         目标项目id
 
@@ -96,7 +96,7 @@ class EgTargetDetail:
 
     @property
     def target_channel_id(self):
-        """Gets the target_channel_id of this EgTargetDetail.
+        r"""Gets the target_channel_id of this EgTargetDetail.
 
         目标通道id
 
@@ -107,7 +107,7 @@ class EgTargetDetail:
 
     @target_channel_id.setter
     def target_channel_id(self, target_channel_id):
-        """Sets the target_channel_id of this EgTargetDetail.
+        r"""Sets the target_channel_id of this EgTargetDetail.
 
         目标通道id
 
@@ -118,7 +118,7 @@ class EgTargetDetail:
 
     @property
     def target_region(self):
-        """Gets the target_region of this EgTargetDetail.
+        r"""Gets the target_region of this EgTargetDetail.
 
         目标region
 
@@ -129,7 +129,7 @@ class EgTargetDetail:
 
     @target_region.setter
     def target_region(self, target_region):
-        """Sets the target_region of this EgTargetDetail.
+        r"""Sets the target_region of this EgTargetDetail.
 
         目标region
 
@@ -140,7 +140,7 @@ class EgTargetDetail:
 
     @property
     def cross_region(self):
-        """Gets the cross_region of this EgTargetDetail.
+        r"""Gets the cross_region of this EgTargetDetail.
 
         跨region开关
 
@@ -151,7 +151,7 @@ class EgTargetDetail:
 
     @cross_region.setter
     def cross_region(self, cross_region):
-        """Sets the cross_region of this EgTargetDetail.
+        r"""Sets the cross_region of this EgTargetDetail.
 
         跨region开关
 
@@ -162,7 +162,7 @@ class EgTargetDetail:
 
     @property
     def cross_account(self):
-        """Gets the cross_account of this EgTargetDetail.
+        r"""Gets the cross_account of this EgTargetDetail.
 
         跨账号开关
 
@@ -173,7 +173,7 @@ class EgTargetDetail:
 
     @cross_account.setter
     def cross_account(self, cross_account):
-        """Sets the cross_account of this EgTargetDetail.
+        r"""Sets the cross_account of this EgTargetDetail.
 
         跨账号开关
 
@@ -184,7 +184,7 @@ class EgTargetDetail:
 
     @property
     def agency_name(self):
-        """Gets the agency_name of this EgTargetDetail.
+        r"""Gets the agency_name of this EgTargetDetail.
 
         委托名称
 
@@ -195,7 +195,7 @@ class EgTargetDetail:
 
     @agency_name.setter
     def agency_name(self, agency_name):
-        """Sets the agency_name of this EgTargetDetail.
+        r"""Sets the agency_name of this EgTargetDetail.
 
         委托名称
 

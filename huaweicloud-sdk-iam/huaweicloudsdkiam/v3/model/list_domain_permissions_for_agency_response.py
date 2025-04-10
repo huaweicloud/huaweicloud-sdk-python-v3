@@ -26,7 +26,7 @@ class ListDomainPermissionsForAgencyResponse(SdkResponse):
     }
 
     def __init__(self, roles=None):
-        """ListDomainPermissionsForAgencyResponse
+        r"""ListDomainPermissionsForAgencyResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListDomainPermissionsForAgencyResponse(SdkResponse):
 
     @property
     def roles(self):
-        """Gets the roles of this ListDomainPermissionsForAgencyResponse.
+        r"""Gets the roles of this ListDomainPermissionsForAgencyResponse.
 
         权限信息列表。
 
@@ -55,7 +55,7 @@ class ListDomainPermissionsForAgencyResponse(SdkResponse):
 
     @roles.setter
     def roles(self, roles):
-        """Sets the roles of this ListDomainPermissionsForAgencyResponse.
+        r"""Sets the roles of this ListDomainPermissionsForAgencyResponse.
 
         权限信息列表。
 

@@ -29,7 +29,7 @@ class ShowModifyHistoryRequest:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None):
-        """ShowModifyHistoryRequest
+        r"""ShowModifyHistoryRequest
 
         The model defined in huaweicloud sdk
 
@@ -56,7 +56,7 @@ class ShowModifyHistoryRequest:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ShowModifyHistoryRequest.
+        r"""Gets the instance_id of this ShowModifyHistoryRequest.
 
         实例id
 
@@ -67,7 +67,7 @@ class ShowModifyHistoryRequest:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ShowModifyHistoryRequest.
+        r"""Sets the instance_id of this ShowModifyHistoryRequest.
 
         实例id
 
@@ -78,7 +78,7 @@ class ShowModifyHistoryRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ShowModifyHistoryRequest.
+        r"""Gets the offset of this ShowModifyHistoryRequest.
 
         索引位置，偏移量。  从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）。  取值必须为数字，不能为负数。
 
@@ -89,7 +89,7 @@ class ShowModifyHistoryRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ShowModifyHistoryRequest.
+        r"""Sets the offset of this ShowModifyHistoryRequest.
 
         索引位置，偏移量。  从第一条数据偏移offset条数据后开始查询，默认为0（偏移0条数据，表示从第一条数据开始查询）。  取值必须为数字，不能为负数。
 
@@ -100,7 +100,7 @@ class ShowModifyHistoryRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ShowModifyHistoryRequest.
+        r"""Gets the limit of this ShowModifyHistoryRequest.
 
         查询个数上限值。   - 取值范围: 1~100。   - 不传该参数时，默认查询前100条信息。
 
@@ -111,7 +111,7 @@ class ShowModifyHistoryRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ShowModifyHistoryRequest.
+        r"""Sets the limit of this ShowModifyHistoryRequest.
 
         查询个数上限值。   - 取值范围: 1~100。   - 不传该参数时，默认查询前100条信息。
 

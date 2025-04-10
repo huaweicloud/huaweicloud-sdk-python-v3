@@ -27,7 +27,7 @@ class CreateAccessPreviewRequest:
     }
 
     def __init__(self, analyzer_id=None, body=None):
-        """CreateAccessPreviewRequest
+        r"""CreateAccessPreviewRequest
 
         The model defined in huaweicloud sdk
 
@@ -49,7 +49,7 @@ class CreateAccessPreviewRequest:
 
     @property
     def analyzer_id(self):
-        """Gets the analyzer_id of this CreateAccessPreviewRequest.
+        r"""Gets the analyzer_id of this CreateAccessPreviewRequest.
 
         分析器的唯一标识符。
 
@@ -60,7 +60,7 @@ class CreateAccessPreviewRequest:
 
     @analyzer_id.setter
     def analyzer_id(self, analyzer_id):
-        """Sets the analyzer_id of this CreateAccessPreviewRequest.
+        r"""Sets the analyzer_id of this CreateAccessPreviewRequest.
 
         分析器的唯一标识符。
 
@@ -71,7 +71,7 @@ class CreateAccessPreviewRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateAccessPreviewRequest.
+        r"""Gets the body of this CreateAccessPreviewRequest.
 
         :return: The body of this CreateAccessPreviewRequest.
         :rtype: :class:`huaweicloudsdkiamaccessanalyzer.v1.CreateAccessPreviewReqBody`
@@ -80,7 +80,7 @@ class CreateAccessPreviewRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateAccessPreviewRequest.
+        r"""Sets the body of this CreateAccessPreviewRequest.
 
         :param body: The body of this CreateAccessPreviewRequest.
         :type body: :class:`huaweicloudsdkiamaccessanalyzer.v1.CreateAccessPreviewReqBody`

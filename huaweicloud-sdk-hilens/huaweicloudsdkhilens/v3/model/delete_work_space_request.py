@@ -25,7 +25,7 @@ class DeleteWorkSpaceRequest:
     }
 
     def __init__(self, workspace_id=None):
-        """DeleteWorkSpaceRequest
+        r"""DeleteWorkSpaceRequest
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class DeleteWorkSpaceRequest:
 
     @property
     def workspace_id(self):
-        """Gets the workspace_id of this DeleteWorkSpaceRequest.
+        r"""Gets the workspace_id of this DeleteWorkSpaceRequest.
 
         工作空间ID
 
@@ -53,7 +53,7 @@ class DeleteWorkSpaceRequest:
 
     @workspace_id.setter
     def workspace_id(self, workspace_id):
-        """Sets the workspace_id of this DeleteWorkSpaceRequest.
+        r"""Sets the workspace_id of this DeleteWorkSpaceRequest.
 
         工作空间ID
 

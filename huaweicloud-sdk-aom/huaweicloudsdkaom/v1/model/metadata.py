@@ -27,7 +27,7 @@ class Metadata:
     }
 
     def __init__(self, type=None, configuration=None):
-        """Metadata
+        r"""Metadata
 
         The model defined in huaweicloud sdk
 
@@ -50,7 +50,7 @@ class Metadata:
 
     @property
     def type(self):
-        """Gets the type of this Metadata.
+        r"""Gets the type of this Metadata.
 
         节点类型。
 
@@ -61,7 +61,7 @@ class Metadata:
 
     @type.setter
     def type(self, type):
-        """Sets the type of this Metadata.
+        r"""Sets the type of this Metadata.
 
         节点类型。
 
@@ -72,7 +72,7 @@ class Metadata:
 
     @property
     def configuration(self):
-        """Gets the configuration of this Metadata.
+        r"""Gets the configuration of this Metadata.
 
         配置信息。
 
@@ -83,7 +83,7 @@ class Metadata:
 
     @configuration.setter
     def configuration(self, configuration):
-        """Sets the configuration of this Metadata.
+        r"""Sets the configuration of this Metadata.
 
         配置信息。
 

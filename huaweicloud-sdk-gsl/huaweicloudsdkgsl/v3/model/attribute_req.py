@@ -39,7 +39,7 @@ class AttributeReq:
     }
 
     def __init__(self, sim_card_id=None, iccid=None, customer_attribute1=None, customer_attribute2=None, customer_attribute3=None, customer_attribute4=None, customer_attribute5=None, customer_attribute6=None):
-        """AttributeReq
+        r"""AttributeReq
 
         The model defined in huaweicloud sdk
 
@@ -91,7 +91,7 @@ class AttributeReq:
 
     @property
     def sim_card_id(self):
-        """Gets the sim_card_id of this AttributeReq.
+        r"""Gets the sim_card_id of this AttributeReq.
 
         SIM卡标识，如果SIM卡标识传0则表示需要根据iccid处理。
 
@@ -102,7 +102,7 @@ class AttributeReq:
 
     @sim_card_id.setter
     def sim_card_id(self, sim_card_id):
-        """Sets the sim_card_id of this AttributeReq.
+        r"""Sets the sim_card_id of this AttributeReq.
 
         SIM卡标识，如果SIM卡标识传0则表示需要根据iccid处理。
 
@@ -113,7 +113,7 @@ class AttributeReq:
 
     @property
     def iccid(self):
-        """Gets the iccid of this AttributeReq.
+        r"""Gets the iccid of this AttributeReq.
 
         iccid，如果SIM卡标识传0则表示需要根据iccid处理。
 
@@ -124,7 +124,7 @@ class AttributeReq:
 
     @iccid.setter
     def iccid(self, iccid):
-        """Sets the iccid of this AttributeReq.
+        r"""Sets the iccid of this AttributeReq.
 
         iccid，如果SIM卡标识传0则表示需要根据iccid处理。
 
@@ -135,7 +135,7 @@ class AttributeReq:
 
     @property
     def customer_attribute1(self):
-        """Gets the customer_attribute1 of this AttributeReq.
+        r"""Gets the customer_attribute1 of this AttributeReq.
 
         自定义属性一
 
@@ -146,7 +146,7 @@ class AttributeReq:
 
     @customer_attribute1.setter
     def customer_attribute1(self, customer_attribute1):
-        """Sets the customer_attribute1 of this AttributeReq.
+        r"""Sets the customer_attribute1 of this AttributeReq.
 
         自定义属性一
 
@@ -157,7 +157,7 @@ class AttributeReq:
 
     @property
     def customer_attribute2(self):
-        """Gets the customer_attribute2 of this AttributeReq.
+        r"""Gets the customer_attribute2 of this AttributeReq.
 
         自定义属性二
 
@@ -168,7 +168,7 @@ class AttributeReq:
 
     @customer_attribute2.setter
     def customer_attribute2(self, customer_attribute2):
-        """Sets the customer_attribute2 of this AttributeReq.
+        r"""Sets the customer_attribute2 of this AttributeReq.
 
         自定义属性二
 
@@ -179,7 +179,7 @@ class AttributeReq:
 
     @property
     def customer_attribute3(self):
-        """Gets the customer_attribute3 of this AttributeReq.
+        r"""Gets the customer_attribute3 of this AttributeReq.
 
         自定义属性三
 
@@ -190,7 +190,7 @@ class AttributeReq:
 
     @customer_attribute3.setter
     def customer_attribute3(self, customer_attribute3):
-        """Sets the customer_attribute3 of this AttributeReq.
+        r"""Sets the customer_attribute3 of this AttributeReq.
 
         自定义属性三
 
@@ -201,7 +201,7 @@ class AttributeReq:
 
     @property
     def customer_attribute4(self):
-        """Gets the customer_attribute4 of this AttributeReq.
+        r"""Gets the customer_attribute4 of this AttributeReq.
 
         自定义属性四
 
@@ -212,7 +212,7 @@ class AttributeReq:
 
     @customer_attribute4.setter
     def customer_attribute4(self, customer_attribute4):
-        """Sets the customer_attribute4 of this AttributeReq.
+        r"""Sets the customer_attribute4 of this AttributeReq.
 
         自定义属性四
 
@@ -223,7 +223,7 @@ class AttributeReq:
 
     @property
     def customer_attribute5(self):
-        """Gets the customer_attribute5 of this AttributeReq.
+        r"""Gets the customer_attribute5 of this AttributeReq.
 
         自定义属性五
 
@@ -234,7 +234,7 @@ class AttributeReq:
 
     @customer_attribute5.setter
     def customer_attribute5(self, customer_attribute5):
-        """Sets the customer_attribute5 of this AttributeReq.
+        r"""Sets the customer_attribute5 of this AttributeReq.
 
         自定义属性五
 
@@ -245,7 +245,7 @@ class AttributeReq:
 
     @property
     def customer_attribute6(self):
-        """Gets the customer_attribute6 of this AttributeReq.
+        r"""Gets the customer_attribute6 of this AttributeReq.
 
         自定义属性六
 
@@ -256,7 +256,7 @@ class AttributeReq:
 
     @customer_attribute6.setter
     def customer_attribute6(self, customer_attribute6):
-        """Sets the customer_attribute6 of this AttributeReq.
+        r"""Sets the customer_attribute6 of this AttributeReq.
 
         自定义属性六
 

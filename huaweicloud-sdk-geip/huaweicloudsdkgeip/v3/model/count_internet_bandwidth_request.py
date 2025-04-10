@@ -39,7 +39,7 @@ class CountInternetBandwidthRequest:
     }
 
     def __init__(self, id=None, size=None, name=None, name_like=None, access_site=None, status=None, enterprise_project_id=None, tags=None):
-        """CountInternetBandwidthRequest
+        r"""CountInternetBandwidthRequest
 
         The model defined in huaweicloud sdk
 
@@ -92,7 +92,7 @@ class CountInternetBandwidthRequest:
 
     @property
     def id(self):
-        """Gets the id of this CountInternetBandwidthRequest.
+        r"""Gets the id of this CountInternetBandwidthRequest.
 
         :return: The id of this CountInternetBandwidthRequest.
         :rtype: list[str]
@@ -101,7 +101,7 @@ class CountInternetBandwidthRequest:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this CountInternetBandwidthRequest.
+        r"""Sets the id of this CountInternetBandwidthRequest.
 
         :param id: The id of this CountInternetBandwidthRequest.
         :type id: list[str]
@@ -110,7 +110,7 @@ class CountInternetBandwidthRequest:
 
     @property
     def size(self):
-        """Gets the size of this CountInternetBandwidthRequest.
+        r"""Gets the size of this CountInternetBandwidthRequest.
 
         :return: The size of this CountInternetBandwidthRequest.
         :rtype: list[int]
@@ -119,7 +119,7 @@ class CountInternetBandwidthRequest:
 
     @size.setter
     def size(self, size):
-        """Sets the size of this CountInternetBandwidthRequest.
+        r"""Sets the size of this CountInternetBandwidthRequest.
 
         :param size: The size of this CountInternetBandwidthRequest.
         :type size: list[int]
@@ -128,7 +128,7 @@ class CountInternetBandwidthRequest:
 
     @property
     def name(self):
-        """Gets the name of this CountInternetBandwidthRequest.
+        r"""Gets the name of this CountInternetBandwidthRequest.
 
         :return: The name of this CountInternetBandwidthRequest.
         :rtype: list[str]
@@ -137,7 +137,7 @@ class CountInternetBandwidthRequest:
 
     @name.setter
     def name(self, name):
-        """Sets the name of this CountInternetBandwidthRequest.
+        r"""Sets the name of this CountInternetBandwidthRequest.
 
         :param name: The name of this CountInternetBandwidthRequest.
         :type name: list[str]
@@ -146,7 +146,7 @@ class CountInternetBandwidthRequest:
 
     @property
     def name_like(self):
-        """Gets the name_like of this CountInternetBandwidthRequest.
+        r"""Gets the name_like of this CountInternetBandwidthRequest.
 
         :return: The name_like of this CountInternetBandwidthRequest.
         :rtype: str
@@ -155,7 +155,7 @@ class CountInternetBandwidthRequest:
 
     @name_like.setter
     def name_like(self, name_like):
-        """Sets the name_like of this CountInternetBandwidthRequest.
+        r"""Sets the name_like of this CountInternetBandwidthRequest.
 
         :param name_like: The name_like of this CountInternetBandwidthRequest.
         :type name_like: str
@@ -164,7 +164,7 @@ class CountInternetBandwidthRequest:
 
     @property
     def access_site(self):
-        """Gets the access_site of this CountInternetBandwidthRequest.
+        r"""Gets the access_site of this CountInternetBandwidthRequest.
 
         :return: The access_site of this CountInternetBandwidthRequest.
         :rtype: list[str]
@@ -173,7 +173,7 @@ class CountInternetBandwidthRequest:
 
     @access_site.setter
     def access_site(self, access_site):
-        """Sets the access_site of this CountInternetBandwidthRequest.
+        r"""Sets the access_site of this CountInternetBandwidthRequest.
 
         :param access_site: The access_site of this CountInternetBandwidthRequest.
         :type access_site: list[str]
@@ -182,7 +182,7 @@ class CountInternetBandwidthRequest:
 
     @property
     def status(self):
-        """Gets the status of this CountInternetBandwidthRequest.
+        r"""Gets the status of this CountInternetBandwidthRequest.
 
         :return: The status of this CountInternetBandwidthRequest.
         :rtype: list[str]
@@ -191,7 +191,7 @@ class CountInternetBandwidthRequest:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this CountInternetBandwidthRequest.
+        r"""Sets the status of this CountInternetBandwidthRequest.
 
         :param status: The status of this CountInternetBandwidthRequest.
         :type status: list[str]
@@ -200,7 +200,7 @@ class CountInternetBandwidthRequest:
 
     @property
     def enterprise_project_id(self):
-        """Gets the enterprise_project_id of this CountInternetBandwidthRequest.
+        r"""Gets the enterprise_project_id of this CountInternetBandwidthRequest.
 
         :return: The enterprise_project_id of this CountInternetBandwidthRequest.
         :rtype: list[str]
@@ -209,7 +209,7 @@ class CountInternetBandwidthRequest:
 
     @enterprise_project_id.setter
     def enterprise_project_id(self, enterprise_project_id):
-        """Sets the enterprise_project_id of this CountInternetBandwidthRequest.
+        r"""Sets the enterprise_project_id of this CountInternetBandwidthRequest.
 
         :param enterprise_project_id: The enterprise_project_id of this CountInternetBandwidthRequest.
         :type enterprise_project_id: list[str]
@@ -218,7 +218,7 @@ class CountInternetBandwidthRequest:
 
     @property
     def tags(self):
-        """Gets the tags of this CountInternetBandwidthRequest.
+        r"""Gets the tags of this CountInternetBandwidthRequest.
 
         :return: The tags of this CountInternetBandwidthRequest.
         :rtype: list[str]
@@ -227,7 +227,7 @@ class CountInternetBandwidthRequest:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this CountInternetBandwidthRequest.
+        r"""Sets the tags of this CountInternetBandwidthRequest.
 
         :param tags: The tags of this CountInternetBandwidthRequest.
         :type tags: list[str]

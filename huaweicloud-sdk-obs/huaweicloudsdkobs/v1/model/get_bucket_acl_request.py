@@ -31,7 +31,7 @@ class GetBucketAclRequest:
     }
 
     def __init__(self, date=None, bucket_name=None, acl=None):
-        """GetBucketAclRequest
+        r"""GetBucketAclRequest
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class GetBucketAclRequest:
 
     @property
     def date(self):
-        """Gets the date of this GetBucketAclRequest.
+        r"""Gets the date of this GetBucketAclRequest.
 
         Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
@@ -68,7 +68,7 @@ class GetBucketAclRequest:
 
     @date.setter
     def date(self, date):
-        """Sets the date of this GetBucketAclRequest.
+        r"""Sets the date of this GetBucketAclRequest.
 
         Time when a request was initiated, for example, **Wed, 27 Jun 2018 13:39:15 +0000**. Default value: none Restriction: This header is optional if the **x-obs-date** header is contained in the request, but mandatory in other circumstances.
 
@@ -79,7 +79,7 @@ class GetBucketAclRequest:
 
     @property
     def bucket_name(self):
-        """Gets the bucket_name of this GetBucketAclRequest.
+        r"""Gets the bucket_name of this GetBucketAclRequest.
 
         Name of the requested bucket
 
@@ -90,7 +90,7 @@ class GetBucketAclRequest:
 
     @bucket_name.setter
     def bucket_name(self, bucket_name):
-        """Sets the bucket_name of this GetBucketAclRequest.
+        r"""Sets the bucket_name of this GetBucketAclRequest.
 
         Name of the requested bucket
 
@@ -101,7 +101,7 @@ class GetBucketAclRequest:
 
     @property
     def acl(self):
-        """Gets the acl of this GetBucketAclRequest.
+        r"""Gets the acl of this GetBucketAclRequest.
 
         Indicates the API for sending a request to the ACL.
 
@@ -112,7 +112,7 @@ class GetBucketAclRequest:
 
     @acl.setter
     def acl(self, acl):
-        """Sets the acl of this GetBucketAclRequest.
+        r"""Sets the acl of this GetBucketAclRequest.
 
         Indicates the API for sending a request to the ACL.
 

@@ -29,7 +29,7 @@ class AgentInstallScriptResponseInfo:
     }
 
     def __init__(self, package_type=None, cmd=None, package_download_url=None):
-        """AgentInstallScriptResponseInfo
+        r"""AgentInstallScriptResponseInfo
 
         The model defined in huaweicloud sdk
 
@@ -57,7 +57,7 @@ class AgentInstallScriptResponseInfo:
 
     @property
     def package_type(self):
-        """Gets the package_type of this AgentInstallScriptResponseInfo.
+        r"""Gets the package_type of this AgentInstallScriptResponseInfo.
 
         包类型
 
@@ -68,7 +68,7 @@ class AgentInstallScriptResponseInfo:
 
     @package_type.setter
     def package_type(self, package_type):
-        """Sets the package_type of this AgentInstallScriptResponseInfo.
+        r"""Sets the package_type of this AgentInstallScriptResponseInfo.
 
         包类型
 
@@ -79,7 +79,7 @@ class AgentInstallScriptResponseInfo:
 
     @property
     def cmd(self):
-        """Gets the cmd of this AgentInstallScriptResponseInfo.
+        r"""Gets the cmd of this AgentInstallScriptResponseInfo.
 
         命令
 
@@ -90,7 +90,7 @@ class AgentInstallScriptResponseInfo:
 
     @cmd.setter
     def cmd(self, cmd):
-        """Sets the cmd of this AgentInstallScriptResponseInfo.
+        r"""Sets the cmd of this AgentInstallScriptResponseInfo.
 
         命令
 
@@ -101,7 +101,7 @@ class AgentInstallScriptResponseInfo:
 
     @property
     def package_download_url(self):
-        """Gets the package_download_url of this AgentInstallScriptResponseInfo.
+        r"""Gets the package_download_url of this AgentInstallScriptResponseInfo.
 
         包下载url
 
@@ -112,7 +112,7 @@ class AgentInstallScriptResponseInfo:
 
     @package_download_url.setter
     def package_download_url(self, package_download_url):
-        """Sets the package_download_url of this AgentInstallScriptResponseInfo.
+        r"""Sets the package_download_url of this AgentInstallScriptResponseInfo.
 
         包下载url
 

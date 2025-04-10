@@ -49,7 +49,7 @@ class NextflowTaskListDto:
     }
 
     def __init__(self, task_id=None, process=None, tag=None, hash=None, status=None, container=None, pod_name=None, submit=None, complete=None, duration=None, realtime=None, cpu_percent=None, mem_percent=None):
-        """NextflowTaskListDto
+        r"""NextflowTaskListDto
 
         The model defined in huaweicloud sdk
 
@@ -127,7 +127,7 @@ class NextflowTaskListDto:
 
     @property
     def task_id(self):
-        """Gets the task_id of this NextflowTaskListDto.
+        r"""Gets the task_id of this NextflowTaskListDto.
 
         子任务id
 
@@ -138,7 +138,7 @@ class NextflowTaskListDto:
 
     @task_id.setter
     def task_id(self, task_id):
-        """Sets the task_id of this NextflowTaskListDto.
+        r"""Sets the task_id of this NextflowTaskListDto.
 
         子任务id
 
@@ -149,7 +149,7 @@ class NextflowTaskListDto:
 
     @property
     def process(self):
-        """Gets the process of this NextflowTaskListDto.
+        r"""Gets the process of this NextflowTaskListDto.
 
         流程名称
 
@@ -160,7 +160,7 @@ class NextflowTaskListDto:
 
     @process.setter
     def process(self, process):
-        """Sets the process of this NextflowTaskListDto.
+        r"""Sets the process of this NextflowTaskListDto.
 
         流程名称
 
@@ -171,7 +171,7 @@ class NextflowTaskListDto:
 
     @property
     def tag(self):
-        """Gets the tag of this NextflowTaskListDto.
+        r"""Gets the tag of this NextflowTaskListDto.
 
         子任务标识符
 
@@ -182,7 +182,7 @@ class NextflowTaskListDto:
 
     @tag.setter
     def tag(self, tag):
-        """Sets the tag of this NextflowTaskListDto.
+        r"""Sets the tag of this NextflowTaskListDto.
 
         子任务标识符
 
@@ -193,7 +193,7 @@ class NextflowTaskListDto:
 
     @property
     def hash(self):
-        """Gets the hash of this NextflowTaskListDto.
+        r"""Gets the hash of this NextflowTaskListDto.
 
         哈希值
 
@@ -204,7 +204,7 @@ class NextflowTaskListDto:
 
     @hash.setter
     def hash(self, hash):
-        """Sets the hash of this NextflowTaskListDto.
+        r"""Sets the hash of this NextflowTaskListDto.
 
         哈希值
 
@@ -215,7 +215,7 @@ class NextflowTaskListDto:
 
     @property
     def status(self):
-        """Gets the status of this NextflowTaskListDto.
+        r"""Gets the status of this NextflowTaskListDto.
 
         子任务状态
 
@@ -226,7 +226,7 @@ class NextflowTaskListDto:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this NextflowTaskListDto.
+        r"""Sets the status of this NextflowTaskListDto.
 
         子任务状态
 
@@ -237,7 +237,7 @@ class NextflowTaskListDto:
 
     @property
     def container(self):
-        """Gets the container of this NextflowTaskListDto.
+        r"""Gets the container of this NextflowTaskListDto.
 
         容器名称
 
@@ -248,7 +248,7 @@ class NextflowTaskListDto:
 
     @container.setter
     def container(self, container):
-        """Sets the container of this NextflowTaskListDto.
+        r"""Sets the container of this NextflowTaskListDto.
 
         容器名称
 
@@ -259,7 +259,7 @@ class NextflowTaskListDto:
 
     @property
     def pod_name(self):
-        """Gets the pod_name of this NextflowTaskListDto.
+        r"""Gets the pod_name of this NextflowTaskListDto.
 
         pod名称
 
@@ -270,7 +270,7 @@ class NextflowTaskListDto:
 
     @pod_name.setter
     def pod_name(self, pod_name):
-        """Sets the pod_name of this NextflowTaskListDto.
+        r"""Sets the pod_name of this NextflowTaskListDto.
 
         pod名称
 
@@ -281,7 +281,7 @@ class NextflowTaskListDto:
 
     @property
     def submit(self):
-        """Gets the submit of this NextflowTaskListDto.
+        r"""Gets the submit of this NextflowTaskListDto.
 
         提交时间
 
@@ -292,7 +292,7 @@ class NextflowTaskListDto:
 
     @submit.setter
     def submit(self, submit):
-        """Sets the submit of this NextflowTaskListDto.
+        r"""Sets the submit of this NextflowTaskListDto.
 
         提交时间
 
@@ -303,7 +303,7 @@ class NextflowTaskListDto:
 
     @property
     def complete(self):
-        """Gets the complete of this NextflowTaskListDto.
+        r"""Gets the complete of this NextflowTaskListDto.
 
         完成时间
 
@@ -314,7 +314,7 @@ class NextflowTaskListDto:
 
     @complete.setter
     def complete(self, complete):
-        """Sets the complete of this NextflowTaskListDto.
+        r"""Sets the complete of this NextflowTaskListDto.
 
         完成时间
 
@@ -325,7 +325,7 @@ class NextflowTaskListDto:
 
     @property
     def duration(self):
-        """Gets the duration of this NextflowTaskListDto.
+        r"""Gets the duration of this NextflowTaskListDto.
 
         总时间
 
@@ -336,7 +336,7 @@ class NextflowTaskListDto:
 
     @duration.setter
     def duration(self, duration):
-        """Sets the duration of this NextflowTaskListDto.
+        r"""Sets the duration of this NextflowTaskListDto.
 
         总时间
 
@@ -347,7 +347,7 @@ class NextflowTaskListDto:
 
     @property
     def realtime(self):
-        """Gets the realtime of this NextflowTaskListDto.
+        r"""Gets the realtime of this NextflowTaskListDto.
 
         实际运行时间
 
@@ -358,7 +358,7 @@ class NextflowTaskListDto:
 
     @realtime.setter
     def realtime(self, realtime):
-        """Sets the realtime of this NextflowTaskListDto.
+        r"""Sets the realtime of this NextflowTaskListDto.
 
         实际运行时间
 
@@ -369,7 +369,7 @@ class NextflowTaskListDto:
 
     @property
     def cpu_percent(self):
-        """Gets the cpu_percent of this NextflowTaskListDto.
+        r"""Gets the cpu_percent of this NextflowTaskListDto.
 
         cpu使用率
 
@@ -380,7 +380,7 @@ class NextflowTaskListDto:
 
     @cpu_percent.setter
     def cpu_percent(self, cpu_percent):
-        """Sets the cpu_percent of this NextflowTaskListDto.
+        r"""Sets the cpu_percent of this NextflowTaskListDto.
 
         cpu使用率
 
@@ -391,7 +391,7 @@ class NextflowTaskListDto:
 
     @property
     def mem_percent(self):
-        """Gets the mem_percent of this NextflowTaskListDto.
+        r"""Gets the mem_percent of this NextflowTaskListDto.
 
         内存使用率
 
@@ -402,7 +402,7 @@ class NextflowTaskListDto:
 
     @mem_percent.setter
     def mem_percent(self, mem_percent):
-        """Sets the mem_percent of this NextflowTaskListDto.
+        r"""Sets the mem_percent of this NextflowTaskListDto.
 
         内存使用率
 

@@ -31,7 +31,7 @@ class TransferEnterpriseMultiAccountCouponReq:
     }
 
     def __init__(self, customer_id=None, coupon_id=None, amount=None, trans_id=None):
-        """TransferEnterpriseMultiAccountCouponReq
+        r"""TransferEnterpriseMultiAccountCouponReq
 
         The model defined in huaweicloud sdk
 
@@ -61,7 +61,7 @@ class TransferEnterpriseMultiAccountCouponReq:
 
     @property
     def customer_id(self):
-        """Gets the customer_id of this TransferEnterpriseMultiAccountCouponReq.
+        r"""Gets the customer_id of this TransferEnterpriseMultiAccountCouponReq.
 
         企业子账号的客户ID。您可以调用查询企业子账号列表接口，获取响应参数“id”的返回值。
 
@@ -72,7 +72,7 @@ class TransferEnterpriseMultiAccountCouponReq:
 
     @customer_id.setter
     def customer_id(self, customer_id):
-        """Sets the customer_id of this TransferEnterpriseMultiAccountCouponReq.
+        r"""Sets the customer_id of this TransferEnterpriseMultiAccountCouponReq.
 
         企业子账号的客户ID。您可以调用查询企业子账号列表接口，获取响应参数“id”的返回值。
 
@@ -83,7 +83,7 @@ class TransferEnterpriseMultiAccountCouponReq:
 
     @property
     def coupon_id(self):
-        """Gets the coupon_id of this TransferEnterpriseMultiAccountCouponReq.
+        r"""Gets the coupon_id of this TransferEnterpriseMultiAccountCouponReq.
 
         优惠券ID。您可以调用查询企业主账号可拨款优惠券列表接口，获取响应参数“coupon_id”的返回值。
 
@@ -94,7 +94,7 @@ class TransferEnterpriseMultiAccountCouponReq:
 
     @coupon_id.setter
     def coupon_id(self, coupon_id):
-        """Sets the coupon_id of this TransferEnterpriseMultiAccountCouponReq.
+        r"""Sets the coupon_id of this TransferEnterpriseMultiAccountCouponReq.
 
         优惠券ID。您可以调用查询企业主账号可拨款优惠券列表接口，获取响应参数“coupon_id”的返回值。
 
@@ -105,7 +105,7 @@ class TransferEnterpriseMultiAccountCouponReq:
 
     @property
     def amount(self):
-        """Gets the amount of this TransferEnterpriseMultiAccountCouponReq.
+        r"""Gets the amount of this TransferEnterpriseMultiAccountCouponReq.
 
         总划拨金额。单位为元。 单位：元。取值大于0且精确到小数点后2位。
 
@@ -116,7 +116,7 @@ class TransferEnterpriseMultiAccountCouponReq:
 
     @amount.setter
     def amount(self, amount):
-        """Sets the amount of this TransferEnterpriseMultiAccountCouponReq.
+        r"""Sets the amount of this TransferEnterpriseMultiAccountCouponReq.
 
         总划拨金额。单位为元。 单位：元。取值大于0且精确到小数点后2位。
 
@@ -127,7 +127,7 @@ class TransferEnterpriseMultiAccountCouponReq:
 
     @property
     def trans_id(self):
-        """Gets the trans_id of this TransferEnterpriseMultiAccountCouponReq.
+        r"""Gets the trans_id of this TransferEnterpriseMultiAccountCouponReq.
 
         交易序列号，用于防止重复提交。 如果接口调用方不传此参数的值，则系统自动生成。如果接口调用方传入此参数的值，请采用UUID保证全局唯一。 此参数不携带或携带值为null或携带值为空串时，由系统自动生成。
 
@@ -138,7 +138,7 @@ class TransferEnterpriseMultiAccountCouponReq:
 
     @trans_id.setter
     def trans_id(self, trans_id):
-        """Sets the trans_id of this TransferEnterpriseMultiAccountCouponReq.
+        r"""Sets the trans_id of this TransferEnterpriseMultiAccountCouponReq.
 
         交易序列号，用于防止重复提交。 如果接口调用方不传此参数的值，则系统自动生成。如果接口调用方传入此参数的值，请采用UUID保证全局唯一。 此参数不携带或携带值为null或携带值为空串时，由系统自动生成。
 

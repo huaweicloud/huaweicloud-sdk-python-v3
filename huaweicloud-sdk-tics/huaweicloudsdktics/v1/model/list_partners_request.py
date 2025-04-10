@@ -29,7 +29,7 @@ class ListPartnersRequest:
     }
 
     def __init__(self, limit=None, offset=None, league_id=None):
-        """ListPartnersRequest
+        r"""ListPartnersRequest
 
         The model defined in huaweicloud sdk
 
@@ -54,7 +54,7 @@ class ListPartnersRequest:
 
     @property
     def limit(self):
-        """Gets the limit of this ListPartnersRequest.
+        r"""Gets the limit of this ListPartnersRequest.
 
         每页记录数，取值0-100
 
@@ -65,7 +65,7 @@ class ListPartnersRequest:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListPartnersRequest.
+        r"""Sets the limit of this ListPartnersRequest.
 
         每页记录数，取值0-100
 
@@ -76,7 +76,7 @@ class ListPartnersRequest:
 
     @property
     def offset(self):
-        """Gets the offset of this ListPartnersRequest.
+        r"""Gets the offset of this ListPartnersRequest.
 
         记录数偏移量 
 
@@ -87,7 +87,7 @@ class ListPartnersRequest:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListPartnersRequest.
+        r"""Sets the offset of this ListPartnersRequest.
 
         记录数偏移量 
 
@@ -98,7 +98,7 @@ class ListPartnersRequest:
 
     @property
     def league_id(self):
-        """Gets the league_id of this ListPartnersRequest.
+        r"""Gets the league_id of this ListPartnersRequest.
 
         联盟id，最大32位，字母和数字组成
 
@@ -109,7 +109,7 @@ class ListPartnersRequest:
 
     @league_id.setter
     def league_id(self, league_id):
-        """Sets the league_id of this ListPartnersRequest.
+        r"""Sets the league_id of this ListPartnersRequest.
 
         联盟id，最大32位，字母和数字组成
 

@@ -25,7 +25,7 @@ class UpdateVpnLogConfigRequestBody:
     }
 
     def __init__(self, log_config=None):
-        """UpdateVpnLogConfigRequestBody
+        r"""UpdateVpnLogConfigRequestBody
 
         The model defined in huaweicloud sdk
 
@@ -42,7 +42,7 @@ class UpdateVpnLogConfigRequestBody:
 
     @property
     def log_config(self):
-        """Gets the log_config of this UpdateVpnLogConfigRequestBody.
+        r"""Gets the log_config of this UpdateVpnLogConfigRequestBody.
 
         :return: The log_config of this UpdateVpnLogConfigRequestBody.
         :rtype: :class:`huaweicloudsdkvpn.v5.UpdateVpnLogConfigRequestBodyContent`
@@ -51,7 +51,7 @@ class UpdateVpnLogConfigRequestBody:
 
     @log_config.setter
     def log_config(self, log_config):
-        """Sets the log_config of this UpdateVpnLogConfigRequestBody.
+        r"""Sets the log_config of this UpdateVpnLogConfigRequestBody.
 
         :param log_config: The log_config of this UpdateVpnLogConfigRequestBody.
         :type log_config: :class:`huaweicloudsdkvpn.v5.UpdateVpnLogConfigRequestBodyContent`

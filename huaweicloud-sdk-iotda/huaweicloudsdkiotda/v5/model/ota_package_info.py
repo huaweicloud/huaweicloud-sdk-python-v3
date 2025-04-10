@@ -41,7 +41,7 @@ class OtaPackageInfo:
     }
 
     def __init__(self, package_id=None, app_id=None, package_type=None, product_id=None, version=None, support_source_versions=None, description=None, custom_info=None, create_time=None):
-        """OtaPackageInfo
+        r"""OtaPackageInfo
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class OtaPackageInfo:
 
     @property
     def package_id(self):
-        """Gets the package_id of this OtaPackageInfo.
+        r"""Gets the package_id of this OtaPackageInfo.
 
         **参数说明**：升级包ID，用于唯一标识一个升级包。由物联网平台分配获得。 **取值范围**：长度不超过36，只允许字母、数字、连接符（-）的组合。
 
@@ -110,7 +110,7 @@ class OtaPackageInfo:
 
     @package_id.setter
     def package_id(self, package_id):
-        """Sets the package_id of this OtaPackageInfo.
+        r"""Sets the package_id of this OtaPackageInfo.
 
         **参数说明**：升级包ID，用于唯一标识一个升级包。由物联网平台分配获得。 **取值范围**：长度不超过36，只允许字母、数字、连接符（-）的组合。
 
@@ -121,7 +121,7 @@ class OtaPackageInfo:
 
     @property
     def app_id(self):
-        """Gets the app_id of this OtaPackageInfo.
+        r"""Gets the app_id of this OtaPackageInfo.
 
         **参数说明**：资源空间ID。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -132,7 +132,7 @@ class OtaPackageInfo:
 
     @app_id.setter
     def app_id(self, app_id):
-        """Sets the app_id of this OtaPackageInfo.
+        r"""Sets the app_id of this OtaPackageInfo.
 
         **参数说明**：资源空间ID。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -143,7 +143,7 @@ class OtaPackageInfo:
 
     @property
     def package_type(self):
-        """Gets the package_type of this OtaPackageInfo.
+        r"""Gets the package_type of this OtaPackageInfo.
 
         **参数说明**：升级包类型。 **取值范围**：软件包必须设置为：softwarePackage，固件包必须设置为：firmwarePackage。
 
@@ -154,7 +154,7 @@ class OtaPackageInfo:
 
     @package_type.setter
     def package_type(self, package_type):
-        """Sets the package_type of this OtaPackageInfo.
+        r"""Sets the package_type of this OtaPackageInfo.
 
         **参数说明**：升级包类型。 **取值范围**：软件包必须设置为：softwarePackage，固件包必须设置为：firmwarePackage。
 
@@ -165,7 +165,7 @@ class OtaPackageInfo:
 
     @property
     def product_id(self):
-        """Gets the product_id of this OtaPackageInfo.
+        r"""Gets the product_id of this OtaPackageInfo.
 
         **参数说明**：设备关联的产品ID，用于唯一标识一个产品模型，创建产品后获得。方法请参见 [[创建产品](https://support.huaweicloud.com/api-iothub/iot_06_v5_0050.html)](tag:hws)[[创建产品](https://support.huaweicloud.com/intl/zh-cn/api-iothub/iot_06_v5_0050.html)](tag:hws_hk)。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -176,7 +176,7 @@ class OtaPackageInfo:
 
     @product_id.setter
     def product_id(self, product_id):
-        """Sets the product_id of this OtaPackageInfo.
+        r"""Sets the product_id of this OtaPackageInfo.
 
         **参数说明**：设备关联的产品ID，用于唯一标识一个产品模型，创建产品后获得。方法请参见 [[创建产品](https://support.huaweicloud.com/api-iothub/iot_06_v5_0050.html)](tag:hws)[[创建产品](https://support.huaweicloud.com/intl/zh-cn/api-iothub/iot_06_v5_0050.html)](tag:hws_hk)。 **取值范围**：长度不超过36，只允许字母、数字、下划线（_）、连接符（-）的组合。
 
@@ -187,7 +187,7 @@ class OtaPackageInfo:
 
     @property
     def version(self):
-        """Gets the version of this OtaPackageInfo.
+        r"""Gets the version of this OtaPackageInfo.
 
         **参数说明**：升级包版本号。 **取值范围**：长度不超过256，只允许字母、数字、下划线（_）、连接符（-）、英文点（.）的组合。
 
@@ -198,7 +198,7 @@ class OtaPackageInfo:
 
     @version.setter
     def version(self, version):
-        """Sets the version of this OtaPackageInfo.
+        r"""Sets the version of this OtaPackageInfo.
 
         **参数说明**：升级包版本号。 **取值范围**：长度不超过256，只允许字母、数字、下划线（_）、连接符（-）、英文点（.）的组合。
 
@@ -209,7 +209,7 @@ class OtaPackageInfo:
 
     @property
     def support_source_versions(self):
-        """Gets the support_source_versions of this OtaPackageInfo.
+        r"""Gets the support_source_versions of this OtaPackageInfo.
 
         **参数说明**：支持用于升级此版本包的设备源版本号列表。最多支持20个源版本号。 **取值范围**：源版本号列表，源版本号只允许字母、数字、下划线（_）、连接符（-）、英文点（.）的组合。
 
@@ -220,7 +220,7 @@ class OtaPackageInfo:
 
     @support_source_versions.setter
     def support_source_versions(self, support_source_versions):
-        """Sets the support_source_versions of this OtaPackageInfo.
+        r"""Sets the support_source_versions of this OtaPackageInfo.
 
         **参数说明**：支持用于升级此版本包的设备源版本号列表。最多支持20个源版本号。 **取值范围**：源版本号列表，源版本号只允许字母、数字、下划线（_）、连接符（-）、英文点（.）的组合。
 
@@ -231,7 +231,7 @@ class OtaPackageInfo:
 
     @property
     def description(self):
-        """Gets the description of this OtaPackageInfo.
+        r"""Gets the description of this OtaPackageInfo.
 
         **参数说明**：用于描述升级包的功能等信息。 **取值范围**：长度不超过1024。
 
@@ -242,7 +242,7 @@ class OtaPackageInfo:
 
     @description.setter
     def description(self, description):
-        """Sets the description of this OtaPackageInfo.
+        r"""Sets the description of this OtaPackageInfo.
 
         **参数说明**：用于描述升级包的功能等信息。 **取值范围**：长度不超过1024。
 
@@ -253,7 +253,7 @@ class OtaPackageInfo:
 
     @property
     def custom_info(self):
-        """Gets the custom_info of this OtaPackageInfo.
+        r"""Gets the custom_info of this OtaPackageInfo.
 
         **参数说明**：推送给设备的自定义信息。添加该升级包完成，并创建升级任务后，物联网平台向设备下发升级通知时，会下发该自定义信息给设备。 **取值范围**：长度不超过4096。
 
@@ -264,7 +264,7 @@ class OtaPackageInfo:
 
     @custom_info.setter
     def custom_info(self, custom_info):
-        """Sets the custom_info of this OtaPackageInfo.
+        r"""Sets the custom_info of this OtaPackageInfo.
 
         **参数说明**：推送给设备的自定义信息。添加该升级包完成，并创建升级任务后，物联网平台向设备下发升级通知时，会下发该自定义信息给设备。 **取值范围**：长度不超过4096。
 
@@ -275,7 +275,7 @@ class OtaPackageInfo:
 
     @property
     def create_time(self):
-        """Gets the create_time of this OtaPackageInfo.
+        r"""Gets the create_time of this OtaPackageInfo.
 
         软固件包上传到物联网平台的时间，格式：\"yyyyMMdd'T'HHmmss'Z'\"。
 
@@ -286,7 +286,7 @@ class OtaPackageInfo:
 
     @create_time.setter
     def create_time(self, create_time):
-        """Sets the create_time of this OtaPackageInfo.
+        r"""Sets the create_time of this OtaPackageInfo.
 
         软固件包上传到物联网平台的时间，格式：\"yyyyMMdd'T'HHmmss'Z'\"。
 

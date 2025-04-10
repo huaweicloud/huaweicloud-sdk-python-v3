@@ -41,7 +41,7 @@ class ListApisNotBoundWithSignatureKeyV2Request:
     }
 
     def __init__(self, instance_id=None, offset=None, limit=None, sign_id=None, env_id=None, api_id=None, api_name=None, group_id=None, tags=None):
-        """ListApisNotBoundWithSignatureKeyV2Request
+        r"""ListApisNotBoundWithSignatureKeyV2Request
 
         The model defined in huaweicloud sdk
 
@@ -97,7 +97,7 @@ class ListApisNotBoundWithSignatureKeyV2Request:
 
     @property
     def instance_id(self):
-        """Gets the instance_id of this ListApisNotBoundWithSignatureKeyV2Request.
+        r"""Gets the instance_id of this ListApisNotBoundWithSignatureKeyV2Request.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -108,7 +108,7 @@ class ListApisNotBoundWithSignatureKeyV2Request:
 
     @instance_id.setter
     def instance_id(self, instance_id):
-        """Sets the instance_id of this ListApisNotBoundWithSignatureKeyV2Request.
+        r"""Sets the instance_id of this ListApisNotBoundWithSignatureKeyV2Request.
 
         实例ID，在API网关控制台的“实例信息”中获取。
 
@@ -119,7 +119,7 @@ class ListApisNotBoundWithSignatureKeyV2Request:
 
     @property
     def offset(self):
-        """Gets the offset of this ListApisNotBoundWithSignatureKeyV2Request.
+        r"""Gets the offset of this ListApisNotBoundWithSignatureKeyV2Request.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -130,7 +130,7 @@ class ListApisNotBoundWithSignatureKeyV2Request:
 
     @offset.setter
     def offset(self, offset):
-        """Sets the offset of this ListApisNotBoundWithSignatureKeyV2Request.
+        r"""Sets the offset of this ListApisNotBoundWithSignatureKeyV2Request.
 
         偏移量，表示从此偏移量开始查询，偏移量小于0时，自动转换为0
 
@@ -141,7 +141,7 @@ class ListApisNotBoundWithSignatureKeyV2Request:
 
     @property
     def limit(self):
-        """Gets the limit of this ListApisNotBoundWithSignatureKeyV2Request.
+        r"""Gets the limit of this ListApisNotBoundWithSignatureKeyV2Request.
 
         每页显示的条目数量，条目数量小于等于0时，自动转换为20，条目数量大于500时，自动转换为500
 
@@ -152,7 +152,7 @@ class ListApisNotBoundWithSignatureKeyV2Request:
 
     @limit.setter
     def limit(self, limit):
-        """Sets the limit of this ListApisNotBoundWithSignatureKeyV2Request.
+        r"""Sets the limit of this ListApisNotBoundWithSignatureKeyV2Request.
 
         每页显示的条目数量，条目数量小于等于0时，自动转换为20，条目数量大于500时，自动转换为500
 
@@ -163,7 +163,7 @@ class ListApisNotBoundWithSignatureKeyV2Request:
 
     @property
     def sign_id(self):
-        """Gets the sign_id of this ListApisNotBoundWithSignatureKeyV2Request.
+        r"""Gets the sign_id of this ListApisNotBoundWithSignatureKeyV2Request.
 
         签名密钥编号
 
@@ -174,7 +174,7 @@ class ListApisNotBoundWithSignatureKeyV2Request:
 
     @sign_id.setter
     def sign_id(self, sign_id):
-        """Sets the sign_id of this ListApisNotBoundWithSignatureKeyV2Request.
+        r"""Sets the sign_id of this ListApisNotBoundWithSignatureKeyV2Request.
 
         签名密钥编号
 
@@ -185,7 +185,7 @@ class ListApisNotBoundWithSignatureKeyV2Request:
 
     @property
     def env_id(self):
-        """Gets the env_id of this ListApisNotBoundWithSignatureKeyV2Request.
+        r"""Gets the env_id of this ListApisNotBoundWithSignatureKeyV2Request.
 
         环境编号
 
@@ -196,7 +196,7 @@ class ListApisNotBoundWithSignatureKeyV2Request:
 
     @env_id.setter
     def env_id(self, env_id):
-        """Sets the env_id of this ListApisNotBoundWithSignatureKeyV2Request.
+        r"""Sets the env_id of this ListApisNotBoundWithSignatureKeyV2Request.
 
         环境编号
 
@@ -207,7 +207,7 @@ class ListApisNotBoundWithSignatureKeyV2Request:
 
     @property
     def api_id(self):
-        """Gets the api_id of this ListApisNotBoundWithSignatureKeyV2Request.
+        r"""Gets the api_id of this ListApisNotBoundWithSignatureKeyV2Request.
 
         API编号
 
@@ -218,7 +218,7 @@ class ListApisNotBoundWithSignatureKeyV2Request:
 
     @api_id.setter
     def api_id(self, api_id):
-        """Sets the api_id of this ListApisNotBoundWithSignatureKeyV2Request.
+        r"""Sets the api_id of this ListApisNotBoundWithSignatureKeyV2Request.
 
         API编号
 
@@ -229,7 +229,7 @@ class ListApisNotBoundWithSignatureKeyV2Request:
 
     @property
     def api_name(self):
-        """Gets the api_name of this ListApisNotBoundWithSignatureKeyV2Request.
+        r"""Gets the api_name of this ListApisNotBoundWithSignatureKeyV2Request.
 
         API名称
 
@@ -240,7 +240,7 @@ class ListApisNotBoundWithSignatureKeyV2Request:
 
     @api_name.setter
     def api_name(self, api_name):
-        """Sets the api_name of this ListApisNotBoundWithSignatureKeyV2Request.
+        r"""Sets the api_name of this ListApisNotBoundWithSignatureKeyV2Request.
 
         API名称
 
@@ -251,7 +251,7 @@ class ListApisNotBoundWithSignatureKeyV2Request:
 
     @property
     def group_id(self):
-        """Gets the group_id of this ListApisNotBoundWithSignatureKeyV2Request.
+        r"""Gets the group_id of this ListApisNotBoundWithSignatureKeyV2Request.
 
         API分组编号
 
@@ -262,7 +262,7 @@ class ListApisNotBoundWithSignatureKeyV2Request:
 
     @group_id.setter
     def group_id(self, group_id):
-        """Sets the group_id of this ListApisNotBoundWithSignatureKeyV2Request.
+        r"""Sets the group_id of this ListApisNotBoundWithSignatureKeyV2Request.
 
         API分组编号
 
@@ -273,7 +273,7 @@ class ListApisNotBoundWithSignatureKeyV2Request:
 
     @property
     def tags(self):
-        """Gets the tags of this ListApisNotBoundWithSignatureKeyV2Request.
+        r"""Gets the tags of this ListApisNotBoundWithSignatureKeyV2Request.
 
         API标签，该参数可指定多个，多个不同的参数值为或关系；不指定或为空时，表示不筛选标签；指定为#no_tags#时，表示筛选无标签API。
 
@@ -284,7 +284,7 @@ class ListApisNotBoundWithSignatureKeyV2Request:
 
     @tags.setter
     def tags(self, tags):
-        """Sets the tags of this ListApisNotBoundWithSignatureKeyV2Request.
+        r"""Sets the tags of this ListApisNotBoundWithSignatureKeyV2Request.
 
         API标签，该参数可指定多个，多个不同的参数值为或关系；不指定或为空时，表示不筛选标签；指定为#no_tags#时，表示筛选无标签API。
 

@@ -41,7 +41,7 @@ class UpdateItemResp:
     }
 
     def __init__(self, id=None, _from=None, to=None, status=None, process=None, start_time=None, end_time=None, job_id=None, failed_reason=None):
-        """UpdateItemResp
+        r"""UpdateItemResp
 
         The model defined in huaweicloud sdk
 
@@ -99,7 +99,7 @@ class UpdateItemResp:
 
     @property
     def id(self):
-        """Gets the id of this UpdateItemResp.
+        r"""Gets the id of this UpdateItemResp.
 
         升级项ID
 
@@ -110,7 +110,7 @@ class UpdateItemResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this UpdateItemResp.
+        r"""Sets the id of this UpdateItemResp.
 
         升级项ID
 
@@ -121,7 +121,7 @@ class UpdateItemResp:
 
     @property
     def _from(self):
-        """Gets the _from of this UpdateItemResp.
+        r"""Gets the _from of this UpdateItemResp.
 
         起始版本
 
@@ -132,7 +132,7 @@ class UpdateItemResp:
 
     @_from.setter
     def _from(self, _from):
-        """Sets the _from of this UpdateItemResp.
+        r"""Sets the _from of this UpdateItemResp.
 
         起始版本
 
@@ -143,7 +143,7 @@ class UpdateItemResp:
 
     @property
     def to(self):
-        """Gets the to of this UpdateItemResp.
+        r"""Gets the to of this UpdateItemResp.
 
         目标版本
 
@@ -154,7 +154,7 @@ class UpdateItemResp:
 
     @to.setter
     def to(self, to):
-        """Sets the to of this UpdateItemResp.
+        r"""Sets the to of this UpdateItemResp.
 
         目标版本
 
@@ -165,7 +165,7 @@ class UpdateItemResp:
 
     @property
     def status(self):
-        """Gets the status of this UpdateItemResp.
+        r"""Gets the status of this UpdateItemResp.
 
         升级路径状态
 
@@ -176,7 +176,7 @@ class UpdateItemResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this UpdateItemResp.
+        r"""Sets the status of this UpdateItemResp.
 
         升级路径状态
 
@@ -187,7 +187,7 @@ class UpdateItemResp:
 
     @property
     def process(self):
-        """Gets the process of this UpdateItemResp.
+        r"""Gets the process of this UpdateItemResp.
 
         升级进度
 
@@ -198,7 +198,7 @@ class UpdateItemResp:
 
     @process.setter
     def process(self, process):
-        """Sets the process of this UpdateItemResp.
+        r"""Sets the process of this UpdateItemResp.
 
         升级进度
 
@@ -209,7 +209,7 @@ class UpdateItemResp:
 
     @property
     def start_time(self):
-        """Gets the start_time of this UpdateItemResp.
+        r"""Gets the start_time of this UpdateItemResp.
 
         起始时间
 
@@ -220,7 +220,7 @@ class UpdateItemResp:
 
     @start_time.setter
     def start_time(self, start_time):
-        """Sets the start_time of this UpdateItemResp.
+        r"""Sets the start_time of this UpdateItemResp.
 
         起始时间
 
@@ -231,7 +231,7 @@ class UpdateItemResp:
 
     @property
     def end_time(self):
-        """Gets the end_time of this UpdateItemResp.
+        r"""Gets the end_time of this UpdateItemResp.
 
         结束时间
 
@@ -242,7 +242,7 @@ class UpdateItemResp:
 
     @end_time.setter
     def end_time(self, end_time):
-        """Sets the end_time of this UpdateItemResp.
+        r"""Sets the end_time of this UpdateItemResp.
 
         结束时间
 
@@ -253,7 +253,7 @@ class UpdateItemResp:
 
     @property
     def job_id(self):
-        """Gets the job_id of this UpdateItemResp.
+        r"""Gets the job_id of this UpdateItemResp.
 
         升级任务ID
 
@@ -264,7 +264,7 @@ class UpdateItemResp:
 
     @job_id.setter
     def job_id(self, job_id):
-        """Sets the job_id of this UpdateItemResp.
+        r"""Sets the job_id of this UpdateItemResp.
 
         升级任务ID
 
@@ -275,7 +275,7 @@ class UpdateItemResp:
 
     @property
     def failed_reason(self):
-        """Gets the failed_reason of this UpdateItemResp.
+        r"""Gets the failed_reason of this UpdateItemResp.
 
         失败原因
 
@@ -286,7 +286,7 @@ class UpdateItemResp:
 
     @failed_reason.setter
     def failed_reason(self, failed_reason):
-        """Sets the failed_reason of this UpdateItemResp.
+        r"""Sets the failed_reason of this UpdateItemResp.
 
         失败原因
 

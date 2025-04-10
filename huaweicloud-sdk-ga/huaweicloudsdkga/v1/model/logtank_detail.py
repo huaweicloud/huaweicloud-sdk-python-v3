@@ -43,7 +43,7 @@ class LogtankDetail:
     }
 
     def __init__(self, id=None, domain_id=None, project_id=None, resource_type=None, resource_id=None, log_group_id=None, log_stream_id=None, status=None, created_at=None, updated_at=None):
-        """LogtankDetail
+        r"""LogtankDetail
 
         The model defined in huaweicloud sdk
 
@@ -106,7 +106,7 @@ class LogtankDetail:
 
     @property
     def id(self):
-        """Gets the id of this LogtankDetail.
+        r"""Gets the id of this LogtankDetail.
 
         云日志ID。
 
@@ -117,7 +117,7 @@ class LogtankDetail:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this LogtankDetail.
+        r"""Sets the id of this LogtankDetail.
 
         云日志ID。
 
@@ -128,7 +128,7 @@ class LogtankDetail:
 
     @property
     def domain_id(self):
-        """Gets the domain_id of this LogtankDetail.
+        r"""Gets the domain_id of this LogtankDetail.
 
         租户ID。
 
@@ -139,7 +139,7 @@ class LogtankDetail:
 
     @domain_id.setter
     def domain_id(self, domain_id):
-        """Sets the domain_id of this LogtankDetail.
+        r"""Sets the domain_id of this LogtankDetail.
 
         租户ID。
 
@@ -150,7 +150,7 @@ class LogtankDetail:
 
     @property
     def project_id(self):
-        """Gets the project_id of this LogtankDetail.
+        r"""Gets the project_id of this LogtankDetail.
 
         项目ID。
 
@@ -161,7 +161,7 @@ class LogtankDetail:
 
     @project_id.setter
     def project_id(self, project_id):
-        """Sets the project_id of this LogtankDetail.
+        r"""Sets the project_id of this LogtankDetail.
 
         项目ID。
 
@@ -172,7 +172,7 @@ class LogtankDetail:
 
     @property
     def resource_type(self):
-        """Gets the resource_type of this LogtankDetail.
+        r"""Gets the resource_type of this LogtankDetail.
 
         :return: The resource_type of this LogtankDetail.
         :rtype: :class:`huaweicloudsdkga.v1.LogtankResourceType`
@@ -181,7 +181,7 @@ class LogtankDetail:
 
     @resource_type.setter
     def resource_type(self, resource_type):
-        """Sets the resource_type of this LogtankDetail.
+        r"""Sets the resource_type of this LogtankDetail.
 
         :param resource_type: The resource_type of this LogtankDetail.
         :type resource_type: :class:`huaweicloudsdkga.v1.LogtankResourceType`
@@ -190,7 +190,7 @@ class LogtankDetail:
 
     @property
     def resource_id(self):
-        """Gets the resource_id of this LogtankDetail.
+        r"""Gets the resource_id of this LogtankDetail.
 
         开启云日志的资源ID。
 
@@ -201,7 +201,7 @@ class LogtankDetail:
 
     @resource_id.setter
     def resource_id(self, resource_id):
-        """Sets the resource_id of this LogtankDetail.
+        r"""Sets the resource_id of this LogtankDetail.
 
         开启云日志的资源ID。
 
@@ -212,7 +212,7 @@ class LogtankDetail:
 
     @property
     def log_group_id(self):
-        """Gets the log_group_id of this LogtankDetail.
+        r"""Gets the log_group_id of this LogtankDetail.
 
         云日志组ID。
 
@@ -223,7 +223,7 @@ class LogtankDetail:
 
     @log_group_id.setter
     def log_group_id(self, log_group_id):
-        """Sets the log_group_id of this LogtankDetail.
+        r"""Sets the log_group_id of this LogtankDetail.
 
         云日志组ID。
 
@@ -234,7 +234,7 @@ class LogtankDetail:
 
     @property
     def log_stream_id(self):
-        """Gets the log_stream_id of this LogtankDetail.
+        r"""Gets the log_stream_id of this LogtankDetail.
 
         云日志流ID。
 
@@ -245,7 +245,7 @@ class LogtankDetail:
 
     @log_stream_id.setter
     def log_stream_id(self, log_stream_id):
-        """Sets the log_stream_id of this LogtankDetail.
+        r"""Sets the log_stream_id of this LogtankDetail.
 
         云日志流ID。
 
@@ -256,7 +256,7 @@ class LogtankDetail:
 
     @property
     def status(self):
-        """Gets the status of this LogtankDetail.
+        r"""Gets the status of this LogtankDetail.
 
         :return: The status of this LogtankDetail.
         :rtype: :class:`huaweicloudsdkga.v1.ConfigStatus`
@@ -265,7 +265,7 @@ class LogtankDetail:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this LogtankDetail.
+        r"""Sets the status of this LogtankDetail.
 
         :param status: The status of this LogtankDetail.
         :type status: :class:`huaweicloudsdkga.v1.ConfigStatus`
@@ -274,7 +274,7 @@ class LogtankDetail:
 
     @property
     def created_at(self):
-        """Gets the created_at of this LogtankDetail.
+        r"""Gets the created_at of this LogtankDetail.
 
         创建时间。
 
@@ -285,7 +285,7 @@ class LogtankDetail:
 
     @created_at.setter
     def created_at(self, created_at):
-        """Sets the created_at of this LogtankDetail.
+        r"""Sets the created_at of this LogtankDetail.
 
         创建时间。
 
@@ -296,7 +296,7 @@ class LogtankDetail:
 
     @property
     def updated_at(self):
-        """Gets the updated_at of this LogtankDetail.
+        r"""Gets the updated_at of this LogtankDetail.
 
         更新时间。
 
@@ -307,7 +307,7 @@ class LogtankDetail:
 
     @updated_at.setter
     def updated_at(self, updated_at):
-        """Sets the updated_at of this LogtankDetail.
+        r"""Sets the updated_at of this LogtankDetail.
 
         更新时间。
 

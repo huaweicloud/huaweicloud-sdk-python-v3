@@ -25,7 +25,7 @@ class CreateTempRequest:
     }
 
     def __init__(self, body=None):
-        """CreateTempRequest
+        r"""CreateTempRequest
 
         The model defined in huaweicloud sdk
 
@@ -43,7 +43,7 @@ class CreateTempRequest:
 
     @property
     def body(self):
-        """Gets the body of this CreateTempRequest.
+        r"""Gets the body of this CreateTempRequest.
 
         :return: The body of this CreateTempRequest.
         :rtype: :class:`huaweicloudsdkcpts.v1.CreateTempRequestBody`
@@ -52,7 +52,7 @@ class CreateTempRequest:
 
     @body.setter
     def body(self, body):
-        """Sets the body of this CreateTempRequest.
+        r"""Sets the body of this CreateTempRequest.
 
         :param body: The body of this CreateTempRequest.
         :type body: :class:`huaweicloudsdkcpts.v1.CreateTempRequestBody`

@@ -26,7 +26,7 @@ class ListEdgeGroupCertsResponse(SdkResponse):
     }
 
     def __init__(self, body=None):
-        """ListEdgeGroupCertsResponse
+        r"""ListEdgeGroupCertsResponse
 
         The model defined in huaweicloud sdk
 
@@ -44,7 +44,7 @@ class ListEdgeGroupCertsResponse(SdkResponse):
 
     @property
     def body(self):
-        """Gets the body of this ListEdgeGroupCertsResponse.
+        r"""Gets the body of this ListEdgeGroupCertsResponse.
 
         :return: The body of this ListEdgeGroupCertsResponse.
         :rtype: object
@@ -53,7 +53,7 @@ class ListEdgeGroupCertsResponse(SdkResponse):
 
     @body.setter
     def body(self, body):
-        """Sets the body of this ListEdgeGroupCertsResponse.
+        r"""Sets the body of this ListEdgeGroupCertsResponse.
 
         :param body: The body of this ListEdgeGroupCertsResponse.
         :type body: object

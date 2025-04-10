@@ -31,7 +31,7 @@ class DeleteJobResp:
     }
 
     def __init__(self, id=None, status=None, error_code=None, error_msg=None):
-        """DeleteJobResp
+        r"""DeleteJobResp
 
         The model defined in huaweicloud sdk
 
@@ -64,7 +64,7 @@ class DeleteJobResp:
 
     @property
     def id(self):
-        """Gets the id of this DeleteJobResp.
+        r"""Gets the id of this DeleteJobResp.
 
         任务ID
 
@@ -75,7 +75,7 @@ class DeleteJobResp:
 
     @id.setter
     def id(self, id):
-        """Sets the id of this DeleteJobResp.
+        r"""Sets the id of this DeleteJobResp.
 
         任务ID
 
@@ -86,7 +86,7 @@ class DeleteJobResp:
 
     @property
     def status(self):
-        """Gets the status of this DeleteJobResp.
+        r"""Gets the status of this DeleteJobResp.
 
         状态
 
@@ -97,7 +97,7 @@ class DeleteJobResp:
 
     @status.setter
     def status(self, status):
-        """Sets the status of this DeleteJobResp.
+        r"""Sets the status of this DeleteJobResp.
 
         状态
 
@@ -108,7 +108,7 @@ class DeleteJobResp:
 
     @property
     def error_code(self):
-        """Gets the error_code of this DeleteJobResp.
+        r"""Gets the error_code of this DeleteJobResp.
 
         错误码
 
@@ -119,7 +119,7 @@ class DeleteJobResp:
 
     @error_code.setter
     def error_code(self, error_code):
-        """Sets the error_code of this DeleteJobResp.
+        r"""Sets the error_code of this DeleteJobResp.
 
         错误码
 
@@ -130,7 +130,7 @@ class DeleteJobResp:
 
     @property
     def error_msg(self):
-        """Gets the error_msg of this DeleteJobResp.
+        r"""Gets the error_msg of this DeleteJobResp.
 
         错误信息
 
@@ -141,7 +141,7 @@ class DeleteJobResp:
 
     @error_msg.setter
     def error_msg(self, error_msg):
-        """Sets the error_msg of this DeleteJobResp.
+        r"""Sets the error_msg of this DeleteJobResp.
 
         错误信息
 

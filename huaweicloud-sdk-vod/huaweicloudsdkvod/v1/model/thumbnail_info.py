@@ -33,7 +33,7 @@ class ThumbnailInfo:
     }
 
     def __init__(self, sample=None, dots=None, quantity=None, exec_desc=None, thumbnail_status=None):
-        """ThumbnailInfo
+        r"""ThumbnailInfo
 
         The model defined in huaweicloud sdk
 
@@ -71,7 +71,7 @@ class ThumbnailInfo:
 
     @property
     def sample(self):
-        """Gets the sample of this ThumbnailInfo.
+        r"""Gets the sample of this ThumbnailInfo.
 
         视频截图信息。
 
@@ -82,7 +82,7 @@ class ThumbnailInfo:
 
     @sample.setter
     def sample(self, sample):
-        """Sets the sample of this ThumbnailInfo.
+        r"""Sets the sample of this ThumbnailInfo.
 
         视频截图信息。
 
@@ -93,7 +93,7 @@ class ThumbnailInfo:
 
     @property
     def dots(self):
-        """Gets the dots of this ThumbnailInfo.
+        r"""Gets the dots of this ThumbnailInfo.
 
         :return: The dots of this ThumbnailInfo.
         :rtype: list[:class:`huaweicloudsdkvod.v1.ThumbnailRsp`]
@@ -102,7 +102,7 @@ class ThumbnailInfo:
 
     @dots.setter
     def dots(self, dots):
-        """Sets the dots of this ThumbnailInfo.
+        r"""Sets the dots of this ThumbnailInfo.
 
         :param dots: The dots of this ThumbnailInfo.
         :type dots: list[:class:`huaweicloudsdkvod.v1.ThumbnailRsp`]
@@ -111,7 +111,7 @@ class ThumbnailInfo:
 
     @property
     def quantity(self):
-        """Gets the quantity of this ThumbnailInfo.
+        r"""Gets the quantity of this ThumbnailInfo.
 
         视频截图信息，截图类型为数量。
 
@@ -122,7 +122,7 @@ class ThumbnailInfo:
 
     @quantity.setter
     def quantity(self, quantity):
-        """Sets the quantity of this ThumbnailInfo.
+        r"""Sets the quantity of this ThumbnailInfo.
 
         视频截图信息，截图类型为数量。
 
@@ -133,7 +133,7 @@ class ThumbnailInfo:
 
     @property
     def exec_desc(self):
-        """Gets the exec_desc of this ThumbnailInfo.
+        r"""Gets the exec_desc of this ThumbnailInfo.
 
         执行情况描述。
 
@@ -144,7 +144,7 @@ class ThumbnailInfo:
 
     @exec_desc.setter
     def exec_desc(self, exec_desc):
-        """Sets the exec_desc of this ThumbnailInfo.
+        r"""Sets the exec_desc of this ThumbnailInfo.
 
         执行情况描述。
 
@@ -155,7 +155,7 @@ class ThumbnailInfo:
 
     @property
     def thumbnail_status(self):
-        """Gets the thumbnail_status of this ThumbnailInfo.
+        r"""Gets the thumbnail_status of this ThumbnailInfo.
 
         截图状态。  取值如下： - UN_THUMBNAIL：未截图 - THUMBNAILING：截图中 - THUMBNAIL_SUCCEED：截图成功 - THUMBNAIL_FAILED：截图失败
 
@@ -166,7 +166,7 @@ class ThumbnailInfo:
 
     @thumbnail_status.setter
     def thumbnail_status(self, thumbnail_status):
-        """Sets the thumbnail_status of this ThumbnailInfo.
+        r"""Sets the thumbnail_status of this ThumbnailInfo.
 
         截图状态。  取值如下： - UN_THUMBNAIL：未截图 - THUMBNAILING：截图中 - THUMBNAIL_SUCCEED：截图成功 - THUMBNAIL_FAILED：截图失败
 
